@@ -102,6 +102,9 @@
     "quartzAll": "Cuarzo, para un polvo que es todo cuarzo",
     "cristobaliteAll": "Cristobalita, para un polvo que es todo cristobalita",
     "allFree": "Concentración de control para un polvo que es todo sílice libre",
+    "bandFromTo": "Polvo con entre un {from} % y un {to} % de sílice libre (SiO₂)",
+    "bandOverTo": "Polvo con más del {from} % y hasta el {to} % de sílice libre",
+    "bandAbove": "Polvo con más del {from} % de sílice libre",
     "recommended": "Recomendado por {abbr}",
     "value": "{value} mg/m³",
     "kind": {
@@ -160,7 +163,15 @@
       "myFlat": "Piezas planas",
       "mySmall": "Piezas huecas pequeñas",
       "myLarge": "Piezas huecas grandes",
-      "myCooking": "Recipientes para cocinar"
+      "myCooking": "Recipientes para cocinar",
+      "idFlat": "Piezas de no más de 25 mm de profundidad interior",
+      "idSmall": "Piezas de más de 25 mm de profundidad interior, de menos de 1100 mL",
+      "idLarge": "Piezas de más de 25 mm de profundidad interior, de 1100 mL o más",
+      "thFlat": "Piezas de no más de 25 mm de profundidad",
+      "thSmall": "Piezas de más de 25 mm de profundidad, de menos de 1,1 L",
+      "thLarge": "Piezas de más de 25 mm de profundidad, de 1,1 L o más",
+      "thInfant": "Recipientes para la comida de bebés de hasta 12 meses",
+      "thCooking": "Recipientes para cocinar, hechos para resistir el calor de la cocina"
     },
     "judged": {
       "average": "media de 6 piezas",

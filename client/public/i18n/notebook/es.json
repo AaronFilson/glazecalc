@@ -17,6 +17,14 @@
         "title": "Recetas",
         "text": "Componga un esmalte a partir de materiales y cantidades, vea su fórmula Seger y guárdelo."
       },
+      "import": {
+        "title": "Pegar recetas",
+        "text": "Pegue recetas de un sitio web, una hoja de cálculo o unas notas, compruebe lo que se ha leído y guárdelas."
+      },
+      "blends": {
+        "title": "Mezclas para probetas",
+        "text": "Mezcle dos, tres o cuatro de sus recetas en probetas numeradas, con lo que hay que pesar para cada una."
+      },
       "material": {
         "title": "Materiales",
         "text": "Añada sus propias materias primas, a partir de una fórmula química o del análisis de un proveedor."
@@ -99,6 +107,35 @@
     "saveFailed": "Error: ha fallado la solicitud al servidor."
   },
   "trash": {
-    "title": "Papelera"
+    "title": "Papelera",
+    "lead": "Lo que quita de sus recetas, materiales, notas y registros espera aquí 30 días. Recupérelo, o elimínelo para siempre.",
+    "listHeading": "En la papelera",
+    "none": "La papelera está vacía.",
+    "untitled": "Sin título",
+    "kinds": {
+      "recipes": "Receta",
+      "materials": "Material",
+      "additives": "Aditivo",
+      "notes": "Nota",
+      "firing": "Registro de cocción",
+      "advice": "Consejo",
+      "other": "Registro"
+    },
+    "removedOn": "Quitado el {date}",
+    "goesOn": "Se elimina para siempre el {date}",
+    "byApp": "Quitado por una aplicación conectada",
+    "putBack": "Recuperar",
+    "putBackName": "Recuperar {name}",
+    "restored": "Se ha recuperado «{name}» en su sitio.",
+    "restoredAlready": "«{name}» ya se había recuperado.",
+    "restoreFailed": "No se ha podido recuperar «{name}». Inténtelo de nuevo.",
+    "deleted": "Se ha eliminado «{name}» para siempre.",
+    "empty": "Vaciar la papelera",
+    "emptyQuestion": "¿Quiere eliminar para siempre {count, plural, one {el # registro} many {los # registros} other {los # registros}} de la papelera? No se puede deshacer.",
+    "emptyYes": "Sí, vaciarla",
+    "emptying": "Vaciando...",
+    "emptied": "La papelera está vacía.",
+    "emptyFailed": "No se ha podido vaciar la papelera. Inténtelo de nuevo.",
+    "fetchFailed": "No se ha podido cargar la papelera. Inténtelo de nuevo."
   }
 }

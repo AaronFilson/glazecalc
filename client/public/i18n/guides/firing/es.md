@@ -3,79 +3,79 @@ title: La cocción en un horno sencillo
 lead: Cómo cocer en un horno eléctrico con kiln sitter o con reguladores manuales: elegir, colocar y leer los conos, con curvas publicadas para la cocción de bizcocho y la de esmalte.
 ---
 
-## Cones: what they measure {#cones lang=en}
+## Conos: qué miden {#cones}
 
 > [!NOTE]
-> Follow your kiln's own manual first. This guide gathers what cone and kiln makers publish about basic electric kilns; it does not replace the instructions for your model, and where the two differ, the manual wins.
+> Siga primero el manual de su horno. Esta guía reúne lo que publican los fabricantes de conos y de hornos sobre los hornos eléctricos sencillos; no sustituye a las instrucciones de su modelo y, donde las dos difieran, manda el manual.
 
-A **pyrometric cone** is a small, slender pyramid made from a standardized ceramic powder. When it has had enough heat, it softens and bends over in a repeatable way. You set cones in the kiln beside the ware and read how far they bent.
+Un **cono pirométrico**{{en: pyrometric cone}} es una pirámide pequeña y esbelta, hecha de un polvo cerámico normalizado. Cuando ha recibido suficiente calor, se reblandece y se dobla de una manera reproducible. Los conos se colocan en el horno junto a las piezas, y después se lee cuánto se han doblado.
 
-Cones measure **heatwork**, the combined effect of temperature and time. In the words of Orton, the main US cone maker, "Cones do not measure temperature alone." A cone heated slowly bends at a lower temperature than one heated fast, and a glaze behaves the same way. So Orton gives each cone's temperature for a stated heating rate over the last {{180 °F; 100 °C}} of the firing. Once a cone starts to move, it bends over a narrow range, "usually less than 40° F" (22 °C).
+Los conos miden el **trabajo térmico**{{en: heatwork}}, el efecto conjunto de la temperatura y el tiempo. En palabras de Orton, el principal fabricante de conos de EE. UU.: «Los conos no miden solo la temperatura». Un cono calentado despacio se dobla a una temperatura más baja que uno calentado deprisa, y un esmalte{{en: glaze}} se comporta igual. Por eso Orton da la temperatura de cada cono para una velocidad de subida determinada durante los últimos {{180 °F; 100 °C}} de la cocción. Cuando un cono empieza a moverse, se dobla en un intervalo estrecho, «normalmente menos de 40° F» (22 °C).
 
-### Cone numbers
+### Números de cono
 
-Cone numbers run from 022, the coolest, up to 42. A leading zero marks the cooler series and is read as "oh": cone 06 ("oh-six") is cooler than cone 04, and cone 01 needs less heat than cone 1. Orton warns that it is important not to mix the two series up. The gap is large: cone 06 bends more than {{400 °F; 220 °C}} cooler than cone 6.
+Los números de cono van del 022, el más frío, al 42. Un cero delante indica la serie más fría y se lee «cero»: el cono 06 («cero seis») es más frío que el cono 04, y el cono 01 necesita menos calor que el cono 1. Orton advierte de que es importante no confundir las dos series. La diferencia es grande: el cono 06 se dobla a más de {{400 °F; 220 °C}} menos que el cono 6.
 
-Table: Common firing ranges, for self-supporting cones at {{108 °F/h; 60 °C/h}}
-Label: Firing ranges
+Table: Intervalos de cocción habituales, para conos con pie a {{108 °F/h; 60 °C/h}}
+Label: Intervalos de cocción
 
-| Range     | Cones |                    Temperature | Typical use                              |
-| --------- | ----- | -----------------------------: | ---------------------------------------- |
-| Low fire  | 06–04 |  {{1828–1945 °F; 998–1063 °C}} | Earthenware glazes; bisque               |
-| Mid fire  | 5–6   | {{2167–2232 °F; 1186–1222 °C}} | Electric-kiln stoneware and porcelain    |
-| High fire | 9–10  | {{2300–2345 °F; 1260–1285 °C}} | Mostly gas-fired stoneware and porcelain |
+| Intervalo         | Conos |                    Temperatura | Uso habitual                                                  |
+| ----------------- | ----- | -----------------------------: | ------------------------------------------------------------- |
+| Baja temperatura  | 06–04 |  {{1828–1945 °F; 998–1063 °C}} | Esmaltes para loza{{en: earthenware}}; bizcocho{{en: bisque}} |
+| Media temperatura | 5–6   | {{2167–2232 °F; 1186–1222 °C}} | Gres{{en: stoneware}} y porcelana de horno eléctrico          |
+| Alta temperatura  | 9–10  | {{2300–2345 °F; 1260–1285 °C}} | Sobre todo gres y porcelana cocidos en horno de gas           |
 
-Suppliers in the UK, Europe, Australia and New Zealand often give a temperature in °C rather than a cone: find the nearest cone in the chart below and confirm it with a witness cone. Seger and Staffordshire cones, the older European series, should not be assumed to share Orton's numbers, so this guide uses Orton cones.
+Los proveedores del Reino Unido, Europa, Australia y Nueva Zelanda suelen dar una temperatura en °C en lugar de un cono: busque el cono más cercano en la tabla de más abajo y confírmelo con un cono testigo{{en: witness cone}}. No debe suponerse que los conos Seger y Staffordshire, las series europeas más antiguas, compartan los números de Orton, así que esta guía usa conos Orton.
 
-### Holding adds heatwork
+### El mantenimiento añade trabajo térmico
 
-A **hold** (also called a **soak**) keeps the kiln at one temperature for a while. Because cones measure heatwork, a hold at the top can stand in for a hotter peak. Orton gives these rough equivalents:
+Un **mantenimiento**{{en: hold}} (también llamado **meseta**{{en: soak}}) mantiene el horno a una misma temperatura durante un tiempo. Como los conos miden el trabajo térmico, un mantenimiento al final puede hacer las veces de una temperatura máxima más alta. Orton da estas equivalencias aproximadas:
 
-Table: What a hold at the peak is worth
-Label: Holds and heatwork
+Table: Lo que vale un mantenimiento a la temperatura máxima
+Label: Mantenimiento y trabajo térmico
 
-| Hold             | Roughly the same heatwork as             |
-| ---------------- | ---------------------------------------- |
-| About 20 minutes | A peak {{18 °F; 10 °C}} hotter           |
-| 40–60 minutes    | A peak {{36 °F; 20 °C}} hotter           |
-| About 2 hours    | A peak {{54 °F; 30 °C}} hotter           |
-| 4–6 hours        | Enough to bend a cone two numbers hotter |
+| Mantenimiento   | Aproximadamente el mismo trabajo térmico que            |
+| --------------- | ------------------------------------------------------- |
+| Unos 20 minutos | Una temperatura máxima {{18 °F; 10 °C}} más alta        |
+| 40–60 minutos   | Una temperatura máxima {{36 °F; 20 °C}} más alta        |
+| Unas 2 horas    | Una temperatura máxima {{54 °F; 30 °C}} más alta        |
+| 4–6 horas       | Suficiente para doblar un cono dos números más caliente |
 
-Orton adds that a hold of 1–2 hours "may be sufficient to deform the next higher cone number".
+Orton añade que un mantenimiento de 1–2 horas «puede bastar para deformar el cono del número inmediatamente superior».
 
-So a hold is never free: if you add one, expect the cones to bend further, and lower the peak to match.
+Así que un mantenimiento nunca sale gratis: si añade uno, cuente con que los conos se doblen más, y baje la temperatura máxima en la misma medida.
 
-### Kinds of cone
+### Tipos de cono
 
-Orton makes four kinds. Two stand on the shelf to show what the ware received; two are for the kiln sitter.
+Orton fabrica cuatro tipos. Dos se colocan en la placa para mostrar lo que han recibido las piezas; dos son para el kiln sitter.
 
-Table: Orton's four kinds of cone
-Label: Kinds of cone
+Table: Los cuatro tipos de cono de Orton
+Label: Tipos de cono
 
-| Kind            | Used for                  | How it stands                                                                               |
-| --------------- | ------------------------- | ------------------------------------------------------------------------------------------- |
-| Self-supporting | Witness cone on the shelf | A built-in base sets the height, 1¾ in (44 mm), and the 8° lean; no holder needed           |
-| Large           | Witness cone on the shelf | Set in a plaque or a pat of clay with exactly 2 in (51 mm) showing, leaning 8° from upright |
-| Small (junior)  | Kiln sitter               | Lies across the sitter's supports; 15/16 in (24 mm) showing if stood on a shelf             |
-| Bar             | Kiln sitter               | The same powder as small cones, in an even bar shape                                        |
+| Tipo                     | Uso                      | Cómo se coloca                                                                                                                                  |
+| ------------------------ | ------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| Con pie (autosustentado) | Cono testigo en la placa | Una base incorporada fija la altura, 1¾ pulgadas (44 mm), y la inclinación de 8°; no necesita soporte                                           |
+| Grande                   | Cono testigo en la placa | Se clava en un soporte para conos o en una pella de arcilla, con exactamente 2 pulgadas (51 mm) a la vista, inclinado 8° respecto a la vertical |
+| Pequeño (junior)         | Kiln sitter              | Se apoya atravesado sobre los soportes del kiln sitter; 15/16 de pulgada (24 mm) a la vista si se coloca de pie en una placa                    |
+| Barra                    | Kiln sitter              | El mismo polvo que los conos pequeños, en forma de barra uniforme                                                                               |
 
-Height matters: a ¼ in (6 mm) difference in the height of a large cone "can cause more than a half cone difference in bending". Cones do not go bad or age, and damp storage does not affect them.
+La altura importa: una diferencia de ¼ de pulgada (6 mm) en la altura de un cono grande «puede causar una diferencia de más de medio cono en el doblado». Los conos no se estropean ni envejecen, y guardarlos en un lugar húmedo no les afecta.
 
-### What "cone 6" means in practice
+### Qué significa «cono 6» en la práctica
 
-The chart gives a self-supporting cone 6 as {{2232 °F; 1222 °C}}, but only when the last {{180 °F; 100 °C}} climbs at {{108 °F/h; 60 °C/h}}. Climbing at {{270 °F/h; 150 °C/h}}, the same cone bends at {{2269 °F; 1243 °C}}. Real kilns differ again: Digitalfire reports that "Most kilns reach cone 6 at 2200°F, not 2232°F". So "cone 6" means the ware received the heatwork that bends a cone 6, whatever a thermometer read at the time.
+La tabla da para un cono 6 con pie {{2232 °F; 1222 °C}}, pero solo cuando los últimos {{180 °F; 100 °C}} suben a {{108 °F/h; 60 °C/h}}. Subiendo a {{270 °F/h; 150 °C/h}}, el mismo cono se dobla a {{2269 °F; 1243 °C}}. Los hornos reales vuelven a diferir: Digitalfire informa de que «la mayoría de los hornos alcanzan el cono 6 a 2200°F, no a 2232°F». Así que «cono 6» significa que las piezas recibieron el trabajo térmico que dobla un cono 6, marcara lo que marcara un termómetro en ese momento.
 
 :::orton
 
 > [!NOTE]
-> Fire by the cone, not the clock or the dial. Set a controller by cone number, and let a witness cone on the shelf confirm every firing.
+> Cueza guiándose por el cono, no por el reloj ni por el dial. Configure el programador por número de cono, y deje que un cono testigo en la placa confirme cada cocción.
 
 :::
 
 :::temperature
 
 > [!NOTE]
-> Firing by temperature, keep the end of every firing the same: the same last rate of climb, the same peak and the same hold. Then a glaze that worked once works again.
+> Si cuece por temperatura, mantenga igual el final de todas las cocciones: la misma velocidad de subida al final, la misma temperatura máxima y el mismo mantenimiento. Así, un esmalte que funcionó una vez vuelve a funcionar.
 
 :::
 
@@ -596,22 +596,22 @@ Si el kiln sitter salta antes de que caigan los conos de la placa, pase a un con
 
 Un **pirómetro** es un indicador de temperatura que toma la lectura de un **termopar**, una sonda de calor que atraviesa la pared del horno. Muestra a qué velocidad sube el horno, para que pueda elegir la columna correcta de la tabla de conos. Pero mide cerca de la pared, no en las piezas, y su lectura se desvía con el tiempo. L&L señala que un termopar de tipo K puede desviarse más de {{25 °F; 14 °C}} tras repetidas cocciones a cono 6, «una diferencia mayor que un cono entero», mientras que un cono con pie no varía más de {{4 °F; 2 °C}}. Orton dice que los pirómetros necesitan recalibrarse de vez en cuando, y que los conos son la manera de comprobarlos.
 
-## Venting, peeking and safety {#venting lang=en}
+## Ventilación, mirar y seguridad {#venting}
 
-### Venting
+### Ventilación
 
-Early in a firing, clay and glaze give off water vapor and fumes, including carbon monoxide, and glazes can give off toxic fumes later in the firing too. L&L calls venting them "essential". With no vent system, that means the lid propped and the peepholes open in the early stages, as in the procedures above; slowing the heating during this time also helps the carbon burn out. In a kiln without a vent, Dawson, who made the sitter, also says to leave the top peephole open for the whole firing: the venting "will reduce deterioration of the kiln's metal parts and increase the life of the tube assembly". A **downdraft vent** (a powered vent fitted to the kiln) changes this. It does the venting, so Orton says the lid and peepholes stay closed for the whole firing except to check the cones, and L&L says to leave the vent on and plug the peepholes.
+Al principio de una cocción, la arcilla y el esmalte{{en: glaze}} desprenden vapor de agua y humos, entre ellos monóxido de carbono, y los esmaltes pueden desprender humos tóxicos también más adelante en la cocción. L&L dice que ventilarlos es «esencial». Sin un sistema de extracción, eso significa tener la tapa entreabierta y las mirillas abiertas en las primeras etapas, como en los procedimientos anteriores; reducir la velocidad de calentamiento durante ese tiempo también ayuda a que se queme el carbono. En un horno sin extractor, Dawson, que fabricó el kiln sitter, dice además que se deje abierta la mirilla de arriba durante toda la cocción: la ventilación «reducirá el deterioro de las piezas metálicas del horno y aumentará la vida útil del conjunto del tubo». Un **extractor de tiro descendente**{{en: downdraft vent}} (un extractor con motor instalado en el horno) cambia esto. Hace la ventilación, así que Orton dice que la tapa y las mirillas permanecen cerradas durante toda la cocción, salvo para comprobar los conos, y L&L dice que se deje el extractor encendido y se tapen las mirillas.
 
-For venting the room, and for carbon monoxide alarms, see [Safe mixing and ventilation](/guides/safe-mixing) and [Don't poison your family](/guides/home-safety).
+Para la ventilación de la sala y para los detectores de monóxido de carbono, vea [Preparación segura y ventilación](/guides/safe-mixing) y [No envenene a su familia](/guides/home-safety).
 
-### While the kiln is firing
+### Mientras el horno está cociendo
 
-- Look through a peephole only with IR-rated shade 3 welding glasses; sunglasses are not enough. Skutt advises twisting the plugs into place so they do not fall out.
-- Do not leave the kiln unattended beyond its expected firing time; a sitter is not a fail-safe.
-- Never fire on or near anything that burns, such as a wood floor or carpet.
-- Keep the clearances in your manual. Published figures range from 12 in (30 cm) to 3 ft (91 cm); where the manual is silent, 18 in (46 cm) from walls and 3 ft (91 cm) from anything that burns is the safest choice.
-- Keep the space around the sitter's weight clear so it can drop.
-- When the firing ends, turn the switches off and turn off the breaker as well.
+- Mire por una mirilla solo con gafas de soldadura con filtro de infrarrojo y grado de protección 3; las gafas de sol no bastan. Skutt aconseja girar los tapones al colocarlos para que no se caigan.
+- No deje el horno sin vigilancia más allá del tiempo de cocción previsto; un kiln sitter no es un sistema a prueba de fallos.
+- No cueza nunca encima ni cerca de nada que arda, como un suelo de madera o una moqueta.
+- Respete las distancias de seguridad de su manual. Las cifras publicadas van de 12 pulgadas (30 cm) a 3 pies (91 cm); donde el manual no dice nada, lo más seguro es 18 pulgadas (46 cm) de las paredes y 3 pies (91 cm) de cualquier cosa que arda.
+- Mantenga libre el espacio alrededor del contrapeso del kiln sitter para que pueda caer.
+- Cuando termine la cocción, apague los interruptores y apague también el interruptor automático.
 
 ## Enfriamiento y descarga {#cooling}
 

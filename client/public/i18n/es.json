@@ -17,13 +17,17 @@
     "confirmEmail": "Confirmar su correo electrónico - Glazecalc",
     "home": "Su cuaderno de taller - Glazecalc",
     "recipe": "Recetas - Glazecalc",
+    "import": "Pegar recetas - Glazecalc",
+    "blends": "Mezclas para probetas - Glazecalc",
     "material": "Materiales - Glazecalc",
     "additive": "Aditivos - Glazecalc",
     "firingLogs": "Registros de cocción - Glazecalc",
     "notes": "Notas - Glazecalc",
     "trash": "Papelera - Glazecalc",
     "account": "Su cuenta y ajustes - Glazecalc",
-    "notFound": "Página no encontrada - Glazecalc"
+    "notFound": "Página no encontrada - Glazecalc",
+    "shared": "Receta compartida - Glazecalc",
+    "assistants": "Usar Glazecalc desde su asistente de IA - Glazecalc"
   },
   "nav": {
     "skip": "Ir al contenido",
@@ -96,9 +100,14 @@
   },
   "remove": {
     "alreadyRemoved": "«{name}» ya se había quitado.",
+    "trashed": "Se ha movido «{name}» a la papelera.",
+    "undo": "Deshacer",
+    "restored": "Se ha recuperado «{name}».",
+    "restoreFailed": "No se ha podido recuperar «{name}». Sigue en la papelera.",
     "failed": "No se ha podido quitar. Inténtelo de nuevo.",
     "question": "¿Quitar «{name}»?",
     "cannotUndo": "No se puede deshacer.",
+    "toTrash": "Puede recuperarlo de la papelera durante 30 días.",
     "removing": "Quitando...",
     "yes": "Sí, quitar",
     "cancel": "Cancelar",
