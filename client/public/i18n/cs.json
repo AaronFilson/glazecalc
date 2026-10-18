@@ -17,13 +17,17 @@
     "confirmEmail": "Potvrzení e-mailu – Glazecalc",
     "home": "Váš dílenský zápisník – Glazecalc",
     "recipe": "Recepty – Glazecalc",
+    "import": "Vložení receptů - Glazecalc",
+    "blends": "Směsi pro zkušební střípky - Glazecalc",
     "material": "Suroviny – Glazecalc",
     "additive": "Přísady – Glazecalc",
     "firingLogs": "Záznamy výpalů – Glazecalc",
     "notes": "Poznámky – Glazecalc",
     "trash": "Koš – Glazecalc",
     "account": "Váš účet a nastavení – Glazecalc",
-    "notFound": "Stránka nenalezena – Glazecalc"
+    "notFound": "Stránka nenalezena – Glazecalc",
+    "shared": "Sdílený recept - Glazecalc",
+    "assistants": "Glazecalc ve vašem AI asistentovi - Glazecalc"
   },
   "nav": {
     "skip": "Přejít na obsah",
@@ -96,9 +100,14 @@
   },
   "remove": {
     "alreadyRemoved": "Už odebráno: „{name}“.",
+    "trashed": "Přesunuto do koše: „{name}“.",
+    "undo": "Vrátit zpět",
+    "restored": "Vráceno zpět: „{name}“.",
+    "restoreFailed": "„{name}“ se nepodařilo vrátit zpět. Stále je v koši.",
     "failed": "Nepodařilo se to odebrat. Zkuste to prosím znovu.",
     "question": "Odebrat „{name}“?",
     "cannotUndo": "Tuto akci nelze vrátit zpět.",
+    "toTrash": "Z koše to lze do 30 dnů vrátit.",
     "removing": "Odebírání…",
     "yes": "Ano, odebrat",
     "cancel": "Zrušit",

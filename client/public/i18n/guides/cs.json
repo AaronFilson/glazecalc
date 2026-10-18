@@ -102,6 +102,9 @@
     "quartzAll": "Křemen, pro prach, který je celý z křemene",
     "cristobaliteAll": "Cristobalit, pro prach, který je celý z cristobalitu",
     "allFree": "Kontrolní koncentrace pro prach, který je celý z volného oxidu křemičitého",
+    "bandFromTo": "Prach s {from} % až {to} % volného oxidu křemičitého (SiO₂)",
+    "bandOverTo": "Prach s více než {from} % a nejvýše {to} % volného oxidu křemičitého",
+    "bandAbove": "Prach s více než {from} % volného oxidu křemičitého",
     "recommended": "Doporučuje {abbr}",
     "value": "{value} mg/m³",
     "kind": {
@@ -160,7 +163,15 @@
       "myFlat": "Ploché nádobí",
       "mySmall": "Malé duté nádobí",
       "myLarge": "Velké duté nádobí",
-      "myCooking": "Nádobí na vaření"
+      "myCooking": "Nádobí na vaření",
+      "idFlat": "Kusy hluboké uvnitř nejvýše 25 mm",
+      "idSmall": "Kusy hluboké uvnitř více než 25 mm, méně než 1100 mL",
+      "idLarge": "Kusy hluboké uvnitř více než 25 mm, 1100 mL a více",
+      "thFlat": "Kusy hluboké nejvýše 25 mm",
+      "thSmall": "Kusy hluboké více než 25 mm, méně než 1,1 L",
+      "thLarge": "Kusy hluboké více než 25 mm, 1,1 L a více",
+      "thInfant": "Nádoby na jídlo pro kojence do 12 měsíců věku",
+      "thCooking": "Varné nádobí, vyrobené tak, aby vydrželo teplo při vaření"
     },
     "judged": {
       "average": "průměr ze 6 kusů",

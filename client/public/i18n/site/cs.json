@@ -57,9 +57,13 @@
     "stackServer": "API v jazyce TypeScript na Node.js 24 a Express 5 s databází MongoDB 9, ověřované více než 350 automatickými testy.",
     "stackHosting": "Běží v kontejnerech Docker na Amazon Web Services, za serverem nginx s HTTPS od Let's Encrypt.",
     "stackDeploy": "Nasazování přes GitHub Actions: obrazy se při každé změně sestaví a otestují a nasazení se k AWS přihlašuje bez uložených klíčů.",
+    "creditsHeading": "Poděkování",
+    "credits": "Oblasti na Stullově diagramu pocházejí z toho, jak Glazy přečetlo diagram R. T. Stulla z roku 1912; autorem je Derek Au (Copyright (c) 2017 Derek Au, licence MIT). <notices>Úplné upozornění</notices> je ve zdrojovém kódu.",
     "whoHeading": "Kdo aplikaci vytváří",
     "who": "Glazecalc vytváří Aaron Filson. Narazíte na problém nebo máte nápad? <issues>Založte hlášení na webu GitHub</issues>.",
-    "studio": "Ručně vyráběnou keramiku, kterou dělá Aaron Filson, najdete v ateliéru <studio>Updraft Pottery Studio</studio> ve městě Tacoma ve státě Washington. Prohlédněte si ji, a pokud vás některý kus osloví, objednejte si ho."
+    "studio": "Ručně vyráběnou keramiku, kterou dělá Aaron Filson, najdete v ateliéru <studio>Updraft Pottery Studio</studio> ve městě Tacoma ve státě Washington. Prohlédněte si ji, a pokud vás některý kus osloví, objednejte si ho.",
+    "languagesHeading": "Jazyky",
+    "languages": "Glazecalc je k dispozici v těchto jazycích. Každý odkaz otevře tuto stránku v daném jazyce."
   },
   "privacy": {
     "title": "Ochrana soukromí",
@@ -71,8 +75,15 @@
     "contact": "Chcete-li se zeptat na svá data nebo uplatnit kterékoli ze svých práv, napište na <mail>privacy@glazecalcapp.com</mail>. Můžete také <issues>založit hlášení (issue) na webu GitHub</issues>, ale hlášení jsou veřejná: nikdy do nich nepište svou e-mailovou adresu ani nic osobního. Většinu věcí týkajících se vašich dat zvládnete sami na <account>stránce účtu</account>.",
     "storedHeading": "Co se uchovává a proč",
     "storedAccount": "<b>Váš účet:</b> vaše e-mailová adresa a vaše heslo, uložené jen jako jednosměrný hash (bcrypt), nikdy jako heslo samotné. Spolu s ním se uchovává vaše nastavení (například jazyk, region a jednotky) a seznam surovin, které máte v zásobě. Účet potřebuje e-mailovou adresu k přihlášení a k obnovení zapomenutého hesla. Při vytvoření účtu se na adresu pošle odkaz k potvrzení, že patří vám; do té doby na ni chodí pošta jen na vaši žádost, například při obnovení hesla.",
+    "storedPrices": "<b>Ceny, pokud nějaké zadáte:</b> kolik platíte za každou surovinu, za kilogram, a měna, ve které jsou, pro výpočet ceny dávky. Jsou to obchodní údaje, uchovávané s vaším účtem a soukromé: nikdy nejsou součástí receptu, takže je žádné sdílení neukáže. Funkce Stáhnout moje data je obsahuje a smazání účtu je smaže. Ceny ze zkušebního přístupu se přesunou do vašeho účtu s jeho záznamy, u surovin, které jste ještě neocenili, pokud jsou obojí ve stejné měně.",
     "storedEmailChange": "<b>Změna e-mailu:</b> datum poslední změny vaší adresy, aby se žádost o vypnutí dvoustupňového přihlášení nikdy nepřijala z nové adresy během 30 dnů po změně.",
     "storedSignIn": "<b>Dvoustupňové přihlášení, pokud ho zapnete:</b> zda je zapnuté; klíč, který vaše ověřovací aplikace sdílí s Glazecalc, zašifrovaný; u každého přístupového klíče jeho veřejný klíč (kterým se samotným nelze přihlásit) spolu s ID a údaji, které mu přidělí vaše zařízení, název, který jste mu dali, a kdy byl přidán a naposledy použit; vaše kódy pro obnovení, jen jako jednosměrný otisk s klíčem, takže je nikdo nemůže přečíst zpět; a pokud někdo zadá vaše heslo, ale druhý krok nedokončí, kdy vám o tom Glazecalc naposledy poslal e-mail (nejvýše jednou denně). Při přihlašování, mezi heslem a druhým krokem, si server na 5 minut uchovává záznam o přihlášení a stránka drží krátký token jen v paměti: žádný nový cookie, nic v úložišti vašeho prohlížeče.",
+    "storedSaved": "<b>Co ukládáte:</b> vaše recepty, suroviny, přísady, poznámky, záznamy výpalů a rady, tak jak jste je napsali. Vidíte je jen vy, pokud recept nesdílíte odkazem.",
+    "storedTrash": "<b>Koš a dřívější verze:</b> co odeberete ze seznamu, čeká v koši celé, abyste to mohli vrátit zpět; a každá uložená změna záznamu zachová záznam tak, jak byl těsně předtím, abyste změnu mohli vrátit zpět.",
+    "storedShares": "<b>Recepty sdílené odkazem, pokud nějaké sdílíte:</b> který recept, kdy byl jeho odkaz vytvořen a zda zobrazuje poznámky receptu, s jednosměrným otiskem (hash) odkazu (nikdy sám odkaz). Kdokoli, kdo odkaz má, uvidí recept tak, jak je nyní, s jeho Segerovým vzorcem a s poznámkami, pokud jste zvolili jejich zobrazení; nikdy váš e-mail, váš účet ani žádné ceny. Sdílené recepty jsou vyloučeny z vyhledávačů a odkaz se nikdy nedostane do protokolů serveru. Aby se zabránilo zneužití, počítají se v paměti 15 minut sdílené recepty otevřené z každé IP adresy. Zkušební přístup sdílet nemůže.",
+    "storedTokens": "<b>Přístupové tokeny a připojené aplikace, pokud nějaké vytvoříte nebo schválíte:</b> u každého jeho název, co smí dělat, jednosměrný otisk (hash) tokenu (nikdy sám token) a jeho poslední 4 znaky a kdy byl vytvořen, naposledy použit, kdy vyprší a kdy byl zneplatněn.",
+    "storedActivity": "<b>Co dělaly tokeny a aplikace:</b> řádek pro každý záznam, který přístupový token nebo připojená aplikace vytvořily, změnily, přesunuly do koše, vrátily z koše nebo u nich vrátily změnu zpět: kdy, který token nebo aplikace, co udělaly a název záznamu, zkrácený. Nikdy text poznámky ani nic jiného ze záznamu. Změny, které provedete na webu, se neuvádějí.",
+    "storedLimits": "<b>Omezení četnosti:</b> aby se zabránilo hádání a splašeným skriptům, počítají se pokusy o přihlášení, registrace, žádosti o obnovení a zkušební přístupy podle IP adresy nebo účtu, nefunkční přístupové tokeny podle IP adresy, záznamy, které každý přístupový token přesune do koše, podle tokenu, otevřené sdílené recepty a sdílené odkazy, které nic neotevřou, podle IP adresy, a požadavky na nástroje pro AI asistenty (MCP): 60 za minutu a 2000 za den podle IP adresy, nebo 120 za minutu a 5000 za den podle účtu, když se používá přístupový token, s nejvýše 10 záměnami nebo shodami za minutu.",
     "storedTrial": "<b>Zkušební přístup (Vyzkoušet hned):</b> žádný e-mail ani heslo, jen vymyšlené jméno, například „speckled quiet kilns“. Pokud se během zkušebního přístupu přihlásíte k účtu ve stejném prohlížeči, přesune se to, co ve zkušebním přístupu vzniklo, do účtu.",
     "storedResets": "<b>Odkazy pro obnovení hesla a e-mailové odkazy:</b> který účet o ně požádal, kdy, adresa, na kterou byl poslán odkaz k potvrzení adresy, a otisk každého odkazu (ne odkaz samotný).",
     "storedLogs": "<b>Protokoly:</b> webový server zaznamenává každý požadavek: vaši IP adresu, čas, požadovanou stránku a název vašeho prohlížeče. Aplikace zaznamenává chyby se stránkou, na které nastaly, nikdy s vaší e-mailovou adresou.",
@@ -95,6 +106,11 @@
     "choiceNoWarranty": "Glazecalc se poskytuje tak, jak je, bez záruky. Ti, kdo projekt udržují, nepřebírají žádnou odpovědnost ani ručení za vaše rozhodnutí vytvořit si účet ani za to, kde jsou jeho data uložena.",
     "keptHeading": "Jak dlouho se data uchovávají",
     "keptAccount": "<b>Váš účet a to, co uložíte:</b> dokud je neodstraníte. Účty se neodstraňují kvůli tomu, že se nepoužívají.",
+    "keptTrash": "<b>Koš a dřívější verze:</b> odebraný záznam 30 dnů po odebrání, nebo dokud ho nesmažete nadobro či nevyprázdníte koš; dřívější verze 90 dnů, a jen posledních 20 u každého záznamu (a ta těsně před změnami přístupového tokenu), nikdy však déle než záznam: dokud je v koši, jeho verze zmizí spolu s ním. Obojí zmizí hned, když smažete účet.",
+    "keptShares": "<b>Sdílené odkazy:</b> dokud recept nepřestanete sdílet, nevytvoříte pro něj nový odkaz, nepřesunete ho do koše nebo nesmažete účet. Vrácení receptu z koše ho znovu nesdílí. Obnovení hesla nebo odhlášení všude také zneplatní všechny vaše odkazy; změna hesla ne.",
+    "keptTokens": "<b>Přístupové tokeny a připojené aplikace:</b> každý do 30 dnů po vypršení (každý vyprší, nejpozději do roku) nebo dokud nesmažete účet. Obnovení hesla nebo „Odhlásit se všude“ je zneplatní všechny najednou.",
+    "keptActivity": "<b>Co dělaly tokeny a aplikace:</b> 90 dnů, nebo dokud nesmažete účet.",
+    "keptLimits": "<b>Omezení četnosti:</b> počty se uchovávají jen v paměti serveru, od 1 minuty do 24 hodin, a při jeho restartu se ztratí.",
     "keptTrial": "<b>Zkušební přístup:</b> 14 dní od jeho začátku, pak se odstraní se vším, co obsahuje, pokud si nevytvoříte účet, abyste si ho uchovali.",
     "keptResets": "<b>Odkazy pro obnovení hesla a e-mailové odkazy:</b> odkaz pro obnovení hesla platí 30 minut a jeho záznam se odstraní asi po hodině; odkaz k potvrzení adresy platí a uchovává se 24 hodin.",
     "keptSignIn": "<b>Dvoustupňové přihlášení:</b> každá ověřovací aplikace, přístupový klíč a sada kódů pro obnovení, dokud je neodeberete, nevypnete dvoustupňové přihlášení nebo nesmažete účet. Přihlášení čekající na druhý krok se smaže po 5 minutách a aplikace nebo přístupový klíč, které jste začali přidávat a nedokončili, nejpozději po 10.",
@@ -112,6 +128,7 @@
     "rightsAsk": "Ve všech ostatních věcech, například když chcete, aby se vaše data do opravy chyby nepoužívala, nebo když chcete vznést námitku proti způsobu jejich použití, napište na <mail>privacy@glazecalcapp.com</mail>. Je to zdarma a odpověď dostanete do jednoho měsíce. Požádáme vás jen o doklad, že účet je váš: přihlášení nebo otevření odkazu poslaného na jeho adresu, nikdy o průkaz totožnosti.",
     "rightsComplain": "Pokud nejste spokojeni, můžete podat stížnost u úřadu pro ochranu osobních údajů: v EU u <edpb>úřadu ve vaší zemi</edpb> a ve Spojeném království u <ico>Information Commissioner’s Office</ico>.",
     "storageHeading": "Soubory cookie a úložiště prohlížeče",
+    "storageIntro": "Glazecalc nastavuje dva soubory cookie, druhý jen během přihlašování přes Google nebo GitHub, a uchovává pár drobných hodnot ve vašem prohlížeči. Každé z nich je tu kvůli něčemu, o co jste požádali: zůstat přihlášeni, přihlásit se přes Google nebo GitHub, nebo si zapamatovat vaši volbu. Žádné vás nesleduje a žádné se nesdílí, takže zákon nevyžaduje předchozí souhlas a není tu lišta o cookies.",
     "storageLabel": "Soubory cookie a úložiště prohlížeče",
     "storageName": "Název",
     "storagePurpose": "K čemu slouží",
@@ -150,6 +167,7 @@
         "lasts": "Dokud nevymažete úložiště prohlížeče."
       },
       "print": {
+        "purpose": "Vaše poslední volby pro tisk receptu: celý recept, dávka nebo pracovní list a velikost dávky.",
         "lasts": "Dokud nevymažete úložiště prohlížeče."
       },
       "token": {
@@ -163,12 +181,19 @@
       "reloadedFor": {
         "purpose": "Po vydání nové verze webu: která stránka se znovu načetla a kdy, aby se stránka znovu načítala nejvýše jednou za minutu.",
         "lasts": "Do zavření karty."
+      },
+      "oauthCookie": {
+        "purpose": "Jen během přihlašování přes Google nebo GitHub: spojuje odpověď služby s vaším prohlížečem, takže nikdo jiný nemůže dokončit vaše přihlášení ani nějaké za vás zahájit. Skripty na stránce ho nemohou přečíst.",
+        "lasts": "Nastaví se, když stisknete „Pokračovat přes Google“ nebo „Pokračovat přes GitHub“, nebo jednu z nich propojíte na stránce účtu. Odstraní se po dokončení přihlášení nebo po 10 minutách."
       }
     },
     "childrenHeading": "Děti",
     "children": "Glazecalc je nástroj pro keramiky a není určen dětem.",
     "changesHeading": "Změny",
-    "changes": "Pokud se tyto informace změní, změní se i datum v horní části stránky."
+    "changes": "Pokud se tyto informace změní, změní se i datum v horní části stránky.",
+    "storedProviders": "<b>Google nebo GitHub, pokud se přihlašujete jedním z nich:</b> vlastní identifikátor služby pro vás (číslo nebo kód, který se nikdy nemění), kdy bylo propojení vytvořeno a kdy se jím naposledy přihlašovalo, a zda má váš účet vlastní heslo. Nic dalšího ze služby se neuchovává: ani vaše jméno, ani obrázek, ani žádný klíč k vašemu účtu tam. Při přihlašování si server uchovává záznam o přihlášení, s e-mailem, který služba označuje za váš, když je potřeba: u nového účtu, kde se stane e-mailem vašeho účtu, nebo, pokud už účet Glazecalc takový e-mail má, aby se služba k němu propojila, až se k tomu účtu přihlásíte. Záznam i e-mail v něm se smaže přibližně do 10 minut.",
+    "providers": "<b>Přihlášení přes Google nebo GitHub</b> je vaše volba a stane se jen tehdy, když stisknete jeho tlačítko. Váš prohlížeč pak přejde na Google nebo GitHub, které Glazecalc pošlou svůj identifikátor pro vás a váš e-mail. Každý z nich je samostatná společnost, odpovědná za to, co jí sdělíte, podle vlastních zásad ochrany osobních údajů. Na stránkách Glazecalc se nenačítá žádný skript ani obrázek od žádného z nich.",
+    "keptProviders": "<b>Google nebo GitHub:</b> každé propojení, dokud ho nezrušíte nebo nesmažete účet. Probíhající přihlášení se smaže po 10 minutách."
   },
   "notFound": {
     "heading": "Stránka nenalezena",
@@ -194,5 +219,27 @@
     "standardFetchFailed": "Při načítání rad ze serveru došlo k chybě.",
     "saved": "Rada byla úspěšně přidána.",
     "saveFailed": "Při odesílání rady došlo k chybě."
+  },
+  "assistants": {
+    "title": "Glazecalc ve vašem AI asistentovi",
+    "lead": "AI asistenti, například Claude, GitHub Copilot, Cursor a Gemini, mohou využívat výpočty Glazecalc přímo, přes Model Context Protocol (MCP).",
+    "whatHeading": "Co umí",
+    "what": "Bez účtu může asistent vyhledávat suroviny v knihovně, počítat Segerův vzorec receptu, porovnávat ho s limity pro jeho výpal, navrhovat náhrady za suroviny, které se už nevyrábějí, přestavět recept ze surovin, které uvedete, převádět mezi žároměrkami a teplotami a vyhledávat v návodech a číst je. Nic z toho, co pošle, se neukládá; stejně jako u každé stránky protokol webového serveru zaznamenává 14 dnů IP adresu, čas a adresu každého požadavku (nikdy to, co bylo odesláno).",
+    "mine": "S přístupovým tokenem ze <account>stránky vašeho účtu</account> může také číst vaše vlastní recepty, suroviny, zápisník, záznamy výpalů a suroviny, které máte v zásobě. Token může jen číst: nikdy nic nemění ani neodstraňuje.",
+    "caution": "Kontroly limitů jsou upozornění z publikovaných limitů, stejně jako v aplikaci, ne důkaz, že je glazura bezpečná pro styk s potravinami. Vypalte zkoušku každé glazury a glazury pro povrchy ve styku s potravinami nechte otestovat na uvolňování kovů.",
+    "addressHeading": "Adresa",
+    "address": "Dejte svému asistentovi tuto adresu a použijte přenos Streamable HTTP:",
+    "token": "Aby mohl číst vaše vlastní záznamy, vytvořte token na <account>stránce svého účtu</account> a zkopírujte ho. Asistent ho posílá v hlavičce Authorization jako Bearer a za ním token. Stejně jako heslo ho nedávejte do souborů, které sdílíte nebo odevzdáváte do repozitáře.",
+    "clientsHeading": "Přidání Glazecalc do vašeho asistenta",
+    "claudeCode": "V terminálu:",
+    "claudeCodeToken": "S přístupovým tokenem, aby četl i vaše vlastní záznamy:",
+    "vscode": "V souboru .vscode/mcp.json ve složce nebo ve vašem uživatelském nastavení. VS Code se na token zeptá jednou a drží ho skrytý; vynechte headers a inputs, chcete-li používat jen nástroje, které účet nepotřebují:",
+    "cursor": "V souboru ~/.cursor/mcp.json nebo .cursor/mcp.json v projektu. Vynechte headers, chcete-li používat jen nástroje, které účet nepotřebují:",
+    "gemini": "V souboru ~/.gemini/settings.json. Vynechte headers, chcete-li používat jen nástroje, které účet nepotřebují:",
+    "appsHeading": "Claude, ChatGPT a další aplikace",
+    "apps": "Přidejte vlastní konektor s výše uvedenou adresou. Tyto aplikace zatím nemohou poslat přístupový token, takže dostanou nástroje, které účet nepotřebují. Přístup k vašim vlastním záznamům z nich přijde s přihlášením z aplikace.",
+    "stopHeading": "Ukončení přístupu",
+    "stop": "Token můžete kdykoli zneplatnit na <account>stránce svého účtu</account>. Každý token přestane fungovat v den, který jste zvolili, a všechny přestanou fungovat najednou, když obnovíte heslo nebo se odhlásíte všude.",
+    "limits": "Z každé adresy lze poslat 60 požadavků za minutu a 2000 za den; účet používající token 120 za minutu a 5000 za den. Záměny a shody jsou omezeny na 10 za minutu."
   }
 }

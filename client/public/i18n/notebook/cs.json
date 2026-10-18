@@ -17,6 +17,14 @@
         "title": "Recepty",
         "text": "Sestavte glazuru ze surovin a jejich množství, podívejte se na její Segerův vzorec (UMF) a uložte ji."
       },
+      "import": {
+        "title": "Vložení receptů",
+        "text": "Vložte recepty z webu, tabulky nebo poznámek, zkontrolujte, co se přečetlo, a uložte je."
+      },
+      "blends": {
+        "title": "Směsi pro zkušební střípky",
+        "text": "Smíchejte dva, tři nebo čtyři své recepty do číslovaných zkušebních střípků, s údajem, co pro každý navážit."
+      },
       "material": {
         "title": "Suroviny",
         "text": "Přidejte vlastní suroviny podle chemického vzorce nebo podle rozboru od dodavatele."
@@ -99,6 +107,35 @@
     "saveFailed": "Chyba: požadavek na server se nezdařil."
   },
   "trash": {
-    "title": "Koš"
+    "title": "Koš",
+    "lead": "To, co odeberete ze svých receptů, surovin, poznámek a záznamů, tu čeká 30 dnů. Můžete to vrátit zpět, nebo nadobro smazat.",
+    "listHeading": "V koši",
+    "none": "Koš je prázdný.",
+    "untitled": "Bez názvu",
+    "kinds": {
+      "recipes": "Recept",
+      "materials": "Surovina",
+      "additives": "Přísada",
+      "notes": "Poznámka",
+      "firing": "Záznam výpalu",
+      "advice": "Rada",
+      "other": "Záznam"
+    },
+    "removedOn": "Odebráno {date}",
+    "goesOn": "Nadobro se smaže {date}",
+    "byApp": "Odebráno připojenou aplikací",
+    "putBack": "Vrátit zpět",
+    "putBackName": "Vrátit zpět: {name}",
+    "restored": "„{name}“ je zpět na původním místě.",
+    "restoredAlready": "Položka „{name}“ už byla vrácena zpět.",
+    "restoreFailed": "Položku „{name}“ se nepodařilo vrátit zpět. Zkuste to prosím znovu.",
+    "deleted": "Položka „{name}“ byla nadobro smazána.",
+    "empty": "Vyprázdnit koš",
+    "emptyQuestion": "Nadobro smazat {count, plural, one {# záznam} few {všechny # záznamy} many {všech # záznamu} other {všech # záznamů}} v koši? Nelze to vrátit zpět.",
+    "emptyYes": "Ano, vyprázdnit",
+    "emptying": "Vyprazdňuje se…",
+    "emptied": "Koš je prázdný.",
+    "emptyFailed": "Koš se nepodařilo vyprázdnit. Zkuste to prosím znovu.",
+    "fetchFailed": "Koš se nepodařilo načíst. Zkuste to prosím znovu."
   }
 }
