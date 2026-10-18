@@ -313,7 +313,7 @@ type View = 'recipe' | 'worked';
       overflow-x: auto;
     }
     .shared-scroll:focus-visible {
-      outline: 3px solid rgba(var(--gc-primary-rgb), 0.5);
+      outline: 3px solid var(--gc-primary);
       outline-offset: 2px;
     }
     .shared-table {

@@ -347,9 +347,31 @@ img {
   height: auto;
 }
 
-:focus-visible {
-  outline: 3px solid rgba(var(--gc-primary-rgb), 0.55);
+// Keyboard focus: a solid outline in the palette's primary colour, which is at
+// least 3:1 against the page and the panels in every palette, light and dark
+// (WCAG 2.2, 1.4.11 Non-text Contrast). Bootstrap's buttons and fields draw a
+// faint box-shadow ring instead, and their rules are more specific than a bare
+// :focus-visible, so they are named here too and their ring is turned off.
+:focus-visible,
+.btn:focus-visible,
+.btn-check:focus-visible + .btn,
+.form-check-input:focus-visible {
+  outline: 3px solid var(--gc-primary);
   outline-offset: 2px;
+}
+.btn:focus-visible,
+.btn-check:focus-visible + .btn,
+.form-check-input:focus,
+.form-control:focus,
+.form-select:focus {
+  box-shadow: none;
+}
+// Text fields and selects show it whenever they have the focus, as typing goes there.
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--gc-primary);
+  outline: 3px solid var(--gc-primary);
+  outline-offset: 0;
 }
 
 .skip-link {
@@ -749,7 +771,7 @@ main {
     max-width: 100%;
     &:focus {
       border-color: var(--gc-primary);
-      outline: 3px solid rgba(var(--gc-primary-rgb), 0.3);
+      outline: 3px solid var(--gc-primary);
       outline-offset: 0;
     }
   }
@@ -1082,7 +1104,7 @@ main .form-control.is-invalid {
     color: var(--gc-on-primary);
   }
   .btn-check:focus-visible + .btn {
-    outline: 3px solid rgba(var(--gc-primary-rgb), 0.45);
+    outline: 3px solid var(--gc-primary);
     outline-offset: 1px;
   }
 }

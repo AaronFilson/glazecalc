@@ -652,7 +652,7 @@ const UNITS: ReadonlyArray<{ value: WeightUnit; label: string }> = [
       overflow-x: auto;
     }
     .print-table-scroll:focus-visible {
-      outline: 3px solid rgba(var(--gc-primary-rgb), 0.5);
+      outline: 3px solid var(--gc-primary);
       outline-offset: 2px;
     }
     .print-table {
