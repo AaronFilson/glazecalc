@@ -228,6 +228,22 @@ describe('RecipePrint', () => {
     expect(localStorage.getItem('printMode')).toBe('batch');
   });
 
+  it('prints the firing, tested cone first, on every sheet, and the liner note for a food surface', async () => {
+    const { fixture, root } = await create({
+      ...RECIPE,
+      firedAt: { scale: 'orton', low: '5', high: '6', tested: ['6'], atmospheres: ['oxidation'], hold: 10 },
+      foodSurface: true
+    });
+    expect(text(fixture, '.print-firing strong')).toBe('Tested at cone 6');
+    expect(text(fixture, '.print-firing')).toContain('claimed range cone 5–6');
+    expect(text(fixture, '.print-firing')).toContain('oxidation');
+    expect(text(fixture, '.print-firing')).toContain('held 10 min');
+    expect(text(fixture, '.print-firing-approx')).toContain('approximate');
+    expect(text(fixture, '.print-liner')).toContain('Food safety depends on firing this glaze');
+    await choose(fixture, root, 'print-batch-list');
+    expect(text(fixture, '.print-firing strong')).toBe('Tested at cone 6');
+  });
+
   it('makes the batch list a mix ticket: batch number, date, target SG when there is one, and lines to sign', async () => {
     const { fixture, root } = await create({ ...RECIPE, sgTarget: 1.45 });
     // Only the batch list asks for a batch number.

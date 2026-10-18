@@ -115,6 +115,7 @@
   "trash-restored-already": "This has been put back already.",
   "trash-emptied": "The Trash is empty.",
   "trash-full": "The Trash is full, so an access token cannot move anything more to it. Please empty some of it on the website first.",
+  "firing-links-full": "A recipe can be linked to at most {most} firing logs. Unlink one to link another.",
   "account-limit": "An account can keep up to {limit} {label, select, additive {additives} advice {pieces of advice} firing {firing logs} material {materials} note {notes} recipe {recipes} trash {items in the trash} other {records}}. Please remove some to save more.",
   "not-shared": "This recipe is not shared, or the link is not complete.",
   "share-stopped": "The recipe is no longer shared. Its link no longer opens it.",

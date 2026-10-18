@@ -28,6 +28,7 @@ import { HazardSource, RecipeHazards } from './recipe-hazards';
 import { libraryKey } from './recipe-library';
 import { UnityFormula, unityColumns } from './unity-formula';
 import { WorkedCalculation } from './worked-calculation';
+import { firingWords } from './firing-text';
 
 /** What to print: the whole recipe with its chemistry, just what to weigh, or the unity formula worked step by step. */
 export type PrintMode = 'full' | 'batch' | 'worked';
@@ -300,6 +301,25 @@ const UNITS: ReadonlyArray<{ value: WeightUnit; label: string }> = [
         <h2 id="print-title" translate="no">{{ title() }}</h2>
         @if (recipe().date) {
           <p class="print-meta">{{ recipe().date | gcDate }}</p>
+        }
+        @if (firing(); as fired) {
+          <p class="print-firing">
+            <span class="visually-hidden">{{ t('recipe.firing.heading') }}: </span>
+            @if (fired.tested) {
+              <strong>{{ fired.tested }}</strong>
+            }
+            @for (part of [fired.range, fired.atmospheres, fired.schedule]; track $index) {
+              @if (part) {
+                <span> · {{ part }}</span>
+              }
+            }
+            @if (fired.conversion) {
+              <br /><span class="print-firing-approx">{{ fired.conversion }}</span>
+            }
+          </p>
+        }
+        @if (recipe().foodSurface) {
+          <p class="print-liner">{{ t('recipe.firing.liner.note') }} {{ t('recipe.firing.liner.test') }}</p>
         }
         @if (mode() !== 'worked' && batchSummary(); as summary) {
           <p class="print-batch-summary">{{ summary }}</p>
@@ -609,9 +629,19 @@ const UNITS: ReadonlyArray<{ value: WeightUnit; label: string }> = [
       margin: 1rem 0 0.5rem;
     }
     .print-meta,
+    .print-firing,
+    .print-liner,
     .print-batch-summary,
     .print-cost {
       margin: 0.25rem 0 0;
+    }
+    .print-firing-approx {
+      font-size: 0.9rem;
+    }
+    .print-liner {
+      font-size: 0.9rem;
+      border-inline-start: 3px solid currentColor;
+      padding-inline-start: 0.5rem;
     }
     .print-batch-summary,
     .print-cost {
@@ -854,6 +884,14 @@ export class RecipePrint implements OnInit, OnDestroy {
   protected readonly sgTarget = computed(() => {
     const target = this.recipe().sgTarget;
     return target === undefined || target === null ? '' : formatPlain(String(target));
+  });
+
+  /** The recipe's firing in words, with an approximate conversion into the reader's scale; null when not stated. */
+  protected readonly firing = computed(() => {
+    // The locale is looked up only for a recipe with a firing, as the cost's currency is.
+    if (!this.recipe().firedAt) return null;
+    const locale = this.injector.get(LocaleService);
+    return firingWords(this.recipe().firedAt, { cones: locale.cones(), temperature: locale.temperature() });
   });
 
   protected readonly units = UNITS;

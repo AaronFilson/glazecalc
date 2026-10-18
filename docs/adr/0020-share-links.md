@@ -32,7 +32,9 @@ never indexed; and it never shows prices, private notes, the owner's email or ac
   owner's edits show, but only the fields `server/lib/share_links.ts` names: the title and date,
   each material's and additive's name, amount, unit and chemistry (fields, basis, LOI, weight),
   for a standard one its hazards (below),
-  whether additives count in the unity formula, and the notes only when the owner ticks Show the
+  whether additives count in the unity formula, the firing as stated (its cone, atmosphere and
+  process, and whether it is for a food surface; never the firing logs it is linked to;
+  ADR 0021), and the notes, with the firing's schedule note, only when the owner ticks Show the
   recipe's notes (off by default). Never ids, the owner, their email, a material's own notes, or
   any field a later version adds to a recipe (prices, costs): a new field stays private until it
   is named there. Additives that borrow another record's chemistry by name get that chemistry

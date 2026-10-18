@@ -9,8 +9,11 @@
 import * as z from 'zod';
 import mongoose from 'mongoose';
 import type { McpServer } from '@modelcontextprotocol/server';
+import firingLib from '../../../lib/cones/firing.js';
+import type { FiringBlock } from '../../../lib/cones/firing.js';
 import recipe from '../../../lib/recipe/index.js';
 import type { MaterialRecord, TryMaterial } from '../../../lib/recipe/index.js';
+import { liveLinks } from '../../lib/firing_links.ts';
 import { allows, type Permission } from '../../lib/scopes.ts';
 import Firing from '../../models/firing.ts';
 import Material from '../../models/material.ts';
@@ -49,6 +52,36 @@ const idArg = z.string().min(1).max(40).describe('The id from a list.');
  */
 const BAND_CELSIUS = { low: 1060, mid: 1222, high: 1285 } as const;
 type FiringBand = keyof typeof BAND_CELSIUS;
+
+/** A recipe's firing block as an assistant is given it, or undefined when it states none. */
+const firingOut = (block: unknown) => {
+  const clean = firingLib.cleanFiring(block as FiringBlock | undefined);
+  if (!clean) return undefined;
+  const tested = firingLib.testedCones(clean);
+  return { ...clean, ...(tested.length && { tested }), bands: firingLib.firingBands(clean) };
+};
+
+const coneFilterArgs = {
+  cone: z
+    .string()
+    .max(6)
+    .optional()
+    .describe(
+      'Only recipes whose stated firing includes this cone ("6", "06", "5.5", SK "6a"), or for scale "temperature" this °C. A range matches any cone inside it; recipes tested at it come first. Recipes stated in another scale match approximately: Orton and SK by measured equivalents only (SK 8, 10 and 12), a temperature when the cone bends within 15 °C of it (Orton at 60 °C an hour).'
+    ),
+  scale: z
+    .enum(['orton', 'sk', 'temperature'])
+    .optional()
+    .describe('The scale the cone is in: Orton (the default), SK (JIS R 8101) or a temperature in °C.'),
+  atmosphere: z
+    .enum(['oxidation', 'reduction', 'neutral'])
+    .optional()
+    .describe('Only recipes stated for this atmosphere.'),
+  process: z
+    .enum(['wood', 'soda', 'salt', 'raku', 'pit'])
+    .optional()
+    .describe('Only recipes stated for this firing process.')
+};
 
 /** The account's saved settings, with each one's default where none is saved. */
 const settingsOf = async (userId: string) => {
@@ -124,28 +157,57 @@ export const registerAccountTools = (server: McpServer, caller: Caller): void =>
       {
         title: 'List my recipes',
         description:
-          'Lists the glaze recipes saved in your Glazecalc account, newest first, optionally only those whose title or a material matches a search.',
-        inputSchema: z.object({ search: z.string().max(100).optional(), ...pageArgs }),
+          'Lists the glaze recipes saved in your Glazecalc account, newest first, optionally only those whose title or a material matches a search, or whose stated firing includes a cone or names an atmosphere or process ("which of my glazes fire at cone 10 reduction?"). Each lists its stated firing; a recipe with none has not stated one.',
+        inputSchema: z.object({ search: z.string().max(100).optional(), ...coneFilterArgs, ...pageArgs }),
         annotations: READ_ONLY
       },
-      async ({ search, limit, offset }) =>
+      async ({ search, cone, scale, atmosphere, process, limit, offset }) =>
         guarded(async () => {
           const filter: Record<string, unknown> = { ownedBy: userId };
           if (search) filter.$or = [{ title: containing(search) }, { 'materials.name': containing(search) }];
-          const total = await Recipe.countDocuments(filter);
-          const found = await Recipe.find(filter, { title: 1, date: 1, materials: 1 })
-            .sort({ _id: -1 })
-            .skip(offset ?? 0)
-            .limit(limit ?? 25)
-            .lean();
+          if (atmosphere) filter['firedAt.atmospheres'] = atmosphere;
+          if (process) filter['firedAt.processes'] = process;
+          const coneScale = scale ?? 'orton';
+          if (cone !== undefined && !firingLib.isCone(coneScale, cone)) {
+            throw new ToolProblem(
+              `"${cone}" is not a cone of the ${coneScale} scale. Orton cones run 022 … 01, then 1 … 42 (half cones as "5.5"); SK cones as printed ("6a", "8"); a temperature in whole °C.`
+            );
+          }
+          const projection = { title: 1, date: 1, materials: 1, firedAt: 1 };
+          let found;
+          let total;
+          if (cone === undefined) {
+            total = await Recipe.countDocuments(filter);
+            found = await Recipe.find(filter, projection)
+              .sort({ _id: -1 })
+              .skip(offset ?? 0)
+              .limit(limit ?? 25)
+              .lean();
+          } else {
+            // A range matches any cone inside it, so the cone is matched here, in any scale (matchesCone:
+            // measured equivalents across Orton and SK, within 15 °C for a temperature); those tested at it
+            // come first.
+            const all = (await Recipe.find(filter, projection).sort({ _id: -1 }).lean()).filter((r) =>
+              firingLib.matchesCone(r.firedAt as FiringBlock, coneScale, cone)
+            );
+            const untested = (r: (typeof all)[number]) =>
+              firingLib.testedCones(r.firedAt as FiringBlock).includes(cone) ? 0 : 1;
+            all.sort((a, b) => untested(a) - untested(b));
+            total = all.length;
+            found = all.slice(offset ?? 0, (offset ?? 0) + (limit ?? 25));
+          }
           return ok({
             total,
-            recipes: found.map((r) => ({
-              id: String(r._id),
-              title: r.title,
-              ...(r.date && { date: r.date }),
-              materials: (r.materials as Array<{ name?: string }>).map((m) => m?.name).filter(Boolean)
-            }))
+            recipes: found.map((r) => {
+              const firedAt = firingOut(r.firedAt);
+              return {
+                id: String(r._id),
+                title: r.title,
+                ...(r.date && { date: r.date }),
+                ...(firedAt && { firedAt }),
+                materials: (r.materials as Array<{ name?: string }>).map((m) => m?.name).filter(Boolean)
+              };
+            })
           });
         })
     );
@@ -155,7 +217,7 @@ export const registerAccountTools = (server: McpServer, caller: Caller): void =>
       {
         title: 'Get one of my recipes',
         description:
-          "One recipe from your account: its materials and amounts, colorants, notes, the firing band and target specific gravity saved with it, and its unity formula worked out afresh. It is checked against the limit set chosen in your settings, for the firing given here or else the recipe's saved firing band.",
+          'One recipe from your account: its materials and amounts, colorants, notes, its stated firing (firedAt: the cone scale, the low and optional high cone of the claimed range, the cones actually tested, the atmospheres and processes, and for a temperature the rate and hold; each cone exactly as the potter gave it), whether it is for a food surface, the firing logs it went through with a result note each, the firing band and target specific gravity saved with it, and its unity formula worked out afresh. It is checked against the limit set chosen in your settings: for the firing given here, or else the band chosen on the recipe, or else the bands its stated firing falls in (a range across two bands is checked at each).',
         inputSchema: z.object({ id: idArg, firing: firingArg, language: languageArg }),
         annotations: READ_ONLY
       },
@@ -167,15 +229,30 @@ export const registerAccountTools = (server: McpServer, caller: Caller): void =>
           let analysis: Record<string, unknown> | null = null;
           let checks: Record<string, unknown> | null = null;
           const band = Object.hasOwn(BAND_CELSIUS, found.firing ?? '') ? (found.firing as FiringBand) : undefined;
+          const firedAt = firingOut(found.firedAt);
+          const links = await liveLinks(userId, found.firings as Array<{ firing: string; result?: string }>);
+          // The band chosen on the recipe wins; else the bands its stated firing falls in, coolest first.
+          const bands: FiringBand[] = band ? [band] : (firedAt?.bands ?? []);
+          let alsoChecks: Record<string, unknown> | undefined;
           try {
             analysis = analysisOf(lines, lang).out;
-            if (firing || band) {
+            if (firing || bands.length) {
               const setting = await settingsOf(userId);
               // The recipe page's check: the account's limit set, for the firing asked about or the one saved.
-              checks = checksOf(lines, firing ? celsiusOf(firing) : BAND_CELSIUS[band!], setting('limitSet'), lang);
+              checks = checksOf(lines, firing ? celsiusOf(firing) : BAND_CELSIUS[bands[0]!], setting('limitSet'), lang);
               if (!firing) {
                 delete checks.celsius;
-                checks.firingFrom = 'recipe';
+                checks.firingFrom = band ? 'recipe' : 'firedAt';
+                // A range across bands is checked at each, as the recipe page shows them side by side.
+                if (bands.length > 1) {
+                  alsoChecks = Object.fromEntries(
+                    bands.slice(1).map((b) => {
+                      const more = checksOf(lines, BAND_CELSIUS[b], setting('limitSet'), lang);
+                      delete more.celsius;
+                      return [b, more];
+                    })
+                  );
+                }
               }
             }
           } catch (err) {
@@ -188,6 +265,15 @@ export const registerAccountTools = (server: McpServer, caller: Caller): void =>
             ...(found.date && { date: found.date }),
             ...(textOf(found.notes) && { notes: textOf(found.notes) }),
             ...(band && { firing: band }),
+            ...(firedAt && { firedAt }),
+            ...(found.foodSurface && { foodSurface: true }),
+            // Only links to firing logs that are there: never one in the Trash or deleted.
+            ...(links.length && {
+              firings: links.map((link) => ({
+                firingId: link.firing,
+                ...(link.result && { result: link.result })
+              }))
+            }),
             ...(typeof found.sgTarget === 'number' && { sgTarget: found.sgTarget }),
             materials: lines.map((line) => ({ material: line.name, amount: recipe.amountOf(line.amount) })),
             colorants: ((found.additives ?? []) as Array<{ name?: string; amount?: string; unit?: string }>)
@@ -195,7 +281,8 @@ export const registerAccountTools = (server: McpServer, caller: Caller): void =>
               .map((a) => ({ name: a.name, amount: recipe.amountOf(a.amount), unit: a.unit ?? 'percent' })),
             ...(found.includeAdditives && { colorantsInUnityFormula: true }),
             analysis,
-            ...(checks && { checks })
+            ...(checks && { checks }),
+            ...(alsoChecks && { checksAtOtherBands: alsoChecks })
           });
         }, lang);
       }

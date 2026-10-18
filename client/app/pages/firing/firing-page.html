@@ -180,6 +180,56 @@
               </table>
             </div>
             <div class="keep-lines">{{ t('notebook.firing.storedNotes', { notes: firstOf(fr.notes) }) }}</div>
+            <section class="fired-recipes" [attr.aria-labelledby]="'fired-heading-' + fr._id">
+              <h4 class="h6" [id]="'fired-heading-' + fr._id">{{ t('notebook.firing.recipesHeading') }}</h4>
+              @if (firedIn(fr); as fired) {
+                @if (fired.length) {
+                  <ul class="fired-list">
+                    @for (rec of fired; track rec._id) {
+                      <li>
+                        <a routerLink="/recipe" [queryParams]="{ open: rec._id }"
+                          ><bdi>{{ rec.title }}</bdi></a
+                        >
+                        <button
+                          type="button"
+                          class="btn btn-light border btn-sm"
+                          [disabled]="linking() === fr._id"
+                          [attr.aria-label]="t('notebook.firing.unlinkRecipe', { title: rec.title })"
+                          (click)="setFiredIn(fr, rec._id ?? '', false)"
+                        >
+                          {{ t('notebook.firing.unlink') }}
+                        </button>
+                      </li>
+                    }
+                  </ul>
+                } @else {
+                  <p class="muted small">{{ t('notebook.firing.noRecipes') }}</p>
+                }
+              }
+              @if (recipesFailed()) {
+                <p class="muted small">{{ t('notebook.firing.recipesFailed') }}</p>
+              } @else if (notFiredIn(fr).length) {
+                <div class="field-pick">
+                  <label class="visually-hidden" [for]="'fired-pick-' + fr._id">{{
+                    t('notebook.firing.pickRecipe')
+                  }}</label>
+                  <select [id]="'fired-pick-' + fr._id" class="form-select form-select-sm" #pick>
+                    @for (rec of notFiredIn(fr); track rec._id) {
+                      <option [value]="rec._id">{{ rec.title }}</option>
+                    }
+                  </select>
+                  <button
+                    type="button"
+                    class="btn btn-light border btn-sm"
+                    [id]="'fired-add-' + fr._id"
+                    [disabled]="linking() === fr._id"
+                    (click)="setFiredIn(fr, pick.value, true)"
+                  >
+                    {{ t('notebook.firing.linkRecipe') }}
+                  </button>
+                </div>
+              }
+            </section>
             <div class="stored-firing-remove">
               <gc-remove-button
                 [name]="removal.nameOf(fr)"

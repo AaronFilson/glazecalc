@@ -165,6 +165,46 @@ describe('share links', () => {
     expect((await view(secret)).body.title).to.eql('Satin white 2');
   });
 
+  it("send the firing in the author's own scale and the food-surface flag, never the linked firing logs", async () => {
+    const { secret } = await share();
+    const logId = '64b7f0c2a1b2c3d4e5f60718';
+    await as(alice.token).put('/recipe/change/' + recipeId, {
+      recipe: {
+        firedAt: { scale: 'sk', low: '8', high: '10', tested: ['10'], atmospheres: ['reduction'] },
+        foodSurface: true,
+        firings: [{ firing: logId, result: 'kiln 2, glossy' }]
+      }
+    });
+    const body = (await view(secret)).body;
+    expect(body.firedAt).to.eql({ scale: 'sk', low: '8', high: '10', tested: ['10'], atmospheres: ['reduction'] });
+    expect(body.foodSurface).to.equal(true);
+    expect(body).to.not.have.property('firings');
+    expect(JSON.stringify(body)).to.not.include(logId).and.not.include('kiln 2');
+  });
+
+  it("send the firing's schedule note only when the owner shows the notes; cone, atmosphere and process always", async () => {
+    const { secret } = await share();
+    await as(alice.token).put('/recipe/change/' + recipeId, {
+      recipe: {
+        firedAt: { scale: 'orton', low: '6', atmospheres: ['oxidation'], processes: ['soda'], schedule: 'slow cool' }
+      }
+    });
+    expect((await view(secret)).body.firedAt).to.eql({
+      scale: 'orton',
+      low: '6',
+      atmospheres: ['oxidation'],
+      processes: ['soda']
+    });
+    expect(await as(alice.token).put('/share/recipe/' + recipeId, { includeNotes: true })).to.have.status(200);
+    expect((await view(secret)).body.firedAt.schedule).to.equal('slow cool');
+    // A block that states nothing but its schedule is not sent at all without the notes.
+    await as(alice.token).put('/share/recipe/' + recipeId, { includeNotes: false });
+    await as(alice.token).put('/recipe/change/' + recipeId, {
+      recipe: { firedAt: { scale: 'orton', schedule: 'slow cool' } }
+    });
+    expect((await view(secret)).body).to.not.have.property('firedAt');
+  });
+
   it("carry the chemistry an additive borrows by name, from the owner's records too", async () => {
     await Additive.create({
       name: 'Bentonite',

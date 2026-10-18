@@ -9,6 +9,7 @@ import { findMaterial } from '../mcp/library.ts';
 import { MOST_STREAMS_PER_ADDRESS, sdkSubscribers, streamsOpen } from '../mcp/index.ts';
 import { SERVER_INFO } from '../mcp/server.ts';
 import { readFileSync } from 'node:fs';
+import mongoose from 'mongoose';
 import * as site from '../lib/site.ts';
 import { hashToken } from '../lib/token_auth.ts';
 import AccessToken from '../models/access_token.ts';
@@ -786,6 +787,52 @@ describe('MCP: personal access tokens', () => {
       } finally {
         await Recipe.updateOne({ _id: recipeId }, { $unset: { firing: 1, sgTarget: 1 } });
         await User.updateOne({ _id: mine.user._id }, { $unset: { 'preferences.limitSet': 1 } });
+      }
+    });
+
+    it('get_recipe gives the stated firing and checks a range at both its bands; list_recipes filters by cone and atmosphere', async () => {
+      await Recipe.updateOne(
+        { _id: recipeId },
+        {
+          $set: {
+            firedAt: { scale: 'orton', low: '6', high: '10', tested: ['10'], atmospheres: ['reduction'] },
+            foodSurface: true,
+            // The second log is gone (in the Trash, or deleted): an assistant is never given its id.
+            firings: [{ firing: firingId, result: 'glossy' }, { firing: new mongoose.Types.ObjectId().toString() }]
+          }
+        }
+      );
+      try {
+        const one = await data('get_recipe', { id: recipeId }, headers);
+        expect(one.firedAt).to.eql({
+          scale: 'orton',
+          low: '6',
+          high: '10',
+          tested: ['10'],
+          atmospheres: ['reduction'],
+          bands: ['mid', 'high']
+        });
+        expect(one.foodSurface).to.equal(true);
+        expect(one.firings).to.eql([{ firingId, result: 'glossy' }]);
+        expect(one.checks.band).to.equal('mid');
+        expect(one.checks.firingFrom).to.equal('firedAt');
+        expect(one.checksAtOtherBands.high.band).to.equal('high');
+        const titles = (list: Json) => list.recipes.map((r: { title: string }) => r.title);
+        expect(titles(await data('list_recipes', { cone: '8' }, headers))).to.eql(['Satin white']);
+        expect(titles(await data('list_recipes', { cone: '06' }, headers))).to.eql([]);
+        expect(titles(await data('list_recipes', { cone: '8', scale: 'sk' }, headers))).to.eql([]);
+        // Across scales, approximately: SK 12 is Kyoto's Orton 10; a temperature within 15 °C of the range.
+        expect(titles(await data('list_recipes', { cone: '12', scale: 'sk' }, headers))).to.eql(['Satin white']);
+        expect(titles(await data('list_recipes', { cone: '1240', scale: 'temperature' }, headers))).to.eql([
+          'Satin white'
+        ]);
+        expect(titles(await data('list_recipes', { cone: '1100', scale: 'temperature' }, headers))).to.eql([]);
+        expect(titles(await data('list_recipes', { atmosphere: 'reduction' }, headers))).to.eql(['Satin white']);
+        expect(titles(await data('list_recipes', { atmosphere: 'oxidation' }, headers))).to.eql([]);
+        expect((await data('list_recipes', { cone: '10' }, headers)).recipes[0].firedAt.tested).to.eql(['10']);
+        expect((await call('list_recipes', { cone: '6a' }, headers)).isError).to.equal(true);
+      } finally {
+        await Recipe.updateOne({ _id: recipeId }, { $unset: { firedAt: 1, foodSurface: 1, firings: 1 } });
       }
     });
 

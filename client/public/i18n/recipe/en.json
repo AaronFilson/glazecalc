@@ -271,7 +271,7 @@
     "numbers": {
       "heading": "Read the analysis and the limits",
       "analysis": "<b>Analysis and limits</b>, under the recipe, shows each oxide's moles, mole % and fired weight %, the loss on ignition and the calculated thermal expansion, an estimate for comparing glazes.",
-      "limits": "<b>Limits</b> sets the unity formula against a limit set: Hesselberth & Roy's stable glaze limits unless you choose Glazecalc's own (the choice is saved with your settings). Choose the <b>Firing</b> to check it against the right figures; it is saved with the recipe. Hesselberth & Roy's figures are for cone 6 and cone 10, so at low fire it says they do not apply. They are guidelines, not a pass or a fail.",
+      "limits": "<b>Limits</b> sets the unity formula against a limit set: Hesselberth & Roy's stable glaze limits unless you choose Glazecalc's own (the choice is saved with your settings). It checks the firing band the recipe's <b>Firing</b> gives: its cone, or its range. A range that crosses bands, such as cone 6 to 10, shows both bands' checks side by side. To check one band only, choose it in the limits' own <b>Firing</b> box, which overrides the recipe's firing and is saved with the recipe. Hesselberth & Roy's figures are for cone 6 and cone 10, so at low fire it says they do not apply. They are guidelines, not a pass or a fail.",
       "stull": "The <b>Stull chart</b> plots the glaze's silica against its alumina, with Stull's matte, semi-matte and bright regions and the limit set's ranges. It is a guide to the surface, not a prediction.",
       "slurry": "<b>Specific gravity and water</b> uses Brongniart's formula: weigh a measured volume of the glaze, then see the dry glaze in the bucket, the water that brings it to the SG you want, or the water for a new batch. Densities follow your setting for specific gravity, Baumé or pint weight."
     },
@@ -591,7 +591,10 @@
     "guidance": "These are guidelines, not a pass or a fail: a glaze outside them can be fine, and one inside them can still craze, leach or fail. Test it.",
     "source": "Source:",
     "saveFailed": "Your choice of limit set could not be saved to your account, so the limit set before is still the one in use.",
-    "ownLimits": "These suggestions use Glazecalc's own limits, not {name}."
+    "ownLimits": "These suggestions use Glazecalc's own limits, not {name}.",
+    "firingFromBlock": "From the recipe's firing ({bands})",
+    "bothBands": "The recipe's firing spans {bands}, so each is checked, side by side: a glaze rarely behaves the same at both ends.",
+    "fromFiring": "The figures are for the recipe's firing: {band}. Choose a firing above to check another."
   },
   "stull": {
     "heading": "Stull chart",
@@ -715,7 +718,8 @@
     "notSaved": "Nothing was saved: {problem}",
     "stopped": "Saved {saved} of {count}. The rest were not saved: {problem}",
     "saved": "{count, plural, one {Saved # recipe.} other {Saved # recipes.}}",
-    "openRecipes": "Open your recipes"
+    "openRecipes": "Open your recipes",
+    "firingRead": "Firing read from the notes: {firing}"
   },
   "blends": {
     "title": "Blends for test tiles",
@@ -848,5 +852,115 @@
     "retry": "Try again",
     "about": "Glazecalc is a free glaze calculator for potters.",
     "aboutLink": "About Glazecalc"
+  },
+  "firing": {
+    "heading": "Firing",
+    "whatIsCone": "What does cone mean?",
+    "scale": "Scale",
+    "scales": {
+      "orton": "Orton cones",
+      "sk": "SK cones (JIS)",
+      "temperature": "Temperature"
+    },
+    "groups": {
+      "usual": "Cones 022 to 13",
+      "half": "Half cones",
+      "above": "Cones 14 to 42 (rare in pottery)"
+    },
+    "coneLabel": "Cone",
+    "lowCone": "From cone",
+    "highCone": "To cone",
+    "noHigh": "No upper cone",
+    "notStated": "Not stated",
+    "peak": "Peak temperature ({unit})",
+    "lowTemperature": "From ({unit})",
+    "highTemperature": "To ({unit})",
+    "rangeToggle": "A range",
+    "testedLegend": "Tested at: tick each cone you have fired it to",
+    "atmosphere": "Atmosphere",
+    "process": "Process",
+    "atmospheres": {
+      "oxidation": "oxidation",
+      "reduction": "reduction",
+      "neutral": "neutral"
+    },
+    "processes": {
+      "wood": "wood",
+      "soda": "soda",
+      "salt": "salt",
+      "raku": "raku",
+      "pit": "pit"
+    },
+    "rate": "Rate over the last hour ({unit} an hour)",
+    "hold": "Hold at peak (minutes)",
+    "schedule": "Schedule notes",
+    "schedulePlaceholder": "Hold 10 minutes, slow cool...",
+    "witness": "Confirmed by a witness cone",
+    "foodSurface": "For a food surface (a liner)",
+    "liner": {
+      "note": "Food safety depends on firing this glaze to the cone it was tested at: an underfired glaze can leach.",
+      "range": "It is given for a range, so test it at the low end of the range, where it melts least.",
+      "untested": "No cone is marked as tested yet.",
+      "test": "Only a leach test of your own fired pots shows whether it is safe for food."
+    },
+    "helpSummary": "About the firing",
+    "help": {
+      "cone": "The cone you fired this glaze to. Cones measure heatwork (time and temperature), not just temperature, so cone 06 is much cooler than cone 6.",
+      "range": "If it works over a range, give the lowest and highest cone, and tick the cones you have actually fired it to: the tested cone shows first. A glaze can look, and behave, differently at each end.",
+      "convert": "The cone is kept as you give it. Any conversion to another scale or to a temperature is approximate: a cone bends at a different temperature at a different heating rate, and SK and Orton cones with the same number are not the same.",
+      "move": "Moving a glaze to another cone usually means reformulating it, not just firing it hotter or cooler. Duplicate for another cone keeps both versions."
+    },
+    "temperatureProblem": "Give a temperature from {min} to {max}.",
+    "rateProblem": "Give the rate as a whole number of degrees an hour.",
+    "holdProblem": "Give the hold in whole minutes, up to a day.",
+    "one": {
+      "orton": "cone {cone}",
+      "sk": "SK {cone}"
+    },
+    "span": {
+      "orton": "cone {low}–{high}",
+      "sk": "SK {low}–{high}",
+      "temperature": "{low} to {high}"
+    },
+    "testedAt": "Tested at {cones}",
+    "claimedRange": "claimed range {range}",
+    "rangeUntested": "Range {range}; no cone ticked as tested",
+    "approxTemperature": "≈ {temperature} ({basis}; approximate)",
+    "approxCone": "≈ {cone} ({basis}; approximate)",
+    "basis": {
+      "orton60": "Orton large cones at 60 °C an hour",
+      "kyoto": "measured at 100 °C an hour by Kyoto's municipal institute",
+      "stated": "as given"
+    },
+    "rateText": "{rate} an hour over the last hour",
+    "holdText": "held {minutes} min",
+    "witnessText": "checked with a witness cone",
+    "asGiven": "Firing, as the author gave it:",
+    "filterCone": "Show recipes for a cone",
+    "anyCone": "Any cone",
+    "filterAtmosphere": "Show recipes for an atmosphere or process",
+    "anyAtmosphere": "Any atmosphere or process",
+    "duplicate": "Duplicate for another cone",
+    "duplicateName": "Duplicate {title} for another cone",
+    "duplicateTitle": "{title} (another cone)",
+    "duplicateNote": "A copy of {title}, not saved yet: choose its new cone in Firing. Moving a glaze to another cone usually means reformulating it, not just firing it hotter or cooler, so check the limits and test it."
+  },
+  "firings": {
+    "heading": "Firing logs",
+    "open": "Link firing logs",
+    "fetchFailed": "Your firing logs could not be fetched.",
+    "noLogs": "No firing logs yet.",
+    "toLogs": "Record a firing",
+    "saveFailed": "The change to the firing log links could not be saved.",
+    "resultFor": "Result in {title}",
+    "resultPlaceholder": "How it came out: glossy, no crazing...",
+    "unlink": "Unlink",
+    "unlinkName": "Unlink {title}",
+    "choose": "A firing log to link",
+    "link": "Link",
+    "fill": "Tick the cones these logs name: {cones}",
+    "replaceAsk": "Tested is ticked at {now}. Replace that with the cones the logs name, {logs}?",
+    "replace": "Replace",
+    "keep": "Keep as it is"
   }
 }

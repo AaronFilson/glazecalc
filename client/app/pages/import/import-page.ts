@@ -24,6 +24,9 @@ import { Notices, NoticesList } from '../../shared/notices';
 import { NumberInput } from '../../shared/number-input';
 import { PageHeader } from '../../shared/page-header';
 import { evaluate } from '../recipe/recipe-analysis';
+import { FiringBlock, firingFromLines, readFiring, readsDecimalComma } from '../../../../lib/cones/firing';
+import { LocaleService } from '../../core/locale.service';
+import { firingLine } from '../recipe/firing-text';
 
 /** The most recipes one paste shows, so the page stays usable. */
 export const MOST_RECIPES = 30;
@@ -61,6 +64,8 @@ interface Draft {
   title: string;
   include: boolean;
   notes: string[];
+  /** The firing read from the notes ("Cone 6 ox", "^6", "SK8", "1240°C"); the notes keep the text as pasted. */
+  firedAt: FiringBlock | null;
   setAside: string[];
   lines: DraftLine[];
   /** Saved already: shown as saved, and not saved again. */
@@ -287,6 +292,11 @@ const HOW_NOTES: Partial<Record<MatchHow, string>> = {
                 <bdi>{{ draft.notes.join('\\n') }}</bdi>
               </p>
             }
+            @if (draft.firedAt) {
+              <p class="small import-firing">
+                {{ t('recipe.import.firingRead', { firing: firingText(draft.firedAt) }) }}
+              </p>
+            }
             @if (draft.setAside.length) {
               <p class="small muted">{{ t('recipe.import.setAside', { lines: draft.setAside.join(' · ') }) }}</p>
             }
@@ -429,6 +439,7 @@ const HOW_NOTES: Partial<Record<MatchHow, string>> = {
 export class ImportPage implements OnInit {
   private readonly resources = inject(ApiResourceFactory);
   private readonly injector = inject(Injector);
+  private readonly locale = inject(LocaleService);
   private readonly recipes = this.resources.for<Recipe>('recipe');
   private readonly materials = this.resources.for<Material>('materials');
   private readonly additives = this.resources.for<Additive>('additives');
@@ -592,10 +603,18 @@ export class ImportPage implements OnInit {
       ...choices.filter((c) => c.kind === 'material')
     ];
     const amounts = importAmounts(recipe);
+    const reading = { decimalComma: readsDecimalComma(typedDecimalMark(), formatLocale()) };
     return {
       title: recipe.title ?? '',
       include: true,
       notes: recipe.notes,
+      // A title counts too, but only when it names a cone or a temperature ("Cone 6 Red"): a one-word
+      // name such as "Red", "Salt" or "Wood" is a glaze's name, not a firing.
+      firedAt: firingFromLines(
+        [...(recipe.title && readFiring(recipe.title, reading)?.scale ? [recipe.title] : []), ...recipe.notes],
+        this.locale.cones(),
+        reading
+      ),
       setAside: recipe.skipped.map((s) => s.text.trim()),
       saved: false,
       lines: recipe.lines.map((line, i) => {
@@ -710,8 +729,14 @@ export class ImportPage implements OnInit {
           amount: line.amount,
           unit: line.addition ? (line.unit ?? baseUnit) : baseUnit
         })),
-      includeAdditives: false
+      includeAdditives: false,
+      ...(draft.firedAt && { firedAt: draft.firedAt })
     };
+  }
+
+  /** A firing read from the notes, in words. */
+  protected firingText(block: FiringBlock): string {
+    return firingLine(block, { cones: this.locale.cones(), temperature: this.locale.temperature() });
   }
 
   private problemsOf(draft: Draft): string[] {

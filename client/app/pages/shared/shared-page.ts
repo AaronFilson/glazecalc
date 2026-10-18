@@ -18,13 +18,18 @@ import { evaluate } from '../recipe/recipe-analysis';
 import { HazardSource, RecipeHazards } from '../recipe/recipe-hazards';
 import { UnityFormula, unityColumns } from '../recipe/unity-formula';
 import { WorkedCalculation } from '../recipe/worked-calculation';
+import { LocaleService } from '../../core/locale.service';
+import { firingWords } from '../recipe/firing-text';
 
 /**
  * What GET /api/shared/recipe sends (server/lib/share_links.ts): the recipe,
  * and the chemistry its additives borrow. A line from the standard library has
  * ownedBy 'Standard' and the library's hazards; a potter's own has neither.
  */
-export interface SharedRecipe extends Pick<Recipe, 'title' | 'date' | 'materials' | 'additives' | 'includeAdditives'> {
+export interface SharedRecipe extends Pick<
+  Recipe,
+  'title' | 'date' | 'materials' | 'additives' | 'includeAdditives' | 'firedAt' | 'foodSurface'
+> {
   notes?: string[];
   borrowed?: Array<Additive & { aliases?: string[] }>;
 }
@@ -53,6 +58,28 @@ type View = 'recipe' | 'worked';
         </h1>
         @if (recipe.date) {
           <p class="shared-meta">{{ recipe.date | gcDate }}</p>
+        }
+        <!-- The firing in the author's own scale first, the approximate conversion into the reader's beside it. -->
+        @if (firing(); as fired) {
+          <p class="shared-firing">
+            <span class="shared-firing-label">{{ t('recipe.firing.asGiven') }}</span>
+            @if (fired.tested) {
+              <strong class="shared-firing-tested">{{ fired.tested }}</strong>
+            }
+            @for (part of [fired.range, fired.atmospheres, fired.schedule]; track $index) {
+              @if (part) {
+                <span>{{ part }}</span>
+              }
+            }
+            @if (fired.conversion) {
+              <span class="shared-firing-approx">{{ fired.conversion }}</span>
+            }
+          </p>
+        }
+        @if (recipe.foodSurface) {
+          <p class="shared-liner" role="note">
+            {{ t('recipe.firing.liner.note') }} {{ t('recipe.firing.liner.test') }}
+          </p>
         }
         <p class="lead-text">{{ t('recipe.shared.lead') }}</p>
       </header>
@@ -357,6 +384,23 @@ type View = 'recipe' | 'worked';
       padding-inline-start: 0.75rem;
       margin: 0 0 1rem;
     }
+    .shared-firing {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      gap: 0.25rem 0.75rem;
+      margin: 0.25rem 0;
+    }
+    .shared-firing-label,
+    .shared-firing-approx {
+      color: var(--gc-muted);
+      font-size: 0.9rem;
+    }
+    .shared-liner {
+      border-inline-start: 4px solid currentColor;
+      padding-inline-start: 0.5rem;
+      font-size: 0.95rem;
+    }
     .shared-hazards {
       display: block;
       margin: 1rem 0 0;
@@ -418,6 +462,11 @@ export class SharedPage implements OnInit {
   protected readonly view = signal<View>('recipe');
 
   protected readonly title = computed(() => this.recipe()?.title.trim() || translate('recipe.page.untitled'));
+  private readonly locale = inject(LocaleService);
+  /** The firing as the author stated it, with a conversion into the reader's scale marked approximate. */
+  protected readonly firing = computed(() =>
+    firingWords(this.recipe()?.firedAt, { cones: this.locale.cones(), temperature: this.locale.temperature() })
+  );
   /** The chemistry an additive borrows by name, from the records the server sent with the recipe. */
   protected readonly chemistryOf = (name: string): MaterialInput | undefined => {
     const wanted = folded(name.trim());

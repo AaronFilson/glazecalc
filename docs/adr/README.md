@@ -24,6 +24,7 @@ Each one is written once; a later change gets a new record that replaces the old
 | [0017](0017-mcp-server.md)                        | AI assistants use a stateless MCP endpoint, with personal tokens   | 2026-10-16 |
 | [0019](0019-shared-recipe-tools.md)               | The recipe tools are shared by the app and the server, in codes    | 2026-10-16 |
 | [0020](0020-share-links.md)                       | A recipe is shared by an unguessable, read-only link               | 2026-10-16 |
+| [0021](0021-recipe-firing.md)                     | A recipe states its firing: the cone as given, the cones tested    | 2026-10-17 |
 
 0018 is kept for the in-app assistant's privacy notice, in
-[the integrations plan](../integrations-plan.md). The next new record takes 0021.
+[the integrations plan](../integrations-plan.md). The next new record takes 0022.

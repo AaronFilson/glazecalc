@@ -191,10 +191,10 @@ describe('export API', () => {
     expect(res.headers['content-disposition']).to.match(/^attachment; filename="glazecalc-recipes-/);
     expect(res.headers['cache-control']).to.eql('no-store');
     const lines = text(res).replace('﻿', '').trim().split('\r\n');
-    expect(lines[0]).to.eql('Recipe,Date,Notes,Type,Ingredient,Amount,Unit of additive');
+    expect(lines[0]).to.eql('Recipe,Date,Notes,Type,Ingredient,Amount,Unit of additive,Cone,Atmospheres,Food surface');
     expect(lines.slice(1)).to.eql([
-      '"Clear, ""gloss""",2026-01-02,fires clear,Material,Whiting,20,',
-      '"Clear, ""gloss""",2026-01-02,fires clear,Additive,Tin oxide,2,percent'
+      '"Clear, ""gloss""",2026-01-02,fires clear,Material,Whiting,20,,,,',
+      '"Clear, ""gloss""",2026-01-02,fires clear,Additive,Tin oxide,2,percent,,,'
     ]);
   });
 

@@ -150,6 +150,30 @@ describe('ImportPage', () => {
     expect(text(fixture, 'a[fragment="saved-recipes"]')).toBe('Open your recipes');
   });
 
+  it('reads the firing from the notes into the recipe’s firing, keeping the text as pasted in the notes', async () => {
+    const { fixture, paste, save } = await create();
+    await paste('Tenmoku\ncone 5-6\nox/red\nCuster 40\nWhiting 20\nEPK 10\nSilica 30');
+    expect(text(fixture, '.import-firing')).toBe(
+      'Firing read from the notes: Range cone 5–6; no cone ticked as tested · oxidation, reduction'
+    );
+    await save();
+    const sent = httpMock().expectOne(API + '/recipe/create').request.body as Recipe;
+    expect(sent.firedAt).toEqual({ scale: 'orton', low: '5', high: '6', atmospheres: ['oxidation', 'reduction'] });
+    expect(sent.notes).toBe('cone 5-6\nox/red');
+  });
+
+  it('reads a firing from a title only when it names a cone or a temperature, never from a one-word name', async () => {
+    const { fixture, page, paste } = await create();
+    await paste('Red\nCuster 40\nWhiting 20\n\nSalt\nCuster 50\nSilica 50\n\nCone 6 Wood\nCuster 60\nSilica 40');
+    const drafts = page['drafts']() as Array<{ title: string; firedAt: unknown }>;
+    expect(drafts.map((d) => [d.title, d.firedAt ?? null])).toEqual([
+      ['Red', null],
+      ['Salt', null],
+      ['Cone 6 Wood', { scale: 'orton', low: '6', tested: ['6'], processes: ['wood'] }]
+    ]);
+    expect(text(fixture, '.import-firing')).toContain('cone 6');
+  });
+
   it('asks for a choice where several materials are close, and saves once one is chosen or the line is left out', async () => {
     const { fixture, root, paste, save, selects } = await create();
     await paste('Test\nFeldspar 50\nSilica 50\nZircopax 5');

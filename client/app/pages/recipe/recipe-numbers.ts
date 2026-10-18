@@ -3,6 +3,7 @@ import { TranslocoDirective } from '@jsverse/transloco';
 import { expansion, formatFormula } from '../../../../lib/chemistry';
 import { molePercent } from '../../../../lib/recipe/analysis';
 import { FiringBand } from '../../../../lib/recipe/limits';
+import { FiringBlock } from '../../../../lib/cones/firing';
 import { RecipeAnalysis } from '../../core/models';
 import { FixedPipe } from '../../shared/format-pipes';
 import { RecipeLimits } from './recipe-limits';
@@ -72,7 +73,7 @@ import { silicaAluminaRatio, unityColumnOf } from './unity-formula';
             <p class="numbers-note">{{ t('recipe.numbers.expansionNote') }}</p>
           }
         </section>
-        <gc-recipe-limits [unity]="analysis().uList" [(firing)]="firing" />
+        <gc-recipe-limits [unity]="analysis().uList" [(firing)]="firing" [firedAt]="firedAt()" />
       </div>
     </section>
   </ng-container>`,
@@ -136,6 +137,8 @@ export class RecipeNumbers {
   readonly counted = input(false);
   /** The firing the recipe is for; '' until chosen. */
   readonly firing = model<FiringBand | ''>('');
+  /** The recipe's firing block, whose range gives the limits' bands when none is chosen. */
+  readonly firedAt = input<FiringBlock | null>(null);
 
   /** A row per oxide, in the order potters read the unity formula. */
   protected readonly rows = computed(() => {

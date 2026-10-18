@@ -103,6 +103,31 @@ describe('RecipeNumbers', () => {
     expect(low.root.querySelector('gc-stull-chart svg')).not.toBeNull();
   });
 
+  it('takes the bands from the recipe’s firing: a range across two (cone 6–10) shows both side by side', async () => {
+    const { fixture, root } = await create();
+    fixture.componentRef.setInput('firedAt', { scale: 'orton', low: '6', high: '10', tested: ['6'] });
+    await fixture.whenStable();
+    const bands = [...root.querySelectorAll('.limits-band')].map((el) => el.getAttribute('data-band'));
+    expect(bands).toEqual(['mid', 'high']);
+    expect(root.querySelectorAll('.limits-table')).toHaveLength(2);
+    expect(text(fixture, '.limits-both')).toContain('spans Mid fire, cone 4–6 and High fire, cone 9–11');
+    expect(text(fixture, '#limit-firing option')).toContain("From the recipe's firing");
+    // Cone 6 by its cone 6 figures, cone 10 by its cone 10 ones.
+    expect(rows(root, '.limits-band[data-band=mid]')).toContainEqual(['Al₂O₃', '0.30', '0.25–0.40', 'within']);
+    expect(rows(root, '.limits-band[data-band=high]')).toContainEqual(['Al₂O₃', '0.30', '0.30–0.60', 'within']);
+    // The band picker still overrides it.
+    fixture.componentRef.setInput('firing', 'high');
+    await fixture.whenStable();
+    expect(root.querySelectorAll('.limits-table')).toHaveLength(1);
+    expect(root.querySelector('.limits-both')).toBeNull();
+    // A single cone gives one band.
+    fixture.componentRef.setInput('firing', '');
+    fixture.componentRef.setInput('firedAt', { scale: 'sk', low: '8' });
+    await fixture.whenStable();
+    expect(root.querySelectorAll('.limits-table')).toHaveLength(1);
+    expect(text(fixture)).toContain("The figures are for the recipe's firing: Mid fire, cone 4–6.");
+  });
+
   it('keeps the limit set chosen with the account, and the firing chosen with the recipe', async () => {
     const { fixture, root } = await create('mid');
     const select = root.querySelector('#limit-set') as HTMLSelectElement;
