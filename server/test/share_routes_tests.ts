@@ -182,6 +182,29 @@ describe('share links', () => {
     expect(JSON.stringify(body)).to.not.include(logId).and.not.include('kiln 2');
   });
 
+  it("send the firing's schedule note only when the owner shows the notes; cone, atmosphere and process always", async () => {
+    const { secret } = await share();
+    await as(alice.token).put('/recipe/change/' + recipeId, {
+      recipe: {
+        firedAt: { scale: 'orton', low: '6', atmospheres: ['oxidation'], processes: ['soda'], schedule: 'slow cool' }
+      }
+    });
+    expect((await view(secret)).body.firedAt).to.eql({
+      scale: 'orton',
+      low: '6',
+      atmospheres: ['oxidation'],
+      processes: ['soda']
+    });
+    expect(await as(alice.token).put('/share/recipe/' + recipeId, { includeNotes: true })).to.have.status(200);
+    expect((await view(secret)).body.firedAt.schedule).to.equal('slow cool');
+    // A block that states nothing but its schedule is not sent at all without the notes.
+    await as(alice.token).put('/share/recipe/' + recipeId, { includeNotes: false });
+    await as(alice.token).put('/recipe/change/' + recipeId, {
+      recipe: { firedAt: { scale: 'orton', schedule: 'slow cool' } }
+    });
+    expect((await view(secret)).body).to.not.have.property('firedAt');
+  });
+
   it("carry the chemistry an additive borrows by name, from the owner's records too", async () => {
     await Additive.create({
       name: 'Bentonite',
