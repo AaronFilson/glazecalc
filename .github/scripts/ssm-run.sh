@@ -36,8 +36,16 @@ for _ in $(seq 1 90); do
 done
 echo "Status: $status on $targets instance(s)"
 
-aws ssm list-command-invocations --command-id "$command_id" --details \
-  --query 'CommandInvocations[].CommandPlugins[].[Status,Output]' --output text
+# The script's output from each instance: get-command-invocation gives up to
+# 24,000 characters of it (list-command-invocations, only the first 2,500).
+for instance in $(aws ssm list-command-invocations --command-id "$command_id" \
+  --query 'CommandInvocations[].InstanceId' --output text); do
+  echo "== $instance"
+  aws ssm get-command-invocation --command-id "$command_id" --instance-id "$instance" \
+    --query 'StandardOutputContent' --output text || true
+  aws ssm get-command-invocation --command-id "$command_id" --instance-id "$instance" \
+    --query 'StandardErrorContent' --output text >&2 || true
+done
 # With no instance tagged app=glazecalc the command can finish with nothing deployed.
 if [ "$targets" = 0 ]; then
   echo 'No instance tagged app=glazecalc took the command; nothing was deployed.'
