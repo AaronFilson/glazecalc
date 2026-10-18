@@ -3,79 +3,79 @@ title: 基本燒窯
 lead: 如何用自動斷電器或手動開關燒電窯：選擇、擺放與判讀測溫錐，並附素燒與釉燒的已發表燒成曲線。
 ---
 
-## Cones: what they measure {#cones lang=en}
+## 測溫錐：量的是什麼 {#cones}
 
 > [!NOTE]
-> Follow your kiln's own manual first. This guide gathers what cone and kiln makers publish about basic electric kilns; it does not replace the instructions for your model, and where the two differ, the manual wins.
+> 請先照您的窯的使用說明書操作。本指南彙整了測溫錐與窯製造商公開的基本電窯資料，不能取代您所用型號的說明；兩者不同時，以使用說明書為準。
 
-A **pyrometric cone** is a small, slender pyramid made from a standardized ceramic powder. When it has had enough heat, it softens and bends over in a repeatable way. You set cones in the kiln beside the ware and read how far they bent.
+**測溫錐**{{en: pyrometric cone}}是用標準化的陶瓷粉末做成的細長小角錐。受到足夠的熱時，測溫錐會變軟，並以固定的方式彎倒。您把測溫錐放進窯裡、擺在作品旁邊，再看錐彎了多少。
 
-Cones measure **heatwork**, the combined effect of temperature and time. In the words of Orton, the main US cone maker, "Cones do not measure temperature alone." A cone heated slowly bends at a lower temperature than one heated fast, and a glaze behaves the same way. So Orton gives each cone's temperature for a stated heating rate over the last {{180 °F; 100 °C}} of the firing. Once a cone starts to move, it bends over a narrow range, "usually less than 40° F" (22 °C).
+測溫錐量的是**熱功**{{en: heatwork}}，也就是溫度與時間合起來的效果。美國主要的測溫錐製造商 Orton 說：「測溫錐量的不只是溫度。」慢慢加熱的測溫錐，會在比快速加熱時更低的溫度彎倒，釉藥{{en: glaze}}的表現也是如此。所以 Orton 給每支測溫錐的溫度，是以燒窯最後 {{180 °F; 100 °C}} 的指定升溫速率為準。測溫錐一開始移動，就會在很窄的範圍內彎倒，「通常不到 40° F」（22 °C）。
 
-### Cone numbers
+### 測溫錐的號數
 
-Cone numbers run from 022, the coolest, up to 42. A leading zero marks the cooler series and is read as "oh": cone 06 ("oh-six") is cooler than cone 04, and cone 01 needs less heat than cone 1. Orton warns that it is important not to mix the two series up. The gap is large: cone 06 bends more than {{400 °F; 220 °C}} cooler than cone 6.
+測溫錐的號數從最低溫的 022 到 42。前面有零的是溫度較低的系列，讀作「零」：Orton 06 號測溫錐（讀作「零六」）的溫度比 04 號低，01 號需要的熱量比 1 號少。Orton 提醒，不要把這兩個系列搞混很重要。差距很大：06 號彎倒時的溫度，比 6 號低超過 {{400 °F; 220 °C}}。
 
-Table: Common firing ranges, for self-supporting cones at {{108 °F/h; 60 °C/h}}
-Label: Firing ranges
+Table: 常見的燒成範圍，自立式測溫錐，升溫速率 {{108 °F/h; 60 °C/h}}
+Label: 燒成範圍
 
-| Range     | Cones |                    Temperature | Typical use                              |
-| --------- | ----- | -----------------------------: | ---------------------------------------- |
-| Low fire  | 06–04 |  {{1828–1945 °F; 998–1063 °C}} | Earthenware glazes; bisque               |
-| Mid fire  | 5–6   | {{2167–2232 °F; 1186–1222 °C}} | Electric-kiln stoneware and porcelain    |
-| High fire | 9–10  | {{2300–2345 °F; 1260–1285 °C}} | Mostly gas-fired stoneware and porcelain |
+| 範圍 | 測溫錐 |                           溫度 | 常見用途                 |
+| ---- | ------ | -----------------------------: | ------------------------ |
+| 低溫 | 06–04  |  {{1828–1945 °F; 998–1063 °C}} | 低溫陶器的釉藥；素燒     |
+| 中溫 | 5–6    | {{2167–2232 °F; 1186–1222 °C}} | 電窯燒的炻器與瓷器       |
+| 高溫 | 9–10   | {{2300–2345 °F; 1260–1285 °C}} | 多為瓦斯窯燒的炻器與瓷器 |
 
-Suppliers in the UK, Europe, Australia and New Zealand often give a temperature in °C rather than a cone: find the nearest cone in the chart below and confirm it with a witness cone. Seger and Staffordshire cones, the older European series, should not be assumed to share Orton's numbers, so this guide uses Orton cones.
+英國、歐洲、澳洲與紐西蘭的供應商，常給 °C 溫度而不是測溫錐號：請在下方的對照表中找到最接近的測溫錐，並用**見證錐**{{en: witness cone}}確認。塞格錐與 Staffordshire 測溫錐是歐洲較早的系列，不應假定其號數與 Orton 相同，所以本指南使用 Orton 測溫錐。
 
-### Holding adds heatwork
+### 持溫會增加熱功
 
-A **hold** (also called a **soak**) keeps the kiln at one temperature for a while. Because cones measure heatwork, a hold at the top can stand in for a hotter peak. Orton gives these rough equivalents:
+**持溫**{{en: hold}}（也稱為**恆溫**）是讓窯在某個溫度停留一段時間。因為測溫錐量的是熱功，在最高溫持溫，可以代替更高的最高溫度。Orton 給出這些大略的等效關係：
 
-Table: What a hold at the peak is worth
-Label: Holds and heatwork
+Table: 在最高溫持溫相當於多少
+Label: 持溫與熱功
 
-| Hold             | Roughly the same heatwork as             |
-| ---------------- | ---------------------------------------- |
-| About 20 minutes | A peak {{18 °F; 10 °C}} hotter           |
-| 40–60 minutes    | A peak {{36 °F; 20 °C}} hotter           |
-| About 2 hours    | A peak {{54 °F; 30 °C}} hotter           |
-| 4–6 hours        | Enough to bend a cone two numbers hotter |
+| 持溫       | 熱功大致相當於                |
+| ---------- | ----------------------------- |
+| 約 20 分鐘 | 最高溫度高出 {{18 °F; 10 °C}} |
+| 40–60 分鐘 | 最高溫度高出 {{36 °F; 20 °C}} |
+| 約 2 小時  | 最高溫度高出 {{54 °F; 30 °C}} |
+| 4–6 小時   | 足以使溫度高兩號的測溫錐彎倒  |
 
-Orton adds that a hold of 1–2 hours "may be sufficient to deform the next higher cone number".
+Orton 另外指出，持溫 1–2 小時「可能足以使溫度高一號的測溫錐變形」。
 
-So a hold is never free: if you add one, expect the cones to bend further, and lower the peak to match.
+所以持溫從來不是沒有代價的：如果加了持溫，預期測溫錐會彎得更多，並相應調低最高溫度。
 
-### Kinds of cone
+### 測溫錐的種類
 
-Orton makes four kinds. Two stand on the shelf to show what the ware received; two are for the kiln sitter.
+Orton 的測溫錐有四種。兩種立在棚板上，顯示作品受到的熱；兩種供**自動斷電器**{{en: kiln sitter}}使用。
 
-Table: Orton's four kinds of cone
-Label: Kinds of cone
+Table: Orton 的四種測溫錐
+Label: 測溫錐的種類
 
-| Kind            | Used for                  | How it stands                                                                               |
-| --------------- | ------------------------- | ------------------------------------------------------------------------------------------- |
-| Self-supporting | Witness cone on the shelf | A built-in base sets the height, 1¾ in (44 mm), and the 8° lean; no holder needed           |
-| Large           | Witness cone on the shelf | Set in a plaque or a pat of clay with exactly 2 in (51 mm) showing, leaning 8° from upright |
-| Small (junior)  | Kiln sitter               | Lies across the sitter's supports; 15/16 in (24 mm) showing if stood on a shelf             |
-| Bar             | Kiln sitter               | The same powder as small cones, in an even bar shape                                        |
+| 種類           | 用途           | 擺放方式                                                            |
+| -------------- | -------------- | ------------------------------------------------------------------- |
+| 自立式         | 棚板上的見證錐 | 內建的底座決定高度 1¾ 英寸（44 mm）與 8° 的傾斜；不需要固定座       |
+| 大型           | 棚板上的見證錐 | 插在錐座或一小塊黏土中，剛好露出 2 英寸（51 mm），從垂直方向傾斜 8° |
+| 小型（junior） | 自動斷電器     | 橫放在自動斷電器的錐架上；若立在棚板上，露出 15/16 英寸（24 mm）    |
+| 測溫棒         | 自動斷電器     | 與小型錐相同的粉末，做成均勻的棒狀                                  |
 
-Height matters: a ¼ in (6 mm) difference in the height of a large cone "can cause more than a half cone difference in bending". Cones do not go bad or age, and damp storage does not affect them.
+高度很重要：大型錐的高度差 ¼ 英寸（6 mm），就「可能使彎倒的結果差到超過半個錐號」。測溫錐不會變質或老化，受潮存放也不受影響。
 
-### What "cone 6" means in practice
+### 實際上「Orton 6 號測溫錐」是什麼意思
 
-The chart gives a self-supporting cone 6 as {{2232 °F; 1222 °C}}, but only when the last {{180 °F; 100 °C}} climbs at {{108 °F/h; 60 °C/h}}. Climbing at {{270 °F/h; 150 °C/h}}, the same cone bends at {{2269 °F; 1243 °C}}. Real kilns differ again: Digitalfire reports that "Most kilns reach cone 6 at 2200°F, not 2232°F". So "cone 6" means the ware received the heatwork that bends a cone 6, whatever a thermometer read at the time.
+對照表給自立式 6 號錐的溫度是 {{2232 °F; 1222 °C}}，但前提是最後 {{180 °F; 100 °C}} 以 {{108 °F/h; 60 °C/h}} 升溫。若以 {{270 °F/h; 150 °C/h}} 升溫，同一支錐在 {{2269 °F; 1243 °C}} 彎倒。實際的窯又各不相同：Digitalfire 回報「大多數窯在 2200°F 就達到 6 號錐，而不是 2232°F」。所以「6 號錐」的意思，是作品受到的熱功足以使 6 號測溫錐彎倒，不管當時溫度計讀到多少。
 
 :::orton
 
 > [!NOTE]
-> Fire by the cone, not the clock or the dial. Set a controller by cone number, and let a witness cone on the shelf confirm every firing.
+> 依測溫錐來燒，不要依時鐘或旋鈕。請用測溫錐號設定溫度控制器，並讓棚板上的見證錐確認每一次燒窯。
 
 :::
 
 :::temperature
 
 > [!NOTE]
-> Firing by temperature, keep the end of every firing the same: the same last rate of climb, the same peak and the same hold. Then a glaze that worked once works again.
+> 依溫度燒窯時，每次燒窯的結尾都要保持相同：相同的最後升溫速率、相同的最高溫度和相同的持溫。這樣，曾經成功的釉藥才能再次成功。
 
 :::
 
@@ -596,22 +596,22 @@ Label: 手動窯的起點
 
 **高溫計**{{en: pyrometer}}是用**熱電偶**讀取溫度的溫度表，熱電偶是穿過窯壁的測溫探針。高溫計能顯示窯升溫多快，讓您選對測溫錐對照表的欄位。但高溫計讀的是窯壁附近，不是作品，而且會漂移。L&L 指出，K 型熱電偶在重複燒幾次 6 號錐之後，可能偏差超過 {{25 °F; 14 °C}}，「這個差距大於整整一個錐號」，而自立式測溫錐的變化不超過 {{4 °F; 2 °C}}。Orton 說，高溫計需要不時重新校正，而測溫錐就是檢查高溫計的方法。
 
-## Venting, peeking and safety {#venting lang=en}
+## 排氣、觀火與安全 {#venting}
 
-### Venting
+### 排氣
 
-Early in a firing, clay and glaze give off water vapor and fumes, including carbon monoxide, and glazes can give off toxic fumes later in the firing too. L&L calls venting them "essential". With no vent system, that means the lid propped and the peepholes open in the early stages, as in the procedures above; slowing the heating during this time also helps the carbon burn out. In a kiln without a vent, Dawson, who made the sitter, also says to leave the top peephole open for the whole firing: the venting "will reduce deterioration of the kiln's metal parts and increase the life of the tube assembly". A **downdraft vent** (a powered vent fitted to the kiln) changes this. It does the venting, so Orton says the lid and peepholes stay closed for the whole firing except to check the cones, and L&L says to leave the vent on and plug the peepholes.
+燒窯初期，黏土與釉藥會釋放水蒸氣和煙氣，包括一氧化碳，釉藥在燒窯後段也可能釋放有毒煙氣。L&L 稱將這些排出是「必要的」。沒有排氣系統時，這表示在初期階段要撐開窯蓋、打開觀火孔，如上述操作方式；這段期間放慢升溫，也有助於碳燒除。在沒有排氣裝置的窯中，製造自動斷電器的 Dawson 另外說，整個燒窯過程都要讓最上面的觀火孔保持開啟：這樣排氣「會減少窯的金屬零件劣化，並延長套管組件的使用壽命」。**下抽式排氣裝置**（裝在窯上的動力排氣裝置）會改變這個做法。排氣由這個裝置負責，所以 Orton 說除了檢查測溫錐之外，整個燒窯過程窯蓋和觀火孔都保持關閉，而 L&L 說要讓排氣裝置持續運轉，並把觀火孔塞住。
 
-For venting the room, and for carbon monoxide alarms, see [Safe mixing and ventilation](/guides/safe-mixing) and [Don't poison your family](/guides/home-safety).
+房間的通風與一氧化碳警報器，請見[安全調配與通風](/guides/safe-mixing)和[別讓家人中毒](/guides/home-safety)。
 
-### While the kiln is firing
+### 燒窯期間
 
-- Look through a peephole only with IR-rated shade 3 welding glasses; sunglasses are not enough. Skutt advises twisting the plugs into place so they do not fall out.
-- Do not leave the kiln unattended beyond its expected firing time; a sitter is not a fail-safe.
-- Never fire on or near anything that burns, such as a wood floor or carpet.
-- Keep the clearances in your manual. Published figures range from 12 in (30 cm) to 3 ft (91 cm); where the manual is silent, 18 in (46 cm) from walls and 3 ft (91 cm) from anything that burns is the safest choice.
-- Keep the space around the sitter's weight clear so it can drop.
-- When the firing ends, turn the switches off and turn off the breaker as well.
+- 只能戴可阻擋紅外線（IR）、遮光號數 3 的焊接護目鏡看觀火孔；太陽眼鏡不夠。Skutt 建議把塞子旋入定位，這樣才不會掉出來。
+- 請勿讓窯在超過預期燒窯時間後無人看管；自動斷電器不是故障安全裝置。
+- 切勿在會燃燒的東西上方或附近燒窯，例如木地板或地毯。
+- 請遵守使用說明書上的安全距離。已發表的數字從 12 英寸（30 cm）到 3 英尺（91 cm）都有；如果使用說明書沒有寫，距牆 18 英寸（46 cm）、距任何會燃燒的東西 3 英尺（91 cm），是最安全的選擇。
+- 自動斷電器配重周圍的空間要保持淨空，讓配重能夠落下。
+- 燒窯結束時，關掉開關，也要關掉斷路器。
 
 ## 冷卻與出窯 {#cooling}
 

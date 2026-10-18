@@ -102,6 +102,9 @@
     "quartzAll": "石英（粉塵全為石英時）",
     "cristobaliteAll": "方矽石（粉塵全為方矽石時）",
     "allFree": "管理濃度（粉塵全為游離二氧化矽時）",
+    "bandFromTo": "游離二氧化矽（SiO₂）含量為 {from}% 至 {to}% 的粉塵",
+    "bandOverTo": "游離二氧化矽含量高於 {from}% 且不超過 {to}% 的粉塵",
+    "bandAbove": "游離二氧化矽含量高於 {from}% 的粉塵",
     "recommended": "{abbr} 建議值",
     "value": "{value} mg/m³",
     "kind": {
@@ -160,7 +163,15 @@
       "myFlat": "扁平器",
       "mySmall": "小型深器",
       "myLarge": "大型深器",
-      "myCooking": "烹調器具"
+      "myCooking": "烹調器具",
+      "idFlat": "內深不超過 25 mm 的器物",
+      "idSmall": "內深超過 25 mm、容量低於 1100 mL 的器物",
+      "idLarge": "內深超過 25 mm、容量 1100 mL 以上的器物",
+      "thFlat": "深度不超過 25 mm 的器物",
+      "thSmall": "深度超過 25 mm、容量低於 1.1 L 的器物",
+      "thLarge": "深度超過 25 mm、容量 1.1 L 以上的器物",
+      "thInfant": "12 個月以內嬰兒食品的容器",
+      "thCooking": "烹飪器皿，能耐受烹飪時的高溫"
     },
     "judged": {
       "average": "6 件的平均值",

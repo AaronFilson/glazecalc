@@ -17,13 +17,17 @@
     "confirmEmail": "確認電子郵件 - Glazecalc",
     "home": "您的陶藝筆記本 - Glazecalc",
     "recipe": "釉方 - Glazecalc",
+    "import": "貼上釉方 - Glazecalc",
+    "blends": "試片混調 - Glazecalc",
     "material": "原料 - Glazecalc",
     "additive": "添加物 - Glazecalc",
     "firingLogs": "燒窯紀錄 - Glazecalc",
     "notes": "筆記 - Glazecalc",
     "trash": "垃圾桶 - Glazecalc",
     "account": "您的帳戶與設定 - Glazecalc",
-    "notFound": "找不到頁面 - Glazecalc"
+    "notFound": "找不到頁面 - Glazecalc",
+    "shared": "分享的釉方 - Glazecalc",
+    "assistants": "在 AI 助理中使用 Glazecalc - Glazecalc"
   },
   "nav": {
     "skip": "跳到主要內容",
@@ -96,9 +100,14 @@
   },
   "remove": {
     "alreadyRemoved": "「{name}」已經移除。",
+    "trashed": "已將「{name}」移到垃圾桶。",
+    "undo": "復原",
+    "restored": "已放回「{name}」。",
+    "restoreFailed": "無法放回「{name}」，目前仍在垃圾桶中。",
     "failed": "無法移除。請再試一次。",
     "question": "要移除「{name}」嗎？",
     "cannotUndo": "此操作無法復原。",
+    "toTrash": "30 天內可以從垃圾桶放回。",
     "removing": "移除中...",
     "yes": "是，移除",
     "cancel": "取消",
