@@ -361,7 +361,8 @@
     "heading": "유해성",
     "intro": "각 원료의 기록에 있는 그대로입니다. 표준 라이브러리의 내용은 공급업체의 물질안전보건자료에서 가져옵니다.",
     "line": "<b>{names}:</b> {hazards}",
-    "unknown": "{count, plural, other {{list}의 유해성은 나와 있지 않습니다. 원료와 함께 오는 물질안전보건자료를 확인하세요.}}"
+    "unknown": "{count, plural, other {{list}의 유해성은 나와 있지 않습니다. 원료와 함께 오는 물질안전보건자료를 확인하세요.}}",
+    "safety": "마른 유약 원료는 분진을 만듭니다. 이 분진이 폐에 들어가지 않게 하세요. 유해성으로 분류되지 않은 원료의 분진도 마찬가지입니다. <mixing>안전한 유약 배합과 환기</mixing>를 보세요. 아이나 반려동물이 가까이 있다면 <home>가족을 중독에서 지키세요</home>도 보세요. 원료의 물질안전보건자료에 더 많은 내용이 있으면 그것을 따르세요."
   },
   "compare": {
     "heading": "두 레시피 비교",
@@ -590,7 +591,10 @@
     "guidance": "이것은 참고 기준이며 합격이나 불합격이 아닙니다. 범위를 벗어난 유약도 괜찮을 수 있고, 범위 안에 있는 유약도 빙렬이 생기거나 용출되거나 불량이 될 수 있습니다. 시험하세요.",
     "source": "출처:",
     "saveFailed": "한도 세트 선택을 계정에 저장하지 못했으므로 이전 한도 세트를 계속 쓰고 있습니다.",
-    "ownLimits": "이 제안은 {name}의 한도가 아니라 Glazecalc 자체 한도를 씁니다."
+    "ownLimits": "이 제안은 {name}의 한도가 아니라 Glazecalc 자체 한도를 씁니다.",
+    "firingFromBlock": "레시피의 소성 기준({bands})",
+    "bothBands": "레시피의 소성이 {bands}에 걸쳐 있으므로 둘 다 나란히 점검합니다. 유약은 양쪽 끝에서 똑같이 작동하는 경우가 드뭅니다.",
+    "fromFiring": "이 수치는 레시피의 소성({band})에 해당합니다. 다른 소성을 점검하려면 위에서 소성을 고르세요."
   },
   "stull": {
     "heading": "Stull 차트",
@@ -714,7 +718,8 @@
     "notSaved": "아무것도 저장하지 않았습니다: {problem}",
     "stopped": "{count}개 중 {saved}개를 저장했습니다. 나머지는 저장하지 못했습니다: {problem}",
     "saved": "{count, plural, other {레시피 #개를 저장했습니다.}}",
-    "openRecipes": "레시피 열기"
+    "openRecipes": "레시피 열기",
+    "firingRead": "메모에서 읽은 소성: {firing}"
   },
   "blends": {
     "title": "시편 블렌드",
@@ -847,5 +852,115 @@
     "retry": "다시 시도",
     "about": "Glazecalc는 도예가를 위한 무료 유약 계산기입니다.",
     "aboutLink": "Glazecalc 소개"
+  },
+  "firing": {
+    "heading": "소성",
+    "whatIsCone": "콘이란 무엇인가요?",
+    "scale": "기준",
+    "scales": {
+      "orton": "오튼 콘",
+      "sk": "SK 콘(JIS)",
+      "temperature": "온도"
+    },
+    "groups": {
+      "usual": "콘 022~13",
+      "half": "반 단계 콘",
+      "above": "콘 14~42(도자기에서는 드묾)"
+    },
+    "coneLabel": "콘",
+    "lowCone": "시작 콘",
+    "highCone": "끝 콘",
+    "noHigh": "상한 콘 없음",
+    "notStated": "적지 않음",
+    "peak": "최고 온도({unit})",
+    "lowTemperature": "시작({unit})",
+    "highTemperature": "끝({unit})",
+    "rangeToggle": "범위",
+    "testedLegend": "시험한 콘: 이 유약을 소성해 본 콘마다 체크하세요",
+    "atmosphere": "분위기",
+    "process": "소성 방식",
+    "atmospheres": {
+      "oxidation": "산화 소성",
+      "reduction": "환원 소성",
+      "neutral": "중성 소성"
+    },
+    "processes": {
+      "wood": "장작 소성",
+      "soda": "소다 소성",
+      "salt": "소금 소성",
+      "raku": "라쿠 소성",
+      "pit": "피트 소성"
+    },
+    "rate": "마지막 한 시간의 속도(시간당 {unit})",
+    "hold": "최고 온도에서 유지(분)",
+    "schedule": "소성 스케줄 메모",
+    "schedulePlaceholder": "10분 유지, 천천히 냉각...",
+    "witness": "확인용 콘으로 확인함",
+    "foodSurface": "음식이 닿는 면용(안쪽 면용 유약)",
+    "liner": {
+      "note": "식품 안전은 이 유약을 시험한 콘까지 소성하는 데 달려 있습니다. 소성이 부족한 유약은 용출될 수 있습니다.",
+      "range": "범위로 정해져 있으므로, 유약이 가장 덜 녹는 범위의 낮은 쪽 끝에서 시험하세요.",
+      "untested": "시험한 콘으로 표시된 콘이 아직 없습니다.",
+      "test": "직접 소성한 기물의 용출시험만이 음식에 안전한지 보여 줍니다."
+    },
+    "helpSummary": "소성에 대하여",
+    "help": {
+      "cone": "이 유약을 소성한 콘입니다. 콘은 온도만이 아니라 소성 정도(시간과 온도)를 재므로, 오튼 콘 06은 오튼 콘 6보다 훨씬 낮은 온도입니다.",
+      "range": "유약이 여러 콘에 걸쳐 쓰인다면 가장 낮은 콘과 가장 높은 콘을 입력하고, 실제로 소성해 본 콘에 체크하세요. 시험한 콘이 먼저 표시됩니다. 유약은 양쪽 끝에서 겉모습도, 성질도 다를 수 있습니다.",
+      "convert": "콘은 입력한 그대로 유지됩니다. 다른 기준이나 온도로의 환산은 모두 근삿값입니다. 콘은 가열 속도에 따라 다른 온도에서 휘며, 번호가 같은 SK 콘과 오튼 콘은 같지 않습니다.",
+      "move": "유약을 다른 콘으로 옮긴다는 것은 대개 단순히 더 높거나 낮은 온도에서 소성하는 것이 아니라 유약을 다시 짠다는 뜻입니다. 다른 콘용으로 복제하면 두 버전이 모두 남습니다."
+    },
+    "temperatureProblem": "{min}~{max} 사이의 온도를 입력하세요.",
+    "rateProblem": "시간당 도 수를 정수로 입력하세요.",
+    "holdProblem": "유지 시간을 정수인 분 단위로, 최대 하루까지 입력하세요.",
+    "one": {
+      "orton": "오튼 콘 {cone}",
+      "sk": "SK {cone}"
+    },
+    "span": {
+      "orton": "오튼 콘 {low}~{high}",
+      "sk": "SK {low}~{high}",
+      "temperature": "{low}~{high}"
+    },
+    "testedAt": "{cones}에서 시험함",
+    "claimedRange": "표시된 범위 {range}",
+    "rangeUntested": "범위 {range}, 시험한 콘으로 체크된 것 없음",
+    "approxTemperature": "≈ {temperature}({basis}, 근삿값)",
+    "approxCone": "≈ {cone}({basis}, 근삿값)",
+    "basis": {
+      "orton60": "시간당 60 °C로 가열한 오튼 대형 콘",
+      "kyoto": "교토시 시립 연구소가 시간당 100 °C로 측정",
+      "stated": "입력된 그대로"
+    },
+    "rateText": "마지막 한 시간 동안 시간당 {rate}",
+    "holdText": "{minutes}분 유지",
+    "witnessText": "확인용 콘으로 확인함",
+    "asGiven": "작성자가 적은 소성 조건:",
+    "filterCone": "콘별 레시피 보기",
+    "anyCone": "모든 콘",
+    "filterAtmosphere": "분위기나 방식별 레시피 보기",
+    "anyAtmosphere": "모든 분위기와 방식",
+    "duplicate": "다른 콘용으로 복제",
+    "duplicateName": "다른 콘용으로 복제: {title}",
+    "duplicateTitle": "{title}(다른 콘용)",
+    "duplicateNote": "{title}의 사본이며 아직 저장되지 않았습니다. 소성에서 새 콘을 고르세요. 유약을 다른 콘으로 옮긴다는 것은 대개 단순히 더 높거나 낮은 온도에서 소성하는 것이 아니라 유약을 다시 짠다는 뜻이므로, 한도를 점검하고 시험하세요."
+  },
+  "firings": {
+    "heading": "소성 기록",
+    "open": "소성 기록 연결",
+    "fetchFailed": "소성 기록을 가져오지 못했습니다.",
+    "noLogs": "아직 소성 기록이 없습니다.",
+    "toLogs": "소성 기록하기",
+    "saveFailed": "소성 기록 연결의 변경을 저장하지 못했습니다.",
+    "resultFor": "{title} 결과",
+    "resultPlaceholder": "어떻게 나왔는지: 광택이 나고 빙렬 없음...",
+    "unlink": "연결 해제",
+    "unlinkName": "{title} 연결 해제",
+    "choose": "연결할 소성 기록",
+    "link": "연결",
+    "fill": "이 기록들이 가리키는 콘에 체크: {cones}",
+    "replaceAsk": "시험한 콘의 현재 체크: {now}. 기록에 적힌 콘으로 바꿀까요? (기록의 콘: {logs})",
+    "replace": "바꾸기",
+    "keep": "그대로 두기"
   }
 }

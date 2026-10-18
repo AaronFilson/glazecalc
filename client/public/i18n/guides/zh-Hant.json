@@ -56,7 +56,8 @@
     "vet": "請打給您的獸醫。",
     "checkedOn": "查核來源：",
     "choosePrompt": "選擇您的國家，即可查看當地的求助電話。",
-    "ministry": "衛生主管機關的網頁：<link>{name}</link>。"
+    "ministry": "衛生主管機關的網頁：<link>{name}</link>。",
+    "reported": "政府官方頁面列出了 113、114 和 115，但沒有說明各自的用途；這裡顯示的職責依據 Circular 22/2014/TT-BTTTT，來自轉引該文件的次級頁面。"
   },
   "density": {
     "sg": "比重 {value}",
@@ -91,6 +92,7 @@
     "caption": "{region}工作場所的可呼吸性結晶型游離二氧化矽容許濃度，8 小時平均（確認日期：{date}）",
     "captionControl": "{region}評估作業場所空氣中可呼吸性結晶型游離二氧化矽的基準（確認日期：{date}）",
     "both": "石英與方矽石",
+    "freeSilica": "游離二氧化矽",
     "quartz": "石英",
     "cristobalite": "方矽石",
     "actionLevel": "行動基準",
@@ -171,7 +173,13 @@
       "thSmall": "深度超過 25 mm、容量低於 1.1 L 的器物",
       "thLarge": "深度超過 25 mm、容量 1.1 L 以上的器物",
       "thInfant": "12 個月以內嬰兒食品的容器",
-      "thCooking": "烹飪器皿，能耐受烹飪時的高溫"
+      "thCooking": "烹飪器皿，能耐受烹飪時的高溫",
+      "vnFlat": "淺型器物，用於盛放或烹煮食物",
+      "vnSmall": "盛放食物的深型器物，容量未滿 1100 mL",
+      "vnMedium": "盛放食物的深型器物，容量 1100 mL 以上、未滿 3000 mL",
+      "vnStorage": "盛放食物的深型器物，容量 3000 mL 以上",
+      "vnCooking": "烹煮用的深型器物",
+      "vnCups": "杯子和小碗"
     },
     "judged": {
       "average": "6 件的平均值",

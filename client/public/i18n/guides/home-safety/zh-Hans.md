@@ -149,76 +149,76 @@ Pet Poison Helpline 说：“铅对所有物种都有毒，但幼小和/或营�
 
 如果宠物可能吃了或喝了工作室里的任何东西，或出现上述症状，就给兽医或动物中毒咨询热线打电话（见本页顶部的表格），并准备好原料名称和宠物的体重。
 
-## The kiln {#the-kiln lang=en}
+## 窑 {#the-kiln}
 
-### The outside gets hot enough to burn
+### 窑的外壳烫得足以烧伤人
 
-A UK schools risk assessment says a kiln's outside "can reach 160 °C and possibly more" (about 320 °F), and a school kiln guide reports metal bands at up to 460 °F (about 240 °C). Skutt, a kiln maker, recommends a kiln room that can be locked against children and pets. Where a room cannot be locked, the school guide suggests a barrier such as a kiln safety screen.
+英国一份学校风险评估说，窑的外壳“可达 160 °C，甚至可能更高”（约 320 °F），一份学校窑炉管理手册报告说金属箍的温度可达 460 °F（约 240 °C）。窑炉制造商 Skutt 建议窑房要能上锁，防止儿童和宠物进入。房间无法上锁时，这份学校手册建议设置屏障，例如窑炉安全围挡。
 
-Small children and pets cannot understand a warning sign. We suggest keeping them behind a locked door or a barrier while the kiln fires and while it cools, and posting a warning sign for everyone else.
+年幼的孩子和宠物理解不了警告标志。我们建议在窑烧制和冷却期间，用上锁的门或屏障把他们挡在外面，并为其他人张贴警告标志。
 
-### Space around it
+### 窑周围的空间
 
-Sources disagree on clearance. Rio Grande says at least 12 inches (30 cm) from walls and anything combustible. L&L strongly recommends 18 inches (46 cm) to all walls, and the building code it cites asks for 3 feet (0.9 m) from combustible walls. Follow your kiln's manual and local fire code; if you are unsure, allow 18 inches from any wall and 3 feet from anything that can burn. In a garage, keep cars, fuel and paint well away.
+关于安全距离{{en: clearance}}，各来源说法不一。Rio Grande 说，与墙壁和任何可燃物至少相距 12 英寸（30 cm）。L&L 强烈建议与所有墙壁相距 18 英寸（46 cm），它引用的建筑规范则要求与可燃墙壁相距 3 英尺（0.9 m）。遵照窑的使用说明书和当地的消防规范；如果不确定，与任何墙壁留出 18 英寸，与任何可燃物留出 3 英尺。在车库里，让汽车、燃料和油漆远离窑。
 
-### Power
+### 电源
 
-Rio Grande recommends a **dedicated circuit** (one that powers nothing else) with a properly grounded outlet. We suggest no extension cord. Between firings, switch off the kiln's breaker or disconnect switch, or unplug it, so a child cannot start it.
+Rio Grande 建议使用**专用线路**（不为其他任何设备供电的线路），并配有正确接地的插座。我们建议不要使用延长线。两次烧窑之间，关闭窑的断路器或隔离开关，或者拔掉插头，以免孩子启动它。
 
-### Be there when the firing ends
+### 烧成结束时要在场
 
-A **kiln sitter** is the mechanical switch on many manual kilns: a small cone bends at the end of the firing and trips the switch off. Its manual says it "is NOT intended to perform as a fail-safe shut-off device." Rio Grande says never to leave a firing kiln unattended, "especially near the expected shut-off time". So stay nearby and check the kiln while it fires, above all near the end; fire only when an adult will be home and awake to do that, check that it has switched off, and keep an ABC fire extinguisher in the kiln room. For how sitters, controllers and schedules work, see [Firing a basic kiln](/guides/firing).
+**窑炉看管器**{{en: kiln sitter}}（Kiln-Sitter）是许多手动控制的窑上的机械开关：烧成结束时，一支小测温锥{{en: cone}}弯倒，触发开关断电。它的使用说明书说，它“**并非**设计用作故障安全型断电装置”。Rio Grande 说切勿让正在烧制的窑无人看管，“尤其是在预计断电的时间前后”。因此，烧窑期间要留在附近查看窑，尤其是临近结束的时候；只在有成年人在家且醒着、能做到这一点时才烧窑，检查窑是否已经断电，并在窑房里放一个 ABC 灭火器。关于窑炉看管器、温控仪和烧成曲线如何工作，参阅[《简易窑炉烧成》](/guides/firing)。
 
-### Fumes and carbon monoxide
+### 废气和一氧化碳
 
-Firing gives off fumes, so vent the kiln to the outdoors; [Safe mixing and ventilation](/guides/safe-mixing) explains how. A kiln in an attached garage needs venting that keeps fumes from reaching the house through the connecting door. Keep birds in a far room whenever the kiln fires.
+烧窑会释放废气，所以要把窑的废气排到室外；[《安全配料与通风》](/guides/safe-mixing)介绍了具体方法。如果窑放在与住宅相连的车库里，需要排风来防止废气通过连通的门进入住宅。每次烧窑时都把鸟放在远处的房间里。
 
-**Carbon monoxide** (CO) is a poisonous gas you cannot see or smell. A university kiln safety sheet requires CO alarms with gas kilns. Views differ for electric kilns, but burning off organic matter (in clay, or things like paper or wax) can make CO. We think a CO alarm in the kiln room and the rooms next to it is a sensible, inexpensive step for any kiln.
+**一氧化碳**（CO）是一种看不见也闻不到的有毒气体。一所大学的窑炉安全资料要求气窑配备一氧化碳报警器。对于电窑，看法不一，但有机物（黏土中的有机物，或纸、蜡之类的东西）燃烧时可能产生一氧化碳。我们认为，在窑房及其相邻的房间安装一氧化碳报警器，对任何窑来说都是明智而且花费不多的一步。
 
-### Peepholes and eyes
+### 观火孔与眼睛
 
-Infrared light, which you cannot see, "starts at 752°F (400°C)", and the Ceramic Arts Network says looking into a kiln above this should always be done with eye protection. Infrared can damage the lens of the eye and lead to cataracts, and long gazing can injure the retina. Sunglasses and didymium glasses do not block it.
+看不见的红外线“从 752°F (400°C) 开始”，Ceramic Arts Network 说，窑温高于此时，往窑里看应始终佩戴护目用具。红外线可能损伤眼睛的晶状体并导致白内障，长时间注视还可能伤害视网膜。太阳镜和钕镨玻璃眼镜都不能阻挡红外线。
 
 > [!WARNING]
-> Children should not look into a kiln at all. A glowing peephole draws them, and they will not reliably keep protective glasses on, so keep them away while the kiln is hot. Adults should look only briefly, through IR-rated welding glasses. Sources recommend shades from 1.7 to 5; shade 3 is a sensible choice, darker if you see spots afterward.
+> 儿童完全不应往窑里看。发光的观火孔会吸引他们，而他们不会可靠地一直戴着护目镜，所以在窑还热的时候，让他们远离窑。成年人只应透过防红外的焊接护目镜短暂地看。各来源推荐的遮光号为 1.7～5；遮光号 3 是合理的选择，如果看后眼前出现斑点，就用更深的遮光号。
 
-## Handmade ware on the family table {#handmade-ware lang=en}
+## 家庭餐桌上的手工器物 {#handmade-ware}
 
-The question for pots on the family table is **leaching**: metals dissolving out of the fired glaze into food or drink. The FDA warns that if pottery "is not manufactured properly, this lead can leach into food and drink", and that "no amount of washing, boiling, or other process can remove lead from pottery." Regulators such as the US FDA and the EU limit how much lead and cadmium a finished piece releases in a standard acid test, not what the glaze contains. The strictest US limit, for cups, mugs and pitchers, is 0.5 µg/mL of lead.
+家庭餐桌上的器物，要关注的是**溶出**{{en: leaching}}：金属从烧成后的釉{{en: glaze}}中溶出，进入食物或饮料。FDA（美国食品药品监督管理局）警告说，如果陶瓷器“生产不当，其中的铅就可能溶入食物和饮料”，并且“任何清洗、煮沸或其他处理都无法去除陶瓷器中的铅”。美国 FDA 和欧盟等监管机构限制的是成品在标准酸溶出试验中释放的铅和镉的量，而不是釉的成分。美国最严格的限值适用于杯、马克杯和壶，为铅 0.5 µg/mL。
 
-### Lead-free is not the same as food-safe
+### 无铅不等于符合食品接触安全要求
 
-A glaze with no lead can still leach. Digitalfire, a glaze chemistry reference, names glazes containing "heavy metal oxide colorants, barium, lithium, or lead" as the concern, and warns that a stain fired above its rated temperature can release cadmium. The ASTM D-4236 art-materials label on a jar "DOES NOT establish that a fired glaze is food-safe", and "Tableware producers must test all finished ware to establish dinnerware status."
+不含铅的釉也可能溶出金属。釉料化学参考资料 Digitalfire 指出，含有“重金属氧化物着色剂{{en: colorants}}、钡、锂或铅”的釉值得关注，并警告说，烧成温度超过额定温度的色料{{en: stain}}可能释放镉。罐子上的 ASTM D-4236 美术材料标签“**并不能**证明烧成后的釉符合食品接触安全要求”，而且“餐具生产商必须检测所有成品，以确定其是否可作为餐具”。
 
 > [!NOTE]
-> "Food safe" means this glaze, on this clay, fired to this cone, applied this way, releases less than the legal limits. A recipe calculation, Glazecalc's included, can flag a risky recipe but cannot prove a pot is safe. Only a leach test of the fired piece can.
+> “符合食品接触安全要求”{{en: food-safe}}的意思是：这种釉，施在这种黏土{{en: clay}}上，烧到这个锥号{{en: cone}}，用这种方式施釉，释放的量低于法定限值。配方计算，包括 Glazecalc 的计算，可以标出有风险的配方，但不能证明一件器物是安全的。只有对烧成后的器物做溶出试验{{en: leach test}}才能证明。
 
-We suggest reading a "food safe" label on a commercial glaze as a good start, not a guarantee: a different clay, a thicker coat, another cone or a second glaze on top changes the result.
+我们建议把市售釉上的“符合食品接触安全要求”标签看作一个良好的起点，而不是保证：换一种黏土、施得更厚、烧到另一个锥号，或在上面再施一层釉，都会改变结果。
 
-### Testing
+### 检测
 
-Laboratories test fired pieces with a standard acid soak that represents a worst case, such as ASTM C738 in the US. One lab's EU test needs four identical pieces and takes seven working days, so make spares of anything you plan to have tested.
+实验室用代表最坏情况的标准酸浸泡来检测烧成后的器物，例如美国的 ASTM C738。一家实验室的欧盟检测需要四件相同的器物，耗时七个工作日，所以计划送检的器物要多做几件备用。
 
-Home tests are disputed. The FDA says home swab kits can show leachable lead, and that a piece that tests positive should not be used for food. Ceramics NZ warns that consumer lead-test pens are "not designed for this use" on ceramics and can give false positives. Digitalfire suggests leaving a lemon slice on the glaze overnight as a rough screen. The safe reading: a positive home test means stop using the piece for food, and a negative one proves nothing. Only a lab can tell you a piece is safe.
+家用检测存在争议。FDA 说，家用擦拭检测盒可以显示可溶出的铅，检测呈阳性的器物不应用于盛放食物。Ceramics NZ 警告说，消费者用的验铅笔“并非为此用途设计”，用于陶瓷时可能出现假阳性。Digitalfire 建议把一片柠檬放在釉面上过夜，作为粗略的筛查。稳妥的解读是：家用检测呈阳性，就停止用这件器物盛放食物；呈阴性则什么也证明不了。只有实验室才能告诉您一件器物是安全的。
 
-### Crazed ware
+### 有釉裂的器物
 
-**Crazing** is a network of fine cracks in the glaze surface, and sources disagree about it. A Ceramics Monthly experiment found crazed tiles could be cleaned, best in a dishwasher, though they came out less clean than uncrazed tiles after soap and water. Digitalfire holds that "Crazed ware is unacceptable" and that crazing "severely weakens ware". The safe course is simple: do not use crazed pieces for food.
+**釉裂**{{en: crazing}}是釉面上的细裂纹网络，各来源对它的看法不一。Ceramics Monthly 的一项实验发现，有釉裂的试片{{en: test tiles}}可以清洗干净，用洗碗机洗效果最好，不过用肥皂和水清洗后，它们没有无釉裂的试片干净。Digitalfire 认为“有釉裂的器物是不可接受的”，并且釉裂“会严重削弱器物的强度”。稳妥的做法很简单：不要用有釉裂的器物盛放食物。
 
-### Liner glazes
+### 内壁釉
 
-A **liner glaze** is the glaze on the inside of a cup or bowl, where the food sits. Digitalfire describes a liner that may be low enough in risk to use without lab testing: no colorants, barium, lead or lithium; fully melted; no crazing; and it wears well. Even then, only a leach test of your own fired pots shows whether they are food-safe. Warning signs in any glaze are heavy amounts of colorant, crystals on the surface and poor melting.
+**内壁釉**{{en: liner glaze}}是杯子或碗内侧、盛放食物处的釉。Digitalfire 描述了一种风险可能低到无需实验室检测就能使用的内壁釉：不含着色剂、钡、铅或锂；完全熔融；没有釉裂；而且耐磨损。即便如此，也只有对您自己烧成的器物做溶出试验，才能判明它们是否符合食品接触安全要求。在任何釉中，警示信号都是：大量的着色剂、表面出现晶体和熔融不良。
 
-### Family rules we suggest
+### 我们建议的家规
 
-- Children's cups, bowls and plates: only lab-tested, durable liner glazes, or commercial dinnerware.
-- Do not store acidic food or drink (citrus, tomato, vinegar, fruit juice, wine) in pots glazed with anything you have not had tested.
-- Do not use crazed pieces for food.
-- Test tiles and experiments stay in the studio, never in the kitchen, the toy box or the pet's bowl.
-- Take care with other pottery too. The FDA advises caution with handmade or crude-looking pieces, antiques, damaged or worn pieces, flea-market finds and bright orange, red or yellow decoration.
-- If a child has used pottery you now doubt, the FDA says to talk to a doctor about a blood lead test.
+- 儿童用的杯、碗和盘子：只用经实验室检测的、耐用的内壁釉，或者用市售餐具。
+- 不要把酸性食物或饮料（柑橘、番茄、醋、果汁、葡萄酒）存放在施有任何未经检测的釉的器物里。
+- 不要用有釉裂的器物盛放食物。
+- 试片和试验品留在工作室里，切勿放进厨房、玩具箱或宠物的碗里。
+- 对其他陶瓷器也要小心。FDA 建议对手工制作或看起来粗糙的器物、古董、有损坏或磨损的器物、跳蚤市场淘来的东西，以及有鲜艳的橙色、红色或黄色装饰的器物保持谨慎。
+- 如果孩子用过您现在有所怀疑的陶瓷器，FDA 说要就血铅检测咨询医生。
 
-For more on how glazes melt, why some leach and what the limits mean, see [Glazing from first principles](/guides/glazing-basics).
+关于釉如何熔融、为什么有些釉会溶出金属以及这些限值意味着什么，参阅[《从基本原理学施釉》](/guides/glazing-basics)。
 
 ## 资料来源 {#sources}
 

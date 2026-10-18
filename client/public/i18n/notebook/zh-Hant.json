@@ -88,7 +88,15 @@
     "chooseField": "請選擇要新增的欄位，再按「新增欄位」。",
     "fetchFailed": "取得燒窯紀錄資訊時發生錯誤。",
     "saved": "已成功將燒窯紀錄加入伺服器。",
-    "saveFailed": "錯誤：向伺服器發出的要求失敗。"
+    "saveFailed": "錯誤：向伺服器發出的要求失敗。",
+    "recipesHeading": "這次燒窯燒的釉方",
+    "noRecipes": "尚未連結釉方。",
+    "recipesFailed": "無法取得您的釉方，所以現在無法連結。",
+    "pickRecipe": "這次燒窯燒的一個釉方",
+    "linkRecipe": "連結釉方",
+    "unlink": "取消連結",
+    "unlinkRecipe": "取消連結「{title}」",
+    "linkFailed": "無法儲存這個連結。"
   },
   "notes": {
     "title": "筆記",

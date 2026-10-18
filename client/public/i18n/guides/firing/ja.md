@@ -165,69 +165,69 @@ Label: 三本組のコーン
 
 :::orton
 
-## The kiln sitter {#kiln-sitter lang=en}
+## キルンシッター {#kiln-sitter}
 
-A **kiln sitter** is the mechanical switch, on the outside of many basic and older kilns, that turns the kiln off when a small cone bends. The best known is the Dawson Kiln-Sitter. It makes firing easier, but it is a convenience, not a safety device.
+**キルンシッター**{{en: kiln sitter}}は、基本的な窯や古い窯の多くで外側に付いている機械式のスイッチで、小型コーンが曲がると窯を止めます。最もよく知られているのは Dawson の Kiln-Sitter です。焼成を楽にしてくれますが、便利な道具であって、安全装置ではありません。
 
-### How it works
+### 仕組み
 
-A porcelain tube reaches into the kiln. At its end, a small cone or a bar lies across two metal supports, under a **sensing rod** that pivots like a seesaw. Outside the kiln, the other end of the rod holds up a weight by a small claw. When the cone softens and bends to about 90°, the rod drops far enough to release the weight, the weight falls, and the power to the elements is cut.
+磁器製のチューブが窯の中まで伸びています。その先端で、小型コーンかバーが二つの金属のコーンサポートに渡して置かれ、その上に、シーソーのように支点で動く**センサーロッド**があります。窯の外では、ロッドのもう一方の端が、小さなクローでウェイトを支えています。コーンが軟らかくなって約 90° まで曲がると、ロッドが下がってウェイトが外れ、ウェイトが落ちて、ヒーターへの電源が切れます。
 
-Small cones and bars "give equivalent heat treatment". Orton notes that many beginners choose bars, because their even shape makes it easy to place them the same way every time. A small cone tapers, so where it sits matters: with its thin part under the rod the kiln shuts off cooler, and with its thick part hotter, a shift of "as much as 1/2 cone".
+小型コーンとバーは「同等の熱処理になる」とされています。オルトンによれば、多くの初心者はバーを選びます。太さが均一なので、毎回同じように置きやすいからです。小型コーンは先細りなので、置く位置が影響します。細い部分をロッドの下にすると窯は低めの温度で止まり、太い部分を下にすると高めの温度で止まります。その差は「最大でコーン 1/2 個分」です。
 
-### Which cone goes in the sitter
+### キルンシッターに入れるコーン
 
-Sources disagree. Dawson, who made the sitter, says to use the same number as the firing cone on the shelf, and to go one number hotter only if the shelf cone stays unbent. L&L says to use one number hotter than the shelf cones, because the sitter sits near the wall and the elements, gets more heat, and tends to shut off early. Orton settles the principle: "The shelf cone is the final judge of the firing process, not the Kiln-Sitter cone or bar."
-
-> [!NOTE]
-> Our starting point: put a small cone of the same number as your target in the sitter, with a cone pack on the shelf. If the shelf firing cone is under-bent when the kiln shuts off, go one number hotter in the sitter next time, or set the thicker part of the cone under the rod. If it is over-bent, do the opposite.
-
-### Setting it up, and checks before every firing
-
-Dawson's procedure, which doubles as a check before every firing:
-
-1. Turn all the switches off. Check that the sensing rod moves freely, sits centered in the tube and is not bent or corroded. If it is sluggish, Dawson says to replace the tube assembly.
-2. Brush a thin coat of high-fire **kiln wash** (a coating that stops melted material sticking) onto the cone supports and the rod where it touches the cone. Never put wash on the cone or the porcelain tube.
-3. Load shelves and ware at least 1 in (25 mm) above or below the tube, so nothing can touch, fall against or block it.
-4. Lift the weight, press the claw down onto the trigger, and lay the cone or bar flat on the supports against the metal step, as your sitter's manual shows, the same way every time. Check it again before closing the lid: "AN IMPROPERLY PLACED CONE OR BAR COULD CAUSE AN OVERFIRING."
-5. Set the limit timer and push in the plunger until it locks. Keep the kiln level and the space under the weight clear, so the weight can fall.
-
-### The limit timer
-
-Many sitters, including Dawson's LT models, have a **limit timer**: a clock that turns the kiln off after a set time, as a backup "in case the KILN-SITTER fails". It should always be set longer than the firing is expected to take. Sources set the margin differently:
-
-Table: How long to set the limit timer
-Label: Limit timer settings
-
-| Source    | Setting                                                                                                                      |
-| --------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| Dawson    | ½ hour longer than the expected firing time until you know the kiln, later as little as ¼ hour; never set it beyond 20 hours |
-| L&L       | Very high the first time, noting how long the firing takes; after that, about 1 hour longer                                  |
-| Bracker's | 30 minutes to 1 hour longer than the firing time                                                                             |
+資料によって意見が分かれます。キルンシッターを作った Dawson は、棚板の焼成コーンと同じ番号を使い、棚板のコーンが曲がらずに残った場合に限って一つ高温側にするよう述べています。L&L は、棚板のコーンより一つ高温側を使うよう述べています。キルンシッターは壁とヒーターの近くにあって熱を多く受け、早めに止まりがちだからです。原則については、オルトンが決着をつけています。「焼成の最終的な判断を下すのは棚板のコーンであり、Kiln-Sitter のコーンやバーではない」。
 
 > [!NOTE]
-> Our starting point: generous the first time (within the dial's 20 hours), then ½ to 1 hour longer than the time you recorded. The timer also tells you how long a firing took: set at 7 and ending at 1 means 6 hours.
+> 最初の目安: キルンシッターには目標と同じ番号の小型コーンを入れ、棚板には三本組のコーンを置いてください。窯が止まったときに棚板の焼成コーンが曲がり不足なら、次回はキルンシッターのコーンを一つ高温側にするか、コーンの太い部分をロッドの下にしてください。曲がりすぎなら、その逆にしてください。
 
-### When it shuts off early or late
+### 準備と、毎回の焼成前の点検
 
-After each firing, read the sitter cone beside the shelf cones.
+Dawson の手順は、毎回の焼成前の点検にもなります。
 
-Table: Reading the sitter after a firing
-Label: Kiln sitter problems
+1. すべてのスイッチを切ります。センサーロッドが自由に動き、チューブの中央にあり、曲がったり腐食したりしていないことを確かめます。動きが鈍い場合は、チューブ一式を交換するよう Dawson は述べています。
+2. 高火度用の**棚板用アルミナ塗料**（溶けたものがくっつくのを防ぐ塗料）を、コーンサポートと、ロッドのコーンに触れる部分に薄く塗ります。コーンや磁器製のチューブには絶対に塗らないでください。
+3. 棚板と作品は、チューブから少なくとも 1 インチ（25 mm）上か下に離して詰めます。何もチューブに触れたり、倒れかかったり、ふさいだりしないようにするためです。
+4. ウェイトを持ち上げ、クローをトリガーに押し下げてから、コーンかバーを、キルンシッターの取扱説明書のとおりに、金属の段に当ててコーンサポートの上に平らに置きます。毎回同じように置いてください。蓋を閉める前にもう一度確かめてください。「コーンやバーの置き方が不適切だと、焼きすぎの原因になりうる」からです。
+5. リミットタイマーを設定し、プランジャーをロックするまで押し込みます。窯を水平に保ち、ウェイトが落ちられるよう、その下の空間には何も置かないでください。
 
-| What you see                                    | Likely cause                                                                                           | What to do                                                       |
-| ----------------------------------------------- | ------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------- |
-| Sitter tripped, shelf firing cone under-bent    | The sitter ran hotter than the shelf (it sits near the wall)                                           | One cone hotter in the sitter, or the thicker part under the rod |
-| Sitter cone sagged well past 90°                | The kiln climbed too fast near the end                                                                 | Lower the switch settings, so the climb is slower (Dawson)       |
-| Sitter cone did not bend, or melted into a blob | The sitter itself: poor adjustment, a bent or corroded rod, or something lodged in or against the tube | Check and adjust the sitter by its manual before firing again    |
-| Early or late every time                        | Out of adjustment, or a worn rod                                                                       | Check with the firing gauge; move the trigger plate              |
+### リミットタイマー
 
-To check the adjustment, Dawson uses a **firing gauge** that holds the rod where a fully bent cone would leave it; there should then be "1/16th-inch clearance" (about 1.6 mm) at the claw. Check it every 30 firings. Ceramics Monthly's rule: if the kiln shuts off early, move the trigger plate up slightly; if late, move it down slightly. Whatever the sitter does, "Always trust large witness cones over small sitter cones."
+Dawson の LT 型をはじめ、多くのキルンシッターには**リミットタイマー**があります。設定した時間がたつと窯を止める時計で、「KILN-SITTER が故障した場合に備えた」予備です。常に、焼成にかかると予想される時間より長く設定するべきです。余裕の取り方は資料によって違います。
+
+Table: リミットタイマーの設定時間
+Label: リミットタイマーの設定
+
+| 出典      | 設定                                                                                                           |
+| --------- | -------------------------------------------------------------------------------------------------------------- |
+| Dawson    | 窯に慣れるまでは予想焼成時間より½時間長く、慣れたら¼時間長くするだけでもよい。20時間を超えては絶対に設定しない |
+| L&L       | 初回はかなり長く設定し、焼成にかかった時間を記録する。それ以降は約1時間長く                                    |
+| Bracker's | 焼成時間より30分〜1時間長く                                                                                    |
+
+> [!NOTE]
+> 最初の目安: 初回は長めに（ダイヤルの最大20時間の範囲で）設定し、その後は記録した時間より½〜1時間長く設定してください。タイマーで、焼成にかかった時間もわかります。7 に合わせて 1 で止まっていれば、6時間です。
+
+### 止まるのが早すぎる、遅すぎる
+
+焼成のたびに、キルンシッターのコーンを棚板のコーンと並べて読んでください。
+
+Table: 焼成後のキルンシッターの読み方
+Label: キルンシッターの問題
+
+| 見えること                                                     | 考えられる原因                                                                                       | 対処                                                                   |
+| -------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| キルンシッターが作動したが、棚板の焼成コーンは曲がり不足       | キルンシッターが棚板より高温になった（壁の近くにあるため）                                           | キルンシッターのコーンを一つ高温側にするか、太い部分をロッドの下にする |
+| キルンシッターのコーンが 90° を大きく超えて垂れた              | 終盤の昇温が速すぎた                                                                                 | スイッチの設定を下げて、昇温をゆっくりにする（Dawson）                 |
+| キルンシッターのコーンが曲がらなかった、または溶けて塊になった | キルンシッター自体の問題: 調整不良、ロッドの曲がりや腐食、チューブの中や外側に何かが引っかかっている | 再び焼成する前に、取扱説明書に従ってキルンシッターを点検・調整する     |
+| 毎回早い、または毎回遅い                                       | 調整のずれ、またはロッドの摩耗                                                                       | ファイアリングゲージで点検し、トリガープレートを動かす                 |
+
+調整を点検するには、Dawson は**ファイアリングゲージ**を使います。完全に曲がったコーンが残す位置にロッドを保つ道具で、そのときクローの所に「1/16 インチのすき間」（約1.6 mm）があるはずです。30回の焼成ごとに点検してください。Ceramics Monthly の目安では、窯が早く止まるならトリガープレートを少し上げ、遅く止まるなら少し下げます。キルンシッターがどうであれ、「キルンシッターの小型コーンより、常に大型の確認用コーンを信頼すること」です。
 
 > [!WARNING]
-> **A kiln sitter is not a safety device.** Dawson's manual says it "is NOT intended to perform as a fail-safe shut-off device and your kiln should NOT be left unattended beyond the estimated firing time." Something as simple as greenware falling against the tube "might cause an over-firing". Be there to check the kiln when it should be finishing, and never fire it over or near anything that burns, such as a wood floor or carpet.
+> **キルンシッターは安全装置ではありません**。Dawson の取扱説明書には、「フェイルセーフの停止装置として働くことを意図したものでは**ない**。予想焼成時間を超えて窯を無人のままにする**べきではない**」とあります。未焼成の素地がチューブに倒れかかるといった単純なことでも、「焼きすぎを起こすおそれがある」のです。焼成が終わるはずの時刻には窯のそばにいて確認してください。また、木の床やカーペットなど燃えるものの上や近くでは、絶対に焼成しないでください。
 
-The sitter is built for firings "up to and including Cone 8". It cannot hold a temperature or cool slowly by itself. With practice and a log, though, you can "become the controller", as Digitalfire puts it: watch the cones and turn the switches by hand.
+キルンシッターが対応しているのは「オルトンコーン 8 まで（コーン 8 を含む）」の焼成です。キルンシッターだけでは、温度を保持することも、ゆっくり冷ますこともできません。それでも、練習と記録を重ねれば、Digitalfire の言う「自分がコントローラーになる」ことができます。コーンを見ながら、手でスイッチを回すのです。
 
 :::
 

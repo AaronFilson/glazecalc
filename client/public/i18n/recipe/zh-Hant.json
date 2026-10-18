@@ -361,7 +361,8 @@
     "heading": "危害",
     "intro": "依各原料的紀錄給出；標準原料庫中的危害來自供應商的安全資料表。",
     "line": "<b>{names}：</b>{hazards}",
-    "unknown": "{count, plural, other {沒有給出{list}的危害：請查看隨原料附帶的安全資料表。}}"
+    "unknown": "{count, plural, other {沒有給出{list}的危害：請查看隨原料附帶的安全資料表。}}",
+    "safety": "乾的釉料原料會產生粉塵：不要讓粉塵進入您的肺部，即使是未被歸為有害的原料的粉塵也一樣。請見<mixing>安全調配與通風</mixing>；如果附近有兒童或寵物，請見<home>別讓家人中毒</home>。原料的安全資料表若有更多要求，請照做。"
   },
   "compare": {
     "heading": "比較兩個釉方",
@@ -590,7 +591,10 @@
     "guidance": "這些只是參考，不是合格與否的判定：超出範圍的釉可以沒有問題，在範圍內的釉仍可能龜裂、溶出或出問題。請試燒。",
     "source": "來源：",
     "saveFailed": "無法把您選擇的限值組儲存到您的帳戶，所以仍在使用之前的限值組。",
-    "ownLimits": "這些建議使用 Glazecalc 自己的限值，而不是{name}。"
+    "ownLimits": "這些建議使用 Glazecalc 自己的限值，而不是{name}。",
+    "firingFromBlock": "來自釉方的燒成（{bands}）",
+    "bothBands": "釉方的燒成橫跨{bands}，所以兩端都會並排檢查：同一種釉在兩端的表現很少相同。",
+    "fromFiring": "這些數值針對釉方的燒成：{band}。要檢查其他燒成，請在上方選擇。"
   },
   "stull": {
     "heading": "Stull 圖",
@@ -714,7 +718,8 @@
     "notSaved": "沒有儲存任何內容：{problem}",
     "stopped": "已儲存 {count} 個中的 {saved} 個。其餘的沒有儲存：{problem}",
     "saved": "{count, plural, other {已儲存 # 個釉方。}}",
-    "openRecipes": "開啟您的釉方"
+    "openRecipes": "開啟您的釉方",
+    "firingRead": "從備註中讀到的燒成：{firing}"
   },
   "blends": {
     "title": "試片混調",
@@ -847,5 +852,115 @@
     "retry": "再試一次",
     "about": "Glazecalc 是給陶藝家的免費釉藥計算工具。",
     "aboutLink": "關於 Glazecalc"
+  },
+  "firing": {
+    "heading": "燒成",
+    "whatIsCone": "錐號是什麼意思？",
+    "scale": "體系",
+    "scales": {
+      "orton": "Orton 測溫錐",
+      "sk": "SK 測溫錐（JIS）",
+      "temperature": "溫度"
+    },
+    "groups": {
+      "usual": "022–13 號錐",
+      "half": "半號錐",
+      "above": "14–42 號錐（陶瓷中少見）"
+    },
+    "coneLabel": "錐號",
+    "lowCone": "起始錐號",
+    "highCone": "終止錐號",
+    "noHigh": "無上限錐號",
+    "notStated": "未註明",
+    "peak": "峰值溫度（{unit}）",
+    "lowTemperature": "從（{unit}）",
+    "highTemperature": "到（{unit}）",
+    "rangeToggle": "範圍",
+    "testedLegend": "測試過的錐號：勾選您燒過的每個錐號",
+    "atmosphere": "氣氛",
+    "process": "燒法",
+    "atmospheres": {
+      "oxidation": "氧化",
+      "reduction": "還原",
+      "neutral": "中性"
+    },
+    "processes": {
+      "wood": "柴燒",
+      "soda": "蘇打燒",
+      "salt": "鹽釉燒",
+      "raku": "樂燒",
+      "pit": "坑燒"
+    },
+    "rate": "最後一小時的升溫速率（每小時 {unit}）",
+    "hold": "在峰值持溫（分鐘）",
+    "schedule": "燒成曲線備註",
+    "schedulePlaceholder": "持溫 10 分鐘，緩慢冷卻...",
+    "witness": "已用見證錐確認",
+    "foodSurface": "用於接觸食物的表面（內層釉）",
+    "liner": {
+      "note": "食品安全取決於把這種釉燒到測試時所用的錐號：燒得不足的釉可能溶出。",
+      "range": "它給的是一個範圍，所以請在範圍的低端測試，那裡釉熔融得最少。",
+      "untested": "尚未標記任何測試過的錐號。",
+      "test": "只有對您自己燒成的作品做溶出試驗，才能判明它是否可安全盛裝食物。"
+    },
+    "helpSummary": "關於燒成",
+    "help": {
+      "cone": "您把這種釉燒到的錐號。測溫錐衡量的是熱功（時間與溫度），而不只是溫度，所以 Orton 06 號測溫錐比 Orton 6 號測溫錐低溫得多。",
+      "range": "如果它在一個範圍內都能用，請填寫最低與最高錐號，並勾選您實際燒過的錐號：測試過的錐號會先顯示。同一種釉在兩端的外觀和表現可能不同。",
+      "convert": "錐號依您給的原樣保存。換算到另一種體系或溫度，都只是近似值：測溫錐在不同的升溫速率下會在不同的溫度彎倒，而編號相同的 SK 錐和 Orton 錐並不相同。",
+      "move": "把釉換到另一個錐號，通常意味著重新調整釉方，而不只是燒得更熱或更冷。「為另一個錐號複製」會保留兩個版本。"
+    },
+    "temperatureProblem": "請填寫 {min} 到 {max} 之間的溫度。",
+    "rateProblem": "請把速率填寫為每小時若干度的整數。",
+    "holdProblem": "請把持溫時間填寫為整數分鐘，最多一天。",
+    "one": {
+      "orton": "Orton {cone} 號測溫錐",
+      "sk": "SK {cone}"
+    },
+    "span": {
+      "orton": "Orton {low}–{high} 號測溫錐",
+      "sk": "SK {low}–{high}",
+      "temperature": "{low} 至 {high}"
+    },
+    "testedAt": "測試過的錐號：{cones}",
+    "claimedRange": "標稱範圍 {range}",
+    "rangeUntested": "範圍 {range}；未勾選任何測試過的錐號",
+    "approxTemperature": "≈ {temperature}（{basis}；近似值）",
+    "approxCone": "≈ {cone}（{basis}；近似值）",
+    "basis": {
+      "orton60": "每小時 60 °C 的 Orton 大型測溫錐",
+      "kyoto": "京都市立研究所以每小時 100 °C 測得",
+      "stated": "照所給的值"
+    },
+    "rateText": "最後一小時每小時 {rate}",
+    "holdText": "持溫 {minutes} 分鐘",
+    "witnessText": "已用見證錐核對",
+    "asGiven": "燒成情況，依作者所寫：",
+    "filterCone": "顯示某個錐號的釉方",
+    "anyCone": "任何錐號",
+    "filterAtmosphere": "顯示某種氣氛或燒法的釉方",
+    "anyAtmosphere": "任何氣氛或燒法",
+    "duplicate": "為另一個錐號複製",
+    "duplicateName": "為另一個錐號複製「{title}」",
+    "duplicateTitle": "{title}（另一個錐號）",
+    "duplicateNote": "「{title}」的副本，尚未儲存：請在「燒成」中選擇它的新錐號。把釉換到另一個錐號，通常意味著重新調整釉方，而不只是燒得更熱或更冷，所以請檢查限值並做測試。"
+  },
+  "firings": {
+    "heading": "燒窯紀錄",
+    "open": "連結燒窯紀錄",
+    "fetchFailed": "無法取得您的燒窯紀錄。",
+    "noLogs": "還沒有燒窯紀錄。",
+    "toLogs": "記錄一次燒窯",
+    "saveFailed": "無法儲存燒窯紀錄連結的變更。",
+    "resultFor": "「{title}」中的結果",
+    "resultPlaceholder": "結果如何：有光澤，沒有開片...",
+    "unlink": "取消連結",
+    "unlinkName": "取消連結「{title}」",
+    "choose": "要連結的燒窯紀錄",
+    "link": "連結",
+    "fill": "勾選這些紀錄裡寫明的錐號：{cones}",
+    "replaceAsk": "已勾選的測試錐號是 {now}。要換成紀錄裡寫明的錐號 {logs} 嗎？",
+    "replace": "取代",
+    "keep": "維持原樣"
   }
 }

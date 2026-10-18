@@ -361,7 +361,8 @@
     "heading": "危害",
     "intro": "按各原料的记录给出；标准原料库中的危害来自供应商的化学品安全技术说明书。",
     "line": "<b>{names}：</b>{hazards}",
-    "unknown": "{count, plural, other {没有给出{list}的危害：请查看随原料附带的化学品安全技术说明书。}}"
+    "unknown": "{count, plural, other {没有给出{list}的危害：请查看随原料附带的化学品安全技术说明书。}}",
+    "safety": "干的釉料原料会产生粉尘：不要让粉尘进入您的肺部，即使是未被归为有害的原料的粉尘也一样。请见<mixing>安全配料与通风</mixing>；如果附近有儿童或宠物，请见<home>别让家人中毒</home>。原料的化学品安全技术说明书若有更多要求，请照做。"
   },
   "compare": {
     "heading": "比较两个配方",
@@ -590,7 +591,10 @@
     "guidance": "这些只是参考，不是合格与否的判定：超出范围的釉可以没有问题，在范围内的釉仍可能龟裂、溶出或出问题。请试烧。",
     "source": "来源：",
     "saveFailed": "无法把您选择的限值集保存到您的账户，所以仍在使用之前的限值集。",
-    "ownLimits": "这些建议使用 Glazecalc 自己的限值，而不是{name}。"
+    "ownLimits": "这些建议使用 Glazecalc 自己的限值，而不是{name}。",
+    "firingFromBlock": "来自配方的烧成（{bands}）",
+    "bothBands": "配方的烧成跨越{bands}，所以两端都会并排检查：同一种釉在两端的表现很少相同。",
+    "fromFiring": "这些数值针对配方的烧成：{band}。要检查其他烧成，请在上方选择。"
   },
   "stull": {
     "heading": "Stull 图",
@@ -714,7 +718,8 @@
     "notSaved": "没有保存任何内容：{problem}",
     "stopped": "已保存 {count} 个中的 {saved} 个。其余的没有保存：{problem}",
     "saved": "{count, plural, other {已保存 # 个配方。}}",
-    "openRecipes": "打开您的配方"
+    "openRecipes": "打开您的配方",
+    "firingRead": "从备注中读到的烧成：{firing}"
   },
   "blends": {
     "title": "试片混配",
@@ -847,5 +852,115 @@
     "retry": "再试一次",
     "about": "Glazecalc 是面向陶艺人的免费釉料计算器。",
     "aboutLink": "关于 Glazecalc"
+  },
+  "firing": {
+    "heading": "烧成",
+    "whatIsCone": "锥号是什么意思？",
+    "scale": "体系",
+    "scales": {
+      "orton": "Orton 测温锥",
+      "sk": "SK 测温锥（JIS）",
+      "temperature": "温度"
+    },
+    "groups": {
+      "usual": "022～13 号锥",
+      "half": "半号锥",
+      "above": "14～42 号锥（陶瓷中少见）"
+    },
+    "coneLabel": "锥号",
+    "lowCone": "起始锥号",
+    "highCone": "终止锥号",
+    "noHigh": "无上限锥号",
+    "notStated": "未注明",
+    "peak": "峰值温度（{unit}）",
+    "lowTemperature": "从（{unit}）",
+    "highTemperature": "到（{unit}）",
+    "rangeToggle": "范围",
+    "testedLegend": "测试过的锥号：勾选您烧过的每个锥号",
+    "atmosphere": "气氛",
+    "process": "烧法",
+    "atmospheres": {
+      "oxidation": "氧化",
+      "reduction": "还原",
+      "neutral": "中性"
+    },
+    "processes": {
+      "wood": "柴烧",
+      "soda": "苏打烧",
+      "salt": "盐釉烧",
+      "raku": "乐烧",
+      "pit": "坑烧"
+    },
+    "rate": "最后一小时的升温速率（每小时 {unit}）",
+    "hold": "在峰值保温（分钟）",
+    "schedule": "烧成曲线备注",
+    "schedulePlaceholder": "保温 10 分钟，缓慢冷却……",
+    "witness": "已用证据锥确认",
+    "foodSurface": "用于接触食物的表面（内壁釉）",
+    "liner": {
+      "note": "食品安全取决于把这种釉烧到测试时所用的锥号：烧得不足的釉可能溶出。",
+      "range": "它给出的是一个范围，所以请在范围的低端测试，那里釉熔融得最少。",
+      "untested": "尚未标记任何测试过的锥号。",
+      "test": "只有对您自己烧成的器物做溶出试验，才能判明它是否符合食品接触安全要求。"
+    },
+    "helpSummary": "关于烧成",
+    "help": {
+      "cone": "您把这种釉烧到的锥号。测温锥衡量的是热功（时间与温度），而不只是温度，所以 Orton 测温锥 06 号比 Orton 测温锥 6 号低温得多。",
+      "range": "如果它在一个范围内都能用，请填写最低和最高锥号，并勾选您实际烧过的锥号：测试过的锥号会先显示。同一种釉在两端的外观和表现可能不同。",
+      "convert": "锥号按您给出的原样保存。换算到另一种体系或温度，都只是近似值：测温锥在不同的升温速率下会在不同的温度弯倒，而编号相同的 SK 锥和 Orton 锥并不相同。",
+      "move": "把釉换到另一个锥号，通常意味着重新调整配方，而不只是烧得更热或更冷。“为另一个锥号复制”会保留两个版本。"
+    },
+    "temperatureProblem": "请填写 {min} 到 {max} 之间的温度。",
+    "rateProblem": "请把速率填写为每小时若干度的整数。",
+    "holdProblem": "请把保温时间填写为整数分钟，最多一天。",
+    "one": {
+      "orton": "Orton 测温锥 {cone} 号",
+      "sk": "SK {cone}"
+    },
+    "span": {
+      "orton": "Orton 测温锥 {low}～{high} 号",
+      "sk": "SK {low}～{high}",
+      "temperature": "{low} 至 {high}"
+    },
+    "testedAt": "测试过的锥号：{cones}",
+    "claimedRange": "标称范围 {range}",
+    "rangeUntested": "范围 {range}；未勾选任何测试过的锥号",
+    "approxTemperature": "≈ {temperature}（{basis}；近似值）",
+    "approxCone": "≈ {cone}（{basis}；近似值）",
+    "basis": {
+      "orton60": "每小时 60 °C 的 Orton 大型测温锥",
+      "kyoto": "京都市立研究所按每小时 100 °C 测得",
+      "stated": "照所给的值"
+    },
+    "rateText": "最后一小时每小时 {rate}",
+    "holdText": "保温 {minutes} 分钟",
+    "witnessText": "已用证据锥核对",
+    "asGiven": "烧成情况，按作者所写：",
+    "filterCone": "显示某个锥号的配方",
+    "anyCone": "任意锥号",
+    "filterAtmosphere": "显示某种气氛或烧法的配方",
+    "anyAtmosphere": "任意气氛或烧法",
+    "duplicate": "为另一个锥号复制",
+    "duplicateName": "为另一个锥号复制“{title}”",
+    "duplicateTitle": "{title}（另一个锥号）",
+    "duplicateNote": "“{title}”的副本，尚未保存：请在“烧成”中选择它的新锥号。把釉换到另一个锥号，通常意味着重新调整配方，而不只是烧得更热或更冷，所以请检查限值并做测试。"
+  },
+  "firings": {
+    "heading": "烧窑记录",
+    "open": "关联烧窑记录",
+    "fetchFailed": "无法获取您的烧窑记录。",
+    "noLogs": "还没有烧窑记录。",
+    "toLogs": "记录一次烧窑",
+    "saveFailed": "无法保存烧窑记录关联的更改。",
+    "resultFor": "“{title}”中的结果",
+    "resultPlaceholder": "结果如何：有光泽，没有釉裂……",
+    "unlink": "取消关联",
+    "unlinkName": "取消关联“{title}”",
+    "choose": "要关联的烧窑记录",
+    "link": "关联",
+    "fill": "勾选这些记录里写明的锥号：{cones}",
+    "replaceAsk": "已勾选的测试锥号是 {now}。要换成记录里写明的锥号 {logs} 吗？",
+    "replace": "替换",
+    "keep": "保持原样"
   }
 }

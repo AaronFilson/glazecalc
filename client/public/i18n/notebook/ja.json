@@ -88,7 +88,15 @@
     "chooseField": "追加する項目を選んでから、[項目を追加] を押してください。",
     "fetchFailed": "焼成記録の情報を取得する際にエラーが発生しました。",
     "saved": "焼成記録をサーバーに追加しました。",
-    "saveFailed": "エラー: サーバーへのリクエストに失敗しました。"
+    "saveFailed": "エラー: サーバーへのリクエストに失敗しました。",
+    "recipesHeading": "この焼成で焼いた調合",
+    "noRecipes": "連携した調合はまだありません。",
+    "recipesFailed": "調合を取得できなかったため、今は連携できません。",
+    "pickRecipe": "この焼成で焼いた調合",
+    "linkRecipe": "調合を連携",
+    "unlink": "連携を解除",
+    "unlinkRecipe": "{title} の連携を解除",
+    "linkFailed": "連携を保存できませんでした。"
   },
   "notes": {
     "title": "メモ",

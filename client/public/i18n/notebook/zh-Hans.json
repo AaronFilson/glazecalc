@@ -88,7 +88,15 @@
     "chooseField": "选择要添加的字段，然后点击“添加字段”。",
     "fetchFailed": "获取烧窑记录信息时出错。",
     "saved": "已成功将烧窑记录添加到服务器。",
-    "saveFailed": "错误：向服务器发送的请求失败。"
+    "saveFailed": "错误：向服务器发送的请求失败。",
+    "recipesHeading": "这次烧窑烧的配方",
+    "noRecipes": "尚未关联配方。",
+    "recipesFailed": "无法获取您的配方，所以现在无法关联。",
+    "pickRecipe": "这次烧窑烧的一个配方",
+    "linkRecipe": "关联配方",
+    "unlink": "取消关联",
+    "unlinkRecipe": "取消关联“{title}”",
+    "linkFailed": "无法保存这个关联。"
   },
   "notes": {
     "title": "笔记",

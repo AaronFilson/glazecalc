@@ -56,7 +56,8 @@
     "vet": "请致电您的兽医。",
     "checkedOn": "核实来源：",
     "choosePrompt": "选择您所在的国家，查看当地应拨打的电话。",
-    "ministry": "卫生部门的页面：<link>{name}</link>。"
+    "ministry": "卫生部门的页面：<link>{name}</link>。",
+    "reported": "政府官方页面列出了 113、114 和 115，但没有说明各自的用途；这里显示的职能依据 Circular 22/2014/TT-BTTTT，来自转引该文件的次级页面。"
   },
   "density": {
     "sg": "比重 {value}",
@@ -91,6 +92,7 @@
     "caption": "{region}工作场所呼吸性结晶型二氧化硅的职业接触限值，8 小时时间加权平均（核实于{date}）",
     "captionControl": "{region}评价作业场所空气中呼吸性结晶型二氧化硅的标准（核实于{date}）",
     "both": "石英和方石英",
+    "freeSilica": "游离二氧化硅",
     "quartz": "石英",
     "cristobalite": "方石英",
     "actionLevel": "行动水平",
@@ -171,7 +173,13 @@
       "thSmall": "深度超过 25 mm、容量低于 1.1 L 的器物",
       "thLarge": "深度超过 25 mm、容量 1.1 L 及以上的器物",
       "thInfant": "12 个月以内婴儿食品的容器",
-      "thCooking": "烹饪器皿，能耐受烹饪时的高温"
+      "thCooking": "烹饪器皿，能耐受烹饪时的高温",
+      "vnFlat": "浅型器物，用于盛放或烹煮食物",
+      "vnSmall": "盛放食物的深型器物，容量不足 1100 mL",
+      "vnMedium": "盛放食物的深型器物，容量 1100 mL 至不足 3000 mL",
+      "vnStorage": "盛放食物的深型器物，容量 3000 mL 及以上",
+      "vnCooking": "烹煮用的深型器物",
+      "vnCups": "杯子和小碗"
     },
     "judged": {
       "average": "6 件的平均值",

@@ -149,76 +149,76 @@ Pet Poison Helpline は、「鉛はすべての動物種にとって有毒です
 
 ペットが工房の何かを食べたり飲んだりしたかもしれないとき、または上のような症状が見られるときは、原料名とペットの体重を手元に用意して、獣医師か動物の中毒相談窓口（上の表を参照）に電話してください。
 
-## The kiln {#the-kiln lang=en}
+## 窯 {#the-kiln}
 
-### The outside gets hot enough to burn
+### 外側はやけどするほど熱くなります
 
-A UK schools risk assessment says a kiln's outside "can reach 160 °C and possibly more" (about 320 °F), and a school kiln guide reports metal bands at up to 460 °F (about 240 °C). Skutt, a kiln maker, recommends a kiln room that can be locked against children and pets. Where a room cannot be locked, the school guide suggests a barrier such as a kiln safety screen.
+英国の学校向けのリスク評価は、窯の外側は「160 °C、あるいはそれ以上に達することがある」（約320 °F）としており、学校向けの窯の手引きは、金属の帯が最高460 °F（約240 °C）になったと報告しています。窯メーカーの Skutt は、子どもやペットが入れないように鍵をかけられる窯部屋を勧めています。部屋に鍵をかけられない場合は、窯用の安全スクリーンのような柵を設けるよう、その学校向けの手引きは勧めています。
 
-Small children and pets cannot understand a warning sign. We suggest keeping them behind a locked door or a barrier while the kiln fires and while it cools, and posting a warning sign for everyone else.
+小さな子どもやペットは、警告表示を理解できません。窯を焚いている間と冷めるまでの間は、鍵をかけたドアか柵の向こうに子どもやペットを置き、ほかの人のために警告表示を掲げることをおすすめします。
 
-### Space around it
+### 周りの空間
 
-Sources disagree on clearance. Rio Grande says at least 12 inches (30 cm) from walls and anything combustible. L&L strongly recommends 18 inches (46 cm) to all walls, and the building code it cites asks for 3 feet (0.9 m) from combustible walls. Follow your kiln's manual and local fire code; if you are unsure, allow 18 inches from any wall and 3 feet from anything that can burn. In a garage, keep cars, fuel and paint well away.
+離隔距離{{en: clearance}}については資料によって異なります。Rio Grande は、壁や燃えるものから少なくとも12 インチ（30 cm）としています。L&L は、すべての壁から18 インチ（46 cm）離すことを強く勧めており、同社が引用する建築基準は、燃える壁から3 フィート（0.9 m）を求めています。お使いの窯の取扱説明書と地域の火災予防条例に従ってください。わからないときは、どの壁からも18 インチ、燃えるものからは3 フィート離してください。ガレージでは、車、燃料、塗料を十分に離してください。
 
-### Power
+### 電源
 
-Rio Grande recommends a **dedicated circuit** (one that powers nothing else) with a properly grounded outlet. We suggest no extension cord. Between firings, switch off the kiln's breaker or disconnect switch, or unplug it, so a child cannot start it.
+Rio Grande は、正しく接地されたコンセントのある**専用回路**（ほかに何もつながない回路）を勧めています。延長コードは使わないことをおすすめします。焼成と焼成の間は、子どもが窯のスイッチを入れられないように、窯のブレーカーか電源の開閉器を切るか、プラグを抜いておいてください。
 
-### Be there when the firing ends
+### 焼成の終わりには立ち会う
 
-A **kiln sitter** is the mechanical switch on many manual kilns: a small cone bends at the end of the firing and trips the switch off. Its manual says it "is NOT intended to perform as a fail-safe shut-off device." Rio Grande says never to leave a firing kiln unattended, "especially near the expected shut-off time". So stay nearby and check the kiln while it fires, above all near the end; fire only when an adult will be home and awake to do that, check that it has switched off, and keep an ABC fire extinguisher in the kiln room. For how sitters, controllers and schedules work, see [Firing a basic kiln](/guides/firing).
+**キルンシッター**{{en: kiln sitter}}は、多くの手動の窯に付いている機械式のスイッチです。焼成の終わりに小さなコーン{{en: cone}}が曲がり、スイッチが切れます。その取扱説明書には、キルンシッターは「フェイルセーフの停止装置として働くことを意図したものでは**ない**」と書かれています。Rio Grande は、焼成中の窯を決して放置しないように、「特に停止予定時刻が近いときは」と述べています。ですから、焼成中、とりわけ終わり近くは、窯の近くにいて様子を確認してください。焼成するのは、それができる大人が家にいて起きているときだけにしてください。また、窯が停止したことを確認し、窯部屋には ABC 消火器を置いてください。キルンシッター、コントローラー、焼成スケジュールのしくみについては、「[基本の窯焚き](/guides/firing)」を参照してください。
 
-### Fumes and carbon monoxide
+### 窯から出るガスと一酸化炭素
 
-Firing gives off fumes, so vent the kiln to the outdoors; [Safe mixing and ventilation](/guides/safe-mixing) explains how. A kiln in an attached garage needs venting that keeps fumes from reaching the house through the connecting door. Keep birds in a far room whenever the kiln fires.
+焼成ではガスが出るので、窯の排気を屋外に出してください。方法は「[安全な調合と換気](/guides/safe-mixing)」で説明しています。家とつながったガレージにある窯では、つながっているドアから家の中にガスが入らないように排気する必要があります。窯を焚くときは、いつも鳥を離れた部屋に入れておいてください。
 
-**Carbon monoxide** (CO) is a poisonous gas you cannot see or smell. A university kiln safety sheet requires CO alarms with gas kilns. Views differ for electric kilns, but burning off organic matter (in clay, or things like paper or wax) can make CO. We think a CO alarm in the kiln room and the rooms next to it is a sensible, inexpensive step for any kiln.
+**一酸化炭素**（CO）は、目に見えず、においもない有毒なガスです。ある大学の窯の安全に関する資料は、ガス窯には一酸化炭素警報器を必須としています。電気窯については意見が分かれますが、有機物（粘土に含まれるもの、紙やろうなど）が燃えると一酸化炭素が出ることがあります。どの窯でも、窯部屋と隣の部屋に一酸化炭素警報器を付けるのは、手ごろで賢明な対策だと考えます。
 
-### Peepholes and eyes
+### のぞき穴と目
 
-Infrared light, which you cannot see, "starts at 752°F (400°C)", and the Ceramic Arts Network says looking into a kiln above this should always be done with eye protection. Infrared can damage the lens of the eye and lead to cataracts, and long gazing can injure the retina. Sunglasses and didymium glasses do not block it.
+目に見えない赤外線は「752°F (400°C) から始まり」、Ceramic Arts Network は、この温度を超える窯の中をのぞくときは常に目の保護具を着けるべきだとしています。赤外線は目の水晶体を傷つけて白内障の原因になることがあり、長く見つめると網膜を損傷することがあります。サングラスやジジム（ディディミウム）ガラスのメガネでは赤外線を遮れません。
 
 > [!WARNING]
-> Children should not look into a kiln at all. A glowing peephole draws them, and they will not reliably keep protective glasses on, so keep them away while the kiln is hot. Adults should look only briefly, through IR-rated welding glasses. Sources recommend shades from 1.7 to 5; shade 3 is a sensible choice, darker if you see spots afterward.
+> 子どもは窯の中を一切のぞくべきではありません。光るのぞき穴は子どもを引きつけますし、子どもは保護メガネを確実にかけたままではいられないので、窯が熱い間は近づけないでください。大人は、赤外線を遮る溶接用遮光メガネを通して、短時間だけのぞくべきです。資料は遮光度番号1.7〜5を勧めています。遮光度番号3が妥当な選択で、のぞいた後に斑点が見えるならもっと濃いものにしてください。
 
-## Handmade ware on the family table {#handmade-ware lang=en}
+## 手作りの器を家族の食卓で使う {#handmade-ware}
 
-The question for pots on the family table is **leaching**: metals dissolving out of the fired glaze into food or drink. The FDA warns that if pottery "is not manufactured properly, this lead can leach into food and drink", and that "no amount of washing, boiling, or other process can remove lead from pottery." Regulators such as the US FDA and the EU limit how much lead and cadmium a finished piece releases in a standard acid test, not what the glaze contains. The strictest US limit, for cups, mugs and pitchers, is 0.5 µg/mL of lead.
+家族の食卓で使う器について問題になるのは**溶出**{{en: leaching}}、つまり焼成した釉薬{{en: glaze}}から金属が食べ物や飲み物に溶け出すことです。米国 FDA（食品医薬品局）は、陶磁器が「適切に製造されていないと、この鉛が食べ物や飲み物に溶け出すことがある」こと、そして「どれだけ洗っても、煮沸しても、その他どんな処理をしても、陶磁器から鉛を取り除くことはできない」ことを警告しています。米国 FDA や EU などの規制当局は、釉薬に何が含まれているかではなく、完成品が標準の酸による試験でどれだけの鉛とカドミウムを溶出するかを制限しています。米国で最も厳しい限度は、カップ、マグ、ピッチャーに対するもので、鉛0.5 µg/mL です。
 
-### Lead-free is not the same as food-safe
+### 無鉛は食器として安全と同じではありません
 
-A glaze with no lead can still leach. Digitalfire, a glaze chemistry reference, names glazes containing "heavy metal oxide colorants, barium, lithium, or lead" as the concern, and warns that a stain fired above its rated temperature can release cadmium. The ASTM D-4236 art-materials label on a jar "DOES NOT establish that a fired glaze is food-safe", and "Tableware producers must test all finished ware to establish dinnerware status."
+鉛を含まない釉薬でも溶出することはあります。釉薬化学の参考資料である Digitalfire は、「重金属酸化物の着色剤{{en: colorants}}、バリウム、リチウム、または鉛」を含む釉薬を問題として挙げ、定格温度を超えて焼成した顔料{{en: stain}}はカドミウムを放出することがあると警告しています。容器に付いている ASTM D-4236 の画材ラベルは「焼成した釉薬が食器として安全{{en: food-safe}}であることを示すものではありません」。また、「食器の製造者は、食器としての適否を確認するために、すべての完成品を試験しなければなりません」。
 
 > [!NOTE]
-> "Food safe" means this glaze, on this clay, fired to this cone, applied this way, releases less than the legal limits. A recipe calculation, Glazecalc's included, can flag a risky recipe but cannot prove a pot is safe. Only a leach test of the fired piece can.
+> 「食器として安全」とは、この釉薬を、この粘土{{en: clay}}に、この掛け方で掛け、このコーン{{en: cone}}まで焼成したときに、溶出量が法定の限度を下回るという意味です。調合の計算は、Glazecalc のものも含めて、危険な調合に注意を促すことはできても、器が安全であることを証明することはできません。それができるのは、焼成した器の溶出試験だけです。
 
-We suggest reading a "food safe" label on a commercial glaze as a good start, not a guarantee: a different clay, a thicker coat, another cone or a second glaze on top changes the result.
+市販の釉薬の「食器として安全」という表示は、保証ではなく、良い出発点として読むことをおすすめします。粘土が違う、厚く掛ける、別のコーンで焼く、上に別の釉薬を重ねる、といったことで結果が変わります。
 
-### Testing
+### 試験
 
-Laboratories test fired pieces with a standard acid soak that represents a worst case, such as ASTM C738 in the US. One lab's EU test needs four identical pieces and takes seven working days, so make spares of anything you plan to have tested.
+試験機関は、最悪の場合を想定した標準の酸に浸す方法で、焼成した器を試験します。米国の ASTM C738 などです。ある試験機関の EU の試験では、同じ器が四つ必要で、七営業日かかります。試験に出すつもりの器は、予備も作っておいてください。
 
-Home tests are disputed. The FDA says home swab kits can show leachable lead, and that a piece that tests positive should not be used for food. Ceramics NZ warns that consumer lead-test pens are "not designed for this use" on ceramics and can give false positives. Digitalfire suggests leaving a lemon slice on the glaze overnight as a rough screen. The safe reading: a positive home test means stop using the piece for food, and a negative one proves nothing. Only a lab can tell you a piece is safe.
+家庭でできる試験については議論があります。FDA は、家庭用の拭き取り式キットで溶出しうる鉛がわかり、陽性になった器は食べ物に使うべきではないとしています。Ceramics NZ は、消費者向けの鉛検査ペンは陶磁器については「この用途向けに作られていない」ため、偽陽性が出ることがあると警告しています。Digitalfire は、大まかな確認として、レモンの薄切りを釉薬の上に一晩置いておくことを勧めています。安全な読み方は、家庭での試験で陽性なら、その器を食べ物に使うのをやめる、陰性でも何も証明されない、というものです。器が安全だと言えるのは、試験機関だけです。
 
-### Crazed ware
+### 貫入のある器
 
-**Crazing** is a network of fine cracks in the glaze surface, and sources disagree about it. A Ceramics Monthly experiment found crazed tiles could be cleaned, best in a dishwasher, though they came out less clean than uncrazed tiles after soap and water. Digitalfire holds that "Crazed ware is unacceptable" and that crazing "severely weakens ware". The safe course is simple: do not use crazed pieces for food.
+**貫入**{{en: crazing}}は釉薬の表面にできる細かいひびの網目で、これについては資料によって意見が分かれています。Ceramics Monthly の実験では、貫入のあるテストピース{{en: test tiles}}もきれいにでき、食器洗い機が最もよかったものの、洗剤と水で洗った後は、貫入のないテストピースほどきれいにはなりませんでした。Digitalfire は、「貫入のある器は容認できない」とし、貫入は「器を著しく弱くする」としています。安全な方法は簡単で、貫入のある器を食べ物に使わないことです。
 
-### Liner glazes
+### 内側用の釉
 
-A **liner glaze** is the glaze on the inside of a cup or bowl, where the food sits. Digitalfire describes a liner that may be low enough in risk to use without lab testing: no colorants, barium, lead or lithium; fully melted; no crazing; and it wears well. Even then, only a leach test of your own fired pots shows whether they are food-safe. Warning signs in any glaze are heavy amounts of colorant, crystals on the surface and poor melting.
+**内側用の釉**{{en: liner glaze}}とは、カップや鉢の内側、食べ物が触れる部分に掛ける釉薬です。Digitalfire は、試験機関で試験しなくても使えるほどリスクが低いかもしれない内側用の釉について、着色剤、バリウム、鉛、リチウムを含まない、完全に溶けている、貫入がない、すり減りに強い、という条件を挙げています。それでも、自分で焼いた器の溶出試験だけが、食器として安全かどうかを示します。どの釉薬でも、着色剤が多いこと、表面の結晶、溶け方が不十分なことは警告のサインです。
 
-### Family rules we suggest
+### おすすめする家庭のルール
 
-- Children's cups, bowls and plates: only lab-tested, durable liner glazes, or commercial dinnerware.
-- Do not store acidic food or drink (citrus, tomato, vinegar, fruit juice, wine) in pots glazed with anything you have not had tested.
-- Do not use crazed pieces for food.
-- Test tiles and experiments stay in the studio, never in the kitchen, the toy box or the pet's bowl.
-- Take care with other pottery too. The FDA advises caution with handmade or crude-looking pieces, antiques, damaged or worn pieces, flea-market finds and bright orange, red or yellow decoration.
-- If a child has used pottery you now doubt, the FDA says to talk to a doctor about a blood lead test.
+- 子どものカップ、鉢、皿には、試験機関で試験した耐久性のある内側用の釉を使ったものか、市販の食器だけを使ってください。
+- 試験に出していない釉薬を掛けた器に、酸性の食べ物や飲み物（柑橘類、トマト、酢、果汁、ワイン）を保存しないでください。
+- 貫入のある器を食べ物に使わないでください。
+- テストピースや試作品は工房に置いておき、台所やおもちゃ箱に置いたり、ペットの食器にしたりすることは絶対にしないでください。
+- ほかの陶磁器にも注意してください。FDA は、手作りや作りの粗い器、骨董品、傷んだりすり減ったりした器、のみの市で見つけたもの、鮮やかなオレンジ、赤、黄色の絵付けのあるものに注意するよう勧めています。
+- 今は疑わしいと思う陶磁器を子どもが使っていた場合は、血中鉛検査について医師に相談するよう FDA は勧めています。
 
-For more on how glazes melt, why some leach and what the limits mean, see [Glazing from first principles](/guides/glazing-basics).
+釉薬が溶けるしくみ、溶出が起こる理由、限度の意味について詳しくは、「[基礎から学ぶ釉薬](/guides/glazing-basics)」を参照してください。
 
 ## 出典 {#sources}
 

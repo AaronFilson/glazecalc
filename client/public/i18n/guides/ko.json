@@ -56,7 +56,8 @@
     "vet": "다니는 동물병원에 전화하세요.",
     "checkedOn": "확인한 페이지:",
     "choosePrompt": "나라를 선택하면 그 나라에서 연락할 곳이 표시됩니다.",
-    "ministry": "보건부 페이지: <link>{name}</link>."
+    "ministry": "보건부 페이지: <link>{name}</link>.",
+    "reported": "정부 공식 페이지에는 113, 114, 115가 나와 있지만 각각 무엇을 위한 번호인지는 적혀 있지 않습니다. 표시한 역할은 이차 자료에 인용된 Circular 22/2014/TT-BTTTT를 따른 것입니다."
   },
   "density": {
     "sg": "비중 {value}",
@@ -91,6 +92,7 @@
     "caption": "{region}의 호흡성 결정형 유리규산 작업장 노출 기준, 8시간 평균(확인일: {date})",
     "captionControl": "{region}에서 작업장 공기 중 호흡성 결정형 유리규산을 판단하는 기준(확인일: {date})",
     "both": "석영과 크리스토발라이트",
+    "freeSilica": "유리규산",
     "quartz": "석영",
     "cristobalite": "크리스토발라이트",
     "actionLevel": "조치 수준",
@@ -171,7 +173,13 @@
       "thSmall": "깊이가 25 mm 초과이고 1.1 L 미만인 것",
       "thLarge": "깊이가 25 mm 초과이고 1.1 L 이상인 것",
       "thInfant": "12개월까지 아기의 음식을 담는 용기",
-      "thCooking": "가열조리용 기구(조리의 열을 견디도록 만든 것)"
+      "thCooking": "가열조리용 기구(조리의 열을 견디도록 만든 것)",
+      "vnFlat": "얕은 기물, 음식을 담거나 조리하는 용도",
+      "vnSmall": "음식을 담는 깊은 기물, 1100 mL 미만",
+      "vnMedium": "음식을 담는 깊은 기물, 1100 mL 이상 3000 mL 미만",
+      "vnStorage": "음식을 담는 깊은 기물, 3000 mL 이상",
+      "vnCooking": "조리용 깊은 기물",
+      "vnCups": "컵과 작은 그릇"
     },
     "judged": {
       "average": "6개의 평균",
