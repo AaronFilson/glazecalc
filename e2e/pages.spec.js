@@ -136,6 +136,13 @@ test.describe('home and navigation', () => {
     await page.locator('.nav-links').getByRole('link', { name: 'Notes' }).click();
     await expect(page).toHaveURL(/\/notes$/);
     await expect(page.locator('.nav-links')).toBeHidden();
+    // Escape closes it too, and the focus goes back to the Menu button.
+    await toggle.click();
+    await page.locator('.nav-links').getByRole('link', { name: 'Recipes' }).focus();
+    await page.keyboard.press('Escape');
+    await expect(toggle).toHaveAttribute('aria-expanded', 'false');
+    await expect(page.locator('.nav-links')).toBeHidden();
+    await expect(toggle).toBeFocused();
   });
 
   test('on a phone, nothing is wider than the screen, even the menu with a long email', async ({ page }) => {

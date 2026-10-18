@@ -62,7 +62,8 @@ const APP_PAGES = [
   template: `<ng-container *transloco="let t">
     <!-- For keyboard and screen reader users: past the menu, straight to the page. Hidden until focused. -->
     <a class="skip-link" href="#main" (click)="skipToContent($event, main)">{{ t('nav.skip') }}</a>
-    <header class="app-header">
+    <!-- Escape closes the phone menu, as the Menu button does. -->
+    <header class="app-header" (keydown.escape)="closeMenu(toggle, menu)">
       <nav class="app-nav" [attr.aria-label]="t('nav.main')">
         <a class="brand" [routerLink]="auth.shownSession() ? '/home' : '/'">
           <img src="/images/logo.webp" alt="" width="30" height="30" />
@@ -84,6 +85,7 @@ const APP_PAGES = [
           </a>
         }
         <button
+          #toggle
           type="button"
           class="btn btn-light btn-sm nav-toggle"
           aria-controls="main-menu"
@@ -92,7 +94,7 @@ const APP_PAGES = [
         >
           {{ t('nav.menu') }}
         </button>
-        <div id="main-menu" class="nav-menu" [class.open]="menuOpen()">
+        <div #menu id="main-menu" class="nav-menu" [class.open]="menuOpen()">
           @if (auth.shownSession()) {
             <ul class="nav-links">
               @for (page of pages; track page.path) {
@@ -275,6 +277,13 @@ export class App implements OnInit {
   protected readonly languageName = languageName;
   protected readonly formatDate = formatDate;
   protected readonly menuOpen = signal(false);
+
+  /** Closes the phone menu; the focus goes back to its button if it was in the menu, so it is not lost. */
+  protected closeMenu(toggle: HTMLElement, menu: HTMLElement): void {
+    if (!this.menuOpen()) return;
+    this.menuOpen.set(false);
+    if (menu.contains(this.document.activeElement)) toggle.focus();
+  }
   protected readonly ready = signal(false);
   protected readonly confirmingDiscard = signal(false);
   protected readonly discarding = signal(false);
