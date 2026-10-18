@@ -14,40 +14,56 @@
   @if (pendingLeave()?.page) {
     <ng-container [ngTemplateOutlet]="unsavedQuestion" />
   }
-  @if (printRecipe(); as recipe) {
-    <gc-recipe-print
-      [recipe]="recipe"
-      [chemistryOf]="chemistryOf"
-      [hazards]="printHazards()"
-      [startMode]="printSheet()"
-      (back)="closePrint()"
-    />
-  } @else if (printWaiting()) {
+  <!--
+    Print, compare, share, the swap report and the materials to try are each their own file, fetched once the
+    page is idle (@defer, prefetch on idle), so the page itself starts sooner; each draws when asked for, as before,
+    and says it is coming if its file is not in yet.
+  -->
+  @defer (when printRecipe(); prefetch on idle) {
+    @if (printRecipe(); as recipe) {
+      <gc-recipe-print
+        [recipe]="recipe"
+        [chemistryOf]="chemistryOf"
+        [hazards]="printHazards()"
+        [startMode]="printSheet()"
+        (back)="closePrint()"
+      />
+    }
+  } @loading {
     <p class="muted" role="status">{{ t('recipe.page.gettingPrint') }}</p>
-  } @else if (comparing()) {
-    <gc-recipe-compare
-      [left]="compareLeft()"
-      [right]="compareRight()"
-      [leftKey]="compareKeys()?.left ?? ''"
-      [rightKey]="compareKeys()?.right ?? ''"
-      [choices]="compareChoices()"
-      [chemistryOf]="chemistryOf"
-      (choose)="chooseCompared($event)"
-      (back)="closeCompare()"
-    >
-      @if (reportInCompare() && swapResult(); as result) {
-        <gc-swap-report
-          [result]="result"
-          [level]="2"
-          [mine]="myMaterials()"
-          [standard]="standardMaterials()"
-          [hideLead]="leadOff()"
-          [inRecipe]="swapKeys()"
-          (rerun)="rerun($event)"
-        />
-      }
-    </gc-recipe-compare>
-  } @else if (compareWaiting()) {
+  }
+  @if (!printRecipe() && printWaiting()) {
+    <p class="muted" role="status">{{ t('recipe.page.gettingPrint') }}</p>
+  }
+  @defer (when comparing(); prefetch on idle) {
+    @if (!printRecipe() && !printWaiting() && comparing()) {
+      <gc-recipe-compare
+        [left]="compareLeft()"
+        [right]="compareRight()"
+        [leftKey]="compareKeys()?.left ?? ''"
+        [rightKey]="compareKeys()?.right ?? ''"
+        [choices]="compareChoices()"
+        [chemistryOf]="chemistryOf"
+        (choose)="chooseCompared($event)"
+        (back)="closeCompare()"
+      >
+        @if (reportInCompare() && swapResult(); as result) {
+          <gc-swap-report
+            [result]="result"
+            [level]="2"
+            [mine]="myMaterials()"
+            [standard]="standardMaterials()"
+            [hideLead]="leadOff()"
+            [inRecipe]="swapKeys()"
+            (rerun)="rerun($event)"
+          />
+        }
+      </gc-recipe-compare>
+    }
+  } @loading {
+    <p class="muted" role="status">{{ t('recipe.page.gettingCompare') }}</p>
+  }
+  @if (!printRecipe() && !printWaiting() && !comparing() && compareWaiting()) {
     <p class="muted" role="status">{{ t('recipe.page.gettingCompare') }}</p>
   }
   <!-- Hidden, not removed, while printing or comparing: what is being edited stays just as it was. -->
@@ -208,8 +224,10 @@
                   </span>
                 }
               </div>
-              @if (shareOpen() === rec._id && moreOpen().has(rec._id)) {
-                <gc-share-panel [recipeId]="rec._id" [trial]="isTrial()" />
+              @defer (when shareOpen() === rec._id && moreOpen().has(rec._id); prefetch on idle) {
+                @if (shareOpen() === rec._id && moreOpen().has(rec._id)) {
+                  <gc-share-panel [recipeId]="rec._id" [trial]="isTrial()" />
+                }
               }
               @if (expanded().has(rec._id ?? '')) {
                 <div class="saved-recipe-details">
@@ -538,16 +556,18 @@
                       {{ t('recipe.page.materialsToTry', { count: suggestTries().length }) }}
                     </button>
                   </div>
-                  @if (tryingMore()) {
-                    <gc-try-materials
-                      [(tries)]="suggestTries"
-                      [mine]="myMaterials()"
-                      [standard]="standardMaterials()"
-                      [standardFailed]="standardMaterialsFailed()"
-                      (retry)="loadStandardMaterials()"
-                      [hideLead]="leadOff()"
-                      [inRecipe]="materialKeys()"
-                    />
+                  @defer (when tryingMore(); prefetch on idle) {
+                    @if (tryingMore()) {
+                      <gc-try-materials
+                        [(tries)]="suggestTries"
+                        [mine]="myMaterials()"
+                        [standard]="standardMaterials()"
+                        [standardFailed]="standardMaterialsFailed()"
+                        (retry)="loadStandardMaterials()"
+                        [hideLead]="leadOff()"
+                        [inRecipe]="materialKeys()"
+                      />
+                    }
                   }
                   <div class="recipe-swap-buttons">
                     <button type="button" class="btn btn-primary btn-sm" (click)="workOutSuggestion()">
@@ -670,17 +690,19 @@
                       {{ t('recipe.page.materialsToTry', { count: leadTries().length }) }}
                     </button>
                   </div>
-                  @if (tryingMore()) {
-                    <gc-try-materials
-                      [(tries)]="leadTries"
-                      [mine]="myMaterials()"
-                      [standard]="standardMaterials()"
-                      [standardFailed]="standardMaterialsFailed()"
-                      (retry)="loadStandardMaterials()"
-                      [hideLead]="leadOff()"
-                      [inRecipe]="materialKeys()"
-                      [intro]="t('recipe.page.leadTriesIntro')"
-                    />
+                  @defer (when tryingMore(); prefetch on idle) {
+                    @if (tryingMore()) {
+                      <gc-try-materials
+                        [(tries)]="leadTries"
+                        [mine]="myMaterials()"
+                        [standard]="standardMaterials()"
+                        [standardFailed]="standardMaterialsFailed()"
+                        (retry)="loadStandardMaterials()"
+                        [hideLead]="leadOff()"
+                        [inRecipe]="materialKeys()"
+                        [intro]="t('recipe.page.leadTriesIntro')"
+                      />
+                    }
                   }
                 }
                 <div class="recipe-swap-buttons">
@@ -718,33 +740,41 @@
                 <h4 id="shelf-heading" tabindex="-1">{{ t('recipe.page.shelfHeading') }}</h4>
                 <gc-own-limits-note />
                 <p>{{ t('recipe.page.shelfIntro') }}</p>
-                @if (shelfLoaded()) {
-                  <div class="recipe-swap-buttons">
-                    <button type="button" class="btn btn-light border btn-sm" (click)="addRecipeToShelf()">
-                      {{ t('recipe.page.addRecipeToShelf') }}
-                    </button>
-                  </div>
-                  <gc-try-materials
-                    [tries]="shelfTries()"
-                    (triesChange)="changeShelf($event)"
-                    [mine]="myMaterials()"
-                    [standard]="standardMaterials()"
-                    [standardFailed]="standardMaterialsFailed()"
-                    (retry)="loadStandardMaterials()"
-                    [hideLead]="leadOff()"
-                    [inRecipe]="noKeys"
-                    [intro]="t('recipe.page.shelfTriesIntro')"
-                    list="shelf"
-                  />
-                  @if (shelfLeadHidden(); as hidden) {
-                    <p class="library-hidden recipe-shelf-lead">
-                      <gc-rich
-                        [text]="t('recipe.page.shelfLeadHidden', { count: hidden })"
-                        [links]="{ settings: '/account' }"
-                      />
-                    </p>
+                @defer (when shelfLoaded(); prefetch on immediate) {
+                  @if (shelfLoaded()) {
+                    <div class="recipe-swap-buttons">
+                      <button type="button" class="btn btn-light border btn-sm" (click)="addRecipeToShelf()">
+                        {{ t('recipe.page.addRecipeToShelf') }}
+                      </button>
+                    </div>
+                    <gc-try-materials
+                      [tries]="shelfTries()"
+                      (triesChange)="changeShelf($event)"
+                      [mine]="myMaterials()"
+                      [standard]="standardMaterials()"
+                      [standardFailed]="standardMaterialsFailed()"
+                      (retry)="loadStandardMaterials()"
+                      [hideLead]="leadOff()"
+                      [inRecipe]="noKeys"
+                      [intro]="t('recipe.page.shelfTriesIntro')"
+                      list="shelf"
+                    />
+                    @if (shelfLeadHidden(); as hidden) {
+                      <p class="library-hidden recipe-shelf-lead">
+                        <gc-rich
+                          [text]="t('recipe.page.shelfLeadHidden', { count: hidden })"
+                          [links]="{ settings: '/account' }"
+                        />
+                      </p>
+                    }
+                  } @else if (!shelfProblem()) {
+                    <p class="muted">{{ t('recipe.page.gettingShelf') }}</p>
                   }
-                } @else if (!shelfProblem()) {
+                } @placeholder {
+                  @if (!shelfProblem()) {
+                    <p class="muted">{{ t('recipe.page.gettingShelf') }}</p>
+                  }
+                } @loading {
                   <p class="muted">{{ t('recipe.page.gettingShelf') }}</p>
                 }
                 <p class="recipe-shelf-status" role="status">{{ shelfStatus() }}</p>
@@ -775,24 +805,26 @@
             }
           </div>
         }
-        @if (swapUndo(); as undo) {
-          <div class="recipe-swap">
-            <p>{{ t('recipe.page.swapped') }}</p>
-            <button id="undo-swap" type="button" class="btn btn-light border btn-sm" (click)="undoSwap()">
-              {{ t('recipe.page.undoSwap') }}
-            </button>
-            @if (!reportInCompare() && undo.result; as result) {
-              <gc-swap-report
-                [result]="result"
-                [level]="4"
-                [mine]="myMaterials()"
-                [standard]="standardMaterials()"
-                [hideLead]="leadOff()"
-                [inRecipe]="swapKeys()"
-                (rerun)="rerun($event)"
-              />
-            }
-          </div>
+        @defer (when swapUndo(); prefetch on idle) {
+          @if (swapUndo(); as undo) {
+            <div class="recipe-swap">
+              <p>{{ t('recipe.page.swapped') }}</p>
+              <button id="undo-swap" type="button" class="btn btn-light border btn-sm" (click)="undoSwap()">
+                {{ t('recipe.page.undoSwap') }}
+              </button>
+              @if (!reportInCompare() && undo.result; as result) {
+                <gc-swap-report
+                  [result]="result"
+                  [level]="4"
+                  [mine]="myMaterials()"
+                  [standard]="standardMaterials()"
+                  [hideLead]="leadOff()"
+                  [inRecipe]="swapKeys()"
+                  (rerun)="rerun($event)"
+                />
+              }
+            </div>
+          }
         }
 
         <gc-recipe-library

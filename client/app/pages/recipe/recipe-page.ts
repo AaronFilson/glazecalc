@@ -44,7 +44,9 @@ import { GRAMS_PER_POUND, WeightUnit, formatWeight } from '../../shared/weights'
 import { LibraryMaterial, modernMaterials } from './compare';
 import { Rebase, amountOf, isAmount, rebase, totalOf, unitOf } from './rebase';
 import { additiveAmount, evaluate, savedAnalysis } from './recipe-analysis';
-import { CompareChoice, RecipeCompare } from './recipe-compare';
+// Types apart from the components, which recipe-page.html defers (@defer), so their files can be left out until needed.
+import type { CompareChoice } from './recipe-compare';
+import { RecipeCompare } from './recipe-compare';
 import { RecipeCost } from './recipe-cost';
 import { RecipeHazards, hazardSources } from './recipe-hazards';
 import { RecipeHelp } from './recipe-help';
@@ -55,7 +57,8 @@ import { Plan, oxideLabel, planSuggestion, suggestAmounts } from './suggest';
 import { BaseChoice, LeadMode, leadFreeBases, leadIn, recipeHasLead, replaceLead } from './lead';
 import { TryMaterial } from './pool';
 import { matchFromShelf } from './shelf';
-import { Run, SwapReport, SwapResult } from './swap-report';
+import type { Run, SwapResult } from './swap-report';
+import { SwapReport } from './swap-report';
 import { TryMaterials } from './try-materials';
 import { UnityFormula, silicaAluminaRatio, unityColumns } from './unity-formula';
 import { OwnLimitsNote } from './own-limits-note';
@@ -730,11 +733,7 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
       if (!comparing && target.startsWith('compare-') && target !== 'compare-draft') {
         untracked(() => this.showMore(target.slice('compare-'.length)));
       }
-      untracked(() =>
-        afterNextRender(() => (document.getElementById(target) ?? document.getElementById('recipe-name'))?.focus(), {
-          injector: this.injector
-        })
-      );
+      untracked(() => this.focusWhenDrawn(target, comparing ? 'compare-heading' : null));
     });
     // The focus goes to the print options when they open, and back to the Print button that opened them.
     // Show the working opened it from its own button, in the unity formula's panel.
@@ -748,7 +747,7 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
       if (!printing && printed && printed !== 'draft') untracked(() => this.showMore(printed!));
       printed = printing;
       sheet = untracked(this.printSheet);
-      untracked(() => afterNextRender(() => document.getElementById(target)?.focus(), { injector: this.injector }));
+      untracked(() => this.focusWhenDrawn(target, printing ? 'print-heading' : null, null));
     });
   }
 
@@ -1555,7 +1554,7 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
       this.suggestProblem.set(translate('recipe.page.cannotRerun'));
       return;
     }
-    afterNextRender(() => document.getElementById('swap-report-heading')?.focus(), { injector: this.injector });
+    this.focusWhenDrawn('swap-report-heading', 'swap-report-heading', null);
   }
 
   /**
@@ -1865,7 +1864,7 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
     const opening = this.shareOpen() !== id;
     this.shareOpen.set(opening ? id : null);
     if (opening) {
-      afterNextRender(() => document.getElementById('share-heading-' + id)?.focus(), { injector: this.injector });
+      this.focusWhenDrawn('share-heading-' + id, 'share-heading-' + id, null);
     }
   }
 
@@ -1934,6 +1933,26 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
 
   private focusAmount(kind: 'material' | 'additive', index: number): void {
     afterNextRender(() => document.getElementById(kind + '-amount-' + index)?.focus(), { injector: this.injector });
+  }
+
+  /**
+   * Gives an element the focus once the page is drawn. Print, compare, share and the swap report are deferred
+   * (recipe-page.html, @defer): when one is asked for before its file is in, it draws a moment later, so the
+   * focus waits for `deferred` (the element it brings) for up to two seconds. Any other element is looked for
+   * once, as before; `fallback` takes the focus where the element is not there.
+   */
+  private focusWhenDrawn(id: string, deferred: string | null, fallback: string | null = 'recipe-name'): void {
+    const started = Date.now();
+    const attempt = () => {
+      const element = document.getElementById(id);
+      if (element) return element.focus();
+      if (id === deferred && Date.now() - started < 2000) {
+        setTimeout(attempt, 20);
+        return;
+      }
+      if (fallback) document.getElementById(fallback)?.focus();
+    };
+    afterNextRender(attempt, { injector: this.injector });
   }
 
   private focusTitle(): void {
