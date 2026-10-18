@@ -1,3 +1,4 @@
+import crypto from 'node:crypto';
 import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
@@ -5,12 +6,15 @@ import {
   fontFaces,
   fontPreloads,
   inlineScripts,
+  MAX_GZIPPED,
+  pageProblems,
   problemsWith,
   startDocument,
   textOf,
   urlFor,
   withFontPreloads
 } from '../../scripts/prerender.mjs';
+import { adviceFiles, adviceKeys } from '../../scripts/advice-i18n.mjs';
 import { readPrerendered } from '../lib/prerendered.ts';
 import { expect } from './support/app.ts';
 
@@ -34,6 +38,18 @@ describe('prerender checks', () => {
     expect(urlFor('en', '/')).to.equal('/');
     expect(urlFor('de', '/')).to.equal('/de/');
     expect(urlFor('de', '/guides/firing')).to.equal('/de/guides/firing');
+  });
+
+  it('fails the advice page without all the standard advice, and any page too large', () => {
+    const advice = (count: number) =>
+      page(`<ul class="general-advice">${'<li><h3>Tip</h3><p>Words</p></li>'.repeat(count)}</ul>`);
+    expect(pageProblems(advice(8), '/advice')).to.eql([]);
+    expect(pageProblems(advice(0), '/advice')).to.eql(['it shows 0 of the 8 pieces of standard advice']);
+    // Other pages have no such list.
+    expect(pageProblems(advice(0), '/guides')).to.eql([]);
+    // Random text, which compresses as little as any: a page that carries more than it shows.
+    const large = page(`<p>${crypto.randomBytes(MAX_GZIPPED).toString('base64')}</p>`);
+    expect(pageProblems(large, '/guides')).to.eql(['it is over 100 kB gzipped']);
   });
 
   it('accepts a page with its text, the policy <meta> and the placeholder', () => {
@@ -150,5 +166,26 @@ describe('prerendered files', () => {
     expect(await readPrerendered(path.join(os.tmpdir(), 'no-such-prerendered-folder'), 'de/index.html')).to.equal(
       undefined
     );
+  });
+});
+
+describe("the advice page's translations (scripts/advice-i18n.mjs)", () => {
+  it("are the standard advice's words from each language's records, and no others", () => {
+    const keys = adviceKeys();
+    // A title, a text and a list of tags for each of the 8.
+    expect(keys.size).to.equal(24);
+    const files = adviceFiles();
+    const records = path.join(import.meta.dirname, '..', '..', 'client', 'public', 'i18n', 'records');
+    expect(Object.keys(files).sort()).to.eql(fs.readdirSync(records).sort());
+    const english = JSON.parse(files['en.json']!) as Record<string, string>;
+    expect(Object.keys(english).sort()).to.eql([...keys].sort());
+    expect(Object.values(english)).to.include('Have a system');
+    for (const [name, text] of Object.entries(files)) {
+      const all = JSON.parse(fs.readFileSync(path.join(records, name), 'utf8')) as Record<string, string>;
+      for (const [key, value] of Object.entries(JSON.parse(text) as Record<string, string>)) {
+        expect(keys.has(key), `${name} ${key}`).to.equal(true);
+        expect(value, `${name} ${key}`).to.equal(all[key]);
+      }
+    }
   });
 });

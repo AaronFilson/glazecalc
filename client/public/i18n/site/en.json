@@ -216,7 +216,6 @@
     "titleMissing": "Give the advice a title.",
     "contentMissing": "Write the advice.",
     "fetchFailed": "There was an error in getting the advice information.",
-    "standardFetchFailed": "There was an error in getting the server advice information.",
     "saved": "Success in adding to the advice records.",
     "saveFailed": "There was an error in submitting the advice information."
   },

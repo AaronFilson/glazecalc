@@ -312,6 +312,33 @@ test.describe('prerendered pages', () => {
     expect(early).toEqual([]);
   });
 
+  test('the advice page arrives with the standard advice in its language, and asks for no messages before it is ready', async ({
+    page,
+    request
+  }) => {
+    // In the HTML as sent, before any script: every piece of the standard advice, in Thai.
+    const html = await (await request.get('/th/advice')).text();
+    const list = /<ul\b[^>]*class="general-advice"[^>]*>([\s\S]*?)<\/ul>/.exec(html)?.[1] ?? '';
+    expect(list.match(/<h3\b/g)).toHaveLength(8);
+    expect(list).toContain('มีระบบ');
+    // The files the page carries for the browser (ng-state, which writes / as /): only the advice's
+    // words, not every standard record's, nor English files the page never reads.
+    const carried = html.replaceAll('\\u002F', '/');
+    expect(carried).toContain('/i18n/advice/th.json');
+    expect(carried).not.toContain('/i18n/records/');
+    expect(carried).not.toContain('/i18n/server/en.json');
+    const early = [];
+    let ready = false;
+    page.on('request', (r) => {
+      if (!ready && (r.url().includes('/i18n/') || r.url().includes('/api/'))) early.push(r.url());
+    });
+    await page.goto('/th/advice');
+    await appStarted(page);
+    ready = true;
+    expect(early).toEqual([]);
+    await expect(page.locator('.general-advice li')).toHaveCount(8);
+  });
+
   test('a stored session on the home page goes to the notebook without the landing text showing', async ({ page }) => {
     await signUpAndSignIn(page);
     // Every frame until the page changes (what the eye sees; a script can run before the styles do).

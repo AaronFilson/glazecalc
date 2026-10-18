@@ -219,6 +219,21 @@ describe('loading translation files', () => {
     expect(await result).toEqual({});
   });
 
+  it('never fetches the English of the messages that come with the code or the data, which the app never reads', async () => {
+    const loader = TestBed.inject(FileLoader);
+    for (const scope of ['server', 'chemistry', 'records', 'safety', 'regions', 'advice']) {
+      expect(await firstValueFrom(loader.getTranslation(`${scope}/en`))).toEqual({});
+    }
+    httpMock().expectNone(() => true);
+    // Other languages' files and the app's own English are fetched (and a pseudo-locale's English, e2e/pseudo.spec.js).
+    const german = firstValueFrom(loader.getTranslation('records/de'));
+    httpMock().expectOne('/i18n/records/de.json').flush({ 'records.a': 'A' });
+    expect(await german).toEqual({ 'records.a': 'A' });
+    const english = firstValueFrom(loader.getTranslation('recipe/en'));
+    httpMock().expectOne('/i18n/recipe/en.json').flush({ title: 'Recipe' });
+    expect(await english).toEqual({ title: 'Recipe' });
+  });
+
   it('still fails on other errors, which Transloco retries', async () => {
     const result = firstValueFrom(TestBed.inject(FileLoader).getTranslation('de'));
     httpMock().expectOne('/i18n/de.json').flush('', { status: 500, statusText: 'Server Error' });

@@ -106,9 +106,9 @@ describe("index.html's title and description", () => {
 
   it("is en.json's", () => {
     expect(content(/<title>([^<]*)<\/title>/)).toBe(en.titles.landing);
-    expect(content(/property="og:title" content="([^"]*)"/)).toBe(en.titles.landing);
+    expect(content(/property="og:title"\s+content="([^"]*)"/)).toBe(en.titles.landing);
     expect(content(/name="description"\s+content="([^"]*)"/)).toBe(en.meta.description);
     expect(content(/property="og:description"\s+content="([^"]*)"/)).toBe(en.meta.description);
-    expect(content(/property="og:image:alt" content="([^"]*)"/)).toBe(en.meta.imageAlt);
+    expect(content(/property="og:image:alt"\s+content="([^"]*)"/)).toBe(en.meta.imageAlt);
   });
 });

@@ -26,7 +26,8 @@ export const routes: Routes = [
     path: 'advice',
     title: marker('titles.advice'),
     data: { description: marker('meta.advice') },
-    providers: [provideTranslocoScope('site', 'records')],
+    // advice/ is the standard advice's words alone (scripts/advice-i18n.mjs), not all of records/.
+    providers: [provideTranslocoScope('site', 'advice')],
     resolve: { messages: scopeTranslations },
     loadComponent: () => import('./pages/advice/advice-page').then((m) => m.AdvicePage)
   },

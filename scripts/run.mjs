@@ -7,7 +7,7 @@
 //
 // Production needs only one process: `npm start` runs server/main.ts, which serves
 // the built client and the API together.
-import { spawn } from 'node:child_process';
+import { spawn, spawnSync } from 'node:child_process';
 import { createInterface } from 'node:readline';
 import { fileURLToPath } from 'node:url';
 import { styleText } from 'node:util';
@@ -41,6 +41,10 @@ const stopAll = (code) => {
   process.exitCode = code;
   for (const child of children) if (child.exitCode === null) child.kill();
 };
+
+// The advice page's translations, which the dev server serves as built files (scripts/advice-i18n.mjs).
+const made = spawnSync(process.execPath, ['scripts/advice-i18n.mjs'], { cwd: root, stdio: 'inherit' });
+if (made.status !== 0) process.exit(made.status ?? 1);
 
 for (const { name, color, args, env } of MODES[mode]) {
   // Spawn node itself rather than a shell, so killing it stops the server on Windows too.

@@ -255,12 +255,13 @@ describe('AdditivePage', () => {
 });
 
 describe('AdvicePage', () => {
-  it('shows the general advice to visitors, with no form and no request for their own', async () => {
+  it('shows the general advice to visitors, with no form and no request at all', async () => {
     const { fixture } = await create(AdvicePage);
-    answer('/advice/getStandard', [{ _id: 's', title: 'Sieve', content: 'Use 80 mesh', tags: ['mixing'] }]);
-    httpMock().expectNone(API + '/advice/getAll');
     await settle(fixture);
-    expect(text(fixture, '.general-advice')).toContain('Use 80 mesh');
+    // The standard advice comes with the page (data/advice.ndjson), so the render has it too.
+    httpMock().expectNone(() => true);
+    expect(fixture.nativeElement.querySelectorAll('.general-advice li')).toHaveLength(8);
+    expect(text(fixture, '.general-advice')).toContain('Have a system to your process.');
     expect(fixture.nativeElement.querySelector('form')).toBeNull();
     expect(text(fixture)).toContain('Create a free account or sign in to keep advice of your own.');
   });
@@ -269,9 +270,8 @@ describe('AdvicePage', () => {
     localStorage.setItem('session', 'account');
     const { fixture, page } = await create(AdvicePage);
     answer('/advice/getAll', []);
-    answer('/advice/getStandard', [{ _id: 's', title: 'Sieve', content: 'Use 80 mesh', tags: ['mixing', 'tools'] }]);
     await settle(fixture);
-    expect(text(fixture, '.general-advice')).toContain('Tags: mixing, tools');
+    expect(text(fixture, '.general-advice')).toContain('Tags: specific gravity, density, mixing');
 
     await page['save']();
     await fixture.whenStable();
