@@ -3,79 +3,79 @@ title: Een eenvoudige oven stoken
 lead: Hoe u een elektrische oven stookt met een kiln sitter of met handbediende schakelaars: kegels kiezen, plaatsen en aflezen, met gepubliceerde stookschema’s voor de biscuitstook en de glazuurstook.
 ---
 
-## Cones: what they measure {#cones lang=en}
+## Kegels: wat ze meten {#cones}
 
 > [!NOTE]
-> Follow your kiln's own manual first. This guide gathers what cone and kiln makers publish about basic electric kilns; it does not replace the instructions for your model, and where the two differ, the manual wins.
+> Volg eerst de handleiding van uw eigen oven. Deze gids brengt samen wat kegel- en ovenmakers publiceren over eenvoudige elektrische ovens; hij vervangt de instructies voor uw model niet, en waar beide verschillen, wint de handleiding.
 
-A **pyrometric cone** is a small, slender pyramid made from a standardized ceramic powder. When it has had enough heat, it softens and bends over in a repeatable way. You set cones in the kiln beside the ware and read how far they bent.
+Een **pyrometrische kegel**{{en: pyrometric cone}} is een kleine, slanke piramide van een gestandaardiseerd keramisch poeder. Als hij genoeg warmte heeft gehad, wordt hij zacht en buigt hij op een herhaalbare manier om. U zet kegels naast het werk in de oven en leest af hoe ver ze zijn omgebogen.
 
-Cones measure **heatwork**, the combined effect of temperature and time. In the words of Orton, the main US cone maker, "Cones do not measure temperature alone." A cone heated slowly bends at a lower temperature than one heated fast, and a glaze behaves the same way. So Orton gives each cone's temperature for a stated heating rate over the last {{180 °F; 100 °C}} of the firing. Once a cone starts to move, it bends over a narrow range, "usually less than 40° F" (22 °C).
+Kegels meten **heatwork**, het gecombineerde effect van temperatuur en tijd. Met de woorden van Orton, de belangrijkste Amerikaanse kegelmaker: “Kegels meten niet alleen temperatuur.” Een kegel die langzaam wordt verwarmd, buigt bij een lagere temperatuur om dan een die snel wordt verwarmd, en een glazuur{{en: glaze}} gedraagt zich net zo. Daarom geeft Orton de temperatuur van elke kegel voor een opgegeven stooksnelheid over de laatste {{180 °F; 100 °C}} van de stook. Zodra een kegel begint te bewegen, buigt hij om binnen een smal bereik, “meestal minder dan 40° F” (22 °C).
 
-### Cone numbers
+### Kegelnummers
 
-Cone numbers run from 022, the coolest, up to 42. A leading zero marks the cooler series and is read as "oh": cone 06 ("oh-six") is cooler than cone 04, and cone 01 needs less heat than cone 1. Orton warns that it is important not to mix the two series up. The gap is large: cone 06 bends more than {{400 °F; 220 °C}} cooler than cone 6.
+Kegelnummers lopen van 022, de koelste, tot 42. Een voorloopnul geeft de koelere reeks aan en wordt gelezen als “nul”: kegel 06 (“nul zes”) is koeler dan kegel 04, en kegel 01 heeft minder warmte nodig dan kegel 1. Orton waarschuwt dat het belangrijk is de twee reeksen niet door elkaar te halen. Het verschil is groot: kegel 06 buigt om bij meer dan {{400 °F; 220 °C}} koeler dan kegel 6.
 
-Table: Common firing ranges, for self-supporting cones at {{108 °F/h; 60 °C/h}}
-Label: Firing ranges
+Table: Gebruikelijke stookbereiken, voor zelfstaande kegels bij {{108 °F/h; 60 °C/h}}
+Label: Stookbereiken
 
-| Range     | Cones |                    Temperature | Typical use                              |
-| --------- | ----- | -----------------------------: | ---------------------------------------- |
-| Low fire  | 06–04 |  {{1828–1945 °F; 998–1063 °C}} | Earthenware glazes; bisque               |
-| Mid fire  | 5–6   | {{2167–2232 °F; 1186–1222 °C}} | Electric-kiln stoneware and porcelain    |
-| High fire | 9–10  | {{2300–2345 °F; 1260–1285 °C}} | Mostly gas-fired stoneware and porcelain |
+| Bereik            | Kegels |                    Temperatuur | Typisch gebruik                                |
+| ----------------- | ------ | -----------------------------: | ---------------------------------------------- |
+| Lage temperatuur  | 06–04  |  {{1828–1945 °F; 998–1063 °C}} | Glazuren voor aardewerk; biscuit               |
+| Middentemperatuur | 5–6    | {{2167–2232 °F; 1186–1222 °C}} | Steengoed en porselein in een elektrische oven |
+| Hoge temperatuur  | 9–10   | {{2300–2345 °F; 1260–1285 °C}} | Steengoed en porselein, meestal in een gasoven |
 
-Suppliers in the UK, Europe, Australia and New Zealand often give a temperature in °C rather than a cone: find the nearest cone in the chart below and confirm it with a witness cone. Seger and Staffordshire cones, the older European series, should not be assumed to share Orton's numbers, so this guide uses Orton cones.
+Leveranciers in het Verenigd Koninkrijk, Europa, Australië en Nieuw-Zeeland geven vaak een temperatuur in °C in plaats van een kegel: zoek de dichtstbijzijnde kegel in de tabel hieronder en bevestig die met een controlekegel{{en: witness cone}}. Ga er niet van uit dat Segerkegels en Staffordshire-kegels, de oudere Europese reeksen, dezelfde nummers hebben als die van Orton; deze gids gebruikt daarom Ortonkegels.
 
-### Holding adds heatwork
+### Een houdtijd voegt heatwork toe
 
-A **hold** (also called a **soak**) keeps the kiln at one temperature for a while. Because cones measure heatwork, a hold at the top can stand in for a hotter peak. Orton gives these rough equivalents:
+Een **houdtijd**{{en: hold}} (ook wel **soak**) houdt de oven een tijdje op één temperatuur. Omdat kegels heatwork meten, kan een houdtijd aan de top in de plaats komen van een hogere eindtemperatuur. Orton geeft deze globale equivalenten:
 
-Table: What a hold at the peak is worth
-Label: Holds and heatwork
+Table: Wat een houdtijd op de eindtemperatuur waard is
+Label: Houdtijden en heatwork
 
-| Hold             | Roughly the same heatwork as             |
-| ---------------- | ---------------------------------------- |
-| About 20 minutes | A peak {{18 °F; 10 °C}} hotter           |
-| 40–60 minutes    | A peak {{36 °F; 20 °C}} hotter           |
-| About 2 hours    | A peak {{54 °F; 30 °C}} hotter           |
-| 4–6 hours        | Enough to bend a cone two numbers hotter |
+| Houdtijd            | Ongeveer hetzelfde heatwork als                   |
+| ------------------- | ------------------------------------------------- |
+| Ongeveer 20 minuten | Een eindtemperatuur die {{18 °F; 10 °C}} heter is |
+| 40–60 minuten       | Een eindtemperatuur die {{36 °F; 20 °C}} heter is |
+| Ongeveer 2 uur      | Een eindtemperatuur die {{54 °F; 30 °C}} heter is |
+| 4–6 uur             | Genoeg om een kegel twee nummers heter te buigen  |
 
-Orton adds that a hold of 1–2 hours "may be sufficient to deform the next higher cone number".
+Orton voegt eraan toe dat een houdtijd van 1–2 uur “voldoende kan zijn om de kegel met het eerstvolgende hetere nummer te vervormen”.
 
-So a hold is never free: if you add one, expect the cones to bend further, and lower the peak to match.
+Een houdtijd is dus nooit gratis: als u er een toevoegt, verwacht dan dat de kegels verder buigen, en verlaag de eindtemperatuur daarop.
 
-### Kinds of cone
+### Soorten kegels
 
-Orton makes four kinds. Two stand on the shelf to show what the ware received; two are for the kiln sitter.
+Orton maakt vier soorten. Twee staan op de ovenplaat om te laten zien wat het werk heeft gekregen; twee zijn voor de kiln sitter.
 
-Table: Orton's four kinds of cone
-Label: Kinds of cone
+Table: De vier soorten kegels van Orton
+Label: Soorten kegels
 
-| Kind            | Used for                  | How it stands                                                                               |
-| --------------- | ------------------------- | ------------------------------------------------------------------------------------------- |
-| Self-supporting | Witness cone on the shelf | A built-in base sets the height, 1¾ in (44 mm), and the 8° lean; no holder needed           |
-| Large           | Witness cone on the shelf | Set in a plaque or a pat of clay with exactly 2 in (51 mm) showing, leaning 8° from upright |
-| Small (junior)  | Kiln sitter               | Lies across the sitter's supports; 15/16 in (24 mm) showing if stood on a shelf             |
-| Bar             | Kiln sitter               | The same powder as small cones, in an even bar shape                                        |
+| Soort             | Gebruikt voor                 | Hoe hij staat                                                                                                  |
+| ----------------- | ----------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| Zelfstaand        | Controlekegel op de ovenplaat | Een ingebouwde voet bepaalt de hoogte, 1¾ inch (44 mm), en de helling van 8°; geen houder nodig                |
+| Groot             | Controlekegel op de ovenplaat | In een kegelhouder of een klompje klei gezet met precies 2 inch (51 mm) zichtbaar, 8° uit de verticaal hellend |
+| Klein (minikegel) | Kiln sitter                   | Ligt dwars over de steuntjes van de kiln sitter; 15/16 inch (24 mm) zichtbaar als hij op een ovenplaat staat   |
+| Staafje           | Kiln sitter                   | Hetzelfde poeder als kleine kegels, in een gelijkmatige staafvorm                                              |
 
-Height matters: a ¼ in (6 mm) difference in the height of a large cone "can cause more than a half cone difference in bending". Cones do not go bad or age, and damp storage does not affect them.
+Hoogte doet ertoe: een verschil van ¼ inch (6 mm) in de hoogte van een grote kegel “kan meer dan een halve kegel verschil in buiging veroorzaken”. Kegels gaan niet achteruit en verouderen niet, en vochtige opslag heeft er geen invloed op.
 
-### What "cone 6" means in practice
+### Wat “kegel 6” in de praktijk betekent
 
-The chart gives a self-supporting cone 6 as {{2232 °F; 1222 °C}}, but only when the last {{180 °F; 100 °C}} climbs at {{108 °F/h; 60 °C/h}}. Climbing at {{270 °F/h; 150 °C/h}}, the same cone bends at {{2269 °F; 1243 °C}}. Real kilns differ again: Digitalfire reports that "Most kilns reach cone 6 at 2200°F, not 2232°F". So "cone 6" means the ware received the heatwork that bends a cone 6, whatever a thermometer read at the time.
+De tabel geeft een zelfstaande kegel 6 als {{2232 °F; 1222 °C}}, maar alleen als de laatste {{180 °F; 100 °C}} stijgen met {{108 °F/h; 60 °C/h}}. Bij een stijging van {{270 °F/h; 150 °C/h}} buigt dezelfde kegel om bij {{2269 °F; 1243 °C}}. Echte ovens wijken weer anders af: Digitalfire meldt dat “de meeste ovens kegel 6 bereiken bij 2200°F, niet bij 2232°F”. “Kegel 6” betekent dus dat het werk het heatwork kreeg dat een kegel 6 doet ombuigen, wat een thermometer op dat moment ook aanwees.
 
 :::orton
 
 > [!NOTE]
-> Fire by the cone, not the clock or the dial. Set a controller by cone number, and let a witness cone on the shelf confirm every firing.
+> Stook op kegel, niet op de klok of de wijzer. Stel een regelaar in op kegelnummer, en laat een controlekegel op de ovenplaat elke stook bevestigen.
 
 :::
 
 :::temperature
 
 > [!NOTE]
-> Firing by temperature, keep the end of every firing the same: the same last rate of climb, the same peak and the same hold. Then a glaze that worked once works again.
+> Als u op temperatuur stookt, houd dan het einde van elke stook gelijk: dezelfde laatste stijging, dezelfde eindtemperatuur en dezelfde houdtijd. Dan werkt een glazuur dat een keer werkte opnieuw.
 
 :::
 
@@ -596,22 +596,22 @@ Schakelt de kiln sitter uit voordat de kegels op de ovenplaat om zijn, neem dan 
 
 Een **pyrometer** is een temperatuurmeter die zijn waarde krijgt van een **thermokoppel**, een warmtevoeler door de ovenwand. Hij laat zien hoe snel de oven stijgt, zodat u de juiste kolom van de kegeltabel kunt kiezen. Maar hij meet bij de wand, niet bij het werk, en hij verloopt. L&L merkt op dat een thermokoppel van type K na herhaalde stoken tot kegel 6 meer dan {{25 °F; 14 °C}} kan afwijken, “een verschil groter dan een hele kegel”, terwijl een zelfstaande kegel niet meer dan {{4 °F; 2 °C}} varieert. Orton zegt dat pyrometers af en toe opnieuw moeten worden gekalibreerd, en met kegels controleert u ze.
 
-## Venting, peeking and safety {#venting lang=en}
+## Ontluchten, kijken en veiligheid {#venting}
 
-### Venting
+### Ontluchten
 
-Early in a firing, clay and glaze give off water vapor and fumes, including carbon monoxide, and glazes can give off toxic fumes later in the firing too. L&L calls venting them "essential". With no vent system, that means the lid propped and the peepholes open in the early stages, as in the procedures above; slowing the heating during this time also helps the carbon burn out. In a kiln without a vent, Dawson, who made the sitter, also says to leave the top peephole open for the whole firing: the venting "will reduce deterioration of the kiln's metal parts and increase the life of the tube assembly". A **downdraft vent** (a powered vent fitted to the kiln) changes this. It does the venting, so Orton says the lid and peepholes stay closed for the whole firing except to check the cones, and L&L says to leave the vent on and plug the peepholes.
+Vroeg in een stook geven klei en glazuur{{en: glaze}} waterdamp en dampen af, waaronder koolmonoxide, en glazuren kunnen later in de stook ook giftige dampen afgeven. L&L noemt het afvoeren ervan “essentieel”. Zonder afzuigsysteem betekent dat: het deksel op een kier en de kijkgaten open in de eerste fasen, zoals in de werkwijzen hierboven; ook langzamer opwarmen in die tijd helpt de koolstof uit te branden. In een oven zonder afzuiging zegt ook Dawson, die de kiln sitter maakte, het bovenste kijkgat de hele stook open te laten: de ontluchting “vermindert het verslechteren van de metalen onderdelen van de oven en verlengt de levensduur van de buis”. Een **onderafzuiging**{{en: downdraft vent}} (een aangedreven afzuiging die op de oven is gemonteerd) verandert dit. Zij verzorgt de ontluchting, dus volgens Orton blijven het deksel en de kijkgaten de hele stook dicht, behalve om de kegels te controleren, en volgens L&L laat u de afzuiging aan en stopt u de kijkgaten dicht.
 
-For venting the room, and for carbon monoxide alarms, see [Safe mixing and ventilation](/guides/safe-mixing) and [Don't poison your family](/guides/home-safety).
+Voor het ventileren van de ruimte, en voor koolmonoxidemelders, zie [Veilig mengen en ventileren](/guides/safe-mixing) en [Vergiftig uw gezin niet](/guides/home-safety).
 
-### While the kiln is firing
+### Terwijl de oven stookt
 
-- Look through a peephole only with IR-rated shade 3 welding glasses; sunglasses are not enough. Skutt advises twisting the plugs into place so they do not fall out.
-- Do not leave the kiln unattended beyond its expected firing time; a sitter is not a fail-safe.
-- Never fire on or near anything that burns, such as a wood floor or carpet.
-- Keep the clearances in your manual. Published figures range from 12 in (30 cm) to 3 ft (91 cm); where the manual is silent, 18 in (46 cm) from walls and 3 ft (91 cm) from anything that burns is the safest choice.
-- Keep the space around the sitter's weight clear so it can drop.
-- When the firing ends, turn the switches off and turn off the breaker as well.
+- Kijk alleen door een kijkgat met een lasbril met IR-filter van beschermingsniveau 3; een zonnebril is niet genoeg. Skutt adviseert de stoppen er met een draai in te zetten, zodat ze er niet uit vallen.
+- Laat de oven niet langer dan de verwachte stooktijd onbeheerd; een kiln sitter is geen waterdichte beveiliging.
+- Stook nooit op of vlak bij iets wat kan branden, zoals een houten vloer of tapijt.
+- Houd de veiligheidsafstanden uit uw handleiding aan. Gepubliceerde cijfers lopen uiteen van 12 inch (30 cm) tot 3 voet (91 cm); waar de handleiding zwijgt, is 18 inch (46 cm) van muren en 3 voet (91 cm) van alles wat kan branden de veiligste keuze.
+- Houd de ruimte rond het gewicht van de kiln sitter vrij, zodat het kan vallen.
+- Zet aan het einde van de stook de schakelaars uit en schakel ook de zekering uit.
 
 ## Afkoelen en de oven leeghalen {#cooling}
 

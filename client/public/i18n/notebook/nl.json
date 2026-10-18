@@ -17,6 +17,14 @@
         "title": "Recepten",
         "text": "Stel een glazuur samen uit grondstoffen en hoeveelheden, bekijk de Segerformule en sla het op."
       },
+      "import": {
+        "title": "Recepten plakken",
+        "text": "Plak recepten van een website, uit een spreadsheet of uit notities, controleer wat is gelezen en bewaar ze."
+      },
+      "blends": {
+        "title": "Mengingen voor proefplaatjes",
+        "text": "Meng twee, drie of vier van uw recepten tot genummerde proefplaatjes, met wat u voor elk moet afwegen."
+      },
       "material": {
         "title": "Grondstoffen",
         "text": "Voeg uw eigen grondstoffen toe, op basis van een chemische formule of de analyse van een leverancier."
@@ -99,6 +107,35 @@
     "saveFailed": "Fout: het verzoek aan de server is mislukt."
   },
   "trash": {
-    "title": "Prullenbak"
+    "title": "Prullenbak",
+    "lead": "Wat u uit uw recepten, grondstoffen, notities en verslagen verwijdert, blijft hier 30 dagen staan. Zet het terug, of verwijder het definitief.",
+    "listHeading": "In de prullenbak",
+    "none": "De prullenbak is leeg.",
+    "untitled": "Zonder naam",
+    "kinds": {
+      "recipes": "Recept",
+      "materials": "Grondstof",
+      "additives": "Toevoeging",
+      "notes": "Notitie",
+      "firing": "Stookverslag",
+      "advice": "Advies",
+      "other": "Item"
+    },
+    "removedOn": "Verwijderd op {date}",
+    "goesOn": "Definitief verwijderd op {date}",
+    "byApp": "Verwijderd door een gekoppelde app",
+    "putBack": "Terugzetten",
+    "putBackName": "{name} terugzetten",
+    "restored": "“{name}” is teruggezet op zijn plek.",
+    "restoredAlready": "“{name}” is al teruggezet.",
+    "restoreFailed": "“{name}” kon niet worden teruggezet. Probeer het opnieuw.",
+    "deleted": "“{name}” is definitief verwijderd.",
+    "empty": "De prullenbak legen",
+    "emptyQuestion": "{count, plural, one {Het # item} other {Alle # items}} in de prullenbak definitief verwijderen? Dit kan niet ongedaan worden gemaakt.",
+    "emptyYes": "Ja, legen",
+    "emptying": "Legen...",
+    "emptied": "De prullenbak is leeg.",
+    "emptyFailed": "De prullenbak kon niet worden geleegd. Probeer het opnieuw.",
+    "fetchFailed": "De prullenbak kon niet worden geladen. Probeer het opnieuw."
   }
 }

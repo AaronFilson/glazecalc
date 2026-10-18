@@ -129,25 +129,25 @@ Lood in het bloed wordt gemeten in **µg/dL** (microgram lood per deciliter bloe
 
 Glazecalc laat lood uitgeschakeld, tenzij u het in [Instellingen](/account) inschakelt. Met lood uitgeschakeld voegt Glazecalc nooit lood aan een recept toe en stelt het ook nooit voor.
 
-## Pets {#pets lang=en}
+## Huisdieren {#pets}
 
 > [!NOTE]
-> We found no veterinary study or guidance written for pets in potters' homes. The advice in this section is common sense, built on general facts about lead, barium and birds. It does not come from a veterinary source.
+> We hebben geen veterinair onderzoek of advies gevonden dat is geschreven voor huisdieren in de huizen van pottenbakkers. Het advies in dit deel is gezond verstand, gebouwd op algemene feiten over lood, barium en vogels. Het komt niet uit een veterinaire bron.
 
-### What is known
+### Wat bekend is
 
-The Pet Poison Helpline says "Lead is toxic for all species, but young and/or malnourished animals are at highest risk for poisoning", with signs such as vomiting, diarrhea, not eating, stumbling, seizures and blindness. A veterinary case report describes a dog that ate sparklers containing barium nitrate (a soluble barium salt, not a glaze material): it developed sudden weakness, drooling and an irregular heartbeat, and recovered with veterinary treatment. Birds are a special case: a University of Illinois vet explains that "Birds have a highly sophisticated and ultra efficient respiratory system, making them particularly vulnerable to the inhalation of fumes and aerosols."
+De Pet Poison Helpline zegt: “Lood is giftig voor alle diersoorten, maar jonge en/of ondervoede dieren lopen het grootste risico op vergiftiging”, met verschijnselen als braken, diarree, niet eten, strompelen, stuipen en blindheid. Een veterinair casusverslag beschrijft een hond die sterretjes met bariumnitraat at (een oplosbaar bariumzout, geen glazuurgrondstof): hij kreeg plotselinge zwakte, kwijlde en kreeg een onregelmatige hartslag, en herstelde met behandeling door een dierenarts. Vogels zijn een bijzonder geval: een dierenarts van de University of Illinois legt uit dat “vogels een zeer geavanceerd en uiterst efficiënt ademhalingsstelsel hebben, waardoor ze bijzonder kwetsbaar zijn voor het inademen van dampen en aerosolen.”
 
-### Common-sense rules
+### Regels van gezond verstand
 
-- Keep pets out of the studio, with the door shut.
-- Dogs chew bags and drink from buckets. Keep bags in a closed cabinet and a lid on every bucket.
-- Cats walk through dust and lick it off their paws and fur. Wet-clean the floor and keep cats out of the studio, so there is nothing to groom off.
-- Birds and small mammals (rabbits, guinea pigs, hamsters) share the household air. Keep them in a far room with the door shut while you handle dry materials and while the kiln fires.
-- Fish tanks collect settling dust. Keep them out of the studio, and covered.
-- Keep pet food and water bowls away from the studio and kiln, and use commercial or tested bowls, not studio experiments.
+- Houd huisdieren uit het atelier, met de deur dicht.
+- Honden kauwen op zakken en drinken uit emmers. Bewaar zakken in een gesloten kast en houd op elke emmer een deksel.
+- Katten lopen door stof en likken het van hun poten en vacht. Maak de vloer nat schoon en houd katten uit het atelier, zodat er niets is om af te likken.
+- Vogels en kleine zoogdieren (konijnen, cavia’s, hamsters) delen de lucht in huis. Houd ze in een ver verwijderde kamer met de deur dicht terwijl u droge grondstoffen hanteert en terwijl de oven stookt.
+- Aquaria vangen neerdalend stof op. Houd ze uit het atelier, en afgedekt.
+- Houd voer- en waterbakjes van huisdieren uit de buurt van het atelier en de oven, en gebruik bakjes uit de winkel of geteste bakjes, geen experimenten uit het atelier.
 
-If a pet may have eaten or drunk anything from the studio, or shows signs like those above, call your vet or an animal poison line (see the table at the top), with the material's name and the pet's weight to hand.
+Als een huisdier iets uit het atelier kan hebben gegeten of gedronken, of verschijnselen als hierboven vertoont, bel dan uw dierenarts of een hulplijn voor dierenvergiftigingen (zie de tabel bovenaan), met de naam van de grondstof en het gewicht van het dier bij de hand.
 
 ## De oven {#the-kiln}
 
@@ -220,7 +220,7 @@ Een **binnenglazuur**{{en: liner glaze}} is het glazuur aan de binnenkant van ee
 
 Meer over hoe glazuren smelten, waarom sommige metalen afgeven en wat de grenswaarden betekenen, leest u in [Glazuren vanaf de basis](/guides/glazing-basics).
 
-## Sources {#sources lang=en}
+## Bronnen {#sources}
 
 - [America's Poison Centers: Poison Help](https://poisoncenters.org/)
 - [Poison Control (poison.org): webPOISONCONTROL](https://www.poison.org/)

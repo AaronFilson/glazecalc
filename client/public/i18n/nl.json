@@ -17,13 +17,17 @@
     "confirmEmail": "Uw e-mailadres bevestigen - Glazecalc",
     "home": "Uw atelierlogboek - Glazecalc",
     "recipe": "Recepten - Glazecalc",
+    "import": "Recepten plakken - Glazecalc",
+    "blends": "Mengingen voor proefplaatjes - Glazecalc",
     "material": "Grondstoffen - Glazecalc",
     "additive": "Toevoegingen - Glazecalc",
     "firingLogs": "Stookverslagen - Glazecalc",
     "notes": "Notities - Glazecalc",
     "trash": "Prullenbak - Glazecalc",
     "account": "Uw account en instellingen - Glazecalc",
-    "notFound": "Niet gevonden - Glazecalc"
+    "notFound": "Niet gevonden - Glazecalc",
+    "shared": "Gedeeld recept - Glazecalc",
+    "assistants": "Glazecalc gebruiken vanuit uw AI-assistent - Glazecalc"
   },
   "nav": {
     "skip": "Naar de inhoud",
@@ -96,9 +100,14 @@
   },
   "remove": {
     "alreadyRemoved": "“{name}” was al verwijderd.",
+    "trashed": "“{name}” is naar de prullenbak verplaatst.",
+    "undo": "Ongedaan maken",
+    "restored": "“{name}” is teruggezet.",
+    "restoreFailed": "“{name}” kon niet worden teruggezet. Het staat nog in de prullenbak.",
     "failed": "Verwijderen is niet gelukt. Probeer het opnieuw.",
     "question": "“{name}” verwijderen?",
     "cannotUndo": "Dit kan niet ongedaan worden gemaakt.",
+    "toTrash": "U kunt het 30 dagen lang terugzetten vanuit de prullenbak.",
     "removing": "Verwijderen...",
     "yes": "Ja, verwijderen",
     "cancel": "Annuleren",
