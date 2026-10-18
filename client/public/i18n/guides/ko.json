@@ -102,6 +102,9 @@
     "quartzAll": "석영(분진이 모두 석영인 경우)",
     "cristobaliteAll": "크리스토발라이트(분진이 모두 크리스토발라이트인 경우)",
     "allFree": "분진이 모두 유리규산인 경우의 관리 농도",
+    "bandFromTo": "유리규산(SiO₂)이 {from}%에서 {to}%인 분진",
+    "bandOverTo": "유리규산이 {from}% 초과 {to}% 이하인 분진",
+    "bandAbove": "유리규산이 {from}% 초과인 분진",
     "recommended": "권고: {abbr}",
     "value": "{value} mg/m³",
     "kind": {
@@ -160,7 +163,15 @@
       "myFlat": "납작한 그릇",
       "mySmall": "작은 오목한 그릇",
       "myLarge": "큰 오목한 그릇",
-      "myCooking": "가열조리용 기구"
+      "myCooking": "가열조리용 기구",
+      "idFlat": "안쪽 깊이가 25 mm 이하인 것",
+      "idSmall": "안쪽 깊이가 25 mm 초과이고 1100 mL 미만인 것",
+      "idLarge": "안쪽 깊이가 25 mm 초과이고 1100 mL 이상인 것",
+      "thFlat": "깊이가 25 mm 이하인 것",
+      "thSmall": "깊이가 25 mm 초과이고 1.1 L 미만인 것",
+      "thLarge": "깊이가 25 mm 초과이고 1.1 L 이상인 것",
+      "thInfant": "12개월까지 아기의 음식을 담는 용기",
+      "thCooking": "가열조리용 기구(조리의 열을 견디도록 만든 것)"
     },
     "judged": {
       "average": "6개의 평균",

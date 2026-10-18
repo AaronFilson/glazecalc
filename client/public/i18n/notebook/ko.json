@@ -17,6 +17,14 @@
         "title": "레시피",
         "text": "원료와 양으로 유약을 짜고, 제게르식을 확인하고, 저장하세요."
       },
+      "import": {
+        "title": "레시피 붙여넣기",
+        "text": "웹사이트, 스프레드시트, 메모의 레시피를 붙여넣고, 읽은 내용을 확인한 뒤 저장하세요."
+      },
+      "blends": {
+        "title": "시편 블렌드",
+        "text": "레시피 두 개, 세 개 또는 네 개를 블렌드해 번호가 붙은 시편을 만들고, 시편마다 계량할 양을 확인하세요."
+      },
       "material": {
         "title": "원료",
         "text": "화학식이나 공급업체의 분석값으로 원료를 직접 추가하세요."
@@ -99,6 +107,35 @@
     "saveFailed": "오류: 서버 요청에 실패했습니다."
   },
   "trash": {
-    "title": "휴지통"
+    "title": "휴지통",
+    "lead": "레시피, 원료, 메모, 소성 기록에서 삭제한 항목은 30일 동안 여기에 보관됩니다. 복원하거나 완전히 삭제하세요.",
+    "listHeading": "휴지통 항목",
+    "none": "휴지통이 비어 있습니다.",
+    "untitled": "제목 없음",
+    "kinds": {
+      "recipes": "레시피",
+      "materials": "원료",
+      "additives": "첨가제",
+      "notes": "메모",
+      "firing": "소성 기록",
+      "advice": "조언",
+      "other": "기록"
+    },
+    "removedOn": "{date}에 삭제됨",
+    "goesOn": "{date}에 완전히 삭제 예정",
+    "byApp": "연결된 앱이 삭제함",
+    "putBack": "복원",
+    "putBackName": "{name} 복원",
+    "restored": "“{name}” 항목을 원래 자리로 복원했습니다.",
+    "restoredAlready": "“{name}” 항목은 이미 복원되었습니다.",
+    "restoreFailed": "“{name}” 항목을 복원하지 못했습니다. 다시 시도하세요.",
+    "deleted": "“{name}” 항목을 완전히 삭제했습니다.",
+    "empty": "휴지통 비우기",
+    "emptyQuestion": "휴지통의 {count, plural, other {기록 #건}}을 완전히 삭제하시겠습니까? 되돌릴 수 없습니다.",
+    "emptyYes": "예, 비웁니다",
+    "emptying": "비우는 중...",
+    "emptied": "휴지통을 비웠습니다.",
+    "emptyFailed": "휴지통을 비우지 못했습니다. 다시 시도하세요.",
+    "fetchFailed": "휴지통을 불러오지 못했습니다. 다시 시도하세요."
   }
 }

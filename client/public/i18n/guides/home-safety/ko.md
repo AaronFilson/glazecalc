@@ -129,25 +129,25 @@ Label: 수용성 원료
 
 Glazecalc는 [설정](/account)에서 직접 선택하지 않는 한 납을 꺼 둡니다. 납이 꺼져 있으면 Glazecalc는 레시피에 납을 절대 넣지 않으며, 제안하지도 않습니다.
 
-## Pets {#pets lang=en}
+## 반려동물 {#pets}
 
 > [!NOTE]
-> We found no veterinary study or guidance written for pets in potters' homes. The advice in this section is common sense, built on general facts about lead, barium and birds. It does not come from a veterinary source.
+> 도예가의 집에 사는 반려동물을 다룬 수의학 연구나 지침은 찾지 못했습니다. 이 절의 조언은 납, 바륨, 새에 관한 일반적인 사실에 바탕을 둔 상식이며, 수의학 자료에서 나온 것이 아닙니다.
 
-### What is known
+### 알려진 것
 
-The Pet Poison Helpline says "Lead is toxic for all species, but young and/or malnourished animals are at highest risk for poisoning", with signs such as vomiting, diarrhea, not eating, stumbling, seizures and blindness. A veterinary case report describes a dog that ate sparklers containing barium nitrate (a soluble barium salt, not a glaze material): it developed sudden weakness, drooling and an irregular heartbeat, and recovered with veterinary treatment. Birds are a special case: a University of Illinois vet explains that "Birds have a highly sophisticated and ultra efficient respiratory system, making them particularly vulnerable to the inhalation of fumes and aerosols."
+Pet Poison Helpline은 “납은 모든 종에게 유독하지만, 어리거나 영양이 부족한 동물이 중독 위험이 가장 높다”고 하며, 구토, 설사, 먹지 않음, 비틀거림, 발작, 실명 같은 증상을 듭니다. 수의학 증례 보고에는 질산바륨이 든 막대 불꽃놀이(수용성 바륨염이며 유약 원료가 아님)를 먹은 개가 갑작스러운 무력감, 침 흘림, 불규칙한 심장 박동을 보였고 동물병원 치료를 받고 회복한 사례가 나옵니다. 새는 특별한 경우입니다. 일리노이 대학교의 한 수의사는 “새는 매우 정교하고 효율이 극히 높은 호흡기를 가지고 있어, 연기와 에어로졸 흡입에 특히 취약하다”고 설명합니다.
 
-### Common-sense rules
+### 상식적인 규칙
 
-- Keep pets out of the studio, with the door shut.
-- Dogs chew bags and drink from buckets. Keep bags in a closed cabinet and a lid on every bucket.
-- Cats walk through dust and lick it off their paws and fur. Wet-clean the floor and keep cats out of the studio, so there is nothing to groom off.
-- Birds and small mammals (rabbits, guinea pigs, hamsters) share the household air. Keep them in a far room with the door shut while you handle dry materials and while the kiln fires.
-- Fish tanks collect settling dust. Keep them out of the studio, and covered.
-- Keep pet food and water bowls away from the studio and kiln, and use commercial or tested bowls, not studio experiments.
+- 반려동물은 작업실에 들이지 말고, 문을 닫아 두세요.
+- 개는 포대를 물어뜯고 통에 든 물을 마십니다. 포대는 닫힌 수납장에 두고, 모든 통에 뚜껑을 덮으세요.
+- 고양이는 분진 위를 걸은 뒤 발과 털에 묻은 것을 핥아 냅니다. 바닥을 물청소하고 고양이를 작업실에 들이지 마세요. 그러면 털을 고르며 삼킬 것이 남지 않습니다.
+- 새와 작은 포유류(토끼, 기니피그, 햄스터)는 집 안의 공기를 함께 마십니다. 마른 원료를 다루는 동안과 가마를 소성하는 동안에는 멀리 떨어진 방에 두고 문을 닫으세요.
+- 수조에는 가라앉는 먼지가 쌓입니다. 작업실 밖에 두고, 덮개를 덮으세요.
+- 반려동물의 밥그릇과 물그릇은 작업실과 가마에서 떨어진 곳에 두고, 작업실에서 실험한 그릇이 아니라 시판 제품이나 시험을 거친 그릇을 쓰세요.
 
-If a pet may have eaten or drunk anything from the studio, or shows signs like those above, call your vet or an animal poison line (see the table at the top), with the material's name and the pet's weight to hand.
+반려동물이 작업실의 무언가를 먹거나 마셨을 수 있거나, 위와 같은 증상을 보이면, 원료 이름과 반려동물의 체중을 바로 말할 수 있게 준비해 수의사나 동물 중독 상담 전화(맨 위의 표 참조)로 전화하세요.
 
 ## 가마 {#the-kiln}
 
@@ -220,7 +220,7 @@ Rio Grande는 제대로 접지된 콘센트가 있는 **전용 회로**(다른 �
 
 유약이 녹는 원리, 일부 유약이 용출되는 이유, 기준이 뜻하는 바는 《[기초부터 배우는 유약](/guides/glazing-basics)》을 보세요.
 
-## Sources {#sources lang=en}
+## 출처 {#sources}
 
 - [America's Poison Centers: Poison Help](https://poisoncenters.org/)
 - [Poison Control (poison.org): webPOISONCONTROL](https://www.poison.org/)
