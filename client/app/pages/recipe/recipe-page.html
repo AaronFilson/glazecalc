@@ -55,6 +55,11 @@
     <gc-page-header [title]="t('recipe.page.title')" [lead]="t('recipe.page.lead')" />
     <gc-recipe-help [empty]="recipesLoaded() ? !myRecipes().length : null" />
     <gc-notices [notices]="notices" />
+    @if (ownFailed()) {
+      <p class="panel recipe-retry">
+        <gc-rich [text]="t('recipe.page.ownNotFetched')" [links]="{ retry: retryOwn }" />
+      </p>
+    }
     <nav class="recipe-tools" [attr.aria-label]="t('recipe.page.toolsLabel')">
       <a routerLink="/import">{{ t('recipe.page.pasteIn') }}</a>
       <a routerLink="/blends">{{ t('recipe.page.blends') }}</a>

@@ -125,6 +125,7 @@
     "fetchAdditives": "There was an error in getting your additives.",
     "fetchStandardAdditives": "There was an error in getting the standard additives.",
     "fetchRecipes": "There was an error in getting your recipes.",
+    "ownNotFetched": "Your own records were not all loaded. Check your connection, then <retry>try again</retry>.",
     "takenOut": "{name} taken out of the recipe.",
     "itTakenOut": "It was taken out of the recipe.",
     "enterAmountsFirst": "Please enter the amounts first.",

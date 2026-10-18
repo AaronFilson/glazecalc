@@ -343,6 +343,13 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
   /** The standard lists could not be fetched: the lists say so, and offer to try again. */
   protected readonly standardMaterialsFailed = signal(false);
   protected readonly standardAdditivesFailed = signal(false);
+  /** The account's own lists that could not be fetched: the page offers to try again. */
+  protected readonly myMaterialsFailed = signal(false);
+  protected readonly myAdditivesFailed = signal(false);
+  protected readonly myRecipesFailed = signal(false);
+  protected readonly ownFailed = computed(
+    () => this.myMaterialsFailed() || this.myAdditivesFailed() || this.myRecipesFailed()
+  );
   protected readonly myRecipes = signal<Recipe[]>([]);
   protected readonly expanded = signal<ReadonlySet<string>>(new Set());
   /** The saved recipes whose More (Print, Compare, Share, Remove) is open. */
@@ -753,11 +760,50 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
   }
 
   ngOnInit(): void {
-    void this.load(this.materials.getAll(), this.myMaterials, marker('recipe.page.fetchMaterials'));
+    this.loadMyMaterials();
     this.loadStandardMaterials();
-    void this.load(this.additives.getAll(), this.myAdditives, marker('recipe.page.fetchAdditives'));
+    this.loadMyAdditives();
     this.loadStandardAdditives();
-    void this.load(this.recipes.getAll(), this.myRecipes, marker('recipe.page.fetchRecipes')).then(() => {
+    this.loadMyRecipes();
+  }
+
+  /** Asks again for each of the account's own lists that could not be fetched. */
+  protected readonly retryOwn = (): void => {
+    if (this.myMaterialsFailed()) this.loadMyMaterials();
+    if (this.myAdditivesFailed()) this.loadMyAdditives();
+    if (this.myRecipesFailed()) this.loadMyRecipes();
+  };
+
+  private loadMyMaterials(): void {
+    void this.load(
+      this.materials.getAll(),
+      this.myMaterials,
+      marker('recipe.page.fetchMaterials'),
+      this.myMaterialsFailed
+    );
+  }
+
+  private loadMyAdditives(): void {
+    void this.load(
+      this.additives.getAll(),
+      this.myAdditives,
+      marker('recipe.page.fetchAdditives'),
+      this.myAdditivesFailed
+    );
+  }
+
+  /**
+   * The saved recipes. Only once they have arrived is the account known to have none, so a failed
+   * fetch does not open the first-run help or say the list is empty; it offers to try again.
+   */
+  private loadMyRecipes(): void {
+    void this.load(
+      this.recipes.getAll(),
+      this.myRecipes,
+      marker('recipe.page.fetchRecipes'),
+      this.myRecipesFailed
+    ).then((ok) => {
+      if (!ok) return;
       this.recipesLoaded.set(true);
       // ?open=<id> (the account page's shared recipes): that saved recipe, ready to change.
       const wanted = this.route.snapshot.queryParamMap.get('open');
@@ -1915,20 +1961,27 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
 
   /**
    * Fills the list, or says it could not: failure is the key of the message.
-   * A list that can be asked for again keeps whether it failed, and says so once.
+   * A list that can be asked for again keeps whether it failed, and says so once;
+   * fetched on a later try, its message goes. Whether the list arrived.
    */
   private async load<T>(
     request: Promise<T[]>,
     target: { set(value: T[]): void },
     failure: string,
     failed?: WritableSignal<boolean>
-  ): Promise<void> {
+  ): Promise<boolean> {
     try {
       target.set(await request);
+      if (failed?.()) {
+        const message = translate(failure);
+        this.notices.errors.update((list) => list.filter((text) => text !== message));
+      }
       failed?.set(false);
+      return true;
     } catch {
       if (!failed?.()) this.notices.error(translate(failure));
       failed?.set(true);
+      return false;
     }
   }
 
