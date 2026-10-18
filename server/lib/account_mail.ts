@@ -4099,6 +4099,198 @@ export const PROVIDER_LINKED: Record<string, Email> = {
       'If this was you, there is nothing else to do. ' +
       'If not, unlink it on your account page at {page} and reset your password right away at {forgot}\n' +
       '\n-- \nGlazecalc, {app}\n'
+  },
+  bg: {
+    subject: 'Към профила Ви в Glazecalc е добавен нов начин за влизане',
+    text:
+      'Вече можете да влизате в профила {account} в Glazecalc с {provider}.\n\n' +
+      'Ако това сте били Вие, не е нужно да правите нищо друго. Ако не, прекратете връзката на страницата на профила си на {page} и нулирайте паролата си веднага на {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  cs: {
+    subject: 'K Vašemu účtu Glazecalc byl přidán nový způsob přihlášení',
+    text:
+      'K účtu Glazecalc {account} se nyní můžete přihlašovat přes {provider}.\n\n' +
+      'Pokud jste to byli Vy, nemusíte už nic dělat. Pokud ne, zrušte toto propojení na stránce svého účtu na {page} a ihned si obnovte heslo zde: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  da: {
+    subject: 'Der er tilføjet en ny måde at logge ind på din Glazecalc-konto',
+    text:
+      'Du kan nu logge ind på Glazecalc-kontoen {account} med {provider}.\n\n' +
+      'Hvis det var dig, er der ikke mere at gøre. Hvis ikke, så frakobl den på kontosiden på {page}, og nulstil adgangskoden med det samme på {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  de: {
+    subject: 'Eine neue Anmeldemöglichkeit wurde Ihrem Glazecalc-Konto hinzugefügt',
+    text:
+      'Sie können sich jetzt mit {provider} beim Glazecalc-Konto {account} anmelden.\n\n' +
+      'Wenn Sie das waren, müssen Sie nichts weiter tun. Wenn nicht, trennen Sie die Verbindung auf Ihrer Kontoseite unter {page} und setzen Sie Ihr Passwort sofort hier zurück: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  el: {
+    subject: 'Προστέθηκε νέος τρόπος σύνδεσης στον λογαριασμό σας στο Glazecalc',
+    text:
+      'Μπορείτε πλέον να συνδέεστε στον λογαριασμό {account} στο Glazecalc με {provider}.\n\n' +
+      'Αν το κάνατε εσείς, δεν χρειάζεται να κάνετε τίποτα άλλο. Αν όχι, καταργήστε τη συσχέτιση στη σελίδα του λογαριασμού σας στο {page} και επαναφέρετε αμέσως τον κωδικό πρόσβασής σας εδώ: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  es: {
+    subject: 'Se ha añadido una forma nueva de iniciar sesión a su cuenta de Glazecalc',
+    text:
+      'Ahora puede iniciar sesión en la cuenta de Glazecalc {account} con {provider}.\n\n' +
+      'Si ha sido usted, no tiene que hacer nada más. Si no, desvincúlelo en la página de su cuenta, en {page}, y restablezca su contraseña de inmediato en {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  et: {
+    subject: 'Teie Glazecalci kontole lisati uus sisselogimisviis',
+    text:
+      'Glazecalci kontole {account} saab nüüd sisse logida järgmisega: {provider}.\n\n' +
+      'Kui see olite teie, ei pea te midagi muud tegema. Kui mitte, ühendage see oma konto lehel aadressil {page} lahti ja lähtestage parool kohe siin: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  fi: {
+    subject: 'Glazecalc-tiliin on lisätty uusi kirjautumistapa',
+    text:
+      'Glazecalc-tilille {account} voi nyt kirjautua sisään palvelulla {provider}.\n\n' +
+      'Jos tämän teki tilin omistaja itse, muuta ei tarvitse tehdä. Muussa tapauksessa irrota se tilisivulla osoitteessa {page} ja palauta salasana heti osoitteessa {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  fr: {
+    subject: 'Un nouveau moyen de connexion a été ajouté à votre compte Glazecalc',
+    text:
+      'Vous pouvez maintenant vous connecter au compte Glazecalc {account} avec {provider}.\n\n' +
+      'Si c’est vous, il n’y a rien d’autre à faire. Sinon, dissociez-le sur la page de votre compte, {page}, et réinitialisez votre mot de passe tout de suite sur {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  ga: {
+    subject: 'Cuireadh bealach nua síniú isteach le do chuntas Glazecalc',
+    text:
+      'Is féidir leat síniú isteach sa chuntas Glazecalc {account} le {provider} anois.\n\n' +
+      'Más tusa a rinne é, níl aon rud eile le déanamh. Mura tusa, dícheangail é ar leathanach do chuntais ag {page} agus athshocraigh do phasfhocal láithreach ag {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  hr: {
+    subject: 'Vašem računu Glazecalc dodan je novi način prijave',
+    text:
+      'Sada se možete prijavljivati u račun Glazecalc {account} putem usluge {provider}.\n\n' +
+      'Ako ste to bili vi, ne morate ništa drugo učiniti. Ako niste, prekinite vezu na stranici svojeg računa na adresi {page} i odmah ponovno postavite lozinku ovdje: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  hu: {
+    subject: 'Új bejelentkezési mód került a Glazecalc-fiókjába',
+    text:
+      'Mostantól a(z) {account} Glazecalc-fiókba bejelentkezhet a következővel is: {provider}.\n\n' +
+      'Ha Ön volt az, nincs további teendője. Ha nem, válassza le a fiókoldalán itt: {page}, és azonnal állítsa vissza a jelszavát itt: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  it: {
+    subject: 'Un nuovo modo di accedere è stato aggiunto al Suo account Glazecalc',
+    text:
+      'Ora può accedere all’account Glazecalc {account} con {provider}.\n\n' +
+      'Se l’ha fatto Lei, non c’è altro da fare. Altrimenti, lo scolleghi nella pagina del Suo account, all’indirizzo {page}, e reimposti subito la password all’indirizzo {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  lt: {
+    subject: 'Glazecalc: pridėtas naujas prisijungimo būdas',
+    text:
+      'Dabar prie Glazecalc paskyros {account} galite prisijungti per {provider}.\n\n' +
+      'Jei tai buvote jūs, daugiau nieko daryti nereikia. Jei ne, atsiekite jį paskyros puslapyje {page} ir nedelsdami atkurkite slaptažodį čia: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  lv: {
+    subject: 'Jūsu Glazecalc kontam pievienots jauns pierakstīšanās veids',
+    text:
+      'Tagad lietotnes Glazecalc kontā {account} varat pierakstīties ar {provider}.\n\n' +
+      'Ja to izdarījāt Jūs, nekas cits nav jādara. Ja ne, atsaistiet to sava konta lapā {page} un nekavējoties atiestatiet paroli šeit: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  mt: {
+    subject: 'Ġie miżjud mod ġdid ta’ dħul mal-kont tiegħek ta’ Glazecalc',
+    text:
+      'Issa tista’ tidħol fil-kont {account} ta’ Glazecalc b’{provider}.\n\n' +
+      'Jekk kont int, m’hemmx għalfejn tagħmel xejn aktar. Jekk le, neħħi l-għaqda fil-paġna tal-kont tiegħek hawn: {page} u rrisettja l-password tiegħek minnufih hawn: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  nl: {
+    subject: 'Er is een nieuwe manier om in te loggen toegevoegd aan uw Glazecalc-account',
+    text:
+      'U kunt nu inloggen op het Glazecalc-account {account} met {provider}.\n\n' +
+      'Was u dit zelf, dan hoeft u verder niets te doen. Zo niet, ontkoppel het dan op uw accountpagina via {page} en stel uw wachtwoord meteen opnieuw in via {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  pl: {
+    subject: 'Do konta Glazecalc dodano nowy sposób logowania',
+    text:
+      'Do konta Glazecalc {account} można teraz logować się przez {provider}.\n\n' +
+      'Jeśli zrobił to właściciel konta, nie trzeba nic więcej robić. Jeśli nie, należy odłączyć ten sposób logowania na stronie konta pod adresem {page} i od razu zresetować hasło na stronie {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  'pt-PT': {
+    subject: 'Foi adicionada uma nova forma de iniciar sessão à sua conta Glazecalc',
+    text:
+      'Já pode iniciar sessão na conta Glazecalc {account} com {provider}.\n\n' +
+      'Se foi você, não precisa de fazer mais nada. Caso contrário, desassocie-o na página da sua conta, em {page}, e reponha já a sua palavra-passe em {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  ro: {
+    subject: 'A fost adăugat un nou mod de conectare la contul dumneavoastră Glazecalc',
+    text:
+      'Vă puteți conecta acum la contul Glazecalc {account} cu {provider}.\n\n' +
+      'Dacă ați fost dumneavoastră, nu mai aveți nimic de făcut. Dacă nu, dezasociați-l pe pagina contului, la {page}, și resetați imediat parola la {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  sk: {
+    subject: 'K Vášmu účtu Glazecalc bol pridaný nový spôsob prihlásenia',
+    text:
+      'Do účtu Glazecalc {account} sa teraz môžete prihlasovať cez {provider}.\n\n' +
+      'Ak ste to boli Vy, nemusíte už nič robiť. Ak nie, zrušte toto prepojenie na stránke svojho účtu na {page} a ihneď si obnovte heslo tu: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  sl: {
+    subject: 'Vašemu računu Glazecalc je bil dodan nov način prijave',
+    text:
+      'Zdaj se lahko v račun Glazecalc {account} prijavite prek storitve {provider}.\n\n' +
+      'Če ste bili to Vi, Vam ni treba storiti ničesar več. Če ne, na strani računa na {page} prekinite povezavo in takoj ponastavite geslo tukaj: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  sv: {
+    subject: 'Ett nytt sätt att logga in har lagts till på ditt Glazecalc-konto',
+    text:
+      'Du kan nu logga in på Glazecalc-kontot {account} med {provider}.\n\n' +
+      'Om det var du behöver du inte göra något mer. Om inte, koppla bort det på kontosidan på {page} och återställ lösenordet direkt på {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  tr: {
+    subject: 'Glazecalc hesabınıza yeni bir oturum açma yolu eklendi',
+    text:
+      'Glazecalc hesabı {account} için artık {provider} ile oturum açabilirsiniz.\n\n' +
+      'Bu sizseniz başka bir şey yapmanız gerekmez. Değilseniz hesap sayfanızdan ({page}) bu oturum açma yolunun bağlantısını kaldırın ve parolanızı hemen şu adresten sıfırlayın: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
   }
 };
 
@@ -4111,6 +4303,198 @@ export const PROVIDER_UNLINKED: Record<string, Email> = {
       'If this was you, there is nothing else to do. ' +
       'If not, someone may be signed in to your account: reset your password right away at {forgot}\n' +
       '\n-- \nGlazecalc, {app}\n'
+  },
+  bg: {
+    subject: 'От профила Ви в Glazecalc е премахнат начин за влизане',
+    text:
+      'Връзката на профила {account} в Glazecalc с {provider} беше прекратена: вече не можете да влизате в профила чрез {provider}.\n\n' +
+      'Ако това сте били Вие, не е нужно да правите нищо друго. Ако не, възможно е някой да е влязъл във Вашия профил: нулирайте паролата си веднага на {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  cs: {
+    subject: 'Z Vašeho účtu Glazecalc byl odebrán jeden způsob přihlášení',
+    text:
+      'Propojení {provider} s účtem Glazecalc {account} bylo zrušeno a už se přes něj nelze k tomuto účtu přihlásit.\n\n' +
+      'Pokud jste to byli Vy, nemusíte už nic dělat. Pokud ne, může být k Vašemu účtu někdo přihlášen: ihned si obnovte heslo zde: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  da: {
+    subject: 'En måde at logge ind på er fjernet fra din Glazecalc-konto',
+    text:
+      '{provider} er frakoblet Glazecalc-kontoen {account} og kan ikke længere bruges til at logge ind på den.\n\n' +
+      'Hvis det var dig, er der ikke mere at gøre. Hvis ikke, kan en anden være logget ind på kontoen: nulstil adgangskoden med det samme på {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  de: {
+    subject: 'Eine Anmeldemöglichkeit wurde von Ihrem Glazecalc-Konto entfernt',
+    text:
+      '{provider} wurde vom Glazecalc-Konto {account} getrennt und kann nicht mehr verwendet werden, um sich dort anzumelden.\n\n' +
+      'Wenn Sie das waren, müssen Sie nichts weiter tun. Wenn nicht, ist vielleicht jemand bei Ihrem Konto angemeldet: Setzen Sie Ihr Passwort sofort hier zurück: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  el: {
+    subject: 'Αφαιρέθηκε ένας τρόπος σύνδεσης από τον λογαριασμό σας στο Glazecalc',
+    text:
+      'Η συσχέτιση του λογαριασμού {account} στο Glazecalc με {provider} καταργήθηκε: δεν μπορείτε πλέον να συνδέεστε στον λογαριασμό μέσω {provider}.\n\n' +
+      'Αν το κάνατε εσείς, δεν χρειάζεται να κάνετε τίποτα άλλο. Αν όχι, ίσως κάποιος να είναι συνδεδεμένος στον λογαριασμό σας: επαναφέρετε αμέσως τον κωδικό πρόσβασής σας εδώ: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  es: {
+    subject: 'Se ha quitado una forma de iniciar sesión de su cuenta de Glazecalc',
+    text:
+      '{provider} se ha desvinculado de la cuenta de Glazecalc {account}, y ya no se puede usar para iniciar sesión en ella.\n\n' +
+      'Si ha sido usted, no tiene que hacer nada más. Si no, puede que alguien tenga una sesión iniciada en su cuenta: restablezca su contraseña de inmediato en {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  et: {
+    subject: 'Teie Glazecalci kontolt eemaldati üks sisselogimisviis',
+    text:
+      'Glazecalci kontolt {account} ühendati lahti {provider}, seega ei saa seda enam sellele kontole sisselogimiseks kasutada.\n\n' +
+      'Kui see olite teie, ei pea te midagi muud tegema. Kui mitte, võib keegi olla teie kontole sisse logitud: lähtestage parool kohe siin: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  fi: {
+    subject: 'Kirjautumistapa on poistettu Glazecalc-tililtä',
+    text:
+      '{provider} irrotettiin Glazecalc-tililtä {account}, eikä sillä voi enää kirjautua tilille.\n\n' +
+      'Jos tämän teki tilin omistaja itse, muuta ei tarvitse tehdä. Muussa tapauksessa joku voi olla kirjautuneena tilille: palauta salasana heti osoitteessa {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  fr: {
+    subject: 'Un moyen de connexion a été retiré de votre compte Glazecalc',
+    text:
+      '{provider} a été dissocié du compte Glazecalc {account} et ne peut plus servir à s’y connecter.\n\n' +
+      'Si c’est vous, il n’y a rien d’autre à faire. Sinon, quelqu’un est peut-être connecté à votre compte : réinitialisez votre mot de passe tout de suite sur {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  ga: {
+    subject: 'Baineadh bealach síniú isteach de do chuntas Glazecalc',
+    text:
+      'Dícheanglaíodh {provider} den chuntas Glazecalc {account}, agus ní féidir é a úsáid a thuilleadh chun síniú isteach ann.\n\n' +
+      'Más tusa a rinne é, níl aon rud eile le déanamh. Mura tusa, d’fhéadfadh duine éigin a bheith sínithe isteach i do chuntas: athshocraigh do phasfhocal láithreach ag {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  hr: {
+    subject: 'S vašeg računa Glazecalc uklonjen je jedan način prijave',
+    text:
+      'Veza računa Glazecalc {account} s uslugom {provider} prekinuta je: u račun se više ne možete prijavljivati putem usluge {provider}.\n\n' +
+      'Ako ste to bili vi, ne morate ništa drugo učiniti. Ako niste, netko bi mogao biti prijavljen u vaš račun: odmah ponovno postavite lozinku ovdje: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  hu: {
+    subject: 'Egy bejelentkezési módot eltávolítottak a Glazecalc-fiókjából',
+    text:
+      'A(z) {provider} le lett választva a(z) {account} Glazecalc-fiókról, és már nem használható a bejelentkezéshez.\n\n' +
+      'Ha Ön volt az, nincs további teendője. Ha nem, lehet, hogy valaki be van jelentkezve a fiókjába: azonnal állítsa vissza a jelszavát itt: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  it: {
+    subject: 'Un modo di accedere è stato rimosso dal Suo account Glazecalc',
+    text:
+      '{provider} è stato scollegato dall’account Glazecalc {account} e non può più essere usato per accedervi.\n\n' +
+      'Se l’ha fatto Lei, non c’è altro da fare. Altrimenti, qualcuno potrebbe aver effettuato l’accesso al Suo account: reimposti subito la password all’indirizzo {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  lt: {
+    subject: 'Glazecalc: pašalintas prisijungimo būdas',
+    text:
+      'Glazecalc paskyra {account} atsieta nuo {provider}, todėl prisijungti per {provider} prie jos nebegalima.\n\n' +
+      'Jei tai buvote jūs, daugiau nieko daryti nereikia. Jei ne, kažkas gali būti prisijungęs prie jūsų paskyros: nedelsdami atkurkite slaptažodį čia: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  lv: {
+    subject: 'No Jūsu Glazecalc konta noņemts pierakstīšanās veids',
+    text:
+      'Sasaiste ar {provider} lietotnes Glazecalc kontam {account} ir noņemta, un ar to vairs nevar pierakstīties šajā kontā.\n\n' +
+      'Ja to izdarījāt Jūs, nekas cits nav jādara. Ja ne, kāds var būt pierakstījies Jūsu kontā: nekavējoties atiestatiet paroli šeit: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  mt: {
+    subject: 'Tneħħa mod ta’ dħul mill-kont tiegħek ta’ Glazecalc',
+    text:
+      'L-għaqda ma’ {provider} tneħħiet mill-kont {account} ta’ Glazecalc, u {provider} ma jistax jintuża aktar biex tidħol fih.\n\n' +
+      'Jekk kont int, m’hemmx għalfejn tagħmel xejn aktar. Jekk le, jista’ jkun li xi ħadd huwa dieħel fil-kont tiegħek: irrisettja l-password tiegħek minnufih hawn: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  nl: {
+    subject: 'Er is een manier om in te loggen verwijderd uit uw Glazecalc-account',
+    text:
+      '{provider} is ontkoppeld van het Glazecalc-account {account} en kan niet meer worden gebruikt om erop in te loggen.\n\n' +
+      'Was u dit zelf, dan hoeft u verder niets te doen. Zo niet, dan is misschien iemand ingelogd op uw account: stel uw wachtwoord meteen opnieuw in via {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  pl: {
+    subject: 'Z konta Glazecalc usunięto jeden ze sposobów logowania',
+    text:
+      'Odłączono sposób logowania {provider} od konta Glazecalc {account}. Nie można już z niego korzystać przy logowaniu na to konto.\n\n' +
+      'Jeśli zrobił to właściciel konta, nie trzeba nic więcej robić. Jeśli nie, ktoś może być zalogowany na tym koncie: należy od razu zresetować hasło na stronie {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  'pt-PT': {
+    subject: 'Foi removida uma forma de iniciar sessão da sua conta Glazecalc',
+    text:
+      '{provider} foi desassociado da conta Glazecalc {account} e já não pode ser usado para iniciar sessão nela.\n\n' +
+      'Se foi você, não precisa de fazer mais nada. Caso contrário, alguém pode ter sessão iniciada na sua conta: reponha já a sua palavra-passe em {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  ro: {
+    subject: 'A fost eliminat un mod de conectare de la contul dumneavoastră Glazecalc',
+    text:
+      '{provider} a fost dezasociat de la contul Glazecalc {account} și nu mai poate fi folosit pentru conectarea la el.\n\n' +
+      'Dacă ați fost dumneavoastră, nu mai aveți nimic de făcut. Dacă nu, cineva ar putea fi conectat la contul dumneavoastră: resetați imediat parola la {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  sk: {
+    subject: 'Z Vášho účtu Glazecalc bol odobratý jeden spôsob prihlásenia',
+    text:
+      'Prepojenie {provider} s účtom Glazecalc {account} bolo zrušené a už sa cez neho nemožno do tohto účtu prihlásiť.\n\n' +
+      'Ak ste to boli Vy, nemusíte už nič robiť. Ak nie, môže byť do Vášho účtu niekto prihlásený: ihneď si obnovte heslo tu: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  sl: {
+    subject: 'Z Vašega računa Glazecalc je bil odstranjen en način prijave',
+    text:
+      'Povezava s storitvijo {provider} je bila za račun Glazecalc {account} prekinjena, zato se z njo vanj ni več mogoče prijaviti.\n\n' +
+      'Če ste bili to Vi, Vam ni treba storiti ničesar več. Če ne, je v Vaš račun morda prijavljen še kdo drug: takoj ponastavite geslo tukaj: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  sv: {
+    subject: 'Ett sätt att logga in har tagits bort från ditt Glazecalc-konto',
+    text:
+      '{provider} har kopplats bort från Glazecalc-kontot {account} och kan inte längre användas för att logga in på det.\n\n' +
+      'Om det var du behöver du inte göra något mer. Om inte, kan någon vara inloggad på kontot: återställ lösenordet direkt på {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  tr: {
+    subject: 'Glazecalc hesabınızdan bir oturum açma yolu kaldırıldı',
+    text:
+      '{provider} bağlantısı Glazecalc hesabı {account} için kaldırıldı ve artık bu hesapta oturum açmak için kullanılamaz.\n\n' +
+      'Bu sizseniz başka bir şey yapmanız gerekmez. Değilseniz biri hesabınızda oturum açmış olabilir: parolanızı hemen şu adresten sıfırlayın: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
   }
 };
 
@@ -4151,6 +4535,380 @@ export const RESET_STOPPED: Record<string, ResetStoppedEmail> = {
     closing:
       '\nIf this was you, there is nothing else to do. If not, reset your password right away at {forgot}\n' +
       '\n-- \nGlazecalc, {app}\n'
+  },
+  bg: {
+    subject: 'Паролата Ви за Glazecalc е променена',
+    opening:
+      'Паролата за профила {account} в Glazecalc току-що беше нулирана и всички устройства, на които бяхте влезли, са изведени от профила.\n\n',
+    stopped: 'В случай че някой друг е имал старата парола, нулирането спря и следното:\n\n',
+    tokens:
+      '- Токените за достъп и свързаните приложения, които имаха достъп до запазената Ви работа ({count}). Ако все още имате нужда от някой от тях, създайте нов токен на страницата на профила си на {page}\n',
+    providers: '- Влизането с {providers}, което можете да свържете отново на страницата на профила си на {page}\n',
+    shareLinks: '- Връзките, които бяхте създали за споделяне на рецепти. Можете да създадете нови от всяка рецепта.\n',
+    closing:
+      '\n' +
+      'Ако това сте били Вие, не е нужно да правите нищо друго. Ако не, нулирайте паролата си веднага на {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  cs: {
+    subject: 'Vaše heslo do aplikace Glazecalc bylo změněno',
+    opening:
+      'Heslo k účtu {account} v aplikaci Glazecalc bylo právě obnoveno a všechna zařízení, která byla přihlášena, byla odhlášena.\n\n',
+    stopped: 'Pro případ, že by staré heslo znal někdo jiný, obnovení zastavilo také toto:\n\n',
+    tokens:
+      '- Přístupové tokeny a připojené aplikace, které měly přístup k Vaší uložené práci ({count}). Pokud některý stále potřebujete, vytvořte nový token na stránce svého účtu na {page}\n',
+    providers: '- Přihlašování přes {providers}, které můžete znovu propojit na stránce svého účtu na {page}\n',
+    shareLinks: '- Odkazy, které jste vytvořili ke sdílení receptů. Nové můžete vytvořit u každého receptu.\n',
+    closing:
+      '\n' +
+      'Pokud jste to byli Vy, nemusíte už nic dělat. Pokud ne, ihned si obnovte heslo zde: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  da: {
+    subject: 'Adgangskoden til Glazecalc er ændret',
+    opening:
+      'Adgangskoden til kontoen {account} i Glazecalc er netop blevet nulstillet, og alle enheder, der var logget ind, er blevet logget ud.\n\n',
+    stopped: 'I tilfælde af, at en anden havde den gamle adgangskode, stoppede nulstillingen også disse:\n\n',
+    tokens:
+      '- Adgangstokens og tilsluttede apps, der kunne nå dit gemte arbejde ({count}). Hvis du stadig har brug for et, så opret et nyt adgangstoken på kontosiden på {page}\n',
+    providers: '- Login med {providers}, som du kan tilknytte igen på kontosiden på {page}\n',
+    shareLinks: '- De links, du havde oprettet til at dele opskrifter. Du kan oprette nye fra hver opskrift.\n',
+    closing:
+      '\n' +
+      'Hvis det var dig, er der ikke mere at gøre. Hvis ikke, så nulstil adgangskoden med det samme på {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  de: {
+    subject: 'Ihr Passwort für Glazecalc wurde geändert',
+    opening:
+      'Das Passwort für das Glazecalc-Konto {account} wurde gerade zurückgesetzt, und alle Geräte, die angemeldet waren, wurden abgemeldet.\n\n',
+    stopped: 'Falls jemand anderes das alte Passwort kannte, hat das Zurücksetzen außerdem Folgendes beendet:\n\n',
+    tokens:
+      '- Die Zugriffstoken und verbundenen Apps, die auf Ihre gespeicherten Arbeiten zugreifen konnten ({count}). Wenn Sie noch eines brauchen, erstellen Sie ein neues Token auf Ihrer Kontoseite unter {page}\n',
+    providers: '- Die Anmeldung mit {providers}, die Sie auf Ihrer Kontoseite unter {page} erneut verknüpfen können\n',
+    shareLinks:
+      '- Die Links, die Sie zum Teilen von Rezepten erstellt hatten. Sie können für jedes Rezept neue erstellen.\n',
+    closing:
+      '\n' +
+      'Wenn Sie das waren, müssen Sie nichts weiter tun. Wenn nicht, setzen Sie Ihr Passwort sofort hier zurück: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  el: {
+    subject: 'Ο κωδικός πρόσβασής σας στο Glazecalc άλλαξε',
+    opening:
+      'Ο κωδικός πρόσβασης για τον λογαριασμό {account} στο Glazecalc μόλις επαναφέρθηκε, και όλες οι συσκευές που ήταν συνδεδεμένες αποσυνδέθηκαν.\n\n',
+    stopped:
+      'Σε περίπτωση που κάποιος άλλος είχε τον παλιό κωδικό πρόσβασης, η επαναφορά σταμάτησε επίσης τα εξής:\n\n',
+    tokens:
+      '- Τα διακριτικά πρόσβασης και οι συνδεδεμένες εφαρμογές που είχαν πρόσβαση στην αποθηκευμένη εργασία σας ({count}). Αν χρειάζεστε ακόμη κάποιο, δημιουργήστε νέο διακριτικό στη σελίδα του λογαριασμού σας στο {page}\n',
+    providers:
+      '- Η σύνδεση με {providers}, που μπορείτε να συσχετίσετε ξανά στη σελίδα του λογαριασμού σας στο {page}\n',
+    shareLinks:
+      '- Οι σύνδεσμοι που είχατε δημιουργήσει για την κοινοποίηση συνταγών. Μπορείτε να δημιουργήσετε νέους από κάθε συνταγή.\n',
+    closing:
+      '\n' +
+      'Αν το κάνατε εσείς, δεν χρειάζεται να κάνετε τίποτα άλλο. Αν όχι, επαναφέρετε αμέσως τον κωδικό πρόσβασής σας εδώ: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  es: {
+    subject: 'Se ha cambiado su contraseña de Glazecalc',
+    opening:
+      'La contraseña de la cuenta de Glazecalc {account} se acaba de restablecer, y se ha cerrado la sesión en todos los dispositivos donde estaba iniciada.\n\n',
+    stopped: 'Por si otra persona tenía la contraseña anterior, el restablecimiento también ha anulado esto:\n\n',
+    tokens:
+      '- Los tokens de acceso y las aplicaciones conectadas que podían acceder a su trabajo guardado ({count}). Si aún necesita alguno, cree un token nuevo en la página de su cuenta, en {page}\n',
+    providers:
+      '- El inicio de sesión con {providers}, que puede vincular de nuevo en la página de su cuenta, en {page}\n',
+    shareLinks: '- Los enlaces que había creado para compartir recetas. Puede crear otros nuevos desde cada receta.\n',
+    closing:
+      '\n' +
+      'Si ha sido usted, no tiene que hacer nada más. Si no, restablezca su contraseña de inmediato en {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  et: {
+    subject: 'Teie Glazecalci parool on muudetud',
+    opening:
+      'Glazecalci konto {account} parool lähtestati just praegu ja kõik seadmed, kus konto oli sisse logitud, on välja logitud.\n\n',
+    stopped: 'Juhuks, kui keegi teine teadis vana parooli, peatas lähtestamine ka need:\n\n',
+    tokens:
+      '- Juurdepääsuload ja ühendatud rakendused, mis pääsesid teie salvestatud tööle ligi ({count}). Kui vajate mõnda neist endiselt, tehke uus luba oma konto lehel aadressil {page}\n',
+    providers: '- Sisselogimine: {providers}. Need saate uuesti siduda oma konto lehel aadressil {page}\n',
+    shareLinks: '- Retseptide jagamiseks tehtud lingid. Uusi saate teha igast retseptist.\n',
+    closing:
+      '\n' +
+      'Kui see olite teie, ei pea te midagi muud tegema. Kui mitte, lähtestage parool kohe siin: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  fi: {
+    subject: 'Glazecalc-salasana on vaihdettu',
+    opening:
+      'Glazecalc-tilin {account} salasana palautettiin juuri, ja kaikki laitteet, joilla oli kirjauduttu sisään, on kirjattu ulos.\n\n',
+    stopped: 'Siltä varalta, että joku muu tiesi vanhan salasanan, palautus pysäytti myös nämä:\n\n',
+    tokens:
+      '- Käyttöoikeustunnukset ja yhdistetyt sovellukset, jotka pääsivät tallennettuun työhön ({count}). Jos jotakin niistä tarvitaan yhä, tee uusi tunnus tilisivulla osoitteessa {page}\n',
+    providers: '- Kirjautuminen: {providers}. Ne voi liittää uudelleen tilisivulla osoitteessa {page}\n',
+    shareLinks: '- Reseptien jakamiseen tehdyt linkit. Uudet voi tehdä kustakin reseptistä.\n',
+    closing:
+      '\n' +
+      'Jos tämän teki tilin omistaja itse, muuta ei tarvitse tehdä. Muussa tapauksessa palauta salasana heti osoitteessa {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  fr: {
+    subject: 'Votre mot de passe Glazecalc a été modifié',
+    opening:
+      'Le mot de passe du compte Glazecalc {account} vient d’être réinitialisé, et tous les appareils connectés ont été déconnectés.\n\n',
+    stopped:
+      'Au cas où quelqu’un d’autre aurait eu l’ancien mot de passe, la réinitialisation a aussi mis fin à ce qui suit :\n\n',
+    tokens:
+      '- Les jetons d’accès et les applications connectées qui pouvaient accéder à votre travail enregistré ({count}). Si vous en avez encore besoin, créez un nouveau jeton sur la page de votre compte, {page}\n',
+    providers:
+      '- La connexion avec {providers}, que vous pouvez associer de nouveau sur la page de votre compte, {page}\n',
+    shareLinks:
+      '- Les liens que vous aviez créés pour partager des recettes. Vous pouvez en créer de nouveaux depuis chaque recette.\n',
+    closing:
+      '\n' +
+      'Si c’est vous, il n’y a rien d’autre à faire. Sinon, réinitialisez votre mot de passe tout de suite sur {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  ga: {
+    subject: 'Athraíodh do phasfhocal Glazecalc',
+    opening:
+      'Athshocraíodh pasfhocal an chuntais Glazecalc {account} anois díreach, agus síníodh amach gach gléas a bhí sínithe isteach.\n\n',
+    stopped:
+      'I gcás go raibh an seanphasfhocal ag duine éigin eile, chuir an t-athshocrú deireadh leo seo freisin:\n\n',
+    tokens:
+      '- Na comharthaí rochtana agus na haipeanna ceangailte a d’fhéadfadh teacht ar do chuid oibre sábháilte ({count}). Más gá ceann acu fós duit, déan comhartha nua ar leathanach do chuntais ag {page}\n',
+    providers:
+      '- Síniú isteach le {providers}, ar féidir leat iad a cheangal arís ar leathanach do chuntais ag {page}\n',
+    shareLinks:
+      '- Na naisc a bhí déanta agat chun oidis a chomhroinnt. Is féidir leat cinn nua a dhéanamh ó gach oideas.\n',
+    closing:
+      '\n' +
+      'Más tusa a rinne é, níl aon rud eile le déanamh. Mura tusa, athshocraigh do phasfhocal láithreach ag {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  hr: {
+    subject: 'Vaša je lozinka za aplikaciju Glazecalc promijenjena',
+    opening:
+      'Lozinka za račun {account} u aplikaciji Glazecalc upravo je ponovno postavljena, a svi uređaji na kojima je račun bio prijavljen odjavljeni su.\n\n',
+    stopped: 'Za slučaj da je netko drugi imao staru lozinku, ponovno postavljanje zaustavilo je i sljedeće:\n\n',
+    tokens:
+      '- Pristupne tokene i povezane aplikacije koje su mogle pristupiti vašem spremljenom radu ({count}). Ako vam još treba neki, izradite novi token na stranici svojeg računa na adresi {page}\n',
+    providers: '- Prijavu putem {providers}, koju možete ponovno povezati na stranici svojeg računa na adresi {page}\n',
+    shareLinks: '- Poveznice koje ste izradili za dijeljenje recepata. Nove možete izraditi iz svakog recepta.\n',
+    closing:
+      '\n' +
+      'Ako ste to bili vi, ne morate ništa drugo učiniti. Ako niste, odmah ponovno postavite lozinku ovdje: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  hu: {
+    subject: 'A Glazecalc-jelszava megváltozott',
+    opening:
+      'A(z) {account} Glazecalc-fiók jelszavát az imént visszaállították, és minden bejelentkezett eszközt kijelentkeztettünk.\n\n',
+    stopped: 'Arra az esetre, ha valaki más ismerte a régi jelszót, a visszaállítás ezeket is leállította:\n\n',
+    tokens:
+      '- A mentett munkájához hozzáférő hozzáférési tokenek és csatlakoztatott alkalmazások ({count}). Ha még szüksége van valamelyikre, hozzon létre új tokent a fiókoldalán itt: {page}\n',
+    providers: '- A bejelentkezés ezekkel: {providers}. Ezeket újra összekapcsolhatja a fiókoldalán itt: {page}\n',
+    shareLinks: '- A receptek megosztására készített linkjei. Újakat készíthet az egyes receptekből.\n',
+    closing:
+      '\n' +
+      'Ha Ön volt az, nincs további teendője. Ha nem, azonnal állítsa vissza a jelszavát itt: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  it: {
+    subject: 'La Sua password di Glazecalc è stata cambiata',
+    opening:
+      'La password dell’account Glazecalc {account} è stata appena reimpostata e tutti i dispositivi su cui era stato effettuato l’accesso sono stati disconnessi.\n\n',
+    stopped:
+      'Nel caso in cui qualcun altro avesse la vecchia password, la reimpostazione ha interrotto anche quanto segue:\n\n',
+    tokens:
+      '- I token di accesso e le app collegate che potevano accedere al Suo lavoro salvato ({count}). Se ne ha ancora bisogno, crei un nuovo token nella pagina del Suo account, all’indirizzo {page}\n',
+    providers:
+      '- L’accesso con {providers}, che può collegare di nuovo nella pagina del Suo account, all’indirizzo {page}\n',
+    shareLinks: '- I link che aveva creato per condividere le ricette. Può crearne di nuovi da ogni ricetta.\n',
+    closing:
+      '\n' +
+      'Se l’ha fatto Lei, non c’è altro da fare. Altrimenti, reimposti subito la password all’indirizzo {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  lt: {
+    subject: 'Glazecalc: slaptažodis pakeistas',
+    opening:
+      'Programos Glazecalc paskyros {account} slaptažodis ką tik buvo atkurtas, ir visi įrenginiai, kuriuose buvo prisijungta, atjungti.\n\n',
+    stopped: 'Jei senąjį slaptažodį galėjo žinoti kas nors kitas, atkūrimas sustabdė ir tai:\n\n',
+    tokens:
+      '- Prieigos žetonai ir prijungtos programos, galėjusios pasiekti jūsų įrašytą darbą ({count}). Jei kurio nors dar reikia, sukurkite naują žetoną paskyros puslapyje {page}\n',
+    providers: '- Prisijungimas per {providers}; jį galite susieti iš naujo paskyros puslapyje {page}\n',
+    shareLinks: '- Nuorodos, kurias buvote sukūrę receptams bendrinti. Naujas galite sukurti prie kiekvieno recepto.\n',
+    closing:
+      '\n' +
+      'Jei tai buvote jūs, daugiau nieko daryti nereikia. Jei ne, nedelsdami atkurkite slaptažodį čia: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  lv: {
+    subject: 'Jūsu lietotnes Glazecalc parole ir nomainīta',
+    opening:
+      'Lietotnes Glazecalc konta {account} parole tikko ir atiestatīta, un konts ir izrakstīts no visām ierīcēm, kurās tas bija pierakstīts.\n\n',
+    stopped: 'Gadījumam, ja vecā parole bija zināma kādam citam, atiestatīšana apturēja arī šo:\n\n',
+    tokens:
+      '- Piekļuves marķieri un pievienotās lietotnes, kas varēja piekļūt Jūsu saglabātajam darbam ({count}). Ja kāds vēl ir vajadzīgs, izveidojiet jaunu marķieri sava konta lapā {page}\n',
+    providers: '- Pierakstīšanās ar {providers}; sasaisti var izveidot atkal sava konta lapā {page}\n',
+    shareLinks: '- Saites, kas tika izveidotas receptu kopīgošanai. Jaunas varat izveidot pie katras receptes.\n',
+    closing:
+      '\n' +
+      'Ja to izdarījāt Jūs, nekas cits nav jādara. Ja ne, nekavējoties atiestatiet paroli šeit: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  mt: {
+    subject: 'Il-password tiegħek ta’ Glazecalc inbidlet',
+    opening:
+      'Il-password tal-kont {account} ta’ Glazecalc għadha kif ġiet irrisettjata, u kull apparat li kien dieħel ħareġ.\n\n',
+    stopped: 'Fil-każ li xi ħadd ieħor kellu l-password il-qadima, l-irrisettjar waqqaf ukoll dawn:\n\n',
+    tokens:
+      '- It-tokens tal-aċċess u l-apps konnessi li setgħu jaslu għax-xogħol issejvjat tiegħek ({count}). Jekk għad għandek bżonn wieħed, oħloq token ġdid fil-paġna tal-kont tiegħek hawn: {page}\n',
+    providers: '- Id-dħul b’{providers}, li tista’ terġa’ tgħaqqad fil-paġna tal-kont tiegħek hawn: {page}\n',
+    shareLinks: '- Il-links li kont għamilt biex taqsam riċetti. Tista’ toħloq oħrajn minn kull riċetta.\n',
+    closing:
+      '\n' +
+      'Jekk kont int, m’hemmx għalfejn tagħmel xejn aktar. Jekk le, irrisettja l-password tiegħek minnufih hawn: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  nl: {
+    subject: 'Uw wachtwoord voor Glazecalc is gewijzigd',
+    opening:
+      'Het wachtwoord van het account {account} bij Glazecalc is zojuist opnieuw ingesteld, en elk apparaat dat was ingelogd, is uitgelogd.\n\n',
+    stopped:
+      'Voor het geval iemand anders het oude wachtwoord had, heeft het opnieuw instellen ook deze dingen stopgezet:\n\n',
+    tokens:
+      '- De toegangstokens en gekoppelde apps die bij uw opgeslagen werk konden ({count}). Als u er nog een nodig hebt, maak dan een nieuw token op uw accountpagina via {page}\n',
+    providers: '- Inloggen met {providers}, wat u op uw accountpagina via {page} opnieuw kunt koppelen\n',
+    shareLinks: '- De links die u had gemaakt om recepten te delen. U kunt nieuwe maken vanuit elk recept.\n',
+    closing:
+      '\n' +
+      'Was u dit zelf, dan hoeft u verder niets te doen. Zo niet, stel uw wachtwoord dan meteen opnieuw in via {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  pl: {
+    subject: 'Zmieniono hasło w aplikacji Glazecalc',
+    opening:
+      'Hasło do konta {account} w aplikacji Glazecalc zostało właśnie zresetowane, a wszystkie urządzenia, na których konto było zalogowane, zostały wylogowane.\n\n',
+    stopped: 'Na wypadek, gdyby ktoś inny znał stare hasło, reset zatrzymał też:\n\n',
+    tokens:
+      '- Tokeny dostępu i połączone aplikacje, które miały dostęp do zapisanych prac ({count}). Jeśli któryś jest nadal potrzebny, należy utworzyć nowy token na stronie konta pod adresem {page}\n',
+    providers: '- Logowanie przez {providers}, które można ponownie połączyć na stronie konta pod adresem {page}\n',
+    shareLinks: '- Linki utworzone do udostępniania receptur. Nowe można utworzyć przy każdej recepturze.\n',
+    closing:
+      '\n' +
+      'Jeśli zrobił to właściciel konta, nie trzeba nic więcej robić. Jeśli nie, należy od razu zresetować hasło na stronie {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  'pt-PT': {
+    subject: 'A sua palavra-passe do Glazecalc foi alterada',
+    opening:
+      'A palavra-passe da conta Glazecalc {account} acabou de ser reposta, e a sessão foi terminada em todos os dispositivos em que estava iniciada.\n\n',
+    stopped: 'Caso outra pessoa tivesse a palavra-passe antiga, a reposição também anulou o seguinte:\n\n',
+    tokens:
+      '- Os tokens de acesso e as aplicações ligadas que podiam aceder ao seu trabalho guardado ({count}). Se ainda precisar de um, crie um novo token na página da sua conta, em {page}\n',
+    providers: '- O início de sessão com {providers}, que pode associar de novo na página da sua conta, em {page}\n',
+    shareLinks: '- As ligações que tinha criado para partilhar receitas. Pode criar novas a partir de cada receita.\n',
+    closing:
+      '\n' +
+      'Se foi você, não precisa de fazer mais nada. Caso contrário, reponha já a sua palavra-passe em {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  ro: {
+    subject: 'Parola dumneavoastră pentru Glazecalc a fost schimbată',
+    opening:
+      'Parola contului Glazecalc {account} tocmai a fost resetată, iar toate dispozitivele care erau conectate au fost deconectate.\n\n',
+    stopped: 'În cazul în care altcineva avea vechea parolă, resetarea a oprit și acestea:\n\n',
+    tokens:
+      '- Tokenurile de acces și aplicațiile conectate care puteau accesa lucrările dumneavoastră salvate ({count}). Dacă încă aveți nevoie de unul, creați un token nou pe pagina contului, la {page}\n',
+    providers: '- Conectarea cu {providers}, pe care o puteți asocia din nou pe pagina contului, la {page}\n',
+    shareLinks: '- Linkurile pe care le făcuseți pentru a partaja rețete. Puteți crea altele noi din fiecare rețetă.\n',
+    closing:
+      '\n' +
+      'Dacă ați fost dumneavoastră, nu mai aveți nimic de făcut. Dacă nu, resetați imediat parola la {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  sk: {
+    subject: 'Heslo do aplikácie Glazecalc bolo zmenené',
+    opening:
+      'Heslo k účtu {account} v aplikácii Glazecalc bolo práve obnovené a všetky zariadenia, na ktorých bol účet prihlásený, boli odhlásené.\n\n',
+    stopped: 'Pre prípad, že by staré heslo poznal niekto iný, obnovenie zastavilo aj toto:\n\n',
+    tokens:
+      '- Prístupové tokeny a pripojené aplikácie, ktoré mali prístup k Vašej uloženej práci ({count}). Ak niektorý stále potrebujete, vytvorte nový token na stránke svojho účtu na {page}\n',
+    providers: '- Prihlasovanie cez {providers}, ktoré môžete znova prepojiť na stránke svojho účtu na {page}\n',
+    shareLinks: '- Odkazy, ktoré ste vytvorili na zdieľanie receptov. Nové môžete vytvoriť pri každom recepte.\n',
+    closing:
+      '\n' +
+      'Ak ste to boli Vy, nemusíte už nič robiť. Ak nie, ihneď si obnovte heslo tu: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  sl: {
+    subject: 'Geslo za aplikacijo Glazecalc je bilo spremenjeno',
+    opening:
+      'Geslo za račun {account} v aplikaciji Glazecalc je bilo pravkar ponastavljeno, vse naprave, ki so bile prijavljene, pa so bile odjavljene.\n\n',
+    stopped: 'Za primer, da je staro geslo poznal še kdo drug, je ponastavitev ustavila tudi tole:\n\n',
+    tokens:
+      '- Dostopne žetone in povezane aplikacije, ki so lahko dosegli Vaše shranjeno delo ({count}). Če še kateri potrebujete, ustvarite nov žeton na strani računa na {page}\n',
+    providers: '- Prijavo prek: {providers}; povezavo lahko znova vzpostavite na strani računa na {page}\n',
+    shareLinks: '- Povezave, ki ste jih ustvarili za deljenje receptov. Nove lahko ustvarite pri vsakem receptu.\n',
+    closing:
+      '\n' +
+      'Če ste bili to Vi, Vam ni treba storiti ničesar več. Če ne, takoj ponastavite geslo tukaj: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  sv: {
+    subject: 'Lösenordet till Glazecalc har ändrats',
+    opening:
+      'Lösenordet för kontot {account} i Glazecalc har just återställts, och alla enheter som var inloggade har loggats ut.\n\n',
+    stopped: 'Ifall någon annan hade det gamla lösenordet stoppade återställningen också dessa:\n\n',
+    tokens:
+      '- Åtkomsttoken och anslutna appar som kunde nå ditt sparade arbete ({count}). Om du fortfarande behöver en, skapa en ny åtkomsttoken på kontosidan på {page}\n',
+    providers: '- Inloggning med {providers}, som du kan koppla igen på kontosidan på {page}\n',
+    shareLinks: '- Länkarna du hade skapat för att dela recept. Du kan skapa nya från varje recept.\n',
+    closing:
+      '\n' +
+      'Om det var du behöver du inte göra något mer. Om inte, återställ lösenordet direkt på {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  tr: {
+    subject: 'Glazecalc parolanız değiştirildi',
+    opening:
+      'Glazecalc hesabı {account} için parola az önce sıfırlandı ve oturumu açık olan tüm cihazların oturumu kapatıldı.\n\n',
+    stopped: 'Eski parolayı başka biri biliyorsa diye, sıfırlama şunları da durdurdu:\n\n',
+    tokens:
+      '- Kayıtlı çalışmanıza erişebilen erişim belirteçleri ve bağlı uygulamalar ({count}). Birine hâlâ ihtiyacınız varsa hesap sayfanızda ({page}) yeni bir belirteç oluşturun\n',
+    providers: '- {providers} ile oturum açma; bunları hesap sayfanızda ({page}) yeniden bağlayabilirsiniz\n',
+    shareLinks: '- Reçete paylaşmak için oluşturduğunuz bağlantılar. Her reçeteden yenilerini oluşturabilirsiniz.\n',
+    closing:
+      '\n' +
+      'Bu sizseniz başka bir şey yapmanız gerekmez. Değilseniz parolanızı hemen şu adresten sıfırlayın: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
   }
 };
 
@@ -4246,6 +5004,222 @@ export const TOKEN_MADE: Record<string, Email> = {
       'If this was you, there is nothing else to do. You can see and revoke your tokens at {page}\n\n' +
       'If not, revoke it there and reset your password right away at {forgot}\n' +
       '\n-- \nGlazecalc, {app}\n'
+  },
+  bg: {
+    subject: 'Нов токен за достъп до профила Ви в Glazecalc',
+    text:
+      'Току-що беше създаден токен за достъп с име „{name}“ за профила {account} в Glazecalc. Той може да чете рецептите, суровините, бележките и дневниците на изпичане, запазени в профила, до {date}.\n\n' +
+      'Ако това сте били Вие, не е нужно да правите нищо друго. Можете да видите и отмените токените си на {page}\n\n' +
+      'Ако не, отменете го там и нулирайте паролата си веднага на {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  cs: {
+    subject: 'Nový přístupový token k Vašemu účtu Glazecalc',
+    text:
+      'Přístupový token s názvem „{name}“ byl právě vytvořen pro účet Glazecalc {account}. Může číst recepty, suroviny, poznámky a záznamy výpalů uložené v účtu do {date}.\n\n' +
+      'Pokud jste to byli Vy, nemusíte už nic dělat. Své tokeny můžete vidět a zneplatnit na {page}\n\n' +
+      'Pokud ne, zneplatněte ho tam a ihned si obnovte heslo zde: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  da: {
+    subject: 'Et nyt adgangstoken til din Glazecalc-konto',
+    text:
+      'Et adgangstoken med navnet »{name}« er netop oprettet til Glazecalc-kontoen {account}. Det kan læse opskrifterne, råvarerne, noterne og brændingsjournalerne, der er gemt i kontoen, indtil {date}.\n\n' +
+      'Hvis det var dig, er der ikke mere at gøre. Du kan se og tilbagekalde dine adgangstokens på {page}\n\n' +
+      'Hvis ikke, så tilbagekald det dér, og nulstil adgangskoden med det samme på {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  de: {
+    subject: 'Ein neues Zugriffstoken für Ihr Glazecalc-Konto',
+    text:
+      'Für das Glazecalc-Konto {account} wurde gerade das Zugriffstoken „{name}“ erstellt. Es kann bis zum {date} die Rezepte, Rohstoffe, Notizen und Brennprotokolle lesen, die im Konto gespeichert sind.\n\n' +
+      'Wenn Sie das waren, müssen Sie nichts weiter tun. Ihre Token können Sie unter {page} ansehen und widerrufen.\n\n' +
+      'Wenn nicht, widerrufen Sie es dort und setzen Sie Ihr Passwort sofort hier zurück: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  el: {
+    subject: 'Νέο διακριτικό πρόσβασης για τον λογαριασμό σας στο Glazecalc',
+    text:
+      'Μόλις δημιουργήθηκε ένα διακριτικό πρόσβασης με όνομα «{name}» για τον λογαριασμό {account} στο Glazecalc. Μπορεί να διαβάζει τις συνταγές, τα υλικά, τις σημειώσεις και τα ημερολόγια ψησίματος που είναι αποθηκευμένα στον λογαριασμό, μέχρι τις {date}.\n\n' +
+      'Αν το κάνατε εσείς, δεν χρειάζεται να κάνετε τίποτα άλλο. Μπορείτε να δείτε και να ανακαλέσετε τα διακριτικά σας στο {page}\n\n' +
+      'Αν όχι, ανακαλέστε το εκεί και επαναφέρετε αμέσως τον κωδικό πρόσβασής σας εδώ: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  es: {
+    subject: 'Hay un token de acceso nuevo en su cuenta de Glazecalc',
+    text:
+      'Se acaba de crear un token de acceso llamado «{name}» para la cuenta de Glazecalc {account}. Puede leer las recetas, los materiales, las notas y los registros de cocción guardados en la cuenta hasta el {date}.\n\n' +
+      'Si ha sido usted, no tiene que hacer nada más. Puede ver y revocar sus tokens en {page}\n\n' +
+      'Si no, revóquelo allí y restablezca su contraseña de inmediato en {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  et: {
+    subject: 'Uus juurdepääsuluba teie Glazecalci kontole',
+    text:
+      'Glazecalci kontole {account} tehti just juurdepääsuluba „{name}“. See saab lugeda kontole salvestatud retsepte, tooraineid, märkmeid ja põletuspäevikuid kuni {date}.\n\n' +
+      'Kui see olite teie, ei pea te midagi muud tegema. Oma lube saate näha ja tühistada aadressil {page}\n\n' +
+      'Kui mitte, tühistage see seal ja lähtestage parool kohe siin: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  fi: {
+    subject: 'Uusi käyttöoikeustunnus Glazecalc-tilille',
+    text:
+      'Glazecalc-tilille {account} tehtiin juuri käyttöoikeustunnus ”{name}”. Se voi lukea tilille tallennetut reseptit, raaka-aineet, muistiinpanot ja polttopäiväkirjat {date} asti.\n\n' +
+      'Jos tämän teki tilin omistaja itse, muuta ei tarvitse tehdä. Tunnukset voi nähdä ja peruuttaa osoitteessa {page}\n\n' +
+      'Muussa tapauksessa peruuta tunnus siellä ja palauta salasana heti osoitteessa {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  fr: {
+    subject: 'Un nouveau jeton d’accès pour votre compte Glazecalc',
+    text:
+      'Un jeton d’accès nommé « {name} » vient d’être créé pour le compte Glazecalc {account}. Il peut lire les recettes, matières, notes et relevés de cuisson enregistrés dans le compte jusqu’au {date}.\n\n' +
+      'Si c’est vous, il n’y a rien d’autre à faire. Vous pouvez voir et révoquer vos jetons sur {page}\n\n' +
+      'Sinon, révoquez-le là et réinitialisez votre mot de passe tout de suite sur {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  ga: {
+    subject: 'Comhartha rochtana nua do do chuntas Glazecalc',
+    text:
+      'Rinneadh comhartha rochtana darb ainm “{name}” anois díreach don chuntas Glazecalc {account}. Is féidir leis na hoidis, na hábhair, na nótaí agus na taifid bhácála atá sábháilte sa chuntas a léamh go dtí {date}.\n\n' +
+      'Más tusa a rinne é, níl aon rud eile le déanamh. Is féidir leat do chomharthaí a fheiceáil agus a chúlghairm ag {page}\n\n' +
+      'Mura tusa, cúlghair é ansin agus athshocraigh do phasfhocal láithreach ag {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  hr: {
+    subject: 'Novi pristupni token za vaš račun Glazecalc',
+    text:
+      'Upravo je izrađen pristupni token naziva „{name}” za račun Glazecalc {account}. Može čitati recepte, sirovine, bilješke i zapisnike pečenja spremljene u računu do {date}.\n\n' +
+      'Ako ste to bili vi, ne morate ništa drugo učiniti. Svoje tokene možete vidjeti i opozvati na adresi {page}\n\n' +
+      'Ako niste, opozovite ga ondje i odmah ponovno postavite lozinku ovdje: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  hu: {
+    subject: 'Új hozzáférési token a Glazecalc-fiókjához',
+    text:
+      'A(z) {account} Glazecalc-fiókhoz az imént létrehoztak egy „{name}” nevű hozzáférési tokent. A fiókban mentett recepteket, nyersanyagokat, jegyzeteket és égetési naplókat olvashatja eddig: {date}.\n\n' +
+      'Ha Ön volt az, nincs további teendője. A tokenjeit itt láthatja és vonhatja vissza: {page}\n\n' +
+      'Ha nem, vonja vissza ott, és azonnal állítsa vissza a jelszavát itt: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  it: {
+    subject: 'Un nuovo token di accesso per il Suo account Glazecalc',
+    text:
+      'È stato appena creato un token di accesso chiamato «{name}» per l’account Glazecalc {account}. Può leggere le ricette, i materiali, le note e i registri di cottura salvati nell’account fino al {date}.\n\n' +
+      'Se l’ha fatto Lei, non c’è altro da fare. Può vedere e revocare i Suoi token all’indirizzo {page}\n\n' +
+      'Altrimenti, lo revochi lì e reimposti subito la password all’indirizzo {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  lt: {
+    subject: 'Glazecalc: naujas prieigos žetonas',
+    text:
+      'Glazecalc paskyrai {account} ką tik sukurtas prieigos žetonas „{name}“. Jis gali skaityti paskyroje įrašytus receptus, žaliavas, užrašus ir degimo žurnalus iki {date}.\n\n' +
+      'Jei tai buvote jūs, daugiau nieko daryti nereikia. Savo žetonus galite matyti ir atšaukti adresu {page}\n\n' +
+      'Jei ne, atšaukite jį ten ir nedelsdami atkurkite slaptažodį čia: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  lv: {
+    subject: 'Jauns piekļuves marķieris Jūsu Glazecalc kontam',
+    text:
+      'Lietotnes Glazecalc kontam {account} tikko tika izveidots piekļuves marķieris “{name}”. Tas var lasīt kontā saglabātās receptes, izejvielas, piezīmes un apdedzināšanas žurnālus līdz: {date}.\n\n' +
+      'Ja to izdarījāt Jūs, nekas cits nav jādara. Savus marķierus varat apskatīt un anulēt adresē {page}\n\n' +
+      'Ja ne, anulējiet to tur un nekavējoties atiestatiet paroli šeit: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  mt: {
+    subject: 'Token ġdid tal-aċċess għall-kont tiegħek ta’ Glazecalc',
+    text:
+      'Token tal-aċċess bl-isem “{name}” għadu kif inħoloq għall-kont {account} ta’ Glazecalc. Jista’ jaqra r-riċetti, il-materjali, in-noti u r-reġistri tal-ħami ssejvjati fil-kont sa din id-data: {date}.\n\n' +
+      'Jekk kont int, m’hemmx għalfejn tagħmel xejn aktar. Tista’ tara u tirrevoka t-tokens tiegħek hawn: {page}\n\n' +
+      'Jekk le, irrevokah hemm u rrisettja l-password tiegħek minnufih hawn: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  nl: {
+    subject: 'Een nieuw toegangstoken voor uw Glazecalc-account',
+    text:
+      'Er is zojuist een toegangstoken met de naam “{name}” gemaakt voor het Glazecalc-account {account}. Het kan tot {date} de recepten, grondstoffen, notities en stookverslagen lezen die in het account zijn opgeslagen.\n\n' +
+      'Was u dit zelf, dan hoeft u verder niets te doen. U kunt uw tokens zien en intrekken via {page}\n\n' +
+      'Zo niet, trek het daar dan in en stel uw wachtwoord meteen opnieuw in via {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  pl: {
+    subject: 'Nowy token dostępu do konta Glazecalc',
+    text:
+      'Token dostępu o nazwie „{name}” został właśnie utworzony dla konta Glazecalc {account}. Może on odczytywać receptury, surowce, notatki i dzienniki wypałów zapisane na koncie do {date}.\n\n' +
+      'Jeśli zrobił to właściciel konta, nie trzeba nic więcej robić. Tokeny można zobaczyć i unieważnić na stronie {page}\n\n' +
+      'Jeśli nie, należy go tam unieważnić i od razu zresetować hasło na stronie {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  'pt-PT': {
+    subject: 'Um novo token de acesso para a sua conta Glazecalc',
+    text:
+      'Acabou de ser criado um token de acesso com o nome «{name}» para a conta Glazecalc {account}. Pode ler as receitas, as matérias-primas, as notas e os registos de cozedura guardados na conta até {date}.\n\n' +
+      'Se foi você, não precisa de fazer mais nada. Pode ver e revogar os seus tokens em {page}\n\n' +
+      'Caso contrário, revogue-o aí e reponha já a sua palavra-passe em {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  ro: {
+    subject: 'Un nou token de acces pentru contul dumneavoastră Glazecalc',
+    text:
+      'Tocmai a fost creat un token de acces numit „{name}” pentru contul Glazecalc {account}. Poate citi rețetele, materiile prime, notițele și jurnalele de ardere salvate în cont până la {date}.\n\n' +
+      'Dacă ați fost dumneavoastră, nu mai aveți nimic de făcut. Vă puteți vedea și revoca tokenurile la {page}\n\n' +
+      'Dacă nu, revocați-l acolo și resetați imediat parola la {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  sk: {
+    subject: 'Nový prístupový token k Vášmu účtu Glazecalc',
+    text:
+      'Prístupový token s názvom „{name}“ bol práve vytvorený pre účet Glazecalc {account}. Môže čítať recepty, suroviny, poznámky a záznamy výpalov uložené v účte do {date}.\n\n' +
+      'Ak ste to boli Vy, nemusíte už nič robiť. Svoje tokeny môžete vidieť a zneplatniť na {page}\n\n' +
+      'Ak nie, zneplatnite ho tam a ihneď si obnovte heslo tu: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  sl: {
+    subject: 'Nov dostopni žeton za Vaš račun Glazecalc',
+    text:
+      'Za račun Glazecalc {account} je bil pravkar ustvarjen dostopni žeton z imenom »{name}«. Lahko bere recepte, surovine, zapiske in dnevnike žganja, shranjene v računu, do izteka: {date}.\n\n' +
+      'Če ste bili to Vi, Vam ni treba storiti ničesar več. Žetone lahko vidite in prekličete na {page}\n\n' +
+      'Če ne, ga tam prekličite in takoj ponastavite geslo tukaj: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  sv: {
+    subject: 'En ny åtkomsttoken för ditt Glazecalc-konto',
+    text:
+      'En åtkomsttoken med namnet ”{name}” har just skapats för Glazecalc-kontot {account}. Den kan läsa recepten, råvarorna, anteckningarna och brännloggarna som sparats i kontot fram till {date}.\n\n' +
+      'Om det var du behöver du inte göra något mer. Du kan se och återkalla åtkomsttoken på {page}\n\n' +
+      'Om inte, återkalla den där och återställ lösenordet direkt på {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  tr: {
+    subject: 'Glazecalc hesabınız için yeni bir erişim belirteci',
+    text:
+      'Glazecalc hesabı {account} için az önce “{name}” adlı bir erişim belirteci oluşturuldu. {date} tarihine kadar hesapta kayıtlı reçeteleri, hammaddeleri, notları ve pişirim kayıtlarını okuyabilir.\n\n' +
+      'Bu sizseniz başka bir şey yapmanız gerekmez. Belirteçlerinizi şu adreste görebilir ve iptal edebilirsiniz: {page}\n\n' +
+      'Değilseniz onu orada iptal edin ve parolanızı hemen şu adresten sıfırlayın: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
   }
 };
 
@@ -4257,6 +5231,198 @@ export const TOKEN_EXPIRING: Record<string, Email> = {
       'The access token named "{name}" on the Glazecalc account {account} stops working on {date}.\n\n' +
       'If you still use it, make a new token before then at {page} and give it to your assistant or script in place of the old one. If you no longer use it, there is nothing to do.\n' +
       '\n-- \nGlazecalc, {app}\n'
+  },
+  bg: {
+    subject: 'Токен за достъп до профила Ви в Glazecalc скоро изтича',
+    text:
+      'Токенът за достъп с име „{name}“ за профила {account} в Glazecalc спира да работи на {date}.\n\n' +
+      'Ако още го използвате, създайте нов токен преди тази дата на {page} и го дайте на своя асистент или скрипт вместо стария. Ако вече не го използвате, не е нужно да правите нищо.\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  cs: {
+    subject: 'Přístupový token k Vašemu účtu Glazecalc brzy vyprší',
+    text:
+      'Přístupový token s názvem „{name}“ u účtu Glazecalc {account} přestane fungovat {date}.\n\n' +
+      'Pokud ho stále používáte, vytvořte do té doby na {page} nový token a dejte ho svému asistentovi nebo skriptu místo starého. Pokud ho už nepoužíváte, nemusíte nic dělat.\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  da: {
+    subject: 'Et adgangstoken til din Glazecalc-konto udløber snart',
+    text:
+      'Adgangstokenet med navnet »{name}« på Glazecalc-kontoen {account} holder op med at virke {date}.\n\n' +
+      'Hvis du stadig bruger det, så opret et nyt adgangstoken inden da på {page}, og giv det til din assistent eller dit script i stedet for det gamle. Hvis du ikke længere bruger det, er der intet at gøre.\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  de: {
+    subject: 'Ein Zugriffstoken für Ihr Glazecalc-Konto läuft bald ab',
+    text:
+      'Das Zugriffstoken „{name}“ für das Glazecalc-Konto {account} funktioniert ab dem {date} nicht mehr.\n\n' +
+      'Wenn Sie es noch verwenden, erstellen Sie vorher unter {page} ein neues Token und geben Sie es Ihrem Assistenten oder Skript anstelle des alten. Wenn Sie es nicht mehr verwenden, müssen Sie nichts tun.\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  el: {
+    subject: 'Ένα διακριτικό πρόσβασης για τον λογαριασμό σας στο Glazecalc λήγει σύντομα',
+    text:
+      'Το διακριτικό πρόσβασης με όνομα «{name}» στον λογαριασμό {account} στο Glazecalc σταματά να λειτουργεί στις {date}.\n\n' +
+      'Αν το χρησιμοποιείτε ακόμη, δημιουργήστε νέο διακριτικό πριν από τότε στο {page} και δώστε το στον βοηθό ή στο σενάριό σας στη θέση του παλιού. Αν δεν το χρησιμοποιείτε πια, δεν χρειάζεται να κάνετε τίποτα.\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  es: {
+    subject: 'Un token de acceso de su cuenta de Glazecalc caduca pronto',
+    text:
+      'El token de acceso llamado «{name}» de la cuenta de Glazecalc {account} deja de funcionar el {date}.\n\n' +
+      'Si aún lo usa, cree un token nuevo antes de esa fecha en {page} y dé el nuevo a su asistente o script en lugar del anterior. Si ya no lo usa, no hay nada que hacer.\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  et: {
+    subject: 'Teie Glazecalci konto juurdepääsuluba aegub peagi',
+    text:
+      'Glazecalci konto {account} juurdepääsuluba „{name}“ lakkab töötamast {date}.\n\n' +
+      'Kui kasutate seda endiselt, tehke enne seda uus luba aadressil {page} ja andke see oma assistendile või skriptile vana asemel. Kui te seda enam ei kasuta, ei pea te midagi tegema.\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  fi: {
+    subject: 'Glazecalc-tilin käyttöoikeustunnus vanhenee pian',
+    text:
+      'Glazecalc-tilin {account} käyttöoikeustunnus ”{name}” lakkaa toimimasta {date}.\n\n' +
+      'Jos sitä käytetään yhä, tee uusi tunnus ennen sitä osoitteessa {page} ja anna se avustajalle tai skriptille vanhan tilalle. Jos sitä ei enää käytetä, mitään ei tarvitse tehdä.\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  fr: {
+    subject: 'Un jeton d’accès de votre compte Glazecalc expire bientôt',
+    text:
+      'Le jeton d’accès nommé « {name} » du compte Glazecalc {account} cesse de fonctionner le {date}.\n\n' +
+      'Si vous l’utilisez encore, créez un nouveau jeton avant cette date sur {page} et donnez-le à votre assistant ou à votre script à la place de l’ancien. Si vous ne l’utilisez plus, il n’y a rien à faire.\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  ga: {
+    subject: 'Rachaidh comhartha rochtana do chuntais Glazecalc in éag go luath',
+    text:
+      'Stopfaidh an comhartha rochtana darb ainm “{name}” ar an gcuntas Glazecalc {account} ag obair ar {date}.\n\n' +
+      'Má úsáideann tú fós é, déan comhartha nua roimhe sin ag {page} agus tabhair do do chúntóir nó do do script é in ionad an tseanchomhartha. Mura n-úsáideann tú a thuilleadh é, níl aon rud le déanamh.\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  hr: {
+    subject: 'Pristupni token za vaš račun Glazecalc uskoro istječe',
+    text:
+      'Pristupni token naziva „{name}” na računu Glazecalc {account} prestaje raditi {date}.\n\n' +
+      'Ako ga još koristite, prije toga izradite novi token na adresi {page} i dajte ga svojem asistentu ili skripti umjesto starog. Ako ga više ne koristite, ne morate ništa učiniti.\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  hu: {
+    subject: 'A Glazecalc-fiókja egyik hozzáférési tokenje hamarosan lejár',
+    text:
+      'A(z) {account} Glazecalc-fiók „{name}” nevű hozzáférési tokenje ekkor áll le: {date}.\n\n' +
+      'Ha még használja, addig hozzon létre új tokent itt: {page}, és adja meg az asszisztensének vagy szkriptjének a régi helyett. Ha már nem használja, nincs teendője.\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  it: {
+    subject: 'Un token di accesso del Suo account Glazecalc scade a breve',
+    text:
+      'Il token di accesso chiamato «{name}» dell’account Glazecalc {account} smette di funzionare il {date}.\n\n' +
+      'Se lo usa ancora, crei prima di allora un nuovo token all’indirizzo {page} e lo dia al Suo assistente o al Suo script al posto del vecchio. Se non lo usa più, non c’è nulla da fare.\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  lt: {
+    subject: 'Glazecalc: prieigos žetonas netrukus nustos galioti',
+    text:
+      'Prieigos žetonas „{name}“ Glazecalc paskyroje {account} nustos veikti {date}.\n\n' +
+      'Jei jį vis dar naudojate, iki tol sukurkite naują žetoną adresu {page} ir atiduokite jį savo asistentui ar scenarijui vietoj seno. Jei jo nebenaudojate, nieko daryti nereikia.\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  lv: {
+    subject: 'Jūsu Glazecalc konta piekļuves marķieris drīz beigs darboties',
+    text:
+      'Piekļuves marķieris “{name}” lietotnes Glazecalc kontā {account} beigs darboties. Derīguma beigu datums: {date}.\n\n' +
+      'Ja to joprojām izmantojat, līdz tam izveidojiet jaunu marķieri adresē {page} un nododiet to savam asistentam vai skriptam vecā vietā. Ja to vairs neizmantojat, nekas nav jādara.\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  mt: {
+    subject: 'Token tal-aċċess għall-kont tiegħek ta’ Glazecalc dalwaqt jiskadi',
+    text:
+      'It-token tal-aċċess bl-isem “{name}” fuq il-kont {account} ta’ Glazecalc jieqaf jaħdem f’din id-data: {date}.\n\n' +
+      'Jekk għadek tużah, oħloq token ġdid qabel dak iż-żmien hawn: {page} u agħtih lill-assistent jew lill-iscript tiegħek minflok il-qadim. Jekk m’għadekx tużah, m’hemm xejn x’tagħmel.\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  nl: {
+    subject: 'Een toegangstoken voor uw Glazecalc-account verloopt binnenkort',
+    text:
+      'Het toegangstoken met de naam “{name}” voor het Glazecalc-account {account} werkt vanaf {date} niet meer.\n\n' +
+      'Gebruikt u het nog, maak dan vóór die tijd een nieuw token via {page} en geef dat aan uw assistent of script in plaats van het oude. Gebruikt u het niet meer, dan hoeft u niets te doen.\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  pl: {
+    subject: 'Token dostępu do konta Glazecalc wkrótce wygaśnie',
+    text:
+      'Token dostępu o nazwie „{name}” na koncie Glazecalc {account} przestanie działać {date}.\n\n' +
+      'Jeśli jest nadal używany, należy przed tym terminem utworzyć nowy token na stronie {page} i przekazać go asystentowi lub skryptowi zamiast starego. Jeśli nie jest już używany, nie trzeba nic robić.\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  'pt-PT': {
+    subject: 'Um token de acesso da sua conta Glazecalc expira em breve',
+    text:
+      'O token de acesso com o nome «{name}» da conta Glazecalc {account} deixa de funcionar em {date}.\n\n' +
+      'Se ainda o usa, crie um novo token antes dessa data em {page} e dê-o ao seu assistente ou script em vez do antigo. Se já não o usa, não há nada a fazer.\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  ro: {
+    subject: 'Un token de acces al contului dumneavoastră Glazecalc expiră în curând',
+    text:
+      'Tokenul de acces numit „{name}” de pe contul Glazecalc {account} încetează să funcționeze la {date}.\n\n' +
+      'Dacă încă îl folosiți, creați un token nou înainte de atunci la {page} și dați-l asistentului sau scriptului dumneavoastră în locul celui vechi. Dacă nu-l mai folosiți, nu aveți nimic de făcut.\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  sk: {
+    subject: 'Prístupový token k Vášmu účtu Glazecalc čoskoro vyprší',
+    text:
+      'Prístupový token s názvom „{name}“ v účte Glazecalc {account} prestane fungovať {date}.\n\n' +
+      'Ak ho stále používate, vytvorte dovtedy na {page} nový token a dajte ho svojmu asistentovi alebo skriptu namiesto starého. Ak ho už nepoužívate, nemusíte nič robiť.\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  sl: {
+    subject: 'Dostopni žeton za Vaš račun Glazecalc kmalu poteče',
+    text:
+      'Dostopni žeton z imenom »{name}« za račun Glazecalc {account} preneha delovati. Datum izteka: {date}.\n\n' +
+      'Če ga še uporabljate, pred tem na {page} ustvarite nov žeton in ga namesto starega dajte svojemu pomočniku ali skriptu. Če ga ne uporabljate več, ni treba storiti ničesar.\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  sv: {
+    subject: 'En åtkomsttoken för ditt Glazecalc-konto går snart ut',
+    text:
+      'Åtkomsttoken med namnet ”{name}” på Glazecalc-kontot {account} slutar fungera {date}.\n\n' +
+      'Om du fortfarande använder den, skapa en ny åtkomsttoken före dess på {page} och ge den till din assistent eller ditt skript i stället för den gamla. Om du inte längre använder den behöver du inte göra något.\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  tr: {
+    subject: 'Glazecalc hesabınızdaki bir erişim belirtecinin süresi yakında doluyor',
+    text:
+      'Glazecalc hesabı {account} üzerindeki “{name}” adlı erişim belirteci {date} tarihinde çalışmayı bırakacak.\n\n' +
+      'Hâlâ kullanıyorsanız, o tarihten önce {page} adresinde yeni bir belirteç oluşturun ve eskisinin yerine asistanınıza veya betiğinize verin. Artık kullanmıyorsanız yapmanız gereken bir şey yok.\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
   }
 };
 
