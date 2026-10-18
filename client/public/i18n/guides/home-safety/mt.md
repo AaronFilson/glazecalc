@@ -149,76 +149,76 @@ Is-servizz Pet Poison Helpline jgħid li “Iċ-ċomb huwa tossiku għall-ispeċ
 
 Jekk jista’ jkun li annimal domestiku kiel jew xorob xi ħaġa mill-istudjo, jew juri sinjali bħal dawk ta’ hawn fuq, ċempel lill-veterinarju tiegħek jew lil xi linja tal-veleni għall-annimali (ara t-tabella fil-bidu tal-paġna), u żomm f’idejk l-isem tal-materjal u l-piż tal-annimal.
 
-## Il-forn {#the-kiln}
+## The kiln {#the-kiln lang=en}
 
-### Il-parti ta’ barra tisħon biżżejjed biex taħraq
+### The outside gets hot enough to burn
 
-Valutazzjoni tar-riskju għall-iskejjel tar-Renju Unit tgħid li l-parti ta’ barra ta’ forn “tista’ tilħaq 160 °C u possibbilment aktar” (madwar 320 °F), u pubblikazzjoni għall-iskejjel dwar il-fran tirrapporta ċineg tal-metall sa 460 °F (madwar 240 °C). Skutt, manifattur tal-fran, jirrakkomanda kamra tal-forn li tista’ tissakkar biex it-tfal u l-annimali ma jidħlux fiha. Fejn kamra ma tistax tissakkar, il-pubblikazzjoni għall-iskejjel tissuġġerixxi barriera bħal skrin tas-sigurtà madwar il-forn.
+A UK schools risk assessment says a kiln's outside "can reach 160 °C and possibly more" (about 320 °F), and a school kiln guide reports metal bands at up to 460 °F (about 240 °C). Skutt, a kiln maker, recommends a kiln room that can be locked against children and pets. Where a room cannot be locked, the school guide suggests a barrier such as a kiln safety screen.
 
-It-tfal żgħar u l-annimali ma jistgħux jifhmu sinjal ta’ twissija. Nissuġġerixxu li żżommhom wara bieb imsakkar jew wara barriera waqt il-ħamja u waqt li l-forn ikun qed jiksaħ, u li twaħħal sinjal ta’ twissija għall-oħrajn kollha.
+Small children and pets cannot understand a warning sign. We suggest keeping them behind a locked door or a barrier while the kiln fires and while it cools, and posting a warning sign for everyone else.
 
-### L-ispazju madwaru
+### Space around it
 
-Is-sorsi ma jaqblux dwar id-distanza ta’ sigurtà. Rio Grande jgħid mill-inqas 12-il pulzier (30 cm) mill-ħitan u minn kull materjal li jaqbad. L&L jirrakkomanda bil-qawwa 18-il pulzier (46 cm) mill-ħitan kollha, u l-kodiċi tal-bini li jikkwota jitlob 3 piedi (0.9 m) mill-ħitan li jaqbdu. Segwi l-manwal tal-forn tiegħek u r-regoli lokali dwar is-sigurtà min-nar; jekk għandek xi dubju, ħalli 18-il pulzier minn kull ħajt u 3 piedi minn kull ħaġa li tista’ taqbad. Fil-garaxx, żomm il-karozzi, il-fjuwil u ż-żebgħa ferm ’il bogħod.
+Sources disagree on clearance. Rio Grande says at least 12 inches (30 cm) from walls and anything combustible. L&L strongly recommends 18 inches (46 cm) to all walls, and the building code it cites asks for 3 feet (0.9 m) from combustible walls. Follow your kiln's manual and local fire code; if you are unsure, allow 18 inches from any wall and 3 feet from anything that can burn. In a garage, keep cars, fuel and paint well away.
 
-### L-elettriku
+### Power
 
-Rio Grande jirrakkomanda **ċirkwit apposta** (wieħed li ma jħaddem xejn aktar) b’sokit b’konnessjoni mal-art kif suppost. Nissuġġerixxu li ma tużax kejbil tal-estensjoni. Bejn ħamja u oħra, itfi l-interruttur taċ-ċirkwit tal-forn jew is-swiċċ tal-iżolament, jew aqla’ l-plagg, biex tifel ma jkunx jista’ jixegħlu.
+Rio Grande recommends a **dedicated circuit** (one that powers nothing else) with a properly grounded outlet. We suggest no extension cord. Between firings, switch off the kiln's breaker or disconnect switch, or unplug it, so a child cannot start it.
 
-### Kun hemm meta tispiċċa l-ħamja
+### Be there when the firing ends
 
-Is-**sitter**{{en: kiln sitter}} huwa s-swiċċ mekkaniku ta’ ħafna fran mingħajr kontrollur: kon{{en: cone}} żgħir jitgħawweġ fl-aħħar tal-ħamja u jitfi s-swiċċ. Il-manwal tiegħu jgħid li “MHUX maħsub biex jaħdem bħala apparat ta’ tifi ta’ sigurtà li ma jfallix.” Rio Grande jgħid li qatt ma tħalli forn qed jaħmi mingħajr sorveljanza, “speċjalment qrib il-ħin mistenni li jintefa”. Għalhekk aħmi biss meta jkun hemm adult fid-dar u mqajjem għall-aħħar tal-ħamja, iċċekkja li l-forn intefa, u żomm fire extinguisher tat-tip ABC fil-kamra tal-forn. Biex tifhem kif jaħdmu s-sitters, il-kontrolluri u l-programmi tal-ħami, ara l-gwida [Il-ħami f’forn sempliċi](/guides/firing).
+A **kiln sitter** is the mechanical switch on many manual kilns: a small cone bends at the end of the firing and trips the switch off. Its manual says it "is NOT intended to perform as a fail-safe shut-off device." Rio Grande says never to leave a firing kiln unattended, "especially near the expected shut-off time". So stay nearby and check the kiln while it fires, above all near the end; fire only when an adult will be home and awake to do that, check that it has switched off, and keep an ABC fire extinguisher in the kiln room. For how sitters, controllers and schedules work, see [Firing a basic kiln](/guides/firing).
 
-### Id-dħaħen u l-monossidu tal-karbonju
+### Fumes and carbon monoxide
 
-Il-ħami joħroġ id-dħaħen, għalhekk ħalli l-arja toħroġ mill-forn għal barra; il-gwida [Taħlit sikur u ventilazzjoni](/guides/safe-mixing) tispjega kif. Forn f’garaxx imwaħħal mad-dar għandu bżonn ventilazzjoni li żżomm id-dħaħen milli jaslu fid-dar mill-bieb li jgħaqqad. Żomm l-għasafar f’kamra ’l bogħod kull meta jkun hemm ħamja.
+Firing gives off fumes, so vent the kiln to the outdoors; [Safe mixing and ventilation](/guides/safe-mixing) explains how. A kiln in an attached garage needs venting that keeps fumes from reaching the house through the connecting door. Keep birds in a far room whenever the kiln fires.
 
-Il-**monossidu tal-karbonju** (CO) huwa gass velenuż li ma tistax tarah jew txommu. Folja ta’ università dwar is-sigurtà tal-fran titlob allarmi tal-CO mal-fran tal-gass. Għall-fran elettriċi l-opinjonijiet ivarjaw, iżda l-ħruq tal-materja organika (fit-tafal, jew f’affarijiet bħall-karta jew ix-xama’) jista’ jipproduċi CO. Aħna naħsbu li allarm tal-CO fil-kamra tal-forn u fil-kmamar ta’ ħdejha huwa pass għaqli u rħis għal kull forn.
+**Carbon monoxide** (CO) is a poisonous gas you cannot see or smell. A university kiln safety sheet requires CO alarms with gas kilns. Views differ for electric kilns, but burning off organic matter (in clay, or things like paper or wax) can make CO. We think a CO alarm in the kiln room and the rooms next to it is a sensible, inexpensive step for any kiln.
 
-### It-toqba tal-ħarsa u l-għajnejn
+### Peepholes and eyes
 
-Ir-radjazzjoni infraħamra, li ma tistax taraha, “tibda minn 752°F (400°C)”, u Ceramic Arts Network jgħid li l-ħarsa ġo forn ’il fuq minn din it-temperatura għandha dejjem issir bi protezzjoni għall-għajnejn. Ir-radjazzjoni infraħamra tista’ tagħmel ħsara lill-lenti tal-għajn u twassal għall-katarretti, u l-ħarsa fit-tul tista’ tagħmel ħsara lir-retina. In-nuċċali tax-xemx u n-nuċċali tad-didimju ma jimblokkawhiex.
+Infrared light, which you cannot see, "starts at 752°F (400°C)", and the Ceramic Arts Network says looking into a kiln above this should always be done with eye protection. Infrared can damage the lens of the eye and lead to cataracts, and long gazing can injure the retina. Sunglasses and didymium glasses do not block it.
 
 > [!WARNING]
-> It-tfal m’għandhomx iħarsu ġo forn b’ebda mod. Toqba tal-ħarsa li tiddi tiġbidhom, u ma tistax toqgħod fuqhom li jżommu n-nuċċali protettivi fuq wiċċhom, għalhekk żommhom ’il bogħod meta l-forn ikun sħun. L-adulti għandhom iħarsu biss għal ftit ħin, minn ġo nuċċali tal-iwweldjar kontra l-IR. Is-sorsi jirrakkomandaw gradi ta’ dlam minn 1.7 sa 5; il-grad 3 huwa għażla għaqlija, jew grad aktar skur jekk wara tara tikek.
+> Children should not look into a kiln at all. A glowing peephole draws them, and they will not reliably keep protective glasses on, so keep them away while the kiln is hot. Adults should look only briefly, through IR-rated welding glasses. Sources recommend shades from 1.7 to 5; shade 3 is a sensible choice, darker if you see spots afterward.
 
-## Oġġetti magħmula bl-idejn fuq il-mejda tal-familja {#handmade-ware}
+## Handmade ware on the family table {#handmade-ware lang=en}
 
-Għall-oġġetti fuq il-mejda tal-familja, il-kwistjoni hija r-**rilaxx tal-metalli**{{en: leaching}}: metalli li jinħallu mill-glejż{{en: glaze}} moħmi u jgħaddu fl-ikel jew fix-xorb. L-FDA twissi li jekk iċ-ċeramika “ma tkunx manifatturata kif suppost, dan iċ-ċomb jista’ jgħaddi fl-ikel u fix-xorb”, u li “l-ebda ħasil, togħlija jew proċess ieħor ma jista’ jneħħi ċ-ċomb miċ-ċeramika.” Ir-regolaturi, bħall-FDA tal-Istati Uniti u l-UE, jillimitaw kemm ċomb u kadmju tirrilaxxa biċċa lesta f’test standard bl-aċidu, mhux x’fih il-glejż. L-iktar limitu strett fl-Istati Uniti, għat-tazzi, il-mugs u l-qliel, huwa 0.5 µg/mL ta’ ċomb.
+The question for pots on the family table is **leaching**: metals dissolving out of the fired glaze into food or drink. The FDA warns that if pottery "is not manufactured properly, this lead can leach into food and drink", and that "no amount of washing, boiling, or other process can remove lead from pottery." Regulators such as the US FDA and the EU limit how much lead and cadmium a finished piece releases in a standard acid test, not what the glaze contains. The strictest US limit, for cups, mugs and pitchers, is 0.5 µg/mL of lead.
 
-### Mingħajr ċomb ma jfissirx sikur għall-ikel
+### Lead-free is not the same as food-safe
 
-Glejż mingħajr ċomb xorta jista’ jirrilaxxa metalli. Digitalfire, sors ta’ referenza dwar il-kimika tal-glejż, isemmi bħala l-problema l-glejżijiet li fihom “kuluranti{{en: colorants}} ta’ ossidi ta’ metalli tqal, barju, litju, jew ċomb”, u jwissi li pigment{{en: stain}} moħmi ’il fuq mit-temperatura indikata għalih jista’ jirrilaxxa l-kadmju. It-tikketta ASTM D-4236 għall-materjali tal-arti fuq vażett “MA TISTABBILIXXIX li glejż moħmi huwa sikur għall-ikel{{en: food safe}}”, u “Il-produtturi tal-oġġetti tal-mejda jridu jittestjaw l-oġġetti lesti kollha biex jistabbilixxu li huma tajbin għall-mejda.”
+A glaze with no lead can still leach. Digitalfire, a glaze chemistry reference, names glazes containing "heavy metal oxide colorants, barium, lithium, or lead" as the concern, and warns that a stain fired above its rated temperature can release cadmium. The ASTM D-4236 art-materials label on a jar "DOES NOT establish that a fired glaze is food-safe", and "Tableware producers must test all finished ware to establish dinnerware status."
 
 > [!NOTE]
-> “Sikur għall-ikel” ifisser li dan il-glejż, fuq dan it-tafal, moħmi sa dan il-kon{{en: cone}}, applikat b’dan il-mod, jirrilaxxa inqas mil-limiti legali. Kalkolu ta’ riċetta, inkluż dak ta’ Glazecalc, jista’ jindika riċetta riskjuża, iżda ma jistax jipprova li biċċa hija sikura. Dan jista’ jagħmlu biss test tal-laboratorju tar-rilaxx tal-metalli fuq il-biċċa moħmija.
+> "Food safe" means this glaze, on this clay, fired to this cone, applied this way, releases less than the legal limits. A recipe calculation, Glazecalc's included, can flag a risky recipe but cannot prove a pot is safe. Only a leach test of the fired piece can.
 
-Nissuġġerixxu li tqis tikketta “sikur għall-ikel” fuq glejż kummerċjali bħala bidu tajjeb, mhux garanzija: tafal differenti, saff eħxen, kon ieħor jew it-tieni glejż fuqu jibdlu r-riżultat.
+We suggest reading a "food safe" label on a commercial glaze as a good start, not a guarantee: a different clay, a thicker coat, another cone or a second glaze on top changes the result.
 
-### L-ittestjar
+### Testing
 
-Il-laboratorji jittestjaw il-biċċiet moħmija billi jgħaddsuhom f’aċidu b’mod standard li jirrappreżenta l-agħar każ, bħal ASTM C738 fl-Istati Uniti. It-test tal-UE ta’ wieħed mil-laboratorji għandu bżonn erba’ biċċiet identiċi u jieħu sebat ijiem tax-xogħol, għalhekk agħmel biċċiet żejda ta’ kull ħaġa li għandek il-ħsieb li tibgħat għall-ittestjar.
+Laboratories test fired pieces with a standard acid soak that represents a worst case, such as ASTM C738 in the US. One lab's EU test needs four identical pieces and takes seven working days, so make spares of anything you plan to have tested.
 
-It-testijiet fid-dar huma kontroversjali. L-FDA tgħid li l-kits tal-ittestjar bi swab għall-użu fid-dar jistgħu juru ċomb li jista’ jiġi rilaxxat, u li biċċa li tagħti riżultat pożittiv m’għandhiex tintuża għall-ikel. Ceramics NZ iwissi li l-pinen tat-test taċ-ċomb għall-konsumaturi “mhumiex iddisinjati għal dan l-użu” fuq iċ-ċeramika u jistgħu jagħtu riżultati pożittivi foloz. Digitalfire jissuġġerixxi li tħalli biċċa lumi fuq il-glejż matul il-lejl bħala test approssimattiv. L-interpretazzjoni sikura: test pożittiv fid-dar ifisser li tieqaf tuża l-biċċa għall-ikel, u test negattiv ma jipprova xejn. Laboratorju biss jista’ jgħidlek li biċċa hija sikura.
+Home tests are disputed. The FDA says home swab kits can show leachable lead, and that a piece that tests positive should not be used for food. Ceramics NZ warns that consumer lead-test pens are "not designed for this use" on ceramics and can give false positives. Digitalfire suggests leaving a lemon slice on the glaze overnight as a rough screen. The safe reading: a positive home test means stop using the piece for food, and a negative one proves nothing. Only a lab can tell you a piece is safe.
 
-### Oġġetti bix-xegħir
+### Crazed ware
 
-Ix-**xegħir**{{en: crazing}} huwa xibka ta’ xquq fini fil-wiċċ tal-glejż, u s-sorsi ma jaqblux dwaru. Esperiment ta’ Ceramics Monthly sab li madum bix-xegħir seta’ jitnaddaf, l-aħjar f’magna tal-ħasil tal-platti, għalkemm wara l-ilma u s-sapun ħareġ inqas nadif minn madum mingħajr xegħir. Digitalfire isostni li “L-oġġetti bix-xegħir mhumiex aċċettabbli” u li x-xegħir “idgħajjef ħafna l-oġġetti”. It-triq sikura hija sempliċi: tużax biċċiet bix-xegħir għall-ikel.
+**Crazing** is a network of fine cracks in the glaze surface, and sources disagree about it. A Ceramics Monthly experiment found crazed tiles could be cleaned, best in a dishwasher, though they came out less clean than uncrazed tiles after soap and water. Digitalfire holds that "Crazed ware is unacceptable" and that crazing "severely weakens ware". The safe course is simple: do not use crazed pieces for food.
 
-### Glejżijiet għal ġewwa
+### Liner glazes
 
-**Glejż għal ġewwa**{{en: liner glaze}} huwa l-glejż fuq in-naħa ta’ ġewwa ta’ tazza jew skutella, fejn ikun l-ikel. Digitalfire jiddeskrivi glejż għal ġewwa li jista’ jkun ta’ riskju baxx biżżejjed biex jintuża mingħajr ittestjar fil-laboratorju: mingħajr kuluranti, barju, ċomb jew litju; imdewweb għal kollox; bla xegħir; u jifflaħ għall-użu. Is-sinjali ta’ twissija fi kwalunkwe glejż huma ammonti kbar ta’ kulurant, kristalli fuq il-wiċċ u tidwib ħażin.
+A **liner glaze** is the glaze on the inside of a cup or bowl, where the food sits. Digitalfire describes a liner that may be low enough in risk to use without lab testing: no colorants, barium, lead or lithium; fully melted; no crazing; and it wears well. Even then, only a leach test of your own fired pots shows whether they are food-safe. Warning signs in any glaze are heavy amounts of colorant, crystals on the surface and poor melting.
 
-### Regoli tal-familja li nissuġġerixxu
+### Family rules we suggest
 
-- It-tazzi, l-iskutelli u l-platti tat-tfal: biss glejżijiet għal ġewwa reżistenti u ttestjati fil-laboratorju, jew oġġetti tal-mejda kummerċjali.
-- Taħżinx ikel jew xorb aċiduż (frott taċ-ċitru, tadam, ħall, meraq tal-frott, inbid) f’oġġetti igglejżjati bi kwalunkwe glejż li ma bgħattx għall-ittestjar.
-- Tużax biċċiet bix-xegħir għall-ikel.
-- Il-madum tal-prova{{en: test tiles}} u l-esperimenti jibqgħu fl-istudjo, qatt fil-kċina, fil-kaxxa tal-ġugarelli jew fl-iskutella tal-annimal.
-- Agħmel attenzjoni wkoll b’ċeramika oħra. L-FDA tirrakkomanda l-kawtela ma’ biċċiet magħmula bl-idejn jew li jidhru mhux irfinuti, antikitajiet, biċċiet bil-ħsara jew milbusa, affarijiet mis-swieq tal-oġġetti użati u dekorazzjoni oranġjo, ħamra jew safra qawwija.
-- Jekk tifel uża ċeramika li issa għandek dubji dwarha, l-FDA tgħid li tkellem lil tabib dwar test taċ-ċomb fid-demm.
+- Children's cups, bowls and plates: only lab-tested, durable liner glazes, or commercial dinnerware.
+- Do not store acidic food or drink (citrus, tomato, vinegar, fruit juice, wine) in pots glazed with anything you have not had tested.
+- Do not use crazed pieces for food.
+- Test tiles and experiments stay in the studio, never in the kitchen, the toy box or the pet's bowl.
+- Take care with other pottery too. The FDA advises caution with handmade or crude-looking pieces, antiques, damaged or worn pieces, flea-market finds and bright orange, red or yellow decoration.
+- If a child has used pottery you now doubt, the FDA says to talk to a doctor about a blood lead test.
 
-Għal aktar dwar kif jdubu l-glejżijiet, għaliex xi wħud jirrilaxxaw il-metalli u x’ifissru l-limiti, ara l-gwida [Il-glejż mill-bidu nett](/guides/glazing-basics).
+For more on how glazes melt, why some leach and what the limits mean, see [Glazing from first principles](/guides/glazing-basics).
 
 ## Sorsi {#sources}
 

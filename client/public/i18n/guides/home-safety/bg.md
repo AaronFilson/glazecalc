@@ -149,76 +149,76 @@ Pet Poison Helpline посочва, че „оловото е токсично �
 
 Ако домашен любимец може да е изял или изпил нещо от ателието или има признаци като описаните по-горе, обадете се на ветеринарния си лекар или на линия за отравяния при животни (вижте таблицата в началото), като имате подръка името на суровината и теглото на животното.
 
-## Пещта {#the-kiln}
+## The kiln {#the-kiln lang=en}
 
-### Отвън пещта става толкова гореща, че изгаря
+### The outside gets hot enough to burn
 
-Британска оценка на риска за училища посочва, че външната повърхност на пещта „може да достигне 160 °C и евентуално повече“ (около 320 °F), а училищен наръчник за пещи съобщава за метални обръчи с температура до 460 °F (около 240 °C). Производителят на пещи Skutt препоръчва помещение за пещта, което може да се заключва, така че децата и домашните любимци да нямат достъп. Където помещението не може да се заключи, училищният наръчник предлага преграда, например предпазен параван за пещ.
+A UK schools risk assessment says a kiln's outside "can reach 160 °C and possibly more" (about 320 °F), and a school kiln guide reports metal bands at up to 460 °F (about 240 °C). Skutt, a kiln maker, recommends a kiln room that can be locked against children and pets. Where a room cannot be locked, the school guide suggests a barrier such as a kiln safety screen.
 
-Малките деца и домашните любимци не могат да разберат предупредителен знак. Предлагаме да ги държите зад заключена врата или преграда, по време на изпичане и докато пещта изстива, и да поставите предупредителен знак за всички останали.
+Small children and pets cannot understand a warning sign. We suggest keeping them behind a locked door or a barrier while the kiln fires and while it cools, and posting a warning sign for everyone else.
 
-### Разстояние около пещта
+### Space around it
 
-Източниците се разминават за безопасното разстояние. Rio Grande посочва поне 12 инча (30 cm) от стените и от всичко горимо. L&L настоятелно препоръчва 18 инча (46 cm) от всички стени, а строителният кодекс, на който се позовава, изисква 3 фута (0,9 m) от горими стени. Спазвайте ръководството за експлоатация на пещта си и местните правила за пожарна безопасност; ако се съмнявате, оставете 18 инча от всяка стена и 3 фута от всичко, което може да гори. В гараж дръжте колите, горивото и боите далеч от пещта.
+Sources disagree on clearance. Rio Grande says at least 12 inches (30 cm) from walls and anything combustible. L&L strongly recommends 18 inches (46 cm) to all walls, and the building code it cites asks for 3 feet (0.9 m) from combustible walls. Follow your kiln's manual and local fire code; if you are unsure, allow 18 inches from any wall and 3 feet from anything that can burn. In a garage, keep cars, fuel and paint well away.
 
-### Захранване
+### Power
 
-Rio Grande препоръчва **отделна електрическа верига** (която не захранва нищо друго) с правилно заземен контакт. Предлагаме да не използвате удължител. Между изпичанията изключвайте автоматичния предпазител или главния прекъсвач на пещта или изваждайте щепсела ѝ от контакта, за да не може дете да я пусне.
+Rio Grande recommends a **dedicated circuit** (one that powers nothing else) with a properly grounded outlet. We suggest no extension cord. Between firings, switch off the kiln's breaker or disconnect switch, or unplug it, so a child cannot start it.
 
-### Бъдете наблизо, когато изпичането свършва
+### Be there when the firing ends
 
-**Kiln-Sitter** е механичният изключвател на много пещи с ръчно управление: в края на изпичането малък конус{{en: cone}} се огъва и задейства изключвателя. В ръководството за експлоатация на Kiln-Sitter пише, че той „НЕ е предназначен да действа като надеждно предпазно устройство за изключване“. Rio Grande казва никога да не оставяте работеща пещ без надзор, „особено около очакваното време на изключване“. Затова пускайте изпичане само когато в края му у дома ще има възрастен, който е буден, проверявайте дали пещта се е изключила и дръжте пожарогасител ABC в помещението с пещта. Как работят изключвателите Kiln-Sitter, контролерите и програмите за изпичане, вижте в наръчника [Изпичане в обикновена пещ](/guides/firing).
+A **kiln sitter** is the mechanical switch on many manual kilns: a small cone bends at the end of the firing and trips the switch off. Its manual says it "is NOT intended to perform as a fail-safe shut-off device." Rio Grande says never to leave a firing kiln unattended, "especially near the expected shut-off time". So stay nearby and check the kiln while it fires, above all near the end; fire only when an adult will be home and awake to do that, check that it has switched off, and keep an ABC fire extinguisher in the kiln room. For how sitters, controllers and schedules work, see [Firing a basic kiln](/guides/firing).
 
-### Газове и въглероден оксид
+### Fumes and carbon monoxide
 
-При изпичане се отделят газове и пари, затова извеждайте газовете от пещта навън; как, обяснява наръчникът [Безопасно смесване и вентилация](/guides/safe-mixing). Пещ в гараж, долепен до къщата, се нуждае от вентилация, която не позволява газовете да стигнат до къщата през свързващата врата. Винаги по време на изпичане дръжте птиците в отдалечена стая.
+Firing gives off fumes, so vent the kiln to the outdoors; [Safe mixing and ventilation](/guides/safe-mixing) explains how. A kiln in an attached garage needs venting that keeps fumes from reaching the house through the connecting door. Keep birds in a far room whenever the kiln fires.
 
-**Въглеродният оксид** (CO) е отровен газ, който не можете да видите или помиришете. Инструкция за безопасност при работа с пещи на един университет изисква детектори за въглероден оксид при газовите пещи. За електрическите пещи мненията се различават, но при изгарянето на органичните вещества (в глината или в неща като хартия или восък) може да се образува CO. Смятаме, че детектор за въглероден оксид в помещението с пещта и в съседните стаи е разумна и евтина мярка за всяка пещ.
+**Carbon monoxide** (CO) is a poisonous gas you cannot see or smell. A university kiln safety sheet requires CO alarms with gas kilns. Views differ for electric kilns, but burning off organic matter (in clay, or things like paper or wax) can make CO. We think a CO alarm in the kiln room and the rooms next to it is a sensible, inexpensive step for any kiln.
 
-### Наблюдателните отвори и очите
+### Peepholes and eyes
 
-Инфрачервеното лъчение, което не можете да видите, „започва от 752°F (400°C)“, а Ceramic Arts Network посочва, че гледането в пещ над тази температура следва винаги да става със защита за очите. Инфрачервеното лъчение може да увреди лещата на окото и да доведе до катаракта, а продължителното взиране може да увреди ретината. Слънчевите и дидимиевите очила не го спират.
+Infrared light, which you cannot see, "starts at 752°F (400°C)", and the Ceramic Arts Network says looking into a kiln above this should always be done with eye protection. Infrared can damage the lens of the eye and lead to cataracts, and long gazing can injure the retina. Sunglasses and didymium glasses do not block it.
 
 > [!WARNING]
-> Децата изобщо не следва да гледат в пещ. Светещият наблюдателен отвор ги привлича, а на тях не може да се разчита, че ще държат предпазните очила на очите си, затова ги дръжте далеч, докато пещта е гореща. Възрастните следва да гледат само за кратко, през заваръчни очила с IR филтър. Източниците препоръчват степени на затъмняване от 1,7 до 5; степен 3 е разумен избор, а по-тъмна, ако след това виждате петна пред очите си.
+> Children should not look into a kiln at all. A glowing peephole draws them, and they will not reliably keep protective glasses on, so keep them away while the kiln is hot. Adults should look only briefly, through IR-rated welding glasses. Sources recommend shades from 1.7 to 5; shade 3 is a sensible choice, darker if you see spots afterward.
 
-## Ръчно изработени съдове на семейната трапеза {#handmade-ware}
+## Handmade ware on the family table {#handmade-ware lang=en}
 
-За съдовете на семейната трапеза въпросът е **отделянето на метали**{{en: leaching}}: метали, които се разтварят от изпечената глазура{{en: glaze}} в храната или напитките. FDA предупреждава, че ако керамиката „не е произведена правилно, това олово може да се отдели в храната и напитките“ и че „никакво миене, варене или друга обработка не може да отстрани оловото от керамиката“. Регулаторите, като американската FDA и ЕС, ограничават колко олово и кадмий отделя готовото изделие при стандартно изпитване с киселина, а не какво съдържа глазурата. Най-строгата граница в САЩ, за чаши, канчета и кани, е 0,5 µg/mL олово.
+The question for pots on the family table is **leaching**: metals dissolving out of the fired glaze into food or drink. The FDA warns that if pottery "is not manufactured properly, this lead can leach into food and drink", and that "no amount of washing, boiling, or other process can remove lead from pottery." Regulators such as the US FDA and the EU limit how much lead and cadmium a finished piece releases in a standard acid test, not what the glaze contains. The strictest US limit, for cups, mugs and pitchers, is 0.5 µg/mL of lead.
 
-### Безоловна не означава подходяща за контакт с храни
+### Lead-free is not the same as food-safe
 
-И глазура без олово може да отделя метали. Digitalfire, справочник по химия на глазурите, посочва като проблем глазурите, съдържащи „оцветители{{en: colorants}} от оксиди на тежки метали, барий, литий или олово“, и предупреждава, че керамичен пигмент{{en: stain}}, изпечен над температурата, за която е предназначен, може да отделя кадмий. Етикетът ASTM D-4236 за художествени материали върху бурканчето „НЕ установява, че изпечената глазура е подходяща за контакт с храни{{en: food-safe}}“, а „производителите на съдове за хранене трябва да изпитат всички готови изделия, за да установят дали са годни за трапезна употреба“.
+A glaze with no lead can still leach. Digitalfire, a glaze chemistry reference, names glazes containing "heavy metal oxide colorants, barium, lithium, or lead" as the concern, and warns that a stain fired above its rated temperature can release cadmium. The ASTM D-4236 art-materials label on a jar "DOES NOT establish that a fired glaze is food-safe", and "Tableware producers must test all finished ware to establish dinnerware status."
 
 > [!NOTE]
-> „Подходяща за контакт с храни“ означава, че тази глазура, върху тази керамична маса{{en: clay}}, изпечена до този конус{{en: cone}} и нанесена по този начин, отделя по-малко от законовите граници. Изчислението на една рецепта, включително това в Glazecalc, може да покаже, че рецептата е рискова, но не може да докаже, че съдът е безопасен. Това може само изпитване за отделяне на метали от изпеченото изделие.
+> "Food safe" means this glaze, on this clay, fired to this cone, applied this way, releases less than the legal limits. A recipe calculation, Glazecalc's included, can flag a risky recipe but cannot prove a pot is safe. Only a leach test of the fired piece can.
 
-Предлагаме да приемате надписа „подходяща за контакт с храни“ върху готова глазура като добро начало, а не като гаранция: друга керамична маса, по-дебел слой, друг конус или втора глазура отгоре променят резултата.
+We suggest reading a "food safe" label on a commercial glaze as a good start, not a guarantee: a different clay, a thicker coat, another cone or a second glaze on top changes the result.
 
-### Изпитване
+### Testing
 
-Лабораториите изпитват изпечените изделия чрез стандартно накисване в киселина, което представя най-лошия случай, като ASTM C738 в САЩ. Изпитването по правилата на ЕС в една лаборатория изисква четири еднакви изделия и отнема седем работни дни, затова правете резервни бройки от всичко, което смятате да дадете за изпитване.
+Laboratories test fired pieces with a standard acid soak that represents a worst case, such as ASTM C738 in the US. One lab's EU test needs four identical pieces and takes seven working days, so make spares of anything you plan to have tested.
 
-Домашните тестове са спорни. FDA посочва, че комплектите за домашно изпитване с тампон могат да покажат олово, което може да се отделя, и че изделие с положителен резултат не следва да се използва за храна. Ceramics NZ предупреждава, че писалките за тест за олово за домашна употреба „не са предназначени за тази употреба“ върху керамика и могат да дадат фалшиво положителен резултат. Digitalfire предлага като грубо предварително изпитване да оставите резен лимон върху глазурата през нощта. Безопасното тълкуване: положителен домашен тест означава да спрете да използвате изделието за храна, а отрицателен не доказва нищо. Само лаборатория може да Ви каже, че едно изделие е безопасно.
+Home tests are disputed. The FDA says home swab kits can show leachable lead, and that a piece that tests positive should not be used for food. Ceramics NZ warns that consumer lead-test pens are "not designed for this use" on ceramics and can give false positives. Digitalfire suggests leaving a lemon slice on the glaze overnight as a rough screen. The safe reading: a positive home test means stop using the piece for food, and a negative one proves nothing. Only a lab can tell you a piece is safe.
 
-### Изделия с напукана глазура
+### Crazed ware
 
-**Напукването на глазурата**{{en: crazing}} е мрежа от фини пукнатини в повърхността на глазурата и източниците не са единодушни за него. Експеримент на Ceramics Monthly установи, че плочки с напукана глазура могат да се почистят, най-добре в съдомиялна машина, макар че след миене със сапун и вода оставаха по-малко чисти от плочките без напукване. Digitalfire смята, че „изделията с напукана глазура са неприемливи“ и че напукването „силно отслабва изделията“. Безопасният път е прост: не използвайте изделия с напукана глазура за храна.
+**Crazing** is a network of fine cracks in the glaze surface, and sources disagree about it. A Ceramics Monthly experiment found crazed tiles could be cleaned, best in a dishwasher, though they came out less clean than uncrazed tiles after soap and water. Digitalfire holds that "Crazed ware is unacceptable" and that crazing "severely weakens ware". The safe course is simple: do not use crazed pieces for food.
 
-### Вътрешни глазури
+### Liner glazes
 
-**Вътрешната глазура**{{en: liner glaze}} е глазурата от вътрешната страна на чаша или купа, където е храната. Digitalfire описва вътрешна глазура, чийто риск може да е достатъчно нисък, за да се използва без лабораторно изпитване: без оцветители, барий, олово или литий; напълно стопена; без напукване; и износоустойчива. Предупредителни признаци при всяка глазура са големите количества оцветител, кристалите по повърхността и непълното стапяне.
+A **liner glaze** is the glaze on the inside of a cup or bowl, where the food sits. Digitalfire describes a liner that may be low enough in risk to use without lab testing: no colorants, barium, lead or lithium; fully melted; no crazing; and it wears well. Even then, only a leach test of your own fired pots shows whether they are food-safe. Warning signs in any glaze are heavy amounts of colorant, crystals on the surface and poor melting.
 
-### Семейни правила, които предлагаме
+### Family rules we suggest
 
-- Детски чаши, купи и чинии: само лабораторно изпитани, устойчиви вътрешни глазури или фабрично произведени съдове за хранене.
-- Не съхранявайте кисели храни или напитки (цитрусови плодове, домати, оцет, плодов сок, вино) в съдове, глазирани с нещо, което не сте дали за изпитване.
-- Не използвайте изделия с напукана глазура за храна.
-- Пробните плочки{{en: test tiles}} и експериментите остават в ателието, никога в кухнята, в кутията с играчки или в купичката на домашния любимец.
-- Внимавайте и с друга керамика. FDA съветва да се внимава с ръчно изработени или грубо изглеждащи изделия, антики, повредени или износени изделия, находки от битпазара и ярка оранжева, червена или жълта украса.
-- Ако дете е използвало керамика, в която сега се съмнявате, FDA казва да се посъветвате с лекар за изследване за олово в кръвта.
+- Children's cups, bowls and plates: only lab-tested, durable liner glazes, or commercial dinnerware.
+- Do not store acidic food or drink (citrus, tomato, vinegar, fruit juice, wine) in pots glazed with anything you have not had tested.
+- Do not use crazed pieces for food.
+- Test tiles and experiments stay in the studio, never in the kitchen, the toy box or the pet's bowl.
+- Take care with other pottery too. The FDA advises caution with handmade or crude-looking pieces, antiques, damaged or worn pieces, flea-market finds and bright orange, red or yellow decoration.
+- If a child has used pottery you now doubt, the FDA says to talk to a doctor about a blood lead test.
 
-Повече за това как се стапят глазурите, защо някои отделят метали и какво означават границите, вижте в наръчника [Глазиране от основните принципи](/guides/glazing-basics).
+For more on how glazes melt, why some leach and what the limits mean, see [Glazing from first principles](/guides/glazing-basics).
 
 ## Източници {#sources}
 

@@ -165,69 +165,69 @@ Label: 三支一組
 
 :::orton
 
-## 自動斷電器 {#kiln-sitter}
+## The kiln sitter {#kiln-sitter lang=en}
 
-**自動斷電器**{{en: kiln sitter}}是許多基本款與老式窯外側的機械開關，小型測溫錐彎倒時，開關就會把窯關掉。最有名的是 Dawson 的 Kiln-Sitter。自動斷電器讓燒窯更輕鬆，但只是方便的工具，不是安全裝置。
+A **kiln sitter** is the mechanical switch, on the outside of many basic and older kilns, that turns the kiln off when a small cone bends. The best known is the Dawson Kiln-Sitter. It makes firing easier, but it is a convenience, not a safety device.
 
-### 運作方式
+### How it works
 
-一根瓷質**套管**伸進窯裡。在套管末端，一支小型錐或一根測溫棒橫放在兩個金屬**錐架**上，位於像翹翹板一樣轉動的**感應桿**下方。在窯外，感應桿的另一端用一個小**爪**撐住一個**配重**。小型錐軟化並彎到約 90° 時，感應桿會下垂到足以釋放配重，配重落下，電熱線的電源就被切斷。
+A porcelain tube reaches into the kiln. At its end, a small cone or a bar lies across two metal supports, under a **sensing rod** that pivots like a seesaw. Outside the kiln, the other end of the rod holds up a weight by a small claw. When the cone softens and bends to about 90°, the rod drops far enough to release the weight, the weight falls, and the power to the elements is cut.
 
-小型錐與測溫棒「提供等效的熱處理」。Orton 指出，許多初學者選擇測溫棒，因為測溫棒形狀均勻，容易每次都用相同的方式放置。小型錐是逐漸變細的，所以放在哪裡有影響：細的一端在感應桿下，窯會在較低的溫度關閉，粗的一端在感應桿下，則在較高的溫度關閉，差異「多達 1/2 個錐號」。
+Small cones and bars "give equivalent heat treatment". Orton notes that many beginners choose bars, because their even shape makes it easy to place them the same way every time. A small cone tapers, so where it sits matters: with its thin part under the rod the kiln shuts off cooler, and with its thick part hotter, a shift of "as much as 1/2 cone".
 
-### 自動斷電器該放哪一號錐
+### Which cone goes in the sitter
 
-各資料來源看法不一。製造自動斷電器的 Dawson 說，要用與棚板上目標錐相同的號數，只有在棚板上的錐沒有彎倒時，才改用溫度高一號的錐。L&L 說要用比棚板上的錐溫度高一號的錐，因為自動斷電器靠近窯壁和電熱線，受熱較多，容易太早關機。Orton 則確立了原則：「燒窯過程的最終判斷依據是棚板上的錐，不是 Kiln-Sitter 的錐或測溫棒。」
-
-> [!NOTE]
-> 我們的起點是：自動斷電器裡放與目標相同號數的小型錐，棚板上放一組測溫錐。如果窯關閉時，棚板上的目標錐彎得不夠，下次就把自動斷電器的錐換成溫度高一號的，或把錐較粗的一端放在感應桿下。如果彎過頭，就反過來做。
-
-### 設定方式，以及每次燒窯前的檢查
-
-Dawson 的步驟，同時也是每次燒窯前的檢查：
-
-1. 關掉所有開關。確認感應桿活動自如、位在套管正中央，沒有彎曲或腐蝕。如果動作遲鈍，Dawson 說要更換整組套管。
-2. 在錐架上，以及感應桿接觸錐的地方，刷一層薄薄的高溫**棚板隔離劑**（防止熔化物質黏住的塗層）。切勿把隔離劑塗在錐或瓷質套管上。
-3. 棚板與作品要與套管上下至少隔 1 英寸（25 mm），這樣就不會有東西碰到、倒向或擋住套管。
-4. 抬起配重，把爪壓在觸發板上，然後依您的自動斷電器使用說明書所示，把錐或測溫棒平放在錐架上，抵住金屬階，每次都用相同的方式。蓋上窯蓋前再檢查一次：「錐或測溫棒放置不當，可能造成過燒。」
-5. 設定限時器，並把推桿壓入直到鎖住。讓窯保持水平，配重下方的空間要淨空，配重才能落下。
-
-### 限時器
-
-許多自動斷電器，包括 Dawson 的 LT 型號，都有**限時器**：一種到了設定時間就把窯關掉的計時器，作為「萬一 KILN-SITTER 失效時」的備援。限時器應該一律設得比預期的燒窯時間更長。各資料來源設定的餘裕不同：
-
-Table: 限時器要設多久
-Label: 限時器的設定
-
-| 來源      | 設定                                                                             |
-| --------- | -------------------------------------------------------------------------------- |
-| Dawson    | 在熟悉這座窯之前，比預期的燒窯時間多 ½ 小時，之後可少到 ¼ 小時；絕不超過 20 小時 |
-| L&L       | 第一次設得非常高，並記下燒窯花了多久；之後約多 1 小時                            |
-| Bracker's | 比燒窯時間多 30 分鐘到 1 小時                                                    |
+Sources disagree. Dawson, who made the sitter, says to use the same number as the firing cone on the shelf, and to go one number hotter only if the shelf cone stays unbent. L&L says to use one number hotter than the shelf cones, because the sitter sits near the wall and the elements, gets more heat, and tends to shut off early. Orton settles the principle: "The shelf cone is the final judge of the firing process, not the Kiln-Sitter cone or bar."
 
 > [!NOTE]
-> 我們的起點是：第一次設得寬裕（在撥盤的 20 小時以內），之後比您記錄的時間多 ½ 到 1 小時。限時器也能告訴您燒窯花了多久：設在 7、結束時停在 1，就表示燒了 6 小時。
+> Our starting point: put a small cone of the same number as your target in the sitter, with a cone pack on the shelf. If the shelf firing cone is under-bent when the kiln shuts off, go one number hotter in the sitter next time, or set the thicker part of the cone under the rod. If it is over-bent, do the opposite.
 
-### 太早或太晚關機時
+### Setting it up, and checks before every firing
 
-每次燒窯後，把自動斷電器的錐與棚板上的錐一起檢查。
+Dawson's procedure, which doubles as a check before every firing:
 
-Table: 燒窯後判讀自動斷電器
-Label: 自動斷電器的問題
+1. Turn all the switches off. Check that the sensing rod moves freely, sits centered in the tube and is not bent or corroded. If it is sluggish, Dawson says to replace the tube assembly.
+2. Brush a thin coat of high-fire **kiln wash** (a coating that stops melted material sticking) onto the cone supports and the rod where it touches the cone. Never put wash on the cone or the porcelain tube.
+3. Load shelves and ware at least 1 in (25 mm) above or below the tube, so nothing can touch, fall against or block it.
+4. Lift the weight, press the claw down onto the trigger, and lay the cone or bar flat on the supports against the metal step, as your sitter's manual shows, the same way every time. Check it again before closing the lid: "AN IMPROPERLY PLACED CONE OR BAR COULD CAUSE AN OVERFIRING."
+5. Set the limit timer and push in the plunger until it locks. Keep the kiln level and the space under the weight clear, so the weight can fall.
 
-| 看到的情況                               | 可能原因                                                                         | 處理方式                                                   |
-| ---------------------------------------- | -------------------------------------------------------------------------------- | ---------------------------------------------------------- |
-| 自動斷電器已跳電，棚板上的目標錐彎得不夠 | 自動斷電器比棚板更熱（自動斷電器靠近窯壁）                                       | 自動斷電器的錐換成溫度高一號的，或把較粗的一端放在感應桿下 |
-| 自動斷電器的錐彎過 90° 很多              | 接近結束時窯升溫太快                                                             | 調低開關的設定，讓升溫慢一點（Dawson）                     |
-| 自動斷電器的錐沒有彎，或熔成一團         | 問題出在自動斷電器本身：調整不良、感應桿彎曲或腐蝕，或有東西卡在套管內或頂住套管 | 再次燒窯前，依使用說明書檢查並調整自動斷電器               |
-| 每次都太早或太晚                         | 調整不準，或感應桿磨損                                                           | 用校正規檢查；移動觸發板                                   |
+### The limit timer
 
-檢查調整時，Dawson 使用**校正規**，校正規會把感應桿固定在完全彎倒的錐會讓感應桿停下的位置；此時爪處應有「1/16 英寸的間隙」（約 1.6 mm）。每 30 次燒窯檢查一次。Ceramics Monthly 的原則是：窯太早關，就把觸發板稍微往上移；太晚關，就稍微往下移。不論自動斷電器怎麼動作，「永遠相信大型見證錐，而不是小型的斷電器錐。」
+Many sitters, including Dawson's LT models, have a **limit timer**: a clock that turns the kiln off after a set time, as a backup "in case the KILN-SITTER fails". It should always be set longer than the firing is expected to take. Sources set the margin differently:
+
+Table: How long to set the limit timer
+Label: Limit timer settings
+
+| Source    | Setting                                                                                                                      |
+| --------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| Dawson    | ½ hour longer than the expected firing time until you know the kiln, later as little as ¼ hour; never set it beyond 20 hours |
+| L&L       | Very high the first time, noting how long the firing takes; after that, about 1 hour longer                                  |
+| Bracker's | 30 minutes to 1 hour longer than the firing time                                                                             |
+
+> [!NOTE]
+> Our starting point: generous the first time (within the dial's 20 hours), then ½ to 1 hour longer than the time you recorded. The timer also tells you how long a firing took: set at 7 and ending at 1 means 6 hours.
+
+### When it shuts off early or late
+
+After each firing, read the sitter cone beside the shelf cones.
+
+Table: Reading the sitter after a firing
+Label: Kiln sitter problems
+
+| What you see                                    | Likely cause                                                                                           | What to do                                                       |
+| ----------------------------------------------- | ------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------- |
+| Sitter tripped, shelf firing cone under-bent    | The sitter ran hotter than the shelf (it sits near the wall)                                           | One cone hotter in the sitter, or the thicker part under the rod |
+| Sitter cone sagged well past 90°                | The kiln climbed too fast near the end                                                                 | Lower the switch settings, so the climb is slower (Dawson)       |
+| Sitter cone did not bend, or melted into a blob | The sitter itself: poor adjustment, a bent or corroded rod, or something lodged in or against the tube | Check and adjust the sitter by its manual before firing again    |
+| Early or late every time                        | Out of adjustment, or a worn rod                                                                       | Check with the firing gauge; move the trigger plate              |
+
+To check the adjustment, Dawson uses a **firing gauge** that holds the rod where a fully bent cone would leave it; there should then be "1/16th-inch clearance" (about 1.6 mm) at the claw. Check it every 30 firings. Ceramics Monthly's rule: if the kiln shuts off early, move the trigger plate up slightly; if late, move it down slightly. Whatever the sitter does, "Always trust large witness cones over small sitter cones."
 
 > [!WARNING]
-> **自動斷電器不是安全裝置**。Dawson 的使用說明書說，自動斷電器「並非設計為故障時自動斷電的裝置，您的窯在超過預估燒窯時間後，不應無人看管。」生坯倒向套管這麼簡單的事，就「可能造成過燒」。請在窯應該快燒完時到場檢查，而且切勿在會燃燒的東西上方或附近燒窯，例如木地板或地毯。
+> **A kiln sitter is not a safety device.** Dawson's manual says it "is NOT intended to perform as a fail-safe shut-off device and your kiln should NOT be left unattended beyond the estimated firing time." Something as simple as greenware falling against the tube "might cause an over-firing". Be there to check the kiln when it should be finishing, and never fire it over or near anything that burns, such as a wood floor or carpet.
 
-自動斷電器是為「最高到 8 號錐（含）」的燒窯而設計的。自動斷電器無法自行維持某個溫度，也無法自行緩慢降溫。不過，只要多練習並做好紀錄，就能像 Digitalfire 所說的「自己成為溫度控制器」：盯著測溫錐，用手轉動開關。
+The sitter is built for firings "up to and including Cone 8". It cannot hold a temperature or cool slowly by itself. With practice and a log, though, you can "become the controller", as Digitalfire puts it: watch the cones and turn the switches by hand.
 
 :::
 

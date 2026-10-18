@@ -361,8 +361,7 @@
     "heading": "Mối nguy",
     "intro": "Như bản ghi của mỗi nguyên liệu nêu; các nguy hiểm của thư viện có sẵn đến từ phiếu an toàn hóa chất của nhà cung cấp.",
     "line": "<b>{names}:</b> {hazards}",
-    "unknown": "{count, plural, other {Không có nguy hiểm nào được nêu cho {list}: hãy xem phiếu an toàn hóa chất đi kèm.}}",
-    "safety": "Các nguyên liệu men khô tạo bụi cần giữ khỏi phổi bạn, kể cả những nguyên liệu không được phân loại là nguy hiểm: xem <mixing>Pha trộn an toàn và thông gió</mixing>, và <home>Không gây ngộ độc cho gia đình bạn</home> nếu có trẻ em hoặc thú cưng ở gần. Khi phiếu an toàn hóa chất của một nguyên liệu nói nhiều hơn, hãy làm theo nó."
+    "unknown": "{count, plural, other {Không có nguy hiểm nào được nêu cho {list}: hãy xem phiếu an toàn hóa chất đi kèm.}}"
   },
   "compare": {
     "heading": "So sánh hai công thức men",

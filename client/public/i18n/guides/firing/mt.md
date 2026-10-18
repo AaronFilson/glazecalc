@@ -165,69 +165,69 @@ Stenna differenzi: Orton jgħid “Normalment, tara differenza ta’ mill-inqas 
 
 :::orton
 
-## Is-sitter {#kiln-sitter}
+## The kiln sitter {#kiln-sitter lang=en}
 
-Is-**sitter**{{en: kiln sitter}} huwa s-swiċċ mekkaniku, fuq barra ta’ ħafna fran sempliċi u qodma, li jitfi l-forn meta kon{{en: cone}} żgħir jitgħawweġ. L-aktar magħruf huwa Kiln-Sitter ta’ Dawson. Jagħmel il-ħami aktar faċli, imma hu kumdità, mhux apparat ta’ sigurtà.
+A **kiln sitter** is the mechanical switch, on the outside of many basic and older kilns, that turns the kiln off when a small cone bends. The best known is the Dawson Kiln-Sitter. It makes firing easier, but it is a convenience, not a safety device.
 
-### Kif jaħdem
+### How it works
 
-Tubu tal-porċellana jidħol ġol-forn. F’tarfu, kon żgħir jew virga jimteddu minn naħa għal oħra fuq żewġ appoġġi tal-metall, taħt **virga tas-sensur** li ddur fuq pern: meta tarf jinżel, l-ieħor jitla’. Barra mill-forn, it-tarf l-ieħor tal-virga jżomm piż ’il fuq b’difer żgħir. Meta l-kon jirtab u jitgħawweġ sa madwar 90°, il-virga tinżel biżżejjed biex teħles il-piż, il-piż jaqa’, u l-kurrent lejn l-elementi tat-tisħin jinqata’.
+A porcelain tube reaches into the kiln. At its end, a small cone or a bar lies across two metal supports, under a **sensing rod** that pivots like a seesaw. Outside the kiln, the other end of the rod holds up a weight by a small claw. When the cone softens and bends to about 90°, the rod drops far enough to release the weight, the weight falls, and the power to the elements is cut.
 
-Il-koni ż-żgħar u l-vireg “jagħtu trattament tas-sħana ekwivalenti”. Orton jinnota li ħafna li għadhom jibdew jagħżlu l-vireg, għax il-forma uniformi tagħhom tagħmilha faċli li tqegħidhom bl-istess mod kull darba. Kon żgħir jirqaq lejn il-ponta, għalhekk jgħodd fejn jinsab: bil-parti rqiqa tiegħu taħt il-virga, il-forn jintefa aktar kiesaħ, u bil-parti ħoxna, aktar sħun, differenza ta’ “sa 1/2 kon”.
+Small cones and bars "give equivalent heat treatment". Orton notes that many beginners choose bars, because their even shape makes it easy to place them the same way every time. A small cone tapers, so where it sits matters: with its thin part under the rod the kiln shuts off cooler, and with its thick part hotter, a shift of "as much as 1/2 cone".
 
-### Liema kon jidħol fis-sitter
+### Which cone goes in the sitter
 
-Is-sorsi ma jaqblux. Dawson, li għamel is-sitter, jgħid li tuża l-istess numru tal-kon tal-mira fuq ix-xkaffa, u li tpoġġi kon numru wieħed aktar sħun biss jekk il-kon fuq ix-xkaffa jibqa’ ma jitgħawweġx. L&L jgħid li tuża kon numru wieħed aktar sħun mill-koni fuq ix-xkaffa, għax is-sitter jinsab qrib il-ħajt u l-elementi tat-tisħin, jieħu aktar sħana, u għandu t-tendenza li jitfi kmieni. Orton jiddeċiedi l-prinċipju: “Il-kon fuq ix-xkaffa huwa l-imħallef finali tal-proċess tal-ħami, mhux il-kon jew il-virga ta’ Kiln-Sitter.”
-
-> [!NOTE]
-> Il-punt tat-tluq tagħna: poġġi fis-sitter kon żgħir bl-istess numru tal-mira tiegħek, b’sett ta’ koni{{en: cone pack}} fuq ix-xkaffa. Jekk il-kon tal-mira fuq ix-xkaffa ma jkunx tgħawweġ biżżejjed meta l-forn jintefa, il-ħamja ta’ wara poġġi fis-sitter kon numru wieħed aktar sħun, jew poġġi l-parti l-eħxen tal-kon taħt il-virga. Jekk ikun tgħawweġ iżżejjed, agħmel bil-maqlub.
-
-### L-issettjar, u kontrolli qabel kull ħamja
-
-Il-proċedura ta’ Dawson, li sservi wkoll ta’ kontroll qabel kull ħamja:
-
-1. Itfi s-swiċċijiet kollha. Iċċekkja li l-virga tas-sensur tiċċaqlaq liberament, tkun fiċ-ċentru tat-tubu u ma tkunx mgħawġa jew mikula. Jekk tiċċaqlaq b’diffikultà, Dawson jgħid li tibdel it-tubu bil-partijiet kollha tiegħu.
-2. Għaddi bil-pinzell saff irqiq ta’ **kisja tax-xkafef** għal ħami għoli (kisja li ma tħallix materjal imdewweb jeħel) fuq l-appoġġi tal-kon u fuq il-parti tal-virga li tmiss il-kon. Qatt ma tpoġġi kisja fuq il-kon jew fuq it-tubu tal-porċellana.
-3. Poġġi x-xkafef u l-oġġetti mill-inqas 1 pulzier (25 mm) ’il fuq jew ’l isfel mit-tubu, biex xejn ma jkun jista’ jmissu, jaqa’ fuqu jew jimblokkah.
-4. Għolli l-piż, agħfas id-difer ’l isfel fuq il-mekkaniżmu tal-iskattar, u poġġi l-kon jew il-virga ċatti fuq l-appoġġi, kontra t-tarġa tal-metall, kif juri l-manwal tas-sitter tiegħek, bl-istess mod kull darba. Erġa’ ċċekkjah qabel ma tagħlaq l-għatu: “KON JEW VIRGA MQIEGĦDA ĦAŻIN JISTGĦU JIKKAWŻAW ĦAMI ŻŻEJJED.”
-5. Issettja t-timer tal-limitu u agħfas il-buttuna ’l ġewwa sakemm tinqafel. Żomm il-forn livellat u l-ispazju taħt il-piż ħieles, biex il-piż ikun jista’ jaqa’.
-
-### It-timer tal-limitu
-
-Ħafna sitters, fosthom il-mudelli LT ta’ Dawson, għandhom **timer tal-limitu**: arloġġ li jitfi l-forn wara ħin stabbilit, bħala riżerva “f’każ li KILN-SITTER ifalli”. Dejjem għandek tissettjah għal aktar żmien milli tistenna li tieħu l-ħamja. Is-sorsi jagħtu marġni differenti:
-
-Table: Għal kemm tissettja t-timer tal-limitu
-Label: Issettjar tat-timer tal-limitu
-
-| Sors      | Issettjar                                                                                                                   |
-| --------- | --------------------------------------------------------------------------------------------------------------------------- |
-| Dawson    | ½ siegħa aktar mill-ħin mistenni tal-ħamja sakemm issir taf il-forn, wara anke ¼ ta’ siegħa biss; qatt aktar minn 20 siegħa |
-| L&L       | Għoli ħafna l-ewwel darba, u niżżel kemm tieħu l-ħamja; wara, madwar 1 siegħa aktar                                         |
-| Bracker’s | Minn 30 minuta sa 1 siegħa aktar mill-ħin tal-ħamja                                                                         |
+Sources disagree. Dawson, who made the sitter, says to use the same number as the firing cone on the shelf, and to go one number hotter only if the shelf cone stays unbent. L&L says to use one number hotter than the shelf cones, because the sitter sits near the wall and the elements, gets more heat, and tends to shut off early. Orton settles the principle: "The shelf cone is the final judge of the firing process, not the Kiln-Sitter cone or bar."
 
 > [!NOTE]
-> Il-punt tat-tluq tagħna: ħin twil l-ewwel darba (fil-limitu tal-20 siegħa tat-timer), imbagħad minn ½ sa 1 siegħa aktar mill-ħin li niżżilt. It-timer jgħidlek ukoll kemm damet il-ħamja: jekk issettjajtu fuq 7 u spiċċa fuq 1, il-ħamja damet 6 sigħat.
+> Our starting point: put a small cone of the same number as your target in the sitter, with a cone pack on the shelf. If the shelf firing cone is under-bent when the kiln shuts off, go one number hotter in the sitter next time, or set the thicker part of the cone under the rod. If it is over-bent, do the opposite.
 
-### Meta jitfi kmieni jew tard
+### Setting it up, and checks before every firing
 
-Wara kull ħamja, aqra l-kon tas-sitter ħdejn il-koni tax-xkaffa.
+Dawson's procedure, which doubles as a check before every firing:
 
-Table: Il-qari tas-sitter wara ħamja
-Label: Problemi tas-sitter
+1. Turn all the switches off. Check that the sensing rod moves freely, sits centered in the tube and is not bent or corroded. If it is sluggish, Dawson says to replace the tube assembly.
+2. Brush a thin coat of high-fire **kiln wash** (a coating that stops melted material sticking) onto the cone supports and the rod where it touches the cone. Never put wash on the cone or the porcelain tube.
+3. Load shelves and ware at least 1 in (25 mm) above or below the tube, so nothing can touch, fall against or block it.
+4. Lift the weight, press the claw down onto the trigger, and lay the cone or bar flat on the supports against the metal step, as your sitter's manual shows, the same way every time. Check it again before closing the lid: "AN IMPROPERLY PLACED CONE OR BAR COULD CAUSE AN OVERFIRING."
+5. Set the limit timer and push in the plunger until it locks. Keep the kiln level and the space under the weight clear, so the weight can fall.
 
-| X’tara                                                                 | Il-kawża probabbli                                                                                           | X’għandek tagħmel                                                                          |
-| ---------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ |
-| Is-sitter skatta, il-kon tal-mira fuq ix-xkaffa ma tgħawwiġx biżżejjed | Is-sitter kien aktar sħun mix-xkaffa (jinsab qrib il-ħajt)                                                   | Kon numru wieħed aktar sħun fis-sitter, jew il-parti l-eħxen taħt il-virga                 |
-| Il-kon tas-sitter niżel ħafna aktar minn 90°                           | Il-forn tela’ malajr wisq qrib it-tmiem                                                                      | Naqqas il-pożizzjonijiet tas-swiċċijiet, biex it-temperatura titla’ aktar bil-mod (Dawson) |
-| Il-kon tas-sitter ma tgħawwiġx, jew dab f’ċappa                        | Is-sitter innifsu: aġġustament ħażin, virga mgħawġa jew mikula, jew xi ħaġa mwaħħla ġewwa t-tubu jew kontrih | Iċċekkja u aġġusta s-sitter skont il-manwal tiegħu qabel ma terġa’ taħmi                   |
-| Kmieni jew tard kull darba                                             | Mhux aġġustat, jew virga milbusa                                                                             | Iċċekkja bil-gauge tal-issettjar; ċaqlaq il-pjanċa tal-iskattar                            |
+### The limit timer
 
-Biex jiċċekkja l-aġġustament, Dawson juża **gauge tal-issettjar** li jżomm il-virga fejn kien iħalliha kon mgħawweġ għal kollox; imbagħad għandu jkun hemm “spazju ta’ 1/16 ta’ pulzier” (madwar 1.6 mm) fid-difer. Iċċekkjah kull 30 ħamja. Ir-regola ta’ Ceramics Monthly: jekk il-forn jintefa kmieni, għolli ftit il-pjanċa tal-iskattar; jekk jintefa tard, niżżilha ftit. Jagħmel x’jagħmel is-sitter, “Dejjem afda l-koni xhieda{{en: witness cones}} kbar aktar mill-koni ż-żgħar tas-sitter.”
+Many sitters, including Dawson's LT models, have a **limit timer**: a clock that turns the kiln off after a set time, as a backup "in case the KILN-SITTER fails". It should always be set longer than the firing is expected to take. Sources set the margin differently:
+
+Table: How long to set the limit timer
+Label: Limit timer settings
+
+| Source    | Setting                                                                                                                      |
+| --------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| Dawson    | ½ hour longer than the expected firing time until you know the kiln, later as little as ¼ hour; never set it beyond 20 hours |
+| L&L       | Very high the first time, noting how long the firing takes; after that, about 1 hour longer                                  |
+| Bracker's | 30 minutes to 1 hour longer than the firing time                                                                             |
+
+> [!NOTE]
+> Our starting point: generous the first time (within the dial's 20 hours), then ½ to 1 hour longer than the time you recorded. The timer also tells you how long a firing took: set at 7 and ending at 1 means 6 hours.
+
+### When it shuts off early or late
+
+After each firing, read the sitter cone beside the shelf cones.
+
+Table: Reading the sitter after a firing
+Label: Kiln sitter problems
+
+| What you see                                    | Likely cause                                                                                           | What to do                                                       |
+| ----------------------------------------------- | ------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------- |
+| Sitter tripped, shelf firing cone under-bent    | The sitter ran hotter than the shelf (it sits near the wall)                                           | One cone hotter in the sitter, or the thicker part under the rod |
+| Sitter cone sagged well past 90°                | The kiln climbed too fast near the end                                                                 | Lower the switch settings, so the climb is slower (Dawson)       |
+| Sitter cone did not bend, or melted into a blob | The sitter itself: poor adjustment, a bent or corroded rod, or something lodged in or against the tube | Check and adjust the sitter by its manual before firing again    |
+| Early or late every time                        | Out of adjustment, or a worn rod                                                                       | Check with the firing gauge; move the trigger plate              |
+
+To check the adjustment, Dawson uses a **firing gauge** that holds the rod where a fully bent cone would leave it; there should then be "1/16th-inch clearance" (about 1.6 mm) at the claw. Check it every 30 firings. Ceramics Monthly's rule: if the kiln shuts off early, move the trigger plate up slightly; if late, move it down slightly. Whatever the sitter does, "Always trust large witness cones over small sitter cones."
 
 > [!WARNING]
-> **Is-sitter mhuwiex apparat ta’ sigurtà.** Il-manwal ta’ Dawson jgħid li “MHUWIEX maħsub biex jaħdem bħala apparat li jitfi l-forn b’mod żgur f’każ ta’ ħsara, u l-forn tiegħek MA GĦANDUX jitħalla mingħajr sorveljanza wara l-ħin stmat tal-ħamja.” Xi ħaġa sempliċi daqs oġġett mhux moħmi{{en: greenware}} li jaqa’ kontra t-tubu “tista’ tikkawża ħami żżejjed”. Kun hemm biex tiċċekkja l-forn meta suppost ikun qed jispiċċa, u qatt ma taħmih fuq jew qrib xi ħaġa li taqbad, bħal art tal-injam jew tapit.
+> **A kiln sitter is not a safety device.** Dawson's manual says it "is NOT intended to perform as a fail-safe shut-off device and your kiln should NOT be left unattended beyond the estimated firing time." Something as simple as greenware falling against the tube "might cause an over-firing". Be there to check the kiln when it should be finishing, and never fire it over or near anything that burns, such as a wood floor or carpet.
 
-Is-sitter huwa magħmul għal ħamjiet “sal-kon 8 inkluż”. Ma jistax iżomm temperatura jew ikessaħ bil-mod waħdu. Imma bil-prattika u b’reġistru tal-ħami, tista’ “ssir int il-kontrollur”, kif jgħidha Digitalfire: segwi l-koni u dawwar is-swiċċijiet bl-idejn.
+The sitter is built for firings "up to and including Cone 8". It cannot hold a temperature or cool slowly by itself. With practice and a log, though, you can "become the controller", as Digitalfire puts it: watch the cones and turn the switches by hand.
 
 :::
 

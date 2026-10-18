@@ -361,8 +361,7 @@
     "heading": "Zagrożenia",
     "intro": "Zgodnie z kartą każdego surowca; zagrożenia surowców z biblioteki standardowej pochodzą z kart charakterystyki dostawców.",
     "line": "<b>{names}:</b> {hazards}",
-    "unknown": "{count, plural, one {Nie podano zagrożeń dla: {list}. Należy zajrzeć do karty charakterystyki dołączonej do tego surowca.} few {Nie podano zagrożeń dla: {list}. Należy zajrzeć do kart charakterystyki dołączonych do tych surowców.} many {Nie podano zagrożeń dla: {list}. Należy zajrzeć do kart charakterystyki dołączonych do tych surowców.} other {Nie podano zagrożeń dla: {list}. Należy zajrzeć do kart charakterystyki dołączonych do tych surowców.}}",
-    "safety": "Suche surowce do szkliw wytwarzają pył, który nie powinien trafiać do płuc, także gdy surowiec nie jest sklasyfikowany jako niebezpieczny: zob. <mixing>Bezpieczne rozrabianie szkliw i wentylacja</mixing> oraz <home>Jak nie otruć własnej rodziny</home>, jeśli w pobliżu są dzieci lub zwierzęta. Jeśli karta charakterystyki surowca podaje więcej, należy postępować według niej."
+    "unknown": "{count, plural, one {Nie podano zagrożeń dla: {list}. Należy zajrzeć do karty charakterystyki dołączonej do tego surowca.} few {Nie podano zagrożeń dla: {list}. Należy zajrzeć do kart charakterystyki dołączonych do tych surowców.} many {Nie podano zagrożeń dla: {list}. Należy zajrzeć do kart charakterystyki dołączonych do tych surowców.} other {Nie podano zagrożeń dla: {list}. Należy zajrzeć do kart charakterystyki dołączonych do tych surowców.}}"
   },
   "compare": {
     "heading": "Porównaj dwie receptury",

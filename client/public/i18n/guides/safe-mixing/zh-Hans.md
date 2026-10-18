@@ -181,36 +181,36 @@ HSE 说，在有通风的封闭罩内称量和调配时，呼吸器“通常不�
 
 乐烧会产生大量烟和一氧化碳；犹他大学建议在室外进行，远离进风口和窗户。关于烧窑本身，参阅[《简易窑炉烧成》](/guides/firing)。
 
-## 需要格外小心的原料 {#materials}
+## Materials that need most care {#materials lang=en}
 
-大多数釉用原料，包括石英{{en: silica}}、黏土、长石{{en: feldspar}}和熔块{{en: frit}}，主要是粉尘危害，上述习惯可以控制这种危害。另有较少的一些原料本身就有毒，可经吸入、吞入或皮肤接触造成危害。Digitalfire 还说，色料{{en: stain}}通常比生料氧化物安全得多，并且“能溶出有毒金属的不平衡的釉，可以用任何原料做出来”：釉是否符合食品接触安全要求{{en: food safe}}，取决于整个配方，而不是某一种成分。
+Most glaze materials, including silica, clays, feldspars and frits, are mainly a dust hazard, which the habits above control. A shorter list is toxic in its own right, by breathing, swallowing or skin contact. Digitalfire adds that stains are generally much safer than raw oxides, and that "unbalanced glazes that release toxic metals can be made from any materials": food safety depends on the whole recipe, not on one ingredient.
 
-**IARC 分类**是一种致癌性分类：第 1 类指“对人类致癌”，2A 类指“对人类很可能致癌”，2B 类指“对人类可能致癌”，第 3 类指“尚无法就其对人类的致癌性进行分类”，意思是证据太少，无法判断是否致癌。
+An **IARC group** is a cancer classification: Group 1 means "carcinogenic to humans", Group 2A "probably carcinogenic to humans", Group 2B "possibly carcinogenic to humans", and Group 3 "not classifiable as to its carcinogenicity to humans", which means too little evidence to judge either way.
 
-Table: 需要格外小心的釉用原料
-Label: 需要格外小心的原料
+Table: Glaze materials that need extra care
+Label: Materials that need most care
 
-| 原料                                 | 危害                                                                                                             | 防护措施                                                                             |
-| ------------------------------------ | ---------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
-| 铅化合物和含铅熔块                   | “吸入或吞入时毒性很高”；在较低的窑温下就会挥发。                                                                 | 避免使用；Digitalfire 说仅限专家使用。凡未标明“无铅”或“不含铅”的釉，都应假定其含铅。 |
-| 碳酸钡                               | 不溶于水，但溶于胃酸；影响心脏和肌肉（心律不齐、低血钾）。                                                       | 配方允许时改用钡熔块或锶；戴呼吸器；容器贴标签。                                     |
-| 二氧化锰                             | 粉尘或烟气可导致**锰中毒**，一种类似帕金森病的神经系统疾病，通常在接触 1～3 年后发生。烟气可导致金属烟热。       | 改用低百分比的黑色色料；窑炉排风。                                                   |
-| 重铬酸钾和氧化铬                     | 铬(VI)（如重铬酸盐中的铬）属 IARC 第 1 类。这一分类不包括铬(III)（如氧化铬中的铬）。                             | 避免使用重铬酸盐。我们把氧化铬视为危害小得多的原料，但仍要控制其粉尘。               |
-| 钴                                   | 可溶性钴(II)盐为 IARC 2A 类；氧化钴(II)为 2B 类；黑色的 Co₃O₄ 为第 3 类。                                        | 控制粉尘；做黑色用色料。                                                             |
-| 镍化合物                             | 列于犹他大学的已知或很可能的人类致癌物之中。                                                                     | 用色料，不要高百分比使用。                                                           |
-| 镉和硒（生料或色料中的）             | 镉化合物列于犹他大学的已知或很可能的人类致癌物之中。                                                             | “仅限专家”（Digitalfire）；阅读任何色料的 SDS。                                      |
-| 锑和钒                               | 三价锑（如三氧化二锑中的锑）为 IARC 2A 类；钒“吸入时毒性很高”。                                                  | 钒仅限专家使用；控制锑的粉尘。                                                       |
-| 铜和锌                               | 窑内产生的烟气可导致金属烟热；未煅烧的氧化锌“一般不被认为有害”。                                                 | 窑炉排风。                                                                           |
-| 碳酸锂                               | “吸入时毒性很高”。欧盟的一个专家委员会认定它可能损害生育能力和未出生的胎儿；在我们查证时，未能确认已被正式采纳。 | 戴手套和呼吸器；远离儿童。我们建议孕期格外小心。                                     |
-| 硼砂和硼酸                           | 在欧盟被分类为“可能损害生育能力；可能对胎儿造成伤害”。                                                           | 戴手套；尽可能用熔块引入硼。                                                         |
-| 纯碱、碳酸钾{{en: potash}}、碱性长石 | 刺激皮肤。                                                                                                       | 戴手套。                                                                             |
-| 萤石、冰晶石、锂云母                 | 烧成时释放含氟气体；萤石还会刺激皮肤。                                                                           | 窑炉排风至室外；戴手套。                                                             |
-| 滑石                                 | 自 2024年7月起为 IARC 2A 类；被石棉污染的滑石按石棉对待，属第 1 类。                                             | 使用片状（非纤维状）、不含石棉的滑石；查阅其 SDS。                                   |
+| Material                               | Hazard                                                                                                                                                            | Precaution                                                                                                  |
+| -------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| Lead compounds and lead frits          | "Highly toxic by inhalation or ingestion"; vaporizes in the kiln at lower temperatures than most glaze materials.                                                 | Avoid; Digitalfire says experts only. Assume any glaze not labeled "lead-free" or "leadless" contains lead. |
+| Barium carbonate                       | Insoluble in water but dissolves in stomach acid; affects the heart and muscles (irregular heartbeat, low potassium).                                             | A barium frit or strontium where the recipe allows; respirator; labeled container.                          |
+| Manganese dioxide                      | Dust or fume can cause **manganism**, a nervous-system illness like Parkinson's disease, usually after 1 to 3 years of exposure. Fume can cause metal fume fever. | Black stains at low percentages instead; vent the kiln.                                                     |
+| Potassium dichromate and chrome oxide  | Chromium(VI), as in dichromate, is IARC Group 1. That listing does not cover chromium(III), as in chrome oxide.                                                   | Avoid dichromate. We treat chrome oxide as far less hazardous, but keep its dust down.                      |
+| Cobalt                                 | Soluble cobalt(II) salts IARC 2A; cobalt(II) oxide 2B; black Co₃O₄ Group 3.                                                                                       | Keep dust down; stains for blacks.                                                                          |
+| Nickel compounds                       | Among the University of Utah's known or probable human carcinogens.                                                                                               | Stains rather than high percentages.                                                                        |
+| Cadmium and selenium, raw or in stains | Cadmium compounds are among Utah's known or probable human carcinogens.                                                                                           | "Only by experts" (Digitalfire); read any stain's SDS.                                                      |
+| Antimony and vanadium                  | Trivalent antimony (as in antimony trioxide) IARC 2A; vanadium "highly toxic by inhalation".                                                                      | Vanadium for experts only; keep antimony dust down.                                                         |
+| Copper and zinc                        | Kiln fume can cause metal fume fever; raw zinc oxide is "generally not considered hazardous".                                                                     | Vent the kiln.                                                                                              |
+| Lithium carbonate                      | "Highly toxic by inhalation". An EU expert committee concluded it may harm fertility and the unborn child; formal adoption was not confirmed when we checked.     | Gloves and respirator; keep from children. We suggest extra care in pregnancy.                              |
+| Borax and boric acid                   | Classified in the EU as "may damage fertility; may damage the unborn child".                                                                                      | Gloves; boron from a frit where you can.                                                                    |
+| Soda ash, potash, alkaline feldspars   | Skin irritants.                                                                                                                                                   | Gloves.                                                                                                     |
+| Fluorspar, cryolite, lepidolite        | Release fluorine gases in firing; fluorspar also irritates skin.                                                                                                  | Vent the kiln outdoors; gloves.                                                                             |
+| Talc                                   | IARC 2A since July 2024; talc contaminated with asbestos counts as asbestos, Group 1.                                                                             | Platy (not fibrous), asbestos-free talc; check its SDS.                                                     |
 
-硼砂、硼酸、纯碱和碳酸钾都溶于水，所以我们认为它们最有可能通过破损的皮肤被吸收，或从没洗的手上被吞入。
+Borax, boric acid, soda ash and potash dissolve in water, so we treat them as the likeliest to be absorbed through broken skin or swallowed from unwashed hands.
 
 > [!NOTE]
-> 如果配方需要生料碳酸钡、大量的锰，或任何含铅或含镉的原料，寻找改用熔块或色料的版本。Glazecalc 可以比较原配方和替换后配方的化学组成；然后测试新釉。
+> If a recipe calls for raw barium carbonate, a lot of manganese, or any lead or cadmium material, look for a version that uses a frit or a stain instead. Glazecalc can compare the chemistry of the original and the swap; then test the new glaze.
 
 ## 手套、皮肤和眼睛 {#gloves-and-eyes}
 

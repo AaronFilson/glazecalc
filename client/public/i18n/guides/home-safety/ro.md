@@ -149,76 +149,76 @@ Pet Poison Helpline spune că „Plumbul este toxic pentru toate speciile, dar a
 
 Dacă un animal de companie ar fi putut mânca sau bea ceva din atelier ori are semne ca cele de mai sus, sunați medicul veterinar sau o linie pentru intoxicații la animale (vedeți tabelul de la început), cu denumirea materiei prime și greutatea animalului la îndemână.
 
-## Cuptorul {#the-kiln}
+## The kiln {#the-kiln lang=en}
 
-### Exteriorul se încinge cât să provoace arsuri
+### The outside gets hot enough to burn
 
-O evaluare a riscurilor pentru școlile din Regatul Unit spune că exteriorul unui cuptor „poate ajunge la 160 °C și posibil mai mult” (aproximativ 320 °F), iar un ghid despre cuptoare pentru școli raportează temperaturi de până la 460 °F (aproximativ 240 °C) la benzile metalice. Skutt, un producător de cuptoare, recomandă o cameră pentru cuptor care să poată fi încuiată, ca să nu intre copiii și animalele de companie. Acolo unde camera nu poate fi încuiată, ghidul pentru școli sugerează o barieră, de exemplu un paravan de protecție pentru cuptor.
+A UK schools risk assessment says a kiln's outside "can reach 160 °C and possibly more" (about 320 °F), and a school kiln guide reports metal bands at up to 460 °F (about 240 °C). Skutt, a kiln maker, recommends a kiln room that can be locked against children and pets. Where a room cannot be locked, the school guide suggests a barrier such as a kiln safety screen.
 
-Copiii mici și animalele de companie nu pot înțelege un semn de avertizare. Vă sugerăm să-i țineți în spatele unei uși încuiate sau al unei bariere în timpul arderii și cât timp cuptorul se răcește și să puneți un semn de avertizare pentru toți ceilalți.
+Small children and pets cannot understand a warning sign. We suggest keeping them behind a locked door or a barrier while the kiln fires and while it cools, and posting a warning sign for everyone else.
 
-### Spațiul din jurul cuptorului
+### Space around it
 
-Sursele nu sunt de acord asupra distanței de siguranță. Rio Grande indică cel puțin 12 țoli (30 cm) față de pereți și de orice lucru combustibil. L&L recomandă cu tărie 18 țoli (46 cm) față de toți pereții, iar codul de construcții pe care îl citează cere 3 picioare (0,9 m) față de pereții combustibili. Respectați manualul cuptorului și normele locale de prevenire a incendiilor; dacă aveți îndoieli, lăsați 18 țoli față de orice perete și 3 picioare față de orice poate lua foc. Într-un garaj, țineți mașinile, combustibilul și vopselele la mare distanță.
+Sources disagree on clearance. Rio Grande says at least 12 inches (30 cm) from walls and anything combustible. L&L strongly recommends 18 inches (46 cm) to all walls, and the building code it cites asks for 3 feet (0.9 m) from combustible walls. Follow your kiln's manual and local fire code; if you are unsure, allow 18 inches from any wall and 3 feet from anything that can burn. In a garage, keep cars, fuel and paint well away.
 
-### Alimentarea electrică
+### Power
 
-Rio Grande recomandă un **circuit electric separat** (unul care nu alimentează nimic altceva), cu o priză împământată corect. Vă sugerăm să nu folosiți prelungitor. Între arderi, opriți siguranța automată sau întrerupătorul de separare al cuptorului ori scoateți-l din priză, ca un copil să nu-l poată porni.
+Rio Grande recommends a **dedicated circuit** (one that powers nothing else) with a properly grounded outlet. We suggest no extension cord. Between firings, switch off the kiln's breaker or disconnect switch, or unplug it, so a child cannot start it.
 
-### Fiți de față când se termină arderea
+### Be there when the firing ends
 
-Un **Kiln-Sitter** este întrerupătorul mecanic de pe multe cuptoare cu comandă manuală: un con{{en: cone}} mic se îndoaie la sfârșitul arderii și declanșează oprirea. Manualul lui spune că „NU este destinat să funcționeze ca dispozitiv de oprire sigur la defectare”. Rio Grande spune să nu lăsați niciodată nesupravegheat un cuptor în timpul arderii, „mai ales în apropierea momentului în care se așteaptă oprirea”. Așadar, ardeți doar când un adult va fi acasă și treaz la sfârșitul arderii, verificați că cuptorul s-a oprit și țineți un stingător ABC în camera cuptorului. Despre cum funcționează dispozitivele Kiln-Sitter, controlerele și programele de ardere, vedeți ghidul [Arderea într-un cuptor simplu](/guides/firing).
+A **kiln sitter** is the mechanical switch on many manual kilns: a small cone bends at the end of the firing and trips the switch off. Its manual says it "is NOT intended to perform as a fail-safe shut-off device." Rio Grande says never to leave a firing kiln unattended, "especially near the expected shut-off time". So stay nearby and check the kiln while it fires, above all near the end; fire only when an adult will be home and awake to do that, check that it has switched off, and keep an ABC fire extinguisher in the kiln room. For how sitters, controllers and schedules work, see [Firing a basic kiln](/guides/firing).
 
-### Gazele cuptorului și monoxidul de carbon
+### Fumes and carbon monoxide
 
-Arderea produce gaze și vapori, așa că aerisiți cuptorul spre exterior; ghidul [Prepararea în siguranță și ventilația](/guides/safe-mixing) explică cum. Un cuptor aflat într-un garaj lipit de casă are nevoie de o evacuare care să împiedice gazele să ajungă în casă prin ușa de legătură. Țineți păsările într-o cameră îndepărtată la fiecare ardere.
+Firing gives off fumes, so vent the kiln to the outdoors; [Safe mixing and ventilation](/guides/safe-mixing) explains how. A kiln in an attached garage needs venting that keeps fumes from reaching the house through the connecting door. Keep birds in a far room whenever the kiln fires.
 
-**Monoxidul de carbon** (CO) este un gaz otrăvitor pe care nu îl puteți vedea și nici mirosi. Instrucțiunile de siguranță ale unei universități pentru cuptoare cer detectoare de monoxid de carbon la cuptoarele cu gaz. Pentru cuptoarele electrice părerile diferă, dar arderea materiilor organice (din argilă sau din lucruri precum hârtia sau ceara) poate produce CO. Credem că un detector de monoxid de carbon în camera cuptorului și în camerele vecine este o măsură rezonabilă și ieftină pentru orice cuptor.
+**Carbon monoxide** (CO) is a poisonous gas you cannot see or smell. A university kiln safety sheet requires CO alarms with gas kilns. Views differ for electric kilns, but burning off organic matter (in clay, or things like paper or wax) can make CO. We think a CO alarm in the kiln room and the rooms next to it is a sensible, inexpensive step for any kiln.
 
-### Vizoarele și ochii
+### Peepholes and eyes
 
-Radiația infraroșie, pe care nu o puteți vedea, „începe de la 752°F (400°C)”, iar Ceramic Arts Network spune că privitul într-un cuptor peste această temperatură ar trebui făcut întotdeauna cu protecție pentru ochi. Radiația infraroșie poate deteriora cristalinul și poate duce la cataractă, iar privitul îndelungat poate leza retina. Ochelarii de soare și ochelarii cu didim nu o opresc.
+Infrared light, which you cannot see, "starts at 752°F (400°C)", and the Ceramic Arts Network says looking into a kiln above this should always be done with eye protection. Infrared can damage the lens of the eye and lead to cataracts, and long gazing can injure the retina. Sunglasses and didymium glasses do not block it.
 
 > [!WARNING]
-> Copiii nu ar trebui să se uite deloc într-un cuptor. Un vizor care strălucește îi atrage și nu se poate conta că vor ține ochelarii de protecție la ochi, așa că țineți-i departe cât timp cuptorul este fierbinte. Adulții ar trebui să se uite doar scurt, prin ochelari de sudură cu filtru IR. Sursele recomandă nuanțe între 1,7 și 5; nuanța 3 este o alegere rezonabilă, iar dacă vedeți pete după aceea, alegeți una mai închisă.
+> Children should not look into a kiln at all. A glowing peephole draws them, and they will not reliably keep protective glasses on, so keep them away while the kiln is hot. Adults should look only briefly, through IR-rated welding glasses. Sources recommend shades from 1.7 to 5; shade 3 is a sensible choice, darker if you see spots afterward.
 
-## Piesele făcute de mână pe masa familiei {#handmade-ware}
+## Handmade ware on the family table {#handmade-ware lang=en}
 
-Problema pieselor de pe masa familiei este **migrarea metalelor**{{en: leaching}}: metalele care se dizolvă din glazura{{en: glaze}} arsă în alimente sau în băuturi. FDA avertizează că, dacă ceramica „nu este fabricată corect, acest plumb poate migra în alimente și băuturi” și că „nicio spălare, fierbere sau alt procedeu nu poate îndepărta plumbul din ceramică”. Autoritățile de reglementare, precum FDA din SUA și UE, limitează cât plumb și cadmiu cedează o piesă finită la un test standard cu acid, nu ce conține glazura. Cea mai strictă limită din SUA pentru plumb, cea pentru cești, căni și carafe, este de 0,5 µg/mL.
+The question for pots on the family table is **leaching**: metals dissolving out of the fired glaze into food or drink. The FDA warns that if pottery "is not manufactured properly, this lead can leach into food and drink", and that "no amount of washing, boiling, or other process can remove lead from pottery." Regulators such as the US FDA and the EU limit how much lead and cadmium a finished piece releases in a standard acid test, not what the glaze contains. The strictest US limit, for cups, mugs and pitchers, is 0.5 µg/mL of lead.
 
-### „Fără plumb” nu înseamnă „potrivit pentru contact alimentar”
+### Lead-free is not the same as food-safe
 
-Și o glazură fără plumb poate ceda metale. Digitalfire, o sursă de referință pentru chimia glazurilor, numește ca motiv de îngrijorare glazurile care conțin „coloranți pe bază de oxizi de metale grele, bariu, litiu sau plumb” și avertizează că un pigment ceramic{{en: stain}} ars peste temperatura maximă indicată poate elibera cadmiu. Eticheta ASTM D-4236 pentru materiale artistice de pe un borcan „NU stabilește că o glazură arsă este potrivită pentru contact alimentar”, iar „Producătorii de veselă trebuie să testeze toate piesele finite pentru a stabili dacă pot fi folosite ca veselă”.
+A glaze with no lead can still leach. Digitalfire, a glaze chemistry reference, names glazes containing "heavy metal oxide colorants, barium, lithium, or lead" as the concern, and warns that a stain fired above its rated temperature can release cadmium. The ASTM D-4236 art-materials label on a jar "DOES NOT establish that a fired glaze is food-safe", and "Tableware producers must test all finished ware to establish dinnerware status."
 
 > [!NOTE]
-> „Potrivit pentru contact alimentar”{{en: food safe}} înseamnă că această glazură, pe această argilă, arsă la acest con{{en: cone}}, aplicată în acest fel, cedează mai puțin decât limitele legale. Un calcul al rețetei, inclusiv cel din Glazecalc, poate semnala o rețetă riscantă, dar nu poate dovedi că o piesă este sigură. Doar un test de laborator privind migrarea metalelor, făcut pe piesa arsă, poate face asta.
+> "Food safe" means this glaze, on this clay, fired to this cone, applied this way, releases less than the legal limits. A recipe calculation, Glazecalc's included, can flag a risky recipe but cannot prove a pot is safe. Only a leach test of the fired piece can.
 
-Vă sugerăm să considerați mențiunea „potrivit pentru contact alimentar” de pe o glazură din comerț un bun început, nu o garanție: altă argilă, un strat mai gros, alt con sau o a doua glazură aplicată deasupra schimbă rezultatul.
+We suggest reading a "food safe" label on a commercial glaze as a good start, not a guarantee: a different clay, a thicker coat, another cone or a second glaze on top changes the result.
 
-### Testarea
+### Testing
 
-Laboratoarele testează piesele arse printr-o imersie standard în acid, care reprezintă cazul cel mai defavorabil, de exemplu ASTM C738 în SUA. Testul UE al unui laborator cere patru piese identice și durează șapte zile lucrătoare, așa că faceți piese de rezervă din orice intenționați să dați la testat.
+Laboratories test fired pieces with a standard acid soak that represents a worst case, such as ASTM C738 in the US. One lab's EU test needs four identical pieces and takes seven working days, so make spares of anything you plan to have tested.
 
-Testele făcute acasă sunt controversate. FDA spune că trusele de test cu tampon pentru uz casnic pot arăta plumbul care poate migra și că o piesă cu rezultat pozitiv nu ar trebui folosită pentru alimente. Ceramics NZ avertizează că creioanele de testare a plumbului destinate consumatorilor „nu sunt concepute pentru această utilizare” pe ceramică și pot da rezultate fals pozitive. Digitalfire sugerează să lăsați o felie de lămâie pe glazură peste noapte, ca verificare aproximativă. Interpretarea prudentă: un test făcut acasă cu rezultat pozitiv înseamnă că nu mai folosiți piesa pentru alimente, iar unul negativ nu dovedește nimic. Doar un laborator vă poate spune că o piesă este sigură.
+Home tests are disputed. The FDA says home swab kits can show leachable lead, and that a piece that tests positive should not be used for food. Ceramics NZ warns that consumer lead-test pens are "not designed for this use" on ceramics and can give false positives. Digitalfire suggests leaving a lemon slice on the glaze overnight as a rough screen. The safe reading: a positive home test means stop using the piece for food, and a negative one proves nothing. Only a lab can tell you a piece is safe.
 
-### Piesele cu glazura fisurată
+### Crazed ware
 
-**Fisurarea glazurii**{{en: crazing}} este o rețea de fisuri fine în suprafața glazurii, iar sursele nu sunt de acord în privința ei. Un experiment din Ceramics Monthly a constatat că plăcuțele cu glazura fisurată pot fi curățate, cel mai bine în mașina de spălat vase, deși după spălarea cu apă și săpun ieșeau mai puțin curate decât plăcuțele fără fisuri. Digitalfire susține că „Piesele cu glazura fisurată sunt inacceptabile” și că fisurarea „slăbește grav piesele”. Calea sigură este simplă: nu folosiți pentru alimente piese cu glazura fisurată.
+**Crazing** is a network of fine cracks in the glaze surface, and sources disagree about it. A Ceramics Monthly experiment found crazed tiles could be cleaned, best in a dishwasher, though they came out less clean than uncrazed tiles after soap and water. Digitalfire holds that "Crazed ware is unacceptable" and that crazing "severely weakens ware". The safe course is simple: do not use crazed pieces for food.
 
-### Glazurile pentru interior
+### Liner glazes
 
-O **glazură pentru interior**{{en: liner glaze}} este glazura de pe interiorul unei căni sau al unui bol, acolo unde stau alimentele. Digitalfire descrie o glazură pentru interior care ar putea avea un risc destul de mic ca să fie folosită fără testare în laborator: fără coloranți{{en: colorants}}, bariu, plumb sau litiu; complet topită; fără fisuri; și rezistentă la uzură. Semnele de avertizare la orice glazură sunt cantitățile mari de colorant, cristalele de la suprafață și topirea slabă.
+A **liner glaze** is the glaze on the inside of a cup or bowl, where the food sits. Digitalfire describes a liner that may be low enough in risk to use without lab testing: no colorants, barium, lead or lithium; fully melted; no crazing; and it wears well. Even then, only a leach test of your own fired pots shows whether they are food-safe. Warning signs in any glaze are heavy amounts of colorant, crystals on the surface and poor melting.
 
-### Regulile familiei pe care vi le sugerăm
+### Family rules we suggest
 
-- Cănile, bolurile și farfuriile copiilor: doar glazuri pentru interior durabile, testate în laborator, sau veselă din comerț.
-- Nu păstrați alimente sau băuturi acide (citrice, roșii, oțet, suc de fructe, vin) în piese glazurate cu ceva ce nu ați dat la testat.
-- Nu folosiți pentru alimente piese cu glazura fisurată.
-- Plăcuțele de test{{en: test tiles}} și experimentele rămân în atelier, niciodată în bucătărie, în cutia cu jucării sau în castronul animalului.
-- Aveți grijă și cu alte obiecte ceramice. FDA recomandă prudență cu piesele făcute de mână sau cu aspect rudimentar, cu antichitățile, cu piesele deteriorate sau uzate, cu cele găsite în târguri de vechituri și cu decorurile în portocaliu, roșu sau galben aprins.
-- Dacă un copil a folosit vase ceramice de care acum vă îndoiți, FDA spune să discutați cu un medic despre o determinare a plumbemiei.
+- Children's cups, bowls and plates: only lab-tested, durable liner glazes, or commercial dinnerware.
+- Do not store acidic food or drink (citrus, tomato, vinegar, fruit juice, wine) in pots glazed with anything you have not had tested.
+- Do not use crazed pieces for food.
+- Test tiles and experiments stay in the studio, never in the kitchen, the toy box or the pet's bowl.
+- Take care with other pottery too. The FDA advises caution with handmade or crude-looking pieces, antiques, damaged or worn pieces, flea-market finds and bright orange, red or yellow decoration.
+- If a child has used pottery you now doubt, the FDA says to talk to a doctor about a blood lead test.
 
-Despre cum se topesc glazurile, de ce unele cedează metale și ce înseamnă limitele, vedeți ghidul [Bazele glazurării](/guides/glazing-basics).
+For more on how glazes melt, why some leach and what the limits mean, see [Glazing from first principles](/guides/glazing-basics).
 
 ## Surse {#sources}
 

@@ -361,8 +361,7 @@
     "heading": "Nevarnosti",
     "intro": "Kot jih navaja zapis vsake surovine; pri standardni knjižnici izhajajo iz varnostnih listov dobaviteljev.",
     "line": "<b>{names}:</b> {hazards}",
-    "unknown": "{count, plural, one {Za {list} ni navedenih nevarnosti: glejte varnostni list, ki ga dobite zraven.} two {Za {list} ni navedenih nevarnosti: glejte varnostna lista, ki ju dobite zraven.} few {Za {list} ni navedenih nevarnosti: glejte varnostne liste, ki jih dobite zraven.} other {Za {list} ni navedenih nevarnosti: glejte varnostne liste, ki jih dobite zraven.}}",
-    "safety": "Suhe surovine za glazure ustvarjajo prah, ki ne sme v vaša pljuča, tudi tiste, ki niso razvrščene kot nevarne: glejte <mixing>Varno mešanje in prezračevanje</mixing> ter <home>Ne zastrupite svoje družine</home>, če so v bližini otroci ali hišni ljubljenčki. Kjer varnostni list surovine pove več, ravnajte po njem."
+    "unknown": "{count, plural, one {Za {list} ni navedenih nevarnosti: glejte varnostni list, ki ga dobite zraven.} two {Za {list} ni navedenih nevarnosti: glejte varnostna lista, ki ju dobite zraven.} few {Za {list} ni navedenih nevarnosti: glejte varnostne liste, ki jih dobite zraven.} other {Za {list} ni navedenih nevarnosti: glejte varnostne liste, ki jih dobite zraven.}}"
   },
   "compare": {
     "heading": "Primerjaj dva recepta",

@@ -361,8 +361,7 @@
     "heading": "Dangers",
     "intro": "Tels que les donne l’enregistrement de chaque matière ; ceux de la bibliothèque standard viennent des fiches de données de sécurité des fournisseurs.",
     "line": "<b>{names} :</b> {hazards}",
-    "unknown": "{count, plural, one {Aucun danger n’est indiqué pour {list} : consultez la fiche de données de sécurité qui l’accompagne.} many {Aucun danger n’est indiqué pour {list} : consultez les fiches de données de sécurité qui les accompagnent.} other {Aucun danger n’est indiqué pour {list} : consultez les fiches de données de sécurité qui les accompagnent.}}",
-    "safety": "Les matières d’émail sèches produisent une poussière qu’il faut tenir hors de vos poumons, même celles qui ne sont pas classées dangereuses : voir <mixing>Préparation en sécurité et ventilation</mixing>, et <home>N’empoisonnez pas votre famille</home> si des enfants ou des animaux sont présents. Quand la fiche de données de sécurité d’une matière en dit plus, suivez-la."
+    "unknown": "{count, plural, one {Aucun danger n’est indiqué pour {list} : consultez la fiche de données de sécurité qui l’accompagne.} many {Aucun danger n’est indiqué pour {list} : consultez les fiches de données de sécurité qui les accompagnent.} other {Aucun danger n’est indiqué pour {list} : consultez les fiches de données de sécurité qui les accompagnent.}}"
   },
   "compare": {
     "heading": "Comparer deux recettes",

@@ -165,69 +165,69 @@ Label: 三支一组
 
 :::orton
 
-## 窑炉看管器 {#kiln-sitter}
+## The kiln sitter {#kiln-sitter lang=en}
 
-**窑炉看管器**{{en: kiln sitter}}（Kiln-Sitter）是许多基础款和老式窑外侧的机械开关，在小号测温锥弯倒时切断窑的电源。最知名的是 Dawson 的 Kiln-Sitter。它让烧窑更容易，但只是一种便利，不是安全装置。
+A **kiln sitter** is the mechanical switch, on the outside of many basic and older kilns, that turns the kiln off when a small cone bends. The best known is the Dawson Kiln-Sitter. It makes firing easier, but it is a convenience, not a safety device.
 
-### 工作原理
+### How it works
 
-一根瓷套管伸入窑内。套管末端，一支小号测温锥或一根测温棒横放在两个金属托上，上方压着一根像跷跷板一样转动的**传感棒**。在窑外，传感棒的另一端通过一个小卡爪托起一个配重。当测温锥软化并弯到约 90° 时，传感棒落下的幅度足以释放配重，配重落下，通往电热丝的电源被切断。
+A porcelain tube reaches into the kiln. At its end, a small cone or a bar lies across two metal supports, under a **sensing rod** that pivots like a seesaw. Outside the kiln, the other end of the rod holds up a weight by a small claw. When the cone softens and bends to about 90°, the rod drops far enough to release the weight, the weight falls, and the power to the elements is cut.
 
-小号测温锥和测温棒“提供等效的热处理”。Orton 指出，许多初学者选择测温棒，因为它形状均匀，容易每次以同样的方式放置。小号测温锥是锥形的，所以放置位置有影响：细的一端在传感棒下，窑断电时较冷，粗的一端在传感棒下则较热，差别“多达 1/2 个锥号”。
+Small cones and bars "give equivalent heat treatment". Orton notes that many beginners choose bars, because their even shape makes it easy to place them the same way every time. A small cone tapers, so where it sits matters: with its thin part under the rod the kiln shuts off cooler, and with its thick part hotter, a shift of "as much as 1/2 cone".
 
-### 看管器里放哪个测温锥
+### Which cone goes in the sitter
 
-各方说法不一。制造看管器的 Dawson 说，用与棚板上烧制锥相同的号码，只有在棚板上的锥一直没有弯倒时，才改用热一号的。L&L 说，用比棚板上的锥热一号的，因为看管器靠近窑壁和电热丝，受热更多，容易过早断电。Orton 说明了原则：“烧成过程的最终裁判是棚板上的锥，而不是 Kiln-Sitter 的锥或棒。”
-
-> [!NOTE]
-> 我们建议的起点：在看管器里放一支与目标号码相同的小号测温锥，同时在棚板上放一组测温锥。如果看管器断电时，棚板上的烧制锥弯得不够，下次在看管器里改用热一号的锥，或把锥较粗的一端放在传感棒下。如果弯得过多，就反过来做。
-
-### 安装，以及每次烧窑前的检查
-
-Dawson 的步骤，同时也是每次烧窑前的检查：
-
-1. 把所有开关关掉。检查传感棒活动自如、居中位于套管内，没有弯曲或腐蚀。如果动作迟滞，Dawson 说要更换套管组件。
-2. 在锥托上，以及传感棒接触测温锥的位置，刷一薄层高温**棚板隔离剂**（防止熔化的物质粘住的涂层）。切勿把隔离剂涂在测温锥或瓷套管上。
-3. 装棚板和器物时，使其高于或低于套管至少 1 英寸（25 mm），这样没有任何东西能碰到、倒向或堵住套管。
-4. 抬起配重，把卡爪按到触发板上，再把测温锥或测温棒平放在锥托上，抵住金属台阶，按看管器使用说明书所示，每次都用同样的方式。合盖前再检查一遍：“放置不当的测温锥或测温棒可能造成过烧。”
-5. 设置限时器，并把柱塞推入，直到锁定。保持窑水平，配重下方的空间不要堵塞，使配重能够落下。
-
-### 限时器
-
-许多看管器（包括 Dawson 的 LT 型号）带有**限时器**：一个时钟，在设定时间后切断窑的电源，作为“以防窑炉看管器失灵”的后备。它应始终设得比预计的烧成时间更长。各方留的余量不同：
-
-Table: 限时器应设多长
-Label: 限时器设定
-
-| 来源      | 设定                                                                             |
-| --------- | -------------------------------------------------------------------------------- |
-| Dawson    | 在熟悉这台窑之前，比预计烧成时间长 ½ 小时，之后可以少到 ¼ 小时；切勿超过 20 小时 |
-| L&L       | 第一次设得很高，并记下烧成用了多久；之后，约长 1 小时                            |
-| Bracker's | 比烧成时间长 30 分钟到 1 小时                                                    |
+Sources disagree. Dawson, who made the sitter, says to use the same number as the firing cone on the shelf, and to go one number hotter only if the shelf cone stays unbent. L&L says to use one number hotter than the shelf cones, because the sitter sits near the wall and the elements, gets more heat, and tends to shut off early. Orton settles the principle: "The shelf cone is the final judge of the firing process, not the Kiln-Sitter cone or bar."
 
 > [!NOTE]
-> 我们建议的起点：第一次设得宽裕些（在刻度盘的 20 小时之内），之后设为比记录的时间长 ½ 到 1 小时。限时器还能告诉您一次烧成用了多久：设在 7、结束时指在 1，表示用了 6 小时。
+> Our starting point: put a small cone of the same number as your target in the sitter, with a cone pack on the shelf. If the shelf firing cone is under-bent when the kiln shuts off, go one number hotter in the sitter next time, or set the thicker part of the cone under the rod. If it is over-bent, do the opposite.
 
-### 看管器过早或过晚断电时
+### Setting it up, and checks before every firing
 
-每次烧成之后，把看管器锥与棚板上的锥放在一起对照。
+Dawson's procedure, which doubles as a check before every firing:
 
-Table: 烧成后读取看管器
-Label: 窑炉看管器的问题
+1. Turn all the switches off. Check that the sensing rod moves freely, sits centered in the tube and is not bent or corroded. If it is sluggish, Dawson says to replace the tube assembly.
+2. Brush a thin coat of high-fire **kiln wash** (a coating that stops melted material sticking) onto the cone supports and the rod where it touches the cone. Never put wash on the cone or the porcelain tube.
+3. Load shelves and ware at least 1 in (25 mm) above or below the tube, so nothing can touch, fall against or block it.
+4. Lift the weight, press the claw down onto the trigger, and lay the cone or bar flat on the supports against the metal step, as your sitter's manual shows, the same way every time. Check it again before closing the lid: "AN IMPROPERLY PLACED CONE OR BAR COULD CAUSE AN OVERFIRING."
+5. Set the limit timer and push in the plunger until it locks. Keep the kiln level and the space under the weight clear, so the weight can fall.
 
-| 看到的现象                           | 可能的原因                                                                 | 怎么做                                             |
-| ------------------------------------ | -------------------------------------------------------------------------- | -------------------------------------------------- |
-| 看管器已动作，棚板上的烧制锥弯得不够 | 看管器比棚板上烧得更热（它靠近窑壁）                                       | 看管器里改用热一号的锥，或把较粗的一端放在传感棒下 |
-| 看管器锥弯得远超过 90°               | 接近结束时窑升温太快                                                       | 调低开关档位，使升温更慢（Dawson）                 |
-| 看管器锥没有弯，或熔成一团           | 看管器本身的问题：调整不当、传感棒弯曲或腐蚀，或有东西卡在套管内或抵住套管 | 再次烧窑前，按使用说明书检查并调整看管器           |
-| 每次都过早或过晚                     | 调整失准，或传感棒磨损                                                     | 用调校规检查；移动触发板                           |
+### The limit timer
 
-检查调整时，Dawson 使用**调校规**，它把传感棒固定在完全弯倒的测温锥会让它停下的位置；此时卡爪处应有“1/16 英寸的间隙”（约 1.6 mm）。每烧 30 次检查一次。Ceramics Monthly 的规则是：如果窑过早断电，把触发板稍微向上移；如果过晚，稍微向下移。不管看管器怎么动作，“始终相信大号证据锥，而不是小号看管器锥。”
+Many sitters, including Dawson's LT models, have a **limit timer**: a clock that turns the kiln off after a set time, as a backup "in case the KILN-SITTER fails". It should always be set longer than the firing is expected to take. Sources set the margin differently:
+
+Table: How long to set the limit timer
+Label: Limit timer settings
+
+| Source    | Setting                                                                                                                      |
+| --------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| Dawson    | ½ hour longer than the expected firing time until you know the kiln, later as little as ¼ hour; never set it beyond 20 hours |
+| L&L       | Very high the first time, noting how long the firing takes; after that, about 1 hour longer                                  |
+| Bracker's | 30 minutes to 1 hour longer than the firing time                                                                             |
+
+> [!NOTE]
+> Our starting point: generous the first time (within the dial's 20 hours), then ½ to 1 hour longer than the time you recorded. The timer also tells you how long a firing took: set at 7 and ending at 1 means 6 hours.
+
+### When it shuts off early or late
+
+After each firing, read the sitter cone beside the shelf cones.
+
+Table: Reading the sitter after a firing
+Label: Kiln sitter problems
+
+| What you see                                    | Likely cause                                                                                           | What to do                                                       |
+| ----------------------------------------------- | ------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------- |
+| Sitter tripped, shelf firing cone under-bent    | The sitter ran hotter than the shelf (it sits near the wall)                                           | One cone hotter in the sitter, or the thicker part under the rod |
+| Sitter cone sagged well past 90°                | The kiln climbed too fast near the end                                                                 | Lower the switch settings, so the climb is slower (Dawson)       |
+| Sitter cone did not bend, or melted into a blob | The sitter itself: poor adjustment, a bent or corroded rod, or something lodged in or against the tube | Check and adjust the sitter by its manual before firing again    |
+| Early or late every time                        | Out of adjustment, or a worn rod                                                                       | Check with the firing gauge; move the trigger plate              |
+
+To check the adjustment, Dawson uses a **firing gauge** that holds the rod where a fully bent cone would leave it; there should then be "1/16th-inch clearance" (about 1.6 mm) at the claw. Check it every 30 firings. Ceramics Monthly's rule: if the kiln shuts off early, move the trigger plate up slightly; if late, move it down slightly. Whatever the sitter does, "Always trust large witness cones over small sitter cones."
 
 > [!WARNING]
-> **窑炉看管器不是安全装置**。Dawson 的使用说明书说，它“不是用作故障安全断电装置的，窑在预计烧成时间之外也不应无人看管”。哪怕只是生坯{{en: greenware}}倒向套管这样简单的事，也“可能造成过烧”。窑应当烧完的时候要在场查看，并且切勿在可燃物上或可燃物附近烧窑，例如木地板或地毯。
+> **A kiln sitter is not a safety device.** Dawson's manual says it "is NOT intended to perform as a fail-safe shut-off device and your kiln should NOT be left unattended beyond the estimated firing time." Something as simple as greenware falling against the tube "might cause an over-firing". Be there to check the kiln when it should be finishing, and never fire it over or near anything that burns, such as a wood floor or carpet.
 
-看管器是为“最高到并包括 8 号锥”的烧成设计的。它自己不能保持温度，也不能慢速降温。不过，凭着练习和记录，您可以“成为温控仪”（Digitalfire 的说法）：观察测温锥，用手转动开关。
+The sitter is built for firings "up to and including Cone 8". It cannot hold a temperature or cool slowly by itself. With practice and a log, though, you can "become the controller", as Digitalfire puts it: watch the cones and turn the switches by hand.
 
 :::
 

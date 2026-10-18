@@ -361,8 +361,7 @@
     "heading": "Ohud",
     "intro": "Nii, nagu iga tooraine kirje need annab; standardse teegi ohud pärinevad tarnijate ohutuskaartidelt.",
     "line": "<b>{names}:</b> {hazards}",
-    "unknown": "{count, plural, one {Ohte pole antud: {list}. Vaadake sellega kaasas olevat ohutuskaarti.} other {Ohte pole antud: {list}. Vaadake nendega kaasas olevaid ohutuskaarte.}}",
-    "safety": "Kuivad glasuuri toorained tekitavad tolmu, mida tuleb hoida kopsudest eemal, ka need, mida ei klassifitseerita ohtlikeks: vt <mixing>Ohutu segamine ja ventilatsioon</mixing> ja <home>Ärge mürgitage oma peret</home>, kui läheduses on lapsi või lemmikloomi. Kui tooraine ohutuskaart ütleb rohkem, järgige seda."
+    "unknown": "{count, plural, one {Ohte pole antud: {list}. Vaadake sellega kaasas olevat ohutuskaarti.} other {Ohte pole antud: {list}. Vaadake nendega kaasas olevaid ohutuskaarte.}}"
   },
   "compare": {
     "heading": "Kahe retsepti võrdlemine",

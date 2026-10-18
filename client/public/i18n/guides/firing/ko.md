@@ -165,69 +165,69 @@ Label: 세 개 한 조의 콘 세트
 
 :::orton
 
-## 킬른 시터 {#kiln-sitter}
+## The kiln sitter {#kiln-sitter lang=en}
 
-**킬른 시터**{{en: kiln sitter}}는 많은 기본형 가마와 오래된 가마의 바깥에 달린 기계식 스위치로, 스몰 콘이 휘면 가마를 끕니다. 가장 잘 알려진 것은 Dawson의 Kiln-Sitter입니다. 소성을 쉽게 해 주지만 편의 장치일 뿐 안전 장치가 아닙니다.
+A **kiln sitter** is the mechanical switch, on the outside of many basic and older kilns, that turns the kiln off when a small cone bends. The best known is the Dawson Kiln-Sitter. It makes firing easier, but it is a convenience, not a safety device.
 
-### 작동 원리
+### How it works
 
-자기로 만든 튜브가 가마 안으로 들어가 있습니다. 튜브 끝에서 스몰 콘이나 바 콘이 두 개의 금속 받침 위에 가로질러 놓이고, 그 위에서 시소처럼 움직이는 **센싱 로드**가 누릅니다. 가마 바깥에서는 로드의 반대쪽 끝이 작은 **클로**로 **웨이트**를 받치고 있습니다. 콘이 부드러워져 약 90°로 휘면 로드가 충분히 내려가 웨이트를 놓고, 웨이트가 떨어지면서 열선에 가는 전원이 끊깁니다.
+A porcelain tube reaches into the kiln. At its end, a small cone or a bar lies across two metal supports, under a **sensing rod** that pivots like a seesaw. Outside the kiln, the other end of the rod holds up a weight by a small claw. When the cone softens and bends to about 90°, the rod drops far enough to release the weight, the weight falls, and the power to the elements is cut.
 
-스몰 콘과 바 콘은 “같은 열처리를 해 줍니다”. Orton은 모양이 고르기 때문에 매번 같은 방식으로 놓기 쉬워서 많은 초보자가 바 콘을 고른다고 말합니다. 스몰 콘은 끝이 가늘어지므로 놓는 방향이 중요합니다. 가는 쪽이 로드 아래에 오면 가마가 더 저온에서 꺼지고, 굵은 쪽이 오면 더 고온에서 꺼지며, 그 차이는 “최대 콘 1/2개”입니다.
+Small cones and bars "give equivalent heat treatment". Orton notes that many beginners choose bars, because their even shape makes it easy to place them the same way every time. A small cone tapers, so where it sits matters: with its thin part under the rod the kiln shuts off cooler, and with its thick part hotter, a shift of "as much as 1/2 cone".
 
-### 킬른 시터에 넣는 콘
+### Which cone goes in the sitter
 
-출처마다 말이 다릅니다. 킬른 시터를 만든 Dawson은 내화판 위의 소성 콘과 같은 번호를 쓰고, 내화판 위의 콘이 휘지 않을 때만 한 단계 고온의 콘을 쓰라고 합니다. L&L은 내화판 위의 콘보다 한 단계 고온의 콘을 쓰라고 합니다. 킬른 시터는 벽과 열선 가까이에 있어 열을 더 받고 일찍 꺼지는 경향이 있기 때문입니다. Orton은 원칙을 정리합니다. “소성 과정의 최종 판단자는 Kiln-Sitter의 콘이나 바 콘이 아니라 내화판 위의 콘입니다.”
-
-> [!NOTE]
-> 저희의 출발점은 다음과 같습니다. 킬른 시터에는 목표와 같은 번호의 스몰 콘을 넣고, 내화판 위에는 콘 세트를 놓습니다. 가마가 꺼졌을 때 내화판 위의 소성 콘이 덜 휘어 있으면, 다음에는 킬른 시터에 한 단계 고온의 콘을 넣거나 콘의 굵은 쪽이 로드 아래에 오게 놓으세요. 너무 많이 휘어 있으면 반대로 하세요.
-
-### 설치와 소성 전 점검
-
-Dawson의 순서이며, 매번 소성하기 전의 점검도 됩니다.
-
-1. 모든 스위치를 끕니다. 센싱 로드가 자유롭게 움직이는지, 튜브 가운데에 있는지, 휘거나 녹슬지 않았는지 확인하세요. 움직임이 둔하면 Dawson은 튜브 조립품을 교체하라고 합니다.
-2. 콘 받침과, 로드가 콘에 닿는 부분에 고화도용 **내화판 코팅제**(녹은 물질이 달라붙지 않게 하는 코팅)를 얇게 바르세요. 콘이나 자기 튜브에는 절대 코팅제를 바르지 마세요.
-3. 아무것도 튜브에 닿거나, 기대어 쓰러지거나, 튜브를 막지 못하도록 내화판과 기물을 튜브에서 위나 아래로 1인치(25 mm) 이상 띄워 재임하세요.
-4. 웨이트를 들어 올리고, 클로를 트리거 위로 눌러 내린 다음, 사용하는 킬른 시터의 사용 설명서에 나온 대로 콘이나 바 콘을 받침 위의 금속 턱에 붙여 평평하게 놓으세요. 매번 같은 방식으로 놓습니다. 뚜껑을 닫기 전에 한 번 더 확인하세요. “콘이나 바 콘을 잘못 놓으면 과다 소성이 될 수 있습니다.”
-5. 리밋 타이머를 설정하고 플런저를 잠길 때까지 밀어 넣으세요. 웨이트가 떨어질 수 있도록 가마를 수평으로 유지하고 웨이트 아래 공간을 비워 두세요.
-
-### 리밋 타이머
-
-Dawson의 LT 모델을 비롯한 많은 킬른 시터에는 **리밋 타이머**가 있습니다. 정해진 시간이 지나면 가마를 끄는 시계이며, “KILN-SITTER가 고장 날 때”를 대비한 예비 장치입니다. 소성에 걸릴 것으로 예상하는 시간보다 항상 길게 설정해야 합니다. 여유를 얼마나 둘지는 출처마다 다릅니다.
-
-Table: 리밋 타이머를 얼마나 길게 설정할까
-Label: 리밋 타이머 설정
-
-| 출처      | 설정                                                                                                                 |
-| --------- | -------------------------------------------------------------------------------------------------------------------- |
-| Dawson    | 가마에 익숙해질 때까지는 예상 소성 시간보다 ½시간 길게, 익숙해진 뒤에는 ¼시간까지 줄일 수 있음, 20시간을 넘기지 않음 |
-| L&L       | 처음에는 아주 길게 설정하고 소성에 걸리는 시간을 기록, 그 뒤에는 약 1시간 더 길게                                    |
-| Bracker's | 소성 시간보다 30분~1시간 더 길게                                                                                     |
+Sources disagree. Dawson, who made the sitter, says to use the same number as the firing cone on the shelf, and to go one number hotter only if the shelf cone stays unbent. L&L says to use one number hotter than the shelf cones, because the sitter sits near the wall and the elements, gets more heat, and tends to shut off early. Orton settles the principle: "The shelf cone is the final judge of the firing process, not the Kiln-Sitter cone or bar."
 
 > [!NOTE]
-> 저희의 출발점은 다음과 같습니다. 처음에는 넉넉하게(다이얼의 20시간 안에서) 설정하고, 그 뒤에는 기록한 시간보다 ½~1시간 길게 설정하세요. 타이머는 소성에 걸린 시간도 알려 줍니다. 7에 맞추었는데 1에서 끝났다면 6시간이 걸린 것입니다.
+> Our starting point: put a small cone of the same number as your target in the sitter, with a cone pack on the shelf. If the shelf firing cone is under-bent when the kiln shuts off, go one number hotter in the sitter next time, or set the thicker part of the cone under the rod. If it is over-bent, do the opposite.
 
-### 너무 일찍 또는 늦게 꺼질 때
+### Setting it up, and checks before every firing
 
-소성할 때마다 끝난 뒤에 내화판 위의 콘 옆에서 킬른 시터 콘을 읽으세요.
+Dawson's procedure, which doubles as a check before every firing:
 
-Table: 소성 후 킬른 시터 읽기
-Label: 킬른 시터 문제
+1. Turn all the switches off. Check that the sensing rod moves freely, sits centered in the tube and is not bent or corroded. If it is sluggish, Dawson says to replace the tube assembly.
+2. Brush a thin coat of high-fire **kiln wash** (a coating that stops melted material sticking) onto the cone supports and the rod where it touches the cone. Never put wash on the cone or the porcelain tube.
+3. Load shelves and ware at least 1 in (25 mm) above or below the tube, so nothing can touch, fall against or block it.
+4. Lift the weight, press the claw down onto the trigger, and lay the cone or bar flat on the supports against the metal step, as your sitter's manual shows, the same way every time. Check it again before closing the lid: "AN IMPROPERLY PLACED CONE OR BAR COULD CAUSE AN OVERFIRING."
+5. Set the limit timer and push in the plunger until it locks. Keep the kiln level and the space under the weight clear, so the weight can fall.
 
-| 보이는 것                                                 | 있을 만한 원인                                                                      | 할 일                                                                   |
-| --------------------------------------------------------- | ----------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
-| 킬른 시터가 작동했는데 내화판 위의 소성 콘이 덜 휘어 있음 | 킬른 시터가 내화판보다 더 고온으로 소성되었음(벽 근처에 있기 때문)                  | 킬른 시터에 한 단계 고온의 콘을 넣거나, 굵은 쪽이 로드 아래에 오게 놓음 |
-| 킬른 시터 콘이 90°를 크게 넘어 처졌음                     | 끝 무렵에 가마가 너무 빨리 올랐음                                                   | 스위치 설정을 낮추어 더 천천히 오르게 함(Dawson)                        |
-| 킬른 시터 콘이 휘지 않았거나 덩어리로 녹았음              | 킬른 시터 자체의 문제: 조정 불량, 휘거나 녹슨 로드, 튜브 안이나 옆에 끼어 있는 물체 | 다시 소성하기 전에 사용 설명서에 따라 킬른 시터를 점검하고 조정함       |
-| 매번 일찍 또는 늦게 꺼짐                                  | 조정이 맞지 않음, 또는 로드가 마모되었음                                            | 파이어링 게이지로 점검하고, 트리거 플레이트를 움직임                    |
+### The limit timer
 
-조정을 점검하려면 Dawson은 **파이어링 게이지**를 쓰는데, 완전히 휜 콘이 놓일 때 로드가 있을 자리에 로드를 잡아 주는 도구입니다. 그때 클로에 “1/16인치 간격”(약 1.6 mm)이 있어야 합니다. 30번 소성할 때마다 점검하세요. Ceramics Monthly의 규칙은, 가마가 일찍 꺼지면 트리거 플레이트를 조금 위로, 늦게 꺼지면 조금 아래로 옮기라는 것입니다. 킬른 시터가 어떻게 작동했든 “작은 킬른 시터 콘보다 큰 확인용 콘을 항상 믿으세요.”
+Many sitters, including Dawson's LT models, have a **limit timer**: a clock that turns the kiln off after a set time, as a backup "in case the KILN-SITTER fails". It should always be set longer than the firing is expected to take. Sources set the margin differently:
+
+Table: How long to set the limit timer
+Label: Limit timer settings
+
+| Source    | Setting                                                                                                                      |
+| --------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| Dawson    | ½ hour longer than the expected firing time until you know the kiln, later as little as ¼ hour; never set it beyond 20 hours |
+| L&L       | Very high the first time, noting how long the firing takes; after that, about 1 hour longer                                  |
+| Bracker's | 30 minutes to 1 hour longer than the firing time                                                                             |
+
+> [!NOTE]
+> Our starting point: generous the first time (within the dial's 20 hours), then ½ to 1 hour longer than the time you recorded. The timer also tells you how long a firing took: set at 7 and ending at 1 means 6 hours.
+
+### When it shuts off early or late
+
+After each firing, read the sitter cone beside the shelf cones.
+
+Table: Reading the sitter after a firing
+Label: Kiln sitter problems
+
+| What you see                                    | Likely cause                                                                                           | What to do                                                       |
+| ----------------------------------------------- | ------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------- |
+| Sitter tripped, shelf firing cone under-bent    | The sitter ran hotter than the shelf (it sits near the wall)                                           | One cone hotter in the sitter, or the thicker part under the rod |
+| Sitter cone sagged well past 90°                | The kiln climbed too fast near the end                                                                 | Lower the switch settings, so the climb is slower (Dawson)       |
+| Sitter cone did not bend, or melted into a blob | The sitter itself: poor adjustment, a bent or corroded rod, or something lodged in or against the tube | Check and adjust the sitter by its manual before firing again    |
+| Early or late every time                        | Out of adjustment, or a worn rod                                                                       | Check with the firing gauge; move the trigger plate              |
+
+To check the adjustment, Dawson uses a **firing gauge** that holds the rod where a fully bent cone would leave it; there should then be "1/16th-inch clearance" (about 1.6 mm) at the claw. Check it every 30 firings. Ceramics Monthly's rule: if the kiln shuts off early, move the trigger plate up slightly; if late, move it down slightly. Whatever the sitter does, "Always trust large witness cones over small sitter cones."
 
 > [!WARNING]
-> **킬른 시터는 안전 장치가 아닙니다.** Dawson의 사용 설명서는 킬른 시터가 “고장이 나도 안전하게 전원을 차단하는 장치로 작동하도록 만든 것이 아니며, 가마를 예상 소성 시간이 지난 뒤에도 지켜보는 사람 없이 두어서는 안 됩니다”라고 말합니다. 소성 전 기물이 튜브에 기대어 쓰러지는 것처럼 단순한 일도 “과다 소성을 일으킬 수 있습니다”. 가마가 끝날 시간에 가마를 확인할 수 있도록 곁에 있고, 나무 바닥이나 카펫처럼 불에 타는 것 위나 근처에서는 절대 소성하지 마세요.
+> **A kiln sitter is not a safety device.** Dawson's manual says it "is NOT intended to perform as a fail-safe shut-off device and your kiln should NOT be left unattended beyond the estimated firing time." Something as simple as greenware falling against the tube "might cause an over-firing". Be there to check the kiln when it should be finishing, and never fire it over or near anything that burns, such as a wood floor or carpet.
 
-킬른 시터는 “오튼 콘 8까지 포함하는” 소성용으로 만들어져 있습니다. 혼자서는 온도를 유지하거나 천천히 식힐 수 없습니다. 하지만 연습하고 기록을 남기면 Digitalfire의 표현처럼 “직접 컨트롤러가 될” 수 있습니다. 콘을 보면서 스위치를 손으로 돌리는 것입니다.
+The sitter is built for firings "up to and including Cone 8". It cannot hold a temperature or cool slowly by itself. With practice and a log, though, you can "become the controller", as Digitalfire puts it: watch the cones and turn the switches by hand.
 
 :::
 

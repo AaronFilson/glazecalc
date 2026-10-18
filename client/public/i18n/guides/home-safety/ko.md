@@ -149,76 +149,76 @@ Pet Poison Helpline은 “납은 모든 종에게 유독하지만, 어리거나 
 
 반려동물이 작업실의 무언가를 먹거나 마셨을 수 있거나, 위와 같은 증상을 보이면, 원료 이름과 반려동물의 체중을 바로 말할 수 있게 준비해 수의사나 동물 중독 상담 전화(맨 위의 표 참조)로 전화하세요.
 
-## 가마 {#the-kiln}
+## The kiln {#the-kiln lang=en}
 
-### 화상을 입을 만큼 뜨거운 가마 겉면
+### The outside gets hot enough to burn
 
-영국의 한 학교용 위험성 평가는 가마 겉면이 “160 °C, 어쩌면 그 이상에 이를 수 있다”(약 320 °F)고 하며, 한 학교용 가마 관리 안내서는 금속 밴드가 최대 460 °F(약 240 °C)에 이른다고 보고합니다. 가마 제조사 Skutt은 아이와 반려동물이 들어오지 못하게 잠글 수 있는 가마실을 권합니다. 방을 잠글 수 없는 경우, 그 학교용 안내서는 가마 안전 스크린 같은 차단물을 제안합니다.
+A UK schools risk assessment says a kiln's outside "can reach 160 °C and possibly more" (about 320 °F), and a school kiln guide reports metal bands at up to 460 °F (about 240 °C). Skutt, a kiln maker, recommends a kiln room that can be locked against children and pets. Where a room cannot be locked, the school guide suggests a barrier such as a kiln safety screen.
 
-어린아이와 반려동물은 경고 표지를 이해하지 못합니다. 가마를 소성하는 동안과 식는 동안에는 잠긴 문이나 차단물 뒤에 있게 하고, 다른 사람들을 위해서는 경고 표지를 붙여 두기를 권합니다.
+Small children and pets cannot understand a warning sign. We suggest keeping them behind a locked door or a barrier while the kiln fires and while it cools, and posting a warning sign for everyone else.
 
-### 주변 공간
+### Space around it
 
-이격 거리{{en: clearance}}에 대해서는 자료마다 다릅니다. Rio Grande는 벽과 가연물에서 최소 12인치(30 cm)를 띄우라고 합니다. L&L은 모든 벽에서 18인치(46 cm)를 강력히 권하며, L&L이 인용하는 건축 법규는 가연성 벽에서 3피트(0.9 m)를 요구합니다. 사용하는 가마의 사용 설명서와 지역의 소방 법규를 따르세요. 확실하지 않으면 모든 벽에서 18인치, 탈 수 있는 모든 것에서 3피트를 띄우세요. 차고라면 자동차, 연료, 페인트를 충분히 멀리 두세요.
+Sources disagree on clearance. Rio Grande says at least 12 inches (30 cm) from walls and anything combustible. L&L strongly recommends 18 inches (46 cm) to all walls, and the building code it cites asks for 3 feet (0.9 m) from combustible walls. Follow your kiln's manual and local fire code; if you are unsure, allow 18 inches from any wall and 3 feet from anything that can burn. In a garage, keep cars, fuel and paint well away.
 
-### 전원
+### Power
 
-Rio Grande는 제대로 접지된 콘센트가 있는 **전용 회로**(다른 것에는 전기를 공급하지 않는 회로)를 권합니다. 저희는 연장선을 쓰지 않기를 권합니다. 소성과 소성 사이에는 가마의 차단기나 전원 차단 스위치를 내리거나 플러그를 뽑아, 아이가 가마를 켜지 못하게 하세요.
+Rio Grande recommends a **dedicated circuit** (one that powers nothing else) with a properly grounded outlet. We suggest no extension cord. Between firings, switch off the kiln's breaker or disconnect switch, or unplug it, so a child cannot start it.
 
-### 소성이 끝날 때 곁에 있기
+### Be there when the firing ends
 
-**킬른 시터**{{en: kiln sitter}}는 여러 수동 가마에 달린 기계식 스위치입니다. 소성이 끝날 무렵 작은 콘{{en: cone}}이 휘면서 스위치를 끕니다. 그 사용 설명서는 킬른 시터가 “고장이 나도 안전하게 전원을 차단하는 장치로 작동하도록 만든 것이 **아니다**”라고 말합니다. Rio Grande는 소성 중인 가마를 “특히 꺼질 것으로 예상되는 시각 무렵에는” 절대 지켜보는 사람 없이 두지 말라고 합니다. 그러니 소성이 끝날 때 어른이 집에 있고 깨어 있을 때만 소성하고, 가마가 꺼졌는지 확인하고, 가마실에 ABC 소화기를 두세요. 킬른 시터, 컨트롤러, 소성 스케줄이 작동하는 방식은 《[기본 가마 소성](/guides/firing)》을 보세요.
+A **kiln sitter** is the mechanical switch on many manual kilns: a small cone bends at the end of the firing and trips the switch off. Its manual says it "is NOT intended to perform as a fail-safe shut-off device." Rio Grande says never to leave a firing kiln unattended, "especially near the expected shut-off time". So stay nearby and check the kiln while it fires, above all near the end; fire only when an adult will be home and awake to do that, check that it has switched off, and keep an ABC fire extinguisher in the kiln room. For how sitters, controllers and schedules work, see [Firing a basic kiln](/guides/firing).
 
-### 가스와 일산화탄소
+### Fumes and carbon monoxide
 
-소성하면 가스가 나오므로 가마를 바깥으로 배기하세요. 방법은 《[안전한 유약 배합과 환기](/guides/safe-mixing)》에서 설명합니다. 집에 붙은 차고에 있는 가마는 가스가 연결된 문을 통해 집 안으로 들어오지 않도록 배기해야 합니다. 가마를 소성할 때마다 새는 멀리 떨어진 방에 두세요.
+Firing gives off fumes, so vent the kiln to the outdoors; [Safe mixing and ventilation](/guides/safe-mixing) explains how. A kiln in an attached garage needs venting that keeps fumes from reaching the house through the connecting door. Keep birds in a far room whenever the kiln fires.
 
-**일산화탄소**(CO)는 보이지도 않고 냄새도 나지 않는 유독 가스입니다. 한 대학의 가마 안전 자료는 가스가마에 일산화탄소 경보기를 갖추도록 요구합니다. 전기가마에 대해서는 의견이 갈리지만, 유기물(점토 속의 유기물, 또는 종이나 왁스 같은 것)이 타면서 CO가 생길 수 있습니다. 저희는 어떤 가마든 가마실과 그 옆방에 일산화탄소 경보기를 다는 것이 합리적이고 저렴한 조치라고 생각합니다.
+**Carbon monoxide** (CO) is a poisonous gas you cannot see or smell. A university kiln safety sheet requires CO alarms with gas kilns. Views differ for electric kilns, but burning off organic matter (in clay, or things like paper or wax) can make CO. We think a CO alarm in the kiln room and the rooms next to it is a sensible, inexpensive step for any kiln.
 
-### 불구멍과 눈
+### Peepholes and eyes
 
-눈에 보이지 않는 적외선은 “752°F (400°C)부터 시작”되며, Ceramic Arts Network는 이보다 높은 온도에서 가마 안을 들여다볼 때는 언제나 보안경을 쓰고 해야 한다고 말합니다. 적외선은 눈의 수정체를 손상시켜 백내장을 일으킬 수 있으며, 오래 들여다보면 망막을 다칠 수 있습니다. 선글라스와 디디뮴 안경으로는 적외선을 막지 못합니다.
+Infrared light, which you cannot see, "starts at 752°F (400°C)", and the Ceramic Arts Network says looking into a kiln above this should always be done with eye protection. Infrared can damage the lens of the eye and lead to cataracts, and long gazing can injure the retina. Sunglasses and didymium glasses do not block it.
 
 > [!WARNING]
-> 아이들은 가마 안을 아예 들여다보면 안 됩니다. 빛나는 불구멍은 아이들의 눈길을 끌고, 아이들이 보안경을 계속 쓰고 있으리라 믿을 수 없으므로, 가마가 뜨거운 동안에는 가까이 오지 못하게 하세요. 어른도 적외선을 막는 용접용 보안경을 쓰고 잠깐만 들여다봐야 합니다. 자료들은 차광도 1.7~5를 권합니다. 차광도 3이 합리적인 선택이며, 들여다본 뒤 눈앞에 점이 보이면 더 어두운 것을 쓰세요.
+> Children should not look into a kiln at all. A glowing peephole draws them, and they will not reliably keep protective glasses on, so keep them away while the kiln is hot. Adults should look only briefly, through IR-rated welding glasses. Sources recommend shades from 1.7 to 5; shade 3 is a sensible choice, darker if you see spots afterward.
 
-## 가족 식탁의 수제 그릇 {#handmade-ware}
+## Handmade ware on the family table {#handmade-ware lang=en}
 
-가족 식탁에 오르는 그릇에서 문제는 **용출**{{en: leaching}}입니다. 소성한 유약에서 금속이 녹아 나와 음식이나 음료로 옮겨 가는 것을 말합니다. 미국 식품의약국(FDA)은 도자기가 “제대로 만들어지지 않으면 이 납이 음식과 음료로 용출될 수 있으며”, “씻거나 끓이거나 다른 어떤 처리를 해도 도자기에서 납을 없앨 수 없다”고 경고합니다. 미국 FDA나 EU 같은 규제 기관은 유약에 무엇이 들어 있는지가 아니라, 완성된 기물이 표준 산 시험에서 납과 카드뮴을 얼마나 내놓는지를 제한합니다. 미국에서 가장 엄격한 기준은 컵, 머그, 피처에 대한 것으로, 납 0.5 µg/mL입니다.
+The question for pots on the family table is **leaching**: metals dissolving out of the fired glaze into food or drink. The FDA warns that if pottery "is not manufactured properly, this lead can leach into food and drink", and that "no amount of washing, boiling, or other process can remove lead from pottery." Regulators such as the US FDA and the EU limit how much lead and cadmium a finished piece releases in a standard acid test, not what the glaze contains. The strictest US limit, for cups, mugs and pitchers, is 0.5 µg/mL of lead.
 
-### 무연과 식품용 안전의 차이
+### Lead-free is not the same as food-safe
 
-납이 없는 유약도 용출될 수 있습니다. 유약 화학 참고 자료인 Digitalfire는 “중금속 산화물 발색제, 바륨, 리튬 또는 납”이 든 유약을 우려 대상으로 꼽으며, 정해진 온도보다 높게 소성한 안료{{en: stain}}가 카드뮴을 내놓을 수 있다고 경고합니다. 병에 붙은 ASTM D-4236 미술 재료 라벨은 “소성한 유약이 식품용으로 안전함을 입증하는 것이 **아니며**”, “식기 생산자는 식기로 쓸 수 있는지 확인하려면 완성된 모든 기물을 시험해야 한다”고 합니다.
+A glaze with no lead can still leach. Digitalfire, a glaze chemistry reference, names glazes containing "heavy metal oxide colorants, barium, lithium, or lead" as the concern, and warns that a stain fired above its rated temperature can release cadmium. The ASTM D-4236 art-materials label on a jar "DOES NOT establish that a fired glaze is food-safe", and "Tableware producers must test all finished ware to establish dinnerware status."
 
 > [!NOTE]
-> “식품용으로 안전하다”{{en: food-safe}}는 말은 이 유약을, 이 소지{{en: clay}}에, 이 콘까지 소성하고, 이 방식으로 시유했을 때 법적 기준 미만으로 용출된다는 뜻입니다. Glazecalc를 포함해 어떤 레시피 계산도 위험한 레시피를 표시할 수는 있지만, 기물이 안전하다는 것을 증명할 수는 없습니다. 그것을 증명할 수 있는 것은 소성한 기물의 용출시험{{en: leach test}}뿐입니다.
+> "Food safe" means this glaze, on this clay, fired to this cone, applied this way, releases less than the legal limits. A recipe calculation, Glazecalc's included, can flag a risky recipe but cannot prove a pot is safe. Only a leach test of the fired piece can.
 
-시판 유약의 “식품용으로 안전” 라벨은 보증이 아니라 좋은 출발점으로 읽기를 권합니다. 다른 소지, 더 두꺼운 시유, 다른 콘, 위에 덧바른 두 번째 유약은 결과를 바꿉니다.
+We suggest reading a "food safe" label on a commercial glaze as a good start, not a guarantee: a different clay, a thicker coat, another cone or a second glaze on top changes the result.
 
-### 시험
+### Testing
 
-시험 기관은 최악의 경우를 나타내는 표준 산 침지 시험으로 소성한 기물을 시험합니다. 미국의 ASTM C738이 그 예입니다. 한 시험 기관의 EU 시험은 똑같은 기물 네 점이 필요하고 영업일로 이레가 걸리므로, 시험을 맡길 기물은 여분을 만들어 두세요.
+Laboratories test fired pieces with a standard acid soak that represents a worst case, such as ASTM C738 in the US. One lab's EU test needs four identical pieces and takes seven working days, so make spares of anything you plan to have tested.
 
-가정용 시험은 논란이 있습니다. FDA는 가정용 면봉 키트로 용출될 수 있는 납을 확인할 수 있으며, 양성으로 나온 기물은 음식에 쓰면 안 된다고 말합니다. Ceramics NZ는 소비자용 납 검사 펜이 도자기에는 “이런 용도로 만들어지지 않았으며” 위양성이 나올 수 있다고 경고합니다. Digitalfire는 대략적인 선별 방법으로 레몬 조각을 유약 위에 하룻밤 올려 두기를 제안합니다. 안전한 해석은 이렇습니다. 가정용 시험에서 양성이 나오면 그 기물을 음식에 쓰지 말고, 음성이 나와도 아무것도 증명되지 않습니다. 기물이 안전하다고 말해 줄 수 있는 것은 시험 기관뿐입니다.
+Home tests are disputed. The FDA says home swab kits can show leachable lead, and that a piece that tests positive should not be used for food. Ceramics NZ warns that consumer lead-test pens are "not designed for this use" on ceramics and can give false positives. Digitalfire suggests leaving a lemon slice on the glaze overnight as a rough screen. The safe reading: a positive home test means stop using the piece for food, and a negative one proves nothing. Only a lab can tell you a piece is safe.
 
-### 빙렬이 생긴 기물
+### Crazed ware
 
-**빙렬**{{en: crazing}}은 유약 표면에 생긴 가는 금의 그물이며, 이에 대해서는 자료마다 의견이 다릅니다. Ceramics Monthly의 한 실험에서는 빙렬이 생긴 타일도 씻어서 깨끗하게 할 수 있었고 식기세척기가 가장 좋았지만, 비누와 물로 씻은 뒤에는 빙렬이 없는 타일보다 덜 깨끗했습니다. Digitalfire는 “빙렬이 생긴 기물은 받아들일 수 없다”며, 빙렬이 “기물을 크게 약하게 만든다”고 봅니다. 안전한 방법은 간단합니다. 빙렬이 생긴 기물은 음식에 쓰지 마세요.
+**Crazing** is a network of fine cracks in the glaze surface, and sources disagree about it. A Ceramics Monthly experiment found crazed tiles could be cleaned, best in a dishwasher, though they came out less clean than uncrazed tiles after soap and water. Digitalfire holds that "Crazed ware is unacceptable" and that crazing "severely weakens ware". The safe course is simple: do not use crazed pieces for food.
 
-### 안쪽 면용 유약
+### Liner glazes
 
-**안쪽 면용 유약**{{en: liner glaze}}은 컵이나 그릇의 안쪽, 음식이 닿는 곳에 시유하는 유약입니다. Digitalfire는 시험 기관의 시험 없이 써도 될 만큼 위험이 낮을 수 있는 안쪽 면용 유약을 이렇게 설명합니다. 발색제, 바륨, 납, 리튬이 없을 것, 완전히 녹았을 것, 빙렬이 없을 것, 마모에 잘 견딜 것. 어떤 유약이든 경고 신호는 많은 양의 발색제, 표면의 결정, 잘 녹지 않은 상태입니다.
+A **liner glaze** is the glaze on the inside of a cup or bowl, where the food sits. Digitalfire describes a liner that may be low enough in risk to use without lab testing: no colorants, barium, lead or lithium; fully melted; no crazing; and it wears well. Even then, only a leach test of your own fired pots shows whether they are food-safe. Warning signs in any glaze are heavy amounts of colorant, crystals on the surface and poor melting.
 
-### 저희가 권하는 가족 규칙
+### Family rules we suggest
 
-- 아이의 컵, 그릇, 접시에는 시험 기관의 시험을 거친 내구성 있는 안쪽 면용 유약을 쓴 것, 또는 시판 식기만 쓰세요.
-- 시험을 맡기지 않은 유약으로 시유한 그릇에는 산성 음식이나 음료(감귤류, 토마토, 식초, 과일 주스, 포도주)를 보관하지 마세요.
-- 빙렬이 생긴 기물은 음식에 쓰지 마세요.
-- 시편과 실험 기물은 작업실에 두고, 주방이나 장난감 상자에 두거나 반려동물 그릇으로 쓰는 일은 절대 없게 하세요.
-- 다른 도자기도 조심하세요. FDA는 수제품이나 조잡해 보이는 그릇, 골동품, 손상되거나 닳은 그릇, 벼룩시장에서 산 그릇, 밝은 주황·빨강·노랑 장식이 있는 그릇에 주의하라고 권합니다.
-- 지금 의심되는 도자기를 아이가 써 왔다면, FDA는 혈중 납 검사에 대해 의사와 상담하라고 말합니다.
+- Children's cups, bowls and plates: only lab-tested, durable liner glazes, or commercial dinnerware.
+- Do not store acidic food or drink (citrus, tomato, vinegar, fruit juice, wine) in pots glazed with anything you have not had tested.
+- Do not use crazed pieces for food.
+- Test tiles and experiments stay in the studio, never in the kitchen, the toy box or the pet's bowl.
+- Take care with other pottery too. The FDA advises caution with handmade or crude-looking pieces, antiques, damaged or worn pieces, flea-market finds and bright orange, red or yellow decoration.
+- If a child has used pottery you now doubt, the FDA says to talk to a doctor about a blood lead test.
 
-유약이 녹는 원리, 일부 유약이 용출되는 이유, 기준이 뜻하는 바는 《[기초부터 배우는 유약](/guides/glazing-basics)》을 보세요.
+For more on how glazes melt, why some leach and what the limits mean, see [Glazing from first principles](/guides/glazing-basics).
 
 ## 출처 {#sources}
 

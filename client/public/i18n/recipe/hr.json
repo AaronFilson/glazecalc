@@ -361,8 +361,7 @@
     "heading": "Opasnosti",
     "intro": "Kako ih navodi zapis svake sirovine; opasnosti standardne biblioteke potječu iz sigurnosno-tehničkih listova dobavljača.",
     "line": "<b>{names}:</b> {hazards}",
-    "unknown": "{count, plural, one {Za {list} nisu navedene opasnosti: pogledajte sigurnosno-tehnički list koji dolazi uz tu sirovinu.} few {Za {list} nisu navedene opasnosti: pogledajte sigurnosno-tehničke listove koji dolaze uz te sirovine.} other {Za {list} nisu navedene opasnosti: pogledajte sigurnosno-tehničke listove koji dolaze uz te sirovine.}}",
-    "safety": "Suhe sirovine za glazure stvaraju prašinu koju treba držati podalje od pluća, čak i one koje nisu razvrstane kao opasne: pogledajte <mixing>Sigurno miješanje i ventilacija</mixing> te <home>Ne otrujte svoju obitelj</home> ako su u blizini djeca ili kućni ljubimci. Gdje sigurnosno-tehnički list sirovine kaže više, slijedite ga."
+    "unknown": "{count, plural, one {Za {list} nisu navedene opasnosti: pogledajte sigurnosno-tehnički list koji dolazi uz tu sirovinu.} few {Za {list} nisu navedene opasnosti: pogledajte sigurnosno-tehničke listove koji dolaze uz te sirovine.} other {Za {list} nisu navedene opasnosti: pogledajte sigurnosno-tehničke listove koji dolaze uz te sirovine.}}"
   },
   "compare": {
     "heading": "Usporedi dva recepta",

@@ -361,8 +361,7 @@
     "heading": "Bīstamība",
     "intro": "Kā norādīts katras izejvielas ierakstā; standarta bibliotēkas dati ir no piegādātāju drošības datu lapām.",
     "line": "<b>{names}:</b> {hazards}",
-    "unknown": "{count, plural, zero {Šīm izejvielām nav norādīta bīstamība: {list}. Skatiet tām līdzi piegādātās drošības datu lapas.} one {Izejvielai {list} nav norādīta bīstamība: skatiet tai līdzi piegādāto drošības datu lapu.} other {Šīm izejvielām nav norādīta bīstamība: {list}. Skatiet tām līdzi piegādātās drošības datu lapas.}}",
-    "safety": "Sausās glazūras izejvielas rada putekļus, kuriem nedrīkst nokļūt plaušās, arī tām, kas nav klasificētas kā bīstamas: skatiet <mixing>Droša jaukšana un ventilācija</mixing> un <home>Nesaindējiet savu ģimeni</home>, ja apkārt ir bērni vai mājdzīvnieki. Ja izejvielas drošības datu lapā ir teikts vairāk, rīkojieties pēc tās."
+    "unknown": "{count, plural, zero {Šīm izejvielām nav norādīta bīstamība: {list}. Skatiet tām līdzi piegādātās drošības datu lapas.} one {Izejvielai {list} nav norādīta bīstamība: skatiet tai līdzi piegādāto drošības datu lapu.} other {Šīm izejvielām nav norādīta bīstamība: {list}. Skatiet tām līdzi piegādātās drošības datu lapas.}}"
   },
   "compare": {
     "heading": "Divu recepšu salīdzināšana",

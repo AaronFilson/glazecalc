@@ -149,76 +149,76 @@ De Pet Poison Helpline zegt: “Lood is giftig voor alle diersoorten, maar jonge
 
 Als een huisdier iets uit het atelier kan hebben gegeten of gedronken, of verschijnselen als hierboven vertoont, bel dan uw dierenarts of een hulplijn voor dierenvergiftigingen (zie de tabel bovenaan), met de naam van de grondstof en het gewicht van het dier bij de hand.
 
-## De oven {#the-kiln}
+## The kiln {#the-kiln lang=en}
 
-### De buitenkant wordt zo heet dat u zich kunt branden
+### The outside gets hot enough to burn
 
-Een Britse risicobeoordeling voor scholen zegt dat de buitenkant van een oven “160 °C en mogelijk meer kan bereiken” (ongeveer 320 °F), en een leidraad voor ovens op scholen meldt tot 460 °F (ongeveer 240 °C) aan de metalen banden. Skutt, een ovenfabrikant, raadt een ovenruimte aan die tegen kinderen en huisdieren op slot kan. Waar een ruimte niet op slot kan, stelt de leidraad voor scholen een afscheiding voor, zoals een veiligheidshek rond de oven.
+A UK schools risk assessment says a kiln's outside "can reach 160 °C and possibly more" (about 320 °F), and a school kiln guide reports metal bands at up to 460 °F (about 240 °C). Skutt, a kiln maker, recommends a kiln room that can be locked against children and pets. Where a room cannot be locked, the school guide suggests a barrier such as a kiln safety screen.
 
-Kleine kinderen en huisdieren begrijpen een waarschuwingsbord niet. We stellen voor ze achter een afgesloten deur of een afscheiding te houden tijdens het stoken en terwijl de oven afkoelt, en voor alle anderen een waarschuwingsbord op te hangen.
+Small children and pets cannot understand a warning sign. We suggest keeping them behind a locked door or a barrier while the kiln fires and while it cools, and posting a warning sign for everyone else.
 
-### Ruimte rondom de oven
+### Space around it
 
-Over de veiligheidsafstand zijn de bronnen het niet eens. Rio Grande noemt minstens 12 inch (30 cm) tot muren en alles wat brandbaar is. L&L raadt sterk 18 inch (46 cm) tot alle muren aan, en de bouwvoorschriften die L&L aanhaalt vragen 3 voet (0,9 m) tot brandbare muren. Volg de handleiding van uw oven en de plaatselijke brandveiligheidsvoorschriften; houd bij twijfel 18 inch afstand tot elke muur en 3 voet tot alles wat kan branden. Houd in een garage auto’s, brandstof en verf ver weg.
+Sources disagree on clearance. Rio Grande says at least 12 inches (30 cm) from walls and anything combustible. L&L strongly recommends 18 inches (46 cm) to all walls, and the building code it cites asks for 3 feet (0.9 m) from combustible walls. Follow your kiln's manual and local fire code; if you are unsure, allow 18 inches from any wall and 3 feet from anything that can burn. In a garage, keep cars, fuel and paint well away.
 
-### Stroom
+### Power
 
-Rio Grande raadt een **eigen groep** aan (een groep die verder niets van stroom voorziet; in België: een aparte kring), met een goed geaard stopcontact. We stellen voor geen verlengsnoer te gebruiken. Zet tussen twee stoken de zekering of de werkschakelaar van de oven uit, of haal de stekker uit het stopcontact, zodat een kind de oven niet kan aanzetten.
+Rio Grande recommends a **dedicated circuit** (one that powers nothing else) with a properly grounded outlet. We suggest no extension cord. Between firings, switch off the kiln's breaker or disconnect switch, or unplug it, so a child cannot start it.
 
-### Wees erbij als de stook eindigt
+### Be there when the firing ends
 
-Een **kiln sitter** is de mechanische schakelaar op veel handbediende ovens: aan het eind van de stook buigt een kleine kegel{{en: cone}} door en zet de schakelaar uit. Volgens de handleiding is de kiln sitter “NIET bedoeld om te werken als faalveilige uitschakelbeveiliging”. Rio Grande zegt een oven tijdens het stoken nooit zonder toezicht te laten, “vooral rond de verwachte uitschakeltijd”. Stook dus alleen als er aan het eind van de stook een volwassene thuis en wakker is, controleer of de oven is uitgeschakeld, en zet een ABC-brandblusser in de ovenruimte. Hoe kiln sitters, regelaars en stookschema’s werken, leest u in [Een eenvoudige oven stoken](/guides/firing).
+A **kiln sitter** is the mechanical switch on many manual kilns: a small cone bends at the end of the firing and trips the switch off. Its manual says it "is NOT intended to perform as a fail-safe shut-off device." Rio Grande says never to leave a firing kiln unattended, "especially near the expected shut-off time". So stay nearby and check the kiln while it fires, above all near the end; fire only when an adult will be home and awake to do that, check that it has switched off, and keep an ABC fire extinguisher in the kiln room. For how sitters, controllers and schedules work, see [Firing a basic kiln](/guides/firing).
 
-### Dampen en koolmonoxide
+### Fumes and carbon monoxide
 
-Bij het stoken komen dampen vrij, dus ontlucht de oven naar buiten; [Veilig mengen en ventileren](/guides/safe-mixing) legt uit hoe. Een oven in een aangebouwde garage heeft een ontluchting nodig die voorkomt dat dampen via de tussendeur het huis bereiken. Houd vogels tijdens elke stook in een kamer ver weg.
+Firing gives off fumes, so vent the kiln to the outdoors; [Safe mixing and ventilation](/guides/safe-mixing) explains how. A kiln in an attached garage needs venting that keeps fumes from reaching the house through the connecting door. Keep birds in a far room whenever the kiln fires.
 
-**Koolmonoxide** (CO) is een giftig gas dat u niet kunt zien of ruiken. Een veiligheidsblad over ovens van een universiteit schrijft CO-melders voor bij gasovens. Over elektrische ovens lopen de meningen uiteen, maar bij het uitbranden van organisch materiaal (in klei, of in dingen als papier of was) kan CO ontstaan. Wij vinden een CO-melder in de ovenruimte en in de kamers ernaast een verstandige, goedkope stap bij elke oven.
+**Carbon monoxide** (CO) is a poisonous gas you cannot see or smell. A university kiln safety sheet requires CO alarms with gas kilns. Views differ for electric kilns, but burning off organic matter (in clay, or things like paper or wax) can make CO. We think a CO alarm in the kiln room and the rooms next to it is a sensible, inexpensive step for any kiln.
 
-### Kijkgaten en ogen
+### Peepholes and eyes
 
-Infrarood licht, dat u niet kunt zien, “begint bij 752°F (400°C)”, en het Ceramic Arts Network zegt dat in een oven kijken boven die temperatuur altijd met oogbescherming zou moeten gebeuren. Infrarood kan de ooglens beschadigen en tot grauwe staar leiden, en lang kijken kan het netvlies beschadigen. Een zonnebril of een didymiumbril houdt het niet tegen.
+Infrared light, which you cannot see, "starts at 752°F (400°C)", and the Ceramic Arts Network says looking into a kiln above this should always be done with eye protection. Infrared can damage the lens of the eye and lead to cataracts, and long gazing can injure the retina. Sunglasses and didymium glasses do not block it.
 
 > [!WARNING]
-> Kinderen zouden helemaal niet in een oven moeten kijken. Een gloeiend kijkgat trekt ze aan, en ze houden een beschermbril niet betrouwbaar op; houd ze dus uit de buurt zolang de oven heet is. Volwassenen zouden maar kort moeten kijken, door een lasbril met IR-filter. Bronnen raden beschermingsniveaus van 1,7 tot 5 aan; beschermingsniveau 3 is een verstandige keuze, donkerder als u daarna vlekken ziet.
+> Children should not look into a kiln at all. A glowing peephole draws them, and they will not reliably keep protective glasses on, so keep them away while the kiln is hot. Adults should look only briefly, through IR-rated welding glasses. Sources recommend shades from 1.7 to 5; shade 3 is a sensible choice, darker if you see spots afterward.
 
-## Handgemaakt serviesgoed op de eettafel {#handmade-ware}
+## Handmade ware on the family table {#handmade-ware lang=en}
 
-Bij potten op de eettafel van het gezin draait het om **afgifte van metalen**{{en: leaching}}: metalen die uit het gebakken glazuur{{en: glaze}} oplossen in eten of drinken. De FDA waarschuwt dat als keramiek “niet goed is gemaakt, dit lood aan eten en drinken kan worden afgegeven”, en dat “geen enkele hoeveelheid wassen, koken of andere behandeling lood uit keramiek kan verwijderen”. Toezichthouders zoals de Amerikaanse FDA en de EU begrenzen hoeveel lood en cadmium een afgewerkt stuk afgeeft in een gestandaardiseerde zuurtest, niet wat het glazuur bevat. De strengste Amerikaanse grenswaarde, voor kopjes, mokken en kannen, is 0,5 µg/mL lood.
+The question for pots on the family table is **leaching**: metals dissolving out of the fired glaze into food or drink. The FDA warns that if pottery "is not manufactured properly, this lead can leach into food and drink", and that "no amount of washing, boiling, or other process can remove lead from pottery." Regulators such as the US FDA and the EU limit how much lead and cadmium a finished piece releases in a standard acid test, not what the glaze contains. The strictest US limit, for cups, mugs and pitchers, is 0.5 µg/mL of lead.
 
-### Loodvrij is niet hetzelfde als voedselveilig
+### Lead-free is not the same as food-safe
 
-Ook een glazuur zonder lood kan metalen afgeven. Digitalfire, een naslagwerk over glazuurchemie, noemt glazuren met “kleurstoffen{{en: colorants}} van zwaremetaaloxiden, barium, lithium of lood” als het probleem, en waarschuwt dat een pigment{{en: stain}} dat boven de opgegeven temperatuur wordt gestookt, cadmium kan afgeven. Het etiket voor kunstenaarsmaterialen volgens ASTM D-4236 op een pot “toont NIET aan dat een gebakken glazuur voedselveilig{{en: food-safe}} is”, en “Producenten van tafelgerei moeten al het afgewerkte werk testen om vast te stellen of het als serviesgoed geschikt is.”
+A glaze with no lead can still leach. Digitalfire, a glaze chemistry reference, names glazes containing "heavy metal oxide colorants, barium, lithium, or lead" as the concern, and warns that a stain fired above its rated temperature can release cadmium. The ASTM D-4236 art-materials label on a jar "DOES NOT establish that a fired glaze is food-safe", and "Tableware producers must test all finished ware to establish dinnerware status."
 
 > [!NOTE]
-> “Voedselveilig” betekent: dit glazuur, op deze klei, gestookt tot deze kegel{{en: cone}}, op deze manier aangebracht, geeft minder af dan de wettelijke grenswaarden. Een berekening van het recept, ook die van Glazecalc, kan een riskant recept signaleren, maar niet bewijzen dat een pot veilig is. Dat kan alleen een migratietest van het gebakken stuk.
+> "Food safe" means this glaze, on this clay, fired to this cone, applied this way, releases less than the legal limits. A recipe calculation, Glazecalc's included, can flag a risky recipe but cannot prove a pot is safe. Only a leach test of the fired piece can.
 
-We stellen voor de vermelding “voedselveilig” op een gekocht glazuur te lezen als een goed begin, niet als een garantie: een andere klei, een dikkere laag, een andere kegel of een tweede glazuur erover verandert het resultaat.
+We suggest reading a "food safe" label on a commercial glaze as a good start, not a guarantee: a different clay, a thicker coat, another cone or a second glaze on top changes the result.
 
-### Testen
+### Testing
 
-Laboratoria testen gebakken stukken met een gestandaardiseerd zuurbad dat het ongunstigste geval voorstelt, zoals ASTM C738 in de VS. De EU-test van één laboratorium vraagt vier identieke stukken en duurt zeven werkdagen; maak dus reservestukken van alles wat u wilt laten testen.
+Laboratories test fired pieces with a standard acid soak that represents a worst case, such as ASTM C738 in the US. One lab's EU test needs four identical pieces and takes seven working days, so make spares of anything you plan to have tested.
 
-Thuistests zijn omstreden. Volgens de FDA kunnen veegtests voor thuis lood aantonen dat kan worden afgegeven, en zou een stuk dat positief test niet voor eten gebruikt moeten worden. Ceramics NZ waarschuwt dat loodtestpennen voor consumenten op keramiek “niet voor dit gebruik ontworpen” zijn en vals-positieve uitslagen kunnen geven. Digitalfire stelt voor een schijfje citroen een nacht op het glazuur te laten liggen, als ruwe eerste controle. De veilige uitleg: een positieve thuistest betekent dat u het stuk niet meer voor eten gebruikt, en een negatieve bewijst niets. Alleen een laboratorium kan u vertellen dat een stuk veilig is.
+Home tests are disputed. The FDA says home swab kits can show leachable lead, and that a piece that tests positive should not be used for food. Ceramics NZ warns that consumer lead-test pens are "not designed for this use" on ceramics and can give false positives. Digitalfire suggests leaving a lemon slice on the glaze overnight as a rough screen. The safe reading: a positive home test means stop using the piece for food, and a negative one proves nothing. Only a lab can tell you a piece is safe.
 
-### Werk met haarscheuren
+### Crazed ware
 
-**Haarscheuren**{{en: crazing}} zijn een netwerk van fijne scheurtjes in het oppervlak van het glazuur, en de bronnen zijn het er niet over eens. Uit een experiment van Ceramics Monthly bleek dat plaatjes met haarscheuren schoon te krijgen waren, het best in een vaatwasser, al werden ze met water en zeep minder schoon dan plaatjes zonder haarscheuren. Digitalfire vindt dat “werk met haarscheuren onaanvaardbaar is” en dat haarscheuren “het werk ernstig verzwakken”. De veilige weg is eenvoudig: gebruik stukken met haarscheuren niet voor eten.
+**Crazing** is a network of fine cracks in the glaze surface, and sources disagree about it. A Ceramics Monthly experiment found crazed tiles could be cleaned, best in a dishwasher, though they came out less clean than uncrazed tiles after soap and water. Digitalfire holds that "Crazed ware is unacceptable" and that crazing "severely weakens ware". The safe course is simple: do not use crazed pieces for food.
 
-### Binnenglazuren
+### Liner glazes
 
-Een **binnenglazuur**{{en: liner glaze}} is het glazuur aan de binnenkant van een kop of kom, waar het eten in zit. Digitalfire beschrijft een binnenglazuur waarvan het risico laag genoeg kan zijn om het zonder laboratoriumtest te gebruiken: geen kleurstoffen, barium, lood of lithium; goed uitgesmolten; geen haarscheuren; en slijtvast. Waarschuwingssignalen bij elk glazuur zijn grote hoeveelheden kleurstof, kristallen aan het oppervlak en slecht uitsmelten.
+A **liner glaze** is the glaze on the inside of a cup or bowl, where the food sits. Digitalfire describes a liner that may be low enough in risk to use without lab testing: no colorants, barium, lead or lithium; fully melted; no crazing; and it wears well. Even then, only a leach test of your own fired pots shows whether they are food-safe. Warning signs in any glaze are heavy amounts of colorant, crystals on the surface and poor melting.
 
-### Regels voor het gezin die we voorstellen
+### Family rules we suggest
 
-- Bekers, kommen en borden van kinderen: alleen in een laboratorium geteste, bestendige binnenglazuren, of gekocht serviesgoed.
-- Bewaar geen zuur eten of drinken (citrusvruchten, tomaat, azijn, vruchtensap, wijn) in potten met een glazuur dat u niet hebt laten testen.
-- Gebruik stukken met haarscheuren niet voor eten.
-- Proefplaatjes{{en: test tiles}} en experimenten blijven in het atelier, nooit in de keuken, de speelgoedkist of de bakjes van het huisdier.
-- Wees ook voorzichtig met andere keramiek. De FDA adviseert voorzichtigheid met handgemaakte of ruw ogende stukken, antiek, beschadigde of versleten stukken, vondsten van de rommelmarkt en felle oranje, rode of gele decoratie.
-- Heeft een kind keramiek gebruikt waaraan u nu twijfelt, dan zegt de FDA: praat met een arts over het bepalen van het loodgehalte in het bloed.
+- Children's cups, bowls and plates: only lab-tested, durable liner glazes, or commercial dinnerware.
+- Do not store acidic food or drink (citrus, tomato, vinegar, fruit juice, wine) in pots glazed with anything you have not had tested.
+- Do not use crazed pieces for food.
+- Test tiles and experiments stay in the studio, never in the kitchen, the toy box or the pet's bowl.
+- Take care with other pottery too. The FDA advises caution with handmade or crude-looking pieces, antiques, damaged or worn pieces, flea-market finds and bright orange, red or yellow decoration.
+- If a child has used pottery you now doubt, the FDA says to talk to a doctor about a blood lead test.
 
-Meer over hoe glazuren smelten, waarom sommige metalen afgeven en wat de grenswaarden betekenen, leest u in [Glazuren vanaf de basis](/guides/glazing-basics).
+For more on how glazes melt, why some leach and what the limits mean, see [Glazing from first principles](/guides/glazing-basics).
 
 ## Bronnen {#sources}
 

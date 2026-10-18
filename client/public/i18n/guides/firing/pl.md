@@ -165,69 +165,69 @@ Należy się spodziewać różnic. Orton pisze: „Zwykle między górą a dołe
 
 :::orton
 
-## Wyłącznik stożkowy {#kiln-sitter}
+## The kiln sitter {#kiln-sitter lang=en}
 
-**Wyłącznik stożkowy**{{en: kiln sitter}} to mechaniczny wyłącznik na zewnątrz wielu prostych i starszych pieców, który wyłącza piec, gdy zegnie się mały stożek{{en: cone}}. Najbardziej znany jest Kiln-Sitter firmy Dawson. Ułatwia wypał, ale jest udogodnieniem, a nie urządzeniem zabezpieczającym.
+A **kiln sitter** is the mechanical switch, on the outside of many basic and older kilns, that turns the kiln off when a small cone bends. The best known is the Dawson Kiln-Sitter. It makes firing easier, but it is a convenience, not a safety device.
 
-### Jak działa
+### How it works
 
-Porcelanowa rurka sięga do wnętrza pieca. Na jej końcu mały stożek lub pręt stożkowy leży w poprzek dwóch metalowych podpórek, pod **prętem czujnika**, który obraca się na osi jak huśtawka wagowa. Na zewnątrz pieca drugi koniec pręta czujnika podtrzymuje ciężarek za pomocą małego zaczepu. Gdy stożek mięknie i zgina się do około 90°, pręt czujnika opada na tyle, by zwolnić ciężarek, ciężarek spada i zasilanie grzałek zostaje odcięte.
+A porcelain tube reaches into the kiln. At its end, a small cone or a bar lies across two metal supports, under a **sensing rod** that pivots like a seesaw. Outside the kiln, the other end of the rod holds up a weight by a small claw. When the cone softens and bends to about 90°, the rod drops far enough to release the weight, the weight falls, and the power to the elements is cut.
 
-Małe stożki i pręty stożkowe „dają równoważną obróbkę cieplną”. Orton zauważa, że wielu początkujących wybiera pręty, bo ich równy kształt ułatwia układanie ich za każdym razem tak samo. Mały stożek się zwęża, więc liczy się jego położenie: gdy pod prętem czujnika leży jego cienka część, piec wyłącza się w niższej temperaturze, a gdy gruba – w wyższej, z przesunięciem „nawet o 1/2 stożka”.
+Small cones and bars "give equivalent heat treatment". Orton notes that many beginners choose bars, because their even shape makes it easy to place them the same way every time. A small cone tapers, so where it sits matters: with its thin part under the rod the kiln shuts off cooler, and with its thick part hotter, a shift of "as much as 1/2 cone".
 
-### Jaki stożek włożyć do wyłącznika
+### Which cone goes in the sitter
 
-Źródła się różnią. Dawson, producent wyłącznika, zaleca ten sam numer co stożek docelowy na płycie, a stożek o jeden numer gorętszy tylko wtedy, gdy stożek na płycie pozostaje niezgięty. L&L zaleca stożek o jeden numer gorętszy niż stożki na płycie, bo wyłącznik znajduje się przy ścianie i grzałkach, dostaje więcej ciepła i ma skłonność do zbyt wczesnego wyłączania. Rozstrzygającą zasadę podaje Orton: „Ostatecznym sędzią procesu wypału jest stożek na płycie, a nie stożek ani pręt w wyłączniku Kiln-Sitter”.
-
-> [!NOTE]
-> Nasz punkt wyjścia: włożyć do wyłącznika mały stożek o tym samym numerze co docelowy, a na płycie ustawić zestaw stożków{{en: cone pack}}. Jeśli w chwili wyłączenia pieca stożek docelowy na płycie jest za mało zgięty, następnym razem użyć w wyłączniku stożka o jeden numer gorętszego albo ułożyć stożek grubszą częścią pod prętem czujnika. Jeśli jest zgięty za bardzo, postąpić odwrotnie.
-
-### Przygotowanie i kontrola przed każdym wypałem
-
-Procedura Dawsona, która służy też jako kontrola przed każdym wypałem:
-
-1. Wyłączyć wszystkie przełączniki. Sprawdzić, czy pręt czujnika porusza się swobodnie, jest wyśrodkowany w rurce i nie jest wygięty ani skorodowany. Jeśli porusza się opornie, Dawson zaleca wymianę zespołu rurki.
-2. Nałożyć pędzlem cienką warstwę wysokotemperaturowej **pobiałki** (powłoki, która zapobiega przywieraniu stopionego materiału) na podpórki stożka i na pręt czujnika w miejscu, gdzie dotyka stożka. Nigdy nie nakładać pobiałki na stożek ani na porcelanową rurkę.
-3. Płyty i wyroby ustawiać co najmniej 1 cal (25 mm) nad rurką lub pod nią, tak by nic nie mogło jej dotknąć, upaść na nią ani jej zablokować.
-4. Unieść ciężarek, docisnąć zaczep do spustu i położyć stożek lub pręt stożkowy płasko na podpórkach, przy metalowym progu, jak pokazuje instrukcja wyłącznika, za każdym razem tak samo. Sprawdzić to jeszcze raz przed zamknięciem pokrywy: „NIEWŁAŚCIWIE UŁOŻONY STOŻEK LUB PRĘT MOŻE SPOWODOWAĆ PRZEPALENIE”.
-5. Nastawić wyłącznik czasowy i wcisnąć przycisk, aż się zablokuje. Piec musi stać poziomo, a miejsce pod ciężarkiem musi być wolne, żeby ciężarek mógł spaść.
-
-### Wyłącznik czasowy
-
-Wiele wyłączników stożkowych, w tym modele LT firmy Dawson, ma **wyłącznik czasowy**: zegar, który wyłącza piec po ustawionym czasie, jako zabezpieczenie „na wypadek, gdyby KILN-SITTER zawiódł”. Zawsze należy go ustawiać na dłużej, niż ma trwać wypał. Źródła różnie określają zapas:
-
-Table: Na ile ustawić wyłącznik czasowy
-Label: Ustawienia wyłącznika czasowego
-
-| Źródło    | Ustawienie                                                                                                                            |
-| --------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| Dawson    | O ½ godziny dłużej niż przewidywany czas wypału, dopóki nie pozna się pieca, później nawet tylko o ¼ godziny; nigdy powyżej 20 godzin |
-| L&L       | Za pierwszym razem bardzo długo, notując, ile trwa wypał; potem o około 1 godzinę dłużej                                              |
-| Bracker's | O 30 minut do 1 godziny dłużej niż czas wypału                                                                                        |
+Sources disagree. Dawson, who made the sitter, says to use the same number as the firing cone on the shelf, and to go one number hotter only if the shelf cone stays unbent. L&L says to use one number hotter than the shelf cones, because the sitter sits near the wall and the elements, gets more heat, and tends to shut off early. Orton settles the principle: "The shelf cone is the final judge of the firing process, not the Kiln-Sitter cone or bar."
 
 > [!NOTE]
-> Nasz punkt wyjścia: za pierwszym razem z dużym zapasem (w granicach 20 godzin na tarczy), potem o ½ do 1 godziny dłużej niż zapisany czas. Wyłącznik czasowy pokazuje też, ile trwał wypał: ustawiony na 7 i zatrzymany na 1 oznacza 6 godzin.
+> Our starting point: put a small cone of the same number as your target in the sitter, with a cone pack on the shelf. If the shelf firing cone is under-bent when the kiln shuts off, go one number hotter in the sitter next time, or set the thicker part of the cone under the rod. If it is over-bent, do the opposite.
 
-### Gdy wyłącza się za wcześnie lub za późno
+### Setting it up, and checks before every firing
 
-Po każdym wypale należy odczytać stożek z wyłącznika obok stożków z płyty.
+Dawson's procedure, which doubles as a check before every firing:
 
-Table: Odczyt wyłącznika po wypale
-Label: Problemy z wyłącznikiem stożkowym
+1. Turn all the switches off. Check that the sensing rod moves freely, sits centered in the tube and is not bent or corroded. If it is sluggish, Dawson says to replace the tube assembly.
+2. Brush a thin coat of high-fire **kiln wash** (a coating that stops melted material sticking) onto the cone supports and the rod where it touches the cone. Never put wash on the cone or the porcelain tube.
+3. Load shelves and ware at least 1 in (25 mm) above or below the tube, so nothing can touch, fall against or block it.
+4. Lift the weight, press the claw down onto the trigger, and lay the cone or bar flat on the supports against the metal step, as your sitter's manual shows, the same way every time. Check it again before closing the lid: "AN IMPROPERLY PLACED CONE OR BAR COULD CAUSE AN OVERFIRING."
+5. Set the limit timer and push in the plunger until it locks. Keep the kiln level and the space under the weight clear, so the weight can fall.
 
-| Co widać                                                      | Prawdopodobna przyczyna                                                                                        | Co zrobić                                                                        |
-| ------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
-| Wyłącznik zadziałał, stożek docelowy na płycie za mało zgięty | W wyłączniku było goręcej niż na płycie (znajduje się przy ścianie)                                            | Stożek o jeden numer gorętszy w wyłączniku lub grubsza część pod prętem czujnika |
-| Stożek w wyłączniku zgiął się znacznie ponad 90°              | Pod koniec temperatura rosła za szybko                                                                         | Obniżyć ustawienia przełączników, żeby temperatura rosła wolniej (Dawson)        |
-| Stożek w wyłączniku się nie zgiął albo stopił się w bryłkę    | Sam wyłącznik: złe wyregulowanie, wygięty lub skorodowany pręt czujnika albo coś utkwiło w rurce lub przy niej | Przed kolejnym wypałem sprawdzić i wyregulować wyłącznik według jego instrukcji  |
-| Za każdym razem za wcześnie lub za późno                      | Rozregulowanie lub zużyty pręt czujnika                                                                        | Sprawdzić sprawdzianem; przesunąć płytkę spustową                                |
+### The limit timer
 
-Do sprawdzania wyregulowania Dawson używa **sprawdzianu**, który przytrzymuje pręt czujnika tam, gdzie zostawiłby go całkowicie zgięty stożek; przy zaczepie powinien wtedy być „luz 1/16 cala” (około 1,6 mm). Należy to sprawdzać co 30 wypałów. Zasada Ceramics Monthly: jeśli piec wyłącza się za wcześnie, przesunąć płytkę spustową lekko w górę; jeśli za późno, lekko w dół. Cokolwiek robi wyłącznik, „Zawsze należy ufać dużym stożkom kontrolnym bardziej niż małym stożkom z wyłącznika”.
+Many sitters, including Dawson's LT models, have a **limit timer**: a clock that turns the kiln off after a set time, as a backup "in case the KILN-SITTER fails". It should always be set longer than the firing is expected to take. Sources set the margin differently:
+
+Table: How long to set the limit timer
+Label: Limit timer settings
+
+| Source    | Setting                                                                                                                      |
+| --------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| Dawson    | ½ hour longer than the expected firing time until you know the kiln, later as little as ¼ hour; never set it beyond 20 hours |
+| L&L       | Very high the first time, noting how long the firing takes; after that, about 1 hour longer                                  |
+| Bracker's | 30 minutes to 1 hour longer than the firing time                                                                             |
+
+> [!NOTE]
+> Our starting point: generous the first time (within the dial's 20 hours), then ½ to 1 hour longer than the time you recorded. The timer also tells you how long a firing took: set at 7 and ending at 1 means 6 hours.
+
+### When it shuts off early or late
+
+After each firing, read the sitter cone beside the shelf cones.
+
+Table: Reading the sitter after a firing
+Label: Kiln sitter problems
+
+| What you see                                    | Likely cause                                                                                           | What to do                                                       |
+| ----------------------------------------------- | ------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------- |
+| Sitter tripped, shelf firing cone under-bent    | The sitter ran hotter than the shelf (it sits near the wall)                                           | One cone hotter in the sitter, or the thicker part under the rod |
+| Sitter cone sagged well past 90°                | The kiln climbed too fast near the end                                                                 | Lower the switch settings, so the climb is slower (Dawson)       |
+| Sitter cone did not bend, or melted into a blob | The sitter itself: poor adjustment, a bent or corroded rod, or something lodged in or against the tube | Check and adjust the sitter by its manual before firing again    |
+| Early or late every time                        | Out of adjustment, or a worn rod                                                                       | Check with the firing gauge; move the trigger plate              |
+
+To check the adjustment, Dawson uses a **firing gauge** that holds the rod where a fully bent cone would leave it; there should then be "1/16th-inch clearance" (about 1.6 mm) at the claw. Check it every 30 firings. Ceramics Monthly's rule: if the kiln shuts off early, move the trigger plate up slightly; if late, move it down slightly. Whatever the sitter does, "Always trust large witness cones over small sitter cones."
 
 > [!WARNING]
-> **Wyłącznik stożkowy nie jest urządzeniem zabezpieczającym.** Instrukcja Dawsona mówi, że „NIE jest przeznaczony do działania jako niezawodny wyłącznik bezpieczeństwa, a pieca NIE należy pozostawiać bez nadzoru dłużej niż przez przewidywany czas wypału”. Coś tak prostego jak wyrób surowy{{en: greenware}}, który przewróci się na rurkę, „może spowodować przepalenie”. Trzeba być przy piecu, by go sprawdzić, gdy wypał powinien się kończyć, i nigdy nie wypalać nad niczym palnym ani w pobliżu czegokolwiek palnego, np. drewnianej podłogi czy wykładziny.
+> **A kiln sitter is not a safety device.** Dawson's manual says it "is NOT intended to perform as a fail-safe shut-off device and your kiln should NOT be left unattended beyond the estimated firing time." Something as simple as greenware falling against the tube "might cause an over-firing". Be there to check the kiln when it should be finishing, and never fire it over or near anything that burns, such as a wood floor or carpet.
 
-Wyłącznik jest przeznaczony do wypałów „do stożka 8 włącznie”. Sam nie potrafi utrzymać temperatury ani powoli schładzać pieca. Z wprawą i dziennikiem wypałów można jednak, jak to ujmuje Digitalfire, „stać się sterownikiem”: obserwować stożki i ręcznie przestawiać przełączniki.
+The sitter is built for firings "up to and including Cone 8". It cannot hold a temperature or cool slowly by itself. With practice and a log, though, you can "become the controller", as Digitalfire puts it: watch the cones and turn the switches by hand.
 
 :::
 

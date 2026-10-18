@@ -361,8 +361,7 @@
     "heading": "Veszélyek",
     "intro": "Ahogy az egyes nyersanyagok bejegyzése megadja őket; a beépített könyvtáré a forgalmazók biztonsági adatlapjaiból származik.",
     "line": "<b>{names}:</b> {hazards}",
-    "unknown": "{count, plural, one {Nincs megadva veszély ehhez: {list}: nézze meg a hozzá tartozó biztonsági adatlapot.} other {Nincs megadva veszély ezekhez: {list}: nézze meg a hozzájuk tartozó biztonsági adatlapokat.}}",
-    "safety": "A száraz máznyersanyagok olyan port keltenek, amelyet távol kell tartania a tüdejétől, még azok is, amelyeket nem minősítenek veszélyesnek: lásd <mixing>Biztonságos keverés és szellőzés</mixing>, és <home>Ne mérgezze meg a családját</home>, ha gyermekek vagy háziállatok vannak a közelben. Ha egy nyersanyag biztonsági adatlapja többet mond, kövesse azt."
+    "unknown": "{count, plural, one {Nincs megadva veszély ehhez: {list}: nézze meg a hozzá tartozó biztonsági adatlapot.} other {Nincs megadva veszély ezekhez: {list}: nézze meg a hozzájuk tartozó biztonsági adatlapokat.}}"
   },
   "compare": {
     "heading": "Két recept összehasonlítása",

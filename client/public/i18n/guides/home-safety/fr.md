@@ -149,76 +149,76 @@ Le Pet Poison Helpline indique que « le plomb est toxique pour toutes les esp�
 
 Si un animal a pu manger ou boire quoi que ce soit venant de l’atelier, ou s’il montre des signes comme ceux décrits plus haut, appelez votre vétérinaire ou un centre antipoison vétérinaire (voir le tableau en haut de la page), en ayant sous la main le nom de la matière et le poids de l’animal.
 
-## Le four {#the-kiln}
+## The kiln {#the-kiln lang=en}
 
-### L’extérieur devient assez chaud pour brûler
+### The outside gets hot enough to burn
 
-Une évaluation des risques pour les écoles britanniques indique que l’extérieur d’un four « peut atteindre 160 °C et peut-être davantage » (environ 320 °F), et un guide des fours scolaires signale des cerclages métalliques jusqu’à 460 °F (environ 240 °C). Skutt, un fabricant de fours, recommande une pièce pour le four que l’on peut fermer à clé pour en interdire l’accès aux enfants et aux animaux. Là où une pièce ne peut pas être fermée à clé, le guide scolaire suggère une barrière, comme un écran de sécurité pour four.
+A UK schools risk assessment says a kiln's outside "can reach 160 °C and possibly more" (about 320 °F), and a school kiln guide reports metal bands at up to 460 °F (about 240 °C). Skutt, a kiln maker, recommends a kiln room that can be locked against children and pets. Where a room cannot be locked, the school guide suggests a barrier such as a kiln safety screen.
 
-Nous suggérons de tenir les jeunes enfants et les animaux, qui ne peuvent pas comprendre un panneau d’avertissement, derrière une porte fermée à clé ou une barrière pendant la cuisson et pendant le refroidissement, et d’afficher un panneau d’avertissement pour tous les autres.
+Small children and pets cannot understand a warning sign. We suggest keeping them behind a locked door or a barrier while the kiln fires and while it cools, and posting a warning sign for everyone else.
 
-### L’espace autour du four
+### Space around it
 
-Les sources divergent sur la distance de sécurité. Rio Grande indique au moins 12 pouces (30 cm) des murs et de tout ce qui est combustible. L&L recommande vivement 18 pouces (46 cm) par rapport à tous les murs, et le code de la construction qu’il cite demande 3 pieds (0,9 m) par rapport aux murs combustibles. Suivez le manuel de votre four et la réglementation incendie locale ; en cas de doute, laissez 18 pouces par rapport à tout mur et 3 pieds par rapport à tout ce qui peut brûler. Dans un garage, tenez voitures, carburant et peinture bien à l’écart.
+Sources disagree on clearance. Rio Grande says at least 12 inches (30 cm) from walls and anything combustible. L&L strongly recommends 18 inches (46 cm) to all walls, and the building code it cites asks for 3 feet (0.9 m) from combustible walls. Follow your kiln's manual and local fire code; if you are unsure, allow 18 inches from any wall and 3 feet from anything that can burn. In a garage, keep cars, fuel and paint well away.
 
-### L’alimentation électrique
+### Power
 
-Rio Grande recommande un **circuit électrique dédié** (qui n’alimente rien d’autre) avec une prise correctement reliée à la terre. Nous suggérons de ne pas utiliser de rallonge. Entre deux cuissons, coupez le disjoncteur ou l’interrupteur-sectionneur du four, ou débranchez-le, pour qu’un enfant ne puisse pas le mettre en marche.
+Rio Grande recommends a **dedicated circuit** (one that powers nothing else) with a properly grounded outlet. We suggest no extension cord. Between firings, switch off the kiln's breaker or disconnect switch, or unplug it, so a child cannot start it.
 
-### Soyez là à la fin de la cuisson
+### Be there when the firing ends
 
-Un **Kiln-Sitter** (coupe-circuit à cône) est l’interrupteur mécanique de nombreux fours à commande manuelle : un petit cône se courbe à la fin de la cuisson et déclenche la coupure. Son manuel précise qu’il « n’est PAS conçu pour servir de dispositif de coupure de sécurité ». Rio Grande dit de ne jamais laisser un four en cuisson sans surveillance, « surtout à l’approche de l’heure d’arrêt prévue ». Ne lancez donc une cuisson que si un adulte sera à la maison et éveillé à la fin de la cuisson, vérifiez que le four s’est bien arrêté, et gardez un extincteur ABC dans la pièce du four. Pour le fonctionnement des Kiln-Sitter, des programmateurs et des courbes de cuisson, voir [Cuire dans un four simple](/guides/firing).
+A **kiln sitter** is the mechanical switch on many manual kilns: a small cone bends at the end of the firing and trips the switch off. Its manual says it "is NOT intended to perform as a fail-safe shut-off device." Rio Grande says never to leave a firing kiln unattended, "especially near the expected shut-off time". So stay nearby and check the kiln while it fires, above all near the end; fire only when an adult will be home and awake to do that, check that it has switched off, and keep an ABC fire extinguisher in the kiln room. For how sitters, controllers and schedules work, see [Firing a basic kiln](/guides/firing).
 
-### Fumées et monoxyde de carbone
+### Fumes and carbon monoxide
 
-La cuisson dégage des fumées : évacuez donc les fumées du four vers l’extérieur ; [Préparation en sécurité et ventilation](/guides/safe-mixing) explique comment. Un four installé dans un garage attenant à la maison a besoin d’une évacuation qui empêche les fumées d’atteindre la maison par la porte de communication. Gardez les oiseaux dans une pièce éloignée chaque fois que le four est en cuisson.
+Firing gives off fumes, so vent the kiln to the outdoors; [Safe mixing and ventilation](/guides/safe-mixing) explains how. A kiln in an attached garage needs venting that keeps fumes from reaching the house through the connecting door. Keep birds in a far room whenever the kiln fires.
 
-Le **monoxyde de carbone** (CO) est un gaz toxique que vous ne pouvez ni voir ni sentir. Une fiche d’une université sur la sécurité des fours exige des détecteurs de CO avec les fours à gaz. Les avis divergent pour les fours électriques, mais la combustion des matières organiques (dans la terre, ou dans des choses comme le papier ou la cire) peut produire du CO. Nous pensons qu’un détecteur de CO dans la pièce du four et dans les pièces voisines est une précaution sensée et peu coûteuse, quel que soit le four.
+**Carbon monoxide** (CO) is a poisonous gas you cannot see or smell. A university kiln safety sheet requires CO alarms with gas kilns. Views differ for electric kilns, but burning off organic matter (in clay, or things like paper or wax) can make CO. We think a CO alarm in the kiln room and the rooms next to it is a sensible, inexpensive step for any kiln.
 
-### Les regards du four et les yeux
+### Peepholes and eyes
 
-Le rayonnement infrarouge, que vous ne pouvez pas voir, « commence à 752°F (400°C) », et le Ceramic Arts Network indique qu’au-delà, il faut toujours porter une protection oculaire pour regarder dans un four. L’infrarouge peut endommager le cristallin de l’œil et provoquer une cataracte, et le fait de regarder longtemps peut léser la rétine. Les lunettes de soleil et les lunettes au didyme ne le bloquent pas.
+Infrared light, which you cannot see, "starts at 752°F (400°C)", and the Ceramic Arts Network says looking into a kiln above this should always be done with eye protection. Infrared can damage the lens of the eye and lead to cataracts, and long gazing can injure the retina. Sunglasses and didymium glasses do not block it.
 
 > [!WARNING]
-> Les enfants ne doivent pas du tout regarder dans un four. Le regard rougeoyant d’un four les attire, et on ne peut pas compter sur eux pour garder des lunettes de protection : tenez-les donc à l’écart tant que le four est chaud. Les adultes ne doivent regarder que brièvement, à travers des lunettes de soudage anti-IR. Les sources recommandent des teintes de 1,7 à 5 ; la teinte 3 est un choix raisonnable, ou une teinte plus foncée si vous voyez des taches ensuite.
+> Children should not look into a kiln at all. A glowing peephole draws them, and they will not reliably keep protective glasses on, so keep them away while the kiln is hot. Adults should look only briefly, through IR-rated welding glasses. Sources recommend shades from 1.7 to 5; shade 3 is a sensible choice, darker if you see spots afterward.
 
-## Les pièces faites main sur la table familiale {#handmade-ware}
+## Handmade ware on the family table {#handmade-ware lang=en}
 
-Pour les pièces posées sur la table familiale, la question est le **relargage**{{en: leaching}} : des métaux qui passent de l’émail{{en: glaze}} cuit dans les aliments ou les boissons. La FDA avertit que si une poterie « n’est pas fabriquée correctement, ce plomb peut être relargué dans les aliments et les boissons », et qu’« aucun lavage, aucune ébullition ni aucun autre procédé ne peut retirer le plomb d’une poterie ». Les autorités de réglementation, comme la FDA américaine et l’UE, limitent la quantité de plomb et de cadmium qu’une pièce finie libère lors d’un test standard à l’acide, et non ce que contient l’émail. La limite américaine la plus stricte, pour les tasses, les mugs et les pichets, est de 0,5 µg/mL de plomb.
+The question for pots on the family table is **leaching**: metals dissolving out of the fired glaze into food or drink. The FDA warns that if pottery "is not manufactured properly, this lead can leach into food and drink", and that "no amount of washing, boiling, or other process can remove lead from pottery." Regulators such as the US FDA and the EU limit how much lead and cadmium a finished piece releases in a standard acid test, not what the glaze contains. The strictest US limit, for cups, mugs and pitchers, is 0.5 µg/mL of lead.
 
-### Sans plomb ne veut pas dire apte au contact alimentaire
+### Lead-free is not the same as food-safe
 
-Un émail sans plomb peut tout de même relarguer des métaux. Digitalfire, une référence en chimie des émaux, désigne comme préoccupants les émaux contenant « des colorants à base d’oxydes de métaux lourds, du baryum, du lithium ou du plomb », et avertit qu’un pigment{{en: stain}} cuit au-delà de sa température nominale peut libérer du cadmium. L’étiquette ASTM D-4236 des matériaux d’art, sur un pot, « N’ÉTABLIT PAS qu’un émail cuit est apte au contact alimentaire », et « les fabricants de vaisselle doivent tester toutes les pièces finies pour établir leur statut de vaisselle de table ».
+A glaze with no lead can still leach. Digitalfire, a glaze chemistry reference, names glazes containing "heavy metal oxide colorants, barium, lithium, or lead" as the concern, and warns that a stain fired above its rated temperature can release cadmium. The ASTM D-4236 art-materials label on a jar "DOES NOT establish that a fired glaze is food-safe", and "Tableware producers must test all finished ware to establish dinnerware status."
 
 > [!NOTE]
-> « Apte au contact alimentaire »{{en: food safe}} veut dire que cet émail, sur cette terre{{en: clay}}, cuit à ce cône, appliqué de cette façon, libère moins que les limites légales. Un calcul de recette, y compris celui de Glazecalc, peut signaler une recette à risque, mais ne peut pas prouver qu’une pièce est sans danger. Seul un test de relargage de la pièce cuite le peut.
+> "Food safe" means this glaze, on this clay, fired to this cone, applied this way, releases less than the legal limits. A recipe calculation, Glazecalc's included, can flag a risky recipe but cannot prove a pot is safe. Only a leach test of the fired piece can.
 
-Nous suggérons de voir la mention « alimentaire » sur un émail du commerce comme un bon point de départ, pas comme une garantie : une autre terre, une couche plus épaisse, un autre cône ou un second émail par-dessus change le résultat.
+We suggest reading a "food safe" label on a commercial glaze as a good start, not a guarantee: a different clay, a thicker coat, another cone or a second glaze on top changes the result.
 
-### Les tests
+### Testing
 
-Les laboratoires testent les pièces cuites par un trempage standard dans l’acide qui représente le pire des cas, comme l’ASTM C738 aux États-Unis. Le test UE d’un laboratoire demande quatre pièces identiques et prend sept jours ouvrés : faites donc des exemplaires en plus de tout ce que vous comptez faire tester.
+Laboratories test fired pieces with a standard acid soak that represents a worst case, such as ASTM C738 in the US. One lab's EU test needs four identical pieces and takes seven working days, so make spares of anything you plan to have tested.
 
-Les tests maison sont contestés. La FDA indique que les kits de test à domicile par frottis peuvent révéler du plomb susceptible d’être relargué, et qu’une pièce dont le test est positif ne doit pas être utilisée pour les aliments. Ceramics NZ avertit que les stylos de détection du plomb vendus au grand public « ne sont pas conçus pour cet usage » sur la céramique et peuvent donner de faux positifs. Digitalfire suggère de laisser une tranche de citron sur l’émail pendant une nuit, comme dépistage grossier. La lecture prudente : un test maison positif veut dire qu’il faut cesser d’utiliser la pièce pour les aliments, et un test négatif ne prouve rien. Seul un laboratoire peut vous dire qu’une pièce est sans danger.
+Home tests are disputed. The FDA says home swab kits can show leachable lead, and that a piece that tests positive should not be used for food. Ceramics NZ warns that consumer lead-test pens are "not designed for this use" on ceramics and can give false positives. Digitalfire suggests leaving a lemon slice on the glaze overnight as a rough screen. The safe reading: a positive home test means stop using the piece for food, and a negative one proves nothing. Only a lab can tell you a piece is safe.
 
-### Pièces tressaillées
+### Crazed ware
 
-Le **tressaillage**{{en: crazing}} est un réseau de fines fissures à la surface de l’émail, et les sources ne s’accordent pas à son sujet. Une expérience de Ceramics Monthly a montré que des tessons d’essai{{en: test tiles}} tressaillés pouvaient être nettoyés, au mieux au lave-vaisselle, même s’ils ressortaient moins propres que des tessons non tressaillés après un lavage à l’eau et au savon. Digitalfire estime que « les pièces tressaillées sont inacceptables » et que le tressaillage « affaiblit gravement les pièces ». La ligne de conduite prudente est simple : n’utilisez pas de pièces tressaillées pour les aliments.
+**Crazing** is a network of fine cracks in the glaze surface, and sources disagree about it. A Ceramics Monthly experiment found crazed tiles could be cleaned, best in a dishwasher, though they came out less clean than uncrazed tiles after soap and water. Digitalfire holds that "Crazed ware is unacceptable" and that crazing "severely weakens ware". The safe course is simple: do not use crazed pieces for food.
 
-### Émaux intérieurs
+### Liner glazes
 
-Un **émail intérieur**{{en: liner glaze}} est l’émail de l’intérieur d’une tasse ou d’un bol, là où se trouvent les aliments. Digitalfire décrit un émail intérieur dont le risque peut être assez faible pour l’utiliser sans test en laboratoire : sans colorants, baryum, plomb ni lithium ; entièrement fondu ; sans tressaillage ; et résistant à l’usure. Les signes d’alerte, pour tout émail, sont de fortes quantités de colorant, des cristaux en surface et une fonte insuffisante.
+A **liner glaze** is the glaze on the inside of a cup or bowl, where the food sits. Digitalfire describes a liner that may be low enough in risk to use without lab testing: no colorants, barium, lead or lithium; fully melted; no crazing; and it wears well. Even then, only a leach test of your own fired pots shows whether they are food-safe. Warning signs in any glaze are heavy amounts of colorant, crystals on the surface and poor melting.
 
-### Les règles familiales que nous suggérons
+### Family rules we suggest
 
-- Tasses, bols et assiettes des enfants : uniquement des émaux intérieurs testés en laboratoire et résistants, ou de la vaisselle du commerce.
-- Ne conservez pas d’aliments ni de boissons acides (agrumes, tomate, vinaigre, jus de fruits, vin) dans des pièces recouvertes d’un émail que vous n’avez pas fait tester.
-- N’utilisez pas de pièces tressaillées pour les aliments.
-- Les tessons d’essai et les expériences restent dans l’atelier, jamais dans la cuisine, le coffre à jouets ou la gamelle de l’animal.
-- Faites aussi attention aux autres poteries. La FDA conseille la prudence avec les pièces faites main ou d’aspect grossier, les antiquités, les pièces abîmées ou usées, les trouvailles de brocante et les décors orange vif, rouge vif ou jaune vif.
-- Si un enfant a utilisé une poterie dont vous doutez maintenant, la FDA dit de parler à un médecin d’un dosage du plomb dans le sang.
+- Children's cups, bowls and plates: only lab-tested, durable liner glazes, or commercial dinnerware.
+- Do not store acidic food or drink (citrus, tomato, vinegar, fruit juice, wine) in pots glazed with anything you have not had tested.
+- Do not use crazed pieces for food.
+- Test tiles and experiments stay in the studio, never in the kitchen, the toy box or the pet's bowl.
+- Take care with other pottery too. The FDA advises caution with handmade or crude-looking pieces, antiques, damaged or worn pieces, flea-market finds and bright orange, red or yellow decoration.
+- If a child has used pottery you now doubt, the FDA says to talk to a doctor about a blood lead test.
 
-Pour en savoir plus sur la fonte des émaux, sur la raison pour laquelle certains relarguent des métaux et sur ce que signifient les limites, voir [Les principes de base de l’émaillage](/guides/glazing-basics).
+For more on how glazes melt, why some leach and what the limits mean, see [Glazing from first principles](/guides/glazing-basics).
 
 ## Sources {#sources}
 

@@ -361,8 +361,7 @@
     "heading": "Pericoli",
     "intro": "Come li indica la scheda di ogni materiale; quelli dell’elenco standard provengono dalle schede di dati di sicurezza dei fornitori.",
     "line": "<b>{names}:</b> {hazards}",
-    "unknown": "{count, plural, one {Non sono indicati pericoli per {list}: vedere la scheda di dati di sicurezza che lo accompagna.} many {Non sono indicati pericoli per {list}: vedere le schede di dati di sicurezza che li accompagnano.} other {Non sono indicati pericoli per {list}: vedere le schede di dati di sicurezza che li accompagnano.}}",
-    "safety": "I materiali per smalti, asciutti, producono polvere da tenere fuori dai polmoni, anche quelli non classificati come pericolosi: vedere <mixing>Miscelazione sicura e ventilazione</mixing>, e <home>Non avvelenare la propria famiglia</home> se in casa ci sono bambini o animali. Dove la scheda di dati di sicurezza di un materiale dice di più, seguirla."
+    "unknown": "{count, plural, one {Non sono indicati pericoli per {list}: vedere la scheda di dati di sicurezza che lo accompagna.} many {Non sono indicati pericoli per {list}: vedere le schede di dati di sicurezza che li accompagnano.} other {Non sono indicati pericoli per {list}: vedere le schede di dati di sicurezza che li accompagnano.}}"
   },
   "compare": {
     "heading": "Confronta due ricette",

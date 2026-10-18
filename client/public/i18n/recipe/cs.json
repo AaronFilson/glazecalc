@@ -361,8 +361,7 @@
     "heading": "Rizika",
     "intro": "Tak, jak je uvádí záznam každé suroviny; rizika standardní knihovny pocházejí z bezpečnostních listů dodavatelů.",
     "line": "<b>{names}:</b> {hazards}",
-    "unknown": "{count, plural, one {Pro {list} nejsou uvedena žádná rizika: viz bezpečnostní list, který je k ní přiložen.} few {Pro {list} nejsou uvedena žádná rizika: viz bezpečnostní listy, které jsou k nim přiloženy.} many {Pro {list} nejsou uvedena žádná rizika: viz bezpečnostní listy, které jsou k nim přiloženy.} other {Pro {list} nejsou uvedena žádná rizika: viz bezpečnostní listy, které jsou k nim přiloženy.}}",
-    "safety": "Suché suroviny pro glazury vytvářejí prach, který nepatří do plic, i když nejsou klasifikovány jako nebezpečné: viz <mixing>Bezpečné míchání a větrání</mixing> a <home>Neotravte svou rodinu</home>, pokud jsou nablízku děti nebo domácí zvířata. Pokud bezpečnostní list suroviny uvádí víc, řiďte se jím."
+    "unknown": "{count, plural, one {Pro {list} nejsou uvedena žádná rizika: viz bezpečnostní list, který je k ní přiložen.} few {Pro {list} nejsou uvedena žádná rizika: viz bezpečnostní listy, které jsou k nim přiloženy.} many {Pro {list} nejsou uvedena žádná rizika: viz bezpečnostní listy, které jsou k nim přiloženy.} other {Pro {list} nejsou uvedena žádná rizika: viz bezpečnostní listy, které jsou k nim přiloženy.}}"
   },
   "compare": {
     "heading": "Porovnat dva recepty",

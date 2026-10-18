@@ -165,69 +165,69 @@ Label: Τριάδα κώνων
 
 :::orton
 
-## Το Kiln-Sitter {#kiln-sitter}
+## The kiln sitter {#kiln-sitter lang=en}
 
-Το **Kiln-Sitter** είναι ο μηχανικός διακόπτης, στο εξωτερικό πολλών απλών και παλαιότερων καμινιών, που σβήνει το καμίνι όταν λυγίσει ένας μικρός κώνος{{en: cone}}. Το πιο γνωστό είναι το Kiln-Sitter της Dawson. Κάνει το ψήσιμο πιο εύκολο, αλλά είναι διευκόλυνση, όχι συσκευή ασφαλείας.
+A **kiln sitter** is the mechanical switch, on the outside of many basic and older kilns, that turns the kiln off when a small cone bends. The best known is the Dawson Kiln-Sitter. It makes firing easier, but it is a convenience, not a safety device.
 
-### Πώς λειτουργεί
+### How it works
 
-Ένας σωλήνας από πορσελάνη μπαίνει μέσα στο καμίνι. Στην άκρη του, ένας μικρός κώνος ή μια ράβδος ακουμπά οριζόντια σε δύο μεταλλικά στηρίγματα, κάτω από μια **ράβδο ανίχνευσης** που περιστρέφεται γύρω από έναν άξονα σαν τραμπάλα. Έξω από το καμίνι, η άλλη άκρη της ράβδου ανίχνευσης κρατά ψηλά ένα βαρίδι με μια μικρή αρπάγη. Όταν ο κώνος μαλακώσει και λυγίσει περίπου 90°, η ράβδος ανίχνευσης πέφτει αρκετά ώστε να ελευθερώσει το βαρίδι, το βαρίδι πέφτει και κόβεται το ρεύμα στις αντιστάσεις.
+A porcelain tube reaches into the kiln. At its end, a small cone or a bar lies across two metal supports, under a **sensing rod** that pivots like a seesaw. Outside the kiln, the other end of the rod holds up a weight by a small claw. When the cone softens and bends to about 90°, the rod drops far enough to release the weight, the weight falls, and the power to the elements is cut.
 
-Οι μικροί κώνοι και οι ράβδοι «δίνουν ισοδύναμη θερμική επεξεργασία». Η Orton σημειώνει ότι πολλοί αρχάριοι διαλέγουν ράβδους, γιατί με το ομοιόμορφο σχήμα τους είναι εύκολο να τις τοποθετούν κάθε φορά με τον ίδιο τρόπο. Ο μικρός κώνος λεπταίνει προς τη μύτη, οπότε έχει σημασία πώς κάθεται: με το λεπτό μέρος του κάτω από τη ράβδο ανίχνευσης το καμίνι σβήνει σε χαμηλότερη θερμοκρασία, και με το χοντρό μέρος σε υψηλότερη, μια μετατόπιση «έως και 1/2 κώνου».
+Small cones and bars "give equivalent heat treatment". Orton notes that many beginners choose bars, because their even shape makes it easy to place them the same way every time. A small cone tapers, so where it sits matters: with its thin part under the rod the kiln shuts off cooler, and with its thick part hotter, a shift of "as much as 1/2 cone".
 
-### Ποιος κώνος μπαίνει στο Kiln-Sitter
+### Which cone goes in the sitter
 
-Οι πηγές διαφωνούν. Η Dawson, που κατασκεύαζε το Kiln-Sitter, λέει να βάζετε τον ίδιο αριθμό με τον κώνο-στόχο της πυρόπλακας, και να πηγαίνετε έναν αριθμό θερμότερα μόνο αν ο κώνος της πυρόπλακας δεν λυγίσει. Η L&L λέει να βάζετε κώνο έναν αριθμό θερμότερο από τους κώνους της πυρόπλακας, γιατί το Kiln-Sitter βρίσκεται κοντά στο τοίχωμα και στις αντιστάσεις, δέχεται περισσότερη θερμότητα και τείνει να σβήνει νωρίς. Η Orton ξεκαθαρίζει την αρχή: «Ο κώνος της πυρόπλακας είναι ο τελικός κριτής του ψησίματος, όχι ο κώνος ή η ράβδος του Kiln-Sitter.»
-
-> [!NOTE]
-> Το σημείο εκκίνησης που προτείνουμε: βάλτε στο Kiln-Sitter έναν μικρό κώνο με τον ίδιο αριθμό με τον στόχο σας, και μια τριάδα κώνων{{en: cone pack}} στην πυρόπλακα. Αν ο κώνος-στόχος της πυρόπλακας δεν έχει λυγίσει αρκετά όταν σβήσει το καμίνι, την επόμενη φορά βάλτε στο Kiln-Sitter κώνο έναν αριθμό θερμότερο, ή βάλτε το χοντρότερο μέρος του κώνου κάτω από τη ράβδο ανίχνευσης. Αν έχει λυγίσει υπερβολικά, κάντε το αντίθετο.
-
-### Ρύθμιση και έλεγχοι πριν από κάθε ψήσιμο
-
-Η διαδικασία της Dawson, που χρησιμεύει και ως έλεγχος πριν από κάθε ψήσιμο:
-
-1. Κλείστε όλους τους διακόπτες. Ελέγξτε ότι η ράβδος ανίχνευσης κινείται ελεύθερα, κάθεται στο κέντρο του σωλήνα και δεν είναι στραβή ή διαβρωμένη. Αν κινείται δύσκολα, η Dawson λέει να αλλάξετε ολόκληρο τον σωλήνα με τα εξαρτήματά του.
-2. Περάστε με πινέλο μια λεπτή στρώση από **προστατευτικό υψηλής θερμοκρασίας για πυρόπλακες** (μια επίστρωση που εμποδίζει το λιωμένο υλικό να κολλήσει) στα στηρίγματα του κώνου και στη ράβδο ανίχνευσης, εκεί που ακουμπά τον κώνο. Μην περνάτε ποτέ προστατευτικό στον κώνο ή στον σωλήνα από πορσελάνη.
-3. Φορτώστε πυρόπλακες και κομμάτια τουλάχιστον 1 ίντσα (25 mm) πάνω ή κάτω από τον σωλήνα, ώστε τίποτα να μην μπορεί να τον αγγίξει, να πέσει πάνω του ή να τον φράξει.
-4. Σηκώστε το βαρίδι, πιέστε την αρπάγη προς τα κάτω πάνω στη σκανδάλη, και ακουμπήστε τον κώνο ή τη ράβδο οριζόντια στα στηρίγματα, κόντρα στο μεταλλικό σκαλοπάτι, όπως δείχνει το εγχειρίδιο του Kiln-Sitter σας, κάθε φορά με τον ίδιο τρόπο. Ελέγξτε τον ξανά πριν κλείσετε το καπάκι: «**Ένας κώνος ή μια ράβδος σε λάθος θέση μπορεί να προκαλέσει υπερβολικό ψήσιμο.**»
-5. Ρυθμίστε τον χρονοδιακόπτη ασφαλείας (limit timer) και πιέστε προς τα μέσα το έμβολο μέχρι να κλειδώσει. Κρατήστε το καμίνι οριζόντιο και τον χώρο κάτω από το βαρίδι ελεύθερο, ώστε το βαρίδι να μπορεί να πέσει.
-
-### Ο χρονοδιακόπτης ασφαλείας
-
-Πολλά Kiln-Sitter, ανάμεσά τους και τα μοντέλα LT της Dawson, έχουν **χρονοδιακόπτη ασφαλείας**: ένα ρολόι που σβήνει το καμίνι μετά από ορισμένο χρόνο, ως εφεδρεία «σε περίπτωση που το Kiln-Sitter αστοχήσει». Θα πρέπει πάντα να ρυθμίζεται σε περισσότερο χρόνο από όσο αναμένεται να διαρκέσει το ψήσιμο. Οι πηγές ορίζουν διαφορετικά το περιθώριο:
-
-Table: Σε πόσο χρόνο ρυθμίζεται ο χρονοδιακόπτης ασφαλείας
-Label: Ρύθμιση χρονοδιακόπτη
-
-| Πηγή      | Ρύθμιση                                                                                                                                       |
-| --------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| Dawson    | ½ ώρα περισσότερο από τον αναμενόμενο χρόνο ψησίματος μέχρι να γνωρίσετε το καμίνι, αργότερα ακόμη και μόνο ¼ της ώρας. Ποτέ πάνω από 20 ώρες |
-| L&L       | Πολύ ψηλά την πρώτη φορά, σημειώνοντας πόσο διαρκεί το ψήσιμο. Μετά, περίπου 1 ώρα περισσότερο                                                |
-| Bracker's | 30 λεπτά έως 1 ώρα περισσότερο από τον χρόνο ψησίματος                                                                                        |
+Sources disagree. Dawson, who made the sitter, says to use the same number as the firing cone on the shelf, and to go one number hotter only if the shelf cone stays unbent. L&L says to use one number hotter than the shelf cones, because the sitter sits near the wall and the elements, gets more heat, and tends to shut off early. Orton settles the principle: "The shelf cone is the final judge of the firing process, not the Kiln-Sitter cone or bar."
 
 > [!NOTE]
-> Το σημείο εκκίνησης που προτείνουμε: γενναιόδωρη ρύθμιση την πρώτη φορά (μέσα στις 20 ώρες της κλίμακας), μετά ½ έως 1 ώρα περισσότερο από τον χρόνο που καταγράψατε. Ο χρονοδιακόπτης δείχνει επίσης πόσο κράτησε ένα ψήσιμο: αν τον ρυθμίσατε στο 7 και σταμάτησε στο 1, το ψήσιμο κράτησε 6 ώρες.
+> Our starting point: put a small cone of the same number as your target in the sitter, with a cone pack on the shelf. If the shelf firing cone is under-bent when the kiln shuts off, go one number hotter in the sitter next time, or set the thicker part of the cone under the rod. If it is over-bent, do the opposite.
 
-### Όταν σβήνει νωρίς ή αργά
+### Setting it up, and checks before every firing
 
-Μετά από κάθε ψήσιμο, διαβάστε τον κώνο του Kiln-Sitter μαζί με τους κώνους της πυρόπλακας.
+Dawson's procedure, which doubles as a check before every firing:
 
-Table: Ανάγνωση του Kiln-Sitter μετά το ψήσιμο
-Label: Προβλήματα του Kiln-Sitter
+1. Turn all the switches off. Check that the sensing rod moves freely, sits centered in the tube and is not bent or corroded. If it is sluggish, Dawson says to replace the tube assembly.
+2. Brush a thin coat of high-fire **kiln wash** (a coating that stops melted material sticking) onto the cone supports and the rod where it touches the cone. Never put wash on the cone or the porcelain tube.
+3. Load shelves and ware at least 1 in (25 mm) above or below the tube, so nothing can touch, fall against or block it.
+4. Lift the weight, press the claw down onto the trigger, and lay the cone or bar flat on the supports against the metal step, as your sitter's manual shows, the same way every time. Check it again before closing the lid: "AN IMPROPERLY PLACED CONE OR BAR COULD CAUSE AN OVERFIRING."
+5. Set the limit timer and push in the plunger until it locks. Keep the kiln level and the space under the weight clear, so the weight can fall.
 
-| Τι βλέπετε                                                            | Πιθανή αιτία                                                                                                          | Τι να κάνετε                                                                            |
-| --------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
-| Το Kiln-Sitter έκοψε, ο κώνος-στόχος της πυρόπλακας δεν λύγισε αρκετά | Το Kiln-Sitter ζεστάθηκε περισσότερο από την πυρόπλακα (βρίσκεται κοντά στο τοίχωμα)                                  | Έναν κώνο θερμότερο στο Kiln-Sitter, ή το χοντρότερο μέρος κάτω από τη ράβδο ανίχνευσης |
-| Ο κώνος του Kiln-Sitter λύγισε πολύ πέρα από τις 90°                  | Το καμίνι ανέβηκε πολύ γρήγορα κοντά στο τέλος                                                                        | Χαμηλώστε τις θέσεις των διακοπτών, ώστε η άνοδος να είναι πιο αργή (Dawson)            |
-| Ο κώνος του Kiln-Sitter δεν λύγισε ή έλιωσε σε σβόλο                  | Το ίδιο το Kiln-Sitter: κακή ρύθμιση, στραβή ή διαβρωμένη ράβδος ανίχνευσης, ή κάτι σφηνωμένο μέσα ή πάνω στον σωλήνα | Ελέγξτε και ρυθμίστε το Kiln-Sitter σύμφωνα με το εγχειρίδιό του πριν ψήσετε ξανά       |
-| Νωρίς ή αργά κάθε φορά                                                | Απορρύθμιση, ή φθαρμένη ράβδος ανίχνευσης                                                                             | Ελέγξτε με τον μετρητή ρύθμισης και μετακινήστε την πλάκα σκανδάλης                     |
+### The limit timer
 
-Για να ελέγξει τη ρύθμιση, η Dawson χρησιμοποιεί έναν **μετρητή ρύθμισης** που κρατά τη ράβδο ανίχνευσης εκεί όπου θα την άφηνε ένας κώνος που έχει λυγίσει τελείως. Τότε πρέπει να υπάρχει «διάκενο 1/16 της ίντσας» (περίπου 1,6 mm) στην αρπάγη. Κάντε αυτόν τον έλεγχο κάθε 30 ψησίματα. Ο κανόνας του Ceramics Monthly: αν το καμίνι σβήνει νωρίς, μετακινήστε την πλάκα σκανδάλης λίγο προς τα πάνω. Αν σβήνει αργά, λίγο προς τα κάτω. Ό,τι κι αν κάνει το Kiln-Sitter, «Να εμπιστεύεστε πάντα τους μεγάλους κώνους-μάρτυρες περισσότερο από τους μικρούς κώνους του Kiln-Sitter.»
+Many sitters, including Dawson's LT models, have a **limit timer**: a clock that turns the kiln off after a set time, as a backup "in case the KILN-SITTER fails". It should always be set longer than the firing is expected to take. Sources set the margin differently:
+
+Table: How long to set the limit timer
+Label: Limit timer settings
+
+| Source    | Setting                                                                                                                      |
+| --------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| Dawson    | ½ hour longer than the expected firing time until you know the kiln, later as little as ¼ hour; never set it beyond 20 hours |
+| L&L       | Very high the first time, noting how long the firing takes; after that, about 1 hour longer                                  |
+| Bracker's | 30 minutes to 1 hour longer than the firing time                                                                             |
+
+> [!NOTE]
+> Our starting point: generous the first time (within the dial's 20 hours), then ½ to 1 hour longer than the time you recorded. The timer also tells you how long a firing took: set at 7 and ending at 1 means 6 hours.
+
+### When it shuts off early or late
+
+After each firing, read the sitter cone beside the shelf cones.
+
+Table: Reading the sitter after a firing
+Label: Kiln sitter problems
+
+| What you see                                    | Likely cause                                                                                           | What to do                                                       |
+| ----------------------------------------------- | ------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------- |
+| Sitter tripped, shelf firing cone under-bent    | The sitter ran hotter than the shelf (it sits near the wall)                                           | One cone hotter in the sitter, or the thicker part under the rod |
+| Sitter cone sagged well past 90°                | The kiln climbed too fast near the end                                                                 | Lower the switch settings, so the climb is slower (Dawson)       |
+| Sitter cone did not bend, or melted into a blob | The sitter itself: poor adjustment, a bent or corroded rod, or something lodged in or against the tube | Check and adjust the sitter by its manual before firing again    |
+| Early or late every time                        | Out of adjustment, or a worn rod                                                                       | Check with the firing gauge; move the trigger plate              |
+
+To check the adjustment, Dawson uses a **firing gauge** that holds the rod where a fully bent cone would leave it; there should then be "1/16th-inch clearance" (about 1.6 mm) at the claw. Check it every 30 firings. Ceramics Monthly's rule: if the kiln shuts off early, move the trigger plate up slightly; if late, move it down slightly. Whatever the sitter does, "Always trust large witness cones over small sitter cones."
 
 > [!WARNING]
-> **Το Kiln-Sitter δεν είναι συσκευή ασφαλείας.** Το εγχειρίδιο της Dawson λέει ότι «**δεν** προορίζεται να λειτουργεί ως αλάνθαστη διάταξη διακοπής ασφαλείας και το καμίνι σας **δεν** θα πρέπει να μένει χωρίς επίβλεψη πέρα από τον εκτιμώμενο χρόνο ψησίματος.» Κάτι τόσο απλό όσο ένα ωμό κομμάτι{{en: greenware}} που πέφτει πάνω στον σωλήνα «μπορεί να προκαλέσει υπερβολικό ψήσιμο». Να είστε εκεί για να ελέγξετε το καμίνι όταν θα πρέπει να τελειώνει, και μην το ψήνετε ποτέ πάνω ή κοντά σε ό,τι μπορεί να καεί, όπως ξύλινο πάτωμα ή χαλί.
+> **A kiln sitter is not a safety device.** Dawson's manual says it "is NOT intended to perform as a fail-safe shut-off device and your kiln should NOT be left unattended beyond the estimated firing time." Something as simple as greenware falling against the tube "might cause an over-firing". Be there to check the kiln when it should be finishing, and never fire it over or near anything that burns, such as a wood floor or carpet.
 
-Το Kiln-Sitter είναι φτιαγμένο για ψησίματα «έως και τον κώνο 8». Δεν μπορεί μόνο του να κρατήσει μια θερμοκρασία ή να κρυώσει αργά το καμίνι. Με εξάσκηση και ένα ημερολόγιο ψησίματος, όμως, μπορείτε να «γίνετε εσείς ο ελεγκτής», όπως το λέει το Digitalfire: παρακολουθείτε τους κώνους και γυρίζετε τους διακόπτες με το χέρι.
+The sitter is built for firings "up to and including Cone 8". It cannot hold a temperature or cool slowly by itself. With practice and a log, though, you can "become the controller", as Digitalfire puts it: watch the cones and turn the switches by hand.
 
 :::
 

@@ -361,8 +361,7 @@
     "heading": "Bahaya",
     "intro": "Sebagaimana diberikan catatan setiap bahan; milik pustaka standar berasal dari lembar data keselamatan pemasok.",
     "line": "<b>{names}:</b> {hazards}",
-    "unknown": "{count, plural, other {Tidak ada bahaya yang diberikan untuk {list}: lihat lembar data keselamatan yang menyertainya.}}",
-    "safety": "Bahan glasir kering menghasilkan debu yang perlu dijauhkan dari paru-paru Anda, bahkan yang tidak digolongkan berbahaya: lihat <mixing>Mencampur dengan aman dan ventilasi</mixing>, dan <home>Jangan meracuni keluarga Anda</home> jika ada anak atau hewan peliharaan di sekitar. Jika lembar data keselamatan sebuah bahan menyatakan lebih banyak, ikuti lembar itu."
+    "unknown": "{count, plural, other {Tidak ada bahaya yang diberikan untuk {list}: lihat lembar data keselamatan yang menyertainya.}}"
   },
   "compare": {
     "heading": "Bandingkan dua resep",

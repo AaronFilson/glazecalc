@@ -165,69 +165,69 @@ Räkna med skillnader: Orton skriver ”Vanligtvis ser man minst en käglas skil
 
 :::orton
 
-## Kiln-Sitter {#kiln-sitter}
+## The kiln sitter {#kiln-sitter lang=en}
 
-En **Kiln-Sitter** är den mekaniska brytaren, på utsidan av många enkla och äldre ugnar, som stänger av ugnen när en liten kägla{{en: cone}} böjer sig. Den mest kända är Dawsons Kiln-Sitter. Den gör bränningen enklare, men den är en bekvämlighet, inte en säkerhetsanordning.
+A **kiln sitter** is the mechanical switch, on the outside of many basic and older kilns, that turns the kiln off when a small cone bends. The best known is the Dawson Kiln-Sitter. It makes firing easier, but it is a convenience, not a safety device.
 
-### Så fungerar den
+### How it works
 
-Ett keramikrör av porslin går in i ugnen. Längst in ligger en liten kägla eller en stav tvärs över två kägelstöd av metall, under en **kännarstav** som vippar som en gungbräda. Utanför ugnen håller kännarstavens andra ände uppe en vikt med en liten klo. När käglan mjuknar och böjer sig till ungefär 90° sjunker kännarstaven så långt att vikten släpps, vikten faller och strömmen till elementen bryts.
+A porcelain tube reaches into the kiln. At its end, a small cone or a bar lies across two metal supports, under a **sensing rod** that pivots like a seesaw. Outside the kiln, the other end of the rod holds up a weight by a small claw. When the cone softens and bends to about 90°, the rod drops far enough to release the weight, the weight falls, and the power to the elements is cut.
 
-Små käglor och stavar ”ger likvärdig värmebehandling”. Orton påpekar att många nybörjare väljer stavar, eftersom deras jämna form gör det lätt att lägga dem på samma sätt varje gång. En liten kägla smalnar av, så det spelar roll hur den ligger: med den tunna delen under kännarstaven stänger ugnen av kallare, och med den tjocka delen varmare, en förskjutning på ”så mycket som 1/2 kägla”.
+Small cones and bars "give equivalent heat treatment". Orton notes that many beginners choose bars, because their even shape makes it easy to place them the same way every time. A small cone tapers, so where it sits matters: with its thin part under the rod the kiln shuts off cooler, and with its thick part hotter, a shift of "as much as 1/2 cone".
 
-### Vilken kägla i Kiln-Sitter-brytaren
+### Which cone goes in the sitter
 
-Källorna är oeniga. Dawson, som tillverkade brytaren, säger att samma nummer som målkäglan på ugnsplattan ska användas, och att man går ett nummer varmare bara om käglan på ugnsplattan förblir oböjd. L&L säger att man ska använda ett nummer varmare än käglorna på ugnsplattan, eftersom brytaren sitter nära väggen och elementen, får mer värme och brukar stänga av för tidigt. Orton slår fast principen: ”Käglan på ugnsplattan är den slutliga domaren över bränningen, inte Kiln-Sitter-käglan eller -staven.”
-
-> [!NOTE]
-> Vår utgångspunkt: lägg en liten kägla med samma nummer som målet i brytaren, med en kägelsats{{en: cone pack}} på ugnsplattan. Om målkäglan på ugnsplattan är för lite böjd när ugnen stängs av, ta ett nummer varmare i brytaren nästa gång, eller lägg käglans tjockare del under kännarstaven. Om den är för mycket böjd, gör tvärtom.
-
-### Förberedelser och kontroller före varje bränning
-
-Dawsons tillvägagångssätt, som också fungerar som kontroll före varje bränning:
-
-1. Vrid av alla vred. Kontrollera att kännarstaven rör sig fritt, sitter centrerad i röret och inte är böjd eller korroderad. Om den går trögt säger Dawson att rörenheten ska bytas ut.
-2. Pensla ett tunt lager **plattengobe** för högtemperatur (en beläggning som hindrar smält material från att fastna) på kägelstöden och på kännarstaven där den rör vid käglan. Stryk aldrig plattengobe på käglan eller på porslinsröret.
-3. Placera ugnsplattor och gods minst 1 tum (25 mm) ovanför eller under röret, så att inget kan röra vid det, falla mot det eller blockera det.
-4. Lyft vikten, tryck ned klon mot utlösaren och lägg käglan eller staven plant på stöden mot metallkanten, som brytarens bruksanvisning visar, på samma sätt varje gång. Kontrollera den igen innan locket stängs: ”EN FELAKTIGT PLACERAD KÄGLA ELLER STAV KAN ORSAKA ÖVERBRÄNNING.”
-5. Ställ in säkerhetstimern och tryck in knappen tills den låser sig. Se till att ugnen står plant och att utrymmet under vikten är fritt, så att vikten kan falla.
-
-### Säkerhetstimern
-
-Många Kiln-Sitter-brytare, bland dem Dawsons LT-modeller, har en **säkerhetstimer**: en klocka som stänger av ugnen efter en inställd tid, som reserv ”om KILN-SITTER-brytaren slutar fungera”. Den bör alltid ställas in på längre tid än bränningen väntas ta. Källorna anger marginalen olika:
-
-Table: Hur länge säkerhetstimern ska ställas in
-Label: Inställning av säkerhetstimer
-
-| Källa     | Inställning                                                                                                          |
-| --------- | -------------------------------------------------------------------------------------------------------------------- |
-| Dawson    | ½ timme längre än den väntade bränntiden tills man känner ugnen, senare så lite som ¼ timme; aldrig mer än 20 timmar |
-| L&L       | Mycket högt första gången, och notera hur lång tid bränningen tar; därefter cirka 1 timme längre                     |
-| Bracker's | 30 minuter till 1 timme längre än bränntiden                                                                         |
+Sources disagree. Dawson, who made the sitter, says to use the same number as the firing cone on the shelf, and to go one number hotter only if the shelf cone stays unbent. L&L says to use one number hotter than the shelf cones, because the sitter sits near the wall and the elements, gets more heat, and tends to shut off early. Orton settles the principle: "The shelf cone is the final judge of the firing process, not the Kiln-Sitter cone or bar."
 
 > [!NOTE]
-> Vår utgångspunkt: generöst första gången (inom skalans 20 timmar), sedan ½ till 1 timme längre än den tid som antecknades. Timern visar också hur länge en bränning tog: inställd på 7 och slut på 1 betyder 6 timmar.
+> Our starting point: put a small cone of the same number as your target in the sitter, with a cone pack on the shelf. If the shelf firing cone is under-bent when the kiln shuts off, go one number hotter in the sitter next time, or set the thicker part of the cone under the rod. If it is over-bent, do the opposite.
 
-### När den stänger av för tidigt eller för sent
+### Setting it up, and checks before every firing
 
-Läs av Kiln-Sitter-käglan efter varje bränning, tillsammans med käglorna på ugnsplattan.
+Dawson's procedure, which doubles as a check before every firing:
 
-Table: Läsa av Kiln-Sitter-brytaren efter en bränning
-Label: Problem med Kiln-Sitter
+1. Turn all the switches off. Check that the sensing rod moves freely, sits centered in the tube and is not bent or corroded. If it is sluggish, Dawson says to replace the tube assembly.
+2. Brush a thin coat of high-fire **kiln wash** (a coating that stops melted material sticking) onto the cone supports and the rod where it touches the cone. Never put wash on the cone or the porcelain tube.
+3. Load shelves and ware at least 1 in (25 mm) above or below the tube, so nothing can touch, fall against or block it.
+4. Lift the weight, press the claw down onto the trigger, and lay the cone or bar flat on the supports against the metal step, as your sitter's manual shows, the same way every time. Check it again before closing the lid: "AN IMPROPERLY PLACED CONE OR BAR COULD CAUSE AN OVERFIRING."
+5. Set the limit timer and push in the plunger until it locks. Keep the kiln level and the space under the weight clear, so the weight can fall.
 
-| Det som syns                                                  | Trolig orsak                                                                                                     | Åtgärd                                                                        |
-| ------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
-| Brytaren löste ut, målkäglan på ugnsplattan för lite böjd     | Brytaren blev varmare än ugnsplattan (den sitter nära väggen)                                                    | En kägla varmare i brytaren, eller den tjockare delen under kännarstaven      |
-| Kiln-Sitter-käglan har sjunkit långt förbi 90°                | Ugnen steg för snabbt mot slutet                                                                                 | Vrid ned vreden, så att stigningen blir långsammare (Dawson)                  |
-| Kiln-Sitter-käglan böjde sig inte, eller smälte till en klump | Själva brytaren: dålig justering, en böjd eller korroderad kännarstav, eller något som fastnat i eller mot röret | Kontrollera och justera brytaren enligt bruksanvisningen innan nästa bränning |
-| För tidigt eller för sent varje gång                          | Feljusterad, eller en sliten kännarstav                                                                          | Kontrollera med inställningsmallen; flytta utlösarplattan                     |
+### The limit timer
 
-För att kontrollera justeringen använder Dawson en **inställningsmall** som håller kännarstaven där en helt nedböjd kägla skulle lämna den; då bör det finnas ”1/16 tums spel” (ungefär 1,6 mm) vid klon. Kontrollera det var 30:e bränning. Regeln från Ceramics Monthly: om ugnen stänger av för tidigt, flytta utlösarplattan lite uppåt; om den stänger av för sent, flytta den lite nedåt. Vad brytaren än gör: ”Lita alltid mer på stora kontrollkäglor{{en: witness cones}} än på små Kiln-Sitter-käglor.”
+Many sitters, including Dawson's LT models, have a **limit timer**: a clock that turns the kiln off after a set time, as a backup "in case the KILN-SITTER fails". It should always be set longer than the firing is expected to take. Sources set the margin differently:
+
+Table: How long to set the limit timer
+Label: Limit timer settings
+
+| Source    | Setting                                                                                                                      |
+| --------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| Dawson    | ½ hour longer than the expected firing time until you know the kiln, later as little as ¼ hour; never set it beyond 20 hours |
+| L&L       | Very high the first time, noting how long the firing takes; after that, about 1 hour longer                                  |
+| Bracker's | 30 minutes to 1 hour longer than the firing time                                                                             |
+
+> [!NOTE]
+> Our starting point: generous the first time (within the dial's 20 hours), then ½ to 1 hour longer than the time you recorded. The timer also tells you how long a firing took: set at 7 and ending at 1 means 6 hours.
+
+### When it shuts off early or late
+
+After each firing, read the sitter cone beside the shelf cones.
+
+Table: Reading the sitter after a firing
+Label: Kiln sitter problems
+
+| What you see                                    | Likely cause                                                                                           | What to do                                                       |
+| ----------------------------------------------- | ------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------- |
+| Sitter tripped, shelf firing cone under-bent    | The sitter ran hotter than the shelf (it sits near the wall)                                           | One cone hotter in the sitter, or the thicker part under the rod |
+| Sitter cone sagged well past 90°                | The kiln climbed too fast near the end                                                                 | Lower the switch settings, so the climb is slower (Dawson)       |
+| Sitter cone did not bend, or melted into a blob | The sitter itself: poor adjustment, a bent or corroded rod, or something lodged in or against the tube | Check and adjust the sitter by its manual before firing again    |
+| Early or late every time                        | Out of adjustment, or a worn rod                                                                       | Check with the firing gauge; move the trigger plate              |
+
+To check the adjustment, Dawson uses a **firing gauge** that holds the rod where a fully bent cone would leave it; there should then be "1/16th-inch clearance" (about 1.6 mm) at the claw. Check it every 30 firings. Ceramics Monthly's rule: if the kiln shuts off early, move the trigger plate up slightly; if late, move it down slightly. Whatever the sitter does, "Always trust large witness cones over small sitter cones."
 
 > [!WARNING]
-> **En Kiln-Sitter är ingen säkerhetsanordning.** Dawsons bruksanvisning säger att den ”INTE är avsedd att fungera som en felsäker avstängningsanordning, och ugnen bör INTE lämnas utan tillsyn längre än den beräknade bränntiden.” Något så enkelt som rågods{{en: greenware}} som faller mot röret ”kan orsaka en överbränning”. Var på plats för att kontrollera ugnen när den borde bli klar, och bränn den aldrig ovanpå eller nära något som kan brinna, till exempel ett trägolv eller en matta.
+> **A kiln sitter is not a safety device.** Dawson's manual says it "is NOT intended to perform as a fail-safe shut-off device and your kiln should NOT be left unattended beyond the estimated firing time." Something as simple as greenware falling against the tube "might cause an over-firing". Be there to check the kiln when it should be finishing, and never fire it over or near anything that burns, such as a wood floor or carpet.
 
-Kiln-Sitter-brytaren är byggd för bränningar ”upp till och med kägla 8”. Den kan inte hålla en temperatur eller kyla långsamt av sig själv. Med övning och en brännlogg går det ändå att ”bli automatiken”, som Digitalfire uttrycker det: håll ögonen på käglorna och vrid på vreden för hand.
+The sitter is built for firings "up to and including Cone 8". It cannot hold a temperature or cool slowly by itself. With practice and a log, though, you can "become the controller", as Digitalfire puts it: watch the cones and turn the switches by hand.
 
 :::
 

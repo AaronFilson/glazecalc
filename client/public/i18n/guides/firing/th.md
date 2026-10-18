@@ -165,69 +165,69 @@ L&L ผู้ผลิตเตาเผาของสหรัฐอเมร�
 
 :::orton
 
-## Kiln-Sitter {#kiln-sitter}
+## The kiln sitter {#kiln-sitter lang=en}
 
-**Kiln-Sitter**{{en: kiln sitter}}คือสวิตช์เชิงกลที่ด้านนอกของเตาเผาพื้นฐานและเตาเผารุ่นเก่าหลายแบบ ซึ่งปิดเตาเผาเมื่อโคนเล็กโค้ง ที่รู้จักกันดีที่สุดคือ Kiln-Sitter ของ Dawson ทำให้การเผาง่ายขึ้น แต่เป็นความสะดวก ไม่ใช่อุปกรณ์ความปลอดภัย
+A **kiln sitter** is the mechanical switch, on the outside of many basic and older kilns, that turns the kiln off when a small cone bends. The best known is the Dawson Kiln-Sitter. It makes firing easier, but it is a convenience, not a safety device.
 
-### ทำงานอย่างไร
+### How it works
 
-หลอดพอร์ซเลนยื่นเข้าไปในเตาเผา ที่ปลายหลอด โคนเล็กหรือแท่งวางพาดบนที่รองโลหะสองอัน ใต้**ก้านตรวจจับ**ที่หมุนได้เหมือนกระดานหก ด้านนอกเตาเผา ปลายอีกด้านของก้านยึดตุ้มน้ำหนักไว้ด้วยตะขอเล็ก เมื่อโคนอ่อนตัวและโค้งประมาณ 90° ก้านจะตกลงพอที่จะปล่อยตุ้มน้ำหนัก ตุ้มน้ำหนักตก และตัดไฟไปยังขดลวดความร้อน
+A porcelain tube reaches into the kiln. At its end, a small cone or a bar lies across two metal supports, under a **sensing rod** that pivots like a seesaw. Outside the kiln, the other end of the rod holds up a weight by a small claw. When the cone softens and bends to about 90°, the rod drops far enough to release the weight, the weight falls, and the power to the elements is cut.
 
-โคนเล็กและแท่ง “ให้การให้ความร้อนที่เทียบเท่ากัน” Orton ระบุว่าผู้เริ่มต้นหลายคนเลือกแท่ง เพราะรูปทรงสม่ำเสมอทำให้วางแบบเดียวกันทุกครั้งได้ง่าย โคนเล็กเรียวลง จึงต้องดูว่าวางอย่างไร: เมื่อส่วนบางอยู่ใต้ก้าน เตาเผาปิดที่เย็นกว่า และเมื่อส่วนหนาอยู่ใต้ก้าน ปิดที่ร้อนกว่า ความต่าง “มากถึงครึ่งเบอร์โคน”
+Small cones and bars "give equivalent heat treatment". Orton notes that many beginners choose bars, because their even shape makes it easy to place them the same way every time. A small cone tapers, so where it sits matters: with its thin part under the rod the kiln shuts off cooler, and with its thick part hotter, a shift of "as much as 1/2 cone".
 
-### โคนไหนใส่ใน Kiln-Sitter
+### Which cone goes in the sitter
 
-แหล่งข้อมูลไม่ตรงกัน Dawson ผู้ผลิต Kiln-Sitter ระบุให้ใช้เบอร์เดียวกับโคนเผาบนแผ่นรองเผา และใช้ร้อนกว่าหนึ่งเบอร์เฉพาะเมื่อโคนบนแผ่นรองเผายังไม่โค้ง L&L ระบุให้ใช้ร้อนกว่าโคนบนแผ่นรองเผาหนึ่งเบอร์ เพราะ Kiln-Sitter อยู่ใกล้ผนังและขดลวดความร้อน ได้รับความร้อนมากกว่า และมักปิดเร็ว Orton สรุปหลักการ: “โคนบนแผ่นรองเผาเป็นผู้ตัดสินสุดท้ายของกระบวนการเผา ไม่ใช่โคนหรือแท่งของ Kiln-Sitter”
-
-> [!NOTE]
-> จุดเริ่มต้นของเรา: ใส่โคนเล็กเบอร์เดียวกับเป้าหมายของคุณใน Kiln-Sitter พร้อมชุดโคนบนแผ่นรองเผา หากโคนเผาบนแผ่นรองเผาโค้งไม่พอเมื่อเตาเผาปิด ให้ใช้ร้อนกว่าหนึ่งเบอร์ใน Kiln-Sitter ครั้งหน้า หรือวางส่วนที่หนากว่าของโคนไว้ใต้ก้าน หากโค้งเกิน ให้ทำตรงข้าม
-
-### การตั้งค่า และการตรวจก่อนการเผาทุกครั้ง
-
-ขั้นตอนของ Dawson ซึ่งใช้เป็นการตรวจก่อนการเผาทุกครั้งด้วย:
-
-1. ปิดสวิตช์ทั้งหมด ตรวจว่าก้านตรวจจับเคลื่อนได้อย่างอิสระ อยู่ตรงกลางหลอด และไม่งอหรือกัดกร่อน หากเฉื่อย Dawson ระบุให้เปลี่ยนชุดหลอด
-2. ทาสารเคลือบแผ่นรองเผาไฟสูงเป็นชั้นบาง (สารเคลือบที่ป้องกันไม่ให้วัสดุที่หลอมติด) ที่ที่รองโคนและก้านตรงที่สัมผัสโคน ห้ามทาสารเคลือบบนโคนหรือหลอดพอร์ซเลนโดยเด็ดขาด
-3. บรรจุแผ่นรองเผาและชิ้นงานให้สูงหรือต่ำกว่าหลอดอย่างน้อย 1 นิ้ว (25 mm) เพื่อไม่ให้สิ่งใดสัมผัส ล้มพิง หรือขวางหลอดได้
-4. ยกตุ้มน้ำหนัก กดตะขอลงบนแผ่นกระตุ้น และวางโคนหรือแท่งราบบนที่รองชิดขั้นโลหะ ตามที่คู่มือการใช้งาน Kiln-Sitter ของคุณแสดง ให้เหมือนกันทุกครั้ง ตรวจอีกครั้งก่อนปิดฝา: “โคนหรือแท่งที่วางไม่ถูกต้องอาจทำให้เผาเกินอุณหภูมิ”
-5. ตั้งตัวตั้งเวลาจำกัดและดันก้านกดเข้าไปจนล็อก ให้เตาเผาอยู่ในระดับและพื้นที่ใต้ตุ้มน้ำหนักโล่ง เพื่อให้ตุ้มน้ำหนักตกได้
-
-### ตัวตั้งเวลาจำกัด
-
-Kiln-Sitter หลายรุ่น รวมถึงรุ่น LT ของ Dawson มี**ตัวตั้งเวลาจำกัด**: นาฬิกาที่ปิดเตาเผาหลังเวลาที่ตั้ง เป็นตัวสำรอง “ในกรณีที่ KILN-SITTER ล้มเหลว” ควรตั้งให้นานกว่าเวลาที่คาดว่าการเผาจะใช้เสมอ แหล่งข้อมูลกำหนดส่วนเผื่อต่างกัน:
-
-Table: ตั้งตัวตั้งเวลาจำกัดนานเท่าใด
-Label: การตั้งตัวตั้งเวลาจำกัด
-
-| แหล่งข้อมูล | การตั้งค่า                                                                                                          |
-| ----------- | ------------------------------------------------------------------------------------------------------------------- |
-| Dawson      | นานกว่าเวลาเผาที่คาดไว้ ½ ชั่วโมง จนกว่าคุณจะรู้จักเตาเผา ภายหลังน้อยเพียง ¼ ชั่วโมง; ห้ามเกิน 20 ชั่วโมงโดยเด็ดขาด |
-| L&L         | สูงมากในครั้งแรก โดยจดว่าการเผาใช้เวลานานเท่าใด หลังจากนั้นนานกว่าประมาณ 1 ชั่วโมง                                  |
-| Bracker's   | นานกว่าเวลาเผา 30 นาทีถึง 1 ชั่วโมง                                                                                 |
+Sources disagree. Dawson, who made the sitter, says to use the same number as the firing cone on the shelf, and to go one number hotter only if the shelf cone stays unbent. L&L says to use one number hotter than the shelf cones, because the sitter sits near the wall and the elements, gets more heat, and tends to shut off early. Orton settles the principle: "The shelf cone is the final judge of the firing process, not the Kiln-Sitter cone or bar."
 
 > [!NOTE]
-> จุดเริ่มต้นของเรา: เผื่อมากในครั้งแรก (ภายใน 20 ชั่วโมงของหน้าปัด) แล้วนานกว่าเวลาที่คุณจดไว้ ½ ถึง 1 ชั่วโมง ตัวตั้งเวลายังบอกด้วยว่าการเผาใช้เวลานานเท่าใด: ตั้งที่ 7 และจบที่ 1 หมายถึง 6 ชั่วโมง
+> Our starting point: put a small cone of the same number as your target in the sitter, with a cone pack on the shelf. If the shelf firing cone is under-bent when the kiln shuts off, go one number hotter in the sitter next time, or set the thicker part of the cone under the rod. If it is over-bent, do the opposite.
 
-### เมื่อปิดเร็วหรือช้า
+### Setting it up, and checks before every firing
 
-หลังการเผาแต่ละครั้ง ให้อ่านโคน Kiln-Sitter ข้างโคนบนแผ่นรองเผา
+Dawson's procedure, which doubles as a check before every firing:
 
-Table: การอ่าน Kiln-Sitter หลังการเผา
-Label: ปัญหาของ Kiln-Sitter
+1. Turn all the switches off. Check that the sensing rod moves freely, sits centered in the tube and is not bent or corroded. If it is sluggish, Dawson says to replace the tube assembly.
+2. Brush a thin coat of high-fire **kiln wash** (a coating that stops melted material sticking) onto the cone supports and the rod where it touches the cone. Never put wash on the cone or the porcelain tube.
+3. Load shelves and ware at least 1 in (25 mm) above or below the tube, so nothing can touch, fall against or block it.
+4. Lift the weight, press the claw down onto the trigger, and lay the cone or bar flat on the supports against the metal step, as your sitter's manual shows, the same way every time. Check it again before closing the lid: "AN IMPROPERLY PLACED CONE OR BAR COULD CAUSE AN OVERFIRING."
+5. Set the limit timer and push in the plunger until it locks. Keep the kiln level and the space under the weight clear, so the weight can fall.
 
-| สิ่งที่คุณเห็น                                    | สาเหตุที่น่าจะเป็น                                                                   | สิ่งที่ต้องทำ                                                  |
-| ------------------------------------------------- | ------------------------------------------------------------------------------------ | -------------------------------------------------------------- |
-| Kiln-Sitter ทำงานแล้ว โคนเผาบนแผ่นรองเผาโค้งไม่พอ | Kiln-Sitter ร้อนกว่าแผ่นรองเผา (อยู่ใกล้ผนัง)                                        | ร้อนกว่าหนึ่งเบอร์ใน Kiln-Sitter หรือส่วนที่หนากว่าอยู่ใต้ก้าน |
-| โคน Kiln-Sitter ยุบเลย 90° ไปมาก                  | เตาเผาเพิ่มอุณหภูมิเร็วเกินไปใกล้ช่วงท้าย                                            | ลดการตั้งสวิตช์ เพื่อให้เพิ่มอุณหภูมิช้าลง (Dawson)            |
-| โคน Kiln-Sitter ไม่โค้ง หรือหลอมเป็นก้อน          | ตัว Kiln-Sitter เอง: ปรับไม่ดี ก้านงอหรือกัดกร่อน หรือมีบางอย่างติดอยู่ในหรือชิดหลอด | ตรวจและปรับ Kiln-Sitter ตามคู่มือการใช้งานก่อนเผาอีกครั้ง      |
-| เร็วหรือช้าทุกครั้ง                               | ปรับไม่ตรง หรือก้านสึก                                                               | ตรวจด้วยเกจวัดการเผา; ขยับแผ่นกระตุ้น                          |
+### The limit timer
 
-หากต้องการตรวจการปรับ Dawson ใช้**เกจวัดการเผา**ที่ยึดก้านไว้ตรงที่โคนที่โค้งเต็มที่จะปล่อยไว้ จากนั้นควรมี “ระยะห่าง 1/16 นิ้ว” (ประมาณ 1.6 mm) ที่ตะขอ ตรวจทุกการเผา 30 ครั้ง กฎของ Ceramics Monthly: หากเตาเผาปิดเร็ว ให้ขยับแผ่นกระตุ้นขึ้นเล็กน้อย หากช้า ให้ขยับลงเล็กน้อย ไม่ว่า Kiln-Sitter จะทำอะไร “ให้เชื่อโคนอ้างอิงขนาดใหญ่มากกว่าโคน Kiln-Sitter ขนาดเล็กเสมอ”
+Many sitters, including Dawson's LT models, have a **limit timer**: a clock that turns the kiln off after a set time, as a backup "in case the KILN-SITTER fails". It should always be set longer than the firing is expected to take. Sources set the margin differently:
+
+Table: How long to set the limit timer
+Label: Limit timer settings
+
+| Source    | Setting                                                                                                                      |
+| --------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| Dawson    | ½ hour longer than the expected firing time until you know the kiln, later as little as ¼ hour; never set it beyond 20 hours |
+| L&L       | Very high the first time, noting how long the firing takes; after that, about 1 hour longer                                  |
+| Bracker's | 30 minutes to 1 hour longer than the firing time                                                                             |
+
+> [!NOTE]
+> Our starting point: generous the first time (within the dial's 20 hours), then ½ to 1 hour longer than the time you recorded. The timer also tells you how long a firing took: set at 7 and ending at 1 means 6 hours.
+
+### When it shuts off early or late
+
+After each firing, read the sitter cone beside the shelf cones.
+
+Table: Reading the sitter after a firing
+Label: Kiln sitter problems
+
+| What you see                                    | Likely cause                                                                                           | What to do                                                       |
+| ----------------------------------------------- | ------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------- |
+| Sitter tripped, shelf firing cone under-bent    | The sitter ran hotter than the shelf (it sits near the wall)                                           | One cone hotter in the sitter, or the thicker part under the rod |
+| Sitter cone sagged well past 90°                | The kiln climbed too fast near the end                                                                 | Lower the switch settings, so the climb is slower (Dawson)       |
+| Sitter cone did not bend, or melted into a blob | The sitter itself: poor adjustment, a bent or corroded rod, or something lodged in or against the tube | Check and adjust the sitter by its manual before firing again    |
+| Early or late every time                        | Out of adjustment, or a worn rod                                                                       | Check with the firing gauge; move the trigger plate              |
+
+To check the adjustment, Dawson uses a **firing gauge** that holds the rod where a fully bent cone would leave it; there should then be "1/16th-inch clearance" (about 1.6 mm) at the claw. Check it every 30 firings. Ceramics Monthly's rule: if the kiln shuts off early, move the trigger plate up slightly; if late, move it down slightly. Whatever the sitter does, "Always trust large witness cones over small sitter cones."
 
 > [!WARNING]
-> **Kiln-Sitter ไม่ใช่อุปกรณ์ความปลอดภัย** คู่มือการใช้งานของ Dawson ระบุว่า “ไม่ได้มีไว้เพื่อทำหน้าที่เป็นอุปกรณ์ตัดไฟที่รับประกันความปลอดภัย (fail-safe) และไม่ควรปล่อยเตาเผาโดยไม่มีคนดูแลเกินเวลาเผาโดยประมาณ” แค่ชิ้นงานดิบล้มพิงหลอดของ Kiln-Sitter ก็ “อาจทำให้เผาเกินอุณหภูมิ” อยู่ที่นั่นเพื่อตรวจเตาเผาเมื่อควรจะเสร็จ และห้ามเผาเหนือหรือใกล้สิ่งที่ติดไฟได้โดยเด็ดขาด เช่น พื้นไม้หรือพรม
+> **A kiln sitter is not a safety device.** Dawson's manual says it "is NOT intended to perform as a fail-safe shut-off device and your kiln should NOT be left unattended beyond the estimated firing time." Something as simple as greenware falling against the tube "might cause an over-firing". Be there to check the kiln when it should be finishing, and never fire it over or near anything that burns, such as a wood floor or carpet.
 
-Kiln-Sitter สร้างมาสำหรับการเผา “ถึงและรวมโคน 8” ไม่สามารถคงอุณหภูมิหรือทำให้เย็นช้าได้เอง แต่เมื่อฝึกและมีบันทึก คุณ “เป็นตัวควบคุมอุณหภูมิ” ได้ ตามที่ Digitalfire กล่าว: ดูโคนและเปิดปิดสวิตช์ด้วยมือ
+The sitter is built for firings "up to and including Cone 8". It cannot hold a temperature or cool slowly by itself. With practice and a log, though, you can "become the controller", as Digitalfire puts it: watch the cones and turn the switches by hand.
 
 :::
 

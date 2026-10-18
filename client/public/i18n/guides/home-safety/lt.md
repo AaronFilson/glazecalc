@@ -149,76 +149,76 @@ Gyvūnų apsinuodijimų informacijos linija Pet Poison Helpline teigia: „Švin
 
 Jei augintinis galėjo ką nors suėsti ar išgerti iš dirbtuvės arba jam pasireiškė panašūs požymiai kaip aprašyti aukščiau, skambinkite savo veterinarui arba į gyvūnų apsinuodijimų informacijos liniją (žr. lentelę vadovo pradžioje), turėdami po ranka žaliavos pavadinimą ir augintinio svorį.
 
-## Krosnis {#the-kiln}
+## The kiln {#the-kiln lang=en}
 
-### Krosnies išorė įkaista tiek, kad gali nudeginti
+### The outside gets hot enough to burn
 
-Jungtinės Karalystės mokykloms skirtame rizikos vertinime rašoma, kad krosnies išorė „gali įkaisti iki 160 °C ir galbūt daugiau“ (apie 320 °F), o mokykloms skirtame krosnių priežiūros leidinyje nurodoma, kad metalinės juostos įkaista iki 460 °F (apie 240 °C). Krosnių gamintoja Skutt rekomenduoja krosniai skirti patalpą, kurią galima užrakinti nuo vaikų ir augintinių. Jei patalpos užrakinti negalima, mokykloms skirtame leidinyje siūloma įrengti užtvarą, pavyzdžiui, apsauginę krosnies pertvarą.
+A UK schools risk assessment says a kiln's outside "can reach 160 °C and possibly more" (about 320 °F), and a school kiln guide reports metal bands at up to 460 °F (about 240 °C). Skutt, a kiln maker, recommends a kiln room that can be locked against children and pets. Where a room cannot be locked, the school guide suggests a barrier such as a kiln safety screen.
 
-Maži vaikai ir augintiniai nesupranta įspėjamojo ženklo. Siūlome, kol vyksta degimas ir kol krosnis aušta, laikyti juos už užrakintų durų ar užtvaros, o kitiems pakabinti įspėjamąjį ženklą.
+Small children and pets cannot understand a warning sign. We suggest keeping them behind a locked door or a barrier while the kiln fires and while it cools, and posting a warning sign for everyone else.
 
-### Erdvė aplink krosnį
+### Space around it
 
-Šaltiniai nesutaria, kokį atstumą palikti. Rio Grande nurodo ne mažiau kaip 12 colių (30 cm) iki sienų ir visų degių medžiagų. L&L primygtinai rekomenduoja 18 colių (46 cm) iki visų sienų, o L&L cituojamame statybos kodekse reikalaujama 3 pėdų (0,9 m) atstumo iki degių sienų. Laikykitės krosnies naudojimo instrukcijos ir vietos priešgaisrinės saugos taisyklių; jei abejojate, palikite 18 colių iki bet kurios sienos ir 3 pėdas iki visko, kas gali degti. Garaže automobilius, kurą ir dažus laikykite gerokai atokiau.
+Sources disagree on clearance. Rio Grande says at least 12 inches (30 cm) from walls and anything combustible. L&L strongly recommends 18 inches (46 cm) to all walls, and the building code it cites asks for 3 feet (0.9 m) from combustible walls. Follow your kiln's manual and local fire code; if you are unsure, allow 18 inches from any wall and 3 feet from anything that can burn. In a garage, keep cars, fuel and paint well away.
 
-### Elektros maitinimas
+### Power
 
-Rio Grande rekomenduoja **atskirą elektros grandinę** (prie kurios nejungiama nieko kita) su tinkamai įžemintu lizdu. Siūlome nenaudoti ilgintuvo. Tarp degimų išjunkite krosnies automatinį jungiklį ar atjungiklį arba ištraukite kištuką iš lizdo, kad vaikas negalėtų jos įjungti.
+Rio Grande recommends a **dedicated circuit** (one that powers nothing else) with a properly grounded outlet. We suggest no extension cord. Between firings, switch off the kiln's breaker or disconnect switch, or unplug it, so a child cannot start it.
 
-### Buvimas šalia degimo pabaigoje
+### Be there when the firing ends
 
-**Kiln-Sitter**{{en: kiln sitter}} – tai mechaninis išjungiklis, kuriuo įrengta daug rankinio valdymo krosnių: degimo pabaigoje sulinksta mažas piroskopas{{en: cone}} ir išjungiklis išjungia krosnį. Jo naudojimo instrukcijoje rašoma, kad jis „NĖRA skirtas veikti kaip patikimas apsauginis išjungimo įtaisas“. Rio Grande pataria niekada nepalikti veikiančios krosnies be priežiūros, „ypač artėjant numatytam išsijungimo laikui“. Todėl degimą pradėkite tik tada, kai jo pabaigoje namie bus nemiegantis suaugęs žmogus, patikrinkite, ar krosnis išsijungė, ir krosnies patalpoje laikykite ABC klasės gesintuvą. Kaip veikia Kiln-Sitter išjungikliai, valdikliai ir degimo programos, skaitykite vadove [Degimas paprastoje krosnyje](/guides/firing).
+A **kiln sitter** is the mechanical switch on many manual kilns: a small cone bends at the end of the firing and trips the switch off. Its manual says it "is NOT intended to perform as a fail-safe shut-off device." Rio Grande says never to leave a firing kiln unattended, "especially near the expected shut-off time". So stay nearby and check the kiln while it fires, above all near the end; fire only when an adult will be home and awake to do that, check that it has switched off, and keep an ABC fire extinguisher in the kiln room. For how sitters, controllers and schedules work, see [Firing a basic kiln](/guides/firing).
 
-### Krosnies dūmai ir anglies monoksidas
+### Fumes and carbon monoxide
 
-Degant išsiskiria dūmai ir garai, todėl krosnį vėdinkite į lauką; kaip tai padaryti, paaiškinta vadove [Saugus maišymas ir vėdinimas](/guides/safe-mixing). Prie namo prijungtame garaže stovinčiai krosniai reikia tokio vėdinimo, kad dūmai ir garai nepatektų į namą pro jungiamąsias duris. Kai krosnyje vyksta degimas, paukščius visada laikykite tolimame kambaryje.
+Firing gives off fumes, so vent the kiln to the outdoors; [Safe mixing and ventilation](/guides/safe-mixing) explains how. A kiln in an attached garage needs venting that keeps fumes from reaching the house through the connecting door. Keep birds in a far room whenever the kiln fires.
 
-**Anglies monoksidas** (smalkės, CO) – nuodingos dujos, kurių negalima nei pamatyti, nei užuosti. Vieno universiteto krosnių saugos lape reikalaujama prie dujinių krosnių įrengti smalkių detektorius. Dėl elektrinių krosnių nuomonės skiriasi, tačiau išdegant organinėms medžiagoms (esančioms molyje ar, pavyzdžiui, popieriuje ar vaške) gali susidaryti smalkių. Manome, kad smalkių detektorius krosnies patalpoje ir gretimuose kambariuose – protingas ir nebrangus žingsnis, tinkantis bet kuriai krosniai.
+**Carbon monoxide** (CO) is a poisonous gas you cannot see or smell. A university kiln safety sheet requires CO alarms with gas kilns. Views differ for electric kilns, but burning off organic matter (in clay, or things like paper or wax) can make CO. We think a CO alarm in the kiln room and the rooms next to it is a sensible, inexpensive step for any kiln.
 
-### Stebėjimo angos ir akys
+### Peepholes and eyes
 
-Infraraudonoji spinduliuotė, kurios nematote, „prasideda nuo 752°F (400°C)“, o Ceramic Arts Network teigia, kad į krosnį, kurioje temperatūra aukštesnė, visada reikėtų žiūrėti apsaugojus akis. Infraraudonoji spinduliuotė gali pažeisti akies lęšiuką ir sukelti kataraktą, o ilgai žiūrint galima pažeisti tinklainę. Akiniai nuo saulės ir didimio akiniai jos nesulaiko.
+Infrared light, which you cannot see, "starts at 752°F (400°C)", and the Ceramic Arts Network says looking into a kiln above this should always be done with eye protection. Infrared can damage the lens of the eye and lead to cataracts, and long gazing can injure the retina. Sunglasses and didymium glasses do not block it.
 
 > [!WARNING]
-> Vaikai visiškai neturėtų žiūrėti į krosnį. Švytinti stebėjimo anga juos traukia, ir negalima pasikliauti, kad jie nenusiims apsauginių akinių, todėl, kol krosnis karšta, laikykite juos atokiau. Suaugusieji turėtų žiūrėti tik trumpai, pro IR spinduliuotę sulaikančius suvirintojo akinius. Šaltiniai rekomenduoja nuo 1,7 iki 5 tamsumo laipsnio; 3 tamsumo laipsnis – protingas pasirinkimas, o jei po to akyse matote dėmes, rinkitės tamsesnius.
+> Children should not look into a kiln at all. A glowing peephole draws them, and they will not reliably keep protective glasses on, so keep them away while the kiln is hot. Adults should look only briefly, through IR-rated welding glasses. Sources recommend shades from 1.7 to 5; shade 3 is a sensible choice, darker if you see spots afterward.
 
-## Rankų darbo indai ant šeimos stalo {#handmade-ware}
+## Handmade ware on the family table {#handmade-ware lang=en}
 
-Svarbiausias klausimas dėl indų ant šeimos stalo – **metalų išsiskyrimas**{{en: leaching}}: metalai, ištirpstantys iš išdegtos glazūros{{en: glaze}} į maistą ar gėrimus. JAV maisto ir vaistų administracija (FDA) įspėja, kad jei keramika „pagaminta netinkamai, šis švinas gali išsiskirti į maistą ir gėrimus“ ir kad „joks plovimas, virinimas ar kitas procesas negali pašalinti švino iš keramikos“. Reguliavimo institucijos, pavyzdžiui, JAV FDA ir ES, riboja, kiek švino ir kadmio išsiskiria iš gatavo dirbinio atliekant standartinį tyrimą rūgštimi, o ne tai, kas yra glazūros sudėtyje. Griežčiausia JAV riba, taikoma puodeliams, bokalams ir ąsočiams, yra 0,5 µg/mL švino.
+The question for pots on the family table is **leaching**: metals dissolving out of the fired glaze into food or drink. The FDA warns that if pottery "is not manufactured properly, this lead can leach into food and drink", and that "no amount of washing, boiling, or other process can remove lead from pottery." Regulators such as the US FDA and the EU limit how much lead and cadmium a finished piece releases in a standard acid test, not what the glaze contains. The strictest US limit, for cups, mugs and pitchers, is 0.5 µg/mL of lead.
 
-### Bešvinė glazūra – dar ne tinkama liestis su maistu
+### Lead-free is not the same as food-safe
 
-Ir iš glazūros be švino gali išsiskirti metalų. Glazūrų chemijos žinynas Digitalfire kaip keliančias susirūpinimą įvardija glazūras, kuriose yra „sunkiųjų metalų oksidų dažiklių{{en: colorants}}, bario, ličio ar švino“, ir įspėja, kad pigmentas{{en: stain}}, išdegtas aukštesnėje nei jam nurodyta temperatūroje, gali išskirti kadmio. Ant indelio esanti dailės medžiagų etiketė ASTM D-4236 „NEPATVIRTINA, kad išdegta glazūra tinkama liestis su maistu{{en: food-safe}}“, o „stalo indų gamintojai privalo ištirti visus gatavus dirbinius, kad nustatytų, ar jie tinka kaip stalo indai“.
+A glaze with no lead can still leach. Digitalfire, a glaze chemistry reference, names glazes containing "heavy metal oxide colorants, barium, lithium, or lead" as the concern, and warns that a stain fired above its rated temperature can release cadmium. The ASTM D-4236 art-materials label on a jar "DOES NOT establish that a fired glaze is food-safe", and "Tableware producers must test all finished ware to establish dinnerware status."
 
 > [!NOTE]
-> „Tinkama liestis su maistu“ reiškia, kad būtent ši glazūra ant šios molio masės{{en: clay body}}, išdegta iki šio piroskopo{{en: cone}}, taikant šį dengimo būdą, išskiria mažiau, nei leidžia teisės aktuose nustatytos ribos. Recepto skaičiavimas, net ir atliktas programa Glazecalc, gali įspėti apie rizikingą receptą, bet negali įrodyti, kad indas saugus. Tai gali tik išdegto dirbinio laboratorinis metalų išsiskyrimo tyrimas.
+> "Food safe" means this glaze, on this clay, fired to this cone, applied this way, releases less than the legal limits. A recipe calculation, Glazecalc's included, can flag a risky recipe but cannot prove a pot is safe. Only a leach test of the fired piece can.
 
-Siūlome užrašą „tinkama liestis su maistu“ ant pirktinės glazūros laikyti gera pradžia, o ne garantija: kita molio masė, storesnis sluoksnis, kitas piroskopas ar antra glazūra ant viršaus keičia rezultatą.
+We suggest reading a "food safe" label on a commercial glaze as a good start, not a guarantee: a different clay, a thicker coat, another cone or a second glaze on top changes the result.
 
-### Tyrimai
+### Testing
 
-Laboratorijos išdegtus dirbinius tiria standartiniu mirkymu rūgštyje, atitinkančiu blogiausią atvejį, pavyzdžiui, JAV taikomu ASTM C738. Vienos laboratorijos ES tyrimui reikia keturių vienodų dirbinių ir jis trunka septynias darbo dienas, todėl visko, ką planuojate duoti ištirti, pasigaminkite atsarginių egzempliorių.
+Laboratories test fired pieces with a standard acid soak that represents a worst case, such as ASTM C738 in the US. One lab's EU test needs four identical pieces and takes seven working days, so make spares of anything you plan to have tested.
 
-Dėl namų testų nesutariama. FDA teigia, kad namų testų rinkiniai su tamponėliais gali parodyti išsiskiriantį šviną ir kad dirbinio, kurio testas teigiamas, nereikėtų naudoti maistui. Ceramics NZ įspėja, kad vartotojams skirti švino testų pieštukai keramikai „nėra skirti tokiam naudojimui“ ir gali rodyti klaidingai teigiamus rezultatus. Digitalfire siūlo apytiksliam patikrinimui per naktį palikti citrinos griežinėlį ant glazūros. Saugus aiškinimas: teigiamas namų testas reiškia, kad dirbinį reikia nustoti naudoti maistui, o neigiamas nieko neįrodo. Tik laboratorija gali pasakyti, kad dirbinys saugus.
+Home tests are disputed. The FDA says home swab kits can show leachable lead, and that a piece that tests positive should not be used for food. Ceramics NZ warns that consumer lead-test pens are "not designed for this use" on ceramics and can give false positives. Digitalfire suggests leaving a lemon slice on the glaze overnight as a rough screen. The safe reading: a positive home test means stop using the piece for food, and a negative one proves nothing. Only a lab can tell you a piece is safe.
 
-### Dirbiniai su trūkinėjusia glazūra
+### Crazed ware
 
-**Trūkinėjimas**{{en: crazing}} – tai smulkių įtrūkimų tinklas glazūros paviršiuje, ir šaltiniai dėl jo nesutaria. Žurnalo Ceramics Monthly eksperimentas parodė, kad trūkinėjusius bandinius{{en: test tiles}} galima išvalyti, geriausiai indaplovėje, nors nuplauti muilu ir vandeniu jie liko ne tokie švarūs kaip bandiniai be įtrūkimų. Digitalfire laikosi nuomonės, kad „trūkinėję dirbiniai yra nepriimtini“ ir kad trūkinėjimas „labai susilpnina dirbinius“. Saugus kelias paprastas: nenaudokite trūkinėjusių dirbinių maistui.
+**Crazing** is a network of fine cracks in the glaze surface, and sources disagree about it. A Ceramics Monthly experiment found crazed tiles could be cleaned, best in a dishwasher, though they came out less clean than uncrazed tiles after soap and water. Digitalfire holds that "Crazed ware is unacceptable" and that crazing "severely weakens ware". The safe course is simple: do not use crazed pieces for food.
 
-### Vidinės glazūros
+### Liner glazes
 
-**Vidinė glazūra**{{en: liner glaze}} – tai glazūra puodelio ar dubens vidinėje pusėje, ten, kur būna maistas. Digitalfire aprašo vidinę glazūrą, kurios rizika gali būti pakankamai maža, kad ją būtų galima naudoti be laboratorinio metalų išsiskyrimo tyrimo: be dažiklių, bario, švino ar ličio; visiškai išsilydžiusi; netrūkinėjanti; atspari nusidėvėjimui. Bet kurios glazūros įspėjamieji ženklai – didelis dažiklių kiekis, kristalai paviršiuje ir prastas išsilydymas.
+A **liner glaze** is the glaze on the inside of a cup or bowl, where the food sits. Digitalfire describes a liner that may be low enough in risk to use without lab testing: no colorants, barium, lead or lithium; fully melted; no crazing; and it wears well. Even then, only a leach test of your own fired pots shows whether they are food-safe. Warning signs in any glaze are heavy amounts of colorant, crystals on the surface and poor melting.
 
-### Siūlomos šeimos taisyklės
+### Family rules we suggest
 
-- Vaikų puodeliai, dubenėliai ir lėkštės: tik laboratoriškai ištirtos, atsparios vidinės glazūros arba pirktiniai stalo indai.
-- Rūgščių maisto produktų ar gėrimų (citrusinių vaisių, pomidorų, acto, vaisių sulčių, vyno) nelaikykite induose, kurių glazūra nebuvo ištirta.
-- Nenaudokite trūkinėjusių dirbinių maistui.
-- Bandiniai ir eksperimentai lieka dirbtuvėje – niekada ne virtuvėje, žaislų dėžėje ar augintinio dubenėlyje.
-- Būkite atsargūs ir su kita keramika. FDA pataria būti atsargiems su rankų darbo ar grubiai atrodančiais dirbiniais, antikvariniais, pažeistais ar nusidėvėjusiais dirbiniais, radiniais iš blusų turgaus ir ryškiai oranžiniu, raudonu ar geltonu dekoru.
-- Jei vaikas naudojosi keramika, kuria dabar abejojate, FDA pataria pasitarti su gydytoju dėl švino kiekio kraujyje tyrimo.
+- Children's cups, bowls and plates: only lab-tested, durable liner glazes, or commercial dinnerware.
+- Do not store acidic food or drink (citrus, tomato, vinegar, fruit juice, wine) in pots glazed with anything you have not had tested.
+- Do not use crazed pieces for food.
+- Test tiles and experiments stay in the studio, never in the kitchen, the toy box or the pet's bowl.
+- Take care with other pottery too. The FDA advises caution with handmade or crude-looking pieces, antiques, damaged or worn pieces, flea-market finds and bright orange, red or yellow decoration.
+- If a child has used pottery you now doubt, the FDA says to talk to a doctor about a blood lead test.
 
-Daugiau apie tai, kaip glazūros lydosi, kodėl iš kai kurių išsiskiria metalų ir ką reiškia ribos, skaitykite vadove [Glazūravimas nuo pagrindų](/guides/glazing-basics).
+For more on how glazes melt, why some leach and what the limits mean, see [Glazing from first principles](/guides/glazing-basics).
 
 ## Šaltiniai {#sources}
 

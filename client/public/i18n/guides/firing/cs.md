@@ -165,69 +165,69 @@ Počítejte s rozdíly: Orton píše, že „obvykle uvidíte mezi horní a spod
 
 :::orton
 
-## Vypínač Kiln-Sitter {#kiln-sitter}
+## The kiln sitter {#kiln-sitter lang=en}
 
-**Kiln-Sitter**{{en: kiln sitter}} je mechanický vypínač zvenku na mnoha jednoduchých a starších pecích, který pec vypne, když se v něm ohne malá žároměrka{{en: cone}}. Nejznámější je Kiln-Sitter od společnosti Dawson. Výpal usnadňuje, ale je to pomůcka pro pohodlí, ne bezpečnostní zařízení.
+A **kiln sitter** is the mechanical switch, on the outside of many basic and older kilns, that turns the kiln off when a small cone bends. The best known is the Dawson Kiln-Sitter. It makes firing easier, but it is a convenience, not a safety device.
 
-### Jak funguje
+### How it works
 
-Do pece vede porcelánová trubička. Na jejím konci leží napříč přes dvě kovové podpěrky malá žároměrka nebo tyčinka, pod **snímací tyčí**, která se kývá jako houpačka. Vně pece drží druhý konec snímací tyče závaží, zachycené malou západkou. Když žároměrka změkne a ohne se asi na 90°, snímací tyč klesne natolik, že uvolní závaží, závaží spadne a přívod proudu do topných spirál se přeruší.
+A porcelain tube reaches into the kiln. At its end, a small cone or a bar lies across two metal supports, under a **sensing rod** that pivots like a seesaw. Outside the kiln, the other end of the rod holds up a weight by a small claw. When the cone softens and bends to about 90°, the rod drops far enough to release the weight, the weight falls, and the power to the elements is cut.
 
-Malé žároměrky a tyčinky „dávají rovnocenné tepelné zpracování“. Orton uvádí, že mnoho začátečníků volí tyčinky, protože díky jejich rovnoměrnému tvaru je snadné je pokaždé uložit stejně. Malá žároměrka se zužuje, takže záleží na tom, jak leží: když je pod snímací tyčí její tenká část, pec vypne při nižší teplotě, a když silná část, při vyšší, a to s posunem „až o 1/2 žároměrky“.
+Small cones and bars "give equivalent heat treatment". Orton notes that many beginners choose bars, because their even shape makes it easy to place them the same way every time. A small cone tapers, so where it sits matters: with its thin part under the rod the kiln shuts off cooler, and with its thick part hotter, a shift of "as much as 1/2 cone".
 
-### Kterou žároměrku dát do vypínače
+### Which cone goes in the sitter
 
-Zdroje se rozcházejí. Dawson, výrobce vypínače, radí použít stejné číslo jako u cílové žároměrky na plátě a o jedno číslo teplejší jen tehdy, když žároměrka na plátě zůstane neohnutá. L&L radí použít žároměrku o jedno číslo teplejší, než jsou žároměrky na plátě, protože vypínač je blízko stěny a topných spirál, dostává víc tepla a má sklon vypínat brzy. Princip stanoví Orton: „Konečným soudcem výpalu je žároměrka na plátě, ne žároměrka nebo tyčinka ve vypínači Kiln-Sitter.“
-
-> [!NOTE]
-> Náš výchozí postup: dejte do vypínače malou žároměrku se stejným číslem, jako má váš cíl, a na plát sadu tří žároměrek{{en: cone pack}}. Pokud je cílová žároměrka na plátě po vypnutí pece málo ohnutá, dejte příště do vypínače žároměrku o číslo teplejší, nebo pod snímací tyč položte silnější část žároměrky. Pokud je ohnutá příliš, udělejte opak.
-
-### Příprava a kontrola před každým výpalem
-
-Postup společnosti Dawson, který zároveň slouží jako kontrola před každým výpalem:
-
-1. Vypněte všechny přepínače. Zkontrolujte, že se snímací tyč volně pohybuje, je uprostřed trubičky a není ohnutá ani zkorodovaná. Pokud se pohybuje ztěžka, Dawson radí vyměnit celou sestavu trubičky.
-2. Štětcem naneste tenkou vrstvu vysokoteplotního **nátěru na pláty** (nátěru, který brání přilepení roztaveného materiálu) na podpěrky žároměrky a na snímací tyč v místě, kde se dotýká žároměrky. Nikdy nenanášejte nátěr na žároměrku ani na porcelánovou trubičku.
-3. Pláty a výrobky zakládejte alespoň 1 palec (25 mm) nad trubičkou nebo pod ní, aby se jí nic nemohlo dotknout, spadnout na ni ani ji zablokovat.
-4. Zvedněte závaží, přitlačte západku dolů na spoušť a položte žároměrku nebo tyčinku naplocho na podpěrky ke kovové zarážce, jak ukazuje návod k obsluze vašeho vypínače, pokaždé stejně. Před zavřením víka to znovu zkontrolujte: „NESPRÁVNĚ ULOŽENÁ ŽÁROMĚRKA NEBO TYČINKA MŮŽE ZPŮSOBIT PŘEPÁLENÍ.“
-5. Nastavte pojistný časovač a zatlačte tlačítko, až zaskočí. Pec udržujte ve vodorovné poloze a prostor pod závažím volný, aby závaží mohlo spadnout.
-
-### Pojistný časovač
-
-Mnoho vypínačů, včetně modelů LT od společnosti Dawson, má **pojistný časovač**: hodiny, které po nastavené době pec vypnou, jako zálohu „pro případ, že KILN-SITTER selže“. Vždy by měl být nastavený na delší dobu, než jak dlouho má výpal trvat. Zdroje určují rezervu různě:
-
-Table: Na jak dlouho nastavit pojistný časovač
-Label: Nastavení pojistného časovače
-
-| Zdroj     | Nastavení                                                                                                     |
-| --------- | ------------------------------------------------------------------------------------------------------------- |
-| Dawson    | O ½ hodiny déle, než je očekávaná doba výpalu, dokud pec neznáte, později jen o ¼ hodiny; nikdy přes 20 hodin |
-| L&L       | Poprvé na velmi dlouhou dobu; zapište si, jak dlouho výpal trvá; potom asi o 1 hodinu déle                    |
-| Bracker's | O 30 minut až 1 hodinu déle, než trvá výpal                                                                   |
+Sources disagree. Dawson, who made the sitter, says to use the same number as the firing cone on the shelf, and to go one number hotter only if the shelf cone stays unbent. L&L says to use one number hotter than the shelf cones, because the sitter sits near the wall and the elements, gets more heat, and tends to shut off early. Orton settles the principle: "The shelf cone is the final judge of the firing process, not the Kiln-Sitter cone or bar."
 
 > [!NOTE]
-> Náš výchozí postup: poprvé s velkou rezervou (v rámci 20 hodin na stupnici), potom o ½ až 1 hodinu déle, než je zaznamenaná doba. Časovač vám také řekne, jak dlouho výpal trval: nastavený na 7 a zastavený na 1 znamená 6 hodin.
+> Our starting point: put a small cone of the same number as your target in the sitter, with a cone pack on the shelf. If the shelf firing cone is under-bent when the kiln shuts off, go one number hotter in the sitter next time, or set the thicker part of the cone under the rod. If it is over-bent, do the opposite.
 
-### Když vypíná příliš brzy nebo pozdě
+### Setting it up, and checks before every firing
 
-Po každém výpalu odečtěte žároměrku z vypínače spolu se žároměrkami na plátě.
+Dawson's procedure, which doubles as a check before every firing:
 
-Table: Co ukazuje vypínač po výpalu
-Label: Problémy s vypínačem Kiln-Sitter
+1. Turn all the switches off. Check that the sensing rod moves freely, sits centered in the tube and is not bent or corroded. If it is sluggish, Dawson says to replace the tube assembly.
+2. Brush a thin coat of high-fire **kiln wash** (a coating that stops melted material sticking) onto the cone supports and the rod where it touches the cone. Never put wash on the cone or the porcelain tube.
+3. Load shelves and ware at least 1 in (25 mm) above or below the tube, so nothing can touch, fall against or block it.
+4. Lift the weight, press the claw down onto the trigger, and lay the cone or bar flat on the supports against the metal step, as your sitter's manual shows, the same way every time. Check it again before closing the lid: "AN IMPROPERLY PLACED CONE OR BAR COULD CAUSE AN OVERFIRING."
+5. Set the limit timer and push in the plunger until it locks. Keep the kiln level and the space under the weight clear, so the weight can fall.
 
-| Co vidíte                                                    | Pravděpodobná příčina                                                                                               | Co dělat                                                                       |
-| ------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
-| Vypínač vypnul, cílová žároměrka na plátě je málo ohnutá     | Ve vypínači bylo tepleji než na plátě (je u stěny)                                                                  | Do vypínače žároměrku o číslo teplejší, nebo silnější část pod snímací tyč     |
-| Žároměrka ve vypínači se prohnula daleko za 90°              | Teplota v peci ke konci stoupala příliš rychle                                                                      | Nastavte přepínače níž, aby nárůst byl pomalejší (Dawson)                      |
-| Žároměrka ve vypínači se neohnula, nebo se roztavila v kapku | Samotný vypínač: špatné seřízení, ohnutá nebo zkorodovaná snímací tyč, nebo něco uvízlo v trubičce či se o ni opírá | Před dalším výpalem vypínač zkontrolujte a seřiďte podle jeho návodu k obsluze |
-| Pokaždé brzy nebo pozdě                                      | Vypínač není seřízený, nebo je snímací tyč opotřebovaná                                                             | Zkontrolujte seřizovací měrkou; posuňte spouštěcí destičku                     |
+### The limit timer
 
-Ke kontrole seřízení používá Dawson **seřizovací měrku**, která podrží snímací tyč tam, kde by ji nechala úplně ohnutá žároměrka; u západky pak má být „vůle 1/16 palce“ (asi 1,6 mm). Kontrolujte to každých 30 výpalů. Pravidlo časopisu Ceramics Monthly: když pec vypíná brzy, posuňte spouštěcí destičku mírně nahoru; když pozdě, mírně dolů. Ať vypínač dělá cokoli, „vždy věřte velkým kontrolním žároměrkám víc než malým žároměrkám ve vypínači“.
+Many sitters, including Dawson's LT models, have a **limit timer**: a clock that turns the kiln off after a set time, as a backup "in case the KILN-SITTER fails". It should always be set longer than the firing is expected to take. Sources set the margin differently:
+
+Table: How long to set the limit timer
+Label: Limit timer settings
+
+| Source    | Setting                                                                                                                      |
+| --------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| Dawson    | ½ hour longer than the expected firing time until you know the kiln, later as little as ¼ hour; never set it beyond 20 hours |
+| L&L       | Very high the first time, noting how long the firing takes; after that, about 1 hour longer                                  |
+| Bracker's | 30 minutes to 1 hour longer than the firing time                                                                             |
+
+> [!NOTE]
+> Our starting point: generous the first time (within the dial's 20 hours), then ½ to 1 hour longer than the time you recorded. The timer also tells you how long a firing took: set at 7 and ending at 1 means 6 hours.
+
+### When it shuts off early or late
+
+After each firing, read the sitter cone beside the shelf cones.
+
+Table: Reading the sitter after a firing
+Label: Kiln sitter problems
+
+| What you see                                    | Likely cause                                                                                           | What to do                                                       |
+| ----------------------------------------------- | ------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------- |
+| Sitter tripped, shelf firing cone under-bent    | The sitter ran hotter than the shelf (it sits near the wall)                                           | One cone hotter in the sitter, or the thicker part under the rod |
+| Sitter cone sagged well past 90°                | The kiln climbed too fast near the end                                                                 | Lower the switch settings, so the climb is slower (Dawson)       |
+| Sitter cone did not bend, or melted into a blob | The sitter itself: poor adjustment, a bent or corroded rod, or something lodged in or against the tube | Check and adjust the sitter by its manual before firing again    |
+| Early or late every time                        | Out of adjustment, or a worn rod                                                                       | Check with the firing gauge; move the trigger plate              |
+
+To check the adjustment, Dawson uses a **firing gauge** that holds the rod where a fully bent cone would leave it; there should then be "1/16th-inch clearance" (about 1.6 mm) at the claw. Check it every 30 firings. Ceramics Monthly's rule: if the kiln shuts off early, move the trigger plate up slightly; if late, move it down slightly. Whatever the sitter does, "Always trust large witness cones over small sitter cones."
 
 > [!WARNING]
-> **Kiln-Sitter není bezpečnostní zařízení.** Návod k obsluze od společnosti Dawson uvádí, že vypínač „NENÍ určen k tomu, aby sloužil jako spolehlivé bezpečnostní vypnutí, a vaše pec by NEMĚLA zůstávat bez dozoru déle, než je odhadovaná doba výpalu“. Už něco tak prostého, jako když syrový výrobek{{en: greenware}} spadne na trubičku, „může způsobit přepálení“. Buďte u pece a zkontrolujte ji, když má výpal končit, a nikdy ji nevypalujte nad ničím hořlavým ani v blízkosti čehokoli hořlavého, jako je dřevěná podlaha nebo koberec.
+> **A kiln sitter is not a safety device.** Dawson's manual says it "is NOT intended to perform as a fail-safe shut-off device and your kiln should NOT be left unattended beyond the estimated firing time." Something as simple as greenware falling against the tube "might cause an over-firing". Be there to check the kiln when it should be finishing, and never fire it over or near anything that burns, such as a wood floor or carpet.
 
-Vypínač je určen pro výpaly „až do žároměrky 8 včetně“. Sám neumí držet teplotu ani pomalu chladit. S praxí a se záznamy výpalů se ale můžete „stát regulátorem“, jak říká Digitalfire: sledovat žároměrky a otáčet přepínači ručně.
+The sitter is built for firings "up to and including Cone 8". It cannot hold a temperature or cool slowly by itself. With practice and a log, though, you can "become the controller", as Digitalfire puts it: watch the cones and turn the switches by hand.
 
 :::
 

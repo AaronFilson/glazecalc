@@ -361,8 +361,7 @@
     "heading": "Pericole",
     "intro": "Așa cum le dă înregistrarea fiecărei materii prime; cele din lista standard provin din fișele cu date de securitate ale furnizorilor.",
     "line": "<b>{names}:</b> {hazards}",
-    "unknown": "{count, plural, one {Nu sunt date pericole pentru {list}: vedeți fișa cu date de securitate care îl însoțește.} few {Nu sunt date pericole pentru {list}: vedeți fișele cu date de securitate care le însoțesc.} other {Nu sunt date pericole pentru {list}: vedeți fișele cu date de securitate care le însoțesc.}}",
-    "safety": "Materiile prime uscate pentru glazuri produc praf pe care trebuie să-l țineți departe de plămâni, chiar și cele neclasificate ca periculoase: vedeți <mixing>Prepararea în siguranță și ventilația</mixing> și <home>Nu vă otrăviți familia</home> dacă sunt copii sau animale de companie în preajmă. Când fișa cu date de securitate a unei materii prime spune mai mult, urmați-o."
+    "unknown": "{count, plural, one {Nu sunt date pericole pentru {list}: vedeți fișa cu date de securitate care îl însoțește.} few {Nu sunt date pericole pentru {list}: vedeți fișele cu date de securitate care le însoțesc.} other {Nu sunt date pericole pentru {list}: vedeți fișele cu date de securitate care le însoțesc.}}"
   },
   "compare": {
     "heading": "Comparați două rețete",

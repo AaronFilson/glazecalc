@@ -149,76 +149,76 @@ Pet Poison Helpline podaje: „Ołów jest toksyczny dla wszystkich gatunków, a
 
 Jeśli zwierzę mogło zjeść lub wypić cokolwiek z pracowni albo ma objawy podobne do opisanych wyżej, należy zadzwonić do swojego weterynarza lub na linię pomocy przy zatruciach zwierząt (zob. tabela na górze strony), mając pod ręką nazwę surowca i wagę zwierzęcia.
 
-## Piec {#the-kiln}
+## The kiln {#the-kiln lang=en}
 
-### Obudowa nagrzewa się tak, że może poparzyć
+### The outside gets hot enough to burn
 
-Brytyjska ocena ryzyka dla szkół podaje, że obudowa pieca „może osiągnąć 160 °C i być może więcej” (około 320 °F), a szkolny poradnik o piecach podaje, że metalowe obręcze nagrzewają się do 460 °F (około 240 °C). Skutt, producent pieców, zaleca pomieszczenie na piec, które można zamknąć na klucz przed dziećmi i zwierzętami. Tam, gdzie pomieszczenia nie da się zamknąć na klucz, szkolny poradnik proponuje barierę, na przykład osłonę ochronną pieca.
+A UK schools risk assessment says a kiln's outside "can reach 160 °C and possibly more" (about 320 °F), and a school kiln guide reports metal bands at up to 460 °F (about 240 °C). Skutt, a kiln maker, recommends a kiln room that can be locked against children and pets. Where a room cannot be locked, the school guide suggests a barrier such as a kiln safety screen.
 
-Małe dzieci i zwierzęta nie zrozumieją znaku ostrzegawczego. Podczas wypału i stygnięcia pieca proponujemy trzymać je za zamkniętymi na klucz drzwiami lub za barierą, a dla wszystkich pozostałych wywiesić znak ostrzegawczy.
+Small children and pets cannot understand a warning sign. We suggest keeping them behind a locked door or a barrier while the kiln fires and while it cools, and posting a warning sign for everyone else.
 
-### Wolna przestrzeń wokół pieca
+### Space around it
 
-Źródła różnią się co do odstępów. Rio Grande podaje co najmniej 12 cali (30 cm) od ścian i wszystkiego, co palne. L&L zdecydowanie zaleca 18 cali (46 cm) od wszystkich ścian, a przepisy budowlane, na które się powołuje, wymagają 3 stóp (0,9 m) od palnych ścian. Należy stosować się do instrukcji pieca i obowiązujących w danym miejscu przepisów przeciwpożarowych; w razie wątpliwości zachować 18 cali od każdej ściany i 3 stopy od wszystkiego, co może się palić. W garażu samochody, paliwo i farby trzymać w dużej odległości od pieca.
+Sources disagree on clearance. Rio Grande says at least 12 inches (30 cm) from walls and anything combustible. L&L strongly recommends 18 inches (46 cm) to all walls, and the building code it cites asks for 3 feet (0.9 m) from combustible walls. Follow your kiln's manual and local fire code; if you are unsure, allow 18 inches from any wall and 3 feet from anything that can burn. In a garage, keep cars, fuel and paint well away.
 
-### Zasilanie
+### Power
 
-Rio Grande zaleca **osobny obwód elektryczny** (który nie zasila niczego innego) z prawidłowo uziemionym gniazdem. Proponujemy nie używać przedłużacza. Między wypałami należy wyłączyć bezpiecznik lub wyłącznik główny pieca albo wyjąć wtyczkę z gniazda, żeby dziecko nie mogło go uruchomić.
+Rio Grande recommends a **dedicated circuit** (one that powers nothing else) with a properly grounded outlet. We suggest no extension cord. Between firings, switch off the kiln's breaker or disconnect switch, or unplug it, so a child cannot start it.
 
-### Obecność przy końcu wypału
+### Be there when the firing ends
 
-**Kiln-Sitter** (wyłącznik stożkowy) to mechaniczny wyłącznik w wielu piecach sterowanych ręcznie: pod koniec wypału mały stożek{{en: cone}} ugina się i wyzwala wyłącznik. Jego instrukcja mówi, że „NIE jest przeznaczony do pełnienia funkcji niezawodnego wyłącznika bezpieczeństwa”. Rio Grande radzi nigdy nie zostawiać pracującego pieca bez nadzoru, „zwłaszcza w pobliżu spodziewanego czasu wyłączenia”. Dlatego wypalać należy tylko wtedy, gdy pod koniec wypału w domu będzie osoba dorosła, która nie śpi, a potem sprawdzić, czy piec się wyłączył; w pomieszczeniu z piecem trzeba też trzymać gaśnicę ABC. Jak działają wyłączniki stożkowe, sterowniki i programy wypału – w poradniku [Wypał w prostym piecu](/guides/firing).
+A **kiln sitter** is the mechanical switch on many manual kilns: a small cone bends at the end of the firing and trips the switch off. Its manual says it "is NOT intended to perform as a fail-safe shut-off device." Rio Grande says never to leave a firing kiln unattended, "especially near the expected shut-off time". So stay nearby and check the kiln while it fires, above all near the end; fire only when an adult will be home and awake to do that, check that it has switched off, and keep an ABC fire extinguisher in the kiln room. For how sitters, controllers and schedules work, see [Firing a basic kiln](/guides/firing).
 
-### Opary i tlenek węgla
+### Fumes and carbon monoxide
 
-Podczas wypału wydzielają się opary, dlatego należy odprowadzać je z pieca na zewnątrz; jak to zrobić, wyjaśnia poradnik [Bezpieczne rozrabianie szkliw i wentylacja](/guides/safe-mixing). Piec w garażu połączonym z domem wymaga wentylacji, która nie pozwoli oparom przedostać się do domu przez drzwi łączące. Podczas każdego wypału ptaki należy trzymać w odległym pokoju.
+Firing gives off fumes, so vent the kiln to the outdoors; [Safe mixing and ventilation](/guides/safe-mixing) explains how. A kiln in an attached garage needs venting that keeps fumes from reaching the house through the connecting door. Keep birds in a far room whenever the kiln fires.
 
-**Tlenek węgla** (CO, czad) to trujący gaz, którego nie widać ani nie czuć. Instrukcja bezpieczeństwa pieców jednego z uniwersytetów wymaga czujników czadu przy piecach gazowych. Co do pieców elektrycznych opinie są podzielone, ale przy wypalaniu substancji organicznych (zawartych w glinie albo w takich rzeczach jak papier czy wosk) może powstawać CO. Uważamy, że czujnik czadu w pomieszczeniu z piecem i w sąsiednich pomieszczeniach to rozsądny i niedrogi krok przy każdym piecu.
+**Carbon monoxide** (CO) is a poisonous gas you cannot see or smell. A university kiln safety sheet requires CO alarms with gas kilns. Views differ for electric kilns, but burning off organic matter (in clay, or things like paper or wax) can make CO. We think a CO alarm in the kiln room and the rooms next to it is a sensible, inexpensive step for any kiln.
 
-### Wzierniki i oczy
+### Peepholes and eyes
 
-Podczerwień, której nie widać, „zaczyna się od 752°F (400°C)”, a według Ceramic Arts Network do pieca rozgrzanego powyżej tej temperatury należy zaglądać zawsze z ochroną oczu. Podczerwień może uszkodzić soczewkę oka i prowadzić do zaćmy, a długie wpatrywanie się może uszkodzić siatkówkę. Okulary przeciwsłoneczne i okulary didymowe jej nie blokują.
+Infrared light, which you cannot see, "starts at 752°F (400°C)", and the Ceramic Arts Network says looking into a kiln above this should always be done with eye protection. Infrared can damage the lens of the eye and lead to cataracts, and long gazing can injure the retina. Sunglasses and didymium glasses do not block it.
 
 > [!WARNING]
-> Dzieci w ogóle nie powinny zaglądać do pieca. Świecący wziernik je przyciąga, a nie można liczyć na to, że nie zdejmą okularów ochronnych, dlatego trzeba trzymać je z dala od pieca, dopóki jest gorący. Dorośli powinni zaglądać tylko na krótko, przez okulary spawalnicze z filtrem podczerwieni. Źródła zalecają stopnie ochrony od 1,7 do 5; stopień 3 to rozsądny wybór, a ciemniejszy, jeśli potem przed oczami pojawiają się plamy.
+> Children should not look into a kiln at all. A glowing peephole draws them, and they will not reliably keep protective glasses on, so keep them away while the kiln is hot. Adults should look only briefly, through IR-rated welding glasses. Sources recommend shades from 1.7 to 5; shade 3 is a sensible choice, darker if you see spots afterward.
 
-## Ręcznie robione naczynia na rodzinnym stole {#handmade-ware}
+## Handmade ware on the family table {#handmade-ware lang=en}
 
-W przypadku naczyń na rodzinnym stole chodzi o **uwalnianie metali**{{en: leaching}}: przechodzenie metali z wypalonego szkliwa{{en: glaze}} do jedzenia lub napojów. FDA ostrzega, że jeśli ceramika „nie jest wytwarzana prawidłowo, ten ołów może przenikać do jedzenia i napojów” oraz że „żadne mycie, gotowanie ani inny zabieg nie usunie ołowiu z ceramiki”. Organy nadzoru, takie jak amerykańska FDA i UE, ograniczają to, ile ołowiu i kadmu uwalnia gotowy wyrób w standardowym teście z kwasem, a nie to, co zawiera szkliwo. Najostrzejszy limit w USA, dla filiżanek, kubków i dzbanków, wynosi 0,5 µg/mL ołowiu.
+The question for pots on the family table is **leaching**: metals dissolving out of the fired glaze into food or drink. The FDA warns that if pottery "is not manufactured properly, this lead can leach into food and drink", and that "no amount of washing, boiling, or other process can remove lead from pottery." Regulators such as the US FDA and the EU limit how much lead and cadmium a finished piece releases in a standard acid test, not what the glaze contains. The strictest US limit, for cups, mugs and pitchers, is 0.5 µg/mL of lead.
 
-### Bezołowiowe to nie to samo co bezpieczne w kontakcie z żywnością
+### Lead-free is not the same as food-safe
 
-Szkliwo bez ołowiu też może uwalniać metale. Digitalfire, kompendium wiedzy o chemii szkliw, wskazuje jako problematyczne szkliwa zawierające „barwniki{{en: colorants}} z tlenków metali ciężkich, bar, lit lub ołów” i ostrzega, że pigment{{en: stain}} wypalony powyżej przewidzianej dla niego temperatury może uwalniać kadm. Oznaczenie ASTM D-4236 dla materiałów plastycznych na słoiku „NIE potwierdza, że wypalone szkliwo jest bezpieczne w kontakcie z żywnością”, a „producenci zastawy stołowej muszą badać wszystkie gotowe wyroby, aby ustalić, czy nadają się na zastawę”.
+A glaze with no lead can still leach. Digitalfire, a glaze chemistry reference, names glazes containing "heavy metal oxide colorants, barium, lithium, or lead" as the concern, and warns that a stain fired above its rated temperature can release cadmium. The ASTM D-4236 art-materials label on a jar "DOES NOT establish that a fired glaze is food-safe", and "Tableware producers must test all finished ware to establish dinnerware status."
 
 > [!NOTE]
-> „Do kontaktu z żywnością”{{en: food safe}} oznacza, że to szkliwo, na tej masie{{en: clay body}}, wypalone do tego stożka{{en: cone}} i nałożone w ten sposób, uwalnia mniej, niż dopuszczają limity prawne. Obliczenia receptury, również te w aplikacji Glazecalc, mogą wskazać ryzykowną recepturę, ale nie dowiodą, że naczynie jest bezpieczne. Może to zrobić tylko badanie uwalniania metali z wypalonego wyrobu.
+> "Food safe" means this glaze, on this clay, fired to this cone, applied this way, releases less than the legal limits. A recipe calculation, Glazecalc's included, can flag a risky recipe but cannot prove a pot is safe. Only a leach test of the fired piece can.
 
-Proponujemy traktować oznaczenie „do kontaktu z żywnością” na gotowym szkliwie ze sklepu jako dobry punkt wyjścia, a nie gwarancję: inna masa, grubsza warstwa, inny stożek czy drugie szkliwo na wierzchu zmieniają wynik.
+We suggest reading a "food safe" label on a commercial glaze as a good start, not a guarantee: a different clay, a thicker coat, another cone or a second glaze on top changes the result.
 
-### Badania
+### Testing
 
-Laboratoria badają wypalone wyroby standardowym moczeniem w kwasie, które odwzorowuje najgorszy przypadek, na przykład według ASTM C738 w USA. Badanie według przepisów UE w jednym z laboratoriów wymaga czterech identycznych wyrobów i trwa siedem dni roboczych, dlatego należy zrobić zapasowe egzemplarze wszystkiego, co ma zostać zbadane.
+Laboratories test fired pieces with a standard acid soak that represents a worst case, such as ASTM C738 in the US. One lab's EU test needs four identical pieces and takes seven working days, so make spares of anything you plan to have tested.
 
-Testy domowe budzą spory. Według FDA domowe testy wymazowe mogą wykazać wymywalny ołów, a naczynia z wynikiem dodatnim nie należy używać do żywności. Ceramics NZ ostrzega, że pisaki do wykrywania ołowiu dla konsumentów „nie są przeznaczone do takiego zastosowania” na ceramice i mogą dawać wyniki fałszywie dodatnie. Digitalfire proponuje jako wstępny test zostawić na noc plasterek cytryny na szkliwie. Bezpieczna interpretacja: dodatni wynik testu domowego oznacza, że naczynia nie należy już używać do żywności, a ujemny niczego nie dowodzi. Tylko laboratorium może stwierdzić, że naczynie jest bezpieczne.
+Home tests are disputed. The FDA says home swab kits can show leachable lead, and that a piece that tests positive should not be used for food. Ceramics NZ warns that consumer lead-test pens are "not designed for this use" on ceramics and can give false positives. Digitalfire suggests leaving a lemon slice on the glaze overnight as a rough screen. The safe reading: a positive home test means stop using the piece for food, and a negative one proves nothing. Only a lab can tell you a piece is safe.
 
-### Naczynia z pęknięciami włoskowatymi
+### Crazed ware
 
-**Pęknięcia włoskowate**{{en: crazing}} to siatka drobnych spękań na powierzchni szkliwa, a źródła różnią się w ich ocenie. W eksperymencie opisanym w Ceramics Monthly płytki z pęknięciami włoskowatymi dało się domyć, najlepiej w zmywarce, choć po myciu wodą z mydłem były mniej czyste niż płytki bez spękań. Digitalfire stoi na stanowisku, że „naczynia z pęknięciami włoskowatymi są nie do przyjęcia” i że spękania „poważnie osłabiają wyroby”. Bezpieczne postępowanie jest proste: nie używać naczyń z pęknięciami włoskowatymi do żywności.
+**Crazing** is a network of fine cracks in the glaze surface, and sources disagree about it. A Ceramics Monthly experiment found crazed tiles could be cleaned, best in a dishwasher, though they came out less clean than uncrazed tiles after soap and water. Digitalfire holds that "Crazed ware is unacceptable" and that crazing "severely weakens ware". The safe course is simple: do not use crazed pieces for food.
 
-### Szkliwa do wnętrza naczyń
+### Liner glazes
 
-**Szkliwo do wnętrza naczyń**{{en: liner glaze}} to szkliwo na wewnętrznej powierzchni kubka czy miski, tam gdzie znajduje się jedzenie. Digitalfire opisuje szkliwo wewnętrzne, które może być na tyle mało ryzykowne, że da się go używać bez badań laboratoryjnych: bez barwników, baru, ołowiu i litu; całkowicie stopione; bez pęknięć włoskowatych; dobrze znoszące użytkowanie. Sygnały ostrzegawcze w każdym szkliwie to duża ilość barwnika, kryształy na powierzchni i słabe stopienie.
+A **liner glaze** is the glaze on the inside of a cup or bowl, where the food sits. Digitalfire describes a liner that may be low enough in risk to use without lab testing: no colorants, barium, lead or lithium; fully melted; no crazing; and it wears well. Even then, only a leach test of your own fired pots shows whether they are food-safe. Warning signs in any glaze are heavy amounts of colorant, crystals on the surface and poor melting.
 
-### Proponowane zasady dla rodziny
+### Family rules we suggest
 
-- Kubki, miski i talerze dla dzieci: tylko trwałe szkliwa do wnętrza naczyń przebadane w laboratorium albo fabryczna zastawa stołowa.
-- Nie przechowywać kwaśnych potraw ani napojów (cytrusów, pomidorów, octu, soków owocowych, wina) w naczyniach pokrytych szkliwem, którego nie oddano do badania.
-- Nie używać naczyń z pęknięciami włoskowatymi do żywności.
-- Płytki testowe{{en: test tiles}} i eksperymenty zostają w pracowni, nigdy nie trafiają do kuchni, do skrzyni z zabawkami ani do miski zwierzęcia.
-- Uważać także na inną ceramikę. FDA radzi zachować ostrożność w przypadku naczyń ręcznie robionych lub prymitywnie wyglądających, antyków, naczyń uszkodzonych lub zużytych, znalezisk z pchlego targu oraz jaskrawej pomarańczowej, czerwonej lub żółtej dekoracji.
-- Jeśli dziecko używało naczyń, co do których są teraz wątpliwości, FDA radzi porozmawiać z lekarzem o badaniu stężenia ołowiu we krwi.
+- Children's cups, bowls and plates: only lab-tested, durable liner glazes, or commercial dinnerware.
+- Do not store acidic food or drink (citrus, tomato, vinegar, fruit juice, wine) in pots glazed with anything you have not had tested.
+- Do not use crazed pieces for food.
+- Test tiles and experiments stay in the studio, never in the kitchen, the toy box or the pet's bowl.
+- Take care with other pottery too. The FDA advises caution with handmade or crude-looking pieces, antiques, damaged or worn pieces, flea-market finds and bright orange, red or yellow decoration.
+- If a child has used pottery you now doubt, the FDA says to talk to a doctor about a blood lead test.
 
-Więcej o tym, jak topią się szkliwa, dlaczego niektóre uwalniają metale i co oznaczają limity – w poradniku [Szkliwienie od podstaw](/guides/glazing-basics).
+For more on how glazes melt, why some leach and what the limits mean, see [Glazing from first principles](/guides/glazing-basics).
 
 ## Źródła {#sources}
 

@@ -149,76 +149,76 @@ Pet Poison Helpline ระบุว่า “ตะกั่วเป็นพ�
 
 หากสัตว์เลี้ยงอาจกินหรือดื่มสิ่งใดจากสตูดิโอ หรือแสดงอาการเช่นข้างต้น ให้โทรหาสัตวแพทย์หรือสายด่วนพิษสัตว์ (ดูตารางด้านบนสุด) โดยเตรียมชื่อวัตถุดิบและน้ำหนักของสัตว์เลี้ยงไว้
 
-## เตาเผา {#the-kiln}
+## The kiln {#the-kiln lang=en}
 
-### ด้านนอกร้อนพอที่จะทำให้ไหม้
+### The outside gets hot enough to burn
 
-การประเมินความเสี่ยงของโรงเรียนในสหราชอาณาจักรระบุว่าด้านนอกของเตาเผา “อาจถึง 160 °C และอาจมากกว่า” (ประมาณ 320 °F) และเอกสารแนวทางเรื่องเตาเผาสำหรับโรงเรียนรายงานแถบโลหะที่สูงถึง 460 °F (ประมาณ 240 °C) Skutt ผู้ผลิตเตาเผา แนะนำห้องเตาเผาที่ล็อกกันเด็กและสัตว์เลี้ยงได้ ในที่ที่ล็อกห้องไม่ได้ เอกสารแนวทางสำหรับโรงเรียนนั้นแนะนำสิ่งกั้น เช่น ฉากกั้นความปลอดภัยของเตาเผา
+A UK schools risk assessment says a kiln's outside "can reach 160 °C and possibly more" (about 320 °F), and a school kiln guide reports metal bands at up to 460 °F (about 240 °C). Skutt, a kiln maker, recommends a kiln room that can be locked against children and pets. Where a room cannot be locked, the school guide suggests a barrier such as a kiln safety screen.
 
-เด็กเล็กและสัตว์เลี้ยงไม่เข้าใจป้ายเตือน เราแนะนำให้เก็บพวกเขาไว้หลังประตูที่ล็อกหรือสิ่งกั้นขณะที่เตาเผากำลังเผาและขณะเย็นลง และติดป้ายเตือนสำหรับคนอื่น
+Small children and pets cannot understand a warning sign. We suggest keeping them behind a locked door or a barrier while the kiln fires and while it cools, and posting a warning sign for everyone else.
 
-### พื้นที่รอบเตา
+### Space around it
 
-แหล่งข้อมูลไม่ตรงกันเรื่องระยะห่าง Rio Grande ระบุอย่างน้อย 12 นิ้ว (30 cm) จากผนังและสิ่งที่ติดไฟได้ L&L แนะนำอย่างยิ่งให้ 18 นิ้ว (46 cm) ถึงผนังทุกด้าน และข้อกำหนดอาคารที่อ้างถึงขอ 3 ฟุต (0.9 m) จากผนังที่ติดไฟได้ ทำตามคู่มือการใช้งานของเตาเผาและข้อกำหนดป้องกันอัคคีภัยท้องถิ่น หากไม่แน่ใจ ให้เว้น 18 นิ้วจากผนังใดก็ตาม และ 3 ฟุตจากสิ่งที่ติดไฟได้ ในโรงรถ ให้เก็บรถ เชื้อเพลิง และสีให้ห่างมาก
+Sources disagree on clearance. Rio Grande says at least 12 inches (30 cm) from walls and anything combustible. L&L strongly recommends 18 inches (46 cm) to all walls, and the building code it cites asks for 3 feet (0.9 m) from combustible walls. Follow your kiln's manual and local fire code; if you are unsure, allow 18 inches from any wall and 3 feet from anything that can burn. In a garage, keep cars, fuel and paint well away.
 
-### ไฟฟ้า
+### Power
 
-Rio Grande แนะนำ**วงจรเฉพาะ** (วงจรที่ไม่จ่ายไฟให้สิ่งอื่น) พร้อมเต้ารับที่ต่อสายดินอย่างถูกต้อง เราแนะนำไม่ให้ใช้สายต่อพ่วง ในช่วงที่ไม่ได้เผา ให้ปิดเบรกเกอร์หรือสวิตช์ตัดไฟของเตาเผา หรือถอดปลั๊ก เพื่อไม่ให้เด็กเริ่มเตาเผาได้
+Rio Grande recommends a **dedicated circuit** (one that powers nothing else) with a properly grounded outlet. We suggest no extension cord. Between firings, switch off the kiln's breaker or disconnect switch, or unplug it, so a child cannot start it.
 
-### อยู่ที่นั่นเมื่อการเผาสิ้นสุด
+### Be there when the firing ends
 
-**Kiln-Sitter**{{en: kiln sitter}}คือสวิตช์เชิงกลบนเตาเผาแบบมือหลายเตา: โคนเล็กโค้งเมื่อสิ้นสุดการเผาและทำให้สวิตช์ตัด คู่มือการใช้งานของ Kiln-Sitter ระบุว่า “ไม่ได้มีไว้เพื่อทำหน้าที่เป็นอุปกรณ์ตัดไฟที่รับประกันความปลอดภัย (fail-safe)” Rio Grande ระบุว่าห้ามปล่อยเตาเผาที่กำลังเผาโดยไม่มีคนดูแลโดยเด็ดขาด “โดยเฉพาะใกล้เวลาที่คาดว่าจะตัด” ดังนั้นให้เผาเฉพาะเมื่อมีผู้ใหญ่อยู่บ้านและตื่นอยู่เมื่อการเผาสิ้นสุด ตรวจว่าเตาเผาตัดไฟแล้ว และเก็บถังดับเพลิง ABC ไว้ในห้องเตาเผา สำหรับวิธีที่ Kiln-Sitter ตัวควบคุมอุณหภูมิ และโปรแกรมการเผาทำงาน ดู [การเผาเตาพื้นฐาน](/guides/firing)
+A **kiln sitter** is the mechanical switch on many manual kilns: a small cone bends at the end of the firing and trips the switch off. Its manual says it "is NOT intended to perform as a fail-safe shut-off device." Rio Grande says never to leave a firing kiln unattended, "especially near the expected shut-off time". So stay nearby and check the kiln while it fires, above all near the end; fire only when an adult will be home and awake to do that, check that it has switched off, and keep an ABC fire extinguisher in the kiln room. For how sitters, controllers and schedules work, see [Firing a basic kiln](/guides/firing).
 
-### ควันและคาร์บอนมอนอกไซด์
+### Fumes and carbon monoxide
 
-การเผาปล่อยควัน จึงให้ระบายควันจากเตาเผาออกสู่ภายนอก [การผสมอย่างปลอดภัยและการระบายอากาศ](/guides/safe-mixing) อธิบายวิธีทำ เตาเผาในโรงรถที่ติดกับบ้านต้องมีการระบายอากาศที่กันไม่ให้ควันไปถึงบ้านผ่านประตูเชื่อม ให้นกอยู่ในห้องที่ไกลออกไปทุกครั้งที่เตาเผากำลังเผา
+Firing gives off fumes, so vent the kiln to the outdoors; [Safe mixing and ventilation](/guides/safe-mixing) explains how. A kiln in an attached garage needs venting that keeps fumes from reaching the house through the connecting door. Keep birds in a far room whenever the kiln fires.
 
-**คาร์บอนมอนอกไซด์** (CO) เป็นแก๊สพิษที่คุณมองไม่เห็นหรือได้กลิ่น เอกสารความปลอดภัยของเตาเผาของมหาวิทยาลัยแห่งหนึ่งกำหนดให้มีเครื่องตรวจจับ CO กับเตาเผาแก๊ส ความเห็นต่างกันสำหรับเตาเผาไฟฟ้า แต่การเผาไหม้สารอินทรีย์ (ในดิน หรือสิ่งของเช่นกระดาษหรือขี้ผึ้ง) ทำให้เกิด CO ได้ เราคิดว่าเครื่องตรวจจับ CO ในห้องเตาเผาและห้องข้างเคียงเป็นขั้นตอนที่สมเหตุสมผลและราคาไม่แพงสำหรับเตาเผาทุกเตา
+**Carbon monoxide** (CO) is a poisonous gas you cannot see or smell. A university kiln safety sheet requires CO alarms with gas kilns. Views differ for electric kilns, but burning off organic matter (in clay, or things like paper or wax) can make CO. We think a CO alarm in the kiln room and the rooms next to it is a sensible, inexpensive step for any kiln.
 
-### ช่องดูไฟและดวงตา
+### Peepholes and eyes
 
-แสงอินฟราเรด ซึ่งคุณมองไม่เห็น “เริ่มที่ 752°F (400°C)” และ Ceramic Arts Network ระบุว่าการมองเข้าไปในเตาเผาเหนืออุณหภูมินี้ควรทำโดยป้องกันดวงตาเสมอ อินฟราเรดทำลายเลนส์ตาและนำไปสู่ต้อกระจกได้ และการจ้องนานทำให้จอประสาทตาบาดเจ็บได้ แว่นกันแดดและแว่นดิดิเมียมไม่กันอินฟราเรด
+Infrared light, which you cannot see, "starts at 752°F (400°C)", and the Ceramic Arts Network says looking into a kiln above this should always be done with eye protection. Infrared can damage the lens of the eye and lead to cataracts, and long gazing can injure the retina. Sunglasses and didymium glasses do not block it.
 
 > [!WARNING]
-> เด็กไม่ควรมองเข้าไปในเตาเผาเลย ช่องดูไฟที่เรืองแสงดึงดูดพวกเขา และไม่อาจไว้ใจได้ว่าจะสวมแว่นป้องกันไว้ตลอด จึงให้อยู่ห่างขณะที่เตาเผาร้อน ผู้ใหญ่ควรมองเพียงครู่เดียว ผ่านแว่นเชื่อมที่กันอินฟราเรด แหล่งข้อมูลแนะนำเฉดสี 1.7 ถึง 5; เฉดสี 3 เป็นทางเลือกที่สมเหตุสมผล เข้มกว่านั้นหากคุณเห็นจุดภายหลัง
+> Children should not look into a kiln at all. A glowing peephole draws them, and they will not reliably keep protective glasses on, so keep them away while the kiln is hot. Adults should look only briefly, through IR-rated welding glasses. Sources recommend shades from 1.7 to 5; shade 3 is a sensible choice, darker if you see spots afterward.
 
-## ชิ้นงานทำมือบนโต๊ะอาหารของครอบครัว {#handmade-ware}
+## Handmade ware on the family table {#handmade-ware lang=en}
 
-คำถามสำหรับชิ้นงานบนโต๊ะอาหารของครอบครัวคือ**การละลายออก**{{en: leaching}}: โลหะละลายออกจากเคลือบที่เผาแล้วสู่อาหารหรือเครื่องดื่ม FDA เตือนว่าหากเครื่องปั้นดินเผา “ผลิตไม่เหมาะสม ตะกั่วนี้อาจละลายออกสู่อาหารและเครื่องดื่ม” และ “การล้าง ต้ม หรือกระบวนการอื่นใดในปริมาณเท่าใดก็ไม่สามารถกำจัดตะกั่วออกจากเครื่องปั้นดินเผาได้” หน่วยงานกำกับดูแล เช่น FDA ของสหรัฐอเมริกา และ EU จำกัดปริมาณตะกั่วและแคดเมียมที่ชิ้นงานสำเร็จปล่อยออกมาในการทดสอบกรดมาตรฐาน ไม่ใช่สิ่งที่เคลือบมีอยู่ ขีดจำกัดที่เข้มงวดที่สุดของสหรัฐอเมริกา สำหรับแก้วน้ำ แก้วมัก และเหยือก คือตะกั่ว 0.5 µg/mL
+The question for pots on the family table is **leaching**: metals dissolving out of the fired glaze into food or drink. The FDA warns that if pottery "is not manufactured properly, this lead can leach into food and drink", and that "no amount of washing, boiling, or other process can remove lead from pottery." Regulators such as the US FDA and the EU limit how much lead and cadmium a finished piece releases in a standard acid test, not what the glaze contains. The strictest US limit, for cups, mugs and pitchers, is 0.5 µg/mL of lead.
 
-### ปราศจากตะกั่วไม่เหมือนกับปลอดภัยสำหรับอาหาร
+### Lead-free is not the same as food-safe
 
-เคลือบที่ไม่มีตะกั่วก็ยังละลายออกได้ Digitalfire เอกสารอ้างอิงเคมีเคลือบ ระบุเคลือบที่มี “สารให้สีออกไซด์โลหะหนัก แบเรียม ลิเทียม หรือตะกั่ว” ว่าเป็นข้อกังวล และเตือนว่าสีสะเตนที่เผาเกินอุณหภูมิที่ระบุอาจปล่อยแคดเมียม ฉลากวัสดุศิลปะ ASTM D-4236 บนโหล “ไม่ได้ยืนยันว่าเคลือบที่เผาแล้วปลอดภัยสำหรับอาหาร” และ “ผู้ผลิตภาชนะบนโต๊ะอาหารต้องทดสอบชิ้นงานสำเร็จทั้งหมดเพื่อยืนยันสถานะภาชนะบนโต๊ะอาหาร”
+A glaze with no lead can still leach. Digitalfire, a glaze chemistry reference, names glazes containing "heavy metal oxide colorants, barium, lithium, or lead" as the concern, and warns that a stain fired above its rated temperature can release cadmium. The ASTM D-4236 art-materials label on a jar "DOES NOT establish that a fired glaze is food-safe", and "Tableware producers must test all finished ware to establish dinnerware status."
 
 > [!NOTE]
-> “ปลอดภัยสำหรับอาหาร”{{en: food safe}} หมายความว่าเคลือบนี้ บนดินนี้ เผาถึงโคนนี้ เคลือบด้วยวิธีนี้ ปล่อยน้อยกว่าขีดจำกัดทางกฎหมาย การคำนวณสูตรเคลือบ รวมถึงของ Glazecalc ชี้สูตรเคลือบที่เสี่ยงได้แต่พิสูจน์ไม่ได้ว่าชิ้นงานปลอดภัย มีเพียงการทดสอบการละลายออกของโลหะกับชิ้นงานที่เผาแล้วเท่านั้นที่ทำได้
+> "Food safe" means this glaze, on this clay, fired to this cone, applied this way, releases less than the legal limits. A recipe calculation, Glazecalc's included, can flag a risky recipe but cannot prove a pot is safe. Only a leach test of the fired piece can.
 
-เราแนะนำให้อ่านฉลาก “ปลอดภัยสำหรับอาหาร” บนเคลือบเชิงพาณิชย์เป็นจุดเริ่มต้นที่ดี ไม่ใช่การรับประกัน: ดินต่างกัน ชั้นเคลือบหนากว่า โคนอื่น หรือเคลือบอีกชนิดทับด้านบนเปลี่ยนผลได้
+We suggest reading a "food safe" label on a commercial glaze as a good start, not a guarantee: a different clay, a thicker coat, another cone or a second glaze on top changes the result.
 
-### การทดสอบ
+### Testing
 
-ห้องปฏิบัติการทดสอบชิ้นงานที่เผาแล้วด้วยการแช่กรดมาตรฐานที่แทนกรณีเลวร้ายที่สุด เช่น ASTM C738 ในสหรัฐอเมริกา การทดสอบ EU ของห้องปฏิบัติการแห่งหนึ่งต้องใช้ชิ้นงานเหมือนกันสี่ชิ้นและใช้เวลาเจ็ดวันทำการ จึงทำชิ้นงานสำรองของทุกอย่างที่คุณวางแผนจะส่งทดสอบ
+Laboratories test fired pieces with a standard acid soak that represents a worst case, such as ASTM C738 in the US. One lab's EU test needs four identical pieces and takes seven working days, so make spares of anything you plan to have tested.
 
-การทดสอบที่บ้านเป็นที่ถกเถียง FDA ระบุว่าชุดตรวจแบบป้ายที่บ้านแสดงตะกั่วที่ละลายออกได้ และชิ้นงานที่ผลทดสอบเป็นบวกไม่ควรใช้กับอาหาร Ceramics NZ เตือนว่าปากกาทดสอบตะกั่วสำหรับผู้บริโภค “ไม่ได้ออกแบบมาสำหรับการใช้งานนี้” กับเซรามิกและให้ผลบวกลวงได้ Digitalfire แนะนำให้วางชิ้นมะนาวบนเคลือบข้ามคืนเป็นการคัดกรองแบบหยาบ การอ่านผลที่ปลอดภัย: ผลทดสอบที่บ้านเป็นบวกหมายถึงหยุดใช้ชิ้นงานกับอาหาร และผลลบไม่พิสูจน์อะไร มีเพียงห้องปฏิบัติการเท่านั้นที่บอกได้ว่าชิ้นงานปลอดภัย
+Home tests are disputed. The FDA says home swab kits can show leachable lead, and that a piece that tests positive should not be used for food. Ceramics NZ warns that consumer lead-test pens are "not designed for this use" on ceramics and can give false positives. Digitalfire suggests leaving a lemon slice on the glaze overnight as a rough screen. The safe reading: a positive home test means stop using the piece for food, and a negative one proves nothing. Only a lab can tell you a piece is safe.
 
-### ชิ้นงานที่เคลือบแตกลายงา
+### Crazed ware
 
-**เคลือบแตกลายงา**{{en: crazing}}คือเครือข่ายรอยแตกละเอียดบนผิวเคลือบ และแหล่งข้อมูลไม่ตรงกันเรื่องนี้ การทดลองของ Ceramics Monthly พบว่าแผ่นทดสอบที่แตกลายงาทำความสะอาดได้ ดีที่สุดในเครื่องล้างจาน แม้จะสะอาดน้อยกว่าแผ่นทดสอบที่ไม่แตกลายงาหลังล้างด้วยสบู่และน้ำ Digitalfire เห็นว่า “ภาชนะที่แตกลายงายอมรับไม่ได้” และการแตกลายงา “ทำให้ชิ้นงานอ่อนแอลงอย่างรุนแรง” ทางที่ปลอดภัยนั้นง่าย: ห้ามใช้ชิ้นงานที่แตกลายงากับอาหาร
+**Crazing** is a network of fine cracks in the glaze surface, and sources disagree about it. A Ceramics Monthly experiment found crazed tiles could be cleaned, best in a dishwasher, though they came out less clean than uncrazed tiles after soap and water. Digitalfire holds that "Crazed ware is unacceptable" and that crazing "severely weakens ware". The safe course is simple: do not use crazed pieces for food.
 
-### เคลือบด้านใน
+### Liner glazes
 
-**เคลือบด้านใน**{{en: liner glaze}}คือเคลือบด้านในของถ้วยหรือชาม ที่ที่อาหารอยู่ Digitalfire อธิบายเคลือบด้านในที่อาจมีความเสี่ยงต่ำพอที่จะใช้โดยไม่ต้องทดสอบในห้องปฏิบัติการ: ไม่มีสารให้สี แบเรียม ตะกั่ว หรือลิเทียม; หลอมเต็มที่; ไม่แตกลายงา; และทนการสึกหรอ สัญญาณเตือนในเคลือบใดก็ตามคือสารให้สีปริมาณมาก ผลึกบนพื้นผิว และการหลอมไม่ดี
+A **liner glaze** is the glaze on the inside of a cup or bowl, where the food sits. Digitalfire describes a liner that may be low enough in risk to use without lab testing: no colorants, barium, lead or lithium; fully melted; no crazing; and it wears well. Even then, only a leach test of your own fired pots shows whether they are food-safe. Warning signs in any glaze are heavy amounts of colorant, crystals on the surface and poor melting.
 
-### กฎของครอบครัวที่เราแนะนำ
+### Family rules we suggest
 
-- ถ้วย ชาม และจานของเด็ก: เฉพาะเคลือบด้านในที่ทนทานซึ่งผ่านการทดสอบในห้องปฏิบัติการ หรือภาชนะบนโต๊ะอาหารเชิงพาณิชย์
-- อย่าเก็บอาหารหรือเครื่องดื่มที่เป็นกรด (ส้ม มะเขือเทศ น้ำส้มสายชู น้ำผลไม้ ไวน์) ในภาชนะที่เคลือบด้วยเคลือบใดก็ตามที่คุณยังไม่ได้ส่งทดสอบ
-- ห้ามใช้ชิ้นงานที่แตกลายงากับอาหาร
-- แผ่นทดสอบและชิ้นงานทดลองอยู่ในสตูดิโอ ห้ามนำเข้าครัว กล่องของเล่น หรือชามของสัตว์เลี้ยงโดยเด็ดขาด
-- ระวังเครื่องปั้นดินเผาอื่นด้วย FDA แนะนำให้ระวังชิ้นงานทำมือหรือดูหยาบ ของโบราณ ชิ้นงานที่เสียหายหรือสึก ของจากตลาดนัด และการตกแต่งสีส้ม แดง หรือเหลืองสด
-- หากเด็กเคยใช้เครื่องปั้นดินเผาที่ตอนนี้คุณสงสัย FDA ระบุให้พูดคุยกับแพทย์เรื่องการตรวจตะกั่วในเลือด
+- Children's cups, bowls and plates: only lab-tested, durable liner glazes, or commercial dinnerware.
+- Do not store acidic food or drink (citrus, tomato, vinegar, fruit juice, wine) in pots glazed with anything you have not had tested.
+- Do not use crazed pieces for food.
+- Test tiles and experiments stay in the studio, never in the kitchen, the toy box or the pet's bowl.
+- Take care with other pottery too. The FDA advises caution with handmade or crude-looking pieces, antiques, damaged or worn pieces, flea-market finds and bright orange, red or yellow decoration.
+- If a child has used pottery you now doubt, the FDA says to talk to a doctor about a blood lead test.
 
-สำหรับข้อมูลเพิ่มเติมเกี่ยวกับวิธีที่เคลือบหลอม ทำไมบางชนิดละลายออก และขีดจำกัดหมายถึงอะไร ดู [การเคลือบจากหลักพื้นฐาน](/guides/glazing-basics)
+For more on how glazes melt, why some leach and what the limits mean, see [Glazing from first principles](/guides/glazing-basics).
 
 ## แหล่งข้อมูล {#sources}
 

@@ -361,8 +361,7 @@
     "heading": "Riziká",
     "intro": "Tak, ako ich uvádza záznam každej suroviny; riziká štandardnej knižnice pochádzajú z kariet bezpečnostných údajov dodávateľov.",
     "line": "<b>{names}:</b> {hazards}",
-    "unknown": "{count, plural, one {Pre {list} nie sú uvedené žiadne riziká: pozrite kartu bezpečnostných údajov, ktorá je k nej priložená.} few {Pre {list} nie sú uvedené žiadne riziká: pozrite karty bezpečnostných údajov, ktoré sú k nim priložené.} many {Pre {list} nie sú uvedené žiadne riziká: pozrite karty bezpečnostných údajov, ktoré sú k nim priložené.} other {Pre {list} nie sú uvedené žiadne riziká: pozrite karty bezpečnostných údajov, ktoré sú k nim priložené.}}",
-    "safety": "Suché suroviny na glazúry vytvárajú prach, ktorý nepatrí do pľúc, aj keď nie sú klasifikované ako nebezpečné: pozrite <mixing>Bezpečné miešanie a vetranie</mixing> a <home>Neotrávte svoju rodinu</home>, ak sú nablízku deti alebo domáce zvieratá. Ak karta bezpečnostných údajov suroviny uvádza viac, riaďte sa ňou."
+    "unknown": "{count, plural, one {Pre {list} nie sú uvedené žiadne riziká: pozrite kartu bezpečnostných údajov, ktorá je k nej priložená.} few {Pre {list} nie sú uvedené žiadne riziká: pozrite karty bezpečnostných údajov, ktoré sú k nim priložené.} many {Pre {list} nie sú uvedené žiadne riziká: pozrite karty bezpečnostných údajov, ktoré sú k nim priložené.} other {Pre {list} nie sú uvedené žiadne riziká: pozrite karty bezpečnostných údajov, ktoré sú k nim priložené.}}"
   },
   "compare": {
     "heading": "Porovnať dva recepty",

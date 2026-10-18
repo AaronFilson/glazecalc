@@ -361,8 +361,7 @@
     "heading": "Pavojai",
     "intro": "Kaip nurodyta kiekvienos žaliavos įraše; standartinės bibliotekos pavojai paimti iš tiekėjų saugos duomenų lapų.",
     "line": "<b>{names}:</b> {hazards}",
-    "unknown": "{count, plural, one {{list}: pavojų nenurodyta, žr. kartu pateikiamą saugos duomenų lapą.} few {{list}: pavojų nenurodyta, žr. kartu pateikiamus saugos duomenų lapus.} many {{list}: pavojų nenurodyta, žr. kartu pateikiamus saugos duomenų lapus.} other {{list}: pavojų nenurodyta, žr. kartu pateikiamus saugos duomenų lapus.}}",
-    "safety": "Sausos glazūros žaliavos sudaro dulkes, kurios neturi patekti į jūsų plaučius, net ir tos, kurios nėra priskiriamos pavojingoms: žr. <mixing>Saugus maišymas ir vėdinimas</mixing> ir <home>Neapnuodykite savo šeimos</home>, jei šalia yra vaikų ar augintinių. Kur žaliavos saugos duomenų lapas pasako daugiau, vadovaukitės juo."
+    "unknown": "{count, plural, one {{list}: pavojų nenurodyta, žr. kartu pateikiamą saugos duomenų lapą.} few {{list}: pavojų nenurodyta, žr. kartu pateikiamus saugos duomenų lapus.} many {{list}: pavojų nenurodyta, žr. kartu pateikiamus saugos duomenų lapus.} other {{list}: pavojų nenurodyta, žr. kartu pateikiamus saugos duomenų lapus.}}"
   },
   "compare": {
     "heading": "Palyginti du receptus",
