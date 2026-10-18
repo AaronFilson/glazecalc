@@ -17,6 +17,14 @@
         "title": "Recettes",
         "text": "Composez un émail à partir de matières et de quantités, consultez sa formule de Seger et enregistrez-le."
       },
+      "import": {
+        "title": "Coller des recettes",
+        "text": "Collez des recettes depuis un site web, un tableur ou des notes, vérifiez ce qui a été lu, puis enregistrez-les."
+      },
+      "blends": {
+        "title": "Mélanges pour tessons d’essai",
+        "text": "Mélangez deux, trois ou quatre de vos recettes en tessons d’essai numérotés, avec ce qu’il faut peser pour chacun."
+      },
       "material": {
         "title": "Matières",
         "text": "Ajoutez vos propres matières premières, à partir d’une formule chimique ou de l’analyse d’un fournisseur."
@@ -99,6 +107,35 @@
     "saveFailed": "Erreur : la requête au serveur a échoué."
   },
   "trash": {
-    "title": "Corbeille"
+    "title": "Corbeille",
+    "lead": "Ce que vous retirez de vos recettes, matières, notes et relevés attend ici pendant 30 jours. Remettez-le en place, ou supprimez-le définitivement.",
+    "listHeading": "Dans la corbeille",
+    "none": "La corbeille est vide.",
+    "untitled": "Sans titre",
+    "kinds": {
+      "recipes": "Recette",
+      "materials": "Matière",
+      "additives": "Additif",
+      "notes": "Note",
+      "firing": "Relevé de cuisson",
+      "advice": "Conseil",
+      "other": "Enregistrement"
+    },
+    "removedOn": "Retiré le {date}",
+    "goesOn": "Supprimé définitivement le {date}",
+    "byApp": "Retiré par une application connectée",
+    "putBack": "Remettre en place",
+    "putBackName": "Remettre {name} en place",
+    "restored": "« {name} » a été remis à sa place.",
+    "restoredAlready": "« {name} » a déjà été remis en place.",
+    "restoreFailed": "Impossible de remettre « {name} » en place. Veuillez réessayer.",
+    "deleted": "« {name} » a été supprimé définitivement.",
+    "empty": "Vider la corbeille",
+    "emptyQuestion": "{count, plural, one {Supprimer définitivement l’enregistrement de la corbeille ?} many {Supprimer définitivement les # d’enregistrements de la corbeille ?} other {Supprimer définitivement les # enregistrements de la corbeille ?}} Cette action est irréversible.",
+    "emptyYes": "Oui, vider",
+    "emptying": "Vidage en cours…",
+    "emptied": "La corbeille est vide.",
+    "emptyFailed": "Impossible de vider la corbeille. Veuillez réessayer.",
+    "fetchFailed": "Impossible de charger la corbeille. Veuillez réessayer."
   }
 }

@@ -102,6 +102,9 @@
     "quartzAll": "Quartz, pour des poussières entièrement composées de quartz",
     "cristobaliteAll": "Cristobalite, pour des poussières entièrement composées de cristobalite",
     "allFree": "Concentration de contrôle pour des poussières entièrement composées de silice libre",
+    "bandFromTo": "Poussière contenant de {from} % à {to} % de silice libre (SiO₂)",
+    "bandOverTo": "Poussière contenant plus de {from} % et jusqu’à {to} % de silice libre",
+    "bandAbove": "Poussière contenant plus de {from} % de silice libre",
     "recommended": "Valeur recommandée par {abbr}",
     "value": "{value} mg/m³",
     "kind": {
@@ -160,7 +163,15 @@
       "myFlat": "Objets plats",
       "mySmall": "Petits objets creux",
       "myLarge": "Grands objets creux",
-      "myCooking": "Ustensiles de cuisson"
+      "myCooking": "Ustensiles de cuisson",
+      "idFlat": "Objets de 25 mm de profondeur intérieure au plus",
+      "idSmall": "Objets de plus de 25 mm de profondeur intérieure, de moins de 1100 mL",
+      "idLarge": "Objets de plus de 25 mm de profondeur intérieure, de 1100 mL ou plus",
+      "thFlat": "Objets de 25 mm de profondeur au plus",
+      "thSmall": "Objets de plus de 25 mm de profondeur, de moins de 1,1 L",
+      "thLarge": "Objets de plus de 25 mm de profondeur, de 1,1 L ou plus",
+      "thInfant": "Récipients pour l’alimentation des bébés jusqu’à 12 mois",
+      "thCooking": "Ustensiles de cuisson, conçus pour résister à la chaleur de la cuisson"
     },
     "judged": {
       "average": "moyenne de 6 pièces",

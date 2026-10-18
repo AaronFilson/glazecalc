@@ -17,13 +17,17 @@
     "confirmEmail": "Confirmer votre adresse e-mail - Glazecalc",
     "home": "Votre carnet d’atelier - Glazecalc",
     "recipe": "Recettes - Glazecalc",
+    "import": "Coller des recettes - Glazecalc",
+    "blends": "Mélanges pour tessons d’essai - Glazecalc",
     "material": "Matières - Glazecalc",
     "additive": "Additifs - Glazecalc",
     "firingLogs": "Relevés de cuisson - Glazecalc",
     "notes": "Notes - Glazecalc",
     "trash": "Corbeille - Glazecalc",
     "account": "Votre compte et vos paramètres - Glazecalc",
-    "notFound": "Page introuvable - Glazecalc"
+    "notFound": "Page introuvable - Glazecalc",
+    "shared": "Recette partagée - Glazecalc",
+    "assistants": "Utiliser Glazecalc avec votre assistant IA - Glazecalc"
   },
   "nav": {
     "skip": "Aller au contenu",
@@ -96,9 +100,14 @@
   },
   "remove": {
     "alreadyRemoved": "Déjà retiré : « {name} ».",
+    "trashed": "« {name} » a été mis à la corbeille.",
+    "undo": "Annuler",
+    "restored": "« {name} » a été remis en place.",
+    "restoreFailed": "Impossible de remettre « {name} » en place. Il est toujours dans la corbeille.",
     "failed": "Impossible de retirer cet élément. Veuillez réessayer.",
     "question": "Retirer « {name} » ?",
     "cannotUndo": "Cette action est irréversible.",
+    "toTrash": "Vous pouvez le remettre en place depuis la corbeille pendant 30 jours.",
     "removing": "Retrait en cours…",
     "yes": "Oui, retirer",
     "cancel": "Annuler",

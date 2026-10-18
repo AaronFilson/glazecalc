@@ -3,79 +3,79 @@ title: Cuire dans un four simple
 lead: Comment cuire dans un four électrique équipé d’un Kiln-Sitter ou de commutateurs manuels : choisir, placer et lire les cônes, avec des courbes publiées pour la cuisson de biscuit et la cuisson d’émail.
 ---
 
-## Cones: what they measure {#cones lang=en}
+## Cônes : ce qu’ils mesurent {#cones}
 
 > [!NOTE]
-> Follow your kiln's own manual first. This guide gathers what cone and kiln makers publish about basic electric kilns; it does not replace the instructions for your model, and where the two differ, the manual wins.
+> Suivez d’abord le manuel de votre four. Ce guide rassemble ce que les fabricants de cônes et de fours publient sur les fours électriques simples ; il ne remplace pas les instructions de votre modèle et, là où les deux diffèrent, c’est le manuel qui l’emporte.
 
-A **pyrometric cone** is a small, slender pyramid made from a standardized ceramic powder. When it has had enough heat, it softens and bends over in a repeatable way. You set cones in the kiln beside the ware and read how far they bent.
+Un **cône pyrométrique**{{en: pyrometric cone}} est une petite pyramide élancée, faite d’une poudre céramique normalisée. Quand il a reçu assez de chaleur, il ramollit et se courbe d’une façon reproductible. Vous placez des cônes dans le four à côté des pièces, puis vous regardez de combien ils se sont courbés.
 
-Cones measure **heatwork**, the combined effect of temperature and time. In the words of Orton, the main US cone maker, "Cones do not measure temperature alone." A cone heated slowly bends at a lower temperature than one heated fast, and a glaze behaves the same way. So Orton gives each cone's temperature for a stated heating rate over the last {{180 °F; 100 °C}} of the firing. Once a cone starts to move, it bends over a narrow range, "usually less than 40° F" (22 °C).
+Les cônes mesurent le **travail thermique**{{en: heatwork}}, l’effet combiné de la température et du temps. Pour reprendre les mots d’Orton, le principal fabricant de cônes aux États-Unis : « Les cônes ne mesurent pas la température seule. » Un cône chauffé lentement se courbe à une température plus basse qu’un cône chauffé vite, et un émail{{en: glaze}} se comporte de la même façon. C’est pourquoi Orton donne la température de chaque cône pour une vitesse de montée précise sur les derniers {{180 °F; 100 °C}} de la cuisson. Une fois qu’un cône commence à bouger, il se courbe dans un intervalle étroit, « généralement moins de 40° F » (22 °C).
 
-### Cone numbers
+### Numéros de cône
 
-Cone numbers run from 022, the coolest, up to 42. A leading zero marks the cooler series and is read as "oh": cone 06 ("oh-six") is cooler than cone 04, and cone 01 needs less heat than cone 1. Orton warns that it is important not to mix the two series up. The gap is large: cone 06 bends more than {{400 °F; 220 °C}} cooler than cone 6.
+Les numéros de cône vont de 022, le moins chaud, jusqu’à 42. Un zéro en tête marque la série la moins chaude et se lit « zéro » : le cône 06 (« zéro six ») est moins chaud que le cône 04, et le cône 01 demande moins de chaleur que le cône 1. Orton avertit qu’il est important de ne pas confondre les deux séries. L’écart est grand : le cône 06 se courbe à une température inférieure de plus de {{400 °F; 220 °C}} à celle du cône 6.
 
-Table: Common firing ranges, for self-supporting cones at {{108 °F/h; 60 °C/h}}
-Label: Firing ranges
+Table: Plages de cuisson courantes, pour des cônes autoportants à {{108 °F/h; 60 °C/h}}
+Label: Plages de cuisson
 
-| Range     | Cones |                    Temperature | Typical use                              |
-| --------- | ----- | -----------------------------: | ---------------------------------------- |
-| Low fire  | 06–04 |  {{1828–1945 °F; 998–1063 °C}} | Earthenware glazes; bisque               |
-| Mid fire  | 5–6   | {{2167–2232 °F; 1186–1222 °C}} | Electric-kiln stoneware and porcelain    |
-| High fire | 9–10  | {{2300–2345 °F; 1260–1285 °C}} | Mostly gas-fired stoneware and porcelain |
+| Plage               | Cônes |                    Température | Usage courant                                                 |
+| ------------------- | ----- | -----------------------------: | ------------------------------------------------------------- |
+| Basse température   | 06–04 |  {{1828–1945 °F; 998–1063 °C}} | Émaux pour faïence{{en: earthenware}} ; biscuit{{en: bisque}} |
+| Moyenne température | 5–6   | {{2167–2232 °F; 1186–1222 °C}} | Grès{{en: stoneware}} et porcelaine cuits au four électrique  |
+| Haute température   | 9–10  | {{2300–2345 °F; 1260–1285 °C}} | Surtout du grès et de la porcelaine cuits au gaz              |
 
-Suppliers in the UK, Europe, Australia and New Zealand often give a temperature in °C rather than a cone: find the nearest cone in the chart below and confirm it with a witness cone. Seger and Staffordshire cones, the older European series, should not be assumed to share Orton's numbers, so this guide uses Orton cones.
+Au Royaume-Uni, en Europe, en Australie et en Nouvelle-Zélande, les fournisseurs donnent souvent une température en °C plutôt qu’un cône : cherchez le cône le plus proche dans le tableau ci-dessous et vérifiez-le avec un cône témoin{{en: witness cone}}. Il ne faut pas supposer que les cônes de Seger et les cônes Staffordshire, les anciennes séries européennes, aient les mêmes numéros que ceux d’Orton : ce guide utilise donc les cônes Orton.
 
-### Holding adds heatwork
+### Un palier ajoute du travail thermique
 
-A **hold** (also called a **soak**) keeps the kiln at one temperature for a while. Because cones measure heatwork, a hold at the top can stand in for a hotter peak. Orton gives these rough equivalents:
+Un **palier**{{en: hold}} (on parle aussi de **maintien**{{en: soak}}) garde le four à une même température pendant un certain temps. Comme les cônes mesurent le travail thermique, un palier à la température maximale peut tenir lieu d’une température maximale plus élevée. Orton donne ces équivalences approximatives :
 
-Table: What a hold at the peak is worth
-Label: Holds and heatwork
+Table: Ce que vaut un palier à la température maximale
+Label: Paliers et travail thermique
 
-| Hold             | Roughly the same heatwork as             |
-| ---------------- | ---------------------------------------- |
-| About 20 minutes | A peak {{18 °F; 10 °C}} hotter           |
-| 40–60 minutes    | A peak {{36 °F; 20 °C}} hotter           |
-| About 2 hours    | A peak {{54 °F; 30 °C}} hotter           |
-| 4–6 hours        | Enough to bend a cone two numbers hotter |
+| Palier             | À peu près le même travail thermique que                 |
+| ------------------ | -------------------------------------------------------- |
+| Environ 20 minutes | Une température maximale plus élevée de {{18 °F; 10 °C}} |
+| 40–60 minutes      | Une température maximale plus élevée de {{36 °F; 20 °C}} |
+| Environ 2 heures   | Une température maximale plus élevée de {{54 °F; 30 °C}} |
+| 4–6 heures         | Assez pour courber un cône de deux numéros plus chaud    |
 
-Orton adds that a hold of 1–2 hours "may be sufficient to deform the next higher cone number".
+Orton ajoute qu’un palier de 1–2 heures « peut suffire à déformer le cône de numéro immédiatement supérieur ».
 
-So a hold is never free: if you add one, expect the cones to bend further, and lower the peak to match.
+Un palier n’est donc jamais gratuit : si vous en ajoutez un, attendez-vous à ce que les cônes se courbent davantage, et abaissez la température maximale en conséquence.
 
-### Kinds of cone
+### Types de cônes
 
-Orton makes four kinds. Two stand on the shelf to show what the ware received; two are for the kiln sitter.
+Orton fabrique quatre types de cônes. Deux se posent sur la plaque pour montrer ce que les pièces ont reçu ; deux sont destinés au Kiln-Sitter (coupe-circuit à cône).
 
-Table: Orton's four kinds of cone
-Label: Kinds of cone
+Table: Les quatre types de cônes Orton
+Label: Types de cônes
 
-| Kind            | Used for                  | How it stands                                                                               |
-| --------------- | ------------------------- | ------------------------------------------------------------------------------------------- |
-| Self-supporting | Witness cone on the shelf | A built-in base sets the height, 1¾ in (44 mm), and the 8° lean; no holder needed           |
-| Large           | Witness cone on the shelf | Set in a plaque or a pat of clay with exactly 2 in (51 mm) showing, leaning 8° from upright |
-| Small (junior)  | Kiln sitter               | Lies across the sitter's supports; 15/16 in (24 mm) showing if stood on a shelf             |
-| Bar             | Kiln sitter               | The same powder as small cones, in an even bar shape                                        |
+| Type           | Usage                     | Comment il tient                                                                                                                |
+| -------------- | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| Autoportant    | Cône témoin sur la plaque | Une base intégrée fixe la hauteur, 1¾ pouce (44 mm), et l’inclinaison de 8° ; pas besoin de support                             |
+| Grand          | Cône témoin sur la plaque | Planté dans un support ou une motte d’argile, dépassant d’exactement 2 pouces (51 mm), incliné de 8° par rapport à la verticale |
+| Petit (junior) | Kiln-Sitter               | Posé en travers des supports du Kiln-Sitter ; dépasse de 15/16 de pouce (24 mm) s’il est planté sur une plaque                  |
+| Barrette       | Kiln-Sitter               | La même poudre que les petits cônes, en forme de barrette régulière                                                             |
 
-Height matters: a ¼ in (6 mm) difference in the height of a large cone "can cause more than a half cone difference in bending". Cones do not go bad or age, and damp storage does not affect them.
+La hauteur compte : une différence de ¼ de pouce (6 mm) dans la hauteur d’un grand cône « peut entraîner un écart de plus d’un demi-cône dans la courbure ». Les cônes ne s’abîment pas et ne vieillissent pas, et un stockage humide ne les altère pas.
 
-### What "cone 6" means in practice
+### Ce que « cône 6 » veut dire en pratique
 
-The chart gives a self-supporting cone 6 as {{2232 °F; 1222 °C}}, but only when the last {{180 °F; 100 °C}} climbs at {{108 °F/h; 60 °C/h}}. Climbing at {{270 °F/h; 150 °C/h}}, the same cone bends at {{2269 °F; 1243 °C}}. Real kilns differ again: Digitalfire reports that "Most kilns reach cone 6 at 2200°F, not 2232°F". So "cone 6" means the ware received the heatwork that bends a cone 6, whatever a thermometer read at the time.
+Le tableau donne {{2232 °F; 1222 °C}} pour un cône 6 autoportant, mais seulement quand la montée sur les derniers {{180 °F; 100 °C}} se fait à {{108 °F/h; 60 °C/h}}. Avec une montée à {{270 °F/h; 150 °C/h}}, le même cône se courbe à {{2269 °F; 1243 °C}}. Les vrais fours diffèrent encore : Digitalfire indique que « la plupart des fours atteignent le cône 6 à 2200°F, et non à 2232°F ». « Cône 6 » signifie donc que les pièces ont reçu le travail thermique qui fait courber un cône 6, quelle que soit la température affichée par un thermomètre à ce moment-là.
 
 :::orton
 
 > [!NOTE]
-> Fire by the cone, not the clock or the dial. Set a controller by cone number, and let a witness cone on the shelf confirm every firing.
+> Cuisez au cône, pas à l’horloge ni au cadran. Réglez un programmateur par numéro de cône, et laissez un cône témoin sur la plaque confirmer chaque cuisson.
 
 :::
 
 :::temperature
 
 > [!NOTE]
-> Firing by temperature, keep the end of every firing the same: the same last rate of climb, the same peak and the same hold. Then a glaze that worked once works again.
+> Si vous cuisez par température, gardez une fin de cuisson identique à chaque fois : la même dernière vitesse de montée, la même température maximale et le même palier. Un émail qui a réussi une fois réussit alors de nouveau.
 
 :::
 
@@ -596,22 +596,22 @@ Si le Kiln-Sitter se déclenche avant que les cônes sur la plaque soient couch�
 
 Un **pyromètre** est un indicateur de température relié à un **thermocouple**, une sonde de température qui traverse la paroi du four. Il montre à quelle vitesse le four monte, ce qui vous permet de choisir la bonne colonne du tableau des cônes. Mais il mesure près de la paroi, pas au niveau des pièces, et il dérive. L&L note qu’un thermocouple de type K peut s’écarter de plus de {{25 °F; 14 °C}} après des cuissons répétées au cône 6, « une différence supérieure à un cône entier », alors qu’un cône autoportant ne varie pas de plus de {{4 °F; 2 °C}}. Orton dit que les pyromètres doivent être réétalonnés de temps en temps, et que les cônes permettent de les vérifier.
 
-## Venting, peeking and safety {#venting lang=en}
+## Ventilation, coup d’œil et sécurité {#venting}
 
-### Venting
+### Ventilation
 
-Early in a firing, clay and glaze give off water vapor and fumes, including carbon monoxide, and glazes can give off toxic fumes later in the firing too. L&L calls venting them "essential". With no vent system, that means the lid propped and the peepholes open in the early stages, as in the procedures above; slowing the heating during this time also helps the carbon burn out. In a kiln without a vent, Dawson, who made the sitter, also says to leave the top peephole open for the whole firing: the venting "will reduce deterioration of the kiln's metal parts and increase the life of the tube assembly". A **downdraft vent** (a powered vent fitted to the kiln) changes this. It does the venting, so Orton says the lid and peepholes stay closed for the whole firing except to check the cones, and L&L says to leave the vent on and plug the peepholes.
+En début de cuisson, l’argile et l’émail{{en: glaze}} dégagent de la vapeur d’eau et des fumées, dont du monoxyde de carbone, et les émaux peuvent aussi dégager des fumées toxiques plus tard dans la cuisson. L&L juge « essentiel » de les évacuer. Sans extracteur de fumées, cela veut dire le couvercle entrouvert et les regards ouverts au début, comme dans les procédures ci-dessus ; ralentir la montée en température pendant cette période aide aussi le carbone à brûler. Dans un four sans extracteur, Dawson, le fabricant du Kiln-Sitter, dit aussi de laisser le regard du haut ouvert pendant toute la cuisson : la ventilation « réduira la détérioration des pièces métalliques du four et augmentera la durée de vie de l’ensemble du tube ». Une **aspiration sous le four** (une extraction motorisée montée sur le four) change cela. Elle assure la ventilation : Orton dit donc que le couvercle et les regards restent fermés pendant toute la cuisson, sauf pour vérifier les cônes, et L&L dit de laisser l’aspiration en marche et de boucher les regards.
 
-For venting the room, and for carbon monoxide alarms, see [Safe mixing and ventilation](/guides/safe-mixing) and [Don't poison your family](/guides/home-safety).
+Pour la ventilation de la pièce et pour les détecteurs de monoxyde de carbone, voir [Préparation en sécurité et ventilation](/guides/safe-mixing) et [N’empoisonnez pas votre famille](/guides/home-safety).
 
-### While the kiln is firing
+### Pendant la cuisson
 
-- Look through a peephole only with IR-rated shade 3 welding glasses; sunglasses are not enough. Skutt advises twisting the plugs into place so they do not fall out.
-- Do not leave the kiln unattended beyond its expected firing time; a sitter is not a fail-safe.
-- Never fire on or near anything that burns, such as a wood floor or carpet.
-- Keep the clearances in your manual. Published figures range from 12 in (30 cm) to 3 ft (91 cm); where the manual is silent, 18 in (46 cm) from walls and 3 ft (91 cm) from anything that burns is the safest choice.
-- Keep the space around the sitter's weight clear so it can drop.
-- When the firing ends, turn the switches off and turn off the breaker as well.
+- Ne regardez par un regard qu’avec des lunettes de soudage anti-IR de teinte 3 ; des lunettes de soleil ne suffisent pas. Skutt conseille de visser les bouchons en place pour qu’ils ne tombent pas.
+- Ne laissez pas le four sans surveillance au-delà de la durée de cuisson prévue ; un Kiln-Sitter n’est pas une sécurité infaillible.
+- Ne cuisez jamais sur ou près de quoi que ce soit de combustible, comme un plancher en bois ou de la moquette.
+- Respectez les distances de sécurité de votre notice. Les valeurs publiées vont de 12 pouces (30 cm) à 3 pieds (91 cm) ; quand la notice est muette, 18 pouces (46 cm) des murs et 3 pieds (91 cm) de tout ce qui est combustible sont le choix le plus sûr.
+- Gardez dégagé l’espace autour du contrepoids du Kiln-Sitter pour qu’il puisse tomber.
+- Quand la cuisson est terminée, mettez les interrupteurs sur arrêt et coupez aussi le disjoncteur.
 
 ## Refroidissement et défournement {#cooling}
 
