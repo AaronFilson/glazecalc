@@ -239,7 +239,7 @@ const HOW_NOTES: Partial<Record<MatchHow, string>> = {
                         @if (howNote(line); as note) {
                           <p
                             class="small import-how"
-                            [class.is-question]="line.how !== 'alias'"
+                            [class.is-question]="line.how === 'none' || line.how === 'choose'"
                             [id]="'import-how-' + r + '-' + i"
                           >
                             {{ t(note, { name: nameOf(line.choice) }) }}
@@ -425,6 +425,7 @@ const HOW_NOTES: Partial<Record<MatchHow, string>> = {
       margin: 0.2rem 0 0;
       color: var(--gc-muted);
     }
+    /* Red only where there is something to settle: not found, or several close. A best guess stays muted. */
     .import-how.is-question {
       color: var(--gc-danger-text);
     }

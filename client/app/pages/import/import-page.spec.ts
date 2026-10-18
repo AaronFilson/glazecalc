@@ -116,6 +116,9 @@ describe('ImportPage', () => {
     // A close name says it is a guess; another name says what it is for.
     expect(text(fixture, '#import-how-0-0')).toBe('Best guess: Custer Spar. Check that it is the one meant.');
     expect(text(fixture, '#import-how-0-2')).toBe('Another name for EPK Kaolin.');
+    // Neither is drawn as a problem: a good guess is not an error.
+    expect(root.querySelector('#import-how-0-0')?.classList.contains('is-question')).toBe(false);
+    expect(root.querySelector('#import-how-0-2')?.classList.contains('is-question')).toBe(false);
     expect(text(fixture, '.import-totals')).toBe('Base materials add up to 100 · 1 addition');
     expect(text(fixture, '.import-recipe')).toContain("Kept as the recipe's notes: Cone 10");
     expect(text(fixture, '.import-recipe')).toContain('Not read as materials: Total 100');
@@ -180,6 +183,9 @@ describe('ImportPage', () => {
     expect(selects()[0].value).toBe('');
     expect(selects()[0].getAttribute('aria-invalid')).toBe('true');
     expect(text(fixture, '#import-how-0-0')).toBe('Several materials are close. Choose one, or leave the line out.');
+    expect((fixture.nativeElement as HTMLElement).querySelector('#import-how-0-0')?.classList.contains('is-question')).toBe(
+      true
+    );
     expect(text(fixture, '#import-how-0-2')).toBe(
       'Not found in the library. Choose a material, or leave the line out.'
     );
