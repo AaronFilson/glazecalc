@@ -39,11 +39,19 @@
               }
             ],
             "styles": [
-              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              // Only the parts of Bootstrap in use (client/bootstrap.scss).
+              "client/bootstrap.scss",
               "node_modules/@fontsource-variable/lora/wght.css",
               "node_modules/@fontsource-variable/lora/wght-italic.css",
               "client/styles.scss"
             ],
+            // Bootstrap 5.3's Sass (client/bootstrap.scss) is written with @import, which Dart Sass warns of; Bootstrap 6
+            // moves to @use. The app's own Sass uses @use.
+            "stylePreprocessorOptions": {
+              "sass": {
+                "silenceDeprecations": ["import"]
+              }
+            },
             "loader": {
               ".md": "text",
               // The standard advice (data/advice.ndjson), drawn into the advice page at build time.
