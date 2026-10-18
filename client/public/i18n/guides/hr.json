@@ -102,6 +102,9 @@
     "quartzAll": "Kvarc, za prašinu koja se sastoji samo od kvarca",
     "cristobaliteAll": "Kristobalit, za prašinu koja se sastoji samo od kristobalita",
     "allFree": "Kontrolna koncentracija za prašinu koja se sastoji samo od slobodnog silicijeva dioksida",
+    "bandFromTo": "Prašina s {from} % do {to} % slobodnog silicijeva dioksida (SiO₂)",
+    "bandOverTo": "Prašina s više od {from} % i do {to} % slobodnog silicijeva dioksida",
+    "bandAbove": "Prašina s više od {from} % slobodnog silicijeva dioksida",
     "recommended": "Preporučuje {abbr}",
     "value": "{value} mg/m³",
     "kind": {
@@ -160,7 +163,15 @@
       "myFlat": "Plitko posuđe",
       "mySmall": "Malo duboko posuđe",
       "myLarge": "Veliko duboko posuđe",
-      "myCooking": "Posuđe za kuhanje"
+      "myCooking": "Posuđe za kuhanje",
+      "idFlat": "Proizvodi čija unutarnja dubina ne premašuje 25 mm",
+      "idSmall": "Proizvodi unutarnje dubine veće od 25 mm, manji od 1100 mL",
+      "idLarge": "Proizvodi unutarnje dubine veće od 25 mm, od 1100 mL ili više",
+      "thFlat": "Proizvodi čija dubina ne premašuje 25 mm",
+      "thSmall": "Proizvodi dublji od 25 mm, manji od 1,1 L",
+      "thLarge": "Proizvodi dublji od 25 mm, od 1,1 L ili više",
+      "thInfant": "Posude za hranu dojenčadi do 12 mjeseci starosti",
+      "thCooking": "Posuđe za kuhanje, izrađeno da izdrži toplinu kuhanja"
     },
     "judged": {
       "average": "prosjek 6 komada",

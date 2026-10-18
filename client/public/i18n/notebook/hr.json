@@ -17,6 +17,14 @@
         "title": "Recepti",
         "text": "Sastavite glazuru od sirovina i količina, pogledajte njezinu Segerovu formulu (UMF) i spremite je."
       },
+      "import": {
+        "title": "Zalijepi recepte",
+        "text": "Zalijepite recepte s web-stranice, iz proračunske tablice ili bilježaka, provjerite što je pročitano i spremite ih."
+      },
+      "blends": {
+        "title": "Mješavine za probne pločice",
+        "text": "Pomiješajte dva, tri ili četiri svoja recepta u numerirane probne pločice, s količinama za vaganje za svaku."
+      },
       "material": {
         "title": "Sirovine",
         "text": "Dodajte vlastite sirovine, prema kemijskoj formuli ili analizi dobavljača."
@@ -99,6 +107,35 @@
     "saveFailed": "Pogreška: zahtjev poslužitelju nije uspio."
   },
   "trash": {
-    "title": "Koš za smeće"
+    "title": "Koš za smeće",
+    "lead": "Što uklonite iz svojih recepata, sirovina, bilježaka i zapisnika, ovdje čeka 30 dana. Vratite to ili izbrišite zauvijek.",
+    "listHeading": "U Košu za smeće",
+    "none": "Koš za smeće je prazan.",
+    "untitled": "Bez naslova",
+    "kinds": {
+      "recipes": "Recept",
+      "materials": "Sirovina",
+      "additives": "Dodatak",
+      "notes": "Bilješka",
+      "firing": "Zapisnik pečenja",
+      "advice": "Savjet",
+      "other": "Zapis"
+    },
+    "removedOn": "Uklonjeno {date}",
+    "goesOn": "Zauvijek se briše {date}",
+    "byApp": "Uklonila povezana aplikacija",
+    "putBack": "Vrati",
+    "putBackName": "Vrati: {name}",
+    "restored": "Vraćeno na svoje mjesto: „{name}”.",
+    "restoredAlready": "Već je vraćeno: „{name}”.",
+    "restoreFailed": "Ne možemo vratiti „{name}”. Pokušajte ponovno.",
+    "deleted": "Zauvijek izbrisano: „{name}”.",
+    "empty": "Isprazni Koš za smeće",
+    "emptyQuestion": "{count, plural, one {Želite li zauvijek izbrisati # zapis iz Koša za smeće?} few {Želite li zauvijek izbrisati sva # zapisa iz Koša za smeće?} other {Želite li zauvijek izbrisati svih # zapisa iz Koša za smeće?}} To se ne može poništiti.",
+    "emptyYes": "Da, isprazni",
+    "emptying": "Pražnjenje…",
+    "emptied": "Koš za smeće je prazan.",
+    "emptyFailed": "Ne možemo isprazniti Koš za smeće. Pokušajte ponovno.",
+    "fetchFailed": "Ne možemo učitati Koš za smeće. Pokušajte ponovno."
   }
 }

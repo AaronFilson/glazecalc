@@ -17,13 +17,17 @@
     "confirmEmail": "Potvrda adrese e-pošte – Glazecalc",
     "home": "Vaša radionička bilježnica – Glazecalc",
     "recipe": "Recepti – Glazecalc",
+    "import": "Zalijepi recepte – Glazecalc",
+    "blends": "Mješavine za probne pločice – Glazecalc",
     "material": "Sirovine – Glazecalc",
     "additive": "Dodaci – Glazecalc",
     "firingLogs": "Zapisnici pečenja – Glazecalc",
     "notes": "Bilješke – Glazecalc",
     "trash": "Koš za smeće – Glazecalc",
     "account": "Vaš račun i postavke – Glazecalc",
-    "notFound": "Stranica nije pronađena – Glazecalc"
+    "notFound": "Stranica nije pronađena – Glazecalc",
+    "shared": "Podijeljeni recept – Glazecalc",
+    "assistants": "Koristite Glazecalc iz svojeg AI asistenta – Glazecalc"
   },
   "nav": {
     "skip": "Preskoči na sadržaj",
@@ -96,9 +100,14 @@
   },
   "remove": {
     "alreadyRemoved": "Već uklonjeno: „{name}”.",
+    "trashed": "Premješteno u Koš za smeće: „{name}”.",
+    "undo": "Poništi",
+    "restored": "Vraćeno: „{name}”.",
+    "restoreFailed": "Ne možemo vratiti „{name}”. Još je u Košu za smeće.",
     "failed": "Nije moguće ukloniti. Pokušajte ponovno.",
     "question": "Želite li ukloniti „{name}”?",
     "cannotUndo": "To se ne može poništiti.",
+    "toTrash": "Možete ga vratiti iz Koša za smeće u roku od 30 dana.",
     "removing": "Uklanjanje…",
     "yes": "Da, ukloni",
     "cancel": "Odustani",

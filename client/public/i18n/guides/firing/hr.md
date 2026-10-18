@@ -3,79 +3,79 @@ title: Pečenje u jednostavnoj peći
 lead: Kako voditi pečenje u električnoj peći s Kiln-Sitterom ili ručnim sklopkama: odabir, postavljanje i očitavanje stožaca, s objavljenim programima za biskvitno i glazurno pečenje.
 ---
 
-## Cones: what they measure {#cones lang=en}
+## Stošci: što mjere {#cones}
 
 > [!NOTE]
-> Follow your kiln's own manual first. This guide gathers what cone and kiln makers publish about basic electric kilns; it does not replace the instructions for your model, and where the two differ, the manual wins.
+> Prije svega slijedite upute za uporabu svoje peći. Ovaj vodič okuplja ono što proizvođači stožaca i peći objavljuju o jednostavnim električnim pećima; ne zamjenjuje upute za vaš model, a gdje se to dvoje razlikuje, vrijede upute.
 
-A **pyrometric cone** is a small, slender pyramid made from a standardized ceramic powder. When it has had enough heat, it softens and bends over in a repeatable way. You set cones in the kiln beside the ware and read how far they bent.
+**Pirometrijski stožac**{{en: pyrometric cone}} mala je, vitka piramida od standardiziranog keramičkog praha. Kad primi dovoljno topline, omekša i savije se, svaki put na isti način. Stošce postavljate u peć pokraj predmeta i očitavate koliko su se savili.
 
-Cones measure **heatwork**, the combined effect of temperature and time. In the words of Orton, the main US cone maker, "Cones do not measure temperature alone." A cone heated slowly bends at a lower temperature than one heated fast, and a glaze behaves the same way. So Orton gives each cone's temperature for a stated heating rate over the last {{180 °F; 100 °C}} of the firing. Once a cone starts to move, it bends over a narrow range, "usually less than 40° F" (22 °C).
+Stošci mjere **toplinski učinak**{{en: heatwork}}, zajednički učinak temperature i vremena. Kako kaže Orton, glavni američki proizvođač stožaca: „Stošci ne mjere samo temperaturu.” Stožac koji se zagrijava polako savije se pri nižoj temperaturi od stošca koji se zagrijava brzo, a glazura{{en: glaze}} se ponaša jednako. Zato Orton za svaki stožac daje temperaturu pri navedenoj brzini zagrijavanja u posljednjih {{180 °F; 100 °C}} pečenja. Kad se stožac počne micati, savije se u uskom rasponu, „obično manje od 40° F” (22 °C).
 
-### Cone numbers
+### Brojevi stožaca
 
-Cone numbers run from 022, the coolest, up to 42. A leading zero marks the cooler series and is read as "oh": cone 06 ("oh-six") is cooler than cone 04, and cone 01 needs less heat than cone 1. Orton warns that it is important not to mix the two series up. The gap is large: cone 06 bends more than {{400 °F; 220 °C}} cooler than cone 6.
+Brojevi stožaca idu od 022, najhladnijeg, do 42. Nula na početku označava hladniji niz i čita se „nula”: stožac 06 („nula šest”) hladniji je od stošca 04, a stošcu 01 treba manje topline nego stošcu 1. Orton upozorava da je važno ne pomiješati ta dva niza. Razlika je velika: stožac 06 savije se na temperaturi nižoj za više od {{400 °F; 220 °C}} nego stožac 6.
 
-Table: Common firing ranges, for self-supporting cones at {{108 °F/h; 60 °C/h}}
-Label: Firing ranges
+Table: Uobičajena područja pečenja, za samostojeće stošce pri {{108 °F/h; 60 °C/h}}
+Label: Područja pečenja
 
-| Range     | Cones |                    Temperature | Typical use                              |
-| --------- | ----- | -----------------------------: | ---------------------------------------- |
-| Low fire  | 06–04 |  {{1828–1945 °F; 998–1063 °C}} | Earthenware glazes; bisque               |
-| Mid fire  | 5–6   | {{2167–2232 °F; 1186–1222 °C}} | Electric-kiln stoneware and porcelain    |
-| High fire | 9–10  | {{2300–2345 °F; 1260–1285 °C}} | Mostly gas-fired stoneware and porcelain |
+| Područje            | Stošci  |                    Temperatura | Uobičajena namjena                                                                                                 |
+| ------------------- | ------- | -----------------------------: | ------------------------------------------------------------------------------------------------------------------ |
+| Niske temperature   | 06 – 04 |  {{1828–1945 °F; 998–1063 °C}} | Glazure za zemljanu keramiku{{en: earthenware}}; biskvitno pečenje{{en: bisque}}                                   |
+| Srednje temperature | 5 – 6   | {{2167–2232 °F; 1186–1222 °C}} | Kamenina{{en: stoneware}} (visoko pečena keramika koja se gotovo potpuno sinterira) i porculan iz električnih peći |
+| Visoke temperature  | 9 – 10  | {{2300–2345 °F; 1260–1285 °C}} | Uglavnom kamenina i porculan pečeni u plinskim pećima                                                              |
 
-Suppliers in the UK, Europe, Australia and New Zealand often give a temperature in °C rather than a cone: find the nearest cone in the chart below and confirm it with a witness cone. Seger and Staffordshire cones, the older European series, should not be assumed to share Orton's numbers, so this guide uses Orton cones.
+Dobavljači u Ujedinjenom Kraljevstvu, Europi, Australiji i na Novom Zelandu često navode temperaturu u °C umjesto stošca: pronađite najbliži stožac u tablici niže i potvrdite ga kontrolnim stošcem{{en: witness cone}}, stošcem na ploči pokraj predmeta. Ne bi trebalo pretpostaviti da Segerovi i Staffordshire stošci, stariji europski nizovi, imaju iste brojeve kao Ortonovi, pa ovaj vodič koristi Ortonove stošce.
 
-### Holding adds heatwork
+### Zadržavanje dodaje toplinski učinak
 
-A **hold** (also called a **soak**) keeps the kiln at one temperature for a while. Because cones measure heatwork, a hold at the top can stand in for a hotter peak. Orton gives these rough equivalents:
+**Zadržavanje**{{en: hold}}, u engleskim izvorima i **soak**, znači da peć neko vrijeme ostaje na istoj temperaturi. Budući da stošci mjere toplinski učinak, zadržavanje na najvišoj temperaturi može zamijeniti višu završnu temperaturu. Orton daje ove približne ekvivalente:
 
-Table: What a hold at the peak is worth
-Label: Holds and heatwork
+Table: Koliko vrijedi zadržavanje na završnoj temperaturi
+Label: Zadržavanje i toplinski učinak
 
-| Hold             | Roughly the same heatwork as             |
-| ---------------- | ---------------------------------------- |
-| About 20 minutes | A peak {{18 °F; 10 °C}} hotter           |
-| 40–60 minutes    | A peak {{36 °F; 20 °C}} hotter           |
-| About 2 hours    | A peak {{54 °F; 30 °C}} hotter           |
-| 4–6 hours        | Enough to bend a cone two numbers hotter |
+| Zadržavanje    | Približno isti toplinski učinak kao               |
+| -------------- | ------------------------------------------------- |
+| Oko 20 minuta  | Završna temperatura viša za {{18 °F; 10 °C}}      |
+| 40 – 60 minuta | Završna temperatura viša za {{36 °F; 20 °C}}      |
+| Oko 2 sata     | Završna temperatura viša za {{54 °F; 30 °C}}      |
+| 4 – 6 sati     | Dovoljno da se savije stožac za dva broja topliji |
 
-Orton adds that a hold of 1–2 hours "may be sufficient to deform the next higher cone number".
+Orton dodaje da zadržavanje od 1 – 2 sata „može biti dovoljno da deformira sljedeći topliji stožac”.
 
-So a hold is never free: if you add one, expect the cones to bend further, and lower the peak to match.
+Zadržavanje dakle nikad nije besplatno: ako ga dodate, očekujte da će se stošci jače saviti i u skladu s tim snizite završnu temperaturu.
 
-### Kinds of cone
+### Vrste stožaca
 
-Orton makes four kinds. Two stand on the shelf to show what the ware received; two are for the kiln sitter.
+Orton izrađuje četiri vrste. Dvije stoje na ploči u peći i pokazuju što su predmeti primili; dvije su za Kiln-Sitter, mehaničku sklopku koja isključi peć kad se savije mali stožac.
 
-Table: Orton's four kinds of cone
-Label: Kinds of cone
+Table: Četiri Ortonove vrste stožaca
+Label: Vrste stožaca
 
-| Kind            | Used for                  | How it stands                                                                               |
-| --------------- | ------------------------- | ------------------------------------------------------------------------------------------- |
-| Self-supporting | Witness cone on the shelf | A built-in base sets the height, 1¾ in (44 mm), and the 8° lean; no holder needed           |
-| Large           | Witness cone on the shelf | Set in a plaque or a pat of clay with exactly 2 in (51 mm) showing, leaning 8° from upright |
-| Small (junior)  | Kiln sitter               | Lies across the sitter's supports; 15/16 in (24 mm) showing if stood on a shelf             |
-| Bar             | Kiln sitter               | The same powder as small cones, in an even bar shape                                        |
+| Vrsta         | Namjena                   | Kako stoji                                                                                     |
+| ------------- | ------------------------- | ---------------------------------------------------------------------------------------------- |
+| Samostojeći   | Kontrolni stožac na ploči | Ugrađeno podnožje određuje visinu, 1¾ inča (44 mm), i nagib od 8°; držač nije potreban         |
+| Veliki        | Kontrolni stožac na ploči | Postavlja se u držač ili grudicu gline tako da viri točno 2 inča (51 mm), nagnut 8° od okomice |
+| Mali (junior) | Kiln-Sitter               | Leži preko nosača u Kiln-Sitteru; ako se postavi na ploču, viri 15/16 inča (24 mm)             |
+| Štapić        | Kiln-Sitter               | Isti prah kao mali stošci, u obliku štapića jednake debljine                                   |
 
-Height matters: a ¼ in (6 mm) difference in the height of a large cone "can cause more than a half cone difference in bending". Cones do not go bad or age, and damp storage does not affect them.
+Visina je važna: razlika od ¼ inča (6 mm) u visini velikog stošca „može uzrokovati razliku u savijanju veću od pola stošca”. Stošci se ne kvare i ne stare, a vlažno skladištenje ne utječe na njih.
 
-### What "cone 6" means in practice
+### Što „stožac 6” znači u praksi
 
-The chart gives a self-supporting cone 6 as {{2232 °F; 1222 °C}}, but only when the last {{180 °F; 100 °C}} climbs at {{108 °F/h; 60 °C/h}}. Climbing at {{270 °F/h; 150 °C/h}}, the same cone bends at {{2269 °F; 1243 °C}}. Real kilns differ again: Digitalfire reports that "Most kilns reach cone 6 at 2200°F, not 2232°F". So "cone 6" means the ware received the heatwork that bends a cone 6, whatever a thermometer read at the time.
+Tablica za samostojeći stožac 6 daje {{2232 °F; 1222 °C}}, ali samo kad se u posljednjih {{180 °F; 100 °C}} temperatura penje brzinom {{108 °F/h; 60 °C/h}}. Pri brzini od {{270 °F/h; 150 °C/h}} isti se stožac savije na {{2269 °F; 1243 °C}}. Stvarne peći opet se razlikuju; Digitalfire javlja da „većina peći dosegne stožac 6 na 2200°F, a ne na 2232°F”. Dakle „stožac 6” znači da su predmeti primili toplinski učinak koji savija stožac 6, bez obzira na to što je termometar u tom trenutku pokazivao.
 
 :::orton
 
 > [!NOTE]
-> Fire by the cone, not the clock or the dial. Set a controller by cone number, and let a witness cone on the shelf confirm every firing.
+> Pecite prema stošcu, a ne prema satu ili brojčaniku. Regulator postavite prema broju stošca, a svako pečenje neka potvrdi kontrolni stožac na ploči.
 
 :::
 
 :::temperature
 
 > [!NOTE]
-> Firing by temperature, keep the end of every firing the same: the same last rate of climb, the same peak and the same hold. Then a glaze that worked once works again.
+> Kad pečete po temperaturi, neka kraj svakog pečenja bude isti: ista brzina zagrijavanja na kraju, ista završna temperatura i isto zadržavanje. Tada će glazura koja je jednom uspjela ponovno uspjeti.
 
 :::
 
@@ -596,22 +596,22 @@ Ako Kiln-Sitter isključi peć prije nego što stošci na ploči polegnu, sljede
 
 **Pirometar** je mjerač temperature koji očitava **termoelement**, toplinsku sondu kroz stijenku peći. Pokazuje koliko se brzo peć zagrijava, pa možete odabrati pravi stupac tablice stožaca. No mjeri blizu stijenke, a ne kod predmeta, i s vremenom počne odstupati. L&L napominje da termoelement tipa K nakon ponovljenih pečenja na stožac 6 može odstupati za više od {{25 °F; 14 °C}}, „razlika veća od cijelog stošca”, dok samostojeći stožac odstupa najviše {{4 °F; 2 °C}}. Orton kaže da pirometre treba povremeno ponovno umjeriti, a stošci su način da ih provjerite.
 
-## Venting, peeking and safety {#venting lang=en}
+## Odzračivanje, gledanje u peć i sigurnost {#venting}
 
-### Venting
+### Odzračivanje
 
-Early in a firing, clay and glaze give off water vapor and fumes, including carbon monoxide, and glazes can give off toxic fumes later in the firing too. L&L calls venting them "essential". With no vent system, that means the lid propped and the peepholes open in the early stages, as in the procedures above; slowing the heating during this time also helps the carbon burn out. In a kiln without a vent, Dawson, who made the sitter, also says to leave the top peephole open for the whole firing: the venting "will reduce deterioration of the kiln's metal parts and increase the life of the tube assembly". A **downdraft vent** (a powered vent fitted to the kiln) changes this. It does the venting, so Orton says the lid and peepholes stay closed for the whole firing except to check the cones, and L&L says to leave the vent on and plug the peepholes.
+Na početku pečenja glina i glazura{{en: glaze}} ispuštaju vodenu paru i plinove, uključujući ugljikov monoksid, a glazure mogu i kasnije tijekom pečenja ispuštati otrovne plinove i pare. L&L kaže da je njihovo odzračivanje „nužno”. Bez sustava za odsis to znači odškrinut poklopac i otvorene kontrolne otvore u ranim fazama, kao u gore navedenim postupcima; usporavanje zagrijavanja u tom razdoblju također pomaže da ugljik izgori. U peći bez odsisa Dawson, koji je izradio Kiln-Sitter, također kaže da gornji kontrolni otvor treba ostati otvoren tijekom cijelog pečenja: odzračivanje „smanjit će propadanje metalnih dijelova peći i produljiti vijek trajanja cijevnog sklopa”. **Donji odsis** (odsis s ventilatorom ugrađenim na peć) to mijenja. On obavlja odzračivanje, pa Orton kaže da poklopac i kontrolni otvori ostaju zatvoreni tijekom cijelog pečenja, osim kad provjeravate stošce{{en: cones}}, a L&L kaže da odsis treba ostati uključen, a kontrolni otvori začepljeni.
 
-For venting the room, and for carbon monoxide alarms, see [Safe mixing and ventilation](/guides/safe-mixing) and [Don't poison your family](/guides/home-safety).
+Za ventilaciju prostorije i detektore ugljikova monoksida pogledajte vodiče [Sigurno miješanje i ventilacija](/guides/safe-mixing) i [Ne otrujte svoju obitelj](/guides/home-safety).
 
-### While the kiln is firing
+### Dok peć peče
 
-- Look through a peephole only with IR-rated shade 3 welding glasses; sunglasses are not enough. Skutt advises twisting the plugs into place so they do not fall out.
-- Do not leave the kiln unattended beyond its expected firing time; a sitter is not a fail-safe.
-- Never fire on or near anything that burns, such as a wood floor or carpet.
-- Keep the clearances in your manual. Published figures range from 12 in (30 cm) to 3 ft (91 cm); where the manual is silent, 18 in (46 cm) from walls and 3 ft (91 cm) from anything that burns is the safest choice.
-- Keep the space around the sitter's weight clear so it can drop.
-- When the firing ends, turn the switches off and turn off the breaker as well.
+- Kroz kontrolni otvor gledajte samo kroz naočale za zavarivanje s IC zaštitom i stupnjem zatamnjenja 3; sunčane naočale nisu dovoljne. Skutt savjetuje da čepove na mjesto umetnete uvrtanjem kako ne bi ispali.
+- Ne ostavljajte peć bez nadzora dulje od očekivanog trajanja pečenja; Kiln-Sitter nije uređaj koji jamči sigurno isključivanje.
+- Nikad ne pecite na zapaljivoj podlozi ni blizu zapaljivih stvari, poput drvenog poda ili tepiha.
+- Poštujte sigurnosne razmake iz uputa za peć. Objavljene vrijednosti kreću se od 12 inča (30 cm) do 3 stope (91 cm); ako upute o tome ništa ne kažu, najsigurniji je izbor 18 inča (46 cm) od zidova i 3 stope (91 cm) od svega zapaljivog.
+- Prostor oko utega Kiln-Sittera neka bude slobodan kako bi uteg mogao pasti.
+- Kad pečenje završi, isključite sklopke, a isključite i automatski osigurač.
 
 ## Hlađenje i pražnjenje peći {#cooling}
 

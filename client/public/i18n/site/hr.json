@@ -57,9 +57,13 @@
     "stackServer": "API u TypeScriptu na platformama Node.js 24 i Express 5, s bazom MongoDB 9; provjerava ga više od 350 automatiziranih testova.",
     "stackHosting": "Radi u Dockeru na platformi Amazon Web Services, iza poslužitelja nginx, s HTTPS-om tvrtke Let's Encrypt.",
     "stackDeploy": "Objavljuje se pomoću servisa GitHub Actions: slike se izgrađuju i testiraju pri svakoj promjeni, a objava se prijavljuje u AWS bez pohranjenih ključeva.",
+    "creditsHeading": "Zahvale",
+    "credits": "Područja na Stullovu dijagramu potječu iz Glazyjeva čitanja Stullova dijagrama iz 1912. godine, autora Dereka Aua (Copyright (c) 2017 Derek Au, MIT License). <notices>Cjelovita obavijest</notices> nalazi se u izvornom kodu.",
     "whoHeading": "Tko ga je napravio",
     "who": "Glazecalc izrađuje Aaron Filson. Pronašli ste problem ili imate ideju? <issues>Otvorite prijavu na GitHubu</issues>.",
-    "studio": "Ručno rađena keramika Aarona Filsona nalazi se u studiju <studio>Updraft Pottery Studio</studio> u Tacomi u saveznoj državi Washington. Pogledajte radove i, ako vam se neki svidi, naručite ga."
+    "studio": "Ručno rađena keramika Aarona Filsona nalazi se u studiju <studio>Updraft Pottery Studio</studio> u Tacomi u saveznoj državi Washington. Pogledajte radove i, ako vam se neki svidi, naručite ga.",
+    "languagesHeading": "Jezici",
+    "languages": "Glazecalc je dostupan na ovim jezicima. Svaka poveznica otvara ovu stranicu na tom jeziku."
   },
   "privacy": {
     "title": "Privatnost",
@@ -71,8 +75,15 @@
     "contact": "Za pitanja o svojim podacima ili za ostvarivanje bilo kojeg od svojih prava pišite na <mail>privacy@glazecalcapp.com</mail>. Možete i <issues>otvoriti prijavu (issue) na GitHubu</issues>, ali prijave su javne: u njih nikad ne stavljajte svoju adresu e-pošte ni bilo što osobno. Većinu onoga što se tiče vaših podataka možete učiniti sami na <account>stranici svojeg računa</account>.",
     "storedHeading": "Što se čuva i zašto",
     "storedAccount": "<b>Vaš račun:</b> vaša adresa e-pošte i vaša lozinka, pohranjena samo kao jednosmjerni sažetak (bcrypt), nikad kao sama lozinka. Uz njih se čuvaju vaše postavke (primjerice jezik, regija i mjerne jedinice) i popis sirovina koje imate. Za račun je potrebna adresa e-pošte, za prijavu i za ponovno postavljanje zaboravljene lozinke. Kad stvorite račun, na adresu se šalje poveznica kojom potvrđujete da je adresa vaša; do tada se na nju šalje pošta samo kad to zatražite, primjerice za ponovno postavljanje lozinke.",
+    "storedPrices": "<b>Cijene, ako ih unesete:</b> koliko plaćate za svaku sirovinu, po kilogramu, i valuta u kojoj su, za cijenu jedne smjese. To su poslovni podaci, čuvaju se uz vaš račun i privatni su: nikad nisu dio recepta, pa ih ništa što podijelite ne prikazuje. „Preuzimanje mojih podataka” ih uključuje, a brisanje računa ih briše. Cijene probnog korištenja prelaze na vaš račun zajedno s njegovim zapisima, za sirovine kojima niste unijeli cijenu, kad su oboje u istoj valuti.",
     "storedEmailChange": "<b>Promjena adrese e-pošte:</b> datum zadnje promjene vaše adrese, kako se zahtjev za isključivanje dvostupanjske prijave nikada ne bi prihvatio s nove adrese u 30 dana nakon promjene.",
     "storedSignIn": "<b>Dvostupanjska prijava, ako je uključite:</b> je li uključena; ključ koji vaša aplikacija za provjeru autentičnosti dijeli s Glazecalcom, šifriran; za svaki pristupni ključ njegov javni ključ (kojim se samim nije moguće prijaviti) s ID-om i podacima koje mu dodijeli vaš uređaj, naziv koji ste mu dali te kada je dodan i zadnji put korišten; vaši kodovi za oporavak, samo kao jednosmjerni sažetak s ključem, pa ih nitko ne može pročitati natrag; i, ako netko unese vašu lozinku, a ne dovrši drugi korak, kada vam je Glazecalc zadnji put poslao e-poruku o tome (najviše jednom dnevno). Dok se prijavljujete, između lozinke i drugog koraka, poslužitelj 5 minuta čuva bilješku o prijavi, a stranica drži kratak token samo u memoriji: bez novog kolačića, ništa u pohrani vašeg preglednika.",
+    "storedSaved": "<b>Što spremate:</b> vaši recepti, sirovine, dodaci, bilješke, zapisnici pečenja i savjeti, onako kako ste ih napisali. Vidite ih samo vi, osim ako recept ne podijelite poveznicom.",
+    "storedTrash": "<b>Koš za smeće i ranije verzije:</b> što uklonite s popisa čeka u Košu za smeće cjelovito, da to možete vratiti; a svaka promjena koju spremite u zapis čuva zapis onakvim kakav je bio neposredno prije, da biste promjenu mogli poništiti.",
+    "storedShares": "<b>Recepti koje dijelite poveznicom, ako ih dijelite:</b> koji recept, kad je izrađena njegova poveznica i prikazuje li napomene recepta, s jednosmjernim sažetkom (hash) poveznice (nikad samom poveznicom). Svatko tko ima poveznicu može vidjeti recept onakav kakav je sada, s njegovom Segerovom formulom, i njegove napomene ako ste ih odlučili prikazati; nikad vašu e-adresu, vaš račun ni cijene. Podijeljeni recepti drže se izvan tražilica, a poveznica nikad ne dolazi u zapise poslužitelja. Da bi se spriječila zlouporaba, podijeljeni recepti otvoreni s pojedine IP adrese broje se, u memoriji, 15 minuta. Probno korištenje ne može dijeliti.",
+    "storedTokens": "<b>Pristupni tokeni i povezane aplikacije, ako ih izradite ili odobrite:</b> za svaki njegov naziv, što smije raditi, jednosmjerni sažetak (hash) tokena (nikad sam token) i njegova zadnja 4 znaka, te kad je izrađen, zadnji put korišten, kad istječe i kad je opozvan.",
+    "storedActivity": "<b>Što su tokeni i aplikacije radili:</b> redak za svaki zapis koji je pristupni token ili povezana aplikacija izradila, promijenila, premjestila u Koš za smeće, vratila ili poništila: kad, koji token ili aplikacija, što je učinila i naslov zapisa, skraćen. Nikad tekst bilješke ni išta drugo u zapisu. Promjene koje izvršite na web-stranici nisu navedene.",
+    "storedLimits": "<b>Ograničenja učestalosti:</b> da se spriječe pogađanje i skripte izvan kontrole, broje se pokušaji prijave, registracije, zahtjevi za ponovno postavljanje i probna korištenja po IP adresi ili računu, pristupni tokeni koji ne rade po IP adresi, zapisi koje svaki pristupni token premješta u Koš za smeće po tokenu, otvoreni podijeljeni recepti i poveznice za dijeljenje koje ništa ne otvaraju po IP adresi te zahtjevi prema alatima za AI asistente (MCP): 60 u minuti i 2000 na dan po IP adresi, ili 120 u minuti i 5000 na dan po računu kad se koristi pristupni token, s najviše 10 zamjena ili podudaranja u minuti.",
     "storedTrial": "<b>Probno korištenje (Isprobajte odmah):</b> bez adrese e-pošte i lozinke, samo izmišljeno ime kao što je „speckled quiet kilns”. Ako se tijekom probnog korištenja u istom pregledniku prijavite u račun, ono što ste napravili u probnom korištenju prelazi u račun.",
     "storedResets": "<b>Poveznice za ponovno postavljanje lozinke i za adresu e-pošte:</b> koji je račun zatražio poveznicu, kada, adresa na koju je poslana poveznica za potvrdu adrese i otisak svake poveznice (ne sama poveznica).",
     "storedLogs": "<b>Zapisi:</b> web-poslužitelj bilježi svaki zahtjev: vašu IP adresu, vrijeme, zatraženu stranicu i naziv vašeg preglednika. Aplikacija bilježi pogreške sa stranicom na kojoj su se dogodile, nikad s vašom adresom e-pošte.",
@@ -95,6 +106,11 @@
     "choiceNoWarranty": "Glazecalc se pruža takav kakav jest, bez jamstva. Njegovi održavatelji ne preuzimaju nikakvu odgovornost, ni pravnu ni drugu, za vašu odluku da stvorite račun ni za to gdje se čuvaju njegovi podaci.",
     "keptHeading": "Koliko dugo se čuva",
     "keptAccount": "<b>Vaš račun i ono što spremite:</b> dok ih ne izbrišete. Računi se ne uklanjaju zbog nekorištenja.",
+    "keptTrash": "<b>Koš za smeće i ranije verzije:</b> uklonjeni zapis 30 dana nakon uklanjanja ili dok ga ne izbrišete zauvijek ili ne ispraznite Koš za smeće; ranije verzije 90 dana, i to samo zadnjih 20 svakog zapisa (i ona prije promjena pristupnog tokena), ali nikad dulje od samog zapisa: dok je u Košu za smeće, njegove verzije odlaze s njim. Oboje se odmah briše kad izbrišete račun.",
+    "keptShares": "<b>Poveznice za dijeljenje:</b> dok ne prestanete dijeliti recept, ne izradite novu poveznicu za njega, ne premjestite ga u Koš za smeće ili ne izbrišete račun. Vraćanje recepta iz Koša za smeće ne dijeli ga ponovno. Ponovno postavljanje lozinke ili odjava sa svih uređaja također zaustavlja sve vaše poveznice; promjena lozinke ne zaustavlja.",
+    "keptTokens": "<b>Pristupni tokeni i povezane aplikacije:</b> svaki do 30 dana nakon isteka (svaki istječe, najkasnije u roku od godinu dana) ili dok ne izbrišete račun. Ponovno postavljanje lozinke ili „Odjava sa svih uređaja” zaustavlja ih sve odjednom.",
+    "keptActivity": "<b>Što su tokeni i aplikacije radili:</b> 90 dana ili dok ne izbrišete račun.",
+    "keptLimits": "<b>Ograničenja učestalosti:</b> brojači se čuvaju samo u memoriji poslužitelja, od 1 minute do 24 sata, i gube se kad se on ponovno pokrene.",
     "keptTrial": "<b>Probno korištenje:</b> 14 dana od početka, a zatim se briše sa svime što sadrži, osim ako stvorite račun da biste ga zadržali.",
     "keptResets": "<b>Poveznice za ponovno postavljanje lozinke i za adresu e-pošte:</b> poveznica za ponovno postavljanje lozinke vrijedi 30 minuta, a njezin se zapis briše nakon otprilike sat vremena; poveznica za potvrdu adrese vrijedi i čuva se 24 sata.",
     "keptSignIn": "<b>Dvostupanjska prijava:</b> svaka aplikacija za provjeru autentičnosti, pristupni ključ i skup kodova za oporavak, dok ih ne uklonite, isključite dvostupanjsku prijavu ili izbrišete račun. Prijava koja čeka drugi korak briše se nakon 5 minuta, a aplikacija ili pristupni ključ koje ste počeli dodavati, a niste dovršili, nakon najviše 10.",
@@ -112,6 +128,7 @@
     "rightsAsk": "Za sve ostalo, primjerice ako tražite da se vaši podaci ne koriste dok se ne ispravi pogreška ili ako prigovarate načinu na koji se koriste, pišite na <mail>privacy@glazecalcapp.com</mail>. To je besplatno, a odgovor ćete dobiti u roku od mjesec dana. Od vas će se tražiti samo da pokažete da je račun vaš, prijavom ili otvaranjem poveznice poslane na njegovu adresu, a nikad osobna isprava.",
     "rightsComplain": "Ako niste zadovoljni, možete podnijeti pritužbu tijelu za zaštitu podataka: u EU-u <edpb>tijelu u svojoj zemlji</edpb>, a u Ujedinjenom Kraljevstvu uredu <ico>Information Commissioner’s Office</ico>.",
     "storageHeading": "Kolačići i pohrana u pregledniku",
+    "storageIntro": "Glazecalc postavlja dva kolačića, drugi samo dok se prijavljujete putem Googlea ili GitHuba, i čuva nekoliko malih vrijednosti u vašem pregledniku. Svaki postoji zbog nečega što ste zatražili: ostanka prijavljenima, prijave putem Googlea ili GitHuba ili pamćenja vašeg odabira. Nijedan vas ne prati i nijedan se ne dijeli, pa zakon ne zahtijeva prethodno pitanje i nema bannera za kolačiće.",
     "storageLabel": "Kolačići i pohrana u pregledniku",
     "storageName": "Naziv",
     "storagePurpose": "Čemu služi",
@@ -150,6 +167,7 @@
         "lasts": "Dok ne izbrišete pohranu preglednika."
       },
       "print": {
+        "purpose": "Vaši zadnji odabiri za ispis recepta: cijeli recept, smjesa ili radni list, i veličina smjese.",
         "lasts": "Dok ne izbrišete pohranu preglednika."
       },
       "token": {
@@ -163,12 +181,19 @@
       "reloadedFor": {
         "purpose": "Nakon objave nove verzije stranice, koja je stranica ponovno učitana i kada, kako bi se stranica ponovno učitala najviše jednom u minuti.",
         "lasts": "Dok ne zatvorite karticu."
+      },
+      "oauthCookie": {
+        "purpose": "Samo dok se prijavljujete putem Googlea ili GitHuba: povezuje odgovor usluge s vašim preglednikom, pa nitko drugi ne može dovršiti vašu prijavu ni pokrenuti je umjesto vas. Skripte na stranici ne mogu ga pročitati.",
+        "lasts": "Postavlja se kad pritisnete „Nastavi s Googleom” ili „Nastavi s GitHubom” ili povežete jedan od njih na stranici svojeg računa. Uklanja se kad se prijava dovrši ili nakon 10 minuta."
       }
     },
     "childrenHeading": "Djeca",
     "children": "Glazecalc je alat za lončare i nije namijenjen djeci.",
     "changesHeading": "Promjene",
-    "changes": "Ako se ova obavijest promijeni, promijenit će se i datum na vrhu stranice."
+    "changes": "Ako se ova obavijest promijeni, promijenit će se i datum na vrhu stranice.",
+    "storedProviders": "<b>Google ili GitHub, ako se prijavljujete jednim od njih:</b> identifikator koji vam usluga sama dodjeljuje (broj ili kod koji se nikad ne mijenja), kad ste je povezali i kad ste se zadnji put njome prijavili, te ima li vaš račun vlastitu lozinku. Ništa drugo od usluge se ne čuva: ni vaše ime, ni vaša slika, ni ključ za vaš tamošnji račun. Dok se prijavljujete, poslužitelj čuva bilješku o prijavi, s e-adresom koju usluga navodi kao vašu kad je potrebna: za novi račun, gdje postaje e-adresa vašeg računa, ili, kad račun Glazecalc već ima tu e-adresu, da bi se usluga povezala s njim nakon što se prijavite u taj račun. Bilješka, i e-adresa u njoj, briše se u roku od oko 10 minuta.",
+    "providers": "<b>Prijava putem Googlea ili GitHuba</b> vaš je izbor i događa se samo kad pritisnete njezin gumb. Vaš preglednik tada odlazi na Google ili GitHub, koji Glazecalcu šalju svoj identifikator za vas i vašu e-adresu. Svaki je zasebna tvrtka, odgovorna za ono što s njom dijelite prema vlastitoj politici privatnosti. Nijedna skripta ni slika ni s jednog od njih ne učitava se na stranicama Glazecalca.",
+    "keptProviders": "<b>Google ili GitHub:</b> svaka veza dok je ne prekinete ili ne izbrišete račun. Prijava u tijeku briše se nakon 10 minuta."
   },
   "notFound": {
     "heading": "Stranica nije pronađena",
@@ -194,5 +219,27 @@
     "standardFetchFailed": "Došlo je do pogreške pri dohvaćanju savjeta s poslužitelja.",
     "saved": "Savjet je uspješno dodan.",
     "saveFailed": "Došlo je do pogreške pri slanju savjeta."
+  },
+  "assistants": {
+    "title": "Koristite Glazecalc iz svojeg AI asistenta",
+    "lead": "AI asistenti poput Claudea, GitHub Copilota, Cursora i Geminija mogu izravno koristiti Glazecalcove izračune, putem Model Context Protocola (MCP).",
+    "whatHeading": "Što može raditi",
+    "what": "Bez računa asistent može tražiti sirovine u biblioteci, izračunati Segerovu formulu recepta, usporediti je s granicama za njegovo pečenje, predložiti zamjene za sirovine koje se više ne proizvode, ponovno složiti recept od sirovina koje navedete, pretvarati između stožaca i temperatura te pretraživati i čitati vodiče. Ništa što pošalje ne sprema se; kao i za svaku stranicu, u zapisima web-poslužitelja 14 dana se bilježe IP adresa, vrijeme i adresa svakog zahtjeva (nikad ono što je poslano).",
+    "mine": "S pristupnim tokenom sa stranice vašeg <account>računa</account> može čitati i vaše vlastite recepte, sirovine, bilježnicu, zapisnike pečenja i sirovine koje imate. Token može samo čitati: nikad ništa ne mijenja ni uklanja.",
+    "caution": "Provjere granica upozorenja su prema objavljenim granicama, jednako kao u aplikaciji, a ne dokaz da je glazura sigurna za hranu. Svaku glazuru isprobajte pečenjem, a glazure za površine u dodiru s hranom dajte ispitati na otpuštanje metala.",
+    "addressHeading": "Adresa",
+    "address": "Dajte svojem asistentu ovu adresu, koristeći prijenos Streamable HTTP:",
+    "token": "Da biste mu dopustili čitanje vlastitih zapisa, izradite token na stranici svojeg <account>računa</account> i kopirajte ga. Vaš ga asistent šalje u zaglavlju Authorization, kao Bearer iza kojeg slijedi token. Držite ga izvan datoteka koje dijelite ili spremate u repozitorij, kao što biste činili s lozinkom.",
+    "clientsHeading": "Dodavanje Glazecalca vašem asistentu",
+    "claudeCode": "U terminalu:",
+    "claudeCodeToken": "S pristupnim tokenom, da čita i vaše vlastite zapise:",
+    "vscode": "U .vscode/mcp.json u mapi ili u vašim korisničkim postavkama. VS Code traži token jednom i drži ga skrivenim; izostavite headers i inputs da biste koristili samo alate koji ne trebaju račun:",
+    "cursor": "U ~/.cursor/mcp.json ili .cursor/mcp.json u projektu. Izostavite headers da biste koristili samo alate koji ne trebaju račun:",
+    "gemini": "U ~/.gemini/settings.json. Izostavite headers da biste koristili samo alate koji ne trebaju račun:",
+    "appsHeading": "Claude, ChatGPT i druge aplikacije",
+    "apps": "Dodajte prilagođeni konektor s adresom iznad. Te aplikacije još ne mogu poslati pristupni token, pa dobivaju alate koji ne trebaju račun. Pristup vašim vlastitim zapisima iz njih doći će s prijavom iz aplikacije.",
+    "stopHeading": "Prekid pristupa",
+    "stop": "Opozovite token na stranici svojeg <account>računa</account> u bilo kojem trenutku. Svaki token prestaje raditi na dan koji ste odabrali, a svi prestaju odjednom ako ponovno postavite lozinku ili se odjavite sa svih uređaja.",
+    "limits": "Svaka adresa može poslati 60 zahtjeva u minuti i 2000 na dan; račun koji koristi token, 120 u minuti i 5000 na dan. Zamjene i podudaranja ograničeni su na 10 u minuti."
   }
 }
