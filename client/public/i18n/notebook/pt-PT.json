@@ -88,7 +88,15 @@
     "chooseField": "Escolha um campo a adicionar e, depois, clique em «Adicionar o campo».",
     "fetchFailed": "Ocorreu um erro ao obter as informações dos registos de cozedura.",
     "saved": "Registo de cozedura adicionado ao servidor com sucesso.",
-    "saveFailed": "Erro: o pedido ao servidor falhou."
+    "saveFailed": "Erro: o pedido ao servidor falhou.",
+    "recipesHeading": "Receitas cozidas nesta cozedura",
+    "noRecipes": "Ainda não há receitas associadas.",
+    "recipesFailed": "Não foi possível obter as suas receitas, por isso não é possível associar nenhuma agora.",
+    "pickRecipe": "Uma receita cozida nesta cozedura",
+    "linkRecipe": "Associar a receita",
+    "unlink": "Desassociar",
+    "unlinkRecipe": "Desassociar {title}",
+    "linkFailed": "Não foi possível guardar a associação."
   },
   "notes": {
     "title": "Notas",

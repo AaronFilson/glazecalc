@@ -165,69 +165,69 @@ Számítson eltérésekre: az Orton szerint „Jellemzően legalább egy gúlán
 
 :::orton
 
-## The kiln sitter {#kiln-sitter lang=en}
+## A Kiln-Sitter {#kiln-sitter}
 
-A **kiln sitter** is the mechanical switch, on the outside of many basic and older kilns, that turns the kiln off when a small cone bends. The best known is the Dawson Kiln-Sitter. It makes firing easier, but it is a convenience, not a safety device.
+A **Kiln-Sitter** (gúlás lekapcsoló) sok egyszerű és régebbi kemence külső oldalán található mechanikus kapcsoló, amely lekapcsolja a kemencét, amikor egy kis gúla{{en: cone}} meghajlik. A legismertebb a Dawson Kiln-Sitter. Megkönnyíti az égetést, de kényelmi eszköz, nem biztonsági berendezés.
 
-### How it works
+### Hogyan működik
 
-A porcelain tube reaches into the kiln. At its end, a small cone or a bar lies across two metal supports, under a **sensing rod** that pivots like a seesaw. Outside the kiln, the other end of the rod holds up a weight by a small claw. When the cone softens and bends to about 90°, the rod drops far enough to release the weight, the weight falls, and the power to the elements is cut.
+Egy porcelán cső nyúlik be a kemencébe. A végén egy kis gúla vagy egy rúd fekszik keresztben két fém támaszon, egy mérleghintaként billenő **érzékelőrúd** alatt. A kemencén kívül a rúd másik vége egy kis kapocs segítségével feltart egy súlyt. Amikor a gúla meglágyul, és körülbelül 90°-ig meghajlik, a rúd annyira lesüllyed, hogy elengedi a súlyt, a súly leesik, és a fűtőszálak áramellátása megszakad.
 
-Small cones and bars "give equivalent heat treatment". Orton notes that many beginners choose bars, because their even shape makes it easy to place them the same way every time. A small cone tapers, so where it sits matters: with its thin part under the rod the kiln shuts off cooler, and with its thick part hotter, a shift of "as much as 1/2 cone".
+A kis gúlák és a rudak „egyenértékű hőkezelést adnak”. Az Orton megjegyzi, hogy sok kezdő a rudakat választja, mert egyenletes alakjuk miatt könnyű őket minden alkalommal ugyanúgy elhelyezni. A kis gúla az egyik vége felé elvékonyodik, ezért számít, hogyan fekszik: ha a vékony része van a rúd alatt, a kemence alacsonyabb hőmérsékleten kapcsol le, ha a vastag része, magasabbon, és az eltolódás „akár 1/2 gúlányi” is lehet.
 
-### Which cone goes in the sitter
+### Melyik gúla kerül a Kiln-Sitterbe
 
-Sources disagree. Dawson, who made the sitter, says to use the same number as the firing cone on the shelf, and to go one number hotter only if the shelf cone stays unbent. L&L says to use one number hotter than the shelf cones, because the sitter sits near the wall and the elements, gets more heat, and tends to shut off early. Orton settles the principle: "The shelf cone is the final judge of the firing process, not the Kiln-Sitter cone or bar."
-
-> [!NOTE]
-> Our starting point: put a small cone of the same number as your target in the sitter, with a cone pack on the shelf. If the shelf firing cone is under-bent when the kiln shuts off, go one number hotter in the sitter next time, or set the thicker part of the cone under the rod. If it is over-bent, do the opposite.
-
-### Setting it up, and checks before every firing
-
-Dawson's procedure, which doubles as a check before every firing:
-
-1. Turn all the switches off. Check that the sensing rod moves freely, sits centered in the tube and is not bent or corroded. If it is sluggish, Dawson says to replace the tube assembly.
-2. Brush a thin coat of high-fire **kiln wash** (a coating that stops melted material sticking) onto the cone supports and the rod where it touches the cone. Never put wash on the cone or the porcelain tube.
-3. Load shelves and ware at least 1 in (25 mm) above or below the tube, so nothing can touch, fall against or block it.
-4. Lift the weight, press the claw down onto the trigger, and lay the cone or bar flat on the supports against the metal step, as your sitter's manual shows, the same way every time. Check it again before closing the lid: "AN IMPROPERLY PLACED CONE OR BAR COULD CAUSE AN OVERFIRING."
-5. Set the limit timer and push in the plunger until it locks. Keep the kiln level and the space under the weight clear, so the weight can fall.
-
-### The limit timer
-
-Many sitters, including Dawson's LT models, have a **limit timer**: a clock that turns the kiln off after a set time, as a backup "in case the KILN-SITTER fails". It should always be set longer than the firing is expected to take. Sources set the margin differently:
-
-Table: How long to set the limit timer
-Label: Limit timer settings
-
-| Source    | Setting                                                                                                                      |
-| --------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| Dawson    | ½ hour longer than the expected firing time until you know the kiln, later as little as ¼ hour; never set it beyond 20 hours |
-| L&L       | Very high the first time, noting how long the firing takes; after that, about 1 hour longer                                  |
-| Bracker's | 30 minutes to 1 hour longer than the firing time                                                                             |
+A források nem értenek egyet. A Kiln-Sitter gyártója, a Dawson szerint ugyanolyan számú gúlát kell használni, mint az égetőlapon álló célgúla, és csak akkor kell eggyel magasabb hőfokúra váltani, ha az égetőlapon álló gúla nem hajlik meg. Az L&L szerint eggyel magasabb hőfokú gúlát kell használni, mint az égetőlapon állók, mert a Kiln-Sitter a fal és a fűtőszálak közelében ül, több hőt kap, és hajlamos korán lekapcsolni. Az elvet az Orton rögzíti: „Az égetési folyamat végső bírája az égetőlapon álló gúla, nem a Kiln-Sitter gúlája vagy rúdja.”
 
 > [!NOTE]
-> Our starting point: generous the first time (within the dial's 20 hours), then ½ to 1 hour longer than the time you recorded. The timer also tells you how long a firing took: set at 7 and ending at 1 means 6 hours.
+> Kiindulópontunk: tegyen a Kiln-Sitterbe egy, a célgúlával azonos számú kis gúlát, az égetőlapra pedig egy gúlasort{{en: cone pack}}. Ha a kemence lekapcsolásakor az égetőlapon álló célgúla nem hajlott meg eléggé, legközelebb tegyen a Kiln-Sitterbe eggyel magasabb hőfokú gúlát, vagy a gúla vastagabb részét helyezze a rúd alá. Ha túlságosan meghajlott, tegye az ellenkezőjét.
 
-### When it shuts off early or late
+### Beállítás és ellenőrzés minden égetés előtt
 
-After each firing, read the sitter cone beside the shelf cones.
+A Dawson eljárása, amely egyben minden égetés előtti ellenőrzésként is szolgál:
 
-Table: Reading the sitter after a firing
-Label: Kiln sitter problems
+1. Kapcsoljon ki minden kapcsolót. Ellenőrizze, hogy az érzékelőrúd szabadon mozog-e, középen helyezkedik-e el a csőben, és hogy nem görbült-e el, nem korrodálódott-e. Ha nehezen mozog, a Dawson szerint ki kell cserélni a csőegységet.
+2. Ecsettel vigyen fel vékony réteg magas tüzű **lapkencét** (olyan bevonatot, amely megakadályozza, hogy a megolvadt anyag odaragadjon) a gúlatámaszokra és a rúdnak arra a részére, ahol a gúlához ér. Soha ne tegyen lapkencét a gúlára vagy a porcelán csőre.
+3. Az égetőlapokat és az árut legalább 1 hüvelykkel (25 mm) a cső fölé vagy alá rakja be, hogy semmi ne érhessen hozzá, ne dőlhessen neki, és ne zárhassa el.
+4. Emelje fel a súlyt, nyomja le a kapcsot a kioldóra, és fektesse a gúlát vagy a rudat laposan a támaszokra, a fém lépcsőnek ütköztetve, ahogy a Kiln-Sitter kezelési útmutatója mutatja, minden alkalommal ugyanúgy. A fedél lezárása előtt ellenőrizze újra: „A ROSSZUL ELHELYEZETT GÚLA VAGY RÚD TÚLÉGETÉST OKOZHAT.”
+5. Állítsa be a biztonsági időkapcsolót, és nyomja be az indítógombot, amíg nem rögzül. A kemence álljon vízszintesen, és a súly alatti hely legyen szabad, hogy a súly le tudjon esni.
 
-| What you see                                    | Likely cause                                                                                           | What to do                                                       |
-| ----------------------------------------------- | ------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------- |
-| Sitter tripped, shelf firing cone under-bent    | The sitter ran hotter than the shelf (it sits near the wall)                                           | One cone hotter in the sitter, or the thicker part under the rod |
-| Sitter cone sagged well past 90°                | The kiln climbed too fast near the end                                                                 | Lower the switch settings, so the climb is slower (Dawson)       |
-| Sitter cone did not bend, or melted into a blob | The sitter itself: poor adjustment, a bent or corroded rod, or something lodged in or against the tube | Check and adjust the sitter by its manual before firing again    |
-| Early or late every time                        | Out of adjustment, or a worn rod                                                                       | Check with the firing gauge; move the trigger plate              |
+### A biztonsági időkapcsoló
 
-To check the adjustment, Dawson uses a **firing gauge** that holds the rod where a fully bent cone would leave it; there should then be "1/16th-inch clearance" (about 1.6 mm) at the claw. Check it every 30 firings. Ceramics Monthly's rule: if the kiln shuts off early, move the trigger plate up slightly; if late, move it down slightly. Whatever the sitter does, "Always trust large witness cones over small sitter cones."
+Sok Kiln-Sitteren, köztük a Dawson LT modelljein, van **biztonsági időkapcsoló** (limit timer): óra, amely a beállított idő után lekapcsolja a kemencét, tartalékként arra az esetre, „ha a KILN-SITTER meghibásodik”. Mindig hosszabb időre kellene beállítani, mint amennyi ideig az égetés várhatóan tart. A források különböző ráhagyást adnak meg:
+
+Table: Mennyi időre állítsa a biztonsági időkapcsolót
+Label: Időkapcsoló beállítása
+
+| Forrás    | Beállítás                                                                                                                                        |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Dawson    | ½ órával hosszabb a várható égetési időnél, amíg nem ismeri a kemencét, később akár csak ¼ órával hosszabb; soha ne állítsa 20 óránál hosszabbra |
+| L&L       | Első alkalommal nagyon hosszú idő, az égetés időtartamát feljegyezve; utána körülbelül 1 órával hosszabb                                         |
+| Bracker’s | 30 perc és 1 óra közötti idővel hosszabb az égetési időnél                                                                                       |
+
+> [!NOTE]
+> Kiindulópontunk: először bőkezűen (a számlap 20 óráján belül), utána ½–1 órával hosszabbra, mint a feljegyzett idő. Az időkapcsoló azt is megmutatja, mennyi ideig tartott az égetés: ha 7-re állította, és 1-en állt meg, az 6 órát jelent.
+
+### Ha túl korán vagy túl későn kapcsol le
+
+Minden égetés után olvassa le a Kiln-Sitter gúláját az égetőlapon álló gúlákkal együtt.
+
+Table: A Kiln-Sitter leolvasása égetés után
+Label: A Kiln-Sitter hibái
+
+| Amit lát                                                                    | Valószínű ok                                                                                                       | Teendő                                                                                    |
+| --------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------- |
+| A Kiln-Sitter lekapcsolt, az égetőlapon álló célgúla nem hajlott meg eléggé | A Kiln-Sitter több hőt kapott, mint az égetőlap (a fal közelében ül)                                               | Eggyel magasabb hőfokú gúla a Kiln-Sitterbe, vagy a vastagabb rész a rúd alá              |
+| A Kiln-Sitter gúlája jóval 90°-on túl lehajlott                             | A kemence a végén túl gyorsan fűtött fel                                                                           | Állítsa alacsonyabbra a kapcsolókat, hogy lassabb legyen a felfűtés (Dawson)              |
+| A Kiln-Sitter gúlája nem hajlott meg, vagy csomóvá olvadt                   | Maga a Kiln-Sitter: rossz beállítás, elgörbült vagy korrodált rúd, vagy valami beszorult a csőbe, vagy nekiszorult | Újabb égetés előtt ellenőrizze és állítsa be a Kiln-Sittert a kezelési útmutatója szerint |
+| Mindig túl korán vagy túl későn                                             | Elállítódott, vagy kopott a rúd                                                                                    | Ellenőrizze a beállítósablonnal; állítsa át a kioldólapot                                 |
+
+A beállítás ellenőrzéséhez a Dawson **beállítósablont** használ, amely ott tartja a rudat, ahol egy teljesen meghajlott gúla hagyná; a kapocsnál ekkor „1/16 hüvelyk hézag” (körülbelül 1,6 mm) legyen. 30 égetésenként ellenőrizze. A Ceramics Monthly szabálya: ha a kemence túl korán kapcsol le, tolja kissé feljebb a kioldólapot; ha túl későn, tolja kissé lejjebb. Bármit tesz is a Kiln-Sitter, „Mindig a nagy ellenőrző gúláknak{{en: witness cones}} higgyen, ne a Kiln-Sitter kis gúláinak.”
 
 > [!WARNING]
-> **A kiln sitter is not a safety device.** Dawson's manual says it "is NOT intended to perform as a fail-safe shut-off device and your kiln should NOT be left unattended beyond the estimated firing time." Something as simple as greenware falling against the tube "might cause an over-firing". Be there to check the kiln when it should be finishing, and never fire it over or near anything that burns, such as a wood floor or carpet.
+> **A Kiln-Sitter nem biztonsági berendezés.** A Dawson kezelési útmutatója szerint „NEM arra szolgál, hogy hibabiztos lekapcsoló berendezésként működjön, és a kemencéjét NEM szabadna felügyelet nélkül hagyni a becsült égetési időn túl.” Akár egy olyan egyszerű dolog is, mint a csőnek dőlő nyers áru{{en: greenware}}, „túlégetést okozhat”. Legyen ott, és ellenőrizze a kemencét, amikor az égetésnek be kellene fejeződnie, és soha ne égessen semmi éghető fölött vagy közelében, amilyen például a fapadló vagy a szőnyeg.
 
-The sitter is built for firings "up to and including Cone 8". It cannot hold a temperature or cool slowly by itself. With practice and a log, though, you can "become the controller", as Digitalfire puts it: watch the cones and turn the switches by hand.
+A Kiln-Sitter „a 8-as gúlával bezárólag” végzett égetésekre készült. Magától nem tud hőmérsékletet tartani, sem lassan hűteni. Gyakorlattal és égetési naplóval azonban „vezérlővé válhat”, ahogy a Digitalfire fogalmaz: figyelje a gúlákat, és kézzel állítsa a kapcsolókat.
 
 :::
 

@@ -361,7 +361,8 @@
     "heading": "Farer",
     "intro": "Som hver råvares post angiver dem; standardbibliotekets stammer fra leverandørernes sikkerhedsdatablade.",
     "line": "<b>{names}:</b> {hazards}",
-    "unknown": "{count, plural, one {Der er ikke angivet nogen farer for {list}: se sikkerhedsdatabladet, der følger med.} other {Der er ikke angivet nogen farer for {list}: se de sikkerhedsdatablade, der følger med.}}"
+    "unknown": "{count, plural, one {Der er ikke angivet nogen farer for {list}: se sikkerhedsdatabladet, der følger med.} other {Der er ikke angivet nogen farer for {list}: se de sikkerhedsdatablade, der følger med.}}",
+    "safety": "Tørre glasurråvarer giver støv: hold det ude af lungerne, også støv fra råvarer, der ikke er klassificeret som farlige: se <mixing>Sikker blanding og ventilation</mixing>, og <home>Forgift ikke familien</home>, hvis der er børn eller kæledyr i nærheden. Hvor en råvares sikkerhedsdatablad siger mere, så følg det."
   },
   "compare": {
     "heading": "Sammenlign to opskrifter",
@@ -590,7 +591,10 @@
     "guidance": "Det er retningslinjer og ikke en afgørelse af bestået eller ikke bestået: en glasur uden for dem kan være fin, og en inden for dem kan stadig krakelere, afgive metaller eller mislykkes. Test den.",
     "source": "Kilde:",
     "saveFailed": "Valget af grænsesæt kunne ikke gemmes i kontoen, så det tidligere grænsesæt er stadig det, der bruges.",
-    "ownLimits": "Disse forslag bruger Glazecalcs egne grænser, ikke {name}."
+    "ownLimits": "Disse forslag bruger Glazecalcs egne grænser, ikke {name}.",
+    "firingFromBlock": "Fra opskriftens brænding ({bands})",
+    "bothBands": "Opskriftens brænding omfatter {bands}, så hver kontrolleres, side om side: en glasur opfører sig sjældent ens i begge ender.",
+    "fromFiring": "Tallene gælder opskriftens brænding: {band}. Vælg en brænding ovenfor for at kontrollere en anden."
   },
   "stull": {
     "heading": "Stull-diagram",
@@ -714,7 +718,8 @@
     "notSaved": "Intet blev gemt: {problem}",
     "stopped": "Gemte {saved} af {count}. Resten blev ikke gemt: {problem}",
     "saved": "{count, plural, one {Gemte # opskrift.} other {Gemte # opskrifter.}}",
-    "openRecipes": "Åbn opskrifterne"
+    "openRecipes": "Åbn opskrifterne",
+    "firingRead": "Brænding aflæst fra noterne: {firing}"
   },
   "blends": {
     "title": "Blandinger til prøvebrikker",
@@ -847,5 +852,115 @@
     "retry": "Prøv igen",
     "about": "Glazecalc er en gratis glasurberegner til keramikere.",
     "aboutLink": "Om Glazecalc"
+  },
+  "firing": {
+    "heading": "Brænding",
+    "whatIsCone": "Hvad betyder kegle?",
+    "scale": "Skala",
+    "scales": {
+      "orton": "Ortonkegler",
+      "sk": "SK-kegler (JIS)",
+      "temperature": "Temperatur"
+    },
+    "groups": {
+      "usual": "Kegler 022 til 13",
+      "half": "Halve kegler",
+      "above": "Kegler 14 til 42 (sjældne i keramik)"
+    },
+    "coneLabel": "Kegle",
+    "lowCone": "Fra kegle",
+    "highCone": "Til kegle",
+    "noHigh": "Ingen øvre kegle",
+    "notStated": "Ikke angivet",
+    "peak": "Sluttemperatur ({unit})",
+    "lowTemperature": "Fra ({unit})",
+    "highTemperature": "Til ({unit})",
+    "rangeToggle": "Et interval",
+    "testedLegend": "Testet ved: sæt kryds ved hver kegle, glasuren er brændt til",
+    "atmosphere": "Atmosfære",
+    "process": "Metode",
+    "atmospheres": {
+      "oxidation": "oxiderende",
+      "reduction": "reducerende",
+      "neutral": "neutral"
+    },
+    "processes": {
+      "wood": "træbrænding",
+      "soda": "sodabrænding",
+      "salt": "saltbrænding",
+      "raku": "raku",
+      "pit": "gruebrænding"
+    },
+    "rate": "Opvarmningshastighed den sidste time ({unit} pr. time)",
+    "hold": "Holdetid ved sluttemperatur (minutter)",
+    "schedule": "Noter om brændekurven",
+    "schedulePlaceholder": "Hold 10 minutter, langsom afkøling...",
+    "witness": "Bekræftet med en kontrolkegle",
+    "foodSurface": "Til en overflade, der kommer i kontakt med mad (en indvendig glasur)",
+    "liner": {
+      "note": "Fødevaresikkerhed afhænger af, at glasuren brændes til den kegle, den er testet ved: en underbrændt glasur kan afgive metaller.",
+      "range": "Den er angivet for et interval, så test den i intervallets nedre ende, hvor den smelter mindst.",
+      "untested": "Ingen kegle er endnu markeret som testet.",
+      "test": "Kun en migrationstest af egne brændte genstande viser, om den er sikker til mad."
+    },
+    "helpSummary": "Om brændingen",
+    "help": {
+      "cone": "Den kegle, som glasuren er brændt til. Kegler måler varmepåvirkning (tid og temperatur), ikke kun temperatur, så kegle 06 er meget køligere end kegle 6.",
+      "range": "Hvis glasuren virker over et interval, angives den laveste og den højeste kegle, og der sættes kryds ved de kegler, den faktisk er brændt til: den testede kegle vises først. En glasur kan se anderledes ud og opføre sig anderledes i hver ende.",
+      "convert": "Keglen gemmes, som den er angivet. Enhver omregning til en anden skala eller til en temperatur er omtrentlig: en kegle bøjer ved en anden temperatur ved en anden opvarmningshastighed, og SK-kegler og Ortonkegler med samme nummer er ikke ens.",
+      "move": "At flytte en glasur til en anden kegle betyder som regel at ændre dens opskrift, ikke blot at brænde den varmere eller køligere. Duplikér til en anden kegle beholder begge versioner."
+    },
+    "temperatureProblem": "Angiv en temperatur fra {min} til {max}.",
+    "rateProblem": "Angiv hastigheden som et helt antal grader pr. time.",
+    "holdProblem": "Angiv holdetiden i hele minutter, højst et døgn.",
+    "one": {
+      "orton": "kegle {cone}",
+      "sk": "SK {cone}"
+    },
+    "span": {
+      "orton": "kegle {low}–{high}",
+      "sk": "SK {low}–{high}",
+      "temperature": "{low} til {high}"
+    },
+    "testedAt": "Testet ved {cones}",
+    "claimedRange": "angivet interval {range}",
+    "rangeUntested": "Interval {range}; ingen kegle markeret som testet",
+    "approxTemperature": "≈ {temperature} ({basis}; omtrentligt)",
+    "approxCone": "≈ {cone} ({basis}; omtrentligt)",
+    "basis": {
+      "orton60": "store Ortonkegler ved 60 °C pr. time",
+      "kyoto": "målt ved 100 °C pr. time af Kyotos kommunale institut",
+      "stated": "som angivet"
+    },
+    "rateText": "{rate} pr. time den sidste time",
+    "holdText": "holdt {minutes} min",
+    "witnessText": "kontrolleret med en kontrolkegle",
+    "asGiven": "Brænding, som forfatteren angav den:",
+    "filterCone": "Vis opskrifter til en kegle",
+    "anyCone": "Enhver kegle",
+    "filterAtmosphere": "Vis opskrifter til en atmosfære eller metode",
+    "anyAtmosphere": "Enhver atmosfære eller metode",
+    "duplicate": "Duplikér til en anden kegle",
+    "duplicateName": "Duplikér {title} til en anden kegle",
+    "duplicateTitle": "{title} (anden kegle)",
+    "duplicateNote": "En kopi af {title}, endnu ikke gemt: vælg dens nye kegle under Brænding. At flytte en glasur til en anden kegle betyder som regel at ændre dens opskrift, ikke blot at brænde den varmere eller køligere, så kontrollér grænserne og test den."
+  },
+  "firings": {
+    "heading": "Brændingsjournaler",
+    "open": "Tilknyt brændingsjournaler",
+    "fetchFailed": "Brændingsjournalerne kunne ikke hentes.",
+    "noLogs": "Ingen brændingsjournaler endnu.",
+    "toLogs": "Registrér en brænding",
+    "saveFailed": "Ændringen af tilknytningerne til brændingsjournaler kunne ikke gemmes.",
+    "resultFor": "Resultat i {title}",
+    "resultPlaceholder": "Hvordan det blev: blankt, ingen krakelering...",
+    "unlink": "Frakobl",
+    "unlinkName": "Frakobl {title}",
+    "choose": "En brændingsjournal at tilknytte",
+    "link": "Tilknyt",
+    "fill": "Sæt kryds ved de kegler, journalerne nævner: {cones}",
+    "replaceAsk": "Ved Testet ved er {now} afkrydset. Skal det erstattes med de kegler, journalerne nævner, {logs}?",
+    "replace": "Erstat",
+    "keep": "Behold som det er"
   }
 }

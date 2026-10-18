@@ -361,7 +361,8 @@
     "heading": "Bīstamība",
     "intro": "Kā norādīts katras izejvielas ierakstā; standarta bibliotēkas dati ir no piegādātāju drošības datu lapām.",
     "line": "<b>{names}:</b> {hazards}",
-    "unknown": "{count, plural, zero {Šīm izejvielām nav norādīta bīstamība: {list}. Skatiet tām līdzi piegādātās drošības datu lapas.} one {Izejvielai {list} nav norādīta bīstamība: skatiet tai līdzi piegādāto drošības datu lapu.} other {Šīm izejvielām nav norādīta bīstamība: {list}. Skatiet tām līdzi piegādātās drošības datu lapas.}}"
+    "unknown": "{count, plural, zero {Šīm izejvielām nav norādīta bīstamība: {list}. Skatiet tām līdzi piegādātās drošības datu lapas.} one {Izejvielai {list} nav norādīta bīstamība: skatiet tai līdzi piegādāto drošības datu lapu.} other {Šīm izejvielām nav norādīta bīstamība: {list}. Skatiet tām līdzi piegādātās drošības datu lapas.}}",
+    "safety": "Sausas glazūras izejvielas rada putekļus: neļaujiet tiem nonākt plaušās, arī putekļiem no izejvielām, kas nav klasificētas kā bīstamas. Skatiet ceļvedi <mixing>Droša jaukšana un ventilācija</mixing>, kā arī ceļvedi <home>Nesaindējiet savu ģimeni</home>, ja apkārt ir bērni vai mājdzīvnieki. Ja izejvielas drošības datu lapā ir teikts vairāk, ievērojiet to."
   },
   "compare": {
     "heading": "Divu recepšu salīdzināšana",
@@ -590,7 +591,10 @@
     "guidance": "Tās ir vadlīnijas, nevis “izturēts” vai “neizturēts”: glazūra ārpus tām var būt laba, bet glazūra tajās var tomēr plaisāt (matplaisas), izdalīt metālus vai bojāties. Pārbaudiet to.",
     "source": "Avots:",
     "saveFailed": "Neizdevās saglabāt jūsu robežvērtību kopas izvēli kontā, tāpēc joprojām tiek izmantota iepriekšējā kopa.",
-    "ownLimits": "Šie ieteikumi izmanto lietotnes Glazecalc paša robežvērtības, nevis kopu {name}."
+    "ownLimits": "Šie ieteikumi izmanto lietotnes Glazecalc paša robežvērtības, nevis kopu {name}.",
+    "firingFromBlock": "No receptes apdedzināšanas ({bands})",
+    "bothBands": "Receptes apdedzināšana aptver {bands}, tāpēc katra tiek pārbaudīta atsevišķi, blakus citai: glazūra reti uzvedas vienādi abos galos.",
+    "fromFiring": "Skaitļi attiecas uz receptes apdedzināšanu: {band}. Lai pārbaudītu citu, augstāk izvēlieties apdedzināšanu."
   },
   "stull": {
     "heading": "Stala diagramma",
@@ -714,7 +718,8 @@
     "notSaved": "Nekas netika saglabāts: {problem}",
     "stopped": "Saglabāts {saved} no {count}. Pārējās netika saglabātas: {problem}",
     "saved": "{count, plural, zero {Saglabātas # receptes.} one {Saglabāta # recepte.} other {Saglabātas # receptes.}}",
-    "openRecipes": "Atvērt receptes"
+    "openRecipes": "Atvērt receptes",
+    "firingRead": "Apdedzināšana, kas nolasīta no piezīmēm: {firing}"
   },
   "blends": {
     "title": "Maisījumi provēm",
@@ -847,5 +852,115 @@
     "retry": "Mēģināt vēlreiz",
     "about": "Glazecalc ir bezmaksas glazūru kalkulators keramiķiem.",
     "aboutLink": "Par lietotni Glazecalc"
+  },
+  "firing": {
+    "heading": "Apdedzināšana",
+    "whatIsCone": "Ko nozīmē konuss?",
+    "scale": "Skala",
+    "scales": {
+      "orton": "Ortona konusi",
+      "sk": "SK konusi (JIS)",
+      "temperature": "Temperatūra"
+    },
+    "groups": {
+      "usual": "Konusi no 022 līdz 13",
+      "half": "Pusnumuru konusi",
+      "above": "Konusi no 14 līdz 42 (keramikā reti)"
+    },
+    "coneLabel": "Konuss",
+    "lowCone": "No konusa",
+    "highCone": "Līdz konusam",
+    "noHigh": "Bez beigu konusa",
+    "notStated": "Nav norādīts",
+    "peak": "Maksimālā temperatūra ({unit})",
+    "lowTemperature": "No ({unit})",
+    "highTemperature": "Līdz ({unit})",
+    "rangeToggle": "Diapazons",
+    "testedLegend": "Pārbaudīts, apdedzinot līdz: atzīmējiet katru konusu, līdz kuram tā apdedzināta",
+    "atmosphere": "Atmosfēra",
+    "process": "Apdedzināšanas veids",
+    "atmospheres": {
+      "oxidation": "oksidējoša",
+      "reduction": "reducējoša",
+      "neutral": "neitrāla"
+    },
+    "processes": {
+      "wood": "malkas apdedzināšana",
+      "soda": "sodas apdedzināšana",
+      "salt": "sāls apdedzināšana",
+      "raku": "raku",
+      "pit": "bedres apdedzināšana"
+    },
+    "rate": "Ātrums pēdējā stundā ({unit} stundā)",
+    "hold": "Noturēšana maksimālajā temperatūrā (minūtes)",
+    "schedule": "Piezīmes par programmu",
+    "schedulePlaceholder": "Noturēšana 10 minūtes, lēna dzesēšana...",
+    "witness": "Apstiprināts ar kontrolkonusu",
+    "foodSurface": "Virsmai, kas saskaras ar pārtiku (iekšpuses glazūrai)",
+    "liner": {
+      "note": "Piemērotība saskarei ar pārtiku ir atkarīga no tā, vai šī glazūra apdedzināta līdz konusam, ar kuru tā pārbaudīta: nepietiekami apdedzinātā glazūrā var notikt metālu izskalošanās.",
+      "range": "Tā norādīta diapazonam, tāpēc pārbaudiet to diapazona zemākajā galā, kur tā kūst vismazāk.",
+      "untested": "Vēl neviens konuss nav atzīmēts kā pārbaudīts.",
+      "test": "Tikai jūsu pašu apdedzināto izstrādājumu metālu izskalošanās laboratorijas pārbaude parāda, vai tā ir droša saskarei ar pārtiku."
+    },
+    "helpSummary": "Par apdedzināšanu",
+    "help": {
+      "cone": "Konuss, līdz kuram apdedzinājāt šo glazūru. Konusi mēra siltuma iedarbību (laiku un temperatūru), ne tikai temperatūru, tāpēc konuss 06 ir daudz vēsāks nekā konuss 6.",
+      "range": "Ja tā darbojas diapazonā, norādiet zemāko un augstāko konusu un atzīmējiet konusus, līdz kuriem tā patiešām ir apdedzināta: vispirms tiek rādīts pārbaudītais konuss. Glazūra katrā galā var izskatīties un uzvesties atšķirīgi.",
+      "convert": "Konuss tiek saglabāts tāds, kādu to norādāt. Jebkāda pārrēķināšana uz citu skalu vai uz temperatūru ir aptuvena: konuss saliecas citā temperatūrā, ja sildīšanas ātrums ir cits, un SK un Ortona konusi ar vienādu numuru nav viens un tas pats.",
+      "move": "Glazūras pārnešana uz citu konusu parasti nozīmē tās receptes pārveidošanu, nevis vienkārši apdedzināšanu karstāk vai vēsāk. Poga Izveidot kopiju citam konusam saglabā abas versijas."
+    },
+    "temperatureProblem": "Norādiet temperatūru no {min} līdz {max}.",
+    "rateProblem": "Norādiet ātrumu kā veselu grādu skaitu stundā.",
+    "holdProblem": "Norādiet noturēšanu veselās minūtēs, ne vairāk kā diennakti.",
+    "one": {
+      "orton": "konuss {cone}",
+      "sk": "SK {cone}"
+    },
+    "span": {
+      "orton": "konusi {low}–{high}",
+      "sk": "SK {low}–{high}",
+      "temperature": "no {low} līdz {high}"
+    },
+    "testedAt": "Pārbaudīts, apdedzinot līdz: {cones}",
+    "claimedRange": "norādītais diapazons: {range}",
+    "rangeUntested": "Diapazons: {range}; neviens konuss nav atzīmēts kā pārbaudīts",
+    "approxTemperature": "≈ {temperature} ({basis}; aptuveni)",
+    "approxCone": "≈ {cone} ({basis}; aptuveni)",
+    "basis": {
+      "orton60": "Ortona lielie konusi 60 °C stundā",
+      "kyoto": "izmērīts 100 °C stundā Kioto pilsētas institūtā",
+      "stated": "kā norādīts"
+    },
+    "rateText": "{rate} stundā pēdējās stundas laikā",
+    "holdText": "noturēts {minutes} min",
+    "witnessText": "pārbaudīts ar kontrolkonusu",
+    "asGiven": "Apdedzināšana autora norādītajā veidā:",
+    "filterCone": "Rādīt receptes konusam",
+    "anyCone": "Jebkurš konuss",
+    "filterAtmosphere": "Rādīt receptes atmosfērai vai apdedzināšanas veidam",
+    "anyAtmosphere": "Jebkura atmosfēra vai veids",
+    "duplicate": "Izveidot kopiju citam konusam",
+    "duplicateName": "Izveidot receptes {title} kopiju citam konusam",
+    "duplicateTitle": "{title} (cits konuss)",
+    "duplicateNote": "Receptes {title} kopija, vēl nesaglabāta: sadaļā Apdedzināšana izvēlieties tās jauno konusu. Glazūras pārnešana uz citu konusu parasti nozīmē tās receptes pārveidošanu, nevis vienkārši apdedzināšanu karstāk vai vēsāk, tāpēc pārbaudiet robežvērtības un izmēģiniet glazūru praksē."
+  },
+  "firings": {
+    "heading": "Apdedzināšanas žurnāli",
+    "open": "Sasaistīt apdedzināšanas žurnālus",
+    "fetchFailed": "Neizdevās ielādēt jūsu apdedzināšanas žurnālus.",
+    "noLogs": "Vēl nav apdedzināšanas žurnālu.",
+    "toLogs": "Reģistrēt apdedzināšanu",
+    "saveFailed": "Neizdevās saglabāt apdedzināšanas žurnālu saišu izmaiņas.",
+    "resultFor": "Rezultāts žurnālā {title}",
+    "resultPlaceholder": "Kā sanāca: spīdīga, bez matplaisām...",
+    "unlink": "Atsaistīt",
+    "unlinkName": "Atsaistīt žurnālu {title}",
+    "choose": "Apdedzināšanas žurnāls, ko sasaistīt",
+    "link": "Sasaistīt",
+    "fill": "Atzīmēt konusus, ko min šie žurnāli: {cones}",
+    "replaceAsk": "Kā pārbaudīti atzīmēti: {now}. Vai aizstāt tos ar konusiem, ko min žurnāli: {logs}?",
+    "replace": "Aizstāt",
+    "keep": "Atstāt kā ir"
   }
 }

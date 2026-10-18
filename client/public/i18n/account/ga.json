@@ -248,6 +248,22 @@
       "saved": "Sábháilte: uimhreacha agus dátaí mar atá siad sa teanga {language}.",
       "help": "Conas a scríobhtar uimhreacha agus dátaí: 12,345.6 nó 12.345,6, agus ord an lae agus na míosa."
     },
+    "calendar": {
+      "legend": "Féilire",
+      "help": "An féilire ina dtaispeántar dátaí. Fanann na dátaí a chlóscríobhann tú san fhéilire Gréagórach.",
+      "gregory": {
+        "label": "Féilire Gréagórach",
+        "saved": "Sábháilte: taispeántar dátaí san fhéilire Gréagórach."
+      },
+      "buddhist": {
+        "label": "Ré Bhúdaíoch na Téalainne",
+        "saved": "Sábháilte: taispeántar dátaí i ré Bhúdaíoch na Téalainne."
+      },
+      "japanese": {
+        "label": "Réanna Seapánacha",
+        "saved": "Sábháilte: taispeántar dátaí i réanna Seapánacha."
+      }
+    },
     "decimalMark": {
       "legend": "Méideanna a chlóscríobh",
       "either": {

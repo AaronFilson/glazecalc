@@ -56,7 +56,8 @@
     "vet": "Należy zadzwonić do weterynarza.",
     "checkedOn": "Sprawdzono na stronach:",
     "choosePrompt": "Wystarczy wybrać kraj, aby zobaczyć, gdzie tam dzwonić.",
-    "ministry": "Strona ministerstwa zdrowia: <link>{name}</link>."
+    "ministry": "Strona ministerstwa zdrowia: <link>{name}</link>.",
+    "reported": "Oficjalne strony rządowe podają numery 113, 114 i 115, ale nie wyjaśniają, do czego służy każdy z nich; pokazane role wynikają z okólnika 22/2014/TT-BTTTT, tak jak cytują go strony drugorzędne."
   },
   "density": {
     "sg": "SG {value}",
@@ -91,6 +92,7 @@
     "caption": "Limit dla respirabilnej krzemionki krystalicznej w miejscu pracy: {region} (średnia z 8 godzin, sprawdzono {date})",
     "captionControl": "Miernik dla respirabilnej krzemionki krystalicznej w powietrzu miejsca pracy: {region} (sprawdzono {date})",
     "both": "Kwarc i krystobalit",
+    "freeSilica": "Wolna krzemionka",
     "quartz": "Kwarc",
     "cristobalite": "Krystobalit",
     "actionLevel": "Próg podjęcia działań",
@@ -171,7 +173,13 @@
       "thSmall": "Wyroby o głębokości większej niż 25 mm, poniżej 1,1 L",
       "thLarge": "Wyroby o głębokości większej niż 25 mm, 1,1 L lub więcej",
       "thInfant": "Pojemniki na żywność dla niemowląt do 12 miesięcy życia",
-      "thCooking": "Naczynia do gotowania, przeznaczone do wytrzymywania ciepła gotowania"
+      "thCooking": "Naczynia do gotowania, przeznaczone do wytrzymywania ciepła gotowania",
+      "vnFlat": "Płytkie wyroby do przechowywania lub gotowania żywności",
+      "vnSmall": "Głębokie wyroby do przechowywania żywności, poniżej 1100 mL",
+      "vnMedium": "Głębokie wyroby do przechowywania żywności, od 1100 mL do mniej niż 3000 mL",
+      "vnStorage": "Głębokie wyroby do przechowywania żywności, 3000 mL lub więcej",
+      "vnCooking": "Głębokie wyroby do gotowania",
+      "vnCups": "Filiżanki i małe miski"
     },
     "judged": {
       "average": "średnia z 6 sztuk",

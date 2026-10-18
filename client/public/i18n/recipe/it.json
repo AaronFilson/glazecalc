@@ -361,7 +361,8 @@
     "heading": "Pericoli",
     "intro": "Come li indica la scheda di ogni materiale; quelli dell’elenco standard provengono dalle schede di dati di sicurezza dei fornitori.",
     "line": "<b>{names}:</b> {hazards}",
-    "unknown": "{count, plural, one {Non sono indicati pericoli per {list}: vedere la scheda di dati di sicurezza che lo accompagna.} many {Non sono indicati pericoli per {list}: vedere le schede di dati di sicurezza che li accompagnano.} other {Non sono indicati pericoli per {list}: vedere le schede di dati di sicurezza che li accompagnano.}}"
+    "unknown": "{count, plural, one {Non sono indicati pericoli per {list}: vedere la scheda di dati di sicurezza che lo accompagna.} many {Non sono indicati pericoli per {list}: vedere le schede di dati di sicurezza che li accompagnano.} other {Non sono indicati pericoli per {list}: vedere le schede di dati di sicurezza che li accompagnano.}}",
+    "safety": "I materiali per smalti, asciutti, producono polvere: tenerla fuori dai polmoni, anche quella dei materiali non classificati come pericolosi. Vedere <mixing>Miscelazione sicura e ventilazione</mixing>, e <home>Non avvelenare la propria famiglia</home> se in casa ci sono bambini o animali domestici. Dove la scheda di dati di sicurezza di un materiale dice di più, seguirla."
   },
   "compare": {
     "heading": "Confronta due ricette",
@@ -590,7 +591,10 @@
     "guidance": "Sono indicazioni, non un esito positivo o negativo: uno smalto fuori da questi limiti può andare bene, e uno entro i limiti può comunque cavillare, cedere metalli o fallire. Provarlo.",
     "source": "Fonte:",
     "saveFailed": "Impossibile salvare nel Suo account la scelta della serie di limiti, quindi resta in uso la serie precedente.",
-    "ownLimits": "Questi suggerimenti usano i limiti propri di Glazecalc, non {name}."
+    "ownLimits": "Questi suggerimenti usano i limiti propri di Glazecalc, non {name}.",
+    "firingFromBlock": "Dalla cottura della ricetta ({bands})",
+    "bothBands": "La cottura della ricetta copre {bands}, quindi ogni intervallo è controllato, affiancato agli altri: uno smalto raramente si comporta allo stesso modo alle due estremità.",
+    "fromFiring": "I valori sono per la cottura della ricetta: {band}. Scegliere sopra una cottura per controllarne un’altra."
   },
   "stull": {
     "heading": "Diagramma di Stull",
@@ -714,7 +718,8 @@
     "notSaved": "Non è stato salvato nulla: {problem}",
     "stopped": "Salvate {saved} su {count}. Le altre non sono state salvate: {problem}",
     "saved": "{count, plural, one {# ricetta salvata.} many {# di ricette salvate.} other {# ricette salvate.}}",
-    "openRecipes": "Apri le ricette"
+    "openRecipes": "Apri le ricette",
+    "firingRead": "Cottura letta dalle note: {firing}"
   },
   "blends": {
     "title": "Miscele per provini",
@@ -847,5 +852,115 @@
     "retry": "Riprova",
     "about": "Glazecalc è un calcolatore di smalti gratuito per ceramisti.",
     "aboutLink": "Informazioni su Glazecalc"
+  },
+  "firing": {
+    "heading": "Cottura",
+    "whatIsCone": "Che cosa significa cono?",
+    "scale": "Scala",
+    "scales": {
+      "orton": "Coni Orton",
+      "sk": "Coni SK (JIS)",
+      "temperature": "Temperatura"
+    },
+    "groups": {
+      "usual": "Coni da 022 a 13",
+      "half": "Mezzi coni",
+      "above": "Coni da 14 a 42 (rari in ceramica)"
+    },
+    "coneLabel": "Cono",
+    "lowCone": "Dal cono",
+    "highCone": "Al cono",
+    "noHigh": "Nessun cono superiore",
+    "notStated": "Non indicato",
+    "peak": "Temperatura massima ({unit})",
+    "lowTemperature": "Da ({unit})",
+    "highTemperature": "A ({unit})",
+    "rangeToggle": "Un intervallo",
+    "testedLegend": "Provato a: spuntare ogni cono a cui è stato cotto",
+    "atmosphere": "Atmosfera",
+    "process": "Processo",
+    "atmospheres": {
+      "oxidation": "ossidazione",
+      "reduction": "riduzione",
+      "neutral": "neutra"
+    },
+    "processes": {
+      "wood": "cottura a legna",
+      "soda": "cottura a soda",
+      "salt": "cottura a sale",
+      "raku": "raku",
+      "pit": "cottura in buca"
+    },
+    "rate": "Velocità nell’ultima ora ({unit} all’ora)",
+    "hold": "Sosta alla temperatura massima (minuti)",
+    "schedule": "Note sul programma",
+    "schedulePlaceholder": "Sosta di 10 minuti, raffreddamento lento…",
+    "witness": "Confermato da un cono testimone",
+    "foodSurface": "Per una superficie a contatto con gli alimenti (uno smalto interno)",
+    "liner": {
+      "note": "La sicurezza alimentare dipende dal cuocere questo smalto al cono a cui è stato provato: uno smalto sottocotto può cedere metalli.",
+      "range": "È indicato per un intervallo, quindi provarlo all’estremità bassa dell’intervallo, dove fonde meno.",
+      "untested": "Nessun cono è ancora segnato come provato.",
+      "test": "Solo una prova di cessione sui propri pezzi cotti mostra se è idoneo al contatto con gli alimenti."
+    },
+    "helpSummary": "Sulla cottura",
+    "help": {
+      "cone": "Il cono a cui è stato cotto questo smalto. I coni misurano il lavoro termico (tempo e temperatura), non solo la temperatura: il cono 06 è quindi molto più freddo del cono 6.",
+      "range": "Se funziona su un intervallo, indicare il cono più basso e quello più alto, e spuntare i coni a cui è stato effettivamente cotto: il cono provato appare per primo. Uno smalto può avere un aspetto, e un comportamento, diverso a ciascuna estremità.",
+      "convert": "Il cono resta come lo si indica. Ogni conversione in un’altra scala o in una temperatura è approssimativa: un cono si piega a una temperatura diversa con una diversa velocità di riscaldamento, e i coni SK e Orton con lo stesso numero non sono uguali.",
+      "move": "Portare uno smalto a un altro cono di solito significa riformularlo, non solo cuocerlo più caldo o più freddo. «Duplica per un altro cono» conserva entrambe le versioni."
+    },
+    "temperatureProblem": "Indicare una temperatura da {min} a {max}.",
+    "rateProblem": "Indicare la velocità come numero intero di gradi all’ora.",
+    "holdProblem": "Indicare la sosta in minuti interi, fino a un giorno.",
+    "one": {
+      "orton": "cono {cone}",
+      "sk": "SK {cone}"
+    },
+    "span": {
+      "orton": "cono {low}–{high}",
+      "sk": "SK {low}–{high}",
+      "temperature": "da {low} a {high}"
+    },
+    "testedAt": "Provato a {cones}",
+    "claimedRange": "intervallo dichiarato {range}",
+    "rangeUntested": "Intervallo {range}; nessun cono spuntato come provato",
+    "approxTemperature": "≈ {temperature} ({basis}; approssimativo)",
+    "approxCone": "≈ {cone} ({basis}; approssimativo)",
+    "basis": {
+      "orton60": "coni Orton grandi a 60 °C all’ora",
+      "kyoto": "misurato a 100 °C all’ora dall’istituto municipale di Kyoto",
+      "stated": "come indicato"
+    },
+    "rateText": "{rate} all’ora nell’ultima ora",
+    "holdText": "sosta di {minutes} min",
+    "witnessText": "controllato con un cono testimone",
+    "asGiven": "Cottura, come indicata dall’autore:",
+    "filterCone": "Mostra le ricette per un cono",
+    "anyCone": "Qualsiasi cono",
+    "filterAtmosphere": "Mostra le ricette per un’atmosfera o un processo",
+    "anyAtmosphere": "Qualsiasi atmosfera o processo",
+    "duplicate": "Duplica per un altro cono",
+    "duplicateName": "Duplica {title} per un altro cono",
+    "duplicateTitle": "{title} (altro cono)",
+    "duplicateNote": "Una copia di {title}, non ancora salvata: scegliere il nuovo cono in Cottura. Portare uno smalto a un altro cono di solito significa riformularlo, non solo cuocerlo più caldo o più freddo, quindi controllare i limiti e provarlo."
+  },
+  "firings": {
+    "heading": "Registri di cottura",
+    "open": "Collega registri di cottura",
+    "fetchFailed": "Non è stato possibile recuperare i registri di cottura.",
+    "noLogs": "Ancora nessun registro di cottura.",
+    "toLogs": "Registra una cottura",
+    "saveFailed": "Non è stato possibile salvare la modifica ai collegamenti dei registri di cottura.",
+    "resultFor": "Risultato in {title}",
+    "resultPlaceholder": "Com’è venuto: lucido, senza cavillature…",
+    "unlink": "Scollega",
+    "unlinkName": "Scollega {title}",
+    "choose": "Un registro di cottura da collegare",
+    "link": "Collega",
+    "fill": "Spuntare i coni indicati da questi registri: {cones}",
+    "replaceAsk": "Spuntati come provati: {now}. Sostituirli con i coni indicati dai registri, {logs}?",
+    "replace": "Sostituisci",
+    "keep": "Lascia così"
   }
 }

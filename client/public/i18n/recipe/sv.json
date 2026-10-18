@@ -361,7 +361,8 @@
     "heading": "Faror",
     "intro": "Som varje råvaras post anger dem; standardbibliotekets kommer från leverantörernas säkerhetsdatablad.",
     "line": "<b>{names}:</b> {hazards}",
-    "unknown": "{count, plural, one {Inga faror anges för {list}: se säkerhetsdatabladet som följer med.} other {Inga faror anges för {list}: se säkerhetsdatabladen som följer med.}}"
+    "unknown": "{count, plural, one {Inga faror anges för {list}: se säkerhetsdatabladet som följer med.} other {Inga faror anges för {list}: se säkerhetsdatabladen som följer med.}}",
+    "safety": "Torra glasyrråvaror ger damm: håll det borta från lungorna, även damm från råvaror som inte är klassificerade som farliga: se <mixing>Säker blandning och ventilation</mixing>, och <home>Förgifta inte familjen</home> om det finns barn eller husdjur i närheten. Där en råvaras säkerhetsdatablad säger mer, följ det."
   },
   "compare": {
     "heading": "Jämför två recept",
@@ -590,7 +591,10 @@
     "guidance": "Det här är riktlinjer, inget betyg i form av godkänt eller underkänt: en glasyr utanför dem kan vara bra, och en inom dem kan ändå krackelera, lösa ut metaller eller misslyckas. Prova den.",
     "source": "Källa:",
     "saveFailed": "Valet av gränsuppsättning kunde inte sparas i kontot, så den tidigare gränsuppsättningen används fortfarande.",
-    "ownLimits": "De här förslagen använder Glazecalcs egna gränser, inte {name}."
+    "ownLimits": "De här förslagen använder Glazecalcs egna gränser, inte {name}.",
+    "firingFromBlock": "Från receptets bränning ({bands})",
+    "bothBands": "Receptets bränning omfattar {bands}, så var och en kontrolleras, sida vid sida: en glasyr beter sig sällan likadant i båda ändar.",
+    "fromFiring": "Siffrorna gäller receptets bränning: {band}. Välj en bränning ovan för att kontrollera en annan."
   },
   "stull": {
     "heading": "Stull-diagram",
@@ -714,7 +718,8 @@
     "notSaved": "Ingenting sparades: {problem}",
     "stopped": "Sparade {saved} av {count}. Resten sparades inte: {problem}",
     "saved": "{count, plural, one {Sparade # recept.} other {Sparade # recept.}}",
-    "openRecipes": "Öppna recepten"
+    "openRecipes": "Öppna recepten",
+    "firingRead": "Bränning utläst ur anteckningarna: {firing}"
   },
   "blends": {
     "title": "Blandningar för provbitar",
@@ -847,5 +852,115 @@
     "retry": "Försök igen",
     "about": "Glazecalc är en gratis glasyrkalkylator för keramiker.",
     "aboutLink": "Om Glazecalc"
+  },
+  "firing": {
+    "heading": "Bränning",
+    "whatIsCone": "Vad betyder kägla?",
+    "scale": "Skala",
+    "scales": {
+      "orton": "Ortonkäglor",
+      "sk": "SK-käglor (JIS)",
+      "temperature": "Temperatur"
+    },
+    "groups": {
+      "usual": "Käglor 022 till 13",
+      "half": "Halva käglor",
+      "above": "Käglor 14 till 42 (sällsynta inom keramik)"
+    },
+    "coneLabel": "Kägla",
+    "lowCone": "Från kägla",
+    "highCone": "Till kägla",
+    "noHigh": "Ingen övre kägla",
+    "notStated": "Inte angiven",
+    "peak": "Topptemperatur ({unit})",
+    "lowTemperature": "Från ({unit})",
+    "highTemperature": "Till ({unit})",
+    "rangeToggle": "Ett intervall",
+    "testedLegend": "Testad vid: markera varje kägla som glasyren har bränts till",
+    "atmosphere": "Atmosfär",
+    "process": "Metod",
+    "atmospheres": {
+      "oxidation": "oxiderande",
+      "reduction": "reducerande",
+      "neutral": "neutral"
+    },
+    "processes": {
+      "wood": "vedbränning",
+      "soda": "sodabränning",
+      "salt": "saltbränning",
+      "raku": "raku",
+      "pit": "gropbränning"
+    },
+    "rate": "Stigning under den sista timmen ({unit} i timmen)",
+    "hold": "Hålltid vid topptemperatur (minuter)",
+    "schedule": "Anteckningar om programmet",
+    "schedulePlaceholder": "10 minuters hålltid, långsam nedkylning...",
+    "witness": "Bekräftad med en kontrollkägla",
+    "foodSurface": "För en yta som kommer i kontakt med mat (en insidesglasyr)",
+    "liner": {
+      "note": "Livsmedelssäkerheten beror på att den här glasyren bränns till den kägla den testades vid: en underbränd glasyr kan avge metaller.",
+      "range": "Den anges för ett intervall, så testa den vid intervallets nedre ände, där den smälter minst.",
+      "untested": "Ingen kägla är ännu markerad som testad.",
+      "test": "Bara ett test av metallavgivningen från egna brända föremål visar om den är livsmedelssäker."
+    },
+    "helpSummary": "Om bränningen",
+    "help": {
+      "cone": "Den kägla som glasyren brändes till. Käglor mäter värmearbete (tid och temperatur), inte bara temperatur, så kägla 06 är mycket kallare än kägla 6.",
+      "range": "Om glasyren fungerar över ett intervall, ange lägsta och högsta kägla och markera de käglor som den faktiskt har bränts till: den testade käglan visas först. En glasyr kan se ut och bete sig olika i varje ände.",
+      "convert": "Käglan sparas som den anges. All omräkning till en annan skala eller till en temperatur är ungefärlig: en kägla böjer sig vid olika temperaturer vid olika uppvärmningshastigheter, och SK-käglor och Ortonkäglor med samma nummer är inte samma sak.",
+      "move": "Att flytta en glasyr till en annan kägla innebär oftast att ändra dess recept, inte bara bränna den varmare eller kallare. Med Duplicera för en annan kägla behålls båda versionerna."
+    },
+    "temperatureProblem": "Ange en temperatur från {min} till {max}.",
+    "rateProblem": "Ange stigningen som ett helt antal grader i timmen.",
+    "holdProblem": "Ange hålltiden i hela minuter, högst ett dygn.",
+    "one": {
+      "orton": "kägla {cone}",
+      "sk": "SK {cone}"
+    },
+    "span": {
+      "orton": "kägla {low}–{high}",
+      "sk": "SK {low}–{high}",
+      "temperature": "{low} till {high}"
+    },
+    "testedAt": "Testad vid {cones}",
+    "claimedRange": "angivet intervall {range}",
+    "rangeUntested": "Intervall {range}; ingen kägla markerad som testad",
+    "approxTemperature": "≈ {temperature} ({basis}; ungefärligt)",
+    "approxCone": "≈ {cone} ({basis}; ungefärligt)",
+    "basis": {
+      "orton60": "stora Ortonkäglor vid 60 °C i timmen",
+      "kyoto": "uppmätt vid 100 °C i timmen av Kyotos kommunala institut",
+      "stated": "som angivet"
+    },
+    "rateText": "{rate} i timmen under den sista timmen",
+    "holdText": "hölls i {minutes} min",
+    "witnessText": "kontrollerad med en kontrollkägla",
+    "asGiven": "Bränning, så som upphovspersonen angav den:",
+    "filterCone": "Visa recept för en kägla",
+    "anyCone": "Valfri kägla",
+    "filterAtmosphere": "Visa recept för en atmosfär eller metod",
+    "anyAtmosphere": "Valfri atmosfär eller metod",
+    "duplicate": "Duplicera för en annan kägla",
+    "duplicateName": "Duplicera {title} för en annan kägla",
+    "duplicateTitle": "{title} (annan kägla)",
+    "duplicateNote": "En kopia av {title}, ännu inte sparad: välj dess nya kägla under Bränning. Att flytta en glasyr till en annan kägla innebär oftast att ändra dess recept, inte bara bränna den varmare eller kallare, så kontrollera gränserna och testa den."
+  },
+  "firings": {
+    "heading": "Brännloggar",
+    "open": "Koppla brännloggar",
+    "fetchFailed": "Brännloggarna kunde inte hämtas.",
+    "noLogs": "Inga brännloggar än.",
+    "toLogs": "Registrera en bränning",
+    "saveFailed": "Ändringen av kopplingarna till brännloggar kunde inte sparas.",
+    "resultFor": "Resultat i {title}",
+    "resultPlaceholder": "Hur det blev: blank, ingen krackelering...",
+    "unlink": "Koppla bort",
+    "unlinkName": "Koppla bort {title}",
+    "choose": "En brännlogg att koppla",
+    "link": "Koppla",
+    "fill": "Markera de käglor som loggarna nämner: {cones}",
+    "replaceAsk": "Under Testad vid är {now} markerat. Ersätt det med de käglor som loggarna nämner, {logs}?",
+    "replace": "Ersätt",
+    "keep": "Behåll som det är"
   }
 }

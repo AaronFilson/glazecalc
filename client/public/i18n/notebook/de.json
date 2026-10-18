@@ -88,7 +88,15 @@
     "chooseField": "Wählen Sie ein Feld aus und klicken Sie dann auf „Feld hinzufügen“.",
     "fetchFailed": "Beim Abrufen der Brennprotokolle ist ein Fehler aufgetreten.",
     "saved": "Das Brennprotokoll wurde erfolgreich auf dem Server gespeichert.",
-    "saveFailed": "Fehler: Die Anfrage an den Server ist fehlgeschlagen."
+    "saveFailed": "Fehler: Die Anfrage an den Server ist fehlgeschlagen.",
+    "recipesHeading": "In diesem Brand gebrannte Rezepte",
+    "noRecipes": "Noch keine Rezepte verknüpft.",
+    "recipesFailed": "Ihre Rezepte konnten nicht abgerufen werden, daher lässt sich jetzt keines verknüpfen.",
+    "pickRecipe": "Ein in diesem Brand gebranntes Rezept",
+    "linkRecipe": "Das Rezept verknüpfen",
+    "unlink": "Trennen",
+    "unlinkRecipe": "{title} trennen",
+    "linkFailed": "Die Verknüpfung konnte nicht gespeichert werden."
   },
   "notes": {
     "title": "Notizen",

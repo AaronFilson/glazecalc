@@ -56,7 +56,8 @@
     "vet": "Pokličite veterinarja.",
     "checkedOn": "Preverjeno na:",
     "choosePrompt": "Izberite državo, da vidite, koga poklicati tam.",
-    "ministry": "Stran ministrstva za zdravje: <link>{name}</link>."
+    "ministry": "Stran ministrstva za zdravje: <link>{name}</link>.",
+    "reported": "Uradne vladne strani navajajo številke 113, 114 in 115, ne pa tudi, čemu je katera namenjena; prikazane vloge sledijo okrožnici 22/2014/TT-BTTTT, kot jo navajajo sekundarne strani."
   },
   "density": {
     "sg": "rel. gostota {value}",
@@ -91,6 +92,7 @@
     "caption": "Mejna vrednost na delovnem mestu za prah kristalnega kremena, ki se vdihuje (respirabilna frakcija), v državi {region}, 8-urno povprečje (preverjeno: {date})",
     "captionControl": "Merilo za prah kristalnega kremena, ki se vdihuje (respirabilna frakcija), v zraku delovnega območja v državi {region} (preverjeno: {date})",
     "both": "Kremen in kristobalit",
+    "freeSilica": "Prosti kremen",
     "quartz": "Kremen",
     "cristobalite": "Kristobalit",
     "actionLevel": "Opozorilna vrednost",
@@ -171,7 +173,13 @@
       "thSmall": "Izdelki, globoki več kot 25 mm, manj kot 1,1 L",
       "thLarge": "Izdelki, globoki več kot 25 mm, 1,1 L ali več",
       "thInfant": "Posode za hrano otrok do 12 mesecev starosti",
-      "thCooking": "Kuhinjska posoda, narejena za vročino pri kuhanju"
+      "thCooking": "Kuhinjska posoda, narejena za vročino pri kuhanju",
+      "vnFlat": "Plitvi izdelki za shranjevanje ali kuhanje hrane",
+      "vnSmall": "Globoki izdelki za shranjevanje hrane, pod 1100 mL",
+      "vnMedium": "Globoki izdelki za shranjevanje hrane, od 1100 mL do pod 3000 mL",
+      "vnStorage": "Globoki izdelki za shranjevanje hrane, 3000 mL ali več",
+      "vnCooking": "Globoki izdelki za kuhanje",
+      "vnCups": "Skodelice in majhne sklede"
     },
     "judged": {
       "average": "povprečje 6 kosov",

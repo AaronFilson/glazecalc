@@ -248,6 +248,22 @@
       "saved": "Spremljeno: zapis brojeva i datuma – {language}.",
       "help": "Kako se pišu brojevi i datumi: 12,345.6 ili 12.345,6 te redoslijed dana i mjeseca."
     },
+    "calendar": {
+      "legend": "Kalendar",
+      "help": "Kalendar u kojem se prikazuju datumi. Datumi koje upisujete ostaju u gregorijanskom kalendaru.",
+      "gregory": {
+        "label": "Gregorijanski",
+        "saved": "Spremljeno: datumi se prikazuju u gregorijanskom kalendaru."
+      },
+      "buddhist": {
+        "label": "Tajlandska budistička era",
+        "saved": "Spremljeno: datumi se prikazuju u tajlandskoj budističkoj eri."
+      },
+      "japanese": {
+        "label": "Japanske ere",
+        "saved": "Spremljeno: datumi se prikazuju u japanskim erama."
+      }
+    },
     "decimalMark": {
       "legend": "Unos količina",
       "either": {

@@ -248,6 +248,22 @@
       "saved": "Įrašyta: skaičių ir datų formatas – {language}.",
       "help": "Kaip rašomi skaičiai ir datos: 12,345.6 ar 12.345,6, ir dienos bei mėnesio tvarka."
     },
+    "calendar": {
+      "legend": "Kalendorius",
+      "help": "Kalendorius, pagal kurį rodomos datos. Jūsų įvedamos datos lieka pagal Grigaliaus kalendorių.",
+      "gregory": {
+        "label": "Grigaliaus kalendorius",
+        "saved": "Įrašyta: datos rodomos pagal Grigaliaus kalendorių."
+      },
+      "buddhist": {
+        "label": "Tailando budistų era",
+        "saved": "Įrašyta: datos rodomos pagal Tailando budistų erą."
+      },
+      "japanese": {
+        "label": "Japonijos era",
+        "saved": "Įrašyta: datos rodomos pagal Japonijos eras."
+      }
+    },
     "decimalMark": {
       "legend": "Kiekių įvedimas",
       "either": {

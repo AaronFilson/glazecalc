@@ -56,7 +56,8 @@
     "vet": "Glaoigh ar do thréidlia.",
     "checkedOn": "Seiceáilte:",
     "choosePrompt": "Roghnaigh do thír chun a fheiceáil cé air a nglaofar ansin.",
-    "ministry": "Leathanach na haireachta sláinte: <link>{name}</link>."
+    "ministry": "Leathanach na haireachta sláinte: <link>{name}</link>.",
+    "reported": "Liostaíonn leathanaigh oifigiúla an rialtais 113, 114 agus 115, ach ní deir siad cad chuige a bhfuil gach ceann acu; leanann na róil a thaispeántar Imlitir 22/2014/TT-BTTTT, mar a luaitear í ar leathanaigh thánaisteacha."
   },
   "density": {
     "sg": "sainmheáchan {value}",
@@ -91,6 +92,7 @@
     "caption": "An teorainnluach nochta ceirde do shilice chriostalta inanálaithe: {region}, meán thar 8 n-uaire an chloig (seiceáilte {date})",
     "captionControl": "An tslat tomhais do shilice chriostalta inanálaithe in aer limistéir oibre: {region} (seiceáilte {date})",
     "both": "Grianchloch agus críostabailít",
+    "freeSilica": "Silice shaor",
     "quartz": "Grianchloch",
     "cristobalite": "Críostabailít",
     "actionLevel": "Leibhéal gníomhaíochta",
@@ -171,7 +173,13 @@
       "thSmall": "Píosaí níos doimhne ná 25 mm, faoi 1.1 L",
       "thLarge": "Píosaí níos doimhne ná 25 mm, 1.1 L nó níos mó",
       "thInfant": "Coimeádáin do bhia naíonán suas le 12 mhí d’aois",
-      "thCooking": "Gréithe cócaireachta, a dhéantar chun teas cócaireachta a sheasamh"
+      "thCooking": "Gréithe cócaireachta, a dhéantar chun teas cócaireachta a sheasamh",
+      "vnFlat": "Píosaí éadoimhne chun bia a choinneáil nó a chócaráil",
+      "vnSmall": "Píosaí doimhne chun bia a choinneáil, faoi bhun 1100 mL",
+      "vnMedium": "Píosaí doimhne chun bia a choinneáil, ó 1100 mL go dtí faoi bhun 3000 mL",
+      "vnStorage": "Píosaí doimhne chun bia a choinneáil, 3000 mL nó níos mó",
+      "vnCooking": "Píosaí doimhne chun bia a chócaráil",
+      "vnCups": "Cupáin agus babhlaí beaga"
     },
     "judged": {
       "average": "meán 6 phíosa",

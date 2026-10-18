@@ -248,6 +248,22 @@
       "saved": "Issejvjat: numri u dati kif jinkitbu fl-ilsien {language}.",
       "help": "Kif jinkitbu n-numri u d-dati: 12,345.6 jew 12.345,6, u l-ordni tal-jum u tax-xahar."
     },
+    "calendar": {
+      "legend": "Kalendarju",
+      "help": "Il-kalendarju li bih jidhru d-dati. Id-dati li tikteb int jibqgħu fil-kalendarju Gregorjan.",
+      "gregory": {
+        "label": "Kalendarju Gregorjan",
+        "saved": "Issejvjat: id-dati jidhru fil-kalendarju Gregorjan."
+      },
+      "buddhist": {
+        "label": "Era Buddista tat-Tajlandja",
+        "saved": "Issejvjat: id-dati jidhru fl-era Buddista tat-Tajlandja."
+      },
+      "japanese": {
+        "label": "Ere Ġappuniżi",
+        "saved": "Issejvjat: id-dati jidhru fl-ere Ġappuniżi."
+      }
+    },
     "decimalMark": {
       "legend": "Il-kitba tal-ammonti",
       "either": {

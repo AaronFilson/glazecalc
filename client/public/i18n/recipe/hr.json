@@ -361,7 +361,8 @@
     "heading": "Opasnosti",
     "intro": "Kako ih navodi zapis svake sirovine; opasnosti standardne biblioteke potječu iz sigurnosno-tehničkih listova dobavljača.",
     "line": "<b>{names}:</b> {hazards}",
-    "unknown": "{count, plural, one {Za {list} nisu navedene opasnosti: pogledajte sigurnosno-tehnički list koji dolazi uz tu sirovinu.} few {Za {list} nisu navedene opasnosti: pogledajte sigurnosno-tehničke listove koji dolaze uz te sirovine.} other {Za {list} nisu navedene opasnosti: pogledajte sigurnosno-tehničke listove koji dolaze uz te sirovine.}}"
+    "unknown": "{count, plural, one {Za {list} nisu navedene opasnosti: pogledajte sigurnosno-tehnički list koji dolazi uz tu sirovinu.} few {Za {list} nisu navedene opasnosti: pogledajte sigurnosno-tehničke listove koji dolaze uz te sirovine.} other {Za {list} nisu navedene opasnosti: pogledajte sigurnosno-tehničke listove koji dolaze uz te sirovine.}}",
+    "safety": "Suhe sirovine za glazure stvaraju prašinu: ne dopustite da dospije u pluća, čak ni prašina od sirovina koje nisu razvrstane kao opasne: pogledajte <mixing>Sigurno miješanje i ventilacija</mixing> te <home>Ne otrujte svoju obitelj</home> ako su u blizini djeca ili kućni ljubimci. Gdje sigurnosno-tehnički list sirovine kaže više, slijedite ga."
   },
   "compare": {
     "heading": "Usporedi dva recepta",
@@ -590,7 +591,10 @@
     "guidance": "Ovo su smjernice, a ne „prošlo” ili „palo”: glazura izvan njih može biti u redu, a ona unutar njih ipak može popucati, otpuštati metale ili zakazati. Isprobajte je.",
     "source": "Izvor:",
     "saveFailed": "Ne možemo spremiti vaš odabir skupa granica na vaš račun, pa se i dalje koristi prethodni skup.",
-    "ownLimits": "Ovi prijedlozi koriste Glazecalcove vlastite granice, a ne skup {name}."
+    "ownLimits": "Ovi prijedlozi koriste Glazecalcove vlastite granice, a ne skup {name}.",
+    "firingFromBlock": "Iz pečenja recepta ({bands})",
+    "bothBands": "Pečenje recepta obuhvaća {bands}, pa se svaki raspon provjerava zasebno, jedan uz drugi: glazura se rijetko jednako ponaša na oba kraja.",
+    "fromFiring": "Podaci se odnose na pečenje recepta: {band}. Odaberite pečenje iznad da biste provjerili drugo."
   },
   "stull": {
     "heading": "Stullov dijagram",
@@ -714,7 +718,8 @@
     "notSaved": "Ništa nije spremljeno: {problem}",
     "stopped": "Spremljeno je {saved} od {count}. Ostali nisu spremljeni: {problem}",
     "saved": "{count, plural, one {Spremljen je # recept.} few {Spremljena su # recepta.} other {Spremljeno je # recepata.}}",
-    "openRecipes": "Otvori recepte"
+    "openRecipes": "Otvori recepte",
+    "firingRead": "Pečenje pročitano iz bilježaka: {firing}"
   },
   "blends": {
     "title": "Mješavine za probne pločice",
@@ -847,5 +852,115 @@
     "retry": "Pokušaj ponovno",
     "about": "Glazecalc je besplatan kalkulator glazura za lončare.",
     "aboutLink": "O Glazecalcu"
+  },
+  "firing": {
+    "heading": "Pečenje",
+    "whatIsCone": "Što znači stožac?",
+    "scale": "Ljestvica",
+    "scales": {
+      "orton": "Ortonovi stošci",
+      "sk": "Stošci SK (JIS)",
+      "temperature": "Temperatura"
+    },
+    "groups": {
+      "usual": "Stošci od 022 do 13",
+      "half": "Stošci s polovičnim brojem",
+      "above": "Stošci od 14 do 42 (rijetki u keramici)"
+    },
+    "coneLabel": "Stožac",
+    "lowCone": "Od stošca",
+    "highCone": "Do stošca",
+    "noHigh": "Bez gornjeg stošca",
+    "notStated": "Nije navedeno",
+    "peak": "Najviša temperatura ({unit})",
+    "lowTemperature": "Od ({unit})",
+    "highTemperature": "Do ({unit})",
+    "rangeToggle": "Raspon",
+    "testedLegend": "Ispitano na: označite svaki stožac na koji ste je pekli",
+    "atmosphere": "Atmosfera",
+    "process": "Postupak",
+    "atmospheres": {
+      "oxidation": "oksidacijska",
+      "reduction": "redukcijska",
+      "neutral": "neutralna"
+    },
+    "processes": {
+      "wood": "na drva",
+      "soda": "sodom",
+      "salt": "solju",
+      "raku": "raku",
+      "pit": "u jami"
+    },
+    "rate": "Brzina u posljednjem satu ({unit} na sat)",
+    "hold": "Zadržavanje na vrhuncu (minute)",
+    "schedule": "Bilješke o programu",
+    "schedulePlaceholder": "Zadržavanje 10 minuta, sporo hlađenje...",
+    "witness": "Potvrđeno kontrolnim stošcem",
+    "foodSurface": "Za površinu u dodiru s hranom (glazura za unutrašnjost)",
+    "liner": {
+      "note": "Sigurnost u dodiru s hranom ovisi o tome peče li se ova glazura na stožac na kojem je ispitana: nedopečena glazura može otpuštati metale.",
+      "range": "Navedena je za raspon, pa je ispitajte na donjem kraju raspona, gdje se najmanje tali.",
+      "untested": "Još nijedan stožac nije označen kao ispitan.",
+      "test": "Samo ispitivanje otpuštanja metala na vašim vlastitim pečenim posudama pokazuje je li sigurna za hranu."
+    },
+    "helpSummary": "O pečenju",
+    "help": {
+      "cone": "Stožac na koji ste pekli ovu glazuru. Stošci ne mjere samo temperaturu nego toplinski učinak (vrijeme i temperaturu), pa stožac 06 odgovara mnogo nižoj temperaturi od stošca 6.",
+      "range": "Ako glazura radi u rasponu, navedite najniži i najviši stožac i označite one na koje ste je doista pekli: ispitani stožac prikazuje se prvi. Glazura može izgledati i ponašati se drukčije na svakom kraju.",
+      "convert": "Stožac se čuva onako kako ga navedete. Svaka pretvorba u drugu ljestvicu ili u temperaturu približna je: stožac se savije na drukčijoj temperaturi ovisno o brzini zagrijavanja, a stošci SK i Orton s istim brojem nisu isto.",
+      "move": "Prelazak glazure na drugi stožac obično znači preoblikovanje recepta, a ne samo pečenje na višoj ili nižoj temperaturi. Opcija „Dupliciraj za drugi stožac” čuva obje verzije."
+    },
+    "temperatureProblem": "Navedite temperaturu od {min} do {max}.",
+    "rateProblem": "Navedite brzinu kao cijeli broj stupnjeva na sat.",
+    "holdProblem": "Navedite zadržavanje u cijelim minutama, najviše do jednog dana.",
+    "one": {
+      "orton": "stožac {cone}",
+      "sk": "SK {cone}"
+    },
+    "span": {
+      "orton": "stožac {low}–{high}",
+      "sk": "SK {low}–{high}",
+      "temperature": "{low} do {high}"
+    },
+    "testedAt": "Ispitano na {cones}",
+    "claimedRange": "navedeni raspon {range}",
+    "rangeUntested": "Raspon {range}; nijedan stožac nije označen kao ispitan",
+    "approxTemperature": "≈ {temperature} ({basis}; približno)",
+    "approxCone": "≈ {cone} ({basis}; približno)",
+    "basis": {
+      "orton60": "veliki Ortonovi stošci pri 60 °C na sat",
+      "kyoto": "izmjereno pri 100 °C na sat u gradskom institutu u Kyotu",
+      "stated": "kako je navedeno"
+    },
+    "rateText": "{rate} na sat u posljednjem satu",
+    "holdText": "zadržavanje {minutes} min",
+    "witnessText": "provjereno kontrolnim stošcem",
+    "asGiven": "Pečenje, kako ga je naveo autor:",
+    "filterCone": "Prikaži recepte za stožac",
+    "anyCone": "Bilo koji stožac",
+    "filterAtmosphere": "Prikaži recepte za atmosferu ili postupak",
+    "anyAtmosphere": "Bilo koja atmosfera ili postupak",
+    "duplicate": "Dupliciraj za drugi stožac",
+    "duplicateName": "Dupliciraj {title} za drugi stožac",
+    "duplicateTitle": "{title} (drugi stožac)",
+    "duplicateNote": "Kopija recepta {title}, još nije spremljena: odaberite njezin novi stožac u Pečenju. Prelazak glazure na drugi stožac obično znači preoblikovanje recepta, a ne samo pečenje na višoj ili nižoj temperaturi, pa provjerite granice i ispitajte je."
+  },
+  "firings": {
+    "heading": "Zapisnici pečenja",
+    "open": "Poveži zapisnike pečenja",
+    "fetchFailed": "Ne možemo dohvatiti vaše zapisnike pečenja.",
+    "noLogs": "Još nema zapisnika pečenja.",
+    "toLogs": "Zabilježi pečenje",
+    "saveFailed": "Ne možemo spremiti promjenu veza sa zapisnicima pečenja.",
+    "resultFor": "Rezultat u {title}",
+    "resultPlaceholder": "Kako je ispalo: sjajna, bez pucanja...",
+    "unlink": "Prekini vezu",
+    "unlinkName": "Prekini vezu: {title}",
+    "choose": "Zapisnik pečenja za povezivanje",
+    "link": "Poveži",
+    "fill": "Označi stošce koje ovi zapisnici navode: {cones}",
+    "replaceAsk": "Kao ispitano označeno je {now}. Zamijeniti to stošcima koje navode zapisnici, {logs}?",
+    "replace": "Zamijeni",
+    "keep": "Ostavi kako jest"
   }
 }

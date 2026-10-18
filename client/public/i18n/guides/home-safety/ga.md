@@ -149,76 +149,76 @@ Deir Pet Poison Helpline “Tá luaidhe tocsaineach do gach speiceas, ach is iad
 
 Má d’fhéadfadh sé gur ith nó gur ól peata rud ar bith ón stiúideo, nó má tá comharthaí air cosúil leo siúd thuas, cuir glao ar do thréidlia nó ar líne chomhairle faoi nimh d’ainmhithe (féach an tábla ag an mbarr), agus ainm an ábhair agus meáchan an pheata ar láimh agat.
 
-## The kiln {#the-kiln lang=en}
+## An áith {#the-kiln}
 
-### The outside gets hot enough to burn
+### Éiríonn an taobh amuigh te go leor chun tú a dhó
 
-A UK schools risk assessment says a kiln's outside "can reach 160 °C and possibly more" (about 320 °F), and a school kiln guide reports metal bands at up to 460 °F (about 240 °C). Skutt, a kiln maker, recommends a kiln room that can be locked against children and pets. Where a room cannot be locked, the school guide suggests a barrier such as a kiln safety screen.
+Deir measúnú riosca do scoileanna sa Ríocht Aontaithe gur féidir le taobh amuigh áithe “160 °C a bhaint amach agus níos mó b’fhéidir” (thart ar 320 °F), agus tuairiscíonn treoirlínte scoile faoi áitheanna bandaí miotail suas le 460 °F (thart ar 240 °C). Molann Skutt, déantóir áitheanna, seomra áithe is féidir a ghlasáil ar leanaí agus ar pheataí. Nuair nach féidir seomra a chur faoi ghlas, molann na treoirlínte scoile bacainn, mar shampla scáileán sábháilteachta áithe.
 
-Small children and pets cannot understand a warning sign. We suggest keeping them behind a locked door or a barrier while the kiln fires and while it cools, and posting a warning sign for everyone else.
+Ní féidir le leanaí beaga ná le peataí comhartha rabhaidh a thuiscint. Molaimid iad a choinneáil taobh thiar de dhoras faoi ghlas nó de bhacainn fad a bhíonn an áith ag bácáil agus fad a bhíonn sí ag fuarú, agus comhartha rabhaidh a chur suas do gach duine eile.
 
-### Space around it
+### Spás timpeall uirthi
 
-Sources disagree on clearance. Rio Grande says at least 12 inches (30 cm) from walls and anything combustible. L&L strongly recommends 18 inches (46 cm) to all walls, and the building code it cites asks for 3 feet (0.9 m) from combustible walls. Follow your kiln's manual and local fire code; if you are unsure, allow 18 inches from any wall and 3 feet from anything that can burn. In a garage, keep cars, fuel and paint well away.
+Ní réitíonn na foinsí le chéile faoin nglanspás. Deir Rio Grande: 12 orlach (30 cm) ar a laghad ó bhallaí agus ó aon rud indóite. Molann L&L go láidir 18 n-orlach (46 cm) ó gach balla, agus iarrann an cód tógála a luann sé 3 troithe (0.9 m) ó bhallaí indóite. Lean lámhleabhar d’áithe agus an cód dóiteáin áitiúil; mura bhfuil tú cinnte, fág 18 n-orlach ó aon bhalla agus 3 troithe ó aon rud a dhófadh. I ngaráiste, coinnigh carranna, breosla agus péint i bhfad ón áith.
 
-### Power
+### Leictreachas
 
-Rio Grande recommends a **dedicated circuit** (one that powers nothing else) with a properly grounded outlet. We suggest no extension cord. Between firings, switch off the kiln's breaker or disconnect switch, or unplug it, so a child cannot start it.
+Molann Rio Grande **ciorcad tiomnaithe** (ciorcad nach dtugann cumhacht d’aon rud eile) le soicéad atá talmhaithe i gceart. Molaimid gan cábla sínteach a úsáid. Idir bácálacha, cas as scoradán ciorcaid nó lasc aonrúcháin na háithe, nó díphlugáil í, ionas nach féidir le leanbh í a chur ar siúl.
 
-### Be there when the firing ends
+### A bheith i láthair nuair a chríochnaíonn an bhácáil
 
-A **kiln sitter** is the mechanical switch on many manual kilns: a small cone bends at the end of the firing and trips the switch off. Its manual says it "is NOT intended to perform as a fail-safe shut-off device." Rio Grande says never to leave a firing kiln unattended, "especially near the expected shut-off time". So stay nearby and check the kiln while it fires, above all near the end; fire only when an adult will be home and awake to do that, check that it has switched off, and keep an ABC fire extinguisher in the kiln room. For how sitters, controllers and schedules work, see [Firing a basic kiln](/guides/firing).
+Is é **Kiln-Sitter** an lasc mheicniúil atá ar go leor áitheanna láimhe: lúbann cón{{en: cone}} beag ag deireadh na bácála agus cuireann sé an lasc as. Deir a lámhleabhar “NÍL sé ceaptha feidhmiú mar ghléas múchta slánchinnte.” Deir Rio Grande gan áith atá ag bácáil a fhágáil gan aire riamh, “go háirithe in aice leis an am múchta a bhfuiltear ag súil leis”. Mar sin, fan in aice láimhe agus seiceáil an áith agus í ag bácáil, go háirithe gar don deireadh; ná bácáil ach nuair a bheidh duine fásta sa bhaile agus ina dhúiseacht chun sin a dhéanamh, seiceáil gur mhúch an áith, agus coinnigh múchtóir dóiteáin ABC i seomra na háithe. Chun a fháil amach conas a oibríonn Kiln-Sitter, rialaitheoirí agus cláir bhácála, féach an treoirleabhar [Bácáil in áith shimplí](/guides/firing).
 
-### Fumes and carbon monoxide
+### Múch agus aonocsaíd charbóin
 
-Firing gives off fumes, so vent the kiln to the outdoors; [Safe mixing and ventilation](/guides/safe-mixing) explains how. A kiln in an attached garage needs venting that keeps fumes from reaching the house through the connecting door. Keep birds in a far room whenever the kiln fires.
+Tugann an bhácáil múch uaithi, mar sin aeráil an áith amach faoin aer; míníonn an treoirleabhar [Meascadh sábháilte agus aeráil](/guides/safe-mixing) conas é sin a dhéanamh. Teastaíonn ó áith i ngaráiste atá ceangailte den teach aeráil a choinníonn an mhúch ó theacht isteach sa teach tríd an doras eatarthu. Coinnigh éin i seomra i bhfad ón áith aon uair a bhíonn sí ag bácáil.
 
-**Carbon monoxide** (CO) is a poisonous gas you cannot see or smell. A university kiln safety sheet requires CO alarms with gas kilns. Views differ for electric kilns, but burning off organic matter (in clay, or things like paper or wax) can make CO. We think a CO alarm in the kiln room and the rooms next to it is a sensible, inexpensive step for any kiln.
+Gás nimhiúil is ea **aonocsaíd charbóin** (CO) nach féidir leat a fheiceáil ná a bholadh. Éilíonn bileog sábháilteachta áithe ó ollscoil aláraim aonocsaíde carbóin le háitheanna gáis. Tá tuairimí éagsúla ann faoi áitheanna leictreacha, ach nuair a dhóitear ábhar orgánach (sa chré, nó i rudaí ar nós páipéir nó céarach) is féidir CO a chruthú. Is dóigh linn gur céim chiallmhar nach gcosnaíonn mórán é aláram aonocsaíde carbóin i seomra na háithe agus sna seomraí in aice leis, d’aon áith.
 
-### Peepholes and eyes
+### Poill faire agus na súile
 
-Infrared light, which you cannot see, "starts at 752°F (400°C)", and the Ceramic Arts Network says looking into a kiln above this should always be done with eye protection. Infrared can damage the lens of the eye and lead to cataracts, and long gazing can injure the retina. Sunglasses and didymium glasses do not block it.
+Tosaíonn solas infridhearg, nach féidir leat a fheiceáil, “ag 752°F (400°C)”, agus deir Ceramic Arts Network gur cheart súilchosaint a chaitheamh i gcónaí nuair a bhreathnaíonn tú isteach in áith os cionn na teochta sin. Is féidir le solas infridhearg damáiste a dhéanamh do lionsa na súile agus cataracht a chruthú, agus is féidir le stánadh fada an reitine a ghortú. Ní choisceann spéaclaí gréine ná spéaclaí didimiam é.
 
 > [!WARNING]
-> Children should not look into a kiln at all. A glowing peephole draws them, and they will not reliably keep protective glasses on, so keep them away while the kiln is hot. Adults should look only briefly, through IR-rated welding glasses. Sources recommend shades from 1.7 to 5; shade 3 is a sensible choice, darker if you see spots afterward.
+> Níor cheart do leanaí breathnú isteach in áith ar chor ar bith. Meallann poll faire atá ag lonrú iad, agus ní féidir brath orthu spéaclaí cosanta a choinneáil orthu, mar sin coinnigh uaithi iad fad atá an áith te. Níor cheart do dhaoine fásta breathnú isteach ach go hachomair, trí spéaclaí táthúcháin rátáilte do IR. Molann foinsí scáthanna ó 1.7 go 5; is rogha chiallmhar é scáth 3, nó scáth níos dorcha má fheiceann tú spotaí ina dhiaidh sin.
 
-## Handmade ware on the family table {#handmade-ware lang=en}
+## Gréithe lámhdhéanta ar bhord an teaghlaigh {#handmade-ware}
 
-The question for pots on the family table is **leaching**: metals dissolving out of the fired glaze into food or drink. The FDA warns that if pottery "is not manufactured properly, this lead can leach into food and drink", and that "no amount of washing, boiling, or other process can remove lead from pottery." Regulators such as the US FDA and the EU limit how much lead and cadmium a finished piece releases in a standard acid test, not what the glaze contains. The strictest US limit, for cups, mugs and pitchers, is 0.5 µg/mL of lead.
+Is í an cheist i gcás potaí ar bhord an teaghlaigh ná **láisteadh**{{en: leaching}}: miotail ag tuaslagadh as an nglónra{{en: glaze}} bácáilte isteach i mbia nó i ndeoch. Tugann an FDA rabhadh, mura ndéantar potaireacht “i gceart, gur féidir leis an luaidhe seo láisteadh isteach i mbia agus i ndeoch”, agus “nach féidir luaidhe a bhaint as potaireacht le níochán, le fiuchadh ná le haon phróiseas eile, is cuma cé mhéad.” Cuireann rialtóirí ar nós an FDA i SAM agus an AE teorainn leis an méid luaidhe agus caidmiam a scaoileann píosa críochnaithe i dtástáil chaighdeánach aigéid, ní leis an méid atá sa ghlónra. Is é 0.5 µg/mL luaidhe an teorainn is déine i SAM, do chupáin, do mhugaí agus do chrúscaí.
 
-### Lead-free is not the same as food-safe
+### Ní hionann gan luaidhe agus slán i gcomhair bia
 
-A glaze with no lead can still leach. Digitalfire, a glaze chemistry reference, names glazes containing "heavy metal oxide colorants, barium, lithium, or lead" as the concern, and warns that a stain fired above its rated temperature can release cadmium. The ASTM D-4236 art-materials label on a jar "DOES NOT establish that a fired glaze is food-safe", and "Tableware producers must test all finished ware to establish dinnerware status."
+Is féidir le glónra gan luaidhe láisteadh fós. Deir Digitalfire, foinse thagartha ar cheimic ghlónraí, gurb iad na glónraí ina bhfuil “ocsaídí miotal trom mar ábhair datha{{en: colorants}}, bairiam, litiam nó luaidhe” is cúis imní, agus tugann sé rabhadh gur féidir le lí{{en: stain}} a bhácáiltear os cionn na teochta atá rátáilte di caidmiam a scaoileadh. Maidir le lipéad ábhar ealaíne ASTM D-4236 ar phróca, “NÍ DHEARBHAÍONN sé go bhfuil glónra bácáilte slán i gcomhair bia{{en: food-safe}}”, agus “Ní mór do tháirgeoirí gréithe boird gach earra críochnaithe a thástáil chun stádas gréithe dinnéir a dhearbhú.”
 
 > [!NOTE]
-> "Food safe" means this glaze, on this clay, fired to this cone, applied this way, releases less than the legal limits. A recipe calculation, Glazecalc's included, can flag a risky recipe but cannot prove a pot is safe. Only a leach test of the fired piece can.
+> Ciallaíonn “slán i gcomhair bia” go scaoileann an glónra seo, ar an gcré seo, bácáilte go dtí an cón{{en: cone}} seo, curtha air ar an mbealach seo, níos lú ná na teorainneacha dlíthiúla. Is féidir le ríomh oidis, ríomh na haipe Glazecalc san áireamh, rabhadh a thabhairt faoi oideas contúirteach, ach ní féidir leis a chruthú go bhfuil pota slán. Ní féidir é sin a chruthú ach le tástáil saotharlainne láistithe miotal ar an bpíosa bácáilte.
 
-We suggest reading a "food safe" label on a commercial glaze as a good start, not a guarantee: a different clay, a thicker coat, another cone or a second glaze on top changes the result.
+Molaimid lipéad “slán i gcomhair bia” ar ghlónra tráchtála a léamh mar thús maith, ní mar ráthaíocht: athraíonn cré dhifriúil, brat níos tiubha, cón eile nó dara glónra anuas air an toradh.
 
-### Testing
+### Tástáil
 
-Laboratories test fired pieces with a standard acid soak that represents a worst case, such as ASTM C738 in the US. One lab's EU test needs four identical pieces and takes seven working days, so make spares of anything you plan to have tested.
+Tástálann saotharlanna píosaí bácáilte trí iad a mhaothú in aigéad ar bhealach caighdeánach a léiríonn an cás is measa, mar shampla ASTM C738 i SAM. Teastaíonn ceithre phíosa chomhionanna don tástáil AE a dhéanann saotharlann amháin, agus tógann sí seacht lá oibre, mar sin déan píosaí breise d’aon rud a bhfuil sé i gceist agat é a chur chun tástála.
 
-Home tests are disputed. The FDA says home swab kits can show leachable lead, and that a piece that tests positive should not be used for food. Ceramics NZ warns that consumer lead-test pens are "not designed for this use" on ceramics and can give false positives. Digitalfire suggests leaving a lemon slice on the glaze overnight as a rough screen. The safe reading: a positive home test means stop using the piece for food, and a negative one proves nothing. Only a lab can tell you a piece is safe.
+Tá conspóid faoi thástálacha baile. Deir an FDA gur féidir le trealamh maipíní baile luaidhe a d’fhéadfadh láisteadh a thaispeáint, agus nár cheart píosa a mbíonn toradh dearfach air a úsáid do bhia. Tugann Ceramics NZ rabhadh nach bhfuil pinn tástála luaidhe do thomhaltóirí “deartha don úsáid seo” ar cheirmeacht, agus gur féidir leo torthaí bréagdheimhneacha a thabhairt. Molann Digitalfire slis líomóide a fhágáil ar an nglónra thar oíche mar scagthástáil gharbh. An léamh sábháilte: má bhíonn tástáil bhaile dearfach, stop ag úsáid an phíosa do bhia, agus ní chruthaíonn toradh diúltach faic. Ní féidir ach le saotharlann a insint duit go bhfuil píosa slán.
 
-### Crazed ware
+### Gréithe snáithlíonraithe
 
-**Crazing** is a network of fine cracks in the glaze surface, and sources disagree about it. A Ceramics Monthly experiment found crazed tiles could be cleaned, best in a dishwasher, though they came out less clean than uncrazed tiles after soap and water. Digitalfire holds that "Crazed ware is unacceptable" and that crazing "severely weakens ware". The safe course is simple: do not use crazed pieces for food.
+Is éard is **snáithlíonrú**{{en: crazing}} ann ná gréasán de scoilteanna míne i ndromchla an ghlónra, agus ní réitíonn na foinsí le chéile faoi. Fuair turgnamh de chuid Ceramics Monthly gurbh fhéidir tíleanna snáithlíonraithe a ghlanadh, sa mhiasniteoir is fearr, cé nach raibh siad chomh glan le tíleanna gan snáithlíonrú tar éis gallúnaí agus uisce. Maíonn Digitalfire nach bhfuil “gréithe snáithlíonraithe inghlactha” agus go lagaíonn snáithlíonrú “na gréithe go mór”. Is simplí an bealach sábháilte: ná húsáid píosaí snáithlíonraithe do bhia.
 
-### Liner glazes
+### Glónraí líneála
 
-A **liner glaze** is the glaze on the inside of a cup or bowl, where the food sits. Digitalfire describes a liner that may be low enough in risk to use without lab testing: no colorants, barium, lead or lithium; fully melted; no crazing; and it wears well. Even then, only a leach test of your own fired pots shows whether they are food-safe. Warning signs in any glaze are heavy amounts of colorant, crystals on the surface and poor melting.
+Is é **glónra líneála**{{en: liner glaze}} an glónra ar an taobh istigh de chupán nó de bhabhla, san áit a mbíonn an bia. Déanann Digitalfire cur síos ar ghlónra líneála a d’fhéadfadh a bheith íseal go leor ó thaobh riosca de le húsáid gan tástáil saotharlainne: gan ábhair datha, bairiam, luaidhe ná litiam; leáite go hiomlán; gan snáithlíonrú; agus seasann sé go maith le caitheamh. Fiú ansin, ní thaispeánann ach tástáil láistithe miotal ar do photaí bácáilte féin an bhfuil siad slán i gcomhair bia. Is comharthaí rabhaidh in aon ghlónra iad méideanna móra ábhar datha, criostail ar an dromchla agus leá lag.
 
-### Family rules we suggest
+### Rialacha teaghlaigh a mholaimid
 
-- Children's cups, bowls and plates: only lab-tested, durable liner glazes, or commercial dinnerware.
-- Do not store acidic food or drink (citrus, tomato, vinegar, fruit juice, wine) in pots glazed with anything you have not had tested.
-- Do not use crazed pieces for food.
-- Test tiles and experiments stay in the studio, never in the kitchen, the toy box or the pet's bowl.
-- Take care with other pottery too. The FDA advises caution with handmade or crude-looking pieces, antiques, damaged or worn pieces, flea-market finds and bright orange, red or yellow decoration.
-- If a child has used pottery you now doubt, the FDA says to talk to a doctor about a blood lead test.
+- Cupáin, babhlaí agus plátaí leanaí: ná húsáid ach glónraí líneála buanfasacha a tástáladh i saotharlann, nó gréithe dinnéir tráchtála.
+- Ná stóráil bia ná deoch aigéadach (torthaí citris, trátaí, fínéagar, sú torthaí, fíon) i bpotaí atá glónraithe le haon rud nár cuireadh chun tástála.
+- Ná húsáid píosaí snáithlíonraithe do bhia.
+- Fanann tíleanna tástála{{en: test tiles}} agus turgnaimh sa stiúideo, agus ní théann siad riamh isteach sa chistin, i mbosca na mbréagán ná i mbabhla an pheata.
+- Bí cúramach le potaireacht eile freisin. Molann an FDA a bheith cúramach le píosaí lámhdhéanta nó píosaí a bhfuil cuma gharbh orthu, seandachtaí, píosaí damáistithe nó caite, rudaí a fuarthas ag margadh na míolta agus maisiú geal oráiste, dearg nó buí.
+- Má d’úsáid leanbh potaireacht a bhfuil amhras ort fúithi anois, deir an FDA labhairt le dochtúir faoi thástáil luaidhe fola.
 
-For more on how glazes melt, why some leach and what the limits mean, see [Glazing from first principles](/guides/glazing-basics).
+Chun tuilleadh a fháil amach faoi conas a leánn glónraí, cén fáth a láisteann cuid acu agus cad is brí leis na teorainneacha, féach an treoirleabhar [Glónrú ó bhunphrionsabail](/guides/glazing-basics).
 
 ## Foinsí {#sources}
 

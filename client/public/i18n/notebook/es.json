@@ -88,7 +88,15 @@
     "chooseField": "Elija el campo que quiere añadir y luego pulse Añadir el campo.",
     "fetchFailed": "Se ha producido un error al obtener los registros de cocción.",
     "saved": "Se ha añadido correctamente el registro de cocción al servidor.",
-    "saveFailed": "Error: ha fallado la solicitud al servidor."
+    "saveFailed": "Error: ha fallado la solicitud al servidor.",
+    "recipesHeading": "Recetas cocidas en esta cocción",
+    "noRecipes": "Aún no hay recetas vinculadas.",
+    "recipesFailed": "No se pudieron obtener sus recetas, así que ahora no se puede vincular ninguna.",
+    "pickRecipe": "Una receta cocida en esta cocción",
+    "linkRecipe": "Vincular la receta",
+    "unlink": "Desvincular",
+    "unlinkRecipe": "Desvincular {title}",
+    "linkFailed": "No se pudo guardar el vínculo."
   },
   "notes": {
     "title": "Notas",

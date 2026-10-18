@@ -361,7 +361,8 @@
     "heading": "Zagrożenia",
     "intro": "Zgodnie z kartą każdego surowca; zagrożenia surowców z biblioteki standardowej pochodzą z kart charakterystyki dostawców.",
     "line": "<b>{names}:</b> {hazards}",
-    "unknown": "{count, plural, one {Nie podano zagrożeń dla: {list}. Należy zajrzeć do karty charakterystyki dołączonej do tego surowca.} few {Nie podano zagrożeń dla: {list}. Należy zajrzeć do kart charakterystyki dołączonych do tych surowców.} many {Nie podano zagrożeń dla: {list}. Należy zajrzeć do kart charakterystyki dołączonych do tych surowców.} other {Nie podano zagrożeń dla: {list}. Należy zajrzeć do kart charakterystyki dołączonych do tych surowców.}}"
+    "unknown": "{count, plural, one {Nie podano zagrożeń dla: {list}. Należy zajrzeć do karty charakterystyki dołączonej do tego surowca.} few {Nie podano zagrożeń dla: {list}. Należy zajrzeć do kart charakterystyki dołączonych do tych surowców.} many {Nie podano zagrożeń dla: {list}. Należy zajrzeć do kart charakterystyki dołączonych do tych surowców.} other {Nie podano zagrożeń dla: {list}. Należy zajrzeć do kart charakterystyki dołączonych do tych surowców.}}",
+    "safety": "Suche surowce do szkliw wytwarzają pył: nie należy dopuszczać, by trafiał do płuc, także gdy pochodzi z surowców niesklasyfikowanych jako niebezpieczne: zob. <mixing>Bezpieczne rozrabianie szkliw i wentylacja</mixing> oraz <home>Jak nie otruć własnej rodziny</home>, jeśli w pobliżu są dzieci lub zwierzęta. Jeśli karta charakterystyki surowca podaje więcej, należy postępować według niej."
   },
   "compare": {
     "heading": "Porównaj dwie receptury",
@@ -590,7 +591,10 @@
     "guidance": "To wytyczne, a nie ocena „zalicza lub nie zalicza”: szkliwo spoza nich może być dobre, a to mieszczące się w nich może mimo to pękać włoskowato, uwalniać metale lub zawieść. Należy je przetestować.",
     "source": "Źródło:",
     "saveFailed": "Nie udało się zapisać wyboru zestawu limitów na koncie, więc nadal obowiązuje poprzedni zestaw.",
-    "ownLimits": "Te propozycje korzystają z własnych limitów Glazecalc, a nie z zestawu {name}."
+    "ownLimits": "Te propozycje korzystają z własnych limitów Glazecalc, a nie z zestawu {name}.",
+    "firingFromBlock": "Z wypału receptury ({bands})",
+    "bothBands": "Wypał receptury obejmuje {bands}, więc każdy z nich jest sprawdzany, obok siebie: szkliwo rzadko zachowuje się tak samo na obu końcach.",
+    "fromFiring": "Wartości dotyczą wypału receptury: {band}. Aby sprawdzić inny, należy wybrać wypał powyżej."
   },
   "stull": {
     "heading": "Wykres Stulla",
@@ -714,7 +718,8 @@
     "notSaved": "Nic nie zapisano: {problem}",
     "stopped": "Zapisano {saved} z {count}. Pozostałych nie zapisano: {problem}",
     "saved": "{count, plural, one {Zapisano # recepturę.} few {Zapisano # receptury.} many {Zapisano # receptur.} other {Zapisano # receptury.}}",
-    "openRecipes": "Otwórz receptury"
+    "openRecipes": "Otwórz receptury",
+    "firingRead": "Wypał odczytany z uwag: {firing}"
   },
   "blends": {
     "title": "Mieszanki do płytek testowych",
@@ -847,5 +852,115 @@
     "retry": "Spróbuj ponownie",
     "about": "Glazecalc to bezpłatny kalkulator szkliw dla ceramików.",
     "aboutLink": "O aplikacji Glazecalc"
+  },
+  "firing": {
+    "heading": "Wypał",
+    "whatIsCone": "Co oznacza stożek?",
+    "scale": "Skala",
+    "scales": {
+      "orton": "Stożki Ortona",
+      "sk": "Stożki SK (JIS)",
+      "temperature": "Temperatura"
+    },
+    "groups": {
+      "usual": "Stożki od 022 do 13",
+      "half": "Stożki połówkowe",
+      "above": "Stożki od 14 do 42 (rzadkie w ceramice)"
+    },
+    "coneLabel": "Stożek",
+    "lowCone": "Od stożka",
+    "highCone": "Do stożka",
+    "noHigh": "Brak górnego stożka",
+    "notStated": "Nie podano",
+    "peak": "Temperatura maksymalna ({unit})",
+    "lowTemperature": "Od ({unit})",
+    "highTemperature": "Do ({unit})",
+    "rangeToggle": "Zakres",
+    "testedLegend": "Testowano przy: zaznacz każdy stożek, do którego wypalono szkliwo",
+    "atmosphere": "Atmosfera",
+    "process": "Technika",
+    "atmospheres": {
+      "oxidation": "utleniająca",
+      "reduction": "redukcyjna",
+      "neutral": "neutralna"
+    },
+    "processes": {
+      "wood": "wypał drewnem",
+      "soda": "wypał sodowy",
+      "salt": "wypał solny",
+      "raku": "raku",
+      "pit": "wypał w dole"
+    },
+    "rate": "Przyrost w ostatniej godzinie ({unit} na godzinę)",
+    "hold": "Przetrzymanie w temperaturze maksymalnej (minuty)",
+    "schedule": "Uwagi o programie",
+    "schedulePlaceholder": "Przetrzymanie 10 minut, powolne chłodzenie...",
+    "witness": "Potwierdzone stożkiem kontrolnym",
+    "foodSurface": "Dla powierzchni mającej kontakt z żywnością (szkliwo do wnętrza naczyń)",
+    "liner": {
+      "note": "Bezpieczeństwo w kontakcie z żywnością zależy od wypalenia tego szkliwa do stożka, przy którym je testowano: niedopalone szkliwo może uwalniać metale.",
+      "range": "Podano je dla zakresu, więc należy je testować na dolnym końcu zakresu, gdzie topi się najsłabiej.",
+      "untested": "Żaden stożek nie jest jeszcze oznaczony jako testowany.",
+      "test": "Tylko badanie uwalniania metali z własnych wypalonych naczyń pokazuje, czy szkliwo jest bezpieczne dla żywności."
+    },
+    "helpSummary": "O wypale",
+    "help": {
+      "cone": "Stożek, do którego wypalono to szkliwo. Stożki mierzą pracę cieplną (czas i temperaturę), a nie tylko temperaturę, więc stożek 06 jest znacznie chłodniejszy niż stożek 6.",
+      "range": "Jeśli szkliwo działa w pewnym zakresie, należy podać najniższy i najwyższy stożek oraz zaznaczyć stożki, do których faktycznie je wypalono: stożek testowany pokazuje się pierwszy. Szkliwo może wyglądać i zachowywać się inaczej na każdym końcu zakresu.",
+      "convert": "Stożek jest zapisywany tak, jak go podano. Każda konwersja na inną skalę lub na temperaturę jest przybliżona: stożek ugina się w innej temperaturze przy innej szybkości nagrzewania, a stożki SK i Ortona o tym samym numerze nie są takie same.",
+      "move": "Przeniesienie szkliwa na inny stożek zwykle oznacza zmianę jego receptury, a nie tylko wypalenie go w wyższej lub niższej temperaturze. Opcja Duplikuj dla innego stożka zachowuje obie wersje."
+    },
+    "temperatureProblem": "Należy podać temperaturę od {min} do {max}.",
+    "rateProblem": "Należy podać przyrost jako całkowitą liczbę stopni na godzinę.",
+    "holdProblem": "Należy podać przetrzymanie w pełnych minutach, najwyżej do doby.",
+    "one": {
+      "orton": "stożek {cone}",
+      "sk": "SK {cone}"
+    },
+    "span": {
+      "orton": "stożek {low}–{high}",
+      "sk": "SK {low}–{high}",
+      "temperature": "od {low} do {high}"
+    },
+    "testedAt": "Testowano przy {cones}",
+    "claimedRange": "deklarowany zakres {range}",
+    "rangeUntested": "Zakres {range}; żaden stożek nie jest zaznaczony jako testowany",
+    "approxTemperature": "≈ {temperature} ({basis}; przybliżone)",
+    "approxCone": "≈ {cone} ({basis}; przybliżone)",
+    "basis": {
+      "orton60": "duże stożki Ortona przy 60 °C na godzinę",
+      "kyoto": "zmierzone przy 100 °C na godzinę przez miejski instytut w Kioto",
+      "stated": "jak podano"
+    },
+    "rateText": "{rate} na godzinę w ostatniej godzinie",
+    "holdText": "przetrzymano {minutes} min",
+    "witnessText": "sprawdzono stożkiem kontrolnym",
+    "asGiven": "Wypał, tak jak podał go autor:",
+    "filterCone": "Pokaż receptury dla stożka",
+    "anyCone": "Dowolny stożek",
+    "filterAtmosphere": "Pokaż receptury dla atmosfery lub techniki",
+    "anyAtmosphere": "Dowolna atmosfera lub technika",
+    "duplicate": "Duplikuj dla innego stożka",
+    "duplicateName": "Duplikuj dla innego stożka: {title}",
+    "duplicateTitle": "{title} (inny stożek)",
+    "duplicateNote": "Kopia: {title}, jeszcze niezapisana. Nowy stożek wybiera się w sekcji Wypał. Przeniesienie szkliwa na inny stożek zwykle oznacza zmianę jego receptury, a nie tylko wypalenie go w wyższej lub niższej temperaturze, więc należy sprawdzić limity i przetestować je."
+  },
+  "firings": {
+    "heading": "Dzienniki wypałów",
+    "open": "Połącz dzienniki wypałów",
+    "fetchFailed": "Nie udało się pobrać dzienników wypałów.",
+    "noLogs": "Brak dzienników wypałów.",
+    "toLogs": "Zapisz wypał",
+    "saveFailed": "Nie udało się zapisać zmiany połączeń z dziennikami wypałów.",
+    "resultFor": "Wynik w: {title}",
+    "resultPlaceholder": "Jak wyszło: błyszczące, bez pęknięć włoskowatych...",
+    "unlink": "Odłącz",
+    "unlinkName": "Odłącz: {title}",
+    "choose": "Dziennik wypałów do połączenia",
+    "link": "Połącz",
+    "fill": "Zaznacz stożki wymienione w tych dziennikach: {cones}",
+    "replaceAsk": "W polu Testowano przy zaznaczono {now}. Zastąpić stożkami wymienionymi w dziennikach, {logs}?",
+    "replace": "Zastąp",
+    "keep": "Zostaw bez zmian"
   }
 }

@@ -248,6 +248,22 @@
       "saved": "Saglabāts skaitļu un datumu formāts: {language}.",
       "help": "Kā raksta skaitļus un datumus: 12,345.6 vai 12.345,6, un kādā secībā ir diena un mēnesis."
     },
+    "calendar": {
+      "legend": "Kalendārs",
+      "help": "Kalendārs, kādā tiek rādīti datumi. Jūsu ievadītie datumi paliek Gregora kalendārā.",
+      "gregory": {
+        "label": "Gregora kalendārs",
+        "saved": "Saglabāts: datumi tiek rādīti Gregora kalendārā."
+      },
+      "buddhist": {
+        "label": "Taizemes budistu ēra",
+        "saved": "Saglabāts: datumi tiek rādīti Taizemes budistu ērā."
+      },
+      "japanese": {
+        "label": "Japānas ēras",
+        "saved": "Saglabāts: datumi tiek rādīti Japānas ērās."
+      }
+    },
     "decimalMark": {
       "legend": "Daudzumu ievade",
       "either": {

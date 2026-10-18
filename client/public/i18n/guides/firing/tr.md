@@ -165,69 +165,69 @@ Farklar bekleyin: Orton, “Genellikle fırının üstünden altına en az bir p
 
 :::orton
 
-## The kiln sitter {#kiln-sitter lang=en}
+## Kiln sitter {#kiln-sitter}
 
-A **kiln sitter** is the mechanical switch, on the outside of many basic and older kilns, that turns the kiln off when a small cone bends. The best known is the Dawson Kiln-Sitter. It makes firing easier, but it is a convenience, not a safety device.
+**Kiln sitter** (piramitli otomatik kapatma düzeneği), birçok basit ve eski fırının dışında bulunan, küçük bir piramit eğildiğinde fırını kapatan mekanik anahtardır. En bilineni Dawson Kiln-Sitter’dır. Pişirimi kolaylaştırır, ama bir güvenlik düzeneği değil, bir kolaylıktır.
 
-### How it works
+### Nasıl çalışır
 
-A porcelain tube reaches into the kiln. At its end, a small cone or a bar lies across two metal supports, under a **sensing rod** that pivots like a seesaw. Outside the kiln, the other end of the rod holds up a weight by a small claw. When the cone softens and bends to about 90°, the rod drops far enough to release the weight, the weight falls, and the power to the elements is cut.
+Porselen bir tüp fırının içine uzanır. Tüpün ucunda küçük bir piramit ya da çubuk, tahterevalli gibi dönen bir **algılama çubuğunun** altında, iki metal desteğin üzerine yatırılır. Fırının dışında, algılama çubuğunun diğer ucu küçük bir pençeyle bir ağırlığı tutar. Piramit yumuşayıp yaklaşık 90° eğildiğinde algılama çubuğu ağırlığı serbest bırakacak kadar iner; ağırlık düşer ve rezistanslara giden elektrik kesilir.
 
-Small cones and bars "give equivalent heat treatment". Orton notes that many beginners choose bars, because their even shape makes it easy to place them the same way every time. A small cone tapers, so where it sits matters: with its thin part under the rod the kiln shuts off cooler, and with its thick part hotter, a shift of "as much as 1/2 cone".
+Küçük piramitler ve çubuklar “eşdeğer ısıl işlem sağlar”. Orton, birçok yeni başlayanın çubukları seçtiğini belirtir, çünkü düzgün biçimleri onları her seferinde aynı şekilde yerleştirmeyi kolaylaştırır. Küçük bir piramit uca doğru incelir, bu yüzden nasıl oturduğu önemlidir: ince kısmı algılama çubuğunun altındaysa fırın daha soğukta, kalın kısmı altındaysa daha sıcakta kapanır; aradaki kayma “1/2 piramide kadar” çıkabilir.
 
-### Which cone goes in the sitter
+### Kiln sitter’a hangi piramit konur
 
-Sources disagree. Dawson, who made the sitter, says to use the same number as the firing cone on the shelf, and to go one number hotter only if the shelf cone stays unbent. L&L says to use one number hotter than the shelf cones, because the sitter sits near the wall and the elements, gets more heat, and tends to shut off early. Orton settles the principle: "The shelf cone is the final judge of the firing process, not the Kiln-Sitter cone or bar."
-
-> [!NOTE]
-> Our starting point: put a small cone of the same number as your target in the sitter, with a cone pack on the shelf. If the shelf firing cone is under-bent when the kiln shuts off, go one number hotter in the sitter next time, or set the thicker part of the cone under the rod. If it is over-bent, do the opposite.
-
-### Setting it up, and checks before every firing
-
-Dawson's procedure, which doubles as a check before every firing:
-
-1. Turn all the switches off. Check that the sensing rod moves freely, sits centered in the tube and is not bent or corroded. If it is sluggish, Dawson says to replace the tube assembly.
-2. Brush a thin coat of high-fire **kiln wash** (a coating that stops melted material sticking) onto the cone supports and the rod where it touches the cone. Never put wash on the cone or the porcelain tube.
-3. Load shelves and ware at least 1 in (25 mm) above or below the tube, so nothing can touch, fall against or block it.
-4. Lift the weight, press the claw down onto the trigger, and lay the cone or bar flat on the supports against the metal step, as your sitter's manual shows, the same way every time. Check it again before closing the lid: "AN IMPROPERLY PLACED CONE OR BAR COULD CAUSE AN OVERFIRING."
-5. Set the limit timer and push in the plunger until it locks. Keep the kiln level and the space under the weight clear, so the weight can fall.
-
-### The limit timer
-
-Many sitters, including Dawson's LT models, have a **limit timer**: a clock that turns the kiln off after a set time, as a backup "in case the KILN-SITTER fails". It should always be set longer than the firing is expected to take. Sources set the margin differently:
-
-Table: How long to set the limit timer
-Label: Limit timer settings
-
-| Source    | Setting                                                                                                                      |
-| --------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| Dawson    | ½ hour longer than the expected firing time until you know the kiln, later as little as ¼ hour; never set it beyond 20 hours |
-| L&L       | Very high the first time, noting how long the firing takes; after that, about 1 hour longer                                  |
-| Bracker's | 30 minutes to 1 hour longer than the firing time                                                                             |
+Kaynaklar farklı söyler. Kiln sitter’ı üreten Dawson, raftaki hedef piramitle aynı numarayı kullanmayı ve ancak raftaki piramit eğilmeden kalırsa bir numara daha sıcağa geçmeyi söyler. L&L ise raftaki piramitlerden bir numara daha sıcak olanı kullanmayı söyler, çünkü kiln sitter duvarın ve rezistansların yakınında durur, daha fazla ısı alır ve erken kapanma eğilimindedir. Orton ilkeyi netleştirir: “Pişirim sürecinin son yargıcı Kiln-Sitter piramidi ya da çubuğu değil, raftaki piramittir.”
 
 > [!NOTE]
-> Our starting point: generous the first time (within the dial's 20 hours), then ½ to 1 hour longer than the time you recorded. The timer also tells you how long a firing took: set at 7 and ending at 1 means 6 hours.
+> Başlangıç noktamız: kiln sitter’a hedefinizle aynı numarada küçük bir piramit koyun ve rafa bir piramit grubu{{en: cone pack}} yerleştirin. Fırın kapandığında raftaki hedef piramit yeterince eğilmemişse, bir sonraki sefer kiln sitter’da bir numara daha sıcağa geçin ya da piramidin kalın kısmını algılama çubuğunun altına getirin. Fazla eğilmişse tersini yapın.
 
-### When it shuts off early or late
+### Kurulum ve her pişirimden önceki kontroller
 
-After each firing, read the sitter cone beside the shelf cones.
+Dawson’ın yöntemi, aynı zamanda her pişirimden önce yapılacak bir kontroldür:
 
-Table: Reading the sitter after a firing
-Label: Kiln sitter problems
+1. Bütün anahtarları kapatın. Algılama çubuğunun serbestçe hareket ettiğini, tüpün ortasında durduğunu, eğilmemiş ve korozyona uğramamış olduğunu kontrol edin. Ağır hareket ediyorsa Dawson tüp grubunun değiştirilmesini söyler.
+2. Piramit desteklerine ve algılama çubuğunun piramide değdiği yere yüksek ısıya dayanıklı ince bir kat **raf koruyucu** (erimiş malzemenin yapışmasını önleyen kaplama) sürün. Piramide ya da porselen tüpe asla raf koruyucu sürmeyin.
+3. Rafları ve ürünleri tüpün en az 1 inç (25 mm) üstüne ya da altına yerleştirin; böylece hiçbir şey tüpe değemez, üzerine düşemez ya da önünü kapatamaz.
+4. Ağırlığı kaldırın, pençeyi tetiğin üzerine bastırın ve piramidi ya da çubuğu, kiln sitter’ınızın kullanım kılavuzunda gösterildiği gibi, desteklerin üzerine metal basamağa dayalı olarak düz yatırın; her seferinde aynı şekilde. Kapağı kapatmadan önce bir kez daha kontrol edin: “YANLIŞ YERLEŞTİRİLMİŞ BİR PİRAMİT YA DA ÇUBUK FAZLA PİŞİRİME YOL AÇABİLİR.”
+5. Süre sınırlayıcı zamanlayıcıyı ayarlayın ve basma düğmesini kilitlenene kadar içeri itin. Ağırlık düşebilsin diye fırını düz tutun ve ağırlığın altındaki boşluğu açık bırakın.
 
-| What you see                                    | Likely cause                                                                                           | What to do                                                       |
-| ----------------------------------------------- | ------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------- |
-| Sitter tripped, shelf firing cone under-bent    | The sitter ran hotter than the shelf (it sits near the wall)                                           | One cone hotter in the sitter, or the thicker part under the rod |
-| Sitter cone sagged well past 90°                | The kiln climbed too fast near the end                                                                 | Lower the switch settings, so the climb is slower (Dawson)       |
-| Sitter cone did not bend, or melted into a blob | The sitter itself: poor adjustment, a bent or corroded rod, or something lodged in or against the tube | Check and adjust the sitter by its manual before firing again    |
-| Early or late every time                        | Out of adjustment, or a worn rod                                                                       | Check with the firing gauge; move the trigger plate              |
+### Süre sınırlayıcı zamanlayıcı
 
-To check the adjustment, Dawson uses a **firing gauge** that holds the rod where a fully bent cone would leave it; there should then be "1/16th-inch clearance" (about 1.6 mm) at the claw. Check it every 30 firings. Ceramics Monthly's rule: if the kiln shuts off early, move the trigger plate up slightly; if late, move it down slightly. Whatever the sitter does, "Always trust large witness cones over small sitter cones."
+Dawson’ın LT modelleri de dahil olmak üzere birçok kiln sitter’da bir **süre sınırlayıcı zamanlayıcı** bulunur: “KILN-SITTER’ın arızalanması ihtimaline karşı” yedek olarak fırını belirli bir süre sonra kapatan bir saat. Zamanlayıcının her zaman pişirimin sürmesi beklenen süreden daha uzun bir süreye ayarlanması gerekir. Kaynaklar payı farklı belirler:
+
+Table: Süre sınırlayıcı zamanlayıcı ne kadara ayarlanmalı
+Label: Zamanlayıcı ayarları
+
+| Kaynak    | Ayar                                                                                                                                      |
+| --------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| Dawson    | Fırını tanıyana kadar beklenen pişirim süresinden ½ saat fazla, sonra ¼ saat fazlasına kadar inebilir; 20 saatin ötesine asla ayarlamayın |
+| L&L       | İlk seferde çok yüksek, pişirimin ne kadar sürdüğünü not ederek; sonrasında yaklaşık 1 saat fazla                                         |
+| Bracker's | Pişirim süresinden 30 dakika ile 1 saat arası fazla                                                                                       |
+
+> [!NOTE]
+> Başlangıç noktamız: ilk seferde cömert davranın (kadranın 20 saati içinde), sonra kaydettiğiniz süreden ½ ila 1 saat fazla. Zamanlayıcı bir pişirimin ne kadar sürdüğünü de söyler: 7’ye ayarlanıp 1’de bitmesi 6 saat demektir.
+
+### Erken ya da geç kapandığında
+
+Her pişirimden sonra kiln sitter piramidini raftaki piramitlerle yan yana okuyun.
+
+Table: Pişirimden sonra kiln sitter’ın okunması
+Label: Kiln sitter sorunları
+
+| Gördüğünüz                                                            | Olası neden                                                                                                                              | Ne yapmalı                                                                                |
+| --------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
+| Kiln sitter devreyi kesmiş, raftaki hedef piramit yeterince eğilmemiş | Kiln sitter raftan daha sıcak çalıştı (duvarın yakınında durur)                                                                          | Kiln sitter’da bir numara daha sıcak piramit, ya da kalın kısım algılama çubuğunun altına |
+| Kiln sitter piramidi 90°’yi çok geçecek kadar sarkmış                 | Fırın sona doğru çok hızlı çıktı                                                                                                         | Çıkış yavaşlasın diye anahtar ayarlarını düşürün (Dawson)                                 |
+| Kiln sitter piramidi eğilmemiş ya da eriyip topak olmuş               | Kiln sitter’ın kendisi: kötü ayar, eğilmiş ya da korozyona uğramış algılama çubuğu, ya da tüpün içine sıkışmış veya ona dayanmış bir şey | Yeniden pişirmeden önce kiln sitter’ı kullanım kılavuzuna göre kontrol edip ayarlayın     |
+| Her seferinde erken ya da geç                                         | Ayarı bozulmuş ya da algılama çubuğu aşınmış                                                                                             | Ayar mastarıyla kontrol edin; tetik plakasını kaydırın                                    |
+
+Ayarı kontrol etmek için Dawson, algılama çubuğunu tamamen eğilmiş bir piramidin bırakacağı konumda tutan bir **ayar mastarı** kullanır; bu durumda pençede “1/16 inç boşluk” (yaklaşık 1,6 mm) bulunması gerekir. Bunu her 30 pişirimde bir kontrol edin. Ceramics Monthly’nin kuralı: fırın erken kapanıyorsa tetik plakasını biraz yukarı, geç kapanıyorsa biraz aşağı kaydırın. Kiln sitter ne yaparsa yapsın, “Büyük gözlem piramitlerine{{en: witness cones}} her zaman küçük kiln sitter piramitlerinden daha çok güvenin.”
 
 > [!WARNING]
-> **A kiln sitter is not a safety device.** Dawson's manual says it "is NOT intended to perform as a fail-safe shut-off device and your kiln should NOT be left unattended beyond the estimated firing time." Something as simple as greenware falling against the tube "might cause an over-firing". Be there to check the kiln when it should be finishing, and never fire it over or near anything that burns, such as a wood floor or carpet.
+> **Kiln sitter bir güvenlik düzeneği değildir.** Dawson’ın kullanım kılavuzu, kiln sitter’ın “arızaya karşı güvenli bir kapatma düzeneği olarak çalışmak üzere TASARLANMADIĞINI ve fırınınızın tahmini pişirim süresinin ötesinde gözetimsiz BIRAKILMAMASI gerektiğini” söyler. Tüpe doğru devrilen kuru yarımamul{{en: greenware}} kadar basit bir şey bile “fazla pişirime yol açabilir”. Pişirimin bitmesi gereken zamanda fırını kontrol etmek için orada olun ve fırını asla ahşap zemin ya da halı gibi yanabilecek bir şeyin üzerinde ya da yakınında pişirmeyin.
 
-The sitter is built for firings "up to and including Cone 8". It cannot hold a temperature or cool slowly by itself. With practice and a log, though, you can "become the controller", as Digitalfire puts it: watch the cones and turn the switches by hand.
+Kiln sitter, “8 numaralı piramit de dahil olmak üzere bu piramide kadar” olan pişirimler için yapılmıştır. Kendi başına bir sıcaklıkta bekletme ya da yavaş soğutma yapamaz. Yine de pratikle ve pişirim kayıtlarıyla, Digitalfire’ın deyişiyle “kontrol ünitesi siz olabilirsiniz”: piramitleri izleyin ve anahtarları elle çevirin.
 
 :::
 

@@ -88,7 +88,15 @@
     "chooseField": "Scegliere un campo da aggiungere, poi fare clic su Aggiungi il campo.",
     "fetchFailed": "Si è verificato un errore nel recupero dei registri di cottura.",
     "saved": "Il registro di cottura è stato aggiunto al server.",
-    "saveFailed": "Errore: la richiesta al server non è riuscita."
+    "saveFailed": "Errore: la richiesta al server non è riuscita.",
+    "recipesHeading": "Ricette cotte in questa cottura",
+    "noRecipes": "Nessuna ricetta collegata per ora.",
+    "recipesFailed": "Non è stato possibile recuperare le ricette, quindi per ora non se ne può collegare nessuna.",
+    "pickRecipe": "Una ricetta cotta in questa cottura",
+    "linkRecipe": "Collega la ricetta",
+    "unlink": "Scollega",
+    "unlinkRecipe": "Scollega {title}",
+    "linkFailed": "Non è stato possibile salvare il collegamento."
   },
   "notes": {
     "title": "Note",

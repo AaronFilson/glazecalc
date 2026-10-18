@@ -248,6 +248,22 @@
       "saved": "Mentve: a számok és dátumok ebben a formában: {language}.",
       "help": "A számok és dátumok írásmódja: 12,345.6 vagy 12.345,6, valamint a nap és a hónap sorrendje."
     },
+    "calendar": {
+      "legend": "Naptár",
+      "help": "Az a naptár, amelyben a dátumok megjelennek. A beírt dátumok továbbra is a Gergely-naptár szerint értendők.",
+      "gregory": {
+        "label": "Gergely-naptár",
+        "saved": "Mentve: a dátumok a Gergely-naptár szerint jelennek meg."
+      },
+      "buddhist": {
+        "label": "Thai buddhista időszámítás",
+        "saved": "Mentve: a dátumok a thai buddhista időszámítás szerint jelennek meg."
+      },
+      "japanese": {
+        "label": "Japán korszak",
+        "saved": "Mentve: a dátumok japán korszakok szerint jelennek meg."
+      }
+    },
     "decimalMark": {
       "legend": "Mennyiségek beírása",
       "either": {

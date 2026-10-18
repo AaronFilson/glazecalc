@@ -88,7 +88,15 @@
     "chooseField": "Należy wybrać pole do dodania, a potem użyć przycisku Dodaj pole.",
     "fetchFailed": "Wystąpił błąd podczas pobierania zapisów wypałów.",
     "saved": "Zapisano wypał na serwerze.",
-    "saveFailed": "Błąd: żądanie do serwera nie powiodło się."
+    "saveFailed": "Błąd: żądanie do serwera nie powiodło się.",
+    "recipesHeading": "Receptury wypalone w tym wypale",
+    "noRecipes": "Nie połączono jeszcze żadnych receptur.",
+    "recipesFailed": "Nie udało się pobrać receptur, więc teraz nie można żadnej połączyć.",
+    "pickRecipe": "Receptura wypalona w tym wypale",
+    "linkRecipe": "Połącz recepturę",
+    "unlink": "Odłącz",
+    "unlinkRecipe": "Odłącz: {title}",
+    "linkFailed": "Nie udało się zapisać połączenia."
   },
   "notes": {
     "title": "Notatki",

@@ -88,7 +88,15 @@
     "chooseField": "Vælg et felt, der skal tilføjes, og vælg derefter »Tilføj feltet«.",
     "fetchFailed": "Der opstod en fejl under hentning af oplysningerne om brændingsjournalerne.",
     "saved": "Brændingsjournalen blev tilføjet på serveren.",
-    "saveFailed": "Fejl: Anmodningen til serveren mislykkedes."
+    "saveFailed": "Fejl: Anmodningen til serveren mislykkedes.",
+    "recipesHeading": "Opskrifter brændt ved denne brænding",
+    "noRecipes": "Ingen opskrifter er tilknyttet endnu.",
+    "recipesFailed": "Opskrifterne kunne ikke hentes, så der kan ikke tilknyttes nogen nu.",
+    "pickRecipe": "En opskrift brændt ved denne brænding",
+    "linkRecipe": "Tilknyt opskriften",
+    "unlink": "Frakobl",
+    "unlinkRecipe": "Frakobl {title}",
+    "linkFailed": "Tilknytningen kunne ikke gemmes."
   },
   "notes": {
     "title": "Noter",

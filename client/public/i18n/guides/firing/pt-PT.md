@@ -165,69 +165,69 @@ Conte com diferenças: a Orton diz que «Normalmente, verá pelo menos um cone d
 
 :::orton
 
-## The kiln sitter {#kiln-sitter lang=en}
+## O kiln sitter {#kiln-sitter}
 
-A **kiln sitter** is the mechanical switch, on the outside of many basic and older kilns, that turns the kiln off when a small cone bends. The best known is the Dawson Kiln-Sitter. It makes firing easier, but it is a convenience, not a safety device.
+Um **kiln sitter** (interruptor de cone) é o interruptor mecânico, por fora de muitos fornos simples e mais antigos, que desliga o forno quando um cone pequeno dobra. O mais conhecido é o Kiln-Sitter da Dawson. Facilita a cozedura, mas é uma comodidade, não um dispositivo de segurança.
 
-### How it works
+### Como funciona
 
-A porcelain tube reaches into the kiln. At its end, a small cone or a bar lies across two metal supports, under a **sensing rod** that pivots like a seesaw. Outside the kiln, the other end of the rod holds up a weight by a small claw. When the cone softens and bends to about 90°, the rod drops far enough to release the weight, the weight falls, and the power to the elements is cut.
+Um tubo de porcelana entra no forno. Na ponta, um cone pequeno ou uma barra assenta sobre dois suportes metálicos, por baixo de uma **haste sensora** que oscila como um balancé. Fora do forno, a outra ponta da haste segura um peso por meio de uma pequena garra. Quando o cone amolece e dobra até cerca de 90°, a haste desce o suficiente para soltar o peso, o peso cai e a alimentação das resistências é cortada.
 
-Small cones and bars "give equivalent heat treatment". Orton notes that many beginners choose bars, because their even shape makes it easy to place them the same way every time. A small cone tapers, so where it sits matters: with its thin part under the rod the kiln shuts off cooler, and with its thick part hotter, a shift of "as much as 1/2 cone".
+Os cones pequenos e as barras «dão um tratamento térmico equivalente». A Orton nota que muitos principiantes escolhem as barras, porque a sua forma uniforme facilita colocá-las sempre da mesma maneira. Um cone pequeno vai afinando para a ponta, por isso a posição conta: com a parte fina por baixo da haste, o forno desliga a uma temperatura mais baixa, e com a parte grossa, a uma mais alta, uma diferença «de até 1/2 cone».
 
-### Which cone goes in the sitter
+### Que cone vai no kiln sitter
 
-Sources disagree. Dawson, who made the sitter, says to use the same number as the firing cone on the shelf, and to go one number hotter only if the shelf cone stays unbent. L&L says to use one number hotter than the shelf cones, because the sitter sits near the wall and the elements, gets more heat, and tends to shut off early. Orton settles the principle: "The shelf cone is the final judge of the firing process, not the Kiln-Sitter cone or bar."
-
-> [!NOTE]
-> Our starting point: put a small cone of the same number as your target in the sitter, with a cone pack on the shelf. If the shelf firing cone is under-bent when the kiln shuts off, go one number hotter in the sitter next time, or set the thicker part of the cone under the rod. If it is over-bent, do the opposite.
-
-### Setting it up, and checks before every firing
-
-Dawson's procedure, which doubles as a check before every firing:
-
-1. Turn all the switches off. Check that the sensing rod moves freely, sits centered in the tube and is not bent or corroded. If it is sluggish, Dawson says to replace the tube assembly.
-2. Brush a thin coat of high-fire **kiln wash** (a coating that stops melted material sticking) onto the cone supports and the rod where it touches the cone. Never put wash on the cone or the porcelain tube.
-3. Load shelves and ware at least 1 in (25 mm) above or below the tube, so nothing can touch, fall against or block it.
-4. Lift the weight, press the claw down onto the trigger, and lay the cone or bar flat on the supports against the metal step, as your sitter's manual shows, the same way every time. Check it again before closing the lid: "AN IMPROPERLY PLACED CONE OR BAR COULD CAUSE AN OVERFIRING."
-5. Set the limit timer and push in the plunger until it locks. Keep the kiln level and the space under the weight clear, so the weight can fall.
-
-### The limit timer
-
-Many sitters, including Dawson's LT models, have a **limit timer**: a clock that turns the kiln off after a set time, as a backup "in case the KILN-SITTER fails". It should always be set longer than the firing is expected to take. Sources set the margin differently:
-
-Table: How long to set the limit timer
-Label: Limit timer settings
-
-| Source    | Setting                                                                                                                      |
-| --------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| Dawson    | ½ hour longer than the expected firing time until you know the kiln, later as little as ¼ hour; never set it beyond 20 hours |
-| L&L       | Very high the first time, noting how long the firing takes; after that, about 1 hour longer                                  |
-| Bracker's | 30 minutes to 1 hour longer than the firing time                                                                             |
+As fontes não concordam. A Dawson, fabricante do kiln sitter, diz para usar o mesmo número que o cone de cozedura na placa, e para passar a um número mais quente só se o cone da placa ficar por dobrar. A L&L diz para usar um número mais quente do que os cones da placa, porque o kiln sitter fica junto à parede e às resistências, recebe mais calor e tende a desligar cedo. A Orton define o princípio: «O cone da placa é o juiz final do processo de cozedura, não o cone ou a barra do Kiln-Sitter.»
 
 > [!NOTE]
-> Our starting point: generous the first time (within the dial's 20 hours), then ½ to 1 hour longer than the time you recorded. The timer also tells you how long a firing took: set at 7 and ending at 1 means 6 hours.
+> O nosso ponto de partida: ponha no kiln sitter um cone pequeno do mesmo número que o cone alvo, com um conjunto de cones{{en: cone pack}} na placa. Se o cone de cozedura da placa estiver pouco dobrado quando o forno desligar, use um número mais quente no kiln sitter da próxima vez, ou ponha a parte mais grossa do cone por baixo da haste. Se estiver demasiado dobrado, faça o contrário.
 
-### When it shuts off early or late
+### Montagem e verificações antes de cada cozedura
 
-After each firing, read the sitter cone beside the shelf cones.
+O procedimento da Dawson, que serve também de verificação antes de cada cozedura:
 
-Table: Reading the sitter after a firing
-Label: Kiln sitter problems
+1. Desligue todos os reguladores. Verifique se a haste sensora se move livremente, fica centrada no tubo e não está torta nem corroída. Se estiver perra, a Dawson diz para substituir o conjunto do tubo.
+2. Pincele uma camada fina de **protetor de placas** de alta temperatura (um revestimento que impede que o material fundido cole) nos suportes do cone e na haste, onde ela toca no cone. Nunca ponha protetor no cone nem no tubo de porcelana.
+3. Coloque as placas e as peças pelo menos 1 polegada (25 mm) acima ou abaixo do tubo, para que nada lhe possa tocar, cair contra ele ou bloqueá-lo.
+4. Levante o peso, baixe a garra sobre o gatilho e pouse o cone ou a barra deitados sobre os suportes, encostados ao ressalto metálico, como mostra o manual do seu kiln sitter, sempre da mesma maneira. Verifique de novo antes de fechar a tampa: «UM CONE OU UMA BARRA MAL COLOCADOS PODEM CAUSAR UMA SOBRECOZEDURA.»
+5. Regule o temporizador de segurança e empurre o êmbolo até ficar engatado. Mantenha o forno nivelado e o espaço por baixo do peso livre, para que o peso possa cair.
 
-| What you see                                    | Likely cause                                                                                           | What to do                                                       |
-| ----------------------------------------------- | ------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------- |
-| Sitter tripped, shelf firing cone under-bent    | The sitter ran hotter than the shelf (it sits near the wall)                                           | One cone hotter in the sitter, or the thicker part under the rod |
-| Sitter cone sagged well past 90°                | The kiln climbed too fast near the end                                                                 | Lower the switch settings, so the climb is slower (Dawson)       |
-| Sitter cone did not bend, or melted into a blob | The sitter itself: poor adjustment, a bent or corroded rod, or something lodged in or against the tube | Check and adjust the sitter by its manual before firing again    |
-| Early or late every time                        | Out of adjustment, or a worn rod                                                                       | Check with the firing gauge; move the trigger plate              |
+### O temporizador de segurança
 
-To check the adjustment, Dawson uses a **firing gauge** that holds the rod where a fully bent cone would leave it; there should then be "1/16th-inch clearance" (about 1.6 mm) at the claw. Check it every 30 firings. Ceramics Monthly's rule: if the kiln shuts off early, move the trigger plate up slightly; if late, move it down slightly. Whatever the sitter does, "Always trust large witness cones over small sitter cones."
+Muitos kiln sitters, incluindo os modelos LT da Dawson, têm um **temporizador de segurança**: um relógio que desliga o forno ao fim de um tempo definido, como reserva «caso o KILN-SITTER falhe». Deve estar sempre regulado para mais tempo do que se espera que a cozedura demore. As fontes definem a margem de forma diferente:
+
+Table: Para quanto tempo regular o temporizador de segurança
+Label: Regulação do temporizador
+
+| Fonte     | Regulação                                                                                                                                                 |
+| --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Dawson    | ½ hora a mais do que o tempo de cozedura previsto enquanto não conhecer o forno, mais tarde apenas ¼ de hora a mais; nunca o regule para além de 20 horas |
+| L&L       | Muito alto da primeira vez, anotando quanto tempo demora a cozedura; depois, cerca de 1 hora a mais                                                       |
+| Bracker's | 30 minutos a 1 hora a mais do que o tempo de cozedura                                                                                                     |
+
+> [!NOTE]
+> O nosso ponto de partida: generoso da primeira vez (dentro das 20 horas do mostrador), depois ½ a 1 hora a mais do que o tempo que registou. O temporizador também indica quanto tempo durou uma cozedura: regulado para 7 e parado em 1 quer dizer 6 horas.
+
+### Quando desliga cedo ou tarde
+
+Depois de cada cozedura, leia o cone do kiln sitter ao lado dos cones da placa.
+
+Table: Ler o kiln sitter depois de uma cozedura
+Label: Problemas do kiln sitter
+
+| O que vê                                                               | Causa provável                                                                                            | O que fazer                                                                   |
+| ---------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| O kiln sitter disparou, o cone de cozedura da placa está pouco dobrado | O kiln sitter aqueceu mais do que a placa (fica junto à parede)                                           | Um cone mais quente no kiln sitter, ou a parte mais grossa por baixo da haste |
+| O cone do kiln sitter dobrou muito além dos 90°                        | O forno subiu depressa demais perto do fim                                                                | Baixe as posições dos reguladores, para que a subida seja mais lenta (Dawson) |
+| O cone do kiln sitter não dobrou, ou fundiu numa bola                  | O próprio kiln sitter: má afinação, uma haste torta ou corroída, ou algo preso no tubo ou encostado a ele | Verifique e afine o kiln sitter segundo o seu manual antes de voltar a cozer  |
+| Cedo ou tarde todas as vezes                                           | Desafinado, ou uma haste gasta                                                                            | Verifique com o calibre de ajuste; desloque a placa de disparo                |
+
+Para verificar a afinação, a Dawson usa um **calibre de ajuste** que segura a haste onde um cone completamente dobrado a deixaria; deve haver então «uma folga de 1/16 de polegada» (cerca de 1,6 mm) na garra. Verifique-a a cada 30 cozeduras. A regra da Ceramics Monthly: se o forno desligar cedo, suba ligeiramente a placa de disparo; se desligar tarde, desça-a ligeiramente. Faça o kiln sitter o que fizer, «Confie sempre mais nos cones testemunho{{en: witness cones}} grandes do que nos cones pequenos do kiln sitter.»
 
 > [!WARNING]
-> **A kiln sitter is not a safety device.** Dawson's manual says it "is NOT intended to perform as a fail-safe shut-off device and your kiln should NOT be left unattended beyond the estimated firing time." Something as simple as greenware falling against the tube "might cause an over-firing". Be there to check the kiln when it should be finishing, and never fire it over or near anything that burns, such as a wood floor or carpet.
+> **Um kiln sitter não é um dispositivo de segurança.** O manual da Dawson diz que «NÃO se destina a funcionar como dispositivo de corte à prova de falhas, e o seu forno NÃO deve ficar sem vigilância para além do tempo de cozedura estimado.» Algo tão simples como uma peça crua{{en: greenware}} a cair contra o tubo «pode causar uma sobrecozedura». Esteja presente para verificar o forno na altura em que a cozedura deve terminar, e nunca faça cozeduras com o forno sobre ou perto de algo que arda, como um soalho de madeira ou uma alcatifa.
 
-The sitter is built for firings "up to and including Cone 8". It cannot hold a temperature or cool slowly by itself. With practice and a log, though, you can "become the controller", as Digitalfire puts it: watch the cones and turn the switches by hand.
+O kiln sitter foi feito para cozeduras «até ao cone 8, inclusive». Não consegue manter uma temperatura nem arrefecer devagar por si só. Com prática e um registo, porém, pode «tornar-se o controlador», como diz a Digitalfire: vigie os cones e rode os reguladores à mão.
 
 :::
 

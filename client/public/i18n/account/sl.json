@@ -248,6 +248,22 @@
       "saved": "Shranjeno: številke in datumi kot v jeziku {language}.",
       "help": "Kako se zapisujejo številke in datumi: 12,345.6 ali 12.345,6 ter vrstni red dneva in meseca."
     },
+    "calendar": {
+      "legend": "Koledar",
+      "help": "Koledar, v katerem so prikazani datumi. Datumi, ki jih vnesete, ostanejo v gregorijanskem koledarju.",
+      "gregory": {
+        "label": "Gregorijanski",
+        "saved": "Shranjeno: datumi so prikazani v gregorijanskem koledarju."
+      },
+      "buddhist": {
+        "label": "Tajsko budistično štetje",
+        "saved": "Shranjeno: datumi so prikazani v tajskem budističnem štetju."
+      },
+      "japanese": {
+        "label": "Japonska obdobja",
+        "saved": "Shranjeno: datumi so prikazani po japonskih obdobjih."
+      }
+    },
     "decimalMark": {
       "legend": "Vnos količin",
       "either": {

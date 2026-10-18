@@ -361,7 +361,8 @@
     "heading": "Tehlikeler",
     "intro": "Her hammaddenin kaydında verildiği gibi; standart kütüphanedekiler tedarikçilerin güvenlik bilgi formlarından gelir.",
     "line": "<b>{names}:</b> {hazards}",
-    "unknown": "{count, plural, one {{list} için tehlike verilmemiş: yanında gelen güvenlik bilgi formuna bakın.} other {{list} için tehlike verilmemiş: yanlarında gelen güvenlik bilgi formlarına bakın.}}"
+    "unknown": "{count, plural, one {{list} için tehlike verilmemiş: yanında gelen güvenlik bilgi formuna bakın.} other {{list} için tehlike verilmemiş: yanlarında gelen güvenlik bilgi formlarına bakın.}}",
+    "safety": "Kuru sır hammaddeleri toz çıkarır: tozu ciğerlerinizden uzak tutun; tehlikeli olarak sınıflandırılmayan hammaddelerin tozu da dahil. <mixing>Güvenli karıştırma ve havalandırma</mixing> rehberine bakın; çocuklar veya evcil hayvanlar çevredeyse <home>Ailenizi zehirlemeyin</home> rehberine de bakın. Bir hammaddenin güvenlik bilgi formu daha fazlasını söylüyorsa, ona uyun."
   },
   "compare": {
     "heading": "İki reçeteyi karşılaştır",
@@ -590,7 +591,10 @@
     "guidance": "Bunlar yol göstericidir; geçti ya da kaldı demek değildir: sınırların dışındaki bir sır iyi olabilir, sınırların içindeki bir sır ise yine de sır çatlağı yapabilir, metal salabilir veya başarısız olabilir. Test edin.",
     "source": "Kaynak:",
     "saveFailed": "Sınır seti seçiminiz hesabınıza kaydedilemedi; bu yüzden önceki sınır seti kullanımda kalıyor.",
-    "ownLimits": "Bu öneriler, {name} değil, Glazecalc’in kendi sınırlarını kullanır."
+    "ownLimits": "Bu öneriler, {name} değil, Glazecalc’in kendi sınırlarını kullanır.",
+    "firingFromBlock": "Reçetenin pişiriminden ({bands})",
+    "bothBands": "Reçetenin pişirimi şunları kapsar: {bands}. Bu yüzden her biri yan yana kontrol edilir: bir sır, iki ucunda nadiren aynı davranır.",
+    "fromFiring": "Değerler reçetenin pişirimi içindir: {band}. Başka birini kontrol etmek için yukarıdan bir pişirim seçin."
   },
   "stull": {
     "heading": "Stull diyagramı",
@@ -714,7 +718,8 @@
     "notSaved": "Hiçbir şey kaydedilmedi: {problem}",
     "stopped": "{count} reçeteden {saved} tanesi kaydedildi. Kalanlar kaydedilmedi: {problem}",
     "saved": "{count, plural, one {# reçete kaydedildi.} other {# reçete kaydedildi.}}",
-    "openRecipes": "Reçetelerinizi aç"
+    "openRecipes": "Reçetelerinizi aç",
+    "firingRead": "Notlardan okunan pişirim: {firing}"
   },
   "blends": {
     "title": "Test karoları için karışımlar",
@@ -847,5 +852,115 @@
     "retry": "Yeniden dene",
     "about": "Glazecalc, seramikçiler için ücretsiz bir seramik sır hesaplama aracıdır.",
     "aboutLink": "Glazecalc hakkında"
+  },
+  "firing": {
+    "heading": "Pişirim",
+    "whatIsCone": "Piramit ne demek?",
+    "scale": "Ölçek",
+    "scales": {
+      "orton": "Orton piramitleri",
+      "sk": "SK piramitleri (JIS)",
+      "temperature": "Sıcaklık"
+    },
+    "groups": {
+      "usual": "022 ile 13 arası piramitler",
+      "half": "Yarım piramitler",
+      "above": "14 ile 42 arası piramitler (seramikte nadir)"
+    },
+    "coneLabel": "Piramit",
+    "lowCone": "Başlangıç piramidi",
+    "highCone": "Bitiş piramidi",
+    "noHigh": "Bitiş piramidi yok",
+    "notStated": "Belirtilmedi",
+    "peak": "En yüksek sıcaklık ({unit})",
+    "lowTemperature": "Alt sınır ({unit})",
+    "highTemperature": "Üst sınır ({unit})",
+    "rangeToggle": "Aralık",
+    "testedLegend": "Test edilen piramitler: sırrı pişirdiğiniz her piramidi işaretleyin",
+    "atmosphere": "Atmosfer",
+    "process": "Pişirim yöntemi",
+    "atmospheres": {
+      "oxidation": "oksidasyon",
+      "reduction": "redüksiyon",
+      "neutral": "nötr"
+    },
+    "processes": {
+      "wood": "odun pişirimi",
+      "soda": "soda pişirimi",
+      "salt": "tuz pişirimi",
+      "raku": "raku",
+      "pit": "çukur pişirimi"
+    },
+    "rate": "Son saatteki hız (saatte {unit})",
+    "hold": "En yüksek sıcaklıkta bekletme (dakika)",
+    "schedule": "Program notları",
+    "schedulePlaceholder": "10 dakika bekletme, yavaş soğutma...",
+    "witness": "Gözlem piramidiyle doğrulandı",
+    "foodSurface": "Gıda ile temas eden yüzey için (iç sır)",
+    "liner": {
+      "note": "Gıda güvenliği, bu sırrın test edildiği piramide kadar pişirilmesine bağlıdır: az pişmiş bir sır metal salabilir.",
+      "range": "Bir aralık olarak verilmiştir; bu yüzden aralığın, sırrın en az eridiği alt ucunda test edin.",
+      "untested": "Henüz hiçbir piramit test edilmiş olarak işaretlenmedi.",
+      "test": "Gıdaya uygun olup olmadığını yalnızca kendi pişirdiğiniz parçalar üzerinde yapılan bir metal salımı testi gösterir."
+    },
+    "helpSummary": "Pişirim hakkında",
+    "help": {
+      "cone": "Bu sırrı pişirdiğiniz piramit. Piramitler yalnızca sıcaklığı değil, ısı işini (süre ve sıcaklık) ölçer; bu yüzden 06 numaralı piramit 6 numaralı piramitten çok daha soğuktur.",
+      "range": "Bir aralıkta çalışıyorsa en soğuk ve en sıcak piramidi girin ve sırrı gerçekten pişirdiğiniz piramitleri işaretleyin: test edilen piramit önce gösterilir. Bir sır, her uçta farklı görünebilir ve farklı davranabilir.",
+      "convert": "Piramit, verdiğiniz gibi saklanır. Başka bir ölçeğe veya sıcaklığa yapılan her dönüşüm yaklaşıktır: bir piramit, farklı ısıtma hızında farklı sıcaklıkta eğilir ve aynı numaralı SK ve Orton piramitleri aynı değildir.",
+      "move": "Bir sırrı başka bir piramide taşımak genellikle onu yeniden formüle etmek demektir; yalnızca daha sıcak veya daha soğuk pişirmek yetmez. Başka piramit için kopyala özelliği her iki sürümü de saklar."
+    },
+    "temperatureProblem": "{min} ile {max} arasında bir sıcaklık girin.",
+    "rateProblem": "Hızı, saatte tam sayı olarak derece cinsinden girin.",
+    "holdProblem": "Beklemeyi tam dakika olarak, en fazla bir gün olacak şekilde girin.",
+    "one": {
+      "orton": "{cone} numaralı piramit",
+      "sk": "SK {cone}"
+    },
+    "span": {
+      "orton": "{low}–{high} numaralı piramitler",
+      "sk": "SK {low}–{high}",
+      "temperature": "{low} ile {high} arası"
+    },
+    "testedAt": "Test edilen: {cones}",
+    "claimedRange": "bildirilen aralık: {range}",
+    "rangeUntested": "Aralık {range}; hiçbir piramit test edilmiş olarak işaretlenmedi",
+    "approxTemperature": "≈ {temperature} ({basis}; yaklaşık)",
+    "approxCone": "≈ {cone} ({basis}; yaklaşık)",
+    "basis": {
+      "orton60": "Orton büyük piramitleri, saatte 60 °C hızla",
+      "kyoto": "Kyoto belediye enstitüsü tarafından saatte 100 °C hızla ölçüldü",
+      "stated": "verildiği gibi"
+    },
+    "rateText": "son saat boyunca saatte {rate}",
+    "holdText": "{minutes} dk bekletildi",
+    "witnessText": "gözlem piramidiyle kontrol edildi",
+    "asGiven": "Pişirim, yazarın verdiği şekliyle:",
+    "filterCone": "Bir piramide göre reçeteleri göster",
+    "anyCone": "Herhangi bir piramit",
+    "filterAtmosphere": "Bir atmosfere veya yönteme göre reçeteleri göster",
+    "anyAtmosphere": "Herhangi bir atmosfer veya yöntem",
+    "duplicate": "Başka piramit için kopyala",
+    "duplicateName": "{title} adlı reçeteyi başka piramit için kopyala",
+    "duplicateTitle": "{title} (başka piramit)",
+    "duplicateNote": "{title} adlı reçetenin henüz kaydedilmemiş bir kopyası: Pişirim bölümünden yeni piramidini seçin. Bir sırrı başka bir piramide taşımak genellikle onu yeniden formüle etmek demektir; yalnızca daha sıcak veya daha soğuk pişirmek yetmez. Bu yüzden sınırları kontrol edin ve sırrı test edin."
+  },
+  "firings": {
+    "heading": "Pişirim kayıtları",
+    "open": "Pişirim kayıtlarını bağla",
+    "fetchFailed": "Pişirim kayıtlarınız getirilemedi.",
+    "noLogs": "Henüz pişirim kaydı yok.",
+    "toLogs": "Pişirim kaydet",
+    "saveFailed": "Pişirim kaydı bağlantılarındaki değişiklik kaydedilemedi.",
+    "resultFor": "{title} kaydındaki sonuç",
+    "resultPlaceholder": "Nasıl çıktı: parlak, sır çatlağı yok...",
+    "unlink": "Bağlantıyı kaldır",
+    "unlinkName": "{title} adlı kaydın bağlantısını kaldır",
+    "choose": "Bağlanacak pişirim kaydı",
+    "link": "Bağla",
+    "fill": "Bu kayıtların adını verdiği piramitleri işaretle: {cones}",
+    "replaceAsk": "Test edilen olarak {now} işaretli. Bunun yerine kayıtların adını verdiği piramitler, {logs}, işaretlensin mi?",
+    "replace": "Değiştir",
+    "keep": "Olduğu gibi bırak"
   }
 }

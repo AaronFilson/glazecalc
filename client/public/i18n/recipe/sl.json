@@ -361,7 +361,8 @@
     "heading": "Nevarnosti",
     "intro": "Kot jih navaja zapis vsake surovine; pri standardni knjižnici izhajajo iz varnostnih listov dobaviteljev.",
     "line": "<b>{names}:</b> {hazards}",
-    "unknown": "{count, plural, one {Za {list} ni navedenih nevarnosti: glejte varnostni list, ki ga dobite zraven.} two {Za {list} ni navedenih nevarnosti: glejte varnostna lista, ki ju dobite zraven.} few {Za {list} ni navedenih nevarnosti: glejte varnostne liste, ki jih dobite zraven.} other {Za {list} ni navedenih nevarnosti: glejte varnostne liste, ki jih dobite zraven.}}"
+    "unknown": "{count, plural, one {Za {list} ni navedenih nevarnosti: glejte varnostni list, ki ga dobite zraven.} two {Za {list} ni navedenih nevarnosti: glejte varnostna lista, ki ju dobite zraven.} few {Za {list} ni navedenih nevarnosti: glejte varnostne liste, ki jih dobite zraven.} other {Za {list} ni navedenih nevarnosti: glejte varnostne liste, ki jih dobite zraven.}}",
+    "safety": "Suhe surovine za glazure ustvarjajo prah: ne spuščajte ga v pljuča, tudi prahu surovin, ki niso razvrščene kot nevarne: glejte <mixing>Varno mešanje in prezračevanje</mixing> in <home>Ne zastrupite svoje družine</home>, če so v bližini otroci ali hišni ljubljenčki. Kjer varnostni list surovine navaja več, ravnajte po njem."
   },
   "compare": {
     "heading": "Primerjaj dva recepta",
@@ -590,7 +591,10 @@
     "guidance": "To so smernice, ne ocena »uspešno« ali »neuspešno«: glazura zunaj njih je lahko v redu, tista znotraj njih pa lahko vseeno dobi lasaste razpoke, sprošča kovine ali odpove. Preizkusite jo.",
     "source": "Vir:",
     "saveFailed": "Vaše izbire skupine mej ni bilo mogoče shraniti v vaš račun, zato je še vedno v uporabi prejšnja skupina mej.",
-    "ownLimits": "Ti predlogi uporabljajo lastne meje Glazecalc, ne skupine mej {name}."
+    "ownLimits": "Ti predlogi uporabljajo lastne meje Glazecalc, ne skupine mej {name}.",
+    "firingFromBlock": "Po žganju recepta ({bands})",
+    "bothBands": "Žganje recepta zajema {bands}, zato se vsako preveri posebej, drugo ob drugem: glazura se redko obnaša enako na obeh koncih.",
+    "fromFiring": "Številke veljajo za žganje recepta: {band}. Zgoraj izberite žganje, če želite preveriti drugo."
   },
   "stull": {
     "heading": "Stullov diagram",
@@ -714,7 +718,8 @@
     "notSaved": "Nič ni bilo shranjeno: {problem}",
     "stopped": "Shranjeno: {saved} od {count}. Preostali niso bili shranjeni: {problem}",
     "saved": "{count, plural, one {Shranjen # recept.} two {Shranjena # recepta.} few {Shranjeni # recepti.} other {Shranjenih # receptov.}}",
-    "openRecipes": "Odpri recepte"
+    "openRecipes": "Odpri recepte",
+    "firingRead": "Žganje, prebrano iz opomb: {firing}"
   },
   "blends": {
     "title": "Testne serije za ploščice",
@@ -847,5 +852,115 @@
     "retry": "Poskusi znova",
     "about": "Glazecalc je brezplačen kalkulator glazur za keramike.",
     "aboutLink": "O Glazecalc"
+  },
+  "firing": {
+    "heading": "Žganje",
+    "whatIsCone": "Kaj pomeni stožec?",
+    "scale": "Lestvica",
+    "scales": {
+      "orton": "Ortonovi stožci",
+      "sk": "Stožci SK (JIS)",
+      "temperature": "Temperatura"
+    },
+    "groups": {
+      "usual": "Stožci od 022 do 13",
+      "half": "Polovični stožci",
+      "above": "Stožci od 14 do 42 (v keramiki redki)"
+    },
+    "coneLabel": "Stožec",
+    "lowCone": "Od stožca",
+    "highCone": "Do stožca",
+    "noHigh": "Brez zgornjega stožca",
+    "notStated": "Ni navedeno",
+    "peak": "Najvišja temperatura ({unit})",
+    "lowTemperature": "Od ({unit})",
+    "highTemperature": "Do ({unit})",
+    "rangeToggle": "Razpon",
+    "testedLegend": "Preizkušeno: označite vsak stožec, do katerega ste jo žgali",
+    "atmosphere": "Atmosfera",
+    "process": "Postopek",
+    "atmospheres": {
+      "oxidation": "oksidacijska",
+      "reduction": "redukcijska",
+      "neutral": "nevtralna"
+    },
+    "processes": {
+      "wood": "žganje na drva",
+      "soda": "žganje s sodo",
+      "salt": "žganje s soljo",
+      "raku": "raku",
+      "pit": "jamsko žganje"
+    },
+    "rate": "Hitrost v zadnji uri ({unit} na uro)",
+    "hold": "Zadržanje na vrhu (minute)",
+    "schedule": "Opombe o programu žganja",
+    "schedulePlaceholder": "Zadržanje 10 minut, počasno ohlajanje …",
+    "witness": "Potrjeno s kontrolnim stožcem",
+    "foodSurface": "Za površino v stiku z živili (notranja glazura)",
+    "liner": {
+      "note": "Primernost za stik z živili je odvisna od tega, ali to glazuro žgete do stožca, pri katerem je bila preizkušena: premalo žgana glazura lahko sprošča kovine.",
+      "range": "Podana je kot razpon, zato jo preizkusite na spodnjem koncu razpona, kjer se najmanj tali.",
+      "untested": "Noben stožec še ni označen kot preizkušen.",
+      "test": "Le preskus sproščanja kovin iz vaših lastnih žganih izdelkov pokaže, ali je primerna za stik z živili."
+    },
+    "helpSummary": "O žganju",
+    "help": {
+      "cone": "Stožec, do katerega ste žgali to glazuro. Stožci merijo toplotno delo (čas in temperaturo), ne le temperature, zato je stožec 06 precej hladnejši od stožca 6.",
+      "range": "Če deluje v razponu, navedite najnižji in najvišji stožec ter označite stožce, do katerih ste jo res žgali: preizkušeni stožec je prikazan prvi. Glazura je lahko na vsakem koncu videti in se obnašati drugače.",
+      "convert": "Stožec se hrani, kot ga navedete. Vsaka pretvorba v drugo lestvico ali v temperaturo je približna: stožec se upogne pri drugi temperaturi ob drugi hitrosti segrevanja, stožca SK in Orton z isto številko pa nista enaka.",
+      "move": "Prenos glazure na drug stožec običajno pomeni, da jo je treba preoblikovati, ne le žgati bolj vroče ali hladneje. Podvojitev za drug stožec ohrani obe različici."
+    },
+    "temperatureProblem": "Navedite temperaturo od {min} do {max}.",
+    "rateProblem": "Hitrost navedite kot celo število stopinj na uro.",
+    "holdProblem": "Zadržanje navedite v celih minutah, do enega dne.",
+    "one": {
+      "orton": "stožec {cone}",
+      "sk": "SK {cone}"
+    },
+    "span": {
+      "orton": "stožci {low}–{high}",
+      "sk": "SK {low}–{high}",
+      "temperature": "od {low} do {high}"
+    },
+    "testedAt": "Preizkušeno: {cones}",
+    "claimedRange": "navedeni razpon {range}",
+    "rangeUntested": "Razpon {range}; noben stožec ni označen kot preizkušen",
+    "approxTemperature": "≈ {temperature} ({basis}; približno)",
+    "approxCone": "≈ {cone} ({basis}; približno)",
+    "basis": {
+      "orton60": "Ortonovi veliki stožci pri 60 °C na uro",
+      "kyoto": "izmerjeno pri 100 °C na uro v mestnem inštitutu v Kjotu",
+      "stated": "kot navedeno"
+    },
+    "rateText": "{rate} na uro v zadnji uri",
+    "holdText": "zadržanje {minutes} min",
+    "witnessText": "preverjeno s kontrolnim stožcem",
+    "asGiven": "Žganje, kot ga je navedel avtor:",
+    "filterCone": "Pokaži recepte za stožec",
+    "anyCone": "Kateri koli stožec",
+    "filterAtmosphere": "Pokaži recepte za atmosfero ali postopek",
+    "anyAtmosphere": "Katera koli atmosfera ali postopek",
+    "duplicate": "Podvoji za drug stožec",
+    "duplicateName": "Podvoji {title} za drug stožec",
+    "duplicateTitle": "{title} (drug stožec)",
+    "duplicateNote": "Kopija recepta {title}, še ni shranjena: v razdelku Žganje izberite njen novi stožec. Prenos glazure na drug stožec običajno pomeni, da jo je treba preoblikovati, ne le žgati bolj vroče ali hladneje, zato preverite mejne vrednosti in jo preizkusite."
+  },
+  "firings": {
+    "heading": "Dnevniki žganja",
+    "open": "Poveži dnevnike žganja",
+    "fetchFailed": "Dnevnikov žganja ni bilo mogoče pridobiti.",
+    "noLogs": "Dnevnikov žganja še ni.",
+    "toLogs": "Zapiši žganje",
+    "saveFailed": "Spremembe povezav z dnevniki žganja ni bilo mogoče shraniti.",
+    "resultFor": "Rezultat v: {title}",
+    "resultPlaceholder": "Kako je izpadlo: sijoče, brez lasastih razpok …",
+    "unlink": "Prekini povezavo",
+    "unlinkName": "Prekini povezavo: {title}",
+    "choose": "Dnevnik žganja za povezavo",
+    "link": "Poveži",
+    "fill": "Označite stožce, ki jih navajajo ti dnevniki: {cones}",
+    "replaceAsk": "Kot preizkušeno je označeno {now}. Želite to zamenjati s stožci, ki jih navajajo dnevniki ({logs})?",
+    "replace": "Zamenjaj",
+    "keep": "Pusti, kot je"
   }
 }

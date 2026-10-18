@@ -248,6 +248,22 @@
       "saved": "Kaydedildi: sayılar ve tarihler {language} dilindeki gibi.",
       "help": "Sayıların ve tarihlerin nasıl yazılacağı: 12,345.6 ya da 12.345,6 ve gün ile ayın sırası."
     },
+    "calendar": {
+      "legend": "Takvim",
+      "help": "Tarihlerin gösterildiği takvim. Yazdığınız tarihler Miladi takvimde kalır.",
+      "gregory": {
+        "label": "Miladi takvim",
+        "saved": "Kaydedildi: tarihler Miladi takvimde gösterilir."
+      },
+      "buddhist": {
+        "label": "Tayland Budist takvimi",
+        "saved": "Kaydedildi: tarihler Tayland Budist takviminde gösterilir."
+      },
+      "japanese": {
+        "label": "Japon dönemleri",
+        "saved": "Kaydedildi: tarihler Japon dönemleriyle gösterilir."
+      }
+    },
     "decimalMark": {
       "legend": "Miktarların yazılması",
       "either": {

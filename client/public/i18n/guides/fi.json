@@ -56,7 +56,8 @@
     "vet": "Soita eläinlääkärille.",
     "checkedOn": "Tarkistettu sivuilta:",
     "choosePrompt": "Valitse maa, niin sivulla näkyy, minne siellä soitetaan.",
-    "ministry": "Terveysministeriön sivu: <link>{name}</link>."
+    "ministry": "Terveysministeriön sivu: <link>{name}</link>.",
+    "reported": "Viralliset viranomaissivut luettelevat numerot 113, 114 ja 115, mutta eivät sitä, mihin kukin on tarkoitettu; näytetyt tehtävät noudattavat kiertokirjettä 22/2014/TT-BTTTT sellaisena kuin toissijaiset sivut sen esittävät."
   },
   "density": {
     "sg": "ominaispaino {value}",
@@ -91,6 +92,7 @@
     "caption": "Hengitettävän kiteisen piidioksidipölyn raja-arvo työpaikoilla maassa {region}, 8 tunnin keskiarvo (tarkistettu {date})",
     "captionControl": "Mittapuu hengitettävälle kiteiselle piidioksidipölylle työtilan ilmassa maassa {region} (tarkistettu {date})",
     "both": "Kvartsi ja kristobaliitti",
+    "freeSilica": "Vapaa piidioksidi",
     "quartz": "Kvartsi",
     "cristobalite": "Kristobaliitti",
     "actionLevel": "Toimenpideraja",
@@ -171,7 +173,13 @@
       "thSmall": "Esineet, joiden syvyys on yli 25 mm, alle 1,1 L",
       "thLarge": "Esineet, joiden syvyys on yli 25 mm, vähintään 1,1 L",
       "thInfant": "Astiat enintään 12 kuukauden ikäisten vauvojen ruoalle",
-      "thCooking": "Keittoastiat, jotka on tehty kestämään keittämisen kuumuus"
+      "thCooking": "Keittoastiat, jotka on tehty kestämään keittämisen kuumuus",
+      "vnFlat": "Matalat esineet ruoan säilytykseen tai kypsentämiseen",
+      "vnSmall": "Syvät esineet ruoan säilytykseen, alle 1100 mL",
+      "vnMedium": "Syvät esineet ruoan säilytykseen, 1100 mL:sta alle 3000 mL:aan",
+      "vnStorage": "Syvät esineet ruoan säilytykseen, vähintään 3000 mL",
+      "vnCooking": "Syvät esineet ruoan kypsentämiseen",
+      "vnCups": "Kupit ja pienet kulhot"
     },
     "judged": {
       "average": "6 esineen keskiarvo",

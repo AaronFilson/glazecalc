@@ -149,76 +149,76 @@ A Pet Poison Helpline diz que «O chumbo é tóxico para todas as espécies, mas
 
 Se um animal puder ter comido ou bebido alguma coisa do atelier, ou mostrar sinais como os descritos acima, ligue para o seu veterinário ou para um centro antivenenos para animais (ver a tabela no início), com o nome da matéria-prima e o peso do animal à mão.
 
-## The kiln {#the-kiln lang=en}
+## O forno {#the-kiln}
 
-### The outside gets hot enough to burn
+### O exterior aquece o suficiente para queimar
 
-A UK schools risk assessment says a kiln's outside "can reach 160 °C and possibly more" (about 320 °F), and a school kiln guide reports metal bands at up to 460 °F (about 240 °C). Skutt, a kiln maker, recommends a kiln room that can be locked against children and pets. Where a room cannot be locked, the school guide suggests a barrier such as a kiln safety screen.
+Uma avaliação de riscos para escolas do Reino Unido diz que o exterior de um forno «pode chegar aos 160 °C e possivelmente mais» (cerca de 320 °F), e um guia de fornos para escolas refere cintas metálicas que chegam aos 460 °F (cerca de 240 °C). A Skutt, um fabricante de fornos, recomenda uma divisão para o forno que se possa fechar à chave para impedir a entrada de crianças e animais. Onde não for possível fechar uma divisão à chave, o guia para escolas sugere uma barreira, como um resguardo de segurança para fornos.
 
-Small children and pets cannot understand a warning sign. We suggest keeping them behind a locked door or a barrier while the kiln fires and while it cools, and posting a warning sign for everyone else.
+Sugerimos manter as crianças pequenas e os animais, que não conseguem compreender um sinal de aviso, atrás de uma porta fechada à chave ou de uma barreira durante a cozedura e enquanto o forno arrefece, e afixar um sinal de aviso para todos os outros.
 
-### Space around it
+### O espaço à volta do forno
 
-Sources disagree on clearance. Rio Grande says at least 12 inches (30 cm) from walls and anything combustible. L&L strongly recommends 18 inches (46 cm) to all walls, and the building code it cites asks for 3 feet (0.9 m) from combustible walls. Follow your kiln's manual and local fire code; if you are unsure, allow 18 inches from any wall and 3 feet from anything that can burn. In a garage, keep cars, fuel and paint well away.
+As fontes não concordam quanto à distância de segurança. A Rio Grande diz pelo menos 12 polegadas (30 cm) das paredes e de tudo o que seja combustível. A L&L recomenda vivamente 18 polegadas (46 cm) em relação a todas as paredes, e o código de construção que cita pede 3 pés (0,9 m) em relação a paredes combustíveis. Siga o manual do seu forno e as regras locais de segurança contra incêndios; em caso de dúvida, deixe 18 polegadas em relação a qualquer parede e 3 pés em relação a tudo o que possa arder. Numa garagem, mantenha os carros, o combustível e as tintas bem afastados.
 
-### Power
+### Eletricidade
 
-Rio Grande recommends a **dedicated circuit** (one that powers nothing else) with a properly grounded outlet. We suggest no extension cord. Between firings, switch off the kiln's breaker or disconnect switch, or unplug it, so a child cannot start it.
+A Rio Grande recomenda um **circuito dedicado** (um circuito que não alimenta mais nada) com uma tomada devidamente ligada à terra. Sugerimos não usar extensões. Entre cozeduras, desligue o disjuntor ou o interruptor seccionador do forno, ou tire a ficha da tomada, para que uma criança não o consiga ligar.
 
-### Be there when the firing ends
+### Esteja presente no fim da cozedura
 
-A **kiln sitter** is the mechanical switch on many manual kilns: a small cone bends at the end of the firing and trips the switch off. Its manual says it "is NOT intended to perform as a fail-safe shut-off device." Rio Grande says never to leave a firing kiln unattended, "especially near the expected shut-off time". So stay nearby and check the kiln while it fires, above all near the end; fire only when an adult will be home and awake to do that, check that it has switched off, and keep an ABC fire extinguisher in the kiln room. For how sitters, controllers and schedules work, see [Firing a basic kiln](/guides/firing).
+Um **kiln sitter** (interruptor de cone) é o interruptor mecânico de muitos fornos manuais: um pequeno cone dobra-se no fim da cozedura e faz disparar o interruptor, que desliga o forno. O seu manual diz que «NÃO se destina a funcionar como dispositivo de corte de segurança à prova de falhas». A Rio Grande diz para nunca deixar sem vigilância um forno em cozedura, «sobretudo perto da hora prevista para desligar». Por isso, fique por perto e verifique o forno enquanto coze, sobretudo perto do fim; coza apenas quando houver um adulto em casa e acordado para ficar por perto e verificar o forno, confirme que o forno se desligou e tenha um extintor ABC na divisão do forno. Para saber como funcionam os kiln sitters, os controladores e as curvas de cozedura, veja [Cozer num forno simples](/guides/firing).
 
-### Fumes and carbon monoxide
+### Fumos e monóxido de carbono
 
-Firing gives off fumes, so vent the kiln to the outdoors; [Safe mixing and ventilation](/guides/safe-mixing) explains how. A kiln in an attached garage needs venting that keeps fumes from reaching the house through the connecting door. Keep birds in a far room whenever the kiln fires.
+A cozedura liberta fumos, por isso ventile o forno para o exterior; [Mistura segura e ventilação](/guides/safe-mixing) explica como. Um forno numa garagem anexa à casa precisa de uma ventilação que impeça os fumos de chegarem à casa pela porta de ligação. Mantenha as aves numa divisão afastada sempre que o forno estiver a cozer.
 
-**Carbon monoxide** (CO) is a poisonous gas you cannot see or smell. A university kiln safety sheet requires CO alarms with gas kilns. Views differ for electric kilns, but burning off organic matter (in clay, or things like paper or wax) can make CO. We think a CO alarm in the kiln room and the rooms next to it is a sensible, inexpensive step for any kiln.
+O **monóxido de carbono** (CO) é um gás venenoso que não se vê nem se cheira. A ficha de segurança de fornos de uma universidade exige detetores de CO com os fornos a gás. As opiniões divergem quanto aos fornos elétricos, mas a queima da matéria orgânica (na argila, ou em coisas como papel ou cera) pode produzir CO. Achamos que um detetor de CO na divisão do forno e nas divisões ao lado é uma medida sensata e barata para qualquer forno.
 
-### Peepholes and eyes
+### O óculo do forno e os olhos
 
-Infrared light, which you cannot see, "starts at 752°F (400°C)", and the Ceramic Arts Network says looking into a kiln above this should always be done with eye protection. Infrared can damage the lens of the eye and lead to cataracts, and long gazing can injure the retina. Sunglasses and didymium glasses do not block it.
+A luz infravermelha, que não se vê, «começa aos 752°F (400°C)», e a Ceramic Arts Network diz que, acima disso, olhar para dentro de um forno deve ser sempre feito com proteção ocular. Os infravermelhos podem danificar o cristalino do olho e provocar cataratas, e olhar durante muito tempo pode lesar a retina. Os óculos de sol e os óculos de didímio não os bloqueiam.
 
 > [!WARNING]
-> Children should not look into a kiln at all. A glowing peephole draws them, and they will not reliably keep protective glasses on, so keep them away while the kiln is hot. Adults should look only briefly, through IR-rated welding glasses. Sources recommend shades from 1.7 to 5; shade 3 is a sensible choice, darker if you see spots afterward.
+> As crianças não devem olhar para dentro de um forno de todo. Um óculo do forno a brilhar atrai-as, e não se pode contar com elas para manterem os óculos de proteção postos, por isso mantenha-as afastadas enquanto o forno estiver quente. Os adultos só devem olhar por breves instantes, através de óculos de soldadura com proteção IV. As fontes recomendam escalas de 1,7 a 5; a escala 3 é uma escolha sensata, ou mais escura se depois vir manchas.
 
-## Handmade ware on the family table {#handmade-ware lang=en}
+## Peças feitas à mão na mesa da família {#handmade-ware}
 
-The question for pots on the family table is **leaching**: metals dissolving out of the fired glaze into food or drink. The FDA warns that if pottery "is not manufactured properly, this lead can leach into food and drink", and that "no amount of washing, boiling, or other process can remove lead from pottery." Regulators such as the US FDA and the EU limit how much lead and cadmium a finished piece releases in a standard acid test, not what the glaze contains. The strictest US limit, for cups, mugs and pitchers, is 0.5 µg/mL of lead.
+Para as peças na mesa da família, a questão é a **libertação de metais**{{en: leaching}}: metais que se dissolvem do vidrado{{en: glaze}} cozido para a comida ou a bebida. A FDA avisa que, se a cerâmica «não for fabricada corretamente, este chumbo pode libertar-se para a comida e a bebida», e que «nenhuma lavagem, fervura ou outro processo consegue remover o chumbo da cerâmica». As entidades reguladoras, como a FDA dos EUA e a UE, limitam a quantidade de chumbo e de cádmio que uma peça acabada liberta num ensaio normalizado com ácido, e não o que o vidrado contém. O limite mais rigoroso dos EUA, para chávenas, canecas e jarros, é de 0,5 µg/mL de chumbo.
 
-### Lead-free is not the same as food-safe
+### Sem chumbo não é o mesmo que apto para contacto com alimentos
 
-A glaze with no lead can still leach. Digitalfire, a glaze chemistry reference, names glazes containing "heavy metal oxide colorants, barium, lithium, or lead" as the concern, and warns that a stain fired above its rated temperature can release cadmium. The ASTM D-4236 art-materials label on a jar "DOES NOT establish that a fired glaze is food-safe", and "Tableware producers must test all finished ware to establish dinnerware status."
+Um vidrado sem chumbo pode, mesmo assim, libertar metais. O Digitalfire, uma referência de química de vidrados, aponta como preocupantes os vidrados que contêm «corantes de óxidos de metais pesados, bário, lítio ou chumbo», e avisa que um pigmento cerâmico{{en: stain}} cozido acima da temperatura indicada para ele pode libertar cádmio. O rótulo ASTM D-4236 de materiais artísticos num frasco «NÃO estabelece que um vidrado cozido seja apto para contacto com alimentos», e «Os fabricantes de loiça de mesa têm de testar todas as peças acabadas para estabelecer o seu estatuto de loiça de mesa».
 
 > [!NOTE]
-> "Food safe" means this glaze, on this clay, fired to this cone, applied this way, releases less than the legal limits. A recipe calculation, Glazecalc's included, can flag a risky recipe but cannot prove a pot is safe. Only a leach test of the fired piece can.
+> «Apto para contacto com alimentos»{{en: food safe}} significa que este vidrado, nesta pasta{{en: clay body}}, cozido a este cone, aplicado desta forma, liberta menos do que os limites legais. Um cálculo de receita, incluindo o do Glazecalc, pode assinalar uma receita arriscada, mas não pode provar que uma peça é segura. Só um ensaio de libertação de metais da peça cozida o pode fazer.
 
-We suggest reading a "food safe" label on a commercial glaze as a good start, not a guarantee: a different clay, a thicker coat, another cone or a second glaze on top changes the result.
+Sugerimos que leia a indicação «apto para contacto com alimentos» num vidrado comercial como um bom ponto de partida, não como uma garantia: outra pasta, uma camada mais grossa, outro cone ou um segundo vidrado por cima mudam o resultado.
 
-### Testing
+### Ensaios
 
-Laboratories test fired pieces with a standard acid soak that represents a worst case, such as ASTM C738 in the US. One lab's EU test needs four identical pieces and takes seven working days, so make spares of anything you plan to have tested.
+Os laboratórios testam as peças cozidas com uma imersão normalizada em ácido que representa o pior caso, como a ASTM C738 nos EUA. O ensaio para a UE de um laboratório precisa de quatro peças idênticas e demora sete dias úteis, por isso faça peças a mais de tudo o que pretenda mandar testar.
 
-Home tests are disputed. The FDA says home swab kits can show leachable lead, and that a piece that tests positive should not be used for food. Ceramics NZ warns that consumer lead-test pens are "not designed for this use" on ceramics and can give false positives. Digitalfire suggests leaving a lemon slice on the glaze overnight as a rough screen. The safe reading: a positive home test means stop using the piece for food, and a negative one proves nothing. Only a lab can tell you a piece is safe.
+Os testes caseiros são contestados. A FDA diz que os kits caseiros com zaragatoa podem mostrar chumbo que se pode libertar, e que uma peça com resultado positivo não deve ser usada para comida. A Ceramics NZ avisa que as canetas de teste de chumbo para o consumidor «não foram concebidas para este uso» em cerâmica e podem dar falsos positivos. O Digitalfire sugere deixar uma rodela de limão sobre o vidrado durante a noite, como despiste grosseiro. A leitura segura: um teste caseiro positivo significa deixar de usar a peça para comida, e um negativo não prova nada. Só um laboratório lhe pode dizer que uma peça é segura.
 
-### Crazed ware
+### Peças fendilhadas
 
-**Crazing** is a network of fine cracks in the glaze surface, and sources disagree about it. A Ceramics Monthly experiment found crazed tiles could be cleaned, best in a dishwasher, though they came out less clean than uncrazed tiles after soap and water. Digitalfire holds that "Crazed ware is unacceptable" and that crazing "severely weakens ware". The safe course is simple: do not use crazed pieces for food.
+O **fendilhamento**{{en: crazing}} é uma rede de fissuras finas na superfície do vidrado, e as fontes não concordam sobre ele. Uma experiência da Ceramics Monthly concluiu que as peças de teste{{en: test tiles}} fendilhadas se podiam limpar, com os melhores resultados na máquina de lavar loiça, embora tenham ficado menos limpas do que as peças sem fendilhamento depois de água e sabão. O Digitalfire defende que «Peças fendilhadas são inaceitáveis» e que o fendilhamento «enfraquece gravemente as peças». O caminho seguro é simples: não use peças fendilhadas para comida.
 
-### Liner glazes
+### Vidrados de interior
 
-A **liner glaze** is the glaze on the inside of a cup or bowl, where the food sits. Digitalfire describes a liner that may be low enough in risk to use without lab testing: no colorants, barium, lead or lithium; fully melted; no crazing; and it wears well. Even then, only a leach test of your own fired pots shows whether they are food-safe. Warning signs in any glaze are heavy amounts of colorant, crystals on the surface and poor melting.
+Um **vidrado de interior**{{en: liner glaze}} é o vidrado do lado de dentro de uma chávena ou taça, onde fica a comida. O Digitalfire descreve um vidrado de interior que pode ter um risco suficientemente baixo para ser usado sem ensaio laboratorial: sem corantes, bário, chumbo nem lítio; totalmente fundido; sem fendilhamento; e resistente ao desgaste. Mesmo assim, só um ensaio de libertação de metais das suas próprias peças cozidas mostra se são aptas para contacto com alimentos. Os sinais de alerta em qualquer vidrado são grandes quantidades de corante, cristais na superfície e má fusão.
 
-### Family rules we suggest
+### Regras para a família que sugerimos
 
-- Children's cups, bowls and plates: only lab-tested, durable liner glazes, or commercial dinnerware.
-- Do not store acidic food or drink (citrus, tomato, vinegar, fruit juice, wine) in pots glazed with anything you have not had tested.
-- Do not use crazed pieces for food.
-- Test tiles and experiments stay in the studio, never in the kitchen, the toy box or the pet's bowl.
-- Take care with other pottery too. The FDA advises caution with handmade or crude-looking pieces, antiques, damaged or worn pieces, flea-market finds and bright orange, red or yellow decoration.
-- If a child has used pottery you now doubt, the FDA says to talk to a doctor about a blood lead test.
+- Chávenas, taças e pratos das crianças: só vidrados de interior duráveis e testados em laboratório, ou loiça de mesa comercial.
+- Não guarde comida ou bebida ácida (citrinos, tomate, vinagre, sumo de fruta, vinho) em peças vidradas com algo que não tenha mandado testar.
+- Não use peças fendilhadas para comida.
+- As peças de teste e as experiências ficam no atelier, nunca na cozinha, na caixa dos brinquedos ou na tigela do animal.
+- Tenha cuidado também com outras cerâmicas. A FDA aconselha cautela com peças feitas à mão ou de aspeto rudimentar, antiguidades, peças danificadas ou gastas, achados de feiras de velharias e decorações em laranja, vermelho ou amarelo vivos.
+- Se uma criança usou loiça de que agora duvida, a FDA diz para falar com um médico sobre uma análise ao chumbo no sangue.
 
-For more on how glazes melt, why some leach and what the limits mean, see [Glazing from first principles](/guides/glazing-basics).
+Para saber mais sobre como os vidrados fundem, porque é que alguns libertam metais e o que significam os limites, veja [Vidrados desde os princípios básicos](/guides/glazing-basics).
 
 ## Fontes {#sources}
 

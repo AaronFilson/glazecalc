@@ -56,7 +56,8 @@
     "vet": "Zavolejte svému veterináři.",
     "checkedOn": "Ověřeno na stránkách:",
     "choosePrompt": "Vyberte svou zemi a zobrazí se, kam tam volat.",
-    "ministry": "Stránka ministerstva zdravotnictví: <link>{name}</link>."
+    "ministry": "Stránka ministerstva zdravotnictví: <link>{name}</link>.",
+    "reported": "Oficiální vládní stránky uvádějí čísla 113, 114 a 115, ale ne, k čemu každé slouží; zobrazené role vycházejí z oběžníku Circular 22/2014/TT-BTTTT, jak jej citují druhotné stránky."
   },
   "density": {
     "sg": "měrná hmotnost {value}",
@@ -91,6 +92,7 @@
     "caption": "Limit na pracovišti pro respirabilní krystalický oxid křemičitý v zemi {region}, průměr za 8 hodin (ověřeno {date})",
     "captionControl": "Měřítko pro respirabilní krystalický oxid křemičitý v ovzduší pracoviště v zemi {region} (ověřeno {date})",
     "both": "Křemen a cristobalit",
+    "freeSilica": "Volný oxid křemičitý",
     "quartz": "Křemen",
     "cristobalite": "Cristobalit",
     "actionLevel": "Akční hodnota",
@@ -171,7 +173,13 @@
       "thSmall": "Kusy hluboké více než 25 mm, méně než 1,1 L",
       "thLarge": "Kusy hluboké více než 25 mm, 1,1 L a více",
       "thInfant": "Nádoby na jídlo pro kojence do 12 měsíců věku",
-      "thCooking": "Varné nádobí, vyrobené tak, aby vydrželo teplo při vaření"
+      "thCooking": "Varné nádobí, vyrobené tak, aby vydrželo teplo při vaření",
+      "vnFlat": "Mělké předměty na potraviny nebo k jejich vaření",
+      "vnSmall": "Hluboké předměty na potraviny, pod 1100 mL",
+      "vnMedium": "Hluboké předměty na potraviny, od 1100 mL do méně než 3000 mL",
+      "vnStorage": "Hluboké předměty na potraviny, 3000 mL a více",
+      "vnCooking": "Hluboké předměty k vaření",
+      "vnCups": "Šálky a malé misky"
     },
     "judged": {
       "average": "průměr ze 6 kusů",

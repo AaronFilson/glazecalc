@@ -149,76 +149,76 @@ Pet Poison Helpline ütleb: „Plii on mürgine kõigile liikidele, kuid mürgis
 
 Kui lemmikloom võis töökojast midagi süüa või juua või tal ilmnevad ülalkirjeldatud tunnused, helistage oma loomaarstile või loomade mürgistusteabeliinile (vt tabelit lehe alguses), hoides käepärast tooraine nime ja lemmiklooma kehakaalu.
 
-## The kiln {#the-kiln lang=en}
+## Keraamikaahi {#the-kiln}
 
-### The outside gets hot enough to burn
+### Välispind on nii kuum, et võib tekitada põletushaavu
 
-A UK schools risk assessment says a kiln's outside "can reach 160 °C and possibly more" (about 320 °F), and a school kiln guide reports metal bands at up to 460 °F (about 240 °C). Skutt, a kiln maker, recommends a kiln room that can be locked against children and pets. Where a room cannot be locked, the school guide suggests a barrier such as a kiln safety screen.
+Ühendkuningriigi koolide riskihinnang ütleb, et ahju välispind „võib ulatuda 160 °C-ni ja võib-olla rohkemgi“ (umbes 320 °F), ning koolidele mõeldud ahjukäsiraamat teatab metallvöödest temperatuuriga kuni 460 °F (umbes 240 °C). Ahjutootja Skutt soovitab ahjuruumi, mida saab laste ja lemmikloomade eest lukustada. Kui ruumi ei saa lukustada, soovitab koolide ahjukäsiraamat tõket, näiteks ahju kaitsevõret.
 
-Small children and pets cannot understand a warning sign. We suggest keeping them behind a locked door or a barrier while the kiln fires and while it cools, and posting a warning sign for everyone else.
+Väikelapsed ja lemmikloomad ei saa hoiatussildist aru. See juhend soovitab hoida neid lukustatud ukse või tõkke taga nii põletuse kui ka jahtumise ajal ning panna kõigi teiste jaoks üles hoiatussildi.
 
-### Space around it
+### Ruum ahju ümber
 
-Sources disagree on clearance. Rio Grande says at least 12 inches (30 cm) from walls and anything combustible. L&L strongly recommends 18 inches (46 cm) to all walls, and the building code it cites asks for 3 feet (0.9 m) from combustible walls. Follow your kiln's manual and local fire code; if you are unsure, allow 18 inches from any wall and 3 feet from anything that can burn. In a garage, keep cars, fuel and paint well away.
+Ohutu vahekauguse kohta on allikad eri meelt. Rio Grande annab vahekauguseks seintest ja kõigest süttivast vähemalt 12 tolli (30 cm). L&L soovitab tungivalt 18 tolli (46 cm) kõigist seintest ja tema viidatud ehitusnorm nõuab süttivatest seintest 3 jalga (0,9 m). Järgige oma ahju kasutusjuhendit ja kohalikke tuleohutusnõudeid; kui te pole kindel, jätke igast seinast 18 tolli ja kõigest, mis võib põleda, 3 jalga. Garaažis hoidke autod, kütus ja värv ahjust kaugel.
 
-### Power
+### Toide
 
-Rio Grande recommends a **dedicated circuit** (one that powers nothing else) with a properly grounded outlet. We suggest no extension cord. Between firings, switch off the kiln's breaker or disconnect switch, or unplug it, so a child cannot start it.
+Rio Grande soovitab **eraldi kaitsmega toiteliini** (mis ei toida midagi muud) ja korralikult maandatud pistikupesa. See juhend soovitab mitte kasutada pikendusjuhet. Lülitage põletuste vahel ahju kaitselüliti või pealüliti välja või tõmmake pistik seinast, et laps ei saaks ahju käivitada.
 
-### Be there when the firing ends
+### Kohalolek põletuse lõpus
 
-A **kiln sitter** is the mechanical switch on many manual kilns: a small cone bends at the end of the firing and trips the switch off. Its manual says it "is NOT intended to perform as a fail-safe shut-off device." Rio Grande says never to leave a firing kiln unattended, "especially near the expected shut-off time". So stay nearby and check the kiln while it fires, above all near the end; fire only when an adult will be home and awake to do that, check that it has switched off, and keep an ABC fire extinguisher in the kiln room. For how sitters, controllers and schedules work, see [Firing a basic kiln](/guides/firing).
+**Kiln-Sitter** on mehaaniline lüliti paljudel käsijuhtimisega ahjudel: põletuse lõpus paindub väike koonus{{en: cone}} ja lülitab ahju välja. Kiln-Sitteri kasutusjuhendis on kirjas, et see „EI OLE mõeldud rikkekindlaks väljalülitusseadmeks“. Rio Grande ütleb, et põletavat ahju ei tohi kunagi järelevalveta jätta, „eriti eeldatava väljalülitusaja lähedal“. Seega olge ahju lähedal ja kontrollige ahju põletuse ajal, eriti lõpu lähedal; põletage ainult siis, kui täiskasvanu on kodus ja ärkvel, et seda teha, kontrollige, et ahi on välja lülitunud, ja hoidke ahjuruumis ABC-tulekustutit. Kuidas Kiln-Sitterid, kontrollerid ja põletusprogrammid töötavad, vaadake juhendist [Põletamine lihtsas keraamikaahjus](/guides/firing).
 
-### Fumes and carbon monoxide
+### Ahjuaurud ja vingugaas
 
-Firing gives off fumes, so vent the kiln to the outdoors; [Safe mixing and ventilation](/guides/safe-mixing) explains how. A kiln in an attached garage needs venting that keeps fumes from reaching the house through the connecting door. Keep birds in a far room whenever the kiln fires.
+Põletamisel eraldub aure, seega juhtige ahju aurud õue; kuidas, seda selgitab juhend [Ohutu segamine ja ventilatsioon](/guides/safe-mixing). Majaga ühendatud garaažis asuv ahi vajab ventilatsiooni, mis ei lase aurudel ühendusukse kaudu majja jõuda. Hoidke linde alati põletuse ajal kaugemas ruumis.
 
-**Carbon monoxide** (CO) is a poisonous gas you cannot see or smell. A university kiln safety sheet requires CO alarms with gas kilns. Views differ for electric kilns, but burning off organic matter (in clay, or things like paper or wax) can make CO. We think a CO alarm in the kiln room and the rooms next to it is a sensible, inexpensive step for any kiln.
+**Vingugaas** (süsinikmonooksiid, CO) on mürgine gaas, mida ei näe ega tunne lõhna järgi. Ühe ülikooli ahjuohutuse infoleht nõuab gaasiahjude puhul vinguandureid. Elektriahjude kohta on arvamused erinevad, kuid orgaanilise aine (savis või näiteks paberis või vahas) väljapõlemisel võib tekkida vingugaasi. Selle juhendi hinnangul on vinguandur ahjuruumis ja sellega külgnevates ruumides iga ahju puhul mõistlik ja odav samm.
 
-### Peepholes and eyes
+### Vaateavad ja silmad
 
-Infrared light, which you cannot see, "starts at 752°F (400°C)", and the Ceramic Arts Network says looking into a kiln above this should always be done with eye protection. Infrared can damage the lens of the eye and lead to cataracts, and long gazing can injure the retina. Sunglasses and didymium glasses do not block it.
+Infrapunakiirgus, mida silm ei näe, „algab 752°F (400°C) juures“ ja Ceramic Arts Network ütleb, et sellest kõrgemal temperatuuril tuleks ahju sisse vaadata alati silmakaitsega. Infrapunakiirgus võib kahjustada silmaläätse ja põhjustada hallkae ning pikaajaline sissevaatamine võib kahjustada võrkkesta. Päikeseprillid ja didüümiumprillid seda kinni ei pea.
 
 > [!WARNING]
-> Children should not look into a kiln at all. A glowing peephole draws them, and they will not reliably keep protective glasses on, so keep them away while the kiln is hot. Adults should look only briefly, through IR-rated welding glasses. Sources recommend shades from 1.7 to 5; shade 3 is a sensible choice, darker if you see spots afterward.
+> Lapsed ei peaks ahju sisse üldse vaatama. Helendav vaateava tõmbab neid ja nad ei hoia kaitseprille usaldusväärselt ees, seega hoidke neid eemal, kuni ahi on kuum. Täiskasvanud peaksid vaatama ainult põgusalt, läbi IR-kaitsega keevitusprillide. Allikad soovitavad tumedusastmeid 1,7–5; tumedusaste 3 on mõistlik valik, või tumedam, kui näete pärast vaatamist silme ees täppe.
 
-## Handmade ware on the family table {#handmade-ware lang=en}
+## Käsitsi valmistatud nõud pere toidulaual {#handmade-ware}
 
-The question for pots on the family table is **leaching**: metals dissolving out of the fired glaze into food or drink. The FDA warns that if pottery "is not manufactured properly, this lead can leach into food and drink", and that "no amount of washing, boiling, or other process can remove lead from pottery." Regulators such as the US FDA and the EU limit how much lead and cadmium a finished piece releases in a standard acid test, not what the glaze contains. The strictest US limit, for cups, mugs and pitchers, is 0.5 µg/mL of lead.
+Pere toidulaual olevate nõude puhul on küsimus **metallide eraldumises**{{en: leaching}}: metallid lahustuvad põletatud glasuurist{{en: glaze}} toitu või jooki. USA Toidu- ja Ravimiamet FDA hoiatab, et kui keraamika „ei ole korralikult valmistatud, võib see plii eralduda toitu ja jooki“ ning et „mitte mingi pesemine, keetmine ega muu protsess ei suuda keraamikast pliid eemaldada“. Reguleerivad asutused, näiteks USA FDA ja EL, piiravad seda, kui palju pliid ja kaadmiumi valmis ese standardse happekatse käigus eraldab, mitte seda, mida glasuur sisaldab. USA rangeim piirnorm, mis kehtib tasside, kruuside ja kannude kohta, on 0,5 µg/mL pliid.
 
-### Lead-free is not the same as food-safe
+### Pliivaba ei tähenda toidunõudele sobivat
 
-A glaze with no lead can still leach. Digitalfire, a glaze chemistry reference, names glazes containing "heavy metal oxide colorants, barium, lithium, or lead" as the concern, and warns that a stain fired above its rated temperature can release cadmium. The ASTM D-4236 art-materials label on a jar "DOES NOT establish that a fired glaze is food-safe", and "Tableware producers must test all finished ware to establish dinnerware status."
+Ka pliita glasuurist võivad metallid eralduda. Glasuuri keemia teatmik Digitalfire nimetab murekohana glasuure, mis sisaldavad „raskmetallioksiididest värvaineid{{en: colorants}}, baariumi, liitiumi või pliid“, ja hoiatab, et pigment{{en: stain}}, mida on põletatud üle selle jaoks ettenähtud temperatuuri, võib eraldada kaadmiumi. Kunstitarvete märgis ASTM D-4236 purgil „EI TÕENDA, et põletatud glasuur on toidunõudele sobiv{{en: food-safe}}“ ja „Lauanõude tootjad peavad kõiki valmistooteid katsetama, et tõendada nende sobivust lauanõudeks.“
 
 > [!NOTE]
-> "Food safe" means this glaze, on this clay, fired to this cone, applied this way, releases less than the legal limits. A recipe calculation, Glazecalc's included, can flag a risky recipe but cannot prove a pot is safe. Only a leach test of the fired piece can.
+> „Toidunõudele sobiv“ tähendab, et just see glasuur just sellel savil, põletatuna just selle koonuseni{{en: cone}} ja just nii peale kantuna eraldab vähem, kui seadusega lubatud piirnormid ette näevad. Retseptiarvutus, ka Glazecalci oma, võib riskantsele retseptile tähelepanu juhtida, kuid ei suuda tõendada, et ese on ohutu. Seda suudab ainult põletatud eseme metallide eraldumise laborikatse.
 
-We suggest reading a "food safe" label on a commercial glaze as a good start, not a guarantee: a different clay, a thicker coat, another cone or a second glaze on top changes the result.
+See juhend soovitab lugeda valmisglasuuri silti „toidunõudele sobiv“ hea algusena, mitte garantiina: teistsugune savi, paksem kiht, teine koonus või teine glasuur peal muudab tulemust.
 
-### Testing
+### Katsetamine
 
-Laboratories test fired pieces with a standard acid soak that represents a worst case, such as ASTM C738 in the US. One lab's EU test needs four identical pieces and takes seven working days, so make spares of anything you plan to have tested.
+Laborid katsetavad põletatud esemeid standardse happeleotusega, mis jäljendab halvimat võimalikku olukorda, näiteks USA-s ASTM C738. Ühe labori EL-i katseks on vaja nelja ühesugust eset ja see võtab seitse tööpäeva, nii et tehke kõigest, mida kavatsete katsetada lasta, varueksemplare.
 
-Home tests are disputed. The FDA says home swab kits can show leachable lead, and that a piece that tests positive should not be used for food. Ceramics NZ warns that consumer lead-test pens are "not designed for this use" on ceramics and can give false positives. Digitalfire suggests leaving a lemon slice on the glaze overnight as a rough screen. The safe reading: a positive home test means stop using the piece for food, and a negative one proves nothing. Only a lab can tell you a piece is safe.
+Kodused testid on vaieldavad. FDA ütleb, et vatitikuga kodutestid võivad näidata eralduvat pliid ja et eset, mille test on positiivne, ei peaks toidu jaoks kasutama. Ceramics NZ hoiatab, et tarbijatele mõeldud pliitestipliiatsid „ei ole mõeldud selliseks kasutuseks“ keraamikal ja võivad anda valepositiivseid tulemusi. Digitalfire soovitab ligikaudse eelkontrollina jätta sidruniviilu ööseks glasuurile. Ohutu järeldus: positiivse kodutesti korral lõpetage eseme kasutamine toidu jaoks, negatiivne test aga ei tõenda midagi. Ainult labor saab öelda, et ese on ohutu.
 
-### Crazed ware
+### Juuspragudega esemed
 
-**Crazing** is a network of fine cracks in the glaze surface, and sources disagree about it. A Ceramics Monthly experiment found crazed tiles could be cleaned, best in a dishwasher, though they came out less clean than uncrazed tiles after soap and water. Digitalfire holds that "Crazed ware is unacceptable" and that crazing "severely weakens ware". The safe course is simple: do not use crazed pieces for food.
+**Juuspragunemine**{{en: crazing}} on peente pragude võrgustik glasuuri pinnal ja allikad on selle suhtes eri meelt. Ceramics Monthly katses selgus, et juuspragudega proovitükke{{en: test tiles}} sai puhtaks, kõige paremini nõudepesumasinas, kuigi pärast seebi ja veega pesemist jäid need vähem puhtaks kui juuspragudeta proovitükid. Digitalfire leiab, et „juuspragudega esemed on vastuvõetamatud“ ja et juuspragunemine „nõrgestab esemeid tugevalt“. Ohutu tee on lihtne: ärge kasutage juuspragudega esemeid toidu jaoks.
 
-### Liner glazes
+### Toidunõuglasuurid
 
-A **liner glaze** is the glaze on the inside of a cup or bowl, where the food sits. Digitalfire describes a liner that may be low enough in risk to use without lab testing: no colorants, barium, lead or lithium; fully melted; no crazing; and it wears well. Even then, only a leach test of your own fired pots shows whether they are food-safe. Warning signs in any glaze are heavy amounts of colorant, crystals on the surface and poor melting.
+**Toidunõuglasuur**{{en: liner glaze}} on glasuur tassi või kausi sisepinnal, kus on toit. Digitalfire kirjeldab toidunõuglasuuri, mille risk võib olla piisavalt väike, et seda ilma laborikatseta kasutada: see ei sisalda värvaineid, baariumi, pliid ega liitiumi; on täielikult välja sulanud; ei ole juuspragudega ja peab kulumisele hästi vastu. Isegi siis näitab ainult teie enda põletatud nõude metallide eraldumise laborikatse, kas need sobivad toidunõudeks. Hoiatavad märgid mis tahes glasuuri puhul on suur värvainete hulk, kristallid pinnal ja puudulik sulamine.
 
-### Family rules we suggest
+### Soovitatavad reeglid perele
 
-- Children's cups, bowls and plates: only lab-tested, durable liner glazes, or commercial dinnerware.
-- Do not store acidic food or drink (citrus, tomato, vinegar, fruit juice, wine) in pots glazed with anything you have not had tested.
-- Do not use crazed pieces for food.
-- Test tiles and experiments stay in the studio, never in the kitchen, the toy box or the pet's bowl.
-- Take care with other pottery too. The FDA advises caution with handmade or crude-looking pieces, antiques, damaged or worn pieces, flea-market finds and bright orange, red or yellow decoration.
-- If a child has used pottery you now doubt, the FDA says to talk to a doctor about a blood lead test.
+- Laste tassid, kausid ja taldrikud: ainult laboris katsetatud ja vastupidavad toidunõuglasuurid või tööstuslikult valmistatud lauanõud.
+- Ärge hoidke happelist toitu ega jooki (tsitrusvilju, tomatit, äädikat, puuviljamahla, veini) esemetes, mis on glasuuritud millegagi, mida te pole lasknud katsetada.
+- Ärge kasutage juuspragudega esemeid toidu jaoks.
+- Proovitükid ja katsetused jäägu töökotta, mitte kunagi kööki, mänguasjakasti ega lemmiklooma kaussi.
+- Olge ettevaatlik ka muu keraamikaga. FDA soovitab olla ettevaatlik käsitsi valmistatud või kohmaka välimusega esemete, antiikesemete, kahjustatud või kulunud esemete, kirbuturuleidude ning erkoranži, punase või kollase dekooriga esemetega.
+- Kui laps on kasutanud keraamikat, milles te nüüd kahtlete, rääkige FDA juhise kohaselt arstiga vere pliisisalduse analüüsist.
 
-For more on how glazes melt, why some leach and what the limits mean, see [Glazing from first principles](/guides/glazing-basics).
+Kuidas glasuurid sulavad, miks mõnest glasuurist metallid eralduvad ja mida piirnormid tähendavad, sellest lähemalt juhendis [Glasuurimise alused](/guides/glazing-basics).
 
 ## Allikad {#sources}
 

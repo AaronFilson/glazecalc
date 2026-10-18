@@ -88,7 +88,15 @@
     "chooseField": "Vyberte pole, ktoré chcete pridať, a potom kliknite na tlačidlo Pridať pole.",
     "fetchFailed": "Pri načítaní záznamov výpalov sa vyskytla chyba.",
     "saved": "Záznam výpalu sa úspešne uložil na server.",
-    "saveFailed": "Chyba: požiadavka na server zlyhala."
+    "saveFailed": "Chyba: požiadavka na server zlyhala.",
+    "recipesHeading": "Recepty vypálené v tomto výpale",
+    "noRecipes": "Zatiaľ nie sú prepojené žiadne recepty.",
+    "recipesFailed": "Vaše recepty sa nepodarilo načítať, takže teraz nemožno žiadny prepojiť.",
+    "pickRecipe": "Recept vypálený v tomto výpale",
+    "linkRecipe": "Prepojiť recept",
+    "unlink": "Zrušiť prepojenie",
+    "unlinkRecipe": "Zrušiť prepojenie: {title}",
+    "linkFailed": "Prepojenie sa nepodarilo uložiť."
   },
   "notes": {
     "title": "Poznámky",

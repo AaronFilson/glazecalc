@@ -88,7 +88,15 @@
     "chooseField": "Välj ett fält att lägga till och välj sedan Lägg till fältet.",
     "fetchFailed": "Ett fel uppstod när brännloggarna skulle hämtas.",
     "saved": "Brännloggen har sparats på servern.",
-    "saveFailed": "Fel: begäran till servern misslyckades."
+    "saveFailed": "Fel: begäran till servern misslyckades.",
+    "recipesHeading": "Recept som bränts vid den här bränningen",
+    "noRecipes": "Inga recept är kopplade än.",
+    "recipesFailed": "Recepten kunde inte hämtas, så inga recept kan kopplas just nu.",
+    "pickRecipe": "Ett recept som bränts vid den här bränningen",
+    "linkRecipe": "Koppla receptet",
+    "unlink": "Koppla bort",
+    "unlinkRecipe": "Koppla bort {title}",
+    "linkFailed": "Kopplingen kunde inte sparas."
   },
   "notes": {
     "title": "Anteckningar",

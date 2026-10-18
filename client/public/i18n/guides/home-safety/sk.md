@@ -149,76 +149,76 @@ Pet Poison Helpline uvádza: „Olovo je toxické pre všetky druhy, ale najvä�
 
 Ak zviera mohlo zjesť alebo vypiť čokoľvek z dielne alebo má príznaky ako tie uvedené vyššie, volajte svojho veterinára alebo linku pomoci pri otravách zvierat (pozrite tabuľku na začiatku stránky) a majte poruke názov suroviny a hmotnosť zvieraťa.
 
-## The kiln {#the-kiln lang=en}
+## Pec {#the-kiln}
 
-### The outside gets hot enough to burn
+### Povrch pece sa zohreje tak, že popáli
 
-A UK schools risk assessment says a kiln's outside "can reach 160 °C and possibly more" (about 320 °F), and a school kiln guide reports metal bands at up to 460 °F (about 240 °C). Skutt, a kiln maker, recommends a kiln room that can be locked against children and pets. Where a room cannot be locked, the school guide suggests a barrier such as a kiln safety screen.
+Britské hodnotenie rizík pre školy hovorí, že povrch pece „môže dosiahnuť 160 °C a možno aj viac“ (asi 320 °F), a školská príručka o peciach uvádza teplotu kovových obručí až 460 °F (asi 240 °C). Výrobca pecí Skutt odporúča miestnosť pre pec, ktorú možno zamknúť pred deťmi a zvieratami. Kde sa miestnosť zamknúť nedá, školská príručka navrhuje zábranu, napríklad ochrannú zástenu okolo pece.
 
-Small children and pets cannot understand a warning sign. We suggest keeping them behind a locked door or a barrier while the kiln fires and while it cools, and posting a warning sign for everyone else.
+Malé deti a zvieratá výstražnej tabuľke neporozumejú. Navrhujeme ich preto počas výpalu a chladnutia pece držať za zamknutými dverami alebo za zábranou a pre všetkých ostatných vyvesiť výstražnú tabuľku.
 
-### Space around it
+### Priestor okolo pece
 
-Sources disagree on clearance. Rio Grande says at least 12 inches (30 cm) from walls and anything combustible. L&L strongly recommends 18 inches (46 cm) to all walls, and the building code it cites asks for 3 feet (0.9 m) from combustible walls. Follow your kiln's manual and local fire code; if you are unsure, allow 18 inches from any wall and 3 feet from anything that can burn. In a garage, keep cars, fuel and paint well away.
+Zdroje sa líšia v tom, aká bezpečná vzdialenosť je potrebná. Rio Grande uvádza aspoň 12 palcov (30 cm) od stien a od všetkého horľavého. L&L dôrazne odporúča 18 palcov (46 cm) od všetkých stien a stavebný predpis, na ktorý sa odvoláva, požaduje 3 stopy (0,9 m) od horľavých stien. Riaďte sa návodom na obsluhu vašej pece a miestnymi požiarnymi predpismi; ak máte pochybnosti, nechajte 18 palcov od každej steny a 3 stopy od všetkého, čo môže horieť. V garáži majte autá, palivo a farby ďaleko od pece.
 
-### Power
+### Elektrické pripojenie
 
-Rio Grande recommends a **dedicated circuit** (one that powers nothing else) with a properly grounded outlet. We suggest no extension cord. Between firings, switch off the kiln's breaker or disconnect switch, or unplug it, so a child cannot start it.
+Rio Grande odporúča **samostatný istený elektrický okruh** (ktorý nenapája nič iné) so správne uzemnenou zásuvkou. Navrhujeme nepoužívať predlžovací kábel. Medzi výpalmi vypnite istič alebo hlavný vypínač pece, prípadne vytiahnite zástrčku zo zásuvky, aby pec nemohlo zapnúť dieťa.
 
-### Be there when the firing ends
+### Buďte pri peci na konci výpalu
 
-A **kiln sitter** is the mechanical switch on many manual kilns: a small cone bends at the end of the firing and trips the switch off. Its manual says it "is NOT intended to perform as a fail-safe shut-off device." Rio Grande says never to leave a firing kiln unattended, "especially near the expected shut-off time". So stay nearby and check the kiln while it fires, above all near the end; fire only when an adult will be home and awake to do that, check that it has switched off, and keep an ABC fire extinguisher in the kiln room. For how sitters, controllers and schedules work, see [Firing a basic kiln](/guides/firing).
+**Kiln-Sitter** je mechanický vypínač na mnohých peciach s ručným ovládaním: na konci výpalu sa malý kužeľ{{en: cone}} ohne a vypínač sa tým vypne. Jeho návod na obsluhu uvádza, že „NIE JE určený na to, aby slúžil ako vypínacie zariadenie bezpečné pri poruche“. Rio Grande radí nikdy nenechávať pec počas výpalu bez dozoru, „najmä okolo očakávaného času vypnutia“. Preto počas výpalu zostaňte nablízku a pec kontrolujte, predovšetkým ku koncu; vypaľujte len vtedy, keď bude doma dospelý, ktorý nebude spať, aby mohol zostať nablízku a pec kontrolovať, skontrolujte, či sa pec vypla, a v miestnosti s pecou majte hasiaci prístroj typu ABC. Ako fungujú vypínače Kiln-Sitter, regulátory a krivky výpalu, sa dočítate v návode [Výpal v jednoduchej peci](/guides/firing).
 
-### Fumes and carbon monoxide
+### Splodiny a oxid uhoľnatý
 
-Firing gives off fumes, so vent the kiln to the outdoors; [Safe mixing and ventilation](/guides/safe-mixing) explains how. A kiln in an attached garage needs venting that keeps fumes from reaching the house through the connecting door. Keep birds in a far room whenever the kiln fires.
+Pri výpale vznikajú splodiny, preto pec odvetrávajte von; ako na to, vysvetľuje návod [Bezpečné miešanie a vetranie](/guides/safe-mixing). Pec v garáži spojenej s domom potrebuje odsávanie, ktoré nedovolí splodinám dostať sa do domu cez spojovacie dvere. Pri každom výpale majte vtáky vo vzdialenej miestnosti.
 
-**Carbon monoxide** (CO) is a poisonous gas you cannot see or smell. A university kiln safety sheet requires CO alarms with gas kilns. Views differ for electric kilns, but burning off organic matter (in clay, or things like paper or wax) can make CO. We think a CO alarm in the kiln room and the rooms next to it is a sensible, inexpensive step for any kiln.
+**Oxid uhoľnatý** (CO) je jedovatý plyn, ktorý nevidno ani necítiť. Bezpečnostný list jednej univerzity k peciam vyžaduje pri plynových peciach detektory CO. Pri elektrických peciach sa názory líšia, ale pri vyhorení organických látok (v hline{{en: clay}} alebo vo veciach, ako je papier či vosk) môže vznikať CO. Myslíme si, že detektor CO v miestnosti s pecou a v susedných miestnostiach je pri akejkoľvek peci rozumný a lacný krok.
 
-### Peepholes and eyes
+### Kontrolné otvory a oči
 
-Infrared light, which you cannot see, "starts at 752°F (400°C)", and the Ceramic Arts Network says looking into a kiln above this should always be done with eye protection. Infrared can damage the lens of the eye and lead to cataracts, and long gazing can injure the retina. Sunglasses and didymium glasses do not block it.
+Infračervené žiarenie, ktoré nevidno, „začína pri 752°F (400°C)“ a podľa Ceramic Arts Network by sa do pece rozpálenej nad túto teplotu malo vždy pozerať s ochranou očí. Infračervené žiarenie môže poškodiť očnú šošovku a viesť k sivému zákalu a dlhé pozeranie môže poškodiť sietnicu. Slnečné okuliare ani didýmiové okuliare ho neblokujú.
 
 > [!WARNING]
-> Children should not look into a kiln at all. A glowing peephole draws them, and they will not reliably keep protective glasses on, so keep them away while the kiln is hot. Adults should look only briefly, through IR-rated welding glasses. Sources recommend shades from 1.7 to 5; shade 3 is a sensible choice, darker if you see spots afterward.
+> Deti by sa do pece nemali pozerať vôbec. Žiariaci kontrolný otvor ich priťahuje a nedá sa spoľahnúť na to, že si ochranné okuliare nechajú na očiach, preto ich držte ďalej, kým je pec horúca. Dospelí by sa mali pozerať len krátko, cez zváračské okuliare s filtrom proti IR žiareniu. Zdroje odporúčajú ochranné stupne od 1,7 do 5; stupeň 3 je rozumná voľba, tmavší, ak potom vidíte pred očami škvrny.
 
-## Handmade ware on the family table {#handmade-ware lang=en}
+## Ručne robená keramika na rodinnom stole {#handmade-ware}
 
-The question for pots on the family table is **leaching**: metals dissolving out of the fired glaze into food or drink. The FDA warns that if pottery "is not manufactured properly, this lead can leach into food and drink", and that "no amount of washing, boiling, or other process can remove lead from pottery." Regulators such as the US FDA and the EU limit how much lead and cadmium a finished piece releases in a standard acid test, not what the glaze contains. The strictest US limit, for cups, mugs and pitchers, is 0.5 µg/mL of lead.
+Pri nádobách na rodinnom stole ide o **vylúhovanie**{{en: leaching}}: kovy sa z vypálenej glazúry{{en: glaze}} rozpúšťajú do jedla alebo nápoja. FDA varuje, že ak keramika „nie je vyrobená správne, toto olovo sa môže vylúhovať do jedla a nápojov“ a že „olovo z keramiky neodstráni žiadne umývanie, varenie ani iný postup“. Regulačné orgány, napríklad americká FDA a EÚ, obmedzujú, koľko olova a kadmia uvoľní hotový výrobok pri štandardnej skúške s kyselinou, nie to, čo obsahuje glazúra. Najprísnejší limit v USA, pre šálky, hrnčeky a džbány, je 0,5 µg/mL olova.
 
-### Lead-free is not the same as food-safe
+### Bezolovnatá neznamená vhodná na styk s potravinami
 
-A glaze with no lead can still leach. Digitalfire, a glaze chemistry reference, names glazes containing "heavy metal oxide colorants, barium, lithium, or lead" as the concern, and warns that a stain fired above its rated temperature can release cadmium. The ASTM D-4236 art-materials label on a jar "DOES NOT establish that a fired glaze is food-safe", and "Tableware producers must test all finished ware to establish dinnerware status."
+Aj z glazúry bez olova sa môžu kovy vylúhovať. Digitalfire, príručka chémie glazúr, uvádza ako problém glazúry, ktoré obsahujú „farbivá{{en: colorants}} z oxidov ťažkých kovov, bárium, lítium alebo olovo“, a varuje, že farbítko{{en: stain}} vypálené nad teplotu, na ktorú je určené, môže uvoľňovať kadmium. Označenie ASTM D-4236 pre výtvarné potreby na nádobke s glazúrou „NEPOTVRDZUJE, že vypálená glazúra je vhodná na styk s potravinami“ a „výrobcovia stolového riadu musia testovať všetky hotové výrobky, aby preukázali, že sú vhodné ako jedálenský riad“.
 
 > [!NOTE]
-> "Food safe" means this glaze, on this clay, fired to this cone, applied this way, releases less than the legal limits. A recipe calculation, Glazecalc's included, can flag a risky recipe but cannot prove a pot is safe. Only a leach test of the fired piece can.
+> „Vhodná na styk s potravinami“{{en: food safe}} znamená, že táto glazúra na tejto hline{{en: clay}}, vypálená na tento kužeľ{{en: cone}} a nanesená týmto spôsobom, uvoľňuje menej, než povoľujú zákonné limity. Výpočet receptu, vrátane výpočtu v aplikácii Glazecalc, môže upozorniť na rizikový recept, ale nemôže dokázať, že nádoba je bezpečná. Dokáže to len skúška vylúhovania kovov z vypáleného kusu.
 
-We suggest reading a "food safe" label on a commercial glaze as a good start, not a guarantee: a different clay, a thicker coat, another cone or a second glaze on top changes the result.
+Navrhujeme brať označenie „vhodná na styk s potravinami“ na hotovej glazúre z obchodu ako dobrý začiatok, nie ako záruku: iná hlina, hrubšia vrstva, iný kužeľ alebo druhá glazúra navrchu výsledok zmení.
 
-### Testing
+### Skúšky
 
-Laboratories test fired pieces with a standard acid soak that represents a worst case, such as ASTM C738 in the US. One lab's EU test needs four identical pieces and takes seven working days, so make spares of anything you plan to have tested.
+Laboratóriá skúšajú vypálené kusy štandardným lúhovaním v kyseline, ktoré predstavuje najhorší prípad, napríklad podľa ASTM C738 v USA. Skúška podľa predpisov EÚ v jednom laboratóriu vyžaduje štyri rovnaké kusy a trvá sedem pracovných dní, preto z každého výrobku, ktorý chcete dať otestovať, urobte aj kusy navyše.
 
-Home tests are disputed. The FDA says home swab kits can show leachable lead, and that a piece that tests positive should not be used for food. Ceramics NZ warns that consumer lead-test pens are "not designed for this use" on ceramics and can give false positives. Digitalfire suggests leaving a lemon slice on the glaze overnight as a rough screen. The safe reading: a positive home test means stop using the piece for food, and a negative one proves nothing. Only a lab can tell you a piece is safe.
+Domáce testy sú sporné. Podľa FDA môžu domáce sady so stieracími tampónmi ukázať vylúhovateľné olovo a kus s pozitívnym výsledkom by sa nemal používať na jedlo. Ceramics NZ varuje, že spotrebiteľské testovacie perá na olovo „nie sú určené na takéto použitie“ na keramike a môžu dať falošne pozitívne výsledky. Digitalfire navrhuje ako hrubú orientačnú skúšku nechať na glazúre cez noc plátok citróna. Bezpečný výklad: pozitívny domáci test znamená prestať kus používať na jedlo a negatívny nedokazuje nič. Len laboratórium vám môže povedať, že kus je bezpečný.
 
-### Crazed ware
+### Keramika s trhlinkami
 
-**Crazing** is a network of fine cracks in the glaze surface, and sources disagree about it. A Ceramics Monthly experiment found crazed tiles could be cleaned, best in a dishwasher, though they came out less clean than uncrazed tiles after soap and water. Digitalfire holds that "Crazed ware is unacceptable" and that crazing "severely weakens ware". The safe course is simple: do not use crazed pieces for food.
+**Trhlinkovanie**{{en: crazing}} je sieť jemných trhliniek v povrchu glazúry a zdroje sa v jeho hodnotení rozchádzajú. Pri pokuse opísanom v časopise Ceramics Monthly sa zistilo, že doštičky s trhlinkami sa dajú vyčistiť, najlepšie v umývačke riadu, hoci po umytí mydlom a vodou boli menej čisté ako doštičky bez trhliniek. Digitalfire zastáva názor, že „výrobky s trhlinkami sú neprijateľné“ a že trhlinkovanie „výrobky vážne oslabuje“. Bezpečný postup je jednoduchý: kusy s trhlinkami nepoužívajte na jedlo.
 
-### Liner glazes
+### Glazúry na vnútro nádob
 
-A **liner glaze** is the glaze on the inside of a cup or bowl, where the food sits. Digitalfire describes a liner that may be low enough in risk to use without lab testing: no colorants, barium, lead or lithium; fully melted; no crazing; and it wears well. Even then, only a leach test of your own fired pots shows whether they are food-safe. Warning signs in any glaze are heavy amounts of colorant, crystals on the surface and poor melting.
+**Glazúra na vnútro nádob**{{en: liner glaze}} je glazúra na vnútornej strane šálky alebo misky, kde je jedlo. Digitalfire opisuje glazúru na vnútro nádob, ktorá môže byť natoľko málo riziková, že sa dá používať bez laboratórnej skúšky: bez farbív, bária, olova a lítia; úplne pretavená; bez trhlinkovania; a dobre odolná voči opotrebovaniu. Ani tak však len skúška vylúhovania kovov z vašich vlastných vypálených nádob ukáže, či sú vhodné na styk s potravinami. Varovnými znakmi pri akejkoľvek glazúre sú veľké množstvo farbiva, kryštály na povrchu a slabé pretavenie.
 
-### Family rules we suggest
+### Rodinné pravidlá, ktoré navrhujeme
 
-- Children's cups, bowls and plates: only lab-tested, durable liner glazes, or commercial dinnerware.
-- Do not store acidic food or drink (citrus, tomato, vinegar, fruit juice, wine) in pots glazed with anything you have not had tested.
-- Do not use crazed pieces for food.
-- Test tiles and experiments stay in the studio, never in the kitchen, the toy box or the pet's bowl.
-- Take care with other pottery too. The FDA advises caution with handmade or crude-looking pieces, antiques, damaged or worn pieces, flea-market finds and bright orange, red or yellow decoration.
-- If a child has used pottery you now doubt, the FDA says to talk to a doctor about a blood lead test.
+- Detské šálky, misky a taniere: len laboratórne otestované, odolné glazúry na vnútro nádob alebo kupovaný jedálenský riad.
+- Kyslé jedlá ani nápoje (citrusy, paradajky, ocot, ovocné šťavy, víno) neuchovávajte v nádobách s glazúrou, ktorú ste nedali otestovať.
+- Kusy s trhlinkami nepoužívajte na jedlo.
+- Skúšobné doštičky{{en: test tiles}} a pokusy zostávajú v dielni, nikdy nie v kuchyni, v debničke s hračkami ani v miske zvieraťa.
+- Dávajte pozor aj na inú keramiku. FDA radí opatrnosť pri ručne robených alebo primitívne vyzerajúcich kusoch, starožitnostiach, poškodených alebo opotrebovaných kusoch, úlovkoch z bleších trhov a pri jasne oranžovom, červenom alebo žltom dekore.
+- Ak dieťa používalo keramiku, o ktorej teraz pochybujete, FDA radí poradiť sa s lekárom o meraní hladiny olova v krvi.
 
-For more on how glazes melt, why some leach and what the limits mean, see [Glazing from first principles](/guides/glazing-basics).
+Viac o tom, ako sa glazúry tavia, prečo sa z niektorých kovy vylúhujú a čo znamenajú limity, nájdete v návode [Glazovanie od základov](/guides/glazing-basics).
 
 ## Zdroje {#sources}
 

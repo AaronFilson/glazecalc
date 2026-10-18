@@ -56,7 +56,8 @@
     "vet": "Hívja az állatorvosát.",
     "checkedOn": "Ellenőrizve itt:",
     "choosePrompt": "Válassza ki az országát, hogy lássa, kit hívjon ott.",
-    "ministry": "Az egészségügyi minisztérium oldala: <link>{name}</link>."
+    "ministry": "Az egészségügyi minisztérium oldala: <link>{name}</link>.",
+    "reported": "A hivatalos kormányzati oldalak a 113, 114 és 115 számot sorolják fel, de nem azt, hogy melyik mire való; a megjelenített szerepek a 22/2014/TT-BTTTT körlevelet követik, ahogy azt másodlagos oldalak idézik."
   },
   "density": {
     "sg": "fajsúly {value}",
@@ -91,6 +92,7 @@
     "caption": "A respirábilis kristályos szilícium-dioxid munkahelyi határértéke – {region}, 8 órás átlag (ellenőrizve: {date})",
     "captionControl": "A respirábilis kristályos szilícium-dioxid mércéje egy munkaterület levegőjében – {region} (ellenőrizve: {date})",
     "both": "Kvarc és krisztobalit",
+    "freeSilica": "Szabad szilícium-dioxid",
     "quartz": "Kvarc",
     "cristobalite": "Krisztobalit",
     "actionLevel": "Beavatkozási szint",
@@ -171,7 +173,13 @@
       "thSmall": "25 mm-nél mélyebb tárgyak, 1,1 L alatt",
       "thLarge": "25 mm-nél mélyebb tárgyak, legalább 1,1 L",
       "thInfant": "Legfeljebb 12 hónapos csecsemők ételéhez használt edények",
-      "thCooking": "Főzőedények, amelyeket a főzés hőjének elviselésére készítettek"
+      "thCooking": "Főzőedények, amelyeket a főzés hőjének elviselésére készítettek",
+      "vnFlat": "Sekély tárgyak élelmiszer tárolására vagy főzésére",
+      "vnSmall": "Öblös tárgyak élelmiszer tárolására, 1100 mL alatt",
+      "vnMedium": "Öblös tárgyak élelmiszer tárolására, 1100 mL-től 3000 mL alatt",
+      "vnStorage": "Öblös tárgyak élelmiszer tárolására, 3000 mL vagy több",
+      "vnCooking": "Öblös tárgyak főzésre",
+      "vnCups": "Csészék és kis tálak"
     },
     "judged": {
       "average": "6 darab átlaga",

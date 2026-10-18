@@ -56,7 +56,8 @@
     "vet": "Ligue para o seu veterinário.",
     "checkedOn": "Verificado em:",
     "choosePrompt": "Escolha o seu país para ver a quem ligar.",
-    "ministry": "A página do Ministério da Saúde: <link>{name}</link>."
+    "ministry": "A página do Ministério da Saúde: <link>{name}</link>.",
+    "reported": "As páginas oficiais do governo indicam 113, 114 e 115, mas não para que serve cada número; as funções mostradas seguem a Circular 22/2014/TT-BTTTT, tal como a citam páginas secundárias."
   },
   "density": {
     "sg": "SG {value}",
@@ -91,6 +92,7 @@
     "caption": "{region}: valor-limite de exposição profissional à sílica cristalina respirável, média de 8 horas (verificado em {date})",
     "captionControl": "{region}: o critério de referência para a sílica cristalina respirável no ar de uma zona de trabalho (verificado em {date})",
     "both": "Quartzo e cristobalite",
+    "freeSilica": "Sílica livre",
     "quartz": "Quartzo",
     "cristobalite": "Cristobalite",
     "actionLevel": "Nível de ação",
@@ -171,7 +173,13 @@
       "thSmall": "Peças com mais de 25 mm de profundidade, com menos de 1,1 L",
       "thLarge": "Peças com mais de 25 mm de profundidade, com 1,1 L ou mais",
       "thInfant": "Recipientes para a comida de bebés até 12 meses",
-      "thCooking": "Louça de cozinha, feita para suportar o calor da cozedura de alimentos"
+      "thCooking": "Louça de cozinha, feita para suportar o calor da cozedura de alimentos",
+      "vnFlat": "Peças pouco fundas, para conter ou cozinhar alimentos",
+      "vnSmall": "Peças fundas para conter alimentos, com menos de 1100 mL",
+      "vnMedium": "Peças fundas para conter alimentos, de 1100 mL a menos de 3000 mL",
+      "vnStorage": "Peças fundas para conter alimentos, com 3000 mL ou mais",
+      "vnCooking": "Peças fundas para cozinhar",
+      "vnCups": "Chávenas e taças pequenas"
     },
     "judged": {
       "average": "média de 6 peças",

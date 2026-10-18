@@ -248,6 +248,22 @@
       "saved": "Gespeichert: Zahlen und Datumsangaben im Format {language}.",
       "help": "Wie Zahlen und Datumsangaben geschrieben werden: 12,345.6 oder 12.345,6, und die Reihenfolge von Tag und Monat."
     },
+    "calendar": {
+      "legend": "Kalender",
+      "help": "Der Kalender, in dem Datumsangaben angezeigt werden. Datumsangaben, die Sie eingeben, bleiben im gregorianischen Kalender.",
+      "gregory": {
+        "label": "Gregorianisch",
+        "saved": "Gespeichert: Datumsangaben werden im gregorianischen Kalender angezeigt."
+      },
+      "buddhist": {
+        "label": "Thailändische buddhistische Ära",
+        "saved": "Gespeichert: Datumsangaben werden in der thailändischen buddhistischen Ära angezeigt."
+      },
+      "japanese": {
+        "label": "Japanische Ära",
+        "saved": "Gespeichert: Datumsangaben werden in japanischen Ären angezeigt."
+      }
+    },
     "decimalMark": {
       "legend": "Eingabe von Mengen",
       "either": {

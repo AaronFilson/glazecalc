@@ -361,7 +361,8 @@
     "heading": "Riziká",
     "intro": "Tak, ako ich uvádza záznam každej suroviny; riziká štandardnej knižnice pochádzajú z kariet bezpečnostných údajov dodávateľov.",
     "line": "<b>{names}:</b> {hazards}",
-    "unknown": "{count, plural, one {Pre {list} nie sú uvedené žiadne riziká: pozrite kartu bezpečnostných údajov, ktorá je k nej priložená.} few {Pre {list} nie sú uvedené žiadne riziká: pozrite karty bezpečnostných údajov, ktoré sú k nim priložené.} many {Pre {list} nie sú uvedené žiadne riziká: pozrite karty bezpečnostných údajov, ktoré sú k nim priložené.} other {Pre {list} nie sú uvedené žiadne riziká: pozrite karty bezpečnostných údajov, ktoré sú k nim priložené.}}"
+    "unknown": "{count, plural, one {Pre {list} nie sú uvedené žiadne riziká: pozrite kartu bezpečnostných údajov, ktorá je k nej priložená.} few {Pre {list} nie sú uvedené žiadne riziká: pozrite karty bezpečnostných údajov, ktoré sú k nim priložené.} many {Pre {list} nie sú uvedené žiadne riziká: pozrite karty bezpečnostných údajov, ktoré sú k nim priložené.} other {Pre {list} nie sú uvedené žiadne riziká: pozrite karty bezpečnostných údajov, ktoré sú k nim priložené.}}",
+    "safety": "Suché suroviny na glazúry vytvárajú prach: nepúšťajte ho do pľúc, a to ani prach zo surovín, ktoré nie sú klasifikované ako nebezpečné: pozrite <mixing>Bezpečné miešanie a vetranie</mixing> a <home>Neotrávte svoju rodinu</home>, ak sú nablízku deti alebo domáce zvieratá. Ak karta bezpečnostných údajov suroviny uvádza viac, riaďte sa ňou."
   },
   "compare": {
     "heading": "Porovnať dva recepty",
@@ -590,7 +591,10 @@
     "guidance": "Sú to usmernenia, nie hodnotenie „vyhovel, alebo nevyhovel“: glazúra mimo nich môže byť v poriadku a glazúra v nich môže napriek tomu trhlinkovať, uvoľňovať kovy alebo zlyhať. Vyskúšajte ju.",
     "source": "Zdroj:",
     "saveFailed": "Vašu voľbu sady limitov sa nepodarilo uložiť do účtu, takže stále platí skoršia sada.",
-    "ownLimits": "Tieto návrhy používajú vlastné limity Glazecalc, nie {name}."
+    "ownLimits": "Tieto návrhy používajú vlastné limity Glazecalc, nie {name}.",
+    "firingFromBlock": "Podľa výpalu receptu ({bands})",
+    "bothBands": "Výpal receptu zahŕňa {bands}, preto sa každé pásmo kontroluje zvlášť, vedľa seba: glazúra sa na oboch koncoch správa rovnako len zriedka.",
+    "fromFiring": "Hodnoty platia pre výpal receptu: {band}. Ak chcete skontrolovať iný, vyberte iný výpal vyššie."
   },
   "stull": {
     "heading": "Stullov diagram",
@@ -714,7 +718,8 @@
     "notSaved": "Nič sa neuložilo: {problem}",
     "stopped": "Uložené {saved} z {count}. Ostatné sa neuložili: {problem}",
     "saved": "{count, plural, one {Uložený # recept.} few {Uložené # recepty.} many {Uložené # receptu.} other {Uložených # receptov.}}",
-    "openRecipes": "Otvoriť vaše recepty"
+    "openRecipes": "Otvoriť vaše recepty",
+    "firingRead": "Výpal prečítaný z poznámok: {firing}"
   },
   "blends": {
     "title": "Zmesi na skúšobné doštičky",
@@ -847,5 +852,115 @@
     "retry": "Skúsiť znova",
     "about": "Glazecalc je bezplatná kalkulačka glazúr pre keramikárov.",
     "aboutLink": "O Glazecalc"
+  },
+  "firing": {
+    "heading": "Výpal",
+    "whatIsCone": "Čo znamená kužeľ?",
+    "scale": "Stupnica",
+    "scales": {
+      "orton": "Ortonove kužele",
+      "sk": "Kužele SK (JIS)",
+      "temperature": "Teplota"
+    },
+    "groups": {
+      "usual": "Kužele 022 až 13",
+      "half": "Kužele s polovičným číslom",
+      "above": "Kužele 14 až 42 (v keramike zriedkavé)"
+    },
+    "coneLabel": "Kužeľ",
+    "lowCone": "Od kužeľa",
+    "highCone": "Po kužeľ",
+    "noHigh": "Bez horného kužeľa",
+    "notStated": "Neuvedené",
+    "peak": "Najvyššia teplota ({unit})",
+    "lowTemperature": "Od ({unit})",
+    "highTemperature": "Do ({unit})",
+    "rangeToggle": "Rozsah",
+    "testedLegend": "Vyskúšané na: zaškrtnite každý kužeľ, na ktorý ste ju vypálili",
+    "atmosphere": "Atmosféra",
+    "process": "Spôsob výpalu",
+    "atmospheres": {
+      "oxidation": "oxidačná",
+      "reduction": "redukčná",
+      "neutral": "neutrálna"
+    },
+    "processes": {
+      "wood": "na drevo",
+      "soda": "sódový",
+      "salt": "soľný",
+      "raku": "raku",
+      "pit": "jamový"
+    },
+    "rate": "Rýchlosť za poslednú hodinu ({unit} za hodinu)",
+    "hold": "Výdrž na najvyššej teplote (minúty)",
+    "schedule": "Poznámky ku krivke výpalu",
+    "schedulePlaceholder": "Výdrž 10 minút, pomalé chladenie…",
+    "witness": "Potvrdené kontrolným kužeľom",
+    "foodSurface": "Pre plochu v styku s potravinami (glazúra na vnútro nádob)",
+    "liner": {
+      "note": "Bezpečnosť pri styku s potravinami závisí od toho, či sa táto glazúra vypáli na kužeľ, na ktorý bola skúšaná: nedopálená glazúra môže uvoľňovať kovy.",
+      "range": "Je uvedená pre rozsah, preto ju vyskúšajte na dolnom konci rozsahu, kde sa taví najmenej.",
+      "untested": "Zatiaľ nie je označený žiadny vyskúšaný kužeľ.",
+      "test": "Len skúška vylúhovania kovov z vašich vlastných vypálených nádob ukáže, či je bezpečná na styk s potravinami."
+    },
+    "helpSummary": "O výpale",
+    "help": {
+      "cone": "Kužeľ, na ktorý ste túto glazúru vypálili. Kužele nemerajú len teplotu, ale tepelnú prácu (čas a teplotu), takže kužeľ 06 zodpovedá oveľa nižšej teplote ako kužeľ 6.",
+      "range": "Ak glazúra funguje v rozsahu, uveďte najnižší a najvyšší kužeľ a zaškrtnite tie, na ktoré ste ju skutočne vypálili: vyskúšaný kužeľ sa zobrazí ako prvý. Glazúra môže na každom konci vyzerať aj sa správať inak.",
+      "convert": "Kužeľ sa uchová tak, ako ho zadáte. Každý prevod na inú stupnicu alebo na teplotu je približný: kužeľ sa ohne pri inej teplote podľa toho, ako rýchlo sa pec ohrieva, a kužele SK a Orton s rovnakým číslom nie sú to isté.",
+      "move": "Presun glazúry na iný kužeľ zvyčajne znamená prepracovať recept, nielen ju vypáliť na vyššiu alebo nižšiu teplotu. Voľba Duplikovať pre iný kužeľ zachová obe verzie."
+    },
+    "temperatureProblem": "Zadajte teplotu od {min} do {max}.",
+    "rateProblem": "Zadajte rýchlosť ako celé číslo stupňov za hodinu.",
+    "holdProblem": "Zadajte výdrž v celých minútach, najviac jeden deň.",
+    "one": {
+      "orton": "kužeľ {cone}",
+      "sk": "SK {cone}"
+    },
+    "span": {
+      "orton": "kužeľ {low}–{high}",
+      "sk": "SK {low}–{high}",
+      "temperature": "{low} až {high}"
+    },
+    "testedAt": "Vyskúšané na {cones}",
+    "claimedRange": "uvádzaný rozsah {range}",
+    "rangeUntested": "Rozsah {range}; žiadny kužeľ nie je označený ako vyskúšaný",
+    "approxTemperature": "≈ {temperature} ({basis}; približne)",
+    "approxCone": "≈ {cone} ({basis}; približne)",
+    "basis": {
+      "orton60": "veľké kužele Orton pri 60 °C za hodinu",
+      "kyoto": "zmerané pri 100 °C za hodinu mestským ústavom v Kjóte",
+      "stated": "ako je uvedené"
+    },
+    "rateText": "{rate} za hodinu v poslednej hodine",
+    "holdText": "výdrž {minutes} min",
+    "witnessText": "overené kontrolným kužeľom",
+    "asGiven": "Výpal tak, ako ho uviedol autor:",
+    "filterCone": "Zobraziť recepty pre kužeľ",
+    "anyCone": "Ľubovoľný kužeľ",
+    "filterAtmosphere": "Zobraziť recepty pre atmosféru alebo spôsob výpalu",
+    "anyAtmosphere": "Ľubovoľná atmosféra alebo spôsob výpalu",
+    "duplicate": "Duplikovať pre iný kužeľ",
+    "duplicateName": "Duplikovať {title} pre iný kužeľ",
+    "duplicateTitle": "{title} (iný kužeľ)",
+    "duplicateNote": "Kópia receptu {title}, zatiaľ neuložená: vyberte jej nový kužeľ vo Výpale. Presun glazúry na iný kužeľ zvyčajne znamená prepracovať recept, nielen ju vypáliť na vyššiu alebo nižšiu teplotu, preto skontrolujte limity a glazúru vyskúšajte."
+  },
+  "firings": {
+    "heading": "Záznamy výpalov",
+    "open": "Prepojiť záznamy výpalov",
+    "fetchFailed": "Vaše záznamy výpalov sa nepodarilo načítať.",
+    "noLogs": "Zatiaľ žiadne záznamy výpalov.",
+    "toLogs": "Zaznamenať výpal",
+    "saveFailed": "Zmenu v prepojení záznamov výpalov sa nepodarilo uložiť.",
+    "resultFor": "Výsledok v zázname {title}",
+    "resultPlaceholder": "Ako to dopadlo: lesklá, bez trhlín…",
+    "unlink": "Zrušiť prepojenie",
+    "unlinkName": "Zrušiť prepojenie: {title}",
+    "choose": "Záznam výpalu na prepojenie",
+    "link": "Prepojiť",
+    "fill": "Zaškrtnúť kužele, ktoré tieto záznamy uvádzajú: {cones}",
+    "replaceAsk": "Vyskúšané je zaškrtnuté pri {now}. Nahradiť to kužeľmi, ktoré záznamy uvádzajú, {logs}?",
+    "replace": "Nahradiť",
+    "keep": "Ponechať bez zmeny"
   }
 }

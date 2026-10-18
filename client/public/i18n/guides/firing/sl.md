@@ -165,69 +165,69 @@ Pričakujte razlike: po Ortonovih besedah »boste običajno med vrhom in dnom pe
 
 :::orton
 
-## The kiln sitter {#kiln-sitter lang=en}
+## Stikalo Kiln-Sitter {#kiln-sitter}
 
-A **kiln sitter** is the mechanical switch, on the outside of many basic and older kilns, that turns the kiln off when a small cone bends. The best known is the Dawson Kiln-Sitter. It makes firing easier, but it is a convenience, not a safety device.
+**Kiln-Sitter**{{en: kiln sitter}} je mehansko stikalo na zunanji strani mnogih preprostih in starejših peči, ki peč izklopi, ko se upogne mali stožec. Najbolj znan je Kiln-Sitter podjetja Dawson. Žganje olajša, vendar je pripomoček, ne varnostna naprava.
 
-### How it works
+### Kako deluje
 
-A porcelain tube reaches into the kiln. At its end, a small cone or a bar lies across two metal supports, under a **sensing rod** that pivots like a seesaw. Outside the kiln, the other end of the rod holds up a weight by a small claw. When the cone softens and bends to about 90°, the rod drops far enough to release the weight, the weight falls, and the power to the elements is cut.
+Porcelanasta cevka sega v notranjost peči. Na njenem koncu leži mali stožec ali paličica prečno na dveh kovinskih nosilcih, pod **tipalno palico**, ki se kot gugalnica nagiba okrog vrtišča. Zunaj peči drugi konec palice z majhnim krempljem drži utež. Ko se stožec zmehča in upogne do približno 90°, se palica spusti dovolj, da sprosti utež, utež pade in dovod toka do grelnih elementov se prekine.
 
-Small cones and bars "give equivalent heat treatment". Orton notes that many beginners choose bars, because their even shape makes it easy to place them the same way every time. A small cone tapers, so where it sits matters: with its thin part under the rod the kiln shuts off cooler, and with its thick part hotter, a shift of "as much as 1/2 cone".
+Mali stožci in paličice »dajejo enakovredno toplotno obdelavo«. Orton ugotavlja, da mnogi začetniki izberejo paličice, ker jih je zaradi enakomerne oblike preprosto vsakič položiti enako. Mali stožec se oža, zato je pomembno, kako leži: če je pod palico njegov tanki del, peč izklopi pri nižji temperaturi, če debeli del, pa pri višji, in to z razliko »kar do 1/2 stožca«.
 
-### Which cone goes in the sitter
+### Kateri stožec gre v Kiln-Sitter
 
-Sources disagree. Dawson, who made the sitter, says to use the same number as the firing cone on the shelf, and to go one number hotter only if the shelf cone stays unbent. L&L says to use one number hotter than the shelf cones, because the sitter sits near the wall and the elements, gets more heat, and tends to shut off early. Orton settles the principle: "The shelf cone is the final judge of the firing process, not the Kiln-Sitter cone or bar."
-
-> [!NOTE]
-> Our starting point: put a small cone of the same number as your target in the sitter, with a cone pack on the shelf. If the shelf firing cone is under-bent when the kiln shuts off, go one number hotter in the sitter next time, or set the thicker part of the cone under the rod. If it is over-bent, do the opposite.
-
-### Setting it up, and checks before every firing
-
-Dawson's procedure, which doubles as a check before every firing:
-
-1. Turn all the switches off. Check that the sensing rod moves freely, sits centered in the tube and is not bent or corroded. If it is sluggish, Dawson says to replace the tube assembly.
-2. Brush a thin coat of high-fire **kiln wash** (a coating that stops melted material sticking) onto the cone supports and the rod where it touches the cone. Never put wash on the cone or the porcelain tube.
-3. Load shelves and ware at least 1 in (25 mm) above or below the tube, so nothing can touch, fall against or block it.
-4. Lift the weight, press the claw down onto the trigger, and lay the cone or bar flat on the supports against the metal step, as your sitter's manual shows, the same way every time. Check it again before closing the lid: "AN IMPROPERLY PLACED CONE OR BAR COULD CAUSE AN OVERFIRING."
-5. Set the limit timer and push in the plunger until it locks. Keep the kiln level and the space under the weight clear, so the weight can fall.
-
-### The limit timer
-
-Many sitters, including Dawson's LT models, have a **limit timer**: a clock that turns the kiln off after a set time, as a backup "in case the KILN-SITTER fails". It should always be set longer than the firing is expected to take. Sources set the margin differently:
-
-Table: How long to set the limit timer
-Label: Limit timer settings
-
-| Source    | Setting                                                                                                                      |
-| --------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| Dawson    | ½ hour longer than the expected firing time until you know the kiln, later as little as ¼ hour; never set it beyond 20 hours |
-| L&L       | Very high the first time, noting how long the firing takes; after that, about 1 hour longer                                  |
-| Bracker's | 30 minutes to 1 hour longer than the firing time                                                                             |
+Viri se ne ujemajo. Dawson, ki je Kiln-Sitter izdeloval, svetuje isto številko kot pri ciljnem stožcu na plošči in stožec za eno številko vročejši le, če stožec na plošči ostane neupognjen. L&L svetuje stožec za eno številko vročejši od stožcev na plošči, ker je Kiln-Sitter blizu stene in grelnih elementov, dobi več toplote in se nagiba k prezgodnjemu izklopu. Orton načelo razreši: »Končni razsodnik žganja je stožec na plošči, ne stožec ali paličica v Kiln-Sitterju.«
 
 > [!NOTE]
-> Our starting point: generous the first time (within the dial's 20 hours), then ½ to 1 hour longer than the time you recorded. The timer also tells you how long a firing took: set at 7 and ending at 1 means 6 hours.
+> Naše izhodišče: v Kiln-Sitter položite mali stožec z enako številko, kot je vaš cilj, na plošči pa naj bo niz treh stožcev. Če je ciljni stožec na plošči ob izklopu peči premalo upognjen, naslednjič v Kiln-Sitter dajte stožec za eno številko vročejši ali pa pod palico položite debelejši del stožca. Če je preveč upognjen, storite nasprotno.
 
-### When it shuts off early or late
+### Priprava in pregled pred vsakim žganjem
 
-After each firing, read the sitter cone beside the shelf cones.
+Dawsonov postopek, ki je hkrati pregled pred vsakim žganjem:
 
-Table: Reading the sitter after a firing
-Label: Kiln sitter problems
+1. Izklopite vsa stikala. Preverite, ali se tipalna palica prosto premika, ali je na sredini cevke in ali ni ukrivljena ali korodirana. Če se premika težko, Dawson svetuje, da zamenjate celoten sklop s cevko.
+2. S čopičem nanesite tanko plast visokotemperaturnega **ločilnega premaza** (premaza, ki preprečuje, da bi se staljeni material prijel) na nosilca stožca in na palico, kjer se dotika stožca. Premaza nikoli ne nanašajte na stožec ali porcelanasto cevko.
+3. Šamotne plošče in izdelke naložite vsaj 1 palec (25 mm) nad cevko ali pod njo, da se je nič ne more dotakniti, pasti nanjo ali je zapreti.
+4. Dvignite utež, krempelj pritisnite navzdol na sprožilec, stožec ali paličico pa položite plosko na nosilca, ob kovinsko stopničko, kot kažejo navodila za vaš Kiln-Sitter, vsakič enako. Pred zapiranjem pokrova postavitev še enkrat preverite: »NEPRAVILNO POLOŽEN STOŽEC ALI PALIČICA LAHKO POVZROČI PREŽGANJE.«
+5. Nastavite časovni omejevalnik in potisnite gumb, da se zaskoči. Peč naj stoji vodoravno, prostor pod utežjo pa naj bo prost, da utež lahko pade.
 
-| What you see                                    | Likely cause                                                                                           | What to do                                                       |
-| ----------------------------------------------- | ------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------- |
-| Sitter tripped, shelf firing cone under-bent    | The sitter ran hotter than the shelf (it sits near the wall)                                           | One cone hotter in the sitter, or the thicker part under the rod |
-| Sitter cone sagged well past 90°                | The kiln climbed too fast near the end                                                                 | Lower the switch settings, so the climb is slower (Dawson)       |
-| Sitter cone did not bend, or melted into a blob | The sitter itself: poor adjustment, a bent or corroded rod, or something lodged in or against the tube | Check and adjust the sitter by its manual before firing again    |
-| Early or late every time                        | Out of adjustment, or a worn rod                                                                       | Check with the firing gauge; move the trigger plate              |
+### Časovni omejevalnik
 
-To check the adjustment, Dawson uses a **firing gauge** that holds the rod where a fully bent cone would leave it; there should then be "1/16th-inch clearance" (about 1.6 mm) at the claw. Check it every 30 firings. Ceramics Monthly's rule: if the kiln shuts off early, move the trigger plate up slightly; if late, move it down slightly. Whatever the sitter does, "Always trust large witness cones over small sitter cones."
+Mnogi Kiln-Sitterji, tudi Dawsonovi modeli LT, imajo **časovni omejevalnik**: uro, ki peč izklopi po nastavljenem času, kot rezervo »za primer, da KILN-SITTER odpove«. Vedno naj bo nastavljen na daljši čas, kot naj bi žganje predvidoma trajalo. Viri rezervo določajo različno:
+
+Table: Na koliko nastaviti časovni omejevalnik
+Label: Nastavitve časovnega omejevalnika
+
+| Vir       | Nastavitev                                                                                                                               |
+| --------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| Dawson    | ½ ure dlje od predvidenega časa žganja, dokler peči ne poznate, pozneje tudi samo ¼ ure dlje; nikoli ga ne nastavljajte na več kot 20 ur |
+| L&L       | Prvič zelo visoko, pri čemer si zapišite, koliko časa traja žganje; nato približno 1 uro dlje                                            |
+| Bracker's | 30 minut do 1 uro dlje od časa žganja                                                                                                    |
+
+> [!NOTE]
+> Naše izhodišče: prvič velikodušno (v okviru 20 ur na številčnici), nato ½ do 1 uro dlje od časa, ki ste ga zapisali. Časovni omejevalnik vam pove tudi, koliko je žganje trajalo: nastavljen na 7 in ustavljen pri 1 pomeni 6 ur.
+
+### Ko izklopi prezgodaj ali prepozno
+
+Po vsakem žganju odčitajte stožec iz Kiln-Sitterja skupaj s stožci s plošč.
+
+Table: Odčitavanje Kiln-Sitterja po žganju
+Label: Težave s Kiln-Sitterjem
+
+| Kaj vidite                                                             | Verjeten vzrok                                                                                                         | Kaj storiti                                                                      |
+| ---------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
+| Kiln-Sitter se je sprožil, ciljni stožec na plošči je premalo upognjen | V Kiln-Sitterju je bilo topleje kot na plošči (je blizu stene)                                                         | V Kiln-Sitter stožec za eno številko vročejši ali debelejši del pod palico       |
+| Stožec v Kiln-Sitterju se je povesil precej čez 90°                    | Temperatura v peči je proti koncu naraščala prehitro                                                                   | Znižajte nastavitve stikal, da bo segrevanje počasnejše (Dawson)                 |
+| Stožec v Kiln-Sitterju se ni upognil ali se je stalil v kepo           | Sam Kiln-Sitter: slaba nastavitev, ukrivljena ali korodirana palica ali nekaj, kar se je zagozdilo v cevki ali ob njej | Pred naslednjim žganjem Kiln-Sitter preverite in nastavite po njegovih navodilih |
+| Vsakič prezgodaj ali prepozno                                          | Slaba nastavitev ali obrabljena palica                                                                                 | Preverite z nastavitveno šablono; premaknite sprožilno ploščico                  |
+
+Za preverjanje nastavitve Dawson uporablja **nastavitveno šablono**, ki drži palico tam, kjer bi jo pustil popolnoma upognjen stožec; pri kremplju naj bo takrat »1/16 palca zračnosti« (približno 1,6 mm). Preverite jo vsakih 30 žganj. Pravilo revije Ceramics Monthly: če peč izklopi prezgodaj, sprožilno ploščico malo premaknite navzgor; če prepozno, jo malo premaknite navzdol. Ne glede na to, kaj počne Kiln-Sitter: »Velikim kontrolnim stožcem{{en: witness cones}} vedno zaupajte bolj kot malim stožcem v Kiln-Sitterju.«
 
 > [!WARNING]
-> **A kiln sitter is not a safety device.** Dawson's manual says it "is NOT intended to perform as a fail-safe shut-off device and your kiln should NOT be left unattended beyond the estimated firing time." Something as simple as greenware falling against the tube "might cause an over-firing". Be there to check the kiln when it should be finishing, and never fire it over or near anything that burns, such as a wood floor or carpet.
+> **Kiln-Sitter ni varnostna naprava.** Dawsonova navodila pravijo, da »NI namenjen za izklop, varen ob odpovedi{{en: fail-safe}}, in peči NE bi smeli pustiti brez nadzora dlje od predvidenega časa žganja«. Že nekaj tako preprostega, kot je nežgan izdelek{{en: greenware}}, ki pade na cevko, »lahko povzroči prežganje«. Bodite ob peči in jo preverite, ko naj bi se žganje končevalo, in je nikoli ne žgite nad ničimer, kar gori, ali blizu tega, na primer nad lesenim podom ali preprogo.
 
-The sitter is built for firings "up to and including Cone 8". It cannot hold a temperature or cool slowly by itself. With practice and a log, though, you can "become the controller", as Digitalfire puts it: watch the cones and turn the switches by hand.
+Kiln-Sitter je narejen za žganja »do vključno stožca 8«. Sam ne more vzdrževati temperature ali počasi hladiti. Z vajo in dnevnikom pa lahko, kot pravi Digitalfire, »postanete krmilnik«: opazujte stožce in stikala obračajte ročno.
 
 :::
 

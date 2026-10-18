@@ -88,7 +88,15 @@
     "chooseField": "Agħżel qasam biex iżżidu, imbagħad agħżel Żid il-qasam.",
     "fetchFailed": "Kien hemm żball fil-ġbir tal-informazzjoni dwar ir-reġistri tal-ħami.",
     "saved": "Ir-reġistru tal-ħami ġie miżjud mas-server.",
-    "saveFailed": "Żball: it-talba lis-server ma rnexxietx."
+    "saveFailed": "Żball: it-talba lis-server ma rnexxietx.",
+    "recipesHeading": "Riċetti li nħmew fih",
+    "noRecipes": "Għad m’hemm l-ebda riċetta magħquda.",
+    "recipesFailed": "Ir-riċetti tiegħek ma setgħux jinġiebu, għalhekk issa ma tista’ tgħaqqad ebda waħda.",
+    "pickRecipe": "Riċetta li nħmiet fih",
+    "linkRecipe": "Għaqqad ir-riċetta",
+    "unlink": "Neħħi l-għaqda",
+    "unlinkRecipe": "Neħħi l-għaqda mar-riċetta {title}",
+    "linkFailed": "L-għaqda ma setgħetx tiġi ssejvjata."
   },
   "notes": {
     "title": "Noti",

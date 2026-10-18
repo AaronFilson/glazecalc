@@ -149,76 +149,76 @@ Pet Poison Helpline säger ”Bly är giftigt för alla arter, men unga och/elle
 
 Om ett husdjur kan ha ätit eller druckit något från verkstaden, eller visar tecken som de ovan, ring veterinären eller en giftlinje för djur (se tabellen överst), med råvarans namn och djurets vikt till hands.
 
-## The kiln {#the-kiln lang=en}
+## Keramikugnen {#the-kiln}
 
-### The outside gets hot enough to burn
+### Utsidan blir så het att man kan bränna sig
 
-A UK schools risk assessment says a kiln's outside "can reach 160 °C and possibly more" (about 320 °F), and a school kiln guide reports metal bands at up to 460 °F (about 240 °C). Skutt, a kiln maker, recommends a kiln room that can be locked against children and pets. Where a room cannot be locked, the school guide suggests a barrier such as a kiln safety screen.
+En brittisk riskbedömning för skolor säger att utsidan av en ugn ”kan nå 160 °C och möjligen mer” (omkring 320 °F), och en guide om ugnar för skolor uppger temperaturer på upp till 460 °F (omkring 240 °C) på metallbanden. Ugnstillverkaren Skutt rekommenderar ett ugnsrum som kan låsas för barn och husdjur. Där ett rum inte kan låsas föreslår skolguiden en avspärrning, till exempel en skyddsskärm runt ugnen.
 
-Small children and pets cannot understand a warning sign. We suggest keeping them behind a locked door or a barrier while the kiln fires and while it cools, and posting a warning sign for everyone else.
+Små barn och husdjur kan inte förstå en varningsskylt. Vi föreslår att de hålls bakom en låst dörr eller en avspärrning medan ugnen bränner och medan den svalnar, och att en varningsskylt sätts upp för alla andra.
 
-### Space around it
+### Utrymme runt ugnen
 
-Sources disagree on clearance. Rio Grande says at least 12 inches (30 cm) from walls and anything combustible. L&L strongly recommends 18 inches (46 cm) to all walls, and the building code it cites asks for 3 feet (0.9 m) from combustible walls. Follow your kiln's manual and local fire code; if you are unsure, allow 18 inches from any wall and 3 feet from anything that can burn. In a garage, keep cars, fuel and paint well away.
+Källorna går isär om säkerhetsavståndet. Rio Grande anger minst 12 tum (30 cm) till väggar och allt brännbart. L&L rekommenderar starkt 18 tum (46 cm) till alla väggar, och byggreglerna som L&L hänvisar till kräver 3 fot (0,9 m) till brännbara väggar. Följ ugnens bruksanvisning och de lokala brandskyddsreglerna; vid osäkerhet, lämna 18 tum till varje vägg och 3 fot till allt som kan brinna. I ett garage: håll bilar, bränsle och färg på gott avstånd.
 
-### Power
+### Elanslutning
 
-Rio Grande recommends a **dedicated circuit** (one that powers nothing else) with a properly grounded outlet. We suggest no extension cord. Between firings, switch off the kiln's breaker or disconnect switch, or unplug it, so a child cannot start it.
+Rio Grande rekommenderar en **egen grupp** i elcentralen (en som inte försörjer något annat) med ett ordentligt jordat uttag. Vi föreslår att ingen förlängningssladd används. Slå av ugnens säkring eller arbetsbrytare mellan bränningarna, eller dra ur kontakten, så att ett barn inte kan starta den.
 
-### Be there when the firing ends
+### Var på plats när bränningen är klar
 
-A **kiln sitter** is the mechanical switch on many manual kilns: a small cone bends at the end of the firing and trips the switch off. Its manual says it "is NOT intended to perform as a fail-safe shut-off device." Rio Grande says never to leave a firing kiln unattended, "especially near the expected shut-off time". So stay nearby and check the kiln while it fires, above all near the end; fire only when an adult will be home and awake to do that, check that it has switched off, and keep an ABC fire extinguisher in the kiln room. For how sitters, controllers and schedules work, see [Firing a basic kiln](/guides/firing).
+En **Kiln-Sitter** är den mekaniska brytaren på många ugnar utan automatik: en liten kägla{{en: cone}} böjer sig i slutet av bränningen och slår av brytaren. Bruksanvisningen säger att den ”INTE är avsedd att fungera som en felsäker avstängningsanordning”. Rio Grande säger att en ugn som bränner aldrig ska lämnas utan tillsyn, ”särskilt inte nära den förväntade avstängningstiden”. Stanna därför i närheten och kontrollera ugnen medan den bränner, framför allt mot slutet; bränn bara när en vuxen är hemma och vaken för att stanna i närheten och kontrollera ugnen, kontrollera att ugnen har stängts av, och ha en ABC-brandsläckare i ugnsrummet. Hur Kiln-Sitter-brytare, automatik och brännprogram fungerar beskrivs i [Bränna i en enkel keramikugn](/guides/firing).
 
-### Fumes and carbon monoxide
+### Ugnsgaser och kolmonoxid
 
-Firing gives off fumes, so vent the kiln to the outdoors; [Safe mixing and ventilation](/guides/safe-mixing) explains how. A kiln in an attached garage needs venting that keeps fumes from reaching the house through the connecting door. Keep birds in a far room whenever the kiln fires.
+Bränning ger ifrån sig ugnsgaser, så led ut dem från ugnen till det fria; [Säker blandning och ventilation](/guides/safe-mixing) förklarar hur. En ugn i ett garage som sitter ihop med huset behöver ventilation som hindrar gaserna från att nå bostaden genom dörren emellan. Ha fåglar i ett rum långt bort varje gång ugnen bränner.
 
-**Carbon monoxide** (CO) is a poisonous gas you cannot see or smell. A university kiln safety sheet requires CO alarms with gas kilns. Views differ for electric kilns, but burning off organic matter (in clay, or things like paper or wax) can make CO. We think a CO alarm in the kiln room and the rooms next to it is a sensible, inexpensive step for any kiln.
+**Kolmonoxid** (CO) är en giftig gas som varken syns eller luktar. Ett universitets säkerhetsblad för ugnar kräver kolmonoxidlarm vid gasugnar. Åsikterna går isär om elugnar, men när organiskt material bränns bort (i leran, eller saker som papper eller vax) kan kolmonoxid bildas. Vi anser att ett kolmonoxidlarm i ugnsrummet och i rummen intill är ett förnuftigt och billigt steg för alla ugnar.
 
-### Peepholes and eyes
+### Titthål och ögon
 
-Infrared light, which you cannot see, "starts at 752°F (400°C)", and the Ceramic Arts Network says looking into a kiln above this should always be done with eye protection. Infrared can damage the lens of the eye and lead to cataracts, and long gazing can injure the retina. Sunglasses and didymium glasses do not block it.
+Infrarött ljus, som inte syns, ”börjar vid 752°F (400°C)”, och Ceramic Arts Network säger att man alltid bör använda ögonskydd när man tittar in i en ugn som är varmare än så. Infrarött ljus kan skada ögats lins och leda till grå starr, och att stirra länge kan skada näthinnan. Solglasögon och didymiumglasögon stoppar det inte.
 
 > [!WARNING]
-> Children should not look into a kiln at all. A glowing peephole draws them, and they will not reliably keep protective glasses on, so keep them away while the kiln is hot. Adults should look only briefly, through IR-rated welding glasses. Sources recommend shades from 1.7 to 5; shade 3 is a sensible choice, darker if you see spots afterward.
+> Barn bör inte titta in i en ugn alls. Ett glödande titthål lockar dem, och man kan inte lita på att de behåller skyddsglasögonen på, så håll dem borta medan ugnen är varm. Vuxna bör bara titta kort, genom svetsglasögon med IR-skydd. Källorna rekommenderar skyddsgrad från 1,7 till 5; skyddsgrad 3 är ett förnuftigt val, en mörkare om du ser fläckar efteråt.
 
-## Handmade ware on the family table {#handmade-ware lang=en}
+## Handgjort gods på familjens bord {#handmade-ware}
 
-The question for pots on the family table is **leaching**: metals dissolving out of the fired glaze into food or drink. The FDA warns that if pottery "is not manufactured properly, this lead can leach into food and drink", and that "no amount of washing, boiling, or other process can remove lead from pottery." Regulators such as the US FDA and the EU limit how much lead and cadmium a finished piece releases in a standard acid test, not what the glaze contains. The strictest US limit, for cups, mugs and pitchers, is 0.5 µg/mL of lead.
+När det gäller keramik på familjens bord är frågan **utlösning av metaller**{{en: leaching}}: att metaller löses ut ur den brända glasyren och går över i mat eller dryck. FDA varnar för att om keramik ”inte är rätt tillverkad kan detta bly lösas ut i mat och dryck”, och att ”ingen mängd diskning, kokning eller annan behandling kan avlägsna bly från keramik”. Myndigheter som amerikanska FDA och EU begränsar hur mycket bly och kadmium ett färdigt föremål avger i ett standardiserat syratest, inte vad glasyren innehåller. Det strängaste amerikanska gränsvärdet, för koppar, muggar och kannor, är 0,5 µg/mL bly.
 
-### Lead-free is not the same as food-safe
+### Blyfritt är inte samma sak som livsmedelssäkert
 
-A glaze with no lead can still leach. Digitalfire, a glaze chemistry reference, names glazes containing "heavy metal oxide colorants, barium, lithium, or lead" as the concern, and warns that a stain fired above its rated temperature can release cadmium. The ASTM D-4236 art-materials label on a jar "DOES NOT establish that a fired glaze is food-safe", and "Tableware producers must test all finished ware to establish dinnerware status."
+Även från en glasyr utan bly kan metaller lösas ut. Digitalfire, ett uppslagsverk om glasyrkemi, pekar ut glasyrer som innehåller ”färgmedel{{en: colorants}} av tungmetalloxider, barium, litium eller bly” som problemet, och varnar för att en färgkropp{{en: stain}} som bränns över sin angivna temperatur kan avge kadmium. Märkningen för konstnärsmaterial enligt ASTM D-4236 på en burk ”visar INTE att en bränd glasyr är livsmedelssäker{{en: food-safe}}”, och ”Tillverkare av servisgods måste testa allt färdigt gods för att fastställa att det duger som servis.”
 
 > [!NOTE]
-> "Food safe" means this glaze, on this clay, fired to this cone, applied this way, releases less than the legal limits. A recipe calculation, Glazecalc's included, can flag a risky recipe but cannot prove a pot is safe. Only a leach test of the fired piece can.
+> ”Livsmedelssäker” betyder att just den här glasyren, på den här leran, bränd till den här käglan{{en: cone}} och pålagd på det här sättet, avger mindre än de lagstadgade gränsvärdena. En receptberäkning, också den i Glazecalc, kan varna för ett riskabelt recept men kan inte bevisa att ett föremål är säkert. Det kan bara ett test av metallavgivningen från det brända föremålet.
 
-We suggest reading a "food safe" label on a commercial glaze as a good start, not a guarantee: a different clay, a thicker coat, another cone or a second glaze on top changes the result.
+Vi föreslår att märkningen ”livsmedelssäker” på en köpt glasyr läses som en bra början, inte som en garanti: en annan lera, ett tjockare lager, en annan kägla eller en andra glasyr ovanpå ändrar resultatet.
 
-### Testing
+### Testning
 
-Laboratories test fired pieces with a standard acid soak that represents a worst case, such as ASTM C738 in the US. One lab's EU test needs four identical pieces and takes seven working days, so make spares of anything you plan to have tested.
+Laboratorier testar brända föremål med en standardiserad syralösning som motsvarar det värsta tänkbara fallet, till exempel ASTM C738 i USA. Ett laboratoriums EU-test kräver fyra likadana föremål och tar sju arbetsdagar, så gör extra exemplar av allt som ska testas.
 
-Home tests are disputed. The FDA says home swab kits can show leachable lead, and that a piece that tests positive should not be used for food. Ceramics NZ warns that consumer lead-test pens are "not designed for this use" on ceramics and can give false positives. Digitalfire suggests leaving a lemon slice on the glaze overnight as a rough screen. The safe reading: a positive home test means stop using the piece for food, and a negative one proves nothing. Only a lab can tell you a piece is safe.
+Hemmatester är omstridda. FDA säger att testkit med provpinnar för hemmabruk kan visa bly som kan lösas ut, och att ett föremål som ger positivt utslag inte bör användas till mat. Ceramics NZ varnar för att blytestpennor för konsumenter ”inte är gjorda för den här användningen” på keramik och kan ge falskt positiva resultat. Digitalfire föreslår att man lägger en citronskiva på glasyren över natten som en grov kontroll. Den säkra tolkningen: ett positivt hemmatest betyder att föremålet inte längre ska användas till mat, och ett negativt bevisar ingenting. Bara ett laboratorium kan visa att ett föremål är säkert.
 
-### Crazed ware
+### Krackelerat gods
 
-**Crazing** is a network of fine cracks in the glaze surface, and sources disagree about it. A Ceramics Monthly experiment found crazed tiles could be cleaned, best in a dishwasher, though they came out less clean than uncrazed tiles after soap and water. Digitalfire holds that "Crazed ware is unacceptable" and that crazing "severely weakens ware". The safe course is simple: do not use crazed pieces for food.
+**Krackelering**{{en: crazing}} är ett nät av fina sprickor i glasyrytan, och källorna är oense om den. Ett experiment i Ceramics Monthly visade att krackelerade provbitar{{en: test tiles}} gick att få rena, bäst i diskmaskin, även om de efter tvål och vatten blev mindre rena än provbitar utan krackelering. Digitalfire anser att ”Krackelerat gods är oacceptabelt” och att krackelering ”försvagar godset kraftigt”. Den säkra vägen är enkel: använd inte krackelerade föremål till mat.
 
-### Liner glazes
+### Insidesglasyrer
 
-A **liner glaze** is the glaze on the inside of a cup or bowl, where the food sits. Digitalfire describes a liner that may be low enough in risk to use without lab testing: no colorants, barium, lead or lithium; fully melted; no crazing; and it wears well. Even then, only a leach test of your own fired pots shows whether they are food-safe. Warning signs in any glaze are heavy amounts of colorant, crystals on the surface and poor melting.
+En **insidesglasyr**{{en: liner glaze}} är glasyren på insidan av en kopp eller skål, där maten ligger. Digitalfire beskriver en insidesglasyr som kan ha så låg risk att den kan användas utan laboratorietest: inga färgmedel, inget barium, bly eller litium; helt utsmält; ingen krackelering; och den tål slitage. Även då visar bara ett test av metallavgivningen från egna brända föremål om de är livsmedelssäkra. Varningstecken i alla glasyrer är stora mängder färgmedel, kristaller på ytan och dålig utsmältning.
 
-### Family rules we suggest
+### Familjeregler som vi föreslår
 
-- Children's cups, bowls and plates: only lab-tested, durable liner glazes, or commercial dinnerware.
-- Do not store acidic food or drink (citrus, tomato, vinegar, fruit juice, wine) in pots glazed with anything you have not had tested.
-- Do not use crazed pieces for food.
-- Test tiles and experiments stay in the studio, never in the kitchen, the toy box or the pet's bowl.
-- Take care with other pottery too. The FDA advises caution with handmade or crude-looking pieces, antiques, damaged or worn pieces, flea-market finds and bright orange, red or yellow decoration.
-- If a child has used pottery you now doubt, the FDA says to talk to a doctor about a blood lead test.
+- Barnens koppar, skålar och tallrikar: bara laboratorietestade, hållbara insidesglasyrer, eller köpt servis.
+- Förvara inte sur mat eller dryck (citrusfrukter, tomat, vinäger, fruktjuice, vin) i kärl som är glaserade med något som du inte har låtit testa.
+- Använd inte krackelerade föremål till mat.
+- Provbitar och experiment stannar i verkstaden, aldrig i köket, leksakslådan eller husdjurets skål.
+- Var försiktig med annan keramik också. FDA råder till försiktighet med handgjorda eller grovt utförda föremål, antikviteter, skadade eller slitna föremål, loppisfynd och klart orange, röd eller gul dekor.
+- Om ett barn har använt keramik som du nu tvivlar på, säger FDA att man ska tala med en läkare om ett blyprov i blodet.
 
-For more on how glazes melt, why some leach and what the limits mean, see [Glazing from first principles](/guides/glazing-basics).
+Mer om hur glasyrer smälter, varför metaller löses ut ur vissa och vad gränsvärdena betyder finns i [Glasering från grunden](/guides/glazing-basics).
 
 ## Källor {#sources}
 

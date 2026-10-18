@@ -88,7 +88,15 @@
     "chooseField": "Izvēlieties pievienojamo lauku, pēc tam nospiediet pogu Pievienot lauku.",
     "fetchFailed": "Neizdevās ielādēt apdedzināšanas žurnālu datus.",
     "saved": "Izdevās: apdedzināšanas žurnāls ir saglabāts serverī.",
-    "saveFailed": "Kļūda: pieprasījums serverim neizdevās."
+    "saveFailed": "Kļūda: pieprasījums serverim neizdevās.",
+    "recipesHeading": "Receptes, kas tajā apdedzinātas",
+    "noRecipes": "Vēl nav sasaistītu recepšu.",
+    "recipesFailed": "Neizdevās ielādēt jūsu receptes, tāpēc pašlaik nevienu nevar sasaistīt.",
+    "pickRecipe": "Recepte, kas tajā apdedzināta",
+    "linkRecipe": "Sasaistīt recepti",
+    "unlink": "Atsaistīt",
+    "unlinkRecipe": "Atsaistīt recepti {title}",
+    "linkFailed": "Neizdevās saglabāt saiti."
   },
   "notes": {
     "title": "Piezīmes",

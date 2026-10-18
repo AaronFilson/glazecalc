@@ -165,69 +165,69 @@ Rēķinieties ar atšķirībām. Orton raksta: “Parasti starp krāsns augšu u
 
 :::orton
 
-## The kiln sitter {#kiln-sitter lang=en}
+## Kiln-Sitter slēdzis {#kiln-sitter}
 
-A **kiln sitter** is the mechanical switch, on the outside of many basic and older kilns, that turns the kiln off when a small cone bends. The best known is the Dawson Kiln-Sitter. It makes firing easier, but it is a convenience, not a safety device.
+**Kiln-Sitter** ir mehānisks slēdzis, kas izslēdz krāsni, kad saliecas mazs konuss; tas atrodas daudzu vienkāršu un vecāku krāsnu ārpusē. Vispazīstamākais ir Dawson ražotais Kiln-Sitter. Tas atvieglo apdedzināšanu, taču tas ir ērtības līdzeklis, nevis drošības ierīce.
 
-### How it works
+### Kā tas darbojas
 
-A porcelain tube reaches into the kiln. At its end, a small cone or a bar lies across two metal supports, under a **sensing rod** that pivots like a seesaw. Outside the kiln, the other end of the rod holds up a weight by a small claw. When the cone softens and bends to about 90°, the rod drops far enough to release the weight, the weight falls, and the power to the elements is cut.
+Krāsnī iesniedzas porcelāna caurulīte. Tās galā mazs konuss vai stienītis guļ pāri diviem metāla balstiem zem **sensora stieņa**, kas šūpojas ap asi kā šūpoles. Krāsns ārpusē stieņa otrs gals ar mazu satvērēju notur atsvaru. Kad konuss kļūst mīksts un saliecas apmēram līdz 90°, stienis noslīd tik zemu, ka atbrīvo atsvaru, atsvars nokrīt, un sildelementu barošana atslēdzas.
 
-Small cones and bars "give equivalent heat treatment". Orton notes that many beginners choose bars, because their even shape makes it easy to place them the same way every time. A small cone tapers, so where it sits matters: with its thin part under the rod the kiln shuts off cooler, and with its thick part hotter, a shift of "as much as 1/2 cone".
+Mazie konusi un stienīši “nodrošina līdzvērtīgu termisko apstrādi”. Orton norāda, ka daudzi iesācēji izvēlas stienīšus, jo to vienmērīgās formas dēļ tos ir viegli katru reizi novietot vienādi. Mazais konuss sašaurinās, tāpēc ir svarīgi, kā tas novietots: ja zem stieņa ir tā plānā daļa, krāsns izslēdzas vēsākā temperatūrā, ja biezā – karstākā; nobīde var sasniegt “pat 1/2 konusa”.
 
-### Which cone goes in the sitter
+### Kuru konusu likt Kiln-Sitter slēdzī
 
-Sources disagree. Dawson, who made the sitter, says to use the same number as the firing cone on the shelf, and to go one number hotter only if the shelf cone stays unbent. L&L says to use one number hotter than the shelf cones, because the sitter sits near the wall and the elements, gets more heat, and tends to shut off early. Orton settles the principle: "The shelf cone is the final judge of the firing process, not the Kiln-Sitter cone or bar."
-
-> [!NOTE]
-> Our starting point: put a small cone of the same number as your target in the sitter, with a cone pack on the shelf. If the shelf firing cone is under-bent when the kiln shuts off, go one number hotter in the sitter next time, or set the thicker part of the cone under the rod. If it is over-bent, do the opposite.
-
-### Setting it up, and checks before every firing
-
-Dawson's procedure, which doubles as a check before every firing:
-
-1. Turn all the switches off. Check that the sensing rod moves freely, sits centered in the tube and is not bent or corroded. If it is sluggish, Dawson says to replace the tube assembly.
-2. Brush a thin coat of high-fire **kiln wash** (a coating that stops melted material sticking) onto the cone supports and the rod where it touches the cone. Never put wash on the cone or the porcelain tube.
-3. Load shelves and ware at least 1 in (25 mm) above or below the tube, so nothing can touch, fall against or block it.
-4. Lift the weight, press the claw down onto the trigger, and lay the cone or bar flat on the supports against the metal step, as your sitter's manual shows, the same way every time. Check it again before closing the lid: "AN IMPROPERLY PLACED CONE OR BAR COULD CAUSE AN OVERFIRING."
-5. Set the limit timer and push in the plunger until it locks. Keep the kiln level and the space under the weight clear, so the weight can fall.
-
-### The limit timer
-
-Many sitters, including Dawson's LT models, have a **limit timer**: a clock that turns the kiln off after a set time, as a backup "in case the KILN-SITTER fails". It should always be set longer than the firing is expected to take. Sources set the margin differently:
-
-Table: How long to set the limit timer
-Label: Limit timer settings
-
-| Source    | Setting                                                                                                                      |
-| --------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| Dawson    | ½ hour longer than the expected firing time until you know the kiln, later as little as ¼ hour; never set it beyond 20 hours |
-| L&L       | Very high the first time, noting how long the firing takes; after that, about 1 hour longer                                  |
-| Bracker's | 30 minutes to 1 hour longer than the firing time                                                                             |
+Avoti nav vienisprātis. Dawson, kas Kiln-Sitter ražoja, iesaka likt konusu ar tādu pašu numuru kā mērķa konusam uz plaukta un ņemt konusu, kas ir par vienu numuru karstāks, tikai tad, ja konuss uz plaukta paliek nesaliecies. L&L iesaka konusu, kas ir par vienu numuru karstāks nekā konusi uz plaukta, jo Kiln-Sitter atrodas tuvu sienai un sildelementiem, saņem vairāk siltuma un mēdz izslēgt krāsni par agru. Orton principu nosaka skaidri: “Galīgais apdedzināšanas procesa vērtētājs ir konuss uz plaukta, nevis Kiln-Sitter konuss vai stienītis.”
 
 > [!NOTE]
-> Our starting point: generous the first time (within the dial's 20 hours), then ½ to 1 hour longer than the time you recorded. The timer also tells you how long a firing took: set at 7 and ending at 1 means 6 hours.
+> Mūsu ieteikums sākumam: ielieciet Kiln-Sitter slēdzī mazu konusu ar tādu pašu numuru kā mērķa konusam, bet uz plaukta novietojiet konusu komplektu{{en: cone pack}}. Ja mērķa konuss uz plaukta brīdī, kad krāsns izslēdzas, ir saliecies par maz, nākamreiz ielieciet Kiln-Sitter slēdzī konusu, kas ir par vienu numuru karstāks, vai novietojiet zem stieņa konusa biezāko daļu. Ja tas ir saliecies par daudz, rīkojieties pretēji.
 
-### When it shuts off early or late
+### Sagatavošana un pārbaude pirms katras apdedzināšanas
 
-After each firing, read the sitter cone beside the shelf cones.
+Dawson procedūra, kas reizē ir arī pārbaude pirms katras apdedzināšanas:
 
-Table: Reading the sitter after a firing
-Label: Kiln sitter problems
+1. Izslēdziet visus slēdžus. Pārbaudiet, vai sensora stienis kustas brīvi, atrodas caurulītes centrā un nav saliekts vai korodējis. Ja tas kustas gausi, Dawson iesaka nomainīt caurulītes mezglu.
+2. Ar otu uzklājiet plānu augstas temperatūras **atdalīšanas līdzekļa** (pārklājuma, kas neļauj izkusušam materiālam pielipt) kārtu uz konusa balstiem un uz stieņa vietā, kur tas pieskaras konusam. Nekad neuzklājiet atdalīšanas līdzekli uz konusa vai porcelāna caurulītes.
+3. Plauktus un izstrādājumus ievietojiet vismaz 1 collu (25 mm) augstāk vai zemāk par caurulīti, lai nekas tai nevarētu pieskarties, uzkrist vai to aizšķērsot.
+4. Paceliet atsvaru, nospiediet satvērēju uz sprūda un noguldiet konusu vai stienīti plakaniski uz balstiem pret metāla pakāpienu, kā parādīts jūsu Kiln-Sitter lietošanas instrukcijā, katru reizi vienādi. Pirms vāka aizvēršanas pārbaudiet vēlreiz: “NEPAREIZI NOVIETOTS KONUSS VAI STIENĪTIS VAR IZRAISĪT PĀRDEDZINĀŠANU.”
+5. Iestatiet laika ierobežotāju un iespiediet ieslēgšanas pogu, līdz tā nofiksējas. Raugieties, lai krāsns stāvētu līmeniski un vieta zem atsvara būtu brīva, lai atsvars varētu nokrist.
 
-| What you see                                    | Likely cause                                                                                           | What to do                                                       |
-| ----------------------------------------------- | ------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------- |
-| Sitter tripped, shelf firing cone under-bent    | The sitter ran hotter than the shelf (it sits near the wall)                                           | One cone hotter in the sitter, or the thicker part under the rod |
-| Sitter cone sagged well past 90°                | The kiln climbed too fast near the end                                                                 | Lower the switch settings, so the climb is slower (Dawson)       |
-| Sitter cone did not bend, or melted into a blob | The sitter itself: poor adjustment, a bent or corroded rod, or something lodged in or against the tube | Check and adjust the sitter by its manual before firing again    |
-| Early or late every time                        | Out of adjustment, or a worn rod                                                                       | Check with the firing gauge; move the trigger plate              |
+### Laika ierobežotājs
 
-To check the adjustment, Dawson uses a **firing gauge** that holds the rod where a fully bent cone would leave it; there should then be "1/16th-inch clearance" (about 1.6 mm) at the claw. Check it every 30 firings. Ceramics Monthly's rule: if the kiln shuts off early, move the trigger plate up slightly; if late, move it down slightly. Whatever the sitter does, "Always trust large witness cones over small sitter cones."
+Daudziem Kiln-Sitter slēdžiem, arī Dawson LT modeļiem, ir **laika ierobežotājs**: pulkstenis, kas pēc iestatītā laika izslēdz krāsni kā rezerves drošība “gadījumam, ja KILN-SITTER atteiktu”. To vienmēr vajadzētu iestatīt uz ilgāku laiku, nekā paredzams, ka ilgs apdedzināšana. Avoti rezervi nosaka dažādi:
+
+Table: Cik ilgu laiku iestatīt laika ierobežotājam
+Label: Laika ierobežotāja iestatījumi
+
+| Avots     | Iestatījums                                                                                                                                                                   |
+| --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Dawson    | Par ½ stundas ilgāk nekā paredzamais apdedzināšanas laiks, kamēr krāsni vēl nepazīstat, vēlāk šo rezervi var samazināt līdz ¼ stundai; nekad neiestatiet ilgāk par 20 stundām |
+| L&L       | Pirmajā reizē ļoti ilgs laiks, pierakstot, cik ilgi apdedzināšana ilgst; pēc tam apmēram par 1 stundu ilgāk                                                                   |
+| Bracker's | No 30 minūtēm līdz 1 stundai ilgāk nekā apdedzināšanas laiks                                                                                                                  |
+
+> [!NOTE]
+> Mūsu ieteikums sākumam: pirmajā reizē ar lielu rezervi (nepārsniedzot skalas 20 stundas), pēc tam par ½ līdz 1 stundu ilgāk nekā jūsu pierakstītais laiks. Laika ierobežotājs parāda arī to, cik ilgi apdedzināšana ilga: ja tas iestatīts uz 7 un apstājies pie 1, tas nozīmē 6 stundas.
+
+### Pārāk agra vai pārāk vēla izslēgšanās
+
+Pēc katras apdedzināšanas nolasiet Kiln-Sitter konusu kopā ar konusiem uz plaukta.
+
+Table: Kiln-Sitter nolasīšana pēc apdedzināšanas
+Label: Kiln-Sitter problēmas
+
+| Ko redzat                                                         | Iespējamais cēlonis                                                                                                                 | Ko darīt                                                                                           |
+| ----------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| Kiln-Sitter nostrādāja, mērķa konuss uz plaukta saliecies par maz | Kiln-Sitter bija karstāks nekā plaukts (tas atrodas pie sienas)                                                                     | Kiln-Sitter slēdzī konuss, kas ir par vienu numuru karstāks, vai zem stieņa biezākā daļa           |
+| Kiln-Sitter konuss noliecies krietni tālāk par 90°                | Krāsns beigās sildījās pārāk ātri                                                                                                   | Pagrieziet slēdžus uz zemākām pozīcijām, lai sildīšana būtu lēnāka (Dawson)                        |
+| Kiln-Sitter konuss nesaliecās vai izkusa lāsē                     | Vaina ir pašā Kiln-Sitter: slikts regulējums, saliekts vai korodējis stienis vai kaut kas iesprūdis caurulītē vai atbalstās pret to | Pirms nākamās apdedzināšanas pārbaudiet un noregulējiet Kiln-Sitter pēc tā lietošanas instrukcijas |
+| Katru reizi par agru vai par vēlu                                 | Nav noregulēts vai nodilis stienis                                                                                                  | Pārbaudiet ar regulēšanas šablonu; pārvietojiet sprūda plāksni                                     |
+
+Lai pārbaudītu regulējumu, Dawson izmanto **regulēšanas šablonu**, kas notur stieni tur, kur to atstātu pilnīgi saliecies konuss; tad pie satvērēja vajadzētu būt “1/16 collas spraugai” (apmēram 1,6 mm). Pārbaudiet to ik pēc 30 apdedzināšanām. Žurnāla Ceramics Monthly ieteikums: ja krāsns izslēdzas par agru, nedaudz paceliet sprūda plāksni uz augšu; ja par vēlu – nedaudz nolaidiet to uz leju. Lai ko Kiln-Sitter darītu, “Vienmēr uzticieties lielajiem kontrolkonusiem{{en: witness cones}} vairāk nekā mazajiem Kiln-Sitter konusiem.”
 
 > [!WARNING]
-> **A kiln sitter is not a safety device.** Dawson's manual says it "is NOT intended to perform as a fail-safe shut-off device and your kiln should NOT be left unattended beyond the estimated firing time." Something as simple as greenware falling against the tube "might cause an over-firing". Be there to check the kiln when it should be finishing, and never fire it over or near anything that burns, such as a wood floor or carpet.
+> **Kiln-Sitter nav drošības ierīce.** Dawson lietošanas instrukcijā teikts, ka tas “NAV paredzēts darboties kā drošības izslēgšanas ierīce, kas nostrādātu arī bojājuma gadījumā, un krāsni NEVAJADZĒTU atstāt bez uzraudzības ilgāk par paredzamo apdedzināšanas laiku”. Pat kaut kas tik vienkāršs kā neapdedzināts izstrādājums{{en: greenware}}, kas uzkrīt caurulītei, “var izraisīt pārdedzināšanu”. Esiet klāt, lai pārbaudītu krāsni, kad apdedzināšanai vajadzētu beigties, un nekad neapdedziniet krāsnī, kas novietota virs kaut kā degoša vai tā tuvumā, piemēram, virs koka grīdas vai paklāja.
 
-The sitter is built for firings "up to and including Cone 8". It cannot hold a temperature or cool slowly by itself. With practice and a log, though, you can "become the controller", as Digitalfire puts it: watch the cones and turn the switches by hand.
+Kiln-Sitter ir paredzēts apdedzināšanām “līdz konusam 8 ieskaitot”. Tas pats nevar noturēt temperatūru vai lēni dzesēt. Taču ar pieredzi un pierakstiem jūs varat “kļūt par kontrolieri”, kā saka Digitalfire: vērot konusus un griezt slēdžus ar roku.
 
 :::
 

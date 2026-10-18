@@ -248,6 +248,22 @@
       "saved": "Tallennettu: luvut ja päivämäärät kirjoitetaan kielen {language} tapaan.",
       "help": "Miten luvut ja päivämäärät kirjoitetaan: 12,345.6 tai 12.345,6, sekä päivän ja kuukauden järjestys."
     },
+    "calendar": {
+      "legend": "Kalenteri",
+      "help": "Kalenteri, jonka mukaan päivämäärät näytetään. Itse kirjoitetut päivämäärät pysyvät gregoriaanisessa kalenterissa.",
+      "gregory": {
+        "label": "Gregoriaaninen",
+        "saved": "Tallennettu: päivämäärät näytetään gregoriaanisen kalenterin mukaan."
+      },
+      "buddhist": {
+        "label": "Thaimaalainen buddhalainen ajanlasku",
+        "saved": "Tallennettu: päivämäärät näytetään thaimaalaisen buddhalaisen ajanlaskun mukaan."
+      },
+      "japanese": {
+        "label": "Japanilainen aikakausi",
+        "saved": "Tallennettu: päivämäärät näytetään japanilaisten aikakausien mukaan."
+      }
+    },
     "decimalMark": {
       "legend": "Määrien kirjoittaminen",
       "either": {

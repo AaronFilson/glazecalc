@@ -361,7 +361,8 @@
     "heading": "Pavojai",
     "intro": "Kaip nurodyta kiekvienos žaliavos įraše; standartinės bibliotekos pavojai paimti iš tiekėjų saugos duomenų lapų.",
     "line": "<b>{names}:</b> {hazards}",
-    "unknown": "{count, plural, one {{list}: pavojų nenurodyta, žr. kartu pateikiamą saugos duomenų lapą.} few {{list}: pavojų nenurodyta, žr. kartu pateikiamus saugos duomenų lapus.} many {{list}: pavojų nenurodyta, žr. kartu pateikiamus saugos duomenų lapus.} other {{list}: pavojų nenurodyta, žr. kartu pateikiamus saugos duomenų lapus.}}"
+    "unknown": "{count, plural, one {{list}: pavojų nenurodyta, žr. kartu pateikiamą saugos duomenų lapą.} few {{list}: pavojų nenurodyta, žr. kartu pateikiamus saugos duomenų lapus.} many {{list}: pavojų nenurodyta, žr. kartu pateikiamus saugos duomenų lapus.} other {{list}: pavojų nenurodyta, žr. kartu pateikiamus saugos duomenų lapus.}}",
+    "safety": "Sausos glazūros žaliavos sudaro dulkes: neleiskite joms patekti į plaučius, net ir žaliavų, kurios nepriskiriamos pavojingoms, dulkėms: žr. <mixing>Saugus maišymas ir vėdinimas</mixing> ir <home>Neapnuodykite savo šeimos</home>, jei šalia yra vaikų ar augintinių. Jei žaliavos saugos duomenų lape rašoma daugiau, laikykitės jo."
   },
   "compare": {
     "heading": "Palyginti du receptus",
@@ -590,7 +591,10 @@
     "guidance": "Tai gairės, o ne „išlaikyta“ ar „neišlaikyta“: glazūra už jų ribų gali būti gera, o jų ribose esanti vis tiek gali trūkinėti, išskirti metalus ar sugesti. Išbandykite ją.",
     "source": "Šaltinis:",
     "saveFailed": "Jūsų ribų rinkinio pasirinkimo įrašyti į paskyrą nepavyko, todėl vis dar naudojamas ankstesnis ribų rinkinys.",
-    "ownLimits": "Šie pasiūlymai naudoja Glazecalc savąsias ribas, o ne ribų rinkinį {name}."
+    "ownLimits": "Šie pasiūlymai naudoja Glazecalc savąsias ribas, o ne ribų rinkinį {name}.",
+    "firingFromBlock": "Pagal recepto degimą ({bands})",
+    "bothBands": "Recepto degimas apima {bands}, todėl kiekvienas tikrinamas greta: glazūra retai elgiasi vienodai abiejuose galuose.",
+    "fromFiring": "Skaičiai skirti recepto degimui: {band}. Norėdami patikrinti kitą, aukščiau pasirinkite degimą."
   },
   "stull": {
     "heading": "Stullo diagrama",
@@ -714,7 +718,8 @@
     "notSaved": "Nieko neįrašyta: {problem}",
     "stopped": "Įrašyta {saved} iš {count}. Likusieji neįrašyti: {problem}",
     "saved": "{count, plural, one {Įrašytas # receptas.} few {Įrašyti # receptai.} many {Įrašyta # recepto.} other {Įrašyta # receptų.}}",
-    "openRecipes": "Atidaryti receptus"
+    "openRecipes": "Atidaryti receptus",
+    "firingRead": "Degimas nuskaitytas iš pastabų: {firing}"
   },
   "blends": {
     "title": "Mišiniai bandiniams",
@@ -847,5 +852,115 @@
     "retry": "Bandyti dar kartą",
     "about": "Glazecalc – nemokama glazūrų skaičiuoklė keramikams.",
     "aboutLink": "Apie Glazecalc"
+  },
+  "firing": {
+    "heading": "Degimas",
+    "whatIsCone": "Ką reiškia piroskopas?",
+    "scale": "Skalė",
+    "scales": {
+      "orton": "Ortono piroskopai",
+      "sk": "SK piroskopai (JIS)",
+      "temperature": "Temperatūra"
+    },
+    "groups": {
+      "usual": "Piroskopai nuo 022 iki 13",
+      "half": "Pusiniai piroskopai",
+      "above": "Piroskopai nuo 14 iki 42 (keramikoje reti)"
+    },
+    "coneLabel": "Piroskopas",
+    "lowCone": "Nuo piroskopo",
+    "highCone": "Iki piroskopo",
+    "noHigh": "Be viršutinio piroskopo",
+    "notStated": "Nenurodyta",
+    "peak": "Aukščiausia temperatūra ({unit})",
+    "lowTemperature": "Nuo ({unit})",
+    "highTemperature": "Iki ({unit})",
+    "rangeToggle": "Intervalas",
+    "testedLegend": "Išbandyta: pažymėkite kiekvieną piroskopą, iki kurio ją degėte",
+    "atmosphere": "Atmosfera",
+    "process": "Procesas",
+    "atmospheres": {
+      "oxidation": "oksidacinė",
+      "reduction": "redukcinė",
+      "neutral": "neutrali"
+    },
+    "processes": {
+      "wood": "degimas malkomis",
+      "soda": "degimas su soda",
+      "salt": "degimas su druska",
+      "raku": "raku",
+      "pit": "duobinis degimas"
+    },
+    "rate": "Greitis per paskutinę valandą ({unit} per valandą)",
+    "hold": "Išlaikymas ties aukščiausia temperatūra (minutės)",
+    "schedule": "Degimo programos pastabos",
+    "schedulePlaceholder": "Išlaikyti 10 minučių, lėtai atvėsinti…",
+    "witness": "Patvirtinta kontroliniu piroskopu",
+    "foodSurface": "Maisto paviršiui (vidinė glazūra)",
+    "liner": {
+      "note": "Tinkamumas liestis su maistu priklauso nuo to, ar ši glazūra išdegta iki piroskopo, su kuriuo ji buvo išbandyta: nepakankamai išdegusi glazūra gali išskirti metalų.",
+      "range": "Nurodytas intervalas, todėl išbandykite apatiniame intervalo gale, kur ji mažiausiai išsilydo.",
+      "untested": "Dar nė vienas piroskopas nepažymėtas kaip išbandytas.",
+      "test": "Tik jūsų pačių išdegtų indų laboratorinis metalų išsiskyrimo tyrimas parodo, ar ji saugi liestis su maistu."
+    },
+    "helpSummary": "Apie degimą",
+    "help": {
+      "cone": "Piroskopas, iki kurio degėte šią glazūrą. Piroskopai matuoja šilumos poveikį (laiką ir temperatūrą), o ne vien temperatūrą, todėl piroskopas 06 yra daug vėsesnis nei 6.",
+      "range": "Jei ji tinka intervale, nurodykite žemiausią ir aukščiausią piroskopą ir pažymėkite piroskopus, iki kurių iš tiesų degėte: išbandytas piroskopas rodomas pirmas. Glazūra kiekviename gale gali atrodyti ir elgtis skirtingai.",
+      "convert": "Piroskopas išsaugomas toks, kokį nurodote. Bet koks perskaičiavimas į kitą skalę ar temperatūrą yra apytikslis: piroskopas linksta skirtingoje temperatūroje esant skirtingam kaitinimo greičiui, o to paties numerio SK ir Ortono piroskopai nėra tas pats.",
+      "move": "Glazūros perkėlimas prie kito piroskopo paprastai reiškia jos performulavimą, o ne vien degimą karščiau ar vėsiau. Funkcija Dubliuoti kitam piroskopui išsaugo abi versijas."
+    },
+    "temperatureProblem": "Nurodykite temperatūrą nuo {min} iki {max}.",
+    "rateProblem": "Nurodykite greitį kaip sveiką laipsnių per valandą skaičių.",
+    "holdProblem": "Nurodykite išlaikymą sveikomis minutėmis, ne ilgiau kaip para.",
+    "one": {
+      "orton": "piroskopas {cone}",
+      "sk": "SK {cone}"
+    },
+    "span": {
+      "orton": "piroskopai {low}–{high}",
+      "sk": "SK {low}–{high}",
+      "temperature": "nuo {low} iki {high}"
+    },
+    "testedAt": "Išbandyta: {cones}",
+    "claimedRange": "nurodytas intervalas {range}",
+    "rangeUntested": "Intervalas {range}; nė vienas piroskopas nepažymėtas kaip išbandytas",
+    "approxTemperature": "≈ {temperature} ({basis}; apytiksliai)",
+    "approxCone": "≈ {cone} ({basis}; apytiksliai)",
+    "basis": {
+      "orton60": "Ortono dideli piroskopai, 60 °C per valandą",
+      "kyoto": "išmatuota 100 °C per valandą Kioto miesto institute",
+      "stated": "kaip nurodyta"
+    },
+    "rateText": "{rate} per valandą per paskutinę valandą",
+    "holdText": "išlaikyta {minutes} min.",
+    "witnessText": "patikrinta kontroliniu piroskopu",
+    "asGiven": "Degimas, kaip jį nurodė autorius:",
+    "filterCone": "Rodyti receptus pagal piroskopą",
+    "anyCone": "Bet kuris piroskopas",
+    "filterAtmosphere": "Rodyti receptus pagal atmosferą ar procesą",
+    "anyAtmosphere": "Bet kuri atmosfera ar procesas",
+    "duplicate": "Dubliuoti kitam piroskopui",
+    "duplicateName": "Dubliuoti {title} kitam piroskopui",
+    "duplicateTitle": "{title} (kitas piroskopas)",
+    "duplicateNote": "{title} kopija, dar neįrašyta: skiltyje Degimas pasirinkite jos naują piroskopą. Glazūros perkėlimas prie kito piroskopo paprastai reiškia jos performulavimą, o ne vien degimą karščiau ar vėsiau, todėl patikrinkite ribas ir išbandykite ją."
+  },
+  "firings": {
+    "heading": "Degimo žurnalai",
+    "open": "Susieti degimo žurnalus",
+    "fetchFailed": "Nepavyko gauti degimo žurnalų.",
+    "noLogs": "Dar nėra degimo žurnalų.",
+    "toLogs": "Įrašyti degimą",
+    "saveFailed": "Nepavyko įrašyti degimo žurnalų sąsajų pakeitimo.",
+    "resultFor": "Rezultatas: {title}",
+    "resultPlaceholder": "Kaip išėjo: blizgi, be įtrūkimų…",
+    "unlink": "Atsieti",
+    "unlinkName": "Atsieti: {title}",
+    "choose": "Susiejamas degimo žurnalas",
+    "link": "Susieti",
+    "fill": "Pažymėkite piroskopus, kuriuos nurodo šie žurnalai: {cones}",
+    "replaceAsk": "Kaip išbandyti pažymėta {now}. Pakeisti tai piroskopais, kuriuos nurodo žurnalai: {logs}?",
+    "replace": "Pakeisti",
+    "keep": "Palikti kaip yra"
   }
 }

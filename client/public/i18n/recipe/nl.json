@@ -361,7 +361,8 @@
     "heading": "Gevaren",
     "intro": "Zoals het record van elke grondstof ze geeft; die van de standaardbibliotheek komen uit de veiligheidsinformatiebladen van de leveranciers.",
     "line": "<b>{names}:</b> {hazards}",
-    "unknown": "{count, plural, one {Voor {list} zijn geen gevaren opgegeven: zie het veiligheidsinformatieblad dat erbij hoort.} other {Voor {list} zijn geen gevaren opgegeven: zie de veiligheidsinformatiebladen die erbij horen.}}"
+    "unknown": "{count, plural, one {Voor {list} zijn geen gevaren opgegeven: zie het veiligheidsinformatieblad dat erbij hoort.} other {Voor {list} zijn geen gevaren opgegeven: zie de veiligheidsinformatiebladen die erbij horen.}}",
+    "safety": "Droge glazuurgrondstoffen geven stof: houd dat uit uw longen, ook stof van grondstoffen die niet als gevaarlijk zijn ingedeeld: zie <mixing>Veilig mengen en ventileren</mixing>, en <home>Vergiftig uw gezin niet</home> als er kinderen of huisdieren in de buurt zijn. Als het veiligheidsinformatieblad van een grondstof meer zegt, volgt u dat."
   },
   "compare": {
     "heading": "Twee recepten vergelijken",
@@ -590,7 +591,10 @@
     "guidance": "Dit zijn richtlijnen, geen test die een glazuur haalt of niet haalt: een glazuur buiten deze grenzen kan goed zijn, en een glazuur erbinnen kan toch haarscheuren krijgen, metalen afgeven of mislukken. Test het.",
     "source": "Bron:",
     "saveFailed": "Uw keuze van limietenset kon niet in uw account worden opgeslagen, dus de eerdere limietenset blijft in gebruik.",
-    "ownLimits": "Deze suggesties gebruiken de eigen limieten van Glazecalc, niet die van {name}."
+    "ownLimits": "Deze suggesties gebruiken de eigen limieten van Glazecalc, niet die van {name}.",
+    "firingFromBlock": "Uit de stook van het recept ({bands})",
+    "bothBands": "De stook van het recept beslaat {bands}, dus elk wordt gecontroleerd, naast elkaar: een glazuur gedraagt zich zelden aan beide uiteinden hetzelfde.",
+    "fromFiring": "De cijfers gelden voor de stook van het recept: {band}. Kies hierboven een stook om een andere te controleren."
   },
   "stull": {
     "heading": "Stull-diagram",
@@ -714,7 +718,8 @@
     "notSaved": "Er is niets opgeslagen: {problem}",
     "stopped": "{saved} van {count} opgeslagen. De rest is niet opgeslagen: {problem}",
     "saved": "{count, plural, one {# recept opgeslagen.} other {# recepten opgeslagen.}}",
-    "openRecipes": "Uw recepten openen"
+    "openRecipes": "Uw recepten openen",
+    "firingRead": "Stook uit de notities gelezen: {firing}"
   },
   "blends": {
     "title": "Mengingen voor proefplaatjes",
@@ -847,5 +852,115 @@
     "retry": "Opnieuw proberen",
     "about": "Glazecalc is een gratis glazuurcalculator voor pottenbakkers.",
     "aboutLink": "Over Glazecalc"
+  },
+  "firing": {
+    "heading": "Stook",
+    "whatIsCone": "Wat betekent kegel?",
+    "scale": "Schaal",
+    "scales": {
+      "orton": "Ortonkegels",
+      "sk": "SK-kegels (JIS)",
+      "temperature": "Temperatuur"
+    },
+    "groups": {
+      "usual": "Kegels 022 tot 13",
+      "half": "Halve kegels",
+      "above": "Kegels 14 tot 42 (zeldzaam in de pottenbakkerij)"
+    },
+    "coneLabel": "Kegel",
+    "lowCone": "Van kegel",
+    "highCone": "Tot kegel",
+    "noHigh": "Geen bovenste kegel",
+    "notStated": "Niet opgegeven",
+    "peak": "Toptemperatuur ({unit})",
+    "lowTemperature": "Van ({unit})",
+    "highTemperature": "Tot ({unit})",
+    "rangeToggle": "Een bereik",
+    "testedLegend": "Getest bij: vink elke kegel aan waartoe u het hebt gestookt",
+    "atmosphere": "Atmosfeer",
+    "process": "Stookmethode",
+    "atmospheres": {
+      "oxidation": "oxiderend",
+      "reduction": "reducerend",
+      "neutral": "neutraal"
+    },
+    "processes": {
+      "wood": "houtstook",
+      "soda": "sodastook",
+      "salt": "zoutstook",
+      "raku": "raku",
+      "pit": "kuilstook"
+    },
+    "rate": "Stooksnelheid in het laatste uur ({unit} per uur)",
+    "hold": "Houdtijd op de toptemperatuur (minuten)",
+    "schedule": "Notities over het schema",
+    "schedulePlaceholder": "10 minuten houdtijd, langzaam afkoelen...",
+    "witness": "Bevestigd met een controlekegel",
+    "foodSurface": "Voor een oppervlak waar voedsel mee in aanraking komt (een binnenglazuur)",
+    "liner": {
+      "note": "Voedselveiligheid hangt ervan af dat dit glazuur wordt gestookt tot de kegel waarbij het is getest: een te laag gestookt glazuur kan metalen afgeven.",
+      "range": "Het is opgegeven als bereik, dus test het aan het onderste uiteinde van het bereik, waar het het minst smelt.",
+      "untested": "Er is nog geen kegel als getest gemarkeerd.",
+      "test": "Alleen een test op de afgifte van metalen door uw eigen gestookte potten laat zien of het veilig is voor voedsel."
+    },
+    "helpSummary": "Over de stook",
+    "help": {
+      "cone": "De kegel waartoe u dit glazuur hebt gestookt. Kegels meten heatwork (tijd en temperatuur), niet alleen temperatuur, dus kegel 06 is veel koeler dan kegel 6.",
+      "range": "Als het glazuur over een bereik werkt, geef dan de laagste en de hoogste kegel op en vink de kegels aan waartoe u het echt hebt gestookt: de geteste kegel wordt eerst getoond. Een glazuur kan aan elk uiteinde anders eruitzien en zich anders gedragen.",
+      "convert": "De kegel wordt bewaard zoals u hem opgeeft. Elke omrekening naar een andere schaal of naar een temperatuur is bij benadering: een kegel buigt bij een andere opwarmsnelheid bij een andere temperatuur door, en SK-kegels en Ortonkegels met hetzelfde nummer zijn niet hetzelfde.",
+      "move": "Een glazuur naar een andere kegel verplaatsen betekent meestal het opnieuw samenstellen, niet alleen heter of koeler stoken. Met Dupliceren voor een andere kegel blijven beide versies bewaard."
+    },
+    "temperatureProblem": "Geef een temperatuur van {min} tot {max} op.",
+    "rateProblem": "Geef de snelheid op als een geheel aantal graden per uur.",
+    "holdProblem": "Geef de houdtijd op in hele minuten, tot maximaal een dag.",
+    "one": {
+      "orton": "kegel {cone}",
+      "sk": "SK {cone}"
+    },
+    "span": {
+      "orton": "kegel {low}–{high}",
+      "sk": "SK {low}–{high}",
+      "temperature": "{low} tot {high}"
+    },
+    "testedAt": "Getest bij {cones}",
+    "claimedRange": "opgegeven bereik {range}",
+    "rangeUntested": "Bereik {range}; geen kegel als getest aangevinkt",
+    "approxTemperature": "≈ {temperature} ({basis}; bij benadering)",
+    "approxCone": "≈ {cone} ({basis}; bij benadering)",
+    "basis": {
+      "orton60": "grote Ortonkegels bij 60 °C per uur",
+      "kyoto": "gemeten bij 100 °C per uur door het gemeentelijk instituut van Kyoto",
+      "stated": "zoals opgegeven"
+    },
+    "rateText": "{rate} per uur in het laatste uur",
+    "holdText": "{minutes} min aangehouden",
+    "witnessText": "gecontroleerd met een controlekegel",
+    "asGiven": "Stook, zoals de auteur die opgaf:",
+    "filterCone": "Recepten voor een kegel tonen",
+    "anyCone": "Elke kegel",
+    "filterAtmosphere": "Recepten voor een atmosfeer of stookmethode tonen",
+    "anyAtmosphere": "Elke atmosfeer of stookmethode",
+    "duplicate": "Dupliceren voor een andere kegel",
+    "duplicateName": "{title} dupliceren voor een andere kegel",
+    "duplicateTitle": "{title} (andere kegel)",
+    "duplicateNote": "Een kopie van {title}, nog niet opgeslagen: kies de nieuwe kegel onder Stook. Een glazuur naar een andere kegel verplaatsen betekent meestal het opnieuw samenstellen, niet alleen heter of koeler stoken, dus controleer de limieten en test het."
+  },
+  "firings": {
+    "heading": "Stookverslagen",
+    "open": "Stookverslagen koppelen",
+    "fetchFailed": "Uw stookverslagen konden niet worden opgehaald.",
+    "noLogs": "Nog geen stookverslagen.",
+    "toLogs": "Een stook vastleggen",
+    "saveFailed": "De wijziging van de koppelingen met stookverslagen kon niet worden opgeslagen.",
+    "resultFor": "Resultaat in {title}",
+    "resultPlaceholder": "Hoe het eruitzag: glanzend, geen haarscheuren...",
+    "unlink": "Ontkoppelen",
+    "unlinkName": "{title} ontkoppelen",
+    "choose": "Een stookverslag om te koppelen",
+    "link": "Koppelen",
+    "fill": "Vink de kegels aan die deze verslagen noemen: {cones}",
+    "replaceAsk": "Bij Getest bij is {now} aangevinkt. Vervangen door de kegels die de verslagen noemen, {logs}?",
+    "replace": "Vervangen",
+    "keep": "Laten zoals het is"
   }
 }

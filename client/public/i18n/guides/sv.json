@@ -56,7 +56,8 @@
     "vet": "Ring veterinären.",
     "checkedOn": "Kontrollerat på:",
     "choosePrompt": "Välj land för att se vem man ringer där.",
-    "ministry": "Hälsoministeriets sida: <link>{name}</link>."
+    "ministry": "Hälsoministeriets sida: <link>{name}</link>.",
+    "reported": "Officiella myndighetssidor listar 113, 114 och 115 men inte vad vart och ett är till för; rollerna som visas följer cirkulär 22/2014/TT-BTTTT, så som sekundära sidor citerar den."
   },
   "density": {
     "sg": "specifik vikt {value}",
@@ -91,6 +92,7 @@
     "caption": "Det hygieniska gränsvärdet för respirabel kristallin kiseldioxid i {region}, ett medelvärde över 8 timmar (kontrollerat den {date})",
     "captionControl": "Måttstocken för respirabel kristallin kiseldioxid i luften på ett arbetsområde i {region} (kontrollerat den {date})",
     "both": "Kvarts och kristobalit",
+    "freeSilica": "Fri kiseldioxid",
     "quartz": "Kvarts",
     "cristobalite": "Kristobalit",
     "actionLevel": "Insatsnivå",
@@ -171,7 +173,13 @@
       "thSmall": "Föremål som är djupare än 25 mm, under 1,1 L",
       "thLarge": "Föremål som är djupare än 25 mm, 1,1 L eller mer",
       "thInfant": "Kärl för mat till spädbarn upp till 12 månader",
-      "thCooking": "Kokkärl, gjorda för att tåla värmen vid matlagning"
+      "thCooking": "Kokkärl, gjorda för att tåla värmen vid matlagning",
+      "vnFlat": "Grunda föremål för förvaring eller tillagning av mat",
+      "vnSmall": "Djupa föremål för förvaring av mat, under 1100 mL",
+      "vnMedium": "Djupa föremål för förvaring av mat, från 1100 mL till under 3000 mL",
+      "vnStorage": "Djupa föremål för förvaring av mat, 3000 mL eller mer",
+      "vnCooking": "Djupa föremål för matlagning",
+      "vnCups": "Koppar och små skålar"
     },
     "judged": {
       "average": "medelvärde av 6 föremål",

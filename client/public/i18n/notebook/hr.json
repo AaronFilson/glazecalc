@@ -88,7 +88,15 @@
     "chooseField": "Odaberite polje koje želite dodati, a zatim kliknite gumb Dodaj polje.",
     "fetchFailed": "Došlo je do pogreške pri dohvaćanju podataka o zapisnicima pečenja.",
     "saved": "Zapisnik pečenja uspješno je dodan na poslužitelj.",
-    "saveFailed": "Pogreška: zahtjev poslužitelju nije uspio."
+    "saveFailed": "Pogreška: zahtjev poslužitelju nije uspio.",
+    "recipesHeading": "Recepti pečeni u njemu",
+    "noRecipes": "Još nema povezanih recepata.",
+    "recipesFailed": "Ne možemo dohvatiti vaše recepte, pa trenutačno nije moguće povezati nijedan.",
+    "pickRecipe": "Recept pečen u njemu",
+    "linkRecipe": "Poveži recept",
+    "unlink": "Prekini vezu",
+    "unlinkRecipe": "Prekini vezu: {title}",
+    "linkFailed": "Ne možemo spremiti vezu."
   },
   "notes": {
     "title": "Bilješke",

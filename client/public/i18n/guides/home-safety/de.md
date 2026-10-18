@@ -149,76 +149,76 @@ Die Pet Poison Helpline schreibt: „Blei ist für alle Tierarten giftig, aber j
 
 Wenn ein Haustier etwas aus der Werkstatt gefressen oder getrunken haben könnte oder Anzeichen wie die oben genannten zeigt, rufen Sie Ihre Tierarztpraxis oder einen Giftnotruf für Tiere an (siehe die Tabelle ganz oben), und halten Sie dabei den Namen des Rohstoffs und das Gewicht des Tieres bereit.
 
-## The kiln {#the-kiln lang=en}
+## Der Brennofen {#the-kiln}
 
-### The outside gets hot enough to burn
+### Die Außenseite wird heiß genug für Verbrennungen
 
-A UK schools risk assessment says a kiln's outside "can reach 160 °C and possibly more" (about 320 °F), and a school kiln guide reports metal bands at up to 460 °F (about 240 °C). Skutt, a kiln maker, recommends a kiln room that can be locked against children and pets. Where a room cannot be locked, the school guide suggests a barrier such as a kiln safety screen.
+Eine britische Gefährdungsbeurteilung für Schulen sagt, dass die Außenseite eines Brennofens „160 °C und möglicherweise mehr erreichen kann“ (etwa 320 °F), und ein Leitfaden für Brennöfen in Schulen berichtet von bis zu 460 °F (etwa 240 °C) an den Metallbändern. Skutt, ein Ofenhersteller, empfiehlt einen Ofenraum, der sich abschließen lässt, damit Kinder und Haustiere nicht hineinkommen. Wo sich ein Raum nicht abschließen lässt, schlägt der Leitfaden für Schulen eine Absperrung vor, etwa ein Schutzgitter für den Ofen.
 
-Small children and pets cannot understand a warning sign. We suggest keeping them behind a locked door or a barrier while the kiln fires and while it cools, and posting a warning sign for everyone else.
+Kleine Kinder und Haustiere können ein Warnschild nicht verstehen. Wir schlagen vor, sie hinter einer abgeschlossenen Tür oder einer Absperrung zu halten, solange der Ofen brennt und solange er abkühlt, und für alle anderen ein Warnschild anzubringen.
 
-### Space around it
+### Platz um den Ofen
 
-Sources disagree on clearance. Rio Grande says at least 12 inches (30 cm) from walls and anything combustible. L&L strongly recommends 18 inches (46 cm) to all walls, and the building code it cites asks for 3 feet (0.9 m) from combustible walls. Follow your kiln's manual and local fire code; if you are unsure, allow 18 inches from any wall and 3 feet from anything that can burn. In a garage, keep cars, fuel and paint well away.
+Beim Sicherheitsabstand sind sich die Quellen nicht einig. Rio Grande nennt mindestens 12 Zoll (30 cm) zu Wänden und allem Brennbaren. L&L empfiehlt nachdrücklich 18 Zoll (46 cm) zu allen Wänden, und die Bauvorschrift, auf die sich L&L beruft, verlangt 3 Fuß (0,9 m) zu brennbaren Wänden. Halten Sie sich an die Bedienungsanleitung Ihres Ofens und die örtlichen Brandschutzvorschriften; im Zweifel lassen Sie 18 Zoll zu jeder Wand und 3 Fuß zu allem, was brennen kann. Halten Sie in einer Garage Autos, Kraftstoff und Farben weit entfernt.
 
-### Power
+### Stromanschluss
 
-Rio Grande recommends a **dedicated circuit** (one that powers nothing else) with a properly grounded outlet. We suggest no extension cord. Between firings, switch off the kiln's breaker or disconnect switch, or unplug it, so a child cannot start it.
+Rio Grande empfiehlt einen **eigenen, separat abgesicherten Stromkreis** (einen, der sonst nichts versorgt) mit einer ordnungsgemäß geerdeten Steckdose. Wir schlagen vor, kein Verlängerungskabel zu verwenden. Schalten Sie zwischen den Bränden die Sicherung oder den Trennschalter des Ofens aus, oder ziehen Sie den Stecker, damit ein Kind ihn nicht einschalten kann.
 
-### Be there when the firing ends
+### Beim Ende des Brandes dabei sein
 
-A **kiln sitter** is the mechanical switch on many manual kilns: a small cone bends at the end of the firing and trips the switch off. Its manual says it "is NOT intended to perform as a fail-safe shut-off device." Rio Grande says never to leave a firing kiln unattended, "especially near the expected shut-off time". So stay nearby and check the kiln while it fires, above all near the end; fire only when an adult will be home and awake to do that, check that it has switched off, and keep an ABC fire extinguisher in the kiln room. For how sitters, controllers and schedules work, see [Firing a basic kiln](/guides/firing).
+Ein **Kiln-Sitter** ist der mechanische Schalter an vielen handgeschalteten Öfen: Ein kleiner Kegel{{en: cone}} biegt sich am Ende des Brandes und löst den Schalter aus, der den Ofen abschaltet. Seine Bedienungsanleitung sagt, dass er „NICHT als ausfallsichere Abschaltvorrichtung gedacht ist“. Laut Rio Grande soll ein Ofen während des Brennens nie unbeaufsichtigt bleiben, „vor allem nicht um die erwartete Abschaltzeit herum“. Bleiben Sie also in der Nähe und sehen Sie während des Brennens nach dem Ofen, vor allem gegen Ende; brennen Sie nur, wenn eine erwachsene Person zu Hause und wach ist, um in der Nähe zu bleiben und nachzusehen, prüfen Sie, ob er sich abgeschaltet hat, und halten Sie im Ofenraum einen ABC-Feuerlöscher bereit. Wie Kiln-Sitter, Steuerungen und Brennkurven funktionieren, lesen Sie in [Brennen mit einem einfachen Ofen](/guides/firing).
 
-### Fumes and carbon monoxide
+### Abgase und Kohlenmonoxid
 
-Firing gives off fumes, so vent the kiln to the outdoors; [Safe mixing and ventilation](/guides/safe-mixing) explains how. A kiln in an attached garage needs venting that keeps fumes from reaching the house through the connecting door. Keep birds in a far room whenever the kiln fires.
+Beim Brennen entstehen Abgase; leiten Sie die Abluft des Ofens deshalb ins Freie. Wie das geht, erklärt [Sicheres Anmischen und Lüften](/guides/safe-mixing). Ein Ofen in einer angebauten Garage braucht eine Abluft, die verhindert, dass Abgase durch die Verbindungstür ins Haus gelangen. Halten Sie Vögel in einem entfernten Raum, wann immer der Ofen brennt.
 
-**Carbon monoxide** (CO) is a poisonous gas you cannot see or smell. A university kiln safety sheet requires CO alarms with gas kilns. Views differ for electric kilns, but burning off organic matter (in clay, or things like paper or wax) can make CO. We think a CO alarm in the kiln room and the rooms next to it is a sensible, inexpensive step for any kiln.
+**Kohlenmonoxid** (CO) ist ein giftiges Gas, das Sie weder sehen noch riechen können. Das Merkblatt einer Universität zur Sicherheit an Brennöfen schreibt bei Gasöfen CO-Melder vor. Bei Elektroöfen gehen die Meinungen auseinander, aber beim Ausbrennen organischer Stoffe (im Ton oder in Dingen wie Papier oder Wachs) kann CO entstehen. Wir halten einen CO-Melder im Ofenraum und in den angrenzenden Räumen bei jedem Ofen für einen sinnvollen, preiswerten Schritt.
 
-### Peepholes and eyes
+### Schaulöcher und Augen
 
-Infrared light, which you cannot see, "starts at 752°F (400°C)", and the Ceramic Arts Network says looking into a kiln above this should always be done with eye protection. Infrared can damage the lens of the eye and lead to cataracts, and long gazing can injure the retina. Sunglasses and didymium glasses do not block it.
+Infrarotlicht, das Sie nicht sehen können, „beginnt bei 752°F (400°C)“, und das Ceramic Arts Network sagt, dass ein Blick in den Ofen oberhalb dieser Temperatur immer mit Augenschutz erfolgen sollte. Infrarot kann die Augenlinse schädigen und zu grauem Star führen, und langes Hineinschauen kann die Netzhaut verletzen. Sonnenbrillen und Didymiumbrillen halten es nicht ab.
 
 > [!WARNING]
-> Children should not look into a kiln at all. A glowing peephole draws them, and they will not reliably keep protective glasses on, so keep them away while the kiln is hot. Adults should look only briefly, through IR-rated welding glasses. Sources recommend shades from 1.7 to 5; shade 3 is a sensible choice, darker if you see spots afterward.
+> Kinder sollten überhaupt nicht in einen Ofen schauen. Ein glühendes Schauloch zieht sie an, und sie behalten eine Schutzbrille nicht zuverlässig auf; halten Sie sie deshalb fern, solange der Ofen heiß ist. Erwachsene sollten nur kurz hineinschauen, durch eine Schweißerschutzbrille mit IR-Schutzfilter. Die Quellen empfehlen Schutzstufen von 1,7 bis 5; Schutzstufe 3 ist eine sinnvolle Wahl, eine dunklere, wenn Sie danach Flecken sehen.
 
-## Handmade ware on the family table {#handmade-ware lang=en}
+## Handgemachtes Geschirr auf dem Familientisch {#handmade-ware}
 
-The question for pots on the family table is **leaching**: metals dissolving out of the fired glaze into food or drink. The FDA warns that if pottery "is not manufactured properly, this lead can leach into food and drink", and that "no amount of washing, boiling, or other process can remove lead from pottery." Regulators such as the US FDA and the EU limit how much lead and cadmium a finished piece releases in a standard acid test, not what the glaze contains. The strictest US limit, for cups, mugs and pitchers, is 0.5 µg/mL of lead.
+Bei Geschirr auf dem Familientisch geht es um die **Abgabe von Metallen**{{en: leaching}}: Metalle, die sich aus der gebrannten Glasur{{en: glaze}} lösen und in Speisen oder Getränke übergehen. Die FDA warnt, dass bei Keramik, die „nicht ordnungsgemäß hergestellt ist, dieses Blei in Speisen und Getränke übergehen kann“, und dass „kein Waschen, Kochen oder anderes Verfahren Blei aus Keramik entfernen kann“. Behörden wie die FDA in den USA und die EU begrenzen, wie viel Blei und Cadmium ein fertiges Stück bei einer genormten Säureprüfung abgibt, nicht, was die Glasur enthält. Der strengste Grenzwert der USA, für Tassen, Becher und Krüge, liegt bei 0,5 µg/mL Blei.
 
-### Lead-free is not the same as food-safe
+### Bleifrei ist nicht dasselbe wie lebensmittelgeeignet
 
-A glaze with no lead can still leach. Digitalfire, a glaze chemistry reference, names glazes containing "heavy metal oxide colorants, barium, lithium, or lead" as the concern, and warns that a stain fired above its rated temperature can release cadmium. The ASTM D-4236 art-materials label on a jar "DOES NOT establish that a fired glaze is food-safe", and "Tableware producers must test all finished ware to establish dinnerware status."
+Auch eine Glasur ohne Blei kann Metalle abgeben. Digitalfire, ein Nachschlagewerk zur Glasurchemie, nennt Glasuren mit „Färbemitteln{{en: colorants}} aus Schwermetalloxiden, Barium, Lithium oder Blei“ als bedenklich und warnt, dass ein Farbkörper{{en: stain}}, der über seiner angegebenen Temperatur gebrannt wird, Cadmium freisetzen kann. Das Etikett für Künstlermaterialien nach ASTM D-4236 auf einem Glas „belegt NICHT, dass eine gebrannte Glasur lebensmittelgeeignet{{en: food-safe}} ist“, und „Hersteller von Tafelgeschirr müssen alle fertigen Stücke prüfen, um ihre Eignung als Geschirr festzustellen“.
 
 > [!NOTE]
-> "Food safe" means this glaze, on this clay, fired to this cone, applied this way, releases less than the legal limits. A recipe calculation, Glazecalc's included, can flag a risky recipe but cannot prove a pot is safe. Only a leach test of the fired piece can.
+> „Lebensmittelgeeignet“ heißt: Diese Glasur auf dieser Tonmasse{{en: clay}}, auf diesen Kegel{{en: cone}} gebrannt und auf diese Weise aufgetragen, gibt weniger ab, als die gesetzlichen Grenzwerte zulassen. Eine Berechnung des Rezepts, auch die von Glazecalc, kann auf ein riskantes Rezept hinweisen, aber nicht beweisen, dass ein Stück sicher ist. Das kann nur eine Prüfung der Metallabgabe am gebrannten Stück.
 
-We suggest reading a "food safe" label on a commercial glaze as a good start, not a guarantee: a different clay, a thicker coat, another cone or a second glaze on top changes the result.
+Wir schlagen vor, die Angabe „lebensmittelgeeignet“ auf einer gekauften Glasur als guten Anfang zu lesen, nicht als Garantie: Eine andere Tonmasse, ein dickerer Auftrag, ein anderer Kegel oder eine zweite Glasur darüber verändert das Ergebnis.
 
-### Testing
+### Prüfung
 
-Laboratories test fired pieces with a standard acid soak that represents a worst case, such as ASTM C738 in the US. One lab's EU test needs four identical pieces and takes seven working days, so make spares of anything you plan to have tested.
+Labore prüfen gebrannte Stücke mit einer genormten Lagerung in Säure, die den ungünstigsten Fall darstellt, etwa nach ASTM C738 in den USA. Bei einem Labor braucht die Prüfung für die EU vier gleiche Stücke und dauert sieben Arbeitstage; fertigen Sie also Ersatzstücke von allem an, was Sie prüfen lassen wollen.
 
-Home tests are disputed. The FDA says home swab kits can show leachable lead, and that a piece that tests positive should not be used for food. Ceramics NZ warns that consumer lead-test pens are "not designed for this use" on ceramics and can give false positives. Digitalfire suggests leaving a lemon slice on the glaze overnight as a rough screen. The safe reading: a positive home test means stop using the piece for food, and a negative one proves nothing. Only a lab can tell you a piece is safe.
+Tests für zu Hause sind umstritten. Die FDA sagt, Wischtests für zu Hause können Blei anzeigen, das sich herauslösen kann, und ein Stück mit positivem Ergebnis sollte nicht für Lebensmittel verwendet werden. Ceramics NZ warnt, dass Bleitest-Stifte für Verbraucher bei Keramik „nicht für diesen Zweck gedacht“ sind und falsch positive Ergebnisse liefern können. Digitalfire schlägt als groben Vortest vor, eine Zitronenscheibe über Nacht auf der Glasur liegen zu lassen. Die sichere Lesart: Ein positiver Test zu Hause heißt, das Stück nicht mehr für Lebensmittel zu verwenden, und ein negativer beweist nichts. Nur ein Labor kann Ihnen sagen, dass ein Stück sicher ist.
 
-### Crazed ware
+### Geschirr mit Haarrissen
 
-**Crazing** is a network of fine cracks in the glaze surface, and sources disagree about it. A Ceramics Monthly experiment found crazed tiles could be cleaned, best in a dishwasher, though they came out less clean than uncrazed tiles after soap and water. Digitalfire holds that "Crazed ware is unacceptable" and that crazing "severely weakens ware". The safe course is simple: do not use crazed pieces for food.
+**Haarrisse**{{en: crazing}} sind ein Netz feiner Risse in der Oberfläche der Glasur, und die Quellen sind sich darüber nicht einig. Ein Versuch von Ceramics Monthly ergab, dass sich Probeplättchen{{en: test tiles}} mit Haarrissen reinigen ließen, am besten in der Spülmaschine, auch wenn sie nach dem Abwaschen mit Spülmittel und Wasser weniger sauber wurden als Plättchen ohne Haarrisse. Digitalfire hält fest: „Geschirr mit Haarrissen ist inakzeptabel“, und Haarrisse „schwächen die Ware erheblich“. Der sichere Weg ist einfach: Verwenden Sie Stücke mit Haarrissen nicht für Lebensmittel.
 
-### Liner glazes
+### Innenglasuren
 
-A **liner glaze** is the glaze on the inside of a cup or bowl, where the food sits. Digitalfire describes a liner that may be low enough in risk to use without lab testing: no colorants, barium, lead or lithium; fully melted; no crazing; and it wears well. Even then, only a leach test of your own fired pots shows whether they are food-safe. Warning signs in any glaze are heavy amounts of colorant, crystals on the surface and poor melting.
+Eine **Innenglasur**{{en: liner glaze}} ist die Glasur auf der Innenseite einer Tasse oder Schale, dort, wo die Speisen liegen. Digitalfire beschreibt eine Innenglasur, deren Risiko gering genug sein kann, um sie ohne Laborprüfung zu verwenden: keine Färbemittel, kein Barium, Blei oder Lithium; vollständig ausgeschmolzen; keine Haarrisse; und sie ist abriebfest. Selbst dann zeigt nur eine Prüfung der Metallabgabe an Ihren eigenen gebrannten Töpfen, ob sie lebensmittelgeeignet sind. Warnzeichen bei jeder Glasur sind große Mengen Färbemittel, Kristalle an der Oberfläche und schlechtes Ausschmelzen.
 
-### Family rules we suggest
+### Familienregeln, die wir vorschlagen
 
-- Children's cups, bowls and plates: only lab-tested, durable liner glazes, or commercial dinnerware.
-- Do not store acidic food or drink (citrus, tomato, vinegar, fruit juice, wine) in pots glazed with anything you have not had tested.
-- Do not use crazed pieces for food.
-- Test tiles and experiments stay in the studio, never in the kitchen, the toy box or the pet's bowl.
-- Take care with other pottery too. The FDA advises caution with handmade or crude-looking pieces, antiques, damaged or worn pieces, flea-market finds and bright orange, red or yellow decoration.
-- If a child has used pottery you now doubt, the FDA says to talk to a doctor about a blood lead test.
+- Becher, Schalen und Teller für Kinder: nur im Labor geprüfte, beständige Innenglasuren oder gekauftes Geschirr.
+- Bewahren Sie saure Speisen oder Getränke (Zitrusfrüchte, Tomaten, Essig, Fruchtsaft, Wein) nicht in Gefäßen auf, deren Glasur Sie nicht haben prüfen lassen.
+- Verwenden Sie Stücke mit Haarrissen nicht für Lebensmittel.
+- Probeplättchen und Experimente bleiben in der Werkstatt, nie in der Küche, in der Spielzeugkiste oder im Napf des Haustiers.
+- Seien Sie auch bei anderer Keramik vorsichtig. Die FDA rät zur Vorsicht bei handgemachten oder grob wirkenden Stücken, Antiquitäten, beschädigten oder abgenutzten Stücken, Flohmarktfunden und leuchtend orangefarbenem, rotem oder gelbem Dekor.
+- Wenn ein Kind Keramik benutzt hat, an der Sie jetzt zweifeln, rät die FDA, in der Arztpraxis über eine Bestimmung des Blutbleiwerts zu sprechen.
 
-For more on how glazes melt, why some leach and what the limits mean, see [Glazing from first principles](/guides/glazing-basics).
+Mehr darüber, wie Glasuren schmelzen, warum manche Metalle abgeben und was die Grenzwerte bedeuten, lesen Sie in [Glasieren von Grund auf](/guides/glazing-basics).
 
 ## Quellen {#sources}
 

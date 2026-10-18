@@ -56,7 +56,8 @@
     "vet": "Ċempel lill-veterinarju tiegħek.",
     "checkedOn": "Iċċekkjat:",
     "choosePrompt": "Agħżel il-pajjiż tiegħek biex tara lil min iċċempel hemmhekk.",
-    "ministry": "Il-paġna tal-ministeru tas-saħħa: <link>{name}</link>."
+    "ministry": "Il-paġna tal-ministeru tas-saħħa: <link>{name}</link>.",
+    "reported": "Il-paġni uffiċjali tal-gvern jelenkaw 113, 114 u 115, imma ma jgħidux għal xiex hu kull wieħed; ir-rwoli murija jsegwu ċ-Ċirkolari 22/2014/TT-BTTTT, kif tiġi kkwotata fil-paġni sekondarji."
   },
   "density": {
     "sg": "gravità speċifika {value}",
@@ -91,6 +92,7 @@
     "caption": "Il-limitu fuq il-post tax-xogħol għas-silika kristallina respirabbli, medja ta’ 8 sigħat: {region} (iċċekkjat: {date})",
     "captionControl": "Il-livell ta’ referenza għas-silika kristallina respirabbli fl-arja ta’ żona tax-xogħol: {region} (iċċekkjat: {date})",
     "both": "Kwarz u kristobalit",
+    "freeSilica": "Silika ħielsa",
     "quartz": "Kwarz",
     "cristobalite": "Kristobalit",
     "actionLevel": "Livell ta’ azzjoni",
@@ -171,7 +173,13 @@
       "thSmall": "Oġġetti li l-fond tagħhom jaqbeż il-25 mm, inqas minn 1.1 L",
       "thLarge": "Oġġetti li l-fond tagħhom jaqbeż il-25 mm, 1.1 L jew aktar",
       "thInfant": "Kontenituri għall-ikel ta’ trabi sa 12-il xahar",
-      "thCooking": "Oġġetti tat-tisjir, magħmulin biex jifilħu s-sħana tat-tisjir"
+      "thCooking": "Oġġetti tat-tisjir, magħmulin biex jifilħu s-sħana tat-tisjir",
+      "vnFlat": "Biċċiet baxxi, għaż-żamma jew għat-tisjir tal-ikel",
+      "vnSmall": "Biċċiet fondi għaż-żamma tal-ikel, inqas minn 1100 mL",
+      "vnMedium": "Biċċiet fondi għaż-żamma tal-ikel, minn 1100 mL sa inqas minn 3000 mL",
+      "vnStorage": "Biċċiet fondi għaż-żamma tal-ikel, 3000 mL jew aktar",
+      "vnCooking": "Biċċiet fondi għat-tisjir",
+      "vnCups": "Tazzi u skutelli żgħar"
     },
     "judged": {
       "average": "medja ta’ 6 biċċiet",

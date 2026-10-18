@@ -361,7 +361,8 @@
     "heading": "Ohud",
     "intro": "Nii, nagu iga tooraine kirje need annab; standardse teegi ohud pärinevad tarnijate ohutuskaartidelt.",
     "line": "<b>{names}:</b> {hazards}",
-    "unknown": "{count, plural, one {Ohte pole antud: {list}. Vaadake sellega kaasas olevat ohutuskaarti.} other {Ohte pole antud: {list}. Vaadake nendega kaasas olevaid ohutuskaarte.}}"
+    "unknown": "{count, plural, one {Ohte pole antud: {list}. Vaadake sellega kaasas olevat ohutuskaarti.} other {Ohte pole antud: {list}. Vaadake nendega kaasas olevaid ohutuskaarte.}}",
+    "safety": "Kuivad glasuuri toorained tekitavad tolmu: ärge laske seda kopsudesse, ka mitte nende toorainete tolmu, mida ei ole ohtlikuks liigitatud: vt <mixing>Ohutu segamine ja ventilatsioon</mixing> ja <home>Ärge mürgitage oma peret</home>, kui läheduses on lapsi või lemmikloomi. Kui tooraine ohutuskaardil on rohkem kirjas, järgige seda."
   },
   "compare": {
     "heading": "Kahe retsepti võrdlemine",
@@ -590,7 +591,10 @@
     "guidance": "Need on juhisväärtused, mitte hinnang „läbis“ või „ei läbinud“: nende piiridest väljas olev glasuur võib olla korras ja nende piires olev võib siiski juuspraguneda, metalle eraldada või ebaõnnestuda. Katsetage seda.",
     "source": "Allikas:",
     "saveFailed": "Piirväärtuste komplekti valikut ei saanud teie kontole salvestada, seega kasutusel on endiselt varasem komplekt.",
-    "ownLimits": "Need soovitused kasutavad Glazecalci enda piirväärtusi, mitte komplekti {name}."
+    "ownLimits": "Need soovitused kasutavad Glazecalci enda piirväärtusi, mitte komplekti {name}.",
+    "firingFromBlock": "Retsepti põletuse järgi ({bands})",
+    "bothBands": "Retsepti põletus hõlmab vahemikku {bands}, seega kontrollitakse igaüht kõrvuti: glasuur käitub harva mõlemas otsas ühtmoodi.",
+    "fromFiring": "Arvud on retsepti põletuse kohta: {band}. Teise kontrollimiseks valige ülal põletus."
   },
   "stull": {
     "heading": "Stulli diagramm",
@@ -714,7 +718,8 @@
     "notSaved": "Midagi ei salvestatud: {problem}",
     "stopped": "Salvestatud {saved} / {count}. Ülejäänuid ei salvestatud: {problem}",
     "saved": "{count, plural, one {Salvestatud # retsept.} other {Salvestatud # retsepti.}}",
-    "openRecipes": "Ava retseptid"
+    "openRecipes": "Ava retseptid",
+    "firingRead": "Põletus loetud märkmetest: {firing}"
   },
   "blends": {
     "title": "Katsesegud proovitükkidele",
@@ -847,5 +852,115 @@
     "retry": "Proovi uuesti",
     "about": "Glazecalc on tasuta glasuurikalkulaator keraamikutele.",
     "aboutLink": "Teave Glazecalci kohta"
+  },
+  "firing": {
+    "heading": "Põletus",
+    "whatIsCone": "Mida koonus tähendab?",
+    "scale": "Skaala",
+    "scales": {
+      "orton": "Ortoni koonused",
+      "sk": "SK-koonused (JIS)",
+      "temperature": "Temperatuur"
+    },
+    "groups": {
+      "usual": "Koonused 022 kuni 13",
+      "half": "Poolkoonused",
+      "above": "Koonused 14 kuni 42 (keraamikas harvad)"
+    },
+    "coneLabel": "Koonus",
+    "lowCone": "Alates koonusest",
+    "highCone": "Kuni koonuseni",
+    "noHigh": "Ülemist koonust pole",
+    "notStated": "Pole märgitud",
+    "peak": "Tipptemperatuur ({unit})",
+    "lowTemperature": "Alates ({unit})",
+    "highTemperature": "Kuni ({unit})",
+    "rangeToggle": "Vahemik",
+    "testedLegend": "Katsetatud: märkige iga koonus, milleni olete põletanud",
+    "atmosphere": "Atmosfäär",
+    "process": "Protsess",
+    "atmospheres": {
+      "oxidation": "oksüdeeriv",
+      "reduction": "redutseeriv",
+      "neutral": "neutraalne"
+    },
+    "processes": {
+      "wood": "puupõletus",
+      "soda": "soodapõletus",
+      "salt": "soolapõletus",
+      "raku": "raku",
+      "pit": "aukpõletus"
+    },
+    "rate": "Kiirus viimasel tunnil ({unit} tunnis)",
+    "hold": "Hoid tipptemperatuuril (minutites)",
+    "schedule": "Põletusprogrammi märkmed",
+    "schedulePlaceholder": "Hoid 10 minutit, aeglane jahtumine…",
+    "witness": "Kinnitatud kontrollkoonusega",
+    "foodSurface": "Toiduga kokkupuutuvale pinnale (toidunõuglasuur)",
+    "liner": {
+      "note": "Toiduohutus sõltub sellest, kas glasuur põletatakse koonuseni, mille juures seda katsetati: alapõletatud glasuurist võivad metallid eralduda.",
+      "range": "See on antud vahemikuna, seega katsetage seda vahemiku madalamas otsas, kus see sulab kõige vähem.",
+      "untested": "Ühtegi koonust pole veel katsetatuks märgitud.",
+      "test": "Ainult teie enda põletatud nõude metallide eraldumise laborikatse näitab, kas see on toiduga kokkupuuteks ohutu."
+    },
+    "helpSummary": "Põletusest",
+    "help": {
+      "cone": "Koonus, milleni glasuuri põletasite. Koonused mõõdavad kuumustööd (aega ja temperatuuri), mitte ainult temperatuuri, nii et koonus 06 on palju jahedam kui koonus 6.",
+      "range": "Kui see sobib vahemikus, andke madalaim ja kõrgeim koonus ning märkige koonused, milleni olete seda tegelikult põletanud: katsetatud koonus kuvatakse esimesena. Glasuur võib kummaski otsas välja näha ja käituda erinevalt.",
+      "convert": "Koonus säilitatakse sellisena, nagu selle andsite. Iga ümberarvutus teisele skaalale või temperatuurile on ligikaudne: koonus paindub erineval kuumutuskiirusel erineval temperatuuril ning sama numbriga SK- ja Ortoni koonused ei ole samad.",
+      "move": "Glasuuri viimine teisele koonusele tähendab tavaliselt selle ümberkoostamist, mitte lihtsalt kuumemat või jahedamat põletust. Funktsioon Dubleeri teise koonuse jaoks jätab mõlemad versioonid alles."
+    },
+    "temperatureProblem": "Andke temperatuur vahemikus {min} kuni {max}.",
+    "rateProblem": "Andke kiirus täisarvuna kraadides tunnis.",
+    "holdProblem": "Andke hoid täisminutites, kuni ööpäev.",
+    "one": {
+      "orton": "koonus {cone}",
+      "sk": "SK {cone}"
+    },
+    "span": {
+      "orton": "koonused {low}–{high}",
+      "sk": "SK {low}–{high}",
+      "temperature": "{low} kuni {high}"
+    },
+    "testedAt": "Katsetatud: {cones}",
+    "claimedRange": "väidetav vahemik {range}",
+    "rangeUntested": "Vahemik {range}; ühtegi koonust pole katsetatuks märgitud",
+    "approxTemperature": "≈ {temperature} ({basis}; ligikaudne)",
+    "approxCone": "≈ {cone} ({basis}; ligikaudne)",
+    "basis": {
+      "orton60": "Ortoni suured koonused kiirusel 60 °C tunnis",
+      "kyoto": "mõõdetud kiirusel 100 °C tunnis Kyoto linna instituudis",
+      "stated": "nagu antud"
+    },
+    "rateText": "{rate} tunnis viimasel tunnil",
+    "holdText": "hoitud {minutes} min",
+    "witnessText": "kontrollitud kontrollkoonusega",
+    "asGiven": "Põletus, nagu autor selle andis:",
+    "filterCone": "Näita retsepte koonuse järgi",
+    "anyCone": "Mis tahes koonus",
+    "filterAtmosphere": "Näita retsepte atmosfääri või protsessi järgi",
+    "anyAtmosphere": "Mis tahes atmosfäär või protsess",
+    "duplicate": "Dubleeri teise koonuse jaoks",
+    "duplicateName": "Dubleeri {title} teise koonuse jaoks",
+    "duplicateTitle": "{title} (teine koonus)",
+    "duplicateNote": "Retsepti {title} koopia, veel salvestamata: valige selle uus koonus jaotises Põletus. Glasuuri viimine teisele koonusele tähendab tavaliselt selle ümberkoostamist, mitte lihtsalt kuumemat või jahedamat põletust, seega kontrollige piirnorme ja katsetage seda."
+  },
+  "firings": {
+    "heading": "Põletuspäevikud",
+    "open": "Seo põletuspäevikuid",
+    "fetchFailed": "Põletuspäevikuid ei õnnestunud laadida.",
+    "noLogs": "Põletuspäevikuid pole veel.",
+    "toLogs": "Pane põletus kirja",
+    "saveFailed": "Põletuspäevikute seoste muudatust ei õnnestunud salvestada.",
+    "resultFor": "Tulemus: {title}",
+    "resultPlaceholder": "Kuidas välja tuli: läikiv, ei mingeid juuspragusid…",
+    "unlink": "Eemalda seos",
+    "unlinkName": "Eemalda seos: {title}",
+    "choose": "Seotav põletuspäevik",
+    "link": "Seo",
+    "fill": "Märkige koonused, mida need päevikud nimetavad: {cones}",
+    "replaceAsk": "Katsetatuks on märgitud {now}. Kas asendada see koonustega, mida päevikud nimetavad: {logs}?",
+    "replace": "Asenda",
+    "keep": "Jäta nii nagu on"
   }
 }

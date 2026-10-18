@@ -165,69 +165,69 @@ Tikėkitės skirtumų. Pasak Ortono, „paprastai tarp krosnies viršaus ir apa�
 
 :::orton
 
-## The kiln sitter {#kiln-sitter lang=en}
+## Išjungiklis Kiln-Sitter {#kiln-sitter}
 
-A **kiln sitter** is the mechanical switch, on the outside of many basic and older kilns, that turns the kiln off when a small cone bends. The best known is the Dawson Kiln-Sitter. It makes firing easier, but it is a convenience, not a safety device.
+**Išjungiklis Kiln-Sitter**{{en: kiln sitter}} – tai mechaninis išjungiklis daugelio paprastų ir senesnių krosnių išorėje, kuris išjungia krosnį, kai mažasis piroskopas{{en: cone}} sulinksta. Žinomiausias – gamintojo Dawson Kiln-Sitter. Jis palengvina degimą, bet tai patogumo priemonė, o ne apsauginis įtaisas.
 
-### How it works
+### Kaip jis veikia
 
-A porcelain tube reaches into the kiln. At its end, a small cone or a bar lies across two metal supports, under a **sensing rod** that pivots like a seesaw. Outside the kiln, the other end of the rod holds up a weight by a small claw. When the cone softens and bends to about 90°, the rod drops far enough to release the weight, the weight falls, and the power to the elements is cut.
+Porcelianinis vamzdelis siekia krosnies vidų. Jo gale mažasis piroskopas arba lazdelė guli skersai ant dviejų metalinių atramų, po **jutiklio strypeliu**, kuris svyruoja kaip sūpuoklių lenta. Krosnies išorėje kitas strypelio galas mažu **gnybtu** prilaiko pakeltą **svarelį**. Kai piroskopas suminkštėja ir sulinksta maždaug 90°, strypelis nusileidžia tiek, kad atleidžia svarelį, svarelis nukrenta ir kaitinimo elementų maitinimas nutrūksta.
 
-Small cones and bars "give equivalent heat treatment". Orton notes that many beginners choose bars, because their even shape makes it easy to place them the same way every time. A small cone tapers, so where it sits matters: with its thin part under the rod the kiln shuts off cooler, and with its thick part hotter, a shift of "as much as 1/2 cone".
+Mažieji piroskopai ir lazdelės „suteikia lygiavertį šiluminį poveikį“. Ortonas pažymi, kad daug pradedančiųjų renkasi lazdeles, nes dėl tolygios formos jas lengva kaskart padėti vienodai. Mažasis piroskopas siaurėja, todėl svarbu, kaip jis padėtas: kai po strypeliu yra plonoji jo dalis, krosnis išsijungia vėsesnė, o kai storoji – karštesnė; skirtumas gali siekti „net 1/2 piroskopo numerio“.
 
-### Which cone goes in the sitter
+### Kokį piroskopą dėti į išjungiklį
 
-Sources disagree. Dawson, who made the sitter, says to use the same number as the firing cone on the shelf, and to go one number hotter only if the shelf cone stays unbent. L&L says to use one number hotter than the shelf cones, because the sitter sits near the wall and the elements, gets more heat, and tends to shut off early. Orton settles the principle: "The shelf cone is the final judge of the firing process, not the Kiln-Sitter cone or bar."
-
-> [!NOTE]
-> Our starting point: put a small cone of the same number as your target in the sitter, with a cone pack on the shelf. If the shelf firing cone is under-bent when the kiln shuts off, go one number hotter in the sitter next time, or set the thicker part of the cone under the rod. If it is over-bent, do the opposite.
-
-### Setting it up, and checks before every firing
-
-Dawson's procedure, which doubles as a check before every firing:
-
-1. Turn all the switches off. Check that the sensing rod moves freely, sits centered in the tube and is not bent or corroded. If it is sluggish, Dawson says to replace the tube assembly.
-2. Brush a thin coat of high-fire **kiln wash** (a coating that stops melted material sticking) onto the cone supports and the rod where it touches the cone. Never put wash on the cone or the porcelain tube.
-3. Load shelves and ware at least 1 in (25 mm) above or below the tube, so nothing can touch, fall against or block it.
-4. Lift the weight, press the claw down onto the trigger, and lay the cone or bar flat on the supports against the metal step, as your sitter's manual shows, the same way every time. Check it again before closing the lid: "AN IMPROPERLY PLACED CONE OR BAR COULD CAUSE AN OVERFIRING."
-5. Set the limit timer and push in the plunger until it locks. Keep the kiln level and the space under the weight clear, so the weight can fall.
-
-### The limit timer
-
-Many sitters, including Dawson's LT models, have a **limit timer**: a clock that turns the kiln off after a set time, as a backup "in case the KILN-SITTER fails". It should always be set longer than the firing is expected to take. Sources set the margin differently:
-
-Table: How long to set the limit timer
-Label: Limit timer settings
-
-| Source    | Setting                                                                                                                      |
-| --------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| Dawson    | ½ hour longer than the expected firing time until you know the kiln, later as little as ¼ hour; never set it beyond 20 hours |
-| L&L       | Very high the first time, noting how long the firing takes; after that, about 1 hour longer                                  |
-| Bracker's | 30 minutes to 1 hour longer than the firing time                                                                             |
+Šaltiniai nesutaria. Išjungiklio gamintojas Dawson nurodo naudoti tokį patį numerį kaip degimo piroskopo ant plokštės, o vienu numeriu karštesnį dėti tik tuo atveju, jei piroskopas ant plokštės lieka nesulinkęs. L&L nurodo naudoti vienu numeriu karštesnį piroskopą nei ant plokščių, nes išjungiklis yra prie sienelės ir kaitinimo elementų, gauna daugiau šilumos ir linkęs išjungti krosnį per anksti. Principą nustato Ortonas: „Galutinis degimo proceso teisėjas yra piroskopas ant plokštės, o ne išjungiklio Kiln-Sitter piroskopas ar lazdelė.“
 
 > [!NOTE]
-> Our starting point: generous the first time (within the dial's 20 hours), then ½ to 1 hour longer than the time you recorded. The timer also tells you how long a firing took: set at 7 and ending at 1 means 6 hours.
+> Mūsų atspirties taškas: į išjungiklį dėkite tokio paties numerio mažąjį piroskopą kaip jūsų tikslinis, o ant plokštės pastatykite piroskopų rinkinį{{en: cone pack}}. Jei krosniai išsijungus degimo piroskopas ant plokštės nepakankamai sulinkęs, kitą kartą į išjungiklį dėkite vienu numeriu karštesnį piroskopą arba po strypeliu padėkite storesnę piroskopo dalį. Jei jis per daug sulinkęs, darykite atvirkščiai.
 
-### When it shuts off early or late
+### Paruošimas ir patikra prieš kiekvieną degimą
 
-After each firing, read the sitter cone beside the shelf cones.
+Gamintojo Dawson nurodyta tvarka, kuri kartu tinka ir patikrai prieš kiekvieną degimą:
 
-Table: Reading the sitter after a firing
-Label: Kiln sitter problems
+1. Išjunkite visus jungiklius. Patikrinkite, ar jutiklio strypelis laisvai juda, yra vamzdelio centre ir nėra sulinkęs ar korozijos pažeistas. Jei jis juda sunkiai, Dawson nurodo pakeisti visą vamzdelio mazgą.
+2. Ant piroskopo atramų ir ant strypelio toje vietoje, kur jis liečia piroskopą, teptuku užtepkite ploną aukšto degimo **krosnies plokščių apsaugos** (dangos, neleidžiančios prilipti išsilydžiusiai medžiagai) sluoksnį. Niekada netepkite apsaugos ant piroskopo ar porcelianinio vamzdelio.
+3. Plokštes ir dirbinius krauskite bent 1 coliu (25 mm) aukščiau ar žemiau vamzdelio, kad niekas negalėtų jo liesti, ant jo užvirsti ar jo užblokuoti.
+4. Pakelkite svarelį, nuspauskite gnybtą ant paleidimo plokštelės ir paguldykite piroskopą ar lazdelę plokščiai ant atramų, prie metalinės pakopėlės, kaip parodyta jūsų išjungiklio naudojimo instrukcijoje, kiekvieną kartą vienodai. Prieš uždarydami dangtį, patikrinkite dar kartą: „NETINKAMAI PADĖTAS PIROSKOPAS AR LAZDELĖ GALI SUKELTI PERDEGIMĄ.“
+5. Nustatykite ribinį laikmatį ir įspauskite paleidimo mygtuką, kol jis užsifiksuos. Krosnį laikykite pastatytą lygiai, o vietą po svareliu – laisvą, kad svarelis galėtų nukristi.
 
-| What you see                                    | Likely cause                                                                                           | What to do                                                       |
-| ----------------------------------------------- | ------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------- |
-| Sitter tripped, shelf firing cone under-bent    | The sitter ran hotter than the shelf (it sits near the wall)                                           | One cone hotter in the sitter, or the thicker part under the rod |
-| Sitter cone sagged well past 90°                | The kiln climbed too fast near the end                                                                 | Lower the switch settings, so the climb is slower (Dawson)       |
-| Sitter cone did not bend, or melted into a blob | The sitter itself: poor adjustment, a bent or corroded rod, or something lodged in or against the tube | Check and adjust the sitter by its manual before firing again    |
-| Early or late every time                        | Out of adjustment, or a worn rod                                                                       | Check with the firing gauge; move the trigger plate              |
+### Ribinis laikmatis
 
-To check the adjustment, Dawson uses a **firing gauge** that holds the rod where a fully bent cone would leave it; there should then be "1/16th-inch clearance" (about 1.6 mm) at the claw. Check it every 30 firings. Ceramics Monthly's rule: if the kiln shuts off early, move the trigger plate up slightly; if late, move it down slightly. Whatever the sitter does, "Always trust large witness cones over small sitter cones."
+Daugelis išjungiklių, tarp jų gamintojo Dawson LT modeliai, turi **ribinį laikmatį** – laikrodį, kuris po nustatyto laiko išjungia krosnį; tai atsarginė priemonė, „jei išjungiklis KILN-SITTER sugestų“. Jis visada turėtų būti nustatytas ilgesniam laikui, nei tikimasi, kad truks degimas. Šaltiniai atsargą nustato skirtingai:
+
+Table: Kiek laiko nustatyti ribinį laikmatį
+Label: Ribinio laikmačio nustatymai
+
+| Šaltinis  | Nustatymas                                                                                                                                   |
+| --------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| Dawson    | ½ val. ilgiau už numatomą degimo trukmę, kol krosnies dar nepažįstate, vėliau – vos ¼ val. ilgiau; niekada nenustatykite ilgiau kaip 20 val. |
+| L&L       | Pirmą kartą – labai ilgam laikui, užsirašant, kiek trunka degimas; vėliau – maždaug 1 val. ilgiau                                            |
+| Bracker's | Nuo 30 min. iki 1 val. ilgiau už degimo trukmę                                                                                               |
+
+> [!NOTE]
+> Mūsų atspirties taškas: pirmą kartą nustatykite su didele atsarga (neviršydami skalės 20 valandų), vėliau – ½–1 valanda ilgiau už jūsų užrašytą trukmę. Laikmatis taip pat parodo, kiek truko degimas: nustatytas ties 7 ir sustojęs ties 1, jis rodo 6 valandas.
+
+### Kai išjungia per anksti ar per vėlai
+
+Po kiekvieno degimo išjungiklio piroskopą apžiūrėkite kartu su piroskopais ant plokščių.
+
+Table: Išjungiklio vertinimas po degimo
+Label: Išjungiklio problemos
+
+| Ką matote                                                                 | Tikėtina priežastis                                                                                                              | Ką daryti                                                                                  |
+| ------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
+| Išjungiklis suveikė, degimo piroskopas ant plokštės nepakankamai sulinkęs | Išjungiklyje buvo karščiau nei ant plokštės (jis yra prie sienelės)                                                              | Į išjungiklį – vienu numeriu karštesnis piroskopas arba po strypeliu storesnė dalis        |
+| Išjungiklio piroskopas nulinko gerokai daugiau nei 90°                    | Pabaigoje krosnis kaito per greitai                                                                                              | Nustatykite žemesnes jungiklių padėtis, kad kaistų lėčiau (Dawson)                         |
+| Išjungiklio piroskopas nesulinko arba išsilydė į lašą                     | Pats išjungiklis: blogai sureguliuotas, sulinkęs ar korozijos pažeistas strypelis arba kažkas įstrigo vamzdelyje ar remiasi į jį | Prieš kitą degimą patikrinkite ir sureguliuokite išjungiklį pagal jo naudojimo instrukciją |
+| Kiekvieną kartą per anksti ar per vėlai                                   | Išsireguliavęs išjungiklis arba susidėvėjęs strypelis                                                                            | Patikrinkite reguliavimo šablonu; pastumkite paleidimo plokštelę                           |
+
+Reguliavimui patikrinti Dawson naudoja **reguliavimo šabloną**, kuris laiko strypelį toje padėtyje, kurioje jį paliktų visiškai sulinkęs piroskopas; tada prie gnybto turėtų likti „1/16 colio tarpas“ (apie 1,6 mm). Tikrinkite tai kas 30 degimų. Žurnalo Ceramics Monthly taisyklė: jei krosnis išsijungia per anksti, šiek tiek pakelkite paleidimo plokštelę; jei per vėlai – šiek tiek nuleiskite. Kad ir ką darytų išjungiklis, „visada labiau pasitikėkite dideliais kontroliniais piroskopais nei mažais išjungiklio piroskopais“.
 
 > [!WARNING]
-> **A kiln sitter is not a safety device.** Dawson's manual says it "is NOT intended to perform as a fail-safe shut-off device and your kiln should NOT be left unattended beyond the estimated firing time." Something as simple as greenware falling against the tube "might cause an over-firing". Be there to check the kiln when it should be finishing, and never fire it over or near anything that burns, such as a wood floor or carpet.
+> **Išjungiklis Kiln-Sitter nėra apsauginis įtaisas.** Gamintojo Dawson naudojimo instrukcijoje rašoma, kad jis „NĖRA skirtas veikti kaip išjungimo įtaisas, saugus gedimo atveju{{en: fail-safe}}, ir jūsų krosnis NETURĖTŲ būti palikta be priežiūros ilgiau nei numatoma degimo trukmė“. Net toks paprastas dalykas kaip ant vamzdelio užvirtęs nedegtas dirbinys{{en: greenware}} „galėtų sukelti perdegimą“. Būkite šalia ir patikrinkite krosnį tada, kai degimas turėtų baigtis, ir niekada neįjunkite jos ant to, kas gali užsidegti, ar šalia to, pavyzdžiui, ant medinių grindų ar kilimo.
 
-The sitter is built for firings "up to and including Cone 8". It cannot hold a temperature or cool slowly by itself. With practice and a log, though, you can "become the controller", as Digitalfire puts it: watch the cones and turn the switches by hand.
+Išjungiklis skirtas degimams „iki piroskopo 8 imtinai“. Pats jis negali išlaikyti temperatūros ar lėtai aušinti. Vis dėlto, įgiję patirties ir vesdami žurnalą, galite „tapti valdikliu“, kaip sako Digitalfire: stebėti piroskopus ir sukti jungiklius ranka.
 
 :::
 

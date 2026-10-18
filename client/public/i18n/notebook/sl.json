@@ -88,7 +88,15 @@
     "chooseField": "Izberite polje, nato kliknite »Dodaj polje«.",
     "fetchFailed": "Pri pridobivanju podatkov o dnevnikih žganja je prišlo do napake.",
     "saved": "Zapis žganja je uspešno dodan na strežnik.",
-    "saveFailed": "Napaka: zahteva strežniku ni uspela."
+    "saveFailed": "Napaka: zahteva strežniku ni uspela.",
+    "recipesHeading": "Recepti, žgani v njem",
+    "noRecipes": "Še ni povezanih receptov.",
+    "recipesFailed": "Vaših receptov ni bilo mogoče pridobiti, zato zdaj ni mogoče povezati nobenega.",
+    "pickRecipe": "Recept, žgan v njem",
+    "linkRecipe": "Poveži recept",
+    "unlink": "Prekini povezavo",
+    "unlinkRecipe": "Prekini povezavo: {title}",
+    "linkFailed": "Povezave ni bilo mogoče shraniti."
   },
   "notes": {
     "title": "Zapiski",

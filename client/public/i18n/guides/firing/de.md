@@ -165,69 +165,69 @@ Rechnen Sie mit Unterschieden: Orton schreibt: „Typischerweise sehen Sie zwisc
 
 :::orton
 
-## The kiln sitter {#kiln-sitter lang=en}
+## Der Kiln-Sitter {#kiln-sitter}
 
-A **kiln sitter** is the mechanical switch, on the outside of many basic and older kilns, that turns the kiln off when a small cone bends. The best known is the Dawson Kiln-Sitter. It makes firing easier, but it is a convenience, not a safety device.
+Ein **Kiln-Sitter** ist der mechanische Schalter außen an vielen einfachen und älteren Öfen, der den Ofen abschaltet, wenn sich ein kleiner Kegel{{en: cone}} biegt. Der bekannteste ist der Kiln-Sitter von Dawson. Er erleichtert das Brennen, ist aber eine Bequemlichkeit, keine Sicherheitseinrichtung.
 
-### How it works
+### Wie er funktioniert
 
-A porcelain tube reaches into the kiln. At its end, a small cone or a bar lies across two metal supports, under a **sensing rod** that pivots like a seesaw. Outside the kiln, the other end of the rod holds up a weight by a small claw. When the cone softens and bends to about 90°, the rod drops far enough to release the weight, the weight falls, and the power to the elements is cut.
+Ein Keramikrohr aus Porzellan reicht in den Ofen hinein. An seinem Ende liegt ein kleiner Kegel oder ein Temperaturstäbchen quer über zwei Metallauflagen, unter einem **Fühlhebel**, der sich wie eine Wippe dreht. Außerhalb des Ofens hält das andere Ende des Hebels mit einem kleinen Schieber ein Fallgewicht hoch. Wenn der Kegel weich wird und sich auf etwa 90° biegt, sinkt der Hebel so weit, dass er das Fallgewicht freigibt; das Gewicht fällt, und der Strom zu den Heizspiralen wird unterbrochen.
 
-Small cones and bars "give equivalent heat treatment". Orton notes that many beginners choose bars, because their even shape makes it easy to place them the same way every time. A small cone tapers, so where it sits matters: with its thin part under the rod the kiln shuts off cooler, and with its thick part hotter, a shift of "as much as 1/2 cone".
+Kleine Kegel und Temperaturstäbchen „ergeben eine gleichwertige Wärmebehandlung“. Orton merkt an, dass viele Anfängerinnen und Anfänger Stäbchen wählen, weil sie sich dank ihrer gleichmäßigen Form leicht jedes Mal gleich einlegen lassen. Ein kleiner Kegel verjüngt sich, deshalb kommt es darauf an, wie er liegt: Mit dem dünnen Teil unter dem Hebel schaltet der Ofen bei niedrigerer Temperatur ab, mit dem dicken Teil bei höherer, eine Verschiebung um „bis zu 1/2 Kegel“.
 
-### Which cone goes in the sitter
+### Welcher Kegel in den Kiln-Sitter gehört
 
-Sources disagree. Dawson, who made the sitter, says to use the same number as the firing cone on the shelf, and to go one number hotter only if the shelf cone stays unbent. L&L says to use one number hotter than the shelf cones, because the sitter sits near the wall and the elements, gets more heat, and tends to shut off early. Orton settles the principle: "The shelf cone is the final judge of the firing process, not the Kiln-Sitter cone or bar."
-
-> [!NOTE]
-> Our starting point: put a small cone of the same number as your target in the sitter, with a cone pack on the shelf. If the shelf firing cone is under-bent when the kiln shuts off, go one number hotter in the sitter next time, or set the thicker part of the cone under the rod. If it is over-bent, do the opposite.
-
-### Setting it up, and checks before every firing
-
-Dawson's procedure, which doubles as a check before every firing:
-
-1. Turn all the switches off. Check that the sensing rod moves freely, sits centered in the tube and is not bent or corroded. If it is sluggish, Dawson says to replace the tube assembly.
-2. Brush a thin coat of high-fire **kiln wash** (a coating that stops melted material sticking) onto the cone supports and the rod where it touches the cone. Never put wash on the cone or the porcelain tube.
-3. Load shelves and ware at least 1 in (25 mm) above or below the tube, so nothing can touch, fall against or block it.
-4. Lift the weight, press the claw down onto the trigger, and lay the cone or bar flat on the supports against the metal step, as your sitter's manual shows, the same way every time. Check it again before closing the lid: "AN IMPROPERLY PLACED CONE OR BAR COULD CAUSE AN OVERFIRING."
-5. Set the limit timer and push in the plunger until it locks. Keep the kiln level and the space under the weight clear, so the weight can fall.
-
-### The limit timer
-
-Many sitters, including Dawson's LT models, have a **limit timer**: a clock that turns the kiln off after a set time, as a backup "in case the KILN-SITTER fails". It should always be set longer than the firing is expected to take. Sources set the margin differently:
-
-Table: How long to set the limit timer
-Label: Limit timer settings
-
-| Source    | Setting                                                                                                                      |
-| --------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| Dawson    | ½ hour longer than the expected firing time until you know the kiln, later as little as ¼ hour; never set it beyond 20 hours |
-| L&L       | Very high the first time, noting how long the firing takes; after that, about 1 hour longer                                  |
-| Bracker's | 30 minutes to 1 hour longer than the firing time                                                                             |
+Die Quellen sind sich nicht einig. Dawson, der Hersteller des Kiln-Sitters, rät, dieselbe Nummer wie der Hauptkegel auf der Ofenplatte zu nehmen und nur dann eine Nummer heißer zu gehen, wenn der Kegel auf der Ofenplatte ungebogen bleibt. L&L rät zu einer Nummer heißer als die Kegel auf der Ofenplatte, weil der Kiln-Sitter nahe an Wand und Heizspiralen sitzt, mehr Hitze abbekommt und dazu neigt, zu früh abzuschalten. Orton klärt den Grundsatz: „Der Kegel auf der Ofenplatte entscheidet letztlich über den Brand, nicht der Kegel oder das Stäbchen im Kiln-Sitter.“
 
 > [!NOTE]
-> Our starting point: generous the first time (within the dial's 20 hours), then ½ to 1 hour longer than the time you recorded. The timer also tells you how long a firing took: set at 7 and ending at 1 means 6 hours.
+> Unser Ausgangspunkt: Legen Sie einen kleinen Kegel mit der Nummer Ihres Ziels in den Kiln-Sitter und stellen Sie einen Kegelsatz{{en: cone pack}} auf die Ofenplatte. Ist der Hauptkegel auf der Ofenplatte beim Abschalten zu wenig gebogen, nehmen Sie beim nächsten Mal eine Nummer heißer im Kiln-Sitter, oder legen Sie den dickeren Teil des Kegels unter den Hebel. Ist er zu stark gebogen, machen Sie es umgekehrt.
 
-### When it shuts off early or late
+### Einrichten und Prüfen vor jedem Brand
 
-After each firing, read the sitter cone beside the shelf cones.
+Das Vorgehen nach Dawson, das zugleich als Prüfung vor jedem Brand dient:
 
-Table: Reading the sitter after a firing
-Label: Kiln sitter problems
+1. Schalten Sie alle Schalter aus. Prüfen Sie, ob sich der Fühlhebel frei bewegt, mittig im Rohr sitzt und nicht verbogen oder korrodiert ist. Bewegt er sich schwer, sollten Sie laut Dawson die Rohreinheit austauschen.
+2. Streichen Sie eine dünne Schicht **Trennmittel** für hohe Temperaturen (eine Beschichtung, an der geschmolzenes Material nicht haften bleibt) auf die Kegelauflagen und auf den Hebel, wo er den Kegel berührt. Bringen Sie nie Trennmittel auf den Kegel oder das Keramikrohr.
+3. Setzen Sie Ofenplatten und Ware mindestens 1 Zoll (25 mm) über oder unter dem Rohr ein, damit nichts es berühren, dagegen fallen oder es blockieren kann.
+4. Heben Sie das Fallgewicht an, drücken Sie den Schieber nach unten auf den Auslöser, und legen Sie den Kegel oder das Stäbchen flach auf die Auflagen an die Metallstufe, wie es die Bedienungsanleitung Ihres Kiln-Sitters zeigt, jedes Mal gleich. Prüfen Sie es vor dem Schließen des Deckels noch einmal: „EIN FALSCH EINGELEGTER KEGEL ODER EIN FALSCH EINGELEGTES STÄBCHEN KANN ZU EINER ÜBERFEUERUNG FÜHREN.“
+5. Stellen Sie den Zeitbegrenzer ein und drücken Sie den Druckknopf hinein, bis er einrastet. Halten Sie den Ofen waagerecht und den Raum unter dem Fallgewicht frei, damit das Gewicht fallen kann.
 
-| What you see                                    | Likely cause                                                                                           | What to do                                                       |
-| ----------------------------------------------- | ------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------- |
-| Sitter tripped, shelf firing cone under-bent    | The sitter ran hotter than the shelf (it sits near the wall)                                           | One cone hotter in the sitter, or the thicker part under the rod |
-| Sitter cone sagged well past 90°                | The kiln climbed too fast near the end                                                                 | Lower the switch settings, so the climb is slower (Dawson)       |
-| Sitter cone did not bend, or melted into a blob | The sitter itself: poor adjustment, a bent or corroded rod, or something lodged in or against the tube | Check and adjust the sitter by its manual before firing again    |
-| Early or late every time                        | Out of adjustment, or a worn rod                                                                       | Check with the firing gauge; move the trigger plate              |
+### Der Zeitbegrenzer
 
-To check the adjustment, Dawson uses a **firing gauge** that holds the rod where a fully bent cone would leave it; there should then be "1/16th-inch clearance" (about 1.6 mm) at the claw. Check it every 30 firings. Ceramics Monthly's rule: if the kiln shuts off early, move the trigger plate up slightly; if late, move it down slightly. Whatever the sitter does, "Always trust large witness cones over small sitter cones."
+Viele Kiln-Sitter, auch die LT-Modelle von Dawson, haben einen **Zeitbegrenzer** (Limit-Timer): eine Uhr, die den Ofen nach einer eingestellten Zeit abschaltet, als Reserve, „falls der KILN-SITTER versagt“. Er sollte immer länger eingestellt sein, als der Brand voraussichtlich dauert. Die Quellen bemessen den Spielraum unterschiedlich:
+
+Table: Wie lange der Zeitbegrenzer eingestellt wird
+Label: Zeitbegrenzer einstellen
+
+| Quelle    | Einstellung                                                                                                                                    |
+| --------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| Dawson    | ½ Stunde länger als die erwartete Brenndauer, bis Sie den Ofen kennen, später nur noch ¼ Stunde länger; nie auf mehr als 20 Stunden einstellen |
+| L&L       | Beim ersten Mal sehr hoch, dabei notieren, wie lange der Brand dauert; danach etwa 1 Stunde länger                                             |
+| Bracker’s | 30 Minuten bis 1 Stunde länger als die Brenndauer                                                                                              |
+
+> [!NOTE]
+> Unser Ausgangspunkt: beim ersten Mal großzügig (innerhalb der 20 Stunden auf der Skala), danach ½ bis 1 Stunde länger als die notierte Zeit. Der Zeitbegrenzer zeigt Ihnen auch, wie lange ein Brand gedauert hat: Auf 7 gestellt und bei 1 stehen geblieben heißt 6 Stunden.
+
+### Wenn er zu früh oder zu spät abschaltet
+
+Vergleichen Sie nach jedem Brand den Kegel aus dem Kiln-Sitter mit den Kegeln auf der Ofenplatte.
+
+Table: Den Kiln-Sitter nach dem Brand deuten
+Label: Probleme mit dem Kiln-Sitter
+
+| Was Sie sehen                                                         | Wahrscheinliche Ursache                                                                                                     | Was zu tun ist                                                                                            |
+| --------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
+| Kiln-Sitter ausgelöst, Hauptkegel auf der Ofenplatte zu wenig gebogen | Am Kiln-Sitter war es heißer als auf der Ofenplatte (er sitzt nahe der Wand)                                                | Einen Kegel heißer im Kiln-Sitter, oder den dickeren Teil unter den Hebel                                 |
+| Kegel im Kiln-Sitter weit über 90° hinaus abgesackt                   | Der Ofen ist gegen Ende zu schnell gestiegen                                                                                | Stellen Sie die Schalter niedriger, damit der Anstieg langsamer wird (Dawson)                             |
+| Kegel im Kiln-Sitter nicht gebogen oder zu einem Klumpen geschmolzen  | Der Kiln-Sitter selbst: schlecht eingestellt, Hebel verbogen oder korrodiert, oder etwas steckt im Rohr oder liegt daran an | Prüfen Sie den Kiln-Sitter vor dem nächsten Brand nach seiner Bedienungsanleitung und stellen Sie ihn ein |
+| Jedes Mal zu früh oder zu spät                                        | Verstellt, oder Hebel abgenutzt                                                                                             | Prüfen Sie mit der Schablone; verschieben Sie die Auslöseplatte                                           |
+
+Zum Prüfen der Einstellung verwendet Dawson eine **Schablone** (Einstelllehre), die den Hebel dort hält, wo ihn ein ganz umgebogener Kegel lassen würde; am Schieber sollte dann „1/16 Zoll Spiel“ (etwa 1,6 mm) sein. Prüfen Sie die Einstellung alle 30 Brände. Die Regel von Ceramics Monthly: Schaltet der Ofen zu früh ab, schieben Sie die Auslöseplatte etwas nach oben; schaltet er zu spät ab, etwas nach unten. Was auch immer der Kiln-Sitter tut: „Vertrauen Sie immer den großen Messkegeln{{en: witness cones}} mehr als den kleinen Kegeln im Kiln-Sitter.“
 
 > [!WARNING]
-> **A kiln sitter is not a safety device.** Dawson's manual says it "is NOT intended to perform as a fail-safe shut-off device and your kiln should NOT be left unattended beyond the estimated firing time." Something as simple as greenware falling against the tube "might cause an over-firing". Be there to check the kiln when it should be finishing, and never fire it over or near anything that burns, such as a wood floor or carpet.
+> **Ein Kiln-Sitter ist keine Sicherheitseinrichtung.** In der Bedienungsanleitung von Dawson heißt es, er sei „NICHT als ausfallsichere Abschaltvorrichtung gedacht, und Ihr Ofen sollte NICHT über die geschätzte Brenndauer hinaus unbeaufsichtigt gelassen werden“. Schon so etwas Einfaches wie ungebrannte Ware{{en: greenware}}, die gegen das Rohr fällt, „könnte eine Überfeuerung verursachen“. Seien Sie da, um den Ofen zu prüfen, wenn der Brand zu Ende gehen sollte, und brennen Sie nie auf oder in der Nähe von etwas Brennbarem, etwa einem Holzboden oder Teppich.
 
-The sitter is built for firings "up to and including Cone 8". It cannot hold a temperature or cool slowly by itself. With practice and a log, though, you can "become the controller", as Digitalfire puts it: watch the cones and turn the switches by hand.
+Der Kiln-Sitter ist für Brände „bis einschließlich Kegel 8“ gebaut. Er kann von sich aus weder eine Temperatur halten noch langsam abkühlen. Mit Übung und einem Brennprotokoll können Sie aber, wie Digitalfire es ausdrückt, „selbst zur Steuerung werden“: die Kegel beobachten und die Schalter von Hand drehen.
 
 :::
 

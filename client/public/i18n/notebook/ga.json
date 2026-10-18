@@ -88,7 +88,15 @@
     "chooseField": "Roghnaigh réimse le cur leis, agus ansin brúigh ‘Cuir an réimse leis’.",
     "fetchFailed": "Tharla earráid agus eolas na dtaifead bácála á fháil.",
     "saved": "D’éirigh leis. Cuireadh an taifead bácála leis an bhfreastalaí.",
-    "saveFailed": "Earráid: theip ar an iarratas chuig an bhfreastalaí."
+    "saveFailed": "Earráid: theip ar an iarratas chuig an bhfreastalaí.",
+    "recipesHeading": "Oidis a bácáladh ann",
+    "noRecipes": "Níl aon oideas ceangailte fós.",
+    "recipesFailed": "Níorbh fhéidir d’oidis a fháil, mar sin ní féidir ceann ar bith a cheangal anois.",
+    "pickRecipe": "Oideas a bácáladh ann",
+    "linkRecipe": "Ceangail an t-oideas",
+    "unlink": "Dícheangail",
+    "unlinkRecipe": "Dícheangail an t-oideas {title}",
+    "linkFailed": "Níorbh fhéidir an nasc a shábháil."
   },
   "notes": {
     "title": "Nótaí",

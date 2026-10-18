@@ -165,69 +165,69 @@ Bí ag súil le difríochtaí: deir Orton “De ghnáth, feicfidh tú difríocht
 
 :::orton
 
-## The kiln sitter {#kiln-sitter lang=en}
+## An Kiln-Sitter {#kiln-sitter}
 
-A **kiln sitter** is the mechanical switch, on the outside of many basic and older kilns, that turns the kiln off when a small cone bends. The best known is the Dawson Kiln-Sitter. It makes firing easier, but it is a convenience, not a safety device.
+Is éard is **Kiln-Sitter** ann ná an lasc mheicniúil, ar an taobh amuigh de go leor áitheanna simplí agus áitheanna níos sine, a mhúchann an áith nuair a lúbann cón{{en: cone}} beag. Is é Kiln-Sitter Dawson an ceann is cáiliúla. Déanann sé an bhácáil níos éasca, ach is áis é, ní gléas sábháilteachta.
 
-### How it works
+### Conas a oibríonn sé
 
-A porcelain tube reaches into the kiln. At its end, a small cone or a bar lies across two metal supports, under a **sensing rod** that pivots like a seesaw. Outside the kiln, the other end of the rod holds up a weight by a small claw. When the cone softens and bends to about 90°, the rod drops far enough to release the weight, the weight falls, and the power to the elements is cut.
+Síneann feadán poircealláin isteach san áith. Ag a cheann, luíonn cón beag nó barra trasna ar dhá thaca miotail, faoi **shlat bhraite** a chasann ar mhaighdeog mar chrandaí bogadaí. Lasmuigh den áith, coinníonn ceann eile na slaite meáchan in airde le crúb bheag. Nuair a bhogann an cón agus a lúbann sé go dtí thart ar 90°, titeann an tslat sách fada chun an meáchan a scaoileadh, titeann an meáchan, agus gearrtar an chumhacht chuig na heilimintí.
 
-Small cones and bars "give equivalent heat treatment". Orton notes that many beginners choose bars, because their even shape makes it easy to place them the same way every time. A small cone tapers, so where it sits matters: with its thin part under the rod the kiln shuts off cooler, and with its thick part hotter, a shift of "as much as 1/2 cone".
+Tugann cóin bheaga agus barraí “cóireáil teasa choibhéiseach”. Tugann Orton faoi deara go roghnaíonn go leor tosaitheoirí barraí, mar go bhfuil sé éasca, de bharr a gcrutha chothroim, iad a chur ar an mbealach céanna gach uair. Bíonn cón beag ag caolú, mar sin is tábhachtach an áit a luíonn sé: má bhíonn a chuid tanaí faoin tslat, múchtar an áith níos fuaire, agus má bhíonn a chuid tiubh faoin tslat, níos teo, athrú “an oiread le 1/2 cón”.
 
-### Which cone goes in the sitter
+### Cén cón a théann sa Kiln-Sitter
 
-Sources disagree. Dawson, who made the sitter, says to use the same number as the firing cone on the shelf, and to go one number hotter only if the shelf cone stays unbent. L&L says to use one number hotter than the shelf cones, because the sitter sits near the wall and the elements, gets more heat, and tends to shut off early. Orton settles the principle: "The shelf cone is the final judge of the firing process, not the Kiln-Sitter cone or bar."
-
-> [!NOTE]
-> Our starting point: put a small cone of the same number as your target in the sitter, with a cone pack on the shelf. If the shelf firing cone is under-bent when the kiln shuts off, go one number hotter in the sitter next time, or set the thicker part of the cone under the rod. If it is over-bent, do the opposite.
-
-### Setting it up, and checks before every firing
-
-Dawson's procedure, which doubles as a check before every firing:
-
-1. Turn all the switches off. Check that the sensing rod moves freely, sits centered in the tube and is not bent or corroded. If it is sluggish, Dawson says to replace the tube assembly.
-2. Brush a thin coat of high-fire **kiln wash** (a coating that stops melted material sticking) onto the cone supports and the rod where it touches the cone. Never put wash on the cone or the porcelain tube.
-3. Load shelves and ware at least 1 in (25 mm) above or below the tube, so nothing can touch, fall against or block it.
-4. Lift the weight, press the claw down onto the trigger, and lay the cone or bar flat on the supports against the metal step, as your sitter's manual shows, the same way every time. Check it again before closing the lid: "AN IMPROPERLY PLACED CONE OR BAR COULD CAUSE AN OVERFIRING."
-5. Set the limit timer and push in the plunger until it locks. Keep the kiln level and the space under the weight clear, so the weight can fall.
-
-### The limit timer
-
-Many sitters, including Dawson's LT models, have a **limit timer**: a clock that turns the kiln off after a set time, as a backup "in case the KILN-SITTER fails". It should always be set longer than the firing is expected to take. Sources set the margin differently:
-
-Table: How long to set the limit timer
-Label: Limit timer settings
-
-| Source    | Setting                                                                                                                      |
-| --------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| Dawson    | ½ hour longer than the expected firing time until you know the kiln, later as little as ¼ hour; never set it beyond 20 hours |
-| L&L       | Very high the first time, noting how long the firing takes; after that, about 1 hour longer                                  |
-| Bracker's | 30 minutes to 1 hour longer than the firing time                                                                             |
+Ní réitíonn na foinsí le chéile. Deir Dawson, a rinne an Kiln-Sitter, an uimhir chéanna a úsáid agus atá ag an gcón bácála ar an tseilf, agus dul uimhir amháin níos teo sa chás amháin go bhfanann cón na seilfe gan lúbadh. Deir L&L cón atá uimhir amháin níos teo ná cóin na seilfe a úsáid, mar go mbíonn an Kiln-Sitter in aice leis an mballa agus leis na heilimintí, go bhfaigheann sé níos mó teasa, agus gur gnách leis an áith a mhúchadh go luath. Socraíonn Orton an prionsabal: “Is é cón na seilfe an breitheamh deiridh ar phróiseas na bácála, ní cón ná barra an Kiln-Sitter.”
 
 > [!NOTE]
-> Our starting point: generous the first time (within the dial's 20 hours), then ½ to 1 hour longer than the time you recorded. The timer also tells you how long a firing took: set at 7 and ending at 1 means 6 hours.
+> Ár bpointe tosaigh: cuir cón beag sa Kiln-Sitter a bhfuil an uimhir chéanna air is atá ar do sprioc, agus paca cón{{en: cone pack}} ar an tseilf. Mura bhfuil cón bácála na seilfe lúbtha a dhóthain nuair a mhúchann an áith, téigh uimhir amháin níos teo sa Kiln-Sitter an chéad uair eile, nó cuir an chuid is tiubh den chón faoin tslat. Má tá sé lúbtha an iomarca, déan a mhalairt.
 
-### When it shuts off early or late
+### É a shocrú, agus seiceálacha roimh gach bácáil
 
-After each firing, read the sitter cone beside the shelf cones.
+Nós imeachta Dawson, a fheidhmíonn freisin mar sheiceáil roimh gach bácáil:
 
-Table: Reading the sitter after a firing
-Label: Kiln sitter problems
+1. Múch na lasca go léir. Seiceáil go mbogann an tslat bhraite go saor, go bhfuil sí i lár an fheadáin agus nach bhfuil sí lúbtha ná creimthe. Má bhogann sí go righin, deir Dawson cóimeáil an fheadáin a athsholáthar.
+2. Scuab sraith thanaí de **bhrat seilfe** ardbhácála (brat a choisceann ar ábhar leáite greamú) ar thacaí an chóin, agus ar an tslat san áit a mbaineann sí leis an gcón. Ná cuir brat seilfe riamh ar an gcón ná ar an bhfeadán poircealláin.
+3. Lódáil seilfeanna agus píosaí 1 orlach (25 mm) ar a laghad níos airde nó níos ísle ná an feadán, ionas nach féidir le haon rud teagmháil leis, titim ina choinne ná é a bhlocáil.
+4. Ardaigh an meáchan, brúigh an chrúb anuas ar an truicear, agus leag an cón nó an barra cothrom ar na tacaí in aghaidh na céime miotail, mar a thaispeánann lámhleabhar do Kiln-Sitter, ar an mbealach céanna gach uair. Seiceáil arís é sula ndúnann tú an clúdach: “D’FHÉADFADH RÓBHÁCÁIL A BHEITH MAR THORADH AR CHÓN NÓ AR BHARRA A CHUIRTEAR SA SUÍOMH MÍCHEART.”
+5. Socraigh an lasc ama agus brúigh isteach an suncaire go dtí go nglasálann sé. Coinnigh an áith ar leibhéal agus an spás faoin meáchan glan, ionas gur féidir leis an meáchan titim.
 
-| What you see                                    | Likely cause                                                                                           | What to do                                                       |
-| ----------------------------------------------- | ------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------- |
-| Sitter tripped, shelf firing cone under-bent    | The sitter ran hotter than the shelf (it sits near the wall)                                           | One cone hotter in the sitter, or the thicker part under the rod |
-| Sitter cone sagged well past 90°                | The kiln climbed too fast near the end                                                                 | Lower the switch settings, so the climb is slower (Dawson)       |
-| Sitter cone did not bend, or melted into a blob | The sitter itself: poor adjustment, a bent or corroded rod, or something lodged in or against the tube | Check and adjust the sitter by its manual before firing again    |
-| Early or late every time                        | Out of adjustment, or a worn rod                                                                       | Check with the firing gauge; move the trigger plate              |
+### An lasc ama
 
-To check the adjustment, Dawson uses a **firing gauge** that holds the rod where a fully bent cone would leave it; there should then be "1/16th-inch clearance" (about 1.6 mm) at the claw. Check it every 30 firings. Ceramics Monthly's rule: if the kiln shuts off early, move the trigger plate up slightly; if late, move it down slightly. Whatever the sitter does, "Always trust large witness cones over small sitter cones."
+Tá **lasc ama** ar go leor Kiln-Sitter, samhlacha LT Dawson ina measc: clog a mhúchann an áith tar éis ama shocraithe, mar chúltaca “ar eagla go dteipfeadh ar an KILN-SITTER”. Ba cheart í a shocrú i gcónaí níos faide ná an t-am a bhfuiltear ag súil go dtógfaidh an bhácáil. Socraíonn na foinsí an corrlach ar bhealaí difriúla:
+
+Table: Cá fhad a shocrófar an lasc ama
+Label: Socruithe na laisce ama
+
+| Foinse    | Socrú                                                                                                                                                                                                 |
+| --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Dawson    | ½ uair an chloig níos faide ná an t-am bácála a bhfuiltear ag súil leis go dtí go mbeidh aithne agat ar an áith, níos déanaí chomh beag le ¼ uair an chloig; ná socraigh thar 20 uair an chloig riamh |
+| L&L       | An-ard an chéad uair, agus nóta á dhéanamh agat den fhad a thógann an bhácáil; ina dhiaidh sin, thart ar 1 uair an chloig níos faide                                                                  |
+| Bracker's | 30 nóiméad go 1 uair an chloig níos faide ná an t-am bácála                                                                                                                                           |
+
+> [!NOTE]
+> Ár bpointe tosaigh: go fial an chéad uair (laistigh de 20 uair an chloig an diail), ansin ½ go 1 uair an chloig níos faide ná an t-am a thaifead tú. Insíonn an lasc ama duit freisin cé chomh fada a mhair bácáil: má socraíodh ar 7 í agus má chríochnaigh sí ar 1, ciallaíonn sé sin 6 huaire an chloig.
+
+### Nuair a mhúchann sé go luath nó go déanach
+
+Tar éis gach bácála, léigh cón an Kiln-Sitter in aice le cóin na seilfe.
+
+Table: An Kiln-Sitter a léamh tar éis bácála
+Label: Fadhbanna an Kiln-Sitter
+
+| An rud a fheiceann tú                                                        | Cúis is dóichí                                                                                                  | Cad atá le déanamh                                                                      |
+| ---------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| Mhúch an Kiln-Sitter an áith, ach níl cón bácála na seilfe lúbtha a dhóthain | Bhí an Kiln-Sitter níos teo ná an tseilf (tá sé in aice leis an mballa)                                         | Uimhir amháin níos teo sa Kiln-Sitter, nó an chuid is tiubh faoin tslat                 |
+| Chrom cón an Kiln-Sitter i bhfad thar 90°                                    | D’ardaigh an teocht rótapa gar don deireadh                                                                     | Ísligh socruithe na lasc, ionas go mbeidh an t-ardú níos moille (Dawson)                |
+| Níor lúb cón an Kiln-Sitter, nó leáigh sé ina mheall                         | An Kiln-Sitter féin: droch-choigeartú, slat lúbtha nó chreimthe, nó rud éigin sáite san fheadán nó ina luí leis | Seiceáil agus coigeartaigh an Kiln-Sitter de réir a lámhleabhair sula mbácálann tú arís |
+| Go luath nó go déanach gach uair                                             | As coigeartú, nó slat chaite                                                                                    | Seiceáil leis an tomhsaire bácála; bog an pláta truicir                                 |
+
+Chun an coigeartú a sheiceáil, úsáideann Dawson **tomhsaire bácála** a choinníonn an tslat san áit a bhfágfadh cón lánlúbtha í; ba cheart go mbeadh “glanspás 1/16 orlach” (thart ar 1.6 mm) ag an gcrúb ansin. Seiceáil é gach 30 bácáil. Riail Ceramics Monthly: má mhúchann an áith go luath, bog an pláta truicir suas beagán; má mhúchann sí go déanach, bog síos beagán é. Is cuma cad a dhéanann an Kiln-Sitter, “Bíodh muinín agat i gcónaí as cóin fhianaise mhóra{{en: witness cones}} seachas as cóin bheaga an Kiln-Sitter.”
 
 > [!WARNING]
-> **A kiln sitter is not a safety device.** Dawson's manual says it "is NOT intended to perform as a fail-safe shut-off device and your kiln should NOT be left unattended beyond the estimated firing time." Something as simple as greenware falling against the tube "might cause an over-firing". Be there to check the kiln when it should be finishing, and never fire it over or near anything that burns, such as a wood floor or carpet.
+> **Ní gléas sábháilteachta é Kiln-Sitter.** Deir lámhleabhar Dawson “NÍL sé ceaptha feidhmiú mar ghléas múchta slánchinnte agus NÍOR CHEART d’áith a fhágáil gan aire thar an am bácála measta.” Rud chomh simplí le hamh-earraí{{en: greenware}} a thiteann in aghaidh an fheadáin, “d’fhéadfadh sé róbhácáil a chruthú”. Bí ann chun an áith a sheiceáil nuair ba cheart di a bheith ag críochnú, agus ná bácáil riamh í os cionn aon ruda indóite ná in aice leis, mar shampla urlár adhmaid nó cairpéad.
 
-The sitter is built for firings "up to and including Cone 8". It cannot hold a temperature or cool slowly by itself. With practice and a log, though, you can "become the controller", as Digitalfire puts it: watch the cones and turn the switches by hand.
+Tá an Kiln-Sitter déanta do bhácálacha “go dtí Cón 8, Cón 8 féin san áireamh”. Ní féidir leis teocht a choinneáil ná fuarú go mall leis féin. Le cleachtadh agus le taifead bácála, áfach, is féidir leat “a bheith i do rialaitheoir”, mar a deir Digitalfire: bí ag faire ar na cóin agus cas na lasca de láimh.
 
 :::
 

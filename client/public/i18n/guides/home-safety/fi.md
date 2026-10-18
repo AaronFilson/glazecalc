@@ -149,76 +149,76 @@ Pet Poison Helplinen mukaan ”lyijy on myrkyllistä kaikille lajeille, mutta nu
 
 Jos lemmikki on voinut syödä tai juoda jotain pajasta tai sillä on yllä kuvatun kaltaisia oireita, soita omalle eläinlääkärille tai eläinten myrkytysneuvontaan (ks. taulukko sivun alussa), ja pidä raaka-aineen nimi ja lemmikin paino käsillä.
 
-## The kiln {#the-kiln lang=en}
+## Keramiikkauuni {#the-kiln}
 
-### The outside gets hot enough to burn
+### Ulkopinta kuumenee niin, että siitä saa palovamman
 
-A UK schools risk assessment says a kiln's outside "can reach 160 °C and possibly more" (about 320 °F), and a school kiln guide reports metal bands at up to 460 °F (about 240 °C). Skutt, a kiln maker, recommends a kiln room that can be locked against children and pets. Where a room cannot be locked, the school guide suggests a barrier such as a kiln safety screen.
+Brittiläisten koulujen riskinarviossa todetaan, että uunin ulkopinta ”voi kuumentua lämpötilaan 160 °C ja mahdollisesti enemmänkin” (noin 320 °F), ja koulujen uunioppaan mukaan metallivanteet kuumenevat jopa lämpötilaan 460 °F (noin 240 °C). Uunivalmistaja Skutt suosittelee uunihuonetta, jonka voi lukita lapsilta ja lemmikeiltä. Jos huonetta ei voi lukita, koulujen opas ehdottaa estettä, kuten uunin suoja-aitaa.
 
-Small children and pets cannot understand a warning sign. We suggest keeping them behind a locked door or a barrier while the kiln fires and while it cools, and posting a warning sign for everyone else.
+Pienet lapset ja lemmikit eivät ymmärrä varoituskylttiä. Suosittelemme, että lapset ja lemmikit pidetään lukitun oven tai esteen takana polton ja jäähtymisen ajan ja että muita varten laitetaan varoituskyltti.
 
-### Space around it
+### Tila uunin ympärillä
 
-Sources disagree on clearance. Rio Grande says at least 12 inches (30 cm) from walls and anything combustible. L&L strongly recommends 18 inches (46 cm) to all walls, and the building code it cites asks for 3 feet (0.9 m) from combustible walls. Follow your kiln's manual and local fire code; if you are unsure, allow 18 inches from any wall and 3 feet from anything that can burn. In a garage, keep cars, fuel and paint well away.
+Lähteet ovat eri mieltä suojaetäisyydestä. Rio Grande neuvoo vähintään 12 tuuman (30 cm) etäisyyttä seiniin ja kaikkeen palavaan. L&L suosittelee painokkaasti 18 tuuman (46 cm) etäisyyttä kaikkiin seiniin, ja sen lainaama rakennusmääräys vaatii 3 jalan (0,9 m) etäisyyttä palaviin seiniin. Noudata oman uunin käyttöohjetta ja paikallisia paloturvallisuusmääräyksiä; epävarmassa tapauksessa jätä 18 tuumaa tilaa kaikkiin seiniin ja 3 jalkaa kaikkeen, mikä voi palaa. Autotallissa pidä autot, polttoaineet ja maalit kaukana uunista.
 
-### Power
+### Sähkö
 
-Rio Grande recommends a **dedicated circuit** (one that powers nothing else) with a properly grounded outlet. We suggest no extension cord. Between firings, switch off the kiln's breaker or disconnect switch, or unplug it, so a child cannot start it.
+Rio Grande suosittelee **omaa ryhmää** (sähkökeskuksen ryhmä, josta ei saa virtaa mikään muu) ja asianmukaisesti maadoitettua pistorasiaa. Suosittelemme, ettei jatkojohtoa käytetä. Kytke polttojen välillä uunin sulake tai turvakytkin pois päältä tai irrota pistoke, jottei lapsi voi käynnistää uunia.
 
-### Be there when the firing ends
+### Ole paikalla polton päättyessä
 
-A **kiln sitter** is the mechanical switch on many manual kilns: a small cone bends at the end of the firing and trips the switch off. Its manual says it "is NOT intended to perform as a fail-safe shut-off device." Rio Grande says never to leave a firing kiln unattended, "especially near the expected shut-off time". So stay nearby and check the kiln while it fires, above all near the end; fire only when an adult will be home and awake to do that, check that it has switched off, and keep an ABC fire extinguisher in the kiln room. For how sitters, controllers and schedules work, see [Firing a basic kiln](/guides/firing).
+**Kiln-Sitter** on monissa käsisäätöisissä uuneissa oleva mekaaninen keilakatkaisin: pieni keila{{en: cone}} taipuu polton lopussa ja laukaisee katkaisimen pois päältä. Sen käyttöohjeen mukaan sitä ”EI ole tarkoitettu toimimaan vikaturvallisena katkaisulaitteena.” Rio Granden mukaan polttavaa uunia ei pidä koskaan jättää ilman valvontaa, ”etenkään lähellä odotettua sammumisaikaa”. Pysy siis lähellä ja tarkista uuni polton aikana, etenkin lähellä loppua; polta vain, kun kotona on hereillä oleva aikuinen, joka voi sen tehdä, tarkista, että uuni on sammunut, ja pidä uunihuoneessa ABC-käsisammutin. Siitä, miten Kiln-Sitterit, automatiikat ja polttokäyrät toimivat, kerrotaan oppaassa [Polttaminen yksinkertaisessa keramiikkauunissa](/guides/firing).
 
-### Fumes and carbon monoxide
+### Savukaasut ja häkä
 
-Firing gives off fumes, so vent the kiln to the outdoors; [Safe mixing and ventilation](/guides/safe-mixing) explains how. A kiln in an attached garage needs venting that keeps fumes from reaching the house through the connecting door. Keep birds in a far room whenever the kiln fires.
+Poltossa syntyy savukaasuja, joten johda uunin savukaasut ulos; opas [Turvallinen sekoittaminen ja ilmanvaihto](/guides/safe-mixing) kertoo, miten. Taloon liitetyssä autotallissa olevan uunin tuuletuksen on estettävä savukaasujen pääsy taloon väliovesta. Pidä linnut kaukaisessa huoneessa aina, kun uuni on päällä.
 
-**Carbon monoxide** (CO) is a poisonous gas you cannot see or smell. A university kiln safety sheet requires CO alarms with gas kilns. Views differ for electric kilns, but burning off organic matter (in clay, or things like paper or wax) can make CO. We think a CO alarm in the kiln room and the rooms next to it is a sensible, inexpensive step for any kiln.
+**Häkä** (hiilimonoksidi, CO) on myrkyllinen kaasu, jota ei voi nähdä eikä haistaa. Erään yliopiston uunien turvallisuusohje vaatii häkävaroittimet kaasu-uunien yhteyteen. Sähköuuneista näkemykset vaihtelevat, mutta orgaanisen aineen poispalaminen (savesta tai esimerkiksi paperista tai vahasta) voi tuottaa häkää. Mielestämme häkävaroitin uunihuoneessa ja sen viereisissä huoneissa on järkevä ja edullinen toimenpide minkä tahansa uunin kanssa.
 
-### Peepholes and eyes
+### Tirkistysaukot ja silmät
 
-Infrared light, which you cannot see, "starts at 752°F (400°C)", and the Ceramic Arts Network says looking into a kiln above this should always be done with eye protection. Infrared can damage the lens of the eye and lead to cataracts, and long gazing can injure the retina. Sunglasses and didymium glasses do not block it.
+Infrapunasäteily, jota ei voi nähdä, ”alkaa lämpötilasta 752°F (400°C)”, ja Ceramic Arts Networkin mukaan tätä kuumempaan uuniin pitäisi aina katsoa silmiensuojaimet päässä. Infrapunasäteily voi vaurioittaa silmän mykiötä ja aiheuttaa kaihia, ja pitkä tuijottaminen voi vahingoittaa verkkokalvoa. Aurinkolasit ja didymiumlasit eivät suojaa siltä.
 
 > [!WARNING]
-> Children should not look into a kiln at all. A glowing peephole draws them, and they will not reliably keep protective glasses on, so keep them away while the kiln is hot. Adults should look only briefly, through IR-rated welding glasses. Sources recommend shades from 1.7 to 5; shade 3 is a sensible choice, darker if you see spots afterward.
+> Lasten ei pitäisi katsoa uuniin lainkaan. Hehkuva tirkistysaukko houkuttelee heitä, eivätkä he luotettavasti pidä suojalaseja päässään, joten pidä heidät poissa uunin luota, kun uuni on kuuma. Aikuisten pitäisi katsoa vain hetken ja IR-suojattujen hitsauslasien läpi. Lähteet suosittelevat tummuusasteita 1,7–5; tummuusaste 3 on järkevä valinta, tummempi, jos silmissä näkyy katsomisen jälkeen pisteitä.
 
-## Handmade ware on the family table {#handmade-ware lang=en}
+## Käsintehdyt astiat perheen ruokapöydässä {#handmade-ware}
 
-The question for pots on the family table is **leaching**: metals dissolving out of the fired glaze into food or drink. The FDA warns that if pottery "is not manufactured properly, this lead can leach into food and drink", and that "no amount of washing, boiling, or other process can remove lead from pottery." Regulators such as the US FDA and the EU limit how much lead and cadmium a finished piece releases in a standard acid test, not what the glaze contains. The strictest US limit, for cups, mugs and pitchers, is 0.5 µg/mL of lead.
+Perheen ruokapöydän astioissa olennainen kysymys on **metallien liukeneminen**{{en: leaching}}: poltetusta lasitteesta{{en: glaze}} liukenee metalleja ruokaan tai juomaan. FDA varoittaa, että jos keramiikkaa ”ei ole valmistettu oikein, tätä lyijyä voi liueta ruokaan ja juomaan”, ja että ”mikään määrä pesua, keittämistä tai muuta käsittelyä ei poista lyijyä keramiikasta.” Viranomaiset, kuten Yhdysvaltain FDA ja EU, rajoittavat sitä, kuinka paljon lyijyä ja kadmiumia valmiista esineestä irtoaa standardoidussa happotestissä, eivät sitä, mitä lasite sisältää. Yhdysvaltain tiukin raja-arvo, kupeille, mukeille ja kannuille, on 0,5 µg/mL lyijyä.
 
-### Lead-free is not the same as food-safe
+### Lyijytön ei tarkoita elintarvikekäyttöön sopivaa
 
-A glaze with no lead can still leach. Digitalfire, a glaze chemistry reference, names glazes containing "heavy metal oxide colorants, barium, lithium, or lead" as the concern, and warns that a stain fired above its rated temperature can release cadmium. The ASTM D-4236 art-materials label on a jar "DOES NOT establish that a fired glaze is food-safe", and "Tableware producers must test all finished ware to establish dinnerware status."
+Lyijyttömästäkin lasitteesta voi liueta metalleja. Lasitekemian hakuteos Digitalfire mainitsee huolenaiheena lasitteet, jotka sisältävät ”raskasmetallioksidiväriaineita{{en: colorants}}, bariumia, litiumia tai lyijyä”, ja varoittaa, että sille ilmoitettua lämpötilaa kuumemmaksi poltetusta väripigmentistä{{en: stain}} voi irrota kadmiumia. Purkin ASTM D-4236 -taidetarvikemerkintä ”EI osoita, että poltettu lasite on elintarvikekäyttöön sopiva{{en: food-safe}}”, ja ”astioiden valmistajien on testattava kaikki valmiit tuotteet, jotta niiden kelpoisuus ruoka-astioiksi voidaan todeta.”
 
 > [!NOTE]
-> "Food safe" means this glaze, on this clay, fired to this cone, applied this way, releases less than the legal limits. A recipe calculation, Glazecalc's included, can flag a risky recipe but cannot prove a pot is safe. Only a leach test of the fired piece can.
+> ”Elintarvikekäyttöön sopiva” tarkoittaa, että juuri tämä lasite tällä savella, tähän keilaan{{en: cone}} poltettuna ja näin levitettynä luovuttaa vähemmän kuin lakisääteiset raja-arvot sallivat. Reseptilaskelma, myös Glazecalcin tekemä, voi tunnistaa riskialttiin reseptin, mutta se ei voi todistaa astiaa turvalliseksi. Sen voi osoittaa vain poltetulle esineelle tehty metallien liukenemisen laboratoriotesti.
 
-We suggest reading a "food safe" label on a commercial glaze as a good start, not a guarantee: a different clay, a thicker coat, another cone or a second glaze on top changes the result.
+Suosittelemme pitämään valmislasitteen merkintää ”elintarvikekäyttöön sopiva” hyvänä lähtökohtana, ei takuuna: eri savi, paksumpi lasitekerros, eri keila tai toinen lasite päällä muuttaa tulosta.
 
-### Testing
+### Testaaminen
 
-Laboratories test fired pieces with a standard acid soak that represents a worst case, such as ASTM C738 in the US. One lab's EU test needs four identical pieces and takes seven working days, so make spares of anything you plan to have tested.
+Laboratoriot testaavat poltetut esineet standardoidulla happoliotuksella, joka edustaa pahinta tapausta, esimerkiksi Yhdysvalloissa standardin ASTM C738 mukaisesti. Erään laboratorion EU-testiin tarvitaan neljä samanlaista esinettä ja se kestää seitsemän työpäivää, joten tee varakappaleita kaikesta, mitä on tarkoitus testauttaa.
 
-Home tests are disputed. The FDA says home swab kits can show leachable lead, and that a piece that tests positive should not be used for food. Ceramics NZ warns that consumer lead-test pens are "not designed for this use" on ceramics and can give false positives. Digitalfire suggests leaving a lemon slice on the glaze overnight as a rough screen. The safe reading: a positive home test means stop using the piece for food, and a negative one proves nothing. Only a lab can tell you a piece is safe.
+Kotitestit ovat kiistanalaisia. FDA:n mukaan kotikäyttöön tarkoitetut pyyhkäisytestit voivat paljastaa liukenevan lyijyn, eikä positiivisen tuloksen antanutta esinettä pitäisi käyttää ruoalle. Ceramics NZ varoittaa, että kuluttajille myytäviä lyijytestikyniä ”ei ole suunniteltu tähän käyttöön” keramiikassa ja ne voivat antaa vääriä positiivisia tuloksia. Digitalfire ehdottaa karkeaksi seulonnaksi sitruunaviipaleen jättämistä lasitteen päälle yön yli. Turvallinen tulkinta: positiivinen kotitesti tarkoittaa, että esineen käyttö ruoalle lopetetaan, eikä negatiivinen todista mitään. Vain laboratorio voi kertoa, että esine on turvallinen.
 
-### Crazed ware
+### Säröilleet esineet
 
-**Crazing** is a network of fine cracks in the glaze surface, and sources disagree about it. A Ceramics Monthly experiment found crazed tiles could be cleaned, best in a dishwasher, though they came out less clean than uncrazed tiles after soap and water. Digitalfire holds that "Crazed ware is unacceptable" and that crazing "severely weakens ware". The safe course is simple: do not use crazed pieces for food.
+**Säröily**{{en: crazing}} on hienojen halkeamien verkosto lasitteen pinnassa, ja lähteet ovat siitä eri mieltä. Ceramics Monthlyn kokeessa säröilleet koepalat{{en: test tiles}} saatiin puhdistettua, parhaiten astianpesukoneessa, mutta saippualla ja vedellä pestyinä ne jäivät vähemmän puhtaiksi kuin säröilemättömät koepalat. Digitalfiren mukaan ”säröilleet esineet eivät ole hyväksyttäviä” ja säröily ”heikentää esinettä vakavasti”. Turvallinen linja on yksinkertainen: älä käytä säröilleitä esineitä ruoalle.
 
-### Liner glazes
+### Sisälasitteet
 
-A **liner glaze** is the glaze on the inside of a cup or bowl, where the food sits. Digitalfire describes a liner that may be low enough in risk to use without lab testing: no colorants, barium, lead or lithium; fully melted; no crazing; and it wears well. Even then, only a leach test of your own fired pots shows whether they are food-safe. Warning signs in any glaze are heavy amounts of colorant, crystals on the surface and poor melting.
+**Sisälasite**{{en: liner glaze}} on kupin tai kulhon sisäpuolen lasite, jossa ruoka on. Digitalfire kuvaa sisälasitteen, jonka riski voi olla niin pieni, että sitä voi käyttää ilman laboratoriotestiä: ei väriaineita, bariumia, lyijyä eikä litiumia; täysin sulanut; ei säröile; ja kestää hyvin kulutusta. Silloinkin vain omille poltetuille astioille tehty metallien liukenemisen laboratoriotesti osoittaa, ovatko ne elintarvikekäyttöön sopivia. Varoitusmerkkejä missä tahansa lasitteessa ovat suuret väriainemäärät, kiteet pinnassa ja huono sulaminen.
 
-### Family rules we suggest
+### Suosittelemamme säännöt perheelle
 
-- Children's cups, bowls and plates: only lab-tested, durable liner glazes, or commercial dinnerware.
-- Do not store acidic food or drink (citrus, tomato, vinegar, fruit juice, wine) in pots glazed with anything you have not had tested.
-- Do not use crazed pieces for food.
-- Test tiles and experiments stay in the studio, never in the kitchen, the toy box or the pet's bowl.
-- Take care with other pottery too. The FDA advises caution with handmade or crude-looking pieces, antiques, damaged or worn pieces, flea-market finds and bright orange, red or yellow decoration.
-- If a child has used pottery you now doubt, the FDA says to talk to a doctor about a blood lead test.
+- Lasten kupit, kulhot ja lautaset: vain laboratoriossa testattuja, kestäviä sisälasitteita tai kaupasta ostettuja ruoka-astioita.
+- Älä säilytä happamia ruokia tai juomia (sitrushedelmät, tomaatti, etikka, hedelmämehu, viini) astioissa, joiden lasitteita ei ole testautettu.
+- Älä käytä säröilleitä esineitä ruoalle.
+- Koepalat ja kokeilut pysyvät pajassa, eivät koskaan keittiössä, lelulaatikossa tai lemmikin kupissa.
+- Ole varovainen myös muun keramiikan kanssa. FDA kehottaa varovaisuuteen käsintehtyjen tai karkean näköisten esineiden, antiikkiesineiden, vaurioituneiden tai kuluneiden esineiden, kirpputorilöytöjen sekä kirkkaan oranssin, punaisen tai keltaisen koristelun kanssa.
+- Jos lapsi on käyttänyt astioita, joiden turvallisuutta nyt epäillään, FDA neuvoo keskustelemaan lääkärin kanssa veren lyijypitoisuuden mittauksesta.
 
-For more on how glazes melt, why some leach and what the limits mean, see [Glazing from first principles](/guides/glazing-basics).
+Lisää siitä, miten lasitteet sulavat, miksi joistakin liukenee metalleja ja mitä raja-arvot tarkoittavat, kerrotaan oppaassa [Lasittamisen perusteet](/guides/glazing-basics).
 
 ## Lähteet {#sources}
 

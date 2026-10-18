@@ -248,6 +248,22 @@
       "saved": "S-a salvat: numerele și datele ca în {language}.",
       "help": "Cum se scriu numerele și datele: 12,345.6 sau 12.345,6 și ordinea zilei și a lunii."
     },
+    "calendar": {
+      "legend": "Calendar",
+      "help": "Calendarul în care sunt afișate datele. Datele pe care le introduceți rămân în calendarul gregorian.",
+      "gregory": {
+        "label": "Gregorian",
+        "saved": "S-a salvat: datele sunt afișate în calendarul gregorian."
+      },
+      "buddhist": {
+        "label": "Era budistă thailandeză",
+        "saved": "S-a salvat: datele sunt afișate în era budistă thailandeză."
+      },
+      "japanese": {
+        "label": "Era japoneză",
+        "saved": "S-a salvat: datele sunt afișate în erele japoneze."
+      }
+    },
     "decimalMark": {
       "legend": "Introducerea cantităților",
       "either": {

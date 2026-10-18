@@ -248,6 +248,22 @@
       "saved": "Salvato: numeri e date come in {language}.",
       "help": "Come si scrivono numeri e date: 12.345,6 o 12,345.6, e l’ordine di giorno e mese."
     },
+    "calendar": {
+      "legend": "Calendario",
+      "help": "Il calendario in cui sono mostrate le date. Le date che si digitano restano nel calendario gregoriano.",
+      "gregory": {
+        "label": "Gregoriano",
+        "saved": "Salvato: le date sono mostrate nel calendario gregoriano."
+      },
+      "buddhist": {
+        "label": "Era buddista thailandese",
+        "saved": "Salvato: le date sono mostrate nell’era buddista thailandese."
+      },
+      "japanese": {
+        "label": "Era giapponese",
+        "saved": "Salvato: le date sono mostrate nelle ere giapponesi."
+      }
+    },
     "decimalMark": {
       "legend": "Inserimento delle quantità",
       "either": {

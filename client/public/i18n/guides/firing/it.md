@@ -165,69 +165,69 @@ Aspettarsi delle differenze: secondo Orton, «Di solito si vede almeno un cono d
 
 :::orton
 
-## The kiln sitter {#kiln-sitter lang=en}
+## Il kiln sitter {#kiln-sitter}
 
-A **kiln sitter** is the mechanical switch, on the outside of many basic and older kilns, that turns the kiln off when a small cone bends. The best known is the Dawson Kiln-Sitter. It makes firing easier, but it is a convenience, not a safety device.
+Il **kiln sitter** è l’interruttore meccanico, montato all’esterno di molti forni semplici e meno recenti, che spegne il forno quando un piccolo cono{{en: cone}} si piega. Il più noto è il Kiln-Sitter di Dawson. Rende la cottura più semplice, ma è una comodità, non un dispositivo di sicurezza.
 
-### How it works
+### Come funziona
 
-A porcelain tube reaches into the kiln. At its end, a small cone or a bar lies across two metal supports, under a **sensing rod** that pivots like a seesaw. Outside the kiln, the other end of the rod holds up a weight by a small claw. When the cone softens and bends to about 90°, the rod drops far enough to release the weight, the weight falls, and the power to the elements is cut.
+Un tubo di porcellana entra nel forno. Alla sua estremità, un cono piccolo o una barretta poggia di traverso su due supporti metallici, sotto un’**astina sensore** che fa perno come un’altalena a bilico. Fuori dal forno, l’altra estremità dell’astina regge un peso tramite un piccolo gancio. Quando il cono si ammorbidisce e si piega fino a circa 90°, l’astina scende abbastanza da liberare il peso, il peso cade e la corrente alle resistenze viene interrotta.
 
-Small cones and bars "give equivalent heat treatment". Orton notes that many beginners choose bars, because their even shape makes it easy to place them the same way every time. A small cone tapers, so where it sits matters: with its thin part under the rod the kiln shuts off cooler, and with its thick part hotter, a shift of "as much as 1/2 cone".
+I coni piccoli e le barrette «danno un trattamento termico equivalente». Orton nota che molti principianti scelgono le barrette, perché la loro forma uniforme rende facile posizionarle ogni volta nello stesso modo. Un cono piccolo si assottiglia verso la punta, quindi conta come è appoggiato: con la parte sottile sotto l’astina il forno si spegne a una temperatura più bassa, e con la parte spessa a una più alta, con uno scarto «fino a 1/2 cono».
 
-### Which cone goes in the sitter
+### Quale cono mettere nel kiln sitter
 
-Sources disagree. Dawson, who made the sitter, says to use the same number as the firing cone on the shelf, and to go one number hotter only if the shelf cone stays unbent. L&L says to use one number hotter than the shelf cones, because the sitter sits near the wall and the elements, gets more heat, and tends to shut off early. Orton settles the principle: "The shelf cone is the final judge of the firing process, not the Kiln-Sitter cone or bar."
-
-> [!NOTE]
-> Our starting point: put a small cone of the same number as your target in the sitter, with a cone pack on the shelf. If the shelf firing cone is under-bent when the kiln shuts off, go one number hotter in the sitter next time, or set the thicker part of the cone under the rod. If it is over-bent, do the opposite.
-
-### Setting it up, and checks before every firing
-
-Dawson's procedure, which doubles as a check before every firing:
-
-1. Turn all the switches off. Check that the sensing rod moves freely, sits centered in the tube and is not bent or corroded. If it is sluggish, Dawson says to replace the tube assembly.
-2. Brush a thin coat of high-fire **kiln wash** (a coating that stops melted material sticking) onto the cone supports and the rod where it touches the cone. Never put wash on the cone or the porcelain tube.
-3. Load shelves and ware at least 1 in (25 mm) above or below the tube, so nothing can touch, fall against or block it.
-4. Lift the weight, press the claw down onto the trigger, and lay the cone or bar flat on the supports against the metal step, as your sitter's manual shows, the same way every time. Check it again before closing the lid: "AN IMPROPERLY PLACED CONE OR BAR COULD CAUSE AN OVERFIRING."
-5. Set the limit timer and push in the plunger until it locks. Keep the kiln level and the space under the weight clear, so the weight can fall.
-
-### The limit timer
-
-Many sitters, including Dawson's LT models, have a **limit timer**: a clock that turns the kiln off after a set time, as a backup "in case the KILN-SITTER fails". It should always be set longer than the firing is expected to take. Sources set the margin differently:
-
-Table: How long to set the limit timer
-Label: Limit timer settings
-
-| Source    | Setting                                                                                                                      |
-| --------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| Dawson    | ½ hour longer than the expected firing time until you know the kiln, later as little as ¼ hour; never set it beyond 20 hours |
-| L&L       | Very high the first time, noting how long the firing takes; after that, about 1 hour longer                                  |
-| Bracker's | 30 minutes to 1 hour longer than the firing time                                                                             |
+Le fonti non sono d’accordo. Dawson, produttore del kiln sitter, dice di usare lo stesso numero del cono di cottura sulla piastra, e di passare a un numero più caldo solo se il cono sulla piastra resta dritto. L&L dice di usare un numero più caldo dei coni sulla piastra, perché il kiln sitter si trova vicino alla parete e alle resistenze, riceve più calore e tende a spegnere il forno in anticipo. Orton fissa il principio: «È il cono sulla piastra il giudice finale del processo di cottura, non il cono o la barretta del Kiln-Sitter».
 
 > [!NOTE]
-> Our starting point: generous the first time (within the dial's 20 hours), then ½ to 1 hour longer than the time you recorded. The timer also tells you how long a firing took: set at 7 and ending at 1 means 6 hours.
+> Il nostro punto di partenza: mettere nel kiln sitter un cono piccolo dello stesso numero dell’obiettivo, con una terna di coni sulla piastra. Se, quando il forno si spegne, il cono di cottura sulla piastra è piegato troppo poco, la volta successiva usare nel kiln sitter un numero più caldo, oppure mettere sotto l’astina la parte più spessa del cono. Se è piegato troppo, fare il contrario.
 
-### When it shuts off early or late
+### Preparazione e controlli prima di ogni cottura
 
-After each firing, read the sitter cone beside the shelf cones.
+La procedura di Dawson, che serve anche da controllo prima di ogni cottura:
 
-Table: Reading the sitter after a firing
-Label: Kiln sitter problems
+1. Spegnere tutti i commutatori. Verificare che l’astina sensore si muova liberamente, sia centrata nel tubo e non sia piegata o corrosa. Se si muove a fatica, Dawson dice di sostituire il gruppo del tubo.
+2. Stendere a pennello uno strato sottile di **protettivo per piastre** per alta temperatura (un rivestimento che impedisce al materiale fuso di attaccarsi) sui supporti del cono e sull’astina, nel punto in cui tocca il cono. Non mettere mai il protettivo sul cono o sul tubo di porcellana.
+3. Caricare piastre e pezzi almeno 1 pollice (25 mm) sopra o sotto il tubo, in modo che niente possa toccarlo, cadergli contro o bloccarlo.
+4. Sollevare il peso, premere il gancio sul grilletto e appoggiare il cono o la barretta in piano sui supporti, contro il gradino metallico, come mostra il manuale del kiln sitter, ogni volta nello stesso modo. Ricontrollarlo prima di chiudere il coperchio: «UN CONO O UNA BARRETTA POSIZIONATI MALE POSSONO CAUSARE UNA SOVRACOTTURA».
+5. Impostare il timer di sicurezza e premere il pulsante finché non resta bloccato. Tenere il forno in piano e lo spazio sotto il peso libero, in modo che il peso possa cadere.
 
-| What you see                                    | Likely cause                                                                                           | What to do                                                       |
-| ----------------------------------------------- | ------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------- |
-| Sitter tripped, shelf firing cone under-bent    | The sitter ran hotter than the shelf (it sits near the wall)                                           | One cone hotter in the sitter, or the thicker part under the rod |
-| Sitter cone sagged well past 90°                | The kiln climbed too fast near the end                                                                 | Lower the switch settings, so the climb is slower (Dawson)       |
-| Sitter cone did not bend, or melted into a blob | The sitter itself: poor adjustment, a bent or corroded rod, or something lodged in or against the tube | Check and adjust the sitter by its manual before firing again    |
-| Early or late every time                        | Out of adjustment, or a worn rod                                                                       | Check with the firing gauge; move the trigger plate              |
+### Il timer di sicurezza
 
-To check the adjustment, Dawson uses a **firing gauge** that holds the rod where a fully bent cone would leave it; there should then be "1/16th-inch clearance" (about 1.6 mm) at the claw. Check it every 30 firings. Ceramics Monthly's rule: if the kiln shuts off early, move the trigger plate up slightly; if late, move it down slightly. Whatever the sitter does, "Always trust large witness cones over small sitter cones."
+Molti kiln sitter, compresi i modelli LT di Dawson, hanno un **timer di sicurezza**: un orologio che spegne il forno dopo un tempo impostato, come riserva «nel caso in cui il KILN-SITTER non funzioni». Va sempre impostato su un tempo più lungo della durata prevista della cottura. Le fonti fissano il margine in modo diverso:
+
+Table: Per quanto tempo impostare il timer di sicurezza
+Label: Impostazioni del timer di sicurezza
+
+| Fonte     | Impostazione                                                                                                                              |
+| --------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| Dawson    | ½ ora in più della durata prevista della cottura finché non si conosce il forno, poi solo ¼ d’ora in più; non impostarlo mai oltre 20 ore |
+| L&L       | Molto alto la prima volta, annotando quanto dura la cottura; in seguito, circa 1 ora in più                                               |
+| Bracker’s | Da 30 minuti a 1 ora in più della durata della cottura                                                                                    |
+
+> [!NOTE]
+> Il nostro punto di partenza: abbondante la prima volta (entro le 20 ore del quadrante), poi da ½ a 1 ora in più del tempo annotato. Il timer indica anche quanto è durata una cottura: impostato su 7 e fermo su 1 significa 6 ore.
+
+### Quando spegne troppo presto o troppo tardi
+
+Dopo ogni cottura, leggere il cono del kiln sitter insieme ai coni sulla piastra.
+
+Table: Leggere il kiln sitter dopo una cottura
+Label: Problemi del kiln sitter
+
+| Che cosa si vede                                                        | Causa probabile                                                                                                            | Che cosa fare                                                                           |
+| ----------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| Kiln sitter scattato, cono di cottura sulla piastra piegato troppo poco | Il kiln sitter era più caldo della piastra (si trova vicino alla parete)                                                   | Un cono più caldo nel kiln sitter, o la parte più spessa sotto l’astina                 |
+| Cono del kiln sitter afflosciato ben oltre i 90°                        | Il forno è salito troppo in fretta verso la fine                                                                           | Abbassare le posizioni dei commutatori, così la salita è più lenta (Dawson)             |
+| Cono del kiln sitter non piegato, o fuso in una goccia                  | Il kiln sitter stesso: regolazione sbagliata, un’astina piegata o corrosa, o qualcosa incastrato nel tubo o contro di esso | Controllare e regolare il kiln sitter seguendo il suo manuale prima di cuocere di nuovo |
+| Troppo presto o troppo tardi ogni volta                                 | Fuori regolazione, o un’astina consumata                                                                                   | Controllare con il calibro; spostare la piastrina di sgancio                            |
+
+Per controllare la regolazione, Dawson usa un **calibro** che tiene l’astina nella posizione in cui la lascerebbe un cono completamente piegato; a quel punto al gancio deve esserci «un gioco di 1/16 di pollice» (circa 1,6 mm). Controllarla ogni 30 cotture. La regola di Ceramics Monthly: se il forno si spegne troppo presto, alzare leggermente la piastrina di sgancio; se si spegne troppo tardi, abbassarla leggermente. Qualunque cosa faccia il kiln sitter, «Fidarsi sempre dei grandi coni testimone{{en: witness cones}} più che dei piccoli coni del kiln sitter».
 
 > [!WARNING]
-> **A kiln sitter is not a safety device.** Dawson's manual says it "is NOT intended to perform as a fail-safe shut-off device and your kiln should NOT be left unattended beyond the estimated firing time." Something as simple as greenware falling against the tube "might cause an over-firing". Be there to check the kiln when it should be finishing, and never fire it over or near anything that burns, such as a wood floor or carpet.
+> **Il kiln sitter non è un dispositivo di sicurezza.** Il manuale di Dawson dice che «NON è destinato a funzionare come dispositivo di spegnimento a prova di guasto e il forno NON deve essere lasciato incustodito oltre la durata stimata della cottura». Anche una cosa semplice come un pezzo crudo{{en: greenware}} che cade contro il tubo «potrebbe causare una sovracottura». Essere presenti per controllare il forno quando la cottura dovrebbe finire, e non cuocere mai sopra o vicino a qualcosa che brucia, come un pavimento di legno o una moquette.
 
-The sitter is built for firings "up to and including Cone 8". It cannot hold a temperature or cool slowly by itself. With practice and a log, though, you can "become the controller", as Digitalfire puts it: watch the cones and turn the switches by hand.
+Il kiln sitter è costruito per cotture «fino al cono 8 compreso». Da solo non può mantenere una temperatura né raffreddare lentamente. Con la pratica e un registro, però, si può «diventare la centralina», come dice Digitalfire: osservare i coni e girare i commutatori a mano.
 
 :::
 

@@ -248,6 +248,22 @@
       "saved": "Opgeslagen: getallen en datums zoals in het {language}.",
       "help": "Hoe getallen en datums worden geschreven: 12,345.6 of 12.345,6, en de volgorde van dag en maand."
     },
+    "calendar": {
+      "legend": "Kalender",
+      "help": "De kalender waarin datums worden getoond. Datums die u zelf invoert blijven in de Gregoriaanse kalender.",
+      "gregory": {
+        "label": "Gregoriaans",
+        "saved": "Opgeslagen: datums worden getoond in de Gregoriaanse kalender."
+      },
+      "buddhist": {
+        "label": "Thaise boeddhistische jaartelling",
+        "saved": "Opgeslagen: datums worden getoond in de Thaise boeddhistische jaartelling."
+      },
+      "japanese": {
+        "label": "Japanse jaartelling",
+        "saved": "Opgeslagen: datums worden getoond in de Japanse jaartelling."
+      }
+    },
     "decimalMark": {
       "legend": "Hoeveelheden invoeren",
       "either": {

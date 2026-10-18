@@ -361,7 +361,8 @@
     "heading": "Gefahren",
     "intro": "So, wie der Datensatz jedes Rohstoffs sie angibt; die der Standardbibliothek stammen aus den Sicherheitsdatenblättern der Lieferanten.",
     "line": "<b>{names}:</b> {hazards}",
-    "unknown": "{count, plural, one {Für {list} sind keine Gefahren angegeben: Lesen Sie das Sicherheitsdatenblatt, das dazugehört.} other {Für {list} sind keine Gefahren angegeben: Lesen Sie die Sicherheitsdatenblätter, die dazugehören.}}"
+    "unknown": "{count, plural, one {Für {list} sind keine Gefahren angegeben: Lesen Sie das Sicherheitsdatenblatt, das dazugehört.} other {Für {list} sind keine Gefahren angegeben: Lesen Sie die Sicherheitsdatenblätter, die dazugehören.}}",
+    "safety": "Trockene Glasurrohstoffe erzeugen Staub: Halten Sie ihn aus Ihrer Lunge heraus, auch Staub von Rohstoffen, die nicht als gefährlich eingestuft sind. Lesen Sie <mixing>Sicheres Anmischen und Lüften</mixing> und, wenn Kinder oder Haustiere in der Nähe sind, <home>Vergiften Sie Ihre Familie nicht</home>. Wo das Sicherheitsdatenblatt eines Rohstoffs mehr sagt, befolgen Sie es."
   },
   "compare": {
     "heading": "Zwei Rezepte vergleichen",
@@ -590,7 +591,10 @@
     "guidance": "Das sind Richtwerte, kein Urteil über „bestanden“ oder „nicht bestanden“: Eine Glasur außerhalb davon kann in Ordnung sein, und eine innerhalb kann trotzdem Haarrisse bekommen, Metalle abgeben oder versagen. Testen Sie sie.",
     "source": "Quelle:",
     "saveFailed": "Ihre Wahl der Grenzwerttabelle konnte nicht in Ihrem Konto gespeichert werden, deshalb gilt weiterhin die vorherige Grenzwerttabelle.",
-    "ownLimits": "Diese Vorschläge verwenden die eigenen Grenzwerte von Glazecalc, nicht {name}."
+    "ownLimits": "Diese Vorschläge verwenden die eigenen Grenzwerte von Glazecalc, nicht {name}.",
+    "firingFromBlock": "Aus dem Brand des Rezepts ({bands})",
+    "bothBands": "Der Brand des Rezepts erstreckt sich über {bands}, daher wird jeder Bereich geprüft, nebeneinander: Eine Glasur verhält sich selten an beiden Enden gleich.",
+    "fromFiring": "Die Werte gelten für den Brand des Rezepts: {band}. Wählen Sie oben einen Brand, um einen anderen zu prüfen."
   },
   "stull": {
     "heading": "Stull-Diagramm",
@@ -714,7 +718,8 @@
     "notSaved": "Es wurde nichts gespeichert: {problem}",
     "stopped": "{saved} von {count} gespeichert. Die übrigen wurden nicht gespeichert: {problem}",
     "saved": "{count, plural, one {# Rezept gespeichert.} other {# Rezepte gespeichert.}}",
-    "openRecipes": "Ihre Rezepte öffnen"
+    "openRecipes": "Ihre Rezepte öffnen",
+    "firingRead": "Aus den Notizen gelesener Brand: {firing}"
   },
   "blends": {
     "title": "Mischreihen für Probeplättchen",
@@ -847,5 +852,115 @@
     "retry": "Erneut versuchen",
     "about": "Glazecalc ist ein kostenloser Glasurrechner für die Töpferei.",
     "aboutLink": "Über Glazecalc"
+  },
+  "firing": {
+    "heading": "Brand",
+    "whatIsCone": "Was bedeutet Kegel?",
+    "scale": "Skala",
+    "scales": {
+      "orton": "Ortonkegel",
+      "sk": "SK-Kegel (JIS)",
+      "temperature": "Temperatur"
+    },
+    "groups": {
+      "usual": "Kegel 022 bis 13",
+      "half": "Halbe Kegel",
+      "above": "Kegel 14 bis 42 (in der Töpferei selten)"
+    },
+    "coneLabel": "Kegel",
+    "lowCone": "Von Kegel",
+    "highCone": "Bis Kegel",
+    "noHigh": "Kein oberer Kegel",
+    "notStated": "Nicht angegeben",
+    "peak": "Höchsttemperatur ({unit})",
+    "lowTemperature": "Von ({unit})",
+    "highTemperature": "Bis ({unit})",
+    "rangeToggle": "Ein Bereich",
+    "testedLegend": "Getestet bei: Haken Sie jeden Kegel an, auf den Sie sie gebrannt haben",
+    "atmosphere": "Atmosphäre",
+    "process": "Verfahren",
+    "atmospheres": {
+      "oxidation": "Oxidation",
+      "reduction": "Reduktion",
+      "neutral": "neutral"
+    },
+    "processes": {
+      "wood": "Holzbrand",
+      "soda": "Sodabrand",
+      "salt": "Salzbrand",
+      "raku": "Raku",
+      "pit": "Grubenbrand"
+    },
+    "rate": "Rate in der letzten Stunde ({unit} pro Stunde)",
+    "hold": "Haltezeit bei Höchsttemperatur (Minuten)",
+    "schedule": "Notizen zur Brennkurve",
+    "schedulePlaceholder": "10 Minuten halten, langsam abkühlen …",
+    "witness": "Mit einem Messkegel bestätigt",
+    "foodSurface": "Für eine Fläche mit Lebensmittelkontakt (eine Innenglasur)",
+    "liner": {
+      "note": "Die Lebensmittelsicherheit hängt davon ab, diese Glasur auf den Kegel zu brennen, bei dem sie getestet wurde: Eine zu schwach gebrannte Glasur kann Metalle abgeben.",
+      "range": "Sie ist für einen Bereich angegeben, testen Sie sie daher am unteren Ende des Bereichs, wo sie am wenigsten schmilzt.",
+      "untested": "Noch kein Kegel ist als getestet markiert.",
+      "test": "Nur eine Prüfung der Metallabgabe an Ihren eigenen gebrannten Töpfen zeigt, ob sie lebensmittelgeeignet ist."
+    },
+    "helpSummary": "Zum Brand",
+    "help": {
+      "cone": "Der Kegel, auf den Sie diese Glasur gebrannt haben. Kegel messen die Wärmearbeit (Zeit und Temperatur), nicht nur die Temperatur; Kegel 06 ist also viel kühler als Kegel 6.",
+      "range": "Wenn sie über einen Bereich funktioniert, geben Sie den niedrigsten und den höchsten Kegel an und haken Sie die Kegel an, auf die Sie sie tatsächlich gebrannt haben: Der getestete Kegel wird zuerst angezeigt. Eine Glasur kann an jedem Ende anders aussehen und sich anders verhalten.",
+      "convert": "Der Kegel bleibt so, wie Sie ihn angeben. Jede Umrechnung in eine andere Skala oder in eine Temperatur ist ungefähr: Ein Kegel biegt sich bei einer anderen Aufheizrate bei einer anderen Temperatur, und SK- und Ortonkegel mit derselben Nummer sind nicht dasselbe.",
+      "move": "Eine Glasur auf einen anderen Kegel zu bringen heißt meist, sie neu zu formulieren, nicht nur, sie heißer oder kühler zu brennen. „Für einen anderen Kegel duplizieren“ behält beide Fassungen."
+    },
+    "temperatureProblem": "Geben Sie eine Temperatur von {min} bis {max} an.",
+    "rateProblem": "Geben Sie die Rate als ganze Zahl von Grad pro Stunde an.",
+    "holdProblem": "Geben Sie die Haltezeit in ganzen Minuten an, bis zu einem Tag.",
+    "one": {
+      "orton": "Kegel {cone}",
+      "sk": "SK {cone}"
+    },
+    "span": {
+      "orton": "Kegel {low}–{high}",
+      "sk": "SK {low}–{high}",
+      "temperature": "{low} bis {high}"
+    },
+    "testedAt": "Getestet bei {cones}",
+    "claimedRange": "angegebener Bereich {range}",
+    "rangeUntested": "Bereich {range}; kein Kegel als getestet angehakt",
+    "approxTemperature": "≈ {temperature} ({basis}; ungefähr)",
+    "approxCone": "≈ {cone} ({basis}; ungefähr)",
+    "basis": {
+      "orton60": "große Ortonkegel bei 60 °C pro Stunde",
+      "kyoto": "gemessen bei 100 °C pro Stunde vom städtischen Institut in Kyoto",
+      "stated": "wie angegeben"
+    },
+    "rateText": "{rate} pro Stunde in der letzten Stunde",
+    "holdText": "{minutes} min gehalten",
+    "witnessText": "mit einem Messkegel geprüft",
+    "asGiven": "Brand, wie im Rezept angegeben:",
+    "filterCone": "Rezepte für einen Kegel anzeigen",
+    "anyCone": "Beliebiger Kegel",
+    "filterAtmosphere": "Rezepte für eine Atmosphäre oder ein Verfahren anzeigen",
+    "anyAtmosphere": "Beliebige Atmosphäre oder Verfahren",
+    "duplicate": "Für einen anderen Kegel duplizieren",
+    "duplicateName": "{title} für einen anderen Kegel duplizieren",
+    "duplicateTitle": "{title} (anderer Kegel)",
+    "duplicateNote": "Eine Kopie von {title}, noch nicht gespeichert: Wählen Sie unter Brand den neuen Kegel. Eine Glasur auf einen anderen Kegel zu bringen heißt meist, sie neu zu formulieren, nicht nur, sie heißer oder kühler zu brennen; prüfen Sie also die Grenzwerte und testen Sie sie."
+  },
+  "firings": {
+    "heading": "Brennprotokolle",
+    "open": "Brennprotokolle verknüpfen",
+    "fetchFailed": "Ihre Brennprotokolle konnten nicht abgerufen werden.",
+    "noLogs": "Noch keine Brennprotokolle.",
+    "toLogs": "Einen Brand protokollieren",
+    "saveFailed": "Die Änderung an den Verknüpfungen der Brennprotokolle konnte nicht gespeichert werden.",
+    "resultFor": "Ergebnis in {title}",
+    "resultPlaceholder": "Wie es geworden ist: glänzend, keine Haarrisse …",
+    "unlink": "Trennen",
+    "unlinkName": "{title} trennen",
+    "choose": "Ein Brennprotokoll zum Verknüpfen",
+    "link": "Verknüpfen",
+    "fill": "Haken Sie die Kegel an, die diese Protokolle nennen: {cones}",
+    "replaceAsk": "Als getestet angehakt: {now}. Durch die Kegel ersetzen, die die Protokolle nennen, {logs}?",
+    "replace": "Ersetzen",
+    "keep": "So lassen"
   }
 }

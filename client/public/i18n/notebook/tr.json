@@ -88,7 +88,15 @@
     "chooseField": "Eklenecek bir alan seçin, sonra Alanı ekle düğmesine basın.",
     "fetchFailed": "Pişirim kayıtlarının bilgileri alınırken bir hata oluştu.",
     "saved": "Pişirim kaydı sunucuya başarıyla eklendi.",
-    "saveFailed": "Hata: sunucuya gönderilen istek başarısız oldu."
+    "saveFailed": "Hata: sunucuya gönderilen istek başarısız oldu.",
+    "recipesHeading": "İçinde pişirilen reçeteler",
+    "noRecipes": "Henüz bağlı reçete yok.",
+    "recipesFailed": "Reçeteleriniz getirilemedi, bu yüzden şu anda hiçbiri bağlanamaz.",
+    "pickRecipe": "İçinde pişirilen bir reçete",
+    "linkRecipe": "Reçeteyi bağla",
+    "unlink": "Bağlantıyı kaldır",
+    "unlinkRecipe": "{title} adlı reçetenin bağlantısını kaldır",
+    "linkFailed": "Bağlantı kaydedilemedi."
   },
   "notes": {
     "title": "Notlar",

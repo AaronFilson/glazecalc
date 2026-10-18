@@ -56,7 +56,8 @@
     "vet": "Sunați medicul veterinar.",
     "checkedOn": "Data verificării:",
     "choosePrompt": "Alegeți țara pentru a vedea pe cine puteți suna acolo.",
-    "ministry": "Pagina ministerului sănătății: <link>{name}</link>."
+    "ministry": "Pagina ministerului sănătății: <link>{name}</link>.",
+    "reported": "Paginile oficiale ale guvernului enumeră numerele 113, 114 și 115, dar nu spun la ce servește fiecare; rolurile afișate urmează Circulara 22/2014/TT-BTTTT, așa cum o citează paginile secundare."
   },
   "density": {
     "sg": "greutate specifică {value}",
@@ -91,6 +92,7 @@
     "caption": "Valoarea-limită de expunere profesională pentru pulberea respirabilă de silice cristalină în {region}, ca medie pe 8 ore (verificată la {date})",
     "captionControl": "Reperul pentru pulberea respirabilă de silice cristalină din aerul unei zone de lucru în {region} (verificat la {date})",
     "both": "Cuarț și cristobalit",
+    "freeSilica": "Silice liberă",
     "quartz": "Cuarț",
     "cristobalite": "Cristobalit",
     "actionLevel": "Nivel de acțiune",
@@ -171,7 +173,13 @@
       "thSmall": "Piese cu adâncimea de peste 25 mm, sub 1,1 L",
       "thLarge": "Piese cu adâncimea de peste 25 mm, de 1,1 L sau mai mult",
       "thInfant": "Recipiente pentru hrana bebelușilor de până la 12 luni",
-      "thCooking": "Vase de gătit, făcute să reziste la căldura gătitului"
+      "thCooking": "Vase de gătit, făcute să reziste la căldura gătitului",
+      "vnFlat": "Obiecte puțin adânci, pentru păstrarea sau gătirea alimentelor",
+      "vnSmall": "Obiecte adânci pentru păstrarea alimentelor, sub 1100 mL",
+      "vnMedium": "Obiecte adânci pentru păstrarea alimentelor, de la 1100 mL până la sub 3000 mL",
+      "vnStorage": "Obiecte adânci pentru păstrarea alimentelor, de 3000 mL sau mai mult",
+      "vnCooking": "Obiecte adânci pentru gătit",
+      "vnCups": "Cești și boluri mici"
     },
     "judged": {
       "average": "media a 6 obiecte",

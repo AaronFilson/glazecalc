@@ -88,7 +88,15 @@
     "chooseField": "Valitse lisättävä kenttä ja valitse sitten Lisää kenttä.",
     "fetchFailed": "Polttopäiväkirjojen tietojen hakemisessa tapahtui virhe.",
     "saved": "Polton kirjaus lisättiin palvelimelle.",
-    "saveFailed": "Virhe: pyyntö palvelimelle ei onnistunut."
+    "saveFailed": "Virhe: pyyntö palvelimelle ei onnistunut.",
+    "recipesHeading": "Siinä poltetut reseptit",
+    "noRecipes": "Reseptejä ei ole vielä liitetty.",
+    "recipesFailed": "Reseptejä ei voitu hakea, joten mitään ei voi nyt liittää.",
+    "pickRecipe": "Siinä poltettu resepti",
+    "linkRecipe": "Liitä resepti",
+    "unlink": "Irrota",
+    "unlinkRecipe": "Irrota {title}",
+    "linkFailed": "Liitosta ei voitu tallentaa."
   },
   "notes": {
     "title": "Muistiinpanot",

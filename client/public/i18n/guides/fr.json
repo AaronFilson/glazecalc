@@ -56,7 +56,8 @@
     "vet": "Appelez votre vétérinaire.",
     "checkedOn": "Vérifié sur :",
     "choosePrompt": "Choisissez votre pays pour voir qui appeler.",
-    "ministry": "La page du ministère de la Santé : <link>{name}</link>."
+    "ministry": "La page du ministère de la Santé : <link>{name}</link>.",
+    "reported": "Les pages officielles du gouvernement indiquent 113, 114 et 115, mais pas à quoi sert chaque numéro ; les rôles affichés suivent la circulaire 22/2014/TT-BTTTT, telle que la citent des pages secondaires."
   },
   "density": {
     "sg": "SG {value}",
@@ -91,6 +92,7 @@
     "caption": "Valeur limite d’exposition professionnelle à la silice cristalline alvéolaire, moyenne sur 8 heures : {region} (vérifiée le {date})",
     "captionControl": "Valeur de référence pour la silice cristalline alvéolaire dans l’air d’une zone de travail : {region} (vérifiée le {date})",
     "both": "Quartz et cristobalite",
+    "freeSilica": "Silice libre",
     "quartz": "Quartz",
     "cristobalite": "Cristobalite",
     "actionLevel": "Seuil d’action",
@@ -171,7 +173,13 @@
       "thSmall": "Objets de plus de 25 mm de profondeur, de moins de 1,1 L",
       "thLarge": "Objets de plus de 25 mm de profondeur, de 1,1 L ou plus",
       "thInfant": "Récipients pour l’alimentation des bébés jusqu’à 12 mois",
-      "thCooking": "Ustensiles de cuisson, conçus pour résister à la chaleur de la cuisson"
+      "thCooking": "Ustensiles de cuisson, conçus pour résister à la chaleur de la cuisson",
+      "vnFlat": "Objets peu profonds, pour contenir ou cuire des aliments",
+      "vnSmall": "Objets creux pour contenir des aliments, moins de 1100 mL",
+      "vnMedium": "Objets creux pour contenir des aliments, de 1100 mL à moins de 3000 mL",
+      "vnStorage": "Objets creux pour contenir des aliments, 3000 mL ou plus",
+      "vnCooking": "Objets creux pour la cuisson",
+      "vnCups": "Tasses et petits bols"
     },
     "judged": {
       "average": "moyenne de 6 pièces",

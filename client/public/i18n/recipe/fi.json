@@ -361,7 +361,8 @@
     "heading": "Vaarat",
     "intro": "Sellaisina kuin kunkin raaka-aineen tietue ne antaa; vakiokirjaston vaarat ovat peräisin toimittajien käyttöturvallisuustiedotteista.",
     "line": "<b>{names}:</b> {hazards}",
-    "unknown": "{count, plural, one {Kohteelle {list} ei ole annettu vaaroja: katso sen mukana tuleva käyttöturvallisuustiedote.} other {Kohteille {list} ei ole annettu vaaroja: katso niiden mukana tulevat käyttöturvallisuustiedotteet.}}"
+    "unknown": "{count, plural, one {Kohteelle {list} ei ole annettu vaaroja: katso sen mukana tuleva käyttöturvallisuustiedote.} other {Kohteille {list} ei ole annettu vaaroja: katso niiden mukana tulevat käyttöturvallisuustiedotteet.}}",
+    "safety": "Kuivista lasiteraaka-aineista syntyy pölyä: älä päästä sitä keuhkoihisi, ei edes sellaisten raaka-aineiden pölyä, joita ei ole luokiteltu vaarallisiksi: katso <mixing>Turvallinen sekoittaminen ja ilmanvaihto</mixing> ja <home>Älä myrkytä perhettäsi</home>, jos lähellä on lapsia tai lemmikkejä. Jos raaka-aineen käyttöturvallisuustiedote sanoo enemmän, noudata sitä."
   },
   "compare": {
     "heading": "Vertaa kahta reseptiä",
@@ -590,7 +591,10 @@
     "guidance": "Nämä ovat ohjearvoja, eivät hyväksytty/hylätty-arvio: lasite niiden ulkopuolella voi olla hyvä, ja sellainen niiden sisällä voi silti säröillä, siitä voi liueta metalleja tai se voi pettää. Testaa se.",
     "source": "Lähde:",
     "saveFailed": "Raja-arvosarjan valintaa ei voitu tallentaa tilille, joten aiempi sarja on yhä käytössä.",
-    "ownLimits": "Nämä ehdotukset käyttävät Glazecalcin omia raja-arvoja, eivät sarjaa {name}."
+    "ownLimits": "Nämä ehdotukset käyttävät Glazecalcin omia raja-arvoja, eivät sarjaa {name}.",
+    "firingFromBlock": "Reseptin polton mukaan ({bands})",
+    "bothBands": "Reseptin poltto kattaa alueen {bands}, joten jokainen tarkistetaan rinnakkain: lasite harvoin käyttäytyy samoin molemmissa ääripäissä.",
+    "fromFiring": "Luvut koskevat reseptin polttoa: {band}. Valitse yllä poltto, jos haluat tarkistaa toisen."
   },
   "stull": {
     "heading": "Stullin kartta",
@@ -714,7 +718,8 @@
     "notSaved": "Mitään ei tallennettu: {problem}",
     "stopped": "Tallennettu {saved} / {count}. Loppuja ei tallennettu: {problem}",
     "saved": "{count, plural, one {Tallennettu # resepti.} other {Tallennettu # reseptiä.}}",
-    "openRecipes": "Avaa reseptit"
+    "openRecipes": "Avaa reseptit",
+    "firingRead": "Poltto luettu muistiinpanoista: {firing}"
   },
   "blends": {
     "title": "Seokset koepaloille",
@@ -847,5 +852,115 @@
     "retry": "Yritä uudelleen",
     "about": "Glazecalc on ilmainen lasitelaskin keraamikoille.",
     "aboutLink": "Tietoja Glazecalcista"
+  },
+  "firing": {
+    "heading": "Poltto",
+    "whatIsCone": "Mitä keila tarkoittaa?",
+    "scale": "Asteikko",
+    "scales": {
+      "orton": "Orton-keilat",
+      "sk": "SK-keilat (JIS)",
+      "temperature": "Lämpötila"
+    },
+    "groups": {
+      "usual": "Keilat 022–13",
+      "half": "Puolikeilat",
+      "above": "Keilat 14–42 (harvinaisia keramiikassa)"
+    },
+    "coneLabel": "Keila",
+    "lowCone": "Keilasta",
+    "highCone": "Keilaan",
+    "noHigh": "Ei ylempää keilaa",
+    "notStated": "Ei ilmoitettu",
+    "peak": "Huippulämpötila ({unit})",
+    "lowTemperature": "Alkaen ({unit})",
+    "highTemperature": "Asti ({unit})",
+    "rangeToggle": "Vaihteluväli",
+    "testedLegend": "Testattu: merkitse jokainen keila, johon se on poltettu",
+    "atmosphere": "Atmosfääri",
+    "process": "Prosessi",
+    "atmospheres": {
+      "oxidation": "hapettava",
+      "reduction": "pelkistävä",
+      "neutral": "neutraali"
+    },
+    "processes": {
+      "wood": "puupoltto",
+      "soda": "soodapoltto",
+      "salt": "suolapoltto",
+      "raku": "raku",
+      "pit": "kuoppapoltto"
+    },
+    "rate": "Nousunopeus viimeisen tunnin aikana ({unit} tunnissa)",
+    "hold": "Haudutus huippulämpötilassa (minuuttia)",
+    "schedule": "Polttokäyrän muistiinpanot",
+    "schedulePlaceholder": "Haudutus 10 minuuttia, hidas jäähdytys…",
+    "witness": "Varmistettu tarkkailukeilalla",
+    "foodSurface": "Elintarvikepinnalle (sisälasite)",
+    "liner": {
+      "note": "Elintarvikekäytön turvallisuus riippuu siitä, että tämä lasite poltetaan siihen keilaan, jolla se on testattu: alipoltetusta lasitteesta voi liueta metalleja.",
+      "range": "Se on annettu vaihteluvälinä, joten testaa se vaihteluvälin alapäässä, jossa se sulaa vähiten.",
+      "untested": "Yhtäkään keilaa ei ole vielä merkitty testatuksi.",
+      "test": "Vain omille poltetuille astioille tehty metallien liukenemisen laboratoriotesti osoittaa, onko se turvallinen elintarvikekäyttöön."
+    },
+    "helpSummary": "Tietoa polttamisesta",
+    "help": {
+      "cone": "Keila, johon tämä lasite on poltettu. Keilat mittaavat lämpötyötä (aikaa ja lämpötilaa), eivät pelkkää lämpötilaa, joten keila 06 on paljon viileämpi kuin keila 6.",
+      "range": "Jos se toimii vaihteluvälillä, anna alin ja ylin keila ja merkitse keilat, joihin se on todella poltettu: testattu keila näytetään ensin. Lasite voi näyttää ja käyttäytyä eri tavalla kummassakin ääripäässä.",
+      "convert": "Keila tallennetaan sellaisena kuin se annetaan. Muunnos toiseen asteikkoon tai lämpötilaksi on aina likimääräinen: keila taipuu eri lämpötilassa eri lämmitysnopeudella, eivätkä samannumeroiset SK- ja Orton-keilat ole sama asia.",
+      "move": "Lasitteen siirtäminen toiselle keilalle tarkoittaa yleensä sen uudelleenkoostamista, ei vain kuumempaa tai viileämpää polttoa. Kopioi toiselle keilalle -toiminto säilyttää molemmat versiot."
+    },
+    "temperatureProblem": "Anna lämpötila väliltä {min}–{max}.",
+    "rateProblem": "Anna nousunopeus kokonaislukuna asteina tunnissa.",
+    "holdProblem": "Anna haudutus kokonaisina minuutteina, enintään vuorokausi.",
+    "one": {
+      "orton": "keila {cone}",
+      "sk": "SK {cone}"
+    },
+    "span": {
+      "orton": "keilat {low}–{high}",
+      "sk": "SK {low}–{high}",
+      "temperature": "{low}–{high}"
+    },
+    "testedAt": "Testattu: {cones}",
+    "claimedRange": "ilmoitettu vaihteluväli {range}",
+    "rangeUntested": "Vaihteluväli {range}; yhtäkään keilaa ei ole merkitty testatuksi",
+    "approxTemperature": "≈ {temperature} ({basis}; likimääräinen)",
+    "approxCone": "≈ {cone} ({basis}; likimääräinen)",
+    "basis": {
+      "orton60": "Ortonin suuret keilat nopeudella 60 °C tunnissa",
+      "kyoto": "mitattu nopeudella 100 °C tunnissa Kioton kaupungin tutkimuslaitoksessa",
+      "stated": "annetun mukaan"
+    },
+    "rateText": "{rate} tunnissa viimeisen tunnin aikana",
+    "holdText": "haudutus {minutes} min",
+    "witnessText": "tarkistettu tarkkailukeilalla",
+    "asGiven": "Poltto tekijän ilmoittamana:",
+    "filterCone": "Näytä reseptit keilan mukaan",
+    "anyCone": "Mikä tahansa keila",
+    "filterAtmosphere": "Näytä reseptit atmosfäärin tai prosessin mukaan",
+    "anyAtmosphere": "Mikä tahansa atmosfääri tai prosessi",
+    "duplicate": "Kopioi toiselle keilalle",
+    "duplicateName": "Kopioi {title} toiselle keilalle",
+    "duplicateTitle": "{title} (toinen keila)",
+    "duplicateNote": "Kopio reseptistä {title}, ei vielä tallennettu: valitse sen uusi keila kohdassa Poltto. Lasitteen siirtäminen toiselle keilalle tarkoittaa yleensä uudelleenkoostamista, ei vain kuumempaa tai viileämpää polttoa, joten tarkista rajat ja testaa se."
+  },
+  "firings": {
+    "heading": "Polttopäiväkirjat",
+    "open": "Liitä polttopäiväkirjoja",
+    "fetchFailed": "Polttopäiväkirjoja ei voitu hakea.",
+    "noLogs": "Polttopäiväkirjoja ei ole vielä.",
+    "toLogs": "Kirjaa poltto",
+    "saveFailed": "Polttopäiväkirjojen liitosten muutosta ei voitu tallentaa.",
+    "resultFor": "Tulos: {title}",
+    "resultPlaceholder": "Miten onnistui: kiiltävä, ei säröilyä…",
+    "unlink": "Irrota",
+    "unlinkName": "Irrota {title}",
+    "choose": "Liitettävä polttopäiväkirja",
+    "link": "Liitä",
+    "fill": "Merkitse keilat, jotka päiväkirjoissa mainitaan: {cones}",
+    "replaceAsk": "Testatuksi on merkitty {now}. Korvataanko se päiväkirjojen mainitsemilla keiloilla: {logs}?",
+    "replace": "Korvaa",
+    "keep": "Pidä ennallaan"
   }
 }

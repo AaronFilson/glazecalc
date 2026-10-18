@@ -361,7 +361,8 @@
     "heading": "Guaiseacha",
     "intro": "Mar a thugann taifead gach ábhair iad; tagann iad siúd sa leabharlann chaighdeánach ó bhileoga sonraí sábháilteachta na soláthraithe.",
     "line": "<b>{names}:</b> {hazards}",
-    "unknown": "{count, plural, one {Níor tugadh aon ghuaiseacha don ábhar seo: {list}. Féach ar an mbileog sonraí sábháilteachta a thagann leis.} two {Níor tugadh aon ghuaiseacha do na hábhair seo: {list}. Féach ar na bileoga sonraí sábháilteachta a thagann leo.} few {Níor tugadh aon ghuaiseacha do na hábhair seo: {list}. Féach ar na bileoga sonraí sábháilteachta a thagann leo.} many {Níor tugadh aon ghuaiseacha do na hábhair seo: {list}. Féach ar na bileoga sonraí sábháilteachta a thagann leo.} other {Níor tugadh aon ghuaiseacha do na hábhair seo: {list}. Féach ar na bileoga sonraí sábháilteachta a thagann leo.}}"
+    "unknown": "{count, plural, one {Níor tugadh aon ghuaiseacha don ábhar seo: {list}. Féach ar an mbileog sonraí sábháilteachta a thagann leis.} two {Níor tugadh aon ghuaiseacha do na hábhair seo: {list}. Féach ar na bileoga sonraí sábháilteachta a thagann leo.} few {Níor tugadh aon ghuaiseacha do na hábhair seo: {list}. Féach ar na bileoga sonraí sábháilteachta a thagann leo.} many {Níor tugadh aon ghuaiseacha do na hábhair seo: {list}. Féach ar na bileoga sonraí sábháilteachta a thagann leo.} other {Níor tugadh aon ghuaiseacha do na hábhair seo: {list}. Féach ar na bileoga sonraí sábháilteachta a thagann leo.}}",
+    "safety": "Cruthaíonn ábhair ghlónra thirim deannach: coinnigh amach as do scamhóga é, fiú deannach ó ábhair nach bhfuil aicmithe mar ghuaiseach: féach an treoirleabhar <mixing>Meascadh sábháilte agus aeráil</mixing>, agus an treoirleabhar <home>Ná nimhigh do theaghlach</home> má tá páistí nó peataí thart. Nuair a deir bileog sonraí sábháilteachta ábhair níos mó, lean í."
   },
   "compare": {
     "heading": "Dhá oideas a chur i gcomparáid",
@@ -590,7 +591,10 @@
     "guidance": "Treoirlínte iad seo, ní pas ná teip: d’fhéadfadh glónra atá lasmuigh díobh a bheith go maith, agus d’fhéadfadh ceann atá laistigh díobh snáithlíonrú, láisteadh nó teip fós. Déan tástáil air.",
     "source": "Foinse:",
     "saveFailed": "Níorbh fhéidir do rogha sraithe teorainneacha a shábháil le do chuntas, mar sin is í an tsraith teorainneacha a bhí ann roimhe an ceann atá in úsáid fós.",
-    "ownLimits": "Úsáideann na moltaí seo teorainneacha Glazecalc féin, ní {name}."
+    "ownLimits": "Úsáideann na moltaí seo teorainneacha Glazecalc féin, ní {name}.",
+    "firingFromBlock": "Ó bhácáil an oidis ({bands})",
+    "bothBands": "Clúdaíonn bácáil an oidis {bands}, mar sin seiceáiltear gach ceann acu, taobh le taobh: is annamh a iompraíonn glónra ar an gcuma chéanna ag an dá cheann.",
+    "fromFiring": "Is do bhácáil an oidis na figiúirí: {band}. Roghnaigh bácáil thuas chun ceann eile a sheiceáil."
   },
   "stull": {
     "heading": "Cairt Stull",
@@ -714,7 +718,8 @@
     "notSaved": "Níor sábháladh aon rud: {problem}",
     "stopped": "Sábháladh {saved} as {count}. Níor sábháladh an chuid eile: {problem}",
     "saved": "{count, plural, one {Sábháladh # oideas.} two {Sábháladh # oideas.} few {Sábháladh # oideas.} many {Sábháladh # n-oideas.} other {Sábháladh # oideas.}}",
-    "openRecipes": "Oscail d’oidis"
+    "openRecipes": "Oscail d’oidis",
+    "firingRead": "Bácáil a léadh ó na nótaí: {firing}"
   },
   "blends": {
     "title": "Cumaisc do thíleanna tástála",
@@ -847,5 +852,115 @@
     "retry": "Bain triail eile as",
     "about": "Is áireamhán glónra saor in aisce do photadóirí é Glazecalc.",
     "aboutLink": "Maidir le Glazecalc"
+  },
+  "firing": {
+    "heading": "Bácáil",
+    "whatIsCone": "Cad is cón ann?",
+    "scale": "Scála",
+    "scales": {
+      "orton": "Cóin Orton",
+      "sk": "Cóin SK (JIS)",
+      "temperature": "Teocht"
+    },
+    "groups": {
+      "usual": "Cóin 022 go 13",
+      "half": "Leathchóin",
+      "above": "Cóin 14 go 42 (annamh sa cheirmeacht)"
+    },
+    "coneLabel": "Cón",
+    "lowCone": "Ó chón",
+    "highCone": "Go cón",
+    "noHigh": "Gan cón deiridh",
+    "notStated": "Níl sé luaite",
+    "peak": "Buaicteocht ({unit})",
+    "lowTemperature": "Ó ({unit})",
+    "highTemperature": "Go ({unit})",
+    "rangeToggle": "Raon",
+    "testedLegend": "Tástáilte ag: tic gach cón a bhácáil tú go dtí é",
+    "atmosphere": "Atmaisféar",
+    "process": "Próiseas",
+    "atmospheres": {
+      "oxidation": "ocsaídiú",
+      "reduction": "dí-ocsaídiú",
+      "neutral": "neodrach"
+    },
+    "processes": {
+      "wood": "bácáil adhmaid",
+      "soda": "bácáil sóide",
+      "salt": "bácáil salainn",
+      "raku": "raku",
+      "pit": "bácáil i bpoll"
+    },
+    "rate": "Ráta le linn na huaire an chloig deireanaí ({unit} san uair)",
+    "hold": "Coinneáil ag buaicteocht (nóiméid)",
+    "schedule": "Nótaí clár bácála",
+    "schedulePlaceholder": "Coinnigh 10 nóiméad, fuarú mall...",
+    "witness": "Deimhnithe ag cón fianaise",
+    "foodSurface": "Do dhromchla bia (glónra líneála)",
+    "liner": {
+      "note": "Braitheann sábháilteacht bia ar an nglónra seo a bhácáil go dtí an cón ar tástáladh é: d’fhéadfadh láisteadh tarlú i nglónra tearcbhácáilte.",
+      "range": "Tugtar é do raon, mar sin déan tástáil air ag bun an raoin, áit a leánn sé is lú.",
+      "untested": "Níl aon chón marcáilte mar thástáilte fós.",
+      "test": "Ní thaispeánann ach tástáil láistithe miotal ar do photaí bácáilte féin an bhfuil sé slán i gcomhair bia."
+    },
+    "helpSummary": "Maidir leis an mbácáil",
+    "help": {
+      "cone": "An cón ar bhácáil tú an glónra seo go dtí é. Tomhaiseann cóin obair teasa (am agus teocht), ní teocht amháin, mar sin tá cón 06 i bhfad níos fuaire ná cón 6.",
+      "range": "Má oibríonn sé thar raon, tabhair an cón is fuaire agus an cón is teo, agus tic na cóin a bhácáil tú go dtí iad i ndáiríre: taispeántar an cón tástáilte ar dtús. Is féidir le glónra breathnú agus iompar ar bhealach difriúil ag gach ceann den dá cheann.",
+      "convert": "Coinnítear an cón mar a thugann tú é. Is garbh-mheastachán aon tiontú go scála eile nó go teocht: lúbann cón ag teocht dhifriúil ag ráta téimh difriúil, agus ní hionann cóin SK agus cóin Orton leis an uimhir chéanna.",
+      "move": "Is gnách gur ionann glónra a bhogadh go cón eile agus é a athfhoirmliú, ní hamháin é a bhácáil níos teo nó níos fuaire. Coinníonn ‘Déan cóip do chón eile’ an dá leagan."
+    },
+    "temperatureProblem": "Tabhair teocht ó {min} go {max}.",
+    "rateProblem": "Tabhair an ráta mar líon slánuimhir céimeanna san uair.",
+    "holdProblem": "Tabhair an choinneáil i nóiméid slána, suas le lá.",
+    "one": {
+      "orton": "cón {cone}",
+      "sk": "SK {cone}"
+    },
+    "span": {
+      "orton": "cón {low}–{high}",
+      "sk": "SK {low}–{high}",
+      "temperature": "{low} go {high}"
+    },
+    "testedAt": "Tástáilte ag {cones}",
+    "claimedRange": "raon éilithe {range}",
+    "rangeUntested": "Raon {range}; níl aon chón marcáilte mar thástáilte",
+    "approxTemperature": "≈ {temperature} ({basis}; garbh-mheastachán)",
+    "approxCone": "≈ {cone} ({basis}; garbh-mheastachán)",
+    "basis": {
+      "orton60": "cóin mhóra Orton ag 60 °C san uair",
+      "kyoto": "tomhaiste ag 100 °C san uair ag institiúid chathrach Kyoto",
+      "stated": "mar a tugadh é"
+    },
+    "rateText": "{rate} san uair le linn na huaire an chloig deireanaí",
+    "holdText": "coinnithe {minutes} nóiméad",
+    "witnessText": "seiceáilte le cón fianaise",
+    "asGiven": "An bhácáil, mar a thug an t-údar í:",
+    "filterCone": "Taispeáin oidis do chón",
+    "anyCone": "Aon chón",
+    "filterAtmosphere": "Taispeáin oidis d’atmaisféar nó de phróiseas",
+    "anyAtmosphere": "Aon atmaisféar nó próiseas",
+    "duplicate": "Déan cóip do chón eile",
+    "duplicateName": "Déan cóip den oideas {title} do chón eile",
+    "duplicateTitle": "{title} (cón eile)",
+    "duplicateNote": "Cóip den oideas {title}, gan sábháil fós: roghnaigh a chón nua faoi Bácáil. Is gnách gur ionann glónra a bhogadh go cón eile agus é a athfhoirmliú, ní hamháin é a bhácáil níos teo nó níos fuaire, mar sin seiceáil na teorainneacha agus déan tástáil air."
+  },
+  "firings": {
+    "heading": "Taifid bhácála",
+    "open": "Ceangail taifid bhácála",
+    "fetchFailed": "Níorbh fhéidir do thaifid bhácála a fháil.",
+    "noLogs": "Níl aon taifead bácála ann fós.",
+    "toLogs": "Taifead bácáil",
+    "saveFailed": "Níorbh fhéidir an t-athrú ar naisc na dtaifead bácála a shábháil.",
+    "resultFor": "Toradh sa taifead {title}",
+    "resultPlaceholder": "Conas a tháinig sé amach: lonrach, gan snáithlíonrú...",
+    "unlink": "Dícheangail",
+    "unlinkName": "Dícheangail an taifead {title}",
+    "choose": "Taifead bácála le ceangal",
+    "link": "Ceangail",
+    "fill": "Tic na cóin a ainmníonn na taifid seo: {cones}",
+    "replaceAsk": "Tá ‘Tástáilte’ ticeáilte ag {now}. An gcuirfear na cóin a ainmníonn na taifid, {logs}, ina ionad?",
+    "replace": "Cuir ina ionad",
+    "keep": "Coinnigh mar atá sé"
   }
 }

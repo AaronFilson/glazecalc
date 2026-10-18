@@ -149,76 +149,76 @@ Label: Διαλυτά υλικά
 
 Αν ένα κατοικίδιο ίσως έφαγε ή ήπιε κάτι από το εργαστήριο, ή δείχνει σημάδια σαν αυτά που αναφέρθηκαν, καλέστε τον κτηνίατρό σας ή μια γραμμή δηλητηριάσεων ζώων (δείτε τον πίνακα στην αρχή), έχοντας πρόχειρα το όνομα του υλικού και το βάρος του ζώου.
 
-## The kiln {#the-kiln lang=en}
+## Το καμίνι {#the-kiln}
 
-### The outside gets hot enough to burn
+### Το εξωτερικό ζεσταίνεται τόσο που καίει
 
-A UK schools risk assessment says a kiln's outside "can reach 160 °C and possibly more" (about 320 °F), and a school kiln guide reports metal bands at up to 460 °F (about 240 °C). Skutt, a kiln maker, recommends a kiln room that can be locked against children and pets. Where a room cannot be locked, the school guide suggests a barrier such as a kiln safety screen.
+Μια βρετανική εκτίμηση κινδύνων για σχολεία λέει ότι η εξωτερική επιφάνεια ενός καμινιού «μπορεί να φτάσει τους 160 °C και ίσως περισσότερο» (περίπου 320 °F), και ένας οδηγός καμινιών για σχολεία αναφέρει έως 460 °F (περίπου 240 °C) στις μεταλλικές λωρίδες. Η Skutt, εταιρεία που κατασκευάζει καμίνια, συνιστά έναν χώρο για το καμίνι που να κλειδώνει, ώστε να μην μπαίνουν παιδιά και κατοικίδια. Όπου ο χώρος δεν μπορεί να κλειδώσει, ο οδηγός για σχολεία προτείνει ένα φράγμα, όπως ένα προστατευτικό πλέγμα για το καμίνι.
 
-Small children and pets cannot understand a warning sign. We suggest keeping them behind a locked door or a barrier while the kiln fires and while it cools, and posting a warning sign for everyone else.
+Τα μικρά παιδιά και τα κατοικίδια δεν μπορούν να καταλάβουν μια προειδοποιητική πινακίδα. Προτείνουμε να τα κρατάτε πίσω από κλειδωμένη πόρτα ή φράγμα όσο ψήνει το καμίνι και όσο κρυώνει, και να βάλετε προειδοποιητική πινακίδα για όλους τους άλλους.
 
-### Space around it
+### Ο χώρος γύρω από το καμίνι
 
-Sources disagree on clearance. Rio Grande says at least 12 inches (30 cm) from walls and anything combustible. L&L strongly recommends 18 inches (46 cm) to all walls, and the building code it cites asks for 3 feet (0.9 m) from combustible walls. Follow your kiln's manual and local fire code; if you are unsure, allow 18 inches from any wall and 3 feet from anything that can burn. In a garage, keep cars, fuel and paint well away.
+Οι πηγές διαφωνούν για την απόσταση ασφαλείας. Η Rio Grande λέει τουλάχιστον 12 ίντσες (30 cm) από τους τοίχους και από οτιδήποτε καύσιμο. Η L&L συνιστά έντονα 18 ίντσες (46 cm) από όλους τους τοίχους, και ο οικοδομικός κανονισμός στον οποίο παραπέμπει ζητά 3 πόδια (0,9 m) από τοίχους από καύσιμο υλικό. Ακολουθήστε το εγχειρίδιο του καμινιού σας και τους τοπικούς κανονισμούς πυρασφάλειας. Αν έχετε αμφιβολίες, αφήστε 18 ίντσες από κάθε τοίχο και 3 πόδια από οτιδήποτε μπορεί να καεί. Σε γκαράζ, κρατάτε τα αυτοκίνητα, τα καύσιμα και τις μπογιές πολύ μακριά.
 
-### Power
+### Ρεύμα
 
-Rio Grande recommends a **dedicated circuit** (one that powers nothing else) with a properly grounded outlet. We suggest no extension cord. Between firings, switch off the kiln's breaker or disconnect switch, or unplug it, so a child cannot start it.
+Η Rio Grande συνιστά **ξεχωριστή ηλεκτρική γραμμή** (που δεν τροφοδοτεί τίποτε άλλο) με σωστά γειωμένη πρίζα. Προτείνουμε να μη χρησιμοποιείτε καλώδιο προέκτασης. Ανάμεσα στα ψησίματα, κατεβάζετε την ασφάλεια του καμινιού ή τον διακόπτη απομόνωσής του, ή το βγάζετε από την πρίζα, ώστε να μην μπορεί ένα παιδί να το θέσει σε λειτουργία.
 
-### Be there when the firing ends
+### Να είστε εκεί όταν τελειώνει το ψήσιμο
 
-A **kiln sitter** is the mechanical switch on many manual kilns: a small cone bends at the end of the firing and trips the switch off. Its manual says it "is NOT intended to perform as a fail-safe shut-off device." Rio Grande says never to leave a firing kiln unattended, "especially near the expected shut-off time". So stay nearby and check the kiln while it fires, above all near the end; fire only when an adult will be home and awake to do that, check that it has switched off, and keep an ABC fire extinguisher in the kiln room. For how sitters, controllers and schedules work, see [Firing a basic kiln](/guides/firing).
+Το **Kiln-Sitter** είναι ο μηχανικός διακόπτης σε πολλά καμίνια χωρίς ελεγκτή: ένας μικρός κώνος{{en: cone}} λυγίζει στο τέλος του ψησίματος και κατεβάζει τον διακόπτη. Το εγχειρίδιό του λέει ότι «ΔΕΝ προορίζεται να λειτουργεί ως διάταξη διακοπής ασφαλής σε περίπτωση βλάβης». Η Rio Grande λέει να μην αφήνετε ποτέ χωρίς επίβλεψη ένα καμίνι που ψήνει, «ιδίως κοντά στην αναμενόμενη ώρα διακοπής». Άρα, μένετε κοντά και ελέγχετε το καμίνι όσο ψήνει, πάνω απ’ όλα προς το τέλος· ψήνετε μόνο όταν ένας ενήλικας θα είναι στο σπίτι και ξύπνιος για να μένει κοντά και να ελέγχει το καμίνι, ελέγχετε ότι το καμίνι έχει σβήσει, και έχετε πυροσβεστήρα τύπου ABC στον χώρο του καμινιού. Για το πώς λειτουργούν τα Kiln-Sitter, οι ελεγκτές και τα προγράμματα ψησίματος, δείτε [Ψήσιμο σε ένα απλό καμίνι](/guides/firing).
 
-### Fumes and carbon monoxide
+### Αναθυμιάσεις και μονοξείδιο του άνθρακα
 
-Firing gives off fumes, so vent the kiln to the outdoors; [Safe mixing and ventilation](/guides/safe-mixing) explains how. A kiln in an attached garage needs venting that keeps fumes from reaching the house through the connecting door. Keep birds in a far room whenever the kiln fires.
+Το ψήσιμο βγάζει αναθυμιάσεις, οπότε αερίστε το καμίνι προς τα έξω. Ο οδηγός [Ασφαλής ανάμειξη και εξαερισμός](/guides/safe-mixing) εξηγεί πώς. Ένα καμίνι σε γκαράζ κολλητό στο σπίτι χρειάζεται εξαερισμό που να εμποδίζει τις αναθυμιάσεις να φτάσουν στο σπίτι από την ενδιάμεση πόρτα. Κρατάτε τα πουλιά σε μακρινό δωμάτιο κάθε φορά που ψήνει το καμίνι.
 
-**Carbon monoxide** (CO) is a poisonous gas you cannot see or smell. A university kiln safety sheet requires CO alarms with gas kilns. Views differ for electric kilns, but burning off organic matter (in clay, or things like paper or wax) can make CO. We think a CO alarm in the kiln room and the rooms next to it is a sensible, inexpensive step for any kiln.
+Το **μονοξείδιο του άνθρακα** (CO) είναι δηλητηριώδες αέριο που δεν μπορείτε να δείτε ούτε να μυρίσετε. Ένα φυλλάδιο ασφάλειας καμινιών ενός πανεπιστημίου απαιτεί ανιχνευτές μονοξειδίου του άνθρακα στα καμίνια αερίου. Για τα ηλεκτρικά καμίνια οι απόψεις διαφέρουν, όμως το κάψιμο των οργανικών υλών (στον πηλό, ή σε πράγματα όπως χαρτί ή κερί) μπορεί να παράγει CO. Πιστεύουμε ότι ένας ανιχνευτής CO στον χώρο του καμινιού και στα διπλανά δωμάτια είναι λογικό και φτηνό μέτρο για κάθε καμίνι.
 
-### Peepholes and eyes
+### Οπές παρατήρησης και μάτια
 
-Infrared light, which you cannot see, "starts at 752°F (400°C)", and the Ceramic Arts Network says looking into a kiln above this should always be done with eye protection. Infrared can damage the lens of the eye and lead to cataracts, and long gazing can injure the retina. Sunglasses and didymium glasses do not block it.
+Η υπέρυθρη ακτινοβολία, που δεν μπορείτε να τη δείτε, «ξεκινά στους 752°F (400°C)», και το Ceramic Arts Network λέει ότι όταν κοιτάτε μέσα σε καμίνι πάνω από αυτή τη θερμοκρασία θα πρέπει πάντα να φοράτε προστασία για τα μάτια. Η υπέρυθρη ακτινοβολία μπορεί να βλάψει τον φακό του ματιού και να οδηγήσει σε καταρράκτη, και το παρατεταμένο κοίταγμα μπορεί να τραυματίσει τον αμφιβληστροειδή. Τα γυαλιά ηλίου και τα γυαλιά διδυμίου δεν την εμποδίζουν.
 
 > [!WARNING]
-> Children should not look into a kiln at all. A glowing peephole draws them, and they will not reliably keep protective glasses on, so keep them away while the kiln is hot. Adults should look only briefly, through IR-rated welding glasses. Sources recommend shades from 1.7 to 5; shade 3 is a sensible choice, darker if you see spots afterward.
+> Τα παιδιά δεν θα πρέπει να κοιτάζουν καθόλου μέσα σε καμίνι. Μια οπή παρατήρησης που λάμπει τα τραβάει, και δεν είναι σίγουρο ότι θα κρατήσουν φορεμένα τα προστατευτικά γυαλιά, οπότε κρατάτε τα μακριά όσο το καμίνι είναι ζεστό. Οι ενήλικες θα πρέπει να κοιτάζουν μόνο για λίγο, μέσα από γυαλιά συγκόλλησης με φίλτρο υπερύθρων. Οι πηγές συνιστούν βαθμούς σκίασης από 1,7 έως 5. Ο βαθμός σκίασης 3 είναι λογική επιλογή, ή πιο σκούρος αν βλέπετε κηλίδες μετά.
 
-## Handmade ware on the family table {#handmade-ware lang=en}
+## Χειροποίητα κεραμικά στο οικογενειακό τραπέζι {#handmade-ware}
 
-The question for pots on the family table is **leaching**: metals dissolving out of the fired glaze into food or drink. The FDA warns that if pottery "is not manufactured properly, this lead can leach into food and drink", and that "no amount of washing, boiling, or other process can remove lead from pottery." Regulators such as the US FDA and the EU limit how much lead and cadmium a finished piece releases in a standard acid test, not what the glaze contains. The strictest US limit, for cups, mugs and pitchers, is 0.5 µg/mL of lead.
+Για τα κεραμικά στο οικογενειακό τραπέζι, το ζήτημα είναι η **απελευθέρωση μετάλλων**{{en: leaching}}: μέταλλα που διαλύονται από το ψημένο υάλωμα{{en: glaze}} και περνούν στο φαγητό ή στο ποτό. Ο FDA προειδοποιεί ότι αν τα κεραμικά «δεν έχουν κατασκευαστεί σωστά, αυτός ο μόλυβδος μπορεί να περάσει στο φαγητό και στο ποτό», και ότι «κανένα πλύσιμο, βράσιμο ή άλλη διαδικασία δεν μπορεί να αφαιρέσει τον μόλυβδο από τα κεραμικά». Ρυθμιστικές αρχές όπως ο FDA στις ΗΠΑ και η ΕΕ θέτουν όριο στο πόσο μόλυβδο και κάδμιο απελευθερώνει ένα έτοιμο κομμάτι σε μια τυποποιημένη δοκιμή με οξύ, όχι στο τι περιέχει το υάλωμα. Το αυστηρότερο όριο στις ΗΠΑ, για φλιτζάνια, κούπες και κανάτες, είναι 0,5 µg/mL μολύβδου.
 
-### Lead-free is not the same as food-safe
+### Αμόλυβδο δεν σημαίνει κατάλληλο για επαφή με τρόφιμα
 
-A glaze with no lead can still leach. Digitalfire, a glaze chemistry reference, names glazes containing "heavy metal oxide colorants, barium, lithium, or lead" as the concern, and warns that a stain fired above its rated temperature can release cadmium. The ASTM D-4236 art-materials label on a jar "DOES NOT establish that a fired glaze is food-safe", and "Tableware producers must test all finished ware to establish dinnerware status."
+Ένα υάλωμα χωρίς μόλυβδο μπορεί και αυτό να απελευθερώνει μέταλλα. Το Digitalfire, έργο αναφοράς για τη χημεία των υαλωμάτων, αναφέρει ως ανησυχητικά τα υαλώματα που περιέχουν «χρωστικές{{en: colorants}} από οξείδια βαρέων μετάλλων, βάριο, λίθιο ή μόλυβδο», και προειδοποιεί ότι ένα στέιν{{en: stain}} που ψήνεται πάνω από τη θερμοκρασία για την οποία προορίζεται μπορεί να απελευθερώσει κάδμιο. Η ετικέτα υλικών τέχνης ASTM D-4236 σε ένα βάζο «ΔΕΝ αποδεικνύει ότι ένα ψημένο υάλωμα είναι κατάλληλο για επαφή με τρόφιμα{{en: food-safe}}», και «Οι παραγωγοί επιτραπέζιων σκευών πρέπει να ελέγχουν όλα τα έτοιμα κομμάτια για να αποδείξουν ότι είναι κατάλληλα ως σκεύη φαγητού».
 
 > [!NOTE]
-> "Food safe" means this glaze, on this clay, fired to this cone, applied this way, releases less than the legal limits. A recipe calculation, Glazecalc's included, can flag a risky recipe but cannot prove a pot is safe. Only a leach test of the fired piece can.
+> «Κατάλληλο για επαφή με τρόφιμα» σημαίνει ότι αυτό το υάλωμα, σε αυτόν τον πηλό{{en: clay}}, ψημένο σε αυτόν τον κώνο{{en: cone}}, περασμένο με αυτόν τον τρόπο, απελευθερώνει λιγότερο από τις νόμιμες οριακές τιμές. Ένας υπολογισμός συνταγής, και αυτός του Glazecalc, μπορεί να επισημάνει μια επικίνδυνη συνταγή, αλλά δεν μπορεί να αποδείξει ότι ένα κεραμικό είναι ασφαλές. Αυτό μπορεί να το κάνει μόνο μια δοκιμή απελευθέρωσης μετάλλων στο ψημένο κομμάτι.
 
-We suggest reading a "food safe" label on a commercial glaze as a good start, not a guarantee: a different clay, a thicker coat, another cone or a second glaze on top changes the result.
+Προτείνουμε να βλέπετε την ένδειξη «κατάλληλο για επαφή με τρόφιμα» σε ένα υάλωμα του εμπορίου ως καλή αρχή, όχι ως εγγύηση: άλλος πηλός, πιο χοντρή στρώση, άλλος κώνος ή ένα δεύτερο υάλωμα από πάνω αλλάζουν το αποτέλεσμα.
 
-### Testing
+### Δοκιμές
 
-Laboratories test fired pieces with a standard acid soak that represents a worst case, such as ASTM C738 in the US. One lab's EU test needs four identical pieces and takes seven working days, so make spares of anything you plan to have tested.
+Τα εργαστήρια αναλύσεων ελέγχουν τα ψημένα κομμάτια με μια τυποποιημένη παραμονή σε οξύ, που αντιστοιχεί στη χειρότερη περίπτωση, όπως το ASTM C738 στις ΗΠΑ. Η δοκιμή ενός εργαστηρίου για την ΕΕ χρειάζεται τέσσερα ίδια κομμάτια και διαρκεί επτά εργάσιμες ημέρες, οπότε φτιάξτε και επιπλέον κομμάτια από ό,τι σκοπεύετε να δώσετε για έλεγχο.
 
-Home tests are disputed. The FDA says home swab kits can show leachable lead, and that a piece that tests positive should not be used for food. Ceramics NZ warns that consumer lead-test pens are "not designed for this use" on ceramics and can give false positives. Digitalfire suggests leaving a lemon slice on the glaze overnight as a rough screen. The safe reading: a positive home test means stop using the piece for food, and a negative one proves nothing. Only a lab can tell you a piece is safe.
+Οι δοκιμές στο σπίτι αμφισβητούνται. Ο FDA λέει ότι τα κιτ με μπατονέτα για χρήση στο σπίτι μπορούν να δείξουν μόλυβδο που μπορεί να απελευθερωθεί, και ότι ένα κομμάτι που βγαίνει θετικό δεν θα πρέπει να χρησιμοποιείται για φαγητό. Το Ceramics NZ προειδοποιεί ότι τα στυλό ελέγχου μολύβδου για καταναλωτές «δεν είναι σχεδιασμένα για αυτή τη χρήση» στα κεραμικά και μπορεί να δώσουν ψευδώς θετικά αποτελέσματα. Το Digitalfire προτείνει, ως πρόχειρο έλεγχο, να αφήσετε μια φέτα λεμόνι πάνω στο υάλωμα όλη τη νύχτα. Η ασφαλής ερμηνεία: ένα θετικό αποτέλεσμα στο σπίτι σημαίνει ότι σταματάτε να χρησιμοποιείτε το κομμάτι για φαγητό, ενώ ένα αρνητικό δεν αποδεικνύει τίποτα. Μόνο ένα εργαστήριο αναλύσεων μπορεί να σας πει ότι ένα κομμάτι είναι ασφαλές.
 
-### Crazed ware
+### Κρακελαρισμένα κεραμικά
 
-**Crazing** is a network of fine cracks in the glaze surface, and sources disagree about it. A Ceramics Monthly experiment found crazed tiles could be cleaned, best in a dishwasher, though they came out less clean than uncrazed tiles after soap and water. Digitalfire holds that "Crazed ware is unacceptable" and that crazing "severely weakens ware". The safe course is simple: do not use crazed pieces for food.
+Το **κρακελάρισμα**{{en: crazing}} είναι ένα δίκτυο από λεπτές ρωγμές στην επιφάνεια του υαλώματος, και οι πηγές διαφωνούν για αυτό. Ένα πείραμα του Ceramics Monthly βρήκε ότι τα κρακελαρισμένα πλακίδια μπορούσαν να καθαριστούν, καλύτερα στο πλυντήριο πιάτων, αν και μετά από σαπούνι και νερό έβγαιναν λιγότερο καθαρά από τα πλακίδια χωρίς κρακελάρισμα. Το Digitalfire υποστηρίζει ότι «Τα κρακελαρισμένα κεραμικά είναι απαράδεκτα» και ότι το κρακελάρισμα «αποδυναμώνει σοβαρά τα κεραμικά». Η ασφαλής επιλογή είναι απλή: μη χρησιμοποιείτε κρακελαρισμένα κομμάτια για φαγητό.
 
-### Liner glazes
+### Υαλώματα εσωτερικής επιφάνειας
 
-A **liner glaze** is the glaze on the inside of a cup or bowl, where the food sits. Digitalfire describes a liner that may be low enough in risk to use without lab testing: no colorants, barium, lead or lithium; fully melted; no crazing; and it wears well. Even then, only a leach test of your own fired pots shows whether they are food-safe. Warning signs in any glaze are heavy amounts of colorant, crystals on the surface and poor melting.
+Το **υάλωμα εσωτερικής επιφάνειας**{{en: liner glaze}} είναι το υάλωμα στο εσωτερικό ενός φλιτζανιού ή ενός μπολ, εκεί που μπαίνει το φαγητό. Το Digitalfire περιγράφει ένα υάλωμα εσωτερικής επιφάνειας που μπορεί να έχει αρκετά χαμηλό κίνδυνο ώστε να χρησιμοποιηθεί χωρίς έλεγχο σε εργαστήριο αναλύσεων: χωρίς χρωστικές, βάριο, μόλυβδο ή λίθιο, πλήρως λιωμένο, χωρίς κρακελάρισμα και ανθεκτικό στη φθορά. Ακόμη και τότε, μόνο μια δοκιμή απελευθέρωσης μετάλλων στα δικά σας ψημένα σκεύη δείχνει αν είναι κατάλληλα για επαφή με τρόφιμα. Προειδοποιητικά σημάδια σε κάθε υάλωμα είναι οι μεγάλες ποσότητες χρωστικής, οι κρύσταλλοι στην επιφάνεια και το ελλιπές λιώσιμο.
 
-### Family rules we suggest
+### Κανόνες για την οικογένεια που προτείνουμε
 
-- Children's cups, bowls and plates: only lab-tested, durable liner glazes, or commercial dinnerware.
-- Do not store acidic food or drink (citrus, tomato, vinegar, fruit juice, wine) in pots glazed with anything you have not had tested.
-- Do not use crazed pieces for food.
-- Test tiles and experiments stay in the studio, never in the kitchen, the toy box or the pet's bowl.
-- Take care with other pottery too. The FDA advises caution with handmade or crude-looking pieces, antiques, damaged or worn pieces, flea-market finds and bright orange, red or yellow decoration.
-- If a child has used pottery you now doubt, the FDA says to talk to a doctor about a blood lead test.
+- Φλιτζάνια, μπολ και πιάτα των παιδιών: μόνο ανθεκτικά υαλώματα εσωτερικής επιφάνειας ελεγμένα σε εργαστήριο αναλύσεων, ή σερβίτσια του εμπορίου.
+- Μη φυλάτε όξινα τρόφιμα ή ποτά (εσπεριδοειδή, ντομάτα, ξίδι, χυμούς φρούτων, κρασί) σε κεραμικά με υάλωμα που δεν έχετε δώσει για έλεγχο.
+- Μη χρησιμοποιείτε κρακελαρισμένα κομμάτια για φαγητό.
+- Τα δοκιμαστικά πλακίδια{{en: test tiles}} και τα πειράματα μένουν στο εργαστήριο, ποτέ στην κουζίνα, στο κουτί με τα παιχνίδια ή στο μπολ του κατοικιδίου.
+- Προσέχετε και τα άλλα κεραμικά. Ο FDA συνιστά προσοχή με χειροποίητα κομμάτια ή κομμάτια που φαίνονται πρόχειρα φτιαγμένα, με αντίκες, με κομμάτια που έχουν ζημιά ή φθορά, με ευρήματα από παζάρια και με έντονα πορτοκαλί, κόκκινα ή κίτρινα διακοσμητικά.
+- Αν ένα παιδί έχει χρησιμοποιήσει κεραμικά για τα οποία τώρα έχετε αμφιβολίες, ο FDA λέει να μιλήσετε με γιατρό για μέτρηση μολύβδου στο αίμα.
 
-For more on how glazes melt, why some leach and what the limits mean, see [Glazing from first principles](/guides/glazing-basics).
+Για περισσότερα σχετικά με το πώς λιώνουν τα υαλώματα, γιατί κάποια απελευθερώνουν μέταλλα και τι σημαίνουν τα όρια, δείτε [Τα υαλώματα από τις βασικές αρχές](/guides/glazing-basics).
 
 ## Πηγές {#sources}
 

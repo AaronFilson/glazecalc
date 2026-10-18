@@ -165,69 +165,69 @@ Eroja on odotettavissa: Orton sanoo, että ”tyypillisesti uunin ylä- ja alaos
 
 :::orton
 
-## The kiln sitter {#kiln-sitter lang=en}
+## Kiln-Sitter-katkaisin {#kiln-sitter}
 
-A **kiln sitter** is the mechanical switch, on the outside of many basic and older kilns, that turns the kiln off when a small cone bends. The best known is the Dawson Kiln-Sitter. It makes firing easier, but it is a convenience, not a safety device.
+**Kiln-Sitter-katkaisin**{{en: kiln sitter}} on monien yksinkertaisten ja vanhempien uunien kylkeen asennettu mekaaninen keilakatkaisin, joka sammuttaa uunin, kun pieni keila{{en: cone}} taipuu. Tunnetuin on Dawsonin Kiln-Sitter. Se helpottaa polttamista, mutta se on mukavuusvaruste, ei turvalaite.
 
-### How it works
+### Toimintaperiaate
 
-A porcelain tube reaches into the kiln. At its end, a small cone or a bar lies across two metal supports, under a **sensing rod** that pivots like a seesaw. Outside the kiln, the other end of the rod holds up a weight by a small claw. When the cone softens and bends to about 90°, the rod drops far enough to release the weight, the weight falls, and the power to the elements is cut.
+Posliiniputki ulottuu uunin sisään. Sen päässä pieni keila tai keilatanko on poikittain kahden metallituen päällä keinulaudan tavoin kääntyvän **tuntovarren** alla. Uunin ulkopuolella varren toinen pää pitää painoa ylhäällä pienen salvan varassa. Kun keila pehmenee ja taipuu noin 90°:n kulmaan, varsi laskee niin paljon, että paino vapautuu ja putoaa, ja vastusten virta katkeaa.
 
-Small cones and bars "give equivalent heat treatment". Orton notes that many beginners choose bars, because their even shape makes it easy to place them the same way every time. A small cone tapers, so where it sits matters: with its thin part under the rod the kiln shuts off cooler, and with its thick part hotter, a shift of "as much as 1/2 cone".
+Pienet keilat ja keilatangot ”antavat vastaavan lämpökäsittelyn”. Orton huomauttaa, että monet aloittelijat valitsevat tangot, koska niiden tasaisen muodon vuoksi ne on helppo asettaa joka kerta samalla tavalla. Pieni keila on suippo, joten sen asennolla on merkitystä: kun sen ohut osa on varren alla, uuni sammuu viileämpänä, ja kun paksu osa on varren alla, kuumempana, mikä siirtää sammumista ”jopa 1/2 keilaa”.
 
-### Which cone goes in the sitter
+### Katkaisimen keilan valinta
 
-Sources disagree. Dawson, who made the sitter, says to use the same number as the firing cone on the shelf, and to go one number hotter only if the shelf cone stays unbent. L&L says to use one number hotter than the shelf cones, because the sitter sits near the wall and the elements, gets more heat, and tends to shut off early. Orton settles the principle: "The shelf cone is the final judge of the firing process, not the Kiln-Sitter cone or bar."
-
-> [!NOTE]
-> Our starting point: put a small cone of the same number as your target in the sitter, with a cone pack on the shelf. If the shelf firing cone is under-bent when the kiln shuts off, go one number hotter in the sitter next time, or set the thicker part of the cone under the rod. If it is over-bent, do the opposite.
-
-### Setting it up, and checks before every firing
-
-Dawson's procedure, which doubles as a check before every firing:
-
-1. Turn all the switches off. Check that the sensing rod moves freely, sits centered in the tube and is not bent or corroded. If it is sluggish, Dawson says to replace the tube assembly.
-2. Brush a thin coat of high-fire **kiln wash** (a coating that stops melted material sticking) onto the cone supports and the rod where it touches the cone. Never put wash on the cone or the porcelain tube.
-3. Load shelves and ware at least 1 in (25 mm) above or below the tube, so nothing can touch, fall against or block it.
-4. Lift the weight, press the claw down onto the trigger, and lay the cone or bar flat on the supports against the metal step, as your sitter's manual shows, the same way every time. Check it again before closing the lid: "AN IMPROPERLY PLACED CONE OR BAR COULD CAUSE AN OVERFIRING."
-5. Set the limit timer and push in the plunger until it locks. Keep the kiln level and the space under the weight clear, so the weight can fall.
-
-### The limit timer
-
-Many sitters, including Dawson's LT models, have a **limit timer**: a clock that turns the kiln off after a set time, as a backup "in case the KILN-SITTER fails". It should always be set longer than the firing is expected to take. Sources set the margin differently:
-
-Table: How long to set the limit timer
-Label: Limit timer settings
-
-| Source    | Setting                                                                                                                      |
-| --------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| Dawson    | ½ hour longer than the expected firing time until you know the kiln, later as little as ¼ hour; never set it beyond 20 hours |
-| L&L       | Very high the first time, noting how long the firing takes; after that, about 1 hour longer                                  |
-| Bracker's | 30 minutes to 1 hour longer than the firing time                                                                             |
+Lähteet ovat eri mieltä. Katkaisimen valmistaja Dawson neuvoo käyttämään samaa numeroa kuin uunilevyllä oleva tavoitekeila ja siirtymään numeroa kuumempaan vain, jos uunilevyn keila jää taipumatta. L&L neuvoo käyttämään numeroa kuumempaa keilaa kuin uunilevyn keilat, koska katkaisin on lähellä seinää ja vastuksia, saa enemmän lämpöä ja sammuttaa uunin helposti liian aikaisin. Orton ratkaisee periaatteen: ”Uunilevyn keila on polton lopullinen tuomari, ei Kiln-Sitter-katkaisimen keila tai tanko.”
 
 > [!NOTE]
-> Our starting point: generous the first time (within the dial's 20 hours), then ½ to 1 hour longer than the time you recorded. The timer also tells you how long a firing took: set at 7 and ending at 1 means 6 hours.
+> Oma lähtökohtamme: aseta katkaisimeen pieni keila, jonka numero on sama kuin tavoitteen, ja uunilevylle keilasarja{{en: cone pack}}. Jos uunilevyn tavoitekeila on uunin sammuessa taipunut liian vähän, käytä katkaisimessa seuraavalla kerralla numeroa kuumempaa keilaa tai aseta keilan paksumpi osa varren alle. Jos se on taipunut liikaa, tee päinvastoin.
 
-### When it shuts off early or late
+### Valmistelu ja tarkistukset ennen jokaista polttoa
 
-After each firing, read the sitter cone beside the shelf cones.
+Dawsonin menettely, joka toimii samalla tarkistuksena ennen jokaista polttoa:
 
-Table: Reading the sitter after a firing
-Label: Kiln sitter problems
+1. Käännä kaikki kytkimet pois päältä. Tarkista, että tuntovarsi liikkuu vapaasti, on keskellä putkea eikä ole taipunut tai syöpynyt. Jos varsi liikkuu jäykästi, Dawson neuvoo vaihtamaan koko putkiyksikön.
+2. Sivele keilan tukiin ja tuntovarteen siltä kohdalta, joka koskettaa keilaa, ohut kerros korkeapolttoon sopivaa **uunilevyn suoja-ainetta** (pinnoite, joka estää sulaneen aineen tarttumisen). Älä koskaan sivele suoja-ainetta keilaan tai posliiniputkeen.
+3. Lado uunilevyt ja esineet vähintään 1 tuuman (25 mm) päähän putken ylä- tai alapuolelle, jotta mikään ei voi koskettaa putkea, kaatua sitä vasten tai tukkia sitä.
+4. Nosta painoa, paina salpa alas laukaisimen päälle ja aseta keila tai keilatanko lappeelleen tukien päälle metalliolaketta vasten katkaisimen käyttöohjeen mukaisesti, joka kerta samalla tavalla. Tarkista asento uudelleen ennen kannen sulkemista: ”VÄÄRIN ASETETTU KEILA TAI TANKO VOI AIHEUTTAA YLIPOLTON.”
+5. Aseta aikarajoitin ja paina painike sisään, kunnes se lukittuu. Pidä uuni vaakasuorassa ja painon alla oleva tila vapaana, jotta paino pääsee putoamaan.
 
-| What you see                                    | Likely cause                                                                                           | What to do                                                       |
-| ----------------------------------------------- | ------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------- |
-| Sitter tripped, shelf firing cone under-bent    | The sitter ran hotter than the shelf (it sits near the wall)                                           | One cone hotter in the sitter, or the thicker part under the rod |
-| Sitter cone sagged well past 90°                | The kiln climbed too fast near the end                                                                 | Lower the switch settings, so the climb is slower (Dawson)       |
-| Sitter cone did not bend, or melted into a blob | The sitter itself: poor adjustment, a bent or corroded rod, or something lodged in or against the tube | Check and adjust the sitter by its manual before firing again    |
-| Early or late every time                        | Out of adjustment, or a worn rod                                                                       | Check with the firing gauge; move the trigger plate              |
+### Aikarajoitin
 
-To check the adjustment, Dawson uses a **firing gauge** that holds the rod where a fully bent cone would leave it; there should then be "1/16th-inch clearance" (about 1.6 mm) at the claw. Check it every 30 firings. Ceramics Monthly's rule: if the kiln shuts off early, move the trigger plate up slightly; if late, move it down slightly. Whatever the sitter does, "Always trust large witness cones over small sitter cones."
+Monissa katkaisimissa, myös Dawsonin LT-malleissa, on **aikarajoitin**: kello, joka sammuttaa uunin asetetun ajan jälkeen varmistuksena ”siltä varalta, että KILN-SITTER pettää”. Se pitäisi asettaa aina pidemmäksi kuin polton odotetaan kestävän. Lähteet mitoittavat varmuusmarginaalin eri tavoin:
+
+Table: Kuinka pitkäksi aikarajoitin asetetaan
+Label: Aikarajoittimen asetukset
+
+| Lähde     | Asetus                                                                                                                                     |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| Dawson    | ½ tuntia odotettua polttoaikaa pidemmäksi, kunnes uuni on tuttu, myöhemmin vain ¼ tuntia pidemmäksi; älä koskaan aseta sitä yli 20 tuntiin |
+| L&L       | Ensimmäisellä kerralla hyvin pitkäksi, ja polton kesto merkitään muistiin; sen jälkeen noin 1 tunti pidemmäksi                             |
+| Bracker’s | 30 minuutista 1 tuntiin polttoaikaa pidemmäksi                                                                                             |
+
+> [!NOTE]
+> Oma lähtökohtamme: ensimmäisellä kerralla reilusti (asteikon 20 tunnin rajoissa), sitten ½–1 tuntia kirjattua polttoaikaa pidemmäksi. Aikarajoitin kertoo myös, kauanko poltto kesti: jos se asetettiin lukemaan 7 ja se pysähtyi lukemaan 1, poltto kesti 6 tuntia.
+
+### Liian aikainen tai myöhäinen sammutus
+
+Lue jokaisen polton jälkeen katkaisimen keila uunilevyn keilojen rinnalla.
+
+Table: Katkaisimen lukeminen polton jälkeen
+Label: Kiln-Sitter-katkaisimen ongelmat
+
+| Mitä näkyy                                                   | Todennäköinen syy                                                                                     | Mitä tehdä                                                              |
+| ------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
+| Katkaisin laukesi, uunilevyn tavoitekeila taipui liian vähän | Katkaisin kävi kuumempana kuin uunilevy (se on lähellä seinää)                                        | Numeroa kuumempi keila katkaisimeen tai paksumpi osa varren alle        |
+| Katkaisimen keila lysähti selvästi yli 90°                   | Uunin lämpötila nousi lopussa liian nopeasti                                                          | Käännä kytkimet pienemmälle, jotta nousu on hitaampi (Dawson)           |
+| Katkaisimen keila ei taipunut tai suli möykyksi              | Itse katkaisin: huono säätö, taipunut tai syöpynyt varsi tai jotain juuttunut putkeen tai sitä vasten | Tarkista ja säädä katkaisin käyttöohjeen mukaan ennen seuraavaa polttoa |
+| Joka kerta liian aikaisin tai myöhään                        | Säätö pielessä tai kulunut varsi                                                                      | Tarkista säätötulkilla; siirrä laukaisulevyä                            |
+
+Säädön tarkistamiseen Dawson käyttää **säätötulkkia**, joka pitää varren siinä asennossa, johon täysin taipunut keila sen jättäisi; silloin salvassa pitäisi olla ”1/16 tuuman välys” (noin 1,6 mm). Tarkista säätö 30 polton välein. Ceramics Monthly -lehden sääntö: jos uuni sammuu liian aikaisin, siirrä laukaisulevyä hieman ylöspäin; jos liian myöhään, siirrä sitä hieman alaspäin. Teki katkaisin mitä tahansa, ”luota aina enemmän isoihin tarkkailukeiloihin kuin pieniin katkaisimen keiloihin”.
 
 > [!WARNING]
-> **A kiln sitter is not a safety device.** Dawson's manual says it "is NOT intended to perform as a fail-safe shut-off device and your kiln should NOT be left unattended beyond the estimated firing time." Something as simple as greenware falling against the tube "might cause an over-firing". Be there to check the kiln when it should be finishing, and never fire it over or near anything that burns, such as a wood floor or carpet.
+> **Kiln-Sitter-katkaisin ei ole turvalaite.** Dawsonin käyttöohjeen mukaan se ”EI ole tarkoitettu toimimaan vikaturvallisena katkaisulaitteena, eikä uunia PITÄISI jättää valvomatta arvioidun polttoajan jälkeen”. Niinkin yksinkertainen asia kuin putkea vasten kaatuva polttamaton esine ”voi aiheuttaa ylipolton”. Ole paikalla tarkistamassa uuni, kun polton pitäisi olla päättymässä, äläkä koskaan käytä uunia palavan materiaalin, kuten puulattian tai maton, päällä tai lähellä.
 
-The sitter is built for firings "up to and including Cone 8". It cannot hold a temperature or cool slowly by itself. With practice and a log, though, you can "become the controller", as Digitalfire puts it: watch the cones and turn the switches by hand.
+Katkaisin on tehty polttoihin ”keilaan 8 asti, se mukaan lukien”. Se ei pysty itse pitämään lämpötilaa tai jäähdyttämään hitaasti. Harjoituksen ja polttopäiväkirjan avulla voi kuitenkin ”ryhtyä itse automatiikaksi”, kuten Digitalfire asian ilmaisee: seurata keiloja ja kääntää kytkimiä käsin.
 
 :::
 

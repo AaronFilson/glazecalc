@@ -56,7 +56,8 @@
     "vet": "Zvaniet savam veterinārārstam.",
     "checkedOn": "Pārbaudīts vietnēs:",
     "choosePrompt": "Izvēlieties valsti, lai redzētu, kur tur zvanīt.",
-    "ministry": "Veselības ministrijas lapa: <link>{name}</link>."
+    "ministry": "Veselības ministrijas lapa: <link>{name}</link>.",
+    "reported": "Oficiālajās valdības lapās ir minēti 113, 114 un 115, taču nav norādīts, kam katrs paredzēts; parādītās funkcijas atbilst apkārtrakstam 22/2014/TT-BTTTT, kā to min sekundāras lapas."
   },
   "density": {
     "sg": "rel. blīvums {value}",
@@ -91,6 +92,7 @@
     "caption": "Ieelpojamā kristāliskā silīcija dioksīda robežvērtība darba vietā valstī {region}, 8 stundu vidējā vērtība (pārbaudīts: {date})",
     "captionControl": "Mēraukla ieelpojamajam kristāliskajam silīcija dioksīdam darba zonas gaisā valstī {region} (pārbaudīts: {date})",
     "both": "Kvarcs un kristobalīts",
+    "freeSilica": "Brīvais silīcija dioksīds",
     "quartz": "Kvarcs",
     "cristobalite": "Kristobalīts",
     "actionLevel": "Rīcības līmenis",
@@ -171,7 +173,13 @@
       "thSmall": "Izstrādājumi, kuru dziļums pārsniedz 25 mm, ar ietilpību mazāku par 1,1 L",
       "thLarge": "Izstrādājumi, kuru dziļums pārsniedz 25 mm, ar ietilpību 1,1 L vai vairāk",
       "thInfant": "Trauki zīdaiņu līdz 12 mēnešu vecumam barībai",
-      "thCooking": "Ēdiena gatavošanas piederumi, kas paredzēti gatavošanas karstumam"
+      "thCooking": "Ēdiena gatavošanas piederumi, kas paredzēti gatavošanas karstumam",
+      "vnFlat": "Sekli izstrādājumi, kuros tur vai gatavo ēdienu",
+      "vnSmall": "Dziļi izstrādājumi ēdiena turēšanai, mazāk par 1100 mL",
+      "vnMedium": "Dziļi izstrādājumi ēdiena turēšanai, no 1100 mL līdz mazāk nekā 3000 mL",
+      "vnStorage": "Dziļi izstrādājumi ēdiena turēšanai, 3000 mL vai vairāk",
+      "vnCooking": "Dziļi izstrādājumi ēdiena gatavošanai",
+      "vnCups": "Tases un mazas bļodas"
     },
     "judged": {
       "average": "6 izstrādājumu vidējais",

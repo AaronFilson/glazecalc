@@ -361,7 +361,8 @@
     "heading": "Pericole",
     "intro": "Așa cum le dă înregistrarea fiecărei materii prime; cele din lista standard provin din fișele cu date de securitate ale furnizorilor.",
     "line": "<b>{names}:</b> {hazards}",
-    "unknown": "{count, plural, one {Nu sunt date pericole pentru {list}: vedeți fișa cu date de securitate care îl însoțește.} few {Nu sunt date pericole pentru {list}: vedeți fișele cu date de securitate care le însoțesc.} other {Nu sunt date pericole pentru {list}: vedeți fișele cu date de securitate care le însoțesc.}}"
+    "unknown": "{count, plural, one {Nu sunt date pericole pentru {list}: vedeți fișa cu date de securitate care îl însoțește.} few {Nu sunt date pericole pentru {list}: vedeți fișele cu date de securitate care le însoțesc.} other {Nu sunt date pericole pentru {list}: vedeți fișele cu date de securitate care le însoțesc.}}",
+    "safety": "Materiile prime uscate pentru glazuri produc praf: țineți-l departe de plămâni, chiar și pe cel de la materiile prime neclasificate ca periculoase: vedeți <mixing>Prepararea în siguranță și ventilația</mixing> și <home>Nu vă otrăviți familia</home> dacă sunt copii sau animale de companie în preajmă. Când fișa cu date de securitate a unei materii prime spune mai mult, urmați-o."
   },
   "compare": {
     "heading": "Comparați două rețete",
@@ -590,7 +591,10 @@
     "guidance": "Sunt repere, nu o notă de trecere sau de respingere: o glazură în afara lor poate fi bună, iar una în interiorul lor tot poate să se fisureze, să cedeze metale sau să dea greș. Testați-o.",
     "source": "Sursa:",
     "saveFailed": "Alegerea setului de limite nu a putut fi salvată în contul dumneavoastră, așa că rămâne în uz setul de dinainte.",
-    "ownLimits": "Aceste sugestii folosesc limitele proprii ale Glazecalc, nu cele ale {name}."
+    "ownLimits": "Aceste sugestii folosesc limitele proprii ale Glazecalc, nu cele ale {name}.",
+    "firingFromBlock": "Din arderea rețetei ({bands})",
+    "bothBands": "Arderea rețetei acoperă {bands}, așa că fiecare este verificată, una lângă alta: o glazură rareori se comportă la fel la ambele capete.",
+    "fromFiring": "Cifrele sunt pentru arderea rețetei: {band}. Alegeți mai sus o ardere pentru a verifica alta."
   },
   "stull": {
     "heading": "Diagrama Stull",
@@ -714,7 +718,8 @@
     "notSaved": "Nu s-a salvat nimic: {problem}",
     "stopped": "S-au salvat {saved} din {count}. Restul nu au fost salvate: {problem}",
     "saved": "{count, plural, one {S-a salvat # rețetă.} few {S-au salvat # rețete.} other {S-au salvat # de rețete.}}",
-    "openRecipes": "Deschideți rețetele dumneavoastră"
+    "openRecipes": "Deschideți rețetele dumneavoastră",
+    "firingRead": "Arderea citită din note: {firing}"
   },
   "blends": {
     "title": "Amestecuri pentru plăcuțe de test",
@@ -847,5 +852,115 @@
     "retry": "Încercați din nou",
     "about": "Glazecalc este un calculator gratuit de glazuri pentru ceramiști.",
     "aboutLink": "Despre Glazecalc"
+  },
+  "firing": {
+    "heading": "Ardere",
+    "whatIsCone": "Ce înseamnă conul?",
+    "scale": "Scara",
+    "scales": {
+      "orton": "Conuri Orton",
+      "sk": "Conuri SK (JIS)",
+      "temperature": "Temperatura"
+    },
+    "groups": {
+      "usual": "Conurile 022 până la 13",
+      "half": "Conuri intermediare",
+      "above": "Conurile 14 până la 42 (rare în ceramică)"
+    },
+    "coneLabel": "Con",
+    "lowCone": "De la conul",
+    "highCone": "Până la conul",
+    "noHigh": "Fără con maxim",
+    "notStated": "Nespecificat",
+    "peak": "Temperatura maximă ({unit})",
+    "lowTemperature": "De la ({unit})",
+    "highTemperature": "Până la ({unit})",
+    "rangeToggle": "Un interval",
+    "testedLegend": "Testată la: bifați fiecare con la care ați ars-o",
+    "atmosphere": "Atmosferă",
+    "process": "Procedeu",
+    "atmospheres": {
+      "oxidation": "oxidantă",
+      "reduction": "reducătoare",
+      "neutral": "neutră"
+    },
+    "processes": {
+      "wood": "pe lemne",
+      "soda": "cu sodă",
+      "salt": "cu sare",
+      "raku": "raku",
+      "pit": "în groapă"
+    },
+    "rate": "Viteza în ultima oră ({unit} pe oră)",
+    "hold": "Menținere la temperatura maximă (minute)",
+    "schedule": "Note despre program",
+    "schedulePlaceholder": "Menținere 10 minute, răcire lentă...",
+    "witness": "Confirmată cu un con martor",
+    "foodSurface": "Pentru o suprafață în contact cu alimentele (glazură pentru interior)",
+    "liner": {
+      "note": "Siguranța pentru alimente depinde de arderea acestei glazuri la conul la care a fost testată: o glazură insuficient arsă poate ceda metale.",
+      "range": "Este dată pentru un interval, așa că testați-o la capătul de jos al intervalului, unde se topește cel mai puțin.",
+      "untested": "Niciun con nu este încă marcat ca testat.",
+      "test": "Doar un test privind migrarea metalelor, făcut pe propriile dumneavoastră piese arse, arată dacă glazura este sigură pentru alimente."
+    },
+    "helpSummary": "Despre ardere",
+    "help": {
+      "cone": "Conul la care ați ars această glazură. Conurile măsoară lucrul termic (timp și temperatură), nu doar temperatura, așa că conul 06 este mult mai rece decât conul 6.",
+      "range": "Dacă glazura funcționează pe un interval, indicați cel mai mic și cel mai mare con și bifați conurile la care ați ars-o efectiv: conul testat apare primul. O glazură poate arăta și se poate comporta diferit la fiecare capăt.",
+      "convert": "Conul este păstrat așa cum l-ați indicat. Orice conversie într-o altă scară sau într-o temperatură este aproximativă: un con se îndoaie la o temperatură diferită la o altă viteză de încălzire, iar conurile SK și Orton cu același număr nu sunt la fel.",
+      "move": "Mutarea unei glazuri la alt con înseamnă de obicei reformularea ei, nu doar arderea la o temperatură mai mare sau mai mică. Duplicarea pentru alt con păstrează ambele versiuni."
+    },
+    "temperatureProblem": "Indicați o temperatură între {min} și {max}.",
+    "rateProblem": "Indicați viteza ca număr întreg de grade pe oră.",
+    "holdProblem": "Indicați menținerea în minute întregi, cel mult o zi.",
+    "one": {
+      "orton": "conul {cone}",
+      "sk": "SK {cone}"
+    },
+    "span": {
+      "orton": "conul {low}–{high}",
+      "sk": "SK {low}–{high}",
+      "temperature": "{low} până la {high}"
+    },
+    "testedAt": "Testată la {cones}",
+    "claimedRange": "interval declarat {range}",
+    "rangeUntested": "Interval {range}; niciun con bifat ca testat",
+    "approxTemperature": "≈ {temperature} ({basis}; aproximativ)",
+    "approxCone": "≈ {cone} ({basis}; aproximativ)",
+    "basis": {
+      "orton60": "conuri Orton mari la 60 °C pe oră",
+      "kyoto": "măsurat la 100 °C pe oră de institutul municipal din Kyoto",
+      "stated": "așa cum a fost indicat"
+    },
+    "rateText": "{rate} pe oră în ultima oră",
+    "holdText": "menținut {minutes} min",
+    "witnessText": "verificat cu un con martor",
+    "asGiven": "Arderea, așa cum a indicat-o autorul:",
+    "filterCone": "Afișați rețetele pentru un con",
+    "anyCone": "Orice con",
+    "filterAtmosphere": "Afișați rețetele pentru o atmosferă sau un procedeu",
+    "anyAtmosphere": "Orice atmosferă sau procedeu",
+    "duplicate": "Duplicați pentru alt con",
+    "duplicateName": "Duplicați {title} pentru alt con",
+    "duplicateTitle": "{title} (alt con)",
+    "duplicateNote": "O copie a rețetei {title}, încă nesalvată: alegeți noul ei con la Ardere. Mutarea unei glazuri la alt con înseamnă de obicei reformularea ei, nu doar arderea la o temperatură mai mare sau mai mică, așa că verificați limitele și testați-o."
+  },
+  "firings": {
+    "heading": "Jurnale de ardere",
+    "open": "Asociați jurnale de ardere",
+    "fetchFailed": "Jurnalele dumneavoastră de ardere nu au putut fi preluate.",
+    "noLogs": "Nu există încă jurnale de ardere.",
+    "toLogs": "Înregistrați o ardere",
+    "saveFailed": "Modificarea asocierilor cu jurnalele de ardere nu a putut fi salvată.",
+    "resultFor": "Rezultatul în {title}",
+    "resultPlaceholder": "Cum a ieșit: lucioasă, fără fisurare...",
+    "unlink": "Dezasociați",
+    "unlinkName": "Dezasociați {title}",
+    "choose": "Un jurnal de ardere de asociat",
+    "link": "Asociați",
+    "fill": "Bifați conurile menționate de aceste jurnale: {cones}",
+    "replaceAsk": "La „Testată la” este bifat {now}. Înlocuiți cu conurile menționate de jurnale, {logs}?",
+    "replace": "Înlocuiți",
+    "keep": "Lăsați așa"
   }
 }

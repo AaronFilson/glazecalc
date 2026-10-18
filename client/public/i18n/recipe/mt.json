@@ -361,7 +361,8 @@
     "heading": "Perikli",
     "intro": "Kif jagħtuhom ir-rekords ta’ kull materjal; dawk tal-librerija standard ġejjin mill-iskedi ta’ data ta’ sigurtà tal-fornituri.",
     "line": "<b>{names}:</b> {hazards}",
-    "unknown": "{count, plural, one {L-ebda periklu mhu mogħti għal {list}: ara l-iskeda ta’ data ta’ sigurtà li ġġib miegħu.} two {L-ebda periklu mhu mogħti għal {list}: ara l-iskedi ta’ data ta’ sigurtà li jiġu magħhom.} few {L-ebda periklu mhu mogħti għal {list}: ara l-iskedi ta’ data ta’ sigurtà li jiġu magħhom.} many {L-ebda periklu mhu mogħti għal {list}: ara l-iskedi ta’ data ta’ sigurtà li jiġu magħhom.} other {L-ebda periklu mhu mogħti għal {list}: ara l-iskedi ta’ data ta’ sigurtà li jiġu magħhom.}}"
+    "unknown": "{count, plural, one {L-ebda periklu mhu mogħti għal {list}: ara l-iskeda ta’ data ta’ sigurtà li ġġib miegħu.} two {L-ebda periklu mhu mogħti għal {list}: ara l-iskedi ta’ data ta’ sigurtà li jiġu magħhom.} few {L-ebda periklu mhu mogħti għal {list}: ara l-iskedi ta’ data ta’ sigurtà li jiġu magħhom.} many {L-ebda periklu mhu mogħti għal {list}: ara l-iskedi ta’ data ta’ sigurtà li jiġu magħhom.} other {L-ebda periklu mhu mogħti għal {list}: ara l-iskedi ta’ data ta’ sigurtà li jiġu magħhom.}}",
+    "safety": "Il-materjali tal-glejż niexfa jagħmlu trab: żomm it-trab ’il bogħod mill-pulmuni tiegħek, anke t-trab minn materjali li mhumiex ikklassifikati bħala perikolużi: ara l-gwida <mixing>Taħlit sikur u ventilazzjoni</mixing>, u l-gwida <home>Tavvelenax lill-familja tiegħek</home> jekk hemm tfal jew annimali domestiċi madwar. Fejn is-skeda ta’ data ta’ sigurtà ta’ materjal tgħid aktar, segwiha."
   },
   "compare": {
     "heading": "Qabbel żewġ riċetti",
@@ -590,7 +591,10 @@
     "guidance": "Dawn huma linji gwida, mhux ‘għadda’ jew ‘falla’: glejż barra minnhom jista’ jkun tajjeb, u wieħed ġewwa minnhom xorta jista’ jagħmel ix-xegħir, jirrilaxxa metalli jew jfalli. Ittestjah.",
     "source": "Sors:",
     "saveFailed": "L-għażla tiegħek tas-sett ta’ limiti ma setgħetx tiġi ssejvjata mal-kont tiegħek, għalhekk is-sett ta’ qabel għadu dak li qed jintuża.",
-    "ownLimits": "Dawn is-suġġerimenti jużaw il-limiti ta’ Glazecalc stess, mhux dawk ta’ {name}."
+    "ownLimits": "Dawn is-suġġerimenti jużaw il-limiti ta’ Glazecalc stess, mhux dawk ta’ {name}.",
+    "firingFromBlock": "Mill-ħami tar-riċetta ({bands})",
+    "bothBands": "Il-ħami tar-riċetta jkopri {bands}, għalhekk jiġi kkontrollat kull wieħed, ġenb ma’ ġenb: glejż rari jġib ruħu bl-istess mod fiż-żewġ truf.",
+    "fromFiring": "Il-figuri huma għall-ħami tar-riċetta: {band}. Agħżel ħami ’l fuq biex tiċċekkja ieħor."
   },
   "stull": {
     "heading": "Mappa ta’ Stull",
@@ -714,7 +718,8 @@
     "notSaved": "Ma ssejvjat xejn: {problem}",
     "stopped": "Issejvjaw {saved} minn {count}. Il-bqija ma ssejvjawx: {problem}",
     "saved": "{count, plural, one {Issejvjat # riċetta.} two {Issejvjaw # riċetti.} few {Issejvjaw # riċetti.} many {Issejvjaw #-il riċetta.} other {Issejvjaw # riċetta.}}",
-    "openRecipes": "Iftaħ ir-riċetti tiegħek"
+    "openRecipes": "Iftaħ ir-riċetti tiegħek",
+    "firingRead": "Ħami li nqara mill-noti: {firing}"
   },
   "blends": {
     "title": "Taħlitiet għal madum tal-prova",
@@ -847,5 +852,115 @@
     "retry": "Erġa’ pprova",
     "about": "Glazecalc huwa kalkulatur tal-glejż b’xejn għall-fuħħarin.",
     "aboutLink": "Dwar Glazecalc"
+  },
+  "firing": {
+    "heading": "Ħami",
+    "whatIsCone": "X’inhu kon?",
+    "scale": "Skala",
+    "scales": {
+      "orton": "Koni Orton",
+      "sk": "Koni SK (JIS)",
+      "temperature": "Temperatura"
+    },
+    "groups": {
+      "usual": "Koni 022 sa 13",
+      "half": "Nofs koni",
+      "above": "Koni 14 sa 42 (rari fiċ-ċeramika)"
+    },
+    "coneLabel": "Kon",
+    "lowCone": "Mill-kon",
+    "highCone": "Sal-kon",
+    "noHigh": "Mingħajr kon aħħari",
+    "notStated": "Mhux indikat",
+    "peak": "L-ogħla temperatura ({unit})",
+    "lowTemperature": "Minn ({unit})",
+    "highTemperature": "Sa ({unit})",
+    "rangeToggle": "Firxa",
+    "testedLegend": "Ittestjat: immarka kull kon li ħmejt il-glejż sa dak il-kon",
+    "atmosphere": "Atmosfera",
+    "process": "Proċess",
+    "atmospheres": {
+      "oxidation": "ossidazzjoni",
+      "reduction": "riduzzjoni",
+      "neutral": "newtrali"
+    },
+    "processes": {
+      "wood": "ħami bl-injam",
+      "soda": "ħami bis-soda",
+      "salt": "ħami bil-melħ",
+      "raku": "raku",
+      "pit": "ħami f’fossa"
+    },
+    "rate": "Rata matul l-aħħar siegħa ({unit} fis-siegħa)",
+    "hold": "Żamma fl-ogħla temperatura (minuti)",
+    "schedule": "Noti dwar il-programm",
+    "schedulePlaceholder": "Żomm 10 minuti, tkessiħ bil-mod...",
+    "witness": "Ikkonfermat b’kon xhud",
+    "foodSurface": "Għal wiċċ tal-ikel (glejż għal ġewwa)",
+    "liner": {
+      "note": "Is-sigurtà tal-ikel tiddependi mill-ħami ta’ dan il-glejż sal-kon li fih ġie ttestjat: glejż moħmi wisq ftit jista’ jirrilaxxa metalli.",
+      "range": "Mogħti għal firxa, għalhekk ittestjah fit-tarf l-aktar kiesaħ tal-firxa, fejn jdub l-inqas.",
+      "untested": "Għad m’hemm l-ebda kon immarkat bħala ttestjat.",
+      "test": "Test tal-laboratorju tar-rilaxx tal-metalli tal-biċċiet moħmija tiegħek stess biss juri jekk huwiex sikur għall-ikel."
+    },
+    "helpSummary": "Dwar il-ħami",
+    "help": {
+      "cone": "Il-kon li ħmejt dan il-glejż sa fih. Il-koni jkejlu x-xogħol tas-sħana (ħin u temperatura), mhux biss it-temperatura, għalhekk kon 06 huwa ħafna aktar kiesaħ minn kon 6.",
+      "range": "Jekk jaħdem f’firxa, agħti l-aktar kon kiesaħ u l-aktar kon sħun, u immarka l-koni li fil-fatt ħmejt il-glejż sa fihom: il-kon ittestjat jidher l-ewwel. Glejż jista’ jidher u jġib ruħu b’mod differenti f’kull tarf.",
+      "convert": "Il-kon jinżamm kif tagħtih. Kull konverżjoni għal skala oħra jew għal temperatura hija approssimata: kon jitgħawweġ f’temperatura differenti b’rata ta’ tisħin differenti, u koni SK u Orton bl-istess numru mhumiex l-istess.",
+      "move": "Li tmexxi glejż għal kon ieħor normalment ifisser li terġa’ tifformulah, mhux sempliċement taħmih aktar sħun jew aktar kiesaħ. Il-buttuna Agħmel kopja għal kon ieħor iżżomm iż-żewġ verżjonijiet."
+    },
+    "temperatureProblem": "Agħti temperatura minn {min} sa {max}.",
+    "rateProblem": "Agħti r-rata bħala numru sħiħ ta’ gradi fis-siegħa.",
+    "holdProblem": "Agħti ż-żamma f’minuti sħaħ, sa ġurnata.",
+    "one": {
+      "orton": "kon {cone}",
+      "sk": "SK {cone}"
+    },
+    "span": {
+      "orton": "koni {low}–{high}",
+      "sk": "SK {low}–{high}",
+      "temperature": "minn {low} sa {high}"
+    },
+    "testedAt": "Ittestjat: {cones}",
+    "claimedRange": "firxa dikjarata: {range}",
+    "rangeUntested": "Firxa {range}; l-ebda kon mhu mmarkat bħala ttestjat",
+    "approxTemperature": "≈ {temperature} ({basis}; approssimat)",
+    "approxCone": "≈ {cone} ({basis}; approssimat)",
+    "basis": {
+      "orton60": "koni kbar ta’ Orton b’60 °C fis-siegħa",
+      "kyoto": "imkejjel b’100 °C fis-siegħa mill-istitut muniċipali ta’ Kyoto",
+      "stated": "kif mogħti"
+    },
+    "rateText": "{rate} fis-siegħa matul l-aħħar siegħa",
+    "holdText": "miżmum {minutes} min",
+    "witnessText": "ikkontrollat b’kon xhud",
+    "asGiven": "Il-ħami, kif tah l-awtur:",
+    "filterCone": "Uri riċetti għal kon",
+    "anyCone": "Kwalunkwe kon",
+    "filterAtmosphere": "Uri riċetti għal atmosfera jew proċess",
+    "anyAtmosphere": "Kwalunkwe atmosfera jew proċess",
+    "duplicate": "Agħmel kopja għal kon ieħor",
+    "duplicateName": "Agħmel kopja tar-riċetta {title} għal kon ieħor",
+    "duplicateTitle": "{title} (kon ieħor)",
+    "duplicateNote": "Kopja tar-riċetta {title}, għadha mhix issejvjata: agħżel il-kon il-ġdid tagħha taħt Ħami. Li tmexxi glejż għal kon ieħor normalment ifisser li terġa’ tifformulah, mhux sempliċement taħmih aktar sħun jew aktar kiesaħ, għalhekk iċċekkja l-limiti u ttestjah."
+  },
+  "firings": {
+    "heading": "Reġistri tal-ħami",
+    "open": "Għaqqad reġistri tal-ħami",
+    "fetchFailed": "Ir-reġistri tal-ħami tiegħek ma setgħux jinġiebu.",
+    "noLogs": "Għad m’hemm l-ebda reġistru tal-ħami.",
+    "toLogs": "Irreġistra ħamja",
+    "saveFailed": "Il-bidla fl-għaqdiet tar-reġistri tal-ħami ma setgħetx tiġi ssejvjata.",
+    "resultFor": "Riżultat fir-reġistru {title}",
+    "resultPlaceholder": "Kif ħareġ: tleqq, bla xegħir...",
+    "unlink": "Neħħi l-għaqda",
+    "unlinkName": "Neħħi l-għaqda mar-reġistru {title}",
+    "choose": "Reġistru tal-ħami biex tgħaqqad",
+    "link": "Għaqqad",
+    "fill": "Immarka l-koni msemmija f’dawn ir-reġistri: {cones}",
+    "replaceAsk": "‘Ittestjat’ huwa mmarkat għal: {now}. Tibdel dan bil-koni msemmija fir-reġistri: {logs}?",
+    "replace": "Ibdel",
+    "keep": "Żomm kif inhu"
   }
 }

@@ -248,6 +248,22 @@
       "saved": "Sparat: tal och datum som på {language}.",
       "help": "Hur tal och datum skrivs: 12,345.6 eller 12.345,6, och i vilken ordning dag och månad står."
     },
+    "calendar": {
+      "legend": "Kalender",
+      "help": "Kalendern som datum visas i. Datum som skrivs in förblir i den gregorianska kalendern.",
+      "gregory": {
+        "label": "Gregoriansk",
+        "saved": "Sparat: datum visas i den gregorianska kalendern."
+      },
+      "buddhist": {
+        "label": "Thailändsk buddhistisk era",
+        "saved": "Sparat: datum visas i den thailändska buddhistiska eran."
+      },
+      "japanese": {
+        "label": "Japansk era",
+        "saved": "Sparat: datum visas i japanska eror."
+      }
+    },
     "decimalMark": {
       "legend": "Inmatning av mängder",
       "either": {

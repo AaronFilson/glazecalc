@@ -88,7 +88,15 @@
     "chooseField": "Kies een veld om toe te voegen en klik dan op Veld toevoegen.",
     "fetchFailed": "Er is een fout opgetreden bij het ophalen van de stookverslagen.",
     "saved": "Gelukt: het stookverslag is op de server opgeslagen.",
-    "saveFailed": "Fout: het verzoek aan de server is mislukt."
+    "saveFailed": "Fout: het verzoek aan de server is mislukt.",
+    "recipesHeading": "Recepten die in deze stook zijn gestookt",
+    "noRecipes": "Nog geen recepten gekoppeld.",
+    "recipesFailed": "Uw recepten konden niet worden opgehaald, dus er kan nu geen recept worden gekoppeld.",
+    "pickRecipe": "Een recept dat hierin is gestookt",
+    "linkRecipe": "Recept koppelen",
+    "unlink": "Ontkoppelen",
+    "unlinkRecipe": "{title} ontkoppelen",
+    "linkFailed": "De koppeling kon niet worden opgeslagen."
   },
   "notes": {
     "title": "Notities",

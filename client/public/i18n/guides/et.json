@@ -56,7 +56,8 @@
     "vet": "Helistage oma loomaarstile.",
     "checkedOn": "Kontrollitud:",
     "choosePrompt": "Valige oma riik, et näha, kellele seal helistada.",
-    "ministry": "Tervishoiuministeeriumi leht: <link>{name}</link>."
+    "ministry": "Tervishoiuministeeriumi leht: <link>{name}</link>.",
+    "reported": "Ametlikud valitsuse lehed loetlevad numbrid 113, 114 ja 115, kuid mitte seda, milleks igaüks on; näidatud rollid järgivad ringkirja 22/2014/TT-BTTTT, nagu teisesed lehed seda tsiteerivad."
   },
   "density": {
     "sg": "suhteline tihedus {value}",
@@ -91,6 +92,7 @@
     "caption": "Respireeritava kristallilise ränidioksiidi töökeskkonna piirnorm, 8 tunni keskmine (riik: {region}; kontrollitud: {date})",
     "captionControl": "Respireeritava kristallilise ränidioksiidi mõõdupuu tööala õhus (riik: {region}; kontrollitud: {date})",
     "both": "Kvarts ja kristobaliit",
+    "freeSilica": "Vaba ränidioksiid",
     "quartz": "Kvarts",
     "cristobalite": "Kristobaliit",
     "actionLevel": "Rakendusväärtus",
@@ -171,7 +173,13 @@
       "thSmall": "Esemed, mille sügavus on üle 25 mm, alla 1,1 L",
       "thLarge": "Esemed, mille sügavus on üle 25 mm, 1,1 L või rohkem",
       "thInfant": "Kuni 12 kuu vanuste imikute toidu nõud",
-      "thCooking": "Toiduvalmistamisnõud, mis on tehtud toiduvalmistamise kuumust taluma"
+      "thCooking": "Toiduvalmistamisnõud, mis on tehtud toiduvalmistamise kuumust taluma",
+      "vnFlat": "Madalad esemed toidu hoidmiseks või valmistamiseks",
+      "vnSmall": "Sügavad esemed toidu hoidmiseks, alla 1100 mL",
+      "vnMedium": "Sügavad esemed toidu hoidmiseks, 1100 mL kuni alla 3000 mL",
+      "vnStorage": "Sügavad esemed toidu hoidmiseks, 3000 mL või rohkem",
+      "vnCooking": "Sügavad esemed toidu valmistamiseks",
+      "vnCups": "Tassid ja väikesed kausid"
     },
     "judged": {
       "average": "6 eseme keskmine",

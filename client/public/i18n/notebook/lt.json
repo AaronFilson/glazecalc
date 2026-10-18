@@ -88,7 +88,15 @@
     "chooseField": "Pasirinkite lauką, kurį norite pridėti, tada spustelėkite Pridėti lauką.",
     "fetchFailed": "Gauti degimo įrašų duomenų nepavyko.",
     "saved": "Degimo įrašas sėkmingai pridėtas į serverį.",
-    "saveFailed": "Klaida: užklausa serveriui nepavyko."
+    "saveFailed": "Klaida: užklausa serveriui nepavyko.",
+    "recipesHeading": "Jame degti receptai",
+    "noRecipes": "Dar nėra susietų receptų.",
+    "recipesFailed": "Nepavyko gauti jūsų receptų, todėl dabar nieko negalima susieti.",
+    "pickRecipe": "Jame degtas receptas",
+    "linkRecipe": "Susieti receptą",
+    "unlink": "Atsieti",
+    "unlinkRecipe": "Atsieti: {title}",
+    "linkFailed": "Nepavyko įrašyti sąsajos."
   },
   "notes": {
     "title": "Užrašai",

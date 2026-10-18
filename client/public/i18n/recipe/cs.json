@@ -361,7 +361,8 @@
     "heading": "Rizika",
     "intro": "Tak, jak je uvádí záznam každé suroviny; rizika standardní knihovny pocházejí z bezpečnostních listů dodavatelů.",
     "line": "<b>{names}:</b> {hazards}",
-    "unknown": "{count, plural, one {Pro {list} nejsou uvedena žádná rizika: viz bezpečnostní list, který je k ní přiložen.} few {Pro {list} nejsou uvedena žádná rizika: viz bezpečnostní listy, které jsou k nim přiloženy.} many {Pro {list} nejsou uvedena žádná rizika: viz bezpečnostní listy, které jsou k nim přiloženy.} other {Pro {list} nejsou uvedena žádná rizika: viz bezpečnostní listy, které jsou k nim přiloženy.}}"
+    "unknown": "{count, plural, one {Pro {list} nejsou uvedena žádná rizika: viz bezpečnostní list, který je k ní přiložen.} few {Pro {list} nejsou uvedena žádná rizika: viz bezpečnostní listy, které jsou k nim přiloženy.} many {Pro {list} nejsou uvedena žádná rizika: viz bezpečnostní listy, které jsou k nim přiloženy.} other {Pro {list} nejsou uvedena žádná rizika: viz bezpečnostní listy, které jsou k nim přiloženy.}}",
+    "safety": "Suché suroviny pro glazury vytvářejí prach: nepouštějte ho do plic, a to ani prach ze surovin, které nejsou klasifikovány jako nebezpečné: viz <mixing>Bezpečné míchání a větrání</mixing> a <home>Neotravte svou rodinu</home>, pokud jsou nablízku děti nebo domácí zvířata. Pokud bezpečnostní list suroviny uvádí víc, řiďte se jím."
   },
   "compare": {
     "heading": "Porovnat dva recepty",
@@ -590,7 +591,10 @@
     "guidance": "Jsou to vodítka, ne hodnocení „vyhověl, nebo nevyhověl“: glazura mimo ně může být v pořádku a glazura uvnitř nich může přesto trhlinkovat, uvolňovat kovy nebo selhat. Vyzkoušejte ji.",
     "source": "Zdroj:",
     "saveFailed": "Vaši volbu sady limitů se nepodařilo uložit do účtu, takže stále platí dřívější sada.",
-    "ownLimits": "Tyto návrhy používají vlastní limity Glazecalc, ne {name}."
+    "ownLimits": "Tyto návrhy používají vlastní limity Glazecalc, ne {name}.",
+    "firingFromBlock": "Podle výpalu receptu ({bands})",
+    "bothBands": "Výpal receptu zahrnuje {bands}, proto se každé pásmo kontroluje zvlášť, vedle sebe: glazura se na obou koncích chová stejně jen zřídka.",
+    "fromFiring": "Hodnoty platí pro výpal receptu: {band}. Chcete-li zkontrolovat jiný, vyberte jiný výpal výše."
   },
   "stull": {
     "heading": "Stullův diagram",
@@ -714,7 +718,8 @@
     "notSaved": "Nic se neuložilo: {problem}",
     "stopped": "Uloženo {saved} z {count}. Ostatní se neuložily: {problem}",
     "saved": "{count, plural, one {Uložen # recept.} few {Uloženy # recepty.} many {Uloženo # receptu.} other {Uloženo # receptů.}}",
-    "openRecipes": "Otevřít vaše recepty"
+    "openRecipes": "Otevřít vaše recepty",
+    "firingRead": "Výpal přečtený z poznámek: {firing}"
   },
   "blends": {
     "title": "Směsi pro zkušební střípky",
@@ -847,5 +852,115 @@
     "retry": "Zkusit znovu",
     "about": "Glazecalc je bezplatná kalkulačka glazur pro keramiky.",
     "aboutLink": "O Glazecalc"
+  },
+  "firing": {
+    "heading": "Výpal",
+    "whatIsCone": "Co znamená žároměrka?",
+    "scale": "Stupnice",
+    "scales": {
+      "orton": "Ortonovy žároměrky",
+      "sk": "Žároměrky SK (JIS)",
+      "temperature": "Teplota"
+    },
+    "groups": {
+      "usual": "Žároměrky 022 až 13",
+      "half": "Žároměrky s polovičním číslem",
+      "above": "Žároměrky 14 až 42 (v keramice vzácné)"
+    },
+    "coneLabel": "Žároměrka",
+    "lowCone": "Od žároměrky",
+    "highCone": "Do žároměrky",
+    "noHigh": "Bez horní žároměrky",
+    "notStated": "Neuvedeno",
+    "peak": "Nejvyšší teplota ({unit})",
+    "lowTemperature": "Od ({unit})",
+    "highTemperature": "Do ({unit})",
+    "rangeToggle": "Rozmezí",
+    "testedLegend": "Vyzkoušeno na: zaškrtněte každou žároměrku, na kterou jste ji vypálili",
+    "atmosphere": "Atmosféra",
+    "process": "Způsob výpalu",
+    "atmospheres": {
+      "oxidation": "oxidační",
+      "reduction": "redukční",
+      "neutral": "neutrální"
+    },
+    "processes": {
+      "wood": "na dřevo",
+      "soda": "sodový",
+      "salt": "solný",
+      "raku": "raku",
+      "pit": "jámový"
+    },
+    "rate": "Rychlost za poslední hodinu ({unit} za hodinu)",
+    "hold": "Výdrž na nejvyšší teplotě (minuty)",
+    "schedule": "Poznámky ke křivce výpalu",
+    "schedulePlaceholder": "Výdrž 10 minut, pomalé chlazení…",
+    "witness": "Potvrzeno kontrolní žároměrkou",
+    "foodSurface": "Pro plochu ve styku s potravinami (vnitřní glazura)",
+    "liner": {
+      "note": "Bezpečnost pro styk s potravinami závisí na tom, zda se tato glazura vypálí na žároměrku, na kterou byla zkoušena: nedopálená glazura může uvolňovat kovy.",
+      "range": "Je uvedena pro rozmezí, proto ji vyzkoušejte na spodním konci rozmezí, kde se taví nejméně.",
+      "untested": "Zatím není označena žádná vyzkoušená žároměrka.",
+      "test": "Jen zkouška uvolňování kovů z vašich vlastních vypálených nádob ukáže, zda je bezpečná pro styk s potravinami."
+    },
+    "helpSummary": "O výpalu",
+    "help": {
+      "cone": "Žároměrka, na kterou jste tuto glazuru vypálili. Žároměrky neměří jen teplotu, ale tepelnou expozici (čas a teplotu), takže žároměrka 06 odpovídá mnohem nižší teplotě než žároměrka 6.",
+      "range": "Pokud glazura funguje v rozmezí, uveďte nejnižší a nejvyšší žároměrku a zaškrtněte ty, na které jste ji skutečně vypálili: vyzkoušená žároměrka se zobrazí jako první. Glazura může na každém konci vypadat i se chovat jinak.",
+      "convert": "Žároměrka se uchová tak, jak ji zadáte. Jakýkoli převod na jinou stupnici nebo na teplotu je přibližný: žároměrka se ohne při jiné teplotě podle toho, jak rychle se pec ohřívá, a žároměrky SK a Orton se stejným číslem nejsou totéž.",
+      "move": "Přesun glazury na jinou žároměrku obvykle znamená přepracovat recept, nikoli ji jen vypálit na vyšší či nižší teplotu. Volba Duplikovat pro jinou žároměrku zachová obě verze."
+    },
+    "temperatureProblem": "Zadejte teplotu od {min} do {max}.",
+    "rateProblem": "Zadejte rychlost jako celé číslo stupňů za hodinu.",
+    "holdProblem": "Zadejte výdrž v celých minutách, nejvýše jeden den.",
+    "one": {
+      "orton": "žároměrka {cone}",
+      "sk": "SK {cone}"
+    },
+    "span": {
+      "orton": "žároměrka {low}–{high}",
+      "sk": "SK {low}–{high}",
+      "temperature": "{low} až {high}"
+    },
+    "testedAt": "Vyzkoušeno na {cones}",
+    "claimedRange": "uváděné rozmezí {range}",
+    "rangeUntested": "Rozmezí {range}; žádná žároměrka není označena jako vyzkoušená",
+    "approxTemperature": "≈ {temperature} ({basis}; přibližně)",
+    "approxCone": "≈ {cone} ({basis}; přibližně)",
+    "basis": {
+      "orton60": "velké žároměrky Orton při 60 °C za hodinu",
+      "kyoto": "změřeno při 100 °C za hodinu městským ústavem v Kjótu",
+      "stated": "jak je uvedeno"
+    },
+    "rateText": "{rate} za hodinu v poslední hodině",
+    "holdText": "výdrž {minutes} min",
+    "witnessText": "ověřeno kontrolní žároměrkou",
+    "asGiven": "Výpal tak, jak jej uvedl autor:",
+    "filterCone": "Zobrazit recepty pro žároměrku",
+    "anyCone": "Libovolná žároměrka",
+    "filterAtmosphere": "Zobrazit recepty pro atmosféru nebo způsob výpalu",
+    "anyAtmosphere": "Libovolná atmosféra nebo způsob výpalu",
+    "duplicate": "Duplikovat pro jinou žároměrku",
+    "duplicateName": "Duplikovat {title} pro jinou žároměrku",
+    "duplicateTitle": "{title} (jiná žároměrka)",
+    "duplicateNote": "Kopie receptu {title}, zatím neuložená: vyberte její novou žároměrku ve Výpalu. Přesun glazury na jinou žároměrku obvykle znamená přepracovat recept, nikoli ji jen vypálit na vyšší či nižší teplotu, proto zkontrolujte limity a glazuru vyzkoušejte."
+  },
+  "firings": {
+    "heading": "Záznamy výpalů",
+    "open": "Propojit záznamy výpalů",
+    "fetchFailed": "Vaše záznamy výpalů se nepodařilo načíst.",
+    "noLogs": "Zatím žádné záznamy výpalů.",
+    "toLogs": "Zaznamenat výpal",
+    "saveFailed": "Změnu v propojení záznamů výpalů se nepodařilo uložit.",
+    "resultFor": "Výsledek v záznamu {title}",
+    "resultPlaceholder": "Jak to dopadlo: lesklá, bez trhlinek…",
+    "unlink": "Zrušit propojení",
+    "unlinkName": "Zrušit propojení: {title}",
+    "choose": "Záznam výpalu k propojení",
+    "link": "Propojit",
+    "fill": "Zaškrtnout žároměrky, které tyto záznamy uvádějí: {cones}",
+    "replaceAsk": "Vyzkoušeno je zaškrtnuto u {now}. Nahradit to žároměrkami, které záznamy uvádějí, {logs}?",
+    "replace": "Nahradit",
+    "keep": "Ponechat beze změny"
   }
 }

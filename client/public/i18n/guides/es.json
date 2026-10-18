@@ -56,7 +56,8 @@
     "vet": "Llame a su veterinario.",
     "checkedOn": "Comprobado en:",
     "choosePrompt": "Elija su país para ver a quién llamar allí.",
-    "ministry": "La página del ministerio de sanidad: <link>{name}</link>."
+    "ministry": "La página del ministerio de sanidad: <link>{name}</link>.",
+    "reported": "Las páginas oficiales del gobierno enumeran 113, 114 y 115, pero no para qué sirve cada número; las funciones que se muestran siguen la Circular 22/2014/TT-BTTTT, tal como la citan páginas secundarias."
   },
   "density": {
     "sg": "densidad {value}",
@@ -91,6 +92,7 @@
     "caption": "El valor límite ambiental de sílice cristalina respirable en el trabajo, en {region}, como media de 8 horas (comprobado el {date})",
     "captionControl": "La referencia para la sílice cristalina respirable en el aire de una zona de trabajo en {region} (comprobado el {date})",
     "both": "Cuarzo y cristobalita",
+    "freeSilica": "Sílice libre",
     "quartz": "Cuarzo",
     "cristobalite": "Cristobalita",
     "actionLevel": "Nivel de acción",
@@ -171,7 +173,13 @@
       "thSmall": "Piezas de más de 25 mm de profundidad, de menos de 1,1 L",
       "thLarge": "Piezas de más de 25 mm de profundidad, de 1,1 L o más",
       "thInfant": "Recipientes para la comida de bebés de hasta 12 meses",
-      "thCooking": "Recipientes para cocinar, hechos para resistir el calor de la cocina"
+      "thCooking": "Recipientes para cocinar, hechos para resistir el calor de la cocina",
+      "vnFlat": "Piezas poco profundas, para contener o cocinar alimentos",
+      "vnSmall": "Piezas hondas para contener alimentos, de menos de 1100 mL",
+      "vnMedium": "Piezas hondas para contener alimentos, de 1100 mL a menos de 3000 mL",
+      "vnStorage": "Piezas hondas para contener alimentos, de 3000 mL o más",
+      "vnCooking": "Piezas hondas para cocinar",
+      "vnCups": "Tazas y cuencos pequeños"
     },
     "judged": {
       "average": "media de 6 piezas",

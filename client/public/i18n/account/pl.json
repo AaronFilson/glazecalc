@@ -248,6 +248,22 @@
       "saved": "Zapisano: format liczb i dat – {language}.",
       "help": "Sposób zapisu liczb i dat: 12,345.6 lub 12.345,6 oraz kolejność dnia i miesiąca."
     },
+    "calendar": {
+      "legend": "Kalendarz",
+      "help": "Kalendarz, w którym wyświetlane są daty. Wpisywane daty pozostają w kalendarzu gregoriańskim.",
+      "gregory": {
+        "label": "Gregoriański",
+        "saved": "Zapisano: daty są wyświetlane w kalendarzu gregoriańskim."
+      },
+      "buddhist": {
+        "label": "Tajska era buddyjska",
+        "saved": "Zapisano: daty są wyświetlane w tajskiej erze buddyjskiej."
+      },
+      "japanese": {
+        "label": "Japońska era",
+        "saved": "Zapisano: daty są wyświetlane w japońskich erach."
+      }
+    },
     "decimalMark": {
       "legend": "Wpisywanie ilości",
       "either": {

@@ -88,7 +88,15 @@
     "chooseField": "Válassza ki a hozzáadandó mezőt, majd kattintson a Mező hozzáadása gombra.",
     "fetchFailed": "Hiba történt az égetési naplók adatainak lekérésekor.",
     "saved": "Az égetési naplót sikeresen hozzáadtuk a szerverhez.",
-    "saveFailed": "Hiba: a szervernek küldött kérés sikertelen volt."
+    "saveFailed": "Hiba: a szervernek küldött kérés sikertelen volt.",
+    "recipesHeading": "Benne égetett receptek",
+    "noRecipes": "Még nincs összekapcsolt recept.",
+    "recipesFailed": "A receptjeit nem sikerült lekérni, ezért most egyik sem kapcsolható össze.",
+    "pickRecipe": "Egy benne égetett recept",
+    "linkRecipe": "Recept összekapcsolása",
+    "unlink": "Leválasztás",
+    "unlinkRecipe": "{title} leválasztása",
+    "linkFailed": "Az összekapcsolást nem sikerült menteni."
   },
   "notes": {
     "title": "Jegyzetek",

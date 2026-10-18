@@ -248,6 +248,22 @@
       "saved": "Gemt: tal og datoer som på {language}.",
       "help": "Hvordan tal og datoer skrives: 12,345.6 eller 12.345,6 og rækkefølgen af dag og måned."
     },
+    "calendar": {
+      "legend": "Kalender",
+      "help": "Den kalender, datoer vises i. Datoer, der skrives ind, forbliver i den gregorianske kalender.",
+      "gregory": {
+        "label": "Gregoriansk",
+        "saved": "Gemt: datoer vises i den gregorianske kalender."
+      },
+      "buddhist": {
+        "label": "Thailandsk buddhistisk æra",
+        "saved": "Gemt: datoer vises i den thailandske buddhistiske æra."
+      },
+      "japanese": {
+        "label": "Japansk æra",
+        "saved": "Gemt: datoer vises i japanske æraer."
+      }
+    },
     "decimalMark": {
       "legend": "Indtastning af mængder",
       "either": {

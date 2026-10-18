@@ -56,7 +56,8 @@
     "vet": "Rufen Sie Ihre Tierarztpraxis an.",
     "checkedOn": "Geprüft anhand von:",
     "choosePrompt": "Wählen Sie Ihr Land, um zu sehen, wen Sie dort anrufen.",
-    "ministry": "Die Seite des Gesundheitsministeriums: <link>{name}</link>."
+    "ministry": "Die Seite des Gesundheitsministeriums: <link>{name}</link>.",
+    "reported": "Offizielle Regierungsseiten nennen 113, 114 und 115, aber nicht, wofür jede Nummer gilt; die angezeigten Aufgaben folgen dem Rundschreiben 22/2014/TT-BTTTT, wie Sekundärseiten es wiedergeben."
   },
   "density": {
     "sg": "spez. Gewicht {value}",
@@ -91,6 +92,7 @@
     "caption": "Arbeitsplatzgrenzwert für alveolengängigen Quarzstaub: {region}, als Mittelwert über 8 Stunden (geprüft am {date})",
     "captionControl": "Der Maßstab für alveolengängigen Quarzstaub in der Luft eines Arbeitsbereichs in {region} (geprüft am {date})",
     "both": "Quarz und Cristobalit",
+    "freeSilica": "Freier Quarz",
     "quartz": "Quarz",
     "cristobalite": "Cristobalit",
     "actionLevel": "Auslösewert",
@@ -171,7 +173,13 @@
       "thSmall": "Gegenstände mit mehr als 25 mm Tiefe, unter 1,1 L",
       "thLarge": "Gegenstände mit mehr als 25 mm Tiefe, 1,1 L oder mehr",
       "thInfant": "Behälter für Babynahrung bis 12 Monate",
-      "thCooking": "Kochgeschirr, das der Hitze beim Kochen standhalten soll"
+      "thCooking": "Kochgeschirr, das der Hitze beim Kochen standhalten soll",
+      "vnFlat": "Flache Gegenstände zum Aufnehmen oder Garen von Speisen",
+      "vnSmall": "Tiefe Gegenstände zur Aufnahme von Speisen, unter 1100 mL",
+      "vnMedium": "Tiefe Gegenstände zur Aufnahme von Speisen, von 1100 mL bis unter 3000 mL",
+      "vnStorage": "Tiefe Gegenstände zur Aufnahme von Speisen, 3000 mL oder mehr",
+      "vnCooking": "Tiefe Gegenstände zum Garen",
+      "vnCups": "Tassen und kleine Schalen"
     },
     "judged": {
       "average": "Mittelwert aus 6 Stücken",

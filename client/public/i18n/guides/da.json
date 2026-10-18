@@ -56,7 +56,8 @@
     "vet": "Ring til dyrlægen.",
     "checkedOn": "Kontrolleret på:",
     "choosePrompt": "Vælg land for at se, hvem man ringer til der.",
-    "ministry": "Sundhedsministeriets side: <link>{name}</link>."
+    "ministry": "Sundhedsministeriets side: <link>{name}</link>.",
+    "reported": "Officielle regeringssider angiver 113, 114 og 115, men ikke hvad hvert nummer er til; de viste roller følger cirkulære 22/2014/TT-BTTTT, som sekundære sider citerer det."
   },
   "density": {
     "sg": "massefylde {value}",
@@ -91,6 +92,7 @@
     "caption": "Grænseværdien på arbejdspladsen for respirabelt krystallinsk silica i {region}, som gennemsnit over 8 timer (kontrolleret den {date})",
     "captionControl": "Rettesnoren for respirabelt krystallinsk silica i luften i et arbejdsområde i {region} (kontrolleret den {date})",
     "both": "Kvarts og cristobalit",
+    "freeSilica": "Fri silica",
     "quartz": "Kvarts",
     "cristobalite": "Cristobalit",
     "actionLevel": "Aktionsværdi",
@@ -171,7 +173,13 @@
       "thSmall": "Genstande, der er dybere end 25 mm, under 1,1 L",
       "thLarge": "Genstande, der er dybere end 25 mm, 1,1 L eller mere",
       "thInfant": "Beholdere til mad til babyer op til 12 måneder gamle",
-      "thCooking": "Koge- og stegeredskaber, lavet til at tåle varmen ved madlavning"
+      "thCooking": "Koge- og stegeredskaber, lavet til at tåle varmen ved madlavning",
+      "vnFlat": "Lave genstande til opbevaring eller tilberedning af mad",
+      "vnSmall": "Dybe genstande til opbevaring af mad, under 1100 mL",
+      "vnMedium": "Dybe genstande til opbevaring af mad, fra 1100 mL til under 3000 mL",
+      "vnStorage": "Dybe genstande til opbevaring af mad, 3000 mL eller mere",
+      "vnCooking": "Dybe genstande til madlavning",
+      "vnCups": "Kopper og små skåle"
     },
     "judged": {
       "average": "gennemsnit af 6 genstande",

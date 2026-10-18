@@ -149,76 +149,76 @@ A Pet Poison Helpline szerint „az ólom minden állatfajra mérgező, de a mé
 
 Ha egy háziállat ehetett vagy ihatott valamit a műhelyből, vagy a fentiekhez hasonló jeleket mutat, hívja fel az állatorvosát vagy egy állatmérgezési segélyvonalat (lásd a táblázatot az oldal tetején), és legyen kéznél a nyersanyag neve és az állat testsúlya.
 
-## The kiln {#the-kiln lang=en}
+## A kemence {#the-kiln}
 
-### The outside gets hot enough to burn
+### A külseje annyira felforrósodik, hogy megégethet
 
-A UK schools risk assessment says a kiln's outside "can reach 160 °C and possibly more" (about 320 °F), and a school kiln guide reports metal bands at up to 460 °F (about 240 °C). Skutt, a kiln maker, recommends a kiln room that can be locked against children and pets. Where a room cannot be locked, the school guide suggests a barrier such as a kiln safety screen.
+Egy brit iskolai kockázatértékelés szerint a kemence külső felülete „elérheti a 160 °C-ot, esetleg többet is” (kb. 320 °F), egy iskolai kemencekezelési útmutató pedig legfeljebb 460 °F-os (kb. 240 °C) fémpántokról számol be. A Skutt kemencegyártó olyan kemencehelyiséget ajánl, amely a gyermekek és a háziállatok elől bezárható. Ahol a helyiség nem zárható, az iskolai útmutató valamilyen elzárást javasol, például a kemence köré állítható védőrácsot.
 
-Small children and pets cannot understand a warning sign. We suggest keeping them behind a locked door or a barrier while the kiln fires and while it cools, and posting a warning sign for everyone else.
+A kisgyermekek és a háziállatok nem tudják megérteni a figyelmeztető táblát. Javasoljuk, hogy égetés és hűlés közben tartsa őket bezárt ajtó vagy elzárás mögött, mindenki más számára pedig tegyen ki figyelmeztető táblát.
 
-### Space around it
+### Hely a kemence körül
 
-Sources disagree on clearance. Rio Grande says at least 12 inches (30 cm) from walls and anything combustible. L&L strongly recommends 18 inches (46 cm) to all walls, and the building code it cites asks for 3 feet (0.9 m) from combustible walls. Follow your kiln's manual and local fire code; if you are unsure, allow 18 inches from any wall and 3 feet from anything that can burn. In a garage, keep cars, fuel and paint well away.
+A források eltérnek a védőtávolságot illetően. A Rio Grande szerint legalább 12 hüvelyk (30 cm) kell a falaktól és minden éghető anyagtól. Az L&L nyomatékosan 18 hüvelyket (46 cm) ajánl minden faltól, az általa idézett építési előírás pedig 3 láb (0,9 m) távolságot kér az éghető falaktól. Kövesse a kemencéje kezelési útmutatóját és a helyi tűzvédelmi előírásokat; ha bizonytalan, hagyjon 18 hüvelyket minden faltól és 3 lábat mindentől, ami éghet. Garázsban az autókat, az üzemanyagot és a festéket tartsa jó messze.
 
-### Power
+### Áramellátás
 
-Rio Grande recommends a **dedicated circuit** (one that powers nothing else) with a properly grounded outlet. We suggest no extension cord. Between firings, switch off the kiln's breaker or disconnect switch, or unplug it, so a child cannot start it.
+A Rio Grande **külön áramkört** ajánl (amelyről semmi más nem kap áramot), szabályosan földelt aljzattal. Azt javasoljuk, hogy ne használjon hosszabbítót. Két égetés között kapcsolja le a kemence kismegszakítóját vagy leválasztó kapcsolóját, vagy húzza ki a csatlakozóját, hogy egy gyermek ne tudja elindítani.
 
-### Be there when the firing ends
+### Legyen jelen az égetés végén
 
-A **kiln sitter** is the mechanical switch on many manual kilns: a small cone bends at the end of the firing and trips the switch off. Its manual says it "is NOT intended to perform as a fail-safe shut-off device." Rio Grande says never to leave a firing kiln unattended, "especially near the expected shut-off time". So stay nearby and check the kiln while it fires, above all near the end; fire only when an adult will be home and awake to do that, check that it has switched off, and keep an ABC fire extinguisher in the kiln room. For how sitters, controllers and schedules work, see [Firing a basic kiln](/guides/firing).
+A **Kiln-Sitter** (gúlás lekapcsoló) sok vezérlő nélküli, kézi kapcsolású kemence mechanikus kapcsolója: az égetés végén egy kis gúla{{en: cone}} meghajlik, és kioldja a kapcsolót. A kezelési útmutatója szerint „NEM arra szolgál, hogy hibabiztos lekapcsoló berendezésként működjön”. A Rio Grande szerint égető kemencét soha nem szabad felügyelet nélkül hagyni, „különösen a várható lekapcsolási idő közelében”. Ezért maradjon a közelben, és égetés közben ellenőrizze a kemencét, különösen a vége felé; csak akkor égessen, ha egy felnőtt otthon lesz és ébren lesz, hogy ezt megtehesse, ellenőrizze, hogy a kemence kikapcsolt-e, és tartson ABC tűzoltó készüléket a kemencehelyiségben. A Kiln-Sitterek, a vezérlők és az égetési programok működéséről az [Égetés egyszerű kemencében](/guides/firing) című útmutató szól.
 
-### Fumes and carbon monoxide
+### Füstgázok és szén-monoxid
 
-Firing gives off fumes, so vent the kiln to the outdoors; [Safe mixing and ventilation](/guides/safe-mixing) explains how. A kiln in an attached garage needs venting that keeps fumes from reaching the house through the connecting door. Keep birds in a far room whenever the kiln fires.
+Égetés közben füstgázok keletkeznek, ezért a kemence füstgázait vezesse a szabadba; hogy hogyan, azt a [Biztonságos keverés és szellőzés](/guides/safe-mixing) című útmutató írja le. A házhoz csatlakozó garázsban álló kemencénél olyan elszívás kell, amely megakadályozza, hogy a füstgázok az összekötő ajtón át a lakásba jussanak. Amikor a kemence éget, a madarakat mindig tartsa egy távoli szobában.
 
-**Carbon monoxide** (CO) is a poisonous gas you cannot see or smell. A university kiln safety sheet requires CO alarms with gas kilns. Views differ for electric kilns, but burning off organic matter (in clay, or things like paper or wax) can make CO. We think a CO alarm in the kiln room and the rooms next to it is a sensible, inexpensive step for any kiln.
+A **szén-monoxid** (CO) mérgező gáz, amelyet nem lehet sem látni, sem szagolni. Egy egyetem kemencebiztonsági lapja gázkemencék mellé előírja a szén-monoxid-érzékelőt. Elektromos kemencéknél megoszlanak a vélemények, de a szerves anyagok (az agyagban lévők, vagy például a papír vagy a viasz) kiégése is termelhet szén-monoxidot. Úgy gondoljuk, hogy a kemencehelyiségben és a szomszédos helyiségekben elhelyezett szén-monoxid-érzékelő bármilyen kemencénél észszerű, olcsó lépés.
 
-### Peepholes and eyes
+### A kémlelőnyílás és a szem
 
-Infrared light, which you cannot see, "starts at 752°F (400°C)", and the Ceramic Arts Network says looking into a kiln above this should always be done with eye protection. Infrared can damage the lens of the eye and lead to cataracts, and long gazing can injure the retina. Sunglasses and didymium glasses do not block it.
+A szabad szemmel nem látható infravörös sugárzás „752°F (400°C) hőmérsékleten kezdődik”, és a Ceramic Arts Network szerint efölött a kemencébe mindig szemvédővel kellene benézni. Az infravörös sugárzás károsíthatja a szemlencsét és szürkehályoghoz vezethet, a hosszas belenézés pedig a retinát sértheti meg. A napszemüveg és a didímiumos szemüveg nem szűri ki.
 
 > [!WARNING]
-> Children should not look into a kiln at all. A glowing peephole draws them, and they will not reliably keep protective glasses on, so keep them away while the kiln is hot. Adults should look only briefly, through IR-rated welding glasses. Sources recommend shades from 1.7 to 5; shade 3 is a sensible choice, darker if you see spots afterward.
+> Gyermekeknek egyáltalán nem kellene benézniük a kemencébe. Az izzó kémlelőnyílás vonzza őket, és nem fogják megbízhatóan magukon tartani a védőszemüveget, ezért tartsa távol őket, amíg a kemence forró. Felnőtteknek csak röviden kellene benézniük, IR-szűrős hegesztőszemüvegen át. A források 1,7 és 5 közötti védőfokozatot ajánlanak; a 3-as védőfokozat észszerű választás, ha pedig utána foltokat lát, sötétebb.
 
-## Handmade ware on the family table {#handmade-ware lang=en}
+## Kézműves edények a családi asztalon {#handmade-ware}
 
-The question for pots on the family table is **leaching**: metals dissolving out of the fired glaze into food or drink. The FDA warns that if pottery "is not manufactured properly, this lead can leach into food and drink", and that "no amount of washing, boiling, or other process can remove lead from pottery." Regulators such as the US FDA and the EU limit how much lead and cadmium a finished piece releases in a standard acid test, not what the glaze contains. The strictest US limit, for cups, mugs and pitchers, is 0.5 µg/mL of lead.
+A családi asztalra kerülő edényeknél a kérdés a **kioldódás**{{en: leaching}}: a fémek kioldódása az égetett mázból{{en: glaze}} az ételbe vagy az italba. Az FDA figyelmeztet, hogy ha a kerámiát „nem megfelelően gyártják, ez az ólom kioldódhat az ételbe és az italba”, és hogy „semmilyen mosás, forralás vagy más eljárás nem tudja eltávolítani az ólmot a kerámiából”. A szabályozó szervek, például az amerikai FDA és az EU, azt korlátozzák, hogy egy kész darab mennyi ólmot és kadmiumot ad le egy szabványos savas vizsgálatban, nem azt, hogy mit tartalmaz a máz. A legszigorúbb amerikai határérték, a csészékre, bögrékre és kancsókra vonatkozó, 0,5 µg/mL ólom.
 
-### Lead-free is not the same as food-safe
+### Az ólommentes nem ugyanaz, mint az élelmiszerrel érintkezésre alkalmas
 
-A glaze with no lead can still leach. Digitalfire, a glaze chemistry reference, names glazes containing "heavy metal oxide colorants, barium, lithium, or lead" as the concern, and warns that a stain fired above its rated temperature can release cadmium. The ASTM D-4236 art-materials label on a jar "DOES NOT establish that a fired glaze is food-safe", and "Tableware producers must test all finished ware to establish dinnerware status."
+Az ólommentes mázból is kioldódhatnak fémek. A Digitalfire, egy mázkémiai referenciaoldal, azokat a mázakat nevezi aggályosnak, amelyek „nehézfém-oxid színezőanyagokat{{en: colorants}}, báriumot, lítiumot vagy ólmot” tartalmaznak, és figyelmeztet, hogy a megadott hőmérsékletnél magasabbra égetett színtest{{en: stain}} kadmiumot adhat le. A tégelyen lévő, művészeti anyagokra vonatkozó ASTM D-4236 címke „NEM bizonyítja, hogy egy kiégetett máz élelmiszerrel érintkezésre alkalmas{{en: food-safe}}”, és „az étkészletgyártóknak minden kész árut meg kell vizsgálniuk, hogy megállapítsák, használható-e étkészletként”.
 
 > [!NOTE]
-> "Food safe" means this glaze, on this clay, fired to this cone, applied this way, releases less than the legal limits. A recipe calculation, Glazecalc's included, can flag a risky recipe but cannot prove a pot is safe. Only a leach test of the fired piece can.
+> Az „élelmiszerrel érintkezésre alkalmas” azt jelenti, hogy ez a máz, ezen a masszán{{en: clay body}}, erre a gúlára{{en: cone}} égetve, így felhordva a jogszabályi határértékeknél kevesebbet ad le. Egy receptszámítás, a Glazecalc számítása is, jelezheti, hogy egy recept kockázatos, de nem bizonyíthatja, hogy egy edény biztonságos. Erre csak a kiégetett darab kioldódási vizsgálata képes.
 
-We suggest reading a "food safe" label on a commercial glaze as a good start, not a guarantee: a different clay, a thicker coat, another cone or a second glaze on top changes the result.
+Azt javasoljuk, hogy egy kész mázon lévő „élelmiszerrel érintkezésre alkalmas” jelzést jó kiindulópontnak tekintse, ne garanciának: egy másik massza, vastagabb mázréteg, másik gúla vagy egy második máz a tetején megváltoztatja az eredményt.
 
-### Testing
+### Bevizsgálás
 
-Laboratories test fired pieces with a standard acid soak that represents a worst case, such as ASTM C738 in the US. One lab's EU test needs four identical pieces and takes seven working days, so make spares of anything you plan to have tested.
+A laboratóriumok a kiégetett darabokat a legrosszabb esetet modellező, szabványos savas áztatással vizsgálják, ilyen például az Egyesült Államokban az ASTM C738. Az egyik laboratórium uniós vizsgálatához négy egyforma darab kell, és hét munkanapig tart, ezért amit be szeretne vizsgáltatni, abból készítsen tartalékot is.
 
-Home tests are disputed. The FDA says home swab kits can show leachable lead, and that a piece that tests positive should not be used for food. Ceramics NZ warns that consumer lead-test pens are "not designed for this use" on ceramics and can give false positives. Digitalfire suggests leaving a lemon slice on the glaze overnight as a rough screen. The safe reading: a positive home test means stop using the piece for food, and a negative one proves nothing. Only a lab can tell you a piece is safe.
+Az otthoni tesztek vitatottak. Az FDA szerint az otthoni, törlőpálcás tesztkészletek kimutathatják a kioldható ólmot, és a pozitív eredményt adó darabot nem kellene ételhez használni. A Ceramics NZ figyelmeztet, hogy a fogyasztóknak szánt ólomteszt-tollakat kerámiához „nem erre a célra tervezték”, és álpozitív eredményt adhatnak. A Digitalfire durva szűrővizsgálatként azt javasolja, hogy hagyjon egy citromszeletet egy éjszakára a mázon. A biztonságos értelmezés: a pozitív otthoni teszt azt jelenti, hogy a darabot többé ne használja ételhez, a negatív pedig semmit sem bizonyít. Csak egy laboratórium tudja megmondani, hogy egy darab biztonságos.
 
-### Crazed ware
+### Hajszálrepedéses edények
 
-**Crazing** is a network of fine cracks in the glaze surface, and sources disagree about it. A Ceramics Monthly experiment found crazed tiles could be cleaned, best in a dishwasher, though they came out less clean than uncrazed tiles after soap and water. Digitalfire holds that "Crazed ware is unacceptable" and that crazing "severely weakens ware". The safe course is simple: do not use crazed pieces for food.
+A **hajszálrepedés**{{en: crazing}} finom repedések hálózata a máz felületén, és a források nem értenek egyet a megítélésében. A Ceramics Monthly egyik kísérlete szerint a hajszálrepedéses próbalapok{{en: test tiles}} tisztíthatók voltak, legjobban mosogatógépben, bár szappanos vizes mosás után kevésbé lettek tiszták, mint a hajszálrepedés nélküli lapok. A Digitalfire szerint „a hajszálrepedéses áru elfogadhatatlan”, és a hajszálrepedés „súlyosan gyengíti az árut”. A biztonságos út egyszerű: hajszálrepedéses darabot ne használjon ételhez.
 
-### Liner glazes
+### Belső mázak
 
-A **liner glaze** is the glaze on the inside of a cup or bowl, where the food sits. Digitalfire describes a liner that may be low enough in risk to use without lab testing: no colorants, barium, lead or lithium; fully melted; no crazing; and it wears well. Even then, only a leach test of your own fired pots shows whether they are food-safe. Warning signs in any glaze are heavy amounts of colorant, crystals on the surface and poor melting.
+A **belső máz**{{en: liner glaze}} a csésze vagy a tál belsején lévő máz, ahol az étel van. A Digitalfire leír egy olyan belső mázat, amelynek kockázata elég kicsi lehet ahhoz, hogy laboratóriumi vizsgálat nélkül használják: nincs benne színezőanyag, bárium, ólom vagy lítium; teljesen kiolvadt; nem hajszálrepedezik; és jól bírja a kopást. Még ekkor is csak a saját kiégetett edényei kioldódási vizsgálata mutatja meg, hogy élelmiszerrel érintkezésre alkalmasak-e. Bármely máznál figyelmeztető jel a sok színezőanyag, a felületen megjelenő kristályok és a rossz kiolvadás.
 
-### Family rules we suggest
+### Javasolt családi szabályok
 
-- Children's cups, bowls and plates: only lab-tested, durable liner glazes, or commercial dinnerware.
-- Do not store acidic food or drink (citrus, tomato, vinegar, fruit juice, wine) in pots glazed with anything you have not had tested.
-- Do not use crazed pieces for food.
-- Test tiles and experiments stay in the studio, never in the kitchen, the toy box or the pet's bowl.
-- Take care with other pottery too. The FDA advises caution with handmade or crude-looking pieces, antiques, damaged or worn pieces, flea-market finds and bright orange, red or yellow decoration.
-- If a child has used pottery you now doubt, the FDA says to talk to a doctor about a blood lead test.
+- Gyermekek csészéi, tálkái és tányérjai: csak laboratóriumban bevizsgált, tartós belső mázak, vagy bolti étkészlet.
+- Savas ételt vagy italt (citrusféléket, paradicsomot, ecetet, gyümölcslét, bort) ne tároljon olyan edényben, amelynek a mázát nem vizsgáltatta be.
+- Hajszálrepedéses darabot ne használjon ételhez.
+- A próbalapok és a kísérleti darabok a műhelyben maradnak, soha nem kerülnek a konyhába, a játékosládába vagy a háziállat táljába.
+- Más kerámiákkal is legyen óvatos. Az FDA óvatosságot tanácsol a kézzel készült vagy kezdetlegesnek látszó darabokkal, a régiségekkel, a sérült vagy kopott darabokkal, a bolhapiaci szerzeményekkel és az élénk narancssárga, piros vagy sárga díszítéssel.
+- Ha egy gyermek olyan kerámiát használt, amelyben most kételkedik, az FDA szerint beszéljen orvossal a vérólomszint-mérésről.
 
-For more on how glazes melt, why some leach and what the limits mean, see [Glazing from first principles](/guides/glazing-basics).
+Arról, hogyan olvadnak ki a mázak, miért oldódnak ki egyesekből fémek, és mit jelentenek a határértékek, a [Mázazás az alapoktól](/guides/glazing-basics) című útmutató ír bővebben.
 
 ## Források {#sources}
 

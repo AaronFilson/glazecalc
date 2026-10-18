@@ -361,7 +361,8 @@
     "heading": "Perigos",
     "intro": "Conforme o registo de cada matéria-prima os indica; os da lista padrão vêm das fichas de dados de segurança dos fornecedores.",
     "line": "<b>{names}:</b> {hazards}",
-    "unknown": "{count, plural, one {Não são indicados perigos para {list}: consulte a ficha de dados de segurança que o acompanha.} many {Não são indicados perigos para {list}: consulte as fichas de dados de segurança que os acompanham.} other {Não são indicados perigos para {list}: consulte as fichas de dados de segurança que os acompanham.}}"
+    "unknown": "{count, plural, one {Não são indicados perigos para {list}: consulte a ficha de dados de segurança que o acompanha.} many {Não são indicados perigos para {list}: consulte as fichas de dados de segurança que os acompanham.} other {Não são indicados perigos para {list}: consulte as fichas de dados de segurança que os acompanham.}}",
+    "safety": "As matérias-primas secas para vidrados produzem poeira: mantenha-a fora dos pulmões, mesmo a das matérias-primas não classificadas como perigosas. Veja <mixing>Mistura segura e ventilação</mixing>, e <home>Não envenene a sua família</home> se houver crianças ou animais de estimação por perto. Quando a ficha de dados de segurança de uma matéria-prima disser mais, siga-a."
   },
   "compare": {
     "heading": "Comparar duas receitas",
@@ -590,7 +591,10 @@
     "guidance": "São orientações, não uma aprovação ou uma reprovação: um vidrado fora delas pode estar bem, e um dentro delas pode na mesma fendilhar, libertar metais ou falhar. Teste-o.",
     "source": "Fonte:",
     "saveFailed": "A sua escolha do conjunto de limites não pôde ser guardada na sua conta, por isso o conjunto anterior continua em uso.",
-    "ownLimits": "Estas sugestões usam os limites do próprio Glazecalc, não os de {name}."
+    "ownLimits": "Estas sugestões usam os limites do próprio Glazecalc, não os de {name}.",
+    "firingFromBlock": "Da cozedura da receita ({bands})",
+    "bothBands": "A cozedura da receita abrange {bands}, por isso cada uma é verificada, lado a lado: um vidrado raramente se comporta da mesma forma nos dois extremos.",
+    "fromFiring": "Os valores são para a cozedura da receita: {band}. Escolha acima uma cozedura para verificar outra."
   },
   "stull": {
     "heading": "Gráfico de Stull",
@@ -714,7 +718,8 @@
     "notSaved": "Nada foi guardado: {problem}",
     "stopped": "Guardadas {saved} de {count}. As restantes não foram guardadas: {problem}",
     "saved": "{count, plural, one {Guardada # receita.} many {Guardadas # receitas.} other {Guardadas # receitas.}}",
-    "openRecipes": "Abrir as suas receitas"
+    "openRecipes": "Abrir as suas receitas",
+    "firingRead": "Cozedura lida das notas: {firing}"
   },
   "blends": {
     "title": "Misturas para peças de teste",
@@ -847,5 +852,115 @@
     "retry": "Tentar novamente",
     "about": "O Glazecalc é uma calculadora de vidrados gratuita para ceramistas.",
     "aboutLink": "Sobre o Glazecalc"
+  },
+  "firing": {
+    "heading": "Cozedura",
+    "whatIsCone": "O que significa cone?",
+    "scale": "Escala",
+    "scales": {
+      "orton": "Cones Orton",
+      "sk": "Cones SK (JIS)",
+      "temperature": "Temperatura"
+    },
+    "groups": {
+      "usual": "Cones 022 a 13",
+      "half": "Meios cones",
+      "above": "Cones 14 a 42 (raros em cerâmica)"
+    },
+    "coneLabel": "Cone",
+    "lowCone": "Do cone",
+    "highCone": "Até ao cone",
+    "noHigh": "Sem cone superior",
+    "notStated": "Não indicado",
+    "peak": "Temperatura máxima ({unit})",
+    "lowTemperature": "De ({unit})",
+    "highTemperature": "Até ({unit})",
+    "rangeToggle": "Um intervalo",
+    "testedLegend": "Testado a: assinale cada cone a que o cozeu",
+    "atmosphere": "Atmosfera",
+    "process": "Processo",
+    "atmospheres": {
+      "oxidation": "oxidação",
+      "reduction": "redução",
+      "neutral": "neutra"
+    },
+    "processes": {
+      "wood": "cozedura a lenha",
+      "soda": "cozedura com sódio",
+      "salt": "cozedura com sal",
+      "raku": "raku",
+      "pit": "cozedura em fossa"
+    },
+    "rate": "Velocidade na última hora ({unit} por hora)",
+    "hold": "Patamar à temperatura máxima (minutos)",
+    "schedule": "Notas do programa",
+    "schedulePlaceholder": "Patamar de 10 minutos, arrefecimento lento…",
+    "witness": "Confirmado por um cone testemunho",
+    "foodSurface": "Para uma superfície em contacto com alimentos (um vidrado de interior)",
+    "liner": {
+      "note": "A segurança alimentar depende de cozer este vidrado ao cone a que foi testado: um vidrado insuficientemente cozido pode libertar metais.",
+      "range": "É dado para um intervalo, por isso teste-o na extremidade baixa do intervalo, onde funde menos.",
+      "untested": "Ainda não há nenhum cone marcado como testado.",
+      "test": "Só um ensaio de libertação de metais das suas próprias peças cozidas mostra se é apto para contacto com alimentos."
+    },
+    "helpSummary": "Sobre a cozedura",
+    "help": {
+      "cone": "O cone a que cozeu este vidrado. Os cones medem o trabalho térmico (tempo e temperatura), e não apenas a temperatura, por isso o cone 06 é muito mais frio do que o cone 6.",
+      "range": "Se funciona num intervalo, indique o cone mais baixo e o mais alto, e assinale os cones a que o cozeu de facto: o cone testado aparece primeiro. Um vidrado pode ter um aspeto, e comportar-se, de forma diferente em cada extremo.",
+      "convert": "O cone é guardado tal como o indica. Qualquer conversão para outra escala ou para uma temperatura é aproximada: um cone dobra-se a uma temperatura diferente com uma velocidade de aquecimento diferente, e os cones SK e Orton com o mesmo número não são iguais.",
+      "move": "Passar um vidrado para outro cone costuma significar reformulá-lo, e não apenas cozê-lo mais quente ou mais frio. «Duplicar para outro cone» mantém as duas versões."
+    },
+    "temperatureProblem": "Indique uma temperatura de {min} a {max}.",
+    "rateProblem": "Indique a velocidade como um número inteiro de graus por hora.",
+    "holdProblem": "Indique o patamar em minutos inteiros, até um dia.",
+    "one": {
+      "orton": "cone {cone}",
+      "sk": "SK {cone}"
+    },
+    "span": {
+      "orton": "cone {low}–{high}",
+      "sk": "SK {low}–{high}",
+      "temperature": "{low} a {high}"
+    },
+    "testedAt": "Testado a {cones}",
+    "claimedRange": "intervalo declarado {range}",
+    "rangeUntested": "Intervalo {range}; nenhum cone assinalado como testado",
+    "approxTemperature": "≈ {temperature} ({basis}; aproximado)",
+    "approxCone": "≈ {cone} ({basis}; aproximado)",
+    "basis": {
+      "orton60": "cones Orton grandes a 60 °C por hora",
+      "kyoto": "medido a 100 °C por hora pelo instituto municipal de Quioto",
+      "stated": "tal como indicado"
+    },
+    "rateText": "{rate} por hora na última hora",
+    "holdText": "patamar de {minutes} min",
+    "witnessText": "verificado com um cone testemunho",
+    "asGiven": "Cozedura, tal como indicada na receita:",
+    "filterCone": "Mostrar receitas para um cone",
+    "anyCone": "Qualquer cone",
+    "filterAtmosphere": "Mostrar receitas para uma atmosfera ou um processo",
+    "anyAtmosphere": "Qualquer atmosfera ou processo",
+    "duplicate": "Duplicar para outro cone",
+    "duplicateName": "Duplicar {title} para outro cone",
+    "duplicateTitle": "{title} (outro cone)",
+    "duplicateNote": "Uma cópia de {title}, ainda não guardada: escolha o novo cone em Cozedura. Passar um vidrado para outro cone costuma significar reformulá-lo, e não apenas cozê-lo mais quente ou mais frio, por isso verifique os limites e teste-o."
+  },
+  "firings": {
+    "heading": "Registos de cozedura",
+    "open": "Associar registos de cozedura",
+    "fetchFailed": "Não foi possível obter os seus registos de cozedura.",
+    "noLogs": "Ainda não há registos de cozedura.",
+    "toLogs": "Registar uma cozedura",
+    "saveFailed": "Não foi possível guardar a alteração às associações dos registos de cozedura.",
+    "resultFor": "Resultado em {title}",
+    "resultPlaceholder": "Como saiu: brilhante, sem fendilhamento…",
+    "unlink": "Desassociar",
+    "unlinkName": "Desassociar {title}",
+    "choose": "Um registo de cozedura a associar",
+    "link": "Associar",
+    "fill": "Assinale os cones que estes registos indicam: {cones}",
+    "replaceAsk": "Assinalado como testado: {now}. Substituir pelos cones que os registos indicam, {logs}?",
+    "replace": "Substituir",
+    "keep": "Deixar como está"
   }
 }

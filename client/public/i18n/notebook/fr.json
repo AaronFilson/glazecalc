@@ -88,7 +88,15 @@
     "chooseField": "Choisissez un champ à ajouter, puis cliquez sur Ajouter le champ.",
     "fetchFailed": "Impossible de récupérer les relevés de cuisson.",
     "saved": "Opération réussie : relevé de cuisson ajouté sur le serveur.",
-    "saveFailed": "Erreur : la requête au serveur a échoué."
+    "saveFailed": "Erreur : la requête au serveur a échoué.",
+    "recipesHeading": "Recettes cuites dans cette cuisson",
+    "noRecipes": "Aucune recette associée pour le moment.",
+    "recipesFailed": "Vos recettes n’ont pas pu être récupérées, donc aucune ne peut être associée pour l’instant.",
+    "pickRecipe": "Une recette cuite dans cette cuisson",
+    "linkRecipe": "Associer la recette",
+    "unlink": "Dissocier",
+    "unlinkRecipe": "Dissocier {title}",
+    "linkFailed": "L’association n’a pas pu être enregistrée."
   },
   "notes": {
     "title": "Notes",

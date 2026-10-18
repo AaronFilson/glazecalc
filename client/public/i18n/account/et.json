@@ -248,6 +248,22 @@
       "saved": "Salvestatud: arvud ja kuupäevad nagu keeles {language}.",
       "help": "Kuidas arve ja kuupäevi kirjutatakse: 12,345.6 või 12.345,6 ning päeva ja kuu järjekord."
     },
+    "calendar": {
+      "legend": "Kalender",
+      "help": "Kalender, milles kuupäevi näidatakse. Sisestatud kuupäevad jäävad Gregoriuse kalendrisse.",
+      "gregory": {
+        "label": "Gregoriuse kalender",
+        "saved": "Salvestatud: kuupäevi näidatakse Gregoriuse kalendri järgi."
+      },
+      "buddhist": {
+        "label": "Tai budistlik ajaarvamine",
+        "saved": "Salvestatud: kuupäevi näidatakse Tai budistliku ajaarvamise järgi."
+      },
+      "japanese": {
+        "label": "Jaapani ajastu",
+        "saved": "Salvestatud: kuupäevi näidatakse Jaapani ajastute järgi."
+      }
+    },
     "decimalMark": {
       "legend": "Koguste sisestamine",
       "either": {

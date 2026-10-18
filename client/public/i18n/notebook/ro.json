@@ -88,7 +88,15 @@
     "chooseField": "Alegeți un câmp de adăugat, apoi apăsați pe „Adăugați câmpul”.",
     "fetchFailed": "A apărut o eroare la încărcarea jurnalelor de ardere.",
     "saved": "Jurnalul de ardere s-a adăugat cu succes pe server.",
-    "saveFailed": "Eroare: cererea către server nu a reușit."
+    "saveFailed": "Eroare: cererea către server nu a reușit.",
+    "recipesHeading": "Rețete arse la această ardere",
+    "noRecipes": "Nu s-a asociat încă nicio rețetă.",
+    "recipesFailed": "Rețetele dumneavoastră nu au putut fi preluate, așa că acum nu se poate asocia nicio rețetă.",
+    "pickRecipe": "O rețetă arsă la această ardere",
+    "linkRecipe": "Asociați rețeta",
+    "unlink": "Dezasociați",
+    "unlinkRecipe": "Dezasociați {title}",
+    "linkFailed": "Asocierea nu a putut fi salvată."
   },
   "notes": {
     "title": "Notițe",

@@ -361,7 +361,8 @@
     "heading": "Dangers",
     "intro": "Tels que les donne l’enregistrement de chaque matière ; ceux de la bibliothèque standard viennent des fiches de données de sécurité des fournisseurs.",
     "line": "<b>{names} :</b> {hazards}",
-    "unknown": "{count, plural, one {Aucun danger n’est indiqué pour {list} : consultez la fiche de données de sécurité qui l’accompagne.} many {Aucun danger n’est indiqué pour {list} : consultez les fiches de données de sécurité qui les accompagnent.} other {Aucun danger n’est indiqué pour {list} : consultez les fiches de données de sécurité qui les accompagnent.}}"
+    "unknown": "{count, plural, one {Aucun danger n’est indiqué pour {list} : consultez la fiche de données de sécurité qui l’accompagne.} many {Aucun danger n’est indiqué pour {list} : consultez les fiches de données de sécurité qui les accompagnent.} other {Aucun danger n’est indiqué pour {list} : consultez les fiches de données de sécurité qui les accompagnent.}}",
+    "safety": "Les matières d’émail sèches produisent de la poussière : gardez-la hors de vos poumons, même celle des matières non classées dangereuses. Voir <mixing>Préparation en sécurité et ventilation</mixing>, et <home>N’empoisonnez pas votre famille</home> si des enfants ou des animaux de compagnie sont présents. Quand la fiche de données de sécurité d’une matière en dit plus, suivez-la."
   },
   "compare": {
     "heading": "Comparer deux recettes",
@@ -590,7 +591,10 @@
     "guidance": "Ce sont des repères, pas un verdict de réussite ou d’échec : un émail en dehors peut être très bien, et un émail dedans peut quand même tressaillir, relarguer ou rater. Testez-le.",
     "source": "Source :",
     "saveFailed": "Impossible d’enregistrer dans votre compte votre choix de jeu de limites : le jeu précédent reste donc celui qui est utilisé.",
-    "ownLimits": "Ces suggestions utilisent les limites propres à Glazecalc, et non {name}."
+    "ownLimits": "Ces suggestions utilisent les limites propres à Glazecalc, et non {name}.",
+    "firingFromBlock": "D’après la cuisson de la recette ({bands})",
+    "bothBands": "La cuisson de la recette couvre {bands} : chaque plage est donc vérifiée, côte à côte, car un émail se comporte rarement de la même façon aux deux extrémités.",
+    "fromFiring": "Les valeurs correspondent à la cuisson de la recette : {band}. Choisissez une cuisson ci-dessus pour en vérifier une autre."
   },
   "stull": {
     "heading": "Diagramme de Stull",
@@ -714,7 +718,8 @@
     "notSaved": "Rien n’a été enregistré : {problem}",
     "stopped": "{saved} enregistrées sur {count}. Les autres n’ont pas été enregistrées : {problem}",
     "saved": "{count, plural, one {# recette enregistrée.} many {# de recettes enregistrées.} other {# recettes enregistrées.}}",
-    "openRecipes": "Ouvrir vos recettes"
+    "openRecipes": "Ouvrir vos recettes",
+    "firingRead": "Cuisson lue dans les notes : {firing}"
   },
   "blends": {
     "title": "Mélanges pour tessons d’essai",
@@ -847,5 +852,115 @@
     "retry": "Réessayer",
     "about": "Glazecalc est un calculateur d’émaux gratuit pour céramistes.",
     "aboutLink": "À propos de Glazecalc"
+  },
+  "firing": {
+    "heading": "Cuisson",
+    "whatIsCone": "Que signifie « cône » ?",
+    "scale": "Échelle",
+    "scales": {
+      "orton": "Cônes Orton",
+      "sk": "Cônes SK (JIS)",
+      "temperature": "Température"
+    },
+    "groups": {
+      "usual": "Cônes 022 à 13",
+      "half": "Demi-cônes",
+      "above": "Cônes 14 à 42 (rares en poterie)"
+    },
+    "coneLabel": "Cône",
+    "lowCone": "Du cône",
+    "highCone": "Au cône",
+    "noHigh": "Pas de cône supérieur",
+    "notStated": "Non indiqué",
+    "peak": "Température maximale ({unit})",
+    "lowTemperature": "De ({unit})",
+    "highTemperature": "À ({unit})",
+    "rangeToggle": "Une plage",
+    "testedLegend": "Testé à : cochez chaque cône auquel vous l’avez cuit",
+    "atmosphere": "Atmosphère",
+    "process": "Procédé",
+    "atmospheres": {
+      "oxidation": "oxydation",
+      "reduction": "réduction",
+      "neutral": "neutre"
+    },
+    "processes": {
+      "wood": "cuisson au bois",
+      "soda": "cuisson à la soude",
+      "salt": "cuisson au sel",
+      "raku": "raku",
+      "pit": "cuisson en fosse"
+    },
+    "rate": "Vitesse sur la dernière heure ({unit} par heure)",
+    "hold": "Palier à la température maximale (minutes)",
+    "schedule": "Notes sur le programme",
+    "schedulePlaceholder": "Palier de 10 minutes, refroidissement lent…",
+    "witness": "Confirmé par un cône témoin",
+    "foodSurface": "Pour une surface alimentaire (un émail intérieur)",
+    "liner": {
+      "note": "La sécurité alimentaire dépend de la cuisson de cet émail au cône auquel il a été testé : un émail sous-cuit peut relarguer des métaux.",
+      "range": "Il est indiqué pour une plage : testez-le donc à l’extrémité basse de la plage, là où il fond le moins.",
+      "untested": "Aucun cône n’est encore marqué comme testé.",
+      "test": "Seul un test de relargage de vos propres pièces cuites montre s’il est apte au contact alimentaire."
+    },
+    "helpSummary": "À propos de la cuisson",
+    "help": {
+      "cone": "Le cône auquel vous avez cuit cet émail. Les cônes mesurent le travail thermique (temps et température), pas seulement la température : le cône 06 est donc beaucoup plus froid que le cône 6.",
+      "range": "Si l’émail fonctionne sur une plage, indiquez le cône le plus bas et le plus haut, et cochez les cônes auxquels vous l’avez réellement cuit : le cône testé s’affiche en premier. Un émail peut avoir un aspect, et un comportement, différent à chaque extrémité.",
+      "convert": "Le cône est conservé tel que vous l’indiquez. Toute conversion vers une autre échelle ou vers une température est approximative : un cône se courbe à une température différente selon la vitesse de chauffe, et des cônes SK et Orton de même numéro ne sont pas équivalents.",
+      "move": "Passer un émail à un autre cône demande en général de le reformuler, pas seulement de le cuire plus chaud ou plus froid. « Dupliquer pour un autre cône » conserve les deux versions."
+    },
+    "temperatureProblem": "Indiquez une température de {min} à {max}.",
+    "rateProblem": "Indiquez la vitesse en nombre entier de degrés par heure.",
+    "holdProblem": "Indiquez le palier en minutes entières, jusqu’à une journée.",
+    "one": {
+      "orton": "cône {cone}",
+      "sk": "SK {cone}"
+    },
+    "span": {
+      "orton": "cône {low}–{high}",
+      "sk": "SK {low}–{high}",
+      "temperature": "{low} à {high}"
+    },
+    "testedAt": "Testé à {cones}",
+    "claimedRange": "plage annoncée {range}",
+    "rangeUntested": "Plage {range} ; aucun cône coché comme testé",
+    "approxTemperature": "≈ {temperature} ({basis} ; approximatif)",
+    "approxCone": "≈ {cone} ({basis} ; approximatif)",
+    "basis": {
+      "orton60": "grands cônes Orton à 60 °C par heure",
+      "kyoto": "mesuré à 100 °C par heure par l’institut municipal de Kyoto",
+      "stated": "tel qu’indiqué"
+    },
+    "rateText": "{rate} par heure sur la dernière heure",
+    "holdText": "palier de {minutes} min",
+    "witnessText": "vérifié avec un cône témoin",
+    "asGiven": "Cuisson, telle qu’indiquée par l’auteur :",
+    "filterCone": "Afficher les recettes pour un cône",
+    "anyCone": "N’importe quel cône",
+    "filterAtmosphere": "Afficher les recettes pour une atmosphère ou un procédé",
+    "anyAtmosphere": "N’importe quelle atmosphère ou procédé",
+    "duplicate": "Dupliquer pour un autre cône",
+    "duplicateName": "Dupliquer {title} pour un autre cône",
+    "duplicateTitle": "{title} (autre cône)",
+    "duplicateNote": "Une copie de {title}, pas encore enregistrée : choisissez son nouveau cône dans Cuisson. Passer un émail à un autre cône demande en général de le reformuler, pas seulement de le cuire plus chaud ou plus froid ; vérifiez donc les limites et testez-le."
+  },
+  "firings": {
+    "heading": "Relevés de cuisson",
+    "open": "Associer des relevés de cuisson",
+    "fetchFailed": "Vos relevés de cuisson n’ont pas pu être récupérés.",
+    "noLogs": "Aucun relevé de cuisson pour le moment.",
+    "toLogs": "Enregistrer une cuisson",
+    "saveFailed": "La modification des associations de relevés de cuisson n’a pas pu être enregistrée.",
+    "resultFor": "Résultat dans {title}",
+    "resultPlaceholder": "Ce que cela a donné : brillant, sans tressaillage…",
+    "unlink": "Dissocier",
+    "unlinkName": "Dissocier {title}",
+    "choose": "Un relevé de cuisson à associer",
+    "link": "Associer",
+    "fill": "Cochez les cônes que ces relevés indiquent : {cones}",
+    "replaceAsk": "Les cônes cochés comme testés sont {now}. Les remplacer par ceux que les relevés indiquent, {logs} ?",
+    "replace": "Remplacer",
+    "keep": "Laisser tel quel"
   }
 }

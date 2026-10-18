@@ -56,7 +56,8 @@
     "vet": "Skambinkite savo veterinarui.",
     "checkedOn": "Patikrinta:",
     "choosePrompt": "Pasirinkite šalį, kad pamatytumėte, kur ten skambinti.",
-    "ministry": "Sveikatos apsaugos ministerijos puslapis: <link>{name}</link>."
+    "ministry": "Sveikatos apsaugos ministerijos puslapis: <link>{name}</link>.",
+    "reported": "Oficialūs vyriausybės puslapiai nurodo 113, 114 ir 115, bet ne tai, kam skirtas kiekvienas; parodytos paskirtys atitinka aplinkraštį 22/2014/TT-BTTTT, kaip jį cituoja antriniai puslapiai."
   },
   "density": {
     "sg": "santykinis tankis {value}",
@@ -91,6 +92,7 @@
     "caption": "Įkvepiamojo kristalinio silicio dioksido dulkių (alveolinė frakcija) ribinė vertė darbo vietoje, 8 valandų vidurkis: {region} (patikrinta {date})",
     "captionControl": "Įkvepiamojo kristalinio silicio dioksido dulkių vertinimo matas darbo zonos ore: {region} (patikrinta {date})",
     "both": "Kvarcas ir kristobalitas",
+    "freeSilica": "Laisvasis silicio dioksidas",
     "quartz": "Kvarcas",
     "cristobalite": "Kristobalitas",
     "actionLevel": "Veiksmų lygis",
@@ -171,7 +173,13 @@
       "thSmall": "Gaminiai, gilesni kaip 25 mm, mažesni nei 1,1 L",
       "thLarge": "Gaminiai, gilesni kaip 25 mm, 1,1 L ar didesni",
       "thInfant": "Indai iki 12 mėnesių kūdikių maistui",
-      "thCooking": "Indai maistui gaminti, skirti atlaikyti gaminimo karštį"
+      "thCooking": "Indai maistui gaminti, skirti atlaikyti gaminimo karštį",
+      "vnFlat": "Negilūs dirbiniai maistui laikyti ar gaminti",
+      "vnSmall": "Gilūs dirbiniai maistui laikyti, mažesni nei 1100 mL",
+      "vnMedium": "Gilūs dirbiniai maistui laikyti, nuo 1100 mL iki mažesnių nei 3000 mL",
+      "vnStorage": "Gilūs dirbiniai maistui laikyti, 3000 mL ar didesni",
+      "vnCooking": "Gilūs dirbiniai maistui gaminti",
+      "vnCups": "Puodeliai ir nedideli dubenėliai"
     },
     "judged": {
       "average": "6 gaminių vidurkis",

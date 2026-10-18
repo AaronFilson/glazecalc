@@ -248,6 +248,22 @@
       "saved": "Uloženo: čísla a data jako v jazyce {language}.",
       "help": "Jak se zapisují čísla a data: 12,345.6 nebo 12.345,6, a také pořadí dne a měsíce."
     },
+    "calendar": {
+      "legend": "Kalendář",
+      "help": "Kalendář, ve kterém se zobrazují data. Data, která zadáváte, zůstávají v gregoriánském kalendáři.",
+      "gregory": {
+        "label": "Gregoriánský",
+        "saved": "Uloženo: data se zobrazují v gregoriánském kalendáři."
+      },
+      "buddhist": {
+        "label": "Thajský buddhistický letopočet",
+        "saved": "Uloženo: data se zobrazují v thajském buddhistickém letopočtu."
+      },
+      "japanese": {
+        "label": "Japonské éry",
+        "saved": "Uloženo: data se zobrazují v japonských érách."
+      }
+    },
     "decimalMark": {
       "legend": "Zadávání množství",
       "either": {
