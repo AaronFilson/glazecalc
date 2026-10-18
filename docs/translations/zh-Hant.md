@@ -118,7 +118,7 @@ without it, as Chinese prefers: 「請輸入密碼。」 rather than 「請您�
 - **Errors**: a short statement, then what to do, with 請: 「找不到這個配方。」「無法儲存，請再試一次。」 MS's patterns: 「找不到...」,
   「無法...」, "You might want to" → 「建議您...」 (never 「您可能想要...」).
 - **Questions and confirmations**: 「要刪除這個配方嗎？」 or, more formal, 「確定要刪除這個配方嗎？」.
-- **Guide sentence**: plain statements and 請 for instructions: 「釉藥篩兩次後再使用。」「請戴上防塵口罩。」「釉層太厚時容易流釉。」
+- **Guide sentence**: plain statements and 請 for instructions: 「釉藥篩兩次後再使用。」「請戴上呼吸防護具。」「釉層太厚時容易流釉。」
 - **Prohibitions**: 「請勿…」 for "do not"; 「切勿…」 or 「絕對不要…」 for "never": 「切勿用壓縮空氣吹除粉塵。」 A "never" must not
   weaken to 「最好不要」.
 - **should and must** (safety text): "must" → 「必須…」 (or 「一定要…」); "should" → 「應該…」 or 「建議…」; "should not" →
@@ -403,9 +403,13 @@ in `zh-Hant`).
   lime (CaO or Ca(OH)₂), never whiting. CaO is **氧化鈣**, "calcium" 鈣. 白堊 (樂詞網's word for whiting) is chalk: not used.
 - **溶出試驗**: the leach test (衛生標準), the test of what metals a fired piece releases. Never narrowed to 鉛、鎘 unless the English
   names them.
-- **防塵口罩, 呼吸防護具, 抽風機, 呼吸器**: a respirator is **防塵口罩** (CNS 14755) or, as a class, 呼吸防護具; a hospital ventilator is
-  **人工呼吸器** (樂詞網 醫學: respirator → 人工呼吸器, the trap), never meant here; a fan is 抽風機 or 排風扇; local exhaust is 局部排氣.
-  "nuisance dust mask" → 「一般口罩（非 CNS 14755 防塵口罩）」.
+- **呼吸防護具, 防塵口罩, 抽風機, 呼吸器**: a respirator is **呼吸防護具** (the OSHA handbook's word), in every sentence and heading.
+  **Never 防塵口罩 alone for a respirator**: it is also the everyday word for any dust mask, so a text that says "a dust mask is not
+  enough" would contradict itself (round 3 back-translation). Name CNS 14755 by its title 「拋棄式防塵口罩」 only where the English
+  names the standard. 防塵口罩 is otherwise kept for the cheap "dust mask" / "nuisance dust mask" the English says is _not_ a
+  respirator: 「一般防塵口罩」 or 「一般口罩（非 CNS 14755）」. A "mask" in general is 面罩; 口罩 only for surgical, cloth and dust
+  masks. A hospital ventilator is **人工呼吸器** (樂詞網 醫學: respirator → 人工呼吸器, the trap), never meant here; a fan is 抽風機
+  or 排風扇; local exhaust is 局部排氣.
 - **指南 and 使用說明書**: the app's five guides are **指南**; a kiln's or controller's manual is **使用說明書**. Never the same word.
 - **棚板, 硼板**: a kiln shelf is **棚板** (太麟, 鴻勝, 科技大觀園). Studios and 釉藥堂 also write 硼板, but 硼 is boron: never write it.
   Hong Kong's shops say 窯板.
@@ -662,7 +666,7 @@ choice with no Traditional Chinese source; **Native check**: for a Taiwanese pot
 | crystalline silica, amorphous silica, cristobalite                    | 結晶型二氧化矽, 非晶型二氧化矽, 方矽石               | 樂詞網 礦物 方矽石 (材料 白矽石): **Native check** against the law's 附表二, which could not be read.                                                                                                        |
 | silicosis, COPD                                                       | 矽肺症, 慢性阻塞性肺病（COPD）                       | 職安署指引 (職業性矽肺症). COPD: Taiwan's 衛福部 writes 慢性阻塞性肺病 (not read today).                                                                                                                     |
 | exposure limit, action level                                          | 容許濃度（暴露限值）, 行動基準                       | 容許暴露標準: 容許濃度. "action level" (US) → 「行動基準（美國）」. No source for 行動基準.                                                                                                                  |
-| respirator                                                            | 防塵口罩（呼吸防護具）                               | CNS 14755「拋棄式防塵口罩」; the OSHA handbook's class word 呼吸防護具. One word in every file; Taiwan's classes D2, D3. Not 人工呼吸器 (樂詞網 醫學's respirator: the trap; Pitfalls), not 一般口罩.        |
+| respirator                                                            | 呼吸防護具                                           | OSHA handbook's class word, in every file and heading. Never 防塵口罩 alone (any everyday dust mask too; Pitfalls); CNS 14755「拋棄式防塵口罩」 only as its title. Not 人工呼吸器 or 一般口罩.               |
 | N95, P100, FFP2, FFP3, P2, P3                                         | (kept)                                               | Never translated. Taiwan's D2, D3 kept as codes.                                                                                                                                                             |
 | half mask, powered respirator (PAPR)                                  | 半面式呼吸防護具（濾罐式）, 動力型呼吸防護具（PAPR） | Usage (OSHA handbook's family of words; not read).                                                                                                                                                           |
 | fit test                                                              | 密合度測試                                           | Usage (OSHA's respirator programme; not read).                                                                                                                                                               |
@@ -693,7 +697,7 @@ choice with no Traditional Chinese source; **Native check**: for a Taiwanese pot
 | combustible, clearance, dedicated circuit                             | 可燃物, 安全距離, 專用迴路                           |                                                                                                                                                                                                              |
 | manual (a kiln's, controller's or sitter's)                           | 使用說明書                                           | Never 指南 (Pitfalls).                                                                                                                                                                                       |
 | oxidiser (H272)                                                       | 氧化性物質                                           | GHS 氧化性固體; H272 「可能加劇燃燒；氧化劑」 (usage).                                                                                                                                                       |
-| nuisance dust                                                         | 低危害性粉塵                                         | The dust itself (records: "Low hazard nuisance dust"). "a nuisance dust mask" → 「一般口罩（非 CNS 14755 防塵口罩）」, not a respirator.                                                                     |
+| nuisance dust                                                         | 低危害性粉塵                                         | The dust itself (records: "Low hazard nuisance dust"). "a nuisance dust mask" → 「一般防塵口罩」 or 「一般口罩（非 CNS 14755）」, not a respirator.                                                          |
 | stannosis                                                             | 錫末沉著症                                           | The benign lung condition from tin oxide dust (records). Usage; **Native check**.                                                                                                                            |
 | engineering controls                                                  | 工程控制                                             | SDS section 8: ventilation and extraction.                                                                                                                                                                   |
 | squirrel-cage (centrifugal) fan                                       | 離心式風扇（鼠籠式）                                 | For a kiln vent, as against an axial fan (軸流風扇). No source.                                                                                                                                              |

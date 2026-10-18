@@ -167,7 +167,7 @@ Chinese sentence is written as the maker writes it (Gerstley Borate, Zircopax), 
 
 - **No space between Chinese words**, ever, and **never a full-width space** (U+3000).
 - **A half-width space between Chinese and a Latin word, a trade name, a code or a figure**, as MS's examples do
-  (「发布到 Web 上」「无法使用 Internet」, 「%d 位用户在线」): 「加入 Ferro 3134」「烧到 Orton 测温锥 6 号」「KN95 防尘口罩」「在 1222 °C 保温」
+  (「发布到 Web 上」「无法使用 Internet」, 「%d 位用户在线」): 「加入 Ferro 3134」「烧到 Orton 测温锥 6 号」「KN95 呼吸器」「在 1222 °C 保温」
   「# 种原料」「3 次」「14 天」.
 - **No space** next to full-width punctuation or brackets (「“Gerstley Borate”」「釉式（UMF）」「1222 °C。」), and none inside a date
   or a clock time written in Chinese: 2026年10月14日, 20时, 15时40分.
@@ -392,9 +392,13 @@ them. Where the English names no standard, add none (no GB number, no GBZ number
   is Chinese porcelain stone, a different material from "Cornish stone": never a translation of it.
 - **溶出试验** for the leach test: a test of the metals a fired piece releases, **not narrowed to 铅、镉** unless the English names
   those two. The law's figure is a 迁移量; the potter's test is 溶出试验.
-- **防尘口罩, 呼吸防护用品, 排风扇**: a respirator is **防尘口罩** (the certified kind: KN95 in China); the law's word 自吸过滤式防颗粒物呼吸器
-  is used only where the English names the standard; 呼吸防护用品 is the general class. A hospital ventilator is 呼吸机, never meant
-  here. Ventilation is 通风, a fan 排风扇. A "nuisance dust mask" → 「普通防尘面罩（非认证）」 or 「一次性普通口罩」: never 防尘口罩 alone.
+- **防颗粒物呼吸器, 防尘口罩, 呼吸防护用品, 排风扇**: a respirator is **防颗粒物呼吸器** (GB 2626-2019's own word, 《呼吸防护 自吸
+  过滤式防颗粒物呼吸器》), shortened to **呼吸器** once introduced; the full 自吸过滤式防颗粒物呼吸器 only where the English names the
+  standard; 呼吸防护用品 is the general class (GB/T 18664). **Never 防尘口罩 for a respirator**: it is the everyday word for any
+  dust mask, certified or not, so a text that says "a dust mask is not enough" would contradict itself (round 3 back-translation).
+  防尘口罩 is kept for the cheap "dust mask" / "nuisance dust mask" the English says is _not_ a respirator, qualified as
+  「普通防尘口罩」 (or 「普通防尘面罩（非认证）」, 「一次性普通口罩」). A "mask" in general (one that leaks, NIOSH on the mask) is 面罩;
+  口罩 only for surgical, cloth and dust masks. A hospital ventilator is 呼吸机, never meant here. Ventilation is 通风, a fan 排风扇.
 - **指南 and 使用说明书**: the app's five guides are **指南**; a kiln's, controller's or kiln sitter's manual is **使用说明书**. Never
   the same word.
 - **开片 and 釉裂**: crackle (wanted) is **开片**; crazing as a defect is **釉裂**. The same cracks, different intent: keep the two
@@ -651,7 +655,7 @@ choice with no Chinese source.
 | crystalline silica, amorphous silica, cristobalite                    | 结晶型二氧化硅, 无定形二氧化硅, 方石英       | GBZ 2.1 (G1（结晶型）).                                                                                                                                                                                                                  |
 | silicosis, COPD                                                       | 硅肺, 慢性阻塞性肺疾病（慢阻肺）             | 维基 (硅肺, 尘肺病). The law writes 矽肺 (Script and characters).                                                                                                                                                                        |
 | exposure limit, action level                                          | 职业接触限值, 行动水平                       | GBZ 2.1 (职业接触限值, PC-TWA). "action level" (US) → 「行动水平（美国）」.                                                                                                                                                              |
-| respirator                                                            | 防尘口罩                                     | Also for "dust mask" where the English means a certified one. The certified kind (KN95). The law's 自吸过滤式防颗粒物呼吸器 only where the English names the standard. Not 呼吸机 (Pitfalls).                                            |
+| respirator                                                            | 防颗粒物呼吸器（简称呼吸器）                 | GB 2626-2019's word. Never 防尘口罩 (that is any everyday dust mask; Pitfalls). 呼吸防护用品 for the class; the full 自吸过滤式防颗粒物呼吸器 only where the English names the standard. A generic "mask" → 面罩. Not 呼吸机.            |
 | N95, P100, FFP2, FFP3, P2, P3                                         | (kept)                                       | Never translated. China's KN95, KN100, KP95 kept as codes.                                                                                                                                                                               |
 | half mask, powered respirator (PAPR)                                  | 可更换式半面罩, 动力送风过滤式呼吸器（PAPR） | Usage (GB 2626 and GB 30864 names; texts not read).                                                                                                                                                                                      |
 | fit test                                                              | 适合性检验                                   | Usage (GB/T 18664).                                                                                                                                                                                                                      |
