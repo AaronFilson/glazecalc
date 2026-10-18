@@ -103,6 +103,9 @@ import { silicaAluminaRatio, unityColumnOf } from './unity-formula';
     }
     .num {
       text-align: end;
+    }
+    /* Figures stay whole; a column's heading wraps instead, so the table fits a phone. */
+    td.num {
       white-space: nowrap;
     }
     .numbers-note {

@@ -251,6 +251,9 @@ export function statusText(row: LimitRow): string {
     }
     .num {
       text-align: end;
+    }
+    /* Figures stay whole; a column's heading wraps instead, so the table fits a phone. */
+    td.num {
       white-space: nowrap;
     }
     .limits-past td:last-child {
