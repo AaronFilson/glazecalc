@@ -316,7 +316,7 @@
       "sg": {
         "label": "Berat jenis",
         "saved": "Tersimpan: kerapatan glasir sebagai berat jenis.",
-        "example": "berat jenis 1,45"
+        "example": "1,45"
       },
       "baume": {
         "label": "Derajat Baumé, dari hidrometer",
