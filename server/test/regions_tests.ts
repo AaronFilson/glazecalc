@@ -540,7 +540,8 @@ describe('regions before Vietnam', () => {
     ]);
     data.push(['EU', food.FOOD['EU'], workplace.EU_SILICA]);
     const hash = crypto.createHash('sha256').update(JSON.stringify(data)).digest('hex');
-    expect(hash).to.equal('8a2fe333cf8f9cbcfa05f081ef40c1120b7619e1284a8977f744d4ca0b627bc0');
+    // Changed once on purpose: Indonesia's note says 118 reaches an ambulance only in some cities (2026-10-17).
+    expect(hash).to.equal('72e96eb0f7a107c5902a44192f2afa913c8ab4095cbaeaa395f0d02d2dc51074');
   });
 });
 

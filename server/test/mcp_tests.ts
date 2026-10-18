@@ -445,7 +445,7 @@ describe('MCP: the guides, resources and prompts', () => {
     expect(german.results[0].url.startsWith(site.siteUrl() + '/de/guides/')).to.equal(true);
     expect(german.results[0].resource).to.match(/^glazecalc:\/\/guides\/de\//);
 
-    const fallback = await data('search_guides', { query: 'dishwasher', language: 'de' });
+    const fallback = await data('search_guides', { query: 'bucket', language: 'de' });
     expect(fallback.language).to.equal('en');
     expect(fallback.note).to.include('English');
     expect(fallback.results[0].url).to.match(/\/de\/guides\//);
@@ -488,9 +488,9 @@ describe('MCP: the guides, resources and prompts', () => {
     expect(guide.text).to.include('180 °F (100 °C)');
     expect(guide.text).not.to.match(/\{\{|^:::/m);
 
-    const section = await read('glazecalc://guides/de/firing/kiln-sitter');
-    expect(section.text).to.match(/^# Brennen mit einem einfachen Ofen\n\n## Der Kiln-Sitter\n/);
-    expect(section.text).to.include('Source: ' + site.siteUrl() + '/de/guides/firing#kiln-sitter');
+    const section = await read('glazecalc://guides/de/firing/cone-pack');
+    expect(section.text).to.match(/^# Brennen mit einem einfachen Ofen\n\n## Einen Kegelsatz aufstellen\n/);
+    expect(section.text).to.include('Source: ' + site.siteUrl() + '/de/guides/firing#cone-pack');
 
     // Who to call is drawn for the reader's country on the site: the resource says so.
     const swallowed = await read('glazecalc://guides/en/home-safety/if-something-is-swallowed');
