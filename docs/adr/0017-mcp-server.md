@@ -106,9 +106,10 @@ an assistant to act for one person that is not their web session.
   `WWW-Authenticate` and RFC 9728's `resource_metadata`, and the Protected Resource Metadata is at
   `/.well-known/oauth-protected-resource/mcp` (no authorization server yet).
 - **Limits** (`server/lib/rate_limit.ts`, in memory as the others): without a token, 60 requests a
-  minute and 2,000 a day per address; with one, 120 and 5,000 per account. The tools that fit
-  amounts (`suggest_substitutes`, `match_from_materials`, `match_with_what_i_have`) are also
-  limited to 10 a minute per caller. A JSON-RPC batch is refused (400, `-32600`) before the SDK, so
+  minute and 2,000 a day per address; with one, 300 and 20,000 per account (raised from 120 and
+  5,000 on 2026-10-18, for assistants that work with subagents; a token can be revoked, an address
+  cannot). The tools that fit amounts (`suggest_substitutes`, `match_from_materials`,
+  `match_with_what_i_have`) are also limited to 10 a minute per caller. A JSON-RPC batch is refused (400, `-32600`) before the SDK, so
   each request is one message: 2025-06-18 removed batches, and neither 2025-11-25 nor 2026-07-28
   has them (a 2025-03-26 client that batches is refused too). One address may keep at most 3
   subscription streams (`subscriptions/listen`) open, of the SDK's 1,024, and a stream ends when

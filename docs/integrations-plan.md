@@ -34,7 +34,7 @@ Google and GitHub are built ([ADR 0015](adr/0015-provider-sign-in.md)), on `fetc
 20. **Tools:** `search_materials`, `get_material`, `analyze_recipe`, `check_limits`, `convert_cone_temperature`, `suggest_substitutes`, `search_guides`, with structured output and `language`/`temperature` arguments. M (2 d). `server/mcp/tools/*.ts`, `lib/chemistry`, `lib/recipe`, `data/`.
 21. **Resources and prompts** (guides per language and section, materials, cones; four prompts). S (0.5–1 d). `server/mcp/`.
 22. **Server-side translator** over `client/public/i18n/<lang>.json` using `intl-messageformat`. S. `server/mcp/i18n.ts`.
-23. **Limits and caps.** Per IP 60 a minute and 2,000 a day; fitting tools 10 a minute; at most 40 recipe lines. S. `server/lib/rate_limit.ts`.
+23. **Limits and caps.** Per IP 60 a minute and 2,000 a day (with a token, per account 300 and 20,000); fitting tools 10 a minute; at most 40 recipe lines. S. `server/lib/rate_limit.ts`.
 24. **Tests:** a `tools/list` snapshot, known values, the conformance suite (2026-07-28 and 2025-11-25) and an Inspector CLI smoke test in Ubuntu CI. M (1–2 d). `server/test/mcp_tests.ts`, CI workflow.
 25. **Publishing:** a "Use Glazecalc from your AI assistant" page (24 languages), `server.json`, the registry name `com.glazecalcapp/glazecalc`, and ADR 0017. S (1 d). `/.well-known/mcp-registry-auth`, docs page.
 

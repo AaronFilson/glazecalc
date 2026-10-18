@@ -124,18 +124,20 @@ export const tokenDeletes = limiter(60, 100, 'too-many-deletes', {
 /**
  * Every request made with an access token (server/lib/require_scope.ts: the
  * record, Trash and firing-link routes), per account, whichever of its tokens
- * is used: the same figures as the MCP endpoint's with a token (MCP_LIMITS),
- * 120 a minute and 5,000 a day. Each change keeps a version and writes the
- * activity log, so a script gone wrong is stopped before it does much. The
- * web session is not counted. tokenDeletes still bounds deletes on top.
+ * is used: 120 a minute and 5,000 a day (TOKEN_LIMITS), fewer than the MCP
+ * endpoint allows a token, since these routes write records. Each change keeps
+ * a version and writes the activity log, so a script gone wrong is stopped
+ * before it does much. The web session is not counted. tokenDeletes still
+ * bounds deletes on top.
  */
+export const TOKEN_LIMITS = { minute: 120, day: 5000 } as const;
 const tokenKey = (req: Request): string => 'token:' + String(req.user?._id);
 const viaToken = (req: Request): boolean => Boolean(req.access) && req.access?.via !== 'session';
-export const tokenMinute = limiter(1, () => MCP_LIMITS.minute.account, 'too-many-attempts', {
+export const tokenMinute = limiter(1, () => TOKEN_LIMITS.minute, 'too-many-attempts', {
   skip: (req) => !viaToken(req),
   keyGenerator: tokenKey
 });
-export const tokenDay = limiter(24 * 60, () => MCP_LIMITS.day.account, 'too-many-attempts', {
+export const tokenDay = limiter(24 * 60, () => TOKEN_LIMITS.day, 'too-many-attempts', {
   skip: (req) => !viaToken(req),
   keyGenerator: (req) => tokenKey(req) + ':day'
 });
@@ -215,13 +217,15 @@ export const mfaChallenges = limiter(15, 30, 'too-many-attempts', {
  * and 31): requests a minute and a day. Without a token, per address: 60 a
  * minute and 2,000 a day, which an assistant working through a recipe stays
  * well under. With a working token, per account (whichever of its tokens is
- * used), and a little more. The tools that fit amounts have a limit of their
- * own on top (server/mcp/common.ts countFit). After the token check, which
- * says who is calling (req.mcpCaller).
+ * used): 300 a minute and 20,000 a day, for an assistant that works through
+ * many recipes at once with subagents; a token can be revoked, an address
+ * cannot. The tools that fit amounts have a limit of their own on top
+ * (server/mcp/common.ts countFit). After the token check, which says who is
+ * calling (req.mcpCaller).
  */
 const mcpKey = (req: Request): string => 'mcp:' + (req.mcpCaller?.key ?? 'unknown');
 const withToken = (req: Request): boolean => Boolean(req.mcpCaller?.userId);
-export const MCP_LIMITS = { minute: { anyone: 60, account: 120 }, day: { anyone: 2000, account: 5000 } } as const;
+export const MCP_LIMITS = { minute: { anyone: 60, account: 300 }, day: { anyone: 2000, account: 20000 } } as const;
 export const mcpMinute = limiter(
   1,
   (req) => (withToken(req) ? MCP_LIMITS.minute.account : MCP_LIMITS.minute.anyone),
