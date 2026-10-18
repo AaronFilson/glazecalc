@@ -16,6 +16,8 @@
 //                               database (MCP_MONGODB_URI, glazecalc_mcp_conformance),
 //                               runs both, and stops it
 //   MCP_URL=http://host/mcp npm run test:mcp   checks a server already running
+//   MCP_INSPECTOR_ONLY=1 MCP_URL=...           only step 2: a handful of requests, under
+//                                               a deployed site's limit per address
 //
 // MongoDB must be running for the first. The suite and the Inspector are not the
 // app's dependencies: they are installed apart, at the exact versions and with
@@ -143,7 +145,9 @@ const main = async () => {
   // The suite writes its results under the directory it runs in: not the repository.
   const work = mkdtempSync(path.join(tmpdir(), 'glazecalc-mcp-'));
   try {
-    for (const revision of REVISIONS) {
+    // A deployed site (the Live checks) answers 60 requests a minute to one
+    // address: the suite sends far more, so only the Inspector's few run there.
+    for (const revision of process.env.MCP_INSPECTOR_ONLY ? [] : REVISIONS) {
       console.log(`\n== Conformance suite, ${revision} ==`);
       const baseline = path.join(root, 'scripts', 'mcp-conformance', revision + '.yml');
       const result = await run(

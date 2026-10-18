@@ -77,7 +77,7 @@ jobs:
         run: npm ci --ignore-scripts --no-audit --no-fund
 
       - name: MCP endpoint
-        run: MCP_URL="$LIVE_URL/mcp" npm run test:mcp
+        run: MCP_INSPECTOR_ONLY=1 MCP_URL="$LIVE_URL/mcp" npm run test:mcp
 
       - name: Keep what failed (screenshots, traces)
         if: failure()
