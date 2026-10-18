@@ -45,6 +45,7 @@
     "account": "Tài khoản",
     "trialAccount": "Tài khoản dùng thử",
     "accountTitle": "Tài khoản và cài đặt của bạn",
+    "trash": "Thùng rác",
     "signOut": "Đăng xuất",
     "createAccount": "Tạo tài khoản miễn phí"
   },
@@ -90,7 +91,8 @@
     "advice": "Mẹo thực tế về pha men, tráng men và nung, từ Glazecalc, cùng lời khuyên của riêng bạn. Miễn phí cho thợ gốm và nghệ nhân gốm sứ.",
     "about": "Glazecalc là công cụ tính men và sổ tay hóa học men miễn phí, mã nguồn mở. Xem cách nó tính công thức Seger và cách nó được xây dựng.",
     "privacy": "Cách Glazecalc xử lý dữ liệu của bạn: không quảng cáo, phân tích hay theo dõi, không bán gì cả. Những gì được lưu, vì sao, và cách thực hiện quyền của bạn.",
-    "signup": "Tạo tài khoản Glazecalc miễn phí để lưu công thức men, nguyên liệu, ghi chú và nhật ký nung. Không quảng cáo, và dữ liệu của bạn không bao giờ bị bán."
+    "signup": "Tạo tài khoản Glazecalc miễn phí để lưu công thức men, nguyên liệu, ghi chú và nhật ký nung. Không quảng cáo, và dữ liệu của bạn không bao giờ bị bán.",
+    "imageAlt": "Trang chủ Glazecalc: hóa học men miễn phí cho thợ gốm, bên cạnh ảnh các bộ côn đã nung."
   },
   "notices": {
     "dismiss": "Bỏ qua",
@@ -283,6 +285,7 @@
     "close": "Đóng"
   },
   "unity": {
+    "fluxes": "Chất trợ chảy - R₂O và RO",
     "stabilizers": "Chất ổn định - R₂O₃",
     "glassFormers": "Chất tạo thủy tinh - RO₂",
     "wildcards": "Oxit khác",

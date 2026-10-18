@@ -49,6 +49,10 @@
         "title": "Panduan",
         "text": "Dari apa itu glasir sampai membakarnya, dan menjaga semua orang tetap aman di sepanjang jalan."
       },
+      "trash": {
+        "title": "Sampah",
+        "text": "Kembalikan apa yang Anda hapus dalam 30 hari terakhir."
+      },
       "account": {
         "title": "Akun dan pengaturan",
         "text": "Pengaturan, kata sandi Anda, autentikasi dua langkah, dan unduhan semua yang Anda simpan di sini."
@@ -116,6 +120,7 @@
   },
   "trash": {
     "title": "Sampah",
+    "lead": "Apa yang Anda hapus (resep, bahan, aditif, catatan, catatan pembakaran, dan saran) menunggu di sini selama 30 hari. Kembalikan, atau hapus secara permanen.",
     "listHeading": "Di Sampah",
     "none": "Sampah kosong.",
     "untitled": "Tanpa judul",

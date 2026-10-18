@@ -3,39 +3,39 @@ title: Mencampur dengan aman dan ventilasi
 lead: Cara menjaga debu glasir tetap di luar paru-paru Anda dan asap tungku tetap di luar rumah Anda: kebiasaan, peralatan, dan bahan yang paling penting.
 ---
 
-## The main hazard: dust {#the-main-hazard lang=en}
+## Bahaya utama: debu {#the-main-hazard}
 
-The main long-term hazard in glaze work is dust, above all **respirable crystalline silica**: particles of quartz or cristobalite (crystal forms of silica) small enough to reach deep into the lungs. Crystalline silica can make up about 10 to 60% of a glaze's dry weight, and most clays (except kaolin) and many feldspars also carry fine quartz. The UK's Health and Safety Executive (HSE) says this dust "is very fine and invisible under normal lighting", so a room that looks clean is not proof that the air is.
+Bahaya jangka panjang utama dalam pekerjaan glasir adalah debu, terutama **silika kristalin respirabel**{{en: respirable crystalline silica}}: partikel kuarsa atau kristobalit (bentuk kristal silika) yang cukup kecil untuk mencapai bagian dalam paru-paru. Silika kristalin dapat menyusun sekitar 10 sampai 60% berat kering glasir, dan sebagian besar tanah liat (kecuali kaolin) dan banyak feldspar juga mengandung kuarsa halus. Health and Safety Executive (HSE), badan kesehatan dan keselamatan Inggris, menyatakan debu ini "sangat halus dan tidak terlihat di bawah pencahayaan biasa", jadi ruangan yang tampak bersih bukan bukti bahwa udaranya bersih.
 
-Breathed in over time, it can cause **silicosis**, a lung disease that HSE describes as "serious and irreversible" and able to "cause permanent disablement and early death". It can also cause **COPD** (chronic obstructive pulmonary disease: long-term bronchitis and emphysema), which smoking makes worse. IARC, the World Health Organization's cancer agency, places inhaled crystalline silica in Group 1, "carcinogenic to humans".
+Bila terhirup dalam jangka waktu lama, debu ini dapat menyebabkan **silikosis**, penyakit paru-paru yang digambarkan HSE sebagai "serius dan tidak dapat pulih" dan mampu "menyebabkan cacat permanen dan kematian dini". Debu ini juga dapat menyebabkan **PPOK** (penyakit paru obstruktif kronik: bronkitis dan emfisema jangka panjang), yang diperburuk oleh merokok. IARC, badan kanker Organisasi Kesehatan Dunia, menempatkan silika kristalin yang terhirup dalam Kelompok 1, "karsinogenik bagi manusia".
 
-Silica does not turn into fumes in the kiln, and a wet glaze is not an inhalation hazard unless it is sprayed: spray mist carries silica and dries to dust (see Spraying, below). The times to take care are when material is dry: opening bags, weighing, stirring powder into water, and cleaning up drips, overspray and slop once they have dried back into dust.
+Silika tidak berubah menjadi asap di tungku, dan glasir basah bukan bahaya inhalasi kecuali disemprot: kabut semprot membawa silika dan mengering menjadi debu (lihat "Penyemprotan" di bawah). Saat yang perlu berhati-hati adalah ketika bahan kering: membuka kantong, menimbang, mengaduk bubuk ke dalam air, dan membersihkan tetesan, semprotan berlebih, dan lumpur setelah mengering kembali menjadi debu.
 
-### Exposure limits
+### Batas paparan
 
-Workplace rules set an **exposure limit**: the most silica a worker may breathe, averaged over an 8-hour day, in milligrams (mg) or micrograms (µg, thousandths of a milligram) per cubic meter of air.
+Aturan tempat kerja menetapkan **batas paparan**: jumlah silika paling banyak yang boleh dihirup pekerja, dirata-ratakan selama hari kerja 8 jam, dalam miligram (mg) atau mikrogram (µg, seperseribu miligram) per meter kubik udara.
 
-Table: Workplace limits for respirable crystalline silica (8-hour average)
-Label: Silica exposure limits
+Table: Batas tempat kerja untuk silika kristalin respirabel (rata-rata 8 jam)
+Label: Batas paparan silika
 
-| Region         |                 Limit | Notes                                                                             |
-| -------------- | --------------------: | --------------------------------------------------------------------------------- |
-| United States  | 0.05 mg/m³ (50 µg/m³) | OSHA's limit. Employers must start taking action at 25 µg/m³, the "action level". |
-| United Kingdom |             0.1 mg/m³ | Exposure must also be kept "as low as reasonably practicable".                    |
-| European Union |             0.1 mg/m³ | Binding limit (Directive 2017/2398). Some member states set lower ones.           |
-| Australia      |            0.05 mg/m³ | Since July 2020. In June 2026, most ministers did not support a cut to 0.025.     |
-| New Zealand    |           0.025 mg/m³ | Since 2023. WorkSafe's standards are guidance, not legal limits.                  |
+| Wilayah         |                 Batas | Catatan                                                                                                                 |
+| --------------- | --------------------: | ----------------------------------------------------------------------------------------------------------------------- |
+| Amerika Serikat | 0,05 mg/m³ (50 µg/m³) | Batas OSHA, badan keselamatan kerja AS. Pemberi kerja harus mulai mengambil tindakan pada 25 µg/m³, "tingkat tindakan". |
+| Inggris Raya    |             0,1 mg/m³ | Paparan juga harus dijaga "serendah yang layak dapat dilakukan".                                                        |
+| Uni Eropa       |             0,1 mg/m³ | Batas mengikat (Direktif 2017/2398). Sebagian negara anggota menetapkan yang lebih rendah.                              |
+| Australia       |            0,05 mg/m³ | Sejak Juli 2020. Pada Juni 2026, sebagian besar menteri tidak mendukung penurunan ke 0,025.                             |
+| Selandia Baru   |           0,025 mg/m³ | Sejak 2023. Standar WorkSafe adalah panduan, bukan batas hukum.                                                         |
 
-Some pages quote 0.025 mg/m³ for Australia, but the official limit is still 0.05. Either way, the advice is the same: keep dust as low as you can.
+Sebagian halaman mengutip 0,025 mg/m³ untuk Australia, tetapi batas resminya masih 0,05. Bagaimanapun, sarannya sama: jaga debu serendah yang Anda bisa.
 
-Several EU member states set lower limits than the EU's. The limit where you live, the law that sets it and the national body for safety at work:
+Beberapa negara anggota UE menetapkan batas yang lebih rendah daripada batas UE. Batas di tempat Anda tinggal, hukum yang menetapkannya, dan lembaga nasional keselamatan kerja:
 
 ::silica-limit
 
 > [!NOTE]
-> These are workplace limits. They bind employers, so no one inspects a potter working alone at home, though community studios and schools with staff are usually covered (check your local rules). The dust is the same at home, and the limits show the scale of the hazard: 25 to 100 millionths of a gram in each cubic meter of air, averaged over a day.
+> Ini adalah batas tempat kerja. Batas ini mengikat pemberi kerja, jadi tidak ada yang memeriksa pembuat keramik yang bekerja sendiri di rumah, meskipun studio komunitas dan sekolah dengan staf biasanya tercakup (periksa aturan setempat). Debunya sama di rumah, dan batas-batas itu menunjukkan skala bahayanya: 25 sampai 100 bagian dari sejuta gram dalam setiap meter kubik udara, dirata-ratakan selama sehari.
 
-Almost no one has measured dust in hobby studios, so we suggest treating every dry-powder task as a dusty one.
+Hampir tidak ada yang mengukur debu di studio hobi, jadi kami menyarankan memperlakukan setiap tugas dengan bubuk kering sebagai tugas yang berdebu.
 
 ## Kebiasaan yang paling penting {#habits}
 
@@ -65,49 +65,49 @@ Sebagian besar perlindungan berasal dari kebiasaan, bukan peralatan. Saran HSE I
 
 Urutan ini adalah saran kami, berdasarkan prinsip HSE untuk menghindari bubuk lebih dulu. Untuk menimbang dan mencampur langkah demi langkah, lihat [Cara membuat glasir](/guides/making-a-glaze).
 
-## Respirators {#respirators lang=en}
+## Respirator {#respirators}
 
-A **respirator** is a mask certified to filter fine particles from the air you breathe. It works only when it seals to your face, and it backs up good habits rather than replacing them.
+**Respirator** adalah masker bersertifikat yang menyaring partikel halus dari udara yang Anda hirup. Respirator hanya bekerja bila menutup rapat ke wajah Anda, dan mendukung kebiasaan yang baik, bukan menggantikannya.
 
-### Classes by region
+### Kelas menurut wilayah
 
-Table: Particle respirator classes by region (rough equivalents for glaze dust)
-Label: Respirator classes
+Table: Kelas respirator partikel menurut wilayah (perkiraan padanan untuk debu glasir)
+Label: Kelas respirator
 
-| Region                    | Everyday class | Higher class | Look for                                                                   |
-| ------------------------- | -------------- | ------------ | -------------------------------------------------------------------------- |
-| United States             | N95            | P100         | NIOSH approval on the mask or its packaging                                |
-| UK and EU                 | FFP2           | FFP3         | EN 149 on disposable masks; EN 140 half masks with EN 143 P2 or P3 filters |
-| Australia and New Zealand | P2             | P3           | AS/NZS 1716                                                                |
+| Wilayah                     | Kelas sehari-hari | Kelas lebih tinggi | Cari                                                                                          |
+| --------------------------- | ----------------- | ------------------ | --------------------------------------------------------------------------------------------- |
+| Amerika Serikat             | N95               | P100               | Persetujuan NIOSH pada masker atau kemasannya                                                 |
+| Inggris dan UE              | FFP2              | FFP3               | EN 149 pada masker sekali pakai; masker setengah wajah EN 140 dengan filter P2 atau P3 EN 143 |
+| Australia dan Selandia Baru | P2                | P3                 | AS/NZS 1716                                                                                   |
 
-The higher class filters a larger share of fine particles. Sources disagree on what an Australian P3 filters (at least 99%, or at least 99.95%), so buy the certified class sold in your region. A reusable **half mask** (covering the nose and mouth, with replaceable filters) fitted with P100 filters (P3 outside the US) is a common studio choice.
+Kelas yang lebih tinggi menyaring bagian partikel halus yang lebih besar. Sumber berbeda pendapat tentang apa yang disaring P3 Australia (paling sedikit 99%, atau paling sedikit 99,95%), jadi belilah kelas bersertifikat yang dijual di wilayah Anda. **Masker setengah wajah** yang dapat dipakai ulang (menutup hidung dan mulut, dengan filter yang dapat diganti) yang dipasangi filter P100 (P3 di luar AS) adalah pilihan studio yang umum.
 
-### Fit and seal
+### Pas dan rapat
 
-A mask that leaks lets dust in around its edges, whatever its class. HSE warns that stubble and beards "make it impossible to get a good seal".
+Masker yang bocor membiarkan debu masuk di sekeliling tepinya, apa pun kelasnya. HSE Inggris memperingatkan bahwa bulu wajah pendek dan janggut "membuat mustahil mendapatkan segel yang baik".
 
-- **Shave shortly before you work.** Guidance differs on how recent "clean-shaven" must be. A UK maker, citing HSE, says shaved within 8 hours of starting work. The Australian and New Zealand fit-test standard asks for a shave before a fit test, "preferably within 12 hours". Shaving shortly before you work meets both.
-- **If you keep a beard,** a loose-fitting **powered respirator** (PAPR: a hood or helmet with a fan that supplies filtered air) needs no face seal.
-- **Get the size right.** Poor fit is a major cause of leaks. Workplaces use a **fit test**, a check that a particular mask seals on a particular face. At home, we suggest following the maker's instructions for checking the seal each time you put it on.
+- **Cukur sesaat sebelum bekerja.** Panduan berbeda tentang seberapa baru cukuran agar dianggap "bercukur bersih". Satu pembuat Inggris, mengutip HSE, menyatakan dicukur dalam 8 jam sebelum mulai bekerja. Standar uji kesesuaian Australia dan Selandia Baru meminta bercukur sebelum uji kesesuaian, "sebaiknya dalam 12 jam". Bercukur sesaat sebelum bekerja memenuhi keduanya.
+- **Jika Anda memelihara janggut,** **respirator bertenaga** (PAPR: tudung atau helm dengan kipas yang menyuplai udara tersaring) yang longgar tidak memerlukan segel wajah.
+- **Pilih ukuran yang tepat.** Masker yang tidak pas adalah salah satu penyebab utama kebocoran. Tempat kerja memakai **uji kesesuaian**, pemeriksaan bahwa masker tertentu menutup rapat pada wajah tertentu. Di rumah, kami menyarankan mengikuti petunjuk pembuat untuk memeriksa kerapatan setiap kali Anda memakainya.
 
 > [!NOTE]
-> In our view, fit matters more than class: a well-fitted N95, FFP2 or P2 will usually do better than a loose P100.
+> Menurut kami, kecocokan masker lebih penting daripada kelasnya: N95, FFP2, atau P2 yang dipasang dengan baik biasanya lebih unggul daripada P100 yang longgar.
 
-### When to wear one
+### Kapan memakainya
 
-HSE says a respirator is "normally not needed" where weighing and mixing happen in a ventilated enclosure, but "may be needed for maintenance and cleaning". Most home studios have no enclosure, so we suggest wearing one (N95, FFP2 or P2 at least; P100, FFP3 or P3 is better) whenever you:
+HSE menyatakan respirator "biasanya tidak diperlukan" di tempat menimbang dan mencampur terjadi dalam ruang tertutup berventilasi, tetapi "mungkin diperlukan untuk perawatan dan pembersihan". Sebagian besar studio rumahan tidak memiliki ruang tertutup, jadi kami menyarankan memakainya (paling tidak N95, FFP2, atau P2; P100, FFP3, atau P3 lebih baik) setiap kali Anda:
 
-- open bags or tip out powder;
-- weigh powders and stir them into water;
-- scrape, sand or grind dried glaze or bisque;
-- do any dry cleanup, or empty a vacuum;
-- spray glaze (in a booth: see below).
+- membuka kantong atau menuang bubuk;
+- menimbang bubuk dan mengaduknya ke dalam air;
+- mengikis, mengampelas, atau menggiling glasir atau biskuit yang sudah kering;
+- melakukan pembersihan kering apa pun, atau mengosongkan penyedot debu;
+- menyemprot glasir (di bilik: lihat di bawah).
 
-### What is not a respirator
+### Yang bukan respirator
 
-- Surgical masks, cloth masks and "nuisance dust" masks without a NIOSH, EN 149 or AS/NZS 1716 marking. We would not rely on them for glaze dust.
-- A dust respirator "will not protect you against gases, vapors" (OSHA), so it does nothing for kiln fumes.
-- Look after yours: OSHA notes that a dirty or misused respirator "can become a hazard". Store it clean, away from dusty work clothes.
+- Masker bedah, masker kain, dan masker "debu pengganggu" tanpa penandaan NIOSH, EN 149, atau AS/NZS 1716. Kami tidak akan mengandalkannya untuk debu glasir.
+- Respirator debu "tidak akan melindungi Anda dari gas, uap" (OSHA), jadi tidak berguna untuk asap tungku.
+- Rawat milik Anda: OSHA mencatat bahwa respirator yang kotor atau disalahgunakan "dapat menjadi bahaya". Simpan dalam keadaan bersih, jauh dari pakaian kerja yang berdebu.
 
 ## Membersihkan, pakaian, dan tangan {#cleaning}
 
@@ -181,36 +181,36 @@ Bahan glasir menambah lebih banyak. Sebagian oksida logam membentuk asap, "terut
 
 Raku menghasilkan banyak asap dan CO; Utah menganjurkan melakukannya di luar ruangan, jauh dari lubang masuk udara dan jendela. Untuk pembakaran itu sendiri, lihat [Membakar di tungku sederhana](/guides/firing).
 
-## Materials that need most care {#materials lang=en}
+## Bahan yang paling perlu hati-hati {#materials}
 
-Most glaze materials, including silica, clays, feldspars and frits, are mainly a dust hazard, which the habits above control. A shorter list is toxic in its own right, by breathing, swallowing or skin contact. Digitalfire adds that stains are generally much safer than raw oxides, and that "unbalanced glazes that release toxic metals can be made from any materials": food safety depends on the whole recipe, not on one ingredient.
+Sebagian besar bahan glasir, termasuk silika, tanah liat, feldspar, dan frit, terutama merupakan bahaya debu, yang dikendalikan oleh kebiasaan di atas. Daftar yang lebih pendek beracun dengan sendirinya, melalui pernapasan, penelanan, atau kontak kulit. Digitalfire menambahkan bahwa stain umumnya jauh lebih aman daripada oksida mentah, dan bahwa "glasir tidak seimbang yang melepaskan logam beracun dapat dibuat dari bahan apa pun": keamanan pangan bergantung pada seluruh resep, bukan pada satu bahan.
 
-An **IARC group** is a cancer classification: Group 1 means "carcinogenic to humans", Group 2A "probably carcinogenic to humans", Group 2B "possibly carcinogenic to humans", and Group 3 "not classifiable as to its carcinogenicity to humans", which means too little evidence to judge either way.
+**Kelompok IARC** adalah klasifikasi kanker: Kelompok 1 berarti "karsinogenik bagi manusia", Kelompok 2A "kemungkinan besar karsinogenik bagi manusia", Kelompok 2B "mungkin karsinogenik bagi manusia", dan Kelompok 3 "tidak dapat diklasifikasikan karsinogenisitasnya bagi manusia", yang berarti bukti terlalu sedikit untuk menilai ke satu arah atau lainnya.
 
-Table: Glaze materials that need extra care
-Label: Materials that need most care
+Table: Bahan glasir yang memerlukan kehati-hatian ekstra
+Label: Bahan yang paling perlu hati-hati
 
-| Material                               | Hazard                                                                                                                                                                                                                                       | Precaution                                                                                                  |
-| -------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| Lead compounds and lead frits          | "Highly toxic by inhalation or ingestion"; vaporizes in the kiln at lower temperatures than most glaze materials.                                                                                                                            | Avoid; Digitalfire says experts only. Assume any glaze not labeled "lead-free" or "leadless" contains lead. |
-| Barium carbonate                       | Insoluble in water but dissolves in stomach acid; affects the heart and muscles (irregular heartbeat, low potassium).                                                                                                                        | A barium frit or strontium where the recipe allows; respirator; labeled container.                          |
-| Manganese dioxide                      | Dust or fume can cause **manganism**, a nervous-system illness like Parkinson's disease, usually after 1 to 3 years of exposure. Fume can cause metal fume fever.                                                                            | Black stains at low percentages instead; vent the kiln.                                                     |
-| Potassium dichromate and chrome oxide  | Chromium(VI), as in dichromate, is IARC Group 1. That listing does not cover chromium(III), as in chrome oxide.                                                                                                                              | Avoid dichromate. We treat chrome oxide as far less hazardous, but keep its dust down.                      |
-| Cobalt                                 | Soluble cobalt(II) salts IARC 2A; cobalt(II) oxide 2B; black Co₃O₄ Group 3. Cobalt carbonate is classified in the EU as may cause cancer if breathed in, may damage fertility and suspected of causing genetic defects (H350i, H360F, H341). | Keep dust down; stains for blacks.                                                                          |
-| Nickel compounds                       | Among the University of Utah's known or probable human carcinogens.                                                                                                                                                                          | Stains rather than high percentages.                                                                        |
-| Cadmium and selenium, raw or in stains | Cadmium compounds are among Utah's known or probable human carcinogens.                                                                                                                                                                      | "Only by experts" (Digitalfire); read any stain's SDS.                                                      |
-| Antimony and vanadium                  | Trivalent antimony (as in antimony trioxide) IARC 2A; vanadium "highly toxic by inhalation".                                                                                                                                                 | Vanadium for experts only; keep antimony dust down.                                                         |
-| Copper and zinc                        | Kiln fume can cause metal fume fever; raw zinc oxide is "generally not considered hazardous".                                                                                                                                                | Vent the kiln.                                                                                              |
-| Lithium carbonate                      | "Highly toxic by inhalation". An EU expert committee concluded it may harm fertility, the unborn child and breast-fed children; formal adoption was not confirmed when we checked.                                                           | Gloves and respirator; keep from children. We suggest extra care in pregnancy and while breastfeeding.      |
-| Borax and boric acid                   | Classified in the EU as "may damage fertility; may damage the unborn child".                                                                                                                                                                 | Gloves; boron from a frit where you can.                                                                    |
-| Soda ash, potash, alkaline feldspars   | Skin irritants.                                                                                                                                                                                                                              | Gloves.                                                                                                     |
-| Fluorspar, cryolite, lepidolite        | Release fluorine gases in firing; fluorspar also irritates skin.                                                                                                                                                                             | Vent the kiln outdoors; gloves.                                                                             |
-| Talc                                   | IARC 2A since July 2024; talc contaminated with asbestos counts as asbestos, Group 1.                                                                                                                                                        | Platy (not fibrous), asbestos-free talc; check its SDS.                                                     |
+| Bahan                                         | Bahaya                                                                                                                                                                                                                                                   | Tindakan pencegahan                                                                                                                                       |
+| --------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Senyawa timbal dan frit timbal                | "Sangat beracun melalui inhalasi atau penelanan"; menguap di dalam tungku pada suhu yang lebih rendah daripada kebanyakan bahan glasir.                                                                                                                  | Hindari; Digitalfire menyatakan hanya untuk ahli. Anggap glasir apa pun yang tidak berlabel "lead-free" atau "leadless" (bebas timbal) mengandung timbal. |
+| Barium karbonat                               | Tidak larut dalam air tetapi larut dalam asam lambung; memengaruhi jantung dan otot (detak jantung tidak teratur, kalium rendah).                                                                                                                        | Frit barium atau stronsium bila resep memungkinkan; respirator; wadah berlabel.                                                                           |
+| Mangan dioksida                               | Debu atau asap dapat menyebabkan **manganisme**, penyakit sistem saraf seperti penyakit Parkinson, biasanya setelah paparan 1 sampai 3 tahun. Asap dapat menyebabkan demam uap logam.                                                                    | Stain hitam pada persentase rendah sebagai gantinya; beri tungku ventilasi.                                                                               |
+| Kalium dikromat dan krom oksida               | Krom(VI), seperti dalam dikromat, adalah Kelompok 1 IARC. Pencantuman itu tidak mencakup krom(III), seperti dalam krom oksida.                                                                                                                           | Hindari dikromat. Kami menganggap krom oksida jauh kurang berbahaya, tetapi jaga debunya tetap rendah.                                                    |
+| Kobalt                                        | Garam kobalt(II) yang larut IARC 2A; kobalt(II) oksida 2B; Co₃O₄ hitam Kelompok 3. Kobalt karbonat digolongkan di UE sebagai dapat menyebabkan kanker jika terhirup, dapat merusak kesuburan, dan diduga menyebabkan cacat genetik (H350i, H360F, H341). | Jaga debu tetap rendah; stain untuk warna hitam.                                                                                                          |
+| Senyawa nikel                                 | Termasuk karsinogen manusia yang diketahui atau kemungkinan besar menurut University of Utah.                                                                                                                                                            | Stain, bukan persentase tinggi.                                                                                                                           |
+| Kadmium dan selenium, mentah atau dalam stain | Senyawa kadmium termasuk karsinogen manusia yang diketahui atau kemungkinan besar menurut Utah.                                                                                                                                                          | "Hanya oleh ahli" (Digitalfire); baca SDS stain apa pun.                                                                                                  |
+| Antimon dan vanadium                          | Antimon trivalen (seperti dalam antimon trioksida) IARC 2A; vanadium "sangat beracun melalui inhalasi".                                                                                                                                                  | Vanadium hanya untuk ahli; jaga debu antimon tetap rendah.                                                                                                |
+| Tembaga dan seng                              | Asap tungku dapat menyebabkan demam uap logam; seng oksida mentah "umumnya tidak dianggap berbahaya".                                                                                                                                                    | Beri tungku ventilasi.                                                                                                                                    |
+| Litium karbonat                               | "Sangat beracun melalui inhalasi". Komite ahli UE menyimpulkan bahwa litium karbonat dapat merusak kesuburan, janin, dan anak yang disusui; pengesahan resminya belum dipastikan saat kami memeriksa.                                                    | Sarung tangan dan respirator; jauhkan dari anak-anak. Kami menyarankan kehati-hatian ekstra saat hamil dan menyusui.                                      |
+| Boraks dan asam borat                         | Diklasifikasikan di UE sebagai "dapat merusak kesuburan; dapat merusak janin".                                                                                                                                                                           | Sarung tangan; boron dari frit bila bisa.                                                                                                                 |
+| Abu soda, kalium karbonat, feldspar beralkali | Pengiritasi kulit.                                                                                                                                                                                                                                       | Sarung tangan.                                                                                                                                            |
+| Fluorit, kriolit, lepidolit                   | Melepaskan gas-gas fluorin saat pembakaran; fluorit juga mengiritasi kulit.                                                                                                                                                                              | Beri tungku ventilasi ke luar ruangan; sarung tangan.                                                                                                     |
+| Talek                                         | IARC 2A sejak Juli 2024; talek yang terkontaminasi asbes dihitung sebagai asbes, Kelompok 1.                                                                                                                                                             | Talek berbentuk lempeng (bukan serat), bebas asbes; periksa SDS-nya.                                                                                      |
 
-Borax, boric acid, soda ash and potash dissolve in water, so we treat them as the likeliest to be absorbed through broken skin or swallowed from unwashed hands.
+Boraks, asam borat, abu soda, dan kalium karbonat larut dalam air, jadi kami menganggapnya paling mungkin terserap melalui kulit yang terluka atau tertelan dari tangan yang tidak dicuci.
 
 > [!NOTE]
-> If a recipe calls for raw barium carbonate, a lot of manganese, or any lead or cadmium material, look for a version that uses a frit or a stain instead. Glazecalc can compare the chemistry of the original and the swap; then test the new glaze.
+> Jika resep memerlukan barium karbonat mentah, banyak mangan, atau bahan timbal atau kadmium apa pun, carilah versi yang memakai frit atau stain sebagai gantinya. Glazecalc dapat membandingkan kimia resep asli dan penggantinya; lalu uji glasir baru.
 
 ## Sarung tangan, kulit, dan mata {#gloves-and-eyes}
 
@@ -252,7 +252,7 @@ Ini adalah sumber utama yang paling layak dibaca. Sebagian besar ditulis untuk t
 - **Selandia Baru:** WorkSafe New Zealand menetapkan standar paparan tempat kerja; [sejarah standar silika](https://mbie.govt.nz/building-and-energy/building/building-and-construction-consultations/work-with-engineered-stone-and-materials-containing-crystalline-silica/annex-iii) MBIE memberikan tanggalnya.
 - **Tungku:** [panduan ruang tungku](https://cdn.shopify.com/s/files/1/0889/3726/7497/files/Designing-A-Kiln-Room-1.pdf) Skutt, [lembar Orton dan CCSA tentang asap tungku](https://assets.noviams.com/novi-file-uploads/ccsa/Product_Safety/Fumes.pdf), dan terutama buku petunjuk tungku Anda sendiri.
 
-## Sources {#sources lang=en}
+## Sumber {#sources}
 
 - [OSHA: 29 CFR 1910.1053, Respirable crystalline silica](https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.1053)
 - [OSHA: 29 CFR 1910.134 Appendix D, Information for employees using respirators when not required](https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.134AppD)

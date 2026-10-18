@@ -3,39 +3,39 @@ title: การผสมอย่างปลอดภัยและการ�
 lead: วิธีไม่ให้ฝุ่นเคลือบเข้าปอดและไม่ให้ควันจากเตาเข้าบ้าน: นิสัย อุปกรณ์ และวัตถุดิบที่สำคัญที่สุด
 ---
 
-## The main hazard: dust {#the-main-hazard lang=en}
+## อันตรายหลัก: ฝุ่น {#the-main-hazard}
 
-The main long-term hazard in glaze work is dust, above all **respirable crystalline silica**: particles of quartz or cristobalite (crystal forms of silica) small enough to reach deep into the lungs. Crystalline silica can make up about 10 to 60% of a glaze's dry weight, and most clays (except kaolin) and many feldspars also carry fine quartz. The UK's Health and Safety Executive (HSE) says this dust "is very fine and invisible under normal lighting", so a room that looks clean is not proof that the air is.
+อันตรายระยะยาวหลักในงานเคลือบคือฝุ่น โดยเฉพาะ**ซิลิกาผลึกที่สูดหายใจเข้าไปได้**{{en: respirable crystalline silica}}: อนุภาคของควอตซ์หรือคริสโตบาไลต์ (รูปผลึกของซิลิกา) ที่เล็กพอจะเข้าลึกถึงปอด ซิลิกาผลึกอาจเป็นประมาณ 10 ถึง 60% ของน้ำหนักแห้งของเคลือบ และดินส่วนใหญ่ (ยกเว้นดินขาว) และหินฟันม้าหลายชนิดก็มีควอตซ์ละเอียดด้วย หน่วยงานสุขภาพและความปลอดภัยของสหราชอาณาจักร (Health and Safety Executive หรือ HSE) ระบุว่าฝุ่นนี้ “ละเอียดมากและมองไม่เห็นภายใต้แสงปกติ” ห้องที่ดูสะอาดจึงไม่ใช่หลักฐานว่าอากาศสะอาด
 
-Breathed in over time, it can cause **silicosis**, a lung disease that HSE describes as "serious and irreversible" and able to "cause permanent disablement and early death". It can also cause **COPD** (chronic obstructive pulmonary disease: long-term bronchitis and emphysema), which smoking makes worse. IARC, the World Health Organization's cancer agency, places inhaled crystalline silica in Group 1, "carcinogenic to humans".
+เมื่อสูดดมเป็นเวลานาน อาจทำให้เกิด**โรคซิลิโคซิส** โรคปอดที่ HSE อธิบายว่า “ร้ายแรงและกลับคืนไม่ได้” และสามารถ “ทำให้พิการถาวรและเสียชีวิตก่อนวัยอันควร” และอาจทำให้เกิด **COPD** (โรคปอดอุดกั้นเรื้อรัง: หลอดลมอักเสบและถุงลมโป่งพองระยะยาว) ซึ่งการสูบบุหรี่ทำให้แย่ลง IARC หน่วยงานด้านมะเร็งขององค์การอนามัยโลก จัดซิลิกาผลึกที่สูดดมไว้ในกลุ่ม 1 “ก่อมะเร็งในมนุษย์”
 
-Silica does not turn into fumes in the kiln, and a wet glaze is not an inhalation hazard unless it is sprayed: spray mist carries silica and dries to dust (see Spraying, below). The times to take care are when material is dry: opening bags, weighing, stirring powder into water, and cleaning up drips, overspray and slop once they have dried back into dust.
+ซิลิกาไม่กลายเป็นควันในเตาเผา และเคลือบเปียกไม่เป็นอันตรายจากการสูดดม เว้นแต่จะพ่น: ละอองที่พ่นมีซิลิกาและแห้งเป็นฝุ่น (ดู “การพ่น” ด้านล่าง) เวลาที่ต้องระวังคือเมื่อวัตถุดิบแห้ง: เปิดถุง ชั่ง คนผงลงในน้ำ และทำความสะอาดหยดเคลือบ ละอองที่พ่นเลย และน้ำเคลือบที่หก หลังจากที่แห้งกลับเป็นฝุ่นแล้ว
 
-### Exposure limits
+### ขีดจำกัดการสัมผัส
 
-Workplace rules set an **exposure limit**: the most silica a worker may breathe, averaged over an 8-hour day, in milligrams (mg) or micrograms (µg, thousandths of a milligram) per cubic meter of air.
+กฎของสถานที่ทำงานกำหนด**ขีดจำกัดการสัมผัส**: ปริมาณซิลิกาสูงสุดที่ผู้ทำงานหายใจเข้าไปได้ เฉลี่ยตลอดวันทำงาน 8 ชั่วโมง เป็นมิลลิกรัม (mg) หรือไมโครกรัม (µg หนึ่งในพันของมิลลิกรัม) ต่อลูกบาศก์เมตรของอากาศ
 
-Table: Workplace limits for respirable crystalline silica (8-hour average)
-Label: Silica exposure limits
+Table: ขีดจำกัดในสถานที่ทำงานสำหรับซิลิกาผลึกที่สูดหายใจเข้าไปได้ (ค่าเฉลี่ย 8 ชั่วโมง)
+Label: ขีดจำกัดการสัมผัสซิลิกา
 
-| Region         |                 Limit | Notes                                                                             |
-| -------------- | --------------------: | --------------------------------------------------------------------------------- |
-| United States  | 0.05 mg/m³ (50 µg/m³) | OSHA's limit. Employers must start taking action at 25 µg/m³, the "action level". |
-| United Kingdom |             0.1 mg/m³ | Exposure must also be kept "as low as reasonably practicable".                    |
-| European Union |             0.1 mg/m³ | Binding limit (Directive 2017/2398). Some member states set lower ones.           |
-| Australia      |            0.05 mg/m³ | Since July 2020. In June 2026, most ministers did not support a cut to 0.025.     |
-| New Zealand    |           0.025 mg/m³ | Since 2023. WorkSafe's standards are guidance, not legal limits.                  |
+| ภูมิภาค       |              ขีดจำกัด | หมายเหตุ                                                                                                                     |
+| ------------- | --------------------: | ---------------------------------------------------------------------------------------------------------------------------- |
+| สหรัฐอเมริกา  | 0.05 mg/m³ (50 µg/m³) | ขีดจำกัดของ OSHA (หน่วยงานความปลอดภัยแรงงานของสหรัฐอเมริกา) นายจ้างต้องเริ่มดำเนินการที่ 25 µg/m³ ซึ่งเป็น “ระดับปฏิบัติการ” |
+| สหราชอาณาจักร |             0.1 mg/m³ | การสัมผัสต้องคงให้ “ต่ำเท่าที่ปฏิบัติได้อย่างสมเหตุสมผล” ด้วย                                                                |
+| สหภาพยุโรป    |             0.1 mg/m³ | ขีดจำกัดที่มีผลบังคับ (ข้อกำหนด EU 2017/2398) บางประเทศสมาชิกกำหนดต่ำกว่า                                                    |
+| ออสเตรเลีย    |            0.05 mg/m³ | ตั้งแต่เดือนกรกฎาคม ค.ศ. 2020 ในเดือนมิถุนายน ค.ศ. 2026 รัฐมนตรีส่วนใหญ่ไม่สนับสนุนการลดเป็น 0.025                           |
+| นิวซีแลนด์    |           0.025 mg/m³ | ตั้งแต่ 2023 มาตรฐานของ WorkSafe เป็นแนวทาง ไม่ใช่ขีดจำกัดทางกฎหมาย                                                          |
 
-Some pages quote 0.025 mg/m³ for Australia, but the official limit is still 0.05. Either way, the advice is the same: keep dust as low as you can.
+บางหน้าอ้าง 0.025 mg/m³ สำหรับออสเตรเลีย แต่ขีดจำกัดทางการยังคงเป็น 0.05 ไม่ว่าอย่างไร คำแนะนำเหมือนกัน: ทำให้ฝุ่นต่ำเท่าที่คุณทำได้
 
-Several EU member states set lower limits than the EU's. The limit where you live, the law that sets it and the national body for safety at work:
+หลายประเทศสมาชิก EU กำหนดขีดจำกัดต่ำกว่าของ EU ขีดจำกัดในที่ที่คุณอยู่ กฎหมายที่กำหนด และหน่วยงานระดับชาติด้านความปลอดภัยในการทำงาน:
 
 ::silica-limit
 
 > [!NOTE]
-> These are workplace limits. They bind employers, so no one inspects a potter working alone at home, though community studios and schools with staff are usually covered (check your local rules). The dust is the same at home, and the limits show the scale of the hazard: 25 to 100 millionths of a gram in each cubic meter of air, averaged over a day.
+> นี่คือขีดจำกัดในสถานที่ทำงาน ผูกมัดนายจ้าง จึงไม่มีใครตรวจช่างปั้นที่ทำงานคนเดียวที่บ้าน แม้สตูดิโอชุมชนและโรงเรียนที่มีเจ้าหน้าที่มักอยู่ภายใต้กฎเหล่านี้ (ตรวจกฎท้องถิ่นของคุณ) ฝุ่นที่บ้านก็เหมือนกัน และขีดจำกัดแสดงขนาดของอันตราย: 25 ถึง 100 ในล้านส่วนของกรัมในอากาศหนึ่งลูกบาศก์เมตร เฉลี่ยตลอดวัน
 
-Almost no one has measured dust in hobby studios, so we suggest treating every dry-powder task as a dusty one.
+แทบไม่มีใครวัดฝุ่นในสตูดิโองานอดิเรก เราจึงแนะนำให้ถือว่างานที่ใช้ผงแห้งทุกอย่างเป็นงานที่มีฝุ่น
 
 ## นิสัยที่สำคัญที่สุด {#habits}
 
@@ -65,49 +65,49 @@ Almost no one has measured dust in hobby studios, so we suggest treating every d
 
 ลำดับนี้เป็นข้อเสนอของเรา สร้างจากหลักการของ HSE ที่หลีกเลี่ยงผงก่อน สำหรับการชั่งและผสมทีละขั้น ดู [วิธีทำเคลือบ](/guides/making-a-glaze)
 
-## Respirators {#respirators lang=en}
+## หน้ากากกรองอนุภาค {#respirators}
 
-A **respirator** is a mask certified to filter fine particles from the air you breathe. It works only when it seals to your face, and it backs up good habits rather than replacing them.
+**หน้ากากกรองอนุภาค**{{en: respirator}}คือหน้ากากที่ได้รับการรับรองว่ากรองอนุภาคละเอียดจากอากาศที่คุณหายใจ ใช้ได้ผลเฉพาะเมื่อแนบกับใบหน้า และเป็นตัวหนุนนิสัยที่ดีไม่ใช่ตัวแทน
 
-### Classes by region
+### ประเภทตามภูมิภาค
 
-Table: Particle respirator classes by region (rough equivalents for glaze dust)
-Label: Respirator classes
+Table: ประเภทของหน้ากากกรองอนุภาคตามภูมิภาค (ค่าเทียบโดยประมาณสำหรับฝุ่นเคลือบ)
+Label: ประเภทหน้ากากกรองอนุภาค
 
-| Region                    | Everyday class | Higher class | Look for                                                                   |
-| ------------------------- | -------------- | ------------ | -------------------------------------------------------------------------- |
-| United States             | N95            | P100         | NIOSH approval on the mask or its packaging                                |
-| UK and EU                 | FFP2           | FFP3         | EN 149 on disposable masks; EN 140 half masks with EN 143 P2 or P3 filters |
-| Australia and New Zealand | P2             | P3           | AS/NZS 1716                                                                |
+| ภูมิภาค                 | ประเภทใช้ทั่วไป | ประเภทสูงกว่า | มองหา                                                                                   |
+| ----------------------- | --------------- | ------------- | --------------------------------------------------------------------------------------- |
+| สหรัฐอเมริกา            | N95             | P100          | การอนุมัติของ NIOSH บนหน้ากากหรือบรรจุภัณฑ์                                             |
+| สหราชอาณาจักรและ EU     | FFP2            | FFP3          | EN 149 บนหน้ากากใช้แล้วทิ้ง; หน้ากากครึ่งหน้า EN 140 พร้อมไส้กรอง P2 หรือ P3 ตาม EN 143 |
+| ออสเตรเลียและนิวซีแลนด์ | P2              | P3            | AS/NZS 1716                                                                             |
 
-The higher class filters a larger share of fine particles. Sources disagree on what an Australian P3 filters (at least 99%, or at least 99.95%), so buy the certified class sold in your region. A reusable **half mask** (covering the nose and mouth, with replaceable filters) fitted with P100 filters (P3 outside the US) is a common studio choice.
+ประเภทที่สูงกว่ากรองอนุภาคละเอียดได้สัดส่วนมากกว่า แหล่งข้อมูลไม่ตรงกันว่า P3 ของออสเตรเลียกรองได้เท่าใด (อย่างน้อย 99% หรืออย่างน้อย 99.95%) จึงซื้อประเภทที่ได้รับการรับรองซึ่งจำหน่ายในภูมิภาคของคุณ **หน้ากากครึ่งหน้า**ที่ใช้ซ้ำได้ (ครอบจมูกและปาก มีไส้กรองเปลี่ยนได้) พร้อมไส้กรอง P100 (P3 นอกสหรัฐอเมริกา) เป็นตัวเลือกทั่วไปของสตูดิโอ
 
-### Fit and seal
+### ความแนบสนิทและการปิดผนึก
 
-A mask that leaks lets dust in around its edges, whatever its class. HSE warns that stubble and beards "make it impossible to get a good seal".
+หน้ากากที่รั่วปล่อยให้ฝุ่นเข้าตามขอบ ไม่ว่าประเภทใด HSE เตือนว่าตอหนวดเคราและเครา “ทำให้ไม่สามารถปิดผนึกได้ดี”
 
-- **Shave shortly before you work.** Guidance differs on how recent "clean-shaven" must be. A UK maker, citing HSE, says shaved within 8 hours of starting work. The Australian and New Zealand fit-test standard asks for a shave before a fit test, "preferably within 12 hours". Shaving shortly before you work meets both.
-- **If you keep a beard,** a loose-fitting **powered respirator** (PAPR: a hood or helmet with a fan that supplies filtered air) needs no face seal.
-- **Get the size right.** Poor fit is a major cause of leaks. Workplaces use a **fit test**, a check that a particular mask seals on a particular face. At home, we suggest following the maker's instructions for checking the seal each time you put it on.
+- **โกนก่อนทำงานไม่นาน** แนวทางต่างกันเรื่องว่า “โกนเกลี้ยง” ต้องเพิ่งโกนแค่ไหน ผู้ผลิตรายหนึ่งในสหราชอาณาจักร อ้าง HSE ระบุว่าโกนภายใน 8 ชั่วโมงก่อนเริ่มงาน มาตรฐานการทดสอบความแนบสนิทของออสเตรเลียและนิวซีแลนด์ขอให้โกนก่อนการทดสอบความแนบสนิท “โดยควรเป็นภายใน 12 ชั่วโมง” การโกนก่อนทำงานไม่นานเป็นไปตามทั้งสองอย่าง
+- **หากคุณไว้เครา** **หน้ากากแบบมีพัดลมกรองอากาศ**{{en: powered respirator}} (PAPR: หมวกหรือหมวกนิรภัยที่มีพัดลมจ่ายอากาศที่กรองแล้ว) แบบหลวมไม่ต้องปิดผนึกกับใบหน้า
+- **เลือกขนาดให้ถูกต้อง** ความแนบสนิทที่ไม่ดีเป็นสาเหตุสำคัญอย่างหนึ่งของการรั่ว สถานที่ทำงานใช้**การทดสอบความแนบสนิท** การตรวจว่าหน้ากากหนึ่งแนบสนิทบนใบหน้าหนึ่ง ที่บ้าน เราแนะนำให้ทำตามคำแนะนำของผู้ผลิตสำหรับการตรวจการปิดผนึกทุกครั้งที่สวม
 
 > [!NOTE]
-> In our view, fit matters more than class: a well-fitted N95, FFP2 or P2 will usually do better than a loose P100.
+> ในมุมมองของเรา ความแนบสนิทสำคัญกว่าประเภท: N95, FFP2 หรือ P2 ที่แนบสนิทดีมักทำได้ดีกว่า P100 ที่หลวม
 
-### When to wear one
+### เมื่อใดควรสวม
 
-HSE says a respirator is "normally not needed" where weighing and mixing happen in a ventilated enclosure, but "may be needed for maintenance and cleaning". Most home studios have no enclosure, so we suggest wearing one (N95, FFP2 or P2 at least; P100, FFP3 or P3 is better) whenever you:
+HSE ระบุว่าหน้ากากกรองอนุภาค “โดยปกติไม่จำเป็น” ที่การชั่งและผสมเกิดในที่ปิดที่มีการระบายอากาศ แต่ “อาจจำเป็นสำหรับการบำรุงรักษาและการทำความสะอาด” สตูดิโอที่บ้านส่วนใหญ่ไม่มีที่ปิด เราจึงแนะนำให้สวม (N95, FFP2 หรือ P2 เป็นอย่างน้อย; P100, FFP3 หรือ P3 ดีกว่า) ทุกครั้งที่คุณ:
 
-- open bags or tip out powder;
-- weigh powders and stir them into water;
-- scrape, sand or grind dried glaze or bisque;
-- do any dry cleanup, or empty a vacuum;
-- spray glaze (in a booth: see below).
+- เปิดถุงหรือเทผง;
+- ชั่งผงและคนลงในน้ำ;
+- ขูด ขัด หรือบดเคลือบแห้งหรือชิ้นงานเผาดิบ;
+- ทำความสะอาดแบบแห้งใดก็ตาม หรือเทเครื่องดูดฝุ่น;
+- พ่นเคลือบ (ในห้องพ่นเคลือบ: ดูด้านล่าง)
 
-### What is not a respirator
+### สิ่งที่ไม่ใช่หน้ากากกรองอนุภาค
 
-- Surgical masks, cloth masks and "nuisance dust" masks without a NIOSH, EN 149 or AS/NZS 1716 marking. We would not rely on them for glaze dust.
-- A dust respirator "will not protect you against gases, vapors" (OSHA), so it does nothing for kiln fumes.
-- Look after yours: OSHA notes that a dirty or misused respirator "can become a hazard". Store it clean, away from dusty work clothes.
+- หน้ากากอนามัยทางการแพทย์ หน้ากากผ้า และหน้ากาก “ฝุ่นรบกวน” ที่ไม่มีเครื่องหมาย NIOSH, EN 149 หรือ AS/NZS 1716 เราจะไม่พึ่งพาสิ่งเหล่านี้สำหรับฝุ่นเคลือบ
+- หน้ากากกรองอนุภาคสำหรับฝุ่น “จะไม่ป้องกันคุณจากแก๊ส ไอระเหย” (OSHA) จึงไม่ช่วยอะไรเลยกับควันจากเตา
+- ดูแลหน้ากากของคุณ: OSHA ระบุว่าหน้ากากกรองอนุภาคที่สกปรกหรือใช้ผิดวิธี “อาจกลายเป็นอันตราย” เก็บให้สะอาด ห่างจากเสื้อผ้าทำงานที่มีฝุ่น
 
 ## การทำความสะอาด เสื้อผ้า และมือ {#cleaning}
 
@@ -181,36 +181,36 @@ HSE เตือนว่าการพ่น “อาจทำให้เก
 
 ราคุทำให้เกิดควันและ CO ปริมาณมาก Utah แนะนำให้ทำกลางแจ้ง ห่างจากช่องรับอากาศและหน้าต่าง สำหรับการเผาเอง ดู [การเผาเตาพื้นฐาน](/guides/firing)
 
-## Materials that need most care {#materials lang=en}
+## วัตถุดิบที่ต้องระวังที่สุด {#materials}
 
-Most glaze materials, including silica, clays, feldspars and frits, are mainly a dust hazard, which the habits above control. A shorter list is toxic in its own right, by breathing, swallowing or skin contact. Digitalfire adds that stains are generally much safer than raw oxides, and that "unbalanced glazes that release toxic metals can be made from any materials": food safety depends on the whole recipe, not on one ingredient.
+วัตถุดิบเคลือบส่วนใหญ่ รวมถึงซิลิกา ดิน หินฟันม้า และฟริต เป็นอันตรายจากฝุ่นเป็นหลัก ซึ่งนิสัยข้างต้นควบคุมได้ รายการที่สั้นกว่าเป็นพิษในตัวเอง จากการสูดดม กลืน หรือสัมผัสผิวหนัง Digitalfire เสริมว่าสีสะเตนโดยทั่วไปปลอดภัยกว่าออกไซด์ดิบมาก และว่า “เคลือบที่ไม่สมดุลซึ่งปล่อยโลหะพิษทำได้จากวัตถุดิบใดก็ได้”: ความปลอดภัยของอาหารขึ้นอยู่กับสูตรเคลือบทั้งหมด ไม่ใช่ส่วนผสมหนึ่งอย่าง
 
-An **IARC group** is a cancer classification: Group 1 means "carcinogenic to humans", Group 2A "probably carcinogenic to humans", Group 2B "possibly carcinogenic to humans", and Group 3 "not classifiable as to its carcinogenicity to humans", which means too little evidence to judge either way.
+**กลุ่ม IARC** คือการจัดประเภทมะเร็ง: กลุ่ม 1 หมายถึง “ก่อมะเร็งในมนุษย์” กลุ่ม 2A “น่าจะก่อมะเร็งในมนุษย์” กลุ่ม 2B “อาจก่อมะเร็งในมนุษย์” และกลุ่ม 3 “ไม่สามารถจัดประเภทได้ว่าก่อมะเร็งในมนุษย์” ซึ่งหมายถึงมีหลักฐานน้อยเกินไปที่จะตัดสินทั้งสองทาง
 
-Table: Glaze materials that need extra care
-Label: Materials that need most care
+Table: วัตถุดิบเคลือบที่ต้องระวังเป็นพิเศษ
+Label: วัตถุดิบที่ต้องระวังที่สุด
 
-| Material                               | Hazard                                                                                                                                                                                                                                       | Precaution                                                                                                  |
-| -------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| Lead compounds and lead frits          | "Highly toxic by inhalation or ingestion"; vaporizes in the kiln at lower temperatures than most glaze materials.                                                                                                                            | Avoid; Digitalfire says experts only. Assume any glaze not labeled "lead-free" or "leadless" contains lead. |
-| Barium carbonate                       | Insoluble in water but dissolves in stomach acid; affects the heart and muscles (irregular heartbeat, low potassium).                                                                                                                        | A barium frit or strontium where the recipe allows; respirator; labeled container.                          |
-| Manganese dioxide                      | Dust or fume can cause **manganism**, a nervous-system illness like Parkinson's disease, usually after 1 to 3 years of exposure. Fume can cause metal fume fever.                                                                            | Black stains at low percentages instead; vent the kiln.                                                     |
-| Potassium dichromate and chrome oxide  | Chromium(VI), as in dichromate, is IARC Group 1. That listing does not cover chromium(III), as in chrome oxide.                                                                                                                              | Avoid dichromate. We treat chrome oxide as far less hazardous, but keep its dust down.                      |
-| Cobalt                                 | Soluble cobalt(II) salts IARC 2A; cobalt(II) oxide 2B; black Co₃O₄ Group 3. Cobalt carbonate is classified in the EU as may cause cancer if breathed in, may damage fertility and suspected of causing genetic defects (H350i, H360F, H341). | Keep dust down; stains for blacks.                                                                          |
-| Nickel compounds                       | Among the University of Utah's known or probable human carcinogens.                                                                                                                                                                          | Stains rather than high percentages.                                                                        |
-| Cadmium and selenium, raw or in stains | Cadmium compounds are among Utah's known or probable human carcinogens.                                                                                                                                                                      | "Only by experts" (Digitalfire); read any stain's SDS.                                                      |
-| Antimony and vanadium                  | Trivalent antimony (as in antimony trioxide) IARC 2A; vanadium "highly toxic by inhalation".                                                                                                                                                 | Vanadium for experts only; keep antimony dust down.                                                         |
-| Copper and zinc                        | Kiln fume can cause metal fume fever; raw zinc oxide is "generally not considered hazardous".                                                                                                                                                | Vent the kiln.                                                                                              |
-| Lithium carbonate                      | "Highly toxic by inhalation". An EU expert committee concluded it may harm fertility, the unborn child and breast-fed children; formal adoption was not confirmed when we checked.                                                           | Gloves and respirator; keep from children. We suggest extra care in pregnancy and while breastfeeding.      |
-| Borax and boric acid                   | Classified in the EU as "may damage fertility; may damage the unborn child".                                                                                                                                                                 | Gloves; boron from a frit where you can.                                                                    |
-| Soda ash, potash, alkaline feldspars   | Skin irritants.                                                                                                                                                                                                                              | Gloves.                                                                                                     |
-| Fluorspar, cryolite, lepidolite        | Release fluorine gases in firing; fluorspar also irritates skin.                                                                                                                                                                             | Vent the kiln outdoors; gloves.                                                                             |
-| Talc                                   | IARC 2A since July 2024; talc contaminated with asbestos counts as asbestos, Group 1.                                                                                                                                                        | Platy (not fibrous), asbestos-free talc; check its SDS.                                                     |
+| วัตถุดิบ                              | อันตราย                                                                                                                                                                                                                       | ข้อควรระวัง                                                                                                                 |
+| ------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| สารประกอบตะกั่วและฟริตตะกั่ว          | “เป็นพิษสูงจากการสูดดมหรือกลืนกิน”; ระเหยในเตาที่อุณหภูมิต่ำกว่าวัตถุดิบเคลือบส่วนใหญ่                                                                                                                                        | หลีกเลี่ยง; Digitalfire ระบุว่าเฉพาะผู้เชี่ยวชาญ ให้ถือว่าเคลือบใดที่ไม่ได้ติดฉลาก “ปราศจากตะกั่ว” หรือ “leadless” มีตะกั่ว |
+| แบเรียมคาร์บอเนต                      | ไม่ละลายในน้ำแต่ละลายในกรดในกระเพาะอาหาร; ส่งผลต่อหัวใจและกล้ามเนื้อ (หัวใจเต้นผิดจังหวะ โพแทสเซียมต่ำ)                                                                                                                       | ฟริตแบเรียมหรือสตรอนเทียมเมื่อสูตรเคลือบเอื้อ; หน้ากากกรองอนุภาค; ภาชนะติดฉลาก                                              |
+| แมงกานีสไดออกไซด์                     | ฝุ่นหรือควันอาจทำให้เกิด**พิษจากแมงกานีส** โรคของระบบประสาทคล้ายโรคพาร์กินสัน โดยปกติหลังสัมผัส 1 ถึง 3 ปี ควันอาจทำให้เกิดไข้จากควันโลหะ                                                                                     | ใช้สีสะเตนดำที่เปอร์เซ็นต์ต่ำแทน; ระบายอากาศจากเตา                                                                          |
+| โพแทสเซียมไดโครเมตและโครมออกไซด์      | โครเมียม(VI) เช่นในไดโครเมต เป็น IARC กลุ่ม 1 การจัดประเภทนั้นไม่ครอบคลุมโครเมียม(III) เช่นในโครมออกไซด์                                                                                                                      | หลีกเลี่ยงไดโครเมต เราถือว่าโครมออกไซด์อันตรายน้อยกว่ามาก แต่ยังให้ลดฝุ่นของโครมออกไซด์                                     |
+| โคบอลต์                               | เกลือโคบอลต์(II) ที่ละลายได้ IARC 2A; โคบอลต์(II) ออกไซด์ 2B; Co₃O₄ สีดำ กลุ่ม 3 โคบอลต์คาร์บอเนตถูกจัดประเภทใน EU ว่าอาจก่อมะเร็งหากสูดดม อาจทำลายภาวะเจริญพันธุ์ และสงสัยว่าก่อความเสียหายทางพันธุกรรม (H350i, H360F, H341) | ลดฝุ่น; ใช้สีสะเตนสำหรับสีดำ                                                                                                |
+| สารประกอบนิกเกิล                      | อยู่ในรายการสารก่อมะเร็งในมนุษย์ที่ทราบหรือน่าจะเป็นของ University of Utah                                                                                                                                                    | ใช้สีสะเตนแทนเปอร์เซ็นต์สูง                                                                                                 |
+| แคดเมียมและซีลีเนียม ดิบหรือในสีสะเตน | สารประกอบแคดเมียมอยู่ในรายการสารก่อมะเร็งในมนุษย์ที่ทราบหรือน่าจะเป็นของ Utah                                                                                                                                                 | “เฉพาะผู้เชี่ยวชาญ” (Digitalfire); อ่าน SDS ของสีสะเตนทุกชนิด                                                               |
+| แอนติโมนีและวาเนเดียม                 | แอนติโมนีไตรวาเลนต์ (เช่นแอนติโมนีไตรออกไซด์) IARC 2A; วาเนเดียม “เป็นพิษสูงจากการสูดดม”                                                                                                                                      | วาเนเดียมสำหรับผู้เชี่ยวชาญเท่านั้น; ลดฝุ่นแอนติโมนี                                                                        |
+| ทองแดงและสังกะสี                      | ควันจากเตาอาจทำให้เกิดไข้จากควันโลหะ; สังกะสีออกไซด์ดิบ “โดยทั่วไปไม่ถือว่าเป็นอันตราย”                                                                                                                                       | ระบายอากาศจากเตา                                                                                                            |
+| ลิเทียมคาร์บอเนต                      | “เป็นพิษสูงจากการสูดดม” คณะกรรมการผู้เชี่ยวชาญของ EU สรุปว่าอาจทำลายภาวะเจริญพันธุ์ ทารกในครรภ์ และเด็กที่กินนมแม่ การรับรองอย่างเป็นทางการยังไม่ได้รับการยืนยันเมื่อเราตรวจ                                                  | ถุงมือและหน้ากากกรองอนุภาค; เก็บให้พ้นมือเด็ก เราแนะนำให้ระมัดระวังเป็นพิเศษในช่วงตั้งครรภ์และให้นมบุตร                     |
+| บอแรกซ์และกรดบอริก                    | จัดประเภทใน EU ว่า “อาจทำลายภาวะเจริญพันธุ์; อาจทำลายทารกในครรภ์”                                                                                                                                                             | ถุงมือ; ใช้โบรอนจากฟริตเมื่อทำได้                                                                                           |
+| โซดาแอช โพแทช หินฟันม้าที่เป็นอัลคาไล | สารระคายเคืองผิวหนัง                                                                                                                                                                                                          | ถุงมือ                                                                                                                      |
+| ฟลูออไรต์ ไครโอไลต์ เลพิโดไลต์        | ปล่อยแก๊สฟลูออรีนในการเผา; ฟลูออไรต์ยังระคายเคืองผิวหนัง                                                                                                                                                                      | ระบายอากาศจากเตาออกนอกอาคาร; ถุงมือ                                                                                         |
+| ทัลค์                                 | IARC 2A ตั้งแต่เดือนกรกฎาคม ค.ศ. 2024; ทัลค์ที่ปนเปื้อนแร่ใยหินนับเป็นแร่ใยหิน กลุ่ม 1                                                                                                                                        | ทัลค์แบบแผ่น (ไม่เป็นเส้นใย) ปราศจากแร่ใยหิน; ตรวจ SDS ของทัลค์                                                             |
 
-Borax, boric acid, soda ash and potash dissolve in water, so we treat them as the likeliest to be absorbed through broken skin or swallowed from unwashed hands.
+บอแรกซ์ กรดบอริก โซดาแอช และโพแทชละลายในน้ำ เราจึงถือว่าสิ่งเหล่านี้มีแนวโน้มที่สุดที่จะดูดซึมผ่านผิวหนังที่มีแผลหรือกลืนจากมือที่ไม่ได้ล้าง
 
 > [!NOTE]
-> If a recipe calls for raw barium carbonate, a lot of manganese, or any lead or cadmium material, look for a version that uses a frit or a stain instead. Glazecalc can compare the chemistry of the original and the swap; then test the new glaze.
+> หากสูตรเคลือบระบุแบเรียมคาร์บอเนตดิบ แมงกานีสปริมาณมาก หรือวัตถุดิบตะกั่วหรือแคดเมียมใด ให้มองหาสูตรที่ใช้ฟริตหรือสีสะเตนแทน Glazecalc เปรียบเทียบเคมีของสูตรเดิมกับสูตรที่สลับได้ จากนั้นทดสอบเคลือบใหม่
 
 ## ถุงมือ ผิวหนัง และดวงตา {#gloves-and-eyes}
 
@@ -252,7 +252,7 @@ Borax, boric acid, soda ash and potash dissolve in water, so we treat them as th
 - **นิวซีแลนด์:** WorkSafe New Zealand กำหนดมาตรฐานการสัมผัสในสถานที่ทำงาน; [ประวัติของมาตรฐานซิลิกา](https://mbie.govt.nz/building-and-energy/building/building-and-construction-consultations/work-with-engineered-stone-and-materials-containing-crystalline-silica/annex-iii)ของ MBIE ให้วันที่
 - **เตาเผา:** [เอกสารแนะนำการออกแบบห้องเตาเผา](https://cdn.shopify.com/s/files/1/0889/3726/7497/files/Designing-A-Kiln-Room-1.pdf)ของ Skutt [เอกสารของ Orton และ CCSA เรื่องควันจากเตา](https://assets.noviams.com/novi-file-uploads/ccsa/Product_Safety/Fumes.pdf) และเหนือสิ่งอื่นใดคือคู่มือการใช้งานของเตาเผาของคุณเอง
 
-## Sources {#sources lang=en}
+## แหล่งข้อมูล {#sources}
 
 - [OSHA: 29 CFR 1910.1053, Respirable crystalline silica](https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.1053)
 - [OSHA: 29 CFR 1910.134 Appendix D, Information for employees using respirators when not required](https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.134AppD)

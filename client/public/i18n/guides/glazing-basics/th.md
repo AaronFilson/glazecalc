@@ -18,40 +18,40 @@ lead: เคลือบทำมาจากอะไร เตาเผาเ�
 > [!NOTE]
 > วิธีจำอย่างหนึ่ง: ซิลิกาคือแก้ว สารช่วยหลอมให้แก้วหลอมที่อุณหภูมิที่เตาเผาของคุณทำได้ และอลูมินาทำให้ข้นขึ้นเพื่อให้อยู่ตรงที่คุณวางไว้
 
-## Clay, coatings and the two firings {#clay-and-firings lang=en}
+## ดิน ชั้นเคลือบ และการเผาสองครั้ง {#clay-and-firings}
 
-### Clay bodies
+### เนื้อดิน
 
-The **clay body** is the clay a pot is made of. There are three main kinds.
+**เนื้อดิน**{{en: clay body}}คือดินที่ใช้ทำชิ้นงาน มีสามชนิดหลัก
 
-- **Earthenware**: a low-fire body, about cone 06–02, that stays porous. Often red or buff, it needs a glaze to hold water.
-- **Stoneware**: a mid- to high-fire body, about cone 5–10, that becomes vitreous or nearly so.
-- **Porcelain**: a white, high-fire body rich in kaolin, often translucent.
+- **เอิร์ทเทนแวร์**{{en: earthenware}}: เนื้อดินไฟต่ำ ประมาณโคน 06–02 ที่ยังพรุนอยู่ มักเป็นสีแดงหรือสีเหลืองอ่อน ต้องมีเคลือบจึงจะเก็บน้ำได้
+- **สโตนแวร์**{{en: stoneware}}: เนื้อดินไฟกลางถึงไฟสูง ประมาณโคน 5–10 ที่กลายเป็นเนื้อแก้วหรือเกือบเป็น
+- **พอร์ซเลน**: เนื้อดินสีขาวไฟสูงที่มีดินขาวมาก มักโปร่งแสง
 
-**Vitreous** means glassy and non-porous; **vitrification** is a body becoming so as it fires. UK potters often draw the line by temperature instead: stoneware is fired above {{2192 °F; 1200 °C}}, earthenware below. Mid fire, cone 5–6, falls just either side of that line.
+**เนื้อแก้ว** (vitreous) หมายถึงเหมือนแก้วและไม่พรุน **การหลอมตัวเป็นเนื้อแก้ว** (vitrification) คือเนื้อดินกลายเป็นเช่นนั้นขณะเผา ช่างปั้นในสหราชอาณาจักรมักขีดเส้นด้วยอุณหภูมิแทน: สโตนแวร์เผาเหนือ {{2192 °F; 1200 °C}} เอิร์ทเทนแวร์ต่ำกว่านั้น ไฟกลาง โคน 5–6 อยู่คร่อมเส้นนั้นพอดี
 
-### Coatings and drying
+### ชั้นเคลือบและการทำให้แห้ง
 
-**Slip** is clay suspended in water, for casting, joining or decorating. An **engobe** is a slip-like coating, often colored, with more non-clay materials. An **underglaze** is colored slip or oxide decoration, usually covered with a clear glaze.
+**น้ำดิน** คือดินที่แขวนลอยในน้ำ สำหรับหล่อ ต่อชิ้น หรือตกแต่ง **เอนโกบ** คือชั้นเคลือบคล้ายน้ำดิน มักมีสี และมีวัสดุที่ไม่ใช่ดินมากกว่า **สีใต้เคลือบ** คือน้ำดินสีหรือการตกแต่งด้วยออกไซด์ ซึ่งมักปิดทับด้วยเคลือบใส
 
-Unfired ware is **greenware** (sources disagree on whether the word covers all unfired ware or only dry ware). As it dries it becomes **leather-hard**, stiff but slightly damp, the stage for trimming and handles; then **bone dry**, with no free water left, very fragile and ready to fire.
+ชิ้นงานที่ยังไม่เผาคือ**ชิ้นงานดิบ**{{en: greenware}} (แหล่งข้อมูลไม่ตรงกันว่าคำนี้ครอบคลุมชิ้นงานที่ยังไม่เผาทั้งหมดหรือเฉพาะชิ้นงานแห้ง) เมื่อแห้งลงจะกลายเป็น**ดินหมาด** แข็งแต่ยังชื้นเล็กน้อย เป็นขั้นตอนสำหรับตกแต่งฐานและติดหูจับ แล้วเป็น**แห้งสนิท** ไม่เหลือน้ำอิสระ เปราะมากและพร้อมเผา
 
-### The two firings
+### การเผาสองครั้ง
 
-The first, lower firing is the **bisque** (UK: **biscuit**), usually cone 08–04 (most often 06–04), about {{1728–1945 °F; 942–1063 °C}}. It leaves ware strong but porous. Digitalfire, a glaze reference site, suggests generally more than 15% porosity, so the bisque draws water out of the glaze as it goes on. A soft bisque (cone 08–06) is more porous; a hard bisque (often cone 04) is sturdier but takes glaze less readily.
+การเผาครั้งแรกที่อุณหภูมิต่ำกว่าคือ**เผาดิบ**{{en: bisque}} (สหราชอาณาจักร: **biscuit**) โดยปกติโคน 08–04 (ส่วนใหญ่ 06–04) ประมาณ {{1728–1945 °F; 942–1063 °C}} ทำให้ชิ้นงานแข็งแรงแต่ยังพรุน Digitalfire เว็บไซต์อ้างอิงเรื่องเคลือบ แนะนำความพรุนโดยทั่วไปมากกว่า 15% เพื่อให้ชิ้นงานเผาดิบดูดน้ำออกจากเคลือบเมื่อเคลือบ ชิ้นงานเผาดิบแบบอ่อน (โคน 08–06) พรุนกว่า ชิ้นงานเผาดิบแบบแข็ง (มักเป็นโคน 04) ทนกว่าแต่รับเคลือบได้ไม่ง่าย
 
-Table: How the bisque changes glazing (Digitalfire)
-Label: How the bisque changes glazing
+Table: ชิ้นงานเผาดิบเปลี่ยนการเคลือบอย่างไร (Digitalfire)
+Label: ชิ้นงานเผาดิบเปลี่ยนการเคลือบอย่างไร
 
-| Bisque                                  | What happens                                                    |
-| --------------------------------------- | --------------------------------------------------------------- |
-| Under-fired, very absorbent             | Glaze goes on too thick, then cracks and crawls                 |
-| Over-fired, dense                       | Dipping and drying take longer                                  |
-| Fired hotter, or held longer at the top | More gas burns off now, so less bubbles through the glaze later |
+| ชิ้นงานเผาดิบ                            | สิ่งที่เกิดขึ้น                                          |
+| ---------------------------------------- | -------------------------------------------------------- |
+| เผาไม่สุก ดูดซึมมาก                      | เคลือบจับหนาเกินไป แล้วแตกและหดรวมตัว                    |
+| เผาเกินอุณหภูมิ หนาแน่น                  | การชุบและการทำให้แห้งใช้เวลานานขึ้น                      |
+| เผาร้อนกว่า หรือคงไว้ที่จุดสูงสุดนานกว่า | ตอนนี้แก๊สไหม้ออกมากขึ้น ฟองจึงผุดผ่านเคลือบทีหลังน้อยลง |
 
-Potclays, a UK supplier, describes biscuit firing to around {{1000 °C; 1832 °F}}, about cone 06. Reading these sources together, we suggest cone 06–04 for a first bisque: {{1828–1945 °F; 998–1063 °C}} at Orton's medium rate.
+Potclays ผู้จำหน่ายในสหราชอาณาจักร อธิบายการเผา biscuit ที่ประมาณ {{1000 °C; 1832 °F}} ประมาณโคน 06 เมื่ออ่านแหล่งข้อมูลเหล่านี้ร่วมกัน เราแนะนำโคน 06–04 สำหรับการเผาดิบครั้งแรก: {{1828–1945 °F; 998–1063 °C}} ที่อัตราปานกลางของ Orton
 
-The **glaze firing** (British potters may say **glost** firing) melts the glaze and, for stoneware, matures the clay too. **Once-firing** glazes unfired ware and fires it just once. Digitalfire reports a production case where raw-glazed ware crawled on its rims until a bisque firing cured it, so begin with two firings. [Firing a basic kiln](/guides/firing) gives schedules for both.
+**การเผาเคลือบ**{{en: glaze firing}} (ช่างปั้นอังกฤษอาจเรียกการเผา **glost**) หลอมเคลือบ และสำหรับสโตนแวร์ ทำให้ดินสุกตัวด้วย **การเผาครั้งเดียว**{{en: once-firing}}คือการเคลือบชิ้นงานที่ยังไม่เผาและเผาเพียงครั้งเดียว Digitalfire รายงานกรณีการผลิตที่ชิ้นงานเคลือบดิบหดรวมตัวที่ขอบจนกระทั่งการเผาดิบแก้ได้ จึงควรเริ่มด้วยการเผาสองครั้ง [การเผาเตาพื้นฐาน](/guides/firing) ให้โปรแกรมสำหรับทั้งสองแบบ
 
 ## โคนและฮีตเวิร์ก {#cones}
 
@@ -238,30 +238,30 @@ Label: ข้อบกพร่องของเคลือบทั่วไ�
 | เคลือบไหล              | เคลือบไหลลงบนแผ่นรองเผา                       | อลูมินาน้อยเกินไป; หนาเกินไป เช่น ที่การเทซ้อนกัน; เหล็กมาก                                        | เคลือบบางลง; เพิ่มอลูมินา; ให้เคลือบอยู่สูงกว่าฐานมาก                                 |
 | ชิ้นงานร้าวจากความร้อน | รอยแตกในชิ้นงานจากการเย็นลงหรือการให้ความร้อน | เย็นเร็วผ่านการเปลี่ยนรูปของควอตซ์ {{1063 °F; 573 °C}}; ผนังไม่สม่ำเสมอ; ความเข้ากันไม่ดี          | เผาช้าผ่าน {{1063 °F; 573 °C}} ทั้งขึ้นและลง; ผนังสม่ำเสมอ                            |
 
-## Food safety {#food-safety lang=en}
+## ความปลอดภัยของอาหาร {#food-safety}
 
-**Leaching** is metal dissolving out of a fired glaze into food or drink, and a glaze can look perfect and still do it. The legal tests soak the fired piece in an acid solution and measure the lead and cadmium that come out.
+**การละลายออก**{{en: leaching}}คือโลหะละลายออกจากเคลือบที่เผาแล้วสู่อาหารหรือเครื่องดื่ม และเคลือบอาจดูสมบูรณ์แบบแต่ก็ยังเป็นเช่นนั้นได้ การทดสอบตามกฎหมายแช่ชิ้นงานที่เผาแล้วในสารละลายกรดและวัดตะกั่วและแคดเมียมที่ออกมา
 
-### Lead-free is not the same as food-safe
+### ปราศจากตะกั่วไม่เหมือนกับปลอดภัยสำหรับอาหาร
 
-The rules in the US, the EU, the UK and Australia limit the lead and cadmium a fired piece releases, not what the glaze contains. "Lead-free" removes one hazard; it is not a food-safety rating. Other oxides leach too: Glazy warns that high-barium glazes "can leach and are generally not food-safe", Digitalfire says copper "can make a glaze leachable; test it", and Glazy no longer advises lead glazes for functional ware.
+กฎในสหรัฐอเมริกา EU สหราชอาณาจักร และออสเตรเลียจำกัดตะกั่วและแคดเมียมที่ชิ้นงานที่เผาแล้วปล่อยออกมา ไม่ใช่สิ่งที่เคลือบมีอยู่ “ปราศจากตะกั่ว” กำจัดอันตรายหนึ่งอย่าง ไม่ใช่การจัดระดับความปลอดภัยของอาหาร ออกไซด์อื่นก็ละลายออกได้เช่นกัน: Glazy เตือนว่าเคลือบที่มีแบเรียมสูง “อาจละลายออกและโดยทั่วไปไม่ปลอดภัยสำหรับอาหาร” Digitalfire ระบุว่าทองแดง “อาจทำให้เคลือบละลายออกได้ ให้ทดสอบ” และ Glazy ไม่แนะนำเคลือบตะกั่วสำหรับภาชนะใช้งานอีกต่อไป
 
-A **liner glaze** is a stable, usually clear or white glaze for surfaces that touch food. In our view, one with no colorant, barium, lead or lithium, that melts fully, does not craze and wears well, is the lower-risk choice. Lower risk is not proof.
+**เคลือบด้านใน**{{en: liner glaze}}คือเคลือบที่เสถียร โดยปกติใสหรือขาว สำหรับพื้นผิวที่สัมผัสอาหาร ในมุมมองของเรา เคลือบที่ไม่มีสารให้สี แบเรียม ตะกั่ว หรือลิเทียม ที่หลอมเต็มที่ ไม่แตกลายงา และทนการสึกหรอ เป็นทางเลือกที่ความเสี่ยงต่ำกว่า ความเสี่ยงที่ต่ำกว่าไม่ใช่การพิสูจน์
 
-**Limit formulas** (Digitalfire prefers **target formulas**) give typical unity-formula ranges for stable glazes at a cone: Digitalfire's cone 6 targets put alumina at 0.285–0.64 and silica at 2.4–4.7. They guide you toward sound chemistry but prove nothing; Digitalfire avoids the word "limit" because it suggests glazes inside the ranges "are somehow safe". Glazecalc's tools for changing a recipe say when the new one goes past a recommended limit, such as a lot of boron at cone 6, and what the glaze will likely do.
+**สูตรขีดจำกัด**{{en: limit formula}} (Digitalfire ชอบ**สูตรเป้าหมาย**) ให้ช่วงสูตรเซเกอร์ทั่วไปสำหรับเคลือบที่เสถียรที่โคนหนึ่ง: เป้าหมายโคน 6 ของ Digitalfire กำหนดอลูมินาที่ 0.285–0.64 และซิลิกาที่ 2.4–4.7 ช่วยนำทางไปสู่เคมีที่ดีแต่ไม่พิสูจน์อะไร Digitalfire หลีกเลี่ยงคำว่า “ขีดจำกัด” เพราะบ่งบอกว่าเคลือบที่อยู่ในช่วง “ปลอดภัยไปโดยปริยาย” เครื่องมือของ Glazecalc สำหรับเปลี่ยนสูตรเคลือบจะบอกเมื่อสูตรใหม่เกินขีดจำกัดที่แนะนำ เช่น โบรอนมากที่โคน 6 และเคลือบน่าจะเป็นอย่างไร
 
-The legal limits differ by country. The table shows those where you live, in the law's own units; choose another country to compare.
+ขีดจำกัดทางกฎหมายต่างกันตามประเทศ ตารางแสดงของที่ที่คุณอยู่ ในหน่วยของกฎหมายเอง เลือกประเทศอื่นเพื่อเปรียบเทียบ
 
 ::food-limits
 
-In the US, decorative ceramic ware that looks usable for food is treated as food ware unless it carries a stick-on label and a permanent notice molded or fired onto its base, such as "Not for Food Use. May Poison Food", or has a hole through the food surface. The EU sets lead and cadmium limits in Directive 84/500/EEC, and the UK keeps the same figures in its own law. From 29 May 2026 the Netherlands, Belgium and Luxembourg allow about 130 to 150 times less lead, and about 15 times less cadmium. Australia sets limits for imported ware; we found no official limit for ware made in Australia or New Zealand.
+ในสหรัฐอเมริกา เครื่องเซรามิกตกแต่งที่ดูเหมือนใช้กับอาหารได้ จะถูกถือเป็นภาชนะสำหรับอาหาร เว้นแต่จะมีป้ายสติกเกอร์ และข้อความถาวรที่ปั๊มหรือเผาติดบนฐาน เช่น “Not for Food Use. May Poison Food” (ไม่ใช้กับอาหาร อาจทำให้อาหารเป็นพิษ) หรือมีรูทะลุพื้นผิวที่สัมผัสอาหาร EU กำหนดขีดจำกัดตะกั่วและแคดเมียมในข้อกำหนด EU 84/500/EEC และสหราชอาณาจักรรักษาตัวเลขเดียวกันในกฎหมายของตนเอง ตั้งแต่ 29 พฤษภาคม ค.ศ. 2026 เนเธอร์แลนด์ เบลเยียม และลักเซมเบิร์กอนุญาตตะกั่วน้อยลงประมาณ 130 ถึง 150 เท่า และแคดเมียมน้อยลงประมาณ 15 เท่า ออสเตรเลียกำหนดขีดจำกัดสำหรับชิ้นงานนำเข้า เราไม่พบขีดจำกัดทางการสำหรับชิ้นงานที่ผลิตในออสเตรเลียหรือนิวซีแลนด์
 
-### Testing
+### การทดสอบ
 
-The FDA says home swab kits can show leachable lead, but Ceramics New Zealand warns that test pens are not designed for ceramics and give false positives. Treat a positive as a reason to stop using the piece, and a negative as proving nothing. A laboratory leach test of the fired piece (ASTM C738 in the US; EN 1388 or ISO 6486 in Europe) is the real answer.
+FDA ระบุว่าชุดตรวจแบบป้ายที่บ้านแสดงตะกั่วที่ละลายออกได้ แต่ Ceramics New Zealand เตือนว่าปากกาทดสอบไม่ได้ออกแบบมาสำหรับเซรามิกและให้ผลบวกลวง ถือผลบวกเป็นเหตุผลให้หยุดใช้ชิ้นงาน และผลลบไม่พิสูจน์อะไร การทดสอบการละลายออกของโลหะในห้องปฏิบัติการกับชิ้นงานที่เผาแล้ว (ASTM C738 ในสหรัฐอเมริกา; EN 1388 หรือ ISO 6486 ในยุโรป) คือคำตอบที่แท้จริง
 
 > [!WARNING]
-> "Food safe" means this glaze, on this clay, fired to this cone in this kiln and applied this way, releases less than the legal limits. Glazecalc can help you build a stable glaze, and **Replace lead** can rebuild an old lead recipe without lead, but no calculator can certify a pot. Only a test of the fired piece can.
+> “ปลอดภัยสำหรับอาหาร”{{en: food safe}} หมายความว่าเคลือบนี้ บนดินนี้ เผาถึงโคนนี้ ในเตาเผานี้ และเคลือบด้วยวิธีนี้ ปล่อยน้อยกว่าขีดจำกัดทางกฎหมาย Glazecalc ช่วยคุณสร้างเคลือบที่เสถียรได้ และ **แทนที่ตะกั่ว** สร้างสูตรเคลือบตะกั่วเก่าขึ้นใหม่โดยไม่มีตะกั่วได้ แต่ไม่มีเครื่องคำนวณใดรับรองชิ้นงานได้ มีเพียงการทดสอบชิ้นงานที่เผาแล้วเท่านั้นที่ทำได้
 
 ## ความถ่วงจำเพาะและการเคลือบ {#application}
 
@@ -298,171 +298,171 @@ The FDA says home swab kits can show leachable lead, but Ceramics New Zealand wa
 
 เตาเผาทุกเตา รวมถึงเตาเผาไฟฟ้า ปล่อยควัน จึงให้ระบายควันออก [การผสมอย่างปลอดภัยและการระบายอากาศ](/guides/safe-mixing) อธิบายวิธีทำ
 
-## Glossary {#glossary lang=en}
+## อภิธานศัพท์ {#glossary}
 
-Additive
-: A colorant, opacifier or suspender added on top of a recipe's 100.
+สารเติมแต่ง (Additive)
+: สารให้สี สารทำให้เคลือบทึบ หรือสารช่วยแขวนลอยที่เติมบนยอด 100 ของสูตรเคลือบ
 
-Alumina (Al₂O₃)
-: The main stabilizer: stops running and adds hardness. From clays and feldspars.
+อลูมินา (Al₂O₃)
+: สารให้ความคงตัวหลัก: หยุดการไหลและเพิ่มความแข็ง มาจากดินและหินฟันม้า
 
-Ball clay
-: A plastic clay with more iron and organic matter than kaolin.
+บอลเคลย์ (Ball clay)
+: ดินเหนียวที่มีเหล็กและสารอินทรีย์มากกว่าดินขาว
 
-Batch recipe
-: A glaze's raw materials by weight, usually adding up to 100.
+สูตรเคลือบ (Batch recipe)
+: วัตถุดิบดิบของเคลือบตามน้ำหนัก โดยปกติรวมกันได้ 100
 
-Bentonite
-: A very fine clay added at 1–3% to keep glaze from settling.
+เบนโทไนต์
+: ดินละเอียดมากที่เติม 1–3% เพื่อไม่ให้เคลือบตกตะกอน
 
-Bisque (UK: biscuit)
-: The first, lower firing, usually cone 08–04 (most often 06–04), leaving ware strong but porous.
+เผาดิบ (Bisque; สหราชอาณาจักร: biscuit)
+: การเผาครั้งแรกที่อุณหภูมิต่ำกว่า โดยปกติโคน 08–04 (ส่วนใหญ่ 06–04) ทำให้ชิ้นงานแข็งแรงแต่ยังพรุน
 
-Boron (B₂O₃)
-: Formally a glass former but used as a flux; essential from cone 06 to cone 6.
+โบรอน (B₂O₃)
+: ตามทางการเป็นสารก่อแก้ว แต่ใช้เป็นสารช่วยหลอม จำเป็นตั้งแต่โคน 06 ถึงโคน 6
 
-CMC gum
-: A cellulose gum that helps glaze brush on and stick; it burns away.
+กาว CMC
+: กัมเซลลูโลสที่ช่วยให้เคลือบทาได้และติด ไหม้หมดไป
 
-Colorant and stain
-: A metal oxide or carbonate that colors glaze; a stain is a factory-made, more stable colorant.
+สารให้สีและสีสะเตน (Colorant and stain)
+: ออกไซด์หรือคาร์บอเนตของโลหะที่ให้สีแก่เคลือบ สีสะเตนคือสารให้สีที่ทำในโรงงานและเสถียรกว่า
 
-Cone
-: A calibrated ceramic pyramid that bends at a set heatwork. A witness cone shows what the pots received.
+โคน (Cone)
+: พีระมิดเซรามิกที่ปรับเทียบแล้วซึ่งโค้งที่ฮีตเวิร์กที่กำหนด โคนอ้างอิงแสดงสิ่งที่ชิ้นงานได้รับ
 
-Crawling
-: Glaze pulling back into beads in firing, leaving bare clay.
+เคลือบหดรวมตัว (Crawling)
+: เคลือบถอยเป็นเม็ดระหว่างการเผา ทิ้งดินเปล่า
 
-Crazing
-: Fine cracks in a glaze that shrinks more than its body; crackle when wanted.
+เคลือบแตกลายงา (Crazing)
+: รอยแตกละเอียดในเคลือบที่หดมากกว่าเนื้อดิน; เคลือบแตกรานตั้งใจเมื่อต้องการ
 
-Devitrification
-: Crystals growing out of the glass early in cooling, where they are not wanted.
+ดีวิตริฟิเคชัน (Devitrification)
+: ผลึกที่เติบโตออกจากแก้วในช่วงต้นของการเย็นตัว ในที่ที่ไม่ต้องการ
 
-Dunting
-: Cracks in a pot from cooling or heating stress, often at quartz inversion, {{1063 °F; 573 °C}}.
+ชิ้นงานร้าวจากความร้อน (Dunting)
+: รอยแตกในชิ้นงานจากความเครียดของการเย็นลงหรือการให้ความร้อน มักที่การเปลี่ยนรูปของควอตซ์ {{1063 °F; 573 °C}}
 
-Earthenware
-: A low-fire body (about cone 06–02) that stays porous.
+เอิร์ทเทนแวร์ (Earthenware)
+: เนื้อดินไฟต่ำ (ประมาณโคน 06–02) ที่ยังพรุนอยู่
 
-Feldspar
-: A mineral supplying alkali flux with alumina and silica: potash, soda or nepheline syenite.
+หินฟันม้า (Feldspar)
+: แร่ที่ให้สารช่วยหลอมอัลคาไลพร้อมอลูมินาและซิลิกา: โพแทช โซดา หรือเนฟีลีนไซอีไนต์
 
-Flocculant and deflocculant
-: Additives that gel a slurry (Epsom salts, vinegar) or thin it (sodium silicate, Darvan).
+สารทำให้จับกลุ่มและสารช่วยกระจายตัว (Flocculant and deflocculant)
+: สารเติมแต่งที่ทำให้น้ำเคลือบจับเป็นเจล (เกลือเอปซัม น้ำส้มสายชู) หรือทำให้เหลวลง (โซเดียมซิลิเกต Darvan)
 
-Flux
-: An oxide that lowers the melting temperature of silica.
+สารช่วยหลอม (Flux)
+: ออกไซด์ที่ลดอุณหภูมิหลอมเหลวของซิลิกา
 
-Food safe
-: In law, releasing less lead and cadmium than the limits in an acid test. Not the same as lead-free.
+ปลอดภัยสำหรับอาหาร (Food safe)
+: ตามกฎหมาย ปล่อยตะกั่วและแคดเมียมน้อยกว่าขีดจำกัดในการทดสอบด้วยกรด ไม่เหมือนกับปราศจากตะกั่ว
 
-Frit
-: Factory-made glass, melted, quenched and ground, that makes soluble or toxic oxides insoluble.
+ฟริต (Frit)
+: แก้วที่ทำในโรงงาน หลอม ชุบน้ำให้เย็นเร็ว และบด ซึ่งทำให้ออกไซด์ที่ละลายได้หรือเป็นพิษไม่ละลาย
 
-Glass former
-: The oxide that builds the glass, usually silica.
+สารก่อแก้ว (Glass former)
+: ออกไซด์ที่สร้างแก้ว โดยปกติคือซิลิกา
 
-Glaze
-: A coat of glass that melts in firing to seal and decorate a pot.
+เคลือบ (Glaze)
+: ชั้นแก้วที่หลอมในการเผาเพื่อปิดผนึกและตกแต่งชิ้นงาน
 
-Glaze firing (UK: glost firing)
-: The firing that melts the glaze.
+เผาเคลือบ (Glaze firing; สหราชอาณาจักร: glost firing)
+: การเผาที่หลอมเคลือบ
 
-Glaze fit
-: How well glaze and body expansion match; a good fit leaves the glaze slightly compressed.
+ความเข้ากันของเคลือบกับเนื้อดิน (Glaze fit)
+: การขยายตัวของเคลือบและเนื้อดินตรงกันเพียงใด ความเข้ากันที่ดีทำให้เคลือบถูกบีบเล็กน้อย
 
-Gloss, satin and matte
-: Reflective and smooth; a subdued sheen; dull.
+เงา กึ่งด้าน และด้าน (Gloss, satin and matte)
+: สะท้อนแสงและเรียบ; ความมันนุ่ม; หม่น
 
-Greenware
-: Unfired ware: leather-hard when stiff but damp, bone dry when no free water is left.
+ชิ้นงานดิบ (Greenware)
+: ชิ้นงานที่ยังไม่เผา: ดินหมาดเมื่อแข็งแต่ยังชื้น แห้งสนิทเมื่อไม่เหลือน้ำอิสระ
 
-Heatwork
-: The combined effect of temperature and time in a kiln; what cones measure.
+ฮีตเวิร์ก (Heatwork)
+: ผลรวมของอุณหภูมิและเวลาในเตาเผา สิ่งที่โคนวัด
 
-Kaolin (UK: china clay)
-: A pure white clay supplying alumina and silica; keeps glaze suspended. Australia: Eckalite.
+ดินขาว (Kaolin; สหราชอาณาจักร: china clay)
+: ดินสีขาวบริสุทธิ์ที่ให้อลูมินาและซิลิกา ช่วยให้เคลือบแขวนลอย ออสเตรเลีย: Eckalite
 
-Kiln wash
-: A heat-resisting coating that protects kiln shelves from drips.
+สารเคลือบแผ่นรองเผา (Kiln wash)
+: สารเคลือบทนความร้อนที่ปกป้องแผ่นรองเผาจากเคลือบหยด
 
-Leaching
-: Metals dissolving out of a fired glaze into food or drink.
+การละลายออก (Leaching)
+: โลหะละลายออกจากเคลือบที่เผาแล้วสู่อาหารหรือเครื่องดื่ม
 
-Limit formula (target formula)
-: Typical unity-formula ranges for stable glazes at a cone; a guide, not a guarantee.
+สูตรขีดจำกัด (สูตรเป้าหมาย) (Limit formula)
+: ช่วงสูตรเซเกอร์ทั่วไปสำหรับเคลือบที่เสถียรที่โคนหนึ่ง เป็นแนวทาง ไม่ใช่การรับประกัน
 
-Line blend
-: Tests stepping one ingredient between two amounts. A triaxial blend varies three on a grid.
+ชุดทดสอบแบบเส้น (Line blend)
+: การทดสอบที่เพิ่มส่วนผสมหนึ่งอย่างทีละขั้นระหว่างสองปริมาณ ชุดทดสอบแบบสามเหลี่ยมเปลี่ยนสามอย่างบนตาราง
 
-Liner glaze
-: A stable, usually clear or white glaze for surfaces that touch food.
+เคลือบด้านใน (Liner glaze)
+: เคลือบที่เสถียร โดยปกติใสหรือขาว สำหรับพื้นผิวที่สัมผัสอาหาร
 
-LOI (loss on ignition)
-: Weight lost in firing as water, carbon dioxide, organic matter or sulfur.
+LOI (การสูญเสียน้ำหนักจากการเผา)
+: น้ำหนักที่สูญเสียในการเผาเป็นน้ำ คาร์บอนไดออกไซด์ สารอินทรีย์ หรือซัลเฟอร์
 
-Once-firing (single firing)
-: Glazing unfired ware and firing it only once.
+เผาครั้งเดียว (Once-firing)
+: การเคลือบชิ้นงานที่ยังไม่เผาและเผาเพียงครั้งเดียว
 
-Opacifier
-: A material, such as zircon, tin oxide or titanium dioxide, that makes glaze opaque.
+สารทำให้เคลือบทึบ (Opacifier)
+: วัตถุดิบ เช่น เซอร์คอน ดีบุกออกไซด์ หรือไทเทเนียมไดออกไซด์ ที่ทำให้เคลือบทึบ
 
-Oxidation and reduction
-: Firing with plenty of oxygen (electric kilns), or with oxygen restricted (usually gas or wood).
+ออกซิเดชันและรีดักชัน (Oxidation and reduction)
+: การเผาที่มีออกซิเจนมาก (เตาเผาไฟฟ้า) หรือที่จำกัดออกซิเจน (โดยปกติแก๊สหรือฟืน)
 
-Oxide
-: A compound of an element with oxygen; an oxide analysis lists them by weight percent.
+ออกไซด์ (Oxide)
+: สารประกอบของธาตุกับออกซิเจน ผลวิเคราะห์ออกไซด์ระบุตามเปอร์เซ็นต์น้ำหนัก
 
-Pinholing and blistering
-: Small holes, or sharp-edged craters, where gas escaped through the melt.
+รูเข็มและเคลือบพองเป็นตุ่ม (Pinholing and blistering)
+: รูเล็ก หรือหลุมขอบคม ที่แก๊สหนีออกผ่านเนื้อเคลือบที่หลอม
 
-Porcelain
-: A white, kaolin-rich, high-fire body, often translucent.
+พอร์ซเลน (Porcelain)
+: เนื้อดินสีขาวไฟสูงที่มีดินขาวมาก มักโปร่งแสง
 
-R₂O and RO
-: The alkali fluxes (Na₂O, K₂O, Li₂O) and alkaline-earth fluxes (CaO, MgO, BaO, SrO, with ZnO).
+R₂O และ RO
+: สารช่วยหลอมอัลคาไล (Na₂O, K₂O, Li₂O) และสารช่วยหลอมอัลคาไลน์เอิร์ท (CaO, MgO, BaO, SrO พร้อม ZnO)
 
-Shivering
-: Glaze flaking off edges because it is over-compressed; a hazard on functional ware.
+เคลือบหลุดร่อน (Shivering)
+: เคลือบหลุดเป็นเกล็ดจากขอบเพราะถูกบีบมากเกินไป เป็นอันตรายบนภาชนะใช้งาน
 
-Silica (SiO₂)
-: The glass former; also called flint or quartz.
+ซิลิกา (SiO₂)
+: สารก่อแก้ว เรียกอีกอย่างว่าฟลินต์หรือควอตซ์
 
-Silica to alumina ratio
-: Silica divided by alumina in the unity formula: higher tends to gloss, lower to matte.
+อัตราส่วนซิลิกาต่ออลูมินา (Silica to alumina ratio)
+: ซิลิกาหารด้วยอลูมินาในสูตรเซเกอร์: สูงกว่ามักเงา ต่ำกว่ามักด้าน
 
-Slip and engobe
-: Clay in water; an engobe is a slip-like coating with more non-clay material.
+น้ำดินและเอนโกบ (Slip and engobe)
+: ดินในน้ำ เอนโกบคือชั้นเคลือบคล้ายน้ำดินที่มีวัสดุที่ไม่ใช่ดินมากกว่า
 
-Specific gravity (SG)
-: A slurry's weight compared with the same volume of water. Older UK: pint weight.
+ความถ่วงจำเพาะ (SG)
+: น้ำหนักของน้ำเคลือบเทียบกับน้ำปริมาตรเท่ากัน สหราชอาณาจักรรุ่นเก่า: น้ำหนักต่อไพนต์
 
-Stabilizer
-: An oxide, mainly alumina, that stiffens the melt and adds durability.
+สารให้ความคงตัว (Stabilizer)
+: ออกไซด์ ส่วนใหญ่คืออลูมินา ที่ทำให้เนื้อเคลือบที่หลอมหนืดขึ้นและเพิ่มความทนทาน
 
-Stoneware
-: A mid- to high-fire body (about cone 5–10) that becomes vitreous or nearly so.
+สโตนแวร์ (Stoneware)
+: เนื้อดินไฟกลางถึงไฟสูง (ประมาณโคน 5–10) ที่กลายเป็นเนื้อแก้วหรือเกือบเป็น
 
-Thixotropy
-: Flowing when stirred, setting into a soft gel when still.
+ไทโซโทรปี (Thixotropy)
+: ไหลเมื่อคน เซ็ตเป็นเจลนุ่มเมื่อนิ่ง
 
-Underglaze
-: Colored slip or oxide decoration, usually under a clear glaze.
+สีใต้เคลือบ (Underglaze)
+: น้ำดินสีหรือการตกแต่งด้วยออกไซด์ โดยปกติอยู่ใต้เคลือบใส
 
-Unity molecular formula (UMF, Seger formula)
-: A glaze's oxides as molecule counts, scaled so the fluxes add up to 1.
+สูตรเซเกอร์ (UMF, สูตรของเซเกอร์)
+: ออกไซด์ของเคลือบเป็นจำนวนโมเลกุล ปรับสเกลให้สารช่วยหลอมรวมกันได้ 1
 
-Vitrification
-: A body becoming glassy and non-porous in firing.
+การหลอมตัวเป็นเนื้อแก้ว (Vitrification)
+: เนื้อดินกลายเป็นเหมือนแก้วและไม่พรุนในการเผา
 
-Wax resist
-: Wax painted where glaze must not go, usually the foot.
+ขี้ผึ้งกันเคลือบ (Wax resist)
+: ขี้ผึ้งที่ทาตรงที่ไม่ต้องการให้มีเคลือบ โดยปกติคือฐาน
 
-Whiting
-: Calcium carbonate, the main calcium flux; loses over 40% of its weight in firing. German: Kreide.
+แคลเซียมคาร์บอเนต (Whiting)
+: สารช่วยหลอมแคลเซียมหลัก สูญเสียน้ำหนักมากกว่า 40% ในการเผา เยอรมัน: Kreide
 
-## Sources {#sources lang=en}
+## แหล่งข้อมูล {#sources}
 
 - [Glazy Help: Glaze](https://help.glazy.org/concepts/glaze)
 - [Glazy Help: Oxides](https://help.glazy.org/concepts/oxides)

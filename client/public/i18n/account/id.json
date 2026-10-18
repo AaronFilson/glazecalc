@@ -207,6 +207,11 @@
     "recipes": "Resep (CSV)",
     "materials": "Bahan (CSV)"
   },
+  "trash": {
+    "heading": "Sampah",
+    "text": "Apa yang Anda hapus dari buku catatan Anda menunggu di Sampah selama 30 hari. Kembalikan dari sana, atau hapus secara permanen.",
+    "open": "Buka Sampah"
+  },
   "shared": {
     "heading": "Resep yang dibagikan",
     "text": "Resep yang Anda bagikan lewat tautan, yang dapat dibaca siapa pun yang memegang tautannya tanpa akun. Tautan hanya ditampilkan sekali, saat dibuat, jadi tidak dapat ditampilkan di sini. Untuk membagikan resep lagi, buat tautan baru di bawah Lainnya pada resep.",
@@ -301,6 +306,7 @@
         "saved": "Tersimpan: pembakaran ke kerucut Orton."
       },
       "sk": {
+        "label": "Ke kerucut SK, JIS R 8101",
         "example": "SK 4a, SK 8",
         "saved": "Tersimpan: pembakaran ke kerucut SK."
       },

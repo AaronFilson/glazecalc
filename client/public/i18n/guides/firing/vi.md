@@ -370,83 +370,83 @@ Côn tự đứng của Orton được bán ở Nhật với tên Seger đứng 
 
 :::
 
-## Bisque firing {#bisque lang=en}
+## Nung mộc {#bisque}
 
-The **bisque** firing (biscuit in the UK) is the first, lower firing that turns dry clay into hard, porous ware ready to glaze. It is usually fired to cone 06–04, {{1828–1945 °F; 998–1063 °C}} on Orton's chart; UK potters often fire to around {{1000 °C; 1832 °F}}, near cone 06. The bisque should stay porous, "generally more than 15%" (Digitalfire), so it soaks water out of the glaze. Too soft a bisque takes glaze on too thick, which then cracks and **crawls** (pulls back into islands, leaving bare clay). Under-fired bisque also "continues to shrink during glaze firing", which spoils the glaze fit. Loading is forgiving: pieces may touch, lids can be fired on their pots, and bowls go rim to rim rather than nested.
+Lần nung **mộc**{{en: bisque}} (biscuit ở Anh) là lần nung đầu tiên, thấp hơn, biến đất sét khô thành sản phẩm cứng, xốp sẵn sàng để tráng men. Thường nung đến côn 06–04, {{1828–1945 °F; 998–1063 °C}} theo bảng của Orton; thợ gốm Anh thường nung đến khoảng {{1000 °C; 1832 °F}}, gần côn 06. Gốm mộc nên giữ độ xốp, “thường trên 15%” (Digitalfire), để nó hút nước ra khỏi men. Gốm mộc quá mềm nhận men quá dày, rồi men nứt và **cuốn men**{{en: crawling}} (co lại thành từng đảo, để lộ đất trần). Gốm mộc non lửa cũng “tiếp tục co trong lần nung men”, làm hỏng độ khớp của men. Việc xếp lò khá dễ tính: các sản phẩm có thể chạm nhau, nắp có thể được nung trên chính sản phẩm của chúng, và bát được xếp miệng sát miệng thay vì lồng vào nhau.
 
-### Why the early part goes slowly
+### Vì sao phần đầu diễn ra chậm
 
-Water expands more than a thousandfold as it turns to steam, so damp ware has to be dried slowly. L&L and Orton advise that "Special care should be taken below 1500°F (815°C) to heat the body evenly", and that carbon must be burned out before about {{1200 °F; 650 °C}}. Above {{1500 °F; 816 °C}} the kiln can climb faster.
+Nước giãn nở hơn một nghìn lần khi biến thành hơi, nên sản phẩm ẩm phải được sấy chậm. L&L và Orton khuyên rằng “Cần đặc biệt cẩn thận dưới 1500°F (815°C) để nung nóng xương gốm đều”, và rằng cacbon phải được đốt hết trước khoảng {{1200 °F; 650 °C}}. Trên {{1500 °F; 816 °C}} lò có thể tăng nhanh hơn.
 
-Table: What happens as a bisque heats
-Label: What happens in a bisque
+Table: Điều gì xảy ra khi một lần nung mộc nóng lên
+Label: Điều gì xảy ra trong lần nung mộc
 
-|                        Temperature | What happens                                                |
-| ---------------------------------: | ----------------------------------------------------------- |
-|         {{300–500 °F; 149–260 °C}} | Binders burn off                                            |
-|           About {{450 °F; 232 °C}} | Organic matter starts to burn                               |
-|           Up to {{700 °F; 371 °C}} | Water keeps leaving the clay until above this temperature   |
-|        {{842–1022 °F; 450–550 °C}} | Chemically bound water leaves the clay                      |
-|                {{1063 °F; 573 °C}} | Quartz inversion: silica in the clay expands suddenly       |
-|          Above {{1112 °F; 600 °C}} | Sulfur burns out                                            |
-| Up to {{1200–1400 °F; 649–760 °C}} | Natural carbon burns off; this should finish below red heat |
-|          Above {{1544 °F; 840 °C}} | Calcium carbonate breaks down                               |
+|                         Nhiệt độ | Điều gì xảy ra                                                       |
+| -------------------------------: | -------------------------------------------------------------------- |
+|       {{300–500 °F; 149–260 °C}} | Chất kết dính cháy hết                                               |
+|        Khoảng {{450 °F; 232 °C}} | Chất hữu cơ bắt đầu cháy                                             |
+|           Đến {{700 °F; 371 °C}} | Nước tiếp tục thoát khỏi đất sét cho đến khi vượt nhiệt độ này       |
+|      {{842–1022 °F; 450–550 °C}} | Nước liên kết hóa học thoát khỏi đất sét                             |
+|              {{1063 °F; 573 °C}} | Chuyển pha thạch anh: silica trong đất sét giãn nở đột ngột          |
+|         Trên {{1112 °F; 600 °C}} | Lưu huỳnh cháy hết                                                   |
+| Đến {{1200–1400 °F; 649–760 °C}} | Cacbon tự nhiên cháy hết; việc này nên kết thúc dưới nhiệt độ đỏ rực |
+|         Trên {{1544 °F; 840 °C}} | Canxi cacbonat phân hủy                                              |
 
-**Quartz inversion** is the sudden change in size of the silica in clay at {{1063 °F; 573 °C}}: it expands on the way up and contracts on the way down. L&L's Slow Bisque slows through it, between {{1000 °F; 538 °C}} and {{1100 °F; 593 °C}}. Digitalfire found this "unnecessary for bisque firings", and Ceramics Monthly says it mainly matters when cooling dense ware. Slowing costs little, so our suggestion is to keep it for thick pieces.
+**Chuyển pha thạch anh**{{en: quartz inversion}} là sự thay đổi kích thước đột ngột của silica trong đất sét ở {{1063 °F; 573 °C}}: nó giãn nở khi nóng lên và co lại khi nguội đi. Slow Bisque của L&L chậm lại khi qua mức này, giữa {{1000 °F; 538 °C}} và {{1100 °F; 593 °C}}. Digitalfire thấy việc này “không cần thiết cho các lần nung mộc”, và Ceramics Monthly nói nó chủ yếu quan trọng khi làm nguội sản phẩm dày đặc. Làm chậm tốn rất ít, nên gợi ý của chúng tôi là giữ nó cho các sản phẩm dày.
 
-### Candling: drying in the kiln
+### Sấy nhẹ: sấy khô trong lò
 
-**Candling** means holding the kiln at a low temperature, with the lid propped or the vent running, until the last moisture has left the ware. Sources disagree about the temperature:
+**Sấy nhẹ**{{en: candling}} nghĩa là giữ lò ở nhiệt độ thấp, với nắp được kê hở hoặc quạt thông gió chạy, cho đến khi hơi ẩm cuối cùng đã rời khỏi sản phẩm. Các nguồn không thống nhất về nhiệt độ:
 
-Table: Candling temperatures
+Table: Nhiệt độ sấy nhẹ
 
-| Source           | Candling                                                                                 |
-| ---------------- | ---------------------------------------------------------------------------------------- |
-| Ceramics Monthly | Just short of boiling; for example, climbing at {{25 °F/h; 14 °C/h}} for 4–6 hours       |
-| L&L preheat      | Hold at {{150–200 °F; 66–93 °C}}                                                         |
-| Digitalfire      | Hold at {{250 °F; 121 °C}}, because holding below boiling "does not expel all the water" |
+| Nguồn            | Sấy nhẹ                                                              |
+| ---------------- | -------------------------------------------------------------------- |
+| Ceramics Monthly | Ngay dưới điểm sôi; ví dụ, tăng ở {{25 °F/h; 14 °C/h}} trong 4–6 giờ |
+| L&L preheat      | Giữ ở {{150–200 °F; 66–93 °C}}                                       |
+| Digitalfire      | Giữ ở {{250 °F; 121 °C}}, vì giữ dưới điểm sôi “không đuổi hết nước” |
 
 > [!NOTE]
-> Our starting point: climb slowly to no more than about {{250 °F; 121 °C}}, and hold until a mirror at the vent stays clear. Hold overnight for thick or damp ware.
+> Điểm xuất phát của chúng tôi: tăng chậm đến tối đa khoảng {{250 °F; 121 °C}}, và giữ cho đến khi một tấm gương ở lỗ thông gió không còn mờ hơi. Hãy giữ qua đêm với sản phẩm dày hoặc ẩm.
 
-The **mirror test**: hold a room-temperature mirror at a vent hole or at the gap under a propped lid. If it fogs, water is still leaving; wait, then test again.
+**Thử bằng gương**: giữ một tấm gương ở nhiệt độ phòng tại một lỗ thông gió hoặc tại khe dưới nắp được kê hở. Nếu nó mờ hơi, nước vẫn đang thoát ra; hãy chờ, rồi thử lại.
 
-### Controller schedules
+### Đường cong nung của bộ điều khiển
 
-A **controller** is an electronic unit that fires the kiln through a **schedule**: a list of **segments**, each a rate of climb (the **ramp**), a target temperature and an optional hold. Below are two presets from L&L's DynaTrol and Bartlett controllers, and a schedule published by Digitalfire. "Peak" is the controller's own temperature for the cone you choose: for cone 04 it is {{1926 °F; 1052 °C}}, and for cone 06, {{1819 °F; 993 °C}}.
+**Bộ điều khiển** là một thiết bị điện tử nung lò theo một **đường cong nung**{{en: schedule}}: một danh sách các **phân đoạn**, mỗi phân đoạn gồm một tốc độ tăng (**giai đoạn tăng nhiệt**{{en: ramp}}), một nhiệt độ mục tiêu và một lần giữ nhiệt tùy chọn. Dưới đây là hai cài đặt sẵn từ bộ điều khiển DynaTrol và Bartlett của L&L, và một đường cong nung do Digitalfire công bố. “Peak” là nhiệt độ riêng của bộ điều khiển cho côn bạn chọn: với côn 04 là {{1926 °F; 1052 °C}}, và với côn 06, {{1819 °F; 993 °C}}.
 
-Table: L&L and Bartlett bisque presets
-Label: Bisque presets
+Table: Cài đặt sẵn nung mộc của L&L và Bartlett
+Label: Cài đặt sẵn nung mộc
 
-| Segment                  |                                                           Climb to |            Slow Bisque |            Fast Bisque |
-| ------------------------ | -----------------------------------------------------------------: | ---------------------: | ---------------------: |
-| 1                        |                                                 {{250 °F; 121 °C}} |   {{80 °F/h; 44 °C/h}} |  {{120 °F/h; 67 °C/h}} |
-| 2                        |                                                {{1000 °F; 538 °C}} | {{200 °F/h; 111 °C/h}} | {{300 °F/h; 167 °C/h}} |
-| 3                        |                                                {{1100 °F; 593 °C}} |  {{100 °F/h; 56 °C/h}} |  {{150 °F/h; 83 °C/h}} |
-| 4                        | {{250 °F; 139 °C}} below the peak: {{1676 °F; 913 °C}} for cone 04 | {{180 °F/h; 100 °C/h}} | {{180 °F/h; 100 °C/h}} |
-| 5                        |                                                           The peak |   {{80 °F/h; 44 °C/h}} |  {{108 °F/h; 60 °C/h}} |
-| Heating time, empty kiln |                                                                    | About 13 hours or more |     About 10–11½ hours |
+| Phân đoạn                    |                                                              Tăng đến |            Slow Bisque |            Fast Bisque |
+| ---------------------------- | --------------------------------------------------------------------: | ---------------------: | ---------------------: |
+| 1                            |                                                    {{250 °F; 121 °C}} |   {{80 °F/h; 44 °C/h}} |  {{120 °F/h; 67 °C/h}} |
+| 2                            |                                                   {{1000 °F; 538 °C}} | {{200 °F/h; 111 °C/h}} | {{300 °F/h; 167 °C/h}} |
+| 3                            |                                                   {{1100 °F; 593 °C}} |  {{100 °F/h; 56 °C/h}} |  {{150 °F/h; 83 °C/h}} |
+| 4                            | {{250 °F; 139 °C}} dưới nhiệt độ đỉnh: {{1676 °F; 913 °C}} cho côn 04 | {{180 °F/h; 100 °C/h}} | {{180 °F/h; 100 °C/h}} |
+| 5                            |                                                         Nhiệt độ đỉnh |   {{80 °F/h; 44 °C/h}} |  {{108 °F/h; 60 °C/h}} |
+| Thời gian nung nóng, lò rỗng |                                                                       |  Khoảng 13 giờ trở lên |      Khoảng 10–11½ giờ |
 
-L&L's times are "for the fastest possible empty kilns"; a loaded kiln can take as much as four times longer, and any hold you add is extra heatwork the presets do not allow for. L&L advises Slow Bisque, with a preheat of 2–3 hours or longer, for large or damp pieces, and warns against fast firing, which "can cause defects like pinholes, cracking, and insufficient burnout".
+Thời gian của L&L là “cho các lò rỗng nhanh nhất có thể”; một lò đầy có thể mất lâu gấp tới bốn lần, và bất kỳ lần giữ nhiệt nào bạn thêm là công nhiệt thừa mà các cài đặt sẵn không tính đến. L&L khuyên dùng Slow Bisque, với sấy nóng trước 2–3 giờ hoặc lâu hơn, cho các sản phẩm lớn hoặc ẩm, và cảnh báo không nung nhanh, điều “có thể gây ra các khuyết tật như lỗ chân kim, nứt và đốt cháy không hết”.
 
-Table: Digitalfire BQ1000 bisque, to about cone 06
+Table: Nung mộc BQ1000 của Digitalfire, đến khoảng côn 06
 Label: Digitalfire BQ1000
 
-| Step |                   Rate |               Target | Hold                                      |
-| ---- | ---------------------: | -------------------: | ----------------------------------------- |
-| 1    | {{306 °F/h; 170 °C/h}} |   {{248 °F; 120 °C}} | 60 minutes; up to 10 hours for heavy ware |
-| 2    | {{306 °F/h; 170 °C/h}} |  {{1733 °F; 945 °C}} | None                                      |
-| 3    |  {{108 °F/h; 60 °C/h}} | {{1832 °F; 1000 °C}} | 15 minutes                                |
+| Bước |                 Tốc độ |             Mục tiêu | Giữ nhiệt                             |
+| ---- | ---------------------: | -------------------: | ------------------------------------- |
+| 1    | {{306 °F/h; 170 °C/h}} |   {{248 °F; 120 °C}} | 60 phút; đến 10 giờ cho sản phẩm nặng |
+| 2    | {{306 °F/h; 170 °C/h}} |  {{1733 °F; 945 °C}} | Không                                 |
+| 3    |  {{108 °F/h; 60 °C/h}} | {{1832 °F; 1000 °C}} | 15 phút                               |
 
-BQ1000 takes about 7 hours 44 minutes. Its author finds up to {{500 °F/h; 278 °C/h}} fine for thin, dry ware, and slows the last step to even out the temperature through the load.
+BQ1000 mất khoảng 7 giờ 44 phút. Tác giả của nó thấy đến {{500 °F/h; 278 °C/h}} là ổn với sản phẩm mỏng, khô, và làm chậm bước cuối để nhiệt độ đều khắp mẻ xếp.
 
-### Controller cones and Orton's chart
+### Côn của bộ điều khiển và bảng của Orton
 
-L&L and Bartlett controllers use {{1926 °F; 1052 °C}} for cone 04 and {{1819 °F; 993 °C}} for cone 06, a little below Orton's {{1945 °F; 1063 °C}} and {{1828 °F; 998 °C}}; they agree at cone 6 and cone 10. Witness cones settle the difference: if they disagree with the controller, correct it with the cone offset.
+Bộ điều khiển L&L và Bartlett dùng {{1926 °F; 1052 °C}} cho côn 04 và {{1819 °F; 993 °C}} cho côn 06, thấp hơn một chút so với {{1945 °F; 1063 °C}} và {{1828 °F; 998 °C}} của Orton; chúng khớp nhau ở côn 6 và côn 10. Các côn chứng giải quyết sự chênh lệch: nếu chúng không khớp với bộ điều khiển, hãy hiệu chỉnh nó bằng độ lệch côn.
 
-### On a manual kiln
+### Với lò thủ công
 
-A manual kiln follows the same plan by hand: dry slowly with the lid propped and the peepholes open, step the switches up from Low to Medium to High, and let the sitter end the firing. The published procedures are under Manual kilns in detail, below.
+Một lò thủ công theo cùng kế hoạch bằng tay: sấy chậm với nắp kê hở và các lỗ quan sát mở, nâng các công tắc từ Thấp lên Vừa rồi Cao, và để Kiln-Sitter kết thúc lần nung. Các quy trình đã công bố nằm trong Lò thủ công chi tiết, bên dưới.
 
 ## Nung men {#glaze}
 

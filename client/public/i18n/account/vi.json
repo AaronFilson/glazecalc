@@ -207,6 +207,11 @@
     "recipes": "Công thức men (CSV)",
     "materials": "Nguyên liệu (CSV)"
   },
+  "trash": {
+    "heading": "Thùng rác",
+    "text": "Những gì bạn xóa khỏi sổ tay sẽ chờ trong Thùng rác 30 ngày. Hãy khôi phục từ đó, hoặc xóa vĩnh viễn.",
+    "open": "Mở Thùng rác"
+  },
   "shared": {
     "heading": "Công thức men được chia sẻ",
     "text": "Các công thức men bạn chia sẻ bằng liên kết, mà bất kỳ ai có liên kết đều có thể đọc mà không cần tài khoản. Liên kết chỉ được hiện một lần, khi nó được tạo, nên không thể hiện ở đây. Để chia sẻ lại một công thức men, hãy tạo liên kết mới trong mục Thêm của công thức men.",
@@ -301,6 +306,7 @@
         "saved": "Đã lưu: nung theo côn Orton."
       },
       "sk": {
+        "label": "Theo côn SK, JIS R 8101",
         "example": "SK 4a, SK 8",
         "saved": "Đã lưu: nung theo côn SK."
       },

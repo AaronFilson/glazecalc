@@ -49,6 +49,10 @@
         "title": "Cẩm nang",
         "text": "Từ men là gì đến cách nung men, và giữ an toàn cho mọi người trong suốt quá trình."
       },
+      "trash": {
+        "title": "Thùng rác",
+        "text": "Khôi phục những gì bạn đã xóa trong 30 ngày qua."
+      },
       "account": {
         "title": "Tài khoản và cài đặt",
         "text": "Cài đặt, mật khẩu của bạn, xác minh hai bước, và bản tải xuống mọi thứ bạn lưu ở đây."
@@ -116,6 +120,7 @@
   },
   "trash": {
     "title": "Thùng rác",
+    "lead": "Những gì bạn xóa (công thức men, nguyên liệu, phụ gia, ghi chú, nhật ký nung và lời khuyên) sẽ chờ ở đây 30 ngày. Hãy khôi phục lại, hoặc xóa vĩnh viễn.",
     "listHeading": "Trong thùng rác",
     "none": "Thùng rác trống.",
     "untitled": "Không có tiêu đề",
