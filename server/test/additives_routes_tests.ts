@@ -1,6 +1,7 @@
 import Additive from '../models/additive.ts';
 import type { UserDocument } from '../models/user.ts';
 import { api, expect, makeUser } from './support/app.ts';
+import { forgetStandardSets } from '../lib/standard_library.ts';
 
 // Saving, listing, changing and removing your own additives, and the shared
 // standard list.
@@ -138,6 +139,7 @@ describe('additives API', () => {
 
     it('are shared with anyone, cached briefly, and leave out your own additives', async () => {
       await Additive.create(standard);
+      forgetStandardSets();
       expect(await create({ ...ochre, name: 'Private ochre' })).to.have.status(200);
 
       const res = await api().get('/additives/getStandard');

@@ -1,6 +1,7 @@
 import Advice from '../models/advice.ts';
 import type { UserDocument } from '../models/user.ts';
 import { api, expect, makeUser } from './support/app.ts';
+import { forgetStandardSets } from '../lib/standard_library.ts';
 
 // Saving, listing, changing and removing your own advice, and the shared
 // standard list.
@@ -109,6 +110,7 @@ describe('advice API', () => {
 
     it('is shared with anyone, cached briefly, and leaves out your own advice', async () => {
       await Advice.create(standard);
+      forgetStandardSets();
       expect(await create({ ...backups, title: 'Private advice' })).to.have.status(200);
 
       const res = await api().get('/advice/getStandard');
