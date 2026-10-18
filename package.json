@@ -111,7 +111,7 @@
     "sass-embedded": "1.104.1",
     "tslib": "^2.3.0",
     "typescript": "~6.0.2",
-    "typescript-eslint": "8.71.1",
+    "typescript-eslint": "8.71.2",
     "vitest": "^5.0.0"
   },
   "engines": {
