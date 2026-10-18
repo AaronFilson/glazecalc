@@ -285,8 +285,8 @@ describe('access tokens: the expiry reminder', () => {
     await tokenFor(german.user, { lifeDays: 90, leftDays: 1 });
     await sendTokenReminders();
     const sent = await mail.waitFor(german.email, 1);
-    // English until the translation wave, with the German page.
-    expect(sent[0]!.subject).to.equal(accountMail.TOKEN_EXPIRING['en']!.subject);
+    // In German, with the German page.
+    expect(sent[0]!.subject).to.equal(accountMail.TOKEN_EXPIRING['de']!.subject);
     expect(sent[0]!.text).to.include('https://glazecalc.test/de/account');
     await mail.settle();
     expect(mail.to(unconfirmed.email)).to.have.length(0);
