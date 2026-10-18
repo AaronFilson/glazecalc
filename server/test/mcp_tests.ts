@@ -9,6 +9,7 @@ import { findMaterial } from '../mcp/library.ts';
 import { MOST_STREAMS_PER_ADDRESS, sdkSubscribers, streamsOpen } from '../mcp/index.ts';
 import { SERVER_INFO } from '../mcp/server.ts';
 import { readFileSync } from 'node:fs';
+import mongoose from 'mongoose';
 import * as site from '../lib/site.ts';
 import { hashToken } from '../lib/token_auth.ts';
 import AccessToken from '../models/access_token.ts';
@@ -796,7 +797,8 @@ describe('MCP: personal access tokens', () => {
           $set: {
             firedAt: { scale: 'orton', low: '6', high: '10', tested: ['10'], atmospheres: ['reduction'] },
             foodSurface: true,
-            firings: [{ firing: firingId, result: 'glossy' }]
+            // The second log is gone (in the Trash, or deleted): an assistant is never given its id.
+            firings: [{ firing: firingId, result: 'glossy' }, { firing: new mongoose.Types.ObjectId().toString() }]
           }
         }
       );
@@ -819,6 +821,12 @@ describe('MCP: personal access tokens', () => {
         expect(titles(await data('list_recipes', { cone: '8' }, headers))).to.eql(['Satin white']);
         expect(titles(await data('list_recipes', { cone: '06' }, headers))).to.eql([]);
         expect(titles(await data('list_recipes', { cone: '8', scale: 'sk' }, headers))).to.eql([]);
+        // Across scales, approximately: SK 12 is Kyoto's Orton 10; a temperature within 15 °C of the range.
+        expect(titles(await data('list_recipes', { cone: '12', scale: 'sk' }, headers))).to.eql(['Satin white']);
+        expect(titles(await data('list_recipes', { cone: '1240', scale: 'temperature' }, headers))).to.eql([
+          'Satin white'
+        ]);
+        expect(titles(await data('list_recipes', { cone: '1100', scale: 'temperature' }, headers))).to.eql([]);
         expect(titles(await data('list_recipes', { atmosphere: 'reduction' }, headers))).to.eql(['Satin white']);
         expect(titles(await data('list_recipes', { atmosphere: 'oxidation' }, headers))).to.eql([]);
         expect((await data('list_recipes', { cone: '10' }, headers)).recipes[0].firedAt.tested).to.eql(['10']);

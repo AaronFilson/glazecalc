@@ -120,6 +120,16 @@ describe('recipe firing (lib/cones/firing.js)', () => {
     expect(firing.glazyFiring(null)).to.eql({ cone: '', atmospheres: [] });
   });
 
+  it('marks the CSV cone cell with the cone sign, so a spreadsheet keeps "06" as text, and paste-in reads it back', () => {
+    expect(firing.glazyConeCell({ scale: 'orton', low: '06' })).to.equal('Δ06');
+    expect(firing.glazyConeCell({ scale: 'orton', low: '9', high: '10' })).to.equal('Δ9 - Δ10');
+    expect(firing.glazyConeCell({ scale: 'sk', low: '8' })).to.equal('SK 8');
+    expect(firing.glazyConeCell({ scale: 'temperature', low: '1240' })).to.equal('1240°C');
+    expect(firing.glazyConeCell(null)).to.equal('');
+    expect(firing.readFiring('Δ06')).to.include({ scale: 'orton', low: '06' });
+    expect(firing.readFiring('Δ9 - Δ10')).to.include({ low: '9', high: '10' });
+  });
+
   describe('reading a firing from text', () => {
     const cases: Array<[string, Record<string, unknown>]> = [
       ['Cone 6 ox', { scale: 'orton', low: '6', atmospheres: ['oxidation'] }],
@@ -521,6 +531,6 @@ describe('recipe firing (API)', () => {
       .get('/export/recipes.csv')
       .set('Authorization', 'Bearer ' + token);
     expect(csv.text).to.match(/Unit of additive,Cone,Atmospheres,Food surface/);
-    expect(csv.text).to.match(/,5 - 6,Oxidation,yes\r\n/);
+    expect(csv.text).to.match(/,Δ5 - Δ6,Oxidation,yes\r\n/);
   });
 });

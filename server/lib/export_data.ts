@@ -194,7 +194,9 @@ export const recipesCsv = async (userId: Id): Promise<string> => {
     ] as Array<[string, Line]>;
     if (!lines.length) lines.push(['', {}]);
     // The firing as Glazy's export writes it (its "Cone" string and "Atmospheres" list), and the liner flag.
+    // The cone carries the cone sign (Δ06), so a spreadsheet keeps it as text (lib/cones/firing.js, glazyConeCell).
     const glazy = firing.glazyFiring(recipe.firedAt as FiringBlock | undefined);
+    const cone = firing.glazyConeCell(recipe.firedAt as FiringBlock | undefined);
     const food = recipe.foodSurface === true ? 'yes' : '';
     for (const [type, line] of lines) {
       rows.push([
@@ -205,7 +207,7 @@ export const recipesCsv = async (userId: Id): Promise<string> => {
         line.name,
         line.amount,
         line.unit,
-        glazy.cone,
+        cone,
         glazy.atmospheres,
         food
       ]);

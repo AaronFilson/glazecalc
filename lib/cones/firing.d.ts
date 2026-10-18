@@ -60,7 +60,11 @@ export function approxCone(
 export function coneBand(scale: ConeScale, cone: string): Band | undefined;
 export function firingBands(block: FiringBlock | null | undefined): Band[];
 export function inRange(block: FiringBlock | null | undefined, scale: ConeScale, cone: string): boolean;
+/** Whether a block's firing includes a cone in any scale: measured equivalents across Orton and SK, ±15 °C for a temperature. */
+export function matchesCone(block: FiringBlock | null | undefined, scale: ConeScale, cone: string): boolean;
 export function glazyFiring(block: FiringBlock | null | undefined): { cone: string; atmospheres: string[] };
+/** The CSV's "Cone" cell: Glazy's string with each Orton cone marked Δ, so a spreadsheet keeps "06" as text. */
+export function glazyConeCell(block: FiringBlock | null | undefined): string;
 
 export interface ReadFiring {
   scale?: ConeScale;

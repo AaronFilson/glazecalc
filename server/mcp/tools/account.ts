@@ -13,6 +13,7 @@ import firingLib from '../../../lib/cones/firing.js';
 import type { FiringBlock } from '../../../lib/cones/firing.js';
 import recipe from '../../../lib/recipe/index.js';
 import type { MaterialRecord, TryMaterial } from '../../../lib/recipe/index.js';
+import { liveLinks } from '../../lib/firing_links.ts';
 import { allows, type Permission } from '../../lib/scopes.ts';
 import Firing from '../../models/firing.ts';
 import Material from '../../models/material.ts';
@@ -66,7 +67,7 @@ const coneFilterArgs = {
     .max(6)
     .optional()
     .describe(
-      'Only recipes whose stated firing includes this cone ("6", "06", "5.5", SK "6a"), or for scale "temperature" this °C. A range matches any cone inside it; recipes tested at it come first.'
+      'Only recipes whose stated firing includes this cone ("6", "06", "5.5", SK "6a"), or for scale "temperature" this °C. A range matches any cone inside it; recipes tested at it come first. Recipes stated in another scale match approximately: Orton and SK by measured equivalents only (SK 8, 10 and 12), a temperature when the cone bends within 15 °C of it (Orton at 60 °C an hour).'
     ),
   scale: z
     .enum(['orton', 'sk', 'temperature'])
@@ -172,7 +173,6 @@ export const registerAccountTools = (server: McpServer, caller: Caller): void =>
               `"${cone}" is not a cone of the ${coneScale} scale. Orton cones run 022 … 01, then 1 … 42 (half cones as "5.5"); SK cones as printed ("6a", "8"); a temperature in whole °C.`
             );
           }
-          if (cone !== undefined) filter['firedAt.scale'] = coneScale;
           const projection = { title: 1, date: 1, materials: 1, firedAt: 1 };
           let found;
           let total;
@@ -184,9 +184,11 @@ export const registerAccountTools = (server: McpServer, caller: Caller): void =>
               .limit(limit ?? 25)
               .lean();
           } else {
-            // A range matches any cone inside it, so the cone is matched here; those tested at it come first.
+            // A range matches any cone inside it, so the cone is matched here, in any scale (matchesCone:
+            // measured equivalents across Orton and SK, within 15 °C for a temperature); those tested at it
+            // come first.
             const all = (await Recipe.find(filter, projection).sort({ _id: -1 }).lean()).filter((r) =>
-              firingLib.inRange(r.firedAt as FiringBlock, coneScale, cone)
+              firingLib.matchesCone(r.firedAt as FiringBlock, coneScale, cone)
             );
             const untested = (r: (typeof all)[number]) =>
               firingLib.testedCones(r.firedAt as FiringBlock).includes(cone) ? 0 : 1;
@@ -228,6 +230,7 @@ export const registerAccountTools = (server: McpServer, caller: Caller): void =>
           let checks: Record<string, unknown> | null = null;
           const band = Object.hasOwn(BAND_CELSIUS, found.firing ?? '') ? (found.firing as FiringBand) : undefined;
           const firedAt = firingOut(found.firedAt);
+          const links = await liveLinks(userId, found.firings as Array<{ firing: string; result?: string }>);
           // The band chosen on the recipe wins; else the bands its stated firing falls in, coolest first.
           const bands: FiringBand[] = band ? [band] : (firedAt?.bands ?? []);
           let alsoChecks: Record<string, unknown> | undefined;
@@ -264,8 +267,9 @@ export const registerAccountTools = (server: McpServer, caller: Caller): void =>
             ...(band && { firing: band }),
             ...(firedAt && { firedAt }),
             ...(found.foodSurface && { foodSurface: true }),
-            ...(found.firings?.length && {
-              firings: found.firings.map((link) => ({
+            // Only links to firing logs that are there: never one in the Trash or deleted.
+            ...(links.length && {
+              firings: links.map((link) => ({
                 firingId: link.firing,
                 ...(link.result && { result: link.result })
               }))
