@@ -8,7 +8,8 @@ import { fixed } from '../shared/format';
 // page in another language shows its translation where there is one
 // (client/public/i18n/server/<language>.json, chemistry/ and safety/), loaded
 // with the page's own messages (i18n/provide-i18n.ts, and the home-safety
-// guide's route for safety/).
+// guide's route for safety/). Their English files are never fetched
+// (i18n/loader.ts, CODED_SCOPES).
 
 let transloco: TranslocoService | null = null;
 
@@ -19,7 +20,7 @@ export function useCodedMessages(service: TranslocoService | null): void {
 
 /** The translation of a coded message, or null where the page's language has none. */
 export function codedMessage(
-  scope: 'server' | 'chemistry' | 'safety' | 'regions' | 'records',
+  scope: 'server' | 'chemistry' | 'safety' | 'regions' | 'records' | 'advice',
   code: string,
   params: Record<string, string | number> = {}
 ): string | null {

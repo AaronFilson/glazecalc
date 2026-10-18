@@ -26,7 +26,8 @@ export const routes: Routes = [
     path: 'advice',
     title: marker('titles.advice'),
     data: { description: marker('meta.advice') },
-    providers: [provideTranslocoScope('site', 'records')],
+    // advice/ is the standard advice's words alone (scripts/advice-i18n.mjs), not all of records/.
+    providers: [provideTranslocoScope('site', 'advice')],
     resolve: { messages: scopeTranslations },
     loadComponent: () => import('./pages/advice/advice-page').then((m) => m.AdvicePage)
   },
@@ -95,7 +96,7 @@ export const routes: Routes = [
     loadComponent: () => import('./pages/privacy/privacy-page').then((m) => m.PrivacyPage)
   },
   {
-    // In English for now, and not in the sitemap until it is translated (docs/integrations-plan.md, item 25).
+    // Translated, but not a public page: not in the sitemap, and noindex (docs/integrations-plan.md, item 25).
     path: 'assistants',
     title: marker('titles.assistants'),
     providers: [provideTranslocoScope('site')],

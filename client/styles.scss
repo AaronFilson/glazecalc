@@ -59,14 +59,19 @@
   // The subscripts and superscripts, arrows and math signs.
   unicode-range: U+2070-2071, U+2074-208E, U+2090-209C, U+2190-21FF, U+2200-22FF;
 }
-// The same file, for the subscripts and superscripts only, ahead of Lora (--gc-font).
+// The subscripts and superscripts only, ahead of Lora (--gc-font): the same math face cut to just them (42
+// signs, 7 kB, not the whole 65 kB file every home page asked for early to set K₂O and Al₂O₃), weights kept.
+// Made with fontTools 4.60.1 from @fontsource-variable/noto-serif 5.3.0 (OFL, THIRD-PARTY-NOTICES.md); make
+// it again when that package changes:
+//   pyftsubset node_modules/@fontsource-variable/noto-serif/files/noto-serif-math-wght-normal.woff2
+//     --unicodes="U+2070-2071,U+2074-208E,U+2090-209C" --flavor=woff2 --layout-features='*'
+//     --output-file=client/fonts/noto-serif-sub-wght-normal.woff2
 @font-face {
   font-family: 'Noto Serif Sub';
   font-style: normal;
   font-display: swap;
   font-weight: 100 900;
-  src: url('../node_modules/@fontsource-variable/noto-serif/files/noto-serif-math-wght-normal.woff2')
-    format('woff2-variations');
+  src: url('./fonts/noto-serif-sub-wght-normal.woff2') format('woff2-variations');
   unicode-range: U+2070-2071, U+2074-208E, U+2090-209C;
 }
 

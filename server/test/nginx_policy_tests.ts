@@ -105,3 +105,31 @@ describe('nginx access log', () => {
     expect(formatsIn('glazecalc-staging.conf')).to.eql(['glazecalc_staging']);
   });
 });
+
+// What nginx compresses besides HTML: the sitemap (application/xml, about 1 MB)
+// among them, the same in production and on staging.
+describe('nginx compression', () => {
+  const typesIn = (file: string): string[] => {
+    const text = fs.readFileSync(path.join(NGINX, file), 'utf8');
+    const found = [...text.matchAll(/^\s*gzip_types ([^;]+);/gm)].map((m) => m[1]!.split(/\s+/));
+    expect(found, file).to.have.length(1);
+    return found[0]!;
+  };
+
+  it('compresses the sitemap, scripts, styles, JSON and the manifest', () => {
+    for (const type of [
+      'application/xml',
+      'text/css',
+      'text/javascript',
+      'application/json',
+      'application/manifest+json',
+      'text/plain'
+    ]) {
+      expect(typesIn('glazecalc-proxy.conf')).to.include(type);
+    }
+  });
+
+  it('is the same on staging', () => {
+    expect(typesIn('glazecalc-staging.conf')).to.eql(typesIn('glazecalc-proxy.conf'));
+  });
+});

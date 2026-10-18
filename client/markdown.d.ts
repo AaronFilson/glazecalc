@@ -3,3 +3,9 @@ declare module '*.md' {
   const text: string;
   export default text;
 }
+
+// The standard advice (data/advice.ndjson), imported as text (angular.json: loader).
+declare module '*.ndjson' {
+  const text: string;
+  export default text;
+}

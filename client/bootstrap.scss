@@ -1,0 +1,74 @@
+// The parts of Bootstrap 5.3 the app uses, compiled from its Sass with its own defaults, in place of the whole
+// bootstrap.min.css (232 kB, of which the app used about 50 classes). The order is bootstrap.scss's, so each
+// rule comes out as it did in the full file (https://getbootstrap.com/docs/5.3/customize/optimize/).
+//
+// In use: the root variables and color modes (data-bs-theme), reboot, type (h3-h6, small), tables, forms
+// (form-control, form-select, form-check, input-group, form-text, is-invalid), buttons (btn-check), button
+// groups and the helpers (visually-hidden). Nothing uses the grid, containers, cards, navs, alerts, close
+// buttons, dropdowns, modals or any other component, nor transitions (fade, collapse).
+//
+// Adding a Bootstrap class? Add its partial here, or its utility at the end. The check: every class of
+// Bootstrap's that the client's templates name is in the built stylesheet (server/test/bootstrap_tests.ts).
+
+// Configuration
+@import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/variables';
+@import 'bootstrap/scss/variables-dark';
+@import 'bootstrap/scss/maps';
+@import 'bootstrap/scss/mixins';
+@import 'bootstrap/scss/utilities';
+
+// Layout and components
+@import 'bootstrap/scss/root';
+@import 'bootstrap/scss/reboot';
+@import 'bootstrap/scss/type';
+@import 'bootstrap/scss/tables';
+@import 'bootstrap/scss/forms';
+@import 'bootstrap/scss/buttons';
+@import 'bootstrap/scss/button-group';
+
+// Helpers
+@import 'bootstrap/scss/helpers';
+
+// The utilities in use, as Bootstrap's utilities API writes them (last, !important and in the order of the full file).
+// The full API would add about 70 kB for these thirteen.
+.d-block {
+  display: block !important;
+}
+.d-flex {
+  display: flex !important;
+}
+.border {
+  border: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color) !important;
+}
+.w-100 {
+  width: 100% !important;
+}
+.flex-wrap {
+  flex-wrap: wrap !important;
+}
+.align-items-center {
+  align-items: center !important;
+}
+.mt-4 {
+  margin-top: 1.5rem !important;
+}
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+.mb-3 {
+  margin-bottom: 1rem !important;
+}
+.p-0 {
+  padding: 0 !important;
+}
+.gap-2 {
+  gap: 0.5rem !important;
+}
+.gap-3 {
+  gap: 1rem !important;
+}
+.text-danger {
+  --#{$prefix}text-opacity: 1;
+  color: rgba(var(--#{$prefix}danger-rgb), var(--#{$prefix}text-opacity)) !important;
+}

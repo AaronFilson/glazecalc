@@ -22,6 +22,33 @@ describe('client routes', function () {
     }
   });
 
+  it('lets browsers keep the hashed fonts for a year, and the translations for five minutes', async () => {
+    const media = path.join(path.dirname(INDEX), 'media');
+    const font = fs.readdirSync(media).find((name) => name.endsWith('.woff2'));
+    expect(font, 'a font in media/').to.be.a('string');
+    const res = await site().get('/media/' + font);
+    expect(res.headers['cache-control']).to.equal('public, max-age=31536000, immutable');
+    for (const address of ['/i18n/en.json', '/i18n/site/de.json', '/i18n/guides/firing/de.md']) {
+      const file = await site().get(address);
+      expect(file, address).to.have.status(200);
+      expect(file.headers['cache-control'], address).to.equal('public, max-age=300');
+    }
+    // Other files keep the default: checked each time.
+    expect((await site().get('/favicon.svg')).headers['cache-control']).to.equal('public, max-age=0');
+  });
+
+  it("gives English pages that are not prerendered en.json's title and description", async () => {
+    const { titles, meta } = JSON.parse(fs.readFileSync(path.join(path.dirname(INDEX), 'i18n', 'en.json'), 'utf8')) as {
+      titles: { landing: string };
+      meta: { description: string };
+    };
+    const res = await site().get('/recipe');
+    expect(res.text).to.include(`<title>${titles.landing}</title>`);
+    expect(res.text).to.match(
+      new RegExp(`name="description"\\s+content="${meta.description.replace(/[()]/g, '\\$&')}"`)
+    );
+  });
+
   it('says the language of each page in Content-Language', async () => {
     for (const [page, code] of [
       ['/', 'en'],

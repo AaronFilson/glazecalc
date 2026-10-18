@@ -9,7 +9,7 @@ import { AuthService } from '../../core/auth.service';
 import { errorMessage } from '../../core/error-message';
 import { RecipeAnalysis } from '../../core/models';
 import { PAGE_LANGUAGE } from '../../i18n/language';
-import { StructuredData, pageAddress, webApplication } from '../../shared/structured-data';
+import { StructuredData, homeData, pageAddress } from '../../shared/structured-data';
 import { UnityFormula } from '../recipe/unity-formula';
 
 /** Bernard Leach's "4321" celadon base, in parts by weight. */
@@ -41,11 +41,7 @@ export class LandingPage {
   /** What search engines read about the app (shared/structured-data.ts). */
   protected readonly structured = (() => {
     const language = inject(PAGE_LANGUAGE);
-    return webApplication(
-      translate('meta.description'),
-      language,
-      pageAddress(language, inject(DOCUMENT).location.pathname)
-    );
+    return homeData(translate('meta.description'), language, pageAddress(language, inject(DOCUMENT).location.pathname));
   })();
 
   protected readonly starting = signal(false);

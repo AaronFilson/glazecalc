@@ -1,6 +1,6 @@
 import { Component, signal } from '@angular/core';
 import { TestBed } from '@angular/core/testing';
-import { StructuredData, article, jsonForScript, pageAddress, webApplication } from './structured-data';
+import { StructuredData, article, homeData, jsonForScript, pageAddress, webApplication } from './structured-data';
 
 // Data for search engines, written into the head as a block of JSON that never runs.
 
@@ -47,6 +47,20 @@ describe('structured data', () => {
   it('cannot be closed early by the text in it', () => {
     expect(jsonForScript({ name: '</script><b>' })).not.toContain('<');
     expect(JSON.parse(jsonForScript({ name: '</script><b>' }))).toEqual({ name: '</script><b>' });
+  });
+
+  it('names the site on its own home page only, beside the app', () => {
+    const root = homeData('d', 'en', 'https://glazecalcapp.com/') as { '@context': string; '@graph': object[] };
+    expect(root['@context']).toBe('https://schema.org');
+    expect(root['@graph']).toEqual([
+      { '@type': 'WebSite', name: 'Glazecalc', url: 'https://glazecalcapp.com/' },
+      expect.objectContaining({ '@type': 'WebApplication', name: 'Glazecalc', url: 'https://glazecalcapp.com/' })
+    ]);
+    expect(root['@graph'][1]).not.toHaveProperty('@context');
+    // Another language's home page is a subdirectory: the app alone.
+    expect(homeData('d', 'de', 'https://glazecalcapp.com/de/')).toEqual(
+      webApplication('d', 'de', 'https://glazecalcapp.com/de/')
+    );
   });
 
   it('describes the app and a guide', () => {

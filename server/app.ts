@@ -25,6 +25,7 @@ import mcpRouter, { metadataRouter } from './mcp/index.ts';
 import { say } from './lib/messages.ts';
 import * as site from './lib/site.ts';
 import {
+  isAppOnlyPage,
   isPage,
   isPrivatePage,
   looksLikeFile,
@@ -130,8 +131,16 @@ app.use('/.well-known', metadataRouter);
 
 // The client. Built file names carry a content hash, so browsers may keep
 // them for a year; index.html must be checked each time to pick up new builds.
-// Angular's hashed output: main-ABC12345.js, chunk-B5MvkF-K.js, styles-74GVMONM.css.
-const HASHED = /^(main|polyfills|styles|chunk)-[A-Za-z0-9_-]{8,}\.(js|css)$/;
+// Angular's hashed output: main-ABC12345.js, chunk-B5MvkF-K.js, styles-74GVMONM.css,
+// and the fonts it copies to media/ (lora-latin-wght-normal-6YFDQXH3.woff2).
+const HASHED = /^((main|polyfills|styles|chunk)-[A-Za-z0-9_-]{8,}\.(js|css)|[\w.-]+-[A-Z0-9]{8}\.woff2)$/;
+// The translations (client/public/i18n: JSON, and the guides' Markdown) keep
+// their names from build to build, so a browser may use its copy for five
+// minutes before asking again, rather than asking on every load. A reader who
+// loaded a page in the five minutes before a release may, for up to that
+// long, see a new message in English or as its key.
+const TRANSLATIONS_CACHE = 'public, max-age=300';
+const I18N = path.join('i18n', path.sep);
 const CLIENT = path.join(import.meta.dirname, '..', 'dist', 'glazecalc', 'browser');
 // The public pages as the build rendered them (npm run build), read for each reply.
 const PRERENDERED = path.join(import.meta.dirname, '..', 'dist', 'glazecalc', 'prerendered');
@@ -149,14 +158,31 @@ app.use((req, res, next) => {
   if (req.method !== 'GET' && req.method !== 'HEAD') return next();
   const english = /^\/en(\/.*)?$/i.exec(req.path);
   if (english) return res.redirect(301, '/' + (english[1] ?? '').replace(/^[/\\]+/, '') + queryOf(req));
+  // index.html is the home page under another name, which express.static
+  // would send as it is (no canonical address, no nonce): send it home.
+  if (req.path === '/index.html') return res.redirect(301, '/' + queryOf(req));
+  // A language's home page is /de/, its canonical address: /de goes there.
+  const code = languages.languageOfPath(req.path);
+  if (code !== 'en' && req.path === languages.languagePrefix(code)) {
+    return res.redirect(301, req.path + '/' + queryOf(req));
+  }
   const written = languages.canonicalLanguagePath(req.path);
   return written ? res.redirect(301, written + queryOf(req)) : next();
 });
 
 // A copy that is not to be indexed (NOINDEX) serves no sitemap, and its
-// robots.txt turns every crawler away (server/lib/site.ts).
+// robots.txt turns every crawler away (server/lib/site.ts). The languages
+// and pages are fixed for the life of the process, so the sitemap (about
+// 1 MB) is built once for each site address.
+const sitemaps = new Map<string, string>();
 app.get('/sitemap.xml', site.sitemapAllowed, (req, res) => {
-  res.type('application/xml').set('Cache-Control', 'public, max-age=3600').send(sitemap(site.siteUrl()));
+  const url = site.siteUrl();
+  let xml = sitemaps.get(url);
+  if (xml === undefined) {
+    xml = sitemap(url);
+    sitemaps.set(url, xml);
+  }
+  res.type('application/xml').set('Cache-Control', 'public, max-age=3600').send(xml);
 });
 
 app.get('/robots.txt', site.robotsTxt);
@@ -168,6 +194,7 @@ app.use(
     setHeaders: (res, file) => {
       if (HASHED.test(path.basename(file))) res.setHeader('Cache-Control', 'public, max-age=31536000, immutable');
       else if (file.endsWith('index.html')) res.setHeader('Cache-Control', 'no-cache');
+      else if (path.relative(CLIENT, file).startsWith(I18N)) res.setHeader('Cache-Control', TRANSLATIONS_CACHE);
     }
   })
 );
@@ -178,10 +205,12 @@ app.use('/.well-known', express.static(path.join(CLIENT, '.well-known'), { dotfi
 
 // A language's title, description and preview image's text for search
 // results and link previews, from its messages (client/public/i18n/<language>.json:
-// titles.landing, meta.description and meta.imageAlt), read once.
+// titles.landing, meta.description and meta.imageAlt), read once. English
+// too, so en.json holds the one English text; index.html has the same
+// (client/app/index-html.spec.ts), shown only if en.json cannot be read.
 const pageTexts = new Map<string, Promise<PageText>>();
 const pageText = (code: string): Promise<PageText> => {
-  if (code === 'en' || languages.languageFor(code)?.pseudo) return Promise.resolve({});
+  if (languages.languageFor(code)?.pseudo) return Promise.resolve({});
   let text = pageTexts.get(code);
   if (!text) {
     text = readFile(path.join(CLIENT, 'i18n', code + '.json'), 'utf8').then(
@@ -239,6 +268,8 @@ app.use(async (req, res, next) => {
     .set('Content-Security-Policy', contentSecurityPolicy(nonce))
     .set('Content-Language', code);
   if (isPrivatePage(req.path)) privateHeaders(res);
+  // As the page's own <meta> (isAppOnlyPage); a copy not to be indexed has said more already.
+  else if (isAppOnlyPage(req.path) && !res.get('X-Robots-Tag')) res.set('X-Robots-Tag', 'noindex');
   return res
     .status(isPage(req.path) ? 200 : 404)
     .type('html')

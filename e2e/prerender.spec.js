@@ -119,9 +119,12 @@ test.describe('structured data', () => {
     await page.goto('/');
     await expect(page.locator('h1')).toBeVisible();
     await expect.poll(() => jsonLd(page)).toHaveLength(1);
-    const [data] = await jsonLd(page);
+    const [graph] = await jsonLd(page);
+    // The site's own home page names the site too (WebSite), for search results.
+    expect(graph['@context']).toBe('https://schema.org');
+    expect(graph['@graph'][0]).toEqual({ '@type': 'WebSite', name: 'Glazecalc', url: 'https://glazecalcapp.com/' });
+    const data = graph['@graph'][1];
     expect(data).toMatchObject({
-      '@context': 'https://schema.org',
       '@type': 'WebApplication',
       name: 'Glazecalc',
       applicationCategory: 'DesignApplication',
@@ -132,6 +135,9 @@ test.describe('structured data', () => {
       url: 'https://glazecalcapp.com/'
     });
     expect(data.description).toMatch(SITE_DESCRIPTION);
+    // Another language's home page is a subdirectory, which Google does not read for the name.
+    await page.goto('/de/');
+    await expect.poll(async () => (await jsonLd(page)).map((block) => block['@type'])).toEqual(['WebApplication']);
   });
 
   test('a guide says what it is, in its language, and the block is data, not a script', async ({ page }) => {
@@ -304,6 +310,33 @@ test.describe('prerendered pages', () => {
     await appStarted(page);
     ready = true;
     expect(early).toEqual([]);
+  });
+
+  test('the advice page arrives with the standard advice in its language, and asks for no messages before it is ready', async ({
+    page,
+    request
+  }) => {
+    // In the HTML as sent, before any script: every piece of the standard advice, in Thai.
+    const html = await (await request.get('/th/advice')).text();
+    const list = /<ul\b[^>]*class="general-advice"[^>]*>([\s\S]*?)<\/ul>/.exec(html)?.[1] ?? '';
+    expect(list.match(/<h3\b/g)).toHaveLength(8);
+    expect(list).toContain('มีระบบ');
+    // The files the page carries for the browser (ng-state, which writes / as /): only the advice's
+    // words, not every standard record's, nor English files the page never reads.
+    const carried = html.replaceAll('\\u002F', '/');
+    expect(carried).toContain('/i18n/advice/th.json');
+    expect(carried).not.toContain('/i18n/records/');
+    expect(carried).not.toContain('/i18n/server/en.json');
+    const early = [];
+    let ready = false;
+    page.on('request', (r) => {
+      if (!ready && (r.url().includes('/i18n/') || r.url().includes('/api/'))) early.push(r.url());
+    });
+    await page.goto('/th/advice');
+    await appStarted(page);
+    ready = true;
+    expect(early).toEqual([]);
+    await expect(page.locator('.general-advice li')).toHaveCount(8);
   });
 
   test('a stored session on the home page goes to the notebook without the landing text showing', async ({ page }) => {

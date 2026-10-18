@@ -80,16 +80,16 @@
     "notANumberPoint": "Masukkan angka, misalnya {example}, dengan titik untuk desimal."
   },
   "meta": {
-    "description": "Masukkan resep glasir dan lihat formula Seger (UMF), rasio silika terhadap alumina, dan keseimbangan pelebur. Gratis dan sumber terbuka, untuk resep, bahan, dan catatan pembakaran.",
-    "guides": "Panduan berbahasa sederhana untuk pembuat keramik pemula: apa itu glasir, cara membuat dan mencampurnya dengan aman, menjaga keluarga tetap aman, dan membakar di tungku sederhana.",
-    "glazingBasics": "Glasir terbuat dari apa, bagaimana tungku mengubahnya menjadi kaca, dan apa arti kerucut, frit, formula Seger, dan cacat glasir. Panduan untuk pembuat keramik pemula.",
+    "description": "Masukkan resep glasir, lihat formula Seger (UMF), rasio silika-alumina, dan keseimbangan pelebur. Gratis, sumber terbuka, untuk resep, bahan, dan catatan bakar.",
+    "guides": "Panduan sederhana untuk pembuat keramik pemula: apa itu glasir, cara membuat dan mencampurnya dengan aman, menjaga keluarga tetap aman, dan membakar tungku.",
+    "glazingBasics": "Glasir terbuat dari apa, bagaimana tungku mengubahnya jadi kaca, dan arti kerucut, frit, formula Seger, dan cacat glasir. Panduan untuk pembuat keramik pemula.",
     "makingAGlaze": "Cara membeli, menyimpan, menimbang, dan mencampur glasir, mengatur ketebalannya, mengujinya pada tanah liat Anda sendiri, dan mencatatnya agar bisa dibuat lagi.",
-    "safeMixing": "Cara menjaga debu glasir tidak masuk ke paru-paru dan asap tungku tidak masuk ke rumah Anda: kebiasaan aman, respirator, pembersihan, ventilasi, dan bahan yang berisiko.",
-    "homeSafety": "Apa yang harus dilakukan jika anak atau hewan peliharaan menelan bahan glasir, dan cara menjaga bahan, debu, tungku, dan benda keramik buatan tangan tetap aman di sekitar keluarga Anda.",
-    "firing": "Cara membakar tungku listrik: memilih, memasang, dan membaca kerucut, serta mengikuti jadwal yang dipublikasikan untuk pembakaran biskuit dan pembakaran glasir, lengkap dengan tabel kerucut.",
+    "safeMixing": "Cara menjauhkan debu glasir dari paru-paru dan asap tungku dari rumah Anda: kebiasaan aman, respirator, pembersihan, ventilasi, dan bahan yang berisiko.",
+    "homeSafety": "Yang harus dilakukan jika anak atau hewan peliharaan menelan bahan glasir, dan cara menjaga bahan, debu, tungku, dan keramik buatan tangan aman bagi keluarga.",
+    "firing": "Cara membakar tungku listrik: memilih, memasang, dan membaca kerucut, dan mengikuti jadwal terbitan untuk pembakaran biskuit dan glasir, dengan tabel kerucut.",
     "advice": "Tips praktis tentang mencampur, mengglasir, dan membakar dari Glazecalc, ditambah saran Anda sendiri. Gratis untuk pembuat keramik.",
     "about": "Glazecalc adalah kalkulator dan buku catatan kimia glasir yang gratis dan bersumber terbuka. Lihat cara menghitung formula Seger dan cara aplikasi ini dibangun.",
-    "privacy": "Cara Glazecalc menangani data Anda: tanpa iklan, tanpa analitik, dan tanpa pelacakan, dan tidak ada yang dijual. Apa yang disimpan, mengapa, dan cara menggunakan hak Anda.",
+    "privacy": "Cara Glazecalc menangani data Anda: tanpa iklan, analitik, atau pelacakan, dan tidak ada yang dijual. Apa yang disimpan, mengapa, dan cara memakai hak Anda.",
     "signup": "Buat akun Glazecalc gratis untuk menyimpan resep glasir, bahan, catatan, dan catatan pembakaran Anda. Tanpa iklan, dan data Anda tidak pernah dijual.",
     "imageAlt": "Glazecalc: pahami glasir Anda, bukan sekadar mencampurnya."
   },
