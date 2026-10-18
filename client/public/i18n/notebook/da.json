@@ -17,6 +17,14 @@
         "title": "Opskrifter",
         "text": "Byg en glasur op af råvarer og mængder, se dens Seger-formel (UMF), og gem den."
       },
+      "import": {
+        "title": "Indsæt opskrifter",
+        "text": "Indsæt opskrifter fra et websted, et regneark eller noter, kontrollér, hvad der blev læst, og gem dem."
+      },
+      "blends": {
+        "title": "Blandinger til prøvebrikker",
+        "text": "Bland to, tre eller fire af opskrifterne til nummererede prøvebrikker, med det, der skal afvejes til hver."
+      },
       "material": {
         "title": "Råvarer",
         "text": "Tilføj egne råvarer ud fra en kemisk formel eller en leverandørs analyse."
@@ -99,6 +107,35 @@
     "saveFailed": "Fejl: Anmodningen til serveren mislykkedes."
   },
   "trash": {
-    "title": "Papirkurv"
+    "title": "Papirkurv",
+    "lead": "Det, der fjernes fra opskrifter, råvarer, noter og journaler, bliver her i 30 dage. Sæt det tilbage, eller slet det for altid.",
+    "listHeading": "I papirkurven",
+    "none": "Papirkurven er tom.",
+    "untitled": "Uden navn",
+    "kinds": {
+      "recipes": "Opskrift",
+      "materials": "Råvare",
+      "additives": "Tilsætning",
+      "notes": "Note",
+      "firing": "Brændingsjournal",
+      "advice": "Råd",
+      "other": "Post"
+    },
+    "removedOn": "Fjernet {date}",
+    "goesOn": "Slettes for altid {date}",
+    "byApp": "Fjernet af en tilsluttet app",
+    "putBack": "Sæt tilbage",
+    "putBackName": "Sæt {name} tilbage",
+    "restored": "»{name}« er sat tilbage, hvor den var.",
+    "restoredAlready": "»{name}« er allerede sat tilbage.",
+    "restoreFailed": "»{name}« kunne ikke sættes tilbage. Prøv igen.",
+    "deleted": "»{name}« er slettet for altid.",
+    "empty": "Tøm papirkurven",
+    "emptyQuestion": "Skal {count, plural, one {den # post} other {alle # poster}} i papirkurven slettes for altid? Det kan ikke fortrydes.",
+    "emptyYes": "Ja, tøm den",
+    "emptying": "Tømmer…",
+    "emptied": "Papirkurven er tom.",
+    "emptyFailed": "Papirkurven kunne ikke tømmes. Prøv igen.",
+    "fetchFailed": "Papirkurven kunne ikke indlæses. Prøv igen."
   }
 }

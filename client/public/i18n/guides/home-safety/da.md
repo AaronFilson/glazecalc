@@ -129,25 +129,25 @@ Bly i blodet måles i **µg/dL** (mikrogram bly pr. deciliter blod; en deciliter
 
 Glazecalc har bly slået fra, medmindre det vælges under [Indstillinger](/account). Når bly er slået fra, tilføjer Glazecalc aldrig bly til en opskrift og foreslår det aldrig.
 
-## Pets {#pets lang=en}
+## Kæledyr {#pets}
 
 > [!NOTE]
-> We found no veterinary study or guidance written for pets in potters' homes. The advice in this section is common sense, built on general facts about lead, barium and birds. It does not come from a veterinary source.
+> Vi fandt ingen dyrlægeundersøgelse eller vejledning skrevet til kæledyr i keramikeres hjem. Rådene i dette afsnit er sund fornuft, bygget på almindelige fakta om bly, barium og fugle. De stammer ikke fra en dyrlægekilde.
 
-### What is known
+### Hvad der er kendt
 
-The Pet Poison Helpline says "Lead is toxic for all species, but young and/or malnourished animals are at highest risk for poisoning", with signs such as vomiting, diarrhea, not eating, stumbling, seizures and blindness. A veterinary case report describes a dog that ate sparklers containing barium nitrate (a soluble barium salt, not a glaze material): it developed sudden weakness, drooling and an irregular heartbeat, and recovered with veterinary treatment. Birds are a special case: a University of Illinois vet explains that "Birds have a highly sophisticated and ultra efficient respiratory system, making them particularly vulnerable to the inhalation of fumes and aerosols."
+Pet Poison Helpline siger: »Bly er giftigt for alle arter, men unge og/eller underernærede dyr løber den største risiko for forgiftning«, med tegn som opkastning, diarré, at dyret ikke spiser, vaklen, kramper og blindhed. En veterinær kasuistik beskriver en hund, der spiste stjernekastere med bariumnitrat (et opløseligt bariumsalt, ikke en glasurråvare): den fik pludselig svaghed, savlede og fik uregelmæssig hjerterytme, og kom sig med behandling hos dyrlægen. Fugle er et særligt tilfælde: en dyrlæge ved University of Illinois forklarer, at »fugle har et meget sofistikeret og yderst effektivt åndedrætssystem, hvilket gør dem særligt sårbare over for indånding af dampe og aerosoler.«
 
-### Common-sense rules
+### Regler efter sund fornuft
 
-- Keep pets out of the studio, with the door shut.
-- Dogs chew bags and drink from buckets. Keep bags in a closed cabinet and a lid on every bucket.
-- Cats walk through dust and lick it off their paws and fur. Wet-clean the floor and keep cats out of the studio, so there is nothing to groom off.
-- Birds and small mammals (rabbits, guinea pigs, hamsters) share the household air. Keep them in a far room with the door shut while you handle dry materials and while the kiln fires.
-- Fish tanks collect settling dust. Keep them out of the studio, and covered.
-- Keep pet food and water bowls away from the studio and kiln, and use commercial or tested bowls, not studio experiments.
+- Hold kæledyr ude af værkstedet, med døren lukket.
+- Hunde tygger på poser og drikker af spande. Opbevar poser i et lukket skab, og hav låg på hver spand.
+- Katte går gennem støv og slikker det af poter og pels. Gør gulvet rent med våd klud, og hold katte ude af værkstedet, så der ikke er noget at slikke af.
+- Fugle og små pattedyr (kaniner, marsvin, hamstere) deler luften i hjemmet. Hold dem i et fjernt rum med døren lukket, mens tørre råvarer håndteres, og mens ovnen brænder.
+- Akvarier opsamler støv, der falder ned. Hold dem ude af værkstedet, og tildækkede.
+- Hold kæledyrs mad- og vandskåle væk fra værkstedet og ovnen, og brug skåle fra handlen eller testede skåle, ikke værkstedseksperimenter.
 
-If a pet may have eaten or drunk anything from the studio, or shows signs like those above, call your vet or an animal poison line (see the table at the top), with the material's name and the pet's weight to hand.
+Hvis et kæledyr kan have spist eller drukket noget fra værkstedet, eller viser tegn som dem ovenfor, ring til dyrlægen eller en giftlinje for dyr (se tabellen øverst), med råvarens navn og dyrets vægt ved hånden.
 
 ## Keramikovnen {#the-kiln}
 
@@ -220,7 +220,7 @@ En **indvendig glasur**{{en: liner glaze}} er glasuren på indersiden af en kop 
 
 Se [Glasering fra grunden](/guides/glazing-basics) for mere om, hvordan glasurer smelter, hvorfor nogle afgiver metaller, og hvad grænseværdierne betyder.
 
-## Sources {#sources lang=en}
+## Kilder {#sources}
 
 - [America's Poison Centers: Poison Help](https://poisoncenters.org/)
 - [Poison Control (poison.org): webPOISONCONTROL](https://www.poison.org/)

@@ -3,79 +3,79 @@ title: Brænding i en enkel ovn
 lead: Sådan brændes en elektrisk ovn med Kiln-Sitter eller manuelle kontakter: valg, placering og aflæsning af kegler, med offentliggjorte brændekurver for forglødning og glasurbrænding.
 ---
 
-## Cones: what they measure {#cones lang=en}
+## Kegler: hvad de måler {#cones}
 
 > [!NOTE]
-> Follow your kiln's own manual first. This guide gathers what cone and kiln makers publish about basic electric kilns; it does not replace the instructions for your model, and where the two differ, the manual wins.
+> Følg først ovnens egen manual. Denne vejledning samler, hvad kegle- og ovnproducenter offentliggør om enkle elektriske ovne; den erstatter ikke anvisningerne for den enkelte model, og hvor de to er uenige, vinder manualen.
 
-A **pyrometric cone** is a small, slender pyramid made from a standardized ceramic powder. When it has had enough heat, it softens and bends over in a repeatable way. You set cones in the kiln beside the ware and read how far they bent.
+En **pyrometrisk kegle**{{en: pyrometric cone}} er en lille, slank pyramide lavet af et standardiseret keramisk pulver. Når den har fået nok varme, bliver den blød og bøjer sig over på en gentagelig måde. Kegler sættes i ovnen ved siden af godset, og så aflæses det, hvor langt de har bøjet sig.
 
-Cones measure **heatwork**, the combined effect of temperature and time. In the words of Orton, the main US cone maker, "Cones do not measure temperature alone." A cone heated slowly bends at a lower temperature than one heated fast, and a glaze behaves the same way. So Orton gives each cone's temperature for a stated heating rate over the last {{180 °F; 100 °C}} of the firing. Once a cone starts to move, it bends over a narrow range, "usually less than 40° F" (22 °C).
+Kegler måler **varmepåvirkning**{{en: heatwork}}, den samlede virkning af temperatur og tid. Med Ortons ord, den vigtigste amerikanske keglefabrikant: »Kegler måler ikke temperatur alene.« En kegle, der opvarmes langsomt, bøjer sig ved en lavere temperatur end en, der opvarmes hurtigt, og en glasur{{en: glaze}} opfører sig på samme måde. Derfor angiver Orton hver kegles temperatur for en opgivet opvarmningshastighed over de sidste {{180 °F; 100 °C}} af brændingen. Når en kegle først begynder at bevæge sig, bøjer den sig over inden for et smalt interval, »normalt mindre end 40° F« (22 °C).
 
-### Cone numbers
+### Keglenumre
 
-Cone numbers run from 022, the coolest, up to 42. A leading zero marks the cooler series and is read as "oh": cone 06 ("oh-six") is cooler than cone 04, and cone 01 needs less heat than cone 1. Orton warns that it is important not to mix the two series up. The gap is large: cone 06 bends more than {{400 °F; 220 °C}} cooler than cone 6.
+Keglenumre går fra 022, den koldeste, op til 42. Et foranstillet nul markerer den koldere serie og læses som »nul«: kegle 06 (»nul seks«) er koldere end kegle 04, og kegle 01 kræver mindre varme end kegle 1. Orton advarer om, at det er vigtigt ikke at forveksle de to serier. Forskellen er stor: kegle 06 bøjer sig mere end {{400 °F; 220 °C}} koldere end kegle 6.
 
-Table: Common firing ranges, for self-supporting cones at {{108 °F/h; 60 °C/h}}
-Label: Firing ranges
+Table: Almindelige brændingsområder, for selvstående kegler ved {{108 °F/h; 60 °C/h}}
+Label: Brændingsområder
 
-| Range     | Cones |                    Temperature | Typical use                              |
-| --------- | ----- | -----------------------------: | ---------------------------------------- |
-| Low fire  | 06–04 |  {{1828–1945 °F; 998–1063 °C}} | Earthenware glazes; bisque               |
-| Mid fire  | 5–6   | {{2167–2232 °F; 1186–1222 °C}} | Electric-kiln stoneware and porcelain    |
-| High fire | 9–10  | {{2300–2345 °F; 1260–1285 °C}} | Mostly gas-fired stoneware and porcelain |
+| Område           | Kegler |                     Temperatur | Typisk brug                         |
+| ---------------- | ------ | -----------------------------: | ----------------------------------- |
+| Lav temperatur   | 06–04  |  {{1828–1945 °F; 998–1063 °C}} | Glasurer til lertøj; forglødning    |
+| Mellemtemperatur | 5–6    | {{2167–2232 °F; 1186–1222 °C}} | Stentøj og porcelæn i elektrisk ovn |
+| Høj temperatur   | 9–10   | {{2300–2345 °F; 1260–1285 °C}} | Stentøj og porcelæn, mest gasbrændt |
 
-Suppliers in the UK, Europe, Australia and New Zealand often give a temperature in °C rather than a cone: find the nearest cone in the chart below and confirm it with a witness cone. Seger and Staffordshire cones, the older European series, should not be assumed to share Orton's numbers, so this guide uses Orton cones.
+Leverandører i Storbritannien, Europa, Australien og New Zealand angiver ofte en temperatur i °C i stedet for en kegle: find den nærmeste kegle i skemaet nedenfor, og bekræft den med en kontrolkegle{{en: witness cone}}. Seger- og Staffordshire-kegler, de ældre europæiske serier, bør ikke antages at have samme numre som Orton, så denne vejledning bruger Ortonkegler.
 
-### Holding adds heatwork
+### En holdetid tilfører varmepåvirkning
 
-A **hold** (also called a **soak**) keeps the kiln at one temperature for a while. Because cones measure heatwork, a hold at the top can stand in for a hotter peak. Orton gives these rough equivalents:
+En **holdetid**{{en: hold}} (også kaldet **soak**) holder ovnen på én temperatur et stykke tid. Da kegler måler varmepåvirkning, kan en holdetid i toppen træde i stedet for en højere sluttemperatur. Orton angiver disse grove ækvivalenter:
 
-Table: What a hold at the peak is worth
-Label: Holds and heatwork
+Table: Hvad en holdetid ved sluttemperaturen er værd
+Label: Holdetider og varmepåvirkning
 
-| Hold             | Roughly the same heatwork as             |
-| ---------------- | ---------------------------------------- |
-| About 20 minutes | A peak {{18 °F; 10 °C}} hotter           |
-| 40–60 minutes    | A peak {{36 °F; 20 °C}} hotter           |
-| About 2 hours    | A peak {{54 °F; 30 °C}} hotter           |
-| 4–6 hours        | Enough to bend a cone two numbers hotter |
+| Holdetid            | Nogenlunde den samme varmepåvirkning som          |
+| ------------------- | ------------------------------------------------- |
+| Omkring 20 minutter | En sluttemperatur, der er {{18 °F; 10 °C}} højere |
+| 40–60 minutter      | En sluttemperatur, der er {{36 °F; 20 °C}} højere |
+| Omkring 2 timer     | En sluttemperatur, der er {{54 °F; 30 °C}} højere |
+| 4–6 timer           | Nok til at bøje en kegle to numre varmere         |
 
-Orton adds that a hold of 1–2 hours "may be sufficient to deform the next higher cone number".
+Orton tilføjer, at en holdetid på 1–2 timer »kan være tilstrækkelig til at deformere det næste varmere keglenummer«.
 
-So a hold is never free: if you add one, expect the cones to bend further, and lower the peak to match.
+En holdetid er altså aldrig gratis: hvis der tilføjes en, må keglerne forventes at bøje sig længere, og sluttemperaturen sænkes tilsvarende.
 
-### Kinds of cone
+### Typer af kegler
 
-Orton makes four kinds. Two stand on the shelf to show what the ware received; two are for the kiln sitter.
+Orton laver fire typer. To står på ovnpladen for at vise, hvad godset har fået; to er til Kiln-Sitteren.
 
-Table: Orton's four kinds of cone
-Label: Kinds of cone
+Table: Ortons fire typer kegler
+Label: Typer af kegler
 
-| Kind            | Used for                  | How it stands                                                                               |
-| --------------- | ------------------------- | ------------------------------------------------------------------------------------------- |
-| Self-supporting | Witness cone on the shelf | A built-in base sets the height, 1¾ in (44 mm), and the 8° lean; no holder needed           |
-| Large           | Witness cone on the shelf | Set in a plaque or a pat of clay with exactly 2 in (51 mm) showing, leaning 8° from upright |
-| Small (junior)  | Kiln sitter               | Lies across the sitter's supports; 15/16 in (24 mm) showing if stood on a shelf             |
-| Bar             | Kiln sitter               | The same powder as small cones, in an even bar shape                                        |
+| Type           | Bruges til                | Sådan står den                                                                                              |
+| -------------- | ------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| Selvstående    | Kontrolkegle på ovnpladen | En indbygget fod giver højden, 1¾ tomme (44 mm), og hældningen på 8°; ingen holder er nødvendig             |
+| Stor           | Kontrolkegle på ovnpladen | Sat i en kegleholder eller en klump ler med præcis 2 tommer (51 mm) synlig, hældende 8° fra lodret          |
+| Lille (junior) | Kiln-Sitter               | Ligger på tværs af Kiln-Sitterens understøtninger; 15/16 tomme (24 mm) synlig, hvis den står på en ovnplade |
+| Stav           | Kiln-Sitter               | Det samme pulver som små kegler, i en jævn stavform                                                         |
 
-Height matters: a ¼ in (6 mm) difference in the height of a large cone "can cause more than a half cone difference in bending". Cones do not go bad or age, and damp storage does not affect them.
+Højden betyder noget: en forskel på ¼ tomme (6 mm) i højden af en stor kegle »kan give mere end en halv kegles forskel i bøjning«. Kegler bliver ikke dårlige og ældes ikke, og fugtig opbevaring påvirker dem ikke.
 
-### What "cone 6" means in practice
+### Hvad »kegle 6« betyder i praksis
 
-The chart gives a self-supporting cone 6 as {{2232 °F; 1222 °C}}, but only when the last {{180 °F; 100 °C}} climbs at {{108 °F/h; 60 °C/h}}. Climbing at {{270 °F/h; 150 °C/h}}, the same cone bends at {{2269 °F; 1243 °C}}. Real kilns differ again: Digitalfire reports that "Most kilns reach cone 6 at 2200°F, not 2232°F". So "cone 6" means the ware received the heatwork that bends a cone 6, whatever a thermometer read at the time.
+Skemaet angiver en selvstående kegle 6 som {{2232 °F; 1222 °C}}, men kun når de sidste {{180 °F; 100 °C}} stiger med {{108 °F/h; 60 °C/h}}. Ved en stigning på {{270 °F/h; 150 °C/h}} bøjer den samme kegle sig ved {{2269 °F; 1243 °C}}. Rigtige ovne afviger igen: Digitalfire oplyser, at »de fleste ovne når kegle 6 ved 2200°F, ikke 2232°F«. »Kegle 6« betyder altså, at godset fik den varmepåvirkning, der bøjer en kegle 6, uanset hvad et termometer viste på det tidspunkt.
 
 :::orton
 
 > [!NOTE]
-> Fire by the cone, not the clock or the dial. Set a controller by cone number, and let a witness cone on the shelf confirm every firing.
+> Brænd efter kegle, ikke efter uret eller viseren. Indstil en regulator efter keglenummer, og lad en kontrolkegle på ovnpladen bekræfte hver brænding.
 
 :::
 
 :::temperature
 
 > [!NOTE]
-> Firing by temperature, keep the end of every firing the same: the same last rate of climb, the same peak and the same hold. Then a glaze that worked once works again.
+> Ved brænding efter temperatur skal slutningen af hver brænding holdes ens: den samme sidste stigningshastighed, den samme sluttemperatur og den samme holdetid. Så virker en glasur, der engang virkede, igen.
 
 :::
 
@@ -596,22 +596,22 @@ Slår Kiln-Sitteren fra, før keglerne på ovnpladen er bøjet ned, så gå én 
 
 Et **pyrometer** er en temperaturmåler, der aflæser et **termoelement**, en varmeføler gennem ovnvæggen. Det viser, hvor hurtigt ovnen stiger, så den rigtige kolonne i kegletabellen kan vælges. Men det måler nær væggen, ikke ved emnerne, og det driver med tiden. L&L bemærker, at et termoelement af type K kan vise mere end {{25 °F; 14 °C}} forkert efter gentagne brændinger til kegle 6, »en forskel, der er større end en hel kegle«, mens en selvstående kegle højst varierer med {{4 °F; 2 °C}}. Ifølge Orton skal pyrometre kalibreres igen fra tid til anden, og det er med kegler, de tjekkes.
 
-## Venting, peeking and safety {#venting lang=en}
+## Udsugning, kig og sikkerhed {#venting}
 
-### Venting
+### Udsugning
 
-Early in a firing, clay and glaze give off water vapor and fumes, including carbon monoxide, and glazes can give off toxic fumes later in the firing too. L&L calls venting them "essential". With no vent system, that means the lid propped and the peepholes open in the early stages, as in the procedures above; slowing the heating during this time also helps the carbon burn out. In a kiln without a vent, Dawson, who made the sitter, also says to leave the top peephole open for the whole firing: the venting "will reduce deterioration of the kiln's metal parts and increase the life of the tube assembly". A **downdraft vent** (a powered vent fitted to the kiln) changes this. It does the venting, so Orton says the lid and peepholes stay closed for the whole firing except to check the cones, and L&L says to leave the vent on and plug the peepholes.
+Tidligt i en brænding afgiver ler og glasur{{en: glaze}} vanddamp og dampe, herunder kulilte, og glasurer kan også afgive giftige dampe senere i brændingen. L&L kalder det »afgørende« at lede dem væk. Uden et udsugningssystem betyder det låget på klem og kighullerne åbne i de tidlige trin, som i fremgangsmåderne ovenfor; at opvarme langsommere i den tid hjælper også kulstoffet med at brænde ud. I en ovn uden udsugning siger Dawson, som lavede Kiln-Sitteren, også, at det øverste kighul skal stå åbent under hele brændingen: udluftningen »vil mindske slid på ovnens metaldele og forlænge rørenhedens levetid«. En **bundudsugning**{{en: downdraft vent}} (en motordrevet udsugning, der monteres på ovnen) ændrer det. Den klarer udsugningen, så ifølge Orton bliver låget og kighullerne lukket under hele brændingen, undtagen for at kontrollere keglerne, og L&L siger, at udsugningen skal være tændt, og kighullerne proppes.
 
-For venting the room, and for carbon monoxide alarms, see [Safe mixing and ventilation](/guides/safe-mixing) and [Don't poison your family](/guides/home-safety).
+Om ventilation af rummet og om kuliltealarmer, se [Sikker blanding og ventilation](/guides/safe-mixing) og [Forgift ikke familien](/guides/home-safety).
 
-### While the kiln is firing
+### Mens ovnen brænder
 
-- Look through a peephole only with IR-rated shade 3 welding glasses; sunglasses are not enough. Skutt advises twisting the plugs into place so they do not fall out.
-- Do not leave the kiln unattended beyond its expected firing time; a sitter is not a fail-safe.
-- Never fire on or near anything that burns, such as a wood floor or carpet.
-- Keep the clearances in your manual. Published figures range from 12 in (30 cm) to 3 ft (91 cm); where the manual is silent, 18 in (46 cm) from walls and 3 ft (91 cm) from anything that burns is the safest choice.
-- Keep the space around the sitter's weight clear so it can drop.
-- When the firing ends, turn the switches off and turn off the breaker as well.
+- Kig kun gennem et kighul med svejsebriller med IR-filter i beskyttelsestrin 3; solbriller er ikke nok. Skutt anbefaler at dreje propperne på plads, så de ikke falder ud.
+- Lad ikke ovnen være uden opsyn ud over den forventede brændingstid; en Kiln-Sitter er ingen fejlsikring.
+- Brænd aldrig på eller i nærheden af noget, der kan brænde, som et trægulv eller et tæppe.
+- Hold afstandene fra manualen. Offentliggjorte tal spænder fra 12 tommer (30 cm) til 3 fod (91 cm); hvor manualen tier, er 18 tommer (46 cm) fra vægge og 3 fod (91 cm) fra alt, der kan brænde, det sikreste valg.
+- Hold pladsen omkring Kiln-Sitterens lod fri, så det kan falde.
+- Når brændingen er slut, så slå kontakterne fra, og slå også sikringen fra.
 
 ## Afkøling og tømning {#cooling}
 

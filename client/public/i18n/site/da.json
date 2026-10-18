@@ -57,9 +57,13 @@
     "stackServer": "Et TypeScript-API på Node.js 24 og Express 5 med MongoDB 9, kontrolleret af mere end 350 automatiske test.",
     "stackHosting": "Kører i Docker på Amazon Web Services bag nginx med HTTPS fra Let's Encrypt.",
     "stackDeploy": "Udrulles med GitHub Actions: images bygges og testes ved hver ændring, og udrulningerne logger ind på AWS uden gemte nøgler.",
+    "creditsHeading": "Tak til",
+    "credits": "Områderne i Stull-diagrammet stammer fra Glazys aflæsning af R. T. Stulls diagram fra 1912, af Derek Au (Copyright (c) 2017 Derek Au, MIT License). Den <notices>fulde meddelelse</notices> findes i kildekoden.",
     "whoHeading": "Hvem står bag",
     "who": "Glazecalc er lavet af Aaron Filson. Har du fundet et problem eller fået en idé? <issues>Opret et issue på GitHub</issues>.",
-    "studio": "Aaron Filsons håndlavede keramik findes hos <studio>Updraft Pottery Studio</studio> i Tacoma, Washington. Tag et kig på arbejderne, og bestil et stykke, hvis et af dem siger dig noget."
+    "studio": "Aaron Filsons håndlavede keramik findes hos <studio>Updraft Pottery Studio</studio> i Tacoma, Washington. Tag et kig på arbejderne, og bestil et stykke, hvis et af dem siger dig noget.",
+    "languagesHeading": "Sprog",
+    "languages": "Glazecalc findes på disse sprog. Hvert link åbner denne side på det sprog."
   },
   "privacy": {
     "title": "Privatlivspolitik",
@@ -71,8 +75,15 @@
     "contact": "Skriv til <mail>privacy@glazecalcapp.com</mail> for at spørge om dine data eller bruge en af dine rettigheder. Du kan også <issues>oprette et issue på GitHub</issues>, men issues er offentlige: Skriv aldrig din e-mailadresse eller noget personligt i et. Det meste vedrørende dine data kan du selv klare på <account>kontosiden</account>.",
     "storedHeading": "Hvad der gemmes, og hvorfor",
     "storedAccount": "<b>Kontoen:</b> e-mailadressen og adgangskoden, som kun gemmes som en envejs-hash (bcrypt), aldrig som selve adgangskoden. Indstillingerne (fx sprog, region og enheder) og listen over råvarer på lager gemmes sammen med den. En konto kræver en e-mailadresse til at logge ind og til at nulstille en glemt adgangskode. Når en konto oprettes, sendes et link til adressen for at bekræfte, at den er din; indtil da sendes der kun mail til den, når du beder om det, fx ved nulstilling af adgangskoden.",
+    "storedPrices": "<b>Priser, hvis der angives nogen:</b> hvad der betales for hver råvare, pr. kilogram, og den valuta, de er i, til prisen for en portion. De er forretningsdata, gemt i kontoen og private for den: de er aldrig en del af en opskrift, så intet, der deles, viser dem. Download mine data indeholder dem, og når kontoen slettes, slettes de. En prøveperiodes priser flyttes over i kontoen sammen med dens poster, for råvarer, der ikke har fået en pris, når begge er i samme valuta.",
     "storedEmailChange": "<b>Skift af e-mailadresse:</b> datoen, hvor adressen sidst blev ændret, så en anmodning om at slå login i to trin fra aldrig accepteres fra en ny adresse i de følgende 30 dage.",
     "storedSignIn": "<b>Login i to trin, hvis du slår det til:</b> om det er slået til; den hemmelige nøgle, godkendelsesappen deler med Glazecalc, krypteret; for hver adgangsnøgle dens offentlige nøgle (som ikke kan logge ind alene) med det id og de oplysninger, enheden giver den, det navn, du gav den, og hvornår den blev tilføjet og senest brugt; gendannelseskoderne, kun som en envejs-hash med nøgle, så ingen kan læse dem igen; og hvis nogen angiver din adgangskode, men ikke gennemfører det andet trin, hvornår Glazecalc sidst sendte dig en e-mail om det (højst én gang om dagen). Mens du logger ind, mellem adgangskoden og det andet trin, gemmer serveren en note om login i 5 minutter, og siden holder en kort token kun i hukommelsen: ingen ny cookie, intet i browserens lager.",
+    "storedSaved": "<b>Det, der gemmes:</b> opskrifter, råvarer, tilsætninger, noter, brændingsjournaler og råd, som de blev skrevet. Kun brugeren kan se dem, medmindre en opskrift deles med et link.",
+    "storedTrash": "<b>Papirkurven og tidligere versioner:</b> det, der fjernes fra en liste, bliver helt i papirkurven, så det kan sættes tilbage; og hver ændring, der gemmes i en post, bevarer posten, som den var lige før, så ændringen kan fortrydes.",
+    "storedShares": "<b>Opskrifter, der deles med et link, hvis der deles nogen:</b> hvilken opskrift, hvornår linket blev oprettet, og om det viser opskriftens noter, med en envejs-hash af linket (aldrig selve linket). Alle, der har linket, kan se opskriften, som den er nu, med dens Seger-formel, og dens noter, hvis det blev valgt at vise dem; aldrig e-mailadressen, kontoen eller nogen priser. Delte opskrifter holdes uden for søgemaskiner, og linket når aldrig serverens logge. For at forhindre misbrug tælles de delte opskrifter, der åbnes fra hver IP-adresse, i hukommelsen i 15 minutter. En prøveperiode kan ikke dele.",
+    "storedTokens": "<b>Adgangstokens og tilsluttede apps, hvis der oprettes eller godkendes nogen:</b> for hver dens navn, hvad den må, en envejs-hash af adgangstokenet (aldrig selve adgangstokenet) og dets sidste 4 tegn, og hvornår det blev oprettet, sidst brugt, udløber og blev tilbagekaldt.",
+    "storedActivity": "<b>Hvad adgangstokens og apps har gjort:</b> en linje for hver post, som et adgangstoken eller en tilsluttet app oprettede, ændrede, flyttede til papirkurven, satte tilbage eller fortrød: hvornår, hvilket adgangstoken eller hvilken app, hvad den gjorde og postens titel, forkortet. Aldrig en notes tekst eller andet i posten. Ændringer, der foretages på webstedet, er ikke på listen.",
+    "storedLimits": "<b>Grænser for, hvor ofte:</b> for at stoppe gætteri og løbske scripts, tællinger af loginforsøg, tilmeldinger, anmodninger om nulstilling og prøveperioder pr. IP-adresse eller konto, af adgangstokens, der ikke virker, pr. IP-adresse, af poster, som hvert adgangstoken flytter til papirkurven, pr. adgangstoken, af åbnede delte opskrifter og af delingslinks, der ikke åbner noget, pr. IP-adresse, og af forespørgsler til værktøjerne til AI-assistenter (MCP): 60 i minuttet og 2000 om dagen pr. IP-adresse, eller 120 i minuttet og 5000 om dagen pr. konto, når et adgangstoken bruges, med højst 10 udskiftninger eller genskabelser i minuttet.",
     "storedTrial": "<b>En prøveperiode (»Prøv nu«):</b> ingen e-mailadresse eller adgangskode, kun et opdigtet navn som »speckled quiet kilns«. Hvis du logger ind på en konto i samme browser under en prøveperiode, flyttes det, du har lavet i prøveperioden, over i kontoen.",
     "storedResets": "<b>Links til nulstilling af adgangskode og e-mail:</b> hvilken konto der bad om det, hvornår, den adresse, et link til bekræftelse af en adresse blev sendt til, og et fingeraftryk af hvert link (ikke selve linket).",
     "storedLogs": "<b>Logfiler:</b> Webserveren registrerer hver anmodning: din IP-adresse, tidspunktet, den side, der blev bedt om, og navnet på din browser. Appen registrerer fejl med den side, de opstod på, aldrig din e-mailadresse.",
@@ -95,6 +106,11 @@
     "choiceNoWarranty": "Glazecalc leveres, som det er, uden garanti. Projektets vedligeholdere påtager sig hverken ansvar eller erstatningsansvar for din beslutning om at oprette en konto eller for, hvor kontoens data opbevares.",
     "keptHeading": "Hvor længe data opbevares",
     "keptAccount": "<b>Kontoen og det, du gemmer:</b> indtil du sletter dem. Konti fjernes ikke, fordi de ikke bliver brugt.",
+    "keptTrash": "<b>Papirkurven og tidligere versioner:</b> en fjernet post i 30 dage efter, at den blev fjernet, eller indtil den slettes for altid, eller papirkurven tømmes; tidligere versioner i 90 dage, og kun de seneste 20 af hver post (og den fra før et adgangstokens ændringer), men aldrig længere end posten: mens den ligger i papirkurven, forsvinder dens versioner, når den forsvinder. Begge forsvinder med det samme, når kontoen slettes.",
+    "keptShares": "<b>Delingslinks:</b> indtil opskriften ikke deles længere, der oprettes et nyt link til den, den flyttes til papirkurven, eller kontoen slettes. At sætte opskriften tilbage fra papirkurven deler den ikke igen. At nulstille adgangskoden eller logge ud overalt stopper også alle links; at ændre adgangskoden gør det ikke.",
+    "keptTokens": "<b>Adgangstokens og tilsluttede apps:</b> hver indtil 30 dage efter, at den udløber (alle udløber, senest inden for et år), eller indtil kontoen slettes. En nulstilling af adgangskoden eller »Log ud overalt« stopper dem alle på én gang.",
+    "keptActivity": "<b>Hvad adgangstokens og apps har gjort:</b> 90 dage, eller indtil kontoen slettes.",
+    "keptLimits": "<b>Grænser for, hvor ofte:</b> tællingerne gemmes kun i serverens hukommelse, i 1 minut til 24 timer, og går tabt, når den genstarter.",
     "keptTrial": "<b>En prøveperiode:</b> 14 dage fra starten, hvorefter den slettes med alt indhold, medmindre du opretter en konto for at beholde den.",
     "keptResets": "<b>Links til nulstilling af adgangskode og e-mail:</b> Et link til nulstilling virker i 30 minutter, og registreringen af det slettes efter ca. en time; et link til bekræftelse af en adresse virker og opbevares i 24 timer.",
     "keptSignIn": "<b>Login i to trin:</b> hver godkendelsesapp, adgangsnøgle og hvert sæt gendannelseskoder, indtil du fjerner dem, slår login i to trin fra eller sletter kontoen. Et login, der venter på sit andet trin, slettes efter 5 minutter, og en app eller adgangsnøgle, som du begyndte at tilføje, men ikke gennemførte, efter højst 10.",
@@ -112,6 +128,7 @@
     "rightsAsk": "Skriv til <mail>privacy@glazecalcapp.com</mail> om alt andet, fx hvis du vil have, at dine data ikke bruges, mens en fejl bliver rettet, eller vil gøre indsigelse mod, hvordan de bruges. Det er gratis, og du får svar inden for en måned. Du bliver kun bedt om at vise, at kontoen er din, ved at logge ind eller ved at åbne et link, der sendes til dens adresse, aldrig om legitimation.",
     "rightsComplain": "Hvis du ikke er tilfreds, kan du klage til en databeskyttelsesmyndighed: i EU til <edpb>myndigheden i dit land</edpb> og i Storbritannien til <ico>Information Commissioner’s Office</ico>.",
     "storageHeading": "Cookies og lagring i browseren",
+    "storageIntro": "Glazecalc sætter to cookies, den anden kun mens der logges ind med Google eller GitHub, og gemmer nogle få små værdier i browseren. Hver findes til noget, der er bedt om: at forblive logget ind, at logge ind med Google eller GitHub, eller at huske et valg, der er truffet. Ingen sporer brugeren, og ingen deles, så loven kræver ikke, at der spørges først, og der er intet cookiebanner.",
     "storageLabel": "Cookies og lagring i browseren",
     "storageName": "Navn",
     "storagePurpose": "Hvad den bruges til",
@@ -150,6 +167,7 @@
         "lasts": "Indtil du rydder browserens lager."
       },
       "print": {
+        "purpose": "De seneste valg til udskrivning af en opskrift: hele opskriften, en portion eller arbejdsarket, og portionsstørrelsen.",
         "lasts": "Indtil du rydder browserens lager."
       },
       "token": {
@@ -163,12 +181,19 @@
       "reloadedFor": {
         "purpose": "Når en ny version af webstedet er udgivet: hvilken side der blev genindlæst og hvornår, så en side højst genindlæses én gang i minuttet.",
         "lasts": "Indtil du lukker fanen."
+      },
+      "oauthCookie": {
+        "purpose": "Kun mens der logges ind med Google eller GitHub: den knytter udbyderens svar til browseren, så ingen andre kan gennemføre login eller starte et. Scripts på siden kan ikke læse den.",
+        "lasts": "Sættes, når der trykkes på »Fortsæt med Google« eller »Fortsæt med GitHub«, eller når en tilknyttes på kontosiden. Fjernes, når login er færdigt, eller efter 10 minutter."
       }
     },
     "childrenHeading": "Børn",
     "children": "Glazecalc er et værktøj for keramikere og er ikke rettet mod børn.",
     "changesHeading": "Ændringer",
-    "changes": "Hvis denne politik ændres, ændres datoen øverst på siden også."
+    "changes": "Hvis denne politik ændres, ændres datoen øverst på siden også.",
+    "storedProviders": "<b>Google eller GitHub, hvis der logges ind med en af dem:</b> udbyderens eget id for brugeren (et tal eller en kode, der aldrig ændres), hvornår den blev tilknyttet, og hvornår der sidst blev logget ind med den, og om kontoen har en egen adgangskode. Intet andet fra udbyderen gemmes: ikke navn, billede eller nogen nøgle til kontoen dér. Mens der logges ind, gemmer serveren en notits om login, med den e-mailadresse, som udbyderen angiver som brugerens, når det er nødvendigt: til en ny konto, hvor den bliver kontoens e-mailadresse, eller, når en Glazecalc-konto allerede har den e-mailadresse, for at tilknytte udbyderen til den, når der logges ind på den konto. Notitsen og e-mailadressen i den slettes inden for omkring 10 minutter.",
+    "providers": "<b>Login med Google eller GitHub</b> er et valg og sker kun, når der trykkes på dens knap. Browseren går så til Google eller GitHub, som sender Glazecalc deres id for brugeren og e-mailadressen. Hver er en separat virksomhed, ansvarlig for det, der deles med den, efter sin egen privatlivspolitik. Intet script eller billede fra nogen af dem indlæses på Glazecalcs sider.",
+    "keptProviders": "<b>Google eller GitHub:</b> hver tilknytning, indtil den frakobles, eller kontoen slettes. Et login, der er i gang, slettes efter 10 minutter."
   },
   "notFound": {
     "heading": "Siden blev ikke fundet",
@@ -194,5 +219,27 @@
     "standardFetchFailed": "Der opstod en fejl under hentning af rådene fra serveren.",
     "saved": "Rådet er tilføjet.",
     "saveFailed": "Der opstod en fejl under indsendelse af rådet."
+  },
+  "assistants": {
+    "title": "Brug Glazecalc fra en AI-assistent",
+    "lead": "AI-assistenter som Claude, GitHub Copilot, Cursor og Gemini kan bruge Glazecalcs beregninger direkte, via Model Context Protocol (MCP).",
+    "whatHeading": "Hvad den kan",
+    "what": "Uden en konto kan en assistent slå råvarer op i biblioteket, regne en opskrifts Seger-formel ud, kontrollere den mod grænserne for dens brænding, foreslå erstatninger for råvarer, der ikke længere produceres, lave en opskrift om af de råvarer, der nævnes, omregne mellem kegler og temperaturer, og søge i og læse vejledningerne. Intet, den sender, gemmes; som for enhver side registrerer webserverens log hver forespørgsels IP-adresse, tidspunkt og adresse (aldrig det, der blev sendt), i 14 dage.",
+    "mine": "Med et adgangstoken fra <account>kontosiden</account> kan den også læse egne opskrifter, råvarer, notesbog, brændingsjournaler og de råvarer, der er på lager. Et adgangstoken kan kun læse: det ændrer eller fjerner aldrig noget.",
+    "caution": "Grænsekontrollerne er advarsler ud fra offentliggjorte grænser, som i appen, ikke bevis for, at en glasur er egnet til fødevarekontakt. Prøvebrænd hver glasur, og få glasurer til flader med fødevarekontakt testet for afgivelse af metaller.",
+    "addressHeading": "Adressen",
+    "address": "Giv assistenten denne adresse, med transporten Streamable HTTP:",
+    "token": "For at lade den læse egne data oprettes et adgangstoken på <account>kontosiden</account>, og det kopieres. Assistenten sender det i en Authorization-header, som Bearer efterfulgt af adgangstokenet. Hold det uden for filer, der deles eller committes, som med en adgangskode.",
+    "clientsHeading": "Tilføj Glazecalc til en assistent",
+    "claudeCode": "I en terminal:",
+    "claudeCodeToken": "Med et adgangstoken, for også at læse egne data:",
+    "vscode": "I .vscode/mcp.json i en mappe eller i brugerindstillingerne. VS Code spørger efter adgangstokenet én gang og holder det skjult; udelad headers og inputs for kun at bruge de værktøjer, der ikke kræver en konto:",
+    "cursor": "I ~/.cursor/mcp.json eller .cursor/mcp.json i et projekt. Udelad headers for kun at bruge de værktøjer, der ikke kræver en konto:",
+    "gemini": "I ~/.gemini/settings.json. Udelad headers for kun at bruge de værktøjer, der ikke kræver en konto:",
+    "appsHeading": "Claude, ChatGPT og andre apps",
+    "apps": "Tilføj en brugerdefineret connector med adressen ovenfor. Disse apps kan endnu ikke sende et adgangstoken, så de får de værktøjer, der ikke kræver en konto. Adgang til egne data fra dem kommer med login fra appen.",
+    "stopHeading": "Stop adgang",
+    "stop": "Tilbagekald et adgangstoken på <account>kontosiden</account> når som helst. Hvert adgangstoken holder op med at virke den dag, der blev valgt, og alle holder op på én gang, hvis adgangskoden nulstilles, eller der logges ud overalt.",
+    "limits": "Hver adresse kan lave 60 forespørgsler i minuttet og 2000 om dagen; en konto, der bruger et adgangstoken, 120 i minuttet og 5000 om dagen. Udskiftninger og genskabelser er begrænset til 10 i minuttet."
   }
 }

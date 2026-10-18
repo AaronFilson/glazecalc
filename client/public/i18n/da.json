@@ -17,13 +17,17 @@
     "confirmEmail": "Bekræft e-mailadressen - Glazecalc",
     "home": "Notesbog til værkstedet - Glazecalc",
     "recipe": "Opskrifter - Glazecalc",
+    "import": "Indsæt opskrifter - Glazecalc",
+    "blends": "Blandinger til prøvebrikker - Glazecalc",
     "material": "Råvarer - Glazecalc",
     "additive": "Tilsætninger - Glazecalc",
     "firingLogs": "Brændingsjournaler - Glazecalc",
     "notes": "Noter - Glazecalc",
     "trash": "Papirkurv - Glazecalc",
     "account": "Konto og indstillinger - Glazecalc",
-    "notFound": "Siden blev ikke fundet - Glazecalc"
+    "notFound": "Siden blev ikke fundet - Glazecalc",
+    "shared": "Delt opskrift - Glazecalc",
+    "assistants": "Brug Glazecalc fra en AI-assistent - Glazecalc"
   },
   "nav": {
     "skip": "Spring til indholdet",
@@ -96,9 +100,14 @@
   },
   "remove": {
     "alreadyRemoved": "»{name}« var allerede fjernet.",
+    "trashed": "»{name}« er flyttet til papirkurven.",
+    "undo": "Fortryd",
+    "restored": "»{name}« er sat tilbage.",
+    "restoreFailed": "»{name}« kunne ikke sættes tilbage. Den ligger stadig i papirkurven.",
     "failed": "Det kunne ikke fjernes. Prøv igen.",
     "question": "Skal »{name}« fjernes?",
     "cannotUndo": "Det kan ikke fortrydes.",
+    "toTrash": "Den kan sættes tilbage fra papirkurven i 30 dage.",
     "removing": "Fjerner…",
     "yes": "Ja, fjern",
     "cancel": "Annuller",

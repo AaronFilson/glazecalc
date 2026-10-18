@@ -65,49 +65,49 @@ Det meste af beskyttelsen kommer fra vaner, ikke fra udstyr. HSE’s råd til ke
 
 Denne prioritering er vores forslag, bygget på HSE’s princip om først at undgå pulver. Afvejning og blanding trin for trin står i [Sådan laver man en glasur](/guides/making-a-glaze).
 
-## Respirators {#respirators lang=en}
+## Åndedrætsværn {#respirators}
 
-A **respirator** is a mask certified to filter fine particles from the air you breathe. It works only when it seals to your face, and it backs up good habits rather than replacing them.
+Et **åndedrætsværn** er en maske, der er certificeret til at filtrere fine partikler fra den luft, der indåndes. Det virker kun, når det slutter tæt til ansigtet, og det er en støtte til gode vaner, ikke en erstatning for dem.
 
-### Classes by region
+### Klasser efter region
 
-Table: Particle respirator classes by region (rough equivalents for glaze dust)
-Label: Respirator classes
+Table: Klasser af partikelfiltrerende åndedrætsværn efter region (grove ækvivalenter for glasurstøv)
+Label: Klasser af åndedrætsværn
 
-| Region                    | Everyday class | Higher class | Look for                                                                         |
-| ------------------------- | -------------- | ------------ | -------------------------------------------------------------------------------- |
-| United States             | N95            | P100         | NIOSH approval on the mask or its packaging                                      |
-| UK and EU                 | FFP2           | FFP3         | EN 149 on disposable masks; EN 140 on reusable half masks, with P2 or P3 filters |
-| Australia and New Zealand | P2             | P3           | AS/NZS 1716                                                                      |
+| Region                    | Almindelig klasse | Højere klasse | Se efter                                                                              |
+| ------------------------- | ----------------- | ------------- | ------------------------------------------------------------------------------------- |
+| USA                       | N95               | P100          | NIOSH-godkendelse på masken eller emballagen                                          |
+| Storbritannien og EU      | FFP2              | FFP3          | EN 149 på engangsmasker; EN 140 på genanvendelige halvmasker, med P2- eller P3-filtre |
+| Australien og New Zealand | P2                | P3            | AS/NZS 1716                                                                           |
 
-The higher class filters a larger share of fine particles. Sources disagree on what an Australian P3 filters (at least 99%, or at least 99.95%), so buy the certified class sold in your region. A reusable **half mask** (covering the nose and mouth, with replaceable filters) fitted with P100 filters (P3 outside the US) is a common studio choice.
+Den højere klasse filtrerer en større andel af de fine partikler. Kilderne er uenige om, hvad et australsk P3 filtrerer (mindst 99 % eller mindst 99,95 %), så køb den certificerede klasse, der sælges i regionen. En genanvendelig **halvmaske** (der dækker næse og mund, med udskiftelige filtre) med P100-filtre (P3 uden for USA) er et almindeligt valg i værksteder.
 
-### Fit and seal
+### Pasform og tætning
 
-A mask that leaks lets dust in around its edges, whatever its class. HSE warns that stubble and beards "make it impossible to get a good seal".
+En maske, der lækker, lader støv komme ind omkring kanterne, uanset klasse. HSE advarer om, at skægstubbe og skæg »gør det umuligt at få en god tætning«.
 
-- **Shave shortly before you work.** Guidance differs on how recent "clean-shaven" must be. A UK maker, citing HSE, says shaved within 8 hours of starting work. The Australian and New Zealand fit-test standard asks for a shave before a fit test, "preferably within 12 hours". Shaving shortly before you work meets both.
-- **If you keep a beard,** a loose-fitting **powered respirator** (PAPR: a hood or helmet with a fan that supplies filtered air) needs no face seal.
-- **Get the size right.** Poor fit is a major cause of leaks. Workplaces use a **fit test**, a check that a particular mask seals on a particular face. At home, we suggest following the maker's instructions for checking the seal each time you put it on.
+- **Barbér dig lige før arbejdet.** Rådene er forskellige om, hvor nylig »glatbarberet« skal være. En britisk producent, der henviser til HSE, siger barberet inden for 8 timer, før arbejdet begynder. Den australske og newzealandske standard for fit-test beder om en barbering før en fit-test, »helst inden for 12 timer«. At barbere sig lige før arbejdet opfylder begge.
+- **Hvis skægget beholdes,** kræver et løstsiddende **turboudstyr** (PAPR: en hætte eller hjelm med en blæser, der leverer filtreret luft) ingen tætning mod ansigtet.
+- **Vælg den rigtige størrelse.** Dårlig pasform er en stor årsag til lækager. Arbejdspladser bruger en **fit-test**, en kontrol af, at en bestemt maske slutter tæt på et bestemt ansigt. Hjemme foreslår vi at følge producentens anvisninger til at kontrollere tætningen hver gang masken tages på.
 
 > [!NOTE]
-> In our view, fit matters more than class: a well-fitted N95, FFP2 or P2 will usually do better than a loose P100.
+> Efter vores mening betyder pasformen mere end klassen: en velsiddende N95, FFP2 eller P2 klarer sig som regel bedre end en løstsiddende P100.
 
-### When to wear one
+### Hvornår man bærer et
 
-HSE says a respirator is "normally not needed" where weighing and mixing happen in a ventilated enclosure, but "may be needed for maintenance and cleaning". Most home studios have no enclosure, so we suggest wearing one (N95, FFP2 or P2 at least; P100, FFP3 or P3 is better) whenever you:
+HSE siger, at et åndedrætsværn »normalt ikke er nødvendigt«, hvor afvejning og blanding foregår i en ventileret indkapsling, men »kan være nødvendigt til vedligeholdelse og rengøring«. De fleste hjemmeværksteder har ingen indkapsling, så vi foreslår at bære et (mindst N95, FFP2 eller P2; P100, FFP3 eller P3 er bedre) hver gang:
 
-- open bags or tip out powder;
-- weigh powders and stir them into water;
-- scrape, sand or grind dried glaze or bisque;
-- do any dry cleanup, or empty a vacuum;
-- spray glaze (in a booth: see below).
+- poser åbnes, eller pulver hældes ud;
+- pulvere afvejes og røres ud i vand;
+- tør glasur eller forglødet gods skrabes, slibes eller males;
+- noget tørt gøres rent, eller en støvsuger tømmes;
+- glasur sprøjtes (i et sprøjteskab: se nedenfor).
 
-### What is not a respirator
+### Hvad der ikke er et åndedrætsværn
 
-- Surgical masks, cloth masks and "nuisance dust" masks without a NIOSH, EN 149 or AS/NZS 1716 marking. We would not rely on them for glaze dust.
-- A dust respirator "will not protect you against gases, vapors" (OSHA), so it does nothing for kiln fumes.
-- Look after yours: OSHA notes that a dirty or misused respirator "can become a hazard". Store it clean, away from dusty work clothes.
+- Kirurgiske mundbind, stofmasker og simple støvmasker (»nuisance dust«-masker) uden NIOSH-, EN 149- eller AS/NZS 1716-mærkning. Vi ville ikke stole på dem til glasurstøv.
+- Et partikelfiltrerende åndedrætsværn »beskytter ikke mod gasser, dampe« (OSHA), så det gør intet mod ovndampe.
+- Pas godt på det: OSHA bemærker, at et snavset eller forkert brugt åndedrætsværn »kan blive en fare«. Opbevar det rent, væk fra støvet arbejdstøj.
 
 ## Rengøring, tøj og hænder {#cleaning}
 
@@ -181,36 +181,36 @@ En **udsugningshætte** (en emhætte over ovnen) er alternativet. Den suger røg
 
 Raku giver store mængder røg og CO; Utah råder til at brænde raku udendørs, væk fra luftindtag og vinduer. Om selve brændingen: se [Brænding i en enkel ovn](/guides/firing).
 
-## Materials that need most care {#materials lang=en}
+## Råvarer, der kræver mest omhu {#materials}
 
-Most glaze materials, including silica, clays, feldspars and frits, are mainly a dust hazard, which the habits above control. A shorter list is toxic in its own right, by breathing, swallowing or skin contact. Digitalfire adds that stains are generally much safer than raw oxides, and that "unbalanced glazes that release toxic metals can be made from any materials": food safety depends on the whole recipe, not on one ingredient.
+De fleste glasurråvarer, herunder silica, ler, feldspater{{en: feldspars}} og fritter{{en: frits}}, er først og fremmest en støvrisiko, som vanerne ovenfor holder styr på. En kortere liste er giftig i sig selv, ved indånding, indtagelse eller hudkontakt. Digitalfire tilføjer, at universalfarver{{en: stains}} generelt er meget sikrere end rå oxider, og at »ubalancerede glasurer, der afgiver giftige metaller, kan laves af alle råvarer«: fødevaresikkerhed afhænger af hele opskriften, ikke af én ingrediens.
 
-An **IARC group** is a cancer classification: Group 1 means "carcinogenic to humans", Group 2A "probably carcinogenic to humans", Group 2B "possibly carcinogenic to humans", and Group 3 "not classifiable as to its carcinogenicity to humans", which means too little evidence to judge either way.
+En **IARC-gruppe** er en kræftklassificering: gruppe 1 betyder »kræftfremkaldende for mennesker«, gruppe 2A »sandsynligvis kræftfremkaldende for mennesker«, gruppe 2B »muligvis kræftfremkaldende for mennesker« og gruppe 3 »kan ikke klassificeres med hensyn til kræftfremkaldende egenskaber for mennesker«, hvilket betyder, at der er for lidt belæg til at vurdere det ene eller det andet.
 
-Table: Glaze materials that need extra care
-Label: Materials that need most care
+Table: Glasurråvarer, der kræver ekstra omhu
+Label: Råvarer, der kræver mest omhu
 
-| Material                               | Hazard                                                                                                                                                            | Precaution                                                                                                  |
-| -------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| Lead compounds and lead frits          | "Highly toxic by inhalation or ingestion"; vaporizes at lower kiln temperatures.                                                                                  | Avoid; Digitalfire says experts only. Assume any glaze not labeled "lead-free" or "leadless" contains lead. |
-| Barium carbonate                       | Insoluble in water but dissolves in stomach acid; affects the heart and muscles (irregular heartbeat, low potassium).                                             | A barium frit or strontium where the recipe allows; respirator; labeled container.                          |
-| Manganese dioxide                      | Dust or fume can cause **manganism**, a nervous-system illness like Parkinson's disease, usually after 1 to 3 years of exposure. Fume can cause metal fume fever. | Black stains at low percentages instead; vent the kiln.                                                     |
-| Potassium dichromate and chrome oxide  | Chromium(VI), as in dichromate, is IARC Group 1. That listing does not cover chromium(III), as in chrome oxide.                                                   | Avoid dichromate. We treat chrome oxide as far less hazardous, but keep its dust down.                      |
-| Cobalt                                 | Soluble cobalt(II) salts IARC 2A; cobalt(II) oxide 2B; black Co₃O₄ Group 3.                                                                                       | Keep dust down; stains for blacks.                                                                          |
-| Nickel compounds                       | Among the University of Utah's known or probable human carcinogens.                                                                                               | Stains rather than high percentages.                                                                        |
-| Cadmium and selenium, raw or in stains | Cadmium compounds are among Utah's known or probable human carcinogens.                                                                                           | "Only by experts" (Digitalfire); read any stain's SDS.                                                      |
-| Antimony and vanadium                  | Trivalent antimony (as in antimony trioxide) IARC 2A; vanadium "highly toxic by inhalation".                                                                      | Vanadium for experts only; keep antimony dust down.                                                         |
-| Copper and zinc                        | Kiln fume can cause metal fume fever; raw zinc oxide is "generally not considered hazardous".                                                                     | Vent the kiln.                                                                                              |
-| Lithium carbonate                      | "Highly toxic by inhalation". An EU expert committee concluded it may harm fertility and the unborn child; formal adoption was not confirmed when we checked.     | Gloves and respirator; keep from children. We suggest extra care in pregnancy.                              |
-| Borax and boric acid                   | Classified in the EU as "may damage fertility; may damage the unborn child".                                                                                      | Gloves; boron from a frit where you can.                                                                    |
-| Soda ash, potash, alkaline feldspars   | Skin irritants.                                                                                                                                                   | Gloves.                                                                                                     |
-| Fluorspar, cryolite, lepidolite        | Release fluorine gases in firing; fluorspar also irritates skin.                                                                                                  | Vent the kiln outdoors; gloves.                                                                             |
-| Talc                                   | IARC 2A since July 2024; talc contaminated with asbestos counts as asbestos, Group 1.                                                                             | Platy (not fibrous), asbestos-free talc; check its SDS.                                                     |
+| Råvare                                       | Fare                                                                                                                                                                         | Forholdsregel                                                                                                                           |
+| -------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| Blyforbindelser og blyfritter                | »Meget giftigt ved indånding eller indtagelse«; fordamper ved lavere ovntemperaturer.                                                                                        | Undgå; Digitalfire siger: kun for eksperter. Gå ud fra, at enhver glasur, der ikke er mærket »blyfri« eller »leadless«, indeholder bly. |
+| Bariumcarbonat                               | Uopløseligt i vand, men opløses i mavesyre; påvirker hjertet og musklerne (uregelmæssig hjerterytme, lavt kalium).                                                           | En bariumfritte eller strontium, hvor opskriften tillader det; åndedrætsværn; mærket beholder.                                          |
+| Mangandioxid                                 | Støv eller røg kan give **manganforgiftning**, en sygdom i nervesystemet, der ligner Parkinsons sygdom, som regel efter 1 til 3 års eksponering. Røg kan give metalrøgfeber. | Sorte universalfarver i lave procenter i stedet; luft ovnen ud.                                                                         |
+| Kaliumdichromat og chromoxid                 | Chrom(VI), som i dichromat, er IARC gruppe 1. Den klassificering omfatter ikke chrom(III), som i chromoxid.                                                                  | Undgå dichromat. Vi anser chromoxid for langt mindre farligt, men hold dets støv nede.                                                  |
+| Kobolt                                       | Opløselige kobolt(II)-salte IARC 2A; kobolt(II)oxid 2B; sort Co₃O₄ gruppe 3.                                                                                                 | Hold støvet nede; universalfarver til sort.                                                                                             |
+| Nikkelforbindelser                           | Blandt University of Utahs kendte eller sandsynlige kræftfremkaldende stoffer for mennesker.                                                                                 | Universalfarver i stedet for høje procenter.                                                                                            |
+| Cadmium og selen, rå eller i universalfarver | Cadmiumforbindelser er blandt Utahs kendte eller sandsynlige kræftfremkaldende stoffer for mennesker.                                                                        | »Kun af eksperter« (Digitalfire); læs sikkerhedsdatabladet for hver universalfarve.                                                     |
+| Antimon og vanadium                          | Trivalent antimon (som i antimontrioxid) IARC 2A; vanadium »meget giftigt ved indånding«.                                                                                    | Vanadium kun for eksperter; hold antimonstøvet nede.                                                                                    |
+| Kobber og zink                               | Ovnrøg kan give metalrøgfeber; rå zinkoxid »anses generelt ikke for farligt«.                                                                                                | Luft ovnen ud.                                                                                                                          |
+| Lithiumcarbonat                              | »Meget giftigt ved indånding«. Et ekspertudvalg i EU konkluderede, at det kan skade fertiliteten og det ufødte barn; formel vedtagelse var ikke bekræftet, da vi tjekkede.   | Handsker og åndedrætsværn; opbevar uden for børns rækkevidde. Vi foreslår ekstra omhu under graviditet.                                 |
+| Borax og borsyre                             | Klassificeret i EU som »kan skade forplantningsevnen; kan skade det ufødte barn«.                                                                                            | Handsker; bor fra en fritte, hvor det kan lade sig gøre.                                                                                |
+| Soda, pottaske, alkaliske feldspater         | Hudirriterende.                                                                                                                                                              | Handsker.                                                                                                                               |
+| Fluorspat, kryolit, lepidolit                | Afgiver fluorgasser ved brænding; fluorspat irriterer også huden.                                                                                                            | Led ovndampene ud i det fri; handsker.                                                                                                  |
+| Talkum                                       | IARC 2A siden juli 2024; talkum forurenet med asbest tæller som asbest, gruppe 1.                                                                                            | Pladeformet (ikke fibret), asbestfrit talkum; kontrollér dets sikkerhedsdatablad.                                                       |
 
-Borax, boric acid, soda ash and potash dissolve in water, so we treat them as the likeliest to be absorbed through broken skin or swallowed from unwashed hands.
+Borax, borsyre, soda og pottaske opløses i vand, så vi anser dem for dem, der mest sandsynligt optages gennem skadet hud eller sluges fra uvaskede hænder.
 
 > [!NOTE]
-> If a recipe calls for raw barium carbonate, a lot of manganese, or any lead or cadmium material, look for a version that uses a frit or a stain instead. Glazecalc can compare the chemistry of the original and the swap; then test the new glaze.
+> Hvis en opskrift kræver rå bariumcarbonat, meget mangan eller et bly- eller cadmiummateriale, så led efter en version, der bruger en fritte eller en universalfarve i stedet. Glazecalc kan sammenligne kemien i originalen og ombytningen; test derefter den nye glasur.
 
 ## Handsker, hud og øjne {#gloves-and-eyes}
 

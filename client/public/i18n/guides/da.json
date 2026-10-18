@@ -102,6 +102,9 @@
     "quartzAll": "Kvarts, for støv, der udelukkende er kvarts",
     "cristobaliteAll": "Cristobalit, for støv, der udelukkende er cristobalit",
     "allFree": "Kontrolkoncentration for støv, der udelukkende er fri silica",
+    "bandFromTo": "Støv med {from} % til {to} % fri silica (SiO₂)",
+    "bandOverTo": "Støv med mere end {from} % og op til {to} % fri silica",
+    "bandAbove": "Støv med mere end {from} % fri silica",
     "recommended": "Anbefalet af {abbr}",
     "value": "{value} mg/m³",
     "kind": {
@@ -160,7 +163,15 @@
       "myFlat": "Fladvarer",
       "mySmall": "Små hulvarer",
       "myLarge": "Store hulvarer",
-      "myCooking": "Koge- og stegeredskaber"
+      "myCooking": "Koge- og stegeredskaber",
+      "idFlat": "Genstande, der er højst 25 mm dybe indvendigt",
+      "idSmall": "Genstande, der er dybere end 25 mm indvendigt, under 1100 mL",
+      "idLarge": "Genstande, der er dybere end 25 mm indvendigt, 1100 mL eller mere",
+      "thFlat": "Genstande, der er højst 25 mm dybe",
+      "thSmall": "Genstande, der er dybere end 25 mm, under 1,1 L",
+      "thLarge": "Genstande, der er dybere end 25 mm, 1,1 L eller mere",
+      "thInfant": "Beholdere til mad til babyer op til 12 måneder gamle",
+      "thCooking": "Koge- og stegeredskaber, lavet til at tåle varmen ved madlavning"
     },
     "judged": {
       "average": "gennemsnit af 6 genstande",
