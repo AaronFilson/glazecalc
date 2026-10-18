@@ -4,7 +4,8 @@
 // (docs/adr/0013-translations.md): <html lang dir>, the canonical address,
 // the same page in each language offered (hreflang), the title, description
 // and preview text in the language with its og:locale, and noindex for a
-// language not offered yet. hreflang is the code in the address, script and
+// language not offered yet or a page with nothing to find in a search
+// (isAppOnlyPage). hreflang is the code in the address, script and
 // all (zh-Hans), which Google reads.
 import languages from '../../lib/regions/languages.js';
 import type { Language } from '../../lib/regions/languages.js';
@@ -51,6 +52,17 @@ export const APP_PAGES = [
 
 /** Whether an address is one of the app's pages, in a language it knows: /de/recipe is, /xx/recipe is not. */
 export const isPage = (pathname: string): boolean => APP_PAGES.includes(languages.pagePath(pathname));
+
+/**
+ * Whether an address is a page of the app that is neither public nor private:
+ * signing in and the pages once signed in (/recipe, /de/account). Anyone may
+ * open them, but they hold nothing to find in a search and most send a visitor
+ * to sign in, so search engines are told not to index them (noindex, links
+ * still followed), with no canonical address or other languages. Never put
+ * them in robots.txt: a crawler kept out never reads the noindex.
+ */
+export const isAppOnlyPage = (pathname: string): boolean =>
+  isPage(pathname) && !PUBLIC_PAGES.includes(languages.pagePath(pathname)) && !isPrivatePage(pathname);
 
 /**
  * Whether an address looks like a file's (main-ABC12345.js): a dot in its last
@@ -154,7 +166,9 @@ export function pageHtml(
   const page = languages.pagePath(pathname);
   const here = addressIn(site, code, page);
   const head: string[] = [];
-  const listed = isPage(pathname) && !isPrivatePage(pathname);
+  // Only the public pages are offered to search engines (isAppOnlyPage).
+  const listed = isPage(pathname) && PUBLIC_PAGES.includes(page);
+  if (isAppOnlyPage(pathname)) head.push('<meta name="robots" content="noindex" />');
   if (isPrivatePage(pathname)) {
     // nginx sends its own Referrer-Policy after the app's, which a browser would follow; this <meta> comes last.
     head.push('<meta name="robots" content="noindex, nofollow" />');

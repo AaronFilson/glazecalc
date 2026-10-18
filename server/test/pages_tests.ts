@@ -75,7 +75,7 @@ describe('pages in each language', () => {
     expect(japanese).to.include({ name: '日本語', english: 'Japanese', dir: 'ltr', live: true });
     expect(japanese).not.to.have.property('plainNotice');
     expect(languages.LIVE_LANGUAGES).to.include('ja');
-    const html = pageHtml(HTML, '/ja/recipe', SITE);
+    const html = pageHtml(HTML, '/ja/guides', SITE);
     expect(html).to.include('<html lang="ja" dir="ltr">');
     expect(html).not.to.include('<meta name="robots" content="noindex" />');
     expect(sitemap(SITE)).to.include('/ja/');
@@ -86,7 +86,7 @@ describe('pages in each language', () => {
     expect(turkish).to.include({ name: 'Türkçe', english: 'Turkish', dir: 'ltr', live: true });
     expect(turkish).not.to.have.property('plainNotice');
     expect(languages.LIVE_LANGUAGES).to.include('tr');
-    const html = pageHtml(HTML, '/tr/recipe', SITE);
+    const html = pageHtml(HTML, '/tr/guides', SITE);
     expect(html).to.include('<html lang="tr" dir="ltr">');
     expect(html).not.to.include('<meta name="robots" content="noindex" />');
     expect(sitemap(SITE)).to.include('/tr/');
@@ -102,7 +102,7 @@ describe('pages in each language', () => {
       expect(language).to.include({ name, english, dir: 'ltr', live: true });
       expect(language).not.to.have.property('plainNotice');
       expect(languages.LIVE_LANGUAGES).to.include(code);
-      const html = pageHtml(HTML, `/${code}/recipe`, SITE);
+      const html = pageHtml(HTML, `/${code}/guides`, SITE);
       expect(html).to.include(`<html lang="${code}" dir="ltr">`);
       expect(html).not.to.include('<meta name="robots" content="noindex" />');
       expect(html).to.include(`hreflang="${code}"`);
@@ -120,7 +120,7 @@ describe('pages in each language', () => {
       expect(language).to.include({ name, english, dir: 'ltr', live: true });
       expect(language).not.to.have.property('plainNotice');
       expect(languages.LIVE_LANGUAGES).to.include(code);
-      const html = pageHtml(HTML, `/${code}/recipe`, SITE);
+      const html = pageHtml(HTML, `/${code}/guides`, SITE);
       expect(html).to.include(`<html lang="${code}" dir="ltr">`);
       expect(html).not.to.include('<meta name="robots" content="noindex" />');
       expect(sitemap(SITE)).to.include(`/${code}/`);
@@ -258,10 +258,48 @@ describe('pages in each language', () => {
       expect(html, address).not.to.include('rel="canonical"');
       expect(html, address).not.to.include('hreflang');
     }
-    // The pages for signing in and once signed in are pages too.
-    expect(pageHtml(HTML, '/de/recipe', SITE, {}, ['en', 'de'])).to.include(
-      '<link rel="canonical" href="https://glazecalcapp.com/de/recipe" />'
-    );
+  });
+
+  it('tells search engines not to index the pages for signing in and once signed in, with no canonical address or other languages', () => {
+    for (const address of ['/recipe', '/de/recipe', '/signin', '/th/account', '/assistants', '/ar/home']) {
+      const html = pageHtml(HTML, address, SITE, {}, ['en', 'de', 'th']);
+      expect(html.match(/<meta name="robots" content="noindex" \/>/g), address).to.have.length(1);
+      expect(html, address).not.to.include('rel="canonical"');
+      expect(html, address).not.to.include('hreflang');
+      expect(html, address).not.to.include('og:locale');
+    }
+    // The public pages stay indexed, with their canonical address.
+    const guides = pageHtml(HTML, '/de/guides', SITE, {}, ['en', 'de']);
+    expect(guides).not.to.include('noindex');
+    expect(guides).to.include('<link rel="canonical" href="https://glazecalcapp.com/de/guides" />');
+  });
+
+  it('says noindex in a header too, for the pages for signing in and once signed in only', async () => {
+    for (const address of ['/recipe', '/de/signin', '/account']) {
+      const res = await site().get(address);
+      expect(res.headers['x-robots-tag'], address).to.equal('noindex');
+    }
+    for (const address of ['/', '/de/guides', '/advice']) {
+      const res = await site().get(address);
+      expect(res.headers['x-robots-tag'], address).to.equal(undefined);
+    }
+  });
+
+  it("sends /index.html to the home page, and a language's bare home to its address with a slash", async () => {
+    for (const [from, to] of [
+      ['/index.html', '/'],
+      ['/index.html?x=1', '/?x=1'],
+      ['/de', '/de/'],
+      ['/pt-PT?x=1', '/pt-PT/?x=1'],
+      ['/zh-Hans', '/zh-Hans/']
+    ]) {
+      const res = await redirectOf(from!);
+      expect(res.status, from).to.equal(301);
+      expect(res.location, from).to.equal(to);
+    }
+    for (const from of ['/de/', '/', '/recipe', '/xx']) {
+      expect((await redirectOf(from)).status, from).not.to.equal(301);
+    }
   });
 
   it('keeps a shared recipe out of search results and Referers, with no canonical address or other languages', () => {
@@ -321,6 +359,16 @@ describe('pages in each language', () => {
     expect(map).to.have.status(200);
     expect(map.headers['content-type']).to.match(/^application\/xml/);
     expect(map.body).to.include('/guides/home-safety</loc>');
+    // Built once and kept: the same text again.
+    const again = await site()
+      .get('/sitemap.xml')
+      .buffer(true)
+      .parse((res, done) => {
+        let text = '';
+        res.on('data', (chunk: Buffer) => (text += chunk.toString()));
+        res.on('end', () => done(null, text));
+      });
+    expect(again.body).to.equal(map.body);
     for (const [from, to] of [
       ['/en', '/'],
       ['/en/guides/firing?x=1', '/guides/firing?x=1']

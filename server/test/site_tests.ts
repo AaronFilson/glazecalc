@@ -156,9 +156,10 @@ describe('the staging banner', () => {
     unset();
     const pages = render();
     // The sha-256 of these pages from pageHtml as it was before the banner
-    // (commit 166eb91). Change it only for a change meant for production too.
+    // (commit 166eb91). Change it only for a change meant for production too:
+    // since then, /account is noindex with no canonical address (isAppOnlyPage).
     const hash = crypto.createHash('sha256').update(pages.join('\n=====\n')).digest('hex');
-    expect(hash).to.equal('76f964eb15b23f5f2913632d6ad0ec8019d30190bea2fb7ad384dd08ae3d5534');
+    expect(hash).to.equal('d3c22df74c3eb3edca17d1656d3591b5877b33faf72aa2742729e64727ed2eae');
     expect(render('')).to.eql(pages);
     for (const page of pages) expect(page).to.not.include('gc-site-label');
   });
