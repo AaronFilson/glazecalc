@@ -120,7 +120,7 @@
   },
   "trash": {
     "title": "Trash",
-    "lead": "What you remove from your recipes, materials, notes and logs waits here for 30 days. Put it back, or delete it for good.",
+    "lead": "What you remove (recipes, materials, additives, notes, firing logs and advice) waits here for 30 days. Put it back, or delete it for good.",
     "listHeading": "In the Trash",
     "none": "The Trash is empty.",
     "untitled": "Untitled",
