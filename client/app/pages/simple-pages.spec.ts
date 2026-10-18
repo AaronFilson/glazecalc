@@ -56,6 +56,7 @@ describe('static pages', () => {
       '/notes',
       '/advice',
       '/guides',
+      '/trash',
       '/account'
     ]);
     expect(home.nativeElement.querySelector('.home-welcome')).toBeNull();
