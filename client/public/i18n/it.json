@@ -17,13 +17,17 @@
     "confirmEmail": "Confermare l’email - Glazecalc",
     "home": "Il quaderno di laboratorio - Glazecalc",
     "recipe": "Ricette - Glazecalc",
+    "import": "Incollare ricette - Glazecalc",
+    "blends": "Miscele per provini - Glazecalc",
     "material": "Materiali - Glazecalc",
     "additive": "Additivi - Glazecalc",
     "firingLogs": "Registri di cottura - Glazecalc",
     "notes": "Note - Glazecalc",
     "trash": "Cestino - Glazecalc",
     "account": "Account e impostazioni - Glazecalc",
-    "notFound": "Pagina non trovata - Glazecalc"
+    "notFound": "Pagina non trovata - Glazecalc",
+    "shared": "Ricetta condivisa - Glazecalc",
+    "assistants": "Usare Glazecalc con il Suo assistente IA - Glazecalc"
   },
   "nav": {
     "skip": "Vai al contenuto",
@@ -96,9 +100,14 @@
   },
   "remove": {
     "alreadyRemoved": "Già rimosso: «{name}».",
+    "trashed": "«{name}» è stato spostato nel cestino.",
+    "undo": "Annulla",
+    "restored": "«{name}» è stato ripristinato.",
+    "restoreFailed": "Impossibile ripristinare «{name}». È ancora nel cestino.",
     "failed": "Impossibile completare la rimozione. Riprovare.",
     "question": "Rimuovere «{name}»?",
     "cannotUndo": "L’operazione non si può annullare.",
+    "toTrash": "Può ripristinarlo dal cestino entro 30 giorni.",
     "removing": "Rimozione...",
     "yes": "Sì, rimuovi",
     "cancel": "Annulla",

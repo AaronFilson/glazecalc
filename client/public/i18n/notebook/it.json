@@ -17,6 +17,14 @@
         "title": "Ricette",
         "text": "Comporre uno smalto con materiali e quantità, vederne la formula di Seger (UMF) e salvarlo."
       },
+      "import": {
+        "title": "Incollare ricette",
+        "text": "Incollare ricette da un sito web, da un foglio di calcolo o da appunti, controllare cosa è stato letto e salvarle."
+      },
+      "blends": {
+        "title": "Miscele per provini",
+        "text": "Miscelare due, tre o quattro ricette in provini numerati, con le quantità da pesare per ciascuno."
+      },
       "material": {
         "title": "Materiali",
         "text": "Aggiungere materie prime proprie, da una formula chimica o dall’analisi di un fornitore."
@@ -99,6 +107,35 @@
     "saveFailed": "Errore: la richiesta al server non è riuscita."
   },
   "trash": {
-    "title": "Cestino"
+    "title": "Cestino",
+    "lead": "Ciò che rimuove da ricette, materiali, note e registri resta qui per 30 giorni. Lo ripristini, oppure lo elimini per sempre.",
+    "listHeading": "Nel cestino",
+    "none": "Il cestino è vuoto.",
+    "untitled": "Senza titolo",
+    "kinds": {
+      "recipes": "Ricetta",
+      "materials": "Materiale",
+      "additives": "Additivo",
+      "notes": "Nota",
+      "firing": "Registro di cottura",
+      "advice": "Consiglio",
+      "other": "Elemento"
+    },
+    "removedOn": "Rimosso il {date}",
+    "goesOn": "Eliminato per sempre il {date}",
+    "byApp": "Rimosso da un’app collegata",
+    "putBack": "Ripristina",
+    "putBackName": "Ripristina {name}",
+    "restored": "«{name}» è stato ripristinato dov’era.",
+    "restoredAlready": "«{name}» è già stato ripristinato.",
+    "restoreFailed": "Impossibile ripristinare «{name}». Riprovare.",
+    "deleted": "«{name}» è stato eliminato per sempre.",
+    "empty": "Svuota il cestino",
+    "emptyQuestion": "{count, plural, one {Eliminare per sempre l’elemento nel cestino?} many {Eliminare per sempre tutti i # di elementi nel cestino?} other {Eliminare per sempre tutti i # elementi nel cestino?}} L’operazione non si può annullare.",
+    "emptyYes": "Sì, svuota",
+    "emptying": "Svuotamento...",
+    "emptied": "Il cestino è vuoto.",
+    "emptyFailed": "Impossibile svuotare il cestino. Riprovare.",
+    "fetchFailed": "Impossibile caricare il cestino. Riprovare."
   }
 }

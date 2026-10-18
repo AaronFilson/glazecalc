@@ -102,6 +102,9 @@
     "quartzAll": "Quarzo, per una polvere composta solo di quarzo",
     "cristobaliteAll": "Cristobalite, per una polvere composta solo di cristobalite",
     "allFree": "Concentrazione di controllo per una polvere composta solo di silice libera",
+    "bandFromTo": "Polvere con dal {from}% al {to}% di silice libera (SiO₂)",
+    "bandOverTo": "Polvere con più del {from}% e fino al {to}% di silice libera",
+    "bandAbove": "Polvere con più del {from}% di silice libera",
     "recommended": "Raccomandato da {abbr}",
     "value": "{value} mg/m³",
     "kind": {
@@ -160,7 +163,15 @@
       "myFlat": "Oggetti piani",
       "mySmall": "Oggetti cavi piccoli",
       "myLarge": "Oggetti cavi grandi",
-      "myCooking": "Recipienti da cottura"
+      "myCooking": "Recipienti da cottura",
+      "idFlat": "Oggetti con profondità interna non superiore a 25 mm",
+      "idSmall": "Oggetti con profondità interna superiore a 25 mm, sotto 1100 mL",
+      "idLarge": "Oggetti con profondità interna superiore a 25 mm, da 1100 mL in su",
+      "thFlat": "Oggetti con profondità non superiore a 25 mm",
+      "thSmall": "Oggetti con profondità superiore a 25 mm, sotto 1,1 L",
+      "thLarge": "Oggetti con profondità superiore a 25 mm, da 1,1 L in su",
+      "thInfant": "Contenitori per l’alimentazione dei neonati fino a 12 mesi",
+      "thCooking": "Recipienti da cottura, fatti per resistere al calore della cottura"
     },
     "judged": {
       "average": "media di 6 pezzi",

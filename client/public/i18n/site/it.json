@@ -57,9 +57,13 @@
     "stackServer": "Un’API in TypeScript su Node.js 24 ed Express 5, con MongoDB 9, verificata da più di 350 test automatici.",
     "stackHosting": "Gira in Docker su Amazon Web Services, dietro nginx, con HTTPS di Let's Encrypt.",
     "stackDeploy": "Distribuito con GitHub Actions: le immagini vengono create e testate a ogni modifica e i rilasci accedono ad AWS senza chiavi memorizzate.",
+    "creditsHeading": "Crediti",
+    "credits": "Le regioni del diagramma di Stull derivano dalla lettura che Glazy ha fatto del diagramma di R. T. Stull del 1912, a cura di Derek Au (Copyright (c) 2017 Derek Au, licenza MIT). L’<notices>avviso completo</notices> si trova nel codice sorgente.",
     "whoHeading": "Chi l’ha fatto",
     "who": "Glazecalc è opera di Aaron Filson. Ha trovato un problema o ha un’idea? <issues>Apra una segnalazione su GitHub</issues>.",
-    "studio": "Le ceramiche fatte a mano di Aaron Filson si trovano presso <studio>Updraft Pottery Studio</studio>, a Tacoma, nello stato di Washington. Dia un’occhiata ai lavori e ordini un pezzo, se uno La colpisce."
+    "studio": "Le ceramiche fatte a mano di Aaron Filson si trovano presso <studio>Updraft Pottery Studio</studio>, a Tacoma, nello stato di Washington. Dia un’occhiata ai lavori e ordini un pezzo, se uno La colpisce.",
+    "languagesHeading": "Lingue",
+    "languages": "Glazecalc è disponibile in queste lingue. Ogni link apre questa pagina nella lingua indicata."
   },
   "privacy": {
     "title": "Privacy",
@@ -71,8 +75,15 @@
     "contact": "Per domande sui Suoi dati, o per esercitare uno qualsiasi dei Suoi diritti, scrivere a <mail>privacy@glazecalcapp.com</mail>. Si può anche <issues>aprire una segnalazione (issue) su GitHub</issues>, ma le segnalazioni sono pubbliche: non inserirvi mai il proprio indirizzo email né nulla di personale. Quasi tutto ciò che riguarda i Suoi dati può farlo da sé nella <account>pagina dell’account</account>.",
     "storedHeading": "Che cosa viene conservato, e perché",
     "storedAccount": "<b>Il Suo account:</b> il Suo indirizzo email e la Sua password, conservata solo come hash unidirezionale (bcrypt), mai come password vera e propria. Con l’account sono conservati le Sue impostazioni (come lingua, paese e unità di misura) e l’elenco dei materiali disponibili. Un account richiede un indirizzo email, per accedere e per reimpostare una password dimenticata. Quando si crea un account, all’indirizzo viene inviato un link per confermare che è Suo; fino ad allora, gli si inviano email solo su Sua richiesta, ad esempio per reimpostare la password.",
+    "storedPrices": "<b>Prezzi, se ne indica:</b> quanto paga per ogni materiale, al chilogrammo, e la valuta in cui sono espressi, per il costo di una pesata. Sono dati d’impresa, conservati con il Suo account e riservati: non fanno mai parte di una ricetta, quindi nulla di ciò che condivide li mostra. «Scarica i miei dati» li include, e l’eliminazione dell’account li elimina. I prezzi di una prova passano nel Suo account con i suoi dati, per i materiali di cui non ha indicato il prezzo, quando entrambi sono nella stessa valuta.",
     "storedEmailChange": "<b>Cambio dell’indirizzo email:</b> la data dell’ultimo cambio del Suo indirizzo, affinché una richiesta di disattivare l’accesso in due passaggi non venga mai accettata da un nuovo indirizzo nei 30 giorni successivi.",
     "storedSignIn": "<b>Accesso in due passaggi, se lo attiva:</b> se è attivo; la chiave che la Sua app di autenticazione condivide con Glazecalc, cifrata; per ogni passkey, la sua chiave pubblica (che da sola non può far accedere) con l’identificativo e i dettagli che il Suo dispositivo le dà, il nome che le ha dato e quando è stata aggiunta e usata l’ultima volta; i Suoi codici di recupero, solo come hash unidirezionale con chiave, così nessuno può rileggerli; e, se qualcuno inserisce la Sua password ma non completa il secondo passaggio, quando Glazecalc Le ha scritto l’ultima volta al riguardo (al massimo una volta al giorno). Mentre accede, tra la password e il secondo passaggio, il server conserva per 5 minuti una nota dell’accesso, e la pagina tiene un breve token solo nella propria memoria: nessun nuovo cookie, nulla nell’archivio del Suo browser.",
+    "storedSaved": "<b>Ciò che salva:</b> le Sue ricette, i materiali, gli additivi, le note, i registri di cottura e i consigli, come li ha scritti. Solo Lei può vederli, a meno che condivida una ricetta con un link.",
+    "storedTrash": "<b>Il cestino e le versioni precedenti:</b> ciò che rimuove da un elenco attende nel cestino, per intero, così può ripristinarlo; e ogni modifica che salva in un elemento conserva l’elemento com’era un attimo prima, così può annullare la modifica.",
+    "storedShares": "<b>Ricette che condivide con un link, se ne condivide:</b> quale ricetta, quando è stato creato il suo link e se mostra le note della ricetta, con un hash unidirezionale del link (mai il link stesso). Chiunque abbia il link può vedere la ricetta com’è ora, con la sua formula di Seger, e le sue note se ha scelto di mostrarle; mai la Sua email, il Suo account o alcun prezzo. Le ricette condivise sono tenute fuori dai motori di ricerca, e il link non arriva mai nei registri del server. Per fermare gli abusi, le ricette condivise aperte da ciascun indirizzo IP vengono contate, in memoria, per 15 minuti. Una prova non può condividere.",
+    "storedTokens": "<b>Token di accesso e app collegate, se ne crea o ne approva:</b> per ciascuno, il nome, ciò che può fare, un hash unidirezionale del token (mai il token stesso) e gli ultimi 4 caratteri, e le date di creazione, di ultimo uso, di scadenza e di revoca.",
+    "storedActivity": "<b>Ciò che hanno fatto token e app:</b> una riga per ogni elemento che un token di accesso o un’app collegata ha creato, modificato, spostato nel cestino, ripristinato o annullato: quando, quale token o app, che cosa ha fatto e il titolo dell’elemento, abbreviato. Mai il testo di una nota né altro dell’elemento. Le modifiche che fa sul sito web non sono elencate.",
+    "storedLimits": "<b>Limiti di frequenza:</b> per fermare i tentativi di indovinare e gli script fuori controllo, si contano i tentativi di accesso, le registrazioni, le richieste di reimpostazione e le prove per indirizzo IP o per account, i token di accesso che non funzionano per indirizzo IP, gli elementi che ogni token di accesso sposta nel cestino, per token, le ricette condivise aperte e i link di condivisione che non aprono nulla, per indirizzo IP, e le richieste agli strumenti per gli assistenti IA (MCP): 60 al minuto e 2000 al giorno per indirizzo IP, oppure 120 al minuto e 5000 al giorno per account quando si usa un token di accesso, con al massimo 10 sostituzioni o corrispondenze al minuto.",
     "storedTrial": "<b>Una prova («Prova ora»):</b> nessuna email né password, solo un nome inventato come «speckled quiet kilns». Se durante una prova accede a un account sullo stesso browser, ciò che ha creato nella prova passa nell’account.",
     "storedResets": "<b>Link per reimpostare la password e per l’email:</b> quale account li ha richiesti, quando, l’indirizzo a cui è stato inviato un link per confermare un indirizzo, e un’impronta di ciascun link (non il link stesso).",
     "storedLogs": "<b>Log:</b> il server web registra ogni richiesta: il Suo indirizzo IP, l’ora, la pagina richiesta e il nome del Suo browser. L’app registra gli errori con la pagina in cui si sono verificati, mai il Suo indirizzo email.",
@@ -95,6 +106,11 @@
     "choiceNoWarranty": "Glazecalc è fornito così com’è, senza garanzia. Chi ne cura lo sviluppo non si assume alcuna responsabilità, anche legale, per la Sua decisione di creare un account, né per il luogo in cui ne sono conservati i dati.",
     "keptHeading": "Per quanto tempo è conservato",
     "keptAccount": "<b>Il Suo account e ciò che salva:</b> finché non li elimina. Gli account non vengono rimossi perché inutilizzati.",
+    "keptTrash": "<b>Il cestino e le versioni precedenti:</b> un elemento rimosso, 30 giorni dopo che lo ha rimosso, oppure finché non lo elimina per sempre o svuota il cestino; le versioni precedenti 90 giorni, e solo le ultime 20 di ogni elemento (e quella precedente alle modifiche di un token di accesso), ma mai più a lungo dell’elemento: finché è nel cestino, le sue versioni se ne vanno con esso. Entrambi se ne vanno subito quando elimina l’account.",
+    "keptShares": "<b>Link di condivisione:</b> finché non smette di condividere la ricetta, ne crea un nuovo link, la sposta nel cestino o elimina l’account. Ripristinare la ricetta dal cestino non la condivide di nuovo. Anche reimpostare la password o uscire da tutti i dispositivi interrompe tutti i Suoi link; cambiare la password no.",
+    "keptTokens": "<b>Token di accesso e app collegate:</b> ciascuno fino a 30 giorni dopo la scadenza (ognuno scade, al più tardi entro un anno), oppure finché non elimina l’account. Una reimpostazione della password o «Esci da tutti i dispositivi» li interrompe tutti insieme.",
+    "keptActivity": "<b>Ciò che hanno fatto token e app:</b> 90 giorni, oppure finché non elimina l’account.",
+    "keptLimits": "<b>Limiti di frequenza:</b> i conteggi sono conservati solo nella memoria del server, da 1 minuto a 24 ore, e si perdono al riavvio.",
     "keptTrial": "<b>Una prova:</b> 14 giorni dal suo inizio, poi viene eliminata con tutto ciò che contiene, a meno che non crei un account per conservarla.",
     "keptResets": "<b>Link per reimpostare la password e per l’email:</b> un link di reimpostazione funziona per 30 minuti e la sua registrazione viene eliminata dopo circa un’ora; un link per confermare un indirizzo funziona, ed è conservato, per 24 ore.",
     "keptSignIn": "<b>Accesso in due passaggi:</b> ogni app di autenticazione, passkey e serie di codici di recupero fino a quando non li rimuove, disattiva l’accesso in due passaggi o elimina il Suo account. Un accesso in attesa del secondo passaggio viene eliminato dopo 5 minuti, e un’app o una passkey che ha iniziato ad aggiungere ma non ha completato, dopo al massimo 10.",
@@ -112,6 +128,7 @@
     "rightsAsk": "Per qualsiasi altra cosa, come chiedere che i Suoi dati non vengano usati mentre si corregge un errore, o opporsi al modo in cui vengono usati, scrivere a <mail>privacy@glazecalcapp.com</mail>. È gratuito, e riceverà una risposta entro un mese. Le verrà chiesto solo di dimostrare che l’account è Suo, accedendo o aprendo un link inviato al suo indirizzo, mai un documento d’identità.",
     "rightsComplain": "Se qualcosa non La soddisfa, può presentare reclamo a un’autorità per la protezione dei dati: nell’UE, <edpb>l’autorità del Suo paese</edpb>, e nel Regno Unito, l’<ico>Information Commissioner’s Office</ico>.",
     "storageHeading": "Cookie e archiviazione nel browser",
+    "storageIntro": "Glazecalc imposta due cookie, il secondo solo mentre accede con Google o GitHub, e conserva alcuni piccoli valori nel browser. Ciascuno serve per qualcosa che ha chiesto: restare connessi, accedere con Google o GitHub, o ricordare una scelta fatta. Nessuno La traccia e nessuno viene condiviso, quindi la legge non richiede di chiedere prima, e non c’è nessun banner dei cookie.",
     "storageLabel": "Cookie e archiviazione nel browser",
     "storageName": "Nome",
     "storagePurpose": "A che cosa serve",
@@ -150,6 +167,7 @@
         "lasts": "Finché non cancella i dati del browser."
       },
       "print": {
+        "purpose": "Le Sue ultime scelte per la stampa di una ricetta: la ricetta intera, una pesata o il foglio di calcolo, e il peso della pesata.",
         "lasts": "Finché non cancella i dati del browser."
       },
       "token": {
@@ -163,12 +181,19 @@
       "reloadedFor": {
         "purpose": "Dopo il rilascio di una nuova versione del sito, quale pagina è stata ricaricata e quando, così una pagina si ricarica al massimo una volta al minuto.",
         "lasts": "Fino alla chiusura della scheda."
+      },
+      "oauthCookie": {
+        "purpose": "Solo mentre accede con Google o GitHub: lega la risposta del provider al Suo browser, così nessun altro può completare il Suo accesso o avviarne uno al Suo posto. Gli script della pagina non possono leggerlo.",
+        "lasts": "Impostato quando preme «Continua con Google» o «Continua con GitHub», oppure ne collega uno nella pagina dell’account. Rimosso quando l’accesso termina, oppure dopo 10 minuti."
       }
     },
     "childrenHeading": "Minori",
     "children": "Glazecalc è uno strumento per ceramisti e non è rivolto ai minori.",
     "changesHeading": "Modifiche",
-    "changes": "Se questa informativa cambia, cambia anche la data in cima alla pagina."
+    "changes": "Se questa informativa cambia, cambia anche la data in cima alla pagina.",
+    "storedProviders": "<b>Google o GitHub, se accede con uno dei due:</b> l’id che il provider ha per Lei (un numero o un codice che non cambia mai), quando lo ha collegato e quando ha effettuato l’ultimo accesso con esso, e se il Suo account ha una password propria. Del provider non viene conservato nient’altro: né il nome, né la foto, né alcuna chiave del Suo account presso di esso. Mentre accede, il server conserva una nota dell’accesso, con l’email che il provider dice essere Sua quando serve: per un nuovo account, dove diventa l’email dell’account, oppure, quando un account Glazecalc ha già quell’email, per collegarvi il provider una volta effettuato l’accesso a quell’account. La nota, e l’email che contiene, viene eliminata entro circa 10 minuti.",
+    "providers": "<b>Accedere con Google o GitHub</b> è una Sua scelta, e avviene solo quando preme il rispettivo pulsante. Il browser va allora su Google o GitHub, che inviano a Glazecalc il loro id per Lei e la Sua email. Ciascuno è un’azienda distinta, responsabile di ciò che condivide con essa secondo la propria informativa sulla privacy. Nessuno script o immagine dell’uno o dell’altro viene caricato nelle pagine di Glazecalc.",
+    "keptProviders": "<b>Google o GitHub:</b> ogni collegamento finché non lo scollega o elimina l’account. Un accesso in corso viene eliminato dopo 10 minuti."
   },
   "notFound": {
     "heading": "Pagina non trovata",
@@ -194,5 +219,27 @@
     "standardFetchFailed": "Si è verificato un errore nel caricamento dei consigli dal server.",
     "saved": "Aggiunta ai consigli riuscita.",
     "saveFailed": "Si è verificato un errore nell’invio del consiglio."
+  },
+  "assistants": {
+    "title": "Usare Glazecalc con il Suo assistente IA",
+    "lead": "Gli assistenti IA come Claude, GitHub Copilot, Cursor e Gemini possono usare direttamente i calcoli di Glazecalc, tramite il Model Context Protocol (MCP).",
+    "whatHeading": "Che cosa può fare",
+    "what": "Senza un account, un assistente può cercare i materiali nell’elenco standard, calcolare la formula di Seger di una ricetta, confrontarla con i limiti per la sua cottura, suggerire sostituti per i materiali fuori produzione, rifare una ricetta con i materiali che Lei indica, convertire tra coni e temperature, e cercare e leggere le guide. Nulla di ciò che invia viene salvato; come per ogni pagina, il registro del server web annota l’indirizzo IP, l’ora e l’indirizzo di ogni richiesta (mai ciò che è stato inviato), per 14 giorni.",
+    "mine": "Con un token di accesso dalla <account>pagina del Suo account</account>, può anche leggere le Sue ricette, i Suoi materiali, il Suo quaderno, i Suoi registri di cottura e i materiali che ha a disposizione. Un token può solo leggere: non cambia e non rimuove mai nulla.",
+    "caution": "I controlli dei limiti sono avvertenze basate su limiti pubblicati, come nell’app, non la prova che uno smalto sia idoneo al contatto con gli alimenti. Cuocia una prova di ogni smalto e faccia testare la cessione degli smalti per superfici a contatto con gli alimenti.",
+    "addressHeading": "L’indirizzo",
+    "address": "Dia al Suo assistente questo indirizzo, usando il trasporto Streamable HTTP:",
+    "token": "Per permettergli di leggere i Suoi dati, crei un token nella <account>pagina del Suo account</account> e lo copi. Il Suo assistente lo invia in un’intestazione Authorization, come Bearer seguito dal token. Lo tenga fuori dai file che condivide o salva in un repository, come farebbe con una password.",
+    "clientsHeading": "Aggiungere Glazecalc al Suo assistente",
+    "claudeCode": "In un terminale:",
+    "claudeCodeToken": "Con un token di accesso, per leggere anche i Suoi dati:",
+    "vscode": "In .vscode/mcp.json in una cartella, oppure nelle impostazioni utente. VS Code chiede il token una volta e lo tiene nascosto; ometta headers e inputs per usare solo gli strumenti che non richiedono un account:",
+    "cursor": "In ~/.cursor/mcp.json, oppure .cursor/mcp.json in un progetto. Ometta headers per usare solo gli strumenti che non richiedono un account:",
+    "gemini": "In ~/.gemini/settings.json. Ometta headers per usare solo gli strumenti che non richiedono un account:",
+    "appsHeading": "Claude, ChatGPT e altre app",
+    "apps": "Aggiunga un connettore personalizzato con l’indirizzo qui sopra. Queste app non possono ancora inviare un token di accesso, quindi ottengono gli strumenti che non richiedono un account. L’accesso ai Suoi dati da queste app arriverà con l’accesso dall’app.",
+    "stopHeading": "Interrompere l’accesso",
+    "stop": "Revochi un token in qualsiasi momento nella <account>pagina del Suo account</account>. Ogni token smette di funzionare nel giorno scelto, e tutti smettono insieme se reimposta la password o esce da tutti i dispositivi.",
+    "limits": "Ogni indirizzo può fare 60 richieste al minuto e 2000 al giorno; un account che usa un token, 120 al minuto e 5000 al giorno. Le sostituzioni e le corrispondenze sono limitate a 10 al minuto."
   }
 }
