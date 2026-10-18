@@ -3894,14 +3894,17 @@ export const MFA_CLEAR_NOTICE: Record<string, Email> = {
 
 /**
  * A date as the email's language writes it, day, month in words and year (UTC):
- * 21 October 2026 in English, 21. Oktober 2026 in German.
+ * 21 October 2026 in English, 21. Oktober 2026 in German. Always in the Gregorian
+ * calendar, whatever the Calendar setting (which changes only the dates the app
+ * shows): Intl would write Thai in the Buddhist era.
  */
 export const mailDate = (date: Date, language?: string): string =>
   date.toLocaleDateString(language && language !== 'en' ? language : 'en-GB', {
     day: 'numeric',
     month: 'long',
     year: 'numeric',
-    timeZone: 'UTC'
+    timeZone: 'UTC',
+    calendar: 'gregory'
   });
 
 /** How each email names a factor, as a whole phrase: {name} is a passkey's name. */

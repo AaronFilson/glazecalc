@@ -69,3 +69,39 @@ test('the decimal mark can differ from the region: a point, typed by a potter in
     'Enter a number, such as 12.5, with a point for decimals.'
   );
 });
+
+test('a firing log shows its date in the calendar chosen in Settings; the date typed stays Gregorian', async ({
+  page
+}) => {
+  await page.goto('/firing');
+  await page.locator('#firing-title').fill('Bisque');
+  await page.locator('#firing-date').fill('2026-10-03');
+  await page.locator('#fieldselect').selectOption('Cone');
+  await page.getByRole('button', { name: 'Add the field' }).click();
+  await page.getByRole('button', { name: 'Add a row to the firing table' }).click();
+  await page.getByLabel('Cone row 1').fill('04');
+  await page.getByRole('button', { name: 'Save' }).click();
+  const stored = page.locator('.stored-firing', { hasText: 'Bisque' });
+  await expect(stored).toContainText('Saturday, October 3, 2026');
+
+  // The Thai Buddhist era, then Japanese eras: only the date shown changes.
+  await page.goto('/account');
+  await expect(page.locator('#calendar-gregory')).toBeChecked();
+  await page.locator('#calendar-buddhist').check();
+  await expect(page.locator('.settings-status')).toHaveText('Saved: dates are shown in the Thai Buddhist era.');
+  await page.goto('/firing');
+  await expect(stored).toContainText('October 3, 2569 BE');
+  await expect(page.locator('#firing-date')).toHaveValue('');
+
+  await page.goto('/account');
+  await page.locator('#calendar-japanese').check();
+  await expect(page.locator('.settings-status')).toHaveText('Saved: dates are shown in Japanese eras.');
+  await page.goto('/firing');
+  await expect(stored).toContainText('October 3, 8 Reiwa');
+
+  // Kept with the account, and saved as typed.
+  const preferences = await (await page.request.get(API + '/preferences')).json();
+  expect(preferences.calendar).toBe('japanese');
+  const firings = await (await page.request.get(API + '/firing/getAll')).json();
+  expect(firings.find((firing) => firing.title === 'Bisque').date).toMatch(/^2026-10-03/);
+});

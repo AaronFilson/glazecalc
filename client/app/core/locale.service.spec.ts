@@ -1,7 +1,7 @@
 import { signal } from '@angular/core';
 import { TestBed } from '@angular/core/testing';
 import { PAGE_LANGUAGE } from '../i18n/language';
-import { formatLocale, listLocale, listOf, typedDecimalMark } from '../shared/format';
+import { fixed, formatDate, formatLocale, listLocale, listOf, typedDecimalMark } from '../shared/format';
 import { chosenRegion } from '../shared/library-info';
 import { testProviders } from '../testing/test-providers';
 import { FIRST_RENDER, prerenderRegion } from './first-render';
@@ -26,6 +26,44 @@ describe('LocaleService', () => {
     TestBed.tick();
     expect(formatLocale()).toBe('en-US');
     expect(listOf(['USA', 'Vereinigtes Königreich', 'EU'])).toBe('USA, Vereinigtes Königreich und EU');
+  });
+
+  it('shows dates in the Gregorian calendar by default, a Thai page too', () => {
+    TestBed.overrideProvider(PAGE_LANGUAGE, { useValue: 'th' });
+    TestBed.inject(PreferencesService).remember('region', 'TH');
+    TestBed.inject(LocaleService);
+    TestBed.tick();
+    expect(formatLocale()).toBe('th-TH-u-ca-gregory');
+    expect(formatDate('2026-10-17', { dateStyle: 'long' })).toContain('2026');
+  });
+
+  it('shows dates in the Thai Buddhist era when chosen, numbers as before', () => {
+    TestBed.overrideProvider(PAGE_LANGUAGE, { useValue: 'th' });
+    const preferences = TestBed.inject(PreferencesService);
+    preferences.remember('region', 'TH');
+    preferences.remember('calendar', 'buddhist');
+    TestBed.inject(LocaleService);
+    TestBed.tick();
+    expect(formatLocale()).toBe('th-TH-u-ca-buddhist');
+    expect(formatDate('2026-10-17', { dateStyle: 'long' })).toBe('17 ตุลาคม 2569');
+    expect(formatDate('2026-10-17', { dateStyle: 'medium' })).toContain('2569');
+    expect(fixed(12345.6, 1)).toBe('12,345.6');
+  });
+
+  it('shows dates in Japanese eras when chosen, in Japanese or in English', () => {
+    TestBed.overrideProvider(PAGE_LANGUAGE, { useValue: 'ja' });
+    const preferences = TestBed.inject(PreferencesService);
+    preferences.remember('region', 'JP');
+    preferences.remember('calendar', 'japanese');
+    TestBed.inject(LocaleService);
+    TestBed.tick();
+    expect(formatDate('2026-10-17', { dateStyle: 'long' })).toBe('令和8年10月17日');
+    preferences.remember('format', 'en-US');
+    TestBed.tick();
+    expect(formatDate('2026-10-17', { dateStyle: 'long' })).toBe('October 17, 8 Reiwa');
+    preferences.remember('calendar', 'gregory');
+    TestBed.tick();
+    expect(formatDate('2026-10-17', { dateStyle: 'long' })).toBe('October 17, 2026');
   });
 
   it("takes a region from the browser's language, for defaults only", () => {
@@ -197,7 +235,7 @@ describe('prerenderRegion', () => {
     // Taiwan comes before Hong Kong, the other region whose first language is Traditional Chinese; China is
     // the one whose first language is Simplified.
     expect(['zh-Hant', 'zh-Hans', 'ko', 'ja', 'ja-XC'].map(prerenderRegion)).toEqual(['TW', 'CN', 'KR', 'JP', 'JP']);
-    expect(['th', 'id'].map(prerenderRegion)).toEqual(['TH', 'ID']);
+    expect(['th', 'id', 'vi'].map(prerenderRegion)).toEqual(['TH', 'ID', 'VN']);
   });
 
   it('names none for English, a pseudo-locale, or a language no region lists', () => {

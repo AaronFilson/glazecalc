@@ -36,6 +36,8 @@ export type TokenLifetime = `${number}d`;
  *   limitSet       the limits the recipe page shows a glaze against (lib/recipe/limits.js): Hesselberth & Roy's or the app's own
  *   currency       the one currency the account's prices are in (ISO 4217), or '' to follow the region
  *                  (lib/regions currencyFor); prices are never converted
+ *   calendar       the calendar dates are shown in: the Gregorian, the Thai Buddhist era or Japan's eras
+ *                  (lib/regions CALENDARS); dates are typed and saved in the Gregorian
  */
 export const PREFERENCES = {
   weightUnit: ['g', 'lb'],
@@ -57,7 +59,8 @@ export const PREFERENCES = {
     limits.DEFAULT_LIMIT_SET,
     ...Object.keys(limits.LIMIT_SETS).filter((id) => id !== limits.DEFAULT_LIMIT_SET)
   ],
-  currency: ['', ...regions.CURRENCIES]
+  currency: ['', ...regions.CURRENCIES],
+  calendar: regions.CALENDARS
 } as const;
 export type Preferences = { -readonly [K in keyof typeof PREFERENCES]: (typeof PREFERENCES)[K][number] };
 
@@ -303,7 +306,8 @@ const userSchema = new mongoose.Schema<UserFields, UserModel, UserMethods>({
     notice: { type: String, enum: PREFERENCES.notice },
     recipeHelp: { type: String, enum: PREFERENCES.recipeHelp },
     limitSet: { type: String, enum: PREFERENCES.limitSet },
-    currency: { type: String, enum: PREFERENCES.currency }
+    currency: { type: String, enum: PREFERENCES.currency },
+    calendar: { type: String, enum: PREFERENCES.calendar }
   },
   shelf: { type: [String], default: undefined },
   prices: {

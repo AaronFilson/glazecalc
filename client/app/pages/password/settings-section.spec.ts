@@ -156,6 +156,22 @@ describe('SettingsSection', () => {
     expect(text(fixture, '.settings-status')).toBe('Saved: amounts are typed with a point for decimals.');
   });
 
+  it("shows each format's date in the calendar chosen: Gregorian for Thai by default, Buddhist when chosen", async () => {
+    const thai = (fixture: { nativeElement: HTMLElement }) =>
+      (fixture.nativeElement.querySelector('#format option[value="th-TH"]') as HTMLOptionElement).textContent
+        ?.replace(/\s+/g, ' ')
+        .trim();
+    const { fixture } = await create();
+    expect(thai(fixture)).toMatch(/· 8\/10\/26\)$/);
+    (fixture.nativeElement.querySelector('#calendar-buddhist') as HTMLInputElement).click();
+    await fixture.whenStable();
+    const req = httpMock().expectOne(API + '/preferences');
+    expect(req.request.body).toEqual({ calendar: 'buddhist' });
+    req.flush({ calendar: 'buddhist' });
+    await settle(fixture);
+    expect(thai(fixture)).toMatch(/· 8\/10\/69\)$/);
+  });
+
   it('says when the choice could not be saved, and shows the one still in place', async () => {
     const { fixture, radio } = await create();
     radio('g').click();

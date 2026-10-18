@@ -120,10 +120,15 @@ describe('regions', () => {
 
   it('should show only verified lines, each with its source and checked within the last year', () => {
     const yearAgo = Date.now() - 366 * 24 * 60 * 60 * 1000;
+    // Emergency numbers shown though no official page was found, by the owner's decision (2026-10-17).
+    const REPORTED = ['VN'];
     for (const region of regions.REGIONS) {
       const shown = safety.shownFor(region.code)!;
+      for (const line of shown.emergency) {
+        expect(line.status, line.name).to.equal(REPORTED.includes(region.code) ? 'reported' : 'verified');
+      }
       for (const line of [...shown.emergency, ...shown.poison, ...shown.animals, ...shown.advice]) {
-        expect(line.status, line.name).to.equal('verified');
+        if (!shown.emergency.includes(line)) expect(line.status, line.name).to.equal('verified');
         expect(line.source, line.name).to.match(/^https:\/\//);
         expect(Date.parse(line.checked), line.name + ': check this number again').to.be.above(yearAgo);
       }
@@ -160,7 +165,7 @@ describe('region facts', () => {
     fs.readFileSync(new URL('../../client/public/i18n/guides/en.json', import.meta.url), 'utf8')
   );
   const HTTP_ONLY = ['丸二陶料', '太麟化工原料有限公司', 'Sam Mui Kuang Pottery'];
-  const NO_SHOP_FOUND = ['MY', 'CN', 'HK', 'ID', 'TH', 'PH'];
+  const NO_SHOP_FOUND = ['MY', 'CN', 'HK', 'ID', 'TH', 'PH', 'VN'];
   const checkedLately = (fact: { checked: string; source?: string; url?: string }, label: string) => {
     expect(fact.source ?? fact.url, label).to.match(/^https:\/\//);
     expect(Date.parse(fact.checked), label + ': check this again').to.be.above(yearAgo);
@@ -513,6 +518,29 @@ describe('regions before China', () => {
     const hash = crypto.createHash('sha256').update(JSON.stringify(data)).digest('hex');
     // Changed once on purpose: Taiwan's 119 note now says when to dial 112 (2026-10-16).
     expect(hash).to.equal('78a40b67ef1ab8b683926873f242f85e67202d6bc66d38ac77f9340f21c0c980');
+  });
+});
+
+// The same, with China, Hong Kong, Indonesia, Thailand and the Philippines, before Vietnam.
+describe('regions before Vietnam', () => {
+  it('keep their data exactly', () => {
+    const codes = [
+      'US', 'GB', 'AU', 'NZ', 'AT', 'BE', 'BG', 'HR', 'CY', 'CZ', 'DK', 'EE', 'FI', 'FR', 'DE', 'GR',
+      'HU', 'IE', 'IT', 'LV', 'LT', 'LU', 'MT', 'NL', 'PL', 'PT', 'RO', 'SK', 'SI', 'ES', 'SE', 'JP', 'TR',
+      'KR', 'TW', 'SG', 'MY', 'CN', 'HK', 'ID', 'TH', 'PH'
+    ]; // prettier-ignore
+    const data: unknown[] = codes.map((code) => [
+      code,
+      asSnapshotted(code),
+      safety.SAFETY[code],
+      safety.MINISTRIES[code] ?? null,
+      workplace.WORKPLACE[code] ?? null,
+      food.FOOD[code] ?? null,
+      suppliers.SUPPLIERS[code] ?? null
+    ]);
+    data.push(['EU', food.FOOD['EU'], workplace.EU_SILICA]);
+    const hash = crypto.createHash('sha256').update(JSON.stringify(data)).digest('hex');
+    expect(hash).to.equal('8a2fe333cf8f9cbcfa05f081ef40c1120b7619e1284a8977f744d4ca0b627bc0');
   });
 });
 
@@ -903,5 +931,98 @@ describe('Philippines', () => {
     expect(workplace.workplaceFor('PH')).to.eql({ silica: null, agency: null, respirators: null, eu: false });
     expect(food.foodRulesFor('PH')).to.equal(null);
     expect(suppliers.shopsFor('PH')).to.eql({ shops: [], nearby: [] });
+  });
+});
+
+// Vietnam (docs/asia-plan.md, Phase C), from research_notes/Asia/region-VN-2026-10-17.md.
+describe('Vietnam', () => {
+  it('stays in English, fires by temperature, lists the US library, and prices in dong', () => {
+    expect(regions.regionFor('VN')).to.include({
+      temperature: 'C',
+      cones: 'temperature',
+      library: 'US',
+      currency: 'VND'
+    });
+    expect(regions.regionFor('VN')!.languages).to.eql(['vi']);
+    expect(regions.formatLocaleFor('en', 'VN', 'auto')).to.equal('en-VN');
+    expect(regions.formatLocaleFor('vi', 'VN', 'auto')).to.equal('vi-VN');
+  });
+
+  it('gives 115, with 113 and 114 in its note, marked as reported: no official page lists them', () => {
+    const shown = safety.shownFor('VN')!;
+    expect(shown.emergency.map((line) => [line.number, line.status])).to.eql([['115', 'reported']]);
+    expect(shown.emergency[0]!.note).to.include('113').and.include('114');
+    expect(shown.poison).to.eql([]);
+    expect(safety.ministryFor('VN')).to.equal(null);
+  });
+
+  it("gives QCVN 02:2019/BYT's 0.1 for free silica in respirable dust, read in a legal database's copy", () => {
+    const facts = workplace.workplaceFor('VN')!;
+    expect(facts.silica).to.include({ quartz: 0.1, kind: 'binding', status: 'secondary', checked: '2026-10-17' });
+    expect(facts.silica!.law).to.include('QCVN 02:2019/BYT');
+    expect(facts.agency).to.equal(null);
+    expect(facts.respirators).to.equal(null);
+  });
+
+  it("gives QCVN 12-4:2015/BYT's limits for ceramic ware, in force since 2016-05-01", () => {
+    const rules = food.foodRulesFor('VN')!;
+    expect(rules.own).to.equal(true);
+    expect(rules.rules).to.include({ status: 'secondary', inForce: '2016-05-01' });
+    expect(rules.rules.limits.map((l) => [l.category, l.lead, l.cadmium, l.unit])).to.eql([
+      ['vnFlat', 0.8, 0.07, 'mg/dm²'],
+      ['vnSmall', 2, 0.5, 'mg/L'],
+      ['vnMedium', 1, 0.25, 'mg/L'],
+      ['vnStorage', 0.5, 0.25, 'mg/L'],
+      ['vnCooking', 0.5, 0.05, 'mg/L'],
+      ['vnCups', 0.5, 0.25, 'mg/L']
+    ]);
+  });
+
+  it('lists no shop, since none was found', () => {
+    expect(suppliers.shopsFor('VN')).to.eql({ shops: [], nearby: [] });
+  });
+});
+
+// The Calendar setting (docs/asia-plan.md, Phase E item 1): Gregorian by default everywhere, the Thai
+// Buddhist era or Japan's eras when chosen; numbers are written the same either way.
+describe('calendars', () => {
+  const day = new Date(2026, 9, 17);
+  const shown = (locale: string) => new Intl.DateTimeFormat(locale, { dateStyle: 'long' }).format(day);
+
+  it('offer the Gregorian first, then the Thai Buddhist era and Japanese eras', () => {
+    expect(regions.CALENDARS).to.eql(['gregory', 'buddhist', 'japanese']);
+  });
+
+  it('write dates in the Gregorian calendar by default, Thai too, and leave other locales as they were', () => {
+    expect(regions.formatLocaleFor('en', 'US', 'auto')).to.equal('en-US');
+    expect(regions.formatLocaleFor('en', 'US', 'auto', 'gregory')).to.equal('en-US');
+    expect(regions.formatLocaleFor('ja', 'JP', 'auto', 'gregory')).to.equal('ja-JP');
+    expect(regions.formatLocaleFor('th', 'TH', 'auto', 'gregory')).to.equal('th-TH-u-ca-gregory');
+    expect(shown(regions.formatLocaleFor('th', 'TH', 'auto'))).to.include('2026');
+    // Not a calendar offered: the Gregorian.
+    expect(regions.formatLocaleFor('en', 'US', 'auto', 'islamic')).to.equal('en-US');
+  });
+
+  it('write the Thai Buddhist era when chosen, in any language', () => {
+    const thai = regions.formatLocaleFor('th', 'TH', 'auto', 'buddhist');
+    expect(thai).to.equal('th-TH-u-ca-buddhist');
+    expect(shown(thai)).to.include('2569').and.not.include('2026');
+    expect(shown(regions.formatLocaleFor('en', 'TH', 'auto', 'buddhist'))).to.include('2569');
+    expect(regions.formatLocaleFor('en', null, 'th-TH', 'buddhist')).to.equal('th-TH-u-ca-buddhist');
+  });
+
+  it('write Japanese eras when chosen, in any language', () => {
+    const japanese = regions.formatLocaleFor('ja', 'JP', 'auto', 'japanese');
+    expect(japanese).to.equal('ja-JP-u-ca-japanese');
+    expect(shown(japanese)).to.equal('令和8年10月17日');
+    expect(shown(regions.formatLocaleFor('en', 'US', 'auto', 'japanese'))).to.include('Reiwa');
+  });
+
+  it('write numbers the same in every calendar', () => {
+    for (const calendar of regions.CALENDARS) {
+      expect(new Intl.NumberFormat(regions.formatLocaleFor('de', 'DE', 'auto', calendar)).format(12345.6)).to.equal(
+        '12.345,6'
+      );
+    }
   });
 });

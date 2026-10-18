@@ -87,3 +87,21 @@ describe('region blocks before China', () => {
     }, 15_000);
   }
 });
+
+// China, Hong Kong, Indonesia, Thailand and the Philippines, frozen before Vietnam, on the same fixed day.
+describe('region blocks before Vietnam', () => {
+  beforeEach(() => {
+    localStorage.clear();
+    TestBed.configureTestingModule({
+      providers: [...testProviders(), { provide: NOW, useValue: () => new Date('2026-10-16T12:00:00Z') }]
+    });
+  });
+
+  for (const [name, component] of BLOCKS) {
+    it(`says exactly what it said before for China, Hong Kong, Indonesia, Thailand and the Philippines: ${name}`, async () => {
+      const all: Record<string, string> = {};
+      for (const region of ['CN', 'HK', 'ID', 'TH', 'PH']) all[region] = await html(component, region);
+      expect(all).toMatchSnapshot();
+    }, 15_000);
+  }
+});
