@@ -348,6 +348,7 @@
     "noPrice": "No price",
     "total": "This batch costs {cost}: {perUnit} per {unit, select, lb {pound} other {kilogram}} of dry glaze, colorants and additives included.",
     "partial": "The materials with prices cost {cost} in this batch. Give a price for {list} for the whole cost.",
+    "none": "Give each material's price per {unit, select, lb {pound} other {kilogram}} to see what a batch costs.",
     "rounding": "Each line is rounded for display; the total is worked out from the unrounded costs, so it can differ slightly from their sum.",
     "skipped": "{count, plural, one {# price from your trial was} other {# prices from your trial were}} in another currency than this account's, so not copied.",
     "noBatch": "Enter the amounts and a batch size to see what a batch costs.",

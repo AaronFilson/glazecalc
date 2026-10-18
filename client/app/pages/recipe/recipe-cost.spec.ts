@@ -88,6 +88,18 @@ describe('RecipeCost', () => {
     expect(text(fixture, '.recipe-cost')).toContain('per kilogram, in USD');
   });
 
+  it('with no prices at all, asks for them rather than giving a cost of nothing', async () => {
+    const { fixture } = await create([]);
+    expect(text(fixture, '.recipe-cost-summary')).toBe(
+      "Give each material's price per kilogram to see what a batch costs."
+    );
+  });
+
+  it('asks for prices per pound when weights are in pounds', async () => {
+    const { fixture } = await create([], 'lb');
+    expect(text(fixture, '.recipe-cost-summary')).toBe("Give each material's price per pound to see what a batch costs.");
+  });
+
   it('names the materials with no price, and costs the rest, guessing nothing', async () => {
     const { fixture, root } = await create([{ key: 'potash', perKg: 2 }]);
     expect(rows(root)).toEqual([

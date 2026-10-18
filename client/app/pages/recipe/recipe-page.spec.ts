@@ -157,8 +157,10 @@ describe('RecipePage', () => {
     await fixture.whenStable();
     answer('/prices', { prices: [] });
     await settle(fixture);
-    // Iron oxide has no amount yet, so needs no price.
-    expect(text(fixture, '.recipe-cost-summary')).toContain('Give a price for Whiting and Silica for the whole cost.');
+    // Nothing has a price yet: what to do, not a total of nothing.
+    expect(text(fixture, '.recipe-cost-summary')).toBe(
+      "Give each material's price per kilogram to see what a batch costs."
+    );
   });
 
   it('shows the unity formula as amounts are typed, with each share and the total', async () => {
