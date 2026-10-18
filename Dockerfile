@@ -16,7 +16,7 @@
 # where $BUILDPLATFORM is the target, so this changes nothing there; a cross
 # build (scripts/build-staging.sh, arm64 on an amd64 PC) then runs the Angular
 # build natively instead of under emulation.
-FROM --platform=$BUILDPLATFORM node:24-slim@sha256:d6aa754f16b3197301076f047b5def2f02ea1dbbc2ca920407d46d7ec7f87b20 AS deps
+FROM --platform=$BUILDPLATFORM node:24-slim@sha256:a5f4366e834695d5f363b920c104953a535d3a9864d1bdf74566a0ebe01daee5 AS deps
 WORKDIR /app
 COPY package.json package-lock.json ./
 RUN --mount=type=cache,target=/root/.npm npm ci --no-audit --no-fund
@@ -32,12 +32,12 @@ COPY scripts/prerender.mjs scripts/advice-i18n.mjs ./scripts/
 RUN npm run build
 
 # Only the packages the server needs at run time.
-FROM node:24-slim@sha256:d6aa754f16b3197301076f047b5def2f02ea1dbbc2ca920407d46d7ec7f87b20 AS prod-deps
+FROM node:24-slim@sha256:a5f4366e834695d5f363b920c104953a535d3a9864d1bdf74566a0ebe01daee5 AS prod-deps
 WORKDIR /app
 COPY package.json package-lock.json ./
 RUN --mount=type=cache,target=/root/.npm npm ci --omit=dev --no-audit --no-fund
 
-FROM node:24-slim@sha256:d6aa754f16b3197301076f047b5def2f02ea1dbbc2ca920407d46d7ec7f87b20 AS runtime
+FROM node:24-slim@sha256:a5f4366e834695d5f363b920c104953a535d3a9864d1bdf74566a0ebe01daee5 AS runtime
 # This code honours two-step sign-in. deploy/deploy.sh refuses an image without
 # this label (older code would sign accounts in with the password alone) unless
 # told --allow-pre-mfa. Never remove it.
