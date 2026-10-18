@@ -726,6 +726,8 @@
     "title": "Blends for test tiles",
     "lead": "Mix two, three or four of your recipes in steps, one test tile each. Print the list of what to weigh for each tile, and save the tiles you like as recipes.",
     "needTwo": "A blend mixes recipes you have saved, so save at least two first: a base, say, and the same base with a colorant added.",
+    "startRecipe": "Start a recipe",
+    "pasteIn": "Paste in recipes",
     "setupHeading": "The blend",
     "kindLegend": "Kind of blend",
     "kinds": {
