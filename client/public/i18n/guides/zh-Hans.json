@@ -24,7 +24,7 @@
     },
     "safeMixing": {
       "title": "安全配料与通风",
-      "text": "粉尘、防尘口罩、清洁、最需要小心的原料，以及给窑排风。"
+      "text": "粉尘、防颗粒物呼吸器、清洁、最需要小心的原料，以及给窑排风。"
     },
     "homeSafety": {
       "title": "别让家人中毒",
@@ -118,7 +118,7 @@
     "lowerThanEu": "低于欧盟具有法律约束力的限值 {value} mg/m³。",
     "sameAsEu": "与欧盟具有法律约束力的限值相同。",
     "recommendedBy": "{abbr}（{by}）在其<link>{title}</link>中推荐此值。它不是法律规定。",
-    "respirators": "这里的防尘口罩按等级销售：防釉料粉尘用 {everyday}，需要更高防护时用 {higher}（<link>官方等级</link>）。",
+    "respirators": "这里的防颗粒物呼吸器按等级销售：防釉料粉尘用 {everyday}，需要更高防护时用 {higher}（<link>官方等级</link>）。",
     "unknown": "我们无法确认{region}的国家限值。欧盟具有法律约束力的限值 {value} mg/m³ 适用于每个成员国。",
     "noData": "我们还没有确认{region}的限值。",
     "agency": "国家职业安全主管机构：<link>{name}</link>。",

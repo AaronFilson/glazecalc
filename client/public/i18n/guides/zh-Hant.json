@@ -24,7 +24,7 @@
     },
     "safeMixing": {
       "title": "安全調配與通風",
-      "text": "粉塵、防塵口罩、清潔、最需要小心的原料，以及窯的排氣。"
+      "text": "粉塵、呼吸防護具、清潔、最需要小心的原料，以及窯的排氣。"
     },
     "homeSafety": {
       "title": "別讓家人中毒",
@@ -118,7 +118,7 @@
     "lowerThanEu": "低於歐盟具法律約束力的限值 {value} mg/m³。",
     "sameAsEu": "與歐盟具法律約束力的限值相同。",
     "recommendedBy": "{abbr}（{by}）在其 <link>{title}</link> 中建議此數值。此數值不是法律規定。",
-    "respirators": "當地的防塵口罩依等級販售：釉藥粉塵用 {everyday}，需要更高防護時用 {higher}（<link>官方等級</link>）。",
+    "respirators": "當地的呼吸防護具依等級販售：釉藥粉塵用 {everyday}，需要更高防護時用 {higher}（<link>官方等級</link>）。",
     "unknown": "我們無法確認{region}的國家限值。歐盟具法律約束力的限值 {value} mg/m³ 適用於所有會員國。",
     "noData": "我們尚未確認{region}的限值。",
     "agency": "國家職業安全衛生主管機關：<link>{name}</link>。",
