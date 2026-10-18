@@ -18,40 +18,40 @@ lead: 釉藥由什麼組成、窯如何將其變成玻璃，以及您會在釉�
 > [!NOTE]
 > 可以這樣記：二氧化矽是玻璃，助熔劑讓玻璃能在您的窯達得到的溫度熔化，氧化鋁使釉變稠，留在您上釉的位置。
 
-## Clay, coatings and the two firings {#clay-and-firings lang=en}
+## 黏土、塗層與兩次燒成 {#clay-and-firings}
 
-### Clay bodies
+### 坯體
 
-The **clay body** is the clay a pot is made of. There are three main kinds.
+**坯體**{{en: clay body}}是作品所用的黏土。主要有三種。
 
-- **Earthenware**: a low-fire body, about cone 06–02, that stays porous. Often red or buff, it needs a glaze to hold water.
-- **Stoneware**: a mid- to high-fire body, about cone 5–10, that becomes vitreous or nearly so.
-- **Porcelain**: a white, high-fire body rich in kaolin, often translucent.
+- **陶器**{{en: earthenware}}：低溫坯體，約 Orton 06–02 號測溫錐，仍有孔隙。常為紅色或米黃色，需要上釉才能盛水。
+- **炻器**{{en: stoneware}}：中溫到高溫坯體，約 Orton 5–10 號測溫錐，會玻化或接近玻化。
+- **瓷器**：白色的高溫坯體，富含高嶺土，常有透光性。
 
-**Vitreous** means glassy and non-porous; **vitrification** is a body becoming so as it fires. UK potters often draw the line by temperature instead: stoneware is fired above {{2192 °F; 1200 °C}}, earthenware below. Mid fire, cone 5–6, falls just either side of that line.
+**玻化的**表示像玻璃一樣、不吸水；**玻化**則是坯體在燒成中變成這樣的過程。英國的陶藝家常改用溫度來劃分：炻器燒到超過 {{2192 °F; 1200 °C}}，陶器則低於這個溫度。中溫的 5–6 號測溫錐，正好落在這條線的兩側。
 
-### Coatings and drying
+### 塗層與乾燥
 
-**Slip** is clay suspended in water, for casting, joining or decorating. An **engobe** is a slip-like coating, often colored, with more non-clay materials. An **underglaze** is colored slip or oxide decoration, usually covered with a clear glaze.
+**泥漿**是懸浮在水中的黏土，用於注漿、接合或裝飾。**化妝土**是類似泥漿的塗層，常帶顏色，含較多非黏土的原料。**釉下彩**是有顏色的化妝土或氧化物裝飾，通常上面會蓋一層透明釉。
 
-Unfired ware is **greenware** (sources disagree on whether the word covers all unfired ware or only dry ware). As it dries it becomes **leather-hard**, stiff but slightly damp, the stage for trimming and handles; then **bone dry**, with no free water left, very fragile and ready to fire.
+未燒的作品稱為**生坯**{{en: greenware}}（各資料對這個詞是指所有未燒的作品，還是只指乾燥的作品，說法不一）。變乾時，黏土會先成為**半乾**，變硬但仍略帶濕氣，是修坯和安裝把手的階段；再成為**全乾**，已沒有自由水，非常脆弱，可以入窯燒了。
 
-### The two firings
+### 兩次燒成
 
-The first, lower firing is the **bisque** (UK: **biscuit**), usually cone 08–04 (most often 06–04), about {{1728–1945 °F; 942–1063 °C}}. It leaves ware strong but porous. Digitalfire, a glaze reference site, suggests generally more than 15% porosity, so the bisque draws water out of the glaze as it goes on. A soft bisque (cone 08–06) is more porous; a hard bisque (often cone 04) is sturdier but takes glaze less readily.
+第一次、溫度較低的燒成是**素燒**{{en: bisque}}（英國稱 **biscuit**），通常為 Orton 08–04 號測溫錐（最常見的是 06–04 號），約 {{1728–1945 °F; 942–1063 °C}}。素燒讓作品結實，但仍有孔隙。釉藥參考網站 Digitalfire 建議孔隙率一般要超過 15%，這樣素燒坯上釉時才會把釉裡的水吸走。低溫素燒（08–06 號）孔隙較多；高溫素燒（常為 04 號）較堅固，但較不容易吸附釉。
 
-Table: How the bisque changes glazing (Digitalfire)
-Label: How the bisque changes glazing
+Table: 素燒如何影響上釉（Digitalfire）
+Label: 素燒如何影響上釉
 
-| Bisque                                  | What happens                                                    |
-| --------------------------------------- | --------------------------------------------------------------- |
-| Under-fired, very absorbent             | Glaze goes on too thick, then cracks and crawls                 |
-| Over-fired, dense                       | Dipping and drying take longer                                  |
-| Fired hotter, or held longer at the top | More gas burns off now, so less bubbles through the glaze later |
+| 素燒坯狀態                   | 結果                                             |
+| ---------------------------- | ------------------------------------------------ |
+| 燒成不足，吸水性很強         | 釉上得太厚，接著裂開、縮釉                       |
+| 過燒，質地緻密               | 浸釉和乾燥需要更久                               |
+| 燒得更熱，或在最高溫持溫更久 | 更多氣體在此時燒掉，之後從釉中冒出的氣泡就比較少 |
 
-Potclays, a UK supplier, describes biscuit firing to around {{1000 °C; 1832 °F}}, about cone 06. Reading these sources together, we suggest cone 06–04 for a first bisque: {{1828–1945 °F; 998–1063 °C}} at Orton's medium rate.
+英國供應商 Potclays 把素燒（biscuit）說成燒到約 {{1000 °C; 1832 °F}}，約為 06 號測溫錐。綜合這些資料，我們建議第一次素燒用 06–04 號測溫錐：以 Orton 的中速升溫，溫度為 {{1828–1945 °F; 998–1063 °C}}。
 
-The **glaze firing** (British potters may say **glost** firing) melts the glaze and, for stoneware, matures the clay too. **Once-firing** glazes unfired ware and fires it just once. Digitalfire reports a production case where raw-glazed ware crawled on its rims until a bisque firing cured it, so begin with two firings. [Firing a basic kiln](/guides/firing) gives schedules for both.
+**釉燒**{{en: glaze firing}}（英國的陶藝家可能說 **glost** 燒成）會讓釉熔化，炻器則同時把坯土燒熟。**一次燒成**{{en: once-firing}}是在未燒的作品上釉後只燒一次。Digitalfire 報告過一個生產案例：生坯施釉的作品，口緣一直縮釉，加了一次素燒才解決，所以請先採用兩次燒成。[基本燒窯](/guides/firing)提供了兩者的燒成曲線。
 
 ## 測溫錐與熱功 {#cones}
 
@@ -238,30 +238,30 @@ Label: 常見的釉藥缺陷
 | 流釉                  | 釉流到棚板上                     | 氧化鋁太少；太厚，例如淋釉重疊處；鐵很多                                                       | 上薄一點；增加氧化鋁；釉面要離底足遠一些                    |
 | 冷裂{{en: dunting}}   | 作品因冷卻或加熱而裂開           | 快速降溫通過石英相變{{en: quartz inversion}}點 {{1063 °F; 573 °C}}；器壁厚薄不均；坯釉適配不良 | 升溫和降溫時都要緩慢通過 {{1063 °F; 573 °C}}；器壁厚薄均勻  |
 
-## Food safety {#food-safety lang=en}
+## 食品安全 {#food-safety}
 
-**Leaching** is metal dissolving out of a fired glaze into food or drink, and a glaze can look perfect and still do it. The legal tests soak the fired piece in an acid solution and measure the lead and cadmium that come out.
+**溶出**{{en: leaching}}是金屬從燒成的釉中溶解到食物或飲料裡，釉看起來再完美也可能發生。法定的試驗是把燒成的作品浸泡在酸性溶液中，測量溶出的鉛和鎘。
 
-### Lead-free is not the same as food-safe
+### 無鉛不等於可安全盛裝食物
 
-The rules in the US, the EU, the UK and Australia limit the lead and cadmium a fired piece releases, not what the glaze contains. "Lead-free" removes one hazard; it is not a food-safety rating. Other oxides leach too: Glazy warns that high-barium glazes "can leach and are generally not food-safe", Digitalfire says copper "can make a glaze leachable; test it", and Glazy no longer advises lead glazes for functional ware.
+美國、歐盟、英國和澳洲的規定，限制的是燒成後的作品溶出的鉛和鎘，而不是釉裡含有什麼。「無鉛」去除了一項危害，但「無鉛」不是食品安全的評級。其他氧化物也會溶出：Glazy 警告，含鋇量高的釉「可能溶出，且一般不能安全盛裝食物」；Digitalfire 說銅「可能使釉容易溶出；請測試」；Glazy 也不再建議在實用器上使用含鉛的釉。
 
-A **liner glaze** is a stable, usually clear or white glaze for surfaces that touch food. In our view, one with no colorant, barium, lead or lithium, that melts fully, does not craze and wears well, is the lower-risk choice. Lower risk is not proof.
+**內層釉**{{en: liner glaze}}是用在接觸食物的表面、穩定的釉，通常是透明或白色。在我們看來，不含呈色劑、鋇、鉛或鋰，完全熔化、不開片且耐磨損的釉，是風險較低的選擇。風險較低不等於證明安全。
 
-**Limit formulas** (Digitalfire prefers **target formulas**) give typical unity-formula ranges for stable glazes at a cone: Digitalfire's cone 6 targets put alumina at 0.285–0.64 and silica at 2.4–4.7. They guide you toward sound chemistry but prove nothing; Digitalfire avoids the word "limit" because it suggests glazes inside the ranges "are somehow safe". Glazecalc's tools for changing a recipe say when the new one goes past a recommended limit, such as a lot of boron at cone 6, and what the glaze will likely do.
+**界限式**{{en: limit formula}}（Digitalfire 偏好稱為**目標式**）給出某個測溫錐號下穩定的釉的典型塞格式範圍：Digitalfire 的 Orton 6 號測溫錐目標式，把氧化鋁定在 0.285–0.64，二氧化矽定在 2.4–4.7。這些範圍引導您朝向合理的化學組成，但不能證明什麼；Digitalfire 避免使用「界限」一詞，因為這個詞暗示範圍內的釉「在某種程度上是安全的」。Glazecalc 用來修改配方的工具，會在新配方超出建議的界限時告訴您，例如在 6 號測溫錐時硼太多，以及釉可能出現什麼表現。
 
-The legal limits differ by country. The table shows those where you live, in the law's own units; choose another country to compare.
+各國的法定限值不同。下表顯示您所在地區的限值，使用法律自己的單位；選擇其他國家可以比較。
 
 ::food-limits
 
-In the US, decorative ceramic ware that looks usable for food is treated as food ware unless it carries a stick-on label and a permanent notice molded or fired onto its base, such as "Not for Food Use. May Poison Food", or has a hole through the food surface. The EU sets lead and cadmium limits in Directive 84/500/EEC, and the UK keeps the same figures in its own law. From 29 May 2026 the Netherlands, Belgium and Luxembourg allow about 130 to 150 times less lead, and about 15 times less cadmium. Australia sets limits for imported ware; we found no official limit for ware made in Australia or New Zealand.
+在美國，看起來可以盛裝食物的裝飾性陶瓷器物會被視為食品用器物，除非同時附有貼紙標籤，並在底部壓印或燒上永久標示，例如「Not for Food Use. May Poison Food」（非食品用，可能使食物有毒），或是在盛裝食物的表面開一個貫穿的洞。歐盟在歐盟指令 84/500/EEC（與食品接觸的陶瓷製品）中訂出鉛和鎘的限值，英國在自己的法律中保留相同的數值。從 2026年5月29日起，荷蘭、比利時和盧森堡的鉛限值約嚴格 130 到 150 倍，鎘限值約嚴格 15 倍。澳洲對進口的器物訂有限值；我們沒有找到澳洲或紐西蘭製造的器物的官方限值。
 
-### Testing
+### 檢測
 
-The FDA says home swab kits can show leachable lead, but Ceramics New Zealand warns that test pens are not designed for ceramics and give false positives. Treat a positive as a reason to stop using the piece, and a negative as proving nothing. A laboratory leach test of the fired piece (ASTM C738 in the US; EN 1388 or ISO 6486 in Europe) is the real answer.
+美國 FDA 說，家用的擦拭式檢測套組能顯示可溶出的鉛，但 Ceramics New Zealand 警告，檢測筆不是為陶瓷設計的，會出現偽陽性。檢測呈陽性，就當作停止使用該作品的理由；呈陰性，則什麼都不能證明。真正的答案是對燒成的作品做實驗室**溶出試驗**{{en: leach test}}（美國為 ASTM C738；歐洲為 EN 1388 或 ISO 6486）。
 
 > [!WARNING]
-> "Food safe" means this glaze, on this clay, fired to this cone in this kiln and applied this way, releases less than the legal limits. Glazecalc can help you build a stable glaze, and **Replace lead** can rebuild an old lead recipe without lead, but no calculator can certify a pot. Only a test of the fired piece can.
+> 「可安全盛裝食物」的意思是：這種釉，用在這種黏土上，以這種方式上釉，在這個窯裡燒到這個測溫錐號，溶出量低於法定限值。Glazecalc 能幫助您調出穩定的釉，而**取代鉛**可以把舊的含鉛釉方重新調成無鉛的，但沒有任何計算工具能為一件作品出具認證。只有對燒成後的作品進行試驗才能做到。
 
 ## 比重與施釉 {#application}
 
@@ -298,171 +298,171 @@ The FDA says home swab kits can show leachable lead, but Ceramics New Zealand wa
 
 每一座窯，包括電窯，都會產生煙氣，所以要讓窯排氣。[安全調配與通風](/guides/safe-mixing)說明了做法。
 
-## Glossary {#glossary lang=en}
+## 詞彙表 {#glossary}
 
-Additive
-: A colorant, opacifier or suspender added on top of a recipe's 100.
+添加物（additive）
+: 加在釉方 100 之外的呈色劑、乳濁劑或懸浮劑。
 
-Alumina (Al₂O₃)
-: The main stabilizer: stops running and adds hardness. From clays and feldspars.
+氧化鋁（alumina，Al₂O₃）
+: 主要的安定劑：防止流釉，並增加硬度。來自黏土和長石。
 
-Ball clay
-: A plastic clay with more iron and organic matter than kaolin.
+球狀黏土（ball clay）
+: 可塑性高的黏土，含的鐵和有機物比高嶺土多。
 
-Batch recipe
-: A glaze's raw materials by weight, usually adding up to 100.
+釉方（batch recipe）
+: 一種釉的原料重量，通常合計為 100。
 
-Bentonite
-: A very fine clay added at 1–3% to keep glaze from settling.
+皂土（bentonite）
+: 加入 1–3% 的極細黏土，防止釉漿沉澱。
 
-Bisque (UK: biscuit)
-: The first, lower firing, usually cone 08–04 (most often 06–04), leaving ware strong but porous.
+素燒（bisque；英國：biscuit）
+: 第一次、溫度較低的燒成，通常為 Orton 08–04 號測溫錐（最常見的是 06–04 號），讓作品結實但仍有孔隙。
 
-Boron (B₂O₃)
-: Formally a glass former but used as a flux; essential from cone 06 to cone 6.
+硼（boron，B₂O₃）
+: 正式歸類為玻璃形成劑，但當助熔劑使用；從 Orton 06 號到 6 號測溫錐不可或缺。
 
-CMC gum
-: A cellulose gum that helps glaze brush on and stick; it burns away.
+CMC 黏劑（CMC gum）
+: 纖維素膠，幫助釉刷得上去並附著；燒成時會燒掉。
 
-Colorant and stain
-: A metal oxide or carbonate that colors glaze; a stain is a factory-made, more stable colorant.
+呈色劑與色料（colorant, stain）
+: 使釉呈色的金屬氧化物或碳酸鹽；色料是工廠製造、更穩定的呈色劑。
 
-Cone
-: A calibrated ceramic pyramid that bends at a set heatwork. A witness cone shows what the pots received.
+測溫錐（cone）
+: 一種校準過的陶瓷小角錐，在特定熱功時彎倒。見證錐顯示作品實際受到的熱功。
 
-Crawling
-: Glaze pulling back into beads in firing, leaving bare clay.
+縮釉（crawling）
+: 釉在燒成時向後縮成珠狀，露出沒有釉的黏土。
 
-Crazing
-: Fine cracks in a glaze that shrinks more than its body; crackle when wanted.
+開片（crazing）
+: 釉的收縮比坯體多而出現的細小裂紋；刻意做的稱為冰裂紋。
 
-Devitrification
-: Crystals growing out of the glass early in cooling, where they are not wanted.
+失透（devitrification）
+: 降溫初期玻璃中長出結晶，出現在不需要結晶的地方。
 
-Dunting
-: Cracks in a pot from cooling or heating stress, often at quartz inversion, {{1063 °F; 573 °C}}.
+冷裂（dunting）
+: 作品因冷卻或加熱的應力而裂開，常發生在石英相變點 {{1063 °F; 573 °C}}。
 
-Earthenware
-: A low-fire body (about cone 06–02) that stays porous.
+陶器（earthenware）
+: 低溫坯體（約 Orton 06–02 號測溫錐），仍有孔隙。
 
-Feldspar
-: A mineral supplying alkali flux with alumina and silica: potash, soda or nepheline syenite.
+長石（feldspar）
+: 提供鹼金屬助熔劑，並帶有氧化鋁和二氧化矽的礦物：鉀長石、鈉長石或霞石正長石。
 
-Flocculant and deflocculant
-: Additives that gel a slurry (Epsom salts, vinegar) or thin it (sodium silicate, Darvan).
+絮凝劑與解膠劑（flocculant, deflocculant）
+: 使釉漿膠化（瀉鹽、醋）或變稀（矽酸鈉、Darvan）的添加物。
 
-Flux
-: An oxide that lowers the melting temperature of silica.
+助熔劑（flux）
+: 降低二氧化矽熔化溫度的氧化物。
 
-Food safe
-: In law, releasing less lead and cadmium than the limits in an acid test. Not the same as lead-free.
+可安全盛裝食物（food safe）
+: 在法律上，指在酸液試驗中溶出的鉛和鎘低於限值。不等於無鉛。
 
-Frit
-: Factory-made glass, melted, quenched and ground, that makes soluble or toxic oxides insoluble.
+熔塊（frit）
+: 工廠製造的玻璃，熔化、驟冷、磨成粉，使可溶或有毒的氧化物變得不溶。
 
-Glass former
-: The oxide that builds the glass, usually silica.
+玻璃形成劑（glass former）
+: 構成玻璃的氧化物，通常是二氧化矽。
 
-Glaze
-: A coat of glass that melts in firing to seal and decorate a pot.
+釉藥（glaze）
+: 在燒成時熔化、用來封住並裝飾作品的一層玻璃。
 
-Glaze firing (UK: glost firing)
-: The firing that melts the glaze.
+釉燒（glaze firing；英國：glost firing）
+: 讓釉熔化的燒成。
 
-Glaze fit
-: How well glaze and body expansion match; a good fit leaves the glaze slightly compressed.
+坯釉適配（glaze fit）
+: 釉與坯體的膨脹吻合的程度；適配良好時，釉層受到輕微壓縮。
 
-Gloss, satin and matte
-: Reflective and smooth; a subdued sheen; dull.
+亮面、半霧面與霧面（gloss, satin, matte）
+: 反光且平滑；帶有柔和的光澤；無光。
 
-Greenware
-: Unfired ware: leather-hard when stiff but damp, bone dry when no free water is left.
+生坯（greenware）
+: 未燒的作品：硬但仍潮濕時為半乾，不再有自由水時為全乾。
 
-Heatwork
-: The combined effect of temperature and time in a kiln; what cones measure.
+熱功（heatwork）
+: 窯內溫度與時間合起來的效果；測溫錐量的就是熱功。
 
-Kaolin (UK: china clay)
-: A pure white clay supplying alumina and silica; keeps glaze suspended. Australia: Eckalite.
+高嶺土（kaolin；英國：china clay）
+: 純白的黏土，提供氧化鋁和二氧化矽；讓釉保持懸浮。澳洲：Eckalite。
 
-Kiln wash
-: A heat-resisting coating that protects kiln shelves from drips.
+棚板隔離劑（kiln wash）
+: 保護棚板不被滴落的釉弄髒的耐熱塗層。
 
-Leaching
-: Metals dissolving out of a fired glaze into food or drink.
+溶出（leaching）
+: 金屬從燒成的釉中溶解到食物或飲料裡。
 
-Limit formula (target formula)
-: Typical unity-formula ranges for stable glazes at a cone; a guide, not a guarantee.
+界限式（目標式；limit formula, target formula）
+: 某個測溫錐號下穩定的釉的典型塞格式範圍；是指引，不是保證。
 
-Line blend
-: Tests stepping one ingredient between two amounts. A triaxial blend varies three on a grid.
+直線配比試驗（line blend）
+: 把一種成分在兩個用量之間逐步變化的試驗。三角座標試釉（triaxial blend）則在格狀圖上改變三種成分。
 
-Liner glaze
-: A stable, usually clear or white glaze for surfaces that touch food.
+內層釉（liner glaze）
+: 用在接觸食物的表面、穩定的釉，通常是透明或白色。
 
-LOI (loss on ignition)
-: Weight lost in firing as water, carbon dioxide, organic matter or sulfur.
+燒失量（LOI，loss on ignition）
+: 燒成時因水、二氧化碳、有機物或硫離開而損失的重量。
 
-Once-firing (single firing)
-: Glazing unfired ware and firing it only once.
+一次燒成（once-firing, single firing）
+: 在未燒的作品上釉，只燒一次。
 
-Opacifier
-: A material, such as zircon, tin oxide or titanium dioxide, that makes glaze opaque.
+乳濁劑（opacifier）
+: 使釉不透明的原料，例如矽酸鋯、氧化錫或氧化鈦。
 
-Oxidation and reduction
-: Firing with plenty of oxygen (electric kilns), or with oxygen restricted (usually gas or wood).
+氧化燒成與還原燒成（oxidation, reduction）
+: 氧氣充足的燒成（電窯），或限制氧氣的燒成（通常是瓦斯窯或柴窯）。
 
-Oxide
-: A compound of an element with oxygen; an oxide analysis lists them by weight percent.
+氧化物（oxide）
+: 元素與氧的化合物；氧化物分析以重量百分比列出各種氧化物。
 
-Pinholing and blistering
-: Small holes, or sharp-edged craters, where gas escaped through the melt.
+針孔與起泡（pinholing, blistering）
+: 氣體從熔融的釉中逸出而留下的小孔，或邊緣尖銳的坑洞。
 
-Porcelain
-: A white, kaolin-rich, high-fire body, often translucent.
+瓷器（porcelain）
+: 白色、富含高嶺土的高溫坯體，常有透光性。
 
-R₂O and RO
-: The alkali fluxes (Na₂O, K₂O, Li₂O) and alkaline-earth fluxes (CaO, MgO, BaO, SrO, with ZnO).
+R₂O 與 RO
+: 鹼金屬助熔劑（Na₂O、K₂O、Li₂O）和鹼土金屬助熔劑（CaO、MgO、BaO、SrO，另加 ZnO）。
 
-Shivering
-: Glaze flaking off edges because it is over-compressed; a hazard on functional ware.
+跳釉（shivering）
+: 釉因受到過度壓縮而從邊緣剝落；在實用器上是危害。
 
-Silica (SiO₂)
-: The glass former; also called flint or quartz.
+二氧化矽（silica，SiO₂）
+: 玻璃形成劑；也稱為燧石或石英。
 
-Silica to alumina ratio
-: Silica divided by alumina in the unity formula: higher tends to gloss, lower to matte.
+矽鋁比（silica to alumina ratio）
+: 塞格式中二氧化矽除以氧化鋁：愈高愈傾向亮面，愈低愈傾向霧面。
 
-Slip and engobe
-: Clay in water; an engobe is a slip-like coating with more non-clay material.
+泥漿與化妝土（slip, engobe）
+: 水中的黏土；化妝土是類似泥漿的塗層，含較多非黏土的原料。
 
-Specific gravity (SG)
-: A slurry's weight compared with the same volume of water. Older UK: pint weight.
+比重（specific gravity, SG）
+: 釉漿的重量與同體積的水相比。英國較舊的說法：品脫重。
 
-Stabilizer
-: An oxide, mainly alumina, that stiffens the melt and adds durability.
+安定劑（stabilizer）
+: 使熔融的釉變黏稠並增加耐久性的氧化物，主要是氧化鋁。
 
-Stoneware
-: A mid- to high-fire body (about cone 5–10) that becomes vitreous or nearly so.
+炻器（stoneware）
+: 中溫到高溫坯體（約 Orton 5–10 號測溫錐），會玻化或接近玻化。
 
-Thixotropy
-: Flowing when stirred, setting into a soft gel when still.
+觸變性（thixotropy）
+: 攪拌時會流動，靜置時凝成柔軟的凝膠。
 
-Underglaze
-: Colored slip or oxide decoration, usually under a clear glaze.
+釉下彩（underglaze）
+: 有顏色的化妝土或氧化物裝飾，通常在透明釉底下。
 
-Unity molecular formula (UMF, Seger formula)
-: A glaze's oxides as molecule counts, scaled so the fluxes add up to 1.
+塞格式（unity molecular formula, UMF, Seger formula）
+: 以分子數表示的釉的氧化物，換算到助熔劑合計為 1。
 
-Vitrification
-: A body becoming glassy and non-porous in firing.
+玻化（vitrification）
+: 坯體在燒成中變得像玻璃、不吸水。
 
-Wax resist
-: Wax painted where glaze must not go, usually the foot.
+撥水劑（防釉劑；wax resist）
+: 塗在不該上釉處（通常是底足）的蠟。
 
-Whiting
-: Calcium carbonate, the main calcium flux; loses over 40% of its weight in firing. German: Kreide.
+碳酸鈣（whiting）
+: 即碳酸鈣，主要的鈣系助熔劑；燒成時失去超過 40% 的重量。德文：Kreide。
 
-## Sources {#sources lang=en}
+## 資料來源 {#sources}
 
 - [Glazy Help: Glaze](https://help.glazy.org/concepts/glaze)
 - [Glazy Help: Oxides](https://help.glazy.org/concepts/oxides)

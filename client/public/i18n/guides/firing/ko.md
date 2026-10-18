@@ -370,83 +370,83 @@ Label: SK 콘 온도표
 
 :::
 
-## Bisque firing {#bisque lang=en}
+## 초벌 소성 {#bisque}
 
-The **bisque** firing (biscuit in the UK) is the first, lower firing that turns dry clay into hard, porous ware ready to glaze. It is usually fired to cone 06–04, {{1828–1945 °F; 998–1063 °C}} on Orton's chart; UK potters often fire to around {{1000 °C; 1832 °F}}, near cone 06. The bisque should stay porous, "generally more than 15%" (Digitalfire), so it soaks water out of the glaze. Too soft a bisque takes glaze on too thick, which then cracks and **crawls** (pulls back into islands, leaving bare clay). Under-fired bisque also "continues to shrink during glaze firing", which spoils the glaze fit. Loading is forgiving: pieces may touch, lids can be fired on their pots, and bowls go rim to rim rather than nested.
+**초벌**{{en: bisque}}(영국에서는 biscuit)은 마른 점토를 단단하고 흡수성이 있는, 시유할 수 있는 기물로 바꾸는 첫 번째 저온 소성입니다. 보통 오튼 콘 06~04로 소성하며, Orton의 온도표로는 {{1828–1945 °F; 998–1063 °C}}입니다. 영국의 도예가는 오튼 콘 06에 가까운 약 {{1000 °C; 1832 °F}}로 소성하는 경우가 많습니다. 초벌은 유약의 물을 빨아들이도록 흡수성이 남아 있는 것이 좋으며, Digitalfire는 이를 “일반적으로 15% 초과”로 봅니다. 초벌이 너무 무르면 유약을 너무 두껍게 받아서 금이 가고 **말립니다**{{en: crawling}}(섬처럼 뭉치며 맨 점토가 드러남). 덜 구운 초벌은 또 “재벌 소성 중에도 계속 수축하여” 유약과 소지의 맞춤{{en: glaze fit}}을 해칩니다. 재임은 까다롭지 않습니다. 기물이 서로 닿아도 되고, 뚜껑을 기물에 얹은 채 소성할 수 있으며, 그릇은 포개지 않고 입구끼리 맞대어 놓습니다.
 
-### Why the early part goes slowly
+### 초반이 느린 이유
 
-Water expands more than a thousandfold as it turns to steam, so damp ware has to be dried slowly. L&L and Orton advise that "Special care should be taken below 1500°F (815°C) to heat the body evenly", and that carbon must be burned out before about {{1200 °F; 650 °C}}. Above {{1500 °F; 816 °C}} the kiln can climb faster.
+물은 수증기가 될 때 천 배 넘게 팽창하므로, 젖은 기물은 천천히 말려야 합니다. L&L과 Orton은 “1500°F(815°C) 아래에서는 소지가 고르게 가열되도록 특별히 주의해야 한다”고 하며, 탄소는 약 {{1200 °F; 650 °C}} 전에 태워 없애야 한다고 조언합니다. {{1500 °F; 816 °C}} 초과에서는 가마를 더 빨리 올려도 됩니다.
 
-Table: What happens as a bisque heats
-Label: What happens in a bisque
+Table: 초벌이 가열되면서 일어나는 일
+Label: 초벌에서 일어나는 일
 
-|                        Temperature | What happens                                                |
-| ---------------------------------: | ----------------------------------------------------------- |
-|         {{300–500 °F; 149–260 °C}} | Binders burn off                                            |
-|           About {{450 °F; 232 °C}} | Organic matter starts to burn                               |
-|           Up to {{700 °F; 371 °C}} | Water keeps leaving the clay until above this temperature   |
-|        {{842–1022 °F; 450–550 °C}} | Chemically bound water leaves the clay                      |
-|                {{1063 °F; 573 °C}} | Quartz inversion: silica in the clay expands suddenly       |
-|          Above {{1112 °F; 600 °C}} | Sulfur burns out                                            |
-| Up to {{1200–1400 °F; 649–760 °C}} | Natural carbon burns off; this should finish below red heat |
-|          Above {{1544 °F; 840 °C}} | Calcium carbonate breaks down                               |
+|                             온도 | 일어나는 일                                       |
+| -------------------------------: | ------------------------------------------------- |
+|       {{300–500 °F; 149–260 °C}} | 바인더가 타서 없어짐                              |
+|            약 {{450 °F; 232 °C}} | 유기물이 타기 시작함                              |
+|           {{700 °F; 371 °C}}까지 | 이 온도를 넘을 때까지 물이 계속 점토에서 빠져나감 |
+|      {{842–1022 °F; 450–550 °C}} | 화학적으로 결합한 물이 점토에서 빠져나감          |
+|              {{1063 °F; 573 °C}} | 석영 전이: 점토 속의 실리카가 갑자기 팽창함       |
+|         {{1112 °F; 600 °C}} 초과 | 황이 타서 없어짐                                  |
+| {{1200–1400 °F; 649–760 °C}}까지 | 천연 탄소가 타서 없어짐. 적열 전에 끝나야 함      |
+|         {{1544 °F; 840 °C}} 초과 | 탄산칼슘이 분해됨                                 |
 
-**Quartz inversion** is the sudden change in size of the silica in clay at {{1063 °F; 573 °C}}: it expands on the way up and contracts on the way down. L&L's Slow Bisque slows through it, between {{1000 °F; 538 °C}} and {{1100 °F; 593 °C}}. Digitalfire found this "unnecessary for bisque firings", and Ceramics Monthly says it mainly matters when cooling dense ware. Slowing costs little, so our suggestion is to keep it for thick pieces.
+**석영 전이**{{en: quartz inversion}}는 점토 속 실리카가 {{1063 °F; 573 °C}}에서 갑자기 크기가 변하는 현상입니다. 올라갈 때는 팽창하고 내려올 때는 수축합니다. L&L의 Slow Bisque는 {{1000 °F; 538 °C}}에서 {{1100 °F; 593 °C}} 사이에서 속도를 늦추어 이를 지나갑니다. Digitalfire는 이것이 “초벌 소성에는 불필요하다”고 보았고, Ceramics Monthly는 치밀한 기물을 식힐 때 주로 문제가 된다고 말합니다. 속도를 늦추는 데 드는 비용은 작으므로, 두꺼운 기물에만 쓰라는 것이 저희의 제안입니다.
 
-### Candling: drying in the kiln
+### 예열: 가마 안에서 말리기
 
-**Candling** means holding the kiln at a low temperature, with the lid propped or the vent running, until the last moisture has left the ware. Sources disagree about the temperature:
+**예열**{{en: candling}}은 뚜껑을 살짝 열어 두거나 배기 장치를 켠 채, 기물에서 마지막 수분이 빠져나갈 때까지 가마를 저온에 유지하는 것입니다. 출처마다 온도가 다릅니다.
 
-Table: Candling temperatures
+Table: 예열 온도
 
-| Source           | Candling                                                                                 |
-| ---------------- | ---------------------------------------------------------------------------------------- |
-| Ceramics Monthly | Just short of boiling; for example, climbing at {{25 °F/h; 14 °C/h}} for 4–6 hours       |
-| L&L preheat      | Hold at {{150–200 °F; 66–93 °C}}                                                         |
-| Digitalfire      | Hold at {{250 °F; 121 °C}}, because holding below boiling "does not expel all the water" |
+| 출처             | 예열                                                                                   |
+| ---------------- | -------------------------------------------------------------------------------------- |
+| Ceramics Monthly | 끓는점 바로 아래까지, 예를 들어 {{25 °F/h; 14 °C/h}}의 속도로 4~6시간 올림             |
+| L&L 예열         | {{150–200 °F; 66–93 °C}}에서 유지                                                      |
+| Digitalfire      | {{250 °F; 121 °C}}에서 유지. 끓는점 아래에서 유지하면 “물을 다 내보내지는 못하기” 때문 |
 
 > [!NOTE]
-> Our starting point: climb slowly to no more than about {{250 °F; 121 °C}}, and hold until a mirror at the vent stays clear. Hold overnight for thick or damp ware.
+> 저희의 출발점은 다음과 같습니다. 약 {{250 °F; 121 °C}} 이하까지 천천히 올리고, 배기구의 거울이 흐려지지 않을 때까지 유지하세요. 두껍거나 젖은 기물은 밤새 유지하세요.
 
-The **mirror test**: hold a room-temperature mirror at a vent hole or at the gap under a propped lid. If it fogs, water is still leaving; wait, then test again.
+**거울 시험**: 실온의 거울을 배기구나 살짝 열어 둔 뚜껑 아래의 틈에 대세요. 거울이 흐려지면 아직 물이 빠져나오고 있는 것이므로, 기다린 뒤에 다시 시험하세요.
 
-### Controller schedules
+### 컨트롤러 스케줄
 
-A **controller** is an electronic unit that fires the kiln through a **schedule**: a list of **segments**, each a rate of climb (the **ramp**), a target temperature and an optional hold. Below are two presets from L&L's DynaTrol and Bartlett controllers, and a schedule published by Digitalfire. "Peak" is the controller's own temperature for the cone you choose: for cone 04 it is {{1926 °F; 1052 °C}}, and for cone 06, {{1819 °F; 993 °C}}.
+**컨트롤러**는 **스케줄**에 따라 가마를 소성하는 전자 장치입니다. 스케줄은 **세그먼트**의 목록이며, 각 세그먼트는 승온 속도(**램프**{{en: ramp}}), 목표 온도, 선택 사항인 유지로 이루어집니다. 아래는 L&L의 DynaTrol과 Bartlett 컨트롤러의 프리셋 두 가지, 그리고 Digitalfire가 공개한 스케줄입니다. “최고 온도”는 선택한 콘에 대해 컨트롤러가 정해 둔 온도입니다. 오튼 콘 04는 {{1926 °F; 1052 °C}}, 오튼 콘 06은 {{1819 °F; 993 °C}}입니다.
 
-Table: L&L and Bartlett bisque presets
-Label: Bisque presets
+Table: L&L과 Bartlett의 초벌 프리셋
+Label: 초벌 프리셋
 
-| Segment                  |                                                           Climb to |            Slow Bisque |            Fast Bisque |
-| ------------------------ | -----------------------------------------------------------------: | ---------------------: | ---------------------: |
-| 1                        |                                                 {{250 °F; 121 °C}} |   {{80 °F/h; 44 °C/h}} |  {{120 °F/h; 67 °C/h}} |
-| 2                        |                                                {{1000 °F; 538 °C}} | {{200 °F/h; 111 °C/h}} | {{300 °F/h; 167 °C/h}} |
-| 3                        |                                                {{1100 °F; 593 °C}} |  {{100 °F/h; 56 °C/h}} |  {{150 °F/h; 83 °C/h}} |
-| 4                        | {{250 °F; 139 °C}} below the peak: {{1676 °F; 913 °C}} for cone 04 | {{180 °F/h; 100 °C/h}} | {{180 °F/h; 100 °C/h}} |
-| 5                        |                                                           The peak |   {{80 °F/h; 44 °C/h}} |  {{108 °F/h; 60 °C/h}} |
-| Heating time, empty kiln |                                                                    | About 13 hours or more |     About 10–11½ hours |
+| 세그먼트           |                                                                    올릴 온도 |            Slow Bisque |            Fast Bisque |
+| ------------------ | ---------------------------------------------------------------------------: | ---------------------: | ---------------------: |
+| 1                  |                                                           {{250 °F; 121 °C}} |   {{80 °F/h; 44 °C/h}} |  {{120 °F/h; 67 °C/h}} |
+| 2                  |                                                          {{1000 °F; 538 °C}} | {{200 °F/h; 111 °C/h}} | {{300 °F/h; 167 °C/h}} |
+| 3                  |                                                          {{1100 °F; 593 °C}} |  {{100 °F/h; 56 °C/h}} |  {{150 °F/h; 83 °C/h}} |
+| 4                  | 최고 온도보다 {{250 °F; 139 °C}} 낮은 온도: 오튼 콘 04는 {{1676 °F; 913 °C}} | {{180 °F/h; 100 °C/h}} | {{180 °F/h; 100 °C/h}} |
+| 5                  |                                                                    최고 온도 |   {{80 °F/h; 44 °C/h}} |  {{108 °F/h; 60 °C/h}} |
+| 가열 시간(빈 가마) |                                                                              |         약 13시간 이상 |          약 10~11½시간 |
 
-L&L's times are "for the fastest possible empty kilns"; a loaded kiln can take as much as four times longer, and any hold you add is extra heatwork the presets do not allow for. L&L advises Slow Bisque, with a preheat of 2–3 hours or longer, for large or damp pieces, and warns against fast firing, which "can cause defects like pinholes, cracking, and insufficient burnout".
+L&L의 시간은 “가능한 가장 빠른 빈 가마 기준”입니다. 기물을 재임한 가마는 최대 네 배까지 더 걸릴 수 있고, 추가한 유지는 프리셋이 고려하지 않은 소성 정도를 더합니다. L&L은 크거나 젖은 기물에는 예열을 2~3시간 이상 하는 Slow Bisque를 권하며, “핀홀, 균열, 불충분한 탄소 제거 같은 결함을 일으킬 수 있는” 빠른 소성을 경계합니다.
 
-Table: Digitalfire BQ1000 bisque, to about cone 06
+Table: Digitalfire BQ1000 초벌, 오튼 콘 06 정도까지
 Label: Digitalfire BQ1000
 
-| Step |                   Rate |               Target | Hold                                      |
-| ---- | ---------------------: | -------------------: | ----------------------------------------- |
-| 1    | {{306 °F/h; 170 °C/h}} |   {{248 °F; 120 °C}} | 60 minutes; up to 10 hours for heavy ware |
-| 2    | {{306 °F/h; 170 °C/h}} |  {{1733 °F; 945 °C}} | None                                      |
-| 3    |  {{108 °F/h; 60 °C/h}} | {{1832 °F; 1000 °C}} | 15 minutes                                |
+| 단계 |              승온 속도 |            목표 온도 | 유지                            |
+| ---- | ---------------------: | -------------------: | ------------------------------- |
+| 1    | {{306 °F/h; 170 °C/h}} |   {{248 °F; 120 °C}} | 60분, 두꺼운 기물은 최대 10시간 |
+| 2    | {{306 °F/h; 170 °C/h}} |  {{1733 °F; 945 °C}} | 없음                            |
+| 3    |  {{108 °F/h; 60 °C/h}} | {{1832 °F; 1000 °C}} | 15분                            |
 
-BQ1000 takes about 7 hours 44 minutes. Its author finds up to {{500 °F/h; 278 °C/h}} fine for thin, dry ware, and slows the last step to even out the temperature through the load.
+BQ1000은 약 7시간 44분이 걸립니다. 작성자는 얇고 마른 기물이라면 최대 {{500 °F/h; 278 °C/h}}도 괜찮다고 보며, 마지막 단계는 재임한 기물 전체의 온도를 고르게 하려고 속도를 늦춥니다.
 
-### Controller cones and Orton's chart
+### 컨트롤러 콘과 Orton의 온도표
 
-L&L and Bartlett controllers use {{1926 °F; 1052 °C}} for cone 04 and {{1819 °F; 993 °C}} for cone 06, a little below Orton's {{1945 °F; 1063 °C}} and {{1828 °F; 998 °C}}; they agree at cone 6 and cone 10. Witness cones settle the difference: if they disagree with the controller, correct it with the cone offset.
+L&L과 Bartlett 컨트롤러는 오튼 콘 04에 {{1926 °F; 1052 °C}}, 오튼 콘 06에 {{1819 °F; 993 °C}}를 쓰며, 이는 Orton의 {{1945 °F; 1063 °C}}와 {{1828 °F; 998 °C}}보다 조금 낮습니다. 오튼 콘 6과 오튼 콘 10에서는 둘이 일치합니다. 차이는 확인용 콘이 가려 줍니다. 컨트롤러와 맞지 않으면 콘 오프셋으로 컨트롤러를 보정하세요.
 
-### On a manual kiln
+### 수동 가마의 경우
 
-A manual kiln follows the same plan by hand: dry slowly with the lid propped and the peepholes open, step the switches up from Low to Medium to High, and let the sitter end the firing. The published procedures are under Manual kilns in detail, below.
+수동 가마도 같은 계획을 손으로 따릅니다. 뚜껑을 살짝 열고 불구멍을 연 채로 천천히 말리고, 스위치를 약에서 중, 강으로 단계적으로 올리고, 소성의 끝은 킬른 시터에 맡깁니다. 공개된 순서는 아래의 “수동 가마 자세히”에 있습니다.
 
 ## 재벌 소성 {#glaze}
 

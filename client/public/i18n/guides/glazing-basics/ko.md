@@ -18,40 +18,40 @@ lead: 유약이 무엇으로 이루어져 있는지, 가마에서 어떻게 유�
 > [!NOTE]
 > 이렇게 기억해 두면 좋습니다. 실리카는 유리이고, 융제는 그 유리가 사용하는 가마로 낼 수 있는 온도에서 녹게 해 주며, 알루미나는 유리를 되직하게 만들어 바른 자리에 머물게 합니다.
 
-## Clay, coatings and the two firings {#clay-and-firings lang=en}
+## 점토, 표면에 바르는 재료, 두 번의 소성 {#clay-and-firings}
 
-### Clay bodies
+### 소지의 종류
 
-The **clay body** is the clay a pot is made of. There are three main kinds.
+**소지**{{en: clay body}}는 기물을 만드는 점토입니다. 크게 세 가지가 있습니다.
 
-- **Earthenware**: a low-fire body, about cone 06–02, that stays porous. Often red or buff, it needs a glaze to hold water.
-- **Stoneware**: a mid- to high-fire body, about cone 5–10, that becomes vitreous or nearly so.
-- **Porcelain**: a white, high-fire body rich in kaolin, often translucent.
+- **도기**{{en: earthenware}}: 대략 오튼 콘 06~02의 저화도 소지로, 흡수성이 남아 있습니다. 붉은색이나 연한 황갈색인 경우가 많고, 물을 담으려면 유약이 필요합니다.
+- **석기**{{en: stoneware}}: 대략 오튼 콘 5~10의 중화도에서 고화도 소지로, 유리질이 되거나 거의 그렇게 됩니다.
+- **자기**: 고령토{{en: kaolin}}가 많은 흰색 고화도 소지로, 빛이 비치는 경우가 많습니다.
 
-**Vitreous** means glassy and non-porous; **vitrification** is a body becoming so as it fires. UK potters often draw the line by temperature instead: stoneware is fired above {{2192 °F; 1200 °C}}, earthenware below. Mid fire, cone 5–6, falls just either side of that line.
+**유리질**이란 유리처럼 치밀하고 물을 흡수하지 않는다는 뜻이며, **유리화**는 소지가 소성되면서 그렇게 되는 것입니다. 영국 도예가들은 온도로 구분하는 경우가 많습니다. 석기는 {{2192 °F; 1200 °C}}보다 높은 온도에서 소성하고, 도기는 그보다 낮은 온도에서 소성합니다. 중화도인 오튼 콘 5~6은 이 경계선의 바로 양쪽에 걸쳐 있습니다.
 
-### Coatings and drying
+### 표면에 바르는 재료와 건조
 
-**Slip** is clay suspended in water, for casting, joining or decorating. An **engobe** is a slip-like coating, often colored, with more non-clay materials. An **underglaze** is colored slip or oxide decoration, usually covered with a clear glaze.
+**슬립**은 물에 푼 점토로, 주입 성형, 접합, 장식에 씁니다. **화장토**는 슬립과 비슷한 코팅으로, 색을 낸 것이 많고 점토가 아닌 재료가 더 많이 들어 있습니다. **언더글레이즈**는 색을 낸 슬립이나 산화물로 한 장식으로, 보통 투명유를 덮어 씁니다.
 
-Unfired ware is **greenware** (sources disagree on whether the word covers all unfired ware or only dry ware). As it dries it becomes **leather-hard**, stiff but slightly damp, the stage for trimming and handles; then **bone dry**, with no free water left, very fragile and ready to fire.
+소성하지 않은 기물을 **소성 전 기물**{{en: greenware}}이라고 합니다(이 말이 소성하지 않은 모든 기물을 가리키는지, 마른 기물만 가리키는지는 자료마다 다릅니다). 마르면서 먼저 **반건조** 상태가 되는데, 단단하지만 약간 축축한 이 단계에서 굽깎기와 손잡이 붙이기를 합니다. 그다음이 **완전 건조**로, 남은 물기가 없어 매우 부서지기 쉬우며 소성할 수 있는 상태입니다.
 
-### The two firings
+### 두 번의 소성
 
-The first, lower firing is the **bisque** (UK: **biscuit**), usually cone 08–04 (most often 06–04), about {{1728–1945 °F; 942–1063 °C}}. It leaves ware strong but porous. Digitalfire, a glaze reference site, suggests generally more than 15% porosity, so the bisque draws water out of the glaze as it goes on. A soft bisque (cone 08–06) is more porous; a hard bisque (often cone 04) is sturdier but takes glaze less readily.
+첫 번째로 더 낮은 온도에서 하는 소성이 **초벌**{{en: bisque}}(영국: biscuit)이며, 보통 오튼 콘 08~04(가장 흔하게는 06~04), 대략 {{1728–1945 °F; 942–1063 °C}}입니다. 초벌을 하면 기물은 단단해지지만 흡수성이 남습니다. 유약 참고 사이트인 Digitalfire는 대체로 다공성(흡수율)이 15%를 넘기를 제안하며, 그래서 초벌한 기물은 유약을 입힐 때 유약에서 물을 빨아들입니다. 낮은 온도의 초벌(콘 08~06)은 흡수성이 더 크고, 높은 온도의 초벌(흔히 콘 04)은 더 튼튼하지만 유약이 덜 잘 입혀집니다.
 
-Table: How the bisque changes glazing (Digitalfire)
-Label: How the bisque changes glazing
+Table: 초벌이 시유에 미치는 영향(Digitalfire)
+Label: 초벌이 시유에 미치는 영향
 
-| Bisque                                  | What happens                                                    |
-| --------------------------------------- | --------------------------------------------------------------- |
-| Under-fired, very absorbent             | Glaze goes on too thick, then cracks and crawls                 |
-| Over-fired, dense                       | Dipping and drying take longer                                  |
-| Fired hotter, or held longer at the top | More gas burns off now, so less bubbles through the glaze later |
+| 초벌                                                 | 일어나는 일                                                                     |
+| ---------------------------------------------------- | ------------------------------------------------------------------------------- |
+| 덜 구워 흡수성이 매우 큼                             | 유약이 너무 두껍게 입혀지고, 이후 갈라지며 말립니다                             |
+| 지나치게 구워 치밀함                                 | 담금과 건조에 시간이 더 걸립니다                                                |
+| 더 높은 온도에서 굽거나 최고 온도에서 더 오래 유지함 | 가스가 이때 더 많이 빠져나가므로, 나중에 유약을 뚫고 올라오는 기포가 줄어듭니다 |
 
-Potclays, a UK supplier, describes biscuit firing to around {{1000 °C; 1832 °F}}, about cone 06. Reading these sources together, we suggest cone 06–04 for a first bisque: {{1828–1945 °F; 998–1063 °C}} at Orton's medium rate.
+영국의 공급업체 Potclays는 초벌 소성을 {{1000 °C; 1832 °F}} 안팎, 대략 오튼 콘 06까지로 설명합니다. 이 자료들을 종합해, 첫 초벌에는 콘 06~04를 제안합니다. Orton의 보통 승온 속도에서 {{1828–1945 °F; 998–1063 °C}}입니다.
 
-The **glaze firing** (British potters may say **glost** firing) melts the glaze and, for stoneware, matures the clay too. **Once-firing** glazes unfired ware and fires it just once. Digitalfire reports a production case where raw-glazed ware crawled on its rims until a bisque firing cured it, so begin with two firings. [Firing a basic kiln](/guides/firing) gives schedules for both.
+**재벌**{{en: glaze firing}}(영국 도예가들은 glost 소성이라고도 합니다)은 유약을 녹이고, 석기의 경우 점토도 알맞게 익힙니다. **단일 소성**{{en: once-firing}}은 소성하지 않은 기물에 시유하고 한 번만 굽는 방법입니다. Digitalfire는 초벌 없이 시유한 기물의 가장자리에서 유약이 말리다가 초벌 소성을 하자 해결된 생산 사례를 전하므로, 소성은 두 번으로 시작하세요. 《[기본 가마 소성](/guides/firing)》에 두 소성의 스케줄이 있습니다.
 
 ## 콘과 소성 정도 {#cones}
 
@@ -238,30 +238,30 @@ Label: 흔한 유약 결함
 | 유약 흐름                 | 유약이 선반으로 흘러내림                     | 알루미나가 너무 적음, 부어 시유한 자국이 겹치는 곳처럼 너무 두꺼움, 철이 많음                                  | 더 얇게 시유하세요. 알루미나를 더하세요. 유약을 굽에서 한참 위까지만 입히세요                                  |
 | 냉파{{en: dunting}}       | 냉각이나 가열 때문에 기물에 생기는 금        | 석영 전이{{en: quartz inversion}}({{1063 °F; 573 °C}})를 지나는 빠른 냉각, 고르지 않은 벽 두께, 맞지 않는 유약 | {{1063 °F; 573 °C}} 구간은 올라갈 때와 내려갈 때 모두 천천히 소성하세요. 벽 두께를 고르게 하세요               |
 
-## Food safety {#food-safety lang=en}
+## 식품 안전 {#food-safety}
 
-**Leaching** is metal dissolving out of a fired glaze into food or drink, and a glaze can look perfect and still do it. The legal tests soak the fired piece in an acid solution and measure the lead and cadmium that come out.
+**용출**{{en: leaching}}은 소성한 유약에서 금속이 음식이나 음료로 녹아 나오는 것이며, 유약이 완벽해 보여도 용출될 수 있습니다. 법적 시험은 소성한 기물을 산성 용액에 담가, 녹아 나온 납과 카드뮴의 양을 잽니다.
 
-### Lead-free is not the same as food-safe
+### 무연과 식품용 안전은 다릅니다
 
-The rules in the US, the EU, the UK and Australia limit the lead and cadmium a fired piece releases, not what the glaze contains. "Lead-free" removes one hazard; it is not a food-safety rating. Other oxides leach too: Glazy warns that high-barium glazes "can leach and are generally not food-safe", Digitalfire says copper "can make a glaze leachable; test it", and Glazy no longer advises lead glazes for functional ware.
+미국, EU, 영국, 호주의 규정은 유약에 들어 있는 양이 아니라 소성한 기물에서 나오는 납과 카드뮴의 양을 제한합니다. “무연”은 위험 하나를 없애 줄 뿐 식품 안전 등급이 아닙니다. 다른 산화물도 용출됩니다. Glazy는 바륨이 많은 유약이 “용출될 수 있고 대체로 식품용으로 안전하지 않다”고 경고하고, Digitalfire는 동이 “유약을 용출되기 쉽게 만들 수 있으니 시험하라”고 하며, Glazy는 더 이상 음식을 담는 기물에 납유약을 권하지 않습니다.
 
-A **liner glaze** is a stable, usually clear or white glaze for surfaces that touch food. In our view, one with no colorant, barium, lead or lithium, that melts fully, does not craze and wears well, is the lower-risk choice. Lower risk is not proof.
+**안쪽 면용 유약**{{en: liner glaze}}은 음식이 닿는 면에 쓰는 안정한 유약으로, 보통 투명하거나 흰색입니다. 저희 생각으로는 발색제, 바륨, 납, 리튬이 모두 없고, 완전히 녹고, 빙렬이 생기지 않고, 잘 닳지 않는 유약이 위험이 더 낮은 선택입니다. 위험이 낮다는 것이 안전하다는 증명은 아닙니다.
 
-**Limit formulas** (Digitalfire prefers **target formulas**) give typical unity-formula ranges for stable glazes at a cone: Digitalfire's cone 6 targets put alumina at 0.285–0.64 and silica at 2.4–4.7. They guide you toward sound chemistry but prove nothing; Digitalfire avoids the word "limit" because it suggests glazes inside the ranges "are somehow safe". Glazecalc's tools for changing a recipe say when the new one goes past a recommended limit, such as a lot of boron at cone 6, and what the glaze will likely do.
+**한계식**{{en: limit formula}}(Digitalfire는 **목표식**을 더 좋아합니다)은 어떤 콘에서 안정한 유약의 제게르식 범위를 대략 알려 줍니다. Digitalfire의 오튼 콘 6 목표는 알루미나 0.285~0.64, 실리카 2.4~4.7입니다. 한계식은 건전한 화학 쪽으로 이끌어 주지만 아무것도 증명하지는 않습니다. Digitalfire는 “한계”라는 말이 범위 안에 있는 유약은 “어쨌든 안전하다”는 인상을 주므로 쓰지 않습니다. Glazecalc에서 레시피를 바꿔 주는 도구는 새 레시피가 권장 한계를 넘을 때(예: 콘 6에서 붕소가 많을 때)와 유약이 어떻게 될 가능성이 높은지를 알려 줍니다.
 
-The legal limits differ by country. The table shows those where you live, in the law's own units; choose another country to compare.
+법적 한계는 나라마다 다릅니다. 아래 표는 사는 곳의 한계를 법령이 쓰는 단위 그대로 보여 주며, 다른 나라를 골라 비교할 수 있습니다.
 
 ::food-limits
 
-In the US, decorative ceramic ware that looks usable for food is treated as food ware unless it carries a stick-on label and a permanent notice molded or fired onto its base, such as "Not for Food Use. May Poison Food", or has a hole through the food surface. The EU sets lead and cadmium limits in Directive 84/500/EEC, and the UK keeps the same figures in its own law. From 29 May 2026 the Netherlands, Belgium and Luxembourg allow about 130 to 150 times less lead, and about 15 times less cadmium. Australia sets limits for imported ware; we found no official limit for ware made in Australia or New Zealand.
+미국에서는 식품용으로 쓸 수 있어 보이는 장식용 도자기는 접착 라벨과 함께 바닥에 찍거나 소성해 넣은 영구적인 표시(예: “Not for Food Use. May Poison Food”, 곧 “식품용 아님. 음식을 유독하게 만들 수 있음”)가 있거나 음식이 닿는 면을 관통하는 구멍이 있지 않으면 식품용 기물로 취급됩니다. EU는 EU 지침 84/500/EEC에서 납과 카드뮴의 한계를 정하고, 영국은 같은 수치를 자국 법에 두고 있습니다. 2026년 5월 29일부터 네덜란드, 벨기에, 룩셈부르크는 약 130~150배 적은 납과 약 15배 적은 카드뮴만 허용합니다. 호주는 수입 기물의 한계를 정하며, 호주나 뉴질랜드에서 만든 기물에 대한 공식 한계는 찾지 못했습니다.
 
-### Testing
+### 시험
 
-The FDA says home swab kits can show leachable lead, but Ceramics New Zealand warns that test pens are not designed for ceramics and give false positives. Treat a positive as a reason to stop using the piece, and a negative as proving nothing. A laboratory leach test of the fired piece (ASTM C738 in the US; EN 1388 or ISO 6486 in Europe) is the real answer.
+FDA는 가정용 면봉 키트가 용출되는 납을 보여 줄 수 있다고 하지만, Ceramics New Zealand는 시험 펜이 도자기용으로 만들어지지 않았고 거짓 양성이 나온다고 경고합니다. 양성은 그 기물 사용을 중단할 이유로 받아들이고, 음성은 아무것도 증명하지 못하는 것으로 보세요. 소성한 기물의 실험실 **용출시험**{{en: leach test}}(미국은 ASTM C738, 유럽은 EN 1388 또는 ISO 6486)이 진짜 답입니다.
 
 > [!WARNING]
-> "Food safe" means this glaze, on this clay, fired to this cone in this kiln and applied this way, releases less than the legal limits. Glazecalc can help you build a stable glaze, and **Replace lead** can rebuild an old lead recipe without lead, but no calculator can certify a pot. Only a test of the fired piece can.
+> “식품용으로 안전하다”는 이 유약을, 이 점토에, 이 콘으로, 이 가마에서 소성하고, 이 방식으로 시유했을 때 용출량이 법적 한계보다 적다는 뜻입니다. Glazecalc는 안정한 유약을 만드는 데 도움이 될 수 있고, [**납 대체**]는 옛 납 레시피를 납 없이 다시 짤 수 있지만, 어떤 계산기도 기물을 인증할 수는 없습니다. 소성한 기물을 시험해야만 인증할 수 있습니다.
 
 ## 비중과 시유 {#application}
 
@@ -298,171 +298,171 @@ The FDA says home swab kits can show leachable lead, but Ceramics New Zealand wa
 
 전기가마를 포함해 모든 가마는 가스를 내보내므로 배기하세요. 《[안전한 유약 배합과 환기](/guides/safe-mixing)》에 방법이 있습니다.
 
-## Glossary {#glossary lang=en}
+## 용어집 {#glossary}
 
-Additive
-: A colorant, opacifier or suspender added on top of a recipe's 100.
+CMC(바인더; CMC gum)
+: 유약이 붓에 잘 발리고 잘 붙게 하는 셀룰로스계 풀로, 소성하면 타서 없어집니다.
 
-Alumina (Al₂O₃)
-: The main stabilizer: stops running and adds hardness. From clays and feldspars.
+R₂O와 RO(R₂O and RO)
+: 알칼리 융제(Na₂O, K₂O, Li₂O)와 알칼리 토류 융제(CaO, MgO, BaO, SrO이며 ZnO를 포함).
 
-Ball clay
-: A plastic clay with more iron and organic matter than kaolin.
+강열감량(LOI; loss on ignition)
+: 소성 중에 물, 이산화탄소, 유기물, 황이 가스로 빠져나가면서 잃는 무게.
 
-Batch recipe
-: A glaze's raw materials by weight, usually adding up to 100.
+고령토(kaolin; 영국: china clay)
+: 알루미나와 실리카를 공급하는 순백색 점토로, 유약이 가라앉지 않게 합니다. 호주에서는 Eckalite.
 
-Bentonite
-: A very fine clay added at 1–3% to keep glaze from settling.
+광택, 반광택(새틴), 무광(매트)(gloss, satin and matte)
+: 반짝이고 매끄러움, 은은한 윤, 윤이 없음.
 
-Bisque (UK: biscuit)
-: The first, lower firing, usually cone 08–04 (most often 06–04), leaving ware strong but porous.
+내화판 코팅제(kiln wash)
+: 가마 선반을 유약 방울로부터 보호하는 내열 코팅.
 
-Boron (B₂O₃)
-: Formally a glass former but used as a flux; essential from cone 06 to cone 6.
+냉파(dunting)
+: 냉각이나 가열의 응력 때문에 기물에 생기는 금으로, 흔히 {{1063 °F; 573 °C}}의 석영 전이에서 생깁니다.
 
-CMC gum
-: A cellulose gum that helps glaze brush on and stick; it burns away.
+단일 소성(once-firing; single firing)
+: 소성하지 않은 기물에 시유해 한 번만 굽는 것.
 
-Colorant and stain
-: A metal oxide or carbonate that colors glaze; a stain is a factory-made, more stable colorant.
+도기(earthenware)
+: 흡수성이 남아 있는 저화도 소지(대략 오튼 콘 06~02).
 
-Cone
-: A calibrated ceramic pyramid that bends at a set heatwork. A witness cone shows what the pots received.
+라인 블렌드(line blend)
+: 한 가지 원료를 두 양 사이에서 단계적으로 바꾸는 시험. 삼각 배합 시험(triaxial blend)은 세 가지 원료를 격자 위에서 바꿉니다.
 
-Crawling
-: Glaze pulling back into beads in firing, leaving bare clay.
+발색제와 안료(colorant and stain)
+: 유약에 색을 내는 금속 산화물이나 탄산염. 안료는 공장에서 만든, 더 안정적인 발색제.
 
-Crazing
-: Fine cracks in a glaze that shrinks more than its body; crackle when wanted.
+발수제(wax resist)
+: 유약이 닿으면 안 되는 곳, 보통 굽에 바르는 왁스.
 
-Devitrification
-: Crystals growing out of the glass early in cooling, where they are not wanted.
+벤토나이트(bentonite)
+: 유약이 가라앉지 않게 1~3% 넣는 아주 고운 점토.
 
-Dunting
-: Cracks in a pot from cooling or heating stress, often at quartz inversion, {{1063 °F; 573 °C}}.
+볼 클레이(ball clay)
+: 고령토보다 철과 유기물이 더 많은 가소성 점토.
 
-Earthenware
-: A low-fire body (about cone 06–02) that stays porous.
+붕소(B₂O₃; boron)
+: 형식상으로는 유리 형성 성분이지만 융제로 쓰이며, 오튼 콘 06부터 콘 6까지 필수.
 
-Feldspar
-: A mineral supplying alkali flux with alumina and silica: potash, soda or nepheline syenite.
+비중(specific gravity; SG)
+: 유약물의 무게를 같은 부피의 물과 비교한 값. 영국의 옛 책에서는 파인트 무게(pint weight).
 
-Flocculant and deflocculant
-: Additives that gel a slurry (Epsom salts, vinegar) or thin it (sodium silicate, Darvan).
+빙렬(crazing)
+: 소지보다 더 많이 수축하는 유약에 생기는 가는 금. 원해서 낸 것은 장식 빙렬(crackle).
 
-Flux
-: An oxide that lowers the melting temperature of silica.
+산화 소성과 환원 소성(oxidation and reduction)
+: 산소가 충분한 소성(전기가마), 또는 산소를 제한한 소성(보통 가스나 장작).
 
-Food safe
-: In law, releasing less lead and cadmium than the limits in an acid test. Not the same as lead-free.
+산화물(oxide)
+: 어떤 원소와 산소의 화합물. 산화물 분석값은 이를 중량 퍼센트로 나열합니다.
 
-Frit
-: Factory-made glass, melted, quenched and ground, that makes soluble or toxic oxides insoluble.
+석기(stoneware)
+: 유리질이 되거나 거의 그렇게 되는 중화도에서 고화도 소지(대략 오튼 콘 5~10).
 
-Glass former
-: The oxide that builds the glass, usually silica.
+석회석(whiting; 독일어: Kreide)
+: 탄산칼슘으로, 주된 칼슘 융제. 소성하면 무게의 40% 넘게 잃습니다.
 
-Glaze
-: A coat of glass that melts in firing to seal and decorate a pot.
+소성 전 기물(greenware)
+: 소성하지 않은 기물. 단단하지만 축축하면 반건조, 남은 물기가 없으면 완전 건조.
 
-Glaze firing (UK: glost firing)
-: The firing that melts the glaze.
+소성 정도(heatwork)
+: 가마 안에서 온도와 시간이 합쳐진 효과로, 콘이 재는 것.
 
-Glaze fit
-: How well glaze and body expansion match; a good fit leaves the glaze slightly compressed.
+슬립과 화장토(slip and engobe)
+: 물에 푼 점토. 화장토는 점토가 아닌 재료가 더 많은 슬립 같은 코팅.
 
-Gloss, satin and matte
-: Reflective and smooth; a subdued sheen; dull.
+시버링(shivering)
+: 유약이 지나치게 압축되어 가장자리에서 떨어져 나오는 현상으로, 음식을 담는 기물에서는 위험합니다.
 
-Greenware
-: Unfired ware: leather-hard when stiff but damp, bone dry when no free water is left.
+식품용으로 안전한(food safe)
+: 법적으로는 산 시험에서 나오는 납과 카드뮴이 한계보다 적은 것. 무연과 같지 않습니다.
 
-Heatwork
-: The combined effect of temperature and time in a kiln; what cones measure.
+실리카(SiO₂; silica)
+: 유리 형성 성분으로, 플린트나 석영이라고도 부릅니다.
 
-Kaolin (UK: china clay)
-: A pure white clay supplying alumina and silica; keeps glaze suspended. Australia: Eckalite.
+실리카·알루미나 비(silica to alumina ratio)
+: 제게르식에서 실리카를 알루미나로 나눈 값. 높을수록 광택 쪽으로, 낮을수록 매트 쪽으로 기웁니다.
 
-Kiln wash
-: A heat-resisting coating that protects kiln shelves from drips.
+실투(devitrification)
+: 냉각 초기에 유리에서 결정이 자라는 것으로, 원하지 않는 경우를 말합니다.
 
-Leaching
-: Metals dissolving out of a fired glaze into food or drink.
+안쪽 면용 유약(liner glaze)
+: 음식이 닿는 면에 쓰는 안정한 유약으로, 보통 투명하거나 흰색.
 
-Limit formula (target formula)
-: Typical unity-formula ranges for stable glazes at a cone; a guide, not a guarantee.
+안정제(stabilizer)
+: 녹은 유약의 점성을 높이고 내구성을 더하는 산화물로, 주로 알루미나.
 
-Line blend
-: Tests stepping one ingredient between two amounts. A triaxial blend varies three on a grid.
+알루미나(Al₂O₃; alumina)
+: 주된 안정제로, 유약이 흘러내리는 것을 막고 경도를 더합니다. 점토와 장석에서 얻습니다.
 
-Liner glaze
-: A stable, usually clear or white glaze for surfaces that touch food.
+언더글레이즈(underglaze)
+: 색을 낸 슬립이나 산화물로 한 장식으로, 보통 투명유 아래에 씁니다.
 
-LOI (loss on ignition)
-: Weight lost in firing as water, carbon dioxide, organic matter or sulfur.
+용출(leaching)
+: 소성한 유약에서 금속이 음식이나 음료로 녹아 나오는 것.
 
-Once-firing (single firing)
-: Glazing unfired ware and firing it only once.
+유리 형성 성분(glass former)
+: 유리의 골격을 만드는 산화물로, 보통 실리카.
 
-Opacifier
-: A material, such as zircon, tin oxide or titanium dioxide, that makes glaze opaque.
+유리화(vitrification)
+: 소성하면서 소지가 유리질이 되어 물을 흡수하지 않게 되는 것.
 
-Oxidation and reduction
-: Firing with plenty of oxygen (electric kilns), or with oxygen restricted (usually gas or wood).
+유약(glaze)
+: 소성 중에 녹아 기물을 막고 장식하는 유리 층.
 
-Oxide
-: A compound of an element with oxygen; an oxide analysis lists them by weight percent.
+유약과 소지의 맞춤(glaze fit)
+: 유약과 소지의 팽창이 얼마나 잘 맞는가. 잘 맞으면 유약이 약간 압축된 상태로 남습니다.
 
-Pinholing and blistering
-: Small holes, or sharp-edged craters, where gas escaped through the melt.
+유약 말림(crawling)
+: 소성 중에 유약이 구슬처럼 뭉쳐 물러나 맨 점토가 드러나는 현상.
 
-Porcelain
-: A white, kaolin-rich, high-fire body, often translucent.
+유탁제(opacifier)
+: 지르콘, 산화주석, 산화티탄처럼 유약을 불투명하게 만드는 원료.
 
-R₂O and RO
-: The alkali fluxes (Na₂O, K₂O, Li₂O) and alkaline-earth fluxes (CaO, MgO, BaO, SrO, with ZnO).
+융제(flux)
+: 실리카의 녹는 온도를 낮추는 산화물.
 
-Shivering
-: Glaze flaking off edges because it is over-compressed; a hazard on functional ware.
+응집제와 해교제(flocculant and deflocculant)
+: 유약물을 젤처럼 만들거나(황산마그네슘(엡섬염), 식초), 묽게 만드는(규산소다, Darvan) 첨가제.
 
-Silica (SiO₂)
-: The glass former; also called flint or quartz.
+자기(porcelain)
+: 고령토가 많은 흰색 고화도 소지로, 빛이 비치는 경우가 많습니다.
 
-Silica to alumina ratio
-: Silica divided by alumina in the unity formula: higher tends to gloss, lower to matte.
+장석(feldspar)
+: 알칼리 융제를 알루미나, 실리카와 함께 공급하는 광물: 칼리장석, 소다장석 또는 네플린사이나이트.
 
-Slip and engobe
-: Clay in water; an engobe is a slip-like coating with more non-clay material.
+재벌(glaze firing; 영국: glost firing)
+: 유약을 녹이는 소성.
 
-Specific gravity (SG)
-: A slurry's weight compared with the same volume of water. Older UK: pint weight.
+제게르식(unity molecular formula; UMF, Seger formula)
+: 유약의 산화물을 분자 수로 나타내고, 융제의 합이 1이 되게 맞춘 식.
 
-Stabilizer
-: An oxide, mainly alumina, that stiffens the melt and adds durability.
+배합(batch recipe)
+: 유약의 원료를 중량으로 나열한 것으로, 보통 합이 100.
 
-Stoneware
-: A mid- to high-fire body (about cone 5–10) that becomes vitreous or nearly so.
+첨가제(additive)
+: 레시피의 100 위에 더하는 발색제, 유탁제, 침전 방지제.
 
-Thixotropy
-: Flowing when stirred, setting into a soft gel when still.
+초벌(bisque; 영국: biscuit)
+: 첫 번째로 더 낮은 온도에서 하는 소성으로, 보통 오튼 콘 08~04(가장 흔하게는 06~04). 기물은 단단해지지만 흡수성이 남습니다.
 
-Underglaze
-: Colored slip or oxide decoration, usually under a clear glaze.
+콘(cone)
+: 규격에 맞춰 교정한 세라믹 각뿔로, 정해진 소성 정도에서 휩니다. 확인용 콘은 기물이 받은 것을 보여 줍니다.
 
-Unity molecular formula (UMF, Seger formula)
-: A glaze's oxides as molecule counts, scaled so the fluxes add up to 1.
+틱소트로피(요변성)(thixotropy)
+: 저으면 흐르고, 가만두면 부드러운 젤로 굳는 성질.
 
-Vitrification
-: A body becoming glassy and non-porous in firing.
+프릿(frit)
+: 공장에서 만든 유리로, 녹이고 급랭한 뒤 갈아서 만듭니다. 물에 녹는 산화물이나 독성 산화물을 녹지 않게 합니다.
 
-Wax resist
-: Wax painted where glaze must not go, usually the foot.
+핀홀과 블리스터(pinholing and blistering)
+: 가스가 녹은 유약을 뚫고 빠져나간 자리에 생기는 작은 구멍, 또는 가장자리가 날카로운 분화구.
 
-Whiting
-: Calcium carbonate, the main calcium flux; loses over 40% of its weight in firing. German: Kreide.
+한계식, 목표식(limit formula, target formula)
+: 어떤 콘에서 안정한 유약의 제게르식 범위를 대략 알려 주는 것으로, 안내일 뿐 보증이 아닙니다.
 
-## Sources {#sources lang=en}
+## 출처 {#sources}
 
 - [Glazy Help: Glaze](https://help.glazy.org/concepts/glaze)
 - [Glazy Help: Oxides](https://help.glazy.org/concepts/oxides)

@@ -45,6 +45,7 @@
     "account": "帳戶",
     "trialAccount": "試用帳戶",
     "accountTitle": "您的帳戶與設定",
+    "trash": "垃圾桶",
     "signOut": "登出",
     "createAccount": "建立免費帳戶"
   },
@@ -90,7 +91,8 @@
     "advice": "關於調配、施釉與燒窯的實用訣竅，來自 Glazecalc，另有您自己的建議。免費提供給陶藝家使用。",
     "about": "Glazecalc 是免費、開放原始碼的釉藥化學計算工具與筆記本。了解 Glazecalc 如何算出塞格式，以及如何建置。",
     "privacy": "Glazecalc 如何處理您的資料：沒有廣告、沒有分析、沒有追蹤，也不出售任何資料。保存什麼、為什麼，以及如何行使您的權利。",
-    "signup": "建立免費的 Glazecalc 帳戶，保存您的釉方、原料、筆記與燒窯紀錄。沒有廣告，也絕不出售您的資料。"
+    "signup": "建立免費的 Glazecalc 帳戶，保存您的釉方、原料、筆記與燒窯紀錄。沒有廣告，也絕不出售您的資料。",
+    "imageAlt": "Glazecalc 首頁：給陶藝家的免費釉藥化學工具，旁邊是一張燒過的測溫錐組的照片。"
   },
   "notices": {
     "dismiss": "關閉",
@@ -285,6 +287,7 @@
     "close": "關閉"
   },
   "unity": {
+    "fluxes": "助熔劑 – R₂O 與 RO",
     "stabilizers": "安定劑 – R₂O₃",
     "glassFormers": "玻璃形成劑 – RO₂",
     "wildcards": "其他氧化物",

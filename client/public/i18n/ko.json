@@ -45,6 +45,7 @@
     "account": "계정",
     "trialAccount": "체험 계정",
     "accountTitle": "계정과 설정",
+    "trash": "휴지통",
     "signOut": "로그아웃",
     "createAccount": "무료 계정 만들기"
   },
@@ -90,7 +91,8 @@
     "advice": "Glazecalc 앱이 알려 드리는 배합, 시유, 소성에 관한 실용적인 조언과 직접 적은 조언을 볼 수 있습니다. 도예가를 위한 무료 서비스입니다.",
     "about": "Glazecalc 앱은 무료 오픈 소스 유약 화학 계산기이자 노트입니다. 제게르식을 계산하는 방법과 만들어진 방식을 소개합니다.",
     "privacy": "Glazecalc 앱이 데이터를 다루는 방법: 광고, 분석, 추적이 없고 판매하지 않습니다. 보관하는 정보와 이유, 권리를 행사하는 방법을 안내합니다.",
-    "signup": "무료 Glazecalc 계정으로 유약 레시피, 원료, 메모, 소성 기록을 보관하세요. 광고가 없고 데이터를 판매하지 않습니다."
+    "signup": "무료 Glazecalc 계정으로 유약 레시피, 원료, 메모, 소성 기록을 보관하세요. 광고가 없고 데이터를 판매하지 않습니다.",
+    "imageAlt": "Glazecalc 홈페이지: 도예가를 위한 무료 유약 화학 계산기와 소성한 콘 세트 사진."
   },
   "notices": {
     "dismiss": "닫기",
@@ -285,6 +287,7 @@
     "close": "닫기"
   },
   "unity": {
+    "fluxes": "융제 - R₂O와 RO",
     "stabilizers": "안정제 - R₂O₃",
     "glassFormers": "유리 형성 성분 - RO₂",
     "wildcards": "기타 산화물",

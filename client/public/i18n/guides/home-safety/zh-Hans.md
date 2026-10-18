@@ -30,34 +30,34 @@ lead: 孩子或宠物吞入釉用原料时该怎么做，以及如何让原料�
 
 如果要去医院，NHS 说，在安全的情况下，带上包装或一份样品。对于釉用原料，就是袋子的标签或化学品安全技术说明书。
 
-## What is most dangerous to swallow {#most-dangerous lang=en}
+## 吞入哪些原料最危险 {#most-dangerous}
 
-Glaze materials can harm a family in two different ways:
+釉用原料{{en: glaze materials}}可能以两种不同的方式危害家人：
 
-- The **acute** danger (harm from one dose, within hours) is swallowing a **soluble** material, one that dissolves in water or stomach acid. Locked storage and the numbers above deal with it.
-- The **chronic** danger (harm from many small doses) is dust, mainly silica and lead, which causes no symptoms at first and travels home on clothes. Clean habits deal with it.
+- **急性**危险（一次剂量在数小时内造成的伤害）是吞入**可溶**原料，即能溶于水或胃酸的原料。上锁存放和上面的电话号码可以应对这种危险。
+- **慢性**危险（许多小剂量累积造成的伤害）是粉尘，主要是二氧化硅{{en: silica}}和铅的粉尘；它起初不会引起任何症状，并会沾在衣服上被带回家。清洁的习惯可以应对这种危险。
 
-Most of a glaze is silica, kaolin and feldspar, which barely dissolve. We treat them as a long-term breathing hazard rather than a swallowing emergency. The soluble materials below are the ones to lock away first.
+釉的大部分是石英、高岭土{{en: kaolin}}和长石{{en: feldspar}}，它们几乎不溶解。我们把它们当作长期的吸入危害，而不是吞入急症。最先要锁起来的，是下面这些可溶原料。
 
-Table: Soluble glaze materials: what they do if swallowed
-Label: Soluble materials
+Table: 可溶釉用原料：吞入后的危害
+Label: 可溶原料
 
-| Material                    | What it does                                                                                                                                                                                                                                                                                                                                 | Reported doses                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Barium carbonate            | Once sold as rat poison. It barely dissolves in water but does dissolve in acid, so treat it as soluble once swallowed. Barium drives down the potassium in the blood, causing vomiting, diarrhea and muscle weakness that can progress to paralysis, breathing failure and an irregular heartbeat. Symptoms typically begin within 2 hours. | Sources disagree. A WHO review estimates the lethal dose of barium absorbed from the gut at 3 to 4 g in untreated cases, with toxic effects from 0.2 to 0.5 g, and lists a lowest reported lethal dose of barium chloride, a soluble barium salt, of 11.4 mg per kg of body weight. An emergency-medicine reference gives a lethal range of 1 to 30 g for barium salts, with harm possibly from about 200 mg. None gives a figure for children, so call for any amount. |
-| Borax and boric acid        | Nausea, vomiting, diarrhea and stomach pain come first; vomit and stool may be blue-green. Severe cases bring a bright red rash that later peels, seizures, kidney injury and shock.                                                                                                                                                         | Rough lowest lethal doses: 2 to 3 g for an infant, 5 to 6 g for a child. In one review of 784 swallowings, only 12% caused symptoms and none were fatal, but deaths do happen, and there is no antidote.                                                                                                                                                                                                                                                                |
-| Lithium carbonate           | A child weighing 15 kg (33 lb) who swallowed 300 mg had a short spell of involuntary muscle spasms and overactive reflexes (acute dystonia and hyperreflexia), which passed.                                                                                                                                                                 | Little has been written about young children. 300 mg is far less than a spoonful of powder.                                                                                                                                                                                                                                                                                                                                                                             |
-| Soda ash (sodium carbonate) | Dissolves readily in water. We found no reliable figures for what it does to a child.                                                                                                                                                                                                                                                        | None found. Call for any amount.                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| Potassium dichromate        | A chrome colorant used in some recipes. Fisher Scientific's safety data sheet warns that it "May be fatal if swallowed", causes burns in the gut and may damage the kidneys. The same sheet warns that it "May be fatal if inhaled" and may cause cancer, and of a "possible risk of harm to the unborn child".                              | Not established, and safety data sheets disagree on how toxic it is.                                                                                                                                                                                                                                                                                                                                                                                                    |
+| 原料           | 危害                                                                                                                                                                                                                       | 文献报告的剂量                                                                                                                                                                                                                                                                                                                                           |
+| -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 碳酸钡         | 曾作为老鼠药出售。它几乎不溶于水，但能溶于酸，所以一旦吞入，应把它当作可溶原料对待。钡会降低血液中的钾，引起呕吐、腹泻和肌无力，并可能发展为瘫痪、呼吸衰竭和心律不齐。症状通常在 2 小时内出现。                            | 各来源说法不一。世界卫生组织（WHO）的一份综述估计，在未经治疗的情况下，从肠道吸收的钡的致死量为 3～4 g，毒性作用的剂量自 0.2～0.5 g 起，并列出氯化钡（一种可溶钡盐）已报告的最低致死剂量为每公斤体重 11.4 mg。一本急诊医学参考资料给出的钡盐致死剂量范围为 1～30 g，并说约 200 mg 起就可能造成伤害。没有一个来源给出儿童的数值，所以无论多少都要打电话。 |
+| 硼砂和硼酸     | 最先出现恶心、呕吐、腹泻和腹痛；呕吐物和粪便可能呈蓝绿色。严重时会出现之后会脱皮的鲜红色皮疹、抽搐、肾损伤和休克。                                                                                                         | 大致的最低致死剂量：婴儿 2～3 g，儿童 5～6 g。在一项涉及 784 例误吞的综述中，只有 12% 出现症状，且无一死亡，但死亡确实会发生，而且没有解毒剂。                                                                                                                                                                                                           |
+| 碳酸锂         | 一名体重 15 kg（33 lb）的儿童吞入 300 mg 后，出现了短暂的不自主肌肉痉挛和反射过度活跃（急性肌张力障碍和反射亢进），随后消退。                                                                                              | 关于幼儿的文献很少。300 mg 远少于一勺粉末。                                                                                                                                                                                                                                                                                                              |
+| 纯碱（碳酸钠） | 易溶于水。我们没有找到关于它对儿童影响的可靠数据。                                                                                                                                                                         | 没有找到。无论多少都要打电话。                                                                                                                                                                                                                                                                                                                           |
+| 重铬酸钾       | 一种含铬的着色剂{{en: colorant}}，用于某些配方。Fisher Scientific 的化学品安全技术说明书警告它“吞咽可能致命”，会灼伤消化道，并可能损害肾脏。同一份说明书还警告它“吸入可能致命”、可能致癌，并有“可能对胎儿造成伤害的风险”。 | 尚未确定，各化学品安全技术说明书对其毒性的说法也不一致。                                                                                                                                                                                                                                                                                                 |
 
 > [!NOTE]
-> These harmful amounts run from a few hundred milligrams to a few grams. Glaze materials are sold by the pound or kilogram, so one open bag or bucket holds far more than enough to harm a toddler.
+> 这些有害的量从几百毫克到几克不等。釉用原料按磅或千克出售，所以一个打开的袋子或桶里的量，远远超过伤害一个幼儿所需的量。
 
-### Colorants and lead
+### 着色剂和铅
 
-**Colorants** are the metal oxides and stains that give a glaze its color: copper, cobalt, chrome, manganese, nickel, cadmium-selenium stains and others. A university ceramics safety page names lead, cadmium, cobalt and chromium among the especially hazardous glaze ingredients. We found no reliable dose figures for any colorant, so call for any amount. A bucket of mixed glaze holds the same materials as the bags it came from, only wet.
+**着色剂**{{en: colorants}}是使釉呈现颜色的金属氧化物和色料{{en: stains}}：铜、钴、铬、锰、镍、镉硒色料等。一所大学的陶瓷安全网页把铅、镉、钴和铬列为特别危险的釉料成分。我们没有找到任何着色剂的可靠剂量数据，所以无论多少都要打电话。一桶调好的釉浆所含的原料，与调配它的那些袋装原料相同，只不过是湿的。
 
-Lead's main danger is different: not one spoonful, but small amounts of dust swallowed over weeks or months, with no warning signs (see Lead and children, below).
+铅的主要危险则不同：不是一勺的量，而是在数周或数月内吞入的少量粉尘，而且没有任何预警征兆（见下文“铅与儿童”）。
 
 ## 在家中存放原料 {#storing-materials}
 
@@ -220,20 +220,20 @@ Rio Grande 建议使用**专用线路**（不为其他任何设备供电的线�
 
 关于釉如何熔融、为什么有些釉会溶出金属以及这些限值意味着什么，参阅[《从基本原理学施釉》](/guides/glazing-basics)。
 
-## Sources {#sources lang=en}
+## 资料来源 {#sources}
 
 - [America's Poison Centers: Poison Help](https://poisoncenters.org/)
 - [Poison Control (poison.org): webPOISONCONTROL](https://www.poison.org/)
 - [NHS: Poisoning](https://www.nhs.uk/conditions/poisoning/)
-- [National Poisons Information Service (UK)](https://www.npis.org/)
+- [National Poisons Information Service（英国）](https://www.npis.org/)
 - [National Poisons Information Centre of Ireland: Public Poisons Line](https://www.poisons.ie/)
 - [European Commission: 112, the European emergency number](https://digital-strategy.ec.europa.eu/en/policies/112)
 - [healthdirect: Poisoning](https://www.healthdirect.gov.au/poisoning)
-- [National Poisons Centre (New Zealand)](https://www.poisons.co.nz/)
+- [National Poisons Centre（新西兰）](https://www.poisons.co.nz/)
 - [ASPCA: Animal Poison Control](https://www.aspca.org/pet-care/animal-poison-control)
 - [Pet Poison Helpline](https://www.petpoisonhelpline.com/)
-- [Animal PoisonLine (UK)](https://www.animalpoisonline.co.uk/)
-- [Animal Poisons Helpline (Australia and New Zealand)](https://animalpoisons.com.au/)
+- [Animal PoisonLine（英国）](https://www.animalpoisonline.co.uk/)
+- [Animal Poisons Helpline（澳大利亚和新西兰）](https://animalpoisons.com.au/)
 - [PubMed Central: Non-fatal acute barium carbonate poisoning, a case report (2025)](https://pmc.ncbi.nlm.nih.gov/articles/PMC11700400)
 - [WHO IPCS: Environmental Health Criteria 107, Barium (1990)](https://www.inchem.org/documents/ehc/ehc/ehc107.htm)
 - [Fisher Scientific: Potassium dichromate safety data sheet (2007)](https://fscimage.fishersci.com/msds/19370.htm)
@@ -245,7 +245,7 @@ Rio Grande 建议使用**专用线路**（不为其他任何设备供电的线�
 - [US EPA: Children's health booklet (2018, PDF)](https://19january2021snapshot.epa.gov/sites/static/files/2018-10/documents/childrenshealthbooklet2018_final-4_newlinks.pdf)
 - [Pennsylvania Department of Health: Non-Occupational Lead Exposure (PDF)](https://www.health.pa.gov:443/topics/Documents/Environmental%20Health/Non-Occupational%20Lead%20Exposure.pdf)
 - [Western Carolina University: Ceramics Safety](https://www.wcu.edu/discover/campus-services-and-operations/facilities-management/safety-and-risk-management/visual-arts-theatre-safety/ceramics-safety.aspx)
-- [Crafts Council (UK): How to make your pottery practice greener](https://craftscouncil.org.uk/stories/how-make-your-pottery-practice-greener)
+- [Crafts Council（英国）: How to make your pottery practice greener](https://craftscouncil.org.uk/stories/how-make-your-pottery-practice-greener)
 - [Pet Poison Helpline: Lead](https://www.petpoisonhelpline.com/poison/lead/)
 - [Vet Candy: Sparkler ingestion results in barium toxicity](https://www.myvetcandy.com/clinicalupdblog/2019/3/15/sparkler-ingestion-results-in-barium-toxicity)
 - [University of Illinois College of Veterinary Medicine: Bird toxins](https://vetmed.illinois.edu/pet-health-columns/bird-toxins-teflon-avocado-lead-zinc/)

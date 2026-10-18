@@ -370,83 +370,83 @@ Orton 的自立式測溫錐在日本以「立つゼーゲル」（直譯為「�
 
 :::
 
-## Bisque firing {#bisque lang=en}
+## 素燒 {#bisque}
 
-The **bisque** firing (biscuit in the UK) is the first, lower firing that turns dry clay into hard, porous ware ready to glaze. It is usually fired to cone 06–04, {{1828–1945 °F; 998–1063 °C}} on Orton's chart; UK potters often fire to around {{1000 °C; 1832 °F}}, near cone 06. The bisque should stay porous, "generally more than 15%" (Digitalfire), so it soaks water out of the glaze. Too soft a bisque takes glaze on too thick, which then cracks and **crawls** (pulls back into islands, leaving bare clay). Under-fired bisque also "continues to shrink during glaze firing", which spoils the glaze fit. Loading is forgiving: pieces may touch, lids can be fired on their pots, and bowls go rim to rim rather than nested.
+**素燒**{{en: bisque}}（英國稱為 biscuit）是第一次、溫度較低的燒成，把乾燥的黏土變成可以上釉的堅硬、多孔的器物。通常燒到 Orton 06–04 號測溫錐，也就是 Orton 對照表上的 {{1828–1945 °F; 998–1063 °C}}；英國的陶藝家常燒到約 {{1000 °C; 1832 °F}}，接近 06 號錐。素燒坯應保持多孔，吸水率「一般超過 15%」（Digitalfire），這樣才能把釉藥中的水分吸走。素燒太軟的話，上的釉會太厚，之後會開裂並**縮釉**{{en: crawling}}（釉縮回成一島一島，露出裸露的坯土）。素燒不足的坯也會「在釉燒期間繼續收縮」，這會破壞坯釉適配{{en: glaze fit}}。裝窯時很寬容：作品可以互相接觸，蓋子可以和器身一起燒，碗要口對口，而不是一個疊進另一個。
 
-### Why the early part goes slowly
+### 為什麼前段要慢
 
-Water expands more than a thousandfold as it turns to steam, so damp ware has to be dried slowly. L&L and Orton advise that "Special care should be taken below 1500°F (815°C) to heat the body evenly", and that carbon must be burned out before about {{1200 °F; 650 °C}}. Above {{1500 °F; 816 °C}} the kiln can climb faster.
+水變成水蒸氣時體積會膨脹一千多倍，所以潮濕的作品必須慢慢烘乾。L&L 與 Orton 建議「在 1500°F（815°C）以下，應特別小心，讓坯體均勻受熱」，而且碳必須在約 {{1200 °F; 650 °C}} 之前燒除。超過 {{1500 °F; 816 °C}} 後，窯就可以升溫快一點。
 
-Table: What happens as a bisque heats
-Label: What happens in a bisque
+Table: 素燒升溫時發生的事
+Label: 素燒中發生的事
 
-|                        Temperature | What happens                                                |
-| ---------------------------------: | ----------------------------------------------------------- |
-|         {{300–500 °F; 149–260 °C}} | Binders burn off                                            |
-|           About {{450 °F; 232 °C}} | Organic matter starts to burn                               |
-|           Up to {{700 °F; 371 °C}} | Water keeps leaving the clay until above this temperature   |
-|        {{842–1022 °F; 450–550 °C}} | Chemically bound water leaves the clay                      |
-|                {{1063 °F; 573 °C}} | Quartz inversion: silica in the clay expands suddenly       |
-|          Above {{1112 °F; 600 °C}} | Sulfur burns out                                            |
-| Up to {{1200–1400 °F; 649–760 °C}} | Natural carbon burns off; this should finish below red heat |
-|          Above {{1544 °F; 840 °C}} | Calcium carbonate breaks down                               |
+|                            溫度 | 發生的事                                         |
+| ------------------------------: | ------------------------------------------------ |
+|      {{300–500 °F; 149–260 °C}} | 黏結劑燒掉                                       |
+|           約 {{450 °F; 232 °C}} | 有機物開始燃燒                                   |
+|           至 {{700 °F; 371 °C}} | 水分持續離開黏土，直到超過這個溫度               |
+|     {{842–1022 °F; 450–550 °C}} | 化學結合水離開黏土                               |
+|             {{1063 °F; 573 °C}} | 石英相變：黏土中的二氧化矽{{en: silica}}突然膨脹 |
+|        超過 {{1112 °F; 600 °C}} | 硫燒盡                                           |
+| 至 {{1200–1400 °F; 649–760 °C}} | 天然的碳燒掉；這應在赤熱之前完成                 |
+|        超過 {{1544 °F; 840 °C}} | 碳酸鈣分解                                       |
 
-**Quartz inversion** is the sudden change in size of the silica in clay at {{1063 °F; 573 °C}}: it expands on the way up and contracts on the way down. L&L's Slow Bisque slows through it, between {{1000 °F; 538 °C}} and {{1100 °F; 593 °C}}. Digitalfire found this "unnecessary for bisque firings", and Ceramics Monthly says it mainly matters when cooling dense ware. Slowing costs little, so our suggestion is to keep it for thick pieces.
+**石英相變**{{en: quartz inversion}}是黏土中的二氧化矽在 {{1063 °F; 573 °C}} 時，尺寸突然改變：升溫時膨脹，降溫時收縮。L&L 的 Slow Bisque 在 {{1000 °F; 538 °C}} 到 {{1100 °F; 593 °C}} 之間放慢速度通過。Digitalfire 認為這「對素燒不必要」，而 Ceramics Monthly 說，這主要在冷卻緻密的作品時才重要。放慢的代價很小，所以我們的建議是留給厚的作品使用。
 
-### Candling: drying in the kiln
+### 預熱：在窯裡烘乾
 
-**Candling** means holding the kiln at a low temperature, with the lid propped or the vent running, until the last moisture has left the ware. Sources disagree about the temperature:
+**預熱**{{en: candling}}是指讓窯停在低溫，窯蓋撐開或排氣裝置運轉，直到作品中最後的水分都排出。各資料來源對溫度的看法不一：
 
-Table: Candling temperatures
+Table: 預熱的溫度
 
-| Source           | Candling                                                                                 |
-| ---------------- | ---------------------------------------------------------------------------------------- |
-| Ceramics Monthly | Just short of boiling; for example, climbing at {{25 °F/h; 14 °C/h}} for 4–6 hours       |
-| L&L preheat      | Hold at {{150–200 °F; 66–93 °C}}                                                         |
-| Digitalfire      | Hold at {{250 °F; 121 °C}}, because holding below boiling "does not expel all the water" |
+| 來源             | 預熱                                                                    |
+| ---------------- | ----------------------------------------------------------------------- |
+| Ceramics Monthly | 略低於沸點；例如以 {{25 °F/h; 14 °C/h}} 升溫 4–6 小時                   |
+| L&L 預熱         | 持溫在 {{150–200 °F; 66–93 °C}}                                         |
+| Digitalfire      | 持溫在 {{250 °F; 121 °C}}，因為在低於沸點的溫度持溫「無法排出所有的水」 |
 
 > [!NOTE]
-> Our starting point: climb slowly to no more than about {{250 °F; 121 °C}}, and hold until a mirror at the vent stays clear. Hold overnight for thick or damp ware.
+> 我們的起點是：緩慢升溫到不超過約 {{250 °F; 121 °C}}，並持溫到排氣孔旁的鏡子保持清晰。厚的或潮濕的作品，請持溫過夜。
 
-The **mirror test**: hold a room-temperature mirror at a vent hole or at the gap under a propped lid. If it fogs, water is still leaving; wait, then test again.
+**鏡子測試**：把一面室溫的鏡子拿到排氣孔，或撐開的窯蓋下方的縫隙處。如果鏡子起霧，表示水還在排出；請等一下，再測一次。
 
-### Controller schedules
+### 溫度控制器的燒成曲線
 
-A **controller** is an electronic unit that fires the kiln through a **schedule**: a list of **segments**, each a rate of climb (the **ramp**), a target temperature and an optional hold. Below are two presets from L&L's DynaTrol and Bartlett controllers, and a schedule published by Digitalfire. "Peak" is the controller's own temperature for the cone you choose: for cone 04 it is {{1926 °F; 1052 °C}}, and for cone 06, {{1819 °F; 993 °C}}.
+**溫度控制器**是用電子方式，依**燒成曲線**控制燒窯的裝置：燒成曲線是由多個**段**組成的清單，每一段有升溫速率（**升溫段**{{en: ramp}}）、目標溫度，以及可有可無的持溫。下面是 L&L 的 DynaTrol 與 Bartlett 溫度控制器的兩個預設程式，以及 Digitalfire 發表的一個燒成曲線。「最高溫度」是溫度控制器針對您所選的測溫錐自己設定的溫度：04 號是 {{1926 °F; 1052 °C}}，06 號是 {{1819 °F; 993 °C}}。
 
-Table: L&L and Bartlett bisque presets
-Label: Bisque presets
+Table: L&L 與 Bartlett 的素燒預設程式
+Label: 素燒預設程式
 
-| Segment                  |                                                           Climb to |            Slow Bisque |            Fast Bisque |
-| ------------------------ | -----------------------------------------------------------------: | ---------------------: | ---------------------: |
-| 1                        |                                                 {{250 °F; 121 °C}} |   {{80 °F/h; 44 °C/h}} |  {{120 °F/h; 67 °C/h}} |
-| 2                        |                                                {{1000 °F; 538 °C}} | {{200 °F/h; 111 °C/h}} | {{300 °F/h; 167 °C/h}} |
-| 3                        |                                                {{1100 °F; 593 °C}} |  {{100 °F/h; 56 °C/h}} |  {{150 °F/h; 83 °C/h}} |
-| 4                        | {{250 °F; 139 °C}} below the peak: {{1676 °F; 913 °C}} for cone 04 | {{180 °F/h; 100 °C/h}} | {{180 °F/h; 100 °C/h}} |
-| 5                        |                                                           The peak |   {{80 °F/h; 44 °C/h}} |  {{108 °F/h; 60 °C/h}} |
-| Heating time, empty kiln |                                                                    | About 13 hours or more |     About 10–11½ hours |
+| 段             |                                                       升溫到 |            Slow Bisque |            Fast Bisque |
+| -------------- | -----------------------------------------------------------: | ---------------------: | ---------------------: |
+| 1              |                                           {{250 °F; 121 °C}} |   {{80 °F/h; 44 °C/h}} |  {{120 °F/h; 67 °C/h}} |
+| 2              |                                          {{1000 °F; 538 °C}} | {{200 °F/h; 111 °C/h}} | {{300 °F/h; 167 °C/h}} |
+| 3              |                                          {{1100 °F; 593 °C}} |  {{100 °F/h; 56 °C/h}} |  {{150 °F/h; 83 °C/h}} |
+| 4              | 比最高溫度低 {{250 °F; 139 °C}}：04 號為 {{1676 °F; 913 °C}} | {{180 °F/h; 100 °C/h}} | {{180 °F/h; 100 °C/h}} |
+| 5              |                                                     最高溫度 |   {{80 °F/h; 44 °C/h}} |  {{108 °F/h; 60 °C/h}} |
+| 空窯的加熱時間 |                                                              |       約 13 小時或更久 |         約 10–11½ 小時 |
 
-L&L's times are "for the fastest possible empty kilns"; a loaded kiln can take as much as four times longer, and any hold you add is extra heatwork the presets do not allow for. L&L advises Slow Bisque, with a preheat of 2–3 hours or longer, for large or damp pieces, and warns against fast firing, which "can cause defects like pinholes, cracking, and insufficient burnout".
+L&L 的時間是「針對速度最快的空窯」；裝滿的窯可能要多花多達四倍的時間，而您加的任何持溫，都是預設程式沒有計入的額外熱功。L&L 建議大型或潮濕的作品使用 Slow Bisque，並先預熱 2–3 小時或更久，同時警告不要快速燒窯，因為那「可能造成針孔、開裂與燒除不完全等缺陷」。
 
-Table: Digitalfire BQ1000 bisque, to about cone 06
+Table: Digitalfire BQ1000 素燒，燒到約 06 號
 Label: Digitalfire BQ1000
 
-| Step |                   Rate |               Target | Hold                                      |
-| ---- | ---------------------: | -------------------: | ----------------------------------------- |
-| 1    | {{306 °F/h; 170 °C/h}} |   {{248 °F; 120 °C}} | 60 minutes; up to 10 hours for heavy ware |
-| 2    | {{306 °F/h; 170 °C/h}} |  {{1733 °F; 945 °C}} | None                                      |
-| 3    |  {{108 °F/h; 60 °C/h}} | {{1832 °F; 1000 °C}} | 15 minutes                                |
+| 步驟 |                   速率 |                 目標 | 持溫                            |
+| ---- | ---------------------: | -------------------: | ------------------------------- |
+| 1    | {{306 °F/h; 170 °C/h}} |   {{248 °F; 120 °C}} | 60 分鐘；厚重的作品最多 10 小時 |
+| 2    | {{306 °F/h; 170 °C/h}} |  {{1733 °F; 945 °C}} | 無                              |
+| 3    |  {{108 °F/h; 60 °C/h}} | {{1832 °F; 1000 °C}} | 15 分鐘                         |
 
-BQ1000 takes about 7 hours 44 minutes. Its author finds up to {{500 °F/h; 278 °C/h}} fine for thin, dry ware, and slows the last step to even out the temperature through the load.
+BQ1000 約需 7 小時 44 分鐘。作者認為薄而乾的作品，升溫速率最高到 {{500 °F/h; 278 °C/h}} 都可以，並把最後一步放慢，讓整窯的溫度均勻。
 
-### Controller cones and Orton's chart
+### 溫度控制器的測溫錐與 Orton 的對照表
 
-L&L and Bartlett controllers use {{1926 °F; 1052 °C}} for cone 04 and {{1819 °F; 993 °C}} for cone 06, a little below Orton's {{1945 °F; 1063 °C}} and {{1828 °F; 998 °C}}; they agree at cone 6 and cone 10. Witness cones settle the difference: if they disagree with the controller, correct it with the cone offset.
+L&L 與 Bartlett 的溫度控制器，04 號用 {{1926 °F; 1052 °C}}，06 號用 {{1819 °F; 993 °C}}，比 Orton 的 {{1945 °F; 1063 °C}} 與 {{1828 °F; 998 °C}} 稍低；兩者在 6 號與 10 號錐一致。見證錐能解決這個差異：如果見證錐和溫度控制器不一致，就用測溫錐補償值修正。
 
-### On a manual kiln
+### 在手動窯上
 
-A manual kiln follows the same plan by hand: dry slowly with the lid propped and the peepholes open, step the switches up from Low to Medium to High, and let the sitter end the firing. The published procedures are under Manual kilns in detail, below.
+手動窯遵循同樣的計畫，只是靠手操作：撐開窯蓋、打開觀火孔慢慢烘乾，把開關從「低」依序調到「中」再到「高」，並讓自動斷電器結束燒窯。已發表的操作方式見下方的「手動窯詳解」。
 
 ## 釉燒 {#glaze}
 

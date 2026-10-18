@@ -22,58 +22,58 @@ lead: 原料の買い方と保管、釉薬の計量と混ぜ方、ちょうど�
 > [!WARNING]
 > **乾いた釉薬の粉末は、粉じんの危険があります**。結晶質シリカは乾いた釉薬の10〜60%を占めることがあり、英国の安全衛生庁（HSE）は、その粉じんは普通の光では目に見えないと警告しています。粉末は低い位置からそっとすくい、ふたは閉めておき、できるだけ早く湿らせてください。掃除は湿式で行い、ほうきは絶対に使わないでください。粉末が乾いている間は、顔に合った防じんマスクを着用してください（米国では N95 または P100、英国と EU では FFP2 または FFP3、オーストラリアとニュージーランドでは P2 または P3）。粉じん、防じんマスク、清掃については、「[安全な調合と換気](/guides/safe-mixing)」のガイドで詳しく説明しています。
 
-## Buying materials {#buying-materials lang=en}
+## 原料の購入 {#buying-materials}
 
-### Where to buy
+### 購入先
 
-Potters buy from ceramic suppliers, which sell clay, glaze materials and tools. The table shows some for your country, each checked on the shop's own site, and you can choose another country to see its shops. Stock changes, so check before you order. Large producers such as Sibelco and Imerys sell to industry; potters buy their materials through shops like these. The ceramics reference site Digitalfire keeps a directory of supplier stores for other places.
+陶芸家は、粘土、釉薬原料、道具を扱う陶芸材料店から原料を買います。表には、お住まいの国の販売店をいくつか載せています。どれも各店のサイトで確認したもので、別の国を選ぶとその国の販売店が表示されます。在庫は変わるので、注文の前に確認してください。Sibelco や Imerys のような大手の原料メーカーは産業向けに販売しており、陶芸家はこうした販売店を通じてその原料を買います。陶芸の参考サイト Digitalfire は、ほかの地域の材料店の一覧を公開しています。
 
 ::shops
 
-### How much to buy
+### 購入量
 
-The standard sack is **50 lb (22.7 kg)** in the US and **25 kg (55 lb)** elsewhere, so the two are nearly the same. Many suppliers also sell 1, 2.5 or 5 kg packs (about 2.2, 5.5 or 11 lb) for tests. Glazy, the open recipe database, advises buying the materials you use steadily (feldspar, silica, kaolin, whiting, and frit for mid-fire) in full sacks, which are often 20 to 30% cheaper. Buy **colorants**, the metal oxides and stains that color a glaze, in small amounts: most are used at under 5%. Glazy's sample shopping lists came to about $515 for mid-fire and $397 for high-fire, at US prices.
+標準的な袋は、米国では **50 lb (22.7 kg)**、ほかの国では **25 kg (55 lb)** なので、ほぼ同じ量です。多くの販売店は、テスト用に 1、2.5、5 kg の小袋（約 2.2、5.5、11 lb）も売っています。オープンな調合データベースの Glazy は、いつも使う原料（長石{{en: feldspar}}、珪石{{en: silica}}、カオリン{{en: kaolin}}、石灰石{{en: whiting}}、それに中火度ではフリット{{en: frit}}）は袋単位で買うよう勧めています。袋で買うと20〜30%安くなることがよくあります。**着色剤**{{en: colorants}}、つまり釉薬に色を付ける金属酸化物や顔料{{en: stains}}は、少量で買ってください。ほとんどは5%未満で使います。Glazy のサンプルの購入リストは、米国の価格で中火度用が約 $515、高火度用が約 $397 になりました。
 
-### A starter set
+### 基本の原料セット
 
-Glazy's core list for any temperature is silica, kaolin, feldspar, whiting, zinc oxide, and dolomite or talc. Most mid-fire (cone 5 to 6) glazes also need boron, usually from a frit, which Glazy calls "consistent and less soluble than raw borates". The set below is our suggestion, drawn from Glazy's list and a forum list. The [glazing basics guide](/guides/glazing-basics) explains what each material does.
+どの温度帯でも使う Glazy の基本リストは、珪石、カオリン、長石、石灰石、亜鉛華、そしてドロマイトかタルクです。中火度（オルトンコーン 5〜6）の釉薬の多くはホウ素も必要とし、ふつうはフリットから入れます。Glazy はこのフリットを「品質が一定で、天然ホウ酸塩より溶けにくい」と述べています。下のセットは、Glazy のリストとあるフォーラムのリストをもとにした私たちの提案です。各原料の働きは、「[基礎から学ぶ釉薬](/guides/glazing-basics)」のガイドで説明しています。
 
-Table: A starter set of materials (our suggestion)
-Label: Starter set
+Table: 基本の原料セット（私たちの提案）
+Label: 基本の原料セット
 
-| Material                              | What to buy                                                                      |
-| ------------------------------------- | -------------------------------------------------------------------------------- |
-| Silica (also called flint; see below) | 325 mesh, the finer grade Glazy prefers for glazes                               |
-| Kaolin (china clay in the UK)         | EPK in the US; Grolleg or another china clay in the UK; NZ kaolin in New Zealand |
-| Potash feldspar                       | Whichever is current where you live, such as Mahavir in the US                   |
-| Nepheline syenite                     | Any; Glazy notes its stronger fluxing power, often used at low and mid-fire      |
-| Whiting                               | Any                                                                              |
-| Talc                                  | Any asbestos-free grade; check its SDS (see Safe mixing)                         |
-| A boron frit, for mid-fire            | Ferro 3134, 3124 or 3195; in the UK, Potterycrafts P3124 or P3195                |
-| Bentonite and colorants               | Small amounts                                                                    |
+| 原料                                            | 買うもの                                                                                       |
+| ----------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| 珪石（フリントとも呼ばれます。下記参照）        | 325 メッシュ。Glazy が釉薬用に勧める、細かいほうの等級                                         |
+| カオリン（英国では china clay）                 | 米国では EPK、英国では Grolleg などの china clay、ニュージーランドでは NZ kaolin               |
+| カリ長石{{en: potash feldspar}}                 | お住まいの地域で今手に入るもの。米国なら Mahavir など                                          |
+| ネフェリンサイアナイト{{en: nepheline syenite}} | どれでも。Glazy によると媒溶作用がより強く、低火度と中火度でよく使われます                     |
+| 石灰石                                          | どれでも                                                                                       |
+| タルク                                          | アスベストを含まないものならどれでも。安全データシートを確認する（「安全な調合と換気」を参照） |
+| ホウ素フリット（中火度用）                      | Ferro 3134、3124 または 3195。英国では Potterycrafts P3124 または P3195                        |
+| ベントナイトと着色剤                            | 少量                                                                                           |
 
-### Data sheets and safety data sheets
+### 技術資料と安全データシート
 
-Ask for two documents for each material. A **technical data sheet** (TDS) gives its **chemical analysis**: the share of each oxide in the powder, by weight. Glazecalc works from these, and you can add a material from a supplier's analysis on the [Materials page](/material). A **safety data sheet** (SDS) says how to handle the raw powder. Keep each SDS, and read it before you mix.
+原料ごとに二つの書類を求めてください。**技術資料**（TDS）は**化学分析値**、つまり粉末に含まれる各酸化物の重量での割合を示します。Glazecalc はこれをもとに計算します。販売店の分析値から、[原料ページ](/material)で原料を追加することもできます。**安全データシート**（SDS）は、生の粉末の扱い方を示します。SDS はすべて保管し、調合の前に読んでください。
 
-Analyses are averages, not promises. Valentine Clays prints "MEAN VALUES. THESE DO NOT REPRESENT A SPECIFICATION" on its flint data sheet, and Glazy's analyses of Custer feldspar from different years run from about 68.5% to 72.4% silica. We suggest writing each sack's **lot number** (its batch code) in your records, so you can tell whether a change in a trusted glaze came from the material.
+分析値は平均であって、保証ではありません。Valentine Clays はフリントの技術資料に「平均値。これは規格を示すものではありません」と記しており、Glazy にある年ごとの Custer 長石の分析値では、シリカが約68.5%から72.4%まで幅があります。各袋の**ロット番号**（製造ロットの記号）を記録に書いておくことをおすすめします。そうすれば、信頼している釉薬が変わったとき、原料が原因かどうかを判断できます。
 
-HSE warns that crystalline silica "can be wrongly labelled as 'amorphous silica'". And an SDS is about the powder, not the pot: it says nothing about whether a fired glaze is safe for food. Only a laboratory leach test of the fired pot can show that.
+英国の HSE は、結晶質シリカが「誤って『非晶質シリカ』と表示されていることがある」と警告しています。また、SDS は粉末についての書類で、器についてのものではありません。焼成した釉薬が食器として安全{{en: food safe}}かどうかについては、何も書かれていません。それを示せるのは、焼成した器を検査機関で溶出試験{{en: leach test}}にかけることだけです。
 
-### Names change, so buy by chemistry
+### 名前は変わるので化学組成で選ぶ
 
-Brand names come and go as mines close. Custer feldspar, mined in South Dakota for more than 75 years, ran out in late 2023. When Clay Art Center switched to G-200 AU and Mahavir, about half its glazes needed adjusting. G-200 and G-200 HP are gone too, and Laguna now imports Mahavir, whose chemistry is close to G-200.
+鉱山が閉じるたびに、銘柄は現れては消えていきます。サウスダコタ州で75年を超えて採掘されてきた Custer 長石は、2023年の終わりに枯渇しました。Clay Art Center が G-200 AU と Mahavir に切り替えたとき、同社の釉薬の約半分に調整が必要になりました。G-200 と G-200 HP もすでになく、現在は Laguna が Mahavir を輸入しています。Mahavir の化学組成は G-200 に近いものです。
 
-**Gerstley Borate**, a natural boron mineral in many older recipes, has been scarce since its mine closed in 2000, though New Mexico Clay reported in November 2025 that Laguna was supplying "Gerstley Borate Original". Sources disagree about **Gillespie Borate** as a replacement. Its maker sells it as pound-for-pound. Berkeley Potters Studio says it "is not a direct substitute", and Digitalfire found it changed a glaze's color. The safe course is to compare the two by their oxides, then test.
+**Gerstley Borate** は多くの古い調合に使われている天然のホウ素鉱物で、2000年に鉱山が閉じてから入手しにくくなっています。ただし New Mexico Clay は2025年11月に、Laguna が「Gerstley Borate Original」を供給していると伝えました。代わりとしての **Gillespie Borate** については、情報源によって意見が分かれます。メーカーはこれを同量で置き換えられるものとして販売しています。Berkeley Potters Studio は「直接の代替品ではない」と述べ、Digitalfire はこれで釉薬の色が変わったことを確かめています。安全なのは、両者を酸化物で比べてからテストすることです。
 
-Regional names differ too. In North America, **flint**, quartz and silica mean the same ground silica, and Digitalfire says you probably won't find true flint powder from suppliers. In the UK, flint is its own product: Valentine's is calcined (heated) silica. Both are nearly pure silica, so we expect them to be close, but check the analysis. For kaolin, Glazy says one-for-one swaps, such as EPK for a china clay, "often work just fine, especially when amounts are \<10%".
+地域によって名前も違います。北米では**フリント**{{en: flint}}、石英、シリカはどれも同じ粉砕したシリカを指し、Digitalfire によれば、本物のフリントの粉末は販売店ではおそらく見つかりません。英国ではフリントは別の製品で、Valentine のものは仮焼（加熱）したシリカです。どちらもほぼ純粋なシリカなので近いはずだと私たちは考えていますが、分析値を確認してください。カオリンについて Glazy は、EPK を china clay に替えるような同量での置き換えは「たいていうまくいく。特に量が10%未満のときは」と述べています。
 
-Many recipes name materials that are sold in one country and not another. The table below takes each material in Glazecalc's library that is not sold where you buy, and finds the closest of its kind that is, by their analyses. The figure is how far apart the two are: the grams by which their fired oxides differ, per 100 g of material, added up over every oxide. Within about 15 g, one can usually stand in for the other in a first test. The names carry the makers' and shops' own codes, so you can ask for them by name.
+多くの調合には、ある国では売られていても別の国では売られていない原料が出てきます。下の表は、Glazecalc のライブラリにある原料のうち、購入する国で売られていないものそれぞれについて、そこで売られている同じ種類の原料の中から分析値が最も近いものを探します。数値は両者の違いの大きさです。原料 100 g あたりで焼成後の酸化物が何グラム違うかを、すべての酸化物について足し合わせたものです。約 15 g 以内なら、最初のテストではふつう一方を他方の代わりに使えます。名前にはメーカーや販売店のコードが付いているので、その名前で注文できます。
 
 ::local-equivalents
 
 > [!NOTE]
-> Glazecalc compares materials by what they bring to the fired glaze, not by name. A [recipe](/recipe) with a material no longer made says what is used now. **Suggest amounts and compare** works the amounts out again for a substitute, and **Match with what I have** makes the recipe again from the materials on your shelf. Both match the fired oxides only, so test a small batch first.
+> Glazecalc は原料を名前ではなく、焼成後の釉薬に何をもたらすかで比べます。製造されなくなった原料を含む[調合](/recipe)には、今使われている原料が示されます。**[量を提案して比較]** は代替原料に合わせて量を計算し直し、**[手持ちの原料で作る]** は手持ちの原料で調合を作り直します。どちらも焼成後の酸化物を合わせるだけなので、まず少量でテストしてください。
 
 ## 原料と釉薬の保管 {#storing}
 
@@ -163,55 +163,55 @@ Label: ふるいのメッシュ
 | コバルトや鉄などの着色剤{{en: colorants}}を含む釉薬 | 100〜120 メッシュ     |
 | 灰釉、そのほか粗い原料を含む釉薬                    | 60〜80 メッシュ       |
 
-## Specific gravity {#specific-gravity lang=en}
+## 比重 {#specific-gravity}
 
-**Specific gravity** (SG) tells you how much powder is in your slurry. It is the weight of a volume of glaze divided by the weight of the same volume of water. Water is 1.00, and a glaze at {{SG 1.45}} weighs 145 g per 100 mL. Mixing to a measured SG is how you get the same thickness, and the same coat, every time. It has no units, so it is the same in grams or ounces.
+**比重**{{en: specific gravity, SG}}は、釉液{{en: slurry}}にどれだけ粉末が入っているかを示します。ある体積の釉薬の重さを、同じ体積の水の重さで割った値です。水は 1.00 で、{{SG 1.45}} の釉薬は 100 mL あたり 145 g です。測った比重に合わせて混ぜれば、毎回同じ濃さ、同じ釉層になります。比重には単位がないので、グラムでもオンスでも同じです。
 
-### Measure it by weighing 100 mL
+### 100 mL を量って測る
 
-1. Stir the glaze so nothing has settled.
-2. Put a 100 mL **graduated cylinder** (a tall, marked measuring tube) or a 100 mL syringe on the scale, and tare it.
-3. Fill it with glaze to exactly 100 mL, reading the mark at eye level.
-4. Weigh it and divide the grams by 100: 145 g is SG 1.45.
+1. 沈殿がないように、釉薬をかき混ぜてください。
+2. 100 mL の**メスシリンダー**（目盛りの付いた細長い計量用の筒）か 100 mL の注射器をはかりに載せ、風袋引きをしてください。
+3. 釉薬をちょうど 100 mL まで入れてください。目盛りは目の高さで読みます。
+4. 重さを量り、グラム数を100で割ってください。145 g なら比重 1.45 です。
 
-Digitalfire also marks a cup at the level of 500 g of water, fills it to the mark with glaze, and divides the weight by 500; a bigger, fuller measure is more accurate. A **hydrometer**, a float read where it sits in the glaze, is quick but can misread thick or gelled glazes. UK hydrometers, such as Potclays', read in degrees Baumé (°Bé). By our arithmetic, SG = 145 ÷ (145 − °Bé), so 46 °Bé is about 1.46. Older UK books give a **pint weight**, the ounces in an imperial pint of glaze: divide it by 20, so 29 oz is about SG 1.45 (also our arithmetic).
+Digitalfire は、カップに 500 g の水の水位で印を付け、釉薬を印まで入れて、その重さを500で割る方法も使っています。大きく、たっぷり入る容器ほど正確です。**比重計**は、釉薬に浮かべて止まった位置で読む浮きで、手早く測れますが、濃い釉薬やゲル状になった釉薬では読み違えることがあります。Potclays のものなど英国の比重計は、ボーメ度（°Bé）で表示します。私たちの計算では、比重 = 145 ÷ (145 − °Bé) なので、46 °Bé は約 1.46 です。英国の古い本は**パイント重量**、つまり英パイントあたりの釉薬のオンス数を示しています。これを20で割ってください。29 oz なら比重は約 1.45 です（これも私たちの計算です）。
 
-### What to aim for
+### 目標値
 
-Sources disagree, most of all on brushing and spraying, where the UK supplier Potclays gives much higher figures (its own are "for guidance only"). Treat every number as a starting point. Digitalfire's core advice is to find the SG and gelling that work for each glaze, then repeat them and write them down.
+情報源によって意見が分かれ、特に筆塗りと吹き掛けで大きく違います。英国の販売店 Potclays はずっと高い数値を示しています（Potclays 自身、その数値は「あくまで目安」としています）。どの数値も出発点として扱ってください。Digitalfire の基本的な助言は、釉薬ごとにうまくいく比重とゲル化の具合を見つけ、それを毎回再現し、書き留めることです。
 
-Table: Specific gravity targets, where sources disagree
-Label: Specific gravity targets
+Table: 比重の目標値（情報源で意見が分かれるもの）
+Label: 比重の目標値
 
-| Use      | Digitalfire and Glazy                                                                                                                 | Potclays (UK)                               | Safe starting point                                     |
-| -------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- | ------------------------------------------------------- |
-| Dipping  | {{SG 1.40}} (for a 5-second dip) to {{SG 1.50}} (for a 1-second dip); home-mixed glazes that are gelled do best at {{SG 1.43–1.45}}   | Clear {{SG 1.46–1.48}}; colored {{SG 1.61}} | {{SG 1.45}}; thin to {{SG 1.43}} and gel it if it drips |
-| Brushing | {{SG 1.25}} (thin clear) to {{SG 1.55}} (dark detail)                                                                                 | {{SG 1.71–1.81}}                            | Follow the product; use CMC gum or a brushing medium    |
-| Spraying | No figure; Hopper, writing for Ceramic Arts Network, says much thinner, with a deflocculant (an additive that makes a slurry runnier) | {{SG 1.71}}                                 | No reliable number; spray only in a spray booth         |
+| 用途     | Digitalfire と Glazy                                                                                                                                | Potclays（英国）                          | 無難な出発点                                               |
+| -------- | --------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------- | ---------------------------------------------------------- |
+| 浸し掛け | {{SG 1.40}}（5秒浸す場合）から {{SG 1.50}}（1秒浸す場合）まで。自家調合でゲル状にした釉薬は {{SG 1.43–1.45}} が最適                                 | 透明釉 {{SG 1.46–1.48}}、色釉 {{SG 1.61}} | {{SG 1.45}}。垂れるなら {{SG 1.43}} まで薄めてゲル状にする |
+| 筆塗り   | {{SG 1.25}}（薄い透明釉）から {{SG 1.55}}（濃い色の細部）まで                                                                                       | {{SG 1.71–1.81}}                          | 製品の指示に従う。CMC か筆塗り用の糊剤を使う               |
+| 吹き掛け | 数値なし。Ceramic Arts Network に寄稿している Hopper は、解膠剤{{en: deflocculant}}（釉液を流れやすくする添加剤）を加えて、ずっと薄くするとしている | {{SG 1.71}}                               | 信頼できる数値はない。吹き掛けは吹付けブースの中でだけ行う |
 
-To check a dipping glaze by eye, AMACO dips for 5 seconds and looks for a coat about as thick as a US dime. Digitalfire fires tiles dipped for 5 seconds to check.
+浸し掛け用の釉薬を目で確かめるために、AMACO は5秒浸して、米国のダイム硬貨ほどの厚さの釉層になっているかを見ます。Digitalfire は、5秒浸したテストピース{{en: test tiles}}を焼成して確かめます。
 
-### Water for a target SG: our estimate
+### 目標比重に必要な水: 私たちの目安
 
-The table below is our own arithmetic, not a source's. It assumes the powder's particles have a density of 2.6 g per cm³, which is an assumption, not a measurement. Clay, soluble materials and gelling all change a real glaze, so use it to start, then measure. As a check, it predicts {{SG 1.44}} for equal weights of powder and water, close to Digitalfire's measured {{SG 1.46}}. It also shows that 70 to 80 mL per 100 g starts you above {{SG 1.50}}, thicker than you need.
+下の表は情報源のものではなく、私たち自身の計算です。粉末の粒子の密度を cm³ あたり 2.6 g と仮定していますが、これは仮定であり、測定値ではありません。粘土、水溶性の原料、ゲル化はどれも実際の釉薬を変えるので、出発点として使い、そのあと測ってください。検算として、この計算では粉末と水が同じ重さのとき {{SG 1.44}} になり、Digitalfire の実測値 {{SG 1.46}} に近い値です。また、100 g あたり 70〜80 mL で始めると {{SG 1.50}} を超える、必要より濃い状態から始まることもわかります。
 
-Table: Water for a target specific gravity (our estimate)
-Label: Water for a target specific gravity
+Table: 目標比重に必要な水（私たちの目安）
+Label: 目標比重に必要な水
 
-| Target      | Per 100 g of powder |  Per kilogram |         Per pound |
-| ----------- | ------------------: | ------------: | ----------------: |
-| {{SG 1.40}} |        about 115 mL | about 1150 mL | about 18 US fl oz |
-| {{SG 1.45}} |         about 98 mL |  about 980 mL | about 15 US fl oz |
-| {{SG 1.50}} |         about 85 mL |  about 850 mL | about 13 US fl oz |
-| {{SG 1.60}} |         about 64 mL |  about 640 mL | about 10 US fl oz |
+| 目標        | 粉末 100 g あたり | キログラムあたり |   ポンドあたり |
+| ----------- | ----------------: | ---------------: | -------------: |
+| {{SG 1.40}} |         約 115 mL |       約 1150 mL | 約 18 US fl oz |
+| {{SG 1.45}} |          約 98 mL |        約 980 mL | 約 15 US fl oz |
+| {{SG 1.50}} |          約 85 mL |        約 850 mL | 約 13 US fl oz |
+| {{SG 1.60}} |          約 64 mL |        約 640 mL | 約 10 US fl oz |
 
-### Epsom salts, CMC gum and bentonite
+### エプソムソルト、CMC、ベントナイト
 
-**Epsom salts** make a glaze gel slightly when it stands still and flow again when it is stirred. This is called **flocculating** it, and a glaze that behaves this way is **thixotropic**: it goes on more evenly, drips less and settles less. Digitalfire suggests starting at about 2 g per gallon once the SG is right (roughly 0.5 g per liter, our conversion) and tuning the amount each time you mix, since no recipe should fix the dose. We suggest dissolving it in a little hot water first. In a Digitalfire example, a glaze at {{SG 1.45}} dripped, so water brought it down to {{SG 1.43}} and Epsom salts gelled it back to creamy, and it went on evenly. A rough check: stir, stop and watch. A gelled glaze moves on for about 2 or 3 seconds, then stops and springs back a little.
+**エプソムソルト**（硫酸マグネシウム）を加えると、釉薬は静かに置いておくと軽くゲル状になり、かき混ぜるとまた流れるようになります。これを**凝集させる**{{en: flocculating}}といい、このようにふるまう釉薬は**チキソ性**{{en: thixotropic}}がある、といいます。ムラなく掛かり、垂れにくく、沈殿しにくくなります。Digitalfire は、比重が合ったらガロンあたり約 2 g から始め（私たちの換算では、リットルあたりおよそ 0.5 g）、混ぜるたびに量を調整することを勧めています。量は調合で固定するべきものではないからです。私たちは、先に少量のお湯に溶かすことをおすすめします。Digitalfire の例では、{{SG 1.45}} の釉薬が垂れたので、水で {{SG 1.43}} まで下げ、エプソムソルトでクリーム状に戻したところ、ムラなく掛かりました。簡単な確かめ方: かき混ぜて、止めて、観察します。ゲル状になった釉薬は約2、3秒動き続けてから止まり、少し戻ります。
 
-**CMC gum** (carboxymethyl cellulose) makes a slurry stickier and slower to dry, and leaves a harder coat that holds to the pot. It matters most for brushing glazes and glazes high in frit. Digitalfire's example blends 3.75 g into 1000 g of slurry, and it has to go in with a blender. A glaze with CMC will not gel with Epsom salts, and since microbes feed on the gum, it can change in the bucket and start to smell.
+**CMC**（カルボキシメチルセルロースの糊剤）は、釉液をねばりのある乾きにくいものにし、器にしっかり付く硬い釉層を残します。筆塗り用の釉薬と、フリット{{en: frit}}の多い釉薬で特に重要です。Digitalfire の例では釉液 1000 g に 3.75 g を混ぜており、ミキサーで混ぜ込む必要があります。CMC を含む釉薬は、エプソムソルトではゲル状になりません。また、微生物が糊剤を餌にするので、バケツの中で変化して、においが出てくることがあります。
 
-**Bentonite**, a very fine clay, helps hold the other particles in suspension. Dipping glazes usually rely on 15 to 25% raw clay for this. For a recipe short of clay, about 1 to 3% bentonite helps; Digitalfire says a glaze with more than 15% clay should not need more than 1%.
+**ベントナイト**はとても細かい粘土で、ほかの粒子を懸濁させておくのを助けます。浸し掛け用の釉薬は、ふつうこのために15〜25%の生の粘土に頼っています。粘土の少ない調合には、約1〜3%のベントナイトが役立ちます。Digitalfire は、粘土が15%を超える釉薬には1%を超えるベントナイトは必要ないはずだとしています。
 
 ## テストピースとラインブレンド {#testing}
 
@@ -276,7 +276,7 @@ Label: 記録のテンプレート
 > [!NOTE]
 > Glazecalc では、保存した[調合](/recipe)に調合そのものが入ります。[焼成記録](/firing)には焼成ごとに、窯、日付、時刻、温度、コーン、メモを記録します。[工房ノート](/notes)には、上の仕込みの記録や各テストピースの結果など、それ以外のすべてを残せます。
 
-## Sources {#sources lang=en}
+## 出典 {#sources}
 
 - [Glazy: Raw materials](https://help.glazy.org/concepts/materials)
 - [Glazy: Specific gravity](https://help.glazy.org/testing/specific-gravity)
@@ -290,7 +290,7 @@ Label: 記録のテンプレート
 - [Digitalfire: Mahavir potash feldspar](https://digitalfire.com/material/mahavir+potash+feldspar)
 - [Digitalfire: Flint](https://digitalfire.com/material/flint)
 - [Clay Art Center: The end of an era, the extinction of Custer feldspar](https://www.clayartcenter.org/clay-art-center-blog/2025/4/the-end-of-an-era-the-extinction-of-custer-feldspar)
-- [Berkeley Potters Studio: What the flux, November 2023](https://www.berkeleypottersstudio.com/what-the-flux-nov-2023)
+- [Berkeley Potters Studio: What the flux（2023年11月）](https://www.berkeleypottersstudio.com/what-the-flux-nov-2023)
 - [New Mexico Clay: Gerstley Borate Original](https://nmclay.com/gerstley-borate-original)
 - [Ceramic Arts Network: Glaze chemistry 101, a quick course on mixing ceramic glazes (Zakin)](https://ceramicartsnetwork.org/daily/article/Glaze-Chemistry-101-A-Quick-Course-on-Mixing-Ceramic-Glazes)
 - [Ceramic Arts Network: How to keep good records when testing ceramic glazes (Willers)](<https://ceramicartsnetwork.org/daily/article/how-to-keep-good-records-when-testing-ceramic-glazes-(and-improve-your-results!)>)
