@@ -3,79 +3,79 @@ title: Ψήσιμο σε ένα απλό καμίνι
 lead: Πώς ψήνετε σε ηλεκτρικό καμίνι με Kiln-Sitter ή με χειροκίνητους διακόπτες: επιλογή, τοποθέτηση και ανάγνωση των κώνων, με δημοσιευμένα προγράμματα για το ψήσιμο μπισκουί και το ψήσιμο του υαλώματος.
 ---
 
-## Cones: what they measure {#cones lang=en}
+## Κώνοι: τι μετρούν {#cones}
 
 > [!NOTE]
-> Follow your kiln's own manual first. This guide gathers what cone and kiln makers publish about basic electric kilns; it does not replace the instructions for your model, and where the two differ, the manual wins.
+> Ακολουθήστε πρώτα το εγχειρίδιο του δικού σας καμινιού. Αυτός ο οδηγός συγκεντρώνει όσα δημοσιεύουν οι κατασκευαστές κώνων και καμινιών για τα απλά ηλεκτρικά καμίνια. Δεν αντικαθιστά τις οδηγίες για το μοντέλο σας, και όπου τα δύο διαφέρουν, ισχύει το εγχειρίδιο.
 
-A **pyrometric cone** is a small, slender pyramid made from a standardized ceramic powder. When it has had enough heat, it softens and bends over in a repeatable way. You set cones in the kiln beside the ware and read how far they bent.
+Ο **πυρομετρικός κώνος**{{en: pyrometric cone}} είναι μια μικρή, λεπτή πυραμίδα από τυποποιημένη κεραμική σκόνη. Όταν δεχτεί αρκετή θερμότητα, μαλακώνει και λυγίζει, πάντα με τον ίδιο τρόπο. Τοποθετείτε κώνους στο καμίνι δίπλα στα κομμάτια και μετά διαβάζετε πόσο λύγισαν.
 
-Cones measure **heatwork**, the combined effect of temperature and time. In the words of Orton, the main US cone maker, "Cones do not measure temperature alone." A cone heated slowly bends at a lower temperature than one heated fast, and a glaze behaves the same way. So Orton gives each cone's temperature for a stated heating rate over the last {{180 °F; 100 °C}} of the firing. Once a cone starts to move, it bends over a narrow range, "usually less than 40° F" (22 °C).
+Οι κώνοι μετρούν το **θερμικό έργο**{{en: heatwork}}, τη συνδυασμένη επίδραση θερμοκρασίας και χρόνου. Όπως το λέει η Orton, η κύρια εταιρεία κατασκευής κώνων στις ΗΠΑ: «Οι κώνοι δεν μετρούν μόνο τη θερμοκρασία.» Ένας κώνος που θερμαίνεται αργά λυγίζει σε χαμηλότερη θερμοκρασία από έναν που θερμαίνεται γρήγορα, και ένα υάλωμα{{en: glaze}} συμπεριφέρεται με τον ίδιο τρόπο. Γι’ αυτό η Orton δίνει τη θερμοκρασία κάθε κώνου για συγκεκριμένο ρυθμό ανόδου στους τελευταίους {{180 °F; 100 °C}} του ψησίματος. Μόλις ένας κώνος αρχίσει να κινείται, λυγίζει μέσα σε ένα στενό εύρος, «συνήθως λιγότερο από 40° F» (22 °C).
 
-### Cone numbers
+### Αριθμοί κώνων
 
-Cone numbers run from 022, the coolest, up to 42. A leading zero marks the cooler series and is read as "oh": cone 06 ("oh-six") is cooler than cone 04, and cone 01 needs less heat than cone 1. Orton warns that it is important not to mix the two series up. The gap is large: cone 06 bends more than {{400 °F; 220 °C}} cooler than cone 6.
+Οι αριθμοί των κώνων πηγαίνουν από το 022, τον κώνο της χαμηλότερης θερμοκρασίας, έως το 42. Ένα μηδενικό μπροστά δείχνει τη σειρά των χαμηλότερων θερμοκρασιών και διαβάζεται «μηδέν»: ο κώνος 06 («μηδέν έξι») λυγίζει σε χαμηλότερη θερμοκρασία από τον κώνο 04, και ο κώνος 01 χρειάζεται λιγότερη θερμότητα από τον κώνο 1. Η Orton προειδοποιεί ότι είναι σημαντικό να μην μπερδεύετε τις δύο σειρές. Η διαφορά είναι μεγάλη: ο κώνος 06 λυγίζει σε θερμοκρασία χαμηλότερη κατά περισσότερο από {{400 °F; 220 °C}} από τον κώνο 6.
 
-Table: Common firing ranges, for self-supporting cones at {{108 °F/h; 60 °C/h}}
-Label: Firing ranges
+Table: Συνηθισμένα εύρη ψησίματος, για αυτοστηριζόμενους κώνους με ρυθμό {{108 °F/h; 60 °C/h}}
+Label: Εύρη ψησίματος
 
-| Range     | Cones |                    Temperature | Typical use                              |
-| --------- | ----- | -----------------------------: | ---------------------------------------- |
-| Low fire  | 06–04 |  {{1828–1945 °F; 998–1063 °C}} | Earthenware glazes; bisque               |
-| Mid fire  | 5–6   | {{2167–2232 °F; 1186–1222 °C}} | Electric-kiln stoneware and porcelain    |
-| High fire | 9–10  | {{2300–2345 °F; 1260–1285 °C}} | Mostly gas-fired stoneware and porcelain |
+| Εύρος              | Κώνοι |                    Θερμοκρασία | Συνήθης χρήση                                                                         |
+| ------------------ | ----- | -----------------------------: | ------------------------------------------------------------------------------------- |
+| Χαμηλή θερμοκρασία | 06–04 |  {{1828–1945 °F; 998–1063 °C}} | Υαλώματα για κεραμικά χαμηλής θερμοκρασίας{{en: earthenware}}, μπισκουί{{en: bisque}} |
+| Μέση θερμοκρασία   | 5–6   | {{2167–2232 °F; 1186–1222 °C}} | Stoneware και πορσελάνη σε ηλεκτρικό καμίνι                                           |
+| Υψηλή θερμοκρασία  | 9–10  | {{2300–2345 °F; 1260–1285 °C}} | Κυρίως stoneware και πορσελάνη σε καμίνι αερίου                                       |
 
-Suppliers in the UK, Europe, Australia and New Zealand often give a temperature in °C rather than a cone: find the nearest cone in the chart below and confirm it with a witness cone. Seger and Staffordshire cones, the older European series, should not be assumed to share Orton's numbers, so this guide uses Orton cones.
+Οι προμηθευτές στο Ηνωμένο Βασίλειο, στην Ευρώπη, στην Αυστραλία και στη Νέα Ζηλανδία δίνουν συχνά θερμοκρασία σε °C αντί για κώνο: βρείτε τον πλησιέστερο κώνο στον πίνακα παρακάτω και επιβεβαιώστε τον με έναν κώνο-μάρτυρα{{en: witness cone}}. Δεν θα πρέπει να υποθέτετε ότι οι κώνοι Seger και Staffordshire, οι παλαιότερες ευρωπαϊκές σειρές, έχουν τους ίδιους αριθμούς με τους κώνους Orton, γι’ αυτό ο οδηγός χρησιμοποιεί κώνους Orton.
 
-### Holding adds heatwork
+### Η παραμονή προσθέτει θερμικό έργο
 
-A **hold** (also called a **soak**) keeps the kiln at one temperature for a while. Because cones measure heatwork, a hold at the top can stand in for a hotter peak. Orton gives these rough equivalents:
+Η **παραμονή**{{en: hold}} (οι κεραμίστες τη λένε και **σιδέρωμα**{{en: soak}}) κρατά το καμίνι σε μία θερμοκρασία για κάποιο διάστημα. Επειδή οι κώνοι μετρούν θερμικό έργο, μια παραμονή στο ανώτατο σημείο μπορεί να υποκαταστήσει μια υψηλότερη τελική θερμοκρασία. Η Orton δίνει αυτές τις κατά προσέγγιση αντιστοιχίες:
 
-Table: What a hold at the peak is worth
-Label: Holds and heatwork
+Table: Τι αξίζει μια παραμονή στην τελική θερμοκρασία
+Label: Παραμονή και θερμικό έργο
 
-| Hold             | Roughly the same heatwork as             |
-| ---------------- | ---------------------------------------- |
-| About 20 minutes | A peak {{18 °F; 10 °C}} hotter           |
-| 40–60 minutes    | A peak {{36 °F; 20 °C}} hotter           |
-| About 2 hours    | A peak {{54 °F; 30 °C}} hotter           |
-| 4–6 hours        | Enough to bend a cone two numbers hotter |
+| Παραμονή         | Περίπου το ίδιο θερμικό έργο με                          |
+| ---------------- | -------------------------------------------------------- |
+| Περίπου 20 λεπτά | Τελική θερμοκρασία υψηλότερη κατά {{18 °F; 10 °C}}       |
+| 40–60 λεπτά      | Τελική θερμοκρασία υψηλότερη κατά {{36 °F; 20 °C}}       |
+| Περίπου 2 ώρες   | Τελική θερμοκρασία υψηλότερη κατά {{54 °F; 30 °C}}       |
+| 4–6 ώρες         | Αρκετή για να λυγίσει ένας κώνος δύο αριθμούς θερμότερος |
 
-Orton adds that a hold of 1–2 hours "may be sufficient to deform the next higher cone number".
+Η Orton προσθέτει ότι μια παραμονή 1–2 ωρών «μπορεί να αρκεί για να παραμορφώσει τον αμέσως επόμενο αριθμό κώνου».
 
-So a hold is never free: if you add one, expect the cones to bend further, and lower the peak to match.
+Άρα μια παραμονή δεν είναι ποτέ χωρίς κόστος: αν προσθέσετε μία, να περιμένετε ότι οι κώνοι θα λυγίσουν περισσότερο, και χαμηλώστε ανάλογα την τελική θερμοκρασία.
 
-### Kinds of cone
+### Είδη κώνων
 
-Orton makes four kinds. Two stand on the shelf to show what the ware received; two are for the kiln sitter.
+Η Orton φτιάχνει τέσσερα είδη. Τα δύο στέκονται στην πυρόπλακα και δείχνουν τι δέχτηκαν τα κομμάτια. Τα άλλα δύο είναι για το Kiln-Sitter (τον μηχανικό διακόπτη που σβήνει το καμίνι).
 
-Table: Orton's four kinds of cone
-Label: Kinds of cone
+Table: Τα τέσσερα είδη κώνων της Orton
+Label: Είδη κώνων
 
-| Kind            | Used for                  | How it stands                                                                               |
-| --------------- | ------------------------- | ------------------------------------------------------------------------------------------- |
-| Self-supporting | Witness cone on the shelf | A built-in base sets the height, 1¾ in (44 mm), and the 8° lean; no holder needed           |
-| Large           | Witness cone on the shelf | Set in a plaque or a pat of clay with exactly 2 in (51 mm) showing, leaning 8° from upright |
-| Small (junior)  | Kiln sitter               | Lies across the sitter's supports; 15/16 in (24 mm) showing if stood on a shelf             |
-| Bar             | Kiln sitter               | The same powder as small cones, in an even bar shape                                        |
+| Είδος            | Χρήση                         | Πώς στέκεται                                                                                                  |
+| ---------------- | ----------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| Αυτοστηριζόμενος | Κώνος-μάρτυρας στην πυρόπλακα | Μια ενσωματωμένη βάση ορίζει το ύψος, 1¾ ίντσες (44 mm), και την κλίση των 8°. Δεν χρειάζεται στήριγμα        |
+| Μεγάλος          | Κώνος-μάρτυρας στην πυρόπλακα | Μπαίνει σε βάση κώνων ή σε ένα κομμάτι πηλού, με ακριβώς 2 ίντσες (51 mm) έξω, με κλίση 8° από την κατακόρυφο |
+| Μικρός (junior)  | Kiln-Sitter                   | Ακουμπά οριζόντια στα στηρίγματα του Kiln-Sitter. Αν στηθεί σε πυρόπλακα, μένουν έξω 15/16 της ίντσας (24 mm) |
+| Ράβδος           | Kiln-Sitter                   | Η ίδια σκόνη με τους μικρούς κώνους, σε σχήμα ομοιόμορφης ράβδου                                              |
 
-Height matters: a ¼ in (6 mm) difference in the height of a large cone "can cause more than a half cone difference in bending". Cones do not go bad or age, and damp storage does not affect them.
+Το ύψος μετράει: διαφορά ¼ της ίντσας (6 mm) στο ύψος ενός μεγάλου κώνου «μπορεί να προκαλέσει διαφορά μεγαλύτερη από μισό κώνο στην κάμψη». Οι κώνοι δεν χαλάνε ούτε παλιώνουν, και η υγρασία στην αποθήκευση δεν τους επηρεάζει.
 
-### What "cone 6" means in practice
+### Τι σημαίνει «κώνος 6» στην πράξη
 
-The chart gives a self-supporting cone 6 as {{2232 °F; 1222 °C}}, but only when the last {{180 °F; 100 °C}} climbs at {{108 °F/h; 60 °C/h}}. Climbing at {{270 °F/h; 150 °C/h}}, the same cone bends at {{2269 °F; 1243 °C}}. Real kilns differ again: Digitalfire reports that "Most kilns reach cone 6 at 2200°F, not 2232°F". So "cone 6" means the ware received the heatwork that bends a cone 6, whatever a thermometer read at the time.
+Ο πίνακας δίνει για τον αυτοστηριζόμενο κώνο 6 τους {{2232 °F; 1222 °C}}, αλλά μόνο όταν οι τελευταίοι {{180 °F; 100 °C}} ανεβαίνουν με ρυθμό {{108 °F/h; 60 °C/h}}. Με άνοδο {{270 °F/h; 150 °C/h}}, ο ίδιος κώνος λυγίζει στους {{2269 °F; 1243 °C}}. Τα πραγματικά καμίνια διαφέρουν και πάλι: το Digitalfire αναφέρει ότι «Τα περισσότερα καμίνια φτάνουν στον κώνο 6 στους 2200°F, όχι στους 2232°F». Άρα «κώνος 6» σημαίνει ότι τα κομμάτια δέχτηκαν το θερμικό έργο που λυγίζει έναν κώνο 6, ό,τι κι αν έδειχνε ένα θερμόμετρο εκείνη την ώρα.
 
 :::orton
 
 > [!NOTE]
-> Fire by the cone, not the clock or the dial. Set a controller by cone number, and let a witness cone on the shelf confirm every firing.
+> Ψήνετε με βάση τον κώνο, όχι το ρολόι ή το καντράν. Ρυθμίστε τον ελεγκτή με τον αριθμό του κώνου, και αφήστε έναν κώνο-μάρτυρα στην πυρόπλακα να επιβεβαιώνει κάθε ψήσιμο.
 
 :::
 
 :::temperature
 
 > [!NOTE]
-> Firing by temperature, keep the end of every firing the same: the same last rate of climb, the same peak and the same hold. Then a glaze that worked once works again.
+> Όταν ψήνετε κατά θερμοκρασία, κρατήστε το τέλος κάθε ψησίματος ίδιο: τον ίδιο τελευταίο ρυθμό ανόδου, την ίδια τελική θερμοκρασία και την ίδια παραμονή. Τότε ένα υάλωμα που πέτυχε μία φορά θα πετύχει ξανά.
 
 :::
 
@@ -596,22 +596,22 @@ Label: Σημείο εκκίνησης, χωρίς ελεγκτή
 
 Το **πυρόμετρο** είναι ένα όργανο μέτρησης θερμοκρασίας που διαβάζει ένα **θερμοστοιχείο**, έναν αισθητήρα θερμότητας που περνά μέσα από το τοίχωμα του καμινιού. Δείχνει πόσο γρήγορα ανεβαίνει το καμίνι, ώστε να διαλέξετε τη σωστή στήλη του πίνακα κώνων. Μετρά όμως κοντά στο τοίχωμα, όχι στα κομμάτια, και με τον καιρό αποκλίνει. Η L&L σημειώνει ότι ένα θερμοστοιχείο τύπου K μπορεί να αποκλίνει πάνω από {{25 °F; 14 °C}} μετά από επανειλημμένα ψησίματα στον κώνο 6, «διαφορά μεγαλύτερη από έναν ολόκληρο κώνο», ενώ ένας αυτοστηριζόμενος κώνος δεν διαφέρει πάνω από {{4 °F; 2 °C}}. Η Orton λέει ότι τα πυρόμετρα χρειάζονται επαναβαθμονόμηση πού και πού, και ότι με τους κώνους τα ελέγχετε.
 
-## Venting, peeking and safety {#venting lang=en}
+## Εξαερισμός, παρατήρηση και ασφάλεια {#venting}
 
-### Venting
+### Εξαερισμός
 
-Early in a firing, clay and glaze give off water vapor and fumes, including carbon monoxide, and glazes can give off toxic fumes later in the firing too. L&L calls venting them "essential". With no vent system, that means the lid propped and the peepholes open in the early stages, as in the procedures above; slowing the heating during this time also helps the carbon burn out. In a kiln without a vent, Dawson, who made the sitter, also says to leave the top peephole open for the whole firing: the venting "will reduce deterioration of the kiln's metal parts and increase the life of the tube assembly". A **downdraft vent** (a powered vent fitted to the kiln) changes this. It does the venting, so Orton says the lid and peepholes stay closed for the whole firing except to check the cones, and L&L says to leave the vent on and plug the peepholes.
+Στην αρχή του ψησίματος, ο πηλός και το υάλωμα{{en: glaze}} βγάζουν υδρατμούς και αναθυμιάσεις, μεταξύ αυτών και μονοξείδιο του άνθρακα, και τα υαλώματα μπορεί να βγάλουν τοξικές αναθυμιάσεις και αργότερα στο ψήσιμο. Η L&L χαρακτηρίζει τον εξαερισμό τους «απαραίτητο». Χωρίς σύστημα εξαερισμού, αυτό σημαίνει καπάκι μισάνοιχτο και οπές παρατήρησης ανοιχτές στα πρώτα στάδια, όπως στις διαδικασίες παραπάνω. Αν η θέρμανση γίνεται πιο αργά σε αυτό το διάστημα, βοηθά επίσης να καεί ο άνθρακας. Σε καμίνι χωρίς εξαερισμό, ο Dawson, που κατασκεύασε το Kiln-Sitter, λέει επίσης να μένει ανοιχτή η πάνω οπή παρατήρησης σε όλο το ψήσιμο: ο εξαερισμός «θα μειώσει τη φθορά των μεταλλικών μερών του καμινιού και θα αυξήσει τη διάρκεια ζωής της διάταξης του σωλήνα». Ο **εξαερισμός από τη βάση του καμινιού** (ένα ηλεκτρικό σύστημα εξαερισμού τοποθετημένο στο καμίνι) το αλλάζει αυτό. Αναλαμβάνει τον εξαερισμό, για αυτό η Orton λέει ότι το καπάκι και οι οπές παρατήρησης μένουν κλειστά σε όλο το ψήσιμο, εκτός από τις στιγμές που ελέγχετε τους κώνους{{en: cones}}, και η L&L λέει να αφήνετε τον εξαερισμό αναμμένο και να φράζετε τις οπές παρατήρησης.
 
-For venting the room, and for carbon monoxide alarms, see [Safe mixing and ventilation](/guides/safe-mixing) and [Don't poison your family](/guides/home-safety).
+Για τον εξαερισμό του χώρου, και για τους ανιχνευτές μονοξειδίου του άνθρακα, δείτε τους οδηγούς [Ασφαλής ανάμειξη και εξαερισμός](/guides/safe-mixing) και [Μη δηλητηριάσετε την οικογένειά σας](/guides/home-safety).
 
-### While the kiln is firing
+### Όσο ψήνει το καμίνι
 
-- Look through a peephole only with IR-rated shade 3 welding glasses; sunglasses are not enough. Skutt advises twisting the plugs into place so they do not fall out.
-- Do not leave the kiln unattended beyond its expected firing time; a sitter is not a fail-safe.
-- Never fire on or near anything that burns, such as a wood floor or carpet.
-- Keep the clearances in your manual. Published figures range from 12 in (30 cm) to 3 ft (91 cm); where the manual is silent, 18 in (46 cm) from walls and 3 ft (91 cm) from anything that burns is the safest choice.
-- Keep the space around the sitter's weight clear so it can drop.
-- When the firing ends, turn the switches off and turn off the breaker as well.
+- Κοιτάτε από οπή παρατήρησης μόνο με γυαλιά συγκόλλησης με βαθμό σκίασης 3 και φίλτρο υπερύθρων. Τα γυαλιά ηλίου δεν αρκούν. Η Skutt συμβουλεύει να βάζετε τις τάπες στη θέση τους στρίβοντάς τες, ώστε να μην πέφτουν.
+- Μην αφήνετε το καμίνι χωρίς επίβλεψη πέρα από τον αναμενόμενο χρόνο ψησίματος. Το Kiln-Sitter δεν είναι αλάνθαστη διάταξη ασφαλείας.
+- Μην ψήνετε ποτέ πάνω ή κοντά σε ό,τι μπορεί να καεί, όπως ξύλινο πάτωμα ή χαλί.
+- Τηρήστε τις αποστάσεις ασφαλείας του εγχειριδίου σας. Οι δημοσιευμένες τιμές κυμαίνονται από 12 ίντσες (30 cm) έως 3 πόδια (91 cm). Όπου το εγχειρίδιο δεν λέει τίποτα, η ασφαλέστερη επιλογή είναι 18 ίντσες (46 cm) από τους τοίχους και 3 πόδια (91 cm) από ό,τι μπορεί να καεί.
+- Κρατήστε ελεύθερο τον χώρο γύρω από το βαρίδι του Kiln-Sitter, ώστε να μπορεί να πέσει.
+- Όταν τελειώσει το ψήσιμο, κλείστε τους διακόπτες και κατεβάστε και την ασφάλεια.
 
 ## Κρύωμα και ξεφόρτωμα {#cooling}
 

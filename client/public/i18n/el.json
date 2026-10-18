@@ -17,13 +17,17 @@
     "confirmEmail": "Επιβεβαίωση του email σας - Glazecalc",
     "home": "Το σημειωματάριο του εργαστηρίου σας - Glazecalc",
     "recipe": "Συνταγές - Glazecalc",
+    "import": "Επικόλληση συνταγών - Glazecalc",
+    "blends": "Μείγματα για δοκιμαστικά πλακίδια - Glazecalc",
     "material": "Υλικά - Glazecalc",
     "additive": "Πρόσθετα - Glazecalc",
     "firingLogs": "Ημερολόγια ψησίματος - Glazecalc",
     "notes": "Σημειώσεις - Glazecalc",
     "trash": "Κάδος απορριμμάτων - Glazecalc",
     "account": "Ο λογαριασμός και οι ρυθμίσεις σας - Glazecalc",
-    "notFound": "Δεν βρέθηκε - Glazecalc"
+    "notFound": "Δεν βρέθηκε - Glazecalc",
+    "shared": "Κοινοποιημένη συνταγή - Glazecalc",
+    "assistants": "Χρήση του Glazecalc από τον βοηθό AI σας - Glazecalc"
   },
   "nav": {
     "skip": "Μετάβαση στο περιεχόμενο",
@@ -96,9 +100,14 @@
   },
   "remove": {
     "alreadyRemoved": "Είχε ήδη καταργηθεί: «{name}».",
+    "trashed": "Μεταφέρθηκε στον Κάδο απορριμμάτων: «{name}».",
+    "undo": "Αναίρεση",
+    "restored": "Επαναφέρθηκε: «{name}».",
+    "restoreFailed": "Η επαναφορά δεν ήταν δυνατή: «{name}». Παραμένει στον Κάδο απορριμμάτων.",
     "failed": "Δεν ήταν δυνατή η κατάργηση. Παρακαλώ δοκιμάστε ξανά.",
     "question": "Κατάργηση του «{name}»;",
     "cannotUndo": "Αυτή η ενέργεια δεν αναιρείται.",
+    "toTrash": "Μπορείτε να το επαναφέρετε από τον Κάδο απορριμμάτων μέσα σε 30 ημέρες.",
     "removing": "Κατάργηση...",
     "yes": "Ναι, κατάργηση",
     "cancel": "Ακύρωση",
