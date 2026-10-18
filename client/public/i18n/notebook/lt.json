@@ -17,6 +17,14 @@
         "title": "Receptai",
         "text": "Sudarykite glazūrą iš žaliavų ir kiekių, peržiūrėkite jos Segerio formulę (UMF) ir įrašykite ją."
       },
+      "import": {
+        "title": "Receptų įklijavimas",
+        "text": "Įklijuokite receptus iš svetainės, skaičiuoklės ar užrašų, patikrinkite, kas perskaityta, ir įrašykite juos."
+      },
+      "blends": {
+        "title": "Mišiniai bandiniams",
+        "text": "Sumaišykite du, tris ar keturis savo receptus į sunumeruotus bandinius, nurodant, ką pasverti kiekvienam."
+      },
       "material": {
         "title": "Žaliavos",
         "text": "Pridėkite savo žaliavų pagal cheminę formulę arba tiekėjo pateiktą analizę."
@@ -99,6 +107,35 @@
     "saveFailed": "Klaida: užklausa serveriui nepavyko."
   },
   "trash": {
-    "title": "Šiukšlinė"
+    "title": "Šiukšlinė",
+    "lead": "Tai, ką pašalinate iš savo receptų, žaliavų, užrašų ir žurnalų, čia laukia 30 dienų. Grąžinkite arba panaikinkite visam laikui.",
+    "listHeading": "Šiukšlinėje",
+    "none": "Šiukšlinė tuščia.",
+    "untitled": "Be pavadinimo",
+    "kinds": {
+      "recipes": "Receptas",
+      "materials": "Žaliava",
+      "additives": "Priedas",
+      "notes": "Užrašas",
+      "firing": "Degimo žurnalas",
+      "advice": "Patarimas",
+      "other": "Įrašas"
+    },
+    "removedOn": "Pašalinta {date}",
+    "goesOn": "Bus panaikinta visam laikui {date}",
+    "byApp": "Pašalino prijungta programa",
+    "putBack": "Grąžinti",
+    "putBackName": "Grąžinti {name}",
+    "restored": "Grąžinta į buvusią vietą: „{name}“.",
+    "restoredAlready": "Jau grąžinta: „{name}“.",
+    "restoreFailed": "„{name}“ grąžinti nepavyko. Bandykite dar kartą.",
+    "deleted": "Visam laikui panaikinta: „{name}“.",
+    "empty": "Ištuštinti šiukšlinę",
+    "emptyQuestion": "Visam laikui panaikinti {count, plural, one {# įrašą} few {visus # įrašus} many {visus # įrašo} other {visus # įrašų}} šiukšlinėje? Šio veiksmo anuliuoti negalima.",
+    "emptyYes": "Taip, ištuštinti",
+    "emptying": "Tuštinama...",
+    "emptied": "Šiukšlinė tuščia.",
+    "emptyFailed": "Šiukšlinės ištuštinti nepavyko. Bandykite dar kartą.",
+    "fetchFailed": "Šiukšlinės įkelti nepavyko. Bandykite dar kartą."
   }
 }

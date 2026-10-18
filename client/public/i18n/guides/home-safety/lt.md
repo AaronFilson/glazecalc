@@ -129,25 +129,25 @@ Vaikai gauna daugiau namų dulkių nei suaugusieji. Jie įkvepia daugiau oro, pa
 
 Programoje Glazecalc švinas išjungtas, nebent jį įjungsite [nustatymuose](/account). Kai švinas išjungtas, programa niekada neįtraukia jo į receptą ir jo nesiūlo.
 
-## Pets {#pets lang=en}
+## Augintiniai {#pets}
 
 > [!NOTE]
-> We found no veterinary study or guidance written for pets in potters' homes. The advice in this section is common sense, built on general facts about lead, barium and birds. It does not come from a veterinary source.
+> Neradome jokio veterinarinio tyrimo ar rekomendacijų, parašytų apie augintinius keramikų namuose. Šio skyriaus patarimai – sveikas protas, paremtas bendrais faktais apie šviną, barį ir paukščius. Jie paimti ne iš veterinarinio šaltinio.
 
-### What is known
+### Kas žinoma
 
-The Pet Poison Helpline says "Lead is toxic for all species, but young and/or malnourished animals are at highest risk for poisoning", with signs such as vomiting, diarrhea, not eating, stumbling, seizures and blindness. A veterinary case report describes a dog that ate sparklers containing barium nitrate (a soluble barium salt, not a glaze material): it developed sudden weakness, drooling and an irregular heartbeat, and recovered with veterinary treatment. Birds are a special case: a University of Illinois vet explains that "Birds have a highly sophisticated and ultra efficient respiratory system, making them particularly vulnerable to the inhalation of fumes and aerosols."
+Gyvūnų apsinuodijimų informacijos linija Pet Poison Helpline teigia: „Švinas toksiškas visoms rūšims, tačiau labiausiai apsinuodyti rizikuoja jauni ir (arba) nepakankamai maitinami gyvūnai“; požymiai – vėmimas, viduriavimas, atsisakymas ėsti, svirduliavimas, traukuliai ir aklumas. Veterinarinis klinikinio atvejo aprašymas pasakoja apie šunį, kuris suėdė bengališkų ugnelių su bario nitratu (tirpia bario druska, ne glazūros{{en: glaze}} medžiaga): staiga atsirado silpnumas, seilėtekis ir nereguliarus širdies plakimas, o veterinarui gydant šuo pasveiko. Paukščiai – ypatingas atvejis: Ilinojaus universiteto veterinaras paaiškina, kad „paukščių kvėpavimo sistema labai sudėtinga ir itin efektyvi, todėl jie ypač jautrūs įkvepiamiems dūmams ir aerozoliams“.
 
-### Common-sense rules
+### Sveiko proto taisyklės
 
-- Keep pets out of the studio, with the door shut.
-- Dogs chew bags and drink from buckets. Keep bags in a closed cabinet and a lid on every bucket.
-- Cats walk through dust and lick it off their paws and fur. Wet-clean the floor and keep cats out of the studio, so there is nothing to groom off.
-- Birds and small mammals (rabbits, guinea pigs, hamsters) share the household air. Keep them in a far room with the door shut while you handle dry materials and while the kiln fires.
-- Fish tanks collect settling dust. Keep them out of the studio, and covered.
-- Keep pet food and water bowls away from the studio and kiln, and use commercial or tested bowls, not studio experiments.
+- Neleiskite augintinių į dirbtuvę, laikykite jos duris uždarytas.
+- Šunys graužia maišus ir geria iš kibirų. Maišus laikykite uždarytoje spintelėje, o kiekvieną kibirą – uždengtą dangčiu.
+- Katės vaikšto per dulkes ir nusilaižo jas nuo letenų ir kailio. Grindis valykite drėgnu būdu ir neleiskite kačių į dirbtuvę, kad nebūtų ko nusilaižyti.
+- Paukščiai ir smulkūs žinduoliai (triušiai, jūrų kiaulytės, žiurkėnai) kvėpuoja tuo pačiu namų oru. Kol dirbate su sausomis žaliavomis ir kol krosnyje vyksta degimas, laikykite juos tolimame kambaryje uždarytomis durimis.
+- Akvariumuose kaupiasi nusėdančios dulkės. Nelaikykite jų dirbtuvėje ir laikykite uždengtus.
+- Augintinių ėdalo ir vandens dubenėlius laikykite atokiau nuo dirbtuvės ir krosnies; naudokite pirktinius ar ištirtus dubenėlius, o ne dirbtuvės eksperimentus.
 
-If a pet may have eaten or drunk anything from the studio, or shows signs like those above, call your vet or an animal poison line (see the table at the top), with the material's name and the pet's weight to hand.
+Jei augintinis galėjo ką nors suėsti ar išgerti iš dirbtuvės arba jam pasireiškė panašūs požymiai kaip aprašyti aukščiau, skambinkite savo veterinarui arba į gyvūnų apsinuodijimų informacijos liniją (žr. lentelę vadovo pradžioje), turėdami po ranka žaliavos pavadinimą ir augintinio svorį.
 
 ## Krosnis {#the-kiln}
 
@@ -220,41 +220,41 @@ Dėl namų testų nesutariama. FDA teigia, kad namų testų rinkiniai su tampon�
 
 Daugiau apie tai, kaip glazūros lydosi, kodėl iš kai kurių išsiskiria metalų ir ką reiškia ribos, skaitykite vadove [Glazūravimas nuo pagrindų](/guides/glazing-basics).
 
-## Sources {#sources lang=en}
+## Šaltiniai {#sources}
 
 - [America's Poison Centers: Poison Help](https://poisoncenters.org/)
 - [Poison Control (poison.org): webPOISONCONTROL](https://www.poison.org/)
 - [NHS: Poisoning](https://www.nhs.uk/conditions/poisoning/)
-- [National Poisons Information Service (UK)](https://www.npis.org/)
+- [National Poisons Information Service (JK)](https://www.npis.org/)
 - [National Poisons Information Centre of Ireland: Public Poisons Line](https://www.poisons.ie/)
 - [European Commission: 112, the European emergency number](https://digital-strategy.ec.europa.eu/en/policies/112)
 - [healthdirect: Poisoning](https://www.healthdirect.gov.au/poisoning)
-- [National Poisons Centre (New Zealand)](https://www.poisons.co.nz/)
+- [National Poisons Centre (Naujoji Zelandija)](https://www.poisons.co.nz/)
 - [ASPCA: Animal Poison Control](https://www.aspca.org/pet-care/animal-poison-control)
 - [Pet Poison Helpline](https://www.petpoisonhelpline.com/)
-- [Animal PoisonLine (UK)](https://www.animalpoisonline.co.uk/)
-- [Animal Poisons Helpline (Australia and New Zealand)](https://animalpoisons.com.au/)
+- [Animal PoisonLine (JK)](https://www.animalpoisonline.co.uk/)
+- [Animal Poisons Helpline (Australija ir Naujoji Zelandija)](https://animalpoisons.com.au/)
 - [PubMed Central: Acute soluble barium poisoning, a review (2025)](https://pmc.ncbi.nlm.nih.gov/articles/PMC11700400)
 - [WikEM: Boron toxicity](https://wikem.org/wiki/Boron_toxicity)
-- [NPIC and US EPA: Recognition and Management of Pesticide Poisonings, chapter 9 (PDF)](https://www.npic.orst.edu/RMPP/rmpp_ch9.pdf)
+- [NPIC ir JAV EPA: Recognition and Management of Pesticide Poisonings, 9 skyrius (PDF)](https://www.npic.orst.edu/RMPP/rmpp_ch9.pdf)
 - [medlibrary.org: Lithium carbonate prescribing information](https://medlibrary.org/lib/rx/meds/lithium-carbonate-16/page/2/)
 - [CDC: About Lead in Jobs, Hobbies, or Other Activities](https://cdc.gov/lead-prevention/prevention/jobs-hobbies-activities.html)
 - [CDC: Blood Lead Reference Value](https://www.cdc.gov/nceh/lead/data/blood-lead-reference-value.htm)
-- [US EPA: Children's health booklet (2018, PDF)](https://19january2021snapshot.epa.gov/sites/static/files/2018-10/documents/childrenshealthbooklet2018_final-4_newlinks.pdf)
+- [JAV EPA: knygelė apie vaikų sveikatą (2018, PDF)](https://19january2021snapshot.epa.gov/sites/static/files/2018-10/documents/childrenshealthbooklet2018_final-4_newlinks.pdf)
 - [Pennsylvania Department of Health: Non-Occupational Lead Exposure (PDF)](https://www.health.pa.gov:443/topics/Documents/Environmental%20Health/Non-Occupational%20Lead%20Exposure.pdf)
 - [Western Carolina University: Ceramics Safety](https://www.wcu.edu/discover/campus-services-and-operations/facilities-management/safety-and-risk-management/visual-arts-theatre-safety/ceramics-safety.aspx)
-- [Crafts Council (UK): How to make your pottery practice greener](https://craftscouncil.org.uk/stories/how-make-your-pottery-practice-greener)
+- [Crafts Council (JK): How to make your pottery practice greener](https://craftscouncil.org.uk/stories/how-make-your-pottery-practice-greener)
 - [Pet Poison Helpline: Lead](https://www.petpoisonhelpline.com/poison/lead/)
 - [Vet Candy: Sparkler ingestion results in barium toxicity](https://www.myvetcandy.com/clinicalupdblog/2019/3/15/sparkler-ingestion-results-in-barium-toxicity)
 - [University of Illinois College of Veterinary Medicine: Bird toxins](https://vetmed.illinois.edu/pet-health-columns/bird-toxins-teflon-avocado-lead-zinc/)
 - [Skutt: Designing a Kiln Room (PDF)](https://cdn.shopify.com/s/files/1/0889/3726/7497/files/Designing-A-Kiln-Room-1.pdf)
-- [Kiln Management guide for schools (PDF)](https://cdn.shopify.com/s/files/1/0889/3726/7497/files/Kiln-Management-1.pdf)
+- [Kiln Management, krosnių priežiūros leidinys mokykloms (PDF)](https://cdn.shopify.com/s/files/1/0889/3726/7497/files/Kiln-Management-1.pdf)
 - [L&L Kiln: Front-loader installation checklist (PDF)](https://www.theceramicshop.com/downloads/LLFLChecklist.pdf)
 - [Rio Grande: PMC Kilns Handbook (PDF)](https://products.riogrande.com/content/Instruction-Sheets/RioGrande-PMC-Kilns-Handbook-IS.pdf)
-- [Dawson: Kiln-Sitter LT-3 manual (PDF)](https://oud.klei.nl/forum/bestanden/f675ae4a-d890-4b8b-a08e-173e652f25a6/KilnSitter%20lt3%20en%20lt3k.pdf)
+- [Dawson: Kiln-Sitter LT-3 naudojimo instrukcija (PDF)](https://oud.klei.nl/forum/bestanden/f675ae4a-d890-4b8b-a08e-173e652f25a6/KilnSitter%20lt3%20en%20lt3k.pdf)
 - [Ceramic Arts Network: In the Studio, Eye Health for Potters](https://ceramicartsnetwork.org/pottery-making-illustrated/pottery-making-illustrated-article/In-the-Studio-Eye-Health-for-Potters)
 - [FDA: Questions and Answers on Lead-Glazed Traditional Pottery](https://www.fda.gov/food/environmental-contaminants-food/questions-and-answers-lead-glazed-traditional-pottery)
-- [FDA: Compliance Policy Guide 545.450, lead in pottery (PDF)](https://www.fda.gov/media/71764/download)
+- [FDA: Compliance Policy Guide 545.450, švinas keramikoje (PDF)](https://www.fda.gov/media/71764/download)
 - [Digitalfire: Food Safe](https://digitalfire.com/glossary/food+safe)
 - [Ceramics NZ: Is it food safe?](https://ceramicsnz.org/news/is-it-food-safe/)
 - [Ceramic Arts Network: Techno File, Dirty Dishes](https://ceramicartsnetwork.org/ceramics-monthly/ceramics-monthly-article/Techno-File-Dirty-Dishes)

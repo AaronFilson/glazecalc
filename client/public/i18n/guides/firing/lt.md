@@ -3,79 +3,79 @@ title: Degimas paprastoje krosnyje
 lead: Kaip degti elektrinėje krosnyje su išjungikliu Kiln-Sitter arba rankiniais jungikliais: kaip pasirinkti, pastatyti ir įvertinti piroskopus, ir paskelbtos biskvitinio bei glazūros degimo programos.
 ---
 
-## Cones: what they measure {#cones lang=en}
+## Piroskopai: ką jie matuoja {#cones}
 
 > [!NOTE]
-> Follow your kiln's own manual first. This guide gathers what cone and kiln makers publish about basic electric kilns; it does not replace the instructions for your model, and where the two differ, the manual wins.
+> Pirmiausia laikykitės savo krosnies naudojimo instrukcijos. Šiame vadove surinkta tai, ką piroskopų ir krosnių gamintojai skelbia apie paprastas elektrines krosnis; vadovas nepakeičia jūsų modelio naudojimo instrukcijos, o jei vadovas ir naudojimo instrukcija skiriasi, vadovaukitės naudojimo instrukcija.
 
-A **pyrometric cone** is a small, slender pyramid made from a standardized ceramic powder. When it has had enough heat, it softens and bends over in a repeatable way. You set cones in the kiln beside the ware and read how far they bent.
+**Piroskopas**{{en: pyrometric cone}} (pirometrinis kūgis) – tai maža, liekna piramidė iš standartizuotų keraminių miltelių. Gavęs pakankamai šilumos, jis suminkštėja ir sulinksta, kiekvieną kartą vienodai. Piroskopus pastatote krosnyje šalia dirbinių, o paskui įvertinate, kiek jie sulinko.
 
-Cones measure **heatwork**, the combined effect of temperature and time. In the words of Orton, the main US cone maker, "Cones do not measure temperature alone." A cone heated slowly bends at a lower temperature than one heated fast, and a glaze behaves the same way. So Orton gives each cone's temperature for a stated heating rate over the last {{180 °F; 100 °C}} of the firing. Once a cone starts to move, it bends over a narrow range, "usually less than 40° F" (22 °C).
+Piroskopai matuoja **šilumos poveikį**{{en: heatwork}} – bendrą temperatūros ir laiko poveikį. Pasak pagrindinio JAV piroskopų gamintojo Ortono, „piroskopai matuoja ne vien temperatūrą“. Lėtai kaitinamas piroskopas sulinksta žemesnėje temperatūroje nei greitai kaitinamas, ir glazūra{{en: glaze}} elgiasi taip pat. Todėl Ortonas kiekvieno piroskopo temperatūrą nurodo esant tam tikrai kaitinimo spartai per paskutinius {{180 °F; 100 °C}} degimo. Pradėjęs linkti, piroskopas sulinksta per siaurą temperatūrų intervalą, „paprastai mažesnį nei 40° F“ (22 °C).
 
-### Cone numbers
+### Piroskopų numeriai
 
-Cone numbers run from 022, the coolest, up to 42. A leading zero marks the cooler series and is read as "oh": cone 06 ("oh-six") is cooler than cone 04, and cone 01 needs less heat than cone 1. Orton warns that it is important not to mix the two series up. The gap is large: cone 06 bends more than {{400 °F; 220 °C}} cooler than cone 6.
+Piroskopų numeriai eina nuo 022, vėsiausio, iki 42. Nulis priekyje žymi vėsesnę seriją ir tariamas „nulis“: piroskopas 06 („nulis šeši“) yra vėsesnis už piroskopą 04, o piroskopui 01 reikia mažiau šilumos nei piroskopui 1. Ortonas įspėja, kad svarbu šių dviejų serijų nesupainioti. Skirtumas didelis: piroskopas 06 sulinksta daugiau kaip {{400 °F; 220 °C}} žemesnėje temperatūroje nei piroskopas 6.
 
-Table: Common firing ranges, for self-supporting cones at {{108 °F/h; 60 °C/h}}
-Label: Firing ranges
+Table: Įprasti degimo intervalai savaime stovintiems piroskopams, esant {{108 °F/h; 60 °C/h}} spartai
+Label: Degimo intervalai
 
-| Range     | Cones |                    Temperature | Typical use                              |
-| --------- | ----- | -----------------------------: | ---------------------------------------- |
-| Low fire  | 06–04 |  {{1828–1945 °F; 998–1063 °C}} | Earthenware glazes; bisque               |
-| Mid fire  | 5–6   | {{2167–2232 °F; 1186–1222 °C}} | Electric-kiln stoneware and porcelain    |
-| High fire | 9–10  | {{2300–2345 °F; 1260–1285 °C}} | Mostly gas-fired stoneware and porcelain |
+| Intervalas        | Piroskopai |                    Temperatūra | Įprasta paskirtis                                                           |
+| ----------------- | ---------- | -----------------------------: | --------------------------------------------------------------------------- |
+| Žemas degimas     | 06–04      |  {{1828–1945 °F; 998–1063 °C}} | Žemo degimo keramikos{{en: earthenware}} glazūros; biskvitas{{en: bisque}}  |
+| Vidutinis degimas | 5–6        | {{2167–2232 °F; 1186–1222 °C}} | Akmens masės{{en: stoneware}} dirbiniai ir porcelianas elektrinėje krosnyje |
+| Aukštas degimas   | 9–10       | {{2300–2345 °F; 1260–1285 °C}} | Daugiausia dujinėse krosnyse degami akmens masės dirbiniai ir porcelianas   |
 
-Suppliers in the UK, Europe, Australia and New Zealand often give a temperature in °C rather than a cone: find the nearest cone in the chart below and confirm it with a witness cone. Seger and Staffordshire cones, the older European series, should not be assumed to share Orton's numbers, so this guide uses Orton cones.
+Jungtinės Karalystės, Europos, Australijos ir Naujosios Zelandijos tiekėjai dažnai nurodo ne piroskopą, o temperatūrą °C: raskite artimiausią piroskopą toliau pateiktoje lentelėje ir patikrinkite jį kontroliniu piroskopu{{en: witness cone}}. Nereikėtų manyti, kad senesnių Europos serijų, Segerio ir Staffordshire piroskopų, numeriai sutampa su Ortono numeriais, todėl šiame vadove naudojami Ortono piroskopai.
 
-### Holding adds heatwork
+### Išlaikymas padidina šilumos poveikį
 
-A **hold** (also called a **soak**) keeps the kiln at one temperature for a while. Because cones measure heatwork, a hold at the top can stand in for a hotter peak. Orton gives these rough equivalents:
+**Išlaikymas**{{en: hold}} (angliškai dar vadinamas **soak**) – tai kurį laiką krosnyje palaikoma ta pati temperatūra. Kadangi piroskopai matuoja šilumos poveikį, išlaikymas ties aukščiausia temperatūra gali atstoti jos pakėlimą. Ortonas pateikia tokius apytikslius atitikmenis:
 
-Table: What a hold at the peak is worth
-Label: Holds and heatwork
+Table: Ką duoda išlaikymas ties aukščiausia temperatūra
+Label: Išlaikymas ir šilumos poveikis
 
-| Hold             | Roughly the same heatwork as             |
-| ---------------- | ---------------------------------------- |
-| About 20 minutes | A peak {{18 °F; 10 °C}} hotter           |
-| 40–60 minutes    | A peak {{36 °F; 20 °C}} hotter           |
-| About 2 hours    | A peak {{54 °F; 30 °C}} hotter           |
-| 4–6 hours        | Enough to bend a cone two numbers hotter |
+| Išlaikymas   | Maždaug toks pat šilumos poveikis kaip                      |
+| ------------ | ----------------------------------------------------------- |
+| Apie 20 min. | Aukščiausia temperatūra, pakelta {{18 °F; 10 °C}}           |
+| 40–60 min.   | Aukščiausia temperatūra, pakelta {{36 °F; 20 °C}}           |
+| Apie 2 val.  | Aukščiausia temperatūra, pakelta {{54 °F; 30 °C}}           |
+| 4–6 val.     | Pakanka, kad sulinktų dviem numeriais karštesnis piroskopas |
 
-Orton adds that a hold of 1–2 hours "may be sufficient to deform the next higher cone number".
+Ortonas priduria, kad 1–2 valandų išlaikymas „gali pakakti deformuoti kitą, vienu numeriu karštesnį piroskopą“.
 
-So a hold is never free: if you add one, expect the cones to bend further, and lower the peak to match.
+Taigi išlaikymas niekada nebūna be pasekmių: jei jį pridedate, tikėkitės, kad piroskopai sulinks labiau, ir atitinkamai sumažinkite aukščiausią temperatūrą.
 
-### Kinds of cone
+### Piroskopų rūšys
 
-Orton makes four kinds. Two stand on the shelf to show what the ware received; two are for the kiln sitter.
+Ortonas gamina keturių rūšių piroskopus. Dvi rūšys statomos ant plokštės ir parodo, kokį šilumos poveikį gavo dirbiniai; kitos dvi skirtos išjungikliui Kiln-Sitter{{en: kiln sitter}}.
 
-Table: Orton's four kinds of cone
-Label: Kinds of cone
+Table: Keturios Ortono piroskopų rūšys
+Label: Piroskopų rūšys
 
-| Kind            | Used for                  | How it stands                                                                               |
-| --------------- | ------------------------- | ------------------------------------------------------------------------------------------- |
-| Self-supporting | Witness cone on the shelf | A built-in base sets the height, 1¾ in (44 mm), and the 8° lean; no holder needed           |
-| Large           | Witness cone on the shelf | Set in a plaque or a pat of clay with exactly 2 in (51 mm) showing, leaning 8° from upright |
-| Small (junior)  | Kiln sitter               | Lies across the sitter's supports; 15/16 in (24 mm) showing if stood on a shelf             |
-| Bar             | Kiln sitter               | The same powder as small cones, in an even bar shape                                        |
+| Rūšis               | Paskirtis                           | Kaip stovi                                                                                                      |
+| ------------------- | ----------------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| Savaime stovintis   | Kontrolinis piroskopas ant plokštės | Įtaisytas pagrindas nustato aukštį, 1¾ colio (44 mm), ir 8° pasvirimą; laikiklio nereikia                       |
+| Didelis             | Kontrolinis piroskopas ant plokštės | Įstatomas į stovelį arba molio paplotėlį taip, kad kyšotų lygiai 2 coliai (51 mm), pakreiptas 8° nuo vertikalės |
+| Mažasis (junior)    | Išjungiklis Kiln-Sitter             | Guli skersai ant išjungiklio atramų; pastatytas ant plokštės, kyšotų 15/16 colio (24 mm)                        |
+| Piroskopinė lazdelė | Išjungiklis Kiln-Sitter             | Tie patys milteliai kaip mažųjų piroskopų, tolygios lazdelės formos                                             |
 
-Height matters: a ¼ in (6 mm) difference in the height of a large cone "can cause more than a half cone difference in bending". Cones do not go bad or age, and damp storage does not affect them.
+Aukštis svarbus: didelio piroskopo aukščio skirtumas ¼ colio (6 mm) „gali lemti didesnį nei pusės piroskopo numerio linkimo skirtumą“. Piroskopai negenda ir nesensta, o drėgnas laikymas jiems nekenkia.
 
-### What "cone 6" means in practice
+### Ką praktiškai reiškia „piroskopas 6“
 
-The chart gives a self-supporting cone 6 as {{2232 °F; 1222 °C}}, but only when the last {{180 °F; 100 °C}} climbs at {{108 °F/h; 60 °C/h}}. Climbing at {{270 °F/h; 150 °C/h}}, the same cone bends at {{2269 °F; 1243 °C}}. Real kilns differ again: Digitalfire reports that "Most kilns reach cone 6 at 2200°F, not 2232°F". So "cone 6" means the ware received the heatwork that bends a cone 6, whatever a thermometer read at the time.
+Lentelėje savaime stovinčio piroskopo 6 temperatūra nurodyta {{2232 °F; 1222 °C}}, bet tik tada, kai paskutinius {{180 °F; 100 °C}} temperatūra kyla {{108 °F/h; 60 °C/h}} sparta. Kai ji kyla {{270 °F/h; 150 °C/h}} sparta, tas pats piroskopas sulinksta ties {{2269 °F; 1243 °C}}. Tikros krosnys vėl skiriasi: Digitalfire duomenimis, „dauguma krosnių piroskopą 6 pasiekia ties 2200°F, o ne ties 2232°F“. Taigi „piroskopas 6“ reiškia, kad dirbiniai gavo tokį šilumos poveikį, kuris sulenkia piroskopą 6, nesvarbu, ką tuo metu rodė termometras.
 
 :::orton
 
 > [!NOTE]
-> Fire by the cone, not the clock or the dial. Set a controller by cone number, and let a witness cone on the shelf confirm every firing.
+> Dekite pagal piroskopą, o ne pagal laikrodį ar skalę. Valdiklį nustatykite pagal piroskopo numerį, o kiekvieną degimą tegul patvirtina kontrolinis piroskopas ant plokštės.
 
 :::
 
 :::temperature
 
 > [!NOTE]
-> Firing by temperature, keep the end of every firing the same: the same last rate of climb, the same peak and the same hold. Then a glaze that worked once works again.
+> Degdami pagal temperatūrą, kiekvieno degimo pabaigą darykite vienodą: ta pati paskutinė kaitinimo sparta, ta pati aukščiausia temperatūra ir tas pats išlaikymas. Tada kartą pavykusi glazūra pavyks ir vėl.
 
 :::
 
@@ -596,22 +596,22 @@ Jei išjungiklis suveikia anksčiau, nei nulinksta piroskopai ant plokščių, k
 
 **Pirometras** – tai temperatūros matuoklis, kurio rodmenys gaunami iš **termoporos** – pro krosnies sienelę įvesto temperatūros jutiklio. Jis rodo, kaip greitai kaista krosnis, todėl galite pasirinkti tinkamą piroskopų lentelės stulpelį. Tačiau jis matuoja prie sienelės, o ne ties dirbiniais, ir jo rodmenys laikui bėgant nukrypsta. L&L pažymi, kad po pakartotinių degimų iki piroskopo 6 K tipo termopora gali klysti daugiau nei {{25 °F; 14 °C}}, „daugiau nei visas piroskopo numeris“, o savaime stovinčio piroskopo nuokrypis ne didesnis kaip {{4 °F; 2 °C}}. Ortonas sako, kad pirometrus reikia kartkartėmis iš naujo kalibruoti, o patikrinti juos galima piroskopais.
 
-## Venting, peeking and safety {#venting lang=en}
+## Vėdinimas, stebėjimas ir sauga {#venting}
 
-### Venting
+### Vėdinimas
 
-Early in a firing, clay and glaze give off water vapor and fumes, including carbon monoxide, and glazes can give off toxic fumes later in the firing too. L&L calls venting them "essential". With no vent system, that means the lid propped and the peepholes open in the early stages, as in the procedures above; slowing the heating during this time also helps the carbon burn out. In a kiln without a vent, Dawson, who made the sitter, also says to leave the top peephole open for the whole firing: the venting "will reduce deterioration of the kiln's metal parts and increase the life of the tube assembly". A **downdraft vent** (a powered vent fitted to the kiln) changes this. It does the venting, so Orton says the lid and peepholes stay closed for the whole firing except to check the cones, and L&L says to leave the vent on and plug the peepholes.
+Degimo pradžioje iš molio ir glazūros{{en: glaze}} išsiskiria vandens garai ir dūmai, įskaitant anglies monoksidą (smalkes), o glazūros toksiškų dūmų gali išskirti ir vėliau degimo metu. L&L jų šalinimą vadina „būtinu“. Jei ištraukiamosios ventiliacijos sistemos nėra, tai reiškia, kad pirmuosiuose etapuose dangtis pravertas, o stebėjimo angos atidarytos, kaip aukščiau aprašytose procedūrose; šiuo metu sulėtinus kaitinimą, be to, lengviau išdega anglis. Jei krosnis neturi ištraukimo sistemos, Dawsonas, sukūręs išjungiklį Kiln-Sitter, taip pat nurodo visą degimą laikyti atidarytą viršutinę stebėjimo angą: ventiliavimas „sumažins krosnies metalinių dalių nusidėvėjimą ir pailgins vamzdelio mazgo tarnavimo laiką“. **Ištraukiamoji ventiliacija per krosnies dugną** (prie krosnies primontuotas elektrinis ištraukiklis) tai pakeičia. Ji pati atlieka ventiliavimą, todėl, pasak Ortono, dangtis ir stebėjimo angos visą degimą lieka uždaryti, išskyrus piroskopų{{en: cones}} patikrinimą, o L&L nurodo palikti ištraukiklį įjungtą ir stebėjimo angas užkimšti.
 
-For venting the room, and for carbon monoxide alarms, see [Safe mixing and ventilation](/guides/safe-mixing) and [Don't poison your family](/guides/home-safety).
+Apie patalpos vėdinimą ir smalkių detektorius skaitykite vadovuose [Saugus maišymas ir vėdinimas](/guides/safe-mixing) ir [Neapnuodykite savo šeimos](/guides/home-safety).
 
-### While the kiln is firing
+### Kai krosnis įjungta
 
-- Look through a peephole only with IR-rated shade 3 welding glasses; sunglasses are not enough. Skutt advises twisting the plugs into place so they do not fall out.
-- Do not leave the kiln unattended beyond its expected firing time; a sitter is not a fail-safe.
-- Never fire on or near anything that burns, such as a wood floor or carpet.
-- Keep the clearances in your manual. Published figures range from 12 in (30 cm) to 3 ft (91 cm); where the manual is silent, 18 in (46 cm) from walls and 3 ft (91 cm) from anything that burns is the safest choice.
-- Keep the space around the sitter's weight clear so it can drop.
-- When the firing ends, turn the switches off and turn off the breaker as well.
+- Pro stebėjimo angą žiūrėkite tik pro IR spinduliuotę sulaikančius tamsumo laipsnio 3 suvirintojo akinius; akinių nuo saulės nepakanka. Skutt pataria kamščius įsukti į vietą, kad jie neiškristų.
+- Nepalikite krosnies be priežiūros ilgiau nei numatoma degimo trukmė; išjungiklis Kiln-Sitter{{en: kiln sitter}} negarantuoja, kad įvykus gedimui krosnis išsijungs.
+- Niekada neįjunkite krosnies ant to, kas gali užsidegti, ar šalia to, pavyzdžiui, ant medinių grindų ar kilimo.
+- Laikykitės naudojimo instrukcijoje nurodytų atstumų. Skelbiami skaičiai svyruoja nuo 12 colių (30 cm) iki 3 pėdų (91 cm); jei naudojimo instrukcijoje to nenurodyta, saugiausia laikytis 18 colių (46 cm) atstumo nuo sienų ir 3 pėdų (91 cm) nuo visko, kas gali užsidegti.
+- Vietą aplink išjungiklio svarelį laikykite laisvą, kad jis galėtų nukristi.
+- Degimui pasibaigus, išjunkite jungiklius ir taip pat automatinį saugiklį.
 
 ## Aušinimas ir iškrovimas {#cooling}
 

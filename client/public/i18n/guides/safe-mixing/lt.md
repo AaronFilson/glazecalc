@@ -65,49 +65,49 @@ Daugiausia apsaugos suteikia įpročiai, o ne įranga. HSE patarimai keramikos �
 
 Šią eilę siūlome mes, remdamiesi HSE principu pirmiausia vengti miltelių. Kaip sverti ir maišyti žingsnis po žingsnio, žr. vadovą [Kaip pasigaminti glazūrą](/guides/making-a-glaze).
 
-## Respirators {#respirators lang=en}
+## Respiratoriai {#respirators}
 
-A **respirator** is a mask certified to filter fine particles from the air you breathe. It works only when it seals to your face, and it backs up good habits rather than replacing them.
+**Respiratorius** – tai kaukė, sertifikuota filtruoti smulkias daleles iš įkvepiamo oro. Jis veikia tik tada, kai sandariai priglunda prie veido, ir papildo gerus įpročius, o ne juos pakeičia.
 
-### Classes by region
+### Klasės pagal regioną
 
-Table: Particle respirator classes by region (rough equivalents for glaze dust)
-Label: Respirator classes
+Table: Dalelių respiratorių klasės pagal regioną (apytiksliai atitikmenys glazūrų dulkėms)
+Label: Respiratorių klasės
 
-| Region                    | Everyday class | Higher class | Look for                                                                         |
-| ------------------------- | -------------- | ------------ | -------------------------------------------------------------------------------- |
-| United States             | N95            | P100         | NIOSH approval on the mask or its packaging                                      |
-| UK and EU                 | FFP2           | FFP3         | EN 149 on disposable masks; EN 140 on reusable half masks, with P2 or P3 filters |
-| Australia and New Zealand | P2             | P3           | AS/NZS 1716                                                                      |
+| Regionas                        | Kasdienė klasė | Aukštesnė klasė | Ko ieškoti                                                                             |
+| ------------------------------- | -------------- | --------------- | -------------------------------------------------------------------------------------- |
+| JAV                             | N95            | P100            | NIOSH patvirtinimo žymos ant kaukės ar jos pakuotės                                    |
+| JK ir ES                        | FFP2           | FFP3            | EN 149 ant vienkartinių kaukių; EN 140 ant daugkartinių puskaukių su P2 ar P3 filtrais |
+| Australija ir Naujoji Zelandija | P2             | P3              | AS/NZS 1716                                                                            |
 
-The higher class filters a larger share of fine particles. Sources disagree on what an Australian P3 filters (at least 99%, or at least 99.95%), so buy the certified class sold in your region. A reusable **half mask** (covering the nose and mouth, with replaceable filters) fitted with P100 filters (P3 outside the US) is a common studio choice.
+Aukštesnės klasės respiratorius sulaiko didesnę smulkių dalelių dalį. Šaltiniai nesutaria, kiek sulaiko Australijos P3 (bent 99 % ar bent 99,95 %), todėl pirkite jūsų regione parduodamą sertifikuotos klasės respiratorių. Dirbtuvėse dažnai renkamasi daugkartinę **puskaukę** (dengiančią nosį ir burną, su keičiamais filtrais) su P100 filtrais (už JAV ribų – P3).
 
-### Fit and seal
+### Prigludimas ir sandarumas
 
-A mask that leaks lets dust in around its edges, whatever its class. HSE warns that stubble and beards "make it impossible to get a good seal".
+Nesandari kaukė praleidžia dulkes pro kraštus, kad ir kokia būtų jos klasė. HSE įspėja, kad dėl barzdos šerelių ir barzdų „neįmanoma pasiekti gero sandarumo“.
 
-- **Shave shortly before you work.** Guidance differs on how recent "clean-shaven" must be. A UK maker, citing HSE, says shaved within 8 hours of starting work. The Australian and New Zealand fit-test standard asks for a shave before a fit test, "preferably within 12 hours". Shaving shortly before you work meets both.
-- **If you keep a beard,** a loose-fitting **powered respirator** (PAPR: a hood or helmet with a fan that supplies filtered air) needs no face seal.
-- **Get the size right.** Poor fit is a major cause of leaks. Workplaces use a **fit test**, a check that a particular mask seals on a particular face. At home, we suggest following the maker's instructions for checking the seal each time you put it on.
+- **Nusiskuskite neilgai prieš darbą.** Rekomendacijos skiriasi, kada turi būti nusiskusta, kad veidas būtų laikomas „švariai nuskustu“. Vienas Jungtinės Karalystės gamintojas, remdamasis HSE, nurodo nusiskusti per 8 valandas iki darbo pradžios. Australijos ir Naujosios Zelandijos sandarumo patikros standartas reikalauja nusiskusti prieš sandarumo patikrą, „pageidautina per 12 valandų“. Nusiskutę neilgai prieš darbą, atitiksite abi rekomendacijas.
+- **Jei nešiojate barzdą,** laisvai dėvimam **respiratoriui su priverstiniu oro tiekimu** (PAPR: gobtuvui ar šalmui su ventiliatoriumi, kuris tiekia išfiltruotą orą) sandarumo prie veido nereikia.
+- **Pasirinkite tinkamą dydį.** Prastas prigludimas – viena pagrindinių nesandarumo priežasčių. Darbovietėse atliekama **sandarumo patikra**: tikrinama, ar konkreti kaukė sandariai priglunda prie konkretaus veido. Namuose siūlome kiekvieną kartą užsidėjus kaukę patikrinti sandarumą taip, kaip nurodo gamintojo instrukcija.
 
 > [!NOTE]
-> In our view, fit matters more than class: a well-fitted N95, FFP2 or P2 will usually do better than a loose P100.
+> Mūsų nuomone, tai, kaip kaukė priglunda, svarbiau už jos klasę: gerai priglundantis N95, FFP2 ar P2 respiratorius paprastai apsaugo geriau nei laisvas P100.
 
-### When to wear one
+### Kada jį dėvėti
 
-HSE says a respirator is "normally not needed" where weighing and mixing happen in a ventilated enclosure, but "may be needed for maintenance and cleaning". Most home studios have no enclosure, so we suggest wearing one (N95, FFP2 or P2 at least; P100, FFP3 or P3 is better) whenever you:
+HSE teigia, kad respiratoriaus „paprastai nereikia“, jei sveriama ir maišoma uždaroje vietoje su ištraukiamąja ventiliacija, tačiau jo „gali prireikti atliekant techninę priežiūrą ir valymą“. Daugumoje namų dirbtuvių tokios uždaros vietos nėra, todėl siūlome dėvėti respiratorių (bent N95, FFP2 ar P2; P100, FFP3 ar P3 – dar geriau) kaskart, kai:
 
-- open bags or tip out powder;
-- weigh powders and stir them into water;
-- scrape, sand or grind dried glaze or bisque;
-- do any dry cleanup, or empty a vacuum;
-- spray glaze (in a booth: see below).
+- atidarote maišus ar išpilate miltelius;
+- sveriate miltelius ir įmaišote juos į vandenį;
+- grandote, švitruojate ar šlifuojate išdžiūvusią glazūrą{{en: glaze}} arba biskvitą{{en: bisque}};
+- atliekate bet kokį sausą valymą ar ištuštinate dulkių siurblį;
+- purškiate glazūrą (purškimo kameroje: žr. toliau).
 
-### What is not a respirator
+### Kas nėra respiratorius
 
-- Surgical masks, cloth masks and "nuisance dust" masks without a NIOSH, EN 149 or AS/NZS 1716 marking. We would not rely on them for glaze dust.
-- A dust respirator "will not protect you against gases, vapors" (OSHA), so it does nothing for kiln fumes.
-- Look after yours: OSHA notes that a dirty or misused respirator "can become a hazard". Store it clean, away from dusty work clothes.
+- Medicininės kaukės, medžiaginės kaukės ir paprastos „inertinių dulkių“ kaukės be NIOSH, EN 149 ar AS/NZS 1716 žymėjimo. Nuo glazūrų dulkių jomis nepasikliautume.
+- Respiratorius nuo dulkių „neapsaugos jūsų nuo dujų, garų“ (OSHA), todėl nuo krosnies dūmų ir garų jis visiškai neapsaugo.
+- Prižiūrėkite savo respiratorių: OSHA pažymi, kad nešvarus ar netinkamai naudojamas respiratorius „gali tapti pavojaus šaltiniu“. Laikykite jį švarų, atokiau nuo dulkėtų darbo drabužių.
 
 ## Valymas, drabužiai ir rankos {#cleaning}
 
@@ -181,36 +181,36 @@ Kita galimybė – **ištraukiamasis gaubtas** (stogelis virš krosnies). Jis į
 
 Raku degimo metu susidaro daug dūmų ir CO; Jutos universitetas pataria jį atlikti lauke, toliau nuo oro įsiurbimo angų ir langų. Apie patį degimą žr. vadovą [Degimas paprastoje krosnyje](/guides/firing).
 
-## Materials that need most care {#materials lang=en}
+## Žaliavos, su kuriomis reikia elgtis atsargiausiai {#materials}
 
-Most glaze materials, including silica, clays, feldspars and frits, are mainly a dust hazard, which the habits above control. A shorter list is toxic in its own right, by breathing, swallowing or skin contact. Digitalfire adds that stains are generally much safer than raw oxides, and that "unbalanced glazes that release toxic metals can be made from any materials": food safety depends on the whole recipe, not on one ingredient.
+Dauguma glazūrų{{en: glaze}} žaliavų, įskaitant kvarcą{{en: silica}}, molius, lauko špatus{{en: feldspar}} ir fritus{{en: frit}}, pirmiausia pavojingos dėl dulkių, o šį pavojų suvaldo pirmiau aprašyti įpročiai. Trumpesnį sąrašą sudaro žaliavos, kurios yra toksiškos pačios savaime – įkvėpus, prarijus ar patekus ant odos. Digitalfire priduria, kad keramikos pigmentai{{en: stain}} paprastai daug saugesni už neapdorotus oksidus ir kad „nesubalansuotų glazūrų, iš kurių išsiskiria toksiškų metalų, galima pagaminti iš bet kokių žaliavų“: tai, ar glazūra tinkama liestis su maistu{{en: food safety}}, priklauso nuo viso recepto, o ne nuo vienos sudedamosios dalies.
 
-An **IARC group** is a cancer classification: Group 1 means "carcinogenic to humans", Group 2A "probably carcinogenic to humans", Group 2B "possibly carcinogenic to humans", and Group 3 "not classifiable as to its carcinogenicity to humans", which means too little evidence to judge either way.
+**IARC grupė** – tai kancerogeniškumo klasifikacija: 1 grupė reiškia „kancerogeninis žmonėms“, 2A grupė – „tikriausiai kancerogeninis žmonėms“, 2B grupė – „galbūt kancerogeninis žmonėms“, o 3 grupė – „kancerogeniškumo žmonėms atžvilgiu neklasifikuojamas“, tai reiškia, kad įrodymų per mažai, kad būtų galima spręsti vienaip ar kitaip.
 
-Table: Glaze materials that need extra care
-Label: Materials that need most care
+Table: Glazūrų žaliavos, su kuriomis reikia elgtis ypač atsargiai
+Label: Atsargumo reikalaujančios žaliavos
 
-| Material                               | Hazard                                                                                                                                                            | Precaution                                                                                                  |
-| -------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| Lead compounds and lead frits          | "Highly toxic by inhalation or ingestion"; vaporizes at lower kiln temperatures.                                                                                  | Avoid; Digitalfire says experts only. Assume any glaze not labeled "lead-free" or "leadless" contains lead. |
-| Barium carbonate                       | Insoluble in water but dissolves in stomach acid; affects the heart and muscles (irregular heartbeat, low potassium).                                             | A barium frit or strontium where the recipe allows; respirator; labeled container.                          |
-| Manganese dioxide                      | Dust or fume can cause **manganism**, a nervous-system illness like Parkinson's disease, usually after 1 to 3 years of exposure. Fume can cause metal fume fever. | Black stains at low percentages instead; vent the kiln.                                                     |
-| Potassium dichromate and chrome oxide  | Chromium(VI), as in dichromate, is IARC Group 1. That listing does not cover chromium(III), as in chrome oxide.                                                   | Avoid dichromate. We treat chrome oxide as far less hazardous, but keep its dust down.                      |
-| Cobalt                                 | Soluble cobalt(II) salts IARC 2A; cobalt(II) oxide 2B; black Co₃O₄ Group 3.                                                                                       | Keep dust down; stains for blacks.                                                                          |
-| Nickel compounds                       | Among the University of Utah's known or probable human carcinogens.                                                                                               | Stains rather than high percentages.                                                                        |
-| Cadmium and selenium, raw or in stains | Cadmium compounds are among Utah's known or probable human carcinogens.                                                                                           | "Only by experts" (Digitalfire); read any stain's SDS.                                                      |
-| Antimony and vanadium                  | Trivalent antimony (as in antimony trioxide) IARC 2A; vanadium "highly toxic by inhalation".                                                                      | Vanadium for experts only; keep antimony dust down.                                                         |
-| Copper and zinc                        | Kiln fume can cause metal fume fever; raw zinc oxide is "generally not considered hazardous".                                                                     | Vent the kiln.                                                                                              |
-| Lithium carbonate                      | "Highly toxic by inhalation". An EU expert committee concluded it may harm fertility and the unborn child; formal adoption was not confirmed when we checked.     | Gloves and respirator; keep from children. We suggest extra care in pregnancy.                              |
-| Borax and boric acid                   | Classified in the EU as "may damage fertility; may damage the unborn child".                                                                                      | Gloves; boron from a frit where you can.                                                                    |
-| Soda ash, potash, alkaline feldspars   | Skin irritants.                                                                                                                                                   | Gloves.                                                                                                     |
-| Fluorspar, cryolite, lepidolite        | Release fluorine gases in firing; fluorspar also irritates skin.                                                                                                  | Vent the kiln outdoors; gloves.                                                                             |
-| Talc                                   | IARC 2A since July 2024; talc contaminated with asbestos counts as asbestos, Group 1.                                                                             | Platy (not fibrous), asbestos-free talc; check its SDS.                                                     |
+| Žaliava                                                                             | Pavojus                                                                                                                                                                                          | Atsargumo priemonės                                                                                                                         |
+| ----------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| Švino junginiai ir švino fritai                                                     | „Labai toksiški įkvėpus ar prarijus“; išgaruoja esant žemesnei krosnies temperatūrai.                                                                                                            | Venkite; Digitalfire teigia, kad jie tik ekspertams. Laikykite, kad bet kurioje glazūroje, nepažymėtoje „bešvinė“ ar „be švino“, yra švino. |
+| Bario karbonatas                                                                    | Netirpus vandenyje, bet tirpsta skrandžio rūgštyje; veikia širdį ir raumenis (nereguliarus širdies plakimas, sumažėjęs kalio kiekis).                                                            | Kai receptas leidžia, bario fritas ar stroncis; respiratorius; pažymėta talpa.                                                              |
+| Mangano dioksidas                                                                   | Dulkės ar garai gali sukelti **manganizmą** – nervų sistemos ligą, panašią į Parkinsono ligą, paprastai po 1–3 metų poveikio. Garai gali sukelti metalų garų karštligę.                          | Vietoj jo – juodi keramikos pigmentai nedideliu procentu; vėdinkite krosnį.                                                                 |
+| Kalio dichromatas ir chromo oksidas                                                 | Chromas(VI), esantis dichromate, priskirtas IARC 1 grupei. Šis priskyrimas netaikomas chromui(III), esančiam chromo okside.                                                                      | Venkite dichromato. Chromo oksidą laikome kur kas mažiau pavojingu, bet stenkitės, kad jo dulkių būtų kuo mažiau.                           |
+| Kobaltas                                                                            | Tirpios kobalto(II) druskos – IARC 2A; kobalto(II) oksidas – 2B; juodasis Co₃O₄ – 3 grupė.                                                                                                       | Kuo mažiau dulkių; juodai spalvai – keramikos pigmentai.                                                                                    |
+| Nikelio junginiai                                                                   | Jutos universiteto priskirti žinomiems ar tikėtiniems žmogaus kancerogenams.                                                                                                                     | Keramikos pigmentai, o ne didelis nikelio procentas.                                                                                        |
+| Kadmis ir selenas, kaip žaliavos ar keramikos pigmentuose                           | Kadmio junginiai – tarp Jutos universiteto nurodytų žinomų ar tikėtinų žmogaus kancerogenų.                                                                                                      | „Tik ekspertams“ (Digitalfire); perskaitykite kiekvieno pigmento saugos duomenų lapą (angl. SDS).                                           |
+| Stibis ir vanadis                                                                   | Trivalentis stibis (pvz., stibio triokside) – IARC 2A; vanadis „labai toksiškas įkvėpus“.                                                                                                        | Vanadis – tik ekspertams; kuo mažiau stibio dulkių.                                                                                         |
+| Varis ir cinkas                                                                     | Krosnies garai gali sukelti metalų garų karštligę; neapdorotas cinko oksidas „paprastai nelaikomas pavojingu“.                                                                                   | Vėdinkite krosnį.                                                                                                                           |
+| Ličio karbonatas                                                                    | „Labai toksiškas įkvėpus“. ES ekspertų komitetas padarė išvadą, kad jis gali pakenkti vaisingumui ir negimusiam kūdikiui; kai tikrinome, nepavyko patvirtinti, kad ši išvada oficialiai priimta. | Pirštinės ir respiratorius; laikykite vaikams nepasiekiamoje vietoje. Nėštumo metu siūlome elgtis ypač atsargiai.                           |
+| Boraksas ir boro rūgštis                                                            | ES klasifikuojami kaip „gali pakenkti vaisingumui; gali pakenkti negimusiam kūdikiui“.                                                                                                           | Pirštinės; kai įmanoma, boras iš frito.                                                                                                     |
+| Kalcinuotoji soda, potašas{{en: potash}} (kalio karbonatas), šarminiai lauko špatai | Dirgina odą.                                                                                                                                                                                     | Pirštinės.                                                                                                                                  |
+| Fluoritas, kriolitas, lepidolitas                                                   | Degant išskiria fluoro dujų; fluoritas dar ir dirgina odą.                                                                                                                                       | Krosnį vėdinkite į lauką; pirštinės.                                                                                                        |
+| Talkas                                                                              | IARC 2A nuo 2024 m. liepos; asbestu užterštas talkas laikomas asbestu – 1 grupė.                                                                                                                 | Plokštelinis (ne pluoštinis) talkas be asbesto; patikrinkite jo saugos duomenų lapą.                                                        |
 
-Borax, boric acid, soda ash and potash dissolve in water, so we treat them as the likeliest to be absorbed through broken skin or swallowed from unwashed hands.
+Boraksas, boro rūgštis, kalcinuotoji soda ir potašas tirpsta vandenyje, todėl laikome, kad jos labiau nei kitos žaliavos gali įsigerti pro pažeistą odą arba būti prarytos nuo nenuplautų rankų.
 
 > [!NOTE]
-> If a recipe calls for raw barium carbonate, a lot of manganese, or any lead or cadmium material, look for a version that uses a frit or a stain instead. Glazecalc can compare the chemistry of the original and the swap; then test the new glaze.
+> Jei recepte yra nefrituoto bario karbonato, daug mangano ar bet kokios švino ar kadmio žaliavos, ieškokite varianto, kuriame vietoj jų naudojamas fritas ar keramikos pigmentas. Programa Glazecalc gali palyginti originalo ir pakeisto recepto cheminę sudėtį; tada išbandykite naują glazūrą.
 
 ## Pirštinės, oda ir akys {#gloves-and-eyes}
 

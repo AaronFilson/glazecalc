@@ -17,13 +17,17 @@
     "confirmEmail": "El. pašto adreso patvirtinimas – Glazecalc",
     "home": "Jūsų dirbtuvės sąsiuvinis – Glazecalc",
     "recipe": "Receptai – Glazecalc",
+    "import": "Receptų įklijavimas – Glazecalc",
+    "blends": "Mišiniai bandiniams – Glazecalc",
     "material": "Žaliavos – Glazecalc",
     "additive": "Priedai – Glazecalc",
     "firingLogs": "Degimo žurnalai – Glazecalc",
     "notes": "Užrašai – Glazecalc",
     "trash": "Šiukšlinė – Glazecalc",
     "account": "Jūsų paskyra ir nustatymai – Glazecalc",
-    "notFound": "Puslapis nerastas – Glazecalc"
+    "notFound": "Puslapis nerastas – Glazecalc",
+    "shared": "Bendrinamas receptas – Glazecalc",
+    "assistants": "Glazecalc naudojimas su dirbtinio intelekto asistentu – Glazecalc"
   },
   "nav": {
     "skip": "Pereiti prie turinio",
@@ -96,9 +100,14 @@
   },
   "remove": {
     "alreadyRemoved": "Jau pašalinta: „{name}“.",
+    "trashed": "Perkelta į šiukšlinę: „{name}“.",
+    "undo": "Anuliuoti",
+    "restored": "Grąžinta: „{name}“.",
+    "restoreFailed": "„{name}“ grąžinti nepavyko. Tai vis dar šiukšlinėje.",
     "failed": "Pašalinti nepavyko. Bandykite dar kartą.",
     "question": "Pašalinti „{name}“?",
     "cannotUndo": "Šio veiksmo anuliuoti negalima.",
+    "toTrash": "Iš šiukšlinės grąžinti galima 30 dienų.",
     "removing": "Šalinama...",
     "yes": "Taip, pašalinti",
     "cancel": "Atšaukti",

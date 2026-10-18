@@ -57,9 +57,13 @@
     "stackServer": "Serveryje – TypeScript API su Node.js 24, Express 5 ir MongoDB 9; ją tikrina daugiau nei 350 automatinių testų.",
     "stackHosting": "Veikia Docker aplinkoje platformoje Amazon Web Services, už serverio nginx, su Let's Encrypt suteiktu HTTPS sertifikatu.",
     "stackDeploy": "Diegiama per GitHub Actions: po kiekvieno pakeitimo atvaizdai sukuriami ir išbandomi, o diegiant prie AWS prisijungiama be saugomų raktų.",
+    "creditsHeading": "Padėkos",
+    "credits": "Stullo diagramos sritys paimtos iš Glazy atliktos R. T. Stullo 1912 m. diagramos interpretacijos, kurią parengė Derek Au (Copyright (c) 2017 Derek Au, MIT licencija). <notices>Visas pranešimas</notices> pateikiamas šaltinio kode.",
     "whoHeading": "Kas ją sukūrė",
     "who": "Programą Glazecalc kuria Aaronas Filsonas. Radote problemą ar turite idėją? <issues>Sukurkite pranešimą svetainėje GitHub</issues>.",
-    "studio": "Aarono Filsono rankų darbo keramiką rasite studijoje <studio>Updraft Pottery Studio</studio> Takomoje, Vašingtono valstijoje. Apžiūrėkite darbus ir užsisakykite dirbinį, jei kuris nors prilips prie širdies."
+    "studio": "Aarono Filsono rankų darbo keramiką rasite studijoje <studio>Updraft Pottery Studio</studio> Takomoje, Vašingtono valstijoje. Apžiūrėkite darbus ir užsisakykite dirbinį, jei kuris nors prilips prie širdies.",
+    "languagesHeading": "Kalbos",
+    "languages": "Glazecalc galima naudoti šiomis kalbomis. Kiekviena nuoroda atidaro šį puslapį ta kalba."
   },
   "privacy": {
     "title": "Privatumas",
@@ -71,8 +75,15 @@
     "contact": "Norėdami paklausti apie savo duomenis arba pasinaudoti bet kuria savo teise, rašykite adresu <mail>privacy@glazecalcapp.com</mail>. Taip pat galite <issues>sukurti pranešimą svetainėje GitHub</issues>, tačiau pranešimai yra vieši: niekada nerašykite juose savo el. pašto adreso ar nieko asmeniško. Daugumą dalykų, susijusių su savo duomenimis, galite atlikti patys <account>paskyros puslapyje</account>.",
     "storedHeading": "Kas saugoma ir kodėl",
     "storedAccount": "<b>Jūsų paskyra:</b> el. pašto adresas ir slaptažodis, kuris saugomas tik kaip vienkryptė maišos reikšmė (bcrypt), niekada ne pats slaptažodis. Kartu saugomi jūsų nustatymai (pvz., kalba, regionas ir matavimo vienetai) ir jūsų turimų žaliavų sąrašas. Paskyrai reikia el. pašto adreso – prisijungti ir atkurti pamirštą slaptažodį. Sukūrus paskyrą, tuo adresu išsiunčiama nuoroda, kuria patvirtinama, kad adresas jūsų; iki tol juo siunčiami laiškai tik tada, kai paprašote, pvz., atkurti slaptažodį.",
+    "storedPrices": "<b>Kainos, jei jas nurodote:</b> kiek mokate už kiekvieną žaliavą, už kilogramą, ir valiuta, kuria jos nurodytos, kad būtų galima apskaičiuoti užmaišo kainą. Tai verslo duomenys, saugomi su jūsų paskyra ir matomi tik jums: jie niekada nėra recepto dalis, todėl nieko, kuo dalijatės, jie neatskleidžia. Parsisiųsti mano duomenis jas įtraukia, o panaikinus paskyrą jos panaikinamos. Bandomojo laikotarpio kainos kartu su jo įrašais perkeliamos į jūsų paskyrą žaliavoms, kurioms dar nenurodėte kainos, kai abi yra ta pačia valiuta.",
     "storedEmailChange": "<b>El. pašto adreso keitimas:</b> data, kada paskutinį kartą pakeistas jūsų adresas, kad prašymas išjungti dviejų žingsnių prisijungimą nebūtų priimamas iš naujo adreso 30 dienų po pakeitimo.",
     "storedSignIn": "<b>Dviejų žingsnių prisijungimas, jei jį įjungiate:</b> ar jis įjungtas; raktas, kurį jūsų autentifikavimo programa dalijasi su Glazecalc, užšifruotas; apie kiekvieną prieigos raktą: jo viešasis raktas (juo vienu prisijungti neįmanoma), ID ir duomenys, kuriuos jam suteikia jūsų įrenginys, jūsų suteiktas pavadinimas, pridėjimo ir paskutinio naudojimo laikas; jūsų atkūrimo kodai, tik kaip raktu apsaugota vienakryptė maiša, todėl niekas negali jų perskaityti; ir, jei kažkas įveda jūsų slaptažodį, bet neužbaigia antro žingsnio, kada Glazecalc paskutinį kartą apie tai jums siuntė el. laišką (daugiausia kartą per dieną). Kol prisijungiate, tarp slaptažodžio ir antro žingsnio, serveris 5 minutes saugo prisijungimo įrašą, o puslapis tik savo atmintyje laiko trumpą žetoną: jokio naujo slapuko, nieko naršyklės saugykloje.",
+    "storedSaved": "<b>Tai, ką įrašote:</b> jūsų receptai, žaliavos, priedai, užrašai, degimo žurnalai ir patarimai, tokie, kokius juos parašėte. Juos mato tik jūs, nebent receptu pasidalijate nuoroda.",
+    "storedTrash": "<b>Šiukšlinė ir ankstesnės versijos:</b> tai, ką pašalinate iš sąrašo, laukia šiukšlinėje, nepakeista, kad galėtumėte tai grąžinti; o kiekvienas jūsų įrašomas įrašo pakeitimas išsaugo įrašą tokį, koks jis buvo prieš tai, kad pakeitimą galėtumėte anuliuoti.",
+    "storedShares": "<b>Receptai, kuriais dalijatės nuoroda, jei jais dalijatės:</b> koks receptas, kada sukurta jo nuoroda ir ar rodomos recepto pastabos, kartu su vienkrypte nuorodos maišos reikšme (niekada ne pačia nuoroda). Kas turi nuorodą, mato receptą tokį, koks jis yra dabar, su jo Segerio formule, ir jo pastabas, jei pasirinkote jas rodyti; niekada jūsų el. pašto, paskyros ar kainų. Bendrinami receptai neįtraukiami į paieškos sistemas, o nuoroda niekada nepatenka į serverio žurnalus. Siekiant sustabdyti piktnaudžiavimą, iš kiekvieno IP adreso atidaryti bendrinami receptai 15 minučių skaičiuojami atmintyje. Bandomasis laikotarpis dalytis negali.",
+    "storedTokens": "<b>Prieigos žetonai ir prijungtos programos, jei jas kuriate ar patvirtinate:</b> apie kiekvieną – jo pavadinimas, ką jis gali daryti, vienkryptė žetono maišos reikšmė (niekada ne pats žetonas) ir paskutiniai 4 simboliai, taip pat kada jis sukurtas, paskutinį kartą naudotas, kada baigiasi galiojimas ir kada atšauktas.",
+    "storedActivity": "<b>Ką darė žetonai ir programos:</b> eilutė apie kiekvieną įrašą, kurį prieigos žetonas ar prijungta programa sukūrė, pakeitė, perkėlė į šiukšlinę, grąžino ar anuliavo: kada, koks žetonas ar programa, ką padarė ir įrašo pavadinimas, sutrumpintas. Niekada ne užrašo tekstas ar kas nors kita įraše. Pakeitimai, kuriuos atliekate svetainėje, neįrašomi.",
+    "storedLimits": "<b>Dažnumo ribos:</b> siekiant sustabdyti spėliojimą ir nekontroliuojamus scenarijus, skaičiuojami prisijungimo bandymai, registracijos, atkūrimo užklausos ir bandomieji laikotarpiai pagal IP adresą ar paskyrą, neveikiantys prieigos žetonai pagal IP adresą, įrašai, kuriuos kiekvienas prieigos žetonas perkelia į šiukšlinę, pagal žetoną, atidaryti bendrinami receptai ir bendrinimo nuorodos, kurios nieko neatidaro, pagal IP adresą, taip pat užklausos dirbtinio intelekto asistentų įrankiams (MCP): 60 per minutę ir 2000 per dieną pagal IP adresą arba 120 per minutę ir 5000 per dieną pagal paskyrą, kai naudojamas prieigos žetonas, ne daugiau kaip 10 pakeitimų ar atitikčių per minutę.",
     "storedTrial": "<b>Bandomasis laikotarpis (mygtukas Išbandyti dabar):</b> jokio el. pašto adreso ar slaptažodžio, tik sugalvotas vardas, pvz., „speckled quiet kilns“. Jei bandomuoju laikotarpiu toje pačioje naršyklėje prisijungiate prie paskyros, tai, ką sukūrėte bandomuoju laikotarpiu, perkeliama į paskyrą.",
     "storedResets": "<b>Slaptažodžio atkūrimo ir el. pašto nuorodos:</b> kuri paskyra paprašė ir kada, adresas, kuriuo išsiųsta adreso patvirtinimo nuoroda, ir kiekvienos nuorodos kontrolinis kodas (ne pati nuoroda).",
     "storedLogs": "<b>Žurnalai:</b> žiniatinklio serveris įrašo kiekvieną užklausą: jūsų IP adresą, laiką, užklaustą puslapį ir naršyklės pavadinimą. Programa įrašo klaidas kartu su puslapiu, kuriame jos įvyko, bet niekada jūsų el. pašto adreso.",
@@ -95,6 +106,11 @@
     "choiceNoWarranty": "Programa Glazecalc teikiama tokia, kokia yra, be garantijų. Jos prižiūrėtojai neprisiima jokios atsakomybės, taip pat ir teisinės, už jūsų sprendimą sukurti paskyrą ar už tai, kur saugomi jos duomenys.",
     "keptHeading": "Kiek laiko saugoma",
     "keptAccount": "<b>Jūsų paskyra ir tai, ką įrašote:</b> kol juos panaikinsite. Paskyros nešalinamos dėl to, kad nenaudojamos.",
+    "keptTrash": "<b>Šiukšlinė ir ankstesnės versijos:</b> pašalintas įrašas – 30 dienų po pašalinimo arba kol panaikinate jį visam laikui ar ištuštinate šiukšlinę; ankstesnės versijos – 90 dienų ir tik paskutinės 20 kiekvieno įrašo (ir ta, kuri buvo prieš prieigos žetono pakeitimus), bet niekada ilgiau nei pats įrašas: kol įrašas šiukšlinėje, jo versijos išnyksta kartu su juo. Abu išnyksta iš karto, kai panaikinate paskyrą.",
+    "keptShares": "<b>Bendrinimo nuorodos:</b> kol nustosite bendrinti receptą, sukursite jam naują nuorodą, perkelsite jį į šiukšlinę arba panaikinsite paskyrą. Recepto grąžinimas iš šiukšlinės jo vėl nebendrina. Slaptažodžio atkūrimas ar atsijungimas visur taip pat sustabdo visas jūsų nuorodas; slaptažodžio pakeitimas – ne.",
+    "keptTokens": "<b>Prieigos žetonai ir prijungtos programos:</b> kiekvienas – 30 dienų po galiojimo pabaigos (kiekvienas nustoja galioti, daugiausia per metus) arba kol panaikinate paskyrą. Slaptažodžio atkūrimas ar Atsijungti visuose įrenginiuose juos visus sustabdo vienu metu.",
+    "keptActivity": "<b>Ką darė žetonai ir programos:</b> 90 dienų arba kol panaikinate paskyrą.",
+    "keptLimits": "<b>Dažnumo ribos:</b> skaičiai saugomi tik serverio atmintyje, nuo 1 minutės iki 24 valandų, ir prarandami jam persikrovus.",
     "keptTrial": "<b>Bandomasis laikotarpis:</b> 14 dienų nuo jo pradžios, paskui jis panaikinamas su viskuo, kas jame yra, nebent sukuriate paskyrą, kad jį pasiliktumėte.",
     "keptResets": "<b>Slaptažodžio atkūrimo ir el. pašto nuorodos:</b> atkūrimo nuoroda galioja 30 minučių, o jos įrašas panaikinamas maždaug po valandos; adreso patvirtinimo nuoroda galioja ir yra saugoma 24 valandas.",
     "keptSignIn": "<b>Dviejų žingsnių prisijungimas:</b> kiekviena autentifikavimo programa, kiekvienas prieigos raktas ir atkūrimo kodų rinkinys saugomi, kol juos pašalinsite, išjungsite dviejų žingsnių prisijungimą arba ištrinsite paskyrą. Prisijungimas, laukiantis antro žingsnio, ištrinamas po 5 minučių, o programa ar prieigos raktas, kurių pridėti pradėjote, bet nebaigėte, ištrinami daugiausia po 10 minučių.",
@@ -112,6 +128,7 @@
     "rightsAsk": "Dėl visų kitų dalykų, pvz., norėdami, kad jūsų duomenys nebūtų naudojami, kol taisoma klaida, arba nesutikdami su tuo, kaip jie naudojami, rašykite adresu <mail>privacy@glazecalcapp.com</mail>. Tai nemokama, o atsakymą gausite per mėnesį. Jūsų bus paprašyta tik įrodyti, kad paskyra jūsų – prisijungiant arba atidarant nuorodą, išsiųstą jos adresu, – ir niekada asmens dokumento.",
     "rightsComplain": "Jei esate nepatenkinti, galite pateikti skundą duomenų apsaugos priežiūros institucijai: ES – <edpb>savo šalies institucijai</edpb>, o Jungtinėje Karalystėje – <ico>Informacijos komisaro tarnybai (Information Commissioner’s Office)</ico>.",
     "storageHeading": "Slapukai ir naršyklės saugykla",
+    "storageIntro": "Glazecalc nustato du slapukus, antrąjį tik tada, kai prisijungiate per Google ar GitHub, ir naršyklėje saugo keletą mažų reikšmių. Kiekviena yra todėl, kad to paprašėte: kad liktumėte prisijungę, prisijungtumėte per Google ar GitHub arba kad būtų prisimintas jūsų pasirinkimas. Nė viena jūsų neseka ir nė viena niekam neperduodama, todėl pagal įstatymą klausti iš anksto nereikia, ir slapukų pranešimo juostos nėra.",
     "storageLabel": "Slapukai ir naršyklės saugykla",
     "storageName": "Pavadinimas",
     "storagePurpose": "Kam skirta",
@@ -150,6 +167,7 @@
         "lasts": "Kol išvalysite naršyklės saugyklą."
       },
       "print": {
+        "purpose": "Paskutiniai jūsų pasirinkimai spausdinant receptą: visas receptas, užmaišas ar darbo lapas ir užmaišo dydis.",
         "lasts": "Kol išvalysite naršyklės saugyklą."
       },
       "token": {
@@ -163,12 +181,19 @@
       "reloadedFor": {
         "purpose": "Išleidus naują svetainės versiją – kuris puslapis ir kada buvo įkeltas iš naujo, kad puslapis būtų įkeliamas iš naujo ne dažniau kaip kartą per minutę.",
         "lasts": "Kol uždarysite skirtuką."
+      },
+      "oauthCookie": {
+        "purpose": "Tik kai prisijungiate per Google ar GitHub: jis susieja paslaugos atsakymą su jūsų naršykle, kad niekas kitas negalėtų užbaigti jūsų prisijungimo ar pradėti jo už jus. Puslapio scenarijai jo perskaityti negali.",
+        "lasts": "Nustatomas, kai paspaudžiate Tęsti su Google ar Tęsti su GitHub arba susiejate vieną iš jų paskyros puslapyje. Pašalinamas, kai prisijungimas baigiasi, arba po 10 minučių."
       }
     },
     "childrenHeading": "Vaikai",
     "children": "Glazecalc yra įrankis keramikams ir nėra skirtas vaikams.",
     "changesHeading": "Pakeitimai",
-    "changes": "Jei šis privatumo pranešimas pasikeis, pasikeis ir data puslapio viršuje."
+    "changes": "Jei šis privatumo pranešimas pasikeis, pasikeis ir data puslapio viršuje.",
+    "storedProviders": "<b>Google ar GitHub, jei prisijungiate per vieną iš jų:</b> paslaugos suteiktas jūsų ID (skaičius ar kodas, kuris niekada nesikeičia), kada ją susiejote ir kada paskutinį kartą per ją prisijungėte, taip pat ar jūsų paskyra turi savo slaptažodį. Daugiau nieko iš paslaugos nesaugoma: nei jūsų vardas, nei nuotrauka, nei joks raktas į jūsų paskyrą ten. Jums prisijungiant, serveris saugo prisijungimo įrašą su el. paštu, kurį paslauga nurodo kaip jūsų, kai jo reikia: naujai paskyrai, kur jis tampa paskyros el. paštu, arba, kai Glazecalc paskyra jau turi tą el. paštą, kad paslaugą su ja susietų, kai prie tos paskyros prisijungsite. Įrašas ir jame esantis el. paštas panaikinami maždaug per 10 minučių.",
+    "providers": "<b>Prisijungimas per Google ar GitHub</b> yra jūsų pasirinkimas ir įvyksta tik paspaudus jo mygtuką. Tada jūsų naršyklė pereina į Google ar GitHub, kurie Glazecalc atsiunčia savo ID apie jus ir jūsų el. paštą. Kiekviena yra atskira bendrovė, atsakinga už tai, kuo su ja dalijatės, pagal savo privatumo politiką. Jokie jų scenarijai ar paveikslėliai Glazecalc puslapiuose neįkeliami.",
+    "keptProviders": "<b>Google ar GitHub:</b> kiekviena nuoroda, kol ją atsiesite arba panaikinsite paskyrą. Vykstantis prisijungimas panaikinamas po 10 minučių."
   },
   "notFound": {
     "heading": "Puslapis nerastas",
@@ -194,5 +219,27 @@
     "standardFetchFailed": "Gaunant serverio patarimus įvyko klaida.",
     "saved": "Sėkmingai pridėta prie patarimų.",
     "saveFailed": "Siunčiant patarimą įvyko klaida."
+  },
+  "assistants": {
+    "title": "Glazecalc naudojimas su dirbtinio intelekto asistentu",
+    "lead": "Dirbtinio intelekto asistentai, tokie kaip Claude, GitHub Copilot, Cursor ir Gemini, gali tiesiogiai naudoti Glazecalc skaičiavimus per Model Context Protocol (MCP).",
+    "whatHeading": "Ką jis gali",
+    "what": "Be paskyros asistentas gali ieškoti žaliavų bibliotekoje, apskaičiuoti recepto Segerio formulę, patikrinti ją pagal to degimo ribas, siūlyti pakaitalus nebegaminamoms žaliavoms, perkurti receptą iš jūsų nurodytų žaliavų, konvertuoti tarp piroskopų ir temperatūrų, taip pat ieškoti vadovų ir juos skaityti. Nieko, ką jis siunčia, neįrašoma; kaip ir kiekvieno puslapio atveju, žiniatinklio serverio žurnale 14 dienų užfiksuojamas kiekvienos užklausos IP adresas, laikas ir adresas (niekada ne tai, kas siųsta).",
+    "mine": "Su prieigos žetonu iš jūsų <account>paskyros puslapio</account> jis taip pat gali skaityti jūsų pačių receptus, žaliavas, sąsiuvinį, degimo žurnalus ir turimas žaliavas. Žetonas gali tik skaityti: jis niekada nieko nekeičia ir nešalina.",
+    "caution": "Ribų patikros yra įspėjimai pagal paskelbtas ribas, tokie patys kaip programoje, o ne įrodymas, kad glazūra tinka liestis su maistu. Išdeginkite kiekvieną glazūrą bandymui, o glazūras maisto paviršiams pateikite ištirti dėl metalų išsiskyrimo.",
+    "addressHeading": "Adresas",
+    "address": "Pateikite asistentui šį adresą, naudodami Streamable HTTP transportą:",
+    "token": "Kad jis galėtų skaityti jūsų pačių įrašus, sukurkite žetoną savo <account>paskyros puslapyje</account> ir jį nukopijuokite. Jūsų asistentas jį siunčia Authorization antraštėje kaip Bearer, po kurio eina žetonas. Nelaikykite jo failuose, kuriais dalijatės ar kuriuos įkeliate į saugyklą, kaip ir slaptažodžio.",
+    "clientsHeading": "Glazecalc pridėjimas prie asistento",
+    "claudeCode": "Terminale:",
+    "claudeCodeToken": "Su prieigos žetonu, kad jis skaitytų ir jūsų pačių įrašus:",
+    "vscode": "Aplanko faile .vscode/mcp.json arba naudotojo nustatymuose. VS Code žetono paprašo vieną kartą ir jį paslepia; praleiskite headers ir inputs, jei norite naudoti tik įrankius, kuriems paskyros nereikia:",
+    "cursor": "Faile ~/.cursor/mcp.json arba .cursor/mcp.json projekte. Praleiskite headers, jei norite naudoti tik įrankius, kuriems paskyros nereikia:",
+    "gemini": "Faile ~/.gemini/settings.json. Praleiskite headers, jei norite naudoti tik įrankius, kuriems paskyros nereikia:",
+    "appsHeading": "Claude, ChatGPT ir kitos programos",
+    "apps": "Pridėkite pasirinktinę jungtį su aukščiau pateiktu adresu. Šios programos dar negali siųsti prieigos žetono, todėl gauna įrankius, kuriems paskyros nereikia. Prieiga prie jūsų pačių įrašų iš jų atsiras kartu su prisijungimu iš programos.",
+    "stopHeading": "Prieigos sustabdymas",
+    "stop": "Žetoną bet kada galite atšaukti savo <account>paskyros puslapyje</account>. Kiekvienas žetonas nustoja veikti jūsų pasirinktą dieną, o visi vienu metu – jei atkuriate slaptažodį arba atsijungiate visur.",
+    "limits": "Kiekvienas adresas gali pateikti 60 užklausų per minutę ir 2000 per dieną; paskyra su žetonu – 120 per minutę ir 5000 per dieną. Pakeitimai ir atitiktys ribojami iki 10 per minutę."
   }
 }

@@ -102,6 +102,9 @@
     "quartzAll": "Kvarcas, kai visos dulkės yra kvarcas",
     "cristobaliteAll": "Kristobalitas, kai visos dulkės yra kristobalitas",
     "allFree": "Kontrolinė koncentracija, kai visos dulkės yra laisvasis silicio dioksidas",
+    "bandFromTo": "Dulkės, kuriose yra nuo {from} % iki {to} % laisvojo silicio dioksido (SiO₂)",
+    "bandOverTo": "Dulkės, kuriose yra daugiau nei {from} % ir iki {to} % laisvojo silicio dioksido",
+    "bandAbove": "Dulkės, kuriose yra daugiau nei {from} % laisvojo silicio dioksido",
     "recommended": "Rekomenduoja {abbr}",
     "value": "{value} mg/m³",
     "kind": {
@@ -160,7 +163,15 @@
       "myFlat": "Plokšti indai",
       "mySmall": "Maži gilūs indai",
       "myLarge": "Dideli gilūs indai",
-      "myCooking": "Indai maistui gaminti"
+      "myCooking": "Indai maistui gaminti",
+      "idFlat": "Gaminiai, kurių vidus ne gilesnis kaip 25 mm",
+      "idSmall": "Gaminiai, kurių vidus gilesnis kaip 25 mm, mažesni nei 1100 mL",
+      "idLarge": "Gaminiai, kurių vidus gilesnis kaip 25 mm, 1100 mL ar didesni",
+      "thFlat": "Gaminiai, ne gilesni kaip 25 mm",
+      "thSmall": "Gaminiai, gilesni kaip 25 mm, mažesni nei 1,1 L",
+      "thLarge": "Gaminiai, gilesni kaip 25 mm, 1,1 L ar didesni",
+      "thInfant": "Indai iki 12 mėnesių kūdikių maistui",
+      "thCooking": "Indai maistui gaminti, skirti atlaikyti gaminimo karštį"
     },
     "judged": {
       "average": "6 gaminių vidurkis",
