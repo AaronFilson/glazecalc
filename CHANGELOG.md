@@ -194,7 +194,13 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   the previous version if the app logs that it could not build its indexes. After each deploy the
   **Live checks** workflow checks the site from outside: the health check and security headers,
   every language's home page, the public pages in a browser with no Content-Security-Policy
-  violation, and the MCP endpoint (`npm run test:live`).
+  violation, and the MCP endpoint (`npm run test:live`). **Deploy** now starts by itself once a
+  master commit's image is published, and waits for the owner's approval. One script,
+  `deploy/aws/setup-github-deploy.sh`, makes or updates the AWS roles and command documents both
+  workflows use, and the first production deploy brings staging's scripts up to date.
+- **More room for assistants with an access token:** the tools for AI assistants (MCP) allow an
+  account using a token 300 requests a minute and 20,000 a day (from 120 and 5,000); without a
+  token it stays 60 and 2,000 per address.
 - **Pages that search engines and link previews can read.** The public pages (home, guides,
   advice, about, privacy, sign-up) are drawn to plain HTML when the app is built, in every
   language, so the text is there before any script runs; the app then takes the page over in

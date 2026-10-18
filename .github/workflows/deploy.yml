@@ -9,10 +9,20 @@ name: Deploy
 # deploy.sh backs up MongoDB first and installs nginx's files from the image's
 # commit, so a release needs nothing run by hand on the instance.
 #
+# It starts by itself once Publish image has published a master commit, and
+# waits for the production environment's reviewer: approve to deploy that
+# commit, or reject to leave production as it is. A newer commit's run takes
+# the place of one still waiting. Run it by hand to deploy another tag (a
+# rollback).
+#
 # Setup (once): the AWS side in deploy/aws/README.md, then in the repository
 # settings an environment named "production" (add yourself as a required
 # reviewer) with variables AWS_DEPLOY_ROLE_ARN and AWS_REGION.
 on:
+  workflow_run:
+    workflows: [Publish image]
+    types: [completed]
+    branches: [master]
   workflow_dispatch:
     inputs:
       tag:
@@ -28,6 +38,8 @@ concurrency:
 
 jobs:
   deploy:
+    # After Publish image: only when it published, never for a failed run.
+    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-26.04
     timeout-minutes: 20
     environment: production
@@ -49,7 +61,7 @@ jobs:
 
       - name: Run deploy.sh on the instance
         env:
-          TAG: ${{ inputs.tag || format('sha-{0}', github.sha) }}
+          TAG: ${{ inputs.tag || format('sha-{0}', github.event.workflow_run.head_sha || github.sha) }}
         run: .github/scripts/ssm-run.sh glazecalc-deploy '^(latest|sha-[0-9a-f]{40})$' "$TAG"
 
       # The deployed commit, for the Live checks to test it with its own checks;
@@ -57,7 +69,7 @@ jobs:
       - name: The deployed commit
         id: deployed
         env:
-          TAG: ${{ inputs.tag || format('sha-{0}', github.sha) }}
+          TAG: ${{ inputs.tag || format('sha-{0}', github.event.workflow_run.head_sha || github.sha) }}
         run: |
           if [ "$TAG" = latest ]; then echo "ref=master" >> "$GITHUB_OUTPUT"; else echo "ref=${TAG#sha-}" >> "$GITHUB_OUTPUT"; fi
 

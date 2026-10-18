@@ -67,7 +67,10 @@ the SES SMTP credentials that turn email on; see aws/README.md section 14), and 
 
 Day to day:
 
-- **Deploy:** Actions → Deploy → Run workflow (blank tag = the current master commit). It backs
+- **Deploy:** after each merge to master, CI and Publish image run, then Deploy starts by
+  itself and waits for you: open the run (GitHub emails the reviewer) and approve it, or reject it
+  to leave production as it is; a newer commit's run replaces one still waiting. By hand,
+  Actions → Deploy → Run workflow (blank tag = the current master commit). It backs
   up MongoDB first (a deploy whose backup fails changes nothing; by hand,
   `GLAZECALC_SKIP_BACKUP=1 /opt/glazecalc/deploy.sh <tag>` deploys without one), installs
   nginx's files from the same commit, then runs the Live checks against the site. Live checks
@@ -516,8 +519,8 @@ host or makes itself the default server.
 ### One-time setup
 
 Each step is a command for the owner to review and run. Steps 1 to 6 were done for the first
-staging round; step 3 is needed once more for the Deploy staging workflow, and step 9 is new
-with it. Steps 1 and 3 to 6 are
+staging round; step 9 is new with the Deploy staging workflow (step 3 then needs nothing: the
+next production deploy brings `staging.sh` up to date). Steps 1 and 3 to 6 are
 in a Session Manager shell on the instance as root (`sudo -i`); steps 2 and 7 on the PC with the
 operator profile (copper-bell). The instance role already reads `/glazecalc/*`
 (`aws/instance-policy.json`) and the operator policy already writes those parameters and changes
@@ -591,11 +594,11 @@ operator profile (copper-bell). The instance role already reads `/glazecalc/*`
      --value "$(openssl rand -hex 32)"
    ```
 
-3. **The files.** `staging.sh`, `mongo-users.sh` and `compose.staging.yaml` are not installed by `deploy.sh` or
-   `setup-instance.sh`; take them from master once. From then on `staging.sh` updates all three
-   from each commit it deploys (and runs its new self if it changed), so this is never needed
-   again. A `staging.sh` from before the Deploy staging workflow does not update itself: run this
-   once more after that work is merged.
+3. **The files.** `staging.sh`, `mongo-users.sh` and `compose.staging.yaml` are not installed by
+   `setup-instance.sh`; take them from master once, as below. From then on `staging.sh` updates
+   all three from each commit it deploys (and runs its new self if it changed). A `staging.sh` from
+   before it updated itself is replaced once by the next production deploy (`deploy.sh` prints
+   "Staging's scripts: now ..."), so an instance already set up needs nothing here.
 
    ```bash
    ref=master
@@ -699,7 +702,8 @@ operator profile (copper-bell). The instance role already reads `/glazecalc/*`
    environment** `staging`: add yourself as a required reviewer, and the variables
    `AWS_STAGING_ROLE_ARN` = `arn:aws:iam::724654236968:role/glazecalc-github-staging` and
    `AWS_REGION` = `us-west-2`; under Deployment branches, `master` only (aws/README.md,
-   section 12). Step 3 must have installed a `staging.sh` that updates itself.
+   section 12). The workflow needs a `staging.sh` that updates itself: the first production deploy
+   of this release installs it.
 
 ### A test round
 
@@ -791,7 +795,8 @@ the registry refuses a version it already has).
 
 CI checks the endpoint with the official conformance suite and the Inspector on every push (`npm run test:mcp`).
 `MCP_URL=https://glazecalcapp.com/mcp npm run test:mcp` runs the same against the live site, but the suite
-sends more than the 60 requests a minute one address may make, so expect some 429 answers there.
+sends more than the 60 requests a minute one address may make, so most of it is refused (429) there;
+`MCP_INSPECTOR_ONLY=1` runs only the Inspector's few requests, as the Live checks after each deploy do.
 
 1. **Get `mcp-publisher`,** the registry's own CLI (a Go binary from its GitHub releases; the npm
    package of that name is someone else's):

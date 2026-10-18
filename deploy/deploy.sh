@@ -299,4 +299,26 @@ elif ! ./install-nginx.sh production "$ref"; then
   echo "The app runs $tag, but nginx kept its previous files (above). Fix them and deploy again." >&2
   exit 1
 fi
+
+# Staging's scripts, once. A staging.sh from before it updated itself (without
+# GLAZECALC_STAGING_SELF) is replaced by this commit's, with its Compose file
+# and mongo-users.sh, so that the Deploy staging workflow can run it; from then
+# on each staging deploy keeps them current and this leaves them alone. A
+# running staging copy is not restarted.
+if [ -f staging.sh ] && ! grep -q GLAZECALC_STAGING_SELF staging.sh; then
+  if curl -fsSL "$raw/$ref/deploy/staging.sh" -o staging.sh.new 2>/dev/null \
+    && grep -q GLAZECALC_STAGING_SELF staging.sh.new && bash -n staging.sh.new \
+    && curl -fsSL "$raw/$ref/deploy/mongo-users.sh" -o mongo-users.sh.new && bash -n mongo-users.sh.new \
+    && curl -fsSL "$raw/$ref/deploy/compose.staging.yaml" -o compose.staging.yaml.new; then
+    chmod 750 staging.sh.new mongo-users.sh.new
+    mv mongo-users.sh.new mongo-users.sh
+    mv compose.staging.yaml.new compose.staging.yaml
+    mv staging.sh.new staging.sh
+    echo "Staging's scripts: now ${ref:0:7}'s, which keep themselves current."
+  else
+    echo "Staging's scripts: not updated (${ref:0:7} has none that keep themselves current)."
+  fi
+  rm -f staging.sh.new mongo-users.sh.new compose.staging.yaml.new
+fi
+
 curl -fsS http://127.0.0.1:3000/api/health && echo

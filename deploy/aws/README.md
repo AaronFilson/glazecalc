@@ -112,22 +112,6 @@ can do is run the `glazecalc-deploy` command document on instances tagged `app=g
 That document runs `deploy.sh` and nothing else, and AWS rejects any tag that is not `latest`
 or `sha-<40 hex characters>`, so even an approved workflow run cannot run other commands.
 
-```bash
-aws iam create-open-id-connect-provider --url https://token.actions.githubusercontent.com \
-  --client-id-list sts.amazonaws.com
-aws iam create-role --role-name glazecalc-github-deploy \
-  --assume-role-policy-document file://deploy/aws/github-oidc-trust.json
-aws iam put-role-policy --role-name glazecalc-github-deploy --policy-name ssm-deploy \
-  --policy-document file://deploy/aws/deploy-policy.json
-aws ssm create-document --name glazecalc-deploy --document-type Command --document-format JSON \
-  --content file://deploy/aws/deploy-document.json --tags Key=app,Value=glazecalc
-```
-
-If `deploy-document.json` changes later (its timeout went from 600 to 900 seconds when deploys
-began backing up first: update it then):
-`aws ssm update-document --name glazecalc-deploy --content file://deploy/aws/deploy-document.json --document-version '$LATEST'`,
-then `aws ssm update-document-default-version --name glazecalc-deploy --document-version <new version>`.
-
 **Staging** (the Deploy staging workflow, deploy/README.md, "Staging"): a second role, which only
 runs in the repository's `staging` environment can assume, and which may only run the
 `glazecalc-staging-deploy` document. That runs `staging.sh` with a tag AWS checks to be
@@ -136,16 +120,22 @@ command. But `staging.sh` runs as root on the instance production shares, and ta
 scripts from the commit it stages: approving a staging run trusts that branch's `deploy/` as
 much as running it by hand would. The workflow stages only commits on this repository's branches
 (never a fork's pull request), and only after the `staging` environment's reviewer approves. The
-OIDC provider above is shared.
+OIDC provider is shared.
+
+Both, with GitHub's OIDC provider, come from one script, run as the admin in CloudShell (the
+repository is public, so a clone needs no sign-in):
 
 ```bash
-aws iam create-role --role-name glazecalc-github-staging \
-  --assume-role-policy-document file://deploy/aws/github-oidc-trust-staging.json
-aws iam put-role-policy --role-name glazecalc-github-staging --policy-name ssm-staging-deploy \
-  --policy-document file://deploy/aws/staging-deploy-policy.json
-aws ssm create-document --name glazecalc-staging-deploy --document-type Command --document-format JSON \
-  --content file://deploy/aws/staging-deploy-document.json --tags Key=app,Value=glazecalc
+git clone --depth 1 https://github.com/AaronFilson/glazecalc.git && cd glazecalc
+bash deploy/aws/setup-github-deploy.sh
 ```
+
+It makes what is missing and brings what exists up to date with the files in `deploy/aws/` (each
+role's trust and policy, each document, whose new version becomes its default), and changes
+nothing else; run it again whenever one of those files changes. The first run after the Deploy
+staging workflow was added makes the staging role and document, and raises production's
+document timeout from 600 to 900 seconds (deploys now back up first). It prints the two role ARNs
+for GitHub (section 12).
 
 ## 6. Security group: web traffic only
 
