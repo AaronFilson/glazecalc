@@ -249,20 +249,85 @@ describe('Shared recipe tools', () => {
     expect(own.find((r) => r.oxide === 'Al2O3')).to.include({ past: 'below', likely: true });
   });
 
-  it('counts a value at a maximum as past it in the table, as the swap checks do, and a thin glaze by its own likely figure', () => {
+  it('counts a value at a bound as within it, in the table and the checks alike, and a thin glaze by its own likely figure', () => {
     const own = recipe.GLAZECALC_LIMITS;
     const lines = [{ material: KAOLIN, amount: '10' }];
     const boron = (unity: Record<string, number>) =>
       recipe.limitRows(unity, own, 'low')!.find((r) => r.oxide === 'B2O3')!;
+    const boronHigh = (unity: Record<string, number>) =>
+      recipe.pastLimits({ lines, unity, celsius: 1060 }).some((c) => c.check === 'boron-high');
     const sound = { K2O: 0.2, CaO: 0.8, Al2O3: 0.3, SiO2: 3 };
-    // At exactly 0.8 boron the check warns, so the table says past, and not likely for a sound glaze.
-    expect(boron({ ...sound, B2O3: 0.8 })).to.include({ past: 'above', likely: false });
-    expect(
-      recipe.pastLimits({ lines, unity: { ...sound, B2O3: 0.8 }, celsius: 1060 }).some((c) => c.check === 'boron-high')
-    ).to.equal(true);
-    expect(boron({ ...sound, B2O3: 0.79 })).to.include({ past: null });
+    // At exactly 0.8 boron it is within, in both; just over, both say past, and not likely for a sound glaze.
+    expect(boron({ ...sound, B2O3: 0.8 })).to.include({ past: null });
+    expect(boronHigh({ ...sound, B2O3: 0.8 })).to.equal(false);
+    expect(boron({ ...sound, B2O3: 0.81 })).to.include({ past: 'above', likely: false });
+    expect(boronHigh({ ...sound, B2O3: 0.81 })).to.equal(true);
     // A thin glaze (alumina under 0.15) is likely past 0.8 already, where a sound one needs 1.0.
-    expect(boron({ ...sound, Al2O3: 0.1, B2O3: 0.8 })).to.include({ past: 'above', likely: true });
+    expect(boron({ ...sound, Al2O3: 0.1, B2O3: 0.81 })).to.include({ past: 'above', likely: true });
+  });
+
+  it('compares at the two decimals a value is shown with, so a float hair or a rounding is not past a bound', () => {
+    const hr = recipe.HESSELBERTH_ROY_LIMITS;
+    // K2O + Na2O is 0.30000000000000004; Al2O3 0.2496 and SiO2 2.499 show as 0.25 and 2.50.
+    const unity = { K2O: 0.2, Na2O: 0.1, CaO: 0.6, B2O3: 0.35, Al2O3: 0.2496, SiO2: 2.499 };
+    const rows = recipe.limitRows(unity, hr, 'mid')!;
+    expect(rows.filter((r) => r.past)).to.deep.equal([]);
+    const lines = [{ material: KAOLIN, amount: '10' }];
+    const checks = recipe.pastLimits({ lines, unity, celsius: 1222, limitSet: hr }).map((c) => c.check);
+    expect(checks).not.to.include.members(['alkali', 'boron-high', 'alumina-low']);
+    // The same rule in both: past by more than the rounding, both say so.
+    expect(recipe.pastSide(0.306, { max: 0.3 })).to.equal('above');
+    expect(recipe.pastSide(0.304, { max: 0.3 })).to.equal(null);
+    expect(recipe.pastSide(2.494, { min: 2.5 })).to.equal('below');
+  });
+
+  it('checks a glaze with no alumina at all as low in alumina, but not an empty one', () => {
+    const lines = [{ material: KAOLIN, amount: '10' }];
+    const unity = { K2O: 0.2, Na2O: 0.1, CaO: 0.7, B2O3: 0.4, Al2O3: 0, SiO2: 3 };
+    const low = (u: Record<string, number>) =>
+      recipe.pastLimits({ lines, unity: u, celsius: 1222 }).find((c) => c.check === 'alumina-low');
+    expect(low(unity)).to.include({ severity: 'likely', value: 0, limit: 0.25, direction: 'below' });
+    expect(low({})).to.equal(undefined);
+    // Not news when the old recipe had none either.
+    const old = recipe.pastLimits({ lines, unity, old: unity, celsius: 1222 }).map((c) => c.check);
+    expect(old).not.to.include('alumina-low');
+  });
+
+  it('only cautions with Hesselberth & Roy’s set, which gives no figure for a likely fault, as its table does', () => {
+    const hr = recipe.HESSELBERTH_ROY_LIMITS;
+    const lines = [{ material: KAOLIN, amount: '10' }];
+    const unity = { K2O: 0.2, Na2O: 0.11, CaO: 0.6, B2O3: 0.2, Al2O3: 0.24, SiO2: 3 };
+    const cautions = recipe.pastLimits({ lines, unity, celsius: 1222, limitSet: hr });
+    const of = (check: string) => cautions.find((c) => c.check === check)!;
+    expect(of('alkali')).to.include({ severity: 'caution' });
+    expect(of('alkali').sentences.map((s) => s.code)).to.include('checks.alkaliTends');
+    expect(of('alumina-low')).to.include({ severity: 'caution' });
+    expect(of('alumina-low').sentences.map((s) => s.code)).to.include('checks.aluminaLowTends');
+    // The table says the same: past, not well past.
+    const rows = recipe.limitRows(unity, hr, 'mid')!;
+    expect(rows.filter((r) => r.past).map((r) => [r.oxide, r.likely])).to.deep.equal([
+      ['K2O+Na2O', false],
+      ['Al2O3', false]
+    ]);
+  });
+
+  it('words boron by the band whose figures are used, and a set’s own figure as the set’s', () => {
+    const hr = recipe.HESSELBERTH_ROY_LIMITS;
+    const lines = [{ material: KAOLIN, amount: '10' }];
+    const unity = { K2O: 0.15, Na2O: 0.1, CaO: 0.75, Al2O3: 0.3, B2O3: 0.4, SiO2: 3 };
+    const boron = (input: { celsius?: number; limitSet?: LimitSet }) =>
+      recipe.pastLimits({ lines, unity, ...input }).find((c) => c.check === 'boron-high');
+    // The firing unknown, Hesselberth & Roy's cone 6 figures are used, so cone 6's words, not cone 06-04's.
+    expect(english(boron({ limitSet: hr })!.sentences[0])).to.equal(
+      'This is a lot of boron for cone 6 (0.40; this limit set counts 0.35 as high).'
+    );
+    expect(english(boron({ celsius: 1222, limitSet: hr })!.sentences[0])).to.match(/this limit set counts 0\.35/);
+    // The app's own set keeps its sentence at cone 6, and low fire's words with the firing unknown.
+    expect(english(boron({ celsius: 1222 })!.sentences[0])).to.equal(
+      'This is a lot of boron for cone 6 (0.40; industry counts 0.33 as high).'
+    );
+    const lowFire = recipe.pastLimits({ lines, unity: { ...unity, B2O3: 0.9 } }).find((c) => c.check === 'boron-high');
+    expect(lowFire!.sentences[0]!.code).to.equal('checks.boronLowFire');
   });
 
   it('words cone 10 boron in a set’s high band', () => {

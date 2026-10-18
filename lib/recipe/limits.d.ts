@@ -40,9 +40,9 @@ export const FIRING_BANDS: ReadonlyArray<FiringBand>;
 
 /**
  * A range for an oxide or sum in the unity formula, in moles. Under `min` or
- * over `max` a caution starts (at `max` for boron); past `minLikely` or
- * `maxLikely` the fault is likely (the same figure when not given), and
- * `maxLikelyThin` is boron's when alumina or silica is thin.
+ * over `max` a caution starts (the range is closed: see `pastSide`); at or
+ * past `minLikely` or `maxLikely` the fault is likely (never, when not
+ * given), and `maxLikelyThin` is boron's when alumina or silica is thin.
  */
 export interface UnityRange {
   min?: number;
@@ -83,6 +83,17 @@ export const DEFAULT_LIMIT_SET: string;
 export function bandOf(set: LimitSet, celsius: number | undefined): FiringBand | undefined;
 /** A set's ranges for a band (its nearest, if it does not name it), or null where it does not apply. */
 export function unityFor(set: LimitSet, band: FiringBand): Readonly<Record<string, UnityRange>> | null;
+
+/**
+ * Which side of a range a value is past, or null within it, compared at the two
+ * decimals it is shown with: a value at a bound is within. The checks and the
+ * table both use it.
+ */
+export function pastSide(value: number, range: UnityRange): 'below' | 'above' | null;
+/** Whether a value past a range is at or past its figure for a likely fault; false where it has none. */
+export function isLikely(value: number, range: UnityRange, past: 'below' | 'above' | null, thin?: boolean): boolean;
+/** A thin glaze, for boron's likely figure: alumina or silica under CHECK_LIMITS.thin. */
+export function isThin(unity: Record<string, number>): boolean;
 
 /** A recipe's value against one of a set's ranges. */
 export interface LimitRow {

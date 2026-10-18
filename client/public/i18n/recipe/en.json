@@ -419,6 +419,7 @@
     "boronLowFireTends": "It tends to melt early and run, so leave a wider foot.",
     "boronLowFireEffects": "It may pinhole or blister, turn milky blue-white where thick, and wear less well. More kaolin and silica steady it.",
     "boronMidFire": "This is a lot of boron for cone 6 ({boron}; industry counts {high} as high).",
+    "boronMidFireSet": "This is a lot of boron for cone 6 ({boron}; this limit set counts {high} as high).",
     "boronHighFire": "This is a lot of boron for cone 10 ({boron}; this limit set counts {high} as high).",
     "boronMidFireProbably": "Glazes like this will probably run, go milky or streaky, and may craze or wear less well.",
     "boronMidFireTends": "Glazes like this tend to run, go milky or streaky, and may craze or wear less well.",
