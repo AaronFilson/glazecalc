@@ -68,16 +68,32 @@ export interface ReadFiring {
   high?: string;
   atmospheres?: Atmosphere[];
   processes?: FiringProcess[];
+  /** The cones of a list ("cone 4,5"), each counted as tested. */
+  tested?: string[];
+  /** The line names an SK cone the chart does not have (SK 26): kept in the notes, not read. */
+  unknown?: true;
   /** The line is nothing but a firing. */
   whole: boolean;
 }
-export function readFiring(line: string): ReadFiring | null;
+/** How text is read: "6,5" is a half cone only when the reader writes decimal commas and it is the one number. */
+export interface ReadOptions {
+  decimalComma?: boolean;
+}
+export function readsDecimalComma(mark?: 'either' | 'comma' | 'point', locale?: string): boolean;
+/** An SK cone as the chart writes it ("6" is SK 6a), or null when the chart has none. */
+export function skCone(token: string): string | null;
+export function readFiring(line: string, options?: ReadOptions): ReadFiring | null;
 /** Whether a line is nothing but a firing, and clearly one (not a bare number or a weak word alone). */
-export function isFiringLine(line: string): boolean;
-export function firingFromLines(lines: string[] | undefined, fallbackScale?: ConeScale): FiringBlock | null;
+export function isFiringLine(line: string, options?: ReadOptions): boolean;
+export function firingFromLines(
+  lines: string[] | undefined,
+  fallbackScale?: ConeScale,
+  options?: ReadOptions
+): FiringBlock | null;
 
 /** The cones of a scale a firing log names in its cone columns, in order, each once. */
 export function conesFromLog(
   log: { fieldsIncluded?: string[]; rows?: unknown[][] } | null | undefined,
-  scale: ConeScale
+  scale: ConeScale,
+  options?: ReadOptions
 ): string[];

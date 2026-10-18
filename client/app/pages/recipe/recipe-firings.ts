@@ -1,12 +1,12 @@
 import { Component, OnInit, computed, inject, model, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { TranslocoDirective } from '@jsverse/transloco';
-import { FiringBlock, cleanFiring, conesBetween, conesFromLog } from '../../../../lib/cones/firing';
+import { FiringBlock, cleanFiring, conesBetween, conesFromLog, readsDecimalComma } from '../../../../lib/cones/firing';
 import { ApiResourceFactory } from '../../core/api-resource.service';
 import { Firing, FiringLink } from '../../core/models';
 import { LocaleService } from '../../core/locale.service';
 import { DatePipe } from '../../shared/format-pipes';
-import { listOf } from '../../shared/format';
+import { formatLocale, listOf, typedDecimalMark } from '../../shared/format';
 import { coneText } from './firing-text';
 
 // The firing logs a recipe went through (docs/adr/0021-recipe-firing.md),
@@ -180,10 +180,11 @@ export class RecipeFirings implements OnInit {
     const block = this.block();
     if (!block?.low) return [];
     const range = conesBetween(block.scale, block.low, block.high);
+    const reading = { decimalComma: readsDecimalComma(typedDecimalMark(), formatLocale()) };
     const named = new Set(
       this.links().flatMap((link) => {
         const log = this.logOf(link.firing);
-        return log ? conesFromLog(log, block.scale) : [];
+        return log ? conesFromLog(log, block.scale, reading) : [];
       })
     );
     const cones = range.filter((cone) => named.has(cone));

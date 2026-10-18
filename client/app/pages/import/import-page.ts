@@ -24,7 +24,7 @@ import { Notices, NoticesList } from '../../shared/notices';
 import { NumberInput } from '../../shared/number-input';
 import { PageHeader } from '../../shared/page-header';
 import { evaluate } from '../recipe/recipe-analysis';
-import { FiringBlock, firingFromLines, readFiring } from '../../../../lib/cones/firing';
+import { FiringBlock, firingFromLines, readFiring, readsDecimalComma } from '../../../../lib/cones/firing';
 import { LocaleService } from '../../core/locale.service';
 import { firingLine } from '../recipe/firing-text';
 
@@ -603,6 +603,7 @@ export class ImportPage implements OnInit {
       ...choices.filter((c) => c.kind === 'material')
     ];
     const amounts = importAmounts(recipe);
+    const reading = { decimalComma: readsDecimalComma(typedDecimalMark(), formatLocale()) };
     return {
       title: recipe.title ?? '',
       include: true,
@@ -610,8 +611,9 @@ export class ImportPage implements OnInit {
       // A title counts too, but only when it names a cone or a temperature ("Cone 6 Red"): a one-word
       // name such as "Red", "Salt" or "Wood" is a glaze's name, not a firing.
       firedAt: firingFromLines(
-        [...(recipe.title && readFiring(recipe.title)?.scale ? [recipe.title] : []), ...recipe.notes],
-        this.locale.cones()
+        [...(recipe.title && readFiring(recipe.title, reading)?.scale ? [recipe.title] : []), ...recipe.notes],
+        this.locale.cones(),
+        reading
       ),
       setAside: recipe.skipped.map((s) => s.text.trim()),
       saved: false,

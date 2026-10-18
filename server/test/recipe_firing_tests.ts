@@ -197,6 +197,56 @@ describe('recipe firing (lib/cones/firing.js)', () => {
       expect(named.map((r) => r.title)).to.eql(['Shino', 'Red']);
     });
 
+    it('reads SK written without its letter as the chart writes it, and never drops an SK cone silently', () => {
+      // JIS R 8101 has one cone for each number; from 015 to 6 it is the "a" cone.
+      expect(firing.readFiring('SK6')).to.eql({ scale: 'sk', low: '6a', whole: true });
+      expect(firing.readFiring('SK5 reduction')).to.eql({
+        scale: 'sk',
+        low: '5a',
+        atmospheres: ['reduction'],
+        whole: true
+      });
+      expect(firing.readFiring('SK 015')?.low).to.equal('015a');
+      expect(firing.readFiring('SK 6-8')).to.include({ low: '6a', high: '8' });
+      expect(firing.skCone('7')).to.equal('7');
+      expect(firing.skCone('7a')).to.equal(null);
+      // A number the chart lacks is still an SK firing line, kept in the notes, never read as Orton.
+      expect(firing.readFiring('SK 26')).to.eql({ unknown: true, whole: true });
+      expect(firing.isFiringLine('SK 26')).to.equal(true);
+      const [recipe] = paste.parsePaste('Shino\nCuster 50\nSK 26\nSilica 50');
+      expect([recipe!.notes, recipe!.lines.length]).to.eql([['SK 26'], 2]);
+      expect(firing.firingFromLines(['SK6'])).to.eql({ scale: 'sk', low: '6a', tested: ['6a'] });
+      const log = { fieldsIncluded: ['Cone'], rows: [['SK6 down'], ['8']] };
+      expect(firing.conesFromLog(log, 'sk')).to.eql(['6a', '8']);
+    });
+
+    it('reads "4,5" as a list of cones, and as a half cone only for a decimal comma with no other number', () => {
+      expect(firing.readFiring('cone 4,5')).to.eql({
+        scale: 'orton',
+        low: '4',
+        high: '5',
+        tested: ['4', '5'],
+        whole: true
+      });
+      expect(firing.readFiring('cone 4, 5, 6')).to.include({ low: '4', high: '6' });
+      expect(firing.readFiring('cone 4,5', { decimalComma: true })).to.eql({ scale: 'orton', low: '4.5', whole: true });
+      // Another number follows: a list, even for a decimal comma.
+      expect(firing.readFiring('cone 4,5 and 6', { decimalComma: true })?.low).to.not.equal('4.5');
+      expect(firing.firingFromLines(['Cone 4,5'])).to.eql({
+        scale: 'orton',
+        low: '4',
+        high: '5',
+        tested: ['4', '5']
+      });
+      expect(firing.readsDecimalComma('either', 'de')).to.equal(true);
+      expect(firing.readsDecimalComma('either', 'en')).to.equal(false);
+      expect(firing.readsDecimalComma('point', 'de')).to.equal(false);
+      // The same for a firing log's cells.
+      const log = { fieldsIncluded: ['Cones Top'], rows: [['4,5'], ['6,5']] };
+      expect(firing.conesFromLog(log, 'orton')).to.eql(['4', '5', '6']);
+      expect(firing.conesFromLog(log, 'orton', { decimalComma: true })).to.eql(['4.5', '6.5']);
+    });
+
     it('tells a clear firing line from a bare number or a weak word', () => {
       for (const line of ['Cone 6', 'C/6', '^6', 'SK8', '1240°C', 'ox/red', '6 ox', 'wood fired']) {
         expect(firing.isFiringLine(line), line).to.equal(true);
