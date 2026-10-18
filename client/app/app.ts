@@ -50,6 +50,8 @@ const APP_PAGES = [
 
 @Component({
   selector: 'gc-root',
+  // Escape closes the phone menu, as the Menu button does.
+  host: { '(keydown.escape)': 'closeMenu()' },
   imports: [
     NgTemplateOutlet,
     RichText,
@@ -62,8 +64,7 @@ const APP_PAGES = [
   template: `<ng-container *transloco="let t">
     <!-- For keyboard and screen reader users: past the menu, straight to the page. Hidden until focused. -->
     <a class="skip-link" href="#main" (click)="skipToContent($event, main)">{{ t('nav.skip') }}</a>
-    <!-- Escape closes the phone menu, as the Menu button does. -->
-    <header class="app-header" (keydown.escape)="closeMenu(toggle, menu)">
+    <header class="app-header">
       <nav class="app-nav" [attr.aria-label]="t('nav.main')">
         <a class="brand" [routerLink]="auth.shownSession() ? '/home' : '/'">
           <img src="/images/logo.webp" alt="" width="30" height="30" />
@@ -278,11 +279,14 @@ export class App implements OnInit {
   protected readonly formatDate = formatDate;
   protected readonly menuOpen = signal(false);
 
+  private readonly toggle = viewChild.required<ElementRef<HTMLElement>>('toggle');
+  private readonly menu = viewChild.required<ElementRef<HTMLElement>>('menu');
+
   /** Closes the phone menu; the focus goes back to its button if it was in the menu, so it is not lost. */
-  protected closeMenu(toggle: HTMLElement, menu: HTMLElement): void {
+  protected closeMenu(): void {
     if (!this.menuOpen()) return;
     this.menuOpen.set(false);
-    if (menu.contains(this.document.activeElement)) toggle.focus();
+    if (this.menu().nativeElement.contains(this.document.activeElement)) this.toggle().nativeElement.focus();
   }
   protected readonly ready = signal(false);
   protected readonly confirmingDiscard = signal(false);

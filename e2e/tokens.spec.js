@@ -131,7 +131,9 @@ test('shows how to connect an assistant, with this site’s address', async ({ p
   // Each setup has a Copy button that copies it exactly.
   await page.context().grantPermissions(['clipboard-read', 'clipboard-write']);
   await page.getByRole('button', { name: 'Copy the setup for Cursor' }).click();
-  await expect(page.locator('.setup-block', { hasText: 'mcpServers' }).first().getByRole('status')).toHaveText('Copied.');
+  await expect(page.locator('.setup-block', { hasText: 'mcpServers' }).first().getByRole('status')).toHaveText(
+    'Copied.'
+  );
   const copied = await page.evaluate(() => globalThis.navigator.clipboard.readText());
   expect(JSON.parse(copied).mcpServers.glazecalc.url).toBe(address);
   // On a phone a setup scrolls in its box, on lines as written, rather than widening the page.

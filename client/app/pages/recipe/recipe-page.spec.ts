@@ -1214,7 +1214,9 @@ describe('RecipePage', () => {
     expect(text(fixture, '.recipe-retry')).toBe(
       'Your own records were not all loaded. Check your connection, then try again.'
     );
-    const retry = [...fixture.nativeElement.querySelectorAll('.recipe-retry a, .recipe-retry button')][0] as HTMLElement;
+    const retry = [
+      ...fixture.nativeElement.querySelectorAll('.recipe-retry a, .recipe-retry button')
+    ][0] as HTMLElement;
     retry.click();
     answer('/recipe/getAll', [{ _id: 'r1', title: 'Celadon', materials: [] }]);
     await settle(fixture);

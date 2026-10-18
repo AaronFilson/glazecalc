@@ -183,9 +183,9 @@ describe('ImportPage', () => {
     expect(selects()[0].value).toBe('');
     expect(selects()[0].getAttribute('aria-invalid')).toBe('true');
     expect(text(fixture, '#import-how-0-0')).toBe('Several materials are close. Choose one, or leave the line out.');
-    expect((fixture.nativeElement as HTMLElement).querySelector('#import-how-0-0')?.classList.contains('is-question')).toBe(
-      true
-    );
+    expect(
+      (fixture.nativeElement as HTMLElement).querySelector('#import-how-0-0')?.classList.contains('is-question')
+    ).toBe(true);
     expect(text(fixture, '#import-how-0-2')).toBe(
       'Not found in the library. Choose a material, or leave the line out.'
     );

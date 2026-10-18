@@ -97,7 +97,9 @@ describe('RecipeCost', () => {
 
   it('asks for prices per pound when weights are in pounds', async () => {
     const { fixture } = await create([], 'lb');
-    expect(text(fixture, '.recipe-cost-summary')).toBe("Give each material's price per pound to see what a batch costs.");
+    expect(text(fixture, '.recipe-cost-summary')).toBe(
+      "Give each material's price per pound to see what a batch costs."
+    );
   });
 
   it('names the materials with no price, and costs the rest, guessing nothing', async () => {
