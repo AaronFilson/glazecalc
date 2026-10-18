@@ -464,7 +464,7 @@ describe('Indonesia', () => {
     const { element } = await create(PoisonLines, 'ID');
     const calls = [...element.querySelectorAll('a[href^="tel:"]')].map((a) => a.getAttribute('href'));
     expect(calls).toEqual(['tel:119']);
-    expect(element.textContent).toContain('also 118');
+    expect(element.textContent).toContain('118 also reaches an ambulance in some cities');
     expect(element.querySelector('a[href="https://kemkes.go.id/"]')?.textContent).toBe('Kementerian Kesehatan');
     expect(element.textContent).not.toContain('1500533');
   });

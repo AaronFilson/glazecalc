@@ -199,11 +199,11 @@ Many sitters, including Dawson's LT models, have a **limit timer**: a clock that
 Table: How long to set the limit timer
 Label: Limit timer settings
 
-| Source    | Setting                                                                                                               |
-| --------- | --------------------------------------------------------------------------------------------------------------------- |
-| Dawson    | ½ hour longer than the expected firing time until you know the kiln, later as little as ¼ hour; never beyond 20 hours |
-| L&L       | Very high the first time, noting how long the firing takes; after that, about 1 hour longer                           |
-| Bracker's | 30 minutes to 1 hour longer than the firing time                                                                      |
+| Source    | Setting                                                                                                                      |
+| --------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| Dawson    | ½ hour longer than the expected firing time until you know the kiln, later as little as ¼ hour; never set it beyond 20 hours |
+| L&L       | Very high the first time, noting how long the firing takes; after that, about 1 hour longer                                  |
+| Bracker's | 30 minutes to 1 hour longer than the firing time                                                                             |
 
 > [!NOTE]
 > Our starting point: generous the first time (within the dial's 20 hours), then ½ to 1 hour longer than the time you recorded. The timer also tells you how long a firing took: set at 7 and ending at 1 means 6 hours.
