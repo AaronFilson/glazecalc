@@ -11,6 +11,9 @@ const port = process.env.E2E_PORT || '3100';
 process.env.E2E_PORT = port;
 const mongoUri = process.env.E2E_MONGO_URI || 'mongodb://127.0.0.1/glazecalc_e2e';
 process.env.E2E_MONGO_URI = mongoUri;
+// The global setup empties it: refuse any but a test database before the build
+// and server start (scripts/test-database.js).
+require('./scripts/test-database').assertTestDatabase(mongoUri, 'E2E_MONGO_URI');
 // The server writes emails here as JSON files; e2e/mail.js reads them.
 const mailDir = path.join(os.tmpdir(), 'glazecalc-e2e-mail-' + port);
 process.env.E2E_MAIL_DIR = mailDir;

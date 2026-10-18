@@ -1,6 +1,7 @@
 // Settings for the server tests, loaded before any test file (.mocharc.cjs).
 import os from 'node:os';
 import path from 'node:path';
+import { assertTestDatabase } from '../../../scripts/test-database.js';
 
 // One database for each test file, emptied before it and dropped after (see
 // app.ts). The files run in parallel (.mocharc.cjs), so each of mocha's worker
@@ -11,6 +12,8 @@ const worker = process.env.MOCHA_WORKER_ID;
 const [address, query] = uri.split('?');
 process.env.MONGODB_URI =
   worker === undefined ? uri : address + '_w' + worker + (query === undefined ? '' : '?' + query);
+// The tests drop it, so it must be a database for tests (scripts/test-database.js).
+assertTestDatabase(process.env.MONGODB_URI, 'TEST_MONGODB_URI');
 // The suites sign up many accounts from one address; the rate limit tests turn
 // limits back on for themselves.
 process.env.RATE_LIMITS = 'off';
