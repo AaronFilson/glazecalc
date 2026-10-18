@@ -17,6 +17,14 @@
         "title": "Receitas",
         "text": "Monte um vidrado a partir de matérias-primas e quantidades, veja a sua fórmula de Seger (UMF) e guarde-o."
       },
+      "import": {
+        "title": "Colar receitas",
+        "text": "Cole receitas de um site, de uma folha de cálculo ou de notas, verifique o que foi lido e guarde-as."
+      },
+      "blends": {
+        "title": "Misturas para peças de teste",
+        "text": "Misture duas, três ou quatro das suas receitas em peças de teste numeradas, com o que pesar para cada uma."
+      },
       "material": {
         "title": "Matérias-primas",
         "text": "Adicione as suas próprias matérias-primas, a partir de uma fórmula química ou da análise de um fornecedor."
@@ -99,6 +107,35 @@
     "saveFailed": "Erro: o pedido ao servidor falhou."
   },
   "trash": {
-    "title": "Lixo"
+    "title": "Lixo",
+    "lead": "O que remover das suas receitas, matérias-primas, notas e registos fica aqui 30 dias. Reponha-o, ou elimine-o definitivamente.",
+    "listHeading": "No Lixo",
+    "none": "O Lixo está vazio.",
+    "untitled": "Sem título",
+    "kinds": {
+      "recipes": "Receita",
+      "materials": "Matéria-prima",
+      "additives": "Aditivo",
+      "notes": "Nota",
+      "firing": "Registo de cozedura",
+      "advice": "Conselho",
+      "other": "Registo"
+    },
+    "removedOn": "Removido em {date}",
+    "goesOn": "Eliminado definitivamente em {date}",
+    "byApp": "Removido por uma aplicação ligada",
+    "putBack": "Repor",
+    "putBackName": "Repor {name}",
+    "restored": "«{name}» voltou ao lugar onde estava.",
+    "restoredAlready": "«{name}» já tinha sido reposto.",
+    "restoreFailed": "Não foi possível repor «{name}». Tente novamente.",
+    "deleted": "«{name}» foi eliminado definitivamente.",
+    "empty": "Esvaziar o Lixo",
+    "emptyQuestion": "Eliminar definitivamente {count, plural, one {o # registo} many {os # registos} other {os # registos}} do Lixo? Esta ação não pode ser anulada.",
+    "emptyYes": "Sim, esvaziar",
+    "emptying": "A esvaziar...",
+    "emptied": "O Lixo está vazio.",
+    "emptyFailed": "Não foi possível esvaziar o Lixo. Tente novamente.",
+    "fetchFailed": "Não foi possível carregar o Lixo. Tente novamente."
   }
 }

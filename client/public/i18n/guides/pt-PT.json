@@ -102,6 +102,9 @@
     "quartzAll": "Quartzo, para poeira que é só quartzo",
     "cristobaliteAll": "Cristobalite, para poeira que é só cristobalite",
     "allFree": "Concentração de controlo para poeira que é só sílica livre",
+    "bandFromTo": "Poeira com {from}% a {to}% de sílica livre (SiO₂)",
+    "bandOverTo": "Poeira com mais de {from}% e até {to}% de sílica livre",
+    "bandAbove": "Poeira com mais de {from}% de sílica livre",
     "recommended": "Recomendado por {abbr}",
     "value": "{value} mg/m³",
     "kind": {
@@ -160,7 +163,15 @@
       "myFlat": "Peças planas",
       "mySmall": "Peças ocas pequenas",
       "myLarge": "Peças ocas grandes",
-      "myCooking": "Utensílios para cozinhar"
+      "myCooking": "Utensílios para cozinhar",
+      "idFlat": "Peças com não mais de 25 mm de profundidade interior",
+      "idSmall": "Peças com mais de 25 mm de profundidade interior, com menos de 1100 mL",
+      "idLarge": "Peças com mais de 25 mm de profundidade interior, com 1100 mL ou mais",
+      "thFlat": "Peças com não mais de 25 mm de profundidade",
+      "thSmall": "Peças com mais de 25 mm de profundidade, com menos de 1,1 L",
+      "thLarge": "Peças com mais de 25 mm de profundidade, com 1,1 L ou mais",
+      "thInfant": "Recipientes para a comida de bebés até 12 meses",
+      "thCooking": "Louça de cozinha, feita para suportar o calor da cozedura de alimentos"
     },
     "judged": {
       "average": "média de 6 peças",

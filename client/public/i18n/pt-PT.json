@@ -17,13 +17,17 @@
     "confirmEmail": "Confirmar o seu e-mail - Glazecalc",
     "home": "O seu caderno do atelier - Glazecalc",
     "recipe": "Receitas - Glazecalc",
+    "import": "Colar receitas - Glazecalc",
+    "blends": "Misturas para peças de teste - Glazecalc",
     "material": "Matérias-primas - Glazecalc",
     "additive": "Aditivos - Glazecalc",
     "firingLogs": "Registos de cozedura - Glazecalc",
     "notes": "Notas - Glazecalc",
     "trash": "Lixo - Glazecalc",
     "account": "A sua conta e definições - Glazecalc",
-    "notFound": "Página não encontrada - Glazecalc"
+    "notFound": "Página não encontrada - Glazecalc",
+    "shared": "Receita partilhada - Glazecalc",
+    "assistants": "Usar o Glazecalc a partir do seu assistente de IA - Glazecalc"
   },
   "nav": {
     "skip": "Saltar para o conteúdo",
@@ -96,9 +100,14 @@
   },
   "remove": {
     "alreadyRemoved": "O item «{name}» já tinha sido removido.",
+    "trashed": "«{name}» foi movido para o Lixo.",
+    "undo": "Anular",
+    "restored": "«{name}» voltou ao seu lugar.",
+    "restoreFailed": "Não foi possível repor «{name}». Continua no Lixo.",
     "failed": "Não foi possível remover. Tente novamente.",
     "question": "Remover «{name}»?",
     "cannotUndo": "Esta ação não pode ser anulada.",
+    "toTrash": "Pode repô-lo a partir do Lixo durante 30 dias.",
     "removing": "A remover…",
     "yes": "Sim, remover",
     "cancel": "Cancelar",
