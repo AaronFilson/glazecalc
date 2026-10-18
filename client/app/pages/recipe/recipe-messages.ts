@@ -14,6 +14,7 @@ const KEYS: Record<RecipeMessageCode, string> = {
   'checks.boronLowFireTends': marker('recipe.checks.boronLowFireTends'),
   'checks.boronLowFireEffects': marker('recipe.checks.boronLowFireEffects'),
   'checks.boronMidFire': marker('recipe.checks.boronMidFire'),
+  'checks.boronMidFireSet': marker('recipe.checks.boronMidFireSet'),
   'checks.boronHighFire': marker('recipe.checks.boronHighFire'),
   'checks.boronMidFireProbably': marker('recipe.checks.boronMidFireProbably'),
   'checks.boronMidFireTends': marker('recipe.checks.boronMidFireTends'),

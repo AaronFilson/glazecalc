@@ -376,7 +376,7 @@ The **bisque** firing (biscuit in the UK) is the first, lower firing that turns 
 
 ### Why the early part goes slowly
 
-Water turning to steam "expands 1,170 times", Bracker's notes, so damp ware has to be dried slowly. L&L and Orton advise that "Special care should be taken below 1500°F (815°C) to heat the body evenly", and that carbon must be burned out before about {{1200 °F; 650 °C}}. Above {{1500 °F; 816 °C}} the kiln can climb faster.
+Water expands more than a thousandfold as it turns to steam, so damp ware has to be dried slowly. L&L and Orton advise that "Special care should be taken below 1500°F (815°C) to heat the body evenly", and that carbon must be burned out before about {{1200 °F; 650 °C}}. Above {{1500 °F; 816 °C}} the kiln can climb faster.
 
 Table: What happens as a bisque heats
 Label: What happens in a bisque

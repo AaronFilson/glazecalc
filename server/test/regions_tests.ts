@@ -211,6 +211,15 @@ describe('region facts', () => {
     expect(food.foodRulesFor('NZ')).to.equal(null);
   });
 
+  it('names laws and areas as their sources do: England’s regulations by name, Australia’s new limits, every French poison centre’s area', () => {
+    // S.I. 2012/2619 is England's; the other three nations made matching regulations.
+    expect(food.foodRulesFor('GB')!.rules.law).to.match(/^The Materials and Articles in Contact with Food \(England\)/);
+    expect(workplace.workplaceFor('AU')!.silica!.law).to.include('workplace exposure limits from 1 December 2026');
+    for (const centre of safety.SAFETY['FR']!.poison) {
+      expect(centre.area, centre.name).to.be.a('string').and.not.equal('');
+    }
+  });
+
   it('should name shops checked on their own sites, or shops elsewhere that say they deliver', () => {
     for (const region of regions.REGIONS) {
       const entry = suppliers.shopsFor(region.code);
@@ -471,7 +480,7 @@ describe('regions before Turkey', () => {
     ]);
     data.push(['EU', food.FOOD['EU'], workplace.EU_SILICA]);
     const hash = crypto.createHash('sha256').update(JSON.stringify(data)).digest('hex');
-    expect(hash).to.equal('b67632a22a57f9bd73f72e3af3ddf3abebdaacfb69f1a3fe20d0b071a9019340');
+    expect(hash).to.equal('df23d236269ce851da85a5781ef1b5922bd13a44a13a57f9f48b68c3b976222f');
   });
 });
 
@@ -493,7 +502,7 @@ describe('regions before Korea', () => {
     ]);
     data.push(['EU', food.FOOD['EU'], workplace.EU_SILICA]);
     const hash = crypto.createHash('sha256').update(JSON.stringify(data)).digest('hex');
-    expect(hash).to.equal('019ecd75b9d1fbae7cd4090b7a2cd8f3bbacae6a5dff5b4c748b266557919f91');
+    expect(hash).to.equal('97d37de28e230f212ec7e1042eab5e727d1e090f6b8309a4c30ae2d421354fa0');
   });
 });
 
@@ -517,7 +526,7 @@ describe('regions before China', () => {
     data.push(['EU', food.FOOD['EU'], workplace.EU_SILICA]);
     const hash = crypto.createHash('sha256').update(JSON.stringify(data)).digest('hex');
     // Changed once on purpose: Taiwan's 119 note now says when to dial 112 (2026-10-16).
-    expect(hash).to.equal('78a40b67ef1ab8b683926873f242f85e67202d6bc66d38ac77f9340f21c0c980');
+    expect(hash).to.equal('febe2efd7c2270fe3f4a3bbee8e9f5dcaf58f149289d8f40b572dcc363d9a121');
   });
 });
 
@@ -541,7 +550,7 @@ describe('regions before Vietnam', () => {
     data.push(['EU', food.FOOD['EU'], workplace.EU_SILICA]);
     const hash = crypto.createHash('sha256').update(JSON.stringify(data)).digest('hex');
     // Changed once on purpose: Indonesia's note says 118 reaches an ambulance only in some cities (2026-10-17).
-    expect(hash).to.equal('72e96eb0f7a107c5902a44192f2afa913c8ab4095cbaeaa395f0d02d2dc51074');
+    expect(hash).to.equal('3be139b8dee54347792b02d227c5b695386a3644be018fea134f66c8854bb147');
   });
 });
 

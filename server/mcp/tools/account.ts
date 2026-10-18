@@ -48,9 +48,10 @@ const idArg = z.string().min(1).max(40).describe('The id from a list.');
 
 /**
  * A temperature within each firing band a recipe can be saved for, to check
- * it as that band: about Orton cone 04, 6 and 10 (lib/recipe/limits.js bands).
+ * it as that band: Orton cone 04, 6 and 10 on the 60 °C/h chart (ORTON_60 in
+ * lib/cones/firing.js; the bands are in lib/recipe/limits.js).
  */
-const BAND_CELSIUS = { low: 1060, mid: 1222, high: 1285 } as const;
+const BAND_CELSIUS = { low: 1060, mid: 1222, high: 1305 } as const;
 type FiringBand = keyof typeof BAND_CELSIUS;
 
 /** A recipe's firing block as an assistant is given it, or undefined when it states none. */

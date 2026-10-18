@@ -14,7 +14,7 @@ describe('unityColumns', () => {
   it('groups oxides into fluxes, stabilizers, glass formers and wildcards', () => {
     const columns = unityColumns({ K2O: 0.3, CaO: 0.7, Al2O3: 0.4, B2O3: 0.2, SiO2: 3.5, Fe2O3: 0.05, TiO2: 0.1 });
     expect(columns.map((c) => c.title)).toEqual([
-      'Fluxes - RO',
+      'Fluxes - R₂O and RO',
       'Stabilizers - R₂O₃',
       'Glass Formers - RO₂',
       'Wildcards'

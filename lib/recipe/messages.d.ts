@@ -7,6 +7,7 @@ export type RecipeMessageCode =
   | 'checks.boronLowFireTends'
   | 'checks.boronLowFireEffects'
   | 'checks.boronMidFire'
+  | 'checks.boronMidFireSet'
   | 'checks.boronHighFire'
   | 'checks.boronMidFireProbably'
   | 'checks.boronMidFireTends'

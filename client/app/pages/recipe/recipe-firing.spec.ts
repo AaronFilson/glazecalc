@@ -131,7 +131,7 @@ describe('firing in words', () => {
     expect(words.conversion).toContain("measured at 100 °C an hour by Kyoto's municipal institute");
     expect(words.conversion).toContain('≈ cone 7');
     expect(words.conversion).not.toContain('cone 10');
-    // An SK cone Kyoto did not measure gets no temperature and no Orton cone: the JIS figures are never shown.
+    // An SK cone other than 8, 10 and 12 gets no temperature and no Orton cone: the JIS figures are never shown.
     expect(firingWords({ scale: 'sk', low: '9' }, orton)!.conversion).toBe('');
     expect(firingWords({ scale: 'sk', low: '7' }, orton)!.conversion).toBe('');
     // A range is converted only when both ends are measured, and then in order.
