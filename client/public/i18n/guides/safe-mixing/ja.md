@@ -65,49 +65,49 @@ EU の限度値より低い値を定めている EU 加盟国もいくつかあ�
 
 この順序は、まず粉を避けるという HSE の原則に基づく私たちの提案です。計量と調合の手順は「[釉薬の作り方](/guides/making-a-glaze)」を参照してください。
 
-## Respirators {#respirators lang=en}
+## 防じんマスク {#respirators}
 
-A **respirator** is a mask certified to filter fine particles from the air you breathe. It works only when it seals to your face, and it backs up good habits rather than replacing them.
+**防じんマスク**は、吸い込む空気から細かい粒子をろ過することが認証された（日本では国家検定に合格した）マスクで、一般の簡易マスクとは別物です。顔に密着して初めて効果があり、良い習慣の代わりではなく、それを補うものです。
 
-### Classes by region
+### 地域ごとの区分
 
-Table: Particle respirator classes by region (rough equivalents for glaze dust)
-Label: Respirator classes
+Table: 地域ごとの防じんマスクの区分（釉薬の粉じんに対するおおよその対応）
+Label: 防じんマスクの区分
 
-| Region                    | Everyday class | Higher class | Look for                                                                         |
-| ------------------------- | -------------- | ------------ | -------------------------------------------------------------------------------- |
-| United States             | N95            | P100         | NIOSH approval on the mask or its packaging                                      |
-| UK and EU                 | FFP2           | FFP3         | EN 149 on disposable masks; EN 140 on reusable half masks, with P2 or P3 filters |
-| Australia and New Zealand | P2             | P3           | AS/NZS 1716                                                                      |
+| 地域                             | 一般的な区分 | 上位の区分 | 確認する表示                                                                                    |
+| -------------------------------- | ------------ | ---------- | ----------------------------------------------------------------------------------------------- |
+| 米国                             | N95          | P100       | マスクまたはパッケージの NIOSH 認証                                                             |
+| 英国・EU                         | FFP2         | FFP3       | 使い捨てマスクは EN 149、再使用できる半面形マスクは EN 140（P2 または P3 のフィルターを付ける） |
+| オーストラリア・ニュージーランド | P2           | P3         | AS/NZS 1716                                                                                     |
 
-The higher class filters a larger share of fine particles. Sources disagree on what an Australian P3 filters (at least 99%, or at least 99.95%), so buy the certified class sold in your region. A reusable **half mask** (covering the nose and mouth, with replaceable filters) fitted with P100 filters (P3 outside the US) is a common studio choice.
+上位の区分ほど、細かい粒子をろ過する割合が大きくなります。オーストラリアの P3 がどれだけろ過するかは出典によって異なる（99%以上、または99.95%以上）ため、お住まいの地域で販売されている認証済みの区分を購入してください。P100 フィルター（米国以外では P3）を取り付けた再使用できる**半面形マスク**（鼻と口を覆い、フィルターを交換できるもの）は、工房でよく選ばれています。
 
-### Fit and seal
+### フィットと密着
 
-A mask that leaks lets dust in around its edges, whatever its class. HSE warns that stubble and beards "make it impossible to get a good seal".
+漏れのあるマスクは、区分にかかわらず、縁のすき間から粉じんが入ります。英国の HSE は、無精ひげやあごひげがあると「十分な密着を得ることが不可能になる」と警告しています。
 
-- **Shave shortly before you work.** Guidance differs on how recent "clean-shaven" must be. A UK maker, citing HSE, says shaved within 8 hours of starting work. The Australian and New Zealand fit-test standard asks for a shave before a fit test, "preferably within 12 hours". Shaving shortly before you work meets both.
-- **If you keep a beard,** a loose-fitting **powered respirator** (PAPR: a hood or helmet with a fan that supplies filtered air) needs no face seal.
-- **Get the size right.** Poor fit is a major cause of leaks. Workplaces use a **fit test**, a check that a particular mask seals on a particular face. At home, we suggest following the maker's instructions for checking the seal each time you put it on.
+- **作業の少し前にひげをそってください**。「ひげをそった状態」がどれくらい直前であるべきかは、指針によって異なります。HSE を引用する英国のメーカーは、作業を始める前の8時間以内にそることとしています。オーストラリアとニュージーランドのフィットテスト規格は、フィットテストの前にそることを求めており、「できれば12時間以内」としています。作業の少し前にそれば、どちらも満たせます。
+- **あごひげを残す場合は**、ゆったりした**電動ファン付き呼吸用保護具**（PAPR: ファンでろ過した空気を送るフードやヘルメット）なら、顔への密着は必要ありません。
+- **サイズを合わせてください**。合っていないことは漏れの大きな原因です。職場では**フィットテスト**、つまり特定のマスクが特定の人の顔に密着するかどうかの確認を行います。家庭では、着用のたびにメーカーの説明に従って密着を確認することをおすすめします。
 
 > [!NOTE]
-> In our view, fit matters more than class: a well-fitted N95, FFP2 or P2 will usually do better than a loose P100.
+> 私たちの考えでは、区分よりフィットのほうが重要です。よく合った N95、FFP2 または P2 は、たいてい緩い P100 より効果があります。
 
-### When to wear one
+### 着用するとき
 
-HSE says a respirator is "normally not needed" where weighing and mixing happen in a ventilated enclosure, but "may be needed for maintenance and cleaning". Most home studios have no enclosure, so we suggest wearing one (N95, FFP2 or P2 at least; P100, FFP3 or P3 is better) whenever you:
+HSE は、計量と調合を換気された囲いの中で行う場合、防じんマスクは「通常は必要ない」が、「保守や清掃では必要になることがある」と述べています。家庭の工房のほとんどには囲いがないため、次の作業のときはいつも着用することをおすすめします（少なくとも N95、FFP2 または P2。P100、FFP3 または P3 ならさらによい）。
 
-- open bags or tip out powder;
-- weigh powders and stir them into water;
-- scrape, sand or grind dried glaze or bisque;
-- do any dry cleanup, or empty a vacuum;
-- spray glaze (in a booth: see below).
+- 袋を開けるとき、粉を出すとき。
+- 粉を計量し、水に混ぜるとき。
+- 乾いた釉薬や素焼き{{en: bisque}}の器を削る、やすりをかける、研削するとき。
+- 乾いたまま掃除をするとき、掃除機のごみを捨てるとき。
+- 釉薬を吹き掛けるとき（ブースの中で。後述）。
 
-### What is not a respirator
+### 防じんマスクではないもの
 
-- Surgical masks, cloth masks and "nuisance dust" masks without a NIOSH, EN 149 or AS/NZS 1716 marking. We would not rely on them for glaze dust.
-- A dust respirator "will not protect you against gases, vapors" (OSHA), so it does nothing for kiln fumes.
-- Look after yours: OSHA notes that a dirty or misused respirator "can become a hazard". Store it clean, away from dusty work clothes.
+- サージカルマスク、布マスク、NIOSH、EN 149、AS/NZS 1716 の表示がない「簡易マスク」。釉薬の粉じんに対して、私たちならこれらには頼りません。
+- 防じんマスクは「ガスや蒸気からは守ってくれない」（OSHA）ため、窯から出るガスには何の効果もありません。
+- 手入れをしてください。OSHA は、汚れた防じんマスクや誤った使い方をしたマスクは「危険の元になりうる」と指摘しています。粉じんの付いた作業着から離して、清潔な状態で保管してください。
 
 ## 掃除、衣服、手 {#cleaning}
 
@@ -181,36 +181,36 @@ HSE は、吹き掛けは「RCS を含むミストを発生させることがあ
 
 西洋式の楽焼（ラク）は大量の煙と CO を出します。ユタ大学は、空気の取り入れ口や窓から離れた屋外で行うよう勧めています。焼成そのものについては「[基本の窯焚き](/guides/firing)」を参照してください。
 
-## Materials that need most care {#materials lang=en}
+## 特に注意が必要な原料 {#materials}
 
-Most glaze materials, including silica, clays, feldspars and frits, are mainly a dust hazard, which the habits above control. A shorter list is toxic in its own right, by breathing, swallowing or skin contact. Digitalfire adds that stains are generally much safer than raw oxides, and that "unbalanced glazes that release toxic metals can be made from any materials": food safety depends on the whole recipe, not on one ingredient.
+シリカ、粘土、長石、フリットなど、ほとんどの釉薬原料は主に粉じんとしての危険があり、それは上で述べた習慣で抑えられます。それより少ない数の原料は、吸い込む、飲み込む、皮膚に触れることで、それ自体が有毒です。Digitalfire はさらに、顔料は一般に生の酸化物よりはるかに安全であること、そして「有毒な金属を溶出するバランスの悪い釉薬は、どんな原料からでも作れる」ことを付け加えています。食器としての安全性{{en: food safe}}は、一つの原料ではなく調合全体で決まります。
 
-An **IARC group** is a cancer classification: Group 1 means "carcinogenic to humans", Group 2A "probably carcinogenic to humans", Group 2B "possibly carcinogenic to humans", and Group 3 "not classifiable as to its carcinogenicity to humans", which means too little evidence to judge either way.
+**IARC グループ**はがんの分類です。グループ1は「ヒトに対して発がん性がある」、グループ2Aは「おそらくヒトに対して発がん性がある」、グループ2Bは「ヒトに対して発がん性がある可能性がある」、グループ3は「ヒトに対する発がん性について分類できない」を意味し、これは、どちらとも判断するには証拠が少なすぎるということです。
 
-Table: Glaze materials that need extra care
-Label: Materials that need most care
+Table: 特別な注意が必要な釉薬原料
+Label: 特に注意が必要な原料
 
-| Material                               | Hazard                                                                                                                                                            | Precaution                                                                                                  |
-| -------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| Lead compounds and lead frits          | "Highly toxic by inhalation or ingestion"; vaporizes at lower kiln temperatures.                                                                                  | Avoid; Digitalfire says experts only. Assume any glaze not labeled "lead-free" or "leadless" contains lead. |
-| Barium carbonate                       | Insoluble in water but dissolves in stomach acid; affects the heart and muscles (irregular heartbeat, low potassium).                                             | A barium frit or strontium where the recipe allows; respirator; labeled container.                          |
-| Manganese dioxide                      | Dust or fume can cause **manganism**, a nervous-system illness like Parkinson's disease, usually after 1 to 3 years of exposure. Fume can cause metal fume fever. | Black stains at low percentages instead; vent the kiln.                                                     |
-| Potassium dichromate and chrome oxide  | Chromium(VI), as in dichromate, is IARC Group 1. That listing does not cover chromium(III), as in chrome oxide.                                                   | Avoid dichromate. We treat chrome oxide as far less hazardous, but keep its dust down.                      |
-| Cobalt                                 | Soluble cobalt(II) salts IARC 2A; cobalt(II) oxide 2B; black Co₃O₄ Group 3.                                                                                       | Keep dust down; stains for blacks.                                                                          |
-| Nickel compounds                       | Among the University of Utah's known or probable human carcinogens.                                                                                               | Stains rather than high percentages.                                                                        |
-| Cadmium and selenium, raw or in stains | Cadmium compounds are among Utah's known or probable human carcinogens.                                                                                           | "Only by experts" (Digitalfire); read any stain's SDS.                                                      |
-| Antimony and vanadium                  | Trivalent antimony (as in antimony trioxide) IARC 2A; vanadium "highly toxic by inhalation".                                                                      | Vanadium for experts only; keep antimony dust down.                                                         |
-| Copper and zinc                        | Kiln fume can cause metal fume fever; raw zinc oxide is "generally not considered hazardous".                                                                     | Vent the kiln.                                                                                              |
-| Lithium carbonate                      | "Highly toxic by inhalation". An EU expert committee concluded it may harm fertility and the unborn child; formal adoption was not confirmed when we checked.     | Gloves and respirator; keep from children. We suggest extra care in pregnancy.                              |
-| Borax and boric acid                   | Classified in the EU as "may damage fertility; may damage the unborn child".                                                                                      | Gloves; boron from a frit where you can.                                                                    |
-| Soda ash, potash, alkaline feldspars   | Skin irritants.                                                                                                                                                   | Gloves.                                                                                                     |
-| Fluorspar, cryolite, lepidolite        | Release fluorine gases in firing; fluorspar also irritates skin.                                                                                                  | Vent the kiln outdoors; gloves.                                                                             |
-| Talc                                   | IARC 2A since July 2024; talc contaminated with asbestos counts as asbestos, Group 1.                                                                             | Platy (not fibrous), asbestos-free talc; check its SDS.                                                     |
+| 原料                                 | 危険                                                                                                                                                                     | 対策                                                                                                                                         |
+| ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| 鉛化合物と鉛フリット                 | 「吸入や経口摂取で強い毒性がある」。窯の中では比較的低い温度で気化します。                                                                                               | 避けてください。Digitalfire は専門家だけが扱うものとしています。「無鉛」や「鉛フリー」と表示されていない釉薬は鉛を含むものと考えてください。 |
+| 炭酸バリウム                         | 水には溶けませんが胃酸には溶け、心臓と筋肉に影響します（不整脈、低カリウム血症）。                                                                                       | 調合上可能ならバリウムフリットかストロンチウム。防じんマスク。ラベルを貼った容器。                                                           |
+| 二酸化マンガン                       | 粉じんやヒュームは**マンガン中毒**（パーキンソン病に似た神経系の病気）を起こすことがあり、通常は1〜3年のばく露の後に起こります。ヒュームは金属熱を起こすことがあります。 | 代わりに黒の顔料を低い割合で使う。窯の排気。                                                                                                 |
+| 重クロム酸カリウムと酸化クロム       | 重クロム酸塩に含まれるクロム(VI)は IARC グループ1です。この分類は、酸化クロムに含まれるクロム(III)には当てはまりません。                                                 | 重クロム酸塩は避ける。酸化クロムははるかに危険性が低いものとして扱っていますが、粉じんは抑えてください。                                     |
+| コバルト                             | 水溶性のコバルト(II)塩は IARC 2A、酸化コバルト(II)は 2B、黒色の Co₃O₄ はグループ3。                                                                                      | 粉じんを抑える。黒には顔料を使う。                                                                                                           |
+| ニッケル化合物                       | ユタ大学が挙げる、ヒトに対して発がん性がある、またはおそらく発がん性がある物質に含まれます。                                                                             | 高い割合で使うより顔料を使う。                                                                                                               |
+| カドミウムとセレン（生原料、顔料中） | カドミウム化合物は、ユタ大学が挙げる、ヒトに対して発がん性がある、またはおそらく発がん性がある物質に含まれます。                                                         | 「専門家のみ」（Digitalfire）。どの顔料も SDS を読む。                                                                                       |
+| アンチモンとバナジウム               | 三価のアンチモン（三酸化アンチモンなど）は IARC 2A。バナジウムは「吸入で強い毒性がある」。                                                                               | バナジウムは専門家のみ。アンチモンの粉じんを抑える。                                                                                         |
+| 銅と亜鉛                             | 窯から出るヒュームは金属熱を起こすことがあります。生の酸化亜鉛は「一般に有害とは考えられていない」。                                                                     | 窯の排気。                                                                                                                                   |
+| 炭酸リチウム                         | 「吸入で強い毒性がある」。EU の専門家委員会は、生殖能力や胎児に害を与えるおそれがあると結論づけましたが、私たちが調べた時点では正式な採択は確認できませんでした。        | 手袋と防じんマスク。子どもから遠ざける。妊娠中は特に注意することをおすすめします。                                                           |
+| ホウ砂とホウ酸                       | EU で「生殖能又は胎児への悪影響のおそれ」と分類されています。                                                                                                            | 手袋。できればホウ素はフリットから取る。                                                                                                     |
+| ソーダ灰、炭酸カリウム、アルカリ長石 | 皮膚刺激性。                                                                                                                                                             | 手袋。                                                                                                                                       |
+| 蛍石、氷晶石、レピドライト           | 焼成中にフッ素系のガスを出します。蛍石は皮膚も刺激します。                                                                                                               | 窯の排気を屋外へ。手袋。                                                                                                                     |
+| タルク                               | 2024年7月から IARC 2A。アスベストに汚染されたタルクはアスベストとして扱われ、グループ1。                                                                                 | 板状（繊維状でない）で、アスベストを含まないタルク。SDS を確認する。                                                                         |
 
-Borax, boric acid, soda ash and potash dissolve in water, so we treat them as the likeliest to be absorbed through broken skin or swallowed from unwashed hands.
+ホウ砂、ホウ酸、ソーダ灰、炭酸カリウムは水に溶けるため、傷のある皮膚から吸収されたり、洗っていない手から飲み込まれたりする可能性が最も高いものとして扱っています。
 
 > [!NOTE]
-> If a recipe calls for raw barium carbonate, a lot of manganese, or any lead or cadmium material, look for a version that uses a frit or a stain instead. Glazecalc can compare the chemistry of the original and the swap; then test the new glaze.
+> 調合に生の炭酸バリウム、多量のマンガン、または鉛やカドミウムを含む原料が使われている場合は、代わりにフリットや顔料を使う調合を探してください。Glazecalc で元の調合と置き換えた調合の化学組成を比較できます。そのうえで、新しい釉薬をテストしてください。
 
 ## 手袋、皮膚、目 {#gloves-and-eyes}
 

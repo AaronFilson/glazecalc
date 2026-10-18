@@ -17,13 +17,17 @@
     "confirmEmail": "メールアドレスの確認 - Glazecalc",
     "home": "工房ノート - Glazecalc",
     "recipe": "調合 - Glazecalc",
+    "import": "調合の貼り付け - Glazecalc",
+    "blends": "テストピースのブレンド - Glazecalc",
     "material": "原料 - Glazecalc",
     "additive": "添加物 - Glazecalc",
     "firingLogs": "焼成記録 - Glazecalc",
     "notes": "メモ - Glazecalc",
     "trash": "ごみ箱 - Glazecalc",
     "account": "アカウントと設定 - Glazecalc",
-    "notFound": "ページが見つかりません - Glazecalc"
+    "notFound": "ページが見つかりません - Glazecalc",
+    "shared": "共有された調合 - Glazecalc",
+    "assistants": "AI アシスタントから Glazecalc を使う - Glazecalc"
   },
   "nav": {
     "skip": "本文へスキップ",
@@ -96,9 +100,14 @@
   },
   "remove": {
     "alreadyRemoved": "「{name}」はすでに削除されています。",
+    "trashed": "「{name}」をごみ箱に移しました。",
+    "undo": "元に戻す",
+    "restored": "「{name}」を戻しました。",
+    "restoreFailed": "「{name}」を戻せませんでした。まだごみ箱に入っています。",
     "failed": "削除できませんでした。もう一度お試しください。",
     "question": "「{name}」を削除しますか?",
     "cannotUndo": "元に戻すことはできません。",
+    "toTrash": "30日間は、ごみ箱から戻せます。",
     "removing": "削除中...",
     "yes": "はい、削除します",
     "cancel": "キャンセル",

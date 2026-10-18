@@ -102,6 +102,9 @@
     "quartzAll": "石英（粉じんがすべて石英である場合）",
     "cristobaliteAll": "クリストバライト（粉じんがすべてクリストバライトである場合）",
     "allFree": "粉じんがすべて遊離けい酸である場合の管理濃度",
+    "bandFromTo": "遊離けい酸（SiO₂）が {from}% から {to}% の粉じん",
+    "bandOverTo": "遊離けい酸が {from}% を超え {to}% 以下の粉じん",
+    "bandAbove": "遊離けい酸が {from}% を超える粉じん",
     "recommended": "{abbr} の勧告値",
     "value": "{value} mg/m³",
     "kind": {
@@ -160,7 +163,15 @@
       "myFlat": "平物",
       "mySmall": "小型の深物",
       "myLarge": "大型の深物",
-      "myCooking": "加熱調理用器具"
+      "myCooking": "加熱調理用器具",
+      "idFlat": "内側の深さが25 mm以下のもの",
+      "idSmall": "内側の深さが25 mmを超え、1100 mL未満のもの",
+      "idLarge": "内側の深さが25 mmを超え、1100 mL以上のもの",
+      "thFlat": "深さが25 mm以下のもの",
+      "thSmall": "深さが25 mmを超え、1.1 L未満のもの",
+      "thLarge": "深さが25 mmを超え、1.1 L以上のもの",
+      "thInfant": "12か月までの乳児の食べ物を入れる容器",
+      "thCooking": "加熱調理用器具（調理の熱に耐えるように作られたもの）"
     },
     "judged": {
       "average": "6個の平均",
