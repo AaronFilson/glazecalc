@@ -17,6 +17,14 @@
         "title": "Riċetti",
         "text": "Ibni glejż minn materjali u ammonti, ara l-formula ta’ Seger (UMF) tiegħu, u ssejvjah."
       },
+      "import": {
+        "title": "Pejstjar ta’ riċetti",
+        "text": "Ippejstja riċetti minn websajt, spreadsheet jew noti, iċċekkja dak li nqara, u ssejvjahom."
+      },
+      "blends": {
+        "title": "Taħlitiet għal madum tal-prova",
+        "text": "Ħallat żewġ riċetti, tliet riċetti jew erba’ riċetti tiegħek f’madum tal-prova bin-numri, b’dak li għandek tiżen għal kull wieħed."
+      },
       "material": {
         "title": "Materjali",
         "text": "Żid il-materji primi tiegħek, minn formula kimika jew mill-analiżi tal-fornitur."
@@ -99,6 +107,35 @@
     "saveFailed": "Żball: it-talba lis-server ma rnexxietx."
   },
   "trash": {
-    "title": "Barmil"
+    "title": "Barmil",
+    "lead": "Dak li tneħħi mir-riċetti, mill-materjali, min-noti u mir-reġistri tiegħek jistenna hawn għal 30 jum. Poġġih lura, jew ħassru għal dejjem.",
+    "listHeading": "Fil-barmil",
+    "none": "Il-barmil huwa vojt.",
+    "untitled": "Mingħajr titlu",
+    "kinds": {
+      "recipes": "Riċetta",
+      "materials": "Materjal",
+      "additives": "Addittiv",
+      "notes": "Nota",
+      "firing": "Reġistru tal-ħami",
+      "advice": "Parir",
+      "other": "Rekord"
+    },
+    "removedOn": "Tneħħa: {date}",
+    "goesOn": "Jitħassar għal dejjem: {date}",
+    "byApp": "Tneħħa minn app konnessa",
+    "putBack": "Poġġi lura",
+    "putBackName": "Poġġi lura {name}",
+    "restored": "Poġġejna lura “{name}” fil-post oriġinali.",
+    "restoredAlready": "Diġà poġġejna lura “{name}”.",
+    "restoreFailed": "Ma rnexxilniex inpoġġu lura “{name}”. Erġa’ pprova.",
+    "deleted": "Ħassarna “{name}” għal dejjem.",
+    "empty": "Żvojta l-barmil",
+    "emptyQuestion": "{count, plural, one {Tħassar # rekord fil-barmil għal dejjem?} two {Tħassar # rekords kollha fil-barmil għal dejjem?} few {Tħassar # rekords kollha fil-barmil għal dejjem?} many {Tħassar #-il rekord kollha fil-barmil għal dejjem?} other {Tħassar # rekord kollha fil-barmil għal dejjem?}} Ma tistax terġa’ lura minn dan.",
+    "emptyYes": "Iva, żvojtah",
+    "emptying": "Qed jiġi żvojtat…",
+    "emptied": "Il-barmil issa vojt.",
+    "emptyFailed": "Ma rnexxilniex inżvojtaw il-barmil. Erġa’ pprova.",
+    "fetchFailed": "Il-barmil ma setax jitgħabba. Erġa’ pprova."
   }
 }

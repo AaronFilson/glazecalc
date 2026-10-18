@@ -17,13 +17,17 @@
     "confirmEmail": "Ikkonferma l-indirizz elettroniku tiegħek - Glazecalc",
     "home": "Il-pitazz tal-istudjo - Glazecalc",
     "recipe": "Riċetti - Glazecalc",
+    "import": "Pejstjar ta’ riċetti - Glazecalc",
+    "blends": "Taħlitiet għal madum tal-prova - Glazecalc",
     "material": "Materjali - Glazecalc",
     "additive": "Addittivi - Glazecalc",
     "firingLogs": "Reġistri tal-ħami - Glazecalc",
     "notes": "Noti - Glazecalc",
     "trash": "Barmil - Glazecalc",
     "account": "Il-kont u s-settings - Glazecalc",
-    "notFound": "Il-paġna ma nstabitx - Glazecalc"
+    "notFound": "Il-paġna ma nstabitx - Glazecalc",
+    "shared": "Riċetta maqsuma - Glazecalc",
+    "assistants": "Użu ta’ Glazecalc mill-assistent tal-IA tiegħek - Glazecalc"
   },
   "nav": {
     "skip": "Aqbeż għall-kontenut",
@@ -96,9 +100,14 @@
   },
   "remove": {
     "alreadyRemoved": "Dan diġà tneħħa: “{name}”.",
+    "trashed": "Neqlna “{name}” għall-barmil.",
+    "undo": "Erġa’ lura",
+    "restored": "Poġġejna lura “{name}”.",
+    "restoreFailed": "Ma rnexxilniex inpoġġu lura “{name}”. Dan għadu fil-barmil.",
     "failed": "It-tneħħija ma rnexxietx. Erġa’ pprova.",
     "question": "Tneħħi “{name}”?",
     "cannotUndo": "Ma tistax terġa’ lura minn dan.",
+    "toTrash": "Għal 30 jum tista’ terġa’ tpoġġi lura mill-barmil dak li neħħejt.",
     "removing": "Qed inneħħu…",
     "yes": "Iva, neħħi",
     "cancel": "Ikkanċella",

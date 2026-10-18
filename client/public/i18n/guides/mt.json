@@ -102,6 +102,9 @@
     "quartzAll": "Kwarz, għal trab li huwa kollu kwarz",
     "cristobaliteAll": "Kristobalit, għal trab li huwa kollu kristobalit",
     "allFree": "Konċentrazzjoni ta’ kontroll għal trab li huwa kollu silika ħielsa",
+    "bandFromTo": "Trab b’{from}% sa {to}% silika ħielsa (SiO₂)",
+    "bandOverTo": "Trab b’aktar minn {from}% u sa {to}% silika ħielsa",
+    "bandAbove": "Trab b’aktar minn {from}% silika ħielsa",
     "recommended": "Rakkomandat minn {abbr}",
     "value": "{value} mg/m³",
     "kind": {
@@ -160,7 +163,15 @@
       "myFlat": "Oġġetti ċatti",
       "mySmall": "Oġġetti fondi żgħar",
       "myLarge": "Oġġetti fondi kbar",
-      "myCooking": "Oġġetti tat-tisjir"
+      "myCooking": "Oġġetti tat-tisjir",
+      "idFlat": "Oġġetti li l-fond ta’ ġewwa tagħhom ma jaqbiżx il-25 mm",
+      "idSmall": "Oġġetti li l-fond ta’ ġewwa tagħhom jaqbeż il-25 mm, inqas minn 1100 mL",
+      "idLarge": "Oġġetti li l-fond ta’ ġewwa tagħhom jaqbeż il-25 mm, 1100 mL jew aktar",
+      "thFlat": "Oġġetti li l-fond tagħhom ma jaqbiżx il-25 mm",
+      "thSmall": "Oġġetti li l-fond tagħhom jaqbeż il-25 mm, inqas minn 1.1 L",
+      "thLarge": "Oġġetti li l-fond tagħhom jaqbeż il-25 mm, 1.1 L jew aktar",
+      "thInfant": "Kontenituri għall-ikel ta’ trabi sa 12-il xahar",
+      "thCooking": "Oġġetti tat-tisjir, magħmulin biex jifilħu s-sħana tat-tisjir"
     },
     "judged": {
       "average": "medja ta’ 6 biċċiet",
