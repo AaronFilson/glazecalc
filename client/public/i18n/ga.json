@@ -17,13 +17,17 @@
     "confirmEmail": "Do ríomhphost a dheimhniú - Glazecalc",
     "home": "Do leabhar nótaí stiúideo - Glazecalc",
     "recipe": "Oidis - Glazecalc",
+    "import": "Oidis a ghreamú isteach - Glazecalc",
+    "blends": "Cumaisc do thíleanna tástála - Glazecalc",
     "material": "Ábhair - Glazecalc",
     "additive": "Breiseáin - Glazecalc",
     "firingLogs": "Taifid bhácála - Glazecalc",
     "notes": "Nótaí - Glazecalc",
     "trash": "Bruscar - Glazecalc",
     "account": "Do chuntas agus do shocruithe - Glazecalc",
-    "notFound": "Gan aimsiú - Glazecalc"
+    "notFound": "Gan aimsiú - Glazecalc",
+    "shared": "Oideas comhroinnte - Glazecalc",
+    "assistants": "Glazecalc a úsáid ó do chúntóir AI - Glazecalc"
   },
   "nav": {
     "skip": "Léim go dtí an phríomhchuid",
@@ -96,9 +100,14 @@
   },
   "remove": {
     "alreadyRemoved": "Baineadh “{name}” cheana.",
+    "trashed": "Bogadh “{name}” go dtí an bruscar.",
+    "undo": "Cealaigh",
+    "restored": "Cuireadh “{name}” ar ais.",
+    "restoreFailed": "Níorbh fhéidir “{name}” a chur ar ais. Tá sé fós sa bhruscar.",
     "failed": "Níorbh fhéidir é a bhaint. Bain triail eile as.",
     "question": "An bhfuil tú cinnte gur mian leat “{name}” a bhaint?",
     "cannotUndo": "Ní féidir é seo a chealú.",
+    "toTrash": "Is féidir leat é a chur ar ais ón mbruscar ar feadh 30 lá.",
     "removing": "Á bhaint...",
     "yes": "Bain é",
     "cancel": "Cealaigh",

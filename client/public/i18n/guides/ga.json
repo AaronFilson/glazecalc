@@ -102,6 +102,9 @@
     "quartzAll": "Grianchloch, do dheannach atá ina ghrianchloch ar fad",
     "cristobaliteAll": "Críostabailít, do dheannach atá ina chríostabailít ar fad",
     "allFree": "Tiúchan rialaithe do dheannach atá ina shaorshilice ar fad",
+    "bandFromTo": "Deannach ina bhfuil {from}% go {to}% saorshilice (SiO₂)",
+    "bandOverTo": "Deannach ina bhfuil níos mó ná {from}% agus suas le {to}% saorshilice",
+    "bandAbove": "Deannach ina bhfuil níos mó ná {from}% saorshilice",
     "recommended": "Molta ag {abbr}",
     "value": "{value} mg/m³",
     "kind": {
@@ -160,7 +163,15 @@
       "myFlat": "Earraí cothroma",
       "mySmall": "Earraí tolla beaga",
       "myLarge": "Earraí tolla móra",
-      "myCooking": "Gréithe cócaireachta"
+      "myCooking": "Gréithe cócaireachta",
+      "idFlat": "Píosaí nach bhfuil níos doimhne ná 25 mm taobh istigh",
+      "idSmall": "Píosaí níos doimhne ná 25 mm taobh istigh, faoi 1100 mL",
+      "idLarge": "Píosaí níos doimhne ná 25 mm taobh istigh, 1100 mL nó níos mó",
+      "thFlat": "Píosaí nach bhfuil níos doimhne ná 25 mm",
+      "thSmall": "Píosaí níos doimhne ná 25 mm, faoi 1.1 L",
+      "thLarge": "Píosaí níos doimhne ná 25 mm, 1.1 L nó níos mó",
+      "thInfant": "Coimeádáin do bhia naíonán suas le 12 mhí d’aois",
+      "thCooking": "Gréithe cócaireachta, a dhéantar chun teas cócaireachta a sheasamh"
     },
     "judged": {
       "average": "meán 6 phíosa",

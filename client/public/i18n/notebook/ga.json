@@ -17,6 +17,14 @@
         "title": "Oidis",
         "text": "Tóg glónra as ábhair agus méideanna, féach a fhoirmle Seger, agus sábháil é."
       },
+      "import": {
+        "title": "Oidis a ghreamú isteach",
+        "text": "Greamaigh oidis ó shuíomh gréasáin, ó scarbhileog nó ó nótaí, seiceáil an méid a léadh, agus sábháil iad."
+      },
+      "blends": {
+        "title": "Cumaisc do thíleanna tástála",
+        "text": "Cumaisc dhá cheann, trí cinn nó ceithre cinn de d’oidis ina dtíleanna tástála uimhrithe, agus cad atá le meá do gach ceann acu."
+      },
       "material": {
         "title": "Ábhair",
         "text": "Cuir do chuid amhábhar féin leis, ó fhoirmle cheimiceach nó ó anailís soláthraí."
@@ -99,6 +107,35 @@
     "saveFailed": "Earráid: theip ar an iarratas chuig an bhfreastalaí."
   },
   "trash": {
-    "title": "Bruscar"
+    "title": "Bruscar",
+    "lead": "Fanann an méid a bhaineann tú de d’oidis, d’ábhair, de do nótaí agus de do thaifid bhácála anseo ar feadh 30 lá. Cuir ar ais é, nó scrios go buan é.",
+    "listHeading": "Sa bhruscar",
+    "none": "Tá an bruscar folamh.",
+    "untitled": "Gan teideal",
+    "kinds": {
+      "recipes": "Oideas",
+      "materials": "Ábhar",
+      "additives": "Breiseán",
+      "notes": "Nóta",
+      "firing": "Taifead bácála",
+      "advice": "Comhairle",
+      "other": "Taifead"
+    },
+    "removedOn": "Baineadh ar {date}",
+    "goesOn": "Scriosfar go buan ar {date}",
+    "byApp": "Bainte ag aip cheangailte",
+    "putBack": "Cuir ar ais",
+    "putBackName": "Cuir {name} ar ais",
+    "restored": "Cuireadh “{name}” ar ais san áit a raibh sé.",
+    "restoredAlready": "Cuireadh “{name}” ar ais cheana.",
+    "restoreFailed": "Níorbh fhéidir “{name}” a chur ar ais. Bain triail eile as.",
+    "deleted": "Scriosadh “{name}” go buan.",
+    "empty": "Folmhaigh an bruscar",
+    "emptyQuestion": "An bhfuil tú cinnte gur mian leat {count, plural, one {an # taifead} two {na # thaifead ar fad} few {na # thaifead ar fad} many {na # dtaifead ar fad} other {na # taifead ar fad}} sa bhruscar a scriosadh go buan? Ní féidir é seo a chealú.",
+    "emptyYes": "Folmhaigh é",
+    "emptying": "Á fholmhú...",
+    "emptied": "Tá an bruscar folamh.",
+    "emptyFailed": "Níorbh fhéidir an bruscar a fholmhú. Bain triail eile as.",
+    "fetchFailed": "Níorbh fhéidir an bruscar a lódáil. Bain triail eile as."
   }
 }

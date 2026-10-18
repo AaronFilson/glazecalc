@@ -57,9 +57,13 @@
     "stackServer": "API TypeScript ar Node.js 24 agus Express 5, le MongoDB 9, seiceáilte ag níos mó ná 350 tástáil uathoibrithe.",
     "stackHosting": "Ritheann sé in Docker ar Amazon Web Services, taobh thiar de nginx, le HTTPS ó Let’s Encrypt.",
     "stackDeploy": "Imscartha ag GitHub Actions: tógtar agus tástáiltear na híomhánna le gach athrú, agus síníonn gach imscaradh isteach in AWS gan eochracha stóráilte.",
+    "creditsHeading": "Admhálacha",
+    "credits": "Tagann na limistéir ar chairt Stull ó léamh Glazy ar chairt R. T. Stull ó 1912, le Derek Au (Copyright (c) 2017 Derek Au, MIT License). Tá an <notices>fógra iomlán</notices> sa chód foinseach.",
     "whoHeading": "Cé a rinne é",
     "who": "Is é Aaron Filson a dhéanann Glazecalc. Ar aimsigh tú fadhb, nó an bhfuil smaoineamh agat? <issues>Oscail saincheist ar GitHub</issues>.",
-    "studio": "Tá potaireacht lámhdhéanta Aaron Filson ag <studio>Updraft Pottery Studio</studio> i dTacoma, Washington. Féach ar an obair, agus ordaigh píosa má théann ceann i bhfeidhm ort."
+    "studio": "Tá potaireacht lámhdhéanta Aaron Filson ag <studio>Updraft Pottery Studio</studio> i dTacoma, Washington. Féach ar an obair, agus ordaigh píosa má théann ceann i bhfeidhm ort.",
+    "languagesHeading": "Teangacha",
+    "languages": "Tá Glazecalc ar fáil sna teangacha seo. Osclaíonn gach nasc an leathanach seo sa teanga sin."
   },
   "privacy": {
     "title": "Príobháideachas",
@@ -71,8 +75,15 @@
     "contact": "Chun ceist a chur faoi do shonraí, nó chun aon cheann de do chearta a úsáid, scríobh chuig <mail>privacy@glazecalcapp.com</mail>. Is féidir leat freisin <issues>saincheist a oscailt ar GitHub</issues>, ach is poiblí iad saincheisteanna: ná cuir do sheoladh ríomhphoist ná aon rud pearsanta i gceann riamh. Is féidir leat formhór na rudaí a bhaineann le do shonraí a dhéanamh tú féin ar <account>leathanach do chuntais</account>.",
     "storedHeading": "Cad a choinnítear, agus cén fáth",
     "storedAccount": "<b>Do chuntas:</b> do sheoladh ríomhphoist, agus do phasfhocal, nach stóráiltear ach mar haiseáil aontreo (bcrypt), ní mar an pasfhocal féin riamh. Coinnítear do shocruithe (mar shampla teanga, réigiún agus aonaid) agus liosta na n-ábhar atá agat leis. Tá seoladh ríomhphoist ag teastáil ó chuntas, chun síniú isteach agus chun pasfhocal dearmadta a athshocrú. Nuair a chruthaíonn tú cuntas, seoltar nasc chuig an seoladh chun a dheimhniú gur leatsa é; go dtí sin, ní théann ríomhphost chuige ach nuair a iarrann tú é, mar shampla le haghaidh athshocrú pasfhocail.",
+    "storedPrices": "<b>Praghsanna, má thugann tú aon cheann:</b> an méid a íocann tú as gach ábhar, an cileagram, agus an t-airgeadra ina bhfuil siad, le haghaidh costas baisce. Is sonraí gnó iad, coinnithe le do chuntas agus príobháideach dó: ní chuid d’oideas riamh iad, mar sin ní thaispeánann aon rud a chomhroinneann tú iad. Áirítear iad le ‘Mo shonraí a íoslódáil’, agus scriosann scriosadh an chuntais iad. Aistrítear praghsanna trialach isteach i do chuntas lena taifid, d’ábhair nár thug tú praghas orthu, nuair a bhíonn an dá cheann san airgeadra céanna.",
     "storedEmailChange": "<b>Do ríomhphost a athrú:</b> an dáta ar athraíodh do sheoladh go deireanach, ionas nach nglactar riamh le hiarratas chun síniú isteach dhá chéim a chur as ó sheoladh nua sna 30 lá ina dhiaidh sin.",
     "storedSignIn": "<b>Síniú isteach dhá chéim, má chuireann tú ar siúl é:</b> cé acu atá sé ar siúl nó nach bhfuil; an eochair a roinneann d’aip fhíordheimhnithe le Glazecalc, criptithe; do gach eochair rochtana, a heochair phoiblí (nach féidir léi síniú isteach léi féin) mar aon leis an aitheantas agus na sonraí a thugann do ghléas di, an t-ainm a thug tú uirthi, agus cathain a cuireadh leis í agus cathain a úsáideadh go deireanach í; do chóid aisghabhála, ní mar théacs ach mar haiseáil aontreo le heochair, ionas nach féidir le duine ar bith iad a léamh ar ais; agus, má chuireann duine éigin do phasfhocal isteach ach nach gcríochnaítear an dara céim, cathain a sheol Glazecalc ríomhphost chugat faoi sin go deireanach (uair sa lá ar a mhéad). Fad a bhíonn tú ag síniú isteach, idir do phasfhocal agus an dara céim, coinníonn an freastalaí nóta den síniú isteach ar feadh 5 nóiméad, agus ní choinníonn an leathanach comhartha gearr ach ina chuimhne féin: gan fianán nua, gan aon rud i stóras do bhrabhsálaí.",
+    "storedSaved": "<b>An méid a shábhálann tú:</b> d’oidis, d’ábhair, do bhreiseáin, do nótaí, do thaifid bhácála agus do chomhairle, mar a scríobh tú iad. Is tusa amháin a fheiceann iad, mura gcomhroinneann tú oideas le nasc.",
+    "storedTrash": "<b>An bruscar agus leaganacha níos luaithe:</b> fanann an méid a bhaineann tú de liosta sa bhruscar, slán, ionas gur féidir leat é a chur ar ais; agus coinníonn gach athrú a shábhálann tú ar thaifead an taifead mar a bhí díreach roimhe sin, ionas gur féidir leat an t-athrú a chealú.",
+    "storedShares": "<b>Oidis a chomhroinneann tú le nasc, má chomhroinneann tú aon cheann:</b> cén t-oideas, cathain a rinneadh a nasc agus cé acu a thaispeánann sé nótaí an oidis, le haiseáil aontreo den nasc (ní an nasc féin riamh). Is féidir le haon duine a bhfuil an nasc aige an t-oideas a fheiceáil mar atá sé anois, lena fhoirmle Seger, agus a nótaí má roghnaigh tú iad a thaispeáint; ní fheiceann siad do ríomhphost, do chuntas ná aon phraghsanna riamh. Coinnítear oidis chomhroinnte amach as innill chuardaigh, agus ní shroicheann an nasc logaí an fhreastalaí riamh. Chun mí-úsáid a stopadh, comhairtear na hoidis chomhroinnte a osclaítear ó gach seoladh IP, i gcuimhne an fhreastalaí, ar feadh 15 nóiméad. Ní féidir le triail comhroinnt.",
+    "storedTokens": "<b>Comharthaí rochtana agus aipeanna ceangailte, má dhéanann tú nó má cheadaíonn tú aon cheann:</b> do gach ceann, a ainm, an méid a cheadaítear dó, haiseáil aontreo den chomhartha (ní an comhartha féin riamh) agus a 4 charachtar dheireanacha, agus cathain a rinneadh é, a úsáideadh go deireanach é, a théann in éag é agus a cúlghaireadh é.",
+    "storedActivity": "<b>An méid a rinne comharthaí agus aipeanna:</b> líne do gach taifead a chruthaigh, a d’athraigh, a bhog go dtí an bruscar, a chuir ar ais nó a chealaigh comhartha rochtana nó aip cheangailte: cathain, cén comhartha nó aip, cad a rinne sé agus teideal an taifid, giorraithe. Ní théacs nóta ná aon rud eile sa taifead riamh. Ní liostaítear na hathruithe a dhéanann tú ar an suíomh gréasáin.",
+    "storedLimits": "<b>Teorainneacha ar chomh minic:</b> chun buille faoi thuairim agus scripteanna as smacht a stopadh, comhairtear iarrachtaí síniú isteach, cruthú cuntas, iarratais athshocraithe agus trialacha de réir seoladh IP nó cuntais, comharthaí rochtana nach n-oibríonn de réir seoladh IP, taifid a bhogann gach comhartha rochtana go dtí an bruscar, de réir comhartha, oidis chomhroinnte a osclaítear agus naisc chomhroinnte nach n-osclaíonn aon rud, de réir seoladh IP, agus iarratais ar na huirlisí do chúntóirí AI (MCP): 60 an nóiméad agus 2,000 an lá de réir seoladh IP, nó 120 an nóiméad agus 5,000 an lá de réir cuntais nuair a úsáidtear comhartha rochtana, le 10 malartú nó meaitseáil an nóiméad ar a mhéad.",
     "storedTrial": "<b>Triail (‘Bain triail as anois’):</b> gan ríomhphost ná pasfhocal, ach ainm cumtha, mar shampla “speckled quiet kilns”. Má shíníonn tú isteach i gcuntas ar an mbrabhsálaí céanna le linn trialach, bogann a ndearna tú sa triail isteach sa chuntas.",
     "storedResets": "<b>Naisc athshocraithe pasfhocail agus naisc ríomhphoist:</b> cén cuntas a d’iarr, cathain, an seoladh ar seoladh nasc chuige chun seoladh a dheimhniú, agus méarlorg de gach nasc (ní an nasc féin).",
     "storedLogs": "<b>Logaí:</b> taifeadann an freastalaí gréasáin gach iarratas: do sheoladh IP, an t-am, an leathanach a iarradh agus ainm do bhrabhsálaí. Taifeadann an aip earráidí leis an leathanach ar tharla siad air, ach ní do sheoladh ríomhphoist riamh.",
@@ -95,6 +106,11 @@
     "choiceNoWarranty": "Cuirtear Glazecalc ar fáil mar atá, gan bharántas. Ní ghlacann a chothaitheoirí aon fhreagracht ná aon dliteanas as do chinneadh cuntas a chruthú, ná as an áit a gcoinnítear a shonraí.",
     "keptHeading": "Cé chomh fada is a choinnítear é",
     "keptAccount": "<b>Do chuntas agus a shábhálann tú:</b> go dtí go scriosann tú iad. Ní bhaintear cuntais toisc nach n-úsáidtear iad.",
+    "keptTrash": "<b>An bruscar agus leaganacha níos luaithe:</b> taifead a baineadh 30 lá tar éis duit é a bhaint, nó go dtí go scriosann tú go buan é nó go bhfolmhaíonn tú an bruscar; leaganacha níos luaithe 90 lá, agus gan ach an 20 ceann deireanach de gach taifead (agus an ceann ó roimh athruithe comhartha rochtana), ach ní choinnítear iad níos faide ná an taifead riamh: fad atá sé sa bhruscar imíonn a leaganacha nuair a imíonn sé. Imíonn an dá cheann ag an am céanna nuair a scriosann tú do chuntas.",
+    "keptShares": "<b>Naisc chomhroinnte:</b> go dtí go stopann tú den oideas a chomhroinnt, go ndéanann tú nasc nua dó, go mbogann tú go dtí an bruscar é nó go scriosann tú do chuntas. Ní chomhroinneann an t-oideas a chur ar ais ón mbruscar arís é. Cuireann athshocrú do phasfhocail nó síniú amach i ngach áit deireadh le do naisc ar fad freisin; ní chuireann athrú do phasfhocail.",
+    "keptTokens": "<b>Comharthaí rochtana agus aipeanna ceangailte:</b> gach ceann acu go dtí 30 lá tar éis dó dul in éag (téann gach ceann in éag, laistigh de bhliain ar a mhéad), nó go dtí go scriosann tú do chuntas. Cuireann athshocrú pasfhocail nó ‘Sínigh amach i ngach áit’ deireadh leo ar fad ag an am céanna.",
+    "keptActivity": "<b>An méid a rinne comharthaí agus aipeanna:</b> 90 lá, nó go dtí go scriosann tú do chuntas.",
+    "keptLimits": "<b>Teorainneacha ar chomh minic:</b> ní choinnítear na comhaireamh ach i gcuimhne an fhreastalaí, ar feadh 1 nóiméad go 24 uair an chloig, agus cailltear iad nuair a atosaíonn sé.",
     "keptTrial": "<b>Triail:</b> 14 lá óna tús, agus ansin scriostar í agus gach a bhfuil inti, mura gcruthaíonn tú cuntas chun í a choinneáil.",
     "keptResets": "<b>Naisc athshocraithe pasfhocail agus naisc ríomhphoist:</b> oibríonn nasc athshocraithe ar feadh 30 nóiméad agus scriostar a thaifead tar éis thart ar uair an chloig; oibríonn nasc chun seoladh a dheimhniú, agus coinnítear é, ar feadh 24 uair an chloig.",
     "keptSignIn": "<b>Síniú isteach dhá chéim:</b> gach aip fhíordheimhnithe, eochair rochtana agus sraith cód aisghabhála go dtí go mbaineann tú é, go gcuireann tú síniú isteach dhá chéim as nó go scriosann tú do chuntas. Scriostar síniú isteach atá ag fanacht lena dhara céim tar éis 5 nóiméad, agus aip nó eochair rochtana a thosaigh tú a chur leis ach nár chríochnaigh tú, tar éis 10 nóiméad ar a mhéad.",
@@ -112,6 +128,7 @@
     "rightsAsk": "Maidir le haon rud eile, mar shampla iarraidh nach n-úsáidfí do shonraí fad a bhíonn botún á cheartú, nó agóid a dhéanamh i gcoinne an chaoi a n-úsáidtear iad, scríobh chuig <mail>privacy@glazecalcapp.com</mail>. Tá sé saor in aisce, agus gheobhaidh tú freagra laistigh de mhí. Ní iarrfar ort ach a thaispeáint gur leatsa an cuntas, trí shíniú isteach nó trí nasc a sheoltar chuig a sheoladh a oscailt, agus ní iarrfar cárta aitheantais ort riamh.",
     "rightsComplain": "Mura bhfuil tú sásta, is féidir leat gearán a dhéanamh le húdarás cosanta sonraí: san Aontas Eorpach, <edpb>an t-údarás i do thír féin</edpb>, agus sa Ríocht Aontaithe, an <ico>Information Commissioner’s Office</ico>.",
     "storageHeading": "Fianáin agus stóras brabhsálaí",
+    "storageIntro": "Socraíonn Glazecalc dhá fhianán, an dara ceann ach amháin le linn duit síniú isteach le Google nó le GitHub, agus coinníonn sé cúpla luach beag i do bhrabhsálaí. Tá gach ceann ann le haghaidh rud a d’iarr tú: fanacht sínithe isteach, síniú isteach le Google nó le GitHub, nó rogha a rinne tú a mheabhrú. Ní rianaíonn aon cheann acu thú agus ní roinntear aon cheann, mar sin ní éilíonn an dlí go n-iarrfaí ar dtús, agus níl aon bhratach fianán ann.",
     "storageLabel": "Fianáin agus stóras brabhsálaí",
     "storageName": "Ainm",
     "storagePurpose": "Cad chuige é",
@@ -150,6 +167,7 @@
         "lasts": "Go dtí go nglanann tú stóras do bhrabhsálaí."
       },
       "print": {
+        "purpose": "Do roghanna deireanacha maidir le hoideas a phriontáil: an t-oideas iomlán, baisc nó an bhileog oibre, agus méid na baisce.",
         "lasts": "Go dtí go nglanann tú stóras do bhrabhsálaí."
       },
       "token": {
@@ -163,12 +181,19 @@
       "reloadedFor": {
         "purpose": "Tar éis leagan nua den suíomh a eisiúint, cén leathanach a athlódáladh agus cathain, ionas nach n-athlódálann leathanach ach uair amháin sa nóiméad ar a mhéad.",
         "lasts": "Go dtí go ndúnann tú an cluaisín."
+      },
+      "oauthCookie": {
+        "purpose": "Le linn duit síniú isteach le Google nó le GitHub amháin: ceanglaíonn sé freagra Google nó GitHub le do bhrabhsálaí, ionas nach féidir le duine ar bith eile do shíniú isteach a chríochnú ná ceann a thosú duit. Ní féidir le scripteanna ar an leathanach é a léamh.",
+        "lasts": "Socraítear é nuair a bhrúnn tú ‘Lean ar aghaidh le Google’ nó ‘Lean ar aghaidh le GitHub’, nó nuair a cheanglaíonn tú ceann ar leathanach do chuntais. Bainfear é nuair a chríochnaíonn an síniú isteach, nó tar éis 10 nóiméad."
       }
     },
     "childrenHeading": "Leanaí",
     "children": "Uirlis do photadóirí is ea Glazecalc, agus níl sé dírithe ar leanaí.",
     "changesHeading": "Athruithe",
-    "changes": "Má athraíonn an fógra seo, athraíonn an dáta ag barr an leathanaigh freisin."
+    "changes": "Má athraíonn an fógra seo, athraíonn an dáta ag barr an leathanaigh freisin.",
+    "storedProviders": "<b>Google nó GitHub, má shíníonn tú isteach le ceann acu:</b> id féin na seirbhíse duit (uimhir nó cód nach n-athraíonn riamh), cathain a cheangail tú é agus cathain a shínigh tú isteach leis go deireanach, agus an bhfuil pasfhocal de do chuid féin ag do chuntas. Ní choinnítear aon rud eile ón tseirbhís: ní d’ainm, do phictiúr ná aon eochair do do chuntas ansin. Le linn duit síniú isteach, coinníonn an freastalaí nóta den síniú isteach, leis an ríomhphost a deir an tseirbhís gur leatsa é nuair a bhíonn gá leis: do chuntas nua, áit a ndéantar ríomhphost do chuntais de, nó, nuair a bhíonn an ríomhphost sin ag cuntas Glazecalc cheana, chun an tseirbhís a cheangal leis nuair a shíníonn tú isteach sa chuntas sin. Scriostar an nóta, agus an ríomhphost atá ann, laistigh de thart ar 10 nóiméad.",
+    "providers": "<b>Is rogha leatsa é síniú isteach le Google nó le GitHub</b>, agus ní tharlaíonn sé ach nuair a bhrúnn tú a chnaipe. Téann do bhrabhsálaí ansin chuig Google nó GitHub, a sheolann a n-id duit agus do ríomhphost chuig Glazecalc. Is cuideachta ar leith é gach ceann, atá freagrach as an méid a roinneann tú leis faoina bheartas príobháideachta féin. Ní luchtaítear aon script ná íomhá ó cheachtar acu ar leathanaigh Glazecalc.",
+    "keptProviders": "<b>Google nó GitHub:</b> gach ceangal go dtí go ndícheanglaíonn tú é nó go scriosann tú do chuntas. Scriostar síniú isteach atá ar siúl tar éis 10 nóiméad."
   },
   "notFound": {
     "heading": "Níor aimsíodh an leathanach",
@@ -194,5 +219,27 @@
     "standardFetchFailed": "Tharla earráid agus comhairle an fhreastalaí á fáil.",
     "saved": "Cuireadh an chomhairle leis na taifid.",
     "saveFailed": "Tharla earráid agus an chomhairle á seoladh."
+  },
+  "assistants": {
+    "title": "Glazecalc a úsáid ó do chúntóir AI",
+    "lead": "Is féidir le cúntóirí AI mar Claude, GitHub Copilot, Cursor agus Gemini úsáid a bhaint as ríomhanna Glazecalc go díreach, tríd an Model Context Protocol (MCP).",
+    "whatHeading": "Cad is féidir leis a dhéanamh",
+    "what": "Gan chuntas, is féidir le cúntóir ábhair a lorg sa leabharlann, foirmle Seger oidis a oibriú amach, í a sheiceáil i gcomparáid le teorainneacha a bhácála, ionadaithe a mholadh d’ábhair scortha, oideas a athdhéanamh as na hábhair a ainmníonn tú, idirthiontú a dhéanamh idir cóin agus teochtaí, agus na treoirleabhair a chuardach agus a léamh. Ní shábháiltear aon rud a sheolann sé; mar a tharlaíonn do gach leathanach, taifeadann logaí an fhreastalaí gréasáin seoladh IP, am agus seoladh gach iarratais (ní an méid a seoladh riamh), ar feadh 14 lá.",
+    "mine": "Le comhartha rochtana ó <account>leathanach do chuntais</account>, is féidir leis d’oidis, d’ábhair, do leabhar nótaí, do thaifid bhácála agus na hábhair i do stoc a léamh freisin. Ní féidir le comhartha ach léamh: ní athraíonn sé ná ní bhaineann sé aon rud riamh.",
+    "caution": "Rabhaidh iad na seiceálacha teorainneacha, bunaithe ar theorainneacha foilsithe, mar atá san aip, ní fianaise go bhfuil glónra slán i gcomhair bia. Bácáil gach glónra mar thástáil, agus cuir tástáil láistithe ar ghlónraí do dhromchlaí bia.",
+    "addressHeading": "An seoladh",
+    "address": "Tabhair an seoladh seo do do chúntóir, ag úsáid iompar Streamable HTTP:",
+    "token": "Chun ligean dó do thaifid féin a léamh, déan comhartha ar <account>leathanach do chuntais</account> agus cóipeáil é. Seolann do chúntóir é i gceanntásc Authorization, mar Bearer agus ansin an comhartha. Coinnigh amach as comhaid a chomhroinneann tú nó a thiomnaíonn tú é, mar a dhéanfá le pasfhocal.",
+    "clientsHeading": "Glazecalc a chur le do chúntóir",
+    "claudeCode": "I dteirminéal:",
+    "claudeCodeToken": "Le comhartha rochtana, chun do thaifid féin a léamh freisin:",
+    "vscode": "In .vscode/mcp.json i bhfillteán, nó i do shocruithe úsáideora. Iarrann VS Code an comhartha uair amháin agus coinníonn sé folaithe é; fág headers agus inputs ar lár chun na huirlisí nach dteastaíonn cuntas uathu amháin a úsáid:",
+    "cursor": "In ~/.cursor/mcp.json, nó .cursor/mcp.json i dtionscadal. Fág headers ar lár chun na huirlisí nach dteastaíonn cuntas uathu amháin a úsáid:",
+    "gemini": "In ~/.gemini/settings.json. Fág headers ar lár chun na huirlisí nach dteastaíonn cuntas uathu amháin a úsáid:",
+    "appsHeading": "Claude, ChatGPT agus aipeanna eile",
+    "apps": "Cuir nascóir saincheaptha leis leis an seoladh thuas. Ní féidir leis na haipeanna seo comhartha rochtana a sheoladh fós, mar sin faigheann siad na huirlisí nach dteastaíonn cuntas uathu. Beidh teacht ar do thaifid féin uathu nuair a bheidh síniú isteach ón aip ar fáil.",
+    "stopHeading": "Rochtain a stopadh",
+    "stop": "Cúlghair comhartha ar <account>leathanach do chuntais</account> am ar bith. Stopann gach comhartha ag obair ar an lá a roghnaigh tú, agus stopann siad ar fad ag an am céanna má athshocraíonn tú do phasfhocal nó má shíníonn tú amach i ngach áit.",
+    "limits": "Is féidir le gach seoladh 60 iarratas an nóiméad agus 2,000 an lá a dhéanamh; cuntas a úsáideann comhartha, 120 an nóiméad agus 5,000 an lá. Tá malartuithe agus meaitseálacha teoranta do 10 an nóiméad."
   }
 }

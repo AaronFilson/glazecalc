@@ -129,25 +129,25 @@ Tomhaistear luaidhe fola in **µg/dL** (micreagraim luaidhe i ngach deicilítear
 
 Coinníonn an aip Glazecalc an luaidhe as mura roghnaíonn tú í sna [socruithe](/account). Nuair atá an luaidhe as, ní chuireann an aip luaidhe le hoideas choíche, agus ní mholann sí í.
 
-## Pets {#pets lang=en}
+## Peataí {#pets}
 
 > [!NOTE]
-> We found no veterinary study or guidance written for pets in potters' homes. The advice in this section is common sense, built on general facts about lead, barium and birds. It does not come from a veterinary source.
+> Níor aimsíomar aon staidéar tréidliachta ná treoirlínte a scríobhadh do pheataí i dtithe potadóirí. Is ciall choiteann an chomhairle sa chuid seo, bunaithe ar fhíricí ginearálta faoi luaidhe, faoi bhairiam agus faoi éin. Ní ó fhoinse tréidliachta a thagann sí.
 
-### What is known
+### A bhfuil ar eolas
 
-The Pet Poison Helpline says "Lead is toxic for all species, but young and/or malnourished animals are at highest risk for poisoning", with signs such as vomiting, diarrhea, not eating, stumbling, seizures and blindness. A veterinary case report describes a dog that ate sparklers containing barium nitrate (a soluble barium salt, not a glaze material): it developed sudden weakness, drooling and an irregular heartbeat, and recovered with veterinary treatment. Birds are a special case: a University of Illinois vet explains that "Birds have a highly sophisticated and ultra efficient respiratory system, making them particularly vulnerable to the inhalation of fumes and aerosols."
+Deir Pet Poison Helpline “Tá luaidhe tocsaineach do gach speiceas, ach is iad ainmhithe óga agus/nó ainmhithe atá faoi mhíchothú is mó atá i mbaol nimhithe”, le comharthaí mar urlacan, buinneach, gan ithe, tuisliú, taomanna agus daille. Déanann tuarascáil cháis tréidliachta cur síos ar mhadra a d’ith spréachairí ina raibh níotráit bhairiam (salann bairiam intuaslagtha, ní ábhar glónra{{en: glaze}}): tháinig laige tobann, priosláil agus buille croí neamhrialta air, agus tháinig sé chuige féin le cóireáil tréidliachta. Cás ar leith is ea éin: míníonn tréidlia ó Ollscoil Illinois go bhfuil “córas riospráide an-sofaisticiúil agus thar a bheith éifeachtach ag éin, rud a fhágann go bhfuil siad an-leochaileach go háirithe d’ionanálú múiche agus aerasól.”
 
-### Common-sense rules
+### Rialacha ciallmhara
 
-- Keep pets out of the studio, with the door shut.
-- Dogs chew bags and drink from buckets. Keep bags in a closed cabinet and a lid on every bucket.
-- Cats walk through dust and lick it off their paws and fur. Wet-clean the floor and keep cats out of the studio, so there is nothing to groom off.
-- Birds and small mammals (rabbits, guinea pigs, hamsters) share the household air. Keep them in a far room with the door shut while you handle dry materials and while the kiln fires.
-- Fish tanks collect settling dust. Keep them out of the studio, and covered.
-- Keep pet food and water bowls away from the studio and kiln, and use commercial or tested bowls, not studio experiments.
+- Coinnigh peataí amach as an stiúideo, agus an doras dúnta.
+- Cognaíonn madraí málaí agus ólann siad as buicéid. Coinnigh málaí i gcaibinéad dúnta agus clúdach ar gach buicéad.
+- Siúlann cait trí dheannach agus lighann siad dá lapaí agus dá bhfionnadh é. Glan an t-urlár go fliuch agus coinnigh cait amach as an stiúideo, ionas nach mbeidh faic acu le lí díobh féin.
+- Roinneann éin agus mamaigh bheaga (coiníní, muca guine, hamstair) aer an tí. Coinnigh i seomra i bhfad ón stiúideo iad, agus an doras dúnta, fad a bhíonn tú ag láimhseáil ábhar tirim agus fad a bhíonn an áith ag bácáil.
+- Bailíonn umair éisc deannach a thiteann orthu. Coinnigh amach as an stiúideo iad, agus clúdach orthu.
+- Coinnigh babhlaí bia agus uisce na bpeataí i bhfad ón stiúideo agus ón áith, agus úsáid babhlaí tráchtála nó babhlaí a tástáladh, ní turgnaimh stiúideo.
 
-If a pet may have eaten or drunk anything from the studio, or shows signs like those above, call your vet or an animal poison line (see the table at the top), with the material's name and the pet's weight to hand.
+Má d’fhéadfadh sé gur ith nó gur ól peata rud ar bith ón stiúideo, nó má tá comharthaí air cosúil leo siúd thuas, cuir glao ar do thréidlia nó ar líne chomhairle faoi nimh d’ainmhithe (féach an tábla ag an mbarr), agus ainm an ábhair agus meáchan an pheata ar láimh agat.
 
 ## An áith {#the-kiln}
 
@@ -220,41 +220,41 @@ Is é **glónra líneála**{{en: liner glaze}} an glónra ar an taobh istigh de 
 
 Chun tuilleadh a fháil amach faoi conas a leánn glónraí, cén fáth a láisteann cuid acu agus cad is brí leis na teorainneacha, féach an treoirleabhar [Glónrú ó bhunphrionsabail](/guides/glazing-basics).
 
-## Sources {#sources lang=en}
+## Foinsí {#sources}
 
 - [America's Poison Centers: Poison Help](https://poisoncenters.org/)
 - [Poison Control (poison.org): webPOISONCONTROL](https://www.poison.org/)
 - [NHS: Poisoning](https://www.nhs.uk/conditions/poisoning/)
-- [National Poisons Information Service (UK)](https://www.npis.org/)
+- [National Poisons Information Service (an Ríocht Aontaithe)](https://www.npis.org/)
 - [National Poisons Information Centre of Ireland: Public Poisons Line](https://www.poisons.ie/)
 - [European Commission: 112, the European emergency number](https://digital-strategy.ec.europa.eu/en/policies/112)
 - [healthdirect: Poisoning](https://www.healthdirect.gov.au/poisoning)
-- [National Poisons Centre (New Zealand)](https://www.poisons.co.nz/)
+- [National Poisons Centre (an Nua-Shéalainn)](https://www.poisons.co.nz/)
 - [ASPCA: Animal Poison Control](https://www.aspca.org/pet-care/animal-poison-control)
 - [Pet Poison Helpline](https://www.petpoisonhelpline.com/)
-- [Animal PoisonLine (UK)](https://www.animalpoisonline.co.uk/)
-- [Animal Poisons Helpline (Australia and New Zealand)](https://animalpoisons.com.au/)
+- [Animal PoisonLine (an Ríocht Aontaithe)](https://www.animalpoisonline.co.uk/)
+- [Animal Poisons Helpline (an Astráil agus an Nua-Shéalainn)](https://animalpoisons.com.au/)
 - [PubMed Central: Acute soluble barium poisoning, a review (2025)](https://pmc.ncbi.nlm.nih.gov/articles/PMC11700400)
 - [WikEM: Boron toxicity](https://wikem.org/wiki/Boron_toxicity)
-- [NPIC and US EPA: Recognition and Management of Pesticide Poisonings, chapter 9 (PDF)](https://www.npic.orst.edu/RMPP/rmpp_ch9.pdf)
+- [NPIC agus EPA SAM: Recognition and Management of Pesticide Poisonings, caibidil 9 (PDF)](https://www.npic.orst.edu/RMPP/rmpp_ch9.pdf)
 - [medlibrary.org: Lithium carbonate prescribing information](https://medlibrary.org/lib/rx/meds/lithium-carbonate-16/page/2/)
 - [CDC: About Lead in Jobs, Hobbies, or Other Activities](https://cdc.gov/lead-prevention/prevention/jobs-hobbies-activities.html)
 - [CDC: Blood Lead Reference Value](https://www.cdc.gov/nceh/lead/data/blood-lead-reference-value.htm)
-- [US EPA: Children's health booklet (2018, PDF)](https://19january2021snapshot.epa.gov/sites/static/files/2018-10/documents/childrenshealthbooklet2018_final-4_newlinks.pdf)
+- [EPA SAM: leabhrán ar shláinte leanaí (2018, PDF)](https://19january2021snapshot.epa.gov/sites/static/files/2018-10/documents/childrenshealthbooklet2018_final-4_newlinks.pdf)
 - [Pennsylvania Department of Health: Non-Occupational Lead Exposure (PDF)](https://www.health.pa.gov:443/topics/Documents/Environmental%20Health/Non-Occupational%20Lead%20Exposure.pdf)
 - [Western Carolina University: Ceramics Safety](https://www.wcu.edu/discover/campus-services-and-operations/facilities-management/safety-and-risk-management/visual-arts-theatre-safety/ceramics-safety.aspx)
-- [Crafts Council (UK): How to make your pottery practice greener](https://craftscouncil.org.uk/stories/how-make-your-pottery-practice-greener)
+- [Crafts Council (an Ríocht Aontaithe): How to make your pottery practice greener](https://craftscouncil.org.uk/stories/how-make-your-pottery-practice-greener)
 - [Pet Poison Helpline: Lead](https://www.petpoisonhelpline.com/poison/lead/)
 - [Vet Candy: Sparkler ingestion results in barium toxicity](https://www.myvetcandy.com/clinicalupdblog/2019/3/15/sparkler-ingestion-results-in-barium-toxicity)
 - [University of Illinois College of Veterinary Medicine: Bird toxins](https://vetmed.illinois.edu/pet-health-columns/bird-toxins-teflon-avocado-lead-zinc/)
 - [Skutt: Designing a Kiln Room (PDF)](https://cdn.shopify.com/s/files/1/0889/3726/7497/files/Designing-A-Kiln-Room-1.pdf)
-- [Kiln Management guide for schools (PDF)](https://cdn.shopify.com/s/files/1/0889/3726/7497/files/Kiln-Management-1.pdf)
+- [Kiln Management, treoirlínte do scoileanna (PDF)](https://cdn.shopify.com/s/files/1/0889/3726/7497/files/Kiln-Management-1.pdf)
 - [L&L Kiln: Front-loader installation checklist (PDF)](https://www.theceramicshop.com/downloads/LLFLChecklist.pdf)
 - [Rio Grande: PMC Kilns Handbook (PDF)](https://products.riogrande.com/content/Instruction-Sheets/RioGrande-PMC-Kilns-Handbook-IS.pdf)
-- [Dawson: Kiln-Sitter LT-3 manual (PDF)](https://oud.klei.nl/forum/bestanden/f675ae4a-d890-4b8b-a08e-173e652f25a6/KilnSitter%20lt3%20en%20lt3k.pdf)
+- [Dawson: lámhleabhar Kiln-Sitter LT-3 (PDF)](https://oud.klei.nl/forum/bestanden/f675ae4a-d890-4b8b-a08e-173e652f25a6/KilnSitter%20lt3%20en%20lt3k.pdf)
 - [Ceramic Arts Network: In the Studio, Eye Health for Potters](https://ceramicartsnetwork.org/pottery-making-illustrated/pottery-making-illustrated-article/In-the-Studio-Eye-Health-for-Potters)
 - [FDA: Questions and Answers on Lead-Glazed Traditional Pottery](https://www.fda.gov/food/environmental-contaminants-food/questions-and-answers-lead-glazed-traditional-pottery)
-- [FDA: Compliance Policy Guide 545.450, lead in pottery (PDF)](https://www.fda.gov/media/71764/download)
+- [FDA: Compliance Policy Guide 545.450, luaidhe i bpotaireacht (PDF)](https://www.fda.gov/media/71764/download)
 - [Digitalfire: Food Safe](https://digitalfire.com/glossary/food+safe)
 - [Ceramics NZ: Is it food safe?](https://ceramicsnz.org/news/is-it-food-safe/)
 - [Ceramic Arts Network: Techno File, Dirty Dishes](https://ceramicartsnetwork.org/ceramics-monthly/ceramics-monthly-article/Techno-File-Dirty-Dishes)
