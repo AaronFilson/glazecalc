@@ -128,6 +128,16 @@ test('shows how to connect an assistant, with this site’s address', async ({ p
   const address = 'http://localhost:' + process.env.E2E_PORT + '/mcp';
   await expect(page.locator('pre').first()).toHaveText(address);
   await expect(page.locator('pre', { hasText: 'claude mcp add --transport http glazecalc' }).first()).toBeVisible();
+  // Each setup has a Copy button that copies it exactly.
+  await page.context().grantPermissions(['clipboard-read', 'clipboard-write']);
+  await page.getByRole('button', { name: 'Copy the setup for Cursor' }).click();
+  await expect(page.locator('.setup-block', { hasText: 'mcpServers' }).first().getByRole('status')).toHaveText('Copied.');
+  const copied = await page.evaluate(() => globalThis.navigator.clipboard.readText());
+  expect(JSON.parse(copied).mcpServers.glazecalc.url).toBe(address);
+  // On a phone a setup scrolls in its box, on lines as written, rather than widening the page.
+  await page.setViewportSize({ width: 360, height: 800 });
+  await expect(page.locator('pre').nth(1)).toHaveCSS('white-space', 'pre');
+  expect(await page.evaluate(() => globalThis.document.documentElement.scrollWidth - globalThis.innerWidth)).toBe(0);
 });
 
 test('is not offered to a trial', async ({ page }) => {
