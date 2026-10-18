@@ -50,10 +50,13 @@ Architectures: $arch
 Signed-By: /etc/apt/keyrings/docker.asc
 EOF
 
-# nginx and certbot come from Debian itself; certbot.timer renews certificates.
+# nginx, certbot and logrotate come from Debian itself; certbot.timer renews
+# certificates and logrotate.timer rotates nginx's logs (logrotate/nginx).
+# Debian's cloud image has no logrotate, so without it nginx's logs were never
+# rotated nor deleted.
 apt-get update
 apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin \
-  nginx certbot
+  nginx certbot logrotate
 
 # App files from the repository; deploy.sh refreshes compose.prod.yaml on each deploy.
 mkdir -p /opt/glazecalc
