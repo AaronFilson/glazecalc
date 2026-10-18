@@ -121,6 +121,10 @@ const APP_PAGES = [
                   }
                 </span>
               </a>
+              <!-- What was removed waits here for 30 days. -->
+              <a routerLink="/trash" class="trash-link" routerLinkActive="active" ariaCurrentWhenActive="page">{{
+                t('nav.trash')
+              }}</a>
               <!-- A trial has no password to come back with; the trial bar offers its way out. -->
               @if (!auth.shownTrial()) {
                 <button type="button" class="btn btn-light btn-sm" (click)="logout()">{{ t('nav.signOut') }}</button>

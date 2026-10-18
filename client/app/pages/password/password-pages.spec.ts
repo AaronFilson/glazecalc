@@ -161,6 +161,7 @@ describe('AccountPage', () => {
     expect(headings).toEqual([
       'Settings',
       'Download my data',
+      'Trash',
       'Shared recipes',
       'Change your password',
       'Two-step sign-in',
@@ -170,6 +171,9 @@ describe('AccountPage', () => {
       'Delete your account'
     ]);
     expect((fixture.nativeElement.querySelector('#weight-unit-g') as HTMLInputElement).checked).toBe(true);
+    // The Trash, which has no other way in but the menu and Home.
+    expect(text(fixture, '#trash-heading + p')).toContain('30 days');
+    expect(fixture.nativeElement.querySelector('a[href="/trash"]')?.textContent?.trim()).toBe('Open the Trash');
   });
 
   it('lists its sections at the top, each a link that takes the focus to its heading', async () => {
@@ -180,6 +184,7 @@ describe('AccountPage', () => {
     expect(links.map((a) => a.textContent?.trim())).toEqual([
       'Settings',
       'Download my data',
+      'Trash',
       'Shared recipes',
       'Change your password',
       'Two-step sign-in',
@@ -193,7 +198,7 @@ describe('AccountPage', () => {
       const id = link.getAttribute('href')!.split('#')[1]!;
       expect(fixture.nativeElement.querySelector('#' + id)?.tagName).toBe('H2');
     }
-    links[4]!.dispatchEvent(new MouseEvent('click', { bubbles: true, cancelable: true, button: 0 }));
+    links[5]!.dispatchEvent(new MouseEvent('click', { bubbles: true, cancelable: true, button: 0 }));
     expect(document.activeElement?.id).toBe('mfa-heading');
     // One filled button at most, for a step under way: none while nothing is.
     expect(fixture.nativeElement.querySelectorAll('.btn-primary').length).toBe(0);

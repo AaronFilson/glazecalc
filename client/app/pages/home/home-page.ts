@@ -56,6 +56,11 @@ const SECTIONS: { path: string; fragment?: string; title: string; text: string }
     text: marker('notebook.home.sections.guides.text')
   },
   {
+    path: '/trash',
+    title: marker('notebook.home.sections.trash.title'),
+    text: marker('notebook.home.sections.trash.text')
+  },
+  {
     path: '/account',
     title: marker('notebook.home.sections.account.title'),
     text: marker('notebook.home.sections.account.text')
