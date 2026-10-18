@@ -1,8 +1,10 @@
 import { TestBed } from '@angular/core/testing';
+import { TranslocoService } from '@jsverse/transloco';
 import { FiringBlock } from '../../../../lib/cones/firing';
 import { httpMock, testProviders, text } from '../../testing/test-providers';
 import { firingLine, firingWords } from './firing-text';
 import { RecipeFiring } from './recipe-firing';
+import { RecipeLimits } from './recipe-limits';
 
 // The recipe's firing block: the scale, a cone or a claimed range, the cones
 // tested, atmosphere and process, and the food-surface note.
@@ -89,6 +91,10 @@ describe('RecipeFiring', () => {
     await choose('firing-rate', '108');
     await choose('firing-hold', '15');
     expect(firing.block()).toMatchObject({ scale: 'temperature', low: '1240', rate: 60, hold: 15 });
+    // A rate typed in °F comes back as typed: kept in °C to a tenth.
+    await choose('firing-rate', '100');
+    expect(firing.block()?.rate).toBe(55.6);
+    expect((fixture.nativeElement.querySelector('#firing-rate') as HTMLInputElement).value).toBe('100');
     await choose('firing-low', '99999');
     expect(text(fixture, '.firing-problem')).toMatch(/Give a temperature from 932\s°F to 2912\s°F\./);
     expect(firing.block()?.low).toBe('1240');
@@ -134,5 +140,28 @@ describe('firing in words', () => {
     expect(measured.conversion).toMatch(/1198\s°C–1232\s°C/);
     expect(firingLine({ scale: 'orton', low: '5.5' }, orton)).toBe('Tested at cone 5½');
     expect(firingWords(null, orton)).toBeNull();
+  });
+});
+
+describe('RecipeLimits band names', () => {
+  beforeEach(() => TestBed.configureTestingModule({ providers: testProviders() }));
+  afterEach(() => TestBed.inject(TranslocoService).setActiveLang('en'));
+
+  it("names the firing block's bands again when the language changes", async () => {
+    const fixture = TestBed.createComponent(RecipeLimits);
+    fixture.componentRef.setInput('unity', { SiO2: 3, Al2O3: 0.3, CaO: 1 });
+    fixture.componentRef.setInput('firedAt', { scale: 'orton', low: '6', high: '10' });
+    await fixture.whenStable();
+    const names = () => (fixture.componentInstance as unknown as { blockBandNames: () => string }).blockBandNames();
+    expect(names()).toContain('Mid fire');
+    const transloco = TestBed.inject(TranslocoService);
+    transloco.setTranslation(
+      { 'recipe.limits.bands.mid': 'Mittelbrand', 'recipe.limits.bands.high': 'Hochbrand' },
+      'de',
+      { merge: false }
+    );
+    transloco.setActiveLang('de');
+    await fixture.whenStable();
+    expect(names()).toContain('Mittelbrand');
   });
 });

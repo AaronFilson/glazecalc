@@ -1,5 +1,6 @@
 import { Component, computed, inject, input, model, signal } from '@angular/core';
-import { TranslocoDirective, translate } from '@jsverse/transloco';
+import { toSignal } from '@angular/core/rxjs-interop';
+import { TranslocoDirective, TranslocoService, translate } from '@jsverse/transloco';
 import { marker } from '@jsverse/transloco-keys-manager/marker';
 import { formatFormula } from '../../../../lib/chemistry';
 import { stullPoint } from '../../../../lib/recipe/analysis';
@@ -284,9 +285,12 @@ export class RecipeLimits {
   protected readonly set = computed(() => LIMIT_SETS[this.preferences.limitSet()] ?? LIMIT_SETS['hesselberth-roy']);
   /** The bands the firing block's range falls in, coolest first: two when it crosses a band (cone 6–10). */
   protected readonly fromBlock = computed(() => firingBands(this.firedAt()));
-  protected readonly blockBandNames = computed(() =>
-    listOf(this.fromBlock().map((band) => translate(BAND_NAMES[band])))
-  );
+  /** The language the band names are in: they are named again when it changes. */
+  private readonly language = toSignal(inject(TranslocoService).langChanges$);
+  protected readonly blockBandNames = computed(() => {
+    this.language();
+    return listOf(this.fromBlock().map((band) => translate(BAND_NAMES[band])));
+  });
   /** The bands shown: the one chosen by hand, else the firing block's, else the set's own choice. */
   protected readonly bandsShown = computed<FiringBand[]>(() => {
     const chosen = this.firing();

@@ -494,7 +494,8 @@ export class RecipeFiring {
     this.problem.set('');
     const value = Number(typed.trim().replace(',', '.'));
     if (!typed.trim()) return this.update({ rate: undefined });
-    const perHour = Math.round(this.locale.temperature() === 'F' ? (value * 5) / 9 : value);
+    // Kept in °C to a tenth, so a rate typed in °F comes back as typed (100 °F an hour is 55.6 °C, shown 100).
+    const perHour = Math.round((this.locale.temperature() === 'F' ? (value * 5) / 9 : value) * 10) / 10;
     if (!(perHour >= FIRING_LIMITS.rate.min && perHour <= FIRING_LIMITS.rate.max)) {
       this.problem.set(translate('recipe.firing.rateProblem'));
       return;
