@@ -326,6 +326,18 @@ describe('Paste-in import: titles, notes, totals and additions', () => {
     }
   });
 
+  it('knows the addition headings the Asian languages use, including the one each paste help names', () => {
+    const headings = [
+      ...['追加分', '外割', '着色剤', '추가', '첨가제', '발색제', '外加', '添加剂', '著色劑'],
+      ...['ส่วนที่เติมเพิ่ม', 'สารเติมแต่ง', 'สารให้สี'],
+      ...['Phần thêm', 'Phụ gia:', 'Chất tạo màu'],
+      ...['Tambahan', 'Bahan tambahan (%)', 'Aditif', 'Pewarna']
+    ];
+    for (const heading of headings) {
+      expect(one('Custer 50\nSilica 50\n' + heading + '\nRutile 4').lines[2].addition, heading).to.equal(true);
+    }
+  });
+
   it('a blank line ends a section of additions, so the next lines are base, or a new recipe', () => {
     const read = recipe.parsePaste('Custer 50\nSilica 50\nColorants\nRutile 4\n\nCuster 40\nSilica 60');
     expect(read.map((r) => r.lines.map((l) => l.addition))).to.eql([
