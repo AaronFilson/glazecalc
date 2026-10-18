@@ -304,7 +304,12 @@
         </div>
         <gc-recipe-firing [(block)]="firedAt" [(foodSurface)]="foodSurface" />
         @if (firingsShown()) {
-          <gc-recipe-firings [(links)]="firings" [(block)]="firedAt" />
+          <gc-recipe-firings
+            [(links)]="firings"
+            [(block)]="firedAt"
+            [recipeId]="savedId()"
+            (saved)="linksSaved($event)"
+          />
         } @else {
           <p>
             <button id="firings-open" type="button" class="btn btn-link p-0" (click)="firingsAsked.set(true)">

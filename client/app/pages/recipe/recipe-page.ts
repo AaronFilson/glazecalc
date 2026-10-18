@@ -1003,11 +1003,10 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
       // The same for the firing block, the food-surface flag and the links to firing logs.
       ...(this.firedAt() ? { firedAt: this.firedAt() } : this.savedId() && mode !== 'copy' ? { firedAt: null } : {}),
       ...(this.foodSurface() ? { foodSurface: true } : this.savedId() && mode !== 'copy' ? { foodSurface: false } : {}),
-      ...(this.firings().length
-        ? { firings: this.firings() }
-        : this.savedId() && mode !== 'copy'
-          ? { firings: [] }
-          : {})
+      // The links to firing logs go with a new recipe only. A saved recipe's links change one at a time as they
+      // are made (recipe-firings.ts), so a save never sends a list that could undo another page's; a copy starts
+      // with none.
+      ...(!this.savedId() && mode !== 'copy' && this.firings().length ? { firings: this.firings() } : {})
     };
     // What is sent, and which recipe the page shows: both can change before the server answers.
     const sent = this.snapshot();
@@ -1030,6 +1029,8 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
         // Changes made while it saved are not in it, so they still count as not saved.
         this.savedSnapshot.set(sent);
         this.savedAt.set(new Date());
+        // The copy shown now has no links to firing logs.
+        if (mode === 'copy') this.linksSaved([]);
       }
       return { title: recipe.title, stillOpen, changedSince: this.snapshot() !== sent, changedId: id };
     } catch (err) {
@@ -1638,6 +1639,18 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
       this.reset();
       this.focusTitle();
     });
+  }
+
+  /**
+   * The links of the saved recipe as the server has them now, after one was changed (recipe-firings.ts):
+   * they are saved already, so they do not make the recipe count as changed.
+   */
+  protected linksSaved(links: FiringLink[]): void {
+    const id = this.savedId();
+    this.firings.set(links);
+    const saved = this.savedSnapshot();
+    if (saved) this.savedSnapshot.set(JSON.stringify({ ...JSON.parse(saved), firings: links }));
+    if (id) this.myRecipes.update((list) => list.map((r) => (r._id === id ? { ...r, firings: links } : r)));
   }
 
   /** The firing block, food-surface flag and firing log links of a recipe (none for null). */

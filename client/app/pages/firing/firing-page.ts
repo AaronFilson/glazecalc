@@ -5,6 +5,7 @@ import { RouterLink } from '@angular/router';
 import { TranslocoDirective, translate } from '@jsverse/transloco';
 import { ApiResourceFactory } from '../../core/api-resource.service';
 import { errorMessage } from '../../core/error-message';
+import { FiringLinksService } from '../../core/firing-links.service';
 import { Firing, Recipe } from '../../core/models';
 import { Busy } from '../../shared/busy';
 import { FORM_GRID_STYLES } from '../../shared/chemistry-form';
@@ -139,6 +140,7 @@ export class FiringPage implements OnInit {
   // The recipes fired in each log (docs/adr/0021-recipe-firing.md): the links are kept on the recipes,
   // which list the logs they went through; here a log can pick them too.
   private readonly recipes = inject(ApiResourceFactory).for<Recipe>('recipe');
+  private readonly links = inject(FiringLinksService);
   protected readonly myRecipes = signal<Recipe[]>([]);
   /** The recipes could not be fetched: a log offers none to pick, and says so. */
   protected readonly recipesFailed = signal(false);
@@ -155,19 +157,16 @@ export class FiringPage implements OnInit {
     return [...this.myRecipes()].reverse().filter((recipe) => !recipe.firings?.some((l) => l.firing === firing._id));
   }
 
-  /** Links a recipe to a log, or takes the link off; the recipe keeps it (with its result note). */
+  /**
+   * Links a recipe to a log, or takes the link off; the recipe keeps it (with its result note). One link
+   * changes on the server, never the recipe's whole list, so the recipe page open at once loses nothing.
+   */
   protected async setFiredIn(firing: Firing, recipeId: string, fired: boolean): Promise<void> {
     const recipe = this.myRecipes().find((r) => r._id === recipeId);
     if (!recipe || !firing._id) return;
-    const links = recipe.firings ?? [];
-    const next = fired
-      ? links.some((l) => l.firing === firing._id)
-        ? links
-        : [...links, { firing: firing._id }]
-      : links.filter((l) => l.firing !== firing._id);
     this.linking.set(firing._id);
     try {
-      await this.recipes.change(recipeId, { recipe: { firings: next } });
+      const next = fired ? await this.links.link(recipeId, firing._id) : await this.links.unlink(recipeId, firing._id);
       this.myRecipes.update((list) => list.map((r) => (r._id === recipeId ? { ...r, firings: next } : r)));
     } catch (err) {
       this.notices.error(errorMessage(err, translate('notebook.firing.linkFailed')));

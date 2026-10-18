@@ -14,6 +14,7 @@
 import express from 'express';
 import mongoose from 'mongoose';
 import { OWNED_KINDS } from '../lib/account_data.ts';
+import { pullFiringLinks } from '../lib/firing_links.ts';
 import { giveBack, makeRoom, type RecordModel } from '../lib/guest_limits.ts';
 import jwtAuth, { userOf } from '../lib/jwt_auth.ts';
 import { say } from '../lib/messages.ts';
@@ -115,14 +116,20 @@ trashRouter.delete('/delete/:id', jwtAuth, async (req, res) => {
   const entry = await Trash.findOneAndDelete({ _id: req.params.id, ownedBy }).select({ record: 0 }).lean();
   if (!entry) return res.status(404).json(NOT_FOUND);
   if (entry.recordId) await RecordVersion.deleteMany({ ownedBy, recordId: entry.recordId });
+  // A firing log deleted for good is taken off the recipes linked to it (in the Trash, the links were hidden).
+  if (entry.recordId && entry.fromCollection === 'firing') await pullFiringLinks(ownedBy, [String(entry.recordId)]);
   return res.status(200).json(say('record-deleted', { label: LABELS[entry.fromCollection] ?? 'trash' }));
 });
 
 trashRouter.delete('/empty', jwtAuth, async (req, res) => {
   const ownedBy = userOf(req).id as string;
-  const entries = await Trash.find({ ownedBy }).select({ recordId: 1 }).lean();
+  const entries = await Trash.find({ ownedBy }).select({ recordId: 1, fromCollection: 1 }).lean();
   const ids = entries.flatMap((entry) => (entry.recordId ? [entry.recordId] : []));
   await Trash.deleteMany({ ownedBy });
   if (ids.length) await RecordVersion.deleteMany({ ownedBy, recordId: { $in: ids } });
+  await pullFiringLinks(
+    ownedBy,
+    entries.flatMap((entry) => (entry.recordId && entry.fromCollection === 'firing' ? [String(entry.recordId)] : []))
+  );
   res.status(200).json(say('trash-emptied'));
 });

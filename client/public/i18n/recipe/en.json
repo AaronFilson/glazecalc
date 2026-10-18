@@ -951,7 +951,7 @@
     "fetchFailed": "Your firing logs could not be fetched.",
     "noLogs": "No firing logs yet.",
     "toLogs": "Record a firing",
-    "gone": "A firing log that is no longer there",
+    "saveFailed": "The change to the firing log links could not be saved.",
     "resultFor": "Result in {title}",
     "resultPlaceholder": "How it came out: glossy, no crazing...",
     "unlink": "Unlink",

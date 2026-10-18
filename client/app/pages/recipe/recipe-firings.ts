@@ -1,8 +1,10 @@
-import { Component, OnInit, computed, inject, model, signal } from '@angular/core';
+import { Component, OnInit, computed, inject, input, model, output, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { TranslocoDirective } from '@jsverse/transloco';
+import { TranslocoDirective, translate } from '@jsverse/transloco';
 import { FiringBlock, cleanFiring, conesBetween, conesFromLog, readsDecimalComma } from '../../../../lib/cones/firing';
 import { ApiResourceFactory } from '../../core/api-resource.service';
+import { errorMessage } from '../../core/error-message';
+import { FiringLinksService } from '../../core/firing-links.service';
 import { Firing, FiringLink } from '../../core/models';
 import { LocaleService } from '../../core/locale.service';
 import { DatePipe } from '../../shared/format-pipes';
@@ -11,8 +13,12 @@ import { coneText } from './firing-text';
 
 // The firing logs a recipe went through (docs/adr/0021-recipe-firing.md),
 // each with what came of it there: "glossy, no crazing". The links are kept on
-// the recipe; the firing log page can add them too. The cones a linked log
-// names can fill in the tested ticks, after asking when that would change them.
+// the recipe; the firing log page can add them too. A saved recipe's links are
+// changed on the server one at a time as they are made, so two pages open at
+// once never undo each other's; a new recipe's go with it when it is saved.
+// A link to a log in the Trash is not shown, and shows again if the log is put
+// back. The cones a linked log names can fill in the tested ticks, after
+// asking when that would change them.
 
 /** How long a result note can be (server/models/recipe.ts, FIRING_LINKS). */
 const RESULT_MAX = 500;
@@ -30,9 +36,12 @@ const RESULT_MAX = 500;
           {{ t('recipe.firings.noLogs') }} <a routerLink="/firing">{{ t('recipe.firings.toLogs') }}</a>
         </p>
       }
-      @if (links().length) {
+      @if (saveFailed(); as problem) {
+        <p class="text-danger" role="alert">{{ problem }}</p>
+      }
+      @if (shown().length) {
         <ul class="firings-list">
-          @for (link of links(); track link.firing; let i = $index) {
+          @for (link of shown(); track link.firing; let i = $index) {
             <li>
               <span class="firings-name">
                 @if (logOf(link.firing); as log) {
@@ -40,8 +49,6 @@ const RESULT_MAX = 500;
                   @if (log.date) {
                     <span class="muted"> · {{ log.date | gcDate }}</span>
                   }
-                } @else if (loaded()) {
-                  <span class="muted">{{ t('recipe.firings.gone') }}</span>
                 }
               </span>
               <label class="visually-hidden" [for]="'firing-result-' + i">{{
@@ -54,13 +61,13 @@ const RESULT_MAX = 500;
                 [maxLength]="resultMax"
                 [placeholder]="t('recipe.firings.resultPlaceholder')"
                 [value]="link.result ?? ''"
-                (change)="setResult(i, $any($event.target).value)"
+                (change)="setResult(link.firing, $any($event.target).value)"
               />
               <button
                 type="button"
                 class="btn btn-light border btn-sm"
                 [attr.aria-label]="t('recipe.firings.unlinkName', { title: logOf(link.firing)?.title ?? '' })"
-                (click)="unlink(i)"
+                (click)="unlink(link.firing)"
               >
                 {{ t('recipe.firings.unlink') }}
               </button>
@@ -162,6 +169,10 @@ export class RecipeFirings implements OnInit {
   readonly links = model<FiringLink[]>([]);
   /** The recipe's firing block, whose tested ticks the logs can fill in. */
   readonly block = model<FiringBlock | null>(null);
+  /** The saved recipe's id, whose links are changed on the server; null for a recipe not saved yet. */
+  readonly recipeId = input<string | null>(null);
+  /** A saved recipe's links as the server has them, after one changed: they are saved already. */
+  readonly saved = output<FiringLink[]>();
 
   private readonly firings = inject(ApiResourceFactory).for<Firing>('firing');
   private readonly locale = inject(LocaleService);
@@ -170,6 +181,14 @@ export class RecipeFirings implements OnInit {
   protected readonly loaded = signal(false);
   protected readonly failed = signal(false);
   protected readonly asking = signal<{ now: string; logs: string; cones: string[] } | null>(null);
+
+  private readonly linksApi = inject(FiringLinksService);
+  /** Why the last change to a link was not saved, or ''. */
+  protected readonly saveFailed = signal('');
+  /** The links shown: those to logs that are there (one in the Trash is hidden, not lost). */
+  protected readonly shown = computed(() =>
+    this.loaded() ? this.links().filter((link) => this.logOf(link.firing)) : []
+  );
 
   protected readonly unlinked = computed(() => {
     const linked = new Set(this.links().map((link) => link.firing));
@@ -208,20 +227,47 @@ export class RecipeFirings implements OnInit {
     return this.logs().find((log) => log._id === id);
   }
 
-  protected link(id: string): void {
-    if (!id || this.links().some((link) => link.firing === id)) return;
-    this.links.update((list) => [...list, { firing: id }]);
-  }
-
-  protected unlink(index: number): void {
-    this.links.update((list) => list.filter((_, i) => i !== index));
-  }
-
-  protected setResult(index: number, result: string): void {
-    const text = result.trim().slice(0, RESULT_MAX);
-    this.links.update((list) =>
-      list.map((link, i) => (i === index ? { firing: link.firing, ...(text && { result: text }) } : link))
+  protected link(id: string): Promise<void> {
+    if (!id || this.links().some((link) => link.firing === id)) return Promise.resolve();
+    return this.change(
+      (list) => [...list, { firing: id }],
+      (recipeId) => this.linksApi.link(recipeId, id)
     );
+  }
+
+  protected unlink(firing: string): Promise<void> {
+    return this.change(
+      (list) => list.filter((link) => link.firing !== firing),
+      (recipeId) => this.linksApi.unlink(recipeId, firing)
+    );
+  }
+
+  protected setResult(firing: string, result: string): Promise<void> {
+    const text = result.trim().slice(0, RESULT_MAX);
+    return this.change(
+      (list) => list.map((link) => (link.firing === firing ? { firing, ...(text && { result: text }) } : link)),
+      (recipeId) => this.linksApi.setResult(recipeId, firing, text)
+    );
+  }
+
+  /** A change to the links: on the server for a saved recipe (and then the links it has), else here. */
+  private async change(
+    here: (list: FiringLink[]) => FiringLink[],
+    onServer: (recipeId: string) => Promise<FiringLink[]>
+  ): Promise<void> {
+    this.saveFailed.set('');
+    const recipeId = this.recipeId();
+    if (!recipeId) {
+      this.links.update(here);
+      return;
+    }
+    try {
+      const links = await onServer(recipeId);
+      // Still the same recipe: the page may have moved on to another while it saved.
+      if (this.recipeId() === recipeId) this.saved.emit(links);
+    } catch (err) {
+      this.saveFailed.set(errorMessage(err, translate('recipe.firings.saveFailed')));
+    }
   }
 
   /** Fills the tested ticks from the logs; asks first when some are ticked already. */

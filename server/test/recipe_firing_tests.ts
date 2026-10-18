@@ -1,6 +1,8 @@
 import firing from '../../lib/cones/firing.js';
 import cones from '../../lib/cones/index.js';
 import paste from '../../lib/recipe/paste.js';
+import Firing from '../models/firing.ts';
+import Recipe, { FIRING_LINKS } from '../models/recipe.ts';
 import { api, expect, makeUser } from './support/app.ts';
 
 // A recipe's firing block (docs/adr/0021-recipe-firing.md): the cone as stated,
@@ -271,6 +273,7 @@ describe('recipe firing (API)', () => {
     ]
   };
   let token: string;
+  let owner: string;
   const create = (body: object) =>
     api()
       .post('/recipe/create')
@@ -289,7 +292,9 @@ describe('recipe firing (API)', () => {
     ).body;
 
   beforeEach(async () => {
-    ({ token } = await makeUser());
+    const made = await makeUser();
+    token = made.token;
+    owner = String(made.user._id);
   });
 
   it('keeps the firing block as entered, beside the wave-2 band, and keeps no unknown field', async () => {
@@ -365,6 +370,136 @@ describe('recipe firing (API)', () => {
     expect(undone).to.have.status(200);
     expect(undone.body.record.firedAt).to.eql({ scale: 'orton', low: '6' });
     expect(undone.body.record.firings ?? []).to.eql([]);
+  });
+
+  describe('links to firing logs, one at a time', () => {
+    const newLog = async (title = 'Glaze firing') =>
+      (
+        await api()
+          .post('/firing/create')
+          .set('Authorization', 'Bearer ' + token)
+          .send({ title, fieldsIncluded: ['cone'], rows: [['6']] })
+      ).body._id as string;
+    const link = (id: string, firing: string) =>
+      api()
+        .post('/recipe/firings/' + id)
+        .set('Authorization', 'Bearer ' + token)
+        .send({ firing });
+
+    it('links, notes a result and unlinks on the server, so two pages never undo each other', async () => {
+      const [a, b] = [await newLog('A'), await newLog('B')];
+      const saved = (await create(recipe)).body._id as string;
+      // Two pages each link a log: both links stay, and linking one again changes nothing.
+      expect((await link(saved, a)).body.firings).to.eql([{ firing: a }]);
+      expect((await link(saved, b)).body.firings).to.eql([{ firing: a }, { firing: b }]);
+      expect((await link(saved, a)).body.firings).to.eql([{ firing: a }, { firing: b }]);
+      const noted = await api()
+        .put(`/recipe/firings/${saved}/${b}`)
+        .set('Authorization', 'Bearer ' + token)
+        .send({ result: ' glossy ' });
+      expect(noted.body.firings).to.eql([{ firing: a }, { firing: b, result: 'glossy' }]);
+      // A save of the recipe that does not name its links leaves them.
+      expect(await change(saved, { title: 'Clear 2' })).to.have.status(200);
+      const off = await api()
+        .delete(`/recipe/firings/${saved}/${a}`)
+        .set('Authorization', 'Bearer ' + token);
+      expect(off.body.firings).to.eql([{ firing: b, result: 'glossy' }]);
+      expect((await latest()).firings).to.eql([{ firing: b, result: 'glossy' }]);
+      const cleared = await api()
+        .put(`/recipe/firings/${saved}/${b}`)
+        .set('Authorization', 'Bearer ' + token)
+        .send({ result: '' });
+      expect(cleared.body.firings).to.eql([{ firing: b }]);
+    });
+
+    it("refuses another account's recipe or log, a bad id and too long a result", async () => {
+      const mine = await newLog();
+      const saved = (await create(recipe)).body._id as string;
+      const other = await makeUser();
+      const theirs = (
+        await api()
+          .post('/firing/create')
+          .set('Authorization', 'Bearer ' + other.token)
+          .send({ title: 'Theirs', fieldsIncluded: ['cone'], rows: [['6']] })
+      ).body._id as string;
+      expect(await link(saved, theirs)).to.have.status(404);
+      expect(
+        await api()
+          .post('/recipe/firings/' + saved)
+          .set('Authorization', 'Bearer ' + other.token)
+          .send({ firing: mine })
+      ).to.have.status(404);
+      expect(await link('nope', mine)).to.have.status(400);
+      expect(
+        await api()
+          .post('/recipe/firings/' + saved)
+          .set('Authorization', 'Bearer ' + token)
+          .send({ firing: mine, result: 'x'.repeat(501) })
+      ).to.have.status(400);
+    });
+
+    it('hides a log in the Trash, brings it back with the log, and takes it off when deleted for good', async () => {
+      const [a, b] = [await newLog('A'), await newLog('B')];
+      const saved = (await create(recipe)).body._id as string;
+      await link(saved, a);
+      await link(saved, b);
+      const trashed = await api()
+        .delete('/firing/delete/' + a)
+        .set('Authorization', 'Bearer ' + token);
+      expect(trashed).to.have.status(200);
+      // Still on the recipe, to come back with the log.
+      expect((await latest()).firings).to.eql([{ firing: a }, { firing: b }]);
+      expect(
+        await api()
+          .post('/trash/restore/' + trashed.body.trashId)
+          .set('Authorization', 'Bearer ' + token)
+      ).to.have.status(200);
+      expect((await latest()).firings).to.eql([{ firing: a }, { firing: b }]);
+      const again = await api()
+        .delete('/firing/delete/' + a)
+        .set('Authorization', 'Bearer ' + token);
+      expect(
+        await api()
+          .delete('/trash/delete/' + again.body.trashId)
+          .set('Authorization', 'Bearer ' + token)
+      ).to.have.status(200);
+      expect((await latest()).firings).to.eql([{ firing: b }]);
+      await api()
+        .delete('/firing/delete/' + b)
+        .set('Authorization', 'Bearer ' + token);
+      expect(
+        await api()
+          .delete('/trash/empty')
+          .set('Authorization', 'Bearer ' + token)
+      ).to.have.status(200);
+      expect((await latest()).firings).to.eql([]);
+    });
+
+    it('counts only links to logs that are there toward the limit', async () => {
+      const saved = (await create(recipe)).body._id as string;
+      const ids = (
+        await Firing.insertMany(
+          Array.from({ length: FIRING_LINKS.most + 1 }, (_, i) => ({
+            title: 'Log ' + i,
+            fieldsIncluded: ['cone'],
+            rows: [],
+            ownedBy: owner
+          }))
+        )
+      ).map((f) => String(f._id));
+      await Recipe.updateOne(
+        { _id: saved },
+        { $set: { firings: ids.slice(0, FIRING_LINKS.most).map((firing) => ({ firing })) } }
+      );
+      const full = await link(saved, ids[FIRING_LINKS.most]!);
+      expect(full).to.have.status(409);
+      expect(full.body.code).to.equal('firing-links-full');
+      // One log goes to the Trash: its hidden link no longer counts.
+      await api()
+        .delete('/firing/delete/' + ids[0])
+        .set('Authorization', 'Bearer ' + token);
+      expect(await link(saved, ids[FIRING_LINKS.most]!)).to.have.status(200);
+    });
   });
 
   it('exports the firing: in the JSON as saved, in the CSV as Glazy writes it', async () => {

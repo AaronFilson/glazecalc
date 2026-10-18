@@ -176,17 +176,15 @@ describe('FiringPage', () => {
     const pick = fixture.nativeElement.querySelector('#fired-pick-f1') as HTMLSelectElement;
     pick.value = 'r2';
     (fixture.nativeElement.querySelector('#fired-add-f1') as HTMLButtonElement).click();
-    const req = httpMock().expectOne({ method: 'PUT', url: API + '/recipe/change/r2' });
-    expect(req.request.body).toEqual({
-      recipe: { firings: [{ firing: 'f0', result: 'pale' }, { firing: 'f1' }] }
-    });
-    req.flush({});
+    // One link is added on the server, never the recipe's whole list, so the recipe page loses nothing.
+    const req = httpMock().expectOne({ method: 'POST', url: API + '/recipe/firings/r2' });
+    expect(req.request.body).toEqual({ firing: 'f1' });
+    req.flush({ firings: [{ firing: 'f0', result: 'pale' }, { firing: 'f9' }, { firing: 'f1' }] });
     await settle(fixture);
     expect(text(fixture, '.fired-list')).toContain('Celadon');
     (fixture.nativeElement.querySelector('.fired-list button') as HTMLButtonElement).click();
-    const off = httpMock().expectOne({ method: 'PUT', url: API + '/recipe/change/r2' });
-    expect(off.request.body).toEqual({ recipe: { firings: [{ firing: 'f0', result: 'pale' }] } });
-    off.flush({});
+    const off = httpMock().expectOne({ method: 'DELETE', url: API + '/recipe/firings/r2/f1' });
+    off.flush({ firings: [{ firing: 'f0', result: 'pale' }, { firing: 'f9' }] });
     await settle(fixture);
     expect(fixture.nativeElement.querySelector('.fired-list')).toBeNull();
     expect(skippedHeadings(fixture)).toEqual([]);

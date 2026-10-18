@@ -3,6 +3,7 @@
 // (./trash_routes.ts). `fields` are what a user may set, `required` what a new
 // record must have.
 import type { Router } from 'express';
+import { addFiringLinkRoutes } from '../lib/firing_links.ts';
 import recordRoutes from '../lib/record_routes.ts';
 import { stopSharing } from '../lib/share_links.ts';
 import Additive from '../models/additive.ts';
@@ -12,6 +13,33 @@ import Material from '../models/material.ts';
 import Note from '../models/note.ts';
 import Recipe from '../models/recipe.ts';
 import trashRouter from './trash_routes.ts';
+
+// The client sends a changed recipe as { recipe: {...} }. Its links to firing logs change one at a
+// time (server/lib/firing_links.ts), so two pages open at once never overwrite each other's.
+const recipeRoutes = recordRoutes(Recipe, {
+  label: 'recipe',
+  area: 'recipes',
+  fields: [
+    'title',
+    'date',
+    'notes',
+    'materials',
+    'additives',
+    'computed',
+    'includeAdditives',
+    'firing',
+    'firedAt',
+    'foodSurface',
+    'firings',
+    'sgTarget'
+  ],
+  required: ['title', 'materials'],
+  wrapper: { change: 'recipe' },
+  standard: true,
+  // Its share link stops working, and stays stopped if the recipe is put back.
+  onTrash: stopSharing
+});
+addFiringLinkRoutes(recipeRoutes);
 
 const records: Record<string, Router> = {
   additives: recordRoutes(Additive, {
@@ -71,30 +99,7 @@ const records: Record<string, Router> = {
     fields: ['title', 'content', 'relatedCollection', 'relatedId'],
     required: ['content', 'relatedCollection', 'relatedId']
   }),
-  // The client sends a changed recipe as { recipe: {...} }.
-  recipe: recordRoutes(Recipe, {
-    label: 'recipe',
-    area: 'recipes',
-    fields: [
-      'title',
-      'date',
-      'notes',
-      'materials',
-      'additives',
-      'computed',
-      'includeAdditives',
-      'firing',
-      'firedAt',
-      'foodSurface',
-      'firings',
-      'sgTarget'
-    ],
-    required: ['title', 'materials'],
-    wrapper: { change: 'recipe' },
-    standard: true,
-    // Its share link stops working, and stays stopped if the recipe is put back.
-    onTrash: stopSharing
-  }),
+  recipe: recipeRoutes,
   // The Trash has routes of its own.
   trash: trashRouter
 };

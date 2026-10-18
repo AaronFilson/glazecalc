@@ -3,8 +3,11 @@ import firing from '../../lib/cones/firing.js';
 import type { FiringBlock } from '../../lib/cones/firing.js';
 import slurry from '../../lib/recipe/slurry.js';
 
-/** How many firing logs a recipe can be linked to, and how long each one's result note can be. */
-export const FIRING_LINKS = { most: 100, result: 500 } as const;
+/**
+ * How many firing logs a recipe can be linked to (logs that are there; links to logs in the Trash
+ * stay, hidden, so it can keep up to `stored` in all), and how long each one's result note can be.
+ */
+export const FIRING_LINKS = { most: 100, stored: 200, result: 500 } as const;
 
 // A link to a firing log the recipe went through, with what came of it there.
 const firingLinkSchema = new mongoose.Schema(
@@ -50,7 +53,7 @@ const recipeSchema = new mongoose.Schema({
   firings: {
     type: [firingLinkSchema],
     default: undefined,
-    validate: { validator: (list: unknown[]) => list.length <= FIRING_LINKS.most, message: 'too many' }
+    validate: { validator: (list: unknown[]) => list.length <= FIRING_LINKS.stored, message: 'too many' }
   },
   // The specific gravity the glaze is mixed to, set from the recipe page's SG calculator and
   // read by the mix ticket. A number from 1 (water) to 2.5; null clears it.
