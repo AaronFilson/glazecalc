@@ -17,13 +17,17 @@
     "confirmEmail": "E-posti aadressi kinnitamine – Glazecalc",
     "home": "Töökoja märkmik – Glazecalc",
     "recipe": "Retseptid – Glazecalc",
+    "import": "Retseptide kleepimine – Glazecalc",
+    "blends": "Katsesegud proovitükkidele – Glazecalc",
     "material": "Toorained – Glazecalc",
     "additive": "Lisaained – Glazecalc",
     "firingLogs": "Põletuspäevikud – Glazecalc",
     "notes": "Märkmed – Glazecalc",
     "trash": "Prügikast – Glazecalc",
     "account": "Konto ja sätted – Glazecalc",
-    "notFound": "Lehte ei leitud – Glazecalc"
+    "notFound": "Lehte ei leitud – Glazecalc",
+    "shared": "Jagatud retsept – Glazecalc",
+    "assistants": "Glazecalci kasutamine tehisintellekti assistendiga – Glazecalc"
   },
   "nav": {
     "skip": "Liigu sisu juurde",
@@ -96,9 +100,14 @@
   },
   "remove": {
     "alreadyRemoved": "„{name}“ oli juba eemaldatud.",
+    "trashed": "„{name}“ viidi prügikasti.",
+    "undo": "Võta tagasi",
+    "restored": "„{name}“ pandi tagasi.",
+    "restoreFailed": "„{name}“ tagasipanek ebaõnnestus. See on endiselt prügikastis.",
     "failed": "Seda ei saanud eemaldada. Proovige uuesti.",
     "question": "Kas soovite „{name}“ eemaldada?",
     "cannotUndo": "Seda ei saa tagasi võtta.",
+    "toTrash": "Selle saab prügikastist tagasi panna 30 päeva jooksul.",
     "removing": "Eemaldamine...",
     "yes": "Jah, eemalda",
     "cancel": "Loobu",

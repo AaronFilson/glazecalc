@@ -65,49 +65,49 @@ Suurem osa kaitsest tuleb harjumustest, mitte varustusest. HSE nõuanded keraami
 
 See järjekord on selle juhendi soovitus, mis põhineb HSE põhimõttel vältida esmalt pulbrit. Kaalumist ja segamist samm-sammult kirjeldab juhend [Glasuuri valmistamine](/guides/making-a-glaze).
 
-## Respirators {#respirators lang=en}
+## Respiraatorid {#respirators}
 
-A **respirator** is a mask certified to filter fine particles from the air you breathe. It works only when it seals to your face, and it backs up good habits rather than replacing them.
+**Respiraator** on sertifitseeritud mask, mis filtreerib sissehingatavast õhust peeneid osakesi. See toimib ainult siis, kui see liibub tihedalt näole, ning see täiendab häid harjumusi, mitte ei asenda neid.
 
-### Classes by region
+### Klassid piirkonniti
 
-Table: Particle respirator classes by region (rough equivalents for glaze dust)
-Label: Respirator classes
+Table: Osakestevastaste respiraatorite klassid piirkonniti (glasuuritolmu puhul ligikaudsed vasted)
+Label: Respiraatorite klassid
 
-| Region                    | Everyday class | Higher class | Look for                                                                         |
-| ------------------------- | -------------- | ------------ | -------------------------------------------------------------------------------- |
-| United States             | N95            | P100         | NIOSH approval on the mask or its packaging                                      |
-| UK and EU                 | FFP2           | FFP3         | EN 149 on disposable masks; EN 140 on reusable half masks, with P2 or P3 filters |
-| Australia and New Zealand | P2             | P3           | AS/NZS 1716                                                                      |
+| Piirkond                  | Igapäevane klass | Kõrgem klass | Mida otsida                                                                                  |
+| ------------------------- | ---------------- | ------------ | -------------------------------------------------------------------------------------------- |
+| Ameerika Ühendriigid      | N95              | P100         | NIOSH-i heakskiit maskil või selle pakendil                                                  |
+| Ühendkuningriik ja EL     | FFP2             | FFP3         | EN 149 ühekordsetel maskidel; EN 140 korduvkasutatavatel poolmaskidel, P2- või P3-filtritega |
+| Austraalia ja Uus-Meremaa | P2               | P3           | AS/NZS 1716                                                                                  |
 
-The higher class filters a larger share of fine particles. Sources disagree on what an Australian P3 filters (at least 99%, or at least 99.95%), so buy the certified class sold in your region. A reusable **half mask** (covering the nose and mouth, with replaceable filters) fitted with P100 filters (P3 outside the US) is a common studio choice.
+Kõrgem klass filtreerib suurema osa peentest osakestest. Allikad ei ole ühel meelel, kui palju Austraalia P3 filtreerib (vähemalt 99% või vähemalt 99,95%), seega ostke oma piirkonnas müüdavat sertifitseeritud klassi. Korduvkasutatav **poolmask** (katab nina ja suu, vahetatavate filtritega) P100-filtritega (väljaspool USA-d P3) on töökodades levinud valik.
 
-### Fit and seal
+### Sobivus ja tihedus
 
-A mask that leaks lets dust in around its edges, whatever its class. HSE warns that stubble and beards "make it impossible to get a good seal".
+Lekkiv mask laseb tolmu servade kaudu sisse, olenemata selle klassist. HSE hoiatab, et habemetüügas ja habe „muudavad hea tiheduse saavutamise võimatuks“.
 
-- **Shave shortly before you work.** Guidance differs on how recent "clean-shaven" must be. A UK maker, citing HSE, says shaved within 8 hours of starting work. The Australian and New Zealand fit-test standard asks for a shave before a fit test, "preferably within 12 hours". Shaving shortly before you work meets both.
-- **If you keep a beard,** a loose-fitting **powered respirator** (PAPR: a hood or helmet with a fan that supplies filtered air) needs no face seal.
-- **Get the size right.** Poor fit is a major cause of leaks. Workplaces use a **fit test**, a check that a particular mask seals on a particular face. At home, we suggest following the maker's instructions for checking the seal each time you put it on.
+- **Raseerige vahetult enne tööd.** Juhised erinevad selles, kui hiljuti peab olema „puhtaks raseeritud“. Üks Briti tootja, viidates HSE-le, ütleb, et peab olema raseeritud 8 tunni jooksul enne töö alustamist. Austraalia ja Uus-Meremaa sobivustesti standard nõuab raseerimist enne sobivustesti, „eelistatavalt 12 tunni jooksul“. Vahetult enne tööd raseerimine vastab mõlemale.
+- **Kui jätate habeme,** ei vaja vabalt istuv **puhuriga respiraator** (PAPR: kapuuts või kiiver puhuriga, mis annab filtreeritud õhku) näol tihedat liibumist.
+- **Valige õige suurus.** Halb sobivus on üks lekete peamisi põhjusi. Töökohtades tehakse **sobivustest**: kontroll, et konkreetne mask sobib tihedalt konkreetse inimese näole. Kodus soovitab see juhend järgida tootja juhiseid tiheduse kontrollimiseks iga kord, kui maski ette panete.
 
 > [!NOTE]
-> In our view, fit matters more than class: a well-fitted N95, FFP2 or P2 will usually do better than a loose P100.
+> Selle juhendi hinnangul on sobivus tähtsam kui klass: hästi istuv N95, FFP2 või P2 kaitseb tavaliselt paremini kui lõdvalt istuv P100.
 
-### When to wear one
+### Millal respiraatorit kanda
 
-HSE says a respirator is "normally not needed" where weighing and mixing happen in a ventilated enclosure, but "may be needed for maintenance and cleaning". Most home studios have no enclosure, so we suggest wearing one (N95, FFP2 or P2 at least; P100, FFP3 or P3 is better) whenever you:
+HSE järgi ei ole respiraator „tavaliselt vajalik“, kui kaalumine ja segamine toimub ventileeritud kapis, kuid see „võib olla vajalik hooldusel ja koristamisel“. Enamikus kodutöökodades kappi ei ole, seepärast soovitab see juhend kanda respiraatorit (vähemalt N95, FFP2 või P2; P100, FFP3 või P3 on parem) alati, kui:
 
-- open bags or tip out powder;
-- weigh powders and stir them into water;
-- scrape, sand or grind dried glaze or bisque;
-- do any dry cleanup, or empty a vacuum;
-- spray glaze (in a booth: see below).
+- avate kotte või kallate pulbrit välja;
+- kaalute pulbreid ja segate neid vette;
+- kraabite, lihvite või ihute kuivanud glasuuri{{en: glaze}} või eelpõletatud esemeid{{en: bisque}};
+- koristate kuivalt või tühjendate tolmuimejat;
+- pritsite glasuuri (glasuurimiskapis: vt allpool).
 
-### What is not a respirator
+### Mis ei ole respiraator
 
-- Surgical masks, cloth masks and "nuisance dust" masks without a NIOSH, EN 149 or AS/NZS 1716 marking. We would not rely on them for glaze dust.
-- A dust respirator "will not protect you against gases, vapors" (OSHA), so it does nothing for kiln fumes.
-- Look after yours: OSHA notes that a dirty or misused respirator "can become a hazard". Store it clean, away from dusty work clothes.
+- Kirurgilised maskid, riidest maskid ja lihtsad tolmumaskid (nn inertse tolmu maskid), millel puudub NIOSH-i, EN 149 või AS/NZS 1716 märgistus. Selle juhendi hinnangul ei tasu neile glasuuritolmu puhul loota.
+- Tolmurespiraator „ei kaitse teid gaaside ega aurude eest“ (OSHA), seega ei kaitse see ahjuaurude eest.
+- Hoolitsege oma respiraatori eest: OSHA märgib, et määrdunud või valesti kasutatud respiraator „võib muutuda ohuallikaks“. Hoidke seda puhtana, tolmustest töörõivastest eemal.
 
 ## Koristamine, rõivad ja käed {#cleaning}
 
@@ -181,36 +181,36 @@ Teine võimalus on **ventilatsioonikubu** (varikatus ahju kohal). See tõmbab si
 
 Rakupõletus tekitab palju suitsu ja vingugaasi; Utah’ ülikool soovitab teha seda õues, õhu sissevõtuavadest ja akendest eemal. Põletamise enda kohta vaadake juhendit [Põletamine lihtsas keraamikaahjus](/guides/firing).
 
-## Materials that need most care {#materials lang=en}
+## Kõige rohkem ettevaatust nõudvad toorained {#materials}
 
-Most glaze materials, including silica, clays, feldspars and frits, are mainly a dust hazard, which the habits above control. A shorter list is toxic in its own right, by breathing, swallowing or skin contact. Digitalfire adds that stains are generally much safer than raw oxides, and that "unbalanced glazes that release toxic metals can be made from any materials": food safety depends on the whole recipe, not on one ingredient.
+Enamik glasuuri{{en: glaze}} tooraineid, sealhulgas kvarts{{en: silica}}, savid, põldpaod{{en: feldspar}} ja fritid{{en: frit}}, on peamiselt tolmuoht, mida eespool kirjeldatud harjumused ohjavad. Väiksem osa tooraineid on mürgised ka iseenesest: sissehingamisel, allaneelamisel või nahale sattudes. Digitalfire lisab, et pigmendid{{en: stain}} on üldiselt palju ohutumad kui töötlemata oksiidid ja et „tasakaalustamata glasuure, millest eraldub mürgiseid metalle, võib teha mis tahes toorainetest“: toidunõudele sobivus{{en: food safe}} sõltub kogu retseptist, mitte ühest koostisosast.
 
-An **IARC group** is a cancer classification: Group 1 means "carcinogenic to humans", Group 2A "probably carcinogenic to humans", Group 2B "possibly carcinogenic to humans", and Group 3 "not classifiable as to its carcinogenicity to humans", which means too little evidence to judge either way.
+**IARC rühm** on vähiohu klassifikatsioon: rühm 1 tähendab „kantserogeenne inimesele“, rühm 2A „tõenäoliselt kantserogeenne inimesele“, rühm 2B „võib olla kantserogeenne inimesele“ ning rühm 3 „ei ole klassifitseeritav inimese suhtes kantserogeensuse alusel“, mis tähendab, et tõendeid on liiga vähe, et kummaski suunas otsustada.
 
-Table: Glaze materials that need extra care
-Label: Materials that need most care
+Table: Glasuuri toorained, mis nõuavad erilist ettevaatust
+Label: Kõige rohkem ettevaatust nõudvad toorained
 
-| Material                               | Hazard                                                                                                                                                            | Precaution                                                                                                  |
-| -------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| Lead compounds and lead frits          | "Highly toxic by inhalation or ingestion"; vaporizes at lower kiln temperatures.                                                                                  | Avoid; Digitalfire says experts only. Assume any glaze not labeled "lead-free" or "leadless" contains lead. |
-| Barium carbonate                       | Insoluble in water but dissolves in stomach acid; affects the heart and muscles (irregular heartbeat, low potassium).                                             | A barium frit or strontium where the recipe allows; respirator; labeled container.                          |
-| Manganese dioxide                      | Dust or fume can cause **manganism**, a nervous-system illness like Parkinson's disease, usually after 1 to 3 years of exposure. Fume can cause metal fume fever. | Black stains at low percentages instead; vent the kiln.                                                     |
-| Potassium dichromate and chrome oxide  | Chromium(VI), as in dichromate, is IARC Group 1. That listing does not cover chromium(III), as in chrome oxide.                                                   | Avoid dichromate. We treat chrome oxide as far less hazardous, but keep its dust down.                      |
-| Cobalt                                 | Soluble cobalt(II) salts IARC 2A; cobalt(II) oxide 2B; black Co₃O₄ Group 3.                                                                                       | Keep dust down; stains for blacks.                                                                          |
-| Nickel compounds                       | Among the University of Utah's known or probable human carcinogens.                                                                                               | Stains rather than high percentages.                                                                        |
-| Cadmium and selenium, raw or in stains | Cadmium compounds are among Utah's known or probable human carcinogens.                                                                                           | "Only by experts" (Digitalfire); read any stain's SDS.                                                      |
-| Antimony and vanadium                  | Trivalent antimony (as in antimony trioxide) IARC 2A; vanadium "highly toxic by inhalation".                                                                      | Vanadium for experts only; keep antimony dust down.                                                         |
-| Copper and zinc                        | Kiln fume can cause metal fume fever; raw zinc oxide is "generally not considered hazardous".                                                                     | Vent the kiln.                                                                                              |
-| Lithium carbonate                      | "Highly toxic by inhalation". An EU expert committee concluded it may harm fertility and the unborn child; formal adoption was not confirmed when we checked.     | Gloves and respirator; keep from children. We suggest extra care in pregnancy.                              |
-| Borax and boric acid                   | Classified in the EU as "may damage fertility; may damage the unborn child".                                                                                      | Gloves; boron from a frit where you can.                                                                    |
-| Soda ash, potash, alkaline feldspars   | Skin irritants.                                                                                                                                                   | Gloves.                                                                                                     |
-| Fluorspar, cryolite, lepidolite        | Release fluorine gases in firing; fluorspar also irritates skin.                                                                                                  | Vent the kiln outdoors; gloves.                                                                             |
-| Talc                                   | IARC 2A since July 2024; talc contaminated with asbestos counts as asbestos, Group 1.                                                                             | Platy (not fibrous), asbestos-free talc; check its SDS.                                                     |
+| Tooraine                                              | Oht                                                                                                                                                                                                    | Ettevaatusabinõu                                                                                                                           |
+| ----------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| Pliiühendid ja pliifritid                             | „Sissehingamisel või allaneelamisel väga mürgine“; aurustub madalamatel ahjutemperatuuridel.                                                                                                           | Vältige; Digitalfire’i järgi ainult asjatundjatele. Eeldage, et iga glasuur, millel ei ole märget „pliivaba“ või „pliita“, sisaldab pliid. |
+| Baariumkarbonaat                                      | Vees lahustumatu, kuid lahustub maohappes; mõjutab südant ja lihaseid (ebaregulaarne südamerütm, madal kaaliumitase).                                                                                  | Baariumfritt või strontsium, kui retsept seda lubab; respiraator; märgistatud anum.                                                        |
+| Mangaandioksiid                                       | Tolm või aurud võivad põhjustada **manganismi**, Parkinsoni tõvega sarnast närvisüsteemi haigust, tavaliselt pärast 1 kuni 3 aastat kestnud kokkupuudet. Aurud võivad põhjustada metalliaurupalavikku. | Selle asemel mustad pigmendid väikestes protsentides; juhtige ahju aurud välja.                                                            |
+| Kaaliumdikromaat ja kroomoksiid                       | Kroom(VI), nagu dikromaadis, on IARC rühm 1. See liigitus ei hõlma kroom(III)-ühendeid, nagu kroomoksiid.                                                                                              | Vältige dikromaati. See juhend peab kroomoksiidi palju vähem ohtlikuks, kuid vähendage selle tolmu.                                        |
+| Koobalt                                               | Lahustuvad koobalt(II)soolad IARC 2A; koobalt(II)oksiid 2B; must Co₃O₄ rühm 3.                                                                                                                         | Vähendage tolmu; mustade toonide jaoks pigmendid.                                                                                          |
+| Nikliühendid                                          | Utah’ ülikooli loetelus teadaolevate või tõenäoliste inimkantserogeenide hulgas.                                                                                                                       | Pigmendid suurte protsentide asemel.                                                                                                       |
+| Kaadmium ja seleen, toorainena või pigmentides        | Kaadmiumiühendid on Utah’ ülikooli loetelus teadaolevate või tõenäoliste inimkantserogeenide hulgas.                                                                                                   | „Kasutamiseks ainult asjatundjatele“ (Digitalfire); lugege iga pigmendi ohutuskaarti.                                                      |
+| Antimon ja vanaadium                                  | Kolmevalentne antimon (nagu antimontrioksiidis) IARC 2A; vanaadium „sissehingamisel väga mürgine“.                                                                                                     | Vanaadium ainult asjatundjatele; vähendage antimonitolmu.                                                                                  |
+| Vask ja tsink                                         | Ahjuaurud võivad põhjustada metalliaurupalavikku; tsinkoksiidi toorainena „üldiselt ohtlikuks ei peeta“.                                                                                               | Juhtige ahju aurud välja.                                                                                                                  |
+| Liitiumkarbonaat                                      | „Sissehingamisel väga mürgine“. EL-i ekspertkomitee jõudis järeldusele, et see võib kahjustada viljakust ja loodet; ametlik vastuvõtmine ei olnud kontrollimise ajal kinnitatud.                       | Kindad ja respiraator; hoidke lastest eemal. See juhend soovitab raseduse ajal olla eriti ettevaatlik.                                     |
+| Booraks ja boorhape                                   | EL-is klassifitseeritud: „Võib kahjustada viljakust. Võib kahjustada loodet.“                                                                                                                          | Kindad; võimaluse korral boor fritist.                                                                                                     |
+| Sooda, kaaliumkarbonaat{{en: potash}}, leelispõldpaod | Ärritavad nahka.                                                                                                                                                                                       | Kindad.                                                                                                                                    |
+| Fluoriit, krüoliit, lepidoliit                        | Eraldavad põletamisel fluorigaase; fluoriit ärritab ka nahka.                                                                                                                                          | Juhtige ahju aurud õue; kindad.                                                                                                            |
+| Talk                                                  | IARC 2A alates 2024. aasta juulist; asbestiga saastunud talk loetakse asbestiks, rühm 1.                                                                                                               | Lehtjas (mitte kiuline) asbestivaba talk; kontrollige selle ohutuskaarti.                                                                  |
 
-Borax, boric acid, soda ash and potash dissolve in water, so we treat them as the likeliest to be absorbed through broken skin or swallowed from unwashed hands.
+Booraks, boorhape, sooda ja kaaliumkarbonaat lahustuvad vees, seepärast peab see juhend neid kõige tõenäolisemalt vigastatud naha kaudu imenduvateks või pesemata kätelt allaneelatavateks.
 
 > [!NOTE]
-> If a recipe calls for raw barium carbonate, a lot of manganese, or any lead or cadmium material, look for a version that uses a frit or a stain instead. Glazecalc can compare the chemistry of the original and the swap; then test the new glaze.
+> Kui retseptis on frittimata baariumkarbonaati, palju mangaani või mis tahes pliid või kaadmiumi sisaldavat toorainet, otsige versiooni, kus selle asemel on fritt või pigment. Glazecalc saab võrrelda originaali ja asenduse keemiat; seejärel katsetage uut glasuuri.
 
 ## Kindad, nahk ja silmad {#gloves-and-eyes}
 

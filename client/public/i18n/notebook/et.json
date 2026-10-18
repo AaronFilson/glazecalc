@@ -17,6 +17,14 @@
         "title": "Retseptid",
         "text": "Koostage glasuur toorainetest ja kogustest, vaadake selle Segeri valemit (UMF) ja salvestage see."
       },
+      "import": {
+        "title": "Retseptide kleepimine",
+        "text": "Kleepige retsepte veebilehelt, tabelist või märkmetest, vaadake üle, mis loeti, ja salvestage need."
+      },
+      "blends": {
+        "title": "Katsesegud proovitükkidele",
+        "text": "Segage kaks, kolm või neli oma retsepti nummerdatud proovitükkideks ja vaadake, mida iga jaoks kaaluda."
+      },
       "material": {
         "title": "Toorained",
         "text": "Lisage oma tooraineid keemilise valemi või tarnija analüüsi põhjal."
@@ -99,6 +107,35 @@
     "saveFailed": "Viga: päring serverile ebaõnnestus."
   },
   "trash": {
-    "title": "Prügikast"
+    "title": "Prügikast",
+    "lead": "Retseptidest, toorainetest, märkmetest ja päevikutest eemaldatu ootab siin 30 päeva. Pange see tagasi või kustutage jäädavalt.",
+    "listHeading": "Prügikastis",
+    "none": "Prügikast on tühi.",
+    "untitled": "Nimetu",
+    "kinds": {
+      "recipes": "Retsept",
+      "materials": "Tooraine",
+      "additives": "Lisaaine",
+      "notes": "Märge",
+      "firing": "Põletuspäevik",
+      "advice": "Nõuanne",
+      "other": "Kirje"
+    },
+    "removedOn": "Eemaldatud {date}",
+    "goesOn": "Kustutatakse jäädavalt {date}",
+    "byApp": "Eemaldas ühendatud rakendus",
+    "putBack": "Pane tagasi",
+    "putBackName": "Pane tagasi: {name}",
+    "restored": "„{name}“ pandi tagasi sinna, kus see oli.",
+    "restoredAlready": "„{name}“ on juba tagasi pandud.",
+    "restoreFailed": "„{name}“ tagasipanek ebaõnnestus. Proovige uuesti.",
+    "deleted": "„{name}“ kustutati jäädavalt.",
+    "empty": "Tühjenda prügikast",
+    "emptyQuestion": "Kas soovite {count, plural, one {prügikastis oleva # kirje} other {kõik # kirjet prügikastis}} jäädavalt kustutada? Seda ei saa tagasi võtta.",
+    "emptyYes": "Jah, tühjenda",
+    "emptying": "Tühjendamine...",
+    "emptied": "Prügikast on tühi.",
+    "emptyFailed": "Prügikasti ei saanud tühjendada. Proovige uuesti.",
+    "fetchFailed": "Prügikasti ei saanud laadida. Proovige uuesti."
   }
 }

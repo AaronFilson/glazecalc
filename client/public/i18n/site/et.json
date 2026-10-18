@@ -57,9 +57,13 @@
     "stackServer": "TypeScripti API Node.js 24 ja Express 5 peal, andmebaasiks MongoDB 9; seda kontrollib üle 350 automaattesti.",
     "stackHosting": "Töötab Dockeris Amazon Web Servicesis, nginxi taga, HTTPS-iga (Let’s Encrypt).",
     "stackDeploy": "Juurutamine käib GitHub Actionsiga: iga muudatuse järel ehitatakse ja testitakse konteinerikujutised ning juurutamisel logitakse AWS-i sisse ilma salvestatud võtmeteta.",
+    "creditsHeading": "Tänusõnad",
+    "credits": "Stulli diagrammi alad pärinevad Glazy tõlgendusest R. T. Stulli 1912. aasta diagrammi kohta, autor Derek Au (Copyright (c) 2017 Derek Au, MIT License). <notices>Täielik teade</notices> on lähtekoodis.",
     "whoHeading": "Kes selle tegi",
     "who": "Glazecalci on teinud Aaron Filson. Leidsite vea või on teil idee? <issues>Looge GitHubis probleemiteade</issues>.",
-    "studio": "Aaron Filsoni käsitöökeraamikat leiab stuudiost <studio>Updraft Pottery Studio</studio> Tacomas Washingtoni osariigis. Vaadake töid ja tellige ese, kui mõni teid kõnetab."
+    "studio": "Aaron Filsoni käsitöökeraamikat leiab stuudiost <studio>Updraft Pottery Studio</studio> Tacomas Washingtoni osariigis. Vaadake töid ja tellige ese, kui mõni teid kõnetab.",
+    "languagesHeading": "Keeled",
+    "languages": "Glazecalc on saadaval nendes keeltes. Iga link avab selle lehe vastavas keeles."
   },
   "privacy": {
     "title": "Privaatsus",
@@ -71,8 +75,15 @@
     "contact": "Oma andmete kohta küsimiseks või mis tahes oma õiguse kasutamiseks kirjutage aadressil <mail>privacy@glazecalcapp.com</mail>. Võite ka <issues>avada GitHubis probleemiteate</issues>, kuid probleemiteated on avalikud: ärge kunagi kirjutage sinna oma e-posti aadressi ega midagi isiklikku. Enamikku oma andmetega seotud toiminguid saate ise teha oma <account>konto lehel</account>.",
     "storedHeading": "Mida säilitatakse ja miks",
     "storedAccount": "<b>Teie konto:</b> teie e-posti aadress ja parool, mida hoitakse ainult ühesuunalise räsina (bcrypt), mitte kunagi parooli enda kujul. Koos sellega hoitakse teie sätteid (näiteks keel, piirkond ja ühikud) ning teie toorainete varu loendit. Konto jaoks on vaja e-posti aadressi, et sisse logida ja unustatud parool lähtestada. Konto loomisel saadetakse aadressile link, et kinnitada, et see on teie oma; seni saadetakse sellele kirju ainult siis, kui te seda palute, näiteks parooli lähtestamiseks.",
+    "storedPrices": "<b>Hinnad, kui neid annate:</b> mida iga tooraine eest maksate kilogrammi kohta, ja valuuta, milles need on, segu maksumuse arvutamiseks. Need on äriandmed, mida hoitakse teie kontol ja mis on selle jaoks privaatsed: need ei ole kunagi retsepti osa, seega ei näita neid miski, mida jagate. Funktsioon „Minu andmete allalaadimine“ sisaldab neid ja konto kustutamine kustutab need. Proovikasutuse hinnad liiguvad teie kontole koos selle kirjetega nende toorainete jaoks, millele te pole hinda andnud, kui mõlemad on samas valuutas.",
     "storedEmailChange": "<b>E-posti aadressi muutmine:</b> kuupäev, mil teie aadress viimati muutus, et kaheastmelise sisselogimise väljalülitamise taotlust ei võetaks vastu uuelt aadressilt 30 päeva jooksul pärast muutust.",
     "storedSignIn": "<b>Kaheastmeline sisselogimine, kui selle sisse lülitate:</b> kas see on sees; võti, mida teie autentimisrakendus Glazecalciga jagab, krüpteeritult; iga pääsuvõtme kohta selle avalik võti (millega üksi sisse logida ei saa), ID ja andmed, mille teie seade sellele annab, teie antud nimi ning lisamise ja viimase kasutamise aeg; teie taastekoodid ainult võtmega ühesuunalise räsina, nii et keegi ei saa neid tagasi lugeda; ning kui keegi sisestab teie parooli, kuid ei lõpeta teist sammu, millal Glazecalc teile sellest viimati e-kirja saatis (kõige rohkem kord päevas). Sisselogimise ajal, parooli ja teise sammu vahel, hoiab server sisselogimise märget 5 minutit ning leht hoiab lühikest luba ainult oma mälus: uut küpsist ei ole ja teie brauseri salvestusruumi ei jää midagi.",
+    "storedSaved": "<b>See, mida salvestate:</b> teie retseptid, toorained, lisaained, märkmed, põletuspäevikud ja nõuanded sellisena, nagu te need kirjutasite. Neid näete ainult teie, kui te ei jaga retsepti lingiga.",
+    "storedTrash": "<b>Prügikast ja varasemad versioonid:</b> loendist eemaldatu ootab prügikastis tervikuna, et saaksite selle tagasi panna; ja iga kirjele salvestatud muudatus säilitab kirje sellisena, nagu see oli vahetult enne, et saaksite muudatuse tagasi võtta.",
+    "storedShares": "<b>Lingiga jagatud retseptid, kui jagate mõnda:</b> milline retsept, millal selle link tehti ja kas see näitab retsepti märkmeid, koos lingi ühesuunalise räsiga (mitte kunagi lingiga endaga). Igaüks, kellel on link, näeb retsepti sellisena, nagu see praegu on, koos selle Segeri valemiga ja märkmetega, kui otsustasite need nähtavaks teha; mitte kunagi teie e-posti aadressi, kontot ega hindu. Jagatud retseptid hoitakse otsingumootoritest väljas ja link ei jõua kunagi serveri logidesse. Kuritarvituse tõkestamiseks loetakse igalt IP-aadressilt avatud jagatud retsepte mälus 15 minutit. Proovikasutus ei saa jagada.",
+    "storedTokens": "<b>Juurdepääsuload ja ühendatud rakendused, kui teete või kinnitate mõnda:</b> igaühe kohta selle nimi, mida see tohib teha, loa ühesuunaline räsi (mitte kunagi luba ise) ja selle viimased 4 märki ning millal see tehti, millal seda viimati kasutati, millal see aegub ja millal see tühistati.",
+    "storedActivity": "<b>Mida load ja rakendused tegid:</b> rida iga kirje kohta, mille juurdepääsuluba või ühendatud rakendus lõi, muutis, viis prügikasti, pani tagasi või võttis tagasi: millal, milline luba või rakendus, mida see tegi ja kirje pealkiri, lühendatud. Mitte kunagi märkme teksti ega midagi muud kirjes. Veebisaidil tehtud muudatusi ei loetleta.",
+    "storedLimits": "<b>Sageduspiirangud:</b> aimamise ja kontrolli alt väljunud skriptide peatamiseks loetakse sisselogimiskatseid, registreerumisi, lähtestustaotlusi ja proovikasutusi IP-aadressi või konto järgi, mittetöötavaid juurdepääsulube IP-aadressi järgi, iga juurdepääsuloa prügikasti viidud kirjeid loa järgi, avatud jagatud retsepte ja linke, mis ei ava midagi, IP-aadressi järgi, ning päringuid tehisintellekti assistentide tööriistadele (MCP): 60 minutis ja 2000 päevas IP-aadressi kohta või 120 minutis ja 5000 päevas konto kohta, kui kasutatakse juurdepääsuluba, kuni 10 asendust või vastet minutis.",
     "storedTrial": "<b>Proovikasutus (nupp Proovi kohe):</b> ei e-posti aadressi ega parooli, ainult väljamõeldud nimi, näiteks „speckled quiet kilns“. Kui logite proovikasutuse ajal samas brauseris kontosse sisse, viiakse proovikasutuses tehtu kontosse üle.",
     "storedResets": "<b>Parooli lähtestamise ja e-posti lingid:</b> milline konto lingi küsis, millal, aadress, kuhu saadeti aadressi kinnitamise link, ja iga lingi sõrmejälg (mitte link ise).",
     "storedLogs": "<b>Logid:</b> veebiserver salvestab iga päringu: teie IP-aadressi, kellaaja, küsitud lehe ja teie brauseri nime. Rakendus salvestab vead koos lehega, kus need tekkisid, mitte kunagi teie e-posti aadressi.",
@@ -95,6 +106,11 @@
     "choiceNoWarranty": "Glazecalc on esitatud sellisena, nagu see on, ilma garantiita. Selle haldajad ei võta mingit vastutust ega kahju hüvitamise kohustust teie otsuse eest konto luua ega selle eest, kus selle andmeid hoitakse.",
     "keptHeading": "Kui kaua andmeid hoitakse",
     "keptAccount": "<b>Teie konto ja salvestatu:</b> kuni te need kustutate. Kontosid ei eemaldata kasutamatuse tõttu.",
+    "keptTrash": "<b>Prügikast ja varasemad versioonid:</b> eemaldatud kirje 30 päeva pärast eemaldamist või kuni kustutate selle jäädavalt või tühjendate prügikasti; varasemad versioonid 90 päeva, ja ainult iga kirje viimased 20 (ning juurdepääsuloa muudatuste eelne), kuid mitte kunagi kauem kui kirje ise: kuni kirje on prügikastis, kaovad selle versioonid koos sellega. Mõlemad kustutatakse korraga, kui kustutate oma konto.",
+    "keptShares": "<b>Jagamislingid:</b> kuni lõpetate retsepti jagamise, teete sellele uue lingi, viite selle prügikasti või kustutate oma konto. Retsepti prügikastist tagasipanek ei jaga seda uuesti. Parooli lähtestamine või kõikjal väljalogimine peatab samuti kõik teie lingid; parooli muutmine mitte.",
+    "keptTokens": "<b>Juurdepääsuload ja ühendatud rakendused:</b> igaüks kuni 30 päeva pärast aegumist (iga luba aegub, kõige rohkem aasta jooksul) või kuni kustutate oma konto. Parooli lähtestamine või „Logi välja kõikjal“ peatab need kõik korraga.",
+    "keptActivity": "<b>Mida load ja rakendused tegid:</b> 90 päeva või kuni kustutate oma konto.",
+    "keptLimits": "<b>Sageduspiirangud:</b> loendureid hoitakse ainult serveri mälus, 1 minutist 24 tunnini, ja need lähevad taaskäivitamisel kaotsi.",
     "keptTrial": "<b>Proovikasutus:</b> 14 päeva selle algusest, seejärel kustutatakse see koos kõigega, mis selles on, kui te just ei loo selle säilitamiseks kontot.",
     "keptResets": "<b>Parooli lähtestamise ja e-posti lingid:</b> lähtestuslink kehtib 30 minutit ja selle kirje kustutatakse umbes tunni pärast; aadressi kinnitamise link kehtib ja seda säilitatakse 24 tundi.",
     "keptSignIn": "<b>Kaheastmeline sisselogimine:</b> iga autentimisrakendust, pääsuvõtit ja taastekoodide komplekti hoitakse seni, kuni te selle eemaldate, lülitate kaheastmelise sisselogimise välja või kustutate oma konto. Teist sammu ootav sisselogimine kustutatakse 5 minuti pärast ning rakendus või pääsuvõti, mille lisamist alustasite, kuid ei lõpetanud, hiljemalt 10 minuti pärast.",
@@ -112,6 +128,7 @@
     "rightsAsk": "Kõige muu jaoks, näiteks kui soovite, et teie andmete kasutamine peatataks vea parandamise ajaks, või kui esitate vastuväite nende kasutamisele, kirjutage aadressil <mail>privacy@glazecalcapp.com</mail>. See on tasuta ja vastuse saate kuu jooksul. Teil palutakse ainult tõendada, et konto on teie oma, sisse logides või selle aadressile saadetud linki avades, mitte kunagi isikut tõendava dokumendiga.",
     "rightsComplain": "Kui te ei ole rahul, võite esitada kaebuse andmekaitse järelevalveasutusele: EL-is <edpb>oma riigi asutusele</edpb> ja Ühendkuningriigis asutusele <ico>Information Commissioner’s Office</ico>.",
     "storageHeading": "Küpsised ja brauseri salvestusruum",
+    "storageIntro": "Glazecalc seab kaks küpsist, teise ainult siis, kui logite sisse Google’i või GitHubiga, ja hoiab brauseris mõnda väikest väärtust. Igaüks on olemas millegi jaoks, mida te palusite: sisselogituks jäämiseks, Google’i või GitHubiga sisselogimiseks või tehtud valiku meeldejätmiseks. Mitte ükski ei jälgi teid ega ole jagatud, seega ei nõua seadus eelnevat küsimist ja küpsisepaneeli pole.",
     "storageLabel": "Küpsised ja brauseri salvestusruum",
     "storageName": "Nimi",
     "storagePurpose": "Mille jaoks",
@@ -150,6 +167,7 @@
         "lasts": "Kuni tühjendate brauseri salvestusruumi."
       },
       "print": {
+        "purpose": "Teie viimased valikud retsepti printimisel: kogu retsept, segu või tööleht ja segu suurus.",
         "lasts": "Kuni tühjendate brauseri salvestusruumi."
       },
       "token": {
@@ -163,12 +181,19 @@
       "reloadedFor": {
         "purpose": "Pärast saidi uue versiooni avaldamist: milline leht laaditi uuesti ja millal, et leht laaditaks uuesti kõige rohkem kord minutis.",
         "lasts": "Kuni sulgete vahekaardi."
+      },
+      "oauthCookie": {
+        "purpose": "Ainult siis, kui logite sisse Google’i või GitHubiga: see seob teenusepakkuja vastuse teie brauseriga, et keegi teine ei saaks teie sisselogimist lõpule viia ega teie eest ühte alustada. Lehe skriptid ei saa seda lugeda.",
+        "lasts": "Seatakse, kui vajutate „Jätka Google’iga“ või „Jätka GitHubiga“ või seote ühe oma konto lehel. Eemaldatakse, kui sisselogimine lõpeb, või 10 minuti pärast."
       }
     },
     "childrenHeading": "Lapsed",
     "children": "Glazecalc on tööriist keraamikutele ega ole suunatud lastele.",
     "changesHeading": "Muudatused",
-    "changes": "Kui see teade muutub, muutub ka kuupäev lehe ülaosas."
+    "changes": "Kui see teade muutub, muutub ka kuupäev lehe ülaosas.",
+    "storedProviders": "<b>Google või GitHub, kui logite sisse ühega neist:</b> teenusepakkuja enda ID teie kohta (arv või kood, mis ei muutu kunagi), millal te selle sidusite ja millal viimati sellega sisse logisite, ning kas teie kontol on oma parool. Muud teenusepakkujalt ei säilitata: mitte teie nime, pilti ega ühtegi võtit teie kontole seal. Sisselogimise ajal hoiab server sisselogimise kohta märget, koos e-posti aadressiga, mida teenusepakkuja teie omaks nimetab, kui seda vaja on: uue konto jaoks, kus sellest saab konto e-posti aadress, või, kui Glazecalci kontol on see aadress juba olemas, teenusepakkuja sidumiseks sellega, kui logite sellesse kontosse sisse. Märge ja selles olev e-posti aadress kustutatakse umbes 10 minuti jooksul.",
+    "providers": "<b>Google’i või GitHubiga sisselogimine</b> on teie valik ja toimub ainult siis, kui vajutate selle nuppu. Teie brauser läheb siis Google’i või GitHubi juurde, mis saadavad Glazecalcile oma ID teie kohta ja teie e-posti aadressi. Kumbki on eraldi ettevõte, kes vastutab selle eest, mida te sellega jagate, oma privaatsuspoliitika alusel. Kummaltki ei laeta Glazecalci lehtedele skripti ega pilti.",
+    "keptProviders": "<b>Google või GitHub:</b> iga seos kuni lahti ühendate või kustutate oma konto. Pooleliolev sisselogimine kustutatakse 10 minuti pärast."
   },
   "notFound": {
     "heading": "Lehte ei leitud",
@@ -194,5 +219,27 @@
     "standardFetchFailed": "Serveri nõuannete laadimisel tekkis viga.",
     "saved": "Nõuanne on lisatud.",
     "saveFailed": "Nõuande saatmisel tekkis viga."
+  },
+  "assistants": {
+    "title": "Glazecalci kasutamine tehisintellekti assistendiga",
+    "lead": "Tehisintellekti assistendid, näiteks Claude, GitHub Copilot, Cursor ja Gemini, saavad Glazecalci arvutusi otse kasutada Model Context Protocoli (MCP) kaudu.",
+    "whatHeading": "Mida see oskab",
+    "what": "Ilma kontota saab assistent otsida teegist tooraineid, arvutada retsepti Segeri valemi, võrrelda seda põletuse piirväärtustega, pakkuda asendajaid tootmisest kõrvaldatud toorainetele, teha retsepti uuesti teie nimetatud toorainetest, teisendada koonuste ja temperatuuride vahel ning otsida juhendeid ja neid lugeda. Midagi, mida see saadab, ei salvestata; nagu iga lehe puhul, logib veebiserveri logi iga päringu IP-aadressi, aja ja aadressi (mitte kunagi saadetut) 14 päeva.",
+    "mine": "Teie <account>konto lehel</account> tehtud juurdepääsuloaga saab see lugeda ka teie enda retsepte, tooraineid, märkmikku, põletuspäevikuid ja teie varul olevaid tooraineid. Luba saab ainult lugeda: see ei muuda ega eemalda kunagi midagi.",
+    "caution": "Piirväärtuste kontrollid on avaldatud piirväärtustel põhinevad hoiatused, samasugused nagu rakenduses, mitte tõend, et glasuur on toidunõudele sobiv. Katsepõletage iga glasuur ja laske toidupindadele mõeldud glasuure metallide eraldumise suhtes katsetada.",
+    "addressHeading": "Aadress",
+    "address": "Andke oma assistendile see aadress, kasutades Streamable HTTP transporti:",
+    "token": "Oma kirjete lugemiseks tehke oma <account>konto lehel</account> luba ja kopeerige see. Teie assistent saadab selle päises Authorization kujul Bearer ja luba. Hoidke seda jagatavatest või avaldatavatest failidest eemal, nagu parooligi.",
+    "clientsHeading": "Glazecalci lisamine oma assistendile",
+    "claudeCode": "Terminalis:",
+    "claudeCodeToken": "Juurdepääsuloaga, et lugeda ka oma kirjeid:",
+    "vscode": "Kausta failis .vscode/mcp.json või teie kasutaja sätetes. VS Code küsib luba ühe korra ja hoiab selle peidus; jätke välja headers ja inputs, et kasutada ainult tööriistu, mis kontot ei vaja:",
+    "cursor": "Failis ~/.cursor/mcp.json või projekti failis .cursor/mcp.json. Jätke välja headers, et kasutada ainult tööriistu, mis kontot ei vaja:",
+    "gemini": "Failis ~/.gemini/settings.json. Jätke välja headers, et kasutada ainult tööriistu, mis kontot ei vaja:",
+    "appsHeading": "Claude, ChatGPT ja muud rakendused",
+    "apps": "Lisage kohandatud liitmik ülaltoodud aadressiga. Need rakendused ei saa veel juurdepääsuluba saata, seega saavad nad tööriistad, mis kontot ei vaja. Teie enda kirjetele juurdepääs nende kaudu tuleb koos rakendusest sisselogimisega.",
+    "stopHeading": "Juurdepääsu lõpetamine",
+    "stop": "Tühistage luba oma <account>konto lehel</account> igal ajal. Iga luba lakkab töötamast teie valitud päeval ja kõik lakkavad korraga, kui lähtestate oma parooli või logite kõikjal välja.",
+    "limits": "Iga aadress saab teha 60 päringut minutis ja 2000 päevas; lubaga konto 120 minutis ja 5000 päevas. Asendused ja vasted on piiratud 10-ga minutis."
   }
 }

@@ -102,6 +102,9 @@
     "quartzAll": "Kvarts, kui tolm on täielikult kvarts",
     "cristobaliteAll": "Kristobaliit, kui tolm on täielikult kristobaliit",
     "allFree": "Kontrollkontsentratsioon, kui tolm on täielikult vaba ränidioksiid",
+    "bandFromTo": "Tolm, mille vaba ränidioksiidi (SiO₂) sisaldus on {from}% kuni {to}%",
+    "bandOverTo": "Tolm, mille vaba ränidioksiidi sisaldus on üle {from}% ja kuni {to}%",
+    "bandAbove": "Tolm, mille vaba ränidioksiidi sisaldus on üle {from}%",
     "recommended": "Soovitab {abbr}",
     "value": "{value} mg/m³",
     "kind": {
@@ -160,7 +163,15 @@
       "myFlat": "Lamedad nõud",
       "mySmall": "Väikesed sügavad nõud",
       "myLarge": "Suured sügavad nõud",
-      "myCooking": "Toiduvalmistamisnõud"
+      "myCooking": "Toiduvalmistamisnõud",
+      "idFlat": "Esemed, mille sisemine sügavus on kuni 25 mm",
+      "idSmall": "Esemed, mille sisemine sügavus on üle 25 mm, alla 1100 mL",
+      "idLarge": "Esemed, mille sisemine sügavus on üle 25 mm, 1100 mL või rohkem",
+      "thFlat": "Esemed, mille sügavus on kuni 25 mm",
+      "thSmall": "Esemed, mille sügavus on üle 25 mm, alla 1,1 L",
+      "thLarge": "Esemed, mille sügavus on üle 25 mm, 1,1 L või rohkem",
+      "thInfant": "Kuni 12 kuu vanuste imikute toidu nõud",
+      "thCooking": "Toiduvalmistamisnõud, mis on tehtud toiduvalmistamise kuumust taluma"
     },
     "judged": {
       "average": "6 eseme keskmine",
