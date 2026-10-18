@@ -69,6 +69,8 @@ const visitAll = async (page, pages) => {
 };
 
 test('every page loads with no Content-Security-Policy violations', async ({ page }) => {
+  // Several pages or checks of a whole page: more than the default 30 seconds on a busy machine.
+  test.setTimeout(60000);
   await signUpAndSignIn(page);
   const violations = await watchViolations(page);
 

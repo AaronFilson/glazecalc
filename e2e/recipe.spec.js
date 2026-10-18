@@ -273,6 +273,10 @@ test('colorants in % of base stay as they are when the scale changes; in parts o
   // An amount that is not a number stops it, with the reason beside the buttons.
   // (20,5 is a number now, in either decimal style; 20,5,1 is not.)
   await amount(page, 'Whiting').fill('20,5,1');
+  // Leaving the field marks it wrong, and the message under it moves the buttons
+  // down: let that happen before the click, not between its press and release.
+  await amount(page, 'Whiting').blur();
+  await expect(amount(page, 'Whiting')).toHaveAttribute('aria-invalid', 'true');
   await page.getByRole('button', { name: 'To percent' }).click();
   await expect(page.locator('.recipe-scale-note')).toHaveText(
     'The amount for Whiting is not a number ("20,5,1"). Please fix it first.'

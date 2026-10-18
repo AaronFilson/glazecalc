@@ -22,6 +22,7 @@
     "test:client": "ng test --watch=false",
     "test:e2e": "playwright test",
     "test:e2e:linux": "node scripts/test-e2e-linux.mjs",
+    "test:e2e:both": "node scripts/test-e2e-both.mjs",
     "test:all": "npm test && npm run test:client && npm run test:e2e",
     "test:all:linux": "npm test && npm run test:client && npm run test:e2e:linux",
     "test:coverage": "c8 --include \"server/**\" --include \"lib/**\" --exclude \"server/test/**\" --reporter text-summary --reporter html mocha",

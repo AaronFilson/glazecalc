@@ -11,6 +11,10 @@ const { signUpAndSignIn } = require('./helpers');
 const TRANSLATED = LIVE_LANGUAGES.filter((code) => code !== 'en');
 const PSEUDO = ['ja-XC'];
 
+// The longest file, its tests apart from each other: they spread over the
+// workers instead of running one after another in one.
+test.describe.configure({ mode: 'parallel' });
+
 const VISITOR_PAGES = [
   '/',
   '/about',

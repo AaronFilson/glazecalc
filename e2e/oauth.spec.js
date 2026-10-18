@@ -8,7 +8,9 @@ const { confirmedAccount, uniqueEmail } = require('./helpers');
 const { nextEmail } = require('./mail');
 const { FakeProvider } = require('../server/test/support/fake_provider.ts');
 
-const fake = new FakeProvider();
+// The key the global setup made, the same in every worker: a worker started
+// after another (a retry) still signs tokens the server's cached keys accept.
+const fake = new FakeProvider(process.env.E2E_OAUTH_KEY);
 let subjects = 0;
 const subject = () => String(7000000 + (Date.now() % 100000) * 10 + subjects++);
 

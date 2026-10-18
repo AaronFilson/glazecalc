@@ -1,5 +1,5 @@
 const { test, expect } = require('@playwright/test');
-const { API, expectFieldProblem, signUpAndSignIn } = require('./helpers');
+const { API, appReady, expectFieldProblem, signUpAndSignIn } = require('./helpers');
 
 const errors = (page) => page.locator('.errors-section');
 const messages = (page) => page.locator('.server-msg');
@@ -367,6 +367,8 @@ test('a tab opened before a new version loads the page afresh when its old code 
 
 test('"Skip to content" moves to the page without reloading it', async ({ page }) => {
   await page.goto('/recipe');
+  // Once the app has drawn the page, so the key press is not lost as it takes over.
+  await appReady(page);
   // It is the first thing a keyboard user reaches.
   await page.keyboard.press('Tab');
   const skip = page.getByRole('link', { name: 'Skip to content' });

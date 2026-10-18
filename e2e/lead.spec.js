@@ -18,6 +18,8 @@ test.beforeEach(async ({ page }) => {
 });
 
 test('lead is off until its warning is confirmed; a lead glaze is then rebuilt without it', async ({ page }) => {
+  // Several pages or checks of a whole page: more than the default 30 seconds on a busy machine.
+  test.setTimeout(60000);
   // Off unless chosen: no material with lead is listed to add.
   await page.goto('/recipe');
   const library = page.locator('.library', { hasText: 'Add materials' });

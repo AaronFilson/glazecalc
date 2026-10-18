@@ -1,8 +1,9 @@
 const { expect } = require('@playwright/test');
 const API = 'http://localhost:' + (process.env.E2E_PORT || '3100') + '/api';
 
+// The workers run at once, so an address carries the worker's process id too.
 let count = 0;
-const uniqueEmail = (label) => label + '-' + Date.now() + '-' + count++ + '@test.com';
+const uniqueEmail = (label) => label + '-' + Date.now() + '-' + process.pid + '-' + count++ + '@test.com';
 
 // Creates an account through the API in the page's own browser context, so the
 // session cookie it sets is there when the page opens, and notes the session as
@@ -13,6 +14,19 @@ const signUpAndSignIn = async (page) => {
   if (!res.ok()) throw new Error('signup failed: ' + res.status());
   await page.addInitScript(() => globalThis.localStorage.setItem('session', 'account'));
   return { email };
+};
+
+// The app sets data-app-ready on <html> once it has taken over the prerendered
+// page (client/app/app.ts); a click before then does nothing, which a busy
+// machine (or many workers) makes likely.
+const appReady = (page) =>
+  page.waitForFunction(() => globalThis.document.documentElement.hasAttribute('data-app-ready'));
+
+// Opens the intro page and presses "Try it now" once the app has started there.
+const startTrial = async (page) => {
+  await page.goto('/');
+  await appReady(page);
+  await page.locator('.hero-actions').getByRole('button', { name: 'Try it now' }).click();
 };
 
 // Text to match as it is, inside a regular expression.
@@ -220,12 +234,14 @@ module.exports = {
   addColorant,
   addMaterial,
   addStandardMaterial,
+  appReady,
   base32Decode,
   basicAuth,
   confirmedAccount,
   createPasskey,
   expectFieldProblem,
   signUpAndSignIn,
+  startTrial,
   totp,
   uniqueEmail,
   usePasskey,

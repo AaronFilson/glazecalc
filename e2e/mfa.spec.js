@@ -10,6 +10,7 @@ const {
   basicAuth,
   confirmedAccount,
   createPasskey,
+  startTrial,
   totp,
   uniqueEmail,
   usePasskey,
@@ -522,8 +523,7 @@ test.describe('the pages', () => {
   });
 
   test('is not offered during a trial, and asks for a confirmed email first', async ({ page }) => {
-    await page.goto('/');
-    await page.locator('.hero-actions').getByRole('button', { name: 'Try it now' }).click();
+    await startTrial(page);
     await expect(page.locator('.trial-bar')).toBeVisible();
     await page.goto('/account');
     await expect(page.locator('h1')).toBeVisible();
@@ -553,8 +553,7 @@ test.describe('the pages', () => {
     const { email, password } = await confirmedAccount(request);
     const { app } = await enrolApp(request, password);
 
-    await page.goto('/');
-    await page.locator('.hero-actions').getByRole('button', { name: 'Try it now' }).click();
+    await startTrial(page);
     await expect(page.locator('.trial-bar')).toBeVisible();
     await passwordOnPage(page, email, password);
     await page.getByLabel('Code from your authenticator app').fill('000000');

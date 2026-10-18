@@ -432,7 +432,9 @@ describe('two-step sign-in end to end (real factors)', () => {
       expect(fifth.body).to.include({ code: 'second-step-tries' });
     });
 
-    it('lets a passkey sign in while codes are refused', async () => {
+    it('lets a passkey sign in while codes are refused', async function () {
+      // Many sign-ins, each checking a password: the files run in parallel, so allow more than 5 seconds.
+      this.timeout(15000);
       const alice = await account();
       const { secret } = await enrolTotp(alice);
       const { authenticator } = await addPasskeyWith(alice, { code: await codeNow(alice, secret) });
@@ -442,7 +444,9 @@ describe('two-step sign-in end to end (real factors)', () => {
       expect(res, JSON.stringify(res.body)).to.have.status(200);
     });
 
-    it('forgets the count at a right code, and a right last code of a round refuses nothing', async () => {
+    it('forgets the count at a right code, and a right last code of a round refuses nothing', async function () {
+      // Many sign-ins, each checking a password: the files run in parallel, so allow more than 5 seconds.
+      this.timeout(15000);
       const alice = await account();
       const { secret } = await enrolTotp(alice);
       expect((await wrongCodes(alice, secret, 9)).every((res) => res.status === 401)).to.eql(true);
@@ -484,7 +488,9 @@ describe('two-step sign-in end to end (real factors)', () => {
       expect((await wrongCodes(alice, secret, 10))[9]!.body.params).to.eql({ wait: 'hour' });
     });
 
-    it("counts the account page's codes with sign-in's, and refuses them there too", async () => {
+    it("counts the account page's codes with sign-in's, and refuses them there too", async function () {
+      // Many sign-ins, each checking a password: the files run in parallel, so allow more than 5 seconds.
+      this.timeout(15000);
       const alice = await account();
       const { secret, codes } = await enrolTotp(alice);
       for (let i = 0; i < 9; i++) {
@@ -564,7 +570,9 @@ describe('two-step sign-in end to end (real factors)', () => {
   // The account page (stream C) signs out on any 401 (session-expired.interceptor.ts),
   // so a wrong answer on /api/mfa must be a 400, never a 401.
   describe('what the account page relies on', () => {
-    it('answers a wrong password or a wrong, missing or empty factor with 400 on every change', async () => {
+    it('answers a wrong password or a wrong, missing or empty factor with 400 on every change', async function () {
+      // Many sign-ins, each checking a password: the files run in parallel, so allow more than 5 seconds.
+      this.timeout(15000);
       const alice = await account();
       const { secret } = await enrolTotp(alice);
       const { authenticator } = await addPasskeyWith(alice, { code: await codeNow(alice, secret) });
