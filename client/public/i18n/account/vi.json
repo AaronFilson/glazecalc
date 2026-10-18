@@ -248,6 +248,22 @@
       "saved": "Đã lưu: số và ngày như trong {language}.",
       "help": "Cách viết số và ngày: 12,345.6 hoặc 12.345,6, và thứ tự của ngày và tháng."
     },
+    "calendar": {
+      "legend": "Lịch",
+      "help": "Lịch dùng để hiển thị ngày. Ngày bạn nhập vẫn theo dương lịch Gregory.",
+      "gregory": {
+        "label": "Dương lịch Gregory",
+        "saved": "Đã lưu: ngày được hiển thị theo dương lịch Gregory."
+      },
+      "buddhist": {
+        "label": "Phật lịch Thái",
+        "saved": "Đã lưu: ngày được hiển thị theo Phật lịch Thái."
+      },
+      "japanese": {
+        "label": "Niên hiệu Nhật Bản",
+        "saved": "Đã lưu: ngày được hiển thị theo niên hiệu Nhật Bản."
+      }
+    },
     "decimalMark": {
       "legend": "Nhập lượng",
       "either": {

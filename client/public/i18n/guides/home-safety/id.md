@@ -149,76 +149,76 @@ Pet Poison Helpline menyatakan "Timbal beracun bagi semua spesies, tetapi hewan 
 
 Jika hewan peliharaan mungkin telah memakan atau meminum apa pun dari studio, atau menunjukkan tanda seperti di atas, hubungi dokter hewan Anda atau saluran informasi keracunan hewan (lihat tabel di bagian atas), dengan nama bahan dan berat hewan peliharaan di tangan.
 
-## The kiln {#the-kiln lang=en}
+## Tungku {#the-kiln}
 
-### The outside gets hot enough to burn
+### Bagian luarnya cukup panas untuk membakar
 
-A UK schools risk assessment says a kiln's outside "can reach 160 °C and possibly more" (about 320 °F), and a school kiln guide reports metal bands at up to 460 °F (about 240 °C). Skutt, a kiln maker, recommends a kiln room that can be locked against children and pets. Where a room cannot be locked, the school guide suggests a barrier such as a kiln safety screen.
+Penilaian risiko sekolah di Inggris menyatakan bagian luar tungku "dapat mencapai 160 °C dan mungkin lebih" (sekitar 320 °F), dan panduan tungku sekolah melaporkan pita logam sampai 460 °F (sekitar 240 °C). Skutt, pembuat tungku, merekomendasikan ruang tungku yang dapat dikunci dari anak-anak dan hewan peliharaan. Bila ruangan tidak dapat dikunci, panduan sekolah menyarankan penghalang seperti layar pengaman tungku.
 
-Small children and pets cannot understand a warning sign. We suggest keeping them behind a locked door or a barrier while the kiln fires and while it cools, and posting a warning sign for everyone else.
+Anak kecil dan hewan peliharaan tidak dapat memahami tanda peringatan. Kami menyarankan menjaga mereka di balik pintu terkunci atau penghalang saat tungku membakar dan saat mendingin, dan memasang tanda peringatan untuk orang lain.
 
-### Space around it
+### Ruang di sekelilingnya
 
-Sources disagree on clearance. Rio Grande says at least 12 inches (30 cm) from walls and anything combustible. L&L strongly recommends 18 inches (46 cm) to all walls, and the building code it cites asks for 3 feet (0.9 m) from combustible walls. Follow your kiln's manual and local fire code; if you are unsure, allow 18 inches from any wall and 3 feet from anything that can burn. In a garage, keep cars, fuel and paint well away.
+Sumber berbeda tentang jarak aman. Rio Grande menyatakan paling sedikit 12 inci (30 cm) dari dinding dan apa pun yang mudah terbakar. L&L sangat merekomendasikan 18 inci (46 cm) ke semua dinding, dan kode bangunan yang dikutipnya meminta 3 kaki (0,9 m) dari dinding yang mudah terbakar. Ikuti buku petunjuk tungku Anda dan kode kebakaran setempat; jika ragu, sisakan 18 inci dari dinding mana pun dan 3 kaki dari apa pun yang dapat terbakar. Di garasi, jauhkan mobil, bahan bakar, dan cat.
 
-### Power
+### Daya
 
-Rio Grande recommends a **dedicated circuit** (one that powers nothing else) with a properly grounded outlet. We suggest no extension cord. Between firings, switch off the kiln's breaker or disconnect switch, or unplug it, so a child cannot start it.
+Rio Grande merekomendasikan **sirkuit khusus** (yang tidak menyalurkan daya ke apa pun yang lain) dengan stopkontak yang diarde dengan benar. Kami menyarankan agar tidak memakai kabel ekstensi. Di antara pembakaran, matikan pemutus sirkuit atau sakelar pemutus tungku, atau cabut steker, agar anak tidak dapat menyalakannya.
 
-### Be there when the firing ends
+### Berada di sana saat pembakaran berakhir
 
-A **kiln sitter** is the mechanical switch on many manual kilns: a small cone bends at the end of the firing and trips the switch off. Its manual says it "is NOT intended to perform as a fail-safe shut-off device." Rio Grande says never to leave a firing kiln unattended, "especially near the expected shut-off time". So stay nearby and check the kiln while it fires, above all near the end; fire only when an adult will be home and awake to do that, check that it has switched off, and keep an ABC fire extinguisher in the kiln room. For how sitters, controllers and schedules work, see [Firing a basic kiln](/guides/firing).
+**Kiln-Sitter** adalah sakelar mekanis pada banyak tungku manual: kerucut kecil menekuk pada akhir pembakaran dan memicu sakelar mati. Buku petunjuknya menyatakan bahwa alat ini "TIDAK dimaksudkan berfungsi sebagai alat pemutus yang aman dari kegagalan." Rio Grande menyatakan jangan pernah meninggalkan tungku yang sedang membakar tanpa pengawasan, "terutama mendekati waktu mati yang diperkirakan". Jadi tetaplah berada di dekat tungku dan periksa tungku selama pembakaran, terutama menjelang akhir; bakarlah hanya saat ada orang dewasa di rumah dan terjaga untuk melakukannya, periksa bahwa tungku telah mati, dan simpan alat pemadam api ringan (APAR) ABC di ruang tungku. Untuk cara kerja Kiln-Sitter, pengendali, dan jadwal, lihat [Membakar di tungku sederhana](/guides/firing).
 
-### Fumes and carbon monoxide
+### Asap dan karbon monoksida
 
-Firing gives off fumes, so vent the kiln to the outdoors; [Safe mixing and ventilation](/guides/safe-mixing) explains how. A kiln in an attached garage needs venting that keeps fumes from reaching the house through the connecting door. Keep birds in a far room whenever the kiln fires.
+Pembakaran melepaskan asap, jadi beri ventilasi tungku ke luar ruangan; [Mencampur dengan aman dan ventilasi](/guides/safe-mixing) menjelaskan caranya. Tungku di garasi yang menyatu dengan rumah memerlukan ventilasi yang mencegah asap mencapai rumah melalui pintu penghubung. Simpan burung di ruangan yang jauh setiap kali tungku membakar.
 
-**Carbon monoxide** (CO) is a poisonous gas you cannot see or smell. A university kiln safety sheet requires CO alarms with gas kilns. Views differ for electric kilns, but burning off organic matter (in clay, or things like paper or wax) can make CO. We think a CO alarm in the kiln room and the rooms next to it is a sensible, inexpensive step for any kiln.
+**Karbon monoksida** (CO) adalah gas beracun yang tidak dapat Anda lihat atau cium. Lembar keselamatan tungku universitas mewajibkan alarm CO dengan tungku gas. Pandangan berbeda untuk tungku listrik, tetapi membakar habis bahan organik (dalam tanah liat, atau benda seperti kertas atau lilin) dapat menghasilkan CO. Menurut kami, alarm CO di ruang tungku dan ruangan di sebelahnya adalah langkah yang masuk akal dan murah untuk tungku apa pun.
 
-### Peepholes and eyes
+### Lubang intip dan mata
 
-Infrared light, which you cannot see, "starts at 752°F (400°C)", and the Ceramic Arts Network says looking into a kiln above this should always be done with eye protection. Infrared can damage the lens of the eye and lead to cataracts, and long gazing can injure the retina. Sunglasses and didymium glasses do not block it.
+Cahaya inframerah, yang tidak dapat Anda lihat, "mulai pada 752°F (400°C)", dan Ceramic Arts Network menyatakan melihat ke dalam tungku di atas suhu ini sebaiknya selalu dilakukan dengan pelindung mata. Inframerah dapat merusak lensa mata dan menyebabkan katarak, dan menatap lama dapat melukai retina. Kacamata hitam dan kacamata didimium tidak menghalanginya.
 
 > [!WARNING]
-> Children should not look into a kiln at all. A glowing peephole draws them, and they will not reliably keep protective glasses on, so keep them away while the kiln is hot. Adults should look only briefly, through IR-rated welding glasses. Sources recommend shades from 1.7 to 5; shade 3 is a sensible choice, darker if you see spots afterward.
+> Anak-anak sebaiknya tidak melihat ke dalam tungku sama sekali. Lubang intip yang berpijar menarik mereka, dan mereka tidak akan tetap memakai kacamata pelindung dengan andal, jadi jauhkan mereka saat tungku panas. Orang dewasa sebaiknya melihat hanya sebentar, melalui kacamata las berperingkat IR. Sumber merekomendasikan shade dari 1,7 sampai 5; shade 3 adalah pilihan yang masuk akal, lebih gelap jika Anda melihat bintik sesudahnya.
 
-## Handmade ware on the family table {#handmade-ware lang=en}
+## Benda buatan tangan di meja keluarga {#handmade-ware}
 
-The question for pots on the family table is **leaching**: metals dissolving out of the fired glaze into food or drink. The FDA warns that if pottery "is not manufactured properly, this lead can leach into food and drink", and that "no amount of washing, boiling, or other process can remove lead from pottery." Regulators such as the US FDA and the EU limit how much lead and cadmium a finished piece releases in a standard acid test, not what the glaze contains. The strictest US limit, for cups, mugs and pitchers, is 0.5 µg/mL of lead.
+Pertanyaan untuk benda di meja keluarga adalah **pelindian**: logam yang larut keluar dari glasir yang sudah dibakar ke dalam makanan atau minuman. FDA, badan pangan dan obat AS, memperingatkan bahwa jika tembikar "tidak dibuat dengan benar, timbal ini dapat terlindi ke dalam makanan dan minuman", dan bahwa "tidak ada jumlah pencucian, perebusan, atau proses lain yang dapat menghilangkan timbal dari tembikar." Regulator seperti FDA AS dan UE membatasi berapa banyak timbal dan kadmium yang dilepaskan benda jadi dalam uji asam standar, bukan apa yang dikandung glasir. Batas AS yang paling ketat, untuk cangkir, mug, dan pitcher, adalah 0,5 µg/mL timbal.
 
-### Lead-free is not the same as food-safe
+### Bebas timbal tidak sama dengan aman untuk pangan
 
-A glaze with no lead can still leach. Digitalfire, a glaze chemistry reference, names glazes containing "heavy metal oxide colorants, barium, lithium, or lead" as the concern, and warns that a stain fired above its rated temperature can release cadmium. The ASTM D-4236 art-materials label on a jar "DOES NOT establish that a fired glaze is food-safe", and "Tableware producers must test all finished ware to establish dinnerware status."
+Glasir tanpa timbal masih dapat mengalami pelindian. Digitalfire, acuan kimia glasir, menyebut glasir yang mengandung "pewarna oksida logam berat, barium, litium, atau timbal" sebagai kekhawatiran, dan memperingatkan bahwa stain yang dibakar di atas suhu peringkatnya dapat melepaskan kadmium. Label bahan seni ASTM D-4236 pada toples "TIDAK menetapkan bahwa glasir yang sudah dibakar aman untuk pangan", dan "Produsen peralatan makan harus menguji semua benda jadi untuk menetapkan status peralatan makan."
 
 > [!NOTE]
-> "Food safe" means this glaze, on this clay, fired to this cone, applied this way, releases less than the legal limits. A recipe calculation, Glazecalc's included, can flag a risky recipe but cannot prove a pot is safe. Only a leach test of the fired piece can.
+> "Aman untuk pangan" berarti glasir ini, pada tanah liat ini, dibakar sampai kerucut ini, dioleskan dengan cara ini, melepaskan kurang dari batas hukum. Perhitungan resep, termasuk milik Glazecalc, dapat menandai resep yang berisiko tetapi tidak dapat membuktikan bahwa sebuah benda aman. Hanya uji pelindian terhadap benda yang sudah dibakar yang dapat.
 
-We suggest reading a "food safe" label on a commercial glaze as a good start, not a guarantee: a different clay, a thicker coat, another cone or a second glaze on top changes the result.
+Kami menyarankan membaca label "aman untuk pangan" pada glasir komersial sebagai awal yang baik, bukan jaminan: tanah liat yang berbeda, lapisan yang lebih tebal, kerucut lain, atau glasir kedua di atasnya mengubah hasil.
 
-### Testing
+### Pengujian
 
-Laboratories test fired pieces with a standard acid soak that represents a worst case, such as ASTM C738 in the US. One lab's EU test needs four identical pieces and takes seven working days, so make spares of anything you plan to have tested.
+Laboratorium menguji benda yang sudah dibakar dengan rendaman asam standar yang mewakili kasus terburuk, seperti ASTM C738 di AS. Uji UE satu laboratorium memerlukan empat benda identik dan memakan tujuh hari kerja, jadi buatlah cadangan dari apa pun yang berencana Anda uji.
 
-Home tests are disputed. The FDA says home swab kits can show leachable lead, and that a piece that tests positive should not be used for food. Ceramics NZ warns that consumer lead-test pens are "not designed for this use" on ceramics and can give false positives. Digitalfire suggests leaving a lemon slice on the glaze overnight as a rough screen. The safe reading: a positive home test means stop using the piece for food, and a negative one proves nothing. Only a lab can tell you a piece is safe.
+Uji rumahan diperdebatkan. FDA menyatakan alat usap rumahan dapat menunjukkan timbal yang dapat terlindi, dan benda yang hasilnya positif sebaiknya tidak dipakai untuk makanan. Ceramics NZ memperingatkan bahwa pena uji timbal konsumen "tidak dirancang untuk penggunaan ini" pada keramik dan dapat memberi hasil positif palsu. Digitalfire menyarankan meninggalkan irisan lemon di atas glasir semalam sebagai uji penyaringan kasar. Tafsiran yang aman: uji rumahan positif berarti berhenti memakai benda itu untuk makanan, dan yang negatif tidak membuktikan apa pun. Hanya laboratorium yang dapat memberi tahu Anda bahwa benda itu aman.
 
-### Crazed ware
+### Benda retak halus
 
-**Crazing** is a network of fine cracks in the glaze surface, and sources disagree about it. A Ceramics Monthly experiment found crazed tiles could be cleaned, best in a dishwasher, though they came out less clean than uncrazed tiles after soap and water. Digitalfire holds that "Crazed ware is unacceptable" and that crazing "severely weakens ware". The safe course is simple: do not use crazed pieces for food.
+**Retak halus** adalah jaringan retakan halus pada permukaan glasir, dan sumber berbeda pendapat tentangnya. Eksperimen Ceramics Monthly menemukan ubin retak halus dapat dibersihkan, paling baik di mesin pencuci piring, meskipun hasilnya kurang bersih daripada ubin tidak retak halus setelah sabun dan air. Digitalfire berpendapat bahwa "Benda retak halus tidak dapat diterima" dan bahwa retak halus "sangat melemahkan benda". Jalan yang aman sederhana: jangan pakai benda retak halus untuk makanan.
 
-### Liner glazes
+### Glasir lapisan dalam
 
-A **liner glaze** is the glaze on the inside of a cup or bowl, where the food sits. Digitalfire describes a liner that may be low enough in risk to use without lab testing: no colorants, barium, lead or lithium; fully melted; no crazing; and it wears well. Even then, only a leach test of your own fired pots shows whether they are food-safe. Warning signs in any glaze are heavy amounts of colorant, crystals on the surface and poor melting.
+**Glasir lapisan dalam** adalah glasir di bagian dalam cangkir atau mangkuk, tempat makanan berada. Digitalfire menggambarkan lapisan dalam yang mungkin cukup rendah risikonya untuk dipakai tanpa uji laboratorium: tanpa pewarna, barium, timbal, atau litium; meleleh sepenuhnya; tidak retak halus; dan tahan aus. Bahkan dalam kasus itu, hanya uji pelindian terhadap benda yang sudah Anda bakar sendiri yang menunjukkan apakah benda itu aman untuk pangan. Tanda peringatan pada glasir mana pun adalah pewarna dalam jumlah banyak, kristal di permukaan, dan peleburan yang buruk.
 
-### Family rules we suggest
+### Aturan keluarga yang kami sarankan
 
-- Children's cups, bowls and plates: only lab-tested, durable liner glazes, or commercial dinnerware.
-- Do not store acidic food or drink (citrus, tomato, vinegar, fruit juice, wine) in pots glazed with anything you have not had tested.
-- Do not use crazed pieces for food.
-- Test tiles and experiments stay in the studio, never in the kitchen, the toy box or the pet's bowl.
-- Take care with other pottery too. The FDA advises caution with handmade or crude-looking pieces, antiques, damaged or worn pieces, flea-market finds and bright orange, red or yellow decoration.
-- If a child has used pottery you now doubt, the FDA says to talk to a doctor about a blood lead test.
+- Cangkir, mangkuk, dan piring anak: hanya glasir lapisan dalam yang diuji laboratorium dan awet, atau peralatan makan komersial.
+- Jangan simpan makanan atau minuman asam (jeruk, tomat, cuka, jus buah, anggur) dalam benda yang diglasir dengan apa pun yang belum Anda uji.
+- Jangan pakai benda retak halus untuk makanan.
+- Ubin uji dan percobaan tetap di studio, jangan pernah di dapur, kotak mainan, atau mangkuk hewan peliharaan.
+- Berhati-hatilah dengan tembikar lain juga. FDA menyarankan kehati-hatian terhadap benda buatan tangan atau yang tampak kasar, barang antik, benda yang rusak atau aus, temuan pasar loak, dan hiasan oranye, merah, atau kuning terang.
+- Jika anak pernah memakai tembikar yang kini Anda ragukan, FDA menyatakan untuk berbicara dengan dokter tentang tes timbal darah.
 
-For more on how glazes melt, why some leach and what the limits mean, see [Glazing from first principles](/guides/glazing-basics).
+Untuk lebih lanjut tentang cara glasir meleleh, mengapa sebagian mengalami pelindian, dan apa arti batasnya, lihat [Mengglasir dari prinsip dasar](/guides/glazing-basics).
 
 ## Sumber {#sources}
 

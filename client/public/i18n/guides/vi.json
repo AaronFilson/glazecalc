@@ -56,7 +56,8 @@
     "vet": "Hãy gọi bác sĩ thú y của bạn.",
     "checkedOn": "Đã kiểm tra vào:",
     "choosePrompt": "Chọn quốc gia của bạn để xem gọi ai tại đó.",
-    "ministry": "Trang của bộ y tế: <link>{name}</link>."
+    "ministry": "Trang của bộ y tế: <link>{name}</link>.",
+    "reported": "Các trang chính thức của chính phủ liệt kê 113, 114 và 115 nhưng không nói mỗi số dùng để làm gì; các vai trò được hiển thị theo Circular 22/2014/TT-BTTTT, như các trang thứ cấp trích dẫn."
   },
   "density": {
     "sg": "tỷ trọng {value}",
@@ -91,6 +92,7 @@
     "caption": "Giới hạn tại nơi làm việc đối với silica tinh thể hô hấp được tại {region}, trung bình 8 giờ (đã kiểm tra {date})",
     "captionControl": "Thước đo cho silica tinh thể hô hấp được trong không khí của khu vực làm việc tại {region} (đã kiểm tra {date})",
     "both": "Thạch anh và cristobalit",
+    "freeSilica": "Silica tự do",
     "quartz": "Thạch anh",
     "cristobalite": "Cristobalit",
     "actionLevel": "Mức hành động",
@@ -171,7 +173,13 @@
       "thSmall": "Sản phẩm sâu trên 25 mm, dưới 1,1 L",
       "thLarge": "Sản phẩm sâu trên 25 mm, từ 1,1 L trở lên",
       "thInfant": "Đồ đựng thức ăn cho trẻ nhỏ đến 12 tháng tuổi",
-      "thCooking": "Dụng cụ nấu, làm ra để chịu được nhiệt khi nấu"
+      "thCooking": "Dụng cụ nấu, làm ra để chịu được nhiệt khi nấu",
+      "vnFlat": "Sản phẩm nông, để đựng hoặc nấu thực phẩm",
+      "vnSmall": "Sản phẩm sâu để đựng thực phẩm, dưới 1100 mL",
+      "vnMedium": "Sản phẩm sâu để đựng thực phẩm, từ 1100 mL đến dưới 3000 mL",
+      "vnStorage": "Sản phẩm sâu để đựng thực phẩm, từ 3000 mL trở lên",
+      "vnCooking": "Sản phẩm sâu để nấu thực phẩm",
+      "vnCups": "Cốc và bát nhỏ"
     },
     "judged": {
       "average": "trung bình của 6 sản phẩm",

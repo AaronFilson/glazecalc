@@ -56,7 +56,8 @@
     "vet": "Hubungi dokter hewan Anda.",
     "checkedOn": "Diperiksa pada:",
     "choosePrompt": "Pilih negara Anda untuk melihat siapa yang dihubungi di sana.",
-    "ministry": "Halaman kementerian kesehatan: <link>{name}</link>."
+    "ministry": "Halaman kementerian kesehatan: <link>{name}</link>.",
+    "reported": "Laman resmi pemerintah mencantumkan 113, 114, dan 115, tetapi tidak menyebutkan kegunaan masing-masing; peran yang ditampilkan mengikuti Circular 22/2014/TT-BTTTT, seperti dikutip laman sekunder."
   },
   "density": {
     "sg": "berat jenis {value}",
@@ -91,6 +92,7 @@
     "caption": "Batas tempat kerja untuk silika kristalin respirabel di {region}, rata-rata 8 jam (diperiksa {date})",
     "captionControl": "Tolok ukur untuk silika kristalin respirabel di udara area kerja di {region} (diperiksa {date})",
     "both": "Kuarsa dan kristobalit",
+    "freeSilica": "Silika bebas",
     "quartz": "Kuarsa",
     "cristobalite": "Kristobalit",
     "actionLevel": "Tingkat tindakan",
@@ -171,7 +173,13 @@
       "thSmall": "Benda dengan kedalaman lebih dari 25 mm, di bawah 1,1 L",
       "thLarge": "Benda dengan kedalaman lebih dari 25 mm, 1,1 L atau lebih",
       "thInfant": "Wadah makanan bayi sampai usia 12 bulan",
-      "thCooking": "Peralatan memasak, dibuat tahan panas memasak"
+      "thCooking": "Peralatan memasak, dibuat tahan panas memasak",
+      "vnFlat": "Benda dangkal, untuk menampung atau memasak makanan",
+      "vnSmall": "Benda dalam untuk menampung makanan, di bawah 1100 mL",
+      "vnMedium": "Benda dalam untuk menampung makanan, dari 1100 mL sampai di bawah 3000 mL",
+      "vnStorage": "Benda dalam untuk menampung makanan, 3000 mL atau lebih",
+      "vnCooking": "Benda dalam untuk memasak",
+      "vnCups": "Cangkir dan mangkuk kecil"
     },
     "judged": {
       "average": "rata-rata 6 benda",

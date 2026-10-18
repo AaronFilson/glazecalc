@@ -248,6 +248,22 @@
       "saved": "Tersimpan: angka dan tanggal seperti dalam {language}.",
       "help": "Cara angka dan tanggal ditulis: 12,345.6 atau 12.345,6, dan urutan hari dan bulan."
     },
+    "calendar": {
+      "legend": "Kalender",
+      "help": "Kalender yang dipakai untuk menampilkan tanggal. Tanggal yang Anda ketik tetap dalam kalender Masehi.",
+      "gregory": {
+        "label": "Masehi (Gregorian)",
+        "saved": "Tersimpan: tanggal ditampilkan dalam kalender Masehi."
+      },
+      "buddhist": {
+        "label": "Tarikh Buddha Thailand",
+        "saved": "Tersimpan: tanggal ditampilkan dalam tarikh Buddha Thailand."
+      },
+      "japanese": {
+        "label": "Era Jepang",
+        "saved": "Tersimpan: tanggal ditampilkan dalam era Jepang."
+      }
+    },
     "decimalMark": {
       "legend": "Mengetik jumlah",
       "either": {

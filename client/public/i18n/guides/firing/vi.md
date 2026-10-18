@@ -165,69 +165,69 @@ Hãy dự kiến có khác biệt: Orton nói “Thông thường, bạn sẽ th
 
 :::orton
 
-## The kiln sitter {#kiln-sitter lang=en}
+## Kiln-Sitter {#kiln-sitter}
 
-A **kiln sitter** is the mechanical switch, on the outside of many basic and older kilns, that turns the kiln off when a small cone bends. The best known is the Dawson Kiln-Sitter. It makes firing easier, but it is a convenience, not a safety device.
+**Kiln-Sitter** là công tắc cơ khí, ở bên ngoài nhiều lò nung cơ bản và cũ, tắt lò khi một côn nhỏ cong. Loại nổi tiếng nhất là Dawson Kiln-Sitter. Nó làm cho việc nung dễ hơn, nhưng là một tiện ích, không phải một thiết bị an toàn.
 
-### How it works
+### Cách nó hoạt động
 
-A porcelain tube reaches into the kiln. At its end, a small cone or a bar lies across two metal supports, under a **sensing rod** that pivots like a seesaw. Outside the kiln, the other end of the rod holds up a weight by a small claw. When the cone softens and bends to about 90°, the rod drops far enough to release the weight, the weight falls, and the power to the elements is cut.
+Một ống sứ vươn vào trong lò. Ở đầu của nó, một côn nhỏ hoặc một thanh côn nằm ngang qua hai giá đỡ kim loại, dưới một **que cảm biến**{{en: sensing rod}} xoay như một cái bập bênh. Bên ngoài lò, đầu kia của que giữ một quả cân bằng một cái móc nhỏ. Khi côn mềm ra và cong đến khoảng 90°, que hạ xuống đủ xa để nhả quả cân, quả cân rơi, và điện đến các dây điện trở bị cắt.
 
-Small cones and bars "give equivalent heat treatment". Orton notes that many beginners choose bars, because their even shape makes it easy to place them the same way every time. A small cone tapers, so where it sits matters: with its thin part under the rod the kiln shuts off cooler, and with its thick part hotter, a shift of "as much as 1/2 cone".
+Côn nhỏ và thanh côn “cho cùng một xử lý nhiệt”. Orton ghi chú rằng nhiều người mới chọn thanh côn, vì hình dạng đều của chúng giúp dễ đặt chúng theo cùng một cách mỗi lần. Một côn nhỏ thon dần, nên vị trí nó nằm quan trọng: với phần mỏng dưới que, lò tắt nguội hơn, và với phần dày, nóng hơn, một độ lệch “đến 1/2 côn”.
 
-### Which cone goes in the sitter
+### Côn nào đặt vào Kiln-Sitter
 
-Sources disagree. Dawson, who made the sitter, says to use the same number as the firing cone on the shelf, and to go one number hotter only if the shelf cone stays unbent. L&L says to use one number hotter than the shelf cones, because the sitter sits near the wall and the elements, gets more heat, and tends to shut off early. Orton settles the principle: "The shelf cone is the final judge of the firing process, not the Kiln-Sitter cone or bar."
-
-> [!NOTE]
-> Our starting point: put a small cone of the same number as your target in the sitter, with a cone pack on the shelf. If the shelf firing cone is under-bent when the kiln shuts off, go one number hotter in the sitter next time, or set the thicker part of the cone under the rod. If it is over-bent, do the opposite.
-
-### Setting it up, and checks before every firing
-
-Dawson's procedure, which doubles as a check before every firing:
-
-1. Turn all the switches off. Check that the sensing rod moves freely, sits centered in the tube and is not bent or corroded. If it is sluggish, Dawson says to replace the tube assembly.
-2. Brush a thin coat of high-fire **kiln wash** (a coating that stops melted material sticking) onto the cone supports and the rod where it touches the cone. Never put wash on the cone or the porcelain tube.
-3. Load shelves and ware at least 1 in (25 mm) above or below the tube, so nothing can touch, fall against or block it.
-4. Lift the weight, press the claw down onto the trigger, and lay the cone or bar flat on the supports against the metal step, as your sitter's manual shows, the same way every time. Check it again before closing the lid: "AN IMPROPERLY PLACED CONE OR BAR COULD CAUSE AN OVERFIRING."
-5. Set the limit timer and push in the plunger until it locks. Keep the kiln level and the space under the weight clear, so the weight can fall.
-
-### The limit timer
-
-Many sitters, including Dawson's LT models, have a **limit timer**: a clock that turns the kiln off after a set time, as a backup "in case the KILN-SITTER fails". It should always be set longer than the firing is expected to take. Sources set the margin differently:
-
-Table: How long to set the limit timer
-Label: Limit timer settings
-
-| Source    | Setting                                                                                                                      |
-| --------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| Dawson    | ½ hour longer than the expected firing time until you know the kiln, later as little as ¼ hour; never set it beyond 20 hours |
-| L&L       | Very high the first time, noting how long the firing takes; after that, about 1 hour longer                                  |
-| Bracker's | 30 minutes to 1 hour longer than the firing time                                                                             |
+Các nguồn không thống nhất. Dawson, người làm ra Kiln-Sitter, nói hãy dùng cùng số với côn nung trên kệ, và chỉ nóng hơn một bậc nếu côn kệ vẫn chưa cong. L&L nói hãy dùng nóng hơn các côn kệ một bậc, vì Kiln-Sitter nằm gần thành lò và các dây điện trở, nhận nhiều nhiệt hơn, và có xu hướng tắt sớm. Orton giải quyết nguyên tắc: “Côn trên kệ là người phán xét cuối cùng của quá trình nung, không phải côn hay thanh của Kiln-Sitter.”
 
 > [!NOTE]
-> Our starting point: generous the first time (within the dial's 20 hours), then ½ to 1 hour longer than the time you recorded. The timer also tells you how long a firing took: set at 7 and ending at 1 means 6 hours.
+> Điểm xuất phát của chúng tôi: đặt một côn nhỏ cùng số với mục tiêu của bạn vào Kiln-Sitter, kèm một bộ côn trên kệ. Nếu côn nung trên kệ cong chưa đủ khi lò tắt, lần sau hãy dùng nóng hơn một bậc trong Kiln-Sitter, hoặc đặt phần dày hơn của côn dưới que. Nếu nó cong quá mức, hãy làm ngược lại.
 
-### When it shuts off early or late
+### Thiết lập nó, và các kiểm tra trước mỗi lần nung
 
-After each firing, read the sitter cone beside the shelf cones.
+Quy trình của Dawson, cũng là một kiểm tra trước mỗi lần nung:
 
-Table: Reading the sitter after a firing
-Label: Kiln sitter problems
+1. Tắt tất cả các công tắc. Kiểm tra que cảm biến di chuyển tự do, nằm giữa trong ống và không bị cong hay bị ăn mòn. Nếu nó chậm, Dawson nói hãy thay cụm ống.
+2. Quét một lớp mỏng **lớp phủ chống dính tấm kê** (kiln wash) nhiệt độ cao (một lớp phủ ngăn vật liệu nóng chảy dính) lên các giá đỡ côn và lên que ở chỗ nó chạm côn. Tuyệt đối không phủ lớp này lên côn hay ống sứ.
+3. Xếp kệ và sản phẩm cách ống ít nhất 1 inch (25 mm) ở trên hoặc dưới, để không gì có thể chạm, đổ vào hay chặn nó.
+4. Nâng quả cân, ấn móc xuống bàn đạp kích hoạt, và đặt côn hoặc thanh nằm phẳng lên các giá đỡ sát với bậc kim loại, như hướng dẫn sử dụng Kiln-Sitter của bạn chỉ, theo cùng một cách mỗi lần. Kiểm tra lại trước khi đóng nắp: “MỘT CÔN HOẶC THANH ĐẶT SAI CÁCH CÓ THỂ GÂY NUNG QUÁ LỬA.”
+5. Đặt bộ hẹn giờ giới hạn và đẩy cần vào cho đến khi nó khóa. Giữ lò nằm ngang và khoảng trống dưới quả cân thông thoáng, để quả cân có thể rơi.
 
-| What you see                                    | Likely cause                                                                                           | What to do                                                       |
-| ----------------------------------------------- | ------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------- |
-| Sitter tripped, shelf firing cone under-bent    | The sitter ran hotter than the shelf (it sits near the wall)                                           | One cone hotter in the sitter, or the thicker part under the rod |
-| Sitter cone sagged well past 90°                | The kiln climbed too fast near the end                                                                 | Lower the switch settings, so the climb is slower (Dawson)       |
-| Sitter cone did not bend, or melted into a blob | The sitter itself: poor adjustment, a bent or corroded rod, or something lodged in or against the tube | Check and adjust the sitter by its manual before firing again    |
-| Early or late every time                        | Out of adjustment, or a worn rod                                                                       | Check with the firing gauge; move the trigger plate              |
+### Bộ hẹn giờ giới hạn
 
-To check the adjustment, Dawson uses a **firing gauge** that holds the rod where a fully bent cone would leave it; there should then be "1/16th-inch clearance" (about 1.6 mm) at the claw. Check it every 30 firings. Ceramics Monthly's rule: if the kiln shuts off early, move the trigger plate up slightly; if late, move it down slightly. Whatever the sitter does, "Always trust large witness cones over small sitter cones."
+Nhiều Kiln-Sitter, gồm các mẫu LT của Dawson, có **bộ hẹn giờ giới hạn**{{en: limit timer}}: một đồng hồ tắt lò sau một thời gian đã đặt, như một dự phòng “phòng khi KILN-SITTER hỏng”. Nó luôn nên được đặt dài hơn thời gian dự kiến của lần nung. Các nguồn đặt biên độ khác nhau:
+
+Table: Đặt bộ hẹn giờ giới hạn bao lâu
+Label: Cài đặt bộ hẹn giờ giới hạn
+
+| Nguồn     | Cài đặt                                                                                                                     |
+| --------- | --------------------------------------------------------------------------------------------------------------------------- |
+| Dawson    | Dài hơn thời gian nung dự kiến ½ giờ cho đến khi bạn biết lò, sau đó có thể chỉ dài hơn ¼ giờ; không bao giờ đặt quá 20 giờ |
+| L&L       | Rất cao lần đầu, ghi lại lần nung kéo dài bao lâu; sau đó, dài hơn khoảng 1 giờ                                             |
+| Bracker's | Dài hơn thời gian nung 30 phút đến 1 giờ                                                                                    |
+
+> [!NOTE]
+> Điểm xuất phát của chúng tôi: rộng rãi lần đầu (trong 20 giờ của mặt số), sau đó dài hơn ½ đến 1 giờ so với thời gian bạn đã ghi. Bộ hẹn giờ cũng cho bạn biết một lần nung kéo dài bao lâu: đặt ở 7 và kết thúc ở 1 nghĩa là 6 giờ.
+
+### Khi nó tắt sớm hoặc muộn
+
+Sau mỗi lần nung, hãy đọc côn Kiln-Sitter bên cạnh các côn kệ.
+
+Table: Đọc Kiln-Sitter sau một lần nung
+Label: Sự cố của Kiln-Sitter
+
+| Điều bạn thấy                                           | Nguyên nhân có thể                                                                                           | Cần làm gì                                                                   |
+| ------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------- |
+| Kiln-Sitter đã kích hoạt, côn nung trên kệ cong chưa đủ | Kiln-Sitter chạy nóng hơn kệ (nó nằm gần thành lò)                                                           | Dùng côn nóng hơn một bậc trong Kiln-Sitter, hoặc phần dày hơn dưới que      |
+| Côn Kiln-Sitter võng xuống quá xa so với 90°            | Lò tăng nhiệt quá nhanh ở gần cuối                                                                           | Hạ các cài đặt công tắc, để việc tăng nhiệt chậm hơn (Dawson)                |
+| Côn Kiln-Sitter không cong, hoặc chảy thành một cục     | Chính Kiln-Sitter: điều chỉnh kém, một que bị cong hoặc bị ăn mòn, hoặc có thứ gì kẹt trong hoặc dựa vào ống | Kiểm tra và điều chỉnh Kiln-Sitter theo hướng dẫn sử dụng trước khi nung lại |
+| Lần nào cũng sớm hoặc muộn                              | Lệch điều chỉnh, hoặc một que bị mòn                                                                         | Kiểm tra bằng đồng hồ đo nung; di chuyển tấm kích hoạt                       |
+
+Để kiểm tra điều chỉnh, Dawson dùng một **đồng hồ đo nung**{{en: firing gauge}} giữ que ở chỗ một côn cong hoàn toàn sẽ để nó; khi đó phải có “khe hở 1/16 inch” (khoảng 1,6 mm) ở móc. Hãy kiểm tra mỗi 30 lần nung. Quy tắc của Ceramics Monthly: nếu lò tắt sớm, hãy di chuyển tấm kích hoạt lên một chút; nếu muộn, di chuyển xuống một chút. Dù Kiln-Sitter làm gì, “Luôn tin các côn chứng lớn hơn các côn nhỏ của Kiln-Sitter.”
 
 > [!WARNING]
-> **A kiln sitter is not a safety device.** Dawson's manual says it "is NOT intended to perform as a fail-safe shut-off device and your kiln should NOT be left unattended beyond the estimated firing time." Something as simple as greenware falling against the tube "might cause an over-firing". Be there to check the kiln when it should be finishing, and never fire it over or near anything that burns, such as a wood floor or carpet.
+> **Kiln-Sitter không phải là một thiết bị an toàn.** Hướng dẫn sử dụng của Dawson nói nó “KHÔNG được thiết kế để hoạt động như một thiết bị ngắt an toàn khi có sự cố (fail-safe) và lò của bạn KHÔNG được để không người trông quá thời gian nung ước tính.” Một việc đơn giản như phôi chưa nung đổ vào ống “có thể gây nung quá lửa”. Hãy có mặt để kiểm tra lò khi nó sắp xong, và tuyệt đối không nung nó trên hoặc gần bất cứ thứ gì cháy được, như sàn gỗ hay thảm.
 
-The sitter is built for firings "up to and including Cone 8". It cannot hold a temperature or cool slowly by itself. With practice and a log, though, you can "become the controller", as Digitalfire puts it: watch the cones and turn the switches by hand.
+Kiln-Sitter được làm cho các lần nung “đến hết côn 8”. Nó không thể tự giữ một nhiệt độ hay làm nguội chậm. Tuy nhiên, với luyện tập và một nhật ký, bạn có thể “trở thành bộ điều khiển”, như Digitalfire nói: theo dõi các côn và xoay các công tắc bằng tay.
 
 :::
 

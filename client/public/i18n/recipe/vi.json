@@ -361,7 +361,8 @@
     "heading": "Mối nguy",
     "intro": "Như bản ghi của mỗi nguyên liệu nêu; các nguy hiểm của thư viện có sẵn đến từ phiếu an toàn hóa chất của nhà cung cấp.",
     "line": "<b>{names}:</b> {hazards}",
-    "unknown": "{count, plural, other {Không có nguy hiểm nào được nêu cho {list}: hãy xem phiếu an toàn hóa chất đi kèm.}}"
+    "unknown": "{count, plural, other {Không có nguy hiểm nào được nêu cho {list}: hãy xem phiếu an toàn hóa chất đi kèm.}}",
+    "safety": "Các nguyên liệu men khô tạo bụi: đừng để bụi đó vào phổi bạn, kể cả bụi từ những nguyên liệu không được phân loại là nguy hiểm: xem <mixing>Pha trộn an toàn và thông gió</mixing>, và <home>Không gây ngộ độc cho gia đình bạn</home> nếu có trẻ em hoặc thú cưng ở gần. Khi phiếu an toàn hóa chất của một nguyên liệu nói nhiều hơn, hãy làm theo nó."
   },
   "compare": {
     "heading": "So sánh hai công thức men",
@@ -590,7 +591,10 @@
     "guidance": "Đây là hướng dẫn tham khảo, không phải tiêu chí đạt hay không đạt: một loại men nằm ngoài chúng vẫn có thể ổn, và một loại nằm trong chúng vẫn có thể rạn nứt men, thôi nhiễm hoặc hỏng. Hãy thử nó.",
     "source": "Nguồn:",
     "saveFailed": "Không thể lưu lựa chọn bộ giới hạn của bạn vào tài khoản, nên bộ giới hạn trước đó vẫn đang được dùng.",
-    "ownLimits": "Các gợi ý này dùng các giới hạn riêng của Glazecalc, không phải {name}."
+    "ownLimits": "Các gợi ý này dùng các giới hạn riêng của Glazecalc, không phải {name}.",
+    "firingFromBlock": "Theo lần nung của công thức ({bands})",
+    "bothBands": "Lần nung của công thức trải dài {bands}, nên mỗi khoảng được kiểm tra, đặt cạnh nhau: một loại men hiếm khi cư xử giống nhau ở cả hai đầu.",
+    "fromFiring": "Các số liệu dành cho lần nung của công thức: {band}. Hãy chọn một lần nung ở trên để kiểm tra lần nung khác."
   },
   "stull": {
     "heading": "Biểu đồ Stull",
@@ -714,7 +718,8 @@
     "notSaved": "Chưa lưu gì: {problem}",
     "stopped": "Đã lưu {saved} trong {count}. Phần còn lại chưa được lưu: {problem}",
     "saved": "{count, plural, other {Đã lưu # công thức men.}}",
-    "openRecipes": "Mở các công thức men của bạn"
+    "openRecipes": "Mở các công thức men của bạn",
+    "firingRead": "Lần nung đọc được từ ghi chú: {firing}"
   },
   "blends": {
     "title": "Pha trộn cho mẫu thử men",
@@ -847,5 +852,115 @@
     "retry": "Thử lại",
     "about": "Glazecalc là công cụ tính men miễn phí cho thợ gốm.",
     "aboutLink": "Giới thiệu Glazecalc"
+  },
+  "firing": {
+    "heading": "Nung",
+    "whatIsCone": "Côn nghĩa là gì?",
+    "scale": "Thang",
+    "scales": {
+      "orton": "Côn Orton",
+      "sk": "Côn SK (JIS)",
+      "temperature": "Nhiệt độ"
+    },
+    "groups": {
+      "usual": "Côn 022 đến 13",
+      "half": "Côn nửa số",
+      "above": "Côn 14 đến 42 (hiếm trong làm gốm)"
+    },
+    "coneLabel": "Côn",
+    "lowCone": "Từ côn",
+    "highCone": "Đến côn",
+    "noHigh": "Không có côn trên",
+    "notStated": "Không nêu",
+    "peak": "Nhiệt độ cao nhất ({unit})",
+    "lowTemperature": "Từ ({unit})",
+    "highTemperature": "Đến ({unit})",
+    "rangeToggle": "Một khoảng",
+    "testedLegend": "Đã thử ở: đánh dấu mỗi côn bạn đã nung men này tới",
+    "atmosphere": "Môi trường nung",
+    "process": "Cách nung",
+    "atmospheres": {
+      "oxidation": "oxy hóa",
+      "reduction": "khử",
+      "neutral": "trung tính"
+    },
+    "processes": {
+      "wood": "nung củi",
+      "soda": "nung soda",
+      "salt": "nung muối",
+      "raku": "raku",
+      "pit": "nung trong hố"
+    },
+    "rate": "Tốc độ trong giờ cuối ({unit} mỗi giờ)",
+    "hold": "Giữ nhiệt ở đỉnh (phút)",
+    "schedule": "Ghi chú đường cong nung",
+    "schedulePlaceholder": "Giữ nhiệt 10 phút, hạ nhiệt chậm...",
+    "witness": "Đã xác nhận bằng côn chứng",
+    "foodSurface": "Cho bề mặt tiếp xúc thực phẩm (men phủ mặt trong)",
+    "liner": {
+      "note": "An toàn thực phẩm phụ thuộc vào việc nung men này tới đúng côn đã thử: men nung chưa đủ có thể thôi nhiễm.",
+      "range": "Men được nêu cho một khoảng, nên hãy thử ở đầu thấp của khoảng, nơi men chảy ít nhất.",
+      "untested": "Chưa có côn nào được đánh dấu là đã thử.",
+      "test": "Chỉ một thử nghiệm thôi nhiễm trên chính các sản phẩm bạn đã nung mới cho biết men này có an toàn với thực phẩm hay không."
+    },
+    "helpSummary": "Về lần nung",
+    "help": {
+      "cone": "Côn bạn đã nung men này tới. Côn đo công nhiệt (heatwork: thời gian và nhiệt độ), không chỉ nhiệt độ, nên côn 06 có nhiệt độ thấp hơn côn 6 rất nhiều.",
+      "range": "Nếu men dùng được trong một khoảng, hãy nêu côn thấp nhất và cao nhất, rồi đánh dấu các côn bạn thực sự đã nung tới: côn đã thử hiển thị trước. Men có thể trông khác và cư xử khác ở mỗi đầu.",
+      "convert": "Côn được giữ đúng như bạn nhập. Mọi quy đổi sang thang khác hoặc sang nhiệt độ đều chỉ là gần đúng: côn cong ở nhiệt độ khác nhau tùy tốc độ gia nhiệt, và côn SK với côn Orton cùng số thì không giống nhau.",
+      "move": "Chuyển một loại men sang côn khác thường nghĩa là phải điều chỉnh lại công thức, chứ không chỉ nung nóng hơn hay nguội hơn. Nhân bản cho côn khác sẽ giữ lại cả hai phiên bản."
+    },
+    "temperatureProblem": "Hãy nhập nhiệt độ từ {min} đến {max}.",
+    "rateProblem": "Hãy nhập tốc độ là số nguyên độ mỗi giờ.",
+    "holdProblem": "Hãy nhập thời gian giữ nhiệt là số phút nguyên, tối đa một ngày.",
+    "one": {
+      "orton": "côn {cone}",
+      "sk": "SK {cone}"
+    },
+    "span": {
+      "orton": "côn {low}–{high}",
+      "sk": "SK {low}–{high}",
+      "temperature": "{low} đến {high}"
+    },
+    "testedAt": "Đã thử ở {cones}",
+    "claimedRange": "khoảng được nêu {range}",
+    "rangeUntested": "Khoảng {range}; chưa đánh dấu côn nào là đã thử",
+    "approxTemperature": "≈ {temperature} ({basis}; gần đúng)",
+    "approxCone": "≈ {cone} ({basis}; gần đúng)",
+    "basis": {
+      "orton60": "côn Orton lớn ở 60 °C mỗi giờ",
+      "kyoto": "đo ở 100 °C mỗi giờ bởi viện nghiên cứu của thành phố Kyoto",
+      "stated": "như đã nêu"
+    },
+    "rateText": "{rate} mỗi giờ trong giờ cuối",
+    "holdText": "giữ nhiệt {minutes} phút",
+    "witnessText": "đã kiểm tra bằng côn chứng",
+    "asGiven": "Lần nung, theo tác giả ghi:",
+    "filterCone": "Hiển thị công thức theo côn",
+    "anyCone": "Côn bất kỳ",
+    "filterAtmosphere": "Hiển thị công thức theo môi trường nung hoặc cách nung",
+    "anyAtmosphere": "Môi trường nung hoặc cách nung bất kỳ",
+    "duplicate": "Nhân bản cho côn khác",
+    "duplicateName": "Nhân bản {title} cho côn khác",
+    "duplicateTitle": "{title} (côn khác)",
+    "duplicateNote": "Bản sao của {title}, chưa được lưu: hãy chọn côn mới của nó trong Nung. Chuyển một loại men sang côn khác thường nghĩa là phải điều chỉnh lại công thức, chứ không chỉ nung nóng hơn hay nguội hơn, nên hãy kiểm tra các giới hạn và thử nghiệm nó."
+  },
+  "firings": {
+    "heading": "Nhật ký nung",
+    "open": "Liên kết nhật ký nung",
+    "fetchFailed": "Không lấy được nhật ký nung của bạn.",
+    "noLogs": "Chưa có nhật ký nung nào.",
+    "toLogs": "Ghi lại một lần nung",
+    "saveFailed": "Không lưu được thay đổi về các liên kết nhật ký nung.",
+    "resultFor": "Kết quả trong {title}",
+    "resultPlaceholder": "Kết quả ra sao: bóng, không rạn men...",
+    "unlink": "Hủy liên kết",
+    "unlinkName": "Hủy liên kết {title}",
+    "choose": "Một nhật ký nung để liên kết",
+    "link": "Liên kết",
+    "fill": "Đánh dấu các côn mà những nhật ký này nêu: {cones}",
+    "replaceAsk": "Mục đã thử đang đánh dấu {now}. Thay bằng các côn mà nhật ký nêu, {logs}?",
+    "replace": "Thay thế",
+    "keep": "Giữ nguyên"
   }
 }

@@ -88,7 +88,15 @@
     "chooseField": "Pilih kolom untuk ditambahkan, lalu Tambahkan kolom.",
     "fetchFailed": "Terjadi kesalahan saat mengambil informasi catatan pembakaran.",
     "saved": "Berhasil menambahkan catatan pembakaran ke server.",
-    "saveFailed": "Kesalahan: permintaan ke server gagal."
+    "saveFailed": "Kesalahan: permintaan ke server gagal.",
+    "recipesHeading": "Resep yang dibakar di sini",
+    "noRecipes": "Belum ada resep yang ditautkan.",
+    "recipesFailed": "Resep Anda tidak dapat diambil, sehingga belum ada yang dapat ditautkan sekarang.",
+    "pickRecipe": "Resep yang dibakar di sini",
+    "linkRecipe": "Tautkan resep",
+    "unlink": "Putuskan tautan",
+    "unlinkRecipe": "Putuskan tautan {title}",
+    "linkFailed": "Tautan tidak dapat disimpan."
   },
   "notes": {
     "title": "Catatan",

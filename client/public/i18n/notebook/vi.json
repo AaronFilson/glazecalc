@@ -88,7 +88,15 @@
     "chooseField": "Chọn một cột để thêm, rồi chọn Thêm cột.",
     "fetchFailed": "Đã xảy ra lỗi khi lấy thông tin các bản ghi nung.",
     "saved": "Thành công. Đã thêm bản ghi nung vào máy chủ.",
-    "saveFailed": "Lỗi: yêu cầu gửi đến máy chủ không thành công."
+    "saveFailed": "Lỗi: yêu cầu gửi đến máy chủ không thành công.",
+    "recipesHeading": "Công thức men đã nung trong lần này",
+    "noRecipes": "Chưa liên kết công thức men nào.",
+    "recipesFailed": "Không lấy được các công thức men của bạn, nên hiện chưa thể liên kết.",
+    "pickRecipe": "Công thức men đã nung trong lần này",
+    "linkRecipe": "Liên kết công thức men",
+    "unlink": "Hủy liên kết",
+    "unlinkRecipe": "Hủy liên kết {title}",
+    "linkFailed": "Không lưu được liên kết."
   },
   "notes": {
     "title": "Ghi chú",

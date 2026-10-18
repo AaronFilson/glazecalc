@@ -361,7 +361,8 @@
     "heading": "Bahaya",
     "intro": "Sebagaimana diberikan catatan setiap bahan; milik pustaka standar berasal dari lembar data keselamatan pemasok.",
     "line": "<b>{names}:</b> {hazards}",
-    "unknown": "{count, plural, other {Tidak ada bahaya yang diberikan untuk {list}: lihat lembar data keselamatan yang menyertainya.}}"
+    "unknown": "{count, plural, other {Tidak ada bahaya yang diberikan untuk {list}: lihat lembar data keselamatan yang menyertainya.}}",
+    "safety": "Bahan glasir kering menghasilkan debu: jauhkan debu itu dari paru-paru Anda, bahkan debu dari bahan yang tidak digolongkan berbahaya: lihat <mixing>Mencampur dengan aman dan ventilasi</mixing>, dan <home>Jangan meracuni keluarga Anda</home> jika ada anak atau hewan peliharaan di sekitar. Jika lembar data keselamatan sebuah bahan menyatakan lebih banyak, ikuti lembar itu."
   },
   "compare": {
     "heading": "Bandingkan dua resep",
@@ -590,7 +591,10 @@
     "guidance": "Ini pedoman, bukan lulus atau gagal: glasir di luarnya dapat baik-baik saja, dan yang di dalamnya masih dapat retak halus, mengalami pelindian, atau gagal. Ujilah.",
     "source": "Sumber:",
     "saveFailed": "Pilihan set batas Anda tidak dapat disimpan ke akun Anda, sehingga set batas sebelumnya masih yang dipakai.",
-    "ownLimits": "Saran ini memakai batas Glazecalc sendiri, bukan {name}."
+    "ownLimits": "Saran ini memakai batas Glazecalc sendiri, bukan {name}.",
+    "firingFromBlock": "Dari pembakaran resep ({bands})",
+    "bothBands": "Pembakaran resep mencakup {bands}, sehingga masing-masing diperiksa berdampingan: glasir jarang berperilaku sama di kedua ujung.",
+    "fromFiring": "Angka-angka ini untuk pembakaran resep: {band}. Pilih pembakaran di atas untuk memeriksa yang lain."
   },
   "stull": {
     "heading": "Bagan Stull",
@@ -714,7 +718,8 @@
     "notSaved": "Tidak ada yang disimpan: {problem}",
     "stopped": "Tersimpan {saved} dari {count}. Sisanya tidak disimpan: {problem}",
     "saved": "{count, plural, other {# resep tersimpan.}}",
-    "openRecipes": "Buka resep Anda"
+    "openRecipes": "Buka resep Anda",
+    "firingRead": "Pembakaran yang dibaca dari catatan: {firing}"
   },
   "blends": {
     "title": "Campuran untuk ubin uji",
@@ -847,5 +852,115 @@
     "retry": "Coba lagi",
     "about": "Glazecalc adalah kalkulator glasir gratis untuk pembuat keramik.",
     "aboutLink": "Tentang Glazecalc"
+  },
+  "firing": {
+    "heading": "Pembakaran",
+    "whatIsCone": "Apa arti kerucut?",
+    "scale": "Skala",
+    "scales": {
+      "orton": "Kerucut Orton",
+      "sk": "Kerucut SK (JIS)",
+      "temperature": "Suhu"
+    },
+    "groups": {
+      "usual": "Kerucut 022 sampai 13",
+      "half": "Kerucut setengah nomor",
+      "above": "Kerucut 14 sampai 42 (jarang dalam keramik)"
+    },
+    "coneLabel": "Kerucut",
+    "lowCone": "Dari kerucut",
+    "highCone": "Sampai kerucut",
+    "noHigh": "Tanpa kerucut atas",
+    "notStated": "Tidak disebutkan",
+    "peak": "Suhu puncak ({unit})",
+    "lowTemperature": "Dari ({unit})",
+    "highTemperature": "Sampai ({unit})",
+    "rangeToggle": "Rentang",
+    "testedLegend": "Diuji pada: centang setiap kerucut yang pernah Anda pakai untuk membakarnya",
+    "atmosphere": "Atmosfer",
+    "process": "Proses",
+    "atmospheres": {
+      "oxidation": "oksidasi",
+      "reduction": "reduksi",
+      "neutral": "netral"
+    },
+    "processes": {
+      "wood": "pembakaran kayu",
+      "soda": "pembakaran soda",
+      "salt": "pembakaran garam",
+      "raku": "raku",
+      "pit": "pembakaran lubang"
+    },
+    "rate": "Laju selama satu jam terakhir ({unit} per jam)",
+    "hold": "Tahan pada puncak (menit)",
+    "schedule": "Catatan jadwal",
+    "schedulePlaceholder": "Tahan 10 menit, pendinginan lambat...",
+    "witness": "Dipastikan dengan kerucut saksi",
+    "foodSurface": "Untuk permukaan makanan (glasir lapisan dalam)",
+    "liner": {
+      "note": "Keamanan pangan bergantung pada pembakaran glasir ini sampai kerucut tempat glasir itu diuji: glasir yang kurang matang dapat mengalami pelindian.",
+      "range": "Kerucutnya diberikan sebagai rentang, jadi ujilah pada ujung bawah rentang, tempat glasir paling sedikit meleleh.",
+      "untested": "Belum ada kerucut yang ditandai sebagai sudah diuji.",
+      "test": "Hanya uji pelindian terhadap benda Anda sendiri yang sudah dibakar yang menunjukkan apakah glasir ini aman untuk pangan."
+    },
+    "helpSummary": "Tentang pembakaran",
+    "help": {
+      "cone": "Kerucut tempat Anda membakar glasir ini. Kerucut mengukur kerja panas (heatwork: waktu dan suhu), bukan hanya suhu, jadi suhu kerucut 06 jauh lebih rendah daripada kerucut 6.",
+      "range": "Jika glasir bekerja pada suatu rentang, isi kerucut terendah dan tertinggi, lalu centang kerucut yang benar-benar pernah Anda pakai untuk membakarnya: kerucut yang diuji tampil lebih dulu. Glasir dapat tampak dan berperilaku berbeda di setiap ujung.",
+      "convert": "Kerucut disimpan seperti yang Anda isi. Setiap konversi ke skala lain atau ke suhu hanyalah perkiraan: kerucut menekuk pada suhu yang berbeda pada laju pemanasan yang berbeda, dan kerucut SK dan Orton dengan nomor yang sama tidak sama.",
+      "move": "Memindahkan glasir ke kerucut lain biasanya berarti menyusun ulang formulanya, bukan sekadar membakarnya lebih panas atau lebih dingin. Gandakan untuk kerucut lain menyimpan kedua versi."
+    },
+    "temperatureProblem": "Isi suhu dari {min} sampai {max}.",
+    "rateProblem": "Isi laju sebagai bilangan bulat derajat per jam.",
+    "holdProblem": "Isi waktu tahan dalam menit bulat, paling lama satu hari.",
+    "one": {
+      "orton": "kerucut {cone}",
+      "sk": "SK {cone}"
+    },
+    "span": {
+      "orton": "kerucut {low}–{high}",
+      "sk": "SK {low}–{high}",
+      "temperature": "{low} sampai {high}"
+    },
+    "testedAt": "Diuji pada {cones}",
+    "claimedRange": "rentang yang diklaim {range}",
+    "rangeUntested": "Rentang {range}; belum ada kerucut yang dicentang sebagai sudah diuji",
+    "approxTemperature": "≈ {temperature} ({basis}; perkiraan)",
+    "approxCone": "≈ {cone} ({basis}; perkiraan)",
+    "basis": {
+      "orton60": "kerucut besar Orton pada 60 °C per jam",
+      "kyoto": "diukur pada 100 °C per jam oleh lembaga kota Kyoto",
+      "stated": "sesuai isian"
+    },
+    "rateText": "{rate} per jam selama satu jam terakhir",
+    "holdText": "ditahan {minutes} menit",
+    "witnessText": "diperiksa dengan kerucut saksi",
+    "asGiven": "Pembakaran, seperti yang ditulis pembuatnya:",
+    "filterCone": "Tampilkan resep untuk suatu kerucut",
+    "anyCone": "Kerucut apa pun",
+    "filterAtmosphere": "Tampilkan resep untuk suatu atmosfer atau proses",
+    "anyAtmosphere": "Atmosfer atau proses apa pun",
+    "duplicate": "Gandakan untuk kerucut lain",
+    "duplicateName": "Gandakan {title} untuk kerucut lain",
+    "duplicateTitle": "{title} (kerucut lain)",
+    "duplicateNote": "Salinan {title}, belum disimpan: pilih kerucut barunya di Pembakaran. Memindahkan glasir ke kerucut lain biasanya berarti menyusun ulang formulanya, bukan sekadar membakarnya lebih panas atau lebih dingin, jadi periksa batasnya dan ujilah."
+  },
+  "firings": {
+    "heading": "Catatan pembakaran",
+    "open": "Tautkan catatan pembakaran",
+    "fetchFailed": "Catatan pembakaran Anda tidak dapat diambil.",
+    "noLogs": "Belum ada catatan pembakaran.",
+    "toLogs": "Catat pembakaran",
+    "saveFailed": "Perubahan tautan catatan pembakaran tidak dapat disimpan.",
+    "resultFor": "Hasil di {title}",
+    "resultPlaceholder": "Bagaimana hasilnya: mengilap, tidak retak halus...",
+    "unlink": "Putuskan tautan",
+    "unlinkName": "Putuskan tautan {title}",
+    "choose": "Catatan pembakaran yang akan ditautkan",
+    "link": "Tautkan",
+    "fill": "Centang kerucut yang disebut catatan ini: {cones}",
+    "replaceAsk": "Yang dicentang sebagai sudah diuji sekarang: {now}. Ganti dengan kerucut yang disebut catatan, yaitu {logs}?",
+    "replace": "Ganti",
+    "keep": "Biarkan seperti semula"
   }
 }

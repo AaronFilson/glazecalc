@@ -149,76 +149,76 @@ Pet Poison Helpline nói “Chì độc với mọi loài, nhưng động vật 
 
 Nếu một thú cưng có thể đã ăn hay uống bất cứ thứ gì từ xưởng, hoặc có các dấu hiệu như ở trên, hãy gọi bác sĩ thú y của bạn hoặc một đường dây chống độc cho động vật (xem bảng ở đầu trang), kèm tên nguyên liệu và cân nặng của thú cưng sẵn trong tay.
 
-## The kiln {#the-kiln lang=en}
+## Lò nung {#the-kiln}
 
-### The outside gets hot enough to burn
+### Bên ngoài nóng đủ để gây bỏng
 
-A UK schools risk assessment says a kiln's outside "can reach 160 °C and possibly more" (about 320 °F), and a school kiln guide reports metal bands at up to 460 °F (about 240 °C). Skutt, a kiln maker, recommends a kiln room that can be locked against children and pets. Where a room cannot be locked, the school guide suggests a barrier such as a kiln safety screen.
+Một bản đánh giá rủi ro cho trường học ở Anh nói bên ngoài một lò nung “có thể đạt 160 °C và có thể hơn” (khoảng 320 °F), và một hướng dẫn về lò nung của trường học báo cáo các đai kim loại lên tới 460 °F (khoảng 240 °C). Skutt, một nhà sản xuất lò nung, khuyên dùng một phòng lò có thể khóa để trẻ em và thú cưng không vào được. Khi một phòng không thể khóa, hướng dẫn của trường học gợi ý một rào chắn như tấm chắn an toàn cho lò nung.
 
-Small children and pets cannot understand a warning sign. We suggest keeping them behind a locked door or a barrier while the kiln fires and while it cools, and posting a warning sign for everyone else.
+Trẻ nhỏ và thú cưng không thể hiểu một biển cảnh báo. Chúng tôi gợi ý giữ chúng sau một cánh cửa khóa hoặc một rào chắn khi lò đang nung và trong khi lò đang nguội dần, và đặt một biển cảnh báo cho mọi người khác.
 
-### Space around it
+### Khoảng trống xung quanh
 
-Sources disagree on clearance. Rio Grande says at least 12 inches (30 cm) from walls and anything combustible. L&L strongly recommends 18 inches (46 cm) to all walls, and the building code it cites asks for 3 feet (0.9 m) from combustible walls. Follow your kiln's manual and local fire code; if you are unsure, allow 18 inches from any wall and 3 feet from anything that can burn. In a garage, keep cars, fuel and paint well away.
+Các nguồn không thống nhất về khoảng cách an toàn. Rio Grande nói ít nhất 12 inch (30 cm) từ tường và bất cứ thứ gì dễ cháy. L&L đặc biệt khuyên 18 inch (46 cm) đến mọi bức tường, và quy chuẩn xây dựng mà họ trích dẫn yêu cầu 3 foot (0,9 m) từ các bức tường dễ cháy. Hãy làm theo hướng dẫn sử dụng của lò và quy định phòng cháy địa phương; nếu bạn không chắc, hãy chừa 18 inch từ bất kỳ bức tường nào và 3 foot từ bất cứ thứ gì có thể cháy. Trong nhà để xe, hãy giữ xe, nhiên liệu và sơn ở thật xa.
 
-### Power
+### Điện
 
-Rio Grande recommends a **dedicated circuit** (one that powers nothing else) with a properly grounded outlet. We suggest no extension cord. Between firings, switch off the kiln's breaker or disconnect switch, or unplug it, so a child cannot start it.
+Rio Grande khuyên dùng một **mạch điện riêng** (một mạch không cấp điện cho thứ gì khác) với ổ cắm nối đất đúng cách. Chúng tôi gợi ý không dùng dây nối. Giữa các lần nung, hãy tắt cầu dao hoặc công tắc ngắt của lò, hoặc rút phích cắm, để một đứa trẻ không thể khởi động nó.
 
-### Be there when the firing ends
+### Hãy có mặt khi lần nung kết thúc
 
-A **kiln sitter** is the mechanical switch on many manual kilns: a small cone bends at the end of the firing and trips the switch off. Its manual says it "is NOT intended to perform as a fail-safe shut-off device." Rio Grande says never to leave a firing kiln unattended, "especially near the expected shut-off time". So stay nearby and check the kiln while it fires, above all near the end; fire only when an adult will be home and awake to do that, check that it has switched off, and keep an ABC fire extinguisher in the kiln room. For how sitters, controllers and schedules work, see [Firing a basic kiln](/guides/firing).
+**Kiln-Sitter** là công tắc cơ khí trên nhiều lò thủ công (lò điều khiển bằng tay): một côn nhỏ cong ở cuối lần nung và làm công tắc ngắt. Hướng dẫn sử dụng của nó nói nó “KHÔNG được thiết kế để hoạt động như một thiết bị ngắt an toàn khi có sự cố (fail-safe).” Rio Grande nói tuyệt đối không để một lò đang nung không người trông, “đặc biệt là gần thời điểm tắt dự kiến”. Vì vậy hãy ở gần và kiểm tra lò trong khi nung, nhất là gần lúc kết thúc; chỉ nung khi có một người lớn ở nhà và tỉnh táo để làm việc đó, kiểm tra rằng lò đã tắt, và giữ một bình chữa cháy ABC trong phòng lò. Để biết Kiln-Sitter, bộ điều khiển và đường cong nung hoạt động thế nào, xem [Nung một lò gốm cơ bản](/guides/firing).
 
-### Fumes and carbon monoxide
+### Khói và cacbon monoxit
 
-Firing gives off fumes, so vent the kiln to the outdoors; [Safe mixing and ventilation](/guides/safe-mixing) explains how. A kiln in an attached garage needs venting that keeps fumes from reaching the house through the connecting door. Keep birds in a far room whenever the kiln fires.
+Nung thải ra khói, nên hãy thông gió cho lò ra ngoài trời; [Pha trộn an toàn và thông gió](/guides/safe-mixing) giải thích cách làm. Một lò trong nhà để xe liền kề cần thông gió giữ cho khói không vào nhà qua cửa nối. Hãy giữ chim ở một phòng xa mỗi khi lò đang nung.
 
-**Carbon monoxide** (CO) is a poisonous gas you cannot see or smell. A university kiln safety sheet requires CO alarms with gas kilns. Views differ for electric kilns, but burning off organic matter (in clay, or things like paper or wax) can make CO. We think a CO alarm in the kiln room and the rooms next to it is a sensible, inexpensive step for any kiln.
+**Cacbon monoxit** (CO) là một loại khí độc mà bạn không thể nhìn thấy hay ngửi thấy. Một phiếu an toàn về lò nung của một trường đại học yêu cầu có cảnh báo CO với lò gas. Các quan điểm khác nhau về lò điện, nhưng việc đốt cháy chất hữu cơ (trong đất sét, hoặc những thứ như giấy hay sáp) có thể tạo ra CO. Chúng tôi nghĩ một cảnh báo CO trong phòng lò và các phòng bên cạnh là một bước hợp lý, rẻ tiền cho bất kỳ lò nào.
 
-### Peepholes and eyes
+### Lỗ quan sát và mắt
 
-Infrared light, which you cannot see, "starts at 752°F (400°C)", and the Ceramic Arts Network says looking into a kiln above this should always be done with eye protection. Infrared can damage the lens of the eye and lead to cataracts, and long gazing can injure the retina. Sunglasses and didymium glasses do not block it.
+Ánh sáng hồng ngoại, thứ bạn không nhìn thấy, “bắt đầu từ 752°F (400°C)”, và Ceramic Arts Network nói việc nhìn vào một lò trên mức này luôn nên được thực hiện với đồ bảo vệ mắt. Hồng ngoại có thể làm hỏng thủy tinh thể của mắt và dẫn đến đục thủy tinh thể, và nhìn lâu có thể làm tổn thương võng mạc. Kính râm và kính didymium không chặn được nó.
 
 > [!WARNING]
-> Children should not look into a kiln at all. A glowing peephole draws them, and they will not reliably keep protective glasses on, so keep them away while the kiln is hot. Adults should look only briefly, through IR-rated welding glasses. Sources recommend shades from 1.7 to 5; shade 3 is a sensible choice, darker if you see spots afterward.
+> Trẻ em không nên nhìn vào lò nung chút nào. Một lỗ quan sát đang rực sáng thu hút chúng, và chúng sẽ không đeo kính bảo vệ một cách đáng tin cậy, nên hãy giữ chúng tránh xa khi lò còn nóng. Người lớn chỉ nên nhìn thoáng qua, qua kính hàn chống hồng ngoại. Các nguồn khuyên các độ tối từ 1,7 đến 5; độ tối 3 là lựa chọn hợp lý, tối hơn nếu bạn thấy đốm sau đó.
 
-## Handmade ware on the family table {#handmade-ware lang=en}
+## Đồ gốm thủ công trên bàn ăn gia đình {#handmade-ware}
 
-The question for pots on the family table is **leaching**: metals dissolving out of the fired glaze into food or drink. The FDA warns that if pottery "is not manufactured properly, this lead can leach into food and drink", and that "no amount of washing, boiling, or other process can remove lead from pottery." Regulators such as the US FDA and the EU limit how much lead and cadmium a finished piece releases in a standard acid test, not what the glaze contains. The strictest US limit, for cups, mugs and pitchers, is 0.5 µg/mL of lead.
+Câu hỏi đối với các sản phẩm gốm trên bàn ăn gia đình là **thôi nhiễm**{{en: leaching}}: kim loại hòa tan ra khỏi men đã nung vào thức ăn hoặc đồ uống. FDA cảnh báo rằng nếu đồ gốm “không được sản xuất đúng cách, chì này có thể thôi nhiễm vào thức ăn và đồ uống”, và rằng “không lượng rửa, đun sôi hay quy trình nào khác có thể loại bỏ chì khỏi đồ gốm.” Các cơ quan quản lý như FDA Hoa Kỳ và EU giới hạn lượng chì và cadimi mà một sản phẩm hoàn thiện thôi ra trong một thử nghiệm axit tiêu chuẩn, không phải những gì men chứa. Giới hạn nghiêm ngặt nhất của Mỹ, cho cốc, ly và bình rót, là 0,5 µg/mL chì.
 
-### Lead-free is not the same as food-safe
+### Không chì không đồng nghĩa với an toàn khi tiếp xúc thực phẩm
 
-A glaze with no lead can still leach. Digitalfire, a glaze chemistry reference, names glazes containing "heavy metal oxide colorants, barium, lithium, or lead" as the concern, and warns that a stain fired above its rated temperature can release cadmium. The ASTM D-4236 art-materials label on a jar "DOES NOT establish that a fired glaze is food-safe", and "Tableware producers must test all finished ware to establish dinnerware status."
+Một loại men không có chì vẫn có thể thôi nhiễm. Digitalfire, một trang tham khảo về hóa học men, nêu các loại men chứa “chất tạo màu oxit kim loại nặng, bari, liti hoặc chì” là mối quan ngại, và cảnh báo rằng một bột màu nung trên nhiệt độ định mức của nó có thể giải phóng cadimi. Nhãn vật liệu nghệ thuật ASTM D-4236 trên một lọ “KHÔNG xác lập rằng một loại men đã nung là an toàn khi tiếp xúc thực phẩm”, và “Các nhà sản xuất đồ ăn uống phải thử nghiệm mọi sản phẩm hoàn thiện để xác lập tình trạng đồ ăn uống.”
 
 > [!NOTE]
-> "Food safe" means this glaze, on this clay, fired to this cone, applied this way, releases less than the legal limits. A recipe calculation, Glazecalc's included, can flag a risky recipe but cannot prove a pot is safe. Only a leach test of the fired piece can.
+> “An toàn khi tiếp xúc thực phẩm” có nghĩa là loại men này, trên loại đất sét này, nung đến côn này, phủ theo cách này, thôi ra ít hơn các giới hạn theo luật. Một phép tính công thức men, kể cả của Glazecalc, có thể đánh dấu một công thức men rủi ro nhưng không thể chứng minh một sản phẩm gốm là an toàn. Chỉ một thử nghiệm thôi nhiễm trên sản phẩm đã nung mới làm được.
 
-We suggest reading a "food safe" label on a commercial glaze as a good start, not a guarantee: a different clay, a thicker coat, another cone or a second glaze on top changes the result.
+Chúng tôi gợi ý hãy đọc nhãn “an toàn khi tiếp xúc thực phẩm” trên một loại men thương mại như một khởi đầu tốt, không phải một bảo đảm: một loại đất sét khác, một lớp phủ dày hơn, một côn khác hay một lớp men thứ hai bên trên làm thay đổi kết quả.
 
-### Testing
+### Thử nghiệm
 
-Laboratories test fired pieces with a standard acid soak that represents a worst case, such as ASTM C738 in the US. One lab's EU test needs four identical pieces and takes seven working days, so make spares of anything you plan to have tested.
+Các phòng thí nghiệm thử nghiệm sản phẩm đã nung bằng một lần ngâm axit tiêu chuẩn đại diện cho trường hợp xấu nhất, như ASTM C738 ở Mỹ. Một thử nghiệm của EU tại một phòng thí nghiệm cần bốn sản phẩm giống hệt nhau và mất bảy ngày làm việc, nên hãy làm dự phòng cho bất cứ thứ gì bạn định đem thử nghiệm.
 
-Home tests are disputed. The FDA says home swab kits can show leachable lead, and that a piece that tests positive should not be used for food. Ceramics NZ warns that consumer lead-test pens are "not designed for this use" on ceramics and can give false positives. Digitalfire suggests leaving a lemon slice on the glaze overnight as a rough screen. The safe reading: a positive home test means stop using the piece for food, and a negative one proves nothing. Only a lab can tell you a piece is safe.
+Các thử nghiệm tại nhà bị tranh cãi. FDA nói các bộ que thử tại nhà có thể cho thấy chì thôi nhiễm được, và một sản phẩm cho kết quả dương tính thì không nên dùng cho thực phẩm. Ceramics NZ cảnh báo rằng bút thử chì dành cho người tiêu dùng “không được thiết kế cho việc dùng này” trên đồ gốm và có thể cho kết quả dương tính giả. Digitalfire gợi ý để một lát chanh trên men qua đêm như một phép sàng lọc sơ bộ. Cách đọc an toàn: một thử nghiệm tại nhà dương tính nghĩa là ngừng dùng sản phẩm cho thực phẩm, và một thử nghiệm âm tính không chứng minh được gì. Chỉ một phòng thí nghiệm mới cho bạn biết một sản phẩm là an toàn.
 
-### Crazed ware
+### Đồ gốm bị rạn nứt men
 
-**Crazing** is a network of fine cracks in the glaze surface, and sources disagree about it. A Ceramics Monthly experiment found crazed tiles could be cleaned, best in a dishwasher, though they came out less clean than uncrazed tiles after soap and water. Digitalfire holds that "Crazed ware is unacceptable" and that crazing "severely weakens ware". The safe course is simple: do not use crazed pieces for food.
+**Rạn nứt men**{{en: crazing}} là một mạng lưới các vết nứt nhỏ trên bề mặt men, và các nguồn không thống nhất về nó. Một thí nghiệm của Ceramics Monthly thấy các mẫu bị rạn nứt men có thể được làm sạch, tốt nhất trong máy rửa bát, dù chúng ra kém sạch hơn các mẫu không rạn sau khi dùng xà phòng và nước. Digitalfire cho rằng “Đồ gốm bị rạn nứt men là không chấp nhận được” và rằng rạn nứt men “làm yếu nghiêm trọng đồ gốm”. Cách an toàn thì đơn giản: không dùng các sản phẩm bị rạn nứt men cho thực phẩm.
 
-### Liner glazes
+### Men phủ mặt trong
 
-A **liner glaze** is the glaze on the inside of a cup or bowl, where the food sits. Digitalfire describes a liner that may be low enough in risk to use without lab testing: no colorants, barium, lead or lithium; fully melted; no crazing; and it wears well. Even then, only a leach test of your own fired pots shows whether they are food-safe. Warning signs in any glaze are heavy amounts of colorant, crystals on the surface and poor melting.
+**Men phủ mặt trong** là lớp men ở bên trong một chiếc cốc hay bát, nơi thức ăn nằm. Digitalfire mô tả một loại men phủ mặt trong có thể đủ thấp rủi ro để dùng mà không cần thử nghiệm phòng thí nghiệm: không chất tạo màu, bari, chì hay liti; nóng chảy hoàn toàn; không rạn nứt men; và chịu mài mòn tốt. Ngay cả khi đó, chỉ một thử nghiệm thôi nhiễm trên chính các sản phẩm bạn đã nung mới cho biết chúng có an toàn với thực phẩm hay không. Các dấu hiệu cảnh báo ở bất kỳ loại men nào là lượng lớn chất tạo màu, tinh thể trên bề mặt và nóng chảy kém.
 
-### Family rules we suggest
+### Các quy tắc gia đình chúng tôi gợi ý
 
-- Children's cups, bowls and plates: only lab-tested, durable liner glazes, or commercial dinnerware.
-- Do not store acidic food or drink (citrus, tomato, vinegar, fruit juice, wine) in pots glazed with anything you have not had tested.
-- Do not use crazed pieces for food.
-- Test tiles and experiments stay in the studio, never in the kitchen, the toy box or the pet's bowl.
-- Take care with other pottery too. The FDA advises caution with handmade or crude-looking pieces, antiques, damaged or worn pieces, flea-market finds and bright orange, red or yellow decoration.
-- If a child has used pottery you now doubt, the FDA says to talk to a doctor about a blood lead test.
+- Cốc, bát và đĩa của trẻ em: chỉ men phủ mặt trong bền, đã được thử nghiệm phòng thí nghiệm, hoặc đồ ăn uống thương mại.
+- Không cất thức ăn hay đồ uống có tính axit (cam quýt, cà chua, giấm, nước ép trái cây, rượu vang) trong các sản phẩm gốm tráng bằng bất cứ thứ gì bạn chưa đem thử nghiệm.
+- Không dùng các sản phẩm bị rạn nứt men cho thực phẩm.
+- Mẫu thử men và đồ làm thử ở lại xưởng, tuyệt đối không ở nhà bếp, thùng đồ chơi hay bát của thú cưng.
+- Cũng hãy cẩn thận với các loại đồ gốm khác. FDA khuyên thận trọng với các sản phẩm thủ công hoặc trông thô, đồ cổ, các sản phẩm hư hại hoặc mòn, đồ mua ở chợ trời và các trang trí màu cam, đỏ hoặc vàng sáng.
+- Nếu một đứa trẻ đã dùng đồ gốm mà bây giờ bạn nghi ngờ, FDA nói hãy nói chuyện với bác sĩ về xét nghiệm chì trong máu.
 
-For more on how glazes melt, why some leach and what the limits mean, see [Glazing from first principles](/guides/glazing-basics).
+Để biết thêm về cách men nóng chảy, vì sao một số men thôi nhiễm và các giới hạn có nghĩa là gì, xem [Tráng men từ những nguyên lý đầu tiên](/guides/glazing-basics).
 
 ## Nguồn {#sources}
 
