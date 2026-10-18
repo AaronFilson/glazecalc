@@ -3,6 +3,7 @@ import AccessToken, { revokeAll } from '../models/access_token.ts';
 import User, { type UserDocument } from '../models/user.ts';
 import { hashToken, kindOf, mintToken, verifyAccessToken } from '../lib/token_auth.ts';
 import { allows, scopeFor, SCOPES } from '../lib/scopes.ts';
+import { MCP_LIMITS } from '../lib/rate_limit.ts';
 import { api, expect, makeUser } from './support/app.ts';
 import { makeToken } from './support/tokens.ts';
 import * as mail from './support/mail.ts';
@@ -134,6 +135,27 @@ describe('access tokens: routes', () => {
     expect(refused.headers['www-authenticate']).to.include('scope="data:write"');
     expect(refused.body.code).to.equal('token-scope');
     expect(refused.headers['set-cookie']).to.equal(undefined);
+  });
+
+  it('allows an account 120 token requests a minute, as the MCP endpoint does, and does not count the website', async function () {
+    this.timeout(30000);
+    const token = await makeToken(user, { scopes: ['data:read'] });
+    const getAll = (as: string) => api().get('/recipe/getAll').set('Authorization', bearer(as));
+    process.env.RATE_LIMITS = 'on';
+    try {
+      for (let i = 0; i < MCP_LIMITS.minute.account; i++) expect(await getAll(token)).to.have.status(200);
+      const over = await getAll(token);
+      expect(over).to.have.status(429);
+      expect(over.body.code).to.equal('too-many-attempts');
+      // Per account: another of its tokens is held up too, the website is not,
+      // and nor is another account.
+      expect(await getAll(await makeToken(user, { scopes: ['data:read'] }))).to.have.status(429);
+      expect(await getAll(session)).to.have.status(200);
+      const other = await makeUser();
+      expect(await getAll(await makeToken(other.user, { scopes: ['data:read'] }))).to.have.status(200);
+    } finally {
+      process.env.RATE_LIMITS = 'off';
+    }
   });
 
   it('creates, changes and deletes records with data:write, as the token’s owner', async () => {

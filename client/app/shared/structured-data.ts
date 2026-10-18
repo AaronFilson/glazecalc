@@ -1,6 +1,6 @@
 import { DOCUMENT } from '@angular/common';
 import { Component, DestroyRef, Renderer2, effect, inject, input } from '@angular/core';
-import { PAGE_LANGUAGE, pathIn } from '../i18n/language';
+import { pathIn } from '../i18n/language';
 
 /** Where the site lives. The prerender has no server to ask, and search wants whole addresses. */
 export const SITE = 'https://glazecalcapp.com';
@@ -80,10 +80,4 @@ export class StructuredData {
     });
     inject(DestroyRef).onDestroy(() => script?.remove());
   }
-}
-
-/** The language and the address of the page, for the data about it. */
-export function pageIdentity(): { language: string; address: string } {
-  const language = inject(PAGE_LANGUAGE);
-  return { language, address: pageAddress(language, inject(DOCUMENT).location.pathname) };
 }

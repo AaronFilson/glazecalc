@@ -122,6 +122,25 @@ export const tokenDeletes = limiter(60, 100, 'too-many-deletes', {
 });
 
 /**
+ * Every request made with an access token (server/lib/require_scope.ts: the
+ * record, Trash and firing-link routes), per account, whichever of its tokens
+ * is used: the same figures as the MCP endpoint's with a token (MCP_LIMITS),
+ * 120 a minute and 5,000 a day. Each change keeps a version and writes the
+ * activity log, so a script gone wrong is stopped before it does much. The
+ * web session is not counted. tokenDeletes still bounds deletes on top.
+ */
+const tokenKey = (req: Request): string => 'token:' + String(req.user?._id);
+const viaToken = (req: Request): boolean => Boolean(req.access) && req.access?.via !== 'session';
+export const tokenMinute = limiter(1, () => MCP_LIMITS.minute.account, 'too-many-attempts', {
+  skip: (req) => !viaToken(req),
+  keyGenerator: tokenKey
+});
+export const tokenDay = limiter(24 * 60, () => MCP_LIMITS.day.account, 'too-many-attempts', {
+  skip: (req) => !viaToken(req),
+  keyGenerator: (req) => tokenKey(req) + ':day'
+});
+
+/**
  * Recipes opened by share link (GET /api/shared/recipe), per address: loose,
  * for a class opening one teacher's links behind a school's one address, but
  * not without end, since anyone may ask.

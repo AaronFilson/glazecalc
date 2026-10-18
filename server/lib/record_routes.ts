@@ -28,6 +28,7 @@
 import express, { type Request, type Response } from 'express';
 import mongoose from 'mongoose';
 import RecordVersion from '../models/record_version.ts';
+import { standardSet } from './standard_library.ts';
 import { giveBack, quota, type RecordModel } from './guest_limits.ts';
 import { userOf } from './jwt_auth.ts';
 import * as log from './log.ts';
@@ -187,6 +188,8 @@ export default function recordRoutes(
       recordId: req.params.id
     })
       .sort({ savedAt: -1, _id: -1 })
+      // The list shows only each version's title.
+      .select({ savedAt: 1, by: 1, 'record.title': 1, 'record.name': 1 })
       .lean();
     res
       .status(200)
@@ -224,7 +227,11 @@ export default function recordRoutes(
     router.get('/getStandard', async (req, res) => {
       // The standard records are public (they ship in data/); browsers may reuse them briefly.
       res.set('Cache-Control', 'public, max-age=300');
-      res.status(200).json(await Model.find({ ownedBy: 'Standard' }));
+      // Read once and kept a while, serialised (server/lib/standard_library.ts).
+      res
+        .status(200)
+        .type('json')
+        .send((await standardSet(Model)).body);
     });
   }
 

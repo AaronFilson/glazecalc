@@ -21,6 +21,7 @@ import Additive from '../models/additive.ts';
 import Material from '../models/material.ts';
 import Recipe from '../models/recipe.ts';
 import ShareLink from '../models/share_link.ts';
+import { forgetStandardSets, standardSet, type StandardSet } from './standard_library.ts';
 
 type Row = Record<string, unknown>;
 
@@ -135,41 +136,35 @@ const byName = (records: Row[]): Map<string, Row> => {
 };
 
 /**
- * The standard additives and materials by name, kept for a while: they ship
- * in data/ and do not change while the app runs.
+ * The standard additives and materials by name, from the copy
+ * server/lib/standard_library.ts keeps (read again every few minutes, so a
+ * deploy's seed shows), made again only when that copy is new.
  */
-const STANDARDS_KEPT_MS = 10 * 60 * 1000;
 interface Standards {
   additives: Map<string, Row>;
   materials: Map<string, Row>;
   /** Each standard record's hazards by its id, '' where it gives none. */
   hazards: Map<string, string>;
 }
-let standards: { at: number; maps: Promise<Standards> } | undefined;
+let standards: { from: [StandardSet, StandardSet]; maps: Standards } | undefined;
 
 /** Forgets the standard records kept (for tests that change them). */
 export const forgetStandards = (): void => {
   standards = undefined;
+  forgetStandardSets();
 };
 
-function standardRecords(): Promise<Standards> {
-  if (!standards || Date.now() - standards.at > STANDARDS_KEPT_MS) {
-    const maps = Promise.all([
-      Additive.find({ ownedBy: 'Standard' }, { ...MORE, hazards: 1 }).lean(),
-      Material.find({ ownedBy: 'Standard' }, { ...MORE, hazards: 1 }).lean()
-    ]).then(([additives, materials]) => {
-      const hazards = new Map<string, string>();
-      for (const record of [...additives, ...materials] as Row[]) {
-        hazards.set(String(record._id), isText(record.hazards) ? record.hazards : '');
-      }
-      return { additives: byName(additives as Row[]), materials: byName(materials as Row[]), hazards };
-    });
-    maps.catch(() => {
-      standards = undefined;
-    });
-    standards = { at: Date.now(), maps };
+async function standardRecords(): Promise<Standards> {
+  const from = await Promise.all([standardSet(Additive), standardSet(Material)]);
+  if (standards && standards.from[0] === from[0] && standards.from[1] === from[1]) return standards.maps;
+  const [additives, materials] = from.map((set) => set.rows);
+  const hazards = new Map<string, string>();
+  for (const record of [...additives!, ...materials!]) {
+    hazards.set(String(record._id), isText(record.hazards) ? record.hazards : '');
   }
-  return standards.maps;
+  const maps = { additives: byName(additives!), materials: byName(materials!), hazards };
+  standards = { from: [from[0]!, from[1]!], maps };
+  return maps;
 }
 
 /** The owner's records of one kind that have any of the names (case aside); no others are read. */

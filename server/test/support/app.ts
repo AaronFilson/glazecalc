@@ -11,6 +11,7 @@ import chaiHttp, { request } from 'chai-http';
 import mongoose from 'mongoose';
 import app from '../../app.ts';
 import User from '../../models/user.ts';
+import { forgetStandardSets } from '../../lib/standard_library.ts';
 
 chai.use(chaiHttp);
 
@@ -28,6 +29,8 @@ export const mochaHooks = {
     await mongoose.connection.dropDatabase();
     // Built before any test, so the unique email index is there from the start.
     await mongoose.syncIndexes();
+    // The standard records kept from an earlier file in this worker are not in this database.
+    forgetStandardSets();
     server = http.createServer(app);
     await new Promise<void>((resolve) => server.listen(0, '127.0.0.1', resolve));
   },

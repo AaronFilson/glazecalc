@@ -19,7 +19,11 @@ export const DEFAULT_PAT_EXPIRY_DAYS = 30;
 export const REMINDER_DAYS_BEFORE = 7;
 /** At most this many personal tokens in use on one account. */
 export const MAX_PATS = 10;
-/** An OAuth access token lasts an hour; its grant's refresh token 60 days, renewed as it rotates. */
+/**
+ * An OAuth access token lasts an hour; its grant's refresh token 60 days, renewed as it rotates.
+ * Nothing issues OAuth tokens yet: these are for the assistants' authorization server
+ * (docs/integrations-plan.md, item 33).
+ */
 export const OAUTH_ACCESS_SECONDS = 60 * 60;
 export const OAUTH_REFRESH_DAYS = 60;
 /**

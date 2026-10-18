@@ -4,6 +4,7 @@
 // use it takes no token (jwtAuth refuses them): default deny.
 import type { NextFunction, Request, Response } from 'express';
 import jwtAuth from './jwt_auth.ts';
+import { tokenDay, tokenMinute } from './rate_limit.ts';
 import { allows, isScope, scopeFor, type Permission } from './scopes.ts';
 import { accessTokenIn, checkAccessToken, insufficientScope, invalidToken, touchToken } from './token_auth.ts';
 
@@ -25,7 +26,8 @@ export const requireScope =
       permission
     };
     // Trials never hold a token, so the trial's smaller body limit does not apply here.
-    next();
+    // Then the token requests' limits, per account (server/lib/rate_limit.ts).
+    await tokenMinute(req, res, (error?: unknown) => (error ? next(error) : tokenDay(req, res, next)));
   };
 
 export default requireScope;

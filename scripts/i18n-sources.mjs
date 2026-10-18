@@ -15,11 +15,23 @@
 //   node scripts/i18n-sources.mjs          writes them, then brings each
 //                                          translation into step with its
 //                                          English (scripts/i18n-fingerprints.mjs)
+//   ... --dry-run                          says what it would change, and changes
+//                                          nothing
+//   ... --force                            runs even with translations not yet
+//                                          committed (see below)
+//
+// Bringing translations into step takes out every one made from older
+// English, so it refuses to run while a translation (a language's file other
+// than English, under client/public/i18n or client/i18n-fingerprints) has
+// changes git has not committed: commit them first, or they could be lost.
+// Changed English files are fine, as changing the English is how it starts.
 //   (npm run check:i18n checks they are current)
 //
 // The app shows these messages by their code; a language's file beside the
 // English translates them.
-import { readFileSync, writeFileSync } from 'node:fs';
+import { execFileSync } from 'node:child_process';
+import { cpSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
+import os from 'node:os';
 import { createRequire } from 'node:module';
 import path from 'node:path';
 import { pathToFileURL } from 'node:url';
@@ -74,13 +86,71 @@ export async function sources() {
   };
 }
 
+/**
+ * Translation files (not English) with changes git has not committed, under
+ * the given paths relative to the repository; null when git cannot say.
+ */
+export function uncommittedTranslations(paths = ['client/public/i18n', 'client/i18n-fingerprints'], cwd = ROOT) {
+  let out;
+  try {
+    out = execFileSync('git', ['status', '--porcelain', '--untracked-files=all', '--', ...paths], {
+      cwd,
+      encoding: 'utf8',
+      stdio: ['ignore', 'pipe', 'ignore']
+    });
+  } catch {
+    return null;
+  }
+  return out
+    .split('\n')
+    .filter((line) => line.trim())
+    .map((line) => line.slice(3).replace(/^"|"$/g, '').split(' -> ').pop())
+    .filter((file) => !/(^|\/)en\.(json|md)$/.test(file));
+}
+
 if (import.meta.url === pathToFileURL(process.argv[1] ?? '').href) {
-  for (const [file, text] of Object.entries(await sources())) writeFileSync(path.join(I18N, file), text);
+  const args = process.argv.slice(2);
+  const dryRun = args.includes('--dry-run');
+  // --keep recipe:print.title: an English change that keeps the meaning keeps its translations.
+  const keep = args.flatMap((arg, i) => (args[i - 1] === '--keep' ? [arg] : []));
+  const written = await sources();
+
+  if (dryRun) {
+    // The same run on a copy, so nothing here changes.
+    const copy = mkdtempSync(path.join(os.tmpdir(), 'glazecalc-i18n-'));
+    try {
+      cpSync(I18N, copy, { recursive: true });
+      for (const [file, text] of Object.entries(written)) {
+        if (text !== readFileSync(path.join(I18N, file), 'utf8')) console.log('Would write ' + file + '.');
+        writeFileSync(path.join(copy, file), text);
+      }
+      const { changes } = updateTranslations({ dir: copy, keep, write: false });
+      for (const change of changes) console.log('Would change: ' + change);
+      console.log(
+        changes.length ? 'Nothing was changed (--dry-run).' : 'The translations are in step with the English.'
+      );
+    } finally {
+      rmSync(copy, { recursive: true, force: true });
+    }
+    process.exit(0);
+  }
+
+  const uncommitted = uncommittedTranslations();
+  if (uncommitted === null) {
+    console.warn('git could not say whether any translations are uncommitted; going on.');
+  } else if (uncommitted.length && !args.includes('--force')) {
+    console.error(
+      'These translations have changes not yet committed, and this could take some of them out:\n  ' +
+        uncommitted.join('\n  ') +
+        '\nCommit them first, see what would change with --dry-run, or run with --force.'
+    );
+    process.exit(1);
+  }
+
+  for (const [file, text] of Object.entries(written)) writeFileSync(path.join(I18N, file), text);
   console.log(
     "Wrote the English of the server's, the chemistry's, who to call's, the region data's and the standard records' messages."
   );
-  // --keep recipe:print.title: an English change that keeps the meaning keeps its translations.
-  const keep = process.argv.flatMap((arg, i, args) => (args[i - 1] === '--keep' ? [arg] : []));
   const { changes } = updateTranslations({ keep });
   for (const change of changes) console.log(change);
   console.log(
