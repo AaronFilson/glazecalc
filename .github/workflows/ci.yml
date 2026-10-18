@@ -258,6 +258,9 @@ jobs:
       APP_URL: http://ci.example
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          # Nothing here pushes; the image's build cannot read a token from .git/config.
+          persist-credentials: false
 
       - name: Build
         run: docker compose build

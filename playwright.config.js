@@ -46,7 +46,9 @@ module.exports = defineConfig({
   webServer: {
     command: 'node scripts/e2e-build.mjs && node server/main.ts',
     url: 'http://localhost:' + port + '/api/health',
-    timeout: 300000,
+    // The build comes first when dist/ is out of date: up to 5 minutes here, 10
+    // in CI, where every run builds on a shared runner.
+    timeout: process.env.CI ? 600000 : 300000,
     reuseExistingServer: false,
     env: {
       PORT: port,
