@@ -3,79 +3,79 @@ title: Apdedzināšana vienkāršā krāsnī
 lead: Kā apdedzināt elektrisko krāsni ar Kiln-Sitter slēdzi vai manuāliem slēdžiem: konusu izvēle, novietošana un nolasīšana, kā arī publicētas biskvīta un glazūras apdedzināšanas programmas.
 ---
 
-## Cones: what they measure {#cones lang=en}
+## Konusi: ko tie mēra {#cones}
 
 > [!NOTE]
-> Follow your kiln's own manual first. This guide gathers what cone and kiln makers publish about basic electric kilns; it does not replace the instructions for your model, and where the two differ, the manual wins.
+> Vispirms ievērojiet savas krāsns lietošanas instrukciju. Šajā ceļvedī apkopots tas, ko konusu un krāsnu ražotāji publicē par vienkāršām elektriskajām krāsnīm; tas neaizstāj jūsu modeļa instrukcijas, un, ja ceļvedis un lietošanas instrukcija atšķiras, noteicošā ir instrukcija.
 
-A **pyrometric cone** is a small, slender pyramid made from a standardized ceramic powder. When it has had enough heat, it softens and bends over in a repeatable way. You set cones in the kiln beside the ware and read how far they bent.
+**Temperatūras kontroles konuss**{{en: pyrometric cone}} ir maza, slaida piramīda no standartizēta keramikas pulvera. Kad konuss saņēmis pietiekami daudz siltuma, tas kļūst mīksts un noliecas atkārtojamā veidā. Konusus novietojat krāsnī blakus izstrādājumiem un pēc tam nolasāt, cik tālu tie saliekušies.
 
-Cones measure **heatwork**, the combined effect of temperature and time. In the words of Orton, the main US cone maker, "Cones do not measure temperature alone." A cone heated slowly bends at a lower temperature than one heated fast, and a glaze behaves the same way. So Orton gives each cone's temperature for a stated heating rate over the last {{180 °F; 100 °C}} of the firing. Once a cone starts to move, it bends over a narrow range, "usually less than 40° F" (22 °C).
+Konusi mēra **siltuma iedarbību**{{en: heatwork}}, temperatūras un laika kopējo iedarbību. Kā raksta galvenais ASV konusu ražotājs Orton: “Konusi nemēra tikai temperatūru.” Lēni karsēts konuss saliecas zemākā temperatūrā nekā ātri karsēts, un glazūra{{en: glaze}} uzvedas tāpat. Tāpēc Orton katra konusa temperatūru norāda noteiktam sildīšanas ātrumam apdedzināšanas pēdējo {{180 °F; 100 °C}} laikā. Kad konuss sāk kustēties, tas noliecas šaurā temperatūras intervālā, “parasti mazāk nekā 40° F” (22 °C).
 
-### Cone numbers
+### Konusu numuri
 
-Cone numbers run from 022, the coolest, up to 42. A leading zero marks the cooler series and is read as "oh": cone 06 ("oh-six") is cooler than cone 04, and cone 01 needs less heat than cone 1. Orton warns that it is important not to mix the two series up. The gap is large: cone 06 bends more than {{400 °F; 220 °C}} cooler than cone 6.
+Konusu numuri ir no 022, vēsākā, līdz 42. Nulle numura sākumā apzīmē vēsāko sēriju, un to izrunā kā “nulle”: konuss 06 (“nulle seši”) ir vēsāks nekā konuss 04, un konusam 01 vajag mazāk siltuma nekā konusam 1. Orton brīdina, ka abas sērijas ir svarīgi nesajaukt. Atšķirība ir liela: konuss 06 saliecas par vairāk nekā {{400 °F; 220 °C}} zemākā temperatūrā nekā konuss 6.
 
-Table: Common firing ranges, for self-supporting cones at {{108 °F/h; 60 °C/h}}
-Label: Firing ranges
+Table: Biežākie apdedzināšanas diapazoni pašstāvošiem konusiem, sildot ar ātrumu {{108 °F/h; 60 °C/h}}
+Label: Apdedzināšanas diapazoni
 
-| Range     | Cones |                    Temperature | Typical use                              |
-| --------- | ----- | -----------------------------: | ---------------------------------------- |
-| Low fire  | 06–04 |  {{1828–1945 °F; 998–1063 °C}} | Earthenware glazes; bisque               |
-| Mid fire  | 5–6   | {{2167–2232 °F; 1186–1222 °C}} | Electric-kiln stoneware and porcelain    |
-| High fire | 9–10  | {{2300–2345 °F; 1260–1285 °C}} | Mostly gas-fired stoneware and porcelain |
+| Diapazons            | Konusi |                    Temperatūra | Tipisks lietojums                                                  |
+| -------------------- | ------ | -----------------------------: | ------------------------------------------------------------------ |
+| Zemas temperatūras   | 06–04  |  {{1828–1945 °F; 998–1063 °C}} | Māla keramikas{{en: earthenware}} glazūras; biskvīts{{en: bisque}} |
+| Vidējas temperatūras | 5–6    | {{2167–2232 °F; 1186–1222 °C}} | Akmens masa{{en: stoneware}} un porcelāns elektriskajā krāsnī      |
+| Augstas temperatūras | 9–10   | {{2300–2345 °F; 1260–1285 °C}} | Galvenokārt akmens masa un porcelāns gāzes krāsnī                  |
 
-Suppliers in the UK, Europe, Australia and New Zealand often give a temperature in °C rather than a cone: find the nearest cone in the chart below and confirm it with a witness cone. Seger and Staffordshire cones, the older European series, should not be assumed to share Orton's numbers, so this guide uses Orton cones.
+Apvienotās Karalistes, Eiropas, Austrālijas un Jaunzēlandes piegādātāji bieži norāda temperatūru °C, nevis konusu: atrodiet tuvāko konusu tabulā zemāk un pārbaudiet to ar kontrolkonusu{{en: witness cone}}, konusu uz plaukta blakus izstrādājumiem. Nevajadzētu pieņemt, ka Zēgera konusiem un Staffordshire konusiem, vecākajām Eiropas sērijām, ir tādi paši numuri kā Ortona konusiem, tāpēc šajā ceļvedī izmantoti Ortona konusi.
 
-### Holding adds heatwork
+### Noturēšana palielina siltuma iedarbību
 
-A **hold** (also called a **soak**) keeps the kiln at one temperature for a while. Because cones measure heatwork, a hold at the top can stand in for a hotter peak. Orton gives these rough equivalents:
+**Noturēšana**{{en: hold}}, saukta arī par **temperatūras noturēšanu**, kādu laiku uztur krāsnī vienu temperatūru. Tā kā konusi mēra siltuma iedarbību, noturēšana maksimālajā temperatūrā var aizstāt augstāku maksimālo temperatūru. Orton sniedz šādas aptuvenas atbilstības:
 
-Table: What a hold at the peak is worth
-Label: Holds and heatwork
+Table: Ko dod noturēšana maksimālajā temperatūrā
+Label: Noturēšana un siltuma iedarbība
 
-| Hold             | Roughly the same heatwork as             |
-| ---------------- | ---------------------------------------- |
-| About 20 minutes | A peak {{18 °F; 10 °C}} hotter           |
-| 40–60 minutes    | A peak {{36 °F; 20 °C}} hotter           |
-| About 2 hours    | A peak {{54 °F; 30 °C}} hotter           |
-| 4–6 hours        | Enough to bend a cone two numbers hotter |
+| Noturēšana        | Aptuveni tāda pati siltuma iedarbība kā                            |
+| ----------------- | ------------------------------------------------------------------ |
+| Apmēram 20 minūšu | Par {{18 °F; 10 °C}} augstāka maksimālā temperatūra                |
+| 40–60 minūšu      | Par {{36 °F; 20 °C}} augstāka maksimālā temperatūra                |
+| Apmēram 2 stundas | Par {{54 °F; 30 °C}} augstāka maksimālā temperatūra                |
+| 4–6 stundas       | Pietiek, lai saliektos konuss, kas ir par diviem numuriem karstāks |
 
-Orton adds that a hold of 1–2 hours "may be sufficient to deform the next higher cone number".
+Orton piebilst, ka 1–2 stundu noturēšana “var pietikt, lai deformētos nākamais konuss, kas ir par vienu numuru karstāks”.
 
-So a hold is never free: if you add one, expect the cones to bend further, and lower the peak to match.
+Tātad noturēšana nekad nav par brīvu: ja to pievienojat, rēķinieties, ka konusi salieksies vairāk, un attiecīgi pazeminiet maksimālo temperatūru.
 
-### Kinds of cone
+### Konusu veidi
 
-Orton makes four kinds. Two stand on the shelf to show what the ware received; two are for the kiln sitter.
+Orton ražo četrus konusu veidus. Divi stāv uz plaukta un parāda, ko saņēmuši izstrādājumi; divi ir paredzēti Kiln-Sitter slēdzim.
 
-Table: Orton's four kinds of cone
-Label: Kinds of cone
+Table: Četri Ortona konusu veidi
+Label: Konusu veidi
 
-| Kind            | Used for                  | How it stands                                                                               |
-| --------------- | ------------------------- | ------------------------------------------------------------------------------------------- |
-| Self-supporting | Witness cone on the shelf | A built-in base sets the height, 1¾ in (44 mm), and the 8° lean; no holder needed           |
-| Large           | Witness cone on the shelf | Set in a plaque or a pat of clay with exactly 2 in (51 mm) showing, leaning 8° from upright |
-| Small (junior)  | Kiln sitter               | Lies across the sitter's supports; 15/16 in (24 mm) showing if stood on a shelf             |
-| Bar             | Kiln sitter               | The same powder as small cones, in an even bar shape                                        |
+| Veids           | Lietojums                | Kā tas stāv                                                                                                  |
+| --------------- | ------------------------ | ------------------------------------------------------------------------------------------------------------ |
+| Pašstāvošs      | Kontrolkonuss uz plaukta | Iebūvēta pamatne nosaka augstumu, 1¾ collas (44 mm), un 8° slīpumu; turētājs nav vajadzīgs                   |
+| Lielais         | Kontrolkonuss uz plaukta | Iesprausts plāksnītē vai māla pikā tā, lai būtu redzamas tieši 2 collas (51 mm), ar 8° slīpumu no vertikāles |
+| Mazais (junior) | Kiln-Sitter slēdzis      | Guļ pāri Kiln-Sitter balstiem; ja to nostāda uz plaukta, redzamas 15/16 collas (24 mm)                       |
+| Stienītis       | Kiln-Sitter slēdzis      | Tas pats pulveris kā mazajiem konusiem, vienmērīgas formas stienītī                                          |
 
-Height matters: a ¼ in (6 mm) difference in the height of a large cone "can cause more than a half cone difference in bending". Cones do not go bad or age, and damp storage does not affect them.
+Augstums ir svarīgs: ja lielā konusa augstums atšķiras par ¼ collas (6 mm), tas “var radīt saliekšanās atšķirību, kas lielāka par pusi konusa”. Konusi nebojājas un nenoveco, un mitra uzglabāšana tos neietekmē.
 
-### What "cone 6" means in practice
+### Ko praksē nozīmē “konuss 6”
 
-The chart gives a self-supporting cone 6 as {{2232 °F; 1222 °C}}, but only when the last {{180 °F; 100 °C}} climbs at {{108 °F/h; 60 °C/h}}. Climbing at {{270 °F/h; 150 °C/h}}, the same cone bends at {{2269 °F; 1243 °C}}. Real kilns differ again: Digitalfire reports that "Most kilns reach cone 6 at 2200°F, not 2232°F". So "cone 6" means the ware received the heatwork that bends a cone 6, whatever a thermometer read at the time.
+Tabulā pašstāvošam konusam 6 norādīts {{2232 °F; 1222 °C}}, bet tikai tad, ja pēdējo {{180 °F; 100 °C}} laikā temperatūra kāpj ar ātrumu {{108 °F/h; 60 °C/h}}. Ja tā kāpj ar ātrumu {{270 °F/h; 150 °C/h}}, tas pats konuss saliecas {{2269 °F; 1243 °C}} temperatūrā. Īstas krāsnis atkal atšķiras: Digitalfire ziņo, ka “Lielākā daļa krāsnu konusu 6 sasniedz 2200°F, nevis 2232°F temperatūrā”. Tātad “konuss 6” nozīmē, ka izstrādājumi saņēmuši tādu siltuma iedarbību, kas saliec konusu 6, lai ko tobrīd rādītu termometrs.
 
 :::orton
 
 > [!NOTE]
-> Fire by the cone, not the clock or the dial. Set a controller by cone number, and let a witness cone on the shelf confirm every firing.
+> Apdedziniet pēc konusa, nevis pēc pulksteņa vai skalas. Kontrolierim iestatiet konusa numuru un ļaujiet kontrolkonusam uz plaukta apstiprināt katru apdedzināšanu.
 
 :::
 
 :::temperature
 
 > [!NOTE]
-> Firing by temperature, keep the end of every firing the same: the same last rate of climb, the same peak and the same hold. Then a glaze that worked once works again.
+> Ja apdedzināt pēc temperatūras, veidojiet katras apdedzināšanas beigas vienādas: tas pats pēdējais sildīšanas ātrums, tā pati maksimālā temperatūra un tā pati noturēšana. Tad glazūra, kas izdevās vienreiz, izdosies atkal.
 
 :::
 
@@ -596,22 +596,22 @@ Ja Kiln-Sitter nostrādā, pirms konusi uz plaukta ir noliekušies, nākamreiz, 
 
 **Pirometrs** ir temperatūras mērītājs, kas rāda **termopāra** – caur krāsns sienu ievadīta temperatūras sensora – rādījumu. Tas rāda, cik ātri krāsns sildās, tāpēc varat izvēlēties pareizo konusu tabulas kolonnu. Taču tas mēra pie sienas, nevis pie izstrādājumiem, un tā rādījumi laika gaitā nobīdās. L&L norāda, ka K tipa termopāris pēc atkārtotām apdedzināšanām līdz konusam 6 var kļūdīties par vairāk nekā {{25 °F; 14 °C}}, “atšķirība, kas lielāka par veselu konusu”, bet pašstāvoša konusa svārstības nepārsniedz {{4 °F; 2 °C}}. Orton raksta, ka pirometri laiku pa laikam ir jākalibrē no jauna un ka tos pārbauda ar konusiem.
 
-## Venting, peeking and safety {#venting lang=en}
+## Vēdināšana, ieskatīšanās un drošība {#venting}
 
-### Venting
+### Vēdināšana
 
-Early in a firing, clay and glaze give off water vapor and fumes, including carbon monoxide, and glazes can give off toxic fumes later in the firing too. L&L calls venting them "essential". With no vent system, that means the lid propped and the peepholes open in the early stages, as in the procedures above; slowing the heating during this time also helps the carbon burn out. In a kiln without a vent, Dawson, who made the sitter, also says to leave the top peephole open for the whole firing: the venting "will reduce deterioration of the kiln's metal parts and increase the life of the tube assembly". A **downdraft vent** (a powered vent fitted to the kiln) changes this. It does the venting, so Orton says the lid and peepholes stay closed for the whole firing except to check the cones, and L&L says to leave the vent on and plug the peepholes.
+Apdedzināšanas sākumā māls un glazūra{{en: glaze}} izdala ūdens tvaiku, kā arī izplūdes gāzes un tvaikus, tostarp oglekļa monoksīdu (tvana gāzi), un glazūras toksiskas gāzes un tvaikus var izdalīt arī vēlāk apdedzināšanas gaitā. L&L to izvadīšanu sauc par “būtisku”. Ja nosūces sistēmas nav, tas nozīmē, ka sākuma posmos vāks ir pavērts un skatlodziņi atvērti, kā iepriekš aprakstītajās procedūrās; sildīšanas palēnināšana šajā laikā arī palīdz izdegt ogleklim. Ja krāsnij nav nosūces, Dawson, kas izgatavojis Kiln-Sitter, arī norāda visu apdedzināšanu atstāt atvērtu augšējo skatlodziņu: nosūce “samazinās krāsns metāla daļu bojāšanos un pagarinās caurulītes mezgla kalpošanas laiku”. **Nosūcējs no krāsns apakšas** (pie krāsns piestiprināts nosūcējs ar motoru) to maina. Tas pats veic nosūkšanu, tāpēc, pēc Ortona teiktā, vāks un skatlodziņi visu apdedzināšanu paliek aizvērti, izņemot brīžus, kad pārbauda konusus, un L&L norāda atstāt nosūcēju ieslēgtu un skatlodziņus aizbāzt.
 
-For venting the room, and for carbon monoxide alarms, see [Safe mixing and ventilation](/guides/safe-mixing) and [Don't poison your family](/guides/home-safety).
+Par telpas vēdināšanu un tvana gāzes detektoriem skatiet ceļvežus [Droša jaukšana un ventilācija](/guides/safe-mixing) un [Nesaindējiet savu ģimeni](/guides/home-safety).
 
-### While the kiln is firing
+### Krāsns darbības laikā
 
-- Look through a peephole only with IR-rated shade 3 welding glasses; sunglasses are not enough. Skutt advises twisting the plugs into place so they do not fall out.
-- Do not leave the kiln unattended beyond its expected firing time; a sitter is not a fail-safe.
-- Never fire on or near anything that burns, such as a wood floor or carpet.
-- Keep the clearances in your manual. Published figures range from 12 in (30 cm) to 3 ft (91 cm); where the manual is silent, 18 in (46 cm) from walls and 3 ft (91 cm) from anything that burns is the safest choice.
-- Keep the space around the sitter's weight clear so it can drop.
-- When the firing ends, turn the switches off and turn off the breaker as well.
+- Caur skatlodziņu skatieties tikai ar metināšanas aizsargbrillēm ar aizsardzību pret infrasarkano (IS) starojumu un tumšuma pakāpi 3; saulesbrilles nav pietiekamas. Skutt iesaka aizbāžņus ievietot ar pagriezienu, lai tie neizkristu.
+- Neatstājiet krāsni bez uzraudzības ilgāk par paredzamo apdedzināšanas laiku; Kiln-Sitter nav drošības atslēdzējs, kas izslēgtu krāsni arī bojājuma gadījumā.
+- Nekad neapdedziniet uz kaut kā degoša vai tā tuvumā, piemēram, uz koka grīdas vai paklāja.
+- Ievērojiet lietošanas instrukcijā norādītos drošības attālumus. Publicētie skaitļi ir no 12 collām (30 cm) līdz 3 pēdām (91 cm); ja instrukcijā nekas nav teikts, drošākā izvēle ir 18 collu (46 cm) attālums no sienām un 3 pēdu (91 cm) attālums no visa, kas var degt.
+- Turiet brīvu vietu ap Kiln-Sitter atsvaru, lai tas varētu nokrist.
+- Kad apdedzināšana beigusies, izslēdziet slēdžus un arī automātslēdzi.
 
 ## Dzesēšana un izkraušana {#cooling}
 

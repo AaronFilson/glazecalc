@@ -17,6 +17,14 @@
         "title": "Receptes",
         "text": "Sastādiet glazūru no izejvielām un daudzumiem, apskatiet tās Zēgera formulu (UMF) un saglabājiet to."
       },
+      "import": {
+        "title": "Recepšu ielīmēšana",
+        "text": "Ielīmējiet receptes no tīmekļa vietnes, izklājlapas vai piezīmēm, pārbaudiet, kas nolasīts, un saglabājiet tās."
+      },
+      "blends": {
+        "title": "Maisījumi provēm",
+        "text": "Sajauciet divas, trīs vai četras savas receptes numurētās provēs, norādot, ko nosvērt katrai."
+      },
       "material": {
         "title": "Izejvielas",
         "text": "Pievienojiet savas izejvielas no ķīmiskās formulas vai piegādātāja analīzes."
@@ -99,6 +107,35 @@
     "saveFailed": "Kļūda: pieprasījums serverim neizdevās."
   },
   "trash": {
-    "title": "Atkritne"
+    "title": "Atkritne",
+    "lead": "Viss, ko noņemat no savām receptēm, izejvielām, piezīmēm un žurnāliem, šeit gaida 30 dienas. Atjaunojiet to vai izdzēsiet uz visiem laikiem.",
+    "listHeading": "Atkritnē",
+    "none": "Atkritne ir tukša.",
+    "untitled": "Bez nosaukuma",
+    "kinds": {
+      "recipes": "Recepte",
+      "materials": "Izejviela",
+      "additives": "Piedeva",
+      "notes": "Piezīme",
+      "firing": "Apdedzināšanas žurnāls",
+      "advice": "Padoms",
+      "other": "Ieraksts"
+    },
+    "removedOn": "Noņemts: {date}",
+    "goesOn": "Neatgriezeniski tiks izdzēsts: {date}",
+    "byApp": "Noņēma pievienota lietotne",
+    "putBack": "Atjaunot",
+    "putBackName": "Atjaunot {name}",
+    "restored": "Atjaunots sākotnējā vietā: “{name}”.",
+    "restoredAlready": "Jau atjaunots: “{name}”.",
+    "restoreFailed": "Neizdevās atjaunot “{name}”. Mēģiniet vēlreiz.",
+    "deleted": "Neatgriezeniski izdzēsts: “{name}”.",
+    "empty": "Iztukšot atkritni",
+    "emptyQuestion": "Vai neatgriezeniski izdzēst {count, plural, zero {visus # ierakstus} one {# ierakstu} other {visus # ierakstus}} atkritnē? Šo darbību nevar atsaukt.",
+    "emptyYes": "Jā, iztukšot",
+    "emptying": "Notiek iztukšošana...",
+    "emptied": "Atkritne ir tukša.",
+    "emptyFailed": "Neizdevās iztukšot atkritni. Mēģiniet vēlreiz.",
+    "fetchFailed": "Neizdevās ielādēt atkritni. Mēģiniet vēlreiz."
   }
 }

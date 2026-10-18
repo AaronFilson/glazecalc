@@ -17,13 +17,17 @@
     "confirmEmail": "E-pasta adreses apstiprināšana – Glazecalc",
     "home": "Jūsu darbnīcas burtnīca – Glazecalc",
     "recipe": "Receptes – Glazecalc",
+    "import": "Recepšu ielīmēšana – Glazecalc",
+    "blends": "Maisījumi provēm – Glazecalc",
     "material": "Izejvielas – Glazecalc",
     "additive": "Piedevas – Glazecalc",
     "firingLogs": "Apdedzināšanas žurnāli – Glazecalc",
     "notes": "Piezīmes – Glazecalc",
     "trash": "Atkritne – Glazecalc",
     "account": "Jūsu konts un iestatījumi – Glazecalc",
-    "notFound": "Lapa nav atrasta – Glazecalc"
+    "notFound": "Lapa nav atrasta – Glazecalc",
+    "shared": "Kopīgota recepte – Glazecalc",
+    "assistants": "Glazecalc lietošana ar mākslīgā intelekta asistentu – Glazecalc"
   },
   "nav": {
     "skip": "Pāriet uz saturu",
@@ -96,9 +100,14 @@
   },
   "remove": {
     "alreadyRemoved": "Ieraksts “{name}” jau ir noņemts.",
+    "trashed": "Pārvietots uz atkritni: “{name}”.",
+    "undo": "Atsaukt",
+    "restored": "Atjaunots: “{name}”.",
+    "restoreFailed": "Neizdevās atjaunot “{name}”. Tas joprojām ir atkritnē.",
     "failed": "Neizdevās noņemt. Mēģiniet vēlreiz.",
     "question": "Vai noņemt “{name}”?",
     "cannotUndo": "Šo darbību nevar atsaukt.",
+    "toTrash": "No atkritnes to var atjaunot 30 dienu laikā.",
     "removing": "Notiek noņemšana...",
     "yes": "Jā, noņemt",
     "cancel": "Atcelt",

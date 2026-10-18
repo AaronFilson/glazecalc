@@ -102,6 +102,9 @@
     "quartzAll": "Kvarcs, ja putekļi sastāv tikai no kvarca",
     "cristobaliteAll": "Kristobalīts, ja putekļi sastāv tikai no kristobalīta",
     "allFree": "Kontroles koncentrācija, ja putekļi sastāv tikai no brīvā silīcija dioksīda",
+    "bandFromTo": "Putekļi ar {from}% līdz {to}% brīvā silīcija dioksīda (SiO₂)",
+    "bandOverTo": "Putekļi ar vairāk nekā {from}% un līdz {to}% brīvā silīcija dioksīda",
+    "bandAbove": "Putekļi ar vairāk nekā {from}% brīvā silīcija dioksīda",
     "recommended": "Ieteikums: {abbr}",
     "value": "{value} mg/m³",
     "kind": {
@@ -160,7 +163,15 @@
       "myFlat": "Plakani trauki",
       "mySmall": "Mazi dobi trauki",
       "myLarge": "Lieli dobi trauki",
-      "myCooking": "Ēdiena gatavošanas piederumi"
+      "myCooking": "Ēdiena gatavošanas piederumi",
+      "idFlat": "Izstrādājumi, kuru iekšpuse nav dziļāka par 25 mm",
+      "idSmall": "Izstrādājumi, kuru iekšpuse ir dziļāka par 25 mm, ar ietilpību mazāku par 1100 mL",
+      "idLarge": "Izstrādājumi, kuru iekšpuse ir dziļāka par 25 mm, ar ietilpību 1100 mL vai vairāk",
+      "thFlat": "Izstrādājumi, kuru dziļums nepārsniedz 25 mm",
+      "thSmall": "Izstrādājumi, kuru dziļums pārsniedz 25 mm, ar ietilpību mazāku par 1,1 L",
+      "thLarge": "Izstrādājumi, kuru dziļums pārsniedz 25 mm, ar ietilpību 1,1 L vai vairāk",
+      "thInfant": "Trauki zīdaiņu līdz 12 mēnešu vecumam barībai",
+      "thCooking": "Ēdiena gatavošanas piederumi, kas paredzēti gatavošanas karstumam"
     },
     "judged": {
       "average": "6 izstrādājumu vidējais",
