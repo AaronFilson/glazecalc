@@ -1,0 +1,23 @@
+{
+  "unknown-compound": "Hợp chất {compound} trong công thức không xác định",
+  "unknown-oxide": "Oxit {oxide} trong nguyên liệu {material} không xác định",
+  "invalid-oxide-amount": "Lượng {oxide} trong nguyên liệu {material} không hợp lệ",
+  "loi-range": "LOI của {material} phải từ 0 trở lên và nhỏ hơn 100",
+  "no-oxides": "Nguyên liệu {material} không có oxit nào",
+  "no-name": "Nguyên liệu phải có tên",
+  "no-analysis": "Nguyên liệu {material} cần có công thức hóa học hoặc phân tích",
+  "recipe-shape": "Công thức men phải là một mảng '{ material, amount }' hoặc một bảng các lượng",
+  "invalid-amount": "Lượng của nguyên liệu {material} không hợp lệ",
+  "missing-material": "Một dòng của công thức men thiếu nguyên liệu",
+  "unknown-material": "Nguyên liệu {material} không xác định",
+  "no-flux": "Công thức men không có oxit trợ chảy nào, nên không xác định được công thức Seger (UMF)",
+  "no-target": "Mục tiêu không có oxit nào để hướng tới",
+  "no-materials": "Không có nguyên liệu nào để tính",
+  "no-temperature": "Cần có nhiệt độ nung để đặt lượng bo",
+  "no-flux-to-rebuild": "Men không có chất trợ chảy để dựng lại",
+  "unknown-element": "Nguyên tố {element} trong {formula} không xác định",
+  "bad-formula": "Không đọc được công thức {formula}",
+  "analysis-total": "Phân tích của {material} có tổng là {total}% gồm cả LOI; dự kiến khoảng 100%.",
+  "stored-equivalent": "Khối lượng đương lượng đã lưu của {material} không khớp với công thức hóa học và LOI của nó; thay vào đó đã dùng công thức hóa học và LOI.",
+  "trace-flux": "Công thức men chỉ có vết oxit trợ chảy, nên công thức Seger (UMF) không có ý nghĩa."
+}

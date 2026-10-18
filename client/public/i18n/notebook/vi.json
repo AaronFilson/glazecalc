@@ -1,0 +1,141 @@
+{
+  "home": {
+    "title": "Sổ tay xưởng gốm của bạn",
+    "signedInAs": "Đã đăng nhập với {email}.",
+    "trying": "Đang dùng thử Glazecalc với tên {name}. Hãy bắt đầu với một công thức men.",
+    "welcomeBack": "Tiếp tục từ chỗ bạn đã dừng.",
+    "welcome": {
+      "heading": "Chào mừng đến với Glazecalc",
+      "text": "Sổ tay của bạn đã sẵn sàng. Bước đầu nên làm: nhập một loại men bạn đã quen pha, gồm nguyên liệu và lượng, rồi xem công thức Seger của nó.",
+      "firstRecipe": "Bắt đầu công thức men đầu tiên",
+      "confirmHeading": "Xác nhận email của bạn",
+      "confirm": "Xác nhận email của bạn: chúng tôi đã gửi một liên kết đến {email}. Xác minh hai bước cần đến nó. <account>Trang tài khoản</account> của bạn có thể gửi lại liên kết.",
+      "confirmText": "Chúng tôi đã gửi một liên kết đến {email}. Hãy mở liên kết để xác nhận địa chỉ này là của bạn: xác minh hai bước cần đến nó. <account>Trang tài khoản</account> của bạn có thể gửi lại liên kết."
+    },
+    "sections": {
+      "recipe": {
+        "title": "Công thức men",
+        "text": "Dựng một loại men từ nguyên liệu và lượng, xem công thức Seger của nó và lưu lại."
+      },
+      "import": {
+        "title": "Dán công thức men",
+        "text": "Dán các công thức men từ một trang web, bảng tính hoặc ghi chú, kiểm tra những gì đã đọc được và lưu chúng."
+      },
+      "blends": {
+        "title": "Pha trộn cho mẫu thử men",
+        "text": "Pha trộn hai, ba hoặc bốn công thức men của bạn thành các mẫu thử men có đánh số, kèm lượng cần cân cho từng mẫu."
+      },
+      "material": {
+        "title": "Nguyên liệu",
+        "text": "Thêm nguyên liệu thô của riêng bạn, từ công thức hóa học hoặc phân tích của nhà cung cấp."
+      },
+      "additive": {
+        "title": "Phụ gia và chất tạo màu",
+        "text": "Lưu các chất tạo màu và chất làm đục bạn thêm lên trên men nền."
+      },
+      "firing": {
+        "title": "Nhật ký nung",
+        "text": "Ghi lại thời gian, nhiệt độ và côn của mỗi lần nung."
+      },
+      "notes": {
+        "title": "Ghi chú",
+        "text": "Lưu kết quả thử và mọi điều khác đáng nhớ."
+      },
+      "advice": {
+        "title": "Lời khuyên về men",
+        "text": "Mẹo về pha men, tráng men và nung, cùng lời khuyên của riêng bạn."
+      },
+      "guides": {
+        "title": "Cẩm nang",
+        "text": "Từ men là gì đến cách nung men, và giữ an toàn cho mọi người trong suốt quá trình."
+      },
+      "account": {
+        "title": "Tài khoản và cài đặt",
+        "text": "Cài đặt, mật khẩu của bạn, xác minh hai bước, và bản tải xuống mọi thứ bạn lưu ở đây."
+      }
+    },
+    "newHere": "Mới làm quen với công thức Seger? <advice>Trang lời khuyên</advice> giải thích những điều cơ bản, và <about>trang giới thiệu</about> cho biết Glazecalc hoạt động thế nào."
+  },
+  "firing": {
+    "title": "Nhật ký nung",
+    "lead": "Ghi lại mỗi lần nung: thời gian, nhiệt độ, côn và ghi chú về lò.",
+    "newHeading": "Một lần nung mới",
+    "titleLabel": "Tiêu đề",
+    "kiln": "Lò nung",
+    "date": "Ngày",
+    "notes": "Ghi chú",
+    "fieldSelect": "Các cột cần ghi",
+    "addField": "Thêm cột",
+    "included": "Các cột trong bản ghi này",
+    "moveLeft": "Chuyển cột sang trái",
+    "moveRight": "Chuyển cột sang phải",
+    "removeField": "Xóa cột",
+    "addRow": "Thêm một hàng vào bảng nung",
+    "addRowWhy": "Hãy thêm một cột trước.",
+    "tableEmpty": "Hãy thêm một cột ở trên, rồi thêm hàng.",
+    "recordHeading": "Ghi lại lần nung",
+    "rowActions": "Thao tác với hàng",
+    "cell": "{field}, hàng {row}",
+    "removeRow": "Xóa hàng",
+    "save": "Lưu",
+    "storedHeading": "Các lần nung đã lưu của tôi",
+    "noneSaved": "Chưa có. Các lần nung đã lưu sẽ hiện ở đây.",
+    "storedIn": "Nung trong {kiln} vào {date}.",
+    "storedOn": "Nung vào {date}.",
+    "storedNotes": "Ghi chú: {notes}",
+    "titleMissing": "Hãy đặt tiêu đề cho lần nung.",
+    "fieldsMissing": "Hãy thêm ít nhất một cột để ghi, chẳng hạn {example}.",
+    "chooseField": "Chọn một cột để thêm, rồi chọn Thêm cột.",
+    "fetchFailed": "Đã xảy ra lỗi khi lấy thông tin các bản ghi nung.",
+    "saved": "Thành công. Đã thêm bản ghi nung vào máy chủ.",
+    "saveFailed": "Lỗi: yêu cầu gửi đến máy chủ không thành công."
+  },
+  "notes": {
+    "title": "Ghi chú",
+    "lead": "Mọi điều khác đáng nhớ về các loại men của bạn.",
+    "newHeading": "Một ghi chú mới",
+    "titleLabel": "Tiêu đề",
+    "content": "Ghi chú",
+    "save": "Lưu",
+    "mineHeading": "Các ghi chú đã lưu của tôi",
+    "noneSaved": "Chưa có. Các ghi chú đã lưu sẽ hiện ở đây.",
+    "titleMissing": "Hãy đặt tiêu đề cho ghi chú.",
+    "contentMissing": "Hãy viết ghi chú.",
+    "untitled": "Ghi chú không có tiêu đề",
+    "fetchFailed": "Đã xảy ra lỗi khi lấy thông tin các ghi chú.",
+    "saved": "Thành công. Đã thêm ghi chú vào máy chủ.",
+    "saveFailed": "Lỗi: yêu cầu gửi đến máy chủ không thành công."
+  },
+  "trash": {
+    "title": "Thùng rác",
+    "lead": "Những gì bạn xóa khỏi công thức men, nguyên liệu, ghi chú và nhật ký sẽ chờ ở đây 30 ngày. Hãy khôi phục lại, hoặc xóa vĩnh viễn.",
+    "listHeading": "Trong thùng rác",
+    "none": "Thùng rác trống.",
+    "untitled": "Không có tiêu đề",
+    "kinds": {
+      "recipes": "Công thức men",
+      "materials": "Nguyên liệu",
+      "additives": "Phụ gia",
+      "notes": "Ghi chú",
+      "firing": "Nhật ký nung",
+      "advice": "Lời khuyên",
+      "other": "Bản ghi"
+    },
+    "removedOn": "Đã xóa {date}",
+    "goesOn": "Xóa vĩnh viễn {date}",
+    "byApp": "Đã xóa bởi một ứng dụng được kết nối",
+    "putBack": "Khôi phục",
+    "putBackName": "Khôi phục {name}",
+    "restored": "Đã khôi phục “{name}” về chỗ cũ.",
+    "restoredAlready": "“{name}” đã được khôi phục rồi.",
+    "restoreFailed": "Không thể khôi phục “{name}”. Vui lòng thử lại.",
+    "deleted": "Đã xóa vĩnh viễn “{name}”.",
+    "empty": "Dọn sạch thùng rác",
+    "emptyQuestion": "Xóa vĩnh viễn {count, plural, other {# bản ghi}} trong thùng rác? Không thể hoàn tác.",
+    "emptyYes": "Có, dọn sạch",
+    "emptying": "Đang dọn...",
+    "emptied": "Thùng rác đã trống.",
+    "emptyFailed": "Không thể dọn sạch thùng rác. Vui lòng thử lại.",
+    "fetchFailed": "Không thể tải thùng rác. Vui lòng thử lại."
+  }
+}

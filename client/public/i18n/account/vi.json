@@ -1,0 +1,482 @@
+{
+  "auth": {
+    "signInHeading": "Đăng nhập",
+    "keepHeading": "Giữ lại công việc của bạn",
+    "signUpHeading": "Tạo tài khoản của bạn",
+    "signInLead": "Chào mừng bạn trở lại với sổ tay men của bạn.",
+    "keepLead": "Giữ lại mọi thứ bạn đã làm với tên {name}: thêm email và mật khẩu của bạn. Vẫn miễn phí.",
+    "signUpLead": "Miễn phí. Các công thức men, nguyên liệu và ghi chú của bạn được giữ riêng tư trong tài khoản của bạn.",
+    "trialNote": "Đã có tài khoản? Đăng nhập sẽ đưa những gì bạn đã làm với tên {name} vào tài khoản đó. Mới đến đây? <signup>Tạo tài khoản</signup> để giữ lại thay vào đó.",
+    "email": "Email",
+    "password": "Mật khẩu",
+    "passwordHint": "Tối thiểu 8 ký tự.",
+    "confirmation": "Xác nhận mật khẩu",
+    "keepSignedIn": "Giữ tôi đăng nhập trên thiết bị này",
+    "passwordMissing": "Nhập mật khẩu của bạn.",
+    "createAccount": "Tạo tài khoản",
+    "signIn": "Đăng nhập",
+    "haveAccount": "Đã có tài khoản? <signin>Đăng nhập</signin>",
+    "privacy": "Email của bạn và những gì bạn lưu chỉ được dùng để vận hành tài khoản của bạn, và được lưu trữ với Amazon Web Services tại Mỹ. <privacy>Cách Glazecalc xử lý dữ liệu của bạn</privacy>",
+    "dataNotice": "Glazecalc là một dự án miễn phí, mã nguồn mở, và các tài khoản được lưu trên máy chủ tại Hoa Kỳ. Bạn có thể đọc các cẩm nang và dùng thử công cụ tính men mà không cần tài khoản, hoặc chạy bản sao của riêng bạn. Có tạo tài khoản ở đây hay không là quyết định của riêng bạn, và dự án không chịu trách nhiệm về quyết định đó. <where>Tài khoản của bạn được lưu ở đâu, và lựa chọn của bạn</where>",
+    "forgot": "Quên mật khẩu? Đặt lại",
+    "newHere": "Mới đến đây? <signup>Tạo tài khoản miễn phí</signup>",
+    "signUpFailed": "Lỗi: không thể tạo tài khoản.",
+    "signInFailed": "Lỗi: không thể đăng nhập.",
+    "or": "hoặc",
+    "passkeySignIn": "Đăng nhập bằng khóa truy cập",
+    "passkeyHint": "Khóa truy cập dùng vân tay, khuôn mặt hoặc khóa màn hình của bạn thay cho mật khẩu. Hãy thêm một khóa trên trang tài khoản của bạn."
+  },
+  "secondStep": {
+    "heading": "Xác minh hai bước",
+    "signingInAs": "Mật khẩu của bạn đúng. Còn một bước nữa để đăng nhập với {email}.",
+    "leadCode": "Mở ứng dụng xác thực của bạn và nhập mã nó hiển thị cho Glazecalc.",
+    "leadPasskey": "Dùng khóa truy cập của bạn để hoàn tất đăng nhập.",
+    "leadRecovery": "Nhập một trong các mã khôi phục bạn đã lưu khi bật xác minh hai bước. Mỗi mã dùng được một lần.",
+    "code": "Mã từ ứng dụng xác thực của bạn",
+    "codeHint": "{digits} chữ số. Mã mới hiện sau mỗi 30 giây.",
+    "codeFormat": "Nhập mã {digits} chữ số từ ứng dụng xác thực của bạn.",
+    "recoveryCode": "Mã khôi phục",
+    "recoveryHint": "Nó trông như abcde-12345.",
+    "recoveryMissing": "Nhập một trong các mã khôi phục của bạn.",
+    "finish": "Hoàn tất đăng nhập",
+    "usePasskey": "Dùng khóa truy cập",
+    "noPasskeysHere": "Trình duyệt này không dùng được khóa truy cập. Hãy dùng cách khác bên dưới, hoặc đăng nhập trên một thiết bị dùng được.",
+    "useRecovery": "Dùng mã khôi phục thay vào đó",
+    "useApp": "Dùng ứng dụng xác thực của bạn thay vào đó",
+    "startOver": "Bắt đầu lại",
+    "reloadNote": "Bước này chờ {minutes} phút. Nếu bạn rời khỏi hoặc tải lại trang này, bạn sẽ cần nhập lại mật khẩu.",
+    "expired": "Việc đăng nhập mất quá nhiều thời gian. Vui lòng nhập lại mật khẩu."
+  },
+  "passkey": {
+    "cancelled": "Khóa truy cập chưa được dùng: yêu cầu đã bị hủy hoặc hết thời gian, hoặc thiết bị này không có khóa truy cập cho Glazecalc. Vui lòng thử lại, hoặc dùng cách khác.",
+    "registered": "Khóa truy cập này đã có trong tài khoản của bạn.",
+    "browserFailed": "Trình duyệt này không dùng được khóa truy cập. Vui lòng thử lại, hoặc dùng cách khác."
+  },
+  "forgot": {
+    "heading": "Đặt lại mật khẩu của bạn",
+    "checkInbox": "Hãy kiểm tra hộp thư đến và thư rác. Nếu không có gì đến, hãy kiểm tra địa chỉ và yêu cầu lại.",
+    "intro": "Nhập email của tài khoản bạn, và chúng tôi sẽ gửi cho bạn một liên kết để chọn mật khẩu mới.",
+    "email": "Email:",
+    "send": "Gửi liên kết đặt lại",
+    "back": "Quay lại đăng nhập",
+    "failed": "Lỗi: không thể gửi email đặt lại. Vui lòng thử lại."
+  },
+  "reset": {
+    "heading": "Chọn mật khẩu mới",
+    "signIn": "Đăng nhập",
+    "incomplete": "Trang này cần liên kết từ email đặt lại mật khẩu, và liên kết này chưa đầy đủ.",
+    "askAgain": "Yêu cầu liên kết mới",
+    "password": "Mật khẩu mới:",
+    "confirmation": "Xác nhận mật khẩu mới:",
+    "save": "Lưu mật khẩu mới",
+    "hint": "Tối thiểu 8 ký tự. Mọi thiết bị đã đăng nhập vào tài khoản sẽ bị đăng xuất.",
+    "failed": "Lỗi: không thể đổi mật khẩu. Vui lòng thử lại.",
+    "secondStep": "Nếu tài khoản của bạn dùng xác minh hai bước, bạn vẫn sẽ cần ứng dụng xác thực, khóa truy cập hoặc mã khôi phục để đăng nhập."
+  },
+  "account": {
+    "trialTitle": "Bản dùng thử của bạn",
+    "trialLead": "Bạn đang dùng thử Glazecalc với tên {name}.",
+    "keepHeading": "Giữ lại công việc của bạn",
+    "keepText": "Bản dùng thử này và mọi thứ trong đó sẽ bị xóa vào {date}. Hãy tạo tài khoản miễn phí để giữ lại: các công thức men, nguyên liệu và ghi chú của bạn vẫn y nguyên, và {name} vẫn là tên hiển thị của bạn.",
+    "createAccount": "Tạo tài khoản",
+    "title": "Tài khoản của bạn",
+    "signedInAs": "Đã đăng nhập với {email}.",
+    "contents": "Trong trang này",
+    "changeHeading": "Đổi mật khẩu của bạn",
+    "current": "Mật khẩu hiện tại",
+    "currentMissing": "Nhập mật khẩu hiện tại của bạn.",
+    "password": "Mật khẩu mới",
+    "passwordHint": "Tối thiểu 8 ký tự. Các thiết bị khác đã đăng nhập vào tài khoản này sẽ bị đăng xuất.",
+    "confirmation": "Xác nhận mật khẩu mới",
+    "change": "Đổi mật khẩu",
+    "changeFailed": "Lỗi: không thể đổi mật khẩu. Vui lòng thử lại.",
+    "deleteHeading": "Xóa tài khoản của bạn",
+    "deleteText": "Việc này xóa tài khoản của bạn và mọi thứ bạn đã lưu: công thức men, nguyên liệu, phụ gia, ghi chú, nhật ký nung và lời khuyên. Không thể hoàn tác.",
+    "deletePassword": "Mật khẩu của bạn, để xác nhận",
+    "deletePasswordMissing": "Nhập mật khẩu của bạn để xác nhận.",
+    "delete": "Xóa tài khoản của tôi",
+    "deleteFailed": "Lỗi: không thể xóa tài khoản. Vui lòng thử lại.",
+    "unverifiedHeading": "Xác nhận email của bạn",
+    "unverifiedText": "Chúng tôi đã gửi một liên kết đến {email} khi bạn tạo tài khoản này. Hãy mở liên kết để xác nhận địa chỉ này là của bạn. Cho đến lúc đó, chúng tôi chỉ gửi thư đến địa chỉ này khi bạn yêu cầu, chẳng hạn đặt lại mật khẩu.",
+    "resend": "Gửi lại liên kết",
+    "resendFailed": "Lỗi: không thể gửi liên kết. Vui lòng thử lại.",
+    "emailHeading": "Đổi email của bạn",
+    "emailText": "Chúng tôi gửi một liên kết đến địa chỉ mới, và email của bạn sẽ đổi khi bạn mở liên kết. Chúng tôi cũng báo cho địa chỉ hiện tại của bạn. Mọi thiết bị đã đăng nhập vào tài khoản này sẽ bị đăng xuất.",
+    "newEmail": "Email mới",
+    "emailPassword": "Mật khẩu của bạn, để xác nhận",
+    "emailSend": "Gửi liên kết",
+    "emailFailed": "Lỗi: không thể gửi liên kết. Vui lòng thử lại.",
+    "signOutHeading": "Đăng xuất ở mọi nơi",
+    "signOutText": "Đăng xuất bạn trên mọi thiết bị, kể cả thiết bị này, và chặn các mã thông báo truy cập và liên kết chia sẻ của bạn. Hãy dùng khi bạn mất thiết bị hoặc nghĩ rằng người khác có thông tin đăng nhập của bạn.",
+    "signOutButton": "Đăng xuất ở mọi nơi",
+    "signOutFailed": "Lỗi: không thể đăng xuất. Vui lòng thử lại.",
+    "confirmStep": "Xác minh hai bước đang bật, nên hãy xác nhận đó là bạn: mật khẩu của bạn và một bước thứ hai."
+  },
+  "mfa": {
+    "heading": "Xác minh hai bước",
+    "intro": "Yêu cầu một bước thứ hai khi bạn đăng nhập, ngoài mật khẩu của bạn: một mã từ ứng dụng xác thực, hoặc một khóa truy cập. Khi đó, người biết được mật khẩu của bạn vẫn không vào được.",
+    "loadFailed": "Không thể tải phần xác minh hai bước của bạn. Vui lòng tải lại trang.",
+    "on": "Xác minh hai bước đang bật.",
+    "onText": "Bạn đăng nhập bằng mật khẩu và một bước thứ hai, hoặc chỉ bằng một khóa truy cập.",
+    "off": "Xác minh hai bước đang tắt.",
+    "badgeOn": "Bật",
+    "badgeOff": "Tắt",
+    "offText": "Để bật, hãy thiết lập một ứng dụng xác thực hoặc thêm một khóa truy cập.",
+    "confirmEmailFirst": "Hãy xác nhận email của bạn trước, ở trên. Chúng tôi dùng nó để báo cho bạn về các thay đổi trong cách đăng nhập, và để giúp bạn nếu bạn mất bước thứ hai.",
+    "appHeading": "Ứng dụng xác thực",
+    "appText": "Một ứng dụng trên điện thoại hoặc trong trình quản lý mật khẩu của bạn hiện một mã mới sau mỗi 30 giây, để nhập khi bạn đăng nhập.",
+    "addApp": "Thiết lập ứng dụng xác thực",
+    "removeApp": "Xóa ứng dụng xác thực",
+    "added": "Đã thêm vào {date}.",
+    "lastUsed": "Dùng lần cuối vào {date}.",
+    "notUsed": "Chưa dùng.",
+    "passkeysHeading": "Khóa truy cập",
+    "passkeysText": "Khóa truy cập đăng nhập cho bạn bằng vân tay, khuôn mặt hoặc khóa màn hình, trên thiết bị này hoặc điện thoại của bạn. Nó có thể là bước thứ hai của bạn, hoặc tự đăng nhập cho bạn mà không cần mật khẩu.",
+    "noPasskeysHere": "Trình duyệt này không tạo hoặc dùng được khóa truy cập. Hãy thử trình duyệt hoặc thiết bị khác.",
+    "addPasskey": "Thêm khóa truy cập",
+    "removePasskey": "Xóa khóa truy cập",
+    "rename": "Đổi tên",
+    "remove": "Xóa",
+    "renameLabel": "Tên mới cho “{name}”",
+    "saveName": "Lưu tên",
+    "name": "Tên cho khóa truy cập",
+    "nameHint": "Để bạn phân biệt các khóa truy cập, chẳng hạn “Laptop” hoặc “Điện thoại”.",
+    "nameCheck": "Hãy đặt cho khóa truy cập một tên dài từ 1 đến {most} ký tự.",
+    "passkeyLimit": "Bạn có {most} khóa truy cập, số nhiều nhất một tài khoản có thể có. Hãy xóa một khóa để thêm khóa khác.",
+    "codesTitle": "Mã khôi phục",
+    "codesLeft": "{count, plural, other {Còn # trong tổng số {total} mã khôi phục.}} Nếu bạn không dùng được ứng dụng hoặc khóa truy cập, một mã sẽ đăng nhập cho bạn thay thế. Mỗi mã dùng được một lần.",
+    "codesLow": "Hãy tạo mã mới sớm. Nếu các mã hết và bạn mất ứng dụng cùng các khóa truy cập, bạn không thể đăng nhập.",
+    "newCodes": "Tạo mã khôi phục mới",
+    "offHeading": "Tắt xác minh hai bước",
+    "offWhat": "Xác minh hai bước vẫn bật khi bạn còn một ứng dụng xác thực hoặc một khóa truy cập. Xóa cái cuối cùng sẽ tắt nó, và khi đó:",
+    "offPassword": "Đăng nhập chỉ cần mật khẩu của bạn, nên bất kỳ ai biết được nó đều có thể đăng nhập.",
+    "offCodes": "Các mã khôi phục của bạn ngừng dùng được.",
+    "offSignOut": "Mọi thiết bị khác đã đăng nhập vào tài khoản của bạn đều bị đăng xuất. Thiết bị này vẫn đăng nhập.",
+    "offEmail": "Chúng tôi gửi email cho bạn rằng nó đã bị tắt.",
+    "offRemoveApp": "Tắt xác minh hai bước (xóa ứng dụng)",
+    "offRemoveAppFirst": "Xóa ứng dụng, để bắt đầu tắt nó",
+    "offPasskeys": "{count, plural, other {Để tắt, hãy xóa # khóa truy cập của bạn trong mục Khóa truy cập, ở trên.}}",
+    "offPasskeysToo": "{count, plural, other {Bạn cũng có # khóa truy cập: hãy xóa chúng trong mục Khóa truy cập, ở trên, cũng như ứng dụng.}}",
+    "addAppText": "Để thiết lập ứng dụng xác thực, trước hết hãy xác nhận đó là bạn.",
+    "removeAppText": "Để xóa ứng dụng xác thực, hãy xác nhận đó là bạn.",
+    "addPasskeyText": "Đặt tên cho khóa truy cập và xác nhận đó là bạn. Sau đó trình duyệt sẽ yêu cầu bạn tạo khóa truy cập.",
+    "removePasskeyText": "Để xóa khóa truy cập “{name}”, hãy xác nhận đó là bạn.",
+    "newCodesText": "Các mã mới thay thế các mã cũ của bạn, các mã cũ sẽ ngừng dùng được. Hãy xác nhận đó là bạn.",
+    "lastFactor": "Đây là bước thứ hai cuối cùng của bạn, nên xác minh hai bước sẽ tắt và các mã khôi phục của bạn ngừng dùng được.",
+    "continue": "Tiếp tục",
+    "cancel": "Hủy",
+    "password": "Mật khẩu của bạn",
+    "factorLegend": "Và bước thứ hai của bạn",
+    "passkeyNext": "Trình duyệt sẽ yêu cầu khóa truy cập của bạn khi bạn tiếp tục.",
+    "passkeyReadyText": "Cảm ơn bạn. Giờ hãy tạo khóa truy cập “{name}”: khi bạn nhấn nút, trình duyệt sẽ yêu cầu vân tay, khuôn mặt hoặc khóa màn hình của bạn, hoặc yêu cầu điện thoại của bạn. Nếu không được, bạn có thể thử lại trong {minutes} phút mà không cần xác nhận lại.",
+    "passkeyCreate": "Giờ thêm khóa truy cập",
+    "useApp": "Dùng ứng dụng xác thực của bạn thay vào đó",
+    "usePasskey": "Dùng khóa truy cập thay vào đó",
+    "useRecovery": "Dùng mã khôi phục thay vào đó",
+    "failed": "Lỗi: không thể thực hiện thay đổi. Vui lòng thử lại.",
+    "setupHeading": "Thiết lập ứng dụng xác thực của bạn",
+    "setupOpen": "Mở ứng dụng xác thực của bạn và chọn thêm một tài khoản.",
+    "setupScan": "Quét mã QR này bằng ứng dụng, hoặc nhập khóa thiết lập.",
+    "setupTap": "Chạm vào nút để thêm Glazecalc vào ứng dụng xác thực hoặc trình quản lý mật khẩu trên điện thoại này.",
+    "showQr": "Hiện mã QR, để thiết lập trên thiết bị khác",
+    "setupScanOther": "Quét nó bằng ứng dụng xác thực trên thiết bị kia.",
+    "qrAlt": "Mã QR để thêm Glazecalc vào ứng dụng xác thực",
+    "key": "Khóa thiết lập",
+    "copyKey": "Sao chép khóa",
+    "openInApp": "Thêm vào ứng dụng xác thực trên thiết bị này",
+    "clipboardNote": "Văn bản đã sao chép có thể còn trong lịch sử bộ nhớ tạm và đến được các thiết bị khác của bạn. Hãy dán thẳng vào trình quản lý mật khẩu, rồi xóa lịch sử bộ nhớ tạm.",
+    "setupCode": "Nhập mã {digits} chữ số mà ứng dụng hiện đang hiển thị cho Glazecalc",
+    "setupFinish": "Hoàn tất thiết lập",
+    "codesHeading": "Các mã khôi phục của bạn",
+    "codesText": "Hãy giữ chúng ở nơi an toàn, chẳng hạn trình quản lý mật khẩu của bạn, hoặc in ra và để cùng giấy tờ của bạn. Nếu bạn không dùng được ứng dụng hoặc khóa truy cập, một mã sẽ đăng nhập cho bạn thay thế. Mỗi mã dùng được một lần. Chúng chỉ được hiện lúc này.",
+    "print": "In các mã",
+    "printNote": "Mỗi mã dùng được một lần. Hãy giữ trang này ở nơi an toàn.",
+    "download": "Tải xuống dưới dạng tệp văn bản",
+    "copy": "Sao chép các mã",
+    "copied": "Đã sao chép.",
+    "copyFailed": "Không thể sao chép. Vui lòng chọn văn bản và sao chép nó.",
+    "saved": "Tôi đã lưu chúng",
+    "fileTitle": "Mã khôi phục Glazecalc cho {email}",
+    "fileNote": "Mỗi mã dùng được một lần. Hãy giữ tệp này ở nơi an toàn."
+  },
+  "export": {
+    "heading": "Tải xuống dữ liệu của tôi",
+    "text": "Lưu một bản sao mọi thứ tài khoản của bạn đang giữ trong một tệp: thông tin của bạn, cài đặt, nguyên liệu tôi có, công thức men, nguyên liệu, phụ gia, ghi chú, nhật ký nung, lời khuyên và thùng rác. Nó không gồm mật khẩu của bạn. Hãy giữ tệp ở nơi riêng tư, vì nó chứa mọi thứ bạn đã lưu.",
+    "json": "Tải xuống mọi thứ (JSON)",
+    "csvText": "Hoặc lưu một bảng tính chỉ gồm công thức men hoặc chỉ gồm nguyên liệu của riêng bạn, để mở trong Excel, Numbers hoặc Sheets.",
+    "recipes": "Công thức men (CSV)",
+    "materials": "Nguyên liệu (CSV)"
+  },
+  "shared": {
+    "heading": "Công thức men được chia sẻ",
+    "text": "Các công thức men bạn chia sẻ bằng liên kết, mà bất kỳ ai có liên kết đều có thể đọc mà không cần tài khoản. Liên kết chỉ được hiện một lần, khi nó được tạo, nên không thể hiện ở đây. Để chia sẻ lại một công thức men, hãy tạo liên kết mới trong mục Thêm của công thức men.",
+    "since": "Chia sẻ từ {date}",
+    "notesShown": "Có hiện ghi chú",
+    "notesHidden": "Không hiện ghi chú",
+    "untitled": "Công thức men không có tiêu đề",
+    "stop": "Dừng chia sẻ",
+    "stopName": "Dừng chia sẻ {name}",
+    "stopped": "{name} không còn được chia sẻ. Liên kết của nó không còn dùng được.",
+    "stopFailed": "Không được. Vui lòng thử lại.",
+    "fetchFailed": "Không thể tải các công thức men được chia sẻ của bạn. Vui lòng thử lại.",
+    "none": "Bạn không chia sẻ công thức men nào."
+  },
+  "settings": {
+    "heading": "Cài đặt",
+    "intro": "Được lưu cùng tài khoản của bạn, nên có hiệu lực trên mọi thiết bị.",
+    "saveFailed": "Không thể lưu cài đặt. Vui lòng thử lại.",
+    "language": {
+      "legend": "Ngôn ngữ",
+      "help": "Ngôn ngữ của ứng dụng, các cẩm nang và email của bạn. Việc đổi sẽ mở trang này bằng ngôn ngữ đó.",
+      "saved": "Đã lưu: {language}."
+    },
+    "region": {
+      "legend": "Nơi bạn làm việc",
+      "none": {
+        "label": "Chưa chọn",
+        "saved": "Đã lưu: chưa chọn khu vực; các giá trị mặc định theo trình duyệt của bạn."
+      },
+      "saved": "Đã lưu: {region}.",
+      "help": "Các nguyên liệu được bán ở đó, và các giá trị mặc định cho số, ngày, nhiệt độ và côn bên dưới. Cho đến khi bạn chọn, chúng theo ngôn ngữ của trình duyệt."
+    },
+    "format": {
+      "legend": "Số và ngày",
+      "auto": {
+        "label": "Theo ngôn ngữ và khu vực của tôi",
+        "saved": "Đã lưu: số và ngày theo cách ngôn ngữ và khu vực của bạn viết."
+      },
+      "saved": "Đã lưu: số và ngày như trong {language}.",
+      "help": "Cách viết số và ngày: 12,345.6 hoặc 12.345,6, và thứ tự của ngày và tháng."
+    },
+    "decimalMark": {
+      "legend": "Nhập lượng",
+      "either": {
+        "label": "Dấu phẩy hoặc dấu chấm cho phần thập phân",
+        "example": "12,5 hoặc 12.5",
+        "saved": "Đã lưu: có thể nhập lượng bằng dấu phẩy hoặc dấu chấm."
+      },
+      "comma": {
+        "label": "Dấu phẩy cho phần thập phân",
+        "saved": "Đã lưu: lượng được nhập bằng dấu phẩy cho phần thập phân."
+      },
+      "point": {
+        "label": "Dấu chấm cho phần thập phân",
+        "saved": "Đã lưu: lượng được nhập bằng dấu chấm cho phần thập phân."
+      },
+      "help": "Với lựa chọn dấu phẩy hoặc dấu chấm, một lượng như 1.250 được đọc theo cách viết số của bạn ở trên."
+    },
+    "temperature": {
+      "legend": "Nhiệt độ",
+      "celsius": {
+        "label": "Celsius",
+        "saved": "Đã lưu: nhiệt độ tính bằng °C."
+      },
+      "fahrenheit": {
+        "label": "Fahrenheit",
+        "saved": "Đã lưu: nhiệt độ tính bằng °F."
+      },
+      "help": "Cho đến khi bạn chọn, mục này theo khu vực của bạn: °F ở Hoa Kỳ, °C ở nơi khác."
+    },
+    "cones": {
+      "legend": "Nung",
+      "orton": {
+        "label": "Theo côn Orton",
+        "example": "côn 04, côn 6",
+        "saved": "Đã lưu: nung theo côn Orton."
+      },
+      "sk": {
+        "label": "Theo côn SK (JIS R 8101)",
+        "example": "SK 4a, SK 8",
+        "saved": "Đã lưu: nung theo côn SK."
+      },
+      "temperature": {
+        "label": "Theo nhiệt độ, như chương trình của bộ điều khiển lò",
+        "saved": "Đã lưu: nung theo nhiệt độ."
+      },
+      "help": "Cho đến khi bạn chọn, mục này theo khu vực của bạn: côn Orton ở Hoa Kỳ, Vương quốc Anh, Ireland, Úc và New Zealand, côn SK ở Nhật Bản, nhiệt độ ở phần còn lại của châu Âu."
+    },
+    "density": {
+      "legend": "Độ đặc của men",
+      "sg": {
+        "label": "Tỷ trọng",
+        "saved": "Đã lưu: độ đặc của men theo tỷ trọng.",
+        "example": "tỷ trọng 1,45"
+      },
+      "baume": {
+        "label": "Độ Baumé, đo bằng tỷ trọng kế",
+        "saved": "Đã lưu: độ đặc của men theo độ Baumé."
+      },
+      "pint": {
+        "label": "Trọng lượng pint, số ounce trong một pint Anh",
+        "saved": "Đã lưu: độ đặc của men theo trọng lượng pint."
+      },
+      "help": "Cách các cẩm nang nêu độ đặc của men. Cho đến khi bạn chọn, mục này theo khu vực của bạn: độ Baumé ở Ý và Nhật Bản, tỷ trọng ở nơi khác."
+    },
+    "currency": {
+      "legend": "Đơn vị tiền tệ cho giá",
+      "help": "Giá bạn đưa ra cho nguyên liệu, và chi phí của một mẻ, được tính bằng đơn vị tiền tệ này. Việc đổi sẽ không quy đổi các giá bạn đã đưa ra. Cho đến khi bạn chọn, mục này theo khu vực của bạn.",
+      "saved": "Đã lưu: giá tính bằng {currency}.",
+      "notConverted": "Các giá đã lưu của bạn không được quy đổi: chúng vẫn là các con số bạn đã đưa ra."
+    },
+    "theme": {
+      "legend": "Sáng hoặc tối",
+      "system": {
+        "label": "Theo cài đặt của thiết bị này",
+        "saved": "Đã lưu: sáng hoặc tối theo cài đặt của từng thiết bị."
+      },
+      "light": {
+        "label": "Sáng",
+        "saved": "Đã lưu: luôn sáng."
+      },
+      "dark": {
+        "label": "Tối",
+        "saved": "Đã lưu: luôn tối."
+      },
+      "help": "Công thức men in ra luôn là chữ đen trên nền trắng."
+    },
+    "palette": {
+      "legend": "Màu sắc",
+      "saved": "Đã lưu: các nút và liên kết màu {palette}.",
+      "help": "Cho các nút, liên kết và tab, đặt tên theo các loại men. Mỗi màu đều dễ đọc ở chế độ sáng và tối."
+    },
+    "weightUnit": {
+      "legend": "Khối lượng mẻ",
+      "grams": {
+        "label": "Gam",
+        "saved": "Đã lưu: khối lượng mẻ tính bằng gam."
+      },
+      "pounds": {
+        "label": "Pound và ounce",
+        "saved": "Đã lưu: khối lượng mẻ tính bằng pound và ounce."
+      },
+      "help": "Cho các mẻ in ra."
+    },
+    "gramPrecision": {
+      "legend": "Gam trên bản in mẻ",
+      "single": {
+        "label": "Đến một phần mười gam",
+        "saved": "Đã lưu: gam hiện đến phần mười."
+      },
+      "full": {
+        "label": "Độ chính xác đầy đủ",
+        "saved": "Đã lưu: gam hiện đầy đủ, đến 5 chữ số thập phân."
+      },
+      "help": "Với phần mười, lượng dưới 10 g vẫn hiện phần trăm (2,35 g), cho chất tạo màu trong các mẻ thử nhỏ."
+    },
+    "lead": {
+      "legend": "Chì",
+      "off": {
+        "label": "Tắt: không bao giờ thêm chì vào công thức men hay gợi ý chì",
+        "saved": "Đã lưu: chì không bao giờ được thêm vào công thức men hay được gợi ý."
+      },
+      "on": {
+        "label": "Bật: có thể thêm và gợi ý nguyên liệu có chì",
+        "saved": "Đã lưu: có thể thêm và gợi ý nguyên liệu có chì."
+      },
+      "help": "Chì độc khi hít vào hoặc nuốt phải và tích tụ trong cơ thể, và men chì có thể làm chì thôi nhiễm vào thức ăn và đồ uống; không phép tính nào cho biết một sản phẩm đã nung có làm vậy hay không. Khi tắt, các công thức men đã có chì vẫn mở như trước.",
+      "warning": "Chỉ dùng chì dưới dạng frit, không bao giờ dùng chì đỏ, chì trắng hay chì vàng thô hoặc litharge. Pha ướt, không bao giờ phun, đeo khẩu trang lọc bụi đạt chuẩn và lau dọn ướt. Giữ đồ gốm tráng men chì cách xa thức ăn và đồ uống trừ khi thử nghiệm thôi nhiễm trong phòng thí nghiệm trên sản phẩm đã nung đã đạt.",
+      "turnOn": "Bật chì",
+      "keepOff": "Giữ tắt"
+    },
+    "englishTerms": {
+      "legend": "Thuật ngữ tiếng Anh",
+      "off": {
+        "label": "Tắt",
+        "saved": "Đã lưu: không hiện thuật ngữ tiếng Anh."
+      },
+      "on": {
+        "label": "Hiện tiếng Anh sau các thuật ngữ chính",
+        "saved": "Đã lưu: hiện tiếng Anh sau các thuật ngữ chính."
+      },
+      "help": "Để đọc các nguồn tiếng Anh, như Digitalfire, bên cạnh trang này: các thuật ngữ chính có tiếng Anh trong ngoặc."
+    },
+    "notice": {
+      "legend": "Ghi chú bản dịch",
+      "shown": {
+        "label": "Hiện",
+        "saved": "Đã lưu: ghi chú được hiện."
+      },
+      "hidden": {
+        "label": "Ẩn",
+        "saved": "Đã lưu: ghi chú được ẩn. Một dòng của nó vẫn còn trong các cẩm nang an toàn."
+      },
+      "help": "Ghi chú ở đầu mỗi trang cho biết trang được AI dịch, kèm cách gợi ý chỉnh sửa."
+    }
+  },
+  "confirmEmail": {
+    "heading": "Xác nhận email của bạn",
+    "intro": "Nhấn nút để xác nhận địa chỉ này.",
+    "confirm": "Xác nhận",
+    "incomplete": "Trang này cần liên kết từ email xác nhận, và liên kết này chưa đầy đủ.",
+    "account": "Tài khoản của bạn",
+    "signIn": "Đăng nhập",
+    "failed": "Lỗi: không thể xác nhận địa chỉ. Vui lòng thử lại."
+  },
+  "providers": {
+    "continueGoogle": "Tiếp tục với Google",
+    "continueGithub": "Tiếp tục với GitHub",
+    "failed": "Đăng nhập không thành công. Vui lòng thử lại.",
+    "heading": "Google và GitHub",
+    "intro": "Liên kết một tài khoản Google hoặc GitHub để đăng nhập bằng nó. Glazecalc chỉ giữ id của tài khoản đó, không bao giờ giữ tên, ảnh hay bất cứ thứ gì khác, và xác minh hai bước vẫn yêu cầu bước thứ hai.",
+    "passwordless": "Tài khoản này không có mật khẩu. Để đổi email, xác minh hai bước hoặc các cách đăng nhập của bạn, hoặc để xóa tài khoản, bạn xác nhận đó là bạn bằng cách đăng nhập lại với Google hoặc GitHub. Bạn cũng có thể đặt mật khẩu.",
+    "setPassword": "Gửi email cho tôi một liên kết để đặt mật khẩu",
+    "setPasswordUnlinks": "Đặt mật khẩu bằng liên kết trong email cũng sẽ hủy liên kết Google và GitHub. Sau đó bạn có thể liên kết lại.",
+    "setPasswordFailed": "Không thể gửi liên kết. Vui lòng thử lại.",
+    "confirmFirst": "Hãy xác nhận email của bạn trước, bằng liên kết chúng tôi đã gửi cho bạn, để liên kết Google hoặc GitHub.",
+    "linkedOn": "Đã liên kết vào {date}",
+    "notLinked": "Chưa liên kết",
+    "link": "Liên kết {provider}",
+    "unlink": "Hủy liên kết {provider}",
+    "linkFailed": "Không thể liên kết. Vui lòng thử lại.",
+    "reauthIntro": "Tài khoản này không có mật khẩu, nên hãy xác nhận đó là bạn bằng cách đăng nhập lại. Sau đó thực hiện thay đổi trong vòng 5 phút.",
+    "reauthButton": "Đăng nhập lại với {provider}",
+    "reauthHeld": "Bạn đã đăng nhập lại với {provider}. Bạn có thể thực hiện một thay đổi mà không cần mật khẩu trong 5 phút tới.",
+    "reauthFirst": "Vui lòng đăng nhập lại trước, bằng một trong các nút ở trên.",
+    "reauthFailed": "Không thể bắt đầu đăng nhập lại. Vui lòng thử lại."
+  },
+  "tokens": {
+    "heading": "Mã thông báo truy cập",
+    "intro": "Mã thông báo truy cập cho phép trợ lý AI hoặc tập lệnh của riêng bạn đọc các công thức men, nguyên liệu, ghi chú và nhật ký nung trong tài khoản của bạn. Hiện tại một mã thông báo chỉ có thể đọc: nó không bao giờ thay đổi hay xóa gì. Mỗi mã thông báo ngừng hoạt động vào ngày bạn chọn, hoặc ngay khi bạn thu hồi nó.",
+    "howTo": "Cách kết nối một trợ lý AI",
+    "listLabel": "Các mã thông báo truy cập của bạn",
+    "none": "Bạn không có mã thông báo truy cập nào.",
+    "hint": "kết thúc bằng {hint}",
+    "readOnly": "Chỉ đọc",
+    "created": "tạo {date}",
+    "lastUsed": "dùng lần cuối {date}",
+    "neverUsed": "chưa dùng",
+    "expires": "hết hạn {date}",
+    "expiredOn": "đã hết hạn {date}",
+    "revokedOn": "đã thu hồi {date}",
+    "revoke": "Thu hồi",
+    "revokeNamed": "Thu hồi {name}",
+    "revokeAll": "Thu hồi tất cả mã thông báo truy cập",
+    "revokeFailed": "Lỗi: không thể thu hồi mã thông báo. Vui lòng thử lại.",
+    "loadFailed": "Không thể tải các mã thông báo truy cập của bạn. Vui lòng tải lại trang để thử lại.",
+    "createHeading": "Tạo một mã thông báo",
+    "name": "Tên",
+    "nameHint": "Một thứ để phân biệt nó, chẳng hạn trợ lý hoặc máy tính mà nó dành cho.",
+    "nameCheck": "Vui lòng đặt cho mã thông báo một tên dài từ 1 đến {most} ký tự.",
+    "expiry": "Ngừng hoạt động sau",
+    "days": "{count, plural, other {# ngày}}",
+    "expiryHint": "Chúng tôi gửi email cho bạn 7 ngày trước khi một mã thông báo ngừng hoạt động.",
+    "confirmEmailFirst": "Trước khi bạn có thể tạo mã thông báo, hãy xác nhận email của bạn: mở liên kết chúng tôi đã gửi đến {email}. Chúng tôi báo cho bạn tại địa chỉ đó khi một mã thông báo được tạo và trước khi một mã ngừng hoạt động.",
+    "resend": "Gửi lại liên kết xác nhận",
+    "scopeNote": "Mã thông báo có thể đọc các bản ghi của bạn nhưng không thể thay đổi chúng.",
+    "confirmStep": "Để tạo mã thông báo, hãy xác nhận đó là bạn.",
+    "create": "Tạo mã thông báo",
+    "failed": "Lỗi: không thể tạo mã thông báo. Vui lòng thử lại.",
+    "limit": "Bạn có {most} mã thông báo truy cập đang hoạt động, số nhiều nhất một tài khoản có thể có. Hãy thu hồi một mã để tạo mã khác.",
+    "newHeading": "Hãy sao chép mã thông báo mới của bạn ngay",
+    "newText": "Đây là lần duy nhất nó được hiện. Bất kỳ ai có nó đều có thể đọc các bản ghi của bạn cho đến khi nó ngừng hoạt động, nên hãy giữ nó như mật khẩu, và chỉ đưa cho trợ lý hoặc tập lệnh của riêng bạn.",
+    "newLabel": "Mã thông báo truy cập mới của bạn",
+    "copy": "Sao chép mã thông báo",
+    "copied": "Đã sao chép.",
+    "copyFailed": "Không thể sao chép. Hãy chọn mã thông báo và tự sao chép.",
+    "done": "Tôi đã sao chép nó",
+    "keptHeading": "Các mã thông báo truy cập của bạn vẫn hoạt động",
+    "keptText": "{count, plural, other {Việc đổi mật khẩu không làm # mã thông báo truy cập của bạn ngừng hoạt động. Nếu bạn đổi vì có thể có người khác biết mật khẩu, hãy thu hồi cả các mã thông báo.}}",
+    "keep": "Giữ lại",
+    "signOutNote": "{count, plural, other {Nó cũng chặn # mã thông báo truy cập của bạn, vĩnh viễn.}}"
+  }
+}
