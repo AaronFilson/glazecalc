@@ -39,22 +39,36 @@ fi
 mkdir -p "$WORK"
 tar -xf "$TAR" -C "$WORK"
 
+# The containers go before their network, which Docker will not remove while
+# one is still on it. It runs once, however the script ends: done, failed, or
+# stopped (Ctrl-C, or CI cancelling the job), and then exits.
+cleaned=
 cleanup() {
-  docker rm -f "$RUN-mongo" >/dev/null 2>&1 || true
+  [ -n "$cleaned" ] && return
+  cleaned=1
+  docker rm -f "$RUN-tests" "$RUN-mongo" >/dev/null 2>&1 || true
   docker network rm "$RUN" >/dev/null 2>&1 || true
   docker run --rm -v "$CACHE":/cache alpine rm -rf "/cache/$RUN" >/dev/null 2>&1 || true
 }
 trap cleanup EXIT
+trap 'cleanup; exit 130' INT
+trap 'cleanup; exit 143' TERM
 docker network create "$RUN" >/dev/null
 docker run -d --name "$RUN-mongo" --network "$RUN" mongo:9.0 >/dev/null
 
+# The tests run in a container named for this run, so cleanup can stop it.
+# --init gives it an init process that passes Ctrl-C (SIGINT) on to npm and
+# Playwright, which otherwise, as process 1, would not stop for it; to all of
+# them, not only the bash it starts (TINI_KILL_PROCESS_GROUP). docker run
+# goes in the background and the script waits for it, because bash runs a trap
+# only once the command in the foreground ends.
 echo "Installing packages and running the browser tests on Linux..."
 status=0
-docker run --rm --network "$RUN" -v "$WORK":/app -v "${E2E_NPM_CACHE:-glazecalc-npm-cache}":/root/.npm -w /app \
-  -e CI=true -e E2E_MONGO_URI="mongodb://$RUN-mongo/glazecalc_e2e" \
+docker run --rm --init --name "$RUN-tests" --network "$RUN" -v "$WORK":/app -v "${E2E_NPM_CACHE:-glazecalc-npm-cache}":/root/.npm -w /app \
+  -e TINI_KILL_PROCESS_GROUP=1 -e CI=true -e E2E_MONGO_URI="mongodb://$RUN-mongo/glazecalc_e2e" \
   -e E2E_WORKERS="${E2E_WORKERS:-}" -e E2E_BLOB="${E2E_BLOB:-}" "$IMAGE" \
-  bash -c 'npm ci --no-audit --no-fund --loglevel=error && npx playwright test "$@"' bash "$@" ||
-  status=$?
+  bash -c 'npm ci --no-audit --no-fund --loglevel=error && exec npx playwright test "$@"' bash "$@" &
+wait $! || status=$?
 
 # What failed (screenshots, traces, page snapshots), to look at from the host,
 # and a sharded run's blob report.
