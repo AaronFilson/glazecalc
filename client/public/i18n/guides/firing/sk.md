@@ -3,79 +3,79 @@ title: Výpal v jednoduchej peci
 lead: Ako vypaľovať v elektrickej peci s vypínačom Kiln-Sitter alebo s ručnými prepínačmi: výber, umiestnenie a čítanie kužeľov a zverejnené krivky výpalu pre prežah a ostrý výpal.
 ---
 
-## Cones: what they measure {#cones lang=en}
+## Kužele: čo merajú {#cones}
 
 > [!NOTE]
-> Follow your kiln's own manual first. This guide gathers what cone and kiln makers publish about basic electric kilns; it does not replace the instructions for your model, and where the two differ, the manual wins.
+> Najprv sa riaďte návodom na obsluhu vašej pece. Tento návod zhŕňa, čo o jednoduchých elektrických peciach zverejňujú výrobcovia kužeľov a pecí; nenahrádza pokyny pre váš model a tam, kde sa tieto dva zdroje líšia, platí návod na obsluhu pece.
 
-A **pyrometric cone** is a small, slender pyramid made from a standardized ceramic powder. When it has had enough heat, it softens and bends over in a repeatable way. You set cones in the kiln beside the ware and read how far they bent.
+**Pyrometrický kužeľ**{{en: pyrometric cone}} (žiaromerka) je malý štíhly ihlan zo štandardizovaného keramického prášku. Keď dostane dosť tepla, zmäkne a ohne sa, a to zakaždým rovnako. Kužele postavíte do pece vedľa výrobkov a potom odčítate, ako ďaleko sa ohli.
 
-Cones measure **heatwork**, the combined effect of temperature and time. In the words of Orton, the main US cone maker, "Cones do not measure temperature alone." A cone heated slowly bends at a lower temperature than one heated fast, and a glaze behaves the same way. So Orton gives each cone's temperature for a stated heating rate over the last {{180 °F; 100 °C}} of the firing. Once a cone starts to move, it bends over a narrow range, "usually less than 40° F" (22 °C).
+Kužele merajú **tepelnú prácu**{{en: heatwork}}, spoločné pôsobenie teploty a času. Slovami firmy Orton, hlavného amerického výrobcu kužeľov: „Kužele nemerajú len teplotu.“ Kužeľ ohrievaný pomaly sa ohne pri nižšej teplote ako kužeľ ohrievaný rýchlo a glazúra{{en: glaze}} sa správa rovnako. Preto Orton uvádza teplotu každého kužeľa pre danú rýchlosť ohrevu počas posledných {{180 °F; 100 °C}} výpalu. Keď sa kužeľ raz začne hýbať, ohne sa v úzkom teplotnom rozpätí, „zvyčajne menej ako 40° F“ (22 °C).
 
-### Cone numbers
+### Čísla kužeľov
 
-Cone numbers run from 022, the coolest, up to 42. A leading zero marks the cooler series and is read as "oh": cone 06 ("oh-six") is cooler than cone 04, and cone 01 needs less heat than cone 1. Orton warns that it is important not to mix the two series up. The gap is large: cone 06 bends more than {{400 °F; 220 °C}} cooler than cone 6.
+Čísla kužeľov idú od 022, najchladnejšieho, až po 42. Nula na začiatku označuje chladnejší rad a číta sa „nula“: kužeľ 06 („nula šesť“) je chladnejší ako kužeľ 04 a kužeľ 01 potrebuje menej tepla ako kužeľ 1. Orton upozorňuje, že je dôležité tieto dva rady nezameniť. Rozdiel je veľký: kužeľ 06 sa ohne pri teplote o viac ako {{400 °F; 220 °C}} nižšej ako kužeľ 6.
 
-Table: Common firing ranges, for self-supporting cones at {{108 °F/h; 60 °C/h}}
-Label: Firing ranges
+Table: Bežné rozsahy výpalu pre samostojné kužele pri {{108 °F/h; 60 °C/h}}
+Label: Rozsahy výpalu
 
-| Range     | Cones |                    Temperature | Typical use                              |
-| --------- | ----- | -----------------------------: | ---------------------------------------- |
-| Low fire  | 06–04 |  {{1828–1945 °F; 998–1063 °C}} | Earthenware glazes; bisque               |
-| Mid fire  | 5–6   | {{2167–2232 °F; 1186–1222 °C}} | Electric-kiln stoneware and porcelain    |
-| High fire | 9–10  | {{2300–2345 °F; 1260–1285 °C}} | Mostly gas-fired stoneware and porcelain |
+| Rozsah        | Kužele  |                        Teplota | Typické použitie                                             |
+| ------------- | ------- | -----------------------------: | ------------------------------------------------------------ |
+| Nízky výpal   | 06 – 04 |  {{1828–1945 °F; 998–1063 °C}} | Glazúry na pórovinu{{en: earthenware}}; prežah{{en: bisque}} |
+| Stredný výpal | 5 – 6   | {{2167–2232 °F; 1186–1222 °C}} | Kamenina{{en: stoneware}} a porcelán z elektrickej pece      |
+| Vysoký výpal  | 9 – 10  | {{2300–2345 °F; 1260–1285 °C}} | Väčšinou kamenina a porcelán z plynovej pece                 |
 
-Suppliers in the UK, Europe, Australia and New Zealand often give a temperature in °C rather than a cone: find the nearest cone in the chart below and confirm it with a witness cone. Seger and Staffordshire cones, the older European series, should not be assumed to share Orton's numbers, so this guide uses Orton cones.
+Dodávatelia vo Veľkej Británii, v Európe, Austrálii a na Novom Zélande často uvádzajú namiesto kužeľa teplotu v °C: nájdite najbližší kužeľ v tabuľke nižšie a overte ho kontrolným kužeľom{{en: witness cone}}. Pri Segerových žiaromerkách a staffordshirských kužeľoch, starších európskych radoch, by sa nemalo predpokladať, že majú rovnaké čísla ako Ortonove kužele, preto tento návod používa Ortonove kužele.
 
-### Holding adds heatwork
+### Výdrž pridáva tepelnú prácu
 
-A **hold** (also called a **soak**) keeps the kiln at one temperature for a while. Because cones measure heatwork, a hold at the top can stand in for a hotter peak. Orton gives these rough equivalents:
+**Výdrž**{{en: hold}} (v anglických zdrojoch aj **soak**) udržiava pec istý čas na jednej teplote. Keďže kužele merajú tepelnú prácu, výdrž na vrchole výpalu môže nahradiť vyššiu konečnú teplotu. Orton uvádza tieto približné ekvivalenty:
 
-Table: What a hold at the peak is worth
-Label: Holds and heatwork
+Table: Čomu zodpovedá výdrž na konečnej teplote
+Label: Výdrž a tepelná práca
 
-| Hold             | Roughly the same heatwork as             |
-| ---------------- | ---------------------------------------- |
-| About 20 minutes | A peak {{18 °F; 10 °C}} hotter           |
-| 40–60 minutes    | A peak {{36 °F; 20 °C}} hotter           |
-| About 2 hours    | A peak {{54 °F; 30 °C}} hotter           |
-| 4–6 hours        | Enough to bend a cone two numbers hotter |
+| Výdrž         | Približne rovnaká tepelná práca ako            |
+| ------------- | ---------------------------------------------- |
+| Asi 20 minút  | Konečná teplota o {{18 °F; 10 °C}} vyššia      |
+| 40 – 60 minút | Konečná teplota o {{36 °F; 20 °C}} vyššia      |
+| Asi 2 hodiny  | Konečná teplota o {{54 °F; 30 °C}} vyššia      |
+| 4 – 6 hodín   | Dosť na ohnutie kužeľa o dve čísla teplejšieho |
 
-Orton adds that a hold of 1–2 hours "may be sufficient to deform the next higher cone number".
+Orton dodáva, že výdrž 1 – 2 hodiny „môže stačiť na deformáciu kužeľa s nasledujúcim vyšším číslom“.
 
-So a hold is never free: if you add one, expect the cones to bend further, and lower the peak to match.
+Výdrž teda nikdy nie je zadarmo: ak ju pridáte, počítajte s tým, že sa kužele ohnú viac, a primerane znížte konečnú teplotu.
 
-### Kinds of cone
+### Druhy kužeľov
 
-Orton makes four kinds. Two stand on the shelf to show what the ware received; two are for the kiln sitter.
+Orton vyrába štyri druhy. Dva stoja na doske a ukazujú, čo výrobky dostali; dva sú pre vypínač Kiln-Sitter.
 
-Table: Orton's four kinds of cone
-Label: Kinds of cone
+Table: Štyri druhy Ortonových kužeľov
+Label: Druhy kužeľov
 
-| Kind            | Used for                  | How it stands                                                                               |
-| --------------- | ------------------------- | ------------------------------------------------------------------------------------------- |
-| Self-supporting | Witness cone on the shelf | A built-in base sets the height, 1¾ in (44 mm), and the 8° lean; no holder needed           |
-| Large           | Witness cone on the shelf | Set in a plaque or a pat of clay with exactly 2 in (51 mm) showing, leaning 8° from upright |
-| Small (junior)  | Kiln sitter               | Lies across the sitter's supports; 15/16 in (24 mm) showing if stood on a shelf             |
-| Bar             | Kiln sitter               | The same powder as small cones, in an even bar shape                                        |
+| Druh          | Použitie                 | Ako stojí                                                                                                       |
+| ------------- | ------------------------ | --------------------------------------------------------------------------------------------------------------- |
+| Samostojný    | Kontrolný kužeľ na doske | Vstavaná pätka určuje výšku 1¾ palca (44 mm) a sklon 8°; držiak netreba                                         |
+| Veľký         | Kontrolný kužeľ na doske | Zasadí sa do držiaka alebo do hrudky hliny tak, aby vyčnieval presne 2 palce (51 mm), so sklonom 8° od zvislice |
+| Malý (junior) | Kiln-Sitter              | Leží naprieč podperami vypínača; keby stál na doske, vyčnieval by 15/16 palca (24 mm)                           |
+| Tyčinka       | Kiln-Sitter              | Rovnaký prášok ako malé kužele, v tvare rovnomernej tyčinky                                                     |
 
-Height matters: a ¼ in (6 mm) difference in the height of a large cone "can cause more than a half cone difference in bending". Cones do not go bad or age, and damp storage does not affect them.
+Na výške záleží: rozdiel ¼ palca (6 mm) vo výške veľkého kužeľa „môže spôsobiť rozdiel v ohnutí väčší ako pol kužeľa“. Kužele sa nekazia ani nestarnú a neuškodí im ani skladovanie vo vlhku.
 
-### What "cone 6" means in practice
+### Čo v praxi znamená „kužeľ 6“
 
-The chart gives a self-supporting cone 6 as {{2232 °F; 1222 °C}}, but only when the last {{180 °F; 100 °C}} climbs at {{108 °F/h; 60 °C/h}}. Climbing at {{270 °F/h; 150 °C/h}}, the same cone bends at {{2269 °F; 1243 °C}}. Real kilns differ again: Digitalfire reports that "Most kilns reach cone 6 at 2200°F, not 2232°F". So "cone 6" means the ware received the heatwork that bends a cone 6, whatever a thermometer read at the time.
+Tabuľka uvádza pre samostojný kužeľ 6 teplotu {{2232 °F; 1222 °C}}, ale len vtedy, keď teplota počas posledných {{180 °F; 100 °C}} stúpa rýchlosťou {{108 °F/h; 60 °C/h}}. Pri stúpaní rýchlosťou {{270 °F/h; 150 °C/h}} sa ten istý kužeľ ohne pri {{2269 °F; 1243 °C}}. Skutočné pece sa od toho ešte líšia: Digitalfire uvádza, že „Väčšina pecí dosiahne kužeľ 6 pri 2200°F, nie pri 2232°F“. „Kužeľ 6“ teda znamená, že výrobky dostali tepelnú prácu, ktorá ohne kužeľ 6, nech teplomer v tom čase ukazoval čokoľvek.
 
 :::orton
 
 > [!NOTE]
-> Fire by the cone, not the clock or the dial. Set a controller by cone number, and let a witness cone on the shelf confirm every firing.
+> Vypaľujte podľa kužeľa, nie podľa hodín ani podľa stupnice. Regulátor nastavte podľa čísla kužeľa a každý výpal nech potvrdí kontrolný kužeľ na doske.
 
 :::
 
 :::temperature
 
 > [!NOTE]
-> Firing by temperature, keep the end of every firing the same: the same last rate of climb, the same peak and the same hold. Then a glaze that worked once works again.
+> Pri výpale podľa teploty udržujte koniec každého výpalu rovnaký: rovnakú poslednú rýchlosť stúpania, rovnakú konečnú teplotu a rovnakú výdrž. Glazúra, ktorá sa raz podarila, sa tak podarí znova.
 
 :::
 
@@ -596,22 +596,22 @@ Ak Kiln-Sitter vypne skôr, ako sa kužele na doske ohnú, nabudúce dajte do vy
 
 **Pyrometer** je teplomer, ktorý ukazuje teplotu nameranú **termočlánkom**, teplotnou sondou zavedenou cez stenu pece. Ukazuje, ako rýchlo teplota v peci stúpa, takže môžete vybrať správny stĺpec tabuľky kužeľov. Meria však pri stene, nie pri výrobkoch, a jeho údaje sa časom posúvajú. L&L uvádza, že termočlánok typu K sa po opakovaných výpaloch na kužeľ 6 môže mýliť o viac ako {{25 °F; 14 °C}}, „čo je rozdiel väčší ako celý kužeľ“, zatiaľ čo samostojný kužeľ sa líši najviac o {{4 °F; 2 °C}}. Podľa firmy Orton treba pyrometre z času na čas znova kalibrovať a kontrolujú sa práve kužeľmi.
 
-## Venting, peeking and safety {#venting lang=en}
+## Odsávanie, nahliadanie a bezpečnosť {#venting}
 
-### Venting
+### Odsávanie
 
-Early in a firing, clay and glaze give off water vapor and fumes, including carbon monoxide, and glazes can give off toxic fumes later in the firing too. L&L calls venting them "essential". With no vent system, that means the lid propped and the peepholes open in the early stages, as in the procedures above; slowing the heating during this time also helps the carbon burn out. In a kiln without a vent, Dawson, who made the sitter, also says to leave the top peephole open for the whole firing: the venting "will reduce deterioration of the kiln's metal parts and increase the life of the tube assembly". A **downdraft vent** (a powered vent fitted to the kiln) changes this. It does the venting, so Orton says the lid and peepholes stay closed for the whole firing except to check the cones, and L&L says to leave the vent on and plug the peepholes.
+Na začiatku výpalu hlina a glazúra uvoľňujú vodnú paru a splodiny, vrátane oxidu uhoľnatého, a glazúry môžu uvoľňovať toxické splodiny aj neskôr počas výpalu. L&L nazýva ich odvádzanie „zásadným“. Bez odsávania to znamená pootvorené veko a otvorené kontrolné otvory v raných fázach, ako je uvedené v postupoch vyššie; pomalší ohrev v tomto čase tiež pomáha vyhorieť uhlíku. V peci bez odsávania Dawson, ktorý vyrobil vypínač Kiln-Sitter{{en: kiln sitter}}, tiež hovorí, aby horný kontrolný otvor zostal otvorený počas celého výpalu: odvetrávanie „zníži opotrebovanie kovových častí pece a predĺži životnosť zostavy trubice“. **Spodné odsávanie** (odsávanie s pohonom namontované na pec) to mení. Odvetrávanie zabezpečuje samo, preto Orton hovorí, že veko a kontrolné otvory zostávajú počas celého výpalu zatvorené, okrem kontroly kužeľov, a L&L hovorí, aby sa odsávanie nechalo zapnuté a kontrolné otvory sa zazátkovali.
 
-For venting the room, and for carbon monoxide alarms, see [Safe mixing and ventilation](/guides/safe-mixing) and [Don't poison your family](/guides/home-safety).
+Informácie o vetraní miestnosti a o detektoroch oxidu uhoľnatého nájdete v návodoch [Bezpečné miešanie a vetranie](/guides/safe-mixing) a [Neotrávte svoju rodinu](/guides/home-safety).
 
-### While the kiln is firing
+### Keď pec vypaľuje
 
-- Look through a peephole only with IR-rated shade 3 welding glasses; sunglasses are not enough. Skutt advises twisting the plugs into place so they do not fall out.
-- Do not leave the kiln unattended beyond its expected firing time; a sitter is not a fail-safe.
-- Never fire on or near anything that burns, such as a wood floor or carpet.
-- Keep the clearances in your manual. Published figures range from 12 in (30 cm) to 3 ft (91 cm); where the manual is silent, 18 in (46 cm) from walls and 3 ft (91 cm) from anything that burns is the safest choice.
-- Keep the space around the sitter's weight clear so it can drop.
-- When the firing ends, turn the switches off and turn off the breaker as well.
+- Do kontrolného otvoru sa pozerajte len cez zváračské okuliare s filtrom proti IR žiareniu, ochranný stupeň 3; slnečné okuliare nestačia. Skutt radí zátky zaskrutkovať na miesto, aby nevypadli.
+- Nenechávajte pec bez dozoru po očakávanom čase výpalu; vypínač Kiln-Sitter nie je poistka proti zlyhaniu.
+- Nikdy nevypaľujte na ničom, čo horí, ani v jeho blízkosti, napríklad na drevenej podlahe alebo na koberci.
+- Dodržiavajte bezpečné vzdialenosti uvedené v návode na obsluhu. Publikované hodnoty sa pohybujú od 12 palcov (30 cm) do 3 stôp (91 cm); kde návod mlčí, najbezpečnejšou voľbou je 18 palcov (46 cm) od stien a 3 stopy (91 cm) od všetkého, čo horí.
+- Priestor okolo závažia vypínača Kiln-Sitter nechajte voľný, aby mohlo spadnúť.
+- Po skončení výpalu vypnite prepínače a vypnite aj istič.
 
 ## Chladnutie a vykladanie {#cooling}
 

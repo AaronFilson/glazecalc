@@ -17,6 +17,14 @@
         "title": "Recepty",
         "text": "Zostavte glazúru zo surovín a ich množstiev, pozrite si jej Segerov vzorec (UMF) a uložte ju."
       },
+      "import": {
+        "title": "Vloženie receptov",
+        "text": "Vložte recepty z webu, tabuľky alebo poznámok, skontrolujte, čo sa prečítalo, a uložte ich."
+      },
+      "blends": {
+        "title": "Zmesi na skúšobné doštičky",
+        "text": "Zmiešajte dva, tri alebo štyri svoje recepty do číslovaných skúšobných doštičiek, s údajom, čo pre každú navážiť."
+      },
       "material": {
         "title": "Suroviny",
         "text": "Pridajte vlastné suroviny podľa chemického vzorca alebo analýzy od dodávateľa."
@@ -99,6 +107,35 @@
     "saveFailed": "Chyba: požiadavka na server zlyhala."
   },
   "trash": {
-    "title": "Kôš"
+    "title": "Kôš",
+    "lead": "To, čo odstránite zo svojich receptov, surovín, poznámok a záznamov, tu čaká 30 dní. Môžete to vrátiť späť, alebo natrvalo zmazať.",
+    "listHeading": "V Koši",
+    "none": "Kôš je prázdny.",
+    "untitled": "Bez názvu",
+    "kinds": {
+      "recipes": "Recept",
+      "materials": "Surovina",
+      "additives": "Prísada",
+      "notes": "Poznámka",
+      "firing": "Záznam výpalu",
+      "advice": "Rada",
+      "other": "Záznam"
+    },
+    "removedOn": "Odstránené {date}",
+    "goesOn": "Natrvalo sa zmaže {date}",
+    "byApp": "Odstránené pripojenou aplikáciou",
+    "putBack": "Vrátiť späť",
+    "putBackName": "Vrátiť späť: {name}",
+    "restored": "„{name}“ je späť na pôvodnom mieste.",
+    "restoredAlready": "Položka „{name}“ už bola vrátená späť.",
+    "restoreFailed": "Položku „{name}“ sa nepodarilo vrátiť späť. Skúste to, prosím, znova.",
+    "deleted": "Položka „{name}“ bola natrvalo zmazaná.",
+    "empty": "Vyprázdniť Kôš",
+    "emptyQuestion": "Natrvalo zmazať {count, plural, one {# záznam} few {všetky # záznamy} many {všetkých # záznamu} other {všetkých # záznamov}} v Koši? Túto akciu nie je možné vrátiť späť.",
+    "emptyYes": "Áno, vyprázdniť",
+    "emptying": "Vyprázdňuje sa…",
+    "emptied": "Kôš je prázdny.",
+    "emptyFailed": "Kôš sa nepodarilo vyprázdniť. Skúste to, prosím, znova.",
+    "fetchFailed": "Kôš sa nepodarilo načítať. Skúste to, prosím, znova."
   }
 }

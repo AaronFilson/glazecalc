@@ -17,13 +17,17 @@
     "confirmEmail": "Potvrdenie e-mailu – Glazecalc",
     "home": "Váš dielenský zápisník – Glazecalc",
     "recipe": "Recepty – Glazecalc",
+    "import": "Vloženie receptov - Glazecalc",
+    "blends": "Zmesi na skúšobné doštičky - Glazecalc",
     "material": "Suroviny – Glazecalc",
     "additive": "Prísady – Glazecalc",
     "firingLogs": "Záznamy výpalov – Glazecalc",
     "notes": "Poznámky – Glazecalc",
     "trash": "Kôš – Glazecalc",
     "account": "Váš účet a nastavenia – Glazecalc",
-    "notFound": "Stránka sa nenašla – Glazecalc"
+    "notFound": "Stránka sa nenašla – Glazecalc",
+    "shared": "Zdieľaný recept - Glazecalc",
+    "assistants": "Glazecalc vo vašom AI asistentovi - Glazecalc"
   },
   "nav": {
     "skip": "Preskočiť na obsah",
@@ -96,9 +100,14 @@
   },
   "remove": {
     "alreadyRemoved": "Položka „{name}“ už bola odstránená.",
+    "trashed": "Presunuté do Koša: „{name}“.",
+    "undo": "Vrátiť späť",
+    "restored": "Vrátené späť: „{name}“.",
+    "restoreFailed": "„{name}“ sa nepodarilo vrátiť späť. Stále je v Koši.",
     "failed": "Nepodarilo sa to odstrániť. Skúste to, prosím, znova.",
     "question": "Odstrániť „{name}“?",
     "cannotUndo": "Túto akciu nie je možné vrátiť späť.",
+    "toTrash": "Z Koša to možno do 30 dní vrátiť.",
     "removing": "Odstraňuje sa…",
     "yes": "Áno, odstrániť",
     "cancel": "Zrušiť",
