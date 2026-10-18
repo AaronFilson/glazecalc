@@ -282,6 +282,8 @@ describe('record versions and Undo', () => {
     const list = await versions(saved._id);
     expect(list.map((v: { title: string }) => v.title)).to.eql(['Celadon 2', 'Celadon']);
     expect(list[0].by).to.equal('session');
+    // Only what the list shows, not each version's whole record.
+    expect(Object.keys(list[0]).sort()).to.eql(['_id', 'by', 'savedAt', 'title']);
 
     const first = await undo(saved._id);
     expect(first).to.have.status(200);

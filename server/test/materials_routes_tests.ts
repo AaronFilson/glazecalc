@@ -94,6 +94,11 @@ describe('materials API', () => {
       .get('/materials/getLatest')
       .set('Authorization', 'Bearer ' + token);
     expect(latest.body).to.include({ _id: saved._id, name: 'kaolin', loi: 14 });
+    // The earlier version is listed by its name.
+    const versions = await api()
+      .get('/materials/versions/' + saved._id)
+      .set('Authorization', 'Bearer ' + token);
+    expect(versions.body.map((v: { title: string }) => v.title)).to.eql(['porcelain']);
   });
 
   it('removes a material', async () => {

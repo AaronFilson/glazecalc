@@ -187,6 +187,8 @@ export default function recordRoutes(
       recordId: req.params.id
     })
       .sort({ savedAt: -1, _id: -1 })
+      // The list shows only each version's title.
+      .select({ savedAt: 1, by: 1, 'record.title': 1, 'record.name': 1 })
       .lean();
     res
       .status(200)
