@@ -17,6 +17,14 @@
         "title": "Recepti",
         "text": "Sestavite glazuro iz surovin in količin, poglejte njeno Segerjevo formulo (UMF) in jo shranite."
       },
+      "import": {
+        "title": "Lepljenje receptov",
+        "text": "Prilepite recepte s spletne strani, iz preglednice ali zapiskov, preverite, kaj je bilo prebrano, in jih shranite."
+      },
+      "blends": {
+        "title": "Testne serije za ploščice",
+        "text": "Zmešajte dva, tri ali štiri svoje recepte v oštevilčene testne ploščice, z navedbo, kaj stehtati za vsako."
+      },
       "material": {
         "title": "Surovine",
         "text": "Dodajte lastne surovine iz kemijske formule ali analize dobavitelja."
@@ -99,6 +107,35 @@
     "saveFailed": "Napaka: zahteva strežniku ni uspela."
   },
   "trash": {
-    "title": "Koš"
+    "title": "Koš",
+    "lead": "Vse, kar odstranite iz svojih receptov, surovin, zapiskov in dnevnikov, tu čaka 30 dni. Vrnite to nazaj ali pa to dokončno izbrišite.",
+    "listHeading": "V košu",
+    "none": "Koš je prazen.",
+    "untitled": "Brez naslova",
+    "kinds": {
+      "recipes": "Recept",
+      "materials": "Surovina",
+      "additives": "Dodatek",
+      "notes": "Zapisek",
+      "firing": "Dnevnik žganja",
+      "advice": "Nasvet",
+      "other": "Zapis"
+    },
+    "removedOn": "Odstranjeno: {date}",
+    "goesOn": "Dokončno izbrisano: {date}",
+    "byApp": "Odstranila povezana aplikacija",
+    "putBack": "Vrni",
+    "putBackName": "Vrni {name}",
+    "restored": "Vrnjeno na prejšnje mesto: »{name}«.",
+    "restoredAlready": "Že vrnjeno: »{name}«.",
+    "restoreFailed": "»{name}« ni bilo mogoče vrniti. Poskusite znova.",
+    "deleted": "Dokončno izbrisano: »{name}«.",
+    "empty": "Izprazni koš",
+    "emptyQuestion": "Dokončno izbrisati {count, plural, one {# zapis} two {vsa # zapisa} few {vse # zapise} other {vseh # zapisov}} v košu? Tega ni mogoče razveljaviti.",
+    "emptyYes": "Da, izprazni",
+    "emptying": "Praznjenje ...",
+    "emptied": "Koš je prazen.",
+    "emptyFailed": "Koša ni bilo mogoče izprazniti. Poskusite znova.",
+    "fetchFailed": "Koša ni bilo mogoče naložiti. Poskusite znova."
   }
 }

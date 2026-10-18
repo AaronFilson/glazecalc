@@ -102,6 +102,9 @@
     "quartzAll": "Kremen, za prah, ki je ves iz kremena",
     "cristobaliteAll": "Kristobalit, za prah, ki je ves iz kristobalita",
     "allFree": "Nadzorna koncentracija za prah, ki je ves iz prostega kremena",
+    "bandFromTo": "Prah z {from} % do {to} % prostega kremena (SiO₂)",
+    "bandOverTo": "Prah z več kot {from} % in do {to} % prostega kremena",
+    "bandAbove": "Prah z več kot {from} % prostega kremena",
     "recommended": "Priporoča {abbr}",
     "value": "{value} mg/m³",
     "kind": {
@@ -160,7 +163,15 @@
       "myFlat": "Ploska posoda",
       "mySmall": "Majhna votla posoda",
       "myLarge": "Velika votla posoda",
-      "myCooking": "Posoda za kuhanje"
+      "myCooking": "Posoda za kuhanje",
+      "idFlat": "Izdelki, ki so znotraj globoki največ 25 mm",
+      "idSmall": "Izdelki, ki so znotraj globoki več kot 25 mm, manj kot 1100 mL",
+      "idLarge": "Izdelki, ki so znotraj globoki več kot 25 mm, 1100 mL ali več",
+      "thFlat": "Izdelki, globoki največ 25 mm",
+      "thSmall": "Izdelki, globoki več kot 25 mm, manj kot 1,1 L",
+      "thLarge": "Izdelki, globoki več kot 25 mm, 1,1 L ali več",
+      "thInfant": "Posode za hrano otrok do 12 mesecev starosti",
+      "thCooking": "Kuhinjska posoda, narejena za vročino pri kuhanju"
     },
     "judged": {
       "average": "povprečje 6 kosov",
