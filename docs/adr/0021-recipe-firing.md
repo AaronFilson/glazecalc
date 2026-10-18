@@ -12,7 +12,10 @@ running at 10, and moving a glaze between cone 6 and cone 10 usually means refor
 Cones measure heatwork, not temperature, and an SK cone is not the Orton cone of the same number:
 Glazecalc's SK chart gives the JIS nominal figures (SK 8 1250 °C, SK 10 1300 °C), while the Kyoto
 municipal institute measured its own cones bending at 1198 °C and 1232 °C at 100 °C an hour, and
-names SK 12 as the replacement for Orton 10.
+names SK 12 as the replacement for Orton 10. (Its table measured more than those two: its own
+cones SK 7 to 14, at 1183, 1198, 1211, 1232, 1253, 1290, 1311 and 1331 °C, beside Orton cones 4 to
+12 bent in the same kiln. This was noted in review on 2026-10-18; the decision below uses only SK 8
+and 10, and whether to use the rest is open for the owner.)
 
 Wave 2 added `recipe.firing` as a band, `low`, `mid` or `high`, picked by hand for the limits
 panel. Recipes so far say their firing only in the notes, if at all.
@@ -45,12 +48,13 @@ panel. Recipes so far say their firing only in the notes, if at all.
   (rare in pottery, last but there); SK offers its chart.
 - **Conversions are display only, labelled approximate, and say what they rest on.** Orton cones
   to °C by Orton's large-cone chart at 60 °C an hour (022–14; none above 14; a half cone halfway).
-  SK to °C **only** by Kyoto's measured bends (SK 8 1198 °C, SK 10 1232 °C, at 100 °C an hour),
-  labelled approximate; every other SK cone shows no temperature at all (owner's decision, review
-  2026-10-17). The JIS figures are never shown as a conversion: beside the measured ones they put
+  SK to °C **only** by Kyoto's measured bends for SK 8 and 10 (1198 °C and 1232 °C, at 100 °C an
+  hour), labelled approximate; every other SK cone shows no temperature at all (owner's decision,
+  review 2026-10-17). Kyoto measured SK 7 to 14 in the same table (see Context); the others are not
+  used. The JIS figures are never shown as a conversion: beside the measured ones they put
   the cones out of order (SK 7 1230 °C above SK 8 1198 °C, SK 9 1280 °C above SK 10). An SK cone
-  gets an Orton equivalent only where Kyoto measured it or named the replacement (SK 12 ≈ Orton
-  10). A range is converted only when both ends have a figure and they run low to high, so no
+  gets an Orton equivalent only from those two measured bends or where Kyoto named the replacement
+  (SK 12 ≈ Orton 10). A range is converted only when both ends have a figure and they run low to high, so no
   page shows half a range or one backwards. A shared recipe shows the author's own scale first,
   the conversion into the reader's beside it.
 - **The limits panel takes its bands from the firing.** Each cone maps to a band: Orton and
