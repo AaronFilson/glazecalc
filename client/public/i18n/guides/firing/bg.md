@@ -3,79 +3,79 @@ title: Изпичане в обикновена пещ
 lead: Как да изпичате в електрическа пещ с механичен изключвател Kiln-Sitter или с ръчни превключватели: избор, поставяне и отчитане на конусите, с публикувани програми за бисквитно и глазурно изпичане.
 ---
 
-## Cones: what they measure {#cones lang=en}
+## Конуси: какво измерват {#cones}
 
 > [!NOTE]
-> Follow your kiln's own manual first. This guide gathers what cone and kiln makers publish about basic electric kilns; it does not replace the instructions for your model, and where the two differ, the manual wins.
+> Преди всичко следвайте ръководството за експлоатация на собствената си пещ. Този наръчник събира какво публикуват производителите на конуси и пещи за обикновените електрически пещи; той не замества инструкциите за Вашия модел и където двете се различават, предимство има ръководството за експлоатация.
 
-A **pyrometric cone** is a small, slender pyramid made from a standardized ceramic powder. When it has had enough heat, it softens and bends over in a repeatable way. You set cones in the kiln beside the ware and read how far they bent.
+**Пирометричният конус**{{en: pyrometric cone}} е малка, тънка пирамида от стандартизиран керамичен прах. Когато получи достатъчно топлина, той омеква и се огъва по повторяем начин. Поставяте конусите в пещта до изделията и отчитате колко са се огънали.
 
-Cones measure **heatwork**, the combined effect of temperature and time. In the words of Orton, the main US cone maker, "Cones do not measure temperature alone." A cone heated slowly bends at a lower temperature than one heated fast, and a glaze behaves the same way. So Orton gives each cone's temperature for a stated heating rate over the last {{180 °F; 100 °C}} of the firing. Once a cone starts to move, it bends over a narrow range, "usually less than 40° F" (22 °C).
+Конусите измерват **топлинното въздействие**{{en: heatwork}} – съчетаното действие на температурата и времето. По думите на Orton, основния производител на конуси в САЩ: „Конусите не измерват само температурата.“ Конус, нагряван бавно, се огъва при по-ниска температура от конус, нагряван бързо, и глазурата{{en: glaze}} се държи по същия начин. Затова Orton дава температурата на всеки конус за определена скорост на нагряване през последните {{180 °F; 100 °C}} от изпичането. Щом конусът започне да се движи, той се огъва в тесен интервал, „обикновено по-малко от 40° F“ (22 °C).
 
-### Cone numbers
+### Номера на конусите
 
-Cone numbers run from 022, the coolest, up to 42. A leading zero marks the cooler series and is read as "oh": cone 06 ("oh-six") is cooler than cone 04, and cone 01 needs less heat than cone 1. Orton warns that it is important not to mix the two series up. The gap is large: cone 06 bends more than {{400 °F; 220 °C}} cooler than cone 6.
+Номерата на конусите вървят от 022, най-хладния, до 42. Водещата нула отбелязва по-хладната серия и се чете „нула“: конус 06 („нула шест“) е по-хладен от конус 04, а конус 01 изисква по-малко топлина от конус 1. Orton предупреждава, че е важно двете серии да не се бъркат. Разликата е голяма: конус 06 се огъва при температура с повече от {{400 °F; 220 °C}} по-ниска от тази на конус 6.
 
-Table: Common firing ranges, for self-supporting cones at {{108 °F/h; 60 °C/h}}
-Label: Firing ranges
+Table: Обичайни диапазони на изпичане, за самостоящи конуси при {{108 °F/h; 60 °C/h}}
+Label: Диапазони на изпичане
 
-| Range     | Cones |                    Temperature | Typical use                              |
-| --------- | ----- | -----------------------------: | ---------------------------------------- |
-| Low fire  | 06–04 |  {{1828–1945 °F; 998–1063 °C}} | Earthenware glazes; bisque               |
-| Mid fire  | 5–6   | {{2167–2232 °F; 1186–1222 °C}} | Electric-kiln stoneware and porcelain    |
-| High fire | 9–10  | {{2300–2345 °F; 1260–1285 °C}} | Mostly gas-fired stoneware and porcelain |
+| Диапазон                    | Конуси |                    Температура | Типична употреба                                                                                 |
+| --------------------------- | ------ | -----------------------------: | ------------------------------------------------------------------------------------------------ |
+| Нискотемпературно изпичане  | 06–04  |  {{1828–1945 °F; 998–1063 °C}} | Глазури за фаянс{{en: earthenware}} (нискотемпературна, пореста керамика); бисквит{{en: bisque}} |
+| Среднотемпературно изпичане | 5–6    | {{2167–2232 °F; 1186–1222 °C}} | Каменина{{en: stoneware}} и порцелан в електрическа пещ                                          |
+| Високотемпературно изпичане | 9–10   | {{2300–2345 °F; 1260–1285 °C}} | Предимно каменина и порцелан в газова пещ                                                        |
 
-Suppliers in the UK, Europe, Australia and New Zealand often give a temperature in °C rather than a cone: find the nearest cone in the chart below and confirm it with a witness cone. Seger and Staffordshire cones, the older European series, should not be assumed to share Orton's numbers, so this guide uses Orton cones.
+Доставчиците в Обединеното кралство, Европа, Австралия и Нова Зеландия често дават температура в °C вместо конус: намерете най-близкия конус в таблицата по-долу и го потвърдете с контролен конус{{en: witness cone}} на плочата до изделията. Не следва да се приема, че конусите на Зегер (Seger) и конусите Staffordshire, по-старите европейски серии, имат същите номера като конусите Orton, затова този наръчник използва конуси Orton.
 
-### Holding adds heatwork
+### Задържането добавя топлинно въздействие
 
-A **hold** (also called a **soak**) keeps the kiln at one temperature for a while. Because cones measure heatwork, a hold at the top can stand in for a hotter peak. Orton gives these rough equivalents:
+**Задържането**{{en: hold}} (наричано още **задръжка**) поддържа пещта известно време на една температура. Тъй като конусите измерват топлинното въздействие, задържането при максималната температура може да замести по-висока максимална температура. Orton дава следните приблизителни съответствия:
 
-Table: What a hold at the peak is worth
-Label: Holds and heatwork
+Table: На какво се равнява задържането при максималната температура
+Label: Задържане и топлинно въздействие
 
-| Hold             | Roughly the same heatwork as             |
-| ---------------- | ---------------------------------------- |
-| About 20 minutes | A peak {{18 °F; 10 °C}} hotter           |
-| 40–60 minutes    | A peak {{36 °F; 20 °C}} hotter           |
-| About 2 hours    | A peak {{54 °F; 30 °C}} hotter           |
-| 4–6 hours        | Enough to bend a cone two numbers hotter |
+| Задържане       | Приблизително същото топлинно въздействие като       |
+| --------------- | ---------------------------------------------------- |
+| Около 20 минути | Максимална температура, по-висока с {{18 °F; 10 °C}} |
+| 40–60 минути    | Максимална температура, по-висока с {{36 °F; 20 °C}} |
+| Около 2 часа    | Максимална температура, по-висока с {{54 °F; 30 °C}} |
+| 4–6 часа        | Достатъчно, за да огъне конус с два номера по-горещ  |
 
-Orton adds that a hold of 1–2 hours "may be sufficient to deform the next higher cone number".
+Orton допълва, че задържане от 1–2 часа „може да е достатъчно, за да деформира конуса със следващия, по-горещ номер“.
 
-So a hold is never free: if you add one, expect the cones to bend further, and lower the peak to match.
+Затова задържането никога не е без последствия: ако добавите такова, очаквайте конусите да се огънат повече и съответно понижете максималната температура.
 
-### Kinds of cone
+### Видове конуси
 
-Orton makes four kinds. Two stand on the shelf to show what the ware received; two are for the kiln sitter.
+Orton прави четири вида. Два стоят на плочата и показват какво са получили изделията; два са за механичния изключвател Kiln-Sitter.
 
-Table: Orton's four kinds of cone
-Label: Kinds of cone
+Table: Четирите вида конуси на Orton
+Label: Видове конуси
 
-| Kind            | Used for                  | How it stands                                                                               |
-| --------------- | ------------------------- | ------------------------------------------------------------------------------------------- |
-| Self-supporting | Witness cone on the shelf | A built-in base sets the height, 1¾ in (44 mm), and the 8° lean; no holder needed           |
-| Large           | Witness cone on the shelf | Set in a plaque or a pat of clay with exactly 2 in (51 mm) showing, leaning 8° from upright |
-| Small (junior)  | Kiln sitter               | Lies across the sitter's supports; 15/16 in (24 mm) showing if stood on a shelf             |
-| Bar             | Kiln sitter               | The same powder as small cones, in an even bar shape                                        |
+| Вид            | За какво се използва       | Как стои                                                                                                   |
+| -------------- | -------------------------- | ---------------------------------------------------------------------------------------------------------- |
+| Самостоящ      | Контролен конус на плочата | Вградената основа задава височината, 1¾ инча (44 mm), и наклона от 8°; не е нужен държач                   |
+| Голям          | Контролен конус на плочата | Забожда се в държач или в питка глина така, че да стърчат точно 2 инча (51 mm), с наклон 8° от вертикалата |
+| Малък (junior) | Kiln-Sitter                | Лежи напречно върху опорите на Kiln-Sitter; ако се постави на плоча, стърчат 15/16 инча (24 mm)            |
+| Пръчица        | Kiln-Sitter                | Същият прах като при малките конуси, във формата на равномерна пръчица                                     |
 
-Height matters: a ¼ in (6 mm) difference in the height of a large cone "can cause more than a half cone difference in bending". Cones do not go bad or age, and damp storage does not affect them.
+Височината е важна: разлика от ¼ инча (6 mm) във височината на голям конус „може да доведе до разлика в огъването от повече от половин конус“. Конусите не се развалят и не стареят, а влажното съхранение не им влияе.
 
-### What "cone 6" means in practice
+### Какво означава „конус 6“ на практика
 
-The chart gives a self-supporting cone 6 as {{2232 °F; 1222 °C}}, but only when the last {{180 °F; 100 °C}} climbs at {{108 °F/h; 60 °C/h}}. Climbing at {{270 °F/h; 150 °C/h}}, the same cone bends at {{2269 °F; 1243 °C}}. Real kilns differ again: Digitalfire reports that "Most kilns reach cone 6 at 2200°F, not 2232°F". So "cone 6" means the ware received the heatwork that bends a cone 6, whatever a thermometer read at the time.
+Таблицата дава за самостоящ конус 6 {{2232 °F; 1222 °C}}, но само когато последните {{180 °F; 100 °C}} се изминават със скорост {{108 °F/h; 60 °C/h}}. При нагряване с {{270 °F/h; 150 °C/h}} същият конус се огъва при {{2269 °F; 1243 °C}}. Истинските пещи пак се различават: Digitalfire съобщава, че „повечето пещи достигат конус 6 при 2200°F, а не при 2232°F“. Така че „конус 6“ означава, че изделията са получили топлинното въздействие, което огъва конус 6, каквото и да е показвал термометърът в този момент.
 
 :::orton
 
 > [!NOTE]
-> Fire by the cone, not the clock or the dial. Set a controller by cone number, and let a witness cone on the shelf confirm every firing.
+> Изпичайте по конуса, а не по часовника или по скалата. Настройвайте контролера по номер на конус и нека контролен конус на плочата потвърждава всяко изпичане.
 
 :::
 
 :::temperature
 
 > [!NOTE]
-> Firing by temperature, keep the end of every firing the same: the same last rate of climb, the same peak and the same hold. Then a glaze that worked once works again.
+> Когато изпичате по температура, поддържайте края на всяко изпичане еднакъв: същата последна скорост на нагряване, същата максимална температура и същото задържане. Тогава глазура, която е успяла веднъж, ще успее отново.
 
 :::
 
@@ -596,22 +596,22 @@ Label: Отправна точка за пещ с ръчно управлени�
 
 **Пирометърът** е уред, който показва температурата, измерена от **термодвойка** – температурен датчик, прекаран през стената на пещта. Той показва колко бързо се нагрява пещта, така че да изберете правилната колона на таблицата на конусите. Но той измерва близо до стената, а не при изделията, и показанията му се отклоняват с времето. L&L отбелязва, че термодвойка тип K може да греши с повече от {{25 °F; 14 °C}} след многократни изпичания до конус 6, „разлика, по-голяма от цял конус“, докато самостоящият конус варира с не повече от {{4 °F; 2 °C}}. Orton казва, че пирометрите трябва да се калибрират отново от време на време, а конусите са начинът да ги проверите.
 
-## Venting, peeking and safety {#venting lang=en}
+## Вентилация, наблюдение и безопасност {#venting}
 
-### Venting
+### Вентилация
 
-Early in a firing, clay and glaze give off water vapor and fumes, including carbon monoxide, and glazes can give off toxic fumes later in the firing too. L&L calls venting them "essential". With no vent system, that means the lid propped and the peepholes open in the early stages, as in the procedures above; slowing the heating during this time also helps the carbon burn out. In a kiln without a vent, Dawson, who made the sitter, also says to leave the top peephole open for the whole firing: the venting "will reduce deterioration of the kiln's metal parts and increase the life of the tube assembly". A **downdraft vent** (a powered vent fitted to the kiln) changes this. It does the venting, so Orton says the lid and peepholes stay closed for the whole firing except to check the cones, and L&L says to leave the vent on and plug the peepholes.
+В началото на изпичането глината и глазурата{{en: glaze}} отделят водна пара и газове, включително въглероден оксид, а глазурите могат да отделят токсични газове и пари и по-късно в изпичането. L&L нарича отвеждането им „от съществено значение“. Без вентилационна система това означава открехнат капак и отворени наблюдателни отвори в началните етапи, както в процедурите по-горе; забавянето на нагряването през това време помага и на въглерода да изгори. В пещ без вентилация Dawson, който е произвел Kiln-Sitter, казва също да се оставя горният наблюдателен отвор отворен през цялото изпичане: вентилирането „ще намали износването на металните части на пещта и ще увеличи живота на тръбния възел“. **Долната смукателна вентилация** (вентилатор с мотор, монтиран към пещта) променя това. Тя се грижи за вентилирането, затова според Orton капакът и наблюдателните отвори остават затворени през цялото изпичане, освен за проверка на конусите, а L&L казва да се остави вентилацията включена и наблюдателните отвори да се запушат.
 
-For venting the room, and for carbon monoxide alarms, see [Safe mixing and ventilation](/guides/safe-mixing) and [Don't poison your family](/guides/home-safety).
+За вентилацията на помещението и за детекторите за въглероден оксид вижте [Безопасно смесване и вентилация](/guides/safe-mixing) и [Не тровете семейството си](/guides/home-safety).
 
-### While the kiln is firing
+### Докато пещта работи
 
-- Look through a peephole only with IR-rated shade 3 welding glasses; sunglasses are not enough. Skutt advises twisting the plugs into place so they do not fall out.
-- Do not leave the kiln unattended beyond its expected firing time; a sitter is not a fail-safe.
-- Never fire on or near anything that burns, such as a wood floor or carpet.
-- Keep the clearances in your manual. Published figures range from 12 in (30 cm) to 3 ft (91 cm); where the manual is silent, 18 in (46 cm) from walls and 3 ft (91 cm) from anything that burns is the safest choice.
-- Keep the space around the sitter's weight clear so it can drop.
-- When the firing ends, turn the switches off and turn off the breaker as well.
+- Гледайте през наблюдателния отвор само със заваръчни очила със степен на затъмняване 3 и IR филтър; слънчевите очила не са достатъчни. Skutt съветва тапите да се завъртат при поставяне, за да не изпаднат.
+- Не оставяйте пещта без надзор след очакваното време на изпичане; Kiln-Sitter не е безотказна защита.
+- Никога не изпичайте върху нещо горимо или близо до него, като дървен под или килим.
+- Спазвайте безопасните разстояния от ръководството за експлоатация. Публикуваните стойности са от 12 инча (30 cm) до 3 фута (91 cm); когато ръководството не казва нищо, 18 инча (46 cm) от стените и 3 фута (91 cm) от всичко горимо е най-безопасният избор.
+- Пазете пространството около тежестта на Kiln-Sitter свободно, за да може тя да падне.
+- Когато изпичането приключи, изключете превключвателите, а също и предпазителя на веригата.
 
 ## Охлаждане и изваждане на изделията {#cooling}
 

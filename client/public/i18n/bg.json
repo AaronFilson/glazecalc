@@ -17,13 +17,17 @@
     "confirmEmail": "Потвърждаване на имейла – Glazecalc",
     "home": "Вашият бележник за ателието – Glazecalc",
     "recipe": "Рецепти – Glazecalc",
+    "import": "Поставяне на рецепти – Glazecalc",
+    "blends": "Смеси за пробни плочки – Glazecalc",
     "material": "Суровини – Glazecalc",
     "additive": "Добавки – Glazecalc",
     "firingLogs": "Дневници на изпичане – Glazecalc",
     "notes": "Бележки – Glazecalc",
     "trash": "Кошче – Glazecalc",
     "account": "Профил и настройки – Glazecalc",
-    "notFound": "Страницата не е намерена – Glazecalc"
+    "notFound": "Страницата не е намерена – Glazecalc",
+    "shared": "Споделена рецепта – Glazecalc",
+    "assistants": "Използвайте Glazecalc от своя AI асистент – Glazecalc"
   },
   "nav": {
     "skip": "Към съдържанието",
@@ -96,9 +100,14 @@
   },
   "remove": {
     "alreadyRemoved": "Вече е премахнато: „{name}“.",
+    "trashed": "Преместено в Кошчето: „{name}“.",
+    "undo": "Отмени",
+    "restored": "Възстановено: „{name}“.",
+    "restoreFailed": "Не успяхме да върнем „{name}“. Все още е в Кошчето.",
     "failed": "Премахването не беше успешно. Моля, опитайте отново.",
     "question": "Искате ли да премахнете „{name}“?",
     "cannotUndo": "Това не може да бъде отменено.",
+    "toTrash": "Можете да го върнете от Кошчето в рамките на 30 дни.",
     "removing": "Премахване…",
     "yes": "Да, премахни",
     "cancel": "Отказ",
