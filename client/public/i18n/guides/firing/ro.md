@@ -34,13 +34,14 @@ O **menținere**{{en: hold}} (în engleză și „soak”) ține cuptorul la ace
 Table: Cât valorează o menținere la temperatura maximă
 Label: Menținere și lucru termic
 
-| Menținere                | Aproximativ același lucru termic ca                                |
-| ------------------------ | ------------------------------------------------------------------ |
-| Aproximativ 20 de minute | O temperatură maximă cu {{18 °F; 10 °C}} mai înaltă                |
-| 40–60 de minute          | O temperatură maximă cu {{36 °F; 20 °C}} mai înaltă                |
-| Aproximativ 2 ore        | O temperatură maximă cu {{54 °F; 30 °C}} mai înaltă                |
-| 1–2 ore                  | „poate fi suficientă pentru a deforma conul imediat mai fierbinte” |
-| 4–6 ore                  | Suficientă pentru a îndoi un con cu două numere mai fierbinte      |
+| Menținere                | Aproximativ același lucru termic ca                           |
+| ------------------------ | ------------------------------------------------------------- |
+| Aproximativ 20 de minute | O temperatură maximă cu {{18 °F; 10 °C}} mai înaltă           |
+| 40–60 de minute          | O temperatură maximă cu {{36 °F; 20 °C}} mai înaltă           |
+| Aproximativ 2 ore        | O temperatură maximă cu {{54 °F; 30 °C}} mai înaltă           |
+| 4–6 ore                  | Suficientă pentru a îndoi un con cu două numere mai fierbinte |
+
+Orton adaugă că o menținere de 1–2 ore „poate fi suficientă pentru a deforma conul imediat mai fierbinte”.
 
 Așadar, o menținere nu este niciodată fără efect: dacă adăugați una, așteptați-vă ca conurile să se îndoaie mai mult și coborâți temperatura maximă pe măsură.
 
@@ -198,11 +199,11 @@ Multe dispozitive Kiln-Sitter, inclusiv modelele LT de la Dawson, au un **tempor
 Table: Pe cât timp setați temporizatorul de siguranță
 Label: Setările temporizatorului
 
-| Sursă     | Setare                                                                                                                                |
-| --------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| Dawson    | Cu ½ oră peste durata estimată a arderii până când vă cunoașteți cuptorul, mai târziu chiar și numai ¼ oră; niciodată peste 20 de ore |
-| L&L       | Pe o durată foarte lungă prima dată, notând cât durează arderea; după aceea, cu aproximativ 1 oră peste                               |
-| Bracker's | Cu 30 de minute până la 1 oră peste durata arderii                                                                                    |
+| Sursă     | Setare                                                                                                                                                    |
+| --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Dawson    | Cu ½ oră peste durata estimată a arderii până când vă cunoașteți cuptorul, mai târziu cu doar ¼ oră peste; nu-l setați niciodată la mai mult de 20 de ore |
+| L&L       | Pe o durată foarte lungă prima dată, notând cât durează arderea; după aceea, cu aproximativ 1 oră peste                                                   |
+| Bracker's | Cu 30 de minute până la 1 oră peste durata arderii                                                                                                        |
 
 > [!NOTE]
 > Punctul nostru de plecare: generos prima dată (în limita celor 20 de ore de pe cadran), apoi cu ½ până la 1 oră peste timpul pe care l-ați notat. Temporizatorul vă arată și cât a durat arderea: setat la 7 și oprit la 1 înseamnă 6 ore.
@@ -375,7 +376,7 @@ Conurile Orton autoportante se vând în Japonia sub numele 立つゼーゲル (
 
 ### De ce începutul merge încet
 
-Apa care se transformă în abur „se dilată de 1170 de ori”, notează Bracker's, așa că piesele umede trebuie uscate încet. L&L și Orton recomandă: „Sub 1500°F (815°C) ar trebui acordată o atenție deosebită încălzirii uniforme a corpului ceramic” și spun că carbonul trebuie ars complet înainte de aproximativ {{1200 °F; 650 °C}}. Peste {{1500 °F; 816 °C}} cuptorul poate urca mai repede.
+Apa se dilată de peste o mie de ori când se transformă în abur, așa că piesele umede trebuie uscate încet. L&L și Orton recomandă: „Sub 1500°F (815°C) ar trebui acordată o atenție deosebită încălzirii uniforme a corpului ceramic” și spun că carbonul trebuie ars complet înainte de aproximativ {{1200 °F; 650 °C}}. Peste {{1500 °F; 816 °C}} cuptorul poate urca mai repede.
 
 Table: Ce se întâmplă când biscuitul se încălzește
 Label: Ce se întâmplă la arderea biscuit
@@ -595,22 +596,22 @@ Dacă Kiln-Sitter se declanșează înainte să se culce conurile de pe placă, 
 
 Un **pirometru** este un indicator de temperatură care citește un **termocuplu**, o sondă de temperatură trecută prin peretele cuptorului. Arată cât de repede urcă cuptorul, ca să puteți alege coloana potrivită din tabelul conurilor. Dar citește lângă perete, nu la nivelul pieselor, și se decalibrează în timp. L&L observă că un termocuplu de tip K poate greși cu peste {{25 °F; 14 °C}} după arderi repetate la conul 6, „o diferență mai mare decât un con întreg”, în timp ce un con autoportant variază cu cel mult {{4 °F; 2 °C}}. Orton spune că pirometrele trebuie recalibrate din când în când, iar conurile sunt mijlocul prin care le verificați.
 
-## Aerisirea, privitul prin vizor și siguranța {#venting}
+## Ventilarea, privitul și siguranța {#venting}
 
-### Aerisirea
+### Ventilarea
 
-La începutul arderii, argila și glazura{{en: glaze}} degajă vapori de apă și gaze, inclusiv monoxid de carbon, iar glazurile pot degaja gaze și vapori toxici și mai târziu în timpul arderii. L&L numește evacuarea lor „esențială”. Fără sistem de evacuare, asta înseamnă capacul întredeschis și vizoarele deschise în primele etape, ca în procedurile de mai sus; încetinirea încălzirii în această perioadă ajută și la arderea completă a carbonului. Cu un **sistem de evacuare prin partea de jos** (un sistem de evacuare cu ventilator, montat pe cuptor), Orton spune că pe toată durata arderii capacul și vizoarele rămân închise, în afară de momentele în care verificați conurile{{en: cones}}. Un vizor de sus deschis protejează și tubul de la Kiln-Sitter, și piesele metalice ale cuptorului.
+La începutul unei arderi, argila și glazura{{en: glaze}} degajă vapori de apă și fum, inclusiv monoxid de carbon, iar glazurile pot degaja fum toxic și mai târziu în timpul arderii. L&L spune că evacuarea lor este „esențială”. Fără un sistem de evacuare, asta înseamnă capacul ridicat puțin și vizoarele deschise în primele etape, ca în procedurile de mai sus; încetinirea încălzirii în acest timp ajută și la arderea carbonului. Într-un cuptor fără evacuare, Dawson, care a făcut sitterul, spune de asemenea să lăsați vizorul de sus deschis pe toată durata arderii: ventilarea „va reduce deteriorarea pieselor metalice ale cuptorului și va crește durata de viață a ansamblului tubului”. O **evacuare prin partea de jos**{{en: downdraft vent}} (o evacuare cu motor montată pe cuptor) schimbă acest lucru. Ea face ventilarea, așa că Orton spune că capacul și vizoarele rămân închise pe toată durata arderii, cu excepția verificării conurilor, iar L&L spune să lăsați evacuarea pornită și să astupați vizoarele.
 
-Pentru aerisirea încăperii și pentru detectoarele de monoxid de carbon, vedeți ghidurile [Prepararea în siguranță și ventilația](/guides/safe-mixing) și [Nu vă otrăviți familia](/guides/home-safety).
+Pentru ventilarea încăperii și pentru detectoarele de monoxid de carbon, vedeți [Prepararea în siguranță și ventilația](/guides/safe-mixing) și [Nu vă otrăviți familia](/guides/home-safety).
 
-### Cât timp cuptorul este pornit
+### În timp ce cuptorul arde
 
-- Uitați-vă prin vizor doar cu ochelari de sudură cu nuanța 3, cu filtru IR; ochelarii de soare nu sunt suficienți. Skutt recomandă să fixați dopurile răsucindu-le, ca să nu cadă.
-- Nu lăsați cuptorul nesupravegheat după durata estimată a arderii; Kiln-Sitter nu este o protecție sigură în caz de defecțiune.
-- Nu porniți niciodată cuptorul pe sau lângă ceva ce poate lua foc, cum ar fi o podea de lemn sau un covor.
-- Respectați distanțele de siguranță din manualul cuptorului. Valorile publicate variază între 12 țoli (30 cm) și 3 picioare (91 cm); acolo unde manualul nu spune nimic, 18 țoli (46 cm) față de pereți și 3 picioare (91 cm) față de orice poate lua foc sunt alegerea cea mai sigură.
-- Păstrați liber spațiul din jurul greutății de la Kiln-Sitter, ca să poată cădea.
-- Când arderea se termină, opriți comutatoarele și decuplați și siguranța automată.
+- Priviți printr-un vizor numai cu ochelari de sudură cu filtru IR, grad de protecție 3; ochelarii de soare nu sunt suficienți. Skutt recomandă să răsuciți dopurile când le puneți, ca să nu cadă.
+- Nu lăsați cuptorul nesupravegheat peste timpul de ardere așteptat; un sitter nu este un sistem infailibil.
+- Nu folosiți niciodată cuptorul pe sau lângă ceva combustibil, cum ar fi o podea de lemn sau un covor.
+- Respectați distanțele de siguranță din manualul dumneavoastră. Cifrele publicate variază de la 12 țoli (30 cm) la 3 picioare (91 cm); unde manualul tace, 18 țoli (46 cm) de pereți și 3 picioare (91 cm) de orice material combustibil este alegerea cea mai sigură.
+- Țineți liber spațiul din jurul greutății sitterului, ca să poată cădea.
+- Când arderea se termină, opriți comutatoarele și opriți și disjunctorul.
 
 ## Răcirea și descărcarea {#cooling}
 

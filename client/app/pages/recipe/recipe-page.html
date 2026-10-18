@@ -14,34 +14,56 @@
   @if (pendingLeave()?.page) {
     <ng-container [ngTemplateOutlet]="unsavedQuestion" />
   }
-  @if (printRecipe(); as recipe) {
-    <gc-recipe-print [recipe]="recipe" [chemistryOf]="chemistryOf" (back)="closePrint()" />
-  } @else if (printWaiting()) {
+  <!--
+    Print, compare, share, the swap report and the materials to try are each their own file, fetched once the
+    page is idle (@defer, prefetch on idle), so the page itself starts sooner; each draws when asked for, as before,
+    and says it is coming if its file is not in yet.
+  -->
+  @defer (when printRecipe(); prefetch on idle) {
+    @if (printRecipe(); as recipe) {
+      <gc-recipe-print
+        [recipe]="recipe"
+        [chemistryOf]="chemistryOf"
+        [hazards]="printHazards()"
+        [startMode]="printSheet()"
+        (back)="closePrint()"
+      />
+    }
+  } @loading {
     <p class="muted" role="status">{{ t('recipe.page.gettingPrint') }}</p>
-  } @else if (comparing()) {
-    <gc-recipe-compare
-      [left]="compareLeft()"
-      [right]="compareRight()"
-      [leftKey]="compareKeys()?.left ?? ''"
-      [rightKey]="compareKeys()?.right ?? ''"
-      [choices]="compareChoices()"
-      [chemistryOf]="chemistryOf"
-      (choose)="chooseCompared($event)"
-      (back)="closeCompare()"
-    >
-      @if (reportInCompare() && swapResult(); as result) {
-        <gc-swap-report
-          [result]="result"
-          [level]="2"
-          [mine]="myMaterials()"
-          [standard]="standardMaterials()"
-          [hideLead]="leadOff()"
-          [inRecipe]="swapKeys()"
-          (rerun)="rerun($event)"
-        />
-      }
-    </gc-recipe-compare>
-  } @else if (compareWaiting()) {
+  }
+  @if (!printRecipe() && printWaiting()) {
+    <p class="muted" role="status">{{ t('recipe.page.gettingPrint') }}</p>
+  }
+  @defer (when comparing(); prefetch on idle) {
+    @if (!printRecipe() && !printWaiting() && comparing()) {
+      <gc-recipe-compare
+        [left]="compareLeft()"
+        [right]="compareRight()"
+        [leftKey]="compareKeys()?.left ?? ''"
+        [rightKey]="compareKeys()?.right ?? ''"
+        [choices]="compareChoices()"
+        [chemistryOf]="chemistryOf"
+        (choose)="chooseCompared($event)"
+        (back)="closeCompare()"
+      >
+        @if (reportInCompare() && swapResult(); as result) {
+          <gc-swap-report
+            [result]="result"
+            [level]="2"
+            [mine]="myMaterials()"
+            [standard]="standardMaterials()"
+            [hideLead]="leadOff()"
+            [inRecipe]="swapKeys()"
+            (rerun)="rerun($event)"
+          />
+        }
+      </gc-recipe-compare>
+    }
+  } @loading {
+    <p class="muted" role="status">{{ t('recipe.page.gettingCompare') }}</p>
+  }
+  @if (!printRecipe() && !printWaiting() && !comparing() && compareWaiting()) {
     <p class="muted" role="status">{{ t('recipe.page.gettingCompare') }}</p>
   }
   <!-- Hidden, not removed, while printing or comparing: what is being edited stays just as it was. -->
@@ -49,6 +71,15 @@
     <gc-page-header [title]="t('recipe.page.title')" [lead]="t('recipe.page.lead')" />
     <gc-recipe-help [empty]="recipesLoaded() ? !myRecipes().length : null" />
     <gc-notices [notices]="notices" />
+    @if (ownFailed()) {
+      <p class="panel recipe-retry">
+        <gc-rich [text]="t('recipe.page.ownNotFetched')" [links]="{ retry: retryOwn }" />
+      </p>
+    }
+    <nav class="recipe-tools" [attr.aria-label]="t('recipe.page.toolsLabel')">
+      <a routerLink="/import">{{ t('recipe.page.pasteIn') }}</a>
+      <a routerLink="/blends">{{ t('recipe.page.blends') }}</a>
+    </nav>
 
     <!-- A potter's collection, first: each name opens it in the editor below; the rest is under More. -->
     @if (myRecipes().length) {
@@ -68,6 +99,34 @@
             />
           }
         </div>
+        @if (firingFiltersShown()) {
+          <div class="saved-firing-filters">
+            <select
+              id="saved-cone-filter"
+              class="form-select form-select-sm"
+              [attr.aria-label]="t('recipe.firing.filterCone')"
+              [(ngModel)]="coneFilter"
+            >
+              <option value="">{{ t('recipe.firing.anyCone') }}</option>
+              @for (option of coneOptions(); track option.key) {
+                <option [value]="option.key">{{ option.label }}</option>
+              }
+            </select>
+            @if (atmosphereOptions().length) {
+              <select
+                id="saved-atmosphere-filter"
+                class="form-select form-select-sm"
+                [attr.aria-label]="t('recipe.firing.filterAtmosphere')"
+                [(ngModel)]="atmosphereFilter"
+              >
+                <option value="">{{ t('recipe.firing.anyAtmosphere') }}</option>
+                @for (option of atmosphereOptions(); track option.key) {
+                  <option [value]="option.key">{{ option.label }}</option>
+                }
+              </select>
+            }
+          </div>
+        }
         <ul class="saved-list">
           @for (rec of shownRecipes(); track rec._id) {
             <li class="saved-recipe" [class.is-open]="rec._id === savedId()">
@@ -86,6 +145,9 @@
                   }
                   @if (rec._id === savedId()) {
                     <span class="saved-open-mark">{{ t('recipe.page.openAbove') }}</span>
+                  }
+                  @if (savedFiring(rec); as fired) {
+                    <span class="saved-firing">{{ fired }}</span>
                   }
                 </span>
                 <span class="saved-recipe-actions">
@@ -129,6 +191,33 @@
                     >
                       {{ t('recipe.page.compare') }}
                     </button>
+                    <a
+                      class="btn btn-light border btn-sm"
+                      routerLink="/blends"
+                      [queryParams]="{ recipe: rec._id }"
+                      [attr.aria-label]="t('recipe.page.blendName', { title: rec.title })"
+                    >
+                      {{ t('recipe.page.blend') }}
+                    </a>
+                    <button
+                      [id]="'duplicate-' + rec._id"
+                      type="button"
+                      class="btn btn-light border btn-sm"
+                      [attr.aria-label]="t('recipe.firing.duplicateName', { title: rec.title })"
+                      (click)="duplicateForCone(rec)"
+                    >
+                      {{ t('recipe.firing.duplicate') }}
+                    </button>
+                    <button
+                      [id]="'share-' + rec._id"
+                      type="button"
+                      class="btn btn-light border btn-sm"
+                      [attr.aria-expanded]="shareOpen() === rec._id"
+                      [attr.aria-label]="t('recipe.page.shareName', { title: rec.title })"
+                      (click)="toggleShare(rec)"
+                    >
+                      {{ t('recipe.page.share') }}
+                    </button>
                     <gc-remove-button
                       danger
                       [name]="rec.title"
@@ -140,6 +229,11 @@
                   </span>
                 }
               </div>
+              @defer (when shareOpen() === rec._id && moreOpen().has(rec._id); prefetch on idle) {
+                @if (shareOpen() === rec._id && moreOpen().has(rec._id)) {
+                  <gc-share-panel [recipeId]="rec._id" [trial]="isTrial()" />
+                }
+              }
               @if (expanded().has(rec._id ?? '')) {
                 <div class="saved-recipe-details">
                   <em>{{ t('recipe.page.savedMaterials') }}</em>
@@ -231,6 +325,21 @@
             [(ngModel)]="notes"
           ></textarea>
         </div>
+        <gc-recipe-firing [(block)]="firedAt" [(foodSurface)]="foodSurface" />
+        @if (firingsShown()) {
+          <gc-recipe-firings
+            [(links)]="firings"
+            [(block)]="firedAt"
+            [recipeId]="savedId()"
+            (saved)="linksSaved($event)"
+          />
+        } @else {
+          <p>
+            <button id="firings-open" type="button" class="btn btn-link p-0" (click)="firingsAsked.set(true)">
+              {{ t('recipe.firings.open') }}
+            </button>
+          </p>
+        }
 
         <h3 id="materials-heading" tabindex="-1">{{ t('recipe.page.materialsHeading') }}</h3>
         @if (lines().length) {
@@ -389,6 +498,7 @@
               @if (suggestQuestion(); as question) {
                 <section class="recipe-suggest" aria-labelledby="suggest-heading">
                   <h4 id="suggest-heading" tabindex="-1">{{ t('recipe.page.suggestHeading') }}</h4>
+                  <gc-own-limits-note />
                   @for (short of question.plan.shortfalls; track short.oxide) {
                     <fieldset>
                       <legend>
@@ -451,16 +561,18 @@
                       {{ t('recipe.page.materialsToTry', { count: suggestTries().length }) }}
                     </button>
                   </div>
-                  @if (tryingMore()) {
-                    <gc-try-materials
-                      [(tries)]="suggestTries"
-                      [mine]="myMaterials()"
-                      [standard]="standardMaterials()"
-                      [standardFailed]="standardMaterialsFailed()"
-                      (retry)="loadStandardMaterials()"
-                      [hideLead]="leadOff()"
-                      [inRecipe]="materialKeys()"
-                    />
+                  @defer (when tryingMore(); prefetch on idle) {
+                    @if (tryingMore()) {
+                      <gc-try-materials
+                        [(tries)]="suggestTries"
+                        [mine]="myMaterials()"
+                        [standard]="standardMaterials()"
+                        [standardFailed]="standardMaterialsFailed()"
+                        (retry)="loadStandardMaterials()"
+                        [hideLead]="leadOff()"
+                        [inRecipe]="materialKeys()"
+                      />
+                    }
                   }
                   <div class="recipe-swap-buttons">
                     <button type="button" class="btn btn-primary btn-sm" (click)="workOutSuggestion()">
@@ -503,6 +615,7 @@
             @if (leadQuestion(); as question) {
               <section class="recipe-suggest" aria-labelledby="lead-heading">
                 <h4 id="lead-heading" tabindex="-1">{{ t('recipe.page.replaceHeading') }}</h4>
+                <gc-own-limits-note />
                 <div class="recipe-lead-cone">
                   <label for="lead-cone">{{
                     byCones() ? t('recipe.page.firedToCone') : t('recipe.page.firedTo')
@@ -582,17 +695,19 @@
                       {{ t('recipe.page.materialsToTry', { count: leadTries().length }) }}
                     </button>
                   </div>
-                  @if (tryingMore()) {
-                    <gc-try-materials
-                      [(tries)]="leadTries"
-                      [mine]="myMaterials()"
-                      [standard]="standardMaterials()"
-                      [standardFailed]="standardMaterialsFailed()"
-                      (retry)="loadStandardMaterials()"
-                      [hideLead]="leadOff()"
-                      [inRecipe]="materialKeys()"
-                      [intro]="t('recipe.page.leadTriesIntro')"
-                    />
+                  @defer (when tryingMore(); prefetch on idle) {
+                    @if (tryingMore()) {
+                      <gc-try-materials
+                        [(tries)]="leadTries"
+                        [mine]="myMaterials()"
+                        [standard]="standardMaterials()"
+                        [standardFailed]="standardMaterialsFailed()"
+                        (retry)="loadStandardMaterials()"
+                        [hideLead]="leadOff()"
+                        [inRecipe]="materialKeys()"
+                        [intro]="t('recipe.page.leadTriesIntro')"
+                      />
+                    }
                   }
                 }
                 <div class="recipe-swap-buttons">
@@ -628,34 +743,43 @@
             @if (shelfOpen()) {
               <section class="recipe-suggest" aria-labelledby="shelf-heading">
                 <h4 id="shelf-heading" tabindex="-1">{{ t('recipe.page.shelfHeading') }}</h4>
+                <gc-own-limits-note />
                 <p>{{ t('recipe.page.shelfIntro') }}</p>
-                @if (shelfLoaded()) {
-                  <div class="recipe-swap-buttons">
-                    <button type="button" class="btn btn-light border btn-sm" (click)="addRecipeToShelf()">
-                      {{ t('recipe.page.addRecipeToShelf') }}
-                    </button>
-                  </div>
-                  <gc-try-materials
-                    [tries]="shelfTries()"
-                    (triesChange)="changeShelf($event)"
-                    [mine]="myMaterials()"
-                    [standard]="standardMaterials()"
-                    [standardFailed]="standardMaterialsFailed()"
-                    (retry)="loadStandardMaterials()"
-                    [hideLead]="leadOff()"
-                    [inRecipe]="noKeys"
-                    [intro]="t('recipe.page.shelfTriesIntro')"
-                    list="shelf"
-                  />
-                  @if (shelfLeadHidden(); as hidden) {
-                    <p class="library-hidden recipe-shelf-lead">
-                      <gc-rich
-                        [text]="t('recipe.page.shelfLeadHidden', { count: hidden })"
-                        [links]="{ settings: '/account' }"
-                      />
-                    </p>
+                @defer (when shelfLoaded(); prefetch on immediate) {
+                  @if (shelfLoaded()) {
+                    <div class="recipe-swap-buttons">
+                      <button type="button" class="btn btn-light border btn-sm" (click)="addRecipeToShelf()">
+                        {{ t('recipe.page.addRecipeToShelf') }}
+                      </button>
+                    </div>
+                    <gc-try-materials
+                      [tries]="shelfTries()"
+                      (triesChange)="changeShelf($event)"
+                      [mine]="myMaterials()"
+                      [standard]="standardMaterials()"
+                      [standardFailed]="standardMaterialsFailed()"
+                      (retry)="loadStandardMaterials()"
+                      [hideLead]="leadOff()"
+                      [inRecipe]="noKeys"
+                      [intro]="t('recipe.page.shelfTriesIntro')"
+                      list="shelf"
+                    />
+                    @if (shelfLeadHidden(); as hidden) {
+                      <p class="library-hidden recipe-shelf-lead">
+                        <gc-rich
+                          [text]="t('recipe.page.shelfLeadHidden', { count: hidden })"
+                          [links]="{ settings: '/account' }"
+                        />
+                      </p>
+                    }
+                  } @else if (!shelfProblem()) {
+                    <p class="muted">{{ t('recipe.page.gettingShelf') }}</p>
                   }
-                } @else if (!shelfProblem()) {
+                } @placeholder {
+                  @if (!shelfProblem()) {
+                    <p class="muted">{{ t('recipe.page.gettingShelf') }}</p>
+                  }
+                } @loading {
                   <p class="muted">{{ t('recipe.page.gettingShelf') }}</p>
                 }
                 <p class="recipe-shelf-status" role="status">{{ shelfStatus() }}</p>
@@ -686,24 +810,26 @@
             }
           </div>
         }
-        @if (swapUndo(); as undo) {
-          <div class="recipe-swap">
-            <p>{{ t('recipe.page.swapped') }}</p>
-            <button id="undo-swap" type="button" class="btn btn-light border btn-sm" (click)="undoSwap()">
-              {{ t('recipe.page.undoSwap') }}
-            </button>
-            @if (!reportInCompare() && undo.result; as result) {
-              <gc-swap-report
-                [result]="result"
-                [level]="4"
-                [mine]="myMaterials()"
-                [standard]="standardMaterials()"
-                [hideLead]="leadOff()"
-                [inRecipe]="swapKeys()"
-                (rerun)="rerun($event)"
-              />
-            }
-          </div>
+        @defer (when swapUndo(); prefetch on idle) {
+          @if (swapUndo(); as undo) {
+            <div class="recipe-swap">
+              <p>{{ t('recipe.page.swapped') }}</p>
+              <button id="undo-swap" type="button" class="btn btn-light border btn-sm" (click)="undoSwap()">
+                {{ t('recipe.page.undoSwap') }}
+              </button>
+              @if (!reportInCompare() && undo.result; as result) {
+                <gc-swap-report
+                  [result]="result"
+                  [level]="4"
+                  [mine]="myMaterials()"
+                  [standard]="standardMaterials()"
+                  [hideLead]="leadOff()"
+                  [inRecipe]="swapKeys()"
+                  (rerun)="rerun($event)"
+                />
+              }
+            </div>
+          }
         }
 
         <gc-recipe-library
@@ -803,6 +929,11 @@
           (retry)="loadStandardAdditives()"
         />
 
+        @if (lines().length || additiveLines().length) {
+          <gc-recipe-hazards [sources]="hazardSources()" />
+          <gc-recipe-cost [materials]="lines()" [additives]="additiveLines()" />
+        }
+
         <div class="recipe-save">
           <button type="button" class="btn btn-primary" [attr.aria-disabled]="saving.active() || null" (click)="save()">
             {{ t('recipe.page.save') }}
@@ -850,6 +981,11 @@
         </div>
         @if (evaluation().analysis; as analysis) {
           <gc-unity-formula [analysis]="analysis" />
+          <p class="unity-working">
+            <button id="worked-draft" type="button" class="btn btn-light border btn-sm" (click)="printDraft('worked')">
+              {{ t('recipe.page.showWorking') }}
+            </button>
+          </p>
           @if (evaluation().warnings.length) {
             <ul class="unity-warnings">
               @for (warning of evaluation().warnings; track warning) {
@@ -879,6 +1015,15 @@
         }
       </section>
     </div>
+    @if (evaluation().analysis; as analysis) {
+      <gc-recipe-numbers
+        [analysis]="analysis"
+        [counted]="includeAdditives()"
+        [(firing)]="firing"
+        [firedAt]="firedAt()"
+      />
+    }
+    <gc-slurry-calculator [(sgTarget)]="sgTarget" />
   </div>
   <!-- What an action did that the focus does not show, for screen readers; outside the part hidden while printing or comparing. -->
   <p class="visually-hidden" role="status">{{ announcement() }}</p>

@@ -34,13 +34,14 @@ A **hold** (also called a **soak**) keeps the kiln at one temperature for a whil
 Table: What a hold at the peak is worth
 Label: Holds and heatwork
 
-| Hold             | Roughly the same heatwork as                              |
-| ---------------- | --------------------------------------------------------- |
-| About 20 minutes | A peak {{18 °F; 10 °C}} hotter                            |
-| 40–60 minutes    | A peak {{36 °F; 20 °C}} hotter                            |
-| About 2 hours    | A peak {{54 °F; 30 °C}} hotter                            |
-| 1–2 hours        | "may be sufficient to deform the next higher cone number" |
-| 4–6 hours        | Enough to bend a cone two numbers hotter                  |
+| Hold             | Roughly the same heatwork as             |
+| ---------------- | ---------------------------------------- |
+| About 20 minutes | A peak {{18 °F; 10 °C}} hotter           |
+| 40–60 minutes    | A peak {{36 °F; 20 °C}} hotter           |
+| About 2 hours    | A peak {{54 °F; 30 °C}} hotter           |
+| 4–6 hours        | Enough to bend a cone two numbers hotter |
+
+Orton adds that a hold of 1–2 hours "may be sufficient to deform the next higher cone number".
 
 So a hold is never free: if you add one, expect the cones to bend further, and lower the peak to match.
 
@@ -198,11 +199,11 @@ Many sitters, including Dawson's LT models, have a **limit timer**: a clock that
 Table: How long to set the limit timer
 Label: Limit timer settings
 
-| Source    | Setting                                                                                                               |
-| --------- | --------------------------------------------------------------------------------------------------------------------- |
-| Dawson    | ½ hour longer than the expected firing time until you know the kiln, later as little as ¼ hour; never beyond 20 hours |
-| L&L       | Very high the first time, noting how long the firing takes; after that, about 1 hour longer                           |
-| Bracker's | 30 minutes to 1 hour longer than the firing time                                                                      |
+| Source    | Setting                                                                                                                      |
+| --------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| Dawson    | ½ hour longer than the expected firing time until you know the kiln, later as little as ¼ hour; never set it beyond 20 hours |
+| L&L       | Very high the first time, noting how long the firing takes; after that, about 1 hour longer                                  |
+| Bracker's | 30 minutes to 1 hour longer than the firing time                                                                             |
 
 > [!NOTE]
 > Our starting point: generous the first time (within the dial's 20 hours), then ½ to 1 hour longer than the time you recorded. The timer also tells you how long a firing took: set at 7 and ending at 1 means 6 hours.
@@ -375,7 +376,7 @@ The **bisque** firing (biscuit in the UK) is the first, lower firing that turns 
 
 ### Why the early part goes slowly
 
-Water turning to steam "expands 1,170 times", Bracker's notes, so damp ware has to be dried slowly. L&L and Orton advise that "Special care should be taken below 1500°F (815°C) to heat the body evenly", and that carbon must be burned out before about {{1200 °F; 650 °C}}. Above {{1500 °F; 816 °C}} the kiln can climb faster.
+Water expands more than a thousandfold as it turns to steam, so damp ware has to be dried slowly. L&L and Orton advise that "Special care should be taken below 1500°F (815°C) to heat the body evenly", and that carbon must be burned out before about {{1200 °F; 650 °C}}. Above {{1500 °F; 816 °C}} the kiln can climb faster.
 
 Table: What happens as a bisque heats
 Label: What happens in a bisque
@@ -599,7 +600,7 @@ A **pyrometer** is a temperature gauge read from a **thermocouple**, a heat prob
 
 ### Venting
 
-Early in a firing, clay and glaze give off water vapor and fumes, including carbon monoxide, and glazes can give off toxic fumes later in the firing too. L&L calls venting them "essential". With no vent system, that means the lid propped and the peepholes open in the early stages, as in the procedures above; slowing the heating during this time also helps the carbon burn out. With a **downdraft vent** (a powered vent fitted to the kiln), Orton says the lid and peepholes stay closed for the whole firing except to check the cones. An open top peephole also protects the sitter tube and the kiln's metal parts.
+Early in a firing, clay and glaze give off water vapor and fumes, including carbon monoxide, and glazes can give off toxic fumes later in the firing too. L&L calls venting them "essential". With no vent system, that means the lid propped and the peepholes open in the early stages, as in the procedures above; slowing the heating during this time also helps the carbon burn out. In a kiln without a vent, Dawson, who made the sitter, also says to leave the top peephole open for the whole firing: the venting "will reduce deterioration of the kiln's metal parts and increase the life of the tube assembly". A **downdraft vent** (a powered vent fitted to the kiln) changes this. It does the venting, so Orton says the lid and peepholes stay closed for the whole firing except to check the cones, and L&L says to leave the vent on and plug the peepholes.
 
 For venting the room, and for carbon monoxide alarms, see [Safe mixing and ventilation](/guides/safe-mixing) and [Don't poison your family](/guides/home-safety).
 

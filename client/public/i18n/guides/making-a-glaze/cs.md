@@ -48,7 +48,7 @@ Label: Základní sada
 | Draselný živec                              | Ten, který se právě prodává tam, kde žijete, například Mahavir v USA                                             |
 | Nefelinický syenit{{en: nepheline syenite}} | Jakýkoli; Glazy uvádí jeho silnější tavicí účinek, často se používá při nízkoteplotním a středněteplotním výpalu |
 | Křída                                       | Jakákoli                                                                                                         |
-| Mastek                                      | Jakýkoli                                                                                                         |
+| Mastek                                      | Jakýkoli druh bez azbestu; zkontrolujte jeho bezpečnostní list (viz Bezpečné míchání)                            |
 | Boritá frita, pro středněteplotní výpal     | Ferro 3134, 3124 nebo 3195; ve Velké Británii Potterycrafts P3124 nebo P3195                                     |
 | Bentonit a barviva                          | Malá množství                                                                                                    |
 
@@ -211,7 +211,7 @@ Label: Voda pro cílovou měrnou hmotnost
 
 **CMC** (karboxymethylcelulóza) dělá glazurovou suspenzi lepivější a pomaleji schnoucí a zanechává tvrdší vrstvu, která na výrobku drží. Nejdůležitější je u glazur na nanášení štětcem a u glazur s vysokým podílem frity{{en: frit}}. V příkladu od Digitalfire se 3,75 g zamíchá do 1000 g suspenze a musí se přidat mixérem. Glazura s CMC se hořkou solí nezgelovatí a protože se tímto pojivem živí mikroby, může se v kbelíku měnit a začít zapáchat.
 
-**Bentonit**, velmi jemný jíl, pomáhá udržet ostatní částice ve vznosu. Glazury na namáčení k tomu obvykle spoléhají na 15–25 % syrové hlíny. U receptu s nedostatkem hlíny pomůže asi 1–2 % bentonitu.
+**Bentonit**, velmi jemný jíl, pomáhá udržet ostatní částice ve vznosu. Glazury na namáčení k tomu obvykle spoléhají na 15–25 % syrové hlíny. U receptu s nedostatkem hlíny pomůže asi 1–3 % bentonitu; podle Digitalfire by glazura s více než 15 % hlíny neměla potřebovat víc než 1 %.
 
 ## Zkušební střípky a zkušební řady {#testing}
 
@@ -284,6 +284,7 @@ Label: Šablona záznamu
 - [Digitalfire: Epsom salts](https://digitalfire.com/material/epsom+salts)
 - [Digitalfire: CMC gum](https://digitalfire.com/material/cmc%2Bgum)
 - [Digitalfire: Dipping glaze](https://digitalfire.com/glossary/dipping+glaze)
+- [Digitalfire: Bentonite](https://digitalfire.com/material/bentonite)
 - [Digitalfire: Water solubility](https://digitalfire.com/glossary/water+solubility)
 - [Digitalfire: Gerstley Borate](https://digitalfire.com/material/gerstley+borate)
 - [Digitalfire: Mahavir potash feldspar](https://digitalfire.com/material/mahavir+potash+feldspar)

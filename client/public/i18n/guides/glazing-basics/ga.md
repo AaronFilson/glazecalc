@@ -38,7 +38,7 @@ Is éard is **sliopa** ann cré ar fuaidreán in uisce, a úsáidtear le haghaid
 
 ### An dá bhácáil
 
-Is í an **bhrioscbhácáil**{{en: bisque}} (sa Ríocht Aontaithe: **biscuit**) an chéad bhácáil, agus an ceann is fuaire den dá cheann, cón 08–04 de ghnáth, thart ar {{1740–1940 °F; 950–1060 °C}}. Fágann sí na hearraí láidir ach póiriúil. Molann Digitalfire, suíomh tagartha faoi ghlónraí, póiriúlacht os cionn 15% go ginearálta, sa chaoi go dtarraingíonn na brioscghréithe uisce as an nglónra agus é á chur orthu. Fágann brioscbhácáil bhog (cón 08–06) na hearraí níos póiriúla; fágann brioscbhácáil chrua (cón 04 go minic) níos láidre iad, ach ní ghlacann siad an glónra chomh héasca.
+Is í an **bhrioscbhácáil**{{en: bisque}} (sa Ríocht Aontaithe: **biscuit**) an chéad bhácáil, agus an ceann is fuaire den dá cheann, cón 08–04 de ghnáth (cón 06–04 is minice), thart ar {{1728–1945 °F; 942–1063 °C}}. Fágann sí na hearraí láidir ach póiriúil. Molann Digitalfire, suíomh tagartha faoi ghlónraí, póiriúlacht os cionn 15% go ginearálta, sa chaoi go dtarraingíonn na brioscghréithe uisce as an nglónra agus é á chur orthu. Fágann brioscbhácáil bhog (cón 08–06) na hearraí níos póiriúla; fágann brioscbhácáil chrua (cón 04 go minic) níos láidre iad, ach ní ghlacann siad an glónra chomh héasca.
 
 Table: Conas a athraíonn an bhrioscbhácáil an glónrú (Digitalfire)
 Label: Conas a athraíonn an bhrioscbhácáil an glónrú
@@ -254,7 +254,7 @@ Ní hionann na teorainneacha dlíthiúla ó thír go tír. Taispeánann an tábl
 
 ::food-limits
 
-I SAM, earraí nach bhfuil ceaptha le haghaidh bia, ní mór fógra buan “Not for Food Use” (“Ní le haghaidh bia”) a bheith bácáilte orthu, nó poll a bheith tríd an dromchla a mbíonn bia air. Leagann an AE síos teorainneacha luaidhe agus caidmiam i dTreoir 84/500/CEE ón gComhairle, agus coinníonn an Ríocht Aontaithe na figiúirí céanna ina dlí féin. Ó 29 Bealtaine 2026, ceadaíonn an Ísiltír, an Bheilg agus Lucsamburg thart ar 130 go 150 uair níos lú luaidhe, agus thart ar 15 huaire níos lú caidmiam. Leagann an Astráil síos teorainneacha d’earraí allmhairithe; níor aimsíomar aon teorainn oifigiúil d’earraí a dhéantar san Astráil ná sa Nua-Shéalainn.
+I SAM, má tá cuma ar earra ceirmeach maisiúil go bhféadfaí é a úsáid le haghaidh bia, déileáiltear leis mar earra bia. Ní dhéantar amhlaidh má tá lipéad greamaitheach air agus fógra buan múnlaithe nó bácáilte ar a bhonn, ar nós “Not for Food Use. May Poison Food”, nó má tá poll tríd an dromchla a mbíonn bia air. Leagann an AE síos teorainneacha luaidhe agus caidmiam i dTreoir 84/500/CEE ón gComhairle, agus coinníonn an Ríocht Aontaithe na figiúirí céanna ina dlí féin. Ó 29 Bealtaine 2026, ceadaíonn an Ísiltír, an Bheilg agus Lucsamburg thart ar 130 go 150 uair níos lú luaidhe, agus thart ar 15 huaire níos lú caidmiam. Leagann an Astráil síos teorainneacha d’earraí allmhairithe; níor aimsíomar aon teorainn oifigiúil d’earraí a dhéantar san Astráil ná sa Nua-Shéalainn.
 
 ### Tástáil
 
@@ -331,7 +331,7 @@ Breiseán (additive)
 : Ábhar datha, teimhneoir nó oibreán fuaidreáin a chuirtear anuas ar 100 an oidis.
 
 Brioscbhácáil (bisque; sa Ríocht Aontaithe: biscuit)
-: An chéad bhácáil, an ceann is fuaire, cón 08–04 de ghnáth, a fhágann na hearraí láidir ach póiriúil.
+: An chéad bhácáil, an ceann is fuaire, cón 08–04 de ghnáth (cón 06–04 is minice), a fhágann na hearraí láidir ach póiriúil.
 
 Cailliúint ar adhaint, LOI (loss on ignition)
 : Meáchan a chailltear le linn na bácála nuair a imíonn uisce, dé-ocsaíd charbóin, ábhar orgánach nó sulfar mar ghás.
@@ -474,6 +474,7 @@ Ticseatrópacht (thixotropy)
 - [Glazy Help: Specific gravity](https://help.glazy.org/testing/specific-gravity)
 - [Orton Ceramic Foundation: Pyrometric cone chart, °F (ar shuíomh The Ceramic Shop)](https://www.theceramicshop.com/technical_info/Cones/Orton-Cone-Chart-F-022-14.pdf)
 - [Digitalfire: Bisque](https://digitalfire.com/glossary/bisque)
+- [Digitalfire: Bentonite](https://digitalfire.com/material/bentonite)
 - [Digitalfire: Unity molecular formula](https://digitalfire.com/glossary/unity+molecular+formula)
 - [Digitalfire: LOI](https://digitalfire.com/glossary/loi)
 - [Digitalfire: Frit](https://digitalfire.com/glossary/frit)
@@ -489,3 +490,4 @@ Ticseatrópacht (thixotropy)
 - [Potclays: The difference between stoneware and earthenware](https://www.potclays.co.uk/clay-questions/difference-stoneware-earthenware)
 - [US FDA: Compliance Policy Guide Sec. 545.450, Pottery (ceramics), lead contamination](https://www.fda.gov/media/71764/download)
 - [EUR-Lex: Council Directive 84/500/EEC on ceramic articles in contact with food](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:31984L0500)
+- [eCFR: 21 CFR 109.16, Ornamental and decorative ceramicware](https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-109/subpart-A/section-109.16)

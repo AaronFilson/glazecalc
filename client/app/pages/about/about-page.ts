@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { TranslocoDirective } from '@jsverse/transloco';
+import { OFFERED_LANGUAGES, PAGE_LANGUAGE, languageName, pathIn } from '../../i18n/language';
 import { RichText } from '../../i18n/rich-text';
 import { PageHeader } from '../../shared/page-header';
 
@@ -38,6 +39,16 @@ import { PageHeader } from '../../shared/page-header';
     </section>
 
     <section class="panel">
+      <h2>{{ t('site.about.creditsHeading') }}</h2>
+      <p>
+        <gc-rich
+          [text]="t('site.about.credits')"
+          [links]="{ notices: 'https://github.com/AaronFilson/glazecalc/blob/master/THIRD-PARTY-NOTICES.md' }"
+        />
+      </p>
+    </section>
+
+    <section class="panel">
       <h2>{{ t('site.about.whoHeading') }}</h2>
       <p>
         <gc-rich [text]="t('site.about.who')" [links]="{ issues: 'https://github.com/AaronFilson/glazecalc/issues' }" />
@@ -46,6 +57,49 @@ import { PageHeader } from '../../shared/page-header';
         <gc-rich [text]="t('site.about.studio')" [links]="{ studio: 'https://updraftpotterystudio.com/' }" />
       </p>
     </section>
-  </ng-container>`
+
+    <!-- Every live language, each in its own name and linked to this page in it, as the footer's chooser is. -->
+    @if (languages.length > 1) {
+      <section class="panel" aria-labelledby="about-languages-heading">
+        <h2 id="about-languages-heading">{{ t('site.about.languagesHeading') }}</h2>
+        <p>{{ t('site.about.languages') }}</p>
+        <nav aria-labelledby="about-languages-heading">
+          <ul class="about-languages">
+            @for (code of languages; track code) {
+              <li>
+                <a
+                  [href]="aboutIn(code)"
+                  [attr.lang]="code"
+                  [attr.hreflang]="code"
+                  translate="no"
+                  [attr.aria-current]="code === pageLanguage ? 'page' : null"
+                  >{{ languageName(code) }}</a
+                >
+              </li>
+            }
+          </ul>
+        </nav>
+      </section>
+    }
+  </ng-container>`,
+  styles: `
+    .about-languages {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 1.5rem;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+  `
 })
-export class AboutPage {}
+export class AboutPage {
+  protected readonly languages = inject(OFFERED_LANGUAGES);
+  protected readonly pageLanguage = inject(PAGE_LANGUAGE);
+  protected readonly languageName = languageName;
+
+  /** This page in a language: /about, /de/about. */
+  protected aboutIn(code: string): string {
+    return pathIn(code, '/about');
+  }
+}

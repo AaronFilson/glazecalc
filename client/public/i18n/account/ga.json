@@ -81,6 +81,7 @@
     "createAccount": "Cruthaigh cuntas",
     "title": "Do chuntas",
     "signedInAs": "Sínithe isteach mar {email}.",
+    "contents": "Ar an leathanach seo",
     "changeHeading": "Do phasfhocal a athrú",
     "current": "Pasfhocal reatha",
     "currentMissing": "Cuir isteach do phasfhocal reatha.",
@@ -106,7 +107,7 @@
     "emailSend": "Seol an nasc",
     "emailFailed": "Earráid: níorbh fhéidir an nasc a sheoladh. Bain triail eile as.",
     "signOutHeading": "Síniú amach i ngach áit",
-    "signOutText": "Síníonn sé seo amach thú ar gach gléas, an ceann seo san áireamh. Úsáid é má chaill tú gléas nó má cheapann tú go bhfuil do shonraí síniú isteach ag duine eile.",
+    "signOutText": "Síníonn sé amach thú ar gach gléas, an ceann seo san áireamh, agus cuireann sé deireadh le do chomharthaí rochtana agus le do naisc chomhroinnte. Úsáid é má chaill tú gléas nó má cheapann tú go bhfuil do shíniú isteach ag duine éigin eile.",
     "signOutButton": "Sínigh amach i ngach áit",
     "signOutFailed": "Earráid: níorbh fhéidir síniú amach. Bain triail eile as.",
     "confirmStep": "Tá síniú isteach dhá chéim ar siúl, mar sin deimhnigh gur tusa atá ann: do phasfhocal agus an dara céim."
@@ -118,6 +119,8 @@
     "on": "Tá síniú isteach dhá chéim ar siúl.",
     "onText": "Síníonn tú isteach le do phasfhocal agus an dara céim, nó le heochair rochtana amháin.",
     "off": "Tá síniú isteach dhá chéim as.",
+    "badgeOn": "Ar siúl",
+    "badgeOff": "As",
     "offText": "Chun é a chur ar siúl, socraigh aip fhíordheimhnithe nó cuir eochair rochtana leis.",
     "confirmEmailFirst": "Deimhnigh do ríomhphost ar dtús, thuas. Úsáidimid é chun athruithe ar an gcaoi a shíníonn tú isteach a chur in iúl duit, agus chun cabhrú leat má chailleann tú do dhara céim.",
     "appHeading": "Aip fhíordheimhnithe",
@@ -141,6 +144,7 @@
     "nameCheck": "Tabhair ainm idir 1 agus {most} carachtar don eochair rochtana.",
     "passkeyLimit": "Tá {most} eochair rochtana agat, an líon is mó is féidir a bheith ag cuntas. Bain ceann acu chun ceann eile a chur leis.",
     "codesTitle": "Cóid aisghabhála",
+    "codesLeft": "{count, plural, one {Tá # chód aisghabhála fágtha as {total}.} two {Tá # chód aisghabhála fágtha as {total}.} few {Tá # chód aisghabhála fágtha as {total}.} many {Tá # gcód aisghabhála fágtha as {total}.} other {Tá # cód aisghabhála fágtha as {total}.}} Mura féidir leat d’aip nó eochair rochtana a úsáid, síníonn cód isteach thú ina n-ionad. Oibríonn gach cód uair amháin.",
     "codesLow": "Déan cóid nua go luath. Má ritheann siad amach agus má chailleann tú d’aip agus d’eochracha rochtana, ní féidir leat síniú isteach.",
     "newCodes": "Déan cóid aisghabhála nua",
     "offHeading": "É a chur as",
@@ -149,6 +153,8 @@
     "offCodes": "Stopann do chóid aisghabhála ag obair.",
     "offSignOut": "Síntear amach gach gléas eile atá sínithe isteach i do chuntas. Fanann an ceann seo sínithe isteach.",
     "offEmail": "Cuirimid ríomhphost chugat á rá gur cuireadh as é.",
+    "offRemoveApp": "Cuir síniú isteach dhá chéim as (baintear an aip)",
+    "offRemoveAppFirst": "Bain an aip, chun tosú á cur as",
     "offPasskeys": "{count, plural, one {Chun é a chur as, bain d’eochair rochtana faoi ‘Eochracha rochtana’ thuas.} two {Chun é a chur as, bain do # eochair rochtana faoi ‘Eochracha rochtana’ thuas.} few {Chun é a chur as, bain do # eochair rochtana faoi ‘Eochracha rochtana’ thuas.} many {Chun é a chur as, bain do # n-eochair rochtana faoi ‘Eochracha rochtana’ thuas.} other {Chun é a chur as, bain do # eochair rochtana faoi ‘Eochracha rochtana’ thuas.}}",
     "offPasskeysToo": "{count, plural, one {Tá eochair rochtana agat freisin: bain í faoi ‘Eochracha rochtana’ thuas, chomh maith leis an aip.} two {Tá # eochair rochtana agat freisin: bain iad faoi ‘Eochracha rochtana’ thuas, chomh maith leis an aip.} few {Tá # eochair rochtana agat freisin: bain iad faoi ‘Eochracha rochtana’ thuas, chomh maith leis an aip.} many {Tá # n-eochair rochtana agat freisin: bain iad faoi ‘Eochracha rochtana’ thuas, chomh maith leis an aip.} other {Tá # eochair rochtana agat freisin: bain iad faoi ‘Eochracha rochtana’ thuas, chomh maith leis an aip.}}",
     "addAppText": "Chun aip fhíordheimhnithe a shocrú, deimhnigh ar dtús gur tusa atá ann.",
@@ -201,6 +207,25 @@
     "recipes": "Oidis (CSV)",
     "materials": "Ábhair (CSV)"
   },
+  "trash": {
+    "heading": "Bruscar",
+    "text": "Fanann an méid a bhaineann tú de do leabhar nótaí sa bhruscar ar feadh 30 lá. Cuir ar ais as sin é, nó scrios go buan é.",
+    "open": "Oscail an bruscar"
+  },
+  "shared": {
+    "heading": "Oidis chomhroinnte",
+    "text": "Na hoidis a chomhroinneann tú le nasc, ar féidir le haon duine a bhfuil an nasc aige iad a léamh gan chuntas. Ní thaispeántar nasc ach uair amháin, nuair a dhéantar é, mar sin ní féidir é a thaispeáint anseo. Chun oideas a chomhroinnt arís, déan nasc nua faoi ‘Tuilleadh’ ag an oideas.",
+    "since": "Comhroinnte ó {date}",
+    "notesShown": "Nótaí á dtaispeáint",
+    "notesHidden": "Nótaí nach dtaispeántar",
+    "untitled": "Oideas gan teideal",
+    "stop": "Stop den chomhroinnt",
+    "stopName": "Stop den chomhroinnt: {name}",
+    "stopped": "Níl {name} comhroinnte a thuilleadh. Ní oibríonn a nasc a thuilleadh.",
+    "stopFailed": "Níor oibrigh sé sin. Bain triail eile as.",
+    "fetchFailed": "Níorbh fhéidir d’oidis chomhroinnte a lódáil. Bain triail eile as.",
+    "none": "Níl aon oideas á chomhroinnt agat."
+  },
   "settings": {
     "heading": "Socruithe",
     "intro": "Sábháilte le do chuntas, mar sin bíonn siad i bhfeidhm ar gach gléas.",
@@ -227,6 +252,22 @@
       },
       "saved": "Sábháilte: uimhreacha agus dátaí mar atá siad sa teanga {language}.",
       "help": "Conas a scríobhtar uimhreacha agus dátaí: 12,345.6 nó 12.345,6, agus ord an lae agus na míosa."
+    },
+    "calendar": {
+      "legend": "Féilire",
+      "help": "An féilire ina dtaispeántar dátaí. Fanann na dátaí a chlóscríobhann tú san fhéilire Gréagórach.",
+      "gregory": {
+        "label": "Féilire Gréagórach",
+        "saved": "Sábháilte: taispeántar dátaí san fhéilire Gréagórach."
+      },
+      "buddhist": {
+        "label": "Ré Bhúdaíoch na Téalainne",
+        "saved": "Sábháilte: taispeántar dátaí i ré Bhúdaíoch na Téalainne."
+      },
+      "japanese": {
+        "label": "Réanna Seapánacha",
+        "saved": "Sábháilte: taispeántar dátaí i réanna Seapánacha."
+      }
     },
     "decimalMark": {
       "legend": "Méideanna a chlóscríobh",
@@ -265,7 +306,7 @@
         "saved": "Sábháilte: bácáil go cóin Orton."
       },
       "sk": {
-        "label": "Go cóin SK (JIS R 8101)",
+        "label": "Go cóin SK, JIS R 8101",
         "example": "SK 4a, SK 8",
         "saved": "Sábháilte: bácáil go cóin SK."
       },
@@ -291,6 +332,12 @@
         "saved": "Sábháilte: dlús glónra mar mheáchan pionta."
       },
       "help": "An chaoi a dtugann na treoirleabhair tiús glónra. Go dtí go roghnaíonn tú, leanann sé seo do réigiún: céimeanna Baumé san Iodáil agus sa tSeapáin, sainmheáchan in áiteanna eile."
+    },
+    "currency": {
+      "legend": "Airgeadra do phraghsanna",
+      "help": "Tá na praghsanna a thugann tú d’ábhair, agus costas baisce, san airgeadra seo. Ní thiontaíonn athrú an airgeadra praghsanna a thug tú cheana. Go dtí go roghnaíonn tú, leanann sé do réigiún.",
+      "saved": "Sábháilte: praghsanna san airgeadra {currency}.",
+      "notConverted": "Níor tiontaíodh do phraghsanna stóráilte: is iad na huimhreacha a thug tú atá iontu fós."
     },
     "theme": {
       "legend": "Geal nó dorcha",
@@ -386,5 +433,72 @@
     "account": "Do chuntas",
     "signIn": "Sínigh isteach",
     "failed": "Earráid: níorbh fhéidir an seoladh a dheimhniú. Bain triail eile as."
+  },
+  "providers": {
+    "continueGoogle": "Lean ar aghaidh le Google",
+    "continueGithub": "Lean ar aghaidh le GitHub",
+    "failed": "Níor oibrigh an síniú isteach. Bain triail eile as.",
+    "heading": "Google agus GitHub",
+    "intro": "Ceangail cuntas Google nó GitHub chun síniú isteach leis. Ní choinníonn Glazecalc ach id an chuntais uaidh; ní choinníonn sé a ainm, a phictiúr ná aon rud eile riamh. Iarrann síniú isteach dhá chéim a dhara céim fós.",
+    "passwordless": "Níl pasfhocal ag an gcuntas seo. Chun do ríomhphost, do shíniú isteach dhá chéim nó do mhodhanna síniú isteach a athrú, nó chun do chuntas a scriosadh, deimhníonn tú gur tú atá ann trí shíniú isteach arís le Google nó le GitHub. Is féidir leat pasfhocal a shocrú freisin.",
+    "setPassword": "Seol nasc chugam trí ríomhphost chun pasfhocal a shocrú",
+    "setPasswordUnlinks": "Má shocraíonn tú pasfhocal leis an nasc ríomhphoist, dícheanglaítear Google agus GitHub freisin. Is féidir leat iad a cheangal arís ina dhiaidh sin.",
+    "setPasswordFailed": "Níorbh fhéidir an nasc a sheoladh. Bain triail eile as.",
+    "confirmFirst": "Deimhnigh do ríomhphost ar dtús, leis an nasc a sheolamar chugat, chun Google nó GitHub a cheangal.",
+    "linkedOn": "Ceangailte ar {date}",
+    "notLinked": "Neamhcheangailte",
+    "link": "Ceangail {provider}",
+    "unlink": "Dícheangail {provider}",
+    "linkFailed": "Níorbh fhéidir é a cheangal. Bain triail eile as.",
+    "reauthIntro": "Níl pasfhocal ag an gcuntas seo, mar sin deimhnigh gur tú atá ann trí shíniú isteach arís. Ansin déan an t-athrú laistigh de 5 nóiméad.",
+    "reauthButton": "Sínigh isteach arís le {provider}",
+    "reauthHeld": "Shínigh tú isteach arís le {provider}. Is féidir leat athrú amháin a dhéanamh gan pasfhocal sna 5 nóiméad seo chugainn.",
+    "reauthFirst": "Sínigh isteach arís ar dtús, le ceann de na cnaipí thuas.",
+    "reauthFailed": "Níorbh fhéidir an síniú isteach arís a thosú. Bain triail eile as."
+  },
+  "tokens": {
+    "heading": "Comharthaí rochtana",
+    "intro": "Ligeann comhartha rochtana do chúntóir AI féin nó do script féin oidis, ábhair, nótaí agus taifid bhácála do chuntais a léamh. Faoi láthair ní féidir le comhartha ach léamh: ní athraíonn sé ná ní bhaineann sé aon rud riamh. Stopann gach comhartha ag obair ar an lá a roghnaíonn tú, nó chomh luath agus a chúlghairtear é.",
+    "howTo": "Conas cúntóir AI a cheangal",
+    "listLabel": "Do chomharthaí rochtana",
+    "none": "Níl aon chomhartha rochtana agat.",
+    "hint": "ag críochnú le {hint}",
+    "readOnly": "Léamh amháin",
+    "created": "déanta ar {date}",
+    "lastUsed": "úsáidte go deireanach ar {date}",
+    "neverUsed": "gan úsáid riamh",
+    "expires": "téann in éag ar {date}",
+    "expiredOn": "chuaigh in éag ar {date}",
+    "revokedOn": "cúlghairthe ar {date}",
+    "revoke": "Cúlghair",
+    "revokeNamed": "Cúlghair {name}",
+    "revokeAll": "Cúlghair gach comhartha rochtana",
+    "revokeFailed": "Earráid: níorbh fhéidir an comhartha a chúlghairm. Bain triail eile as.",
+    "loadFailed": "Níorbh fhéidir do chomharthaí rochtana a lódáil. Athlódáil an leathanach chun triail eile a bhaint as.",
+    "createHeading": "Comhartha a dhéanamh",
+    "name": "Ainm",
+    "nameHint": "Rud lena n-aithneofar é, mar shampla an cúntóir nó an ríomhaire dá bhfuil sé.",
+    "nameCheck": "Tabhair ainm 1 go {most} carachtar don chomhartha.",
+    "expiry": "Stopann sé ag obair tar éis",
+    "days": "{count, plural, one {# lá} two {# lá} few {# lá} many {# lá} other {# lá}}",
+    "expiryHint": "Cuirimid ríomhphost chugat 7 lá sula stopann comhartha ag obair.",
+    "confirmEmailFirst": "Sula bhféadfaidh tú comhartha a dhéanamh, deimhnigh do ríomhphost: oscail an nasc a sheolamar chuig {email}. Cuirimid in iúl duit ag an seoladh sin nuair a dhéantar comhartha agus sula stopann ceann ag obair.",
+    "resend": "Seol an nasc deimhnithe arís",
+    "scopeNote": "Is féidir leis an gcomhartha do thaifid a léamh ach ní féidir leis iad a athrú.",
+    "confirmStep": "Chun an comhartha a dhéanamh, deimhnigh gur tú atá ann.",
+    "create": "Déan an comhartha",
+    "failed": "Earráid: níorbh fhéidir an comhartha a dhéanamh. Bain triail eile as.",
+    "limit": "Tá {most} comhartha rochtana ag obair agat, an líon is mó is féidir le cuntas a bheith aige. Cúlghair ceann chun ceann eile a dhéanamh.",
+    "newHeading": "Do chomhartha nua a chóipeáil anois",
+    "newText": "Is é seo an t-aon uair a thaispeántar é. Is féidir le duine ar bith a bhfuil sé aige do thaifid a léamh go dtí go stopann sé ag obair, mar sin coinnigh é mar a choinneofá pasfhocal, agus ná tabhair é ach do do chúntóir féin nó do do script féin.",
+    "newLabel": "Do chomhartha rochtana nua",
+    "copy": "Cóipeáil an comhartha",
+    "copied": "Cóipeáilte.",
+    "copyFailed": "Níorbh fhéidir é a chóipeáil. Roghnaigh an comhartha agus cóipeáil tú féin é.",
+    "done": "Chóipeáil mé é",
+    "keptHeading": "Tá do chomharthaí rochtana ag obair fós",
+    "keptText": "{count, plural, one {Níor stop athrú do phasfhocail do chomhartha rochtana. Má d’athraigh tú é mar go mb’fhéidir go bhfuil sé ar eolas ag duine éigin eile, cúlghair an comhartha freisin.} two {Níor stop athrú do phasfhocail do # chomhartha rochtana. Má d’athraigh tú é mar go mb’fhéidir go bhfuil sé ar eolas ag duine éigin eile, cúlghair iad freisin.} few {Níor stop athrú do phasfhocail do # chomhartha rochtana. Má d’athraigh tú é mar go mb’fhéidir go bhfuil sé ar eolas ag duine éigin eile, cúlghair iad freisin.} many {Níor stop athrú do phasfhocail do # gcomhartha rochtana. Má d’athraigh tú é mar go mb’fhéidir go bhfuil sé ar eolas ag duine éigin eile, cúlghair iad freisin.} other {Níor stop athrú do phasfhocail do # comhartha rochtana. Má d’athraigh tú é mar go mb’fhéidir go bhfuil sé ar eolas ag duine éigin eile, cúlghair iad freisin.}}",
+    "keep": "Coinnigh iad",
+    "signOutNote": "{count, plural, one {Stopann sé do chomhartha rochtana freisin, go buan.} two {Stopann sé do # chomhartha rochtana freisin, go buan.} few {Stopann sé do # chomhartha rochtana freisin, go buan.} many {Stopann sé do # gcomhartha rochtana freisin, go buan.} other {Stopann sé do # comhartha rochtana freisin, go buan.}}"
   }
 }

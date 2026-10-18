@@ -4,10 +4,26 @@
     "signedInAs": "V-ați conectat cu {email}.",
     "trying": "Încercați Glazecalc sub numele {name}. Începeți cu o rețetă.",
     "welcomeBack": "Continuați de unde ați rămas.",
+    "welcome": {
+      "heading": "Bun venit la Glazecalc",
+      "text": "Caietul dumneavoastră este gata. Un prim pas bun: introduceți o glazură pe care o amestecați deja, cu materiile ei prime și cantitățile, și vedeți formula ei Seger.",
+      "firstRecipe": "Începeți prima rețetă",
+      "confirmHeading": "Confirmați adresa de e-mail",
+      "confirm": "Confirmați adresa de e-mail: am trimis un link la {email}. Conectarea în doi pași are nevoie de el. <account>Pagina contului</account> îl poate trimite din nou.",
+      "confirmText": "Am trimis un link la {email}. Deschideți-l pentru a confirma că adresa este a dumneavoastră: conectarea în doi pași are nevoie de el. <account>Pagina contului</account> îl poate trimite din nou."
+    },
     "sections": {
       "recipe": {
         "title": "Rețete",
         "text": "Compuneți o glazură din materii prime și cantități, vedeți formula Seger (UMF) a acesteia și salvați-o."
+      },
+      "import": {
+        "title": "Lipiți rețete",
+        "text": "Lipiți rețete de pe un site web, dintr-un tabel sau din notițe, verificați ce s-a citit și salvați-le."
+      },
+      "blends": {
+        "title": "Amestecuri pentru plăcuțe de test",
+        "text": "Amestecați două, trei sau patru dintre rețetele dumneavoastră în plăcuțe de test numerotate, cu ce trebuie cântărit pentru fiecare."
       },
       "material": {
         "title": "Materii prime",
@@ -32,6 +48,14 @@
       "guides": {
         "title": "Ghiduri",
         "text": "De la ce este o glazură până la arderea ei, cu toată lumea în siguranță pe parcurs."
+      },
+      "trash": {
+        "title": "Coșul de reciclare",
+        "text": "Puneți la loc ce ați șters în ultimele 30 de zile."
+      },
+      "account": {
+        "title": "Cont și setări",
+        "text": "Setări, parola dumneavoastră, conectarea în doi pași și o descărcare a tot ce păstrați aici."
       }
     },
     "newHere": "Formula Seger<en>unity formula</en> vă este nouă? <advice>Pagina de sfaturi</advice> explică noțiunile de bază, iar <about>pagina despre aplicație</about> arată cum funcționează Glazecalc."
@@ -39,27 +63,54 @@
   "firing": {
     "title": "Jurnale de ardere",
     "lead": "Înregistrați fiecare ardere: ore, temperaturi, conuri și note despre cuptor.",
+    "newHeading": "O ardere nouă",
+    "titleLabel": "Titlu",
+    "kiln": "Cuptor",
+    "date": "Data",
+    "notes": "Note",
+    "fieldSelect": "Câmpuri de înregistrat",
     "addField": "Adăugați câmpul",
+    "included": "Câmpuri din această înregistrare",
     "moveLeft": "Mutați câmpul la stânga",
     "moveRight": "Mutați câmpul la dreapta",
     "removeField": "Eliminați câmpul",
     "addRow": "Adăugați un rând în tabelul arderii",
+    "addRowWhy": "Adăugați mai întâi un câmp.",
+    "tableEmpty": "Adăugați un câmp mai sus, apoi rânduri.",
+    "recordHeading": "Înregistrați arderea",
     "rowActions": "Acțiuni pentru rând",
     "cell": "{field}, rândul {row}",
     "removeRow": "Eliminați rândul",
     "save": "Salvați",
+    "storedHeading": "Arderile mele salvate",
+    "noneSaved": "Încă niciuna. Arderile salvate apar aici.",
+    "storedIn": "Arsă în {kiln} la {date}.",
+    "storedOn": "Arsă la {date}.",
     "storedNotes": "Note: {notes}",
     "titleMissing": "Dați un titlu arderii.",
     "fieldsMissing": "Adăugați cel puțin un câmp de înregistrat, de exemplu {example}.",
     "chooseField": "Alegeți un câmp de adăugat, apoi apăsați pe „Adăugați câmpul”.",
     "fetchFailed": "A apărut o eroare la încărcarea jurnalelor de ardere.",
     "saved": "Jurnalul de ardere s-a adăugat cu succes pe server.",
-    "saveFailed": "Eroare: cererea către server nu a reușit."
+    "saveFailed": "Eroare: cererea către server nu a reușit.",
+    "recipesHeading": "Rețete arse la această ardere",
+    "noRecipes": "Nu s-a asociat încă nicio rețetă.",
+    "recipesFailed": "Rețetele dumneavoastră nu au putut fi preluate, așa că acum nu se poate asocia nicio rețetă.",
+    "pickRecipe": "O rețetă arsă la această ardere",
+    "linkRecipe": "Asociați rețeta",
+    "unlink": "Dezasociați",
+    "unlinkRecipe": "Dezasociați {title}",
+    "linkFailed": "Asocierea nu a putut fi salvată."
   },
   "notes": {
     "title": "Notițe",
     "lead": "Orice altceva care merită reținut despre glazurile dumneavoastră.",
+    "newHeading": "O notiță nouă",
+    "titleLabel": "Titlu",
+    "content": "Notiță",
     "save": "Salvați",
+    "mineHeading": "Notițele mele salvate",
+    "noneSaved": "Încă niciuna. Notițele salvate apar aici.",
     "titleMissing": "Dați un titlu notiței.",
     "contentMissing": "Scrieți notița.",
     "untitled": "Notiță fără titlu",
@@ -69,6 +120,34 @@
   },
   "trash": {
     "title": "Coșul de reciclare",
-    "comingSoon": "Coșul de reciclare va fi disponibil în versiunea următoare a aplicației Glazecalc. Până atunci, ștergeți și eliminați cu grijă: odată dispărute, informațiile se pierd."
+    "lead": "Ce ștergeți (rețete, materii prime, aditivi, notițe, jurnale de ardere și sfaturi) așteaptă aici 30 de zile. Puneți la loc sau ștergeți definitiv.",
+    "listHeading": "În coșul de reciclare",
+    "none": "Coșul de reciclare este gol.",
+    "untitled": "Fără titlu",
+    "kinds": {
+      "recipes": "Rețetă",
+      "materials": "Materie primă",
+      "additives": "Aditiv",
+      "notes": "Notiță",
+      "firing": "Jurnal de ardere",
+      "advice": "Sfat",
+      "other": "Înregistrare"
+    },
+    "removedOn": "Șters la {date}",
+    "goesOn": "Șters definitiv la {date}",
+    "byApp": "Șters de o aplicație conectată",
+    "putBack": "Puneți la loc",
+    "putBackName": "Puneți la loc {name}",
+    "restored": "„{name}” a fost pus la loc unde era.",
+    "restoredAlready": "„{name}” a fost deja pus la loc.",
+    "restoreFailed": "„{name}” nu a putut fi pus la loc. Încercați din nou.",
+    "deleted": "„{name}” a fost șters definitiv.",
+    "empty": "Goliți coșul de reciclare",
+    "emptyQuestion": "Ștergeți definitiv {count, plural, one {înregistrarea} few {cele # înregistrări} other {cele # de înregistrări}} din coșul de reciclare? Nu se poate anula.",
+    "emptyYes": "Da, goliți-l",
+    "emptying": "Se golește...",
+    "emptied": "Coșul de reciclare este gol.",
+    "emptyFailed": "Coșul de reciclare nu a putut fi golit. Încercați din nou.",
+    "fetchFailed": "Coșul de reciclare nu a putut fi încărcat. Încercați din nou."
   }
 }

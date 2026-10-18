@@ -1,8 +1,10 @@
+import crypto from 'node:crypto';
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
 import mongoose from 'mongoose';
 import regions from '../../lib/regions/index.js';
 import languages from '../../lib/regions/languages.js';
+import limits from '../../lib/recipe/limits.js';
 import appSecret from '../lib/app_secret.ts';
 import { PASSKEY_NAME_MAX } from '../../lib/mfa.js';
 import type { SecondStepMethods } from '../../lib/mfa.js';
@@ -31,6 +33,11 @@ export type TokenLifetime = `${number}d`;
  *   englishTerms   'on' puts the English after key terms in a translated page, for reading English sources
  *   notice         'hidden' once the translation notice is closed
  *   recipeHelp     the recipe page's help: open for an account with no recipes yet ('auto'), or as chosen
+ *   limitSet       the limits the recipe page shows a glaze against (lib/recipe/limits.js): Hesselberth & Roy's or the app's own
+ *   currency       the one currency the account's prices are in (ISO 4217), or '' to follow the region
+ *                  (lib/regions currencyFor); prices are never converted
+ *   calendar       the calendar dates are shown in: the Gregorian, the Thai Buddhist era or Japan's eras
+ *                  (lib/regions CALENDARS); dates are typed and saved in the Gregorian
  */
 export const PREFERENCES = {
   weightUnit: ['g', 'lb'],
@@ -47,7 +54,13 @@ export const PREFERENCES = {
   density: ['', 'sg', 'baume', 'pint'],
   englishTerms: ['off', 'on'],
   notice: ['shown', 'hidden'],
-  recipeHelp: ['auto', 'shown', 'hidden']
+  recipeHelp: ['auto', 'shown', 'hidden'],
+  limitSet: [
+    limits.DEFAULT_LIMIT_SET,
+    ...Object.keys(limits.LIMIT_SETS).filter((id) => id !== limits.DEFAULT_LIMIT_SET)
+  ],
+  currency: ['', ...regions.CURRENCIES],
+  calendar: regions.CALENDARS
 } as const;
 export type Preferences = { -readonly [K in keyof typeof PREFERENCES]: (typeof PREFERENCES)[K][number] };
 
@@ -72,6 +85,12 @@ export interface Passkey {
   name: string;
   addedAt: Date;
   lastUsedAt?: Date;
+}
+
+/** A material's price per kilogram, by its library key (see UserFields.prices). */
+export interface Price {
+  key: string;
+  perKg: number;
 }
 
 /** A recovery code: only HMAC-SHA256(MFA_KEY, normalized code) is kept (server/lib/recovery_codes.ts). */
@@ -116,6 +135,26 @@ export interface MfaFields {
   codeGuesses?: CodeGuesses;
 }
 
+/**
+ * A provider account the person signs in with (server/lib/oauth.ts, docs/adr/0015-provider-sign-in.md):
+ * found by the provider and its subject, the provider's own unchanging id for
+ * the person (Google's sub, GitHub's numeric id), never by an email. Nothing
+ * else from the provider is kept: no name, no picture, no provider token.
+ */
+export interface Identity {
+  /** 'google' or 'github' (server/lib/oauth.ts PROVIDERS). */
+  provider: string;
+  subject: string;
+  /**
+   * provider:subject (google:1234), what the unique index and the lookups use:
+   * an index on the two fields of one array would pair every provider with every
+   * subject in it, so two accounts could clash over a pair neither has.
+   */
+  uid: string;
+  linkedAt: Date;
+  lastUsedAt?: Date;
+}
+
 /** Wrong codes counted against an account (server/lib/code_lock.ts). */
 export interface CodeGuesses {
   /** The account's tokenVersion they were counted under: a new one starts again. */
@@ -150,6 +189,13 @@ export interface UserFields {
    */
   shelf?: string[];
   /**
+   * What the potter pays for materials, for cost per batch: a price per
+   * kilogram by library key (as the shelf's), in the account's one currency
+   * (preferences.currency). Business data, private to the account: never in
+   * a record, so never shared with one; exported and deleted with the account.
+   */
+  prices?: Price[];
+  /**
    * Goes up when the password changes; login tokens carry it, so older tokens
    * (on other devices, or a stolen one) stop working.
    */
@@ -173,6 +219,14 @@ export interface UserFields {
   trialCounts?: Map<string, number>;
   /** Two-step sign-in; never settable through /api/usersettings, never sent whole. */
   mfa?: MfaFields;
+  /** Provider accounts it signs in with, at most one per provider (server/routes/oauth_routes.ts). */
+  identities?: Identity[];
+  /**
+   * Made by signing in with a provider: the password is a random one nobody
+   * knows, until one is set through the reset email (server/routes/password_routes.ts).
+   * Absent on every other account.
+   */
+  passwordless?: boolean;
 }
 
 interface UserMethods {
@@ -250,16 +304,39 @@ const userSchema = new mongoose.Schema<UserFields, UserModel, UserMethods>({
     density: { type: String, enum: PREFERENCES.density },
     englishTerms: { type: String, enum: PREFERENCES.englishTerms },
     notice: { type: String, enum: PREFERENCES.notice },
-    recipeHelp: { type: String, enum: PREFERENCES.recipeHelp }
+    recipeHelp: { type: String, enum: PREFERENCES.recipeHelp },
+    limitSet: { type: String, enum: PREFERENCES.limitSet },
+    currency: { type: String, enum: PREFERENCES.currency },
+    calendar: { type: String, enum: PREFERENCES.calendar }
   },
   shelf: { type: [String], default: undefined },
+  prices: {
+    type: [new mongoose.Schema<Price>({ key: { type: String, required: true }, perKg: Number }, { _id: false })],
+    default: undefined
+  },
   tokenVersion: { type: Number, default: 0 },
   emailUnverified: Boolean,
   emailChangedAt: Date,
   guest: Boolean,
   expiresAt: Date,
   trialCounts: { type: Map, of: Number },
-  mfa: { type: mfaSchema, default: undefined }
+  mfa: { type: mfaSchema, default: undefined },
+  identities: {
+    type: [
+      new mongoose.Schema<Identity>(
+        {
+          provider: { type: String, required: true },
+          subject: { type: String, required: true },
+          uid: { type: String, required: true },
+          linkedAt: { type: Date, required: true },
+          lastUsedAt: Date
+        },
+        { _id: false }
+      )
+    ],
+    default: undefined
+  },
+  passwordless: Boolean
 });
 
 userSchema.method('hashPassword', function (this: UserDocument, password: string) {
@@ -271,13 +348,22 @@ userSchema.method('comparePassword', function (this: UserDocument, password: str
   return bcrypt.compareSync(password, this.password);
 });
 
-// { id, tv, ss }: the user, their token version, and ss when the sign-in is for
-// this browser session only (server/lib/session.ts), so a renewed cookie keeps its kind.
+// { id, tv, ss, sid }: the user, their token version, ss when the sign-in is for
+// this browser session only (server/lib/session.ts), so a renewed cookie keeps
+// its kind, and a random id, so that no two sign-in tokens are the same even
+// when made in the same second: what is tied to one session (a provider
+// reauth, jwt_auth.ts sessionKeyOf) is tied to that token alone.
 userSchema.method('generateToken', function (this: UserDocument, expiresIn: TokenLifetime = '7d', keep = true) {
-  return jwt.sign({ id: String(this._id), tv: this.tokenVersion || 0, ...(keep ? {} : { ss: true }) }, appSecret, {
-    algorithm: 'HS256',
-    expiresIn
-  });
+  return jwt.sign(
+    {
+      id: String(this._id),
+      tv: this.tokenVersion || 0,
+      ...(keep ? {} : { ss: true }),
+      sid: crypto.randomBytes(12).toString('base64url')
+    },
+    appSecret,
+    { algorithm: 'HS256', expiresIn }
+  );
 });
 
 // One account per email, ignoring case.
@@ -288,6 +374,12 @@ userSchema.index({ expiresAt: 1 }, { partialFilterExpression: { guest: true } })
 userSchema.index(
   { 'mfa.passkeys.credentialId': 1 },
   { unique: true, partialFilterExpression: { 'mfa.passkeys.credentialId': { $exists: true } } }
+);
+
+// One account per provider account, and provider sign-in finds the account by it.
+userSchema.index(
+  { 'identities.uid': 1 },
+  { unique: true, partialFilterExpression: { 'identities.uid': { $exists: true } } }
 );
 
 /** Whether the account has two-step sign-in on: an authenticator app or a passkey. */

@@ -56,7 +56,8 @@
     "vet": "Hívja az állatorvosát.",
     "checkedOn": "Ellenőrizve itt:",
     "choosePrompt": "Válassza ki az országát, hogy lássa, kit hívjon ott.",
-    "ministry": "Az egészségügyi minisztérium oldala: <link>{name}</link>."
+    "ministry": "Az egészségügyi minisztérium oldala: <link>{name}</link>.",
+    "reported": "A hivatalos kormányzati oldalak a 113, 114 és 115 számot sorolják fel, de nem azt, hogy melyik mire való; a megjelenített szerepek a 22/2014/TT-BTTTT körlevelet követik, ahogy azt másodlagos oldalak idézik."
   },
   "density": {
     "sg": "fajsúly {value}",
@@ -91,6 +92,7 @@
     "caption": "A respirábilis kristályos szilícium-dioxid munkahelyi határértéke – {region}, 8 órás átlag (ellenőrizve: {date})",
     "captionControl": "A respirábilis kristályos szilícium-dioxid mércéje egy munkaterület levegőjében – {region} (ellenőrizve: {date})",
     "both": "Kvarc és krisztobalit",
+    "freeSilica": "Szabad szilícium-dioxid",
     "quartz": "Kvarc",
     "cristobalite": "Krisztobalit",
     "actionLevel": "Beavatkozási szint",
@@ -102,6 +104,9 @@
     "quartzAll": "Kvarc, csak kvarcból álló por esetén",
     "cristobaliteAll": "Krisztobalit, csak krisztobalitból álló por esetén",
     "allFree": "Ellenőrzési koncentráció csak szabad szilícium-dioxidból álló por esetén",
+    "bandFromTo": "{from}% és {to}% közötti szabad szilícium-dioxid-tartalmú (SiO₂) por",
+    "bandOverTo": "Több mint {from}% és legfeljebb {to}% szabad szilícium-dioxid-tartalmú por",
+    "bandAbove": "Több mint {from}% szabad szilícium-dioxid-tartalmú por",
     "recommended": "Ajánlja: {abbr}",
     "value": "{value} mg/m³",
     "kind": {
@@ -111,6 +116,7 @@
       "control": "Ellenőrzési koncentráció (管理濃度): mérce, amellyel egy munkaterület levegőjét az ott végzett mérések alapján ítélik meg, nem pedig határérték arra, amit egy személy belélegez."
     },
     "setBy": "Megállapítja: <link>{law}</link>.",
+    "from": "{date} naptól érvényes.",
     "lowerThanEu": "Alacsonyabb az EU kötelező határértékénél ({value} mg/m³).",
     "sameAsEu": "Megegyezik az EU kötelező határértékével.",
     "recommendedBy": "A(z) {abbr} ({by}) ezt az értéket ajánlja a(z) <link>{title}</link> című kiadványában. Nem jogszabály.",
@@ -147,16 +153,45 @@
       "jpSmall": "Egyéb tárgyak, 1,1 L alatt, nem főzésre",
       "jpLarge": "Egyéb tárgyak, legalább 1,1 L, de 3 L alatt, nem főzésre",
       "jpStorage": "Egyéb tárgyak, legalább 3 L, nem főzésre",
-      "jpCooking": "Főzőedények, legalább 2,5 cm mélyek"
+      "jpCooking": "Főzőedények, legalább 2,5 cm mélyek",
+      "krFlat": "Nem megtölthető tárgyak, vagy 2,5 cm-nél kisebb mélységűek",
+      "krSmall": "Egyéb megtölthető tárgyak, 1,1 L alatt",
+      "krMedium": "Egyéb megtölthető tárgyak, 1,1 L-től 3 L alatt",
+      "krStorage": "Egyéb megtölthető tárgyak, 3 L vagy több",
+      "krCooking": "Főzőedények, étel melegítésére",
+      "twFlat": "Nem megtölthető tárgyak, vagy legfeljebb 2,5 cm mélyek",
+      "twSmall": "2,5 cm-nél mélyebb tárgyak, legfeljebb 1,1 L",
+      "twLarge": "2,5 cm-nél mélyebb tárgyak, 1,1 L felett",
+      "myFlat": "Laposáru",
+      "mySmall": "Kis öblösáru",
+      "myLarge": "Nagy öblösáru",
+      "myCooking": "Főzőedények",
+      "idFlat": "Legfeljebb 25 mm belső mélységű tárgyak",
+      "idSmall": "25 mm-nél nagyobb belső mélységű tárgyak, 1100 mL alatt",
+      "idLarge": "25 mm-nél nagyobb belső mélységű tárgyak, legalább 1100 mL",
+      "thFlat": "Legfeljebb 25 mm mély tárgyak",
+      "thSmall": "25 mm-nél mélyebb tárgyak, 1,1 L alatt",
+      "thLarge": "25 mm-nél mélyebb tárgyak, legalább 1,1 L",
+      "thInfant": "Legfeljebb 12 hónapos csecsemők ételéhez használt edények",
+      "thCooking": "Főzőedények, amelyeket a főzés hőjének elviselésére készítettek",
+      "vnFlat": "Sekély tárgyak élelmiszer tárolására vagy főzésére",
+      "vnSmall": "Öblös tárgyak élelmiszer tárolására, 1100 mL alatt",
+      "vnMedium": "Öblös tárgyak élelmiszer tárolására, 1100 mL-től 3000 mL alatt",
+      "vnStorage": "Öblös tárgyak élelmiszer tárolására, 3000 mL vagy több",
+      "vnCooking": "Öblös tárgyak főzésre",
+      "vnCups": "Csészék és kis tálak"
     },
     "judged": {
       "average": "6 darab átlaga",
-      "each": "a 6 darab bármelyike"
+      "each": "a 6 darab bármelyike",
+      "averageOf": "{count} darab átlaga",
+      "eachOf": "a(z) {count} darab bármelyike"
     },
     "euRules": "Itt az EU szabályai érvényesek.",
     "law": "Megállapítja: <link>{law}</link>.",
     "inForce": "Hatálybalépés: {date}.",
     "atMost": "Egy darab akkor felel meg, ha nem oldódik ki belőle több a határértéknél: a jogszabály szövege „legfeljebb”.",
+    "ppm": "A ppm itt a vizsgálati oldat egy literére jutó milligrammot jelenti (mg/L).",
     "unknown": "{region}: a szabályokat még nem erősítettük meg.",
     "choosePrompt": "Válassza ki az országát, hogy lássa az ottani szabályokat."
   },

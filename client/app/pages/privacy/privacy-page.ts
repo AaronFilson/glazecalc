@@ -28,6 +28,12 @@ export const STORED: ReadonlyArray<{ names: string[]; kind: string; key: string 
     kind: marker('site.privacy.storageCookie'),
     key: 'cookie'
   },
+  // server/lib/session.ts (oauthName): only while signing in with Google or GitHub.
+  {
+    names: ['__Host-glazecalc_oauth', 'glazecalc_oauth'],
+    kind: marker('site.privacy.storageCookie'),
+    key: 'oauthCookie'
+  },
   // client/app/core/auth.service.ts
   { names: ['session'], kind: marker('site.privacy.storageLocal'), key: 'session' },
   { names: ['trial'], kind: marker('site.privacy.storageLocal'), key: 'trial' },
@@ -48,7 +54,10 @@ export const STORED: ReadonlyArray<{ names: string[]; kind: string; key: string 
       'density',
       'englishTerms',
       'notice',
-      'recipeHelp'
+      'recipeHelp',
+      'limitSet',
+      'currency',
+      'calendar'
     ],
     kind: marker('site.privacy.storageLocal'),
     key: 'settings'
@@ -67,6 +76,8 @@ export const STORED: ReadonlyArray<{ names: string[]; kind: string; key: string 
 marker([
   'site.privacy.keys.cookie.purpose',
   'site.privacy.keys.cookie.lasts',
+  'site.privacy.keys.oauthCookie.purpose',
+  'site.privacy.keys.oauthCookie.lasts',
   'site.privacy.keys.session.purpose',
   'site.privacy.keys.session.lasts',
   'site.privacy.keys.trial.purpose',
@@ -133,6 +144,7 @@ marker([
       <p><gc-rich [text]="t('site.privacy.hosting')" [links]="links" /></p>
       <p><gc-rich [text]="t('site.privacy.transfer')" [links]="links" /></p>
       <p>{{ t('site.privacy.noThirdParties') }}</p>
+      <p><gc-rich [text]="t('site.privacy.providers')" /></p>
     </section>
 
     <!-- Linked from the sign-up page, for everyone outside the US (pages/auth/auth-page.ts). -->
@@ -232,9 +244,16 @@ export class PrivacyPage {
   protected readonly storedOnDevice = STORED;
   protected readonly stored = marker([
     'site.privacy.storedAccount',
+    'site.privacy.storedPrices',
     'site.privacy.storedEmailChange',
     'site.privacy.storedSignIn',
+    'site.privacy.storedProviders',
     'site.privacy.storedSaved',
+    'site.privacy.storedTrash',
+    'site.privacy.storedShares',
+    'site.privacy.storedTokens',
+    'site.privacy.storedActivity',
+    'site.privacy.storedLimits',
     'site.privacy.storedTrial',
     'site.privacy.storedResets',
     'site.privacy.storedLogs',
@@ -244,9 +263,15 @@ export class PrivacyPage {
   ]);
   protected readonly kept = marker([
     'site.privacy.keptAccount',
+    'site.privacy.keptTrash',
+    'site.privacy.keptShares',
+    'site.privacy.keptTokens',
+    'site.privacy.keptActivity',
+    'site.privacy.keptLimits',
     'site.privacy.keptTrial',
     'site.privacy.keptResets',
     'site.privacy.keptSignIn',
+    'site.privacy.keptProviders',
     'site.privacy.keptBackups',
     'site.privacy.keptDeletions',
     'site.privacy.keptLogs',

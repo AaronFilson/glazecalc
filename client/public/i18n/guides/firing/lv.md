@@ -34,13 +34,14 @@ Apvienotās Karalistes, Eiropas, Austrālijas un Jaunzēlandes piegādātāji bi
 Table: Ko dod noturēšana maksimālajā temperatūrā
 Label: Noturēšana un siltuma iedarbība
 
-| Noturēšana        | Aptuveni tāda pati siltuma iedarbība kā                                         |
-| ----------------- | ------------------------------------------------------------------------------- |
-| Apmēram 20 minūšu | Par {{18 °F; 10 °C}} augstāka maksimālā temperatūra                             |
-| 40–60 minūšu      | Par {{36 °F; 20 °C}} augstāka maksimālā temperatūra                             |
-| Apmēram 2 stundas | Par {{54 °F; 30 °C}} augstāka maksimālā temperatūra                             |
-| 1–2 stundas       | “var pietikt, lai deformētos nākamais konuss, kas ir par vienu numuru karstāks” |
-| 4–6 stundas       | Pietiek, lai saliektos konuss, kas ir par diviem numuriem karstāks              |
+| Noturēšana        | Aptuveni tāda pati siltuma iedarbība kā                            |
+| ----------------- | ------------------------------------------------------------------ |
+| Apmēram 20 minūšu | Par {{18 °F; 10 °C}} augstāka maksimālā temperatūra                |
+| 40–60 minūšu      | Par {{36 °F; 20 °C}} augstāka maksimālā temperatūra                |
+| Apmēram 2 stundas | Par {{54 °F; 30 °C}} augstāka maksimālā temperatūra                |
+| 4–6 stundas       | Pietiek, lai saliektos konuss, kas ir par diviem numuriem karstāks |
+
+Orton piebilst, ka 1–2 stundu noturēšana “var pietikt, lai deformētos nākamais konuss, kas ir par vienu numuru karstāks”.
 
 Tātad noturēšana nekad nav par brīvu: ja to pievienojat, rēķinieties, ka konusi salieksies vairāk, un attiecīgi pazeminiet maksimālo temperatūru.
 
@@ -198,11 +199,11 @@ Daudziem Kiln-Sitter slēdžiem, arī Dawson LT modeļiem, ir **laika ierobežot
 Table: Cik ilgu laiku iestatīt laika ierobežotājam
 Label: Laika ierobežotāja iestatījumi
 
-| Avots     | Iestatījums                                                                                                                                            |
-| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Dawson    | Par ½ stundas ilgāk nekā paredzamais apdedzināšanas laiks, kamēr krāsni vēl nepazīstat, vēlāk tikai par ¼ stundas ilgāk; nekad ne ilgāk par 20 stundām |
-| L&L       | Pirmajā reizē ļoti ilgs laiks, pierakstot, cik ilgi apdedzināšana ilgst; pēc tam apmēram par 1 stundu ilgāk                                            |
-| Bracker's | No 30 minūtēm līdz 1 stundai ilgāk nekā apdedzināšanas laiks                                                                                           |
+| Avots     | Iestatījums                                                                                                                                                                   |
+| --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Dawson    | Par ½ stundas ilgāk nekā paredzamais apdedzināšanas laiks, kamēr krāsni vēl nepazīstat, vēlāk šo rezervi var samazināt līdz ¼ stundai; nekad neiestatiet ilgāk par 20 stundām |
+| L&L       | Pirmajā reizē ļoti ilgs laiks, pierakstot, cik ilgi apdedzināšana ilgst; pēc tam apmēram par 1 stundu ilgāk                                                                   |
+| Bracker's | No 30 minūtēm līdz 1 stundai ilgāk nekā apdedzināšanas laiks                                                                                                                  |
 
 > [!NOTE]
 > Mūsu ieteikums sākumam: pirmajā reizē ar lielu rezervi (nepārsniedzot skalas 20 stundas), pēc tam par ½ līdz 1 stundu ilgāk nekā jūsu pierakstītais laiks. Laika ierobežotājs parāda arī to, cik ilgi apdedzināšana ilga: ja tas iestatīts uz 7 un apstājies pie 1, tas nozīmē 6 stundas.
@@ -224,7 +225,7 @@ Label: Kiln-Sitter problēmas
 Lai pārbaudītu regulējumu, Dawson izmanto **regulēšanas šablonu**, kas notur stieni tur, kur to atstātu pilnīgi saliecies konuss; tad pie satvērēja vajadzētu būt “1/16 collas spraugai” (apmēram 1,6 mm). Pārbaudiet to ik pēc 30 apdedzināšanām. Žurnāla Ceramics Monthly ieteikums: ja krāsns izslēdzas par agru, nedaudz paceliet sprūda plāksni uz augšu; ja par vēlu – nedaudz nolaidiet to uz leju. Lai ko Kiln-Sitter darītu, “Vienmēr uzticieties lielajiem kontrolkonusiem{{en: witness cones}} vairāk nekā mazajiem Kiln-Sitter konusiem.”
 
 > [!WARNING]
-> **Kiln-Sitter nav drošības ierīce.** Dawson lietošanas instrukcijā teikts, ka tas “NAV paredzēts darboties kā drošības izslēgšanas ierīce, un krāsni NEVAJADZĒTU atstāt bez uzraudzības ilgāk par paredzamo apdedzināšanas laiku”. Pat kaut kas tik vienkāršs kā neapdedzināts izstrādājums{{en: greenware}}, kas uzkrīt caurulītei, “var izraisīt pārdedzināšanu”. Esiet klāt, lai pārbaudītu krāsni, kad apdedzināšanai vajadzētu beigties, un nekad neapdedziniet krāsnī, kas novietota virs kaut kā degoša vai tā tuvumā, piemēram, virs koka grīdas vai paklāja.
+> **Kiln-Sitter nav drošības ierīce.** Dawson lietošanas instrukcijā teikts, ka tas “NAV paredzēts darboties kā drošības izslēgšanas ierīce, kas nostrādātu arī bojājuma gadījumā, un krāsni NEVAJADZĒTU atstāt bez uzraudzības ilgāk par paredzamo apdedzināšanas laiku”. Pat kaut kas tik vienkāršs kā neapdedzināts izstrādājums{{en: greenware}}, kas uzkrīt caurulītei, “var izraisīt pārdedzināšanu”. Esiet klāt, lai pārbaudītu krāsni, kad apdedzināšanai vajadzētu beigties, un nekad neapdedziniet krāsnī, kas novietota virs kaut kā degoša vai tā tuvumā, piemēram, virs koka grīdas vai paklāja.
 
 Kiln-Sitter ir paredzēts apdedzināšanām “līdz konusam 8 ieskaitot”. Tas pats nevar noturēt temperatūru vai lēni dzesēt. Taču ar pieredzi un pierakstiem jūs varat “kļūt par kontrolieri”, kā saka Digitalfire: vērot konusus un griezt slēdžus ar roku.
 
@@ -375,7 +376,7 @@ Ortona pašstāvošos konusus Japānā pārdod ar nosaukumu 立つゼーゲル (
 
 ### Kāpēc sākumā silda lēni
 
-Ūdens, pārvēršoties tvaikā, “izplešas 1170 reižu”, norāda Bracker's, tāpēc mitri izstrādājumi jāžāvē lēni. L&L un Orton iesaka: “Temperatūrā zem 1500°F (815°C) vajadzētu īpaši uzmanīties, lai masu{{en: body}} sakarsētu vienmērīgi”, un ogleklim jāizdeg, pirms sasniegti apmēram {{1200 °F; 650 °C}}. Virs {{1500 °F; 816 °C}} krāsns var sildīties ātrāk.
+Ūdens, pārvēršoties tvaikā, izplešas vairāk nekā tūkstoškārt, tāpēc mitri izstrādājumi jāžāvē lēni. L&L un Orton iesaka: “Temperatūrā zem 1500°F (815°C) vajadzētu īpaši uzmanīties, lai masu{{en: body}} sakarsētu vienmērīgi”, un ogleklim jāizdeg, pirms sasniegti apmēram {{1200 °F; 650 °C}}. Virs {{1500 °F; 816 °C}} krāsns var sildīties ātrāk.
 
 Table: Kas notiek, biskvītam sasilstot
 Label: Kas notiek biskvīta apdedzināšanā
@@ -599,14 +600,14 @@ Ja Kiln-Sitter nostrādā, pirms konusi uz plaukta ir noliekušies, nākamreiz, 
 
 ### Vēdināšana
 
-Apdedzināšanas sākumā māls un glazūra{{en: glaze}} izdala ūdens tvaiku, kā arī izplūdes gāzes un tvaikus, tostarp oglekļa monoksīdu (tvana gāzi), un glazūras toksiskas gāzes un tvaikus var izdalīt arī vēlāk apdedzināšanas gaitā. L&L to izvadīšanu sauc par “būtisku”. Ja nosūces sistēmas nav, tas nozīmē, ka sākuma posmos vāks ir pavērts un skatlodziņi atvērti, kā iepriekš aprakstītajās procedūrās; sildīšanas palēnināšana šajā laikā arī palīdz izdegt ogleklim. Ja ir **nosūcējs no krāsns apakšas** (pie krāsns piestiprināts nosūcējs ar motoru), Orton norāda, ka vāks un skatlodziņi visu apdedzināšanu paliek aizvērti, izņemot brīžus, kad pārbauda konusus. Atvērts augšējais skatlodziņš aizsargā arī Kiln-Sitter caurulīti un krāsns metāla daļas.
+Apdedzināšanas sākumā māls un glazūra{{en: glaze}} izdala ūdens tvaiku, kā arī izplūdes gāzes un tvaikus, tostarp oglekļa monoksīdu (tvana gāzi), un glazūras toksiskas gāzes un tvaikus var izdalīt arī vēlāk apdedzināšanas gaitā. L&L to izvadīšanu sauc par “būtisku”. Ja nosūces sistēmas nav, tas nozīmē, ka sākuma posmos vāks ir pavērts un skatlodziņi atvērti, kā iepriekš aprakstītajās procedūrās; sildīšanas palēnināšana šajā laikā arī palīdz izdegt ogleklim. Ja krāsnij nav nosūces, Dawson, kas izgatavojis Kiln-Sitter, arī norāda visu apdedzināšanu atstāt atvērtu augšējo skatlodziņu: nosūce “samazinās krāsns metāla daļu bojāšanos un pagarinās caurulītes mezgla kalpošanas laiku”. **Nosūcējs no krāsns apakšas** (pie krāsns piestiprināts nosūcējs ar motoru) to maina. Tas pats veic nosūkšanu, tāpēc, pēc Ortona teiktā, vāks un skatlodziņi visu apdedzināšanu paliek aizvērti, izņemot brīžus, kad pārbauda konusus, un L&L norāda atstāt nosūcēju ieslēgtu un skatlodziņus aizbāzt.
 
 Par telpas vēdināšanu un tvana gāzes detektoriem skatiet ceļvežus [Droša jaukšana un ventilācija](/guides/safe-mixing) un [Nesaindējiet savu ģimeni](/guides/home-safety).
 
 ### Krāsns darbības laikā
 
 - Caur skatlodziņu skatieties tikai ar metināšanas aizsargbrillēm ar aizsardzību pret infrasarkano (IS) starojumu un tumšuma pakāpi 3; saulesbrilles nav pietiekamas. Skutt iesaka aizbāžņus ievietot ar pagriezienu, lai tie neizkristu.
-- Neatstājiet krāsni bez uzraudzības ilgāk par paredzamo apdedzināšanas laiku; Kiln-Sitter nav drošības ierīce.
+- Neatstājiet krāsni bez uzraudzības ilgāk par paredzamo apdedzināšanas laiku; Kiln-Sitter nav drošības atslēdzējs, kas izslēgtu krāsni arī bojājuma gadījumā.
 - Nekad neapdedziniet uz kaut kā degoša vai tā tuvumā, piemēram, uz koka grīdas vai paklāja.
 - Ievērojiet lietošanas instrukcijā norādītos drošības attālumus. Publicētie skaitļi ir no 12 collām (30 cm) līdz 3 pēdām (91 cm); ja instrukcijā nekas nav teikts, drošākā izvēle ir 18 collu (46 cm) attālums no sienām un 3 pēdu (91 cm) attālums no visa, kas var degt.
 - Turiet brīvu vietu ap Kiln-Sitter atsvaru, lai tas varētu nokrist.

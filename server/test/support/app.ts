@@ -1,7 +1,9 @@
-// The app under test, for every server test file (loaded by .mocharc.json).
+// The app under test, for every server test file (loaded by .mocharc.cjs).
 // Root hooks connect to the test database, empty it with its indexes in place,
 // and serve the app on a free port in this process, so nothing else needs to
-// run. Test files use the helpers below.
+// run. Test files use the helpers below. The files run in parallel, and there
+// the root hooks run before and after each file, each worker with a database
+// of its own (env.ts).
 import http from 'node:http';
 import type { AddressInfo } from 'node:net';
 import * as chai from 'chai';
@@ -9,22 +11,31 @@ import chaiHttp, { request } from 'chai-http';
 import mongoose from 'mongoose';
 import app from '../../app.ts';
 import User from '../../models/user.ts';
+import { forgetStandardSets } from '../../lib/standard_library.ts';
 
 chai.use(chaiHttp);
 
 let server: http.Server;
 let count = 0;
 
+// Setting up and clearing away the database can wait on the other workers
+// doing the same; the tests keep their own time limit (.mocharc.cjs).
+const HOOK_TIMEOUT = 30000;
+
 export const mochaHooks = {
-  async beforeAll(): Promise<void> {
+  async beforeAll(this: Mocha.Context): Promise<void> {
+    this.timeout(HOOK_TIMEOUT);
     await mongoose.connect(process.env.MONGODB_URI!);
     await mongoose.connection.dropDatabase();
     // Built before any test, so the unique email index is there from the start.
     await mongoose.syncIndexes();
+    // The standard records kept from an earlier file in this worker are not in this database.
+    forgetStandardSets();
     server = http.createServer(app);
     await new Promise<void>((resolve) => server.listen(0, '127.0.0.1', resolve));
   },
-  async afterAll(): Promise<void> {
+  async afterAll(this: Mocha.Context): Promise<void> {
+    this.timeout(HOOK_TIMEOUT);
     await new Promise((resolve) => server.close(resolve));
     await mongoose.connection.dropDatabase();
     await mongoose.disconnect();

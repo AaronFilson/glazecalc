@@ -38,7 +38,7 @@ Nežgan izdelek je **surovec**{{en: greenware}} (viri se ne strinjajo, ali izraz
 
 ### Dve žganji
 
-Prvo, nižje žganje je **biskvitno žganje**{{en: bisque}} (v Združenem kraljestvu **biscuit**), običajno do stožca 08–04, približno {{1740–1940 °F; 950–1060 °C}}. Po njem so izdelki trdni, a porozni. Digitalfire, spletni priročnik o glazurah, priporoča poroznost na splošno več kot 15 %, da biskvit med nanašanjem glazure iz nje vleče vodo. Nizko biskvitno žgan izdelek (stožec 08–06) je bolj porozen; visoko biskvitno žgan (pogosto stožec 04) je trdnejši, a glazuro sprejema slabše.
+Prvo, nižje žganje je **biskvitno žganje**{{en: bisque}} (v Združenem kraljestvu **biscuit**), običajno do stožca 08–04 (najpogosteje 06–04), približno {{1728–1945 °F; 942–1063 °C}}. Po njem so izdelki trdni, a porozni. Digitalfire, spletni priročnik o glazurah, priporoča poroznost na splošno več kot 15 %, da biskvit med nanašanjem glazure iz nje vleče vodo. Nizko biskvitno žgan izdelek (stožec 08–06) je bolj porozen; visoko biskvitno žgan (pogosto stožec 04) je trdnejši, a glazuro sprejema slabše.
 
 Table: Kako biskvitno žganje vpliva na glaziranje (Digitalfire)
 Label: Kako biskvitno žganje vpliva na glaziranje
@@ -254,7 +254,7 @@ Zakonske mejne vrednosti se med državami razlikujejo. Preglednica prikazuje tis
 
 ::food-limits
 
-V ZDA morajo izdelki, ki niso namenjeni za hrano, imeti trajno, vžgano opozorilo »Not for Food Use« (ni za uporabo z živili) ali luknjo skozi površino, ki bi prišla v stik s hrano. EU določa mejne vrednosti za svinec in kadmij v Direktivi Sveta 84/500/EGS, Združeno kraljestvo pa iste vrednosti ohranja v svoji zakonodaji. Od 29. maja 2026 Nizozemska, Belgija in Luksemburg dovoljujejo približno 130- do 150-krat manj svinca in približno 15-krat manj kadmija. Avstralija določa mejne vrednosti za uvožene izdelke; za izdelke, izdelane v Avstraliji ali na Novi Zelandiji, uradne mejne vrednosti nismo našli.
+V ZDA se dekorativni keramični izdelek, ki je videti uporaben za hrano, obravnava kot posoda za hrano, razen če ima nalepko in na dnu odtisnjeno ali vžgano trajno opozorilo, na primer »Not for Food Use. May Poison Food« (ni za uporabo z živili; lahko zastrupi hrano), ali luknjo skozi površino, ki bi prišla v stik s hrano. EU določa mejne vrednosti za svinec in kadmij v Direktivi Sveta 84/500/EGS, Združeno kraljestvo pa iste vrednosti ohranja v svoji zakonodaji. Od 29. maja 2026 Nizozemska, Belgija in Luksemburg dovoljujejo približno 130- do 150-krat manj svinca in približno 15-krat manj kadmija. Avstralija določa mejne vrednosti za uvožene izdelke; za izdelke, izdelane v Avstraliji ali na Novi Zelandiji, uradne mejne vrednosti nismo našli.
 
 ### Preskušanje
 
@@ -310,7 +310,7 @@ Bentonit (bentonite)
 : Zelo fina glina, dodana v količini 1–3 %, da se glazura ne poseda.
 
 Biskvitno žganje, biskvit (bisque; v Združenem kraljestvu biscuit)
-: Prvo, nižje žganje, običajno do stožca 08–04; po njem so izdelki trdni, a porozni.
+: Prvo, nižje žganje, običajno do stožca 08–04 (najpogosteje 06–04); po njem so izdelki trdni, a porozni.
 
 Bor, B₂O₃ (boron)
 : Formalno tvorec stekla, a se uporablja kot talilo; nujen od stožca 06 do stožca 6.
@@ -474,6 +474,7 @@ Zaščitni vosek (wax resist)
 - [Glazy Help: Specific gravity](https://help.glazy.org/testing/specific-gravity)
 - [Orton Ceramic Foundation: Pyrometric cone chart, °F (na spletnem mestu The Ceramic Shop)](https://www.theceramicshop.com/technical_info/Cones/Orton-Cone-Chart-F-022-14.pdf)
 - [Digitalfire: Bisque](https://digitalfire.com/glossary/bisque)
+- [Digitalfire: Bentonite](https://digitalfire.com/material/bentonite)
 - [Digitalfire: Unity molecular formula](https://digitalfire.com/glossary/unity+molecular+formula)
 - [Digitalfire: LOI](https://digitalfire.com/glossary/loi)
 - [Digitalfire: Frit](https://digitalfire.com/glossary/frit)
@@ -489,3 +490,4 @@ Zaščitni vosek (wax resist)
 - [Potclays: The difference between stoneware and earthenware](https://www.potclays.co.uk/clay-questions/difference-stoneware-earthenware)
 - [US FDA: Compliance Policy Guide Sec. 545.450, Pottery (ceramics), lead contamination](https://www.fda.gov/media/71764/download)
 - [EUR-Lex: Council Directive 84/500/EEC on ceramic articles in contact with food](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:31984L0500)
+- [eCFR: 21 CFR 109.16, Ornamental and decorative ceramicware](https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-109/subpart-A/section-109.16)

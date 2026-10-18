@@ -16,14 +16,17 @@
 //    Each page's head asks early for the font files its text is set in (fontPreloads).
 //
 // The build fails if a page logs an error, is the not-found page, has little text,
-// or has a script the browser build's policy does not know.
+// has a script the browser build's policy does not know, is over MAX_GZIPPED, or
+// (the advice page) lacks any of the standard advice.
 import { spawnSync } from 'node:child_process';
 import { existsSync } from 'node:fs';
+import { readFileSync } from 'node:fs';
 import { mkdir, readFile, rm, writeFile } from 'node:fs/promises';
 import os from 'node:os';
 import path from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { Worker, isMainThread, parentPort, workerData } from 'node:worker_threads';
+import { gzipSync } from 'node:zlib';
 import pages from '../lib/pages.js';
 import languages from '../lib/regions/languages.js';
 
@@ -39,6 +42,30 @@ const WORKERS = 4;
 const SHOWN = 12;
 /** A page with less text than this did not render its content. */
 export const MIN_TEXT = 300;
+
+/**
+ * A page larger than this, gzipped, carries more than it shows: the largest, a
+ * Greek guide, is about 83 kB; the advice page was 121 kB while it carried
+ * every standard record's words (scripts/advice-i18n.mjs).
+ */
+export const MAX_GZIPPED = 100 * 1024;
+
+/** The standard advice's titles, which the advice page must show (data/advice.ndjson). */
+const ADVICE_COUNT = readFileSync(path.join(ROOT, 'data', 'advice.ndjson'), 'utf8')
+  .split('\n')
+  .filter((line) => line.trim()).length;
+
+/** What is wrong with one page in particular: the advice page has each piece of the standard advice. */
+export function pageProblems(html, page) {
+  const found = [];
+  if (gzipSync(html).length > MAX_GZIPPED) found.push(`it is over ${MAX_GZIPPED / 1024} kB gzipped`);
+  if (page === '/advice') {
+    const list = /<ul\b[^>]*class="general-advice"[^>]*>([\s\S]*?)<\/ul>/.exec(html)?.[1] ?? '';
+    const shown = (list.match(/<h3\b/g) ?? []).length;
+    if (shown !== ADVICE_COUNT) found.push(`it shows ${shown} of the ${ADVICE_COUNT} pieces of standard advice`);
+  }
+  return found;
+}
 
 /** Stands for the nonce in a page (client/app/app.config.server.ts); the server swaps it. */
 export const NONCE_PLACEHOLDER = '__GC_NONCE__';
@@ -171,7 +198,11 @@ async function renderAll({ jobs, start, faces }) {
         platformProviders: [{ provide: READ_I18N_FILE, useValue: readFileUnder }]
       });
       const html = withFontPreloads(rendered, faces);
-      const problems = [...problemsWith(html, start, code), ...logged.map((line) => 'logged: ' + line)];
+      const problems = [
+        ...problemsWith(html, start, code),
+        ...pageProblems(html, page),
+        ...logged.map((line) => 'logged: ' + line)
+      ];
       if (problems.length) {
         results.push({ url, problems });
         continue;

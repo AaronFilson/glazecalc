@@ -22,7 +22,12 @@ describe('comparing two unity formulas', () => {
     const left = analysis({ CaO: 1, Al2O3: 0.3, SiO2: 3 });
     const right = analysis({ CaO: 0.8, MgO: 0.2, Al2O3: 0.35, SiO2: 3 }, { loi: 12 });
     const groups = compareUnity(left, right);
-    expect(groups.map((g) => g.title)).toEqual(['Fluxes - RO', 'Stabilizers - R₂O₃', 'Glass Formers - RO₂', 'Balance']);
+    expect(groups.map((g) => g.title)).toEqual([
+      'Fluxes - R₂O and RO',
+      'Stabilizers - R₂O₃',
+      'Glass Formers - RO₂',
+      'Balance'
+    ]);
     const fluxes = groups[0].rows.map((r) => [r.label, r.left, r.right, formatChange(r.change, r.places)]);
     expect(fluxes).toEqual([
       ['CaO', 1, 0.8, '−0.200'],

@@ -48,27 +48,41 @@ export const quota =
   async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     const user = req.user;
     if (!user) return next();
-    if (!user.guest) {
-      if ((await Model.countDocuments({ ownedBy: user.id })) >= maxAccountRecords()) {
-        res.status(403).json(say('account-limit', { limit: maxAccountRecords(), label }));
-        return;
-      }
-      return next();
-    }
-    const field = countField(Model);
-    const taken = await User.updateOne(
-      { _id: user._id, guest: true, $or: [{ [field]: { $exists: false } }, { [field]: { $lt: maxRecords() } }] },
-      { $inc: { [field]: 1 } }
-    );
-    if (!taken.modifiedCount) {
-      res.status(403).json(say('trial-limit', { limit: maxRecords(), label }));
+    const refusal = await makeRoom(user, Model, label);
+    if (refusal) {
+      res.status(403).json(refusal);
       return;
     }
-    res.once('finish', () => {
-      if (res.statusCode !== 200) void giveBack(user._id, Model);
-    });
+    if (user.guest) {
+      res.once('finish', () => {
+        if (res.statusCode !== 200) void giveBack(user._id, Model);
+      });
+    }
     next();
   };
+
+/**
+ * Room for one more record of a kind, as quota checks it, for a record put
+ * back from the Trash too. Resolves with the refusal to send, or null when
+ * there is room; a trial's place is then taken, and given back with giveBack
+ * if the record is not saved after all.
+ */
+export const makeRoom = async (
+  user: { _id: Types.ObjectId; id?: string; guest?: boolean | null },
+  Model: RecordModel,
+  label: string
+): Promise<ReturnType<typeof say> | null> => {
+  if (!user.guest) {
+    const count = await Model.countDocuments({ ownedBy: String(user._id) });
+    return count >= maxAccountRecords() ? say('account-limit', { limit: maxAccountRecords(), label }) : null;
+  }
+  const field = countField(Model);
+  const taken = await User.updateOne(
+    { _id: user._id, guest: true, $or: [{ [field]: { $exists: false } }, { [field]: { $lt: maxRecords() } }] },
+    { $inc: { [field]: 1 } }
+  );
+  return taken.modifiedCount ? null : say('trial-limit', { limit: maxRecords(), label });
+};
 
 /** After a guest's record is deleted (or its create failed): frees its place. */
 export const giveBack = (userId: Types.ObjectId, Model: RecordModel): Promise<unknown> =>

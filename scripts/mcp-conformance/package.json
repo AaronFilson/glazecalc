@@ -1,0 +1,10 @@
+{
+  "name": "glazecalc-mcp-conformance",
+  "private": true,
+  "description": "The MCP conformance suite and Inspector, at exact versions with a lockfile, for scripts/mcp-conformance.mjs; installed apart from the app with npm ci.",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/conformance": "0.2.0-alpha.12",
+    "@modelcontextprotocol/inspector": "2.9.0"
+  }
+}

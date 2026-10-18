@@ -6,7 +6,8 @@ export interface SafetyLine {
   /** For the tel: link. */
   tel: string;
   who: 'public' | 'children';
-  status: 'verified' | 'extract' | 'unverified';
+  /** 'reported': an emergency number listed on official pages without its role, shown with a caution (lib/regions/safety.js). */
+  status: 'verified' | 'extract' | 'unverified' | 'reported';
   source: string;
   /** YYYY-MM-DD */
   checked: string;
@@ -44,7 +45,7 @@ export const MINISTRIES: Readonly<Record<string, Ministry>>;
 /** A region's health ministry, where it may be shown (verified); null otherwise. */
 export function ministryFor(code: string): Ministry | null;
 export const CHECKED: string;
-/** A region's verified entries, the only ones shown; null for a region with no entry. */
+/** A region's verified entries, and its reported emergency numbers: the only ones shown; null for a region with no entry. */
 export function shownFor(code: string): Required<RegionSafety> | null;
 /** The key a piece of this text is translated under: a few of its words and a hash of all of it. */
 export function textKey(text: string): string;

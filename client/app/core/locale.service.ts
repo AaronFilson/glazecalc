@@ -1,5 +1,5 @@
 import { DestroyRef, Injectable, computed, effect, inject, signal } from '@angular/core';
-import { REGION_CODES, formatLocaleFor, regionFor } from '../../../lib/regions';
+import { REGION_CODES, currencyFor, formatLocaleFor, regionFor } from '../../../lib/regions';
 import { PAGE_LANGUAGE } from '../i18n/language';
 import { formatLocale, listLocale, typedDecimalMark } from '../shared/format';
 import { followRegion, readRegion } from '../shared/library-info';
@@ -41,8 +41,10 @@ export class LocaleService {
     this.firstRender() ? prerenderRegion(this.language()) : this.preferences.region() || browserRegion()
   );
   readonly regionInfo = computed(() => regionFor(this.region()));
-  /** The locale numbers and dates are written in. */
-  readonly locale = computed(() => formatLocaleFor(this.language(), this.region(), this.preferences.format()));
+  /** The locale numbers and dates are written in, its dates in the calendar chosen (Gregorian by default). */
+  readonly locale = computed(() =>
+    formatLocaleFor(this.language(), this.region(), this.preferences.format(), this.preferences.calendar())
+  );
   /** The locale lists in a sentence are joined in: its language, as the region writes it, whatever the format chosen. */
   readonly listLocale = computed(() => formatLocaleFor(this.language(), this.region(), 'auto'));
   /** °C or °F: the one chosen, or the region's. */
@@ -53,6 +55,8 @@ export class LocaleService {
   readonly cones = computed<ConeSystem>(() => this.preferences.cones() || this.regionInfo()?.cones || 'orton');
   /** Glaze density as specific gravity, Baumé or pint weight: the one chosen, or the region's. */
   readonly density = computed<Density>(() => this.preferences.density() || this.regionInfo()?.density || 'sg');
+  /** The one currency prices are in (ISO 4217): the one chosen, or the region's, or the format's region's. */
+  readonly currency = computed(() => this.preferences.currency() || currencyFor(this.region(), this.locale()));
 
   constructor() {
     // At once, so the first page is written right, and again on every change.

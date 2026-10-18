@@ -48,7 +48,7 @@ Label: Dotazione di base
 | Feldspato potassico{{en: potash feldspar}}                          | Quello in commercio nella propria zona, come Mahavir negli Stati Uniti                                                       |
 | Nefelina sienite{{en: nepheline syenite}}                           | Qualsiasi; Glazy segnala il suo potere fondente{{en: fluxing power}} più forte, spesso sfruttato a bassa e media temperatura |
 | Carbonato di calcio                                                 | Qualsiasi                                                                                                                    |
-| Talco                                                               | Qualsiasi                                                                                                                    |
+| Talco                                                               | Qualsiasi qualità priva di amianto; controllarne la SDS (vedere «Miscelazione sicura e ventilazione»)                        |
 | Una fritta borica, per media temperatura                            | Ferro 3134, 3124 o 3195; nel Regno Unito, Potterycrafts P3124 o P3195                                                        |
 | Bentonite e coloranti                                               | Piccole quantità                                                                                                             |
 
@@ -211,7 +211,7 @@ Il **sale inglese** (solfato di magnesio) fa gelificare leggermente uno smalto q
 
 La **CMC** (carbossimetilcellulosa) rende la sospensione più appiccicosa e più lenta ad asciugare, e lascia uno strato più duro che aderisce al pezzo. Conta soprattutto per gli smalti a pennello e per quelli ricchi di fritta{{en: frit}}. Nell’esempio di Digitalfire si incorporano 3,75 g in 1000 g di sospensione, e va aggiunta con un frullatore. Uno smalto con CMC non gelifica con il sale inglese e, poiché i microbi si nutrono della colla, può alterarsi nel secchio e cominciare a puzzare.
 
-La **bentonite**, un’argilla finissima, aiuta a tenere in sospensione le altre particelle. Per questo gli smalti per immersione di solito contano su un 15–25% di argilla cruda. Per una ricetta con poca argilla aiuta circa l’1–2% di bentonite.
+La **bentonite**, un’argilla finissima, aiuta a tenere in sospensione le altre particelle. Per questo gli smalti per immersione di solito contano su un 15–25% di argilla cruda. Per una ricetta con poca argilla aiuta circa l’1–3% di bentonite; secondo Digitalfire, uno smalto con più del 15% di argilla non dovrebbe averne bisogno di più dell’1%.
 
 ## Provini e progressioni lineari {#testing}
 
@@ -284,6 +284,7 @@ Label: Modello di registro
 - [Digitalfire: Epsom salts](https://digitalfire.com/material/epsom+salts)
 - [Digitalfire: CMC gum](https://digitalfire.com/material/cmc%2Bgum)
 - [Digitalfire: Dipping glaze](https://digitalfire.com/glossary/dipping+glaze)
+- [Digitalfire: Bentonite](https://digitalfire.com/material/bentonite)
 - [Digitalfire: Water solubility](https://digitalfire.com/glossary/water+solubility)
 - [Digitalfire: Gerstley Borate](https://digitalfire.com/material/gerstley+borate)
 - [Digitalfire: Mahavir potash feldspar](https://digitalfire.com/material/mahavir+potash+feldspar)

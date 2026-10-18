@@ -17,13 +17,17 @@
     "confirmEmail": "Potvrdenie e-mailu – Glazecalc",
     "home": "Váš dielenský zápisník – Glazecalc",
     "recipe": "Recepty – Glazecalc",
+    "import": "Vloženie receptov - Glazecalc",
+    "blends": "Zmesi na skúšobné doštičky - Glazecalc",
     "material": "Suroviny – Glazecalc",
     "additive": "Prísady – Glazecalc",
     "firingLogs": "Záznamy výpalov – Glazecalc",
     "notes": "Poznámky – Glazecalc",
     "trash": "Kôš – Glazecalc",
     "account": "Váš účet a nastavenia – Glazecalc",
-    "notFound": "Stránka sa nenašla – Glazecalc"
+    "notFound": "Stránka sa nenašla – Glazecalc",
+    "shared": "Zdieľaný recept - Glazecalc",
+    "assistants": "Glazecalc vo vašom AI asistentovi - Glazecalc"
   },
   "nav": {
     "skip": "Preskočiť na obsah",
@@ -39,7 +43,9 @@
     "guides": "Návody",
     "about": "O aplikácii",
     "account": "Účet",
+    "trialAccount": "Skúšobný prístup",
     "accountTitle": "Váš účet a nastavenia",
+    "trash": "Kôš",
     "signOut": "Odhlásiť sa",
     "createAccount": "Vytvoriť bezplatný účet"
   },
@@ -66,7 +72,8 @@
     "problem": "Nahlásiť problém",
     "pottery": "Ručne robená keramika: Updraft Pottery Studio",
     "copyright": "© 2017 – 2026 Aaron Filson / Candling Development Studio · Bezplatný softvér s otvoreným zdrojovým kódom (licencia MIT)",
-    "languages": "Jazyky"
+    "languages": "Jazyky",
+    "language": "Jazyk:"
   },
   "numbers": {
     "notANumber": "Zadajte číslo, napríklad {example}.",
@@ -85,7 +92,7 @@
     "about": "Glazecalc je bezplatná kalkulačka chémie glazúr a zápisník s otvoreným zdrojovým kódom. Pozrite sa, ako počíta Segerov vzorec (UMF) a ako je vytvorený.",
     "privacy": "Ako Glazecalc zaobchádza s vašimi údajmi: žiadne reklamy, analytika ani sledovanie a nič sa nepredáva. Čo sa uchováva, prečo a ako uplatniť svoje práva.",
     "signup": "Vytvorte si bezplatný účet Glazecalc a uchovávajte si recepty na glazúry, suroviny, poznámky a záznamy výpalov. Bez reklám a vaše údaje sa nikdy nepredávajú.",
-    "imageAlt": "Glazecalc: glazúry nielen namiešajte, ale aj pochopte."
+    "imageAlt": "Úvodná stránka Glazecalc: bezplatná chémia glazúr pre hrnčiarov a keramikárov, vedľa fotografie vypálených kužeľov."
   },
   "notices": {
     "dismiss": "Zavrieť",
@@ -93,11 +100,15 @@
     "error": "Chyba: {text}"
   },
   "remove": {
-    "removed": "Odstránené: „{name}“.",
     "alreadyRemoved": "Položka „{name}“ už bola odstránená.",
+    "trashed": "Presunuté do Koša: „{name}“.",
+    "undo": "Vrátiť späť",
+    "restored": "Vrátené späť: „{name}“.",
+    "restoreFailed": "„{name}“ sa nepodarilo vrátiť späť. Stále je v Koši.",
     "failed": "Nepodarilo sa to odstrániť. Skúste to, prosím, znova.",
     "question": "Odstrániť „{name}“?",
     "cannotUndo": "Túto akciu nie je možné vrátiť späť.",
+    "toTrash": "Z Koša to možno do 30 dní vrátiť.",
     "removing": "Odstraňuje sa…",
     "yes": "Áno, odstrániť",
     "cancel": "Zrušiť",
@@ -222,20 +233,26 @@
     "soldIn": "Predáva sa v",
     "showing": "Zobrazené: {shown} z {noun, select, additives {{total, plural, one {# prísady} few {# prísad} many {# prísady} other {# prísad}}} other {{total, plural, one {# suroviny} few {# surovín} many {# suroviny} other {# surovín}}}}",
     "name": "Názov",
+    "equivalentWeight": "Ekvivalentová hmotnosť",
+    "firedWeight": "Hmotnosť po výpale",
     "notes": "Poznámky",
     "analysis": "Analýza",
+    "details": "Podrobnosti",
     "formula": "Vzorec",
+    "formulaLine": "Vzorec: {formula}",
     "useInstead": "<b>Použiť namiesto toho:</b> {list}",
     "similar": "Podobné: {list}",
     "replaces": "Nahrádza: {list}",
     "aliases": "Iné názvy: {list}",
     "madeBy": "Výrobca: {name}",
     "source": "Zdroj:",
+    "hazardsLine": "Riziká: {hazards}",
     "noChemistry": "Bez chemického zloženia: nezapočítaná do Segerovho vzorca",
     "countedAs": "Započítaná ako {name}",
     "nothingMatches": "Nič sa nenašlo. Skúste iný názov, druh alebo región.",
     "loading": "Načítava sa…",
-    "notFetched": "Zoznam sa nepodarilo načítať. <retry>Skúsiť znova</retry>"
+    "notFetched": "Zoznam sa nepodarilo načítať. <retry>Skúsiť znova</retry>",
+    "showAll": "{noun, select, additives {{count, plural, one {Zobraziť # prísadu} few {Zobraziť všetky # prísady} many {Zobraziť všetky # prísady} other {Zobraziť všetkých # prísad}}} other {{count, plural, one {Zobraziť # surovinu} few {Zobraziť všetky # suroviny} many {Zobraziť všetky # suroviny} other {Zobraziť všetkých # surovín}}}}"
   },
   "chemistryForm": {
     "name": "{noun, select, additive {Zadajte názov prísady.} other {Zadajte názov suroviny.}}",
@@ -270,7 +287,7 @@
     "close": "Zavrieť"
   },
   "unity": {
-    "fluxes": "Tavivá – RO",
+    "fluxes": "Tavivá – R₂O a RO",
     "stabilizers": "Stabilizátory – R₂O₃",
     "glassFormers": "Sklotvorné oxidy – RO₂",
     "wildcards": "Ostatné oxidy",

@@ -392,3 +392,182 @@ describe('Malaysia', () => {
     expect(element.querySelector('.region-sources')).toBeNull();
   });
 });
+
+describe('China', () => {
+  it('gives 120 with the fire and police numbers, and no poison line, since none could be confirmed', async () => {
+    const { element } = await create(PoisonLines, 'CN');
+    const calls = [...element.querySelectorAll('a[href^="tel:"]')].map((a) => a.getAttribute('href'));
+    expect(calls).toEqual(['tel:120']);
+    const text = (element.textContent ?? '').replace(/\s+/g, ' ');
+    expect(text).toContain('For a fire, call 119; for the police, 110.');
+    expect(text).toContain('We could not confirm a public poison line here.');
+    expect(text).not.toContain('83132345');
+  });
+
+  it('gives the limit for each band of free silica, as GBZ 2.1 draws them, with no quartz row', async () => {
+    const { element, rows } = await create(SilicaLimit, 'CN');
+    expect(rows()).toEqual([
+      ['Dust with 10% to 50% free silica (SiO₂)', '0.7 mg/m³'],
+      ['Dust with more than 50% and up to 80% free silica', '0.3 mg/m³'],
+      ['Dust with more than 80% free silica', '0.2 mg/m³']
+    ]);
+    const paragraphs = paragraphsOf(element);
+    expect(paragraphs[0]).toContain('A binding limit.');
+    expect(paragraphs[0]).toContain('GBZ 2.1—2019');
+    expect(paragraphs[0]).toContain(
+      'not only the silica in it. Any dust with 10% free silica or more is held to them.'
+    );
+    expect(element.textContent).not.toContain('Dust masks here are sold by class');
+  });
+
+  it('says the food-contact rules and shops are not yet confirmed', async () => {
+    expect((await create(FoodLimits, 'CN')).element.textContent).toContain(
+      'We have not yet confirmed the rules in China.'
+    );
+    expect((await create(ShopList, 'CN')).element.textContent).toContain(
+      'We found no shop selling raw glaze materials in China.'
+    );
+  });
+});
+
+describe('Hong Kong', () => {
+  it('gives 999 and links the Department of Health, since the poison centre answers only professionals', async () => {
+    const { element } = await create(PoisonLines, 'HK');
+    const calls = [...element.querySelectorAll('a[href^="tel:"]')].map((a) => a.getAttribute('href'));
+    expect(calls).toEqual(['tel:999']);
+    expect(element.querySelector('a[href="https://www.dh.gov.hk/"]')?.textContent).toBe(
+      'Department of Health (衞生署)'
+    );
+  });
+
+  it("gives the Labour Department's guide values for quartz and cristobalite, with its silicosis page", async () => {
+    const { element, rows } = await create(SilicaLimit, 'HK');
+    expect(rows()).toEqual([
+      ['Quartz', '0.1 mg/m³'],
+      ['Cristobalite', '0.05 mg/m³']
+    ]);
+    const paragraphs = paragraphsOf(element);
+    expect(paragraphs[0]).toContain('An indicative limit');
+    expect(paragraphs[0]).toContain("Tridymite's limit is the same as cristobalite's.");
+    expect(element.querySelector('a[href="https://www.labour.gov.hk/eng/public/oh/silicosis.pdf"]')).not.toBeNull();
+  });
+
+  it('says the food-contact rules are not yet confirmed', async () => {
+    expect((await create(FoodLimits, 'HK')).element.textContent).toContain(
+      'We have not yet confirmed the rules in Hong Kong SAR China.'
+    );
+  });
+});
+
+describe('Indonesia', () => {
+  it('gives 119 with the other numbers, and links the health ministry', async () => {
+    const { element } = await create(PoisonLines, 'ID');
+    const calls = [...element.querySelectorAll('a[href^="tel:"]')].map((a) => a.getAttribute('href'));
+    expect(calls).toEqual(['tel:119']);
+    expect(element.textContent).toContain('118 also reaches an ambulance in some cities');
+    expect(element.querySelector('a[href="https://kemkes.go.id/"]')?.textContent).toBe('Kementerian Kesehatan');
+    expect(element.textContent).not.toContain('1500533');
+  });
+
+  it("gives the NAB for quartz and cristobalite, written with Indonesia's decimal comma", async () => {
+    const { rows } = await create(SilicaLimit, 'ID');
+    expect(rows()).toEqual([['Quartz and cristobalite', '0,025 mg/m³']]);
+  });
+
+  it('gives the 2026 limits, and says the third of three tests is what counts', async () => {
+    const { element, rows } = await create(FoodLimits, 'ID');
+    expect(rows()).toEqual([
+      ['Pieces no more than 25 mm deep inside', '0,8 mg/dm²', '0,07 mg/dm²'],
+      ['Pieces more than 25 mm deep inside, under 1100 mL', '0,5 mg/L', '0,25 mg/L'],
+      ['Pieces more than 25 mm deep inside, 1100 mL or more', '0,5 mg/L', '0,25 mg/L']
+    ]);
+    expect(paragraphsOf(element)[0]).toContain('the third result is held to the limit');
+    expect(paragraphsOf(element)[0]).not.toContain('In force from');
+  });
+});
+
+describe('Thailand', () => {
+  it('gives 1669, and the Ramathibodi Poison Center around the clock with its LINE', async () => {
+    const { element } = await create(PoisonLines, 'TH');
+    const calls = [...element.querySelectorAll('a[href^="tel:"]')].map((a) => a.getAttribute('href'));
+    expect(calls).toEqual(['tel:1669', 'tel:1367']);
+    const text = (element.textContent ?? '').replace(/\s+/g, ' ');
+    expect(text).toContain('24 hours, every day');
+    expect(text).toContain('For other emergencies, call 191; for a fire, 199.');
+    expect(element.querySelector('a[href="https://page.line.me/749ilrut?openQrModal=true"]')?.textContent).toBe(
+      'LINE (@rpc1367)'
+    );
+  });
+
+  it("gives the department's limit for quartz and cristobalite", async () => {
+    const { element, rows } = await create(SilicaLimit, 'TH');
+    expect(rows()).toEqual([['Quartz and cristobalite', '0.025 mg/m³']]);
+    expect(paragraphsOf(element)[0]).toContain('A binding limit.');
+  });
+
+  it("gives Notification No. 92's limits, all in mg/L, and says so", async () => {
+    const { element, rows } = await create(FoodLimits, 'TH');
+    expect(rows()).toEqual([
+      ['Pieces no more than 25 mm deep', '7 mg/L', '0.7 mg/L'],
+      ['Pieces more than 25 mm deep, under 1.1 L', '5 mg/L', '0.5 mg/L'],
+      ['Pieces more than 25 mm deep, 1.1 L or more', '2.5 mg/L', '0.25 mg/L'],
+      ['Containers for the food of babies up to 12 months old', '2.5 mg/L', '0.25 mg/L'],
+      ['Cooking ware, made to stand the heat of cooking', '5 mg/L', '0.5 mg/L']
+    ]);
+    expect(paragraphsOf(element)[0]).toContain("the shallow pieces' too");
+  });
+});
+
+describe('Philippines', () => {
+  it('gives 911 and the poison centre, around the clock and free', async () => {
+    const { element } = await create(PoisonLines, 'PH');
+    const calls = [...element.querySelectorAll('a[href^="tel:"]')].map((a) => a.getAttribute('href'));
+    expect(calls).toEqual(['tel:911', 'tel:+63285241078']);
+    expect(element.textContent).toContain('24 hours, every day, free');
+  });
+
+  it('says the silica limit is not yet confirmed', async () => {
+    expect((await create(SilicaLimit, 'PH')).element.textContent).toContain(
+      'We have not yet confirmed the limit in Philippines.'
+    );
+  });
+});
+
+describe('Vietnam', () => {
+  it('gives 115, with 113 and 114, and says plainly that official pages give no roles', async () => {
+    const { element, rows } = await create(PoisonLines, 'VN');
+    const calls = [...element.querySelectorAll('a[href^="tel:"]')].map((a) => a.getAttribute('href'));
+    expect(calls).toEqual(['tel:115']);
+    expect(rows()[0]![2]).toContain('For the police, call 113; for a fire, 114.');
+    expect(element.querySelector('.reported')?.textContent).toContain(
+      'Official government pages list 113, 114 and 115'
+    );
+    expect(element.textContent).toContain('We could not confirm a public poison line here.');
+  });
+
+  it("gives QCVN 02:2019/BYT's limit for free silica in respirable dust", async () => {
+    const { element, rows } = await create(SilicaLimit, 'VN');
+    expect(rows()[0]![1]).toContain('0.1');
+    expect(element.textContent).toContain('QCVN 02:2019/BYT');
+    expect(element.textContent).toContain('0.3 mg/m³');
+  });
+
+  it("gives QCVN 12-4:2015/BYT's six kinds of piece", async () => {
+    const { element, rows } = await create(FoodLimits, 'VN');
+    expect(rows().map((row) => row[0])).toEqual([
+      'Shallow pieces, for holding or cooking food',
+      'Deep pieces for holding food, under 1100 mL',
+      'Deep pieces for holding food, from 1100 mL to under 3000 mL',
+      'Deep pieces for holding food, 3000 mL or more',
+      'Deep pieces for cooking',
+      'Cups and small bowls'
+    ]);
+    expect(element.textContent).toContain('TCVN 7146-1:2002');
+  });
+
+  it('lists no shop, and says so', async () => {
+    const { element } = await create(ShopList, 'VN');
+    expect(element.textContent).toContain('We found no shop selling raw glaze materials in Vietnam.');
+    expect(element.querySelector('table')).toBeNull();
+  });
+});

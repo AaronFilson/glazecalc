@@ -1,6 +1,7 @@
 import Material from '../models/material.ts';
 import type { UserDocument } from '../models/user.ts';
 import { api, expect, makeUser } from './support/app.ts';
+import { forgetStandardSets } from '../lib/standard_library.ts';
 
 // Saving, listing, changing and removing your own materials, and the shared
 // standard list.
@@ -94,6 +95,11 @@ describe('materials API', () => {
       .get('/materials/getLatest')
       .set('Authorization', 'Bearer ' + token);
     expect(latest.body).to.include({ _id: saved._id, name: 'kaolin', loi: 14 });
+    // The earlier version is listed by its name.
+    const versions = await api()
+      .get('/materials/versions/' + saved._id)
+      .set('Authorization', 'Bearer ' + token);
+    expect(versions.body.map((v: { title: string }) => v.title)).to.eql(['porcelain']);
   });
 
   it('removes a material', async () => {
@@ -102,7 +108,7 @@ describe('materials API', () => {
       .delete('/materials/delete/' + saved._id)
       .set('Authorization', 'Bearer ' + token);
     expect(res).to.have.status(200);
-    expect(res.body.msg).to.eql('Successfully deleted material');
+    expect(res.body.code).to.eql('record-trashed');
     const all = await api()
       .get('/materials/getAll')
       .set('Authorization', 'Bearer ' + token);
@@ -156,6 +162,7 @@ describe('materials API', () => {
 
     it('are shared with anyone, cached briefly, and leave out your own materials', async () => {
       await Material.create(standard);
+      forgetStandardSets();
       expect(await create({ ...porcelain, name: 'Private porcelain' })).to.have.status(200);
 
       const res = await api().get('/materials/getStandard');
@@ -165,6 +172,27 @@ describe('materials API', () => {
       expect(names).to.include(standard.name);
       expect(names).to.not.include('Private porcelain');
       expect((res.body as { ownedBy: string }[]).every((m) => m.ownedBy === 'Standard')).to.eql(true);
+    });
+
+    it('are read once and kept a while, as the schema gives them', async () => {
+      // Stored without the arrays, as many records in data/ are.
+      const name = 'Standard test bare clay';
+      const bare: Record<string, unknown> = { ...standard, name };
+      delete bare.relatedTo;
+      delete bare.notes;
+      await Material.collection.insertOne(bare);
+      forgetStandardSets();
+      const first = await api().get('/materials/getStandard');
+      const found = (first.body as { name: string }[]).find((m) => m.name === name);
+      // The schema's empty arrays, as when each request read the database.
+      expect(found).to.include.keys('relatedTo', 'notes');
+      await Material.deleteMany({ name });
+      // Kept: the next request does not ask the database.
+      const second = await api().get('/materials/getStandard');
+      expect(second.text).to.equal(first.text);
+      forgetStandardSets();
+      const third = await api().get('/materials/getStandard');
+      expect((third.body as { name: string }[]).map((m) => m.name)).to.not.include(name);
     });
   });
 });

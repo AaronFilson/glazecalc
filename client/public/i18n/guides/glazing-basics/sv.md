@@ -38,7 +38,7 @@ Obränt gods är **rågods**{{en: greenware}} (källorna är oeniga om ordet gä
 
 ### De två bränningarna
 
-Den första, lägre bränningen är **skröjbränningen**{{en: bisque}} (i Storbritannien **biscuit**), oftast kägla 08–04, ungefär {{1740–1940 °F; 950–1060 °C}}. Efter den är godset starkt men poröst. Digitalfire, ett uppslagsverk om glasyrer på nätet, föreslår i regel mer än 15 % porositet, så att det skröjade godset suger vatten ur glasyren när den läggs på. Lågt skröjat gods (kägla 08–06) är porösare; högt skröjat gods (ofta kägla 04) är tåligare men tar inte lika lätt emot glasyr.
+Den första, lägre bränningen är **skröjbränningen**{{en: bisque}} (i Storbritannien **biscuit**), oftast kägla 08–04 (allra oftast 06–04), ungefär {{1728–1945 °F; 942–1063 °C}}. Efter den är godset starkt men poröst. Digitalfire, ett uppslagsverk om glasyrer på nätet, föreslår i regel mer än 15 % porositet, så att det skröjade godset suger vatten ur glasyren när den läggs på. Lågt skröjat gods (kägla 08–06) är porösare; högt skröjat gods (ofta kägla 04) är tåligare men tar inte lika lätt emot glasyr.
 
 Table: Hur skröjbränningen påverkar glaseringen (Digitalfire)
 Label: Hur skröjbränningen påverkar glaseringen
@@ -254,7 +254,7 @@ De lagstadgade gränsvärdena skiljer sig mellan länder. Tabellen visar det egn
 
 ::food-limits
 
-I USA måste gods som inte är avsett för mat ha en permanent, inbränd märkning ”Not for Food Use” (inte avsett för livsmedel) eller ett hål genom den yta som kommer i kontakt med mat. EU fastställer gränsvärden för bly och kadmium i rådets direktiv 84/500/EEG, och Storbritannien behåller samma värden i sin egen lag. Från och med den 29 maj 2026 tillåter Nederländerna, Belgien och Luxemburg ungefär 130 till 150 gånger mindre bly och ungefär 15 gånger mindre kadmium. Australien har gränsvärden för importerat gods; vi har inte hittat något officiellt gränsvärde för gods som tillverkas i Australien eller Nya Zeeland.
+I USA behandlas dekorativt keramikgods som ser användbart ut för mat som matgods, om det inte har en påklistrad etikett och en permanent märkning formad eller inbränd i botten, till exempel ”Not for Food Use. May Poison Food” (inte avsett för livsmedel; kan förgifta maten), eller ett hål genom den yta som kommer i kontakt med mat. EU fastställer gränsvärden för bly och kadmium i rådets direktiv 84/500/EEG, och Storbritannien behåller samma värden i sin egen lag. Från och med den 29 maj 2026 tillåter Nederländerna, Belgien och Luxemburg ungefär 130 till 150 gånger mindre bly och ungefär 15 gånger mindre kadmium. Australien har gränsvärden för importerat gods; vi har inte hittat något officiellt gränsvärde för gods som tillverkas i Australien eller Nya Zeeland.
 
 ### Testning
 
@@ -427,7 +427,7 @@ Sintring (vitrification)
 : När en lermassa blir glasartad och tät under bränningen.
 
 Skröjbränning (bisque; UK: biscuit)
-: Den första, lägre bränningen, oftast kägla 08–04, som lämnar godset starkt men poröst.
+: Den första, lägre bränningen, oftast kägla 08–04 (allra oftast 06–04), som lämnar godset starkt men poröst.
 
 Slicker och engob (slip and engobe)
 : Lera i vatten; en engob är ett slickerliknande ytskikt med mer råvaror som inte är lera.
@@ -474,6 +474,7 @@ Värmearbete (heatwork)
 - [Glazy Help: Specific gravity](https://help.glazy.org/testing/specific-gravity)
 - [Orton Ceramic Foundation: Pyrometric cone chart, °F (via The Ceramic Shop)](https://www.theceramicshop.com/technical_info/Cones/Orton-Cone-Chart-F-022-14.pdf)
 - [Digitalfire: Bisque](https://digitalfire.com/glossary/bisque)
+- [Digitalfire: Bentonite](https://digitalfire.com/material/bentonite)
 - [Digitalfire: Unity molecular formula](https://digitalfire.com/glossary/unity+molecular+formula)
 - [Digitalfire: LOI](https://digitalfire.com/glossary/loi)
 - [Digitalfire: Frit](https://digitalfire.com/glossary/frit)
@@ -489,3 +490,4 @@ Värmearbete (heatwork)
 - [Potclays: The difference between stoneware and earthenware](https://www.potclays.co.uk/clay-questions/difference-stoneware-earthenware)
 - [US FDA: Compliance Policy Guide Sec. 545.450, Pottery (ceramics), lead contamination](https://www.fda.gov/media/71764/download)
 - [EUR-Lex: Council Directive 84/500/EEC on ceramic articles in contact with food](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:31984L0500)
+- [eCFR: 21 CFR 109.16, Ornamental and decorative ceramicware](https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-109/subpart-A/section-109.16)

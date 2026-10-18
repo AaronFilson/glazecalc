@@ -4,10 +4,26 @@
     "signedInAs": "Ha iniciado sesión como {email}.",
     "trying": "Está probando Glazecalc como {name}. Empiece por una receta.",
     "welcomeBack": "Continúe donde lo dejó.",
+    "welcome": {
+      "heading": "Le damos la bienvenida a Glazecalc",
+      "text": "Su cuaderno está listo. Un buen primer paso: introduzca un esmalte que ya prepare, con sus materiales y cantidades, y vea su fórmula Seger.",
+      "firstRecipe": "Empezar su primera receta",
+      "confirmHeading": "Confirmar su correo electrónico",
+      "confirm": "Confirme su correo electrónico: hemos enviado un enlace a {email}. El inicio de sesión en dos pasos lo necesita. Su <account>página de cuenta</account> puede volver a enviarlo.",
+      "confirmText": "Hemos enviado un enlace a {email}. Ábralo para confirmar que la dirección es suya: el inicio de sesión en dos pasos lo necesita. Su <account>página de cuenta</account> puede volver a enviarlo."
+    },
     "sections": {
       "recipe": {
         "title": "Recetas",
         "text": "Componga un esmalte a partir de materiales y cantidades, vea su fórmula Seger y guárdelo."
+      },
+      "import": {
+        "title": "Pegar recetas",
+        "text": "Pegue recetas de un sitio web, una hoja de cálculo o unas notas, compruebe lo que se ha leído y guárdelas."
+      },
+      "blends": {
+        "title": "Mezclas para probetas",
+        "text": "Mezcle dos, tres o cuatro de sus recetas en probetas numeradas, con lo que hay que pesar para cada una."
       },
       "material": {
         "title": "Materiales",
@@ -32,6 +48,14 @@
       "guides": {
         "title": "Guías",
         "text": "Desde qué es un esmalte hasta su cocción, y cómo mantener a salvo a todo el mundo por el camino."
+      },
+      "trash": {
+        "title": "Papelera",
+        "text": "Recupere lo que quitó en los últimos 30 días."
+      },
+      "account": {
+        "title": "Cuenta y ajustes",
+        "text": "Ajustes, su contraseña, el inicio de sesión en dos pasos y una descarga de todo lo que guarda aquí."
       }
     },
     "newHere": "¿Las fórmulas Seger son nuevas para usted? La <advice>página de consejos</advice> explica lo básico, y la <about>página Acerca de</about> cuenta cómo funciona Glazecalc."
@@ -39,27 +63,54 @@
   "firing": {
     "title": "Registros de cocción",
     "lead": "Anote cada cocción: horas, temperaturas, conos y notas sobre el horno.",
+    "newHeading": "Una nueva cocción",
+    "titleLabel": "Título",
+    "kiln": "Horno",
+    "date": "Fecha",
+    "notes": "Notas",
+    "fieldSelect": "Campos que registrar",
     "addField": "Añadir el campo",
+    "included": "Campos de este registro",
     "moveLeft": "Mover el campo a la izquierda",
     "moveRight": "Mover el campo a la derecha",
     "removeField": "Quitar el campo",
     "addRow": "Añadir una fila a la tabla de cocción",
+    "addRowWhy": "Añada primero un campo.",
+    "tableEmpty": "Añada un campo arriba y luego filas.",
+    "recordHeading": "Registrar la cocción",
     "rowActions": "Acciones de la fila",
     "cell": "{field}, fila {row}",
     "removeRow": "Quitar la fila",
     "save": "Guardar",
+    "storedHeading": "Mis cocciones guardadas",
+    "noneSaved": "Ninguna todavía. Las cocciones guardadas aparecen aquí.",
+    "storedIn": "Cocida en {kiln} el {date}.",
+    "storedOn": "Cocida el {date}.",
     "storedNotes": "Notas: {notes}",
     "titleMissing": "Ponga un título a la cocción.",
     "fieldsMissing": "Añada al menos un campo que registrar, como {example}.",
     "chooseField": "Elija el campo que quiere añadir y luego pulse Añadir el campo.",
     "fetchFailed": "Se ha producido un error al obtener los registros de cocción.",
     "saved": "Se ha añadido correctamente el registro de cocción al servidor.",
-    "saveFailed": "Error: ha fallado la solicitud al servidor."
+    "saveFailed": "Error: ha fallado la solicitud al servidor.",
+    "recipesHeading": "Recetas cocidas en esta cocción",
+    "noRecipes": "Aún no hay recetas vinculadas.",
+    "recipesFailed": "No se pudieron obtener sus recetas, así que ahora no se puede vincular ninguna.",
+    "pickRecipe": "Una receta cocida en esta cocción",
+    "linkRecipe": "Vincular la receta",
+    "unlink": "Desvincular",
+    "unlinkRecipe": "Desvincular {title}",
+    "linkFailed": "No se pudo guardar el vínculo."
   },
   "notes": {
     "title": "Notas",
     "lead": "Cualquier otra cosa sobre sus esmaltes que merezca la pena recordar.",
+    "newHeading": "Una nueva nota",
+    "titleLabel": "Título",
+    "content": "Nota",
     "save": "Guardar",
+    "mineHeading": "Mis notas guardadas",
+    "noneSaved": "Ninguna todavía. Las notas guardadas aparecen aquí.",
     "titleMissing": "Ponga un título a la nota.",
     "contentMissing": "Escriba la nota.",
     "untitled": "Nota sin título",
@@ -69,6 +120,34 @@
   },
   "trash": {
     "title": "Papelera",
-    "comingSoon": "La papelera llegará pronto, en la próxima versión de Glazecalc. Hasta entonces, use con cuidado las opciones de eliminar y quitar: una vez borrada, la información se pierde."
+    "lead": "Lo que quita (recetas, materiales, aditivos, notas, registros de cocción y consejos) espera aquí 30 días. Recupérelo, o elimínelo para siempre.",
+    "listHeading": "En la papelera",
+    "none": "La papelera está vacía.",
+    "untitled": "Sin título",
+    "kinds": {
+      "recipes": "Receta",
+      "materials": "Material",
+      "additives": "Aditivo",
+      "notes": "Nota",
+      "firing": "Registro de cocción",
+      "advice": "Consejo",
+      "other": "Registro"
+    },
+    "removedOn": "Quitado el {date}",
+    "goesOn": "Se elimina para siempre el {date}",
+    "byApp": "Quitado por una aplicación conectada",
+    "putBack": "Recuperar",
+    "putBackName": "Recuperar {name}",
+    "restored": "Se ha recuperado «{name}» en su sitio.",
+    "restoredAlready": "«{name}» ya se había recuperado.",
+    "restoreFailed": "No se ha podido recuperar «{name}». Inténtelo de nuevo.",
+    "deleted": "Se ha eliminado «{name}» para siempre.",
+    "empty": "Vaciar la papelera",
+    "emptyQuestion": "¿Quiere eliminar para siempre {count, plural, one {el # registro} many {los # registros} other {los # registros}} de la papelera? No se puede deshacer.",
+    "emptyYes": "Sí, vaciarla",
+    "emptying": "Vaciando...",
+    "emptied": "La papelera está vacía.",
+    "emptyFailed": "No se ha podido vaciar la papelera. Inténtelo de nuevo.",
+    "fetchFailed": "No se ha podido cargar la papelera. Inténtelo de nuevo."
   }
 }

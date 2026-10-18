@@ -81,6 +81,7 @@
     "createAccount": "Załóż konto",
     "title": "Konto",
     "signedInAs": "Zalogowano jako {email}.",
+    "contents": "Na tej stronie",
     "changeHeading": "Zmiana hasła",
     "current": "Obecne hasło",
     "currentMissing": "Należy wpisać obecne hasło.",
@@ -106,7 +107,7 @@
     "emailSend": "Wyślij link",
     "emailFailed": "Błąd: nie udało się wysłać linku. Proszę spróbować ponownie.",
     "signOutHeading": "Wylogowanie ze wszystkich urządzeń",
-    "signOutText": "Wylogowuje ze wszystkich urządzeń, również z tego. Przydaje się po utracie urządzenia lub w razie podejrzenia, że ktoś inny zna dane logowania.",
+    "signOutText": "Wylogowuje ze wszystkich urządzeń, także z tego, oraz unieważnia tokeny dostępu i linki udostępniania. Warto z tego skorzystać po zgubieniu urządzenia lub gdy ktoś inny może znać dane logowania.",
     "signOutButton": "Wyloguj ze wszystkich urządzeń",
     "signOutFailed": "Błąd: nie udało się wylogować. Proszę spróbować ponownie.",
     "confirmStep": "Logowanie dwuetapowe jest włączone, więc należy potwierdzić tożsamość: hasłem i drugim krokiem."
@@ -118,6 +119,8 @@
     "on": "Logowanie dwuetapowe jest włączone.",
     "onText": "Logowanie wymaga hasła i drugiego kroku albo samego klucza dostępu.",
     "off": "Logowanie dwuetapowe jest wyłączone.",
+    "badgeOn": "Włączone",
+    "badgeOff": "Wyłączone",
     "offText": "Aby je włączyć, należy skonfigurować aplikację uwierzytelniającą lub dodać klucz dostępu.",
     "confirmEmailFirst": "Najpierw należy potwierdzić adres e-mail, powyżej. Służy on do powiadamiania o zmianach sposobu logowania i do pomocy w razie utraty drugiego kroku.",
     "appHeading": "Aplikacja uwierzytelniająca",
@@ -141,6 +144,7 @@
     "nameCheck": "Nazwa klucza dostępu musi mieć od 1 do {most} znaków.",
     "passkeyLimit": "Na koncie jest {most} kluczy dostępu, czyli maksimum. Aby dodać kolejny, należy usunąć jeden z nich.",
     "codesTitle": "Kody odzyskiwania",
+    "codesLeft": "{count, plural, one {Pozostał # z {total} kodów odzyskiwania.} few {Pozostały # z {total} kodów odzyskiwania.} many {Pozostało # z {total} kodów odzyskiwania.} other {Pozostało # z {total} kodów odzyskiwania.}} Jeśli nie można użyć aplikacji ani klucza dostępu, można zalogować się kodem. Każdy kod działa tylko raz.",
     "codesLow": "Wkrótce należy wygenerować nowe kody. Jeśli się skończą, a aplikacja i klucze dostępu zostaną utracone, zalogowanie nie będzie możliwe.",
     "newCodes": "Wygeneruj nowe kody odzyskiwania",
     "offHeading": "Wyłączanie",
@@ -149,6 +153,8 @@
     "offCodes": "Kody odzyskiwania przestają działać.",
     "offSignOut": "Wszystkie pozostałe urządzenia zalogowane na to konto zostają wylogowane. To urządzenie pozostaje zalogowane.",
     "offEmail": "Wysyłamy wiadomość e-mail o wyłączeniu.",
+    "offRemoveApp": "Wyłącz logowanie dwuetapowe (usuwa aplikację)",
+    "offRemoveAppFirst": "Usuń aplikację, aby zacząć je wyłączać",
     "offPasskeys": "{count, plural, one {Aby je wyłączyć, należy usunąć klucz dostępu w sekcji Klucze dostępu powyżej.} few {Aby je wyłączyć, należy usunąć # klucze dostępu w sekcji Klucze dostępu powyżej.} many {Aby je wyłączyć, należy usunąć # kluczy dostępu w sekcji Klucze dostępu powyżej.} other {Aby je wyłączyć, należy usunąć # klucza dostępu w sekcji Klucze dostępu powyżej.}}",
     "offPasskeysToo": "{count, plural, one {Jest też klucz dostępu: należy go usunąć w sekcji Klucze dostępu powyżej, tak samo jak aplikację.} few {Są też # klucze dostępu: należy je usunąć w sekcji Klucze dostępu powyżej, tak samo jak aplikację.} many {Jest też # kluczy dostępu: należy je usunąć w sekcji Klucze dostępu powyżej, tak samo jak aplikację.} other {Jest też # klucza dostępu: należy je usunąć w sekcji Klucze dostępu powyżej, tak samo jak aplikację.}}",
     "addAppText": "Aby skonfigurować aplikację uwierzytelniającą, najpierw należy potwierdzić tożsamość.",
@@ -201,6 +207,25 @@
     "recipes": "Receptury (CSV)",
     "materials": "Surowce (CSV)"
   },
+  "trash": {
+    "heading": "Kosz",
+    "text": "To, co zostanie usunięte z notatnika, czeka w koszu 30 dni. Można to stamtąd przywrócić albo usunąć na stałe.",
+    "open": "Otwórz kosz"
+  },
+  "shared": {
+    "heading": "Udostępnione receptury",
+    "text": "Receptury udostępnione przez link, które może przeczytać bez konta każdy, kto ma ten link. Link jest pokazywany tylko raz, w chwili utworzenia, więc nie można go tu wyświetlić. Aby udostępnić recepturę ponownie, należy utworzyć nowy link w menu Więcej przy tej recepturze.",
+    "since": "Udostępniana od {date}",
+    "notesShown": "Notatki widoczne",
+    "notesHidden": "Notatki ukryte",
+    "untitled": "Receptura bez nazwy",
+    "stop": "Zakończ udostępnianie",
+    "stopName": "Zakończ udostępnianie: {name}",
+    "stopped": "Zakończono udostępnianie: {name}. Link już nie działa.",
+    "stopFailed": "To się nie udało. Proszę spróbować ponownie.",
+    "fetchFailed": "Nie udało się wczytać udostępnionych receptur. Proszę spróbować ponownie.",
+    "none": "Żadna receptura nie jest udostępniana."
+  },
   "settings": {
     "heading": "Ustawienia",
     "intro": "Zapisywane razem z kontem, więc obowiązują na każdym urządzeniu.",
@@ -227,6 +252,22 @@
       },
       "saved": "Zapisano: format liczb i dat – {language}.",
       "help": "Sposób zapisu liczb i dat: 12,345.6 lub 12.345,6 oraz kolejność dnia i miesiąca."
+    },
+    "calendar": {
+      "legend": "Kalendarz",
+      "help": "Kalendarz, w którym wyświetlane są daty. Wpisywane daty pozostają w kalendarzu gregoriańskim.",
+      "gregory": {
+        "label": "Gregoriański",
+        "saved": "Zapisano: daty są wyświetlane w kalendarzu gregoriańskim."
+      },
+      "buddhist": {
+        "label": "Tajska era buddyjska",
+        "saved": "Zapisano: daty są wyświetlane w tajskiej erze buddyjskiej."
+      },
+      "japanese": {
+        "label": "Japońska era",
+        "saved": "Zapisano: daty są wyświetlane w japońskich erach."
+      }
     },
     "decimalMark": {
       "legend": "Wpisywanie ilości",
@@ -265,7 +306,7 @@
         "saved": "Zapisano: wypał według stożków Ortona."
       },
       "sk": {
-        "label": "Według stożków SK (JIS R 8101)",
+        "label": "Według stożków SK, JIS R 8101",
         "example": "SK 4a, SK 8",
         "saved": "Zapisano: wypał według stożków SK."
       },
@@ -291,6 +332,12 @@
         "saved": "Zapisano: gęstość szkliwa jako masa pinty."
       },
       "help": "Jak poradniki podają gęstość szkliwa. Do czasu wyboru zależy od regionu: stopnie Baumé we Włoszech i w Japonii, gęstość względna w pozostałych krajach."
+    },
+    "currency": {
+      "legend": "Waluta cen",
+      "help": "Ceny podane dla surowców i koszt porcji są w tej walucie. Zmiana waluty nie przelicza cen już podanych. Dopóki waluta nie zostanie wybrana, zależy ona od regionu.",
+      "saved": "Zapisano: ceny w {currency}.",
+      "notConverted": "Zapisane ceny nie zostały przeliczone: nadal są to liczby, które podano."
     },
     "theme": {
       "legend": "Jasny lub ciemny",
@@ -386,5 +433,72 @@
     "account": "Konto",
     "signIn": "Zaloguj się",
     "failed": "Błąd: nie udało się potwierdzić adresu. Proszę spróbować ponownie."
+  },
+  "providers": {
+    "continueGoogle": "Kontynuuj z Google",
+    "continueGithub": "Kontynuuj z GitHub",
+    "failed": "Logowanie nie powiodło się. Proszę spróbować ponownie.",
+    "heading": "Google i GitHub",
+    "intro": "Można połączyć konto Google lub GitHub, aby się przez nie logować. Glazecalc zachowuje z niego tylko identyfikator konta, nigdy imienia, zdjęcia ani niczego innego, a logowanie dwuetapowe nadal wymaga drugiego kroku.",
+    "passwordless": "To konto nie ma hasła. Aby zmienić adres e-mail, logowanie dwuetapowe lub sposoby logowania albo aby usunąć konto, należy potwierdzić tożsamość, logując się ponownie przez Google lub GitHub. Można też ustawić hasło.",
+    "setPassword": "Wyślij link do ustawienia hasła e-mailem",
+    "setPasswordUnlinks": "Ustawienie hasła za pomocą linku z wiadomości odłącza też Google i GitHub. Można je potem połączyć ponownie.",
+    "setPasswordFailed": "Nie udało się wysłać linku. Proszę spróbować ponownie.",
+    "confirmFirst": "Aby połączyć Google lub GitHub, należy najpierw potwierdzić adres e-mail za pomocą wysłanego linku.",
+    "linkedOn": "Połączono {date}",
+    "notLinked": "Nie połączono",
+    "link": "Połącz: {provider}",
+    "unlink": "Odłącz: {provider}",
+    "linkFailed": "Nie udało się połączyć. Proszę spróbować ponownie.",
+    "reauthIntro": "To konto nie ma hasła, więc należy potwierdzić tożsamość, logując się ponownie. Następnie zmianę trzeba wprowadzić w ciągu 5 min.",
+    "reauthButton": "Zaloguj się ponownie przez {provider}",
+    "reauthHeld": "Ponownie zalogowano się przez {provider}. W ciągu najbliższych 5 min można wprowadzić jedną zmianę bez hasła.",
+    "reauthFirst": "Proszę najpierw zalogować się ponownie, używając jednego z przycisków powyżej.",
+    "reauthFailed": "Nie udało się rozpocząć ponownego logowania. Proszę spróbować ponownie."
+  },
+  "tokens": {
+    "heading": "Tokeny dostępu",
+    "intro": "Token dostępu pozwala własnemu asystentowi AI lub skryptowi odczytywać receptury, surowce, notatki i dzienniki wypałów z konta. Na razie token może tylko odczytywać: nigdy niczego nie zmienia ani nie usuwa. Każdy token przestaje działać w wybranym dniu albo od razu po unieważnieniu.",
+    "howTo": "Jak połączyć asystenta AI",
+    "listLabel": "Tokeny dostępu",
+    "none": "Brak tokenów dostępu.",
+    "hint": "kończy się na {hint}",
+    "readOnly": "Tylko do odczytu",
+    "created": "utworzono {date}",
+    "lastUsed": "ostatnio użyto {date}",
+    "neverUsed": "nigdy nie użyto",
+    "expires": "wygasa {date}",
+    "expiredOn": "wygasł {date}",
+    "revokedOn": "unieważniono {date}",
+    "revoke": "Unieważnij",
+    "revokeNamed": "Unieważnij: {name}",
+    "revokeAll": "Unieważnij wszystkie tokeny dostępu",
+    "revokeFailed": "Błąd: nie udało się unieważnić tokenu. Proszę spróbować ponownie.",
+    "loadFailed": "Nie udało się wczytać tokenów dostępu. Proszę odświeżyć stronę, aby spróbować ponownie.",
+    "createHeading": "Utwórz token",
+    "name": "Nazwa",
+    "nameHint": "Coś, po czym można go rozpoznać, np. asystent albo komputer, do którego jest przeznaczony.",
+    "nameCheck": "Proszę nadać tokenowi nazwę o długości od 1 do {most} znaków.",
+    "expiry": "Przestaje działać po upływie",
+    "days": "{count, plural, one {# dzień} few {# dni} many {# dni} other {# dnia}}",
+    "expiryHint": "Wysyłamy e-mail na 7 dni przed wygaśnięciem tokenu.",
+    "confirmEmailFirst": "Aby utworzyć token, należy najpierw potwierdzić adres e-mail: otworzyć link wysłany na adres {email}. Na ten adres powiadamiamy o utworzeniu tokenu i przed jego wygaśnięciem.",
+    "resend": "Wyślij link potwierdzający ponownie",
+    "scopeNote": "Token może odczytywać zapisy, ale ich nie zmienia.",
+    "confirmStep": "Aby utworzyć token, należy potwierdzić tożsamość.",
+    "create": "Utwórz token",
+    "failed": "Błąd: nie udało się utworzyć tokenu. Proszę spróbować ponownie.",
+    "limit": "Działa już {most} tokenów dostępu, czyli najwięcej, ile może mieć konto. Aby utworzyć kolejny, należy unieważnić jeden z nich.",
+    "newHeading": "Token należy skopiować teraz",
+    "newText": "Token jest pokazywany tylko ten jeden raz. Każdy, kto go ma, może odczytywać zapisy z konta, dopóki token nie przestanie działać, więc należy go chronić jak hasło i przekazać tylko własnemu asystentowi lub skryptowi.",
+    "newLabel": "Nowy token dostępu",
+    "copy": "Skopiuj token",
+    "copied": "Skopiowano.",
+    "copyFailed": "Nie udało się skopiować. Proszę zaznaczyć token i skopiować go ręcznie.",
+    "done": "Token został skopiowany",
+    "keptHeading": "Tokeny dostępu nadal działają",
+    "keptText": "{count, plural, one {Zmiana hasła nie unieważniła tokenu dostępu. Jeśli hasło zostało zmienione, ponieważ ktoś inny mógł je poznać, należy unieważnić także token.} few {Zmiana hasła nie unieważniła # tokenów dostępu. Jeśli hasło zostało zmienione, ponieważ ktoś inny mógł je poznać, należy je również unieważnić.} many {Zmiana hasła nie unieważniła # tokenów dostępu. Jeśli hasło zostało zmienione, ponieważ ktoś inny mógł je poznać, należy je również unieważnić.} other {Zmiana hasła nie unieważniła # tokenu dostępu. Jeśli hasło zostało zmienione, ponieważ ktoś inny mógł je poznać, należy je również unieważnić.}}",
+    "keep": "Zostaw je",
+    "signOutNote": "{count, plural, one {Unieważnia też token dostępu, na stałe.} few {Unieważnia też # tokeny dostępu, na stałe.} many {Unieważnia też # tokenów dostępu, na stałe.} other {Unieważnia też # tokenu dostępu, na stałe.}}"
   }
 }

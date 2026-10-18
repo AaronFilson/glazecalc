@@ -368,6 +368,70 @@ describe('trial accounts', () => {
     expect(await User.findById(trialId)).to.eql(null);
   });
 
+  it('brings a trial’s prices along for materials the account has none for, in the same currency only', async () => {
+    const setPrices = (token: string | null, prices: object[]) =>
+      api()
+        .put('/prices')
+        .set('Authorization', 'Bearer ' + token)
+        .send({ prices });
+    const trialPrices = [
+      { key: 'name:Silica', perKg: 1 },
+      { key: 'name:Whiting', perKg: 9 }
+    ];
+
+    // Both follow no region and choose no currency: the same browser's.
+    const trial = await startTrial();
+    expect(await setPrices(trial.token, trialPrices)).to.have.status(200);
+    const { user, email, password, token } = await makeUser();
+    expect(await setPrices(token, [{ key: 'name:Whiting', perKg: 0.5 }])).to.have.status(200);
+    const res = await signIn(email, password).set('Cookie', 'glazecalc_session=' + trial.token);
+    expect(res).to.have.status(200);
+    expect((await User.findById(user._id).lean())!.prices).to.eql([
+      { key: 'name:Whiting', perKg: 0.5 },
+      { key: 'name:Silica', perKg: 1 }
+    ]);
+
+    // A trial in kronor and an account in euros: the trial's prices go with it.
+    const other = await startTrial();
+    expect(await setPrices(other.token, trialPrices)).to.have.status(200);
+    await User.updateOne({ _id: await idOf(other.token) }, { $set: { 'preferences.currency': 'SEK' } });
+    const euro = await makeUser();
+    await User.updateOne({ _id: euro.user._id }, { $set: { 'preferences.region': 'DE' } });
+    expect(await signIn(euro.email, euro.password).set('Cookie', 'glazecalc_session=' + other.token)).to.have.status(
+      200
+    );
+    expect((await User.findById(euro.user._id).lean())!.prices ?? []).to.eql([]);
+  });
+
+  it('says how many of a trial’s prices were left out for another currency, and takes the trial’s currency into an account with no prices and none chosen', async () => {
+    const setPrices = (token: string | null, prices: object[]) =>
+      api()
+        .put('/prices')
+        .set('Authorization', 'Bearer ' + token)
+        .send({ prices });
+    const trial = await startTrial();
+    await setPrices(trial.token, [
+      { key: 'name:Silica', perKg: 1 },
+      { key: 'name:Whiting', perKg: 9 }
+    ]);
+    await User.updateOne({ _id: await idOf(trial.token) }, { $set: { 'preferences.currency': 'SEK' } });
+    const euro = await makeUser();
+    await User.updateOne({ _id: euro.user._id }, { $set: { 'preferences.currency': 'EUR' } });
+    const res = await signIn(euro.email, euro.password).set('Cookie', 'glazecalc_session=' + trial.token);
+    expect(res.body.pricesSkipped).to.equal(2);
+
+    // No prices and no currency chosen: the trial's currency comes with its prices.
+    const second = await startTrial();
+    await setPrices(second.token, [{ key: 'name:Silica', perKg: 1 }]);
+    await User.updateOne({ _id: await idOf(second.token) }, { $set: { 'preferences.currency': 'SEK' } });
+    const open = await makeUser();
+    const res2 = await signIn(open.email, open.password).set('Cookie', 'glazecalc_session=' + second.token);
+    expect(res2.body.pricesSkipped).to.equal(undefined);
+    const merged = (await User.findById(open.user._id).lean())!;
+    expect(merged.preferences?.currency).to.equal('SEK');
+    expect(merged.prices).to.eql([{ key: 'name:Silica', perKg: 1 }]);
+  });
+
   it('leaves an account alone when its own session is still on the browser', async () => {
     const { user, email, password, token } = await makeUser();
     expect(await addNote(token)).to.have.status(200);

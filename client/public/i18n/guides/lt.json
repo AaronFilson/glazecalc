@@ -56,7 +56,8 @@
     "vet": "Skambinkite savo veterinarui.",
     "checkedOn": "Patikrinta:",
     "choosePrompt": "Pasirinkite šalį, kad pamatytumėte, kur ten skambinti.",
-    "ministry": "Sveikatos apsaugos ministerijos puslapis: <link>{name}</link>."
+    "ministry": "Sveikatos apsaugos ministerijos puslapis: <link>{name}</link>.",
+    "reported": "Oficialūs vyriausybės puslapiai nurodo 113, 114 ir 115, bet ne tai, kam skirtas kiekvienas; parodytos paskirtys atitinka aplinkraštį 22/2014/TT-BTTTT, kaip jį cituoja antriniai puslapiai."
   },
   "density": {
     "sg": "santykinis tankis {value}",
@@ -91,6 +92,7 @@
     "caption": "Įkvepiamojo kristalinio silicio dioksido dulkių (alveolinė frakcija) ribinė vertė darbo vietoje, 8 valandų vidurkis: {region} (patikrinta {date})",
     "captionControl": "Įkvepiamojo kristalinio silicio dioksido dulkių vertinimo matas darbo zonos ore: {region} (patikrinta {date})",
     "both": "Kvarcas ir kristobalitas",
+    "freeSilica": "Laisvasis silicio dioksidas",
     "quartz": "Kvarcas",
     "cristobalite": "Kristobalitas",
     "actionLevel": "Veiksmų lygis",
@@ -102,6 +104,9 @@
     "quartzAll": "Kvarcas, kai visos dulkės yra kvarcas",
     "cristobaliteAll": "Kristobalitas, kai visos dulkės yra kristobalitas",
     "allFree": "Kontrolinė koncentracija, kai visos dulkės yra laisvasis silicio dioksidas",
+    "bandFromTo": "Dulkės, kuriose yra nuo {from} % iki {to} % laisvojo silicio dioksido (SiO₂)",
+    "bandOverTo": "Dulkės, kuriose yra daugiau nei {from} % ir iki {to} % laisvojo silicio dioksido",
+    "bandAbove": "Dulkės, kuriose yra daugiau nei {from} % laisvojo silicio dioksido",
     "recommended": "Rekomenduoja {abbr}",
     "value": "{value} mg/m³",
     "kind": {
@@ -111,6 +116,7 @@
       "control": "Kontrolinė koncentracija (管理濃度): matas, pagal kurį darbo zonos oras vertinamas remiantis ten atliktais matavimais, o ne riba, kiek įkvepia vienas asmuo."
     },
     "setBy": "Nustatyta: <link>{law}</link>.",
+    "from": "Taikoma nuo {date}.",
     "lowerThanEu": "Mažesnė už privalomą ES ribinę vertę – {value} mg/m³.",
     "sameAsEu": "Tokia pati kaip privaloma ES ribinė vertė.",
     "recommendedBy": "{abbr} ({by}) šią vertę rekomenduoja savo dokumente <link>{title}</link>. Teisės aktuose ji nenustatyta.",
@@ -147,16 +153,45 @@
       "jpSmall": "Kiti gaminiai, mažesni nei 1,1 L, neskirti maistui gaminti",
       "jpLarge": "Kiti gaminiai nuo 1,1 L iki mažiau nei 3 L, neskirti maistui gaminti",
       "jpStorage": "Kiti gaminiai, 3 L ar didesni, neskirti maistui gaminti",
-      "jpCooking": "Indai maistui gaminti, 2,5 cm gylio ar gilesni"
+      "jpCooking": "Indai maistui gaminti, 2,5 cm gylio ar gilesni",
+      "krFlat": "Gaminiai, kurių negalima pripildyti, arba mažesnio kaip 2,5 cm gylio",
+      "krSmall": "Kiti pripildomi gaminiai, mažesni kaip 1,1 L",
+      "krMedium": "Kiti pripildomi gaminiai, nuo 1,1 L iki mažiau nei 3 L",
+      "krStorage": "Kiti pripildomi gaminiai, 3 L ar daugiau",
+      "krCooking": "Indai maistui gaminti, maistui šildyti",
+      "twFlat": "Gaminiai, kurių negalima pripildyti, arba ne gilesni kaip 2,5 cm",
+      "twSmall": "Gaminiai, gilesni kaip 2,5 cm, iki 1,1 L",
+      "twLarge": "Gaminiai, gilesni kaip 2,5 cm, didesni kaip 1,1 L",
+      "myFlat": "Plokšti indai",
+      "mySmall": "Maži gilūs indai",
+      "myLarge": "Dideli gilūs indai",
+      "myCooking": "Indai maistui gaminti",
+      "idFlat": "Gaminiai, kurių vidus ne gilesnis kaip 25 mm",
+      "idSmall": "Gaminiai, kurių vidus gilesnis kaip 25 mm, mažesni nei 1100 mL",
+      "idLarge": "Gaminiai, kurių vidus gilesnis kaip 25 mm, 1100 mL ar didesni",
+      "thFlat": "Gaminiai, ne gilesni kaip 25 mm",
+      "thSmall": "Gaminiai, gilesni kaip 25 mm, mažesni nei 1,1 L",
+      "thLarge": "Gaminiai, gilesni kaip 25 mm, 1,1 L ar didesni",
+      "thInfant": "Indai iki 12 mėnesių kūdikių maistui",
+      "thCooking": "Indai maistui gaminti, skirti atlaikyti gaminimo karštį",
+      "vnFlat": "Negilūs dirbiniai maistui laikyti ar gaminti",
+      "vnSmall": "Gilūs dirbiniai maistui laikyti, mažesni nei 1100 mL",
+      "vnMedium": "Gilūs dirbiniai maistui laikyti, nuo 1100 mL iki mažesnių nei 3000 mL",
+      "vnStorage": "Gilūs dirbiniai maistui laikyti, 3000 mL ar didesni",
+      "vnCooking": "Gilūs dirbiniai maistui gaminti",
+      "vnCups": "Puodeliai ir nedideli dubenėliai"
     },
     "judged": {
       "average": "6 gaminių vidurkis",
-      "each": "kiekvienas iš 6"
+      "each": "kiekvienas iš 6",
+      "averageOf": "{count} gaminių vidurkis",
+      "eachOf": "kiekvienas iš {count}"
     },
     "euRules": "Čia taikomos ES taisyklės.",
     "law": "Nustatyta: <link>{law}</link>.",
     "inForce": "Galioja nuo {date}.",
     "atMost": "Gaminys tinkamas, jei išskiria ne daugiau, nei leidžia ribinė vertė: teisės akte parašyta „ne daugiau kaip“.",
+    "ppm": "ppm čia reiškia miligramus litre bandomojo tirpalo (mg/L).",
     "unknown": "Taisyklių dar nepatvirtinome ({region}).",
     "choosePrompt": "Pasirinkite šalį, kad pamatytumėte jos taisykles."
   },

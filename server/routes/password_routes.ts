@@ -6,8 +6,14 @@
 //                              two-step sign-in on, a current factor too (code,
 //                              recoveryCode or passkey, as lib/mfa.d.ts FactorProof)
 //
+// A reset also stops every share link (docs/adr/0020-share-links.md); a change keeps them.
 // A new password signs out every device (the user's tokenVersion goes up) and
-// sends a notice to the account's address. A 400 about one field names it:
+// sends a notice to the account's address. A reset, which may mean someone
+// else knew the password, also revokes every access token and connected app
+// (decision 5), and unlinks every Google or GitHub account (the owner's
+// decision of 2026-10-17, ADR 15): someone who got in may have linked their
+// own. Its notice says so, and that they can be linked again from the account
+// page. An ordinary change keeps them all. A 400 about one field names it:
 // { msg, field: 'password' }.
 import crypto from 'node:crypto';
 import express from 'express';
@@ -16,11 +22,13 @@ import * as email from '../lib/email.ts';
 import { notGuest } from '../lib/guest_limits.ts';
 import jwtAuth, { keepsSignIn, userOf } from '../lib/jwt_auth.ts';
 import * as log from '../lib/log.ts';
+import { stopAllSharing } from '../lib/share_links.ts';
 import * as mailer from '../lib/mailer.ts';
 import * as password from '../lib/password.ts';
 import * as limits from '../lib/rate_limit.ts';
 import { confirmChange } from '../lib/second_step.ts';
 import * as session from '../lib/session.ts';
+import AccessToken, { revokeAll, workingTokens } from '../models/access_token.ts';
 import PasswordReset, { cancelLinks } from '../models/password_reset.ts';
 import User, { mfaOn, type UserDocument } from '../models/user.ts';
 import { say } from '../lib/messages.ts';
@@ -90,9 +98,17 @@ passwordRouter.post('/reset', limits.resetPassword, express.json(), async (req, 
   );
   const user = reset && (await User.findById(reset.userId));
   if (!user) return res.status(400).json(say('reset-link-bad'));
+  // Tokens are revoked first: if saving the password then fails, none is left working.
+  const tokens = await revokeAll(user._id, 'password-reset');
+  // As for the tokens: a reset means someone else may have had the password, so every share link stops too.
+  const shareLinks = await stopAllSharing(user._id);
   // The link went to the account's address, so opening it also proves the address is theirs.
   user.emailUnverified = undefined;
-  await setPassword(user, body.password as string);
+  // Every provider link goes; an account made with a provider has the new password instead.
+  const providers = [...new Set((user.identities ?? []).map((identity) => identity.provider))];
+  user.identities = [];
+  // One email says what the reset stopped: tokens, provider links and share links.
+  await setPassword(user, body.password as string, { tokens, providers, shareLinks });
   return res.status(200).json(say('password-reset'));
 });
 
@@ -113,7 +129,8 @@ passwordRouter.put(
     if (!user) return res.status(404).json(say('no-user'));
     if (mfaOn(user)) {
       // The password and a current factor (decision 6). The password here is `current`.
-      const check = await confirmChange(req, { ...body, password: body.current });
+      // Never a provider sign-in: an account without a password sets one by the reset email.
+      const check = await confirmChange(req, { ...body, password: body.current }, { reauth: false });
       if (!check.ok) {
         const field = check.field === 'password' ? 'current' : check.field;
         return res.status(check.status).json(say(check.code, check.params, field ? { field } : {}));
@@ -125,19 +142,28 @@ passwordRouter.put(
     await setPassword(user, body.password as string);
     // A new session keeps this browser signed in; every other one is signed out.
     session.start(res, user, 7, keepsSignIn(req));
-    return res.status(200).json(say('password-changed', undefined, { email: user.email }));
+    // An ordinary change keeps the access tokens (decision 5); the page lists
+    // those still working, with "Revoke all", when there are any.
+    const tokens = await AccessToken.countDocuments(workingTokens(user._id));
+    return res.status(200).json(say('password-changed', undefined, { email: user.email, tokens }));
   }
 );
 
 // Saves a new password, signs out every device, cancels open reset links and
-// tells the account's owner.
-async function setPassword(user: UserDocument, newPassword: string): Promise<void> {
+// tells the account's owner: after a reset, with what the reset stopped.
+async function setPassword(user: UserDocument, newPassword: string, reset?: accountMail.ResetStopped): Promise<void> {
   user.password = await password.hash(newPassword);
+  // An account made with a provider has a password of its own from now on.
+  user.passwordless = undefined;
   user.tokenVersion = (user.tokenVersion || 0) + 1;
   await user.save();
   await cancelLinks(user._id);
   // Not to an address nobody has confirmed: it may be a stranger's.
   if (!user.emailUnverified) {
-    accountMail.sendChanged(user.email, user.preferences?.language).catch(logMailError('password changed'));
+    const language = user.preferences?.language;
+    (reset
+      ? accountMail.sendResetDone(user.email, reset, language)
+      : accountMail.sendChanged(user.email, language)
+    ).catch(logMailError('password changed'));
   }
 }

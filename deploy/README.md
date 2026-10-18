@@ -22,6 +22,25 @@ app can be checked by IP address before the DNS switch: pages load, and curl can
 session cookie is `Secure`. After DNS points at the instance,
 `enable-https.sh` (run once) gets the certificate and switches nginx to `nginx/glazecalc.conf`.
 
+> **Required with the release that brings the Content-Security-Policy, the tools for AI
+> assistants (`/mcp`) and Google and GitHub sign-in:** once it is merged to master, run
+>
+> ```sh
+> sudo /opt/glazecalc/enable-https.sh --with-staging
+> ```
+>
+> on the instance (without `--with-staging` only where staging was never set up), right after
+> the Deploy of that release and before turning on provider sign-in. The nginx files reach the
+> instance only this way, never with a deploy. It installs, for production and staging alike:
+> the `Content-Security-Policy` header (`nginx/glazecalc-proxy.conf`, and its copy in
+> `nginx/glazecalc-staging.conf`); the unbuffered `location = /mcp`, without which an
+> assistant's streamed answers wait in nginx's buffer; and the access-log map that writes the
+> provider callback (`/api/auth/<provider>/callback`) without its query, which carries the
+> provider's one-time code and the state. Until it runs, the site has no CSP and those codes
+> would sit in `access.log` for 14 days. The script checks the files with `nginx -t` and puts
+> the old ones back if they fail; afterwards check that
+> `curl -sI https://glazecalcapp.com/ | grep -i content-security-policy` prints the header.
+
 | File                                                     | Where it ends up                       | What it does                                                                                                                                                                                                                                                                                                                                 |
 | -------------------------------------------------------- | -------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `cloud-init.yaml`                                        | launch template user data              | first-boot packages and settings; runs `setup-instance.sh`                                                                                                                                                                                                                                                                                   |
@@ -46,7 +65,9 @@ Settings come from SSM Parameter Store, never from the repository or user data:
 MongoDB user), `/glazecalc/mfa-key` (SecureString, two-step sign-in's key; see "Two-step sign-in key"
 below), `/glazecalc/backup-bucket`, `/glazecalc/smtp-url` (SecureString,
 the SES SMTP credentials that turn email on; see aws/README.md section 14), and optionally
-`/glazecalc/acme-email` (Let's Encrypt account contact).
+`/glazecalc/acme-email` (Let's Encrypt account contact) and `/glazecalc/google-client-id`,
+`/glazecalc/google-client-secret`, `/glazecalc/github-client-id`, `/glazecalc/github-client-secret`
+(sign in with Google and GitHub; see "Sign in with Google and GitHub" below).
 
 Day to day:
 
@@ -203,6 +224,105 @@ docker compose -f compose.prod.yaml run --rm --no-deps app node server/clear_mfa
 # and email that it was done.
 docker compose -f compose.prod.yaml run --rm --no-deps app node server/clear_mfa.ts --clear someone@example.com
 ```
+
+## Sign in with Google and GitHub
+
+"Continue with Google" and "Continue with GitHub" ([ADR 15](../docs/adr/0015-provider-sign-in.md))
+are off, with no button, until a provider's two parameters exist. Each copy of the site has its
+own apps: a GitHub OAuth app allows **one** callback URL, so production and staging need one
+each, and `staging.sh` refuses production's secret. The callbacks are exactly:
+
+| Copy       | Google                                                      | GitHub                                                      |
+| ---------- | ----------------------------------------------------------- | ----------------------------------------------------------- |
+| production | `https://glazecalcapp.com/api/auth/google/callback`         | `https://glazecalcapp.com/api/auth/github/callback`         |
+| staging    | `https://staging.glazecalcapp.com/api/auth/google/callback` | `https://staging.glazecalcapp.com/api/auth/github/callback` |
+
+**Owner steps, once** (staging first, try it there, then production):
+
+1. **Google** ([Google Cloud console](https://console.cloud.google.com/), no billing needed):
+   1. Create a project, "Glazecalc".
+   2. Google Auth Platform (APIs & Services → OAuth consent screen) → Get started: app name
+      "Glazecalc", user support email the owner's, audience **External**, contact email the
+      owner's; accept the policy.
+   3. Branding: home page `https://glazecalcapp.com`, privacy policy
+      `https://glazecalcapp.com/privacy`, authorized domain `glazecalcapp.com` (verified in
+      Search Console for brand verification). Leave the logo empty unless brand verification is
+      wanted: a logo sends the app to review.
+   4. Data access: add the scopes `openid` and `.../auth/userinfo.email`. The app asks only for
+      `openid email`, so no name or picture arrives; `profile` is not needed. These are
+      non-sensitive scopes: no Google review.
+   5. Audience: **Publish app** (In production), so sign-ins are not limited to test users.
+   6. Clients → Create client → **Web application**, "Glazecalc production": no JavaScript
+      origins; authorized redirect URI `https://glazecalcapp.com/api/auth/google/callback`.
+      Copy the client id and the secret (the console shows the secret once; download the JSON
+      to the password manager).
+   7. A second client, "Glazecalc staging", with only
+      `https://staging.glazecalcapp.com/api/auth/google/callback`.
+   8. Turn on the **`auth_time` claim** in the Google Auth Platform settings (Google's OpenID
+      Connect page: the claim is sent only when the request asks for it and it is enabled in
+      settings). A fresh sign-in that confirms a change on an account without a password asks
+      Google to sign the person in again (`max_age=0`) and needs `auth_time` to show it did;
+      without the claim every such confirmation is refused (`provider-not-fresh`).
+2. **GitHub** (the owner's account or the organisation: Settings → Developer settings → OAuth
+   Apps → New OAuth App), twice:
+   - "Glazecalc": homepage `https://glazecalcapp.com`, authorization callback URL
+     `https://glazecalcapp.com/api/auth/github/callback`, Device Flow off.
+   - "Glazecalc (staging)": homepage `https://staging.glazecalcapp.com`, callback
+     `https://staging.glazecalcapp.com/api/auth/github/callback`.
+
+   On each, Generate a new client secret and copy it with the client id. The app asks for
+   `user:email` only, to read the primary verified address.
+
+3. **The parameters** (drafts: put in the real values; the ids are not secret, but SecureString
+   keeps them all alike):
+
+   ```bash
+   export MSYS_NO_PATHCONV=1   # Git Bash only: else it turns /glazecalc/... into C:/Program Files/Git/glazecalc/...
+   # Staging
+   aws ssm put-parameter --region us-west-2 --name /glazecalc/staging/google-client-id --type SecureString \
+     --value 'STAGING_GOOGLE_CLIENT_ID.apps.googleusercontent.com'
+   aws ssm put-parameter --region us-west-2 --name /glazecalc/staging/google-client-secret --type SecureString \
+     --value 'STAGING_GOOGLE_CLIENT_SECRET'
+   aws ssm put-parameter --region us-west-2 --name /glazecalc/staging/github-client-id --type SecureString \
+     --value 'STAGING_GITHUB_CLIENT_ID'
+   aws ssm put-parameter --region us-west-2 --name /glazecalc/staging/github-client-secret --type SecureString \
+     --value 'STAGING_GITHUB_CLIENT_SECRET'
+   # Production
+   aws ssm put-parameter --region us-west-2 --name /glazecalc/google-client-id --type SecureString \
+     --value 'PROD_GOOGLE_CLIENT_ID.apps.googleusercontent.com'
+   aws ssm put-parameter --region us-west-2 --name /glazecalc/google-client-secret --type SecureString \
+     --value 'PROD_GOOGLE_CLIENT_SECRET'
+   aws ssm put-parameter --region us-west-2 --name /glazecalc/github-client-id --type SecureString \
+     --value 'PROD_GITHUB_CLIENT_ID'
+   aws ssm put-parameter --region us-west-2 --name /glazecalc/github-client-secret --type SecureString \
+     --value 'PROD_GITHUB_CLIENT_SECRET'
+   ```
+
+4. **nginx, once, before the first provider sign-in** (the required step at the top of this
+   file, if it has not been done). Run `sudo /opt/glazecalc/enable-https.sh --with-staging`
+   (without the flag where staging is not set up), so that nginx's access logs write the
+   callback (`/api/auth/<provider>/callback`) without its query, which carries the provider's
+   one-time code and the state (the `$glazecalc_request` map in `nginx/glazecalc.conf`;
+   `nginx/glazecalc-staging.conf` has its own copy, `$glazecalc_staging_request`, so staging's
+   log strips it even when its file comes from a branch through `GLAZECALC_STAGING_REF`).
+   Until then those codes and states would sit in `access.log` for 14 days.
+5. Run `staging.sh` (or Deploy for production). It prints `Sign in with google: on.` and
+   `Sign in with github: on.`, or `off` with the parameter it did not find. The instance role
+   already reads `/glazecalc/*`, so no policy changes.
+6. Try it: sign in with each on staging, with a new address and with one an account already has
+   (it must ask you to sign in first), and with two-step sign-in on (it must ask for the second
+   step). With an account made with Google, change its email from the account page: "Sign in
+   again with Google" must ask for the Google password, not only for the account.
+
+Afterwards:
+
+- **Turning one off:** delete its two parameters and deploy. Accounts made with it keep working
+  through "Forgot password", which gives them a password of their own.
+- **A new secret:** generate one at the provider (both providers allow two at once), put it with
+  `put-parameter --overwrite`, deploy, then delete the old one at the provider.
+- **`OAUTH_INVALID_CLIENT` in the app's log** means a provider refused the client id or secret:
+  check the parameters against the provider's console. `OAUTH_FAILED` lines are single sign-ins
+  that did not work (a code reused, the provider slow), worth a look only in numbers.
 
 ## How long logs are kept
 
@@ -615,3 +735,51 @@ shrink the certificate to production's names with
 then delete the DNS record (`"Action": "DELETE"` with the same record), the four
 `/glazecalc/staging/*` parameters, `/opt/glazecalc/{staging.sh,compose.staging.yaml,staging.env,staging.tag}`,
 and the database (`dropDatabase` needs MongoDB without sign-in, as in step 4; an empty one can stay).
+
+## Listing in the MCP Registry
+
+The MCP endpoint (`/mcp`, [ADR 0017](../docs/adr/0017-mcp-server.md)) can be listed in the official
+[MCP Registry](https://registry.modelcontextprotocol.io), so assistants find it by name. The listing is
+`server.json` at the repository root: the name `com.glazecalcapp/glazecalc`, which the registry grants
+only to whoever proves they control `glazecalcapp.com`, and the address `https://glazecalcapp.com/mcp`.
+Publishing is outward-facing, so it is done by hand, by the owner, never by CI. Publish after the
+endpoint is live in production, and again whenever `server.json` changes (raise its `version` first:
+the registry refuses a version it already has).
+
+CI checks the endpoint with the official conformance suite and the Inspector on every push (`npm run test:mcp`).
+`MCP_URL=https://glazecalcapp.com/mcp npm run test:mcp` runs the same against the live site, but the suite
+sends more than the 60 requests a minute one address may make, so expect some 429 answers there.
+
+1. **Get `mcp-publisher`,** the registry's own CLI (a Go binary from its GitHub releases; the npm
+   package of that name is someone else's):
+
+   ```bash
+   curl -L "https://github.com/modelcontextprotocol/registry/releases/latest/download/mcp-publisher_$(uname -s | tr '[:upper:]' '[:lower:]')_$(uname -m | sed 's/x86_64/amd64/;s/aarch64/arm64/').tar.gz" | tar xz mcp-publisher
+   ```
+
+2. **Prove the domain with a DNS TXT record** (once; keep the key for later versions). Make an Ed25519
+   key outside the repository and print the record:
+
+   ```bash
+   openssl genpkey -algorithm Ed25519 -out ~/glazecalc-mcp-registry-key.pem
+   PUBLIC_KEY="$(openssl pkey -in ~/glazecalc-mcp-registry-key.pem -pubout -outform DER | tail -c 32 | base64)"
+   echo "v=MCPv1; k=ed25519; p=${PUBLIC_KEY}"
+   ```
+
+   Add that string as a TXT value on `glazecalcapp.com` in the Route 53 zone. The apex may already have
+   TXT values (SPF for SES): an `UPSERT` replaces the whole set, so list them first with
+   `aws route53 list-resource-record-sets --hosted-zone-id "$ZONE" --query "ResourceRecordSets[?Type=='TXT']"`
+   and put every existing value and the new one in the same change. (The registry also takes the
+   string as a file at `https://glazecalcapp.com/.well-known/mcp-registry-auth` with `mcp-publisher login http`,
+   but that needs a new nginx location; DNS needs nothing deployed.)
+
+3. **Log in and publish,** from the repository root once the record resolves (`dig +short TXT glazecalcapp.com`):
+
+   ```bash
+   PRIVATE_KEY="$(openssl pkey -in ~/glazecalc-mcp-registry-key.pem -noout -text | grep -A3 'priv:' | tail -n +2 | tr -d ' :\n')"
+   ./mcp-publisher login dns --domain glazecalcapp.com --private-key "${PRIVATE_KEY}"
+   ./mcp-publisher publish
+   ```
+
+4. **Check it:** `curl -s "https://registry.modelcontextprotocol.io/v0/servers?search=com.glazecalcapp/glazecalc"`
+   lists it. The TXT record can stay (later versions log in the same way) or go once published.

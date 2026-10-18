@@ -17,13 +17,17 @@
     "confirmEmail": "Confirmar su correo electrónico - Glazecalc",
     "home": "Su cuaderno de taller - Glazecalc",
     "recipe": "Recetas - Glazecalc",
+    "import": "Pegar recetas - Glazecalc",
+    "blends": "Mezclas para probetas - Glazecalc",
     "material": "Materiales - Glazecalc",
     "additive": "Aditivos - Glazecalc",
     "firingLogs": "Registros de cocción - Glazecalc",
     "notes": "Notas - Glazecalc",
     "trash": "Papelera - Glazecalc",
     "account": "Su cuenta y ajustes - Glazecalc",
-    "notFound": "Página no encontrada - Glazecalc"
+    "notFound": "Página no encontrada - Glazecalc",
+    "shared": "Receta compartida - Glazecalc",
+    "assistants": "Usar Glazecalc desde su asistente de IA - Glazecalc"
   },
   "nav": {
     "skip": "Ir al contenido",
@@ -39,7 +43,9 @@
     "guides": "Guías",
     "about": "Acerca de",
     "account": "Cuenta",
+    "trialAccount": "Periodo de prueba",
     "accountTitle": "Su cuenta y ajustes",
+    "trash": "Papelera",
     "signOut": "Cerrar sesión",
     "createAccount": "Crear una cuenta gratuita"
   },
@@ -66,7 +72,8 @@
     "problem": "Informar de un problema",
     "pottery": "Cerámica hecha a mano: Updraft Pottery Studio",
     "copyright": "© 2017–2026 Aaron Filson / Candling Development Studio · Gratuito y de código abierto (licencia MIT)",
-    "languages": "Idiomas"
+    "languages": "Idiomas",
+    "language": "Idioma:"
   },
   "numbers": {
     "notANumber": "Introduzca un número, como {example}.",
@@ -85,7 +92,7 @@
     "about": "Glazecalc: calculadora y cuaderno de química de esmaltes cerámicos, gratuitos y de código abierto. Vea cómo calcula la fórmula Seger (UMF) y cómo está hecho.",
     "privacy": "Cómo trata Glazecalc sus datos: sin anuncios, sin analítica y sin seguimiento, y nada se vende. Qué se conserva, por qué y cómo ejercer sus derechos.",
     "signup": "Cree una cuenta gratuita en Glazecalc y guarde recetas de esmaltes cerámicos, materiales, notas y registros de cocción. Sin anuncios; sus datos nunca se venden.",
-    "imageAlt": "Glazecalc: entienda sus esmaltes cerámicos, no se limite a mezclarlos."
+    "imageAlt": "La página de inicio de Glazecalc: química de esmaltes gratuita para ceramistas, junto a una foto de tríos de conos tras la cocción."
   },
   "notices": {
     "dismiss": "Cerrar",
@@ -93,11 +100,15 @@
     "error": "Error: {text}"
   },
   "remove": {
-    "removed": "Se ha quitado «{name}».",
     "alreadyRemoved": "«{name}» ya se había quitado.",
+    "trashed": "Se ha movido «{name}» a la papelera.",
+    "undo": "Deshacer",
+    "restored": "Se ha recuperado «{name}».",
+    "restoreFailed": "No se ha podido recuperar «{name}». Sigue en la papelera.",
     "failed": "No se ha podido quitar. Inténtelo de nuevo.",
     "question": "¿Quitar «{name}»?",
     "cannotUndo": "No se puede deshacer.",
+    "toTrash": "Puede recuperarlo de la papelera durante 30 días.",
     "removing": "Quitando...",
     "yes": "Sí, quitar",
     "cancel": "Cancelar",
@@ -222,20 +233,26 @@
     "soldIn": "Se vende en",
     "showing": "Mostrando {shown} de {noun, select, additives {{total, plural, one {# aditivo} many {# aditivos} other {# aditivos}}} other {{total, plural, one {# material} many {# materiales} other {# materiales}}}}",
     "name": "Nombre",
+    "equivalentWeight": "Peso equivalente",
+    "firedWeight": "Peso cocido",
     "notes": "Notas",
     "analysis": "Análisis",
+    "details": "Detalles",
     "formula": "Fórmula",
+    "formulaLine": "Fórmula: {formula}",
     "useInstead": "<b>Usar en su lugar:</b> {list}",
     "similar": "Similares: {list}",
     "replaces": "Sustituye a: {list}",
     "aliases": "También llamado: {list}",
     "madeBy": "Fabricante: {name}",
     "source": "Fuente:",
+    "hazardsLine": "Peligros: {hazards}",
     "noChemistry": "Sin química: fuera de la fórmula Seger",
     "countedAs": "Contado como {name}",
     "nothingMatches": "No hay coincidencias. Pruebe con otro nombre, tipo o región.",
     "loading": "Cargando...",
-    "notFetched": "No se ha podido obtener la lista. <retry>Reintentar</retry>"
+    "notFetched": "No se ha podido obtener la lista. <retry>Reintentar</retry>",
+    "showAll": "{noun, select, additives {{count, plural, one {Mostrar # aditivo} many {Mostrar todos los # aditivos} other {Mostrar todos los # aditivos}}} other {{count, plural, one {Mostrar # material} many {Mostrar todos los # materiales} other {Mostrar todos los # materiales}}}}"
   },
   "chemistryForm": {
     "name": "{noun, select, additive {Ponga un nombre al aditivo.} other {Ponga un nombre al material.}}",
@@ -270,7 +287,7 @@
     "close": "Cerrar"
   },
   "unity": {
-    "fluxes": "Fundentes - RO",
+    "fluxes": "Fundentes - R₂O y RO",
     "stabilizers": "Estabilizantes - R₂O₃",
     "glassFormers": "Formadores de vidrio - RO₂",
     "wildcards": "Otros óxidos",

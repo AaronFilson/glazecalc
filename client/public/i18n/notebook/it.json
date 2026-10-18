@@ -4,10 +4,26 @@
     "signedInAs": "Accesso effettuato come {email}.",
     "trying": "Sta provando Glazecalc come {name}. Cominci da una ricetta.",
     "welcomeBack": "Riprenda da dove aveva lasciato.",
+    "welcome": {
+      "heading": "Le diamo il benvenuto in Glazecalc",
+      "text": "Il Suo quaderno di laboratorio è pronto. Un buon primo passo: inserire uno smalto che prepara già, con i suoi materiali e le sue quantità, e vederne la formula di Seger.",
+      "firstRecipe": "Inizia la prima ricetta",
+      "confirmHeading": "Confermare l’email",
+      "confirm": "Confermi l’email: abbiamo inviato un link a {email}. L’accesso in due passaggi ne ha bisogno. La Sua <account>pagina dell’account</account> può inviarlo di nuovo.",
+      "confirmText": "Abbiamo inviato un link a {email}. Lo apra per confermare che l’indirizzo è Suo: l’accesso in due passaggi ne ha bisogno. La Sua <account>pagina dell’account</account> può inviarlo di nuovo."
+    },
     "sections": {
       "recipe": {
         "title": "Ricette",
         "text": "Comporre uno smalto con materiali e quantità, vederne la formula di Seger (UMF) e salvarlo."
+      },
+      "import": {
+        "title": "Incollare ricette",
+        "text": "Incollare ricette da un sito web, da un foglio di calcolo o da appunti, controllare cosa è stato letto e salvarle."
+      },
+      "blends": {
+        "title": "Miscele per provini",
+        "text": "Miscelare due, tre o quattro ricette in provini numerati, con le quantità da pesare per ciascuno."
       },
       "material": {
         "title": "Materiali",
@@ -32,6 +48,14 @@
       "guides": {
         "title": "Guide",
         "text": "Da che cos’è uno smalto alla sua cottura, e come tenere tutti al sicuro lungo il percorso."
+      },
+      "trash": {
+        "title": "Cestino",
+        "text": "Ripristini ciò che ha rimosso negli ultimi 30 giorni."
+      },
+      "account": {
+        "title": "Account e impostazioni",
+        "text": "Impostazioni, la Sua password, l’accesso in due passaggi e un download di tutto ciò che conserva qui."
       }
     },
     "newHere": "La formula di Seger è una novità? La <advice>pagina dei consigli</advice> ne spiega le basi e la <about>pagina Informazioni</about> dice come funziona Glazecalc."
@@ -39,27 +63,54 @@
   "firing": {
     "title": "Registri di cottura",
     "lead": "Registrare ogni cottura: tempi, temperature, coni e note sul forno.",
+    "newHeading": "Una nuova cottura",
+    "titleLabel": "Titolo",
+    "kiln": "Forno",
+    "date": "Data",
+    "notes": "Note",
+    "fieldSelect": "Campi da registrare",
     "addField": "Aggiungi il campo",
+    "included": "Campi di questa registrazione",
     "moveLeft": "Sposta il campo a sinistra",
     "moveRight": "Sposta il campo a destra",
     "removeField": "Rimuovi il campo",
     "addRow": "Aggiungi una riga alla tabella di cottura",
+    "addRowWhy": "Aggiunga prima un campo.",
+    "tableEmpty": "Aggiunga un campo qui sopra, poi delle righe.",
+    "recordHeading": "Registra la cottura",
     "rowActions": "Azioni sulla riga",
     "cell": "{field}, riga {row}",
     "removeRow": "Rimuovi la riga",
     "save": "Salva",
+    "storedHeading": "Le mie cotture salvate",
+    "noneSaved": "Ancora nessuna. Le cotture salvate compaiono qui.",
+    "storedIn": "Cotto in {kiln} il {date}.",
+    "storedOn": "Cotto il {date}.",
     "storedNotes": "Note: {notes}",
     "titleMissing": "Dare un titolo alla cottura.",
     "fieldsMissing": "Aggiungere almeno un campo da registrare, come {example}.",
     "chooseField": "Scegliere un campo da aggiungere, poi fare clic su Aggiungi il campo.",
     "fetchFailed": "Si è verificato un errore nel recupero dei registri di cottura.",
     "saved": "Il registro di cottura è stato aggiunto al server.",
-    "saveFailed": "Errore: la richiesta al server non è riuscita."
+    "saveFailed": "Errore: la richiesta al server non è riuscita.",
+    "recipesHeading": "Ricette cotte in questa cottura",
+    "noRecipes": "Nessuna ricetta collegata per ora.",
+    "recipesFailed": "Non è stato possibile recuperare le ricette, quindi per ora non se ne può collegare nessuna.",
+    "pickRecipe": "Una ricetta cotta in questa cottura",
+    "linkRecipe": "Collega la ricetta",
+    "unlink": "Scollega",
+    "unlinkRecipe": "Scollega {title}",
+    "linkFailed": "Non è stato possibile salvare il collegamento."
   },
   "notes": {
     "title": "Note",
     "lead": "Tutto il resto che vale la pena ricordare sui propri smalti.",
+    "newHeading": "Una nuova nota",
+    "titleLabel": "Titolo",
+    "content": "Nota",
     "save": "Salva",
+    "mineHeading": "Le mie note salvate",
+    "noneSaved": "Ancora nessuna. Le note salvate compaiono qui.",
     "titleMissing": "Dare un titolo alla nota.",
     "contentMissing": "Scrivere la nota.",
     "untitled": "Nota senza titolo",
@@ -69,6 +120,34 @@
   },
   "trash": {
     "title": "Cestino",
-    "comingSoon": "Il cestino arriverà presto, nella prossima versione di Glazecalc. Fino ad allora, usare con attenzione i comandi per eliminare e rimuovere: ciò che viene cancellato va perso."
+    "lead": "Ciò che rimuove (ricette, materiali, additivi, note, registri di cottura e consigli) resta qui per 30 giorni. Lo ripristini, oppure lo elimini per sempre.",
+    "listHeading": "Nel cestino",
+    "none": "Il cestino è vuoto.",
+    "untitled": "Senza titolo",
+    "kinds": {
+      "recipes": "Ricetta",
+      "materials": "Materiale",
+      "additives": "Additivo",
+      "notes": "Nota",
+      "firing": "Registro di cottura",
+      "advice": "Consiglio",
+      "other": "Elemento"
+    },
+    "removedOn": "Rimosso il {date}",
+    "goesOn": "Eliminato per sempre il {date}",
+    "byApp": "Rimosso da un’app collegata",
+    "putBack": "Ripristina",
+    "putBackName": "Ripristina {name}",
+    "restored": "«{name}» è stato ripristinato dov’era.",
+    "restoredAlready": "«{name}» è già stato ripristinato.",
+    "restoreFailed": "Impossibile ripristinare «{name}». Riprovare.",
+    "deleted": "«{name}» è stato eliminato per sempre.",
+    "empty": "Svuota il cestino",
+    "emptyQuestion": "{count, plural, one {Eliminare per sempre l’elemento nel cestino?} many {Eliminare per sempre tutti i # di elementi nel cestino?} other {Eliminare per sempre tutti i # elementi nel cestino?}} L’operazione non si può annullare.",
+    "emptyYes": "Sì, svuota",
+    "emptying": "Svuotamento...",
+    "emptied": "Il cestino è vuoto.",
+    "emptyFailed": "Impossibile svuotare il cestino. Riprovare.",
+    "fetchFailed": "Impossibile caricare il cestino. Riprovare."
   }
 }

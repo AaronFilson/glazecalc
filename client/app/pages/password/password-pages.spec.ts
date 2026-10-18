@@ -2,7 +2,16 @@ import { Location } from '@angular/common';
 import { TestBed } from '@angular/core/testing';
 import { ActivatedRoute, Router, convertToParamMap } from '@angular/router';
 import { AuthService } from '../../core/auth.service';
-import { answer, API, fieldProblem, httpMock, settle, testProviders, text } from '../../testing/test-providers';
+import {
+  answer,
+  API,
+  fieldProblem,
+  httpMock,
+  NO_TOKENS,
+  settle,
+  testProviders,
+  text
+} from '../../testing/test-providers';
 import { AccountPage } from './account-page';
 import { ForgotPage } from './forgot-page';
 import { ResetPage } from './reset-page';
@@ -138,7 +147,9 @@ describe('AccountPage', () => {
     const fixture = TestBed.createComponent(AccountPage);
     await fixture.whenStable();
     answer('/preferences', { weightUnit: 'g' });
+    answer('/share/recipes', []);
     answer('/mfa', { on: false, emailConfirmed: true, totp: null, passkeys: [], codesLeft: 0 });
+    answer('/tokens', NO_TOKENS);
     await settle(fixture);
     return { fixture, page: fixture.componentInstance as unknown as Page };
   };
@@ -150,13 +161,19 @@ describe('AccountPage', () => {
     expect(headings).toEqual([
       'Settings',
       'Download my data',
+      'Trash',
+      'Shared recipes',
       'Change your password',
       'Two-step sign-in',
+      'Access tokens',
       'Change your email',
       'Sign out everywhere',
       'Delete your account'
     ]);
     expect((fixture.nativeElement.querySelector('#weight-unit-g') as HTMLInputElement).checked).toBe(true);
+    // The Trash, which has no other way in but the menu and Home.
+    expect(text(fixture, '#trash-heading + p')).toContain('30 days');
+    expect(fixture.nativeElement.querySelector('a[href="/trash"]')?.textContent?.trim()).toBe('Open the Trash');
   });
 
   it('lists its sections at the top, each a link that takes the focus to its heading', async () => {
@@ -167,8 +184,11 @@ describe('AccountPage', () => {
     expect(links.map((a) => a.textContent?.trim())).toEqual([
       'Settings',
       'Download my data',
+      'Trash',
+      'Shared recipes',
       'Change your password',
       'Two-step sign-in',
+      'Access tokens',
       'Change your email',
       'Sign out everywhere',
       'Delete your account'
@@ -178,7 +198,7 @@ describe('AccountPage', () => {
       const id = link.getAttribute('href')!.split('#')[1]!;
       expect(fixture.nativeElement.querySelector('#' + id)?.tagName).toBe('H2');
     }
-    links[3]!.dispatchEvent(new MouseEvent('click', { bubbles: true, cancelable: true, button: 0 }));
+    links[5]!.dispatchEvent(new MouseEvent('click', { bubbles: true, cancelable: true, button: 0 }));
     expect(document.activeElement?.id).toBe('mfa-heading');
     // One filled button at most, for a step under way: none while nothing is.
     expect(fixture.nativeElement.querySelectorAll('.btn-primary').length).toBe(0);
@@ -196,6 +216,10 @@ describe('AccountPage', () => {
     req.flush({ msg: 'Your password has been changed.', email: 'a@b.com' });
     await submitting;
     await fixture.whenStable();
+    // The tokens still working are looked up, to offer to revoke them: none here.
+    answer('/tokens', NO_TOKENS);
+    await settle(fixture);
+    expect(fixture.nativeElement.querySelector('.tokens-after-change')).toBeNull();
 
     const auth = TestBed.inject(AuthService);
     expect(auth.hasSession()).toBe(true);

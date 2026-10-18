@@ -81,6 +81,7 @@
     "createAccount": "Stvori račun",
     "title": "Vaš račun",
     "signedInAs": "Prijavljeni ste kao {email}.",
+    "contents": "Na ovoj stranici",
     "changeHeading": "Promjena lozinke",
     "current": "Trenutačna lozinka",
     "currentMissing": "Unesite trenutačnu lozinku.",
@@ -106,7 +107,7 @@
     "emailSend": "Pošalji poveznicu",
     "emailFailed": "Pogreška: poveznicu nije moguće poslati. Pokušajte ponovno.",
     "signOutHeading": "Odjava sa svih uređaja",
-    "signOutText": "Odjavljuje vas na svim uređajima, uključujući ovaj. Koristite je ako ste izgubili uređaj ili mislite da netko drugi ima vaše podatke za prijavu.",
+    "signOutText": "Odjavljuje vas na svakom uređaju, uključujući ovaj, te zaustavlja vaše pristupne tokene i poveznice za dijeljenje. Upotrijebite to ako ste izgubili uređaj ili mislite da netko drugi ima vaše podatke za prijavu.",
     "signOutButton": "Odjavi se sa svih uređaja",
     "signOutFailed": "Pogreška: odjava nije uspjela. Pokušajte ponovno.",
     "confirmStep": "Dvostupanjska prijava je uključena, zato potvrdite da ste to vi: lozinkom i drugim korakom."
@@ -118,6 +119,8 @@
     "on": "Dvostupanjska prijava je uključena.",
     "onText": "Prijavljujete se lozinkom i drugim korakom ili samo pristupnim ključem.",
     "off": "Dvostupanjska prijava je isključena.",
+    "badgeOn": "Uključeno",
+    "badgeOff": "Isključeno",
     "offText": "Da biste je uključili, postavite aplikaciju za provjeru autentičnosti ili dodajte pristupni ključ.",
     "confirmEmailFirst": "Najprije gore potvrdite svoju adresu e-pošte. Njome vas obavještavamo o promjenama načina prijave i pomažemo vam ako izgubite drugi korak.",
     "appHeading": "Aplikacija za provjeru autentičnosti",
@@ -141,6 +144,7 @@
     "nameCheck": "Pristupnom ključu dajte naziv od 1 do {most} znakova.",
     "passkeyLimit": "Imate {most} pristupnih ključeva, što je najviše što račun može imati. Da biste dodali novi, jedan uklonite.",
     "codesTitle": "Kodovi za oporavak",
+    "codesLeft": "{count, plural, one {Preostao je # od {total} kodova za oporavak.} few {Preostala su # od {total} kodova za oporavak.} other {Preostalo je # od {total} kodova za oporavak.}} Ako ne možete upotrijebiti aplikaciju ili pristupni ključ, kod vas prijavljuje umjesto njih. Svaki kod vrijedi samo jednom.",
     "codesLow": "Uskoro stvorite nove kodove. Ako ih ponestane, a izgubite aplikaciju i pristupne ključeve, nećete se moći prijaviti.",
     "newCodes": "Stvori nove kodove za oporavak",
     "offHeading": "Isključivanje",
@@ -149,6 +153,8 @@
     "offCodes": "Vaši kodovi za oporavak prestaju vrijediti.",
     "offSignOut": "Svi ostali uređaji prijavljeni u vaš račun odjavljuju se. Ovaj ostaje prijavljen.",
     "offEmail": "Šaljemo vam e-poruku da je isključena.",
+    "offRemoveApp": "Isključi dvostupanjsku prijavu (uklanja aplikaciju)",
+    "offRemoveAppFirst": "Ukloni aplikaciju za početak isključivanja",
     "offPasskeys": "{count, plural, one {Da biste je isključili, uklonite svoj pristupni ključ u odjeljku Pristupni ključevi gore.} few {Da biste je isključili, uklonite svoja # pristupna ključa u odjeljku Pristupni ključevi gore.} other {Da biste je isključili, uklonite svojih # pristupnih ključeva u odjeljku Pristupni ključevi gore.}}",
     "offPasskeysToo": "{count, plural, one {Imate i pristupni ključ: uklonite ga u odjeljku Pristupni ključevi gore, kao i aplikaciju.} few {Imate i # pristupna ključa: uklonite ih u odjeljku Pristupni ključevi gore, kao i aplikaciju.} other {Imate i # pristupnih ključeva: uklonite ih u odjeljku Pristupni ključevi gore, kao i aplikaciju.}}",
     "addAppText": "Da biste postavili aplikaciju za provjeru autentičnosti, najprije potvrdite da ste to vi.",
@@ -201,6 +207,25 @@
     "recipes": "Recepti (CSV)",
     "materials": "Sirovine (CSV)"
   },
+  "trash": {
+    "heading": "Koš za smeće",
+    "text": "Ono što uklonite iz svoje bilježnice čeka u Košu za smeće 30 dana. Odande to možete vratiti ili zauvijek izbrisati.",
+    "open": "Otvori Koš za smeće"
+  },
+  "shared": {
+    "heading": "Podijeljeni recepti",
+    "text": "Recepti koje dijelite poveznicom i koje svatko tko ima poveznicu može čitati bez računa. Poveznica se prikazuje samo jednom, kad se izradi, pa se ovdje ne može prikazati. Da biste recept ponovno podijelili, izradite novu poveznicu u izborniku „Više” uz recept.",
+    "since": "Podijeljeno od {date}",
+    "notesShown": "Napomene su prikazane",
+    "notesHidden": "Napomene nisu prikazane",
+    "untitled": "Recept bez naslova",
+    "stop": "Prekini dijeljenje",
+    "stopName": "Prekini dijeljenje: {name}",
+    "stopped": "{name} se više ne dijeli. Njegova poveznica više ne radi.",
+    "stopFailed": "Nije uspjelo. Pokušajte ponovno.",
+    "fetchFailed": "Ne možemo učitati vaše podijeljene recepte. Pokušajte ponovno.",
+    "none": "Ne dijelite nijedan recept."
+  },
   "settings": {
     "heading": "Postavke",
     "intro": "Spremaju se uz vaš račun, pa vrijede na svakom uređaju.",
@@ -227,6 +252,22 @@
       },
       "saved": "Spremljeno: zapis brojeva i datuma – {language}.",
       "help": "Kako se pišu brojevi i datumi: 12,345.6 ili 12.345,6 te redoslijed dana i mjeseca."
+    },
+    "calendar": {
+      "legend": "Kalendar",
+      "help": "Kalendar u kojem se prikazuju datumi. Datumi koje upisujete ostaju u gregorijanskom kalendaru.",
+      "gregory": {
+        "label": "Gregorijanski",
+        "saved": "Spremljeno: datumi se prikazuju u gregorijanskom kalendaru."
+      },
+      "buddhist": {
+        "label": "Tajlandska budistička era",
+        "saved": "Spremljeno: datumi se prikazuju u tajlandskoj budističkoj eri."
+      },
+      "japanese": {
+        "label": "Japanske ere",
+        "saved": "Spremljeno: datumi se prikazuju u japanskim erama."
+      }
     },
     "decimalMark": {
       "legend": "Unos količina",
@@ -265,7 +306,7 @@
         "saved": "Spremljeno: pečenje na Ortonove stošce."
       },
       "sk": {
-        "label": "Na stošce SK (JIS R 8101)",
+        "label": "Na stošce SK, JIS R 8101",
         "example": "SK 4a, SK 8",
         "saved": "Spremljeno: pečenje na stošce SK."
       },
@@ -291,6 +332,12 @@
         "saved": "Spremljeno: gustoća glazure kao masa pinte."
       },
       "help": "Kako vodiči iskazuju gustoću glazure. Dok ne odaberete, ovo prati vašu regiju: stupnjevi Baumé u Italiji i Japanu, relativna gustoća drugdje."
+    },
+    "currency": {
+      "legend": "Valuta za cijene",
+      "help": "Cijene koje unosite za sirovine i cijena jedne smjese iskazuju se u ovoj valuti. Promjena valute ne preračunava cijene koje ste već unijeli. Dok ne odaberete, valuta slijedi vašu regiju.",
+      "saved": "Spremljeno: cijene su u valuti {currency}.",
+      "notConverted": "Vaše spremljene cijene nisu preračunate: to su još uvijek brojevi koje ste unijeli."
     },
     "theme": {
       "legend": "Svijetlo ili tamno",
@@ -386,5 +433,72 @@
     "account": "Vaš račun",
     "signIn": "Prijavi se",
     "failed": "Pogreška: adresu nije moguće potvrditi. Pokušajte ponovno."
+  },
+  "providers": {
+    "continueGoogle": "Nastavi s Googleom",
+    "continueGithub": "Nastavi s GitHubom",
+    "failed": "Prijava nije uspjela. Pokušajte ponovno.",
+    "heading": "Google i GitHub",
+    "intro": "Povežite račun na Googleu ili GitHubu da biste se njime prijavljivali. Glazecalc od njega čuva samo identifikator računa, nikad ime, sliku ni išta drugo, a dvostupanjska prijava i dalje traži svoj drugi korak.",
+    "passwordless": "Ovaj račun nema lozinku. Da biste promijenili e-adresu, dvostupanjsku prijavu ili načine prijave ili da biste izbrisali račun, potvrđujete da ste to vi ponovnom prijavom putem Googlea ili GitHuba. Možete postaviti i lozinku.",
+    "setPassword": "Pošalji mi poveznicu za postavljanje lozinke",
+    "setPasswordUnlinks": "Postavljanje lozinke poveznicom poslanom e-poštom ujedno prekida povezanost s Googleom i GitHubom. Poslije ih možete ponovno povezati.",
+    "setPasswordFailed": "Ne možemo poslati poveznicu. Pokušajte ponovno.",
+    "confirmFirst": "Da biste povezali Google ili GitHub, prvo potvrdite e-adresu poveznicom koju smo vam poslali.",
+    "linkedOn": "Povezano {date}",
+    "notLinked": "Nije povezano",
+    "link": "Poveži: {provider}",
+    "unlink": "Prekini vezu: {provider}",
+    "linkFailed": "Povezivanje nije uspjelo. Pokušajte ponovno.",
+    "reauthIntro": "Ovaj račun nema lozinku, pa potvrdite da ste to vi ponovnom prijavom. Zatim izvršite promjenu u roku od 5 minuta.",
+    "reauthButton": "Prijavi se ponovno: {provider}",
+    "reauthHeld": "Ponovno ste se prijavili putem usluge {provider}. U sljedećih 5 minuta možete izvršiti jednu promjenu bez lozinke.",
+    "reauthFirst": "Prvo se ponovno prijavite jednim od gumba iznad.",
+    "reauthFailed": "Ne možemo pokrenuti ponovnu prijavu. Pokušajte ponovno."
+  },
+  "tokens": {
+    "heading": "Pristupni tokeni",
+    "intro": "Pristupni token omogućuje vašem AI asistentu ili skripti da čita recepte, sirovine, bilješke i zapisnike pečenja na vašem računu. Za sada token može samo čitati: nikad ništa ne mijenja ni uklanja. Svaki token prestaje raditi na dan koji odaberete ili čim ga opozovete.",
+    "howTo": "Kako povezati AI asistenta",
+    "listLabel": "Vaši pristupni tokeni",
+    "none": "Nemate pristupnih tokena.",
+    "hint": "završava na {hint}",
+    "readOnly": "Samo za čitanje",
+    "created": "izrađen {date}",
+    "lastUsed": "zadnji put korišten {date}",
+    "neverUsed": "nikad korišten",
+    "expires": "istječe {date}",
+    "expiredOn": "istekao {date}",
+    "revokedOn": "opozvan {date}",
+    "revoke": "Opozovi",
+    "revokeNamed": "Opozovi: {name}",
+    "revokeAll": "Opozovi sve pristupne tokene",
+    "revokeFailed": "Pogreška: ne možemo opozvati token. Pokušajte ponovno.",
+    "loadFailed": "Ne možemo učitati vaše pristupne tokene. Ponovno učitajte stranicu i pokušajte opet.",
+    "createHeading": "Izradi token",
+    "name": "Naziv",
+    "nameHint": "Nešto po čemu ćete ga razlikovati, na primjer asistent ili računalo za koje je namijenjen.",
+    "nameCheck": "Dajte tokenu naziv od 1 do {most} znakova.",
+    "expiry": "Prestaje raditi nakon",
+    "days": "{count, plural, one {# dan} few {# dana} other {# dana}}",
+    "expiryHint": "Šaljemo vam e-poruku 7 dana prije nego što token prestane raditi.",
+    "confirmEmailFirst": "Prije nego što možete izraditi token, potvrdite e-adresu: otvorite poveznicu koju smo poslali na {email}. Na tu adresu javljamo kad se izradi token i prije nego što neki prestane raditi.",
+    "resend": "Ponovno pošalji poveznicu za potvrdu",
+    "scopeNote": "Token može čitati vaše zapise, ali ih ne može mijenjati.",
+    "confirmStep": "Da biste izradili token, potvrdite da ste to vi.",
+    "create": "Izradi token",
+    "failed": "Pogreška: ne možemo izraditi token. Pokušajte ponovno.",
+    "limit": "Imate najveći broj aktivnih pristupnih tokena koji račun može imati ({most}). Opozovite jedan da biste izradili drugi.",
+    "newHeading": "Kopirajte novi token sada",
+    "newText": "Ovo je jedini put kad se prikazuje. Svatko tko ga ima može čitati vaše zapise dok token ne prestane raditi, zato ga čuvajte kao lozinku i dajte ga samo svojem asistentu ili skripti.",
+    "newLabel": "Vaš novi pristupni token",
+    "copy": "Kopiraj token",
+    "copied": "Kopirano.",
+    "copyFailed": "Kopiranje nije uspjelo. Odaberite token i kopirajte ga sami.",
+    "done": "Token je kopiran",
+    "keptHeading": "Vaši pristupni tokeni i dalje rade",
+    "keptText": "{count, plural, one {Promjena lozinke nije zaustavila vaš pristupni token. Ako ste je promijenili zato što je netko drugi možda zna, opozovite i token.} few {Promjena lozinke nije zaustavila vaša # pristupna tokena. Ako ste je promijenili zato što je netko drugi možda zna, opozovite i njih.} other {Promjena lozinke nije zaustavila vaših # pristupnih tokena. Ako ste je promijenili zato što je netko drugi možda zna, opozovite i njih.}}",
+    "keep": "Zadrži ih",
+    "signOutNote": "{count, plural, one {Time se zauvijek zaustavlja i vaš pristupni token.} few {Time se zauvijek zaustavljaju i vaša # pristupna tokena.} other {Time se zauvijek zaustavlja i vaših # pristupnih tokena.}}"
   }
 }

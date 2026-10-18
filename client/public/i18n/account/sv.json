@@ -81,6 +81,7 @@
     "createAccount": "Skapa ett konto",
     "title": "Konto",
     "signedInAs": "Inloggad som {email}.",
+    "contents": "På den här sidan",
     "changeHeading": "Ändra lösenordet",
     "current": "Nuvarande lösenord",
     "currentMissing": "Ange det nuvarande lösenordet.",
@@ -106,7 +107,7 @@
     "emailSend": "Skicka länken",
     "emailFailed": "Fel: det gick inte att skicka länken. Försök igen.",
     "signOutHeading": "Logga ut överallt",
-    "signOutText": "Loggar ut på alla enheter, även den här. Använd det om du har tappat bort en enhet eller tror att någon annan har dina inloggningsuppgifter.",
+    "signOutText": "Loggar ut på alla enheter, även den här, och stoppar åtkomsttoken och delningslänkar. Använd det om en enhet har försvunnit eller någon annan kan ha inloggningen.",
     "signOutButton": "Logga ut överallt",
     "signOutFailed": "Fel: det gick inte att logga ut. Försök igen.",
     "confirmStep": "Inloggning i två steg är aktiverad, så bekräfta att det är du: lösenordet och ett andra steg."
@@ -118,6 +119,8 @@
     "on": "Inloggning i två steg är aktiverad.",
     "onText": "Du loggar in med lösenordet och ett andra steg, eller bara med en lösennyckel.",
     "off": "Inloggning i två steg är avstängd.",
+    "badgeOn": "På",
+    "badgeOff": "Av",
     "offText": "För att aktivera den, ställ in en autentiseringsapp eller lägg till en lösennyckel.",
     "confirmEmailFirst": "Bekräfta först e-postadressen ovan. Den används för att meddela om ändringar i hur du loggar in och för att hjälpa till om det andra steget försvinner.",
     "appHeading": "Autentiseringsapp",
@@ -141,6 +144,7 @@
     "nameCheck": "Ge lösennyckeln ett namn på 1 till {most} tecken.",
     "passkeyLimit": "Kontot har {most} lösennycklar, det högsta antal ett konto kan ha. Ta bort en för att lägga till en annan.",
     "codesTitle": "Återställningskoder",
+    "codesLeft": "{count, plural, one {# av {total} återställningskoder kvar.} other {# av {total} återställningskoder kvar.}} Går appen eller en inloggningsnyckel inte att använda kan en kod användas för att logga in i stället. Varje kod fungerar bara en gång.",
     "codesLow": "Skapa nya koder snart. Om de tar slut och både appen och inloggningsnycklarna försvinner går det inte att logga in.",
     "newCodes": "Skapa nya återställningskoder",
     "offHeading": "Stänga av",
@@ -149,6 +153,8 @@
     "offCodes": "Återställningskoderna slutar fungera.",
     "offSignOut": "Alla andra enheter som är inloggade på kontot loggas ut. Den här förblir inloggad.",
     "offEmail": "Vi skickar ett e-postmeddelande om att den har stängts av.",
+    "offRemoveApp": "Stäng av inloggning i två steg (tar bort appen)",
+    "offRemoveAppFirst": "Ta bort appen för att börja stänga av den",
     "offPasskeys": "{count, plural, one {För att stänga av den, ta bort lösennyckeln under Inloggningsnycklar ovan.} other {För att stänga av den, ta bort de # inloggningsnycklarna under Inloggningsnycklar ovan.}}",
     "offPasskeysToo": "{count, plural, one {Det finns också en lösennyckel: ta bort den under Inloggningsnycklar ovan, utöver appen.} other {Det finns också # inloggningsnycklar: ta bort dem under Inloggningsnycklar ovan, utöver appen.}}",
     "addAppText": "För att ställa in en autentiseringsapp, bekräfta först att det är du.",
@@ -201,6 +207,25 @@
     "recipes": "Recept (CSV)",
     "materials": "Råvaror (CSV)"
   },
+  "trash": {
+    "heading": "Papperskorgen",
+    "text": "Det som tas bort från anteckningsboken ligger 30 dagar i papperskorgen. Lägg tillbaka det därifrån, eller radera det för gott.",
+    "open": "Öppna papperskorgen"
+  },
+  "shared": {
+    "heading": "Delade recept",
+    "text": "Recepten som delas med en länk, som alla som har länken kan läsa utan konto. En länk visas bara en gång, när den skapas, så den kan inte visas här. För att dela ett recept igen, skapa en ny länk under Mer på receptet.",
+    "since": "Delat sedan {date}",
+    "notesShown": "Anteckningar visas",
+    "notesHidden": "Anteckningar visas inte",
+    "untitled": "Recept utan namn",
+    "stop": "Sluta dela",
+    "stopName": "Sluta dela {name}",
+    "stopped": "{name} delas inte längre. Länken fungerar inte längre.",
+    "stopFailed": "Det gick inte. Försök igen.",
+    "fetchFailed": "De delade recepten kunde inte läsas in. Försök igen.",
+    "none": "Inget recept delas."
+  },
   "settings": {
     "heading": "Inställningar",
     "intro": "Sparas med kontot och gäller därför på alla enheter.",
@@ -227,6 +252,22 @@
       },
       "saved": "Sparat: tal och datum som på {language}.",
       "help": "Hur tal och datum skrivs: 12,345.6 eller 12.345,6, och i vilken ordning dag och månad står."
+    },
+    "calendar": {
+      "legend": "Kalender",
+      "help": "Kalendern som datum visas i. Datum som skrivs in förblir i den gregorianska kalendern.",
+      "gregory": {
+        "label": "Gregoriansk",
+        "saved": "Sparat: datum visas i den gregorianska kalendern."
+      },
+      "buddhist": {
+        "label": "Thailändsk buddhistisk era",
+        "saved": "Sparat: datum visas i den thailändska buddhistiska eran."
+      },
+      "japanese": {
+        "label": "Japansk era",
+        "saved": "Sparat: datum visas i japanska eror."
+      }
     },
     "decimalMark": {
       "legend": "Inmatning av mängder",
@@ -265,7 +306,7 @@
         "saved": "Sparat: bränning efter Ortonkäglor."
       },
       "sk": {
-        "label": "Efter SK-käglor (JIS R 8101)",
+        "label": "Efter SK-käglor, JIS R 8101",
         "example": "SK 4a, SK 8",
         "saved": "Sparat: bränning efter SK-käglor."
       },
@@ -291,6 +332,12 @@
         "saved": "Sparat: glasyrens densitet som pintvikt."
       },
       "help": "Hur guiderna anger en glasyrs tjocklek. Tills ett val görs följer detta regionen: baumégrader i Italien och Japan, specifik vikt på andra håll."
+    },
+    "currency": {
+      "legend": "Valuta för priser",
+      "help": "Priserna som anges för råvaror, och vad en sats kostar, anges i den här valutan. Om valutan ändras räknas redan angivna priser inte om. Tills en valuta väljs följer den regionen.",
+      "saved": "Sparat: priser i {currency}.",
+      "notConverted": "De sparade priserna har inte räknats om: de är fortfarande siffrorna som angavs."
     },
     "theme": {
       "legend": "Ljust eller mörkt",
@@ -386,5 +433,72 @@
     "account": "Kontot",
     "signIn": "Logga in",
     "failed": "Fel: det gick inte att bekräfta adressen. Försök igen."
+  },
+  "providers": {
+    "continueGoogle": "Fortsätt med Google",
+    "continueGithub": "Fortsätt med GitHub",
+    "failed": "Det gick inte att logga in. Försök igen.",
+    "heading": "Google och GitHub",
+    "intro": "Koppla ett Google- eller GitHub-konto för att logga in med det. Glazecalc sparar bara kontots id, aldrig namn, bild eller något annat, och inloggning i två steg kräver fortfarande det andra steget.",
+    "passwordless": "Det här kontot har inget lösenord. För att ändra e-postadressen, inloggning i två steg eller sätten att logga in, eller för att radera kontot, bekräfta att det är du genom att logga in igen med Google eller GitHub. Ett lösenord kan också anges.",
+    "setPassword": "Skicka en länk för att ange ett lösenord",
+    "setPasswordUnlinks": "Att ange ett lösenord med länken i e-postmeddelandet kopplar också bort Google och GitHub. Därefter kan de kopplas igen.",
+    "setPasswordFailed": "Länken kunde inte skickas. Försök igen.",
+    "confirmFirst": "Bekräfta först e-postadressen, med länken som skickades, för att koppla Google eller GitHub.",
+    "linkedOn": "Kopplat {date}",
+    "notLinked": "Inte kopplat",
+    "link": "Koppla {provider}",
+    "unlink": "Koppla bort {provider}",
+    "linkFailed": "Det gick inte att koppla. Försök igen.",
+    "reauthIntro": "Det här kontot har inget lösenord, så bekräfta att det är du genom att logga in igen. Gör sedan ändringen inom 5 minuter.",
+    "reauthButton": "Logga in igen med {provider}",
+    "reauthHeld": "Du loggade in igen med {provider}. Under de närmaste 5 minuterna kan en ändring göras utan lösenord.",
+    "reauthFirst": "Logga först in igen, med en av knapparna ovan.",
+    "reauthFailed": "Det gick inte att starta ny inloggning. Försök igen."
+  },
+  "tokens": {
+    "heading": "Åtkomsttoken",
+    "intro": "Med en åtkomsttoken kan en egen AI-assistent eller ett eget skript läsa recepten, råvarorna, anteckningarna och brännloggarna i kontot. Än så länge kan en åtkomsttoken bara läsa: den ändrar eller tar aldrig bort något. Varje åtkomsttoken slutar fungera den dag som väljs, eller så fort den återkallas.",
+    "howTo": "Koppla en AI-assistent",
+    "listLabel": "Åtkomsttoken i kontot",
+    "none": "Det finns inga åtkomsttoken.",
+    "hint": "slutar på {hint}",
+    "readOnly": "Endast läsning",
+    "created": "skapad {date}",
+    "lastUsed": "senast använd {date}",
+    "neverUsed": "aldrig använd",
+    "expires": "går ut {date}",
+    "expiredOn": "gick ut {date}",
+    "revokedOn": "återkallad {date}",
+    "revoke": "Återkalla",
+    "revokeNamed": "Återkalla {name}",
+    "revokeAll": "Återkalla alla åtkomsttoken",
+    "revokeFailed": "Fel: åtkomsttoken kunde inte återkallas. Försök igen.",
+    "loadFailed": "Åtkomsttoken kunde inte läsas in. Ladda om sidan och försök igen.",
+    "createHeading": "Skapa en åtkomsttoken",
+    "name": "Namn",
+    "nameHint": "Något att skilja den åt med, till exempel assistenten eller datorn som den är till för.",
+    "nameCheck": "Ge åtkomsttoken ett namn på 1 till {most} tecken.",
+    "expiry": "Slutar fungera efter",
+    "days": "{count, plural, one {# dag} other {# dagar}}",
+    "expiryHint": "Vi skickar e-post 7 dagar innan en åtkomsttoken slutar fungera.",
+    "confirmEmailFirst": "Innan en åtkomsttoken kan skapas, bekräfta e-postadressen: öppna länken som skickades till {email}. Vi meddelar på den adressen när en åtkomsttoken skapas och innan en slutar fungera.",
+    "resend": "Skicka bekräftelselänken igen",
+    "scopeNote": "Åtkomsttoken kan läsa kontots uppgifter men inte ändra dem.",
+    "confirmStep": "Bekräfta att det är du för att skapa åtkomsttoken.",
+    "create": "Skapa åtkomsttoken",
+    "failed": "Fel: åtkomsttoken kunde inte skapas. Försök igen.",
+    "limit": "Det finns {most} fungerande åtkomsttoken, det högsta antal ett konto kan ha. Återkalla en för att skapa en ny.",
+    "newHeading": "Kopiera den nya åtkomsttoken nu",
+    "newText": "Det här är enda gången den visas. Den som har den kan läsa kontots uppgifter tills den slutar fungera, så förvara den som ett lösenord och ge den bara till en egen assistent eller ett eget skript.",
+    "newLabel": "Ny åtkomsttoken",
+    "copy": "Kopiera åtkomsttoken",
+    "copied": "Kopierat.",
+    "copyFailed": "Det gick inte att kopiera. Markera åtkomsttoken och kopiera den själv.",
+    "done": "Jag har kopierat den",
+    "keptHeading": "Åtkomsttoken fungerar fortfarande",
+    "keptText": "{count, plural, one {Lösenordsbytet stoppade inte åtkomsttoken. Om lösenordet byttes för att någon annan kan känna till det, återkalla åtkomsttoken också.} other {Lösenordsbytet stoppade inte de # åtkomsttoken. Om lösenordet byttes för att någon annan kan känna till det, återkalla dem också.}}",
+    "keep": "Behåll dem",
+    "signOutNote": "{count, plural, one {Det stoppar också åtkomsttoken, för gott.} other {Det stoppar också de # åtkomsttoken, för gott.}}"
   }
 }

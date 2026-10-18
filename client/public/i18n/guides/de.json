@@ -56,7 +56,8 @@
     "vet": "Rufen Sie Ihre Tierarztpraxis an.",
     "checkedOn": "Geprüft anhand von:",
     "choosePrompt": "Wählen Sie Ihr Land, um zu sehen, wen Sie dort anrufen.",
-    "ministry": "Die Seite des Gesundheitsministeriums: <link>{name}</link>."
+    "ministry": "Die Seite des Gesundheitsministeriums: <link>{name}</link>.",
+    "reported": "Offizielle Regierungsseiten nennen 113, 114 und 115, aber nicht, wofür jede Nummer gilt; die angezeigten Aufgaben folgen dem Rundschreiben 22/2014/TT-BTTTT, wie Sekundärseiten es wiedergeben."
   },
   "density": {
     "sg": "spez. Gewicht {value}",
@@ -91,6 +92,7 @@
     "caption": "Arbeitsplatzgrenzwert für alveolengängigen Quarzstaub: {region}, als Mittelwert über 8 Stunden (geprüft am {date})",
     "captionControl": "Der Maßstab für alveolengängigen Quarzstaub in der Luft eines Arbeitsbereichs in {region} (geprüft am {date})",
     "both": "Quarz und Cristobalit",
+    "freeSilica": "Freier Quarz",
     "quartz": "Quarz",
     "cristobalite": "Cristobalit",
     "actionLevel": "Auslösewert",
@@ -102,6 +104,9 @@
     "quartzAll": "Quarz, für Staub, der ganz aus Quarz besteht",
     "cristobaliteAll": "Cristobalit, für Staub, der ganz aus Cristobalit besteht",
     "allFree": "Kontrollkonzentration für Staub, der ganz aus freiem Quarz besteht",
+    "bandFromTo": "Staub mit {from} % bis {to} % freiem Quarz (SiO₂)",
+    "bandOverTo": "Staub mit mehr als {from} % und bis zu {to} % freiem Quarz",
+    "bandAbove": "Staub mit mehr als {from} % freiem Quarz",
     "recommended": "Empfohlen von {abbr}",
     "value": "{value} mg/m³",
     "kind": {
@@ -111,6 +116,7 @@
       "control": "Eine Kontrollkonzentration (管理濃度): der Maßstab, nach dem die Luft eines Arbeitsbereichs anhand von Messungen dort beurteilt wird, kein Grenzwert für das, was eine einzelne Person einatmet."
     },
     "setBy": "Festgelegt in: <link>{law}</link>.",
+    "from": "Sie gilt ab {date}.",
     "lowerThanEu": "Niedriger als der verbindliche Grenzwert der EU von {value} mg/m³.",
     "sameAsEu": "Derselbe Wert wie der verbindliche Grenzwert der EU.",
     "recommendedBy": "{abbr} ({by}) empfiehlt diesen Wert in der Veröffentlichung <link>{title}</link>. Er ist nicht gesetzlich verbindlich.",
@@ -147,16 +153,45 @@
       "jpSmall": "Andere Gegenstände unter 1,1 L, nicht zum Kochen",
       "jpLarge": "Andere Gegenstände von 1,1 L bis unter 3 L, nicht zum Kochen",
       "jpStorage": "Andere Gegenstände mit 3 L oder mehr, nicht zum Kochen",
-      "jpCooking": "Kochgeschirr mit 2,5 cm Fülltiefe oder mehr"
+      "jpCooking": "Kochgeschirr mit 2,5 cm Fülltiefe oder mehr",
+      "krFlat": "Nicht füllbare oder weniger als 2,5 cm tiefe Gegenstände",
+      "krSmall": "Andere füllbare Gegenstände, unter 1,1 L",
+      "krMedium": "Andere füllbare Gegenstände, von 1,1 L bis unter 3 L",
+      "krStorage": "Andere füllbare Gegenstände, ab 3 L",
+      "krCooking": "Kochgeschirr zum Erhitzen von Speisen",
+      "twFlat": "Nicht füllbare oder höchstens 2,5 cm tiefe Gegenstände",
+      "twSmall": "Gegenstände mit mehr als 2,5 cm Tiefe, bis 1,1 L",
+      "twLarge": "Gegenstände mit mehr als 2,5 cm Tiefe, über 1,1 L",
+      "myFlat": "Flachware",
+      "mySmall": "Kleine Hohlware",
+      "myLarge": "Große Hohlware",
+      "myCooking": "Kochgeschirr",
+      "idFlat": "Gegenstände mit höchstens 25 mm Tiefe innen",
+      "idSmall": "Gegenstände mit mehr als 25 mm Tiefe innen, unter 1100 mL",
+      "idLarge": "Gegenstände mit mehr als 25 mm Tiefe innen, 1100 mL oder mehr",
+      "thFlat": "Gegenstände mit höchstens 25 mm Tiefe",
+      "thSmall": "Gegenstände mit mehr als 25 mm Tiefe, unter 1,1 L",
+      "thLarge": "Gegenstände mit mehr als 25 mm Tiefe, 1,1 L oder mehr",
+      "thInfant": "Behälter für Babynahrung bis 12 Monate",
+      "thCooking": "Kochgeschirr, das der Hitze beim Kochen standhalten soll",
+      "vnFlat": "Flache Gegenstände zum Aufnehmen oder Garen von Speisen",
+      "vnSmall": "Tiefe Gegenstände zur Aufnahme von Speisen, unter 1100 mL",
+      "vnMedium": "Tiefe Gegenstände zur Aufnahme von Speisen, von 1100 mL bis unter 3000 mL",
+      "vnStorage": "Tiefe Gegenstände zur Aufnahme von Speisen, 3000 mL oder mehr",
+      "vnCooking": "Tiefe Gegenstände zum Garen",
+      "vnCups": "Tassen und kleine Schalen"
     },
     "judged": {
       "average": "Mittelwert aus 6 Stücken",
-      "each": "jedes von 6 einzeln"
+      "each": "jedes von 6 einzeln",
+      "averageOf": "Mittelwert aus {count} Stücken",
+      "eachOf": "jedes von {count} einzeln"
     },
     "euRules": "Hier gelten die Vorschriften der EU.",
     "law": "Festgelegt in: <link>{law}</link>.",
     "inForce": "In Kraft ab dem {date}.",
     "atMost": "Ein Gegenstand besteht die Prüfung, wenn er nicht mehr als den Grenzwert abgibt: Das Gesetz sagt „höchstens“.",
+    "ppm": "ppm bedeutet hier Milligramm pro Liter der Prüflösung (mg/L).",
     "unknown": "{region}: Die dortigen Vorschriften haben wir noch nicht bestätigt.",
     "choosePrompt": "Wählen Sie Ihr Land, um die dortigen Vorschriften zu sehen."
   },

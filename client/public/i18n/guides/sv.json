@@ -56,7 +56,8 @@
     "vet": "Ring veterinären.",
     "checkedOn": "Kontrollerat på:",
     "choosePrompt": "Välj land för att se vem man ringer där.",
-    "ministry": "Hälsoministeriets sida: <link>{name}</link>."
+    "ministry": "Hälsoministeriets sida: <link>{name}</link>.",
+    "reported": "Officiella myndighetssidor listar 113, 114 och 115 men inte vad vart och ett är till för; rollerna som visas följer cirkulär 22/2014/TT-BTTTT, så som sekundära sidor citerar den."
   },
   "density": {
     "sg": "specifik vikt {value}",
@@ -91,6 +92,7 @@
     "caption": "Det hygieniska gränsvärdet för respirabel kristallin kiseldioxid i {region}, ett medelvärde över 8 timmar (kontrollerat den {date})",
     "captionControl": "Måttstocken för respirabel kristallin kiseldioxid i luften på ett arbetsområde i {region} (kontrollerat den {date})",
     "both": "Kvarts och kristobalit",
+    "freeSilica": "Fri kiseldioxid",
     "quartz": "Kvarts",
     "cristobalite": "Kristobalit",
     "actionLevel": "Insatsnivå",
@@ -102,6 +104,9 @@
     "quartzAll": "Kvarts, för damm som helt består av kvarts",
     "cristobaliteAll": "Kristobalit, för damm som helt består av kristobalit",
     "allFree": "Kontrollkoncentration för damm som helt består av fri kiseldioxid",
+    "bandFromTo": "Damm med {from} % till {to} % fri kiseldioxid (SiO₂)",
+    "bandOverTo": "Damm med mer än {from} % och upp till {to} % fri kiseldioxid",
+    "bandAbove": "Damm med mer än {from} % fri kiseldioxid",
     "recommended": "Rekommenderat av {abbr}",
     "value": "{value} mg/m³",
     "kind": {
@@ -111,6 +116,7 @@
       "control": "En kontrollkoncentration (管理濃度): måttstocken för att bedöma luften på ett arbetsområde utifrån mätningar där, inte ett gränsvärde för vad en enskild person andas in."
     },
     "setBy": "Fastställt i <link>{law}</link>.",
+    "from": "Den gäller från {date}.",
     "lowerThanEu": "Lägre än EU:s bindande gränsvärde på {value} mg/m³.",
     "sameAsEu": "Samma som EU:s bindande gränsvärde.",
     "recommendedBy": "{abbr} ({by}) rekommenderar detta värde i <link>{title}</link>. Det är inte lag.",
@@ -147,16 +153,45 @@
       "jpSmall": "Andra föremål under 1,1 L, inte för matlagning",
       "jpLarge": "Andra föremål från 1,1 L till under 3 L, inte för matlagning",
       "jpStorage": "Andra föremål på 3 L eller mer, inte för matlagning",
-      "jpCooking": "Kokkärl, 2,5 cm djupa eller mer"
+      "jpCooking": "Kokkärl, 2,5 cm djupa eller mer",
+      "krFlat": "Föremål som inte kan fyllas, eller som är mindre än 2,5 cm djupa",
+      "krSmall": "Andra föremål som kan fyllas, under 1,1 L",
+      "krMedium": "Andra föremål som kan fyllas, från 1,1 L till under 3 L",
+      "krStorage": "Andra föremål som kan fyllas, 3 L eller mer",
+      "krCooking": "Kokkärl, för att värma mat",
+      "twFlat": "Föremål som inte kan fyllas, eller som är högst 2,5 cm djupa",
+      "twSmall": "Föremål som är djupare än 2,5 cm, upp till 1,1 L",
+      "twLarge": "Föremål som är djupare än 2,5 cm, över 1,1 L",
+      "myFlat": "Flata föremål",
+      "mySmall": "Små föremål som kan fyllas",
+      "myLarge": "Stora föremål som kan fyllas",
+      "myCooking": "Kokkärl",
+      "idFlat": "Föremål som är högst 25 mm djupa på insidan",
+      "idSmall": "Föremål som är djupare än 25 mm på insidan, under 1100 mL",
+      "idLarge": "Föremål som är djupare än 25 mm på insidan, 1100 mL eller mer",
+      "thFlat": "Föremål som är högst 25 mm djupa",
+      "thSmall": "Föremål som är djupare än 25 mm, under 1,1 L",
+      "thLarge": "Föremål som är djupare än 25 mm, 1,1 L eller mer",
+      "thInfant": "Kärl för mat till spädbarn upp till 12 månader",
+      "thCooking": "Kokkärl, gjorda för att tåla värmen vid matlagning",
+      "vnFlat": "Grunda föremål för förvaring eller tillagning av mat",
+      "vnSmall": "Djupa föremål för förvaring av mat, under 1100 mL",
+      "vnMedium": "Djupa föremål för förvaring av mat, från 1100 mL till under 3000 mL",
+      "vnStorage": "Djupa föremål för förvaring av mat, 3000 mL eller mer",
+      "vnCooking": "Djupa föremål för matlagning",
+      "vnCups": "Koppar och små skålar"
     },
     "judged": {
       "average": "medelvärde av 6 föremål",
-      "each": "vart och ett av 6"
+      "each": "vart och ett av 6",
+      "averageOf": "medelvärde av {count} föremål",
+      "eachOf": "vart och ett av {count}"
     },
     "euRules": "EU:s regler gäller här.",
     "law": "Fastställda i <link>{law}</link>.",
     "inForce": "Gäller från den {date}.",
     "atMost": "Ett föremål godkänns om det inte löser ut mer än gränsvärdet: lagen säger ”högst”.",
+    "ppm": "ppm betyder här milligram per liter av provlösningen (mg/L).",
     "unknown": "Vi har ännu inte bekräftat reglerna i {region}.",
     "choosePrompt": "Välj land för att se reglerna där."
   },

@@ -48,7 +48,7 @@ Label: Kezdőkészlet
 | Káliföldpát{{en: potash feldspar}}           | Amelyik éppen kapható ott, ahol él, például az Egyesült Államokban a Mahavir                                        |
 | Nefelinszienit{{en: nepheline syenite}}      | Bármelyik; a Glazy megjegyzi, hogy erősebb az olvasztóhatása, gyakran használják alacsony és közepes tüzű égetéshez |
 | Mészkőliszt                                  | Bármelyik                                                                                                           |
-| Talkum                                       | Bármelyik                                                                                                           |
+| Talkum                                       | Bármilyen azbesztmentes minőség; ellenőrizze a biztonsági adatlapját (lásd: Biztonságos keverés és szellőzés)       |
 | Bórfritt, közepes tüzű égetéshez             | Ferro 3134, 3124 vagy 3195; az Egyesült Királyságban Potterycrafts P3124 vagy P3195                                 |
 | Bentonit és színezőanyagok                   | Kis mennyiségben                                                                                                    |
 
@@ -211,7 +211,7 @@ A **keserűsó** (magnézium-szulfát) hatására a máz állás közben kissé 
 
 A **CMC** (karboxi-metil-cellulóz) mázragasztó ragacsosabbá és lassabban száradóvá teszi a máziszapot, és keményebb mázréteget hagy, amely jól tapad az edényre. Leginkább az ecsetelhető mázaknál és a sok frittet{{en: frit}} tartalmazó mázaknál fontos. A Digitalfire példájában 3,75 g-ot kevernek 1000 g máziszapba, és ezt turmixgéppel kell bekeverni. A CMC-t tartalmazó máz keserűsóval nem dermeszthető be, és mivel a ragasztóval mikrobák táplálkoznak, a vödörben megváltozhat, és szagossá válhat.
 
-A **bentonit**, ez a nagyon finom agyag, segít lebegésben tartani a többi szemcsét. A mártómázak ehhez általában 15–25% nyers agyagra támaszkodnak. Kevés agyagot tartalmazó receptnél kb. 1–2% bentonit segít.
+A **bentonit**, ez a nagyon finom agyag, segít lebegésben tartani a többi szemcsét. A mártómázak ehhez általában 15–25% nyers agyagra támaszkodnak. Kevés agyagot tartalmazó receptnél kb. 1–3% bentonit segít; a Digitalfire szerint a 15%-nál több agyagot tartalmazó mázhoz nem kellene 1%-nál több.
 
 ## Próbalapok és próbasorok {#testing}
 
@@ -284,6 +284,7 @@ Label: Feljegyzéssablon
 - [Digitalfire: Epsom salts](https://digitalfire.com/material/epsom+salts)
 - [Digitalfire: CMC gum](https://digitalfire.com/material/cmc%2Bgum)
 - [Digitalfire: Dipping glaze](https://digitalfire.com/glossary/dipping+glaze)
+- [Digitalfire: Bentonite](https://digitalfire.com/material/bentonite)
 - [Digitalfire: Water solubility](https://digitalfire.com/glossary/water+solubility)
 - [Digitalfire: Gerstley Borate](https://digitalfire.com/material/gerstley+borate)
 - [Digitalfire: Mahavir potash feldspar](https://digitalfire.com/material/mahavir+potash+feldspar)

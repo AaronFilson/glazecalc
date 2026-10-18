@@ -1,5 +1,5 @@
 import { HttpClient, HttpErrorResponse, HttpHeaders } from '@angular/common/http';
-import { Injectable, computed, inject, signal } from '@angular/core';
+import { InjectionToken, Injectable, computed, inject, signal } from '@angular/core';
 import { firstValueFrom } from 'rxjs';
 import type {
   AuthenticationResponseJSON,
@@ -44,6 +44,57 @@ interface EmailResponse {
  * page to hold in memory only; nothing here writes it anywhere.
  */
 export type SignInResult = { done: true; kept: number } | { done: false; secondStep: SecondStepResponse };
+
+/** A sign-in provider (server/lib/oauth.ts). */
+export type ProviderId = 'google' | 'github';
+
+/** A provider's name as the page shows it: a brand, the same in every language. */
+export const PROVIDER_NAMES: Record<ProviderId, string> = { google: 'Google', github: 'GitHub' };
+
+/**
+ * What finishing a provider sign-in came to (POST /api/auth/finish): signed in
+ * (go to `next`), a second step still to take, a provider linked, a fresh
+ * sign-in that confirms a change (AuthService.reauth holds it), or an account
+ * with the email to sign in to first, to link the provider.
+ */
+export type ProviderResult =
+  | { kind: 'signed-in'; next: string; kept: number }
+  | { kind: 'second-step'; next: string; email: string; secondStep: SecondStepResponse }
+  | { kind: 'linked'; message: string }
+  | { kind: 'reauthed'; message: string }
+  | { kind: 'sign-in-to-link'; message: string; provider: ProviderId };
+
+/**
+ * A fresh sign-in with a provider, for an account with no password: `grant`
+ * confirms one change in place of the password until `expiresAt`
+ * (docs/adr/0015-provider-sign-in.md). Kept in memory only.
+ */
+export interface Reauth {
+  grant: string;
+  provider: ProviderId;
+  expiresAt: number;
+}
+
+/**
+ * Asks which sign-in providers are on here (AuthService.providers), for the
+ * sign-in page and the account page; the tests give an answer of their own.
+ */
+export const SIGN_IN_PROVIDERS = new InjectionToken<() => Promise<ProviderId[]>>('SIGN_IN_PROVIDERS', {
+  providedIn: 'root',
+  factory: () => {
+    const auth = inject(AuthService);
+    return () => auth.providers();
+  }
+});
+
+/** The account's providers (GET /api/auth/methods). */
+export interface ProviderMethods {
+  /** Those that are on here. */
+  enabled: ProviderId[];
+  /** Made with a provider, with no password of its own yet. */
+  passwordless: boolean;
+  linked: Array<{ provider: ProviderId; linkedAt: string; lastUsedAt?: string }>;
+}
 
 /** A change to two-step sign-in: the server's message, and new recovery codes when it made some (shown once). */
 export interface MfaChange {
@@ -119,8 +170,17 @@ export class AuthService {
   readonly secondStepPending = signal(false);
   /** Set by signing up, so the first page can welcome the new account (pages/home). */
   readonly welcome = signal(false);
+  /** A provider linked while signing in, for the account page to say. */
+  readonly providerNotice = signal<string | null>(null);
+  /** The account's providers, once the account page has asked (providerMethods). */
+  readonly methods = signal<ProviderMethods | null>(null);
+  /** A fresh provider sign-in that confirms one change, while it lasts. */
+  readonly reauth = signal<Reauth | null>(null);
+  private reauthTimer: ReturnType<typeof setTimeout> | undefined;
   /** Set when a trial runs out, so the start page can say so. */
   readonly trialEnded = signal(false);
+  /** How many of a trial's prices the last sign-in left out for being in another currency than the account's. */
+  readonly pricesSkipped = signal(0);
   /** The title of a recipe whose changes were not saved when the session ended, so the next page can say so. */
   readonly lostRecipe = signal<string | null>(null);
   /** What to call the user: their email, or their trial's name. */
@@ -209,6 +269,105 @@ export class AuthService {
       this.http.post<SignedInResponse>(this.apiBase + '/signin/passkey', body, { headers: keepHeader(keep) })
     );
     return this.finished(res);
+  }
+
+  // Signing in with Google or GitHub (server/routes/oauth_routes.ts).
+
+  /** The providers that are on here; none when the server says nothing. */
+  async providers(): Promise<ProviderId[]> {
+    const res = await firstValueFrom(this.http.get<{ providers?: ProviderId[] }>(this.apiBase + '/auth/providers'));
+    return Array.isArray(res.providers) ? res.providers : [];
+  }
+
+  /**
+   * Where a provider button goes: the server sends the browser on to the
+   * provider. `from`: this page's address, for the language to come back in.
+   */
+  providerStart(provider: ProviderId, from: string, keep: boolean): string {
+    const query = new URLSearchParams({ next: from, ...(keep ? { keep: '1' } : {}) });
+    return this.apiBase + '/auth/' + provider + '/start?' + query.toString();
+  }
+
+  /**
+   * Finishes a provider sign-in once the provider has sent the browser back.
+   * A 409 is an account with the provider's email, to sign in to first.
+   */
+  async finishProvider(): Promise<ProviderResult> {
+    type Finished = MessageResponse & {
+      email?: string;
+      kept?: number;
+      pricesSkipped?: number;
+      next?: string;
+      provider?: ProviderId;
+      reauth?: string;
+      expiresAt?: string;
+    };
+    let res: Finished;
+    try {
+      res = await firstValueFrom(this.http.post<Finished>(this.apiBase + '/auth/finish', {}));
+    } catch (err) {
+      if (err instanceof HttpErrorResponse && err.status === 409 && err.error?.code === 'provider-sign-in-to-link') {
+        return { kind: 'sign-in-to-link', message: said(err.error as Finished), provider: err.error.provider };
+      }
+      throw err;
+    }
+    const next = typeof res.next === 'string' && res.next.startsWith('/') ? res.next : '/home';
+    if (isSecondStep(res as SecondStepResponse)) {
+      return { kind: 'second-step', next, email: res.email ?? '', secondStep: res as unknown as SecondStepResponse };
+    }
+    if (res.code === 'signed-in' && res.email)
+      return { kind: 'signed-in', next, kept: this.finished(res as { email: string }) };
+    if (res.code === 'provider-reauthed' && res.reauth && res.provider && res.expiresAt) {
+      this.holdReauth({ grant: res.reauth, provider: res.provider, expiresAt: Date.parse(res.expiresAt) });
+      return { kind: 'reauthed', message: said(res) };
+    }
+    return { kind: 'linked', message: said(res) };
+  }
+
+  /** The account's providers; kept in `methods` too. */
+  async providerMethods(): Promise<ProviderMethods> {
+    const methods = await firstValueFrom(this.http.get<ProviderMethods>(this.apiBase + '/auth/methods'));
+    this.methods.set(methods);
+    return methods;
+  }
+
+  /**
+   * Starts a fresh sign-in with a linked provider, for an account with no
+   * password, to confirm a change: resolves with the provider's address. The
+   * provider sends the browser back to the account page, which finishes it.
+   */
+  async startReauth(provider: ProviderId, from: string): Promise<string> {
+    const res = await firstValueFrom(
+      this.http.post<{ location: string }>(this.apiBase + '/auth/' + provider + '/reauth', { next: from })
+    );
+    return res.location;
+  }
+
+  /** Holds a fresh provider sign-in until it runs out, or null to drop it (used, or refused). */
+  holdReauth(reauth: Reauth | null): void {
+    clearTimeout(this.reauthTimer);
+    this.reauth.set(reauth);
+    if (reauth) this.reauthTimer = setTimeout(() => this.reauth.set(null), Math.max(0, reauth.expiresAt - Date.now()));
+  }
+
+  /**
+   * Starts linking a provider from the account page, confirmed with the
+   * password (and a second step when it is on): resolves with the provider's
+   * address, for the browser to go to.
+   */
+  async linkProvider(provider: ProviderId, proof: IdentityProof, from: string): Promise<string> {
+    const res = await firstValueFrom(
+      this.http.post<{ location: string }>(this.apiBase + '/auth/' + provider + '/link', { ...proof, next: from })
+    );
+    return res.location;
+  }
+
+  /** Unlinks a provider, confirmed as linking is. Resolves with the server's message. */
+  async unlinkProvider(provider: ProviderId, proof: IdentityProof): Promise<string> {
+    const res = await firstValueFrom(
+      this.http.delete<MessageResponse>(this.apiBase + '/auth/' + provider, { body: proof })
+    );
+    return said(res);
   }
 
   // Two-step sign-in on the account page (server/routes/mfa_routes.ts). Every
@@ -352,7 +511,7 @@ export class AuthService {
    * Emails a link to a new address; the email changes when the link is opened. Resolves with the server's message.
    * With two-step sign-in on, `factor` is a current second step (decision 6).
    */
-  async changeEmail(email: string, password: string, factor?: FactorProof): Promise<string> {
+  async changeEmail(email: string, password: string | undefined, factor?: FactorProof): Promise<string> {
     const res = await firstValueFrom(
       this.http.post<MessageResponse>(this.apiBase + '/email/change', { email, password, ...factor })
     );
@@ -387,7 +546,7 @@ export class AuthService {
    * Deletes the account and everything saved in it (the password confirms it, and with two-step sign-in on a
    * current second step, `factor`); the server signs the browser out.
    */
-  async deleteAccount(password: string, factor?: FactorProof): Promise<void> {
+  async deleteAccount(password: string | undefined, factor?: FactorProof): Promise<void> {
     const me = await firstValueFrom(this.http.get<VerifyResponse>(this.apiBase + '/verify'));
     if (!me.id) throw new Error('Not signed in');
     await firstValueFrom(this.http.delete(this.apiBase + '/deleteuser/' + me.id, { body: { password, ...factor } }));
@@ -443,7 +602,8 @@ export class AuthService {
   }
 
   /** A finished sign-in: notes the session, and says how many records a trial brought. */
-  private finished(res: { email: string; kept?: number }): number {
+  private finished(res: { email: string; kept?: number; pricesSkipped?: number }): number {
+    this.pricesSkipped.set(res.pricesSkipped ?? 0);
     this.signedInAs(res.email);
     return res.kept ?? 0;
   }
@@ -459,6 +619,8 @@ export class AuthService {
     this.email.set(null);
     this.unverified.set(false);
     this.welcome.set(false);
+    this.methods.set(null);
+    this.holdReauth(null);
     this.setTrial(null);
     for (const then of this.onEnd) then();
   }

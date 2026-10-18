@@ -3,7 +3,7 @@ title: Égetés egyszerű kemencében
 lead: Elektromos kemence égetése Kiln-Sitterrel vagy kézi kapcsolókkal: a gúlák kiválasztása, elhelyezése és leolvasása, valamint a zsengélés és a mázas égetés közzétett égetési programjai.
 ---
 
-## Gúlák: mit mérnek? {#cones}
+## Gúlák: mit mérnek {#cones}
 
 > [!NOTE]
 > Elsősorban a kemencéje saját kezelési útmutatóját kövesse. Ez az útmutató azt gyűjti össze, amit a gúla- és kemencegyártók az egyszerű elektromos kemencékről közzétesznek; nem helyettesíti a kemencetípusára vonatkozó utasításokat, és ahol a kettő eltér, a kezelési útmutató az irányadó.
@@ -34,13 +34,14 @@ A **hőntartás**{{en: hold}} (angol forrásokban **soak** néven is) egy ideig 
 Table: Mennyit ér a hőntartás a csúcshőmérsékleten
 Label: Hőntartás és felvett hőmennyiség
 
-| Hőntartás          | Nagyjából ugyanannyi felvett hőmennyiség, mint                          |
-| ------------------ | ----------------------------------------------------------------------- |
-| Körülbelül 20 perc | {{18 °F; 10 °C}} értékkel magasabb csúcshőmérséklet                     |
-| 40–60 perc         | {{36 °F; 20 °C}} értékkel magasabb csúcshőmérséklet                     |
-| Körülbelül 2 óra   | {{54 °F; 30 °C}} értékkel magasabb csúcshőmérséklet                     |
-| 1–2 óra            | „elég lehet ahhoz, hogy a következő, magasabb számú gúla deformálódjon” |
-| 4–6 óra            | Elég ahhoz, hogy egy kettővel magasabb hőfokú gúla meghajoljon          |
+| Hőntartás          | Nagyjából ugyanannyi felvett hőmennyiség, mint                 |
+| ------------------ | -------------------------------------------------------------- |
+| Körülbelül 20 perc | {{18 °F; 10 °C}} értékkel magasabb csúcshőmérséklet            |
+| 40–60 perc         | {{36 °F; 20 °C}} értékkel magasabb csúcshőmérséklet            |
+| Körülbelül 2 óra   | {{54 °F; 30 °C}} értékkel magasabb csúcshőmérséklet            |
+| 4–6 óra            | Elég ahhoz, hogy egy kettővel magasabb hőfokú gúla meghajoljon |
+
+Az Orton hozzáteszi, hogy az 1–2 órás hőntartás „elég lehet ahhoz, hogy a következő, magasabb számú gúla deformálódjon”.
 
 A hőntartásnak tehát mindig ára van: ha beiktat egyet, számítson rá, hogy a gúlák jobban meghajlanak, és ennek megfelelően csökkentse a csúcshőmérsékletet.
 
@@ -198,11 +199,11 @@ Sok Kiln-Sitteren, köztük a Dawson LT modelljein, van **biztonsági időkapcso
 Table: Mennyi időre állítsa a biztonsági időkapcsolót
 Label: Időkapcsoló beállítása
 
-| Forrás    | Beállítás                                                                                                             |
-| --------- | --------------------------------------------------------------------------------------------------------------------- |
-| Dawson    | ½ órával hosszabb a várható égetési időnél, amíg nem ismeri a kemencét, később elég ¼ óra is; soha nem több 20 óránál |
-| L&L       | Első alkalommal nagyon hosszú idő, az égetés időtartamát feljegyezve; utána körülbelül 1 órával hosszabb              |
-| Bracker’s | 30 perc és 1 óra közötti idővel hosszabb az égetési időnél                                                            |
+| Forrás    | Beállítás                                                                                                                                        |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Dawson    | ½ órával hosszabb a várható égetési időnél, amíg nem ismeri a kemencét, később akár csak ¼ órával hosszabb; soha ne állítsa 20 óránál hosszabbra |
+| L&L       | Első alkalommal nagyon hosszú idő, az égetés időtartamát feljegyezve; utána körülbelül 1 órával hosszabb                                         |
+| Bracker’s | 30 perc és 1 óra közötti idővel hosszabb az égetési időnél                                                                                       |
 
 > [!NOTE]
 > Kiindulópontunk: először bőkezűen (a számlap 20 óráján belül), utána ½–1 órával hosszabbra, mint a feljegyzett idő. Az időkapcsoló azt is megmutatja, mennyi ideig tartott az égetés: ha 7-re állította, és 1-en állt meg, az 6 órát jelent.
@@ -375,7 +376,7 @@ A **zsengélés**{{en: bisque}} (brit angolul biscuit) az első, alacsonyabb hő
 
 ### Miért lassú az eleje
 
-A gőzzé váló víz „1170-szeresére tágul”, jegyzi meg a Bracker’s, ezért a nedves árut lassan kell kiszárítani. Az L&L és az Orton azt tanácsolja, hogy „1500°F (815°C) alatt különös gondot kellene fordítani a massza{{en: body}} egyenletes felmelegítésére”, és hogy a szénnek körülbelül {{1200 °F; 650 °C}} előtt ki kell égnie. A kemence {{1500 °F; 816 °C}} fölött gyorsabban fűthet fel.
+A víz gőzzé válva több mint ezerszeresére tágul, ezért a nedves árut lassan kell kiszárítani. Az L&L és az Orton azt tanácsolja, hogy „1500°F (815°C) alatt különös gondot kellene fordítani a massza{{en: body}} egyenletes felmelegítésére”, és hogy a szénnek körülbelül {{1200 °F; 650 °C}} előtt ki kell égnie. A kemence {{1500 °F; 816 °C}} fölött gyorsabban fűthet fel.
 
 Table: Mi történik zsengélés közben, ahogy nő a hőmérséklet
 Label: Mi történik zsengéléskor
@@ -599,7 +600,7 @@ A **pirométer** hőmérséklet-kijelző műszer, amely egy **hőelem** jelét m
 
 ### Szellőztetés
 
-Az égetés elején az agyag és a máz{{en: glaze}} vízgőzt és égetési gázokat bocsát ki, köztük szén-monoxidot, és a mázak az égetés későbbi szakaszában is bocsáthatnak ki mérgező gázokat. Az L&L ezek elvezetését „elengedhetetlennek” nevezi. Elszívórendszer nélkül ez azt jelenti, hogy a korai szakaszokban a fedél ki van támasztva, és a kémlelőnyílások nyitva vannak, ahogy a fenti eljárásokban; ha ilyenkor lassabban fűt, az a szén kiégését is segíti. **Alsó elszívással** (a kemencére szerelt, ventilátoros elszívóval) az Orton szerint a fedél és a kémlelőnyílások az egész égetés alatt zárva maradnak, kivéve a gúlák ellenőrzésekor. A nyitott felső kémlelőnyílás a Kiln-Sitter csövét és a kemence fém alkatrészeit is védi.
+Az égetés elején az agyag és a máz{{en: glaze}} vízgőzt és égetési gázokat bocsát ki, köztük szén-monoxidot, és a mázak az égetés későbbi szakaszában is bocsáthatnak ki mérgező gázokat. Az L&L ezek elvezetését „elengedhetetlennek” nevezi. Elszívórendszer nélkül ez azt jelenti, hogy a korai szakaszokban a fedél ki van támasztva, és a kémlelőnyílások nyitva vannak, ahogy a fenti eljárásokban; ha ilyenkor lassabban fűt, az a szén kiégését is segíti. Elszívó nélküli kemencében a Dawson, a Kiln-Sitter{{en: kiln sitter}} gyártója is azt mondja, hogy hagyja nyitva a felső kémlelőnyílást az egész égetés alatt: a szellőztetés „csökkenti a kemence fém alkatrészeinek romlását, és növeli a csőszerelvény élettartamát”. Az **alsó elszívás** (a kemencére szerelt, ventilátoros elszívó) ezen változtat. Ez végzi a szellőztetést, ezért az Orton szerint a fedél és a kémlelőnyílások az egész égetés alatt zárva maradnak, kivéve a gúlák ellenőrzésekor, az L&L pedig azt mondja, hogy az elszívót hagyja bekapcsolva, a kémlelőnyílásokat pedig dugaszolja be.
 
 A helyiség szellőztetéséről és a szén-monoxid-érzékelőkről a [Biztonságos keverés és szellőzés](/guides/safe-mixing) és a [Ne mérgezze meg a családját](/guides/home-safety) című útmutatókban olvashat.
 

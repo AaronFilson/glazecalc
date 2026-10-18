@@ -41,6 +41,53 @@ describe('recipe API', () => {
     expect(res.body.includeAdditives).to.equal(true);
   });
 
+  it('keeps the firing the recipe is for, as a band, and refuses one it does not know', async () => {
+    const res = await create({ ...leach, firing: 'high' });
+    expect(res).to.have.status(200);
+    expect(res.body.firing).to.equal('high');
+    expect(await create({ ...leach, firing: 'cone 10' })).to.have.status(400);
+  });
+
+  it('lets the firing be cleared with null, so a recipe saved as high and then set to unknown reloads as unknown', async () => {
+    const res = await create({ ...leach, firing: 'high' });
+    expect(res).to.have.status(200);
+    const cleared = await api()
+      .put('/recipe/change/' + res.body._id)
+      .set('Authorization', 'Bearer ' + token)
+      .send({ recipe: { firing: null } });
+    expect(cleared).to.have.status(200);
+    const again = await api()
+      .get('/recipe/getLatest')
+      .set('Authorization', 'Bearer ' + token);
+    expect(again.body.firing ?? null).to.equal(null);
+  });
+
+  it('keeps the SG the glaze is mixed to as sgTarget, between 1 and 2.5, and lets it be cleared', async () => {
+    const res = await create({ ...leach, sgTarget: 1.45 });
+    expect(res).to.have.status(200);
+    expect(res.body.sgTarget).to.equal(1.45);
+    for (const bad of [0.99, 2.51, 'thick', -1]) {
+      expect(await create({ ...leach, sgTarget: bad })).to.have.status(400);
+    }
+    const change = (sgTarget: unknown) =>
+      api()
+        .put('/recipe/change/' + res.body._id)
+        .set('Authorization', 'Bearer ' + token)
+        .send({ recipe: { sgTarget } });
+    expect(await change(3)).to.have.status(400);
+    const changed = await change(1.5);
+    expect(changed).to.have.status(200);
+    const all = await api()
+      .get('/recipe/getAll')
+      .set('Authorization', 'Bearer ' + token);
+    expect(all.body[0].sgTarget).to.equal(1.5);
+    expect(await change(null)).to.have.status(200);
+    const cleared = await api()
+      .get('/recipe/getLatest')
+      .set('Authorization', 'Bearer ' + token);
+    expect(cleared.body.sgTarget ?? null).to.equal(null);
+  });
+
   it('lists all of your recipes, and finds the newest', async () => {
     for (const title of ['First', 'Second', 'Third']) {
       expect(await create({ ...leach, title })).to.have.status(200);
@@ -86,7 +133,7 @@ describe('recipe API', () => {
       .delete('/recipe/delete/' + saved._id)
       .set('Authorization', 'Bearer ' + token);
     expect(res).to.have.status(200);
-    expect(res.body.msg).to.eql('Successfully deleted recipe');
+    expect(res.body.code).to.eql('record-trashed');
     const all = await api()
       .get('/recipe/getAll')
       .set('Authorization', 'Bearer ' + token);

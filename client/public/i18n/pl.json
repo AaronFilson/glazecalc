@@ -17,13 +17,17 @@
     "confirmEmail": "Potwierdzenie adresu e-mail - Glazecalc",
     "home": "Notatnik pracowni - Glazecalc",
     "recipe": "Receptury - Glazecalc",
+    "import": "Wklejanie receptur - Glazecalc",
+    "blends": "Mieszanki do płytek testowych - Glazecalc",
     "material": "Surowce - Glazecalc",
     "additive": "Dodatki - Glazecalc",
     "firingLogs": "Dzienniki wypałów - Glazecalc",
     "notes": "Notatki - Glazecalc",
     "trash": "Kosz - Glazecalc",
     "account": "Konto i ustawienia - Glazecalc",
-    "notFound": "Nie znaleziono strony - Glazecalc"
+    "notFound": "Nie znaleziono strony - Glazecalc",
+    "shared": "Udostępniona receptura - Glazecalc",
+    "assistants": "Korzystanie z Glazecalc w asystencie AI - Glazecalc"
   },
   "nav": {
     "skip": "Przejdź do treści",
@@ -39,7 +43,9 @@
     "guides": "Poradniki",
     "about": "O aplikacji",
     "account": "Konto",
+    "trialAccount": "Okres próbny",
     "accountTitle": "Konto i ustawienia",
+    "trash": "Kosz",
     "signOut": "Wyloguj się",
     "createAccount": "Załóż bezpłatne konto"
   },
@@ -66,7 +72,8 @@
     "problem": "Zgłoś problem",
     "pottery": "Ręcznie robiona ceramika: Updraft Pottery Studio",
     "copyright": "© 2017–2026 Aaron Filson / Candling Development Studio · Bezpłatne oprogramowanie open source (licencja MIT)",
-    "languages": "Języki"
+    "languages": "Języki",
+    "language": "Język:"
   },
   "numbers": {
     "notANumber": "Należy wpisać liczbę, np. {example}.",
@@ -85,7 +92,7 @@
     "about": "Glazecalc to bezpłatny kalkulator chemii szkliw ceramicznych i notatnik open source. Jak oblicza wzór Segera (UMF) i jak jest zbudowany.",
     "privacy": "Jak Glazecalc postępuje z danymi: bez reklam, analityki i śledzenia, nic nie jest sprzedawane. Co jest przechowywane, dlaczego i jak skorzystać z praw.",
     "signup": "Bezpłatne konto Glazecalc, by zachować receptury szkliw ceramicznych, surowce, notatki i dzienniki wypałów. Bez reklam, a dane nigdy nie są sprzedawane.",
-    "imageAlt": "Glazecalc: rozumieć szkliwa, a nie tylko je mieszać."
+    "imageAlt": "Strona główna Glazecalc: darmowa chemia szkliw dla ceramików, obok zdjęcia wypalonych zestawów stożków."
   },
   "notices": {
     "dismiss": "Zamknij",
@@ -93,11 +100,15 @@
     "error": "Błąd: {text}"
   },
   "remove": {
-    "removed": "Usunięto „{name}”.",
     "alreadyRemoved": "Element „{name}” został już usunięty.",
+    "trashed": "Przeniesiono „{name}” do kosza.",
+    "undo": "Cofnij",
+    "restored": "Przywrócono „{name}”.",
+    "restoreFailed": "Nie udało się przywrócić „{name}”. Nadal jest w koszu.",
     "failed": "Nie udało się usunąć. Proszę spróbować ponownie.",
     "question": "Usunąć „{name}”?",
     "cannotUndo": "Tej operacji nie można cofnąć.",
+    "toTrash": "Można to przywrócić z kosza w ciągu 30 dni.",
     "removing": "Usuwanie…",
     "yes": "Tak, usuń",
     "cancel": "Anuluj",
@@ -222,20 +233,26 @@
     "soldIn": "W sprzedaży w",
     "showing": "Widoczne: {shown} z {noun, select, additives {{total, plural, one {# dodatku} few {# dodatków} many {# dodatków} other {# dodatku}}} other {{total, plural, one {# surowca} few {# surowców} many {# surowców} other {# surowca}}}}",
     "name": "Nazwa",
+    "equivalentWeight": "Masa równoważnikowa",
+    "firedWeight": "Masa po wypale",
     "notes": "Uwagi",
     "analysis": "Skład chemiczny",
+    "details": "Szczegóły",
     "formula": "Wzór",
+    "formulaLine": "Wzór: {formula}",
     "useInstead": "<b>Zamiast niego:</b> {list}",
     "similar": "Podobne: {list}",
     "replaces": "Zastępuje: {list}",
     "aliases": "Inne nazwy: {list}",
     "madeBy": "Producent: {name}",
     "source": "Źródło:",
+    "hazardsLine": "Zagrożenia: {hazards}",
     "noChemistry": "Bez składu chemicznego: pominięty we wzorze Segera",
     "countedAs": "Liczony jako {name}",
     "nothingMatches": "Brak pasujących pozycji. Warto spróbować innej nazwy, rodzaju lub regionu.",
     "loading": "Wczytywanie…",
-    "notFetched": "Nie udało się pobrać listy. <retry>Spróbuj ponownie</retry>"
+    "notFetched": "Nie udało się pobrać listy. <retry>Spróbuj ponownie</retry>",
+    "showAll": "{noun, select, additives {{count, plural, one {Pokaż # dodatek} few {Pokaż wszystkie # dodatki} many {Pokaż wszystkie # dodatków} other {Pokaż wszystkie # dodatku}}} other {{count, plural, one {Pokaż # surowiec} few {Pokaż wszystkie # surowce} many {Pokaż wszystkie # surowców} other {Pokaż wszystkie # surowca}}}}"
   },
   "chemistryForm": {
     "name": "{noun, select, additive {Należy podać nazwę dodatku.} other {Należy podać nazwę surowca.}}",
@@ -270,7 +287,7 @@
     "close": "Zamknij"
   },
   "unity": {
-    "fluxes": "Topniki – RO",
+    "fluxes": "Topniki – R₂O i RO",
     "stabilizers": "Stabilizatory – R₂O₃",
     "glassFormers": "Tlenki szkłotwórcze – RO₂",
     "wildcards": "Pozostałe",

@@ -34,13 +34,14 @@ Bei einer **Haltezeit**{{en: hold}} (englisch auch **soak**) bleibt der Ofen ein
 Table: Was eine Haltezeit bei der Endtemperatur ausmacht
 Label: Haltezeit und Wärmearbeit
 
-| Haltezeit       | Ungefähr dieselbe Wärmearbeit wie                               |
-| --------------- | --------------------------------------------------------------- |
-| Etwa 20 Minuten | Eine um {{18 °F; 10 °C}} höhere Endtemperatur                   |
-| 40–60 Minuten   | Eine um {{36 °F; 20 °C}} höhere Endtemperatur                   |
-| Etwa 2 Stunden  | Eine um {{54 °F; 30 °C}} höhere Endtemperatur                   |
-| 1–2 Stunden     | „kann ausreichen, um die nächsthöhere Kegelnummer zu verformen“ |
-| 4–6 Stunden     | Genug, um einen zwei Nummern heißeren Kegel umzubiegen          |
+| Haltezeit       | Ungefähr dieselbe Wärmearbeit wie                      |
+| --------------- | ------------------------------------------------------ |
+| Etwa 20 Minuten | Eine um {{18 °F; 10 °C}} höhere Endtemperatur          |
+| 40–60 Minuten   | Eine um {{36 °F; 20 °C}} höhere Endtemperatur          |
+| Etwa 2 Stunden  | Eine um {{54 °F; 30 °C}} höhere Endtemperatur          |
+| 4–6 Stunden     | Genug, um einen zwei Nummern heißeren Kegel umzubiegen |
+
+Orton fügt hinzu, dass eine Haltezeit von 1–2 Stunden „ausreichen kann, um die nächsthöhere Kegelnummer zu verformen“.
 
 Eine Haltezeit gibt es also nie umsonst: Wenn Sie eine hinzufügen, rechnen Sie damit, dass sich die Kegel weiter biegen, und senken Sie die Endtemperatur entsprechend.
 
@@ -198,11 +199,11 @@ Viele Kiln-Sitter, auch die LT-Modelle von Dawson, haben einen **Zeitbegrenzer**
 Table: Wie lange der Zeitbegrenzer eingestellt wird
 Label: Zeitbegrenzer einstellen
 
-| Quelle    | Einstellung                                                                                                          |
-| --------- | -------------------------------------------------------------------------------------------------------------------- |
-| Dawson    | ½ Stunde länger als die erwartete Brenndauer, bis Sie den Ofen kennen, später auch nur ¼ Stunde; nie über 20 Stunden |
-| L&L       | Beim ersten Mal sehr hoch, dabei notieren, wie lange der Brand dauert; danach etwa 1 Stunde länger                   |
-| Bracker’s | 30 Minuten bis 1 Stunde länger als die Brenndauer                                                                    |
+| Quelle    | Einstellung                                                                                                                                    |
+| --------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| Dawson    | ½ Stunde länger als die erwartete Brenndauer, bis Sie den Ofen kennen, später nur noch ¼ Stunde länger; nie auf mehr als 20 Stunden einstellen |
+| L&L       | Beim ersten Mal sehr hoch, dabei notieren, wie lange der Brand dauert; danach etwa 1 Stunde länger                                             |
+| Bracker’s | 30 Minuten bis 1 Stunde länger als die Brenndauer                                                                                              |
 
 > [!NOTE]
 > Unser Ausgangspunkt: beim ersten Mal großzügig (innerhalb der 20 Stunden auf der Skala), danach ½ bis 1 Stunde länger als die notierte Zeit. Der Zeitbegrenzer zeigt Ihnen auch, wie lange ein Brand gedauert hat: Auf 7 gestellt und bei 1 stehen geblieben heißt 6 Stunden.
@@ -375,7 +376,7 @@ Der **Schrühbrand**{{en: bisque}} (britisches Englisch: biscuit) ist der erste,
 
 ### Warum der Anfang langsam geht
 
-Wasser, das zu Dampf wird, „dehnt sich auf das 1170-Fache aus“, schreibt Bracker’s; deshalb muss feuchte Ware langsam getrocknet werden. L&L und Orton raten: „Unterhalb von 1500°F (815°C) sollte besonders darauf geachtet werden, den Scherben gleichmäßig zu erhitzen“, und der Kohlenstoff müsse vor etwa {{1200 °F; 650 °C}} ausgebrannt sein. Oberhalb von {{1500 °F; 816 °C}} kann der Ofen schneller steigen.
+Wasser dehnt sich beim Verdampfen auf mehr als das Tausendfache aus; deshalb muss feuchte Ware langsam getrocknet werden. L&L und Orton raten: „Unterhalb von 1500°F (815°C) sollte besonders darauf geachtet werden, den Scherben gleichmäßig zu erhitzen“, und der Kohlenstoff müsse vor etwa {{1200 °F; 650 °C}} ausgebrannt sein. Oberhalb von {{1500 °F; 816 °C}} kann der Ofen schneller steigen.
 
 Table: Was beim Aufheizen im Schrühbrand geschieht
 Label: Was im Schrühbrand geschieht
@@ -599,18 +600,18 @@ Ein **Pyrometer** ist ein Temperaturmessgerät, das die Werte eines **Thermoelem
 
 ### Entlüften
 
-Zu Beginn eines Brandes geben Ton und Glasur{{en: glaze}} Wasserdampf und Abgase ab, darunter Kohlenmonoxid, und Glasuren können auch später im Brand giftige Abgase abgeben. L&L nennt es „unerlässlich“, sie abzuleiten. Ohne Abluftanlage heißt das: in den frühen Phasen den Deckel einen Spalt offen und die Schaulöcher offen, wie in den Abläufen oben; langsameres Aufheizen in dieser Zeit hilft außerdem, den Kohlenstoff auszubrennen. Mit einer **Bodenabsaugung** (einer motorbetriebenen Abluftanlage am Ofen) bleiben Deckel und Schaulöcher laut Orton den ganzen Brand über geschlossen, außer um die Kegel{{en: cones}} zu prüfen. Ein offenes oberes Schauloch schützt außerdem das Rohr des Kiln-Sitters und die Metallteile des Ofens.
+Zu Beginn eines Brandes geben Ton und Glasur{{en: glaze}} Wasserdampf und Dämpfe ab, darunter Kohlenmonoxid, und Glasuren können auch später im Brand giftige Dämpfe abgeben. L&L nennt das Abführen dieser Dämpfe „unerlässlich“. Ohne Abluftanlage heißt das: Deckel angehoben und Schaulöcher offen in den frühen Phasen, wie in den Abläufen oben; langsameres Aufheizen in dieser Zeit hilft auch, den Kohlenstoff auszubrennen. Bei einem Ofen ohne Abluftanlage sagt auch Dawson, der Hersteller des Kiln-Sitters, das obere Schauloch solle den ganzen Brand über offen bleiben: Das Entlüften „verringert den Verschleiß der Metallteile des Ofens und verlängert die Lebensdauer der Rohrbaugruppe“. Eine **Bodenabsaugung** (eine motorbetriebene Abluftanlage am Ofen) ändert das. Sie übernimmt das Entlüften, deshalb sagt Orton, Deckel und Schaulöcher blieben den ganzen Brand über geschlossen, außer zum Prüfen der Kegel, und L&L sagt, die Absaugung eingeschaltet zu lassen und die Schaulöcher zu verschließen.
 
-Zum Lüften des Raums und zu CO-Meldern siehe [Sicheres Anmischen und Lüften](/guides/safe-mixing) und [Vergiften Sie Ihre Familie nicht](/guides/home-safety).
+Zum Lüften des Raums und zu Kohlenmonoxid-Meldern lesen Sie [Sicheres Anmischen und Lüften](/guides/safe-mixing) und [Vergiften Sie Ihre Familie nicht](/guides/home-safety).
 
 ### Während der Ofen brennt
 
-- Schauen Sie nur mit einer Schweißerschutzbrille der Schutzstufe 3 mit IR-Schutzfilter durch ein Schauloch; eine Sonnenbrille reicht nicht. Skutt rät, die Stopfen mit einer Drehung einzusetzen, damit sie nicht herausfallen.
+- Schauen Sie nur mit einer Schweißerschutzbrille mit IR-Schutzfilter der Schutzstufe 3 durch ein Schauloch; Sonnenbrillen genügen nicht. Skutt rät, die Stopfen hineinzudrehen, damit sie nicht herausfallen.
 - Lassen Sie den Ofen nicht über die erwartete Brenndauer hinaus unbeaufsichtigt; ein Kiln-Sitter ist keine ausfallsichere Abschaltung.
-- Brennen Sie nie auf oder in der Nähe von etwas Brennbarem, etwa einem Holzboden oder Teppich.
-- Halten Sie die Sicherheitsabstände aus Ihrer Bedienungsanleitung ein. Veröffentlichte Werte reichen von 12 Zoll (30 cm) bis 3 Fuß (91 cm); wo die Bedienungsanleitung nichts sagt, sind 18 Zoll (46 cm) zu Wänden und 3 Fuß (91 cm) zu allem Brennbaren die sicherste Wahl.
-- Halten Sie den Raum um das Fallgewicht des Kiln-Sitters frei, damit es fallen kann.
-- Wenn der Brand zu Ende ist, schalten Sie die Schalter aus und schalten Sie auch die Sicherung aus.
+- Brennen Sie nie auf oder in der Nähe von etwas Brennbarem, etwa einem Holzfußboden oder Teppich.
+- Halten Sie die Sicherheitsabstände aus Ihrer Anleitung ein. Veröffentlichte Werte reichen von 12 Zoll (30 cm) bis 3 Fuß (91 cm); wo die Anleitung schweigt, sind 18 Zoll (46 cm) von Wänden und 3 Fuß (91 cm) von allem Brennbaren die sicherste Wahl.
+- Halten Sie den Raum um das Gewicht des Kiln-Sitters frei, damit es fallen kann.
+- Wenn der Brand endet, schalten Sie die Schalter aus und schalten Sie auch den Sicherungsautomaten aus.
 
 ## Abkühlen und Ausräumen {#cooling}
 

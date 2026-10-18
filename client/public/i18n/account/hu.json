@@ -81,6 +81,7 @@
     "createAccount": "Fiók létrehozása",
     "title": "Fiókja",
     "signedInAs": "Bejelentkezve: {email}.",
+    "contents": "Ezen az oldalon",
     "changeHeading": "Jelszó módosítása",
     "current": "Jelenlegi jelszó",
     "currentMissing": "Adja meg a jelenlegi jelszavát.",
@@ -106,7 +107,7 @@
     "emailSend": "Link küldése",
     "emailFailed": "Hiba: nem sikerült elküldeni a linket. Kérjük, próbálja újra.",
     "signOutHeading": "Kijelentkezés mindenhol",
-    "signOutText": "Minden eszközön kijelentkezteti, ezen is. Akkor használja, ha elveszített egy eszközt, vagy úgy gondolja, hogy valaki más hozzájutott a bejelentkezési adataihoz.",
+    "signOutText": "Minden eszközön kijelentkezteti, ezen is, és leállítja a hozzáférési tokenjeit és a megosztási linkjeit. Használja, ha elvesztett egy eszközt, vagy úgy gondolja, hogy valaki más ismeri a bejelentkezési adatait.",
     "signOutButton": "Kijelentkezés mindenhol",
     "signOutFailed": "Hiba: nem sikerült kijelentkezni. Kérjük, próbálja újra.",
     "confirmStep": "A kétlépéses bejelentkezés be van kapcsolva, ezért erősítse meg, hogy Ön az: adja meg a jelszavát és a második lépést."
@@ -118,6 +119,8 @@
     "on": "A kétlépéses bejelentkezés be van kapcsolva.",
     "onText": "A jelszavával és egy második lépéssel jelentkezik be, vagy csak egy hozzáférési kulccsal.",
     "off": "A kétlépéses bejelentkezés ki van kapcsolva.",
+    "badgeOn": "Be",
+    "badgeOff": "Ki",
     "offText": "A bekapcsoláshoz állítson be egy hitelesítő alkalmazást, vagy adjon hozzá egy hozzáférési kulcsot.",
     "confirmEmailFirst": "Előbb erősítse meg az e-mail-címét, fent. Ezen értesítjük a bejelentkezés módjának változásairól, és ezen segítünk, ha elveszíti a második lépését.",
     "appHeading": "Hitelesítő alkalmazás",
@@ -141,6 +144,7 @@
     "nameCheck": "Adjon a hozzáférési kulcsnak 1 és {most} karakter közötti nevet.",
     "passkeyLimit": "Önnek {most} hozzáférési kulcsa van, ennél többet egy fiók nem tarthat. Egy újabb hozzáadásához távolítson el egyet.",
     "codesTitle": "Helyreállítási kódok",
+    "codesLeft": "{count, plural, one {{total} helyreállítási kódból # maradt.} other {{total} helyreállítási kódból # maradt.}} Ha nem tudja használni az alkalmazást vagy a hozzáférési kulcsot, egy kód ehelyett bejelentkezteti. Minden kód csak egyszer használható.",
     "codesLow": "Hamarosan készítsen új kódokat. Ha elfogynak, és elveszíti az alkalmazást és a hozzáférési kulcsokat, nem tud bejelentkezni.",
     "newCodes": "Új helyreállítási kódok készítése",
     "offHeading": "Kikapcsolás",
@@ -149,6 +153,8 @@
     "offCodes": "A helyreállítási kódjai nem működnek tovább.",
     "offSignOut": "A fiókjába bejelentkezett minden más eszközt kijelentkeztetünk. Ez az eszköz bejelentkezve marad.",
     "offEmail": "E-mailben értesítjük a kikapcsolásról.",
+    "offRemoveApp": "Kétlépéses bejelentkezés kikapcsolása (eltávolítja az alkalmazást)",
+    "offRemoveAppFirst": "Távolítsa el az alkalmazást a kikapcsolás megkezdéséhez",
     "offPasskeys": "{count, plural, one {A kikapcsoláshoz távolítsa el a hozzáférési kulcsát fent, a Hozzáférési kulcsok alatt.} other {A kikapcsoláshoz távolítsa el mind a(z) # hozzáférési kulcsát fent, a Hozzáférési kulcsok alatt.}}",
     "offPasskeysToo": "{count, plural, one {Van egy hozzáférési kulcsa is: távolítsa el fent, a Hozzáférési kulcsok alatt, az alkalmazással együtt.} other {# hozzáférési kulcsa is van: távolítsa el őket fent, a Hozzáférési kulcsok alatt, az alkalmazással együtt.}}",
     "addAppText": "A hitelesítő alkalmazás beállításához először erősítse meg, hogy Ön az.",
@@ -201,6 +207,25 @@
     "recipes": "Receptek (CSV)",
     "materials": "Nyersanyagok (CSV)"
   },
+  "trash": {
+    "heading": "Lomtár",
+    "text": "Amit eltávolít a műhelyfüzetéből, 30 napig a Lomtárban vár. Onnan helyezheti vissza, vagy törölheti véglegesen.",
+    "open": "A Lomtár megnyitása"
+  },
+  "shared": {
+    "heading": "Megosztott receptek",
+    "text": "A linkkel megosztott receptjei, amelyeket bárki elolvashat, aki rendelkezik a linkkel, fiók nélkül is. A linket csak egyszer, a létrehozásakor mutatjuk meg, ezért itt nem jeleníthető meg. Recept újbóli megosztásához készítsen új linket a recept „Több” menüjében.",
+    "since": "Megosztva ekkortól: {date}",
+    "notesShown": "Megjegyzések láthatók",
+    "notesHidden": "Megjegyzések nem láthatók",
+    "untitled": "Névtelen recept",
+    "stop": "Megosztás leállítása",
+    "stopName": "A(z) {name} megosztásának leállítása",
+    "stopped": "A(z) {name} már nincs megosztva. A linkje már nem működik.",
+    "stopFailed": "Ez nem sikerült. Kérjük, próbálja újra.",
+    "fetchFailed": "A megosztott receptjeit nem sikerült betölteni. Kérjük, próbálja újra.",
+    "none": "Egyetlen receptet sem oszt meg."
+  },
   "settings": {
     "heading": "Beállítások",
     "intro": "A fiókjával együtt mentjük őket, így minden eszközön érvényesek.",
@@ -227,6 +252,22 @@
       },
       "saved": "Mentve: a számok és dátumok ebben a formában: {language}.",
       "help": "A számok és dátumok írásmódja: 12,345.6 vagy 12.345,6, valamint a nap és a hónap sorrendje."
+    },
+    "calendar": {
+      "legend": "Naptár",
+      "help": "Az a naptár, amelyben a dátumok megjelennek. A beírt dátumok továbbra is a Gergely-naptár szerint értendők.",
+      "gregory": {
+        "label": "Gergely-naptár",
+        "saved": "Mentve: a dátumok a Gergely-naptár szerint jelennek meg."
+      },
+      "buddhist": {
+        "label": "Thai buddhista időszámítás",
+        "saved": "Mentve: a dátumok a thai buddhista időszámítás szerint jelennek meg."
+      },
+      "japanese": {
+        "label": "Japán korszak",
+        "saved": "Mentve: a dátumok japán korszakok szerint jelennek meg."
+      }
     },
     "decimalMark": {
       "legend": "Mennyiségek beírása",
@@ -265,7 +306,7 @@
         "saved": "Mentve: égetés Orton-gúlák szerint."
       },
       "sk": {
-        "label": "SK-gúlák szerint (JIS R 8101)",
+        "label": "SK-gúlák szerint, JIS R 8101",
         "example": "SK 4a, SK 8",
         "saved": "Mentve: égetés SK-gúlák szerint."
       },
@@ -291,6 +332,12 @@
         "saved": "Mentve: mázsűrűség pint-súlyként."
       },
       "help": "Az, hogy az útmutatók miben adják meg a máz sűrűségét. Amíg nem választ, ez a régióját követi: Baumé-fok Olaszországban és Japánban, máshol fajsúly."
+    },
+    "currency": {
+      "legend": "Az árak pénzneme",
+      "help": "Az Ön által megadott nyersanyagárak és egy adag költsége ebben a pénznemben értendők. A módosítás nem váltja át a korábban megadott árakat. Amíg nem választ, ez a régióját követi.",
+      "saved": "Mentve: az árak pénzneme {currency}.",
+      "notConverted": "A tárolt árait nem váltottuk át: ugyanazok a számok maradtak, amelyeket megadott."
     },
     "theme": {
       "legend": "Világos vagy sötét",
@@ -386,5 +433,72 @@
     "account": "Fiókja",
     "signIn": "Bejelentkezés",
     "failed": "Hiba: nem sikerült megerősíteni a címet. Kérjük, próbálja újra."
+  },
+  "providers": {
+    "continueGoogle": "Folytatás a Google-lal",
+    "continueGithub": "Folytatás a GitHubbal",
+    "failed": "A bejelentkezés nem sikerült. Kérjük, próbálja újra.",
+    "heading": "Google és GitHub",
+    "intro": "Kapcsoljon össze egy Google- vagy GitHub-fiókot, hogy azzal is bejelentkezhessen. A Glazecalc a fiókból csak az azonosítót őrzi meg, soha a nevet, a képet vagy bármi mást, és a kétlépéses bejelentkezés ilyenkor is kéri a második lépést.",
+    "passwordless": "Ennek a fióknak nincs jelszava. Az e-mail-címe, a kétlépéses bejelentkezés vagy a bejelentkezési módok módosításához, illetve a fiók törléséhez újra bejelentkezve, Google-lal vagy GitHubbal erősíti meg, hogy Ön az. Jelszót is beállíthat.",
+    "setPassword": "Link küldése e-mailben a jelszó beállításához",
+    "setPasswordUnlinks": "Ha az e-mailben kapott linkkel állít be jelszót, az a Google és a GitHub leválasztásával is jár. Utána újra összekapcsolhatja őket.",
+    "setPasswordFailed": "Nem sikerült elküldeni a linket. Kérjük, próbálja újra.",
+    "confirmFirst": "A Google vagy a GitHub összekapcsolásához előbb erősítse meg az e-mail-címét a kapott linkkel.",
+    "linkedOn": "Összekapcsolva: {date}",
+    "notLinked": "Nincs összekapcsolva",
+    "link": "{provider} összekapcsolása",
+    "unlink": "{provider} leválasztása",
+    "linkFailed": "Nem sikerült összekapcsolni. Kérjük, próbálja újra.",
+    "reauthIntro": "Ennek a fióknak nincs jelszava, ezért újabb bejelentkezéssel erősítse meg, hogy Ön az. Utána 5 percen belül végezze el a módosítást.",
+    "reauthButton": "Újabb bejelentkezés ezzel: {provider}",
+    "reauthHeld": "Újra bejelentkezett ezzel: {provider}. A következő 5 percben egy módosítást végezhet jelszó nélkül.",
+    "reauthFirst": "Kérjük, előbb jelentkezzen be újra a fenti gombok egyikével.",
+    "reauthFailed": "Nem sikerült elindítani az újabb bejelentkezést. Kérjük, próbálja újra."
+  },
+  "tokens": {
+    "heading": "Hozzáférési tokenek",
+    "intro": "A hozzáférési token lehetővé teszi, hogy a saját MI-asszisztense vagy szkriptje elolvassa a fiókjában lévő recepteket, nyersanyagokat, jegyzeteket és égetési naplókat. A token egyelőre csak olvasni tud: soha nem módosít és nem távolít el semmit. Minden token az Ön által választott napon leáll, vagy amint visszavonja.",
+    "howTo": "Hogyan kapcsolhat össze egy MI-asszisztenst",
+    "listLabel": "Hozzáférési tokenjei",
+    "none": "Nincs hozzáférési tokenje.",
+    "hint": "vége: {hint}",
+    "readOnly": "Csak olvasható",
+    "created": "létrehozva: {date}",
+    "lastUsed": "utoljára használva: {date}",
+    "neverUsed": "még nem használták",
+    "expires": "lejár: {date}",
+    "expiredOn": "lejárt: {date}",
+    "revokedOn": "visszavonva: {date}",
+    "revoke": "Visszavonás",
+    "revokeNamed": "{name} visszavonása",
+    "revokeAll": "Minden hozzáférési token visszavonása",
+    "revokeFailed": "Hiba: nem sikerült visszavonni a tokent. Kérjük, próbálja újra.",
+    "loadFailed": "A hozzáférési tokenjeit nem sikerült betölteni. Kérjük, töltse újra az oldalt, és próbálja újra.",
+    "createHeading": "Token létrehozása",
+    "name": "Név",
+    "nameHint": "Valami, ami alapján megkülönböztetheti, például az asszisztens vagy a számítógép neve, amelyhez készül.",
+    "nameCheck": "Adjon a tokennek 1 és {most} karakter közötti nevet.",
+    "expiry": "Ennyi idő után megszűnik működni",
+    "days": "{count, plural, one {# nap} other {# nap}}",
+    "expiryHint": "A token leállása előtt 7 nappal e-mailt küldünk.",
+    "confirmEmailFirst": "Token létrehozása előtt erősítse meg az e-mail-címét: nyissa meg a(z) {email} címre küldött linket. Ezen a címen értesítjük, amikor token készül, és mielőtt egy token leáll.",
+    "resend": "A megerősítő link újraküldése",
+    "scopeNote": "A token elolvashatja a bejegyzéseit, de nem módosíthatja őket.",
+    "confirmStep": "A token létrehozásához erősítse meg, hogy Ön az.",
+    "create": "Token létrehozása",
+    "failed": "Hiba: nem sikerült létrehozni a tokent. Kérjük, próbálja újra.",
+    "limit": "Önnek {most} működő hozzáférési tokenje van, ennél többet egy fiók nem tarthat. Újabb létrehozásához vonjon vissza egyet.",
+    "newHeading": "Másolja ki az új tokent most",
+    "newText": "Csak most látható. Bárki, aki rendelkezik vele, elolvashatja a bejegyzéseit, amíg a token le nem áll, ezért őrizze úgy, mint egy jelszót, és csak a saját asszisztensének vagy szkriptjének adja meg.",
+    "newLabel": "Az új hozzáférési tokenje",
+    "copy": "Token másolása",
+    "copied": "Kimásolva.",
+    "copyFailed": "Nem sikerült másolni. Jelölje ki a tokent, és másolja ki saját maga.",
+    "done": "Kimásoltam",
+    "keptHeading": "A hozzáférési tokenjei továbbra is működnek",
+    "keptText": "{count, plural, one {A jelszó módosítása nem állította le a hozzáférési tokenjét. Ha azért módosította, mert valaki más ismerheti a jelszavát, a tokent is vonja vissza.} other {A jelszó módosítása nem állította le a(z) # hozzáférési tokenjét. Ha azért módosította, mert valaki más ismerheti a jelszavát, a tokeneket is vonja vissza.}}",
+    "keep": "Megtartás",
+    "signOutNote": "{count, plural, one {A hozzáférési tokenjét is leállítja, véglegesen.} other {A(z) # hozzáférési tokenjét is leállítja, véglegesen.}}"
   }
 }

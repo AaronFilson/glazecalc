@@ -10,7 +10,9 @@
 // change is made: it is taken (used) only then. A change to the account's
 // tokenVersion (another change to how it signs in, a password reset, a
 // sign-out everywhere) ends it. One grant per account and purpose: a newer one
-// replaces the last.
+// replaces the last. A grant may also be bound to one sign-in session
+// (`session`, jwt_auth.ts sessionKeyOf; a provider reauth always is, ADR 15):
+// then only a request from that session finds it.
 import crypto from 'node:crypto';
 import type { HydratedDocument, Types } from 'mongoose';
 import AuthChallenge, { type AuthChallengeFields, type GrantPurpose } from '../models/auth_challenge.ts';
@@ -27,20 +29,27 @@ const hashOf = (grant: string): string => crypto.createHash('sha256').update(gra
 export const versionIs = (version: number): Record<string, unknown> =>
   version ? { tokenVersion: version } : { tokenVersion: { $in: [0, null] } };
 
-/** Gives a grant for `purpose` to an account whose identity was just confirmed. */
+/**
+ * Gives a grant for `purpose` to an account whose identity was just confirmed:
+ * for GRANT_MINUTES from `confirmedAt` (now when not given), and only to the
+ * sign-in session `session` names when given.
+ */
 export const issue = async (
   user: { _id: Types.ObjectId; tokenVersion?: number },
-  purpose: GrantPurpose
+  purpose: GrantPurpose,
+  confirmedAt = new Date(),
+  session?: string
 ): Promise<{ grant: string; expiresAt: Date }> => {
   await AuthChallenge.deleteMany({ userId: user._id, kind: 'change-grant', purpose });
   const grant = crypto.randomBytes(32).toString('base64url');
-  const expiresAt = new Date(Date.now() + GRANT_MINUTES * 60 * 1000);
+  const expiresAt = new Date(confirmedAt.getTime() + GRANT_MINUTES * 60 * 1000);
   await AuthChallenge.create({
     userId: user._id,
     kind: 'change-grant',
     purpose,
     grantHash: hashOf(grant),
     tokenVersion: user.tokenVersion || 0,
+    ...(session && { sessionHash: session }),
     expiresAt
   });
   return { grant, expiresAt };
@@ -48,16 +57,24 @@ export const issue = async (
 
 /**
  * The live grant `grant` names, for this account and purpose, or null: unknown,
- * expired, used, another account's or purpose's, replaced by a newer one, or
- * the account's tokenVersion has changed since.
+ * expired, used, another account's or purpose's, replaced by a newer one, the
+ * account's tokenVersion has changed since, or it is bound to a sign-in
+ * session other than `session` (a grant bound to one is never found without it).
  */
-export const find = async (userId: Types.ObjectId, grant: unknown, purpose: GrantPurpose): Promise<Grant | null> => {
+export const find = async (
+  userId: Types.ObjectId,
+  grant: unknown,
+  purpose: GrantPurpose,
+  session?: string | null
+): Promise<Grant | null> => {
   if (typeof grant !== 'string' || !grant || grant.length > 128) return null;
   const found = await AuthChallenge.findOne({
     userId,
     kind: 'change-grant',
     purpose,
     grantHash: hashOf(grant),
+    // null also matches a grant bound to no session.
+    sessionHash: session || null,
     usedAt: null,
     expiresAt: { $gt: new Date() }
   });

@@ -34,13 +34,14 @@ Una **sosta**{{en: hold}} (detta anche **mantenimento**{{en: soak}}) tiene il fo
 Table: Quanto vale una sosta alla temperatura massima
 Label: Soste e lavoro termico
 
-| Sosta           | Più o meno lo stesso lavoro termico di                  |
-| --------------- | ------------------------------------------------------- |
-| Circa 20 minuti | Una temperatura massima più alta di {{18 °F; 10 °C}}    |
-| 40–60 minuti    | Una temperatura massima più alta di {{36 °F; 20 °C}}    |
-| Circa 2 ore     | Una temperatura massima più alta di {{54 °F; 30 °C}}    |
-| 1–2 ore         | «può bastare a deformare il cono del numero successivo» |
-| 4–6 ore         | Abbastanza da piegare un cono di due numeri più caldo   |
+| Sosta           | Più o meno lo stesso lavoro termico di                |
+| --------------- | ----------------------------------------------------- |
+| Circa 20 minuti | Una temperatura massima più alta di {{18 °F; 10 °C}}  |
+| 40–60 minuti    | Una temperatura massima più alta di {{36 °F; 20 °C}}  |
+| Circa 2 ore     | Una temperatura massima più alta di {{54 °F; 30 °C}}  |
+| 4–6 ore         | Abbastanza da piegare un cono di due numeri più caldo |
+
+Orton aggiunge che una sosta di 1–2 ore «può bastare a deformare il cono del numero successivo».
 
 Una sosta, quindi, non è mai senza effetto: se se ne aggiunge una, aspettarsi che i coni si pieghino di più e abbassare di conseguenza la temperatura massima.
 
@@ -198,11 +199,11 @@ Molti kiln sitter, compresi i modelli LT di Dawson, hanno un **timer di sicurezz
 Table: Per quanto tempo impostare il timer di sicurezza
 Label: Impostazioni del timer di sicurezza
 
-| Fonte     | Impostazione                                                                                                              |
-| --------- | ------------------------------------------------------------------------------------------------------------------------- |
-| Dawson    | ½ ora in più della durata prevista della cottura finché non si conosce il forno, poi anche solo ¼ d’ora; mai oltre 20 ore |
-| L&L       | Molto alto la prima volta, annotando quanto dura la cottura; in seguito, circa 1 ora in più                               |
-| Bracker’s | Da 30 minuti a 1 ora in più della durata della cottura                                                                    |
+| Fonte     | Impostazione                                                                                                                              |
+| --------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| Dawson    | ½ ora in più della durata prevista della cottura finché non si conosce il forno, poi solo ¼ d’ora in più; non impostarlo mai oltre 20 ore |
+| L&L       | Molto alto la prima volta, annotando quanto dura la cottura; in seguito, circa 1 ora in più                                               |
+| Bracker’s | Da 30 minuti a 1 ora in più della durata della cottura                                                                                    |
 
 > [!NOTE]
 > Il nostro punto di partenza: abbondante la prima volta (entro le 20 ore del quadrante), poi da ½ a 1 ora in più del tempo annotato. Il timer indica anche quanto è durata una cottura: impostato su 7 e fermo su 1 significa 6 ore.
@@ -375,7 +376,7 @@ La **biscottatura**{{en: bisque}} (nel Regno Unito _biscuit_) è la prima cottur
 
 ### Perché la prima fase va lenta
 
-L’acqua che diventa vapore «si espande 1170 volte», nota Bracker’s, quindi i pezzi umidi vanno asciugati lentamente. L&L e Orton consigliano di «prestare particolare attenzione sotto i 1500°F (815°C) per riscaldare l’impasto{{en: body}} in modo uniforme», e di bruciare del tutto il carbonio prima di circa {{1200 °F; 650 °C}}. Sopra i {{1500 °F; 816 °C}} il forno può salire più in fretta.
+L’acqua si espande di oltre mille volte quando diventa vapore, quindi i pezzi umidi vanno asciugati lentamente. L&L e Orton consigliano di «prestare particolare attenzione sotto i 1500°F (815°C) per riscaldare l’impasto{{en: body}} in modo uniforme», e di bruciare del tutto il carbonio prima di circa {{1200 °F; 650 °C}}. Sopra i {{1500 °F; 816 °C}} il forno può salire più in fretta.
 
 Table: Che cosa succede mentre il biscotto si scalda
 Label: Che cosa succede in biscottatura
@@ -595,22 +596,22 @@ Se il kiln sitter scatta prima che i coni sulla piastra si siano piegati, la vol
 
 Il **pirometro** è un indicatore di temperatura collegato a una **termocoppia**, una sonda di temperatura che attraversa la parete del forno. Mostra quanto in fretta sale il forno, così si può scegliere la colonna giusta della tabella dei coni. Ma misura vicino alla parete, non dove sono i pezzi, e con il tempo la sua lettura perde precisione. L&L nota che una termocoppia di tipo K può sbagliare di oltre {{25 °F; 14 °C}} dopo ripetute cotture a cono 6, «una differenza superiore a un cono intero», mentre un cono autoportante varia di non più di {{4 °F; 2 °C}}. Orton dice che i pirometri vanno ricalibrati di tanto in tanto, e che i coni servono a controllarli.
 
-## Aerazione, controllo dallo spioncino e sicurezza {#venting}
+## Ventilazione, spioncino e sicurezza {#venting}
 
-### Aerazione
+### Ventilazione
 
-All’inizio della cottura l’argilla e lo smalto{{en: glaze}} emettono vapore acqueo e fumi, tra cui monossido di carbonio, e gli smalti possono emettere fumi tossici anche più avanti nella cottura. L&L definisce «essenziale» farli uscire. Senza un impianto di aspirazione, questo significa coperchio socchiuso e spioncini aperti nelle prime fasi, come nelle procedure qui sopra; rallentare il riscaldamento in questa fase aiuta anche il carbonio a bruciare del tutto. Con un **aspiratore sotto il forno** (un aspiratore elettrico montato sul forno), Orton dice che il coperchio e gli spioncini restano chiusi per tutta la cottura, tranne che per controllare i coni. Uno spioncino aperto in alto protegge anche il tubo del kiln sitter e le parti metalliche del forno.
+All’inizio della cottura, argilla e smalto{{en: glaze}} rilasciano vapore acqueo e fumi, tra cui monossido di carbonio, e gli smalti possono rilasciare fumi tossici anche più avanti nella cottura. L&L definisce «essenziale» eliminarli. Senza un sistema di aspirazione, questo significa il coperchio sollevato e gli spioncini aperti nelle prime fasi, come nelle procedure qui sopra; rallentare il riscaldamento in questa fase aiuta anche a bruciare il carbonio. In un forno senza aspiratore, Dawson, che ha prodotto il kiln sitter, dice anche di lasciare aperto lo spioncino in alto per tutta la cottura: la ventilazione «ridurrà il deterioramento delle parti metalliche del forno e aumenterà la vita del gruppo del tubo». Un **aspiratore sotto il forno** (un’aspirazione motorizzata montata sul forno) cambia le cose. Provvede lui alla ventilazione, perciò Orton dice che il coperchio e gli spioncini restano chiusi per tutta la cottura, tranne che per controllare i coni, e L&L dice di lasciare acceso l’aspiratore e di tappare gli spioncini.
 
-Per l’aerazione della stanza e per i rilevatori di monossido di carbonio, vedere [Miscelazione sicura e ventilazione](/guides/safe-mixing) e [Non avvelenare la propria famiglia](/guides/home-safety).
+Per la ventilazione del locale e per i rilevatori di monossido di carbonio, vedere [Miscelazione sicura e ventilazione](/guides/safe-mixing) e [Non avvelenare la propria famiglia](/guides/home-safety).
 
 ### Mentre il forno cuoce
 
-- Guardare da uno spioncino solo con occhiali da saldatura con filtro IR, grado di protezione 3; gli occhiali da sole non bastano. Skutt consiglia di inserire i tappi ruotandoli, in modo che non cadano.
-- Non lasciare il forno incustodito oltre la durata prevista della cottura; il kiln sitter non è un dispositivo a prova di guasto.
-- Non cuocere mai sopra o vicino a qualcosa che brucia, come un pavimento di legno o una moquette.
-- Rispettare le distanze di sicurezza indicate nel manuale. I valori pubblicati vanno da 12 pollici (30 cm) a 3 piedi (91 cm); dove il manuale non dice nulla, 18 pollici (46 cm) dalle pareti e 3 piedi (91 cm) da qualsiasi cosa che bruci è la scelta più sicura.
-- Tenere libero lo spazio intorno al peso del kiln sitter, in modo che possa cadere.
-- Alla fine della cottura, spegnere i commutatori e staccare anche l’interruttore automatico.
+- Guardare dallo spioncino solo con occhiali da saldatura con filtro IR di grado 3; gli occhiali da sole non bastano. Skutt consiglia di avvitare i tappi in sede perché non cadano.
+- Non lasciare il forno incustodito oltre il tempo di cottura previsto; un kiln sitter non è una sicurezza infallibile.
+- Non cuocere mai su o vicino a materiali combustibili, come un pavimento in legno o la moquette.
+- Rispettare le distanze di sicurezza del manuale. I valori pubblicati vanno da 12 pollici (30 cm) a 3 piedi (91 cm); dove il manuale non dice nulla, 18 pollici (46 cm) dalle pareti e 3 piedi (91 cm) da qualsiasi materiale combustibile sono la scelta più sicura.
+- Tenere libero lo spazio intorno al peso del kiln sitter, perché possa cadere.
+- Quando la cottura finisce, spegnere gli interruttori e spegnere anche l’interruttore automatico.
 
 ## Raffreddamento e scarico {#cooling}
 

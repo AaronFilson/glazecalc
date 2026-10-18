@@ -1,5 +1,6 @@
 const { test, expect } = require('@playwright/test');
 const chemistry = require('../lib/chemistry');
+const recipeTools = require('../lib/recipe');
 const standardData = require('../data');
 const {
   API,
@@ -57,6 +58,72 @@ test('shows the unity formula of a dolomite matte as it is typed', async ({ page
   // A change shows at once: no dolomite, no magnesium.
   await amount(page, 'Dolomite').fill('0');
   await expect(unity(page)).not.toContainText('MgO');
+});
+
+test('checks the glaze against Hesselberth & Roy as it is typed, plots it on a Stull chart, and works out water', async ({
+  page
+}) => {
+  for (const [name, grams] of DOLOMITE_MATTE) await addStandardMaterial(page, name, grams);
+  const expected = chemistry.calculateUMF(
+    DOLOMITE_MATTE.map(([name, grams]) => ({ material: standard[name], amount: grams }))
+  );
+  const numbers = page.locator('.recipe-numbers');
+  await expect(numbers.getByRole('heading', { name: 'Analysis and limits' })).toBeVisible();
+  await expect(numbers).toContainText('Loss on ignition' + expected.loi.toFixed(1) + '% of the raw batch');
+  await expect(page.getByLabel('Limit set')).toHaveValue('hesselberth-roy');
+  await expect(numbers).toContainText('With no firing chosen, the figures shown are for: Mid fire, cone 4–6.');
+  const alumina = numbers.locator('.limits-table tr', { hasText: 'Al₂O₃' });
+  await expect(alumina).toContainText(expected.umf.Al2O3.toFixed(2) + '0.25–0.40');
+  // At low fire the set does not apply.
+  await page.getByRole('combobox', { name: 'Firing', exact: true }).selectOption('low');
+  await expect(numbers).toContainText('has no figures for this firing');
+  await expect(numbers.locator('.limits-table')).toHaveCount(0);
+  // The Stull chart says where the glaze is, in words as well.
+  const point = recipeTools.stullPoint(expected.umf);
+  await expect(page.getByRole('img', { name: /Stull chart/ })).toBeVisible();
+  await expect(numbers.locator('figcaption')).toContainText('is in the ' + point.region + ' region');
+
+  const slurry = page.locator('.slurry');
+  await slurry.getByLabel('Glaze in the bucket').fill('10');
+  await slurry.getByLabel('Its SG now').fill('1.5');
+  await expect(slurry).toContainText('To reach SG 1.45, add 1.11 kg of water.');
+});
+
+test("shows the recipe's hazards, and its cost from prices the account keeps", async ({ page }) => {
+  await addStandardMaterial(page, 'Silica', 60);
+  await addStandardMaterial(page, 'Whiting', 40);
+  const hazards = page.locator('.recipe-hazards');
+  await expect(hazards.locator('li')).toHaveCount(2);
+  await expect(hazards).toContainText('Silica: ' + standard['Silica'].hazards);
+  await expect(hazards.getByRole('link', { name: 'Safe mixing and ventilation' })).toHaveAttribute(
+    'href',
+    /\/guides\/safe-mixing$/
+  );
+
+  await page.getByRole('button', { name: 'Cost of a batch' }).click();
+  const cost = page.locator('.recipe-cost');
+  // With no price yet, it asks for them all; with some, it names the ones still missing.
+  await expect(cost.locator('.recipe-cost-summary')).toHaveText(
+    "Give each material's price per kilogram to see what a batch costs."
+  );
+  // Prices are per kilogram here, in the account's currency (USD for a US browser with no region chosen).
+  await page.getByRole('textbox', { name: 'Price of Silica per kilogram' }).fill('2');
+  await page.getByRole('textbox', { name: 'Price of Silica per kilogram' }).blur();
+  await expect(cost.locator('.recipe-cost-summary')).toContainText(
+    'The materials with prices cost $1.20 in this batch. Give a price for Whiting for the whole cost.'
+  );
+  await page.getByRole('textbox', { name: 'Price of Whiting per kilogram' }).fill('0.5');
+  await page.getByRole('textbox', { name: 'Price of Whiting per kilogram' }).blur();
+  // 1000 g of base: 600 g at 2 and 400 g at 0.5.
+  await expect(cost.locator('.recipe-cost-summary')).toHaveText(
+    /^This batch costs \$1\.40: \$1\.40 per kilogram of dry glaze/
+  );
+
+  // Kept with the account: there after a reload, for any recipe using them.
+  await page.reload();
+  await addStandardMaterial(page, 'Whiting', 100);
+  await page.getByRole('button', { name: 'Cost of a batch' }).click();
+  await expect(page.locator('.recipe-cost-summary')).toHaveText(/^This batch costs \$0\.50/);
 });
 
 test('saves a recipe, keeps it open, and saves changes to the same recipe', async ({ page }) => {
@@ -211,6 +278,10 @@ test('colorants in % of base stay as they are when the scale changes; in parts o
   // An amount that is not a number stops it, with the reason beside the buttons.
   // (20,5 is a number now, in either decimal style; 20,5,1 is not.)
   await amount(page, 'Whiting').fill('20,5,1');
+  // Leaving the field marks it wrong, and the message under it moves the buttons
+  // down: let that happen before the click, not between its press and release.
+  await amount(page, 'Whiting').blur();
+  await expect(amount(page, 'Whiting')).toHaveAttribute('aria-invalid', 'true');
   await page.getByRole('button', { name: 'To percent' }).click();
   await expect(page.locator('.recipe-scale-note')).toHaveText(
     'The amount for Whiting is not a number ("20,5,1"). Please fix it first.'
@@ -272,7 +343,7 @@ test('removes a material from the recipe and a saved recipe from the list', asyn
   await entry.getByRole('button', { name: 'Remove Short lived' }).click();
   await expect(entry).toContainText('It stays open in the editor, as a recipe not saved yet.');
   await entry.getByRole('button', { name: 'Yes, remove' }).click();
-  await expect(page.locator('.server-msg')).toContainText('Removed "Short lived".');
+  await expect(page.locator('.server-msg')).toContainText('Moved "Short lived" to the Trash.');
   await expect(entry).toHaveCount(0);
   await expect(page.locator('#recipe-name')).toHaveValue('Short lived');
   await expect(page.locator('.recipe-status')).toHaveText('Not saved yet');
@@ -323,7 +394,7 @@ test('with recipes saved, the instructions are one line and the saved recipes co
   await addStandardMaterial(page, 'Silica', 30);
   await save(page);
   await page.goto('/home');
-  await page.locator('.home-card', { hasText: 'Recipes' }).click();
+  await page.locator('.home-card', { has: page.getByRole('heading', { name: 'Recipes', exact: true }) }).click();
   await expect(page).toHaveURL(/\/recipe#saved-recipes$/);
   await expect(page.getByRole('heading', { name: 'How to use the recipe calculator' })).toHaveCount(0);
   await expect(page.getByRole('button', { name: 'How the recipe calculator works' })).toBeVisible();

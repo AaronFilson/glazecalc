@@ -38,7 +38,7 @@ Ubrændt gods kaldes **råemner** (kilderne er uenige om, hvorvidt det engelske 
 
 ### De to brændinger
 
-Den første, lavere brænding er **forglødningen**{{en: bisque}} (britisk: **biscuit**), som regel kegle 08–04, omkring {{1740–1940 °F; 950–1060 °C}}. Den gør godset stærkt, men porøst. Digitalfire, et opslagsværk om glasurer på nettet, anbefaler generelt mere end 15 % porøsitet, så det forglødede gods suger vand ud af glasuren, når den påføres. En lav forglødning (kegle 08–06) giver mere porøst gods; en høj forglødning (ofte kegle 04) giver stærkere gods, der tager mindre let imod glasur.
+Den første, lavere brænding er **forglødningen**{{en: bisque}} (britisk: **biscuit**), som regel kegle 08–04 (oftest 06–04), omkring {{1728–1945 °F; 942–1063 °C}}. Den gør godset stærkt, men porøst. Digitalfire, et opslagsværk om glasurer på nettet, anbefaler generelt mere end 15 % porøsitet, så det forglødede gods suger vand ud af glasuren, når den påføres. En lav forglødning (kegle 08–06) giver mere porøst gods; en høj forglødning (ofte kegle 04) giver stærkere gods, der tager mindre let imod glasur.
 
 Table: Sådan påvirker forglødningen glaseringen (Digitalfire)
 Label: Sådan påvirker forglødningen glaseringen
@@ -254,7 +254,7 @@ De lovfastsatte grænseværdier er forskellige fra land til land. Tabellen viser
 
 ::food-limits
 
-I USA skal gods, der ikke er beregnet til mad, have en varig, indbrændt mærkning »Not for Food Use« (ikke til fødevarer) eller et hul gennem den flade, der kommer i kontakt med mad. EU fastsætter grænseværdier for bly og cadmium i Rådets direktiv 84/500/EØF, og Storbritannien har bevaret de samme værdier i sin egen lovgivning. Fra den 29. maj 2026 tillader Nederlandene, Belgien og Luxembourg omkring 130 til 150 gange mindre bly og omkring 15 gange mindre cadmium. Australien fastsætter grænseværdier for importeret gods; vi har ikke fundet nogen officiel grænseværdi for gods fremstillet i Australien eller New Zealand.
+I USA behandles dekorativt keramikgods, der ser brugbart ud til mad, som madgods, medmindre det har en påklistret etiket og en varig mærkning formet eller indbrændt i bunden, f.eks. »Not for Food Use. May Poison Food« (ikke til fødevarer; kan forgifte maden), eller et hul gennem den flade, der kommer i kontakt med mad. EU fastsætter grænseværdier for bly og cadmium i Rådets direktiv 84/500/EØF, og Storbritannien har bevaret de samme værdier i sin egen lovgivning. Fra den 29. maj 2026 tillader Nederlandene, Belgien og Luxembourg omkring 130 til 150 gange mindre bly og omkring 15 gange mindre cadmium. Australien fastsætter grænseværdier for importeret gods; vi har ikke fundet nogen officiel grænseværdi for gods fremstillet i Australien eller New Zealand.
 
 ### Test
 
@@ -346,7 +346,7 @@ Flusmiddel (flux)
 : Et oxid, der sænker smeltetemperaturen for silica.
 
 Forglødning (bisque; UK: biscuit)
-: Den første, lavere brænding, som regel kegle 08–04, der gør godset stærkt, men porøst.
+: Den første, lavere brænding, som regel kegle 08–04 (oftest 06–04), der gør godset stærkt, men porøst.
 
 Forholdet mellem silica og aluminiumoxid (silica to alumina ratio)
 : Silica divideret med aluminiumoxid i Seger-formlen: Et højere forhold trækker mod blank, et lavere mod mat.
@@ -474,6 +474,7 @@ Voks (wax resist)
 - [Glazy Help: Specific gravity](https://help.glazy.org/testing/specific-gravity)
 - [Orton Ceramic Foundation: Pyrometric cone chart, °F (via The Ceramic Shop)](https://www.theceramicshop.com/technical_info/Cones/Orton-Cone-Chart-F-022-14.pdf)
 - [Digitalfire: Bisque](https://digitalfire.com/glossary/bisque)
+- [Digitalfire: Bentonite](https://digitalfire.com/material/bentonite)
 - [Digitalfire: Unity molecular formula](https://digitalfire.com/glossary/unity+molecular+formula)
 - [Digitalfire: LOI](https://digitalfire.com/glossary/loi)
 - [Digitalfire: Frit](https://digitalfire.com/glossary/frit)
@@ -489,3 +490,4 @@ Voks (wax resist)
 - [Potclays: The difference between stoneware and earthenware](https://www.potclays.co.uk/clay-questions/difference-stoneware-earthenware)
 - [US FDA: Compliance Policy Guide Sec. 545.450, Pottery (ceramics), lead contamination](https://www.fda.gov/media/71764/download)
 - [EUR-Lex: Council Directive 84/500/EEC on ceramic articles in contact with food](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:31984L0500)
+- [eCFR: 21 CFR 109.16, Ornamental and decorative ceramicware](https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-109/subpart-A/section-109.16)

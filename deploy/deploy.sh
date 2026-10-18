@@ -161,6 +161,30 @@ if [[ ! "$mfa_key" =~ ^[A-Za-z0-9+/]{43}=$ ]]; then
 fi
 printf 'MFA_KEY=%s\n' "$mfa_key" >> app.env.new
 unset mfa_key
+# Sign in with Google and GitHub (docs/adr/0015-provider-sign-in.md): each
+# provider is on once both /glazecalc/<provider>-client-id and
+# /glazecalc/<provider>-client-secret exist, and off, with no button, until
+# then (deploy/README.md, "Sign in with Google and GitHub"). Any other error
+# reading them stops the deploy here, rather than turning a provider off.
+for provider in google github; do
+  upper=$(printf '%s' "$provider" | tr '[:lower:]' '[:upper:]')
+  if client_id=$(aws ssm get-parameter --region "$region" --name "/glazecalc/$provider-client-id" \
+      --with-decryption --query Parameter.Value --output text 2>ssm-error.txt) \
+    && client_secret=$(aws ssm get-parameter --region "$region" --name "/glazecalc/$provider-client-secret" \
+      --with-decryption --query Parameter.Value --output text 2>ssm-error.txt); then
+    printf '%s_CLIENT_ID=%s\n%s_CLIENT_SECRET=%s\n' "$upper" "$client_id" "$upper" "$client_secret" >> app.env.new
+    echo "Sign in with $provider: on."
+  elif grep -q ParameterNotFound ssm-error.txt; then
+    echo "Sign in with $provider: off (no /glazecalc/$provider-client-id or -client-secret)."
+  else
+    cat ssm-error.txt >&2
+    echo "Could not read /glazecalc/$provider-client-id or -client-secret; the running version is unchanged." >&2
+    rm -f ssm-error.txt app.env.new mongo.env.new compose.prod.yaml.new
+    exit 1
+  fi
+  rm -f ssm-error.txt
+  unset client_id client_secret
+done
 # Email (Amazon SES over SMTP) is on once /glazecalc/smtp-url exists (see
 # deploy/aws/create-mailer.sh); until then reset by email says it is unavailable.
 # Any other error reading it (throttling, the network) stops the deploy here,

@@ -38,7 +38,7 @@ lead: 釉由什么构成，窑如何把它烧成玻璃，以及配方、原料�
 
 ### 两次烧成
 
-第一次、温度较低的烧成是**素烧**{{en: bisque}}（英国称 **biscuit**），通常烧到 Orton 测温锥 08～04 号，约 {{1740–1940 °F; 950–1060 °C}}。素烧使器物坚固但仍多孔。釉料参考网站 Digitalfire 认为，气孔率一般应超过 15%，这样素坯在施釉时才能把水分从釉中吸走。低温素烧（08～06 号锥）更多孔；高温素烧（常为 04 号锥）更结实，但吸釉较慢。
+第一次、温度较低的烧成是**素烧**{{en: bisque}}（英国称 **biscuit**），通常烧到 Orton 测温锥 08～04 号（最常见的是 06～04 号），约 {{1728–1945 °F; 942–1063 °C}}。素烧使器物坚固但仍多孔。釉料参考网站 Digitalfire 认为，气孔率一般应超过 15%，这样素坯在施釉时才能把水分从釉中吸走。低温素烧（08～06 号锥）更多孔；高温素烧（常为 04 号锥）更结实，但较不容易吸釉。
 
 Table: 素烧的程度如何影响施釉（Digitalfire）
 Label: 素烧如何影响施釉
@@ -157,19 +157,19 @@ Label: 常见釉用原料
 | 膨润土                                           | 悬浮                   | 一种很细的黏土，通常用 1～3%，防止沉淀                                                               |
 
 > [!WARNING]
-> 釉用原料是细粉。硅尘会损害肺部，而起初没有症状；有些原料，如碳酸钡和碳酸锂，吞入会中毒。取用粉料要轻缓，用湿法清理，干式作业时要戴贴合面部的防尘口罩。[《安全配料与通风》](/guides/safe-mixing)和[《别让家人中毒》](/guides/home-safety)介绍了具体方法。
+> 釉用原料是细粉。硅尘会损害肺部，而起初没有症状；有些原料，如碳酸钡和碳酸锂，吞入会中毒。取用粉料要轻缓，用湿法清理，干式作业时要戴贴合面部的防颗粒物呼吸器。[《安全配料与通风》](/guides/safe-mixing)和[《别让家人中毒》](/guides/home-safety)介绍了具体方法。
 
 ### 各地的叫法
 
 - **高岭土**在英国称为 **china clay**；澳大利亚的供应商以 Eckalite 的名称销售。
-- **燧石**{{en: flint}}是英国对二氧化硅的旧称。英国供应商仍把**煅烧燧石**作为单独的产品出售，所以英国配方中的“flint”多半指煅烧燧石，美国配方中的则多半指研磨的石英。两者都作为二氧化硅的来源出售；请核对化学组成。
+- **燧石**{{en: flint}}是英国对二氧化硅的旧称。英国供应商仍把**煅烧燧石**作为单独的产品出售，所以英国配方中的“flint”多半指煅烧燧石，美国配方中的则多半指研磨的石英。两者都作为二氧化硅的来源出售；要核对化学组成。
 - **康沃尔石**（英文称 china stone、Cornish stone 或 Cornwall stone）是同一种原料，与长石相关。
 - **Whiting** 即碳酸钙（方解石粉）；德国供应商称之为 Kreide（白垩）。
 
 > [!NOTE]
 > 判断一种原料，要看它提供的氧化物，不要看名称。Glazecalc 就是这样工作的：可以在[原料页面](/material)输入供应商给出的化学组成，而“**换用现有原料并比较**”“**建议用量并比较**”和“**用手头原料配制**”都是按烧后的氧化物来匹配，而不是按名称。
 
-原料也会变。Custer 长石已于 2023年停产。最初的 Gerstley Borate 矿在 1999～2000年前后关闭；Laguna 仍以这个名称销售一种产品，Gillespie Borate 是主要的替代品。对于 Gillespie 能否用量不变地直接替代 Gerstley Borate，各来源说法不一（其生产商和 Potclays 说可以，Digitalfire 等说不可以），所以请在 Glazecalc 中比较这两者，再试一小批。
+原料也会变。Custer 长石已于 2023年停产。最初的 Gerstley Borate 矿在 1999～2000年前后关闭；Laguna 仍以这个名称销售一种产品，Gillespie Borate 是主要的替代品。对于 Gillespie 能否用量不变地直接替代 Gerstley Borate，各来源说法不一（其生产商和 Potclays 说可以，Digitalfire 等说不可以），所以要在 Glazecalc 中比较这两者，再试一小批。
 
 ## 着色剂与乳浊剂 {#color}
 
@@ -254,7 +254,7 @@ Label: 常见釉面缺陷
 
 ::food-limits
 
-在美国，不用于盛放食物的器物必须带有烧制在器物上的永久标示“Not for Food Use”（非食品用），或者在盛放食物的表面上开有一个贯通的孔。欧盟在第 84/500/EEC 号指令（与食品接触的陶瓷制品）中规定了铅和镉的限量，英国在本国法律中保留了相同的数值。自 2026年5月29日起，荷兰、比利时和卢森堡允许的铅量约少 130 到 150 倍，镉量约少 15 倍。澳大利亚对进口器物设有限量；我们没有找到对澳大利亚或新西兰本土制造的器物的官方限量。
+在美国，看起来能盛放食物的装饰性陶瓷器物会被当作食品用器物对待，除非它既带有贴纸标签，又在底部压印或烧制了永久标示，例如“Not for Food Use. May Poison Food”（非食品用，可能使食物有毒），或者在盛放食物的表面上开有一个贯通的孔。欧盟在第 84/500/EEC 号指令（与食品接触的陶瓷制品）中规定了铅和镉的限量，英国在本国法律中保留了相同的数值。自 2026年5月29日起，荷兰、比利时和卢森堡允许的铅量约少 130 到 150 倍，镉量约少 15 倍。澳大利亚对进口器物设有限量；我们没有找到对澳大利亚或新西兰本土制造的器物的官方限量。
 
 ### 检测
 
@@ -283,7 +283,7 @@ FDA（美国食品药品监督管理局）说，家用拭子检测盒可以显�
 - **喷釉**使用稀得多的釉，分“若干薄层，逐渐增加厚度”施上。
 
 > [!WARNING]
-> 只能在通风的喷釉柜中喷釉，并佩戴贴合面部的防尘口罩。见[《安全配料与通风》](/guides/safe-mixing)。
+> 只能在通风的喷釉柜中喷釉，并佩戴贴合面部的防颗粒物呼吸器。见[《安全配料与通风》](/guides/safe-mixing)。
 
 釉层太厚会缩釉、起泡或流釉。供应商的经验数值，从一张信用卡的厚度到一枚美国一角硬币的厚度不等，按我们的估计，干釉层约 1 mm；用几种厚度做试片才是可靠的检验。圈足上的**隔釉剂**{{en: wax resist}}会排斥釉，这样器物就不会粘在棚板上；**棚板隔离剂**是一种耐热的涂层，常由高岭土和二氧化硅配成，保护棚板免受滴釉。
 
@@ -294,7 +294,7 @@ FDA（美国食品药品监督管理局）说，家用拭子检测盒可以显�
 **还原**{{en: reduction}}有意限制氧气，通常在气窑、柴窑或专用的窑中进行。铜变成红色，铁成为更强的熔剂，并产生**青瓷**（青绿到灰绿色，铁约 ½～2%）和**天目**（英文也拼作 temmoku；棕黑色，铁约 5～6%）。Glazy 说，青瓷和铜红釉“依赖还原”。黏土也会变化：在 Digitalfire 的一次对比中，一种炻器坯体在还原烧成中烧成灰色，在氧化烧成中烧成偏黄色。釉中的碳化硅，即使在电窑中也能造成小范围的还原。在 Orton 测温锥 010 号到 3 号的还原烧成中，Orton 推荐使用其无铁的测温锥。
 
 > [!NOTE]
-> 为气窑还原烧成写的配方，在电窑中烧出的效果会不同：依赖还原的青瓷或铜红，在氧化烧成中看起来不会一样。请查明配方是针对哪种气氛制定的，并把自己的气氛连同锥号记在 Glazecalc 配方的备注中。
+> 为气窑还原烧成写的配方，在电窑中烧出的效果会不同：依赖还原的青瓷或铜红，在氧化烧成中看起来不会一样。要查明配方是针对哪种气氛制定的，并把自己的气氛连同锥号记在 Glazecalc 配方的备注中。
 
 每台窑，包括电窑，都会放出废气，所以要给窑排风。[《安全配料与通风》](/guides/safe-mixing)说明了具体做法。
 
@@ -316,7 +316,7 @@ FDA（美国食品药品监督管理局）说，家用拭子检测盒可以显�
 : 一种很细的黏土，按 1～3% 加入，防止釉沉淀。
 
 素烧（bisque；英国：biscuit）
-: 第一次、温度较低的烧成，通常为 Orton 测温锥 08～04 号，使器物坚固但仍多孔。
+: 第一次、温度较低的烧成，通常为 Orton 测温锥 08～04 号（最常见的是 06～04 号），使器物坚固但仍多孔。
 
 硼（B₂O₃；boron）
 : 严格说是玻璃形成剂，但当作熔剂使用；从 06 号锥到 6 号锥不可缺少。
@@ -474,6 +474,7 @@ R₂O 和 RO
 - [Glazy Help: Specific gravity](https://help.glazy.org/testing/specific-gravity)
 - [Orton Ceramic Foundation: Pyrometric cone chart, °F (via The Ceramic Shop)](https://www.theceramicshop.com/technical_info/Cones/Orton-Cone-Chart-F-022-14.pdf)
 - [Digitalfire: Bisque](https://digitalfire.com/glossary/bisque)
+- [Digitalfire: Bentonite](https://digitalfire.com/material/bentonite)
 - [Digitalfire: Unity molecular formula](https://digitalfire.com/glossary/unity+molecular+formula)
 - [Digitalfire: LOI](https://digitalfire.com/glossary/loi)
 - [Digitalfire: Frit](https://digitalfire.com/glossary/frit)
@@ -489,3 +490,4 @@ R₂O 和 RO
 - [Potclays: The difference between stoneware and earthenware](https://www.potclays.co.uk/clay-questions/difference-stoneware-earthenware)
 - [US FDA: Compliance Policy Guide Sec. 545.450, Pottery (ceramics), lead contamination](https://www.fda.gov/media/71764/download)
 - [EUR-Lex: Council Directive 84/500/EEC on ceramic articles in contact with food](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:31984L0500)
+- [eCFR: 21 CFR 109.16, Ornamental and decorative ceramicware](https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-109/subpart-A/section-109.16)

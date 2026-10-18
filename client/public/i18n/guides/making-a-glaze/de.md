@@ -48,7 +48,7 @@ Label: Grundausstattung
 | Kalifeldspat{{en: potash feldspar}}            | Der, der bei Ihnen gerade erhältlich ist, etwa Mahavir in den USA                                            |
 | Nephelin-Syenit{{en: nepheline syenite}}       | Beliebig; laut Glazy mit stärkerer Flusswirkung, oft im niedrigen und mittleren Brennbereich eingesetzt      |
 | Kreide                                         | Beliebig                                                                                                     |
-| Talkum                                         | Beliebig                                                                                                     |
+| Talkum                                         | Jede asbestfreie Sorte; prüfen Sie ihr Sicherheitsdatenblatt (siehe „Sicheres Anmischen und Lüften“)         |
 | Eine Borfritte, für den mittleren Brennbereich | Ferro 3134, 3124 oder 3195; in Großbritannien Potterycrafts P3124 oder P3195                                 |
 | Bentonit und Färbemittel                       | Kleine Mengen                                                                                                |
 
@@ -211,7 +211,7 @@ Label: Wasser für ein spezifisches Gewicht
 
 **Glasurkleber CMC** (Carboxymethylcellulose) macht einen Glasurschlicker klebriger, lässt ihn langsamer trocknen und hinterlässt eine härtere Schicht, die am Stück haftet. Am wichtigsten ist er für Streichglasuren und Glasuren mit viel Fritte{{en: frit}}. Im Beispiel von Digitalfire werden 3,75 g in 1000 g Glasurschlicker eingemischt, und das muss mit einem Mixer geschehen. Eine Glasur mit CMC lässt sich mit Bittersalz nicht andicken, und weil Mikroben sich von dem Kleber ernähren, kann sie sich im Eimer verändern und anfangen zu riechen.
 
-**Bentonit**, ein sehr feiner Ton, hilft, die übrigen Teilchen in der Schwebe zu halten. Tauchglasuren verlassen sich dafür meist auf 15 bis 25 % rohen Ton. Bei einem Rezept mit wenig Ton helfen etwa 1 bis 2 % Bentonit.
+**Bentonit**, ein sehr feiner Ton, hilft, die übrigen Teilchen in der Schwebe zu halten. Tauchglasuren verlassen sich dafür meist auf 15 bis 25 % rohen Ton. Bei einem Rezept mit wenig Ton helfen etwa 1 bis 3 % Bentonit; laut Digitalfire sollte eine Glasur mit mehr als 15 % Ton nicht mehr als 1 % brauchen.
 
 ## Probeplättchen und Testreihen {#testing}
 
@@ -284,6 +284,7 @@ Label: Vorlage für Aufzeichnungen
 - [Digitalfire: Epsom salts](https://digitalfire.com/material/epsom+salts)
 - [Digitalfire: CMC gum](https://digitalfire.com/material/cmc%2Bgum)
 - [Digitalfire: Dipping glaze](https://digitalfire.com/glossary/dipping+glaze)
+- [Digitalfire: Bentonite](https://digitalfire.com/material/bentonite)
 - [Digitalfire: Water solubility](https://digitalfire.com/glossary/water+solubility)
 - [Digitalfire: Gerstley Borate](https://digitalfire.com/material/gerstley+borate)
 - [Digitalfire: Mahavir potash feldspar](https://digitalfire.com/material/mahavir+potash+feldspar)

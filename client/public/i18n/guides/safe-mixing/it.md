@@ -9,7 +9,7 @@ Nel lavoro con gli smalti{{en: glaze}} il principale pericolo a lungo termine è
 
 Respirata nel tempo, può causare la **silicosi**, una malattia polmonare che l’HSE descrive come «grave e irreversibile» e in grado di «causare invalidità permanente e morte prematura». Può causare anche la **BPCO** (broncopneumopatia cronica ostruttiva: bronchite cronica ed enfisema), che il fumo peggiora. L’IARC, l’agenzia dell’Organizzazione mondiale della sanità che si occupa di cancro, classifica la silice cristallina inalata nel gruppo 1, «cancerogeno per l’uomo».
 
-Nel forno la silice non si trasforma in fumi e uno smalto bagnato non comporta rischi per inalazione. Bisogna fare attenzione quando il materiale è secco: quando si aprono i sacchi, si pesa, si mescola la polvere nell’acqua e si puliscono gocce, nebbia di spruzzo e schizzi che, asciugandosi, sono tornati polvere.
+Nel forno la silice non si trasforma in fumi e uno smalto bagnato non comporta rischi per inalazione, a meno che non venga spruzzato: la nebbia di spruzzo contiene silice e si asciuga in polvere (vedere «Spruzzatura», più avanti). Bisogna fare attenzione quando il materiale è secco: quando si aprono i sacchi, si pesa, si mescola la polvere nell’acqua e si puliscono gocce, nebbia di spruzzo e residui di smalto che, asciugandosi, sono tornati polvere.
 
 ### Limiti di esposizione
 
@@ -67,47 +67,47 @@ Questo ordine è un nostro suggerimento, basato sul principio dell’HSE di evit
 
 ## Maschere filtranti {#respirators}
 
-Una **maschera filtrante** è una maschera certificata per filtrare le particelle fini dall’aria che si respira. Funziona solo se fa tenuta sul viso, e affianca le buone abitudini invece di sostituirle.
+Una **maschera filtrante** è una maschera certificata per filtrare le particelle fini dall’aria che si respira. Funziona solo se fa tenuta sul viso, e sostiene le buone abitudini senza sostituirle.
 
 ### Classi per area
 
-Table: Classi delle maschere filtranti antipolvere per area (equivalenze approssimative per la polvere di smalto)
-Label: Classi delle maschere
+Table: Classi di maschere filtranti antiparticolato per area (equivalenze approssimative per la polvere di smalto)
+Label: Classi di maschere
 
-| Area                      | Classe comune | Classe superiore | Cosa cercare                                                                                    |
-| ------------------------- | ------------- | ---------------- | ----------------------------------------------------------------------------------------------- |
-| Stati Uniti               | N95           | P100             | Approvazione NIOSH sulla maschera o sulla confezione                                            |
-| Regno Unito e UE          | FFP2          | FFP3             | EN 149 sulle maschere usa e getta; EN 140 sulle semimaschere riutilizzabili, con filtri P2 o P3 |
-| Australia e Nuova Zelanda | P2            | P3               | AS/NZS 1716                                                                                     |
+| Area                      | Classe comune | Classe superiore | Cosa cercare                                                                       |
+| ------------------------- | ------------- | ---------------- | ---------------------------------------------------------------------------------- |
+| Stati Uniti               | N95           | P100             | Approvazione NIOSH sulla maschera o sulla confezione                               |
+| Regno Unito e UE          | FFP2          | FFP3             | EN 149 sulle maschere monouso; EN 140 sulle semimaschere con filtri EN 143 P2 o P3 |
+| Australia e Nuova Zelanda | P2            | P3               | AS/NZS 1716                                                                        |
 
-La classe superiore filtra una quota maggiore di particelle fini. Le fonti non concordano su quanto filtri una P3 australiana (almeno il 99% oppure almeno il 99,95%), quindi acquistare la classe certificata venduta nella propria area. Una **semimaschera** riutilizzabile (che copre naso e bocca, con filtri sostituibili) dotata di filtri P100 (P3 fuori dagli Stati Uniti) è una scelta comune nei laboratori.
+La classe superiore filtra una quota maggiore di particelle fini. Le fonti non concordano su cosa filtri un P3 australiano (almeno il 99%, oppure almeno il 99,95%), quindi acquistare la classe certificata venduta nella propria area. Una **semimaschera** riutilizzabile (che copre naso e bocca, con filtri sostituibili) dotata di filtri P100 (P3 fuori dagli Stati Uniti) è una scelta comune in laboratorio.
 
 ### Aderenza e tenuta
 
-Una maschera che perde lascia entrare la polvere dai bordi, qualunque sia la sua classe. L’HSE avverte che la barba, anche di pochi giorni, «rende impossibile ottenere una buona tenuta».
+Una maschera che perde lascia entrare la polvere dai bordi, qualunque sia la sua classe. L’HSE avverte che la barba di qualche giorno e la barba «rendono impossibile ottenere una buona tenuta».
 
-- **Radersi poco prima di lavorare.** Le indicazioni non concordano su quanto debba essere recente la rasatura per un viso «ben rasato»: entro 8 ore (un produttore britannico, che cita l’HSE) o preferibilmente entro 12 (la norma australiana e neozelandese sulla prova di tenuta). Radersi poco prima di lavorare soddisfa entrambe.
-- **Se si porta la barba,** un **elettrorespiratore a filtro** non aderente (PAPR: un cappuccio o un casco con un ventilatore che fornisce aria filtrata) non richiede la tenuta sul viso.
-- **Scegliere la taglia giusta.** Una cattiva aderenza è una delle cause principali delle perdite. Nei luoghi di lavoro si usa la **prova di tenuta**, una verifica che una determinata maschera faccia tenuta su un determinato viso. In casa suggeriamo di seguire le istruzioni del produttore per controllare la tenuta ogni volta che la si indossa.
+- **Radersi poco prima di lavorare.** Le indicazioni differiscono su quanto recente debba essere la rasatura. Un produttore britannico, citando l’HSE, indica una rasatura nelle 8 ore prima dell’inizio del lavoro. La norma australiana e neozelandese per la prova di tenuta chiede di radersi prima di una prova di tenuta, «preferibilmente entro 12 ore». Radersi poco prima di lavorare soddisfa entrambe.
+- **Se si porta la barba,** un **elettrorespiratore** a vestibilità ampia (PAPR: un cappuccio o un casco con una ventola che fornisce aria filtrata) non richiede tenuta sul viso.
+- **Scegliere la taglia giusta.** Una cattiva aderenza è una delle cause principali di perdite. I luoghi di lavoro usano una **prova di tenuta**, un controllo che verifica che una certa maschera faccia tenuta su un certo viso. A casa suggeriamo di seguire le istruzioni del produttore per verificare la tenuta ogni volta che la si indossa.
 
 > [!NOTE]
-> Secondo noi l’aderenza conta più della classe: una N95, FFP2 o P2 ben aderente di solito protegge meglio di una P100 che aderisce male.
+> A nostro avviso, l’aderenza conta più della classe: una N95, FFP2 o P2 ben aderente di solito funziona meglio di una P100 allentata.
 
 ### Quando indossarla
 
-Secondo l’HSE una maschera filtrante «normalmente non è necessaria» dove pesatura e miscelazione avvengono in una cabina ventilata, ma «può essere necessaria per la manutenzione e la pulizia». La maggior parte dei laboratori domestici non ha una cabina, quindi suggeriamo di indossarne una (almeno N95, FFP2 o P2; meglio P100, FFP3 o P3) ogni volta che occorre:
+L’HSE dice che una maschera filtrante «normalmente non è necessaria» dove la pesatura e la miscelazione avvengono in una cabina ventilata, ma «può essere necessaria per la manutenzione e la pulizia». La maggior parte dei laboratori domestici non ha una cabina, quindi suggeriamo di indossarla (almeno N95, FFP2 o P2; meglio P100, FFP3 o P3) ogni volta che si:
 
-- aprire sacchi o versare polvere;
-- pesare le polveri e mescolarle nell’acqua;
-- raschiare, carteggiare o molare smalto{{en: glaze}} secco o biscotto{{en: bisque}};
-- fare qualsiasi pulizia a secco o svuotare un aspirapolvere;
-- spruzzare smalto (in una cabina: vedere sotto).
+- aprono sacchi o si versa polvere;
+- pesano polveri e si mescolano nell’acqua;
+- raschia, carteggia o macina smalto secco o biscotto;
+- fa qualsiasi pulizia a secco, o si svuota un aspirapolvere;
+- spruzza smalto (in cabina: vedere più avanti).
 
 ### Cosa non è una maschera filtrante
 
-- Le mascherine chirurgiche, le mascherine di stoffa e le mascherine per «polveri fastidiose» senza marcatura NIOSH, EN 149 o AS/NZS 1716. Non faremmo affidamento su di esse per la polvere di smalto.
-- Una maschera filtrante antipolvere «non protegge da gas, vapori» (OSHA), quindi non serve a nulla contro i fumi del forno.
-- Avere cura della propria: l’OSHA osserva che una maschera sporca o usata male «può diventare un pericolo». Conservarla pulita, lontano dagli abiti da lavoro impolverati.
+- Mascherine chirurgiche, mascherine di stoffa e maschere «per polveri moleste» senza marcatura NIOSH, EN 149 o AS/NZS 1716. Non faremmo affidamento su di esse per la polvere di smalto.
+- Una maschera filtrante antipolvere «non protegge da gas e vapori» (OSHA), quindi non serve contro i fumi del forno.
+- Averne cura: l’OSHA osserva che una maschera sporca o usata male «può diventare un pericolo». Conservarla pulita, lontano da abiti da lavoro polverosi.
 
 ## Pulizia, abiti e mani {#cleaning}
 
@@ -185,27 +185,27 @@ Il raku produce grandi quantità di fumo e di CO; l’Università dello Utah con
 
 La maggior parte dei materiali per smalti{{en: glaze}}, comprese la silice{{en: silica}}, le argille, i feldspati{{en: feldspar}} e le fritte{{en: frit}}, presenta soprattutto un pericolo legato alla polvere, che le abitudini descritte sopra tengono sotto controllo. Un gruppo più ristretto di materiali è tossico di per sé, per inalazione, ingestione o contatto con la pelle. Digitalfire aggiunge che i pigmenti{{en: stain}} sono in genere molto più sicuri degli ossidi grezzi, e che «smalti squilibrati che cedono metalli tossici si possono ottenere da qualsiasi materiale»: l’idoneità al contatto con gli alimenti{{en: food safety}} dipende dall’intera ricetta, non da un singolo ingrediente.
 
-Un **gruppo IARC** è una classificazione del rischio di cancro: il gruppo 1 significa «cancerogeno per l’uomo», il gruppo 2A «probabilmente cancerogeno», mentre i gruppi 2B e 3 indicano prove più deboli.
+Un **gruppo IARC** è una classificazione del rischio di cancro: il gruppo 1 significa «cancerogeno per l’uomo», il gruppo 2A «probabilmente cancerogeno per l’uomo», il gruppo 2B «possibilmente cancerogeno per l’uomo» e il gruppo 3 «non classificabile quanto alla sua cancerogenicità per l’uomo», il che significa che le prove sono troppo scarse per giudicare in un senso o nell’altro.
 
 Table: Materiali per smalti che richiedono particolare attenzione
 Label: Materiali che richiedono più attenzione
 
-| Materiale                                                     | Pericolo                                                                                                                                                                                                          | Precauzione                                                                                                                             |
-| ------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| Composti del piombo e fritte piombiche                        | «Altamente tossici per inalazione o ingestione»; vaporizzano a temperature del forno più basse.                                                                                                                   | Evitare; secondo Digitalfire, solo per esperti. Presumere che contenga piombo ogni smalto non etichettato «senza piombo» o «apiombico». |
-| Carbonato di bario                                            | Insolubile in acqua ma si scioglie nell’acido dello stomaco; colpisce cuore e muscoli (battito irregolare, potassio basso).                                                                                       | Una fritta al bario o lo stronzio dove la ricetta lo consente; maschera filtrante; contenitore etichettato.                             |
-| Biossido di manganese                                         | La polvere o i fumi possono causare il **manganismo**, una malattia del sistema nervoso simile al morbo di Parkinson, di solito dopo 1–3 anni di esposizione. I fumi possono causare la febbre da fumi metallici. | Al suo posto, pigmenti neri a basse percentuali; aerare il forno.                                                                       |
-| Dicromato di potassio e ossido di cromo                       | Il cromo(VI), come nel dicromato, è nel gruppo 1 IARC. Questa classificazione non riguarda il cromo(III), come nell’ossido di cromo.                                                                              | Evitare il dicromato. Consideriamo l’ossido di cromo molto meno pericoloso, ma limitarne la polvere.                                    |
-| Cobalto                                                       | Sali solubili di cobalto(II): IARC 2A; ossido di cobalto(II): 2B; Co₃O₄ nero: gruppo 3.                                                                                                                           | Limitare la polvere; pigmenti per i neri.                                                                                               |
-| Composti del nichel                                           | Tra i cancerogeni noti o probabili per l’uomo elencati dall’Università dello Utah.                                                                                                                                | Pigmenti anziché percentuali alte.                                                                                                      |
-| Cadmio e selenio, grezzi o nei pigmenti                       | I composti del cadmio sono tra i cancerogeni noti o probabili per l’uomo elencati dall’Università dello Utah.                                                                                                     | «Solo da parte di esperti» (Digitalfire); leggere la SDS di ogni pigmento.                                                              |
-| Antimonio e vanadio                                           | Antimonio trivalente (come nel triossido di antimonio): IARC 2A; vanadio «altamente tossico per inalazione».                                                                                                      | Vanadio solo per esperti; limitare la polvere di antimonio.                                                                             |
-| Rame e zinco                                                  | I fumi del forno possono causare la febbre da fumi metallici; l’ossido di zinco non calcinato «in genere non è considerato pericoloso».                                                                           | Aerare il forno.                                                                                                                        |
-| Carbonato di litio                                            | «Altamente tossico per inalazione». Un comitato di esperti dell’UE ha concluso che può nuocere alla fertilità e al feto; l’adozione formale non risultava confermata quando abbiamo verificato.                   | Guanti e maschera filtrante; tenere lontano dai bambini. Suggeriamo particolare attenzione in gravidanza.                               |
-| Borace e acido borico                                         | Classificati nell’UE come «può nuocere alla fertilità; può nuocere al feto».                                                                                                                                      | Guanti; boro da una fritta quando possibile.                                                                                            |
-| Carbonato di sodio, carbonato di potassio, feldspati alcalini | Irritanti per la pelle.                                                                                                                                                                                           | Guanti.                                                                                                                                 |
-| Fluorite, criolite, lepidolite                                | In cottura liberano gas contenenti fluoro; la fluorite irrita anche la pelle.                                                                                                                                     | Aerare il forno verso l’esterno; guanti.                                                                                                |
-| Talco                                                         | IARC 2A da luglio 2024; il talco contaminato da amianto conta come amianto, gruppo 1.                                                                                                                             | Talco lamellare (non fibroso) e privo di amianto; controllarne la SDS.                                                                  |
+| Materiale                                                     | Pericolo                                                                                                                                                                                                                                                                                         | Precauzione                                                                                                                             |
+| ------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------- |
+| Composti del piombo e fritte piombiche                        | «Altamente tossici per inalazione o ingestione»; vaporizzano nel forno a temperature più basse della maggior parte dei materiali per smalti.                                                                                                                                                     | Evitare; secondo Digitalfire, solo per esperti. Presumere che contenga piombo ogni smalto non etichettato «senza piombo» o «apiombico». |
+| Carbonato di bario                                            | Insolubile in acqua ma si scioglie nell’acido dello stomaco; colpisce cuore e muscoli (battito irregolare, potassio basso).                                                                                                                                                                      | Una fritta al bario o lo stronzio dove la ricetta lo consente; maschera filtrante; contenitore etichettato.                             |
+| Biossido di manganese                                         | La polvere o i fumi possono causare il **manganismo**, una malattia del sistema nervoso simile al morbo di Parkinson, di solito dopo 1–3 anni di esposizione. I fumi possono causare la febbre da fumi metallici.                                                                                | Al suo posto, pigmenti neri a basse percentuali; aerare il forno.                                                                       |
+| Dicromato di potassio e ossido di cromo                       | Il cromo(VI), come nel dicromato, è nel gruppo 1 IARC. Questa classificazione non riguarda il cromo(III), come nell’ossido di cromo.                                                                                                                                                             | Evitare il dicromato. Consideriamo l’ossido di cromo molto meno pericoloso, ma limitarne la polvere.                                    |
+| Cobalto                                                       | Sali solubili di cobalto(II): IARC 2A; ossido di cobalto(II): 2B; Co₃O₄ nero: gruppo 3. Il carbonato di cobalto è classificato nell’UE come sostanza che può provocare il cancro se inalata, può nuocere alla fertilità ed è sospettata di provocare alterazioni genetiche (H350i, H360F, H341). | Limitare la polvere; pigmenti per i neri.                                                                                               |
+| Composti del nichel                                           | Tra i cancerogeni noti o probabili per l’uomo elencati dall’Università dello Utah.                                                                                                                                                                                                               | Pigmenti anziché percentuali alte.                                                                                                      |
+| Cadmio e selenio, grezzi o nei pigmenti                       | I composti del cadmio sono tra i cancerogeni noti o probabili per l’uomo elencati dall’Università dello Utah.                                                                                                                                                                                    | «Solo da parte di esperti» (Digitalfire); leggere la SDS di ogni pigmento.                                                              |
+| Antimonio e vanadio                                           | Antimonio trivalente (come nel triossido di antimonio): IARC 2A; vanadio «altamente tossico per inalazione».                                                                                                                                                                                     | Vanadio solo per esperti; limitare la polvere di antimonio.                                                                             |
+| Rame e zinco                                                  | I fumi del forno possono causare la febbre da fumi metallici; l’ossido di zinco non calcinato «in genere non è considerato pericoloso».                                                                                                                                                          | Aerare il forno.                                                                                                                        |
+| Carbonato di litio                                            | «Altamente tossico per inalazione». Un comitato di esperti dell’UE ha concluso che può nuocere alla fertilità, al feto e ai bambini allattati al seno; l’adozione formale non risultava confermata quando abbiamo verificato.                                                                    | Guanti e maschera filtrante; tenere lontano dai bambini. Suggeriamo particolare attenzione in gravidanza e durante l’allattamento.      |
+| Borace e acido borico                                         | Classificati nell’UE come «può nuocere alla fertilità; può nuocere al feto».                                                                                                                                                                                                                     | Guanti; boro da una fritta quando possibile.                                                                                            |
+| Carbonato di sodio, carbonato di potassio, feldspati alcalini | Irritanti per la pelle.                                                                                                                                                                                                                                                                          | Guanti.                                                                                                                                 |
+| Fluorite, criolite, lepidolite                                | In cottura liberano gas contenenti fluoro; la fluorite irrita anche la pelle.                                                                                                                                                                                                                    | Aerare il forno verso l’esterno; guanti.                                                                                                |
+| Talco                                                         | IARC 2A da luglio 2024; il talco contaminato da amianto conta come amianto, gruppo 1.                                                                                                                                                                                                            | Talco lamellare (non fibroso) e privo di amianto; controllarne la SDS.                                                                  |
 
 Borace, acido borico, carbonato di sodio e carbonato di potassio si sciolgono in acqua, quindi li consideriamo quelli che più facilmente vengono assorbiti attraverso la pelle lesa o ingeriti con le mani non lavate.
 
@@ -267,6 +267,8 @@ Queste sono le fonti primarie che vale di più la pena leggere. La maggior parte
 - [IARC: Monographs Volume 100C](https://publications.iarc.who.int/120)
 - [IARC: Volume 131, Cobalt, antimony compounds and weapons-grade tungsten alloy](https://monographs.iarc.who.int/news-events/volume-131-cobalt-antimony-compounds-and-weapons-grade-tungsten-alloy)
 - [Science Media Centre Spain: IARC classifies talc (2024)](https://sciencemediacentre.es/en/node/3775)
+- [ECHA: Risk Assessment Committee opinion on lithium carbonate, chloride and hydroxide (2021, PDF)](https://echa.europa.eu/documents/10162/e2a3c38e-85fe-505c-a325-293c70a74da5)
+- [PubChem: Cobalt carbonate, GHS classification, including its EU harmonised one](https://pubchem.ncbi.nlm.nih.gov/compound/10565#section=GHS-Classification)
 - [ECHA: Risk Assessment Committee document on boric acid and borates](https://echa.europa.eu/documents/10162/7d740d8c-5cd5-872b-5da2-e549983a9ff9)
 - [Coslaw: EU introduces new CMR classifications under the 24th ATP to the CLP Regulation](https://coslaw.eu/eu-introduces-new-cmr-classifications-under-the-24th-atp-to-the-clp-regulation/)
 - [University of Utah EHS: Arts safety: ceramics](https://www.ehs.utah.edu/guidelines/arts-safety-ceramics/)
@@ -275,6 +277,7 @@ Queste sono le fonti primarie che vale di più la pena leggere. La maggior parte
 - [Digitalfire: Kiln fumes](https://digitalfire.com/glossary/kiln+fumes)
 - [Digitalfire: Barium and compounds toxicology](https://digitalfire.com/hazard/barium+and+compounds+toxicology)
 - [Digitalfire: Manganese inorganic compounds toxicology](https://digitalfire.com/hazard/manganese+inorganic+compounds+toxicology)
+- [JSP: What levels of protection do particulate filters provide?](https://jspsafety.helpjuice.com/en_GB/what-levels-of-protection-do-particulate-filters-provide)
 - [JSP: Why is a clean shave essential for a proper tight-fitting respirator seal?](https://jspsafety.helpjuice.com/en_GB/why-is-a-clean-shave-essential-for-a-proper-tight-fitting-respirator-seal-can-i-have-a-beard)
 - [Skutt: Kiln room design and product specifications](https://cdn.shopify.com/s/files/1/0889/3726/7497/files/Designing-A-Kiln-Room-1.pdf)
 - [CIRMA: Kiln safety bulletin (2025)](https://downloads.ccm-ct.org/pdf/Media-Library-Bulletins/KilnSafety-Bulletin-052825.pdf)

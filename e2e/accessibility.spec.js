@@ -4,9 +4,22 @@
 // how a screen reader words things still need a person.
 const { test, expect } = require('@playwright/test');
 const { default: AxeBuilder } = require('@axe-core/playwright');
-const { API, addColorant, addStandardMaterial, confirmedAccount, signUpAndSignIn, totp } = require('./helpers');
+const {
+  API,
+  addColorant,
+  addStandardMaterial,
+  confirmedAccount,
+  signUpAndSignIn,
+  startTrial,
+  totp
+} = require('./helpers');
 
 const WCAG = ['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'wcag22aa'];
+
+// A long file, its tests apart from each other: they spread over the workers
+// instead of running one after another in one.
+test.describe.configure({ mode: 'parallel' });
+
 // Landmarks and headings, which axe tags as best practice rather than WCAG: one main
 // landmark with all the content in landmarks, one h1, and no heading levels skipped.
 const STRUCTURE = Object.fromEntries(
@@ -37,28 +50,44 @@ const PUBLIC_PAGES = [
   '/about',
   ...GUIDES,
   '/privacy',
+  '/assistants',
   '/signin',
   '/signup',
   '/forgot',
   '/no-such-page'
 ];
-const APP_PAGES = ['/home', '/material', '/additive', '/firing', '/notes', '/advice', '/account', '/trash'];
+const APP_PAGES = [
+  '/home',
+  '/material',
+  '/additive',
+  '/firing',
+  '/notes',
+  '/advice',
+  '/account',
+  '/trash',
+  '/import',
+  '/blends'
+];
 
 // The palettes in Settings, light and dark: contrast of buttons, links, tabs and choices.
-test('every palette, light and dark', async ({ page }) => {
-  test.setTimeout(120000);
-  await signUpAndSignIn(page);
+// One test a palette, so each stays well inside its time as the pages grow.
+test.describe('every palette, light and dark', () => {
   for (const palette of ['tenmoku', 'celadon', 'cobalt', 'oxblood', 'shino', 'ash']) {
-    for (const theme of ['light', 'dark']) {
-      const res = await page.request.put(API + '/preferences', { data: { palette, theme } });
-      expect(res.ok()).toBe(true);
-      for (const path of ['/recipe', '/account']) {
-        await page.goto(path);
-        await expect(page.locator('html')).toHaveAttribute('data-theme', theme);
-        await expect(page.locator('h1')).toBeVisible();
-        await expectNoProblems(page, palette + ' ' + theme + ' ' + path);
+    test(palette, async ({ page }) => {
+      // Four pages, each checked whole: more than the default 30 seconds on a busy machine.
+      test.setTimeout(60000);
+      await signUpAndSignIn(page);
+      for (const theme of ['light', 'dark']) {
+        const res = await page.request.put(API + '/preferences', { data: { palette, theme } });
+        expect(res.ok()).toBe(true);
+        for (const path of ['/recipe', '/account']) {
+          await page.goto(path);
+          await expect(page.locator('html')).toHaveAttribute('data-theme', theme);
+          await expect(page.locator('h1')).toBeVisible();
+          await expectNoProblems(page, palette + ' ' + theme + ' ' + path);
+        }
       }
-    }
+    });
   }
 });
 
@@ -139,8 +168,9 @@ for (const colorScheme of ['light', 'dark']) {
     });
 
     test('a trial', async ({ page }) => {
-      await page.goto('/');
-      await page.locator('.hero-actions').getByRole('button', { name: 'Try it now' }).click();
+      // Several pages or checks of a whole page: more than the default 30 seconds on a busy machine.
+      test.setTimeout(60000);
+      await startTrial(page);
       await expect(page.locator('.trial-bar')).toBeVisible();
       await expectNoProblems(page, colorScheme + ' trial /recipe');
       await page.locator('.trial-bar').getByRole('button', { name: 'Discard trial' }).click();

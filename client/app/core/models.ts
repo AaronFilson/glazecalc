@@ -1,4 +1,6 @@
 import type { MaterialField, UmfResult } from '../../../lib/chemistry';
+import type { FiringBand } from '../../../lib/recipe/limits';
+import type { FiringBlock } from '../../../lib/cones/firing';
 
 /** Records the server stores per user; 'Standard' marks built-in records. */
 export interface Owned {
@@ -105,6 +107,22 @@ export interface Recipe extends Owned {
   computed?: RecipeAnalysis[] | RecipeAnalysis;
   /** Whether the unity formula counts the additives too. */
   includeAdditives?: boolean;
+  /** The firing it is for, as a band (lib/recipe/limits.js): cone 06-02, cone 4-6 or cone 9-11; null clears it. */
+  firing?: FiringBand | null;
+  /** The specific gravity its glaze is mixed to, 1 to 2.5, set from the SG calculator; null clears it. */
+  sgTarget?: number | null;
+  /** The firing as stated (lib/cones/firing.js): none or null is not stated. */
+  firedAt?: FiringBlock | null;
+  /** For a food surface (a liner); the safety note follows it. */
+  foodSurface?: boolean | null;
+  /** The firing logs it went through, each with its result. */
+  firings?: FiringLink[];
+}
+
+/** A recipe's link to a firing log, by the log's id, with what came of it there. */
+export interface FiringLink {
+  firing: string;
+  result?: string;
 }
 
 export interface Advice extends Owned {

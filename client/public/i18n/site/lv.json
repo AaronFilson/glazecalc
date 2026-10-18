@@ -57,9 +57,13 @@
     "stackServer": "TypeScript API uz Node.js 24 un Express 5 ar MongoDB 9, ko pārbauda vairāk nekā 350 automātisko testu.",
     "stackHosting": "Darbojas Docker vidē Amazon Web Services platformā aiz nginx ar HTTPS no Let’s Encrypt.",
     "stackDeploy": "Izvietošanu veic GitHub Actions: pēc katras izmaiņas konteineru attēlus izveido un pārbauda, un izvietošanas laikā pierakstās AWS bez saglabātām atslēgām.",
+    "creditsHeading": "Pateicības",
+    "credits": "Stala diagrammas apgabali ir ņemti no Glazy veiktās R. T. Stala (R. T. Stull) 1912. gada diagrammas interpretācijas, kuras autors ir Dereks Au (Derek Au) (Copyright (c) 2017 Derek Au, MIT licence). <notices>Pilns paziņojums</notices> ir pirmkodā.",
     "whoHeading": "Kas to izveidoja",
     "who": "Lietotni Glazecalc veido Ārons Filsons (Aaron Filson). Vai atradāt problēmu vai jums ir ideja? <issues>Izveidojiet pieteikumu vietnē GitHub</issues>.",
-    "studio": "Ārona Filsona ar rokām darinātā keramika ir apskatāma darbnīcā <studio>Updraft Pottery Studio</studio> Takomā, Vašingtonas štatā. Aplūkojiet darbus un pasūtiet kādu, ja tas jūs uzrunā."
+    "studio": "Ārona Filsona ar rokām darinātā keramika ir apskatāma darbnīcā <studio>Updraft Pottery Studio</studio> Takomā, Vašingtonas štatā. Aplūkojiet darbus un pasūtiet kādu, ja tas jūs uzrunā.",
+    "languagesHeading": "Valodas",
+    "languages": "Lietotne Glazecalc ir pieejama šajās valodās. Katra saite atver šo lapu attiecīgajā valodā."
   },
   "privacy": {
     "title": "Privātums",
@@ -71,9 +75,15 @@
     "contact": "Lai uzdotu jautājumu par saviem datiem vai izmantotu kādu no savām tiesībām, rakstiet uz <mail>privacy@glazecalcapp.com</mail>. Varat arī <issues>izveidot pieteikumu vietnē GitHub</issues>, taču pieteikumi ir publiski: nekad nenorādiet tajos savu e-pasta adresi vai kaut ko personisku. Lielāko daļu darbību ar saviem datiem varat veikt patstāvīgi savā <account>konta lapā</account>.",
     "storedHeading": "Ko glabājam un kāpēc",
     "storedAccount": "<b>Jūsu konts:</b> jūsu e-pasta adrese un parole, kas tiek glabāta tikai kā vienvirziena jaucējvērtība (bcrypt), nekad kā pati parole. Kopā ar to glabājas jūsu iestatījumi (piemēram, valoda, reģions un mērvienības) un jūsu krājumu saraksts. Kontam ir vajadzīga e-pasta adrese, lai pierakstītos un atiestatītu aizmirstu paroli. Kad izveidojat kontu, uz adresi tiek nosūtīta saite, lai apstiprinātu, ka tā ir jūsu; līdz tam uz to sūta e-pasta vēstules tikai tad, kad to lūdzat, piemēram, paroles atiestatīšanai.",
+    "storedPrices": "<b>Cenas, ja tās norādāt:</b> cik maksājat par katru izejvielu, par kilogramu, un valūta, kurā tās norādītas, lai aprēķinātu porcijas izmaksas. Tie ir uzņēmējdarbības dati, kas glabājas kopā ar jūsu kontu un ir privāti: tie nekad nav receptes daļa, tāpēc nekas, ko kopīgojat, tos neparāda. Funkcija Lejupielādēt manus datus tos ietver, un, dzēšot kontu, tie tiek izdzēsti. Izmēģinājuma cenas kopā ar tā ierakstiem pārceļas uz jūsu kontu izejvielām, kurām cena vēl nav norādīta, ja abas ir vienā valūtā.",
     "storedEmailChange": "<b>E-pasta adreses maiņa:</b> datums, kad jūsu adrese pēdējoreiz mainīta, lai pieprasījumu izslēgt divpakāpju pierakstīšanos nepieņemtu no jaunas adreses 30 dienas pēc maiņas.",
     "storedSignIn": "<b>Divpakāpju pierakstīšanās, ja to ieslēdzat:</b> vai tā ir ieslēgta; atslēga, ko jūsu autentifikatora lietotne kopīgo ar Glazecalc, šifrēta; par katru piekļuves atslēgu tās publiskā atslēga (ar kuru vien pierakstīties nevar), ID un dati, ko tai piešķir jūsu ierīce, jūsu dotais nosaukums, kā arī tās pievienošanas un pēdējās izmantošanas laiks; jūsu atkopšanas kodi, tikai kā atslēgota vienvirziena jaucējvērtība, lai neviens tos nevarētu atkal nolasīt; un, ja kāds ievada jūsu paroli, bet nepabeidz otro soli, kad Glazecalc jums par to pēdējoreiz sūtīja e-pastu (ne biežāk kā reizi dienā). Kamēr pierakstāties, starp paroli un otro soli, serveris 5 minūtes glabā pierakstīšanās ierakstu, bet lapa tikai savā atmiņā tur īsu marķieri: nekādas jaunas sīkdatnes, nekā jūsu pārlūkprogrammas krātuvē.",
-    "storedSaved": "<b>Tas, ko saglabājat:</b> jūsu receptes, izejvielas, piedevas, piezīmes, apdedzināšanas žurnāli un padomi, tādi, kādus tos uzrakstījāt. Tos varat redzēt tikai jūs: starp lietotājiem nekas netiek kopīgots.",
+    "storedSaved": "<b>Ko saglabājat:</b> jūsu receptes, izejvielas, piedevas, piezīmes, apdedzināšanas žurnāli un padomi tādi, kādus tos uzrakstījāt. Tos redz tikai jūs, ja vien recepti nekopīgojat ar saiti.",
+    "storedTrash": "<b>Atkritne un iepriekšējās versijas:</b> tas, ko noņemat no saraksta, gaida atkritnē veselā veidā, lai to varētu atjaunot; un katras saglabātās ieraksta izmaiņas saglabā ierakstu tādu, kāds tas bija tieši pirms tam, lai izmaiņas varētu atsaukt.",
+    "storedShares": "<b>Receptes, ko kopīgojat ar saiti, ja tādas kopīgojat:</b> kura recepte, kad izveidota tās saite un vai tā rāda receptes piezīmes, kopā ar saites vienvirziena jaucējvērtību (nekad ne pašu saiti). Ikviens, kam ir saite, redz recepti tādu, kāda tā ir tagad, ar tās Zēgera formulu un piezīmēm, ja izvēlējāties tās rādīt; nekad ne jūsu e-pasta adresi, kontu vai cenas. Kopīgotās receptes tiek turētas ārpus meklētājprogrammām, un saite nekad nenonāk servera žurnālfailos. Lai apturētu ļaunprātīgu izmantošanu, no katras IP adreses atvērtās kopīgotās receptes tiek skaitītas atmiņā 15 minūtes. Izmēģinājums nevar kopīgot.",
+    "storedTokens": "<b>Piekļuves marķieri un pievienotās lietotnes, ja tos izveidojat vai apstiprināt:</b> par katru – tā nosaukums, ko tas drīkst darīt, marķiera vienvirziena jaucējvērtība (nekad ne pats marķieris) un tā pēdējās 4 rakstzīmes, kā arī kad tas izveidots, pēdējoreiz izmantots, kad beidzas tā derīgums un kad tas anulēts.",
+    "storedActivity": "<b>Ko darīja marķieri un lietotnes:</b> rinda par katru ierakstu, ko piekļuves marķieris vai pievienota lietotne izveidoja, mainīja, pārvietoja uz atkritni, atjaunoja vai atsauca: kad, kurš marķieris vai lietotne, ko tā darīja un ieraksta nosaukums, saīsināts. Nekad ne piezīmes teksts vai kas cits ierakstā. Izmaiņas, ko veicat tīmekļa vietnē, netiek uzskaitītas.",
+    "storedLimits": "<b>Biežuma ierobežojumi:</b> lai apturētu minēšanu un nekontrolētus skriptus, tiek skaitīti pierakstīšanās mēģinājumi, reģistrācijas, atiestatīšanas pieprasījumi un izmēģinājumi pēc IP adreses vai konta, nederīgi piekļuves marķieri pēc IP adreses, pieprasījumi, kas veikti ar piekļuves marķieriem, pēc konta (120 minūtē un 5000 dienā), ieraksti, ko katrs piekļuves marķieris pārvieto uz atkritni, pēc marķiera, atvērtas kopīgotās receptes un kopīgošanas saites, kas neko neatver, pēc IP adreses, kā arī pieprasījumi mākslīgā intelekta asistentu rīkiem (MCP): 60 minūtē un 2000 dienā pēc IP adreses vai 120 minūtē un 5000 dienā pēc konta, kad tiek izmantots piekļuves marķieris, ar ne vairāk kā 10 aizstāšanām vai atbilstībām minūtē.",
     "storedTrial": "<b>Izmēģinājums (“Izmēģināt tūlīt”):</b> nav ne e-pasta adreses, ne paroles, tikai izdomāts vārds, piemēram, “speckled quiet kilns”. Ja izmēģinājuma laikā tajā pašā pārlūkprogrammā pierakstāties kontā, izmēģinājumā izveidotais tiek pārnests uz kontu.",
     "storedResets": "<b>Paroles atiestatīšanas un e-pasta saites:</b> kurš konts to pieprasīja un kad, adrese, uz kuru nosūtīta adreses apstiprināšanas saite, un katras saites nospiedums (nevis pati saite).",
     "storedLogs": "<b>Žurnālfaili:</b> tīmekļa serveris reģistrē katru pieprasījumu: jūsu IP adresi, laiku, pieprasīto lapu un jūsu pārlūkprogrammas nosaukumu. Lietotne reģistrē kļūdas kopā ar lapu, kurā tās radās, bet nekad ne jūsu e-pasta adresi.",
@@ -96,6 +106,11 @@
     "choiceNoWarranty": "Glazecalc tiek nodrošināts “tāds, kāds tas ir”, bez garantijas. Tā uzturētāji neuzņemas nekādu atbildību vai juridiskas saistības par jūsu lēmumu izveidot kontu vai par to, kur glabājas tā dati.",
     "keptHeading": "Glabāšanas ilgums",
     "keptAccount": "<b>Jūsu konts un tas, ko saglabājat:</b> līdz brīdim, kad tos dzēšat. Kontus nedzēš tāpēc, ka tie netiek izmantoti.",
+    "keptTrash": "<b>Atkritne un iepriekšējās versijas:</b> noņemts ieraksts – 30 dienas pēc noņemšanas vai līdz brīdim, kad to neatgriezeniski izdzēšat vai iztukšojat atkritni; iepriekšējās versijas – 90 dienas, un tikai pēdējās 20 katram ierakstam (un tā, kas bija pirms piekļuves marķiera izmaiņām), bet nekad ne ilgāk par pašu ierakstu: kamēr ieraksts ir atkritnē, tā versijas pazūd kopā ar to. Abi pazūd uzreiz, kad izdzēšat kontu.",
+    "keptShares": "<b>Kopīgošanas saites:</b> līdz brīdim, kad beidzat kopīgot recepti, izveidojat tai jaunu saiti, pārvietojat to uz atkritni vai izdzēšat kontu. Receptes atjaunošana no atkritnes to atkal nekopīgo. Paroles atiestatīšana vai izrakstīšanās visur apstādina arī visas jūsu saites; paroles maiņa – nē.",
+    "keptTokens": "<b>Piekļuves marķieri un pievienotās lietotnes:</b> katrs – līdz 30 dienām pēc derīguma beigām (katram derīgums beidzas ne vēlāk kā gada laikā) vai līdz brīdim, kad izdzēšat kontu. Paroles atiestatīšana vai Izrakstīties visās ierīcēs tos visus apstādina uzreiz.",
+    "keptActivity": "<b>Ko darīja marķieri un lietotnes:</b> 90 dienas vai līdz brīdim, kad izdzēšat kontu.",
+    "keptLimits": "<b>Biežuma ierobežojumi:</b> skaitļi tiek glabāti tikai servera atmiņā, no 1 minūtes līdz 24 stundām, un tiek zaudēti, kad serveris restartējas.",
     "keptTrial": "<b>Izmēģinājums:</b> 14 dienas no tā sākuma, pēc tam to dzēš kopā ar visu tā saturu, ja vien neizveidojat kontu, lai to saglabātu.",
     "keptResets": "<b>Paroles atiestatīšanas un e-pasta saites:</b> atiestatīšanas saite ir derīga 30 minūtes, un tās ieraksts tiek dzēsts pēc apmēram stundas; adreses apstiprināšanas saite ir derīga un tiek glabāta 24 stundas.",
     "keptSignIn": "<b>Divpakāpju pierakstīšanās:</b> katra autentifikatora lietotne, piekļuves atslēga un atkopšanas kodu kopa tiek glabāta, līdz to noņemat, izslēdzat divpakāpju pierakstīšanos vai dzēšat savu kontu. Pierakstīšanās, kas gaida otro soli, tiek dzēsta pēc 5 minūtēm, bet lietotne vai piekļuves atslēga, ko sākāt pievienot, bet nepabeidzāt, ne vēlāk kā pēc 10 minūtēm.",
@@ -113,7 +128,7 @@
     "rightsAsk": "Visos citos jautājumos, piemēram, lai lūgtu nelietot jūsu datus, kamēr tiek labota kļūda, vai lai iebilstu pret to izmantošanu, rakstiet uz <mail>privacy@glazecalcapp.com</mail>. Tas ir bez maksas, un atbildi saņemsiet mēneša laikā. Jums lūgs tikai pierādīt, ka konts ir jūsu, pierakstoties vai atverot saiti, kas nosūtīta uz tā adresi, bet nekad – uzrādīt personu apliecinošu dokumentu.",
     "rightsComplain": "Ja kaut kas jūs neapmierina, varat iesniegt sūdzību datu aizsardzības uzraudzības iestādē: ES – <edpb>savas valsts iestādē</edpb>, Apvienotajā Karalistē – <ico>Information Commissioner’s Office</ico>.",
     "storageHeading": "Sīkdatnes un pārlūkprogrammas krātuve",
-    "storageIntro": "Glazecalc iestata vienu sīkdatni un glabā dažas nelielas vērtības jūsu pārlūkprogrammā. Katra no tām ir vajadzīga kaut kam, ko pieprasījāt: pierakstīšanās saglabāšanai vai jūsu izvēles atcerēšanai. Neviena no tām jūs neizseko un netiek kopīgota, tāpēc likums neprasa vispirms lūgt piekrišanu, un sīkdatņu paziņojuma nav.",
+    "storageIntro": "Lietotne Glazecalc iestata divas sīkdatnes, otro tikai tad, kad pierakstāties ar Google vai GitHub, un glabā dažas mazas vērtības jūsu pārlūkprogrammā. Katra ir tur kaut kā dēļ, ko jūs pieprasījāt: lai pierakstīšanās saglabātos, lai pierakstītos ar Google vai GitHub vai lai atcerētos jūsu izvēli. Neviena jūs neizseko, un nevienu nekopīgo, tāpēc likums neprasa jautāt iepriekš, un sīkdatņu joslas nav.",
     "storageLabel": "Sīkdatnes un pārlūkprogrammas krātuve",
     "storageName": "Nosaukums",
     "storagePurpose": "Mērķis",
@@ -152,7 +167,7 @@
         "lasts": "Līdz notīrāt pārlūkprogrammas krātuvi."
       },
       "print": {
-        "purpose": "Jūsu pēdējās receptes drukāšanas izvēles: visa recepte vai porcija, un porcijas lielums.",
+        "purpose": "Jūsu pēdējās izvēles, drukājot recepti: visa recepte, porcija vai darba lapa un porcijas lielums.",
         "lasts": "Līdz notīrāt pārlūkprogrammas krātuvi."
       },
       "token": {
@@ -166,12 +181,19 @@
       "reloadedFor": {
         "purpose": "Pēc jaunas vietnes versijas izlaišanas – kura lapa tika pārlādēta un kad, lai lapa tiktu pārlādēta ne biežāk kā reizi minūtē.",
         "lasts": "Līdz aizverat cilni."
+      },
+      "oauthCookie": {
+        "purpose": "Tikai tad, kad pierakstāties ar Google vai GitHub: tā saista pakalpojuma atbildi ar jūsu pārlūkprogrammu, lai neviens cits nevarētu pabeigt jūsu pierakstīšanos vai to sākt jūsu vietā. Lapas skripti to nevar nolasīt.",
+        "lasts": "Tiek iestatīta, kad nospiežat Turpināt ar Google vai Turpināt ar GitHub vai saistāt vienu no tiem sava konta lapā. Tiek noņemta, kad pierakstīšanās beidzas, vai pēc 10 minūtēm."
       }
     },
     "childrenHeading": "Bērni",
     "children": "Glazecalc ir rīks keramiķiem un nav paredzēts bērniem.",
     "changesHeading": "Izmaiņas",
-    "changes": "Ja šis paziņojums mainās, mainās arī datums lapas augšdaļā."
+    "changes": "Ja šis paziņojums mainās, mainās arī datums lapas augšdaļā.",
+    "storedProviders": "<b>Google vai GitHub, ja pierakstāties ar vienu no tiem:</b> pakalpojuma piešķirtais jūsu ID (skaitlis vai kods, kas nekad nemainās), kad to sasaistījāt un kad pēdējoreiz ar to pierakstījāties, kā arī tas, vai jūsu kontam ir sava parole. Nekas cits no pakalpojuma netiek glabāts: ne jūsu vārds, ne attēls, ne jebkāda atslēga uz jūsu kontu tur. Kamēr pierakstāties, serveris glabā pierakstīšanās piezīmi ar e-pasta adresi, ko pakalpojums norāda kā jūsu, kad tā ir vajadzīga: jaunam kontam, kur tā kļūst par konta e-pasta adresi, vai, ja Glazecalc kontam jau ir šī e-pasta adrese, lai pakalpojumu ar to sasaistītu, kad pierakstīsities šajā kontā. Piezīme un tajā esošā e-pasta adrese tiek izdzēsta apmēram 10 minūšu laikā.",
+    "providers": "<b>Pierakstīšanās ar Google vai GitHub</b> ir jūsu izvēle, un tā notiek tikai tad, kad nospiežat attiecīgo pogu. Pēc tam jūsu pārlūkprogramma dodas uz Google vai GitHub, kas nosūta lietotnei Glazecalc jums piešķirto ID un jūsu e-pasta adresi. Katrs ir atsevišķs uzņēmums, kas atbild par to, ko ar to kopīgojat, saskaņā ar savu privātuma politiku. Neviens skripts vai attēls no tiem Glazecalc lapās netiek ielādēts.",
+    "keptProviders": "<b>Google vai GitHub:</b> katra sasaiste, līdz brīdim, kad to atsaistāt vai izdzēšat kontu. Notiekoša pierakstīšanās tiek izdzēsta pēc 10 minūtēm."
   },
   "notFound": {
     "heading": "Lapa nav atrasta",
@@ -194,8 +216,35 @@
     "titleMissing": "Ievadiet padoma virsrakstu.",
     "contentMissing": "Uzrakstiet padomu.",
     "fetchFailed": "Ielādējot padomus, radās kļūda.",
-    "standardFetchFailed": "Ielādējot padomus no servera, radās kļūda.",
     "saved": "Padoms ir pievienots.",
     "saveFailed": "Iesniedzot padomu, radās kļūda."
+  },
+  "assistants": {
+    "title": "Glazecalc lietošana ar mākslīgā intelekta asistentu",
+    "lead": "Mākslīgā intelekta asistenti, piemēram, Claude, GitHub Copilot, Cursor un Gemini, var tieši izmantot Glazecalc aprēķinus, izmantojot Model Context Protocol (MCP).",
+    "whatHeading": "Ko tas var",
+    "what": "Bez konta asistents var meklēt izejvielas bibliotēkā, aprēķināt receptes Zēgera formulu, pārbaudīt to pret robežvērtībām attiecīgajai apdedzināšanai, ieteikt aizvietotājus izejvielām, kas vairs netiek ražotas, no jūsu nosauktajām izejvielām izveidot recepti no jauna, pārrēķināt starp konusiem un temperatūrām, kā arī meklēt ceļvežos un tos lasīt. Nekas, ko tas nosūta, netiek saglabāts; tāpat kā katrai lapai, tīmekļa servera žurnālfailā 14 dienas tiek reģistrēta katra pieprasījuma IP adrese, laiks un adrese (nekad ne tas, kas nosūtīts).",
+    "mine": "Ar piekļuves marķieri no jūsu <account>konta lapas</account> tas var lasīt arī jūsu pašu receptes, izejvielas, burtnīcu, apdedzināšanas žurnālus un jūsu krājumos esošās izejvielas. Marķieris var tikai lasīt: tas nekad neko nemaina un nedzēš.",
+    "caution": "Robežvērtību pārbaudes ir brīdinājumi, kas pamatoti ar publicētām robežvērtībām, tādi paši kā lietotnē, nevis pierādījums, ka glazūra ir droša saskarei ar pārtiku. Katru glazūru apdedziniet izmēģinājumam, un glazūras, kas paredzētas pārtikas virsmām, nododiet metālu izdalīšanās pārbaudei.",
+    "addressHeading": "Adrese",
+    "address": "Dodiet savam asistentam šo adresi, izmantojot Streamable HTTP transportu:",
+    "token": "Lai tas varētu lasīt jūsu pašu ierakstus, izveidojiet marķieri savā <account>konta lapā</account> un nokopējiet to. Jūsu asistents to sūta Authorization galvenē kā Bearer, kam seko marķieris. Tāpat kā paroli, neglabājiet to failos, ko kopīgojat vai iesniedzat repozitorijā.",
+    "clientsHeading": "Glazecalc pievienošana asistentam",
+    "claudeCode": "Terminālī:",
+    "claudeCodeToken": "Ar piekļuves marķieri, lai tas lasītu arī jūsu pašu ierakstus:",
+    "vscode": "Failā .vscode/mcp.json mapē vai jūsu lietotāja iestatījumos. VS Code marķieri pajautā vienu reizi un to paslēpj; izlaidiet headers un inputs, lai izmantotu tikai rīkus, kam konts nav vajadzīgs:",
+    "cursor": "Failā ~/.cursor/mcp.json vai .cursor/mcp.json projektā. Izlaidiet headers, lai izmantotu tikai rīkus, kam konts nav vajadzīgs:",
+    "gemini": "Failā ~/.gemini/settings.json. Izlaidiet headers, lai izmantotu tikai rīkus, kam konts nav vajadzīgs:",
+    "copy": "Kopēt",
+    "copyAddress": "Kopēt adresi",
+    "copyFor": "Kopēt iestatījumus programmai {client}",
+    "copyForToken": "Kopēt iestatījumus programmai {client}, ar piekļuves marķieri",
+    "copied": "Nokopēts.",
+    "copyByHand": "To neizdevās nokopēt jūsu vietā. Teksts ir atlasīts: nokopējiet to no lodziņa.",
+    "appsHeading": "Claude, ChatGPT un citas lietotnes",
+    "apps": "Pievienojiet pielāgotu savienotāju ar iepriekš minēto adresi. Šīs lietotnes vēl nevar nosūtīt piekļuves marķieri, tāpēc tās saņem rīkus, kam konts nav vajadzīgs. Piekļuve jūsu pašu ierakstiem no tām parādīsies kopā ar pierakstīšanos no lietotnes.",
+    "stopHeading": "Piekļuves apturēšana",
+    "stop": "Marķieri varat anulēt jebkurā laikā savā <account>konta lapā</account>. Katrs marķieris pārstāj darboties jūsu izvēlētajā dienā, un visi pārstāj darboties vienlaikus, ja atiestatāt paroli vai izrakstāties visur.",
+    "limits": "Katra adrese var iesniegt 60 pieprasījumus minūtē un 2000 dienā; konts ar marķieri – 120 minūtē un 5000 dienā. Aizstāšanas un atbilstību pieprasījumi ir ierobežoti līdz 10 minūtē."
   }
 }

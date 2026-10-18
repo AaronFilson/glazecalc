@@ -4,10 +4,26 @@
     "signedInAs": "Angemeldet als {email}.",
     "trying": "Sie probieren Glazecalc als {name} aus. Beginnen Sie mit einem Rezept.",
     "welcomeBack": "Machen Sie dort weiter, wo Sie aufgehört haben.",
+    "welcome": {
+      "heading": "Willkommen bei Glazecalc",
+      "text": "Ihr Notizbuch ist bereit. Ein guter erster Schritt: Geben Sie eine Glasur ein, die Sie schon ansetzen, mit ihren Rohstoffen und Mengen, und sehen Sie ihre Segerformel.",
+      "firstRecipe": "Ihr erstes Rezept beginnen",
+      "confirmHeading": "E-Mail-Adresse bestätigen",
+      "confirm": "E-Mail-Adresse bestätigen: Wir haben einen Link an {email} gesendet. Die Zwei-Schritt-Anmeldung setzt dies voraus. Auf Ihrer <account>Kontoseite</account> können Sie ihn erneut senden.",
+      "confirmText": "Wir haben einen Link an {email} gesendet. Öffnen Sie ihn, um zu bestätigen, dass die Adresse Ihnen gehört: Die Zwei-Schritt-Anmeldung setzt dies voraus. Auf Ihrer <account>Kontoseite</account> können Sie ihn erneut senden."
+    },
     "sections": {
       "recipe": {
         "title": "Rezepte",
         "text": "Stellen Sie eine Glasur aus Rohstoffen und Mengen zusammen, sehen Sie ihre Segerformel (UMF) und speichern Sie sie."
+      },
+      "import": {
+        "title": "Rezepte einfügen",
+        "text": "Fügen Sie Rezepte von einer Website, aus einer Tabelle oder aus Notizen ein, prüfen Sie, was gelesen wurde, und speichern Sie sie."
+      },
+      "blends": {
+        "title": "Mischreihen für Probeplättchen",
+        "text": "Mischen Sie zwei, drei oder vier Ihrer Rezepte zu nummerierten Probeplättchen, mit den Einwaagen für jedes."
       },
       "material": {
         "title": "Rohstoffe",
@@ -32,6 +48,14 @@
       "guides": {
         "title": "Anleitungen",
         "text": "Von der Frage, was eine Glasur ist, bis zum Brennen – und wie dabei alle sicher bleiben."
+      },
+      "trash": {
+        "title": "Papierkorb",
+        "text": "Stellen Sie wieder her, was Sie in den letzten 30 Tagen entfernt haben."
+      },
+      "account": {
+        "title": "Konto und Einstellungen",
+        "text": "Einstellungen, Ihr Passwort, die Zwei-Schritt-Anmeldung und ein Download von allem, was Sie hier aufbewahren."
       }
     },
     "newHere": "Neu bei der Segerformel<en>unity formula</en>? Die <advice>Seite mit Tipps</advice> erklärt die Grundlagen, und die <about>Seite über Glazecalc</about> beschreibt, wie Glazecalc funktioniert."
@@ -39,27 +63,54 @@
   "firing": {
     "title": "Brennprotokolle",
     "lead": "Protokollieren Sie jeden Brand: Zeiten, Temperaturen, Kegel und Notizen zum Ofen.",
+    "newHeading": "Ein neuer Brand",
+    "titleLabel": "Titel",
+    "kiln": "Brennofen",
+    "date": "Datum",
+    "notes": "Notizen",
+    "fieldSelect": "Felder zum Erfassen",
     "addField": "Feld hinzufügen",
+    "included": "Felder in diesem Protokoll",
     "moveLeft": "Feld nach links verschieben",
     "moveRight": "Feld nach rechts verschieben",
     "removeField": "Feld entfernen",
     "addRow": "Zeile zur Brandtabelle hinzufügen",
+    "addRowWhy": "Fügen Sie zuerst ein Feld hinzu.",
+    "tableEmpty": "Fügen Sie oben ein Feld hinzu und dann Zeilen.",
+    "recordHeading": "Den Brand erfassen",
     "rowActions": "Zeilenaktionen",
     "cell": "{field}, Zeile {row}",
     "removeRow": "Zeile entfernen",
     "save": "Speichern",
+    "storedHeading": "Meine gespeicherten Brände",
+    "noneSaved": "Noch keine. Gespeicherte Brände erscheinen hier.",
+    "storedIn": "Gebrannt in {kiln} am {date}.",
+    "storedOn": "Gebrannt am {date}.",
     "storedNotes": "Notizen: {notes}",
     "titleMissing": "Geben Sie dem Brand einen Titel.",
     "fieldsMissing": "Fügen Sie mindestens ein Feld zum Protokollieren hinzu, etwa {example}.",
     "chooseField": "Wählen Sie ein Feld aus und klicken Sie dann auf „Feld hinzufügen“.",
     "fetchFailed": "Beim Abrufen der Brennprotokolle ist ein Fehler aufgetreten.",
     "saved": "Das Brennprotokoll wurde erfolgreich auf dem Server gespeichert.",
-    "saveFailed": "Fehler: Die Anfrage an den Server ist fehlgeschlagen."
+    "saveFailed": "Fehler: Die Anfrage an den Server ist fehlgeschlagen.",
+    "recipesHeading": "In diesem Brand gebrannte Rezepte",
+    "noRecipes": "Noch keine Rezepte verknüpft.",
+    "recipesFailed": "Ihre Rezepte konnten nicht abgerufen werden, daher lässt sich jetzt keines verknüpfen.",
+    "pickRecipe": "Ein in diesem Brand gebranntes Rezept",
+    "linkRecipe": "Das Rezept verknüpfen",
+    "unlink": "Trennen",
+    "unlinkRecipe": "{title} trennen",
+    "linkFailed": "Die Verknüpfung konnte nicht gespeichert werden."
   },
   "notes": {
     "title": "Notizen",
     "lead": "Alles Weitere, was sich über Ihre Glasuren zu merken lohnt.",
+    "newHeading": "Eine neue Notiz",
+    "titleLabel": "Titel",
+    "content": "Notiz",
     "save": "Speichern",
+    "mineHeading": "Meine gespeicherten Notizen",
+    "noneSaved": "Noch keine. Gespeicherte Notizen erscheinen hier.",
     "titleMissing": "Geben Sie der Notiz einen Titel.",
     "contentMissing": "Schreiben Sie einen Text für die Notiz.",
     "untitled": "Notiz ohne Titel",
@@ -69,6 +120,34 @@
   },
   "trash": {
     "title": "Papierkorb",
-    "comingSoon": "Der Papierkorb kommt bald, mit der nächsten Version von Glazecalc. Gehen Sie bis dahin vorsichtig mit Löschen und Entfernen um: Ist etwas einmal weg, sind die Daten verloren."
+    "lead": "Was Sie entfernen (Rezepte, Rohstoffe, Zusätze, Notizen, Brennprotokolle und Tipps), bleibt hier 30 Tage liegen. Stellen Sie es wieder her oder löschen Sie es endgültig.",
+    "listHeading": "Im Papierkorb",
+    "none": "Der Papierkorb ist leer.",
+    "untitled": "Ohne Titel",
+    "kinds": {
+      "recipes": "Rezept",
+      "materials": "Rohstoff",
+      "additives": "Zusatz",
+      "notes": "Notiz",
+      "firing": "Brennprotokoll",
+      "advice": "Tipp",
+      "other": "Datensatz"
+    },
+    "removedOn": "Entfernt am {date}",
+    "goesOn": "Endgültig gelöscht am {date}",
+    "byApp": "Von einer verbundenen App entfernt",
+    "putBack": "Wiederherstellen",
+    "putBackName": "{name} wiederherstellen",
+    "restored": "„{name}“ wurde an seinem alten Platz wiederhergestellt.",
+    "restoredAlready": "„{name}“ wurde bereits wiederhergestellt.",
+    "restoreFailed": "„{name}“ konnte nicht wiederhergestellt werden. Bitte versuchen Sie es erneut.",
+    "deleted": "„{name}“ wurde endgültig gelöscht.",
+    "empty": "Papierkorb leeren",
+    "emptyQuestion": "{count, plural, one {Den # Datensatz} other {Alle # Datensätze}} im Papierkorb endgültig löschen? Das lässt sich nicht rückgängig machen.",
+    "emptyYes": "Ja, leeren",
+    "emptying": "Wird geleert …",
+    "emptied": "Der Papierkorb ist leer.",
+    "emptyFailed": "Der Papierkorb konnte nicht geleert werden. Bitte versuchen Sie es erneut.",
+    "fetchFailed": "Der Papierkorb konnte nicht geladen werden. Bitte versuchen Sie es erneut."
   }
 }

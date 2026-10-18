@@ -34,13 +34,14 @@ Un **mantenimiento**{{en: hold}} (también llamado **meseta**{{en: soak}}) manti
 Table: Lo que vale un mantenimiento a la temperatura máxima
 Label: Mantenimiento y trabajo térmico
 
-| Mantenimiento   | Aproximadamente el mismo trabajo térmico que                            |
-| --------------- | ----------------------------------------------------------------------- |
-| Unos 20 minutos | Una temperatura máxima {{18 °F; 10 °C}} más alta                        |
-| 40–60 minutos   | Una temperatura máxima {{36 °F; 20 °C}} más alta                        |
-| Unas 2 horas    | Una temperatura máxima {{54 °F; 30 °C}} más alta                        |
-| 1–2 horas       | «puede bastar para deformar el cono del número inmediatamente superior» |
-| 4–6 horas       | Suficiente para doblar un cono dos números más caliente                 |
+| Mantenimiento   | Aproximadamente el mismo trabajo térmico que            |
+| --------------- | ------------------------------------------------------- |
+| Unos 20 minutos | Una temperatura máxima {{18 °F; 10 °C}} más alta        |
+| 40–60 minutos   | Una temperatura máxima {{36 °F; 20 °C}} más alta        |
+| Unas 2 horas    | Una temperatura máxima {{54 °F; 30 °C}} más alta        |
+| 4–6 horas       | Suficiente para doblar un cono dos números más caliente |
+
+Orton añade que un mantenimiento de 1–2 horas «puede bastar para deformar el cono del número inmediatamente superior».
 
 Así que un mantenimiento nunca sale gratis: si añade uno, cuente con que los conos se doblen más, y baje la temperatura máxima en la misma medida.
 
@@ -198,11 +199,11 @@ Muchos kiln sitters, entre ellos los modelos LT de Dawson, tienen un **temporiza
 Table: Cuánto tiempo poner en el temporizador de seguridad
 Label: Ajustes del temporizador de seguridad
 
-| Fuente    | Ajuste                                                                                                                                 |
-| --------- | -------------------------------------------------------------------------------------------------------------------------------------- |
-| Dawson    | ½ hora más que la duración prevista de la cocción mientras no conozca el horno; después, tan solo ¼ de hora más; nunca más de 20 horas |
-| L&L       | Muy alto la primera vez, anotando cuánto dura la cocción; después, alrededor de 1 hora más                                             |
-| Bracker’s | De 30 minutos a 1 hora más que la duración de la cocción                                                                               |
+| Fuente    | Ajuste                                                                                                                                             |
+| --------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Dawson    | ½ hora más que la duración prevista de la cocción mientras no conozca el horno; después, tan solo ¼ de hora más; nunca lo ajuste a más de 20 horas |
+| L&L       | Muy alto la primera vez, anotando cuánto dura la cocción; después, alrededor de 1 hora más                                                         |
+| Bracker’s | De 30 minutos a 1 hora más que la duración de la cocción                                                                                           |
 
 > [!NOTE]
 > Nuestro punto de partida: un margen amplio la primera vez (sin pasar de las 20 horas del dial), y después de ½ a 1 hora más que el tiempo que anotó. El temporizador también indica cuánto duró una cocción: si se puso en 7 y terminó en 1, la cocción duró 6 horas.
@@ -375,7 +376,7 @@ La cocción de **bizcocho**{{en: bisque}} (biscuit en el Reino Unido) es la prim
 
 ### Por qué la primera parte va despacio
 
-El agua que se convierte en vapor «se expande 1170 veces», señala Bracker’s, así que las piezas húmedas deben secarse despacio. L&L y Orton aconsejan que «se tenga especial cuidado por debajo de 1500°F (815°C) para calentar la pasta{{en: body}} de manera uniforme», y que el carbono se queme antes de unos {{1200 °F; 650 °C}}. Por encima de {{1500 °F; 816 °C}}, el horno puede subir más deprisa.
+El agua se expande más de mil veces al convertirse en vapor, así que las piezas húmedas deben secarse despacio. L&L y Orton aconsejan que «se tenga especial cuidado por debajo de 1500°F (815°C) para calentar la pasta{{en: body}} de manera uniforme», y que el carbono se queme antes de unos {{1200 °F; 650 °C}}. Por encima de {{1500 °F; 816 °C}}, el horno puede subir más deprisa.
 
 Table: Qué ocurre mientras se calienta un bizcocho
 Label: Qué ocurre en un bizcocho
@@ -595,22 +596,22 @@ Si el kiln sitter salta antes de que caigan los conos de la placa, pase a un con
 
 Un **pirómetro** es un indicador de temperatura que toma la lectura de un **termopar**, una sonda de calor que atraviesa la pared del horno. Muestra a qué velocidad sube el horno, para que pueda elegir la columna correcta de la tabla de conos. Pero mide cerca de la pared, no en las piezas, y su lectura se desvía con el tiempo. L&L señala que un termopar de tipo K puede desviarse más de {{25 °F; 14 °C}} tras repetidas cocciones a cono 6, «una diferencia mayor que un cono entero», mientras que un cono con pie no varía más de {{4 °F; 2 °C}}. Orton dice que los pirómetros necesitan recalibrarse de vez en cuando, y que los conos son la manera de comprobarlos.
 
-## Ventilación, mirillas y seguridad {#venting}
+## Ventilación, mirar y seguridad {#venting}
 
 ### Ventilación
 
-Al principio de una cocción, la arcilla y el esmalte{{en: glaze}} desprenden vapor de agua y humos, entre ellos monóxido de carbono, y los esmaltes también pueden desprender humos tóxicos más avanzada la cocción. L&L considera «esencial» evacuarlos. Sin sistema de extracción, eso significa la tapa entreabierta y las mirillas abiertas en las primeras fases, como en los procedimientos de más arriba; ir más despacio durante este tiempo también ayuda a que se queme el carbono. Con un **extractor de tiro descendente** (un extractor motorizado instalado en el horno), Orton dice que la tapa y las mirillas quedan cerradas durante toda la cocción, salvo para revisar los conos{{en: cones}}. Una mirilla de arriba abierta también protege el tubo del kiln sitter y las partes metálicas del horno.
+Al principio de una cocción, la arcilla y el esmalte{{en: glaze}} desprenden vapor de agua y humos, entre ellos monóxido de carbono, y los esmaltes pueden desprender humos tóxicos también más adelante en la cocción. L&L dice que ventilarlos es «esencial». Sin un sistema de extracción, eso significa tener la tapa entreabierta y las mirillas abiertas en las primeras etapas, como en los procedimientos anteriores; reducir la velocidad de calentamiento durante ese tiempo también ayuda a que se queme el carbono. En un horno sin extractor, Dawson, que fabricó el kiln sitter, dice además que se deje abierta la mirilla de arriba durante toda la cocción: la ventilación «reducirá el deterioro de las piezas metálicas del horno y aumentará la vida útil del conjunto del tubo». Un **extractor de tiro descendente**{{en: downdraft vent}} (un extractor con motor instalado en el horno) cambia esto. Hace la ventilación, así que Orton dice que la tapa y las mirillas permanecen cerradas durante toda la cocción, salvo para comprobar los conos, y L&L dice que se deje el extractor encendido y se tapen las mirillas.
 
-Para la ventilación de la sala y los detectores de monóxido de carbono, vea [Preparación segura y ventilación](/guides/safe-mixing) y [No envenene a su familia](/guides/home-safety).
+Para la ventilación de la sala y para los detectores de monóxido de carbono, vea [Preparación segura y ventilación](/guides/safe-mixing) y [No envenene a su familia](/guides/home-safety).
 
-### Mientras el horno cuece
+### Mientras el horno está cociendo
 
-- Mire por una mirilla solo con gafas de soldadura de grado de protección 3 con filtro de infrarrojo; las gafas de sol no bastan. Skutt aconseja encajar los tapones girándolos, para que no se caigan.
-- No deje el horno desatendido más allá del tiempo de cocción previsto; un kiln sitter no es un sistema a prueba de fallos.
-- No cueza nunca sobre algo que arda, o cerca de ello, como un suelo de madera o una moqueta.
-- Respete las distancias de seguridad de su manual. Las cifras publicadas van de 12 pulgadas (30 cm) a 3 pies (91 cm); si el manual no dice nada, 18 pulgadas (46 cm) de las paredes y 3 pies (91 cm) de cualquier cosa que arda es la opción más segura.
-- Mantenga despejado el espacio alrededor del contrapeso del kiln sitter, para que pueda caer.
-- Cuando termine la cocción, apague los reguladores y desconecte también el interruptor automático.
+- Mire por una mirilla solo con gafas de soldadura con filtro de infrarrojo y grado de protección 3; las gafas de sol no bastan. Skutt aconseja girar los tapones al colocarlos para que no se caigan.
+- No deje el horno sin vigilancia más allá del tiempo de cocción previsto; un kiln sitter no es un sistema a prueba de fallos.
+- No cueza nunca encima ni cerca de nada que arda, como un suelo de madera o una moqueta.
+- Respete las distancias de seguridad de su manual. Las cifras publicadas van de 12 pulgadas (30 cm) a 3 pies (91 cm); donde el manual no dice nada, lo más seguro es 18 pulgadas (46 cm) de las paredes y 3 pies (91 cm) de cualquier cosa que arda.
+- Mantenga libre el espacio alrededor del contrapeso del kiln sitter para que pueda caer.
+- Cuando termine la cocción, apague los interruptores y apague también el interruptor automático.
 
 ## Enfriamiento y descarga {#cooling}
 

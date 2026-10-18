@@ -1,0 +1,153 @@
+{
+  "home": {
+    "title": "Buku catatan studio Anda",
+    "signedInAs": "Masuk sebagai {email}.",
+    "trying": "Mencoba Glazecalc sebagai {name}. Mulailah dengan sebuah resep.",
+    "welcomeBack": "Lanjutkan dari tempat Anda berhenti.",
+    "welcome": {
+      "heading": "Selamat datang di Glazecalc",
+      "text": "Buku catatan Anda sudah siap. Langkah pertama yang baik: ketik glasir yang sudah biasa Anda campur, bahan dan jumlahnya, lalu lihat formula Seger-nya.",
+      "firstRecipe": "Mulai resep pertama Anda",
+      "confirmHeading": "Konfirmasi email Anda",
+      "confirm": "Konfirmasi email Anda: kami mengirim tautan ke {email}. Autentikasi dua langkah memerlukannya. <account>Halaman akun</account> Anda dapat mengirimnya lagi.",
+      "confirmText": "Kami mengirim tautan ke {email}. Buka tautan itu untuk memastikan alamat ini milik Anda: autentikasi dua langkah memerlukannya. <account>Halaman akun</account> Anda dapat mengirimnya lagi."
+    },
+    "sections": {
+      "recipe": {
+        "title": "Resep",
+        "text": "Susun glasir dari bahan dan jumlahnya, lihat formula Seger-nya, dan simpan."
+      },
+      "import": {
+        "title": "Tempel resep",
+        "text": "Tempel resep dari situs web, lembar kerja, atau catatan, periksa apa yang terbaca, lalu simpan."
+      },
+      "blends": {
+        "title": "Campuran untuk ubin uji",
+        "text": "Campurkan dua, tiga, atau empat resep Anda menjadi ubin uji bernomor, lengkap dengan apa yang harus ditimbang untuk masing-masing."
+      },
+      "material": {
+        "title": "Bahan",
+        "text": "Tambahkan bahan baku Anda sendiri, dari rumus kimia atau analisis dari pemasok."
+      },
+      "additive": {
+        "title": "Aditif dan pewarna",
+        "text": "Simpan pewarna dan pengopak yang Anda tambahkan di atas glasir dasar."
+      },
+      "firing": {
+        "title": "Catatan pembakaran",
+        "text": "Catat waktu, suhu, dan kerucut untuk setiap pembakaran."
+      },
+      "notes": {
+        "title": "Catatan",
+        "text": "Simpan hasil uji dan apa pun yang layak diingat."
+      },
+      "advice": {
+        "title": "Saran glasir",
+        "text": "Tips tentang mencampur, mengglasir, dan membakar, serta saran Anda sendiri."
+      },
+      "guides": {
+        "title": "Panduan",
+        "text": "Dari apa itu glasir sampai membakarnya, dan menjaga semua orang tetap aman di sepanjang jalan."
+      },
+      "trash": {
+        "title": "Sampah",
+        "text": "Kembalikan apa yang Anda hapus dalam 30 hari terakhir."
+      },
+      "account": {
+        "title": "Akun dan pengaturan",
+        "text": "Pengaturan, kata sandi Anda, autentikasi dua langkah, dan unduhan semua yang Anda simpan di sini."
+      }
+    },
+    "newHere": "Baru mengenal formula Seger? <advice>Halaman saran</advice> menjelaskan dasar-dasarnya, dan <about>halaman tentang</about> menjelaskan cara kerja Glazecalc."
+  },
+  "firing": {
+    "title": "Catatan pembakaran",
+    "lead": "Catat setiap pembakaran: waktu, suhu, kerucut, dan catatan tungku.",
+    "newHeading": "Pembakaran baru",
+    "titleLabel": "Judul",
+    "kiln": "Tungku",
+    "date": "Tanggal",
+    "notes": "Catatan",
+    "fieldSelect": "Kolom yang dicatat",
+    "addField": "Tambahkan kolom",
+    "included": "Kolom dalam catatan ini",
+    "moveLeft": "Geser kolom ke kiri",
+    "moveRight": "Geser kolom ke kanan",
+    "removeField": "Hapus kolom",
+    "addRow": "Tambahkan baris ke tabel pembakaran",
+    "addRowWhy": "Tambahkan kolom dulu.",
+    "tableEmpty": "Tambahkan kolom di atas, lalu tambahkan baris.",
+    "recordHeading": "Catat pembakaran",
+    "rowActions": "Tindakan baris",
+    "cell": "{field} baris {row}",
+    "removeRow": "Hapus baris",
+    "save": "Simpan",
+    "storedHeading": "Pembakaran saya yang tersimpan",
+    "noneSaved": "Belum ada. Pembakaran yang disimpan muncul di sini.",
+    "storedIn": "Dibakar di {kiln} pada {date}.",
+    "storedOn": "Dibakar pada {date}.",
+    "storedNotes": "Catatan: {notes}",
+    "titleMissing": "Beri judul pada pembakaran.",
+    "fieldsMissing": "Tambahkan paling sedikit satu kolom untuk dicatat, misalnya {example}.",
+    "chooseField": "Pilih kolom untuk ditambahkan, lalu Tambahkan kolom.",
+    "fetchFailed": "Terjadi kesalahan saat mengambil informasi catatan pembakaran.",
+    "saved": "Berhasil menambahkan catatan pembakaran ke server.",
+    "saveFailed": "Kesalahan: permintaan ke server gagal.",
+    "recipesHeading": "Resep yang dibakar di sini",
+    "noRecipes": "Belum ada resep yang ditautkan.",
+    "recipesFailed": "Resep Anda tidak dapat diambil, sehingga belum ada yang dapat ditautkan sekarang.",
+    "pickRecipe": "Resep yang dibakar di sini",
+    "linkRecipe": "Tautkan resep",
+    "unlink": "Putuskan tautan",
+    "unlinkRecipe": "Putuskan tautan {title}",
+    "linkFailed": "Tautan tidak dapat disimpan."
+  },
+  "notes": {
+    "title": "Catatan",
+    "lead": "Apa pun yang layak diingat tentang glasir Anda.",
+    "newHeading": "Catatan baru",
+    "titleLabel": "Judul",
+    "content": "Catatan",
+    "save": "Simpan",
+    "mineHeading": "Catatan saya yang tersimpan",
+    "noneSaved": "Belum ada. Catatan yang disimpan muncul di sini.",
+    "titleMissing": "Beri judul pada catatan.",
+    "contentMissing": "Tulis catatannya.",
+    "untitled": "Catatan tanpa judul",
+    "fetchFailed": "Terjadi kesalahan saat mengambil informasi catatan.",
+    "saved": "Berhasil menambahkan catatan ke server.",
+    "saveFailed": "Kesalahan: permintaan ke server gagal."
+  },
+  "trash": {
+    "title": "Sampah",
+    "lead": "Apa yang Anda hapus (resep, bahan, aditif, catatan, catatan pembakaran, dan saran) menunggu di sini selama 30 hari. Kembalikan, atau hapus secara permanen.",
+    "listHeading": "Di Sampah",
+    "none": "Sampah kosong.",
+    "untitled": "Tanpa judul",
+    "kinds": {
+      "recipes": "Resep",
+      "materials": "Bahan",
+      "additives": "Aditif",
+      "notes": "Catatan",
+      "firing": "Catatan pembakaran",
+      "advice": "Saran",
+      "other": "Item"
+    },
+    "removedOn": "Dihapus {date}",
+    "goesOn": "Dihapus permanen {date}",
+    "byApp": "Dihapus oleh aplikasi yang terhubung",
+    "putBack": "Kembalikan",
+    "putBackName": "Kembalikan {name}",
+    "restored": "\"{name}\" dikembalikan ke tempat semula.",
+    "restoredAlready": "\"{name}\" sudah dikembalikan.",
+    "restoreFailed": "\"{name}\" tidak dapat dikembalikan. Silakan coba lagi.",
+    "deleted": "\"{name}\" dihapus secara permanen.",
+    "empty": "Kosongkan Sampah",
+    "emptyQuestion": "Hapus secara permanen {count, plural, other {semua # item}} di Sampah? Tindakan ini tidak dapat dibatalkan.",
+    "emptyYes": "Ya, kosongkan",
+    "emptying": "Mengosongkan...",
+    "emptied": "Sampah kosong.",
+    "emptyFailed": "Sampah tidak dapat dikosongkan. Silakan coba lagi.",
+    "fetchFailed": "Sampah tidak dapat dimuat. Silakan coba lagi."
+  }
+}

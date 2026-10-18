@@ -38,7 +38,7 @@ Recepte išvardytos žaliavos, pavyzdžiui, lauko špatas{{en: feldspar}}, kreid
 
 ### Du degimai
 
-Pirmasis, žemesnės temperatūros degimas yra **biskvitinis degimas**{{en: bisque}} (JK – **biscuit**), paprastai piroskopai 08–04, maždaug {{1740–1940 °F; 950–1060 °C}}. Po jo dirbiniai būna tvirti, bet akyti. Digitalfire, glazūrų žinynas internete, siūlo, kad akytumas paprastai būtų didesnis nei 15 % – tada biskvitas įtraukia vandenį iš užnešamos glazūros. Žemesnis biskvitinis degimas (piroskopai 08–06) palieka biskvitą akytesnį; aukštesnis (dažnai piroskopas 04) – tvirtesnį, bet glazūrą jis sugeria prasčiau.
+Pirmasis, žemesnės temperatūros degimas yra **biskvitinis degimas**{{en: bisque}} (JK – **biscuit**), paprastai piroskopai 08–04 (dažniausiai 06–04), maždaug {{1728–1945 °F; 942–1063 °C}}. Po jo dirbiniai būna tvirti, bet akyti. Digitalfire, glazūrų žinynas internete, siūlo, kad akytumas paprastai būtų didesnis nei 15 % – tada biskvitas įtraukia vandenį iš užnešamos glazūros. Žemesnis biskvitinis degimas (piroskopai 08–06) palieka biskvitą akytesnį; aukštesnis (dažnai piroskopas 04) – tvirtesnį, bet glazūrą jis sugeria prasčiau.
 
 Table: Kaip biskvitas keičia glazūravimą (Digitalfire)
 Label: Kaip biskvitas keičia glazūravimą
@@ -254,7 +254,7 @@ Teisės aktuose nustatytos ribos įvairiose šalyse skiriasi. Lentelėje rodomos
 
 ::food-limits
 
-JAV dirbiniai, neskirti maistui, privalo turėti nenusitrinantį, įdegtą užrašą „Not for Food Use“ (netinka maistui) arba kiaurymę per paviršių, kuris liestųsi su maistu. ES švino ir kadmio ribas nustato Tarybos direktyva 84/500/EEB, o Jungtinė Karalystė tuos pačius skaičius išlaiko savo teisės aktuose. Nuo 2026 m. gegužės 29 d. Nyderlandai, Belgija ir Liuksemburgas leidžia maždaug 130–150 kartų mažiau švino ir maždaug 15 kartų mažiau kadmio. Australija nustato ribas importuojamiems dirbiniams; oficialios ribos Australijoje ar Naujojoje Zelandijoje pagamintiems dirbiniams neradome.
+JAV dekoratyvinis keramikos dirbinys, kuris atrodo tinkamas maistui, laikomas indu maistui, nebent jis turi priklijuojamą etiketę ir ant dugno išspaustą ar įdegtą nenusitrinantį užrašą, pavyzdžiui, „Not for Food Use. May Poison Food“ (netinka maistui; gali užnuodyti maistą), arba kiaurymę per paviršių, kuris liestųsi su maistu. ES švino ir kadmio ribas nustato Tarybos direktyva 84/500/EEB, o Jungtinė Karalystė tuos pačius skaičius išlaiko savo teisės aktuose. Nuo 2026 m. gegužės 29 d. Nyderlandai, Belgija ir Liuksemburgas leidžia maždaug 130–150 kartų mažiau švino ir maždaug 15 kartų mažiau kadmio. Australija nustato ribas importuojamiems dirbiniams; oficialios ribos Australijoje ar Naujojoje Zelandijoje pagamintiems dirbiniams neradome.
 
 ### Tyrimai
 
@@ -319,7 +319,7 @@ Bentonitas (bentonite)
 : Labai smulkus molis, dedamas 1–3 % kiekiu, kad glazūra nenusėstų.
 
 Biskvitas, biskvitinis degimas (bisque; JK – biscuit)
-: Pirmasis, žemesnės temperatūros degimas, paprastai piroskopai 08–04; po jo dirbiniai tvirti, bet akyti.
+: Pirmasis, žemesnės temperatūros degimas, paprastai piroskopai 08–04 (dažniausiai 06–04); po jo dirbiniai tvirti, bet akyti.
 
 Blizgi, šilko blizgesio ir matinė glazūra (gloss, satin and matte)
 : Atspindi šviesą ir lygi; prislopinto blizgesio; blanki.
@@ -474,6 +474,7 @@ Vienkartinis degimas (once-firing, single firing)
 - [Glazy Help: Specific gravity](https://help.glazy.org/testing/specific-gravity)
 - [Orton Ceramic Foundation: Pyrometric cone chart, °F (svetainėje The Ceramic Shop)](https://www.theceramicshop.com/technical_info/Cones/Orton-Cone-Chart-F-022-14.pdf)
 - [Digitalfire: Bisque](https://digitalfire.com/glossary/bisque)
+- [Digitalfire: Bentonite](https://digitalfire.com/material/bentonite)
 - [Digitalfire: Unity molecular formula](https://digitalfire.com/glossary/unity+molecular+formula)
 - [Digitalfire: LOI](https://digitalfire.com/glossary/loi)
 - [Digitalfire: Frit](https://digitalfire.com/glossary/frit)
@@ -489,3 +490,4 @@ Vienkartinis degimas (once-firing, single firing)
 - [Potclays: The difference between stoneware and earthenware](https://www.potclays.co.uk/clay-questions/difference-stoneware-earthenware)
 - [US FDA: Compliance Policy Guide Sec. 545.450, Pottery (ceramics), lead contamination](https://www.fda.gov/media/71764/download)
 - [EUR-Lex: Council Directive 84/500/EEC on ceramic articles in contact with food](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:31984L0500)
+- [eCFR: 21 CFR 109.16, Ornamental and decorative ceramicware](https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-109/subpart-A/section-109.16)

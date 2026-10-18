@@ -34,13 +34,14 @@ Label: Põletusvahemikud
 Table: Mida annab hoid lõpptemperatuuril
 Label: Hoid ja kuumustöö
 
-| Hoid             | Ligikaudu sama kuumustöö kui                                            |
-| ---------------- | ----------------------------------------------------------------------- |
-| Umbes 20 minutit | {{18 °F; 10 °C}} kõrgem lõpptemperatuur                                 |
-| 40–60 minutit    | {{36 °F; 20 °C}} kõrgem lõpptemperatuur                                 |
-| Umbes 2 tundi    | {{54 °F; 30 °C}} kõrgem lõpptemperatuur                                 |
-| 1–2 tundi        | „võib piisata järgmise, ühe numbri võrra kuumema koonuse painutamiseks“ |
-| 4–6 tundi        | Piisab kahe numbri võrra kuumema koonuse painutamiseks                  |
+| Hoid             | Ligikaudu sama kuumustöö kui                           |
+| ---------------- | ------------------------------------------------------ |
+| Umbes 20 minutit | {{18 °F; 10 °C}} kõrgem lõpptemperatuur                |
+| 40–60 minutit    | {{36 °F; 20 °C}} kõrgem lõpptemperatuur                |
+| Umbes 2 tundi    | {{54 °F; 30 °C}} kõrgem lõpptemperatuur                |
+| 4–6 tundi        | Piisab kahe numbri võrra kuumema koonuse painutamiseks |
+
+Orton lisab, et 1–2 tunni pikkune hoid „võib piisata järgmise, ühe numbri võrra kuumema koonuse painutamiseks“.
 
 Hoid ei ole seega kunagi tasuta: kui lisate hoiu, arvestage, et koonused painduvad rohkem, ja langetage lõpptemperatuuri vastavalt.
 
@@ -198,11 +199,11 @@ Paljudel Kiln-Sitteritel, sealhulgas Dawsoni LT-mudelitel, on **kaitsetaimer**: 
 Table: Kui pikaks kaitsetaimer seada
 Label: Kaitsetaimeri seaded
 
-| Allikas   | Seadistus                                                                                                                |
-| --------- | ------------------------------------------------------------------------------------------------------------------------ |
-| Dawson    | Kuni te oma ahju veel ei tunne, ½ tundi pikem kui eeldatav põletusaeg, hiljem kõigest ¼ tundi; mitte kunagi üle 20 tunni |
-| L&L       | Esimesel korral väga pikk, märkides üles, kui kaua põletus kestab; edaspidi umbes 1 tund pikem                           |
-| Bracker’s | Põletusajast 30 minutit kuni 1 tund pikem                                                                                |
+| Allikas   | Seadistus                                                                                                                                 |
+| --------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| Dawson    | Kuni te oma ahju veel ei tunne, ½ tundi pikem kui eeldatav põletusaeg, hiljem kõigest ¼ tundi pikem; ärge seadke seda kunagi üle 20 tunni |
+| L&L       | Esimesel korral väga pikk, märkides üles, kui kaua põletus kestab; edaspidi umbes 1 tund pikem                                            |
+| Bracker’s | Põletusajast 30 minutit kuni 1 tund pikem                                                                                                 |
 
 > [!NOTE]
 > Selle juhendi lähtepunkt: esimesel korral heldelt (skaala 20 tunni piires), seejärel ½ kuni 1 tund pikem kui teie kirja pandud aeg. Kaitsetaimer näitab ka, kui kaua põletus kestis: kui see oli seatud 7 peale ja näitas lõpus 1, tähendab see 6 tundi.
@@ -224,7 +225,7 @@ Label: Kiln-Sitteri probleemid
 Reguleeringu kontrollimiseks kasutab Dawson **seadistusmõõdikut**, mis hoiab varrast seal, kuhu täielikult paindunud koonus selle jätaks; haaratsi juures peaks siis olema „1/16 tolli vahet“ (umbes 1,6 mm). Kontrollige seda iga 30 põletuse järel. Ajakirja Ceramics Monthly reegel: kui ahi lülitub välja liiga vara, nihutage päästikplaati veidi üles; kui liiga hilja, nihutage seda veidi alla. Mida iganes Kiln-Sitter teeb: „Usaldage alati suuri kontrollkoonuseid rohkem kui Kiln-Sitteri väikesi koonuseid.“
 
 > [!WARNING]
-> **Kiln-Sitter ei ole ohutusseade.** Dawsoni kasutusjuhend ütleb, et see „EI OLE mõeldud töökindlaks väljalülitusseadmeks ja teie ahju EI PEAKS jätma järelevalveta kauemaks kui hinnanguline põletusaeg“. Isegi nii lihtne asi kui vastu toru kukkuv põletamata ese{{en: greenware}} „võib põhjustada ülepõletuse“. Olge kohal, et ahju kontrollida, kui põletus peaks lõppema, ja ärge kunagi põletage millegi süttiva kohal ega lähedal, nagu puitpõrand või vaip.
+> **Kiln-Sitter ei ole ohutusseade.** Dawsoni kasutusjuhend ütleb, et see „EI OLE mõeldud rikkekindlaks väljalülitusseadmeks ja teie ahju EI PEAKS jätma järelevalveta kauemaks kui hinnanguline põletusaeg“. Isegi nii lihtne asi kui vastu toru kukkuv põletamata ese{{en: greenware}} „võib põhjustada ülepõletuse“. Olge kohal, et ahju kontrollida, kui põletus peaks lõppema, ja ärge kunagi põletage millegi süttiva kohal ega lähedal, nagu puitpõrand või vaip.
 
 Kiln-Sitter on ehitatud põletusteks „kuni koonuseni 8 kaasa arvatud“. See ei suuda ise temperatuuri hoida ega aeglaselt jahutada. Harjutamise ja põletuspäevikuga võite siiski „ise kontrolleriks hakata“, nagu Digitalfire ütleb: jälgige koonuseid ja keerake lüliteid käsitsi.
 
@@ -375,7 +376,7 @@ Ortoni isetoetuvaid koonuseid müüakse Jaapanis nime all 立つゼーゲル (�
 
 ### Miks algus läheb aeglaselt
 
-Auruks muutuv vesi „paisub 1170 korda“, märgib Bracker’s, seepärast tuleb niisked esemed kuivatada aeglaselt. L&L ja Orton soovitavad: „Alla 1500°F (815°C) tuleks olla eriti hoolikas, et savimass{{en: body}} soojeneks ühtlaselt“, ja süsinik peab välja põlema, enne kui temperatuur ületab umbes {{1200 °F; 650 °C}}. Üle {{1500 °F; 816 °C}} võib ahi tõusta kiiremini.
+Auruks muutudes paisub vesi rohkem kui tuhat korda, seepärast tuleb niisked esemed kuivatada aeglaselt. L&L ja Orton soovitavad: „Alla 1500°F (815°C) tuleks olla eriti hoolikas, et savimass{{en: body}} soojeneks ühtlaselt“, ja süsinik peab välja põlema, enne kui temperatuur ületab umbes {{1200 °F; 650 °C}}. Üle {{1500 °F; 816 °C}} võib ahi tõusta kiiremini.
 
 Table: Mis toimub eelpõletuse kuumenemise ajal
 Label: Mis toimub eelpõletuses
@@ -599,14 +600,14 @@ Kui Kiln-Sitter rakendub enne, kui ahjuplaadi koonused on maas, pange järgmisel
 
 ### Ventilatsioon
 
-Põletuse alguses eraldavad savi ja glasuur veeauru ja ahjuaure, sealhulgas vingugaasi (süsinikmonooksiidi), ja glasuurid võivad mürgiseid aure eraldada ka põletuse hilisemas osas. L&L nimetab nende väljajuhtimist „hädavajalikuks“. Ilma väljatõmbesüsteemita tähendab see, et algetappides on kaas praokil ja vaateavad lahti, nagu ülaltoodud kordades; kuumutamise aeglustamine sel ajal aitab ka süsinikul välja põleda. **Põhja kaudu imeva väljatõmbeseadmega** (ahju külge paigaldatud mootoriga väljatõmme) jäävad Ortoni sõnul kaas ja vaateavad kogu põletuse ajaks suletuks, välja arvatud koonuste kontrollimiseks. Lahtine ülemine vaateava kaitseb ka Kiln-Sitteri toru ja ahju metallosi.
+Põletuse alguses eraldavad savi ja glasuur veeauru ja ahjuaure, sealhulgas vingugaasi (süsinikmonooksiidi), ja glasuurid võivad mürgiseid aure eraldada ka põletuse hilisemas osas. L&L nimetab nende väljajuhtimist „hädavajalikuks“. Ilma väljatõmbesüsteemita tähendab see, et algetappides on kaas praokil ja vaateavad lahti, nagu ülaltoodud toimingutes; kuumutamise aeglustamine sel ajal aitab ka süsinikul välja põleda. Väljatõmbeta ahjus ütleb ka Dawson, Kiln-Sitteri{{en: kiln sitter}} valmistaja, et ülemine vaateava jäetagu kogu põletuse ajaks lahti: ventileerimine „vähendab ahju metallosade kulumist ja pikendab toru koostu eluiga“. **Põhja kaudu imev väljatõmbeseade** (ahju külge paigaldatud mootoriga väljatõmme) muudab selle. See ventileerib ise, seega jäävad Ortoni sõnul kaas ja vaateavad kogu põletuse ajaks suletuks, välja arvatud koonuste kontrollimiseks, ja L&L ütleb, et väljatõmme jäetagu sisse ja vaateavad topitagu kinni.
 
 Ruumi ventileerimise ja vinguandurite kohta vaadake juhendeid [Ohutu segamine ja ventilatsioon](/guides/safe-mixing) ja [Ärge mürgitage oma peret](/guides/home-safety).
 
 ### Kui ahi põletab
 
 - Vaadake läbi vaateava ainult IR-kaitsega keevitusprillidega, tumedusaste 3; päikeseprillidest ei piisa. Skutt soovitab korgid kohale keerata, et need välja ei kukuks.
-- Ärge jätke ahju järelevalveta kauemaks kui selle eeldatav põletusaeg; Kiln-Sitter ei ole töökindel kaitseseade.
+- Ärge jätke ahju järelevalveta kauemaks kui selle eeldatav põletusaeg; Kiln-Sitter ei ole rikkekindel väljalülitusseade.
 - Ärge kunagi põletage millegi süttiva peal ega lähedal, nagu puitpõrand või vaip.
 - Järgige oma ahju kasutusjuhendis antud ohutuid vahekaugusi. Avaldatud väärtused jäävad vahemikku 12 tolli (30 cm) kuni 3 jalga (91 cm); kui kasutusjuhend selle kohta midagi ei ütle, on kõige ohutum valik 18 tolli (46 cm) seintest ja 3 jalga (91 cm) kõigest, mis võib süttida.
 - Hoidke Kiln-Sitteri raskuse ümbrus vaba, et see saaks kukkuda.

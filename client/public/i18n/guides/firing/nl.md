@@ -6,75 +6,76 @@ lead: Hoe u een elektrische oven stookt met een kiln sitter of met handbediende 
 ## Kegels: wat ze meten {#cones}
 
 > [!NOTE]
-> Volg eerst de handleiding van uw eigen oven. Deze gids brengt samen wat makers van kegels en ovens publiceren over eenvoudige elektrische ovens; hij vervangt de instructies voor uw model niet, en waar de twee verschillen, geldt de handleiding.
+> Volg eerst de handleiding van uw eigen oven. Deze gids brengt samen wat kegel- en ovenmakers publiceren over eenvoudige elektrische ovens; hij vervangt de instructies voor uw model niet, en waar beide verschillen, wint de handleiding.
 
-Een **pyrometrische kegel**{{en: pyrometric cone}} is een kleine, slanke piramide van een gestandaardiseerd keramisch poeder. Als hij genoeg warmte heeft gekregen, wordt hij zacht en buigt hij om, telkens op dezelfde manier. U zet kegels in de oven naast het werk en leest af hoe ver ze zijn omgebogen.
+Een **pyrometrische kegel**{{en: pyrometric cone}} is een kleine, slanke piramide van een gestandaardiseerd keramisch poeder. Als hij genoeg warmte heeft gehad, wordt hij zacht en buigt hij op een herhaalbare manier om. U zet kegels naast het werk in de oven en leest af hoe ver ze zijn omgebogen.
 
-Kegels meten **heatwork**, het samenspel van temperatuur en tijd. In de woorden van Orton, de belangrijkste Amerikaanse kegelfabrikant: “Kegels meten niet alleen temperatuur.” Een kegel die langzaam wordt verhit, buigt om bij een lagere temperatuur dan een kegel die snel wordt verhit, en een glazuur{{en: glaze}} doet hetzelfde. Daarom geeft Orton de temperatuur van elke kegel bij een opgegeven stooksnelheid over de laatste {{180 °F; 100 °C}} van de stook. Zodra een kegel begint te bewegen, buigt hij binnen een smal temperatuurbereik om, “meestal minder dan 40° F” (22 °C).
+Kegels meten **heatwork**, het gecombineerde effect van temperatuur en tijd. Met de woorden van Orton, de belangrijkste Amerikaanse kegelmaker: “Kegels meten niet alleen temperatuur.” Een kegel die langzaam wordt verwarmd, buigt bij een lagere temperatuur om dan een die snel wordt verwarmd, en een glazuur{{en: glaze}} gedraagt zich net zo. Daarom geeft Orton de temperatuur van elke kegel voor een opgegeven stooksnelheid over de laatste {{180 °F; 100 °C}} van de stook. Zodra een kegel begint te bewegen, buigt hij om binnen een smal bereik, “meestal minder dan 40° F” (22 °C).
 
 ### Kegelnummers
 
-De kegelnummers lopen van 022, de koelste, tot 42. Een nul vooraan geeft de koelere reeks aan en wordt uitgesproken als “nul”: kegel 06 (“nul zes”) is koeler dan kegel 04, en kegel 01 heeft minder warmte nodig dan kegel 1. Orton waarschuwt dat het belangrijk is de twee reeksen niet door elkaar te halen. Het verschil is groot: kegel 06 buigt om bij een temperatuur die meer dan {{400 °F; 220 °C}} lager ligt dan bij kegel 6.
+Kegelnummers lopen van 022, de koelste, tot 42. Een voorloopnul geeft de koelere reeks aan en wordt gelezen als “nul”: kegel 06 (“nul zes”) is koeler dan kegel 04, en kegel 01 heeft minder warmte nodig dan kegel 1. Orton waarschuwt dat het belangrijk is de twee reeksen niet door elkaar te halen. Het verschil is groot: kegel 06 buigt om bij meer dan {{400 °F; 220 °C}} koeler dan kegel 6.
 
-Table: Gangbare temperatuurgebieden, voor zelfstaande kegels bij {{108 °F/h; 60 °C/h}}
-Label: Temperatuurgebieden
+Table: Gebruikelijke stookbereiken, voor zelfstaande kegels bij {{108 °F/h; 60 °C/h}}
+Label: Stookbereiken
 
-| Gebied            | Kegels |                    Temperatuur | Gebruikelijk voor                                                 |
-| ----------------- | ------ | -----------------------------: | ----------------------------------------------------------------- |
-| Lage temperatuur  | 06–04  |  {{1828–1945 °F; 998–1063 °C}} | Glazuren voor aardewerk{{en: earthenware}}; biscuit{{en: bisque}} |
-| Middentemperatuur | 5–6    | {{2167–2232 °F; 1186–1222 °C}} | Steengoed{{en: stoneware}} en porselein uit de elektrische oven   |
-| Hoge temperatuur  | 9–10   | {{2300–2345 °F; 1260–1285 °C}} | Vooral steengoed en porselein uit de gasoven                      |
+| Bereik            | Kegels |                    Temperatuur | Typisch gebruik                                |
+| ----------------- | ------ | -----------------------------: | ---------------------------------------------- |
+| Lage temperatuur  | 06–04  |  {{1828–1945 °F; 998–1063 °C}} | Glazuren voor aardewerk; biscuit               |
+| Middentemperatuur | 5–6    | {{2167–2232 °F; 1186–1222 °C}} | Steengoed en porselein in een elektrische oven |
+| Hoge temperatuur  | 9–10   | {{2300–2345 °F; 1260–1285 °C}} | Steengoed en porselein, meestal in een gasoven |
 
-Leveranciers in het Verenigd Koninkrijk, Europa, Australië en Nieuw-Zeeland geven vaak een temperatuur in °C in plaats van een kegel: zoek de dichtstbijzijnde kegel op in de tabel hieronder en controleer die met een controlekegel{{en: witness cone}} op de ovenplaat naast het werk. U zou er niet van uit moeten gaan dat Segerkegels en Staffordshire-kegels, de oudere Europese reeksen, dezelfde nummers gebruiken als Orton; daarom gebruikt deze gids Ortonkegels (in de winkel: Orton cones).
+Leveranciers in het Verenigd Koninkrijk, Europa, Australië en Nieuw-Zeeland geven vaak een temperatuur in °C in plaats van een kegel: zoek de dichtstbijzijnde kegel in de tabel hieronder en bevestig die met een controlekegel{{en: witness cone}}. Ga er niet van uit dat Segerkegels en Staffordshire-kegels, de oudere Europese reeksen, dezelfde nummers hebben als die van Orton; deze gids gebruikt daarom Ortonkegels.
 
 ### Een houdtijd voegt heatwork toe
 
-Bij een **houdtijd**{{en: hold}} (ook **pendelen**{{en: soak}} genoemd) blijft de oven een tijdlang op één temperatuur. Omdat kegels heatwork meten, kan een houdtijd op de toptemperatuur een hogere toptemperatuur vervangen. Orton geeft deze ruwe vergelijkingen:
+Een **houdtijd**{{en: hold}} (ook wel **soak**) houdt de oven een tijdje op één temperatuur. Omdat kegels heatwork meten, kan een houdtijd aan de top in de plaats komen van een hogere eindtemperatuur. Orton geeft deze globale equivalenten:
 
-Table: Wat een houdtijd op de toptemperatuur waard is
-Label: Houdtijd en heatwork
+Table: Wat een houdtijd op de eindtemperatuur waard is
+Label: Houdtijden en heatwork
 
-| Houdtijd            | Ongeveer evenveel heatwork als                                     |
-| ------------------- | ------------------------------------------------------------------ |
-| Ongeveer 20 minuten | Een toptemperatuur die {{18 °F; 10 °C}} hoger ligt                 |
-| 40–60 minuten       | Een toptemperatuur die {{36 °F; 20 °C}} hoger ligt                 |
-| Ongeveer 2 uur      | Een toptemperatuur die {{54 °F; 30 °C}} hoger ligt                 |
-| 1–2 uur             | “kan voldoende zijn om de eerstvolgende hetere kegel te vervormen” |
-| 4–6 uur             | Genoeg om een kegel die twee nummers heter is, te laten ombuigen   |
+| Houdtijd            | Ongeveer hetzelfde heatwork als                   |
+| ------------------- | ------------------------------------------------- |
+| Ongeveer 20 minuten | Een eindtemperatuur die {{18 °F; 10 °C}} heter is |
+| 40–60 minuten       | Een eindtemperatuur die {{36 °F; 20 °C}} heter is |
+| Ongeveer 2 uur      | Een eindtemperatuur die {{54 °F; 30 °C}} heter is |
+| 4–6 uur             | Genoeg om een kegel twee nummers heter te buigen  |
 
-Een houdtijd is dus nooit gratis: als u er een toevoegt, reken er dan op dat de kegels verder ombuigen, en verlaag de toptemperatuur om dat te compenseren.
+Orton voegt eraan toe dat een houdtijd van 1–2 uur “voldoende kan zijn om de kegel met het eerstvolgende hetere nummer te vervormen”.
+
+Een houdtijd is dus nooit gratis: als u er een toevoegt, verwacht dan dat de kegels verder buigen, en verlaag de eindtemperatuur daarop.
 
 ### Soorten kegels
 
-Orton maakt vier soorten. Twee staan op de ovenplaat en laten zien wat het werk heeft gekregen; twee zijn voor de kiln sitter.
+Orton maakt vier soorten. Twee staan op de ovenplaat om te laten zien wat het werk heeft gekregen; twee zijn voor de kiln sitter.
 
 Table: De vier soorten kegels van Orton
 Label: Soorten kegels
 
-| Soort             | Gebruikt als                  | Hoe hij staat                                                                                                 |
-| ----------------- | ----------------------------- | ------------------------------------------------------------------------------------------------------------- |
-| Zelfstaand        | Controlekegel op de ovenplaat | Een ingebouwde voet bepaalt de hoogte, 1¾ inch (44 mm), en de schuine stand van 8°; geen houder nodig         |
-| Groot             | Controlekegel op de ovenplaat | In een kegelhouder of een klompje klei gezet, zodat er precies 2 inch (51 mm) uitsteekt, 8° uit de verticaal  |
-| Klein (minikegel) | Kiln sitter                   | Ligt dwars over de steuntjes van de kiln sitter; 15/16 inch (24 mm) steekt uit als hij op een ovenplaat staat |
-| Staafje           | Kiln sitter                   | Hetzelfde poeder als kleine kegels, in de vorm van een gelijkmatig staafje                                    |
+| Soort             | Gebruikt voor                 | Hoe hij staat                                                                                                  |
+| ----------------- | ----------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| Zelfstaand        | Controlekegel op de ovenplaat | Een ingebouwde voet bepaalt de hoogte, 1¾ inch (44 mm), en de helling van 8°; geen houder nodig                |
+| Groot             | Controlekegel op de ovenplaat | In een kegelhouder of een klompje klei gezet met precies 2 inch (51 mm) zichtbaar, 8° uit de verticaal hellend |
+| Klein (minikegel) | Kiln sitter                   | Ligt dwars over de steuntjes van de kiln sitter; 15/16 inch (24 mm) zichtbaar als hij op een ovenplaat staat   |
+| Staafje           | Kiln sitter                   | Hetzelfde poeder als kleine kegels, in een gelijkmatige staafvorm                                              |
 
-De hoogte doet ertoe: een verschil van ¼ inch (6 mm) in de hoogte van een grote kegel “kan meer dan een halve kegel verschil in het ombuigen geven”. Kegels bederven en verouderen niet, en vochtige opslag heeft er geen invloed op.
+Hoogte doet ertoe: een verschil van ¼ inch (6 mm) in de hoogte van een grote kegel “kan meer dan een halve kegel verschil in buiging veroorzaken”. Kegels gaan niet achteruit en verouderen niet, en vochtige opslag heeft er geen invloed op.
 
 ### Wat “kegel 6” in de praktijk betekent
 
-De tabel geeft voor een zelfstaande kegel 6 {{2232 °F; 1222 °C}}, maar alleen als de oven over de laatste {{180 °F; 100 °C}} stijgt met {{108 °F/h; 60 °C/h}}. Bij een stijging van {{270 °F/h; 150 °C/h}} buigt dezelfde kegel om bij {{2269 °F; 1243 °C}}. Echte ovens wijken daar weer van af: Digitalfire meldt dat “de meeste ovens kegel 6 bereiken bij 2200°F, niet bij 2232°F”. “Kegel 6” betekent dus dat het werk het heatwork heeft gekregen waarbij een kegel 6 ombuigt, wat een thermometer op dat moment ook aangaf.
+De tabel geeft een zelfstaande kegel 6 als {{2232 °F; 1222 °C}}, maar alleen als de laatste {{180 °F; 100 °C}} stijgen met {{108 °F/h; 60 °C/h}}. Bij een stijging van {{270 °F/h; 150 °C/h}} buigt dezelfde kegel om bij {{2269 °F; 1243 °C}}. Echte ovens wijken weer anders af: Digitalfire meldt dat “de meeste ovens kegel 6 bereiken bij 2200°F, niet bij 2232°F”. “Kegel 6” betekent dus dat het werk het heatwork kreeg dat een kegel 6 doet ombuigen, wat een thermometer op dat moment ook aanwees.
 
 :::orton
 
 > [!NOTE]
-> Stook op de kegel, niet op de klok of de wijzerplaat. Stel een regelaar in op kegelnummer, en laat elke stook bevestigen door een controlekegel op de ovenplaat.
+> Stook op kegel, niet op de klok of de wijzer. Stel een regelaar in op kegelnummer, en laat een controlekegel op de ovenplaat elke stook bevestigen.
 
 :::
 
 :::temperature
 
 > [!NOTE]
-> Als u op temperatuur stookt, houd dan het eind van elke stook gelijk: dezelfde laatste stooksnelheid, dezelfde toptemperatuur en dezelfde houdtijd. Dan lukt een glazuur dat één keer goed is gegaan, ook de volgende keer.
+> Als u op temperatuur stookt, houd dan het einde van elke stook gelijk: dezelfde laatste stijging, dezelfde eindtemperatuur en dezelfde houdtijd. Dan werkt een glazuur dat een keer werkte opnieuw.
 
 :::
 
@@ -198,11 +199,11 @@ Veel kiln sitters, waaronder de LT-modellen van Dawson, hebben een **tijdschakel
 Table: Hoe lang u de tijdschakelaar instelt
 Label: Instelling van de tijdschakelaar
 
-| Bron      | Instelling                                                                                                  |
-| --------- | ----------------------------------------------------------------------------------------------------------- |
-| Dawson    | ½ uur langer dan de verwachte stooktijd tot u de oven kent, later zelfs maar ¼ uur; nooit langer dan 20 uur |
-| L&L       | De eerste keer heel hoog, en noteer hoe lang de stook duurt; daarna ongeveer 1 uur langer                   |
-| Bracker’s | 30 minuten tot 1 uur langer dan de stooktijd                                                                |
+| Bron      | Instelling                                                                                                                    |
+| --------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| Dawson    | ½ uur langer dan de verwachte stooktijd tot u de oven kent, later nog maar ¼ uur langer; stel hem nooit in op meer dan 20 uur |
+| L&L       | De eerste keer heel hoog, en noteer hoe lang de stook duurt; daarna ongeveer 1 uur langer                                     |
+| Bracker’s | 30 minuten tot 1 uur langer dan de stooktijd                                                                                  |
 
 > [!NOTE]
 > Ons uitgangspunt: de eerste keer ruim (binnen de 20 uur van de schaal), daarna ½ tot 1 uur langer dan de tijd die u hebt genoteerd. De tijdschakelaar laat ook zien hoe lang een stook duurde: ingesteld op 7 en geëindigd op 1 betekent 6 uur.
@@ -375,7 +376,7 @@ De **biscuitstook**{{en: bisque}} (in Brits Engels: biscuit) is de eerste, lager
 
 ### Waarom het begin langzaam gaat
 
-Water dat stoom wordt, “zet 1170 keer uit”, schrijft Bracker’s, dus vochtig werk moet langzaam worden gedroogd. L&L en Orton raden aan: “Onder 1500°F (815°C) zou er extra op moeten worden gelet dat de scherf gelijkmatig wordt verhit”, en koolstof moet vóór ongeveer {{1200 °F; 650 °C}} zijn uitgebrand. Boven {{1500 °F; 816 °C}} kan de oven sneller stijgen.
+Water zet meer dan duizend keer uit als het stoom wordt, dus vochtig werk moet langzaam worden gedroogd. L&L en Orton raden aan: “Onder 1500°F (815°C) zou er extra op moeten worden gelet dat de scherf gelijkmatig wordt verhit”, en koolstof moet vóór ongeveer {{1200 °F; 650 °C}} zijn uitgebrand. Boven {{1500 °F; 816 °C}} kan de oven sneller stijgen.
 
 Table: Wat er gebeurt als een biscuitstook opwarmt
 Label: Wat er gebeurt in een biscuitstook
@@ -599,18 +600,18 @@ Een **pyrometer** is een temperatuurmeter die zijn waarde krijgt van een **therm
 
 ### Ontluchten
 
-In het begin van een stook geven klei en glazuur{{en: glaze}} waterdamp en andere dampen af, waaronder koolmonoxide, en glazuren kunnen ook later in de stook giftige dampen afgeven. L&L noemt het afvoeren daarvan “essentieel”. Zonder afzuigsysteem betekent dat in de eerste fasen het deksel op een kier en de kijkgaten open, zoals in de werkwijzen hierboven; langzamer opwarmen in die fase helpt ook de koolstof uit te branden. Met een **onderafzuiging** (een afzuiging met ventilator die aan de oven is bevestigd) blijven volgens Orton het deksel en de kijkgaten de hele stook dicht, behalve om de kegels te controleren. Een open bovenste kijkgat beschermt ook de buis van de kiln sitter en de metalen delen van de oven.
+Vroeg in een stook geven klei en glazuur{{en: glaze}} waterdamp en dampen af, waaronder koolmonoxide, en glazuren kunnen later in de stook ook giftige dampen afgeven. L&L noemt het afvoeren ervan “essentieel”. Zonder afzuigsysteem betekent dat: het deksel op een kier en de kijkgaten open in de eerste fasen, zoals in de werkwijzen hierboven; ook langzamer opwarmen in die tijd helpt de koolstof uit te branden. In een oven zonder afzuiging zegt ook Dawson, die de kiln sitter maakte, het bovenste kijkgat de hele stook open te laten: de ontluchting “vermindert het verslechteren van de metalen onderdelen van de oven en verlengt de levensduur van de buis”. Een **onderafzuiging**{{en: downdraft vent}} (een aangedreven afzuiging die op de oven is gemonteerd) verandert dit. Zij verzorgt de ontluchting, dus volgens Orton blijven het deksel en de kijkgaten de hele stook dicht, behalve om de kegels te controleren, en volgens L&L laat u de afzuiging aan en stopt u de kijkgaten dicht.
 
-Over het ventileren van de ruimte en over koolmonoxidemelders: zie [Veilig mengen en ventileren](/guides/safe-mixing) en [Vergiftig uw gezin niet](/guides/home-safety).
+Voor het ventileren van de ruimte, en voor koolmonoxidemelders, zie [Veilig mengen en ventileren](/guides/safe-mixing) en [Vergiftig uw gezin niet](/guides/home-safety).
 
 ### Terwijl de oven stookt
 
-- Kijk alleen door een kijkgat met een lasbril met IR-filter en beschermingsniveau 3; een zonnebril is niet genoeg. Skutt raadt aan de stoppen met een draaiende beweging op hun plaats te zetten, zodat ze er niet uit vallen.
-- Laat de oven niet langer dan de verwachte stooktijd onbewaakt; een kiln sitter is geen faalveilige beveiliging.
-- Stook nooit op of bij iets wat kan branden, zoals een houten vloer of tapijt.
-- Houd de veiligheidsafstanden aan die in uw handleiding staan. Gepubliceerde waarden lopen van 12 inch (30 cm) tot 3 voet (91 cm); waar de handleiding niets over zegt, is 18 inch (46 cm) van wanden en 3 voet (91 cm) van alles wat kan branden de veiligste keuze.
-- Houd de ruimte rond het valgewicht van de kiln sitter vrij, zodat het kan vallen.
-- Zet aan het eind van de stook de schakelaars uit en schakel ook de zekering uit.
+- Kijk alleen door een kijkgat met een lasbril met IR-filter van beschermingsniveau 3; een zonnebril is niet genoeg. Skutt adviseert de stoppen er met een draai in te zetten, zodat ze er niet uit vallen.
+- Laat de oven niet langer dan de verwachte stooktijd onbeheerd; een kiln sitter is geen waterdichte beveiliging.
+- Stook nooit op of vlak bij iets wat kan branden, zoals een houten vloer of tapijt.
+- Houd de veiligheidsafstanden uit uw handleiding aan. Gepubliceerde cijfers lopen uiteen van 12 inch (30 cm) tot 3 voet (91 cm); waar de handleiding zwijgt, is 18 inch (46 cm) van muren en 3 voet (91 cm) van alles wat kan branden de veiligste keuze.
+- Houd de ruimte rond het gewicht van de kiln sitter vrij, zodat het kan vallen.
+- Zet aan het einde van de stook de schakelaars uit en schakel ook de zekering uit.
 
 ## Afkoelen en de oven leeghalen {#cooling}
 

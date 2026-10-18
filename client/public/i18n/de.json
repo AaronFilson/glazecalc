@@ -17,13 +17,17 @@
     "confirmEmail": "E-Mail-Adresse bestätigen - Glazecalc",
     "home": "Ihr Werkstatt-Notizbuch - Glazecalc",
     "recipe": "Rezepte - Glazecalc",
+    "import": "Rezepte einfügen - Glazecalc",
+    "blends": "Mischreihen für Probeplättchen - Glazecalc",
     "material": "Rohstoffe - Glazecalc",
     "additive": "Zusätze - Glazecalc",
     "firingLogs": "Brennprotokolle - Glazecalc",
     "notes": "Notizen - Glazecalc",
     "trash": "Papierkorb - Glazecalc",
     "account": "Ihr Konto und Ihre Einstellungen - Glazecalc",
-    "notFound": "Seite nicht gefunden - Glazecalc"
+    "notFound": "Seite nicht gefunden - Glazecalc",
+    "shared": "Geteiltes Rezept - Glazecalc",
+    "assistants": "Glazecalc mit Ihrem KI-Assistenten nutzen - Glazecalc"
   },
   "nav": {
     "skip": "Zum Inhalt springen",
@@ -39,7 +43,9 @@
     "guides": "Anleitungen",
     "about": "Über Glazecalc",
     "account": "Konto",
+    "trialAccount": "Testzugang",
     "accountTitle": "Ihr Konto und Ihre Einstellungen",
+    "trash": "Papierkorb",
     "signOut": "Abmelden",
     "createAccount": "Kostenloses Konto erstellen"
   },
@@ -66,7 +72,8 @@
     "problem": "Problem melden",
     "pottery": "Handgemachte Keramik: Updraft Pottery Studio",
     "copyright": "© 2017–2026 Aaron Filson / Candling Development Studio · Kostenlos und Open Source (MIT-Lizenz)",
-    "languages": "Sprachen"
+    "languages": "Sprachen",
+    "language": "Sprache:"
   },
   "numbers": {
     "notANumber": "Geben Sie eine Zahl ein, zum Beispiel {example}.",
@@ -85,7 +92,7 @@
     "about": "Glazecalc ist ein kostenloser Open-Source-Rechner für Glasurchemie, mit Notizbuch. Sehen Sie, wie er die Segerformel (UMF) berechnet und wie er aufgebaut ist.",
     "privacy": "Wie Glazecalc mit Ihren Daten umgeht: keine Werbung, keine Analyse, kein Tracking, kein Verkauf. Was gespeichert wird, warum und wie Sie Ihre Rechte nutzen.",
     "signup": "Kostenloses Konto bei Glazecalc erstellen, für Ihre Glasurrezepte, Rohstoffe, Notizen und Brennprotokolle. Keine Werbung, und Ihre Daten werden nie verkauft.",
-    "imageAlt": "Glazecalc: Verstehen Sie Ihre Glasuren, statt sie nur anzurühren."
+    "imageAlt": "Die Startseite von Glazecalc: kostenlose Glasurchemie für die Töpferei, neben einem Foto gebrannter Kegelsätze."
   },
   "notices": {
     "dismiss": "Schließen",
@@ -93,11 +100,15 @@
     "error": "Fehler: {text}"
   },
   "remove": {
-    "removed": "„{name}“ wurde entfernt.",
     "alreadyRemoved": "„{name}“ war bereits entfernt.",
+    "trashed": "„{name}“ wurde in den Papierkorb gelegt.",
+    "undo": "Rückgängig",
+    "restored": "„{name}“ wurde wiederhergestellt.",
+    "restoreFailed": "„{name}“ konnte nicht wiederhergestellt werden. Es liegt weiterhin im Papierkorb.",
     "failed": "Das Entfernen ist fehlgeschlagen. Bitte versuchen Sie es erneut.",
     "question": "„{name}“ entfernen?",
     "cannotUndo": "Das lässt sich nicht rückgängig machen.",
+    "toTrash": "Sie können es 30 Tage lang aus dem Papierkorb wiederherstellen.",
     "removing": "Wird entfernt …",
     "yes": "Ja, entfernen",
     "cancel": "Abbrechen",
@@ -222,20 +233,26 @@
     "soldIn": "Erhältlich in",
     "showing": "{shown} von {noun, select, additives {{total, plural, one {# Zusatz} other {# Zusätzen}}} other {{total, plural, one {# Rohstoff} other {# Rohstoffen}}}} angezeigt",
     "name": "Name",
+    "equivalentWeight": "Äquivalentgewicht",
+    "firedWeight": "Gewicht nach dem Brand",
     "notes": "Notizen",
     "analysis": "Analyse",
+    "details": "Details",
     "formula": "Formel",
+    "formulaLine": "Formel: {formula}",
     "useInstead": "<b>Stattdessen verwenden:</b> {list}",
     "similar": "Ähnlich: {list}",
     "replaces": "Ersetzt: {list}",
     "aliases": "Auch genannt: {list}",
     "madeBy": "Hersteller: {name}",
     "source": "Quelle:",
+    "hazardsLine": "Gefahren: {hazards}",
     "noChemistry": "Keine Analyse: nicht in der Segerformel",
     "countedAs": "Gezählt als {name}",
     "nothingMatches": "Keine Treffer. Versuchen Sie einen anderen Namen, eine andere Art oder Region.",
     "loading": "Wird geladen …",
-    "notFetched": "Die Liste konnte nicht geladen werden. <retry>Erneut versuchen</retry>"
+    "notFetched": "Die Liste konnte nicht geladen werden. <retry>Erneut versuchen</retry>",
+    "showAll": "{noun, select, additives {{count, plural, one {# Zusatz anzeigen} other {Alle # Zusätze anzeigen}}} other {{count, plural, one {# Rohstoff anzeigen} other {Alle # Rohstoffe anzeigen}}}}"
   },
   "chemistryForm": {
     "name": "{noun, select, additive {Geben Sie dem Zusatz einen Namen.} other {Geben Sie dem Rohstoff einen Namen.}}",
@@ -270,7 +287,7 @@
     "close": "Schließen"
   },
   "unity": {
-    "fluxes": "Flussmittel – RO",
+    "fluxes": "Flussmittel – R₂O und RO",
     "stabilizers": "Stabilisatoren – R₂O₃",
     "glassFormers": "Glasbildner – RO₂",
     "wildcards": "Sonstige Oxide",

@@ -48,7 +48,7 @@ Label: Set de început
 | Feldspat potasic{{en: potash feldspar}}                 | Cel care se găsește acum acolo unde locuiți, de exemplu Mahavir în SUA                                 |
 | Nefelin-sienit{{en: nepheline syenite}}                 | Oricare; Glazy remarcă puterea lui de fondant mai mare; se folosește des la temperatură joasă și medie |
 | Carbonat de calciu (cretă)                              | Oricare                                                                                                |
-| Talc                                                    | Oricare                                                                                                |
+| Talc                                                    | Orice tip fără azbest; verificați-i FDS (vezi „Prepararea în siguranță și ventilația”)                 |
 | O frită cu bor, pentru temperatură medie                | Ferro 3134, 3124 sau 3195; în Regatul Unit, Potterycrafts P3124 sau P3195                              |
 | Bentonită și coloranți                                  | Cantități mici                                                                                         |
 
@@ -211,7 +211,7 @@ Label: Apa pentru o greutate specifică țintă
 
 **CMC** (carboximetilceluloză) face glazura preparată mai lipicioasă și mai lentă la uscare și lasă un strat mai tare, care aderă la piesă. Contează cel mai mult la glazurile pentru pensulare și la cele cu multă frită{{en: frit}}. În exemplul Digitalfire se amestecă 3,75 g în 1000 g de glazură preparată, iar încorporarea trebuie făcută cu blenderul. O glazură cu CMC nu se gelifică cu sare amară și, pentru că microbii se hrănesc cu acest liant, se poate schimba în găleată și poate începe să miroasă.
 
-**Bentonita**, o argilă foarte fină, ajută la menținerea celorlalte particule în suspensie. Pentru aceasta, glazurile pentru imersie se bazează de obicei pe 15–25 % argilă crudă. Pentru o rețetă cu prea puțină argilă, ajută aproximativ 1–2 % bentonită.
+**Bentonita**, o argilă foarte fină, ajută la menținerea celorlalte particule în suspensie. Pentru aceasta, glazurile pentru imersie se bazează de obicei pe 15–25 % argilă crudă. Pentru o rețetă cu prea puțină argilă, ajută aproximativ 1–3 % bentonită; Digitalfire spune că o glazură cu peste 15 % argilă nu ar trebui să aibă nevoie de mai mult de 1 %.
 
 ## Plăcuțe de test și serii de teste {#testing}
 
@@ -284,6 +284,7 @@ Label: Model de evidență
 - [Digitalfire: Epsom salts](https://digitalfire.com/material/epsom+salts)
 - [Digitalfire: CMC gum](https://digitalfire.com/material/cmc%2Bgum)
 - [Digitalfire: Dipping glaze](https://digitalfire.com/glossary/dipping+glaze)
+- [Digitalfire: Bentonite](https://digitalfire.com/material/bentonite)
 - [Digitalfire: Water solubility](https://digitalfire.com/glossary/water+solubility)
 - [Digitalfire: Gerstley Borate](https://digitalfire.com/material/gerstley+borate)
 - [Digitalfire: Mahavir potash feldspar](https://digitalfire.com/material/mahavir+potash+feldspar)

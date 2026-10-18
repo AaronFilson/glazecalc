@@ -17,13 +17,17 @@
     "confirmEmail": "E-mail-cím megerősítése - Glazecalc",
     "home": "Az Ön műhelyfüzete - Glazecalc",
     "recipe": "Receptek - Glazecalc",
+    "import": "Receptek beillesztése - Glazecalc",
+    "blends": "Keverékek próbalapokhoz - Glazecalc",
     "material": "Nyersanyagok - Glazecalc",
     "additive": "Adalékok - Glazecalc",
     "firingLogs": "Égetési naplók - Glazecalc",
     "notes": "Jegyzetek - Glazecalc",
     "trash": "Lomtár - Glazecalc",
     "account": "Fiókja és beállításai - Glazecalc",
-    "notFound": "Az oldal nem található - Glazecalc"
+    "notFound": "Az oldal nem található - Glazecalc",
+    "shared": "Megosztott recept - Glazecalc",
+    "assistants": "A Glazecalc használata az MI-asszisztensből - Glazecalc"
   },
   "nav": {
     "skip": "Ugrás a tartalomhoz",
@@ -39,7 +43,9 @@
     "guides": "Útmutatók",
     "about": "Névjegy",
     "account": "Fiók",
+    "trialAccount": "Próbahasználat",
     "accountTitle": "Fiókja és beállításai",
+    "trash": "Lomtár",
     "signOut": "Kijelentkezés",
     "createAccount": "Ingyenes fiók létrehozása"
   },
@@ -66,7 +72,8 @@
     "problem": "Hiba bejelentése",
     "pottery": "Kézműves kerámia: Updraft Pottery Studio",
     "copyright": "© 2017–2026 Aaron Filson / Candling Development Studio · Ingyenes és nyílt forráskódú (MIT-licenc)",
-    "languages": "Nyelvek"
+    "languages": "Nyelvek",
+    "language": "Nyelv:"
   },
   "numbers": {
     "notANumber": "Adjon meg egy számot, például {example}.",
@@ -85,7 +92,7 @@
     "about": "A Glazecalc ingyenes, nyílt forráskódú mázkémiai kalkulátor és műhelyfüzet. Nézze meg, hogyan számítja ki a Seger-képletet (UMF), és hogyan épül fel.",
     "privacy": "Hogyan kezeli a Glazecalc az adatait: nincs reklám, nincs analitika, nincs követés, és semmit nem ad el. Mit őriz meg, miért, és hogyan élhet a jogaival.",
     "signup": "Hozzon létre ingyenes Glazecalc-fiókot, hogy megőrizze mázreceptjeit, nyersanyagait, jegyzeteit és égetési naplóit. Nincs reklám, és adatait soha nem adjuk el.",
-    "imageAlt": "Glazecalc: értse meg a mázait, ne csak keverje őket."
+    "imageAlt": "A Glazecalc kezdőoldala: ingyenes mázkémia fazekasoknak, mellette egy fotó kiégetett gúlákról."
   },
   "notices": {
     "dismiss": "Bezárás",
@@ -93,11 +100,15 @@
     "error": "Hiba: {text}"
   },
   "remove": {
-    "removed": "Eltávolítva: „{name}”.",
     "alreadyRemoved": "A(z) „{name}” elemet már eltávolították.",
+    "trashed": "A(z) „{name}” elemet áthelyeztük a Lomtárba.",
+    "undo": "Visszavonás",
+    "restored": "A(z) „{name}” elemet visszahelyeztük.",
+    "restoreFailed": "A(z) „{name}” elemet nem sikerült visszahelyezni. Még mindig a Lomtárban van.",
     "failed": "Nem sikerült eltávolítani. Kérjük, próbálja újra.",
     "question": "Eltávolítja a(z) „{name}” elemet?",
     "cannotUndo": "Ez nem vonható vissza.",
+    "toTrash": "30 napig visszahelyezheti a Lomtárból.",
     "removing": "Eltávolítás...",
     "yes": "Igen, eltávolítás",
     "cancel": "Mégse",
@@ -222,20 +233,26 @@
     "soldIn": "Kapható",
     "showing": "{noun, select, additives {{total, plural, one {# adalékból} other {# adalékból}}} other {{total, plural, one {# nyersanyagból} other {# nyersanyagból}}}} {shown} látható",
     "name": "Név",
+    "equivalentWeight": "Egyenértéktömeg",
+    "firedWeight": "Égetett tömeg",
     "notes": "Megjegyzések",
     "analysis": "Összetétel",
+    "details": "Részletek",
     "formula": "Képlet",
+    "formulaLine": "Képlet: {formula}",
     "useInstead": "<b>Helyette használható:</b> {list}",
     "similar": "Hasonló: {list}",
     "replaces": "Helyettesíti: {list}",
     "aliases": "Más néven: {list}",
     "madeBy": "Gyártó: {name}",
     "source": "Forrás:",
+    "hazardsLine": "Veszélyek: {hazards}",
     "noChemistry": "Nincs kémiai adat: kimarad a Seger-képletből",
     "countedAs": "Számítva mint: {name}",
     "nothingMatches": "Nincs találat. Próbáljon másik nevet, típust vagy régiót.",
     "loading": "Betöltés...",
-    "notFetched": "A listát nem sikerült betölteni. <retry>Újrapróbálás</retry>"
+    "notFetched": "A listát nem sikerült betölteni. <retry>Újrapróbálás</retry>",
+    "showAll": "{noun, select, additives {{count, plural, one {# adalék megjelenítése} other {Minden # adalék megjelenítése}}} other {{count, plural, one {# nyersanyag megjelenítése} other {Minden # nyersanyag megjelenítése}}}}"
   },
   "chemistryForm": {
     "name": "{noun, select, additive {Adjon nevet az adaléknak.} other {Adjon nevet a nyersanyagnak.}}",
@@ -270,7 +287,7 @@
     "close": "Bezárás"
   },
   "unity": {
-    "fluxes": "Olvasztóanyagok – RO",
+    "fluxes": "Olvasztóanyagok – R₂O és RO",
     "stabilizers": "Stabilizálók – R₂O₃",
     "glassFormers": "Üvegképzők – RO₂",
     "wildcards": "Egyéb oxidok",

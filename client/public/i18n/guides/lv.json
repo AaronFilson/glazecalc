@@ -56,7 +56,8 @@
     "vet": "Zvaniet savam veterinārārstam.",
     "checkedOn": "Pārbaudīts vietnēs:",
     "choosePrompt": "Izvēlieties valsti, lai redzētu, kur tur zvanīt.",
-    "ministry": "Veselības ministrijas lapa: <link>{name}</link>."
+    "ministry": "Veselības ministrijas lapa: <link>{name}</link>.",
+    "reported": "Oficiālajās valdības lapās ir minēti 113, 114 un 115, taču nav norādīts, kam katrs paredzēts; parādītās funkcijas atbilst apkārtrakstam 22/2014/TT-BTTTT, kā to min sekundāras lapas."
   },
   "density": {
     "sg": "rel. blīvums {value}",
@@ -91,6 +92,7 @@
     "caption": "Ieelpojamā kristāliskā silīcija dioksīda robežvērtība darba vietā valstī {region}, 8 stundu vidējā vērtība (pārbaudīts: {date})",
     "captionControl": "Mēraukla ieelpojamajam kristāliskajam silīcija dioksīdam darba zonas gaisā valstī {region} (pārbaudīts: {date})",
     "both": "Kvarcs un kristobalīts",
+    "freeSilica": "Brīvais silīcija dioksīds",
     "quartz": "Kvarcs",
     "cristobalite": "Kristobalīts",
     "actionLevel": "Rīcības līmenis",
@@ -102,6 +104,9 @@
     "quartzAll": "Kvarcs, ja putekļi sastāv tikai no kvarca",
     "cristobaliteAll": "Kristobalīts, ja putekļi sastāv tikai no kristobalīta",
     "allFree": "Kontroles koncentrācija, ja putekļi sastāv tikai no brīvā silīcija dioksīda",
+    "bandFromTo": "Putekļi ar {from}% līdz {to}% brīvā silīcija dioksīda (SiO₂)",
+    "bandOverTo": "Putekļi ar vairāk nekā {from}% un līdz {to}% brīvā silīcija dioksīda",
+    "bandAbove": "Putekļi ar vairāk nekā {from}% brīvā silīcija dioksīda",
     "recommended": "Ieteikums: {abbr}",
     "value": "{value} mg/m³",
     "kind": {
@@ -111,6 +116,7 @@
       "control": "Kontroles koncentrācija (管理濃度): mēraukla darba zonas gaisa novērtēšanai pēc tur veiktiem mērījumiem, nevis robežvērtība tam, ko ieelpo viens cilvēks."
     },
     "setBy": "Nosaka: <link>{law}</link>.",
+    "from": "Tā ir spēkā no {date}.",
     "lowerThanEu": "Zemāka par ES saistošo robežvērtību {value} mg/m³.",
     "sameAsEu": "Tāda pati kā ES saistošā robežvērtība.",
     "recommendedBy": "{abbr} ({by}) iesaka šo vērtību dokumentā <link>{title}</link>. Tā nav noteikta likumā.",
@@ -147,16 +153,45 @@
       "jpSmall": "Citi izstrādājumi ar ietilpību mazāku par 1,1 L, kas nav paredzēti ēdiena gatavošanai",
       "jpLarge": "Citi izstrādājumi ar ietilpību no 1,1 L līdz mazāk nekā 3 L, kas nav paredzēti ēdiena gatavošanai",
       "jpStorage": "Citi izstrādājumi ar ietilpību 3 L vai vairāk, kas nav paredzēti ēdiena gatavošanai",
-      "jpCooking": "Ēdiena gatavošanas piederumi, kuru dziļums ir 2,5 cm vai vairāk"
+      "jpCooking": "Ēdiena gatavošanas piederumi, kuru dziļums ir 2,5 cm vai vairāk",
+      "krFlat": "Nepildāmi izstrādājumi vai izstrādājumi, kuru dziļums ir mazāks par 2,5 cm",
+      "krSmall": "Citi pildāmi izstrādājumi, mazāki par 1,1 L",
+      "krMedium": "Citi pildāmi izstrādājumi, no 1,1 L līdz mazāk nekā 3 L",
+      "krStorage": "Citi pildāmi izstrādājumi, 3 L vai vairāk",
+      "krCooking": "Ēdiena gatavošanas piederumi, ēdiena sildīšanai",
+      "twFlat": "Nepildāmi izstrādājumi vai izstrādājumi, kuru dziļums nepārsniedz 2,5 cm",
+      "twSmall": "Izstrādājumi, kuru dziļums pārsniedz 2,5 cm, līdz 1,1 L",
+      "twLarge": "Izstrādājumi, kuru dziļums pārsniedz 2,5 cm, virs 1,1 L",
+      "myFlat": "Plakani trauki",
+      "mySmall": "Mazi dobi trauki",
+      "myLarge": "Lieli dobi trauki",
+      "myCooking": "Ēdiena gatavošanas piederumi",
+      "idFlat": "Izstrādājumi, kuru iekšpuse nav dziļāka par 25 mm",
+      "idSmall": "Izstrādājumi, kuru iekšpuse ir dziļāka par 25 mm, ar ietilpību mazāku par 1100 mL",
+      "idLarge": "Izstrādājumi, kuru iekšpuse ir dziļāka par 25 mm, ar ietilpību 1100 mL vai vairāk",
+      "thFlat": "Izstrādājumi, kuru dziļums nepārsniedz 25 mm",
+      "thSmall": "Izstrādājumi, kuru dziļums pārsniedz 25 mm, ar ietilpību mazāku par 1,1 L",
+      "thLarge": "Izstrādājumi, kuru dziļums pārsniedz 25 mm, ar ietilpību 1,1 L vai vairāk",
+      "thInfant": "Trauki zīdaiņu līdz 12 mēnešu vecumam barībai",
+      "thCooking": "Ēdiena gatavošanas piederumi, kas paredzēti gatavošanas karstumam",
+      "vnFlat": "Sekli izstrādājumi, kuros tur vai gatavo ēdienu",
+      "vnSmall": "Dziļi izstrādājumi ēdiena turēšanai, mazāk par 1100 mL",
+      "vnMedium": "Dziļi izstrādājumi ēdiena turēšanai, no 1100 mL līdz mazāk nekā 3000 mL",
+      "vnStorage": "Dziļi izstrādājumi ēdiena turēšanai, 3000 mL vai vairāk",
+      "vnCooking": "Dziļi izstrādājumi ēdiena gatavošanai",
+      "vnCups": "Tases un mazas bļodas"
     },
     "judged": {
       "average": "6 izstrādājumu vidējais",
-      "each": "katrs no 6"
+      "each": "katrs no 6",
+      "averageOf": "{count} izstrādājumu vidējais",
+      "eachOf": "katrs no {count}"
     },
     "euRules": "Šeit ir spēkā ES noteikumi.",
     "law": "Nosaka: <link>{law}</link>.",
     "inForce": "Spēkā stāšanās datums: {date}.",
     "atMost": "Izstrādājums atbilst prasībām, ja tas izdala ne vairāk par robežvērtību: likumā teikts “ne vairāk kā”.",
+    "ppm": "ppm šeit nozīmē miligramus uz litru pārbaudes šķīduma (mg/L).",
     "unknown": "Noteikumus valstī {region} vēl neesam noskaidrojuši.",
     "choosePrompt": "Izvēlieties valsti, lai redzētu tās noteikumus."
   },

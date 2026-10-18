@@ -24,7 +24,7 @@
     },
     "safeMixing": {
       "title": "安全配料与通风",
-      "text": "粉尘、防尘口罩、清洁、最需要小心的原料，以及给窑排风。"
+      "text": "粉尘、防颗粒物呼吸器、清洁、最需要小心的原料，以及给窑排风。"
     },
     "homeSafety": {
       "title": "别让家人中毒",
@@ -37,7 +37,7 @@
   },
   "contents": "本页内容",
   "poison": {
-    "numbersFor": "号码适用国家：",
+    "numbersFor": "查看电话号码的国家：",
     "choose": "选择您所在的国家",
     "label": "在{region}应拨打的电话",
     "caption": "在{region}应拨打的电话（号码核实于{date}）",
@@ -56,7 +56,8 @@
     "vet": "请致电您的兽医。",
     "checkedOn": "核实来源：",
     "choosePrompt": "选择您所在的国家，查看当地应拨打的电话。",
-    "ministry": "卫生部门的页面：<link>{name}</link>。"
+    "ministry": "卫生部门的页面：<link>{name}</link>。",
+    "reported": "政府官方页面列出了 113、114 和 115，但没有说明各自的用途；这里显示的职能依据 Circular 22/2014/TT-BTTTT，来自转引该文件的次级页面。"
   },
   "density": {
     "sg": "比重 {value}",
@@ -86,11 +87,12 @@
     "choosePrompt": "选择您所在的国家，查看当地的商店。"
   },
   "silica": {
-    "limitIn": "限值适用国家：",
+    "limitIn": "查看限值的国家：",
     "label": "{region}的硅尘限值",
     "caption": "{region}工作场所呼吸性结晶型二氧化硅的职业接触限值，8 小时时间加权平均（核实于{date}）",
     "captionControl": "{region}评价作业场所空气中呼吸性结晶型二氧化硅的标准（核实于{date}）",
     "both": "石英和方石英",
+    "freeSilica": "游离二氧化硅",
     "quartz": "石英",
     "cristobalite": "方石英",
     "actionLevel": "行动水平",
@@ -102,6 +104,9 @@
     "quartzAll": "石英（粉尘全部为石英时）",
     "cristobaliteAll": "方石英（粉尘全部为方石英时）",
     "allFree": "粉尘全部为游离二氧化硅时的管理浓度",
+    "bandFromTo": "游离二氧化硅（SiO₂）含量为 {from}%～{to}% 的粉尘",
+    "bandOverTo": "游离二氧化硅含量高于 {from}% 且不超过 {to}% 的粉尘",
+    "bandAbove": "游离二氧化硅含量高于 {from}% 的粉尘",
     "recommended": "{abbr} 推荐值",
     "value": "{value} mg/m³",
     "kind": {
@@ -111,10 +116,11 @@
       "control": "管理浓度（管理濃度）：根据工作场所的测定值评价作业环境空气的标准，不是对个人吸入量的限值。"
     },
     "setBy": "由<link>{law}</link>规定。",
+    "from": "自{date}起适用。",
     "lowerThanEu": "低于欧盟具有法律约束力的限值 {value} mg/m³。",
     "sameAsEu": "与欧盟具有法律约束力的限值相同。",
     "recommendedBy": "{abbr}（{by}）在其<link>{title}</link>中推荐此值。它不是法律规定。",
-    "respirators": "这里的防尘口罩按等级销售：防釉料粉尘用 {everyday}，需要更高防护时用 {higher}（<link>官方等级</link>）。",
+    "respirators": "这里的防颗粒物呼吸器按等级销售：防釉料粉尘用 {everyday}，需要更高防护时用 {higher}（<link>官方等级</link>）。",
     "unknown": "我们无法确认{region}的国家限值。欧盟具有法律约束力的限值 {value} mg/m³ 适用于每个成员国。",
     "noData": "我们还没有确认{region}的限值。",
     "agency": "国家职业安全主管机构：<link>{name}</link>。",
@@ -122,7 +128,7 @@
     "choosePrompt": "选择您所在的国家，查看其限值。"
   },
   "food": {
-    "rulesIn": "规定适用国家：",
+    "rulesIn": "查看规定的国家：",
     "label": "{region}对陶瓷器物的限量",
     "caption": "在{region}的法定检测中，烧成后的器物允许溶出的量（核实于{date}）",
     "article": "器物类别",
@@ -147,16 +153,45 @@
       "jpSmall": "其他容量低于 1.1 L、非烹饪用的器物",
       "jpLarge": "其他容量 1.1 L 及以上、低于 3 L、非烹饪用的器物",
       "jpStorage": "其他容量 3 L 及以上、非烹饪用的器物",
-      "jpCooking": "烹饪器皿，深度 2.5 cm 及以上"
+      "jpCooking": "烹饪器皿，深度 2.5 cm 及以上",
+      "krFlat": "不能盛装液体的器物，或深度低于 2.5 cm 的器物",
+      "krSmall": "其他可盛装液体、容量低于 1.1 L 的器物",
+      "krMedium": "其他可盛装液体、容量 1.1 L 及以上、低于 3 L 的器物",
+      "krStorage": "其他可盛装液体、容量 3 L 及以上的器物",
+      "krCooking": "烹饪器皿（用于加热食物）",
+      "twFlat": "不能盛装液体的器物，或深度不超过 2.5 cm 的器物",
+      "twSmall": "深度超过 2.5 cm、容量不超过 1.1 L 的器物",
+      "twLarge": "深度超过 2.5 cm、容量超过 1.1 L 的器物",
+      "myFlat": "扁平制品",
+      "mySmall": "小空心制品",
+      "myLarge": "大空心制品",
+      "myCooking": "烹饪器皿",
+      "idFlat": "内深不超过 25 mm 的器物",
+      "idSmall": "内深超过 25 mm、容量低于 1100 mL 的器物",
+      "idLarge": "内深超过 25 mm、容量 1100 mL 及以上的器物",
+      "thFlat": "深度不超过 25 mm 的器物",
+      "thSmall": "深度超过 25 mm、容量低于 1.1 L 的器物",
+      "thLarge": "深度超过 25 mm、容量 1.1 L 及以上的器物",
+      "thInfant": "12 个月以内婴儿食品的容器",
+      "thCooking": "烹饪器皿，能耐受烹饪时的高温",
+      "vnFlat": "浅型器物，用于盛放或烹煮食物",
+      "vnSmall": "盛放食物的深型器物，容量不足 1100 mL",
+      "vnMedium": "盛放食物的深型器物，容量 1100 mL 至不足 3000 mL",
+      "vnStorage": "盛放食物的深型器物，容量 3000 mL 及以上",
+      "vnCooking": "烹煮用的深型器物",
+      "vnCups": "杯子和小碗"
     },
     "judged": {
       "average": "6 件的平均值",
-      "each": "6 件中的每一件"
+      "each": "6 件中的每一件",
+      "averageOf": "{count} 件的平均值",
+      "eachOf": "{count} 件中的每一件"
     },
     "euRules": "这里适用欧盟的规定。",
     "law": "由<link>{law}</link>规定。",
     "inForce": "自{date}起施行。",
     "atMost": "溶出量不超过限值即为合格：法规写的是“不超过”。",
+    "ppm": "这里的 ppm 指每升检测溶液中的毫克数（mg/L）。",
     "unknown": "我们还没有确认{region}的规定。",
     "choosePrompt": "选择您所在的国家，查看其规定。"
   },

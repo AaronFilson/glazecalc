@@ -38,7 +38,7 @@ Neapdedzinātus izstrādājumus sauc par **jēlproduktiem**{{en: greenware}} (av
 
 ### Divas apdedzināšanas
 
-Pirmā, zemākas temperatūras apdedzināšana ir **biskvīta apdedzināšana**{{en: bisque}} (Apvienotajā Karalistē: **biscuit**), parasti līdz konusiem 08–04, apmēram {{1740–1940 °F; 950–1060 °C}}. Pēc tās izstrādājumi ir izturīgi, bet poraini. Digitalfire, glazūru uzziņu vietne, parasti iesaka porainību, kas pārsniedz 15%, lai biskvīts, uzklājot glazūru, uzsūktu no tās ūdeni. Zemas temperatūras biskvīts (konusi 08–06) ir poraināks; augstas temperatūras biskvīts (bieži konuss 04) ir izturīgāks, bet glazūru uzņem sliktāk.
+Pirmā, zemākas temperatūras apdedzināšana ir **biskvīta apdedzināšana**{{en: bisque}} (Apvienotajā Karalistē: **biscuit**), parasti līdz konusiem 08–04 (visbiežāk 06–04), apmēram {{1728–1945 °F; 942–1063 °C}}. Pēc tās izstrādājumi ir izturīgi, bet poraini. Digitalfire, glazūru uzziņu vietne, parasti iesaka porainību, kas pārsniedz 15%, lai biskvīts, uzklājot glazūru, uzsūktu no tās ūdeni. Zemas temperatūras biskvīts (konusi 08–06) ir poraināks; augstas temperatūras biskvīts (bieži konuss 04) ir izturīgāks, bet glazūru uzņem sliktāk.
 
 Table: Kā biskvīts ietekmē glazēšanu (Digitalfire)
 Label: Kā biskvīts ietekmē glazēšanu
@@ -254,7 +254,7 @@ Likumā noteiktās robežvērtības dažādās valstīs atšķiras. Tabulā redz
 
 ::food-limits
 
-ASV izstrādājumiem, kas nav paredzēti pārtikai, jābūt ar pastāvīgu, iededzinātu uzrakstu “Not for Food Use” (nav paredzēts pārtikai) vai ar caurumu cauri virsmai, kas saskartos ar pārtiku. ES svina un kadmija robežvērtības nosaka Padomes Direktīva 84/500/EEK, un Apvienotā Karaliste savos tiesību aktos saglabā tos pašus skaitļus. No 2026. gada 29. maija Nīderlandē, Beļģijā un Luksemburgā atļauts apmēram 130 līdz 150 reižu mazāk svina un apmēram 15 reižu mazāk kadmija. Austrālija nosaka robežvērtības importētiem izstrādājumiem; oficiālu robežvērtību Austrālijā vai Jaunzēlandē ražotiem izstrādājumiem mēs neatradām.
+ASV dekoratīvus keramikas izstrādājumus, kas šķiet lietojami pārtikai, uzskata par pārtikas izstrādājumiem, izņemot gadījumus, kad tiem ir uzlīme un pastāvīgs paziņojums, kas izveidots vai iededzināts to pamatnē, piemēram, “Not for Food Use. May Poison Food”, vai kad tiem ir caurums cauri virsmai, kas saskartos ar pārtiku. ES svina un kadmija robežvērtības nosaka Padomes Direktīva 84/500/EEK, un Apvienotā Karaliste savos tiesību aktos saglabā tos pašus skaitļus. No 2026. gada 29. maija Nīderlandē, Beļģijā un Luksemburgā atļauts apmēram 130 līdz 150 reižu mazāk svina un apmēram 15 reižu mazāk kadmija. Austrālija nosaka robežvērtības importētiem izstrādājumiem; oficiālu robežvērtību Austrālijā vai Jaunzēlandē ražotiem izstrādājumiem mēs neatradām.
 
 ### Pārbaude
 
@@ -319,7 +319,7 @@ Bentonīts (bentonite)
 : Ļoti smalks māls, ko pievieno 1–3% apmērā, lai glazūra nenosēstos.
 
 Biskvīts, biskvīta apdedzināšana (bisque; Apvienotajā Karalistē: biscuit)
-: Pirmā, zemākas temperatūras apdedzināšana, parasti līdz konusiem 08–04; pēc tās izstrādājumi ir izturīgi, bet poraini.
+: Pirmā, zemākas temperatūras apdedzināšana, parasti līdz konusiem 08–04 (visbiežāk 06–04); pēc tās izstrādājumi ir izturīgi, bet poraini.
 
 Blāvotājs (opacifier)
 : Izejviela, piemēram, cirkons, alvas oksīds vai titāna dioksīds, kas padara glazūru necaurspīdīgu.
@@ -474,6 +474,7 @@ Zēgera formula, UMF (unity molecular formula, Seger formula)
 - [Glazy Help: Specific gravity](https://help.glazy.org/testing/specific-gravity)
 - [Orton Ceramic Foundation: Pyrometric cone chart, °F (vietnē The Ceramic Shop)](https://www.theceramicshop.com/technical_info/Cones/Orton-Cone-Chart-F-022-14.pdf)
 - [Digitalfire: Bisque](https://digitalfire.com/glossary/bisque)
+- [Digitalfire: Bentonite](https://digitalfire.com/material/bentonite)
 - [Digitalfire: Unity molecular formula](https://digitalfire.com/glossary/unity+molecular+formula)
 - [Digitalfire: LOI](https://digitalfire.com/glossary/loi)
 - [Digitalfire: Frit](https://digitalfire.com/glossary/frit)
@@ -489,3 +490,4 @@ Zēgera formula, UMF (unity molecular formula, Seger formula)
 - [Potclays: The difference between stoneware and earthenware](https://www.potclays.co.uk/clay-questions/difference-stoneware-earthenware)
 - [ASV FDA: Compliance Policy Guide Sec. 545.450, Pottery (ceramics), lead contamination](https://www.fda.gov/media/71764/download)
 - [EUR-Lex: Council Directive 84/500/EEC on ceramic articles in contact with food](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:31984L0500)
+- [eCFR: 21 CFR 109.16, Ornamental and decorative ceramicware](https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-109/subpart-A/section-109.16)

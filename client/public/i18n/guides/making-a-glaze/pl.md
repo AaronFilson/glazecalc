@@ -41,16 +41,16 @@ Podstawowa lista Glazy na każdą temperaturę to krzemionka, kaolin, skaleń, k
 Table: Zestaw surowców na początek (nasza propozycja)
 Label: Zestaw na początek
 
-| Surowiec                                        | Co kupić                                                                                                     |
-| ----------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
-| Krzemionka (po angielsku też flint; zob. niżej) | 325 mesh, drobniejsze uziarnienie, które Glazy preferuje do szkliw                                           |
-| Kaolin (w Wielkiej Brytanii zwany china clay)   | EPK w USA; Grolleg lub inny china clay w Wielkiej Brytanii; kaolin nowozelandzki w Nowej Zelandii            |
-| Skaleń potasowy                                 | Ten, który jest obecnie dostępny w danym kraju, np. Mahavir w USA                                            |
-| Syenit nefelinowy{{en: nepheline syenite}}      | Dowolny; Glazy zwraca uwagę na jego silniejsze działanie topiące; często stosowany w niskim i średnim wypale |
-| Kreda                                           | Dowolna                                                                                                      |
-| Talk                                            | Dowolny                                                                                                      |
-| Fryta borowa, do średniego wypału               | Ferro 3134, 3124 lub 3195; w Wielkiej Brytanii Potterycrafts P3124 lub P3195                                 |
-| Bentonit i barwniki                             | Niewielkie ilości                                                                                            |
+| Surowiec                                        | Co kupić                                                                                                                     |
+| ----------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| Krzemionka (po angielsku też flint; zob. niżej) | 325 mesh, drobniejsze uziarnienie, które Glazy preferuje do szkliw                                                           |
+| Kaolin (w Wielkiej Brytanii zwany china clay)   | EPK w USA; Grolleg lub inny china clay w Wielkiej Brytanii; kaolin nowozelandzki w Nowej Zelandii                            |
+| Skaleń potasowy                                 | Ten, który jest obecnie dostępny w danym kraju, np. Mahavir w USA                                                            |
+| Syenit nefelinowy{{en: nepheline syenite}}      | Dowolny; Glazy zwraca uwagę na jego silniejsze działanie topiące; często stosowany w niskim i średnim wypale                 |
+| Kreda                                           | Dowolna                                                                                                                      |
+| Talk                                            | Dowolny gatunek bez azbestu; należy sprawdzić jego kartę charakterystyki (zob. „Bezpieczne rozrabianie szkliw i wentylacja”) |
+| Fryta borowa, do średniego wypału               | Ferro 3134, 3124 lub 3195; w Wielkiej Brytanii Potterycrafts P3124 lub P3195                                                 |
+| Bentonit i barwniki                             | Niewielkie ilości                                                                                                            |
 
 ### Karty techniczne i karty charakterystyki
 
@@ -211,7 +211,7 @@ Label: Ilość wody dla docelowej gęstości względnej
 
 **Klej CMC** (karboksymetyloceluloza) sprawia, że zawiesina jest bardziej lepka i wolniej schnie, a po wyschnięciu tworzy twardszą warstwę, która dobrze trzyma się naczynia. Ma największe znaczenie w szkliwach do malowania pędzlem i szkliwach z dużą zawartością fryty{{en: frit}}. W przykładzie z Digitalfire miesza się 3,75 g z 1000 g zawiesiny i trzeba to zrobić blenderem. Szkliwo z CMC nie zżeluje się pod wpływem soli gorzkiej, a ponieważ drobnoustroje żywią się klejem, może się zmieniać w wiadrze i zacząć nieprzyjemnie pachnieć.
 
-**Bentonit**, bardzo drobna glina, pomaga utrzymać pozostałe cząstki w zawiesinie. Szkliwa do zanurzania zwykle zawdzięczają to 15–25 % surowej gliny. W recepturze z niewielką ilością gliny pomaga ok. 1–2 % bentonitu.
+**Bentonit**, bardzo drobna glina, pomaga utrzymać pozostałe cząstki w zawiesinie. Szkliwa do zanurzania zwykle zawdzięczają to 15–25 % surowej gliny. W recepturze ze zbyt małą ilością gliny pomaga ok. 1–3 % bentonitu; według Digitalfire szkliwo z ponad 15 % gliny nie powinno potrzebować więcej niż 1 %.
 
 ## Płytki testowe i próby liniowe {#testing}
 
@@ -284,6 +284,7 @@ Label: Wzór zapisu
 - [Digitalfire: Epsom salts](https://digitalfire.com/material/epsom+salts)
 - [Digitalfire: CMC gum](https://digitalfire.com/material/cmc%2Bgum)
 - [Digitalfire: Dipping glaze](https://digitalfire.com/glossary/dipping+glaze)
+- [Digitalfire: Bentonite](https://digitalfire.com/material/bentonite)
 - [Digitalfire: Water solubility](https://digitalfire.com/glossary/water+solubility)
 - [Digitalfire: Gerstley Borate](https://digitalfire.com/material/gerstley+borate)
 - [Digitalfire: Mahavir potash feldspar](https://digitalfire.com/material/mahavir+potash+feldspar)

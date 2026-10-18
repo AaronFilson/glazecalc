@@ -4,10 +4,26 @@
     "signedInAs": "Sessão iniciada como {email}.",
     "trying": "Está a experimentar o Glazecalc como {name}. Comece por uma receita.",
     "welcomeBack": "Continue onde parou.",
+    "welcome": {
+      "heading": "Boas-vindas ao Glazecalc",
+      "text": "O seu caderno está pronto. Um bom primeiro passo: introduza um vidrado que já prepare, com as suas matérias-primas e quantidades, e veja a sua fórmula de Seger.",
+      "firstRecipe": "Começar a sua primeira receita",
+      "confirmHeading": "Confirmar o seu e-mail",
+      "confirm": "Confirme o seu e-mail: enviámos uma ligação para {email}. O início de sessão em dois passos precisa dela. A sua <account>página da conta</account> pode enviá-la novamente.",
+      "confirmText": "Enviámos uma ligação para {email}. Abra-a para confirmar que o endereço é seu: o início de sessão em dois passos precisa dela. A sua <account>página da conta</account> pode enviá-la novamente."
+    },
     "sections": {
       "recipe": {
         "title": "Receitas",
         "text": "Monte um vidrado a partir de matérias-primas e quantidades, veja a sua fórmula de Seger (UMF) e guarde-o."
+      },
+      "import": {
+        "title": "Colar receitas",
+        "text": "Cole receitas de um site, de uma folha de cálculo ou de notas, verifique o que foi lido e guarde-as."
+      },
+      "blends": {
+        "title": "Misturas para peças de teste",
+        "text": "Misture duas, três ou quatro das suas receitas em peças de teste numeradas, com o que pesar para cada uma."
       },
       "material": {
         "title": "Matérias-primas",
@@ -32,6 +48,14 @@
       "guides": {
         "title": "Guias",
         "text": "Desde o que é um vidrado até à sua cozedura, mantendo todos em segurança pelo caminho."
+      },
+      "trash": {
+        "title": "Lixo",
+        "text": "Reponha o que removeu nos últimos 30 dias."
+      },
+      "account": {
+        "title": "Conta e definições",
+        "text": "Definições, a sua palavra-passe, o início de sessão em dois passos e uma transferência de tudo o que guarda aqui."
       }
     },
     "newHere": "Nunca usou fórmulas de Seger? A <advice>página de conselhos</advice> explica o básico, e a <about>página Sobre</about> explica como funciona o Glazecalc."
@@ -39,27 +63,54 @@
   "firing": {
     "title": "Registos de cozedura",
     "lead": "Registe cada cozedura: horas, temperaturas, cones e notas sobre o forno.",
+    "newHeading": "Uma nova cozedura",
+    "titleLabel": "Título",
+    "kiln": "Forno",
+    "date": "Data",
+    "notes": "Notas",
+    "fieldSelect": "Campos a registar",
     "addField": "Adicionar o campo",
+    "included": "Campos neste registo",
     "moveLeft": "Mover o campo para a esquerda",
     "moveRight": "Mover o campo para a direita",
     "removeField": "Remover o campo",
     "addRow": "Adicionar uma linha à tabela da cozedura",
+    "addRowWhy": "Adicione primeiro um campo.",
+    "tableEmpty": "Adicione um campo acima e depois linhas.",
+    "recordHeading": "Registar a cozedura",
     "rowActions": "Ações da linha",
     "cell": "{field}, linha {row}",
     "removeRow": "Remover a linha",
     "save": "Guardar",
+    "storedHeading": "As minhas cozeduras guardadas",
+    "noneSaved": "Ainda nenhuma. As cozeduras guardadas aparecem aqui.",
+    "storedIn": "Cozido em {kiln} em {date}.",
+    "storedOn": "Cozido em {date}.",
     "storedNotes": "Notas: {notes}",
     "titleMissing": "Dê um título à cozedura.",
     "fieldsMissing": "Adicione pelo menos um campo a registar, como {example}.",
     "chooseField": "Escolha um campo a adicionar e, depois, clique em «Adicionar o campo».",
     "fetchFailed": "Ocorreu um erro ao obter as informações dos registos de cozedura.",
     "saved": "Registo de cozedura adicionado ao servidor com sucesso.",
-    "saveFailed": "Erro: o pedido ao servidor falhou."
+    "saveFailed": "Erro: o pedido ao servidor falhou.",
+    "recipesHeading": "Receitas cozidas nesta cozedura",
+    "noRecipes": "Ainda não há receitas associadas.",
+    "recipesFailed": "Não foi possível obter as suas receitas, por isso não é possível associar nenhuma agora.",
+    "pickRecipe": "Uma receita cozida nesta cozedura",
+    "linkRecipe": "Associar a receita",
+    "unlink": "Desassociar",
+    "unlinkRecipe": "Desassociar {title}",
+    "linkFailed": "Não foi possível guardar a associação."
   },
   "notes": {
     "title": "Notas",
     "lead": "Tudo o resto que valha a pena lembrar sobre os seus vidrados.",
+    "newHeading": "Uma nova nota",
+    "titleLabel": "Título",
+    "content": "Nota",
     "save": "Guardar",
+    "mineHeading": "As minhas notas guardadas",
+    "noneSaved": "Ainda nenhuma. As notas guardadas aparecem aqui.",
     "titleMissing": "Dê um título à nota.",
     "contentMissing": "Escreva a nota.",
     "untitled": "Nota sem título",
@@ -69,6 +120,34 @@
   },
   "trash": {
     "title": "Lixo",
-    "comingSoon": "A funcionalidade do lixo chega em breve, na próxima versão do Glazecalc. Até lá, use com cuidado as opções de eliminar / remover: depois de removida, a informação perde-se."
+    "lead": "O que remover (receitas, matérias-primas, aditivos, notas, registos de cozedura e conselhos) fica aqui 30 dias. Reponha-o, ou elimine-o definitivamente.",
+    "listHeading": "No Lixo",
+    "none": "O Lixo está vazio.",
+    "untitled": "Sem título",
+    "kinds": {
+      "recipes": "Receita",
+      "materials": "Matéria-prima",
+      "additives": "Aditivo",
+      "notes": "Nota",
+      "firing": "Registo de cozedura",
+      "advice": "Conselho",
+      "other": "Registo"
+    },
+    "removedOn": "Removido em {date}",
+    "goesOn": "Eliminado definitivamente em {date}",
+    "byApp": "Removido por uma aplicação ligada",
+    "putBack": "Repor",
+    "putBackName": "Repor {name}",
+    "restored": "«{name}» voltou ao lugar onde estava.",
+    "restoredAlready": "«{name}» já tinha sido reposto.",
+    "restoreFailed": "Não foi possível repor «{name}». Tente novamente.",
+    "deleted": "«{name}» foi eliminado definitivamente.",
+    "empty": "Esvaziar o Lixo",
+    "emptyQuestion": "Eliminar definitivamente {count, plural, one {o # registo} many {os # registos} other {os # registos}} do Lixo? Esta ação não pode ser anulada.",
+    "emptyYes": "Sim, esvaziar",
+    "emptying": "A esvaziar...",
+    "emptied": "O Lixo está vazio.",
+    "emptyFailed": "Não foi possível esvaziar o Lixo. Tente novamente.",
+    "fetchFailed": "Não foi possível carregar o Lixo. Tente novamente."
   }
 }

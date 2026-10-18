@@ -38,7 +38,7 @@ Retseptis on loetletud toorained, näiteks põldpagu{{en: feldspar}}, kriit{{en:
 
 ### Kaks põletust
 
-Esimene, madalama temperatuuriga põletus on **eelpõletus**{{en: bisque}} (Ühendkuningriigis **biscuit**), tavaliselt koonused 08–04, umbes {{1740–1940 °F; 950–1060 °C}}. Pärast seda on esemed tugevad, kuid poorsed. Glasuuriteabe veebileht Digitalfire soovitab poorsust üldiselt üle 15%, et eelpõletatud ese imaks pealekandmisel glasuurist vett. Madal eelpõletus (koonused 08–06) jätab eseme poorsemaks; kõrge eelpõletus (sageli koonus 04) annab tugevama eseme, mis aga võtab glasuuri vähem kergesti vastu.
+Esimene, madalama temperatuuriga põletus on **eelpõletus**{{en: bisque}} (Ühendkuningriigis **biscuit**), tavaliselt koonused 08–04 (kõige sagedamini 06–04), umbes {{1728–1945 °F; 942–1063 °C}}. Pärast seda on esemed tugevad, kuid poorsed. Glasuuriteabe veebileht Digitalfire soovitab poorsust üldiselt üle 15%, et eelpõletatud ese imaks pealekandmisel glasuurist vett. Madal eelpõletus (koonused 08–06) jätab eseme poorsemaks; kõrge eelpõletus (sageli koonus 04) annab tugevama eseme, mis aga võtab glasuuri vähem kergesti vastu.
 
 Table: Kuidas eelpõletus glasuurimist mõjutab (Digitalfire)
 Label: Eelpõletuse mõju glasuurimisele
@@ -254,7 +254,7 @@ Seaduslikud piirnormid on riigiti erinevad. Tabelis on teie elukohariigi piirnor
 
 ::food-limits
 
-USA-s peab esemel, mis ei ole mõeldud toidu jaoks, olema püsiv, sissepõletatud märge „Not for Food Use“ (mitte toidu jaoks) või auk läbi toiduga kokkupuutuva pinna. EL kehtestab plii ja kaadmiumi piirnormid nõukogu direktiivis 84/500/EMÜ ning Ühendkuningriik säilitab samad arvud oma õigusaktides. Alates 29. maist 2026 lubavad Holland, Belgia ja Luksemburg umbes 130 kuni 150 korda vähem pliid ja umbes 15 korda vähem kaadmiumi. Austraalia kehtestab piirnormid imporditud esemetele; Austraalias või Uus-Meremaal valmistatud esemete kohta ametlikku piirnormi ei leitud.
+USA-s käsitatakse dekoratiivset keraamikaeset, mis näib toidu jaoks kasutatav, toidunõuna, välja arvatud juhul, kui sellel on kleebitav silt ja selle põhja vormitud või sisse põletatud püsiv märge, näiteks „Not for Food Use. May Poison Food“ (mitte toidu jaoks; võib toitu mürgitada), või kui sellel on auk läbi toiduga kokkupuutuva pinna. EL kehtestab plii ja kaadmiumi piirnormid nõukogu direktiivis 84/500/EMÜ ning Ühendkuningriik säilitab samad arvud oma õigusaktides. Alates 29. maist 2026 lubavad Holland, Belgia ja Luksemburg umbes 130 kuni 150 korda vähem pliid ja umbes 15 korda vähem kaadmiumi. Austraalia kehtestab piirnormid imporditud esemetele; Austraalias või Uus-Meremaal valmistatud esemete kohta ametlikku piirnormi ei leitud.
 
 ### Katsetamine
 
@@ -319,7 +319,7 @@ Devitrifikatsioon (devitrification)
 : Soovimatute kristallide teke klaasis jahtumise alguses.
 
 Eelpõletus (bisque; Ühendkuningriigis biscuit)
-: Esimene, madalama temperatuuriga põletus, tavaliselt koonused 08–04, mis jätab esemed tugevaks, kuid poorseks.
+: Esimene, madalama temperatuuriga põletus, tavaliselt koonused 08–04 (kõige sagedamini 06–04), mis jätab esemed tugevaks, kuid poorseks.
 
 Flokulant ja deflokulant (flocculant and deflocculant)
 : Lisaained, mis muudavad glasuurilahuse tarretunuks (inglise sool, äädikas) või vedelamaks (naatriumsilikaat, Darvan).
@@ -474,6 +474,7 @@ Värvaine ja pigment (colorant and stain)
 - [Glazy Help: Specific gravity](https://help.glazy.org/testing/specific-gravity)
 - [Orton Ceramic Foundation: Pyrometric cone chart, °F (veebilehel The Ceramic Shop)](https://www.theceramicshop.com/technical_info/Cones/Orton-Cone-Chart-F-022-14.pdf)
 - [Digitalfire: Bisque](https://digitalfire.com/glossary/bisque)
+- [Digitalfire: Bentonite](https://digitalfire.com/material/bentonite)
 - [Digitalfire: Unity molecular formula](https://digitalfire.com/glossary/unity+molecular+formula)
 - [Digitalfire: LOI](https://digitalfire.com/glossary/loi)
 - [Digitalfire: Frit](https://digitalfire.com/glossary/frit)
@@ -489,3 +490,4 @@ Värvaine ja pigment (colorant and stain)
 - [Potclays: The difference between stoneware and earthenware](https://www.potclays.co.uk/clay-questions/difference-stoneware-earthenware)
 - [US FDA: Compliance Policy Guide Sec. 545.450, Pottery (ceramics), lead contamination](https://www.fda.gov/media/71764/download)
 - [EUR-Lex: Council Directive 84/500/EEC on ceramic articles in contact with food](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:31984L0500)
+- [eCFR: 21 CFR 109.16, Ornamental and decorative ceramicware](https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-109/subpart-A/section-109.16)

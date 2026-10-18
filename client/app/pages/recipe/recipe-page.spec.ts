@@ -7,7 +7,7 @@ import { TranslocoService } from '@jsverse/transloco';
 import { AuthService } from '../../core/auth.service';
 import { routes } from '../../app.routes';
 import { askBeforeLeaving } from '../../core/leave.guard';
-import { Additive, Material, Recipe } from '../../core/models';
+import { Additive, Material, Recipe, RecipeMaterial } from '../../core/models';
 import { PreferencesService } from '../../core/preferences.service';
 import { answer, API, fieldProblem, httpMock, settle, testProviders, text } from '../../testing/test-providers';
 import { MOLAR_MASS } from '../../../../lib/chemistry';
@@ -122,6 +122,46 @@ describe('RecipePage', () => {
     if (!button) throw new Error('no button ' + label);
     button.click();
   };
+
+  it("lists the hazards of the recipe's materials from the library as it is now, and offers its cost", async () => {
+    const fixture = TestBed.createComponent(RecipePage);
+    await fixture.whenStable();
+    const dusty = (m: Material, hazards: string): Material => ({ ...m, ownedBy: 'Standard', hazards });
+    answer('/materials/getStandard', [
+      dusty(WHITING, 'Fine dust; avoid breathing it.'),
+      dusty(SILICA, 'Contains crystalline silica; do not breathe the dust.')
+    ]);
+    answer('/materials/getAll', []);
+    answer('/additives/getAll', []);
+    answer('/additives/getStandard', [IRON]);
+    answer('/recipe/getAll', []);
+    await settle(fixture);
+    const page = fixture.componentInstance as unknown as Page;
+    const root = fixture.nativeElement as HTMLElement;
+    expect(root.querySelector('gc-recipe-hazards')).toBeNull();
+    // A line saved with an older sheet's words reads the library's current ones.
+    fill(page, [
+      [{ ...WHITING, ownedBy: 'Standard', hazards: 'An old sheet.' }, '20'],
+      [{ ...SILICA, ownedBy: 'Standard' }, '80']
+    ]);
+    page['addAdditive'](IRON);
+    await fixture.whenStable();
+    expect([...root.querySelectorAll('.recipe-hazards li')].map((li) => li.textContent?.trim())).toEqual([
+      'Whiting: Fine dust; avoid breathing it.',
+      'Silica: Contains crystalline silica; do not breathe the dust.'
+    ]);
+    expect(text(fixture, '.recipe-hazards')).toContain('No hazards are given for Iron oxide');
+    // The prices are fetched only when the cost is asked for.
+    httpMock().expectNone(API + '/prices');
+    click(fixture, 'Cost of a batch');
+    await fixture.whenStable();
+    answer('/prices', { prices: [] });
+    await settle(fixture);
+    // Nothing has a price yet: what to do, not a total of nothing.
+    expect(text(fixture, '.recipe-cost-summary')).toBe(
+      "Give each material's price per kilogram to see what a batch costs."
+    );
+  });
 
   it('shows the unity formula as amounts are typed, with each share and the total', async () => {
     const { fixture, page } = await create();
@@ -259,6 +299,210 @@ describe('RecipePage', () => {
     expect(req.request.body.recipe.computed.uList.CoO).toBeUndefined();
     req.flush({ msg: 'Successfully updated recipe' });
     await saving;
+  });
+
+  it('shows the analysis, limits and Stull chart under the recipe, and saves the firing chosen for its limits', async () => {
+    const fired: Recipe = {
+      _id: 'r2',
+      title: 'Cone 10 white',
+      firing: 'high',
+      materials: [{ ...WHITING, amount: '20' }]
+    };
+    const { fixture, page } = await create([fired]);
+    page['open'](fired);
+    await fixture.whenStable();
+    const root = fixture.nativeElement as HTMLElement;
+    expect(root.querySelector('#numbers-heading')?.textContent).toContain('Analysis and limits');
+    expect((root.querySelector('#limit-firing') as HTMLSelectElement).value).toBe('high');
+    expect(root.querySelector('gc-stull-chart svg')).not.toBeNull();
+    expect(root.querySelector('#slurry-heading')).not.toBeNull();
+    expect(page['dirty']()).toBe(false);
+
+    const firing = root.querySelector('#limit-firing') as HTMLSelectElement;
+    firing.value = 'mid';
+    firing.dispatchEvent(new Event('change'));
+    await fixture.whenStable();
+    expect(page['status']()).toBe('Changes not saved yet');
+    const saving = page['save']();
+    const req = httpMock().expectOne({ method: 'PUT', url: API + '/recipe/change/r2' });
+    expect(req.request.body.recipe.firing).toBe('mid');
+    req.flush({ msg: 'Successfully updated recipe' });
+    await saving;
+  });
+
+  it('takes the firing off a saved recipe with null when unknown is chosen', async () => {
+    const fired: Recipe = {
+      _id: 'r2b',
+      title: 'Cone 10 white',
+      firing: 'high',
+      materials: [{ ...WHITING, amount: '20' }]
+    };
+    const { fixture, page } = await create([fired]);
+    page['open'](fired);
+    await fixture.whenStable();
+    const firing = (fixture.nativeElement as HTMLElement).querySelector('#limit-firing') as HTMLSelectElement;
+    firing.value = '';
+    firing.dispatchEvent(new Event('change'));
+    await fixture.whenStable();
+    expect(page['dirty']()).toBe(true);
+    const saving = page['save']();
+    const req = httpMock().expectOne({ method: 'PUT', url: API + '/recipe/change/r2b' });
+    expect(req.request.body.recipe.firing).toBeNull();
+    req.flush({ msg: 'Successfully updated recipe' });
+    await saving;
+  });
+
+  it('saves the SG target the calculator sets as sgTarget, and takes it off a saved recipe with null', async () => {
+    const mixed: Recipe = { _id: 'r3', title: 'Dipping', sgTarget: 1.4, materials: [{ ...WHITING, amount: '20' }] };
+    const { fixture, page } = await create([mixed]);
+    page['open'](mixed);
+    await fixture.whenStable();
+    expect(page['sgTarget']()).toBe(1.4);
+    expect(page['dirty']()).toBe(false);
+    page['sgTarget'].set(1.55);
+    let saving = page['save']();
+    let req = httpMock().expectOne({ method: 'PUT', url: API + '/recipe/change/r3' });
+    expect(req.request.body.recipe.sgTarget).toBe(1.55);
+    req.flush({ msg: 'Successfully updated recipe' });
+    await saving;
+    page['sgTarget'].set(null);
+    expect(page['dirty']()).toBe(true);
+    saving = page['save']();
+    req = httpMock().expectOne({ method: 'PUT', url: API + '/recipe/change/r3' });
+    expect(req.request.body.recipe.sgTarget).toBeNull();
+    req.flush({ msg: 'Successfully updated recipe' });
+    await saving;
+  });
+
+  it('saves the firing block and the food-surface flag, and clears them with null on a saved recipe, never sending its links', async () => {
+    const fired: Recipe = {
+      _id: 'r4',
+      title: 'Liner',
+      materials: [{ ...WHITING, amount: '20' }],
+      firedAt: { scale: 'orton', low: '6', high: '10', tested: ['6'] },
+      foodSurface: true,
+      firings: [{ firing: 'f1', result: 'glossy' }]
+    };
+    const { fixture, page } = await create([fired]);
+    page['open'](fired);
+    await fixture.whenStable();
+    answer('/firing/getAll', [{ _id: 'f1', title: 'Glaze 14', fieldsIncluded: ['Cone'], rows: [['6']] }]);
+    await settle(fixture);
+    expect(page['dirty']()).toBe(false);
+    expect(text(fixture, '.firing-tested')).toBe('Tested at cone 6');
+    expect(text(fixture, '.firings-list')).toContain('Glaze 14');
+    page['firedAt'].set({ scale: 'orton', low: '6', tested: ['6'], atmospheres: ['oxidation'] });
+    let saving = page['save']();
+    let req = httpMock().expectOne({ method: 'PUT', url: API + '/recipe/change/r4' });
+    expect(req.request.body.recipe).toMatchObject({
+      firedAt: { scale: 'orton', low: '6', tested: ['6'], atmospheres: ['oxidation'] },
+      foodSurface: true
+    });
+    // A saved recipe's links change one at a time on the server: a save never sends the list.
+    expect(req.request.body.recipe.firings).toBeUndefined();
+    req.flush({ msg: 'Successfully updated recipe' });
+    await saving;
+    page['firedAt'].set(null);
+    page['foodSurface'].set(false);
+    await fixture.whenStable();
+    saving = page['save']();
+    req = httpMock().expectOne({ method: 'PUT', url: API + '/recipe/change/r4' });
+    expect(req.request.body.recipe).toMatchObject({ firedAt: null, foodSurface: false });
+    expect(req.request.body.recipe.firings).toBeUndefined();
+    req.flush({ msg: 'Successfully updated recipe' });
+    await saving;
+  });
+
+  it("changes a saved recipe's firing log links one at a time on the server, hides a log in the Trash, and copies none", async () => {
+    const fired: Recipe = {
+      _id: 'r6',
+      title: 'Liner',
+      materials: [{ ...WHITING, amount: '20' }],
+      firings: [{ firing: 'f1', result: 'glossy' }, { firing: 'f2' }]
+    };
+    const { fixture, page } = await create([fired]);
+    page['open'](fired);
+    await fixture.whenStable();
+    // f2 is in the Trash: its link stays on the recipe, but is not shown.
+    answer('/firing/getAll', [
+      { _id: 'f1', title: 'Glaze 14', fieldsIncluded: ['Cone'], rows: [['6']] },
+      { _id: 'f3', title: 'Bisque 3', fieldsIncluded: ['Cone'], rows: [['04']] }
+    ]);
+    await settle(fixture);
+    expect(fixture.nativeElement.querySelectorAll('.firings-list li').length).toBe(1);
+    const result = fixture.nativeElement.querySelector('#firing-result-0') as HTMLInputElement;
+    result.value = 'matte';
+    result.dispatchEvent(new Event('change'));
+    const put = httpMock().expectOne({ method: 'PUT', url: API + '/recipe/firings/r6/f1' });
+    expect(put.request.body).toEqual({ result: 'matte' });
+    put.flush({ firings: [{ firing: 'f1', result: 'matte' }, { firing: 'f2' }] });
+    await settle(fixture);
+    (fixture.nativeElement.querySelector('#firing-link') as HTMLButtonElement).click();
+    const post = httpMock().expectOne({ method: 'POST', url: API + '/recipe/firings/r6' });
+    expect(post.request.body).toEqual({ firing: 'f3' });
+    post.flush({ firings: [{ firing: 'f1', result: 'matte' }, { firing: 'f2' }, { firing: 'f3' }] });
+    await settle(fixture);
+    expect(page['firings']().map((l: { firing: string }) => l.firing)).toEqual(['f1', 'f2', 'f3']);
+    // Saved already: the recipe does not count as changed.
+    expect(page['dirty']()).toBe(false);
+    page['title'].set('Liner copy');
+    const saving = page['saveAsCopy']();
+    const created = httpMock().expectOne({ method: 'POST', url: API + '/recipe/create' });
+    expect(created.request.body.firings).toBeUndefined();
+    created.flush({ ...created.request.body, _id: 'r7' });
+    await saving;
+    expect(page['firings']()).toEqual([]);
+    expect(page['dirty']()).toBe(false);
+  });
+
+  it('duplicates a saved recipe for another cone: a copy not saved yet, its firing to set again, and why', async () => {
+    const fired: Recipe = {
+      _id: 'r5',
+      title: 'Celadon',
+      materials: [{ ...WHITING, amount: '20' }],
+      firing: 'mid',
+      firedAt: { scale: 'orton', low: '6', tested: ['6'] },
+      firings: [{ firing: 'f1' }]
+    };
+    const { fixture, page } = await create([fired]);
+    page['duplicateForCone'](fired);
+    await fixture.whenStable();
+    expect(page['title']()).toBe('Celadon (another cone)');
+    expect(page['savedId']()).toBeNull();
+    expect(page['firedAt']()).toBeNull();
+    expect(page['firings']()).toEqual([]);
+    expect(page['firing']()).toBe('');
+    expect(page['lines']().map((l: RecipeMaterial) => l.name)).toEqual(['Whiting']);
+    expect(page['notices'].messages()[0]).toContain('usually means reformulating it');
+  });
+
+  it('filters the saved recipes by cone, a range matching any cone inside it and the tested ones first, and by atmosphere', async () => {
+    const recipes: Recipe[] = [
+      { _id: 'a', title: 'Ranged', materials: [], firedAt: { scale: 'orton', low: '5', high: '7' } },
+      {
+        _id: 'b',
+        title: 'Tested six',
+        materials: [],
+        firedAt: { scale: 'orton', low: '6', tested: ['6'], atmospheres: ['reduction'] }
+      },
+      { _id: 'c', title: 'Low fire', materials: [], firedAt: { scale: 'orton', low: '06' } },
+      { _id: 'd', title: 'No firing', materials: [] }
+    ];
+    const { fixture, page } = await create(recipes);
+    const titles = () => page['shownRecipes']().map((r: Recipe) => r.title);
+    const options = [...fixture.nativeElement.querySelectorAll('#saved-cone-filter option')].map((o: Element) =>
+      o.textContent?.trim()
+    );
+    expect(options).toEqual(['Any cone', 'cone 06', 'cone 5', 'cone 6', 'cone 7']);
+    page['coneFilter'].set('orton:6');
+    expect(titles()).toEqual(['Tested six', 'Ranged']);
+    page['coneFilter'].set('orton:06');
+    expect(titles()).toEqual(['Low fire']);
+    page['coneFilter'].set('');
+    page['atmosphereFilter'].set('reduction');
+    expect(titles()).toEqual(['Tested six']);
+    await fixture.whenStable();
+    expect(text(fixture, '.saved-firing')).toBe('Tested at cone 6 · reduction');
   });
 
   it('copies picked materials, so amounts leave the lists alone', async () => {
@@ -427,6 +671,43 @@ describe('RecipePage', () => {
     expect(req.request.body.recipe.additives[0]).toEqual(expect.objectContaining({ amount: '2', unit: 'grams' }));
     req.flush({ msg: 'Successfully updated recipe' });
     await saving;
+  });
+
+  it('undoes a save of a saved recipe, showing it as it was', async () => {
+    const old: Recipe = { _id: 'r1', title: 'Old', materials: [{ ...WHITING, amount: '10' }] };
+    const { fixture, page } = await create([old]);
+    page['open'](old);
+    await fixture.whenStable();
+    page['title'].set('New');
+    const saving = page['save']();
+    httpMock()
+      .expectOne({ method: 'PUT', url: API + '/recipe/change/r1' })
+      .flush({ code: 'record-updated' });
+    await saving;
+    expect(page['notices'].actions().get('Saved "New".')?.label).toBe('Undo');
+
+    page['notices'].act(0);
+    httpMock()
+      .expectOne({ method: 'POST', url: API + '/recipe/undo/r1' })
+      .flush({ code: 'record-undone', record: old });
+    await fixture.whenStable();
+    await new Promise((resolve) => setTimeout(resolve));
+    expect(page['title']()).toBe('Old');
+    expect(page['dirty']()).toBe(false);
+    expect(page['myRecipes']().map((r: Recipe) => r.title)).toEqual(['Old']);
+    expect(page['notices'].messages()).toEqual(['Went back to the version of "Old" before you saved.']);
+  });
+
+  it('offers no Undo for a recipe saved for the first time', async () => {
+    const { page } = await create([]);
+    fill(page, [[WHITING, '10']]);
+    page['title'].set('Fresh');
+    const saving = page['save']();
+    httpMock()
+      .expectOne({ method: 'POST', url: API + '/recipe/create' })
+      .flush({ _id: 'r9', title: 'Fresh', materials: [] });
+    await saving;
+    expect(page['notices'].actions().size).toBe(0);
   });
 
   it("writes colorant amounts the reader's way, as it does the materials'", async () => {
@@ -791,7 +1072,12 @@ describe('RecipePage', () => {
     more.click();
     await fixture.whenStable();
     expect(more.getAttribute('aria-expanded')).toBe('true');
-    expect(text(fixture, '#more-actions-r9')).toBe('Print Compare Remove');
+    expect(text(fixture, '#more-actions-r9')).toBe('Print Compare Blend Duplicate for another cone Share Remove');
+    const blend = fixture.nativeElement.querySelector('#more-actions-r9 a') as HTMLAnchorElement;
+    expect([blend.getAttribute('aria-label'), blend.getAttribute('href')]).toEqual([
+      'Make a blend from Matte 9',
+      '/blends?recipe=r9'
+    ]);
   });
 
   it('stops filtering the saved recipes when the filter box goes', async () => {
@@ -849,7 +1135,7 @@ describe('RecipePage', () => {
     expect(page['myRecipes']()).toEqual([]);
     expect(page['title']()).toBe('Gone');
     expect(page['status']()).toBe('Not saved yet');
-    expect(page['notices'].messages()).toEqual(['Removed "Gone".']);
+    expect(page['notices'].messages()).toEqual(['Moved "Gone" to the Trash.']);
   });
 
   it('drops a question about opening a recipe that has since been removed', async () => {
@@ -909,6 +1195,35 @@ describe('RecipePage', () => {
     const errors = (fixture.componentInstance as unknown as Page)['notices'].errors();
     expect(errors).toContain('There was an error in getting your recipes.');
     expect(errors).toHaveLength(5);
+  });
+
+  it('after its own recipes fail to load, opens no first-run help, and fetches them again on Try again', async () => {
+    const fixture = TestBed.createComponent(RecipePage);
+    await fixture.whenStable();
+    answer('/materials/getStandard', [WHITING]);
+    answer('/materials/getAll', []);
+    answer('/additives/getAll', []);
+    answer('/additives/getStandard', [IRON]);
+    httpMock()
+      .expectOne(API + '/recipe/getAll')
+      .flush({}, { status: 500, statusText: 'Server Error' });
+    await settle(fixture);
+    const page = fixture.componentInstance as unknown as Page;
+    // Not known to be empty: the help is not opened for a first visit.
+    expect(page['recipesLoaded']()).toBe(false);
+    expect(text(fixture, '.recipe-retry')).toBe(
+      'Your own records were not all loaded. Check your connection, then try again.'
+    );
+    const retry = [
+      ...fixture.nativeElement.querySelectorAll('.recipe-retry a, .recipe-retry button')
+    ][0] as HTMLElement;
+    retry.click();
+    answer('/recipe/getAll', [{ _id: 'r1', title: 'Celadon', materials: [] }]);
+    await settle(fixture);
+    expect(page['recipesLoaded']()).toBe(true);
+    expect(page['myRecipes']().map((r: Recipe) => r.title)).toEqual(['Celadon']);
+    expect(fixture.nativeElement.querySelector('.recipe-retry')).toBeNull();
+    expect(page['notices'].errors()).not.toContain('There was an error in getting your recipes.');
   });
 
   describe('leaving the page', () => {
@@ -1076,6 +1391,48 @@ describe('RecipePage', () => {
       expect(document.activeElement?.id).toBe('print-r1');
     });
 
+    it('shows the working of the recipe being edited, and goes back to its button', async () => {
+      const { fixture, page } = await create();
+      const router = TestBed.inject(Router);
+      router.initialNavigation();
+      fill(page, [
+        [WHITING, '20'],
+        [SILICA, '30']
+      ]);
+      await settle(fixture);
+      click(fixture, 'Show the working');
+      await opened(fixture);
+      expect(router.url).toBe('/?print=draft&sheet=worked');
+      expect(fixture.nativeElement.querySelector('gc-worked-calculation')).not.toBeNull();
+      expect(localStorage.getItem('printMode')).not.toBe('worked');
+
+      click(fixture, 'Back to the recipe');
+      await settle(fixture);
+      expect(router.url).toBe('/');
+      expect(document.activeElement?.id).toBe('worked-draft');
+    });
+
+    it('shares a saved recipe from the list by a link shown once', async () => {
+      const { fixture } = await create([SAVED]);
+      await settle(fixture);
+      (fixture.nativeElement.querySelector('#more-r1') as HTMLButtonElement).click();
+      await settle(fixture);
+      const button = fixture.nativeElement.querySelector('#share-r1') as HTMLButtonElement;
+      expect(button.getAttribute('aria-label')).toBe('Share Saved matte');
+      button.click();
+      await settle(fixture);
+      answer('/share/recipe/r1', { shared: false });
+      await settle(fixture);
+      expect(document.activeElement?.id).toBe('share-heading-r1');
+      click(fixture, 'Make a link');
+      const made = httpMock().expectOne((req) => req.method === 'POST' && req.url === API + '/share/recipe/r1');
+      expect(made.request.body).toEqual({ includeNotes: false });
+      made.flush({ secret: 'a'.repeat(43), createdAt: '2026-10-16T00:00:00Z', includeNotes: false });
+      await settle(fixture);
+      const link = fixture.nativeElement.querySelector('#share-address-r1') as HTMLInputElement;
+      expect(link.value).toBe(location.origin + '/shared#' + 'a'.repeat(43));
+    });
+
     it('back from printing a saved recipe the list leaves out, lists them all so the focus can go to its Print', async () => {
       const recipes: Recipe[] = Array.from({ length: 10 }, (_, i) => ({ ...SAVED, _id: 'r' + i, title: 'Matte ' + i }));
       const router = TestBed.inject(Router);
@@ -1093,6 +1450,25 @@ describe('RecipePage', () => {
       await settle(fixture);
       expect(fixture.nativeElement.querySelectorAll('.saved-recipe-open').length).toBe(10);
       expect(document.activeElement?.id).toBe('print-r0');
+    });
+
+    it('opens the saved recipe the address names (the account page links to it), and ignores one that is not there', async () => {
+      const router = TestBed.inject(Router);
+      for (const [id, title] of [
+        ['r1', 'Saved matte'],
+        ['nope', '']
+      ]) {
+        await router.navigateByUrl('/?open=' + id);
+        const fixture = TestBed.createComponent(RecipePage);
+        await fixture.whenStable();
+        answer('/materials/getStandard', [WHITING, SILICA]);
+        answer('/materials/getAll', []);
+        answer('/additives/getAll', []);
+        answer('/additives/getStandard', []);
+        answer('/recipe/getAll', [SAVED]);
+        await settle(fixture);
+        expect((fixture.nativeElement.querySelector('#recipe-name') as HTMLInputElement).value).toBe(title);
+      }
     });
 
     it('opens from the address once the saved recipes are in, and drops a print of what is not there', async () => {
@@ -1627,6 +2003,8 @@ describe('RecipePage', () => {
       expect(names).not.toContain('Red lead');
       expect(names).toContain('Borosilicate frit');
       expect(page['title']()).toBe('Untitled recipe without lead');
+      // Cone 06 was the firing chosen, so the recipe's limits are checked for low fire.
+      expect(page['firing']()).toBe('low');
       expect(page['notes']()).toMatch(
         /^Lead replaced for cone 06 on Borosilicate frit: the old recipe's silica and alumina kept, with boron and other fluxes doing lead's work\. Changed: .*Red lead 55 → 0/
       );
@@ -1638,6 +2016,7 @@ describe('RecipePage', () => {
       click(fixture, 'Undo the swap');
       await settle(fixture);
       expect(page['lines']().map((l: Material) => l.name)).toEqual(['Red lead', 'China Clay', 'Silica']);
+      expect(page['firing']()).toBe('');
     });
 
     it('compares a changed recipe with itself before the swap', async () => {

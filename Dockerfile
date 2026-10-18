@@ -27,7 +27,8 @@ FROM deps AS build
 COPY angular.json tsconfig.json tsconfig.app.json ./
 COPY client ./client
 COPY lib ./lib
-COPY scripts/prerender.mjs ./scripts/
+COPY data/advice.ndjson ./data/
+COPY scripts/prerender.mjs scripts/advice-i18n.mjs ./scripts/
 RUN npm run build
 
 # Only the packages the server needs at run time.

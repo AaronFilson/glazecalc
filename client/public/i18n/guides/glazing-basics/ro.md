@@ -38,7 +38,7 @@ Piesele nearse sunt **piese crude**{{en: greenware}} (sursele nu sunt de acord d
 
 ### Cele două arderi
 
-Prima ardere, la temperatură mai joasă, este **arderea biscuit**{{en: bisque}} (în engleza britanică: **biscuit**), de obicei la conul 08–04, cam {{1740–1940 °F; 950–1060 °C}}. După ea, piesele sunt rezistente, dar poroase. Digitalfire, un site de referință despre glazuri, recomandă în general o porozitate de peste 15 %, pentru ca biscuitul să absoarbă apa din glazură în timp ce aceasta se aplică. Un biscuit ars la temperatură joasă (conul 08–06) este mai poros; un biscuit ars la temperatură înaltă (adesea conul 04) este mai rezistent, dar preia glazura mai greu.
+Prima ardere, la temperatură mai joasă, este **arderea biscuit**{{en: bisque}} (în engleza britanică: **biscuit**), de obicei la conul 08–04 (cel mai adesea 06–04), cam {{1728–1945 °F; 942–1063 °C}}. După ea, piesele sunt rezistente, dar poroase. Digitalfire, un site de referință despre glazuri, recomandă în general o porozitate de peste 15 %, pentru ca biscuitul să absoarbă apa din glazură în timp ce aceasta se aplică. Un biscuit ars la temperatură joasă (conul 08–06) este mai poros; un biscuit ars la temperatură înaltă (adesea conul 04) este mai rezistent, dar preia glazura mai greu.
 
 Table: Cum influențează biscuitul glazurarea (Digitalfire)
 Label: Cum influențează biscuitul glazurarea
@@ -254,7 +254,7 @@ Limitele legale diferă de la o țară la alta. Tabelul arată limitele din țar
 
 ::food-limits
 
-În SUA, piesele care nu sunt destinate alimentelor trebuie să poarte o mențiune permanentă, arsă pe piesă, „Not for Food Use” (nu se folosește pentru alimente), sau să aibă o gaură prin suprafața care vine în contact cu alimentele. UE stabilește limite pentru plumb și cadmiu în Directiva 84/500/CEE, iar Regatul Unit păstrează aceleași valori în propria legislație. De la 29 mai 2026, Țările de Jos, Belgia și Luxemburg permit de aproximativ 130 până la 150 de ori mai puțin plumb și de aproximativ 15 ori mai puțin cadmiu. Australia stabilește limite pentru piesele importate; nu am găsit nicio limită oficială pentru piesele fabricate în Australia sau în Noua Zeelandă.
+În SUA, piesele ceramice decorative care par utilizabile pentru alimente sunt tratate ca vase pentru alimente, cu excepția cazului în care poartă o etichetă autocolantă și o mențiune permanentă modelată în relief sau arsă pe baza lor, de exemplu „Not for Food Use. May Poison Food” (nu se folosește pentru alimente; poate otrăvi alimentele), sau au o gaură prin suprafața care vine în contact cu alimentele. UE stabilește limite pentru plumb și cadmiu în Directiva 84/500/CEE, iar Regatul Unit păstrează aceleași valori în propria legislație. De la 29 mai 2026, Țările de Jos, Belgia și Luxemburg permit de aproximativ 130 până la 150 de ori mai puțin plumb și de aproximativ 15 ori mai puțin cadmiu. Australia stabilește limite pentru piesele importate; nu am găsit nicio limită oficială pentru piesele fabricate în Australia sau în Noua Zeelandă.
 
 ### Testarea
 
@@ -307,7 +307,7 @@ Alumină, Al₂O₃ (alumina)
 : Principalul stabilizator: împiedică curgerea și adaugă duritate. Provine din argile și feldspați.
 
 Ardere biscuit (bisque; în engleza britanică: biscuit)
-: Prima ardere, la temperatură mai joasă, de obicei la conul 08–04, după care piesele sunt rezistente, dar poroase.
+: Prima ardere, la temperatură mai joasă, de obicei la conul 08–04 (cel mai adesea 06–04), după care piesele sunt rezistente, dar poroase.
 
 Ardere de glazură (glaze firing; în engleza britanică: glost firing)
 : Arderea care topește glazura.
@@ -474,6 +474,7 @@ Vitrificare (vitrification)
 - [Glazy Help: Specific gravity](https://help.glazy.org/testing/specific-gravity)
 - [Orton Ceramic Foundation: Pyrometric cone chart, °F (pe site-ul The Ceramic Shop)](https://www.theceramicshop.com/technical_info/Cones/Orton-Cone-Chart-F-022-14.pdf)
 - [Digitalfire: Bisque](https://digitalfire.com/glossary/bisque)
+- [Digitalfire: Bentonite](https://digitalfire.com/material/bentonite)
 - [Digitalfire: Unity molecular formula](https://digitalfire.com/glossary/unity+molecular+formula)
 - [Digitalfire: LOI](https://digitalfire.com/glossary/loi)
 - [Digitalfire: Frit](https://digitalfire.com/glossary/frit)
@@ -489,3 +490,4 @@ Vitrificare (vitrification)
 - [Potclays: The difference between stoneware and earthenware](https://www.potclays.co.uk/clay-questions/difference-stoneware-earthenware)
 - [US FDA: Compliance Policy Guide Sec. 545.450, Pottery (ceramics), lead contamination](https://www.fda.gov/media/71764/download)
 - [EUR-Lex: Council Directive 84/500/EEC on ceramic articles in contact with food](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:31984L0500)
+- [eCFR: 21 CFR 109.16, Ornamental and decorative ceramicware](https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-109/subpart-A/section-109.16)

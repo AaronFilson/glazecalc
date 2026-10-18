@@ -34,13 +34,14 @@ Dostawcy w Wielkiej Brytanii, Europie, Australii i Nowej Zelandii często podaj�
 Table: Ile jest warte przetrzymanie w temperaturze maksymalnej
 Label: Przetrzymanie a praca cieplna
 
-| Przetrzymanie  | Mniej więcej ta sama praca cieplna co                                 |
-| -------------- | --------------------------------------------------------------------- |
-| Około 20 minut | Temperatura maksymalna wyższa o {{18 °F; 10 °C}}                      |
-| 40–60 minut    | Temperatura maksymalna wyższa o {{36 °F; 20 °C}}                      |
-| Około 2 godzin | Temperatura maksymalna wyższa o {{54 °F; 30 °C}}                      |
-| 1–2 godziny    | „może wystarczyć do odkształcenia stożka o kolejnym, wyższym numerze” |
-| 4–6 godzin     | Tyle, by zgiąć stożek o dwa numery gorętszy                           |
+| Przetrzymanie  | Mniej więcej ta sama praca cieplna co            |
+| -------------- | ------------------------------------------------ |
+| Około 20 minut | Temperatura maksymalna wyższa o {{18 °F; 10 °C}} |
+| 40–60 minut    | Temperatura maksymalna wyższa o {{36 °F; 20 °C}} |
+| Około 2 godzin | Temperatura maksymalna wyższa o {{54 °F; 30 °C}} |
+| 4–6 godzin     | Tyle, by zgiąć stożek o dwa numery gorętszy      |
+
+Orton dodaje, że przetrzymanie przez 1–2 godziny „może wystarczyć do odkształcenia stożka o kolejnym, wyższym numerze”.
 
 Przetrzymanie nigdy więc nie jest obojętne: po jego dodaniu należy się spodziewać, że stożki zegną się bardziej, i odpowiednio obniżyć temperaturę maksymalną.
 
@@ -198,11 +199,11 @@ Wiele wyłączników stożkowych, w tym modele LT firmy Dawson, ma **wyłącznik
 Table: Na ile ustawić wyłącznik czasowy
 Label: Ustawienia wyłącznika czasowego
 
-| Źródło    | Ustawienie                                                                                                                            |
-| --------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| Dawson    | O ½ godziny dłużej niż przewidywany czas wypału, dopóki nie pozna się pieca, później nawet tylko o ¼ godziny; nigdy powyżej 20 godzin |
-| L&L       | Za pierwszym razem bardzo długo, notując, ile trwa wypał; potem o około 1 godzinę dłużej                                              |
-| Bracker's | O 30 minut do 1 godziny dłużej niż czas wypału                                                                                        |
+| Źródło    | Ustawienie                                                                                                                                            |
+| --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Dawson    | O ½ godziny dłużej niż przewidywany czas wypału, dopóki nie pozna się pieca, później nawet tylko o ¼ godziny; nigdy nie ustawiać go powyżej 20 godzin |
+| L&L       | Za pierwszym razem bardzo długo, notując, ile trwa wypał; potem o około 1 godzinę dłużej                                                              |
+| Bracker's | O 30 minut do 1 godziny dłużej niż czas wypału                                                                                                        |
 
 > [!NOTE]
 > Nasz punkt wyjścia: za pierwszym razem z dużym zapasem (w granicach 20 godzin na tarczy), potem o ½ do 1 godziny dłużej niż zapisany czas. Wyłącznik czasowy pokazuje też, ile trwał wypał: ustawiony na 7 i zatrzymany na 1 oznacza 6 godzin.
@@ -375,7 +376,7 @@ Samonośne stożki Ortona są sprzedawane w Japonii pod nazwą 立つゼーゲ�
 
 ### Dlaczego początek wypału idzie powoli
 
-Woda, zamieniając się w parę, „zwiększa objętość 1170 razy”, jak zauważa Bracker's, więc wilgotne wyroby trzeba suszyć powoli. L&L i Orton zalecają, by „poniżej 1500°F (815°C) szczególnie dbać o równomierne nagrzewanie masy”, oraz by wypalić węgiel przed osiągnięciem około {{1200 °F; 650 °C}}. Powyżej {{1500 °F; 816 °C}} temperatura w piecu może rosnąć szybciej.
+Woda zwiększa objętość ponad tysiąckrotnie, gdy zamienia się w parę, więc wilgotne wyroby trzeba suszyć powoli. L&L i Orton zalecają, by „poniżej 1500°F (815°C) szczególnie dbać o równomierne nagrzewanie masy”, oraz by wypalić węgiel przed osiągnięciem około {{1200 °F; 650 °C}}. Powyżej {{1500 °F; 816 °C}} temperatura w piecu może rosnąć szybciej.
 
 Table: Co się dzieje, gdy biskwit się nagrzewa
 Label: Przebieg wypału biskwitowego
@@ -595,22 +596,22 @@ Jeśli wyłącznik zadziała, zanim stożki na płycie się zegną, następnym r
 
 **Pirometr** to wskaźnik temperatury odczytujący wskazania **termopary**, czyli czujnika temperatury wprowadzonego przez ścianę pieca. Pokazuje, jak szybko rośnie temperatura w piecu, dzięki czemu można wybrać właściwą kolumnę tabeli stożków. Mierzy jednak przy ścianie, a nie przy wyrobach, a jego wskazania z czasem się przesuwają. L&L zauważa, że po wielokrotnych wypałach na stożek 6 termopara typu K może się mylić o ponad {{25 °F; 14 °C}}, co daje „różnicę większą niż cały stożek”, podczas gdy stożek samonośny różni się najwyżej o {{4 °F; 2 °C}}. Orton pisze, że pirometry trzeba od czasu do czasu ponownie kalibrować, a sprawdza się je właśnie stożkami.
 
-## Wentylacja, zaglądanie do pieca i bezpieczeństwo {#venting}
+## Odprowadzanie oparów, zaglądanie do pieca i bezpieczeństwo {#venting}
 
-### Wentylacja
+### Odprowadzanie oparów
 
-Na początku wypału glina i szkliwo{{en: glaze}} wydzielają parę wodną oraz gazy i opary, w tym tlenek węgla (czad), a szkliwa mogą wydzielać toksyczne gazy i opary także później w trakcie wypału. L&L uznaje ich odprowadzanie za „niezbędne”. Bez systemu wentylacji oznacza to uchyloną pokrywę i otwarte wzierniki na wczesnych etapach, jak w opisanych wyżej procedurach; spowolnienie grzania w tym czasie pomaga też wypalić węgiel. Przy **wyciągu dolnym** (wyciągu z wentylatorem zamontowanego przy piecu) pokrywa i wzierniki według Ortona pozostają zamknięte przez cały wypał, z wyjątkiem sprawdzania stożków{{en: cones}}. Otwarty górny wziernik chroni też rurkę wyłącznika stożkowego i metalowe części pieca.
+Na początku wypału z gliny i szkliwa uwalnia się para wodna i opary, w tym tlenek węgla (czad), a szkliwa mogą wydzielać toksyczne opary także później w trakcie wypału. L&L nazywa ich odprowadzanie „niezbędnym”. Bez układu wyciągowego oznacza to uchyloną pokrywę i otwarte wzierniki na wczesnym etapie, jak w opisanych wyżej procedurach; wolniejsze nagrzewanie w tym czasie pomaga też wypalić się węglowi. W piecu bez wyciągu Dawson, producent wyłącznika stożkowego{{en: kiln sitter}}, zaleca też, by górny wziernik pozostawał otwarty przez cały wypał: odprowadzanie oparów „zmniejszy zużycie metalowych części pieca i wydłuży żywotność zespołu rurki”. **Wyciąg dolny** (wyciąg z napędem, zamontowany w piecu) zmienia tę zasadę. Sam odprowadza opary, więc według Ortona pokrywa i wzierniki pozostają zamknięte przez cały wypał, z wyjątkiem sprawdzania stożków, a według L&L należy zostawić wyciąg włączony i zatkać wzierniki.
 
-O wentylacji pomieszczenia i o czujnikach czadu mówią poradniki [Bezpieczne rozrabianie szkliw i wentylacja](/guides/safe-mixing) oraz [Jak nie otruć własnej rodziny](/guides/home-safety).
+Informacje o wentylacji pomieszczenia i o czujnikach czadu: zob. [Bezpieczne rozrabianie szkliw i wentylacja](/guides/safe-mixing) oraz [Jak nie otruć własnej rodziny](/guides/home-safety).
 
-### Gdy piec pracuje
+### Podczas wypału
 
-- Przez wziernik zaglądać tylko w okularach spawalniczych z filtrem podczerwieni o stopniu ochrony 3; okulary przeciwsłoneczne nie wystarczą. Skutt zaleca wkręcać zatyczki na miejsce, żeby nie wypadły.
-- Nie zostawiać pieca bez nadzoru dłużej niż przez przewidywany czas wypału; wyłącznik stożkowy nie jest niezawodnym zabezpieczeniem.
-- Nigdy nie wypalać na niczym palnym ani w pobliżu czegokolwiek palnego, np. drewnianej podłogi czy wykładziny.
-- Zachować odstępy podane w instrukcji. Publikowane wartości wynoszą od 12 cali (30 cm) do 3 stóp (91 cm); gdy instrukcja nic o tym nie mówi, najbezpieczniej zachować 18 cali (46 cm) od ścian i 3 stopy (91 cm) od wszystkiego, co palne.
-- Miejsce wokół ciężarka wyłącznika stożkowego musi być wolne, żeby ciężarek mógł opaść.
-- Po zakończeniu wypału wyłączyć przełączniki, a także bezpiecznik.
+- Przez wziernik wolno patrzeć wyłącznie w okularach spawalniczych z filtrem podczerwieni (IR), stopień ochrony 3; okulary przeciwsłoneczne nie wystarczą. Skutt radzi wkręcać zatyczki na miejsce, aby nie wypadały.
+- Nie zostawiać pieca bez nadzoru po upływie spodziewanego czasu wypału; wyłącznik stożkowy nie jest zabezpieczeniem niezawodnym.
+- Nigdy nie wypalać na ani w pobliżu czegokolwiek, co się pali, np. drewnianej podłogi lub dywanu.
+- Zachować odstępy podane w instrukcji. Publikowane wartości wahają się od 12 cali (30 cm) do 3 stóp (91 cm); gdy instrukcja milczy, najbezpieczniejszym wyborem jest 18 cali (46 cm) od ścian i 3 stopy (91 cm) od wszystkiego, co się pali.
+- Przestrzeń wokół ciężarka wyłącznika stożkowego zostawić wolną, aby mógł opaść.
+- Po zakończeniu wypału wyłączyć przełączniki i wyłączyć także bezpiecznik.
 
 ## Chłodzenie i rozładunek {#cooling}
 

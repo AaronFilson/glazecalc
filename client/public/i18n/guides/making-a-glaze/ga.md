@@ -48,7 +48,7 @@ Label: Tacar tosaigh
 | Iathchloch photaise                                                | Pé ceann atá ar díol anois san áit a bhfuil cónaí ort, mar shampla Mahavir i SAM                                               |
 | Siainít neifilín{{en: nepheline syenite}}                          | Aon cheann; deir Glazy go bhfuil cumas floscach níos láidre aici, agus úsáidtear go minic í in ísealbhácáil agus i meánbhácáil |
 | Bánlí                                                              | Aon cheann                                                                                                                     |
-| Talc                                                               | Aon cheann                                                                                                                     |
+| Talc                                                               | Aon ghrád gan aispeist; seiceáil a bhileog sonraí sábháilteachta (féach an treoirleabhar “Meascadh sábháilte agus aeráil”)     |
 | Friot bóróin, do mheánbhácáil                                      | Ferro 3134, 3124 nó 3195; sa Ríocht Aontaithe, Potterycrafts P3124 nó P3195                                                    |
 | Beintinít agus ábhair datha                                        | Méideanna beaga                                                                                                                |
 
@@ -211,7 +211,7 @@ Fágann **salann Epsom** go nglóthaíonn glónra beagán nuair a sheasann sé s
 
 Fágann **guma CMC** (ceallalós carbocsaimeitile) draoib níos greamaithí agus níos moille ag triomú, agus fágann sé brat níos crua a ghreamaíonn den phota. Is mó a bhíonn sé tábhachtach do ghlónraí scuabtha agus do ghlónraí a bhfuil cuid mhór friota{{en: frit}} iontu. I sampla Digitalfire, cumasctar 3.75 g isteach i 1000 g draoibe, agus caithfear cumascóir a úsáid chun é a chur isteach. Ní ghlóthóidh salann Epsom glónra a bhfuil CMC ann, agus ós rud é go n-itheann miocróib an guma, is féidir leis an nglónra athrú sa bhuicéad agus tosú ag cur drochbholadh de.
 
-Cabhraíonn **beintinít**, cré an-mhín, leis na cáithníní eile a choinneáil ar fuaidreán. Is gnách go mbíonn glónraí tumtha ag brath ar 15 go 25% cré neamhbhácáilte chuige sin. I gcás oidis nach bhfuil a dhóthain cré ann, cabhraíonn thart ar 1 go 2% beintiníte.
+Cabhraíonn **beintinít**, cré an-mhín, leis na cáithníní eile a choinneáil ar fuaidreán. Is gnách go mbíonn glónraí tumtha ag brath ar 15 go 25% cré neamhbhácáilte chuige sin. I gcás oidis nach bhfuil a dhóthain cré ann, cabhraíonn thart ar 1 go 3% beintiníte; deir Digitalfire nár cheart go mbeadh níos mó ná 1% de dhíth ar ghlónra a bhfuil níos mó ná 15% cré ann.
 
 ## Tíleanna tástála agus sraitheanna cumaisc {#testing}
 
@@ -284,6 +284,7 @@ Label: Teimpléad taifid
 - [Digitalfire: Epsom salts](https://digitalfire.com/material/epsom+salts)
 - [Digitalfire: CMC gum](https://digitalfire.com/material/cmc%2Bgum)
 - [Digitalfire: Dipping glaze](https://digitalfire.com/glossary/dipping+glaze)
+- [Digitalfire: Bentonite](https://digitalfire.com/material/bentonite)
 - [Digitalfire: Water solubility](https://digitalfire.com/glossary/water+solubility)
 - [Digitalfire: Gerstley Borate](https://digitalfire.com/material/gerstley+borate)
 - [Digitalfire: Mahavir potash feldspar](https://digitalfire.com/material/mahavir+potash+feldspar)

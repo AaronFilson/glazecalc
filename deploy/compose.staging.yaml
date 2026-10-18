@@ -30,7 +30,8 @@ services:
     oom_score_adj: 500
     cpus: 0.5
     # APP_SECRET, MONGODB_URI (user and database glazecalc_staging), MFA_KEY,
-    # MAIL_ALLOWLIST and the email settings, written by staging.sh from
+    # MAIL_ALLOWLIST, the email settings and staging's own Google and GitHub
+    # sign-in settings (when they exist), written by staging.sh from
     # /glazecalc/staging/* in SSM Parameter Store (root-only file). Never
     # production's app.env.
     env_file: /opt/glazecalc/staging.env

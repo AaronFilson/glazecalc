@@ -4,10 +4,26 @@
     "signedInAs": "Dħalt bħala {email}.",
     "trying": "Qed tipprova Glazecalc bħala {name}. Ibda b’riċetta.",
     "welcomeBack": "Kompli minn fejn ħallejt.",
+    "welcome": {
+      "heading": "Merħba f’Glazecalc",
+      "text": "Il-pitazz tiegħek hu lest. Pass tajjeb l-ewwel: ittajpja glejż li diġà taħlat, bil-materjali u l-ammonti tiegħu, u ara l-formula ta’ Seger tiegħu.",
+      "firstRecipe": "Ibda l-ewwel riċetta tiegħek",
+      "confirmHeading": "Ikkonferma l-indirizz elettroniku tiegħek",
+      "confirm": "Ikkonferma l-indirizz elettroniku tiegħek: bgħatna link lil {email}. Id-dħul f’żewġ passi jeħtiġu. Il-<account>paġna tal-kont</account> tiegħek tista’ tibgħatu mill-ġdid.",
+      "confirmText": "Bgħatna link lil {email}. Iftħu biex tikkonferma li l-indirizz huwa tiegħek: id-dħul f’żewġ passi jeħtiġu. Il-<account>paġna tal-kont</account> tiegħek tista’ tibgħatu mill-ġdid."
+    },
     "sections": {
       "recipe": {
         "title": "Riċetti",
         "text": "Ibni glejż minn materjali u ammonti, ara l-formula ta’ Seger (UMF) tiegħu, u ssejvjah."
+      },
+      "import": {
+        "title": "Pejstjar ta’ riċetti",
+        "text": "Ippejstja riċetti minn websajt, spreadsheet jew noti, iċċekkja dak li nqara, u ssejvjahom."
+      },
+      "blends": {
+        "title": "Taħlitiet għal madum tal-prova",
+        "text": "Ħallat żewġ riċetti, tliet riċetti jew erba’ riċetti tiegħek f’madum tal-prova bin-numri, b’dak li għandek tiżen għal kull wieħed."
       },
       "material": {
         "title": "Materjali",
@@ -32,6 +48,14 @@
       "guides": {
         "title": "Gwidi",
         "text": "Minn x’inhu glejż sal-ħami tiegħu, u kif iżżomm lil kulħadd sikur matul it-triq."
+      },
+      "trash": {
+        "title": "Barmil",
+        "text": "Poġġi lura dak li neħħejt fl-aħħar 30 jum."
+      },
+      "account": {
+        "title": "Kont u settings",
+        "text": "Settings, il-password tiegħek, id-dħul f’żewġ passi, u tniżżil ta’ dak kollu li żżomm hawnhekk."
       }
     },
     "newHere": "L-ewwel darba li qed tiltaqa’ mal-formuli ta’ Seger? <advice>Il-paġna Pariri</advice> tispjega l-bażi, u <about>il-paġna Dwar</about> tgħid kif jaħdem Glazecalc."
@@ -39,27 +63,54 @@
   "firing": {
     "title": "Reġistri tal-ħami",
     "lead": "Irreġistra kull ħamja: il-ħinijiet, it-temperaturi, il-koni u n-noti dwar il-forn.",
+    "newHeading": "Ħamja ġdida",
+    "titleLabel": "Titlu",
+    "kiln": "Forn",
+    "date": "Data",
+    "notes": "Noti",
+    "fieldSelect": "Oqsma li se jiġu rreġistrati",
     "addField": "Żid il-qasam",
+    "included": "Oqsma f’din ir-reġistrazzjoni",
     "moveLeft": "Mexxi l-qasam lejn ix-xellug",
     "moveRight": "Mexxi l-qasam lejn il-lemin",
     "removeField": "Neħħi l-qasam",
     "addRow": "Żid ringiela mat-tabella tal-ħami",
+    "addRowWhy": "Żid qasam l-ewwel.",
+    "tableEmpty": "Żid qasam hawn fuq, imbagħad ringieli.",
+    "recordHeading": "Irreġistra l-ħamja",
     "rowActions": "Azzjonijiet tar-ringiela",
     "cell": "{field}, ringiela {row}",
     "removeRow": "Neħħi r-ringiela",
     "save": "Issejvja",
+    "storedHeading": "Il-ħmiem issejvjat tiegħi",
+    "noneSaved": "Għad m’hemm xejn. Il-ħmiem issejvjat jidhru hawnhekk.",
+    "storedIn": "Inħama f’{kiln} nhar {date}.",
+    "storedOn": "Inħama nhar {date}.",
     "storedNotes": "Noti: {notes}",
     "titleMissing": "Agħti isem lill-ħamja.",
     "fieldsMissing": "Żid mill-inqas qasam wieħed biex tirreġistra, bħal {example}.",
     "chooseField": "Agħżel qasam biex iżżidu, imbagħad agħżel Żid il-qasam.",
     "fetchFailed": "Kien hemm żball fil-ġbir tal-informazzjoni dwar ir-reġistri tal-ħami.",
     "saved": "Ir-reġistru tal-ħami ġie miżjud mas-server.",
-    "saveFailed": "Żball: it-talba lis-server ma rnexxietx."
+    "saveFailed": "Żball: it-talba lis-server ma rnexxietx.",
+    "recipesHeading": "Riċetti li nħmew fih",
+    "noRecipes": "Għad m’hemm l-ebda riċetta magħquda.",
+    "recipesFailed": "Ir-riċetti tiegħek ma setgħux jinġiebu, għalhekk issa ma tista’ tgħaqqad ebda waħda.",
+    "pickRecipe": "Riċetta li nħmiet fih",
+    "linkRecipe": "Għaqqad ir-riċetta",
+    "unlink": "Neħħi l-għaqda",
+    "unlinkRecipe": "Neħħi l-għaqda mar-riċetta {title}",
+    "linkFailed": "L-għaqda ma setgħetx tiġi ssejvjata."
   },
   "notes": {
     "title": "Noti",
     "lead": "Kull ħaġa oħra li ta’ min tiftakar dwar il-glejżijiet tiegħek.",
+    "newHeading": "Nota ġdida",
+    "titleLabel": "Titlu",
+    "content": "Nota",
     "save": "Issejvja",
+    "mineHeading": "In-noti ssejvjati tiegħi",
+    "noneSaved": "Għad m’hemm xejn. In-noti ssejvjati jidhru hawnhekk.",
     "titleMissing": "Agħti titlu lin-nota.",
     "contentMissing": "Ikteb in-nota.",
     "untitled": "Nota bla titlu",
@@ -69,6 +120,34 @@
   },
   "trash": {
     "title": "Barmil",
-    "comingSoon": "Il-funzjoni tal-barmil ġejja fil-verżjoni li jmiss ta’ Glazecalc. Sa dakinhar, uża Ħassar / Neħħi b’attenzjoni: ladarba xi ħaġa titħassar, l-informazzjoni tintilef."
+    "lead": "Dak li tneħħi (riċetti, materjali, addittivi, noti, reġistri tal-ħami u pariri) jistenna hawn għal 30 jum. Poġġih lura, jew ħassru għal dejjem.",
+    "listHeading": "Fil-barmil",
+    "none": "Il-barmil huwa vojt.",
+    "untitled": "Mingħajr titlu",
+    "kinds": {
+      "recipes": "Riċetta",
+      "materials": "Materjal",
+      "additives": "Addittiv",
+      "notes": "Nota",
+      "firing": "Reġistru tal-ħami",
+      "advice": "Parir",
+      "other": "Rekord"
+    },
+    "removedOn": "Tneħħa: {date}",
+    "goesOn": "Jitħassar għal dejjem: {date}",
+    "byApp": "Tneħħa minn app konnessa",
+    "putBack": "Poġġi lura",
+    "putBackName": "Poġġi lura {name}",
+    "restored": "Poġġejna lura “{name}” fil-post oriġinali.",
+    "restoredAlready": "Diġà poġġejna lura “{name}”.",
+    "restoreFailed": "Ma rnexxilniex inpoġġu lura “{name}”. Erġa’ pprova.",
+    "deleted": "Ħassarna “{name}” għal dejjem.",
+    "empty": "Żvojta l-barmil",
+    "emptyQuestion": "{count, plural, one {Tħassar # rekord fil-barmil għal dejjem?} two {Tħassar # rekords kollha fil-barmil għal dejjem?} few {Tħassar # rekords kollha fil-barmil għal dejjem?} many {Tħassar #-il rekord kollha fil-barmil għal dejjem?} other {Tħassar # rekord kollha fil-barmil għal dejjem?}} Ma tistax terġa’ lura minn dan.",
+    "emptyYes": "Iva, żvojtah",
+    "emptying": "Qed jiġi żvojtat…",
+    "emptied": "Il-barmil issa vojt.",
+    "emptyFailed": "Ma rnexxilniex inżvojtaw il-barmil. Erġa’ pprova.",
+    "fetchFailed": "Il-barmil ma setax jitgħabba. Erġa’ pprova."
   }
 }

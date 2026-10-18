@@ -9,7 +9,7 @@ Hlavným dlhodobým nebezpečenstvom pri práci s glazúrami{{en: glaze}} je pra
 
 Ak sa vdychuje dlhší čas, môže spôsobiť **silikózu**, ochorenie pľúc, ktoré HSE opisuje ako „závažné a nezvratné“ a schopné „spôsobiť trvalú invaliditu a predčasnú smrť“. Môže spôsobiť aj **CHOCHP** (chronickú obštrukčnú chorobu pľúc: dlhodobú bronchitídu a pľúcny emfyzém), ktorú fajčenie zhoršuje. IARC, agentúra Svetovej zdravotníckej organizácie pre výskum rakoviny, zaraďuje vdychovaný kryštalický oxid kremičitý do skupiny 1, „karcinogénny pre ľudí“.
 
-Oxid kremičitý sa v peci nemení na výpary a mokrá glazúra nepredstavuje nebezpečenstvo pri vdýchnutí. Pozor si treba dávať vtedy, keď je materiál suchý: pri otváraní vriec, vážení, rozmiešavaní prášku vo vode a pri upratovaní kvapiek, rozstreku a rozliatej glazúry, keď už vyschli späť na prach.
+Oxid kremičitý sa v peci nemení na výpary a mokrá glazúra nepredstavuje nebezpečenstvo pri vdýchnutí, ak sa nestrieka: hmla zo striekania nesie oxid kremičitý a zasychá na prach (pozri Striekanie nižšie). Pozor si treba dávať vtedy, keď je materiál suchý: pri otváraní vriec, vážení, rozmiešavaní prášku vo vode a pri upratovaní kvapiek, rozstreku a rozliatej glazúry, keď už vyschli späť na prach.
 
 ### Expozičné limity
 
@@ -67,47 +67,47 @@ Toto poradie je náš návrh, postavený na zásade HSE najprv sa vyhnúť prá�
 
 ## Respirátory {#respirators}
 
-**Respirátor** (filtračná polmaska) je maska certifikovaná na zachytávanie jemných častíc zo vzduchu, ktorý dýchate. Funguje, len keď tesne prilieha k tvári, a dobré návyky dopĺňa, nenahrádza ich.
+**Respirátor** je maska s certifikáciou, ktorá filtruje jemné častice zo vzduchu, ktorý dýchate. Funguje len vtedy, keď tesne priliehá k tvári, a dopĺňa dobré návyky, nenahrádza ich.
 
 ### Triedy podľa regiónu
 
 Table: Triedy respirátorov proti časticiam podľa regiónu (približné ekvivalenty pre prach z glazúr)
 Label: Triedy respirátorov
 
-| Región                  | Bežná trieda | Vyššia trieda | Hľadajte                                                                                            |
-| ----------------------- | ------------ | ------------- | --------------------------------------------------------------------------------------------------- |
-| Spojené štáty           | N95          | P100          | schválenie NIOSH na maske alebo jej obale                                                           |
-| Spojené kráľovstvo a EÚ | FFP2         | FFP3          | EN 149 na jednorazových maskách; EN 140 na opakovane použiteľných polmaskách s filtrami P2 alebo P3 |
-| Austrália a Nový Zéland | P2           | P3            | AS/NZS 1716                                                                                         |
+| Región                  | Bežná trieda | Vyššia trieda | Na čo sa zamerať                                                                |
+| ----------------------- | ------------ | ------------- | ------------------------------------------------------------------------------- |
+| Spojené štáty           | N95          | P100          | Schválenie NIOSH na maske alebo jej obale                                       |
+| Spojené kráľovstvo a EÚ | FFP2         | FFP3          | EN 149 pri jednorazových maskách; polmasky EN 140 s filtrami EN 143 P2 alebo P3 |
+| Austrália a Nový Zéland | P2           | P3            | AS/NZS 1716                                                                     |
 
-Vyššia trieda zachytí väčší podiel jemných častíc. Zdroje sa nezhodujú v tom, koľko zachytí austrálsky P3 (najmenej 99 % alebo najmenej 99,95 %), preto kupujte certifikovanú triedu, ktorá sa predáva vo vašom regióne. Častou voľbou v dielni je opakovane použiteľná **polmaska** (zakrýva nos a ústa, má vymeniteľné filtre) s filtrami P100 (mimo USA P3).
+Vyššia trieda zachytí väčší podiel jemných častíc. Zdroje sa rozchádzajú v tom, koľko zachytí austrálska P3 (najmenej 99 %, alebo najmenej 99,95 %), preto kupujte certifikovanú triedu predávanú vo vašom regióne. Opakovane použiteľná **polmaska** (zakrýva nos a ústa, s výmennými filtrami) s filtrami P100 (mimo USA P3) je bežnou voľbou v dielňach.
 
 ### Priliehanie a tesnosť
 
-Maska, ktorá netesní, prepúšťa prach okolo okrajov bez ohľadu na triedu. HSE upozorňuje, že strnisko a brada „znemožňujú dosiahnuť dobré utesnenie“.
+Maska, ktorá netesní, prepúšťa prach okolo okrajov, nech je jej trieda akákoľvek. HSE varuje, že strnisko a brada „znemožňujú dosiahnutie dobrého utesnenia“.
 
-- **Oholte sa krátko pred prácou.** Odporúčania sa líšia v tom, aké čerstvé musí byť „hladké oholenie“: do 8 hodín (britský výrobca s odvolaním na HSE) alebo najlepšie do 12 hodín (austrálska a novozélandská norma pre skúšky tesnosti). Ak sa oholíte krátko pred prácou, splníte obe.
-- **Ak si necháte bradu,** voľne priliehajúci **filtračný prostriedok s pomocnou ventiláciou** (PAPR: kukla alebo prilba s ventilátorom, ktorý privádza filtrovaný vzduch) nepotrebuje utesnenie na tvári.
-- **Zvoľte správnu veľkosť.** Zlé priliehanie je jednou z hlavných príčin netesností. Na pracoviskách sa robí **skúška tesnosti** (fit test), ktorá overí, či konkrétna maska tesne prilieha na konkrétnu tvár. Doma navrhujeme pri každom nasadení skontrolovať tesnosť podľa pokynov výrobcu.
+- **Oholte sa krátko pred prácou.** Odporúčania sa líšia v tom, ako čerstvé musí oholenie byť. Britský výrobca s odvolaním sa na HSE uvádza oholenie do 8 hodín pred začatím práce. Austrálsko-novozélandská norma pre skúšku tesnosti (fit test) žiada oholenie pred skúškou, „najlepšie do 12 hodín“. Oholenie krátko pred prácou spĺňa oboje.
+- **Ak si bradu ponecháte,** voľne sediaci **filtračný prostriedok s pomocnou ventiláciou** (PAPR: kukla alebo prilba s ventilátorom, ktorý privádza filtrovaný vzduch) nepotrebuje tesné priliehanie k tvári.
+- **Zvoľte správnu veľkosť.** Zlé priliehanie je častou príčinou netesností. Na pracoviskách sa používa **skúška tesnosti**, overenie, že konkrétna maska tesní na konkrétnej tvári. Doma navrhujeme riadiť sa pokynmi výrobcu na kontrolu tesnosti pri každom nasadení.
 
 > [!NOTE]
-> Podľa nás je priliehanie dôležitejšie ako trieda: dobre priliehajúci respirátor N95, FFP2 alebo P2 zvyčajne ochráni lepšie ako voľne sediaci P100.
+> Podľa nás je priliehanie dôležitejšie než trieda: dobre padnúca N95, FFP2 alebo P2 bude zvyčajne lepšia než voľná P100.
 
 ### Kedy ho nosiť
 
-Podľa HSE respirátor „za normálnych okolností nie je potrebný“ tam, kde sa váži a mieša v odsávanom kryte, ale „môže byť potrebný pri údržbe a upratovaní“. Väčšina domácich dielní žiadny kryt nemá, preto navrhujeme nosiť respirátor (najmenej N95, FFP2 alebo P2; P100, FFP3 alebo P3 je lepší) vždy, keď:
+HSE uvádza, že respirátor „zvyčajne nie je potrebný“ tam, kde sa váženie a miešanie vykonáva vo vetranej skrini, ale „môže byť potrebný pri údržbe a čistení“. Väčšina domácich dielní skriňu nemá, preto navrhujeme nosiť ho (aspoň N95, FFP2 alebo P2; lepšia je P100, FFP3 alebo P3) vždy, keď:
 
 - otvárate vrecia alebo vysypávate prášok;
-- vážite prášky a rozmiešavate ich vo vode;
-- zoškrabujete, brúsite brúsnym papierom alebo brúskou zaschnutú glazúru{{en: glaze}} alebo prežah{{en: bisque}};
-- akokoľvek upratujete na sucho alebo vyprázdňujete vysávač;
-- striekate glazúru (v boxe: pozrite nižšie).
+- navažujete prášky a vmiešavate ich do vody;
+- škrabete, brúsite alebo melete vysušenú glazúru či prežahnutý črep{{en: bisque}};
+- robíte akékoľvek upratovanie nasucho alebo vyprázdňujete vysávač;
+- striekate glazúru (v kabíne: pozrite nižšie).
 
 ### Čo nie je respirátor
 
-- Chirurgické rúška, látkové rúška a jednoduché masky „proti hrubému prachu“ bez označenia NIOSH, EN 149 alebo AS/NZS 1716. Pri prachu z glazúr by sme sa na ne nespoliehali.
-- Respirátor proti prachu „vás neochráni pred plynmi, výparmi“ (OSHA), takže proti splodinám z pece nijako nechráni.
-- Starajte sa o svoj respirátor: OSHA upozorňuje, že znečistený alebo nesprávne používaný respirátor „sa môže stať nebezpečenstvom“. Uchovávajte ho čistý, mimo zaprášeného pracovného oblečenia.
+- Chirurgické rúška, látkové rúška a masky proti „obťažujúcemu prachu“ bez označenia NIOSH, EN 149 alebo AS/NZS 1716. Na prach z glazúr by sme sa na ne nespoliehali.
+- Respirátor proti prachu „nechráni pred plynmi, výparmi“ (OSHA), takže proti splodinám z pece nepomôže.
+- Starajte sa o svoj: OSHA uvádza, že špinavý alebo nesprávne používaný respirátor „sa môže stať rizikom“. Skladujte ho čistý, mimo zaprášeného pracovného oblečenia.
 
 ## Upratovanie, oblečenie a ruky {#cleaning}
 
@@ -183,29 +183,29 @@ Pri raku vzniká veľa dymu a CO; Univerzita v Utahu radí robiť ho vonku, ďal
 
 ## Suroviny, ktoré si vyžadujú najväčšiu opatrnosť {#materials}
 
-Väčšina surovín na glazúry{{en: glaze}} vrátane kremeňa{{en: silica}}, hlín, živcov{{en: feldspar}} a frít{{en: frit}} predstavuje hlavne nebezpečenstvo prachu, ktoré zvládnete návykmi opísanými vyššie. Kratší zoznam surovín je toxický sám osebe, pri vdýchnutí, prehltnutí alebo styku s pokožkou. Digitalfire dodáva, že farbítka{{en: stain}} sú vo všeobecnosti oveľa bezpečnejšie ako čisté oxidy a že „nevyvážené glazúry, ktoré uvoľňujú toxické kovy, sa dajú pripraviť z akýchkoľvek surovín“: bezpečnosť pri styku s potravinami{{en: food safety}} závisí od celého receptu, nie od jednej zložky.
+Väčšina surovín na glazúry{{en: glaze}} vrátane kremeňa{{en: silica}}, hlín, živcov{{en: feldspar}} a frít{{en: frit}} predstavuje hlavne nebezpečenstvo prachu, ktoré zvládnete návykmi opísanými vyššie. Kratší zoznam surovín je toxický sám osebe, pri vdýchnutí, prehltnutí alebo styku s pokožkou. Digitalfire dodáva, že farbítka{{en: stain}} sú vo všeobecnosti oveľa bezpečnejšie ako surové oxidy a že „nevyvážené glazúry, ktoré uvoľňujú toxické kovy, sa dajú pripraviť z akýchkoľvek surovín“: bezpečnosť pri styku s potravinami{{en: food safety}} závisí od celého receptu, nie od jednej zložky.
 
-**Skupina IARC** je klasifikácia podľa karcinogenity: skupina 1 znamená „karcinogénny pre ľudí“, skupina 2A „pravdepodobne karcinogénny“ a skupiny 2B a 3 znamenajú slabšie dôkazy.
+**Skupina IARC** je klasifikácia podľa karcinogenity: skupina 1 znamená „karcinogénny pre ľudí“, skupina 2A „pravdepodobne karcinogénny pre ľudí“, skupina 2B „možno karcinogénny pre ľudí“ a skupina 3 „nie je klasifikovateľný z hľadiska karcinogenity pre ľudí“, čo znamená, že je príliš málo dôkazov na posúdenie tak či onak.
 
 Table: Suroviny na glazúry, ktoré si vyžadujú zvláštnu opatrnosť
 Label: Suroviny, ktoré si vyžadujú najväčšiu opatrnosť
 
-| Surovina                                                            | Nebezpečenstvo                                                                                                                                                                                    | Opatrenie                                                                                                                                                       |
-| ------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Zlúčeniny olova a olovnaté frity                                    | „Vysoko toxické pri vdýchnutí alebo požití“; olovo sa odparuje pri nižších teplotách v peci.                                                                                                      | Vyhnite sa im; podľa Digitalfire len pre odborníkov. Pri každej glazúre bez označenia „bezolovnatá“ alebo „neobsahuje olovo“ predpokladajte, že olovo obsahuje. |
-| Uhličitan bárnatý                                                   | Vo vode nerozpustný, ale rozpúšťa sa v žalúdočnej kyseline; pôsobí na srdce a svaly (nepravidelný tep, nízka hladina draslíka).                                                                   | Bárnatá frita alebo stroncium, ak to recept dovoľuje; respirátor; označená nádoba.                                                                              |
-| Oxid manganičitý                                                    | Prach alebo výpary môžu spôsobiť **manganizmus**, ochorenie nervového systému podobné Parkinsonovej chorobe, zvyčajne po 1 – 3 rokoch expozície. Výpary môžu spôsobiť horúčku z kovových výparov. | Namiesto neho čierne farbítka v nízkych percentách; vetrajte pec.                                                                                               |
-| Dichróman draselný a oxid chromitý                                  | Chróm(VI), aký je v dichrómane, patrí do skupiny IARC 1. Toto zaradenie sa nevzťahuje na chróm(III), aký je v oxide chromitom.                                                                    | Dichrómanu sa vyhnite. Oxid chromitý pokladáme za oveľa menej nebezpečný, ale aj jeho prach obmedzujte.                                                         |
-| Kobalt                                                              | Rozpustné soli kobaltu(II): IARC 2A; oxid kobaltnatý: 2B; čierny Co₃O₄: skupina 3.                                                                                                                | Obmedzujte prach; pri čiernych glazúrach farbítka.                                                                                                              |
-| Zlúčeniny niklu                                                     | Univerzita v Utahu ich uvádza medzi známymi alebo pravdepodobnými karcinogénmi pre človeka.                                                                                                       | Radšej farbítka ako vysoké percentá.                                                                                                                            |
-| Kadmium a selén, samotné alebo vo farbítkach                        | Zlúčeniny kadmia uvádza Univerzita v Utahu medzi známymi alebo pravdepodobnými karcinogénmi pre človeka.                                                                                          | „Len pre odborníkov“ (Digitalfire); prečítajte si kartu bezpečnostných údajov každého farbítka.                                                                 |
-| Antimón a vanád                                                     | Trojmocný antimón (ako v oxide antimonitom): IARC 2A; vanád je „vysoko toxický pri vdýchnutí“.                                                                                                    | Vanád len pre odborníkov; obmedzujte prach antimónu.                                                                                                            |
-| Meď a zinok                                                         | Výpary z pece môžu spôsobiť horúčku z kovových výparov; oxid zinočnatý ako surovina sa „vo všeobecnosti nepovažuje za nebezpečný“.                                                                | Vetrajte pec.                                                                                                                                                   |
-| Uhličitan lítny                                                     | „Vysoko toxický pri vdýchnutí“. Odborný výbor EÚ dospel k záveru, že môže poškodiť plodnosť a nenarodené dieťa; keď sme to overovali, formálne prijatie nebolo potvrdené.                         | Rukavice a respirátor; uchovávajte mimo dosahu detí. V tehotenstve navrhujeme zvýšenú opatrnosť.                                                                |
-| Bórax a kyselina boritá                                             | V EÚ klasifikované ako „môže poškodiť plodnosť; môže poškodiť nenarodené dieťa“.                                                                                                                  | Rukavice; kde sa dá, bór z frity.                                                                                                                               |
-| Sóda (uhličitan sodný), potaš (uhličitan draselný), alkalické živce | Dráždia pokožku.                                                                                                                                                                                  | Rukavice.                                                                                                                                                       |
-| Kazivec (fluorit), kryolit, lepidolit                               | Pri výpale uvoľňujú plyny s obsahom fluóru; kazivec dráždi aj pokožku.                                                                                                                            | Odsávajte splodiny z pece von; rukavice.                                                                                                                        |
-| Mastenec (talk)                                                     | IARC 2A od júla 2024; mastenec kontaminovaný azbestom sa posudzuje ako azbest, skupina 1.                                                                                                         | Doštičkový (nie vláknitý) mastenec bez azbestu; overte si jeho kartu bezpečnostných údajov.                                                                     |
+| Surovina                                                            | Nebezpečenstvo                                                                                                                                                                                                                                                                   | Opatrenie                                                                                                                                                       |
+| ------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Zlúčeniny olova a olovnaté frity                                    | „Vysoko toxické pri vdýchnutí alebo požití“; v peci sa odparujú pri nižších teplotách ako väčšina surovín na glazúry.                                                                                                                                                            | Vyhnite sa im; podľa Digitalfire len pre odborníkov. Pri každej glazúre bez označenia „bezolovnatá“ alebo „neobsahuje olovo“ predpokladajte, že olovo obsahuje. |
+| Uhličitan bárnatý                                                   | Vo vode nerozpustný, ale rozpúšťa sa v žalúdočnej kyseline; pôsobí na srdce a svaly (nepravidelný tep, nízka hladina draslíka).                                                                                                                                                  | Bárnatá frita alebo stroncium, ak to recept dovoľuje; respirátor; označená nádoba.                                                                              |
+| Oxid manganičitý                                                    | Prach alebo výpary môžu spôsobiť **manganizmus**, ochorenie nervového systému podobné Parkinsonovej chorobe, zvyčajne po 1 – 3 rokoch expozície. Výpary môžu spôsobiť horúčku z kovových výparov.                                                                                | Namiesto neho čierne farbítka v nízkych percentách; vetrajte pec.                                                                                               |
+| Dichróman draselný a oxid chromitý                                  | Chróm(VI), aký je v dichrómane, patrí do skupiny IARC 1. Toto zaradenie sa nevzťahuje na chróm(III), aký je v oxide chromitom.                                                                                                                                                   | Dichrómanu sa vyhnite. Oxid chromitý pokladáme za oveľa menej nebezpečný, ale aj jeho prach obmedzujte.                                                         |
+| Kobalt                                                              | Rozpustné soli kobaltu(II): IARC 2A; oxid kobaltnatý: 2B; čierny Co₃O₄: skupina 3. Uhličitan kobaltnatý je v EÚ klasifikovaný takto: môže spôsobiť rakovinu pri vdýchnutí, môže poškodiť plodnosť a existuje podozrenie, že spôsobuje genetické poškodenie (H350i, H360F, H341). | Obmedzujte prach; pri čiernych glazúrach farbítka.                                                                                                              |
+| Zlúčeniny niklu                                                     | Univerzita v Utahu ich uvádza medzi známymi alebo pravdepodobnými karcinogénmi pre človeka.                                                                                                                                                                                      | Radšej farbítka ako vysoké percentá.                                                                                                                            |
+| Kadmium a selén, samotné alebo vo farbítkach                        | Zlúčeniny kadmia uvádza Univerzita v Utahu medzi známymi alebo pravdepodobnými karcinogénmi pre človeka.                                                                                                                                                                         | „Len pre odborníkov“ (Digitalfire); prečítajte si kartu bezpečnostných údajov každého farbítka.                                                                 |
+| Antimón a vanád                                                     | Trojmocný antimón (ako v oxide antimonitom): IARC 2A; vanád je „vysoko toxický pri vdýchnutí“.                                                                                                                                                                                   | Vanád len pre odborníkov; obmedzujte prach antimónu.                                                                                                            |
+| Meď a zinok                                                         | Výpary z pece môžu spôsobiť horúčku z kovových výparov; oxid zinočnatý ako surovina sa „vo všeobecnosti nepovažuje za nebezpečný“.                                                                                                                                               | Vetrajte pec.                                                                                                                                                   |
+| Uhličitan lítny                                                     | „Vysoko toxický pri vdýchnutí“. Odborný výbor EÚ dospel k záveru, že môže poškodiť plodnosť, nenarodené dieťa a dojčené deti; keď sme to overovali, formálne prijatie nebolo potvrdené.                                                                                          | Rukavice a respirátor; uchovávajte mimo dosahu detí. V tehotenstve a počas dojčenia navrhujeme zvýšenú opatrnosť.                                               |
+| Bórax a kyselina boritá                                             | V EÚ klasifikované ako „môže poškodiť plodnosť; môže poškodiť nenarodené dieťa“.                                                                                                                                                                                                 | Rukavice; kde sa dá, bór z frity.                                                                                                                               |
+| Sóda (uhličitan sodný), potaš (uhličitan draselný), alkalické živce | Dráždia pokožku.                                                                                                                                                                                                                                                                 | Rukavice.                                                                                                                                                       |
+| Kazivec (fluorit), kryolit, lepidolit                               | Pri výpale uvoľňujú plyny s obsahom fluóru; kazivec dráždi aj pokožku.                                                                                                                                                                                                           | Odsávajte splodiny z pece von; rukavice.                                                                                                                        |
+| Mastenec (talk)                                                     | IARC 2A od júla 2024; mastenec kontaminovaný azbestom sa posudzuje ako azbest, skupina 1.                                                                                                                                                                                        | Doštičkový (nie vláknitý) mastenec bez azbestu; overte si jeho kartu bezpečnostných údajov.                                                                     |
 
 Bórax, kyselina boritá, sóda a potaš{{en: potash}} sa rozpúšťajú vo vode, preto ich pokladáme za suroviny, ktoré sa najpravdepodobnejšie vstrebú cez poranenú pokožku alebo sa prehltnú z neumytých rúk.
 
@@ -267,6 +267,8 @@ Toto sú primárne zdroje, ktoré sa najviac oplatí prečítať. Väčšina je 
 - [IARC: Monographs Volume 100C](https://publications.iarc.who.int/120)
 - [IARC: Volume 131, Cobalt, antimony compounds and weapons-grade tungsten alloy](https://monographs.iarc.who.int/news-events/volume-131-cobalt-antimony-compounds-and-weapons-grade-tungsten-alloy)
 - [Science Media Centre Spain: IARC classifies talc (2024)](https://sciencemediacentre.es/en/node/3775)
+- [ECHA: Risk Assessment Committee opinion on lithium carbonate, chloride and hydroxide (2021, PDF)](https://echa.europa.eu/documents/10162/e2a3c38e-85fe-505c-a325-293c70a74da5)
+- [PubChem: Cobalt carbonate, GHS classification, including its EU harmonised one](https://pubchem.ncbi.nlm.nih.gov/compound/10565#section=GHS-Classification)
 - [ECHA: Risk Assessment Committee document on boric acid and borates](https://echa.europa.eu/documents/10162/7d740d8c-5cd5-872b-5da2-e549983a9ff9)
 - [Coslaw: EU introduces new CMR classifications under the 24th ATP to the CLP Regulation](https://coslaw.eu/eu-introduces-new-cmr-classifications-under-the-24th-atp-to-the-clp-regulation/)
 - [University of Utah EHS: Arts safety: ceramics](https://www.ehs.utah.edu/guidelines/arts-safety-ceramics/)
@@ -275,6 +277,7 @@ Toto sú primárne zdroje, ktoré sa najviac oplatí prečítať. Väčšina je 
 - [Digitalfire: Kiln fumes](https://digitalfire.com/glossary/kiln+fumes)
 - [Digitalfire: Barium and compounds toxicology](https://digitalfire.com/hazard/barium+and+compounds+toxicology)
 - [Digitalfire: Manganese inorganic compounds toxicology](https://digitalfire.com/hazard/manganese+inorganic+compounds+toxicology)
+- [JSP: What levels of protection do particulate filters provide?](https://jspsafety.helpjuice.com/en_GB/what-levels-of-protection-do-particulate-filters-provide)
 - [JSP: Why is a clean shave essential for a proper tight-fitting respirator seal?](https://jspsafety.helpjuice.com/en_GB/why-is-a-clean-shave-essential-for-a-proper-tight-fitting-respirator-seal-can-i-have-a-beard)
 - [Skutt: Kiln room design and product specifications](https://cdn.shopify.com/s/files/1/0889/3726/7497/files/Designing-A-Kiln-Room-1.pdf)
 - [CIRMA: Kiln safety bulletin (2025)](https://downloads.ccm-ct.org/pdf/Media-Library-Bulletins/KilnSafety-Bulletin-052825.pdf)

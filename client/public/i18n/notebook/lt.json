@@ -4,10 +4,26 @@
     "signedInAs": "Prisijungta kaip {email}.",
     "trying": "Išbandote programą Glazecalc kaip {name}. Pradėkite nuo recepto.",
     "welcomeBack": "Tęskite nuo ten, kur baigėte.",
+    "welcome": {
+      "heading": "Sveiki atvykę į Glazecalc",
+      "text": "Jūsų sąsiuvinis paruoštas. Geras pirmas žingsnis: įveskite glazūrą, kurią jau maišote, su jos žaliavomis ir kiekiais, ir pamatykite jos Segerio formulę.",
+      "firstRecipe": "Pradėti pirmąjį receptą",
+      "confirmHeading": "El. pašto adreso patvirtinimas",
+      "confirm": "Patvirtinkite savo el. paštą: išsiuntėme nuorodą adresu {email}. Dviejų žingsnių prisijungimui jos reikia. <account>Paskyros puslapyje</account> galite išsiųsti ją dar kartą.",
+      "confirmText": "Išsiuntėme nuorodą adresu {email}. Atidarykite ją, kad patvirtintumėte, jog adresas jūsų: dviejų žingsnių prisijungimui jos reikia. <account>Paskyros puslapyje</account> galite išsiųsti ją dar kartą."
+    },
     "sections": {
       "recipe": {
         "title": "Receptai",
         "text": "Sudarykite glazūrą iš žaliavų ir kiekių, peržiūrėkite jos Segerio formulę (UMF) ir įrašykite ją."
+      },
+      "import": {
+        "title": "Receptų įklijavimas",
+        "text": "Įklijuokite receptus iš svetainės, skaičiuoklės ar užrašų, patikrinkite, kas perskaityta, ir įrašykite juos."
+      },
+      "blends": {
+        "title": "Mišiniai bandiniams",
+        "text": "Sumaišykite du, tris ar keturis savo receptus į sunumeruotus bandinius, nurodant, ką pasverti kiekvienam."
       },
       "material": {
         "title": "Žaliavos",
@@ -32,6 +48,14 @@
       "guides": {
         "title": "Vadovai",
         "text": "Nuo to, kas yra glazūra, iki jos degimo, ir kaip visą tą laiką užtikrinti visų saugumą."
+      },
+      "trash": {
+        "title": "Šiukšlinė",
+        "text": "Grąžinkite tai, ką pašalinote per pastarąsias 30 dienų."
+      },
+      "account": {
+        "title": "Paskyra ir nustatymai",
+        "text": "Nustatymai, jūsų slaptažodis, dviejų žingsnių prisijungimas ir visko, ką čia laikote, atsisiuntimas."
       }
     },
     "newHere": "Segerio formulė jums nauja? <advice>Patarimų puslapyje</advice> paaiškinti pagrindai, o <about>puslapyje apie programą</about> – kaip veikia Glazecalc."
@@ -39,27 +63,54 @@
   "firing": {
     "title": "Degimo žurnalai",
     "lead": "Įrašykite kiekvieną degimą: laikus, temperatūras, piroskopus ir pastabas apie krosnį.",
+    "newHeading": "Naujas degimas",
+    "titleLabel": "Pavadinimas",
+    "kiln": "Krosnis",
+    "date": "Data",
+    "notes": "Pastabos",
+    "fieldSelect": "Įrašytini laukai",
     "addField": "Pridėti lauką",
+    "included": "Šio įrašo laukai",
     "moveLeft": "Perkelti lauką į kairę",
     "moveRight": "Perkelti lauką į dešinę",
     "removeField": "Pašalinti lauką",
     "addRow": "Pridėti eilutę į degimo lentelę",
+    "addRowWhy": "Pirmiausia pridėkite lauką.",
+    "tableEmpty": "Pridėkite lauką aukščiau, tada eilutes.",
+    "recordHeading": "Įrašyti degimą",
     "rowActions": "Eilutės veiksmai",
     "cell": "{field}, eilutė {row}",
     "removeRow": "Pašalinti eilutę",
     "save": "Įrašyti",
+    "storedHeading": "Mano įrašyti degimai",
+    "noneSaved": "Kol kas nėra. Įrašyti degimai rodomi čia.",
+    "storedIn": "Degta krosnyje {kiln} {date}.",
+    "storedOn": "Degta {date}.",
     "storedNotes": "Pastabos: {notes}",
     "titleMissing": "Įveskite degimo pavadinimą.",
     "fieldsMissing": "Pridėkite bent vieną įrašomą lauką, pvz., {example}.",
     "chooseField": "Pasirinkite lauką, kurį norite pridėti, tada spustelėkite Pridėti lauką.",
     "fetchFailed": "Gauti degimo įrašų duomenų nepavyko.",
     "saved": "Degimo įrašas sėkmingai pridėtas į serverį.",
-    "saveFailed": "Klaida: užklausa serveriui nepavyko."
+    "saveFailed": "Klaida: užklausa serveriui nepavyko.",
+    "recipesHeading": "Jame degti receptai",
+    "noRecipes": "Dar nėra susietų receptų.",
+    "recipesFailed": "Nepavyko gauti jūsų receptų, todėl dabar nieko negalima susieti.",
+    "pickRecipe": "Jame degtas receptas",
+    "linkRecipe": "Susieti receptą",
+    "unlink": "Atsieti",
+    "unlinkRecipe": "Atsieti: {title}",
+    "linkFailed": "Nepavyko įrašyti sąsajos."
   },
   "notes": {
     "title": "Užrašai",
     "lead": "Visa kita, ką verta prisiminti apie jūsų glazūras.",
+    "newHeading": "Naujas užrašas",
+    "titleLabel": "Pavadinimas",
+    "content": "Užrašas",
     "save": "Įrašyti",
+    "mineHeading": "Mano įrašyti užrašai",
+    "noneSaved": "Kol kas nėra. Įrašyti užrašai rodomi čia.",
     "titleMissing": "Įveskite užrašo pavadinimą.",
     "contentMissing": "Parašykite užrašą.",
     "untitled": "Užrašas be pavadinimo",
@@ -69,6 +120,34 @@
   },
   "trash": {
     "title": "Šiukšlinė",
-    "comingSoon": "Šiukšlinės funkcija netrukus atsiras kitoje programos Glazecalc versijoje. Iki tol naikinkite ir šalinkite atsargiai: kas pašalinta, prarandama visam laikui."
+    "lead": "Tai, ką pašalinate (receptus, žaliavas, priedus, užrašus, degimo žurnalus ir patarimus), čia laukia 30 dienų. Grąžinkite arba panaikinkite visam laikui.",
+    "listHeading": "Šiukšlinėje",
+    "none": "Šiukšlinė tuščia.",
+    "untitled": "Be pavadinimo",
+    "kinds": {
+      "recipes": "Receptas",
+      "materials": "Žaliava",
+      "additives": "Priedas",
+      "notes": "Užrašas",
+      "firing": "Degimo žurnalas",
+      "advice": "Patarimas",
+      "other": "Įrašas"
+    },
+    "removedOn": "Pašalinta {date}",
+    "goesOn": "Bus panaikinta visam laikui {date}",
+    "byApp": "Pašalino prijungta programa",
+    "putBack": "Grąžinti",
+    "putBackName": "Grąžinti {name}",
+    "restored": "Grąžinta į buvusią vietą: „{name}“.",
+    "restoredAlready": "Jau grąžinta: „{name}“.",
+    "restoreFailed": "„{name}“ grąžinti nepavyko. Bandykite dar kartą.",
+    "deleted": "Visam laikui panaikinta: „{name}“.",
+    "empty": "Ištuštinti šiukšlinę",
+    "emptyQuestion": "Visam laikui panaikinti {count, plural, one {# įrašą} few {visus # įrašus} many {visus # įrašo} other {visus # įrašų}} šiukšlinėje? Šio veiksmo anuliuoti negalima.",
+    "emptyYes": "Taip, ištuštinti",
+    "emptying": "Tuštinama...",
+    "emptied": "Šiukšlinė tuščia.",
+    "emptyFailed": "Šiukšlinės ištuštinti nepavyko. Bandykite dar kartą.",
+    "fetchFailed": "Šiukšlinės įkelti nepavyko. Bandykite dar kartą."
   }
 }

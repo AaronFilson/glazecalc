@@ -4,6 +4,7 @@ import {
   Injector,
   OnInit,
   WritableSignal,
+  afterEveryRender,
   afterNextRender,
   computed,
   effect,
@@ -14,7 +15,7 @@ import {
 } from '@angular/core';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { FormsModule } from '@angular/forms';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { TranslocoDirective, translate } from '@jsverse/transloco';
 import { marker } from '@jsverse/transloco-keys-manager/marker';
 import { map } from 'rxjs';
@@ -23,7 +24,7 @@ import { ApiResourceFactory } from '../../core/api-resource.service';
 import { AuthService } from '../../core/auth.service';
 import { errorMessage } from '../../core/error-message';
 import { AsksBeforeLeaving } from '../../core/leave.guard';
-import { Additive, AdditiveUnit, Material, Recipe, RecipeMaterial } from '../../core/models';
+import { Additive, AdditiveUnit, FiringLink, Material, Recipe, RecipeMaterial } from '../../core/models';
 import { PreferencesService } from '../../core/preferences.service';
 import { LocaleService } from '../../core/locale.service';
 import { ShelfService } from '../../core/shelf.service';
@@ -43,17 +44,41 @@ import { GRAMS_PER_POUND, WeightUnit, formatWeight } from '../../shared/weights'
 import { LibraryMaterial, modernMaterials } from './compare';
 import { Rebase, amountOf, isAmount, rebase, totalOf, unitOf } from './rebase';
 import { additiveAmount, evaluate, savedAnalysis } from './recipe-analysis';
-import { CompareChoice, RecipeCompare } from './recipe-compare';
+// Types apart from the components, which recipe-page.html defers (@defer), so their files can be left out until needed.
+import type { CompareChoice } from './recipe-compare';
+import { RecipeCompare } from './recipe-compare';
+import { RecipeCost } from './recipe-cost';
+import { RecipeHazards, hazardSources } from './recipe-hazards';
 import { RecipeHelp } from './recipe-help';
 import { RecipeLibrary, libraryKey } from './recipe-library';
 import { RecipePrint } from './recipe-print';
+import { SharePanel } from './share-panel';
 import { Plan, oxideLabel, planSuggestion, suggestAmounts } from './suggest';
 import { BaseChoice, LeadMode, leadFreeBases, leadIn, recipeHasLead, replaceLead } from './lead';
 import { TryMaterial } from './pool';
 import { matchFromShelf } from './shelf';
-import { Run, SwapReport, SwapResult } from './swap-report';
+import type { Run, SwapResult } from './swap-report';
+import { SwapReport } from './swap-report';
 import { TryMaterials } from './try-materials';
 import { UnityFormula, silicaAluminaRatio, unityColumns } from './unity-formula';
+import { OwnLimitsNote } from './own-limits-note';
+import { RecipeNumbers } from './recipe-numbers';
+import { SlurryCalculator } from './slurry-calculator';
+import { FiringBand, LIMIT_SETS, bandOf } from '../../../../lib/recipe/limits';
+import {
+  ATMOSPHERES,
+  ConeScale,
+  FiringBlock,
+  PROCESSES,
+  compareCones,
+  conesBetween,
+  firingBands,
+  inRange,
+  testedCones
+} from '../../../../lib/cones/firing';
+import { RecipeFiring } from './recipe-firing';
+import { RecipeFirings } from './recipe-firings';
+import { ATMOSPHERE_NAMES, Reader, coneText, firingLine } from './firing-text';
 
 const INCLUDE_KEY = 'includeAdditives';
 
@@ -99,6 +124,8 @@ interface Saved {
   stillOpen: boolean;
   /** It was changed while it saved, so the page has changes that are not saved. */
   changedSince: boolean;
+  /** The saved recipe it changed, whose earlier version Undo puts back; none for a new one. */
+  changedId: string | null;
 }
 
 /** What Undo the swap puts back: the recipe as it was, and whether (and as what) it was saved. */
@@ -153,18 +180,34 @@ const toggled = (set: ReadonlySet<string>, id: string): ReadonlySet<string> => {
     PageHeader,
     RecipeHelp,
     RecipeCompare,
+    RecipeCost,
+    RecipeHazards,
     RecipeLibrary,
     RecipePrint,
+    SharePanel,
     RemoveButton,
     RichText,
+    RouterLink,
     SwapReport,
     TranslocoDirective,
     TryMaterials,
-    UnityFormula
+    UnityFormula,
+    RecipeNumbers,
+    OwnLimitsNote,
+    SlurryCalculator,
+    RecipeFiring,
+    RecipeFirings
   ],
   templateUrl: './recipe-page.html',
   // The saved recipes (styles.scss has the rest of the page's).
   styles: `
+    /* Paste in recipes and Blends, which have pages of their own. */
+    .recipe-tools {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.25rem 1.25rem;
+      margin: 0 0 1rem;
+    }
     .saved-recipes-top {
       display: flex;
       flex-wrap: wrap;
@@ -228,7 +271,7 @@ const toggled = (set: ReadonlySet<string>, id: string): ReadonlySet<string> => {
     .saved-recipe-actions {
       margin-inline-start: auto;
     }
-    /* Print, Compare and Remove, on a line of their own under the name, Remove last. */
+    /* Print, Compare, Share and Remove, on a line of their own under the name, Remove last. */
     .saved-recipe-more {
       flex-basis: 100%;
       justify-content: flex-end;
@@ -245,6 +288,21 @@ const toggled = (set: ReadonlySet<string>, id: string): ReadonlySet<string> => {
     }
     .saved-show-all {
       margin-top: 0.5rem;
+    }
+    .saved-firing {
+      color: var(--gc-muted);
+      font-size: 0.9rem;
+      flex-basis: 100%;
+    }
+    .saved-firing-filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .saved-firing-filters select {
+      width: auto;
+      flex: 0 1 14rem;
     }
   `,
   host: { '(window:beforeunload)': 'beforeUnload($event)' }
@@ -288,31 +346,115 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
   /** The standard lists could not be fetched: the lists say so, and offer to try again. */
   protected readonly standardMaterialsFailed = signal(false);
   protected readonly standardAdditivesFailed = signal(false);
+  /** The account's own lists that could not be fetched: the page offers to try again. */
+  protected readonly myMaterialsFailed = signal(false);
+  protected readonly myAdditivesFailed = signal(false);
+  protected readonly myRecipesFailed = signal(false);
+  protected readonly ownFailed = computed(
+    () => this.myMaterialsFailed() || this.myAdditivesFailed() || this.myRecipesFailed()
+  );
   protected readonly myRecipes = signal<Recipe[]>([]);
   protected readonly expanded = signal<ReadonlySet<string>>(new Set());
-  /** The saved recipes whose More (Print, Compare, Remove) is open. */
+  /** The saved recipes whose More (Print, Compare, Share, Remove) is open. */
   protected readonly moreOpen = signal<ReadonlySet<string>>(new Set());
+  /** The saved recipe whose Share is open, under its More. */
+  protected readonly shareOpen = signal<string | null>(null);
+  /** A trial cannot share a recipe; its Share says why. */
+  protected readonly isTrial = computed(() => !!this.auth.trial());
   /** Whether there are enough saved recipes to offer to filter them by title. */
   protected readonly filterShown = computed(() => this.myRecipes().length > SAVED_FILTER_FROM);
   /** What the list is filtered by: emptied when the filter box goes, so a list it no longer shows is not filtered. */
   protected readonly recipeFilter = linkedSignal({ source: this.filterShown, computation: () => '' });
   protected readonly showAllRecipes = signal(false);
-  /** The saved recipes as listed: the newest first, those whose titles match the filter, the first few until all are asked for. */
+  /** How the reader fires, for the firing in words. */
+  protected readonly reader = computed<Reader>(() => ({
+    cones: this.locale.cones(),
+    temperature: this.locale.temperature()
+  }));
+  /** The cones the saved recipes' firings cover ("orton:6"), to filter by; offered once two recipes state one. */
+  protected readonly coneOptions = computed(() => {
+    const keys = new Map<string, { scale: ConeScale; cone: string }>();
+    for (const recipe of this.myRecipes()) {
+      const block = recipe.firedAt;
+      if (!block?.low) continue;
+      for (const cone of conesBetween(block.scale, block.low, block.high)) {
+        keys.set(block.scale + ':' + cone, { scale: block.scale, cone });
+      }
+    }
+    const order: ConeScale[] = ['orton', 'sk', 'temperature'];
+    return [...keys.entries()]
+      .sort(([, a], [, b]) => order.indexOf(a.scale) - order.indexOf(b.scale) || compareCones(a.scale, a.cone, b.cone))
+      .map(([key, { scale, cone }]) => ({ key, label: coneText(scale, cone, this.reader()) }));
+  });
+  /** The atmospheres and processes the saved recipes name, to filter by. */
+  protected readonly atmosphereOptions = computed(() => {
+    const named = new Set(
+      this.myRecipes().flatMap((r) => [...(r.firedAt?.atmospheres ?? []), ...(r.firedAt?.processes ?? [])])
+    );
+    return [...ATMOSPHERES, ...PROCESSES]
+      .filter((a) => named.has(a as never))
+      .map((a) => ({ key: a as string, label: translate(ATMOSPHERE_NAMES[a]) }));
+  });
+  protected readonly firingFiltersShown = computed(
+    () => this.myRecipes().filter((recipe) => recipe.firedAt?.low || recipe.firedAt?.atmospheres?.length).length > 1
+  );
+  protected readonly coneFilter = linkedSignal({ source: this.firingFiltersShown, computation: () => '' });
+  protected readonly atmosphereFilter = linkedSignal({ source: this.firingFiltersShown, computation: () => '' });
+  /** A filter is set: the list shows every match. */
+  private readonly filtering = computed(
+    () => !!(this.recipeFilter().trim() || this.coneFilter() || this.atmosphereFilter())
+  );
+  /**
+   * The saved recipes as listed: the newest first, those whose titles match the filter and whose firing
+   * takes in the cone chosen (a range matches any cone inside it, those tested at it first) and names the
+   * atmosphere chosen, the first few until all are asked for.
+   */
   private readonly listedRecipes = computed(() => {
     const filter = this.recipeFilter().trim().toLocaleLowerCase();
-    const newest = [...this.myRecipes()].reverse();
-    return filter ? newest.filter((recipe) => recipe.title.toLocaleLowerCase().includes(filter)) : newest;
+    let listed = [...this.myRecipes()].reverse();
+    if (filter) listed = listed.filter((recipe) => recipe.title.toLocaleLowerCase().includes(filter));
+    const atmosphere = this.atmosphereFilter();
+    if (atmosphere) {
+      listed = listed.filter((r) =>
+        [...(r.firedAt?.atmospheres ?? []), ...(r.firedAt?.processes ?? [])].includes(atmosphere as never)
+      );
+    }
+    const coneKey = this.coneFilter();
+    if (coneKey) {
+      const [scale, cone] = coneKey.split(':') as [ConeScale, string];
+      listed = listed.filter((r) => inRange(r.firedAt, scale, cone));
+      const untested = (r: Recipe) => (testedCones(r.firedAt).includes(cone) ? 0 : 1);
+      listed = [...listed].sort((a, b) => untested(a) - untested(b));
+    }
+    return listed;
   });
   protected readonly shownRecipes = computed(() => {
     const listed = this.listedRecipes();
-    return this.showAllRecipes() || this.recipeFilter().trim() ? listed : listed.slice(0, SAVED_SHOWN);
+    return this.showAllRecipes() || this.filtering() ? listed : listed.slice(0, SAVED_SHOWN);
   });
+  /** A saved recipe's firing on one line. */
+  protected savedFiring(recipe: Recipe): string {
+    return firingLine(recipe.firedAt, this.reader());
+  }
   /** How many saved recipes are left out until all are asked for, or 0. */
   protected readonly hiddenRecipes = computed(() => this.listedRecipes().length - this.shownRecipes().length);
   protected readonly removal = new Removal(this.recipes, this.myRecipes, this.notices, (recipe) => recipe.title);
 
   /** Whether the unity formula counts the colorants and additives too; saved with the recipe. */
   protected readonly includeAdditives = signal(includeByDefault());
+  /** The firing the recipe is for, as a band, for its limits; saved with the recipe. */
+  protected readonly firing = signal<FiringBand | ''>('');
+  /** The SG the glaze is mixed to, set in the SG calculator; saved with the recipe as sgTarget. */
+  protected readonly sgTarget = signal<number | null>(null);
+  /** The firing as stated (the cone, range, tested cones, atmosphere); saved with the recipe as firedAt. */
+  protected readonly firedAt = signal<FiringBlock | null>(null);
+  /** For a food surface; saved with the recipe as foodSurface. */
+  protected readonly foodSurface = signal(false);
+  /** The firing logs it went through, with a result each; saved with the recipe as firings. */
+  protected readonly firings = signal<FiringLink[]>([]);
+  /** The firing logs part is open: asked for, or the recipe has links. */
+  protected readonly firingsAsked = signal(false);
+  protected readonly firingsShown = computed(() => this.firingsAsked() || this.firings().length > 0);
 
   // Saving: the saved recipe this is (if any), and whether it has changed since.
   protected readonly savedId = signal<string | null>(null);
@@ -324,7 +466,12 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
       notes: this.notes(),
       materials: this.lines().map((l) => [libraryKey(l), l.amount ?? '']),
       additives: this.additiveLines().map((a) => [libraryKey(a), a.amount ?? '', unitOf(a)]),
-      includeAdditives: this.includeAdditives()
+      includeAdditives: this.includeAdditives(),
+      firing: this.firing(),
+      sgTarget: this.sgTarget(),
+      firedAt: this.firedAt(),
+      foodSurface: this.foodSurface(),
+      firings: this.firings()
     })
   );
   private readonly savedSnapshot = signal(this.snapshot());
@@ -415,6 +562,11 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
   private readonly printParam = toSignal(this.route.queryParamMap.pipe(map((params) => params.get('print'))), {
     initialValue: null
   });
+  /** ?sheet=worked opens the print view on the worked calculation (Show the working). */
+  protected readonly printSheet = toSignal(
+    this.route.queryParamMap.pipe(map((params) => (params.get('sheet') === 'worked' ? ('worked' as const) : null))),
+    { initialValue: null }
+  );
   private readonly recipesLoaded = signal(false);
   /** The recipe being edited, as it would be saved. */
   private readonly draft = computed<Recipe>(() => ({
@@ -423,7 +575,12 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
     notes: this.notes(),
     materials: this.lines(),
     additives: this.additiveLines(),
-    includeAdditives: this.includeAdditives()
+    includeAdditives: this.includeAdditives(),
+    ...(this.firing() ? { firing: this.firing() as FiringBand } : {}),
+    ...(this.sgTarget() !== null ? { sgTarget: this.sgTarget() } : {}),
+    ...(this.firedAt() ? { firedAt: this.firedAt() } : {}),
+    ...(this.foodSurface() ? { foodSurface: true } : {}),
+    ...(this.firings().length ? { firings: this.firings() } : {})
   }));
   /** The recipe in the print view, while it is open. */
   protected readonly printRecipe = computed<Recipe | null>(() => {
@@ -439,6 +596,25 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
   /** Whether this page opened the print or compare view, so closing it can go back in the history. */
   private viewOpenedHere = false;
   protected readonly chemistryOf = (name: string) => this.findByName(name);
+  /** What the recipe's hazards are read from: the library's current records for its standard materials. */
+  protected readonly hazardSources = computed(() =>
+    hazardSources(
+      [...this.lines(), ...this.additiveLines()],
+      [...this.standardMaterials(), ...this.standardAdditives()],
+      [...this.myMaterials(), ...this.myAdditives()]
+    )
+  );
+  /** The same for the recipe being printed. */
+  protected readonly printHazards = computed(() => {
+    const recipe = this.printRecipe();
+    return recipe
+      ? hazardSources(
+          [...(recipe.materials ?? []), ...(recipe.additives ?? [])],
+          [...this.standardMaterials(), ...this.standardAdditives()],
+          [...this.myMaterials(), ...this.myAdditives()]
+        )
+      : [];
+  });
 
   // Comparing: ?compare=<first>,<second>, each 'draft' (the recipe being edited),
   // 'before' (it before Try modern materials) or a saved recipe's id.
@@ -564,38 +740,84 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
       if (!comparing && target.startsWith('compare-') && target !== 'compare-draft') {
         untracked(() => this.showMore(target.slice('compare-'.length)));
       }
-      untracked(() =>
-        afterNextRender(() => (document.getElementById(target) ?? document.getElementById('recipe-name'))?.focus(), {
-          injector: this.injector
-        })
-      );
+      untracked(() => this.focusWhenDrawn(target, comparing ? 'compare-heading' : null));
     });
     // The focus goes to the print options when they open, and back to the Print button that opened them.
+    // Show the working opened it from its own button, in the unity formula's panel.
     let printed: string | null = null;
+    let sheet: string | null = null;
     effect(() => {
       const printing = this.printRecipe() ? this.printParam() : null;
       if (printing === printed) return;
-      const target = printing ? 'print-heading' : 'print-' + printed;
+      const opener = printed === 'draft' && sheet === 'worked' ? 'worked-draft' : 'print-' + printed;
+      const target = printing ? 'print-heading' : opener;
       if (!printing && printed && printed !== 'draft') untracked(() => this.showMore(printed!));
       printed = printing;
-      untracked(() => afterNextRender(() => document.getElementById(target)?.focus(), { injector: this.injector }));
+      sheet = untracked(this.printSheet);
+      untracked(() => this.focusWhenDrawn(target, printing ? 'print-heading' : null, null));
     });
   }
 
   ngOnInit(): void {
-    void this.load(this.materials.getAll(), this.myMaterials, marker('recipe.page.fetchMaterials'));
+    this.loadMyMaterials();
     this.loadStandardMaterials();
-    void this.load(this.additives.getAll(), this.myAdditives, marker('recipe.page.fetchAdditives'));
+    this.loadMyAdditives();
     this.loadStandardAdditives();
-    void this.load(this.recipes.getAll(), this.myRecipes, marker('recipe.page.fetchRecipes')).then(() => {
+    this.loadMyRecipes();
+  }
+
+  /** Asks again for each of the account's own lists that could not be fetched. */
+  protected readonly retryOwn = (): void => {
+    if (this.myMaterialsFailed()) this.loadMyMaterials();
+    if (this.myAdditivesFailed()) this.loadMyAdditives();
+    if (this.myRecipesFailed()) this.loadMyRecipes();
+  };
+
+  private loadMyMaterials(): void {
+    void this.load(
+      this.materials.getAll(),
+      this.myMaterials,
+      marker('recipe.page.fetchMaterials'),
+      this.myMaterialsFailed
+    );
+  }
+
+  private loadMyAdditives(): void {
+    void this.load(
+      this.additives.getAll(),
+      this.myAdditives,
+      marker('recipe.page.fetchAdditives'),
+      this.myAdditivesFailed
+    );
+  }
+
+  /**
+   * The saved recipes. Only once they have arrived is the account known to have none, so a failed
+   * fetch does not open the first-run help or say the list is empty; it offers to try again.
+   */
+  private loadMyRecipes(): void {
+    void this.load(
+      this.recipes.getAll(),
+      this.myRecipes,
+      marker('recipe.page.fetchRecipes'),
+      this.myRecipesFailed
+    ).then((ok) => {
+      if (!ok) return;
       this.recipesLoaded.set(true);
+      // ?open=<id> (the account page's shared recipes): that saved recipe, ready to change.
+      const wanted = this.route.snapshot.queryParamMap.get('open');
+      const found = wanted ? this.myRecipes().find((recipe) => recipe._id === wanted) : undefined;
+      if (found) this.open(found);
       // Opened at the saved recipes (Home's Recipes card): they arrive after the page, so the app could not go there.
+      // The page's words can arrive later still (the template waits for them), so it goes once the heading is drawn.
       if (this.route.snapshot.fragment === 'saved-recipes' && this.myRecipes().length) {
-        afterNextRender(
+        const goThere = afterEveryRender(
           () => {
             const heading = document.getElementById('saved-heading');
-            heading?.scrollIntoView({ block: 'start' });
-            heading?.focus({ preventScroll: true });
+            if (!heading) return;
+            goThere.destroy();
+            heading.scrollIntoView({ block: 'start' });
+            heading.focus({ preventScroll: true });
           },
           { injector: this.injector }
         );
@@ -744,8 +966,34 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
   protected save(): Promise<void> {
     return this.saving.run(async () => {
       const saved = await this.saveAs('save');
-      if (saved) this.notices.success(translate('recipe.page.savedNotice', { title: saved.title }), 'save');
+      if (!saved) return;
+      const id = saved.changedId;
+      this.notices.success(
+        translate('recipe.page.savedNotice', { title: saved.title }),
+        'save',
+        id ? { label: translate('recipe.page.undoSave'), run: () => this.undoSave(id) } : undefined
+      );
     });
+  }
+
+  /**
+   * Puts back the saved recipe as it was before the last save (the server
+   * keeps it). The page shows it, unless the recipe has changed on the page
+   * since or another is open: then only the list changes, and the page's
+   * recipe counts as not saved.
+   */
+  private async undoSave(id: string): Promise<void> {
+    try {
+      const earlier = await this.recipes.undo(id);
+      this.myRecipes.update((list) => list.map((r) => (r._id === id ? earlier : r)));
+      if (this.savedId() === id) {
+        if (this.dirty()) this.savedSnapshot.set('');
+        else this.open(earlier);
+      }
+      this.notices.success(translate('recipe.page.undone', { title: earlier.title }), 'save');
+    } catch (err) {
+      this.notices.error(errorMessage(err, translate('recipe.page.undoFailed')));
+    }
   }
 
   /** Saves, then clears the page for the next recipe. */
@@ -788,7 +1036,26 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
       materials: this.lines(),
       additives: this.additiveLines(),
       computed: analysis,
-      includeAdditives: this.includeAdditives()
+      includeAdditives: this.includeAdditives(),
+      // null takes a firing (like a target) off a recipe saved with one; a new recipe just has none.
+      ...(this.firing()
+        ? { firing: this.firing() as FiringBand }
+        : this.savedId() && mode !== 'copy'
+          ? { firing: null }
+          : {}),
+      // null takes a target off a recipe saved with one; a new recipe just has none.
+      ...(this.sgTarget() !== null
+        ? { sgTarget: this.sgTarget() }
+        : this.savedId() && mode !== 'copy'
+          ? { sgTarget: null }
+          : {}),
+      // The same for the firing block, the food-surface flag and the links to firing logs.
+      ...(this.firedAt() ? { firedAt: this.firedAt() } : this.savedId() && mode !== 'copy' ? { firedAt: null } : {}),
+      ...(this.foodSurface() ? { foodSurface: true } : this.savedId() && mode !== 'copy' ? { foodSurface: false } : {}),
+      // The links to firing logs go with a new recipe only. A saved recipe's links change one at a time as they
+      // are made (recipe-firings.ts), so a save never sends a list that could undo another page's; a copy starts
+      // with none.
+      ...(!this.savedId() && mode !== 'copy' && this.firings().length ? { firings: this.firings() } : {})
     };
     // What is sent, and which recipe the page shows: both can change before the server answers.
     const sent = this.snapshot();
@@ -811,8 +1078,10 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
         // Changes made while it saved are not in it, so they still count as not saved.
         this.savedSnapshot.set(sent);
         this.savedAt.set(new Date());
+        // The copy shown now has no links to firing logs.
+        if (mode === 'copy') this.linksSaved([]);
       }
-      return { title: recipe.title, stillOpen, changedSince: this.snapshot() !== sent };
+      return { title: recipe.title, stillOpen, changedSince: this.snapshot() !== sent, changedId: id };
     } catch (err) {
       const message = errorMessage(err, translate('recipe.page.saveFailed'));
       if (showing === this.showing) this.saveProblem.set(message);
@@ -859,8 +1128,8 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
 
   // Printing.
 
-  /** Opens the print view for the recipe being edited, saved or not. */
-  protected printDraft(): void {
+  /** Opens the print view for the recipe being edited, saved or not; on the worked calculation for Show the working. */
+  protected printDraft(sheet?: 'worked'): void {
     this.saveProblem.set('');
     if (!this.lines().length) {
       this.saveProblem.set(translate('recipe.page.addMaterialToPrint'));
@@ -872,15 +1141,15 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
       this.checks.report(unreadable, notANumber());
       return;
     }
-    this.openPrint('draft');
+    this.openPrint('draft', sheet);
   }
 
   /** Opens the print view: for 'draft', or a saved recipe's id. Back in the browser closes it. */
-  protected openPrint(what: string): void {
+  protected openPrint(what: string, sheet?: 'worked'): void {
     this.viewOpenedHere = true;
     void this.router.navigate([], {
       relativeTo: this.route,
-      queryParams: { print: what },
+      queryParams: { print: what, sheet: sheet ?? null },
       queryParamsHandling: 'merge'
     });
   }
@@ -894,7 +1163,7 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
   private leavePrint(): void {
     void this.router.navigate([], {
       relativeTo: this.route,
-      queryParams: { print: null },
+      queryParams: { print: null, sheet: null },
       queryParamsHandling: 'merge',
       replaceUrl: true
     });
@@ -1202,6 +1471,10 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
       { run, report: replacement.report, cautions: replacement.cautions },
       compare
     );
+    // The cone it was rebuilt for tells which firing the recipe is for, when it has none yet.
+    if (!this.firing() && !firingBands(this.firedAt()).length && firing.celsius) {
+      this.firing.set(bandOf(LIMIT_SETS['hesselberth-roy'], firing.celsius) ?? '');
+    }
   }
 
   /** Match with what I have: shows the materials on hand, fetched from the account. */
@@ -1327,7 +1600,7 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
       this.suggestProblem.set(translate('recipe.page.cannotRerun'));
       return;
     }
-    afterNextRender(() => document.getElementById('swap-report-heading')?.focus(), { injector: this.injector });
+    this.focusWhenDrawn('swap-report-heading', 'swap-report-heading', null);
   }
 
   /**
@@ -1392,6 +1665,9 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
     this.lines.set(undo.recipe.materials);
     this.additiveLines.set(undo.recipe.additives ?? []);
     this.includeAdditives.set(!!undo.recipe.includeAdditives);
+    this.firing.set(undo.recipe.firing ?? '');
+    this.sgTarget.set(undo.recipe.sgTarget ?? null);
+    this.setFiringFrom(undo.recipe);
     this.savedId.set(undo.savedId);
     this.savedSnapshot.set(undo.savedSnapshot);
     this.savedAt.set(undo.savedAt);
@@ -1414,6 +1690,63 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
     });
   }
 
+  /**
+   * The links of the saved recipe as the server has them now, after one was changed (recipe-firings.ts):
+   * they are saved already, so they do not make the recipe count as changed.
+   */
+  protected linksSaved(links: FiringLink[]): void {
+    const id = this.savedId();
+    this.firings.set(links);
+    const saved = this.savedSnapshot();
+    if (saved) this.savedSnapshot.set(JSON.stringify({ ...JSON.parse(saved), firings: links }));
+    if (id) this.myRecipes.update((list) => list.map((r) => (r._id === id ? { ...r, firings: links } : r)));
+  }
+
+  /** The firing block, food-surface flag and firing log links of a recipe (none for null). */
+  private setFiringFrom(recipe: Recipe | null): void {
+    this.firedAt.set(recipe?.firedAt ? copy(recipe.firedAt) : null);
+    this.foodSurface.set(recipe?.foodSurface === true);
+    this.firings.set(copy(recipe?.firings ?? []));
+    this.firingsAsked.set(false);
+  }
+
+  /**
+   * Duplicate for another cone: a copy of a saved recipe, not saved yet, with
+   * its firing to be set again. It says why moving a glaze to another cone
+   * usually means reformulating it, and the focus goes to the cone.
+   */
+  protected duplicateForCone(recipe: Recipe): void {
+    this.leave(() => {
+      this.showing++;
+      const notes = firstOf(recipe.notes);
+      this.title.set(translate('recipe.firing.duplicateTitle', { title: recipe.title }));
+      this.date.set('');
+      this.notes.set(notes === 'None.' ? '' : notes);
+      this.lines.set(copy(recipe.materials ?? []));
+      this.additiveLines.set(copy(recipe.additives ?? []));
+      this.includeAdditives.set(!!recipe.includeAdditives);
+      // A new firing: the band by hand, the block and the links go; the food-surface flag stays with the glaze.
+      this.firing.set('');
+      this.sgTarget.set(recipe.sgTarget ?? null);
+      this.setFiringFrom({ ...recipe, firedAt: null, firings: [] });
+      this.savedId.set(null);
+      this.savedSnapshot.set('');
+      this.savedAt.set(null);
+      this.scaleMessage.set(null);
+      this.inPounds.set(false);
+      this.saveProblem.set('');
+      this.checks.clear();
+      this.swapUndo.set(null);
+      this.beforeSwap.set(null);
+      this.suggestQuestion.set(null);
+      this.leadQuestion.set(null);
+      this.shelfOpen.set(false);
+      this.suggestProblem.set('');
+      this.notices.success(translate('recipe.firing.duplicateNote', { title: recipe.title }), 'duplicate');
+      afterNextRender(() => document.getElementById('firing-low')?.focus(), { injector: this.injector });
+    });
+  }
+
   /** Loads a saved recipe here to change it. */
   protected open(recipe: Recipe): void {
     this.leave(
@@ -1426,6 +1759,9 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
         this.lines.set(copy(recipe.materials ?? []));
         this.additiveLines.set(copy(recipe.additives ?? []));
         this.includeAdditives.set(!!recipe.includeAdditives);
+        this.firing.set(recipe.firing ?? '');
+        this.sgTarget.set(recipe.sgTarget ?? null);
+        this.setFiringFrom(recipe);
         this.savedId.set(recipe._id ?? null);
         this.savedSnapshot.set(this.snapshot());
         this.savedAt.set(null);
@@ -1508,6 +1844,9 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
     this.lines.set([]);
     this.additiveLines.set([]);
     this.includeAdditives.set(includeByDefault());
+    this.firing.set('');
+    this.sgTarget.set(null);
+    this.setFiringFrom(null);
     this.savedId.set(null);
     this.savedAt.set(null);
     this.savedSnapshot.set(this.snapshot());
@@ -1553,7 +1892,7 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
   /** A saved recipe's notes; "None." is saved for a recipe with none. */
   protected savedNotes(recipe: Recipe): string {
     const notes = firstOf(recipe.notes);
-    return notes === 'None.' ? translate('recipe.page.noNotes') : notes;
+    return !notes || notes === 'None.' ? translate('recipe.page.noNotes') : notes;
   }
 
   protected toggleExpanded(recipe: Recipe): void {
@@ -1562,6 +1901,17 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
 
   protected toggleMore(recipe: Recipe): void {
     this.moreOpen.update((set) => toggled(set, recipe._id ?? ''));
+    if (!this.moreOpen().has(recipe._id ?? '') && this.shareOpen() === recipe._id) this.shareOpen.set(null);
+  }
+
+  /** Opens or closes a saved recipe's Share; the focus goes to its heading when it opens. */
+  protected toggleShare(recipe: Recipe): void {
+    const id = recipe._id ?? '';
+    const opening = this.shareOpen() !== id;
+    this.shareOpen.set(opening ? id : null);
+    if (opening) {
+      this.focusWhenDrawn('share-heading-' + id, 'share-heading-' + id, null);
+    }
   }
 
   /** Lists a saved recipe and opens its More, so the focus can go back to its Print or Compare. */
@@ -1610,25 +1960,52 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
 
   /**
    * Fills the list, or says it could not: failure is the key of the message.
-   * A list that can be asked for again keeps whether it failed, and says so once.
+   * A list that can be asked for again keeps whether it failed, and says so once;
+   * fetched on a later try, its message goes. Whether the list arrived.
    */
   private async load<T>(
     request: Promise<T[]>,
     target: { set(value: T[]): void },
     failure: string,
     failed?: WritableSignal<boolean>
-  ): Promise<void> {
+  ): Promise<boolean> {
     try {
       target.set(await request);
+      if (failed?.()) {
+        const message = translate(failure);
+        this.notices.errors.update((list) => list.filter((text) => text !== message));
+      }
       failed?.set(false);
+      return true;
     } catch {
       if (!failed?.()) this.notices.error(translate(failure));
       failed?.set(true);
+      return false;
     }
   }
 
   private focusAmount(kind: 'material' | 'additive', index: number): void {
     afterNextRender(() => document.getElementById(kind + '-amount-' + index)?.focus(), { injector: this.injector });
+  }
+
+  /**
+   * Gives an element the focus once the page is drawn. Print, compare, share and the swap report are deferred
+   * (recipe-page.html, @defer): when one is asked for before its file is in, it draws a moment later, so the
+   * focus waits for `deferred` (the element it brings) for up to two seconds. Any other element is looked for
+   * once, as before; `fallback` takes the focus where the element is not there.
+   */
+  private focusWhenDrawn(id: string, deferred: string | null, fallback: string | null = 'recipe-name'): void {
+    const started = Date.now();
+    const attempt = () => {
+      const element = document.getElementById(id);
+      if (element) return element.focus();
+      if (id === deferred && Date.now() - started < 2000) {
+        setTimeout(attempt, 20);
+        return;
+      }
+      if (fallback) document.getElementById(fallback)?.focus();
+    };
+    afterNextRender(attempt, { injector: this.injector });
   }
 
   private focusTitle(): void {

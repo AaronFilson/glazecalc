@@ -156,6 +156,22 @@ describe('SettingsSection', () => {
     expect(text(fixture, '.settings-status')).toBe('Saved: amounts are typed with a point for decimals.');
   });
 
+  it("shows each format's date in the calendar chosen: Gregorian for Thai by default, Buddhist when chosen", async () => {
+    const thai = (fixture: { nativeElement: HTMLElement }) =>
+      (fixture.nativeElement.querySelector('#format option[value="th-TH"]') as HTMLOptionElement).textContent
+        ?.replace(/\s+/g, ' ')
+        .trim();
+    const { fixture } = await create();
+    expect(thai(fixture)).toMatch(/· 8\/10\/26\)$/);
+    (fixture.nativeElement.querySelector('#calendar-buddhist') as HTMLInputElement).click();
+    await fixture.whenStable();
+    const req = httpMock().expectOne(API + '/preferences');
+    expect(req.request.body).toEqual({ calendar: 'buddhist' });
+    req.flush({ calendar: 'buddhist' });
+    await settle(fixture);
+    expect(thai(fixture)).toMatch(/· 8\/10\/69\)$/);
+  });
+
   it('says when the choice could not be saved, and shows the one still in place', async () => {
     const { fixture, radio } = await create();
     radio('g').click();
@@ -179,6 +195,8 @@ describe('SettingsSection', () => {
     expect(text(fixture, 'label[for="density-pint"]')).toBe('Pint weight, the ounces in an imperial pint (29 oz)');
     // The example is a message, so each language writes it its own way.
     expect(text(fixture, 'label[for="density-sg"]')).toBe('Specific gravity (SG 1.45)');
+    // One pair of brackets each: the example's, not the standard's too.
+    expect(text(fixture, 'label[for="cones-sk"]')).toBe('To SK cones, JIS R 8101 (SK 4a, SK 8)');
     choice('sg').click();
     await fixture.whenStable();
     const req = httpMock().expectOne(API + '/preferences');
@@ -186,6 +204,48 @@ describe('SettingsSection', () => {
     req.flush({ density: 'sg' });
     await settle(fixture);
     expect(text(fixture, '.settings-status')).toBe('Saved: glaze density as specific gravity.');
+  });
+
+  it('asks the one currency prices are in, following the region until chosen', async () => {
+    const fixture = TestBed.createComponent(SettingsSection);
+    await fixture.whenStable();
+    answer('/preferences', { region: 'SE' });
+    await settle(fixture);
+    const select = fixture.nativeElement.querySelector('#currency') as HTMLSelectElement;
+    // Sweden prices in kronor; each currency is named in the page's language, with its code.
+    expect(select.value).toBe('SEK');
+    expect(select.selectedOptions[0]!.textContent?.trim()).toBe('Swedish Krona (SEK)');
+    expect([...select.options].map((option) => option.value)).toContain('EUR');
+    select.value = 'EUR';
+    select.dispatchEvent(new Event('change'));
+    await fixture.whenStable();
+    const req = httpMock().expectOne(API + '/preferences');
+    expect(req.request.body).toEqual({ currency: 'EUR' });
+    req.flush({ currency: 'EUR' });
+    await settle(fixture);
+    answer('/prices', { prices: [] });
+    await settle(fixture);
+    expect(text(fixture, '.settings-status')).toBe('Saved: prices in Euro.');
+  });
+
+  it('says that stored prices are not converted when the currency changes and prices exist', async () => {
+    const fixture = TestBed.createComponent(SettingsSection);
+    await fixture.whenStable();
+    answer('/preferences', { region: 'SE', currency: 'SEK' });
+    await settle(fixture);
+    const select = fixture.nativeElement.querySelector('#currency') as HTMLSelectElement;
+    select.value = 'EUR';
+    select.dispatchEvent(new Event('change'));
+    await fixture.whenStable();
+    httpMock()
+      .expectOne(API + '/preferences')
+      .flush({ currency: 'EUR' });
+    await settle(fixture);
+    answer('/prices', { prices: [{ key: 'name:Silica', perKg: 2 }] });
+    await settle(fixture);
+    expect(text(fixture, '.settings-status')).toBe(
+      'Saved: prices in Euro. Your stored prices were not converted: they are still the numbers you gave.'
+    );
   });
 
   it('offers English terms and the translation notice only on a translated page, and a language only when there is a choice', async () => {

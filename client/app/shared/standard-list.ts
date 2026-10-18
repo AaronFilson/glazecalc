@@ -154,7 +154,7 @@ const FIRST_SHOWN = 25;
               </td>
               <td>{{ record.equivalent | gcPlain }}</td>
               <td>{{ record.formulaweight | gcPlain }}</td>
-              <td>
+              <td class="standard-analysis">
                 @if (record.noChemistry) {
                   <span class="muted">{{ t('standard.noChemistry') }}</span>
                 } @else if (record.chemistryOf) {
@@ -189,6 +189,10 @@ const FIRST_SHOWN = 25;
   styles: `
     .standard-name {
       min-width: 12rem;
+    }
+    /* The analysis wraps onto a few lines rather than one word a line, so a row stays short on a phone (the table scrolls). */
+    .standard-analysis {
+      min-width: 16rem;
     }
     .standard-detail p {
       margin: 0.25rem 0 0;

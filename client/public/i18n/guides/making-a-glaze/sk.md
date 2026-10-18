@@ -48,7 +48,7 @@ Label: Základná sada
 | Draselný živec                              | Ten, ktorý sa práve predáva tam, kde žijete, napríklad Mahavir v USA                                       |
 | Nefelinický syenit{{en: nepheline syenite}} | Akýkoľvek; Glazy upozorňuje na jeho silnejší taviaci účinok, často sa používa pri nízkom a strednom výpale |
 | Krieda                                      | Akákoľvek                                                                                                  |
-| Mastenec (talk)                             | Akýkoľvek                                                                                                  |
+| Mastenec (talk)                             | Akýkoľvek druh bez azbestu; overte si jeho kartu bezpečnostných údajov (pozri Bezpečné miešanie)           |
 | Bórová frita, na stredný výpal              | Ferro 3134, 3124 alebo 3195; vo Veľkej Británii Potterycrafts P3124 alebo P3195                            |
 | Bentonit a farbivá                          | Malé množstvá                                                                                              |
 
@@ -211,7 +211,7 @@ Label: Voda pre cieľovú relatívnu hustotu
 
 **CMC** (karboxymetylcelulóza) robí rozmiešanú glazúru lepkavejšou, spomaľuje jej schnutie a zanecháva tvrdšiu vrstvu, ktorá drží na výrobku. Najviac na nej záleží pri glazúrach na natieranie štetcom a glazúrach s vysokým obsahom frity{{en: frit}}. V príklade od Digitalfire sa 3,75 g zamieša do 1000 g rozmiešanej glazúry, a to sa musí urobiť mixérom. Glazúra s CMC sa horkou soľou nezahustí, a keďže mikróby sa živia týmto spojivom, môže sa vo vedre meniť a začať zapáchať.
 
-**Bentonit**, veľmi jemná hlina, pomáha udržať ostatné čiastočky vo vznose. Glazúry na ponáranie sa v tom zvyčajne spoliehajú na 15 – 25 % surovej hliny. Receptu, v ktorom je málo hliny, pomôže asi 1 – 2 % bentonitu.
+**Bentonit**, veľmi jemná hlina, pomáha udržať ostatné čiastočky vo vznose. Glazúry na ponáranie sa v tom zvyčajne spoliehajú na 15 – 25 % surovej hliny. Receptu, v ktorom je málo hliny, pomôže asi 1 – 3 % bentonitu; podľa Digitalfire by glazúra s viac ako 15 % hliny nemala potrebovať viac ako 1 %.
 
 ## Skúšobné doštičky a skúšobné rady {#testing}
 
@@ -284,6 +284,7 @@ Label: Vzor záznamu
 - [Digitalfire: Epsom salts](https://digitalfire.com/material/epsom+salts)
 - [Digitalfire: CMC gum](https://digitalfire.com/material/cmc%2Bgum)
 - [Digitalfire: Dipping glaze](https://digitalfire.com/glossary/dipping+glaze)
+- [Digitalfire: Bentonite](https://digitalfire.com/material/bentonite)
 - [Digitalfire: Water solubility](https://digitalfire.com/glossary/water+solubility)
 - [Digitalfire: Gerstley Borate](https://digitalfire.com/material/gerstley+borate)
 - [Digitalfire: Mahavir potash feldspar](https://digitalfire.com/material/mahavir+potash+feldspar)

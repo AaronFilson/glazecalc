@@ -8,6 +8,19 @@ import { optional } from './dates';
 import { Check, FieldChecks, numberCheck, required } from './field-checks';
 import { Notices } from './notices';
 
+/** Labels above fields in a grid of even widths (.form-grid): the Materials, Additives and Firing pages. */
+export const FORM_GRID_STYLES = `
+  .form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+    gap: 0 1rem;
+    max-width: 48rem;
+  }
+  .form-grid > div {
+    margin-bottom: 1rem;
+  }
+`;
+
 /**
  * The look of the Materials and Additives pages (their templates): labels above
  * fields in a grid of even widths, as on the recipe and account pages, the
@@ -15,13 +28,7 @@ import { Notices } from './notices';
  * sideways on a phone rather than the page.
  */
 export const CHEMISTRY_FORM_STYLES = `
-  .form-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
-    gap: 0 1rem;
-    max-width: 48rem;
-  }
-  .form-grid > div,
+  ${FORM_GRID_STYLES}
   .oxide-pick {
     margin-bottom: 1rem;
   }

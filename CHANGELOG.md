@@ -6,6 +6,165 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Added
 
+- **A recipe states its firing** (docs/adr/0021-recipe-firing.md): under the notes, the cone as you give it in Orton, SK
+  or a temperature (stored as entered, never converted), or a claimed range with a tick for each cone you have actually
+  fired it to (the tested cone shows first); Orton 022 to 13, half cones and 14 to 42; atmosphere (oxidation, reduction,
+  neutral) and process (wood, soda, salt, raku, pit); for a temperature, the rate over the last hour and the hold; a
+  schedule note and a witness cone. Conversions into your own scale are shown beside it, marked approximate, using
+  Kyoto's measured SK bends only (SK 8, 10 and 12; other SK cones show no temperature or Orton cone, never the JIS
+  figures). The limits panel takes its band from the firing and shows both
+  bands side by side for a range across them (cone 6–10); the band picker still overrides. A **food surface** flag brings
+  a note that food safety depends on firing to the tested cone (test a range at its low end). **Firing logs** link to
+  recipes both ways, each with a result note, and can fill in the tested cones. **Duplicate for another cone**, cone and
+  atmosphere filters on the saved recipes, the firing on the mix ticket, print and shared page (the author's scale first),
+  paste-in reading "Cone 6 ox", "^6", "SK8" (SK 6a's chart number), "1240°C", "6½", "cone 4,5" (cones 4 and 5) or
+  "ox/red" (a firing line never splits a recipe, and a title such as "Red" or "Salt" is not read as a firing), Glazy's
+  Cone and Atmospheres in the recipes CSV (Orton cones marked Δ, so a spreadsheet keeps "06"), and the firing in the MCP
+  tools (`get_recipe`; `list_recipes` by cone, across scales by measured equivalents, and by atmosphere). Firing log
+  links change one at a time, so two open pages never undo each other's; a log in the Trash is hidden and comes back
+  with it. A shared recipe shows the firing's schedule note only with the notes. Existing recipes show the firing as
+  not stated.
+- **Analysis, limits and a Stull chart on the recipe page**, under the recipe, as you type: each
+  oxide's moles, mole % and fired weight %, the loss on ignition and the calculated thermal
+  expansion (an estimate, with the coefficients named); the unity formula against a limit set,
+  Hesselberth & Roy's stable glaze limits by default (cone 6 and cone 10, their "Recommended Stable
+  Glaze 'Limits'" table of September 2000, linked to their book on Google Books) or Glazecalc's own, chosen there and kept with your settings, shown as
+  guidelines rather than pass or fail and not applied at low fire; and Stull's chart (1912) of
+  silica against alumina with the glaze's point, Stull's regions and the set's ranges, described
+  in words too. A recipe keeps the firing it is for. The recipe help explains them.
+- **Recipe numbers, after review.** Choosing the firing "not chosen" on a saved recipe is now kept;
+  the limits table and the swap checks agree at a limit (a maximum is reached at its figure, and a
+  thin glaze uses the thin boron figure); the SG calculator's sentences follow a language switch and
+  are announced to a screen reader once typing pauses; a glaze with less alumina than Stull's lowest
+  region is "unclassified", not bright; the note for oxides a set has no range for is short (Glazecalc's
+  own set says what it checks, Hesselberth & Roy's names oxides present in a meaningful amount); a
+  lead replacement for a cone sets the recipe's firing when it has none; and a limit set that cannot
+  be saved goes back to the one before, in the table and in the note under the suggestions.
+- **Specific gravity and water** on the recipe page, by Brongniart's formula: what a bucket of
+  glaze holds, the water to add (or pour off) to reach the SG you want, and the water for a new
+  batch, with densities as SG, Baumé or pint weight as Settings say, volumes in litres or US or
+  imperial gallons, and weights in kilograms or pounds and ounces.
+- **A target SG kept with the recipe.** The SG calculator can save the SG you want as the recipe's
+  `sgTarget` (1 to 2.5, kept, versioned and exported with the recipe, and cleared with one click),
+  for the mix ticket to read.
+- **Credits.** The Stull chart's regions are credited on the About page and in
+  `THIRD-PARTY-NOTICES.md`, with Derek Au's MIT notice as the licence asks.
+- **Cost per batch.** The recipe page gives a price box for each material and additive (per kg, or
+  per lb with weights in pounds) and shows what a batch of the size entered costs, and the cost per
+  kg or lb of dry glaze. A material with no price is named, never guessed. Prices are kept with the
+  account, in one currency chosen in Settings (the region's until then; never converted), private
+  to it: they are in Download my data, go when the account is deleted, and join the account from a
+  trial in the same currency. Shared code in `lib/recipe/cost.js`.
+- **Hazards and a safety line** on the recipe page and on the print: each hazard statement the
+  recipe's materials and additives carry (the standard library's, from suppliers' safety data
+  sheets, as listed in the library), once, with the materials it is for; those with none named; and
+  links to the safety guides.
+- **A mix ticket** in the batch-list print: a batch number (typed, or a line to write it on), the
+  date, the recipe's target SG with a line for the reading when the recipe has one, and lines for
+  who weighed and mixed it and who checked it, with the hazards.
+- **Batch cost on the print**, optionally: a "Show the batch cost" tick on the print page, off each time, so a
+  mix ticket handed to someone shows no prices unless chosen. It gives the cost of the batch size
+  printed and the cost per kg or lb, names materials with no price, and fetches no prices unless
+  ticked.
+- **Paste in recipes** (`/import`, linked from the recipe page). Paste recipes copied from a website
+  (Glazy, Digitalfire), a spreadsheet (tab, semicolon or comma columns, CSV quotes) or notes: each
+  line is read as a material and its amount, before or after the name, in percent, parts, grams,
+  kilograms, pounds or ounces, with decimal commas as the reader's settings write them. Colorants
+  marked "+" or under a heading such as "Additions" (in many languages) are additions; titles,
+  firing notes, totals and column headings are told apart; several recipes in one paste are split
+  at their titles or a line of dashes. Each line shows the material it was taken for (by name,
+  another name, or a best guess to check), or asks for a choice where several are close or none is
+  found; any line can take another material or amount, or be left out. Nothing is saved until
+  Save, and a trial's or an account's limit stops the saving where the server says so. The reading
+  and matching are pure functions in `lib/recipe/paste.js`.
+  A generic word ("Kaolin", "Ball clay", "Feldspar", "Frit", "Zircopax" and other makers' names for
+  zircon) is never matched to one product: the library's products of that kind are offered as a
+  choice, most common first, from the table in `lib/recipe/generic-names.js`. A name or alias the
+  library has exactly (such as "Silica" or "Whiting") still wins.
+- **Home cards for Paste in recipes and Blends for test tiles**, beside the other sections.
+- **Blends for test tiles** (`/blends`, from the recipe page and each saved recipe's More). A line
+  blend between two saved recipes, a biaxial blend between four or a triaxial blend between three,
+  up to 21 tiles in a line, 8 by 8 or 11 rows: the tiles drawn as they are laid out and numbered,
+  a list of what to weigh for each tile for a chosen test batch, to print, and the tiles chosen
+  saved as recipes in percent. The tiles and their recipes come from `lib/recipe/blends.js`.
+- **Share a recipe by link** ([ADR 0020](docs/adr/0020-share-links.md)). Share, under a saved
+  recipe's More, makes a read-only link that anyone can open without an account: the recipe as it
+  is now, its unity formula and the working, in the viewer's language. The link is 256 random bits
+  after `#` (so no log or Referer holds it), shown once and stored only as a hash; a new link
+  replaces it, Stop sharing ends it, and moving the recipe to the Trash ends it too. It never shows
+  the owner's email or account, ids, material notes or prices, and the recipe's notes only when
+  the owner ticks them. Shared pages are never indexed and are rate-limited. Trials cannot share.
+  The privacy page, the data download and account deletion include share links.
+  The account page lists every recipe the account shares (a link to the recipe, since when, whether
+  its notes show) with Stop sharing for each; it never shows a link again. Links do not expire.
+  The privacy page's line on print choices now names the worksheet too.
+  A password reset and Sign out everywhere stop every share link of the account (the reset's
+  notice email says so); a password change keeps them. Restoring a recipe from the Trash never
+  shares it again, and a link made as its recipe is trashed is taken back. An additive that
+  borrows a chemistry no longer sends the names of the owner's own materials. A shared recipe's
+  429 replies carry the no-index headers too.
+- **Show the working:** how the unity (Seger) formula comes from a recipe, step by step (grams,
+  each material's oxides and their moles, the totals, the fluxes added up, each oxide divided by
+  them), with the recipe's own numbers and the same answer as the recipe page. From the unity
+  formula's panel, as a third kind of print (a worksheet), and on a shared recipe.
+- **Sign in with Google or GitHub** ([ADR 0015](docs/adr/0015-provider-sign-in.md), integrations
+  plan Phase 1), on the sign-in and sign-up pages, wherever the owner has set a provider up (off
+  until then). An account is found by the provider's own id for the person, never by email. A new
+  account is made only from an email the provider has verified, with no password until one is set
+  through "Forgot password". When an account already has that email, nothing is joined until the
+  person signs in to it once, the usual way, and then only if its own email is confirmed, so an
+  account made in someone else's name can never take over their Google or GitHub. Two-step
+  sign-in still asks for its second step after the provider. The account page lists Google and
+  GitHub, and links or unlinks each after the password (and a second step when it is on), with a
+  notice email; the last way into an account is never removed. Linking or unlinking signs the account
+  out on its other devices, and keeps this one signed in. A password reset by email unlinks every
+  provider (someone who got in may have linked their own), and its notice says they can be linked
+  again from the account page; changing the password while signed in keeps them. An account made with a provider, which has no password,
+  confirms changing its email, deleting itself, two-step sign-in and linking or unlinking by
+  signing in again with one of its providers (Google is asked to sign the person in again, and
+  its answer must say it did; GitHub offers no way to ask): that sign-in counts only for the same account, in the
+  same sign-in session on the same browser, for one change within 5 minutes, and a second step still follows when
+  two-step sign-in is on. Nothing but the provider's id is
+  kept: no name, picture or provider token. A trial on the browser comes along into the account.
+  The export lists the linked providers, and the privacy notice and the record of processing say
+  what is kept. The provider's one-time code and state stay out of nginx's access log and the
+  app's error log (`enable-https.sh` is run again for the nginx part, deploy/README.md). New English text only, for the next translation wave.
+- **Access tokens** ([integrations plan](docs/integrations-plan.md), Phase 3): the account page's
+  new "Access tokens" section makes a token for your own AI assistant or script, which can read
+  your recipes, materials, notebook and firing logs but change nothing. Making one asks for the
+  password, and the second step when two-step sign-in is on, and only once the account's email is
+  confirmed (the section asks for that first, and sends the link again); the token is shown once, to copy.
+  Each stops working after 7, 30, 90 or 365 days (30 unless chosen), up to 10 at once, and can be
+  revoked one by one or all together. An email says when one is made and, 7 days ahead, when one
+  is about to stop working. After a password change the page lists the tokens still working,
+  with "Revoke all". Trials cannot make tokens. In English for now.
+- **Glazecalc's tools for AI assistants** ([ADR 0017](docs/adr/0017-mcp-server.md)): `POST /mcp`
+  serves the Model Context Protocol, for Claude Code, VS Code, Cursor, Gemini CLI and others. With
+  no account: search the library, a material's data, a recipe's unity formula, the limit checks,
+  substitutes for old materials, a recipe remade from given materials, and cones and
+  temperatures, with cautions in the language asked for. With an access token: your own recipes,
+  materials, shelf, notebook, firing logs and settings, and Match with what I have on your shelf.
+  `search_guides` finds what the guides say, in the language asked for (English where it has
+  nothing), with addresses to cite; the guides, materials and cone charts are also resources, and
+  four ready-made prompts diagnose a glaze fault, make a recipe lead-free, replace discontinued
+  materials or explain a recipe. Limited to 60 requests a minute and 2,000 a day per address (120
+  and 5,000 per account with a token) and 10 substitutions or matches a minute; the privacy page
+  says so. CI checks the endpoint with the official MCP conformance suite and the MCP Inspector
+  (`npm run test:mcp`), and `server.json` lists it in the MCP Registry as
+  `com.glazecalcapp/glazecalc` once the owner publishes it. A new page, "Use Glazecalc from your AI assistant" (`/assistants`, English
+  for now), shows how to add it.
+- **The Trash and Undo.** Removing a recipe, material, note or other record moves it to the Trash,
+  where it waits 30 days; the removal notice has Undo, and the Trash page puts records back, deletes
+  them for good or empties the Trash. Each saved change keeps the version before it (the last 20,
+  for 90 days), and the recipe page's "Saved" notice offers Undo.
+- **Foundations for access tokens** ([integrations plan](docs/integrations-plan.md), Phase 0):
+  one table for personal tokens and OAuth grants (hashed, always expiring), a shared check,
+  `data:read` and `data:write` scopes with default deny (only the record routes take a token), an
+  activity log of what tokens do (90 days, titles only), and revocation of every token by a
+  password reset or "Sign out everywhere".
+- **A full Content-Security-Policy from nginx** (`default-src 'self'`), on top of the app's
+  header and the build's `<meta>` policy; the e2e check loads every page under all three.
+- **Groundwork for Indonesian, Vietnamese and Thai** (not offered yet): the three are known languages (their pages exist, unindexed), with style sheets and glossaries in `docs/translations`, prompts for their translation, and Thai dates in the Gregorian calendar until a Calendar setting exists. The landing page's small heading no longer spaces out Thai letters.
 - **Two-step sign-in**, optional, on the account page ([ADR 0014](docs/adr/0014-two-step-sign-in.md),
   [plan](docs/mfa-plan.md)). An authenticator app (a QR code or a key to type), passkeys (named,
   renamed and removed, up to ten) and ten recovery codes, shown once. Signing in then takes the
@@ -34,6 +193,21 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   [plan](docs/seo-plan.md)).
 - **In Turkish.** Türkiye is a region (112, UZEM, silica limit, food-contact limits, shops), and
   Glazecalc is fully translated into Turkish, the password emails included.
+- **In Traditional Chinese, Korean and Simplified Chinese** (繁體中文, 한국어, 简体中文), at their own
+  addresses (`/zh-Hant/recipe`, `/ko/recipe`, `/zh-Hans/recipe`), made the same way: a style sheet and
+  glossary for each (Traditional Chinese as Taiwan writes it, never converted from Simplified),
+  reviewed, made consistent and the safety text checked by translating it back. That found Korean
+  advice softer than the English ("it is best" where the English says should or never) and a word
+  for overfiring that can read as underfiring, both fixed. That makes 29 languages. Every account
+  email is in all three.
+- **In Thai, Vietnamese and Indonesian** (ภาษาไทย, Tiếng Việt, Bahasa Indonesia), at their own
+  addresses (`/th/recipe`, `/vi/recipe`, `/id/recipe`), made the same way, every account email
+  included, and the regions of Thailand, Vietnam and Indonesia in their own language. Translating
+  the safety text back found the everyday Vietnamese word for a dust mask where the English means a
+  rated respirator, fixed (khẩu trang lọc bụi đạt chuẩn), as was the same slip in Chinese. Thai
+  pages were checked at phone width for clipped tone marks and labels that cannot wrap; none were
+  found. That makes 32 languages. Visitors from all three countries see the sign-up page's notice
+  on where accounts are kept.
 - **Where your account is kept, and your choice.** The sign-up page tells everyone outside the US
   (and anyone whose region is not known) that Glazecalc is a free, open-source project, that
   accounts are kept on servers in the United States, that the guides and a trial need no account,
@@ -129,8 +303,8 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   - **Lead and cadmium:** the Tebliğ's limits, the EU directive's figures, with its rule for three
     samples.
   - **Three shops** selling raw glaze materials, by their own names.
-- **South Korea, Taiwan, Singapore and Malaysia as regions** (in English; Singapore and Malaysia
-  stay in English). Each fires by temperature until you choose otherwise and lists the US
+- **South Korea, Taiwan, Singapore and Malaysia as regions** (in Korean, Traditional Chinese or
+  English; Singapore and Malaysia stay in English). Each fires by temperature until you choose otherwise and lists the US
   materials. The guides give, each from an official page with its source and date, and leave out
   what could not be checked:
   - **Who to call:** Korea 119, which also gives medical advice (no national public poison line was
@@ -145,6 +319,38 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
     mg/L), Singapore's lead only, and Malaysia's 2026 limits with four pieces judged.
   - **Shops** by their own names: two in Korea, one in Taiwan, two in Singapore; none was found in
     Malaysia, and the page says so.
+- **China, Hong Kong, Indonesia, Thailand and the Philippines as regions** (in English; Hong Kong
+  also reads Traditional Chinese, and the Philippines stays in English). Each fires by temperature
+  until you choose otherwise and lists the US materials. The guides give, each from an official page
+  with its source and date, and leave out what could not be checked:
+  - **Who to call:** China 120 (with 119 and 110); Hong Kong 999, with the Department of Health
+    linked (its poison centre answers professionals only); Indonesia 119, with the health ministry
+    linked; Thailand 1669 and the Ramathibodi Poison Center on 1367, 24 hours; the Philippines 911
+    and the National Poison Management and Control Center, 24 hours and free.
+  - **Silica:** China's binding limits by the dust's free silica content (0.7, 0.3 and 0.2 mg/m³),
+    Hong Kong's guide values (0.1 for quartz, 0.05 for cristobalite), and Indonesia's and Thailand's
+    binding 0.025 mg/m³. The Philippines' limit could not be read, and the page says so.
+  - **Lead and cadmium:** Indonesia's 2026 limits, with the third of three tests held to them, and
+    Thailand's, all in mg/L. China's could not be read, and Hong Kong has none of its own found.
+  - **Shops:** none was found in any of the five, and the page says so.
+- **A Calendar setting.** Dates are shown in the Gregorian calendar by default everywhere, Thai pages
+  too; Settings offers the Thai Buddhist era (2569) and Japanese eras (令和8年) for readers who want
+  them, each with a sample date. Every date the app shows follows it (firing logs, recipe dates,
+  prints, shared recipes, the account's and the trash's dates); numbers do not change, dates are still
+  typed in the browser's Gregorian date fields and saved as they were, and emails stay Gregorian. Kept
+  with the account (or trial) like the other settings.
+- **Vietnam as a region** (in English until Vietnamese is translated), firing by temperature until
+  you choose otherwise, with the US materials, prices in dong, and numbers and dates as vi-VN.
+  - **Who to call:** 115 for an ambulance, with 113 (police) and 114 (fire). Official government
+    pages list the three numbers but not what each is for, so the roles follow Circular 22/2014 as
+    secondary pages quote it, and the page says so plainly; a plan to merge them into 113, from 2027
+    at the earliest, may change them. No public poison line could be
+    confirmed (Bạch Mai's Poison Control Centre gives no hours or callers for its number).
+  - **Silica:** QCVN 02:2019/BYT's binding 0.1 mg/m³ for free silica in respirable dust (0.3 in all
+    the dust), and **lead and cadmium** under QCVN 12-4:2015/BYT, six kinds of ceramic piece; both
+    read in a legal database's copy of the regulation, as the government's own pages could not be
+    read, and the page says that too.
+  - **Shops:** none was found, and the page says so.
 - **Groundwork for East and Southeast Asia**, before any of its languages:
   - **Numbers and dates** can be written as in Japan, Korea, mainland China and Taiwan (Simplified and
     Traditional Chinese each keep their script in any region), Hong Kong, Singapore, Malaysia,
@@ -368,6 +574,11 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Changed
 
+- **One email after a password reset.** A reset stops the account's access tokens and connected
+  apps, unlinks Google and GitHub, and stops its share links, all in the same step, and its notice
+  lists what it stopped, a line for each (with how many tokens, and which providers to link again);
+  a reset that stopped nothing sends the changed-password email, in the account's language, as
+  before. Sign out everywhere stops the tokens and the share links too.
 - **Easier to find your way**, from a review of the app's usability (2026-10-16):
   - **The menu says "Account"** (or "Trial account"), with a round initial and the email in small
     text under it, and turns the palette's color when hovered or on the account page, like the other

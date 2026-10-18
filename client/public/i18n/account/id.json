@@ -1,0 +1,503 @@
+{
+  "auth": {
+    "signInHeading": "Masuk",
+    "keepHeading": "Simpan pekerjaan Anda",
+    "signUpHeading": "Buat akun Anda",
+    "signInLead": "Selamat datang kembali di buku catatan glasir Anda.",
+    "keepLead": "Simpan semua yang Anda buat sebagai {name}: tambahkan email dan kata sandi. Tetap gratis.",
+    "signUpLead": "Gratis. Resep, bahan, dan catatan Anda dijaga tetap privat untuk akun Anda.",
+    "trialNote": "Sudah punya akun? Dengan masuk, apa yang Anda buat sebagai {name} dipindahkan ke akun itu. Baru di sini? <signup>Buat akun</signup> untuk menyimpannya sebagai gantinya.",
+    "email": "Email",
+    "password": "Kata sandi",
+    "passwordHint": "Paling sedikit 8 karakter.",
+    "confirmation": "Konfirmasi kata sandi",
+    "keepSignedIn": "Biarkan saya tetap masuk di perangkat ini",
+    "passwordMissing": "Masukkan kata sandi Anda.",
+    "createAccount": "Buat akun",
+    "signIn": "Masuk",
+    "haveAccount": "Sudah punya akun? <signin>Masuk</signin>",
+    "privacy": "Email Anda dan apa yang Anda simpan hanya dipakai untuk menjalankan akun Anda, dan disimpan di Amazon Web Services di AS. <privacy>Cara Glazecalc menangani data Anda</privacy>",
+    "dataNotice": "Glazecalc adalah proyek gratis dan sumber terbuka, dan akun disimpan di server di Amerika Serikat. Anda dapat membaca panduan dan mencoba kalkulator tanpa akun, atau menjalankan salinan Anda sendiri. Apakah akan membuat akun di sini adalah keputusan Anda sendiri, dan proyek ini tidak menerima tanggung jawab atasnya. <where>Di mana akun Anda disimpan, dan pilihan Anda</where>",
+    "forgot": "Lupa kata sandi? Setel ulang",
+    "newHere": "Baru di sini? <signup>Buat akun gratis</signup>",
+    "signUpFailed": "Kesalahan: akun tidak dapat dibuat.",
+    "signInFailed": "Kesalahan: tidak dapat masuk.",
+    "or": "atau",
+    "passkeySignIn": "Masuk dengan kunci sandi",
+    "passkeyHint": "Kunci sandi memakai sidik jari, wajah, atau kunci layar Anda sebagai pengganti kata sandi. Tambahkan satu di halaman akun Anda."
+  },
+  "secondStep": {
+    "heading": "Autentikasi dua langkah",
+    "signingInAs": "Kata sandi Anda benar. Satu langkah lagi untuk masuk sebagai {email}.",
+    "leadCode": "Buka aplikasi autentikator Anda dan masukkan kode yang ditampilkannya untuk Glazecalc.",
+    "leadPasskey": "Gunakan kunci sandi Anda untuk menyelesaikan proses masuk.",
+    "leadRecovery": "Masukkan salah satu kode pemulihan yang Anda simpan saat mengaktifkan autentikasi dua langkah. Setiap kode hanya berfungsi sekali.",
+    "code": "Kode dari aplikasi autentikator Anda",
+    "codeHint": "{digits} digit. Kode baru muncul setiap 30 detik.",
+    "codeFormat": "Masukkan kode {digits} digit dari aplikasi autentikator Anda.",
+    "recoveryCode": "Kode pemulihan",
+    "recoveryHint": "Bentuknya seperti abcde-12345.",
+    "recoveryMissing": "Masukkan salah satu kode pemulihan Anda.",
+    "finish": "Selesaikan proses masuk",
+    "usePasskey": "Gunakan kunci sandi",
+    "noPasskeysHere": "Peramban ini tidak dapat memakai kunci sandi. Gunakan cara lain di bawah, atau masuk di perangkat yang bisa.",
+    "useRecovery": "Gunakan kode pemulihan sebagai gantinya",
+    "useApp": "Gunakan aplikasi autentikator Anda sebagai gantinya",
+    "startOver": "Mulai dari awal",
+    "reloadNote": "Langkah ini menunggu selama {minutes} menit. Jika Anda pergi atau memuat ulang halaman ini, Anda perlu memasukkan kata sandi lagi.",
+    "expired": "Proses masuk terlalu lama. Silakan masukkan kata sandi Anda lagi."
+  },
+  "passkey": {
+    "cancelled": "Kunci sandi tidak dipakai: permintaan dibatalkan atau waktunya habis, atau perangkat ini tidak punya kunci sandi untuk Glazecalc. Silakan coba lagi, atau gunakan cara lain.",
+    "registered": "Kunci sandi ini sudah ada di akun Anda.",
+    "browserFailed": "Peramban ini tidak dapat memakai kunci sandi. Silakan coba lagi, atau gunakan cara lain."
+  },
+  "forgot": {
+    "heading": "Setel ulang kata sandi Anda",
+    "checkInbox": "Periksa kotak masuk dan folder spam Anda. Jika tidak ada yang masuk, periksa alamatnya dan minta lagi.",
+    "intro": "Masukkan email untuk akun Anda, dan kami akan mengirimi Anda tautan untuk memilih kata sandi baru.",
+    "email": "Email:",
+    "send": "Kirim tautan penyetelan ulang",
+    "back": "Kembali ke halaman masuk",
+    "failed": "Kesalahan: email penyetelan ulang tidak dapat dikirim. Silakan coba lagi."
+  },
+  "reset": {
+    "heading": "Pilih kata sandi baru",
+    "signIn": "Masuk",
+    "incomplete": "Halaman ini memerlukan tautan dari email penyetelan ulang kata sandi, dan tautan ini tidak lengkap.",
+    "askAgain": "Minta tautan baru",
+    "password": "Kata sandi baru:",
+    "confirmation": "Konfirmasi kata sandi baru:",
+    "save": "Simpan kata sandi baru",
+    "hint": "Paling sedikit 8 karakter. Setiap perangkat yang masuk ke akun akan dikeluarkan.",
+    "failed": "Kesalahan: kata sandi tidak dapat diubah. Silakan coba lagi.",
+    "secondStep": "Jika akun Anda memakai autentikasi dua langkah, Anda tetap memerlukan aplikasi autentikator, kunci sandi, atau kode pemulihan untuk masuk."
+  },
+  "account": {
+    "trialTitle": "Percobaan Anda",
+    "trialLead": "Anda sedang mencoba Glazecalc sebagai {name}.",
+    "keepHeading": "Simpan pekerjaan Anda",
+    "keepText": "Percobaan ini dan semua isinya dihapus pada {date}. Buat akun gratis untuk menyimpannya: resep, bahan, dan catatan Anda tetap seperti semula, dan {name} tetap menjadi nama tampilan Anda.",
+    "createAccount": "Buat akun",
+    "title": "Akun Anda",
+    "signedInAs": "Masuk sebagai {email}.",
+    "contents": "Di halaman ini",
+    "changeHeading": "Ubah kata sandi Anda",
+    "current": "Kata sandi saat ini",
+    "currentMissing": "Masukkan kata sandi Anda saat ini.",
+    "password": "Kata sandi baru",
+    "passwordHint": "Paling sedikit 8 karakter. Perangkat lain yang masuk ke akun ini akan dikeluarkan.",
+    "confirmation": "Konfirmasi kata sandi baru",
+    "change": "Ubah kata sandi",
+    "changeFailed": "Kesalahan: kata sandi tidak dapat diubah. Silakan coba lagi.",
+    "deleteHeading": "Hapus akun Anda",
+    "deleteText": "Ini menghapus akun Anda dan semua yang Anda simpan: resep, bahan, aditif, catatan, catatan pembakaran, dan saran. Tindakan ini tidak dapat dibatalkan.",
+    "deletePassword": "Kata sandi Anda, untuk konfirmasi",
+    "deletePasswordMissing": "Masukkan kata sandi Anda untuk konfirmasi.",
+    "delete": "Hapus akun saya",
+    "deleteFailed": "Kesalahan: akun tidak dapat dihapus. Silakan coba lagi.",
+    "unverifiedHeading": "Konfirmasi email Anda",
+    "unverifiedText": "Kami mengirim tautan ke {email} saat Anda membuat akun ini. Buka tautan itu untuk memastikan bahwa alamat ini milik Anda. Sampai saat itu kami hanya mengirim email ke alamat ini jika Anda memintanya, misalnya penyetelan ulang kata sandi.",
+    "resend": "Kirim tautan lagi",
+    "resendFailed": "Kesalahan: tautan tidak dapat dikirim. Silakan coba lagi.",
+    "emailHeading": "Ubah email Anda",
+    "emailText": "Kami mengirim tautan ke alamat baru, dan email Anda berubah saat Anda membukanya. Kami juga memberi tahu alamat Anda yang sekarang. Setiap perangkat yang masuk ke akun ini akan dikeluarkan.",
+    "newEmail": "Email baru",
+    "emailPassword": "Kata sandi Anda, untuk konfirmasi",
+    "emailSend": "Kirim tautan",
+    "emailFailed": "Kesalahan: tautan tidak dapat dikirim. Silakan coba lagi.",
+    "signOutHeading": "Keluar dari semua perangkat",
+    "signOutText": "Mengeluarkan Anda di setiap perangkat, termasuk yang ini, dan menghentikan token akses dan tautan berbagi Anda. Gunakan jika Anda kehilangan perangkat atau mengira orang lain memiliki data masuk Anda.",
+    "signOutButton": "Keluar dari semua perangkat",
+    "signOutFailed": "Kesalahan: tidak dapat keluar. Silakan coba lagi.",
+    "confirmStep": "Autentikasi dua langkah aktif, jadi konfirmasi bahwa ini Anda: kata sandi Anda dan langkah kedua."
+  },
+  "mfa": {
+    "heading": "Autentikasi dua langkah",
+    "intro": "Minta langkah kedua saat Anda masuk, selain kata sandi: kode dari aplikasi autentikator, atau kunci sandi. Dengan begitu orang yang mengetahui kata sandi Anda tetap tidak dapat masuk.",
+    "loadFailed": "Autentikasi dua langkah Anda tidak dapat dimuat. Silakan muat ulang halaman.",
+    "on": "Autentikasi dua langkah aktif.",
+    "onText": "Anda masuk dengan kata sandi dan langkah kedua, atau dengan kunci sandi saja.",
+    "off": "Autentikasi dua langkah nonaktif.",
+    "badgeOn": "Aktif",
+    "badgeOff": "Nonaktif",
+    "offText": "Untuk mengaktifkannya, siapkan aplikasi autentikator atau tambahkan kunci sandi.",
+    "confirmEmailFirst": "Konfirmasi email Anda dulu, di atas. Kami memakainya untuk memberi tahu Anda tentang perubahan cara masuk, dan untuk membantu jika Anda kehilangan langkah kedua.",
+    "appHeading": "Aplikasi autentikator",
+    "appText": "Aplikasi di ponsel Anda atau di pengelola kata sandi Anda menampilkan kode baru setiap 30 detik, untuk dimasukkan saat Anda masuk.",
+    "addApp": "Siapkan aplikasi autentikator",
+    "removeApp": "Hapus aplikasi autentikator",
+    "added": "Ditambahkan pada {date}.",
+    "lastUsed": "Terakhir dipakai pada {date}.",
+    "notUsed": "Belum dipakai.",
+    "passkeysHeading": "Kunci sandi",
+    "passkeysText": "Kunci sandi membuat Anda masuk dengan sidik jari, wajah, atau kunci layar, di perangkat ini atau ponsel Anda. Kunci sandi dapat menjadi langkah kedua Anda, atau membuat Anda masuk sendiri, tanpa kata sandi.",
+    "noPasskeysHere": "Peramban ini tidak dapat membuat atau memakai kunci sandi. Coba peramban atau perangkat lain.",
+    "addPasskey": "Tambahkan kunci sandi",
+    "removePasskey": "Hapus kunci sandi",
+    "rename": "Ubah nama",
+    "remove": "Hapus",
+    "renameLabel": "Nama baru untuk \"{name}\"",
+    "saveName": "Simpan nama",
+    "name": "Nama untuk kunci sandi",
+    "nameHint": "Agar Anda dapat membedakan kunci sandi Anda, misalnya \"Laptop\" atau \"Ponsel\".",
+    "nameCheck": "Beri kunci sandi nama sepanjang 1 sampai {most} karakter.",
+    "passkeyLimit": "Anda punya {most} kunci sandi, jumlah terbanyak yang dapat dimiliki satu akun. Hapus satu untuk menambahkan yang lain.",
+    "codesTitle": "Kode pemulihan",
+    "codesLeft": "{count, plural, other {# dari {total} kode pemulihan tersisa.}} Jika Anda tidak dapat memakai aplikasi atau kunci sandi, sebuah kode membuat Anda masuk sebagai gantinya. Setiap kode hanya berfungsi sekali.",
+    "codesLow": "Segera buat kode baru. Jika kode habis dan Anda kehilangan aplikasi dan kunci sandi, Anda tidak dapat masuk.",
+    "newCodes": "Buat kode pemulihan baru",
+    "offHeading": "Mematikannya",
+    "offWhat": "Autentikasi dua langkah tetap aktif selama Anda memiliki aplikasi autentikator atau kunci sandi. Menghapus yang terakhir mematikannya, dan kemudian:",
+    "offPassword": "Untuk masuk hanya perlu kata sandi Anda, sehingga siapa pun yang mengetahuinya dapat masuk.",
+    "offCodes": "Kode pemulihan Anda berhenti berfungsi.",
+    "offSignOut": "Setiap perangkat lain yang masuk ke akun Anda dikeluarkan. Perangkat ini tetap masuk.",
+    "offEmail": "Kami mengirimi Anda email bahwa autentikasi ini dimatikan.",
+    "offRemoveApp": "Matikan autentikasi dua langkah (menghapus aplikasi)",
+    "offRemoveAppFirst": "Hapus aplikasi, untuk mulai mematikannya",
+    "offPasskeys": "{count, plural, other {Untuk mematikannya, hapus # kunci sandi Anda di bagian Kunci sandi, di atas.}}",
+    "offPasskeysToo": "{count, plural, other {Anda juga punya # kunci sandi: hapus di bagian Kunci sandi, di atas, serta aplikasinya.}}",
+    "addAppText": "Untuk menyiapkan aplikasi autentikator, konfirmasi dulu bahwa ini Anda.",
+    "removeAppText": "Untuk menghapus aplikasi autentikator, konfirmasi bahwa ini Anda.",
+    "addPasskeyText": "Beri nama kunci sandi dan konfirmasi bahwa ini Anda. Lalu peramban Anda akan meminta Anda membuat kunci sandi.",
+    "removePasskeyText": "Untuk menghapus kunci sandi \"{name}\", konfirmasi bahwa ini Anda.",
+    "newCodesText": "Kode baru menggantikan kode lama Anda, yang berhenti berfungsi. Konfirmasi bahwa ini Anda.",
+    "lastFactor": "Ini langkah kedua terakhir Anda, sehingga autentikasi dua langkah dimatikan dan kode pemulihan Anda berhenti berfungsi.",
+    "continue": "Lanjutkan",
+    "cancel": "Batal",
+    "password": "Kata sandi Anda",
+    "factorLegend": "Dan langkah kedua Anda",
+    "passkeyNext": "Peramban Anda meminta kunci sandi Anda saat Anda melanjutkan.",
+    "passkeyReadyText": "Terima kasih. Sekarang buat kunci sandi \"{name}\": saat Anda menekan tombol, peramban meminta sidik jari, wajah, atau kunci layar Anda, atau meminta ponsel Anda. Jika tidak berhasil, Anda dapat mencoba lagi selama {minutes} menit tanpa konfirmasi ulang.",
+    "passkeyCreate": "Sekarang tambahkan kunci sandi",
+    "useApp": "Gunakan aplikasi autentikator Anda sebagai gantinya",
+    "usePasskey": "Gunakan kunci sandi sebagai gantinya",
+    "useRecovery": "Gunakan kode pemulihan sebagai gantinya",
+    "failed": "Kesalahan: perubahan tidak dapat dilakukan. Silakan coba lagi.",
+    "setupHeading": "Siapkan aplikasi autentikator Anda",
+    "setupOpen": "Buka aplikasi autentikator Anda dan pilih untuk menambahkan akun.",
+    "setupScan": "Pindai kode QR ini dengan aplikasi, atau ketik kuncinya.",
+    "setupTap": "Ketuk tombol untuk menambahkan Glazecalc ke aplikasi autentikator atau pengelola kata sandi di ponsel ini.",
+    "showQr": "Tampilkan kode QR, untuk menyiapkannya di perangkat lain",
+    "setupScanOther": "Pindai dengan aplikasi autentikator di perangkat lain.",
+    "qrAlt": "Kode QR untuk menambahkan Glazecalc ke aplikasi autentikator",
+    "key": "Kunci",
+    "copyKey": "Salin kunci",
+    "openInApp": "Tambahkan ke aplikasi autentikator di perangkat ini",
+    "clipboardNote": "Teks yang disalin dapat tersimpan di riwayat papan klip Anda dan sampai ke perangkat Anda yang lain. Tempel langsung ke pengelola kata sandi Anda, lalu hapus riwayat papan klip Anda.",
+    "setupCode": "Masukkan kode {digits} digit yang kini ditampilkan aplikasi untuk Glazecalc",
+    "setupFinish": "Selesaikan penyiapan",
+    "codesHeading": "Kode pemulihan Anda",
+    "codesText": "Simpan ini di tempat yang aman, misalnya pengelola kata sandi Anda, atau cetak dan simpan bersama dokumen Anda. Jika Anda tidak dapat memakai aplikasi atau kunci sandi, sebuah kode membuat Anda masuk sebagai gantinya. Setiap kode hanya berfungsi sekali. Kode hanya ditampilkan sekarang.",
+    "print": "Cetak kode",
+    "printNote": "Setiap kode hanya berfungsi sekali. Simpan halaman ini di tempat yang aman.",
+    "download": "Unduh sebagai berkas teks",
+    "copy": "Salin kode",
+    "copied": "Tersalin.",
+    "copyFailed": "Tidak dapat menyalin. Silakan pilih teksnya lalu salin.",
+    "saved": "Sudah saya simpan",
+    "fileTitle": "Kode pemulihan Glazecalc untuk {email}",
+    "fileNote": "Setiap kode hanya berfungsi sekali. Simpan berkas ini di tempat yang aman."
+  },
+  "export": {
+    "heading": "Unduh data saya",
+    "text": "Simpan salinan semua yang dimiliki akun Anda sebagai satu berkas: data diri, pengaturan, bahan yang Anda punya, resep, bahan, aditif, catatan, catatan pembakaran, saran, dan sampah. Berkas ini tidak menyertakan kata sandi Anda. Simpan berkas di tempat pribadi, karena berisi semua yang Anda simpan.",
+    "json": "Unduh semuanya (JSON)",
+    "csvText": "Atau simpan lembar kerja hanya berisi resep Anda atau hanya bahan Anda sendiri, untuk dibuka di Excel, Numbers, atau Sheets.",
+    "recipes": "Resep (CSV)",
+    "materials": "Bahan (CSV)"
+  },
+  "trash": {
+    "heading": "Sampah",
+    "text": "Apa yang Anda hapus dari buku catatan Anda menunggu di Sampah selama 30 hari. Kembalikan dari sana, atau hapus secara permanen.",
+    "open": "Buka Sampah"
+  },
+  "shared": {
+    "heading": "Resep yang dibagikan",
+    "text": "Resep yang Anda bagikan lewat tautan, yang dapat dibaca siapa pun yang memegang tautannya tanpa akun. Tautan hanya ditampilkan sekali, saat dibuat, jadi tidak dapat ditampilkan di sini. Untuk membagikan resep lagi, buat tautan baru di bawah Lainnya pada resep.",
+    "since": "Dibagikan sejak {date}",
+    "notesShown": "Catatan ditampilkan",
+    "notesHidden": "Catatan tidak ditampilkan",
+    "untitled": "Resep tanpa judul",
+    "stop": "Berhenti membagikan",
+    "stopName": "Berhenti membagikan {name}",
+    "stopped": "{name} tidak lagi dibagikan. Tautannya tidak lagi berfungsi.",
+    "stopFailed": "Tidak berhasil. Silakan coba lagi.",
+    "fetchFailed": "Resep Anda yang dibagikan tidak dapat dimuat. Silakan coba lagi.",
+    "none": "Anda tidak membagikan resep apa pun."
+  },
+  "settings": {
+    "heading": "Pengaturan",
+    "intro": "Disimpan bersama akun Anda, sehingga berlaku di setiap perangkat.",
+    "saveFailed": "Pengaturan tidak dapat disimpan. Silakan coba lagi.",
+    "language": {
+      "legend": "Bahasa",
+      "help": "Bahasa aplikasi, panduan, dan email Anda. Mengubahnya membuka halaman ini dalam bahasa itu.",
+      "saved": "Tersimpan: {language}."
+    },
+    "region": {
+      "legend": "Tempat Anda bekerja",
+      "none": {
+        "label": "Belum dipilih",
+        "saved": "Tersimpan: belum ada wilayah dipilih; nilai bawaan mengikuti peramban Anda."
+      },
+      "saved": "Tersimpan: {region}.",
+      "help": "Bahan yang dijual di sana, dan nilai bawaan untuk angka, tanggal, suhu, dan kerucut di bawah. Sampai Anda memilih, semuanya mengikuti bahasa peramban Anda."
+    },
+    "format": {
+      "legend": "Angka dan tanggal",
+      "auto": {
+        "label": "Sesuai bahasa dan wilayah saya",
+        "saved": "Tersimpan: angka dan tanggal sebagaimana ditulis bahasa dan wilayah Anda."
+      },
+      "saved": "Tersimpan: angka dan tanggal seperti dalam {language}.",
+      "help": "Cara angka dan tanggal ditulis: 12,345.6 atau 12.345,6, dan urutan hari dan bulan."
+    },
+    "calendar": {
+      "legend": "Kalender",
+      "help": "Kalender yang dipakai untuk menampilkan tanggal. Tanggal yang Anda ketik tetap dalam kalender Masehi.",
+      "gregory": {
+        "label": "Masehi (Gregorian)",
+        "saved": "Tersimpan: tanggal ditampilkan dalam kalender Masehi."
+      },
+      "buddhist": {
+        "label": "Tarikh Buddha Thailand",
+        "saved": "Tersimpan: tanggal ditampilkan dalam tarikh Buddha Thailand."
+      },
+      "japanese": {
+        "label": "Era Jepang",
+        "saved": "Tersimpan: tanggal ditampilkan dalam era Jepang."
+      }
+    },
+    "decimalMark": {
+      "legend": "Mengetik jumlah",
+      "either": {
+        "label": "Koma atau titik untuk desimal",
+        "example": "12,5 atau 12.5",
+        "saved": "Tersimpan: jumlah dapat diketik dengan koma atau titik."
+      },
+      "comma": {
+        "label": "Koma untuk desimal",
+        "saved": "Tersimpan: jumlah diketik dengan koma untuk desimal."
+      },
+      "point": {
+        "label": "Titik untuk desimal",
+        "saved": "Tersimpan: jumlah diketik dengan titik untuk desimal."
+      },
+      "help": "Dengan pilihan koma atau titik, jumlah seperti 1.250 dibaca menurut cara angka Anda ditulis di atas."
+    },
+    "temperature": {
+      "legend": "Suhu",
+      "celsius": {
+        "label": "Celsius",
+        "saved": "Tersimpan: suhu dalam °C."
+      },
+      "fahrenheit": {
+        "label": "Fahrenheit",
+        "saved": "Tersimpan: suhu dalam °F."
+      },
+      "help": "Sampai Anda memilih, ini mengikuti wilayah Anda: °F di Amerika Serikat, °C di tempat lain."
+    },
+    "cones": {
+      "legend": "Pembakaran",
+      "orton": {
+        "label": "Ke kerucut Orton",
+        "example": "kerucut 04, kerucut 6",
+        "saved": "Tersimpan: pembakaran ke kerucut Orton."
+      },
+      "sk": {
+        "label": "Ke kerucut SK, JIS R 8101",
+        "example": "SK 4a, SK 8",
+        "saved": "Tersimpan: pembakaran ke kerucut SK."
+      },
+      "temperature": {
+        "label": "Menurut suhu, seperti program pengendali tungku",
+        "saved": "Tersimpan: pembakaran menurut suhu."
+      },
+      "help": "Sampai Anda memilih, ini mengikuti wilayah Anda: kerucut Orton di AS, Inggris Raya, Irlandia, Australia, dan Selandia Baru, kerucut SK di Jepang, suhu di Eropa lainnya."
+    },
+    "density": {
+      "legend": "Kerapatan glasir",
+      "sg": {
+        "label": "Berat jenis",
+        "saved": "Tersimpan: kerapatan glasir sebagai berat jenis.",
+        "example": "1,45"
+      },
+      "baume": {
+        "label": "Derajat Baumé, dari hidrometer",
+        "saved": "Tersimpan: kerapatan glasir dalam derajat Baumé."
+      },
+      "pint": {
+        "label": "Berat pint, jumlah ons dalam satu pint imperial",
+        "saved": "Tersimpan: kerapatan glasir sebagai berat pint."
+      },
+      "help": "Cara panduan menyebutkan ketebalan glasir. Sampai Anda memilih, ini mengikuti wilayah Anda: derajat Baumé di Italia dan Jepang, berat jenis di tempat lain."
+    },
+    "currency": {
+      "legend": "Mata uang untuk harga",
+      "help": "Harga yang Anda berikan untuk bahan, dan biaya satu batch, dalam mata uang ini. Mengubahnya tidak mengonversi harga yang sudah Anda berikan. Sampai Anda memilih, ini mengikuti wilayah Anda.",
+      "saved": "Tersimpan: harga dalam {currency}.",
+      "notConverted": "Harga Anda yang tersimpan tidak dikonversi: harga itu masih angka yang Anda berikan."
+    },
+    "theme": {
+      "legend": "Terang atau gelap",
+      "system": {
+        "label": "Sesuai pengaturan perangkat ini",
+        "saved": "Tersimpan: terang atau gelap sesuai pengaturan tiap perangkat."
+      },
+      "light": {
+        "label": "Terang",
+        "saved": "Tersimpan: selalu terang."
+      },
+      "dark": {
+        "label": "Gelap",
+        "saved": "Tersimpan: selalu gelap."
+      },
+      "help": "Resep yang dicetak selalu hitam di atas putih."
+    },
+    "palette": {
+      "legend": "Warna",
+      "saved": "Tersimpan: tombol dan tautan {palette}.",
+      "help": "Untuk tombol, tautan, dan tab, dinamai menurut glasir. Masing-masing mudah dibaca dalam mode terang maupun gelap."
+    },
+    "weightUnit": {
+      "legend": "Bobot batch",
+      "grams": {
+        "label": "Gram",
+        "saved": "Tersimpan: bobot batch dalam gram."
+      },
+      "pounds": {
+        "label": "Pon dan ons",
+        "saved": "Tersimpan: bobot batch dalam pon dan ons."
+      },
+      "help": "Untuk batch yang dicetak."
+    },
+    "gramPrecision": {
+      "legend": "Gram pada batch cetak",
+      "single": {
+        "label": "Sampai persepuluhan gram",
+        "saved": "Tersimpan: gram ditampilkan sampai persepuluhan."
+      },
+      "full": {
+        "label": "Presisi penuh",
+        "saved": "Tersimpan: gram ditampilkan penuh, sampai 5 angka desimal."
+      },
+      "help": "Dengan persepuluhan, jumlah di bawah 10 g tetap menampilkan perseratusan (2,35 g), untuk pewarna dalam batch uji kecil."
+    },
+    "lead": {
+      "legend": "Timbal",
+      "off": {
+        "label": "Mati: jangan pernah menambahkan timbal ke resep atau menyarankannya",
+        "saved": "Tersimpan: timbal tidak pernah ditambahkan ke resep atau disarankan."
+      },
+      "on": {
+        "label": "Hidup: bahan dengan timbal dapat ditambahkan dan disarankan",
+        "saved": "Tersimpan: bahan dengan timbal dapat ditambahkan dan disarankan."
+      },
+      "help": "Timbal beracun jika terhirup atau tertelan dan menumpuk di dalam tubuh, dan glasir timbal dapat melepaskannya ke makanan dan minuman; tidak ada perhitungan yang dapat memastikan apakah benda yang sudah dibakar melepaskannya. Jika dimatikan, resep yang sudah mengandung timbal tetap terbuka seperti semula.",
+      "warning": "Pakai timbal hanya sebagai frit, jangan pernah sebagai timbal merah, putih, atau kuning mentah, atau litarge. Campur dalam keadaan basah, jangan pernah menyemprotnya, pakai respirator, dan bersihkan dengan cara basah. Jauhkan benda berglasir timbal dari makanan dan minuman kecuali uji pelindian laboratorium terhadap benda yang sudah dibakar telah lulus.",
+      "turnOn": "Aktifkan timbal",
+      "keepOff": "Biarkan mati"
+    },
+    "englishTerms": {
+      "legend": "Istilah Inggris",
+      "off": {
+        "label": "Mati",
+        "saved": "Tersimpan: tanpa istilah Inggris."
+      },
+      "on": {
+        "label": "Tampilkan bahasa Inggris setelah istilah kunci",
+        "saved": "Tersimpan: bahasa Inggris ditampilkan setelah istilah kunci."
+      },
+      "help": "Untuk membaca sumber berbahasa Inggris, seperti Digitalfire, berdampingan dengan ini: istilah kunci diberi padanan Inggrisnya dalam tanda kurung."
+    },
+    "notice": {
+      "legend": "Catatan terjemahan",
+      "shown": {
+        "label": "Ditampilkan",
+        "saved": "Tersimpan: catatan ditampilkan."
+      },
+      "hidden": {
+        "label": "Disembunyikan",
+        "saved": "Tersimpan: catatan disembunyikan. Satu baris darinya tetap ada di panduan keselamatan."
+      },
+      "help": "Catatan di bagian atas setiap halaman yang menyatakan halaman itu diterjemahkan oleh AI, dengan cara untuk menyarankan koreksi."
+    }
+  },
+  "confirmEmail": {
+    "heading": "Konfirmasi email Anda",
+    "intro": "Tekan tombol untuk mengonfirmasi alamat ini.",
+    "confirm": "Konfirmasi",
+    "incomplete": "Halaman ini memerlukan tautan dari email konfirmasi, dan tautan ini tidak lengkap.",
+    "account": "Akun Anda",
+    "signIn": "Masuk",
+    "failed": "Kesalahan: alamat tidak dapat dikonfirmasi. Silakan coba lagi."
+  },
+  "providers": {
+    "continueGoogle": "Lanjutkan dengan Google",
+    "continueGithub": "Lanjutkan dengan GitHub",
+    "failed": "Proses masuk tidak berhasil. Silakan coba lagi.",
+    "heading": "Google dan GitHub",
+    "intro": "Tautkan akun Google atau GitHub untuk masuk dengannya. Glazecalc hanya menyimpan id akun itu, tidak pernah namanya, fotonya, atau hal lain, dan autentikasi dua langkah tetap meminta langkah keduanya.",
+    "passwordless": "Akun ini tidak memiliki kata sandi. Untuk mengubah email, autentikasi dua langkah, atau cara masuk Anda, atau untuk menghapus akun Anda, Anda mengonfirmasi bahwa ini Anda dengan masuk lagi lewat Google atau GitHub. Anda juga dapat mengatur kata sandi.",
+    "setPassword": "Kirimi saya tautan lewat email untuk mengatur kata sandi",
+    "setPasswordUnlinks": "Mengatur kata sandi dengan tautan dari email juga melepaskan tautan Google dan GitHub. Anda dapat menautkannya lagi sesudahnya.",
+    "setPasswordFailed": "Tautan tidak dapat dikirim. Silakan coba lagi.",
+    "confirmFirst": "Konfirmasi email Anda dulu, dengan tautan yang kami kirim, untuk menautkan Google atau GitHub.",
+    "linkedOn": "Ditautkan pada {date}",
+    "notLinked": "Belum ditautkan",
+    "link": "Tautkan {provider}",
+    "unlink": "Lepaskan tautan {provider}",
+    "linkFailed": "Tidak dapat ditautkan. Silakan coba lagi.",
+    "reauthIntro": "Akun ini tidak memiliki kata sandi, jadi konfirmasi bahwa ini Anda dengan masuk lagi. Lalu lakukan perubahan dalam 5 menit.",
+    "reauthButton": "Masuk lagi dengan {provider}",
+    "reauthHeld": "Anda masuk lagi dengan {provider}. Anda dapat melakukan satu perubahan tanpa kata sandi dalam 5 menit ke depan.",
+    "reauthFirst": "Silakan masuk lagi dulu, dengan salah satu tombol di atas.",
+    "reauthFailed": "Tidak dapat memulai proses masuk lagi. Silakan coba lagi."
+  },
+  "tokens": {
+    "heading": "Token akses",
+    "intro": "Token akses memungkinkan asisten AI atau skrip Anda sendiri membaca resep, bahan, catatan, dan catatan pembakaran di akun Anda. Untuk saat ini token hanya dapat membaca: token tidak pernah mengubah atau menghapus apa pun. Setiap token berhenti berfungsi pada hari yang Anda pilih, atau segera setelah Anda mencabutnya.",
+    "howTo": "Cara menghubungkan asisten AI",
+    "listLabel": "Token akses Anda",
+    "none": "Anda tidak punya token akses.",
+    "hint": "berakhiran {hint}",
+    "readOnly": "Hanya baca",
+    "created": "dibuat {date}",
+    "lastUsed": "terakhir dipakai {date}",
+    "neverUsed": "belum pernah dipakai",
+    "expires": "berakhir {date}",
+    "expiredOn": "sudah kedaluwarsa {date}",
+    "revokedOn": "dicabut {date}",
+    "revoke": "Cabut",
+    "revokeNamed": "Cabut {name}",
+    "revokeAll": "Cabut semua token akses",
+    "revokeFailed": "Kesalahan: token tidak dapat dicabut. Silakan coba lagi.",
+    "loadFailed": "Token akses Anda tidak dapat dimuat. Silakan muat ulang halaman untuk mencoba lagi.",
+    "createHeading": "Buat token",
+    "name": "Nama",
+    "nameHint": "Sesuatu untuk membedakannya, misalnya asisten atau komputer yang memakainya.",
+    "nameCheck": "Silakan beri token nama sepanjang 1 sampai {most} karakter.",
+    "expiry": "Berhenti berfungsi setelah",
+    "days": "{count, plural, other {# hari}}",
+    "expiryHint": "Kami mengirim email kepada Anda 7 hari sebelum token berhenti berfungsi.",
+    "confirmEmailFirst": "Sebelum Anda dapat membuat token, konfirmasi email Anda: buka tautan yang kami kirim ke {email}. Kami memberi tahu Anda di alamat itu saat token dibuat dan sebelum token berhenti berfungsi.",
+    "resend": "Kirim tautan konfirmasi lagi",
+    "scopeNote": "Token dapat membaca data Anda tetapi tidak mengubahnya.",
+    "confirmStep": "Untuk membuat token, konfirmasi bahwa ini Anda.",
+    "create": "Buat token",
+    "failed": "Kesalahan: token tidak dapat dibuat. Silakan coba lagi.",
+    "limit": "Anda punya {most} token akses yang berfungsi, jumlah terbanyak yang dapat dimiliki satu akun. Cabut satu untuk membuat yang lain.",
+    "newHeading": "Salin token baru Anda sekarang",
+    "newText": "Ini satu-satunya saat token ditampilkan. Siapa pun yang memilikinya dapat membaca data Anda sampai token berhenti berfungsi, jadi simpan seperti kata sandi, dan berikan hanya kepada asisten atau skrip Anda sendiri.",
+    "newLabel": "Token akses baru Anda",
+    "copy": "Salin token",
+    "copied": "Tersalin.",
+    "copyFailed": "Tidak dapat menyalin. Pilih token lalu salin sendiri.",
+    "done": "Sudah saya salin",
+    "keptHeading": "Token akses Anda masih berfungsi",
+    "keptText": "{count, plural, other {Mengubah kata sandi Anda tidak menghentikan # token akses Anda. Jika Anda mengubahnya karena orang lain mungkin mengetahuinya, cabut juga token itu.}}",
+    "keep": "Biarkan",
+    "signOutNote": "{count, plural, other {Ini juga menghentikan # token akses Anda, untuk selamanya.}}"
+  }
+}

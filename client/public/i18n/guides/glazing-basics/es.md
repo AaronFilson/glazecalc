@@ -38,7 +38,7 @@ Las piezas sin cocer son **piezas en crudo**{{en: greenware}} (las fuentes no co
 
 ### Las dos cocciones
 
-La primera cocción, a menor temperatura, es la **cocción de bizcocho**{{en: bisque}} (en el Reino Unido, **biscuit**), normalmente a cono 08–04, unos {{1740–1940 °F; 950–1060 °C}}. Deja las piezas resistentes pero porosas. Digitalfire, un sitio web de referencia sobre esmaltes, aconseja en general más de un 15 % de porosidad, para que el bizcocho absorba el agua del esmalte al aplicarlo. Un bizcocho blando (cono 08–06) es más poroso; un bizcocho duro (a menudo cono 04) es más resistente, pero absorbe el esmalte con menos facilidad.
+La primera cocción, a menor temperatura, es la **cocción de bizcocho**{{en: bisque}} (en el Reino Unido, **biscuit**), normalmente a cono 08–04 (lo más habitual, 06–04), unos {{1728–1945 °F; 942–1063 °C}}. Deja las piezas resistentes pero porosas. Digitalfire, un sitio web de referencia sobre esmaltes, aconseja en general más de un 15 % de porosidad, para que el bizcocho absorba el agua del esmalte al aplicarlo. Un bizcocho blando (cono 08–06) es más poroso; un bizcocho duro (a menudo cono 04) es más resistente, pero absorbe el esmalte con menos facilidad.
 
 Table: Cómo cambia el esmaltado según el bizcocho (Digitalfire)
 Label: Cómo cambia el esmaltado según el bizcocho
@@ -254,7 +254,7 @@ Los límites legales varían de un país a otro. La tabla muestra los del lugar 
 
 ::food-limits
 
-En EE. UU., las piezas que no son para alimentos deben llevar un aviso permanente y cocido, «Not for Food Use» (no apto para alimentos), o tener un agujero que atraviese la superficie destinada a los alimentos. La UE fija límites de plomo y cadmio en la Directiva 84/500/CEE, y el Reino Unido mantiene las mismas cifras en su propia legislación. A partir del 29 de mayo de 2026, los Países Bajos, Bélgica y Luxemburgo permiten unas 130 a 150 veces menos plomo, y unas 15 veces menos cadmio. Australia fija límites para las piezas importadas; no hemos encontrado ningún límite oficial para las piezas fabricadas en Australia o Nueva Zelanda.
+En EE. UU., la cerámica decorativa que parece utilizable para alimentos se trata como cerámica para uso alimentario, a menos que lleve una etiqueta adhesiva y un aviso permanente moldeado o cocido en su base, como «Not for Food Use. May Poison Food» (no apto para alimentos; puede envenenar los alimentos), o tenga un agujero que atraviese la superficie destinada a los alimentos. La UE fija límites de plomo y cadmio en la Directiva 84/500/CEE, y el Reino Unido mantiene las mismas cifras en su propia legislación. A partir del 29 de mayo de 2026, los Países Bajos, Bélgica y Luxemburgo permiten unas 130 a 150 veces menos plomo, y unas 15 veces menos cadmio. Australia fija límites para las piezas importadas; no hemos encontrado ningún límite oficial para las piezas fabricadas en Australia o Nueva Zelanda.
 
 ### Ensayos
 
@@ -322,7 +322,7 @@ Bentonita (bentonite)
 : Una arcilla muy fina que se añade al 1–3 % para evitar que el esmalte sedimente.
 
 Bizcocho, cocción de bizcocho (bisque; en el Reino Unido, biscuit)
-: La primera cocción, a menor temperatura, normalmente a cono 08–04, que deja las piezas resistentes pero porosas.
+: La primera cocción, a menor temperatura, normalmente a cono 08–04 (lo más habitual, 06–04), que deja las piezas resistentes pero porosas.
 
 Boro (boron, B₂O₃)
 : Formalmente un formador de vidrio, pero se usa como fundente; imprescindible del cono 06 al cono 6.
@@ -474,6 +474,7 @@ Vitrificación (vitrification)
 - [Glazy Help: Specific gravity](https://help.glazy.org/testing/specific-gravity)
 - [Orton Ceramic Foundation: Pyrometric cone chart, °F (vía The Ceramic Shop)](https://www.theceramicshop.com/technical_info/Cones/Orton-Cone-Chart-F-022-14.pdf)
 - [Digitalfire: Bisque](https://digitalfire.com/glossary/bisque)
+- [Digitalfire: Bentonite](https://digitalfire.com/material/bentonite)
 - [Digitalfire: Unity molecular formula](https://digitalfire.com/glossary/unity+molecular+formula)
 - [Digitalfire: LOI](https://digitalfire.com/glossary/loi)
 - [Digitalfire: Frit](https://digitalfire.com/glossary/frit)
@@ -489,3 +490,4 @@ Vitrificación (vitrification)
 - [Potclays: The difference between stoneware and earthenware](https://www.potclays.co.uk/clay-questions/difference-stoneware-earthenware)
 - [US FDA: Compliance Policy Guide Sec. 545.450, Pottery (ceramics), lead contamination](https://www.fda.gov/media/71764/download)
 - [EUR-Lex: Council Directive 84/500/EEC on ceramic articles in contact with food](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:31984L0500)
+- [eCFR: 21 CFR 109.16, Ornamental and decorative ceramicware](https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-109/subpart-A/section-109.16)

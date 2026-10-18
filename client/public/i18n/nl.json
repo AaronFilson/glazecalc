@@ -17,13 +17,17 @@
     "confirmEmail": "Uw e-mailadres bevestigen - Glazecalc",
     "home": "Uw atelierlogboek - Glazecalc",
     "recipe": "Recepten - Glazecalc",
+    "import": "Recepten plakken - Glazecalc",
+    "blends": "Mengingen voor proefplaatjes - Glazecalc",
     "material": "Grondstoffen - Glazecalc",
     "additive": "Toevoegingen - Glazecalc",
     "firingLogs": "Stookverslagen - Glazecalc",
     "notes": "Notities - Glazecalc",
     "trash": "Prullenbak - Glazecalc",
     "account": "Uw account en instellingen - Glazecalc",
-    "notFound": "Niet gevonden - Glazecalc"
+    "notFound": "Niet gevonden - Glazecalc",
+    "shared": "Gedeeld recept - Glazecalc",
+    "assistants": "Glazecalc gebruiken vanuit uw AI-assistent - Glazecalc"
   },
   "nav": {
     "skip": "Naar de inhoud",
@@ -39,7 +43,9 @@
     "guides": "Gidsen",
     "about": "Over",
     "account": "Account",
+    "trialAccount": "Proefperiode",
     "accountTitle": "Uw account en instellingen",
+    "trash": "Prullenbak",
     "signOut": "Uitloggen",
     "createAccount": "Gratis account aanmaken"
   },
@@ -66,7 +72,8 @@
     "problem": "Probleem melden",
     "pottery": "Handgemaakte keramiek: Updraft Pottery Studio",
     "copyright": "© 2017–2026 Aaron Filson / Candling Development Studio · Gratis en open source (MIT-licentie)",
-    "languages": "Talen"
+    "languages": "Talen",
+    "language": "Taal:"
   },
   "numbers": {
     "notANumber": "Voer een getal in, bijvoorbeeld {example}.",
@@ -85,7 +92,7 @@
     "about": "Glazecalc is een gratis, open source calculator en logboek voor glazuurchemie. Zie hoe het de Segerformule (UMF) berekent en hoe het is gebouwd.",
     "privacy": "Hoe Glazecalc met uw gegevens omgaat: geen advertenties, analyse of tracking, en niets wordt verkocht. Wat wordt bewaard, waarom, en hoe u uw rechten uitoefent.",
     "signup": "Bewaar uw glazuurrecepten, grondstoffen, notities en stookverslagen in een gratis Glazecalc-account. Geen advertenties, en uw gegevens worden nooit verkocht.",
-    "imageAlt": "Glazecalc: begrijp uw glazuren, in plaats van ze alleen te mengen."
+    "imageAlt": "De startpagina van Glazecalc: gratis glazuurchemie voor pottenbakkers, naast een foto van gestookte kegeldrietallen."
   },
   "notices": {
     "dismiss": "Sluiten",
@@ -93,11 +100,15 @@
     "error": "Fout: {text}"
   },
   "remove": {
-    "removed": "Verwijderd: “{name}”.",
     "alreadyRemoved": "“{name}” was al verwijderd.",
+    "trashed": "“{name}” is naar de prullenbak verplaatst.",
+    "undo": "Ongedaan maken",
+    "restored": "“{name}” is teruggezet.",
+    "restoreFailed": "“{name}” kon niet worden teruggezet. Het staat nog in de prullenbak.",
     "failed": "Verwijderen is niet gelukt. Probeer het opnieuw.",
     "question": "“{name}” verwijderen?",
     "cannotUndo": "Dit kan niet ongedaan worden gemaakt.",
+    "toTrash": "U kunt het 30 dagen lang terugzetten vanuit de prullenbak.",
     "removing": "Verwijderen...",
     "yes": "Ja, verwijderen",
     "cancel": "Annuleren",
@@ -222,20 +233,26 @@
     "soldIn": "Verkrijgbaar in",
     "showing": "{shown} van {noun, select, additives {{total, plural, one {# toevoeging} other {# toevoegingen}}} other {{total, plural, one {# grondstof} other {# grondstoffen}}}} weergegeven",
     "name": "Naam",
+    "equivalentWeight": "Equivalentgewicht",
+    "firedWeight": "Gewicht na stoken",
     "notes": "Opmerkingen",
     "analysis": "Analyse",
+    "details": "Details",
     "formula": "Formule",
+    "formulaLine": "Formule: {formula}",
     "useInstead": "<b>In plaats daarvan gebruiken:</b> {list}",
     "similar": "Vergelijkbaar: {list}",
     "replaces": "Vervangt: {list}",
     "aliases": "Ook wel: {list}",
     "madeBy": "Fabrikant: {name}",
     "source": "Bron:",
+    "hazardsLine": "Gevaren: {hazards}",
     "noChemistry": "Geen analyse: niet in de Segerformule",
     "countedAs": "Meegeteld als {name}",
     "nothingMatches": "Niets gevonden. Probeer een andere naam, soort of regio.",
     "loading": "Laden...",
-    "notFetched": "De lijst kon niet worden opgehaald. <retry>Opnieuw proberen</retry>"
+    "notFetched": "De lijst kon niet worden opgehaald. <retry>Opnieuw proberen</retry>",
+    "showAll": "{noun, select, additives {{count, plural, one {# toevoeging tonen} other {Alle # toevoegingen tonen}}} other {{count, plural, one {# grondstof tonen} other {Alle # grondstoffen tonen}}}}"
   },
   "chemistryForm": {
     "name": "{noun, select, additive {Geef de toevoeging een naam.} other {Geef de grondstof een naam.}}",
@@ -270,7 +287,7 @@
     "close": "Sluiten"
   },
   "unity": {
-    "fluxes": "Smeltmiddelen – RO",
+    "fluxes": "Smeltmiddelen – R₂O en RO",
     "stabilizers": "Stabilisatoren – R₂O₃",
     "glassFormers": "Glasvormers – RO₂",
     "wildcards": "Overige oxiden",

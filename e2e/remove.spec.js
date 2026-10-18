@@ -30,7 +30,7 @@ test('asks before removing; Cancel and Escape keep the record', async ({ page })
   // Named by the question itself, so a screen reader reads all of it.
   const question = row.getByRole('group', { name: /^Remove "Whiting, bag 1"\? Saved recipes keep/ });
   await expect(question).toContainText(
-    `Remove "Whiting, bag 1"? Saved recipes keep their own copy, so they won't change. This can't be undone.`
+    `Remove "Whiting, bag 1"? Saved recipes keep their own copy, so they won't change. You can put it back from the Trash for 30 days.`
   );
   // It starts on the safe answer.
   await expect(question.getByRole('button', { name: 'Cancel' })).toBeFocused();
@@ -65,7 +65,7 @@ test('removes with the keyboard alone, and the focus moves on', async ({ page })
   await page.keyboard.press('Shift+Tab');
   await expect(page.getByRole('button', { name: 'Yes, remove' })).toBeFocused();
   await page.keyboard.press('Enter');
-  await expect(page.locator('.server-msg')).toContainText('Removed "Whiting, bag 1".');
+  await expect(page.locator('.server-msg')).toContainText('Moved "Whiting, bag 1" to the Trash.');
   // On to the next record's Remove button, not back to the top of the page.
   await expect(removeButton(page, 'Whiting, bag 2')).toBeFocused();
 
@@ -73,7 +73,7 @@ test('removes with the keyboard alone, and the focus moves on', async ({ page })
   await expect(page.getByRole('button', { name: 'Cancel' })).toBeFocused();
   await page.keyboard.press('Shift+Tab');
   await page.keyboard.press('Enter');
-  await expect(page.locator('.server-msg')).toContainText('Removed "Whiting, bag 2".');
+  await expect(page.locator('.server-msg')).toContainText('Moved "Whiting, bag 2" to the Trash.');
   // The table goes with its last record, so the focus goes to the list's heading, which says it is empty.
   await expect(mine(page).locator('table')).toHaveCount(0);
   await expect(page.locator('#my-materials-heading')).toBeFocused();
@@ -82,4 +82,38 @@ test('removes with the keyboard alone, and the focus moves on', async ({ page })
   await page.reload();
   await expect(page.locator('h1')).toBeVisible();
   await expect(mine(page)).toContainText('None yet.');
+});
+
+test('Undo puts a removed record back, and the Trash puts back or deletes for good', async ({ page }) => {
+  await removeButton(page, 'Whiting, bag 1').click();
+  await page.getByRole('button', { name: 'Yes, remove' }).click();
+  const notice = page.locator('.server-msg li', { hasText: 'Moved "Whiting, bag 1" to the Trash.' });
+  await notice.getByRole('button', { name: 'Undo' }).click();
+  await expect(page.locator('.server-msg')).toContainText('Put "Whiting, bag 1" back.');
+  await expect(mine(page).locator('tr', { hasText: 'Whiting, bag 1' })).toBeVisible();
+
+  // Both go to the Trash; one comes back from there, the other is deleted for good.
+  for (const name of ['Whiting, bag 1', 'Whiting, bag 2']) {
+    await removeButton(page, name).click();
+    await page.getByRole('button', { name: 'Yes, remove' }).click();
+    await expect(page.locator('.server-msg')).toContainText(`Moved "${name}" to the Trash.`);
+  }
+  // The way in: the menu's Trash link, beside the account.
+  await page.getByRole('navigation', { name: 'Main' }).getByRole('link', { name: 'Trash', exact: true }).click();
+  await expect(page).toHaveURL(/\/trash$/);
+  const items = page.locator('.trash-list > li');
+  await expect(items).toHaveCount(2);
+  await expect(items.first()).toContainText('Whiting, bag 2');
+  await expect(items.first()).toContainText('Material');
+  await page.getByRole('button', { name: 'Put back Whiting, bag 1' }).click();
+  await expect(page.locator('.server-msg')).toContainText('Put "Whiting, bag 1" back where it was.');
+  await expect(items).toHaveCount(1);
+  await page.getByRole('button', { name: 'Remove Whiting, bag 2' }).click();
+  await expect(page.getByRole('group', { name: /This can't be undone/ })).toBeVisible();
+  await page.getByRole('button', { name: 'Yes, remove' }).click();
+  await expect(page.locator('.trash-none')).toHaveText('The Trash is empty.');
+
+  await page.goto('/material');
+  await expect(mine(page).locator('tr', { hasText: 'Whiting, bag 1' })).toBeVisible();
+  await expect(mine(page).locator('tr', { hasText: 'Whiting, bag 2' })).toHaveCount(0);
 });

@@ -48,7 +48,7 @@ Label: Algkomplekt
 | Kaaliumpõldpagu{{en: potash feldspar}}   | See, mis teie piirkonnas praegu müügil on, näiteks USA-s Mahavir                                                |
 | Nefeliinsüeniit{{en: nepheline syenite}} | Ükskõik milline; Glazy märgib selle tugevamat sulandavat toimet, seda kasutatakse sageli madal- ja keskkuumuses |
 | Kriit                                    | Ükskõik milline                                                                                                 |
-| Talk                                     | Ükskõik milline                                                                                                 |
+| Talk                                     | Ükskõik milline asbestivaba sort; kontrollige selle ohutuskaarti (vt Ohutu segamine ja ventilatsioon)           |
 | Boorifritt keskkuumuse jaoks             | Ferro 3134, 3124 või 3195; Ühendkuningriigis Potterycrafts P3124 või P3195                                      |
 | Bentoniit ja värvained                   | Väikestes kogustes                                                                                              |
 
@@ -211,7 +211,7 @@ Label: Vee kogus soovitud suhtelise tiheduse jaoks
 
 **CMC** (karboksümetüültselluloos, glasuuriliim) muudab glasuurilahuse kleepuvamaks ja aeglasemalt kuivavaks ning jätab kõvema kihi, mis püsib esemel. See on kõige olulisem pintselglasuuride ja suure fritisisaldusega glasuuride puhul. Digitalfire’i näites segatakse 3,75 g 1000 g glasuurilahusesse ja see tuleb sisse segada blenderiga. CMC-ga glasuur ei tarretu inglise soolaga ja kuna mikroobid toituvad sellest liimainest, võib glasuur ämbris muutuda ja hakata haisema.
 
-**Bentoniit**, väga peen savi, aitab hoida teisi osakesi hõljumas. Kastmisglasuurides teeb seda tavaliselt 15–25% toorest savi. Kui retseptis on savi vähe, aitab umbes 1–2% bentoniiti.
+**Bentoniit**, väga peen savi, aitab hoida teisi osakesi hõljumas. Kastmisglasuurides teeb seda tavaliselt 15–25% toorest savi. Kui retseptis on savi vähe, aitab umbes 1–3% bentoniiti; Digitalfire’i sõnul ei peaks glasuur, milles on üle 15% savi, vajama üle 1%.
 
 ## Proovitükid ja katseread {#testing}
 
@@ -284,6 +284,7 @@ Label: Märkmete mall
 - [Digitalfire: Epsom salts](https://digitalfire.com/material/epsom+salts)
 - [Digitalfire: CMC gum](https://digitalfire.com/material/cmc%2Bgum)
 - [Digitalfire: Dipping glaze](https://digitalfire.com/glossary/dipping+glaze)
+- [Digitalfire: Bentonite](https://digitalfire.com/material/bentonite)
 - [Digitalfire: Water solubility](https://digitalfire.com/glossary/water+solubility)
 - [Digitalfire: Gerstley Borate](https://digitalfire.com/material/gerstley+borate)
 - [Digitalfire: Mahavir potash feldspar](https://digitalfire.com/material/mahavir+potash+feldspar)

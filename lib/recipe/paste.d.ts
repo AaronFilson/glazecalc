@@ -1,0 +1,85 @@
+// Types for lib/recipe/paste.js (see index.d.ts).
+
+import type { DecimalMark } from './numbers';
+
+/** A pasted line's unit, as kept: weights are in grams. */
+export type PastedUnit = '%' | 'g' | 'parts' | null;
+
+/** A line read as a material and its amount. */
+export interface PastedLine {
+  /** Its line in the paste, from 1. */
+  line: number;
+  /** The line as pasted. */
+  text: string;
+  /** The material's name as pasted. */
+  name: string;
+  /** Its amount (in grams for a weight); null for a name pasted alone. */
+  amount: number | null;
+  unit: PastedUnit;
+  /** Marked "+", or under a heading such as "Additions". */
+  addition: boolean;
+}
+
+/** A line set aside: a total, or a row of column headings. */
+export interface SetAside {
+  line: number;
+  text: string;
+  why: 'total' | 'columns';
+}
+
+export interface PastedRecipe {
+  title: string | null;
+  /** Lines of text that are not materials: the firing, notes, links. */
+  notes: string[];
+  lines: PastedLine[];
+  skipped: SetAside[];
+}
+
+export interface PasteOptions {
+  mark?: DecimalMark;
+  locale?: string;
+  /** Whether text is a material's whole name ("Frit 3134"), so it is not read as "Frit" at 3134. */
+  isName?: (text: string) => boolean;
+  /** Whether a name is like any material, even only closely: such a line is never read as a title ("Leach 4321"). */
+  known?: (text: string) => boolean;
+  /** How to read a number that could be a decimal or digit groups ("1,500" as 1.5 or 1500), when the paste does not decide it; the locale reads it by default. */
+  reading?: 'decimal' | 'group';
+}
+
+/** The most a paste can be: characters, lines, and characters in a line that can be a material. */
+export const PASTE_LIMITS: { readonly chars: number; readonly lines: number; readonly line: number };
+/** Which limit a paste is over, or null. parsePaste reads nothing from one that is over. */
+export function pasteTooLong(text: string): 'chars' | 'lines' | null;
+
+/**
+ * The numbers of a paste that can be read two ways even given all its numbers ("1,500" beside decimal
+ * commas), as pasted, each once. None when the reader's mark is chosen.
+ */
+export function ambiguousNumbers(text: string, mark?: DecimalMark): string[];
+
+export function parsePaste(text: string, options?: PasteOptions): PastedRecipe[];
+
+/** Each line's amount as saved ("20.5"; '' for none), and an addition's unit. */
+export function importAmounts(recipe: PastedRecipe): Array<{ amount: string; unit?: 'percent' | 'parts' | 'grams' }>;
+
+export type MatchHow = 'name' | 'alias' | 'close' | 'choose' | 'none';
+
+export interface NameMatch<T> {
+  how: MatchHow;
+  /** The record taken: for name, alias and close. */
+  record: T | null;
+  /** The closest records, best first. */
+  candidates: T[];
+}
+
+export function matchName<T extends { name: string; aliases?: string[] }>(
+  name: string,
+  records: readonly T[],
+  limit?: number
+): NameMatch<T>;
+/** How close a pasted name is to a record's name, 0 to about 1. */
+export function likeness(pasted: string, recordName: string): number;
+/** A name as compared exactly: NFKC, lower case, spaces as one. */
+export function foldedName(text: string): string;
+/** A name as compared loosely: letters and digits only, without accents. */
+export function compactName(text: string): string;

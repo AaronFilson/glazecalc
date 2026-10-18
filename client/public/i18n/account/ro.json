@@ -81,6 +81,7 @@
     "createAccount": "Creați un cont",
     "title": "Contul dumneavoastră",
     "signedInAs": "V-ați conectat cu {email}.",
+    "contents": "Pe această pagină",
     "changeHeading": "Schimbați parola",
     "current": "Parola actuală",
     "currentMissing": "Introduceți parola actuală.",
@@ -106,7 +107,7 @@
     "emailSend": "Trimiteți linkul",
     "emailFailed": "Eroare: linkul nu a putut fi trimis. Încercați din nou.",
     "signOutHeading": "Deconectare de pe toate dispozitivele",
-    "signOutText": "Vă deconectează de pe toate dispozitivele, inclusiv de pe acesta. Folosiți această opțiune dacă ați pierdut un dispozitiv sau credeți că altcineva are datele dumneavoastră de conectare.",
+    "signOutText": "Vă deconectează de pe toate dispozitivele, inclusiv de pe acesta, și oprește tokenurile de acces și linkurile de partajare. Folosiți-o dacă ați pierdut un dispozitiv sau credeți că altcineva are datele dumneavoastră de conectare.",
     "signOutButton": "Deconectați-vă de pe toate dispozitivele",
     "signOutFailed": "Eroare: deconectarea nu a reușit. Încercați din nou.",
     "confirmStep": "Conectarea în doi pași este activată, așa că confirmați că sunteți dumneavoastră: parola și un al doilea pas."
@@ -118,6 +119,8 @@
     "on": "Conectarea în doi pași este activată.",
     "onText": "Vă conectați cu parola și un al doilea pas sau doar cu o cheie de acces.",
     "off": "Conectarea în doi pași este dezactivată.",
+    "badgeOn": "Activată",
+    "badgeOff": "Dezactivată",
     "offText": "Pentru a o activa, configurați o aplicație de autentificare sau adăugați o cheie de acces.",
     "confirmEmailFirst": "Confirmați mai întâi adresa de e-mail, mai sus. O folosim pentru a vă anunța despre schimbările în modul de conectare și pentru a vă ajuta dacă pierdeți al doilea pas.",
     "appHeading": "Aplicație de autentificare",
@@ -141,6 +144,7 @@
     "nameCheck": "Dați cheii de acces un nume de 1 până la {most} caractere.",
     "passkeyLimit": "Aveți {most} chei de acces, maximul pentru un cont. Eliminați una ca să adăugați alta.",
     "codesTitle": "Coduri de recuperare",
+    "codesLeft": "{count, plural, one {A rămas # din {total} coduri de recuperare.} few {Au rămas # din {total} coduri de recuperare.} other {Au rămas # din {total} coduri de recuperare.}} Dacă nu puteți folosi aplicația sau o cheie de acces, un cod vă conectează în locul lor. Fiecare cod funcționează o singură dată.",
     "codesLow": "Creați curând coduri noi. Dacă se termină și pierdeți aplicația și cheile de acces, nu vă veți mai putea conecta.",
     "newCodes": "Creați coduri de recuperare noi",
     "offHeading": "Dezactivarea",
@@ -149,6 +153,8 @@
     "offCodes": "Codurile de recuperare nu mai funcționează.",
     "offSignOut": "Toate celelalte dispozitive conectate la cont sunt deconectate. Acesta rămâne conectat.",
     "offEmail": "Vă trimitem un e-mail că a fost dezactivată.",
+    "offRemoveApp": "Dezactivați conectarea în doi pași (elimină aplicația)",
+    "offRemoveAppFirst": "Eliminați aplicația, pentru a începe dezactivarea",
     "offPasskeys": "{count, plural, one {Pentru a o dezactiva, eliminați cheia de acces la Chei de acces, mai sus.} few {Pentru a o dezactiva, eliminați cele # chei de acces la Chei de acces, mai sus.} other {Pentru a o dezactiva, eliminați cele # de chei de acces la Chei de acces, mai sus.}}",
     "offPasskeysToo": "{count, plural, one {Aveți și o cheie de acces: eliminați-o la Chei de acces, mai sus, pe lângă aplicație.} few {Aveți și # chei de acces: eliminați-le la Chei de acces, mai sus, pe lângă aplicație.} other {Aveți și # de chei de acces: eliminați-le la Chei de acces, mai sus, pe lângă aplicație.}}",
     "addAppText": "Pentru a configura o aplicație de autentificare, confirmați mai întâi că sunteți dumneavoastră.",
@@ -201,6 +207,25 @@
     "recipes": "Rețete (CSV)",
     "materials": "Materii prime (CSV)"
   },
+  "trash": {
+    "heading": "Coșul de reciclare",
+    "text": "Ce ștergeți din caietul dumneavoastră așteaptă 30 de zile în coșul de reciclare. De acolo puteți pune la loc sau șterge definitiv.",
+    "open": "Deschideți coșul de reciclare"
+  },
+  "shared": {
+    "heading": "Rețete partajate",
+    "text": "Rețetele pe care le partajați printr-un link, pe care le poate citi oricine are linkul, fără cont. Un link se arată o singură dată, când este creat, deci nu poate fi arătat aici. Ca să partajați din nou o rețetă, creați un link nou la Mai multe, în rețetă.",
+    "since": "Partajată din {date}",
+    "notesShown": "Cu notițe",
+    "notesHidden": "Fără notițe",
+    "untitled": "Rețetă fără titlu",
+    "stop": "Nu mai partajați",
+    "stopName": "Nu mai partajați {name}",
+    "stopped": "{name} nu mai este partajată. Linkul ei nu mai funcționează.",
+    "stopFailed": "Nu a mers. Încercați din nou.",
+    "fetchFailed": "Rețetele dumneavoastră partajate nu au putut fi încărcate. Încercați din nou.",
+    "none": "Nu partajați nicio rețetă."
+  },
   "settings": {
     "heading": "Setări",
     "intro": "Se salvează în cont, așa că se aplică pe orice dispozitiv.",
@@ -227,6 +252,22 @@
       },
       "saved": "S-a salvat: numerele și datele ca în {language}.",
       "help": "Cum se scriu numerele și datele: 12,345.6 sau 12.345,6 și ordinea zilei și a lunii."
+    },
+    "calendar": {
+      "legend": "Calendar",
+      "help": "Calendarul în care sunt afișate datele. Datele pe care le introduceți rămân în calendarul gregorian.",
+      "gregory": {
+        "label": "Gregorian",
+        "saved": "S-a salvat: datele sunt afișate în calendarul gregorian."
+      },
+      "buddhist": {
+        "label": "Era budistă thailandeză",
+        "saved": "S-a salvat: datele sunt afișate în era budistă thailandeză."
+      },
+      "japanese": {
+        "label": "Era japoneză",
+        "saved": "S-a salvat: datele sunt afișate în erele japoneze."
+      }
     },
     "decimalMark": {
       "legend": "Introducerea cantităților",
@@ -265,7 +306,7 @@
         "saved": "S-a salvat: arderea la conuri Orton."
       },
       "sk": {
-        "label": "La conuri SK (JIS R 8101)",
+        "label": "La conuri SK, JIS R 8101",
         "example": "SK 4a, SK 8",
         "saved": "S-a salvat: arderea la conuri SK."
       },
@@ -291,6 +332,12 @@
         "saved": "S-a salvat: densitatea glazurii ca greutate a pintei."
       },
       "help": "Cum dau ghidurile densitatea unei glazuri. Până când alegeți, aceasta urmează regiunea: grade Baumé în Italia și Japonia, greutate specifică în rest."
+    },
+    "currency": {
+      "legend": "Moneda pentru prețuri",
+      "help": "Prețurile pe care le dați pentru materiile prime și cât costă un amestec sunt în această monedă. Schimbarea ei nu convertește prețurile pe care le-ați dat deja. Până alegeți, se folosește moneda regiunii dumneavoastră.",
+      "saved": "Salvat: prețuri în {currency}.",
+      "notConverted": "Prețurile păstrate nu au fost convertite: sunt în continuare numerele pe care le-ați dat."
     },
     "theme": {
       "legend": "Luminos sau întunecat",
@@ -386,5 +433,72 @@
     "account": "Contul dumneavoastră",
     "signIn": "Conectați-vă",
     "failed": "Eroare: adresa nu a putut fi confirmată. Încercați din nou."
+  },
+  "providers": {
+    "continueGoogle": "Continuați cu Google",
+    "continueGithub": "Continuați cu GitHub",
+    "failed": "Conectarea nu a reușit. Încercați din nou.",
+    "heading": "Google și GitHub",
+    "intro": "Asociați un cont Google sau GitHub ca să vă conectați cu el. Glazecalc păstrează doar identificatorul contului, niciodată numele, poza sau altceva, iar conectarea în doi pași cere în continuare al doilea pas.",
+    "passwordless": "Acest cont nu are parolă. Ca să schimbați adresa de e-mail, conectarea în doi pași sau modurile de conectare, ori ca să ștergeți contul, confirmați că sunteți dumneavoastră conectându-vă din nou cu Google sau GitHub. Puteți și să setați o parolă.",
+    "setPassword": "Trimiteți-mi un link prin e-mail ca să setez o parolă",
+    "setPasswordUnlinks": "Setarea unei parole cu linkul primit prin e-mail dezasociază și Google, și GitHub. Le puteți asocia din nou după aceea.",
+    "setPasswordFailed": "Linkul nu a putut fi trimis. Încercați din nou.",
+    "confirmFirst": "Ca să asociați Google sau GitHub, confirmați mai întâi adresa de e-mail cu linkul pe care vi l-am trimis.",
+    "linkedOn": "Asociat la {date}",
+    "notLinked": "Neasociat",
+    "link": "Asociați {provider}",
+    "unlink": "Dezasociați {provider}",
+    "linkFailed": "Asocierea nu a reușit. Încercați din nou.",
+    "reauthIntro": "Acest cont nu are parolă, așa că confirmați că sunteți dumneavoastră conectându-vă din nou. Apoi faceți modificarea în decurs de 5 minute.",
+    "reauthButton": "Conectați-vă din nou cu {provider}",
+    "reauthHeld": "V-ați conectat din nou cu {provider}. În următoarele 5 minute puteți face o modificare fără parolă.",
+    "reauthFirst": "Conectați-vă mai întâi din nou, cu unul dintre butoanele de mai sus.",
+    "reauthFailed": "Reconectarea nu a putut începe. Încercați din nou."
+  },
+  "tokens": {
+    "heading": "Tokenuri de acces",
+    "intro": "Un token de acces îi permite propriului dumneavoastră asistent AI sau script să citească rețetele, materiile prime, notițele și jurnalele de ardere din cont. Deocamdată un token poate doar să citească: nu schimbă și nu șterge nimic niciodată. Fiecare token încetează să funcționeze în ziua pe care o alegeți sau imediat ce îl revocați.",
+    "howTo": "Cum conectați un asistent AI",
+    "listLabel": "Tokenurile dumneavoastră de acces",
+    "none": "Nu aveți niciun token de acces.",
+    "hint": "se termină cu {hint}",
+    "readOnly": "Doar citire",
+    "created": "creat la {date}",
+    "lastUsed": "folosit ultima dată la {date}",
+    "neverUsed": "niciodată folosit",
+    "expires": "expiră la {date}",
+    "expiredOn": "a expirat la {date}",
+    "revokedOn": "revocat la {date}",
+    "revoke": "Revocați",
+    "revokeNamed": "Revocați {name}",
+    "revokeAll": "Revocați toate tokenurile de acces",
+    "revokeFailed": "Eroare: tokenul nu a putut fi revocat. Încercați din nou.",
+    "loadFailed": "Tokenurile dumneavoastră de acces nu au putut fi încărcate. Reîncărcați pagina și încercați din nou.",
+    "createHeading": "Creați un token",
+    "name": "Nume",
+    "nameHint": "Ceva după care să-l deosebiți, cum ar fi asistentul sau computerul pentru care este.",
+    "nameCheck": "Dați tokenului un nume de 1 până la {most} caractere.",
+    "expiry": "Încetează să funcționeze după",
+    "days": "{count, plural, one {# zi} few {# zile} other {# de zile}}",
+    "expiryHint": "Vă trimitem un e-mail cu 7 zile înainte ca un token să înceteze să funcționeze.",
+    "confirmEmailFirst": "Înainte să puteți crea un token, confirmați adresa de e-mail: deschideți linkul trimis la {email}. La acea adresă vă anunțăm când este creat un token și înainte ca unul să înceteze să funcționeze.",
+    "resend": "Trimiteți din nou linkul de confirmare",
+    "scopeNote": "Tokenul poate citi înregistrările dumneavoastră, dar nu le poate schimba.",
+    "confirmStep": "Ca să creați tokenul, confirmați că sunteți dumneavoastră.",
+    "create": "Creați tokenul",
+    "failed": "Eroare: tokenul nu a putut fi creat. Încercați din nou.",
+    "limit": "Aveți {most} tokenuri de acces active, maximul pe care îl poate avea un cont. Revocați unul ca să creați altul.",
+    "newHeading": "Copiați acum noul token",
+    "newText": "Este singura dată când este arătat. Oricine îl are poate citi înregistrările dumneavoastră până când încetează să funcționeze, așa că păstrați-l ca pe o parolă și dați-l numai propriului asistent sau script.",
+    "newLabel": "Noul dumneavoastră token de acces",
+    "copy": "Copiați tokenul",
+    "copied": "Copiat.",
+    "copyFailed": "Copierea nu a reușit. Selectați tokenul și copiați-l singur.",
+    "done": "L-am copiat",
+    "keptHeading": "Tokenurile dumneavoastră de acces încă funcționează",
+    "keptText": "{count, plural, one {Schimbarea parolei nu a oprit tokenul dumneavoastră de acces. Dacă ați schimbat-o pentru că altcineva ar putea s-o știe, revocați și tokenul.} few {Schimbarea parolei nu a oprit cele # tokenuri de acces ale dumneavoastră. Dacă ați schimbat-o pentru că altcineva ar putea s-o știe, revocați-le și pe ele.} other {Schimbarea parolei nu a oprit cele # de tokenuri de acces ale dumneavoastră. Dacă ați schimbat-o pentru că altcineva ar putea s-o știe, revocați-le și pe ele.}}",
+    "keep": "Păstrați-le",
+    "signOutNote": "{count, plural, one {Oprește și tokenul dumneavoastră de acces, definitiv.} few {Oprește și cele # tokenuri de acces ale dumneavoastră, definitiv.} other {Oprește și cele # de tokenuri de acces ale dumneavoastră, definitiv.}}"
   }
 }

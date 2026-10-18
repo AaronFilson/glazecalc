@@ -38,7 +38,7 @@ Az égetetlen áru a **nyers áru**{{en: greenware}} (a források nem egységese
 
 ### A két égetés
 
-Az első, alacsonyabb hőfokú égetés a **zsengélés**{{en: bisque}} (brit angolul: **biscuit**), általában 08–04-es gúlára, nagyjából {{1740–1940 °F; 950–1060 °C}} hőmérsékleten. Utána az áru erős, de porózus. A Digitalfire, egy mázakkal foglalkozó szakmai oldal, általában 15%-nál nagyobb porozitást javasol, hogy a zsengélt áru felhordáskor kiszívja a vizet a mázból. Az alacsonyabb hőfokon zsengélt áru (08–06-os gúla) porózusabb; a magasabb hőfokon zsengélt (gyakran 04-es gúla) erősebb, de nehezebben veszi fel a mázat.
+Az első, alacsonyabb hőfokú égetés a **zsengélés**{{en: bisque}} (brit angolul: **biscuit**), általában 08–04-es gúlára (leggyakrabban 06–04-esre), nagyjából {{1728–1945 °F; 942–1063 °C}} hőmérsékleten. Utána az áru erős, de porózus. A Digitalfire, egy mázakkal foglalkozó szakmai oldal, általában 15%-nál nagyobb porozitást javasol, hogy a zsengélt áru felhordáskor kiszívja a vizet a mázból. Az alacsonyabb hőfokon zsengélt áru (08–06-os gúla) porózusabb; a magasabb hőfokon zsengélt (gyakran 04-es gúla) erősebb, de nehezebben veszi fel a mázat.
 
 Table: A zsengélés hatása a mázazásra (Digitalfire)
 Label: A zsengélés hatása a mázazásra
@@ -254,7 +254,7 @@ A jogszabályi határértékek országonként eltérnek. A táblázat annak az o
 
 ::food-limits
 
-Az Egyesült Államokban a nem élelmiszerhez szánt árun maradandó, beégetett „Not for Food Use” (élelmiszerhez nem használható) feliratnak kell lennie, vagy az élelmiszerrel érintkező felületét át kell lyukasztani. Az EU a 84/500/EGK irányelvben határozza meg az ólom és a kadmium határértékeit, az Egyesült Királyság pedig saját jogszabályában ugyanezeket az értékeket tartja meg. 2026. május 29-től Hollandia, Belgium és Luxemburg nagyjából 130–150-szer kevesebb ólmot és nagyjából 15-ször kevesebb kadmiumot enged meg. Ausztrália az importált árura határoz meg határértékeket; az Ausztráliában vagy Új-Zélandon készült árura nem találtunk hivatalos határértéket.
+Az Egyesült Államokban az élelmiszerhez használhatónak látszó díszkerámiát élelmiszeres árunak tekintik, kivéve, ha rajta van egy ráragasztott címke, az alján pedig egy maradandó, beformázott vagy beégetett felirat, például „Not for Food Use. May Poison Food” (élelmiszerhez nem használható; megmérgezheti az ételt), vagy ha az élelmiszerrel érintkező felületen átmenő lyuk van. Az EU a 84/500/EGK irányelvben határozza meg az ólom és a kadmium határértékeit, az Egyesült Királyság pedig saját jogszabályában ugyanezeket az értékeket tartja meg. 2026. május 29-től Hollandia, Belgium és Luxemburg nagyjából 130–150-szer kevesebb ólmot és nagyjából 15-ször kevesebb kadmiumot enged meg. Ausztrália az importált árura határoz meg határértékeket; az Ausztráliában vagy Új-Zélandon készült árura nem találtunk hivatalos határértéket.
 
 ### Vizsgálat
 
@@ -460,7 +460,7 @@ Zavarosító (opacifier)
 : Nyersanyag, például cirkon-szilikát, ón-oxid vagy titán-dioxid, amely fedővé teszi a mázat.
 
 Zsengélés (bisque; brit angolul: biscuit)
-: Az első, alacsonyabb hőfokú égetés, általában 08–04-es gúlára, amely után az áru erős, de porózus.
+: Az első, alacsonyabb hőfokú égetés, általában 08–04-es gúlára (leggyakrabban 06–04-esre), amely után az áru erős, de porózus.
 
 ## Források {#sources}
 
@@ -474,6 +474,7 @@ Zsengélés (bisque; brit angolul: biscuit)
 - [Glazy Help: Specific gravity](https://help.glazy.org/testing/specific-gravity)
 - [Orton Ceramic Foundation: Pyrometric cone chart, °F (a The Ceramic Shop oldalán)](https://www.theceramicshop.com/technical_info/Cones/Orton-Cone-Chart-F-022-14.pdf)
 - [Digitalfire: Bisque](https://digitalfire.com/glossary/bisque)
+- [Digitalfire: Bentonite](https://digitalfire.com/material/bentonite)
 - [Digitalfire: Unity molecular formula](https://digitalfire.com/glossary/unity+molecular+formula)
 - [Digitalfire: LOI](https://digitalfire.com/glossary/loi)
 - [Digitalfire: Frit](https://digitalfire.com/glossary/frit)
@@ -489,3 +490,4 @@ Zsengélés (bisque; brit angolul: biscuit)
 - [Potclays: The difference between stoneware and earthenware](https://www.potclays.co.uk/clay-questions/difference-stoneware-earthenware)
 - [US FDA: Compliance Policy Guide Sec. 545.450, Pottery (ceramics), lead contamination](https://www.fda.gov/media/71764/download)
 - [EUR-Lex: Council Directive 84/500/EEC on ceramic articles in contact with food](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:31984L0500)
+- [eCFR: 21 CFR 109.16, Ornamental and decorative ceramicware](https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-109/subpart-A/section-109.16)

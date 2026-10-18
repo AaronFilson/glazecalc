@@ -48,7 +48,7 @@ Label: Pamatkomplekts
 | Kālija laukšpats                                           | Jebkurš, kas pašlaik ir pieejams jūsu dzīvesvietā, piemēram, ASV – Mahavir                                             |
 | Nefelīna sienīts{{en: nepheline syenite}}                  | Jebkurš; Glazy atzīmē, ka tam ir spēcīgāka kušņu iedarbība, to bieži lieto zemas un vidējas temperatūras apdedzināšanā |
 | Krīts                                                      | Jebkurš                                                                                                                |
-| Talks                                                      | Jebkurš                                                                                                                |
+| Talks                                                      | Jebkurš azbestu nesaturošs veids; pārbaudiet tā drošības datu lapu (skatiet ceļvedi “Droša jaukšana un ventilācija”)   |
 | Bora frite vidējas temperatūras apdedzināšanai             | Ferro 3134, 3124 vai 3195; Apvienotajā Karalistē – Potterycrafts P3124 vai P3195                                       |
 | Bentonīts un krāsvielas                                    | Nelielos daudzumos                                                                                                     |
 
@@ -211,7 +211,7 @@ Label: Ūdens daudzums mērķa relatīvajam blīvumam
 
 **CMC** (karboksimetilceluloze) padara glazūras suspensiju lipīgāku un lēnāk žūstošu un atstāj cietāku kārtu, kas labi turas uz izstrādājuma. Vislielākā nozīme tai ir glazūrām uzklāšanai ar otu un glazūrām ar daudz frites{{en: frit}}. Digitalfire piemērā 3,75 g iejauc 1000 g suspensijas, un CMC jāiejauc ar blenderi. Glazūra ar CMC ar Epsoma sāli nesabiezē, un, tā kā mikrobi barojas ar šo saistvielu, glazūra spainī var mainīties un sākt smirdēt.
 
-**Bentonīts**, ļoti smalks māls, palīdz noturēt pārējās daļiņas suspensijā. Iemērkšanas glazūrās šo uzdevumu parasti veic 15–25% neapdedzināta māla. Receptei, kurā māla ir maz, palīdz apmēram 1–2% bentonīta.
+**Bentonīts**, ļoti smalks māls, palīdz noturēt pārējās daļiņas suspensijā. Iemērkšanas glazūrās šo uzdevumu parasti veic 15–25% neapdedzināta māla. Receptei, kurā māla ir maz, palīdz apmēram 1–3% bentonīta; Digitalfire norāda, ka glazūrai, kurā ir vairāk nekā 15% māla, nevajadzētu būt vajadzīgs vairāk par 1%.
 
 ## Proves un provju rindas {#testing}
 
@@ -284,6 +284,7 @@ Label: Pierakstu veidne
 - [Digitalfire: Epsom salts](https://digitalfire.com/material/epsom+salts)
 - [Digitalfire: CMC gum](https://digitalfire.com/material/cmc%2Bgum)
 - [Digitalfire: Dipping glaze](https://digitalfire.com/glossary/dipping+glaze)
+- [Digitalfire: Bentonite](https://digitalfire.com/material/bentonite)
 - [Digitalfire: Water solubility](https://digitalfire.com/glossary/water+solubility)
 - [Digitalfire: Gerstley Borate](https://digitalfire.com/material/gerstley+borate)
 - [Digitalfire: Mahavir potash feldspar](https://digitalfire.com/material/mahavir+potash+feldspar)

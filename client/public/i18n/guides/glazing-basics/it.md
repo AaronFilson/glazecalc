@@ -38,7 +38,7 @@ I pezzi non cotti sono il **crudo**{{en: greenware}} (le fonti non concordano se
 
 ### Le due cotture
 
-La prima cottura, a temperatura più bassa, è la **biscottatura**{{en: bisque}} (nel Regno Unito _biscuit_), di solito a cono 08–04, circa {{1740–1940 °F; 950–1060 °C}}. Lascia i pezzi resistenti ma porosi. Digitalfire, un sito di riferimento sugli smalti, suggerisce in genere una porosità superiore al 15%, così il biscotto assorbe l’acqua dello smalto mentre lo si stende. Un biscotto tenero (cono 08–06) è più poroso; un biscotto duro (spesso cono 04) è più robusto ma prende lo smalto con meno facilità.
+La prima cottura, a temperatura più bassa, è la **biscottatura**{{en: bisque}} (nel Regno Unito _biscuit_), di solito a cono 08–04 (più spesso 06–04), circa {{1728–1945 °F; 942–1063 °C}}. Lascia i pezzi resistenti ma porosi. Digitalfire, un sito di riferimento sugli smalti, suggerisce in genere una porosità superiore al 15%, così il biscotto assorbe l’acqua dello smalto mentre lo si stende. Un biscotto tenero (cono 08–06) è più poroso; un biscotto duro (spesso cono 04) è più robusto ma prende lo smalto con meno facilità.
 
 Table: Come il biscotto cambia la smaltatura (Digitalfire)
 Label: Come il biscotto cambia la smaltatura
@@ -254,7 +254,7 @@ I limiti di legge cambiano da un paese all’altro. La tabella mostra quelli del
 
 ::food-limits
 
-Negli Stati Uniti i pezzi non destinati agli alimenti devono riportare la dicitura permanente, cotta sul pezzo, «Not for Food Use» (non per uso alimentare) oppure avere un foro che attraversa la superficie destinata al cibo. L’UE fissa i limiti di piombo e cadmio nella direttiva 84/500/CEE, e il Regno Unito mantiene gli stessi valori nella propria legislazione. Dal 29 maggio 2026 i Paesi Bassi, il Belgio e il Lussemburgo ammettono circa da 130 a 150 volte meno piombo e circa 15 volte meno cadmio. L’Australia fissa limiti per la ceramica importata; non abbiamo trovato limiti ufficiali per la ceramica prodotta in Australia o in Nuova Zelanda.
+Negli Stati Uniti i pezzi di ceramica decorativa che sembrano utilizzabili per il cibo sono trattati come articoli per alimenti, a meno che non portino un’etichetta adesiva e una dicitura permanente impressa a stampo o cotta sul fondo, come «Not for Food Use. May Poison Food» (non per uso alimentare; può avvelenare gli alimenti), oppure abbiano un foro che attraversa la superficie destinata al cibo. L’UE fissa i limiti di piombo e cadmio nella direttiva 84/500/CEE, e il Regno Unito mantiene gli stessi valori nella propria legislazione. Dal 29 maggio 2026 i Paesi Bassi, il Belgio e il Lussemburgo ammettono circa da 130 a 150 volte meno piombo e circa 15 volte meno cadmio. L’Australia fissa limiti per la ceramica importata; non abbiamo trovato limiti ufficiali per la ceramica prodotta in Australia o in Nuova Zelanda.
 
 ### Le prove
 
@@ -322,7 +322,7 @@ Bentonite
 : Un’argilla finissima aggiunta all’1–3% per evitare che lo smalto si depositi.
 
 Biscottatura (bisque; Regno Unito: biscuit)
-: La prima cottura, a temperatura più bassa, di solito a cono 08–04; lascia i pezzi resistenti ma porosi.
+: La prima cottura, a temperatura più bassa, di solito a cono 08–04 (più spesso 06–04); lascia i pezzi resistenti ma porosi.
 
 Boro (boron, B₂O₃)
 : Formalmente un vetrificante, ma usato come fondente; essenziale da cono 06 a cono 6.
@@ -474,6 +474,7 @@ Vetrificazione (vitrification)
 - [Glazy Help: Specific gravity](https://help.glazy.org/testing/specific-gravity)
 - [Orton Ceramic Foundation: Pyrometric cone chart, °F (tramite The Ceramic Shop)](https://www.theceramicshop.com/technical_info/Cones/Orton-Cone-Chart-F-022-14.pdf)
 - [Digitalfire: Bisque](https://digitalfire.com/glossary/bisque)
+- [Digitalfire: Bentonite](https://digitalfire.com/material/bentonite)
 - [Digitalfire: Unity molecular formula](https://digitalfire.com/glossary/unity+molecular+formula)
 - [Digitalfire: LOI](https://digitalfire.com/glossary/loi)
 - [Digitalfire: Frit](https://digitalfire.com/glossary/frit)
@@ -489,3 +490,4 @@ Vetrificazione (vitrification)
 - [Potclays: The difference between stoneware and earthenware](https://www.potclays.co.uk/clay-questions/difference-stoneware-earthenware)
 - [US FDA: Compliance Policy Guide Sec. 545.450, Pottery (ceramics), lead contamination](https://www.fda.gov/media/71764/download)
 - [EUR-Lex: Council Directive 84/500/EEC on ceramic articles in contact with food](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:31984L0500)
+- [eCFR: 21 CFR 109.16, Ornamental and decorative ceramicware](https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-109/subpart-A/section-109.16)

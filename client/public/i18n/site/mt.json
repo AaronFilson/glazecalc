@@ -57,9 +57,13 @@
     "stackServer": "API f’TypeScript fuq Node.js 24 u Express 5, b’MongoDB 9, ivverifikat b’aktar minn 350 test awtomatiku.",
     "stackHosting": "Jaħdem f’Docker fuq Amazon Web Services, wara nginx b’HTTPS minn Let's Encrypt.",
     "stackDeploy": "Jiġi implimentat minn GitHub Actions: l-images jinbnew u jiġu ttestjati ma’ kull bidla, u l-implimentazzjonijiet jidħlu f’AWS mingħajr ċwievet maħżuna.",
+    "creditsHeading": "Krediti",
+    "credits": "Ir-reġjuni fuq il-mappa ta’ Stull ġejjin mill-qari ta’ Glazy tal-mappa ta’ R. T. Stull tal-1912, minn Derek Au (Copyright (c) 2017 Derek Au, MIT License). L-<notices>avviż sħiħ</notices> jinsab fis-sors.",
     "whoHeading": "Min għamlu",
     "who": "Glazecalc huwa magħmul minn Aaron Filson. Sibt problema jew għandek idea? <issues>Iftaħ issue fuq GitHub</issues>.",
-    "studio": "Iċ-ċeramika li jagħmel bl-idejn Aaron Filson tinsab f’<studio>Updraft Pottery Studio</studio> f’Tacoma, Washington. Agħti ħarsa lejn ix-xogħol, u ordna biċċa jekk xi waħda tolqtok."
+    "studio": "Iċ-ċeramika li jagħmel bl-idejn Aaron Filson tinsab f’<studio>Updraft Pottery Studio</studio> f’Tacoma, Washington. Agħti ħarsa lejn ix-xogħol, u ordna biċċa jekk xi waħda tolqtok.",
+    "languagesHeading": "Lingwi",
+    "languages": "Glazecalc huwa disponibbli f’dawn il-lingwi. Kull link jiftaħ din il-paġna f’dik il-lingwa."
   },
   "privacy": {
     "title": "Privatezza",
@@ -71,9 +75,15 @@
     "contact": "Biex tistaqsi dwar id-data tiegħek, jew biex tuża xi wieħed mid-drittijiet tiegħek, ikteb lil <mail>privacy@glazecalcapp.com</mail>. Tista’ wkoll <issues>tiftaħ issue fuq GitHub</issues>, imma l-issues huma pubbliċi: qatt ma tpoġġi fihom l-indirizz elettroniku tiegħek jew xi ħaġa personali. Il-biċċa l-kbira tal-affarijiet dwar id-data tiegħek tista’ tagħmilhom int stess fil-<account>paġna tal-kont</account> tiegħek.",
     "storedHeading": "X’jinżamm, u għaliex",
     "storedAccount": "<b>Il-kont tiegħek:</b> l-indirizz elettroniku tiegħek, u l-password tiegħek, maħżuna biss bħala hash f’direzzjoni waħda (bcrypt), qatt bħala l-password innifisha. Is-settings tiegħek (bħal-lingwa, ir-reġjun u l-unitajiet) u l-lista tal-materjali li għandek jinżammu miegħu. Kont għandu bżonn indirizz elettroniku, biex tidħol u biex tirrisettja password minsija. Meta toħloq kont, jintbagħat link lill-indirizz biex tikkonferma li huwa tiegħek; sa dakinhar, jintbagħtu messaġġi lilu biss meta titlob int, bħal biex tirrisettja l-password.",
+    "storedPrices": "<b>Prezzijiet, jekk tagħti xi wħud:</b> dak li tħallas għal kull materjal, għal kull kilogramma, u l-munita li huma fiha, għall-ispiża ta’ taħlita. Huma data tan-negozju, miżmuma mal-kont tiegħek u privati għalih: qatt mhuma parti minn riċetta, għalhekk xejn li taqsam ma juri. Niżżel id-data tiegħi jinkludihom, u t-tħassir tal-kont ineħħihom. Il-prezzijiet ta’ prova jgħaddu fil-kont tiegħek mar-rekords tagħha, għal materjali li ma tajtx prezz għalihom, meta t-tnejn ikunu fl-istess munita.",
     "storedEmailChange": "<b>Il-bidla tal-indirizz elettroniku:</b> meta nbidel l-indirizz tiegħek l-aħħar darba, biex talba biex jintefa d-dħul f’żewġ passi qatt ma tiġi aċċettata minn indirizz ġdid fit-30 jum ta’ wara.",
     "storedSignIn": "<b>Id-dħul f’żewġ passi, jekk tixgħlu:</b> jekk huwiex mixgħul; iċ-ċavetta li l-app tal-awtentikazzjoni tiegħek taqsam ma’ Glazecalc, kriptata; għal kull passkey, iċ-ċavetta pubblika tagħha (li ma tistax iddaħħal lil ħadd waħedha) flimkien mal-id u d-dettalji li jagħtiha l-apparat tiegħek, l-isem li tajtha, u meta żdiedet u meta ntużat l-aħħar; il-kodiċijiet ta’ rkupru tiegħek, biss bħala hash f’direzzjoni waħda b’ċavetta, biex ħadd ma jkun jista’ jaqrahom lura; u, jekk xi ħadd idaħħal il-password tiegħek iżda ma jlestix it-tieni pass, meta Glazecalc bagħtlek l-aħħar messaġġ elettroniku dwar dan (mhux aktar minn darba kuljum). Waqt li tkun qed tidħol, bejn il-password u t-tieni pass, is-server iżomm nota tad-dħul għal 5 minuti, u l-paġna żżomm token qasir fil-memorja tagħha biss: l-ebda cookie ġdida, xejn fil-ħażna tal-brawżer tiegħek.",
-    "storedSaved": "<b>Dak li tissejvja:</b> ir-riċetti, il-materjali, l-addittivi, in-noti, ir-reġistri tal-ħami u l-pariri tiegħek, kif ktibthom. Tista’ tarahom int biss: xejn ma jinqasam bejn l-utenti.",
+    "storedSaved": "<b>Dak li tissejvja:</b> ir-riċetti, il-materjali, l-addittivi, in-noti, ir-reġistri tal-ħami u l-pariri tiegħek, kif ktibthom. Inti biss tista’ tarahom, sakemm ma taqsamx riċetta b’link.",
+    "storedTrash": "<b>Il-barmil u l-verżjonijiet preċedenti:</b> dak li tneħħi minn lista jistenna fil-barmil, sħiħ, biex tkun tista’ tpoġġih lura; u kull bidla li tissejvja f’rekord iżżomm ir-rekord kif kien eżatt qabel, biex tkun tista’ terġa’ lura mill-bidla.",
+    "storedShares": "<b>Riċetti li taqsam b’link, jekk taqsam xi wħud:</b> liema riċetta, meta nħoloq il-link tagħha u jekk turix in-noti tar-riċetta, b’hash f’direzzjoni waħda tal-link (qatt mhux il-link innifsu). Kull min għandu l-link jista’ jara r-riċetta kif inhi issa, bil-formula ta’ Seger tagħha, u n-noti tagħha jekk għażilt li turihom; qatt l-indirizz elettroniku tiegħek, il-kont tiegħek jew xi prezz. Ir-riċetti maqsuma jinżammu barra mill-magni tat-tiftix, u l-link qatt ma jasal fil-logs tas-server. Biex jitwaqqaf l-abbuż, ir-riċetti maqsuma li jinfetħu minn kull indirizz IP jingħaddu, fil-memorja, għal 15-il minuta. Prova ma tistax taqsam.",
+    "storedTokens": "<b>Tokens tal-aċċess u apps konnessi, jekk toħloq jew tapprova xi wħud:</b> għal kull wieħed, ismu, dak li jista’ jagħmel, hash f’direzzjoni waħda tat-token (qatt mhux it-token innifsu) u l-aħħar 4 karattri tiegħu, u meta nħoloq, meta ntuża l-aħħar, meta jiskadi u meta ġie rrevokat.",
+    "storedActivity": "<b>Dak li għamlu t-tokens u l-apps:</b> linja għal kull rekord li token tal-aċċess jew app konnessa ħoloq, biddel, neqel għall-barmil, poġġa lura jew erġa’ lura minn bidla fih: meta, liema token jew app, x’għamel u t-titlu tar-rekord, imqassar. Qatt it-test ta’ nota jew xi ħaġa oħra fir-rekord. Il-bidliet li tagħmel fuq il-websajt ma jidhrux fil-lista.",
+    "storedLimits": "<b>Limiti dwar kemm-il darba:</b> biex jitwaqqfu t-tbassir u l-scripts mhux ikkontrollati, jingħaddu t-tentattivi ta’ dħul, ir-reġistrazzjonijiet, it-talbiet biex tirrisettja u l-provi skont l-indirizz IP jew il-kont, it-tokens tal-aċċess li ma jaħdmux skont l-indirizz IP, it-talbiet magħmula bit-tokens tal-aċċess, skont il-kont (120 kull minuta u 5,000 kull jum), ir-rekords li kull token tal-aċċess jgħaddi lejn il-barmil, skont it-token, ir-riċetti maqsuma li jinfetħu u l-links tat-tqassim li ma jiftħu xejn, skont l-indirizz IP, u t-talbiet lill-għodod tal-assistenti tal-IA (MCP): 60 kull minuta u 2,000 kull jum skont l-indirizz IP, jew 120 kull minuta u 5,000 kull jum skont il-kont meta jintuża token tal-aċċess, b’mhux aktar minn 10 sostituzzjonijiet jew tqabbiliet kull minuta.",
     "storedTrial": "<b>Prova (“Ipprova issa”):</b> l-ebda indirizz elettroniku jew password, isem ivvintat biss bħal “speckled quiet kilns”. Jekk tidħol f’kont fl-istess brawżer waqt prova, dak li għamilt fil-prova jgħaddi fil-kont.",
     "storedResets": "<b>Links biex tirrisettja l-password u links bil-posta elettronika:</b> liema kont talab, meta, l-indirizz li ntbagħatlu link biex jiġi kkonfermat indirizz, u impronta diġitali ta’ kull link (mhux il-link innifsu).",
     "storedLogs": "<b>Logs:</b> is-server tal-web jirreġistra kull talba: l-indirizz IP tiegħek, il-ħin, il-paġna mitluba u l-isem tal-brawżer tiegħek. L-app tirreġistra l-iżbalji bil-paġna fejn ġraw, qatt bl-indirizz elettroniku tiegħek.",
@@ -96,6 +106,11 @@
     "choiceNoWarranty": "Glazecalc huwa pprovdut kif inhu, mingħajr garanzija. Il-persuni li jieħdu ħsiebu ma jaċċettaw l-ebda responsabbiltà jew obbligu legali għad-deċiżjoni tiegħek li toħloq kont, jew għall-post fejn tinżamm id-data tiegħu.",
     "keptHeading": "Għal kemm żmien tinżamm",
     "keptAccount": "<b>Il-kont tiegħek u dak li tissejvja:</b> sakemm tħassarhom. Il-kontijiet ma jitneħħewx għax ma jkunux qed jintużaw.",
+    "keptTrash": "<b>Il-barmil u l-verżjonijiet preċedenti:</b> rekord imneħħi 30 jum wara li tneħħih, jew sakemm tħassru għal dejjem jew tiżvojta l-barmil; verżjonijiet preċedenti 90 jum, u biss l-aħħar 20 ta’ kull rekord (u dik minn qabel il-bidliet ta’ token tal-aċċess), imma qatt aktar mir-rekord: waqt li huwa fil-barmil il-verżjonijiet tiegħu jmorru miegħu. It-tnejn imorru f’daqqa meta tħassar il-kont tiegħek.",
+    "keptShares": "<b>Links tat-tqassim:</b> sakemm twaqqaf it-tqassim tar-riċetta, toħloq link ġdid għaliha, tqegħedha fil-barmil jew tħassar il-kont tiegħek. Li terġa’ tpoġġi r-riċetta lura mill-barmil ma taqsamhiex mill-ġdid. L-irrisettjar tal-password jew il-ħruġ minn kull apparat iwaqqfu wkoll il-links kollha tiegħek; il-bidla tal-password le.",
+    "keptTokens": "<b>Tokens tal-aċċess u apps konnessi:</b> kull wieħed sa 30 jum wara li jiskadi (kull wieħed jiskadi, fi żmien sena l-aktar), jew sakemm tħassar il-kont tiegħek. L-irrisettjar tal-password jew Oħroġ minn kull apparat iwaqqafhom kollha f’daqqa.",
+    "keptActivity": "<b>Dak li għamlu t-tokens u l-apps:</b> 90 jum, jew sakemm tħassar il-kont tiegħek.",
+    "keptLimits": "<b>Limiti dwar kemm-il darba:</b> l-għadd jinżamm biss fil-memorja tas-server, minn 1 minuta sa 24 siegħa, u jintilef meta jerġa’ jibda.",
     "keptTrial": "<b>Prova:</b> 14-il jum mill-bidu tagħha, imbagħad titħassar b’kulma fiha, sakemm ma toħloqx kont biex iżżommha.",
     "keptResets": "<b>Links biex tirrisettja l-password u links bil-posta elettronika:</b> link biex tirrisettja l-password jaħdem għal 30 minuta u r-rekord tiegħu jitħassar wara madwar siegħa; link biex tikkonferma indirizz jaħdem, u jinżamm, għal 24 siegħa.",
     "keptSignIn": "<b>Id-dħul f’żewġ passi:</b> kull app tal-awtentikazzjoni, passkey u sett ta’ kodiċijiet ta’ rkupru sakemm tneħħih, titfi d-dħul f’żewġ passi jew tħassar il-kont tiegħek. Dħul li qed jistenna t-tieni pass tiegħu jitħassar wara 5 minuti, u app jew passkey li bdejt iżżid iżda ma lestejtx, wara mhux aktar minn 10 minuti.",
@@ -113,7 +128,7 @@
     "rightsAsk": "Għal kull ħaġa oħra, bħal biex titlob li d-data tiegħek ma tintużax sakemm jiġi kkoreġut żball, jew biex toġġezzjona għal kif tintuża, ikteb lil <mail>privacy@glazecalcapp.com</mail>. Huwa b’xejn, u jkollok tweġiba fi żmien xahar. Tintalab biss turi li l-kont huwa tiegħek, billi tidħol fih jew billi tiftaħ link mibgħut lill-indirizz tiegħu, qatt biex turi dokument tal-identità.",
     "rightsComplain": "Jekk m’intix sodisfatt, tista’ tressaq ilment quddiem awtorità tal-protezzjoni tad-data: fl-UE, <edpb>l-awtorità tal-pajjiż tiegħek</edpb>, u fir-Renju Unit, l-<ico>Information Commissioner's Office</ico>.",
     "storageHeading": "Cookies u l-ħażna tal-brawżer",
-    "storageIntro": "Glazecalc juża cookie waħda u jżomm ftit valuri żgħar fil-brawżer tiegħek. Kull wieħed minnhom hemm għal xi ħaġa li tlabt int: biex tibqa’ dieħel, jew biex tiftakar għażla li għamilt. L-ebda wieħed ma jsegwik u l-ebda wieħed ma jinqasam, għalhekk il-liġi ma titlobx li l-ewwel tistaqsi, u m’hemm l-ebda banner tal-cookies.",
+    "storageIntro": "Glazecalc jistabbilixxi żewġ cookies, it-tieni waħda biss waqt li tidħol b’Google jew b’GitHub, u jżomm ftit valuri żgħar fil-brawżer tiegħek. Kull waħda hi hemm għal xi ħaġa li talbt: biex tibqa’ dieħel, biex tidħol b’Google jew b’GitHub, jew biex tiġi mfakkra għażla li għamilt. Ebda waħda ma ssegwik u ebda waħda ma tinqasam, għalhekk il-liġi ma teħtieġx li nistaqsuk l-ewwel, u m’hemm l-ebda banner tal-cookies.",
     "storageLabel": "Cookies u l-ħażna tal-brawżer",
     "storageName": "Isem",
     "storagePurpose": "Għal xiex inhu",
@@ -152,7 +167,7 @@
         "lasts": "Sakemm tħassar il-ħażna tal-brawżer tiegħek."
       },
       "print": {
-        "purpose": "L-aħħar għażliet tiegħek għall-ipprintjar ta’ riċetta: ir-riċetta kollha jew taħlita, u d-daqs tat-taħlita.",
+        "purpose": "L-aħħar għażliet tiegħek biex tipprintja riċetta: ir-riċetta kollha, taħlita jew l-iskeda tax-xogħol, u d-daqs tat-taħlita.",
         "lasts": "Sakemm tħassar il-ħażna tal-brawżer tiegħek."
       },
       "token": {
@@ -166,12 +181,19 @@
       "reloadedFor": {
         "purpose": "Wara li toħroġ verżjoni ġdida tas-sit, liema paġna reġgħet ingħabbiet u meta, biex paġna ma terġax tingħabba aktar minn darba fil-minuta.",
         "lasts": "Sakemm tagħlaq it-tab."
+      },
+      "oauthCookie": {
+        "purpose": "Biss waqt li tidħol b’Google jew b’GitHub: torbot it-tweġiba ta’ Google jew GitHub mal-brawżer tiegħek, biex ħadd ieħor ma jkun jista’ jlesti d-dħul tiegħek jew jibda wieħed għalik. L-iscripts fil-paġna ma jistgħux jaqrawha.",
+        "lasts": "Tiġi mistabbilita meta tagħfas Kompli b’Google jew Kompli b’GitHub, jew tgħaqqad waħda fil-paġna tal-kont tiegħek. Titneħħa meta jintemm id-dħul, jew wara 10 minuti."
       }
     },
     "childrenHeading": "It-tfal",
     "children": "Glazecalc huwa għodda għall-fuħħarin u mhuwiex immirat lejn it-tfal.",
     "changesHeading": "Bidliet",
-    "changes": "Jekk dan l-avviż jinbidel, tinbidel ukoll id-data tal-aħħar aġġornament fil-quċċata tal-paġna."
+    "changes": "Jekk dan l-avviż jinbidel, tinbidel ukoll id-data tal-aħħar aġġornament fil-quċċata tal-paġna.",
+    "storedProviders": "<b>Google jew GitHub, jekk tidħol b’wieħed minnhom:</b> l-id tiegħek stess għal dak is-servizz (numru jew kodiċi li qatt ma jinbidel), meta għaqqadtu u meta dħalt bih l-aħħar, u jekk il-kont tiegħek għandux password tiegħu stess. Xejn aktar mis-servizz ma jinżamm: la ismek, la r-ritratt tiegħek u lanqas ebda ċavetta għall-kont tiegħek hemm. Waqt li tidħol, is-server iżomm nota tad-dħul, bl-indirizz elettroniku li s-servizz jgħid li hu tiegħek meta jkun meħtieġ: għal kont ġdid, fejn isir l-indirizz elettroniku tal-kont tiegħek, jew, meta kont ta’ Glazecalc diġà għandu dak l-indirizz, biex is-servizz jiġi magħqud miegħu ladarba tidħol f’dak il-kont. In-nota, u l-indirizz elettroniku fiha, jitħassru fi żmien madwar 10 minuti.",
+    "providers": "<b>Id-dħul b’Google jew b’GitHub</b> huwa għażla tiegħek, u jseħħ biss meta tagħfas il-buttuna tiegħu. Il-brawżer tiegħek imbagħad imur għand Google jew GitHub, li jibagħtu lil Glazecalc l-id tagħhom għalik u l-indirizz elettroniku tiegħek. Kull waħda minnhom hija kumpanija separata, responsabbli għal dak li taqsam magħha taħt il-politika tal-privatezza tagħha stess. L-ebda script jew immaġni minn Google jew minn GitHub ma jitgħabbew fuq il-paġni ta’ Glazecalc.",
+    "keptProviders": "<b>Google jew GitHub:</b> kull għaqda sakemm tneħħi l-għaqda jew tħassar il-kont tiegħek. Dħul li għaddej jitħassar wara 10 minuti."
   },
   "notFound": {
     "heading": "Il-paġna ma nstabitx",
@@ -194,8 +216,35 @@
     "titleMissing": "Agħti titlu lill-parir.",
     "contentMissing": "Ikteb il-parir.",
     "fetchFailed": "Kien hemm żball meta ppruvajna nġibu l-informazzjoni dwar il-pariri.",
-    "standardFetchFailed": "Kien hemm żball meta ppruvajna nġibu mis-server l-informazzjoni dwar il-pariri.",
     "saved": "Il-parir ġie miżjud b’suċċess.",
     "saveFailed": "Kien hemm żball meta ntbagħtet l-informazzjoni dwar il-parir."
+  },
+  "assistants": {
+    "title": "Użu ta’ Glazecalc mill-assistent tal-IA tiegħek",
+    "lead": "Assistenti tal-IA bħal Claude, GitHub Copilot, Cursor u Gemini jistgħu jużaw direttament il-kalkoli ta’ Glazecalc, permezz tal-Model Context Protocol (MCP).",
+    "whatHeading": "X’jista’ jagħmel",
+    "what": "Mingħajr kont, assistent jista’ jfittex materjali fil-librerija, jikkalkula l-formula ta’ Seger ta’ riċetta, jiċċekkjaha mal-limiti għall-ħami tagħha, jissuġġerixxi sostituti għal materjali li ma jsirux aktar, jerġa’ jagħmel riċetta mill-materjali li tagħti l-ismijiet tagħhom, jikkonverti bejn koni u temperaturi, u jfittex u jaqra l-gwidi. Xejn minn dak li jibgħat ma jinżamm; bħal kull paġna, il-log tas-server tal-web jirreġistra l-indirizz IP, il-ħin u l-indirizz ta’ kull talba (qatt dak li ntbagħat), għal 14-il jum.",
+    "mine": "B’token tal-aċċess mill-<account>paġna tal-kont</account> tiegħek, jista’ jaqra wkoll ir-riċetti, il-materjali, il-pitazz, ir-reġistri tal-ħami u l-materjali li għandek tiegħek stess. Token jista’ jaqra biss: qatt ma jibdel jew ineħħi xejn.",
+    "caution": "Il-kontrolli tal-limiti huma twissijiet minn limiti ppubblikati, bħal fl-app, mhux prova li glejż huwa sikur għall-ikel. Ittestja kull glejż bil-ħami, u ara li l-glejżijiet għal uċuħ li jmissu l-ikel jiġu ttestjati għar-rilaxx tal-metalli.",
+    "addressHeading": "L-indirizz",
+    "address": "Agħti lill-assistent tiegħek dan l-indirizz, bl-użu tat-trasport Streamable HTTP:",
+    "token": "Biex iħallih jaqra r-rekords tiegħek stess, oħloq token fuq il-<account>paġna tal-kont</account> tiegħek u ikkopjah. L-assistent tiegħek jibgħatu f’header Authorization, bħala Bearer segwit mit-token. Żommu ’l barra minn fajls li taqsam jew tikkommetti, bħalma tagħmel b’password.",
+    "clientsHeading": "Żieda ta’ Glazecalc mal-assistent tiegħek",
+    "claudeCode": "F’terminal:",
+    "claudeCodeToken": "B’token tal-aċċess, biex taqra wkoll ir-rekords tiegħek stess:",
+    "vscode": "F’.vscode/mcp.json f’folder, jew is-settings tal-utent tiegħek. VS Code jitlob it-token darba u jżommu moħbi; ħalli barra headers u inputs biex tuża biss l-għodod li ma jeħtiġux kont:",
+    "cursor": "F’~/.cursor/mcp.json, jew .cursor/mcp.json f’proġett. Ħalli barra headers biex tuża biss l-għodod li ma jeħtiġux kont:",
+    "gemini": "F’~/.gemini/settings.json. Ħalli barra headers biex tuża biss l-għodod li ma jeħtiġux kont:",
+    "copy": "Ikkopja",
+    "copyAddress": "Ikkopja l-indirizz",
+    "copyFor": "Ikkopja s-setup għal {client}",
+    "copyForToken": "Ikkopja s-setup għal {client}, b’token tal-aċċess",
+    "copied": "Ikkopjat.",
+    "copyByHand": "Ma setax jiġi kkopjat għalik. Huwa magħżul: ikkopjah mill-kaxxa.",
+    "appsHeading": "Claude, ChatGPT u apps oħra",
+    "apps": "Żid konnettur personalizzat bl-indirizz t’hawn fuq. Dawn l-apps ma jistgħux jibagħtu token tal-aċċess għadhom, għalhekk jieħdu l-għodod li ma jeħtiġux kont. L-aċċess għar-rekords tiegħek stess minnhom se jiġi mad-dħul mill-app.",
+    "stopHeading": "It-twaqqif tal-aċċess",
+    "stop": "Irrevoka token fuq il-<account>paġna tal-kont</account> tiegħek meta trid. Kull token jieqaf jaħdem fil-jum li għażilt, u lkoll jieqfu f’daqqa jekk tirrisettja l-password jew toħroġ minn kull apparat.",
+    "limits": "Kull indirizz jista’ jagħmel 60 talba kull minuta u 2,000 kull jum; kont li juża token, 120 kull minuta u 5,000 kull jum. Is-sostituzzjonijiet u t-tqabbiliet huma limitati għal 10 kull minuta."
   }
 }

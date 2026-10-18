@@ -228,6 +228,108 @@ describe('RecipePrint', () => {
     expect(localStorage.getItem('printMode')).toBe('batch');
   });
 
+  it('prints the firing, tested cone first, on every sheet, and the liner note for a food surface', async () => {
+    const { fixture, root } = await create({
+      ...RECIPE,
+      firedAt: { scale: 'orton', low: '5', high: '6', tested: ['6'], atmospheres: ['oxidation'], hold: 10 },
+      foodSurface: true
+    });
+    expect(text(fixture, '.print-firing strong')).toBe('Tested at cone 6');
+    expect(text(fixture, '.print-firing')).toContain('claimed range cone 5–6');
+    expect(text(fixture, '.print-firing')).toContain('oxidation');
+    expect(text(fixture, '.print-firing')).toContain('held 10 min');
+    expect(text(fixture, '.print-firing-approx')).toContain('approximate');
+    expect(text(fixture, '.print-liner')).toContain('Food safety depends on firing this glaze');
+    await choose(fixture, root, 'print-batch-list');
+    expect(text(fixture, '.print-firing strong')).toBe('Tested at cone 6');
+  });
+
+  it('makes the batch list a mix ticket: batch number, date, target SG when there is one, and lines to sign', async () => {
+    const { fixture, root } = await create({ ...RECIPE, sgTarget: 1.45 });
+    // Only the batch list asks for a batch number.
+    expect(root.querySelector('#print-batch-number')).toBeNull();
+    expect(root.querySelector('.print-ticket')).toBeNull();
+    await choose(fixture, root, 'print-batch-list');
+    const ticket = () =>
+      [...root.querySelectorAll('.print-sheet-header .print-ticket > div')].map((row) =>
+        [...row.children]
+          .map((cell) => (cell.textContent ?? '').trim())
+          .join(' ')
+          .trim()
+      );
+    const [number, date, target, measured] = ticket();
+    // Blank, it leaves a line to write the number on.
+    expect(number).toBe('Batch no.');
+    expect(root.querySelector('.print-sheet-header .print-ticket dd')?.classList).toContain('print-blank');
+    expect(date).toMatch(/^Date \w+ \d{1,2}, \d{4}$/);
+    expect([target, measured]).toEqual(['Target SG 1.45', 'Measured SG']);
+    const input = root.querySelector('#print-batch-number') as HTMLInputElement;
+    input.value = 'B-0417';
+    input.dispatchEvent(new Event('input'));
+    await fixture.whenStable();
+    expect(ticket()[0]).toBe('Batch no. B-0417');
+    expect([...root.querySelectorAll('.print-sign dt')].map((dt) => dt.textContent?.trim())).toEqual([
+      'Weighed and mixed by',
+      'Checked by'
+    ]);
+    expect(root.querySelectorAll('.print-sign .print-signature').length).toBe(2);
+
+    // A recipe with no target SG has no SG lines.
+    fixture.componentRef.setInput('recipe', RECIPE);
+    await fixture.whenStable();
+    expect(ticket().length).toBe(2);
+  });
+
+  it('prints the hazards it is given, each once, with the safety line', async () => {
+    const { fixture, root } = await create();
+    expect(root.querySelector('gc-recipe-hazards')).toBeNull();
+    fixture.componentRef.setInput('hazards', [
+      { name: 'Whiting', ownedBy: 'Standard', hazards: 'Fine dust; avoid breathing it.' },
+      { name: 'Silica', ownedBy: 'Standard', hazards: 'Contains crystalline silica; do not breathe the dust.' },
+      { name: 'Kaolin', ownedBy: 'Standard', hazards: 'Fine dust; avoid breathing it.' },
+      { name: 'Red iron oxide' }
+    ]);
+    await fixture.whenStable();
+    const items = [...root.querySelectorAll('.print-hazards li')].map((li) => li.textContent?.trim());
+    expect(items).toEqual([
+      'Whiting and Kaolin: Fine dust; avoid breathing it.',
+      'Silica: Contains crystalline silica; do not breathe the dust.'
+    ]);
+    expect(text(fixture, '.print-hazards')).toContain(
+      'No hazards are given for Red iron oxide: see the safety data sheet that comes with it.'
+    );
+    const links = [...root.querySelectorAll('.recipe-safety-line a')].map((a) => a.getAttribute('href'));
+    expect(links).toEqual(['/guides/safe-mixing', '/guides/home-safety']);
+    // In both kinds of print.
+    await choose(fixture, root, 'print-batch-list');
+    expect(root.querySelectorAll('.print-hazards li').length).toBe(2);
+  });
+
+  it('prints the working as a worksheet, without the batch size, and remembers the choice', async () => {
+    const { fixture, root } = await create();
+    await choose(fixture, root, 'print-worked');
+    expect(root.querySelector('gc-worked-calculation')).not.toBeNull();
+    expect(root.querySelector('.print-chemistry')).toBeNull();
+    expect(root.querySelector('.print-batch-list')).toBeNull();
+    expect(root.querySelector('.print-batch-summary')).toBeNull();
+    expect((root.querySelector('#print-batch-size')?.closest('[hidden]') as HTMLElement | null)?.hidden).toBe(true);
+    expect(text(fixture, '.print-sheet')).toContain('How the unity formula is worked out');
+    expect(localStorage.getItem('printMode')).toBe('worked');
+  });
+
+  it('opens on the working when asked, without remembering it', async () => {
+    const fixture = TestBed.createComponent(RecipePrint);
+    fixture.componentRef.setInput('recipe', RECIPE);
+    fixture.componentRef.setInput('startMode', 'worked');
+    await fixture.whenStable();
+    answer('/preferences', { weightUnit: 'g', gramPrecision: 'single' });
+    await settle(fixture);
+    const root = fixture.nativeElement as HTMLElement;
+    expect((root.querySelector('#print-worked') as HTMLInputElement).checked).toBe(true);
+    expect(root.querySelector('gc-worked-calculation')).not.toBeNull();
+    expect(localStorage.getItem('printMode')).toBeNull();
+  });
+
   it("takes the batch size in the account's unit, and prints the amounts as written without one", async () => {
     const { fixture, root } = await create(RECIPE, 'lb');
     const input = root.querySelector('#print-batch-size') as HTMLInputElement;
@@ -338,5 +440,35 @@ describe('RecipePrint', () => {
     const { fixture } = await create({ title: '', materials: [{ ...SILICA, amount: '10' }] });
     expect(text(fixture, '.print-sheet h2')).toBe('Untitled recipe');
     expect(text(fixture, '.print-chemistry p')).toContain('no flux');
+  });
+
+  it('shows the batch cost only when ticked, fetching no prices until then, and names what has no price', async () => {
+    localStorage.setItem('currency', 'USD');
+    const { fixture, root } = await create();
+    httpMock().expectNone(API + '/prices');
+    expect(root.querySelector('.print-cost')).toBeNull();
+    (root.querySelector('#print-show-cost') as HTMLInputElement).click();
+    await fixture.whenStable();
+    httpMock()
+      .expectOne(API + '/prices')
+      .flush({
+        prices: [
+          { key: 'w', perKg: 1 },
+          { key: 'k', perKg: 2 },
+          { key: 's', perKg: 0.5 }
+        ]
+      });
+    await settle(fixture);
+    // 200 g at $1, 300 g at $2, 500 g at $0.50 per kg: $1.05; the 20 g of iron oxide has no price.
+    expect(text(fixture, '.print-cost')).toBe('Priced materials cost $1.05. No price for Red iron oxide.');
+    fixture.componentRef.setInput('recipe', { ...RECIPE, additives: [] });
+    await fixture.whenStable();
+    expect(text(fixture, '.print-cost')).toBe(
+      'Batch cost $1.05: $1.05 per kilogram of dry glaze, colorants and additives included.'
+    );
+    // Unticked, it is gone from the sheet; nothing is fetched again.
+    (root.querySelector('#print-show-cost') as HTMLInputElement).click();
+    await fixture.whenStable();
+    expect(root.querySelector('.print-cost')).toBeNull();
   });
 });

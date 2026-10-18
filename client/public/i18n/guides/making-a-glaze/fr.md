@@ -48,7 +48,7 @@ Label: Assortiment de départ
 | Feldspath potassique{{en: potash feldspar}}       | Celui qui est vendu actuellement là où vous vivez, comme le Mahavir aux États-Unis                                  |
 | Néphéline syénite{{en: nepheline syenite}}        | N’importe laquelle ; Glazy note son pouvoir fondant plus fort, souvent mis à profit en basse et moyenne température |
 | Carbonate de calcium                              | N’importe lequel                                                                                                    |
-| Talc                                              | N’importe lequel                                                                                                    |
+| Talc                                              | N’importe quelle qualité sans amiante ; vérifiez sa FDS (voir « Préparation en sécurité et ventilation »)           |
 | Une fritte boratée, pour la moyenne température   | Ferro 3134, 3124 ou 3195 ; au Royaume-Uni, Potterycrafts P3124 ou P3195                                             |
 | Bentonite et colorants                            | En petites quantités                                                                                                |
 
@@ -211,7 +211,7 @@ Le **sel d’Epsom** (sulfate de magnésium) fait légèrement gélifier un éma
 
 La **gomme CMC** (carboxyméthylcellulose) rend un bain plus collant et plus lent à sécher, et laisse une couche plus dure qui adhère à la pièce. Elle compte surtout pour les émaux au pinceau et les émaux riches en fritte{{en: frit}}. L’exemple de Digitalfire en incorpore 3,75 g dans 1000 g de bain, et elle doit être ajoutée au mixeur. Un émail contenant de la CMC ne gélifie pas avec le sel d’Epsom, et comme les microbes se nourrissent de la gomme, il peut changer dans le seau et se mettre à sentir mauvais.
 
-La **bentonite**, une argile très fine, aide à maintenir les autres particules en suspension. Les émaux pour le trempé comptent en général pour cela sur 15 à 25 % d’argile crue. Pour une recette pauvre en argile, environ 1 à 2 % de bentonite aide.
+La **bentonite**, une argile très fine, aide à maintenir les autres particules en suspension. Les émaux pour le trempé comptent en général pour cela sur 15 à 25 % d’argile crue. Pour une recette pauvre en argile, environ 1 à 3 % de bentonite aide ; selon Digitalfire, un émail contenant plus de 15 % d’argile ne devrait pas en demander plus de 1 %.
 
 ## Tessons d’essai et essais en ligne {#testing}
 
@@ -284,6 +284,7 @@ Label: Modèle de fiche
 - [Digitalfire : Epsom salts](https://digitalfire.com/material/epsom+salts)
 - [Digitalfire : CMC gum](https://digitalfire.com/material/cmc%2Bgum)
 - [Digitalfire : Dipping glaze](https://digitalfire.com/glossary/dipping+glaze)
+- [Digitalfire : Bentonite](https://digitalfire.com/material/bentonite)
 - [Digitalfire : Water solubility](https://digitalfire.com/glossary/water+solubility)
 - [Digitalfire : Gerstley Borate](https://digitalfire.com/material/gerstley+borate)
 - [Digitalfire : Mahavir potash feldspar](https://digitalfire.com/material/mahavir+potash+feldspar)

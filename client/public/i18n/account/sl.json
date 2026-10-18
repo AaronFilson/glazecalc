@@ -81,6 +81,7 @@
     "createAccount": "Ustvari račun",
     "title": "Vaš račun",
     "signedInAs": "Prijavljeni ste kot {email}.",
+    "contents": "Na tej strani",
     "changeHeading": "Sprememba gesla",
     "current": "Trenutno geslo",
     "currentMissing": "Vnesite trenutno geslo.",
@@ -106,7 +107,7 @@
     "emailSend": "Pošlji povezavo",
     "emailFailed": "Napaka: povezave ni bilo mogoče poslati. Poskusite znova.",
     "signOutHeading": "Odjava na vseh napravah",
-    "signOutText": "Odjavi vas na vseh napravah, tudi na tej. Uporabite to možnost, če ste izgubili napravo ali menite, da ima nekdo drug vaše podatke za prijavo.",
+    "signOutText": "Odjavi vas na vseh napravah, tudi na tej, ter ustavi vaše dostopne žetone in povezave za deljenje. Uporabite to, če ste izgubili napravo ali mislite, da ima nekdo drug vaše podatke za prijavo.",
     "signOutButton": "Odjavi se povsod",
     "signOutFailed": "Napaka: odjava ni uspela. Poskusite znova.",
     "confirmStep": "Dvostopenjska prijava je vklopljena, zato potrdite, da ste to vi: z geslom in drugim korakom."
@@ -118,6 +119,8 @@
     "on": "Dvostopenjska prijava je vklopljena.",
     "onText": "Prijavite se z geslom in drugim korakom ali samo s ključem za dostop.",
     "off": "Dvostopenjska prijava je izklopljena.",
+    "badgeOn": "Vklopljeno",
+    "badgeOff": "Izklopljeno",
     "offText": "Če jo želite vklopiti, nastavite aplikacijo za preverjanje pristnosti ali dodajte ključ za dostop.",
     "confirmEmailFirst": "Najprej zgoraj potrdite svoj e-poštni naslov. Z njim vas obvestimo o spremembah načina prijave in vam pomagamo, če izgubite drugi korak.",
     "appHeading": "Aplikacija za preverjanje pristnosti",
@@ -141,6 +144,7 @@
     "nameCheck": "Ključu za dostop dajte ime z 1 do {most} znaki.",
     "passkeyLimit": "Imate {most} ključev za dostop, kar je največ, kolikor jih račun lahko ima. Če želite dodati novega, enega odstranite.",
     "codesTitle": "Obnovitvene kode",
+    "codesLeft": "{count, plural, one {Ostaja # od {total} obnovitvenih kod.} two {Ostajata # od {total} obnovitvenih kod.} few {Ostajajo # od {total} obnovitvenih kod.} other {Ostaja # od {total} obnovitvenih kod.}} Če ne morete uporabiti aplikacije ali ključa za dostop, vas namesto njiju prijavi koda. Vsaka koda deluje samo enkrat.",
     "codesLow": "Kmalu ustvarite nove kode. Če jih zmanjka in izgubite aplikacijo ter ključe za dostop, se ne boste mogli prijaviti.",
     "newCodes": "Ustvari nove obnovitvene kode",
     "offHeading": "Izklop",
@@ -149,6 +153,8 @@
     "offCodes": "Vaše obnovitvene kode prenehajo delovati.",
     "offSignOut": "Vse druge naprave, prijavljene v vaš račun, se odjavijo. Ta ostane prijavljena.",
     "offEmail": "Po e-pošti vam sporočimo, da je bila izklopljena.",
+    "offRemoveApp": "Izklopi dvostopenjsko prijavo (odstrani aplikacijo)",
+    "offRemoveAppFirst": "Odstrani aplikacijo za začetek izklopa",
     "offPasskeys": "{count, plural, one {Če jo želite izklopiti, odstranite svoj ključ za dostop v razdelku Ključi za dostop zgoraj.} two {Če jo želite izklopiti, odstranite svoja # ključa za dostop v razdelku Ključi za dostop zgoraj.} few {Če jo želite izklopiti, odstranite svoje # ključe za dostop v razdelku Ključi za dostop zgoraj.} other {Če jo želite izklopiti, odstranite svojih # ključev za dostop v razdelku Ključi za dostop zgoraj.}}",
     "offPasskeysToo": "{count, plural, one {Imate tudi ključ za dostop: odstranite ga v razdelku Ključi za dostop zgoraj, tako kot aplikacijo.} two {Imate tudi # ključa za dostop: odstranite ju v razdelku Ključi za dostop zgoraj, tako kot aplikacijo.} few {Imate tudi # ključe za dostop: odstranite jih v razdelku Ključi za dostop zgoraj, tako kot aplikacijo.} other {Imate tudi # ključev za dostop: odstranite jih v razdelku Ključi za dostop zgoraj, tako kot aplikacijo.}}",
     "addAppText": "Če želite nastaviti aplikacijo za preverjanje pristnosti, najprej potrdite, da ste to vi.",
@@ -201,6 +207,25 @@
     "recipes": "Recepti (CSV)",
     "materials": "Surovine (CSV)"
   },
+  "trash": {
+    "heading": "Koš",
+    "text": "Vse, kar odstranite iz svoje beležnice, čaka v košu 30 dni. Od tam to vrnite nazaj ali pa dokončno izbrišite.",
+    "open": "Odpri koš"
+  },
+  "shared": {
+    "heading": "Deljeni recepti",
+    "text": "Recepti, ki jih delite s povezavo in jih lahko prebere vsak, ki ima povezavo, brez računa. Povezava se prikaže samo enkrat, ko je ustvarjena, zato je tu ni mogoče pokazati. Če želite recept znova deliti, ustvarite novo povezavo v meniju »Več« pri receptu.",
+    "since": "Deljeno od: {date}",
+    "notesShown": "Opombe so prikazane",
+    "notesHidden": "Opombe niso prikazane",
+    "untitled": "Recept brez naslova",
+    "stop": "Prenehaj deliti",
+    "stopName": "Prenehaj deliti {name}",
+    "stopped": "Deljenje za {name} je prenehalo. Njegova povezava ne deluje več.",
+    "stopFailed": "To ni uspelo. Poskusite znova.",
+    "fetchFailed": "Vaših deljenih receptov ni bilo mogoče naložiti. Poskusite znova.",
+    "none": "Nobenega recepta ne delite."
+  },
   "settings": {
     "heading": "Nastavitve",
     "intro": "Shranjene so v vašem računu, zato veljajo na vseh napravah.",
@@ -227,6 +252,22 @@
       },
       "saved": "Shranjeno: številke in datumi kot v jeziku {language}.",
       "help": "Kako se zapisujejo številke in datumi: 12,345.6 ali 12.345,6 ter vrstni red dneva in meseca."
+    },
+    "calendar": {
+      "legend": "Koledar",
+      "help": "Koledar, v katerem so prikazani datumi. Datumi, ki jih vnesete, ostanejo v gregorijanskem koledarju.",
+      "gregory": {
+        "label": "Gregorijanski",
+        "saved": "Shranjeno: datumi so prikazani v gregorijanskem koledarju."
+      },
+      "buddhist": {
+        "label": "Tajsko budistično štetje",
+        "saved": "Shranjeno: datumi so prikazani v tajskem budističnem štetju."
+      },
+      "japanese": {
+        "label": "Japonska obdobja",
+        "saved": "Shranjeno: datumi so prikazani po japonskih obdobjih."
+      }
     },
     "decimalMark": {
       "legend": "Vnos količin",
@@ -265,7 +306,7 @@
         "saved": "Shranjeno: žganje po Ortonovih stožcih."
       },
       "sk": {
-        "label": "Po stožcih SK (JIS R 8101)",
+        "label": "Po stožcih SK, JIS R 8101",
         "example": "SK 4a, SK 8",
         "saved": "Shranjeno: žganje po stožcih SK."
       },
@@ -291,6 +332,12 @@
         "saved": "Shranjeno: gostota glazure kot masa pinte."
       },
       "help": "Kako vodniki navajajo gostoto glazure. Dokler ne izberete, to sledi vaši regiji: stopinje Baumé v Italiji in na Japonskem, drugod relativna gostota."
+    },
+    "currency": {
+      "legend": "Valuta za cene",
+      "help": "Cene, ki jih vnesete za surovine, in cena mešanice so v tej valuti. Sprememba valute ne pretvori cen, ki ste jih že vnesli. Dokler ne izberete, to sledi vaši regiji.",
+      "saved": "Shranjeno: cene v valuti {currency}.",
+      "notConverted": "Shranjene cene niso bile pretvorjene: še vedno so številke, ki ste jih vnesli."
     },
     "theme": {
       "legend": "Svetlo ali temno",
@@ -386,5 +433,72 @@
     "account": "Vaš račun",
     "signIn": "Prijavi se",
     "failed": "Napaka: naslova ni bilo mogoče potrditi. Poskusite znova."
+  },
+  "providers": {
+    "continueGoogle": "Nadaljuj z Googlom",
+    "continueGithub": "Nadaljuj z GitHubom",
+    "failed": "Prijava ni uspela. Poskusite znova.",
+    "heading": "Google in GitHub",
+    "intro": "Povežite račun Google ali GitHub, da se boste lahko prijavljali z njim. Glazecalc od njega shrani samo ID računa, nikoli imena, slike ali česar koli drugega, dvostopenjska prijava pa še vedno zahteva svoj drugi korak.",
+    "passwordless": "Ta račun nima gesla. Če želite spremeniti e-poštni naslov, dvostopenjsko prijavo ali načine prijave ali izbrisati račun, potrdite, da ste to vi, tako da se znova prijavite z Googlom ali GitHubom. Nastavite lahko tudi geslo.",
+    "setPassword": "Pošlji mi povezavo za nastavitev gesla",
+    "setPasswordUnlinks": "Če geslo nastavite s povezavo iz e-pošte, se prekine tudi povezava z Googlom in GitHubom. Povežete ju lahko znova.",
+    "setPasswordFailed": "Povezave ni bilo mogoče poslati. Poskusite znova.",
+    "confirmFirst": "Če želite povezati Google ali GitHub, najprej potrdite e-poštni naslov s povezavo, ki smo vam jo poslali.",
+    "linkedOn": "Povezano: {date}",
+    "notLinked": "Ni povezano",
+    "link": "Poveži {provider}",
+    "unlink": "Prekini povezavo: {provider}",
+    "linkFailed": "Povezava ni uspela. Poskusite znova.",
+    "reauthIntro": "Ta račun nima gesla, zato potrdite, da ste to vi, tako da se znova prijavite. Nato naredite spremembo v 5 minutah.",
+    "reauthButton": "Prijavi se znova prek storitve {provider}",
+    "reauthHeld": "Znova ste se prijavili prek storitve {provider}. V naslednjih 5 minutah lahko brez gesla naredite eno spremembo.",
+    "reauthFirst": "Najprej se znova prijavite z enim od zgornjih gumbov.",
+    "reauthFailed": "Ponovne prijave ni bilo mogoče začeti. Poskusite znova."
+  },
+  "tokens": {
+    "heading": "Dostopni žetoni",
+    "intro": "Dostopni žeton omogoča vašemu pomočniku z umetno inteligenco ali skriptu, da bere recepte, surovine, zapiske in dnevnike žganja v vašem računu. Za zdaj lahko žeton samo bere: nikoli ničesar ne spremeni ali odstrani. Vsak žeton preneha delovati na dan, ki ga izberete, ali takoj, ko ga prekličete.",
+    "howTo": "Kako povezati pomočnika z umetno inteligenco",
+    "listLabel": "Vaši dostopni žetoni",
+    "none": "Nimate dostopnih žetonov.",
+    "hint": "konča se na {hint}",
+    "readOnly": "Samo branje",
+    "created": "ustvarjen: {date}",
+    "lastUsed": "nazadnje uporabljen: {date}",
+    "neverUsed": "še nikoli uporabljen",
+    "expires": "poteče: {date}",
+    "expiredOn": "potekel: {date}",
+    "revokedOn": "preklican: {date}",
+    "revoke": "Prekliči",
+    "revokeNamed": "Prekliči {name}",
+    "revokeAll": "Prekliči vse dostopne žetone",
+    "revokeFailed": "Napaka: žetona ni bilo mogoče preklicati. Poskusite znova.",
+    "loadFailed": "Dostopnih žetonov ni bilo mogoče naložiti. Znova naložite stran in poskusite znova.",
+    "createHeading": "Ustvarjanje žetona",
+    "name": "Ime",
+    "nameHint": "Nekaj, po čemer ga boste prepoznali, na primer pomočnik ali računalnik, za katerega je namenjen.",
+    "nameCheck": "Žetonu dajte ime z 1 do {most} znaki.",
+    "expiry": "Preneha delovati po",
+    "days": "{count, plural, one {# dan} two {# dneva} few {# dnevi} other {# dni}}",
+    "expiryHint": "7 dni preden žeton preneha delovati, vam pošljemo e-pošto.",
+    "confirmEmailFirst": "Preden lahko ustvarite žeton, potrdite e-poštni naslov: odprite povezavo, ki smo jo poslali na {email}. Na ta naslov vas obvestimo, ko je žeton ustvarjen in preden preneha delovati.",
+    "resend": "Znova pošlji potrditveno povezavo",
+    "scopeNote": "Žeton lahko bere vaše zapise, ne more pa jih spreminjati.",
+    "confirmStep": "Za ustvarjanje žetona potrdite, da ste to vi.",
+    "create": "Ustvari žeton",
+    "failed": "Napaka: žetona ni bilo mogoče ustvariti. Poskusite znova.",
+    "limit": "Delujočih dostopnih žetonov imate {most}, kar je največ, kolikor jih račun lahko ima. Enega prekličite, da lahko ustvarite novega.",
+    "newHeading": "Kopirajte novi žeton zdaj",
+    "newText": "To je edini trenutek, ko je prikazan. Vsak, ki ga ima, lahko bere vaše zapise, dokler žeton ne preneha delovati, zato ga hranite kot geslo in ga dajte samo svojemu pomočniku ali skriptu.",
+    "newLabel": "Vaš novi dostopni žeton",
+    "copy": "Kopiraj žeton",
+    "copied": "Kopirano.",
+    "copyFailed": "Kopiranje ni uspelo. Izberite žeton in ga kopirajte sami.",
+    "done": "Žeton je kopiran",
+    "keptHeading": "Vaši dostopni žetoni še delujejo",
+    "keptText": "{count, plural, one {Sprememba gesla ni ustavila vašega dostopnega žetona. Če ste geslo spremenili, ker bi ga lahko poznal še kdo drug, prekličite tudi žeton.} two {Sprememba gesla ni ustavila vaših # dostopnih žetonov. Če ste geslo spremenili, ker bi ga lahko poznal še kdo drug, prekličite tudi njiju.} few {Sprememba gesla ni ustavila vaših # dostopnih žetonov. Če ste geslo spremenili, ker bi ga lahko poznal še kdo drug, prekličite tudi njih.} other {Sprememba gesla ni ustavila vaših # dostopnih žetonov. Če ste geslo spremenili, ker bi ga lahko poznal še kdo drug, prekličite tudi njih.}}",
+    "keep": "Obdrži",
+    "signOutNote": "{count, plural, one {Dokončno ustavi tudi vaš dostopni žeton.} two {Dokončno ustavi tudi vaša # dostopna žetona.} few {Dokončno ustavi tudi vaše # dostopne žetone.} other {Dokončno ustavi tudi vaših # dostopnih žetonov.}}"
   }
 }

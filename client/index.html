@@ -6,7 +6,7 @@
     <title>Glazecalc: a free glaze chemistry calculator for potters</title>
     <meta
       name="description"
-      content="Enter a glaze recipe and see its unity molecular formula (UMF), silica to alumina ratio and flux balance. Free and open source; keep recipes, materials, notes and firing logs in one place."
+      content="Enter a glaze recipe and see its unity formula (UMF), silica to alumina ratio and flux balance. Free and open source, for recipes, materials and firing logs."
     />
     <base href="/" />
     <meta name="color-scheme" content="light dark" />
@@ -51,8 +51,9 @@
         }
         try {
           const chosen = localStorage.getItem('language');
-          const offered = 'bg cs da de el es et fi fr ga hr hu it lt lv mt nl pl pt-PT ro sk sl sv ja tr'.split(' ');
-          const prefixes = offered.concat('ar zh-Hant ko zh-Hans en-XA ar-XB ja-XC'.split(' '));
+          // prettier-ignore
+          const offered = 'bg cs da de el es et fi fr ga hr hu it lt lv mt nl pl pt-PT ro sk sl sv ja tr zh-Hant ko zh-Hans id vi th'.split(' ');
+          const prefixes = offered.concat('ar en-XA ar-XB ja-XC'.split(' '));
           const { pathname, search, hash } = location;
           if (
             offered.includes(chosen) &&
@@ -78,13 +79,16 @@
     <meta property="og:title" content="Glazecalc: a free glaze chemistry calculator for potters" />
     <meta
       property="og:description"
-      content="See any glaze recipe's unity molecular formula, and keep your recipes, materials and firing logs together."
+      content="Enter a glaze recipe and see its unity formula (UMF), silica to alumina ratio and flux balance. Free and open source, for recipes, materials and firing logs."
     />
     <meta property="og:url" content="https://glazecalcapp.com/" />
     <meta property="og:image" content="https://glazecalcapp.com/og-image.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Glazecalc: understand your glazes, not just mix them." />
+    <meta
+      property="og:image:alt"
+      content="The Glazecalc home page: free glaze chemistry for potters, beside a photo of fired cone packs."
+    />
     <meta name="twitter:card" content="summary_large_image" />
   </head>
   <body>

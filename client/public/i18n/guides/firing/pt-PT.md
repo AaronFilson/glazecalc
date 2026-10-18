@@ -34,13 +34,14 @@ Um **patamar**{{en: hold}} (em inglês também _soak_) mantém o forno a uma tem
 Table: O que vale um patamar à temperatura máxima
 Label: Patamares e trabalho térmico
 
-| Patamar             | Aproximadamente o mesmo trabalho térmico que                             |
-| ------------------- | ------------------------------------------------------------------------ |
-| Cerca de 20 minutos | Uma temperatura máxima {{18 °F; 10 °C}} mais alta                        |
-| 40–60 minutos       | Uma temperatura máxima {{36 °F; 20 °C}} mais alta                        |
-| Cerca de 2 horas    | Uma temperatura máxima {{54 °F; 30 °C}} mais alta                        |
-| 1–2 horas           | «pode ser suficiente para deformar o cone de número imediatamente acima» |
-| 4–6 horas           | O suficiente para dobrar um cone dois números mais quente                |
+| Patamar             | Aproximadamente o mesmo trabalho térmico que              |
+| ------------------- | --------------------------------------------------------- |
+| Cerca de 20 minutos | Uma temperatura máxima {{18 °F; 10 °C}} mais alta         |
+| 40–60 minutos       | Uma temperatura máxima {{36 °F; 20 °C}} mais alta         |
+| Cerca de 2 horas    | Uma temperatura máxima {{54 °F; 30 °C}} mais alta         |
+| 4–6 horas           | O suficiente para dobrar um cone dois números mais quente |
+
+A Orton acrescenta que um patamar de 1–2 horas «pode ser suficiente para deformar o cone de número imediatamente acima».
 
 Por isso, um patamar nunca sai de graça: se acrescentar um, conte com que os cones dobrem mais e baixe a temperatura máxima em conformidade.
 
@@ -198,11 +199,11 @@ Muitos kiln sitters, incluindo os modelos LT da Dawson, têm um **temporizador d
 Table: Para quanto tempo regular o temporizador de segurança
 Label: Regulação do temporizador
 
-| Fonte     | Regulação                                                                                                                            |
-| --------- | ------------------------------------------------------------------------------------------------------------------------------------ |
-| Dawson    | ½ hora a mais do que o tempo de cozedura previsto enquanto não conhecer o forno, mais tarde apenas ¼ de hora; nunca mais de 20 horas |
-| L&L       | Muito alto da primeira vez, anotando quanto tempo demora a cozedura; depois, cerca de 1 hora a mais                                  |
-| Bracker's | 30 minutos a 1 hora a mais do que o tempo de cozedura                                                                                |
+| Fonte     | Regulação                                                                                                                                                 |
+| --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Dawson    | ½ hora a mais do que o tempo de cozedura previsto enquanto não conhecer o forno, mais tarde apenas ¼ de hora a mais; nunca o regule para além de 20 horas |
+| L&L       | Muito alto da primeira vez, anotando quanto tempo demora a cozedura; depois, cerca de 1 hora a mais                                                       |
+| Bracker's | 30 minutos a 1 hora a mais do que o tempo de cozedura                                                                                                     |
 
 > [!NOTE]
 > O nosso ponto de partida: generoso da primeira vez (dentro das 20 horas do mostrador), depois ½ a 1 hora a mais do que o tempo que registou. O temporizador também indica quanto tempo durou uma cozedura: regulado para 7 e parado em 1 quer dizer 6 horas.
@@ -375,7 +376,7 @@ A cozedura de **chacota**{{en: bisque}} (em inglês britânico, _biscuit_) é a 
 
 ### Porque é que a fase inicial é lenta
 
-A água ao passar a vapor «expande-se 1170 vezes», nota a Bracker's, por isso as peças húmidas têm de secar devagar. A L&L e a Orton aconselham que «Deve ter-se especial cuidado abaixo de 1500°F (815°C) para aquecer a pasta{{en: body}} por igual», e que o carbono seja queimado antes de cerca de {{1200 °F; 650 °C}}. Acima de {{1500 °F; 816 °C}}, o forno pode subir mais depressa.
+A água expande-se mais de mil vezes ao passar a vapor, por isso as peças húmidas têm de secar devagar. A L&L e a Orton aconselham que «Deve ter-se especial cuidado abaixo de 1500°F (815°C) para aquecer a pasta{{en: body}} por igual», e que o carbono seja queimado antes de cerca de {{1200 °F; 650 °C}}. Acima de {{1500 °F; 816 °C}}, o forno pode subir mais depressa.
 
 Table: O que acontece quando uma chacota aquece
 Label: O que acontece numa chacota
@@ -599,18 +600,18 @@ Um **pirómetro** é um medidor de temperatura que lê um **termopar**, uma sond
 
 ### Ventilação
 
-No início de uma cozedura, o barro e o vidrado{{en: glaze}} libertam vapor de água e fumos, incluindo monóxido de carbono, e os vidrados podem libertar fumos tóxicos também mais tarde na cozedura. A L&L considera a sua evacuação «essencial». Sem sistema de exaustão, isso quer dizer a tampa entreaberta e os óculos abertos nas primeiras fases, como nos procedimentos acima; abrandar o aquecimento durante esse tempo também ajuda a queimar o carbono. Com um **exaustor por baixo do forno** (downdraft: um exaustor com motor, montado no próprio forno), a Orton diz que a tampa e os óculos ficam fechados durante toda a cozedura, exceto para verificar os cones. Um óculo de cima aberto também protege o tubo do kiln sitter e as partes metálicas do forno.
+No início de uma cozedura, a argila e o vidrado{{en: glaze}} libertam vapor de água e fumos, incluindo monóxido de carbono, e os vidrados também podem libertar fumos tóxicos mais tarde na cozedura. A L&L diz que ventilá-los é «essencial». Sem sistema de exaustão, isso significa ter a tampa entreaberta e os óculos de observação abertos nas fases iniciais, como nos procedimentos acima; abrandar o aquecimento durante este período também ajuda a queimar o carbono. Num forno sem exaustão, a Dawson, que fabricou o sitter, diz também para deixar aberto o óculo de cima durante toda a cozedura: a ventilação «reduzirá a deterioração das peças metálicas do forno e aumentará a vida útil do conjunto do tubo». Um **exaustor por baixo do forno (downdraft)**{{en: downdraft vent}} (um exaustor motorizado montado no forno) muda isto. Faz a ventilação, pelo que a Orton diz que a tampa e os óculos ficam fechados durante toda a cozedura, exceto para verificar os cones, e a L&L diz para deixar o exaustor ligado e tapar os óculos.
 
 Para a ventilação da sala e para os detetores de monóxido de carbono, veja [Mistura segura e ventilação](/guides/safe-mixing) e [Não envenene a sua família](/guides/home-safety).
 
-### Enquanto o forno coze
+### Enquanto o forno está a cozer
 
-- Espreite por um óculo apenas com óculos de soldadura de escala 3 com proteção IV; os óculos de sol não bastam. A Skutt aconselha a encaixar os tampões rodando-os, para que não caiam.
-- Não deixe o forno sem vigilância para além do tempo de cozedura previsto; um kiln sitter não é um dispositivo à prova de falhas.
-- Nunca faça cozeduras sobre ou perto de algo que arda, como um soalho de madeira ou uma alcatifa.
-- Respeite as distâncias de segurança do seu manual. Os valores publicados vão de 12 polegadas (30 cm) a 3 pés (91 cm); se o manual não disser nada, 18 polegadas (46 cm) das paredes e 3 pés (91 cm) de tudo o que arda é a escolha mais segura.
-- Mantenha livre o espaço à volta do peso do kiln sitter, para que possa cair.
-- Quando a cozedura terminar, desligue os reguladores e desligue também o disjuntor.
+- Espreite por um óculo apenas com óculos de soldadura com proteção IV e escala 3; os óculos de sol não bastam. A Skutt aconselha a rodar os tampões ao colocá-los para que não caiam.
+- Não deixe o forno sem vigilância além do tempo de cozedura previsto; um sitter não é à prova de falhas.
+- Nunca coza sobre ou perto de nada que arda, como um soalho de madeira ou uma alcatifa.
+- Respeite as distâncias de segurança do seu manual. Os valores publicados vão de 12 polegadas (30 cm) a 3 pés (91 cm); onde o manual é omisso, 18 polegadas (46 cm) das paredes e 3 pés (91 cm) de qualquer coisa que arda é a escolha mais segura.
+- Mantenha livre o espaço à volta do peso do sitter para que possa cair.
+- Quando a cozedura terminar, desligue os interruptores e desligue também o disjuntor.
 
 ## Arrefecimento e desenforna {#cooling}
 

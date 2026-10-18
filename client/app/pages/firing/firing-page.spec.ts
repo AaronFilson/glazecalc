@@ -1,5 +1,5 @@
 import { TestBed } from '@angular/core/testing';
-import { Firing } from '../../core/models';
+import { Firing, Recipe } from '../../core/models';
 import {
   answer,
   API,
@@ -21,9 +21,10 @@ describe('FiringPage', () => {
   });
   afterEach(() => httpMock().verify());
 
-  const create = async (stored: Firing[] = []) => {
+  const create = async (stored: Firing[] = [], recipes: Recipe[] = []) => {
     const fixture = TestBed.createComponent(FiringPage);
     await fixture.whenStable();
+    answer('/recipe/getAll', recipes);
     answer('/firing/getAll', stored);
     await settle(fixture);
     return { fixture, page: fixture.componentInstance as unknown as Record<string, any> };
@@ -72,6 +73,28 @@ describe('FiringPage', () => {
     await fixture.whenStable();
     expect(text(fixture, '.firing-table tr')).toContain('ConeTime');
     expect(page['log']().rows).toEqual([['', '1:00']]);
+  });
+
+  it('offers only the fields not added yet, moving on to the next after each', async () => {
+    const { fixture, page } = await create();
+    const offered = () =>
+      [...(fixture.nativeElement.querySelector('#fieldselect') as HTMLSelectElement).options].map((o) => o.value);
+    expect(offered()[0]).toBe('Time');
+    expect(page['selectedField']()).toBe('Time');
+    page['addField']();
+    await fixture.whenStable();
+    expect(offered()).not.toContain('Time');
+    expect(page['selectedField']()).toBe('Gas');
+    // Chosen elsewhere, it is kept while it is still offered.
+    page['selectedField'].set('Cone');
+    page['addField']();
+    page['addField']();
+    await fixture.whenStable();
+    expect(page['log']().fields).toEqual(['Time', 'Cone', 'Gas']);
+    // Removed, a field is offered again.
+    page['removeField'](0);
+    await fixture.whenStable();
+    expect(offered()).toContain('Time');
   });
 
   it('shows what is in each cell after a column moves or is removed', async () => {
@@ -160,6 +183,32 @@ describe('FiringPage', () => {
       .flush({});
     await removing;
     expect(page['myFirings']()).toEqual([]);
-    expect(page['notices'].messages()).toEqual(['Removed "Old".']);
+    expect(page['notices'].messages()).toEqual(['Moved "Old" to the Trash.']);
+  });
+
+  it('picks the recipes fired in a log, keeping the link on the recipe, and takes one off again', async () => {
+    const stored: Firing = { _id: 'f1', title: 'Glaze 14', fieldsIncluded: ['Cone'], rows: [['6']] };
+    const recipes: Recipe[] = [
+      { _id: 'r1', title: 'Clear', materials: [] },
+      { _id: 'r2', title: 'Celadon', materials: [], firings: [{ firing: 'f0', result: 'pale' }] }
+    ];
+    const { fixture } = await create([stored], recipes);
+    expect(text(fixture, '#fired-heading-f1')).toBe('Recipes fired in it');
+    expect(text(fixture, '.fired-recipes p')).toBe('No recipes linked yet.');
+    const pick = fixture.nativeElement.querySelector('#fired-pick-f1') as HTMLSelectElement;
+    pick.value = 'r2';
+    (fixture.nativeElement.querySelector('#fired-add-f1') as HTMLButtonElement).click();
+    // One link is added on the server, never the recipe's whole list, so the recipe page loses nothing.
+    const req = httpMock().expectOne({ method: 'POST', url: API + '/recipe/firings/r2' });
+    expect(req.request.body).toEqual({ firing: 'f1' });
+    req.flush({ firings: [{ firing: 'f0', result: 'pale' }, { firing: 'f9' }, { firing: 'f1' }] });
+    await settle(fixture);
+    expect(text(fixture, '.fired-list')).toContain('Celadon');
+    (fixture.nativeElement.querySelector('.fired-list button') as HTMLButtonElement).click();
+    const off = httpMock().expectOne({ method: 'DELETE', url: API + '/recipe/firings/r2/f1' });
+    off.flush({ firings: [{ firing: 'f0', result: 'pale' }, { firing: 'f9' }] });
+    await settle(fixture);
+    expect(fixture.nativeElement.querySelector('.fired-list')).toBeNull();
+    expect(skippedHeadings(fixture)).toEqual([]);
   });
 });

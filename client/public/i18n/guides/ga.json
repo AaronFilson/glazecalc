@@ -56,7 +56,8 @@
     "vet": "Glaoigh ar do thréidlia.",
     "checkedOn": "Seiceáilte:",
     "choosePrompt": "Roghnaigh do thír chun a fheiceáil cé air a nglaofar ansin.",
-    "ministry": "Leathanach na haireachta sláinte: <link>{name}</link>."
+    "ministry": "Leathanach na haireachta sláinte: <link>{name}</link>.",
+    "reported": "Liostaíonn leathanaigh oifigiúla an rialtais 113, 114 agus 115, ach ní deir siad cad chuige a bhfuil gach ceann acu; leanann na róil a thaispeántar Imlitir 22/2014/TT-BTTTT, mar a luaitear í ar leathanaigh thánaisteacha."
   },
   "density": {
     "sg": "sainmheáchan {value}",
@@ -91,6 +92,7 @@
     "caption": "An teorainnluach nochta ceirde do shilice chriostalta inanálaithe: {region}, meán thar 8 n-uaire an chloig (seiceáilte {date})",
     "captionControl": "An tslat tomhais do shilice chriostalta inanálaithe in aer limistéir oibre: {region} (seiceáilte {date})",
     "both": "Grianchloch agus críostabailít",
+    "freeSilica": "Silice shaor",
     "quartz": "Grianchloch",
     "cristobalite": "Críostabailít",
     "actionLevel": "Leibhéal gníomhaíochta",
@@ -102,6 +104,9 @@
     "quartzAll": "Grianchloch, do dheannach atá ina ghrianchloch ar fad",
     "cristobaliteAll": "Críostabailít, do dheannach atá ina chríostabailít ar fad",
     "allFree": "Tiúchan rialaithe do dheannach atá ina shaorshilice ar fad",
+    "bandFromTo": "Deannach ina bhfuil {from}% go {to}% saorshilice (SiO₂)",
+    "bandOverTo": "Deannach ina bhfuil níos mó ná {from}% agus suas le {to}% saorshilice",
+    "bandAbove": "Deannach ina bhfuil níos mó ná {from}% saorshilice",
     "recommended": "Molta ag {abbr}",
     "value": "{value} mg/m³",
     "kind": {
@@ -111,6 +116,7 @@
       "control": "Tiúchan rialaithe (管理濃度): an tslat tomhais chun aer limistéir oibre a mheas ó thomhais a dhéantar ann, ní teorainn leis an méid a análaíonn duine amháin."
     },
     "setBy": "Leagtha síos sa dlí seo: <link>{law}</link>.",
+    "from": "Baineann sé le {date} ar aghaidh.",
     "lowerThanEu": "Níos ísle ná teorainnluach ceangailteach an Aontais Eorpaigh, {value} mg/m³.",
     "sameAsEu": "Is ionann é agus teorainnluach ceangailteach an Aontais Eorpaigh.",
     "recommendedBy": "Molann {abbr} ({by}) an luach seo sa doiciméad <link>{title}</link>. Ní dlí é.",
@@ -147,16 +153,45 @@
       "jpSmall": "Píosaí eile faoi 1.1 L, nach le haghaidh cócaireachta",
       "jpLarge": "Píosaí eile ó 1.1 L go dtí faoi 3 L, nach le haghaidh cócaireachta",
       "jpStorage": "Píosaí eile de 3 L nó níos mó, nach le haghaidh cócaireachta",
-      "jpCooking": "Gréithe cócaireachta, 2.5 cm ar doimhneacht nó níos mó"
+      "jpCooking": "Gréithe cócaireachta, 2.5 cm ar doimhneacht nó níos mó",
+      "krFlat": "Píosaí nach féidir a líonadh, nó níos lú ná 2.5 cm ar doimhne",
+      "krSmall": "Píosaí eile is féidir a líonadh, faoi 1.1 L",
+      "krMedium": "Píosaí eile is féidir a líonadh, ó 1.1 L go dtí faoi 3 L",
+      "krStorage": "Píosaí eile is féidir a líonadh, 3 L nó níos mó",
+      "krCooking": "Gréithe cócaireachta, chun bia a théamh",
+      "twFlat": "Píosaí nach féidir a líonadh, nó nach bhfuil níos doimhne ná 2.5 cm",
+      "twSmall": "Píosaí níos doimhne ná 2.5 cm, suas go 1.1 L",
+      "twLarge": "Píosaí níos doimhne ná 2.5 cm, os cionn 1.1 L",
+      "myFlat": "Earraí cothroma",
+      "mySmall": "Earraí tolla beaga",
+      "myLarge": "Earraí tolla móra",
+      "myCooking": "Gréithe cócaireachta",
+      "idFlat": "Píosaí nach bhfuil níos doimhne ná 25 mm taobh istigh",
+      "idSmall": "Píosaí níos doimhne ná 25 mm taobh istigh, faoi 1100 mL",
+      "idLarge": "Píosaí níos doimhne ná 25 mm taobh istigh, 1100 mL nó níos mó",
+      "thFlat": "Píosaí nach bhfuil níos doimhne ná 25 mm",
+      "thSmall": "Píosaí níos doimhne ná 25 mm, faoi 1.1 L",
+      "thLarge": "Píosaí níos doimhne ná 25 mm, 1.1 L nó níos mó",
+      "thInfant": "Coimeádáin do bhia naíonán suas le 12 mhí d’aois",
+      "thCooking": "Gréithe cócaireachta, a dhéantar chun teas cócaireachta a sheasamh",
+      "vnFlat": "Píosaí éadoimhne chun bia a choinneáil nó a chócaráil",
+      "vnSmall": "Píosaí doimhne chun bia a choinneáil, faoi bhun 1100 mL",
+      "vnMedium": "Píosaí doimhne chun bia a choinneáil, ó 1100 mL go dtí faoi bhun 3000 mL",
+      "vnStorage": "Píosaí doimhne chun bia a choinneáil, 3000 mL nó níos mó",
+      "vnCooking": "Píosaí doimhne chun bia a chócaráil",
+      "vnCups": "Cupáin agus babhlaí beaga"
     },
     "judged": {
       "average": "meán 6 phíosa",
-      "each": "aon cheann de 6"
+      "each": "aon cheann de 6",
+      "averageOf": "meán {count} phíosa",
+      "eachOf": "aon cheann amháin de na {count}"
     },
     "euRules": "Tá feidhm ag rialacha an Aontais Eorpaigh anseo.",
     "law": "Leagtha síos sa dlí seo: <link>{law}</link>.",
     "inForce": "I bhfeidhm ó {date}.",
     "atMost": "Éiríonn le píosa sa tástáil mura scaoileann sé níos mó ná an teorainn: deir an dlí “ar a mhéad”.",
+    "ppm": "Ciallaíonn ppm anseo milleagraim in aghaidh an lítir den tuaslagán tástála (mg/L).",
     "unknown": "Níor dheimhníomar na rialacha fós sa tír seo: {region}.",
     "choosePrompt": "Roghnaigh do thír chun a rialacha a fheiceáil."
   },

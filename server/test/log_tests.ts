@@ -55,6 +55,15 @@ describe('the server log', () => {
     expect(log.codeOf(null)).to.eql('unknown');
   });
 
+  it("writes a provider callback's address without its code and state", () => {
+    expect(log.pathForLog('/api/auth/google/callback?code=4%2F0Ab&state=xyz')).to.eql('/api/auth/google/callback');
+    expect(log.pathForLog('/API/Auth/github/Callback/?code=abc')).to.eql('/API/Auth/github/Callback/');
+    expect(log.pathForLog('/api/auth/github/callback')).to.eql('/api/auth/github/callback');
+    // Other addresses as they are.
+    expect(log.pathForLog('/api/recipe/list?page=2')).to.eql('/api/recipe/list?page=2');
+    expect(log.pathForLog('/api/auth/google/start?next=/de/recipe')).to.eql('/api/auth/google/start?next=/de/recipe');
+  });
+
   it('writes plain text elsewhere', () => {
     process.env.NODE_ENV = 'development';
     log.warn('APP_SECRET is not set');

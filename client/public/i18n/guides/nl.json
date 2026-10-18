@@ -56,7 +56,8 @@
     "vet": "Bel uw dierenarts.",
     "checkedOn": "Gecontroleerd aan de hand van:",
     "choosePrompt": "Kies uw land om te zien wie u daar kunt bellen.",
-    "ministry": "De pagina van het ministerie van Volksgezondheid: <link>{name}</link>."
+    "ministry": "De pagina van het ministerie van Volksgezondheid: <link>{name}</link>.",
+    "reported": "Officiële overheidspagina’s noemen 113, 114 en 115, maar niet waarvoor elk nummer dient; de getoonde functies volgen Circulaire 22/2014/TT-BTTTT, zoals secundaire pagina’s die weergeven."
   },
   "density": {
     "sg": "soortelijk gewicht {value}",
@@ -91,6 +92,7 @@
     "caption": "De grenswaarde op de werkplek voor respirabel kristallijn silica, als gemiddelde over 8 uur: {region} (gecontroleerd op {date})",
     "captionControl": "De maatstaf voor respirabel kristallijn silica in de lucht van een werkruimte: {region} (gecontroleerd op {date})",
     "both": "Kwarts en cristobaliet",
+    "freeSilica": "Vrij silica",
     "quartz": "Kwarts",
     "cristobalite": "Cristobaliet",
     "actionLevel": "Actieniveau",
@@ -102,6 +104,9 @@
     "quartzAll": "Kwarts, voor stof dat volledig uit kwarts bestaat",
     "cristobaliteAll": "Cristobaliet, voor stof dat volledig uit cristobaliet bestaat",
     "allFree": "Beheersconcentratie voor stof dat volledig uit vrij silica bestaat",
+    "bandFromTo": "Stof met {from}% tot {to}% vrij silica (SiO₂)",
+    "bandOverTo": "Stof met meer dan {from}% en tot {to}% vrij silica",
+    "bandAbove": "Stof met meer dan {from}% vrij silica",
     "recommended": "Aanbevolen door {abbr}",
     "value": "{value} mg/m³",
     "kind": {
@@ -111,6 +116,7 @@
       "control": "Een beheersconcentratie (管理濃度): de maatstaf om de lucht van een werkruimte te beoordelen aan de hand van metingen daar, geen grens voor wat één persoon inademt."
     },
     "setBy": "Vastgelegd in <link>{law}</link>.",
+    "from": "Het geldt vanaf {date}.",
     "lowerThanEu": "Lager dan de bindende EU-grenswaarde van {value} mg/m³.",
     "sameAsEu": "Gelijk aan de bindende EU-grenswaarde.",
     "recommendedBy": "{abbr} ({by}) beveelt deze waarde aan in <link>{title}</link>. Het is geen wet.",
@@ -147,16 +153,45 @@
       "jpSmall": "Overige voorwerpen van minder dan 1,1 L, niet om in te koken",
       "jpLarge": "Overige voorwerpen van 1,1 L tot minder dan 3 L, niet om in te koken",
       "jpStorage": "Overige voorwerpen van 3 L of meer, niet om in te koken",
-      "jpCooking": "Kookgerei, 2,5 cm diep of meer"
+      "jpCooking": "Kookgerei, 2,5 cm diep of meer",
+      "krFlat": "Voorwerpen die niet gevuld kunnen worden, of minder dan 2,5 cm diep",
+      "krSmall": "Andere vulbare voorwerpen, onder 1,1 L",
+      "krMedium": "Andere vulbare voorwerpen, van 1,1 L tot onder 3 L",
+      "krStorage": "Andere vulbare voorwerpen, van 3 L of meer",
+      "krCooking": "Kookgerei, om voedsel te verhitten",
+      "twFlat": "Voorwerpen die niet gevuld kunnen worden, of ten hoogste 2,5 cm diep",
+      "twSmall": "Voorwerpen van meer dan 2,5 cm diep, tot 1,1 L",
+      "twLarge": "Voorwerpen van meer dan 2,5 cm diep, boven 1,1 L",
+      "myFlat": "Platte voorwerpen",
+      "mySmall": "Kleine holle voorwerpen",
+      "myLarge": "Grote holle voorwerpen",
+      "myCooking": "Kookgerei",
+      "idFlat": "Voorwerpen die aan de binnenkant niet dieper zijn dan 25 mm",
+      "idSmall": "Voorwerpen die aan de binnenkant dieper zijn dan 25 mm, minder dan 1100 mL",
+      "idLarge": "Voorwerpen die aan de binnenkant dieper zijn dan 25 mm, 1100 mL of meer",
+      "thFlat": "Voorwerpen die niet dieper zijn dan 25 mm",
+      "thSmall": "Voorwerpen die dieper zijn dan 25 mm, minder dan 1,1 L",
+      "thLarge": "Voorwerpen die dieper zijn dan 25 mm, 1,1 L of meer",
+      "thInfant": "Bakjes voor het eten van baby’s tot 12 maanden oud",
+      "thCooking": "Kookgerei, gemaakt om de hitte van het koken te doorstaan",
+      "vnFlat": "Ondiepe voorwerpen om eten in te bewaren of te bereiden",
+      "vnSmall": "Diepe voorwerpen om eten in te bewaren, minder dan 1100 mL",
+      "vnMedium": "Diepe voorwerpen om eten in te bewaren, van 1100 mL tot minder dan 3000 mL",
+      "vnStorage": "Diepe voorwerpen om eten in te bewaren, 3000 mL of meer",
+      "vnCooking": "Diepe voorwerpen om in te koken",
+      "vnCups": "Kopjes en kleine kommen"
     },
     "judged": {
       "average": "gemiddelde van 6 stuks",
-      "each": "elk van de 6 afzonderlijk"
+      "each": "elk van de 6 afzonderlijk",
+      "averageOf": "gemiddelde van {count} stuks",
+      "eachOf": "elk van de {count} afzonderlijk"
     },
     "euRules": "Hier gelden de regels van de EU.",
     "law": "Vastgelegd in <link>{law}</link>.",
     "inForce": "Van kracht vanaf {date}.",
     "atMost": "Een voorwerp voldoet als het niet meer afgeeft dan de grenswaarde: de wet zegt “ten hoogste”.",
+    "ppm": "ppm betekent hier milligram per liter van de proefoplossing (mg/L).",
     "unknown": "{region}: we hebben de regels daar nog niet bevestigd.",
     "choosePrompt": "Kies uw land om de regels daar te zien."
   },

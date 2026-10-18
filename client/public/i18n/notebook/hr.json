@@ -4,10 +4,26 @@
     "signedInAs": "Prijavljeni ste kao {email}.",
     "trying": "Aplikaciju Glazecalc isprobavate kao {name}. Počnite s receptom.",
     "welcomeBack": "Nastavite ondje gdje ste stali.",
+    "welcome": {
+      "heading": "Dobro došli u Glazecalc",
+      "text": "Vaša bilježnica je spremna. Dobar prvi korak: unesite glazuru koju već miješate, s njezinim sirovinama i količinama, i pogledajte njezinu Segerovu formulu.",
+      "firstRecipe": "Započni prvi recept",
+      "confirmHeading": "Potvrdite adresu e-pošte",
+      "confirm": "Potvrdite adresu e-pošte: poslali smo poveznicu na {email}. Dvostupanjska prijava to zahtijeva. Na <account>stranici računa</account> možete je poslati ponovno.",
+      "confirmText": "Poslali smo poveznicu na {email}. Otvorite je kako biste potvrdili da je adresa vaša: dvostupanjska prijava to zahtijeva. Na <account>stranici računa</account> možete je poslati ponovno."
+    },
     "sections": {
       "recipe": {
         "title": "Recepti",
         "text": "Sastavite glazuru od sirovina i količina, pogledajte njezinu Segerovu formulu (UMF) i spremite je."
+      },
+      "import": {
+        "title": "Zalijepi recepte",
+        "text": "Zalijepite recepte s web-stranice, iz proračunske tablice ili bilježaka, provjerite što je pročitano i spremite ih."
+      },
+      "blends": {
+        "title": "Mješavine za probne pločice",
+        "text": "Pomiješajte dva, tri ili četiri svoja recepta u numerirane probne pločice, s količinama za vaganje za svaku."
       },
       "material": {
         "title": "Sirovine",
@@ -32,6 +48,14 @@
       "guides": {
         "title": "Vodiči",
         "text": "Od toga što je glazura do njezina pečenja, uz brigu da svi pritom ostanu sigurni."
+      },
+      "trash": {
+        "title": "Koš za smeće",
+        "text": "Vratite ono što ste uklonili u posljednjih 30 dana."
+      },
+      "account": {
+        "title": "Račun i postavke",
+        "text": "Postavke, vaša lozinka, dvostupanjska prijava i preuzimanje svega što ovdje čuvate."
       }
     },
     "newHere": "Prvi put se susrećete sa Segerovom formulom<en>unity formula</en>? <advice>Stranica sa savjetima</advice> objašnjava osnove, a <about>stranica o aplikaciji</about> opisuje kako radi Glazecalc."
@@ -39,27 +63,54 @@
   "firing": {
     "title": "Zapisnici pečenja",
     "lead": "Zabilježite svako pečenje: vremena, temperature, stošce i napomene o peći.",
+    "newHeading": "Novo pečenje",
+    "titleLabel": "Naslov",
+    "kiln": "Peć",
+    "date": "Datum",
+    "notes": "Napomene",
+    "fieldSelect": "Polja za bilježenje",
     "addField": "Dodaj polje",
+    "included": "Polja u ovom zapisniku",
     "moveLeft": "Pomakni polje ulijevo",
     "moveRight": "Pomakni polje udesno",
     "removeField": "Ukloni polje",
     "addRow": "Dodaj redak u tablicu pečenja",
+    "addRowWhy": "Najprije dodajte polje.",
+    "tableEmpty": "Dodajte polje iznad, a zatim retke.",
+    "recordHeading": "Zabilježi pečenje",
     "rowActions": "Radnje s retkom",
     "cell": "{field}, redak {row}",
     "removeRow": "Ukloni redak",
     "save": "Spremi",
+    "storedHeading": "Moja spremljena pečenja",
+    "noneSaved": "Zasad nema nijednog. Spremljena pečenja pojavljuju se ovdje.",
+    "storedIn": "Pečeno u peći {kiln} dana {date}.",
+    "storedOn": "Pečeno dana {date}.",
     "storedNotes": "Napomene: {notes}",
     "titleMissing": "Unesite naziv pečenja.",
     "fieldsMissing": "Dodajte barem jedno polje za bilježenje, na primjer {example}.",
     "chooseField": "Odaberite polje koje želite dodati, a zatim kliknite gumb Dodaj polje.",
     "fetchFailed": "Došlo je do pogreške pri dohvaćanju podataka o zapisnicima pečenja.",
     "saved": "Zapisnik pečenja uspješno je dodan na poslužitelj.",
-    "saveFailed": "Pogreška: zahtjev poslužitelju nije uspio."
+    "saveFailed": "Pogreška: zahtjev poslužitelju nije uspio.",
+    "recipesHeading": "Recepti pečeni u njemu",
+    "noRecipes": "Još nema povezanih recepata.",
+    "recipesFailed": "Ne možemo dohvatiti vaše recepte, pa trenutačno nije moguće povezati nijedan.",
+    "pickRecipe": "Recept pečen u njemu",
+    "linkRecipe": "Poveži recept",
+    "unlink": "Prekini vezu",
+    "unlinkRecipe": "Prekini vezu: {title}",
+    "linkFailed": "Ne možemo spremiti vezu."
   },
   "notes": {
     "title": "Bilješke",
     "lead": "Sve ostalo što vrijedi zapamtiti o vašim glazurama.",
+    "newHeading": "Nova bilješka",
+    "titleLabel": "Naslov",
+    "content": "Bilješka",
     "save": "Spremi",
+    "mineHeading": "Moje spremljene bilješke",
+    "noneSaved": "Zasad nema nijedne. Spremljene bilješke pojavljuju se ovdje.",
     "titleMissing": "Unesite naslov bilješke.",
     "contentMissing": "Napišite bilješku.",
     "untitled": "Bilješka bez naslova",
@@ -69,6 +120,34 @@
   },
   "trash": {
     "title": "Koš za smeće",
-    "comingSoon": "Koš za smeće stiže uskoro, u sljedećoj verziji aplikacije Glazecalc. Do tada pažljivo brišite i uklanjajte: kad nešto nestane, podaci su izgubljeni."
+    "lead": "Ono što uklonite (recepte, sirovine, dodatke, bilješke, zapisnike pečenja i savjete) čeka ovdje 30 dana. Vratite to ili izbrišite zauvijek.",
+    "listHeading": "U Košu za smeće",
+    "none": "Koš za smeće je prazan.",
+    "untitled": "Bez naslova",
+    "kinds": {
+      "recipes": "Recept",
+      "materials": "Sirovina",
+      "additives": "Dodatak",
+      "notes": "Bilješka",
+      "firing": "Zapisnik pečenja",
+      "advice": "Savjet",
+      "other": "Zapis"
+    },
+    "removedOn": "Uklonjeno {date}",
+    "goesOn": "Zauvijek se briše {date}",
+    "byApp": "Uklonila povezana aplikacija",
+    "putBack": "Vrati",
+    "putBackName": "Vrati: {name}",
+    "restored": "Vraćeno na svoje mjesto: „{name}”.",
+    "restoredAlready": "Već je vraćeno: „{name}”.",
+    "restoreFailed": "Ne možemo vratiti „{name}”. Pokušajte ponovno.",
+    "deleted": "Zauvijek izbrisano: „{name}”.",
+    "empty": "Isprazni Koš za smeće",
+    "emptyQuestion": "{count, plural, one {Želite li zauvijek izbrisati # zapis iz Koša za smeće?} few {Želite li zauvijek izbrisati sva # zapisa iz Koša za smeće?} other {Želite li zauvijek izbrisati svih # zapisa iz Koša za smeće?}} To se ne može poništiti.",
+    "emptyYes": "Da, isprazni",
+    "emptying": "Pražnjenje…",
+    "emptied": "Koš za smeće je prazan.",
+    "emptyFailed": "Ne možemo isprazniti Koš za smeće. Pokušajte ponovno.",
+    "fetchFailed": "Ne možemo učitati Koš za smeće. Pokušajte ponovno."
   }
 }

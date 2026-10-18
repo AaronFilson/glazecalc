@@ -34,13 +34,14 @@ Dobavljači u Ujedinjenom Kraljevstvu, Europi, Australiji i na Novom Zelandu če
 Table: Koliko vrijedi zadržavanje na završnoj temperaturi
 Label: Zadržavanje i toplinski učinak
 
-| Zadržavanje    | Približno isti toplinski učinak kao                       |
-| -------------- | --------------------------------------------------------- |
-| Oko 20 minuta  | Završna temperatura viša za {{18 °F; 10 °C}}              |
-| 40 – 60 minuta | Završna temperatura viša za {{36 °F; 20 °C}}              |
-| Oko 2 sata     | Završna temperatura viša za {{54 °F; 30 °C}}              |
-| 1 – 2 sata     | „može biti dovoljno da deformira sljedeći topliji stožac” |
-| 4 – 6 sati     | Dovoljno da se savije stožac za dva broja topliji         |
+| Zadržavanje    | Približno isti toplinski učinak kao               |
+| -------------- | ------------------------------------------------- |
+| Oko 20 minuta  | Završna temperatura viša za {{18 °F; 10 °C}}      |
+| 40 – 60 minuta | Završna temperatura viša za {{36 °F; 20 °C}}      |
+| Oko 2 sata     | Završna temperatura viša za {{54 °F; 30 °C}}      |
+| 4 – 6 sati     | Dovoljno da se savije stožac za dva broja topliji |
+
+Orton dodaje da zadržavanje od 1 – 2 sata „može biti dovoljno da deformira sljedeći topliji stožac”.
 
 Zadržavanje dakle nikad nije besplatno: ako ga dodate, očekujte da će se stošci jače saviti i u skladu s tim snizite završnu temperaturu.
 
@@ -198,11 +199,11 @@ Mnogi Kiln-Sitteri, uključujući Dawsonove modele LT, imaju **vremenski isklju�
 Table: Na koliko postaviti vremenski isključivač
 Label: Postavke vremenskog isključivača
 
-| Izvor     | Postavka                                                                                                            |
-| --------- | ------------------------------------------------------------------------------------------------------------------- |
-| Dawson    | ½ sata dulje od očekivanog trajanja pečenja dok ne upoznate peć, poslije i samo ¼ sata dulje; nikad više od 20 sati |
-| L&L       | Prvi put na vrlo dugo vrijeme, uz bilježenje koliko pečenje traje; nakon toga oko 1 sat dulje                       |
-| Bracker's | 30 minuta do 1 sat dulje od trajanja pečenja                                                                        |
+| Izvor     | Postavka                                                                                                                                |
+| --------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| Dawson    | ½ sata dulje od očekivanog trajanja pečenja dok ne upoznate peć, poslije samo ¼ sata dulje; nikad ga ne postavljajte na više od 20 sati |
+| L&L       | Prvi put na vrlo dugo vrijeme, uz bilježenje koliko pečenje traje; nakon toga oko 1 sat dulje                                           |
+| Bracker's | 30 minuta do 1 sat dulje od trajanja pečenja                                                                                            |
 
 > [!NOTE]
 > Naše polazište: prvi put s velikom zalihom vremena (unutar 20 sati koliko ima brojčanik), a zatim ½ do 1 sat dulje od vremena koje ste zabilježili. Vremenski isključivač pokazuje i koliko je pečenje trajalo: ako je postavljen na 7, a stao na 1, pečenje je trajalo 6 sati.
@@ -224,7 +225,7 @@ Label: Problemi s Kiln-Sitterom
 Za provjeru podešenosti Dawson koristi **mjernu šablonu** koja drži šipku ondje gdje bi je ostavio potpuno savijen stožac; tada bi kod kandže trebao biti „zazor od 1/16 inča” (oko 1,6 mm). Provjeravajte to svakih 30 pečenja. Pravilo časopisa Ceramics Monthly: ako se peć isključuje prerano, okidačku pločicu malo pomaknite prema gore; ako prekasno, malo prema dolje. Što god Kiln-Sitter radio, „uvijek vjerujte velikim kontrolnim stošcima{{en: witness cones}} više nego malim stošcima iz Kiln-Sittera”.
 
 > [!WARNING]
-> **Kiln-Sitter nije sigurnosni uređaj.** Dawsonove upute kažu da on „NIJE namijenjen da služi kao pouzdana sigurnosna sklopka za isključivanje i vašu peć NE bi trebalo ostavljati bez nadzora dulje od procijenjenog vremena pečenja”. Nešto tako jednostavno kao nepečeni predmet{{en: greenware}} koji padne na cjevčicu „moglo bi uzrokovati prepečenje”. Budite uz peć da je provjerite kad bi pečenje trebalo završavati i nikad ne pecite na zapaljivoj podlozi ni blizu zapaljivih stvari, poput drvenog poda ili tepiha.
+> **Kiln-Sitter nije sigurnosni uređaj.** Dawsonove upute kažu da on „NIJE namijenjen da služi kao uređaj za isključivanje siguran u slučaju kvara i vašu peć NE bi trebalo ostavljati bez nadzora dulje od procijenjenog vremena pečenja”. Nešto tako jednostavno kao nepečeni predmet{{en: greenware}} koji padne na cjevčicu „moglo bi uzrokovati prepečenje”. Budite uz peć da je provjerite kad bi pečenje trebalo završavati i nikad ne pecite na zapaljivoj podlozi ni blizu zapaljivih stvari, poput drvenog poda ili tepiha.
 
 Kiln-Sitter je napravljen za pečenja „sve do stošca 8 uključivo”. Ne može sam držati temperaturu ni polako hladiti peć. No uz vježbu i zapisnik možete „postati regulator”, kako kaže Digitalfire: pratite stošce i okrećite sklopke rukom.
 
@@ -375,7 +376,7 @@ Ortonovi samostojeći stošci prodaju se u Japanu pod imenom 立つゼーゲル 
 
 ### Zašto prvi dio ide polako
 
-Voda koja prelazi u paru „širi se 1170 puta”, napominje Bracker's, pa se vlažni predmeti moraju sušiti polako. L&L i Orton savjetuju da „ispod 1500°F (815°C) trebalo bi posebno paziti da se keramička masa{{en: clay body}} ravnomjerno zagrijava” te da ugljik mora izgorjeti prije otprilike {{1200 °F; 650 °C}}. Iznad {{1500 °F; 816 °C}} peć se može brže zagrijavati.
+Voda se pri pretvaranju u paru širi više od tisuću puta, pa se vlažni predmeti moraju sušiti polako. L&L i Orton savjetuju da „ispod 1500°F (815°C) trebalo bi posebno paziti da se keramička masa{{en: clay body}} ravnomjerno zagrijava” te da ugljik mora izgorjeti prije otprilike {{1200 °F; 650 °C}}. Iznad {{1500 °F; 816 °C}} peć se može brže zagrijavati.
 
 Table: Što se događa dok se biskvit zagrijava
 Label: Što se događa pri biskvitnom pečenju
@@ -599,14 +600,14 @@ Ako Kiln-Sitter isključi peć prije nego što stošci na ploči polegnu, sljede
 
 ### Odzračivanje
 
-Na početku pečenja glina i glazura{{en: glaze}} ispuštaju vodenu paru i plinove, uključujući ugljikov monoksid, a glazure mogu i kasnije tijekom pečenja ispuštati otrovne plinove i pare. L&L kaže da je njihovo odzračivanje „nužno”. Bez sustava za odsis to znači odškrinut poklopac i otvorene kontrolne otvore u ranim fazama, kao u gore navedenim postupcima; usporavanje zagrijavanja u tom razdoblju također pomaže da ugljik izgori. S **donjim odsisom** (odsisom s ventilatorom ugrađenim na peć) poklopac i kontrolni otvori, kaže Orton, ostaju zatvoreni tijekom cijelog pečenja, osim kad provjeravate stošce{{en: cones}}. Otvoren gornji kontrolni otvor štiti i cjevčicu Kiln-Sittera i metalne dijelove peći.
+Na početku pečenja glina i glazura{{en: glaze}} ispuštaju vodenu paru i plinove, uključujući ugljikov monoksid, a glazure mogu i kasnije tijekom pečenja ispuštati otrovne plinove i pare. L&L kaže da je njihovo odzračivanje „nužno”. Bez sustava za odsis to znači odškrinut poklopac i otvorene kontrolne otvore u ranim fazama, kao u gore navedenim postupcima; usporavanje zagrijavanja u tom razdoblju također pomaže da ugljik izgori. U peći bez odsisa Dawson, koji je izradio Kiln-Sitter, također kaže da gornji kontrolni otvor treba ostati otvoren tijekom cijelog pečenja: odzračivanje „smanjit će propadanje metalnih dijelova peći i produljiti vijek trajanja cijevnog sklopa”. **Donji odsis** (odsis s ventilatorom ugrađenim na peć) to mijenja. On obavlja odzračivanje, pa Orton kaže da poklopac i kontrolni otvori ostaju zatvoreni tijekom cijelog pečenja, osim kad provjeravate stošce{{en: cones}}, a L&L kaže da odsis treba ostati uključen, a kontrolni otvori začepljeni.
 
 Za ventilaciju prostorije i detektore ugljikova monoksida pogledajte vodiče [Sigurno miješanje i ventilacija](/guides/safe-mixing) i [Ne otrujte svoju obitelj](/guides/home-safety).
 
 ### Dok peć peče
 
 - Kroz kontrolni otvor gledajte samo kroz naočale za zavarivanje s IC zaštitom i stupnjem zatamnjenja 3; sunčane naočale nisu dovoljne. Skutt savjetuje da čepove na mjesto umetnete uvrtanjem kako ne bi ispali.
-- Ne ostavljajte peć bez nadzora dulje od očekivanog trajanja pečenja; Kiln-Sitter nije pouzdana sigurnosna zaštita.
+- Ne ostavljajte peć bez nadzora dulje od očekivanog trajanja pečenja; Kiln-Sitter nije uređaj koji jamči sigurno isključivanje.
 - Nikad ne pecite na zapaljivoj podlozi ni blizu zapaljivih stvari, poput drvenog poda ili tepiha.
 - Poštujte sigurnosne razmake iz uputa za peć. Objavljene vrijednosti kreću se od 12 inča (30 cm) do 3 stope (91 cm); ako upute o tome ništa ne kažu, najsigurniji je izbor 18 inča (46 cm) od zidova i 3 stope (91 cm) od svega zapaljivog.
 - Prostor oko utega Kiln-Sittera neka bude slobodan kako bi uteg mogao pasti.

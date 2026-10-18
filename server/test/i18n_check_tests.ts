@@ -1,3 +1,4 @@
+import { execFileSync } from 'node:child_process';
 import { mkdtempSync, mkdirSync, rmSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import path from 'node:path';
@@ -12,6 +13,7 @@ import {
   numbersIn
 } from '../../scripts/i18n-check.mjs';
 import { updateTranslations } from '../../scripts/i18n-fingerprints.mjs';
+import { uncommittedTranslations } from '../../scripts/i18n-sources.mjs';
 import { expect } from './support/app.ts';
 
 // The checks CI runs on the app's messages (scripts/i18n-check.mjs): what a
@@ -431,5 +433,51 @@ describe('message checks', () => {
         'app: nav.old has English but is not used'
       ]);
     });
+  });
+});
+
+// npm run i18n:sources takes out translations made from older English, so it
+// will not run over translations not yet committed (scripts/i18n-sources.mjs).
+describe('i18n:sources and uncommitted translations', () => {
+  let repo: string;
+  const git = (...args: string[]) => execFileSync('git', args, { cwd: repo, stdio: 'ignore' });
+  const put = (file: string, text: string) => {
+    mkdirSync(path.dirname(path.join(repo, file)), { recursive: true });
+    writeFileSync(path.join(repo, file), text);
+  };
+  beforeEach(() => {
+    repo = mkdtempSync(path.join(tmpdir(), 'glazecalc-sources-'));
+    git('init', '-q');
+    put('client/public/i18n/site/en.json', '{}\n');
+    put('client/public/i18n/site/de.json', '{}\n');
+    put('client/public/i18n/guides/firing/de.md', '# Brennen\n');
+    git('add', '-A');
+    git('-c', 'user.name=t', '-c', 'user.email=t@example.invalid', 'commit', '-q', '-m', 'start');
+  });
+  afterEach(() => rmSync(repo, { recursive: true, force: true }));
+
+  it('names changed and new translations, and not changed English', () => {
+    const paths = ['client/public/i18n', 'client/i18n-fingerprints'];
+    expect(uncommittedTranslations(paths, repo)).to.eql([]);
+    put('client/public/i18n/site/en.json', '{"a": "A"}\n');
+    put('client/public/i18n/guides/firing/en.md', '# Firing\n');
+    expect(uncommittedTranslations(paths, repo)).to.eql([]);
+    put('client/public/i18n/site/de.json', '{"a": "Ä"}\n');
+    put('client/public/i18n/site/fr.json', '{}\n');
+    put('client/i18n-fingerprints/de.json', '{}\n');
+    expect(uncommittedTranslations(paths, repo)?.sort()).to.eql([
+      'client/i18n-fingerprints/de.json',
+      'client/public/i18n/site/de.json',
+      'client/public/i18n/site/fr.json'
+    ]);
+  });
+
+  it('cannot say outside a repository', () => {
+    const outside = mkdtempSync(path.join(tmpdir(), 'glazecalc-no-git-'));
+    try {
+      expect(uncommittedTranslations(['.'], path.join(outside, 'missing'))).to.equal(null);
+    } finally {
+      rmSync(outside, { recursive: true, force: true });
+    }
   });
 });

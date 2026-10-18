@@ -14,6 +14,7 @@ import { Notices, NoticesList } from '../../shared/notices';
 import { PageHeader } from '../../shared/page-header';
 import { Removal, RemoveButton } from '../../shared/remove-button';
 import { standardText } from '../../shared/library-info';
+import { STANDARD_ADVICE } from './standard-advice';
 
 @Component({
   selector: 'gc-advice-page',
@@ -28,14 +29,13 @@ import { standardText } from '../../shared/library-info';
       </p>
     }
 
-    <!-- Holds the window's height until the list arrives, so nothing below jumps when it does. -->
-    <section class="tech-info" [class.loading]="!standardLoaded()">
+    <section class="tech-info">
       <h2>{{ t('site.advice.generalHeading') }}</h2>
       <ul class="general-advice">
-        @for (adv of standardAdvice(); track adv._id) {
+        @for (adv of standardAdvice; track adv._id) {
           <li>
-            <h3>{{ standardText(adv, adv.title) }}</h3>
-            <p>{{ standardText(adv, adv.content) }}</p>
+            <h3>{{ standardText(adv, adv.title, 'advice') }}</h3>
+            <p>{{ standardText(adv, adv.content, 'advice') }}</p>
             <div class="small muted">{{ t('site.advice.tags', { list: tagsText(adv) }) }}</div>
           </li>
         }
@@ -104,9 +104,6 @@ import { standardText } from '../../shared/library-info';
     }
   </ng-container>`,
   styles: `
-    .loading {
-      min-height: 100vh;
-    }
     .general-advice,
     .my-advice {
       list-style: none;
@@ -147,27 +144,18 @@ export class AdvicePage implements OnInit {
     content: required(this.content, translate('site.advice.contentMissing'))
   }));
   protected readonly myAdvice = signal<Advice[]>([]);
-  protected readonly standardAdvice = signal<Advice[]>([]);
-  protected readonly standardLoaded = signal(false);
+  /** The same on every page and in every render (standard-advice.ts). */
+  protected readonly standardAdvice = STANDARD_ADVICE;
   protected readonly removal = new Removal(this.advice, this.myAdvice, this.notices, (adv) => adv.title);
 
   ngOnInit(): void {
-    // The list comes from the API, which a render has no way to reach; the browser fetches it after hydration.
-    if (!this.browser) return;
-    // The general advice is public; a visitor who is not signed in has none of their own.
-    if (this.auth.hasSession()) {
-      this.advice.getAll().then(
-        (list) => this.myAdvice.set(list),
-        () => this.notices.error(translate('site.advice.fetchFailed'))
-      );
-    }
-    this.advice
-      .getStandard()
-      .then(
-        (list) => this.standardAdvice.set(list),
-        () => this.notices.error(translate('site.advice.standardFetchFailed'))
-      )
-      .finally(() => this.standardLoaded.set(true));
+    // A reader's own advice comes from the API, which a render has no way to reach; the browser fetches it
+    // after hydration. The general advice is in the page already; a visitor who is not signed in has none.
+    if (!this.browser || !this.auth.hasSession()) return;
+    this.advice.getAll().then(
+      (list) => this.myAdvice.set(list),
+      () => this.notices.error(translate('site.advice.fetchFailed'))
+    );
   }
 
   protected save(): Promise<void> {
@@ -197,7 +185,7 @@ export class AdvicePage implements OnInit {
   protected tagsText(adv: Advice): string {
     const tags = Array.isArray(adv.tags) ? adv.tags : [adv.tags];
     return listOf(
-      tags.map((tag) => standardText(adv, tag)),
+      tags.map((tag) => standardText(adv, tag, 'advice')),
       'unit'
     );
   }

@@ -1,5 +1,5 @@
-import { APP_BASE_HREF, DOCUMENT } from '@angular/common';
-import { EnvironmentProviders, Provider, inject, isDevMode, provideAppInitializer } from '@angular/core';
+import { APP_BASE_HREF, DOCUMENT, isPlatformBrowser } from '@angular/common';
+import { EnvironmentProviders, PLATFORM_ID, Provider, inject, isDevMode, provideAppInitializer } from '@angular/core';
 import { Meta } from '@angular/platform-browser';
 import { ResolveFn, TitleStrategy } from '@angular/router';
 import {
@@ -62,6 +62,7 @@ export function provideI18n(language?: string): Array<Provider | EnvironmentProv
       const language = inject(PAGE_LANGUAGE);
       const document = inject(DOCUMENT);
       const meta = inject(Meta);
+      const inBrowser = isPlatformBrowser(inject(PLATFORM_ID));
       transloco.setActiveLang(language);
       const root = document.documentElement;
       root.lang = language;
@@ -71,14 +72,17 @@ export function provideI18n(language?: string): Array<Provider | EnvironmentProv
         language === 'en' ? [] : ['server', 'chemistry'].map((scope) => transloco.load(`${scope}/${language}`));
       return firstValueFrom(forkJoin([transloco.load(language), ...coded])).then(() => {
         useCodedMessages(transloco);
-        // The description search results show, and a link preview's text, as the server writes them too
-        // (server/lib/pages.ts).
-        const description = translate('meta.description');
+        // The description search results show, and a link preview's text, as the render writes them (and the
+        // server, server/lib/pages.ts). In the browser the page already has its own: the site's would replace
+        // a prerendered page's until its route sets it again.
         const set = (selector: string, content: string) => {
           if (meta.getTag(selector)) meta.updateTag({ content }, selector);
         };
-        set('name="description"', description);
-        set('property="og:description"', description);
+        if (!inBrowser) {
+          const description = translate('meta.description');
+          set('name="description"', description);
+          set('property="og:description"', description);
+        }
         set('property="og:image:alt"', translate('meta.imageAlt'));
       });
     })
@@ -90,7 +94,7 @@ export function provideI18n(language?: string): Array<Provider | EnvironmentProv
  * records, who to call): an English page shows the data as it is, so these
  * load only for other languages.
  */
-const TRANSLATIONS_OF_DATA = ['records', 'safety', 'regions'];
+const TRANSLATIONS_OF_DATA = ['records', 'safety', 'regions', 'advice'];
 
 const scopeName = (scope: TranslocoScope): string => (typeof scope === 'string' ? scope : (scope?.scope ?? ''));
 

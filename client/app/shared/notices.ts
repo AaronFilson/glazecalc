@@ -1,14 +1,23 @@
 import { Component, input, signal } from '@angular/core';
 import { TranslocoDirective, translate } from '@jsverse/transloco';
 
+/** A button beside a message, such as Undo. Pressing it takes the message away. */
+export interface NoticeAction {
+  label: string;
+  run: () => unknown;
+}
+
 /**
  * Error and success messages for one page. A message can name a topic, such as
  * 'save': a new message on a topic replaces the one before it, so repeated
- * saves show the latest outcome without clearing anything else.
+ * saves show the latest outcome without clearing anything else. A message can
+ * carry an action (Undo), shown as a button beside it.
  */
 export class Notices {
   readonly errors = signal<string[]>([]);
   readonly messages = signal<string[]>([]);
+  /** The action of each message that has one, by its text. */
+  readonly actions = signal<ReadonlyMap<string, NoticeAction>>(new Map());
   private readonly latest = new Map<string, string>();
   /** The warnings shown now, which the next calculation's replace. */
   private shownWarnings: string[] = [];
@@ -25,13 +34,27 @@ export class Notices {
     this.shownWarnings = next;
   }
 
-  success(text: string, topic?: string): void {
+  success(text: string, topic?: string, action?: NoticeAction): void {
     const previous = topic === undefined ? undefined : this.latest.get(topic);
     this.messages.update((list) => {
       const at = previous === undefined ? -1 : list.indexOf(previous);
       return [...list.filter((_, i) => i !== at), text];
     });
     if (topic !== undefined) this.latest.set(topic, text);
+    this.actions.update((actions) => {
+      const next = new Map(actions);
+      if (previous !== undefined) next.delete(previous);
+      if (action) next.set(text, action);
+      else next.delete(text);
+      return next;
+    });
+  }
+
+  /** Takes the message away and does what its button says. */
+  act(index: number): void {
+    const action = this.actions().get(this.messages()[index] ?? '');
+    this.dismissMessage(index);
+    action?.run();
   }
 
   dismissError(index: number): void {
@@ -39,7 +62,15 @@ export class Notices {
   }
 
   dismissMessage(index: number): void {
+    const text = this.messages()[index];
     this.messages.update((list) => list.filter((_, i) => i !== index));
+    if (text !== undefined && this.actions().has(text) && !this.messages().includes(text)) {
+      this.actions.update((actions) => {
+        const next = new Map(actions);
+        next.delete(text);
+        return next;
+      });
+    }
   }
 }
 
@@ -70,6 +101,11 @@ export class Notices {
           @for (message of notices().messages(); track $index) {
             <li>
               {{ message }}
+              @if (notices().actions().get(message); as action) {
+                <button type="button" class="btn btn-outline-primary" (click)="notices().act($index)">
+                  {{ action.label }}
+                </button>
+              }
               <button type="button" class="btn btn-light border" (click)="notices().dismissMessage($index)">
                 {{ t('notices.dismiss') }}
               </button>

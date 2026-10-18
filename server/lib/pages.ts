@@ -4,7 +4,8 @@
 // (docs/adr/0013-translations.md): <html lang dir>, the canonical address,
 // the same page in each language offered (hreflang), the title, description
 // and preview text in the language with its og:locale, and noindex for a
-// language not offered yet. hreflang is the code in the address, script and
+// language not offered yet or a page with nothing to find in a search
+// (isAppOnlyPage). hreflang is the code in the address, script and
 // all (zh-Hans), which Google reads.
 import languages from '../../lib/regions/languages.js';
 import type { Language } from '../../lib/regions/languages.js';
@@ -14,28 +15,54 @@ import { labelShown } from './site.ts';
 export { PUBLIC_PAGES };
 
 /**
+ * Pages that anyone can open but no search engine may index, nor any Referer
+ * name: a recipe opened by its share link (docs/adr/0020-share-links.md).
+ * Never in the sitemap or prerendered; X-Robots-Tag and Referrer-Policy are
+ * set on the reply (server/app.ts), and pageHtml adds the same as <meta>.
+ */
+export const PRIVATE_PAGES = ['/shared'];
+
+/** Whether an address is one of PRIVATE_PAGES, in any language: /de/shared is. */
+export const isPrivatePage = (pathname: string): boolean => PRIVATE_PAGES.includes(languages.pagePath(pathname));
+
+/**
  * Every page of the app (client/app/app.routes.ts): the public ones, and those
  * for signing in and once signed in. Any other address is the app's
  * not-found page.
  */
 export const APP_PAGES = [
   ...PUBLIC_PAGES,
+  '/assistants',
   '/signin',
   '/forgot',
   '/reset',
   '/confirm-email',
   '/home',
   '/recipe',
+  '/import',
+  '/blends',
   '/material',
   '/additive',
   '/firing',
   '/notes',
   '/trash',
-  '/account'
+  '/account',
+  ...PRIVATE_PAGES
 ];
 
 /** Whether an address is one of the app's pages, in a language it knows: /de/recipe is, /xx/recipe is not. */
 export const isPage = (pathname: string): boolean => APP_PAGES.includes(languages.pagePath(pathname));
+
+/**
+ * Whether an address is a page of the app that is neither public nor private:
+ * signing in and the pages once signed in (/recipe, /de/account). Anyone may
+ * open them, but they hold nothing to find in a search and most send a visitor
+ * to sign in, so search engines are told not to index them (noindex, links
+ * still followed), with no canonical address or other languages. Never put
+ * them in robots.txt: a crawler kept out never reads the noindex.
+ */
+export const isAppOnlyPage = (pathname: string): boolean =>
+  isPage(pathname) && !PUBLIC_PAGES.includes(languages.pagePath(pathname)) && !isPrivatePage(pathname);
 
 /**
  * Whether an address looks like a file's (main-ABC12345.js): a dot in its last
@@ -139,7 +166,15 @@ export function pageHtml(
   const page = languages.pagePath(pathname);
   const here = addressIn(site, code, page);
   const head: string[] = [];
-  if (isPage(pathname)) {
+  // Only the public pages are offered to search engines (isAppOnlyPage).
+  const listed = isPage(pathname) && PUBLIC_PAGES.includes(page);
+  if (isAppOnlyPage(pathname)) head.push('<meta name="robots" content="noindex" />');
+  if (isPrivatePage(pathname)) {
+    // nginx sends its own Referrer-Policy after the app's, which a browser would follow; this <meta> comes last.
+    head.push('<meta name="robots" content="noindex, nofollow" />');
+    head.push('<meta name="referrer" content="no-referrer" />');
+  }
+  if (listed) {
     head.push(`<link rel="canonical" href="${attribute(here)}" />`);
     if (!live.includes(code)) {
       head.push('<meta name="robots" content="noindex" />');
@@ -151,7 +186,7 @@ export function pageHtml(
     }
   }
   // Link previews read these; og:locale:alternate lists the other languages offered.
-  if (isPage(pathname) && live.includes(code)) {
+  if (listed && live.includes(code)) {
     head.push(`<meta property="og:locale" content="${ogLocale(code)}" />`);
     for (const other of live.filter((l) => l !== code)) {
       head.push(`<meta property="og:locale:alternate" content="${ogLocale(other)}" />`);

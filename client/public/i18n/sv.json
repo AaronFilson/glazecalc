@@ -17,13 +17,17 @@
     "confirmEmail": "Bekräfta e-postadressen - Glazecalc",
     "home": "Verkstadens anteckningsbok - Glazecalc",
     "recipe": "Recept - Glazecalc",
+    "import": "Klistra in recept - Glazecalc",
+    "blends": "Blandningar för provbitar - Glazecalc",
     "material": "Råvaror - Glazecalc",
     "additive": "Tillsatser - Glazecalc",
     "firingLogs": "Brännloggar - Glazecalc",
     "notes": "Anteckningar - Glazecalc",
     "trash": "Papperskorgen - Glazecalc",
     "account": "Konto och inställningar - Glazecalc",
-    "notFound": "Sidan hittades inte - Glazecalc"
+    "notFound": "Sidan hittades inte - Glazecalc",
+    "shared": "Delat recept - Glazecalc",
+    "assistants": "Använd Glazecalc från en AI-assistent - Glazecalc"
   },
   "nav": {
     "skip": "Hoppa till innehållet",
@@ -39,7 +43,9 @@
     "guides": "Guider",
     "about": "Om",
     "account": "Konto",
+    "trialAccount": "Provperiod",
     "accountTitle": "Konto och inställningar",
+    "trash": "Papperskorgen",
     "signOut": "Logga ut",
     "createAccount": "Skapa ett gratis konto"
   },
@@ -66,7 +72,8 @@
     "problem": "Rapportera ett problem",
     "pottery": "Handgjord keramik: Updraft Pottery Studio",
     "copyright": "© 2017–2026 Aaron Filson / Candling Development Studio · Gratis och med öppen källkod (MIT-licens)",
-    "languages": "Språk"
+    "languages": "Språk",
+    "language": "Språk:"
   },
   "numbers": {
     "notANumber": "Ange ett tal, till exempel {example}.",
@@ -85,7 +92,7 @@
     "about": "Glazecalc är en gratis kalkylator och anteckningsbok för glasyrkemi, med öppen källkod. Se hur den räknar fram Segerformeln (UMF) och hur den är byggd.",
     "privacy": "Så hanterar Glazecalc dina uppgifter: inga annonser, ingen analys eller spårning, och inget säljs. Vad som sparas, varför och hur du använder dina rättigheter.",
     "signup": "Skapa ett gratis konto på Glazecalc och spara glasyrrecept, råvaror, anteckningar och brännloggar. Inga annonser, och uppgifterna säljs aldrig.",
-    "imageAlt": "Glazecalc: förstå glasyrerna, inte bara blanda dem."
+    "imageAlt": "Glazecalcs startsida: gratis glasyrkemi för keramiker, bredvid ett foto av brända kägelsatser."
   },
   "notices": {
     "dismiss": "Stäng",
@@ -93,11 +100,15 @@
     "error": "Fel: {text}"
   },
   "remove": {
-    "removed": "”{name}” har tagits bort.",
     "alreadyRemoved": "”{name}” hade redan tagits bort.",
+    "trashed": "”{name}” har flyttats till papperskorgen.",
+    "undo": "Ångra",
+    "restored": "”{name}” har lagts tillbaka.",
+    "restoreFailed": "”{name}” kunde inte läggas tillbaka. Den ligger kvar i papperskorgen.",
     "failed": "Det gick inte att ta bort. Försök igen.",
     "question": "Ta bort ”{name}”?",
     "cannotUndo": "Det går inte att ångra.",
+    "toTrash": "Den kan läggas tillbaka från papperskorgen i 30 dagar.",
     "removing": "Tar bort…",
     "yes": "Ja, ta bort",
     "cancel": "Avbryt",
@@ -222,20 +233,26 @@
     "soldIn": "Säljs i",
     "showing": "Visar {shown} av {noun, select, additives {{total, plural, one {# tillsats} other {# tillsatser}}} other {{total, plural, one {# råvara} other {# råvaror}}}}",
     "name": "Namn",
+    "equivalentWeight": "Ekvivalentvikt",
+    "firedWeight": "Vikt efter bränning",
     "notes": "Anteckningar",
     "analysis": "Analys",
+    "details": "Detaljer",
     "formula": "Formel",
+    "formulaLine": "Formel: {formula}",
     "useInstead": "<b>Använd i stället:</b> {list}",
     "similar": "Liknande: {list}",
     "replaces": "Ersätter: {list}",
     "aliases": "Kallas även: {list}",
     "madeBy": "Tillverkare: {name}",
     "source": "Källa:",
+    "hazardsLine": "Faror: {hazards}",
     "noChemistry": "Ingen analys: ingår inte i Segerformeln",
     "countedAs": "Räknas som {name}",
     "nothingMatches": "Inga träffar. Prova ett annat namn, en annan typ eller en annan region.",
     "loading": "Läser in…",
-    "notFetched": "Det gick inte att hämta listan. <retry>Försök igen</retry>"
+    "notFetched": "Det gick inte att hämta listan. <retry>Försök igen</retry>",
+    "showAll": "{noun, select, additives {{count, plural, one {Visa # tillsats} other {Visa alla # tillsatser}}} other {{count, plural, one {Visa # råvara} other {Visa alla # råvaror}}}}"
   },
   "chemistryForm": {
     "name": "{noun, select, additive {Ge tillsatsen ett namn.} other {Ge råvaran ett namn.}}",
@@ -268,7 +285,7 @@
     "close": "Stäng"
   },
   "unity": {
-    "fluxes": "Flussmedel – RO",
+    "fluxes": "Flussmedel – R₂O och RO",
     "stabilizers": "Stabilisatorer – R₂O₃",
     "glassFormers": "Glasbildare – RO₂",
     "wildcards": "Övriga oxider",

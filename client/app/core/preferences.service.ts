@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable, Signal, WritableSignal, computed, inject, signal } from '@angular/core';
 import { firstValueFrom } from 'rxjs';
-import { FORMAT_LOCALES, REGION_CODES } from '../../../lib/regions';
+import { CALENDARS, CURRENCIES, FORMAT_LOCALES, REGION_CODES } from '../../../lib/regions';
 import { LIVE_LANGUAGES } from '../../../lib/regions/languages';
 import { GramPrecision, WeightUnit } from '../shared/weights';
 import type { Palette, ThemeMode } from './theme';
@@ -34,6 +34,12 @@ export interface Preferences {
   notice: 'shown' | 'hidden';
   /** The recipe page's help: open for an account with no recipes yet ('auto'), or as chosen. */
   recipeHelp: 'auto' | 'shown' | 'hidden';
+  /** The limits the recipe page shows a glaze against (lib/recipe/limits.js LIMIT_SETS). */
+  limitSet: LimitSetChoice;
+  /** The one currency the account's prices are in (ISO 4217); '' follows the region (core/locale.service.ts). */
+  currency: string;
+  /** The calendar dates are shown in: the Gregorian, the Thai Buddhist era or Japan's eras (lib/regions CALENDARS). */
+  calendar: Calendar;
 }
 
 /** Whether materials with lead may be added to recipes and suggested: off unless chosen. */
@@ -45,6 +51,10 @@ export type TemperatureScale = 'C' | 'F';
 export type ConeSystem = 'orton' | 'temperature' | 'sk';
 /** Glaze density as specific gravity, degrees Baumé, or the ounces in an imperial pint. */
 export type Density = 'sg' | 'baume' | 'pint';
+/** Dates shown in the Gregorian calendar (the default), the Thai Buddhist era, or Japan's eras. */
+export type Calendar = (typeof CALENDARS)[number];
+/** Hesselberth & Roy's stable glaze limits (the default), or the app's own. */
+export type LimitSetChoice = 'hesselberth-roy' | 'glazecalc';
 
 /** The values each preference may take; the first is the default (as on the server, models/user.ts). */
 const CHOICES: { [K in keyof Preferences]: ReadonlyArray<Preferences[K]> } = {
@@ -62,7 +72,11 @@ const CHOICES: { [K in keyof Preferences]: ReadonlyArray<Preferences[K]> } = {
   density: ['', 'sg', 'baume', 'pint'],
   englishTerms: ['off', 'on'],
   notice: ['shown', 'hidden'],
-  recipeHelp: ['auto', 'shown', 'hidden']
+  recipeHelp: ['auto', 'shown', 'hidden'],
+  // The ids of lib/recipe/limits.js LIMIT_SETS, its DEFAULT_LIMIT_SET first, written out to keep it from the first page.
+  limitSet: ['hesselberth-roy', 'glazecalc'],
+  currency: ['', ...CURRENCIES],
+  calendar: CALENDARS
 };
 const NAMES = Object.keys(CHOICES) as Array<keyof Preferences>;
 
@@ -135,7 +149,10 @@ export class PreferencesService {
     density: 0,
     englishTerms: 0,
     notice: 0,
-    recipeHelp: 0
+    recipeHelp: 0,
+    limitSet: 0,
+    currency: 0,
+    calendar: 0
   };
 
   /**
@@ -158,7 +175,10 @@ export class PreferencesService {
     density: signal(readCopy('density')),
     englishTerms: signal(readCopy('englishTerms')),
     notice: signal(readCopy('notice')),
-    recipeHelp: signal(readCopy('recipeHelp'))
+    recipeHelp: signal(readCopy('recipeHelp')),
+    limitSet: signal(readCopy('limitSet')),
+    currency: signal(readCopy('currency')),
+    calendar: signal(readCopy('calendar'))
   };
 
   /** Batch weights in grams, or in pounds and ounces. */
@@ -182,6 +202,9 @@ export class PreferencesService {
   readonly englishTerms = this.shown('englishTerms');
   readonly notice = this.shown('notice');
   readonly recipeHelp = this.shown('recipeHelp');
+  readonly limitSet = this.shown('limitSet');
+  readonly currency = this.shown('currency');
+  readonly calendar = this.shown('calendar');
 
   constructor() {
     // Signed out, or the session ended: the account's choices leave this browser, and the visitor's own come back.
@@ -255,6 +278,16 @@ export class PreferencesService {
       }
       throw err;
     }
+  }
+
+  /**
+   * Takes a choice the server already holds (it was saved along with something
+   * else, such as the currency with a first price) into this browser.
+   */
+  noteSaved<K extends keyof Preferences>(name: K, value: Preferences[K]): void {
+    this.saves[name]++;
+    this.apply(name, value);
+    writeRaw(copyKey(name), value);
   }
 
   /** Keeps a choice on this browser only, for a visitor with no account to save it to. */

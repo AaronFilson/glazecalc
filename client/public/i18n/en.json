@@ -17,13 +17,17 @@
     "confirmEmail": "Confirm your email - Glazecalc",
     "home": "Your studio notebook - Glazecalc",
     "recipe": "Recipes - Glazecalc",
+    "import": "Paste in recipes - Glazecalc",
+    "blends": "Blends for test tiles - Glazecalc",
     "material": "Materials - Glazecalc",
     "additive": "Additives - Glazecalc",
     "firingLogs": "Firing logs - Glazecalc",
     "notes": "Notes - Glazecalc",
     "trash": "Trash - Glazecalc",
     "account": "Your account and settings - Glazecalc",
-    "notFound": "Not found - Glazecalc"
+    "notFound": "Not found - Glazecalc",
+    "shared": "Shared recipe - Glazecalc",
+    "assistants": "Use Glazecalc from your AI assistant - Glazecalc"
   },
   "nav": {
     "skip": "Skip to content",
@@ -41,6 +45,7 @@
     "account": "Account",
     "trialAccount": "Trial account",
     "accountTitle": "Your account and settings",
+    "trash": "Trash",
     "signOut": "Sign out",
     "createAccount": "Create a free account"
   },
@@ -87,7 +92,7 @@
     "about": "Glazecalc is a free, open-source glaze chemistry calculator and notebook. See how it works out a unity formula and how it is built.",
     "privacy": "How Glazecalc handles your data: no ads, no analytics and no tracking, and nothing is sold. What is kept, why, and how to use your rights.",
     "signup": "Create a free Glazecalc account to keep your glaze recipes, materials, notes and firing logs. No ads, and your data is never sold.",
-    "imageAlt": "Glazecalc: understand your glazes, not just mix them."
+    "imageAlt": "The Glazecalc home page: free glaze chemistry for potters, beside a photo of fired cone packs."
   },
   "notices": {
     "dismiss": "Dismiss",
@@ -95,11 +100,15 @@
     "error": "Error: {text}"
   },
   "remove": {
-    "removed": "Removed \"{name}\".",
     "alreadyRemoved": "\"{name}\" was already removed.",
+    "trashed": "Moved \"{name}\" to the Trash.",
+    "undo": "Undo",
+    "restored": "Put \"{name}\" back.",
+    "restoreFailed": "\"{name}\" could not be put back. It is still in the Trash.",
     "failed": "It could not be removed. Please try again.",
     "question": "Remove \"{name}\"?",
     "cannotUndo": "This can't be undone.",
+    "toTrash": "You can put it back from the Trash for 30 days.",
     "removing": "Removing...",
     "yes": "Yes, remove",
     "cancel": "Cancel",
@@ -278,7 +287,7 @@
     "close": "Close"
   },
   "unity": {
-    "fluxes": "Fluxes - RO",
+    "fluxes": "Fluxes - R₂O and RO",
     "stabilizers": "Stabilizers - R₂O₃",
     "glassFormers": "Glass Formers - RO₂",
     "wildcards": "Wildcards",

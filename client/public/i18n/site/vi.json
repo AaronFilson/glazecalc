@@ -1,0 +1,250 @@
+{
+  "landing": {
+    "eyebrow": "Công cụ tính men và sổ tay xưởng gốm",
+    "heading": "Hóa học men miễn phí cho thợ gốm.",
+    "lead": "Hiểu men của bạn, không chỉ pha chúng. Nhập một công thức men và xem cùng lúc công thức phân tử chuẩn hóa về một (UMF) của nó, tỷ lệ silica trên alumina và cân bằng các chất trợ chảy của nó. Giữ công thức men, nguyên liệu, chất tạo màu, ghi chú và nhật ký nung của bạn cùng nhau trong một cuốn sổ tay riêng tư.",
+    "trialEnded": "Bản dùng thử của bạn đã kết thúc. Hãy bắt đầu một bản mới, hoặc tạo tài khoản miễn phí để giữ lại công việc của bạn.",
+    "tryIt": "Dùng thử ngay",
+    "createAccount": "Tạo tài khoản miễn phí",
+    "trialFailed": "Lúc này không thể bắt đầu bản dùng thử. Vui lòng thử lại.",
+    "heroNote": "Không cần đăng ký để dùng thử · Miễn phí và mã nguồn mở · Công thức men của bạn được giữ riêng tư",
+    "heroAlt": "Một hàng bộ côn đã nung: các côn nhiệt màu trắng trong mỗi bộ đã cong xuống trong nhiệt của lò nung.",
+    "heroCaption": "Các bộ côn sau một lần nung: mỗi côn cong xuống khi lò nung đã đạt đủ công nhiệt.",
+    "exampleHeading": "Xem nó hoạt động: một men nền celadon kinh điển",
+    "exampleCaption": "“4321” của Bernard Leach, thường nung ở côn 10, tính theo phần khối lượng.",
+    "material": "Nguyên liệu",
+    "parts": "Phần",
+    "unityHeading": "Công thức phân tử chuẩn hóa về một của nó",
+    "exampleNote": "Các chất trợ chảy cộng lại bằng 1, nên có thể so sánh công bằng hai loại men bất kỳ. Được tính ngay tại đây trong trình duyệt của bạn bằng chính mã mà công cụ tính men dùng.",
+    "featuresHeading": "Glazecalc làm được gì",
+    "features": {
+      "unity": {
+        "title": "Công thức Seger tức thì",
+        "text": "Xem chất trợ chảy, alumina và silica theo công thức chuẩn hóa về một, cách các nhà hóa học men so sánh công thức men, ngay khi bạn nhập một công thức men."
+      },
+      "substitute": {
+        "title": "Sửa và thay thế",
+        "text": "Một nguyên liệu bị ngừng sản xuất? Hãy so sánh các công thức hóa học để tìm vật liệu thay thế nóng chảy giống như vậy."
+      },
+      "notebook": {
+        "title": "Sổ tay xưởng gốm của bạn",
+        "text": "Giữ công thức men, nguyên liệu riêng, chất tạo màu, ghi chú và nhật ký nung của bạn cùng một chỗ."
+      },
+      "learn": {
+        "title": "Vừa làm vừa học",
+        "text": "Các cẩm nang dễ hiểu, từ men là gì đến cách nung men an toàn, nằm ngay cạnh các con số."
+      }
+    },
+    "umfHeading": "Công thức phân tử chuẩn hóa về một là gì?",
+    "umfRecipe": "Một công thức men cho biết cần cân bao nhiêu mỗi nguyên liệu. Công thức phân tử chuẩn hóa về một, còn gọi là công thức Seger, cho biết các nguyên liệu đó trở thành gì trong lò nung: có bao nhiêu phân tử của mỗi oxit, được quy đổi sao cho các chất trợ chảy cộng lại bằng một.",
+    "umfGroups": "Chất trợ chảy làm men nóng chảy, alumina làm khối nóng chảy quánh lại, và silica tạo thành thủy tinh. So sánh ba nhóm đó giải thích vì sao một loại men bóng còn loại khác mờ, hoặc vì sao một loại chảy còn loại khác đứng yên, và cho thấy cách thay thế một nguyên liệu không còn được bán.",
+    "readAdvice": "Đọc thêm lời khuyên về men",
+    "closingHeading": "Sẵn sàng khi bạn sẵn sàng.",
+    "closingText": "Hãy dùng thử công cụ tính men ngay, rồi tạo tài khoản để giữ lại những gì bạn đã làm."
+  },
+  "about": {
+    "title": "Giới thiệu Glazecalc",
+    "lead": "Một công cụ tính men và sổ tay hóa học men miễn phí, mã nguồn mở, cho thợ gốm, nghệ nhân gốm sứ và sinh viên.",
+    "whatHeading": "Nó làm được gì",
+    "what": "Glazecalc biến một công thức men, tức các nguyên liệu và lượng cân của từng loại, thành công thức phân tử chuẩn hóa về một của nó: các oxit mà men được tạo thành sau khi nung, được quy đổi sao cho các chất trợ chảy cộng lại bằng một. Nhờ đó các công thức men có thể so sánh được, giúp giải thích một loại men hoạt động ra sao, và giúp khi phải thay một nguyên liệu.",
+    "alongside": "Bên cạnh công cụ tính men, nó lưu công thức men của bạn, nguyên liệu riêng, chất tạo màu và các phụ gia khác, ghi chú và nhật ký nung, một trang <advice>lời khuyên về men</advice> thực tế, và các <guides>cẩm nang</guides> cho thợ gốm mới, từ men là gì đến cách nung men an toàn.",
+    "numbersHeading": "Các con số được tính thế nào",
+    "numbers": "Mỗi nguyên liệu được mô tả bằng công thức hóa học hoặc bằng phân tích oxit, cộng với lượng mất khi nung của nó: phần cháy hết trong lò nung, như cacbon đioxit trong canxi cacbonat hay nước trong cao lanh. Glazecalc quy đổi mỗi lượng thành mol của từng oxit bằng khối lượng mol tiêu chuẩn, cộng chúng lại trên cả công thức men, và chia cho tổng số mol chất trợ chảy. Chất tạo màu và các phụ gia khác được liệt kê cùng công thức men nhưng không tính vào công thức Seger, như thông lệ.",
+    "guide": "Kết quả là một chỉ dẫn, không phải một bảo đảm. Nguyên liệu thực tế khác nhau giữa các nhà cung cấp và giữa các lô, và việc nung quan trọng không kém hóa học, nên hãy thử mọi loại men. Men dùng cho bề mặt tiếp xúc thực phẩm nên được thử nghiệm thôi nhiễm.",
+    "builtHeading": "Nó được xây dựng thế nào",
+    "built": "Glazecalc bắt đầu năm 2017 và được xây dựng lại năm 2026. Nó là một ứng dụng web nhỏ, và <source>mã nguồn của nó có trên GitHub</source> theo Giấy phép MIT.",
+    "stackBrowser": "Angular 22 trong trình duyệt (standalone components và signals), với phần hóa học men trong một thư viện dùng chung nhỏ.",
+    "stackServer": "Một API TypeScript trên Node.js 24 và Express 5, với MongoDB 9, được kiểm tra bằng hơn 350 bài kiểm thử tự động.",
+    "stackHosting": "Chạy trong Docker trên Amazon Web Services, sau nginx với HTTPS từ Let's Encrypt.",
+    "stackDeploy": "Được triển khai bằng GitHub Actions: các image được dựng và kiểm thử ở mỗi thay đổi, và việc triển khai đăng nhập vào AWS mà không có khóa được lưu.",
+    "creditsHeading": "Ghi công",
+    "credits": "Các vùng trên biểu đồ Stull đến từ cách Glazy đọc biểu đồ năm 1912 của R. T. Stull, do Derek Au thực hiện (Copyright (c) 2017 Derek Au, MIT License). <notices>Thông báo đầy đủ</notices> có trong mã nguồn.",
+    "whoHeading": "Ai đã làm ra nó",
+    "who": "Glazecalc do Aaron Filson làm ra. Thấy một lỗi hoặc có một ý tưởng? <issues>Hãy mở một issue trên GitHub</issues>.",
+    "studio": "Đồ gốm thủ công của Aaron Filson có tại <studio>Updraft Pottery Studio</studio> ở Tacoma, Washington. Hãy xem các tác phẩm, và đặt mua một món nếu có món nào làm bạn ưng ý.",
+    "languagesHeading": "Ngôn ngữ",
+    "languages": "Glazecalc có sẵn bằng các ngôn ngữ này. Mỗi liên kết mở trang này bằng ngôn ngữ đó."
+  },
+  "privacy": {
+    "title": "Quyền riêng tư",
+    "lead": "Cập nhật lần cuối tháng 10 năm 2026.",
+    "shortHeading": "Tóm tắt",
+    "short": "Glazecalc chỉ giữ những gì cần để vận hành tài khoản của bạn, và không giữ gì hơn. Không có quảng cáo, không có phân tích và không có theo dõi. Dữ liệu của bạn không bao giờ bị bán, và công ty duy nhất xử lý nó là Amazon Web Services, nơi lưu trữ trang web và gửi email của trang.",
+    "whoHeading": "Ai chịu trách nhiệm",
+    "who": "Glazecalc là một dự án miễn phí, mã nguồn mở, phi lợi nhuận, do chủ sở hữu của nó, Aaron Filson, điều hành tại Hoa Kỳ. Chủ sở hữu quyết định điều gì xảy ra với dữ liệu của bạn, nên theo luật bảo vệ dữ liệu, chủ sở hữu là “người kiểm soát” dữ liệu đó.",
+    "contact": "Để hỏi về dữ liệu của bạn, hoặc để thực hiện bất kỳ quyền nào của bạn, hãy viết thư đến <mail>privacy@glazecalcapp.com</mail>. Bạn cũng có thể <issues>mở một issue trên GitHub</issues>, nhưng các issue là công khai: không bao giờ đưa địa chỉ email của bạn hay bất cứ điều gì cá nhân vào đó. Hầu hết những gì về dữ liệu của bạn bạn có thể tự làm trên <account>trang tài khoản</account> của bạn.",
+    "storedHeading": "Những gì được giữ, và vì sao",
+    "storedAccount": "<b>Tài khoản của bạn:</b> địa chỉ email của bạn, và mật khẩu của bạn, chỉ được lưu dưới dạng mã băm một chiều (bcrypt), không bao giờ là chính mật khẩu. Cài đặt của bạn (như ngôn ngữ, khu vực và đơn vị) và danh sách nguyên liệu bạn có được giữ cùng nó. Một tài khoản cần một địa chỉ email, để đăng nhập và để đặt lại mật khẩu bị quên. Khi bạn tạo tài khoản, một liên kết được gửi đến địa chỉ đó để xác nhận nó là của bạn; cho đến lúc đó, thư chỉ được gửi đến nó khi bạn yêu cầu, chẳng hạn để đặt lại mật khẩu.",
+    "storedPrices": "<b>Giá, nếu bạn đưa ra:</b> những gì bạn trả cho mỗi nguyên liệu, tính theo kilôgam, và đơn vị tiền tệ của chúng, để tính chi phí của một mẻ. Chúng là dữ liệu kinh doanh, được giữ cùng tài khoản của bạn và riêng tư với nó: chúng không bao giờ là một phần của công thức men, nên không gì bạn chia sẻ cho thấy chúng. Tải xuống dữ liệu của tôi có gồm chúng, và xóa tài khoản sẽ xóa chúng. Giá của một bản dùng thử chuyển vào tài khoản của bạn cùng các bản ghi của nó, cho những nguyên liệu bạn chưa định giá, khi cả hai cùng đơn vị tiền tệ.",
+    "storedEmailChange": "<b>Đổi email của bạn:</b> ngày địa chỉ của bạn được đổi lần cuối, để một yêu cầu tắt xác minh hai bước không bao giờ được chấp nhận từ một địa chỉ mới trong 30 ngày sau đó.",
+    "storedSignIn": "<b>Xác minh hai bước, nếu bạn bật:</b> nó có đang bật không; khóa mà ứng dụng xác thực của bạn chia sẻ với Glazecalc, được mã hóa; với mỗi khóa truy cập, khóa công khai của nó (tự nó không thể đăng nhập) cùng id và thông tin thiết bị của bạn cung cấp cho nó, tên bạn đặt cho nó, và thời điểm nó được thêm và được dùng lần cuối; các mã khôi phục của bạn, chỉ dưới dạng mã băm một chiều có khóa, nên không ai đọc ngược lại được; và, nếu có người nhập mật khẩu của bạn nhưng không hoàn tất bước thứ hai, thời điểm Glazecalc gửi email cho bạn về việc đó lần cuối (tối đa một lần mỗi ngày). Trong khi bạn đăng nhập, giữa mật khẩu của bạn và bước thứ hai, máy chủ giữ một ghi chú về lần đăng nhập trong 5 phút, và trang chỉ giữ một mã thông báo ngắn trong bộ nhớ của nó: không có cookie mới, không có gì trong bộ nhớ của trình duyệt của bạn.",
+    "storedSaved": "<b>Những gì bạn lưu:</b> công thức men, nguyên liệu, phụ gia, ghi chú, nhật ký nung và lời khuyên của bạn, như bạn đã viết. Chỉ bạn xem được chúng, trừ khi bạn chia sẻ một công thức men bằng liên kết.",
+    "storedTrash": "<b>Thùng rác và các phiên bản trước:</b> những gì bạn xóa khỏi một danh sách chờ trong thùng rác, nguyên vẹn, để bạn có thể khôi phục; và mỗi thay đổi bạn lưu vào một bản ghi giữ lại bản ghi như ngay trước đó, để bạn có thể hoàn tác thay đổi.",
+    "storedShares": "<b>Công thức men bạn chia sẻ bằng liên kết, nếu bạn chia sẻ:</b> công thức men nào, liên kết của nó được tạo khi nào và nó có hiện ghi chú của công thức men không, cùng một mã băm một chiều của liên kết (không bao giờ là chính liên kết). Bất kỳ ai có liên kết đều xem được công thức men như hiện tại, cùng công thức Seger của nó, và ghi chú của nó nếu bạn chọn hiện; không bao giờ là email, tài khoản của bạn hay bất kỳ giá nào. Các công thức men được chia sẻ được giữ ngoài các công cụ tìm kiếm, và liên kết không bao giờ đến nhật ký của máy chủ. Để chặn lạm dụng, các công thức men được chia sẻ được mở từ mỗi địa chỉ IP được đếm, trong bộ nhớ, trong 15 phút. Bản dùng thử không thể chia sẻ.",
+    "storedTokens": "<b>Mã thông báo truy cập và ứng dụng được kết nối, nếu bạn tạo hoặc chấp thuận:</b> với mỗi cái, tên của nó, những gì nó được phép làm, một mã băm một chiều của mã thông báo (không bao giờ là chính mã thông báo) và 4 ký tự cuối của nó, và thời điểm nó được tạo, được dùng lần cuối, hết hạn và bị thu hồi.",
+    "storedActivity": "<b>Những gì các mã thông báo và ứng dụng đã làm:</b> một dòng cho mỗi bản ghi mà một mã thông báo truy cập hoặc ứng dụng được kết nối đã tạo, thay đổi, chuyển vào thùng rác, khôi phục hoặc hoàn tác: khi nào, mã thông báo hay ứng dụng nào, nó đã làm gì và tiêu đề của bản ghi, được cắt ngắn. Không bao giờ là nội dung của một ghi chú hay bất cứ thứ gì khác trong bản ghi. Các thay đổi bạn thực hiện trên trang web không được liệt kê.",
+    "storedLimits": "<b>Giới hạn tần suất:</b> để chặn việc đoán mò và các tập lệnh chạy quá mức, ghi lại số lần thử đăng nhập, đăng ký, yêu cầu đặt lại và dùng thử theo địa chỉ IP hoặc tài khoản, số mã thông báo truy cập không hoạt động theo địa chỉ IP, số yêu cầu gửi bằng mã thông báo truy cập, theo tài khoản (120 mỗi phút và 5.000 mỗi ngày), số bản ghi mà mỗi mã thông báo truy cập chuyển vào Thùng rác, theo mã thông báo, số công thức men được chia sẻ đã mở và số liên kết chia sẻ không mở ra gì, theo địa chỉ IP, và số yêu cầu gửi đến các công cụ cho trợ lý AI (MCP): 60 mỗi phút và 2.000 mỗi ngày theo địa chỉ IP, hoặc 120 mỗi phút và 5.000 mỗi ngày theo tài khoản khi dùng một mã thông báo truy cập, với tối đa 10 lần thay thế hoặc khớp mỗi phút.",
+    "storedTrial": "<b>Một bản dùng thử (“Dùng thử ngay”):</b> không có email hay mật khẩu, chỉ một cái tên tự nghĩ ra như “speckled quiet kilns”. Nếu bạn đăng nhập vào một tài khoản trên cùng trình duyệt trong khi dùng thử, những gì bạn đã làm trong bản dùng thử sẽ chuyển vào tài khoản.",
+    "storedResets": "<b>Đặt lại mật khẩu và các liên kết email:</b> tài khoản nào đã yêu cầu, khi nào, địa chỉ mà một liên kết xác nhận địa chỉ được gửi đến, và một dấu vân tay của mỗi liên kết (không phải chính liên kết).",
+    "storedLogs": "<b>Nhật ký:</b> máy chủ web ghi lại mỗi yêu cầu: địa chỉ IP của bạn, thời gian, trang được yêu cầu và tên trình duyệt của bạn. Ứng dụng ghi lại các lỗi cùng trang nơi chúng xảy ra, không bao giờ là địa chỉ email của bạn.",
+    "storedDeletions": "<b>Các tài khoản đã xóa:</b> số id của tài khoản và thời điểm nó bị xóa, và không gì khác, để một bản sao lưu được khôi phục không thể đưa tài khoản trở lại.",
+    "storedMail": "<b>Sự cố email:</b> nếu thư đến địa chỉ của bạn bị trả về hoặc bị báo cáo là thư rác, dịch vụ email của Amazon đưa địa chỉ vào một danh sách không gửi thư nữa, và gửi cho chủ sở hữu một thông báo có gồm địa chỉ đó.",
+    "storedInbound": "<b>Thư bạn gửi đến Glazecalc:</b> thư gửi đến privacy@glazecalcapp.com và các địa chỉ khác của Glazecalc được Amazon kiểm tra thư rác và vi-rút, giữ trong một kho riêng tư, và chuyển tiếp đến hộp thư đến riêng của chủ sở hữu (Gmail).",
+    "basisHeading": "Cơ sở pháp lý",
+    "basisContract": "<b>Vận hành tài khoản của bạn</b>, giữ những gì bạn lưu, và các email về tài khoản của bạn là dịch vụ bạn đã yêu cầu: cơ sở pháp lý là hợp đồng giữa bạn và Glazecalc (Điều 6(1)(b) GDPR).",
+    "basisInterests": "<b>Giữ cho trang an toàn và hoạt động</b>: các nhật ký, các giới hạn về tần suất bất kỳ ai có thể thử đăng nhập, các bản sao lưu, bản ghi các tài khoản đã xóa và danh sách các địa chỉ không gửi thư. Những điều này dựa trên lợi ích hợp pháp của Glazecalc về bảo mật, ngăn chặn lạm dụng và không làm mất công việc của bạn (Điều 6(1)(f)). Chúng được giữ ngắn hạn và không dùng cho việc gì khác. Bạn có thể phản đối chúng bằng cách viết thư đến địa chỉ ở trên.",
+    "basisNone": "Không có gì về bạn được quyết định tự động, không có lập hồ sơ, và không có gì được dùng cho quảng cáo.",
+    "whereHeading": "Nó được lưu ở đâu, và ai xử lý nó",
+    "hosting": "Glazecalc chạy trên Amazon Web Services (AWS): máy chủ (EC2), các bản sao lưu (S3) và email (Simple Email Service), tất cả tại Hoa Kỳ, ở Oregon (us-west-2). AWS chỉ xử lý dữ liệu thay mặt Glazecalc, theo <dpa>điều khoản xử lý dữ liệu</dpa> của mình. Không ai khác nhận nó.",
+    "transfer": "Nếu bạn sống ở EU, Vương quốc Anh hoặc Thụy Sĩ, dữ liệu của bạn được chuyển đến Hoa Kỳ. Amazon cho biết mình được chứng nhận theo <dpf>Khung Bảo mật Dữ liệu EU–Hoa Kỳ</dpf> và các phần mở rộng cho Vương quốc Anh và Thụy Sĩ, và các điều khoản của AWS gồm Các Điều khoản Hợp đồng Tiêu chuẩn của EU, vẫn sẽ áp dụng nếu Khung này, hiện đang bị thách thức tại tòa, bị bãi bỏ. Chủ sở hữu và AWS đều ở Hoa Kỳ, và luật Hoa Kỳ có thể buộc họ giao dữ liệu.",
+    "noThirdParties": "Trình duyệt của bạn không tải gì từ các trang web khác: không phông chữ, tập lệnh, hình ảnh hay phân tích từ nơi khác, và các cài đặt bảo mật của trang chặn chúng. Các liên kết đến GitHub và các trang khác chỉ được theo khi bạn nhấp vào chúng.",
+    "choiceHeading": "Tài khoản của bạn được lưu ở đâu, và lựa chọn của bạn",
+    "choiceProject": "Glazecalc là một dự án miễn phí, mã nguồn mở. Các tài khoản, và mọi thứ chúng chứa, được lưu trên máy chủ tại Hoa Kỳ, bất kể bạn sống ở đâu, như mô tả ở trên.",
+    "choiceNoAccount": "Bạn không cần tài khoản để đọc các cẩm nang, và bạn có thể dùng thử công cụ tính men bằng “Dùng thử ngay”, không cần địa chỉ email hay mật khẩu. Một bản dùng thử được giữ trên cùng các máy chủ trong 14 ngày.",
+    "choiceOwnCopy": "Bất kỳ ai cũng có thể chạy bản sao Glazecalc của riêng mình, trên máy tính hoặc máy chủ của riêng mình: mã nguồn miễn phí trên <source>GitHub</source>.",
+    "choiceDecision": "Có tạo tài khoản ở đây hay không, khi biết nó được lưu tại Hoa Kỳ, là quyết định của riêng bạn.",
+    "choiceNoWarranty": "Glazecalc được cung cấp nguyên trạng, không bảo hành. Những người bảo trì nó không chịu trách nhiệm hay nghĩa vụ pháp lý nào về quyết định tạo tài khoản của bạn, hay về nơi dữ liệu của nó được lưu.",
+    "keptHeading": "Nó được giữ bao lâu",
+    "keptAccount": "<b>Tài khoản của bạn và những gì bạn lưu:</b> cho đến khi bạn xóa chúng. Các tài khoản không bị xóa vì không được dùng.",
+    "keptTrash": "<b>Thùng rác và các phiên bản trước:</b> một bản ghi đã xóa trong 30 ngày sau khi bạn xóa nó, hoặc cho đến khi bạn xóa vĩnh viễn hoặc dọn sạch thùng rác; các phiên bản trước trong 90 ngày, và chỉ 20 phiên bản gần nhất của mỗi bản ghi (và phiên bản từ trước các thay đổi của một mã thông báo truy cập), nhưng không bao giờ lâu hơn bản ghi: khi bản ghi còn trong thùng rác, các phiên bản của nó mất đi khi nó mất. Cả hai mất ngay khi bạn xóa tài khoản.",
+    "keptShares": "<b>Liên kết chia sẻ:</b> cho đến khi bạn dừng chia sẻ công thức men, tạo liên kết mới cho nó, chuyển nó vào thùng rác hoặc xóa tài khoản. Khôi phục công thức men từ thùng rác không chia sẻ nó lại. Đặt lại mật khẩu hoặc đăng xuất ở mọi nơi cũng chặn mọi liên kết của bạn; đổi mật khẩu thì không.",
+    "keptTokens": "<b>Mã thông báo truy cập và ứng dụng được kết nối:</b> mỗi cái cho đến 30 ngày sau khi nó hết hạn (mọi cái đều hết hạn, tối đa trong vòng một năm), hoặc cho đến khi bạn xóa tài khoản. Đặt lại mật khẩu hoặc “Đăng xuất ở mọi nơi” chặn tất cả cùng một lúc.",
+    "keptActivity": "<b>Những gì các mã thông báo và ứng dụng đã làm:</b> 90 ngày, hoặc cho đến khi bạn xóa tài khoản.",
+    "keptLimits": "<b>Giới hạn tần suất:</b> các số đếm chỉ được giữ trong bộ nhớ của máy chủ, từ 1 phút đến 24 giờ, và mất khi nó khởi động lại.",
+    "keptTrial": "<b>Một bản dùng thử:</b> 14 ngày từ lúc bắt đầu, sau đó nó bị xóa cùng mọi thứ trong đó, trừ khi bạn tạo tài khoản để giữ lại.",
+    "keptResets": "<b>Đặt lại mật khẩu và các liên kết email:</b> một liên kết đặt lại có hiệu lực trong 30 phút và bản ghi của nó bị xóa sau khoảng một giờ; một liên kết xác nhận địa chỉ có hiệu lực, và được giữ, trong 24 giờ.",
+    "keptSignIn": "<b>Xác minh hai bước:</b> mỗi ứng dụng xác thực, khóa truy cập và bộ mã khôi phục cho đến khi bạn xóa nó, tắt xác minh hai bước hoặc xóa tài khoản. Một lần đăng nhập đang chờ bước thứ hai của nó bị xóa sau 5 phút, và một ứng dụng hoặc khóa truy cập bạn đã bắt đầu thêm nhưng chưa hoàn tất, sau tối đa 10.",
+    "keptBackups": "<b>Bản sao lưu:</b> các bản sao được mã hóa của cơ sở dữ liệu được giữ 30 ngày, và các bản sao của ổ đĩa máy chủ 7 ngày. Vì vậy một tài khoản đã xóa biến mất khỏi mọi bản sao lưu trong vòng 30 ngày.",
+    "keptDeletions": "<b>Bản ghi của một tài khoản đã xóa:</b> 37 ngày, lâu hơn một chút so với bất kỳ bản sao lưu nào.",
+    "keptLogs": "<b>Nhật ký:</b> của máy chủ web, 14 ngày. Nhật ký riêng của ứng dụng và của cơ sở dữ liệu bị giới hạn theo dung lượng (mỗi loại 50 MB), với một trang ít truy cập thì kéo dài lùi lại vài ngày. Các bản sao của ổ đĩa máy chủ giữ nhật ký thêm tối đa 7 ngày.",
+    "keptMail": "<b>Danh sách các địa chỉ không gửi thư:</b> cho đến khi chủ sở hữu xóa một địa chỉ, việc chủ sở hữu làm mỗi tháng với các địa chỉ không còn thuộc về tài khoản nào. Chủ sở hữu xóa các thông báo thư trả về trong vòng 30 ngày.",
+    "keptInbound": "<b>Thư bạn gửi đến Glazecalc:</b> 30 ngày trong kho của Amazon, và trong hộp thư đến của chủ sở hữu lâu như cần để trả lời bạn. Với một yêu cầu về dữ liệu của bạn, một ghi chú ngắn (khi nào nó đến, đã hỏi gì và đã làm gì) được giữ ba năm.",
+    "rightsHeading": "Quyền của bạn",
+    "rightsIntro": "Bạn có thể xem, sửa, lấy và xóa dữ liệu của mình. Hầu hết bạn có thể tự làm trên <account>trang tài khoản</account> của bạn:",
+    "rightsExport": "<b>Xem và mang nó đi:</b> Tải xuống dữ liệu của tôi lưu mọi thứ trong một tệp (JSON), gồm tên và ngày của các phương thức xác minh hai bước của bạn (không bao giờ là khóa hay mã của chúng), cùng công thức men và nguyên liệu của bạn dưới dạng bảng tính (CSV).",
+    "rightsCorrect": "<b>Sửa nó:</b> đổi cài đặt và các bản ghi của bạn bất cứ lúc nào. Để đổi địa chỉ email của bạn, hãy mở liên kết được gửi đến địa chỉ mới; địa chỉ cũ, nếu đã được xác nhận, được báo về thay đổi, và mọi thiết bị bị đăng xuất.",
+    "rightsDelete": "<b>Xóa nó:</b> Xóa tài khoản của tôi xóa ngay tài khoản của bạn và mọi thứ bạn đã lưu, và “Bỏ bản dùng thử” làm điều tương tự cho một bản dùng thử. Các bản sao trong bản sao lưu mất đi trong vòng 30 ngày.",
+    "rightsSignOut": "<b>Đăng xuất ở mọi nơi:</b> kết thúc các phiên của tài khoản bạn trên mọi thiết bị.",
+    "rightsAsk": "Với bất kỳ điều gì khác, chẳng hạn yêu cầu giữ dữ liệu của bạn lại không sử dụng trong khi một sai sót được sửa, hoặc phản đối cách nó được sử dụng, hãy viết thư đến <mail>privacy@glazecalcapp.com</mail>. Việc này miễn phí, và bạn sẽ có câu trả lời trong vòng một tháng. Bạn chỉ được yêu cầu chứng minh tài khoản là của bạn, bằng cách đăng nhập hoặc mở một liên kết gửi đến địa chỉ của nó, không bao giờ yêu cầu giấy tờ tùy thân.",
+    "rightsComplain": "Nếu bạn không hài lòng, bạn có thể khiếu nại với cơ quan bảo vệ dữ liệu: ở EU, <edpb>cơ quan ở quốc gia của bạn</edpb>, và ở Vương quốc Anh, <ico>Văn phòng Ủy viên Thông tin</ico>.",
+    "storageHeading": "Cookie và bộ nhớ trình duyệt",
+    "storageIntro": "Glazecalc đặt hai cookie, cookie thứ hai chỉ khi bạn đăng nhập bằng Google hoặc GitHub, và giữ một vài giá trị nhỏ trong trình duyệt của bạn. Mỗi cái có mặt vì một điều bạn đã yêu cầu: giữ đăng nhập, đăng nhập bằng Google hoặc GitHub, hoặc ghi nhớ một lựa chọn bạn đã đưa ra. Không cái nào theo dõi bạn và không cái nào được chia sẻ, nên luật không yêu cầu phải hỏi trước, và không có biểu ngữ cookie.",
+    "storageLabel": "Cookie và bộ nhớ trình duyệt",
+    "storageName": "Tên",
+    "storagePurpose": "Dùng để làm gì",
+    "storageLasts": "Tồn tại bao lâu",
+    "storageCookie": "Cookie",
+    "storageLocal": "Bộ nhớ cục bộ",
+    "storageSession": "Bộ nhớ phiên",
+    "storageNote": "Bạn có thể xóa bất kỳ mục nào trong số này trong cài đặt của trình duyệt bất cứ lúc nào. Xóa tài khoản của bạn sẽ xóa ghi chú đăng nhập và mọi cài đặt được giữ ở đây.",
+    "keys": {
+      "cookie": {
+        "purpose": "Giữ bạn đăng nhập. Nó chứa mã thông báo đăng nhập của bạn. Các tập lệnh trên trang không đọc được nó, và trình duyệt của bạn chỉ gửi nó đến máy chủ riêng của Glazecalc, qua HTTPS, và không bao giờ kèm một yêu cầu bắt đầu từ trang khác.",
+        "lasts": "Được đặt khi bạn đăng nhập, tạo tài khoản hoặc bắt đầu bản dùng thử. Cho đến khi bạn đóng trình duyệt, hoặc 7 ngày nếu bạn đánh dấu “Giữ tôi đăng nhập trên thiết bị này”; 14 ngày cho bản dùng thử. Đăng xuất sẽ xóa nó."
+      },
+      "session": {
+        "purpose": "Ghi chú rằng bạn đã đăng nhập, vào một tài khoản hoặc một bản dùng thử, để ứng dụng biết cần hỏi máy chủ. Nó không chứa mã thông báo hay mật khẩu.",
+        "lasts": "Cho đến khi bạn đăng xuất hoặc phiên kết thúc."
+      },
+      "trial": {
+        "purpose": "Trong bản dùng thử, tên và ngày kết thúc của nó, để hiển thị chúng.",
+        "lasts": "Cho đến khi bản dùng thử kết thúc, hoặc được giữ lại hay bị bỏ."
+      },
+      "settings": {
+        "purpose": "Một cài đặt bạn đã đổi trên trình duyệt này, để trang tiếp theo hiển thị nó ngay, trước khi máy chủ trả lời. <code>theme</code> và <code>palette</code> tô màu trang trước khi nó xuất hiện, và <code>language</code> mở các trang bằng ngôn ngữ của bạn.",
+        "lasts": "Cho đến khi bạn đổi nó. Đăng xuất sẽ đặt lại những gì bạn đã chọn khi chưa đăng nhập, nếu có, và xóa phần còn lại."
+      },
+      "visitor": {
+        "purpose": "Ngôn ngữ bạn đã chọn, hoặc việc bạn đã đóng ghi chú bản dịch, khi chưa đăng nhập, để nó trở lại khi bạn đăng xuất.",
+        "lasts": "Cho đến khi bạn xóa bộ nhớ của trình duyệt hoặc xóa một tài khoản trên trình duyệt này."
+      },
+      "region": {
+        "purpose": "Bộ lọc khu vực trên một danh sách thư viện.",
+        "lasts": "Cho đến khi bạn đặt bộ lọc về tất cả khu vực."
+      },
+      "includeAdditives": {
+        "purpose": "Việc các công thức men mới có tính phụ gia của chúng vào công thức Seger hay không, như bạn đã chọn lần gần nhất.",
+        "lasts": "Cho đến khi bạn xóa bộ nhớ của trình duyệt."
+      },
+      "print": {
+        "purpose": "Các lựa chọn gần nhất của bạn để in một công thức men: toàn bộ công thức men, một mẻ hoặc bảng tính, và cỡ mẻ.",
+        "lasts": "Cho đến khi bạn xóa bộ nhớ của trình duyệt."
+      },
+      "token": {
+        "purpose": "Một mã thông báo đăng nhập từ một phiên bản cũ của Glazecalc. Giờ nó không bao giờ được ghi.",
+        "lasts": "Bị xóa khi một trang mở ra."
+      },
+      "readEnglish": {
+        "purpose": "Việc bạn đã chọn đọc một trang đã dịch bằng tiếng Anh, để ứng dụng thôi chuyển bạn sang ngôn ngữ của bạn.",
+        "lasts": "Cho đến khi bạn đóng tab."
+      },
+      "reloadedFor": {
+        "purpose": "Sau khi một phiên bản mới của trang được phát hành, trang nào đã được tải lại và khi nào, để một trang tải lại tối đa một lần mỗi phút.",
+        "lasts": "Cho đến khi bạn đóng tab."
+      },
+      "oauthCookie": {
+        "purpose": "Chỉ khi bạn đăng nhập bằng Google hoặc GitHub: nó gắn câu trả lời của dịch vụ đăng nhập với trình duyệt của bạn, để không ai khác có thể hoàn tất đăng nhập của bạn hay bắt đầu một lần cho bạn. Các tập lệnh trên trang không đọc được nó.",
+        "lasts": "Được đặt khi bạn nhấn “Tiếp tục với Google” hoặc “Tiếp tục với GitHub”, hoặc liên kết một tài khoản trên trang tài khoản của bạn. Bị xóa khi đăng nhập hoàn tất, hoặc sau 10 phút."
+      }
+    },
+    "childrenHeading": "Trẻ em",
+    "children": "Glazecalc là một công cụ cho thợ gốm và không hướng đến trẻ em.",
+    "changesHeading": "Các thay đổi",
+    "changes": "Nếu thông báo này thay đổi, ngày ở đầu trang cũng thay đổi.",
+    "storedProviders": "<b>Google hoặc GitHub, nếu bạn đăng nhập bằng một trong hai:</b> id riêng của dịch vụ đăng nhập cho bạn (một số hoặc mã không bao giờ đổi), thời điểm bạn liên kết nó và lần đăng nhập cuối bằng nó, và việc tài khoản của bạn có mật khẩu riêng hay không. Không có gì khác từ dịch vụ đăng nhập được giữ: không tên, ảnh hay khóa nào vào tài khoản của bạn ở đó. Trong khi bạn đăng nhập, máy chủ giữ một ghi chú về lần đăng nhập, cùng email mà dịch vụ đăng nhập nói là của bạn khi cần: với một tài khoản mới, nơi nó trở thành email của tài khoản, hoặc, khi một tài khoản Glazecalc đã có email đó, để liên kết dịch vụ đăng nhập với nó khi bạn đăng nhập vào tài khoản đó. Ghi chú, và email trong đó, bị xóa trong vòng khoảng 10 phút.",
+    "providers": "<b>Đăng nhập bằng Google hoặc GitHub</b> là lựa chọn của bạn, và chỉ xảy ra khi bạn nhấn nút của nó. Trình duyệt của bạn khi đó đến Google hoặc GitHub, nơi gửi cho Glazecalc id của họ dành cho bạn và email của bạn. Mỗi bên là một công ty riêng, chịu trách nhiệm về những gì bạn chia sẻ với họ theo chính sách quyền riêng tư của họ. Không tập lệnh hay hình ảnh nào của hai bên được tải trên các trang của Glazecalc.",
+    "keptProviders": "<b>Google hoặc GitHub:</b> mỗi liên kết cho đến khi bạn hủy liên kết hoặc xóa tài khoản. Một lần đăng nhập đang diễn ra bị xóa sau 10 phút."
+  },
+  "notFound": {
+    "heading": "Không tìm thấy trang",
+    "text": "Không có trang nào ở địa chỉ này. Có thể nó đã được chuyển, hoặc liên kết đã bị gõ sai.",
+    "start": "Đến trang đầu"
+  },
+  "advice": {
+    "title": "Lời khuyên về men",
+    "lead": "Mẹo thực tế về pha men, tráng men và nung, cùng lời khuyên của riêng bạn.",
+    "signUp": "<signup>Tạo tài khoản miễn phí</signup> hoặc <signin>đăng nhập</signin> để giữ lời khuyên của riêng bạn.",
+    "generalHeading": "Lời khuyên chung",
+    "tags": "Thẻ: {list}",
+    "addHeading": "Thêm lời khuyên của riêng bạn",
+    "titleLabel": "Tiêu đề:",
+    "tagsLabel": "Thẻ:",
+    "contentLabel": "Nội dung lời khuyên:",
+    "save": "Lưu",
+    "mineHeading": "Lời khuyên của tôi",
+    "nothingSaved": "Chưa lưu gì.",
+    "titleMissing": "Hãy đặt tiêu đề cho lời khuyên.",
+    "contentMissing": "Hãy viết lời khuyên.",
+    "fetchFailed": "Đã xảy ra lỗi khi lấy thông tin lời khuyên.",
+    "saved": "Thành công. Đã thêm vào các bản ghi lời khuyên.",
+    "saveFailed": "Đã xảy ra lỗi khi gửi thông tin lời khuyên."
+  },
+  "assistants": {
+    "title": "Dùng Glazecalc từ trợ lý AI của bạn",
+    "lead": "Các trợ lý AI như Claude, GitHub Copilot, Cursor và Gemini có thể dùng trực tiếp các phép tính của Glazecalc, thông qua Model Context Protocol (MCP).",
+    "whatHeading": "Nó làm được gì",
+    "what": "Không cần tài khoản, một trợ lý có thể tra nguyên liệu trong thư viện, tính công thức Seger của một công thức men, kiểm tra nó theo các giới hạn cho việc nung của nó, gợi ý vật liệu thay thế cho các nguyên liệu bị ngừng sản xuất, làm lại một công thức men từ các nguyên liệu bạn nêu tên, quy đổi giữa côn và nhiệt độ, và tìm kiếm và đọc các cẩm nang. Không gì nó gửi được lưu; như với mọi trang, nhật ký của máy chủ web ghi lại địa chỉ IP, thời gian và địa chỉ của mỗi yêu cầu (không bao giờ là nội dung được gửi), trong 14 ngày.",
+    "mine": "Với một mã thông báo truy cập từ <account>trang tài khoản</account> của bạn, nó cũng có thể đọc công thức men, nguyên liệu, sổ tay, nhật ký nung của riêng bạn và các nguyên liệu bạn có. Một mã thông báo chỉ có thể đọc: nó không bao giờ thay đổi hay xóa gì.",
+    "caution": "Các kiểm tra giới hạn là cảnh báo dựa trên các giới hạn đã công bố, giống như trong ứng dụng, không phải bằng chứng rằng một loại men an toàn khi tiếp xúc thực phẩm. Hãy nung thử mọi loại men, và đem men dùng cho bề mặt tiếp xúc thực phẩm đi thử nghiệm thôi nhiễm.",
+    "addressHeading": "Địa chỉ",
+    "address": "Đưa cho trợ lý của bạn địa chỉ này, dùng phương thức truyền Streamable HTTP:",
+    "token": "Để cho nó đọc các bản ghi của riêng bạn, hãy tạo một mã thông báo trên <account>trang tài khoản</account> của bạn và sao chép nó. Trợ lý của bạn gửi nó trong một header Authorization, dưới dạng Bearer theo sau là mã thông báo. Giữ nó ngoài các tệp bạn chia sẻ hoặc commit, như bạn làm với một mật khẩu.",
+    "clientsHeading": "Thêm Glazecalc vào trợ lý của bạn",
+    "claudeCode": "Trong một terminal:",
+    "claudeCodeToken": "Với một mã thông báo truy cập, để đọc cả các bản ghi của riêng bạn:",
+    "vscode": "Trong .vscode/mcp.json trong một thư mục, hoặc cài đặt người dùng của bạn. VS Code hỏi mã thông báo một lần và giữ nó ẩn; bỏ headers và inputs để chỉ dùng các công cụ không cần tài khoản:",
+    "cursor": "Trong ~/.cursor/mcp.json, hoặc .cursor/mcp.json trong một dự án. Bỏ headers để chỉ dùng các công cụ không cần tài khoản:",
+    "gemini": "Trong ~/.gemini/settings.json. Bỏ headers để chỉ dùng các công cụ không cần tài khoản:",
+    "copy": "Sao chép",
+    "copyAddress": "Sao chép địa chỉ",
+    "copyFor": "Sao chép thiết lập cho {client}",
+    "copyForToken": "Sao chép thiết lập cho {client}, kèm mã thông báo truy cập",
+    "copied": "Đã sao chép.",
+    "copyByHand": "Không thể sao chép giúp bạn. Nội dung đã được chọn: hãy sao chép từ khung.",
+    "appsHeading": "Claude, ChatGPT và các ứng dụng khác",
+    "apps": "Thêm một trình kết nối tùy chỉnh bằng địa chỉ ở trên. Các ứng dụng này chưa gửi được mã thông báo truy cập, nên chúng có các công cụ không cần tài khoản. Truy cập các bản ghi của riêng bạn từ chúng sẽ có cùng với việc đăng nhập từ ứng dụng.",
+    "stopHeading": "Dừng truy cập",
+    "stop": "Thu hồi một mã thông báo trên <account>trang tài khoản</account> của bạn bất cứ lúc nào. Mỗi mã thông báo ngừng hoạt động vào ngày bạn chọn, và tất cả ngừng cùng lúc nếu bạn đặt lại mật khẩu hoặc đăng xuất ở mọi nơi.",
+    "limits": "Mỗi địa chỉ có thể gửi 60 yêu cầu mỗi phút và 2.000 mỗi ngày; một tài khoản dùng mã thông báo, 120 mỗi phút và 5.000 mỗi ngày. Việc thay thế và khớp bị giới hạn ở 10 mỗi phút."
+  }
+}

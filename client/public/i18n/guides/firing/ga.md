@@ -34,13 +34,14 @@ Le **coinneáil**{{en: hold}} (**soak** freisin i mBéarla), fanann an áith ag 
 Table: Luach coinneála ag an mbuaicteocht
 Label: Coinneáil agus obair teasa
 
-| Coinneáil                 | Thart ar an obair teasa chéanna le                                                                    |
-| ------------------------- | ----------------------------------------------------------------------------------------------------- |
-| Thart ar 20 nóiméad       | Buaicteocht atá {{18 °F; 10 °C}} níos teo                                                             |
-| 40–60 nóiméad             | Buaicteocht atá {{36 °F; 20 °C}} níos teo                                                             |
-| Thart ar 2 uair an chloig | Buaicteocht atá {{54 °F; 30 °C}} níos teo                                                             |
-| 1–2 uair an chloig        | “d’fhéadfadh sé a bheith go leor chun an chéad chón eile, uimhir amháin níos teo, a chur as a riocht” |
-| 4–6 huaire an chloig      | Go leor chun cón atá dhá uimhir níos teo a lúbadh                                                     |
+| Coinneáil                 | Thart ar an obair teasa chéanna le                |
+| ------------------------- | ------------------------------------------------- |
+| Thart ar 20 nóiméad       | Buaicteocht atá {{18 °F; 10 °C}} níos teo         |
+| 40–60 nóiméad             | Buaicteocht atá {{36 °F; 20 °C}} níos teo         |
+| Thart ar 2 uair an chloig | Buaicteocht atá {{54 °F; 30 °C}} níos teo         |
+| 4–6 huaire an chloig      | Go leor chun cón atá dhá uimhir níos teo a lúbadh |
+
+Cuireann Orton leis go bhféadfadh coinneáil 1–2 uair an chloig “a bheith go leor chun an chéad chón eile, uimhir amháin níos teo, a chur as a riocht”.
 
 Mar sin, ní bhíonn coinneáil saor in aisce riamh: má chuireann tú ceann leis, bí ag súil go lúbfaidh na cóin níos faide, agus ísligh an bhuaicteocht dá réir.
 
@@ -200,7 +201,7 @@ Label: Socruithe na laisce ama
 
 | Foinse    | Socrú                                                                                                                                                                                                 |
 | --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Dawson    | ½ uair an chloig níos faide ná an t-am bácála a bhfuiltear ag súil leis go dtí go mbeidh aithne agat ar an áith, níos déanaí chomh beag le ¼ uair an chloig; ach gan dul thar 20 uair an chloig riamh |
+| Dawson    | ½ uair an chloig níos faide ná an t-am bácála a bhfuiltear ag súil leis go dtí go mbeidh aithne agat ar an áith, níos déanaí chomh beag le ¼ uair an chloig; ná socraigh thar 20 uair an chloig riamh |
 | L&L       | An-ard an chéad uair, agus nóta á dhéanamh agat den fhad a thógann an bhácáil; ina dhiaidh sin, thart ar 1 uair an chloig níos faide                                                                  |
 | Bracker's | 30 nóiméad go 1 uair an chloig níos faide ná an t-am bácála                                                                                                                                           |
 
@@ -375,7 +376,7 @@ Is í an **bhrioscbhácáil**{{en: bisque}} (biscuit i mBéarla na Ríochta Aont
 
 ### Cén fáth a dtéann an chéad chuid go mall
 
-Nuair a iompaíonn uisce ina ghal uisce, “méadaíonn sé 1170 uair”, a deir Bracker's, mar sin ní mór píosaí taise a thriomú go mall. Molann L&L agus Orton “cúram ar leith a ghlacadh faoi bhun 1500°F (815°C) chun an cré-ábhar a théamh go cothrom”, agus deir siad nach mór an carbón a dhó amach roimh thart ar {{1200 °F; 650 °C}}. Os cionn {{1500 °F; 816 °C}} is féidir leis an áith ardú níos tapa.
+Méadaíonn uisce níos mó ná míle uair nuair a iompaíonn sé ina ghal uisce, mar sin ní mór píosaí taise a thriomú go mall. Molann L&L agus Orton “cúram ar leith a ghlacadh faoi bhun 1500°F (815°C) chun an cré-ábhar a théamh go cothrom”, agus deir siad nach mór an carbón a dhó amach roimh thart ar {{1200 °F; 650 °C}}. Os cionn {{1500 °F; 816 °C}} is féidir leis an áith ardú níos tapa.
 
 Table: Cad a tharlaíonn le linn téamh na brioscbhácála
 Label: Cad a tharlaíonn i mbrioscbhácáil
@@ -599,7 +600,7 @@ Is éard is **piriméadar** ann ná tomhsaire teochta a fhaigheann a léamh ó *
 
 ### Aeráil
 
-Go luath sa bhácáil, scaoileann cré agus glónra{{en: glaze}} gal uisce agus múch, aonocsaíd charbóin san áireamh, agus féadann glónraí múch thocsaineach a scaoileadh níos déanaí sa bhácáil freisin. Deir L&L go bhfuil sé “riachtanach” iad a aeráil amach. Gan chóras aerála, ciallaíonn sé sin an clúdach ardaithe ar thaca agus na poill faire ar oscailt sna céimeanna tosaigh, mar atá sna nósanna imeachta thuas; cabhraíonn moilliú an téimh le linn na tréimhse seo leis an gcarbón a dhó amach freisin. Le **gaothaire íochtarach** (gaothaire cumhachtaithe atá feistithe ar an áith), deir Orton go bhfanann an clúdach agus na poill faire dúnta don bhácáil ar fad, ach amháin chun na cóin{{en: cones}} a sheiceáil. Cosnaíonn poll faire uachtair oscailte feadán an Kiln-Sitter agus páirteanna miotail na háithe freisin.
+Go luath sa bhácáil, scaoileann cré agus glónra{{en: glaze}} gal uisce agus múch, aonocsaíd charbóin san áireamh, agus féadann glónraí múch thocsaineach a scaoileadh níos déanaí sa bhácáil freisin. Deir L&L go bhfuil sé “riachtanach” iad a aeráil amach. Gan chóras aerála, ciallaíonn sé sin an clúdach ardaithe ar thaca agus na poill faire ar oscailt sna céimeanna tosaigh, mar atá sna nósanna imeachta thuas; cabhraíonn moilliú an téimh le linn na tréimhse seo leis an gcarbón a dhó amach freisin. In áith gan gaothaire, deir Dawson, a rinne an Kiln-Sitter, freisin an poll faire uachtair a fhágáil ar oscailt don bhácáil ar fad: “laghdóidh an aeráil meathlú páirteanna miotail na háithe agus méadóidh sí saolré chóimeáil an fheadáin”. Athraíonn **gaothaire íochtarach** (gaothaire cumhachtaithe atá feistithe ar an áith) é seo. Déanann sé an aeráil, mar sin deir Orton go bhfanann an clúdach agus na poill faire dúnta don bhácáil ar fad, ach amháin chun na cóin{{en: cones}} a sheiceáil, agus deir L&L an gaothaire a fhágáil ar siúl agus na poill faire a dhúnadh le dalláin.
 
 Maidir leis an seomra a aeráil, agus le haláraim aonocsaíde carbóin, féach na treoirleabhair [Meascadh sábháilte agus aeráil](/guides/safe-mixing) agus [Ná nimhigh do theaghlach](/guides/home-safety).
 

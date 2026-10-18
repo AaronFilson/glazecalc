@@ -48,7 +48,7 @@ Label: Basisset
 | Kaliveldspaat                                   | Wat er nu verkrijgbaar is waar u woont, zoals Mahavir in de VS                                         |
 | Nepheline syenite                               | Elke soort; Glazy wijst op de sterkere smeltende werking, vaak gebruikt bij lage en middentemperatuur  |
 | Krijt                                           | Elke soort                                                                                             |
-| Talk                                            | Elke soort                                                                                             |
+| Talk                                            | Elke asbestvrije soort; controleer het veiligheidsinformatieblad (zie “Veilig mengen en ventileren”)   |
 | Een boorfritte, voor middentemperatuur          | Ferro 3134, 3124 of 3195; in het Verenigd Koninkrijk Potterycrafts P3124 of P3195                      |
 | Bentoniet en kleurstoffen                       | Kleine hoeveelheden                                                                                    |
 
@@ -211,7 +211,7 @@ Label: Water voor een gewenst soortelijk gewicht
 
 **CMC** (carboxymethylcellulose, ook verkocht als glazuurlijm) maakt aangemaakt glazuur kleveriger en laat het langzamer drogen, en geeft een hardere laag die aan de pot hecht. Het is het belangrijkst voor kwastglazuren en glazuren met veel fritte{{en: frit}}. In het voorbeeld van Digitalfire wordt 3,75 g door 1000 g aangemaakt glazuur gemengd, en dat moet met een blender. Een glazuur met CMC stijft niet op met bitterzout, en omdat microben zich met de CMC voeden, kan het in de emmer veranderen en gaan stinken.
 
-**Bentoniet**, een zeer fijne klei, helpt de andere deeltjes in suspensie te houden. Dompelglazuren rekenen hiervoor meestal op 15 tot 25% ongebakken klei. Bij een recept met te weinig klei helpt ongeveer 1 tot 2% bentoniet.
+**Bentoniet**, een zeer fijne klei, helpt de andere deeltjes in suspensie te houden. Dompelglazuren rekenen hiervoor meestal op 15 tot 25% ongebakken klei. Bij een recept met te weinig klei helpt ongeveer 1 tot 3% bentoniet; Digitalfire zegt dat een glazuur met meer dan 15% klei niet meer dan 1% nodig zou moeten hebben.
 
 ## Proefplaatjes en proevenreeksen {#testing}
 
@@ -284,6 +284,7 @@ Label: Sjabloon voor aantekeningen
 - [Digitalfire: Epsom salts](https://digitalfire.com/material/epsom+salts)
 - [Digitalfire: CMC gum](https://digitalfire.com/material/cmc%2Bgum)
 - [Digitalfire: Dipping glaze](https://digitalfire.com/glossary/dipping+glaze)
+- [Digitalfire: Bentonite](https://digitalfire.com/material/bentonite)
 - [Digitalfire: Water solubility](https://digitalfire.com/glossary/water+solubility)
 - [Digitalfire: Gerstley Borate](https://digitalfire.com/material/gerstley+borate)
 - [Digitalfire: Mahavir potash feldspar](https://digitalfire.com/material/mahavir+potash+feldspar)

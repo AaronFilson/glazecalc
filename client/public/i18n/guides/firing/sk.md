@@ -10,7 +10,7 @@ lead: Ako vypaľovať v elektrickej peci s vypínačom Kiln-Sitter alebo s ručn
 
 **Pyrometrický kužeľ**{{en: pyrometric cone}} (žiaromerka) je malý štíhly ihlan zo štandardizovaného keramického prášku. Keď dostane dosť tepla, zmäkne a ohne sa, a to zakaždým rovnako. Kužele postavíte do pece vedľa výrobkov a potom odčítate, ako ďaleko sa ohli.
 
-Kužele merajú **tepelnú prácu**{{en: heatwork}}, spoločné pôsobenie teploty a času. Slovami firmy Orton, hlavného amerického výrobcu kužeľov: „Kužele nemerajú len teplotu.“ Kužeľ ohrievaný pomaly sa ohne pri nižšej teplote ako kužeľ ohrievaný rýchlo a glazúra{{en: glaze}} sa správa rovnako. Preto Orton uvádza teplotu každého kužeľa pre danú rýchlosť ohrevu počas posledných {{180 °F; 100 °C}} výpalu. Keď sa kužeľ raz začne hýbať, ohne sa v úzkom teplotnom rozpätí, „zvyčajne menej ako 40° F“ (22 °C).
+Kužele merajú **tepelnú prácu**{{en: heatwork}}, spoločné pôsobenie teploty a času. Slovami firmy Orton, hlavného amerického výrobcu kužeľov: „Kužele nemerajú len teplotu.“ Kužeľ ohrievaný pomaly sa ohne pri nižšej teplote ako kužeľ ohrievaný rýchlo a glazúra{{en: glaze}} sa správa rovnako. Preto Orton uvádza teplotu každého kužeľa pre danú rýchlosť ohrevu počas posledných {{180 °F; 100 °C}} výpalu. Keď sa kužeľ raz začne hýbať, ohne sa v úzkom teplotnom rozpätí, „zvyčajne menej ako 40° F“ (22 °C).
 
 ### Čísla kužeľov
 
@@ -34,13 +34,14 @@ Dodávatelia vo Veľkej Británii, v Európe, Austrálii a na Novom Zélande ča
 Table: Čomu zodpovedá výdrž na konečnej teplote
 Label: Výdrž a tepelná práca
 
-| Výdrž         | Približne rovnaká tepelná práca ako                             |
-| ------------- | --------------------------------------------------------------- |
-| Asi 20 minút  | Konečná teplota o {{18 °F; 10 °C}} vyššia                       |
-| 40 – 60 minút | Konečná teplota o {{36 °F; 20 °C}} vyššia                       |
-| Asi 2 hodiny  | Konečná teplota o {{54 °F; 30 °C}} vyššia                       |
-| 1 – 2 hodiny  | „môže stačiť na deformáciu kužeľa s nasledujúcim vyšším číslom“ |
-| 4 – 6 hodín   | Dosť na ohnutie kužeľa o dve čísla teplejšieho                  |
+| Výdrž         | Približne rovnaká tepelná práca ako            |
+| ------------- | ---------------------------------------------- |
+| Asi 20 minút  | Konečná teplota o {{18 °F; 10 °C}} vyššia      |
+| 40 – 60 minút | Konečná teplota o {{36 °F; 20 °C}} vyššia      |
+| Asi 2 hodiny  | Konečná teplota o {{54 °F; 30 °C}} vyššia      |
+| 4 – 6 hodín   | Dosť na ohnutie kužeľa o dve čísla teplejšieho |
+
+Orton dodáva, že výdrž 1 – 2 hodiny „môže stačiť na deformáciu kužeľa s nasledujúcim vyšším číslom“.
 
 Výdrž teda nikdy nie je zadarmo: ak ju pridáte, počítajte s tým, že sa kužele ohnú viac, a primerane znížte konečnú teplotu.
 
@@ -53,12 +54,12 @@ Label: Druhy kužeľov
 
 | Druh          | Použitie                 | Ako stojí                                                                                                       |
 | ------------- | ------------------------ | --------------------------------------------------------------------------------------------------------------- |
-| Samostojný    | Kontrolný kužeľ na doske | Vstavaná pätka určuje výšku 1¾ palca (44 mm) a sklon 8°; držiak netreba                                         |
-| Veľký         | Kontrolný kužeľ na doske | Zasadí sa do držiaka alebo do hrudky hliny tak, aby vyčnieval presne 2 palce (51 mm), so sklonom 8° od zvislice |
-| Malý (junior) | Kiln-Sitter              | Leží naprieč podperami vypínača; keby stál na doske, vyčnieval by 15/16 palca (24 mm)                           |
+| Samostojný    | Kontrolný kužeľ na doske | Vstavaná pätka určuje výšku 1¾ palca (44 mm) a sklon 8°; držiak netreba                                         |
+| Veľký         | Kontrolný kužeľ na doske | Zasadí sa do držiaka alebo do hrudky hliny tak, aby vyčnieval presne 2 palce (51 mm), so sklonom 8° od zvislice |
+| Malý (junior) | Kiln-Sitter              | Leží naprieč podperami vypínača; keby stál na doske, vyčnieval by 15/16 palca (24 mm)                           |
 | Tyčinka       | Kiln-Sitter              | Rovnaký prášok ako malé kužele, v tvare rovnomernej tyčinky                                                     |
 
-Na výške záleží: rozdiel ¼ palca (6 mm) vo výške veľkého kužeľa „môže spôsobiť rozdiel v ohnutí väčší ako pol kužeľa“. Kužele sa nekazia ani nestarnú a neuškodí im ani skladovanie vo vlhku.
+Na výške záleží: rozdiel ¼ palca (6 mm) vo výške veľkého kužeľa „môže spôsobiť rozdiel v ohnutí väčší ako pol kužeľa“. Kužele sa nekazia ani nestarnú a neuškodí im ani skladovanie vo vlhku.
 
 ### Čo v praxi znamená „kužeľ 6“
 
@@ -198,11 +199,11 @@ Mnohé vypínače Kiln-Sitter vrátane modelov LT od firmy Dawson majú **časov
 Table: Na aký čas nastaviť časovú poistku
 Label: Nastavenie časovej poistky
 
-| Zdroj     | Nastavenie                                                                                                        |
-| --------- | ----------------------------------------------------------------------------------------------------------------- |
-| Dawson    | O ½ hodiny dlhšie ako očakávaný čas výpalu, kým pec nepoznáte, neskôr len o ¼ hodiny; nikdy nie viac ako 20 hodín |
-| L&L       | Prvýkrát veľmi vysoko, pričom si zaznamenáte, ako dlho výpal trvá; potom asi o 1 hodinu dlhšie                    |
-| Bracker's | O 30 minút až 1 hodinu dlhšie ako čas výpalu                                                                      |
+| Zdroj     | Nastavenie                                                                                                                              |
+| --------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| Dawson    | O ½ hodiny dlhšie ako očakávaný čas výpalu, kým pec nepoznáte, neskôr len o ¼ hodiny dlhšie; nikdy to nenastavujte na viac ako 20 hodín |
+| L&L       | Prvýkrát veľmi vysoko, pričom si zaznamenáte, ako dlho výpal trvá; potom asi o 1 hodinu dlhšie                                          |
+| Bracker's | O 30 minút až 1 hodinu dlhšie ako čas výpalu                                                                                            |
 
 > [!NOTE]
 > Odporúčame začať takto: prvýkrát nastavte čas veľkoryso (v rámci 20 hodín na stupnici), potom o ½ až 1 hodinu dlhšie, ako je čas, ktorý ste zaznamenali. Časová poistka vám prezradí aj to, ako dlho výpal trval: nastavená na 7 a zastavená na 1 znamená 6 hodín.
@@ -224,7 +225,7 @@ Label: Problémy s vypínačom Kiln-Sitter
 Na kontrolu nastavenia používa Dawson **nastavovaciu mierku**, ktorá podrží snímaciu tyč tam, kde by ju nechal úplne ohnutý kužeľ; pri západke má potom byť „vôľa 1/16 palca“ (asi 1,6 mm). Kontrolujte to každých 30 výpalov. Pravidlo časopisu Ceramics Monthly: ak pec vypína priskoro, posuňte spúšťaciu doštičku mierne nahor; ak neskoro, mierne nadol. Nech vypínač robí čokoľvek, „Vždy dôverujte veľkým kontrolným kužeľom{{en: witness cones}} viac ako malým kužeľom vo vypínači.“
 
 > [!WARNING]
-> **Kiln-Sitter nie je bezpečnostné zariadenie.** Návod na obsluhu od firmy Dawson uvádza, že „NIE JE určený na to, aby slúžil ako spoľahlivé bezpečnostné vypínacie zariadenie, a pec by NEMALA zostať bez dozoru dlhšie, ako je odhadovaný čas výpalu“. Aj taká obyčajná vec, ako je surový výrobok{{en: greenware}}, ktorý spadne na trubicu, „môže spôsobiť prepálenie“. Buďte pri peci a skontrolujte ju, keď by mal výpal končiť, a nikdy v nej nevypaľujte nad niečím horľavým ani v jeho blízkosti, napríklad nad drevenou podlahou alebo kobercom.
+> **Kiln-Sitter nie je bezpečnostné zariadenie.** Návod na obsluhu od firmy Dawson uvádza, že „NIE JE určený na to, aby slúžil ako vypínacie zariadenie bezpečné pri poruche, a pec by NEMALA zostať bez dozoru dlhšie, ako je odhadovaný čas výpalu“. Aj taká obyčajná vec, ako je surový výrobok{{en: greenware}}, ktorý spadne na trubicu, „môže spôsobiť prepálenie“. Buďte pri peci a skontrolujte ju, keď by mal výpal končiť, a nikdy v nej nevypaľujte nad niečím horľavým ani v jeho blízkosti, napríklad nad drevenou podlahou alebo kobercom.
 
 Kiln-Sitter je určený na výpaly „až po kužeľ 8 vrátane“. Sám nedokáže udržať teplotu ani pomaly chladiť. S praxou a záznamami sa však môžete „stať regulátorom“, ako hovorí Digitalfire: sledovať kužele a ručne otáčať prepínačmi.
 
@@ -375,7 +376,7 @@ Samostojné Ortonove kužele sa v Japonsku predávajú pod názvom 立つゼー�
 
 ### Prečo začiatok prebieha pomaly
 
-Voda, ktorá sa mení na paru, „zväčší objem 1170-krát“, upozorňuje Bracker's, preto treba vlhké výrobky sušiť pomaly. L&L a Orton radia, že „Pod 1500°F (815°C) treba dbať najmä na rovnomerné ohriatie črepu{{en: body}}“, a že uhlík musí vyhorieť približne do {{1200 °F; 650 °C}}. Nad {{1500 °F; 816 °C}} môže teplota v peci stúpať rýchlejšie.
+Voda sa pri premene na paru zväčší na viac ako tisícnásobok objemu, preto treba vlhké výrobky sušiť pomaly. L&L a Orton radia, že „Pod 1500°F (815°C) treba dbať najmä na rovnomerné ohriatie črepu{{en: body}}“, a že uhlík musí vyhorieť približne do {{1200 °F; 650 °C}}. Nad {{1500 °F; 816 °C}} môže teplota v peci stúpať rýchlejšie.
 
 Table: Čo sa deje pri ohreve prežahu
 Label: Čo sa deje pri prežahu
@@ -595,22 +596,22 @@ Ak Kiln-Sitter vypne skôr, ako sa kužele na doske ohnú, nabudúce dajte do vy
 
 **Pyrometer** je teplomer, ktorý ukazuje teplotu nameranú **termočlánkom**, teplotnou sondou zavedenou cez stenu pece. Ukazuje, ako rýchlo teplota v peci stúpa, takže môžete vybrať správny stĺpec tabuľky kužeľov. Meria však pri stene, nie pri výrobkoch, a jeho údaje sa časom posúvajú. L&L uvádza, že termočlánok typu K sa po opakovaných výpaloch na kužeľ 6 môže mýliť o viac ako {{25 °F; 14 °C}}, „čo je rozdiel väčší ako celý kužeľ“, zatiaľ čo samostojný kužeľ sa líši najviac o {{4 °F; 2 °C}}. Podľa firmy Orton treba pyrometre z času na čas znova kalibrovať a kontrolujú sa práve kužeľmi.
 
-## Vetranie, nazeranie do pece a bezpečnosť {#venting}
+## Odsávanie, nahliadanie a bezpečnosť {#venting}
 
-### Vetranie
+### Odsávanie
 
-Na začiatku výpalu uvoľňujú hlina a glazúra{{en: glaze}} vodnú paru a splodiny vrátane oxidu uhoľnatého a glazúry môžu uvoľňovať toxické výpary aj neskôr počas výpalu. L&L označuje ich odvádzanie za „nevyhnutné“. Bez odsávacieho systému to znamená pootvorené veko a otvorené kontrolné otvory v prvých fázach, ako v postupoch vyššie; spomalenie ohrevu v tomto čase navyše pomáha vyhoreniu uhlíka. So **spodným odsávaním** (elektrickým odsávaním namontovaným na peci) zostávajú podľa firmy Orton veko a kontrolné otvory zatvorené počas celého výpalu, okrem kontroly kužeľov{{en: cones}}. Otvorený horný kontrolný otvor chráni aj trubicu vypínača Kiln-Sitter a kovové časti pece.
+Na začiatku výpalu hlina a glazúra uvoľňujú vodnú paru a splodiny, vrátane oxidu uhoľnatého, a glazúry môžu uvoľňovať toxické splodiny aj neskôr počas výpalu. L&L nazýva ich odvádzanie „zásadným“. Bez odsávania to znamená pootvorené veko a otvorené kontrolné otvory v raných fázach, ako je uvedené v postupoch vyššie; pomalší ohrev v tomto čase tiež pomáha vyhorieť uhlíku. V peci bez odsávania Dawson, ktorý vyrobil vypínač Kiln-Sitter{{en: kiln sitter}}, tiež hovorí, aby horný kontrolný otvor zostal otvorený počas celého výpalu: odvetrávanie „zníži opotrebovanie kovových častí pece a predĺži životnosť zostavy trubice“. **Spodné odsávanie** (odsávanie s pohonom namontované na pec) to mení. Odvetrávanie zabezpečuje samo, preto Orton hovorí, že veko a kontrolné otvory zostávajú počas celého výpalu zatvorené, okrem kontroly kužeľov, a L&L hovorí, aby sa odsávanie nechalo zapnuté a kontrolné otvory sa zazátkovali.
 
-Vetranie miestnosti a detektory oxidu uhoľnatého opisujú návody [Bezpečné miešanie a vetranie](/guides/safe-mixing) a [Neotrávte svoju rodinu](/guides/home-safety).
+Informácie o vetraní miestnosti a o detektoroch oxidu uhoľnatého nájdete v návodoch [Bezpečné miešanie a vetranie](/guides/safe-mixing) a [Neotrávte svoju rodinu](/guides/home-safety).
 
-### Kým pec vypaľuje
+### Keď pec vypaľuje
 
-- Do kontrolného otvoru sa pozerajte len cez zváračské okuliare s ochranným stupňom 3 s filtrom proti IR žiareniu; slnečné okuliare nestačia. Skutt radí zátky do otvorov zakrútiť, aby nevypadli.
-- Nenechávajte pec bez dozoru dlhšie, ako je očakávaný čas výpalu; Kiln-Sitter nie je spoľahlivá poistka.
-- Nikdy nevypaľujte na niečom horľavom ani v jeho blízkosti, napríklad na drevenej podlahe alebo koberci.
-- Dodržujte bezpečné vzdialenosti uvedené v návode na obsluhu. Zverejnené hodnoty sa pohybujú od 12 palcov (30 cm) po 3 stopy (91 cm); ak návod na obsluhu nič neuvádza, najbezpečnejšou voľbou je 18 palcov (46 cm) od stien a 3 stopy (91 cm) od všetkého horľavého.
-- Priestor okolo závažia vypínača Kiln-Sitter udržiavajte voľný, aby závažie mohlo spadnúť.
-- Keď výpal skončí, vypnite prepínače a vypnite aj istič.
+- Do kontrolného otvoru sa pozerajte len cez zváračské okuliare s filtrom proti IR žiareniu, ochranný stupeň 3; slnečné okuliare nestačia. Skutt radí zátky zaskrutkovať na miesto, aby nevypadli.
+- Nenechávajte pec bez dozoru po očakávanom čase výpalu; vypínač Kiln-Sitter nie je poistka proti zlyhaniu.
+- Nikdy nevypaľujte na ničom, čo horí, ani v jeho blízkosti, napríklad na drevenej podlahe alebo na koberci.
+- Dodržiavajte bezpečné vzdialenosti uvedené v návode na obsluhu. Publikované hodnoty sa pohybujú od 12 palcov (30 cm) do 3 stôp (91 cm); kde návod mlčí, najbezpečnejšou voľbou je 18 palcov (46 cm) od stien a 3 stopy (91 cm) od všetkého, čo horí.
+- Priestor okolo závažia vypínača Kiln-Sitter nechajte voľný, aby mohlo spadnúť.
+- Po skončení výpalu vypnite prepínače a vypnite aj istič.
 
 ## Chladnutie a vykladanie {#cooling}
 

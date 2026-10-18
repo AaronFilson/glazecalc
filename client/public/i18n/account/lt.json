@@ -81,6 +81,7 @@
     "createAccount": "Sukurti paskyrą",
     "title": "Jūsų paskyra",
     "signedInAs": "Prisijungta kaip {email}.",
+    "contents": "Šiame puslapyje",
     "changeHeading": "Slaptažodžio keitimas",
     "current": "Dabartinis slaptažodis",
     "currentMissing": "Įveskite dabartinį slaptažodį.",
@@ -106,7 +107,7 @@
     "emailSend": "Siųsti nuorodą",
     "emailFailed": "Klaida: nuorodos išsiųsti nepavyko. Bandykite dar kartą.",
     "signOutHeading": "Atsijungimas visuose įrenginiuose",
-    "signOutText": "Atjungia jus visuose įrenginiuose, įskaitant šį. Naudokite, jei pametėte įrenginį arba manote, kad kažkas kitas turi jūsų prisijungimo duomenis.",
+    "signOutText": "Atjungia jus visuose įrenginiuose, taip pat ir šiame, bei sustabdo jūsų prieigos žetonus ir bendrinimo nuorodas. Naudokite, jei praradote įrenginį arba manote, kad kažkas kitas turi jūsų prisijungimo duomenis.",
     "signOutButton": "Atsijungti visuose įrenginiuose",
     "signOutFailed": "Klaida: atsijungti nepavyko. Bandykite dar kartą.",
     "confirmStep": "Dviejų žingsnių prisijungimas įjungtas, todėl patvirtinkite, kad tai jūs: įveskite slaptažodį ir atlikite antrą žingsnį."
@@ -118,6 +119,8 @@
     "on": "Dviejų žingsnių prisijungimas įjungtas.",
     "onText": "Prisijungiate naudodami slaptažodį ir antrą žingsnį arba vien prieigos raktą.",
     "off": "Dviejų žingsnių prisijungimas išjungtas.",
+    "badgeOn": "Įjungta",
+    "badgeOff": "Išjungta",
     "offText": "Norėdami jį įjungti, nustatykite autentifikavimo programą arba pridėkite prieigos raktą.",
     "confirmEmailFirst": "Pirmiausia aukščiau patvirtinkite el. pašto adresą. Juo pranešame apie prisijungimo būdo pakeitimus ir padedame, jei prarastumėte antrą žingsnį.",
     "appHeading": "Autentifikavimo programa",
@@ -141,6 +144,7 @@
     "nameCheck": "Prieigos raktui suteikite nuo 1 iki {most} simbolių pavadinimą.",
     "passkeyLimit": "Turite {most} prieigos raktų, daugiau paskyroje būti negali. Kad pridėtumėte kitą, vieną pašalinkite.",
     "codesTitle": "Atkūrimo kodai",
+    "codesLeft": "{count, plural, one {Liko # iš {total} atkūrimo kodų.} few {Liko # iš {total} atkūrimo kodų.} many {Liko # iš {total} atkūrimo kodų.} other {Liko # iš {total} atkūrimo kodų.}} Jei negalite naudoti programos ar prieigos rakto, vietoj jų jus prijungia kodas. Kiekvienas kodas veikia tik kartą.",
     "codesLow": "Netrukus sukurkite naujus kodus. Jei jie baigsis, o jūs prarasite programą ir prieigos raktus, prisijungti nebegalėsite.",
     "newCodes": "Sukurti naujus atkūrimo kodus",
     "offHeading": "Išjungimas",
@@ -149,6 +153,8 @@
     "offCodes": "Jūsų atkūrimo kodai nustoja veikti.",
     "offSignOut": "Visi kiti prie jūsų paskyros prisijungę įrenginiai atjungiami. Šis lieka prisijungęs.",
     "offEmail": "Atsiųsime jums el. laišką, kad jis buvo išjungtas.",
+    "offRemoveApp": "Išjungti dviejų žingsnių prisijungimą (pašalina programą)",
+    "offRemoveAppFirst": "Pašalinti programą, kad būtų galima pradėti išjungti",
     "offPasskeys": "{count, plural, one {Norėdami išjungti, aukščiau skiltyje Prieigos raktai pašalinkite savo prieigos raktą.} few {Norėdami išjungti, aukščiau skiltyje Prieigos raktai pašalinkite savo # prieigos raktus.} many {Norėdami išjungti, aukščiau skiltyje Prieigos raktai pašalinkite savo # prieigos rakto.} other {Norėdami išjungti, aukščiau skiltyje Prieigos raktai pašalinkite savo # prieigos raktų.}}",
     "offPasskeysToo": "{count, plural, one {Turite ir prieigos raktą: pašalinkite jį aukščiau skiltyje Prieigos raktai, kartu su programa.} few {Turite ir # prieigos raktus: pašalinkite juos aukščiau skiltyje Prieigos raktai, kartu su programa.} many {Turite ir # prieigos rakto: pašalinkite juos aukščiau skiltyje Prieigos raktai, kartu su programa.} other {Turite ir # prieigos raktų: pašalinkite juos aukščiau skiltyje Prieigos raktai, kartu su programa.}}",
     "addAppText": "Norėdami nustatyti autentifikavimo programą, pirmiausia patvirtinkite, kad tai jūs.",
@@ -201,6 +207,25 @@
     "recipes": "Receptai (CSV)",
     "materials": "Žaliavos (CSV)"
   },
+  "trash": {
+    "heading": "Šiukšlinė",
+    "text": "Tai, ką pašalinate iš savo sąsiuvinio, 30 dienų laukia šiukšlinėje. Iš ten grąžinkite arba panaikinkite visam laikui.",
+    "open": "Atidaryti šiukšlinę"
+  },
+  "shared": {
+    "heading": "Bendrinami receptai",
+    "text": "Receptai, kuriais dalijatės nuoroda ir kuriuos bet kas, turintis nuorodą, gali perskaityti be paskyros. Nuoroda parodoma tik vieną kartą, kai ji sukuriama, todėl čia jos parodyti negalima. Norėdami receptu dalytis dar kartą, sukurkite naują nuorodą recepto meniu Daugiau.",
+    "since": "Bendrinama nuo {date}",
+    "notesShown": "Pastabos rodomos",
+    "notesHidden": "Pastabos nerodomos",
+    "untitled": "Receptas be pavadinimo",
+    "stop": "Nustoti bendrinti",
+    "stopName": "Nustoti bendrinti: {name}",
+    "stopped": "Receptas {name} nebebendrinamas. Jo nuoroda nebeveikia.",
+    "stopFailed": "Nepavyko. Bandykite dar kartą.",
+    "fetchFailed": "Jūsų bendrinamų receptų įkelti nepavyko. Bandykite dar kartą.",
+    "none": "Nebendrinate jokio recepto."
+  },
   "settings": {
     "heading": "Nustatymai",
     "intro": "Įrašomi jūsų paskyroje, todėl galioja visuose įrenginiuose.",
@@ -227,6 +252,22 @@
       },
       "saved": "Įrašyta: skaičių ir datų formatas – {language}.",
       "help": "Kaip rašomi skaičiai ir datos: 12,345.6 ar 12.345,6, ir dienos bei mėnesio tvarka."
+    },
+    "calendar": {
+      "legend": "Kalendorius",
+      "help": "Kalendorius, pagal kurį rodomos datos. Jūsų įvedamos datos lieka pagal Grigaliaus kalendorių.",
+      "gregory": {
+        "label": "Grigaliaus kalendorius",
+        "saved": "Įrašyta: datos rodomos pagal Grigaliaus kalendorių."
+      },
+      "buddhist": {
+        "label": "Tailando budistų era",
+        "saved": "Įrašyta: datos rodomos pagal Tailando budistų erą."
+      },
+      "japanese": {
+        "label": "Japonijos era",
+        "saved": "Įrašyta: datos rodomos pagal Japonijos eras."
+      }
     },
     "decimalMark": {
       "legend": "Kiekių įvedimas",
@@ -265,7 +306,7 @@
         "saved": "Įrašyta: degimas pagal Ortono piroskopus."
       },
       "sk": {
-        "label": "Pagal SK piroskopus (JIS R 8101)",
+        "label": "Pagal SK piroskopus, JIS R 8101",
         "example": "SK 4a, SK 8",
         "saved": "Įrašyta: degimas pagal SK piroskopus."
       },
@@ -291,6 +332,12 @@
         "saved": "Įrašyta: glazūros tankis nurodomas pintos mase."
       },
       "help": "Kaip vadovuose nurodomas glazūros tirštumas. Kol nepasirinksite, tai nustatoma pagal regioną: Italijoje ir Japonijoje – Baumé laipsniai, kitur – santykinis tankis."
+    },
+    "currency": {
+      "legend": "Kainų valiuta",
+      "help": "Kainos, kurias nurodote žaliavoms, ir užmaišo kaina yra šia valiuta. Pakeitus valiutą, jau nurodytos kainos nekonvertuojamos. Kol nepasirinksite, valiuta atitinka jūsų regioną.",
+      "saved": "Įrašyta: kainų valiuta – {currency}.",
+      "notConverted": "Jūsų įrašytos kainos nebuvo konvertuotos: tai vis dar tie patys skaičiai, kuriuos nurodėte."
     },
     "theme": {
       "legend": "Šviesus ar tamsus",
@@ -386,5 +433,72 @@
     "account": "Jūsų paskyra",
     "signIn": "Prisijungti",
     "failed": "Klaida: adreso patvirtinti nepavyko. Bandykite dar kartą."
+  },
+  "providers": {
+    "continueGoogle": "Tęsti su Google",
+    "continueGithub": "Tęsti su GitHub",
+    "failed": "Prisijungti nepavyko. Bandykite dar kartą.",
+    "heading": "Google ir GitHub",
+    "intro": "Susiekite Google arba GitHub paskyrą, kad galėtumėte per ją prisijungti. Glazecalc iš jos išsaugo tik paskyros ID – niekada vardo, nuotraukos ar kitos informacijos, o dviejų žingsnių prisijungimas vis tiek prašo savo antro žingsnio.",
+    "passwordless": "Ši paskyra neturi slaptažodžio. Norėdami pakeisti el. paštą, dviejų žingsnių prisijungimą ar prisijungimo būdus arba panaikinti paskyrą, patvirtinkite, kad tai jūs, prisijungdami iš naujo per Google arba GitHub. Taip pat galite nustatyti slaptažodį.",
+    "setPassword": "Atsiųsti man slaptažodžio nustatymo nuorodą",
+    "setPasswordUnlinks": "Nustačius slaptažodį per el. paštu gautą nuorodą, Google ir GitHub taip pat atsiejami. Vėliau galite juos susieti iš naujo.",
+    "setPasswordFailed": "Nuorodos išsiųsti nepavyko. Bandykite dar kartą.",
+    "confirmFirst": "Norėdami susieti Google ar GitHub, pirmiausia patvirtinkite el. paštą nuoroda, kurią jums išsiuntėme.",
+    "linkedOn": "Susieta {date}",
+    "notLinked": "Nesusieta",
+    "link": "Susieti {provider}",
+    "unlink": "Atsieti {provider}",
+    "linkFailed": "Susieti nepavyko. Bandykite dar kartą.",
+    "reauthIntro": "Ši paskyra neturi slaptažodžio, todėl patvirtinkite, kad tai jūs, prisijungdami iš naujo. Tada per 5 minutes atlikite pakeitimą.",
+    "reauthButton": "Prisijungti iš naujo per {provider}",
+    "reauthHeld": "Iš naujo prisijungėte per {provider}. Per artimiausias 5 minutes galite atlikti vieną pakeitimą be slaptažodžio.",
+    "reauthFirst": "Pirmiausia prisijunkite iš naujo vienu iš aukščiau esančių mygtukų.",
+    "reauthFailed": "Prisijungimo iš naujo pradėti nepavyko. Bandykite dar kartą."
+  },
+  "tokens": {
+    "heading": "Prieigos žetonai",
+    "intro": "Prieigos žetonas leidžia jūsų dirbtinio intelekto asistentui ar scenarijui skaityti jūsų paskyroje esančius receptus, žaliavas, užrašus ir degimo žurnalus. Kol kas žetonas gali tik skaityti: jis niekada nieko nekeičia ir nešalina. Kiekvienas žetonas nustoja veikti jūsų pasirinktą dieną arba iš karto, kai jį atšaukiate.",
+    "howTo": "Kaip prijungti dirbtinio intelekto asistentą",
+    "listLabel": "Jūsų prieigos žetonai",
+    "none": "Neturite prieigos žetonų.",
+    "hint": "baigiasi {hint}",
+    "readOnly": "Tik skaitymas",
+    "created": "sukurtas {date}",
+    "lastUsed": "paskutinį kartą naudotas {date}",
+    "neverUsed": "niekada nenaudotas",
+    "expires": "galioja iki {date}",
+    "expiredOn": "nustojo galioti {date}",
+    "revokedOn": "atšauktas {date}",
+    "revoke": "Atšaukti",
+    "revokeNamed": "Atšaukti {name}",
+    "revokeAll": "Atšaukti visus prieigos žetonus",
+    "revokeFailed": "Klaida: žetono atšaukti nepavyko. Bandykite dar kartą.",
+    "loadFailed": "Jūsų prieigos žetonų įkelti nepavyko. Iš naujo įkelkite puslapį ir bandykite dar kartą.",
+    "createHeading": "Žetono sukūrimas",
+    "name": "Pavadinimas",
+    "nameHint": "Kas padėtų jį atskirti, pavyzdžiui, asistentas ar kompiuteris, kuriam jis skirtas.",
+    "nameCheck": "Žetonui suteikite nuo 1 iki {most} simbolių pavadinimą.",
+    "expiry": "Nustoja veikti po",
+    "days": "{count, plural, one {# diena} few {# dienos} many {# dienos} other {# dienų}}",
+    "expiryHint": "Likus 7 dienoms iki žetono nustojimo veikti, išsiunčiame jums el. laišką.",
+    "confirmEmailFirst": "Prieš kurdami žetoną, patvirtinkite el. paštą: atidarykite nuorodą, kurią išsiuntėme adresu {email}. Šiuo adresu pranešame, kai sukuriamas žetonas ir prieš jam nustojant veikti.",
+    "resend": "Siųsti patvirtinimo nuorodą dar kartą",
+    "scopeNote": "Žetonas gali skaityti jūsų įrašus, bet jų keisti negali.",
+    "confirmStep": "Norėdami sukurti žetoną, patvirtinkite, kad tai jūs.",
+    "create": "Sukurti žetoną",
+    "failed": "Klaida: žetono sukurti nepavyko. Bandykite dar kartą.",
+    "limit": "Veikia {most} jūsų prieigos žetonų – daugiau paskyroje būti negali. Atšaukite vieną, kad galėtumėte sukurti kitą.",
+    "newHeading": "Nukopijuokite naują žetoną dabar",
+    "newText": "Jis rodomas tik šį kartą. Kas jį turi, gali skaityti jūsų įrašus, kol žetonas nustos veikti, todėl saugokite jį kaip slaptažodį ir duokite tik savo asistentui ar scenarijui.",
+    "newLabel": "Jūsų naujas prieigos žetonas",
+    "copy": "Kopijuoti žetoną",
+    "copied": "Nukopijuota.",
+    "copyFailed": "Nukopijuoti nepavyko. Pažymėkite žetoną ir nukopijuokite patys.",
+    "done": "Nukopijavau",
+    "keptHeading": "Jūsų prieigos žetonai vis dar veikia",
+    "keptText": "{count, plural, one {Slaptažodžio pakeitimas nesustabdė jūsų prieigos žetono. Jei slaptažodį pakeitėte todėl, kad kas nors kitas galėjo jį žinoti, atšaukite ir žetoną.} few {Slaptažodžio pakeitimas nesustabdė jūsų # prieigos žetonų. Jei slaptažodį pakeitėte todėl, kad kas nors kitas galėjo jį žinoti, atšaukite ir juos.} many {Slaptažodžio pakeitimas nesustabdė jūsų # prieigos žetono. Jei slaptažodį pakeitėte todėl, kad kas nors kitas galėjo jį žinoti, atšaukite ir juos.} other {Slaptažodžio pakeitimas nesustabdė jūsų # prieigos žetonų. Jei slaptažodį pakeitėte todėl, kad kas nors kitas galėjo jį žinoti, atšaukite ir juos.}}",
+    "keep": "Palikti",
+    "signOutNote": "{count, plural, one {Taip pat visam laikui sustabdomas jūsų prieigos žetonas.} few {Taip pat visam laikui sustabdomi jūsų # prieigos žetonai.} many {Taip pat visam laikui sustabdoma jūsų # prieigos žetono.} other {Taip pat visam laikui sustabdoma jūsų # prieigos žetonų.}}"
   }
 }

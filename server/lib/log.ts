@@ -24,6 +24,19 @@ export const codeOf = (err: unknown): string => {
   return typeof code === 'string' && /^[A-Za-z0-9_.-]{1,40}$/.test(code) ? code : 'unknown';
 };
 
+/**
+ * A request's address as the log may write it: the provider sign-in's
+ * callback (/api/auth/<provider>/callback, server/routes/oauth_routes.ts)
+ * without its query, which carries the provider's one-time code and the state;
+ * any other address as it is. The nginx access log drops the same query
+ * (deploy/nginx/glazecalc.conf).
+ */
+export const pathForLog = (url: string): string => {
+  const query = url.indexOf('?');
+  const path = query === -1 ? url : url.slice(0, query);
+  return /^\/api\/auth\/[^/]+\/callback\/?$/i.test(path) ? path : url;
+};
+
 const threshold = (): number => LEVELS[process.env.LOG_LEVEL as Level] ?? LEVELS.info;
 
 const write = (level: Exclude<Level, 'silent'>, msg: string, fields: Fields = {}): void => {

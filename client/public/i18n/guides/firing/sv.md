@@ -6,75 +6,76 @@ lead: Bränna en elugn med Kiln-Sitter eller manuella vred: välja, placera och 
 ## Käglor: vad de mäter {#cones}
 
 > [!NOTE]
-> Följ i första hand ugnens egen bruksanvisning. Den här guiden samlar det som kägel- och ugnstillverkare publicerar om enkla elugnar; den ersätter inte instruktionerna för den egna ugnsmodellen, och där de skiljer sig åt gäller bruksanvisningen.
+> Följ först ugnens egen manual. Den här guiden samlar vad kägel- och ugnstillverkare publicerar om enkla elektriska ugnar; den ersätter inte instruktionerna för den egna modellen, och där de skiljer sig åt gäller manualen.
 
-En **pyrometrisk kägla**{{en: pyrometric cone}} (smältkägla) är en liten, smal pyramid av ett standardiserat keramiskt pulver. När den har fått tillräckligt med värme mjuknar den och böjer sig på ett sätt som går att upprepa. Käglorna ställs i ugnen bredvid godset, och efteråt läser man av hur långt de har böjt sig.
+En **pyrometrisk kägla**{{en: pyrometric cone}} är en liten, smal pyramid av ett standardiserat keramiskt pulver. När den har fått tillräckligt med värme mjuknar den och böjer sig över på ett återkommande sätt. Käglor ställs i ugnen bredvid godset och läses av efter hur långt de har böjt sig.
 
-Käglor mäter **värmearbete**{{en: heatwork}}, den samlade effekten av temperatur och tid. Som Orton, den främsta kägeltillverkaren i USA, uttrycker det: ”Käglor mäter inte enbart temperatur.” En kägla som värms långsamt böjer sig vid en lägre temperatur än en som värms snabbt, och en glasyr{{en: glaze}} beter sig på samma sätt. Därför anger Orton varje käglas temperatur vid en angiven stigning under bränningens sista {{180 °F; 100 °C}}. När en kägla väl har börjat röra sig böjer den sig inom ett smalt intervall, ”vanligtvis mindre än 40° F” (22 °C).
+Käglor mäter **värmearbete**{{en: heatwork}}, den samlade effekten av temperatur och tid. Med Ortons ord, den största amerikanska kägeltillverkaren: ”Käglor mäter inte enbart temperatur.” En kägla som värms långsamt böjer sig vid lägre temperatur än en som värms snabbt, och en glasyr{{en: glaze}} beter sig likadant. Därför anger Orton varje käglas temperatur för en angiven uppvärmningshastighet under de sista {{180 °F; 100 °C}} av bränningen. När en kägla väl börjar röra sig böjer den sig över inom ett smalt intervall, ”vanligtvis mindre än 40° F” (22 °C).
 
 ### Kägelnummer
 
-Kägelnumren går från 022, den kallaste, upp till 42. En inledande nolla markerar den kallare serien och läses ”noll”: kägla 06 (”noll sex”) är kallare än kägla 04, och kägla 01 behöver mindre värme än kägla 1. Orton varnar: det är viktigt att inte blanda ihop de två serierna. Skillnaden är stor: kägla 06 böjer sig vid en mer än {{400 °F; 220 °C}} lägre temperatur än kägla 6.
+Kägelnummer går från 022, den svalaste, upp till 42. En inledande nolla markerar den svalare serien och läses som ”noll”: kägla 06 (”noll sex”) är svalare än kägla 04, och kägla 01 behöver mindre värme än kägla 1. Orton varnar för att det är viktigt att inte blanda ihop de två serierna. Skillnaden är stor: kägla 06 böjer sig mer än {{400 °F; 220 °C}} svalare än kägla 6.
 
-Table: Vanliga temperaturområden, för självstående käglor vid {{108 °F/h; 60 °C/h}}
-Label: Temperaturområden
+Table: Vanliga bränningsintervall, för självstående käglor vid {{108 °F/h; 60 °C/h}}
+Label: Bränningsintervall
 
-| Område           | Käglor |                     Temperatur | Typisk användning                                                    |
-| ---------------- | ------ | -----------------------------: | -------------------------------------------------------------------- |
-| Lågtemperatur    | 06–04  |  {{1828–1945 °F; 998–1063 °C}} | Glasyrer för lergods{{en: earthenware}}; skröjbränning{{en: bisque}} |
-| Mellantemperatur | 5–6    | {{2167–2232 °F; 1186–1222 °C}} | Stengods{{en: stoneware}} och porslin i elugn                        |
-| Högtemperatur    | 9–10   | {{2300–2345 °F; 1260–1285 °C}} | Mest gasbränt stengods och porslin                                   |
+| Intervall        | Käglor |                     Temperatur | Vanlig användning                    |
+| ---------------- | ------ | -----------------------------: | ------------------------------------ |
+| Låg temperatur   | 06–04  |  {{1828–1945 °F; 998–1063 °C}} | Glasyrer för lergods; skröjbränning  |
+| Mellantemperatur | 5–6    | {{2167–2232 °F; 1186–1222 °C}} | Stengods och porslin i elektrisk ugn |
+| Hög temperatur   | 9–10   | {{2300–2345 °F; 1260–1285 °C}} | Stengods och porslin, mest gasbränt  |
 
-Leverantörer i Storbritannien, Europa, Australien och Nya Zeeland anger ofta en temperatur i °C i stället för en kägla: leta upp närmaste kägla i tabellen nedan och bekräfta den med en kontrollkägla{{en: witness cone}}. Segerkäglor och Staffordshirekäglor, de äldre europeiska serierna, bör inte antas ha samma nummer som Ortons, så den här guiden använder Ortonkäglor.
+Leverantörer i Storbritannien, Europa, Australien och Nya Zeeland anger ofta en temperatur i °C i stället för en kägla: hitta närmaste kägla i diagrammet nedan och bekräfta den med en kontrollkägla{{en: witness cone}}. Seger- och Staffordshire-käglor, de äldre europeiska serierna, bör inte antas ha samma nummer som Orton, så den här guiden använder Ortonkäglor.
 
-### Hålltid ger mer värmearbete
+### En hålltid ger mer värmearbete
 
-En **hålltid**{{en: hold}} (kallas också **utjämning**) håller ugnen vid en och samma temperatur en stund. Eftersom käglor mäter värmearbete kan en hålltid i toppen ersätta en högre topptemperatur. Orton anger de här ungefärliga motsvarigheterna:
+En **hålltid**{{en: hold}} (även kallad **soak**) håller ugnen på en och samma temperatur en stund. Eftersom käglor mäter värmearbete kan en hålltid vid toppen ersätta en högre topptemperatur. Orton anger de här ungefärliga motsvarigheterna:
 
-Table: Vad en hålltid vid topptemperaturen motsvarar
-Label: Hålltid och värmearbete
+Table: Vad en hålltid vid toppen är värd
+Label: Hålltider och värmearbete
 
-| Hålltid          | Ungefär samma värmearbete som                         |
-| ---------------- | ----------------------------------------------------- |
-| Cirka 20 minuter | En {{18 °F; 10 °C}} högre topptemperatur              |
-| 40–60 minuter    | En {{36 °F; 20 °C}} högre topptemperatur              |
-| Cirka 2 timmar   | En {{54 °F; 30 °C}} högre topptemperatur              |
-| 1–2 timmar       | ”kan räcka för att deformera nästa högre kägelnummer” |
-| 4–6 timmar       | Tillräckligt för att böja en kägla två nummer varmare |
+| Hålltid            | Ungefär samma värmearbete som                         |
+| ------------------ | ----------------------------------------------------- |
+| Omkring 20 minuter | En topptemperatur som är {{18 °F; 10 °C}} högre       |
+| 40–60 minuter      | En topptemperatur som är {{36 °F; 20 °C}} högre       |
+| Omkring 2 timmar   | En topptemperatur som är {{54 °F; 30 °C}} högre       |
+| 4–6 timmar         | Tillräckligt för att böja en kägla två nummer varmare |
 
-En hålltid är alltså aldrig gratis: läggs en hålltid till, räkna med att käglorna böjer sig längre och sänk topptemperaturen i motsvarande grad.
+Orton tillägger att en hålltid på 1–2 timmar ”kan räcka för att deformera nästa varmare kägelnummer”.
 
-### Typer av käglor
+En hålltid är alltså aldrig gratis: om en läggs till, räkna med att käglorna böjer sig längre, och sänk toppen i motsvarande grad.
 
-Orton tillverkar fyra typer. Två står på ugnsplattan och visar vad godset har fått; två är till Kiln-Sitter-brytaren.
+### Typer av kägla
 
-Table: Ortons fyra typer av käglor
-Label: Typer av käglor
+Orton gör fyra typer. Två står på ugnsplattan för att visa vad godset har fått; två är till Kiln-Sittern.
 
-| Typ                 | Används som                  | Hur den står                                                                                       |
-| ------------------- | ---------------------------- | -------------------------------------------------------------------------------------------------- |
-| Självstående        | Kontrollkägla på ugnsplattan | En inbyggd fot ger höjden, 1¾ tum (44 mm), och lutningen på 8°; ingen hållare behövs               |
-| Stor                | Kontrollkägla på ugnsplattan | Sätts i en kägelhållare eller en klump lera med exakt 2 tum (51 mm) synligt, lutad 8° från lodrätt |
-| Liten (juniorkägla) | Kiln-Sitter                  | Ligger tvärs över brytarens kägelstöd; 15/16 tum (24 mm) synligt om den ställs på en ugnsplatta    |
-| Stav                | Kiln-Sitter                  | Samma pulver som små käglor, i en jämn stavform                                                    |
+Table: Ortons fyra typer av kägla
+Label: Typer av kägla
 
-Höjden spelar roll: en skillnad på ¼ tum (6 mm) i höjd hos en stor kägla ”kan ge mer än en halv käglas skillnad i böjning”. Käglor blir inte dåliga och åldras inte, och fuktig förvaring påverkar dem inte.
+| Typ            | Används till                 | Hur den står                                                                                     |
+| -------------- | ---------------------------- | ------------------------------------------------------------------------------------------------ |
+| Självstående   | Kontrollkägla på ugnsplattan | En inbyggd bas anger höjden, 1¾ tum (44 mm), och lutningen på 8°; ingen hållare behövs           |
+| Stor           | Kontrollkägla på ugnsplattan | Satt i en kägelhållare eller en klump lera med exakt 2 tum (51 mm) synlig, lutad 8° från lodrätt |
+| Liten (junior) | Kiln-Sitter                  | Ligger tvärs över Kiln-Sitterns stöd; 15/16 tum (24 mm) synlig om den ställs på en ugnsplatta    |
+| Stav           | Kiln-Sitter                  | Samma pulver som små käglor, i en jämn stavform                                                  |
+
+Höjden spelar roll: en skillnad på ¼ tum (6 mm) i höjden på en stor kägla ”kan ge mer än en halv käglas skillnad i böjning”. Käglor blir inte dåliga och åldras inte, och fuktig förvaring påverkar dem inte.
 
 ### Vad ”kägla 6” betyder i praktiken
 
-Kägeltabellen anger {{2232 °F; 1222 °C}} för en självstående kägla 6, men bara när stigningen under de sista {{180 °F; 100 °C}} är {{108 °F/h; 60 °C/h}}. Med en stigning på {{270 °F/h; 150 °C/h}} böjer sig samma kägla vid {{2269 °F; 1243 °C}}. Verkliga ugnar avviker ytterligare: Digitalfire rapporterar att ”de flesta ugnar når kägla 6 vid 2200°F, inte 2232°F”. ”Kägla 6” betyder alltså att godset har fått det värmearbete som böjer en kägla 6, oavsett vad en termometer visade just då.
+Diagrammet anger en självstående kägla 6 som {{2232 °F; 1222 °C}}, men bara när de sista {{180 °F; 100 °C}} stiger med {{108 °F/h; 60 °C/h}}. Vid en stigning på {{270 °F/h; 150 °C/h}} böjer sig samma kägla vid {{2269 °F; 1243 °C}}. Riktiga ugnar skiljer sig ytterligare: Digitalfire uppger att ”de flesta ugnar når kägla 6 vid 2200°F, inte 2232°F”. ”Kägla 6” betyder alltså att godset fick det värmearbete som böjer en kägla 6, vad en termometer än visade vid tillfället.
 
 :::orton
 
 > [!NOTE]
-> Bränn efter käglan, inte efter klockan eller mätaren. Ställ in en automatik efter kägelnummer, och låt en kontrollkägla på ugnsplattan bekräfta varje bränning.
+> Bränn efter kägla, inte efter klockan eller visaren. Ställ in automatiken efter kägelnummer, och låt en kontrollkägla på ugnsplattan bekräfta varje bränning.
 
 :::
 
 :::temperature
 
 > [!NOTE]
-> Vid bränning efter temperatur: håll slutet av varje bränning likadant, med samma sista stigning, samma topptemperatur och samma hålltid. Då fungerar en glasyr som har fungerat en gång också nästa gång.
+> Vid bränning efter temperatur, håll slutet av varje bränning likadant: samma sista stigningstakt, samma topp och samma hålltid. Då fungerar en glasyr som fungerade en gång igen.
 
 :::
 
@@ -198,11 +199,11 @@ Många Kiln-Sitter-brytare, bland dem Dawsons LT-modeller, har en **säkerhetsti
 Table: Hur länge säkerhetstimern ska ställas in
 Label: Inställning av säkerhetstimer
 
-| Källa     | Inställning                                                                                                          |
-| --------- | -------------------------------------------------------------------------------------------------------------------- |
-| Dawson    | ½ timme längre än den väntade bränntiden tills man känner ugnen, senare så lite som ¼ timme; aldrig mer än 20 timmar |
-| L&L       | Mycket högt första gången, och notera hur lång tid bränningen tar; därefter cirka 1 timme längre                     |
-| Bracker's | 30 minuter till 1 timme längre än bränntiden                                                                         |
+| Källa     | Inställning                                                                                                                              |
+| --------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| Dawson    | ½ timme längre än den väntade bränntiden tills man känner ugnen, senare så lite som ¼ timme längre; ställ den aldrig på mer än 20 timmar |
+| L&L       | Mycket högt första gången, och notera hur lång tid bränningen tar; därefter cirka 1 timme längre                                         |
+| Bracker's | 30 minuter till 1 timme längre än bränntiden                                                                                             |
 
 > [!NOTE]
 > Vår utgångspunkt: generöst första gången (inom skalans 20 timmar), sedan ½ till 1 timme längre än den tid som antecknades. Timern visar också hur länge en bränning tog: inställd på 7 och slut på 1 betyder 6 timmar.
@@ -375,7 +376,7 @@ Självstående Ortonkäglor säljs i Japan under namnet 立つゼーゲル (”s
 
 ### Varför början går långsamt
 
-Vatten som blir ånga ”expanderar 1170 gånger”, skriver Bracker's, så fuktigt gods måste torkas långsamt. L&L och Orton råder att ”Särskild försiktighet bör iakttas under 1500°F (815°C) för att värma godset jämnt”, och att kolet måste vara utbränt före ungefär {{1200 °F; 650 °C}}. Över {{1500 °F; 816 °C}} kan ugnen stiga snabbare.
+Vatten expanderar mer än tusenfalt när det blir ånga, så fuktigt gods måste torkas långsamt. L&L och Orton råder att ”Särskild försiktighet bör iakttas under 1500°F (815°C) för att värma godset jämnt”, och att kolet måste vara utbränt före ungefär {{1200 °F; 650 °C}}. Över {{1500 °F; 816 °C}} kan ugnen stiga snabbare.
 
 Table: Vad som händer när skröjet värms upp
 Label: Vad som händer vid skröjbränning
@@ -595,22 +596,22 @@ Om Kiln-Sitter-brytaren löser ut innan käglorna på ugnsplattan har böjt sig 
 
 En **pyrometer** är en temperaturmätare som läser av ett **termoelement**, en värmegivare genom ugnsväggen. Den visar hur snabbt ugnen stiger, så att rätt kolumn i kägeltabellen kan väljas. Men den mäter nära väggen, inte vid godset, och visningen driver med tiden. L&L påpekar att ett termoelement av typ K kan visa fel med mer än {{25 °F; 14 °C}} efter upprepade bränningar till kägla 6, ”en skillnad större än en hel kägla”, medan en självstående kägla varierar med högst {{4 °F; 2 °C}}. Orton säger att pyrometrar behöver kalibreras om då och då, och det är med käglor som de kontrolleras.
 
-## Ventilation, titthål och säkerhet {#venting}
+## Utsug, titta och säkerhet {#venting}
 
-### Ventilation
+### Utsug
 
-Tidigt i en bränning avger lera och glasyr{{en: glaze}} vattenånga och rökgaser, bland annat kolmonoxid, och glasyrer kan avge giftiga ångor även senare i bränningen. L&L kallar det ”nödvändigt” att ventilera bort dem. Utan utsug betyder det att locket står på glänt och titthålen är öppna i de tidiga faserna, som i tillvägagångssätten ovan; att sakta ned uppvärmningen under den tiden hjälper också kolet att brinna ut. Med ett **utsug genom ugnsbotten** (ett eldrivet utsug som är monterat på ugnen) säger Orton att locket och titthålen ska vara stängda under hela bränningen, utom när käglorna{{en: cones}} kontrolleras. Ett öppet översta titthål skyddar också Kiln-Sitter-röret och ugnens metalldelar.
+Tidigt i en bränning avger lera och glasyr{{en: glaze}} vattenånga och gaser, däribland kolmonoxid, och glasyrer kan avge giftiga gaser senare i bränningen också. L&L kallar det ”helt nödvändigt” att ventilera bort dem. Utan utsug betyder det locket på glänt och titthålen öppna i de tidiga stegen, som i tillvägagångssätten ovan; att värma långsammare under den tiden hjälper också kolet att brinna bort. I en ugn utan utsug säger Dawson, som tillverkade Kiln-Sittern, också att översta titthålet ska stå öppet under hela bränningen: ventilationen ”minskar förslitningen av ugnens metalldelar och förlänger rörenhetens livslängd”. Ett **utsug genom ugnsbotten**{{en: downdraft vent}} (ett fläktdrivet utsug som monteras på ugnen) ändrar det. Det sköter ventilationen, så Orton säger att locket och titthålen hålls stängda under hela bränningen utom för att kontrollera käglorna, och L&L säger att utsuget ska stå på och titthålen proppas.
 
-Om ventilation av rummet och om kolmonoxidlarm, se [Säker blandning och ventilation](/guides/safe-mixing) och [Förgifta inte familjen](/guides/home-safety).
+För ventilation av rummet, och för kolmonoxidlarm, se [Säker blandning och ventilation](/guides/safe-mixing) och [Förgifta inte familjen](/guides/home-safety).
 
 ### Medan ugnen bränner
 
-- Titta genom ett titthål bara med svetsglasögon med IR-skydd i skyddsgrad 3; solglasögon räcker inte. Skutt råder att vrida fast propparna så att de inte faller ut.
-- Lämna inte ugnen utan tillsyn längre än den väntade bränntiden; en Kiln-Sitter är ingen felsäker avstängning.
-- Bränn aldrig på eller nära något som kan brinna, till exempel ett trägolv eller en matta.
-- Håll de säkerhetsavstånd som bruksanvisningen anger. Publicerade värden går från 12 tum (30 cm) till 3 fot (91 cm); där bruksanvisningen inte säger något är 18 tum (46 cm) från väggar och 3 fot (91 cm) från allt som kan brinna det säkraste valet.
-- Håll utrymmet runt Kiln-Sitter-brytarens vikt fritt så att den kan falla.
-- När bränningen är slut, vrid av vreden och slå också av säkringen.
+- Titta genom ett titthål bara med svetsglasögon med IR-skydd i skyddsgrad 3; solglasögon räcker inte. Skutt rekommenderar att proppen vrids på plats så att den inte faller ut.
+- Lämna inte ugnen utan uppsikt utöver den väntade bränningstiden; en Kiln-Sitter är inget felsäkert skydd.
+- Bränn aldrig på eller nära något brännbart, som ett trägolv eller en matta.
+- Håll de avstånd som anges i manualen. Publicerade siffror varierar från 12 tum (30 cm) till 3 fot (91 cm); där manualen är tyst är 18 tum (46 cm) från väggar och 3 fot (91 cm) från allt brännbart det säkraste valet.
+- Håll utrymmet runt Kiln-Sitterns vikt fritt så att den kan falla.
+- När bränningen är klar, stäng av brytarna och stäng också av säkringen.
 
 ## Kylning och urplockning {#cooling}
 

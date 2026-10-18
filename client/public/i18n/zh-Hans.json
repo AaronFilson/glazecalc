@@ -17,13 +17,17 @@
     "confirmEmail": "确认电子邮箱 - Glazecalc",
     "home": "工作室笔记本 - Glazecalc",
     "recipe": "配方 - Glazecalc",
+    "import": "粘贴配方 - Glazecalc",
+    "blends": "试片混配 - Glazecalc",
     "material": "原料 - Glazecalc",
     "additive": "添加剂 - Glazecalc",
     "firingLogs": "烧窑记录 - Glazecalc",
     "notes": "笔记 - Glazecalc",
     "trash": "回收站 - Glazecalc",
     "account": "账户与设置 - Glazecalc",
-    "notFound": "页面不存在 - Glazecalc"
+    "notFound": "页面不存在 - Glazecalc",
+    "shared": "分享的配方 - Glazecalc",
+    "assistants": "在 AI 助手中使用 Glazecalc - Glazecalc"
   },
   "nav": {
     "skip": "跳到正文",
@@ -39,7 +43,9 @@
     "guides": "指南",
     "about": "关于",
     "account": "账户",
+    "trialAccount": "试用账户",
     "accountTitle": "账户与设置",
+    "trash": "回收站",
     "signOut": "退出登录",
     "createAccount": "创建免费账户"
   },
@@ -66,7 +72,8 @@
     "problem": "报告问题",
     "pottery": "手工陶艺：Updraft Pottery Studio",
     "copyright": "© 2017–2026 Aaron Filson / Candling Development Studio · 免费开源（MIT 许可证）",
-    "languages": "语言"
+    "languages": "语言",
+    "language": "语言："
   },
   "numbers": {
     "notANumber": "请输入数字，例如 {example}。",
@@ -78,14 +85,14 @@
     "guides": "写给新手陶艺人的通俗指南：釉是什么，如何安全地调配釉料，如何保障家人安全，以及如何用简易窑炉烧成。",
     "glazingBasics": "釉由什么构成，窑火如何把它烧成玻璃，以及测温锥、熔块、釉式和釉面缺陷的含义。写给新手陶艺人的指南。",
     "makingAGlaze": "如何购买、存放、称量和调配釉料，如何掌握釉层厚度，如何在自己用的坯体上试釉，以及如何做记录，以便重新调出同一种釉。",
-    "safeMixing": "如何让釉料粉尘远离肺部、烧窑废气远离住所：安全习惯、防尘口罩、清洁、通风和有风险的原料。",
+    "safeMixing": "如何让釉料粉尘远离肺部、烧窑废气远离住所：安全习惯、防颗粒物呼吸器、清洁、通风和有风险的原料。",
     "homeSafety": "孩子或宠物吞下釉料原料时怎么办，以及如何让原料、粉尘、窑和手工制作的器物在家人身边保持安全。",
     "firing": "如何烧电窑：选择、摆放和读取测温锥，并参照已公布的素烧和釉烧烧成曲线，附测温锥对照表。",
     "advice": "关于调配、施釉和烧成的实用建议，来自 Glazecalc，另有您自己添加的建议。对陶艺人和陶瓷艺术家免费。",
     "about": "Glazecalc 是一款免费开源的釉料化学计算器和笔记本。了解它如何算出釉式，以及它是如何构建的。",
     "privacy": "Glazecalc 如何处理您的数据：没有广告，没有分析，没有追踪，也不出售任何数据。保存哪些数据，为什么保存，以及如何行使您的权利。",
     "signup": "创建免费的 Glazecalc 账户，保存您的釉料配方、原料、笔记和烧窑记录。没有广告，您的数据绝不出售。",
-    "imageAlt": "Glazecalc：看懂您的釉，而不只是把它们调出来。"
+    "imageAlt": "Glazecalc 首页：面向陶艺人的免费釉料化学工具，旁边是一张烧过的测温锥组的照片。"
   },
   "notices": {
     "dismiss": "关闭",
@@ -93,11 +100,15 @@
     "error": "错误：{text}"
   },
   "remove": {
-    "removed": "已移除“{name}”。",
     "alreadyRemoved": "“{name}”已被移除。",
+    "trashed": "已将“{name}”移入回收站。",
+    "undo": "撤销",
+    "restored": "已放回“{name}”。",
+    "restoreFailed": "无法放回“{name}”。它仍在回收站中。",
     "failed": "无法移除。请再试一次。",
     "question": "要移除“{name}”吗？",
     "cannotUndo": "此操作无法撤销。",
+    "toTrash": "30 天内可以从回收站放回。",
     "removing": "正在移除……",
     "yes": "是，移除",
     "cancel": "取消",
@@ -226,18 +237,22 @@
     "firedWeight": "烧后质量",
     "notes": "备注",
     "analysis": "化学组成",
+    "details": "详情",
     "formula": "化学式",
+    "formulaLine": "化学式：{formula}",
     "useInstead": "<b>替代品：</b>{list}",
     "similar": "相似原料：{list}",
     "replaces": "取代：{list}",
     "aliases": "又称：{list}",
     "madeBy": "生产商：{name}",
     "source": "来源：",
+    "hazardsLine": "危害：{hazards}",
     "noChemistry": "无化学数据：不计入釉式",
     "countedAs": "按“{name}”计算",
     "nothingMatches": "没有匹配项。请换个名称、类别或地区试试。",
     "loading": "正在加载……",
-    "notFetched": "无法获取列表。<retry>重试</retry>"
+    "notFetched": "无法获取列表。<retry>重试</retry>",
+    "showAll": "{noun, select, additives {{count, plural, other {显示全部 # 种添加剂}}} other {{count, plural, other {显示全部 # 种原料}}}}"
   },
   "chemistryForm": {
     "name": "{noun, select, additive {请为添加剂命名。} other {请为原料命名。}}",
@@ -272,7 +287,7 @@
     "close": "关闭"
   },
   "unity": {
-    "fluxes": "熔剂 – RO",
+    "fluxes": "熔剂 – R₂O 和 RO",
     "stabilizers": "稳定剂 – R₂O₃",
     "glassFormers": "玻璃形成剂 – RO₂",
     "wildcards": "其他氧化物",

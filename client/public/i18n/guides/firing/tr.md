@@ -34,13 +34,14 @@ Birleşik Krallık, Avrupa, Avustralya ve Yeni Zelanda’daki tedarikçiler gene
 Table: En yüksek sıcaklıkta bekletmenin karşılığı
 Label: Bekletme ve ısı işi
 
-| Bekletme           | Yaklaşık olarak şununla aynı ısı işi                      |
-| ------------------ | --------------------------------------------------------- |
-| Yaklaşık 20 dakika | En yüksek sıcaklığın {{18 °F; 10 °C}} daha yüksek olması  |
-| 40–60 dakika       | En yüksek sıcaklığın {{36 °F; 20 °C}} daha yüksek olması  |
-| Yaklaşık 2 saat    | En yüksek sıcaklığın {{54 °F; 30 °C}} daha yüksek olması  |
-| 1–2 saat           | “bir numara daha sıcak piramidi deforme etmeye yetebilir” |
-| 4–6 saat           | İki numara daha sıcak bir piramidi eğmeye yeter           |
+| Bekletme           | Yaklaşık olarak şununla aynı ısı işi                     |
+| ------------------ | -------------------------------------------------------- |
+| Yaklaşık 20 dakika | En yüksek sıcaklığın {{18 °F; 10 °C}} daha yüksek olması |
+| 40–60 dakika       | En yüksek sıcaklığın {{36 °F; 20 °C}} daha yüksek olması |
+| Yaklaşık 2 saat    | En yüksek sıcaklığın {{54 °F; 30 °C}} daha yüksek olması |
+| 4–6 saat           | İki numara daha sıcak bir piramidi eğmeye yeter          |
+
+Orton, 1–2 saatlik bir bekletmenin “bir numara daha sıcak piramidi deforme etmeye yetebileceğini” de ekler.
 
 Yani bekletme hiçbir zaman bedava değildir: bir bekletme eklerseniz piramitlerin daha fazla eğilmesini bekleyin ve en yüksek sıcaklığı buna göre düşürün.
 
@@ -198,11 +199,11 @@ Dawson’ın LT modelleri de dahil olmak üzere birçok kiln sitter’da bir **s
 Table: Süre sınırlayıcı zamanlayıcı ne kadara ayarlanmalı
 Label: Zamanlayıcı ayarları
 
-| Kaynak    | Ayar                                                                                                                                         |
-| --------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| Dawson    | Fırını tanıyana kadar beklenen pişirim süresinden ½ saat fazla, sonra ¼ saat fazlasına kadar inebilir; hiçbir zaman 20 saatin ötesinde değil |
-| L&L       | İlk seferde çok yüksek, pişirimin ne kadar sürdüğünü not ederek; sonrasında yaklaşık 1 saat fazla                                            |
-| Bracker's | Pişirim süresinden 30 dakika ile 1 saat arası fazla                                                                                          |
+| Kaynak    | Ayar                                                                                                                                      |
+| --------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| Dawson    | Fırını tanıyana kadar beklenen pişirim süresinden ½ saat fazla, sonra ¼ saat fazlasına kadar inebilir; 20 saatin ötesine asla ayarlamayın |
+| L&L       | İlk seferde çok yüksek, pişirimin ne kadar sürdüğünü not ederek; sonrasında yaklaşık 1 saat fazla                                         |
+| Bracker's | Pişirim süresinden 30 dakika ile 1 saat arası fazla                                                                                       |
 
 > [!NOTE]
 > Başlangıç noktamız: ilk seferde cömert davranın (kadranın 20 saati içinde), sonra kaydettiğiniz süreden ½ ila 1 saat fazla. Zamanlayıcı bir pişirimin ne kadar sürdüğünü de söyler: 7’ye ayarlanıp 1’de bitmesi 6 saat demektir.
@@ -375,7 +376,7 @@ Orton’un kendiliğinden ayaklı piramitleri, altlık ya da sehpa gerektirmedik
 
 ### İlk aşama neden yavaş ilerler
 
-Bracker's firmasının belirttiği gibi, buhara dönüşen su “1170 kat genleşir”; bu yüzden nemli ürünün yavaş kurutulması gerekir. L&L ve Orton, “Bünyeyi eşit ısıtmak için 1500°F (815°C) altında özel dikkat gösterilmelidir” der ve karbonun yaklaşık {{1200 °F; 650 °C}} sıcaklıktan önce yanıp gitmesi gerektiğini öğütler. {{1500 °F; 816 °C}} üzerinde fırın daha hızlı çıkabilir.
+Su buhara dönüşürken bin kattan fazla genleşir; bu yüzden nemli ürünün yavaş kurutulması gerekir. L&L ve Orton, “Bünyeyi eşit ısıtmak için 1500°F (815°C) altında özel dikkat gösterilmelidir” der ve karbonun yaklaşık {{1200 °F; 650 °C}} sıcaklıktan önce yanıp gitmesi gerektiğini öğütler. {{1500 °F; 816 °C}} üzerinde fırın daha hızlı çıkabilir.
 
 Table: Bisküvi ısınırken neler olur
 Label: Bisküvide neler olur
@@ -599,7 +600,7 @@ Kiln sitter, raftaki piramitler yatmadan devreyi keserse, L&L’nin önerdiği g
 
 ### Havalandırma
 
-Pişirimin başında çamur ve sır{{en: glaze}}, karbon monoksit de dahil olmak üzere su buharı, gaz ve duman çıkarır; sırlar pişirimin ilerleyen aşamalarında da zehirli gaz ve duman çıkarabilir. L&L bunların dışarı atılmasını “vazgeçilmez” olarak nitelendirir. Havalandırma sistemi yoksa bu, yukarıdaki yöntemlerde olduğu gibi ilk aşamalarda kapağın aralık, gözetleme deliklerinin açık olması demektir; bu süre içinde ısıtmayı yavaşlatmak karbonun yanıp gitmesine de yardımcı olur. **Alttan emişli bir aspiratörle** (fırına takılan motorlu bir aspiratör) Orton’a göre kapak ve gözetleme delikleri, piramitleri{{en: cones}} kontrol etmek dışında pişirim boyunca kapalı kalır. Açık bir üst gözetleme deliği kiln sitter tüpünü ve fırının metal parçalarını da korur.
+Pişirimin başında çamur ve sır{{en: glaze}}, karbon monoksit de dahil olmak üzere su buharı, gaz ve duman çıkarır; sırlar pişirimin ilerleyen aşamalarında da zehirli gaz ve duman çıkarabilir. L&L bunların dışarı atılmasını “vazgeçilmez” olarak nitelendirir. Havalandırma sistemi yoksa bu, yukarıdaki yöntemlerde olduğu gibi ilk aşamalarda kapağın aralık, gözetleme deliklerinin açık olması demektir; bu süre içinde ısıtmayı yavaşlatmak karbonun yanıp gitmesine de yardımcı olur. Havalandırması olmayan bir fırında, kiln sitter’ı üreten Dawson da üst gözetleme deliğinin pişirim boyunca açık bırakılmasını söyler: havalandırma “fırının metal parçalarındaki yıpranmayı azaltır ve tüp düzeneğinin ömrünü uzatır”. **Alttan emişli bir aspiratör** (fırına takılan motorlu bir aspiratör) bunu değiştirir. Havalandırmayı o yaptığı için Orton, piramitleri{{en: cones}} kontrol etmek dışında kapağın ve gözetleme deliklerinin pişirim boyunca kapalı kalacağını söyler; L&L de aspiratörün açık bırakılmasını ve gözetleme deliklerinin tıkanmasını söyler.
 
 Odanın havalandırılması ve karbon monoksit dedektörleri için [Güvenli karıştırma ve havalandırma](/guides/safe-mixing) ve [Ailenizi zehirlemeyin](/guides/home-safety) rehberlerine bakın.
 

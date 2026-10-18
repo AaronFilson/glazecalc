@@ -284,6 +284,6 @@ describe('MaterialPage', () => {
     await removing;
     await fixture.whenStable();
     expect(page['myMaterials']()).toEqual([]);
-    expect(page['notices'].messages()).toEqual(['Removed "' + mine.name + '".']);
+    expect(page['notices'].messages()).toEqual(['Moved "' + mine.name + '" to the Trash.']);
   });
 });

@@ -56,7 +56,8 @@
     "vet": "Zavolajte veterinárovi.",
     "checkedOn": "Overené na stránkach:",
     "choosePrompt": "Vyberte krajinu, aby ste videli, kam tam volať.",
-    "ministry": "Stránka ministerstva zdravotníctva: <link>{name}</link>."
+    "ministry": "Stránka ministerstva zdravotníctva: <link>{name}</link>.",
+    "reported": "Oficiálne vládne stránky uvádzajú čísla 113, 114 a 115, ale nie, na čo každé slúži; zobrazené úlohy vychádzajú z obežníka Circular 22/2014/TT-BTTTT, ako ho citujú druhotné stránky."
   },
   "density": {
     "sg": "hustota {value}",
@@ -91,6 +92,7 @@
     "caption": "Limitná hodnota na pracovisku pre respirabilný prach kryštalického oxidu kremičitého v krajine {region}, priemer za 8 hodín (overené {date})",
     "captionControl": "Meradlo pre respirabilný kryštalický oxid kremičitý vo vzduchu pracoviska v krajine {region} (overené {date})",
     "both": "Kremeň a kristobalit",
+    "freeSilica": "Voľný oxid kremičitý",
     "quartz": "Kremeň",
     "cristobalite": "Kristobalit",
     "actionLevel": "Akčná úroveň",
@@ -102,6 +104,9 @@
     "quartzAll": "Kremeň, pre prach, ktorý je celý kremeň",
     "cristobaliteAll": "Kristobalit, pre prach, ktorý je celý kristobalit",
     "allFree": "Kontrolná koncentrácia pre prach, ktorý je celý voľný oxid kremičitý",
+    "bandFromTo": "Prach s {from} % až {to} % voľného oxidu kremičitého (SiO₂)",
+    "bandOverTo": "Prach s viac ako {from} % a najviac {to} % voľného oxidu kremičitého",
+    "bandAbove": "Prach s viac ako {from} % voľného oxidu kremičitého",
     "recommended": "Odporúča {abbr}",
     "value": "{value} mg/m³",
     "kind": {
@@ -111,6 +116,7 @@
       "control": "Kontrolná koncentrácia (管理濃度): meradlo na posúdenie vzduchu na pracovisku podľa meraní na ňom, nie limit toho, čo vdychuje jeden človek."
     },
     "setBy": "Túto hodnotu stanovuje <link>{law}</link>.",
+    "from": "Platí od {date}.",
     "lowerThanEu": "Táto hodnota je nižšia ako záväzná limitná hodnota EÚ {value} mg/m³.",
     "sameAsEu": "Táto hodnota je rovnaká ako záväzná limitná hodnota EÚ.",
     "recommendedBy": "Túto hodnotu odporúča {abbr} ({by}) v dokumente <link>{title}</link>. Nie je to zákon.",
@@ -147,16 +153,45 @@
       "jpSmall": "Ostatné predmety s objemom pod 1,1 L, nie na varenie",
       "jpLarge": "Ostatné predmety s objemom od 1,1 L do menej ako 3 L, nie na varenie",
       "jpStorage": "Ostatné predmety s objemom 3 L a viac, nie na varenie",
-      "jpCooking": "Nádoby na varenie s hĺbkou 2,5 cm a viac"
+      "jpCooking": "Nádoby na varenie s hĺbkou 2,5 cm a viac",
+      "krFlat": "Predmety, ktoré nemožno plniť, alebo s hĺbkou menšou ako 2,5 cm",
+      "krSmall": "Ostatné predmety, ktoré možno plniť, do 1,1 L",
+      "krMedium": "Ostatné predmety, ktoré možno plniť, od 1,1 L do menej ako 3 L",
+      "krStorage": "Ostatné predmety, ktoré možno plniť, od 3 L",
+      "krCooking": "Nádoby na varenie, na ohrev jedla",
+      "twFlat": "Predmety, ktoré nemožno plniť, alebo s hĺbkou najviac 2,5 cm",
+      "twSmall": "Predmety s hĺbkou väčšou ako 2,5 cm, do 1,1 L",
+      "twLarge": "Predmety s hĺbkou väčšou ako 2,5 cm, nad 1,1 L",
+      "myFlat": "Ploché predmety",
+      "mySmall": "Malé duté predmety",
+      "myLarge": "Veľké duté predmety",
+      "myCooking": "Nádoby na varenie",
+      "idFlat": "Kusy hlboké vo vnútri najviac 25 mm",
+      "idSmall": "Kusy hlboké vo vnútri viac ako 25 mm, menej ako 1100 mL",
+      "idLarge": "Kusy hlboké vo vnútri viac ako 25 mm, 1100 mL a viac",
+      "thFlat": "Kusy hlboké najviac 25 mm",
+      "thSmall": "Kusy hlboké viac ako 25 mm, menej ako 1,1 L",
+      "thLarge": "Kusy hlboké viac ako 25 mm, 1,1 L a viac",
+      "thInfant": "Nádoby na jedlo pre dojčatá do 12 mesiacov veku",
+      "thCooking": "Varné náčinie, vyrobené tak, aby vydržalo teplo pri varení",
+      "vnFlat": "Plytké predmety na potraviny alebo na ich varenie",
+      "vnSmall": "Hlboké predmety na potraviny, pod 1100 mL",
+      "vnMedium": "Hlboké predmety na potraviny, od 1100 mL do menej ako 3000 mL",
+      "vnStorage": "Hlboké predmety na potraviny, 3000 mL a viac",
+      "vnCooking": "Hlboké predmety na varenie",
+      "vnCups": "Šálky a malé misky"
     },
     "judged": {
       "average": "priemer zo 6 kusov",
-      "each": "každý zo 6 kusov"
+      "each": "každý zo 6 kusov",
+      "averageOf": "priemer z {count} kusov",
+      "eachOf": "každý z {count} kusov"
     },
     "euRules": "Platia tu pravidlá EÚ.",
     "law": "Tieto limity stanovuje <link>{law}</link>.",
     "inForce": "Platia od {date}.",
     "atMost": "Kus vyhovuje, ak neuvoľní viac, ako je limit: zákon hovorí „najviac“.",
+    "ppm": "ppm tu znamená miligramy na liter skúšobného roztoku (mg/L).",
     "unknown": "Pravidlá v krajine {region} sme zatiaľ neoverili.",
     "choosePrompt": "Vyberte krajinu, aby ste videli jej pravidlá."
   },

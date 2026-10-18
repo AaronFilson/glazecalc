@@ -10,20 +10,20 @@ lead: Comment cuire dans un four électrique équipé d’un Kiln-Sitter ou de c
 
 Un **cône pyrométrique**{{en: pyrometric cone}} est une petite pyramide élancée, faite d’une poudre céramique normalisée. Quand il a reçu assez de chaleur, il ramollit et se courbe d’une façon reproductible. Vous placez des cônes dans le four à côté des pièces, puis vous regardez de combien ils se sont courbés.
 
-Les cônes mesurent le **travail thermique**{{en: heatwork}}, l’effet combiné de la température et du temps. Pour reprendre les mots d’Orton, le principal fabricant de cônes aux États-Unis : « Les cônes ne mesurent pas la température seule. » Un cône chauffé lentement se courbe à une température plus basse qu’un cône chauffé vite, et un émail{{en: glaze}} se comporte de la même façon. C’est pourquoi Orton donne la température de chaque cône pour une vitesse de montée précise sur les derniers {{180 °F; 100 °C}} de la cuisson. Une fois qu’un cône commence à bouger, il se courbe dans un intervalle étroit, « généralement moins de 40° F » (22 °C).
+Les cônes mesurent le **travail thermique**{{en: heatwork}}, l’effet combiné de la température et du temps. Pour reprendre les mots d’Orton, le principal fabricant de cônes aux États-Unis : « Les cônes ne mesurent pas la température seule. » Un cône chauffé lentement se courbe à une température plus basse qu’un cône chauffé vite, et un émail{{en: glaze}} se comporte de la même façon. C’est pourquoi Orton donne la température de chaque cône pour une vitesse de montée précise sur les derniers {{180 °F; 100 °C}} de la cuisson. Une fois qu’un cône commence à bouger, il se courbe dans un intervalle étroit, « généralement moins de 40° F » (22 °C).
 
 ### Numéros de cône
 
-Les numéros de cône vont de 022, le moins chaud, jusqu’à 42. Un zéro en tête marque la série la moins chaude et se lit « zéro » : le cône 06 (« zéro six ») est moins chaud que le cône 04, et le cône 01 demande moins de chaleur que le cône 1. Orton avertit qu’il est important de ne pas confondre les deux séries. L’écart est grand : le cône 06 se courbe à une température inférieure de plus de {{400 °F; 220 °C}} à celle du cône 6.
+Les numéros de cône vont de 022, le moins chaud, jusqu’à 42. Un zéro en tête marque la série la moins chaude et se lit « zéro » : le cône 06 (« zéro six ») est moins chaud que le cône 04, et le cône 01 demande moins de chaleur que le cône 1. Orton avertit qu’il est important de ne pas confondre les deux séries. L’écart est grand : le cône 06 se courbe à une température inférieure de plus de {{400 °F; 220 °C}} à celle du cône 6.
 
-Table: Plages de cuisson courantes, pour des cônes autoportants à {{108 °F/h; 60 °C/h}}
+Table: Plages de cuisson courantes, pour des cônes autoportants à {{108 °F/h; 60 °C/h}}
 Label: Plages de cuisson
 
 | Plage               | Cônes |                    Température | Usage courant                                                 |
 | ------------------- | ----- | -----------------------------: | ------------------------------------------------------------- |
-| Basse température   | 06–04 |  {{1828–1945 °F; 998–1063 °C}} | Émaux pour faïence{{en: earthenware}} ; biscuit{{en: bisque}} |
-| Moyenne température | 5–6   | {{2167–2232 °F; 1186–1222 °C}} | Grès{{en: stoneware}} et porcelaine cuits au four électrique  |
-| Haute température   | 9–10  | {{2300–2345 °F; 1260–1285 °C}} | Surtout du grès et de la porcelaine cuits au gaz              |
+| Basse température   | 06–04 |  {{1828–1945 °F; 998–1063 °C}} | Émaux pour faïence{{en: earthenware}} ; biscuit{{en: bisque}} |
+| Moyenne température | 5–6   | {{2167–2232 °F; 1186–1222 °C}} | Grès{{en: stoneware}} et porcelaine cuits au four électrique  |
+| Haute température   | 9–10  | {{2300–2345 °F; 1260–1285 °C}} | Surtout du grès et de la porcelaine cuits au gaz              |
 
 Au Royaume-Uni, en Europe, en Australie et en Nouvelle-Zélande, les fournisseurs donnent souvent une température en °C plutôt qu’un cône : cherchez le cône le plus proche dans le tableau ci-dessous et vérifiez-le avec un cône témoin{{en: witness cone}}. Il ne faut pas supposer que les cônes de Seger et les cônes Staffordshire, les anciennes séries européennes, aient les mêmes numéros que ceux d’Orton : ce guide utilise donc les cônes Orton.
 
@@ -34,13 +34,14 @@ Un **palier**{{en: hold}} (on parle aussi de **maintien**{{en: soak}}) garde le 
 Table: Ce que vaut un palier à la température maximale
 Label: Paliers et travail thermique
 
-| Palier             | À peu près le même travail thermique que                              |
-| ------------------ | --------------------------------------------------------------------- |
-| Environ 20 minutes | Une température maximale plus élevée de {{18 °F; 10 °C}}              |
-| 40–60 minutes      | Une température maximale plus élevée de {{36 °F; 20 °C}}              |
-| Environ 2 heures   | Une température maximale plus élevée de {{54 °F; 30 °C}}              |
-| 1–2 heures         | « peut suffire à déformer le cône de numéro immédiatement supérieur » |
-| 4–6 heures         | Assez pour courber un cône de deux numéros plus chaud                 |
+| Palier             | À peu près le même travail thermique que                 |
+| ------------------ | -------------------------------------------------------- |
+| Environ 20 minutes | Une température maximale plus élevée de {{18 °F; 10 °C}} |
+| 40–60 minutes      | Une température maximale plus élevée de {{36 °F; 20 °C}} |
+| Environ 2 heures   | Une température maximale plus élevée de {{54 °F; 30 °C}} |
+| 4–6 heures         | Assez pour courber un cône de deux numéros plus chaud    |
+
+Orton ajoute qu’un palier de 1–2 heures « peut suffire à déformer le cône de numéro immédiatement supérieur ».
 
 Un palier n’est donc jamais gratuit : si vous en ajoutez un, attendez-vous à ce que les cônes se courbent davantage, et abaissez la température maximale en conséquence.
 
@@ -62,7 +63,7 @@ La hauteur compte : une différence de ¼ de pouce (6 mm) dans la hauteur d�
 
 ### Ce que « cône 6 » veut dire en pratique
 
-Le tableau donne {{2232 °F; 1222 °C}} pour un cône 6 autoportant, mais seulement quand la montée sur les derniers {{180 °F; 100 °C}} se fait à {{108 °F/h; 60 °C/h}}. Avec une montée à {{270 °F/h; 150 °C/h}}, le même cône se courbe à {{2269 °F; 1243 °C}}. Les vrais fours diffèrent encore : Digitalfire indique que « la plupart des fours atteignent le cône 6 à 2200°F, et non à 2232°F ». « Cône 6 » signifie donc que les pièces ont reçu le travail thermique qui fait courber un cône 6, quelle que soit la température affichée par un thermomètre à ce moment-là.
+Le tableau donne {{2232 °F; 1222 °C}} pour un cône 6 autoportant, mais seulement quand la montée sur les derniers {{180 °F; 100 °C}} se fait à {{108 °F/h; 60 °C/h}}. Avec une montée à {{270 °F/h; 150 °C/h}}, le même cône se courbe à {{2269 °F; 1243 °C}}. Les vrais fours diffèrent encore : Digitalfire indique que « la plupart des fours atteignent le cône 6 à 2200°F, et non à 2232°F ». « Cône 6 » signifie donc que les pièces ont reçu le travail thermique qui fait courber un cône 6, quelle que soit la température affichée par un thermomètre à ce moment-là.
 
 :::orton
 
@@ -198,11 +199,11 @@ Beaucoup de Kiln-Sitter, dont les modèles LT de Dawson, ont une **minuterie de 
 Table: Sur quelle durée régler la minuterie de sécurité
 Label: Réglages de la minuterie de sécurité
 
-| Source    | Réglage                                                                                                                                                        |
-| --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Dawson    | ½ heure de plus que la durée de cuisson prévue tant que vous ne connaissez pas le four, par la suite seulement ¼ d’heure de plus ; jamais au-delà de 20 heures |
-| L&L       | Très élevé la première fois, en notant la durée de la cuisson ; ensuite, environ 1 heure de plus                                                               |
-| Bracker’s | De 30 minutes à 1 heure de plus que la durée de cuisson                                                                                                        |
+| Source    | Réglage                                                                                                                                                                     |
+| --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Dawson    | ½ heure de plus que la durée de cuisson prévue tant que vous ne connaissez pas le four, par la suite seulement ¼ d’heure de plus ; ne le réglez jamais au-delà de 20 heures |
+| L&L       | Très élevé la première fois, en notant la durée de la cuisson ; ensuite, environ 1 heure de plus                                                                            |
+| Bracker’s | De 30 minutes à 1 heure de plus que la durée de cuisson                                                                                                                     |
 
 > [!NOTE]
 > Notre point de départ : une marge large la première fois (dans la limite des 20 heures du cadran), puis de ½ à 1 heure de plus que la durée que vous avez notée. La minuterie indique aussi combien de temps a duré une cuisson : réglée sur 7 et arrêtée sur 1, elle a tourné 6 heures.
@@ -224,7 +225,7 @@ Label: Problèmes de Kiln-Sitter
 Pour vérifier le réglage, Dawson utilise un **gabarit de réglage** qui maintient la tige à la position où la laisserait un cône complètement courbé ; il doit alors y avoir « un jeu de 1/16 de pouce » (environ 1,6 mm) au niveau de la griffe. Vérifiez-le toutes les 30 cuissons. La règle de Ceramics Monthly : si le four s’arrête trop tôt, montez légèrement la plaque de déclenchement ; s’il s’arrête trop tard, descendez-la légèrement. Quoi que fasse le Kiln-Sitter, « fiez-vous toujours aux grands cônes témoins plutôt qu’aux petits cônes du Kiln-Sitter ».
 
 > [!WARNING]
-> **Un Kiln-Sitter n’est pas un dispositif de sécurité.** Le manuel de Dawson précise qu’il « n’est PAS conçu pour servir de dispositif de coupure de sécurité, et votre four ne doit PAS être laissé sans surveillance au-delà de la durée de cuisson estimée ». Une chose aussi simple qu’une pièce crue{{en: greenware}} tombée contre le tube « pourrait provoquer une surcuisson ». Soyez là pour vérifier le four au moment où la cuisson devrait se terminer, et ne faites jamais fonctionner le four sur ou près de quoi que ce soit qui brûle, comme un plancher en bois ou une moquette.
+> **Un Kiln-Sitter n’est pas un dispositif de sécurité.** Le manuel de Dawson précise qu’il « n’est PAS conçu pour servir de dispositif de coupure à sécurité intégrée, et votre four ne doit PAS être laissé sans surveillance au-delà de la durée de cuisson estimée ». Une chose aussi simple qu’une pièce crue{{en: greenware}} tombée contre le tube « pourrait provoquer une surcuisson ». Soyez là pour vérifier le four au moment où la cuisson devrait se terminer, et ne faites jamais fonctionner le four sur ou près de quoi que ce soit qui brûle, comme un plancher en bois ou une moquette.
 
 Le Kiln-Sitter est conçu pour des cuissons « jusqu’au cône 8 inclus ». Il ne peut pas tenir une température ni refroidir lentement à lui seul. Avec de la pratique et un relevé de cuisson, vous pouvez pourtant « devenir le programmateur », comme le dit Digitalfire : surveillez les cônes et tournez les commutateurs à la main.
 
@@ -375,7 +376,7 @@ La cuisson de **biscuit**{{en: bisque}} (les Britanniques disent aussi biscuit) 
 
 ### Pourquoi le début de la cuisson est lent
 
-L’eau qui se transforme en vapeur « se dilate 1170 fois », note Bracker’s : les pièces humides doivent donc sécher lentement. L&L et Orton conseillent de « veiller tout particulièrement, en dessous de 1500°F (815°C), à chauffer la pâte de façon homogène », et de brûler le carbone avant environ {{1200 °F; 650 °C}}. Au-dessus de {{1500 °F; 816 °C}}, le four peut monter plus vite.
+L’eau multiplie son volume par plus de mille en se transformant en vapeur : les pièces humides doivent donc sécher lentement. L&L et Orton conseillent de « veiller tout particulièrement, en dessous de 1500°F (815°C), à chauffer la pâte de façon homogène », et de brûler le carbone avant environ {{1200 °F; 650 °C}}. Au-dessus de {{1500 °F; 816 °C}}, le four peut monter plus vite.
 
 Table: Ce qui se passe pendant la chauffe d’un biscuit
 Label: Ce qui se passe dans un biscuit
@@ -595,22 +596,22 @@ Si le Kiln-Sitter se déclenche avant que les cônes sur la plaque soient couch�
 
 Un **pyromètre** est un indicateur de température relié à un **thermocouple**, une sonde de température qui traverse la paroi du four. Il montre à quelle vitesse le four monte, ce qui vous permet de choisir la bonne colonne du tableau des cônes. Mais il mesure près de la paroi, pas au niveau des pièces, et il dérive. L&L note qu’un thermocouple de type K peut s’écarter de plus de {{25 °F; 14 °C}} après des cuissons répétées au cône 6, « une différence supérieure à un cône entier », alors qu’un cône autoportant ne varie pas de plus de {{4 °F; 2 °C}}. Orton dit que les pyromètres doivent être réétalonnés de temps en temps, et que les cônes permettent de les vérifier.
 
-## Évacuation des fumées, coups d’œil et sécurité {#venting}
+## Ventilation, coup d’œil et sécurité {#venting}
 
-### Évacuation des fumées
+### Ventilation
 
-Au début d’une cuisson, la terre et l’émail{{en: glaze}} dégagent de la vapeur d’eau et des fumées, dont du monoxyde de carbone, et les émaux peuvent aussi dégager des fumées toxiques plus tard dans la cuisson. Pour L&L, leur évacuation est « essentielle ». Sans système d’extraction, cela veut dire le couvercle entrouvert et les regards ouverts dans les premières phases, comme dans les procédures ci-dessus ; ralentir la chauffe pendant cette période aide aussi le carbone à brûler. Avec une **aspiration sous le four** (un extracteur motorisé fixé au four), Orton dit que le couvercle et les regards restent fermés pendant toute la cuisson, sauf pour vérifier les cônes{{en: cones}}. Un regard du haut ouvert protège aussi le tube du Kiln-Sitter et les parties métalliques du four.
+En début de cuisson, l’argile et l’émail{{en: glaze}} dégagent de la vapeur d’eau et des fumées, dont du monoxyde de carbone, et les émaux peuvent aussi dégager des fumées toxiques plus tard dans la cuisson. L&L juge « essentiel » de les évacuer. Sans extracteur de fumées, cela veut dire le couvercle entrouvert et les regards ouverts au début, comme dans les procédures ci-dessus ; ralentir la montée en température pendant cette période aide aussi le carbone à brûler. Dans un four sans extracteur, Dawson, le fabricant du Kiln-Sitter, dit aussi de laisser le regard du haut ouvert pendant toute la cuisson : la ventilation « réduira la détérioration des pièces métalliques du four et augmentera la durée de vie de l’ensemble du tube ». Une **aspiration sous le four** (une extraction motorisée montée sur le four) change cela. Elle assure la ventilation : Orton dit donc que le couvercle et les regards restent fermés pendant toute la cuisson, sauf pour vérifier les cônes, et L&L dit de laisser l’aspiration en marche et de boucher les regards.
 
-Pour l’aération de la pièce, et pour les détecteurs de monoxyde de carbone, voir [Préparation en sécurité et ventilation](/guides/safe-mixing) et [N’empoisonnez pas votre famille](/guides/home-safety).
+Pour la ventilation de la pièce et pour les détecteurs de monoxyde de carbone, voir [Préparation en sécurité et ventilation](/guides/safe-mixing) et [N’empoisonnez pas votre famille](/guides/home-safety).
 
-### Pendant que le four cuit
+### Pendant la cuisson
 
-- Ne jetez un œil par un regard qu’avec des lunettes de soudage anti-IR de teinte 3 ; les lunettes de soleil ne suffisent pas. Skutt conseille de mettre les bouchons en place en les tournant, pour qu’ils ne tombent pas.
-- Ne laissez pas le four sans surveillance au-delà de sa durée de cuisson prévue : un Kiln-Sitter n’est pas une sécurité infaillible.
-- N’utilisez jamais le four sur ou près de quoi que ce soit qui brûle, comme un plancher en bois ou une moquette.
-- Respectez les distances de sécurité indiquées dans votre manuel. Les chiffres publiés vont de 12 pouces (30 cm) à 3 pieds (91 cm) ; si le manuel ne dit rien, 18 pouces (46 cm) des murs et 3 pieds (91 cm) de tout ce qui brûle est le choix le plus sûr.
-- Gardez l’espace autour du contrepoids du Kiln-Sitter dégagé, pour qu’il puisse tomber.
-- À la fin de la cuisson, mettez les commutateurs sur Arrêt et coupez aussi le disjoncteur.
+- Ne regardez par un regard qu’avec des lunettes de soudage anti-IR de teinte 3 ; des lunettes de soleil ne suffisent pas. Skutt conseille de visser les bouchons en place pour qu’ils ne tombent pas.
+- Ne laissez pas le four sans surveillance au-delà de la durée de cuisson prévue ; un Kiln-Sitter n’est pas une sécurité infaillible.
+- Ne cuisez jamais sur ou près de quoi que ce soit de combustible, comme un plancher en bois ou de la moquette.
+- Respectez les distances de sécurité de votre notice. Les valeurs publiées vont de 12 pouces (30 cm) à 3 pieds (91 cm) ; quand la notice est muette, 18 pouces (46 cm) des murs et 3 pieds (91 cm) de tout ce qui est combustible sont le choix le plus sûr.
+- Gardez dégagé l’espace autour du contrepoids du Kiln-Sitter pour qu’il puisse tomber.
+- Quand la cuisson est terminée, mettez les interrupteurs sur arrêt et coupez aussi le disjoncteur.
 
 ## Refroidissement et défournement {#cooling}
 

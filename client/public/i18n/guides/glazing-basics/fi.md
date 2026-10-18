@@ -38,7 +38,7 @@ Reseptissä luetellaan raaka-aineita, kuten maasälpää{{en: feldspar}}, liitua
 
 ### Kaksi polttoa
 
-Ensimmäinen, matalampi poltto on **raakapoltto**{{en: bisque}} (Isossa-Britanniassa **biscuit**), yleensä keilat 08–04, noin {{1740–1940 °F; 950–1060 °C}}. Sen jälkeen esineet ovat lujia mutta huokoisia. Lasitteiden hakuteossivusto Digitalfire suosittaa yleensä yli 15 %:n huokoisuutta, jotta raakapoltettu esine imee vettä lasitteesta sitä levitettäessä. Matala raakapoltto (keilat 08–06) jättää esineen huokoisemmaksi; korkea raakapoltto (usein keila 04) jättää sen lujemmaksi, mutta se ottaa lasitetta huonommin vastaan.
+Ensimmäinen, matalampi poltto on **raakapoltto**{{en: bisque}} (Isossa-Britanniassa **biscuit**), yleensä keilat 08–04 (useimmiten 06–04), noin {{1728–1945 °F; 942–1063 °C}}. Sen jälkeen esineet ovat lujia mutta huokoisia. Lasitteiden hakuteossivusto Digitalfire suosittaa yleensä yli 15 %:n huokoisuutta, jotta raakapoltettu esine imee vettä lasitteesta sitä levitettäessä. Matala raakapoltto (keilat 08–06) jättää esineen huokoisemmaksi; korkea raakapoltto (usein keila 04) jättää sen lujemmaksi, mutta se ottaa lasitetta huonommin vastaan.
 
 Table: Miten raakapoltto vaikuttaa lasittamiseen (Digitalfire)
 Label: Miten raakapoltto vaikuttaa lasittamiseen
@@ -254,7 +254,7 @@ Lakisääteiset raja-arvot vaihtelevat maittain. Taulukko näyttää oman asuinm
 
 ::food-limits
 
-Yhdysvalloissa esineissä, joita ei ole tarkoitettu ruoalle, on oltava pysyvä, pintaan poltettu ”Not for Food Use” -merkintä tai reikä ruoan kanssa kosketuksiin tulevan pinnan läpi. EU säätää lyijyn ja kadmiumin raja-arvoista direktiivissä 84/500/ETY, ja Iso-Britannia pitää samat luvut omassa lainsäädännössään. Alankomaissa, Belgiassa ja Luxemburgissa sallitaan 29. toukokuuta 2026 alkaen noin 130–150 kertaa vähemmän lyijyä ja noin 15 kertaa vähemmän kadmiumia. Australia asettaa raja-arvot tuontiesineille; emme löytäneet virallista raja-arvoa Australiassa tai Uudessa-Seelannissa valmistetuille esineille.
+Yhdysvalloissa koristeeksi tarkoitettu keraaminen esine, joka näyttää ruokakäyttöön sopivalta, katsotaan ruoka-astiaksi, ellei siinä ole tarraetikettiä ja pohjaan muotoiltua tai poltettua pysyvää merkintää, kuten ”Not for Food Use. May Poison Food” (ei ruokakäyttöön; voi myrkyttää ruoan), tai reikää ruoan kanssa kosketuksiin tulevan pinnan läpi. EU säätää lyijyn ja kadmiumin raja-arvoista direktiivissä 84/500/ETY, ja Iso-Britannia pitää samat luvut omassa lainsäädännössään. Alankomaissa, Belgiassa ja Luxemburgissa sallitaan 29. toukokuuta 2026 alkaen noin 130–150 kertaa vähemmän lyijyä ja noin 15 kertaa vähemmän kadmiumia. Australia asettaa raja-arvot tuontiesineille; emme löytäneet virallista raja-arvoa Australiassa tai Uudessa-Seelannissa valmistetuille esineille.
 
 ### Testaaminen
 
@@ -421,7 +421,7 @@ R₂O ja RO
 : Alkalisulattajat (Na₂O, K₂O, Li₂O) ja maa-alkalisulattajat (CaO, MgO, BaO, SrO sekä ZnO).
 
 Raakapoltto (bisque; UK: biscuit)
-: Ensimmäinen, matalampi poltto, yleensä keilat 08–04, jonka jälkeen esineet ovat lujia mutta huokoisia.
+: Ensimmäinen, matalampi poltto, yleensä keilat 08–04 (useimmiten 06–04), jonka jälkeen esineet ovat lujia mutta huokoisia.
 
 Rajakaava, tavoitekaava (limit formula, target formula)
 : Tasapainoisten lasitteiden tyypilliset Segerin kaavan vaihteluvälit tietylle keilalle; ohje, ei takuu.
@@ -474,6 +474,7 @@ Väriaine ja väripigmentti (colorant and stain)
 - [Glazy Help: Specific gravity](https://help.glazy.org/testing/specific-gravity)
 - [Orton Ceramic Foundation: Pyrometric cone chart, °F (sivustolla The Ceramic Shop)](https://www.theceramicshop.com/technical_info/Cones/Orton-Cone-Chart-F-022-14.pdf)
 - [Digitalfire: Bisque](https://digitalfire.com/glossary/bisque)
+- [Digitalfire: Bentonite](https://digitalfire.com/material/bentonite)
 - [Digitalfire: Unity molecular formula](https://digitalfire.com/glossary/unity+molecular+formula)
 - [Digitalfire: LOI](https://digitalfire.com/glossary/loi)
 - [Digitalfire: Frit](https://digitalfire.com/glossary/frit)
@@ -489,3 +490,4 @@ Väriaine ja väripigmentti (colorant and stain)
 - [Potclays: The difference between stoneware and earthenware](https://www.potclays.co.uk/clay-questions/difference-stoneware-earthenware)
 - [US FDA: Compliance Policy Guide Sec. 545.450, Pottery (ceramics), lead contamination](https://www.fda.gov/media/71764/download)
 - [EUR-Lex: Council Directive 84/500/EEC on ceramic articles in contact with food](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:31984L0500)
+- [eCFR: 21 CFR 109.16, Ornamental and decorative ceramicware](https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-109/subpart-A/section-109.16)

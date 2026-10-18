@@ -94,3 +94,21 @@ describe('the script in index.html', () => {
     expect([...(offered ?? []), ...(others ?? [])].sort()).toEqual(LANGUAGE_CODES.filter((c) => c !== 'en').sort());
   });
 });
+
+describe("index.html's title and description", () => {
+  // The server gives English pages en.json's text (server/app.ts, pageText); index.html's own shows only if that
+  // file cannot be read, and is kept the same, so there is one English text to translate and review.
+  const en = JSON.parse(readFileSync('client/public/i18n/en.json', 'utf8')) as {
+    titles: { landing: string };
+    meta: { description: string; imageAlt: string };
+  };
+  const content = (pattern: RegExp) => pattern.exec(index)?.[1];
+
+  it("is en.json's", () => {
+    expect(content(/<title>([^<]*)<\/title>/)).toBe(en.titles.landing);
+    expect(content(/property="og:title"\s+content="([^"]*)"/)).toBe(en.titles.landing);
+    expect(content(/name="description"\s+content="([^"]*)"/)).toBe(en.meta.description);
+    expect(content(/property="og:description"\s+content="([^"]*)"/)).toBe(en.meta.description);
+    expect(content(/property="og:image:alt"\s+content="([^"]*)"/)).toBe(en.meta.imageAlt);
+  });
+});

@@ -48,7 +48,7 @@ Label: Početni komplet
 | Kalijski feldspat                             | Onaj koji se trenutačno prodaje ondje gdje živite, npr. Mahavir u SAD-u                                             |
 | Nefelinski sijenit{{en: nepheline syenite}}   | Bilo koji; Glazy ističe da jače djeluje kao topitelj{{en: flux}}, a često se koristi za niske i srednje temperature |
 | Kreda                                         | Bilo koja                                                                                                           |
-| Talk                                          | Bilo koji                                                                                                           |
+| Talk                                          | Bilo koji bez azbesta; provjerite njegov STL (vidi Sigurno miješanje)                                               |
 | Borna frita, za srednje temperature           | Ferro 3134, 3124 ili 3195; u Ujedinjenom Kraljevstvu Potterycrafts P3124 ili P3195                                  |
 | Bentonit i bojila                             | Male količine                                                                                                       |
 
@@ -211,7 +211,7 @@ Label: Voda za ciljnu relativnu gustoću
 
 **CMC** (karboksimetilceluloza) čini suspenziju ljepljivijom i sporijom u sušenju te ostavlja tvrđi sloj koji se drži predmeta. Najvažniji je za glazure za nanošenje kistom i glazure s mnogo frite{{en: frit}}. U primjeru Digitalfirea u 1000 g suspenzije umiješa se 3,75 g, i to se mora učiniti blenderom. Glazura s CMC-om neće se zgusnuti gorkom soli, a budući da se mikrobi hrane tim vezivom, može se u kanti promijeniti i početi zaudarati.
 
-**Bentonit**, vrlo sitnozrnata glina, pomaže da ostale čestice ostanu u suspenziji. Glazure za uranjanje za to se obično oslanjaju na 15 do 25 % sirove gline. Receptu s premalo gline pomaže oko 1 do 2 % bentonita.
+**Bentonit**, vrlo sitnozrnata glina, pomaže da ostale čestice ostanu u suspenziji. Glazure za uranjanje za to se obično oslanjaju na 15 do 25 % sirove gline. Receptu s premalo gline pomaže oko 1 do 3 % bentonita; Digitalfire kaže da glazuri s više od 15 % gline ne bi trebalo biti potrebno više od 1 %.
 
 ## Probne pločice i nizovi proba {#testing}
 
@@ -284,6 +284,7 @@ Label: Predložak zapisa
 - [Digitalfire: Epsom salts](https://digitalfire.com/material/epsom+salts)
 - [Digitalfire: CMC gum](https://digitalfire.com/material/cmc%2Bgum)
 - [Digitalfire: Dipping glaze](https://digitalfire.com/glossary/dipping+glaze)
+- [Digitalfire: Bentonite](https://digitalfire.com/material/bentonite)
 - [Digitalfire: Water solubility](https://digitalfire.com/glossary/water+solubility)
 - [Digitalfire: Gerstley Borate](https://digitalfire.com/material/gerstley+borate)
 - [Digitalfire: Mahavir potash feldspar](https://digitalfire.com/material/mahavir+potash+feldspar)

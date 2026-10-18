@@ -34,13 +34,14 @@ Jungtinės Karalystės, Europos, Australijos ir Naujosios Zelandijos tiekėjai d
 Table: Ką duoda išlaikymas ties aukščiausia temperatūra
 Label: Išlaikymas ir šilumos poveikis
 
-| Išlaikymas   | Maždaug toks pat šilumos poveikis kaip                            |
-| ------------ | ----------------------------------------------------------------- |
-| Apie 20 min. | Aukščiausia temperatūra, pakelta {{18 °F; 10 °C}}                 |
-| 40–60 min.   | Aukščiausia temperatūra, pakelta {{36 °F; 20 °C}}                 |
-| Apie 2 val.  | Aukščiausia temperatūra, pakelta {{54 °F; 30 °C}}                 |
-| 1–2 val.     | „gali pakakti deformuoti kitą, vienu numeriu karštesnį piroskopą“ |
-| 4–6 val.     | Pakanka, kad sulinktų dviem numeriais karštesnis piroskopas       |
+| Išlaikymas   | Maždaug toks pat šilumos poveikis kaip                      |
+| ------------ | ----------------------------------------------------------- |
+| Apie 20 min. | Aukščiausia temperatūra, pakelta {{18 °F; 10 °C}}           |
+| 40–60 min.   | Aukščiausia temperatūra, pakelta {{36 °F; 20 °C}}           |
+| Apie 2 val.  | Aukščiausia temperatūra, pakelta {{54 °F; 30 °C}}           |
+| 4–6 val.     | Pakanka, kad sulinktų dviem numeriais karštesnis piroskopas |
+
+Ortonas priduria, kad 1–2 valandų išlaikymas „gali pakakti deformuoti kitą, vienu numeriu karštesnį piroskopą“.
 
 Taigi išlaikymas niekada nebūna be pasekmių: jei jį pridedate, tikėkitės, kad piroskopai sulinks labiau, ir atitinkamai sumažinkite aukščiausią temperatūrą.
 
@@ -198,11 +199,11 @@ Daugelis išjungiklių, tarp jų gamintojo Dawson LT modeliai, turi **ribinį la
 Table: Kiek laiko nustatyti ribinį laikmatį
 Label: Ribinio laikmačio nustatymai
 
-| Šaltinis  | Nustatymas                                                                                                                        |
-| --------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| Dawson    | ½ val. ilgiau už numatomą degimo trukmę, kol krosnies dar nepažįstate, vėliau – vos ¼ val. ilgiau; niekada ne ilgiau kaip 20 val. |
-| L&L       | Pirmą kartą – labai ilgam laikui, užsirašant, kiek trunka degimas; vėliau – maždaug 1 val. ilgiau                                 |
-| Bracker's | Nuo 30 min. iki 1 val. ilgiau už degimo trukmę                                                                                    |
+| Šaltinis  | Nustatymas                                                                                                                                   |
+| --------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| Dawson    | ½ val. ilgiau už numatomą degimo trukmę, kol krosnies dar nepažįstate, vėliau – vos ¼ val. ilgiau; niekada nenustatykite ilgiau kaip 20 val. |
+| L&L       | Pirmą kartą – labai ilgam laikui, užsirašant, kiek trunka degimas; vėliau – maždaug 1 val. ilgiau                                            |
+| Bracker's | Nuo 30 min. iki 1 val. ilgiau už degimo trukmę                                                                                               |
 
 > [!NOTE]
 > Mūsų atspirties taškas: pirmą kartą nustatykite su didele atsarga (neviršydami skalės 20 valandų), vėliau – ½–1 valanda ilgiau už jūsų užrašytą trukmę. Laikmatis taip pat parodo, kiek truko degimas: nustatytas ties 7 ir sustojęs ties 1, jis rodo 6 valandas.
@@ -224,7 +225,7 @@ Label: Išjungiklio problemos
 Reguliavimui patikrinti Dawson naudoja **reguliavimo šabloną**, kuris laiko strypelį toje padėtyje, kurioje jį paliktų visiškai sulinkęs piroskopas; tada prie gnybto turėtų likti „1/16 colio tarpas“ (apie 1,6 mm). Tikrinkite tai kas 30 degimų. Žurnalo Ceramics Monthly taisyklė: jei krosnis išsijungia per anksti, šiek tiek pakelkite paleidimo plokštelę; jei per vėlai – šiek tiek nuleiskite. Kad ir ką darytų išjungiklis, „visada labiau pasitikėkite dideliais kontroliniais piroskopais nei mažais išjungiklio piroskopais“.
 
 > [!WARNING]
-> **Išjungiklis Kiln-Sitter nėra apsauginis įtaisas.** Gamintojo Dawson naudojimo instrukcijoje rašoma, kad jis „NĖRA skirtas veikti kaip patikimas apsauginis išjungimo įtaisas, ir jūsų krosnis NETURĖTŲ būti palikta be priežiūros ilgiau nei numatoma degimo trukmė“. Net toks paprastas dalykas kaip ant vamzdelio užvirtęs nedegtas dirbinys{{en: greenware}} „galėtų sukelti perdegimą“. Būkite šalia ir patikrinkite krosnį tada, kai degimas turėtų baigtis, ir niekada neįjunkite jos ant to, kas gali užsidegti, ar šalia to, pavyzdžiui, ant medinių grindų ar kilimo.
+> **Išjungiklis Kiln-Sitter nėra apsauginis įtaisas.** Gamintojo Dawson naudojimo instrukcijoje rašoma, kad jis „NĖRA skirtas veikti kaip išjungimo įtaisas, saugus gedimo atveju{{en: fail-safe}}, ir jūsų krosnis NETURĖTŲ būti palikta be priežiūros ilgiau nei numatoma degimo trukmė“. Net toks paprastas dalykas kaip ant vamzdelio užvirtęs nedegtas dirbinys{{en: greenware}} „galėtų sukelti perdegimą“. Būkite šalia ir patikrinkite krosnį tada, kai degimas turėtų baigtis, ir niekada neįjunkite jos ant to, kas gali užsidegti, ar šalia to, pavyzdžiui, ant medinių grindų ar kilimo.
 
 Išjungiklis skirtas degimams „iki piroskopo 8 imtinai“. Pats jis negali išlaikyti temperatūros ar lėtai aušinti. Vis dėlto, įgiję patirties ir vesdami žurnalą, galite „tapti valdikliu“, kaip sako Digitalfire: stebėti piroskopus ir sukti jungiklius ranka.
 
@@ -375,7 +376,7 @@ Ortono savaime stovintys piroskopai Japonijoje parduodami pavadinimu 立つゼ�
 
 ### Kodėl pradžia lėta
 
-Vanduo, virsdamas garais, „išsiplečia 1170 kartų“, pažymi Bracker's, todėl drėgnus dirbinius reikia džiovinti lėtai. L&L ir Ortonas pataria, kad „žemiau 1500°F (815°C) reikėtų ypač rūpintis, kad molio masė įkaistų tolygiai“, ir kad anglis turi išdegti iki maždaug {{1200 °F; 650 °C}}. Virš {{1500 °F; 816 °C}} krosnis gali kaisti greičiau.
+Vanduo, virsdamas garais, išsiplečia daugiau nei tūkstantį kartų, todėl drėgnus dirbinius reikia džiovinti lėtai. L&L ir Ortonas pataria, kad „žemiau 1500°F (815°C) reikėtų ypač rūpintis, kad molio masė įkaistų tolygiai“, ir kad anglis turi išdegti iki maždaug {{1200 °F; 650 °C}}. Virš {{1500 °F; 816 °C}} krosnis gali kaisti greičiau.
 
 Table: Kas vyksta kaitinant biskvitą
 Label: Biskvitinio degimo eiga
@@ -599,14 +600,14 @@ Jei išjungiklis suveikia anksčiau, nei nulinksta piroskopai ant plokščių, k
 
 ### Vėdinimas
 
-Degimo pradžioje iš molio ir glazūros{{en: glaze}} išsiskiria vandens garai ir dūmai, įskaitant anglies monoksidą (smalkes), o glazūros toksiškų dūmų gali išskirti ir vėliau degimo metu. L&L jų šalinimą vadina „būtinu“. Jei ištraukiamosios ventiliacijos sistemos nėra, tai reiškia, kad pirmuosiuose etapuose dangtis pravertas, o stebėjimo angos atidarytos, kaip aukščiau aprašytose procedūrose; šiuo metu sulėtinus kaitinimą, be to, lengviau išdega anglis. Su **ištraukiamąja ventiliacija per krosnies dugną** (prie krosnies primontuotu elektriniu ištraukikliu), pasak Ortono, dangtis ir stebėjimo angos visą degimą lieka uždaryti, išskyrus piroskopų{{en: cones}} patikrinimą. Atidaryta viršutinė stebėjimo anga taip pat apsaugo išjungiklio vamzdelį ir metalines krosnies dalis.
+Degimo pradžioje iš molio ir glazūros{{en: glaze}} išsiskiria vandens garai ir dūmai, įskaitant anglies monoksidą (smalkes), o glazūros toksiškų dūmų gali išskirti ir vėliau degimo metu. L&L jų šalinimą vadina „būtinu“. Jei ištraukiamosios ventiliacijos sistemos nėra, tai reiškia, kad pirmuosiuose etapuose dangtis pravertas, o stebėjimo angos atidarytos, kaip aukščiau aprašytose procedūrose; šiuo metu sulėtinus kaitinimą, be to, lengviau išdega anglis. Jei krosnis neturi ištraukimo sistemos, Dawsonas, sukūręs išjungiklį Kiln-Sitter, taip pat nurodo visą degimą laikyti atidarytą viršutinę stebėjimo angą: ventiliavimas „sumažins krosnies metalinių dalių nusidėvėjimą ir pailgins vamzdelio mazgo tarnavimo laiką“. **Ištraukiamoji ventiliacija per krosnies dugną** (prie krosnies primontuotas elektrinis ištraukiklis) tai pakeičia. Ji pati atlieka ventiliavimą, todėl, pasak Ortono, dangtis ir stebėjimo angos visą degimą lieka uždaryti, išskyrus piroskopų{{en: cones}} patikrinimą, o L&L nurodo palikti ištraukiklį įjungtą ir stebėjimo angas užkimšti.
 
 Apie patalpos vėdinimą ir smalkių detektorius skaitykite vadovuose [Saugus maišymas ir vėdinimas](/guides/safe-mixing) ir [Neapnuodykite savo šeimos](/guides/home-safety).
 
 ### Kai krosnis įjungta
 
 - Pro stebėjimo angą žiūrėkite tik pro IR spinduliuotę sulaikančius tamsumo laipsnio 3 suvirintojo akinius; akinių nuo saulės nepakanka. Skutt pataria kamščius įsukti į vietą, kad jie neiškristų.
-- Nepalikite krosnies be priežiūros ilgiau nei numatoma degimo trukmė; išjungiklis Kiln-Sitter{{en: kiln sitter}} nėra patikima apsauga.
+- Nepalikite krosnies be priežiūros ilgiau nei numatoma degimo trukmė; išjungiklis Kiln-Sitter{{en: kiln sitter}} negarantuoja, kad įvykus gedimui krosnis išsijungs.
 - Niekada neįjunkite krosnies ant to, kas gali užsidegti, ar šalia to, pavyzdžiui, ant medinių grindų ar kilimo.
 - Laikykitės naudojimo instrukcijoje nurodytų atstumų. Skelbiami skaičiai svyruoja nuo 12 colių (30 cm) iki 3 pėdų (91 cm); jei naudojimo instrukcijoje to nenurodyta, saugiausia laikytis 18 colių (46 cm) atstumo nuo sienų ir 3 pėdų (91 cm) nuo visko, kas gali užsidegti.
 - Vietą aplink išjungiklio svarelį laikykite laisvą, kad jis galėtų nukristi.

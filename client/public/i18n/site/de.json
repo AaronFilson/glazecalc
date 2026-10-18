@@ -57,9 +57,13 @@
     "stackServer": "Eine TypeScript-API auf Node.js 24 und Express 5, mit MongoDB 9, geprüft von mehr als 350 automatischen Tests.",
     "stackHosting": "Läuft in Docker auf Amazon Web Services, hinter nginx mit HTTPS von Let's Encrypt.",
     "stackDeploy": "Bereitgestellt mit GitHub Actions: Bei jeder Änderung werden Images gebaut und getestet, und Deployments melden sich ohne gespeicherte Schlüssel bei AWS an.",
+    "creditsHeading": "Danksagungen",
+    "credits": "Die Regionen im Stull-Diagramm stammen aus Glazys Auswertung von R. T. Stulls Diagramm von 1912, von Derek Au (Copyright (c) 2017 Derek Au, MIT-Lizenz). Der <notices>vollständige Hinweis</notices> steht im Quelltext.",
     "whoHeading": "Wer Glazecalc gemacht hat",
     "who": "Glazecalc wird von Aaron Filson entwickelt. Ein Problem gefunden oder eine Idee? <issues>Eröffnen Sie ein Issue auf GitHub</issues>.",
-    "studio": "Aaron Filsons handgemachte Keramik gibt es bei <studio>Updraft Pottery Studio</studio> in Tacoma, Washington. Schauen Sie sich die Arbeiten an und bestellen Sie ein Stück, wenn eines Sie anspricht."
+    "studio": "Aaron Filsons handgemachte Keramik gibt es bei <studio>Updraft Pottery Studio</studio> in Tacoma, Washington. Schauen Sie sich die Arbeiten an und bestellen Sie ein Stück, wenn eines Sie anspricht.",
+    "languagesHeading": "Sprachen",
+    "languages": "Glazecalc gibt es in diesen Sprachen. Jeder Link öffnet diese Seite in der jeweiligen Sprache."
   },
   "privacy": {
     "title": "Datenschutz",
@@ -71,9 +75,15 @@
     "contact": "Um nach Ihren Daten zu fragen oder eines Ihrer Rechte auszuüben, schreiben Sie an <mail>privacy@glazecalcapp.com</mail>. Sie können auch <issues>auf GitHub ein Issue eröffnen</issues>, aber Issues sind öffentlich: Schreiben Sie nie Ihre E-Mail-Adresse oder etwas Persönliches hinein. Das meiste, was Ihre Daten betrifft, können Sie selbst auf Ihrer <account>Kontoseite</account> erledigen.",
     "storedHeading": "Was gespeichert wird und warum",
     "storedAccount": "<b>Ihr Konto:</b> Ihre E-Mail-Adresse und Ihr Passwort, das nur als Einweg-Hash (bcrypt) gespeichert wird, nie als das Passwort selbst. Ihre Einstellungen (etwa Sprache, Region und Einheiten) und die Liste Ihrer vorhandenen Rohstoffe werden damit gespeichert. Ein Konto braucht eine E-Mail-Adresse, zum Anmelden und zum Zurücksetzen eines vergessenen Passworts. Wenn Sie ein Konto erstellen, wird ein Link an die Adresse gesendet, um zu bestätigen, dass sie Ihnen gehört; bis dahin gehen E-Mails an sie nur, wenn Sie darum bitten, etwa zum Zurücksetzen des Passworts.",
+    "storedPrices": "<b>Preise, wenn Sie welche angeben:</b> was Sie für jeden Rohstoff pro Kilogramm bezahlen, und die Währung, in der sie angegeben sind, für die Kosten eines Ansatzes. Es sind Geschäftsdaten, die mit Ihrem Konto gespeichert werden und nur Ihnen gehören: Sie sind nie Teil eines Rezepts, deshalb zeigt nichts, was Sie teilen, sie an. „Meine Daten herunterladen“ enthält sie, und beim Löschen des Kontos werden sie gelöscht. Die Preise eines Testzugangs werden mit seinen Datensätzen in Ihr Konto übernommen, für Rohstoffe, für die Sie noch keinen Preis angegeben haben, wenn beide dieselbe Währung haben.",
     "storedEmailChange": "<b>Änderung Ihrer E-Mail-Adresse:</b> das Datum, an dem sich Ihre Adresse zuletzt geändert hat, damit eine Anfrage, die Zwei-Schritt-Anmeldung auszuschalten, in den 30 Tagen danach nie von einer neuen Adresse angenommen wird.",
     "storedSignIn": "<b>Zwei-Schritt-Anmeldung, wenn Sie sie einschalten:</b> ob sie eingeschaltet ist; der Schlüssel, den Ihre Authenticator-App mit Glazecalc teilt, verschlüsselt; für jeden Passkey sein öffentlicher Schlüssel (der allein keine Anmeldung ermöglicht) mit der ID und den Angaben, die Ihr Gerät ihm gibt, der Name, den Sie ihm gegeben haben, und wann er hinzugefügt und zuletzt verwendet wurde; Ihre Wiederherstellungscodes, nur als Einweg-Hash mit Schlüssel, sodass niemand sie zurücklesen kann; und, wenn jemand Ihr Passwort eingibt, den zweiten Schritt aber nicht abschließt, wann Glazecalc Ihnen deswegen zuletzt eine E-Mail gesendet hat (höchstens einmal am Tag). Während Sie sich anmelden, zwischen Passwort und zweitem Schritt, behält der Server 5 Minuten lang einen Vermerk zur Anmeldung, und die Seite hält ein kurzes Token nur in ihrem Arbeitsspeicher: kein neues Cookie, nichts im Speicher Ihres Browsers.",
-    "storedSaved": "<b>Was Sie speichern:</b> Ihre Rezepte, Rohstoffe, Zusätze, Notizen, Brennprotokolle und Tipps, so wie Sie sie geschrieben haben. Nur Sie können sie sehen: Zwischen den Nutzerkonten wird nichts geteilt.",
+    "storedSaved": "<b>Was Sie speichern:</b> Ihre Rezepte, Rohstoffe, Zusätze, Notizen, Brennprotokolle und Tipps, so wie Sie sie geschrieben haben. Nur Sie können sie sehen, es sei denn, Sie teilen ein Rezept per Link.",
+    "storedTrash": "<b>Der Papierkorb und frühere Fassungen:</b> Was Sie aus einer Liste entfernen, wartet unverändert im Papierkorb, damit Sie es wiederherstellen können; und jede Änderung, die Sie an einem Datensatz speichern, hebt den Datensatz auf, wie er unmittelbar davor war, damit Sie die Änderung rückgängig machen können.",
+    "storedShares": "<b>Rezepte, die Sie per Link teilen, wenn Sie welche teilen:</b> welches Rezept, wann sein Link erstellt wurde und ob er die Notizen des Rezepts zeigt, mit einem Einweg-Hash des Links (nie der Link selbst). Wer den Link hat, kann das Rezept so sehen, wie es jetzt ist, mit seiner Segerformel und, wenn Sie das gewählt haben, seinen Notizen; nie Ihre E-Mail-Adresse, Ihr Konto oder Preise. Geteilte Rezepte werden aus Suchmaschinen herausgehalten, und der Link gelangt nie in die Logdateien des Servers. Um Missbrauch zu verhindern, werden die von jeder IP-Adresse geöffneten geteilten Rezepte 15 Minuten lang im Arbeitsspeicher gezählt. Ein Testzugang kann nichts teilen.",
+    "storedTokens": "<b>Zugriffstoken und verbundene Apps, wenn Sie welche erstellen oder genehmigen:</b> für jedes sein Name, was es darf, ein Einweg-Hash des Tokens (nie das Token selbst) und seine letzten 4 Zeichen sowie wann es erstellt, zuletzt verwendet wurde, abläuft und widerrufen wurde.",
+    "storedActivity": "<b>Was Token und Apps getan haben:</b> eine Zeile für jeden Datensatz, den ein Zugriffstoken oder eine verbundene App erstellt, geändert, in den Papierkorb gelegt, wiederhergestellt oder rückgängig gemacht hat: wann, welches Token oder welche App, was sie getan hat und der gekürzte Titel des Datensatzes. Nie der Text einer Notiz oder sonst etwas aus dem Datensatz. Änderungen, die Sie auf der Website vornehmen, werden nicht aufgeführt.",
+    "storedLimits": "<b>Begrenzungen der Häufigkeit:</b> um Raten und außer Kontrolle geratene Skripte zu verhindern, werden gezählt: Anmeldeversuche, Registrierungen, Anfragen zum Zurücksetzen und Testzugänge nach IP-Adresse oder Konto, nicht funktionierende Zugriffstoken nach IP-Adresse, Anfragen mit Zugriffstoken nach Konto (120 pro Minute und 5000 pro Tag), die Datensätze, die jedes Zugriffstoken in den Papierkorb legt, nach Token, geöffnete geteilte Rezepte und Freigabelinks, die nichts öffnen, nach IP-Adresse sowie Anfragen an die Werkzeuge für KI-Assistenten (MCP): 60 pro Minute und 2000 pro Tag je IP-Adresse oder 120 pro Minute und 5000 pro Tag je Konto, wenn ein Zugriffstoken verwendet wird, mit höchstens 10 Ersetzungen oder Treffern pro Minute.",
     "storedTrial": "<b>Ein Testzugang („Jetzt ausprobieren“):</b> keine E-Mail-Adresse und kein Passwort, nur ein ausgedachter Name wie „speckled quiet kilns“. Wenn Sie sich während eines Testzugangs im selben Browser bei einem Konto anmelden, wird das, was Sie im Testzugang erstellt haben, in das Konto übernommen.",
     "storedResets": "<b>Links zum Zurücksetzen des Passworts und E-Mail-Links:</b> welches Konto sie angefordert hat, wann, die Adresse, an die ein Link zur Bestätigung einer Adresse gesendet wurde, und ein Fingerabdruck jedes Links (nicht der Link selbst).",
     "storedLogs": "<b>Logdateien:</b> Der Webserver zeichnet jede Anfrage auf: Ihre IP-Adresse, die Uhrzeit, die angeforderte Seite und den Namen Ihres Browsers. Die App zeichnet Fehler mit der Seite auf, auf der sie aufgetreten sind, nie Ihre E-Mail-Adresse.",
@@ -96,6 +106,11 @@
     "choiceNoWarranty": "Glazecalc wird so, wie es ist, ohne Gewährleistung bereitgestellt. Die Maintainer von Glazecalc übernehmen keine Verantwortung und keine Haftung für Ihre Entscheidung, ein Konto zu erstellen, oder dafür, wo dessen Daten gespeichert sind.",
     "keptHeading": "Wie lange Daten aufbewahrt werden",
     "keptAccount": "<b>Ihr Konto und was Sie speichern:</b> bis Sie sie löschen. Konten werden nicht entfernt, weil sie nicht genutzt werden.",
+    "keptTrash": "<b>Der Papierkorb und frühere Fassungen:</b> ein entfernter Datensatz 30 Tage nach dem Entfernen oder bis Sie ihn endgültig löschen oder den Papierkorb leeren; frühere Fassungen 90 Tage, und nur die letzten 20 jedes Datensatzes (und die von vor den Änderungen eines Zugriffstokens), aber nie länger als der Datensatz: Solange er im Papierkorb liegt, verschwinden seine Fassungen mit ihm. Beides verschwindet sofort, wenn Sie Ihr Konto löschen.",
+    "keptShares": "<b>Freigabelinks:</b> bis Sie das Teilen des Rezepts beenden, einen neuen Link dafür erstellen, es in den Papierkorb legen oder Ihr Konto löschen. Wenn Sie das Rezept aus dem Papierkorb wiederherstellen, wird es nicht erneut geteilt. Auch das Zurücksetzen Ihres Passworts oder das Abmelden überall beendet alle Ihre Links; eine Änderung Ihres Passworts tut das nicht.",
+    "keptTokens": "<b>Zugriffstoken und verbundene Apps:</b> jedes bis 30 Tage nach seinem Ablauf (jedes läuft ab, spätestens innerhalb eines Jahres) oder bis Sie Ihr Konto löschen. Ein Zurücksetzen des Passworts oder „Überall abmelden“ beendet sie alle auf einmal.",
+    "keptActivity": "<b>Was Token und Apps getan haben:</b> 90 Tage oder bis Sie Ihr Konto löschen.",
+    "keptLimits": "<b>Begrenzungen der Häufigkeit:</b> Die Zähler werden nur im Arbeitsspeicher des Servers gehalten, 1 Minute bis 24 Stunden lang, und gehen bei einem Neustart verloren.",
     "keptTrial": "<b>Ein Testzugang:</b> 14 Tage ab seinem Beginn, dann wird er mit allem darin gelöscht, es sei denn, Sie erstellen ein Konto, um ihn zu behalten.",
     "keptResets": "<b>Links zum Zurücksetzen des Passworts und E-Mail-Links:</b> Ein Link zum Zurücksetzen ist 30 Minuten gültig, und seine Aufzeichnung wird nach etwa einer Stunde gelöscht; ein Link zur Bestätigung einer Adresse ist 24 Stunden gültig und wird so lange aufbewahrt.",
     "keptSignIn": "<b>Zwei-Schritt-Anmeldung:</b> jede Authenticator-App, jeder Passkey und jeder Satz Wiederherstellungscodes, bis Sie sie entfernen, die Zwei-Schritt-Anmeldung ausschalten oder Ihr Konto löschen. Eine Anmeldung, die auf ihren zweiten Schritt wartet, wird nach 5 Minuten gelöscht, und eine App oder ein Passkey, die Sie hinzufügen wollten, aber nicht abgeschlossen haben, nach höchstens 10.",
@@ -113,7 +128,7 @@
     "rightsAsk": "Für alles andere, etwa wenn Sie verlangen, dass Ihre Daten nicht verwendet werden, solange ein Fehler berichtigt wird, oder wenn Sie der Art ihrer Verwendung widersprechen, schreiben Sie an <mail>privacy@glazecalcapp.com</mail>. Das ist kostenlos, und Sie erhalten innerhalb eines Monats eine Antwort. Sie werden nur gebeten zu zeigen, dass das Konto Ihnen gehört, indem Sie sich anmelden oder einen Link öffnen, der an seine Adresse gesendet wird, nie um einen Ausweis.",
     "rightsComplain": "Wenn Sie nicht zufrieden sind, können Sie sich bei einer Datenschutzaufsichtsbehörde beschweren: in der EU bei <edpb>der Behörde in Ihrem Land</edpb>, im Vereinigten Königreich beim <ico>Information Commissioner’s Office</ico>.",
     "storageHeading": "Cookies und Browserspeicher",
-    "storageIntro": "Glazecalc setzt ein Cookie und speichert einige kleine Werte in Ihrem Browser. Jeder davon dient etwas, worum Sie gebeten haben: angemeldet zu bleiben oder sich eine Wahl zu merken, die Sie getroffen haben. Keiner verfolgt Sie und keiner wird weitergegeben, deshalb verlangt das Gesetz keine vorherige Einwilligung, und es gibt kein Cookie-Banner.",
+    "storageIntro": "Glazecalc setzt zwei Cookies, das zweite nur, während Sie sich mit Google oder GitHub anmelden, und speichert ein paar kleine Werte in Ihrem Browser. Jeder ist für etwas da, worum Sie gebeten haben: angemeldet bleiben, mit Google oder GitHub anmelden oder sich eine getroffene Wahl merken. Keiner verfolgt Sie und keiner wird weitergegeben, deshalb verlangt das Gesetz keine vorherige Frage, und es gibt kein Cookie-Banner.",
     "storageLabel": "Cookies und Browserspeicher",
     "storageName": "Name",
     "storagePurpose": "Zweck",
@@ -152,7 +167,7 @@
         "lasts": "Bis Sie den Speicher Ihres Browsers löschen."
       },
       "print": {
-        "purpose": "Ihre letzte Wahl beim Drucken eines Rezepts: das ganze Rezept oder ein Ansatz, und die Ansatzgröße.",
+        "purpose": "Ihre letzten Einstellungen zum Drucken eines Rezepts: das ganze Rezept, ein Ansatz oder das Arbeitsblatt, und die Ansatzgröße.",
         "lasts": "Bis Sie den Speicher Ihres Browsers löschen."
       },
       "token": {
@@ -166,12 +181,19 @@
       "reloadedFor": {
         "purpose": "Nachdem eine neue Version der Website veröffentlicht wurde: welche Seite wann neu geladen wurde, damit eine Seite höchstens einmal pro Minute neu lädt.",
         "lasts": "Bis Sie den Tab schließen."
+      },
+      "oauthCookie": {
+        "purpose": "Nur während Sie sich mit Google oder GitHub anmelden: Es verbindet die Antwort des Anbieters mit Ihrem Browser, damit niemand sonst Ihre Anmeldung abschließen oder für Sie eine starten kann. Skripte auf der Seite können es nicht lesen.",
+        "lasts": "Gesetzt, wenn Sie auf „Mit Google fortfahren“ oder „Mit GitHub fortfahren“ drücken oder eines auf Ihrer Kontoseite verknüpfen. Entfernt, wenn die Anmeldung abgeschlossen ist, oder nach 10 Minuten."
       }
     },
     "childrenHeading": "Kinder",
     "children": "Glazecalc ist ein Werkzeug für Töpferinnen und Töpfer und richtet sich nicht an Kinder.",
     "changesHeading": "Änderungen",
-    "changes": "Wenn sich diese Datenschutzerklärung ändert, ändert sich auch das Datum oben auf der Seite."
+    "changes": "Wenn sich diese Datenschutzerklärung ändert, ändert sich auch das Datum oben auf der Seite.",
+    "storedProviders": "<b>Google oder GitHub, wenn Sie sich mit einem anmelden:</b> die eigene Kennung des Anbieters für Sie (eine Zahl oder ein Code, der sich nie ändert), wann Sie es verknüpft haben und wann Sie sich zuletzt damit angemeldet haben, und ob Ihr Konto ein eigenes Passwort hat. Sonst wird nichts vom Anbieter gespeichert: nicht Ihr Name, Ihr Bild oder ein Schlüssel zu Ihrem Konto dort. Während Sie sich anmelden, speichert der Server einen Vermerk über die Anmeldung, mit der E-Mail-Adresse, die der Anbieter als Ihre nennt, wenn sie gebraucht wird: bei einem neuen Konto, wo sie zur E-Mail-Adresse Ihres Kontos wird, oder, wenn ein Glazecalc-Konto diese Adresse schon hat, um den Anbieter damit zu verknüpfen, sobald Sie sich bei diesem Konto anmelden. Der Vermerk und die E-Mail-Adresse darin werden innerhalb von etwa 10 Minuten gelöscht.",
+    "providers": "<b>Die Anmeldung mit Google oder GitHub</b> ist Ihre Wahl und geschieht nur, wenn Sie auf die Schaltfläche drücken. Ihr Browser geht dann zu Google oder GitHub, die Glazecalc ihre Kennung für Sie und Ihre E-Mail-Adresse senden. Jedes ist ein eigenes Unternehmen und nach seiner eigenen Datenschutzerklärung dafür verantwortlich, was Sie damit teilen. Weder ein Skript noch ein Bild von einem der beiden wird auf den Seiten von Glazecalc geladen.",
+    "keptProviders": "<b>Google oder GitHub:</b> jede Verknüpfung, bis Sie sie trennen oder Ihr Konto löschen. Eine laufende Anmeldung wird nach 10 Minuten gelöscht."
   },
   "notFound": {
     "heading": "Seite nicht gefunden",
@@ -194,8 +216,35 @@
     "titleMissing": "Geben Sie dem Tipp einen Titel.",
     "contentMissing": "Schreiben Sie den Tipp.",
     "fetchFailed": "Beim Abrufen der Tipps ist ein Fehler aufgetreten.",
-    "standardFetchFailed": "Beim Abrufen der Tipps vom Server ist ein Fehler aufgetreten.",
     "saved": "Tipp erfolgreich hinzugefügt.",
     "saveFailed": "Beim Senden des Tipps ist ein Fehler aufgetreten."
+  },
+  "assistants": {
+    "title": "Glazecalc mit Ihrem KI-Assistenten nutzen",
+    "lead": "KI-Assistenten wie Claude, GitHub Copilot, Cursor und Gemini können die Berechnungen von Glazecalc über das Model Context Protocol (MCP) direkt nutzen.",
+    "whatHeading": "Was er kann",
+    "what": "Ohne Konto kann ein Assistent Rohstoffe in der Bibliothek nachschlagen, die Segerformel eines Rezepts berechnen, sie an den Grenzwerten für den Brand messen, Ersatz für nicht mehr hergestellte Rohstoffe vorschlagen, ein Rezept aus den Rohstoffen, die Sie nennen, nachbauen, zwischen Kegeln und Temperaturen umrechnen sowie die Anleitungen durchsuchen und lesen. Nichts, was er sendet, wird gespeichert; wie bei jeder Seite zeichnet die Logdatei des Webservers 14 Tage lang die IP-Adresse, die Uhrzeit und die Adresse jeder Anfrage auf (nie, was gesendet wurde).",
+    "mine": "Mit einem Zugriffstoken von Ihrer <account>Kontoseite</account> kann er außerdem Ihre eigenen Rezepte, Rohstoffe, Ihr Notizbuch, Ihre Brennprotokolle und die Rohstoffe lesen, die Sie vorrätig haben. Ein Token kann nur lesen: Es ändert oder entfernt nie etwas.",
+    "caution": "Die Prüfungen der Grenzwerte sind Warnhinweise aus veröffentlichten Grenzwerten, genau wie in der App, kein Beweis, dass eine Glasur lebensmittelgeeignet ist. Brennen Sie jede Glasur zur Probe, und lassen Sie Glasuren für Flächen mit Lebensmittelkontakt auf Abgabe von Metallen prüfen.",
+    "addressHeading": "Die Adresse",
+    "address": "Geben Sie Ihrem Assistenten diese Adresse und verwenden Sie den Streamable-HTTP-Transport:",
+    "token": "Damit er Ihre eigenen Datensätze lesen kann, erstellen Sie auf Ihrer <account>Kontoseite</account> ein Token und kopieren Sie es. Ihr Assistent sendet es in einem Authorization-Header, als Bearer gefolgt vom Token. Halten Sie es wie ein Passwort aus Dateien heraus, die Sie teilen oder einchecken.",
+    "clientsHeading": "Glazecalc zu Ihrem Assistenten hinzufügen",
+    "claudeCode": "In einem Terminal:",
+    "claudeCodeToken": "Mit einem Zugriffstoken, um auch Ihre eigenen Datensätze zu lesen:",
+    "vscode": "In .vscode/mcp.json in einem Ordner oder in Ihren Benutzereinstellungen. VS Code fragt einmal nach dem Token und hält es verborgen; lassen Sie headers und inputs weg, um nur die Werkzeuge zu verwenden, die kein Konto brauchen:",
+    "cursor": "In ~/.cursor/mcp.json oder .cursor/mcp.json in einem Projekt. Lassen Sie headers weg, um nur die Werkzeuge zu verwenden, die kein Konto brauchen:",
+    "gemini": "In ~/.gemini/settings.json. Lassen Sie headers weg, um nur die Werkzeuge zu verwenden, die kein Konto brauchen:",
+    "copy": "Kopieren",
+    "copyAddress": "Adresse kopieren",
+    "copyFor": "Einrichtung für {client} kopieren",
+    "copyForToken": "Einrichtung für {client} mit einem Zugriffstoken kopieren",
+    "copied": "Kopiert.",
+    "copyByHand": "Das Kopieren ist nicht gelungen. Der Text ist markiert: Kopieren Sie ihn aus dem Feld.",
+    "appsHeading": "Claude, ChatGPT und andere Apps",
+    "apps": "Fügen Sie einen benutzerdefinierten Connector mit der obigen Adresse hinzu. Diese Apps können noch kein Zugriffstoken senden, deshalb erhalten sie die Werkzeuge, die kein Konto brauchen. Der Zugriff auf Ihre eigenen Datensätze aus diesen Apps wird mit der Anmeldung in der App möglich.",
+    "stopHeading": "Zugriff beenden",
+    "stop": "Widerrufen Sie ein Token jederzeit auf Ihrer <account>Kontoseite</account>. Jedes Token hört an dem Tag auf zu funktionieren, den Sie gewählt haben, und alle hören auf einmal auf, wenn Sie Ihr Passwort zurücksetzen oder sich überall abmelden.",
+    "limits": "Jede Adresse kann 60 Anfragen pro Minute und 2000 pro Tag stellen; ein Konto mit einem Token 120 pro Minute und 5000 pro Tag. Ersetzungen und Treffer sind auf 10 pro Minute begrenzt."
   }
 }

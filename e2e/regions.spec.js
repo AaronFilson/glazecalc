@@ -66,6 +66,8 @@ test.describe('a potter in Japan', () => {
   });
 
   test("is shown Japan's lines, its silica yardstick and its ceramic limits, at phone width too", async ({ page }) => {
+    // Several pages or checks of a whole page: more than the default 30 seconds on a busy machine.
+    test.setTimeout(60000);
     await page.setViewportSize({ width: 375, height: 800 });
     await page.goto('/guides/home-safety');
     const lines = page.locator('gc-poison-lines');
@@ -101,6 +103,8 @@ test.describe('a potter in Türkiye', () => {
   });
 
   test("is shown Türkiye's lines, its silica formula and its ceramic limits, at phone width too", async ({ page }) => {
+    // Several pages or checks of a whole page: more than the default 30 seconds on a busy machine.
+    test.setTimeout(60000);
     await page.setViewportSize({ width: 375, height: 800 });
     await page.goto('/guides/home-safety');
     const lines = page.locator('gc-poison-lines');
@@ -136,6 +140,8 @@ test.describe('a potter in Taiwan', () => {
   test("is shown Taiwan's poison centre, the 2027 silica limit with its date, and limits in ppm, at phone width", async ({
     page
   }) => {
+    // Several pages or checks of a whole page: more than the default 30 seconds on a busy machine.
+    test.setTimeout(60000);
     await page.setViewportSize({ width: 375, height: 800 });
     await page.goto('/guides/home-safety');
     const lines = page.locator('gc-poison-lines');

@@ -48,7 +48,7 @@ Label: Pradinis rinkinys
 | Kalio lauko špatas                                       | Tas, kuris šiuo metu parduodamas jūsų šalyje, pvz., JAV – Mahavir                                            |
 | Nefelino sienitas{{en: nepheline syenite}}               | Bet koks; Glazy pažymi jo didesnį fliuso{{en: flux}} stiprumą; dažnai naudojamas žemam ir vidutiniam degimui |
 | Kreida                                                   | Bet kokia                                                                                                    |
-| Talkas                                                   | Bet koks                                                                                                     |
+| Talkas                                                   | Bet kokia be asbesto rūšis; patikrinkite jo saugos duomenų lapą (žr. Saugus maišymas ir vėdinimas)           |
 | Boro fritas vidutiniam degimui                           | Ferro 3134, 3124 arba 3195; JK – Potterycrafts P3124 arba P3195                                              |
 | Bentonitas ir dažikliai                                  | Nedideli kiekiai                                                                                             |
 
@@ -211,7 +211,7 @@ Label: Vanduo norimam santykiniam tankiui
 
 **Glazūros klijai CMC** (karboksimetilceliuliozė) padaro suspensiją lipnesnę ir lėčiau džiūstančią bei palieka kietesnį sluoksnį, kuris laikosi ant dirbinio. Jie svarbiausi glazūroms tepimui teptuku ir glazūroms, kuriose daug frito{{en: frit}}. Digitalfire pavyzdyje į 1000 g suspensijos įmaišoma 3,75 g, ir tai būtina daryti trintuvu. Glazūra su CMC nuo Epsom druskos nesutirštėja, o kadangi klijais minta mikrobai, ji kibire gali pakisti ir pradėti dvokti.
 
-**Bentonitas** – labai smulkus molis – padeda kitoms dalelėms išsilaikyti suspensijoje. Glazūrose merkimui tam paprastai naudojama 15–25 % nedegto molio. Receptui, kuriame molio trūksta, padeda maždaug 1–2 % bentonito.
+**Bentonitas** – labai smulkus molis – padeda kitoms dalelėms išsilaikyti suspensijoje. Glazūrose merkimui tam paprastai naudojama 15–25 % nedegto molio. Receptui, kuriame molio trūksta, padeda maždaug 1–3 % bentonito; pasak Digitalfire, glazūrai, kurioje yra daugiau kaip 15 % molio, neturėtų reikėti daugiau kaip 1 %.
 
 ## Bandiniai ir linijinės bandinių serijos {#testing}
 
@@ -284,6 +284,7 @@ Label: Įrašo šablonas
 - [Digitalfire: Epsom salts](https://digitalfire.com/material/epsom+salts)
 - [Digitalfire: CMC gum](https://digitalfire.com/material/cmc%2Bgum)
 - [Digitalfire: Dipping glaze](https://digitalfire.com/glossary/dipping+glaze)
+- [Digitalfire: Bentonite](https://digitalfire.com/material/bentonite)
 - [Digitalfire: Water solubility](https://digitalfire.com/glossary/water+solubility)
 - [Digitalfire: Gerstley Borate](https://digitalfire.com/material/gerstley+borate)
 - [Digitalfire: Mahavir potash feldspar](https://digitalfire.com/material/mahavir+potash+feldspar)

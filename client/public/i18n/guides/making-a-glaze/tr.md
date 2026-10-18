@@ -48,7 +48,7 @@ Label: Başlangıç seti
 | Potasyum feldspat{{en: potash feldspar}}      | Yaşadığınız yerde o sırada hangisi satılıyorsa; örneğin ABD’de Mahavir                                    |
 | Nefelin siyenit{{en: nepheline syenite}}      | Herhangi biri; Glazy, daha güçlü ergitme gücüne dikkat çekiyor; çoğu zaman düşük ve orta ısıda kullanılır |
 | Kalsit                                        | Herhangi biri                                                                                             |
-| Talk                                          | Herhangi biri                                                                                             |
+| Talk                                          | Asbestsiz herhangi bir tür; güvenlik bilgi formuna bakın (bkz. Güvenli karıştırma ve havalandırma)        |
 | Orta ısı için borlu bir frit                  | Ferro 3134, 3124 veya 3195; Birleşik Krallık’ta Potterycrafts P3124 veya P3195                            |
 | Bentonit ve renklendiriciler                  | Az miktarda                                                                                               |
 
@@ -211,7 +211,7 @@ Label: Hedef özgül ağırlık için su
 
 **CMC zamkı** (karboksimetil selüloz) sulu sırrı daha yapışkan ve daha geç kuruyan bir hâle getirir ve kaba tutunan daha sert bir tabaka bırakır. En çok fırçayla sürülen sırlarda ve fritçe zengin sırlarda önemlidir. Digitalfire’ın örneğinde 1000 g sulu sırra 3,75 g katılıyor ve bunun blenderla katılması gerekiyor. CMC içeren bir sır Epsom tuzuyla jelleşmez; mikroplar zamkla beslendiği için de kovada değişebilir ve kokmaya başlayabilir.
 
-**Bentonit**, çok ince taneli bir kil, diğer taneciklerin süspansiyonda kalmasına yardım eder. Daldırma sırları bunun için genellikle %15–25 ham kile dayanır. Kili az olan bir reçetede yaklaşık %1–2 bentonit yardımcı olur.
+**Bentonit**, çok ince taneli bir kil, diğer taneciklerin süspansiyonda kalmasına yardım eder. Daldırma sırları bunun için genellikle %15–25 ham kile dayanır. Kili az olan bir reçetede yaklaşık %1–3 bentonit yardımcı olur; Digitalfire, %15’ten fazla kil içeren bir sırın %1’den fazlasına ihtiyaç duymaması gerektiğini söyler.
 
 ## Test karoları ve doğrusal karışım testleri {#testing}
 
@@ -284,6 +284,7 @@ Label: Kayıt şablonu
 - [Digitalfire: Epsom salts](https://digitalfire.com/material/epsom+salts)
 - [Digitalfire: CMC gum](https://digitalfire.com/material/cmc%2Bgum)
 - [Digitalfire: Dipping glaze](https://digitalfire.com/glossary/dipping+glaze)
+- [Digitalfire: Bentonite](https://digitalfire.com/material/bentonite)
 - [Digitalfire: Water solubility](https://digitalfire.com/glossary/water+solubility)
 - [Digitalfire: Gerstley Borate](https://digitalfire.com/material/gerstley+borate)
 - [Digitalfire: Mahavir potash feldspar](https://digitalfire.com/material/mahavir+potash+feldspar)

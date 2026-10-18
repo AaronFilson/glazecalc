@@ -48,7 +48,7 @@ Label: Začetni nabor
 | Kalijev glinenec                                             | Tisti, ki se trenutno prodaja tam, kjer živite, na primer Mahavir v ZDA                                             |
 | Nefelin sienit{{en: nepheline syenite}}                      | Kateri koli; Glazy omenja njegovo večjo talilno moč, pogosto se uporablja pri nizko- in srednjetemperaturnem žganju |
 | Kreda                                                        | Katera koli                                                                                                         |
-| Talkum                                                       | Kateri koli                                                                                                         |
+| Talkum                                                       | Katera koli vrsta brez azbesta; preverite njegov varnostni list (glejte Varno mešanje in prezračevanje)             |
 | Borova frita, za srednjetemperaturno žganje                  | Ferro 3134, 3124 ali 3195; v Združenem kraljestvu Potterycrafts P3124 ali P3195                                     |
 | Bentonit in barvila                                          | V majhnih količinah                                                                                                 |
 
@@ -211,7 +211,7 @@ Label: Voda za ciljno relativno gostoto
 
 **CMC** (karboksimetilceluloza) naredi suspenzijo bolj lepljivo in počasneje sušečo ter pusti trši nanos, ki se drži izdelka. Najbolj je pomembna pri glazurah za nanos s čopičem in glazurah z veliko frite{{en: frit}}. V primeru spletnega mesta Digitalfire v 1000 g suspenzije vmešajo 3,75 g, vmešati pa jo je treba z blenderjem. Glazura s CMC se z grenko soljo ne zgosti, in ker se mikrobi hranijo z vezivom, se lahko v vedru spremeni in začne smrdeti.
 
-**Bentonit**, zelo drobna glina, pomaga ohranjati druge delce v suspenziji. Glazure za namakanje se pri tem navadno zanašajo na 15 do 25 % surove gline. Pri receptu z premalo gline pomaga približno 1 do 2 % bentonita.
+**Bentonit**, zelo drobna glina, pomaga ohranjati druge delce v suspenziji. Glazure za namakanje se pri tem navadno zanašajo na 15 do 25 % surove gline. Pri receptu z premalo gline pomaga približno 1 do 3 % bentonita; po navedbah Digitalfire glazura z več kot 15 % gline ne bi smela potrebovati več kot 1 %.
 
 ## Testne ploščice in testne serije {#testing}
 
@@ -284,6 +284,7 @@ Label: Predloga zapiska
 - [Digitalfire: Epsom salts](https://digitalfire.com/material/epsom+salts)
 - [Digitalfire: CMC gum](https://digitalfire.com/material/cmc%2Bgum)
 - [Digitalfire: Dipping glaze](https://digitalfire.com/glossary/dipping+glaze)
+- [Digitalfire: Bentonite](https://digitalfire.com/material/bentonite)
 - [Digitalfire: Water solubility](https://digitalfire.com/glossary/water+solubility)
 - [Digitalfire: Gerstley Borate](https://digitalfire.com/material/gerstley+borate)
 - [Digitalfire: Mahavir potash feldspar](https://digitalfire.com/material/mahavir+potash+feldspar)

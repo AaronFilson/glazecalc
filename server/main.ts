@@ -1,12 +1,14 @@
 // Starts Glazecalc: connects to MongoDB, deletes again any account a restored
-// backup brought back, serves the app (app.ts) on PORT, removes expired
-// trials, and shuts down cleanly when asked. Node runs this TypeScript as it
-// is: node server/main.ts.
+// backup brought back, dates Trash entries from before the Trash, serves the app (app.ts) on PORT, removes expired
+// trials, sends access tokens' expiry reminders, and shuts down cleanly when
+// asked. Node runs this TypeScript as it is: node server/main.ts.
 import type http from 'node:http';
 import mongoose from 'mongoose';
 import app from './app.ts';
 import { reapplyDeletions } from './lib/account_data.ts';
+import { dateOldTrash } from './lib/record_history.ts';
 import * as guestSweeper from './lib/guest_sweeper.ts';
+import * as tokenReminders from './lib/token_reminders.ts';
 import * as log from './lib/log.ts';
 
 const PORT = process.env.PORT || 3000;
@@ -32,6 +34,14 @@ const start = async () => {
     process.exit(1);
   }
 
+  // Trash entries from before the Trash was used get a date, so they expire.
+  try {
+    const dated = await dateOldTrash();
+    if (dated) log.info('Dated old Trash entries', { count: dated });
+  } catch (err) {
+    log.error('Could not date old Trash entries', { err });
+  }
+
   // Express 5 passes startup errors (such as a port in use) to this callback.
   server = app.listen(PORT, (err?: Error) => {
     if (err) {
@@ -40,6 +50,7 @@ const start = async () => {
     }
     log.info('Glazecalc server up', { port: Number(PORT) });
     guestSweeper.start();
+    tokenReminders.start();
   });
 };
 void start();

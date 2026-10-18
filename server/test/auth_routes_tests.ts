@@ -704,7 +704,9 @@ describe('two-step sign-in', () => {
       expect(await finish(await pendingFor(user), { code: GOOD_CODE })).to.have.status(200);
     });
 
-    it('counts wrong answers per address, but not finished sign-ins', async () => {
+    it('counts wrong answers per address, but not finished sign-ins', async function () {
+      // Many sign-ins, each checking a password: the files run in parallel, so allow more than 5 seconds.
+      this.timeout(15000);
       // More finished sign-ins than the 20 the address allows.
       const { user } = await mfaUser();
       for (let i = 0; i < 25; i++)
@@ -771,6 +773,8 @@ describe('two-step sign-in', () => {
     it('sends one email for tries that run out at the same moment', async () => {
       const { user, email } = await mfaUser();
       await Promise.all([1, 2, 3].map(() => useUpTries(user)));
+      // The first, however busy the machine; then time for any second one.
+      await mail.waitFor(email, 1);
       await mail.settle();
       expect(unfinished(email)).to.have.length(1);
     });
@@ -919,7 +923,9 @@ describe('two-step sign-in', () => {
         await reset();
       });
 
-      it('has a count of its own, so password guessing does not stop passkey sign-in', async () => {
+      it('has a count of its own, so password guessing does not stop passkey sign-in', async function () {
+        // Many sign-ins, each checking a password: the files run in parallel, so allow more than 5 seconds.
+        this.timeout(15000);
         const { email, credentialId } = await mfaUser({ passkey: true });
         for (let i = 0; i < 20; i++) expect(await signIn(email, 'wrong-password')).to.have.status(401);
         const guessing = await signIn(email, 'wrong-password');
@@ -941,7 +947,9 @@ describe('two-step sign-in', () => {
         expect(limited.body.code).to.eql('too-many-sign-ins');
       });
 
-      it('counts only refused passwords, whether the right one signs in or asks for the second step', async () => {
+      it('counts only refused passwords, whether the right one signs in or asks for the second step', async function () {
+        // Many sign-ins, each checking a password: the files run in parallel, so allow more than 5 seconds.
+        this.timeout(15000);
         const plain = await makeUser();
         const withMfa = await mfaUser();
         for (let i = 0; i < 11; i++) {

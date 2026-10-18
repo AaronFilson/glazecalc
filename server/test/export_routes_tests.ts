@@ -23,12 +23,18 @@ describe('export API', () => {
     [alice, bob] = await Promise.all([makeUser(), makeUser()]);
     await User.updateOne(
       { _id: alice.user._id },
-      { displayname: 'Alice', preferences: { theme: 'dark', region: 'DE' }, shelf: ['name:Whiting'] }
+      {
+        displayname: 'Alice',
+        preferences: { theme: 'dark', region: 'DE', currency: 'EUR' },
+        shelf: ['name:Whiting'],
+        prices: [{ key: 'name:Whiting', perKg: 0.75 }]
+      }
     );
     await Recipe.create({
       title: 'Clear, "gloss"',
       ownedBy: String(alice.user._id),
       date: '2026-01-02',
+      sgTarget: 1.45,
       notes: ['fires clear'],
       materials: [{ name: 'Whiting', amount: '20' }],
       additives: [{ name: 'Tin oxide', amount: '2', unit: 'percent' }]
@@ -74,16 +80,18 @@ describe('export API', () => {
     expect(res.headers['content-type']).to.match(/^application\/json/);
   });
 
-  it('holds the account, preferences, shelf and every kind of record', async () => {
+  it('holds the account, preferences, shelf, prices and every kind of record', async () => {
     const { body } = await get('/export', alice.token);
     expect(body.format).to.eql('glazecalc-export');
     expect(body.version).to.eql(1);
     expect(body.account).to.include({ id: String(alice.user._id), email: alice.email, displayname: 'Alice' });
     expect(body.preferences).to.include({ theme: 'dark', region: 'DE' });
     expect(body.shelf).to.eql(['name:Whiting']);
+    expect(body.prices).to.eql([{ key: 'name:Whiting', perKg: 0.75 }]);
+    expect(body.preferences).to.include({ currency: 'EUR' });
     expect(body.records).to.have.all.keys('additives', 'advice', 'firing', 'materials', 'notes', 'recipes', 'trash');
     expect(body.records.recipes).to.have.length(1);
-    expect(body.records.recipes[0]).to.include({ title: 'Clear, "gloss"' });
+    expect(body.records.recipes[0]).to.include({ title: 'Clear, "gloss"', sgTarget: 1.45 });
     expect(body.records.materials[0]).to.include({ name: '=cmd()' });
     expect(body.records.notes).to.eql([]);
   });
@@ -99,6 +107,8 @@ describe('export API', () => {
   it("never holds another user's data", async () => {
     const raw = text(await get('/export', alice.token));
     expect(raw).to.not.include('Bob');
+    // Bob's prices are his alone.
+    expect((await get('/export', bob.token)).body.prices).to.eql([]);
     expect(raw).to.not.include('Talc');
     expect(raw).to.not.include(bob.email);
     expect(raw).to.not.include(String(bob.user._id));
@@ -111,7 +121,14 @@ describe('export API', () => {
     const { body } = await get('/export', bob.token);
     expect(body.preferences).to.eql({});
     expect(body.shelf).to.eql([]);
-    expect(body.signIn).to.eql({ authenticatorApp: null, passkeys: [], recoveryCodes: { left: 0 } });
+    expect(body.prices).to.eql([]);
+    expect(body.signIn).to.eql({
+      ownPassword: true,
+      providers: [],
+      authenticatorApp: null,
+      passkeys: [],
+      recoveryCodes: { left: 0 }
+    });
   });
 
   it('says how the account signs in, in names and dates, never a secret, key, id or hash', async () => {
@@ -147,6 +164,8 @@ describe('export API', () => {
     );
     const res = await get('/export', alice.token);
     expect(res.body.signIn).to.eql({
+      ownPassword: true,
+      providers: [],
       authenticatorApp: { addedAt: added.toISOString(), lastUsedAt: used.toISOString() },
       passkeys: [{ name: 'Studio laptop', addedAt: added.toISOString() }],
       recoveryCodes: { madeAt: added.toISOString(), left: 9 }
@@ -172,10 +191,10 @@ describe('export API', () => {
     expect(res.headers['content-disposition']).to.match(/^attachment; filename="glazecalc-recipes-/);
     expect(res.headers['cache-control']).to.eql('no-store');
     const lines = text(res).replace('﻿', '').trim().split('\r\n');
-    expect(lines[0]).to.eql('Recipe,Date,Notes,Type,Ingredient,Amount,Unit of additive');
+    expect(lines[0]).to.eql('Recipe,Date,Notes,Type,Ingredient,Amount,Unit of additive,Cone,Atmospheres,Food surface');
     expect(lines.slice(1)).to.eql([
-      '"Clear, ""gloss""",2026-01-02,fires clear,Material,Whiting,20,',
-      '"Clear, ""gloss""",2026-01-02,fires clear,Additive,Tin oxide,2,percent'
+      '"Clear, ""gloss""",2026-01-02,fires clear,Material,Whiting,20,,,,',
+      '"Clear, ""gloss""",2026-01-02,fires clear,Additive,Tin oxide,2,percent,,,'
     ]);
   });
 

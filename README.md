@@ -37,6 +37,25 @@ materials, colorants, firing logs and notes together in one private notebook.
   to watch for past a recommended limit.
 - **Match with what I have:** make a recipe again from only the materials on hand, a list kept
   with your account.
+- **Analysis and limits:** the unity formula set against Hesselberth & Roy's stable glaze limits
+  or Glazecalc's own, for the firing saved with the recipe, and a **Stull chart** of silica
+  against alumina with its matte, semi-matte and bright regions.
+- **Specific gravity and water:** weigh a measured volume of the glaze to find its SG, then the
+  water that brings the bucket to the SG you want, or the water for a new batch.
+- **Paste in recipes** from a website, a spreadsheet or your notes: see how each line was read
+  and which material it was taken for before anything is saved.
+- **Blends for test tiles:** two, three or four of your recipes blended into numbered tiles,
+  with what to weigh for each.
+- **Cost per batch** from the prices you pay, kept private with your account in one currency,
+  and a **mix ticket** to print for the glaze room, with the batch number, the target SG and the
+  materials' hazards (prices left off unless you choose).
+- **Share a recipe** with a read-only link that anyone can open without an account, with its
+  unity formula and **how it is worked out**, step by step; stop sharing at any time.
+- **Sign in with Google or GitHub,** or with a password, two-step sign-in or a passkey.
+- **Use it from your AI assistant:** Claude, GitHub Copilot, Cursor, Gemini and others can use
+  the calculations through the Model Context Protocol (MCP) server at `/mcp`, and read your own
+  recipes with a read-only access token you make, and revoke, on your account page; the
+  Assistants page says how to connect one.
 - **Guides for new potters,** sourced: glazing from first principles with a glossary, how to make
   a glaze, safe mixing and ventilation, pottery at home with children and pets, and firing a
   basic kiln with cones, kiln sitters and manual switches.
@@ -53,7 +72,7 @@ materials, colorants, firing logs and notes together in one private notebook.
   sell glaze materials, the closest materials sold there to those a recipe names, the workplace
   limit for silica dust and the food-contact limits for glazed ware (for 36: no official limit
   was found for New Zealand), each checked on an official or the shop's own page.
-- **Translated into 26 languages:** an official language of every country of the EU (Bulgarian, Croatian, Czech, Danish, Dutch, English, Estonian, Finnish, French, German, Greek, Hungarian, Irish, Italian, Latvian, Lithuanian, Maltese, Polish, Portuguese, Romanian, Slovak, Slovenian, Spanish, and Swedish), Japanese and Turkish, each at its own addresses (`/de/recipe`).
+- **Translated into 32 languages:** an official language of every country of the EU (Bulgarian, Croatian, Czech, Danish, Dutch, English, Estonian, Finnish, French, German, Greek, Hungarian, Irish, Italian, Latvian, Lithuanian, Maltese, Polish, Portuguese, Romanian, Slovak, Slovenian, Spanish, and Swedish), Japanese, Turkish, Traditional Chinese, Korean, Simplified Chinese, Thai, Vietnamese and Indonesian, each at its own addresses (`/de/recipe`).
 
   Translated by AI with a glossary per language from suppliers' catalogues, reviewed, and the safety text checked by translating it back; every translated page says so and links to a form to suggest a better wording.
 
@@ -82,8 +101,8 @@ For anyone reading the code:
   `.ts` files directly with no build step ([ADR 8](docs/adr/0008-typescript-server-without-a-build.md)),
   and put back online. The
   [case study](docs/case-study.md) tells how.
-- **Tested at three levels, in CI on every pull request and push to master:** 398 server tests (98% of statements) run
-  against the app in-process; 477 Angular unit tests (92%); 194 Playwright browser tests,
+- **Tested at three levels, in CI on every pull request and push to master:** about 1,000 server tests (98% of
+  statements) run against the app in-process; over 700 Angular unit tests (92%); about 175 Playwright browser tests,
   including [axe](https://github.com/dequelabs/axe-core) accessibility checks of every page in
   light and dark mode, every page in a pseudo-locale to find text not marked for translation, and
   every page in each language at a phone's width.
@@ -204,22 +223,24 @@ including PowerShell and cmd.
 
 ## Tests
 
-| Command                  | What it runs                                                                                                                                                                                                                                                                                           |
-| ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `npm test`               | Server and chemistry tests (Mocha). They serve the app inside the test process on a free port and use the `glazecalc_test` database, emptied at the start; only `mongod` must be running.                                                                                                              |
-| `npm run test:client`    | Angular unit tests (Vitest), with no server or database.                                                                                                                                                                                                                                               |
-| `npm run test:e2e`       | Browser and accessibility tests (Playwright and axe). They build the app, run it on port 3100 (`E2E_PORT`) with a `glazecalc_e2e` database they reset, and need Chromium once: `npx playwright install chromium`.                                                                                      |
-| `npm run test:e2e:linux` | The browser tests on Linux in Docker, in the same Playwright image CI runs them in, so a layout that passes here passes there. It tests the working tree, uncommitted changes included, and copies what failed to `test-results-linux/`. On Windows it runs through WSL, which needs Docker inside it. |
-| `npm run check:i18n`     | The messages: every key the app uses has its English and every English is used, translations keep the English's placeholders, tags and plural forms, and the English written from code is current ([how to write text](docs/translating.md)).                                                          |
-| `npm run i18n:sources`   | Writes the English of the messages kept in code and data (the server's, the chemistry's, the standard records', who to call, the region data) for translators.                                                                                                                                         |
-| `npm run test:all`       | The server, Angular and browser tests, on this machine.                                                                                                                                                                                                                                                |
-| `npm run test:all:linux` | The server and Angular tests, then the browser tests on Linux. Run it before pushing anything that changes layout or printing.                                                                                                                                                                         |
+| Command                  | What it runs                                                                                                                                                                                                                                                                                                                                                                                                   |
+| ------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `npm test`               | Server and chemistry tests (Mocha), the files in parallel (a worker for each core but one; `--jobs` sets it). Each worker serves the app inside its process on a free port with a database of its own (`glazecalc_test_w0`, `_w1`, …, emptied before each file and dropped after); only `mongod` must be running.                                                                                              |
+| `npm run test:client`    | Angular unit tests (Vitest), with no server or database.                                                                                                                                                                                                                                                                                                                                                       |
+| `npm run test:e2e`       | Browser and accessibility tests (Playwright and axe), in parallel workers (half the cores; `E2E_WORKERS` sets how many) against one server. They build the app when `dist/` is older than its sources (`E2E_BUILD=always` or `never` overrides), run it on port 3100 (`E2E_PORT`) with a `glazecalc_e2e` database (`E2E_MONGO_URI`) they reset, and need Chromium once: `npx playwright install chromium`.     |
+| `npm run test:e2e:linux` | The browser tests on Linux in Docker, in the same Playwright image CI runs them in, so a layout that passes here passes there. It tests the working tree, uncommitted changes included, and copies what failed to `test-results-linux/`. On Windows it runs through WSL, which needs Docker inside it.                                                                                                         |
+| `npm run test:e2e:both`  | The browser tests here and on Linux at the same time, each with a quarter of the cores (`E2E_WORKERS` sets each run's workers), with each line marked with the run it came from. The two share nothing, so it takes about as long as the slower one.                                                                                                                                                           |
+| `npm run check:i18n`     | The messages: every key the app uses has its English and every English is used, translations keep the English's placeholders, tags and plural forms, and the English written from code is current ([how to write text](docs/translating.md)).                                                                                                                                                                  |
+| `npm run i18n:sources`   | Writes the English of the messages kept in code and data (the server's, the chemistry's, the standard records', who to call, the region data) for translators, and takes out every translation made from English that has changed since ([docs/translating.md](docs/translating.md)). It refuses while translations have uncommitted changes (`--force` overrides); `-- --dry-run` shows what it would change. |
+| `npm run test:all`       | The server, Angular and browser tests, on this machine.                                                                                                                                                                                                                                                                                                                                                        |
+| `npm run test:all:linux` | The server and Angular tests, then the browser tests on Linux. Run it before pushing anything that changes layout or printing.                                                                                                                                                                                                                                                                                 |
 
 `npm run test:coverage` and `npm run test:client:coverage` add coverage reports, and
 `npx playwright show-report` opens the browser test results. GitHub Actions runs lint, the format
 check, an npm audit, the build and all three suites on pushes to master and on pull requests,
 against a MongoDB 9 service container, and builds and checks the Docker image
-(`.github/workflows/ci.yml`).
+(`.github/workflows/ci.yml`). The jobs run side by side, and the browser tests are split across
+three runners (`--shard`), whose reports are merged into one (the `playwright-report` artifact).
 
 ## Project structure
 
@@ -233,8 +254,13 @@ against a MongoDB 9 service container, and builds and checks the Docker image
       i18n-fingerprints/  the English each translation was made from
       styles.scss       the palette and dark mode, on top of Bootstrap 5
     lib/chemistry/    glaze chemistry: molar masses, material analyses, the unity formula
+    lib/recipe/       the recipe tools the app, the server and the MCP tools share: amounts,
+                      analysis, limits, checks, substitutions, blends (ADR 19)
+    lib/cones/        pyrometric cones (Orton, SK) and a recipe's firing
     lib/regions/      the regions and languages, and each country's facts for the guides:
                       who to call, shops, silica limits, food-contact rules
+    lib/pages.js      the pages worth finding in a search (sitemap, server, prerender)
+    lib/mfa.js        the numbers two-step sign-in's server and app share
     server/           the API server, in TypeScript that Node runs as it is (no build step)
       main.ts           starts it: connects to MongoDB, listens, shuts down cleanly
       app.ts            the Express app: the API under /api, the built client for the rest,
@@ -242,6 +268,7 @@ against a MongoDB 9 service container, and builds and checks the Docker image
       routes/           accounts, password reset, trials, and records.ts: the seven kinds of
                         record a user keeps, served by one route factory
       lib/              sign-in tokens, the record routes, trial limits and cleanup, email, logging
+      mcp/              the MCP server for AI assistants (/mcp): its tools, prompts and guides
       models/           Mongoose schemas
       test/             server and chemistry tests (Mocha)
     e2e/              browser and accessibility tests (Playwright, axe)
@@ -275,7 +302,7 @@ has notes from setting it up in WSL Debian.
 
 When the app is reachable by other people, set `APP_SECRET` to a long random value (production
 requires it; changing it signs everyone out), set `MAIL_TRANSPORT` and `SMTP_URL` so password
-reset emails can go out, and set `APP_URL` to the address people open the app at, which the links
+reset emails can go out, and set `SITE_URL` (formerly `APP_URL`) to the address people open the app at, which the links
 in those emails use. Put them in the environment or in `.env`; `compose.yaml` passes them to the
 app ([.env.example](.env.example) describes each one). Sign-in, sign-up, trials and password reset
 are rate limited per client address; behind a reverse proxy the app trusts one hop of

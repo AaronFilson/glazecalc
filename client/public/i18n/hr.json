@@ -17,13 +17,17 @@
     "confirmEmail": "Potvrda adrese e-pošte – Glazecalc",
     "home": "Vaša radionička bilježnica – Glazecalc",
     "recipe": "Recepti – Glazecalc",
+    "import": "Zalijepi recepte – Glazecalc",
+    "blends": "Mješavine za probne pločice – Glazecalc",
     "material": "Sirovine – Glazecalc",
     "additive": "Dodaci – Glazecalc",
     "firingLogs": "Zapisnici pečenja – Glazecalc",
     "notes": "Bilješke – Glazecalc",
     "trash": "Koš za smeće – Glazecalc",
     "account": "Vaš račun i postavke – Glazecalc",
-    "notFound": "Stranica nije pronađena – Glazecalc"
+    "notFound": "Stranica nije pronađena – Glazecalc",
+    "shared": "Podijeljeni recept – Glazecalc",
+    "assistants": "Koristite Glazecalc iz svojeg AI asistenta – Glazecalc"
   },
   "nav": {
     "skip": "Preskoči na sadržaj",
@@ -39,7 +43,9 @@
     "guides": "Vodiči",
     "about": "O aplikaciji",
     "account": "Račun",
+    "trialAccount": "Probno korištenje",
     "accountTitle": "Vaš račun i postavke",
+    "trash": "Koš za smeće",
     "signOut": "Odjava",
     "createAccount": "Stvori besplatan račun"
   },
@@ -66,7 +72,8 @@
     "problem": "Prijavi problem",
     "pottery": "Ručno rađena keramika: Updraft Pottery Studio",
     "copyright": "© 2017–2026 Aaron Filson / Candling Development Studio · Besplatno i otvorenog koda (licenca MIT)",
-    "languages": "Jezici"
+    "languages": "Jezici",
+    "language": "Jezik:"
   },
   "numbers": {
     "notANumber": "Unesite broj, na primjer {example}.",
@@ -85,7 +92,7 @@
     "about": "Glazecalc je besplatan kalkulator kemije glazura za keramiku i bilježnica, otvorenog koda. Pogledajte kako izračunava Segerovu formulu (UMF) i kako je izrađen.",
     "privacy": "Kako Glazecalc postupa s vašim podacima: bez oglasa, analitike i praćenja, a ništa se ne prodaje. Što se čuva, zašto i kako ostvariti svoja prava.",
     "signup": "Stvorite besplatan račun u aplikaciji Glazecalc za svoje recepte za glazure, sirovine, bilješke i zapisnike pečenja. Bez oglasa, a podaci se nikad ne prodaju.",
-    "imageAlt": "Glazecalc: glazure ne samo miješajte nego ih i razumijte."
+    "imageAlt": "Početna stranica aplikacije Glazecalc: besplatna kemija glazura za lončare i keramičare, uz fotografiju pečenih stožaca."
   },
   "notices": {
     "dismiss": "Odbaci",
@@ -93,11 +100,15 @@
     "error": "Pogreška: {text}"
   },
   "remove": {
-    "removed": "Uklonjeno: „{name}”.",
     "alreadyRemoved": "Već uklonjeno: „{name}”.",
+    "trashed": "Premješteno u Koš za smeće: „{name}”.",
+    "undo": "Poništi",
+    "restored": "Vraćeno: „{name}”.",
+    "restoreFailed": "Ne možemo vratiti „{name}”. Još je u Košu za smeće.",
     "failed": "Nije moguće ukloniti. Pokušajte ponovno.",
     "question": "Želite li ukloniti „{name}”?",
     "cannotUndo": "To se ne može poništiti.",
+    "toTrash": "Možete ga vratiti iz Koša za smeće u roku od 30 dana.",
     "removing": "Uklanjanje…",
     "yes": "Da, ukloni",
     "cancel": "Odustani",
@@ -222,20 +233,26 @@
     "soldIn": "Prodaje se u",
     "showing": "Prikazano {shown} od {noun, select, additives {{total, plural, one {# dodatka} few {# dodatka} other {# dodataka}}} other {{total, plural, one {# sirovine} few {# sirovine} other {# sirovina}}}}",
     "name": "Naziv",
+    "equivalentWeight": "Ekvivalentna masa",
+    "firedWeight": "Masa nakon pečenja",
     "notes": "Napomene",
     "analysis": "Analiza",
+    "details": "Pojedinosti",
     "formula": "Formula",
+    "formulaLine": "Formula: {formula}",
     "useInstead": "<b>Koristite umjesto toga:</b> {list}",
     "similar": "Slično: {list}",
     "replaces": "Zamjenjuje: {list}",
     "aliases": "Drugi nazivi: {list}",
     "madeBy": "Proizvođač: {name}",
     "source": "Izvor:",
+    "hazardsLine": "Opasnosti: {hazards}",
     "noChemistry": "Bez analize: izostavljeno iz Segerove formule",
     "countedAs": "Računa se kao {name}",
     "nothingMatches": "Ništa ne odgovara. Pokušajte s drugim nazivom, vrstom ili regijom.",
     "loading": "Učitavanje…",
-    "notFetched": "Popis nije moguće dohvatiti. <retry>Pokušaj ponovno</retry>"
+    "notFetched": "Popis nije moguće dohvatiti. <retry>Pokušaj ponovno</retry>",
+    "showAll": "{noun, select, additives {{count, plural, one {Prikaži # dodatak} few {Prikaži sva # dodatka} other {Prikaži svih # dodataka}}} other {{count, plural, one {Prikaži # sirovinu} few {Prikaži sve # sirovine} other {Prikaži svih # sirovina}}}}"
   },
   "chemistryForm": {
     "name": "{noun, select, additive {Unesite naziv dodatka.} other {Unesite naziv sirovine.}}",
@@ -270,7 +287,7 @@
     "close": "Zatvori"
   },
   "unity": {
-    "fluxes": "Topitelji – RO",
+    "fluxes": "Topitelji – R₂O i RO",
     "stabilizers": "Stabilizatori – R₂O₃",
     "glassFormers": "Staklotvorci – RO₂",
     "wildcards": "Ostali oksidi",

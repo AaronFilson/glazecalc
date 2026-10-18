@@ -38,7 +38,7 @@ Les pièces non cuites sont des **pièces crues** (en anglais greenware ; les 
 
 ### Les deux cuissons
 
-La première cuisson, la moins chaude, est la **cuisson de biscuit** (en anglais bisque, et au Royaume-Uni **biscuit**), en général aux cônes 08–04, soit environ {{1740–1940 °F; 950–1060 °C}}. Les pièces en sortent solides mais poreuses. Digitalfire, un site de référence sur les émaux, conseille en général une porosité de plus de 15 %, pour que le biscuit absorbe l’eau de l’émail au moment de la pose. Un biscuit tendre (cônes 08–06) est plus poreux ; un biscuit dur (souvent au cône 04) est plus solide mais prend moins facilement l’émail.
+La première cuisson, la moins chaude, est la **cuisson de biscuit** (en anglais bisque, et au Royaume-Uni **biscuit**), en général aux cônes 08–04 (le plus souvent 06–04), soit environ {{1728–1945 °F; 942–1063 °C}}. Les pièces en sortent solides mais poreuses. Digitalfire, un site de référence sur les émaux, conseille en général une porosité de plus de 15 %, pour que le biscuit absorbe l’eau de l’émail au moment de la pose. Un biscuit tendre (cônes 08–06) est plus poreux ; un biscuit dur (souvent au cône 04) est plus solide mais prend moins facilement l’émail.
 
 Table: L’effet du biscuit sur l’émaillage (Digitalfire)
 Label: L’effet du biscuit sur l’émaillage
@@ -254,7 +254,7 @@ Les limites légales varient d’un pays à l’autre. Le tableau montre celles 
 
 ::food-limits
 
-Aux États-Unis, les pièces non destinées aux aliments doivent porter une mention permanente, cuite, « Not for Food Use » (impropre à l’usage alimentaire), ou être percées d’un trou à travers la surface en contact avec les aliments. L’UE fixe des limites pour le plomb et le cadmium dans la directive 84/500/CEE, et le Royaume-Uni conserve les mêmes valeurs dans sa propre législation. À partir du 29 mai 2026, les Pays-Bas, la Belgique et le Luxembourg autorisent environ 130 à 150 fois moins de plomb, et environ 15 fois moins de cadmium. L’Australie fixe des limites pour les pièces importées ; nous n’avons trouvé aucune limite officielle pour les pièces fabriquées en Australie ou en Nouvelle-Zélande.
+Aux États-Unis, une pièce de céramique décorative qui semble utilisable pour les aliments est traitée comme une pièce alimentaire, sauf si elle porte une étiquette adhésive et une mention permanente moulée ou cuite sur son fond, telle que « Not for Food Use. May Poison Food » (impropre à l’usage alimentaire ; peut empoisonner les aliments), ou si elle est percée d’un trou à travers la surface en contact avec les aliments. L’UE fixe des limites pour le plomb et le cadmium dans la directive 84/500/CEE, et le Royaume-Uni conserve les mêmes valeurs dans sa propre législation. À partir du 29 mai 2026, les Pays-Bas, la Belgique et le Luxembourg autorisent environ 130 à 150 fois moins de plomb, et environ 15 fois moins de cadmium. L’Australie fixe des limites pour les pièces importées ; nous n’avons trouvé aucune limite officielle pour les pièces fabriquées en Australie ou en Nouvelle-Zélande.
 
 ### Les tests
 
@@ -322,7 +322,7 @@ Bentonite
 : Une argile très fine, ajoutée à 1–3 % pour empêcher l’émail de se déposer.
 
 Biscuit (bisque ; au Royaume-Uni : biscuit)
-: La première cuisson, la moins chaude, en général aux cônes 08–04, qui rend les pièces solides mais poreuses.
+: La première cuisson, la moins chaude, en général aux cônes 08–04 (le plus souvent 06–04), qui rend les pièces solides mais poreuses.
 
 Bore, B₂O₃ (boron)
 : En principe un vitrifiant, mais employé comme fondant ; indispensable du cône 06 au cône 6.
@@ -474,6 +474,7 @@ Vitrification
 - [Glazy Help : Specific gravity](https://help.glazy.org/testing/specific-gravity)
 - [Orton Ceramic Foundation : Pyrometric cone chart, °F (via The Ceramic Shop)](https://www.theceramicshop.com/technical_info/Cones/Orton-Cone-Chart-F-022-14.pdf)
 - [Digitalfire : Bisque](https://digitalfire.com/glossary/bisque)
+- [Digitalfire : Bentonite](https://digitalfire.com/material/bentonite)
 - [Digitalfire : Unity molecular formula](https://digitalfire.com/glossary/unity+molecular+formula)
 - [Digitalfire : LOI](https://digitalfire.com/glossary/loi)
 - [Digitalfire : Frit](https://digitalfire.com/glossary/frit)
@@ -489,3 +490,4 @@ Vitrification
 - [Potclays : The difference between stoneware and earthenware](https://www.potclays.co.uk/clay-questions/difference-stoneware-earthenware)
 - [US FDA : Compliance Policy Guide Sec. 545.450, Pottery (ceramics), lead contamination](https://www.fda.gov/media/71764/download)
 - [EUR-Lex : Council Directive 84/500/EEC on ceramic articles in contact with food](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:31984L0500)
+- [eCFR : 21 CFR 109.16, Ornamental and decorative ceramicware](https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-109/subpart-A/section-109.16)

@@ -12,7 +12,9 @@ import { expect } from './support/app.ts';
 const ROOT = path.resolve(import.meta.dirname, '..', '..');
 /** The app's own code and what it serves; not these tests, which name the hosts. */
 const SOURCES = ['client', 'server', 'lib', 'angular.json'];
-const LEFT_OUT = [path.join('server', 'test')];
+// server/lib/oauth.ts names Google's token and key endpoints, which the server
+// calls itself when someone signs in with Google; no page loads them.
+const LEFT_OUT = [path.join('server', 'test'), path.join('server', 'lib', 'oauth.ts')];
 const BINARY = /\.(?:png|jpe?g|gif|webp|ico|woff2?|ttf|otf|pdf)$/i;
 
 /** Hosts of fonts, scripts, captchas and trackers that a page would load from. */

@@ -9,7 +9,7 @@ Głównym długoterminowym zagrożeniem przy pracy ze szkliwami{{en: glaze}} jes
 
 Wdychany przez dłuższy czas pył może wywołać **pylicę krzemową**, chorobę płuc, którą HSE opisuje jako „poważną i nieodwracalną”, mogącą „powodować trwałą niepełnosprawność i przedwczesną śmierć”. Może też wywołać **POChP** (przewlekłą obturacyjną chorobę płuc: długotrwałe zapalenie oskrzeli i rozedmę płuc), którą palenie tytoniu pogarsza. IARC, agencja Światowej Organizacji Zdrowia do spraw badań nad rakiem, zalicza wdychaną krzemionkę krystaliczną do grupy 1: „czynnik rakotwórczy dla ludzi”.
 
-Krzemionka nie zamienia się w piecu w opary, a mokre szkliwo nie stwarza zagrożenia przy wdychaniu. Ostrożność jest potrzebna wtedy, gdy materiał jest suchy: przy otwieraniu worków, ważeniu, rozrabianiu proszku w wodzie oraz sprzątaniu kropli, osiadłej mgły natryskowej i rozlanego szkliwa, które wyschły i z powrotem zamieniły się w pył.
+Krzemionka nie zamienia się w piecu w opary, a mokre szkliwo nie stwarza zagrożenia przy wdychaniu, chyba że jest natryskiwane: mgła natryskowa zawiera krzemionkę i wysycha na pył (zob. Natrysk, poniżej). Ostrożność jest potrzebna wtedy, gdy materiał jest suchy: przy otwieraniu worków, ważeniu, rozrabianiu proszku w wodzie oraz sprzątaniu kropli, osiadłej mgły natryskowej i rozlanego szkliwa, które wyschły i z powrotem zamieniły się w pył.
 
 ### Najwyższe dopuszczalne stężenia
 
@@ -65,49 +65,49 @@ Ochronę zapewniają głównie nawyki, a nie sprzęt. Zalecenia HSE dla zakład�
 
 Tę kolejność proponujemy sami, opierając się na zasadzie HSE, by przede wszystkim unikać proszku. Ważenie i rozrabianie krok po kroku opisuje poradnik [Jak przygotować szkliwo](/guides/making-a-glaze).
 
-## Półmaski filtrujące {#respirators}
+## Sprzęt ochrony układu oddechowego {#respirators}
 
-**Półmaska filtrująca** to maska z certyfikatem, która odfiltrowuje drobne cząstki z wdychanego powietrza. Działa tylko wtedy, gdy szczelnie przylega do twarzy, i uzupełnia dobre nawyki, a nie je zastępuje.
+**Sprzęt ochrony układu oddechowego** (po angielsku respirator), na przykład półmaska filtrująca, to maska z atestem, która filtruje drobne cząstki z wdychanego powietrza. Działa tylko wtedy, gdy szczelnie przylega do twarzy, i uzupełnia dobre nawyki, a nie je zastępuje.
 
-### Klasy w poszczególnych regionach
+### Klasy według regionu
 
-Table: Klasy półmasek przeciwpyłowych w poszczególnych regionach (przybliżone odpowiedniki dla pyłu ze szkliw)
+Table: Klasy półmasek przeciwpyłowych według regionu (przybliżone odpowiedniki dla pyłu ze szkliw)
 Label: Klasy półmasek
 
-| Region                    | Klasa podstawowa | Klasa wyższa | Czego szukać                                                                                        |
-| ------------------------- | ---------------- | ------------ | --------------------------------------------------------------------------------------------------- |
-| Stany Zjednoczone         | N95              | P100         | Zatwierdzenie NIOSH na masce lub jej opakowaniu                                                     |
-| Wielka Brytania i UE      | FFP2             | FFP3         | EN 149 na półmaskach jednorazowych; EN 140 na półmaskach wielokrotnego użytku, z filtrami P2 lub P3 |
-| Australia i Nowa Zelandia | P2               | P3           | AS/NZS 1716                                                                                         |
+| Region                    | Klasa podstawowa | Klasa wyższa | Na co zwracać uwagę                                                               |
+| ------------------------- | ---------------- | ------------ | --------------------------------------------------------------------------------- |
+| Stany Zjednoczone         | N95              | P100         | Atest NIOSH na masce lub jej opakowaniu                                           |
+| Wielka Brytania i UE      | FFP2             | FFP3         | EN 149 na maskach jednorazowych; EN 140 na półmaskach z filtrami EN 143 P2 lub P3 |
+| Australia i Nowa Zelandia | P2               | P3           | AS/NZS 1716                                                                       |
 
-Wyższa klasa zatrzymuje większą część drobnych cząstek. Źródła różnią się co do tego, ile zatrzymuje australijska klasa P3 (co najmniej 99 % lub co najmniej 99,95 %), dlatego należy kupować certyfikowaną klasę sprzedawaną w danym regionie. W pracowniach często wybiera się **półmaskę** wielokrotnego użytku (zakrywającą nos i usta, z wymiennymi filtrami), a do niej filtry P100 (poza USA – P3).
+Klasa wyższa filtruje większy odsetek drobnych cząstek. Źródła nie zgadzają się co do tego, ile filtruje australijska P3 (co najmniej 99 % czy co najmniej 99,95 %), dlatego należy kupować maskę certyfikowanej klasy sprzedawanej w danym regionie. **Półmaska** wielokrotnego użytku (zakrywająca nos i usta, z wymiennymi filtrami) z filtrami P100 (P3 poza USA) to częsty wybór w pracowniach.
 
 ### Dopasowanie i szczelność
 
-Nieszczelna maska wpuszcza pył przy krawędziach, niezależnie od swojej klasy. HSE ostrzega, że zarost i broda „uniemożliwiają dobre uszczelnienie”.
+Maska, która przecieka, wpuszcza pył wzdłuż swoich brzegów, bez względu na klasę. HSE ostrzega, że zarost i broda „uniemożliwiają uzyskanie dobrej szczelności”.
 
-- **Golić się krótko przed pracą.** Zalecenia różnią się co do tego, ile czasu może upłynąć od golenia, by twarz była „gładko ogolona”: do 8 godzin (brytyjski producent, powołujący się na HSE) albo najlepiej do 12 (australijska i nowozelandzka norma dotycząca testu dopasowania). Golenie się krótko przed pracą spełnia oba wymagania.
-- **Jeśli nosi się brodę,** luźny **sprzęt z wymuszonym przepływem powietrza** (PAPR: kaptur lub hełm z wentylatorem, który dostarcza przefiltrowane powietrze) nie wymaga szczelnego przylegania do twarzy.
-- **Dobrać właściwy rozmiar.** Złe dopasowanie to jedna z głównych przyczyn nieszczelności. W zakładach pracy wykonuje się **test dopasowania**, czyli sprawdzenie, czy konkretna maska szczelnie przylega do konkretnej twarzy. W domu proponujemy sprawdzać szczelność według instrukcji producenta za każdym razem po założeniu maski.
+- **Golić się tuż przed pracą.** Zalecenia różnią się co do tego, jak niedawno trzeba się ogolić. Brytyjski producent, powołując się na HSE, podaje, że ogolenie powinno nastąpić w ciągu 8 godzin przed rozpoczęciem pracy. Australijsko-nowozelandzka norma dotycząca testu dopasowania wymaga ogolenia przed testem, „najlepiej w ciągu 12 godzin”. Ogolenie tuż przed pracą spełnia oba wymogi.
+- **Przy zachowaniu brody** luźno przylegający **sprzęt z wymuszonym przepływem powietrza** (PAPR: kaptur lub hełm z wentylatorem, który dostarcza przefiltrowane powietrze) nie wymaga szczelnego przylegania do twarzy.
+- **Dobrać właściwy rozmiar.** Słabe dopasowanie to częsta przyczyna nieszczelności. W zakładach pracy stosuje się **test dopasowania**, czyli sprawdzenie, czy dana maska szczelnie przylega do danej twarzy. W domu proponujemy stosować się do instrukcji producenta dotyczącej sprawdzania szczelności po każdym założeniu maski.
 
 > [!NOTE]
-> Naszym zdaniem dopasowanie jest ważniejsze niż klasa: dobrze dopasowana półmaska N95, FFP2 lub P2 zwykle sprawdzi się lepiej niż luźna P100.
+> Naszym zdaniem dopasowanie ma większe znaczenie niż klasa: dobrze dopasowana N95, FFP2 lub P2 zwykle sprawdzi się lepiej niż luźna P100.
 
-### Kiedy zakładać półmaskę
+### Kiedy nosić maskę
 
-Według HSE półmaska „zwykle nie jest potrzebna” tam, gdzie ważenie i mieszanie odbywają się w obudowanym stanowisku z wentylacją, ale „może być potrzebna przy konserwacji i sprzątaniu”. Większość domowych pracowni nie ma takiego stanowiska, dlatego proponujemy zakładać półmaskę (co najmniej N95, FFP2 lub P2; lepiej P100, FFP3 lub P3) zawsze przy:
+HSE podaje, że sprzęt ochrony układu oddechowego jest „zwykle niepotrzebny” tam, gdzie ważenie i mieszanie odbywa się w wentylowanej obudowie, ale „może być potrzebny przy konserwacji i czyszczeniu”. Większość domowych pracowni nie ma obudowy, dlatego proponujemy nosić maskę (co najmniej N95, FFP2 lub P2; lepiej P100, FFP3 lub P3) zawsze, gdy:
 
-- otwieraniu worków lub wysypywaniu proszku;
-- ważeniu proszków i rozrabianiu ich w wodzie;
-- skrobaniu, przecieraniu papierem ściernym lub szlifowaniu zaschniętego szkliwa{{en: glaze}} albo biskwitu{{en: bisque}};
-- każdym sprzątaniu na sucho lub opróżnianiu odkurzacza;
-- natryskiwaniu szkliwa (w kabinie: zob. niżej).
+- otwiera się worki lub wysypuje proszek;
+- waży się proszki i miesza je z wodą;
+- skrobie się, szlifuje lub rozciera wyschnięte szkliwo albo biskwit{{en: bisque}};
+- wykonuje się jakiekolwiek sprzątanie na sucho lub opróżnia odkurzacz;
+- natryskuje się szkliwo (w kabinie: zob. niżej).
 
-### Co nie jest półmaską filtrującą
+### Co nie jest sprzętem ochrony układu oddechowego
 
-- Maseczki chirurgiczne, maseczki z tkaniny i maski „przeciw uciążliwemu pyłowi” bez oznaczenia NIOSH, EN 149 lub AS/NZS 1716. Nie polegalibyśmy na nich w przypadku pyłu ze szkliw.
-- Półmaska przeciwpyłowa „nie chroni przed gazami, parami” (OSHA), więc nic nie daje przy gazach i oparach z wypału.
-- Należy dbać o swoją półmaskę: OSHA zwraca uwagę, że brudna lub niewłaściwie używana półmaska „może stać się zagrożeniem”. Przechowywać ją w czystości, z dala od zakurzonej odzieży roboczej.
+- Maski chirurgiczne, maseczki materiałowe i maski „przeciwko uciążliwemu pyłowi” bez oznaczenia NIOSH, EN 149 lub AS/NZS 1716. Nie polegalibyśmy na nich przy pyle ze szkliw.
+- Półmaska przeciwpyłowa „nie chroni przed gazami, oparami” (OSHA), więc nie daje nic przy oparach z pieca.
+- Dbać o własną: OSHA zauważa, że brudna lub niewłaściwie używana półmaska „może stać się zagrożeniem”. Przechowywać ją czystą, z dala od zakurzonej odzieży roboczej.
 
 ## Sprzątanie, ubrania i ręce {#cleaning}
 
@@ -185,27 +185,27 @@ Wypał raku wytwarza duże ilości dymu i CO; Uniwersytet Utah radzi przeprowadz
 
 Większość surowców do szkliw{{en: glaze}}, w tym krzemionka{{en: silica}}, gliny, skalenie{{en: feldspar}} i fryty{{en: frit}}, stwarza głównie zagrożenie pyłem, które ograniczają opisane wyżej nawyki. Krótsza lista surowców to substancje toksyczne same w sobie: przy wdychaniu, połknięciu lub kontakcie ze skórą. Digitalfire dodaje, że pigmenty{{en: stain}} są na ogół dużo bezpieczniejsze niż surowe tlenki i że „niezrównoważone szkliwa uwalniające toksyczne metale można zrobić z dowolnych surowców”: bezpieczeństwo w kontakcie z żywnością{{en: food safety}} zależy od całej receptury, a nie od jednego składnika.
 
-**Grupa IARC** to klasyfikacja rakotwórczości: grupa 1 oznacza „czynnik rakotwórczy dla ludzi”, grupa 2A „prawdopodobnie rakotwórczy”, a grupy 2B i 3 oznaczają słabsze dowody.
+**Grupa IARC** to klasyfikacja rakotwórczości: grupa 1 oznacza „rakotwórczy dla ludzi”, grupa 2A „prawdopodobnie rakotwórczy dla ludzi”, grupa 2B „możliwie rakotwórczy dla ludzi”, a grupa 3 „nie może być klasyfikowany pod względem rakotwórczości dla ludzi”, co oznacza, że dowodów jest zbyt mało, by oceniać w jedną lub drugą stronę.
 
 Table: Surowce do szkliw wymagające szczególnej ostrożności
 Label: Surowce wymagające największej ostrożności
 
-| Surowiec                                                   | Zagrożenie                                                                                                                                                                                                                | Środki ostrożności                                                                                                                                    |
-| ---------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Związki ołowiu i fryty ołowiowe                            | „Silnie toksyczne przy wdychaniu lub połknięciu”; ołów odparowuje w niższych temperaturach wypału.                                                                                                                        | Unikać; według Digitalfire tylko dla ekspertów. Należy zakładać, że każde szkliwo bez oznaczenia „bezołowiowe” lub „nie zawiera ołowiu” zawiera ołów. |
-| Węglan baru                                                | Nierozpuszczalny w wodzie, ale rozpuszcza się w kwasie żołądkowym; działa na serce i mięśnie (nieregularne bicie serca, niski poziom potasu).                                                                             | Fryta barowa lub stront, jeśli receptura na to pozwala; półmaska; opisany pojemnik.                                                                   |
-| Dwutlenek manganu                                          | Pył lub opary mogą wywołać **manganizm**, chorobę układu nerwowego podobną do choroby Parkinsona, zwykle po 1–3 latach narażenia. Opary mogą wywołać gorączkę metaliczną.                                                 | Zamiast niego czarne pigmenty w małym udziale procentowym; wentylacja pieca.                                                                          |
-| Dichromian potasu i tlenek chromu                          | Chrom(VI), obecny w dichromianie, należy do grupy 1 IARC. Ta klasyfikacja nie obejmuje chromu(III), obecnego w tlenku chromu.                                                                                             | Unikać dichromianu. Tlenek chromu uznajemy za znacznie mniej niebezpieczny, ale należy ograniczać jego pylenie.                                       |
-| Kobalt                                                     | Rozpuszczalne sole kobaltu(II): IARC 2A; tlenek kobaltu(II): 2B; czarny Co₃O₄: grupa 3.                                                                                                                                   | Ograniczać pylenie; czerń uzyskiwać pigmentami.                                                                                                       |
-| Związki niklu                                              | Na liście Uniwersytetu Utah znanych lub prawdopodobnych czynników rakotwórczych dla ludzi.                                                                                                                                | Raczej pigmenty niż wysoki udział procentowy.                                                                                                         |
-| Kadm i selen, surowe lub w pigmentach                      | Związki kadmu są na liście Uniwersytetu Utah znanych lub prawdopodobnych czynników rakotwórczych dla ludzi.                                                                                                               | „Do użytku tylko przez ekspertów” (Digitalfire); przeczytać kartę charakterystyki każdego pigmentu.                                                   |
-| Antymon i wanad                                            | Antymon trójwartościowy (jak w trójtlenku antymonu): IARC 2A; wanad „silnie toksyczny przy wdychaniu”.                                                                                                                    | Wanad tylko dla ekspertów; ograniczać pylenie antymonu.                                                                                               |
-| Miedź i cynk                                               | Opary z pieca mogą wywołać gorączkę metaliczną; surowy tlenek cynku „na ogół nie jest uważany za niebezpieczny”.                                                                                                          | Wentylacja pieca.                                                                                                                                     |
-| Węglan litu                                                | „Silnie toksyczny przy wdychaniu”. Komitet ekspertów UE uznał, że może działać szkodliwie na płodność i na dziecko w łonie matki; w chwili naszego sprawdzania formalne przyjęcie tej klasyfikacji nie było potwierdzone. | Rękawice i półmaska; chronić przed dziećmi. Proponujemy szczególną ostrożność w ciąży.                                                                |
-| Boraks i kwas borowy                                       | Sklasyfikowane w UE jako „może działać szkodliwie na płodność; może działać szkodliwie na dziecko w łonie matki”.                                                                                                         | Rękawice; bor z fryty, gdy to możliwe.                                                                                                                |
-| Soda kalcynowana, potaż{{en: potash}}, skalenie alkaliczne | Działają drażniąco na skórę.                                                                                                                                                                                              | Rękawice.                                                                                                                                             |
-| Fluoryt, kriolit, lepidolit                                | Podczas wypału wydzielają gazowe związki fluoru; fluoryt działa też drażniąco na skórę.                                                                                                                                   | Odprowadzanie gazów z pieca na zewnątrz; rękawice.                                                                                                    |
-| Talk                                                       | IARC 2A od lipca 2024 r.; talk zanieczyszczony azbestem jest traktowany jak azbest, grupa 1.                                                                                                                              | Talk płytkowy (niewłóknisty), wolny od azbestu; sprawdzić jego kartę charakterystyki.                                                                 |
+| Surowiec                                                   | Zagrożenie                                                                                                                                                                                                                                                                                 | Środki ostrożności                                                                                                                                    |
+| ---------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Związki ołowiu i fryty ołowiowe                            | „Silnie toksyczne przy wdychaniu lub połknięciu”; ołów odparowuje w piecu w niższych temperaturach niż większość surowców do szkliw.                                                                                                                                                       | Unikać; według Digitalfire tylko dla ekspertów. Należy zakładać, że każde szkliwo bez oznaczenia „bezołowiowe” lub „nie zawiera ołowiu” zawiera ołów. |
+| Węglan baru                                                | Nierozpuszczalny w wodzie, ale rozpuszcza się w kwasie żołądkowym; działa na serce i mięśnie (nieregularne bicie serca, niski poziom potasu).                                                                                                                                              | Fryta barowa lub stront, jeśli receptura na to pozwala; półmaska; opisany pojemnik.                                                                   |
+| Dwutlenek manganu                                          | Pył lub opary mogą wywołać **manganizm**, chorobę układu nerwowego podobną do choroby Parkinsona, zwykle po 1–3 latach narażenia. Opary mogą wywołać gorączkę metaliczną.                                                                                                                  | Zamiast niego czarne pigmenty w małym udziale procentowym; wentylacja pieca.                                                                          |
+| Dichromian potasu i tlenek chromu                          | Chrom(VI), obecny w dichromianie, należy do grupy 1 IARC. Ta klasyfikacja nie obejmuje chromu(III), obecnego w tlenku chromu.                                                                                                                                                              | Unikać dichromianu. Tlenek chromu uznajemy za znacznie mniej niebezpieczny, ale należy ograniczać jego pylenie.                                       |
+| Kobalt                                                     | Rozpuszczalne sole kobaltu(II): IARC 2A; tlenek kobaltu(II): 2B; czarny Co₃O₄: grupa 3. Węglan kobaltu jest w UE sklasyfikowany jako: może powodować raka w następstwie wdychania, może działać szkodliwie na płodność i podejrzewa się, że powoduje wady genetyczne (H350i, H360F, H341). | Ograniczać pylenie; czerń uzyskiwać pigmentami.                                                                                                       |
+| Związki niklu                                              | Na liście Uniwersytetu Utah znanych lub prawdopodobnych czynników rakotwórczych dla ludzi.                                                                                                                                                                                                 | Raczej pigmenty niż wysoki udział procentowy.                                                                                                         |
+| Kadm i selen, surowe lub w pigmentach                      | Związki kadmu są na liście Uniwersytetu Utah znanych lub prawdopodobnych czynników rakotwórczych dla ludzi.                                                                                                                                                                                | „Do użytku tylko przez ekspertów” (Digitalfire); przeczytać kartę charakterystyki każdego pigmentu.                                                   |
+| Antymon i wanad                                            | Antymon trójwartościowy (jak w trójtlenku antymonu): IARC 2A; wanad „silnie toksyczny przy wdychaniu”.                                                                                                                                                                                     | Wanad tylko dla ekspertów; ograniczać pylenie antymonu.                                                                                               |
+| Miedź i cynk                                               | Opary z pieca mogą wywołać gorączkę metaliczną; surowy tlenek cynku „na ogół nie jest uważany za niebezpieczny”.                                                                                                                                                                           | Wentylacja pieca.                                                                                                                                     |
+| Węglan litu                                                | „Silnie toksyczny przy wdychaniu”. Komitet ekspertów UE uznał, że może działać szkodliwie na płodność, na dziecko w łonie matki i na dzieci karmione piersią; w chwili naszego sprawdzania formalne przyjęcie tej klasyfikacji nie było potwierdzone.                                      | Rękawice i sprzęt ochrony układu oddechowego; chronić przed dziećmi. Sugerujemy dodatkową ostrożność w ciąży i podczas karmienia piersią.             |
+| Boraks i kwas borowy                                       | Sklasyfikowane w UE jako „może działać szkodliwie na płodność; może działać szkodliwie na dziecko w łonie matki”.                                                                                                                                                                          | Rękawice; bor z fryty, gdy to możliwe.                                                                                                                |
+| Soda kalcynowana, potaż{{en: potash}}, skalenie alkaliczne | Działają drażniąco na skórę.                                                                                                                                                                                                                                                               | Rękawice.                                                                                                                                             |
+| Fluoryt, kriolit, lepidolit                                | Podczas wypału wydzielają gazowe związki fluoru; fluoryt działa też drażniąco na skórę.                                                                                                                                                                                                    | Odprowadzanie gazów z pieca na zewnątrz; rękawice.                                                                                                    |
+| Talk                                                       | IARC 2A od lipca 2024 r.; talk zanieczyszczony azbestem jest traktowany jak azbest, grupa 1.                                                                                                                                                                                               | Talk płytkowy (niewłóknisty), wolny od azbestu; sprawdzić jego kartę charakterystyki.                                                                 |
 
 Boraks, kwas borowy, soda kalcynowana i potaż rozpuszczają się w wodzie, dlatego uznajemy, że najłatwiej mogą wchłonąć się przez uszkodzoną skórę albo zostać połknięte z nieumytych rąk.
 
@@ -267,6 +267,8 @@ Oto źródła pierwotne, które najbardziej warto przeczytać. Większość z ni
 - [IARC: Monographs Volume 100C](https://publications.iarc.who.int/120)
 - [IARC: Volume 131, Cobalt, antimony compounds and weapons-grade tungsten alloy](https://monographs.iarc.who.int/news-events/volume-131-cobalt-antimony-compounds-and-weapons-grade-tungsten-alloy)
 - [Science Media Centre Spain: IARC classifies talc (2024)](https://sciencemediacentre.es/en/node/3775)
+- [ECHA: Risk Assessment Committee opinion on lithium carbonate, chloride and hydroxide (2021, PDF)](https://echa.europa.eu/documents/10162/e2a3c38e-85fe-505c-a325-293c70a74da5)
+- [PubChem: Cobalt carbonate, GHS classification, including its EU harmonised one](https://pubchem.ncbi.nlm.nih.gov/compound/10565#section=GHS-Classification)
 - [ECHA: Risk Assessment Committee document on boric acid and borates](https://echa.europa.eu/documents/10162/7d740d8c-5cd5-872b-5da2-e549983a9ff9)
 - [Coslaw: EU introduces new CMR classifications under the 24th ATP to the CLP Regulation](https://coslaw.eu/eu-introduces-new-cmr-classifications-under-the-24th-atp-to-the-clp-regulation/)
 - [University of Utah EHS: Arts safety: ceramics](https://www.ehs.utah.edu/guidelines/arts-safety-ceramics/)
@@ -275,6 +277,7 @@ Oto źródła pierwotne, które najbardziej warto przeczytać. Większość z ni
 - [Digitalfire: Kiln fumes](https://digitalfire.com/glossary/kiln+fumes)
 - [Digitalfire: Barium and compounds toxicology](https://digitalfire.com/hazard/barium+and+compounds+toxicology)
 - [Digitalfire: Manganese inorganic compounds toxicology](https://digitalfire.com/hazard/manganese+inorganic+compounds+toxicology)
+- [JSP: What levels of protection do particulate filters provide?](https://jspsafety.helpjuice.com/en_GB/what-levels-of-protection-do-particulate-filters-provide)
 - [JSP: Why is a clean shave essential for a proper tight-fitting respirator seal?](https://jspsafety.helpjuice.com/en_GB/why-is-a-clean-shave-essential-for-a-proper-tight-fitting-respirator-seal-can-i-have-a-beard)
 - [Skutt: Kiln room design and product specifications](https://cdn.shopify.com/s/files/1/0889/3726/7497/files/Designing-A-Kiln-Room-1.pdf)
 - [CIRMA: Kiln safety bulletin (2025)](https://downloads.ccm-ct.org/pdf/Media-Library-Bulletins/KilnSafety-Bulletin-052825.pdf)

@@ -4,10 +4,26 @@
     "signedInAs": "Sínithe isteach mar {email}.",
     "trying": "Tá tú ag baint triail as Glazecalc mar {name}. Tosaigh le hoideas.",
     "welcomeBack": "Lean ar aghaidh ón áit ar stop tú.",
+    "welcome": {
+      "heading": "Fáilte go Glazecalc",
+      "text": "Tá do leabhar nótaí réidh. Céim mhaith ar dtús: clóscríobh glónra a mheascann tú cheana, a ábhair agus a méideanna, agus féach a fhoirmle Seger.",
+      "firstRecipe": "Tosaigh do chéad oideas",
+      "confirmHeading": "Do ríomhphost a dheimhniú",
+      "confirm": "Deimhnigh do ríomhphost: sheolamar nasc chuig {email}. Tá sé de dhíth ar shíniú isteach dhá chéim. Is féidir le <account>leathanach do chuntais</account> é a sheoladh arís.",
+      "confirmText": "Sheolamar nasc chuig {email}. Oscail é chun a dheimhniú gur leatsa an seoladh: tá sé de dhíth ar shíniú isteach dhá chéim. Is féidir le <account>leathanach do chuntais</account> é a sheoladh arís."
+    },
     "sections": {
       "recipe": {
         "title": "Oidis",
         "text": "Tóg glónra as ábhair agus méideanna, féach a fhoirmle Seger, agus sábháil é."
+      },
+      "import": {
+        "title": "Oidis a ghreamú isteach",
+        "text": "Greamaigh oidis ó shuíomh gréasáin, ó scarbhileog nó ó nótaí, seiceáil an méid a léadh, agus sábháil iad."
+      },
+      "blends": {
+        "title": "Cumaisc do thíleanna tástála",
+        "text": "Cumaisc dhá cheann, trí cinn nó ceithre cinn de d’oidis ina dtíleanna tástála uimhrithe, agus cad atá le meá do gach ceann acu."
       },
       "material": {
         "title": "Ábhair",
@@ -32,6 +48,14 @@
       "guides": {
         "title": "Treoirleabhair",
         "text": "Ó cad is glónra ann go dtí é a bhácáil, agus gach duine a choinneáil slán ar an mbealach."
+      },
+      "trash": {
+        "title": "Bruscar",
+        "text": "Cuir ar ais an méid a bhain tú sna 30 lá seo caite."
+      },
+      "account": {
+        "title": "Cuntas agus socruithe",
+        "text": "Socruithe, do phasfhocal, síniú isteach dhá chéim, agus íoslódáil de gach rud a choinníonn tú anseo."
       }
     },
     "newHere": "An bhfuil foirmlí Seger nua duit? Míníonn <advice>leathanach na comhairle</advice> na bunrudaí, agus insíonn an <about>leathanach faoin aip</about> conas a oibríonn Glazecalc."
@@ -39,27 +63,54 @@
   "firing": {
     "title": "Taifid bhácála",
     "lead": "Taifead gach bácáil: amanna, teochtaí, cóin agus nótaí faoin áith.",
+    "newHeading": "Bácáil nua",
+    "titleLabel": "Teideal",
+    "kiln": "Áith",
+    "date": "Dáta",
+    "notes": "Nótaí",
+    "fieldSelect": "Réimsí le taifeadadh",
     "addField": "Cuir an réimse leis",
+    "included": "Réimsí sa taifead seo",
     "moveLeft": "Bog an réimse ar chlé",
     "moveRight": "Bog an réimse ar dheis",
     "removeField": "Bain an réimse",
     "addRow": "Cuir ró le tábla na bácála",
+    "addRowWhy": "Cuir réimse leis ar dtús.",
+    "tableEmpty": "Cuir réimse leis thuas, agus ansin sraitheanna.",
+    "recordHeading": "Taifead an bhácáil",
     "rowActions": "Gníomhartha an ró",
     "cell": "{field}, ró {row}",
     "removeRow": "Bain an ró",
     "save": "Sábháil",
+    "storedHeading": "Mo chuid bácálacha sábháilte",
+    "noneSaved": "Níl aon cheann ann go fóill. Beidh bácálacha sábháilte le feiceáil anseo.",
+    "storedIn": "Bácáilte in {kiln} ar {date}.",
+    "storedOn": "Bácáilte ar {date}.",
     "storedNotes": "Nótaí: {notes}",
     "titleMissing": "Tabhair teideal don bhácáil.",
     "fieldsMissing": "Cuir réimse amháin ar a laghad leis le taifeadadh, mar shampla {example}.",
     "chooseField": "Roghnaigh réimse le cur leis, agus ansin brúigh ‘Cuir an réimse leis’.",
     "fetchFailed": "Tharla earráid agus eolas na dtaifead bácála á fháil.",
     "saved": "D’éirigh leis. Cuireadh an taifead bácála leis an bhfreastalaí.",
-    "saveFailed": "Earráid: theip ar an iarratas chuig an bhfreastalaí."
+    "saveFailed": "Earráid: theip ar an iarratas chuig an bhfreastalaí.",
+    "recipesHeading": "Oidis a bácáladh ann",
+    "noRecipes": "Níl aon oideas ceangailte fós.",
+    "recipesFailed": "Níorbh fhéidir d’oidis a fháil, mar sin ní féidir ceann ar bith a cheangal anois.",
+    "pickRecipe": "Oideas a bácáladh ann",
+    "linkRecipe": "Ceangail an t-oideas",
+    "unlink": "Dícheangail",
+    "unlinkRecipe": "Dícheangail an t-oideas {title}",
+    "linkFailed": "Níorbh fhéidir an nasc a shábháil."
   },
   "notes": {
     "title": "Nótaí",
     "lead": "Aon rud eile ar fiú cuimhneamh air faoi do ghlónraí.",
+    "newHeading": "Nóta nua",
+    "titleLabel": "Teideal",
+    "content": "Nóta",
     "save": "Sábháil",
+    "mineHeading": "Mo chuid nótaí sábháilte",
+    "noneSaved": "Níl aon cheann ann go fóill. Beidh nótaí sábháilte le feiceáil anseo.",
     "titleMissing": "Tabhair teideal don nóta.",
     "contentMissing": "Scríobh an nóta.",
     "untitled": "Nóta gan teideal",
@@ -69,6 +120,34 @@
   },
   "trash": {
     "title": "Bruscar",
-    "comingSoon": "Tá an bruscar le teacht go luath sa chéad leagan eile den aip Glazecalc. Go dtí sin, bí cúramach le scriosadh agus le baint: nuair a bhíonn rud imithe, tá an t-eolas caillte."
+    "lead": "Fanann an méid a bhaineann tú (oidis, ábhair, breiseáin, nótaí, taifid bhácála agus comhairle) anseo ar feadh 30 lá. Cuir ar ais é, nó scrios go buan é.",
+    "listHeading": "Sa bhruscar",
+    "none": "Tá an bruscar folamh.",
+    "untitled": "Gan teideal",
+    "kinds": {
+      "recipes": "Oideas",
+      "materials": "Ábhar",
+      "additives": "Breiseán",
+      "notes": "Nóta",
+      "firing": "Taifead bácála",
+      "advice": "Comhairle",
+      "other": "Taifead"
+    },
+    "removedOn": "Baineadh ar {date}",
+    "goesOn": "Scriosfar go buan ar {date}",
+    "byApp": "Bainte ag aip cheangailte",
+    "putBack": "Cuir ar ais",
+    "putBackName": "Cuir {name} ar ais",
+    "restored": "Cuireadh “{name}” ar ais san áit a raibh sé.",
+    "restoredAlready": "Cuireadh “{name}” ar ais cheana.",
+    "restoreFailed": "Níorbh fhéidir “{name}” a chur ar ais. Bain triail eile as.",
+    "deleted": "Scriosadh “{name}” go buan.",
+    "empty": "Folmhaigh an bruscar",
+    "emptyQuestion": "An bhfuil tú cinnte gur mian leat {count, plural, one {an # taifead} two {na # thaifead ar fad} few {na # thaifead ar fad} many {na # dtaifead ar fad} other {na # taifead ar fad}} sa bhruscar a scriosadh go buan? Ní féidir é seo a chealú.",
+    "emptyYes": "Folmhaigh é",
+    "emptying": "Á fholmhú...",
+    "emptied": "Tá an bruscar folamh.",
+    "emptyFailed": "Níorbh fhéidir an bruscar a fholmhú. Bain triail eile as.",
+    "fetchFailed": "Níorbh fhéidir an bruscar a lódáil. Bain triail eile as."
   }
 }

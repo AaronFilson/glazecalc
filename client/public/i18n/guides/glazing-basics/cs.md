@@ -38,7 +38,7 @@ Nevypáleným výrobkům se říká **syrové výrobky**{{en: greenware}} (zdroj
 
 ### Dva výpaly
 
-První, nižší výpal je **přežah**{{en: bisque}} (ve Velké Británii **biscuit**), obvykle na žároměrku 08–04, zhruba {{1740–1940 °F; 950–1060 °C}}. Výrobky jsou po něm pevné, ale pórovité. Digitalfire, web s informacemi o glazurách, doporučuje pórovitost obecně vyšší než 15 %, aby přežahnutý střep při nanášení odsával z glazury vodu. Nízký přežah (žároměrka 08–06) je pórovitější; vysoký přežah (často žároměrka 04) je pevnější, ale glazuru přijímá hůř.
+První, nižší výpal je **přežah**{{en: bisque}} (ve Velké Británii **biscuit**), obvykle na žároměrku 08–04 (nejčastěji 06–04), zhruba {{1728–1945 °F; 942–1063 °C}}. Výrobky jsou po něm pevné, ale pórovité. Digitalfire, web s informacemi o glazurách, doporučuje pórovitost obecně vyšší než 15 %, aby přežahnutý střep při nanášení odsával z glazury vodu. Nízký přežah (žároměrka 08–06) je pórovitější; vysoký přežah (často žároměrka 04) je pevnější, ale glazuru přijímá hůř.
 
 Table: Jak přežah ovlivňuje glazování (Digitalfire)
 Label: Jak přežah ovlivňuje glazování
@@ -254,7 +254,7 @@ Zákonné limity se v jednotlivých zemích liší. Tabulka ukazuje limity tam, 
 
 ::food-limits
 
-V USA musí výrobky, které nejsou určeny pro jídlo, nést trvalé, vypálené upozornění „Not for Food Use“ (není určeno pro potraviny), nebo musí mít v ploše určené pro jídlo průchozí otvor. EU stanovuje limity pro olovo a kadmium ve směrnici Rady 84/500/EHS a Velká Británie si stejné hodnoty ponechává ve vlastním právu. Od 29. května 2026 povolují Nizozemsko, Belgie a Lucembursko zhruba 130 až 150krát méně olova a zhruba 15krát méně kadmia. Austrálie stanovuje limity pro dovážené výrobky; pro výrobky vyrobené v Austrálii nebo na Novém Zélandu jsme žádný úřední limit nenašli.
+V USA se dekorativní keramika, která vypadá použitelně pro jídlo, považuje za nádobí pro potraviny, ledaže nese nalepovací štítek a trvalé upozornění vylisované nebo vypálené na dně, například „Not for Food Use. May Poison Food“ (nepoužívat pro potraviny, může jídlo otrávit), nebo má v ploše určené pro jídlo průchozí otvor. EU stanovuje limity pro olovo a kadmium ve směrnici Rady 84/500/EHS a Velká Británie si stejné hodnoty ponechává ve vlastním právu. Od 29. května 2026 povolují Nizozemsko, Belgie a Lucembursko zhruba 130 až 150krát méně olova a zhruba 15krát méně kadmia. Austrálie stanovuje limity pro dovážené výrobky; pro výrobky vyrobené v Austrálii nebo na Novém Zélandu jsme žádný úřední limit nenašli.
 
 ### Zkoušky
 
@@ -388,7 +388,7 @@ Praskání při chlazení (dunting)
 : Praskliny v nádobě způsobené napětím při chlazení nebo ohřevu, často při modifikační přeměně křemene, {{1063 °F; 573 °C}}.
 
 Přežah (bisque; britsky biscuit)
-: První, nižší výpal, obvykle na žároměrku 08–04, po kterém jsou výrobky pevné, ale pórovité.
+: První, nižší výpal, obvykle na žároměrku 08–04 (nejčastěji 06–04), po kterém jsou výrobky pevné, ale pórovité.
 
 Přísada (additive)
 : Barvivo, kalivo nebo přísada proti sedání, přidávaná navíc ke 100 dílům receptu.
@@ -474,6 +474,7 @@ Ztráta žíháním, ZŽ (loss on ignition, LOI)
 - [Glazy Help: Specific gravity](https://help.glazy.org/testing/specific-gravity)
 - [Orton Ceramic Foundation: Pyrometric cone chart, °F (na webu The Ceramic Shop)](https://www.theceramicshop.com/technical_info/Cones/Orton-Cone-Chart-F-022-14.pdf)
 - [Digitalfire: Bisque](https://digitalfire.com/glossary/bisque)
+- [Digitalfire: Bentonite](https://digitalfire.com/material/bentonite)
 - [Digitalfire: Unity molecular formula](https://digitalfire.com/glossary/unity+molecular+formula)
 - [Digitalfire: LOI](https://digitalfire.com/glossary/loi)
 - [Digitalfire: Frit](https://digitalfire.com/glossary/frit)
@@ -489,3 +490,4 @@ Ztráta žíháním, ZŽ (loss on ignition, LOI)
 - [Potclays: The difference between stoneware and earthenware](https://www.potclays.co.uk/clay-questions/difference-stoneware-earthenware)
 - [US FDA: Compliance Policy Guide Sec. 545.450, Pottery (ceramics), lead contamination](https://www.fda.gov/media/71764/download)
 - [EUR-Lex: Council Directive 84/500/EEC on ceramic articles in contact with food](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:31984L0500)
+- [eCFR: 21 CFR 109.16, Ornamental and decorative ceramicware](https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-109/subpart-A/section-109.16)

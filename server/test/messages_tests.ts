@@ -11,7 +11,10 @@ describe('messages', () => {
       label: 'recipe',
       palettes: 'tenmoku, ash',
       most: 500,
-      wait: 'hour'
+      wait: 'hour',
+      provider: 'google',
+      choices: '7, 30, 90, 365',
+      count: 2
     };
     for (const code of Object.keys(MESSAGES) as MessageCode[]) {
       const text = textOf(code, params);
@@ -99,6 +102,22 @@ describe('account emails', () => {
     expect(fingerprint(JSON.stringify([RESET['en'], CHANGED['en']]))).to.equal('xj1yoc');
     // Translated in a later wave than the two above, so fingerprinted on its own.
     expect(fingerprint(JSON.stringify(DELETED['en']))).to.equal('13s4itm');
+  });
+
+  it('should give the notice after a password reset its values, signature and English', async () => {
+    const { RESET_STOPPED } = await import('../lib/account_mail.ts');
+    const { fingerprint } = await import('../../scripts/i18n-fingerprints.mjs');
+    const email = RESET_STOPPED['en']!;
+    const values = (text: string) => [...new Set([...text.matchAll(/\{(\w+)\}/g)].map((match) => match[1]))].sort();
+    expect(values(email.opening)).to.eql(['account']);
+    expect(values(email.tokens)).to.eql(['count', 'page']);
+    expect(values(email.providers)).to.eql(['page', 'providers']);
+    expect(values(email.shareLinks)).to.eql([]);
+    expect(values(email.closing)).to.eql(['app', 'forgot']);
+    expect(email.closing).to.match(/\n-- \nGlazecalc, \{app\}\n$/);
+    expect(email.subject).to.include('Glazecalc');
+    // English only so far: the next wave translates it, and fingerprints it here.
+    expect(fingerprint(JSON.stringify(email))).to.equal('1ee11zm');
   });
 
   it('should give the two-step sign-in notices their values and signature', async () => {

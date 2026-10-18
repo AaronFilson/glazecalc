@@ -1,13 +1,12 @@
 // "Try it now": using the app as a trial, then keeping or discarding the work.
 const { test, expect } = require('@playwright/test');
-const { API, addStandardMaterial, uniqueEmail } = require('./helpers');
+const { API, addStandardMaterial, startTrial, uniqueEmail } = require('./helpers');
 
 const trialBar = (page) => page.locator('.trial-bar');
 
 // Starts a trial from the intro page and saves a recipe in it; returns the trial's name.
 const startTrialWithRecipe = async (page) => {
-  await page.goto('/');
-  await page.locator('.hero-actions').getByRole('button', { name: 'Try it now' }).click();
+  await startTrial(page);
   await expect(page).toHaveURL(/\/recipe$/);
   await expect(trialBar(page)).toContainText("You're trying Glazecalc as");
   const name = (await trialBar(page).locator('strong').textContent()).trim();
@@ -124,6 +123,7 @@ test('the sign-in lives in a cookie that scripts on the page cannot read', async
   expect(await page.evaluate(() => globalThis.document.cookie)).not.toContain('glazecalc_session');
   // A note that there is a session, the trial's name, and the display settings' copies: nothing that signs in.
   const settings = [
+    'calendar',
     'cones',
     'decimalMark',
     'density',
@@ -132,6 +132,7 @@ test('the sign-in lives in a cookie that scripts on the page cannot read', async
     'gramPrecision',
     'language',
     'lead',
+    'limitSet',
     'notice',
     'palette',
     'preferredRegion',

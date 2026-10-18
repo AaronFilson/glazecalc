@@ -4,6 +4,7 @@ import appSecret from '../lib/app_secret.ts';
 import User, { type UserDocument } from '../models/user.ts';
 import Note from '../models/note.ts';
 import Firing from '../models/firing.ts';
+import { OWNED_KINDS } from '../lib/account_data.ts';
 
 type TestUser = Awaited<ReturnType<typeof makeUser>>;
 
@@ -263,4 +264,15 @@ describe('record ownership and input checks', () => {
       expect(res.body).to.eql({ code: 'bad-request', msg: 'Bad request' });
     });
   });
+});
+
+describe('owner indexes', () => {
+  // Every list, quota count and account deletion looks up by ownedBy, so
+  // each kind of record needs an index that starts with it.
+  for (const [kind, Model] of Object.entries(OWNED_KINDS)) {
+    it(kind + ' has an index led by ownedBy', async () => {
+      const indexes = (await Model.listIndexes()) as Array<{ key: Record<string, number> }>;
+      expect(indexes.some((index) => Object.keys(index.key)[0] === 'ownedBy')).to.equal(true);
+    });
+  }
 });

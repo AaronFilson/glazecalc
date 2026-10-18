@@ -4,10 +4,26 @@
     "signedInAs": "Session ouverte : {email}.",
     "trying": "Vous essayez Glazecalc sous le nom {name}. Commencez par une recette.",
     "welcomeBack": "Reprenez là où vous en étiez.",
+    "welcome": {
+      "heading": "Bienvenue dans Glazecalc",
+      "text": "Votre carnet est prêt. Un bon premier pas : saisissez un émail que vous préparez déjà, avec ses matières et ses quantités, et consultez sa formule de Seger.",
+      "firstRecipe": "Commencer votre première recette",
+      "confirmHeading": "Confirmer votre adresse e-mail",
+      "confirm": "Confirmez votre adresse e-mail : nous avons envoyé un lien à {email}. La connexion en deux étapes en a besoin. Votre <account>page Compte</account> peut le renvoyer.",
+      "confirmText": "Nous avons envoyé un lien à {email}. Ouvrez-le pour confirmer que l’adresse est bien la vôtre : la connexion en deux étapes en a besoin. Votre <account>page Compte</account> peut le renvoyer."
+    },
     "sections": {
       "recipe": {
         "title": "Recettes",
         "text": "Composez un émail à partir de matières et de quantités, consultez sa formule de Seger et enregistrez-le."
+      },
+      "import": {
+        "title": "Coller des recettes",
+        "text": "Collez des recettes depuis un site web, un tableur ou des notes, vérifiez ce qui a été lu, puis enregistrez-les."
+      },
+      "blends": {
+        "title": "Mélanges pour tessons d’essai",
+        "text": "Mélangez deux, trois ou quatre de vos recettes en tessons d’essai numérotés, avec ce qu’il faut peser pour chacun."
       },
       "material": {
         "title": "Matières",
@@ -32,6 +48,14 @@
       "guides": {
         "title": "Guides",
         "text": "De ce qu’est un émail jusqu’à sa cuisson, en protégeant tout le monde en chemin."
+      },
+      "trash": {
+        "title": "Corbeille",
+        "text": "Remettez en place ce que vous avez retiré ces 30 derniers jours."
+      },
+      "account": {
+        "title": "Compte et réglages",
+        "text": "Réglages, votre mot de passe, la connexion en deux étapes et un téléchargement de tout ce que vous conservez ici."
       }
     },
     "newHere": "Vous découvrez les formules de Seger ? La <advice>page Conseils</advice> explique les bases, et la <about>page À propos</about> décrit le fonctionnement de Glazecalc."
@@ -39,27 +63,54 @@
   "firing": {
     "title": "Relevés de cuisson",
     "lead": "Notez chaque cuisson : heures, températures, cônes et remarques sur le four.",
+    "newHeading": "Une nouvelle cuisson",
+    "titleLabel": "Titre",
+    "kiln": "Four",
+    "date": "Date",
+    "notes": "Notes",
+    "fieldSelect": "Champs à enregistrer",
     "addField": "Ajouter le champ",
+    "included": "Champs de ce relevé",
     "moveLeft": "Déplacer le champ vers la gauche",
     "moveRight": "Déplacer le champ vers la droite",
     "removeField": "Retirer le champ",
     "addRow": "Ajouter une ligne au tableau de cuisson",
+    "addRowWhy": "Ajoutez d’abord un champ.",
+    "tableEmpty": "Ajoutez un champ ci-dessus, puis des lignes.",
+    "recordHeading": "Enregistrer la cuisson",
     "rowActions": "Actions sur la ligne",
     "cell": "{field}, ligne {row}",
     "removeRow": "Retirer la ligne",
     "save": "Enregistrer",
+    "storedHeading": "Mes cuissons enregistrées",
+    "noneSaved": "Aucune pour l’instant. Les cuissons enregistrées apparaissent ici.",
+    "storedIn": "Cuit dans {kiln} le {date}.",
+    "storedOn": "Cuit le {date}.",
     "storedNotes": "Notes : {notes}",
     "titleMissing": "Donnez un titre à la cuisson.",
     "fieldsMissing": "Ajoutez au moins un champ à relever, par exemple {example}.",
     "chooseField": "Choisissez un champ à ajouter, puis cliquez sur Ajouter le champ.",
     "fetchFailed": "Impossible de récupérer les relevés de cuisson.",
     "saved": "Opération réussie : relevé de cuisson ajouté sur le serveur.",
-    "saveFailed": "Erreur : la requête au serveur a échoué."
+    "saveFailed": "Erreur : la requête au serveur a échoué.",
+    "recipesHeading": "Recettes cuites dans cette cuisson",
+    "noRecipes": "Aucune recette associée pour le moment.",
+    "recipesFailed": "Vos recettes n’ont pas pu être récupérées, donc aucune ne peut être associée pour l’instant.",
+    "pickRecipe": "Une recette cuite dans cette cuisson",
+    "linkRecipe": "Associer la recette",
+    "unlink": "Dissocier",
+    "unlinkRecipe": "Dissocier {title}",
+    "linkFailed": "L’association n’a pas pu être enregistrée."
   },
   "notes": {
     "title": "Notes",
     "lead": "Tout ce qui mérite d’être retenu sur vos émaux.",
+    "newHeading": "Une nouvelle note",
+    "titleLabel": "Titre",
+    "content": "Note",
     "save": "Enregistrer",
+    "mineHeading": "Mes notes enregistrées",
+    "noneSaved": "Aucune pour l’instant. Les notes enregistrées apparaissent ici.",
     "titleMissing": "Donnez un titre à la note.",
     "contentMissing": "Écrivez la note.",
     "untitled": "Note sans titre",
@@ -69,6 +120,34 @@
   },
   "trash": {
     "title": "Corbeille",
-    "comingSoon": "La corbeille arrive bientôt, dans la prochaine version de Glazecalc. D’ici là, supprimez et retirez avec prudence : une fois effacées, les informations sont perdues."
+    "lead": "Ce que vous retirez (recettes, matières, additifs, notes, relevés de cuisson et conseils) attend ici pendant 30 jours. Remettez-le en place, ou supprimez-le définitivement.",
+    "listHeading": "Dans la corbeille",
+    "none": "La corbeille est vide.",
+    "untitled": "Sans titre",
+    "kinds": {
+      "recipes": "Recette",
+      "materials": "Matière",
+      "additives": "Additif",
+      "notes": "Note",
+      "firing": "Relevé de cuisson",
+      "advice": "Conseil",
+      "other": "Enregistrement"
+    },
+    "removedOn": "Retiré le {date}",
+    "goesOn": "Supprimé définitivement le {date}",
+    "byApp": "Retiré par une application connectée",
+    "putBack": "Remettre en place",
+    "putBackName": "Remettre {name} en place",
+    "restored": "« {name} » a été remis à sa place.",
+    "restoredAlready": "« {name} » a déjà été remis en place.",
+    "restoreFailed": "Impossible de remettre « {name} » en place. Veuillez réessayer.",
+    "deleted": "« {name} » a été supprimé définitivement.",
+    "empty": "Vider la corbeille",
+    "emptyQuestion": "{count, plural, one {Supprimer définitivement l’enregistrement de la corbeille ?} many {Supprimer définitivement les # d’enregistrements de la corbeille ?} other {Supprimer définitivement les # enregistrements de la corbeille ?}} Cette action est irréversible.",
+    "emptyYes": "Oui, vider",
+    "emptying": "Vidage en cours…",
+    "emptied": "La corbeille est vide.",
+    "emptyFailed": "Impossible de vider la corbeille. Veuillez réessayer.",
+    "fetchFailed": "Impossible de charger la corbeille. Veuillez réessayer."
   }
 }

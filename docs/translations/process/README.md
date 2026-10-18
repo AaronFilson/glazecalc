@@ -107,7 +107,11 @@ suffix on a name or figure and none on a placeholder; `one` and `other` with the
 never "-den az" or "altında", for "at most"; and no mutlaka, kesinlikle or her zaman the English lacks. The style sheet
 is docs/translations/tr.md. Generate its prompts in the worktree its agents work in (`{REPO}`).
 
-## Asia, Phase D: Traditional Chinese, Korean and Simplified Chinese (in preparation)
+## Asia, Phase E: Indonesian, Vietnamese and Thai (live)
+
+docs/asia-plan.md, Phase E. `id`, `vi` and `th` are live since 2026-10-18 (round 3: translated, reviewed, back-translated, caught up and taken live with `go-live.mjs th`, `vi`, `id`, one per commit). They are in lib/regions/languages.js (the standard notice) and in wave.js, and their style sheets are docs/translations/id.md, vi.md and th.md, written after Korean's, each with a "Choices for the owner and a native potter" section, a search-terms subsection and a table of the two-step sign-in words as Google and Apple write them. All three have only `other` in CLDR (the classifier goes inside it). Indonesian: "Anda", berat jenis, decimal comma, times as pukul 20.00, glasir always paired with keramik. Vietnamese: "bạn", tỷ trọng, NFC and one tone-mark style, "tháng 10 năm 2026" (the check reads the month as a number), times as 20:30, men always paired with gốm. Thai: no particles, no spaces inside words, Western digits, dates Gregorian with ค.ศ. and never a Buddhist-era year, times as 20.00 น., ความถ่วงจำเพาะ, เคลือบ always paired with เซรามิก or สูตร. Order: Indonesian, Vietnamese, Thai (Thai last). Generate the prompts in the worktree they run in (`{REPO}`).
+
+## Asia, Phase D: Traditional Chinese, Korean and Simplified Chinese (live)
 
 docs/asia-plan.md, Phase D. `zh-Hant`, `ko` and `zh-Hans` are in lib/regions/languages.js (`live: false`, the
 standard notice) and in wave.js, and their style sheets are docs/translations/zh-Hant.md (Taiwan's usage, which Hong

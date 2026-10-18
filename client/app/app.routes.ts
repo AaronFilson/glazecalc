@@ -26,7 +26,8 @@ export const routes: Routes = [
     path: 'advice',
     title: marker('titles.advice'),
     data: { description: marker('meta.advice') },
-    providers: [provideTranslocoScope('site', 'records')],
+    // advice/ is the standard advice's words alone (scripts/advice-i18n.mjs), not all of records/.
+    providers: [provideTranslocoScope('site', 'advice')],
     resolve: { messages: scopeTranslations },
     loadComponent: () => import('./pages/advice/advice-page').then((m) => m.AdvicePage)
   },
@@ -95,6 +96,14 @@ export const routes: Routes = [
     loadComponent: () => import('./pages/privacy/privacy-page').then((m) => m.PrivacyPage)
   },
   {
+    // Translated, but not a public page: not in the sitemap, and noindex (docs/integrations-plan.md, item 25).
+    path: 'assistants',
+    title: marker('titles.assistants'),
+    providers: [provideTranslocoScope('site')],
+    resolve: { messages: scopeTranslations },
+    loadComponent: () => import('./pages/assistants/assistants-page').then((m) => m.AssistantsPage)
+  },
+  {
     path: 'signin',
     title: marker('titles.signin'),
     data: { mode: 'signin' },
@@ -132,6 +141,14 @@ export const routes: Routes = [
     resolve: { messages: scopeTranslations },
     loadComponent: () => import('./pages/password/confirm-email-page').then((m) => m.ConfirmEmailPage)
   },
+  // A recipe shared by link, for anyone: never indexed (server/lib/pages.ts, PRIVATE_PAGES).
+  {
+    path: 'shared',
+    title: marker('titles.shared'),
+    providers: [provideTranslocoScope('recipe', 'records')],
+    resolve: { messages: scopeTranslations },
+    loadComponent: () => import('./pages/shared/shared-page').then((m) => m.SharedPage)
+  },
 
   // The app itself, once signed in.
   {
@@ -151,6 +168,22 @@ export const routes: Routes = [
     providers: [provideTranslocoScope('recipe', 'records')],
     resolve: { messages: scopeTranslations },
     loadComponent: () => import('./pages/recipe/recipe-page').then((m) => m.RecipePage)
+  },
+  {
+    path: 'import',
+    title: marker('titles.import'),
+    canActivate: [signedInGuard],
+    providers: [provideTranslocoScope('recipe', 'records')],
+    resolve: { messages: scopeTranslations },
+    loadComponent: () => import('./pages/import/import-page').then((m) => m.ImportPage)
+  },
+  {
+    path: 'blends',
+    title: marker('titles.blends'),
+    canActivate: [signedInGuard],
+    providers: [provideTranslocoScope('recipe', 'records')],
+    resolve: { messages: scopeTranslations },
+    loadComponent: () => import('./pages/blends/blends-page').then((m) => m.BlendsPage)
   },
   {
     path: 'material',

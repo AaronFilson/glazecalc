@@ -2,8 +2,9 @@
 //
 // Runs the browser tests on Linux in Docker, as CI does, on the working tree as
 // it is now, uncommitted changes and new files included (ignored files are left
-// out). On Windows it goes through WSL (GLAZECALC_WSL_DISTRO picks a distribution
-// other than the default one), which needs Docker running inside it; on Linux and
+// out), and it can run beside another run, from this checkout or another. On
+// Windows it goes through WSL (GLAZECALC_WSL_DISTRO picks a distribution other
+// than the default one), which needs Docker running inside it; on Linux and
 // macOS it runs Docker directly. What failed is copied to test-results-linux/.
 import { execFileSync, spawnSync } from 'node:child_process';
 import fs from 'node:fs';
@@ -37,7 +38,9 @@ const [command, commandArgs] =
     ? ['wsl', [...(distro ? ['-d', distro] : []), '--', 'bash', inWsl(script), inWsl(tar), inWsl(results), ...args]]
     : ['bash', [script, tar, results, ...args]];
 
-const run = spawnSync(command, commandArgs, { stdio: 'inherit' });
+// E2E_WORKERS and E2E_BLOB reach the tests (WSLENV carries them into WSL).
+const env = { ...process.env, WSLENV: [process.env.WSLENV, 'E2E_WORKERS', 'E2E_BLOB'].filter(Boolean).join(':') };
+const run = spawnSync(command, commandArgs, { stdio: 'inherit', env });
 fs.rmSync(work, { recursive: true, force: true });
 if (run.error) {
   console.error(`Could not start ${command}: ${run.error.message}`);

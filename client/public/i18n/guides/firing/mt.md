@@ -34,13 +34,14 @@ Il-fornituri fir-Renju Unit, fl-Ewropa, fl-Awstralja u f’New Zealand spiss jag
 Table: Kemm tiswa żamma fl-ogħla temperatura
 Label: Żammiet u xogħol tas-sħana
 
-| Żamma            | Bejn wieħed u ieħor l-istess xogħol tas-sħana bħal                             |
-| ---------------- | ------------------------------------------------------------------------------ |
-| Madwar 20 minuta | L-ogħla temperatura b’{{18 °F; 10 °C}} aktar                                   |
-| 40–60 minuta     | L-ogħla temperatura b’{{36 °F; 20 °C}} aktar                                   |
-| Madwar 2 sigħat  | L-ogħla temperatura b’{{54 °F; 30 °C}} aktar                                   |
-| 1–2 sigħat       | “jista’ jkun biżżejjed biex jgħawweġ il-kon li jmiss, numru wieħed aktar sħun” |
-| 4–6 sigħat       | Biżżejjed biex jitgħawweġ kon żewġ numri aktar sħun                            |
+| Żamma            | Bejn wieħed u ieħor l-istess xogħol tas-sħana bħal  |
+| ---------------- | --------------------------------------------------- |
+| Madwar 20 minuta | L-ogħla temperatura b’{{18 °F; 10 °C}} aktar        |
+| 40–60 minuta     | L-ogħla temperatura b’{{36 °F; 20 °C}} aktar        |
+| Madwar 2 sigħat  | L-ogħla temperatura b’{{54 °F; 30 °C}} aktar        |
+| 4–6 sigħat       | Biżżejjed biex jitgħawweġ kon żewġ numri aktar sħun |
+
+Orton iżid li żamma ta’ 1–2 sigħat “tista’ tkun biżżejjed biex tgħawweġ il-kon li jmiss, numru wieħed aktar sħun”.
 
 Għalhekk żamma qatt ma tiġi b’xejn: jekk iżżid waħda, stenna li l-koni jitgħawġu aktar, u naqqas l-ogħla temperatura biex tpatti.
 
@@ -198,11 +199,11 @@ Il-proċedura ta’ Dawson, li sservi wkoll ta’ kontroll qabel kull ħamja:
 Table: Għal kemm tissettja t-timer tal-limitu
 Label: Issettjar tat-timer tal-limitu
 
-| Sors      | Issettjar                                                                                                                   |
-| --------- | --------------------------------------------------------------------------------------------------------------------------- |
-| Dawson    | ½ siegħa aktar mill-ħin mistenni tal-ħamja sakemm issir taf il-forn, wara anke ¼ ta’ siegħa biss; qatt aktar minn 20 siegħa |
-| L&L       | Għoli ħafna l-ewwel darba, u niżżel kemm tieħu l-ħamja; wara, madwar 1 siegħa aktar                                         |
-| Bracker’s | Minn 30 minuta sa 1 siegħa aktar mill-ħin tal-ħamja                                                                         |
+| Sors      | Issettjar                                                                                                                                      |
+| --------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| Dawson    | ½ siegħa aktar mill-ħin mistenni tal-ħamja sakemm issir taf il-forn, wara anke ¼ ta’ siegħa biss; qatt ma tissettjah għal aktar minn 20 siegħa |
+| L&L       | Għoli ħafna l-ewwel darba, u niżżel kemm tieħu l-ħamja; wara, madwar 1 siegħa aktar                                                            |
+| Bracker’s | Minn 30 minuta sa 1 siegħa aktar mill-ħin tal-ħamja                                                                                            |
 
 > [!NOTE]
 > Il-punt tat-tluq tagħna: ħin twil l-ewwel darba (fil-limitu tal-20 siegħa tat-timer), imbagħad minn ½ sa 1 siegħa aktar mill-ħin li niżżilt. It-timer jgħidlek ukoll kemm damet il-ħamja: jekk issettjajtu fuq 7 u spiċċa fuq 1, il-ħamja damet 6 sigħat.
@@ -375,7 +376,7 @@ Il-ħamja tal-**bisque** (fir-Renju Unit: biscuit) hija l-ewwel ħamja, aktar ba
 
 ### Għaliex il-bidu jsir bil-mod
 
-L-ilma, meta jsir fwar, “jespandi 1170 darba”, jinnota Bracker’s, għalhekk l-oġġetti umdi jridu jinxfu bil-mod. L&L u Orton jagħtu l-parir li “Għandha tittieħed attenzjoni speċjali taħt 1500°F (815°C) biex it-tafal{{en: body}} jisħon b’mod uniformi”, u li l-karbonju jrid jinħaraq kollu qabel madwar {{1200 °F; 650 °C}}. ’Il fuq minn {{1500 °F; 816 °C}} il-forn jista’ jitla’ aktar malajr.
+L-ilma jespandi aktar minn elf darba meta jsir fwar, għalhekk l-oġġetti umdi jridu jinxfu bil-mod. L&L u Orton jagħtu l-parir li “Għandha tittieħed attenzjoni speċjali taħt 1500°F (815°C) biex it-tafal{{en: body}} jisħon b’mod uniformi”, u li l-karbonju jrid jinħaraq kollu qabel madwar {{1200 °F; 650 °C}}. ’Il fuq minn {{1500 °F; 816 °C}} il-forn jista’ jitla’ aktar malajr.
 
 Table: X’jiġri hekk kif jisħon il-bisque
 Label: X’jiġri fil-ħamja tal-bisque
@@ -599,14 +600,14 @@ Jekk is-sitter jiskatta qabel ma jinżlu l-koni tax-xkaffa, il-ħamja ta’ wara
 
 ### Il-ventilazzjoni
 
-Fil-bidu tal-ħamja, it-tafal u l-glejż{{en: glaze}} joħorġu fwar tal-ilma u dħaħen, fosthom monossidu tal-karbonju, u l-glejżijiet jistgħu joħorġu dħaħen tossiċi anke aktar tard fil-ħamja. L&L jgħid li huwa “essenzjali” li dawn joħorġu mill-forn. Mingħajr sistema ta’ estrattur, dan ifisser l-għatu miftuħ ftit u t-toqob tal-ħarsa miftuħin fl-ewwel stadji, bħal fil-proċeduri ta’ hawn fuq; jekk tnaqqas ir-rata tat-tisħin f’dan iż-żmien, tgħin ukoll biex il-karbonju jinħaraq kollu. B’**estrattur minn taħt il-forn** (estrattur bil-mutur imwaħħal mal-forn), Orton jgħid li l-għatu u t-toqob tal-ħarsa jibqgħu magħluqin għall-ħamja kollha, ħlief biex tiċċekkja l-koni{{en: cones}}. Toqba tal-ħarsa ta’ fuq miftuħa tipproteġi wkoll it-tubu tas-sitter u l-partijiet tal-metall tal-forn.
+Fil-bidu tal-ħamja, it-tafal u l-glejż{{en: glaze}} joħorġu fwar tal-ilma u dħaħen, fosthom monossidu tal-karbonju, u l-glejżijiet jistgħu joħorġu dħaħen tossiċi anke aktar tard fil-ħamja. L&L jgħid li huwa “essenzjali” li dawn joħorġu mill-forn. Mingħajr sistema ta’ estrattur, dan ifisser l-għatu miftuħ ftit u t-toqob tal-ħarsa miftuħin fl-ewwel stadji, bħal fil-proċeduri ta’ hawn fuq; jekk tnaqqas ir-rata tat-tisħin f’dan iż-żmien, tgħin ukoll biex il-karbonju jinħaraq kollu. F’forn mingħajr estrattur, Dawson, li għamel is-sitter, jgħid ukoll li tħalli t-toqba tal-ħarsa ta’ fuq miftuħa għall-ħamja kollha: il-ventilazzjoni “tnaqqas id-deterjorament tal-partijiet tal-metall tal-forn u żżid il-ħajja tal-assemblaġġ tat-tubu”. **Estrattur minn taħt il-forn** (estrattur bil-mutur imwaħħal mal-forn) ibiddel dan. Huwa jagħmel il-ventilazzjoni, għalhekk Orton jgħid li l-għatu u t-toqob tal-ħarsa jibqgħu magħluqin għall-ħamja kollha, ħlief biex tiċċekkja l-koni{{en: cones}}, u L&L jgħid li tħalli l-estrattur mixgħul u ttappan it-toqob tal-ħarsa.
 
 Għall-ventilazzjoni tal-kamra, u għall-allarmi tal-monossidu tal-karbonju, ara l-gwidi [Taħlit sikur u ventilazzjoni](/guides/safe-mixing) u [Tavvelenax lill-familja tiegħek](/guides/home-safety).
 
 ### Waqt li l-forn qed jaħmi
 
 - Biex tħares minn toqba tal-ħarsa, uża biss nuċċali tal-iwweldjar kontra l-IR, bi grad ta’ dlam 3; in-nuċċali tax-xemx mhumiex biżżejjed. Skutt jagħti parir li ddawwar it-tappijiet f’posthom biex ma jaqgħux.
-- Tħallix il-forn mingħajr sorveljanza wara l-ħin mistenni tal-ħamja; sitter mhuwiex apparat li jitfi l-forn b’mod żgur f’każ ta’ ħsara.
+- Tħallix il-forn mingħajr sorveljanza għal aktar mill-ħin mistenni tal-ħamja; sitter mhuwiex apparat li jitfi l-forn b’mod żgur f’każ ta’ ħsara.
 - Qatt ma taħmi fuq jew qrib xi ħaġa li taqbad, bħal art tal-injam jew tapit.
 - Żomm id-distanzi ta’ sigurtà li hemm fil-manwal tiegħek. Iċ-ċifri ppubblikati jvarjaw minn 12-il pulzier (30 cm) sa 3 piedi (91 cm); fejn il-manwal ma jgħid xejn, 18-il pulzier (46 cm) mill-ħitan u 3 piedi (91 cm) minn kull ħaġa li taqbad huma l-għażla l-aktar sikura.
 - Żomm l-ispazju madwar il-piż tas-sitter ħieles, biex il-piż ikun jista’ jaqa’.

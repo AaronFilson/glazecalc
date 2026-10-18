@@ -17,13 +17,17 @@
     "confirmEmail": "Sähköpostiosoitteen vahvistaminen – Glazecalc",
     "home": "Pajan muistikirja – Glazecalc",
     "recipe": "Reseptit – Glazecalc",
+    "import": "Reseptien liittäminen – Glazecalc",
+    "blends": "Seokset koepaloille – Glazecalc",
     "material": "Raaka-aineet – Glazecalc",
     "additive": "Lisäaineet – Glazecalc",
     "firingLogs": "Polttopäiväkirjat – Glazecalc",
     "notes": "Muistiinpanot – Glazecalc",
     "trash": "Roskakori – Glazecalc",
     "account": "Tili ja asetukset – Glazecalc",
-    "notFound": "Sivua ei löydy – Glazecalc"
+    "notFound": "Sivua ei löydy – Glazecalc",
+    "shared": "Jaettu resepti – Glazecalc",
+    "assistants": "Glazecalcin käyttäminen tekoälyavustajasta – Glazecalc"
   },
   "nav": {
     "skip": "Siirry sisältöön",
@@ -39,7 +43,9 @@
     "guides": "Oppaat",
     "about": "Tietoja",
     "account": "Tili",
+    "trialAccount": "Kokeilu",
     "accountTitle": "Tili ja asetukset",
+    "trash": "Roskakori",
     "signOut": "Kirjaudu ulos",
     "createAccount": "Luo ilmainen tili"
   },
@@ -66,7 +72,8 @@
     "problem": "Ilmoita ongelmasta",
     "pottery": "Käsintehtyä keramiikkaa: Updraft Pottery Studio",
     "copyright": "© 2017–2026 Aaron Filson / Candling Development Studio · Ilmainen avoimen lähdekoodin ohjelmisto (MIT-lisenssi)",
-    "languages": "Kielet"
+    "languages": "Kielet",
+    "language": "Kieli:"
   },
   "numbers": {
     "notANumber": "Anna luku, esimerkiksi {example}.",
@@ -85,7 +92,7 @@
     "about": "Glazecalc on ilmainen, avoimen lähdekoodin lasitekemian laskin ja muistikirja. Katso, miten se laskee Segerin kaavan (UMF) ja miten se on rakennettu.",
     "privacy": "Miten Glazecalc käsittelee tietoja: ei mainoksia, ei analytiikkaa eikä seurantaa, eikä mitään myydä. Mitä säilytetään, miksi ja miten oikeuksia käytetään.",
     "signup": "Luo ilmainen Glazecalc-tili ja säilytä lasitereseptit, raaka-aineet, muistiinpanot ja polttopäiväkirjat. Ei mainoksia, eikä tietoja koskaan myydä.",
-    "imageAlt": "Glazecalc: ymmärrä lasitteita, älä vain sekoita niitä."
+    "imageAlt": "Glazecalcin etusivu: ilmaista lasitekemiaa keraamikoille, vieressä valokuva poltetuista keiloista."
   },
   "notices": {
     "dismiss": "Sulje",
@@ -93,11 +100,15 @@
     "error": "Virhe: {text}"
   },
   "remove": {
-    "removed": "Poistettu: ”{name}”.",
     "alreadyRemoved": "”{name}” oli jo poistettu.",
+    "trashed": "”{name}” siirrettiin roskakoriin.",
+    "undo": "Kumoa",
+    "restored": "”{name}” palautettiin.",
+    "restoreFailed": "Kohdetta ”{name}” ei voitu palauttaa. Se on yhä roskakorissa.",
     "failed": "Poistaminen ei onnistunut. Yritä uudelleen.",
     "question": "Poistetaanko ”{name}”?",
     "cannotUndo": "Toimintoa ei voi kumota.",
+    "toTrash": "Sen voi palauttaa roskakorista 30 päivän ajan.",
     "removing": "Poistetaan…",
     "yes": "Kyllä, poista",
     "cancel": "Peruuta",
@@ -222,20 +233,26 @@
     "soldIn": "Myynnissä",
     "showing": "Näytetään {shown} / {noun, select, additives {{total, plural, one {# lisäaine} other {# lisäainetta}}} other {{total, plural, one {# raaka-aine} other {# raaka-ainetta}}}}",
     "name": "Nimi",
+    "equivalentWeight": "Ekvivalenttipaino",
+    "firedWeight": "Paino poltettuna",
     "notes": "Huomautukset",
     "analysis": "Analyysi",
+    "details": "Lisätiedot",
     "formula": "Kaava",
+    "formulaLine": "Kaava: {formula}",
     "useInstead": "<b>Käytä tilalla:</b> {list}",
     "similar": "Samankaltainen: {list}",
     "replaces": "Korvaa: {list}",
     "aliases": "Myös nimellä: {list}",
     "madeBy": "Valmistaja: {name}",
     "source": "Lähde:",
+    "hazardsLine": "Vaarat: {hazards}",
     "noChemistry": "Ei analyysiä: ei mukana Segerin kaavassa",
     "countedAs": "Laskettu raaka-aineena {name}",
     "nothingMatches": "Ei osumia. Kokeile toista nimeä, lajia tai aluetta.",
     "loading": "Ladataan…",
-    "notFetched": "Luetteloa ei voitu hakea. <retry>Yritä uudelleen</retry>"
+    "notFetched": "Luetteloa ei voitu hakea. <retry>Yritä uudelleen</retry>",
+    "showAll": "{noun, select, additives {{count, plural, one {Näytä # lisäaine} other {Näytä kaikki # lisäainetta}}} other {{count, plural, one {Näytä # raaka-aine} other {Näytä kaikki # raaka-ainetta}}}}"
   },
   "chemistryForm": {
     "name": "{noun, select, additive {Anna lisäaineelle nimi.} other {Anna raaka-aineelle nimi.}}",
@@ -270,7 +287,7 @@
     "close": "Sulje"
   },
   "unity": {
-    "fluxes": "Sulattajat – RO",
+    "fluxes": "Sulattajat – R₂O ja RO",
     "stabilizers": "Tasapainottajat – R₂O₃",
     "glassFormers": "Lasinmuodostajat – RO₂",
     "wildcards": "Muut oksidit",

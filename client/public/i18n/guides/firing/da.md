@@ -6,75 +6,76 @@ lead: Sådan brændes en elektrisk ovn med Kiln-Sitter eller manuelle kontakter:
 ## Kegler: hvad de måler {#cones}
 
 > [!NOTE]
-> Følg først ovnens egen brugsanvisning. Denne vejledning samler, hvad producenter af kegler og ovne har offentliggjort om enkle elektriske ovne; den erstatter ikke anvisningerne for den enkelte model, og hvor de to er uenige, gælder brugsanvisningen.
+> Følg først ovnens egen manual. Denne vejledning samler, hvad kegle- og ovnproducenter offentliggør om enkle elektriske ovne; den erstatter ikke anvisningerne for den enkelte model, og hvor de to er uenige, vinder manualen.
 
-En **pyrometrisk kegle**{{en: pyrometric cone}} er en lille, slank pyramide af et standardiseret keramisk pulver. Når den har fået varme nok, bliver den blød og bøjer over på en måde, der kan gentages. Keglerne sættes i ovnen ved siden af emnerne, og man aflæser, hvor langt de har bøjet.
+En **pyrometrisk kegle**{{en: pyrometric cone}} er en lille, slank pyramide lavet af et standardiseret keramisk pulver. Når den har fået nok varme, bliver den blød og bøjer sig over på en gentagelig måde. Kegler sættes i ovnen ved siden af godset, og så aflæses det, hvor langt de har bøjet sig.
 
-Kegler måler **varmepåvirkning**{{en: heatwork}}, den samlede virkning af temperatur og tid. Som Orton, den førende keglefabrikant i USA, udtrykker det: »Kegler måler ikke temperatur alene.« En kegle, der varmes langsomt op, bøjer ved en lavere temperatur end en, der varmes hurtigt op, og en glasur{{en: glaze}} opfører sig på samme måde. Derfor angiver Orton hver kegles temperatur ved en bestemt opvarmningshastighed i de sidste {{180 °F; 100 °C}} af brændingen. Når en kegle først begynder at bevæge sig, bøjer den inden for et snævert interval, »som regel mindre end 40° F« (22 °C).
+Kegler måler **varmepåvirkning**{{en: heatwork}}, den samlede virkning af temperatur og tid. Med Ortons ord, den vigtigste amerikanske keglefabrikant: »Kegler måler ikke temperatur alene.« En kegle, der opvarmes langsomt, bøjer sig ved en lavere temperatur end en, der opvarmes hurtigt, og en glasur{{en: glaze}} opfører sig på samme måde. Derfor angiver Orton hver kegles temperatur for en opgivet opvarmningshastighed over de sidste {{180 °F; 100 °C}} af brændingen. Når en kegle først begynder at bevæge sig, bøjer den sig over inden for et smalt interval, »normalt mindre end 40° F« (22 °C).
 
 ### Keglenumre
 
-Keglenumrene går fra 022, den koldeste, op til 42. Et foranstillet nul markerer den koldere serie og læses »nul«: Kegle 06 (»nul seks«) er koldere end kegle 04, og kegle 01 kræver mindre varme end kegle 1. Orton advarer om, at det er vigtigt ikke at blande de to serier sammen. Forskellen er stor: Kegle 06 bøjer ved en temperatur, der er mere end {{400 °F; 220 °C}} lavere end kegle 6.
+Keglenumre går fra 022, den koldeste, op til 42. Et foranstillet nul markerer den koldere serie og læses som »nul«: kegle 06 (»nul seks«) er koldere end kegle 04, og kegle 01 kræver mindre varme end kegle 1. Orton advarer om, at det er vigtigt ikke at forveksle de to serier. Forskellen er stor: kegle 06 bøjer sig mere end {{400 °F; 220 °C}} koldere end kegle 6.
 
-Table: Almindelige temperaturområder for selvstående kegler ved {{108 °F/h; 60 °C/h}}
-Label: Temperaturområder
+Table: Almindelige brændingsområder, for selvstående kegler ved {{108 °F/h; 60 °C/h}}
+Label: Brændingsområder
 
-| Område           | Kegler |                     Temperatur | Typisk brug                                                       |
-| ---------------- | ------ | -----------------------------: | ----------------------------------------------------------------- |
-| Lav temperatur   | 06–04  |  {{1828–1945 °F; 998–1063 °C}} | Glasurer til lertøj{{en: earthenware}}; forglødning{{en: bisque}} |
-| Mellemtemperatur | 5–6    | {{2167–2232 °F; 1186–1222 °C}} | Stentøj{{en: stoneware}} og porcelæn fra elektrisk ovn            |
-| Høj temperatur   | 9–10   | {{2300–2345 °F; 1260–1285 °C}} | Mest stentøj og porcelæn brændt i gasovn                          |
+| Område           | Kegler |                     Temperatur | Typisk brug                         |
+| ---------------- | ------ | -----------------------------: | ----------------------------------- |
+| Lav temperatur   | 06–04  |  {{1828–1945 °F; 998–1063 °C}} | Glasurer til lertøj; forglødning    |
+| Mellemtemperatur | 5–6    | {{2167–2232 °F; 1186–1222 °C}} | Stentøj og porcelæn i elektrisk ovn |
+| Høj temperatur   | 9–10   | {{2300–2345 °F; 1260–1285 °C}} | Stentøj og porcelæn, mest gasbrændt |
 
-Forhandlere i Storbritannien, Europa, Australien og New Zealand angiver ofte en temperatur i °C i stedet for en kegle: Find den nærmeste kegle i tabellen nedenfor, og bekræft den med en kontrolkegle{{en: witness cone}}. Det bør ikke antages, at Segerkegler og Staffordshire-kegler, de ældre europæiske serier, har de samme numre som Ortons, så denne vejledning bruger Ortonkegler.
+Leverandører i Storbritannien, Europa, Australien og New Zealand angiver ofte en temperatur i °C i stedet for en kegle: find den nærmeste kegle i skemaet nedenfor, og bekræft den med en kontrolkegle{{en: witness cone}}. Seger- og Staffordshire-kegler, de ældre europæiske serier, bør ikke antages at have samme numre som Orton, så denne vejledning bruger Ortonkegler.
 
-### Holdetid øger varmepåvirkningen
+### En holdetid tilfører varmepåvirkning
 
-En **holdetid**{{en: hold}} (på engelsk også **soak**) holder ovnen på samme temperatur et stykke tid. Da kegler måler varmepåvirkning, kan en holdetid ved toppen træde i stedet for en højere sluttemperatur. Orton angiver disse omtrentlige sammenhænge:
+En **holdetid**{{en: hold}} (også kaldet **soak**) holder ovnen på én temperatur et stykke tid. Da kegler måler varmepåvirkning, kan en holdetid i toppen træde i stedet for en højere sluttemperatur. Orton angiver disse grove ækvivalenter:
 
-Table: Hvad en holdetid ved sluttemperaturen svarer til
-Label: Holdetid og varmepåvirkning
+Table: Hvad en holdetid ved sluttemperaturen er værd
+Label: Holdetider og varmepåvirkning
 
-| Holdetid        | Omtrent samme varmepåvirkning som                                       |
-| --------------- | ----------------------------------------------------------------------- |
-| Ca. 20 minutter | En sluttemperatur, der er {{18 °F; 10 °C}} højere                       |
-| 40–60 minutter  | En sluttemperatur, der er {{36 °F; 20 °C}} højere                       |
-| Ca. 2 timer     | En sluttemperatur, der er {{54 °F; 30 °C}} højere                       |
-| 1–2 timer       | »kan være tilstrækkeligt til at deformere det næste højere keglenummer« |
-| 4–6 timer       | Nok til at bøje en kegle, der er to numre varmere                       |
+| Holdetid            | Nogenlunde den samme varmepåvirkning som          |
+| ------------------- | ------------------------------------------------- |
+| Omkring 20 minutter | En sluttemperatur, der er {{18 °F; 10 °C}} højere |
+| 40–60 minutter      | En sluttemperatur, der er {{36 °F; 20 °C}} højere |
+| Omkring 2 timer     | En sluttemperatur, der er {{54 °F; 30 °C}} højere |
+| 4–6 timer           | Nok til at bøje en kegle to numre varmere         |
 
-En holdetid er altså aldrig gratis: Lægges der en ind, så regn med, at keglerne bøjer mere, og sænk sluttemperaturen tilsvarende.
+Orton tilføjer, at en holdetid på 1–2 timer »kan være tilstrækkelig til at deformere det næste varmere keglenummer«.
+
+En holdetid er altså aldrig gratis: hvis der tilføjes en, må keglerne forventes at bøje sig længere, og sluttemperaturen sænkes tilsvarende.
 
 ### Typer af kegler
 
-Orton laver fire typer. To står på ovnpladen og viser, hvad emnerne har fået; to er til Kiln-Sitteren.
+Orton laver fire typer. To står på ovnpladen for at vise, hvad godset har fået; to er til Kiln-Sitteren.
 
 Table: Ortons fire typer kegler
-Label: Kegletyper
+Label: Typer af kegler
 
-| Type                | Bruges til                | Sådan står den                                                                                                  |
-| ------------------- | ------------------------- | --------------------------------------------------------------------------------------------------------------- |
-| Selvstående         | Kontrolkegle på ovnpladen | En indbygget fod giver højden, 1¾ tomme (44 mm), og hældningen på 8°; ingen holder nødvendig                    |
-| Stor                | Kontrolkegle på ovnpladen | Sat i en keglestander eller en klump ler, så præcis 2 tommer (51 mm) stikker op, med 8° hældning fra lodret     |
-| Lille (juniorkegle) | Kiln-Sitter               | Ligger på tværs af Kiln-Sitterens kegleholdere; 15/16 tomme (24 mm) stikker op, hvis den stilles på en ovnplade |
-| Stav                | Kiln-Sitter               | Samme pulver som små kegler, formet som en jævn stav                                                            |
+| Type           | Bruges til                | Sådan står den                                                                                              |
+| -------------- | ------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| Selvstående    | Kontrolkegle på ovnpladen | En indbygget fod giver højden, 1¾ tomme (44 mm), og hældningen på 8°; ingen holder er nødvendig             |
+| Stor           | Kontrolkegle på ovnpladen | Sat i en kegleholder eller en klump ler med præcis 2 tommer (51 mm) synlig, hældende 8° fra lodret          |
+| Lille (junior) | Kiln-Sitter               | Ligger på tværs af Kiln-Sitterens understøtninger; 15/16 tomme (24 mm) synlig, hvis den står på en ovnplade |
+| Stav           | Kiln-Sitter               | Det samme pulver som små kegler, i en jævn stavform                                                         |
 
-Højden betyder noget: En forskel på ¼ tomme (6 mm) i en stor kegles højde »kan give mere end en halv kegles forskel i bøjningen«. Kegler bliver ikke dårlige og ældes ikke, og fugtig opbevaring påvirker dem ikke.
+Højden betyder noget: en forskel på ¼ tomme (6 mm) i højden af en stor kegle »kan give mere end en halv kegles forskel i bøjning«. Kegler bliver ikke dårlige og ældes ikke, og fugtig opbevaring påvirker dem ikke.
 
 ### Hvad »kegle 6« betyder i praksis
 
-Kegletabellen angiver en selvstående kegle 6 til {{2232 °F; 1222 °C}}, men kun når temperaturen i de sidste {{180 °F; 100 °C}} stiger med {{108 °F/h; 60 °C/h}}. Ved en stigning på {{270 °F/h; 150 °C/h}} bøjer den samme kegle ved {{2269 °F; 1243 °C}}. Virkelige ovne afviger igen: Digitalfire oplyser, at »de fleste ovne når kegle 6 ved 2200°F, ikke 2232°F«. »Kegle 6« betyder altså, at emnerne har fået den varmepåvirkning, der bøjer en kegle 6, uanset hvad et termometer viste undervejs.
+Skemaet angiver en selvstående kegle 6 som {{2232 °F; 1222 °C}}, men kun når de sidste {{180 °F; 100 °C}} stiger med {{108 °F/h; 60 °C/h}}. Ved en stigning på {{270 °F/h; 150 °C/h}} bøjer den samme kegle sig ved {{2269 °F; 1243 °C}}. Rigtige ovne afviger igen: Digitalfire oplyser, at »de fleste ovne når kegle 6 ved 2200°F, ikke 2232°F«. »Kegle 6« betyder altså, at godset fik den varmepåvirkning, der bøjer en kegle 6, uanset hvad et termometer viste på det tidspunkt.
 
 :::orton
 
 > [!NOTE]
-> Brænd efter keglen, ikke efter uret eller visningen. Indstil styringen efter keglenummer, og lad en kontrolkegle på ovnpladen bekræfte hver brænding.
+> Brænd efter kegle, ikke efter uret eller viseren. Indstil en regulator efter keglenummer, og lad en kontrolkegle på ovnpladen bekræfte hver brænding.
 
 :::
 
 :::temperature
 
 > [!NOTE]
-> Brændes der efter temperatur, så hold slutningen af hver brænding ens: samme opvarmningshastighed til sidst, samme sluttemperatur og samme holdetid. Så lykkes en glasur, der er lykkedes én gang, igen.
+> Ved brænding efter temperatur skal slutningen af hver brænding holdes ens: den samme sidste stigningshastighed, den samme sluttemperatur og den samme holdetid. Så virker en glasur, der engang virkede, igen.
 
 :::
 
@@ -198,11 +199,11 @@ Mange Kiln-Sittere, også Dawsons LT-modeller, har en **tidsbegrænser** (limit 
 Table: Hvor længe tidsbegrænseren skal indstilles
 Label: Indstilling af tidsbegrænseren
 
-| Kilde     | Indstilling                                                                                                               |
-| --------- | ------------------------------------------------------------------------------------------------------------------------- |
-| Dawson    | ½ time længere end den forventede brændingstid, indtil man kender ovnen, senere helt ned til ¼ time; aldrig over 20 timer |
-| L&L       | Meget højt første gang, og notér, hvor lang tid brændingen tager; derefter ca. 1 time længere                             |
-| Bracker’s | 30 minutter til 1 time længere end brændingstiden                                                                         |
+| Kilde     | Indstilling                                                                                                                                       |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Dawson    | ½ time længere end den forventede brændingstid, indtil man kender ovnen, senere helt ned til ¼ time længere; sæt den aldrig til mere end 20 timer |
+| L&L       | Meget højt første gang, og notér, hvor lang tid brændingen tager; derefter ca. 1 time længere                                                     |
+| Bracker’s | 30 minutter til 1 time længere end brændingstiden                                                                                                 |
 
 > [!NOTE]
 > Vores udgangspunkt: rigeligt første gang (inden for urskivens 20 timer), derefter ½ til 1 time længere end den noterede tid. Uret viser også, hvor lang tid en brænding tog: Indstillet på 7 og slut på 1 betyder 6 timer.
@@ -375,7 +376,7 @@ Selvstående Ortonkegler sælges i Japan under navnet 立つゼーゲル (»stå
 
 ### Hvorfor begyndelsen går langsomt
 
-Vand, der bliver til damp, »udvider sig 1170 gange«, skriver Bracker’s, så fugtigt gods skal tørres langsomt. L&L og Orton råder til, at »der bør udvises særlig omhu under 1500°F (815°C) for at opvarme godset jævnt«, og at kulstof skal være brændt ud før ca. {{1200 °F; 650 °C}}. Over {{1500 °F; 816 °C}} kan ovnen stige hurtigere.
+Vand udvider sig mere end tusindfold, når det bliver til damp, så fugtigt gods skal tørres langsomt. L&L og Orton råder til, at »der bør udvises særlig omhu under 1500°F (815°C) for at opvarme godset jævnt«, og at kulstof skal være brændt ud før ca. {{1200 °F; 650 °C}}. Over {{1500 °F; 816 °C}} kan ovnen stige hurtigere.
 
 Table: Hvad der sker, mens en forglødning varmes op
 Label: Hvad der sker i en forglødning
@@ -595,22 +596,22 @@ Slår Kiln-Sitteren fra, før keglerne på ovnpladen er bøjet ned, så gå én 
 
 Et **pyrometer** er en temperaturmåler, der aflæser et **termoelement**, en varmeføler gennem ovnvæggen. Det viser, hvor hurtigt ovnen stiger, så den rigtige kolonne i kegletabellen kan vælges. Men det måler nær væggen, ikke ved emnerne, og det driver med tiden. L&L bemærker, at et termoelement af type K kan vise mere end {{25 °F; 14 °C}} forkert efter gentagne brændinger til kegle 6, »en forskel, der er større end en hel kegle«, mens en selvstående kegle højst varierer med {{4 °F; 2 °C}}. Ifølge Orton skal pyrometre kalibreres igen fra tid til anden, og det er med kegler, de tjekkes.
 
-## Udluftning, kighuller og sikkerhed {#venting}
+## Udsugning, kig og sikkerhed {#venting}
 
-### Udluftning
+### Udsugning
 
-Tidligt i en brænding afgiver ler og glasur{{en: glaze}} vanddamp og røggas, herunder kulilte, og glasurer kan også afgive giftige dampe senere i brændingen. L&L kalder det »afgørende« at lede dem ud. Uden udsugningssystem betyder det låget på klem og kighullerne åbne i de tidlige faser, som i fremgangsmåderne ovenfor; at varme langsommere op i denne tid hjælper også kulstoffet med at brænde ud. Med en **bundudsugning** (en motordrevet udsugning monteret på ovnen) forbliver låget og kighullerne ifølge Orton lukkede under hele brændingen, undtagen når keglerne tjekkes. Et åbent øverste kighul beskytter også Kiln-Sitterens rør og ovnens metaldele.
+Tidligt i en brænding afgiver ler og glasur{{en: glaze}} vanddamp og dampe, herunder kulilte, og glasurer kan også afgive giftige dampe senere i brændingen. L&L kalder det »afgørende« at lede dem væk. Uden et udsugningssystem betyder det låget på klem og kighullerne åbne i de tidlige trin, som i fremgangsmåderne ovenfor; at opvarme langsommere i den tid hjælper også kulstoffet med at brænde ud. I en ovn uden udsugning siger Dawson, som lavede Kiln-Sitteren, også, at det øverste kighul skal stå åbent under hele brændingen: udluftningen »vil mindske slid på ovnens metaldele og forlænge rørenhedens levetid«. En **bundudsugning**{{en: downdraft vent}} (en motordrevet udsugning, der monteres på ovnen) ændrer det. Den klarer udsugningen, så ifølge Orton bliver låget og kighullerne lukket under hele brændingen, undtagen for at kontrollere keglerne, og L&L siger, at udsugningen skal være tændt, og kighullerne proppes.
 
-Om udluftning af rummet og om kuliltealarmer: Se [Sikker blanding og ventilation](/guides/safe-mixing) og [Forgift ikke familien](/guides/home-safety).
+Om ventilation af rummet og om kuliltealarmer, se [Sikker blanding og ventilation](/guides/safe-mixing) og [Forgift ikke familien](/guides/home-safety).
 
 ### Mens ovnen brænder
 
-- Kig kun gennem et kighul med svejsebriller med IR-filter og beskyttelsestrin 3; solbriller er ikke nok. Skutt anbefaler at dreje propperne på plads, så de ikke falder ud.
-- Lad ikke ovnen være uden opsyn ud over den forventede brændingstid; en Kiln-Sitter er ikke fejlsikker.
-- Brænd aldrig på eller nær noget, der kan brænde, fx et trægulv eller et tæppe.
-- Overhold sikkerhedsafstandene i brugsanvisningen. De offentliggjorte tal går fra 12 tommer (30 cm) til 3 fod (91 cm); hvor brugsanvisningen intet siger, er 18 tommer (46 cm) fra vægge og 3 fod (91 cm) fra alt, der kan brænde, det sikreste valg.
+- Kig kun gennem et kighul med svejsebriller med IR-filter i beskyttelsestrin 3; solbriller er ikke nok. Skutt anbefaler at dreje propperne på plads, så de ikke falder ud.
+- Lad ikke ovnen være uden opsyn ud over den forventede brændingstid; en Kiln-Sitter er ingen fejlsikring.
+- Brænd aldrig på eller i nærheden af noget, der kan brænde, som et trægulv eller et tæppe.
+- Hold afstandene fra manualen. Offentliggjorte tal spænder fra 12 tommer (30 cm) til 3 fod (91 cm); hvor manualen tier, er 18 tommer (46 cm) fra vægge og 3 fod (91 cm) fra alt, der kan brænde, det sikreste valg.
 - Hold pladsen omkring Kiln-Sitterens lod fri, så det kan falde.
-- Når brændingen er slut, så sluk kontakterne, og slå også sikringen fra.
+- Når brændingen er slut, så slå kontakterne fra, og slå også sikringen fra.
 
 ## Afkøling og tømning {#cooling}
 

@@ -1,14 +1,14 @@
 import { translate } from '@jsverse/transloco';
 import { marker } from '@jsverse/transloco-keys-manager/marker';
-import { MOLAR_MASS, Selection, formatFormula, molesPerGram } from '../../../../lib/chemistry';
+import { Selection, formatFormula } from '../../../../lib/chemistry';
+import * as poolLib from '../../../../lib/recipe/pool';
 import { Material, RecipeMaterial } from '../../core/models';
-import { hasLead, inRegion } from '../../shared/library-info';
-import { LibraryMaterial } from './compare';
-import { amountOf, formatAmount } from './rebase';
-import { formatPlain, listOf, upTo } from '../../shared/format';
+import { listOf, upTo } from '../../shared/format';
+import { figureText, recipeText } from './recipe-messages';
 
 // What a substitution may offer, and how it explains what it chose
-// (docs/adr/0012-choosing-materials.md).
+// (docs/adr/0012-choosing-materials.md). The choosing is shared with the
+// server (lib/recipe/pool.js); this puts its explanation in the page's language.
 
 /** What potters call the oxides (their messages' keys). */
 const OXIDE_NAMES: Record<string, string> = {
@@ -40,45 +40,10 @@ export const oxideLabel = (oxide: string): string =>
 export const oxideName = (oxide: string): string =>
   OXIDE_NAMES[oxide] ? translate(OXIDE_NAMES[oxide]) : formatFormula(oxide);
 
-/** A material's weight percent of an oxide, as fired out of the raw material: G-200 EU Feldspar has 11% K₂O. */
-export const oxidePercent = (material: Material, oxide: string): number => {
-  try {
-    return (molesPerGram(material)[oxide] ?? 0) * MOLAR_MASS[oxide] * 100;
-  } catch {
-    return 0;
-  }
-};
-
-/**
- * A mineral as a formula (Orthoclase, China Clay, Spodumene (theoretical)), not
- * something to buy: the real feldspars and clays are offered instead. Pure
- * chemicals such as whiting and the carbonates are offered as they are.
- */
-export const isIdealMineral = (material: Material): boolean =>
-  material.source?.kind === 'theoretical' &&
-  (material.category === 'feldspar' || material.category === 'clay' || material.name.includes('(theoretical)'));
-
-export interface PoolOptions {
-  region: string;
-  allowLead?: boolean;
-}
-
-/**
- * Whether the app may suggest a material: current, sold in the region, not a
- * formula-only mineral, not water-soluble (borax, boric acid, soda ash), not a
- * fluorine source (fluorspar, cryolite), and without lead unless lead is on.
- * The potter can still add any material to try.
- */
-export function suggestable(material: LibraryMaterial, { region, allowLead = false }: PoolOptions): boolean {
-  return (
-    (!material.status || material.status === 'current') &&
-    inRegion(material, region) &&
-    !isIdealMineral(material) &&
-    !material.soluble &&
-    !material.fluorine &&
-    (allowLead || !hasLead(material))
-  );
-}
+// Whether the app may suggest a material, and how much of an oxide one brings (lib/recipe/materials.js).
+export { isIdealMineral, suggestable } from '../../../../lib/recipe/library';
+export { oxidePercent } from '../../../../lib/recipe/materials';
+export { placesFor } from '../../../../lib/recipe/pool';
 
 /** A material the potter added to try, perhaps marked "must use". */
 export interface TryMaterial {
@@ -134,64 +99,28 @@ function suppliesText(supplies: Array<{ oxide: string; share: number }>): string
   return listOf(supplies.slice(0, 3).map(shareOf));
 }
 
-/** A selection's explanation, for the lines it chose from. */
-export function explain(
-  selection: Selection,
-  lines: Array<{ material: Material; fixed?: boolean; why?: string }>,
-  places: number
-): Report {
-  const name = (i: number) => lines[i].material.name;
-  const used = new Set(selection.chosen);
-  const total = selection.amounts.reduce((sum, amount) => sum + amount, 0);
-  const percent = (amount: number) => (total > 0 ? (100 * amount) / total : 0);
+/** A shared report (lib/recipe) in the page's language. */
+export function reportText(report: poolLib.Report): Report {
   return {
-    uses: selection.contributions.map((c) => ({
-      name: name(c.index),
-      amount: upTo(selection.amounts[c.index], places),
-      supplies: suppliesText(c.supplies),
-      needed: c.missWithout - selection.miss >= 0.1,
-      fixed: !!lines[c.index].fixed
-    })),
-    couldHelp: selection.unused
-      .filter((u) => u.helps >= 0.05)
-      .sort((p, q) => q.helps - p.helps)
-      .slice(0, 3)
-      .map((u) => ({ name: name(u.index), helps: u.helps })),
-    alike: selection.alike
-      .filter((pair) => used.has(pair.used))
-      .slice(0, 3)
-      .map((pair) => ({ used: name(pair.used), other: name(pair.other) })),
-    capped: selection.capped.map((c) => ({
-      name: name(c.index),
-      most: percent(c.most),
-      wouldBe: percent(c.wouldBe),
-      ...(c.group ? { group: c.group } : {}),
-      members: (c.members ?? [c.index]).map(name),
-      why: lines[c.index].why ?? ''
-    })),
-    unreachable: selection.unreachable,
-    countCost: selection.countCost,
-    miss: selection.miss,
-    best: selection.best
+    ...report,
+    uses: report.uses.map((use) => ({ ...use, amount: figureText(use.amount), supplies: suppliesText(use.supplies) })),
+    capped: report.capped.map(({ why, ...cap }) => ({ ...cap, why: why ? recipeText(why) : '' }))
   };
 }
 
-/** A change to the recipe, for its notes: "China Clay 20 → 5.8", "Niter 10 → 0". The amounts are written already. */
-export const changeText = (name: string, from: string, to: string): string =>
-  translate('recipe.pool.changed', { name, from, to });
-
-/** A material new to the recipe, for its notes: "G-200 EU Feldspar 33, new". */
-export const newText = (name: string, amount: string): string => translate('recipe.pool.added', { name, amount });
-
-/** Rounding for new amounts: about four figures of the batch, one decimal place for a recipe of about 100. */
-export const placesFor = (total: number): number => (total >= 50 ? 1 : total >= 5 ? 2 : 3);
+/** A selection's explanation, for the lines it chose from. */
+export function explain(
+  selection: Selection,
+  lines: Array<{ material: Material; fixed?: boolean }>,
+  places: number
+): Report {
+  return reportText(poolLib.explain(selection, lines, places));
+}
 
 /**
  * The recipe a selection makes: its materials with amounts as text (an amount
- * left as it was keeps its text), and what changed, for the new recipe's notes.
- * `replacements` are swapped-in materials: one the fit has no use for is "not
- * needed" rather than a change. A line marked `added` is new to the recipe
- * even if it starts with an amount (a base frit in place of the lead).
+ * left as it was keeps its text), and what changed, for the new recipe's notes
+ * (lib/recipe/pool.js).
  */
 export function recipeFrom(
   selection: Selection,
@@ -199,25 +128,6 @@ export function recipeFrom(
   replacements: Set<string>,
   places: number
 ): { materials: RecipeMaterial[]; changes: string[]; unused: string[] } {
-  const materials: RecipeMaterial[] = [];
-  const changes: string[] = [];
-  const unused: string[] = [];
-  lines.forEach((line, i) => {
-    const amount = selection.amounts[i];
-    const unchanged = amount === line.start && line.start > 0;
-    const text = unchanged ? (line.material.amount ?? '') : formatAmount(amount, places);
-    const name = line.material.name;
-    const fresh = line.added || !(line.start > 0);
-    if (amountOf(text) === 0) {
-      if (!fresh) {
-        if (replacements.has(name)) unused.push(name);
-        else changes.push(changeText(name, upTo(line.start, places), upTo(0, 0)));
-      }
-      return;
-    }
-    materials.push({ ...line.material, amount: text });
-    if (fresh) changes.push(newText(name, formatPlain(text)));
-    else if (amountOf(text) !== line.start) changes.push(changeText(name, upTo(line.start, places), formatPlain(text)));
-  });
-  return { materials, changes, unused };
+  const made = poolLib.recipeFrom(selection, lines, replacements, places);
+  return { ...made, changes: made.changes.map(recipeText) };
 }

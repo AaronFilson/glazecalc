@@ -117,7 +117,9 @@ describe('guessing the current password', () => {
     expect(ok).to.have.status(200);
   });
 
-  it('does not count changes that go through against the address', async () => {
+  it('does not count changes that go through against the address', async function () {
+    // Many sign-ins, each checking a password: the files run in parallel, so allow more than 5 seconds.
+    this.timeout(15000);
     const statuses: number[] = [];
     for (let i = 0; i < 12; i++) {
       // A new account each time, so the per-account count never fills either.

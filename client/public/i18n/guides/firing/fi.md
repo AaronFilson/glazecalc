@@ -34,13 +34,14 @@ Iso-Britannian, Euroopan, Australian ja Uuden-Seelannin toimittajat ilmoittavat 
 Table: Mitä haudutus huippulämpötilassa vastaa
 Label: Haudutus ja lämpötyö
 
-| Haudutus          | Suunnilleen sama lämpötyö kuin                                 |
-| ----------------- | -------------------------------------------------------------- |
-| Noin 20 minuuttia | {{18 °F; 10 °C}} kuumempi huippu                               |
-| 40–60 minuuttia   | {{36 °F; 20 °C}} kuumempi huippu                               |
-| Noin 2 tuntia     | {{54 °F; 30 °C}} kuumempi huippu                               |
-| 1–2 tuntia        | ”voi riittää taivuttamaan seuraavaksi korkeamman keilanumeron” |
-| 4–6 tuntia        | Riittää taivuttamaan kaksi numeroa kuumemman keilan            |
+| Haudutus          | Suunnilleen sama lämpötyö kuin                      |
+| ----------------- | --------------------------------------------------- |
+| Noin 20 minuuttia | {{18 °F; 10 °C}} kuumempi huippu                    |
+| 40–60 minuuttia   | {{36 °F; 20 °C}} kuumempi huippu                    |
+| Noin 2 tuntia     | {{54 °F; 30 °C}} kuumempi huippu                    |
+| 4–6 tuntia        | Riittää taivuttamaan kaksi numeroa kuumemman keilan |
+
+Orton lisää, että 1–2 tunnin haudutus ”voi riittää taivuttamaan seuraavaksi korkeamman keilanumeron”.
 
 Haudutus ei siis ole koskaan ilmainen: jos haudutuksen lisää, odota keilojen taipuvan pidemmälle ja laske huippulämpötilaa vastaavasti.
 
@@ -198,11 +199,11 @@ Monissa katkaisimissa, myös Dawsonin LT-malleissa, on **aikarajoitin**: kello, 
 Table: Kuinka pitkäksi aikarajoitin asetetaan
 Label: Aikarajoittimen asetukset
 
-| Lähde     | Asetus                                                                                                             |
-| --------- | ------------------------------------------------------------------------------------------------------------------ |
-| Dawson    | ½ tuntia odotettua polttoaikaa pidemmäksi, kunnes uuni on tuttu, myöhemmin vain ¼ tuntia; ei koskaan yli 20 tuntia |
-| L&L       | Ensimmäisellä kerralla hyvin pitkäksi, ja polton kesto merkitään muistiin; sen jälkeen noin 1 tunti pidemmäksi     |
-| Bracker’s | 30 minuutista 1 tuntiin polttoaikaa pidemmäksi                                                                     |
+| Lähde     | Asetus                                                                                                                                     |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| Dawson    | ½ tuntia odotettua polttoaikaa pidemmäksi, kunnes uuni on tuttu, myöhemmin vain ¼ tuntia pidemmäksi; älä koskaan aseta sitä yli 20 tuntiin |
+| L&L       | Ensimmäisellä kerralla hyvin pitkäksi, ja polton kesto merkitään muistiin; sen jälkeen noin 1 tunti pidemmäksi                             |
+| Bracker’s | 30 minuutista 1 tuntiin polttoaikaa pidemmäksi                                                                                             |
 
 > [!NOTE]
 > Oma lähtökohtamme: ensimmäisellä kerralla reilusti (asteikon 20 tunnin rajoissa), sitten ½–1 tuntia kirjattua polttoaikaa pidemmäksi. Aikarajoitin kertoo myös, kauanko poltto kesti: jos se asetettiin lukemaan 7 ja se pysähtyi lukemaan 1, poltto kesti 6 tuntia.
@@ -375,7 +376,7 @@ Ortonin itsestään seisovia keiloja myydään Japanissa nimellä 立つゼー�
 
 ### Miksi alku poltetaan hitaasti
 
-Kun vesi muuttuu höyryksi, se ”laajenee 1170-kertaiseksi”, Bracker’s huomauttaa, joten kosteat esineet on kuivattava hitaasti. L&L ja Orton neuvovat, että ”lämpötilan 1500°F (815°C) alapuolella pitäisi olla erityisen huolellinen, jotta massa lämpenee tasaisesti”, ja että hiili on poltettava pois ennen kuin lämpötila on noin {{1200 °F; 650 °C}}. Lämpötilan {{1500 °F; 816 °C}} yläpuolella uuni voi nousta nopeammin.
+Vesi laajenee yli tuhatkertaiseksi muuttuessaan höyryksi, joten kosteat esineet on kuivattava hitaasti. L&L ja Orton neuvovat, että ”lämpötilan 1500°F (815°C) alapuolella pitäisi olla erityisen huolellinen, jotta massa lämpenee tasaisesti”, ja että hiili on poltettava pois ennen kuin lämpötila on noin {{1200 °F; 650 °C}}. Lämpötilan {{1500 °F; 816 °C}} yläpuolella uuni voi nousta nopeammin.
 
 Table: Mitä raakapoltossa tapahtuu lämpötilan noustessa
 Label: Mitä raakapoltossa tapahtuu
@@ -599,18 +600,18 @@ Jos katkaisin laukeaa ennen kuin uunilevyn keilat ovat taipuneet, käytä katkai
 
 ### Tuuletus
 
-Polton alussa savesta ja lasitteesta{{en: glaze}} vapautuu vesihöyryä ja savukaasuja, myös häkää (hiilimonoksidia), ja lasitteista voi vapautua myrkyllisiä savukaasuja myöhemminkin poltossa. L&L pitää niiden poistamista ”välttämättömänä”. Jos uunissa ei ole imujärjestelmää, tämä tarkoittaa, että alkuvaiheissa kansi on raollaan ja tirkistysaukot auki, kuten edellä esitetyissä menettelyissä; lämmityksen hidastaminen tänä aikana auttaa myös hiiltä palamaan pois. Kun uunissa on **uunin pohjasta imevä savukaasuimuri** (uuniin asennettu moottoroitu imuri), Ortonin mukaan kansi ja tirkistysaukot pysyvät kiinni koko polton ajan, paitsi keiloja tarkistettaessa. Auki oleva ylin tirkistysaukko suojaa myös Kiln-Sitter-katkaisimen{{en: kiln sitter}} putkea ja uunin metalliosia.
+Polton alussa savesta ja lasitteesta{{en: glaze}} vapautuu vesihöyryä ja savukaasuja, myös häkää (hiilimonoksidia), ja lasitteista voi vapautua myrkyllisiä savukaasuja myöhemminkin poltossa. L&L pitää niiden poistamista ”välttämättömänä”. Jos uunissa ei ole imujärjestelmää, tämä tarkoittaa, että alkuvaiheissa kansi on raollaan ja tirkistysaukot auki, kuten edellä esitetyissä menettelyissä; lämmityksen hidastaminen tänä aikana auttaa myös hiiltä palamaan pois. Jos uunissa ei ole savukaasuimuria, myös Kiln-Sitter-katkaisimen{{en: kiln sitter}} valmistaja Dawson sanoo, että ylin tirkistysaukko jätetään auki koko polton ajaksi: tuuletus ”vähentää uunin metalliosien rappeutumista ja pidentää putkikokoonpanon käyttöikää”. **Uunin pohjasta imevä savukaasuimuri** (uuniin asennettu moottoroitu imuri) muuttaa tämän. Se hoitaa tuuletuksen, joten Ortonin mukaan kansi ja tirkistysaukot pysyvät kiinni koko polton ajan, paitsi keiloja tarkistettaessa, ja L&L sanoo, että imuri jätetään päälle ja tirkistysaukot tukitaan.
 
 Huoneen tuuletuksesta ja häkävaroittimista kerrotaan oppaissa [Turvallinen sekoittaminen ja ilmanvaihto](/guides/safe-mixing) ja [Älä myrkytä perhettäsi](/guides/home-safety).
 
 ### Uunin ollessa päällä
 
 - Katso tirkistysaukosta vain IR-suojatuilla hitsauslaseilla, tummuusaste 3; aurinkolasit eivät riitä. Skutt neuvoo kiertämään tulpat paikoilleen, jotta ne eivät putoa.
-- Älä jätä uunia valvomatta odotetun polttoajan jälkeen; katkaisin ei ole vikaturvallinen varmistus.
+- Älä jätä uunia valvomatta odotetun polttoajan jälkeen; Kiln-Sitter ei ole vikaturvallinen varmistus.
 - Älä koskaan käytä uunia palavan materiaalin, kuten puulattian tai maton, päällä tai lähellä.
 - Noudata käyttöohjeen suojaetäisyyksiä. Julkaistut luvut vaihtelevat 12 tuumasta (30 cm) 3 jalkaan (91 cm); jos käyttöohje ei kerro, turvallisin valinta on 18 tuumaa (46 cm) seinistä ja 3 jalkaa (91 cm) kaikesta palavasta.
-- Pidä katkaisimen painon ympäristö vapaana, jotta paino pääsee putoamaan.
-- Kun poltto päättyy, käännä kytkimet pois päältä ja käännä myös uunin automaattisulake pois päältä.
+- Pidä Kiln-Sitterin painon ympäristö vapaana, jotta paino pääsee putoamaan.
+- Kun poltto päättyy, käännä kytkimet pois päältä ja käännä myös uunin ryhmän automaattisulake pois päältä rakennuksen sähkökeskuksesta.
 
 ## Jäähdytys ja uunin purkaminen {#cooling}
 

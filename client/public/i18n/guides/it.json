@@ -56,7 +56,8 @@
     "vet": "Chiamare il proprio veterinario.",
     "checkedOn": "Verificati su:",
     "choosePrompt": "Scegliere il paese per vedere chi chiamare.",
-    "ministry": "La pagina del ministero della salute: <link>{name}</link>."
+    "ministry": "La pagina del ministero della salute: <link>{name}</link>.",
+    "reported": "Le pagine ufficiali del governo elencano 113, 114 e 115, ma non a che cosa serve ciascun numero; i ruoli mostrati seguono la circolare 22/2014/TT-BTTTT, come la citano pagine secondarie."
   },
   "density": {
     "sg": "peso specifico {value}",
@@ -91,6 +92,7 @@
     "caption": "Limite sul lavoro per la silice cristallina respirabile, come media su 8 ore: {region} (dati verificati in data {date})",
     "captionControl": "Il riferimento per la silice cristallina respirabile nell’aria di un’area di lavoro: {region} (dati verificati in data {date})",
     "both": "Quarzo e cristobalite",
+    "freeSilica": "Silice libera",
     "quartz": "Quarzo",
     "cristobalite": "Cristobalite",
     "actionLevel": "Livello d’azione",
@@ -102,6 +104,9 @@
     "quartzAll": "Quarzo, per una polvere composta solo di quarzo",
     "cristobaliteAll": "Cristobalite, per una polvere composta solo di cristobalite",
     "allFree": "Concentrazione di controllo per una polvere composta solo di silice libera",
+    "bandFromTo": "Polvere con dal {from}% al {to}% di silice libera (SiO₂)",
+    "bandOverTo": "Polvere con più del {from}% e fino al {to}% di silice libera",
+    "bandAbove": "Polvere con più del {from}% di silice libera",
     "recommended": "Raccomandato da {abbr}",
     "value": "{value} mg/m³",
     "kind": {
@@ -111,6 +116,7 @@
       "control": "Una concentrazione di controllo (管理濃度): il riferimento per valutare l’aria di un’area di lavoro in base alle misurazioni fatte lì, non un limite a ciò che respira una singola persona."
     },
     "setBy": "Fissato da: <link>{law}</link>.",
+    "from": "Si applica dal {date}.",
     "lowerThanEu": "Inferiore al limite vincolante dell’UE di {value} mg/m³.",
     "sameAsEu": "Uguale al limite vincolante dell’UE.",
     "recommendedBy": "{abbr} ({by}) raccomanda questo valore nel documento <link>{title}</link>. Non è un obbligo di legge.",
@@ -147,16 +153,45 @@
       "jpSmall": "Altri oggetti di capacità inferiore a 1,1 L, non da cottura",
       "jpLarge": "Altri oggetti da 1,1 L a meno di 3 L, non da cottura",
       "jpStorage": "Altri oggetti di 3 L o più, non da cottura",
-      "jpCooking": "Recipienti da cottura, con profondità di 2,5 cm o più"
+      "jpCooking": "Recipienti da cottura, con profondità di 2,5 cm o più",
+      "krFlat": "Oggetti non riempibili, o profondi meno di 2,5 cm",
+      "krSmall": "Altri oggetti riempibili, sotto 1,1 L",
+      "krMedium": "Altri oggetti riempibili, da 1,1 L a meno di 3 L",
+      "krStorage": "Altri oggetti riempibili, da 3 L in su",
+      "krCooking": "Recipienti da cottura, per scaldare i cibi",
+      "twFlat": "Oggetti non riempibili, o profondi al massimo 2,5 cm",
+      "twSmall": "Oggetti profondi più di 2,5 cm, fino a 1,1 L",
+      "twLarge": "Oggetti profondi più di 2,5 cm, oltre 1,1 L",
+      "myFlat": "Oggetti piani",
+      "mySmall": "Oggetti cavi piccoli",
+      "myLarge": "Oggetti cavi grandi",
+      "myCooking": "Recipienti da cottura",
+      "idFlat": "Oggetti con profondità interna non superiore a 25 mm",
+      "idSmall": "Oggetti con profondità interna superiore a 25 mm, sotto 1100 mL",
+      "idLarge": "Oggetti con profondità interna superiore a 25 mm, da 1100 mL in su",
+      "thFlat": "Oggetti con profondità non superiore a 25 mm",
+      "thSmall": "Oggetti con profondità superiore a 25 mm, sotto 1,1 L",
+      "thLarge": "Oggetti con profondità superiore a 25 mm, da 1,1 L in su",
+      "thInfant": "Contenitori per l’alimentazione dei neonati fino a 12 mesi",
+      "thCooking": "Recipienti da cottura, fatti per resistere al calore della cottura",
+      "vnFlat": "Oggetti poco profondi, per contenere o cuocere alimenti",
+      "vnSmall": "Oggetti profondi per contenere alimenti, sotto i 1100 mL",
+      "vnMedium": "Oggetti profondi per contenere alimenti, da 1100 mL a meno di 3000 mL",
+      "vnStorage": "Oggetti profondi per contenere alimenti, 3000 mL o più",
+      "vnCooking": "Oggetti profondi per cucinare",
+      "vnCups": "Tazze e ciotole piccole"
     },
     "judged": {
       "average": "media di 6 pezzi",
-      "each": "ciascuno dei 6 pezzi"
+      "each": "ciascuno dei 6 pezzi",
+      "averageOf": "media di {count} pezzi",
+      "eachOf": "ciascuno dei {count} pezzi"
     },
     "euRules": "Qui valgono le norme dell’UE.",
     "law": "Limiti fissati da: <link>{law}</link>.",
     "inForce": "In vigore dal {date}.",
     "atMost": "Un oggetto supera la prova se non cede più del limite: la legge dice «al massimo».",
+    "ppm": "Qui ppm indica milligrammi per litro della soluzione di prova (mg/L).",
     "unknown": "Non abbiamo ancora confermato le norme in questo paese ({region}).",
     "choosePrompt": "Scegliere il paese per vederne le norme."
   },

@@ -1,6 +1,7 @@
 import type { Request, Response } from 'express';
 import { type Options, rateLimit } from 'express-rate-limit';
 import { type MessageCode, say } from './messages.ts';
+import { accessTokenIn, checkAccessToken } from './token_auth.ts';
 
 // Limits per client address, unless they say otherwise. In production nginx
 // passes the address in X-Forwarded-For, which server/app.ts trusts for exactly
@@ -16,10 +17,10 @@ import { type MessageCode, say } from './messages.ts';
 // again (deploy/README.md).
 const limiter = (
   minutes: number,
-  limit: number,
+  limit: number | ((req: Request) => number),
   code: MessageCode,
   more: Partial<Pick<Options, 'keyGenerator' | 'skipSuccessfulRequests' | 'requestWasSuccessful' | 'handler'>> & {
-    skip?: (req: Request, res: Response) => boolean;
+    skip?: (req: Request, res: Response) => boolean | Promise<boolean>;
   } = {}
 ) => {
   const { skip, ...rest } = more;
@@ -30,7 +31,7 @@ const limiter = (
     legacyHeaders: false,
     message: say(code),
     ...rest,
-    skip: (req, res) => process.env.RATE_LIMITS === 'off' || Boolean(skip?.(req, res))
+    skip: (req, res) => process.env.RATE_LIMITS === 'off' || (skip ? skip(req, res) : false)
   });
 };
 
@@ -62,6 +63,13 @@ export const passkeySignIn = limiter(15, 20, 'too-many-sign-ins', { skipSuccessf
  */
 export const passkeyOptions = limiter(15, 100, 'too-many-sign-ins');
 export const signUp = limiter(60, 10, 'too-many-sign-ups');
+/**
+ * Provider sign-in (server/routes/oauth_routes.ts): starting one, the
+ * provider's callback, and the page finishing it. Each start writes a short
+ * record and each callback calls the provider, so they are bounded; loose,
+ * for the many people behind one address.
+ */
+export const oauth = limiter(15, 100, 'too-many-sign-ins');
 export const guest = limiter(60, 10, 'too-many-trials');
 export const forgotPassword = limiter(15, 5, 'too-many-resets');
 export const resetPassword = limiter(15, 10, 'too-many-attempts');
@@ -82,6 +90,71 @@ export const changePassword = limiter(15, 10, 'too-many-attempts', { skipSuccess
  */
 export const passwordCheck = limiter(15, 10, 'too-many-attempts', {
   keyGenerator: (req) => 'user:' + String(req.user?._id)
+});
+
+/**
+ * Access tokens (server/lib/token_auth.ts) that do not work, per address:
+ * only requests that carry one are counted, and only those refused with 401.
+ * A token that works is checked first and never counted or held up, so
+ * someone sending bad tokens from a shared address (a VPN exit, a school)
+ * cannot stop the scripts of others there. Guessing tokens (a 2^256 search;
+ * the checksum turns away made-up ones before the database is asked) stops
+ * quickly: once over, every token that does not work gets 429.
+ */
+export const accessTokens = limiter(15, 30, 'too-many-tokens', {
+  skip: async (req) => {
+    const token = accessTokenIn(req);
+    return !token || (await checkAccessToken(req, token)) !== null;
+  },
+  requestWasSuccessful: (_req, res) => res.statusCode !== 401,
+  skipSuccessfulRequests: true
+});
+
+/**
+ * Records moved to the Trash with an access token (DELETE /api/<kind>/delete/:id),
+ * per token: plenty for a script tidying up, too few for one gone wrong to
+ * clear out an account before anyone notices. The web session is not counted.
+ * After requireScope, which says which token it is.
+ */
+export const tokenDeletes = limiter(60, 100, 'too-many-deletes', {
+  skip: (req) => !req.access || req.access.via === 'session',
+  keyGenerator: (req) => 'token-deletes:' + (req.access && 'tokenId' in req.access ? req.access.tokenId : '')
+});
+
+/**
+ * Every request made with an access token (server/lib/require_scope.ts: the
+ * record, Trash and firing-link routes), per account, whichever of its tokens
+ * is used: the same figures as the MCP endpoint's with a token (MCP_LIMITS),
+ * 120 a minute and 5,000 a day. Each change keeps a version and writes the
+ * activity log, so a script gone wrong is stopped before it does much. The
+ * web session is not counted. tokenDeletes still bounds deletes on top.
+ */
+const tokenKey = (req: Request): string => 'token:' + String(req.user?._id);
+const viaToken = (req: Request): boolean => Boolean(req.access) && req.access?.via !== 'session';
+export const tokenMinute = limiter(1, () => MCP_LIMITS.minute.account, 'too-many-attempts', {
+  skip: (req) => !viaToken(req),
+  keyGenerator: tokenKey
+});
+export const tokenDay = limiter(24 * 60, () => MCP_LIMITS.day.account, 'too-many-attempts', {
+  skip: (req) => !viaToken(req),
+  keyGenerator: (req) => tokenKey(req) + ':day'
+});
+
+/**
+ * Recipes opened by share link (GET /api/shared/recipe), per address: loose,
+ * for a class opening one teacher's links behind a school's one address, but
+ * not without end, since anyone may ask.
+ */
+export const sharedViews = limiter(15, 300, 'too-many-shared-views');
+
+/**
+ * Share links that open nothing, per address: a secret is 256 bits, so this
+ * only stops someone wasting the server's time; a class with a mistyped link
+ * has room to spare.
+ */
+export const sharedMisses = limiter(15, 50, 'too-many-shared-views', {
+  requestWasSuccessful: (_req, res) => res.statusCode !== 404,
+  skipSuccessfulRequests: true
 });
 
 // Two-step sign-in (docs/mfa-plan.md, item 9). The guard on guessing codes
@@ -136,3 +209,28 @@ export const mfaSetupAccount = limiter(15, 10, 'too-many-codes', {
 export const mfaChallenges = limiter(15, 30, 'too-many-attempts', {
   keyGenerator: (req) => 'mfa-challenge:' + String(req.user?._id)
 });
+
+/**
+ * The MCP endpoint (server/mcp/index.ts; docs/integrations-plan.md, items 23
+ * and 31): requests a minute and a day. Without a token, per address: 60 a
+ * minute and 2,000 a day, which an assistant working through a recipe stays
+ * well under. With a working token, per account (whichever of its tokens is
+ * used), and a little more. The tools that fit amounts have a limit of their
+ * own on top (server/mcp/common.ts countFit). After the token check, which
+ * says who is calling (req.mcpCaller).
+ */
+const mcpKey = (req: Request): string => 'mcp:' + (req.mcpCaller?.key ?? 'unknown');
+const withToken = (req: Request): boolean => Boolean(req.mcpCaller?.userId);
+export const MCP_LIMITS = { minute: { anyone: 60, account: 120 }, day: { anyone: 2000, account: 5000 } } as const;
+export const mcpMinute = limiter(
+  1,
+  (req) => (withToken(req) ? MCP_LIMITS.minute.account : MCP_LIMITS.minute.anyone),
+  'too-many-mcp',
+  { keyGenerator: mcpKey }
+);
+export const mcpDay = limiter(
+  24 * 60,
+  (req) => (withToken(req) ? MCP_LIMITS.day.account : MCP_LIMITS.day.anyone),
+  'too-many-mcp',
+  { keyGenerator: (req) => mcpKey(req) + ':day' }
+);

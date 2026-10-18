@@ -81,6 +81,7 @@
     "createAccount": "Luo tili",
     "title": "Oma tili",
     "signedInAs": "Kirjautuneena: {email}.",
+    "contents": "Tällä sivulla",
     "changeHeading": "Salasanan vaihtaminen",
     "current": "Nykyinen salasana",
     "currentMissing": "Anna nykyinen salasana.",
@@ -106,7 +107,7 @@
     "emailSend": "Lähetä linkki",
     "emailFailed": "Virhe: linkin lähettäminen ei onnistunut. Yritä uudelleen.",
     "signOutHeading": "Uloskirjautuminen kaikilta laitteilta",
-    "signOutText": "Kirjaa ulos kaikilla laitteilla, myös tällä. Käytä tätä, jos laite on kadonnut tai on syytä epäillä, että kirjautumistiedot ovat jonkun muun käsissä.",
+    "signOutText": "Kirjaa ulos kaikilta laitteilta, myös tältä, ja lopettaa käyttöoikeustunnusten ja jakolinkkien toiminnan. Käytä tätä, jos laite on kadonnut tai joku muu saattaa tietää kirjautumistiedot.",
     "signOutButton": "Kirjaudu ulos kaikkialta",
     "signOutFailed": "Virhe: uloskirjautuminen ei onnistunut. Yritä uudelleen.",
     "confirmStep": "Kaksivaiheinen kirjautuminen on käytössä, joten vahvista henkilöllisyytesi: salasana ja toinen vaihe."
@@ -118,6 +119,8 @@
     "on": "Kaksivaiheinen kirjautuminen on käytössä.",
     "onText": "Kirjaudut sisään salasanalla ja toisella vaiheella tai pelkällä pääsyavaimella.",
     "off": "Kaksivaiheinen kirjautuminen ei ole käytössä.",
+    "badgeOn": "Käytössä",
+    "badgeOff": "Pois käytöstä",
     "offText": "Ota se käyttöön määrittämällä todennussovellus tai lisäämällä pääsyavain.",
     "confirmEmailFirst": "Vahvista ensin sähköpostiosoite yllä. Sen avulla ilmoitamme kirjautumistavan muutoksista ja autamme, jos toinen vaihe katoaa.",
     "appHeading": "Todennussovellus",
@@ -141,6 +144,7 @@
     "nameCheck": "Anna pääsyavaimelle nimi, jossa on 1–{most} merkkiä.",
     "passkeyLimit": "Pääsyavaimia on {most}, mikä on tilin enimmäismäärä. Poista yksi, niin voit lisätä toisen.",
     "codesTitle": "Varmuuskoodit",
+    "codesLeft": "{count, plural, one {# / {total} varmuuskoodista jäljellä.} other {# / {total} varmuuskoodista jäljellä.}} Jos sovellusta tai pääsyavainta ei voi käyttää, kirjautuminen onnistuu sen sijaan koodilla. Jokainen koodi toimii vain kerran.",
     "codesLow": "Luo uudet koodit pian. Jos ne loppuvat ja sovellus ja pääsyavaimet menetetään, kirjautuminen ei onnistu.",
     "newCodes": "Luo uudet varmuuskoodit",
     "offHeading": "Käytöstä poistaminen",
@@ -149,6 +153,8 @@
     "offCodes": "Varmuuskoodit lakkaavat toimimasta.",
     "offSignOut": "Kaikki muut tilille kirjautuneet laitteet kirjataan ulos. Tämä laite pysyy kirjautuneena.",
     "offEmail": "Lähetämme sähköpostin siitä, että se poistettiin käytöstä.",
+    "offRemoveApp": "Poista kaksivaiheinen kirjautuminen käytöstä (poistaa sovelluksen)",
+    "offRemoveAppFirst": "Poista sovellus käytöstä poistamisen aloittamiseksi",
     "offPasskeys": "{count, plural, one {Poistaaksesi sen käytöstä poista pääsyavain kohdassa Pääsyavaimet yllä.} other {Poistaaksesi sen käytöstä poista kaikki # pääsyavainta kohdassa Pääsyavaimet yllä.}}",
     "offPasskeysToo": "{count, plural, one {Tilillä on myös pääsyavain: poista se kohdassa Pääsyavaimet yllä sovelluksen lisäksi.} other {Tilillä on myös # pääsyavainta: poista ne kohdassa Pääsyavaimet yllä sovelluksen lisäksi.}}",
     "addAppText": "Todennussovelluksen määrittämiseksi vahvista ensin henkilöllisyytesi.",
@@ -201,6 +207,25 @@
     "recipes": "Reseptit (CSV)",
     "materials": "Raaka-aineet (CSV)"
   },
+  "trash": {
+    "heading": "Roskakori",
+    "text": "Muistikirjastasi poistettu odottaa roskakorissa 30 päivää. Palauta se sieltä tai poista se lopullisesti.",
+    "open": "Avaa roskakori"
+  },
+  "shared": {
+    "heading": "Jaetut reseptit",
+    "text": "Linkillä jaetut reseptit, jotka kuka tahansa linkin haltija voi lukea ilman tiliä. Linkki näytetään vain kerran, kun se tehdään, joten sitä ei voi näyttää tässä. Jos resepti halutaan jakaa uudelleen, tee uusi linkki reseptin kohdassa ”Lisää”.",
+    "since": "Jaettu {date} alkaen",
+    "notesShown": "Muistiinpanot näkyvissä",
+    "notesHidden": "Muistiinpanot piilotettu",
+    "untitled": "Nimetön resepti",
+    "stop": "Lopeta jakaminen",
+    "stopName": "Lopeta kohteen {name} jakaminen",
+    "stopped": "Kohdetta {name} ei enää jaeta. Sen linkki ei enää toimi.",
+    "stopFailed": "Se ei onnistunut. Yritä uudelleen.",
+    "fetchFailed": "Jaettuja reseptejä ei voitu ladata. Yritä uudelleen.",
+    "none": "Mitään reseptiä ei jaeta."
+  },
   "settings": {
     "heading": "Asetukset",
     "intro": "Tallennetaan tilille, joten ne ovat voimassa kaikilla laitteilla.",
@@ -227,6 +252,22 @@
       },
       "saved": "Tallennettu: luvut ja päivämäärät kirjoitetaan kielen {language} tapaan.",
       "help": "Miten luvut ja päivämäärät kirjoitetaan: 12,345.6 tai 12.345,6, sekä päivän ja kuukauden järjestys."
+    },
+    "calendar": {
+      "legend": "Kalenteri",
+      "help": "Kalenteri, jonka mukaan päivämäärät näytetään. Itse kirjoitetut päivämäärät pysyvät gregoriaanisessa kalenterissa.",
+      "gregory": {
+        "label": "Gregoriaaninen",
+        "saved": "Tallennettu: päivämäärät näytetään gregoriaanisen kalenterin mukaan."
+      },
+      "buddhist": {
+        "label": "Thaimaalainen buddhalainen ajanlasku",
+        "saved": "Tallennettu: päivämäärät näytetään thaimaalaisen buddhalaisen ajanlaskun mukaan."
+      },
+      "japanese": {
+        "label": "Japanilainen aikakausi",
+        "saved": "Tallennettu: päivämäärät näytetään japanilaisten aikakausien mukaan."
+      }
     },
     "decimalMark": {
       "legend": "Määrien kirjoittaminen",
@@ -265,7 +306,7 @@
         "saved": "Tallennettu: poltto Orton-keiloina."
       },
       "sk": {
-        "label": "SK-keiloina (JIS R 8101)",
+        "label": "SK-keiloina, JIS R 8101",
         "example": "SK 4a, SK 8",
         "saved": "Tallennettu: poltto SK-keiloina."
       },
@@ -291,6 +332,12 @@
         "saved": "Tallennettu: lasitteen tiheys pinttipainona."
       },
       "help": "Miten oppaat ilmaisevat lasitteen paksuuden. Kunnes valinta tehdään, tämä määräytyy alueen mukaan: Italiassa ja Japanissa Baumé-asteina, muualla ominaispainona."
+    },
+    "currency": {
+      "legend": "Hintojen valuutta",
+      "help": "Raaka-aineille annetut hinnat ja erän kustannus ovat tässä valuutassa. Valuutan vaihtaminen ei muunna jo annettuja hintoja. Kunnes valinta tehdään, valuutta noudattaa aluetta.",
+      "saved": "Tallennettu: hinnat valuutassa {currency}.",
+      "notConverted": "Tallennettuja hintoja ei muunnettu: ne ovat yhä samoja lukuja kuin annetut."
     },
     "theme": {
       "legend": "Vaalea tai tumma",
@@ -386,5 +433,72 @@
     "account": "Oma tili",
     "signIn": "Kirjaudu sisään",
     "failed": "Virhe: osoitteen vahvistaminen ei onnistunut. Yritä uudelleen."
+  },
+  "providers": {
+    "continueGoogle": "Jatka Googlella",
+    "continueGithub": "Jatka GitHubilla",
+    "failed": "Kirjautuminen ei onnistunut. Yritä uudelleen.",
+    "heading": "Google ja GitHub",
+    "intro": "Liitä Google- tai GitHub-tili, jotta sillä voi kirjautua sisään. Glazecalc säilyttää tilistä vain tilin tunnisteen, ei koskaan nimeä, kuvaa tai mitään muuta, ja kaksivaiheinen kirjautuminen vaatii silti toisen vaiheen.",
+    "passwordless": "Tilillä ei ole salasanaa. Sähköpostiosoitteen, kaksivaiheisen kirjautumisen tai kirjautumistapojen muuttamiseksi tai tilin poistamiseksi henkilöllisyys vahvistetaan kirjautumalla uudelleen Googlella tai GitHubilla. Salasanan voi myös asettaa.",
+    "setPassword": "Lähetä linkki salasanan asettamiseen sähköpostitse",
+    "setPasswordUnlinks": "Salasanan asettaminen sähköpostitse lähetetyllä linkillä irrottaa myös Googlen ja GitHubin. Ne voi liittää uudelleen sen jälkeen.",
+    "setPasswordFailed": "Linkin lähettäminen ei onnistunut. Yritä uudelleen.",
+    "confirmFirst": "Googlen tai GitHubin liittämiseksi vahvista ensin sähköpostiosoite lähetetyllä linkillä.",
+    "linkedOn": "Liitetty {date}",
+    "notLinked": "Ei liitetty",
+    "link": "Liitä {provider}",
+    "unlink": "Irrota {provider}",
+    "linkFailed": "Liittäminen ei onnistunut. Yritä uudelleen.",
+    "reauthIntro": "Tilillä ei ole salasanaa, joten vahvista henkilöllisyys kirjautumalla uudelleen. Tee sen jälkeen muutos 5 minuutin kuluessa.",
+    "reauthButton": "Kirjaudu uudelleen: {provider}",
+    "reauthHeld": "Uudelleenkirjautuminen onnistui: {provider}. Yhden muutoksen voi tehdä ilman salasanaa seuraavien 5 minuutin aikana.",
+    "reauthFirst": "Kirjaudu ensin uudelleen jollakin yllä olevista painikkeista.",
+    "reauthFailed": "Uudelleenkirjautumisen aloittaminen ei onnistunut. Yritä uudelleen."
+  },
+  "tokens": {
+    "heading": "Käyttöoikeustunnukset",
+    "intro": "Käyttöoikeustunnuksen avulla oma tekoälyavustaja tai skripti voi lukea tilin reseptit, raaka-aineet, muistiinpanot ja polttopäiväkirjat. Toistaiseksi tunnus voi vain lukea: se ei koskaan muuta tai poista mitään. Jokainen tunnus lakkaa toimimasta valittuna päivänä tai heti, kun se peruutetaan.",
+    "howTo": "Tekoälyavustajan yhdistäminen",
+    "listLabel": "Käyttöoikeustunnukset",
+    "none": "Käyttöoikeustunnuksia ei ole.",
+    "hint": "päättyy {hint}",
+    "readOnly": "Vain luku",
+    "created": "tehty {date}",
+    "lastUsed": "viimeksi käytetty {date}",
+    "neverUsed": "ei koskaan käytetty",
+    "expires": "vanhenee {date}",
+    "expiredOn": "vanheni {date}",
+    "revokedOn": "peruutettu {date}",
+    "revoke": "Peruuta",
+    "revokeNamed": "Peruuta {name}",
+    "revokeAll": "Peruuta kaikki käyttöoikeustunnukset",
+    "revokeFailed": "Virhe: tunnuksen peruuttaminen ei onnistunut. Yritä uudelleen.",
+    "loadFailed": "Käyttöoikeustunnuksia ei voitu ladata. Lataa sivu uudelleen ja yritä sitten.",
+    "createHeading": "Tunnuksen tekeminen",
+    "name": "Nimi",
+    "nameHint": "Jokin nimi, jonka avulla tunnuksen tunnistaa, esimerkiksi avustaja tai tietokone, jolle se on tarkoitettu.",
+    "nameCheck": "Anna tunnukselle nimi, jossa on 1–{most} merkkiä.",
+    "expiry": "Lakkaa toimimasta ajan kuluttua",
+    "days": "{count, plural, one {# päivä} other {# päivää}}",
+    "expiryHint": "Sähköposti lähetetään 7 päivää ennen kuin tunnus lakkaa toimimasta.",
+    "confirmEmailFirst": "Ennen tunnuksen tekemistä vahvista sähköpostiosoite: avaa osoitteeseen {email} lähetetty linkki. Ilmoitamme tähän osoitteeseen, kun tunnus tehdään ja ennen kuin tunnus lakkaa toimimasta.",
+    "resend": "Lähetä vahvistuslinkki uudelleen",
+    "scopeNote": "Tunnus voi lukea tilin tietoja mutta ei muuttaa niitä.",
+    "confirmStep": "Vahvista henkilöllisyys, jotta tunnuksen voi tehdä.",
+    "create": "Tee tunnus",
+    "failed": "Virhe: tunnuksen tekeminen ei onnistunut. Yritä uudelleen.",
+    "limit": "Toimivia käyttöoikeustunnuksia on {most}, mikä on tilin enimmäismäärä. Peruuta yksi ennen uuden tekemistä.",
+    "newHeading": "Kopioi uusi tunnus nyt",
+    "newText": "Tämä on ainoa kerta, kun se näytetään. Jokainen, jolla se on, voi lukea tilin tietoja, kunnes tunnus lakkaa toimimasta, joten säilytä sitä kuten salasanaa äläkä anna sitä muille kuin omalle avustajalle tai skriptille.",
+    "newLabel": "Uusi käyttöoikeustunnus",
+    "copy": "Kopioi tunnus",
+    "copied": "Kopioitu.",
+    "copyFailed": "Kopiointi ei onnistunut. Valitse tunnus ja kopioi se itse.",
+    "done": "Olen kopioinut sen",
+    "keptHeading": "Käyttöoikeustunnukset toimivat yhä",
+    "keptText": "{count, plural, one {Salasanan vaihtaminen ei pysäyttänyt käyttöoikeustunnusta. Jos salasana vaihdettiin, koska joku muu saattaa tietää sen, peruuta myös tunnus.} other {Salasanan vaihtaminen ei pysäyttänyt # käyttöoikeustunnusta. Jos salasana vaihdettiin, koska joku muu saattaa tietää sen, peruuta myös tunnukset.}}",
+    "keep": "Säilytä ne",
+    "signOutNote": "{count, plural, one {Se pysäyttää myös käyttöoikeustunnuksen lopullisesti.} other {Se pysäyttää myös # käyttöoikeustunnusta lopullisesti.}}"
   }
 }

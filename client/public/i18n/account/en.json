@@ -107,7 +107,7 @@
     "emailSend": "Send the link",
     "emailFailed": "Error: could not send the link. Please try again.",
     "signOutHeading": "Sign out everywhere",
-    "signOutText": "Signs you out on every device, this one included. Use it if you lost a device or think someone else has your sign-in.",
+    "signOutText": "Signs you out on every device, this one included, and stops your access tokens and your share links. Use it if you lost a device or think someone else has your sign-in.",
     "signOutButton": "Sign out everywhere",
     "signOutFailed": "Error: could not sign out. Please try again.",
     "confirmStep": "Two-step sign-in is on, so confirm it is you: your password and a second step."
@@ -207,6 +207,25 @@
     "recipes": "Recipes (CSV)",
     "materials": "Materials (CSV)"
   },
+  "trash": {
+    "heading": "Trash",
+    "text": "What you remove from your notebook waits in the Trash for 30 days. Put it back from there, or delete it for good.",
+    "open": "Open the Trash"
+  },
+  "shared": {
+    "heading": "Shared recipes",
+    "text": "The recipes you share by link, which anyone holding the link can read without an account. A link is shown only once, when it is made, so it cannot be shown here. To share a recipe again, make a new link under the recipe's More.",
+    "since": "Shared since {date}",
+    "notesShown": "Notes shown",
+    "notesHidden": "Notes not shown",
+    "untitled": "Untitled recipe",
+    "stop": "Stop sharing",
+    "stopName": "Stop sharing {name}",
+    "stopped": "{name} is no longer shared. Its link no longer works.",
+    "stopFailed": "That did not work. Please try again.",
+    "fetchFailed": "Your shared recipes could not be loaded. Please try again.",
+    "none": "You are not sharing any recipe."
+  },
   "settings": {
     "heading": "Settings",
     "intro": "Saved with your account, so they hold on every device.",
@@ -233,6 +252,22 @@
       },
       "saved": "Saved: numbers and dates as in {language}.",
       "help": "How numbers and dates are written: 12,345.6 or 12.345,6, and the order of day and month."
+    },
+    "calendar": {
+      "legend": "Calendar",
+      "help": "The calendar dates are shown in. Dates you type stay in the Gregorian calendar.",
+      "gregory": {
+        "label": "Gregorian",
+        "saved": "Saved: dates are shown in the Gregorian calendar."
+      },
+      "buddhist": {
+        "label": "Thai Buddhist era",
+        "saved": "Saved: dates are shown in the Thai Buddhist era."
+      },
+      "japanese": {
+        "label": "Japanese era",
+        "saved": "Saved: dates are shown in Japanese eras."
+      }
     },
     "decimalMark": {
       "legend": "Typing amounts",
@@ -271,7 +306,7 @@
         "saved": "Saved: firing to Orton cones."
       },
       "sk": {
-        "label": "To SK cones (JIS R 8101)",
+        "label": "To SK cones, JIS R 8101",
         "example": "SK 4a, SK 8",
         "saved": "Saved: firing to SK cones."
       },
@@ -297,6 +332,12 @@
         "saved": "Saved: glaze density as pint weight."
       },
       "help": "How the guides give the thickness of a glaze. Until you choose, this follows your region: degrees Baumé in Italy and Japan, specific gravity elsewhere."
+    },
+    "currency": {
+      "legend": "Currency for prices",
+      "help": "The prices you give for materials, and what a batch costs, are in this currency. Changing it does not convert prices you have already given. Until you choose, this follows your region.",
+      "saved": "Saved: prices in {currency}.",
+      "notConverted": "Your stored prices were not converted: they are still the numbers you gave."
     },
     "theme": {
       "legend": "Light or dark",
@@ -392,5 +433,72 @@
     "account": "Your account",
     "signIn": "Sign in",
     "failed": "Error: could not confirm the address. Please try again."
+  },
+  "providers": {
+    "continueGoogle": "Continue with Google",
+    "continueGithub": "Continue with GitHub",
+    "failed": "Signing in did not work. Please try again.",
+    "heading": "Google and GitHub",
+    "intro": "Link a Google or GitHub account to sign in with it. Glazecalc keeps only the account's id from it, never its name, picture or anything else, and two-step sign-in still asks for its second step.",
+    "passwordless": "This account has no password. To change your email, two-step sign-in or the ways you sign in, or to delete your account, you confirm it is you by signing in again with Google or GitHub. You can also set a password.",
+    "setPassword": "Email me a link to set a password",
+    "setPasswordUnlinks": "Setting a password with the emailed link also unlinks Google and GitHub. You can link them again afterwards.",
+    "setPasswordFailed": "Could not send the link. Please try again.",
+    "confirmFirst": "Confirm your email first, with the link we sent you, to link Google or GitHub.",
+    "linkedOn": "Linked on {date}",
+    "notLinked": "Not linked",
+    "link": "Link {provider}",
+    "unlink": "Unlink {provider}",
+    "linkFailed": "Could not link it. Please try again.",
+    "reauthIntro": "This account has no password, so confirm it is you by signing in again. Then make the change within 5 minutes.",
+    "reauthButton": "Sign in again with {provider}",
+    "reauthHeld": "You signed in again with {provider}. You can make one change without a password in the next 5 minutes.",
+    "reauthFirst": "Please sign in again first, with one of the buttons above.",
+    "reauthFailed": "Could not start signing in again. Please try again."
+  },
+  "tokens": {
+    "heading": "Access tokens",
+    "intro": "An access token lets your own AI assistant or script read the recipes, materials, notes and firing logs in your account. For now a token can only read: it never changes or removes anything. Each token stops working on the day you choose, or as soon as you revoke it.",
+    "howTo": "How to connect an AI assistant",
+    "listLabel": "Your access tokens",
+    "none": "You have no access tokens.",
+    "hint": "ending {hint}",
+    "readOnly": "Read only",
+    "created": "made {date}",
+    "lastUsed": "last used {date}",
+    "neverUsed": "never used",
+    "expires": "expires {date}",
+    "expiredOn": "expired {date}",
+    "revokedOn": "revoked {date}",
+    "revoke": "Revoke",
+    "revokeNamed": "Revoke {name}",
+    "revokeAll": "Revoke all access tokens",
+    "revokeFailed": "Error: could not revoke the token. Please try again.",
+    "loadFailed": "Your access tokens could not be loaded. Please reload the page to try again.",
+    "createHeading": "Make a token",
+    "name": "Name",
+    "nameHint": "Something to tell it apart by, such as the assistant or computer it is for.",
+    "nameCheck": "Please give the token a name of 1 to {most} characters.",
+    "expiry": "Stops working after",
+    "days": "{count, plural, one {# day} other {# days}}",
+    "expiryHint": "We email you 7 days before a token stops working.",
+    "confirmEmailFirst": "Before you can make a token, confirm your email: open the link we sent to {email}. We tell you at that address when a token is made and before one stops working.",
+    "resend": "Send the confirmation link again",
+    "scopeNote": "The token can read your records but not change them.",
+    "confirmStep": "To make the token, confirm it is you.",
+    "create": "Make the token",
+    "failed": "Error: could not make the token. Please try again.",
+    "limit": "You have {most} access tokens working, the most an account can have. Revoke one to make another.",
+    "newHeading": "Copy your new token now",
+    "newText": "This is the only time it is shown. Anyone who has it can read your records until it stops working, so keep it like a password, and give it only to your own assistant or script.",
+    "newLabel": "Your new access token",
+    "copy": "Copy the token",
+    "copied": "Copied.",
+    "copyFailed": "Could not copy. Select the token and copy it yourself.",
+    "done": "I have copied it",
+    "keptHeading": "Your access tokens still work",
+    "keptText": "{count, plural, one {Changing your password did not stop your access token. If you changed it because someone else may know it, revoke the token too.} other {Changing your password did not stop your # access tokens. If you changed it because someone else may know it, revoke them too.}}",
+    "keep": "Keep them",
+    "signOutNote": "{count, plural, one {It also stops your access token, for good.} other {It also stops your # access tokens, for good.}}"
   }
 }

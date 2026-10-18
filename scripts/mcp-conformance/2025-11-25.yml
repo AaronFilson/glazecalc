@@ -1,0 +1,36 @@
+# The conformance suite's expected failures for the 2025-11-25 revision, the
+# initialize handshake older clients use (scripts/mcp-conformance.mjs). Every
+# entry needs something a real server has no reason to carry: the suite's own
+# test tools, prompts and resources, or an optional feature Glazecalc does not
+# offer. The suite fails the run if anything else fails, or if one of these
+# starts passing. Keep it that way: add an entry only with its reason.
+server:
+  # The suite's own test tools, prompts and resources.
+  - completion-complete # test_prompt_with_arguments
+  - tools-call-simple-text # test_simple_text
+  - tools-call-image # test_image_content
+  - tools-call-audio # test_audio_content
+  - tools-call-embedded-resource # test_embedded_resource
+  - tools-call-mixed-content # test_multiple_content_types
+  - tools-call-error # test_error_handling
+  - tools-call-with-progress # test_tool_with_progress
+  - tools-call-sampling # test_sampling
+  - tools-call-elicitation # test_elicitation
+  - elicitation-sep1034-defaults # test_elicitation_sep1034_defaults
+  - elicitation-sep1330-enums # test_elicitation_sep1330_enums
+  - resources-read-text # test://static-text
+  - resources-read-binary # test://static-binary
+  - resources-templates-read # test://template/{id}/data
+  - prompts-get-simple # test_simple_prompt
+  - prompts-get-with-args # test_prompt_with_arguments
+  - prompts-get-embedded-resource # test_prompt_with_embedded_resource
+  - prompts-get-with-image # test_prompt_with_image
+  - json-schema-2020-12 # json_schema_2020_12_tool (pending in the suite)
+  # Optional capabilities not offered: the server sends no log messages, and
+  # a stateless server keeps no subscriptions.
+  - logging-set-level
+  - tools-call-with-logging
+  - resources-subscribe
+  - resources-unsubscribe
+  # A warning, which a baseline counts as a failure: a stateless server gives no session id.
+  - server-sse-multiple-streams:server-sse-multiple-streams-session

@@ -1,22 +1,38 @@
-import { fixed, forTyping, formatPlain, upTo } from '../../shared/format';
+import { fixed, forTyping, formatDate, formatPlain, listOf, money, upTo } from '../../shared/format';
 import { DatePipe } from '../../shared/format-pipes';
 import { NumberInput } from '../../shared/number-input';
-import { Component, OnDestroy, OnInit, computed, inject, input, output, signal } from '@angular/core';
+import { Component, Injector, OnDestroy, OnInit, computed, inject, input, output, signal } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { TranslocoDirective, translate } from '@jsverse/transloco';
 import { marker } from '@jsverse/transloco-keys-manager/marker';
 import { MaterialInput, formatFormula } from '../../../../lib/chemistry';
+import { recipeCost } from '../../../../lib/recipe/cost';
 import { errorMessage } from '../../core/error-message';
 import { Recipe } from '../../core/models';
+import { LocaleService } from '../../core/locale.service';
 import { PreferencesService } from '../../core/preferences.service';
+import { PricesService } from '../../core/prices.service';
 import { firstOf } from '../../shared/options';
-import { GramPrecision, WeightUnit, formatWeight, fromGrams, toGrams, unitLabel } from '../../shared/weights';
+import {
+  GRAMS_PER_POUND,
+  GramPrecision,
+  WeightUnit,
+  formatWeight,
+  fromGrams,
+  toGrams,
+  unitLabel
+} from '../../shared/weights';
 import { BatchWeights, amountOf, batchWeights, formatAmount, isAmount, totalOf } from './rebase';
 import { additiveAmount, evaluate } from './recipe-analysis';
+import { HazardSource, RecipeHazards } from './recipe-hazards';
+import { libraryKey } from './recipe-library';
 import { UnityFormula, unityColumns } from './unity-formula';
+import { WorkedCalculation } from './worked-calculation';
+import { firingWords } from './firing-text';
 
-/** What to print: the whole recipe with its chemistry, or just what to weigh. */
-export type PrintMode = 'full' | 'batch';
+/** What to print: the whole recipe with its chemistry, just what to weigh, or the unity formula worked step by step. */
+export type PrintMode = 'full' | 'batch' | 'worked';
+const MODES: readonly PrintMode[] = ['full', 'batch', 'worked'];
 
 export interface PrintLine {
   name: string;
@@ -113,7 +129,8 @@ const DEFAULT_BATCH: BatchSize = { text: '1000', unit: 'g' };
 // The last choices, on this browser.
 function readMode(): PrintMode {
   try {
-    return localStorage.getItem(MODE_KEY) === 'batch' ? 'batch' : 'full';
+    const saved = localStorage.getItem(MODE_KEY) as PrintMode | null;
+    return saved && MODES.includes(saved) ? saved : 'full';
   } catch {
     return 'full';
   }
@@ -152,7 +169,7 @@ const UNITS: ReadonlyArray<{ value: WeightUnit; label: string }> = [
  */
 @Component({
   selector: 'gc-recipe-print',
-  imports: [DatePipe, NumberInput, TranslocoDirective, UnityFormula],
+  imports: [DatePipe, NumberInput, RecipeHazards, TranslocoDirective, UnityFormula, WorkedCalculation],
   template: `<ng-container *transloco="let t">
     <section class="print-controls no-print" aria-labelledby="print-heading">
       <h1 id="print-heading" tabindex="-1">{{ t('recipe.print.heading') }}</h1>
@@ -183,8 +200,21 @@ const UNITS: ReadonlyArray<{ value: WeightUnit; label: string }> = [
             />
             <label for="print-batch-list" class="form-check-label">{{ t('recipe.print.batchList') }}</label>
           </div>
+          <div class="form-check">
+            <input
+              id="print-worked"
+              class="form-check-input"
+              type="radio"
+              name="print-mode"
+              value="worked"
+              [checked]="mode() === 'worked'"
+              (change)="setMode('worked')"
+            />
+            <label for="print-worked" class="form-check-label">{{ t('recipe.print.worked') }}</label>
+          </div>
         </fieldset>
-        <div>
+        <!-- The worked calculation reads the amounts as grams; a batch size and its unit change nothing in it. -->
+        <div [hidden]="mode() === 'worked'">
           <label for="print-batch-size" class="form-label">{{ t('recipe.print.batchSize') }}</label>
           <div class="input-group print-batch-size">
             <input
@@ -208,7 +238,35 @@ const UNITS: ReadonlyArray<{ value: WeightUnit; label: string }> = [
             </p>
           }
         </div>
-        <fieldset>
+        <div class="form-check" [hidden]="mode() === 'worked'">
+          <input
+            id="print-show-cost"
+            class="form-check-input"
+            type="checkbox"
+            [checked]="showCost()"
+            (change)="setShowCost($any($event.target).checked)"
+          />
+          <label for="print-show-cost" class="form-check-label">{{ t('recipe.print.showCost') }}</label>
+          <div class="form-text">{{ t('recipe.print.showCostHelp') }}</div>
+          @if (showCost() && pricesProblem()) {
+            <p class="print-problem" role="alert">{{ pricesProblem() }}</p>
+          }
+        </div>
+        @if (mode() === 'batch') {
+          <div>
+            <label for="print-batch-number" class="form-label">{{ t('recipe.print.batchNumber') }}</label>
+            <input
+              id="print-batch-number"
+              class="form-control print-batch-number"
+              autocomplete="off"
+              aria-describedby="print-batch-number-help"
+              [value]="batchNumber()"
+              (input)="batchNumber.set($any($event.target).value)"
+            />
+            <div id="print-batch-number-help" class="form-text">{{ t('recipe.print.batchNumberHelp') }}</div>
+          </div>
+        }
+        <fieldset [hidden]="mode() === 'worked'">
           <legend class="form-label">{{ t('recipe.print.weighIn') }}</legend>
           @for (choice of units; track choice.value) {
             <div class="form-check">
@@ -244,12 +302,63 @@ const UNITS: ReadonlyArray<{ value: WeightUnit; label: string }> = [
         @if (recipe().date) {
           <p class="print-meta">{{ recipe().date | gcDate }}</p>
         }
-        @if (batchSummary(); as summary) {
+        @if (firing(); as fired) {
+          <p class="print-firing">
+            <span class="visually-hidden">{{ t('recipe.firing.heading') }}: </span>
+            @if (fired.tested) {
+              <strong>{{ fired.tested }}</strong>
+            }
+            @for (part of [fired.range, fired.atmospheres, fired.schedule]; track $index) {
+              @if (part) {
+                <span> · {{ part }}</span>
+              }
+            }
+            @if (fired.conversion) {
+              <br /><span class="print-firing-approx">{{ fired.conversion }}</span>
+            }
+          </p>
+        }
+        @if (recipe().foodSurface) {
+          <p class="print-liner">{{ t('recipe.firing.liner.note') }} {{ t('recipe.firing.liner.test') }}</p>
+        }
+        @if (mode() !== 'worked' && batchSummary(); as summary) {
           <p class="print-batch-summary">{{ summary }}</p>
+        }
+        @if (mode() !== 'worked' && costSummary(); as cost) {
+          <p class="print-cost">{{ cost }}</p>
+        }
+        @if (mode() === 'batch') {
+          <dl class="print-ticket">
+            <div>
+              <dt>{{ t('recipe.print.batchNumberShort') }}</dt>
+              <dd [class.print-blank]="!batchNumber().trim()">{{ batchNumber().trim() }}</dd>
+            </div>
+            <div>
+              <dt>{{ t('recipe.print.mixedOn') }}</dt>
+              <dd>{{ today() }}</dd>
+            </div>
+            @if (sgTarget(); as target) {
+              <div>
+                <dt>{{ t('recipe.print.sgTarget') }}</dt>
+                <dd>{{ target }}</dd>
+              </div>
+              <div>
+                <dt>{{ t('recipe.print.sgMeasured') }}</dt>
+                <dd class="print-blank"></dd>
+              </div>
+            }
+          </dl>
         }
       </header>
 
-      @if (printed.unreadable.length) {
+      @if (mode() === 'worked') {
+        <gc-worked-calculation
+          [materials]="recipe().materials"
+          [additives]="recipe().additives ?? []"
+          [includeAdditives]="!!recipe().includeAdditives"
+          [chemistryOf]="chemistryOf()"
+        />
+      } @else if (printed.unreadable.length) {
         <div class="print-unreadable">
           @for (problem of printed.unreadable; track problem) {
             <p>{{ problem }}</p>
@@ -384,7 +493,7 @@ const UNITS: ReadonlyArray<{ value: WeightUnit; label: string }> = [
             <p>{{ notes() }}</p>
           </section>
         }
-      } @else {
+      } @else if (mode() === 'batch') {
         <div class="print-table-scroll" tabindex="0" role="region" [attr.aria-label]="t('recipe.print.toWeigh')">
           <table class="print-table print-batch-list">
             <caption class="visually-hidden">
@@ -448,6 +557,20 @@ const UNITS: ReadonlyArray<{ value: WeightUnit; label: string }> = [
         @if (!weights) {
           <p class="print-note">{{ t('recipe.print.asWritten') }}</p>
         }
+        <dl class="print-ticket print-sign">
+          <div>
+            <dt>{{ t('recipe.print.mixedBy') }}</dt>
+            <dd class="print-blank print-signature"></dd>
+          </div>
+          <div>
+            <dt>{{ t('recipe.print.checkedBy') }}</dt>
+            <dd class="print-blank print-signature"></dd>
+          </div>
+        </dl>
+      }
+
+      @if (hazards().length) {
+        <gc-recipe-hazards class="print-hazards" headingId="print-hazards-heading" [sources]="hazards()" />
       }
     </article>
   </ng-container>`,
@@ -506,10 +629,22 @@ const UNITS: ReadonlyArray<{ value: WeightUnit; label: string }> = [
       margin: 1rem 0 0.5rem;
     }
     .print-meta,
-    .print-batch-summary {
+    .print-firing,
+    .print-liner,
+    .print-batch-summary,
+    .print-cost {
       margin: 0.25rem 0 0;
     }
-    .print-batch-summary {
+    .print-firing-approx {
+      font-size: 0.9rem;
+    }
+    .print-liner {
+      font-size: 0.9rem;
+      border-inline-start: 3px solid currentColor;
+      padding-inline-start: 0.5rem;
+    }
+    .print-batch-summary,
+    .print-cost {
       font-weight: 600;
     }
     /* A table wider than a phone scrolls within the sheet; it can take the focus, to scroll by keyboard. */
@@ -517,7 +652,7 @@ const UNITS: ReadonlyArray<{ value: WeightUnit; label: string }> = [
       overflow-x: auto;
     }
     .print-table-scroll:focus-visible {
-      outline: 3px solid rgba(var(--gc-primary-rgb), 0.5);
+      outline: 3px solid var(--gc-primary);
       outline-offset: 2px;
     }
     .print-table {
@@ -621,6 +756,56 @@ const UNITS: ReadonlyArray<{ value: WeightUnit; label: string }> = [
       white-space: pre-line;
       margin: 0;
     }
+    /* The mix ticket's lines: written in or signed on paper, so each blank is a line to write on. */
+    .print-ticket {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 2rem;
+      margin: 0.75rem 0 0;
+    }
+    .print-ticket > div {
+      display: flex;
+      align-items: baseline;
+      gap: 0.5rem;
+      flex: 1 1 12rem;
+      min-width: 0;
+    }
+    .print-ticket dt {
+      font-weight: 600;
+      white-space: nowrap;
+    }
+    .print-ticket dd {
+      margin: 0;
+      overflow-wrap: anywhere;
+    }
+    .print-blank {
+      flex: 1 1 auto;
+      min-width: 6rem;
+      min-height: 1.4em;
+      border-bottom: 1px solid var(--gc-text);
+    }
+    .print-sign {
+      margin-top: 1.5rem;
+    }
+    .print-signature {
+      min-height: 2.2em;
+    }
+    .print-batch-number {
+      max-width: 14rem;
+    }
+    .print-hazards {
+      display: block;
+      margin-top: 1.25rem;
+    }
+    @media print {
+      .print-cost {
+        margin-top: 0.1rem;
+        font-size: 9.5pt;
+      }
+      .print-hazards {
+        margin-top: 0.5rem;
+      }
+    }
     @media (max-width: 575.98px) {
       .print-controls,
       .print-sheet {
@@ -661,7 +846,8 @@ const UNITS: ReadonlyArray<{ value: WeightUnit; label: string }> = [
       }
       .print-table tr,
       .print-chemistry,
-      .print-notes {
+      .print-notes,
+      .print-ticket {
         break-inside: avoid;
       }
       /* Read at arm's length while weighing. */
@@ -673,13 +859,40 @@ const UNITS: ReadonlyArray<{ value: WeightUnit; label: string }> = [
 })
 export class RecipePrint implements OnInit, OnDestroy {
   private readonly preferences = inject(PreferencesService);
+  private readonly prices = inject(PricesService);
+  private readonly injector = inject(Injector);
   private readonly titleService = inject(Title);
   private titleBefore = '';
 
   readonly recipe = input.required<Recipe>();
   /** The chemistry an additive borrows by name (chemistryOf), for one with no analysis of its own. */
   readonly chemistryOf = input<(name: string) => MaterialInput | undefined>();
+  /** What the recipe's hazards are read from (recipe-hazards.ts hazardSources); none, and no hazards are printed. */
+  readonly hazards = input<HazardSource[]>([]);
   readonly back = output<void>();
+  /** What to show first, instead of the last choice (not remembered): the recipe page's Show the working. */
+  readonly startMode = input<PrintMode | null>(null);
+
+  /** The mix ticket's batch number, as typed: for this print only; blank leaves a line to write it on. */
+  protected readonly batchNumber = signal('');
+  /** The day it is printed, for the mix ticket. */
+  protected readonly today = computed(() => formatDate(new Date(), { dateStyle: 'long' }));
+  /**
+   * The recipe's target specific gravity, when it has one (saved as sgTarget, a plain number):
+   * the mix ticket shows it, with a line for the reading.
+   */
+  protected readonly sgTarget = computed(() => {
+    const target = this.recipe().sgTarget;
+    return target === undefined || target === null ? '' : formatPlain(String(target));
+  });
+
+  /** The recipe's firing in words, with an approximate conversion into the reader's scale; null when not stated. */
+  protected readonly firing = computed(() => {
+    // The locale is looked up only for a recipe with a firing, as the cost's currency is.
+    if (!this.recipe().firedAt) return null;
+    const locale = this.injector.get(LocaleService);
+    return firingWords(this.recipe().firedAt, { cones: locale.cones(), temperature: locale.temperature() });
+  });
 
   protected readonly units = UNITS;
   protected readonly unitLabel = unitLabel;
@@ -725,6 +938,43 @@ export class RecipePrint implements OnInit, OnDestroy {
     });
   });
 
+  /** Whether the sheet gives the batch's cost: off each time, so a ticket handed on shows no prices unless chosen. */
+  protected readonly showCost = signal(false);
+  protected readonly pricesProblem = this.prices.problem;
+  /** The batch's cost for the size printed, from the account's prices; '' unless asked for, and until they are fetched. */
+  protected readonly costSummary = computed(() => {
+    const prices = this.prices.prices();
+    if (!this.showCost() || prices === null) return '';
+    const recipe = this.recipe();
+    const materials = recipe.materials ?? [];
+    const additives = recipe.additives ?? [];
+    const cost = recipeCost(
+      {
+        materials: materials.map((m) => ({ key: libraryKey(m), amount: m.amount })),
+        additives: additives.map((a) => ({ key: libraryKey(a), amount: a.amount, unit: a.unit }))
+      },
+      this.batchGrams(),
+      new Map(prices.map((p) => [p.key, p.perKg]))
+    );
+    if (!cost) return '';
+    const currency = this.injector.get(LocaleService).currency();
+    if (cost.perKg !== null) {
+      const perUnit = this.unit() === 'lb' ? GRAMS_PER_POUND / 1000 : 1;
+      return translate('recipe.print.cost', {
+        cost: money(cost.cost, currency),
+        perUnit: money(cost.perKg * perUnit, currency),
+        unit: this.unit()
+      });
+    }
+    const names = [...materials, ...additives]
+      .filter((line) => cost.missing.includes(libraryKey(line)))
+      .map((line) => line.name);
+    return translate('recipe.print.costPartial', {
+      cost: money(cost.cost, currency),
+      list: listOf([...new Set(names)])
+    });
+  });
+
   protected readonly evaluation = computed(() =>
     evaluate(this.recipe().materials ?? [], this.recipe().additives ?? [], {
       includeAdditives: !!this.recipe().includeAdditives,
@@ -751,6 +1001,8 @@ export class RecipePrint implements OnInit, OnDestroy {
   });
 
   ngOnInit(): void {
+    const start = this.startMode();
+    if (start) this.mode.set(start);
     void this.preferences.load();
     // Saved as a PDF, the file takes the page's title.
     this.titleBefore = this.titleService.getTitle();
@@ -768,6 +1020,12 @@ export class RecipePrint implements OnInit, OnDestroy {
   protected setMode(mode: PrintMode): void {
     this.mode.set(mode);
     remember(MODE_KEY, mode);
+  }
+
+  /** Ticking it fetches the prices, the first time; unticked, they are not asked for. */
+  protected setShowCost(show: boolean): void {
+    this.showCost.set(show);
+    if (show) void this.prices.load();
   }
 
   protected setBatch(text: string): void {

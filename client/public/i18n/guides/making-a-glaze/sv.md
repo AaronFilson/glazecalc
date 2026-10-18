@@ -48,7 +48,7 @@ Label: Grunduppsättning
 | Kalifältspat                           | Den som säljs i landet just nu, till exempel Mahavir i USA                                                           |
 | Nefelinsyenit{{en: nepheline syenite}} | Vilken som helst; Glazy påpekar dess starkare flussande verkan; används ofta vid låg temperatur och mellantemperatur |
 | Krita                                  | Vilken som helst                                                                                                     |
-| Talk                                   | Vilken som helst                                                                                                     |
+| Talk                                   | Valfri asbestfri sort; kontrollera dess säkerhetsdatablad (se ”Säker blandning och ventilation”)                     |
 | En borfritta, för mellantemperatur     | Ferro 3134, 3124 eller 3195; i Storbritannien Potterycrafts P3124 eller P3195                                        |
 | Bentonit och färgmedel                 | Små mängder                                                                                                          |
 
@@ -211,7 +211,7 @@ Label: Vatten för en viss specifik vikt
 
 **Glasyrlim** (CMC, karboximetylcellulosa) gör glasyrslammet klibbigare och långsammare att torka, och ger ett hårdare lager som sitter fast på föremålet. Det betyder mest för penselglasyrer och glasyrer med mycket fritta{{en: frit}}. I Digitalfires exempel blandas 3,75 g in i 1000 g glasyrslam, och det måste göras med mixer. En glasyr med CMC flockar inte med epsomsalt, och eftersom mikrober lever av limmet kan den förändras i hinken och börja lukta.
 
-**Bentonit**, en mycket finkornig lera, hjälper till att hålla de andra partiklarna svävande. Doppglasyrer brukar förlita sig på 15 till 25 % obränd lera för detta. För ett recept med lite lera hjälper ungefär 1 till 2 % bentonit.
+**Bentonit**, en mycket finkornig lera, hjälper till att hålla de andra partiklarna svävande. Doppglasyrer brukar förlita sig på 15 till 25 % obränd lera för detta. För ett recept med för lite lera hjälper ungefär 1 till 3 % bentonit; Digitalfire säger att en glasyr med mer än 15 % lera inte bör behöva mer än 1 %.
 
 ## Provbitar och provserier {#testing}
 
@@ -284,6 +284,7 @@ Label: Mall för anteckningar
 - [Digitalfire: Epsom salts](https://digitalfire.com/material/epsom+salts)
 - [Digitalfire: CMC gum](https://digitalfire.com/material/cmc%2Bgum)
 - [Digitalfire: Dipping glaze](https://digitalfire.com/glossary/dipping+glaze)
+- [Digitalfire: Bentonite](https://digitalfire.com/material/bentonite)
 - [Digitalfire: Water solubility](https://digitalfire.com/glossary/water+solubility)
 - [Digitalfire: Gerstley Borate](https://digitalfire.com/material/gerstley+borate)
 - [Digitalfire: Mahavir potash feldspar](https://digitalfire.com/material/mahavir+potash+feldspar)

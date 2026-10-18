@@ -16,6 +16,8 @@ const WAIT = 'Please wait a few minutes and try again.';
 /** A kind of record, by the label its routes send (server/routes/records.ts): one, and several. */
 const ONE =
   'additive {additive} advice {advice} firing {firing} material {material} note {note} recipe {recipe} trash {trash} other {record}';
+/** A sign-in provider (server/lib/oauth.ts), by its id: brand names, kept as they are. */
+const PROVIDER = '{provider, select, google {Google} github {GitHub} other {the provider}}';
 const MANY =
   'additive {additives} advice {pieces of advice} firing {firing logs} material {materials} note {notes} recipe {recipes} trash {items in the trash} other {records}';
 
@@ -89,6 +91,29 @@ export const MESSAGES = {
   'mfa-off': 'Two-step sign-in is off, and your recovery codes no longer work.',
   'mfa-not-on': 'Two-step sign-in is not on, so there are no recovery codes to make. Set up a second step first.',
 
+  // Signing in with Google or GitHub (server/routes/oauth_routes.ts).
+  'provider-off': 'That way of signing in is not available.',
+  'provider-expired': 'Signing in took too long, or was started in another browser. Please try again.',
+  'provider-failed': `Signing in with ${PROVIDER} did not work. Please try again.`,
+  'provider-cancelled': `Signing in with ${PROVIDER} was cancelled.`,
+  'provider-email-unverified': `Your ${PROVIDER} account has no verified email, so we cannot make an account with it. Please verify your email with ${PROVIDER}, or sign up with an email and password.`,
+  'provider-sign-in-to-link': `A Glazecalc account already uses the email from ${PROVIDER}. Please sign in to it once, the usual way, to link ${PROVIDER} to it.`,
+  'provider-other-account': `This account does not have the email from ${PROVIDER}, so ${PROVIDER} was not linked. Please sign in to the account that does.`,
+  'provider-verify-first': `Please confirm your email first, with the link we sent you. Then link ${PROVIDER} on your account page.`,
+  'provider-linked': `${PROVIDER} is linked. You can now sign in with it.`,
+  'provider-linked-elsewhere': `That ${PROVIDER} account is already linked to another Glazecalc account.`,
+  'provider-already-linked': `Another ${PROVIDER} account is already linked to this one. Please unlink it first.`,
+  'provider-unlinked': `${PROVIDER} is unlinked. You can no longer sign in with it.`,
+  'provider-not-linked': `${PROVIDER} is not linked to this account.`,
+  'provider-last-method':
+    'This is the only way to sign in to this account. Please set a password or link another way first.',
+  'provider-reauth-needed':
+    'This account has no password, so please confirm it is you by signing in again with Google or GitHub, then try again within 5 minutes.',
+  'provider-reauth-other': `That ${PROVIDER} account is not linked to this Glazecalc account, so it cannot confirm a change here.`,
+  'provider-reauth-password': 'This account has a password: please confirm with it instead.',
+  'provider-not-fresh': `${PROVIDER} did not ask you to sign in again, so it cannot confirm a change. Please try again.`,
+  'provider-reauthed': `You signed in again with ${PROVIDER}. Within 5 minutes, you can confirm one change on this page without a password.`,
+
   // Trials.
   'trials-full': 'Too many people are trying Glazecalc right now. Please create a free account instead.',
   'trial-failed': 'Could not start a trial just now. Please try again.',
@@ -115,7 +140,13 @@ export const MESSAGES = {
   'englishTerms-choices': 'Choose on or off.',
   'notice-choices': 'Choose shown or hidden.',
   'recipeHelp-choices': 'Choose auto, shown or hidden.',
+  'limitSet-choices': 'Choose hesselberth-roy or glazecalc.',
+  'currency-choices': 'Choose one of the currencies in the list, or leave it to your region.',
+  'calendar-choices':
+    'Dates can be shown in the Gregorian calendar (gregory), the Thai Buddhist era (buddhist) or Japanese eras (japanese).',
   'shelf-invalid': (p: Params) => 'The shelf is a list of up to ' + p.most + ' materials.',
+  'prices-invalid': (p: Params) =>
+    'Prices are a list of up to ' + p.most + ' materials, each with a price per kilogram of 0 or more.',
 
   // Records: recipes, materials, additives, firing logs, notes, advice.
   'missing-information': 'Missing required information',
@@ -126,7 +157,37 @@ export const MESSAGES = {
   'record-updated': `Successfully updated {label, select, ${ONE}}`,
   'record-invalid': `Invalid {label, select, ${ONE}}`,
   'record-deleted': `Successfully deleted {label, select, ${ONE}}`,
+  'record-trashed': `Moved the {label, select, ${ONE}} to the Trash. It can be put back for 30 days.`,
+  'record-undone': `Went back to the earlier version of the {label, select, ${ONE}}.`,
+  'nothing-to-undo': 'There is no earlier version to go back to.',
+  'trash-restored': `Put the {label, select, ${ONE}} back.`,
+  'trash-restored-already': 'This has been put back already.',
+  'trash-emptied': 'The Trash is empty.',
+  'trash-full':
+    'The Trash is full, so an access token cannot move anything more to it. Please empty some of it on the website first.',
+  'firing-links-full': 'A recipe can be linked to at most {most} firing logs. Unlink one to link another.',
   'account-limit': `An account can keep up to {limit} {label, select, ${MANY}}. Please remove some to save more.`,
+
+  // Share links (server/routes/share_routes.ts).
+  'not-shared': 'This recipe is not shared, or the link is not complete.',
+  'share-stopped': 'The recipe is no longer shared. Its link no longer opens it.',
+
+  // Access tokens (server/lib/token_auth.ts).
+  'token-invalid': 'The access token is not valid, has expired or was revoked.',
+  'token-scope': 'The access token does not allow this.',
+  'token-not-here': 'This can only be done signed in on the website, not with an access token.',
+
+  // The account page's access tokens (server/routes/token_routes.ts).
+  'token-name': 'Please give the token a name of 1 to {most} characters.',
+  'token-expiry-choices': 'Please choose when the token expires: after {choices} days.',
+  'token-scope-choices': 'For now a token can only read your records.',
+  'token-needs-confirmed-email': 'Please confirm your email before making an access token.',
+  'token-limit': 'An account can have up to {most} access tokens at once. Please revoke one you no longer use first.',
+  'token-made': 'Your access token is ready. Copy it now: it will not be shown again.',
+  'token-revoked': 'The access token was revoked. It no longer works.',
+  'tokens-revoked':
+    '{count, plural, =0 {No access tokens were working.} one {# access token was revoked.} other {# access tokens were revoked.}}',
+  'token-not-found': 'No access token with that id.',
 
   // Requests in general.
   'not-found': 'Not found',
@@ -141,7 +202,12 @@ export const MESSAGES = {
   'too-many-resets': 'Too many password reset requests. ' + WAIT,
   'too-many-email-links': 'Too many emails requested. ' + WAIT,
   'too-many-attempts': 'Too many attempts. ' + WAIT,
-  'too-many-codes': 'Too many codes tried. ' + WAIT
+  'too-many-codes': 'Too many codes tried. ' + WAIT,
+  'too-many-tokens': 'Too many access tokens that do not work were tried from this address. ' + WAIT,
+  'too-many-shared-views': 'Too many shared recipes were opened from this address. ' + WAIT,
+  'too-many-deletes':
+    'This access token has moved too many records to the Trash in the last hour. Please try again later.',
+  'too-many-mcp': 'Too many requests to the Glazecalc tools for AI assistants. ' + WAIT
 } satisfies Record<string, Text>;
 
 export type MessageCode = keyof typeof MESSAGES;

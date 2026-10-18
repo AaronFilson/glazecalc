@@ -39,6 +39,8 @@ import * as password from '../lib/password.ts';
 import * as limits from '../lib/rate_limit.ts';
 import * as secondStep from '../lib/second_step.ts';
 import * as session from '../lib/session.ts';
+import { stopAllSharing } from '../lib/share_links.ts';
+import { revokeAll } from '../models/access_token.ts';
 import AuthChallenge from '../models/auth_challenge.ts';
 import User, { factorMethods, mfaOn, type UserDocument } from '../models/user.ts';
 import { say } from '../lib/messages.ts';
@@ -124,9 +126,13 @@ authRouter.get('/signin', limits.signInAny, limits.signIn, basicHTTP, async (req
 const signedIn = async (res: Response, user: UserDocument, trialId: Types.ObjectId | undefined, keep: boolean) => {
   // Only while it is still a trial: it may have been claimed or swept since.
   const trial = trialId ? await User.exists({ _id: trialId, guest: true }) : null;
-  const kept = trial ? await mergeTrial(trial._id, user._id) : 0;
+  const { records: kept, pricesSkipped } = trial
+    ? await mergeTrial(trial._id, user._id)
+    : { records: 0, pricesSkipped: 0 };
   session.start(res, user, 7, keep);
-  return res.status(200).json(say('signed-in', undefined, { email: user.email, kept }));
+  return res
+    .status(200)
+    .json(say('signed-in', undefined, { email: user.email, kept, ...(pricesSkipped && { pricesSkipped }) }));
 };
 
 /** The one factor a second step sends, without the pending token. */
@@ -288,9 +294,11 @@ authRouter.post('/signout', (req, res) => {
 });
 
 // Raising the token version retires every token made so far, on every device,
-// this browser's included.
+// this browser's included; access tokens, connected apps and share links are stopped too.
 authRouter.post('/signout-everywhere', jwtAuth, notGuest, async (req, res) => {
   await User.updateOne({ _id: userOf(req)._id }, { $inc: { tokenVersion: 1 } });
+  await revokeAll(userOf(req)._id, 'signed-out-everywhere');
+  await stopAllSharing(userOf(req)._id);
   session.end(res);
   res.status(200).json(say('signed-out-everywhere'));
 });

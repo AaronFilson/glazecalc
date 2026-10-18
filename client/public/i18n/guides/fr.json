@@ -56,7 +56,8 @@
     "vet": "Appelez votre vétérinaire.",
     "checkedOn": "Vérifié sur :",
     "choosePrompt": "Choisissez votre pays pour voir qui appeler.",
-    "ministry": "La page du ministère de la Santé : <link>{name}</link>."
+    "ministry": "La page du ministère de la Santé : <link>{name}</link>.",
+    "reported": "Les pages officielles du gouvernement indiquent 113, 114 et 115, mais pas à quoi sert chaque numéro ; les rôles affichés suivent la circulaire 22/2014/TT-BTTTT, telle que la citent des pages secondaires."
   },
   "density": {
     "sg": "SG {value}",
@@ -91,6 +92,7 @@
     "caption": "Valeur limite d’exposition professionnelle à la silice cristalline alvéolaire, moyenne sur 8 heures : {region} (vérifiée le {date})",
     "captionControl": "Valeur de référence pour la silice cristalline alvéolaire dans l’air d’une zone de travail : {region} (vérifiée le {date})",
     "both": "Quartz et cristobalite",
+    "freeSilica": "Silice libre",
     "quartz": "Quartz",
     "cristobalite": "Cristobalite",
     "actionLevel": "Seuil d’action",
@@ -102,6 +104,9 @@
     "quartzAll": "Quartz, pour des poussières entièrement composées de quartz",
     "cristobaliteAll": "Cristobalite, pour des poussières entièrement composées de cristobalite",
     "allFree": "Concentration de contrôle pour des poussières entièrement composées de silice libre",
+    "bandFromTo": "Poussière contenant de {from} % à {to} % de silice libre (SiO₂)",
+    "bandOverTo": "Poussière contenant plus de {from} % et jusqu’à {to} % de silice libre",
+    "bandAbove": "Poussière contenant plus de {from} % de silice libre",
     "recommended": "Valeur recommandée par {abbr}",
     "value": "{value} mg/m³",
     "kind": {
@@ -111,6 +116,7 @@
       "control": "Une concentration de contrôle (管理濃度) : la référence pour juger l’air d’une zone de travail à partir des mesures qui y sont faites, pas une limite de ce qu’une personne respire."
     },
     "setBy": "Valeur fixée par <link>{law}</link>.",
+    "from": "Elle s’applique à partir du {date}.",
     "lowerThanEu": "Inférieure à la valeur limite contraignante de l’UE, qui est de {value} mg/m³.",
     "sameAsEu": "Identique à la valeur limite contraignante de l’UE.",
     "recommendedBy": "{abbr} ({by}) recommande cette valeur dans <link>{title}</link>. Elle n’a pas force de loi.",
@@ -147,16 +153,45 @@
       "jpSmall": "Autres objets de moins de 1,1 L, non destinés à la cuisson",
       "jpLarge": "Autres objets de 1,1 L à moins de 3 L, non destinés à la cuisson",
       "jpStorage": "Autres objets de 3 L ou plus, non destinés à la cuisson",
-      "jpCooking": "Ustensiles de cuisson, de 2,5 cm de profondeur ou plus"
+      "jpCooking": "Ustensiles de cuisson, de 2,5 cm de profondeur ou plus",
+      "krFlat": "Objets non remplissables, ou de moins de 2,5 cm de profondeur",
+      "krSmall": "Autres objets remplissables, de moins de 1,1 L",
+      "krMedium": "Autres objets remplissables, de 1,1 L à moins de 3 L",
+      "krStorage": "Autres objets remplissables, de 3 L ou plus",
+      "krCooking": "Ustensiles de cuisson, pour chauffer des aliments",
+      "twFlat": "Objets non remplissables, ou de 2,5 cm de profondeur au plus",
+      "twSmall": "Objets de plus de 2,5 cm de profondeur, jusqu’à 1,1 L",
+      "twLarge": "Objets de plus de 2,5 cm de profondeur, de plus de 1,1 L",
+      "myFlat": "Objets plats",
+      "mySmall": "Petits objets creux",
+      "myLarge": "Grands objets creux",
+      "myCooking": "Ustensiles de cuisson",
+      "idFlat": "Objets de 25 mm de profondeur intérieure au plus",
+      "idSmall": "Objets de plus de 25 mm de profondeur intérieure, de moins de 1100 mL",
+      "idLarge": "Objets de plus de 25 mm de profondeur intérieure, de 1100 mL ou plus",
+      "thFlat": "Objets de 25 mm de profondeur au plus",
+      "thSmall": "Objets de plus de 25 mm de profondeur, de moins de 1,1 L",
+      "thLarge": "Objets de plus de 25 mm de profondeur, de 1,1 L ou plus",
+      "thInfant": "Récipients pour l’alimentation des bébés jusqu’à 12 mois",
+      "thCooking": "Ustensiles de cuisson, conçus pour résister à la chaleur de la cuisson",
+      "vnFlat": "Objets peu profonds, pour contenir ou cuire des aliments",
+      "vnSmall": "Objets creux pour contenir des aliments, moins de 1100 mL",
+      "vnMedium": "Objets creux pour contenir des aliments, de 1100 mL à moins de 3000 mL",
+      "vnStorage": "Objets creux pour contenir des aliments, 3000 mL ou plus",
+      "vnCooking": "Objets creux pour la cuisson",
+      "vnCups": "Tasses et petits bols"
     },
     "judged": {
       "average": "moyenne de 6 pièces",
-      "each": "chacune des 6"
+      "each": "chacune des 6",
+      "averageOf": "moyenne de {count} pièces",
+      "eachOf": "chacune des {count}"
     },
     "euRules": "Les règles de l’UE s’appliquent ici.",
     "law": "Limites fixées par <link>{law}</link>.",
     "inForce": "En vigueur à partir du {date}.",
     "atMost": "Un objet est conforme s’il ne libère pas plus que la limite : la loi dit « au plus ».",
+    "ppm": "Ici, ppm désigne des milligrammes par litre de solution d’essai (mg/L).",
     "unknown": "Nous n’avons pas encore confirmé les règles de ce pays ({region}).",
     "choosePrompt": "Choisissez votre pays pour voir ses règles."
   },

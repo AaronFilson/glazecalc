@@ -24,6 +24,10 @@ export function fontPreloads(html: string, faces: FontFace[]): string;
 export function withFontPreloads(html: string, faces: FontFace[]): string;
 /** What is wrong with a rendered page; empty when it is fine. */
 export function problemsWith(html: string, start: string, code?: string, minText?: number): string[];
+/** A page larger than this, gzipped, fails the build. */
+export const MAX_GZIPPED: number;
+/** What is wrong with one page in particular (its size; the advice page's standard advice). */
+export function pageProblems(html: string, page: string): string[];
 export function prerender(options?: {
   build?: boolean;
   codes?: readonly string[];

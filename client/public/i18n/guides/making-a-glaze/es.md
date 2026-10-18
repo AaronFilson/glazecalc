@@ -48,7 +48,7 @@ Label: Surtido inicial
 | Feldespato potásico                               | El que se comercialice ahora donde usted vive, como Mahavir en EE. UU.                           |
 | Nefelina sienita{{en: nepheline syenite}}         | Cualquiera; Glazy destaca su mayor poder fundente, y se usa a menudo en baja y media temperatura |
 | Carbonato cálcico                                 | Cualquiera                                                                                       |
-| Talco                                             | Cualquiera                                                                                       |
+| Talco                                             | Cualquier calidad sin amianto; compruebe su FDS (véase «Preparación segura y ventilación»)       |
 | Una frita borácica, para media temperatura        | Ferro 3134, 3124 o 3195; en el Reino Unido, Potterycrafts P3124 o P3195                          |
 | Bentonita y colorantes                            | En pequeñas cantidades                                                                           |
 
@@ -211,7 +211,7 @@ Las **sales de Epsom** (sulfato de magnesio) hacen que un esmalte gelifique lige
 
 La **goma CMC** (carboximetilcelulosa) hace la suspensión más pegajosa y más lenta en secar, y deja una capa más dura que se adhiere a la pieza. Importa sobre todo en los esmaltes para pincel y en los que llevan mucha frita{{en: frit}}. En el ejemplo de Digitalfire se incorporan 3,75 g a 1000 g de suspensión, y hay que añadirla con batidora. Un esmalte con CMC no gelifica con sales de Epsom y, como los microbios se alimentan de la goma, puede cambiar en el cubo y empezar a oler mal.
 
-La **bentonita**, una arcilla muy fina, ayuda a mantener en suspensión las demás partículas. Para ello, los esmaltes para inmersión suelen contar con un 15 a 25 % de arcilla cruda. En una receta con poca arcilla, ayuda alrededor de un 1 a 2 % de bentonita.
+La **bentonita**, una arcilla muy fina, ayuda a mantener en suspensión las demás partículas. Para ello, los esmaltes para inmersión suelen contar con un 15 a 25 % de arcilla cruda. En una receta con poca arcilla, ayuda alrededor de un 1 a 3 % de bentonita; según Digitalfire, un esmalte con más de un 15 % de arcilla no debería necesitar más de un 1 %.
 
 ## Probetas y mezclas lineales {#testing}
 
@@ -284,6 +284,7 @@ Label: Plantilla de registro
 - [Digitalfire: Epsom salts](https://digitalfire.com/material/epsom+salts)
 - [Digitalfire: CMC gum](https://digitalfire.com/material/cmc%2Bgum)
 - [Digitalfire: Dipping glaze](https://digitalfire.com/glossary/dipping+glaze)
+- [Digitalfire: Bentonite](https://digitalfire.com/material/bentonite)
 - [Digitalfire: Water solubility](https://digitalfire.com/glossary/water+solubility)
 - [Digitalfire: Gerstley Borate](https://digitalfire.com/material/gerstley+borate)
 - [Digitalfire: Mahavir potash feldspar](https://digitalfire.com/material/mahavir+potash+feldspar)

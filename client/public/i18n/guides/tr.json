@@ -56,7 +56,8 @@
     "vet": "Veterinerinizi arayın.",
     "checkedOn": "Kontrol tarihi:",
     "choosePrompt": "Orada kimin aranacağını görmek için ülkenizi seçin.",
-    "ministry": "Sağlık bakanlığının sayfası: <link>{name}</link>."
+    "ministry": "Sağlık bakanlığının sayfası: <link>{name}</link>.",
+    "reported": "Resmî hükûmet sayfaları 113, 114 ve 115’i listeler, ancak her birinin ne için olduğunu belirtmez; gösterilen görevler, ikincil sayfaların aktardığı biçimde 22/2014/TT-BTTTT sayılı Genelge’yi izler."
   },
   "density": {
     "sg": "özgül ağırlık {value}",
@@ -91,6 +92,7 @@
     "caption": "{region} ülkesinde solunabilir kristal silika için işyeri sınır değeri, 8 saatlik ortalama (ZAOD); kontrol tarihi: {date}",
     "captionControl": "{region} ülkesinde bir çalışma alanının havasındaki solunabilir kristal silika için ölçüt (kontrol tarihi: {date})",
     "both": "Kuvars ve kristobalit",
+    "freeSilica": "Serbest silis",
     "quartz": "Kuvars",
     "cristobalite": "Kristobalit",
     "actionLevel": "Eylem düzeyi",
@@ -102,6 +104,9 @@
     "quartzAll": "Kuvars, tamamı kuvars olan toz için",
     "cristobaliteAll": "Kristobalit, tamamı kristobalit olan toz için",
     "allFree": "Tamamı serbest silis olan toz için kontrol konsantrasyonu",
+    "bandFromTo": "Serbest silis (SiO₂) oranı %{from}–{to} olan toz",
+    "bandOverTo": "Serbest silis oranı %{from} değerinden fazla ve en fazla %{to} olan toz",
+    "bandAbove": "Serbest silis oranı %{from} değerinden fazla olan toz",
     "recommended": "{abbr} tarafından önerilir",
     "value": "{value} mg/m³",
     "kind": {
@@ -111,6 +116,7 @@
       "control": "Bir kontrol konsantrasyonu (管理濃度): bir çalışma alanının havasını oradaki ölçümlere göre değerlendirmek için kullanılan ölçüttür; bir kişinin soluduğu hava için bir sınır değer değildir."
     },
     "setBy": "Belirleyen: <link>{law}</link>.",
+    "from": "{date} tarihinden itibaren geçerlidir.",
     "lowerThanEu": "AB’nin {value} mg/m³ olan bağlayıcı sınır değerinden düşüktür.",
     "sameAsEu": "AB’nin bağlayıcı sınır değeriyle aynıdır.",
     "recommendedBy": "{abbr} ({by}), bu değeri <link>{title}</link> adlı yayınında önerir. Bu bir yasa değildir.",
@@ -147,16 +153,45 @@
       "jpSmall": "Pişirme için olmayan diğer kaplar: 1,1 L’den az",
       "jpLarge": "Pişirme için olmayan diğer kaplar: 1,1 L veya daha fazla, 3 L’den az",
       "jpStorage": "Pişirme için olmayan diğer kaplar: 3 L veya daha fazla",
-      "jpCooking": "Pişirme kapları, derinliği 2,5 cm veya daha fazla"
+      "jpCooking": "Pişirme kapları, derinliği 2,5 cm veya daha fazla",
+      "krFlat": "Doldurulamayan veya derinliği 2,5 cm’den az olan kaplar",
+      "krSmall": "Doldurulabilen diğer kaplar, 1,1 L’nin altında",
+      "krMedium": "Doldurulabilen diğer kaplar, 1,1 L ile 3 L’nin altı arasında",
+      "krStorage": "Doldurulabilen diğer kaplar, 3 L veya daha fazla",
+      "krCooking": "Yiyecek ısıtmak için pişirme kapları",
+      "twFlat": "Doldurulamayan veya derinliği en fazla 2,5 cm olan kaplar",
+      "twSmall": "Derinliği 2,5 cm’den fazla olan kaplar, 1,1 L’ye kadar",
+      "twLarge": "Derinliği 2,5 cm’den fazla olan kaplar, 1,1 L’nin üzerinde",
+      "myFlat": "Düz kaplar",
+      "mySmall": "Küçük çukur kaplar",
+      "myLarge": "Büyük çukur kaplar",
+      "myCooking": "Pişirme kapları",
+      "idFlat": "İç derinliği en fazla 25 mm olan kaplar",
+      "idSmall": "İç derinliği 25 mm’den fazla olan, 1100 mL’den az hacimli kaplar",
+      "idLarge": "İç derinliği 25 mm’den fazla olan, 1100 mL veya daha fazla hacimli kaplar",
+      "thFlat": "Derinliği en fazla 25 mm olan kaplar",
+      "thSmall": "Derinliği 25 mm’den fazla olan, 1,1 L’den az hacimli kaplar",
+      "thLarge": "Derinliği 25 mm’den fazla olan, 1,1 L veya daha fazla hacimli kaplar",
+      "thInfant": "12 aya kadar olan bebeklerin yiyecekleri için kaplar",
+      "thCooking": "Pişirme kapları; pişirmenin ısısına dayanacak şekilde yapılmıştır",
+      "vnFlat": "Yiyecek tutmak veya pişirmek için sığ parçalar",
+      "vnSmall": "Yiyecek tutmak için derin parçalar, 1100 mL’den az",
+      "vnMedium": "Yiyecek tutmak için derin parçalar, 1100 mL ile 3000 mL’den az arası",
+      "vnStorage": "Yiyecek tutmak için derin parçalar, 3000 mL veya daha fazla",
+      "vnCooking": "Yiyecek pişirmek için derin parçalar",
+      "vnCups": "Fincanlar ve küçük kâseler"
     },
     "judged": {
       "average": "6 parçanın ortalaması",
-      "each": "6 parçadan herhangi biri"
+      "each": "6 parçadan herhangi biri",
+      "averageOf": "{count} parçanın ortalaması",
+      "eachOf": "{count} parçadan herhangi biri"
     },
     "euRules": "Burada AB kuralları uygulanır.",
     "law": "Belirleyen: <link>{law}</link>.",
     "inForce": "Yürürlük tarihi: {date}.",
     "atMost": "Bir parça, sınır değerden fazlasını salmıyorsa testi geçer: yasa “en fazla” der.",
+    "ppm": "Burada ppm, deney çözeltisinin litresindeki miligram anlamına gelir (mg/L).",
     "unknown": "{region} ülkesindeki kuralları henüz doğrulamadık.",
     "choosePrompt": "Kuralları görmek için ülkenizi seçin."
   },

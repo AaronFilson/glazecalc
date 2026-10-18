@@ -1,11 +1,12 @@
 import { Component, Injector, OnInit, afterNextRender, inject, signal } from '@angular/core';
 import { TranslocoDirective, translate } from '@jsverse/transloco';
 import { marker } from '@jsverse/transloco-keys-manager/marker';
-import { FORMAT_LOCALES, REGIONS } from '../../../../lib/regions';
+import { CURRENCIES, FORMAT_LOCALES, REGIONS, formatLocaleFor } from '../../../../lib/regions';
 import { baseLanguage, languageFor, textLanguage } from '../../../../lib/regions/languages';
 import { errorMessage } from '../../core/error-message';
 import { LocaleService } from '../../core/locale.service';
 import { Preferences, PreferencesService } from '../../core/preferences.service';
+import { PricesService } from '../../core/prices.service';
 import { PALETTES } from '../../core/theme';
 import { OFFERED_LANGUAGES, OPEN_PAGE, PAGE_LANGUAGE, languageName, pathIn } from '../../i18n/language';
 
@@ -81,6 +82,7 @@ function settingsIn(pageLanguage: string, offered: readonly string[]): Setting[]
   const language = textLanguage(pageLanguage);
   const regionNames = new Intl.DisplayNames([language], { type: 'region' });
   const languageNames = new Intl.DisplayNames([language], { type: 'language' });
+  const currencyNames = new Intl.DisplayNames([language], { type: 'currency' });
   const regions = REGIONS.map((region) => ({ code: region.code, name: regionNames.of(region.code) ?? region.name }));
   const languageSetting = setting(
     marker('account.settings.language.legend'),
@@ -186,6 +188,29 @@ function settingsIn(pageLanguage: string, offered: readonly string[]): Setting[]
         })
       ]
     }),
+    // The calendar dates are shown in; each choice's example is a date as it would be shown now
+    // (settings-section exampleOf).
+    setting(marker('account.settings.calendar.legend'), marker('account.settings.calendar.help'), {
+      name: 'calendar',
+      id: 'calendar',
+      choices: [
+        choice(
+          'gregory',
+          marker('account.settings.calendar.gregory.label'),
+          marker('account.settings.calendar.gregory.saved')
+        ),
+        choice(
+          'buddhist',
+          marker('account.settings.calendar.buddhist.label'),
+          marker('account.settings.calendar.buddhist.saved')
+        ),
+        choice(
+          'japanese',
+          marker('account.settings.calendar.japanese.label'),
+          marker('account.settings.calendar.japanese.saved')
+        )
+      ]
+    }),
     setting(marker('account.settings.decimalMark.legend'), marker('account.settings.decimalMark.help'), {
       name: 'decimalMark',
       id: 'decimal-mark',
@@ -250,6 +275,23 @@ function settingsIn(pageLanguage: string, offered: readonly string[]): Setting[]
       ]
     }),
     density,
+    // The one currency prices are in (cost per batch); its names in the page's language.
+    setting(marker('account.settings.currency.legend'), marker('account.settings.currency.help'), {
+      name: 'currency',
+      id: 'currency',
+      kind: 'select',
+      choices: CURRENCIES.map((code) => {
+        const name = currencyNames.of(code) ?? code;
+        return {
+          value: code,
+          label: name,
+          example: code,
+          get saved() {
+            return translate('account.settings.currency.saved', { currency: name });
+          }
+        };
+      }).sort((a, b) => a.label.localeCompare(b.label, language))
+    }),
     setting(marker('account.settings.theme.legend'), marker('account.settings.theme.help'), {
       name: 'theme',
       id: 'theme',
@@ -366,8 +408,8 @@ function settingsIn(pageLanguage: string, offered: readonly string[]): Setting[]
                     ></span>
                   }
                   {{ choice.label }}
-                  @if (choice.example) {
-                    <span class="muted">({{ choice.example }})</span>
+                  @if (exampleOf(setting, choice); as example) {
+                    <span class="muted">({{ example }})</span>
                   }
                 </label>
               </div>
@@ -424,6 +466,7 @@ function settingsIn(pageLanguage: string, offered: readonly string[]): Setting[]
 export class SettingsSection implements OnInit {
   protected readonly preferences = inject(PreferencesService);
   private readonly locale = inject(LocaleService);
+  private readonly prices = inject(PricesService);
   private readonly injector = inject(Injector);
   private readonly pageLanguage = inject(PAGE_LANGUAGE);
   private readonly openPage = inject(OPEN_PAGE);
@@ -437,20 +480,41 @@ export class SettingsSection implements OnInit {
     void this.preferences.load();
   }
 
-  /** What is in effect: for temperature and cones, the region's until one is chosen. */
+  /** What is in effect: for temperature, cones, density and currency, the region's until one is chosen. */
   protected current(setting: Setting): string {
     if (setting.name === 'temperature') return this.locale.temperature();
     if (setting.name === 'cones') return this.locale.cones();
     if (setting.name === 'density') return this.locale.density();
+    if (setting.name === 'currency') return this.locale.currency();
     // The language of this page, whatever is saved.
     if (setting.name === 'language') return this.pageLanguage;
     return this.preferences[setting.name]();
   }
 
-  /** A choice's example; for "as my language and region", how numbers and dates are written now. */
+  /**
+   * A choice's example; for "as my language and region", how numbers and dates are written now; for a
+   * calendar, the sample date as it would be shown in it.
+   */
   protected exampleOf(setting: Setting, choice: Choice): string {
-    if (setting.name === 'format' && choice.value === 'auto') {
-      const locale = this.locale.locale();
+    if (setting.name === 'calendar') {
+      const locale = formatLocaleFor(
+        this.locale.language(),
+        this.locale.region(),
+        this.preferences.format(),
+        choice.value
+      );
+      try {
+        return new Intl.DateTimeFormat(locale, { dateStyle: 'long' }).format(SAMPLE_DATE);
+      } catch {
+        return '';
+      }
+    }
+    if (setting.name === 'format') {
+      // The date in the calendar chosen now, so Thai shows Gregorian by default and Buddhist when chosen.
+      const locale =
+        choice.value === 'auto'
+          ? this.locale.locale()
+          : formatLocaleFor(this.locale.language(), this.locale.region(), choice.value, this.preferences.calendar());
       try {
         return sampleOf(locale);
       } catch {
@@ -511,6 +575,13 @@ export class SettingsSection implements OnInit {
       }
       if (this.current(setting) !== choice.value) return;
       this.message.set(choice.saved);
+      // Prices already given stay as they are: the numbers are not converted to the new currency.
+      if (setting.name === 'currency') {
+        await this.prices.load();
+        if (this.prices.prices()?.length && this.message() === choice.saved) {
+          this.message.set(choice.saved + ' ' + translate('account.settings.currency.notConverted'));
+        }
+      }
     } catch (err) {
       this.problem.set(true);
       this.message.set(errorMessage(err, translate('account.settings.saveFailed')));

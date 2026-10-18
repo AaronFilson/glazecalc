@@ -42,13 +42,13 @@ En glasur består mest af kvarts{{en: silica}}, kaolin og feldspat{{en: feldspar
 Table: Opløselige glasurråvarer: hvad de gør, hvis de bliver slugt
 Label: Opløselige råvarer
 
-| Råvare                 | Virkning                                                                                                                                                                                                                                                                                                                                                        | Rapporterede doser                                                                                                                                                                                                                                                                                                                                              |
-| ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Bariumkarbonat         | Tidligere solgt som rottegift. Det opløses næsten ikke i vand, men det opløses derimod i syre, så regn det for opløseligt, når det er slugt. Barium sænker kaliumindholdet i blodet og giver opkastning, diarré og muskelsvaghed, der kan udvikle sig til lammelser, åndedrætssvigt og uregelmæssig hjerterytme. Symptomerne begynder typisk inden for 2 timer. | Kilderne er uenige. En medicinsk oversigtsartikel fra 2025 rapporterer dødsfald efter bariumchlorid, et opløseligt bariumsalt, ved doser helt ned til 0,8 til 0,9 g. Et opslagsværk i akutmedicin angiver et dødeligt interval på 1 til 30 g for bariumsalte, med mulig skade fra omkring 200 mg. Ingen af dem angiver et tal for børn, så ring uanset mængden. |
-| Borax og borsyre       | Først kommer kvalme, opkastning, diarré og mavesmerter; opkast og afføring kan være blågrønne. Alvorlige tilfælde giver et knaldrødt udslæt, der senere skaller af, krampeanfald, nyreskade og shock.                                                                                                                                                           | Laveste dødelige doser, groft anslået: 2 til 3 g for et spædbarn, 5 til 6 g for et barn. I én gennemgang af 784 tilfælde af slugning gav kun 12 % symptomer, og ingen var dødelige, men dødsfald forekommer, og der findes ingen modgift.                                                                                                                       |
-| Lithiumkarbonat        | Et barn på 15 kg (33 lb), der havde slugt 300 mg, fik en kort periode med ufrivillige muskelspasmer og overaktive reflekser (akut dystoni og hyperrefleksi), som gik over.                                                                                                                                                                                      | Der er kun skrevet lidt om små børn. 300 mg er langt mindre end en skefuld pulver.                                                                                                                                                                                                                                                                              |
-| Soda (natriumkarbonat) | Opløses let i vand. Vi har ikke fundet pålidelige tal for, hvad soda gør ved et barn.                                                                                                                                                                                                                                                                           | Ingen fundet. Ring uanset mængden.                                                                                                                                                                                                                                                                                                                              |
-| Kaliumdichromat        | Et kromholdigt farvestof{{en: colorant}}, der bruges i nogle opskrifter. Sikkerhedsdatabladet advarer om, at det »kan være livsfarligt ved indtagelse«, giver ætsninger i mave-tarm-kanalen og kan skade nyrerne.                                                                                                                                               | Ikke fastslået, og sikkerhedsdatabladene er uenige om, hvor giftigt det er.                                                                                                                                                                                                                                                                                     |
+| Råvare                 | Virkning                                                                                                                                                                                                                                                                                                                                                                                | Rapporterede doser                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Bariumkarbonat         | Tidligere solgt som rottegift. Det opløses næsten ikke i vand, men det opløses derimod i syre, så regn det for opløseligt, når det er slugt. Barium sænker kaliumindholdet i blodet og giver opkastning, diarré og muskelsvaghed, der kan udvikle sig til lammelser, åndedrætssvigt og uregelmæssig hjerterytme. Symptomerne begynder typisk inden for 2 timer.                         | Kilderne er uenige. En oversigt fra WHO anslår, at den dødelige dosis af barium, der optages fra tarmen, er 3 til 4 g i ubehandlede tilfælde, med toksiske virkninger fra 0,2 til 0,5 g, og angiver en laveste rapporteret dødelig dosis af bariumchlorid, et opløseligt bariumsalt, på 11,4 mg pr. kg legemsvægt. Et opslagsværk i akutmedicin angiver et dødeligt interval på 1 til 30 g for bariumsalte, med mulig skade fra omkring 200 mg. Ingen af dem angiver et tal for børn, så ring uanset mængden. |
+| Borax og borsyre       | Først kommer kvalme, opkastning, diarré og mavesmerter; opkast og afføring kan være blågrønne. Alvorlige tilfælde giver et knaldrødt udslæt, der senere skaller af, krampeanfald, nyreskade og shock.                                                                                                                                                                                   | Laveste dødelige doser, groft anslået: 2 til 3 g for et spædbarn, 5 til 6 g for et barn. I én gennemgang af 784 tilfælde af slugning gav kun 12 % symptomer, og ingen var dødelige, men dødsfald forekommer, og der findes ingen modgift.                                                                                                                                                                                                                                                                     |
+| Lithiumkarbonat        | Et barn på 15 kg (33 lb), der havde slugt 300 mg, fik en kort periode med ufrivillige muskelspasmer og overaktive reflekser (akut dystoni og hyperrefleksi), som gik over.                                                                                                                                                                                                              | Der er kun skrevet lidt om små børn. 300 mg er langt mindre end en skefuld pulver.                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| Soda (natriumkarbonat) | Opløses let i vand. Vi har ikke fundet pålidelige tal for, hvad soda gør ved et barn.                                                                                                                                                                                                                                                                                                   | Ingen fundet. Ring uanset mængden.                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| Kaliumdichromat        | Et kromholdigt farvestof{{en: colorant}}, der bruges i nogle opskrifter. Fisher Scientifics sikkerhedsdatablad advarer om, at det »kan være livsfarligt ved indtagelse«, giver forbrændinger i mave-tarm-kanalen og kan skade nyrerne. Samme blad advarer om, at det »kan være livsfarligt ved indånding« og kan fremkalde kræft, og om en »mulig risiko for skade på det ufødte barn«. | Ikke fastslået, og sikkerhedsdatabladene er uenige om, hvor giftigt det er.                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 
 > [!NOTE]
 > Disse skadelige mængder går fra et par hundrede milligram til nogle få gram. Glasurråvarer sælges i pund eller kilo, så én åben pose eller spand indeholder langt mere end nok til at skade et småbarn.
@@ -132,22 +132,22 @@ Glazecalc har bly slået fra, medmindre det vælges under [Indstillinger](/accou
 ## Kæledyr {#pets}
 
 > [!NOTE]
-> Vi har ikke fundet nogen veterinær undersøgelse eller vejledning skrevet om kæledyr i keramikeres hjem. Rådene i dette afsnit er sund fornuft, bygget på generel viden om bly, barium og fugle. De kommer ikke fra en veterinær kilde.
+> Vi fandt ingen dyrlægeundersøgelse eller vejledning skrevet til kæledyr i keramikeres hjem. Rådene i dette afsnit er sund fornuft, bygget på almindelige fakta om bly, barium og fugle. De stammer ikke fra en dyrlægekilde.
 
-### Hvad man ved
+### Hvad der er kendt
 
-Pet Poison Helpline skriver: »Bly er giftigt for alle arter, men unge og/eller underernærede dyr har størst risiko for forgiftning«, med tegn som opkastning, diarré, manglende ædelyst, vaklende gang, krampeanfald og blindhed. En hund, der havde ædt stjernekastere med barium (et opløseligt bariumsalt, ikke glasur{{en: glaze}}), fik muskelsvaghed, lammelser, savlen og uregelmæssig hjerterytme og kom sig efter dyrlægebehandling. Fugle er et særtilfælde: En dyrlæge ved University of Illinois forklarer, at »fugle har et meget avanceret og yderst effektivt åndedrætssystem, der gør dem særligt sårbare over for indånding af dampe og aerosoler«.
+Pet Poison Helpline siger: »Bly er giftigt for alle arter, men unge og/eller underernærede dyr løber den største risiko for forgiftning«, med tegn som opkastning, diarré, at dyret ikke spiser, vaklen, kramper og blindhed. En veterinær kasuistik beskriver en hund, der spiste stjernekastere med bariumnitrat (et opløseligt bariumsalt, ikke en glasurråvare): den fik pludselig svaghed, savlede og fik uregelmæssig hjerterytme, og kom sig med behandling hos dyrlægen. Fugle er et særligt tilfælde: en dyrlæge ved University of Illinois forklarer, at »fugle har et meget sofistikeret og yderst effektivt åndedrætssystem, hvilket gør dem særligt sårbare over for indånding af dampe og aerosoler.«
 
-### Regler ud fra sund fornuft
+### Regler efter sund fornuft
 
-- Hold kæledyr ude af værkstedet, og hold døren lukket.
-- Hunde tygger i poser og drikker af spande. Opbevar poserne i et lukket skab, og hold låg på alle spande.
-- Katte går gennem støv og slikker det af poter og pels. Gør gulvet rent med vådrengøring, og hold katte ude af værkstedet, så der ikke er noget, de kan vaske af sig.
-- Fugle og små pattedyr (kaniner, marsvin, hamstere) deler luften i huset. Hold dem i et rum langt væk med lukket dør, mens der arbejdes med tørre råvarer, og mens der brændes i keramikovnen.
-- Akvarier samler støv, der daler ned. Hold dem ude af værkstedet, og hold dem tildækket.
-- Hold foder- og vandskåle væk fra værkstedet og keramikovnen, og brug købte eller testede skåle, ikke eksperimenter fra værkstedet.
+- Hold kæledyr ude af værkstedet, med døren lukket.
+- Hunde tygger på poser og drikker af spande. Opbevar poser i et lukket skab, og hav låg på hver spand.
+- Katte går gennem støv og slikker det af poter og pels. Gør gulvet rent med våd klud, og hold katte ude af værkstedet, så der ikke er noget at slikke af.
+- Fugle og små pattedyr (kaniner, marsvin, hamstere) deler luften i hjemmet. Hold dem i et fjernt rum med døren lukket, mens tørre råvarer håndteres, og mens ovnen brænder.
+- Akvarier opsamler støv, der falder ned. Hold dem ude af værkstedet, og tildækkede.
+- Hold kæledyrs mad- og vandskåle væk fra værkstedet og ovnen, og brug skåle fra handlen eller testede skåle, ikke værkstedseksperimenter.
 
-Hvis et kæledyr kan have ædt eller drukket noget fra værkstedet eller viser tegn som dem ovenfor, så ring til dyrlægen eller en giftlinje for dyr (se tabellen øverst), og hav råvarens navn og dyrets vægt klar.
+Hvis et kæledyr kan have spist eller drukket noget fra værkstedet, eller viser tegn som dem ovenfor, ring til dyrlægen eller en giftlinje for dyr (se tabellen øverst), med råvarens navn og dyrets vægt ved hånden.
 
 ## Keramikovnen {#the-kiln}
 
@@ -167,7 +167,7 @@ Rio Grande anbefaler en **egen gruppe** (en gruppe, der ikke forsyner noget ande
 
 ### Vær til stede, når brændingen slutter
 
-En **Kiln-Sitter** er den mekaniske afbryder på mange manuelt styrede ovne: En lille kegle{{en: cone}} bøjer ved brændingens slutning og slår afbryderen fra. Dens manual siger, at den »IKKE er beregnet til at fungere som en fejlsikker sikkerhedsafbryder«. Rio Grande siger, at man aldrig skal lade en ovn, der er i gang, stå uden opsyn, »især ikke omkring det forventede tidspunkt for slukning«. Brænd derfor kun, når en voksen er hjemme og vågen ved brændingens slutning, kontrollér, at ovnen er slukket, og hav en ABC-brandslukker i ovnrummet. Se [Brænding i en enkel ovn](/guides/firing) om, hvordan Kiln-Sitter, styring og brændekurve fungerer.
+En **Kiln-Sitter** er den mekaniske afbryder på mange manuelt styrede ovne: En lille kegle{{en: cone}} bøjer ved brændingens slutning og slår afbryderen fra. Dens manual siger, at den »IKKE er beregnet til at fungere som en fejlsikker sikkerhedsafbryder«. Rio Grande siger, at man aldrig skal lade en ovn, der er i gang, stå uden opsyn, »især ikke omkring det forventede tidspunkt for slukning«. Bliv derfor i nærheden og kontrollér ovnen, mens den brænder, især hen mod slutningen; brænd kun, når en voksen er hjemme og vågen til at gøre det, kontrollér, at ovnen er slukket, og hav en ABC-brandslukker i ovnrummet. Se [Brænding i en enkel ovn](/guides/firing) om, hvordan Kiln-Sitter, styring og brændekurve fungerer.
 
 ### Røggas og kulilte
 
@@ -207,7 +207,7 @@ Hjemmetest er omstridte. FDA siger, at testsæt til hjemmebrug med vatpind kan v
 
 ### Indvendige glasurer
 
-En **indvendig glasur**{{en: liner glaze}} er glasuren på indersiden af en kop eller skål, hvor maden ligger. Digitalfire beskriver en indvendig glasur, der kan have så lav en risiko, at den kan bruges uden laboratorietest: ingen farvestoffer, barium, bly eller lithium; fuldt udsmeltet; ingen krakelering; og den er slidstærk. Advarselstegn i enhver glasur er store mængder farvestof, krystaller på overfladen og dårlig udsmeltning.
+En **indvendig glasur**{{en: liner glaze}} er glasuren på indersiden af en kop eller skål, hvor maden ligger. Digitalfire beskriver en indvendig glasur, der kan have så lav en risiko, at den kan bruges uden laboratorietest: ingen farvestoffer, barium, bly eller lithium; fuldt udsmeltet; ingen krakelering; og den er slidstærk. Selv da viser kun en migrationstest af egne brændte genstande, om de er egnede til fødevarekontakt. Advarselstegn i enhver glasur er store mængder farvestof, krystaller på overfladen og dårlig udsmeltning.
 
 ### Familieregler, vi foreslår
 
@@ -225,35 +225,38 @@ Se [Glasering fra grunden](/guides/glazing-basics) for mere om, hvordan glasurer
 - [America's Poison Centers: Poison Help](https://poisoncenters.org/)
 - [Poison Control (poison.org): webPOISONCONTROL](https://www.poison.org/)
 - [NHS: Poisoning](https://www.nhs.uk/conditions/poisoning/)
-- [National Poisons Information Service (Storbritannien)](https://www.npis.org/)
+- [National Poisons Information Service (UK)](https://www.npis.org/)
 - [National Poisons Information Centre of Ireland: Public Poisons Line](https://www.poisons.ie/)
 - [European Commission: 112, the European emergency number](https://digital-strategy.ec.europa.eu/en/policies/112)
 - [healthdirect: Poisoning](https://www.healthdirect.gov.au/poisoning)
 - [National Poisons Centre (New Zealand)](https://www.poisons.co.nz/)
 - [ASPCA: Animal Poison Control](https://www.aspca.org/pet-care/animal-poison-control)
 - [Pet Poison Helpline](https://www.petpoisonhelpline.com/)
-- [Animal PoisonLine (Storbritannien)](https://www.animalpoisonline.co.uk/)
-- [Animal Poisons Helpline (Australien og New Zealand)](https://animalpoisons.com.au/)
-- [PubMed Central: Acute soluble barium poisoning, a review (2025)](https://pmc.ncbi.nlm.nih.gov/articles/PMC11700400)
+- [Animal PoisonLine (UK)](https://www.animalpoisonline.co.uk/)
+- [Animal Poisons Helpline (Australia and New Zealand)](https://animalpoisons.com.au/)
+- [PubMed Central: Non-fatal acute barium carbonate poisoning, a case report (2025)](https://pmc.ncbi.nlm.nih.gov/articles/PMC11700400)
+- [WHO IPCS: Environmental Health Criteria 107, Barium (1990)](https://www.inchem.org/documents/ehc/ehc/ehc107.htm)
+- [Fisher Scientific: Potassium dichromate safety data sheet (2007)](https://fscimage.fishersci.com/msds/19370.htm)
 - [WikEM: Boron toxicity](https://wikem.org/wiki/Boron_toxicity)
-- [NPIC og US EPA: Recognition and Management of Pesticide Poisonings, kapitel 9 (PDF)](https://www.npic.orst.edu/RMPP/rmpp_ch9.pdf)
+- [NPIC and US EPA: Recognition and Management of Pesticide Poisonings, chapter 9 (PDF)](https://www.npic.orst.edu/RMPP/rmpp_ch9.pdf)
 - [medlibrary.org: Lithium carbonate prescribing information](https://medlibrary.org/lib/rx/meds/lithium-carbonate-16/page/2/)
 - [CDC: About Lead in Jobs, Hobbies, or Other Activities](https://cdc.gov/lead-prevention/prevention/jobs-hobbies-activities.html)
 - [CDC: Blood Lead Reference Value](https://www.cdc.gov/nceh/lead/data/blood-lead-reference-value.htm)
-- [US EPA: hæfte om børns sundhed (2018, PDF)](https://19january2021snapshot.epa.gov/sites/static/files/2018-10/documents/childrenshealthbooklet2018_final-4_newlinks.pdf)
+- [US EPA: Children's health booklet (2018, PDF)](https://19january2021snapshot.epa.gov/sites/static/files/2018-10/documents/childrenshealthbooklet2018_final-4_newlinks.pdf)
 - [Pennsylvania Department of Health: Non-Occupational Lead Exposure (PDF)](https://www.health.pa.gov:443/topics/Documents/Environmental%20Health/Non-Occupational%20Lead%20Exposure.pdf)
 - [Western Carolina University: Ceramics Safety](https://www.wcu.edu/discover/campus-services-and-operations/facilities-management/safety-and-risk-management/visual-arts-theatre-safety/ceramics-safety.aspx)
-- [Crafts Council (Storbritannien): How to make your pottery practice greener](https://craftscouncil.org.uk/stories/how-make-your-pottery-practice-greener)
+- [Crafts Council (UK): How to make your pottery practice greener](https://craftscouncil.org.uk/stories/how-make-your-pottery-practice-greener)
 - [Pet Poison Helpline: Lead](https://www.petpoisonhelpline.com/poison/lead/)
+- [Vet Candy: Sparkler ingestion results in barium toxicity](https://www.myvetcandy.com/clinicalupdblog/2019/3/15/sparkler-ingestion-results-in-barium-toxicity)
 - [University of Illinois College of Veterinary Medicine: Bird toxins](https://vetmed.illinois.edu/pet-health-columns/bird-toxins-teflon-avocado-lead-zinc/)
 - [Skutt: Designing a Kiln Room (PDF)](https://cdn.shopify.com/s/files/1/0889/3726/7497/files/Designing-A-Kiln-Room-1.pdf)
-- [Kiln Management, en vejledning for skoler (PDF)](https://cdn.shopify.com/s/files/1/0889/3726/7497/files/Kiln-Management-1.pdf)
+- [Kiln Management guide for schools (PDF)](https://cdn.shopify.com/s/files/1/0889/3726/7497/files/Kiln-Management-1.pdf)
 - [L&L Kiln: Front-loader installation checklist (PDF)](https://www.theceramicshop.com/downloads/LLFLChecklist.pdf)
 - [Rio Grande: PMC Kilns Handbook (PDF)](https://products.riogrande.com/content/Instruction-Sheets/RioGrande-PMC-Kilns-Handbook-IS.pdf)
-- [Dawson: manual til Kiln-Sitter LT-3 (PDF)](https://oud.klei.nl/forum/bestanden/f675ae4a-d890-4b8b-a08e-173e652f25a6/KilnSitter%20lt3%20en%20lt3k.pdf)
+- [Dawson: Kiln-Sitter LT-3 manual (PDF)](https://oud.klei.nl/forum/bestanden/f675ae4a-d890-4b8b-a08e-173e652f25a6/KilnSitter%20lt3%20en%20lt3k.pdf)
 - [Ceramic Arts Network: In the Studio, Eye Health for Potters](https://ceramicartsnetwork.org/pottery-making-illustrated/pottery-making-illustrated-article/In-the-Studio-Eye-Health-for-Potters)
 - [FDA: Questions and Answers on Lead-Glazed Traditional Pottery](https://www.fda.gov/food/environmental-contaminants-food/questions-and-answers-lead-glazed-traditional-pottery)
-- [FDA: Compliance Policy Guide 545.450, bly i keramik (PDF)](https://www.fda.gov/media/71764/download)
+- [FDA: Compliance Policy Guide 545.450, lead in pottery (PDF)](https://www.fda.gov/media/71764/download)
 - [Digitalfire: Food Safe](https://digitalfire.com/glossary/food+safe)
 - [Ceramics NZ: Is it food safe?](https://ceramicsnz.org/news/is-it-food-safe/)
 - [Ceramic Arts Network: Techno File, Dirty Dishes](https://ceramicartsnetwork.org/ceramics-monthly/ceramics-monthly-article/Techno-File-Dirty-Dishes)

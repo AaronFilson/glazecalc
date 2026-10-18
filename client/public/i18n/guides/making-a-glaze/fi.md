@@ -41,16 +41,16 @@ Glazyn perusluettelo mille tahansa polttolämpötilalle on kvartsi, kaoliini, ma
 Table: Raaka-aineiden perusvalikoima (meidän ehdotuksemme)
 Label: Perusvalikoima
 
-| Raaka-aine                                   | Mitä ostaa                                                                                                     |
-| -------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
-| Kvartsi (myös nimellä flintti; ks. alempana) | 325 mesh, hienompi laatu, jota Glazy suosii lasitteisiin                                                       |
-| Kaoliini (Isossa-Britanniassa china clay)    | Yhdysvalloissa EPK; Isossa-Britanniassa Grolleg tai muu china clay; Uudessa-Seelannissa NZ-kaoliini            |
-| Kalimaasälpä{{en: potash feldspar}}          | Se, jota omalla alueella nyt myydään, esimerkiksi Yhdysvalloissa Mahavir                                       |
-| Nefeliinisyeniitti{{en: nepheline syenite}}  | Mikä tahansa; Glazy mainitsee sen voimakkaamman sulatuskyvyn, ja sitä käytetään usein matala- ja keskipoltossa |
-| Liitu                                        | Mikä tahansa                                                                                                   |
-| Talkki                                       | Mikä tahansa                                                                                                   |
-| Boorifritti keskipolttoon                    | Ferro 3134, 3124 tai 3195; Isossa-Britanniassa Potterycrafts P3124 tai P3195                                   |
-| Bentoniitti ja väriaineet                    | Pieniä määriä                                                                                                  |
+| Raaka-aine                                   | Mitä ostaa                                                                                                           |
+| -------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
+| Kvartsi (myös nimellä flintti; ks. alempana) | 325 mesh, hienompi laatu, jota Glazy suosii lasitteisiin                                                             |
+| Kaoliini (Isossa-Britanniassa china clay)    | Yhdysvalloissa EPK; Isossa-Britanniassa Grolleg tai muu china clay; Uudessa-Seelannissa NZ-kaoliini                  |
+| Kalimaasälpä{{en: potash feldspar}}          | Se, jota omalla alueella nyt myydään, esimerkiksi Yhdysvalloissa Mahavir                                             |
+| Nefeliinisyeniitti{{en: nepheline syenite}}  | Mikä tahansa; Glazy mainitsee sen voimakkaamman sulatuskyvyn, ja sitä käytetään usein matala- ja keskipoltossa       |
+| Liitu                                        | Mikä tahansa                                                                                                         |
+| Talkki                                       | Mikä tahansa asbestiton laatu; tarkista sen käyttöturvallisuustiedote (ks. Turvallinen sekoittaminen ja ilmanvaihto) |
+| Boorifritti keskipolttoon                    | Ferro 3134, 3124 tai 3195; Isossa-Britanniassa Potterycrafts P3124 tai P3195                                         |
+| Bentoniitti ja väriaineet                    | Pieniä määriä                                                                                                        |
 
 ### Tekniset tiedotteet ja käyttöturvallisuustiedotteet
 
@@ -211,7 +211,7 @@ Label: Vesimäärä tavoiteominaispainoon
 
 **CMC** eli lasiteliima (karboksimetyyliselluloosa) tekee lasitelietteestä tahmeamman ja hitaammin kuivuvan ja jättää kovemman lasitekerroksen, joka pysyy esineessä kiinni. Sillä on eniten merkitystä sivellinlasitteissa ja lasitteissa, joissa on paljon frittiä{{en: frit}}. Digitalfiren esimerkissä 3,75 g sekoitetaan 1000 g:aan lasitelietettä, ja se on lisättävä tehosekoittimella. Lasite, jossa on CMC:tä, ei jähmety Epsom-suolalla, ja koska mikrobit käyttävät liimaa ravinnokseen, lasite voi muuttua ämpärissä ja alkaa haista.
 
-**Bentoniitti**, erittäin hienojakoinen savi, auttaa pitämään muut hiukkaset suspensiossa. Upotuslasitteissa tähän tarkoitukseen on yleensä 15–25 % polttamatonta savea. Jos reseptissä on vähän savea, noin 1–2 % bentoniittia auttaa.
+**Bentoniitti**, erittäin hienojakoinen savi, auttaa pitämään muut hiukkaset suspensiossa. Upotuslasitteissa tähän tarkoitukseen on yleensä 15–25 % polttamatonta savea. Jos reseptissä on vähän savea, noin 1–3 % bentoniittia auttaa; Digitalfiren mukaan lasite, jossa on yli 15 % savea, ei tarvitsisi yli 1 %:a.
 
 ## Koepalat ja koesarjat {#testing}
 
@@ -284,6 +284,7 @@ Label: Muistiinpanomalli
 - [Digitalfire: Epsom salts](https://digitalfire.com/material/epsom+salts)
 - [Digitalfire: CMC gum](https://digitalfire.com/material/cmc%2Bgum)
 - [Digitalfire: Dipping glaze](https://digitalfire.com/glossary/dipping+glaze)
+- [Digitalfire: Bentonite](https://digitalfire.com/material/bentonite)
 - [Digitalfire: Water solubility](https://digitalfire.com/glossary/water+solubility)
 - [Digitalfire: Gerstley Borate](https://digitalfire.com/material/gerstley+borate)
 - [Digitalfire: Mahavir potash feldspar](https://digitalfire.com/material/mahavir+potash+feldspar)

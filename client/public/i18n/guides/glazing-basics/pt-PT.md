@@ -38,7 +38,7 @@ As peças por cozer são **peças cruas**{{en: greenware}} (as fontes não conco
 
 ### As duas cozeduras
 
-A primeira cozedura, a mais baixa, é a **chacota**{{en: bisque}} (no Reino Unido, **biscuit**), normalmente aos cones 08–04, cerca de {{1740–1940 °F; 950–1060 °C}}. Deixa as peças resistentes mas porosas. O Digitalfire, um site de referência sobre vidrados, sugere em geral mais de 15% de porosidade, para que a chacota absorva a água do vidrado durante a aplicação. Uma chacota branda (cones 08–06) é mais porosa; uma chacota dura (muitas vezes ao cone 04) é mais resistente, mas recebe o vidrado com menos facilidade.
+A primeira cozedura, a mais baixa, é a **chacota**{{en: bisque}} (no Reino Unido, **biscuit**), normalmente aos cones 08–04 (mais frequentemente 06–04), cerca de {{1728–1945 °F; 942–1063 °C}}. Deixa as peças resistentes mas porosas. O Digitalfire, um site de referência sobre vidrados, sugere em geral mais de 15% de porosidade, para que a chacota absorva a água do vidrado durante a aplicação. Uma chacota branda (cones 08–06) é mais porosa; uma chacota dura (muitas vezes ao cone 04) é mais resistente, mas recebe o vidrado com menos facilidade.
 
 Table: Como a chacota influencia a vidragem (Digitalfire)
 Label: Como a chacota influencia a vidragem
@@ -254,7 +254,7 @@ Os limites legais variam de país para país. A tabela mostra os do país onde v
 
 ::food-limits
 
-Nos EUA, as peças que não se destinam a alimentos têm de ter um aviso permanente, cozido, «Not for Food Use» (não destinado a alimentos), ou um furo que atravesse a superfície que contacta com os alimentos. A UE fixa limites de chumbo e de cádmio na Diretiva 84/500/CEE, e o Reino Unido mantém os mesmos valores na sua própria lei. A partir de 29 de maio de 2026, os Países Baixos, a Bélgica e o Luxemburgo permitem cerca de 130 a 150 vezes menos chumbo e cerca de 15 vezes menos cádmio. A Austrália fixa limites para as peças importadas; não encontrámos nenhum limite oficial para as peças fabricadas na Austrália ou na Nova Zelândia.
+Nos EUA, a cerâmica decorativa que parece utilizável para alimentos é tratada como cerâmica para alimentos, a menos que tenha uma etiqueta autocolante e um aviso permanente moldado ou cozido na base, como «Not for Food Use. May Poison Food» (não destinado a alimentos; pode envenenar os alimentos), ou um furo que atravesse a superfície que contacta com os alimentos. A UE fixa limites de chumbo e de cádmio na Diretiva 84/500/CEE, e o Reino Unido mantém os mesmos valores na sua própria lei. A partir de 29 de maio de 2026, os Países Baixos, a Bélgica e o Luxemburgo permitem cerca de 130 a 150 vezes menos chumbo e cerca de 15 vezes menos cádmio. A Austrália fixa limites para as peças importadas; não encontrámos nenhum limite oficial para as peças fabricadas na Austrália ou na Nova Zelândia.
 
 ### Ensaios
 
@@ -340,7 +340,7 @@ Cera de reserva (wax resist)
 : Cera pintada onde o vidrado não pode ir, normalmente no pé.
 
 Chacota (bisque; no Reino Unido: biscuit)
-: A primeira cozedura, a mais baixa, normalmente aos cones 08–04, que deixa as peças resistentes mas porosas.
+: A primeira cozedura, a mais baixa, normalmente aos cones 08–04 (mais frequentemente 06–04), que deixa as peças resistentes mas porosas.
 
 Cone
 : Uma pirâmide cerâmica calibrada que se dobra com um determinado trabalho térmico. Um cone testemunho mostra o que as peças receberam.
@@ -474,6 +474,7 @@ Vitrificação (vitrification)
 - [Glazy Help: Specific gravity](https://help.glazy.org/testing/specific-gravity)
 - [Orton Ceramic Foundation: Pyrometric cone chart, °F (através de The Ceramic Shop)](https://www.theceramicshop.com/technical_info/Cones/Orton-Cone-Chart-F-022-14.pdf)
 - [Digitalfire: Bisque](https://digitalfire.com/glossary/bisque)
+- [Digitalfire: Bentonite](https://digitalfire.com/material/bentonite)
 - [Digitalfire: Unity molecular formula](https://digitalfire.com/glossary/unity+molecular+formula)
 - [Digitalfire: LOI](https://digitalfire.com/glossary/loi)
 - [Digitalfire: Frit](https://digitalfire.com/glossary/frit)
@@ -489,3 +490,4 @@ Vitrificação (vitrification)
 - [Potclays: The difference between stoneware and earthenware](https://www.potclays.co.uk/clay-questions/difference-stoneware-earthenware)
 - [US FDA: Compliance Policy Guide Sec. 545.450, Pottery (ceramics), lead contamination](https://www.fda.gov/media/71764/download)
 - [EUR-Lex: Council Directive 84/500/EEC on ceramic articles in contact with food](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:31984L0500)
+- [eCFR: 21 CFR 109.16, Ornamental and decorative ceramicware](https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-109/subpart-A/section-109.16)

@@ -1,5 +1,5 @@
 const { test, expect } = require('@playwright/test');
-const { API, expectFieldProblem, signUpAndSignIn } = require('./helpers');
+const { API, appReady, expectFieldProblem, signUpAndSignIn } = require('./helpers');
 
 const errors = (page) => page.locator('.errors-section');
 const messages = (page) => page.locator('.server-msg');
@@ -48,6 +48,15 @@ test.describe('home and navigation', () => {
     await page.goto('/home');
     await page.locator('.home-card', { hasText: 'Firing logs' }).click();
     await expect(page).toHaveURL(/\/firing$/);
+    await page.goto('/home');
+    await page.locator('.home-card', { hasText: 'Paste in recipes' }).click();
+    await expect(page).toHaveURL(/\/import$/);
+    await page.goto('/home');
+    await page.locator('.home-card', { hasText: 'Blends for test tiles' }).click();
+    await expect(page).toHaveURL(/\/blends$/);
+    await page.goto('/home');
+    await page.locator('.home-card', { hasText: 'Trash' }).click();
+    await expect(page).toHaveURL(/\/trash$/);
     // Signed in, the site's root address goes home.
     await page.goto('/');
     await expect(page).toHaveURL(/\/home$/);
@@ -97,15 +106,15 @@ test.describe('home and navigation', () => {
     await expect(visitor.locator('h1')).toHaveText('Privacy');
     await expect(visitor.locator('a[href="mailto:privacy@glazecalcapp.com"]').first()).toBeVisible();
     const storage = visitor.locator('#storage');
-    await expect(storage.locator('tbody tr')).toHaveCount(11);
+    await expect(storage.locator('tbody tr')).toHaveCount(12);
     await expect(storage.locator('tbody tr').first()).toContainText('glazecalc_session');
     await visitor.close();
   });
 
-  test('the trash page explains that trash is not available yet', async ({ page }) => {
+  test('the trash page says when the Trash is empty', async ({ page }) => {
     await page.goto('/trash');
     await expect(page.locator('h1')).toHaveText('Trash');
-    await expect(page.locator('.help-text')).toContainText('trash functionality is coming soon');
+    await expect(page.locator('.trash-none')).toHaveText('The Trash is empty.');
   });
 
   test('pages show no errors when they load', async ({ page }) => {
@@ -130,6 +139,13 @@ test.describe('home and navigation', () => {
     await page.locator('.nav-links').getByRole('link', { name: 'Notes' }).click();
     await expect(page).toHaveURL(/\/notes$/);
     await expect(page.locator('.nav-links')).toBeHidden();
+    // Escape closes it too, and the focus goes back to the Menu button.
+    await toggle.click();
+    await page.locator('.nav-links').getByRole('link', { name: 'Recipes' }).focus();
+    await page.keyboard.press('Escape');
+    await expect(toggle).toHaveAttribute('aria-expanded', 'false');
+    await expect(page.locator('.nav-links')).toBeHidden();
+    await expect(toggle).toBeFocused();
   });
 
   test('on a phone, nothing is wider than the screen, even the menu with a long email', async ({ page }) => {
@@ -189,7 +205,7 @@ test.describe('additives', () => {
     await row.getByRole('button', { name: 'Remove Blue stain' }).click();
     await expect(row).toContainText("Saved recipes keep their own copy, so they won't change.");
     await row.getByRole('button', { name: 'Yes, remove' }).click();
-    await expect(messages(page)).toContainText('Removed "Blue stain".');
+    await expect(messages(page)).toContainText('Moved "Blue stain" to the Trash.');
     // The list is empty again, and says so.
     await expect(mine).toContainText('None yet.');
     await expect(row).toHaveCount(0);
@@ -228,7 +244,7 @@ test.describe('advice', () => {
     await expect(mine).toBeVisible();
     await mine.getByRole('button', { name: 'Remove Wax resist' }).click();
     await mine.getByRole('button', { name: 'Yes, remove' }).click();
-    await expect(messages(page)).toContainText('Removed "Wax resist".');
+    await expect(messages(page)).toContainText('Moved "Wax resist" to the Trash.');
     await expect(mine).toHaveCount(0);
     await expect(page.locator('.my-advice')).toContainText('Nothing saved yet.');
   });
@@ -257,7 +273,7 @@ test.describe('notes', () => {
     await expect(note).toContainText('Element 3 needs replacing.');
     await note.getByRole('button', { name: 'Remove Kiln' }).click();
     await note.getByRole('button', { name: 'Yes, remove' }).click();
-    await expect(messages(page)).toContainText('Removed "Kiln".');
+    await expect(messages(page)).toContainText('Moved "Kiln" to the Trash.');
     await expect(page.locator('.my-notes li')).toHaveCount(0);
   });
 
@@ -282,6 +298,9 @@ test.describe('firing log', () => {
       await page.locator('#fieldselect').selectOption(field);
       await page.getByRole('button', { name: 'Add the field' }).click();
     }
+    // A field added is not offered again.
+    await expect(page.locator('#fieldselect option[value="Time"]')).toHaveCount(0);
+    await expect(page.locator('#fieldselect')).toHaveValue('Gas');
     await page.getByRole('button', { name: 'Add a row to the firing table' }).click();
     await page.getByRole('button', { name: 'Add a row to the firing table' }).click();
     await page.getByLabel('Time row 1').fill('8:00');
@@ -326,7 +345,7 @@ test.describe('firing log', () => {
 
     await stored.getByRole('button', { name: 'Remove Cone 10 reduction' }).click();
     await stored.getByRole('button', { name: 'Yes, remove' }).click();
-    await expect(messages(page)).toContainText('Removed "Cone 10 reduction".');
+    await expect(messages(page)).toContainText('Moved "Cone 10 reduction" to the Trash.');
     await expect(page.locator('.stored-firing')).toHaveCount(0);
   });
 
@@ -361,6 +380,8 @@ test('a tab opened before a new version loads the page afresh when its old code 
 
 test('"Skip to content" moves to the page without reloading it', async ({ page }) => {
   await page.goto('/recipe');
+  // Once the app has drawn the page, so the key press is not lost as it takes over.
+  await appReady(page);
   // It is the first thing a keyboard user reaches.
   await page.keyboard.press('Tab');
   const skip = page.getByRole('link', { name: 'Skip to content' });

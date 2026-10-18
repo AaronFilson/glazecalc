@@ -4,10 +4,26 @@
     "signedInAs": "Inloggad som {email}.",
     "trying": "Provperiod som {name}. Börja med ett recept.",
     "welcomeBack": "Fortsätt där du slutade senast.",
+    "welcome": {
+      "heading": "Välkommen till Glazecalc",
+      "text": "Anteckningsboken är klar. Ett bra första steg: skriv in en glasyr som redan används, med dess råvaror och mängder, och se dess Segerformel.",
+      "firstRecipe": "Börja det första receptet",
+      "confirmHeading": "Bekräfta e-postadressen",
+      "confirm": "Bekräfta e-postadressen: vi har skickat en länk till {email}. Inloggning i två steg kräver det. <account>Kontosidan</account> kan skicka den igen.",
+      "confirmText": "Vi har skickat en länk till {email}. Öppna den för att bekräfta adressen: inloggning i två steg kräver det. <account>Kontosidan</account> kan skicka den igen."
+    },
     "sections": {
       "recipe": {
         "title": "Recept",
         "text": "Bygg en glasyr av råvaror och mängder, se dess Segerformel (UMF) och spara den."
+      },
+      "import": {
+        "title": "Klistra in recept",
+        "text": "Klistra in recept från en webbplats, ett kalkylblad eller anteckningar, kontrollera vad som lästes in och spara dem."
+      },
+      "blends": {
+        "title": "Blandningar för provbitar",
+        "text": "Blanda två, tre eller fyra av recepten till numrerade provbitar, med vad som ska vägas upp för varje."
       },
       "material": {
         "title": "Råvaror",
@@ -32,6 +48,14 @@
       "guides": {
         "title": "Guider",
         "text": "Från vad en glasyr är till hur den bränns, och hur alla skyddas på vägen."
+      },
+      "trash": {
+        "title": "Papperskorgen",
+        "text": "Lägg tillbaka det som togs bort de senaste 30 dagarna."
+      },
+      "account": {
+        "title": "Konto och inställningar",
+        "text": "Inställningar, lösenordet, inloggning i två steg och en nedladdning av allt som sparas här."
       }
     },
     "newHere": "Aldrig arbetat med Segerformeln förut? <advice>Rådsidan</advice> förklarar grunderna och <about>Om-sidan</about> beskriver hur Glazecalc fungerar."
@@ -39,27 +63,54 @@
   "firing": {
     "title": "Brännloggar",
     "lead": "Registrera varje bränning: tider, temperaturer, käglor och anteckningar om ugnen.",
+    "newHeading": "En ny bränning",
+    "titleLabel": "Titel",
+    "kiln": "Ugn",
+    "date": "Datum",
+    "notes": "Anteckningar",
+    "fieldSelect": "Fält att registrera",
     "addField": "Lägg till fältet",
+    "included": "Fält i den här registreringen",
     "moveLeft": "Flytta fältet åt vänster",
     "moveRight": "Flytta fältet åt höger",
     "removeField": "Ta bort fältet",
     "addRow": "Lägg till en rad i bränningstabellen",
+    "addRowWhy": "Lägg till ett fält först.",
+    "tableEmpty": "Lägg till ett fält ovan och sedan rader.",
+    "recordHeading": "Registrera bränningen",
     "rowActions": "Åtgärder för raden",
     "cell": "{field}, rad {row}",
     "removeRow": "Ta bort raden",
     "save": "Spara",
+    "storedHeading": "Sparade bränningar",
+    "noneSaved": "Inga än. Sparade bränningar visas här.",
+    "storedIn": "Bränd i {kiln} den {date}.",
+    "storedOn": "Bränd den {date}.",
     "storedNotes": "Anteckningar: {notes}",
     "titleMissing": "Ge bränningen en titel.",
     "fieldsMissing": "Lägg till minst ett fält att registrera, till exempel {example}.",
     "chooseField": "Välj ett fält att lägga till och välj sedan Lägg till fältet.",
     "fetchFailed": "Ett fel uppstod när brännloggarna skulle hämtas.",
     "saved": "Brännloggen har sparats på servern.",
-    "saveFailed": "Fel: begäran till servern misslyckades."
+    "saveFailed": "Fel: begäran till servern misslyckades.",
+    "recipesHeading": "Recept som bränts vid den här bränningen",
+    "noRecipes": "Inga recept är kopplade än.",
+    "recipesFailed": "Recepten kunde inte hämtas, så inga recept kan kopplas just nu.",
+    "pickRecipe": "Ett recept som bränts vid den här bränningen",
+    "linkRecipe": "Koppla receptet",
+    "unlink": "Koppla bort",
+    "unlinkRecipe": "Koppla bort {title}",
+    "linkFailed": "Kopplingen kunde inte sparas."
   },
   "notes": {
     "title": "Anteckningar",
     "lead": "Allt annat som är värt att komma ihåg om glasyrerna.",
+    "newHeading": "En ny anteckning",
+    "titleLabel": "Titel",
+    "content": "Anteckning",
     "save": "Spara",
+    "mineHeading": "Sparade anteckningar",
+    "noneSaved": "Inga än. Sparade anteckningar visas här.",
     "titleMissing": "Ge anteckningen en titel.",
     "contentMissing": "Skriv anteckningen.",
     "untitled": "Anteckning utan titel",
@@ -69,6 +120,34 @@
   },
   "trash": {
     "title": "Papperskorgen",
-    "comingSoon": "Papperskorgen kommer snart, i nästa version av Glazecalc. Använd till dess radera / ta bort med försiktighet: när något väl är borta går uppgifterna förlorade."
+    "lead": "Det som tas bort (recept, råvaror, tillsatser, anteckningar, brännloggar och råd) ligger här i 30 dagar. Lägg tillbaka det, eller radera det för gott.",
+    "listHeading": "I papperskorgen",
+    "none": "Papperskorgen är tom.",
+    "untitled": "Utan namn",
+    "kinds": {
+      "recipes": "Recept",
+      "materials": "Råvara",
+      "additives": "Tillsats",
+      "notes": "Anteckning",
+      "firing": "Brännlogg",
+      "advice": "Råd",
+      "other": "Post"
+    },
+    "removedOn": "Borttaget {date}",
+    "goesOn": "Raderas för gott {date}",
+    "byApp": "Borttaget av en ansluten app",
+    "putBack": "Lägg tillbaka",
+    "putBackName": "Lägg tillbaka {name}",
+    "restored": "”{name}” har lagts tillbaka där den låg.",
+    "restoredAlready": "”{name}” har redan lagts tillbaka.",
+    "restoreFailed": "”{name}” kunde inte läggas tillbaka. Försök igen.",
+    "deleted": "”{name}” har raderats för gott.",
+    "empty": "Töm papperskorgen",
+    "emptyQuestion": "Radera {count, plural, one {den # posten} other {alla # poster}} i papperskorgen för gott? Det går inte att ångra.",
+    "emptyYes": "Ja, töm den",
+    "emptying": "Tömmer…",
+    "emptied": "Papperskorgen är tom.",
+    "emptyFailed": "Papperskorgen kunde inte tömmas. Försök igen.",
+    "fetchFailed": "Papperskorgen kunde inte läsas in. Försök igen."
   }
 }

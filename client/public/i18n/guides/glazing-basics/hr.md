@@ -38,7 +38,7 @@ Predmeti koji još nisu pečeni zovu se **nepečeni predmeti** (na engleskom gre
 
 ### Dva pečenja
 
-Prvo, niže pečenje je **biskvitno pečenje**{{en: bisque}} (u Ujedinjenom Kraljevstvu **biscuit**), obično na stožac 08 – 04, otprilike {{1740–1940 °F; 950–1060 °C}}. Nakon njega predmeti su čvrsti, ali porozni. Digitalfire, web-mjesto s podacima o glazurama, predlaže poroznost u pravilu veću od 15 %, kako bi biskvit izvlačio vodu iz glazure dok se ona nanosi. Nisko pečeni biskvit (stožac 08 – 06) porozniji je; visoko pečeni biskvit (često stožac 04) čvršći je, ali slabije prima glazuru.
+Prvo, niže pečenje je **biskvitno pečenje**{{en: bisque}} (u Ujedinjenom Kraljevstvu **biscuit**), obično na stožac 08 – 04 (najčešće 06 – 04), otprilike {{1728–1945 °F; 942–1063 °C}}. Nakon njega predmeti su čvrsti, ali porozni. Digitalfire, web-mjesto s podacima o glazurama, predlaže poroznost u pravilu veću od 15 %, kako bi biskvit izvlačio vodu iz glazure dok se ona nanosi. Nisko pečeni biskvit (stožac 08 – 06) porozniji je; visoko pečeni biskvit (često stožac 04) čvršći je, ali slabije prima glazuru.
 
 Table: Kako biskvit utječe na glaziranje (Digitalfire)
 Label: Kako biskvit utječe na glaziranje
@@ -254,7 +254,7 @@ Zakonske granične vrijednosti razlikuju se od zemlje do zemlje. Tablica prikazu
 
 ::food-limits
 
-U SAD-u predmeti koji nisu namijenjeni hrani moraju imati trajnu, pečenjem nanesenu oznaku „Not for Food Use” (nije za hranu) ili rupu kroz površinu namijenjenu hrani. EU granične vrijednosti za olovo i kadmij propisuje Direktivom Vijeća 84/500/EEZ, a Ujedinjeno Kraljevstvo iste je brojke zadržalo u vlastitom zakonu. Od 29. svibnja 2026. Nizozemska, Belgija i Luksemburg dopuštaju otprilike 130 do 150 puta manje olova i otprilike 15 puta manje kadmija. Australija propisuje granične vrijednosti za uvezene predmete; službenu graničnu vrijednost za predmete izrađene u Australiji ili na Novom Zelandu nismo pronašli.
+U SAD-u se ukrasni keramički predmeti koji izgledaju upotrebljivo za hranu tretiraju kao posuđe za hranu, osim ako nose naljepnicu i trajnu obavijest utisnutu ili pečenjem nanesenu na dno, kao što je „Not for Food Use. May Poison Food” (nije za hranu, može otrovati hranu), ili imaju rupu kroz površinu namijenjenu hrani. EU granične vrijednosti za olovo i kadmij propisuje Direktivom Vijeća 84/500/EEZ, a Ujedinjeno Kraljevstvo iste je brojke zadržalo u vlastitom zakonu. Od 29. svibnja 2026. Nizozemska, Belgija i Luksemburg dopuštaju otprilike 130 do 150 puta manje olova i otprilike 15 puta manje kadmija. Australija propisuje granične vrijednosti za uvezene predmete; službenu graničnu vrijednost za predmete izrađene u Australiji ili na Novom Zelandu nismo pronašli.
 
 ### Ispitivanje
 
@@ -307,7 +307,7 @@ Bentonit (bentonite)
 : Vrlo fina glina koja se dodaje u količini od 1 – 3 % da se glazura ne taloži.
 
 Biskvitno pečenje, biskvit (bisque; u Ujedinjenom Kraljevstvu biscuit)
-: Prvo pečenje, na nižoj temperaturi, obično na stožac 08 – 04, nakon kojeg su predmeti čvrsti, ali porozni.
+: Prvo pečenje, na nižoj temperaturi, obično na stožac 08 – 04 (najčešće 06 – 04), nakon kojeg su predmeti čvrsti, ali porozni.
 
 Bojilo i keramički pigment (colorant and stain)
 : Metalni oksid ili karbonat koji boji glazuru; keramički pigment je tvornički proizvedeno, stabilnije bojilo.
@@ -474,6 +474,7 @@ Zemljana keramika (earthenware)
 - [Glazy Help: Specific gravity](https://help.glazy.org/testing/specific-gravity)
 - [Orton Ceramic Foundation: Pyrometric cone chart, °F (na stranici The Ceramic Shop)](https://www.theceramicshop.com/technical_info/Cones/Orton-Cone-Chart-F-022-14.pdf)
 - [Digitalfire: Bisque](https://digitalfire.com/glossary/bisque)
+- [Digitalfire: Bentonite](https://digitalfire.com/material/bentonite)
 - [Digitalfire: Unity molecular formula](https://digitalfire.com/glossary/unity+molecular+formula)
 - [Digitalfire: LOI](https://digitalfire.com/glossary/loi)
 - [Digitalfire: Frit](https://digitalfire.com/glossary/frit)
@@ -489,3 +490,4 @@ Zemljana keramika (earthenware)
 - [Potclays: The difference between stoneware and earthenware](https://www.potclays.co.uk/clay-questions/difference-stoneware-earthenware)
 - [US FDA: Compliance Policy Guide Sec. 545.450, Pottery (ceramics), lead contamination](https://www.fda.gov/media/71764/download)
 - [EUR-Lex: Council Directive 84/500/EEC on ceramic articles in contact with food](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:31984L0500)
+- [eCFR: 21 CFR 109.16, Ornamental and decorative ceramicware](https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-109/subpart-A/section-109.16)

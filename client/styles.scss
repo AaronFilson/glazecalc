@@ -1,7 +1,8 @@
 // Glazecalc's look: a pottery palette (porcelain, iron, tenmoku rust, celadon)
 // in light and dark, on top of Bootstrap 5's compiled CSS (loaded first, see
 // angular.json). Text and button color pairs meet WCAG AA contrast.
-// No web fonts: system fonts are fast and send no data to a font host.
+// Lora and Noto Serif are served with the app (no font host), with size-matched
+// local fallbacks so text does not move when they arrive.
 //
 // Light or dark follows the device, unless Settings chooses one (data-theme on
 // <html>), and Settings can choose another palette for buttons, links and tabs
@@ -58,14 +59,19 @@
   // The subscripts and superscripts, arrows and math signs.
   unicode-range: U+2070-2071, U+2074-208E, U+2090-209C, U+2190-21FF, U+2200-22FF;
 }
-// The same file, for the subscripts and superscripts only, ahead of Lora (--gc-font).
+// The subscripts and superscripts only, ahead of Lora (--gc-font): the same math face cut to just them (42
+// signs, 7 kB, not the whole 65 kB file every home page asked for early to set K₂O and Al₂O₃), weights kept.
+// Made with fontTools 4.60.1 from @fontsource-variable/noto-serif 5.3.0 (OFL, THIRD-PARTY-NOTICES.md); make
+// it again when that package changes:
+//   pyftsubset node_modules/@fontsource-variable/noto-serif/files/noto-serif-math-wght-normal.woff2
+//     --unicodes="U+2070-2071,U+2074-208E,U+2090-209C" --flavor=woff2 --layout-features='*'
+//     --output-file=client/fonts/noto-serif-sub-wght-normal.woff2
 @font-face {
   font-family: 'Noto Serif Sub';
   font-style: normal;
   font-display: swap;
   font-weight: 100 900;
-  src: url('../node_modules/@fontsource-variable/noto-serif/files/noto-serif-math-wght-normal.woff2')
-    format('woff2-variations');
+  src: url('./fonts/noto-serif-sub-wght-normal.woff2') format('woff2-variations');
   unicode-range: U+2070-2071, U+2074-208E, U+2090-209C;
 }
 
@@ -347,9 +353,31 @@ img {
   height: auto;
 }
 
-:focus-visible {
-  outline: 3px solid rgba(var(--gc-primary-rgb), 0.55);
+// Keyboard focus: a solid outline in the palette's primary colour, which is at
+// least 3:1 against the page and the panels in every palette, light and dark
+// (WCAG 2.2, 1.4.11 Non-text Contrast). Bootstrap's buttons and fields draw a
+// faint box-shadow ring instead, and their rules are more specific than a bare
+// :focus-visible, so they are named here too and their ring is turned off.
+:focus-visible,
+.btn:focus-visible,
+.btn-check:focus-visible + .btn,
+.form-check-input:focus-visible {
+  outline: 3px solid var(--gc-primary);
   outline-offset: 2px;
+}
+.btn:focus-visible,
+.btn-check:focus-visible + .btn,
+.form-check-input:focus,
+.form-control:focus,
+.form-select:focus {
+  box-shadow: none;
+}
+// Text fields and selects show it whenever they have the focus, as typing goes there.
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--gc-primary);
+  outline: 3px solid var(--gc-primary);
+  outline-offset: 0;
 }
 
 .skip-link {
@@ -749,7 +777,7 @@ main {
     max-width: 100%;
     &:focus {
       border-color: var(--gc-primary);
-      outline: 3px solid rgba(var(--gc-primary-rgb), 0.3);
+      outline: 3px solid var(--gc-primary);
       outline-offset: 0;
     }
   }
@@ -1082,7 +1110,7 @@ main .form-control.is-invalid {
     color: var(--gc-on-primary);
   }
   .btn-check:focus-visible + .btn {
-    outline: 3px solid rgba(var(--gc-primary-rgb), 0.45);
+    outline: 3px solid var(--gc-primary);
     outline-offset: 1px;
   }
 }

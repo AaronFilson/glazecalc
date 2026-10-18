@@ -50,6 +50,8 @@ const APP_PAGES = [
 
 @Component({
   selector: 'gc-root',
+  // Escape closes the phone menu, as the Menu button does.
+  host: { '(keydown.escape)': 'closeMenu()' },
   imports: [
     NgTemplateOutlet,
     RichText,
@@ -84,6 +86,7 @@ const APP_PAGES = [
           </a>
         }
         <button
+          #toggle
           type="button"
           class="btn btn-light btn-sm nav-toggle"
           aria-controls="main-menu"
@@ -92,7 +95,7 @@ const APP_PAGES = [
         >
           {{ t('nav.menu') }}
         </button>
-        <div id="main-menu" class="nav-menu" [class.open]="menuOpen()">
+        <div #menu id="main-menu" class="nav-menu" [class.open]="menuOpen()">
           @if (auth.shownSession()) {
             <ul class="nav-links">
               @for (page of pages; track page.path) {
@@ -121,6 +124,10 @@ const APP_PAGES = [
                   }
                 </span>
               </a>
+              <!-- What was removed waits here for 30 days. -->
+              <a routerLink="/trash" class="trash-link" routerLinkActive="active" ariaCurrentWhenActive="page">{{
+                t('nav.trash')
+              }}</a>
               <!-- A trial has no password to come back with; the trial bar offers its way out. -->
               @if (!auth.shownTrial()) {
                 <button type="button" class="btn btn-light btn-sm" (click)="logout()">{{ t('nav.signOut') }}</button>
@@ -271,6 +278,16 @@ export class App implements OnInit {
   protected readonly languageName = languageName;
   protected readonly formatDate = formatDate;
   protected readonly menuOpen = signal(false);
+
+  private readonly toggle = viewChild.required<ElementRef<HTMLElement>>('toggle');
+  private readonly menu = viewChild.required<ElementRef<HTMLElement>>('menu');
+
+  /** Closes the phone menu; the focus goes back to its button if it was in the menu, so it is not lost. */
+  protected closeMenu(): void {
+    if (!this.menuOpen()) return;
+    this.menuOpen.set(false);
+    if (this.menu().nativeElement.contains(this.document.activeElement)) this.toggle().nativeElement.focus();
+  }
   protected readonly ready = signal(false);
   protected readonly confirmingDiscard = signal(false);
   protected readonly discarding = signal(false);

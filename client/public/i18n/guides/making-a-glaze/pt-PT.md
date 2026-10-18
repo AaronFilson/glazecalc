@@ -48,7 +48,7 @@ Label: Conjunto inicial
 | Feldspato potássico{{en: potash feldspar}}             | O que se vender atualmente onde vive, como o Mahavir nos EUA                                                          |
 | Nefelina sienita{{en: nepheline syenite}}              | Qualquer marca; o Glazy refere o seu poder fundente mais forte, muitas vezes aproveitado em baixa e média temperatura |
 | Carbonato de cálcio                                    | Qualquer marca                                                                                                        |
-| Talco                                                  | Qualquer marca                                                                                                        |
+| Talco                                                  | Qualquer tipo sem amianto; verifique a sua FDS (ver «Mistura segura e ventilação»)                                    |
 | Uma frita de boro, para média temperatura              | Ferro 3134, 3124 ou 3195; no Reino Unido, Potterycrafts P3124 ou P3195                                                |
 | Bentonite e corantes                                   | Pequenas quantidades                                                                                                  |
 
@@ -211,7 +211,7 @@ O **sal de Epsom** faz um vidrado gelificar ligeiramente quando está parado e v
 
 A **goma CMC** (carboximetilcelulose) torna a suspensão mais pegajosa e mais lenta a secar, e deixa uma camada mais dura que adere à peça. É mais importante nos vidrados para pincel e nos vidrados ricos em frita{{en: frit}}. O exemplo do Digitalfire mistura 3,75 g em 1000 g de suspensão, e tem de ser incorporada com uma liquidificadora. Um vidrado com CMC não gelifica com sal de Epsom e, como os micróbios se alimentam da goma, pode alterar-se no balde e começar a cheirar mal.
 
-A **bentonite**, uma argila muito fina, ajuda a manter as outras partículas em suspensão. Os vidrados para imersão costumam contar com 15 a 25% de argila crua para isso. Numa receita com pouca argila, cerca de 1 a 2% de bentonite ajuda.
+A **bentonite**, uma argila muito fina, ajuda a manter as outras partículas em suspensão. Os vidrados para imersão costumam contar com 15 a 25% de argila crua para isso. Numa receita com pouca argila, cerca de 1 a 3% de bentonite ajuda; segundo o Digitalfire, um vidrado com mais de 15% de argila não deve precisar de mais de 1%.
 
 ## Peças de teste e testes em linha {#testing}
 
@@ -284,6 +284,7 @@ Label: Modelo de registo
 - [Digitalfire: Epsom salts](https://digitalfire.com/material/epsom+salts)
 - [Digitalfire: CMC gum](https://digitalfire.com/material/cmc%2Bgum)
 - [Digitalfire: Dipping glaze](https://digitalfire.com/glossary/dipping+glaze)
+- [Digitalfire: Bentonite](https://digitalfire.com/material/bentonite)
 - [Digitalfire: Water solubility](https://digitalfire.com/glossary/water+solubility)
 - [Digitalfire: Gerstley Borate](https://digitalfire.com/material/gerstley+borate)
 - [Digitalfire: Mahavir potash feldspar](https://digitalfire.com/material/mahavir+potash+feldspar)

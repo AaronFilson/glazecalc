@@ -41,16 +41,16 @@ Il-lista bażika ta’ Glazy għal kull temperatura hija: silika, kawlina, felds
 Table: Sett tal-bidu ta’ materjali (is-suġġeriment tagħna)
 Label: Sett tal-bidu
 
-| Materjal                                         | X’għandek tixtri                                                                                    |
-| ------------------------------------------------ | --------------------------------------------------------------------------------------------------- |
-| Silika (imsejħa wkoll flint; ara aktar ’l isfel) | 325 mesh, it-tħin l-aktar fin, li Glazy jippreferi għall-glejżijiet                                 |
-| Kawlina (fir-Renju Unit: china clay)             | EPK fl-Istati Uniti; Grolleg jew kawlina oħra fir-Renju Unit; kawlina ta’ New Zealand f’New Zealand |
-| Feldspar tal-potassju{{en: potash feldspar}}     | Dak li jkun qed jinbiegħ illum fejn tgħix, bħal Mahavir fl-Istati Uniti                             |
-| Sijenit tan-nefelina{{en: nepheline syenite}}    | Kwalunkwe tip; Glazy jinnota li għandu qawwa flussanti akbar, u spiss jintuża f’ħami baxx u medju   |
-| Karbonat tal-kalċju                              | Kwalunkwe tip                                                                                       |
-| Talk                                             | Kwalunkwe tip                                                                                       |
-| Fritta tal-boron, għal ħami medju                | Ferro 3134, 3124 jew 3195; fir-Renju Unit, Potterycrafts P3124 jew P3195                            |
-| Bentonit u kuluranti                             | Ammonti żgħar                                                                                       |
+| Materjal                                         | X’għandek tixtri                                                                                                             |
+| ------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------- |
+| Silika (imsejħa wkoll flint; ara aktar ’l isfel) | 325 mesh, it-tħin l-aktar fin, li Glazy jippreferi għall-glejżijiet                                                          |
+| Kawlina (fir-Renju Unit: china clay)             | EPK fl-Istati Uniti; Grolleg jew kawlina oħra fir-Renju Unit; kawlina ta’ New Zealand f’New Zealand                          |
+| Feldspar tal-potassju{{en: potash feldspar}}     | Dak li jkun qed jinbiegħ illum fejn tgħix, bħal Mahavir fl-Istati Uniti                                                      |
+| Sijenit tan-nefelina{{en: nepheline syenite}}    | Kwalunkwe tip; Glazy jinnota li għandu qawwa flussanti akbar, u spiss jintuża f’ħami baxx u medju                            |
+| Karbonat tal-kalċju                              | Kwalunkwe tip                                                                                                                |
+| Talk                                             | Kwalunkwe grad mingħajr asbestos; iċċekkja l-iskeda ta’ data ta’ sigurtà tiegħu (ara l-gwida “Taħlit sikur u ventilazzjoni”) |
+| Fritta tal-boron, għal ħami medju                | Ferro 3134, 3124 jew 3195; fir-Renju Unit, Potterycrafts P3124 jew P3195                                                     |
+| Bentonit u kuluranti                             | Ammonti żgħar                                                                                                                |
 
 ### Skedi tekniċi u skedi ta’ data ta’ sigurtà
 
@@ -211,7 +211,7 @@ Il-**melħ Epsom** (sulfat tal-manjeżju) iġiegħel il-glejż jagħqad kemmxejn
 
 Il-**gomma CMC** (karbossimetilċelluloża) tagħmel il-glejż likwidu aktar iwaħħal u jdum aktar biex jinxef, u tħalli saff aktar iebes li jeħel mal-biċċa. L-aktar hija importanti għall-glejżijiet għall-pinzell u għal dawk b’ħafna fritta{{en: frit}}. L-eżempju ta’ Digitalfire jħallat 3.75 g f’1000 g ta’ glejż likwidu, u trid tiżdied bil-blender. Glejż bis-CMC ma jagħqadx bil-melħ Epsom, u peress li l-mikrobi jieklu l-gomma, jista’ jinbidel fil-barmil u jibda jinten.
 
-Il-**bentonit**, tafal fin ħafna, jgħin iżomm il-partiċelli l-oħra f’sospensjoni. Il-glejżijiet għall-għadis normalment jiddependu fuq 15 sa 25% tafal mhux moħmi għal dan. Għal riċetta li m’għandhiex biżżejjed tafal, madwar 1 sa 2% bentonit jgħin.
+Il-**bentonit**, tafal fin ħafna, jgħin iżomm il-partiċelli l-oħra f’sospensjoni. Il-glejżijiet għall-għadis normalment jiddependu fuq 15 sa 25% tafal mhux moħmi għal dan. Għal riċetta li m’għandhiex biżżejjed tafal, madwar 1 sa 3% bentonit jgħin; Digitalfire tgħid li glejż b’aktar minn 15% tafal m’għandux ikollu bżonn aktar minn 1%.
 
 ## Madum tal-prova u sensiela ta’ provi {#testing}
 
@@ -284,6 +284,7 @@ Label: Mudell tar-reġistru
 - [Digitalfire: Epsom salts](https://digitalfire.com/material/epsom+salts)
 - [Digitalfire: CMC gum](https://digitalfire.com/material/cmc%2Bgum)
 - [Digitalfire: Dipping glaze](https://digitalfire.com/glossary/dipping+glaze)
+- [Digitalfire: Bentonite](https://digitalfire.com/material/bentonite)
 - [Digitalfire: Water solubility](https://digitalfire.com/glossary/water+solubility)
 - [Digitalfire: Gerstley Borate](https://digitalfire.com/material/gerstley+borate)
 - [Digitalfire: Mahavir potash feldspar](https://digitalfire.com/material/mahavir+potash+feldspar)

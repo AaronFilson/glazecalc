@@ -81,6 +81,7 @@
     "createAccount": "建立帳戶",
     "title": "您的帳戶",
     "signedInAs": "目前以 {email} 登入。",
+    "contents": "本頁內容",
     "changeHeading": "變更密碼",
     "current": "目前的密碼",
     "currentMissing": "請輸入目前的密碼。",
@@ -106,7 +107,7 @@
     "emailSend": "寄送連結",
     "emailFailed": "錯誤：無法寄送連結。請再試一次。",
     "signOutHeading": "登出所有裝置",
-    "signOutText": "在所有裝置上登出，包括目前這一台。若遺失裝置，或認為別人取得了您的登入資訊，請使用此功能。",
+    "signOutText": "登出所有裝置（包括這台裝置），並讓您的存取權杖和分享連結失效。如果遺失了裝置，或認為有人得知了您的登入資訊，請使用這個功能。",
     "signOutButton": "登出所有裝置",
     "signOutFailed": "錯誤：無法登出。請再試一次。",
     "confirmStep": "已開啟兩步驟驗證，請確認是您本人：輸入密碼與第二個步驟。"
@@ -118,8 +119,10 @@
     "on": "兩步驟驗證已開啟。",
     "onText": "您以密碼加第二個步驟登入，或只用密碼金鑰登入。",
     "off": "兩步驟驗證已關閉。",
+    "badgeOn": "已開啟",
+    "badgeOff": "已關閉",
     "offText": "要開啟，請設定驗證器應用程式或新增密碼金鑰。",
-    "confirmEmailFirst": "請先確認上方的電子郵件。我們用它通知您登入方式的變更，並在您遺失第二個步驟時提供協助。",
+    "confirmEmailFirst": "請先確認上方的電子郵件。我們用這個地址通知您登入方式的變更，並在您遺失第二個步驟時提供協助。",
     "appHeading": "驗證器應用程式",
     "appText": "手機或密碼管理員中的應用程式，每 30 秒顯示一個新的驗證碼，供您登入時輸入。",
     "addApp": "設定驗證器應用程式",
@@ -150,6 +153,8 @@
     "offCodes": "您的備用碼會失效。",
     "offSignOut": "您帳戶上其他所有已登入的裝置都會被登出，這台裝置仍保持登入。",
     "offEmail": "我們會寄電子郵件通知您已關閉。",
+    "offRemoveApp": "關閉兩步驟驗證（移除應用程式）",
+    "offRemoveAppFirst": "先移除應用程式，開始關閉兩步驟驗證",
     "offPasskeys": "{count, plural, other {要關閉，請移除上方「密碼金鑰」下的 # 個密碼金鑰。}}",
     "offPasskeysToo": "{count, plural, other {您還有 # 個密碼金鑰：除了應用程式，也請移除上方「密碼金鑰」下的密碼金鑰。}}",
     "addAppText": "要設定驗證器應用程式，請先確認是您本人。",
@@ -202,6 +207,25 @@
     "recipes": "釉方（CSV）",
     "materials": "原料（CSV）"
   },
+  "trash": {
+    "heading": "垃圾桶",
+    "text": "您從筆記本中移除的內容會在垃圾桶中保留 30 天。可以從那裡放回，也可以永久刪除。",
+    "open": "開啟垃圾桶"
+  },
+  "shared": {
+    "heading": "分享的釉方",
+    "text": "您用連結分享的釉方：任何拿到連結的人，不需要帳戶就能閱讀。連結只在建立時顯示一次，所以這裡無法顯示。若要再次分享某個釉方，請在該釉方的「更多」下建立新連結。",
+    "since": "自 {date} 起分享",
+    "notesShown": "顯示備註",
+    "notesHidden": "不顯示備註",
+    "untitled": "未命名的釉方",
+    "stop": "停止分享",
+    "stopName": "停止分享「{name}」",
+    "stopped": "「{name}」已不再分享，其連結已失效。",
+    "stopFailed": "操作未成功。請再試一次。",
+    "fetchFailed": "無法載入您分享的釉方。請再試一次。",
+    "none": "您沒有分享任何釉方。"
+  },
   "settings": {
     "heading": "設定",
     "intro": "已儲存在您的帳戶中，所有裝置都會套用。",
@@ -228,6 +252,22 @@
       },
       "saved": "已儲存：數字與日期採用{language}的格式。",
       "help": "數字與日期的寫法：12,345.6 或 12.345,6，以及日與月的順序。"
+    },
+    "calendar": {
+      "legend": "曆法",
+      "help": "日期以哪種曆法顯示。您輸入的日期仍使用西曆。",
+      "gregory": {
+        "label": "西曆",
+        "saved": "已儲存：日期以西曆顯示。"
+      },
+      "buddhist": {
+        "label": "泰國佛曆",
+        "saved": "已儲存：日期以泰國佛曆顯示。"
+      },
+      "japanese": {
+        "label": "日本年號",
+        "saved": "已儲存：日期以日本年號顯示。"
+      }
     },
     "decimalMark": {
       "legend": "輸入數值",
@@ -266,7 +306,7 @@
         "saved": "已儲存：以 Orton 測溫錐燒成。"
       },
       "sk": {
-        "label": "以 SK 測溫錐（JIS R 8101）",
+        "label": "以 SK 測溫錐，JIS R 8101",
         "example": "SK 4a、SK 8",
         "saved": "已儲存：以 SK 測溫錐燒成。"
       },
@@ -281,7 +321,7 @@
       "sg": {
         "label": "比重",
         "saved": "已儲存：釉漿濃度以比重表示。",
-        "example": "SG 1.45"
+        "example": "1.45"
       },
       "baume": {
         "label": "波美度（用比重計測得）",
@@ -292,6 +332,12 @@
         "saved": "已儲存：釉漿濃度以品脫重表示。"
       },
       "help": "指南表示釉漿濃稠程度的方式。在您選擇之前，依照所在地區：義大利與日本用波美度，其他地方用比重。"
+    },
+    "currency": {
+      "legend": "價格使用的幣別",
+      "help": "您為原料填寫的價格，以及一批釉的成本，都以此幣別計算。更改幣別不會換算您已填寫的價格。在您選擇之前，幣別會依您所在的地區而定。",
+      "saved": "已儲存：價格以 {currency} 計。",
+      "notConverted": "您已儲存的價格沒有換算：仍是您原本填寫的數字。"
     },
     "theme": {
       "legend": "淺色或深色",
@@ -349,7 +395,7 @@
         "saved": "已儲存：可加入並建議含鉛原料。"
       },
       "help": "鉛吸入或吞入都有毒，會在體內累積，含鉛的釉藥可能把鉛釋放到食物和飲料中；任何計算都無法得知燒成的器物是否會釋出鉛。關閉時，已含鉛的釉方仍照原樣開啟。",
-      "warning": "鉛只能以熔塊的形式使用，切勿使用紅鉛、白鉛、黃鉛或密陀僧（litharge）這類生鉛原料。請以濕式調配，切勿噴施，請戴防塵口罩，並以濕式清潔。含鉛釉的器物請遠離食物和飲料，除非燒成的器物已通過實驗室的溶出試驗。",
+      "warning": "鉛只能以熔塊的形式使用，切勿使用紅鉛、白鉛、黃鉛或密陀僧（litharge）這類生鉛原料。請以濕式調配，切勿噴施，請戴呼吸防護具，並以濕式清潔。含鉛釉的器物請遠離食物和飲料，除非燒成的器物已通過實驗室的溶出試驗。",
       "turnOn": "開啟鉛",
       "keepOff": "保持關閉"
     },
@@ -387,5 +433,72 @@
     "account": "您的帳戶",
     "signIn": "登入",
     "failed": "錯誤：無法確認地址。請再試一次。"
+  },
+  "providers": {
+    "continueGoogle": "使用 Google 繼續",
+    "continueGithub": "使用 GitHub 繼續",
+    "failed": "登入未成功。請再試一次。",
+    "heading": "Google 與 GitHub",
+    "intro": "連結 Google 或 GitHub 帳戶後，就能用該帳戶登入。Glazecalc 只儲存該帳戶的 ID，絕不儲存其名稱、大頭貼或其他任何資料；兩步驟驗證仍會要求完成第二個步驟。",
+    "passwordless": "這個帳戶沒有密碼。若要變更電子郵件、兩步驟驗證或登入方式，或要刪除帳戶，您需要用 Google 或 GitHub 重新登入，來確認是您本人。您也可以設定密碼。",
+    "setPassword": "寄一個設定密碼的連結給我",
+    "setPasswordUnlinks": "透過郵件中的連結設定密碼，也會取消 Google 與 GitHub 的連結。之後您可以再次連結。",
+    "setPasswordFailed": "無法傳送連結。請再試一次。",
+    "confirmFirst": "請先透過我們寄給您的連結確認電子郵件，再連結 Google 或 GitHub。",
+    "linkedOn": "連結於 {date}",
+    "notLinked": "未連結",
+    "link": "連結 {provider}",
+    "unlink": "取消連結 {provider}",
+    "linkFailed": "無法連結。請再試一次。",
+    "reauthIntro": "這個帳戶沒有密碼，請重新登入來確認是您本人。接著在 5 分鐘內完成變更。",
+    "reauthButton": "用 {provider} 重新登入",
+    "reauthHeld": "您已用 {provider} 重新登入。在接下來的 5 分鐘內，您可以不用密碼進行一次變更。",
+    "reauthFirst": "請先用上方的按鈕之一重新登入。",
+    "reauthFailed": "無法開始重新登入。請再試一次。"
+  },
+  "tokens": {
+    "heading": "存取權杖",
+    "intro": "存取權杖讓您自己的 AI 助理或指令碼讀取您帳戶中的釉方、原料、筆記和燒窯紀錄。目前權杖只能讀取：絕不會更改或移除任何內容。每個權杖會在您選定的日期失效，或在您撤銷時立即失效。",
+    "howTo": "如何連接 AI 助理",
+    "listLabel": "您的存取權杖",
+    "none": "您沒有存取權杖。",
+    "hint": "結尾 {hint}",
+    "readOnly": "唯讀",
+    "created": "建立於 {date}",
+    "lastUsed": "上次使用於 {date}",
+    "neverUsed": "從未使用",
+    "expires": "{date} 失效",
+    "expiredOn": "{date} 已失效",
+    "revokedOn": "{date} 已撤銷",
+    "revoke": "撤銷",
+    "revokeNamed": "撤銷「{name}」",
+    "revokeAll": "撤銷所有存取權杖",
+    "revokeFailed": "錯誤：無法撤銷權杖。請再試一次。",
+    "loadFailed": "無法載入您的存取權杖。請重新載入頁面後再試。",
+    "createHeading": "建立權杖",
+    "name": "名稱",
+    "nameHint": "方便區分的名稱，例如使用這個權杖的助理或電腦。",
+    "nameCheck": "請為權杖取一個 1 至 {most} 個字元的名稱。",
+    "expiry": "多久後失效",
+    "days": "{count, plural, other {# 天}}",
+    "expiryHint": "權杖失效前 7 天，我們會寄電子郵件通知您。",
+    "confirmEmailFirst": "建立權杖之前，請先確認電子郵件：開啟我們寄到 {email} 的連結。建立權杖時和權杖失效前，我們都會用這個地址通知您。",
+    "resend": "重新寄送確認連結",
+    "scopeNote": "權杖可以讀取您的紀錄，但不能更改。",
+    "confirmStep": "若要建立權杖，請確認是您本人。",
+    "create": "建立權杖",
+    "failed": "錯誤：無法建立權杖。請再試一次。",
+    "limit": "您已有 {most} 個可用的存取權杖，這是一個帳戶的上限。請先撤銷一個，才能再建立新的。",
+    "newHeading": "請現在複製新權杖",
+    "newText": "權杖只會顯示這一次。在權杖失效之前，任何拿到權杖的人都可以讀取您的紀錄，所以請像對待密碼一樣保管，只交給您自己的助理或指令碼。",
+    "newLabel": "您的新存取權杖",
+    "copy": "複製權杖",
+    "copied": "已複製。",
+    "copyFailed": "無法複製。請選取權杖，自行複製。",
+    "done": "我已複製",
+    "keptHeading": "您的存取權杖仍然有效",
+    "keptText": "{count, plural, other {變更密碼並沒有讓您的 # 個存取權杖失效。如果您變更密碼是因為別人可能知道舊密碼，請一併撤銷這些權杖。}}",
+    "keep": "保留",
+    "signOutNote": "{count, plural, other {這也會讓您的 # 個存取權杖永久失效。}}"
   }
 }

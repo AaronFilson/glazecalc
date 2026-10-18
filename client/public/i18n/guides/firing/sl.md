@@ -34,13 +34,14 @@ Dobavitelji v Združenem kraljestvu, Evropi, Avstraliji in na Novi Zelandiji pog
 Table: Koliko je vredno zadržanje pri končni temperaturi
 Label: Zadržanje in toplotno delo
 
-| Zadržanje          | Približno enako toplotno delo kot                                               |
-| ------------------ | ------------------------------------------------------------------------------- |
-| Približno 20 minut | Končna temperatura, višja za {{18 °F; 10 °C}}                                   |
-| 40–60 minut        | Končna temperatura, višja za {{36 °F; 20 °C}}                                   |
-| Približno 2 uri    | Končna temperatura, višja za {{54 °F; 30 °C}}                                   |
-| 1–2 uri            | »lahko zadostuje za deformacijo naslednjega, za eno številko vročejšega stožca« |
-| 4–6 ur             | Dovolj, da se upogne stožec, ki je za dve številki vročejši                     |
+| Zadržanje          | Približno enako toplotno delo kot                           |
+| ------------------ | ----------------------------------------------------------- |
+| Približno 20 minut | Končna temperatura, višja za {{18 °F; 10 °C}}               |
+| 40–60 minut        | Končna temperatura, višja za {{36 °F; 20 °C}}               |
+| Približno 2 uri    | Končna temperatura, višja za {{54 °F; 30 °C}}               |
+| 4–6 ur             | Dovolj, da se upogne stožec, ki je za dve številki vročejši |
+
+Orton dodaja, da zadržanje 1–2 uri »lahko zadostuje za deformacijo naslednjega, za eno številko vročejšega stožca«.
 
 Zadržanje torej nikoli ni zastonj: če ga dodate, pričakujte, da se bodo stožci upognili bolj, in temu primerno znižajte končno temperaturo.
 
@@ -198,11 +199,11 @@ Mnogi Kiln-Sitterji, tudi Dawsonovi modeli LT, imajo **časovni omejevalnik**: u
 Table: Na koliko nastaviti časovni omejevalnik
 Label: Nastavitve časovnega omejevalnika
 
-| Vir       | Nastavitev                                                                                                    |
-| --------- | ------------------------------------------------------------------------------------------------------------- |
-| Dawson    | ½ ure dlje od predvidenega časa žganja, dokler peči ne poznate, pozneje tudi samo ¼ ure; nikoli več kot 20 ur |
-| L&L       | Prvič zelo visoko, pri čemer si zapišite, koliko časa traja žganje; nato približno 1 uro dlje                 |
-| Bracker's | 30 minut do 1 uro dlje od časa žganja                                                                         |
+| Vir       | Nastavitev                                                                                                                               |
+| --------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| Dawson    | ½ ure dlje od predvidenega časa žganja, dokler peči ne poznate, pozneje tudi samo ¼ ure dlje; nikoli ga ne nastavljajte na več kot 20 ur |
+| L&L       | Prvič zelo visoko, pri čemer si zapišite, koliko časa traja žganje; nato približno 1 uro dlje                                            |
+| Bracker's | 30 minut do 1 uro dlje od časa žganja                                                                                                    |
 
 > [!NOTE]
 > Naše izhodišče: prvič velikodušno (v okviru 20 ur na številčnici), nato ½ do 1 uro dlje od časa, ki ste ga zapisali. Časovni omejevalnik vam pove tudi, koliko je žganje trajalo: nastavljen na 7 in ustavljen pri 1 pomeni 6 ur.
@@ -224,7 +225,7 @@ Label: Težave s Kiln-Sitterjem
 Za preverjanje nastavitve Dawson uporablja **nastavitveno šablono**, ki drži palico tam, kjer bi jo pustil popolnoma upognjen stožec; pri kremplju naj bo takrat »1/16 palca zračnosti« (približno 1,6 mm). Preverite jo vsakih 30 žganj. Pravilo revije Ceramics Monthly: če peč izklopi prezgodaj, sprožilno ploščico malo premaknite navzgor; če prepozno, jo malo premaknite navzdol. Ne glede na to, kaj počne Kiln-Sitter: »Velikim kontrolnim stožcem{{en: witness cones}} vedno zaupajte bolj kot malim stožcem v Kiln-Sitterju.«
 
 > [!WARNING]
-> **Kiln-Sitter ni varnostna naprava.** Dawsonova navodila pravijo, da »NI namenjen za zanesljiv varnostni izklop in peči NE bi smeli pustiti brez nadzora dlje od predvidenega časa žganja«. Že nekaj tako preprostega, kot je nežgan izdelek{{en: greenware}}, ki pade na cevko, »lahko povzroči prežganje«. Bodite ob peči in jo preverite, ko naj bi se žganje končevalo, in je nikoli ne žgite nad ničimer, kar gori, ali blizu tega, na primer nad lesenim podom ali preprogo.
+> **Kiln-Sitter ni varnostna naprava.** Dawsonova navodila pravijo, da »NI namenjen za izklop, varen ob odpovedi{{en: fail-safe}}, in peči NE bi smeli pustiti brez nadzora dlje od predvidenega časa žganja«. Že nekaj tako preprostega, kot je nežgan izdelek{{en: greenware}}, ki pade na cevko, »lahko povzroči prežganje«. Bodite ob peči in jo preverite, ko naj bi se žganje končevalo, in je nikoli ne žgite nad ničimer, kar gori, ali blizu tega, na primer nad lesenim podom ali preprogo.
 
 Kiln-Sitter je narejen za žganja »do vključno stožca 8«. Sam ne more vzdrževati temperature ali počasi hladiti. Z vajo in dnevnikom pa lahko, kot pravi Digitalfire, »postanete krmilnik«: opazujte stožce in stikala obračajte ročno.
 
@@ -375,7 +376,7 @@ Ortonovi samostoječi stožci se na Japonskem prodajajo pod imenom 立つゼー�
 
 ### Zakaj začetek poteka počasi
 
-Voda, ki se spremeni v paro, se »razširi 1170-krat«, opozarja Bracker's, zato je treba vlažne izdelke sušiti počasi. L&L in Orton svetujeta, da »bi morali pod 1500°F (815°C) posebej paziti, da se glinena masa{{en: clay body}} segreva enakomerno«, in da mora ogljik izgoreti do približno {{1200 °F; 650 °C}}. Nad {{1500 °F; 816 °C}} lahko temperatura v peči narašča hitreje.
+Voda se, ko se spremeni v paro, razširi več kot tisočkrat, zato je treba vlažne izdelke sušiti počasi. L&L in Orton svetujeta, da »bi morali pod 1500°F (815°C) posebej paziti, da se glinena masa{{en: clay body}} segreva enakomerno«, in da mora ogljik izgoreti do približno {{1200 °F; 650 °C}}. Nad {{1500 °F; 816 °C}} lahko temperatura v peči narašča hitreje.
 
 Table: Kaj se dogaja med segrevanjem pri biskvitnem žganju
 Label: Dogajanje pri biskvitnem žganju
@@ -599,14 +600,14 @@ Label: Izhodišče za peč brez krmilnika
 
 ### Odzračevanje
 
-Na začetku žganja glina in glazura{{en: glaze}} oddajata vodno paro ter pline in hlape, med njimi ogljikov monoksid, glazure pa lahko strupene hlape oddajajo tudi pozneje med žganjem. L&L njihovo odvajanje imenuje »nujno«. Brez sistema za odzračevanje to pomeni priprt pokrov in odprte opazovalne odprtine v zgodnjih fazah, kot v zgornjih postopkih; počasnejše segrevanje v tem času pomaga tudi pri izgorevanju ogljika. Z **odsesavanjem pod pečjo** (napravo za odvod zraka z ventilatorjem, nameščeno na peč) po Ortonu pokrov in opazovalne odprtine ostanejo zaprti ves čas žganja, razen ko preverjate stožce. Odprta zgornja opazovalna odprtina ščiti tudi cevko Kiln-Sitterja in kovinske dele peči.
+Na začetku žganja glina in glazura{{en: glaze}} oddajata vodno paro ter pline in hlape, med njimi ogljikov monoksid, glazure pa lahko strupene hlape oddajajo tudi pozneje med žganjem. L&L njihovo odvajanje imenuje »nujno«. Brez sistema za odzračevanje to pomeni priprt pokrov in odprte opazovalne odprtine v zgodnjih fazah, kot v zgornjih postopkih; počasnejše segrevanje v tem času pomaga tudi pri izgorevanju ogljika. V peči brez odzračevanja Dawson, ki je izdelal Kiln-Sitter, prav tako pravi, naj zgornjo opazovalno odprtino pustite odprto ves čas žganja: odzračevanje »bo zmanjšalo propadanje kovinskih delov peči in podaljšalo življenjsko dobo sklopa cevke«. **Odsesavanje pod pečjo** (naprava za odvod zraka z ventilatorjem, nameščena na peč) to spremeni. Ta naprava opravi odzračevanje, zato po Ortonu pokrov in opazovalne odprtine ostanejo zaprti ves čas žganja, razen ko preverjate stožce, L&L pa pravi, naj odsesavanje pustite vklopljeno in opazovalne odprtine zamašite.
 
 O prezračevanju prostora in o detektorjih ogljikovega monoksida si preberite vodnika [Varno mešanje in prezračevanje](/guides/safe-mixing) in [Ne zastrupite svoje družine](/guides/home-safety).
 
 ### Ko peč žge
 
 - V opazovalno odprtino glejte samo z varilskimi očali zaščitne stopnje 3 z zaščito pred IR; sončna očala niso dovolj. Skutt svetuje, da čepe v odprtine vstavite z obračanjem, da ne izpadejo.
-- Peči ne puščajte brez nadzora dlje od predvidenega časa žganja; Kiln-Sitter ni zanesljiva varnostna naprava.
+- Peči ne puščajte brez nadzora dlje od predvidenega časa žganja; Kiln-Sitter ni varnostni izklop, ki bi deloval tudi ob okvari.
 - Nikoli ne žgite na čem, kar gori, ali blizu tega, na primer na lesenem podu ali preprogi.
 - Upoštevajte varne razdalje iz navodil za uporabo. Objavljene vrednosti segajo od 12 palcev (30 cm) do 3 čevljev (91 cm); kjer navodila o tem molčijo, je najvarnejša izbira 18 palcev (46 cm) od sten in 3 čevlji (91 cm) od vsega, kar gori.
 - Prostor okrog uteži Kiln-Sitterja naj bo prost, da utež lahko pade.

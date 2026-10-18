@@ -41,16 +41,16 @@ lead: 原料の買い方と保管、釉薬の計量と混ぜ方、ちょうど�
 Table: 基本の原料セット（私たちの提案）
 Label: 基本の原料セット
 
-| 原料                                            | 買うもの                                                                         |
-| ----------------------------------------------- | -------------------------------------------------------------------------------- |
-| 珪石（フリントとも呼ばれます。下記参照）        | 325 メッシュ。Glazy が釉薬用に勧める、細かいほうの等級                           |
-| カオリン（英国では china clay）                 | 米国では EPK、英国では Grolleg などの china clay、ニュージーランドでは NZ kaolin |
-| カリ長石{{en: potash feldspar}}                 | お住まいの地域で今手に入るもの。米国なら Mahavir など                            |
-| ネフェリンサイアナイト{{en: nepheline syenite}} | どれでも。Glazy によると媒溶作用がより強く、低火度と中火度でよく使われます       |
-| 石灰石                                          | どれでも                                                                         |
-| タルク                                          | どれでも                                                                         |
-| ホウ素フリット（中火度用）                      | Ferro 3134、3124 または 3195。英国では Potterycrafts P3124 または P3195          |
-| ベントナイトと着色剤                            | 少量                                                                             |
+| 原料                                            | 買うもの                                                                                       |
+| ----------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| 珪石（フリントとも呼ばれます。下記参照）        | 325 メッシュ。Glazy が釉薬用に勧める、細かいほうの等級                                         |
+| カオリン（英国では china clay）                 | 米国では EPK、英国では Grolleg などの china clay、ニュージーランドでは NZ kaolin               |
+| カリ長石{{en: potash feldspar}}                 | お住まいの地域で今手に入るもの。米国なら Mahavir など                                          |
+| ネフェリンサイアナイト{{en: nepheline syenite}} | どれでも。Glazy によると媒溶作用がより強く、低火度と中火度でよく使われます                     |
+| 石灰石                                          | どれでも                                                                                       |
+| タルク                                          | アスベストを含まないものならどれでも。安全データシートを確認する（「安全な調合と換気」を参照） |
+| ホウ素フリット（中火度用）                      | Ferro 3134、3124 または 3195。英国では Potterycrafts P3124 または P3195                        |
+| ベントナイトと着色剤                            | 少量                                                                                           |
 
 ### 技術資料と安全データシート
 
@@ -211,7 +211,7 @@ Label: 目標比重に必要な水
 
 **CMC**（カルボキシメチルセルロースの糊剤）は、釉液をねばりのある乾きにくいものにし、器にしっかり付く硬い釉層を残します。筆塗り用の釉薬と、フリット{{en: frit}}の多い釉薬で特に重要です。Digitalfire の例では釉液 1000 g に 3.75 g を混ぜており、ミキサーで混ぜ込む必要があります。CMC を含む釉薬は、エプソムソルトではゲル状になりません。また、微生物が糊剤を餌にするので、バケツの中で変化して、においが出てくることがあります。
 
-**ベントナイト**はとても細かい粘土で、ほかの粒子を懸濁させておくのを助けます。浸し掛け用の釉薬は、ふつうこのために15〜25%の生の粘土に頼っています。粘土の少ない調合には、約1〜2%のベントナイトが役立ちます。
+**ベントナイト**はとても細かい粘土で、ほかの粒子を懸濁させておくのを助けます。浸し掛け用の釉薬は、ふつうこのために15〜25%の生の粘土に頼っています。粘土の少ない調合には、約1〜3%のベントナイトが役立ちます。Digitalfire は、粘土が15%を超える釉薬には1%を超えるベントナイトは必要ないはずだとしています。
 
 ## テストピースとラインブレンド {#testing}
 
@@ -284,6 +284,7 @@ Label: 記録のテンプレート
 - [Digitalfire: Epsom salts](https://digitalfire.com/material/epsom+salts)
 - [Digitalfire: CMC gum](https://digitalfire.com/material/cmc%2Bgum)
 - [Digitalfire: Dipping glaze](https://digitalfire.com/glossary/dipping+glaze)
+- [Digitalfire: Bentonite](https://digitalfire.com/material/bentonite)
 - [Digitalfire: Water solubility](https://digitalfire.com/glossary/water+solubility)
 - [Digitalfire: Gerstley Borate](https://digitalfire.com/material/gerstley+borate)
 - [Digitalfire: Mahavir potash feldspar](https://digitalfire.com/material/mahavir+potash+feldspar)

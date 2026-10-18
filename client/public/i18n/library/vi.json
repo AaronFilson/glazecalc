@@ -1,0 +1,53 @@
+{
+  "common": {
+    "formulaHelp": "Nhập công thức hóa học với số thường, ví dụ {typed}: các chỉ số sẽ hiện thành chỉ số dưới, {shown}. Để nối các phần của một công thức, như {joined}, hãy sao chép dấu chấm này:",
+    "relatedTo": "Liên quan đến",
+    "notes": "Ghi chú",
+    "loi": "Lượng mất khi nung (LOI), %",
+    "molecularWeight": "Khối lượng phân tử của công thức hóa học thô (chỉ dùng nếu LOI để trống)",
+    "formulaHeading": "Công thức hóa học sau nung",
+    "oxideSelection": "Oxit",
+    "noOxide": "không có",
+    "addOxide": "Thêm oxit vào danh sách",
+    "formulaIn": "Công thức hóa học này có trong",
+    "percent": "Phần trăm",
+    "molecular": "Phân tử (Seger)",
+    "amount": "lượng",
+    "removeOxide": "Xóa",
+    "removeOxideName": "Xóa {oxide} khỏi công thức hóa học",
+    "save": "Lưu",
+    "elements": "Nguyên tố",
+    "removeNote": "Các công thức men đã lưu giữ bản sao riêng, nên sẽ không thay đổi.",
+    "saveFailed": "Lỗi: yêu cầu gửi đến máy chủ không thành công."
+  },
+  "material": {
+    "title": "Nguyên liệu",
+    "lead": "Nguyên liệu thô của riêng bạn, nhập dưới dạng công thức hóa học hoặc phân tích oxit.",
+    "newHeading": "Thêm nguyên liệu",
+    "name": "Tên",
+    "rawFormula": "Công thức hóa học thô",
+    "weightsNote": "Khối lượng đương lượng và khối lượng sau nung được tính từ công thức hóa học và LOI khi bạn lưu.",
+    "mineHeading": "Nguyên liệu của tôi",
+    "none": "Chưa có. Nguyên liệu bạn thêm bên dưới có thể dùng trong các công thức men của bạn, bên cạnh nguyên liệu có sẵn.",
+    "rawFormulaColumn": "Công thức hóa học thô",
+    "standardHeading": "Nguyên liệu có sẵn",
+    "fetchFailed": "Đã xảy ra lỗi khi lấy thông tin nguyên liệu.",
+    "standardFetchFailed": "Đã xảy ra lỗi khi lấy thông tin nguyên liệu có sẵn.",
+    "saved": "Thành công. Đã thêm nguyên liệu vào cơ sở dữ liệu."
+  },
+  "additive": {
+    "title": "Phụ gia và chất tạo màu",
+    "lead": "Chất tạo màu và chất làm đục được cân thêm trên công thức men nền, như coban hoặc thiếc oxit. Một công thức men có thể không tính chúng vào công thức Seger hoặc có tính vào.",
+    "newHeading": "Thêm phụ gia hoặc chất tạo màu",
+    "name": "Tên",
+    "formulaAsSold": "Công thức hóa học, như khi bán",
+    "noChemistry": "Không có phân tích oxit, như bột màu thương mại: không tính vào công thức Seger",
+    "firedNote": "Nhập những gì nó cho men sau khi nung: coban oxit đen, {asSold}, là {fired} với LOI {loi}%. Khi đó công thức men có thể tính nó vào công thức Seger.",
+    "mineHeading": "Phụ gia và chất tạo màu của tôi",
+    "none": "Chưa có. Phụ gia bạn thêm bên dưới có thể dùng trong các công thức men của bạn, bên cạnh phụ gia có sẵn.",
+    "standardHeading": "Phụ gia có sẵn",
+    "fetchFailed": "Đã xảy ra lỗi khi lấy thông tin phụ gia.",
+    "standardFetchFailed": "Đã xảy ra lỗi khi lấy thông tin phụ gia có sẵn.",
+    "saved": "Thành công. Đã thêm phụ gia vào cơ sở dữ liệu."
+  }
+}

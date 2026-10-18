@@ -38,7 +38,7 @@ Niewypalone wyroby to **wyroby surowe**{{en: greenware}} (źródła nie są zgod
 
 ### Dwa wypały
 
-Pierwszy, niższy wypał to **wypał biskwitowy**{{en: bisque}} (w Wielkiej Brytanii **biscuit**), zwykle do stożka 08–04, około {{1740–1940 °F; 950–1060 °C}}. Po nim wyroby są wytrzymałe, ale porowate. Digitalfire, serwis z wiedzą o szkliwach, zaleca na ogół porowatość powyżej 15 %, żeby biskwit wciągał wodę ze szkliwa podczas nakładania. Miękki biskwit (stożek 08–06) jest bardziej porowaty; twardy biskwit (często stożek 04) jest mocniejszy, ale gorzej przyjmuje szkliwo.
+Pierwszy, niższy wypał to **wypał biskwitowy**{{en: bisque}} (w Wielkiej Brytanii **biscuit**), zwykle do stożka 08–04 (najczęściej 06–04), około {{1728–1945 °F; 942–1063 °C}}. Po nim wyroby są wytrzymałe, ale porowate. Digitalfire, serwis z wiedzą o szkliwach, zaleca na ogół porowatość powyżej 15 %, żeby biskwit wciągał wodę ze szkliwa podczas nakładania. Miękki biskwit (stożek 08–06) jest bardziej porowaty; twardy biskwit (często stożek 04) jest mocniejszy, ale gorzej przyjmuje szkliwo.
 
 Table: Jak wypał biskwitowy wpływa na szkliwienie (Digitalfire)
 Label: Jak biskwit wpływa na szkliwienie
@@ -254,7 +254,7 @@ Limity prawne różnią się w zależności od kraju. Tabela pokazuje te obowią
 
 ::food-limits
 
-W USA wyroby nieprzeznaczone do kontaktu z żywnością muszą mieć trwały, wypalony napis „Not for Food Use” (nie do kontaktu z żywnością) albo otwór przechodzący przez powierzchnię stykającą się z żywnością. UE określa limity ołowiu i kadmu w dyrektywie 84/500/EWG, a Wielka Brytania zachowuje te same wartości we własnym prawie. Od 29 maja 2026 r. Holandia, Belgia i Luksemburg dopuszczają ok. 130–150 razy mniej ołowiu i ok. 15 razy mniej kadmu. Australia ustala limity dla wyrobów importowanych; nie znaleźliśmy oficjalnego limitu dla wyrobów wytwarzanych w Australii ani w Nowej Zelandii.
+W USA ozdobne wyroby ceramiczne, które wyglądają na nadające się do kontaktu z żywnością, są traktowane jak naczynia do żywności, chyba że mają naklejkę oraz trwały napis wytłoczony lub wypalony na spodzie, taki jak „Not for Food Use. May Poison Food” (nie do kontaktu z żywnością; może zatruć żywność), albo otwór przechodzący przez powierzchnię stykającą się z żywnością. UE określa limity ołowiu i kadmu w dyrektywie 84/500/EWG, a Wielka Brytania zachowuje te same wartości we własnym prawie. Od 29 maja 2026 r. Holandia, Belgia i Luksemburg dopuszczają ok. 130–150 razy mniej ołowiu i ok. 15 razy mniej kadmu. Australia ustala limity dla wyrobów importowanych; nie znaleźliśmy oficjalnego limitu dla wyrobów wytwarzanych w Australii ani w Nowej Zelandii.
 
 ### Badania
 
@@ -307,7 +307,7 @@ Bentonit (bentonite)
 : Bardzo drobna glina dodawana w ilości 1–3 %, by szkliwo nie osiadało.
 
 Biskwit, wypał biskwitowy (bisque; w Wielkiej Brytanii: biscuit)
-: Pierwszy, niższy wypał, zwykle do stożka 08–04, po którym wyroby są wytrzymałe, ale porowate.
+: Pierwszy, niższy wypał, zwykle do stożka 08–04 (najczęściej 06–04), po którym wyroby są wytrzymałe, ale porowate.
 
 Bor, B₂O₃ (boron)
 : Formalnie tlenek szkłotwórczy, ale stosowany jako topnik; niezbędny od stożka 06 do stożka 6.
@@ -474,6 +474,7 @@ Zmętniacz (opacifier)
 - [Glazy Help: Specific gravity](https://help.glazy.org/testing/specific-gravity)
 - [Orton Ceramic Foundation: Pyrometric cone chart, °F (w serwisie The Ceramic Shop)](https://www.theceramicshop.com/technical_info/Cones/Orton-Cone-Chart-F-022-14.pdf)
 - [Digitalfire: Bisque](https://digitalfire.com/glossary/bisque)
+- [Digitalfire: Bentonite](https://digitalfire.com/material/bentonite)
 - [Digitalfire: Unity molecular formula](https://digitalfire.com/glossary/unity+molecular+formula)
 - [Digitalfire: LOI](https://digitalfire.com/glossary/loi)
 - [Digitalfire: Frit](https://digitalfire.com/glossary/frit)
@@ -489,3 +490,4 @@ Zmętniacz (opacifier)
 - [Potclays: The difference between stoneware and earthenware](https://www.potclays.co.uk/clay-questions/difference-stoneware-earthenware)
 - [US FDA: Compliance Policy Guide Sec. 545.450, Pottery (ceramics), lead contamination](https://www.fda.gov/media/71764/download)
 - [EUR-Lex: Council Directive 84/500/EEC on ceramic articles in contact with food](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:31984L0500)
+- [eCFR: 21 CFR 109.16, Ornamental and decorative ceramicware](https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-109/subpart-A/section-109.16)

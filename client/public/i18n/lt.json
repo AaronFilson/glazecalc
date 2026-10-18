@@ -17,13 +17,17 @@
     "confirmEmail": "El. pašto adreso patvirtinimas – Glazecalc",
     "home": "Jūsų dirbtuvės sąsiuvinis – Glazecalc",
     "recipe": "Receptai – Glazecalc",
+    "import": "Receptų įklijavimas – Glazecalc",
+    "blends": "Mišiniai bandiniams – Glazecalc",
     "material": "Žaliavos – Glazecalc",
     "additive": "Priedai – Glazecalc",
     "firingLogs": "Degimo žurnalai – Glazecalc",
     "notes": "Užrašai – Glazecalc",
     "trash": "Šiukšlinė – Glazecalc",
     "account": "Jūsų paskyra ir nustatymai – Glazecalc",
-    "notFound": "Puslapis nerastas – Glazecalc"
+    "notFound": "Puslapis nerastas – Glazecalc",
+    "shared": "Bendrinamas receptas – Glazecalc",
+    "assistants": "Glazecalc naudojimas su dirbtinio intelekto asistentu – Glazecalc"
   },
   "nav": {
     "skip": "Pereiti prie turinio",
@@ -39,7 +43,9 @@
     "guides": "Vadovai",
     "about": "Apie",
     "account": "Paskyra",
+    "trialAccount": "Bandomasis laikotarpis",
     "accountTitle": "Jūsų paskyra ir nustatymai",
+    "trash": "Šiukšlinė",
     "signOut": "Atsijungti",
     "createAccount": "Sukurti nemokamą paskyrą"
   },
@@ -66,7 +72,8 @@
     "problem": "Pranešti apie problemą",
     "pottery": "Rankų darbo keramika: Updraft Pottery Studio",
     "copyright": "© 2017–2026 Aaron Filson / Candling Development Studio · Nemokama atvirojo kodo programa (MIT licencija)",
-    "languages": "Kalbos"
+    "languages": "Kalbos",
+    "language": "Kalba:"
   },
   "numbers": {
     "notANumber": "Įveskite skaičių, pvz., {example}.",
@@ -85,7 +92,7 @@
     "about": "Glazecalc – nemokama atvirojo kodo keramikos glazūrų chemijos skaičiuoklė ir sąsiuvinis. Sužinokite, kaip ji apskaičiuoja Segerio formulę (UMF) ir kaip sukurta.",
     "privacy": "Kaip Glazecalc tvarko jūsų duomenis: jokių reklamų, analitikos ir sekimo, niekas neparduodama. Kas saugoma, kodėl ir kaip pasinaudoti savo teisėmis.",
     "signup": "Nemokama Glazecalc paskyra keramikos glazūrų receptams, žaliavoms, užrašams ir degimo žurnalams saugoti. Be reklamų, jūsų duomenys niekada neparduodami.",
-    "imageAlt": "Glazecalc: supraskite savo glazūras, o ne tik jas maišykite."
+    "imageAlt": "Glazecalc pradžios puslapis: nemokama glazūrų chemija keramikams, šalia – išdegintų piroskopų nuotrauka."
   },
   "notices": {
     "dismiss": "Uždaryti",
@@ -93,11 +100,15 @@
     "error": "Klaida: {text}"
   },
   "remove": {
-    "removed": "Pašalinta: „{name}“.",
     "alreadyRemoved": "Jau pašalinta: „{name}“.",
+    "trashed": "Perkelta į šiukšlinę: „{name}“.",
+    "undo": "Anuliuoti",
+    "restored": "Grąžinta: „{name}“.",
+    "restoreFailed": "„{name}“ grąžinti nepavyko. Tai vis dar šiukšlinėje.",
     "failed": "Pašalinti nepavyko. Bandykite dar kartą.",
     "question": "Pašalinti „{name}“?",
     "cannotUndo": "Šio veiksmo anuliuoti negalima.",
+    "toTrash": "Iš šiukšlinės grąžinti galima 30 dienų.",
     "removing": "Šalinama...",
     "yes": "Taip, pašalinti",
     "cancel": "Atšaukti",
@@ -222,20 +233,26 @@
     "soldIn": "Parduodama",
     "showing": "Rodoma {shown} iš {noun, select, additives {{total, plural, one {# priedo} few {# priedų} many {# priedo} other {# priedų}}} other {{total, plural, one {# žaliavos} few {# žaliavų} many {# žaliavos} other {# žaliavų}}}}",
     "name": "Pavadinimas",
+    "equivalentWeight": "Ekvivalentinė masė",
+    "firedWeight": "Masė po degimo",
     "notes": "Pastabos",
     "analysis": "Analizė",
+    "details": "Išsami informacija",
     "formula": "Formulė",
+    "formulaLine": "Formulė: {formula}",
     "useInstead": "<b>Vietoj to naudokite:</b> {list}",
     "similar": "Panašios: {list}",
     "replaces": "Pakeičia: {list}",
     "aliases": "Dar vadinama: {list}",
     "madeBy": "Gamintojas: {name}",
     "source": "Šaltinis:",
+    "hazardsLine": "Pavojai: {hazards}",
     "noChemistry": "Nėra cheminės sudėties: neįtraukta į Segerio formulę",
     "countedAs": "Skaičiuojama kaip žaliava {name}",
     "nothingMatches": "Nieko nerasta. Pabandykite kitą pavadinimą, rūšį ar regioną.",
     "loading": "Įkeliama...",
-    "notFetched": "Sąrašo gauti nepavyko. <retry>Bandyti dar kartą</retry>"
+    "notFetched": "Sąrašo gauti nepavyko. <retry>Bandyti dar kartą</retry>",
+    "showAll": "{noun, select, additives {{count, plural, one {Rodyti # priedą} few {Rodyti visus # priedus} many {Rodyti visus # priedo} other {Rodyti visus # priedų}}} other {{count, plural, one {Rodyti # žaliavą} few {Rodyti visas # žaliavas} many {Rodyti visas # žaliavos} other {Rodyti visų # žaliavų}}}}"
   },
   "chemistryForm": {
     "name": "{noun, select, additive {Įveskite priedo pavadinimą.} other {Įveskite žaliavos pavadinimą.}}",
@@ -270,7 +287,7 @@
     "close": "Uždaryti"
   },
   "unity": {
-    "fluxes": "Fliusai – RO",
+    "fluxes": "Fliusai – R₂O ir RO",
     "stabilizers": "Stabilizatoriai – R₂O₃",
     "glassFormers": "Stiklą sudarantys oksidai – RO₂",
     "wildcards": "Kiti oksidai",

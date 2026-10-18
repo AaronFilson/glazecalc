@@ -2,8 +2,14 @@
 // named here are written, so the password hash, the token version and reset
 // links can never end up in a file, and every query is limited to the user.
 import type { Types } from 'mongoose';
+import firing from '../../lib/cones/firing.js';
+import type { FiringBlock } from '../../lib/cones/firing.js';
 import { OWNED_KINDS } from './account_data.ts';
 import { left as recoveryCodesLeft } from './recovery_codes.ts';
+import AccessToken from '../models/access_token.ts';
+import Activity from '../models/activity.ts';
+import RecordVersion from '../models/record_version.ts';
+import ShareLink from '../models/share_link.ts';
 import User, { mfaOn, type UserFields } from '../models/user.ts';
 
 type Id = string | Types.ObjectId;
@@ -12,13 +18,16 @@ type Row = Record<string, unknown>;
 /** Bump when a field is renamed or removed; adding one does not need it. */
 export const EXPORT_VERSION = 1;
 
+/** A record without the database's own bookkeeping. */
+const bare = ({ ownedBy: _owner, __v: _version, ...record }: Row): Row => record;
+
 /** The user's records of one kind, oldest first, without the database's own bookkeeping. */
 export const recordsOf = async (kind: string, userId: Id): Promise<Row[]> => {
   const found = await OWNED_KINDS[kind]
     .find({ ownedBy: String(userId) })
     .sort({ _id: 1 })
     .lean();
-  return found.map(({ ownedBy: _owner, __v: _version, ...record }: Row) => record);
+  return found.map(bare);
 };
 
 /**
@@ -26,10 +35,19 @@ export const recordsOf = async (kind: string, userId: Id): Promise<Row[]> => {
  * secret, a passkey's public key or credential id, the user handle or a
  * recovery code's hash.
  */
-const signInOf = (user: Pick<UserFields, 'mfa'>): Row => {
+const signInOf = (user: Pick<UserFields, 'mfa' | 'identities' | 'passwordless'>): Row => {
   const mfa = user.mfa;
   const on = mfaOn(user);
   return {
+    // false for an account made with a provider that has not set a password yet.
+    ownPassword: !user.passwordless,
+    // Each provider's own id for the person, as it gave it, and when it was linked and last used.
+    providers: (user.identities ?? []).map((identity) => ({
+      provider: identity.provider,
+      subject: identity.subject,
+      linkedAt: identity.linkedAt,
+      lastUsedAt: identity.lastUsedAt
+    })),
     authenticatorApp: mfa?.totp ? { addedAt: mfa.totp.addedAt, lastUsedAt: mfa.totp.lastUsedAt } : null,
     passkeys: (mfa?.passkeys ?? []).map((passkey) => ({
       name: passkey.name,
@@ -40,7 +58,65 @@ const signInOf = (user: Pick<UserFields, 'mfa'>): Row => {
   };
 };
 
-/** The whole export: the account, its preferences and shelf, and every kind of record. */
+/** Earlier versions of the user's records, kept for Undo, oldest first. */
+const versionsOf = async (userId: Id): Promise<Row[]> =>
+  (
+    await RecordVersion.find({ ownedBy: String(userId) })
+      .sort({ savedAt: 1, _id: 1 })
+      .lean()
+  ).map(({ fromCollection, recordId, savedAt, by, record }) => ({
+    fromCollection,
+    recordId,
+    savedAt,
+    by,
+    record: bare((record ?? {}) as Row)
+  }));
+
+/** What access tokens and connected apps did, oldest first. */
+const activityOf = async (userId: Id): Promise<Row[]> =>
+  (
+    await Activity.find({ ownedBy: String(userId) })
+      .sort({ at: 1, _id: 1 })
+      .lean()
+  ).map(({ at, via, client, action, fromCollection, recordId, title }) => ({
+    at,
+    via,
+    client,
+    action,
+    fromCollection,
+    recordId,
+    title
+  }));
+
+/** The account's access tokens and connected apps, in names and dates only: never a token's hash. */
+const accessTokensOf = async (userId: Id): Promise<Row[]> =>
+  (await AccessToken.find({ userId }).sort({ createdAt: 1, _id: 1 }).lean()).map(
+    ({ kind, name, clientId, hint, scopes, createdAt, expiresAt, lastUsedAt, revokedAt, revokedWhy }) => ({
+      kind,
+      name,
+      ...(clientId && { clientId }),
+      ...(hint && { endsWith: hint }),
+      scopes,
+      createdAt,
+      expiresAt,
+      lastUsedAt,
+      revokedAt,
+      revokedWhy
+    })
+  );
+
+/**
+ * The recipes shared by link: which, since when, and whether the notes show.
+ * Never the link: only its hash is kept, and that is left out too.
+ */
+const shareLinksOf = async (userId: Id): Promise<Row[]> =>
+  (
+    await ShareLink.find({ ownedBy: String(userId) })
+      .sort({ createdAt: 1, _id: 1 })
+      .lean()
+  ).map(({ recipeId, createdAt, includeNotes }) => ({ recipeId, createdAt, includeNotes }));
+
+/** The whole export: the account, its preferences, shelf and prices, and every kind of record. */
 export const exportAccount = async (userId: Id, now = new Date()): Promise<Row | null> => {
   const user = await User.findById(userId, {
     email: 1,
@@ -48,14 +124,23 @@ export const exportAccount = async (userId: Id, now = new Date()): Promise<Row |
     role: 1,
     preferences: 1,
     shelf: 1,
+    prices: 1,
     guest: 1,
     expiresAt: 1,
     emailChangedAt: 1,
-    mfa: 1
+    mfa: 1,
+    identities: 1,
+    passwordless: 1
   }).lean();
   if (!user) return null;
   const kinds = Object.keys(OWNED_KINDS);
-  const lists = await Promise.all(kinds.map((kind) => recordsOf(kind, userId)));
+  const [lists, versions, activity, accessTokens, shareLinks] = await Promise.all([
+    Promise.all(kinds.map((kind) => recordsOf(kind, userId))),
+    versionsOf(userId),
+    activityOf(userId),
+    accessTokensOf(userId),
+    shareLinksOf(userId)
+  ]);
   return {
     format: 'glazecalc-export',
     version: EXPORT_VERSION,
@@ -70,8 +155,14 @@ export const exportAccount = async (userId: Id, now = new Date()): Promise<Row |
     },
     preferences: user.preferences ?? {},
     shelf: user.shelf ?? [],
+    // Per kilogram, in the account's currency (preferences.currency, or the region's when '').
+    prices: (user.prices ?? []).map(({ key, perKg }) => ({ key, perKg })),
     signIn: signInOf(user),
-    records: Object.fromEntries(kinds.map((kind, i) => [kind, lists[i]]))
+    records: Object.fromEntries(kinds.map((kind, i) => [kind, lists[i]])),
+    versions,
+    activity,
+    accessTokens,
+    shareLinks
   };
 };
 
@@ -102,11 +193,41 @@ export const recipesCsv = async (userId: Id): Promise<string> => {
       ...((recipe.additives as Line[]) ?? []).map((line) => ['Additive', line])
     ] as Array<[string, Line]>;
     if (!lines.length) lines.push(['', {}]);
+    // The firing as Glazy's export writes it (its "Cone" string and "Atmospheres" list), and the liner flag.
+    // The cone carries the cone sign (Δ06), so a spreadsheet keeps it as text (lib/cones/firing.js, glazyConeCell).
+    const glazy = firing.glazyFiring(recipe.firedAt as FiringBlock | undefined);
+    const cone = firing.glazyConeCell(recipe.firedAt as FiringBlock | undefined);
+    const food = recipe.foodSurface === true ? 'yes' : '';
     for (const [type, line] of lines) {
-      rows.push([recipe.title, recipe.date, recipe.notes, type, line.name, line.amount, line.unit]);
+      rows.push([
+        recipe.title,
+        recipe.date,
+        recipe.notes,
+        type,
+        line.name,
+        line.amount,
+        line.unit,
+        cone,
+        glazy.atmospheres,
+        food
+      ]);
     }
   }
-  return csv(['Recipe', 'Date', 'Notes', 'Type', 'Ingredient', 'Amount', 'Unit of additive'], rows);
+  return csv(
+    [
+      'Recipe',
+      'Date',
+      'Notes',
+      'Type',
+      'Ingredient',
+      'Amount',
+      'Unit of additive',
+      'Cone',
+      'Atmospheres',
+      'Food surface'
+    ],
+    rows
+  );
 };
 
 interface Oxide {

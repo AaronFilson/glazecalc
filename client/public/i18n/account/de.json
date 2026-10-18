@@ -81,6 +81,7 @@
     "createAccount": "Konto erstellen",
     "title": "Ihr Konto",
     "signedInAs": "Angemeldet als {email}.",
+    "contents": "Auf dieser Seite",
     "changeHeading": "Passwort ändern",
     "current": "Aktuelles Passwort",
     "currentMissing": "Geben Sie Ihr aktuelles Passwort ein.",
@@ -106,7 +107,7 @@
     "emailSend": "Link senden",
     "emailFailed": "Fehler: Der Link konnte nicht gesendet werden. Bitte versuchen Sie es erneut.",
     "signOutHeading": "Überall abmelden",
-    "signOutText": "Meldet Sie auf allen Geräten ab, auch auf diesem. Nutzen Sie es, wenn Sie ein Gerät verloren haben oder vermuten, dass jemand anderes Ihre Anmeldedaten hat.",
+    "signOutText": "Meldet Sie auf allen Geräten ab, auch auf diesem, und beendet Ihre Zugriffstoken und Ihre Freigabelinks. Nutzen Sie es, wenn Sie ein Gerät verloren haben oder glauben, dass jemand anderes Ihre Anmeldedaten kennt.",
     "signOutButton": "Überall abmelden",
     "signOutFailed": "Fehler: Die Abmeldung ist fehlgeschlagen. Bitte versuchen Sie es erneut.",
     "confirmStep": "Die Zwei-Schritt-Anmeldung ist eingeschaltet. Bestätigen Sie daher, dass Sie es sind: mit Ihrem Passwort und einem zweiten Schritt."
@@ -118,6 +119,8 @@
     "on": "Die Zwei-Schritt-Anmeldung ist eingeschaltet.",
     "onText": "Sie melden sich mit Ihrem Passwort und einem zweiten Schritt an, oder allein mit einem Passkey.",
     "off": "Die Zwei-Schritt-Anmeldung ist ausgeschaltet.",
+    "badgeOn": "Ein",
+    "badgeOff": "Aus",
     "offText": "Zum Einschalten richten Sie eine Authenticator-App ein oder fügen einen Passkey hinzu.",
     "confirmEmailFirst": "Bestätigen Sie zuerst oben Ihre E-Mail-Adresse. Wir benachrichtigen Sie damit über Änderungen an Ihrer Anmeldung und helfen Ihnen, wenn Sie Ihren zweiten Schritt verlieren.",
     "appHeading": "Authenticator-App",
@@ -141,6 +144,7 @@
     "nameCheck": "Geben Sie dem Passkey einen Namen mit 1 bis {most} Zeichen.",
     "passkeyLimit": "Sie haben {most} Passkeys, das ist die höchste Zahl für ein Konto. Entfernen Sie einen, um einen weiteren hinzuzufügen.",
     "codesTitle": "Wiederherstellungscodes",
+    "codesLeft": "{count, plural, one {# von {total} Wiederherstellungscodes übrig.} other {# von {total} Wiederherstellungscodes übrig.}} Wenn Sie Ihre App oder einen Passkey nicht verwenden können, meldet Sie stattdessen ein Code an. Jeder Code funktioniert nur einmal.",
     "codesLow": "Erstellen Sie bald neue Codes. Wenn sie aufgebraucht sind und Sie Ihre App und Ihre Passkeys verlieren, können Sie sich nicht mehr anmelden.",
     "newCodes": "Neue Wiederherstellungscodes erstellen",
     "offHeading": "Ausschalten",
@@ -149,6 +153,8 @@
     "offCodes": "Ihre Wiederherstellungscodes funktionieren nicht mehr.",
     "offSignOut": "Jedes andere Gerät, das bei Ihrem Konto angemeldet ist, wird abgemeldet. Dieses bleibt angemeldet.",
     "offEmail": "Wir senden Ihnen eine E-Mail, dass sie ausgeschaltet wurde.",
+    "offRemoveApp": "Zwei-Schritt-Anmeldung ausschalten (entfernt die App)",
+    "offRemoveAppFirst": "Die App entfernen, um das Ausschalten zu beginnen",
     "offPasskeys": "{count, plural, one {Um sie auszuschalten, entfernen Sie Ihren Passkey oben unter Passkeys.} other {Um sie auszuschalten, entfernen Sie Ihre # Passkeys oben unter Passkeys.}}",
     "offPasskeysToo": "{count, plural, one {Sie haben auch einen Passkey: Entfernen Sie ihn oben unter Passkeys, ebenso wie die App.} other {Sie haben auch # Passkeys: Entfernen Sie sie oben unter Passkeys, ebenso wie die App.}}",
     "addAppText": "Um eine Authenticator-App einzurichten, bestätigen Sie zuerst, dass Sie es sind.",
@@ -201,6 +207,25 @@
     "recipes": "Rezepte (CSV)",
     "materials": "Rohstoffe (CSV)"
   },
+  "trash": {
+    "heading": "Papierkorb",
+    "text": "Was Sie aus Ihrem Notizbuch entfernen, bleibt 30 Tage im Papierkorb. Stellen Sie es von dort wieder her oder löschen Sie es endgültig.",
+    "open": "Papierkorb öffnen"
+  },
+  "shared": {
+    "heading": "Geteilte Rezepte",
+    "text": "Die Rezepte, die Sie per Link teilen und die jede Person mit dem Link ohne Konto lesen kann. Ein Link wird nur einmal angezeigt, nämlich wenn er erstellt wird, deshalb kann er hier nicht angezeigt werden. Um ein Rezept erneut zu teilen, erstellen Sie unter „Mehr“ beim Rezept einen neuen Link.",
+    "since": "Geteilt seit {date}",
+    "notesShown": "Notizen sichtbar",
+    "notesHidden": "Notizen nicht sichtbar",
+    "untitled": "Rezept ohne Titel",
+    "stop": "Teilen beenden",
+    "stopName": "Teilen von {name} beenden",
+    "stopped": "{name} wird nicht mehr geteilt. Der Link funktioniert nicht mehr.",
+    "stopFailed": "Das hat nicht geklappt. Bitte versuchen Sie es erneut.",
+    "fetchFailed": "Ihre geteilten Rezepte konnten nicht geladen werden. Bitte versuchen Sie es erneut.",
+    "none": "Sie teilen kein Rezept."
+  },
   "settings": {
     "heading": "Einstellungen",
     "intro": "Die Einstellungen werden mit Ihrem Konto gespeichert und gelten daher auf jedem Gerät.",
@@ -227,6 +252,22 @@
       },
       "saved": "Gespeichert: Zahlen und Datumsangaben im Format {language}.",
       "help": "Wie Zahlen und Datumsangaben geschrieben werden: 12,345.6 oder 12.345,6, und die Reihenfolge von Tag und Monat."
+    },
+    "calendar": {
+      "legend": "Kalender",
+      "help": "Der Kalender, in dem Datumsangaben angezeigt werden. Datumsangaben, die Sie eingeben, bleiben im gregorianischen Kalender.",
+      "gregory": {
+        "label": "Gregorianisch",
+        "saved": "Gespeichert: Datumsangaben werden im gregorianischen Kalender angezeigt."
+      },
+      "buddhist": {
+        "label": "Thailändische buddhistische Ära",
+        "saved": "Gespeichert: Datumsangaben werden in der thailändischen buddhistischen Ära angezeigt."
+      },
+      "japanese": {
+        "label": "Japanische Ära",
+        "saved": "Gespeichert: Datumsangaben werden in japanischen Ären angezeigt."
+      }
     },
     "decimalMark": {
       "legend": "Eingabe von Mengen",
@@ -265,7 +306,7 @@
         "saved": "Gespeichert: Brennen nach Ortonkegeln."
       },
       "sk": {
-        "label": "Nach SK-Kegeln (JIS R 8101)",
+        "label": "Nach SK-Kegeln, JIS R 8101",
         "example": "SK 4a, SK 8",
         "saved": "Gespeichert: Brennen nach SK-Kegeln."
       },
@@ -291,6 +332,12 @@
         "saved": "Gespeichert: Glasurdichte als Pint-Gewicht."
       },
       "help": "Wie die Anleitungen die Dicke einer Glasur angeben. Solange Sie nichts wählen, richtet sich dies nach Ihrer Region: Grad Baumé in Italien und Japan, spezifisches Gewicht anderswo."
+    },
+    "currency": {
+      "legend": "Währung für Preise",
+      "help": "Die Preise, die Sie für Rohstoffe angeben, und die Kosten eines Ansatzes gelten in dieser Währung. Wenn Sie sie ändern, werden bereits eingegebene Preise nicht umgerechnet. Solange Sie nichts wählen, richtet sie sich nach Ihrer Region.",
+      "saved": "Gespeichert: Preise in {currency}.",
+      "notConverted": "Ihre gespeicherten Preise wurden nicht umgerechnet: Es sind weiterhin die Zahlen, die Sie eingegeben haben."
     },
     "theme": {
       "legend": "Hell oder dunkel",
@@ -386,5 +433,72 @@
     "account": "Ihr Konto",
     "signIn": "Anmelden",
     "failed": "Fehler: Die Adresse konnte nicht bestätigt werden. Bitte versuchen Sie es erneut."
+  },
+  "providers": {
+    "continueGoogle": "Mit Google fortfahren",
+    "continueGithub": "Mit GitHub fortfahren",
+    "failed": "Die Anmeldung hat nicht geklappt. Bitte versuchen Sie es erneut.",
+    "heading": "Google und GitHub",
+    "intro": "Verknüpfen Sie ein Google- oder GitHub-Konto, um sich damit anzumelden. Glazecalc speichert davon nur die Kennung des Kontos, nie den Namen, das Bild oder sonst etwas, und die Zwei-Schritt-Anmeldung verlangt weiterhin ihren zweiten Schritt.",
+    "passwordless": "Dieses Konto hat kein Passwort. Um Ihre E-Mail-Adresse, die Zwei-Schritt-Anmeldung oder die Anmeldearten zu ändern oder um Ihr Konto zu löschen, bestätigen Sie, dass Sie es sind, indem Sie sich erneut mit Google oder GitHub anmelden. Sie können auch ein Passwort festlegen.",
+    "setPassword": "Link zum Festlegen eines Passworts per E-Mail senden",
+    "setPasswordUnlinks": "Wenn Sie über den per E-Mail gesendeten Link ein Passwort festlegen, werden Google und GitHub ebenfalls getrennt. Sie können sie danach erneut verknüpfen.",
+    "setPasswordFailed": "Der Link konnte nicht gesendet werden. Bitte versuchen Sie es erneut.",
+    "confirmFirst": "Bestätigen Sie zuerst Ihre E-Mail-Adresse mit dem Link, den wir Ihnen gesendet haben, um Google oder GitHub zu verknüpfen.",
+    "linkedOn": "Verknüpft am {date}",
+    "notLinked": "Nicht verknüpft",
+    "link": "{provider} verknüpfen",
+    "unlink": "{provider} trennen",
+    "linkFailed": "Die Verknüpfung ist fehlgeschlagen. Bitte versuchen Sie es erneut.",
+    "reauthIntro": "Dieses Konto hat kein Passwort. Bestätigen Sie deshalb, dass Sie es sind, indem Sie sich erneut anmelden. Nehmen Sie die Änderung dann innerhalb von 5 Minuten vor.",
+    "reauthButton": "Erneut mit {provider} anmelden",
+    "reauthHeld": "Sie haben sich erneut mit {provider} angemeldet. In den nächsten 5 Minuten können Sie eine Änderung ohne Passwort vornehmen.",
+    "reauthFirst": "Bitte melden Sie sich zuerst mit einer der Schaltflächen oben erneut an.",
+    "reauthFailed": "Die erneute Anmeldung konnte nicht gestartet werden. Bitte versuchen Sie es erneut."
+  },
+  "tokens": {
+    "heading": "Zugriffstoken",
+    "intro": "Mit einem Zugriffstoken kann Ihr eigener KI-Assistent oder Ihr eigenes Skript die Rezepte, Rohstoffe, Notizen und Brennprotokolle in Ihrem Konto lesen. Vorerst kann ein Token nur lesen: Es ändert oder entfernt nie etwas. Jedes Token hört an dem Tag auf zu funktionieren, den Sie wählen, oder sobald Sie es widerrufen.",
+    "howTo": "So verbinden Sie einen KI-Assistenten",
+    "listLabel": "Ihre Zugriffstoken",
+    "none": "Sie haben keine Zugriffstoken.",
+    "hint": "endet auf {hint}",
+    "readOnly": "Nur Lesen",
+    "created": "erstellt am {date}",
+    "lastUsed": "zuletzt verwendet am {date}",
+    "neverUsed": "nie verwendet",
+    "expires": "läuft ab am {date}",
+    "expiredOn": "abgelaufen am {date}",
+    "revokedOn": "widerrufen am {date}",
+    "revoke": "Widerrufen",
+    "revokeNamed": "{name} widerrufen",
+    "revokeAll": "Alle Zugriffstoken widerrufen",
+    "revokeFailed": "Fehler: Das Token konnte nicht widerrufen werden. Bitte versuchen Sie es erneut.",
+    "loadFailed": "Ihre Zugriffstoken konnten nicht geladen werden. Bitte laden Sie die Seite neu und versuchen Sie es erneut.",
+    "createHeading": "Token erstellen",
+    "name": "Name",
+    "nameHint": "Etwas, woran Sie es erkennen, etwa der Assistent oder der Computer, für den es gedacht ist.",
+    "nameCheck": "Bitte geben Sie dem Token einen Namen mit 1 bis {most} Zeichen.",
+    "expiry": "Läuft ab nach",
+    "days": "{count, plural, one {# Tag} other {# Tage}}",
+    "expiryHint": "Wir senden Ihnen 7 Tage, bevor ein Token nicht mehr funktioniert, eine E-Mail.",
+    "confirmEmailFirst": "Bevor Sie ein Token erstellen können, bestätigen Sie Ihre E-Mail-Adresse: Öffnen Sie den Link, den wir an {email} gesendet haben. Wir benachrichtigen Sie unter dieser Adresse, wenn ein Token erstellt wird und bevor eines nicht mehr funktioniert.",
+    "resend": "Bestätigungslink erneut senden",
+    "scopeNote": "Das Token kann Ihre Datensätze lesen, aber nicht ändern.",
+    "confirmStep": "Bestätigen Sie, dass Sie es sind, um das Token zu erstellen.",
+    "create": "Token erstellen",
+    "failed": "Fehler: Das Token konnte nicht erstellt werden. Bitte versuchen Sie es erneut.",
+    "limit": "Sie haben {most} aktive Zugriffstoken, die Höchstzahl für ein Konto. Widerrufen Sie eines, um ein weiteres zu erstellen.",
+    "newHeading": "Kopieren Sie Ihr neues Token jetzt",
+    "newText": "Nur jetzt wird es angezeigt. Wer es hat, kann Ihre Datensätze lesen, bis es nicht mehr funktioniert. Bewahren Sie es deshalb wie ein Passwort auf und geben Sie es nur Ihrem eigenen Assistenten oder Skript.",
+    "newLabel": "Ihr neues Zugriffstoken",
+    "copy": "Token kopieren",
+    "copied": "Kopiert.",
+    "copyFailed": "Das Kopieren hat nicht geklappt. Markieren Sie das Token und kopieren Sie es selbst.",
+    "done": "Ich habe es kopiert",
+    "keptHeading": "Ihre Zugriffstoken funktionieren weiterhin",
+    "keptText": "{count, plural, one {Die Änderung Ihres Passworts hat Ihr Zugriffstoken nicht beendet. Wenn Sie es geändert haben, weil jemand anderes es kennen könnte, widerrufen Sie auch das Token.} other {Die Änderung Ihres Passworts hat Ihre # Zugriffstoken nicht beendet. Wenn Sie es geändert haben, weil jemand anderes es kennen könnte, widerrufen Sie auch die Token.}}",
+    "keep": "Behalten",
+    "signOutNote": "{count, plural, one {Es beendet auch Ihr Zugriffstoken, endgültig.} other {Es beendet auch Ihre # Zugriffstoken, endgültig.}}"
   }
 }

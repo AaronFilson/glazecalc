@@ -38,7 +38,7 @@ Die **Tonmasse**{{en: clay body}} ist der Ton, aus dem ein Gefäß gemacht ist. 
 
 ### Die zwei Brände
 
-Der erste, niedrigere Brand ist der **Schrühbrand**{{en: bisque}} (in britischen Quellen **biscuit**), meist Kegel 08–04, etwa {{1740–1940 °F; 950–1060 °C}}. Danach ist die Ware fest, aber porös. Digitalfire, eine Referenzseite zu Glasuren, empfiehlt im Allgemeinen mehr als 15 % Porosität, damit die geschrühte Ware der Glasur beim Auftragen Wasser entzieht. Niedrig geschrühte Ware (Kegel 08–06) ist poröser; hoch geschrühte (oft Kegel 04) ist fester, nimmt die Glasur aber schlechter an.
+Der erste, niedrigere Brand ist der **Schrühbrand**{{en: bisque}} (in britischen Quellen **biscuit**), meist Kegel 08–04 (am häufigsten 06–04), etwa {{1728–1945 °F; 942–1063 °C}}. Danach ist die Ware fest, aber porös. Digitalfire, eine Referenzseite zu Glasuren, empfiehlt im Allgemeinen mehr als 15 % Porosität, damit die geschrühte Ware der Glasur beim Auftragen Wasser entzieht. Niedrig geschrühte Ware (Kegel 08–06) ist poröser; hoch geschrühte (oft Kegel 04) ist fester, nimmt die Glasur aber schlechter an.
 
 Table: Wie der Schrühbrand das Glasieren beeinflusst (Digitalfire)
 Label: Wie der Schrühbrand das Glasieren beeinflusst
@@ -254,7 +254,7 @@ Die gesetzlichen Grenzwerte sind von Land zu Land verschieden. Die Tabelle zeigt
 
 ::food-limits
 
-In den USA muss Ware, die nicht für Lebensmittel gedacht ist, einen dauerhaften, eingebrannten Hinweis „Not for Food Use“ (nicht für Lebensmittel) tragen oder ein Loch durch die Fläche haben, die mit Lebensmitteln in Berührung käme. Die EU legt Grenzwerte für Blei und Cadmium in der Richtlinie 84/500/EWG fest, und das Vereinigte Königreich behält dieselben Werte in seinem eigenen Recht bei. Ab dem 29. Mai 2026 erlauben die Niederlande, Belgien und Luxemburg etwa 130- bis 150-mal weniger Blei und etwa 15-mal weniger Cadmium. Australien legt Grenzwerte für eingeführte Ware fest; für Ware, die in Australien oder Neuseeland hergestellt wird, haben wir keinen amtlichen Grenzwert gefunden.
+In den USA gilt dekorative Keramikware, die für Lebensmittel brauchbar aussieht, als Ware für Lebensmittel, es sei denn, sie trägt ein aufgeklebtes Etikett und einen dauerhaften Hinweis, der in ihren Boden geformt oder eingebrannt ist, etwa „Not for Food Use. May Poison Food“ (nicht für Lebensmittel; kann Lebensmittel vergiften), oder hat ein Loch durch die Fläche, die mit Lebensmitteln in Berührung käme. Die EU legt Grenzwerte für Blei und Cadmium in der Richtlinie 84/500/EWG fest, und das Vereinigte Königreich behält dieselben Werte in seinem eigenen Recht bei. Ab dem 29. Mai 2026 erlauben die Niederlande, Belgien und Luxemburg etwa 130- bis 150-mal weniger Blei und etwa 15-mal weniger Cadmium. Australien legt Grenzwerte für eingeführte Ware fest; für Ware, die in Australien oder Neuseeland hergestellt wird, haben wir keinen amtlichen Grenzwert gefunden.
 
 ### Prüfen
 
@@ -415,7 +415,7 @@ Schlicker und Engobe (slip, engobe)
 : Ton in Wasser; eine Engobe ist ein schlickerartiger Überzug mit mehr Anteilen, die kein Ton sind.
 
 Schrühbrand (bisque, UK: biscuit)
-: Der erste, niedrigere Brand, meist Kegel 08–04; danach ist die Ware fest, aber porös.
+: Der erste, niedrigere Brand, meist Kegel 08–04 (am häufigsten 06–04); danach ist die Ware fest, aber porös.
 
 Segerformel (unity molecular formula, UMF, Seger formula)
 : Die Oxide einer Glasur als Anzahlen von Molekülen, so umgerechnet, dass die Flussmittel zusammen 1 ergeben.
@@ -474,6 +474,7 @@ Zusatz (additive)
 - [Glazy Help: Specific gravity](https://help.glazy.org/testing/specific-gravity)
 - [Orton Ceramic Foundation: Pyrometric cone chart, °F (über The Ceramic Shop)](https://www.theceramicshop.com/technical_info/Cones/Orton-Cone-Chart-F-022-14.pdf)
 - [Digitalfire: Bisque](https://digitalfire.com/glossary/bisque)
+- [Digitalfire: Bentonite](https://digitalfire.com/material/bentonite)
 - [Digitalfire: Unity molecular formula](https://digitalfire.com/glossary/unity+molecular+formula)
 - [Digitalfire: LOI](https://digitalfire.com/glossary/loi)
 - [Digitalfire: Frit](https://digitalfire.com/glossary/frit)
@@ -489,3 +490,4 @@ Zusatz (additive)
 - [Potclays: The difference between stoneware and earthenware](https://www.potclays.co.uk/clay-questions/difference-stoneware-earthenware)
 - [US FDA: Compliance Policy Guide Sec. 545.450, Pottery (ceramics), lead contamination](https://www.fda.gov/media/71764/download)
 - [EUR-Lex: Council Directive 84/500/EEC on ceramic articles in contact with food](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:31984L0500)
+- [eCFR: 21 CFR 109.16, Ornamental and decorative ceramicware](https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-109/subpart-A/section-109.16)

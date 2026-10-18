@@ -81,6 +81,7 @@
     "createAccount": "Crear una cuenta",
     "title": "Su cuenta",
     "signedInAs": "Ha iniciado sesión como {email}.",
+    "contents": "En esta página",
     "changeHeading": "Cambiar la contraseña",
     "current": "Contraseña actual",
     "currentMissing": "Introduzca su contraseña actual.",
@@ -106,7 +107,7 @@
     "emailSend": "Enviar el enlace",
     "emailFailed": "Error: no se ha podido enviar el enlace. Inténtelo de nuevo.",
     "signOutHeading": "Cerrar sesión en todas partes",
-    "signOutText": "Cierra su sesión en todos los dispositivos, incluido este. Úselo si ha perdido un dispositivo o cree que otra persona tiene sus datos de inicio de sesión.",
+    "signOutText": "Cierra la sesión en todos los dispositivos, incluido este, y anula sus tokens de acceso y sus enlaces para compartir. Úselo si ha perdido un dispositivo o cree que otra persona tiene sus datos de inicio de sesión.",
     "signOutButton": "Cerrar sesión en todas partes",
     "signOutFailed": "Error: no se ha podido cerrar la sesión. Inténtelo de nuevo.",
     "confirmStep": "El inicio de sesión en dos pasos está activado, así que confirme que es usted: con su contraseña y un segundo paso."
@@ -118,6 +119,8 @@
     "on": "El inicio de sesión en dos pasos está activado.",
     "onText": "Inicia sesión con su contraseña y un segundo paso, o solo con una llave de acceso.",
     "off": "El inicio de sesión en dos pasos está desactivado.",
+    "badgeOn": "Activado",
+    "badgeOff": "Desactivado",
     "offText": "Para activarlo, configure una aplicación de autenticación o añada una llave de acceso.",
     "confirmEmailFirst": "Confirme primero su correo electrónico, arriba. Lo usamos para avisarle de los cambios en su forma de iniciar sesión y para ayudarle si pierde su segundo paso.",
     "appHeading": "Aplicación de autenticación",
@@ -141,6 +144,7 @@
     "nameCheck": "Ponga a la llave de acceso un nombre de 1 a {most} caracteres.",
     "passkeyLimit": "Tiene {most} llaves de acceso, el máximo para una cuenta. Quite una para añadir otra.",
     "codesTitle": "Códigos de recuperación",
+    "codesLeft": "{count, plural, one {Queda # de {total} códigos de recuperación.} many {Quedan # de {total} códigos de recuperación.} other {Quedan # de {total} códigos de recuperación.}} Si no puede usar su aplicación o una llave de acceso, un código le permite iniciar sesión. Cada código funciona una sola vez.",
     "codesLow": "Cree códigos nuevos pronto. Si se agotan y pierde su aplicación y sus llaves de acceso, no podrá iniciar sesión.",
     "newCodes": "Crear códigos de recuperación nuevos",
     "offHeading": "Desactivarlo",
@@ -149,6 +153,8 @@
     "offCodes": "Sus códigos de recuperación dejan de funcionar.",
     "offSignOut": "Se cierra la sesión en todos los demás dispositivos con la sesión iniciada en su cuenta. En este se mantiene.",
     "offEmail": "Le enviamos un correo para decirle que se ha desactivado.",
+    "offRemoveApp": "Desactivar el inicio de sesión en dos pasos (quita la aplicación)",
+    "offRemoveAppFirst": "Quitar la aplicación para empezar a desactivarlo",
     "offPasskeys": "{count, plural, one {Para desactivarlo, quite su llave de acceso en Llaves de acceso, arriba.} many {Para desactivarlo, quite sus # llaves de acceso en Llaves de acceso, arriba.} other {Para desactivarlo, quite sus # llaves de acceso en Llaves de acceso, arriba.}}",
     "offPasskeysToo": "{count, plural, one {También tiene una llave de acceso: quítela en Llaves de acceso, arriba, además de la aplicación.} many {También tiene # llaves de acceso: quítelas en Llaves de acceso, arriba, además de la aplicación.} other {También tiene # llaves de acceso: quítelas en Llaves de acceso, arriba, además de la aplicación.}}",
     "addAppText": "Para configurar una aplicación de autenticación, confirme primero que es usted.",
@@ -201,6 +207,25 @@
     "recipes": "Recetas (CSV)",
     "materials": "Materiales (CSV)"
   },
+  "trash": {
+    "heading": "Papelera",
+    "text": "Lo que quita de su cuaderno espera 30 días en la papelera. Recupérelo desde allí, o elimínelo para siempre.",
+    "open": "Abrir la papelera"
+  },
+  "shared": {
+    "heading": "Recetas compartidas",
+    "text": "Las recetas que comparte con un enlace, que cualquiera que lo tenga puede leer sin una cuenta. Un enlace se muestra solo una vez, al crearlo, así que no se puede mostrar aquí. Para compartir una receta de nuevo, cree un enlace nuevo en Más, dentro de la receta.",
+    "since": "Compartida desde el {date}",
+    "notesShown": "Con las notas",
+    "notesHidden": "Sin las notas",
+    "untitled": "Receta sin título",
+    "stop": "Dejar de compartir",
+    "stopName": "Dejar de compartir {name}",
+    "stopped": "{name} ya no se comparte. Su enlace ya no funciona.",
+    "stopFailed": "No ha funcionado. Inténtelo de nuevo.",
+    "fetchFailed": "No se han podido cargar sus recetas compartidas. Inténtelo de nuevo.",
+    "none": "No está compartiendo ninguna receta."
+  },
   "settings": {
     "heading": "Ajustes",
     "intro": "Se guardan con su cuenta, así que se aplican en todos los dispositivos.",
@@ -227,6 +252,22 @@
       },
       "saved": "Guardado: números y fechas como en {language}.",
       "help": "Cómo se escriben los números y las fechas: 12,345.6 o 12.345,6, y el orden del día y el mes."
+    },
+    "calendar": {
+      "legend": "Calendario",
+      "help": "El calendario en el que se muestran las fechas. Las fechas que escriba siguen en el calendario gregoriano.",
+      "gregory": {
+        "label": "Gregoriano",
+        "saved": "Guardado: las fechas se muestran en el calendario gregoriano."
+      },
+      "buddhist": {
+        "label": "Era budista tailandesa",
+        "saved": "Guardado: las fechas se muestran en la era budista tailandesa."
+      },
+      "japanese": {
+        "label": "Era japonesa",
+        "saved": "Guardado: las fechas se muestran en eras japonesas."
+      }
     },
     "decimalMark": {
       "legend": "Escritura de cantidades",
@@ -265,7 +306,7 @@
         "saved": "Guardado: cocción por conos Orton."
       },
       "sk": {
-        "label": "Por conos SK (JIS R 8101)",
+        "label": "Por conos SK, JIS R 8101",
         "example": "SK 4a, SK 8",
         "saved": "Guardado: cocción por conos SK."
       },
@@ -291,6 +332,12 @@
         "saved": "Guardado: densidad del esmalte como peso por pinta."
       },
       "help": "Cómo dan las guías la densidad de un esmalte. Mientras no elija, sigue a su región: grados Baumé en Italia y Japón, densidad relativa en los demás lugares."
+    },
+    "currency": {
+      "legend": "Moneda de los precios",
+      "help": "Los precios que indica para los materiales, y lo que cuesta una tanda, están en esta moneda. Cambiarla no convierte los precios que ya haya indicado. Mientras no elija, se usa la de su región.",
+      "saved": "Guardado: precios en {currency}.",
+      "notConverted": "Sus precios guardados no se han convertido: siguen siendo los números que indicó."
     },
     "theme": {
       "legend": "Claro u oscuro",
@@ -386,5 +433,72 @@
     "account": "Su cuenta",
     "signIn": "Iniciar sesión",
     "failed": "Error: no se ha podido confirmar la dirección. Inténtelo de nuevo."
+  },
+  "providers": {
+    "continueGoogle": "Continuar con Google",
+    "continueGithub": "Continuar con GitHub",
+    "failed": "No ha funcionado el inicio de sesión. Inténtelo de nuevo.",
+    "heading": "Google y GitHub",
+    "intro": "Vincule una cuenta de Google o de GitHub para iniciar sesión con ella. Glazecalc solo guarda el identificador de la cuenta, nunca su nombre, su imagen ni nada más, y el inicio de sesión en dos pasos sigue pidiendo su segundo paso.",
+    "passwordless": "Esta cuenta no tiene contraseña. Para cambiar su correo electrónico, el inicio de sesión en dos pasos o las formas de iniciar sesión, o para eliminar su cuenta, confirma que es usted iniciando sesión de nuevo con Google o GitHub. También puede establecer una contraseña.",
+    "setPassword": "Enviarme por correo un enlace para establecer una contraseña",
+    "setPasswordUnlinks": "Establecer una contraseña con el enlace del correo también desvincula Google y GitHub. Después puede vincularlos de nuevo.",
+    "setPasswordFailed": "No se ha podido enviar el enlace. Inténtelo de nuevo.",
+    "confirmFirst": "Para vincular Google o GitHub, confirme primero su correo electrónico con el enlace que le enviamos.",
+    "linkedOn": "Vinculado el {date}",
+    "notLinked": "Sin vincular",
+    "link": "Vincular {provider}",
+    "unlink": "Desvincular {provider}",
+    "linkFailed": "No se ha podido vincular. Inténtelo de nuevo.",
+    "reauthIntro": "Esta cuenta no tiene contraseña, así que confirme que es usted iniciando sesión de nuevo. Después haga el cambio en un plazo de 5 minutos.",
+    "reauthButton": "Iniciar sesión de nuevo con {provider}",
+    "reauthHeld": "Ha iniciado sesión de nuevo con {provider}. En los próximos 5 minutos puede hacer un cambio sin contraseña.",
+    "reauthFirst": "Inicie sesión de nuevo primero, con uno de los botones de arriba.",
+    "reauthFailed": "No se ha podido empezar a iniciar sesión de nuevo. Inténtelo de nuevo."
+  },
+  "tokens": {
+    "heading": "Tokens de acceso",
+    "intro": "Un token de acceso permite a su propio asistente de IA o script leer las recetas, los materiales, las notas y los registros de cocción de su cuenta. Por ahora un token solo puede leer: nunca cambia ni quita nada. Cada token deja de funcionar el día que elija, o en cuanto lo revoque.",
+    "howTo": "Cómo conectar un asistente de IA",
+    "listLabel": "Sus tokens de acceso",
+    "none": "No tiene ningún token de acceso.",
+    "hint": "termina en {hint}",
+    "readOnly": "Solo lectura",
+    "created": "creado el {date}",
+    "lastUsed": "último uso el {date}",
+    "neverUsed": "nunca usado",
+    "expires": "caduca el {date}",
+    "expiredOn": "caducó el {date}",
+    "revokedOn": "revocado el {date}",
+    "revoke": "Revocar",
+    "revokeNamed": "Revocar {name}",
+    "revokeAll": "Revocar todos los tokens de acceso",
+    "revokeFailed": "Error: no se ha podido revocar el token. Inténtelo de nuevo.",
+    "loadFailed": "No se han podido cargar sus tokens de acceso. Recargue la página para intentarlo de nuevo.",
+    "createHeading": "Crear un token",
+    "name": "Nombre",
+    "nameHint": "Algo que sirva para distinguirlo, como el asistente o el ordenador para el que es.",
+    "nameCheck": "Ponga al token un nombre de 1 a {most} caracteres.",
+    "expiry": "Deja de funcionar después de",
+    "days": "{count, plural, one {# día} many {# días} other {# días}}",
+    "expiryHint": "Le enviamos un correo 7 días antes de que un token deje de funcionar.",
+    "confirmEmailFirst": "Para poder crear un token, confirme su correo electrónico: abra el enlace que enviamos a {email}. A esa dirección le avisamos cuando se crea un token y antes de que uno deje de funcionar.",
+    "resend": "Enviar de nuevo el enlace de confirmación",
+    "scopeNote": "El token puede leer sus registros, pero no cambiarlos.",
+    "confirmStep": "Para crear el token, confirme que es usted.",
+    "create": "Crear el token",
+    "failed": "Error: no se ha podido crear el token. Inténtelo de nuevo.",
+    "limit": "Tiene {most} tokens de acceso en funcionamiento, el máximo para una cuenta. Revoque uno para crear otro.",
+    "newHeading": "Copie ahora su token nuevo",
+    "newText": "Esta es la única vez que se muestra. Quien lo tenga puede leer sus registros hasta que deje de funcionar, así que guárdelo como una contraseña y dé el token solo a su propio asistente o script.",
+    "newLabel": "Su token de acceso nuevo",
+    "copy": "Copiar el token",
+    "copied": "Copiado.",
+    "copyFailed": "No se ha podido copiar. Seleccione el token y cópielo usted.",
+    "done": "Ya lo he copiado",
+    "keptHeading": "Sus tokens de acceso siguen funcionando",
+    "keptText": "{count, plural, one {Cambiar su contraseña no ha anulado su token de acceso. Si la cambió porque otra persona puede conocerla, revoque también el token.} many {Cambiar su contraseña no ha anulado sus # tokens de acceso. Si la cambió porque otra persona puede conocerla, revóquelos también.} other {Cambiar su contraseña no ha anulado sus # tokens de acceso. Si la cambió porque otra persona puede conocerla, revóquelos también.}}",
+    "keep": "Conservarlos",
+    "signOutNote": "{count, plural, one {También anula su token de acceso, para siempre.} many {También anula sus # tokens de acceso, para siempre.} other {También anula sus # tokens de acceso, para siempre.}}"
   }
 }

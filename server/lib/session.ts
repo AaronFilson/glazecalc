@@ -90,3 +90,33 @@ const cookie = (req: Request, wanted: string): string | null => {
 
 /** The token in the request's session cookie, or null: only under the name this place sets (name()). */
 export const tokenIn = (req: Request): string | null => cookie(req, name());
+
+// The provider sign-in's own cookie (server/routes/oauth_routes.ts,
+// docs/adr/0015-provider-sign-in.md): a random value naming the sign-in under
+// way, for OAUTH_LOGIN_MINUTES. SameSite=Lax, because the provider's redirect
+// back is a top-level navigation from another site, which a Strict cookie
+// would not come with. In production it is __Host-glazecalc_oauth, Path=/, so
+// no other host can plant one (login CSRF), as with the session; in
+// development, glazecalc_oauth on Path=/api/auth. It is set only when the
+// person presses a provider button.
+
+/** The provider cookie's name here. */
+export const oauthName = (): string => (production() ? '__Host-glazecalc_oauth' : 'glazecalc_oauth');
+
+const oauthOptions = (): CookieOptions =>
+  production()
+    ? { httpOnly: true, sameSite: 'lax', secure: true, path: '/' }
+    : { httpOnly: true, sameSite: 'lax', secure: false, path: '/api/auth' };
+
+/** Sets the provider cookie for `minutes`. */
+export const startOAuth = (res: Response, value: string, minutes: number): void => {
+  res.cookie(oauthName(), value, { ...oauthOptions(), maxAge: minutes * 60 * 1000 });
+};
+
+/** Clears the provider cookie. */
+export const endOAuth = (res: Response): void => {
+  res.clearCookie(oauthName(), oauthOptions());
+};
+
+/** The provider cookie's value in the request, or null. */
+export const oauthIn = (req: Request): string | null => cookie(req, oauthName());

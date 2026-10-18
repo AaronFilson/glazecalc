@@ -1,6 +1,6 @@
 import { DOCUMENT } from '@angular/common';
 import { Component, DestroyRef, Renderer2, effect, inject, input } from '@angular/core';
-import { PAGE_LANGUAGE, pathIn } from '../i18n/language';
+import { pathIn } from '../i18n/language';
 
 /** Where the site lives. The prerender has no server to ask, and search wants whole addresses. */
 export const SITE = 'https://glazecalcapp.com';
@@ -21,6 +21,24 @@ export function webApplication(description: string, language: string, address: s
     offers: { '@type': 'Offer', price: 0, priceCurrency: 'USD' },
     inLanguage: language,
     url: address
+  };
+}
+
+/**
+ * The home page's data: its WebApplication, and on the site's own home page
+ * (the English one at the root) a WebSite too, in one @graph, which is where
+ * Google reads the site's name for its results
+ * (https://developers.google.com/search/docs/appearance/site-names). The other
+ * languages' home pages are subdirectories, which Google does not read for the
+ * name, so they keep the WebApplication alone.
+ */
+export function homeData(description: string, language: string, address: string): object {
+  const app = webApplication(description, language, address);
+  if (address !== SITE + '/') return app;
+  const { '@context': context, ...rest } = app as Record<string, unknown>;
+  return {
+    '@context': context,
+    '@graph': [{ '@type': 'WebSite', name: 'Glazecalc', url: SITE + '/' }, rest]
   };
 }
 
@@ -80,10 +98,4 @@ export class StructuredData {
     });
     inject(DestroyRef).onDestroy(() => script?.remove());
   }
-}
-
-/** The language and the address of the page, for the data about it. */
-export function pageIdentity(): { language: string; address: string } {
-  const language = inject(PAGE_LANGUAGE);
-  return { language, address: pageAddress(language, inject(DOCUMENT).location.pathname) };
 }

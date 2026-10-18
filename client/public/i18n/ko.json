@@ -5,7 +5,7 @@
     "guides": "가이드 - Glazecalc",
     "glazingBasics": "기초부터 배우는 유약 - Glazecalc",
     "makingAGlaze": "유약 만드는 법 - Glazecalc",
-    "safeMixing": "안전한 조합과 환기 - Glazecalc",
+    "safeMixing": "안전한 유약 배합과 환기 - Glazecalc",
     "homeSafety": "가족을 중독에서 지키세요 - Glazecalc",
     "firing": "기본 가마 소성 - Glazecalc",
     "about": "소개 - Glazecalc",
@@ -17,13 +17,17 @@
     "confirmEmail": "이메일 확인 - Glazecalc",
     "home": "작업 노트 - Glazecalc",
     "recipe": "레시피 - Glazecalc",
+    "import": "레시피 붙여넣기 - Glazecalc",
+    "blends": "시편 블렌드 - Glazecalc",
     "material": "원료 - Glazecalc",
     "additive": "첨가제 - Glazecalc",
     "firingLogs": "소성 기록 - Glazecalc",
     "notes": "메모 - Glazecalc",
     "trash": "휴지통 - Glazecalc",
     "account": "계정과 설정 - Glazecalc",
-    "notFound": "찾을 수 없음 - Glazecalc"
+    "notFound": "찾을 수 없음 - Glazecalc",
+    "shared": "공유된 레시피 - Glazecalc",
+    "assistants": "AI 어시스턴트에서 Glazecalc 사용하기 - Glazecalc"
   },
   "nav": {
     "skip": "본문으로 건너뛰기",
@@ -39,7 +43,9 @@
     "guides": "가이드",
     "about": "소개",
     "account": "계정",
+    "trialAccount": "체험 계정",
     "accountTitle": "계정과 설정",
+    "trash": "휴지통",
     "signOut": "로그아웃",
     "createAccount": "무료 계정 만들기"
   },
@@ -66,7 +72,8 @@
     "problem": "문제 신고",
     "pottery": "수제 도자기: Updraft Pottery Studio",
     "copyright": "© 2017–2026 Aaron Filson / Candling Development Studio · 무료 오픈 소스(MIT License)",
-    "languages": "언어"
+    "languages": "언어",
+    "language": "언어:"
   },
   "numbers": {
     "notANumber": "숫자를 입력하세요(예: {example}).",
@@ -81,11 +88,11 @@
     "safeMixing": "유약 분진이 폐에 들어가지 않게, 가마에서 나오는 가스가 집 안에 들어오지 않게 하는 법: 안전한 습관, 방진마스크, 청소, 환기, 위험한 원료.",
     "homeSafety": "아이나 반려동물이 유약 원료를 삼켰을 때 할 일과, 원료, 분진, 가마, 수제 기물을 가족 곁에서 안전하게 다루는 법을 설명합니다.",
     "firing": "전기가마를 소성하는 법: 콘을 고르고 놓고 읽는 법, 초벌과 재벌의 공개된 소성 스케줄, 콘 온도표를 담았습니다.",
-    "advice": "Glazecalc 앱이 알려 드리는 조합, 시유, 소성에 관한 실용적인 조언과 직접 적은 조언을 볼 수 있습니다. 도예가를 위한 무료 서비스입니다.",
+    "advice": "Glazecalc 앱이 알려 드리는 배합, 시유, 소성에 관한 실용적인 조언과 직접 적은 조언을 볼 수 있습니다. 도예가를 위한 무료 서비스입니다.",
     "about": "Glazecalc 앱은 무료 오픈 소스 유약 화학 계산기이자 노트입니다. 제게르식을 계산하는 방법과 만들어진 방식을 소개합니다.",
     "privacy": "Glazecalc 앱이 데이터를 다루는 방법: 광고, 분석, 추적이 없고 판매하지 않습니다. 보관하는 정보와 이유, 권리를 행사하는 방법을 안내합니다.",
     "signup": "무료 Glazecalc 계정으로 유약 레시피, 원료, 메모, 소성 기록을 보관하세요. 광고가 없고 데이터를 판매하지 않습니다.",
-    "imageAlt": "Glazecalc: 유약을 섞는 데서 그치지 않고 이해하세요."
+    "imageAlt": "Glazecalc 홈페이지: 도예가를 위한 무료 유약 화학 계산기와 소성한 콘 세트 사진."
   },
   "notices": {
     "dismiss": "닫기",
@@ -93,11 +100,15 @@
     "error": "오류: {text}"
   },
   "remove": {
-    "removed": "“{name}” 항목을 삭제했습니다.",
     "alreadyRemoved": "“{name}” 항목은 이미 삭제되었습니다.",
+    "trashed": "“{name}” 항목을 휴지통으로 옮겼습니다.",
+    "undo": "실행 취소",
+    "restored": "“{name}” 항목을 복원했습니다.",
+    "restoreFailed": "“{name}” 항목을 복원하지 못했습니다. 아직 휴지통에 있습니다.",
     "failed": "삭제하지 못했습니다. 다시 시도하세요.",
     "question": "“{name}” 항목을 삭제하시겠습니까?",
     "cannotUndo": "되돌릴 수 없습니다.",
+    "toTrash": "30일 동안은 휴지통에서 복원할 수 있습니다.",
     "removing": "삭제하는 중...",
     "yes": "예, 삭제합니다",
     "cancel": "취소",
@@ -226,18 +237,22 @@
     "firedWeight": "소성 후 무게",
     "notes": "비고",
     "analysis": "분석값",
+    "details": "자세히",
     "formula": "화학식",
+    "formulaLine": "화학식: {formula}",
     "useInstead": "<b>대신 사용:</b> {list}",
     "similar": "비슷한 원료: {list}",
     "replaces": "대체 대상: {list}",
     "aliases": "다른 이름: {list}",
     "madeBy": "제조사: {name}",
     "source": "출처:",
+    "hazardsLine": "유해성: {hazards}",
     "noChemistry": "화학 조성 없음: 제게르식에서 제외",
     "countedAs": "계산 기준: {name}",
     "nothingMatches": "일치하는 항목이 없습니다. 다른 이름, 종류, 지역을 선택해 보세요.",
     "loading": "불러오는 중...",
-    "notFetched": "목록을 불러오지 못했습니다. <retry>다시 시도</retry>"
+    "notFetched": "목록을 불러오지 못했습니다. <retry>다시 시도</retry>",
+    "showAll": "{noun, select, additives {{count, plural, other {첨가제 #가지 모두 보기}}} other {{count, plural, other {원료 #가지 모두 보기}}}}"
   },
   "chemistryForm": {
     "name": "{noun, select, additive {첨가제 이름을 입력하세요.} other {원료 이름을 입력하세요.}}",
@@ -272,7 +287,7 @@
     "close": "닫기"
   },
   "unity": {
-    "fluxes": "융제 - RO",
+    "fluxes": "융제 - R₂O와 RO",
     "stabilizers": "안정제 - R₂O₃",
     "glassFormers": "유리 형성 성분 - RO₂",
     "wildcards": "기타 산화물",

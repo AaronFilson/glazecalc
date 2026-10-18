@@ -17,13 +17,17 @@
     "confirmEmail": "Bekræft e-mailadressen - Glazecalc",
     "home": "Notesbog til værkstedet - Glazecalc",
     "recipe": "Opskrifter - Glazecalc",
+    "import": "Indsæt opskrifter - Glazecalc",
+    "blends": "Blandinger til prøvebrikker - Glazecalc",
     "material": "Råvarer - Glazecalc",
     "additive": "Tilsætninger - Glazecalc",
     "firingLogs": "Brændingsjournaler - Glazecalc",
     "notes": "Noter - Glazecalc",
     "trash": "Papirkurv - Glazecalc",
     "account": "Konto og indstillinger - Glazecalc",
-    "notFound": "Siden blev ikke fundet - Glazecalc"
+    "notFound": "Siden blev ikke fundet - Glazecalc",
+    "shared": "Delt opskrift - Glazecalc",
+    "assistants": "Brug Glazecalc fra en AI-assistent - Glazecalc"
   },
   "nav": {
     "skip": "Spring til indholdet",
@@ -39,7 +43,9 @@
     "guides": "Vejledninger",
     "about": "Om Glazecalc",
     "account": "Konto",
+    "trialAccount": "Prøveperiode",
     "accountTitle": "Konto og indstillinger",
+    "trash": "Papirkurv",
     "signOut": "Log ud",
     "createAccount": "Opret en gratis konto"
   },
@@ -66,7 +72,8 @@
     "problem": "Rapportér et problem",
     "pottery": "Håndlavet keramik: Updraft Pottery Studio",
     "copyright": "© 2017–2026 Aaron Filson / Candling Development Studio · Gratis og open source (MIT-licens)",
-    "languages": "Sprog"
+    "languages": "Sprog",
+    "language": "Sprog:"
   },
   "numbers": {
     "notANumber": "Angiv et tal, fx {example}.",
@@ -85,7 +92,7 @@
     "about": "Glazecalc er en gratis open source-beregner og notesbog til glasurkemi. Se, hvordan den beregner en Seger-formel (UMF), og hvordan den er bygget.",
     "privacy": "Sådan håndterer Glazecalc dine data: ingen reklamer, webanalyse eller sporing, og intet sælges. Hvad der gemmes, hvorfor, og hvordan du bruger dine rettigheder.",
     "signup": "Opret en gratis konto i Glazecalc, og gem dine glasuropskrifter, råvarer, noter og brændingsjournaler. Ingen reklamer, og dine data sælges aldrig.",
-    "imageAlt": "Glazecalc: Bland ikke bare glasurerne – forstå dem."
+    "imageAlt": "Glazecalcs forside: gratis glasurkemi for keramikere, ved siden af et foto af brændte keglesæt."
   },
   "notices": {
     "dismiss": "Luk",
@@ -93,11 +100,15 @@
     "error": "Fejl: {text}"
   },
   "remove": {
-    "removed": "»{name}« er fjernet.",
     "alreadyRemoved": "»{name}« var allerede fjernet.",
+    "trashed": "»{name}« er flyttet til papirkurven.",
+    "undo": "Fortryd",
+    "restored": "»{name}« er sat tilbage.",
+    "restoreFailed": "»{name}« kunne ikke sættes tilbage. Den ligger stadig i papirkurven.",
     "failed": "Det kunne ikke fjernes. Prøv igen.",
     "question": "Skal »{name}« fjernes?",
     "cannotUndo": "Det kan ikke fortrydes.",
+    "toTrash": "Den kan sættes tilbage fra papirkurven i 30 dage.",
     "removing": "Fjerner…",
     "yes": "Ja, fjern",
     "cancel": "Annuller",
@@ -222,20 +233,26 @@
     "soldIn": "Sælges i",
     "showing": "Viser {shown} af {noun, select, additives {{total, plural, one {# tilsætning} other {# tilsætninger}}} other {{total, plural, one {# råvare} other {# råvarer}}}}",
     "name": "Navn",
+    "equivalentWeight": "Ækvivalentvægt",
+    "firedWeight": "Brændt vægt",
     "notes": "Noter",
     "analysis": "Analyse",
+    "details": "Detaljer",
     "formula": "Formel",
+    "formulaLine": "Formel: {formula}",
     "useInstead": "<b>Brug i stedet:</b> {list}",
     "similar": "Lignende: {list}",
     "replaces": "Erstatter: {list}",
     "aliases": "Også kaldet: {list}",
     "madeBy": "Producent: {name}",
     "source": "Kilde:",
+    "hazardsLine": "Farer: {hazards}",
     "noChemistry": "Ingen analyse: ikke med i Seger-formlen",
     "countedAs": "Regnet som {name}",
     "nothingMatches": "Ingen resultater. Prøv et andet navn, en anden type eller en anden region.",
     "loading": "Indlæser…",
-    "notFetched": "Listen kunne ikke hentes. <retry>Prøv igen</retry>"
+    "notFetched": "Listen kunne ikke hentes. <retry>Prøv igen</retry>",
+    "showAll": "{noun, select, additives {{count, plural, one {Vis # tilsætning} other {Vis alle # tilsætninger}}} other {{count, plural, one {Vis # råvare} other {Vis alle # råvarer}}}}"
   },
   "chemistryForm": {
     "name": "{noun, select, additive {Giv tilsætningen et navn.} other {Giv råvaren et navn.}}",
@@ -270,7 +287,7 @@
     "close": "Luk"
   },
   "unity": {
-    "fluxes": "Flusmidler – RO",
+    "fluxes": "Flusmidler – R₂O og RO",
     "stabilizers": "Stabilisatorer – R₂O₃",
     "glassFormers": "Glasdannere – RO₂",
     "wildcards": "Øvrige oxider",

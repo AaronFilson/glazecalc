@@ -34,13 +34,14 @@ Dodavatelé ve Spojeném království, v Evropě, Austrálii a na Novém Zéland
 Table: Co přinese výdrž na konečné teplotě
 Label: Výdrž a tepelná expozice
 
-| Výdrž        | Přibližně stejná tepelná expozice jako                             |
-| ------------ | ------------------------------------------------------------------ |
-| Asi 20 minut | Konečná teplota o {{18 °F; 10 °C}} vyšší                           |
-| 40–60 minut  | Konečná teplota o {{36 °F; 20 °C}} vyšší                           |
-| Asi 2 hodiny | Konečná teplota o {{54 °F; 30 °C}} vyšší                           |
-| 1–2 hodiny   | „může stačit ke zdeformování žároměrky s nejbližším vyšším číslem“ |
-| 4–6 hodin    | Stačí k ohnutí žároměrky o dvě čísla teplejší                      |
+| Výdrž        | Přibližně stejná tepelná expozice jako        |
+| ------------ | --------------------------------------------- |
+| Asi 20 minut | Konečná teplota o {{18 °F; 10 °C}} vyšší      |
+| 40–60 minut  | Konečná teplota o {{36 °F; 20 °C}} vyšší      |
+| Asi 2 hodiny | Konečná teplota o {{54 °F; 30 °C}} vyšší      |
+| 4–6 hodin    | Stačí k ohnutí žároměrky o dvě čísla teplejší |
+
+Orton dodává, že výdrž 1–2 hodiny „může stačit ke zdeformování žároměrky s nejbližším vyšším číslem“.
 
 Výdrž tedy nikdy není zadarmo: když ji přidáte, počítejte s tím, že se žároměrky ohnou víc, a konečnou teplotu odpovídajícím způsobem snižte.
 
@@ -198,11 +199,11 @@ Mnoho vypínačů, včetně modelů LT od společnosti Dawson, má **pojistný �
 Table: Na jak dlouho nastavit pojistný časovač
 Label: Nastavení pojistného časovače
 
-| Zdroj     | Nastavení                                                                                                     |
-| --------- | ------------------------------------------------------------------------------------------------------------- |
-| Dawson    | O ½ hodiny déle, než je očekávaná doba výpalu, dokud pec neznáte, později jen o ¼ hodiny; nikdy přes 20 hodin |
-| L&L       | Poprvé na velmi dlouhou dobu; zapište si, jak dlouho výpal trvá; potom asi o 1 hodinu déle                    |
-| Bracker's | O 30 minut až 1 hodinu déle, než trvá výpal                                                                   |
+| Zdroj     | Nastavení                                                                                                                                |
+| --------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| Dawson    | O ½ hodiny déle, než je očekávaná doba výpalu, dokud pec neznáte, později jen o ¼ hodiny déle; nikdy to nenastavujte na víc než 20 hodin |
+| L&L       | Poprvé na velmi dlouhou dobu; zapište si, jak dlouho výpal trvá; potom asi o 1 hodinu déle                                               |
+| Bracker's | O 30 minut až 1 hodinu déle, než trvá výpal                                                                                              |
 
 > [!NOTE]
 > Náš výchozí postup: poprvé s velkou rezervou (v rámci 20 hodin na stupnici), potom o ½ až 1 hodinu déle, než je zaznamenaná doba. Časovač vám také řekne, jak dlouho výpal trval: nastavený na 7 a zastavený na 1 znamená 6 hodin.
@@ -224,7 +225,7 @@ Label: Problémy s vypínačem Kiln-Sitter
 Ke kontrole seřízení používá Dawson **seřizovací měrku**, která podrží snímací tyč tam, kde by ji nechala úplně ohnutá žároměrka; u západky pak má být „vůle 1/16 palce“ (asi 1,6 mm). Kontrolujte to každých 30 výpalů. Pravidlo časopisu Ceramics Monthly: když pec vypíná brzy, posuňte spouštěcí destičku mírně nahoru; když pozdě, mírně dolů. Ať vypínač dělá cokoli, „vždy věřte velkým kontrolním žároměrkám víc než malým žároměrkám ve vypínači“.
 
 > [!WARNING]
-> **Kiln-Sitter není bezpečnostní zařízení.** Návod k obsluze od společnosti Dawson uvádí, že vypínač „NENÍ určen k tomu, aby sloužil jako spolehlivé bezpečnostní vypnutí, a vaše pec by NEMĚLA zůstávat bez dozoru déle, než je odhadovaná doba výpalu“. Už něco tak prostého, jako když syrový výrobek{{en: greenware}} spadne na trubičku, „může způsobit přepálení“. Buďte u pece a zkontrolujte ji, když má výpal končit, a nikdy ji nevypalujte nad ničím hořlavým ani v blízkosti čehokoli hořlavého, jako je dřevěná podlaha nebo koberec.
+> **Kiln-Sitter není bezpečnostní zařízení.** Návod k obsluze od společnosti Dawson uvádí, že vypínač „NENÍ určen k tomu, aby sloužil jako vypínací zařízení bezpečné při poruše, a vaše pec by NEMĚLA zůstávat bez dozoru déle, než je odhadovaná doba výpalu“. Už něco tak prostého, jako když syrový výrobek{{en: greenware}} spadne na trubičku, „může způsobit přepálení“. Buďte u pece a zkontrolujte ji, když má výpal končit, a nikdy ji nevypalujte nad ničím hořlavým ani v blízkosti čehokoli hořlavého, jako je dřevěná podlaha nebo koberec.
 
 Vypínač je určen pro výpaly „až do žároměrky 8 včetně“. Sám neumí držet teplotu ani pomalu chladit. S praxí a se záznamy výpalů se ale můžete „stát regulátorem“, jak říká Digitalfire: sledovat žároměrky a otáčet přepínači ručně.
 
@@ -375,7 +376,7 @@ Samostojné Ortonovy žároměrky se v Japonsku prodávají pod názvem 立つ�
 
 ### Proč začátek probíhá pomalu
 
-Voda, která se mění v páru, „zvětší objem 1170krát“, upozorňuje firma Bracker's, a proto se vlhké výrobky musí sušit pomalu. L&L a Orton radí, že „pod 1500°F (815°C) by se mělo zvlášť dbát na to, aby se střep{{en: clay body}} ohříval rovnoměrně“, a že uhlík musí vyhořet zhruba do {{1200 °F; 650 °C}}. Nad {{1500 °F; 816 °C}} může teplota v peci stoupat rychleji.
+Voda se při přeměně v páru zvětší na více než tisícinásobek objemu, a proto se vlhké výrobky musí sušit pomalu. L&L a Orton radí, že „pod 1500°F (815°C) by se mělo zvlášť dbát na to, aby se střep{{en: clay body}} ohříval rovnoměrně“, a že uhlík musí vyhořet zhruba do {{1200 °F; 650 °C}}. Nad {{1500 °F; 816 °C}} může teplota v peci stoupat rychleji.
 
 Table: Co se děje při ohřevu přežahu
 Label: Co se děje při přežahu
@@ -595,21 +596,21 @@ Pokud vypínač vypne dřív, než se žároměrky na plátě ohnou, dejte pří
 
 **Pyrometr** je teploměr, který odečítá teplotu z **termočlánku**, teplotního čidla procházejícího stěnou pece. Ukazuje, jak rychle teplota v peci stoupá, takže můžete vybrat správný sloupec tabulky žároměrek. Měří ale u stěny, ne u výrobků, a jeho údaj se časem posouvá. L&L upozorňuje, že termočlánek typu K se po opakovaných výpalech na žároměrku 6 může mýlit o více než {{25 °F; 14 °C}}, „rozdíl větší než celá žároměrka“, zatímco samostojná žároměrka se liší nejvýše o {{4 °F; 2 °C}}. Orton uvádí, že pyrometry je třeba čas od času znovu kalibrovat a že se kontrolují právě žároměrkami.
 
-## Větrání, nahlížení do pece a bezpečnost {#venting}
+## Odtah, nahlížení do pece a bezpečnost {#venting}
 
-### Větrání
+### Odtah
 
-Na začátku výpalu uvolňují hlína a glazura{{en: glaze}} vodní páru a výpary, včetně oxidu uhelnatého, a glazury mohou uvolňovat toxické výpary i později během výpalu. L&L označuje jejich odvětrání za „nezbytné“. Bez odtahu to znamená v počátečních fázích pootevřené víko a otevřené průzory, jako v postupech výše; zpomalení ohřevu v této době také pomáhá, aby uhlík vyhořel. Se **spodním odtahem** (odtahem s ventilátorem připevněným k peci) zůstávají podle společnosti Orton víko i průzory po celý výpal zavřené, kromě kontroly žároměrek{{en: cones}}. Otevřený horní průzor také chrání trubičku vypínače Kiln-Sitter{{en: kiln sitter}} a kovové části pece.
+Na začátku výpalu hlína a glazura uvolňují vodní páru a výpary, včetně oxidu uhelnatého, a glazury mohou uvolňovat toxické výpary i později během výpalu. L&L nazývá jejich odvádění „zásadním“. Bez odtahu to znamená pootevřené víko a otevřené průzory v raných fázích, jak je uvedeno v postupech výše; pomalejší ohřev v této době také pomáhá vyhořet uhlíku. V peci bez odtahu Dawson, který vyrobil vypínač Kiln-Sitter{{en: kiln sitter}}, také říká, aby horní průzor zůstal otevřený po celý výpal: odvětrání „sníží opotřebení kovových částí pece a prodlouží životnost sestavy trubice“. **Spodní odtah** (odtah s pohonem namontovaný na pec) to mění. Odvětrání zajišťuje sám, proto Orton říká, že víko a průzory zůstávají po celý výpal zavřené, kromě kontroly žároměrek, a L&L říká, aby se odtah nechal zapnutý a průzory se zazátkovaly.
 
-O větrání místnosti a o detektorech oxidu uhelnatého se dočtete v návodech [Bezpečné míchání a větrání](/guides/safe-mixing) a [Neotravte svou rodinu](/guides/home-safety).
+Informace o větrání místnosti a o detektorech oxidu uhelnatého najdete v návodech [Bezpečné míchání a větrání](/guides/safe-mixing) a [Neotravte svou rodinu](/guides/home-safety).
 
-### Během výpalu
+### Když pec vypaluje
 
-- Do průzoru se dívejte jen přes svářečské brýle s ochranou proti IR a stupněm ochrany 3; sluneční brýle nestačí. Výrobce Skutt radí zátky do průzorů zasouvat otáčivým pohybem, aby nevypadly.
-- Nenechávejte pec bez dozoru déle, než je očekávaná doba výpalu; Kiln-Sitter není spolehlivá pojistka.
-- Nikdy nevypalujte na ničem hořlavém ani v blízkosti čehokoli hořlavého, jako je dřevěná podlaha nebo koberec.
-- Dodržujte bezpečné vzdálenosti uvedené v návodu k obsluze. Zveřejněné hodnoty se pohybují od 12 palců (30 cm) do 3 stop (91 cm); kde návod k obsluze nic neuvádí, je nejbezpečnější volbou 18 palců (46 cm) od stěn a 3 stopy (91 cm) od čehokoli hořlavého.
-- Prostor kolem závaží vypínače udržujte volný, aby závaží mohlo spadnout.
+- Do průzoru se dívejte jen přes svářečské brýle s ochranou proti IR, stupeň ochrany 3; sluneční brýle nestačí. Skutt radí zátky zašroubovat na místo, aby nevypadly.
+- Nenechávejte pec bez dozoru po očekávané době výpalu; vypínač Kiln-Sitter není pojistka proti selhání.
+- Nikdy nevypalujte na ničem, co hoří, ani poblíž toho, například na dřevěné podlaze nebo na koberci.
+- Dodržujte bezpečné vzdálenosti uvedené v návodu k obsluze. Publikované hodnoty se pohybují od 12 palců (30 cm) do 3 stop (91 cm); kde návod mlčí, nejbezpečnější volbou je 18 palců (46 cm) od stěn a 3 stopy (91 cm) od všeho, co hoří.
+- Prostor kolem závaží vypínače Kiln-Sitter nechte volný, aby mohlo spadnout.
 - Po skončení výpalu vypněte přepínače a vypněte také jistič.
 
 ## Chlazení a vykládání {#cooling}

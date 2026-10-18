@@ -38,7 +38,7 @@ Werk dat nog niet gestookt is, is **ongebakken werk**{{en: greenware}} (bronnen 
 
 ### De twee stoken
 
-De eerste, lagere stook is de **biscuitstook**{{en: bisque}} (in Britse bronnen **biscuit**), meestal kegel 08–04, rond {{1740–1940 °F; 950–1060 °C}}. Daarna is het werk stevig maar poreus. Digitalfire, een naslagsite over glazuren, raadt over het algemeen meer dan 15% poreusheid aan, zodat het biscuit bij het glazuren water uit het glazuur opzuigt. Laag gestookt biscuit (kegel 08–06) is poreuzer; hoog gestookt biscuit (vaak kegel 04) is steviger, maar neemt glazuur minder makkelijk aan.
+De eerste, lagere stook is de **biscuitstook**{{en: bisque}} (in Britse bronnen **biscuit**), meestal kegel 08–04 (het vaakst 06–04), rond {{1728–1945 °F; 942–1063 °C}}. Daarna is het werk stevig maar poreus. Digitalfire, een naslagsite over glazuren, raadt over het algemeen meer dan 15% poreusheid aan, zodat het biscuit bij het glazuren water uit het glazuur opzuigt. Laag gestookt biscuit (kegel 08–06) is poreuzer; hoog gestookt biscuit (vaak kegel 04) is steviger, maar neemt glazuur minder makkelijk aan.
 
 Table: Hoe het biscuit het glazuren beïnvloedt (Digitalfire)
 Label: Hoe het biscuit het glazuren beïnvloedt
@@ -254,7 +254,7 @@ De wettelijke grenswaarden verschillen per land. De tabel toont die van het land
 
 ::food-limits
 
-In de VS moet werk dat niet voor voedsel bedoeld is een blijvende, ingebakken vermelding “Not for Food Use” (niet voor gebruik met voedsel) dragen, of een gat hebben door het oppervlak dat met voedsel in aanraking komt. De EU legt grenswaarden voor lood en cadmium vast in Richtlijn 84/500/EEG, en het VK hanteert dezelfde waarden in een eigen wet. Vanaf 29 mei 2026 staan Nederland, België en Luxemburg ongeveer 130 tot 150 keer minder lood toe, en ongeveer 15 keer minder cadmium. Australië stelt grenswaarden voor geïmporteerd werk; voor werk dat in Australië of Nieuw-Zeeland is gemaakt, vonden we geen officiële grenswaarde.
+In de VS wordt decoratief keramiek dat bruikbaar voor voedsel lijkt, als werk voor voedsel behandeld, tenzij het een sticker en een blijvende vermelding draagt die in de bodem is gevormd of erop is ingebakken, zoals “Not for Food Use. May Poison Food” (niet voor gebruik met voedsel; kan voedsel vergiftigen), of een gat heeft door het oppervlak dat met voedsel in aanraking komt. De EU legt grenswaarden voor lood en cadmium vast in Richtlijn 84/500/EEG, en het VK hanteert dezelfde waarden in een eigen wet. Vanaf 29 mei 2026 staan Nederland, België en Luxemburg ongeveer 130 tot 150 keer minder lood toe, en ongeveer 15 keer minder cadmium. Australië stelt grenswaarden voor geïmporteerd werk; voor werk dat in Australië of Nieuw-Zeeland is gemaakt, vonden we geen officiële grenswaarde.
 
 ### Testen
 
@@ -325,7 +325,7 @@ Binnenglazuur (liner glaze)
 : Een stabiel, meestal transparant of wit glazuur voor vlakken die met voedsel in aanraking komen.
 
 Biscuitstook (bisque; VK: biscuit)
-: De eerste, lagere stook, meestal kegel 08–04, waarna het werk stevig maar poreus is.
+: De eerste, lagere stook, meestal kegel 08–04 (het vaakst 06–04), waarna het werk stevig maar poreus is.
 
 Boor (B₂O₃; boron)
 : Formeel een glasvormer, maar gebruikt als smeltmiddel; onmisbaar van kegel 06 tot kegel 6.
@@ -474,6 +474,7 @@ Voedselveilig (food safe)
 - [Glazy Help: Specific gravity](https://help.glazy.org/testing/specific-gravity)
 - [Orton Ceramic Foundation: Pyrometric cone chart, °F (via The Ceramic Shop)](https://www.theceramicshop.com/technical_info/Cones/Orton-Cone-Chart-F-022-14.pdf)
 - [Digitalfire: Bisque](https://digitalfire.com/glossary/bisque)
+- [Digitalfire: Bentonite](https://digitalfire.com/material/bentonite)
 - [Digitalfire: Unity molecular formula](https://digitalfire.com/glossary/unity+molecular+formula)
 - [Digitalfire: LOI](https://digitalfire.com/glossary/loi)
 - [Digitalfire: Frit](https://digitalfire.com/glossary/frit)
@@ -489,3 +490,4 @@ Voedselveilig (food safe)
 - [Potclays: The difference between stoneware and earthenware](https://www.potclays.co.uk/clay-questions/difference-stoneware-earthenware)
 - [US FDA: Compliance Policy Guide Sec. 545.450, Pottery (ceramics), lead contamination](https://www.fda.gov/media/71764/download)
 - [EUR-Lex: Council Directive 84/500/EEC on ceramic articles in contact with food](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:31984L0500)
+- [eCFR: 21 CFR 109.16, Ornamental and decorative ceramicware](https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-109/subpart-A/section-109.16)

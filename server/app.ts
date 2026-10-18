@@ -7,19 +7,27 @@ import path from 'node:path';
 import express, { type NextFunction, type Request, type Response } from 'express';
 import mongoose from 'mongoose';
 import * as log from './lib/log.ts';
+import * as limits from './lib/rate_limit.ts';
 import sameOrigin from './lib/same_origin.ts';
+import { refuseAccessTokens } from './lib/token_auth.ts';
 import authRoutes from './routes/auth_routes.ts';
 import exportRoutes from './routes/export_routes.ts';
 import guestRoutes from './routes/guest_routes.ts';
 import mfaRoutes from './routes/mfa_routes.ts';
+import oauthRoutes from './routes/oauth_routes.ts';
 import emailRoutes from './routes/email_routes.ts';
 import passwordRoutes from './routes/password_routes.ts';
+import tokenRoutes from './routes/token_routes.ts';
 import records from './routes/records.ts';
+import { privateHeaders, sharedRouter, shareRouter } from './routes/share_routes.ts';
 import userRoutes from './routes/user_routes.ts';
+import mcpRouter, { metadataRouter } from './mcp/index.ts';
 import { say } from './lib/messages.ts';
 import * as site from './lib/site.ts';
 import {
+  isAppOnlyPage,
   isPage,
+  isPrivatePage,
   looksLikeFile,
   pageHtml,
   prerenderedKey,
@@ -41,11 +49,13 @@ app.disable('x-powered-by');
 app.set('trust proxy', 1);
 
 // What a page may load or send. Scripts are left to the build's own <meta>
-// policy (angular.json, autoCsp); a page must pass both. There is no
-// default-src, which would also limit scripts to files and block the inline
-// script the meta policy allows by its hash. data: images are the check marks
-// and arrows Bootstrap's stylesheet inlines as SVG. Angular adds each
-// component's styles as <style> elements, which a page's own nonce allows.
+// policy (angular.json, autoCsp); a page must pass both, and in production
+// nginx's full policy too (deploy/nginx/glazecalc-proxy.conf, default-src
+// 'self'). There is no default-src here, which would also limit scripts to
+// files and block the inline script the meta policy allows by its hash.
+// data: images are the check marks and arrows Bootstrap's stylesheet inlines
+// as SVG. Angular adds each component's styles as <style> elements, which a
+// page's own nonce allows.
 export const contentSecurityPolicy = (nonce?: string): string =>
   [
     "connect-src 'self'",
@@ -72,6 +82,8 @@ api.use((req, res, next) => {
 });
 // Changes must come from the app's own pages (cross-site request forgery).
 api.use(sameOrigin);
+// Access tokens that do not work, per address, before any is checked.
+api.use(limits.accessTokens);
 
 // For Docker health checks and uptime monitors: 200 only when MongoDB answers.
 api.get('/health', (req, res) => {
@@ -85,24 +97,50 @@ api.get('/health', (req, res) => {
     .catch(() => unavailable('not responding'));
 });
 
-// /additives, /advice, /firing, /materials, /notes, /recipe and /trash
+// /additives, /advice, /firing, /materials, /notes, /recipe and /trash: the
+// only routes an access token can reach, each route asking for its permission
+// (server/lib/require_scope.ts).
 for (const [name, router] of Object.entries(records)) api.use('/' + name, router);
+// Nothing below takes an access token: the account, the password, signing in
+// and out, two-step sign-in, the export (default deny, docs/integrations-plan.md
+// item 5). A route that should take one goes above, behind requireScope.
+api.use(refuseAccessTokens);
 api.use('/export', exportRoutes);
+// Share links: the owner's (signed in), and the recipe a link opens (anyone).
+api.use('/share', shareRouter);
+api.use('/shared', sharedRouter);
 api.use('/guest', guestRoutes);
 api.use('/password', passwordRoutes);
 api.use('/email', emailRoutes);
+// The account's own access tokens: made, listed and revoked with the web session only.
+api.use('/tokens', tokenRoutes);
 // Two-step sign-in: the account's factors (docs/mfa-plan.md).
 api.use('/mfa', mfaRoutes);
+// Signing in with Google or GitHub (docs/adr/0015-provider-sign-in.md).
+api.use('/auth', oauthRoutes);
 // /signup, /signin, /signout, /verify, /usersettings/:id and /deleteuser/:id
 api.use('/', authRoutes);
 api.use('/', userRoutes);
 api.use((req, res) => res.status(404).json(say('not-found')));
 app.use('/api', api);
 
+// The tools for AI assistants (MCP; docs/adr/0017-mcp-server.md): POST /mcp, with
+// its own checks and limits, and its metadata for clients (RFC 9728).
+app.use('/mcp', mcpRouter);
+app.use('/.well-known', metadataRouter);
+
 // The client. Built file names carry a content hash, so browsers may keep
 // them for a year; index.html must be checked each time to pick up new builds.
-// Angular's hashed output: main-ABC12345.js, chunk-B5MvkF-K.js, styles-74GVMONM.css.
-const HASHED = /^(main|polyfills|styles|chunk)-[A-Za-z0-9_-]{8,}\.(js|css)$/;
+// Angular's hashed output: main-ABC12345.js, chunk-B5MvkF-K.js, styles-74GVMONM.css,
+// and the fonts it copies to media/ (lora-latin-wght-normal-6YFDQXH3.woff2).
+const HASHED = /^((main|polyfills|styles|chunk)-[A-Za-z0-9_-]{8,}\.(js|css)|[\w.-]+-[A-Z0-9]{8}\.woff2)$/;
+// The translations (client/public/i18n: JSON, and the guides' Markdown) keep
+// their names from build to build, so a browser may use its copy for five
+// minutes before asking again, rather than asking on every load. A reader who
+// loaded a page in the five minutes before a release may, for up to that
+// long, see a new message in English or as its key.
+const TRANSLATIONS_CACHE = 'public, max-age=300';
+const I18N = path.join('i18n', path.sep);
 const CLIENT = path.join(import.meta.dirname, '..', 'dist', 'glazecalc', 'browser');
 // The public pages as the build rendered them (npm run build), read for each reply.
 const PRERENDERED = path.join(import.meta.dirname, '..', 'dist', 'glazecalc', 'prerendered');
@@ -120,14 +158,31 @@ app.use((req, res, next) => {
   if (req.method !== 'GET' && req.method !== 'HEAD') return next();
   const english = /^\/en(\/.*)?$/i.exec(req.path);
   if (english) return res.redirect(301, '/' + (english[1] ?? '').replace(/^[/\\]+/, '') + queryOf(req));
+  // index.html is the home page under another name, which express.static
+  // would send as it is (no canonical address, no nonce): send it home.
+  if (req.path === '/index.html') return res.redirect(301, '/' + queryOf(req));
+  // A language's home page is /de/, its canonical address: /de goes there.
+  const code = languages.languageOfPath(req.path);
+  if (code !== 'en' && req.path === languages.languagePrefix(code)) {
+    return res.redirect(301, req.path + '/' + queryOf(req));
+  }
   const written = languages.canonicalLanguagePath(req.path);
   return written ? res.redirect(301, written + queryOf(req)) : next();
 });
 
 // A copy that is not to be indexed (NOINDEX) serves no sitemap, and its
-// robots.txt turns every crawler away (server/lib/site.ts).
+// robots.txt turns every crawler away (server/lib/site.ts). The languages
+// and pages are fixed for the life of the process, so the sitemap (about
+// 1 MB) is built once for each site address.
+const sitemaps = new Map<string, string>();
 app.get('/sitemap.xml', site.sitemapAllowed, (req, res) => {
-  res.type('application/xml').set('Cache-Control', 'public, max-age=3600').send(sitemap(site.siteUrl()));
+  const url = site.siteUrl();
+  let xml = sitemaps.get(url);
+  if (xml === undefined) {
+    xml = sitemap(url);
+    sitemaps.set(url, xml);
+  }
+  res.type('application/xml').set('Cache-Control', 'public, max-age=3600').send(xml);
 });
 
 app.get('/robots.txt', site.robotsTxt);
@@ -139,6 +194,7 @@ app.use(
     setHeaders: (res, file) => {
       if (HASHED.test(path.basename(file))) res.setHeader('Cache-Control', 'public, max-age=31536000, immutable');
       else if (file.endsWith('index.html')) res.setHeader('Cache-Control', 'no-cache');
+      else if (path.relative(CLIENT, file).startsWith(I18N)) res.setHeader('Cache-Control', TRANSLATIONS_CACHE);
     }
   })
 );
@@ -149,10 +205,12 @@ app.use('/.well-known', express.static(path.join(CLIENT, '.well-known'), { dotfi
 
 // A language's title, description and preview image's text for search
 // results and link previews, from its messages (client/public/i18n/<language>.json:
-// titles.landing, meta.description and meta.imageAlt), read once.
+// titles.landing, meta.description and meta.imageAlt), read once. English
+// too, so en.json holds the one English text; index.html has the same
+// (client/app/index-html.spec.ts), shown only if en.json cannot be read.
 const pageTexts = new Map<string, Promise<PageText>>();
 const pageText = (code: string): Promise<PageText> => {
-  if (code === 'en' || languages.languageFor(code)?.pseudo) return Promise.resolve({});
+  if (languages.languageFor(code)?.pseudo) return Promise.resolve({});
   let text = pageTexts.get(code);
   if (!text) {
     text = readFile(path.join(CLIENT, 'i18n', code + '.json'), 'utf8').then(
@@ -184,6 +242,10 @@ app.use(async (req, res, next) => {
   if ((req.method !== 'GET' && req.method !== 'HEAD') || looksLikeFile(req.path)) return next();
   const bare = withoutSlash(req.path);
   if (bare) return res.redirect(301, bare + queryOf(req));
+  // As the page's own <meta> (isAppOnlyPage); a copy not to be indexed has said
+  // more already. Before the page is read, so it is sent even where there is
+  // no client build to send (the 404 below).
+  if (isAppOnlyPage(req.path) && !res.get('X-Robots-Tag')) res.set('X-Robots-Tag', 'noindex');
   // A public page in a language offered is sent as it was rendered, if it was.
   const key = prerenderedKey(req.path);
   let html = key ? await readPrerendered(PRERENDERED, key) : undefined;
@@ -209,6 +271,7 @@ app.use(async (req, res, next) => {
     .set('Cache-Control', 'no-cache')
     .set('Content-Security-Policy', contentSecurityPolicy(nonce))
     .set('Content-Language', code);
+  if (isPrivatePage(req.path)) privateHeaders(res);
   return res
     .status(isPage(req.path) ? 200 : 404)
     .type('html')
@@ -235,6 +298,6 @@ app.use((err: HttpError, req: Request, res: Response, next: NextFunction) => {
     return res.status(400).json(say('invalid-input'));
   }
   const status = err.status || err.statusCode || 500;
-  if (status >= 500) log.error('Server error', { err, method: req.method, path: req.originalUrl });
+  if (status >= 500) log.error('Server error', { err, method: req.method, path: log.pathForLog(req.originalUrl) });
   return res.status(status).json(say(status === 413 ? 'too-large' : status < 500 ? 'bad-request' : 'server-error'));
 });

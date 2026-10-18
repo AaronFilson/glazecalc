@@ -56,7 +56,8 @@
     "vet": "Llame a su veterinario.",
     "checkedOn": "Comprobado en:",
     "choosePrompt": "Elija su país para ver a quién llamar allí.",
-    "ministry": "La página del ministerio de sanidad: <link>{name}</link>."
+    "ministry": "La página del ministerio de sanidad: <link>{name}</link>.",
+    "reported": "Las páginas oficiales del gobierno enumeran 113, 114 y 115, pero no para qué sirve cada número; las funciones que se muestran siguen la Circular 22/2014/TT-BTTTT, tal como la citan páginas secundarias."
   },
   "density": {
     "sg": "densidad {value}",
@@ -91,6 +92,7 @@
     "caption": "El valor límite ambiental de sílice cristalina respirable en el trabajo, en {region}, como media de 8 horas (comprobado el {date})",
     "captionControl": "La referencia para la sílice cristalina respirable en el aire de una zona de trabajo en {region} (comprobado el {date})",
     "both": "Cuarzo y cristobalita",
+    "freeSilica": "Sílice libre",
     "quartz": "Cuarzo",
     "cristobalite": "Cristobalita",
     "actionLevel": "Nivel de acción",
@@ -102,6 +104,9 @@
     "quartzAll": "Cuarzo, para un polvo que es todo cuarzo",
     "cristobaliteAll": "Cristobalita, para un polvo que es todo cristobalita",
     "allFree": "Concentración de control para un polvo que es todo sílice libre",
+    "bandFromTo": "Polvo con entre un {from} % y un {to} % de sílice libre (SiO₂)",
+    "bandOverTo": "Polvo con más del {from} % y hasta el {to} % de sílice libre",
+    "bandAbove": "Polvo con más del {from} % de sílice libre",
     "recommended": "Recomendado por {abbr}",
     "value": "{value} mg/m³",
     "kind": {
@@ -111,6 +116,7 @@
       "control": "Una concentración de control (管理濃度): la referencia para juzgar el aire de una zona de trabajo a partir de mediciones hechas allí, no un límite de lo que respira una persona."
     },
     "setBy": "Norma que lo fija: <link>{law}</link>.",
+    "from": "Se aplica desde el {date}.",
     "lowerThanEu": "Más bajo que el límite vinculante de la UE, de {value} mg/m³.",
     "sameAsEu": "Igual al límite vinculante de la UE.",
     "recommendedBy": "{abbr} ({by}) recomienda este valor en su <link>{title}</link>. No es ley.",
@@ -147,16 +153,45 @@
       "jpSmall": "Las demás piezas de menos de 1,1 L, no destinadas a cocinar",
       "jpLarge": "Las demás piezas de 1,1 L a menos de 3 L, no destinadas a cocinar",
       "jpStorage": "Las demás piezas de 3 L o más, no destinadas a cocinar",
-      "jpCooking": "Recipientes para cocinar, de 2,5 cm de profundidad o más"
+      "jpCooking": "Recipientes para cocinar, de 2,5 cm de profundidad o más",
+      "krFlat": "Piezas que no se pueden llenar, o de menos de 2,5 cm de profundidad",
+      "krSmall": "Otras piezas que se pueden llenar, de menos de 1,1 L",
+      "krMedium": "Otras piezas que se pueden llenar, de 1,1 L a menos de 3 L",
+      "krStorage": "Otras piezas que se pueden llenar, de 3 L o más",
+      "krCooking": "Recipientes para cocinar, para calentar alimentos",
+      "twFlat": "Piezas que no se pueden llenar, o de no más de 2,5 cm de profundidad",
+      "twSmall": "Piezas de más de 2,5 cm de profundidad, hasta 1,1 L",
+      "twLarge": "Piezas de más de 2,5 cm de profundidad, de más de 1,1 L",
+      "myFlat": "Piezas planas",
+      "mySmall": "Piezas huecas pequeñas",
+      "myLarge": "Piezas huecas grandes",
+      "myCooking": "Recipientes para cocinar",
+      "idFlat": "Piezas de no más de 25 mm de profundidad interior",
+      "idSmall": "Piezas de más de 25 mm de profundidad interior, de menos de 1100 mL",
+      "idLarge": "Piezas de más de 25 mm de profundidad interior, de 1100 mL o más",
+      "thFlat": "Piezas de no más de 25 mm de profundidad",
+      "thSmall": "Piezas de más de 25 mm de profundidad, de menos de 1,1 L",
+      "thLarge": "Piezas de más de 25 mm de profundidad, de 1,1 L o más",
+      "thInfant": "Recipientes para la comida de bebés de hasta 12 meses",
+      "thCooking": "Recipientes para cocinar, hechos para resistir el calor de la cocina",
+      "vnFlat": "Piezas poco profundas, para contener o cocinar alimentos",
+      "vnSmall": "Piezas hondas para contener alimentos, de menos de 1100 mL",
+      "vnMedium": "Piezas hondas para contener alimentos, de 1100 mL a menos de 3000 mL",
+      "vnStorage": "Piezas hondas para contener alimentos, de 3000 mL o más",
+      "vnCooking": "Piezas hondas para cocinar",
+      "vnCups": "Tazas y cuencos pequeños"
     },
     "judged": {
       "average": "media de 6 piezas",
-      "each": "cualquiera de 6 piezas"
+      "each": "cualquiera de 6 piezas",
+      "averageOf": "media de {count} piezas",
+      "eachOf": "cualquiera de las {count}"
     },
     "euRules": "Aquí se aplican las normas de la UE.",
     "law": "Norma que los fija: <link>{law}</link>.",
     "inForce": "En vigor a partir del {date}.",
     "atMost": "Una pieza cumple si no libera más que el límite: la ley dice «como máximo».",
+    "ppm": "Aquí, ppm son miligramos por litro de la solución de ensayo (mg/L).",
     "unknown": "Aún no hemos confirmado las normas en {region}.",
     "choosePrompt": "Elija su país para ver las normas que se aplican allí."
   },

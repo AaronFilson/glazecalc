@@ -4,10 +4,26 @@
     "signedInAs": "当前登录账户：{email}。",
     "trying": "正在以“{name}”的身份试用 Glazecalc。先从一个配方开始。",
     "welcomeBack": "从上次停下的地方继续。",
+    "welcome": {
+      "heading": "欢迎使用 Glazecalc",
+      "text": "您的笔记本已准备好。不妨先输入一种您已经在调配的釉，包括原料和用量，然后查看它的釉式。",
+      "firstRecipe": "开始您的第一个配方",
+      "confirmHeading": "确认您的邮箱地址",
+      "confirm": "请确认您的邮箱地址：我们已向 {email} 发送了一个链接。两步验证需要用到这个地址。您的<account>账户页面</account>可以重新发送链接。",
+      "confirmText": "我们已向 {email} 发送了一个链接。打开链接，确认这个地址是您的：两步验证需要用到这个地址。您的<account>账户页面</account>可以重新发送链接。"
+    },
     "sections": {
       "recipe": {
         "title": "配方",
         "text": "用原料和用量配出一种釉，查看它的釉式并保存。"
+      },
+      "import": {
+        "title": "粘贴配方",
+        "text": "从网站、电子表格或笔记中粘贴配方，检查读取的结果，然后保存。"
+      },
+      "blends": {
+        "title": "试片混配",
+        "text": "把您的两个、三个或四个配方混配成编号的试片，并列出每片要称的原料。"
       },
       "material": {
         "title": "原料",
@@ -32,6 +48,14 @@
       "guides": {
         "title": "指南",
         "text": "从釉是什么到如何烧成，以及如何在整个过程中保证每个人的安全。"
+      },
+      "trash": {
+        "title": "回收站",
+        "text": "把最近 30 天内移除的内容放回。"
+      },
+      "account": {
+        "title": "账户与设置",
+        "text": "设置、密码、两步验证，以及下载您在这里保存的全部内容。"
       }
     },
     "newHere": "刚接触釉式？<advice>建议页面</advice>讲解基础知识，<about>关于页面</about>介绍 Glazecalc 的工作原理。"
@@ -39,38 +63,54 @@
   "firing": {
     "title": "烧窑记录",
     "lead": "记录每次烧窑：时间、温度、测温锥和关于窑的备注。",
-    "titleLabel": "烧窑名称：",
-    "kiln": "窑：",
-    "date": "烧窑日期：",
-    "notes": "烧窑备注：",
-    "fieldSelect": "选择字段并添加到烧窑记录：",
+    "newHeading": "新的烧窑记录",
+    "titleLabel": "标题",
+    "kiln": "窑",
+    "date": "日期",
+    "notes": "备注",
+    "fieldSelect": "要记录的字段",
     "addField": "添加字段",
-    "included": "已添加的字段：",
+    "included": "本记录中的字段",
     "moveLeft": "字段左移",
     "moveRight": "字段右移",
     "removeField": "移除字段",
     "addRow": "在烧窑表中添加一行",
+    "addRowWhy": "先添加一个字段。",
+    "tableEmpty": "先在上方添加字段，然后添加行。",
     "recordHeading": "记录烧窑",
     "rowActions": "行操作",
     "cell": "{field}，第 {row} 行",
     "removeRow": "移除行",
     "save": "保存",
-    "storedHeading": "我保存的烧窑记录：",
+    "storedHeading": "我保存的烧窑记录",
+    "noneSaved": "还没有。保存的烧窑记录会显示在这里。",
+    "storedIn": "于{date}在“{kiln}”中烧成。",
+    "storedOn": "于{date}烧成。",
     "storedNotes": "备注：{notes}",
     "titleMissing": "请为这次烧窑填写名称。",
     "fieldsMissing": "请至少添加一个要记录的字段，例如{example}。",
     "chooseField": "选择要添加的字段，然后点击“添加字段”。",
     "fetchFailed": "获取烧窑记录信息时出错。",
     "saved": "已成功将烧窑记录添加到服务器。",
-    "saveFailed": "错误：向服务器发送的请求失败。"
+    "saveFailed": "错误：向服务器发送的请求失败。",
+    "recipesHeading": "这次烧窑烧的配方",
+    "noRecipes": "尚未关联配方。",
+    "recipesFailed": "无法获取您的配方，所以现在无法关联。",
+    "pickRecipe": "这次烧窑烧的一个配方",
+    "linkRecipe": "关联配方",
+    "unlink": "取消关联",
+    "unlinkRecipe": "取消关联“{title}”",
+    "linkFailed": "无法保存这个关联。"
   },
   "notes": {
     "title": "笔记",
     "lead": "关于釉的其他值得记住的事。",
-    "titleLabel": "标题：",
-    "content": "笔记内容：",
+    "newHeading": "新笔记",
+    "titleLabel": "标题",
+    "content": "笔记",
     "save": "保存",
-    "mineHeading": "我保存的笔记：",
+    "mineHeading": "我保存的笔记",
+    "noneSaved": "还没有。保存的笔记会显示在这里。",
     "titleMissing": "请为笔记填写标题。",
     "contentMissing": "请填写笔记内容。",
     "untitled": "无标题笔记",
@@ -80,6 +120,34 @@
   },
   "trash": {
     "title": "回收站",
-    "comingSoon": "回收站功能将在 Glazecalc 的下一个版本中推出。在此之前，请谨慎使用删除/移除：一旦删除，信息就会丢失。"
+    "lead": "您移除的内容（配方、原料、添加剂、笔记、烧窑记录和建议）会在这里保留 30 天。可以放回，也可以永久删除。",
+    "listHeading": "回收站中的内容",
+    "none": "回收站是空的。",
+    "untitled": "未命名",
+    "kinds": {
+      "recipes": "配方",
+      "materials": "原料",
+      "additives": "添加剂",
+      "notes": "笔记",
+      "firing": "烧窑记录",
+      "advice": "建议",
+      "other": "记录"
+    },
+    "removedOn": "移除于 {date}",
+    "goesOn": "{date} 永久删除",
+    "byApp": "由已连接的应用移除",
+    "putBack": "放回",
+    "putBackName": "放回“{name}”",
+    "restored": "已将“{name}”放回原处。",
+    "restoredAlready": "“{name}”已经放回了。",
+    "restoreFailed": "无法放回“{name}”。请再试一次。",
+    "deleted": "已永久删除“{name}”。",
+    "empty": "清空回收站",
+    "emptyQuestion": "{count, plural, other {要永久删除回收站中的全部 # 条记录吗？此操作无法撤销。}}",
+    "emptyYes": "是，清空",
+    "emptying": "正在清空...",
+    "emptied": "回收站已清空。",
+    "emptyFailed": "无法清空回收站。请再试一次。",
+    "fetchFailed": "无法加载回收站。请再试一次。"
   }
 }

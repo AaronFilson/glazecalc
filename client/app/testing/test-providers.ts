@@ -4,6 +4,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { signal } from '@angular/core';
 import { provideRouter } from '@angular/router';
 import { API_BASE } from '../core/api-base';
+import { SIGN_IN_PROVIDERS } from '../core/auth.service';
 import { FIRST_RENDER } from '../core/first-render';
 import { sessionExpiredInterceptor } from '../core/session-expired.interceptor';
 import { provideEnglish } from './i18n';
@@ -12,7 +13,8 @@ export const API = 'http://api.test';
 
 /**
  * HTTP (with the session interceptor) against a fake API, an empty router, and the English messages. The
- * first render is over: services read this browser's settings, as they do once an app is up.
+ * first render is over: services read this browser's settings, as they do once an app is up. No
+ * sign-in provider is on (SIGN_IN_PROVIDERS), unless a test provides its own.
  */
 export function testProviders() {
   return [
@@ -21,7 +23,8 @@ export function testProviders() {
     provideHttpClientTesting(),
     provideRouter([]),
     { provide: API_BASE, useValue: API },
-    { provide: FIRST_RENDER, useFactory: () => signal(false) }
+    { provide: FIRST_RENDER, useFactory: () => signal(false) },
+    { provide: SIGN_IN_PROVIDERS, useValue: () => Promise.resolve([]) }
   ];
 }
 
@@ -34,6 +37,9 @@ export async function settle(fixture?: ComponentFixture<unknown>): Promise<void>
   await new Promise((resolve) => setTimeout(resolve));
   if (fixture) await fixture.whenStable();
 }
+
+/** GET /api/tokens for an account with no access tokens (server/routes/token_routes.ts). */
+export const NO_TOKENS = { tokens: [], expiryDays: [7, 30, 90, 365], defaultDays: 30, most: 10, scopes: ['data:read'] };
 
 /** Answers every outstanding GET whose URL ends with the path. */
 export function answer(path: string, body: object | null): void {

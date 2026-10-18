@@ -9,7 +9,7 @@ Den största långsiktiga faran i arbetet med glasyr{{en: glaze}} är damm, fram
 
 Om dammet andas in under lång tid kan det orsaka **silikos** (stendammlunga), en lungsjukdom som HSE beskriver som ”allvarlig och obotlig” och som kan ”orsaka bestående invaliditet och förtida död”. Det kan också orsaka **KOL** (kroniskt obstruktiv lungsjukdom: långvarig bronkit och emfysem), som förvärras av rökning. IARC, Världshälsoorganisationens cancerforskningsinstitut, placerar inandad kristallin kiseldioxid i grupp 1, ”cancerframkallande för människor”.
 
-Kiseldioxid blir inte till ångor i ugnen, och en våt glasyr är ingen fara vid inandning. Försiktighet behövs när materialet är torrt: när säckar öppnas, när råvaror vägs, när pulver rörs ner i vatten och när droppar, sprutdimma och spill städas upp efter att de har torkat och blivit damm igen.
+Kiseldioxid blir inte till ångor i ugnen, och en våt glasyr är ingen fara vid inandning om den inte sprutas: sprutdimma innehåller kiseldioxid och torkar till damm (se Sprutning, nedan). Försiktighet behövs när materialet är torrt: när säckar öppnas, när råvaror vägs, när pulver rörs ner i vatten och när droppar, sprutdimma och spill städas upp efter att de har torkat och blivit damm igen.
 
 ### Hygieniska gränsvärden
 
@@ -67,47 +67,47 @@ Ordningen är vårt förslag, byggt på HSE:s princip att först och främst und
 
 ## Andningsskydd {#respirators}
 
-Ett **andningsskydd** är en mask som är certifierad för att filtrera bort fina partiklar ur inandningsluften. Det fungerar bara när det sluter tätt mot ansiktet, och det är ett komplement till goda vanor, inte en ersättning för dem.
+Ett **andningsskydd** är en mask som är certifierad för att filtrera fina partiklar ur luften som andas in. Det fungerar bara när det sluter tätt mot ansiktet, och det är ett stöd för bra vanor, inte en ersättning för dem.
 
-### Skyddsklasser i olika regioner
+### Klasser per region
 
-Table: Skyddsklasser för partikelfiltrerande andningsskydd i olika regioner (ungefärliga motsvarigheter för glasyrdamm)
-Label: Skyddsklasser för andningsskydd
+Table: Klasser av partikelfiltrerande andningsskydd per region (ungefärliga motsvarigheter för glasyrdamm)
+Label: Klasser av andningsskydd
 
-| Region                     | Vanlig klass | Högre klass | Titta efter                                                                           |
-| -------------------------- | ------------ | ----------- | ------------------------------------------------------------------------------------- |
-| USA                        | N95          | P100        | NIOSH-godkännande på masken eller förpackningen                                       |
-| Storbritannien och EU      | FFP2         | FFP3        | EN 149 på engångsmasker; EN 140 på återanvändbara halvmasker, med P2- eller P3-filter |
-| Australien och Nya Zeeland | P2           | P3          | AS/NZS 1716                                                                           |
+| Region                     | Vanlig klass | Högre klass | Leta efter                                                                |
+| -------------------------- | ------------ | ----------- | ------------------------------------------------------------------------- |
+| USA                        | N95          | P100        | NIOSH-godkännande på masken eller förpackningen                           |
+| Storbritannien och EU      | FFP2         | FFP3        | EN 149 på engångsmasker; EN 140 halvmasker med EN 143 P2- eller P3-filter |
+| Australien och Nya Zeeland | P2           | P3          | AS/NZS 1716                                                               |
 
-Den högre klassen filtrerar bort en större andel av de fina partiklarna. Källorna är oeniga om hur mycket ett australiskt P3-filter filtrerar (minst 99 % eller minst 99,95 %), så köp den certifierade klass som säljs i den egna regionen. En återanvändbar **halvmask** (som täcker näsa och mun, med utbytbara filter) med P100-filter (P3 utanför USA) är ett vanligt val i verkstaden.
+Den högre klassen filtrerar en större andel av de fina partiklarna. Källorna är oeniga om vad ett australiskt P3 filtrerar (minst 99 % eller minst 99,95 %), så köp den certifierade klass som säljs i regionen. En återanvändbar **halvmask** (som täcker näsa och mun, med utbytbara filter) med P100-filter (P3 utanför USA) är ett vanligt val i verkstäder.
 
-### Passform och täthet
+### Passform och tätning
 
-En mask som läcker släpper in damm runt kanterna, oavsett skyddsklass. HSE varnar för att skäggstubb och skägg ”gör det omöjligt att få en bra tätning”.
+En mask som läcker släpper in damm runt kanterna, oavsett klass. HSE varnar för att skäggstubb och skägg ”gör det omöjligt att få en bra tätning”.
 
-- **Raka dig strax före arbetet.** Råden skiljer sig åt i hur nyligen man måste ha rakat sig för att räknas som ”slätrakad”: inom 8 timmar (en brittisk tillverkare, med hänvisning till HSE) eller helst inom 12 (den australiska och nyzeeländska standarden för täthetsprovning). Rakning strax före arbetet uppfyller båda.
-- **För den som har skägg:** en löst sittande **fläktmatad skyddsmask** (PAPR: en huva eller hjälm med en fläkt som tillför filtrerad luft) behöver ingen tätning mot ansiktet.
-- **Välj rätt storlek.** Dålig passform är en viktig orsak till läckor. På arbetsplatser används **täthetsprovning**, en kontroll av att en viss mask sluter tätt på ett visst ansikte. Hemma föreslår vi att följa tillverkarens instruktioner för att kontrollera tätheten varje gång masken sätts på.
+- **Raka dig strax före arbetet.** Rådgivningen skiljer sig åt om hur nyligen ”slätrakad” måste vara. En brittisk tillverkare, som hänvisar till HSE, säger rakad inom 8 timmar före arbetets start. Den australiska och nyzeeländska standarden för täthetsprovning ber om en rakning före en täthetsprovning, ”helst inom 12 timmar”. Att raka sig strax före arbetet uppfyller båda.
+- **Om skägget behålls** kräver en löst sittande **fläktmatad skyddsmask** (PAPR: en huva eller hjälm med en fläkt som tillför filtrerad luft) ingen tätning mot ansiktet.
+- **Välj rätt storlek.** Dålig passform är en stor orsak till läckage. Arbetsplatser använder en **täthetsprovning**, en kontroll av att en viss mask sluter tätt mot ett visst ansikte. Hemma föreslår vi att tillverkarens anvisningar för kontroll av tätningen följs varje gång masken tas på.
 
 > [!NOTE]
-> Enligt vår bedömning betyder passformen mer än skyddsklassen: en välsittande N95, FFP2 eller P2 fungerar oftast bättre än en P100 som sitter löst.
+> Enligt vår mening betyder passformen mer än klassen: ett välsittande N95, FFP2 eller P2 fungerar oftast bättre än ett löst sittande P100.
 
-### När andningsskydd ska användas
+### När man ska ha ett på sig
 
-HSE skriver att andningsskydd ”normalt inte behövs” där vägning och blandning sker i en ventilerad inbyggnad, men att det ”kan behövas vid underhåll och rengöring”. De flesta hemverkstäder saknar en sådan inbyggnad, så vi föreslår andningsskydd (minst N95, FFP2 eller P2; P100, FFP3 eller P3 är bättre) varje gång man:
+HSE säger att ett andningsskydd ”normalt inte behövs” där vägning och blandning sker i en ventilerad inbyggnad, men ”kan behövas för underhåll och rengöring”. De flesta hemverkstäder har ingen inbyggnad, så vi föreslår att ha ett på sig (minst N95, FFP2 eller P2; P100, FFP3 eller P3 är bättre) varje gång:
 
-- öppnar säckar eller häller ut pulver;
-- väger pulver och rör ner det i vatten;
-- skrapar, sandpapprar eller slipar torkad glasyr{{en: glaze}} eller skröjat gods{{en: bisque}};
-- städar torrt på något sätt eller tömmer en dammsugare;
-- sprutar glasyr (i ett sprutskåp: se nedan).
+- påsar öppnas eller pulver hälls ut;
+- pulver vägs och rörs ut i vatten;
+- torkad glasyr eller skröj skrapas, slipas eller mals;
+- något torrt städas, eller en dammsugare töms;
+- glasyr sprutas (i ett sprutskåp: se nedan).
 
-### Vad som inte är andningsskydd
+### Vad som inte är ett andningsskydd
 
-- Kirurgiska munskydd, tygmasker och enkla dammasker utan märkning enligt NIOSH, EN 149 eller AS/NZS 1716. Vi skulle inte förlita oss på dem mot glasyrdamm.
-- Ett andningsskydd mot damm ”skyddar dig inte mot gaser, ångor” (OSHA), så det gör ingenting mot ugnsgaser.
-- Sköt om andningsskyddet: OSHA påpekar att ett smutsigt eller felanvänt andningsskydd ”kan bli en fara”. Förvara det rent, borta från dammiga arbetskläder.
+- Kirurgiska munskydd, tygmasker och enkla dammasker (”nuisance dust”-masker) utan NIOSH-, EN 149- eller AS/NZS 1716-märkning. Vi skulle inte lita på dem för glasyrdamm.
+- Ett partikelfiltrerande andningsskydd ”skyddar inte mot gaser, ångor” (OSHA), så det gör ingenting mot ugnsgaser.
+- Sköt det väl: OSHA noterar att ett smutsigt eller felanvänt andningsskydd ”kan bli en fara”. Förvara det rent, långt från dammiga arbetskläder.
 
 ## Städning, kläder och händer {#cleaning}
 
@@ -183,34 +183,34 @@ Raku ger stora mängder rök och CO; Utah råder till att rakubränna utomhus, b
 
 ## Råvaror som kräver mest försiktighet {#materials}
 
-De flesta glasyrråvaror, bland annat kvarts{{en: silica}}, leror, fältspater{{en: feldspar}} och frittor{{en: frit}}, är främst farliga som damm, och den faran hålls under kontroll med vanorna ovan. En kortare lista är giftig i sig, vid inandning, förtäring eller hudkontakt. Digitalfire tillägger att färgkroppar{{en: stain}} i allmänhet är mycket säkrare än oxider i ren form, och att ”obalanserade glasyrer som avger giftiga metaller kan göras av vilka råvaror som helst”: om en glasyr{{en: glaze}} är livsmedelssäker{{en: food safe}} beror på hela receptet, inte på en enda ingrediens.
+De flesta glasyrråvaror, däribland kiseldioxid, lera, fältspater{{en: feldspars}} och frittor{{en: frits}}, är främst en dammrisk, som vanorna ovan hanterar. En kortare lista är giftig i sig, genom inandning, förtäring eller hudkontakt. Digitalfire tillägger att färgkroppar{{en: stains}} i allmänhet är mycket säkrare än råa oxider, och att ”obalanserade glasyrer som avger giftiga metaller kan göras av vilka råvaror som helst”: livsmedelssäkerhet beror på hela receptet, inte på en enskild ingrediens.
 
-En **IARC-grupp** är en klassificering av cancerrisk: grupp 1 betyder ”cancerframkallande för människor”, grupp 2A ”troligen cancerframkallande”, och grupperna 2B och 3 betyder svagare belägg.
+En **IARC-grupp** är en cancerklassificering: grupp 1 betyder ”cancerframkallande för människor”, grupp 2A ”troligen cancerframkallande för människor”, grupp 2B ”möjligen cancerframkallande för människor” och grupp 3 ”kan inte klassificeras vad gäller cancerframkallande egenskaper för människor”, vilket betyder att det finns för lite belägg för att bedöma åt något håll.
 
 Table: Glasyrråvaror som kräver extra försiktighet
 Label: Råvaror som kräver mest försiktighet
 
-| Råvara                                                                            | Fara                                                                                                                                                                                                                  | Försiktighetsåtgärd                                                                                                                                |
-| --------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Blyföreningar och blyfrittor                                                      | ”Mycket giftiga vid inandning eller förtäring”; förångas vid lägre temperaturer i ugnen.                                                                                                                              | Undvik; enligt Digitalfire bara för experter. Utgå från att varje glasyr som inte är märkt ”blyfri” (”lead-free” eller ”leadless”) innehåller bly. |
-| Bariumkarbonat                                                                    | Olösligt i vatten men löses upp av magsyra; påverkar hjärtat och musklerna (oregelbunden hjärtrytm, lågt kalium).                                                                                                     | En bariumfritta eller strontium där receptet tillåter det; andningsskydd; märkt behållare.                                                         |
-| Mangandioxid                                                                      | Damm eller rök kan orsaka **manganism**, en sjukdom i nervsystemet som liknar Parkinsons sjukdom, oftast efter 1 till 3 års exponering. Rök kan orsaka metallröksfeber.                                               | Svarta färgkroppar i låga halter i stället; ventilera ugnen.                                                                                       |
-| Kaliumdikromat och kromoxid                                                       | Krom(VI), som i dikromat, är IARC grupp 1. Den klassningen omfattar inte krom(III), som i kromoxid.                                                                                                                   | Undvik dikromat. Vi betraktar kromoxid som betydligt mindre farlig, men håll nere dammet från den.                                                 |
-| Kobolt                                                                            | Lösliga kobolt(II)-salter IARC 2A; kobolt(II)oxid 2B; svart Co₃O₄ grupp 3.                                                                                                                                            | Håll nere dammet; färgkroppar för svart.                                                                                                           |
-| Nickelföreningar                                                                  | Bland de ämnen som University of Utah räknar som kända eller troliga cancerframkallande ämnen för människor.                                                                                                          | Färgkroppar i stället för höga halter.                                                                                                             |
-| Kadmium och selen, rena eller i färgkroppar                                       | Kadmiumföreningar finns bland Utahs kända eller troliga cancerframkallande ämnen för människor.                                                                                                                       | ”Bara av experter” (Digitalfire); läs säkerhetsdatabladet för varje färgkropp.                                                                     |
-| Antimon och vanadin                                                               | Trevärt antimon (som i antimontrioxid) IARC 2A; vanadin ”mycket giftigt vid inandning”.                                                                                                                               | Vanadin bara för experter; håll nere antimondammet.                                                                                                |
-| Koppar och zink                                                                   | Rök från ugnen kan orsaka metallröksfeber; zinkoxid som råvara ”anses i allmänhet inte vara farlig”.                                                                                                                  | Ventilera ugnen.                                                                                                                                   |
-| Litiumkarbonat                                                                    | ”Mycket giftigt vid inandning”. En expertkommitté i EU har kommit fram till att det kan skada fertiliteten och det ofödda barnet; när vi kontrollerade var det inte bekräftat att klassningen formellt hade antagits. | Handskar och andningsskydd; håll det borta från barn. Vi föreslår extra försiktighet under graviditet.                                             |
-| Borax och borsyra                                                                 | Klassificerade i EU som ”kan skada fertiliteten; kan skada det ofödda barnet”.                                                                                                                                        | Handskar; bor från en fritta där det går.                                                                                                          |
-| Soda (natriumkarbonat), pottaska{{en: potash}} (kaliumkarbonat), alkalifältspater | Irriterar huden.                                                                                                                                                                                                      | Handskar.                                                                                                                                          |
-| Flusspat, kryolit, lepidolit                                                      | Avger fluorhaltiga gaser vid bränningen; flusspat irriterar också huden.                                                                                                                                              | Led ut ugnsgaserna utomhus; handskar.                                                                                                              |
-| Talk                                                                              | IARC 2A sedan juli 2024; talk som är förorenad med asbest räknas som asbest, grupp 1.                                                                                                                                 | Bladig (inte fibrös), asbestfri talk; kontrollera säkerhetsdatabladet.                                                                             |
+| Råvara                                     | Fara                                                                                                                                                                                                                                             | Försiktighetsåtgärd                                                                                                                  |
+| ------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------ |
+| Blyföreningar och blyfrittor               | ”Mycket giftigt vid inandning eller förtäring”; förångas i ugnen vid lägre temperaturer än de flesta glasyrråvaror.                                                                                                                              | Undvik; Digitalfire säger: bara för experter. Utgå från att varje glasyr som inte är märkt ”blyfri” eller ”utan bly” innehåller bly. |
+| Bariumkarbonat                             | Olösligt i vatten men löser sig i magsyra; påverkar hjärtat och musklerna (oregelbunden hjärtrytm, lågt kalium).                                                                                                                                 | En bariumfritta eller strontium där receptet tillåter det; andningsskydd; märkt behållare.                                           |
+| Mangandioxid                               | Damm eller rök kan orsaka **manganism**, en sjukdom i nervsystemet som liknar Parkinsons sjukdom, vanligen efter 1 till 3 års exponering. Rök kan orsaka metallröksfeber.                                                                        | Svarta färgkroppar i låga procentandelar i stället; vädra ugnen.                                                                     |
+| Kaliumdikromat och kromoxid                | Krom(VI), som i dikromat, är IARC grupp 1. Den klassificeringen omfattar inte krom(III), som i kromoxid.                                                                                                                                         | Undvik dikromat. Vi anser att kromoxid är långt mindre farligt, men håll dess damm nere.                                             |
+| Kobolt                                     | Lösliga kobolt(II)-salter IARC 2A; kobolt(II)oxid 2B; svart Co₃O₄ grupp 3. Koboltkarbonat är klassificerat i EU som: kan orsaka cancer vid inandning, kan skada fertiliteten och misstänks kunna orsaka genetiska defekter (H350i, H360F, H341). | Håll dammet nere; färgkroppar för svart.                                                                                             |
+| Nickelföreningar                           | Bland University of Utahs kända eller troliga cancerframkallande ämnen för människor.                                                                                                                                                            | Färgkroppar i stället för höga procentandelar.                                                                                       |
+| Kadmium och selen, råa eller i färgkroppar | Kadmiumföreningar finns bland Utahs kända eller troliga cancerframkallande ämnen för människor.                                                                                                                                                  | ”Endast av experter” (Digitalfire); läs säkerhetsdatabladet för varje färgkropp.                                                     |
+| Antimon och vanadin                        | Trevärt antimon (som i antimontrioxid) IARC 2A; vanadin ”mycket giftigt vid inandning”.                                                                                                                                                          | Vanadin bara för experter; håll antimondammet nere.                                                                                  |
+| Koppar och zink                            | Ugnsrök kan orsaka metallröksfeber; rå zinkoxid ”anses i allmänhet inte vara farlig”.                                                                                                                                                            | Vädra ugnen.                                                                                                                         |
+| Litiumkarbonat                             | ”Mycket giftigt vid inandning”. En expertkommitté inom EU drog slutsatsen att det kan skada fertiliteten, det ofödda barnet och barn som ammas; formellt antagande var inte bekräftat när vi kontrollerade.                                      | Handskar och andningsskydd; förvara oåtkomligt för barn. Vi föreslår extra försiktighet under graviditet och amning.                 |
+| Borax och borsyra                          | Klassificerat i EU som ”kan skada fertiliteten; kan skada det ofödda barnet”.                                                                                                                                                                    | Handskar; bor från en fritta där det går.                                                                                            |
+| Soda, pottaska, alkaliska fältspater       | Hudirriterande.                                                                                                                                                                                                                                  | Handskar.                                                                                                                            |
+| Fluorspat, kryolit, lepidolit              | Avger fluorgaser vid bränning; fluorspat irriterar också huden.                                                                                                                                                                                  | Led ut ugnsgaserna utomhus; handskar.                                                                                                |
+| Talk                                       | IARC 2A sedan juli 2024; talk förorenad med asbest räknas som asbest, grupp 1.                                                                                                                                                                   | Plattformig (inte fibrös), asbestfri talk; kontrollera dess säkerhetsdatablad.                                                       |
 
-Borax, borsyra, soda och pottaska löser sig i vatten, så vi räknar med att det är de som mest sannolikt tas upp genom skadad hud eller sväljs via otvättade händer.
+Borax, borsyra, soda och pottaska löser sig i vatten, så vi anser att de är de mest sannolika att tas upp genom skadad hud eller sväljas från otvättade händer.
 
 > [!NOTE]
-> Om ett recept kräver ofrittat bariumkarbonat, mycket mangan eller någon råvara med bly eller kadmium, leta efter en version som använder en fritta eller en färgkropp i stället. Glazecalc kan jämföra kemin i originalet och efter bytet; testa sedan den nya glasyren.
+> Om ett recept kräver rått bariumkarbonat, mycket mangan eller något bly- eller kadmiummaterial, leta efter en version som använder en fritta eller en färgkropp i stället. Glazecalc kan jämföra kemin i originalet och bytet; prova sedan den nya glasyren.
 
 ## Handskar, hud och ögon {#gloves-and-eyes}
 
@@ -267,6 +267,8 @@ Det här är de primärkällor som är mest värda att läsa. De flesta är skri
 - [IARC: Monographs Volume 100C](https://publications.iarc.who.int/120)
 - [IARC: Volume 131, Cobalt, antimony compounds and weapons-grade tungsten alloy](https://monographs.iarc.who.int/news-events/volume-131-cobalt-antimony-compounds-and-weapons-grade-tungsten-alloy)
 - [Science Media Centre Spain: IARC classifies talc (2024)](https://sciencemediacentre.es/en/node/3775)
+- [ECHA: Risk Assessment Committee opinion on lithium carbonate, chloride and hydroxide (2021, PDF)](https://echa.europa.eu/documents/10162/e2a3c38e-85fe-505c-a325-293c70a74da5)
+- [PubChem: Cobalt carbonate, GHS classification, including its EU harmonised one](https://pubchem.ncbi.nlm.nih.gov/compound/10565#section=GHS-Classification)
 - [ECHA: Risk Assessment Committee document on boric acid and borates](https://echa.europa.eu/documents/10162/7d740d8c-5cd5-872b-5da2-e549983a9ff9)
 - [Coslaw: EU introduces new CMR classifications under the 24th ATP to the CLP Regulation](https://coslaw.eu/eu-introduces-new-cmr-classifications-under-the-24th-atp-to-the-clp-regulation/)
 - [University of Utah EHS: Arts safety: ceramics](https://www.ehs.utah.edu/guidelines/arts-safety-ceramics/)
@@ -275,6 +277,7 @@ Det här är de primärkällor som är mest värda att läsa. De flesta är skri
 - [Digitalfire: Kiln fumes](https://digitalfire.com/glossary/kiln+fumes)
 - [Digitalfire: Barium and compounds toxicology](https://digitalfire.com/hazard/barium+and+compounds+toxicology)
 - [Digitalfire: Manganese inorganic compounds toxicology](https://digitalfire.com/hazard/manganese+inorganic+compounds+toxicology)
+- [JSP: What levels of protection do particulate filters provide?](https://jspsafety.helpjuice.com/en_GB/what-levels-of-protection-do-particulate-filters-provide)
 - [JSP: Why is a clean shave essential for a proper tight-fitting respirator seal?](https://jspsafety.helpjuice.com/en_GB/why-is-a-clean-shave-essential-for-a-proper-tight-fitting-respirator-seal-can-i-have-a-beard)
 - [Skutt: Kiln room design and product specifications](https://cdn.shopify.com/s/files/1/0889/3726/7497/files/Designing-A-Kiln-Room-1.pdf)
 - [CIRMA: Kiln safety bulletin (2025)](https://downloads.ccm-ct.org/pdf/Media-Library-Bulletins/KilnSafety-Bulletin-052825.pdf)

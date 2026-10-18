@@ -4,6 +4,8 @@ export type Status = 'verified' | 'secondary' | 'extract' | 'unverified';
 /** The workplace limit for respirable crystalline silica, an 8-hour average, in mg/m³. */
 export interface SilicaLimit {
   quartz: number;
+  /** True where the law's value is for free silica (silic tự do) as a whole, not quartz and cristobalite named (Vietnam's). */
+  freeSilica?: boolean;
   /** Where cristobalite's limit differs from quartz's. */
   cristobalite?: number;
   /**
@@ -33,7 +35,24 @@ export interface SilicaLimit {
    * from 2027-01-01). What applies until then is said in the note, never guessed.
    */
   from?: string;
+  /**
+   * Where the law sets a value for each band of the dust's free silica content (China's GBZ 2.1, by
+   * free SiO₂ in %), its bands, from the lowest. Shown in place of the quartz row; quartz then holds
+   * the value for the highest band.
+   */
+  bands?: Band[];
   note?: string;
+}
+
+/** One band of free silica content (in %) and the limit for dust in it, in mg/m³. */
+export interface Band {
+  /** The lowest content in the band, in %. */
+  from: number;
+  /** Whether from itself is in the band (≥), or only contents above it (>). */
+  fromIncluded: boolean;
+  /** The highest content in the band, in % and included (≤); none for the top band. */
+  to?: number;
+  value: number;
 }
 
 /** A limit as a formula of the dust's silica content Q (in %): E = numerator / (factor × Q + offset) mg/m³. */

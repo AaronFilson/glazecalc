@@ -17,13 +17,17 @@
     "confirmEmail": "E-pasta adreses apstiprināšana – Glazecalc",
     "home": "Jūsu darbnīcas burtnīca – Glazecalc",
     "recipe": "Receptes – Glazecalc",
+    "import": "Recepšu ielīmēšana – Glazecalc",
+    "blends": "Maisījumi provēm – Glazecalc",
     "material": "Izejvielas – Glazecalc",
     "additive": "Piedevas – Glazecalc",
     "firingLogs": "Apdedzināšanas žurnāli – Glazecalc",
     "notes": "Piezīmes – Glazecalc",
     "trash": "Atkritne – Glazecalc",
     "account": "Jūsu konts un iestatījumi – Glazecalc",
-    "notFound": "Lapa nav atrasta – Glazecalc"
+    "notFound": "Lapa nav atrasta – Glazecalc",
+    "shared": "Kopīgota recepte – Glazecalc",
+    "assistants": "Glazecalc lietošana ar mākslīgā intelekta asistentu – Glazecalc"
   },
   "nav": {
     "skip": "Pāriet uz saturu",
@@ -39,7 +43,9 @@
     "guides": "Ceļveži",
     "about": "Par lietotni",
     "account": "Konts",
+    "trialAccount": "Izmēģinājums",
     "accountTitle": "Jūsu konts un iestatījumi",
+    "trash": "Atkritne",
     "signOut": "Izrakstīties",
     "createAccount": "Izveidot bezmaksas kontu"
   },
@@ -66,7 +72,8 @@
     "problem": "Ziņot par problēmu",
     "pottery": "Ar rokām darināta keramika: Updraft Pottery Studio",
     "copyright": "© 2017–2026 Aaron Filson / Candling Development Studio · Bezmaksas atvērtā pirmkoda programmatūra (MIT licence)",
-    "languages": "Valodas"
+    "languages": "Valodas",
+    "language": "Valoda:"
   },
   "numbers": {
     "notANumber": "Ievadiet skaitli, piemēram, {example}.",
@@ -85,7 +92,7 @@
     "about": "Glazecalc ir bezmaksas keramikas glazūru ķīmijas kalkulators un burtnīca ar atvērtu pirmkodu. Uzziniet, kā tas aprēķina Zēgera formulu (UMF) un kā tas veidots.",
     "privacy": "Kā lietotne Glazecalc apstrādā jūsu datus: bez reklāmām, analītikas un izsekošanas, un nekas netiek pārdots. Ko glabājam, kāpēc un kā izmantot savas tiesības.",
     "signup": "Izveidojiet bezmaksas Glazecalc kontu keramikas glazūru receptēm, izejvielām, piezīmēm un apdedzināšanas žurnāliem. Bez reklāmām; jūsu datus nekad nepārdod.",
-    "imageAlt": "Glazecalc: izprotiet savas glazūras, ne tikai sajauciet tās."
+    "imageAlt": "Glazecalc sākumlapa: bezmaksas glazūru ķīmija podniekiem blakus fotogrāfijai ar apdedzinātiem konusu komplektiem."
   },
   "notices": {
     "dismiss": "Aizvērt",
@@ -93,11 +100,15 @@
     "error": "Kļūda: {text}"
   },
   "remove": {
-    "removed": "Noņemts: “{name}”.",
     "alreadyRemoved": "Ieraksts “{name}” jau ir noņemts.",
+    "trashed": "Pārvietots uz atkritni: “{name}”.",
+    "undo": "Atsaukt",
+    "restored": "Atjaunots: “{name}”.",
+    "restoreFailed": "Neizdevās atjaunot “{name}”. Tas joprojām ir atkritnē.",
     "failed": "Neizdevās noņemt. Mēģiniet vēlreiz.",
     "question": "Vai noņemt “{name}”?",
     "cannotUndo": "Šo darbību nevar atsaukt.",
+    "toTrash": "No atkritnes to var atjaunot 30 dienu laikā.",
     "removing": "Notiek noņemšana...",
     "yes": "Jā, noņemt",
     "cancel": "Atcelt",
@@ -222,20 +233,26 @@
     "soldIn": "Pārdod",
     "showing": "Rāda {shown} no {noun, select, additives {{total, plural, zero {# piedevām} one {# piedevas} other {# piedevām}}} other {{total, plural, zero {# izejvielām} one {# izejvielas} other {# izejvielām}}}}",
     "name": "Nosaukums",
+    "equivalentWeight": "Ekvivalentmasa",
+    "firedWeight": "Masa pēc apdedzināšanas",
     "notes": "Piezīmes",
     "analysis": "Analīze",
+    "details": "Sīkāka informācija",
     "formula": "Formula",
+    "formulaLine": "Formula: {formula}",
     "useInstead": "<b>Tās vietā izmantot:</b> {list}",
     "similar": "Līdzīgas: {list}",
     "replaces": "Aizstāj: {list}",
     "aliases": "Citi nosaukumi: {list}",
     "madeBy": "Ražotājs: {name}",
     "source": "Avots:",
+    "hazardsLine": "Apdraudējumi: {hazards}",
     "noChemistry": "Nav ķīmiskā sastāva: neietilpst Zēgera formulā",
     "countedAs": "Ieskaitīts kā izejviela {name}",
     "nothingMatches": "Nav atbilstošu ierakstu. Izmēģiniet citu nosaukumu, veidu vai reģionu.",
     "loading": "Notiek ielāde...",
-    "notFetched": "Neizdevās ielādēt sarakstu. <retry>Mēģināt vēlreiz</retry>"
+    "notFetched": "Neizdevās ielādēt sarakstu. <retry>Mēģināt vēlreiz</retry>",
+    "showAll": "{noun, select, additives {{count, plural, zero {Rādīt visas # piedevas} one {Rādīt # piedevu} other {Rādīt visas # piedevas}}} other {{count, plural, zero {Rādīt visas # izejvielas} one {Rādīt # izejvielu} other {Rādīt visas # izejvielas}}}}"
   },
   "chemistryForm": {
     "name": "{noun, select, additive {Ievadiet piedevas nosaukumu.} other {Ievadiet izejvielas nosaukumu.}}",
@@ -270,7 +287,7 @@
     "close": "Aizvērt"
   },
   "unity": {
-    "fluxes": "Kušņi – RO",
+    "fluxes": "Kušņi – R₂O un RO",
     "stabilizers": "Stabilizatori – R₂O₃",
     "glassFormers": "Stikla veidotāji – RO₂",
     "wildcards": "Citi oksīdi",

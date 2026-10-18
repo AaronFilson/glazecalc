@@ -17,13 +17,17 @@
     "confirmEmail": "Confirmați adresa de e-mail – Glazecalc",
     "home": "Caietul de atelier – Glazecalc",
     "recipe": "Rețete – Glazecalc",
+    "import": "Lipiți rețete - Glazecalc",
+    "blends": "Amestecuri pentru plăcuțe de test - Glazecalc",
     "material": "Materii prime – Glazecalc",
     "additive": "Aditivi – Glazecalc",
     "firingLogs": "Jurnale de ardere – Glazecalc",
     "notes": "Notițe – Glazecalc",
     "trash": "Coșul de reciclare – Glazecalc",
     "account": "Contul și setările – Glazecalc",
-    "notFound": "Pagina nu a fost găsită – Glazecalc"
+    "notFound": "Pagina nu a fost găsită – Glazecalc",
+    "shared": "Rețetă partajată - Glazecalc",
+    "assistants": "Folosiți Glazecalc din asistentul dumneavoastră AI - Glazecalc"
   },
   "nav": {
     "skip": "Treceți la conținut",
@@ -39,7 +43,9 @@
     "guides": "Ghiduri",
     "about": "Despre",
     "account": "Cont",
+    "trialAccount": "Perioada de probă",
     "accountTitle": "Contul și setările dumneavoastră",
+    "trash": "Coșul de reciclare",
     "signOut": "Deconectați-vă",
     "createAccount": "Creați un cont gratuit"
   },
@@ -66,7 +72,8 @@
     "problem": "Raportați o problemă",
     "pottery": "Ceramică lucrată manual: Updraft Pottery Studio",
     "copyright": "© 2017–2026 Aaron Filson / Candling Development Studio · Gratuit și open source (licența MIT)",
-    "languages": "Limbi"
+    "languages": "Limbi",
+    "language": "Limba:"
   },
   "numbers": {
     "notANumber": "Introduceți un număr, de exemplu {example}.",
@@ -85,7 +92,7 @@
     "about": "Glazecalc: calculator și caiet gratuite, open source, pentru chimia glazurilor ceramice. Aflați cum calculează formula Seger (UMF) și cum este construit.",
     "privacy": "Cum tratează Glazecalc datele: fără reclame, instrumente de analiză sau urmărire, și nimic nu se vinde. Ce se păstrează, de ce și cum vă exercitați drepturile.",
     "signup": "Creați gratuit un cont Glazecalc pentru rețete de glazură ceramică, materii prime, notițe și jurnale de ardere. Fără reclame; datele nu se vând niciodată.",
-    "imageAlt": "Glazecalc: înțelegeți glazurile, nu doar amestecați-le."
+    "imageAlt": "Pagina de pornire Glazecalc: chimia glazurilor, gratuită pentru ceramiști, lângă o fotografie cu seturi de conuri arse."
   },
   "notices": {
     "dismiss": "Închideți",
@@ -93,11 +100,15 @@
     "error": "Eroare: {text}"
   },
   "remove": {
-    "removed": "S-a eliminat „{name}”.",
     "alreadyRemoved": "Elementul „{name}” a fost deja eliminat.",
+    "trashed": "A fost mutat în coșul de reciclare: „{name}”.",
+    "undo": "Anulați",
+    "restored": "A fost pus la loc: „{name}”.",
+    "restoreFailed": "„{name}” nu a putut fi pus la loc. Este încă în coșul de reciclare.",
     "failed": "Nu s-a putut elimina. Încercați din nou.",
     "question": "Eliminați „{name}”?",
     "cannotUndo": "Acțiunea nu poate fi anulată.",
+    "toTrash": "Îl puteți pune la loc din coșul de reciclare timp de 30 de zile.",
     "removing": "Se elimină...",
     "yes": "Da, eliminați",
     "cancel": "Anulați",
@@ -222,20 +233,26 @@
     "soldIn": "Se vinde în",
     "showing": "Se afișează {shown} din {noun, select, additives {{total, plural, one {# aditiv} few {# aditivi} other {# de aditivi}}} other {{total, plural, one {# materie primă} few {# materii prime} other {# de materii prime}}}}",
     "name": "Denumire",
+    "equivalentWeight": "Masă echivalentă",
+    "firedWeight": "Masă după ardere",
     "notes": "Note",
     "analysis": "Analiză",
+    "details": "Detalii",
     "formula": "Formulă",
+    "formulaLine": "Formulă: {formula}",
     "useInstead": "<b>Folosiți în loc:</b> {list}",
     "similar": "Similar: {list}",
     "replaces": "Înlocuiește: {list}",
     "aliases": "Denumit și: {list}",
     "madeBy": "Producător: {name}",
     "source": "Sursă:",
+    "hazardsLine": "Pericole: {hazards}",
     "noChemistry": "Fără analiză chimică: nu intră în formula Seger",
     "countedAs": "Socotit ca {name}",
     "nothingMatches": "Niciun rezultat. Încercați altă denumire, alt tip sau altă regiune.",
     "loading": "Se încarcă...",
-    "notFetched": "Lista nu a putut fi încărcată. <retry>Încercați din nou</retry>"
+    "notFetched": "Lista nu a putut fi încărcată. <retry>Încercați din nou</retry>",
+    "showAll": "{noun, select, additives {{count, plural, one {Afișați # aditiv} few {Afișați toți cei # aditivi} other {Afișați toți cei # de aditivi}}} other {{count, plural, one {Afișați # materie primă} few {Afișați toate cele # materii prime} other {Afișați toate cele # de materii prime}}}}"
   },
   "chemistryForm": {
     "name": "{noun, select, additive {Introduceți denumirea aditivului.} other {Introduceți denumirea materiei prime.}}",
@@ -270,7 +287,7 @@
     "close": "Închideți"
   },
   "unity": {
-    "fluxes": "Fondanți – RO",
+    "fluxes": "Fondanți – R₂O și RO",
     "stabilizers": "Stabilizatori – R₂O₃",
     "glassFormers": "Formatori de sticlă – RO₂",
     "wildcards": "Alți oxizi",

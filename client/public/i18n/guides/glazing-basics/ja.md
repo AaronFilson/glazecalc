@@ -38,7 +38,7 @@ lead: 釉薬が何でできているか、窯がそれをどうやってガラ�
 
 ### 二度の焼成
 
-最初の、低めの焼成が**素焼き**{{en: bisque}}（英国では **biscuit**）で、ふつうはオルトンコーン 08〜04、およそ {{1740–1940 °F; 950–1060 °C}} です。器は丈夫になりますが、吸水性は残ります。釉薬の参考サイトである Digitalfire は、一般に15%を超える吸水率を勧めています。そうすれば、釉を掛けるときに素焼きが釉から水を吸い取ります。低めの素焼き（コーン 08〜06）は吸水性が高く、高めの素焼き（多くはコーン 04）は丈夫ですが、釉が付きにくくなります。
+最初の、低めの焼成が**素焼き**{{en: bisque}}（英国では **biscuit**）で、ふつうはオルトンコーン 08〜04（多くは06〜04）、およそ {{1728–1945 °F; 942–1063 °C}} です。器は丈夫になりますが、吸水性は残ります。釉薬の参考サイトである Digitalfire は、一般に15%を超える気孔率を勧めています。そうすれば、釉を掛けるときに素焼きが釉から水を吸い取ります。低めの素焼き（コーン 08〜06）は吸水性が高く、高めの素焼き（多くはコーン 04）は丈夫ですが、釉が付きにくくなります。
 
 Table: 素焼きによる施釉の違い（Digitalfire）
 Label: 素焼きによる施釉の違い
@@ -254,7 +254,7 @@ Label: よくある釉の欠点
 
 ::food-limits
 
-米国では、食品用でない器には、焼き付けた消えない「Not for Food Use」の表示を付けるか、食品に触れる面に穴を開けなければなりません。EU は EU 指令 84/500/EEC で鉛とカドミウムの限度値を定めていて、英国も自国の法律で同じ数値を保っています。2026年5月29日から、オランダ、ベルギー、ルクセンブルクでは、限度値がこの数値よりずっと低くなり、許容される溶出量は鉛でおよそ130〜150倍、カドミウムでおよそ15倍少なくなります。オーストラリアは輸入品に限度値を定めています。オーストラリアやニュージーランドでつくられた器についての公的な限度値は見つかりませんでした。
+米国では、食品に使えるように見える装飾用の陶磁器は、食器として扱われます。例外は、貼り付けるラベルと、底に型押しまたは焼き付けた「Not for Food Use. May Poison Food」のような消えない表示の両方を付けているものか、食品に触れる面を貫通する穴が開いているものです。EU は EU 指令 84/500/EEC で鉛とカドミウムの限度値を定めていて、英国も自国の法律で同じ数値を保っています。2026年5月29日から、オランダ、ベルギー、ルクセンブルクでは、限度値がこの数値よりずっと低くなり、許容される溶出量は鉛でおよそ130〜150倍、カドミウムでおよそ15倍少なくなります。オーストラリアは輸入品に限度値を定めています。オーストラリアやニュージーランドでつくられた器についての公的な限度値は見つかりませんでした。
 
 ### 試験
 
@@ -376,7 +376,7 @@ CMC（糊剤）(CMC gum)
 : ゼーゲル式でシリカをアルミナで割った値。高いと光沢に、低いとマットに傾く。
 
 素焼き (bisque; 英国: biscuit)
-: 最初の、低めの焼成。ふつうはオルトンコーン 08〜04 で、器は丈夫になるが吸水性は残る。
+: 最初の、低めの焼成。ふつうはオルトンコーン 08〜04（多くは06〜04）で、器は丈夫になるが吸水性は残る。
 
 ゼーゲル式 (unity molecular formula, UMF, Seger formula)
 : 釉薬の酸化物を分子の数で表し、媒溶剤の合計が1になるように換算したもの。
@@ -474,6 +474,7 @@ CMC（糊剤）(CMC gum)
 - [Glazy Help: Specific gravity](https://help.glazy.org/testing/specific-gravity)
 - [Orton Ceramic Foundation: Pyrometric cone chart, °F（The Ceramic Shop 掲載）](https://www.theceramicshop.com/technical_info/Cones/Orton-Cone-Chart-F-022-14.pdf)
 - [Digitalfire: Bisque](https://digitalfire.com/glossary/bisque)
+- [Digitalfire: Bentonite](https://digitalfire.com/material/bentonite)
 - [Digitalfire: Unity molecular formula](https://digitalfire.com/glossary/unity+molecular+formula)
 - [Digitalfire: LOI](https://digitalfire.com/glossary/loi)
 - [Digitalfire: Frit](https://digitalfire.com/glossary/frit)
@@ -489,3 +490,4 @@ CMC（糊剤）(CMC gum)
 - [Potclays: The difference between stoneware and earthenware](https://www.potclays.co.uk/clay-questions/difference-stoneware-earthenware)
 - [US FDA: Compliance Policy Guide Sec. 545.450, Pottery (ceramics), lead contamination](https://www.fda.gov/media/71764/download)
 - [EUR-Lex: Council Directive 84/500/EEC on ceramic articles in contact with food](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:31984L0500)
+- [eCFR: 21 CFR 109.16, Ornamental and decorative ceramicware](https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-109/subpart-A/section-109.16)

@@ -17,13 +17,17 @@
     "confirmEmail": "Potrditev e-poštnega naslova – Glazecalc",
     "home": "Vaša delavniška beležnica – Glazecalc",
     "recipe": "Recepti – Glazecalc",
+    "import": "Lepljenje receptov – Glazecalc",
+    "blends": "Testne serije za ploščice – Glazecalc",
     "material": "Surovine – Glazecalc",
     "additive": "Dodatki – Glazecalc",
     "firingLogs": "Dnevniki žganja – Glazecalc",
     "notes": "Zapiski – Glazecalc",
     "trash": "Koš – Glazecalc",
     "account": "Vaš račun in nastavitve – Glazecalc",
-    "notFound": "Strani ni mogoče najti – Glazecalc"
+    "notFound": "Strani ni mogoče najti – Glazecalc",
+    "shared": "Deljeni recept – Glazecalc",
+    "assistants": "Uporaba Glazecalc v pomočniku z umetno inteligenco – Glazecalc"
   },
   "nav": {
     "skip": "Preskoči na vsebino",
@@ -39,7 +43,9 @@
     "guides": "Vodniki",
     "about": "O aplikaciji",
     "account": "Račun",
+    "trialAccount": "Preizkus",
     "accountTitle": "Vaš račun in nastavitve",
+    "trash": "Koš",
     "signOut": "Odjava",
     "createAccount": "Ustvari brezplačen račun"
   },
@@ -66,7 +72,8 @@
     "problem": "Prijavi težavo",
     "pottery": "Ročno izdelana keramika: Updraft Pottery Studio",
     "copyright": "© 2017–2026 Aaron Filson / Candling Development Studio · Brezplačno in odprtokodno (licenca MIT)",
-    "languages": "Jeziki"
+    "languages": "Jeziki",
+    "language": "Jezik:"
   },
   "numbers": {
     "notANumber": "Vnesite število, na primer {example}.",
@@ -85,7 +92,7 @@
     "about": "Glazecalc je brezplačen odprtokoden kalkulator kemije glazur za keramiko in beležnica. Oglejte si, kako izračuna Segerjevo formulo (UMF) in kako je narejen.",
     "privacy": "Kako Glazecalc ravna z vašimi podatki: brez oglasov, analitike in sledenja, nič se ne prodaja. Kaj se hrani, zakaj in kako uveljavljate svoje pravice.",
     "signup": "Ustvarite brezplačen račun Glazecalc za recepte za glazure, surovine, zapiske in dnevnike žganja. Brez oglasov, vaši podatki se nikoli ne prodajajo.",
-    "imageAlt": "Glazecalc: glazure ne le mešajte, temveč jih tudi razumite."
+    "imageAlt": "Domača stran Glazecalc: brezplačna kemija glazur za lončarje, ob fotografiji žganih stožcev."
   },
   "notices": {
     "dismiss": "Opusti",
@@ -93,11 +100,15 @@
     "error": "Napaka: {text}"
   },
   "remove": {
-    "removed": "Odstranjeno: »{name}«.",
     "alreadyRemoved": "Že odstranjeno: »{name}«.",
+    "trashed": "Premaknjeno v koš: »{name}«.",
+    "undo": "Razveljavi",
+    "restored": "Vrnjeno: »{name}«.",
+    "restoreFailed": "»{name}« ni bilo mogoče vrniti. Še vedno je v košu.",
     "failed": "Odstranitev ni uspela. Poskusite znova.",
     "question": "Želite odstraniti »{name}«?",
     "cannotUndo": "Tega ni mogoče razveljaviti.",
+    "toTrash": "Vrnitev iz koša je mogoča 30 dni.",
     "removing": "Odstranjevanje …",
     "yes": "Da, odstrani",
     "cancel": "Prekliči",
@@ -222,20 +233,26 @@
     "soldIn": "Kje se prodaja",
     "showing": "Prikazano: {shown} od {noun, select, additives {{total, plural, one {# dodatka} two {# dodatkov} few {# dodatkov} other {# dodatkov}}} other {{total, plural, one {# surovine} two {# surovin} few {# surovin} other {# surovin}}}}",
     "name": "Ime",
+    "equivalentWeight": "Ekvivalentna masa",
+    "firedWeight": "Masa po žganju",
     "notes": "Opombe",
     "analysis": "Analiza",
+    "details": "Podrobnosti",
     "formula": "Formula",
+    "formulaLine": "Formula: {formula}",
     "useInstead": "<b>Uporabi namesto:</b> {list}",
     "similar": "Podobno: {list}",
     "replaces": "Nadomešča: {list}",
     "aliases": "Imenuje se tudi: {list}",
     "madeBy": "Proizvajalec: {name}",
     "source": "Vir:",
+    "hazardsLine": "Nevarnosti: {hazards}",
     "noChemistry": "Ni analize: ni upoštevano v Segerjevi formuli",
     "countedAs": "Upoštevano kot {name}",
     "nothingMatches": "Ni zadetkov. Poskusite z drugim imenom, vrsto ali regijo.",
     "loading": "Nalaganje …",
-    "notFetched": "Seznama ni bilo mogoče naložiti. <retry>Poskusi znova</retry>"
+    "notFetched": "Seznama ni bilo mogoče naložiti. <retry>Poskusi znova</retry>",
+    "showAll": "{noun, select, additives {{count, plural, one {Pokaži # dodatek} two {Pokaži # dodatka} few {Pokaži vse # dodatke} other {Pokaži vseh # dodatkov}}} other {{count, plural, one {Pokaži # surovino} two {Pokaži # surovini} few {Pokaži vse # surovine} other {Pokaži vseh # surovin}}}}"
   },
   "chemistryForm": {
     "name": "{noun, select, additive {Vnesite ime dodatka.} other {Vnesite ime surovine.}}",
@@ -270,7 +287,7 @@
     "close": "Zapri"
   },
   "unity": {
-    "fluxes": "Talila – RO",
+    "fluxes": "Talila – R₂O in RO",
     "stabilizers": "Stabilizatorji – R₂O₃",
     "glassFormers": "Tvorci stekla – RO₂",
     "wildcards": "Drugi oksidi",

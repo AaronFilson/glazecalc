@@ -9,7 +9,7 @@ Het grootste gevaar op lange termijn bij het werken met glazuur{{en: glaze}} is 
 
 Wordt het langere tijd ingeademd, dan kan het **silicose** (stoflong) veroorzaken, een longziekte die de HSE “ernstig en onomkeerbaar” noemt en die “blijvende invaliditeit en een vroege dood kan veroorzaken”. Het kan ook **COPD** veroorzaken (chronische obstructieve longziekte: langdurige bronchitis en longemfyseem), die door roken erger wordt. Het IARC, het agentschap voor kankeronderzoek van de Wereldgezondheidsorganisatie, plaatst ingeademd kristallijn silica in groep 1, “kankerverwekkend voor de mens”.
 
-Silica wordt in de oven geen damp, en van nat glazuur gaat geen gevaar bij inademing uit. Voorzichtigheid is nodig zolang het materiaal droog is: bij het openen van zakken, het afwegen, het in water roeren van poeder, en het opruimen van druppels, overspray en glazuurresten die weer tot stof zijn opgedroogd.
+Silica wordt in de oven geen damp, en van nat glazuur gaat geen gevaar bij inademing uit, tenzij het wordt gespoten: spuitnevel bevat silica en droogt op tot stof (zie Spuiten, hieronder). Voorzichtigheid is nodig zolang het materiaal droog is: bij het openen van zakken, het afwegen, het in water roeren van poeder, en het opruimen van druppels, overspray en glazuurresten die weer tot stof zijn opgedroogd.
 
 ### Grenswaarden
 
@@ -67,47 +67,47 @@ Deze volgorde is ons voorstel, gebaseerd op het uitgangspunt van de HSE om eerst
 
 ## Adembescherming {#respirators}
 
-Een **stofmasker** is een masker dat gecertificeerd is om fijne deeltjes te filteren uit de lucht die u inademt. Het werkt alleen als het goed op uw gezicht aansluit, en het ondersteunt goede gewoonten in plaats van ze te vervangen.
+Een **adembeschermingsmasker** is een masker dat is gecertificeerd om fijne deeltjes te filteren uit de lucht die u inademt. Het werkt alleen als het goed op uw gezicht sluit, en het is een aanvulling op goede gewoonten, geen vervanging.
 
 ### Klassen per regio
 
-Table: Klassen van stofmaskers per regio (bij benadering gelijkwaardig voor glazuurstof)
-Label: Klassen van stofmaskers
+Table: Klassen van adembeschermingsmaskers met deeltjesfilter per regio (grove equivalenten voor glazuurstof)
+Label: Klassen adembescherming
 
-| Regio                      | Gewone klasse | Hogere klasse | Waar u op let                                                                              |
-| -------------------------- | ------------- | ------------- | ------------------------------------------------------------------------------------------ |
-| Verenigde Staten           | N95           | P100          | NIOSH-goedkeuring op het masker of de verpakking                                           |
-| VK en EU                   | FFP2          | FFP3          | EN 149 op wegwerpmaskers; EN 140 op herbruikbare halfgelaatsmaskers, met P2- of P3-filters |
-| Australië en Nieuw-Zeeland | P2            | P3            | AS/NZS 1716                                                                                |
+| Regio                      | Gewone klasse | Hogere klasse | Waar u op let                                                                    |
+| -------------------------- | ------------- | ------------- | -------------------------------------------------------------------------------- |
+| Verenigde Staten           | N95           | P100          | NIOSH-goedkeuring op het masker of de verpakking                                 |
+| Verenigd Koninkrijk en EU  | FFP2          | FFP3          | EN 149 op wegwerpmaskers; EN 140 halfgelaatsmaskers met EN 143 P2- of P3-filters |
+| Australië en Nieuw-Zeeland | P2            | P3            | AS/NZS 1716                                                                      |
 
-De hogere klasse filtert een groter deel van de fijne deeltjes. De bronnen zijn het niet eens over wat een Australisch P3-filter tegenhoudt (minstens 99%, of minstens 99,95%), dus koop de gecertificeerde klasse die in uw regio wordt verkocht. Een herbruikbaar **halfgelaatsmasker** (over neus en mond, met vervangbare filters) met P100-filters (buiten de VS P3) is in ateliers een gangbare keuze.
+De hogere klasse filtert een groter deel van de fijne deeltjes. Bronnen verschillen over wat een Australische P3 filtert (minstens 99% of minstens 99,95%), dus koop de gecertificeerde klasse die in uw regio wordt verkocht. Een herbruikbaar **halfgelaatsmasker** (dat neus en mond bedekt, met vervangbare filters) met P100-filters (P3 buiten de VS) is een veelgemaakte keuze in ateliers.
 
 ### Pasvorm en afdichting
 
-Een masker dat lekt, laat langs de randen stof binnen, welke klasse het ook heeft. De HSE waarschuwt dat stoppels en baarden het “onmogelijk maken een goede afdichting te krijgen”.
+Een masker dat lekt, laat stof langs de randen binnen, welke klasse het ook heeft. HSE waarschuwt dat stoppels en baarden “het onmogelijk maken een goede afdichting te krijgen”.
 
-- **Scheer u kort voordat u gaat werken.** De adviezen verschillen over hoe recent “gladgeschoren” moet zijn: binnen 8 uur (een Britse fabrikant, die zich op de HSE beroept) of bij voorkeur binnen 12 uur (de Australische en Nieuw-Zeelandse norm voor de fittest). Als u zich kort voor het werk scheert, voldoet u aan beide.
-- **Als u een baard houdt,** heeft losjes zittende **aangeblazen adembescherming** (PAPR: een kap of helm met een ventilator die gefilterde lucht aanvoert) geen afdichting op het gezicht nodig.
-- **Kies de juiste maat.** Een slechte pasvorm is een belangrijke oorzaak van lekken. Op de werkplek wordt een **fittest** gedaan, een controle of een bepaald masker op een bepaald gezicht goed afsluit. Thuis stellen we voor de aanwijzingen van de fabrikant te volgen om de afdichting te controleren, telkens wanneer u het masker opzet.
+- **Scheer u kort voordat u gaat werken.** Adviezen verschillen over hoe recent “gladgeschoren” moet zijn. Een Britse maker, die HSE aanhaalt, zegt: geschoren binnen 8 uur voordat u met werken begint. De Australische en Nieuw-Zeelandse norm voor de fittest vraagt om een scheerbeurt vóór een fittest, “bij voorkeur binnen 12 uur”. Wie zich kort voor het werk scheert, voldoet aan beide.
+- **Als u een baard houdt,** heeft een losjes zittende **aangeblazen adembescherming** (PAPR: een kap of helm met een ventilator die gefilterde lucht toevoert) geen afdichting op het gezicht nodig.
+- **Kies de juiste maat.** Een slechte pasvorm is een belangrijke oorzaak van lekken. Werkplekken gebruiken een **fittest** (pasvormcontrole), een controle of een bepaald masker sluit op een bepaald gezicht. Thuis stellen we voor de aanwijzingen van de maker te volgen om de afdichting te controleren telkens als u het masker opzet.
 
 > [!NOTE]
-> Naar onze mening is de pasvorm belangrijker dan de klasse: een goed passend N95-, FFP2- of P2-masker werkt meestal beter dan een loszittend P100-masker.
+> Naar onze mening doet de pasvorm er meer toe dan de klasse: een goed passende N95, FFP2 of P2 doet het meestal beter dan een los zittende P100.
 
-### Wanneer draagt u een stofmasker?
+### Wanneer u er een draagt
 
-Volgens de HSE is een stofmasker “normaal gesproken niet nodig” als het afwegen en aanmaken in een afgezogen omkasting gebeuren, maar “kan het nodig zijn bij onderhoud en schoonmaken”. De meeste thuisateliers hebben geen omkasting, dus we stellen voor er een te dragen (minstens N95, FFP2 of P2; P100, FFP3 of P3 is beter) telkens wanneer u:
+HSE zegt dat adembescherming “normaal niet nodig is” waar wegen en mengen gebeuren in een geventileerde omkasting, maar “nodig kan zijn voor onderhoud en schoonmaak”. De meeste ateliers thuis hebben geen omkasting, dus we stellen voor er een te dragen (minstens N95, FFP2 of P2; P100, FFP3 of P3 is beter) wanneer u:
 
-- zakken opent of poeder uitstort;
+- zakken opent of poeder uitgiet;
 - poeders afweegt en in water roert;
-- gedroogd glazuur{{en: glaze}} of biscuit{{en: bisque}} afschraapt, schuurt of slijpt;
-- droog schoonmaakt, of een stofzuiger leegt;
-- glazuur spuit (in een spuitcabine: zie hieronder).
+- gedroogd glazuur of biscuit schraapt, schuurt of slijpt;
+- droog opruimt, of een stofzuiger leegmaakt;
+- glazuur spuit (in een cabine: zie hieronder).
 
-### Wat geen stofmasker is
+### Wat geen adembescherming is
 
-- Chirurgische mondmaskers, stoffen mondkapjes en eenvoudige stofkapjes zonder NIOSH-, EN 149- of AS/NZS 1716-markering. Wij zouden er voor glazuurstof niet op vertrouwen.
-- Een stofmasker “beschermt u niet tegen gassen, dampen” (OSHA) en doet dus niets tegen ovendampen.
-- Zorg goed voor uw masker: OSHA merkt op dat een vuil of verkeerd gebruikt stofmasker “een gevaar kan worden”. Bewaar het schoon, uit de buurt van stoffige werkkleding.
+- Chirurgische mondkapjes, stoffen mondkapjes en eenvoudige stofkapjes (“nuisance dust”-maskers) zonder NIOSH-, EN 149- of AS/NZS 1716-markering. We zouden er niet op vertrouwen voor glazuurstof.
+- Een adembeschermingsmasker met deeltjesfilter “beschermt niet tegen gassen, dampen” (OSHA), dus het doet niets tegen ovendampen.
+- Zorg goed voor het uwe: OSHA merkt op dat een vuil of verkeerd gebruikt masker “een gevaar kan worden”. Bewaar het schoon, uit de buurt van stoffige werkkleding.
 
 ## Schoonmaken, kleding en handen {#cleaning}
 
@@ -183,34 +183,34 @@ Een rakustook geeft veel rook en CO; Utah raadt aan die buiten te doen, uit de b
 
 ## Grondstoffen die de meeste zorg vragen {#materials}
 
-De meeste glazuurgrondstoffen, waaronder kwarts{{en: silica}}, kleien, veldspaten{{en: feldspar}} en fritten{{en: frit}}, zijn vooral gevaarlijk als stof, en dat gevaar houdt u met de gewoonten hierboven in de hand. Een kleiner aantal grondstoffen is op zichzelf giftig, bij inademen, inslikken of contact met de huid. Digitalfire voegt eraan toe dat pigmenten{{en: stain}} over het algemeen veel veiliger zijn dan rauwe oxiden, en dat “onevenwichtige glazuren die giftige metalen afgeven, van elke grondstof gemaakt kunnen worden”: of een glazuur{{en: glaze}} voedselveilig{{en: food safe}} is, hangt af van het hele recept, niet van één grondstof.
+De meeste glazuurgrondstoffen, waaronder silica, klei, veldspaten{{en: feldspars}} en fritten{{en: frits}}, vormen vooral een stofgevaar, dat de gewoonten hierboven beheersen. Een kortere lijst is op zichzelf giftig, door inademen, inslikken of huidcontact. Digitalfire voegt eraan toe dat pigmenten{{en: stains}} doorgaans veel veiliger zijn dan ruwe oxiden, en dat “onevenwichtige glazuren die giftige metalen afgeven van alle grondstoffen kunnen worden gemaakt”: voedselveiligheid hangt af van het hele recept, niet van één ingrediënt.
 
-Een **IARC-groep** is een indeling naar kankerrisico: groep 1 betekent “kankerverwekkend voor de mens”, groep 2A “waarschijnlijk kankerverwekkend”, en de groepen 2B en 3 staan voor zwakker bewijs.
+Een **IARC-groep** is een kankerclassificatie: groep 1 betekent “kankerverwekkend voor de mens”, groep 2A “waarschijnlijk kankerverwekkend voor de mens”, groep 2B “mogelijk kankerverwekkend voor de mens”, en groep 3 “niet te classificeren wat betreft kankerverwekkendheid voor de mens”, wat betekent dat er te weinig bewijs is om het een of het ander te beoordelen.
 
 Table: Glazuurgrondstoffen die extra zorg vragen
 Label: Grondstoffen die de meeste zorg vragen
 
-| Grondstof                                                                        | Gevaar                                                                                                                                                                                                          | Voorzorg                                                                                                                                   |
-| -------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| Loodverbindingen en loodfritten                                                  | “Zeer giftig bij inademing of inslikken”; verdampt bij lagere oventemperaturen.                                                                                                                                 | Vermijden; volgens Digitalfire alleen voor experts. Ga ervan uit dat elk glazuur zonder het etiket “loodvrij” of “zonder lood” lood bevat. |
-| Bariumcarbonaat                                                                  | Onoplosbaar in water, maar lost op in maagzuur; werkt in op het hart en de spieren (onregelmatige hartslag, laag kaliumgehalte).                                                                                | Een bariumfritte of strontium waar het recept dat toelaat; stofmasker; bak met etiket.                                                     |
-| Mangaandioxide                                                                   | Stof of damp kan **manganisme** veroorzaken, een ziekte van het zenuwstelsel die lijkt op de ziekte van Parkinson, meestal na 1 tot 3 jaar blootstelling. Damp kan metaaldampkoorts veroorzaken.                | In plaats daarvan zwarte pigmenten in lage percentages; ontlucht de oven.                                                                  |
-| Kaliumdichromaat en chroomoxide                                                  | Chroom(VI), zoals in dichromaat, is IARC-groep 1. Die indeling geldt niet voor chroom(III), zoals in chroomoxide.                                                                                               | Vermijd dichromaat. Wij beschouwen chroomoxide als veel minder gevaarlijk, maar beperk het stof ervan.                                     |
-| Kobalt                                                                           | Oplosbare kobalt(II)zouten IARC 2A; kobalt(II)oxide 2B; zwart Co₃O₄ groep 3.                                                                                                                                    | Beperk het stof; pigmenten voor zwart.                                                                                                     |
-| Nikkelverbindingen                                                               | Staan bij de University of Utah op de lijst van bekende of waarschijnlijke kankerverwekkende stoffen voor de mens.                                                                                              | Liever pigmenten dan hoge percentages.                                                                                                     |
-| Cadmium en selenium, los of in pigmenten                                         | Cadmiumverbindingen staan bij Utah op de lijst van bekende of waarschijnlijke kankerverwekkende stoffen voor de mens.                                                                                           | “Alleen door experts” (Digitalfire); lees het VIB van elk pigment.                                                                         |
-| Antimoon en vanadium                                                             | Driewaardig antimoon (zoals in antimoontrioxide) IARC 2A; vanadium “zeer giftig bij inademing”.                                                                                                                 | Vanadium alleen voor experts; beperk het stof van antimoon.                                                                                |
-| Koper en zink                                                                    | Ovendampen kunnen metaaldampkoorts veroorzaken; zinkoxide als grondstof wordt “over het algemeen niet als gevaarlijk beschouwd”.                                                                                | Ontlucht de oven.                                                                                                                          |
-| Lithiumcarbonaat                                                                 | “Zeer giftig bij inademing”. Een EU-comité van deskundigen concludeerde dat het de vruchtbaarheid en het ongeboren kind kan schaden; de formele vaststelling was nog niet bevestigd toen wij het controleerden. | Handschoenen en stofmasker; buiten het bereik van kinderen houden. We stellen voor tijdens een zwangerschap extra voorzichtig te zijn.     |
-| Borax en boorzuur                                                                | In de EU ingedeeld als “Kan de vruchtbaarheid schaden. Kan het ongeboren kind schaden.”                                                                                                                         | Handschoenen; haal boor waar het kan uit een fritte.                                                                                       |
-| Soda (natriumcarbonaat), potas{{en: potash}} (kaliumcarbonaat), alkaliveldspaten | Irriteren de huid.                                                                                                                                                                                              | Handschoenen.                                                                                                                              |
-| Vloeispaat, kryoliet, lepidoliet                                                 | Geven bij het stoken fluorhoudende gassen af; vloeispaat irriteert ook de huid.                                                                                                                                 | Ontlucht de oven naar buiten; handschoenen.                                                                                                |
-| Talk                                                                             | IARC 2A sinds juli 2024; talk die met asbest is verontreinigd, geldt als asbest, groep 1.                                                                                                                       | Plaatvormige (niet vezelige), asbestvrije talk; controleer het VIB.                                                                        |
+| Grondstof                              | Gevaar                                                                                                                                                                                                                                                                      | Voorzorg                                                                                                                                                                      |
+| -------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Loodverbindingen en loodfritten        | “Zeer giftig bij inademen of inslikken”; verdampt in de oven bij lagere temperaturen dan de meeste glazuurgrondstoffen.                                                                                                                                                     | Vermijden; Digitalfire zegt: alleen deskundigen. Ga ervan uit dat elk glazuur dat niet als “loodvrij” of “zonder lood” is geëtiketteerd, lood bevat.                          |
+| Bariumcarbonaat                        | Onoplosbaar in water maar lost op in maagzuur; werkt in op hart en spieren (onregelmatige hartslag, laag kalium).                                                                                                                                                           | Een bariumfritte of strontium waar het recept dat toelaat; adembeschermingsmasker; geëtiketteerde verpakking.                                                                 |
+| Mangaandioxide                         | Stof of damp kan **manganisme** veroorzaken, een ziekte van het zenuwstelsel die lijkt op de ziekte van Parkinson, meestal na 1 tot 3 jaar blootstelling. Damp kan metaaldampkoorts veroorzaken.                                                                            | Zwarte pigmenten in lage percentages in plaats daarvan; ontlucht de oven.                                                                                                     |
+| Kaliumdichromaat en chroomoxide        | Chroom(VI), zoals in dichromaat, is IARC-groep 1. Die indeling geldt niet voor chroom(III), zoals in chroomoxide.                                                                                                                                                           | Vermijd dichromaat. Wij beschouwen chroomoxide als veel minder gevaarlijk, maar houd het stof laag.                                                                           |
+| Kobalt                                 | Oplosbare kobalt(II)-zouten IARC 2A; kobalt(II)oxide 2B; zwart Co₃O₄ groep 3. Kobaltcarbonaat is in de EU ingedeeld als: kan kanker veroorzaken bij inademing, kan de vruchtbaarheid schaden en wordt ervan verdacht genetische schade te veroorzaken (H350i, H360F, H341). | Houd stof laag; pigmenten voor zwart.                                                                                                                                         |
+| Nikkelverbindingen                     | Staan op de lijst van de University of Utah van bekende of waarschijnlijke kankerverwekkende stoffen voor de mens.                                                                                                                                                          | Pigmenten in plaats van hoge percentages.                                                                                                                                     |
+| Cadmium en seleen, ruw of in pigmenten | Cadmiumverbindingen staan op de lijst van Utah van bekende of waarschijnlijke kankerverwekkende stoffen voor de mens.                                                                                                                                                       | “Alleen door deskundigen” (Digitalfire); lees het veiligheidsinformatieblad van elk pigment.                                                                                  |
+| Antimoon en vanadium                   | Driewaardig antimoon (zoals in antimoontrioxide) IARC 2A; vanadium “zeer giftig bij inademen”.                                                                                                                                                                              | Vanadium alleen voor deskundigen; houd antimoonstof laag.                                                                                                                     |
+| Koper en zink                          | Ovendampen kunnen metaaldampkoorts veroorzaken; ruw zinkoxide wordt “over het algemeen niet als gevaarlijk beschouwd”.                                                                                                                                                      | Ontlucht de oven.                                                                                                                                                             |
+| Lithiumcarbonaat                       | “Zeer giftig bij inademen”. Een Europees deskundigencomité concludeerde dat het de vruchtbaarheid, het ongeboren kind en kinderen die borstvoeding krijgen kan schaden; formele vaststelling was niet bevestigd toen we het nakeken.                                        | Handschoenen en adembeschermingsmasker; buiten bereik van kinderen. We stellen voor tijdens een zwangerschap en tijdens het geven van borstvoeding extra voorzichtig te zijn. |
+| Borax en boorzuur                      | In de EU ingedeeld als “kan de vruchtbaarheid schaden; kan het ongeboren kind schaden”.                                                                                                                                                                                     | Handschoenen; boor uit een fritte waar u kunt.                                                                                                                                |
+| Soda, potas, alkalische veldspaten     | Huidirriterend.                                                                                                                                                                                                                                                             | Handschoenen.                                                                                                                                                                 |
+| Fluorspaat, cryoliet, lepidoliet       | Geven fluorgassen af tijdens het stoken; fluorspaat irriteert ook de huid.                                                                                                                                                                                                  | Ontlucht de oven naar buiten; handschoenen.                                                                                                                                   |
+| Talk                                   | IARC 2A sinds juli 2024; talk die met asbest is verontreinigd, telt als asbest, groep 1.                                                                                                                                                                                    | Plaatvormige (niet vezelige), asbestvrije talk; controleer het veiligheidsinformatieblad.                                                                                     |
 
-Borax, boorzuur, soda en potas lossen op in water, dus beschouwen we ze als de grondstoffen die het waarschijnlijkst via een beschadigde huid worden opgenomen of via ongewassen handen worden ingeslikt.
+Borax, boorzuur, soda en potas lossen op in water, dus we beschouwen ze als de stoffen die het waarschijnlijkst via een beschadigde huid worden opgenomen of via ongewassen handen worden ingeslikt.
 
 > [!NOTE]
-> Vraagt een recept om ongefrit bariumcarbonaat, veel mangaan of welke lood- of cadmiumgrondstof ook, zoek dan een versie die in plaats daarvan een fritte of een pigment gebruikt. Glazecalc kan de chemie van het origineel en van de vervanging vergelijken; test daarna het nieuwe glazuur.
+> Als een recept ruw bariumcarbonaat, veel mangaan of een loodhoudende of cadmiumhoudende grondstof vraagt, zoek dan een versie die in plaats daarvan een fritte of een pigment gebruikt. Glazecalc kan de chemie van het origineel en de vervanging vergelijken; test daarna het nieuwe glazuur.
 
 ## Handschoenen, huid en ogen {#gloves-and-eyes}
 
@@ -267,6 +267,8 @@ Dit zijn de primaire bronnen die het meest de moeite waard zijn om te lezen. De 
 - [IARC: Monographs Volume 100C](https://publications.iarc.who.int/120)
 - [IARC: Volume 131, Cobalt, antimony compounds and weapons-grade tungsten alloy](https://monographs.iarc.who.int/news-events/volume-131-cobalt-antimony-compounds-and-weapons-grade-tungsten-alloy)
 - [Science Media Centre Spain: IARC classifies talc (2024)](https://sciencemediacentre.es/en/node/3775)
+- [ECHA: Risk Assessment Committee opinion on lithium carbonate, chloride and hydroxide (2021, PDF)](https://echa.europa.eu/documents/10162/e2a3c38e-85fe-505c-a325-293c70a74da5)
+- [PubChem: Cobalt carbonate, GHS classification, including its EU harmonised one](https://pubchem.ncbi.nlm.nih.gov/compound/10565#section=GHS-Classification)
 - [ECHA: Risk Assessment Committee document on boric acid and borates](https://echa.europa.eu/documents/10162/7d740d8c-5cd5-872b-5da2-e549983a9ff9)
 - [Coslaw: EU introduces new CMR classifications under the 24th ATP to the CLP Regulation](https://coslaw.eu/eu-introduces-new-cmr-classifications-under-the-24th-atp-to-the-clp-regulation/)
 - [University of Utah EHS: Arts safety: ceramics](https://www.ehs.utah.edu/guidelines/arts-safety-ceramics/)
@@ -275,6 +277,7 @@ Dit zijn de primaire bronnen die het meest de moeite waard zijn om te lezen. De 
 - [Digitalfire: Kiln fumes](https://digitalfire.com/glossary/kiln+fumes)
 - [Digitalfire: Barium and compounds toxicology](https://digitalfire.com/hazard/barium+and+compounds+toxicology)
 - [Digitalfire: Manganese inorganic compounds toxicology](https://digitalfire.com/hazard/manganese+inorganic+compounds+toxicology)
+- [JSP: What levels of protection do particulate filters provide?](https://jspsafety.helpjuice.com/en_GB/what-levels-of-protection-do-particulate-filters-provide)
 - [JSP: Why is a clean shave essential for a proper tight-fitting respirator seal?](https://jspsafety.helpjuice.com/en_GB/why-is-a-clean-shave-essential-for-a-proper-tight-fitting-respirator-seal-can-i-have-a-beard)
 - [Skutt: Kiln room design and product specifications](https://cdn.shopify.com/s/files/1/0889/3726/7497/files/Designing-A-Kiln-Room-1.pdf)
 - [CIRMA: Kiln safety bulletin (2025)](https://downloads.ccm-ct.org/pdf/Media-Library-Bulletins/KilnSafety-Bulletin-052825.pdf)

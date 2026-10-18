@@ -38,7 +38,7 @@ Pişmemiş ürüne **kuru yarımamul**{{en: greenware}} denir (kaynaklar, İngil
 
 ### İki pişirim
 
-İlk ve daha düşük sıcaklıktaki pişirim **bisküvi pişirimidir**{{en: bisque}} (Birleşik Krallık’ta **biscuit**); genellikle 08–04 numaralı piramitlerde, yaklaşık {{1740–1940 °F; 950–1060 °C}} sıcaklıkta yapılır. Ürünü sağlam ama gözenekli bırakır. Bir sır başvuru sitesi olan Digitalfire genel olarak %15’ten fazla gözeneklilik önerir; böylece bisküvi, sır sürülürken sırrın suyunu emer. Düşük ısıda bisküvi (08–06 numaralı piramitler) daha gözeneklidir; yüksek ısıda bisküvi (çoğu zaman 04 numaralı piramit) daha sağlamdır ama sırrı daha zor tutar.
+İlk ve daha düşük sıcaklıktaki pişirim **bisküvi pişirimidir**{{en: bisque}} (Birleşik Krallık’ta **biscuit**); genellikle 08–04 numaralı piramitlerde (en sık 06–04), yaklaşık {{1728–1945 °F; 942–1063 °C}} sıcaklıkta yapılır. Ürünü sağlam ama gözenekli bırakır. Bir sır başvuru sitesi olan Digitalfire genel olarak %15’ten fazla gözeneklilik önerir; böylece bisküvi, sır sürülürken sırrın suyunu emer. Düşük ısıda bisküvi (08–06 numaralı piramitler) daha gözeneklidir; yüksek ısıda bisküvi (çoğu zaman 04 numaralı piramit) daha sağlamdır ama sırrı daha zor tutar.
 
 Table: Bisküvinin sırlamayı nasıl değiştirdiği (Digitalfire)
 Label: Bisküvinin sırlamayı nasıl değiştirdiği
@@ -254,7 +254,7 @@ Yasal sınır değerler ülkeden ülkeye değişir. Tablo, yaşadığınız yerd
 
 ::food-limits
 
-ABD’de gıda için yapılmamış ürünlerin üzerinde kalıcı, pişirilerek uygulanmış bir “Not for Food Use” (gıda için kullanılmaz) uyarısı bulunmalı ya da gıda yüzeyinde bir delik olmalıdır. AB, kurşun ve kadmiyum sınırlarını 84/500/EEC sayılı Konsey Direktifinde belirler; Birleşik Krallık da aynı değerleri kendi yasasında korur. 29 Mayıs 2026’dan itibaren Hollanda, Belçika ve Lüksemburg yaklaşık 130 ila 150 kat daha az kurşuna ve yaklaşık 15 kat daha az kadmiyuma izin verir. Avustralya ithal ürünler için sınırlar koyar; Avustralya’da ya da Yeni Zelanda’da yapılan ürünler için resmî bir sınır bulamadık.
+ABD’de gıdada kullanılabilir görünen dekoratif seramik ürünler gıda ürünü sayılır. Bunun istisnası, üzerinde hem yapışkan bir etiket hem de tabanına kalıpla ya da pişirilerek işlenmiş, “Not for Food Use. May Poison Food” gibi kalıcı bir uyarı bulunan ya da gıda yüzeyini delip geçen bir delik bulunan ürünlerdir. AB, kurşun ve kadmiyum sınırlarını 84/500/EEC sayılı Konsey Direktifinde belirler; Birleşik Krallık da aynı değerleri kendi yasasında korur. 29 Mayıs 2026’dan itibaren Hollanda, Belçika ve Lüksemburg yaklaşık 130 ila 150 kat daha az kurşuna ve yaklaşık 15 kat daha az kadmiyuma izin verir. Avustralya ithal ürünler için sınırlar koyar; Avustralya’da ya da Yeni Zelanda’da yapılan ürünler için resmî bir sınır bulamadık.
 
 ### Test
 
@@ -310,7 +310,7 @@ Bentonit (bentonite)
 : Sırrın dibe çökmesini önlemek için %1–3 oranında eklenen çok ince bir kil.
 
 Bisküvi pişirimi (bisque; Birleşik Krallık: biscuit)
-: İlk ve daha düşük sıcaklıktaki pişirim, genellikle 08–04 numaralı Orton piramitleri; ürünü sağlam ama gözenekli bırakır.
+: İlk ve daha düşük sıcaklıktaki pişirim, genellikle 08–04 numaralı Orton piramitleri (en sık 06–04); ürünü sağlam ama gözenekli bırakır.
 
 Bor (B₂O₃; boron)
 : Resmî olarak bir cam yapıcı, ama ergitici olarak kullanılır; 06 numaralı piramitten 6 numaralı piramide kadar vazgeçilmezdir.
@@ -474,6 +474,7 @@ Wax resist (sır tutmaz mum)
 - [Glazy Help: Specific gravity](https://help.glazy.org/testing/specific-gravity)
 - [Orton Ceramic Foundation: Pyrometric cone chart, °F (The Ceramic Shop üzerinden)](https://www.theceramicshop.com/technical_info/Cones/Orton-Cone-Chart-F-022-14.pdf)
 - [Digitalfire: Bisque](https://digitalfire.com/glossary/bisque)
+- [Digitalfire: Bentonite](https://digitalfire.com/material/bentonite)
 - [Digitalfire: Unity molecular formula](https://digitalfire.com/glossary/unity+molecular+formula)
 - [Digitalfire: LOI](https://digitalfire.com/glossary/loi)
 - [Digitalfire: Frit](https://digitalfire.com/glossary/frit)
@@ -489,3 +490,4 @@ Wax resist (sır tutmaz mum)
 - [Potclays: The difference between stoneware and earthenware](https://www.potclays.co.uk/clay-questions/difference-stoneware-earthenware)
 - [US FDA: Compliance Policy Guide Sec. 545.450, Pottery (ceramics), lead contamination](https://www.fda.gov/media/71764/download)
 - [EUR-Lex: Council Directive 84/500/EEC on ceramic articles in contact with food](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:31984L0500)
+- [eCFR: 21 CFR 109.16, Ornamental and decorative ceramicware](https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-109/subpart-A/section-109.16)

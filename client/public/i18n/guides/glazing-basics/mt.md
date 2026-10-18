@@ -38,7 +38,7 @@ L-oġġetti li għadhom ma nħmewx huma **oġġetti mhux moħmija**{{en: greenwa
 
 ### Iż-żewġ ħamjiet
 
-L-ewwel ħamja, aktar baxxa, hija l-**ħamja tal-bisque**{{en: bisque}} (fir-Renju Unit: **biscuit**), normalment koni 08–04, madwar {{1740–1940 °F; 950–1060 °C}}. Tħalli l-oġġetti b’saħħithom iżda porużi. Digitalfire, sit ta’ referenza dwar il-glejż, jissuġġerixxi ġeneralment porożità ta’ aktar minn 15%, biex il-bisque jiġbed l-ilma mill-glejż hekk kif jitqiegħed. Bisque baxx (koni 08–06) ikun aktar poruż; bisque għoli (spiss kon 04) ikun aktar b’saħħtu iżda jaqbad il-glejż inqas faċilment.
+L-ewwel ħamja, aktar baxxa, hija l-**ħamja tal-bisque**{{en: bisque}} (fir-Renju Unit: **biscuit**), normalment koni 08–04 (l-aktar 06–04), madwar {{1728–1945 °F; 942–1063 °C}}. Tħalli l-oġġetti b’saħħithom iżda porużi. Digitalfire, sit ta’ referenza dwar il-glejż, jissuġġerixxi ġeneralment porożità ta’ aktar minn 15%, biex il-bisque jiġbed l-ilma mill-glejż hekk kif jitqiegħed. Bisque baxx (koni 08–06) ikun aktar poruż; bisque għoli (spiss kon 04) ikun aktar b’saħħtu iżda jaqbad il-glejż inqas faċilment.
 
 Table: Kif il-bisque jaffettwa t-tqegħid tal-glejż (Digitalfire)
 Label: Kif il-bisque jaffettwa t-tqegħid tal-glejż
@@ -254,7 +254,7 @@ Il-limiti legali jvarjaw minn pajjiż għal ieħor. It-tabella turi dawk ta’ f
 
 ::food-limits
 
-Fl-Istati Uniti, oġġetti li mhumiex maħsuba għall-ikel iridu jkollhom avviż permanenti, moħmi fuqhom, “Not for Food Use” (mhux għall-użu mal-ikel), jew toqba li tgħaddi minn ġol-wiċċ li jmiss l-ikel. L-UE tistabbilixxi limiti għaċ-ċomb u għall-kadmju fid-Direttiva 84/500/KEE, u r-Renju Unit iżomm l-istess ċifri fil-liġi tiegħu stess. Mid-29 ta’ Mejju 2026, il-Pajjiżi l-Baxxi, il-Belġju u l-Lussemburgu jippermettu madwar 130 sa 150 darba inqas ċomb, u madwar 15-il darba inqas kadmju. L-Awstralja tistabbilixxi limiti għall-oġġetti importati; ma sibna l-ebda limitu uffiċjali għall-oġġetti magħmula fl-Awstralja jew fi New Zealand.
+Fl-Istati Uniti, oġġetti taċ-ċeramika dekorattivi li jidhru li jistgħu jintużaw mal-ikel jiġu ttrattati bħala oġġetti għall-ikel. Dan ma japplikax jekk ikollhom tikketta adeżiva u avviż permanenti ffurmat jew moħmi fuq il-qiegħ tagħhom, bħal “Not for Food Use. May Poison Food”, jew jekk ikollhom toqba li tgħaddi minn ġol-wiċċ li jmiss l-ikel. L-UE tistabbilixxi limiti għaċ-ċomb u għall-kadmju fid-Direttiva 84/500/KEE, u r-Renju Unit iżomm l-istess ċifri fil-liġi tiegħu stess. Mid-29 ta’ Mejju 2026, il-Pajjiżi l-Baxxi, il-Belġju u l-Lussemburgu jippermettu madwar 130 sa 150 darba inqas ċomb, u madwar 15-il darba inqas kadmju. L-Awstralja tistabbilixxi limiti għall-oġġetti importati; ma sibna l-ebda limitu uffiċjali għall-oġġetti magħmula fl-Awstralja jew fi New Zealand.
 
 ### L-ittestjar
 
@@ -313,7 +313,7 @@ Bentonit (bentonite)
 : Tafal fin ħafna miżjud b’1–3% biex il-glejż ma jinżilx fil-qiegħ.
 
 Bisque (fir-Renju Unit: biscuit)
-: L-ewwel ħamja, aktar baxxa, normalment koni 08–04, li tħalli l-oġġetti b’saħħithom iżda porużi.
+: L-ewwel ħamja, aktar baxxa, normalment koni 08–04 (l-aktar 06–04), li tħalli l-oġġetti b’saħħithom iżda porużi.
 
 Boron (B₂O₃)
 : Formalment formatur tal-ħġieġ iżda jintuża bħala fluss; essenzjali mill-kon 06 sal-kon 6.
@@ -474,6 +474,7 @@ Xogħol tas-sħana (heatwork)
 - [Glazy Help: Specific gravity](https://help.glazy.org/testing/specific-gravity)
 - [Orton Ceramic Foundation: Pyrometric cone chart, °F (permezz ta’ The Ceramic Shop)](https://www.theceramicshop.com/technical_info/Cones/Orton-Cone-Chart-F-022-14.pdf)
 - [Digitalfire: Bisque](https://digitalfire.com/glossary/bisque)
+- [Digitalfire: Bentonite](https://digitalfire.com/material/bentonite)
 - [Digitalfire: Unity molecular formula](https://digitalfire.com/glossary/unity+molecular+formula)
 - [Digitalfire: LOI](https://digitalfire.com/glossary/loi)
 - [Digitalfire: Frit](https://digitalfire.com/glossary/frit)
@@ -489,3 +490,4 @@ Xogħol tas-sħana (heatwork)
 - [Potclays: The difference between stoneware and earthenware](https://www.potclays.co.uk/clay-questions/difference-stoneware-earthenware)
 - [US FDA: Compliance Policy Guide Sec. 545.450, Pottery (ceramics), lead contamination](https://www.fda.gov/media/71764/download)
 - [EUR-Lex: Council Directive 84/500/EEC on ceramic articles in contact with food](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:31984L0500)
+- [eCFR: 21 CFR 109.16, Ornamental and decorative ceramicware](https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-109/subpart-A/section-109.16)

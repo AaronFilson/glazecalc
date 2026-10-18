@@ -57,9 +57,13 @@
     "stackServer": "Uma API em TypeScript sobre Node.js 24 e Express 5, com MongoDB 9, verificada por mais de 350 testes automáticos.",
     "stackHosting": "Corre em Docker na Amazon Web Services, atrás de nginx, com HTTPS da Let's Encrypt.",
     "stackDeploy": "Implementado pelo GitHub Actions: as imagens são criadas e testadas a cada alteração, e as implementações iniciam sessão na AWS sem chaves guardadas.",
+    "creditsHeading": "Créditos",
+    "credits": "As regiões do gráfico de Stull vêm da leitura que o Glazy faz do gráfico de R. T. Stull de 1912, por Derek Au (Copyright (c) 2017 Derek Au, licença MIT). O <notices>aviso completo</notices> está no código-fonte.",
     "whoHeading": "Quem o fez",
     "who": "O Glazecalc é feito por Aaron Filson. Encontrou um problema ou tem uma ideia? <issues>Abra uma issue no GitHub</issues>.",
-    "studio": "A cerâmica feita à mão de Aaron Filson está no <studio>Updraft Pottery Studio</studio>, em Tacoma, Washington. Veja o trabalho e encomende uma peça, se alguma lhe disser alguma coisa."
+    "studio": "A cerâmica feita à mão de Aaron Filson está no <studio>Updraft Pottery Studio</studio>, em Tacoma, Washington. Veja o trabalho e encomende uma peça, se alguma lhe disser alguma coisa.",
+    "languagesHeading": "Línguas",
+    "languages": "O Glazecalc está disponível nestas línguas. Cada ligação abre esta página nessa língua."
   },
   "privacy": {
     "title": "Privacidade",
@@ -71,9 +75,15 @@
     "contact": "Para perguntar sobre os seus dados, ou para exercer qualquer um dos seus direitos, escreva para <mail>privacy@glazecalcapp.com</mail>. Também pode <issues>abrir uma issue no GitHub</issues>, mas as issues são públicas: nunca ponha numa delas o seu endereço de e-mail nem nada pessoal. A maior parte do que diz respeito aos seus dados pode fazê-la por si na sua <account>página da conta</account>.",
     "storedHeading": "O que é guardado, e porquê",
     "storedAccount": "<b>A sua conta:</b> o seu endereço de e-mail e a sua palavra-passe, guardada apenas como um hash unidirecional (bcrypt), nunca a própria palavra-passe. As suas definições (como a língua, a região e as unidades) e a lista das matérias-primas que tem são guardadas com ela. Uma conta precisa de um endereço de e-mail, para iniciar sessão e para repor uma palavra-passe esquecida. Quando cria uma conta, é enviada uma ligação para o endereço para confirmar que é seu; até lá, só são enviados e-mails para ele quando os pedir, como para repor a palavra-passe.",
+    "storedPrices": "<b>Preços, se indicar algum:</b> o que paga por cada matéria-prima, por quilograma, e a moeda em que estão, para o custo de um lote. São dados de negócio, ficam guardados com a sua conta e são privados: nunca fazem parte de uma receita, por isso nada do que partilhar os mostra. Transferir os meus dados inclui-os, e eliminar a conta elimina-os. Os preços de um período de experiência passam para a sua conta com os respetivos registos, para as matérias-primas a que não tenha posto preço, quando ambos estão na mesma moeda.",
     "storedEmailChange": "<b>Alteração do e-mail:</b> a data da última alteração do seu endereço, para que um pedido de desativação do início de sessão em dois passos nunca seja aceite a partir de um endereço novo nos 30 dias seguintes.",
     "storedSignIn": "<b>Início de sessão em dois passos, se o ativar:</b> se está ativo; a chave secreta que a sua aplicação de autenticação partilha com o Glazecalc, cifrada; de cada chave de acesso, a chave pública (que não consegue iniciar sessão sozinha) com o identificador e os dados que o dispositivo lhe dá, o nome que lhe deu e quando foi adicionada e usada pela última vez; os seus códigos de recuperação, apenas como um hash unidirecional com chave, para que ninguém os possa voltar a ler; e, se alguém introduzir a sua palavra-passe mas não concluir o segundo passo, quando o Glazecalc lhe enviou o último e-mail sobre isso (no máximo uma vez por dia). Enquanto inicia sessão, entre a palavra-passe e o segundo passo, o servidor guarda uma nota do início de sessão durante 5 minutos e a página guarda um token curto apenas na memória: nenhum cookie novo, nada no armazenamento do navegador.",
-    "storedSaved": "<b>O que guarda:</b> as suas receitas, matérias-primas, aditivos, notas, registos de cozedura e conselhos, tal como os escreveu. Só são visíveis para si: nada é partilhado entre utilizadores.",
+    "storedSaved": "<b>O que guarda:</b> as suas receitas, matérias-primas, aditivos, notas, registos de cozedura e conselhos, tal como os escreveu. Só são visíveis para si, a menos que partilhe uma receita por ligação.",
+    "storedTrash": "<b>O Lixo e as versões anteriores:</b> o que remove de uma lista fica no Lixo, inteiro, para o poder repor; e cada alteração que guarda num registo guarda o registo tal como estava imediatamente antes, para poder anular a alteração.",
+    "storedShares": "<b>Receitas que partilha por ligação, se partilhar alguma:</b> que receita, quando foi criada a sua ligação e se mostra as notas da receita, com um hash unidirecional da ligação (nunca a própria ligação). Quem tiver a ligação pode ver a receita como está agora, com a sua fórmula de Seger, e as suas notas se escolheu mostrá-las; nunca o seu e-mail, a sua conta nem quaisquer preços. As receitas partilhadas são mantidas fora dos motores de busca, e a ligação nunca chega aos registos do servidor. Para travar abusos, as receitas partilhadas abertas a partir de cada endereço IP são contadas, em memória, durante 15 minutos. Um período de experiência não pode partilhar.",
+    "storedTokens": "<b>Tokens de acesso e aplicações ligadas, se criar ou aprovar algum:</b> de cada um, o nome, o que pode fazer, um hash unidirecional do token (nunca o próprio token) e os seus últimos 4 carateres, e quando foi criado, usado pela última vez, expira e foi revogado.",
+    "storedActivity": "<b>O que os tokens e as aplicações fizeram:</b> uma linha por cada registo que um token de acesso ou uma aplicação ligada criou, alterou, moveu para o Lixo, repôs ou anulou: quando, que token ou aplicação, o que fez e o título do registo, abreviado. Nunca o texto de uma nota nem mais nada do registo. As alterações que faz no site não são listadas.",
+    "storedLimits": "<b>Limites de frequência:</b> para travar tentativas de adivinhar e scripts descontrolados, contagens de tentativas de início de sessão, registos, pedidos de reposição e períodos de experiência por endereço IP ou conta, de tokens de acesso que não funcionam por endereço IP, de pedidos feitos com tokens de acesso, por conta (120 por minuto e 5000 por dia), de registos que cada token de acesso move para o Lixo, por token, de receitas partilhadas abertas e de ligações de partilha que não abrem nada, por endereço IP, e de pedidos às ferramentas para assistentes de IA (MCP): 60 por minuto e 2000 por dia por endereço IP, ou 120 por minuto e 5000 por dia por conta quando se usa um token de acesso, com no máximo 10 substituições ou correspondências por minuto.",
     "storedTrial": "<b>Um período de experiência («Experimentar agora»):</b> sem e-mail nem palavra-passe, apenas um nome inventado, como «speckled quiet kilns». Se iniciar sessão numa conta no mesmo navegador durante um período de experiência, o que fez nesse período passa para a conta.",
     "storedResets": "<b>Ligações de reposição da palavra-passe e de e-mail:</b> que conta pediu, quando, o endereço para onde foi enviada uma ligação para confirmar um endereço, e uma impressão digital de cada ligação (não a própria ligação).",
     "storedLogs": "<b>Registos (logs):</b> o servidor web regista cada pedido: o seu endereço IP, a hora, a página pedida e o nome do seu navegador. A aplicação regista os erros com a página em que ocorreram, nunca o seu endereço de e-mail.",
@@ -96,6 +106,11 @@
     "choiceNoWarranty": "O Glazecalc é fornecido tal como está, sem garantia. Os responsáveis pela sua manutenção não aceitam qualquer responsabilidade, incluindo responsabilidade legal, pela sua decisão de criar uma conta, nem pelo local onde os dados da conta são guardados.",
     "keptHeading": "Durante quanto tempo é guardado",
     "keptAccount": "<b>A sua conta e o que guarda:</b> até os eliminar. As contas não são removidas por não serem usadas.",
+    "keptTrash": "<b>O Lixo e as versões anteriores:</b> um registo removido, 30 dias depois de o remover, ou até o eliminar definitivamente ou esvaziar o Lixo; as versões anteriores, 90 dias, e apenas as últimas 20 de cada registo (e a de antes das alterações de um token de acesso), mas nunca mais tempo do que o registo: enquanto está no Lixo, as suas versões saem com ele. Ambos saem de uma vez quando elimina a sua conta.",
+    "keptShares": "<b>Ligações de partilha:</b> até deixar de partilhar a receita, criar uma nova ligação para ela, movê-la para o Lixo ou eliminar a sua conta. Repor a receita a partir do Lixo não volta a partilhá-la. Repor a palavra-passe ou terminar a sessão em todos os dispositivos também anula todas as suas ligações; alterar a palavra-passe não.",
+    "keptTokens": "<b>Tokens de acesso e aplicações ligadas:</b> cada um até 30 dias depois de expirar (todos expiram, no máximo ao fim de um ano), ou até eliminar a sua conta. Repor a palavra-passe ou «Terminar sessão em todos os dispositivos» anula-os todos de uma vez.",
+    "keptActivity": "<b>O que os tokens e as aplicações fizeram:</b> 90 dias, ou até eliminar a sua conta.",
+    "keptLimits": "<b>Limites de frequência:</b> as contagens são guardadas apenas na memória do servidor, durante 1 minuto a 24 horas, e perdem-se quando este reinicia.",
     "keptTrial": "<b>Um período de experiência:</b> 14 dias a partir do início; depois é eliminado com tudo o que contém, a menos que crie uma conta para o guardar.",
     "keptResets": "<b>Ligações de reposição da palavra-passe e de e-mail:</b> uma ligação de reposição é válida durante 30 minutos e o seu registo é eliminado ao fim de cerca de uma hora; uma ligação para confirmar um endereço é válida, e é guardada, durante 24 horas.",
     "keptSignIn": "<b>Início de sessão em dois passos:</b> cada aplicação de autenticação, chave de acesso e conjunto de códigos de recuperação até os remover, desativar o início de sessão em dois passos ou eliminar a conta. Um início de sessão à espera do segundo passo é eliminado ao fim de 5 minutos, e uma aplicação ou chave de acesso que começou a adicionar mas não concluiu, ao fim de 10 no máximo.",
@@ -113,7 +128,7 @@
     "rightsAsk": "Para tudo o resto, como pedir que a utilização dos seus dados seja suspensa enquanto um erro é corrigido, ou opor-se à forma como são usados, escreva para <mail>privacy@glazecalcapp.com</mail>. É gratuito, e terá uma resposta no prazo de um mês. Só lhe será pedido que mostre que a conta é sua, iniciando sessão ou abrindo uma ligação enviada para o endereço da conta, e nunca um documento de identificação.",
     "rightsComplain": "Em caso de insatisfação, pode apresentar uma reclamação a uma autoridade de proteção de dados: na UE, <edpb>a autoridade do seu país</edpb>, e no Reino Unido, o <ico>Information Commissioner's Office</ico>.",
     "storageHeading": "Cookies e armazenamento do navegador",
-    "storageIntro": "O Glazecalc define um cookie e guarda alguns valores pequenos no seu navegador. Cada um existe para algo que pediu: manter a sessão iniciada, ou lembrar uma escolha que fez. Nenhum faz rastreio e nenhum é partilhado, por isso a lei não exige que se peça autorização primeiro, e não há faixa de cookies.",
+    "storageIntro": "O Glazecalc define dois cookies, o segundo apenas enquanto inicia sessão com o Google ou o GitHub, e guarda alguns valores pequenos no seu navegador. Cada um existe para algo que pediu: manter a sessão iniciada, iniciar sessão com o Google ou o GitHub, ou lembrar uma escolha que fez. Nenhum o rastreia e nenhum é partilhado, por isso a lei não exige pedir autorização antes, e não há banner de cookies.",
     "storageLabel": "Cookies e armazenamento do navegador",
     "storageName": "Nome",
     "storagePurpose": "Para que serve",
@@ -152,7 +167,7 @@
         "lasts": "Até apagar o armazenamento do navegador."
       },
       "print": {
-        "purpose": "As suas últimas escolhas para imprimir uma receita: a receita completa ou um lote, e o tamanho do lote.",
+        "purpose": "As suas últimas escolhas para imprimir uma receita: a receita inteira, um lote ou a folha de trabalho, e o tamanho do lote.",
         "lasts": "Até apagar o armazenamento do navegador."
       },
       "token": {
@@ -166,12 +181,19 @@
       "reloadedFor": {
         "purpose": "Depois de ser publicada uma nova versão do site, que página foi recarregada e quando, para que uma página recarregue no máximo uma vez por minuto.",
         "lasts": "Até fechar o separador."
+      },
+      "oauthCookie": {
+        "purpose": "Apenas enquanto inicia sessão com o Google ou o GitHub: liga a resposta do Google ou do GitHub ao seu navegador, para que mais ninguém possa concluir o seu início de sessão nem iniciar um por si. Os scripts da página não o conseguem ler.",
+        "lasts": "Definido quando prime «Continuar com o Google» ou «Continuar com o GitHub», ou associa um na página da sua conta. Removido quando o início de sessão termina, ou ao fim de 10 minutos."
       }
     },
     "childrenHeading": "Crianças",
     "children": "O Glazecalc é uma ferramenta para ceramistas e não se destina a crianças.",
     "changesHeading": "Alterações",
-    "changes": "Se este aviso mudar, a data no topo da página também muda."
+    "changes": "Se este aviso mudar, a data no topo da página também muda.",
+    "storedProviders": "<b>Google ou GitHub, se iniciar sessão com um deles:</b> o identificador que esse serviço lhe atribui (um número ou código que nunca muda), quando o associou e quando iniciou sessão com ele pela última vez, e se a sua conta tem uma palavra-passe própria. Nada mais desse serviço é guardado: nem o nome, nem a imagem, nem qualquer chave da sua conta lá. Enquanto inicia sessão, o servidor guarda uma nota do início de sessão, com o e-mail que o serviço diz ser seu quando é preciso: para uma conta nova, onde passa a ser o e-mail da conta, ou, quando uma conta Glazecalc já tem esse e-mail, para lhe associar o serviço quando iniciar sessão nessa conta. A nota, e o e-mail que contém, são eliminados em cerca de 10 minutos.",
+    "providers": "<b>Iniciar sessão com o Google ou o GitHub</b> é uma escolha sua, e só acontece quando prime o respetivo botão. O seu navegador vai então ao Google ou ao GitHub, que enviam ao Glazecalc o seu identificador e o seu e-mail. Cada um é uma empresa distinta, responsável pelo que partilha com ela segundo a sua própria política de privacidade. Nenhum script nem imagem de nenhum deles é carregado nas páginas do Glazecalc.",
+    "keptProviders": "<b>Google ou GitHub:</b> cada associação até a desassociar ou eliminar a sua conta. Um início de sessão em curso é eliminado ao fim de 10 minutos."
   },
   "notFound": {
     "heading": "Página não encontrada",
@@ -194,8 +216,35 @@
     "titleMissing": "Dê um título ao conselho.",
     "contentMissing": "Escreva o conselho.",
     "fetchFailed": "Ocorreu um erro ao obter os conselhos.",
-    "standardFetchFailed": "Ocorreu um erro ao obter os conselhos do servidor.",
     "saved": "O conselho foi adicionado.",
     "saveFailed": "Ocorreu um erro ao enviar o conselho."
+  },
+  "assistants": {
+    "title": "Usar o Glazecalc a partir do seu assistente de IA",
+    "lead": "Assistentes de IA como o Claude, o GitHub Copilot, o Cursor e o Gemini podem usar diretamente os cálculos do Glazecalc, através do Model Context Protocol (MCP).",
+    "whatHeading": "O que pode fazer",
+    "what": "Sem conta, um assistente pode consultar matérias-primas na biblioteca, calcular a fórmula de Seger de uma receita, compará-la com os limites para a sua cozedura, sugerir substitutos para matérias-primas descontinuadas, refazer uma receita com as matérias-primas que indicar, converter entre cones e temperaturas, e pesquisar e ler os guias. Nada do que envia é guardado; como em todas as páginas, o registo do servidor web guarda o endereço IP, a hora e o endereço de cada pedido (nunca o que foi enviado), durante 14 dias.",
+    "mine": "Com um token de acesso da <account>página da sua conta</account>, também pode ler as suas próprias receitas, matérias-primas, caderno, registos de cozedura e as matérias-primas que tem disponíveis. Um token só pode ler: nunca altera nem remove nada.",
+    "caution": "As verificações de limites são avisos baseados em limites publicados, tal como na aplicação, e não prova de que um vidrado seja apto para contacto com alimentos. Coza um teste de cada vidrado, e mande testar a libertação de metais dos vidrados para superfícies em contacto com alimentos.",
+    "addressHeading": "O endereço",
+    "address": "Dê ao seu assistente este endereço, usando o transporte Streamable HTTP:",
+    "token": "Para que possa ler os seus próprios registos, crie um token na <account>página da sua conta</account> e copie-o. O seu assistente envia-o num cabeçalho Authorization, como Bearer seguido do token. Mantenha-o fora de ficheiros que partilhe ou submeta, como faria com uma palavra-passe.",
+    "clientsHeading": "Adicionar o Glazecalc ao seu assistente",
+    "claudeCode": "Num terminal:",
+    "claudeCodeToken": "Com um token de acesso, para ler também os seus próprios registos:",
+    "vscode": "Em .vscode/mcp.json numa pasta, ou nas suas definições de utilizador. O VS Code pede o token uma vez e mantém-no oculto; omita headers e inputs para usar apenas as ferramentas que não precisam de conta:",
+    "cursor": "Em ~/.cursor/mcp.json, ou .cursor/mcp.json num projeto. Omita headers para usar apenas as ferramentas que não precisam de conta:",
+    "gemini": "Em ~/.gemini/settings.json. Omita headers para usar apenas as ferramentas que não precisam de conta:",
+    "copy": "Copiar",
+    "copyAddress": "Copiar o endereço",
+    "copyFor": "Copiar a configuração para {client}",
+    "copyForToken": "Copiar a configuração para {client}, com um token de acesso",
+    "copied": "Copiado.",
+    "copyByHand": "Não foi possível copiar por si. Está selecionado: copie-o a partir da caixa.",
+    "appsHeading": "Claude, ChatGPT e outras aplicações",
+    "apps": "Adicione um conector personalizado com o endereço acima. Estas aplicações ainda não conseguem enviar um token de acesso, por isso obtêm as ferramentas que não precisam de conta. Aceder aos seus próprios registos a partir delas virá com o início de sessão a partir da aplicação.",
+    "stopHeading": "Cortar o acesso",
+    "stop": "Revogue um token na <account>página da sua conta</account> a qualquer momento. Cada token deixa de funcionar no dia que escolheu, e todos deixam de funcionar de uma vez se repuser a palavra-passe ou terminar a sessão em todos os dispositivos.",
+    "limits": "Cada endereço pode fazer 60 pedidos por minuto e 2000 por dia; uma conta que use um token, 120 por minuto e 5000 por dia. As substituições e correspondências estão limitadas a 10 por minuto."
   }
 }

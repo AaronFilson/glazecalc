@@ -6,6 +6,7 @@ import { filter, firstValueFrom } from 'rxjs';
 import type { MockInstance } from 'vitest';
 import { App } from '../app';
 import { AuthService } from '../core/auth.service';
+import { OFFERED_LANGUAGES } from '../i18n/language';
 import {
   answer,
   API,
@@ -47,16 +48,24 @@ describe('static pages', () => {
     );
     expect(links).toEqual([
       '/recipe#saved-recipes',
+      '/import',
+      '/blends',
       '/material',
       '/additive',
       '/firing',
       '/notes',
       '/advice',
       '/guides',
+      '/trash',
       '/account'
     ]);
     expect(home.nativeElement.querySelector('.home-welcome')).toBeNull();
-    expect(text((await create(TrashPage)).fixture)).toContain('trash functionality is coming soon');
+    const trash = await create(TrashPage);
+    httpMock()
+      .expectOne(API + '/trash/getAll')
+      .flush([]);
+    await settle(trash.fixture);
+    expect(text(trash.fixture)).toContain('The Trash is empty.');
     expect(text((await create(NotFoundPage)).fixture)).toContain('Page not found');
   });
 
@@ -84,10 +93,28 @@ describe('static pages', () => {
   });
 
   it('shows the about and privacy pages with one h1 each', async () => {
-    for (const page of [AboutPage, PrivacyPage]) {
+    for (const page of [AboutPage, PrivacyPage] as Type<unknown>[]) {
       const { fixture } = await create(page);
       expect(fixture.nativeElement.querySelectorAll('h1').length).toBe(1);
     }
+  });
+
+  it('lists the offered languages on the about page, each in its own name and linked to the about page in it', async () => {
+    TestBed.overrideProvider(OFFERED_LANGUAGES, { useValue: ['en', 'de', 'fr'] });
+    const { fixture } = await create(AboutPage);
+    const nav = fixture.nativeElement.querySelector('nav[aria-labelledby="about-languages-heading"]') as HTMLElement;
+    expect(nav).not.toBeNull();
+    expect(fixture.nativeElement.querySelector('#about-languages-heading')).not.toBeNull();
+    const links = [...nav.querySelectorAll('li a')] as HTMLAnchorElement[];
+    expect(links.map((a) => a.getAttribute('href'))).toEqual(['/about', '/de/about', '/fr/about']);
+    expect(links.map((a) => a.getAttribute('lang'))).toEqual(['en', 'de', 'fr']);
+    expect(links.map((a) => a.textContent)).toEqual(['English', 'Deutsch', 'Français']);
+  });
+
+  it('leaves the language list off the about page while only English is offered', async () => {
+    TestBed.overrideProvider(OFFERED_LANGUAGES, { useValue: ['en'] });
+    const { fixture } = await create(AboutPage);
+    expect(fixture.nativeElement.querySelector('#about-languages-heading')).toBeNull();
   });
 
   it('gives the private contact, and lists the cookie and every storage key with what it is for and how long it stays', async () => {
@@ -103,7 +130,8 @@ describe('static pages', () => {
       expect.arrayContaining(['__Host-glazecalc_session', 'glazecalc_session', 'session', 'trial', 'preferredRegion'])
     );
     expect(names).toEqual(expect.arrayContaining(['visitor.language', 'region', 'printBatch', 'reloadedFor']));
-    expect(names.length).toBe(28);
+    expect(names).toEqual(expect.arrayContaining(['__Host-glazecalc_oauth', 'glazecalc_oauth']));
+    expect(names.length).toBe(33);
     for (const row of rows) {
       const cells = [...row.querySelectorAll('td')].map((td) => td.textContent?.trim() ?? '');
       expect(cells.length).toBe(2);
@@ -228,12 +256,13 @@ describe('AdditivePage', () => {
 });
 
 describe('AdvicePage', () => {
-  it('shows the general advice to visitors, with no form and no request for their own', async () => {
+  it('shows the general advice to visitors, with no form and no request at all', async () => {
     const { fixture } = await create(AdvicePage);
-    answer('/advice/getStandard', [{ _id: 's', title: 'Sieve', content: 'Use 80 mesh', tags: ['mixing'] }]);
-    httpMock().expectNone(API + '/advice/getAll');
     await settle(fixture);
-    expect(text(fixture, '.general-advice')).toContain('Use 80 mesh');
+    // The standard advice comes with the page (data/advice.ndjson), so the render has it too.
+    httpMock().expectNone(() => true);
+    expect(fixture.nativeElement.querySelectorAll('.general-advice li')).toHaveLength(8);
+    expect(text(fixture, '.general-advice')).toContain('Have a system to your process.');
     expect(fixture.nativeElement.querySelector('form')).toBeNull();
     expect(text(fixture)).toContain('Create a free account or sign in to keep advice of your own.');
   });
@@ -242,9 +271,8 @@ describe('AdvicePage', () => {
     localStorage.setItem('session', 'account');
     const { fixture, page } = await create(AdvicePage);
     answer('/advice/getAll', []);
-    answer('/advice/getStandard', [{ _id: 's', title: 'Sieve', content: 'Use 80 mesh', tags: ['mixing', 'tools'] }]);
     await settle(fixture);
-    expect(text(fixture, '.general-advice')).toContain('Tags: mixing, tools');
+    expect(text(fixture, '.general-advice')).toContain('Tags: specific gravity, density, mixing');
 
     await page['save']();
     await fixture.whenStable();

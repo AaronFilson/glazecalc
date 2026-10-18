@@ -4,10 +4,26 @@
     "signedInAs": "Kirjautuneena: {email}.",
     "trying": "Glazecalcin kokeilu nimellä {name}. Aloita reseptistä.",
     "welcomeBack": "Jatka työtä siitä, mihin se jäi.",
+    "welcome": {
+      "heading": "Tervetuloa Glazecalciin",
+      "text": "Muistikirja on valmis. Hyvä ensimmäinen askel: kirjoita jo käytössä olevan lasitteen raaka-aineet ja määrät ja katso sen Segerin kaava.",
+      "firstRecipe": "Aloita ensimmäinen resepti",
+      "confirmHeading": "Sähköpostiosoitteen vahvistaminen",
+      "confirm": "Vahvista sähköpostiosoite: lähetimme linkin osoitteeseen {email}. Kaksivaiheinen kirjautuminen tarvitsee sen. Linkin voi lähettää uudelleen <account>tilisivulta</account>.",
+      "confirmText": "Lähetimme linkin osoitteeseen {email}. Avaa linkki osoitteen vahvistamiseksi: kaksivaiheinen kirjautuminen tarvitsee sen. Linkin voi lähettää uudelleen <account>tilisivulta</account>."
+    },
     "sections": {
       "recipe": {
         "title": "Reseptit",
         "text": "Kokoa lasite raaka-aineista ja määristä, katso sen Segerin kaava (UMF) ja tallenna se."
+      },
+      "import": {
+        "title": "Reseptien liittäminen",
+        "text": "Liitä reseptejä verkkosivulta, taulukosta tai muistiinpanoista, tarkista, mitä luettiin, ja tallenna ne."
+      },
+      "blends": {
+        "title": "Seokset koepaloille",
+        "text": "Sekoita kaksi, kolme tai neljä omaa reseptiä numeroiduiksi koepaloiksi ja katso, mitä kullekin punnitaan."
       },
       "material": {
         "title": "Raaka-aineet",
@@ -32,6 +48,14 @@
       "guides": {
         "title": "Oppaat",
         "text": "Siitä, mikä lasite on, aina sen polttamiseen asti, ja miten kaikki pysyvät turvassa matkan varrella."
+      },
+      "trash": {
+        "title": "Roskakori",
+        "text": "Palauta se, mitä poistit viimeisten 30 päivän aikana."
+      },
+      "account": {
+        "title": "Tili ja asetukset",
+        "text": "Asetukset, salasana, kaksivaiheinen kirjautuminen ja kaiken tänne tallennetun lataus."
       }
     },
     "newHere": "Onko Segerin kaava uusi asia? <advice>Neuvosivulla</advice> selitetään perusteet, ja <about>Tietoja-sivulla</about> kerrotaan, miten Glazecalc toimii."
@@ -39,27 +63,54 @@
   "firing": {
     "title": "Polttopäiväkirjat",
     "lead": "Kirjaa jokainen poltto: ajat, lämpötilat, keilat ja uunia koskevat huomiot.",
+    "newHeading": "Uusi poltto",
+    "titleLabel": "Nimi",
+    "kiln": "Uuni",
+    "date": "Päivämäärä",
+    "notes": "Muistiinpanot",
+    "fieldSelect": "Kirjattavat kentät",
     "addField": "Lisää kenttä",
+    "included": "Tämän kirjauksen kentät",
     "moveLeft": "Siirrä kenttää vasemmalle",
     "moveRight": "Siirrä kenttää oikealle",
     "removeField": "Poista kenttä",
     "addRow": "Lisää rivi polttotaulukkoon",
+    "addRowWhy": "Lisää ensin kenttä.",
+    "tableEmpty": "Lisää kenttä yllä ja sitten rivejä.",
+    "recordHeading": "Kirjaa poltto",
     "rowActions": "Rivin toiminnot",
     "cell": "{field}, rivi {row}",
     "removeRow": "Poista rivi",
     "save": "Tallenna",
+    "storedHeading": "Omat tallennetut poltot",
+    "noneSaved": "Ei vielä yhtään. Tallennetut poltot näkyvät tässä.",
+    "storedIn": "Poltettu uunissa {kiln} {date}.",
+    "storedOn": "Poltettu {date}.",
     "storedNotes": "Muistiinpanot: {notes}",
     "titleMissing": "Anna poltolle nimi.",
     "fieldsMissing": "Lisää vähintään yksi kirjattava kenttä, esimerkiksi {example}.",
     "chooseField": "Valitse lisättävä kenttä ja valitse sitten Lisää kenttä.",
     "fetchFailed": "Polttopäiväkirjojen tietojen hakemisessa tapahtui virhe.",
     "saved": "Polton kirjaus lisättiin palvelimelle.",
-    "saveFailed": "Virhe: pyyntö palvelimelle ei onnistunut."
+    "saveFailed": "Virhe: pyyntö palvelimelle ei onnistunut.",
+    "recipesHeading": "Siinä poltetut reseptit",
+    "noRecipes": "Reseptejä ei ole vielä liitetty.",
+    "recipesFailed": "Reseptejä ei voitu hakea, joten mitään ei voi nyt liittää.",
+    "pickRecipe": "Siinä poltettu resepti",
+    "linkRecipe": "Liitä resepti",
+    "unlink": "Irrota",
+    "unlinkRecipe": "Irrota {title}",
+    "linkFailed": "Liitosta ei voitu tallentaa."
   },
   "notes": {
     "title": "Muistiinpanot",
     "lead": "Kaikki muu, mikä omista lasitteista kannattaa muistaa.",
+    "newHeading": "Uusi muistiinpano",
+    "titleLabel": "Otsikko",
+    "content": "Muistiinpano",
     "save": "Tallenna",
+    "mineHeading": "Omat tallennetut muistiinpanot",
+    "noneSaved": "Ei vielä yhtään. Tallennetut muistiinpanot näkyvät tässä.",
     "titleMissing": "Anna muistiinpanolle otsikko.",
     "contentMissing": "Kirjoita muistiinpano.",
     "untitled": "Nimetön muistiinpano",
@@ -69,6 +120,34 @@
   },
   "trash": {
     "title": "Roskakori",
-    "comingSoon": "Roskakori tulee pian Glazecalcin seuraavaan versioon. Siihen asti käytä poistamista harkiten: kun tieto on poistettu, se on menetetty."
+    "lead": "Poistamasi (reseptit, raaka-aineet, lisäaineet, muistiinpanot, polttopäiväkirjat ja neuvot) odottavat täällä 30 päivää. Palauta ne tai poista ne lopullisesti.",
+    "listHeading": "Roskakorissa",
+    "none": "Roskakori on tyhjä.",
+    "untitled": "Nimetön",
+    "kinds": {
+      "recipes": "Resepti",
+      "materials": "Raaka-aine",
+      "additives": "Lisäaine",
+      "notes": "Muistiinpano",
+      "firing": "Polttopäiväkirja",
+      "advice": "Neuvo",
+      "other": "Tietue"
+    },
+    "removedOn": "Poistettu {date}",
+    "goesOn": "Poistetaan lopullisesti {date}",
+    "byApp": "Yhdistetyn sovelluksen poistama",
+    "putBack": "Palauta",
+    "putBackName": "Palauta {name}",
+    "restored": "”{name}” palautettiin entiselle paikalleen.",
+    "restoredAlready": "”{name}” oli jo palautettu.",
+    "restoreFailed": "Kohdetta ”{name}” ei voitu palauttaa. Yritä uudelleen.",
+    "deleted": "”{name}” poistettiin lopullisesti.",
+    "empty": "Tyhjennä roskakori",
+    "emptyQuestion": "Poistetaanko roskakorissa {count, plural, one {oleva # tietue} other {olevat kaikki # tietuetta}} lopullisesti? Toimintoa ei voi kumota.",
+    "emptyYes": "Kyllä, tyhjennä",
+    "emptying": "Tyhjennetään…",
+    "emptied": "Roskakori on tyhjä.",
+    "emptyFailed": "Roskakorin tyhjentäminen ei onnistunut. Yritä uudelleen.",
+    "fetchFailed": "Roskakorin lataaminen ei onnistunut. Yritä uudelleen."
   }
 }
