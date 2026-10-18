@@ -557,12 +557,15 @@ export class ImportPage implements OnInit {
       return;
     }
     const choices = this.choices();
+    const records = choices.map((c) => c.record);
     const names = new Set(choices.flatMap((c) => [c.record.name, ...(c.record.aliases ?? [])]).map(foldedName));
     const read = parsePaste(this.text(), {
       mark: typedDecimalMark(),
       locale: formatLocale(),
       reading: this.reading() ?? undefined,
-      isName: (text) => names.has(foldedName(text))
+      isName: (text) => names.has(foldedName(text)),
+      // A line that is like any material, even only closely, is never taken for a title ("Leach 4321").
+      known: (text) => matchName(text, records).how !== 'none'
     }).filter((recipe) => recipe.lines.length);
     const unsure = ambiguousNumbers(this.text(), typedDecimalMark());
     this.ambiguous.set(unsure);

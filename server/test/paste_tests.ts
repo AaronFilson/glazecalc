@@ -387,6 +387,42 @@ describe('Paste-in import: titles, notes, totals and additions', () => {
     expect(one('Custer 50\nSilica 50').title).to.equal(null);
   });
 
+  it('reads a title that ends in a number ("Leach 4321") when it is more than the materials under it', () => {
+    const known = (text: string) => recipe.matchName(text, LIBRARY).how !== 'none';
+    const read = one('Leach 4321\nCuster Feldspar 40\nWhiting 20\nEPK 10\nSilica 30\n+ Red iron oxide 1', { known });
+    expect(read.title).to.equal('Leach 4321');
+    expect(read.lines.map((l) => l.name)).to.eql(['Custer Feldspar', 'Whiting', 'EPK', 'Silica', 'Red iron oxide']);
+    // After another recipe and a blank line, it starts the next.
+    const both = recipe.parsePaste('Celadon\nCuster 40\nSilica 60\n\nLeach 4321\nCuster 40\nSilica 60', {
+      isName,
+      known
+    });
+    expect(both.map((r) => [r.title, r.lines.length])).to.eql([
+      ['Celadon', 2],
+      ['Leach 4321', 2]
+    ]);
+  });
+
+  it('keeps a first material that only looks like such a title', () => {
+    const known = (text: string) => recipe.matchName(text, LIBRARY).how !== 'none';
+    // A local clay not in the library, at less than the rest together.
+    expect(lines(one('Hawthorn Bond 40\nCuster Feldspar 30\nSilica 30', { known }))[0]).to.eql([
+      'Hawthorn Bond',
+      40,
+      null,
+      false
+    ]);
+    // A name like a material's, a unit, a decimal, or only one line under it.
+    for (const text of [
+      'Custer Spa 4321\nWhiting 20\nSilica 30',
+      'Leach 4321 g\nWhiting 20\nSilica 30',
+      'Leach 4321.5\nWhiting 20\nSilica 30',
+      'Leach 4321\nSilica 30'
+    ]) {
+      expect(one(text, { known }).title, text).to.equal(null);
+    }
+  });
+
   it('ignores blank lines, trailing spaces, Windows line ends and a byte order mark', () => {
     const read = one('﻿Celadon\r\n\r\nCuster 50   \r\n\r\n\r\nSilica 50\r\n');
     expect(read.title).to.equal('Celadon');
