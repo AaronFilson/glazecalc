@@ -58,7 +58,8 @@ materials, colorants, firing logs and notes together in one private notebook.
   Assistants page says how to connect one.
 - **Guides for new potters,** sourced: glazing from first principles with a glossary, how to make
   a glaze, safe mixing and ventilation, pottery at home with children and pets, and firing a
-  basic kiln with cones, kiln sitters and manual switches.
+  basic kiln with cones, kiln sitters and manual switches; and, in English, a companion to John
+  Britt's free online Glaze Course that links his videos unit by unit with exercises to try.
 - **Lead off unless you choose it,** and old lead glazes rebuilt without it: Replace lead keeps
   the glaze's silica and alumina and gives lead's work to boron and other fluxes, on a lead-free
   base frit sold in your region with up to four other materials chosen for it, or keeps the

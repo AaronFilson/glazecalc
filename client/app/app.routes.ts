@@ -80,6 +80,15 @@ export const routes: Routes = [
     loadComponent: () => import('./pages/guides/guide-page').then((m) => m.GuidePage)
   },
   {
+    // In English only (lib/pages.js, ENGLISH_ONLY_PAGES): every language shows the English.
+    path: 'guides/learn-with-john-britt',
+    title: marker('titles.learnWithJohnBritt'),
+    providers: [provideTranslocoScope('guides')],
+    data: { description: marker('meta.learnWithJohnBritt'), guide: 'learn-with-john-britt', englishOnly: true },
+    resolve: { messages: scopeTranslations, text: guideText },
+    loadComponent: () => import('./pages/guides/guide-page').then((m) => m.GuidePage)
+  },
+  {
     path: 'about',
     title: marker('titles.about'),
     data: { description: marker('meta.about') },

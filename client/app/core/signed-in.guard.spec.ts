@@ -94,6 +94,7 @@ describe('signedInGuard and visitorsOnlyGuard', () => {
       'guides/safe-mixing',
       'guides/home-safety',
       'guides/firing',
+      'guides/learn-with-john-britt',
       'about',
       'privacy',
       'terms',

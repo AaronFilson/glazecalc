@@ -65,6 +65,10 @@ an assistant to act for one person that is not their web session.
   as an embedded resource in the caller's language), `make_lead_free`, `replace_discontinued` and
   `explain_recipe`. Each is a request in English that names the tools to use in order, repeats that
   the limit checks are not proof of food safety, and asks for the answer in the language given.
+  A fifth, `glaze_course_lesson` (2026-10), sets up a unit of the companion to John Britt's free
+  glaze course: his videos linked by title with credit and a request never to retell them, the
+  unit's guide sections attached (the safe mixing habits first for lab units), and its exercises,
+  all read from the English-only guide by `server/mcp/course.ts`.
 - **Checked from outside in CI** (`npm run test:mcp`, `scripts/mcp-conformance.mjs`): the official
   conformance suite, `@modelcontextprotocol/conformance` 0.2.0-alpha.12, runs exactly what the
   2026-07-28 and 2025-11-25 revisions require against a server of its own, and the MCP Inspector
