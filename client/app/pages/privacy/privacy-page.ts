@@ -9,6 +9,7 @@ export const PRIVACY_ADDRESS = 'privacy@glazecalcapp.com';
 
 const LINKS = {
   account: '/account',
+  apps: '/account/apps',
   mail: 'mailto:' + PRIVACY_ADDRESS,
   issues: 'https://github.com/AaronFilson/glazecalc/issues',
   source: 'https://github.com/AaronFilson/glazecalc',
@@ -147,6 +148,17 @@ marker([
       <p><gc-rich [text]="t('site.privacy.providers')" /></p>
     </section>
 
+    <!-- AI apps connected with OAuth (server/oauth/, docs/adr/0024-authorization-server.md, "Notices"). -->
+    <section class="panel" id="ai-apps">
+      <h2>{{ t('site.privacy.appsHeading') }}</h2>
+      <p>{{ t('site.privacy.appsIntro') }}</p>
+      <ul>
+        @for (key of apps; track key) {
+          <li><gc-rich [text]="t(key)" [links]="links" /></li>
+        }
+      </ul>
+    </section>
+
     <!-- Linked from the sign-up page, for everyone outside the US (pages/auth/auth-page.ts). -->
     <section class="panel" id="your-choice">
       <h2>{{ t('site.privacy.choiceHeading') }}</h2>
@@ -244,6 +256,7 @@ export class PrivacyPage {
   protected readonly storedOnDevice = STORED;
   protected readonly stored = marker([
     'site.privacy.storedAccount',
+    'site.privacy.storedShelf',
     'site.privacy.storedPrices',
     'site.privacy.storedEmailChange',
     'site.privacy.storedSignIn',
@@ -260,6 +273,13 @@ export class PrivacyPage {
     'site.privacy.storedDeletions',
     'site.privacy.storedMail',
     'site.privacy.storedInbound'
+  ]);
+  protected readonly apps = marker([
+    'site.privacy.appsStored',
+    'site.privacy.appsFetched',
+    'site.privacy.appsKept',
+    'site.privacy.appsEnd',
+    'site.privacy.appsTheirs'
   ]);
   protected readonly kept = marker([
     'site.privacy.keptAccount',

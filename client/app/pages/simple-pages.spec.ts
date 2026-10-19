@@ -25,6 +25,7 @@ import { LandingPage } from './landing/landing-page';
 import { NotFoundPage } from './not-found/not-found-page';
 import { PRIVACY_ADDRESS, PrivacyPage, STORED } from './privacy/privacy-page';
 import { NotesPage } from './notes/notes-page';
+import { TermsPage } from './terms/terms-page';
 import { TrashPage } from './trash/trash-page';
 
 beforeEach(() => {
@@ -150,6 +151,32 @@ describe('static pages', () => {
     expect(fixture.nativeElement.querySelector('#your-choice a').getAttribute('href')).toBe(
       'https://github.com/AaronFilson/glazecalc'
     );
+  });
+
+  it('says what is kept and fetched for a connected AI app, for how long, how to end it, and that the app answers for itself', async () => {
+    const { fixture } = await create(PrivacyPage);
+    const apps = text(fixture, '#ai-apps');
+    expect(fixture.nativeElement.querySelector('#ai-apps h2').textContent).toContain('Connecting an AI app');
+    expect(apps).toContain('only as one-way hashes');
+    expect(apps).toContain("reads the app's details");
+    expect(apps).toContain('carries nothing about you');
+    expect(apps).toContain('60 days after the app last renewed its access');
+    expect(apps).toContain('90 days after you allowed it');
+    expect(apps).toContain('Sign out everywhere');
+    expect(apps).toContain('its own privacy policy');
+    expect(apps).not.toContain('site.privacy.');
+    expect(fixture.nativeElement.querySelector('#ai-apps a').getAttribute('href')).toBe('/account/apps');
+    expect(fixture.nativeElement.textContent).toContain('The list before your last change to the materials on hand');
+  });
+});
+
+describe('TermsPage', () => {
+  it('says connecting an app is your choice and that you answer for what an app you allow does', async () => {
+    const { fixture } = await create(TermsPage);
+    const use = [...fixture.nativeElement.querySelectorAll('li')].map((li: HTMLElement) => li.textContent ?? '');
+    const apps = use.find((line) => line.startsWith('Connecting an AI app'));
+    expect(apps).toContain('is your choice');
+    expect(apps).toContain('you are responsible for what it does in your account');
   });
 });
 
