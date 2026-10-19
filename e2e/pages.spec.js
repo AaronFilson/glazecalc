@@ -84,7 +84,8 @@ test.describe('home and navigation', () => {
       ['/guides/home-safety', "Don't poison your family"],
       ['/guides/firing', 'Firing a basic kiln'],
       ['/about', 'About Glazecalc'],
-      ['/privacy', 'Privacy']
+      ['/privacy', 'Privacy'],
+      ['/terms', 'Terms of use']
     ]) {
       await visitor.goto(path);
       await expect(visitor.locator('h1')).toHaveText(heading);

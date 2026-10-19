@@ -19,6 +19,7 @@ const VISITOR_PAGES = [
   '/',
   '/about',
   '/privacy',
+  '/terms',
   '/advice',
   '/guides',
   '/guides/glazing-basics',

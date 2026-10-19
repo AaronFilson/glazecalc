@@ -95,6 +95,7 @@ describe('signedInGuard and visitorsOnlyGuard', () => {
       'guides/firing',
       'about',
       'privacy',
+      'terms',
       'assistants',
       'signin',
       'signup',

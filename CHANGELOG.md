@@ -6,6 +6,14 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Added
 
+- **Terms of use** at `/terms`, linked from every page's footer: Glazecalc is free for your own
+  glazes, records and learning, as a hobby, for teaching or in business; the code stays under the
+  MIT License, and the terms are for the site. They ask users not to break the shared server
+  (no attacks, floods, scraping, getting round limits, spare accounts or unwanted email), welcome
+  scripts and AI assistants with an access token, say the site may refuse requests or close an
+  account that puts it at risk, and that it is provided as is. English only for now; the next
+  translation round brings the other languages.
+
 - **A recipe states its firing** (docs/adr/0021-recipe-firing.md): under the notes, the cone as you give it in Orton, SK
   or a temperature (stored as entered, never converted), or a claimed range with a tick for each cone you have actually
   fired it to (the tested cone shows first); Orton 022 to 13, half cones and 14 to 42; atmosphere (oxidation, reduction,
