@@ -221,7 +221,7 @@
     "fairAccounts": "teha lisakontosid ega proovikasutusi piirangust möödahiilimiseks ega kasutada kellegi teise kontot.",
     "fairMail": "kasutada registreerumisi, parooli lähtestamisi ega jagamislinke, et saata inimestele e-kirju või linke, mida nad pole küsinud.",
     "fairHarm": "salvestada ega jagada midagi ebaseaduslikku ega kahjulikku ega midagi, mida teil pole õigust jagada.",
-    "fairScripts": "Skriptid ja tehisintellekti assistendid on nende tingimuste piires teretulnud. Andke neile oma juurdepääsuluba, et see, mida nad teevad, loetaks teie omaks.",
+    "fairScripts": "Skriptid ja tehisintellekti assistendid on nende tingimuste piires teretulnud. Andke neile oma kontolt tehtud juurdepääsuluba, et see, mida nad teevad, loetaks teie omaks.",
     "stopHeading": "Kui tingimusi rikutakse",
     "stop": "Saidi töös hoidmiseks võib Glazecalc päringuid aeglustada või tagasi lükata, jagamislingi peatada või sulgeda konto, mis neid tingimusi rikub või seab saidi ohtu. Konto sulgemine kustutab selle. Kus see on mõistlik, saadab omanik teile esmalt e-kirja ja annab aega oma andmete allalaadimiseks.",
     "availableHeading": "Saidi töös hoidmine",
