@@ -6,6 +6,7 @@ import { TranslocoDirective, translate } from '@jsverse/transloco';
 import { ApiResourceFactory } from '../../core/api-resource.service';
 import { errorMessage } from '../../core/error-message';
 import { FiringLinksService } from '../../core/firing-links.service';
+import { LocaleService } from '../../core/locale.service';
 import { Firing, Recipe } from '../../core/models';
 import { Busy } from '../../shared/busy';
 import { FORM_GRID_STYLES } from '../../shared/chemistry-form';
@@ -59,7 +60,9 @@ import { FiringLog } from './firing-log';
         flex-wrap: wrap;
         gap: 0.4rem;
       }
+      /* Positioned, so the table's visually hidden heading stays inside the scrolling box rather than widening the page. */
       .firing-table-scroll {
+        position: relative;
         overflow-x: auto;
       }
       .firing-cell {
@@ -118,7 +121,12 @@ export class FiringPage implements OnInit {
   protected readonly kiln = signal('');
   protected readonly date = signal('');
   protected readonly notes = signal('');
-  protected readonly log = signal(new FiringLog());
+  private readonly locale = inject(LocaleService);
+  /** A new log starts with Time, Temperature and Cone; until it is changed, the temperature follows the person's scale. */
+  protected readonly log = linkedSignal<'C' | 'F', FiringLog>({
+    source: this.locale.temperature,
+    computation: (scale, previous) => (previous && !previous.value.pristine ? previous.value : FiringLog.starter(scale))
+  });
   /** The fields not in the log yet: one already added is not offered again. */
   protected readonly fieldOptions = computed(() => FIRING_FIELDS.filter((field) => !this.log().fields.includes(field)));
   /** The field chosen to add: kept while it is still offered, else the first that is. */
@@ -245,7 +253,7 @@ export class FiringPage implements OnInit {
       this.myFirings.update((list) => [...list, saved]);
       this.notices.success(translate('notebook.firing.saved'));
       for (const field of [this.title, this.kiln, this.date, this.notes]) field.set('');
-      this.log.set(new FiringLog());
+      this.log.set(FiringLog.starter(this.locale.temperature()));
     } catch (err) {
       this.notices.error(errorMessage(err, translate('notebook.firing.saveFailed')));
     }
@@ -254,7 +262,7 @@ export class FiringPage implements OnInit {
   /** Applies a change to a copy of the log so the view sees a new value. */
   private change(edit: (log: FiringLog) => void): void {
     this.log.update((current) => {
-      const next = Object.assign(new FiringLog(), current);
+      const next = Object.assign(new FiringLog(), current, { pristine: false });
       edit(next);
       return next;
     });

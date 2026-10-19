@@ -5,6 +5,16 @@
 export class FiringLog {
   fields: string[] = [];
   rows: string[][] = [];
+  /** True until the log is changed by hand, so a starting set of columns can still follow the person's temperature scale. */
+  pristine = false;
+
+  /** A new log: Time, the temperature in the scale the person reads, and Cone. All can be removed. */
+  static starter(scale: 'C' | 'F'): FiringLog {
+    const log = new FiringLog();
+    log.fields = ['Time', scale === 'F' ? 'Temperature F' : 'Temperature C', 'Cone'];
+    log.pristine = true;
+    return log;
+  }
 
   /** Adds a column, once: a field already in the log is not added again. */
   addField(field: string): void {

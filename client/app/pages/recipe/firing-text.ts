@@ -172,3 +172,16 @@ export function firingLine(block: FiringBlock | null | undefined, reader: Reader
   if (!words) return '';
   return [words.tested, words.range, words.atmospheres].filter(Boolean).join(' · ');
 }
+
+/**
+ * The firing in a few words, for the folded firing part's summary: "Firing: cone 6, oxidation",
+ * "Firing: cone 5–7"; "Firing: not set" when the block says nothing.
+ */
+export function firingSummary(block: FiringBlock | null | undefined, reader: Reader): string {
+  const clean = cleanFiring(block);
+  const cone = clean?.low ? rangeText(clean.scale, clean.low, clean.high, reader) : '';
+  const parts = [cone, clean ? atmosphereText(clean) : ''].filter(Boolean);
+  return parts.length
+    ? translate('recipe.firing.summary', { what: parts.join(', ') })
+    : translate('recipe.firing.summaryNone');
+}

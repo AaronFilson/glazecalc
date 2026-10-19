@@ -41,6 +41,28 @@ describe('RecipeLimits cone check', () => {
     return { fixture, line: () => element.querySelector<HTMLElement>('.cone-fit') };
   };
 
+  it('shows the band as text from the recipe’s firing, and the picker once another is asked for', async () => {
+    const { fixture, line } = await create(glaze(0.2, 3.4, 0.35), { scale: 'orton', low: '6' });
+    const root = fixture.nativeElement as HTMLElement;
+    expect(root.querySelector('#limit-firing')).toBeNull();
+    expect(root.querySelector('#limit-firing-text')?.textContent).toBe("From the recipe's firing: Mid fire, cone 4–6");
+    const before = line()?.textContent;
+    expect(before).toBeTruthy();
+    (root.querySelector('#limit-firing-choose') as HTMLButtonElement).click();
+    await fixture.whenStable();
+    expect(root.querySelector('label[for=limit-firing]')?.textContent).toBe('Limits for');
+    expect(root.querySelector('#limit-firing-text')).toBeNull();
+    expect(line()?.textContent).toBe(before);
+  });
+
+  it('keeps the picker when there is no firing, and when a band is chosen by hand', async () => {
+    const none = await create(glaze(0.2, 3.4, 0.35), null);
+    expect(none.fixture.nativeElement.querySelector('#limit-firing')).not.toBeNull();
+    expect(none.fixture.nativeElement.querySelector('#limit-firing-text')).toBeNull();
+    const chosen = await create(glaze(0.2, 3.4, 0.35), { scale: 'orton', low: '6' }, 'high');
+    expect(chosen.fixture.nativeElement.querySelector('#limit-firing')).not.toBeNull();
+  });
+
   it('shows nothing when the recipe has no firing and none is chosen', async () => {
     const { line } = await create(glaze(0.2, 3.4, 0.35), null);
     expect(line()).toBeNull();

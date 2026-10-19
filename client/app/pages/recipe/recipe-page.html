@@ -325,22 +325,30 @@
             [(ngModel)]="notes"
           ></textarea>
         </div>
-        <gc-recipe-firing [(block)]="firedAt" [(foodSurface)]="foodSurface" />
-        @if (firingsShown()) {
-          <gc-recipe-firings
-            [(links)]="firings"
-            [(block)]="firedAt"
-            [recipeId]="savedId()"
-            (saved)="linksSaved($event)"
-            (logsLoaded)="firingLogs.set($event)"
-          />
-        } @else {
-          <p>
-            <button id="firings-open" type="button" class="btn btn-link p-0" (click)="firingsAsked.set(true)">
-              {{ t('recipe.firings.open') }}
-            </button>
-          </p>
-        }
+        <details
+          id="firing-fold"
+          class="firing-fold"
+          [open]="firingFoldOpen()"
+          (toggle)="firingFoldOpen.set($any($event.target).open)"
+        >
+          <summary>{{ firingSummary() }}</summary>
+          <gc-recipe-firing [(block)]="firedAt" [(foodSurface)]="foodSurface" />
+          @if (firingsShown()) {
+            <gc-recipe-firings
+              [(links)]="firings"
+              [(block)]="firedAt"
+              [recipeId]="savedId()"
+              (saved)="linksSaved($event)"
+              (logsLoaded)="firingLogs.set($event)"
+            />
+          } @else {
+            <p>
+              <button id="firings-open" type="button" class="btn btn-link p-0" (click)="firingsAsked.set(true)">
+                {{ t('recipe.firings.open') }}
+              </button>
+            </p>
+          }
+        </details>
         @if (coneCardsShown()) {
           <gc-recipe-cone-cards
             [block]="firedAt()"

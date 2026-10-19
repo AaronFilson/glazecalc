@@ -291,9 +291,30 @@ test.describe('notes', () => {
 
 test.describe('firing log', () => {
   const cells = (page) => page.locator('.firing-table input');
+  // A new log starts with Time, Temperature and Cone; these tests build from none.
+  const clearColumns = async (page) => {
+    await expect(page.locator('.included-fields li')).toHaveCount(3);
+    for (let i = 0; i < 3; i++)
+      await page.locator('.included-fields li').first().getByRole('button', { name: 'Remove the field' }).click();
+    await expect(page.locator('.included-fields li')).toHaveCount(0);
+  };
+
+  test('starts a new log with Time, Temperature and Cone, which can be removed, and fits 320px', async ({ page }) => {
+    await page.setViewportSize({ width: 320, height: 800 });
+    await page.goto('/firing');
+    await expect(page.locator('.included-fields li')).toHaveText([/Time/, /Temperature [FC]/, /Cone/]);
+    await page.getByRole('button', { name: 'Add a row to the firing table' }).click();
+    await expect(page.locator('.firing-table th')).toHaveText(['Time', /Temperature [FC]/, 'Cone', 'Row actions']);
+    await expect(page.locator('.firing-table-empty')).toHaveCount(0);
+    const overflow = await page.evaluate(() => globalThis.document.documentElement.scrollWidth - globalThis.innerWidth);
+    expect(overflow).toBeLessThanOrEqual(0);
+    await page.locator('.included-fields li').first().getByRole('button', { name: 'Remove the field' }).click();
+    await expect(page.locator('.firing-table th')).toHaveText([/Temperature [FC]/, 'Cone', 'Row actions']);
+  });
 
   test('builds a log, rearranges columns with their data, saves and removes it', async ({ page }) => {
     await page.goto('/firing');
+    await clearColumns(page);
     await page.locator('#firing-title').fill('Cone 10 reduction');
     await page.locator('#firing-kiln').fill('Car kiln');
     await page.locator('#firing-date').fill('2026-10-03');
@@ -354,6 +375,7 @@ test.describe('firing log', () => {
 
   test('keeps move buttons from running off either end and rows from starting with no fields', async ({ page }) => {
     await page.goto('/firing');
+    await clearColumns(page);
     await expect(page.getByRole('button', { name: 'Add a row to the firing table' })).toBeDisabled();
     await page.getByRole('button', { name: 'Add the field' }).click();
     const only = page.locator('.included-fields li');
@@ -363,6 +385,7 @@ test.describe('firing log', () => {
 
   test('needs a title and a field before saving', async ({ page }) => {
     await page.goto('/firing');
+    await clearColumns(page);
     await page.getByRole('button', { name: 'Save' }).click();
     await expectFieldProblem(page, 'firing-title', 'Give the firing a title.');
     await expectFieldProblem(page, 'fieldselect', 'Add at least one field to record, such as Time.');

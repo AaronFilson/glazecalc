@@ -660,6 +660,15 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   search description and link in the guides list now read "Glaze safety at home: children, pets and the kiln"
   (English; the other languages follow with the next translation round).
 
+- **The recipe page's firing, less repeated and shorter on a phone.** When the firing block has a
+  cone, the limits panel says "From the recipe's firing: Mid fire" as text, with "Choose another"
+  to bring back the picker (now labelled "Limits for"); the cone check line is unchanged. The firing
+  block and linked firings fold under a "Firing: cone 6, oxidation" summary ("Firing: not set"
+  when empty): open when empty and on wide screens, closed on a phone once a firing is set.
+- **A new firing log starts with Time, Temperature (°F or °C as you read temperatures) and Cone**,
+  each removable; logs already saved are unchanged. The duplicate "Add a field above" line is gone.
+- The settings labels for how you fire read "Orton cones", "SK cones, JIS R 8101" and "Temperature,
+  as a kiln controller's program". English only for now.
 - **One limit on what an account keeps.** An account keeps up to 100,000 records of every kind
   together (recipes, materials, notes, firing logs and the rest), in place of 2,000 of each kind;
   `ACCOUNT_MAX_RECORDS` still sets another. Trials keep their own limits.
