@@ -2,8 +2,8 @@
 // item 30), offered only to a request with a working personal access token
 // whose scopes allow each (server/lib/scopes.ts; data:read allows them all).
 // Every query is limited to the token's account, as the record routes are
-// (server/lib/record_routes.ts), and nothing here changes anything: writing
-// waits for Phase 4. Records in the Trash are not in these collections, so
+// (server/lib/record_routes.ts), and nothing here changes anything: the tools
+// that do are in ./account_write.ts. Records in the Trash are not in these collections, so
 // they are never shown; nor are the notes about one, as the app shows a note
 // about a record only on that record's page.
 import * as z from 'zod';
@@ -11,9 +11,10 @@ import mongoose from 'mongoose';
 import type { McpServer } from '@modelcontextprotocol/server';
 import firingLib from '../../../lib/cones/firing.js';
 import type { FiringBlock } from '../../../lib/cones/firing.js';
+import results from '../../../lib/cones/results.js';
 import recipe from '../../../lib/recipe/index.js';
 import type { MaterialRecord, TryMaterial } from '../../../lib/recipe/index.js';
-import { liveLinks } from '../../lib/firing_links.ts';
+import { liveLinks, type Link } from '../../lib/firing_links.ts';
 import { allows, type Permission } from '../../lib/scopes.ts';
 import Firing from '../../models/firing.ts';
 import Material from '../../models/material.ts';
@@ -36,7 +37,7 @@ import {
   type RecipeLine
 } from '../common.ts';
 import { findById, findMaterial, nameKey, oxidesOf } from '../library.ts';
-import { analysisOf, checksOf, matchOut } from './public.ts';
+import { analysisOf, checksOf, coneFitOut, firingBlockOf, matchOut } from './public.ts';
 
 const READ_ONLY = { readOnlyHint: true, destructiveHint: false, idempotentHint: true, openWorldHint: false } as const;
 
@@ -218,7 +219,7 @@ export const registerAccountTools = (server: McpServer, caller: Caller): void =>
       {
         title: 'Get one of my recipes',
         description:
-          'One recipe from your account: its materials and amounts, colorants, notes, its stated firing (firedAt: the cone scale, the low and optional high cone of the claimed range, the cones actually tested, the atmospheres and processes, and for a temperature the rate and hold; each cone exactly as the potter gave it), whether it is for a food surface, the firing logs it went through with a result note each, the firing band and target specific gravity saved with it, and its unity formula worked out afresh. It is checked against the limit set chosen in your settings: for the firing given here, or else the band chosen on the recipe, or else the bands its stated firing falls in (a range across two bands is checked at each).',
+          "One recipe from your account: its materials and amounts, colorants, notes, its stated firing (firedAt: the cone scale, the low and optional high cone of the claimed range, the cones actually tested, the atmospheres and processes, and for a temperature the rate and hold; each cone exactly as the potter gave it), whether it is for a food surface, the firing logs it went through with a result note each and, where known, the cone and atmosphere each was fired at, the potter’s summary of how it came out at each cone and atmosphere (coneResults; one outside the stated firing is kept), the firing band and target specific gravity saved with it, and its unity formula worked out afresh. It is checked against the limit set chosen in your settings: for the firing given here, or else the band chosen on the recipe, or else the bands its stated firing falls in (a range across two bands is checked at each). coneFit says, for the same firing, whether the chemistry looks like that firing's, as the recipe page's limits panel does: by Katz's boron rule and Hesselberth & Roy's silica and alumina whatever limit set is chosen, a note (verdict 'cooler' or 'hotter') only when boron and silica or alumina agree on another band, 'closer' when a range across bands looks nearer one end, 'fits' when nothing points away (not a pass), 'skipped' where the published figures do not reach. Cone 6 against cone 10 is told apart only roughly (strength 'soft'). A guide, not a test.",
         inputSchema: z.object({ id: idArg, firing: firingArg, language: languageArg }),
         annotations: READ_ONLY
       },
@@ -231,12 +232,23 @@ export const registerAccountTools = (server: McpServer, caller: Caller): void =>
           let checks: Record<string, unknown> | null = null;
           const band = Object.hasOwn(BAND_CELSIUS, found.firing ?? '') ? (found.firing as FiringBand) : undefined;
           const firedAt = firingOut(found.firedAt);
-          const links = await liveLinks(userId, found.firings as Array<{ firing: string; result?: string }>);
+          const links = await liveLinks(userId, found.firings as Link[]);
+          const coneResults = results.cleanConeResults(found.coneResults ?? []) ?? [];
           // The band chosen on the recipe wins; else the bands its stated firing falls in, coolest first.
           const bands: FiringBand[] = band ? [band] : (firedAt?.bands ?? []);
           let alsoChecks: Record<string, unknown> | undefined;
+          let coneFit: ReturnType<typeof coneFitOut> = null;
           try {
             analysis = analysisOf(lines, lang).out;
+            // The firing asked about, else the band chosen on the recipe, else the stated firing, as the page has it.
+            const against = firing ? firingBlockOf(firing) : (band ?? firedAt ?? null);
+            coneFit = coneFitOut(
+              recipe.coneFit(analysis.unityFormula as Record<string, number>, against, {
+                processes: firedAt?.processes ?? [],
+                materials: lines.map((line) => line.name)
+              }),
+              lang
+            );
             if (firing || bands.length) {
               const setting = await settingsOf(userId);
               // The recipe page's check: the account's limit set, for the firing asked about or the one saved.
@@ -272,9 +284,12 @@ export const registerAccountTools = (server: McpServer, caller: Caller): void =>
             ...(links.length && {
               firings: links.map((link) => ({
                 firingId: link.firing,
-                ...(link.result && { result: link.result })
+                ...(link.result && { result: link.result }),
+                ...(link.cone && { cone: link.cone }),
+                ...(link.atmosphere && { atmosphere: link.atmosphere })
               }))
             }),
+            ...(coneResults.length && { coneResults }),
             ...(typeof found.sgTarget === 'number' && { sgTarget: found.sgTarget }),
             materials: lines.map((line) => ({ material: line.name, amount: recipe.amountOf(line.amount) })),
             colorants: ((found.additives ?? []) as Array<{ name?: string; amount?: string; unit?: string }>)
@@ -283,7 +298,8 @@ export const registerAccountTools = (server: McpServer, caller: Caller): void =>
             ...(found.includeAdditives && { colorantsInUnityFormula: true }),
             analysis,
             ...(checks && { checks }),
-            ...(alsoChecks && { checksAtOtherBands: alsoChecks })
+            ...(alsoChecks && { checksAtOtherBands: alsoChecks }),
+            ...(coneFit && { coneFit })
           });
         }, lang);
       }

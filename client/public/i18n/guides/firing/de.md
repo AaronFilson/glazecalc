@@ -199,11 +199,11 @@ Viele Kiln-Sitter, auch die LT-Modelle von Dawson, haben einen **Zeitbegrenzer**
 Table: Wie lange der Zeitbegrenzer eingestellt wird
 Label: Zeitbegrenzer einstellen
 
-| Quelle    | Einstellung                                                                                                                                    |
-| --------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
-| Dawson    | ½ Stunde länger als die erwartete Brenndauer, bis Sie den Ofen kennen, später nur noch ¼ Stunde länger; nie auf mehr als 20 Stunden einstellen |
-| L&L       | Beim ersten Mal sehr hoch, dabei notieren, wie lange der Brand dauert; danach etwa 1 Stunde länger                                             |
-| Bracker’s | 30 Minuten bis 1 Stunde länger als die Brenndauer                                                                                              |
+| Quelle    | Einstellung                                                                                                                           |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| Dawson    | ½ Stunde länger als die erwartete Brenndauer, bis Sie den Ofen kennen, später ¼ Stunde länger; nie auf mehr als 20 Stunden einstellen |
+| L&L       | Beim ersten Mal sehr hoch, dabei notieren, wie lange der Brand dauert; danach etwa 1 Stunde länger                                    |
+| Bracker’s | 30 Minuten bis 1 Stunde länger als die Brenndauer                                                                                     |
 
 > [!NOTE]
 > Unser Ausgangspunkt: beim ersten Mal großzügig (innerhalb der 20 Stunden auf der Skala), danach ½ bis 1 Stunde länger als die notierte Zeit. Der Zeitbegrenzer zeigt Ihnen auch, wie lange ein Brand gedauert hat: Auf 7 gestellt und bei 1 stehen geblieben heißt 6 Stunden.
@@ -352,11 +352,11 @@ Label: SK-Tabelle
 | SK 19   | {{2768 °F; 1520 °C}} |
 | SK 20   | {{2786 °F; 1530 °C}} |
 
-Jeder Wert ist ein Nennwert (JIS): die Temperatur, die die Norm für den Kegel angibt, wie sie in der Tabelle von Yuko Trading gedruckt ist. Die Tabelle nennt keine Heizrate. Die Norm gibt Bezugstemperaturen an. Bei einer in der Töpferei üblichen Heizrate von etwa 100 °C/h hat Kyotos städtisches Institut gemessen, dass sich seine eigenen Kyoto-Kegel 40–70 °C kühler biegen als der JIS-Wert für dieselbe Nummer; für SK-Kegel nach JIS haben wir keine solchen Messungen gefunden. Stellen Sie einen Messkegel auf und vergleichen Sie.
+Jeder Wert ist ein Nennwert (JIS): die Temperatur, die die Norm für den Kegel angibt, wie sie in der Tabelle von Yuko Trading gedruckt ist. Die Tabelle nennt keine Heizrate. Die Norm gibt Bezugstemperaturen an. Bei einer in der Töpferei üblichen Heizrate von etwa 100 °C/h hat Kyotos städtisches Institut gemessen, dass sich seine eigenen Kyoto-Kegel 47–79 °C kühler biegen als der JIS-Wert für dieselbe Nummer; für SK-Kegel nach JIS haben wir keine solchen Messungen gefunden. Stellen Sie einen Messkegel auf und vergleichen Sie.
 
 ### Kyoto-Kegel
 
-Kyoto-Kegel (京都ゼーゲル), hergestellt von Kyotos städtischem Institut, werden nicht mehr hergestellt: Laut Presseberichten hat das Institut die Herstellung zum Ende des Geschäftsjahres 2009 eingestellt. Sie tragen dieselben Nummern wie SK-Kegel nach JIS, biegen sich aber kühler: Ein Kyoto-Kegel biegt sich meist bei etwa der Temperatur des SK-Kegels nach JIS, dessen Nummer zwei niedriger ist. Ein Rezept aus Kyoto, das „SK 8“ sagt, kann einen Kyoto-Kegel meinen. Das Institut hat Hinweise für Töpferinnen und Töpfer veröffentlicht, die von Kyoto-Kegeln zu Ortonkegeln wechseln, und ersetzt seinen eigenen Kyoto-Kegel SK 12 durch Ortonkegel 10; das ist die Wahl des Instituts aufgrund seiner eigenen Messungen bei 100 °C/h und gilt für keinen anderen Kegel.
+Kyoto-Kegel (京都ゼーゲル), hergestellt von Kyotos städtischem Institut, werden nicht mehr hergestellt: Laut Presseberichten hat das Institut die Herstellung zum Ende des Geschäftsjahres 2009 eingestellt. Sie tragen dieselben Nummern wie SK-Kegel nach JIS, biegen sich aber kühler: Ein Kyoto-Kegel biegt sich bei etwa der Temperatur des SK-Kegels nach JIS, dessen Nummer zwei oder drei niedriger ist. Ein Rezept aus Kyoto, das „SK 8“ sagt, kann einen Kyoto-Kegel meinen. Das Institut hat Hinweise für Töpferinnen und Töpfer veröffentlicht, die von Kyoto-Kegeln zu Ortonkegeln wechseln, und ersetzt seinen eigenen Kyoto-Kegel SK 12 durch Ortonkegel 10; das ist die Wahl des Instituts aufgrund seiner eigenen Messungen bei 100 °C/h und gilt für keinen anderen Kegel.
 
 ### In Japan verkaufte Ortonkegel
 

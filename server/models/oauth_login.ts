@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-// A sign-in with Google or GitHub under way (server/routes/oauth_routes.ts,
+// A sign-in with Google, GitHub or Microsoft under way (server/routes/oauth_routes.ts,
 // docs/adr/0015-provider-sign-in.md). The browser holds a random value in the
 // short glazecalc_oauth cookie; this record is found by its SHA-256 (keyHash),
 // so the database alone cannot finish anyone's sign-in.

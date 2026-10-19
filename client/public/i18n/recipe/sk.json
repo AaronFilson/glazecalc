@@ -272,7 +272,7 @@
     "numbers": {
       "heading": "Čítanie rozboru a limitov",
       "analysis": "<b>Rozbor a limity</b> pod receptom ukazujú pri každom oxide móly, molárne % a hmotnostné % po výpale, stratu žíhaním a vypočítanú tepelnú rozťažnosť, čo je odhad na porovnávanie glazúr.",
-      "limits": "<b>Limity</b> porovnávajú Segerov vzorec so sadou limitov: predvolene sú to limity stabilných glazúr podľa Hesselberth & Roy, ak nezvolíte vlastné limity Glazecalc (voľba sa ukladá do nastavení). Zvoľte <b>Výpal</b>, aby sa porovnanie vykonalo so správnymi hodnotami; ukladá sa s receptom. Hodnoty Hesselberth & Roy platia pre kužeľ 6 a kužeľ 10, takže pri nízkom výpale aplikácia uvedie, že sa nepoužijú. Sú to usmernenia, nie hodnotenie „vyhovel, alebo nevyhovel“.",
+      "limits": "<b>Limity</b> porovnávajú Segerov vzorec so sadou limitov: predvolene sú to limity stabilných glazúr podľa Hesselberth & Roy, ak nezvolíte vlastné limity Glazecalc (voľba sa ukladá do nastavení). Kontrolujú pásmo výpalu, ktoré udáva <b>Výpal</b> receptu: jeho kužeľ alebo jeho rozsah. Rozsah, ktorý presahuje viac pásiem, napríklad kužeľ 6 až 10, ukáže kontroly oboch pásiem vedľa seba. Ak chcete skontrolovať len jedno pásmo, zvoľte ho v poli <b>Výpal</b> priamo pri limitoch, ktoré prepíše výpal receptu a ukladá sa s receptom. Hodnoty Hesselberth & Roy platia pre kužeľ 6 a kužeľ 10, takže pri nízkom výpale aplikácia uvedie, že sa nepoužijú. Sú to usmernenia, nie hodnotenie „vyhovel, alebo nevyhovel“. Hore jeden riadok porovnáva bór, oxid kremičitý a oxid hlinitý glazúry s jej výpalom podľa Katzovho pravidla pre bór a hodnôt Hesselberth & Roy, nech zvolíte akúkoľvek sadu limitov: poznámku uvedie len vtedy, keď sa obe zhodnú, že glazúra vyzerá ako pre iný výpal, povie, keď to nedokáže posúdiť (olovo, lítium, raku a podobne), a je to orientačná pomôcka, nie skúška.",
       "stull": "<b>Stullov diagram</b> vynáša oxid kremičitý glazúry proti oxidu hlinitému, so Stullovými oblasťami matných, polomatných a lesklých glazúr a rozsahmi sady limitov. Je to orientačná pomôcka k povrchu, nie predpoveď.",
       "slurry": "<b>Relatívna hustota a voda</b> používajú Brongniartov vzorec: odvážte odmeraný objem glazúry a uvidíte suchú glazúru vo vedre, vodu, ktorá ju privedie na požadovanú relatívnu hustotu, alebo vodu na novú dávku. Hustoty sa riadia vaším nastavením relatívnej hustoty, stupňov Baumé alebo hmotnosti pinty."
     },
@@ -472,7 +472,7 @@
     "expansionRises": "Jej vypočítaná tepelná rozťažnosť stúpa: predtým {was}, teraz {now}.",
     "expansionRisesProbably": "Ak bola pôvodná glazúra s vašou hlinou zladená len tesne, táto bude pravdepodobne trhlinkovať, niekedy až po týždňoch.",
     "expansionRisesMay": "Ak bola pôvodná glazúra s vašou hlinou zladená len tesne, táto môže trhlinkovať, niekedy až po týždňoch.",
-    "expansionRisesFix": "Trhlinkovanie oslabuje výrobky a na plochy v styku s potravinami sa neodporúča. Rozťažnosť zníži výmena časti sodíka a draslíka za taviva s nižšou rozťažnosťou (bór, lítium, horčík alebo vápnik); pridanie oxidu kremičitého sa niekedy navrhuje, ale zdroje sa nezhodujú.",
+    "expansionRisesFix": "Trhlinkovanie oslabuje výrobky a na plochy v styku s potravinami sa neodporúča. Tepelnú rozťažnosť zníži výmena časti sodíka a draslíka za taviva s nižšou rozťažnosťou (bór, lítium, horčík alebo vápnik); pridanie oxidu kremičitého sa niekedy navrhuje, ale zdroje sa nezhodujú.",
     "expansionFalls": "Jej vypočítaná tepelná rozťažnosť klesá: predtým {was}, teraz {now}. Trochu nižšia zvyčajne lepšie odoláva trhlinkovaniu.",
     "expansionFallsProbably": "Pri oveľa nižšej sa glazúra pravdepodobne bude odlupovať a z okrajov a hrán budú odskakovať ostré úlomky.",
     "expansionFallsCan": "Pri oveľa nižšej sa glazúra môže odlupovať a z okrajov a hrán môžu odskakovať ostré úlomky.",
@@ -598,6 +598,36 @@
     "firingFromBlock": "Podľa výpalu receptu ({bands})",
     "bothBands": "Výpal receptu zahŕňa {bands}, preto sa každé pásmo kontroluje zvlášť, vedľa seba: glazúra sa na oboch koncoch správa rovnako len zriedka.",
     "fromFiring": "Hodnoty platia pre výpal receptu: {band}. Ak chcete skontrolovať iný, vyberte iný výpal vyššie."
+  },
+  "coneFit": {
+    "cooler": "Chemické zloženie tejto glazúry pripomína skôr glazúru na {looksLike, select, low {nízky výpal} other {stredný výpal}} než glazúru na {scale, select, band {{band, select, low {nízky výpal} mid {stredný výpal} other {vysoký výpal}}} sk {SK {cone}} temperature {{cone} °C} other {kužeľ {cone}}}.",
+    "coolerSoft": "Chemické zloženie tejto glazúry sa prikláňa k chladnejšiemu výpalu, než je {scale, select, band {{band, select, low {nízky výpal} mid {stredný výpal} other {vysoký výpal}}} sk {SK {cone}} temperature {{cone} °C} other {kužeľ {cone}}}, bližšie ku kužeľu 6, hoci samotná chémia rozlíši glazúry na kužeľ 6 a kužeľ 10 len zhruba.",
+    "hotter": "Chemické zloženie tejto glazúry pripomína skôr glazúru na {looksLike, select, high {vysoký výpal} other {stredný výpal}} než glazúru na {scale, select, band {{band, select, low {nízky výpal} mid {stredný výpal} other {vysoký výpal}}} sk {SK {cone}} temperature {{cone} °C} other {kužeľ {cone}}}.",
+    "hotterSoft": "Chemické zloženie tejto glazúry sa prikláňa k teplejšiemu výpalu, než je {scale, select, band {{band, select, low {nízky výpal} mid {stredný výpal} other {vysoký výpal}}} sk {SK {cone}} temperature {{cone} °C} other {kužeľ {cone}}}, bližšie ku kužeľu 10, hoci samotná chémia rozlíši glazúry na kužeľ 6 a kužeľ 10 len zhruba.",
+    "closer": "Z rozsahu, pre ktorý je uvedená, sa chemické zloženie tejto glazúry javí bližšie tomu koncu, kde je {scale, select, band {{band, select, low {nízky výpal} mid {stredný výpal} other {vysoký výpal}}} sk {SK {cone}} temperature {{cone} °C} other {kužeľ {cone}}}.",
+    "coolerSilica": "Obsahuje viac bóru ({boron}), než glazúry na {scale, select, band {{band, select, low {nízky výpal} mid {stredný výpal} other {vysoký výpal}}} sk {SK {cone}} temperature {{cone} °C} other {kužeľ {cone}}} zvyčajne potrebujú, a menej oxidu kremičitého ({silica}), než zvyčajne majú.",
+    "coolerAlumina": "Obsahuje viac bóru ({boron}), než glazúry na {scale, select, band {{band, select, low {nízky výpal} mid {stredný výpal} other {vysoký výpal}}} sk {SK {cone}} temperature {{cone} °C} other {kužeľ {cone}}} zvyčajne potrebujú, a málo oxidu hlinitého ({alumina}).",
+    "coolerBoth": "Obsahuje viac bóru ({boron}), než glazúry na {scale, select, band {{band, select, low {nízky výpal} mid {stredný výpal} other {vysoký výpal}}} sk {SK {cone}} temperature {{cone} °C} other {kužeľ {cone}}} zvyčajne potrebujú, a menej oxidu kremičitého ({silica}) a oxidu hlinitého ({alumina}), než zvyčajne majú.",
+    "hotterSilica": "Obsahuje málo bóru ({boron}) pre {scale, select, band {{band, select, low {nízky výpal} mid {stredný výpal} other {vysoký výpal}}} sk {SK {cone}} temperature {{cone} °C} other {kužeľ {cone}}} a viac oxidu kremičitého ({silica}), než glazúry pri tomto výpale zvyčajne majú.",
+    "coolerEffect": "Pri tomto výpale môže stekať alebo sa príliš roztaviť: najprv vypáľte skúšobnú doštičku na podložke z prežahnutej hliny.",
+    "hotterEffect": "Pri tomto výpale môže vyjsť nedopálená: suchá, drsná alebo nie celkom zatavená. Pred použitím na nádobách ju skúšobne vypáľte, a najmä pred použitím tam, kde sa bude dotýkať jedla alebo nápojov.",
+    "hotterEffectSoft": "Niektoré glazúry sa pri tomto výpale roztavia aj bez bóru, takže je to len náznak: na skúšobnej doštičke overte, že sa roztaví úplne.",
+    "gerstley": "Časť jej bóru pochádza z Gerstley Borate, ktorý sa medzi šaržami líši, takže tento údaj je menej istý.",
+    "guide": "Toto porovnáva chemické zloženie s publikovanými údajmi: je to orientačná pomôcka, nie skúška. Ak sa vám glazúra pri tomto kuželi dobre vypálila, dôverujte svojim doštičkám.",
+    "fits": "Jej bór, oxid kremičitý a oxid hlinitý nenaznačujú, že by sa glazúra hodila skôr na iný výpal než na {scale, select, band {{band, select, low {nízky výpal} mid {stredný výpal} other {vysoký výpal}}} sk {SK {cone}} temperature {{cone} °C} other {kužeľ {cone}}}. Je to orientačná pomôcka, nie skúška: nehovorí nič o tom, či je glazúra stabilná alebo vhodná na styk s potravinami.",
+    "sources": "Zdroje:",
+    "skip": {
+      "lead": "Glazecalc nemôže porovnať chemické zloženie tejto glazúry s jej výpalom: veľká časť jej taveniny pochádza z olova, ktoré publikované údaje použité touto kontrolou nepokrývajú.",
+      "lithium": "Glazecalc nemôže porovnať chemické zloženie tejto glazúry s jej výpalom: veľká časť jej taveniny pochádza z lítia, ktoré publikované údaje použité touto kontrolou nepokrývajú.",
+      "alkali": "Glazecalc nemôže porovnať chemické zloženie tejto glazúry s jej výpalom: veľká časť jej taveniny pochádza zo sodíka a draslíka, ktoré publikované údaje použité touto kontrolou nepokrývajú.",
+      "zinc": "Glazecalc nemôže porovnať chemické zloženie tejto glazúry s jej výpalom: obsahuje veľa zinku, ako kryštalické glazúry, ktorý publikované údaje použité touto kontrolou nepokrývajú.",
+      "notGlaze": "Glazecalc nemôže porovnať chemické zloženie tejto glazúry s jej výpalom: jej vzorec nie je vzorcom obvyklej glazúry (veľmi málo alebo veľmi veľa oxidu kremičitého, alebo veľa farbiacich oxidov), takže sa na ňu publikované údaje použité touto kontrolou nehodia.",
+      "process": "Glazecalc nemôže porovnať chemické zloženie tejto glazúry s jej výpalom: je určená pre {process, select, raku {výpal raku} salt {soľný výpal} soda {sódový výpal} wood {výpal na drevo} other {jamový výpal}}, pri ktorom časť glazovania obstará pec, čo publikované údaje použité touto kontrolou nepokrývajú.",
+      "ash": "Glazecalc nemôže porovnať chemické zloženie tejto glazúry s jej výpalom: obsahuje popol, ktorého zloženie sa príliš líši, než aby sa dalo použiť s publikovanými údajmi tejto kontroly.",
+      "noTemperature": "Glazecalc nemôže porovnať chemické zloženie tejto glazúry s {scale, select, band {{band, select, low {nízkym výpalom} mid {stredným výpalom} other {vysokým výpalom}}} sk {SK {cone}} temperature {{cone} °C} other {kužeľom {cone}}}: pre tento kužeľ neexistuje nameraná teplota.",
+      "between": "Glazecalc nemôže porovnať chemické zloženie tejto glazúry s {scale, select, band {{band, select, low {nízkym výpalom} mid {stredným výpalom} other {vysokým výpalom}}} sk {SK {cone}} temperature {{cone} °C} other {kužeľom {cone}}}: publikované údaje použité touto kontrolou platia pre nízky výpal a pre stredný a vysoký výpal, nie pre kužele medzi nimi (01 až 3).",
+      "belowChart": "Glazecalc nemôže porovnať chemické zloženie tejto glazúry s {scale, select, band {{band, select, low {nízkym výpalom} mid {stredným výpalom} other {vysokým výpalom}}} sk {SK {cone}} temperature {{cone} °C} other {kužeľom {cone}}}: Katzovo pravidlo pre bór platí pre kužele 06 až 10 a tento výpal je chladnejší."
+    }
   },
   "stull": {
     "heading": "Stullov diagram",
@@ -904,7 +934,7 @@
     "foodSurface": "Pre plochu v styku s potravinami (glazúra na vnútro nádob)",
     "liner": {
       "note": "Bezpečnosť pri styku s potravinami závisí od toho, či sa táto glazúra vypáli na kužeľ, na ktorý bola skúšaná: nedopálená glazúra môže uvoľňovať kovy.",
-      "range": "Je uvedená pre rozsah, preto ju vyskúšajte na dolnom konci rozsahu, kde sa taví najmenej.",
+      "range": "Výpal tejto glazúry je uvedený ako rozsah, preto ju vyskúšajte na dolnom konci rozsahu, kde sa taví najmenej.",
       "untested": "Zatiaľ nie je označený žiadny vyskúšaný kužeľ.",
       "test": "Len skúška vylúhovania kovov z vašich vlastných vypálených nádob ukáže, či je bezpečná na styk s potravinami."
     },
@@ -967,5 +997,23 @@
     "replaceAsk": "Vyskúšané je zaškrtnuté pri {now}. Nahradiť to kužeľmi, ktoré záznamy uvádzajú, {logs}?",
     "replace": "Nahradiť",
     "keep": "Ponechať bez zmeny"
+  },
+  "coneCards": {
+    "heading": "Výsledky podľa kužeľa",
+    "unplaced": "Nezaradené ku kužeľu",
+    "unplacedNote": "Tieto záznamy výpalov zatiaľ nie sú zaradené ku kužeľu: zvoľte, kde sa ktorý vypaľoval.",
+    "approx": "≈ {temperature}",
+    "cautions": "{count, plural, =0 {žiadne upozornenia na limity} one {# upozornenie na limit} few {# upozornenia na limity} many {# upozornenia na limity} other {# upozornení na limity}}",
+    "logs": "{count, plural, =0 {žiadne záznamy výpalov} one {# záznam výpalu} few {# záznamy výpalov} many {# záznamu výpalov} other {# záznamov výpalov}}",
+    "outside": "mimo uvedeného výpalu",
+    "outsideChoice": "{place} (mimo uvedeného výpalu)",
+    "summaryLabel": "Ako to dopadlo: {place}",
+    "summaryPlaceholder": "Povrch, farba, stekanie, trhlinkovanie…",
+    "noAtmosphere": "atmosféra neuvedená",
+    "placeLabel": "Kde sa vypaľovalo: {title}",
+    "notPlaced": "Nezaradené",
+    "add": "Pridať výsledok pre",
+    "addButton": "Pridať",
+    "saveFailed": "Kde sa záznam výpalu vypaľoval, sa nepodarilo uložiť."
   }
 }

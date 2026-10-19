@@ -167,7 +167,7 @@ Rio Grande merekomendasikan **sirkuit khusus** (yang tidak menyalurkan daya ke a
 
 ### Berada di sana saat pembakaran berakhir
 
-**Kiln-Sitter** adalah sakelar mekanis pada banyak tungku manual: kerucut kecil menekuk pada akhir pembakaran dan memicu sakelar mati. Buku petunjuknya menyatakan bahwa alat ini "TIDAK dimaksudkan berfungsi sebagai alat pemutus yang aman dari kegagalan." Rio Grande menyatakan jangan pernah meninggalkan tungku yang sedang membakar tanpa pengawasan, "terutama mendekati waktu mati yang diperkirakan". Jadi tetaplah berada di dekat tungku dan periksa tungku selama pembakaran, terutama menjelang akhir; bakarlah hanya saat ada orang dewasa di rumah dan terjaga untuk melakukannya, periksa bahwa tungku telah mati, dan simpan alat pemadam api ringan (APAR) ABC di ruang tungku. Untuk cara kerja Kiln-Sitter, pengendali, dan jadwal, lihat [Membakar di tungku sederhana](/guides/firing).
+**Kiln-Sitter** adalah sakelar mekanis pada banyak tungku manual: kerucut kecil menekuk pada akhir pembakaran dan memicu sakelar mati. Buku petunjuknya menyatakan bahwa alat ini "TIDAK dimaksudkan berfungsi sebagai alat pemutus yang aman dari kegagalan." Rio Grande menyatakan jangan pernah meninggalkan tungku yang sedang membakar tanpa pengawasan, "terutama mendekati waktu mati yang diperkirakan". Jadi tetaplah berada di dekat tungku dan periksa tungku selama pembakaran, terutama menjelang akhir; bakarlah hanya saat ada orang dewasa di rumah dan terjaga selama seluruh pembakaran, periksa bahwa tungku telah mati, dan simpan alat pemadam api ringan (APAR) ABC di ruang tungku. Untuk cara kerja Kiln-Sitter, pengendali, dan jadwal, lihat [Membakar di tungku sederhana](/guides/firing).
 
 ### Asap dan karbon monoksida
 

@@ -199,11 +199,11 @@ Il-proċedura ta’ Dawson, li sservi wkoll ta’ kontroll qabel kull ħamja:
 Table: Għal kemm tissettja t-timer tal-limitu
 Label: Issettjar tat-timer tal-limitu
 
-| Sors      | Issettjar                                                                                                                                      |
-| --------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
-| Dawson    | ½ siegħa aktar mill-ħin mistenni tal-ħamja sakemm issir taf il-forn, wara anke ¼ ta’ siegħa biss; qatt ma tissettjah għal aktar minn 20 siegħa |
-| L&L       | Għoli ħafna l-ewwel darba, u niżżel kemm tieħu l-ħamja; wara, madwar 1 siegħa aktar                                                            |
-| Bracker’s | Minn 30 minuta sa 1 siegħa aktar mill-ħin tal-ħamja                                                                                            |
+| Sors      | Issettjar                                                                                                                                  |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| Dawson    | ½ siegħa aktar mill-ħin mistenni tal-ħamja sakemm issir taf il-forn, wara ¼ ta’ siegħa aktar; qatt ma tissettjah għal aktar minn 20 siegħa |
+| L&L       | Għoli ħafna l-ewwel darba, u niżżel kemm tieħu l-ħamja; wara, madwar 1 siegħa aktar                                                        |
+| Bracker’s | Minn 30 minuta sa 1 siegħa aktar mill-ħin tal-ħamja                                                                                        |
 
 > [!NOTE]
 > Il-punt tat-tluq tagħna: ħin twil l-ewwel darba (fil-limitu tal-20 siegħa tat-timer), imbagħad minn ½ sa 1 siegħa aktar mill-ħin li niżżilt. It-timer jgħidlek ukoll kemm damet il-ħamja: jekk issettjajtu fuq 7 u spiċċa fuq 1, il-ħamja damet 6 sigħat.
@@ -352,11 +352,11 @@ Label: Tabella SK
 | SK 19   |       {{2768 °F; 1520 °C}} |
 | SK 20   |       {{2786 °F; 1530 °C}} |
 
-Kull figura hija nominali (JIS): it-temperatura li l-istandard jagħti għall-kon, kif stampata fit-tabella ta’ Yuko Trading. It-tabella ma tagħtix rata tat-tisħin. L-istandard jagħti temperaturi ta’ referenza. B’rata ta’ fuħħari ta’ madwar 100 °C/h, l-istitut muniċipali ta’ Kyoto kejjel il-koni ta’ Kyoto tiegħu stess jitgħawġu f’temperatura 40–70 °C aktar baxxa mill-figura tal-JIS għall-istess numru; ma sibna l-ebda kejl bħal dan għall-koni SK skont il-JIS. Qiegħed kon xhud u qabbel.
+Kull figura hija nominali (JIS): it-temperatura li l-istandard jagħti għall-kon, kif stampata fit-tabella ta’ Yuko Trading. It-tabella ma tagħtix rata tat-tisħin. L-istandard jagħti temperaturi ta’ referenza. B’rata ta’ fuħħari ta’ madwar 100 °C/h, l-istitut muniċipali ta’ Kyoto kejjel il-koni ta’ Kyoto tiegħu stess jitgħawġu f’temperatura 47–79 °C aktar baxxa mill-figura tal-JIS għall-istess numru; ma sibna l-ebda kejl bħal dan għall-koni SK skont il-JIS. Qiegħed kon xhud u qabbel.
 
 ### Il-koni ta’ Kyoto
 
-Il-koni ta’ Kyoto (京都ゼーゲル), magħmulin mill-istitut muniċipali ta’ Kyoto, m’għadhomx isiru: rapporti tal-aħbarijiet jgħidu li l-istitut waqqaf il-produzzjoni fl-aħħar tas-sena fiskali 2009. Għandhom l-istess numri tal-koni SK skont il-JIS, iżda jitgħawġu f’temperatura aktar baxxa: kon ta’ Kyoto l-aktar jitgħawweġ madwar it-temperatura tal-kon SK skont il-JIS li hu żewġ numri aktar kiesaħ. Riċetta minn Kyoto li tgħid “SK 8” tista’ tfisser kon ta’ Kyoto. L-istitut ippubblika pariri għall-fuħħarin li qed jgħaddu mill-koni ta’ Kyoto għall-koni Orton, u juża l-kon Orton 10 minflok il-Kyoto SK 12 tiegħu stess; dik hija l-għażla tal-istitut mill-kejl tiegħu stess b’100 °C/h, u ma tapplika għall-ebda kon ieħor.
+Il-koni ta’ Kyoto (京都ゼーゲル), magħmulin mill-istitut muniċipali ta’ Kyoto, m’għadhomx isiru: rapporti tal-aħbarijiet jgħidu li l-istitut waqqaf il-produzzjoni fl-aħħar tas-sena fiskali 2009. Għandhom l-istess numri tal-koni SK skont il-JIS, iżda jitgħawġu f’temperatura aktar baxxa: kon ta’ Kyoto jitgħawweġ madwar it-temperatura tal-kon SK skont il-JIS li hu żewġ jew tliet numri aktar kiesaħ. Riċetta minn Kyoto li tgħid “SK 8” tista’ tfisser kon ta’ Kyoto. L-istitut ippubblika pariri għall-fuħħarin li qed jgħaddu mill-koni ta’ Kyoto għall-koni Orton, u juża l-kon Orton 10 minflok il-Kyoto SK 12 tiegħu stess; dik hija l-għażla tal-istitut mill-kejl tiegħu stess b’100 °C/h, u ma tapplika għall-ebda kon ieħor.
 
 ### Il-koni Orton mibjugħin fil-Ġappun
 

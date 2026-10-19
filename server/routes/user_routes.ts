@@ -30,7 +30,14 @@ import * as password from '../lib/password.ts';
 import * as limits from '../lib/rate_limit.ts';
 import { confirmChange } from '../lib/second_step.ts';
 import * as session from '../lib/session.ts';
-import User, { mfaOn, PREFERENCES, type Preferences, type Price } from '../models/user.ts';
+import User, {
+  mfaOn,
+  PREFERENCES,
+  SHELF_KEY_LONGEST,
+  SHELF_MOST,
+  type Preferences,
+  type Price
+} from '../models/user.ts';
 import { isPrice } from '../../lib/recipe/cost.js';
 import regions from '../../lib/regions/index.js';
 import { say } from '../lib/messages.ts';
@@ -95,8 +102,8 @@ userRouter.put('/preferences', jwtAuth, express.json(), async (req, res) => {
 
 // The materials on hand, for Match with what I have: library keys, as the
 // client's libraryKey makes them. Like the preferences, a trial may keep one.
-const SHELF_MOST = 500;
-const KEY_LONGEST = 200;
+// At most SHELF_MOST keys of at most SHELF_KEY_LONGEST characters (server/models/user.ts).
+const KEY_LONGEST = SHELF_KEY_LONGEST;
 
 userRouter.get('/shelf', jwtAuth, (req, res) => {
   res.status(200).json({ shelf: userOf(req).shelf ?? [] });

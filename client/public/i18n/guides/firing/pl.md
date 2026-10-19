@@ -199,11 +199,11 @@ Wiele wyłączników stożkowych, w tym modele LT firmy Dawson, ma **wyłącznik
 Table: Na ile ustawić wyłącznik czasowy
 Label: Ustawienia wyłącznika czasowego
 
-| Źródło    | Ustawienie                                                                                                                                            |
-| --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Dawson    | O ½ godziny dłużej niż przewidywany czas wypału, dopóki nie pozna się pieca, później nawet tylko o ¼ godziny; nigdy nie ustawiać go powyżej 20 godzin |
-| L&L       | Za pierwszym razem bardzo długo, notując, ile trwa wypał; potem o około 1 godzinę dłużej                                                              |
-| Bracker's | O 30 minut do 1 godziny dłużej niż czas wypału                                                                                                        |
+| Źródło    | Ustawienie                                                                                                                                       |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Dawson    | O ½ godziny dłużej niż przewidywany czas wypału, dopóki nie pozna się pieca, później o ¼ godziny dłużej; nigdy nie ustawiać go powyżej 20 godzin |
+| L&L       | Za pierwszym razem bardzo długo, notując, ile trwa wypał; potem o około 1 godzinę dłużej                                                         |
+| Bracker's | O 30 minut do 1 godziny dłużej niż czas wypału                                                                                                   |
 
 > [!NOTE]
 > Nasz punkt wyjścia: za pierwszym razem z dużym zapasem (w granicach 20 godzin na tarczy), potem o ½ do 1 godziny dłużej niż zapisany czas. Wyłącznik czasowy pokazuje też, ile trwał wypał: ustawiony na 7 i zatrzymany na 1 oznacza 6 godzin.
@@ -352,11 +352,11 @@ Label: Tabela stożków SK
 | SK 19   |        {{2768 °F; 1520 °C}} |
 | SK 20   |        {{2786 °F; 1530 °C}} |
 
-Każda wartość jest nominalna (JIS): to temperatura, którą norma podaje dla stożka, wydrukowana w tabeli Yuko Trading. Tabela nie podaje szybkości grzania. Norma podaje temperatury odniesienia. Przy typowej dla ceramików szybkości około 100 °C/h miejski instytut w Kioto zmierzył, że jego własne stożki z Kioto zginają się w temperaturze o 40–70 °C niższej niż wartość JIS dla tego samego numeru; dla stożków SK według JIS nie znaleźliśmy takich pomiarów. Należy ustawić stożek kontrolny i porównać.
+Każda wartość jest nominalna (JIS): to temperatura, którą norma podaje dla stożka, wydrukowana w tabeli Yuko Trading. Tabela nie podaje szybkości grzania. Norma podaje temperatury odniesienia. Przy typowej dla ceramików szybkości około 100 °C/h miejski instytut w Kioto zmierzył, że jego własne stożki z Kioto zginają się w temperaturze o 47–79 °C niższej niż wartość JIS dla tego samego numeru; dla stożków SK według JIS nie znaleźliśmy takich pomiarów. Należy ustawić stożek kontrolny i porównać.
 
 ### Stożki z Kioto
 
-Stożki z Kioto (京都ゼーゲル), wytwarzane przez miejski instytut w Kioto, nie są już produkowane: według doniesień prasowych instytut zakończył produkcję z końcem roku budżetowego 2009. Mają te same numery co stożki SK według JIS, ale zginają się w niższej temperaturze: stożek z Kioto przeważnie zgina się mniej więcej w temperaturze stożka SK według JIS o dwa numery niższego. Receptura z Kioto, która podaje „SK 8”, może mieć na myśli stożek z Kioto. Instytut opublikował wskazówki dla ceramików przechodzących ze stożków z Kioto na stożki Ortona i swój stożek z Kioto SK 12 zastępuje stożkiem Ortona 10; to wybór instytutu, oparty na jego własnych pomiarach przy 100 °C/h, i nie dotyczy żadnego innego stożka.
+Stożki z Kioto (京都ゼーゲル), wytwarzane przez miejski instytut w Kioto, nie są już produkowane: według doniesień prasowych instytut zakończył produkcję z końcem roku budżetowego 2009. Mają te same numery co stożki SK według JIS, ale zginają się w niższej temperaturze: stożek z Kioto zgina się mniej więcej w temperaturze stożka SK według JIS o dwa lub trzy numery niższego. Receptura z Kioto, która podaje „SK 8”, może mieć na myśli stożek z Kioto. Instytut opublikował wskazówki dla ceramików przechodzących ze stożków z Kioto na stożki Ortona i swój stożek z Kioto SK 12 zastępuje stożkiem Ortona 10; to wybór instytutu, oparty na jego własnych pomiarach przy 100 °C/h, i nie dotyczy żadnego innego stożka.
 
 ### Stożki Ortona sprzedawane w Japonii
 

@@ -272,7 +272,7 @@
     "numbers": {
       "heading": "Lire l’analyse et les limites",
       "analysis": "<b>Analyse et limites</b>, sous la recette, montre pour chaque oxyde les moles, le % molaire et le % en poids après cuisson, la perte au feu et la dilatation thermique calculée, une estimation pour comparer des émaux.",
-      "limits": "<b>Limites</b> compare la formule de Seger à un jeu de limites : les limites pour émaux stables de Hesselberth & Roy, sauf si vous choisissez celles de Glazecalc (le choix est enregistré avec vos paramètres). Choisissez la <b>Cuisson</b> pour la comparer aux bons chiffres ; elle est enregistrée avec la recette. Les chiffres de Hesselberth & Roy valent pour le cône 6 et le cône 10 : à basse température, l’application indique donc qu’ils ne s’appliquent pas. Ce sont des repères, pas un verdict de réussite ou d’échec.",
+      "limits": "<b>Limites</b> compare la formule de Seger à un jeu de limites : les limites pour émaux stables de Hesselberth & Roy, sauf si vous choisissez celles de Glazecalc (le choix est enregistré avec vos paramètres). Elle vérifie la tranche de cuisson (basse, moyenne ou haute température) que donne la <b>Cuisson</b> de la recette : son cône, ou sa plage. Une plage qui couvre plusieurs tranches, comme du cône 6 au cône 10, affiche côte à côte les vérifications des deux tranches. Pour ne vérifier qu’une seule tranche, choisissez-la dans la case <b>Cuisson</b> propre aux limites : elle l’emporte sur la cuisson de la recette et est enregistrée avec la recette. Les chiffres de Hesselberth & Roy valent pour le cône 6 et le cône 10 : à basse température, l’application indique donc qu’ils ne s’appliquent pas. Ce sont des repères, pas un verdict de réussite ou d’échec. En haut, une ligne compare le bore, la silice et l’alumine de l’émail à sa cuisson, d’après la règle du bore de Katz et les chiffres de Hesselberth & Roy, quel que soit le jeu de limites choisi : elle ne donne une remarque que si les deux s’accordent pour dire que l’émail ressemble à une autre cuisson, dit quand elle ne peut pas juger (plomb, lithium, raku et autres cas semblables), et reste un repère, pas un test.",
       "stull": "Le <b>diagramme de Stull</b> place la silice de l’émail en regard de son alumine, avec les régions mate, semi-mate et brillante de Stull et les plages du jeu de limites. C’est un repère pour l’aspect de la surface, pas une prédiction.",
       "slurry": "<b>Densité et eau</b> utilise la formule de Brongniart : pesez un volume mesuré d’émail, puis voyez l’émail sec dans le seau, l’eau qui l’amène à la densité voulue, ou l’eau pour une nouvelle préparation. Les densités suivent votre réglage de densité, de degrés Baumé ou de poids de la pinte."
     },
@@ -472,7 +472,7 @@
     "expansionRises": "Sa dilatation calculée passe de {was} à {now}.",
     "expansionRisesProbably": "Si l’ancien émail s’accordait tout juste à votre terre, celui-ci va probablement tressailler, parfois des semaines plus tard.",
     "expansionRisesMay": "Si l’ancien émail s’accordait tout juste à votre terre, celui-ci peut tressailler, parfois des semaines plus tard.",
-    "expansionRisesFix": "Le tressaillage fragilise les pièces et est déconseillé sur les surfaces en contact avec les aliments. Remplacer une partie de la soude et de la potasse par des fondants à plus faible dilatation (bore, lithium, magnésium ou calcium) fait baisser la dilatation ; ajouter de la silice est parfois suggéré, mais les sources ne sont pas d’accord.",
+    "expansionRisesFix": "Le tressaillage fragilise les pièces et est déconseillé sur les surfaces en contact avec les aliments. Remplacer une partie de la soude et de la potasse par des fondants à plus faible dilatation (bore, lithium, magnésium ou calcium) abaisse la dilatation thermique ; ajouter de la silice est parfois suggéré, mais les sources ne sont pas d’accord.",
     "expansionFalls": "Sa dilatation calculée baisse de {was} à {now}. Un émail à dilatation un peu plus basse résiste généralement mieux au tressaillage.",
     "expansionFallsProbably": "Avec une dilatation beaucoup plus basse, l’émail va probablement s’écailler, en détachant des éclats coupants des bords et des arêtes.",
     "expansionFallsCan": "Avec une dilatation beaucoup plus basse, l’émail peut s’écailler, en détachant des éclats coupants des bords et des arêtes.",
@@ -598,6 +598,36 @@
     "firingFromBlock": "D’après la cuisson de la recette ({bands})",
     "bothBands": "La cuisson de la recette couvre {bands} : chaque plage est donc vérifiée, côte à côte, car un émail se comporte rarement de la même façon aux deux extrémités.",
     "fromFiring": "Les valeurs correspondent à la cuisson de la recette : {band}. Choisissez une cuisson ci-dessus pour en vérifier une autre."
+  },
+  "coneFit": {
+    "cooler": "La chimie de cet émail ressemble plus à celle d’un émail pour {looksLike, select, low {la basse température} other {la moyenne température}} qu’à celle d’un émail pour {scale, select, band {{band, select, low {la basse température} mid {la moyenne température} other {la haute température}}} sk {SK {cone}} temperature {{cone} °C} other {le cône {cone}}}.",
+    "coolerSoft": "La chimie de cet émail penche vers une cuisson moins chaude qu’{scale, select, band {{band, select, low {à la basse température} mid {à la moyenne température} other {à la haute température}}} sk {à SK {cone}} temperature {à {cone} °C} other {au cône {cone}}}, plus proche du cône 6, même si la chimie seule ne distingue que grossièrement les émaux de cône 6 et de cône 10.",
+    "hotter": "La chimie de cet émail ressemble plus à celle d’un émail pour {looksLike, select, high {la haute température} other {la moyenne température}} qu’à celle d’un émail pour {scale, select, band {{band, select, low {la basse température} mid {la moyenne température} other {la haute température}}} sk {SK {cone}} temperature {{cone} °C} other {le cône {cone}}}.",
+    "hotterSoft": "La chimie de cet émail penche vers une cuisson plus chaude qu’{scale, select, band {{band, select, low {à la basse température} mid {à la moyenne température} other {à la haute température}}} sk {à SK {cone}} temperature {à {cone} °C} other {au cône {cone}}}, plus proche du cône 10, même si la chimie seule ne distingue que grossièrement les émaux de cône 6 et de cône 10.",
+    "closer": "Dans la plage pour laquelle il est indiqué, la chimie de cet émail paraît plus proche de l’extrémité {scale, select, band {{band, select, low {de la basse température} mid {de la moyenne température} other {de la haute température}}} sk {de SK {cone}} temperature {de {cone} °C} other {du cône {cone}}}.",
+    "coolerSilica": "Il contient plus de bore ({boron}) que n’en demandent d’ordinaire les émaux cuits {scale, select, band {{band, select, low {à la basse température} mid {à la moyenne température} other {à la haute température}}} sk {à SK {cone}} temperature {à {cone} °C} other {au cône {cone}}}, et moins de silice ({silica}) qu’ils n’en ont d’ordinaire.",
+    "coolerAlumina": "Il contient plus de bore ({boron}) que n’en demandent d’ordinaire les émaux cuits {scale, select, band {{band, select, low {à la basse température} mid {à la moyenne température} other {à la haute température}}} sk {à SK {cone}} temperature {à {cone} °C} other {au cône {cone}}}, et peu d’alumine ({alumina}).",
+    "coolerBoth": "Il contient plus de bore ({boron}) que n’en demandent d’ordinaire les émaux cuits {scale, select, band {{band, select, low {à la basse température} mid {à la moyenne température} other {à la haute température}}} sk {à SK {cone}} temperature {à {cone} °C} other {au cône {cone}}}, et moins de silice ({silica}) et d’alumine ({alumina}) qu’ils n’en ont d’ordinaire.",
+    "hotterSilica": "Il contient peu de bore ({boron}) pour {scale, select, band {{band, select, low {la basse température} mid {la moyenne température} other {la haute température}}} sk {SK {cone}} temperature {{cone} °C} other {le cône {cone}}}, et plus de silice ({silica}) que n’en ont d’ordinaire les émaux cuits à cette température.",
+    "coolerEffect": "À cette cuisson, il peut couler ou trop fondre : cuisez d’abord un tesson d’essai sur une galette.",
+    "hotterEffect": "À cette cuisson, il peut sortir sous-cuit : sec, rugueux ou pas tout à fait étanche. Testez-le en cuisson avant de l’utiliser sur des pièces, et surtout avant de l’utiliser là où des aliments ou des boissons le toucheront.",
+    "hotterEffectSoft": "Certains émaux fondent à cette cuisson sans bore : ce n’est donc qu’une indication ; vérifiez sur un tesson d’essai qu’il fond complètement.",
+    "gerstley": "Une partie de son bore vient du Gerstley Borate, qui varie d’un lot à l’autre : ce chiffre est donc moins sûr.",
+    "guide": "Cela compare la chimie à des chiffres publiés : c’est un repère, pas un test. Si l’émail a bien cuit chez vous à ce cône, faites confiance à vos tessons.",
+    "fits": "Son bore, sa silice et son alumine ne s’écartent pas {scale, select, band {{band, select, low {de la basse température} mid {de la moyenne température} other {de la haute température}}} sk {de SK {cone}} temperature {de {cone} °C} other {du cône {cone}}}. C’est un repère, pas un test : il ne dit rien sur la stabilité de l’émail ni sur son aptitude au contact alimentaire.",
+    "sources": "Sources :",
+    "skip": {
+      "lead": "Glazecalc ne peut pas comparer la chimie de cet émail à sa cuisson : une grande part de sa masse fondue vient du plomb, que les chiffres publiés que cette vérification utilise ne couvrent pas.",
+      "lithium": "Glazecalc ne peut pas comparer la chimie de cet émail à sa cuisson : une grande part de sa masse fondue vient du lithium, que les chiffres publiés que cette vérification utilise ne couvrent pas.",
+      "alkali": "Glazecalc ne peut pas comparer la chimie de cet émail à sa cuisson : une grande part de sa masse fondue vient de la soude et de la potasse, que les chiffres publiés que cette vérification utilise ne couvrent pas.",
+      "zinc": "Glazecalc ne peut pas comparer la chimie de cet émail à sa cuisson : il contient beaucoup de zinc, comme les émaux cristallins, ce que les chiffres publiés que cette vérification utilise ne couvrent pas.",
+      "notGlaze": "Glazecalc ne peut pas comparer la chimie de cet émail à sa cuisson : sa formule n’est pas celle d’un émail habituel (très peu ou énormément de silice, ou beaucoup d’oxydes colorants), si bien que les chiffres publiés que cette vérification utilise ne lui conviennent pas.",
+      "process": "Glazecalc ne peut pas comparer la chimie de cet émail à sa cuisson : il est destiné à une cuisson {process, select, raku {raku} salt {au sel} soda {à la soude} wood {au bois} other {en fosse}}, où le four fait une partie de l’émaillage, ce que les chiffres publiés que cette vérification utilise ne couvrent pas.",
+      "ash": "Glazecalc ne peut pas comparer la chimie de cet émail à sa cuisson : il contient de la cendre, dont la composition varie trop pour les chiffres publiés que cette vérification utilise.",
+      "noTemperature": "Glazecalc ne peut pas comparer la chimie de cet émail {scale, select, band {{band, select, low {à la basse température} mid {à la moyenne température} other {à la haute température}}} sk {à SK {cone}} temperature {à {cone} °C} other {au cône {cone}}} : il n’existe pas de température mesurée pour ce cône.",
+      "between": "Glazecalc ne peut pas comparer la chimie de cet émail {scale, select, band {{band, select, low {à la basse température} mid {à la moyenne température} other {à la haute température}}} sk {à SK {cone}} temperature {à {cone} °C} other {au cône {cone}}} : les chiffres publiés que cette vérification utilise valent pour la basse température et pour la moyenne et la haute température, pas pour les cônes entre les deux (01 à 3).",
+      "belowChart": "Glazecalc ne peut pas comparer la chimie de cet émail {scale, select, band {{band, select, low {à la basse température} mid {à la moyenne température} other {à la haute température}}} sk {à SK {cone}} temperature {à {cone} °C} other {au cône {cone}}} : la règle du bore de Katz vaut du cône 06 au cône 10, et cette cuisson est moins chaude."
+    }
   },
   "stull": {
     "heading": "Diagramme de Stull",
@@ -904,7 +934,7 @@
     "foodSurface": "Pour une surface alimentaire (un émail intérieur)",
     "liner": {
       "note": "La sécurité alimentaire dépend de la cuisson de cet émail au cône auquel il a été testé : un émail sous-cuit peut relarguer des métaux.",
-      "range": "Il est indiqué pour une plage : testez-le donc à l’extrémité basse de la plage, là où il fond le moins.",
+      "range": "La cuisson de cet émail est indiquée comme une plage : testez-le donc à l’extrémité basse de la plage, là où il fond le moins.",
       "untested": "Aucun cône n’est encore marqué comme testé.",
       "test": "Seul un test de relargage de vos propres pièces cuites montre s’il est apte au contact alimentaire."
     },
@@ -967,5 +997,23 @@
     "replaceAsk": "Les cônes cochés comme testés sont {now}. Les remplacer par ceux que les relevés indiquent, {logs} ?",
     "replace": "Remplacer",
     "keep": "Laisser tel quel"
+  },
+  "coneCards": {
+    "heading": "Résultats par cône",
+    "unplaced": "Non rattaché à un cône",
+    "unplacedNote": "Ces relevés de cuisson ne sont pas encore rattachés à un cône : choisissez où chacun a été cuit.",
+    "approx": "≈ {temperature}",
+    "cautions": "{count, plural, =0 {aucune mise en garde sur les limites} one {# mise en garde sur les limites} many {# de mises en garde sur les limites} other {# mises en garde sur les limites}}",
+    "logs": "{count, plural, =0 {aucun relevé de cuisson} one {# relevé de cuisson} many {# de relevés de cuisson} other {# relevés de cuisson}}",
+    "outside": "hors de la cuisson indiquée",
+    "outsideChoice": "{place} (hors de la cuisson indiquée)",
+    "summaryLabel": "Résultat pour {place}",
+    "summaryPlaceholder": "Surface, couleur, coulures, tressaillage...",
+    "noAtmosphere": "atmosphère non indiquée",
+    "placeLabel": "Où {title} a été cuit",
+    "notPlaced": "Non rattaché",
+    "add": "Ajouter un résultat pour",
+    "addButton": "Ajouter",
+    "saveFailed": "L’endroit où le relevé de cuisson a été cuit n’a pas pu être enregistré."
   }
 }

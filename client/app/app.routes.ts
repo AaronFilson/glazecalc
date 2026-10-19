@@ -104,9 +104,10 @@ export const routes: Routes = [
     loadComponent: () => import('./pages/terms/terms-page').then((m) => m.TermsPage)
   },
   {
-    // Translated, but not a public page: not in the sitemap, and noindex (docs/integrations-plan.md, item 25).
+    // Public since round 4 (the owner, 2026-10-19): prerendered, in the sitemap, linked from the footer.
     path: 'assistants',
     title: marker('titles.assistants'),
+    data: { description: marker('meta.assistants') },
     providers: [provideTranslocoScope('site')],
     resolve: { messages: scopeTranslations },
     loadComponent: () => import('./pages/assistants/assistants-page').then((m) => m.AssistantsPage)

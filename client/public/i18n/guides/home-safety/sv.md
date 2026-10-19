@@ -167,7 +167,7 @@ Rio Grande rekommenderar en **egen grupp** i elcentralen (en som inte försörje
 
 ### Var på plats när bränningen är klar
 
-En **Kiln-Sitter** är den mekaniska brytaren på många ugnar utan automatik: en liten kägla{{en: cone}} böjer sig i slutet av bränningen och slår av brytaren. Bruksanvisningen säger att den ”INTE är avsedd att fungera som en felsäker avstängningsanordning”. Rio Grande säger att en ugn som bränner aldrig ska lämnas utan tillsyn, ”särskilt inte nära den förväntade avstängningstiden”. Stanna därför i närheten och kontrollera ugnen medan den bränner, framför allt mot slutet; bränn bara när en vuxen är hemma och vaken för att stanna i närheten och kontrollera ugnen, kontrollera att ugnen har stängts av, och ha en ABC-brandsläckare i ugnsrummet. Hur Kiln-Sitter-brytare, automatik och brännprogram fungerar beskrivs i [Bränna i en enkel keramikugn](/guides/firing).
+En **Kiln-Sitter** är den mekaniska brytaren på många ugnar utan automatik: en liten kägla{{en: cone}} böjer sig i slutet av bränningen och slår av brytaren. Bruksanvisningen säger att den ”INTE är avsedd att fungera som en felsäker avstängningsanordning”. Rio Grande säger att en ugn som bränner aldrig ska lämnas utan tillsyn, ”särskilt inte nära den förväntade avstängningstiden”. Stanna därför i närheten och kontrollera ugnen medan den bränner, framför allt mot slutet; bränn bara när en vuxen är hemma och vaken under hela bränningen, kontrollera att ugnen har stängts av, och ha en ABC-brandsläckare i ugnsrummet. Hur Kiln-Sitter-brytare, automatik och brännprogram fungerar beskrivs i [Bränna i en enkel keramikugn](/guides/firing).
 
 ### Ugnsgaser och kolmonoxid
 

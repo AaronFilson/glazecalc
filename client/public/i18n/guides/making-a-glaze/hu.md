@@ -211,7 +211,7 @@ A **keserűsó** (magnézium-szulfát) hatására a máz állás közben kissé 
 
 A **CMC** (karboxi-metil-cellulóz) mázragasztó ragacsosabbá és lassabban száradóvá teszi a máziszapot, és keményebb mázréteget hagy, amely jól tapad az edényre. Leginkább az ecsetelhető mázaknál és a sok frittet{{en: frit}} tartalmazó mázaknál fontos. A Digitalfire példájában 3,75 g-ot kevernek 1000 g máziszapba, és ezt turmixgéppel kell bekeverni. A CMC-t tartalmazó máz keserűsóval nem dermeszthető be, és mivel a ragasztóval mikrobák táplálkoznak, a vödörben megváltozhat, és szagossá válhat.
 
-A **bentonit**, ez a nagyon finom agyag, segít lebegésben tartani a többi szemcsét. A mártómázak ehhez általában 15–25% nyers agyagra támaszkodnak. Kevés agyagot tartalmazó receptnél kb. 1–3% bentonit segít; a Digitalfire szerint a 15%-nál több agyagot tartalmazó mázhoz nem kellene 1%-nál több.
+A **bentonit**, ez a nagyon finom agyag, segít lebegésben tartani a többi szemcsét. A mártómázak ehhez általában 15–25% nyers agyagra támaszkodnak. Kevés agyagot tartalmazó receptnél kb. 1–3% bentonit segít; a Digitalfire szerint a 15%-nál több agyagot tartalmazó mázhoz nem kellene a száraz máz tömegének 1%-ánál több bentonitnak lennie.
 
 ## Próbalapok és próbasorok {#testing}
 

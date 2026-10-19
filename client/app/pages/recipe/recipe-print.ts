@@ -29,6 +29,7 @@ import { libraryKey } from './recipe-library';
 import { UnityFormula, unityColumns } from './unity-formula';
 import { WorkedCalculation } from './worked-calculation';
 import { firingWords } from './firing-text';
+import { ConeSummaries } from './recipe-cone-cards';
 
 /** What to print: the whole recipe with its chemistry, just what to weigh, or the unity formula worked step by step. */
 export type PrintMode = 'full' | 'batch' | 'worked';
@@ -169,7 +170,7 @@ const UNITS: ReadonlyArray<{ value: WeightUnit; label: string }> = [
  */
 @Component({
   selector: 'gc-recipe-print',
-  imports: [DatePipe, NumberInput, RecipeHazards, TranslocoDirective, UnityFormula, WorkedCalculation],
+  imports: [ConeSummaries, DatePipe, NumberInput, RecipeHazards, TranslocoDirective, UnityFormula, WorkedCalculation],
   template: `<ng-container *transloco="let t">
     <section class="print-controls no-print" aria-labelledby="print-heading">
       <h1 id="print-heading" tabindex="-1">{{ t('recipe.print.heading') }}</h1>
@@ -492,6 +493,15 @@ const UNITS: ReadonlyArray<{ value: WeightUnit; label: string }> = [
             <h3 id="print-notes-heading">{{ t('recipe.print.notes') }}</h3>
             <p>{{ notes() }}</p>
           </section>
+        }
+        @if (coneReader(); as reader) {
+          <gc-cone-summaries
+            class="print-cone-summaries"
+            headingId="print-cone-summaries-heading"
+            [block]="recipe().firedAt"
+            [results]="recipe().coneResults"
+            [reader]="reader"
+          />
         }
       } @else if (mode() === 'batch') {
         <div class="print-table-scroll" tabindex="0" role="region" [attr.aria-label]="t('recipe.print.toWeigh')">
@@ -847,6 +857,7 @@ const UNITS: ReadonlyArray<{ value: WeightUnit; label: string }> = [
       .print-table tr,
       .print-chemistry,
       .print-notes,
+      .print-cone-summaries,
       .print-ticket {
         break-inside: avoid;
       }
@@ -892,6 +903,13 @@ export class RecipePrint implements OnInit, OnDestroy {
     if (!this.recipe().firedAt) return null;
     const locale = this.injector.get(LocaleService);
     return firingWords(this.recipe().firedAt, { cones: locale.cones(), temperature: locale.temperature() });
+  });
+
+  /** How the reader fires, for the results by cone: looked up only for a recipe with results, as the firing's is. */
+  protected readonly coneReader = computed(() => {
+    if (!this.recipe().coneResults?.length) return null;
+    const locale = this.injector.get(LocaleService);
+    return { cones: locale.cones(), temperature: locale.temperature() };
   });
 
   protected readonly units = UNITS;

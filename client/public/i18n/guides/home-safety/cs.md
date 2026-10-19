@@ -167,7 +167,7 @@ Rio Grande doporučuje **samostatně jištěný okruh** (který nenapájí nic j
 
 ### Buďte u toho, když výpal končí
 
-**Kiln-Sitter** je mechanický vypínač na mnoha ručně ovládaných pecích (bez regulátoru): na konci výpalu se ohne malá žároměrka{{en: cone}} a vypínač se tím vypne. Jeho návod k obsluze uvádí, že „NENÍ určen k tomu, aby sloužil jako vypínací zařízení bezpečné při poruše“. Rio Grande radí nikdy nenechávat pec během výpalu bez dozoru, „zvlášť kolem očekávané doby vypnutí“. Proto během výpalu zůstaňte poblíž a pec kontrolujte, především ke konci; vypalujte jen tehdy, když bude doma dospělý, který bude vzhůru, aby mohl zůstat poblíž a pec kontrolovat, zkontrolujte, že se pec vypnula, a v místnosti s pecí mějte hasicí přístroj typu ABC. Jak fungují vypínače Kiln-Sitter, regulátory a vypalovací křivky, popisuje návod [Výpal v jednoduché peci](/guides/firing).
+**Kiln-Sitter** je mechanický vypínač na mnoha ručně ovládaných pecích (bez regulátoru): na konci výpalu se ohne malá žároměrka{{en: cone}} a vypínač se tím vypne. Jeho návod k obsluze uvádí, že „NENÍ určen k tomu, aby sloužil jako vypínací zařízení bezpečné při poruše“. Rio Grande radí nikdy nenechávat pec během výpalu bez dozoru, „zvlášť kolem očekávané doby vypnutí“. Proto během výpalu zůstaňte poblíž a pec kontrolujte, především ke konci; vypalujte jen tehdy, když bude doma dospělý, který bude vzhůru po celou dobu výpalu, zkontrolujte, že se pec vypnula, a v místnosti s pecí mějte hasicí přístroj typu ABC. Jak fungují vypínače Kiln-Sitter, regulátory a vypalovací křivky, popisuje návod [Výpal v jednoduché peci](/guides/firing).
 
 ### Výpary a oxid uhelnatý
 

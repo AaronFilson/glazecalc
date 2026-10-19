@@ -138,15 +138,17 @@ export interface MfaFields {
 /**
  * A provider account the person signs in with (server/lib/oauth.ts, docs/adr/0015-provider-sign-in.md):
  * found by the provider and its subject, the provider's own unchanging id for
- * the person (Google's sub, GitHub's numeric id), never by an email. Nothing
+ * the person (Google's sub, GitHub's numeric id, Microsoft's tenant id and sub
+ * as tid:sub, docs/adr/0023-microsoft-sign-in.md), never by an email. Nothing
  * else from the provider is kept: no name, no picture, no provider token.
  */
 export interface Identity {
-  /** 'google' or 'github' (server/lib/oauth.ts PROVIDERS). */
+  /** 'google', 'github' or 'microsoft' (server/lib/oauth.ts PROVIDERS). */
   provider: string;
   subject: string;
   /**
-   * provider:subject (google:1234), what the unique index and the lookups use:
+   * provider:subject (google:1234, microsoft:<tid>:<sub>), what the unique index and the lookups use:
+
    * an index on the two fields of one array would pair every provider with every
    * subject in it, so two accounts could clash over a pair neither has.
    */
@@ -281,6 +283,11 @@ const mfaSchema = new mongoose.Schema<MfaFields>(
   },
   { _id: false }
 );
+
+/** At most this many materials on the shelf, by the website (PUT /api/shelf) or an assistant (add_to_shelf). */
+export const SHELF_MOST = 500;
+/** The longest key the shelf takes. */
+export const SHELF_KEY_LONGEST = 200;
 
 const userSchema = new mongoose.Schema<UserFields, UserModel, UserMethods>({
   email: { type: String, required: true, trim: true, lowercase: true },

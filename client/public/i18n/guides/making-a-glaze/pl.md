@@ -211,7 +211,7 @@ Label: Ilość wody dla docelowej gęstości względnej
 
 **Klej CMC** (karboksymetyloceluloza) sprawia, że zawiesina jest bardziej lepka i wolniej schnie, a po wyschnięciu tworzy twardszą warstwę, która dobrze trzyma się naczynia. Ma największe znaczenie w szkliwach do malowania pędzlem i szkliwach z dużą zawartością fryty{{en: frit}}. W przykładzie z Digitalfire miesza się 3,75 g z 1000 g zawiesiny i trzeba to zrobić blenderem. Szkliwo z CMC nie zżeluje się pod wpływem soli gorzkiej, a ponieważ drobnoustroje żywią się klejem, może się zmieniać w wiadrze i zacząć nieprzyjemnie pachnieć.
 
-**Bentonit**, bardzo drobna glina, pomaga utrzymać pozostałe cząstki w zawiesinie. Szkliwa do zanurzania zwykle zawdzięczają to 15–25 % surowej gliny. W recepturze ze zbyt małą ilością gliny pomaga ok. 1–3 % bentonitu; według Digitalfire szkliwo z ponad 15 % gliny nie powinno potrzebować więcej niż 1 %.
+**Bentonit**, bardzo drobna glina, pomaga utrzymać pozostałe cząstki w zawiesinie. Szkliwa do zanurzania zwykle zawdzięczają to 15–25 % surowej gliny. W recepturze ze zbyt małą ilością gliny pomaga ok. 1–3 % bentonitu; według Digitalfire szkliwo z ponad 15 % gliny nie powinno potrzebować bentonitu w ilości większej niż 1 % masy suchego szkliwa.
 
 ## Płytki testowe i próby liniowe {#testing}
 

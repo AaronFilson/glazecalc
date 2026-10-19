@@ -211,7 +211,7 @@ Il **sale inglese** (solfato di magnesio) fa gelificare leggermente uno smalto q
 
 La **CMC** (carbossimetilcellulosa) rende la sospensione più appiccicosa e più lenta ad asciugare, e lascia uno strato più duro che aderisce al pezzo. Conta soprattutto per gli smalti a pennello e per quelli ricchi di fritta{{en: frit}}. Nell’esempio di Digitalfire si incorporano 3,75 g in 1000 g di sospensione, e va aggiunta con un frullatore. Uno smalto con CMC non gelifica con il sale inglese e, poiché i microbi si nutrono della colla, può alterarsi nel secchio e cominciare a puzzare.
 
-La **bentonite**, un’argilla finissima, aiuta a tenere in sospensione le altre particelle. Per questo gli smalti per immersione di solito contano su un 15–25% di argilla cruda. Per una ricetta con poca argilla aiuta circa l’1–3% di bentonite; secondo Digitalfire, uno smalto con più del 15% di argilla non dovrebbe averne bisogno di più dell’1%.
+La **bentonite**, un’argilla finissima, aiuta a tenere in sospensione le altre particelle. Per questo gli smalti per immersione di solito contano su un 15–25% di argilla cruda. Per una ricetta con poca argilla aiuta circa l’1–3% di bentonite; secondo Digitalfire, uno smalto con più del 15% di argilla non dovrebbe aver bisogno di più dell’1% di bentonite sul peso dello smalto secco.
 
 ## Provini e progressioni lineari {#testing}
 

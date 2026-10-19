@@ -187,12 +187,13 @@ if [[ ! "$mfa_key" =~ ^[A-Za-z0-9+/]{43}=$ ]]; then
 fi
 printf 'MFA_KEY=%s\n' "$mfa_key" >> app.env.new
 unset mfa_key
-# Sign in with Google and GitHub (docs/adr/0015-provider-sign-in.md): each
-# provider is on once both /glazecalc/<provider>-client-id and
-# /glazecalc/<provider>-client-secret exist, and off, with no button, until
-# then (deploy/README.md, "Sign in with Google and GitHub"). Any other error
-# reading them stops the deploy here, rather than turning a provider off.
-for provider in google github; do
+# Sign in with Google, GitHub and Microsoft (docs/adr/0015-provider-sign-in.md,
+# 0023-microsoft-sign-in.md): each provider is on once both
+# /glazecalc/<provider>-client-id and /glazecalc/<provider>-client-secret
+# exist, and off, with no button, until then (deploy/README.md, "Sign in with
+# Google, GitHub and Microsoft"). Any other error reading them stops the
+# deploy here, rather than turning a provider off.
+for provider in google github microsoft; do
   upper=$(printf '%s' "$provider" | tr '[:lower:]' '[:upper:]')
   if client_id=$(aws ssm get-parameter --region "$region" --name "/glazecalc/$provider-client-id" \
       --with-decryption --query Parameter.Value --output text 2>ssm-error.txt) \

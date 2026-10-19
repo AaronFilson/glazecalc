@@ -167,7 +167,7 @@ Rio Grande suosittelee **omaa ryhmää** (sähkökeskuksen ryhmä, josta ei saa 
 
 ### Ole paikalla polton päättyessä
 
-**Kiln-Sitter** on monissa käsisäätöisissä uuneissa oleva mekaaninen keilakatkaisin: pieni keila{{en: cone}} taipuu polton lopussa ja laukaisee katkaisimen pois päältä. Sen käyttöohjeen mukaan sitä ”EI ole tarkoitettu toimimaan vikaturvallisena katkaisulaitteena.” Rio Granden mukaan polttavaa uunia ei pidä koskaan jättää ilman valvontaa, ”etenkään lähellä odotettua sammumisaikaa”. Pysy siis lähellä ja tarkista uuni polton aikana, etenkin lähellä loppua; polta vain, kun kotona on hereillä oleva aikuinen, joka voi sen tehdä, tarkista, että uuni on sammunut, ja pidä uunihuoneessa ABC-käsisammutin. Siitä, miten Kiln-Sitterit, automatiikat ja polttokäyrät toimivat, kerrotaan oppaassa [Polttaminen yksinkertaisessa keramiikkauunissa](/guides/firing).
+**Kiln-Sitter** on monissa käsisäätöisissä uuneissa oleva mekaaninen keilakatkaisin: pieni keila{{en: cone}} taipuu polton lopussa ja laukaisee katkaisimen pois päältä. Sen käyttöohjeen mukaan sitä ”EI ole tarkoitettu toimimaan vikaturvallisena katkaisulaitteena.” Rio Granden mukaan polttavaa uunia ei pidä koskaan jättää ilman valvontaa, ”etenkään lähellä odotettua sammumisaikaa”. Pysy siis lähellä ja tarkista uuni polton aikana, etenkin lähellä loppua; polta vain, kun kotona on aikuinen, joka on hereillä koko polton ajan, tarkista, että uuni on sammunut, ja pidä uunihuoneessa ABC-käsisammutin. Siitä, miten Kiln-Sitterit, automatiikat ja polttokäyrät toimivat, kerrotaan oppaassa [Polttaminen yksinkertaisessa keramiikkauunissa](/guides/firing).
 
 ### Savukaasut ja häkä
 

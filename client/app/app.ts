@@ -227,6 +227,7 @@ const APP_PAGES = [
           <a routerLink="/advice">{{ t('footer.advice') }}</a>
           <a routerLink="/privacy">{{ t('footer.privacy') }}</a>
           <a routerLink="/terms">{{ t('footer.terms') }}</a>
+          <a routerLink="/assistants">{{ t('footer.assistants') }}</a>
           <a href="https://github.com/AaronFilson/glazecalc">{{ t('footer.source') }}</a>
           <a href="https://github.com/AaronFilson/glazecalc/issues">{{ t('footer.problem') }}</a>
           <a href="https://updraftpotterystudio.com/">{{ t('footer.pottery') }}</a>

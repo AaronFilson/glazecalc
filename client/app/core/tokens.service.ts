@@ -24,6 +24,8 @@ export interface TokenRow {
 export interface TokenList {
   tokens: TokenRow[];
   expiryDays: number[];
+  /** The lifetimes a token that can change records may have (the server's WRITE_PAT_MOST_DAYS at most). */
+  writeExpiryDays?: number[];
   defaultDays: number;
   most: number;
   scopes: string[];
@@ -58,10 +60,20 @@ export class TokensService {
     return list;
   }
 
-  /** Makes a token; resolves with the token itself, to show once, and the server's message. */
-  async create(name: string, days: number, proof: IdentityProof): Promise<{ token: string; message: string }> {
+  /** Makes a token that reads, or reads and changes; resolves with the token itself, to show once, and the server's message. */
+  async create(
+    name: string,
+    days: number,
+    proof: IdentityProof,
+    scope: 'data:read' | 'data:write' = 'data:read'
+  ): Promise<{ token: string; message: string }> {
     const res = await firstValueFrom(
-      this.http.post<Said & { token: string; row: TokenRow }>(this.apiBase + '/tokens', { name, days, ...proof })
+      this.http.post<Said & { token: string; row: TokenRow }>(this.apiBase + '/tokens', {
+        name,
+        days,
+        scope,
+        ...proof
+      })
     );
     this.list.update((list) => (list ? { ...list, tokens: [res.row, ...list.tokens] } : list));
     return { token: res.token, message: said(res) };

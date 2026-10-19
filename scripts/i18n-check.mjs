@@ -680,7 +680,10 @@ export function checkHanja({ dir = I18N, glossary = path.join(ROOT, 'docs', 'tra
   if (existsSync(guides)) {
     for (const guide of readdirSync(guides, { withFileTypes: true }).filter((entry) => entry.isDirectory())) {
       const file = path.join(guides, guide.name, 'ko.md');
-      if (existsSync(file)) check(`guides/${guide.name}/ko.md`, readFileSync(file, 'utf8'));
+      if (!existsSync(file)) continue;
+      // A section still in English ({#id lang=en}) is the English's, which may quote Japanese.
+      const korean = guideSegments(readFileSync(file, 'utf8')).filter((segment) => !segment.english);
+      check(`guides/${guide.name}/ko.md`, korean.map((segment) => segment.text).join('\n'));
     }
   }
   return problems;

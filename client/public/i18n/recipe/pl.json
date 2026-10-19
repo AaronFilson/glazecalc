@@ -272,7 +272,7 @@
     "numbers": {
       "heading": "Odczytywanie analizy i limitów",
       "analysis": "<b>Analiza i limity</b>, pod recepturą, pokazują dla każdego tlenku mole, % molowy i % masowy po wypale, stratę prażenia oraz obliczoną rozszerzalność cieplną, czyli oszacowanie do porównywania szkliw.",
-      "limits": "<b>Limity</b> zestawiają wzór Segera z wybranym zestawem limitów: domyślnie są to limity trwałych szkliw według Hesselberth & Roy, chyba że zostaną wybrane własne limity Glazecalc (wybór zapisuje się w ustawieniach). Należy wybrać <b>Wypał</b>, aby porównać wzór z właściwymi wartościami; wypał zapisuje się razem z recepturą. Wartości Hesselberth & Roy dotyczą stożka 6 i stożka 10, więc przy niskim wypale zestaw informuje, że nie mają zastosowania. To wytyczne, a nie ocena „zalicza lub nie zalicza”.",
+      "limits": "<b>Limity</b> zestawiają wzór Segera z zestawem limitów: limitami Hesselbertha i Roya dla szkliw stabilnych, chyba że zostanie wybrany własny zestaw Glazecalc (wybór zapisuje się razem z ustawieniami). Sprawdzają przedział wypału, który podaje pole <b>Wypał</b> receptury: jej stożek albo jej zakres. Zakres obejmujący kilka przedziałów, na przykład stożek 6–10, pokazuje obok siebie kontrole obu przedziałów. Aby sprawdzić tylko jeden przedział, należy go wybrać we własnym polu <b>Wypał</b> limitów, które ma pierwszeństwo przed wypałem receptury i zapisuje się razem z recepturą. Wartości Hesselbertha i Roya dotyczą stożka 6 i stożka 10, więc przy niskim wypale limity informują, że ich nie stosuje się. To wskazówki, a nie zaliczenie lub oblanie. U góry jeden wiersz porównuje bor, krzemionkę i tlenek glinu w szkliwie z jego wypałem, według reguły boru Katza i wartości Hesselbertha i Roya, niezależnie od wybranego zestawu limitów: podaje uwagę tylko wtedy, gdy obie zgadzają się, że szkliwo wygląda na przeznaczone do innego wypału, mówi, kiedy nie może ocenić (ołów, lit, raku i tym podobne) i jest wskazówką, a nie testem.",
       "stull": "<b>Wykres Stulla</b> przedstawia zależność krzemionki szkliwa od tlenku glinu, z obszarami Stulla (matowym, półmatowym i błyszczącym) oraz zakresami zestawu limitów. To wskazówka co do powierzchni, a nie prognoza.",
       "slurry": "<b>Gęstość względna i woda</b> korzystają ze wzoru Brongniarta: należy zważyć odmierzoną objętość szkliwa, a potem odczytać, ile suchego szkliwa jest w wiadrze, ile wody doprowadzi je do wybranej gęstości względnej albo ile wody potrzeba na nową porcję. Gęstości są podawane według ustawienia gęstości względnej, stopni Baumé lub masy pinty."
     },
@@ -472,7 +472,7 @@
     "expansionRises": "Obliczona rozszerzalność cieplna rośnie z {was} do {now}.",
     "expansionRisesProbably": "Jeśli dawne szkliwo ledwo pasowało do masy, to nowe prawdopodobnie będzie mieć pęknięcia włoskowate, czasem po kilku tygodniach.",
     "expansionRisesMay": "Jeśli dawne szkliwo ledwo pasowało do masy, to nowe może mieć pęknięcia włoskowate, czasem po kilku tygodniach.",
-    "expansionRisesFix": "Pęknięcia włoskowate osłabiają naczynia i nie są zalecane na powierzchniach stykających się z żywnością. Rozszerzalność obniża zastąpienie części sodu i potasu topnikami o mniejszej rozszerzalności (bor, lit, magnez lub wapń); czasem sugeruje się dodanie krzemionki, ale źródła nie są zgodne.",
+    "expansionRisesFix": "Pęknięcia włoskowate osłabiają naczynia i nie zaleca się ich na powierzchniach mających kontakt z żywnością. Zastąpienie części sody i potażu topnikami o mniejszej rozszerzalności (borem, litem, magnezem lub wapniem) zmniejsza rozszerzalność cieplną; czasem proponuje się dodanie krzemionki, ale źródła nie są w tym zgodne.",
     "expansionFalls": "Obliczona rozszerzalność cieplna spada z {was} do {now}. Nieco niższa zwykle lepiej zapobiega pęknięciom włoskowatym.",
     "expansionFallsProbably": "Znacznie niższa prawdopodobnie spowoduje odpryskiwanie szkliwa: ostre płatki odpadną z obrzeży i krawędzi.",
     "expansionFallsCan": "Znacznie niższa może powodować odpryskiwanie szkliwa: ostre płatki odpadają z obrzeży i krawędzi.",
@@ -598,6 +598,36 @@
     "firingFromBlock": "Z wypału receptury ({bands})",
     "bothBands": "Wypał receptury obejmuje {bands}, więc każdy z nich jest sprawdzany, obok siebie: szkliwo rzadko zachowuje się tak samo na obu końcach.",
     "fromFiring": "Wartości dotyczą wypału receptury: {band}. Aby sprawdzić inny, należy wybrać wypał powyżej."
+  },
+  "coneFit": {
+    "cooler": "Chemia tego szkliwa bardziej przypomina szkliwo {looksLike, select, low {niskotemperaturowe} other {średniotemperaturowe}} niż szkliwo dla {scale, select, band {{band, select, low {niskiego wypału} mid {średniego wypału} other {wysokiego wypału}}} sk {SK {cone}} temperature {{cone} °C} other {stożka {cone}}}.",
+    "coolerSoft": "Chemia tego szkliwa wskazuje na chłodniejszy wypał niż przy {scale, select, band {{band, select, low {niskim wypale} mid {średnim wypale} other {wysokim wypale}}} sk {SK {cone}} temperature {{cone} °C} other {stożku {cone}}}, bliższy stożkowi 6, choć sama chemia pozwala odróżnić szkliwa na stożek 6 od szkliw na stożek 10 tylko z grubsza.",
+    "hotter": "Chemia tego szkliwa bardziej przypomina szkliwo {looksLike, select, high {wysokotemperaturowe} other {średniotemperaturowe}} niż szkliwo dla {scale, select, band {{band, select, low {niskiego wypału} mid {średniego wypału} other {wysokiego wypału}}} sk {SK {cone}} temperature {{cone} °C} other {stożka {cone}}}.",
+    "hotterSoft": "Chemia tego szkliwa wskazuje na gorętszy wypał niż przy {scale, select, band {{band, select, low {niskim wypale} mid {średnim wypale} other {wysokim wypale}}} sk {SK {cone}} temperature {{cone} °C} other {stożku {cone}}}, bliższy stożkowi 10, choć sama chemia pozwala odróżnić szkliwa na stożek 6 od szkliw na stożek 10 tylko z grubsza.",
+    "closer": "W podanym zakresie chemia tego szkliwa wydaje się bliższa końcowi odpowiadającemu {scale, select, band {{band, select, low {niskiemu wypałowi} mid {średniemu wypałowi} other {wysokiemu wypałowi}}} sk {SK {cone}} temperature {{cone} °C} other {stożkowi {cone}}}.",
+    "coolerSilica": "Zawiera więcej boru ({boron}), niż zwykle potrzeba szkliwom przy {scale, select, band {{band, select, low {niskim wypale} mid {średnim wypale} other {wysokim wypale}}} sk {SK {cone}} temperature {{cone} °C} other {stożku {cone}}}, a mniej krzemionki ({silica}), niż zwykle mają.",
+    "coolerAlumina": "Zawiera więcej boru ({boron}), niż zwykle potrzeba szkliwom przy {scale, select, band {{band, select, low {niskim wypale} mid {średnim wypale} other {wysokim wypale}}} sk {SK {cone}} temperature {{cone} °C} other {stożku {cone}}}, a mało tlenku glinu ({alumina}).",
+    "coolerBoth": "Zawiera więcej boru ({boron}), niż zwykle potrzeba szkliwom przy {scale, select, band {{band, select, low {niskim wypale} mid {średnim wypale} other {wysokim wypale}}} sk {SK {cone}} temperature {{cone} °C} other {stożku {cone}}}, a mniej krzemionki ({silica}) i tlenku glinu ({alumina}), niż zwykle mają.",
+    "hotterSilica": "Zawiera mało boru ({boron}) jak na {scale, select, band {{band, select, low {niski wypał} mid {średni wypał} other {wysoki wypał}}} sk {SK {cone}} temperature {{cone} °C} other {stożek {cone}}}, a więcej krzemionki ({silica}), niż zwykle mają szkliwa przy tym wypale.",
+    "coolerEffect": "Przy tym wypale może spływać lub przetopić się zbyt mocno: najpierw należy wypalić płytkę testową na podstawce wychwytującej spływy.",
+    "hotterEffect": "Przy tym wypale może wyjść niedopalone: suche, szorstkie lub niecałkowicie szczelne. Należy wypalić je na próbę, zanim zostanie użyte na naczyniach, a zwłaszcza zanim zostanie użyte tam, gdzie będzie miało kontakt z jedzeniem lub piciem.",
+    "hotterEffectSoft": "Niektóre szkliwa topią się przy tym wypale bez boru, więc to tylko wskazówka: na płytce testowej należy sprawdzić, czy szkliwo topi się całkowicie.",
+    "gerstley": "Część jego boru pochodzi z Gerstley Borate, który różni się między partiami, więc ta wartość jest mniej pewna.",
+    "guide": "To porównuje chemię z opublikowanymi wartościami: jest wskazówką, a nie testem. Jeśli szkliwo dobrze wypaliło się przy tym stożku, należy zaufać własnym płytkom.",
+    "fits": "Jego bor, krzemionka i tlenek glinu nie odbiegają od {scale, select, band {{band, select, low {niskiego wypału} mid {średniego wypału} other {wysokiego wypału}}} sk {SK {cone}} temperature {{cone} °C} other {stożka {cone}}}. To wskazówka, a nie test: nie mówi nic o tym, czy szkliwo jest stabilne lub bezpieczne w kontakcie z żywnością.",
+    "sources": "Źródła:",
+    "skip": {
+      "lead": "Glazecalc nie może porównać chemii tego szkliwa z jego wypałem: duża część jego stopu pochodzi z ołowiu, którego opublikowane wartości używane w tej kontroli nie obejmują.",
+      "lithium": "Glazecalc nie może porównać chemii tego szkliwa z jego wypałem: duża część jego stopu pochodzi z litu, którego opublikowane wartości używane w tej kontroli nie obejmują.",
+      "alkali": "Glazecalc nie może porównać chemii tego szkliwa z jego wypałem: duża część jego stopu pochodzi z sody i potażu, których opublikowane wartości używane w tej kontroli nie obejmują.",
+      "zinc": "Glazecalc nie może porównać chemii tego szkliwa z jego wypałem: zawiera dużo cynku, jak szkliwa krystaliczne, czego opublikowane wartości używane w tej kontroli nie obejmują.",
+      "notGlaze": "Glazecalc nie może porównać chemii tego szkliwa z jego wypałem: jego wzór nie jest wzorem zwykłego szkliwa (bardzo mało lub bardzo dużo krzemionki albo dużo tlenków barwiących), więc opublikowane wartości używane w tej kontroli do niego nie pasują.",
+      "process": "Glazecalc nie może porównać chemii tego szkliwa z jego wypałem: jest przeznaczone do wypału {process, select, raku {raku} salt {solnego} soda {sodowego} wood {drewnem} other {w dole}}, w którym piec robi część szkliwienia, czego opublikowane wartości używane w tej kontroli nie obejmują.",
+      "ash": "Glazecalc nie może porównać chemii tego szkliwa z jego wypałem: zawiera popiół, którego skład zbyt się zmienia dla opublikowanych wartości używanych w tej kontroli.",
+      "noTemperature": "Glazecalc nie może porównać chemii tego szkliwa {scale, select, band {{band, select, low {z niskim wypałem} mid {ze średnim wypałem} other {z wysokim wypałem}}} sk {z SK {cone}} temperature {z {cone} °C} other {ze stożkiem {cone}}}: dla tego stożka nie ma zmierzonej temperatury.",
+      "between": "Glazecalc nie może porównać chemii tego szkliwa {scale, select, band {{band, select, low {z niskim wypałem} mid {ze średnim wypałem} other {z wysokim wypałem}}} sk {z SK {cone}} temperature {z {cone} °C} other {ze stożkiem {cone}}}: opublikowane wartości używane w tej kontroli dotyczą niskiego wypału oraz średniego i wysokiego wypału, a nie stożków pośrednich (od 01 do 3).",
+      "belowChart": "Glazecalc nie może porównać chemii tego szkliwa {scale, select, band {{band, select, low {z niskim wypałem} mid {ze średnim wypałem} other {z wysokim wypałem}}} sk {z SK {cone}} temperature {z {cone} °C} other {ze stożkiem {cone}}}: reguła boru Katza dotyczy stożków od 06 do 10, a ten wypał jest chłodniejszy."
+    }
   },
   "stull": {
     "heading": "Wykres Stulla",
@@ -904,7 +934,7 @@
     "foodSurface": "Dla powierzchni mającej kontakt z żywnością (szkliwo do wnętrza naczyń)",
     "liner": {
       "note": "Bezpieczeństwo w kontakcie z żywnością zależy od wypalenia tego szkliwa do stożka, przy którym je testowano: niedopalone szkliwo może uwalniać metale.",
-      "range": "Podano je dla zakresu, więc należy je testować na dolnym końcu zakresu, gdzie topi się najsłabiej.",
+      "range": "Wypał tego szkliwa jest podany jako zakres, więc należy je przetestować na dolnym końcu zakresu, gdzie topi się najmniej.",
       "untested": "Żaden stożek nie jest jeszcze oznaczony jako testowany.",
       "test": "Tylko badanie uwalniania metali z własnych wypalonych naczyń pokazuje, czy szkliwo jest bezpieczne dla żywności."
     },
@@ -967,5 +997,23 @@
     "replaceAsk": "W polu Testowano przy zaznaczono {now}. Zastąpić stożkami wymienionymi w dziennikach, {logs}?",
     "replace": "Zastąp",
     "keep": "Zostaw bez zmian"
+  },
+  "coneCards": {
+    "heading": "Wyniki według stożków",
+    "unplaced": "Nieprzypisane do stożka",
+    "unplacedNote": "Te dzienniki wypałów nie są jeszcze przypisane do stożka: należy wybrać, przy którym został wykonany każdy wypał.",
+    "approx": "≈ {temperature}",
+    "cautions": "{count, plural, =0 {brak ostrzeżeń o limitach} one {# ostrzeżenie o limicie} few {# ostrzeżenia o limitach} many {# ostrzeżeń o limitach} other {# ostrzeżenia o limitach}}",
+    "logs": "{count, plural, =0 {brak dzienników wypałów} one {# dziennik wypału} few {# dzienniki wypałów} many {# dzienników wypałów} other {# dziennika wypałów}}",
+    "outside": "poza podanym wypałem",
+    "outsideChoice": "{place} (poza podanym wypałem)",
+    "summaryLabel": "Jak wyszło przy: {place}",
+    "summaryPlaceholder": "Powierzchnia, kolor, spływy, pęknięcia włoskowate...",
+    "noAtmosphere": "nie podano atmosfery",
+    "placeLabel": "Gdzie wypalono: {title}",
+    "notPlaced": "Nieprzypisane",
+    "add": "Dodaj wynik dla",
+    "addButton": "Dodaj",
+    "saveFailed": "Nie udało się zapisać, gdzie wypalono ten dziennik wypału."
   }
 }

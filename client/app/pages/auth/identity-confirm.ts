@@ -44,7 +44,7 @@ export const passkeyNameCheck =
  * account page's own changes (the email, the password, deleting) can show one
  * while the two-step sign-in section shows another.
  *
- * An account with no password of its own (made with Google or GitHub)
+ * An account with no password of its own (made with Google, GitHub or Microsoft)
  * confirms with a fresh sign-in with one of its providers instead
  * (docs/adr/0015-provider-sign-in.md): its buttons go to the provider, which
  * sends the browser back to the account page; AuthService.reauth then holds

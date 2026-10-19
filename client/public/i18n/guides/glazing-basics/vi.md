@@ -489,5 +489,5 @@ Whiting
 - [Glendale Community College: Glaze color](https://gcc.glendale.edu/ceramics/glazecolor.html)
 - [Potclays: The difference between stoneware and earthenware](https://www.potclays.co.uk/clay-questions/difference-stoneware-earthenware)
 - [US FDA: Compliance Policy Guide Sec. 545.450, Pottery (ceramics), lead contamination](https://www.fda.gov/media/71764/download)
-- [EUR-Lex: Council Directive 84/500/EEC on ceramic articles in contact with food](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:31984L0500)
+- [EUR-Lex: Chỉ thị 84/500/EEC của Hội đồng ngày 15 tháng 10 năm 1984 về việc xích gần luật pháp của các quốc gia thành viên liên quan đến đồ gốm sứ dự định tiếp xúc với thực phẩm](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:31984L0500)
 - [eCFR: 21 CFR 109.16, Ornamental and decorative ceramicware](https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-109/subpart-A/section-109.16)

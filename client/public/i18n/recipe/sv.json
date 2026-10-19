@@ -272,7 +272,7 @@
     "numbers": {
       "heading": "Läs analysen och gränserna",
       "analysis": "<b>Analys och gränser</b>, under receptet, visar varje oxids mol, mol-% och viktprocent efter bränning, glödförlusten och den beräknade värmeutvidgningen, en uppskattning för att jämföra glasyrer.",
-      "limits": "<b>Gränser</b> ställer Segerformeln mot en gränsuppsättning: Hesselberth & Roys gränser för stabila glasyrer, om inte Glazecalcs egna väljs (valet sparas med inställningarna). Välj <b>Bränning</b> för att kontrollera mot rätt siffror; den sparas med receptet. Hesselberth & Roys siffror gäller kägla 6 och kägla 10, så vid låg temperatur står det att de inte gäller. De är riktlinjer, inget betyg i form av godkänt eller underkänt.",
+      "limits": "<b>Gränserna</b> sätter Segerformeln mot en gränsuppsättning: Hesselberths och Roys gränser för stabila glasyrer, om du inte väljer Glazecalcs egen (valet sparas med dina inställningar). De kontrollerar det bränningsintervall som receptets <b>Bränning</b> anger: dess kägla eller dess spann. Ett spann som sträcker sig över flera intervall, som kägla 6 till 10, visar kontrollerna för båda intervallen sida vid sida. För att kontrollera bara ett intervall väljer du det i gränsernas egen ruta <b>Bränning</b>, som går före receptets bränning och sparas med receptet. Hesselberths och Roys siffror gäller kägla 6 och kägla 10, så vid låg temperatur säger gränserna att de inte gäller. De är riktlinjer, inte godkänt eller underkänt. Överst jämför en rad glasyrens bor, kiseldioxid och aluminiumoxid med dess bränning, enligt Katz boregel och Hesselberths och Roys siffror, vilken gränsuppsättning du än väljer: den ger en notering bara när de är överens om att glasyren liknar en annan bränning, säger när den inte kan bedöma (bly, litium, raku och liknande) och är en vägledning, inte ett test.",
       "stull": "<b>Stull-diagrammet</b> ritar glasyrens kiseldioxid mot dess aluminiumoxid, med Stulls matta, halvmatta och blanka områden och gränsuppsättningens intervall. Det är en vägledning för ytan, inte en förutsägelse.",
       "slurry": "<b>Specifik vikt och vatten</b> använder Brongniarts formel: väg en uppmätt volym av glasyren, och se sedan den torra glasyren i hinken, vattnet som för den till önskad specifik vikt, eller vattnet för en ny sats. Densiteterna följer inställningen för specifik vikt, baumégrader eller pintvikt."
     },
@@ -472,7 +472,7 @@
     "expansionRises": "Den beräknade utvidgningen stiger från {was} till {now}.",
     "expansionRisesProbably": "Om den gamla glasyren passade nätt och jämnt till leran kommer den här troligen att krackelera, ibland veckor senare.",
     "expansionRisesMay": "Om den gamla glasyren passade nätt och jämnt till leran kan den här krackelera, ibland veckor senare.",
-    "expansionRisesFix": "Krackelering försvagar föremålen och rekommenderas inte på ytor som kommer i kontakt med mat. Om man byter ut en del av natriumet och kaliumet mot flussmedel med lägre utvidgning (bor, litium, magnesium eller kalcium) sänks den; att tillsätta kiseldioxid föreslås ibland, men källorna är oeniga.",
+    "expansionRisesFix": "Krackelering försvagar kärlen och avråds på ytor som kommer i kontakt med livsmedel. Att byta ut en del soda och pottaska mot flussmedel med lägre utvidgning (bor, litium, magnesium eller kalcium) sänker den termiska utvidgningen; ibland föreslås tillsats av kiseldioxid, men källorna är inte överens.",
     "expansionFalls": "Den beräknade utvidgningen sjunker från {was} till {now}. Något lägre brukar stå emot krackelering bättre.",
     "expansionFallsProbably": "Mycket lägre leder troligen till avskalning, med vassa flagor från mynningar och kanter.",
     "expansionFallsCan": "Mycket lägre kan leda till avskalning, med vassa flagor från mynningar och kanter.",
@@ -598,6 +598,36 @@
     "firingFromBlock": "Från receptets bränning ({bands})",
     "bothBands": "Receptets bränning omfattar {bands}, så var och en kontrolleras, sida vid sida: en glasyr beter sig sällan likadant i båda ändar.",
     "fromFiring": "Siffrorna gäller receptets bränning: {band}. Välj en bränning ovan för att kontrollera en annan."
+  },
+  "coneFit": {
+    "cooler": "Den här glasyrens kemi liknar mer en glasyr för {looksLike, select, low {låg temperatur} other {mellantemperatur}} än en för {scale, select, band {{band, select, low {låg temperatur} mid {mellantemperatur} other {hög temperatur}}} sk {SK {cone}} temperature {{cone} °C} other {kägla {cone}}}.",
+    "coolerSoft": "Den här glasyrens kemi lutar mot en svalare bränning än {scale, select, band {{band, select, low {låg temperatur} mid {mellantemperatur} other {hög temperatur}}} sk {SK {cone}} temperature {{cone} °C} other {kägla {cone}}}, närmare kägla 6, men enbart kemin skiljer glasyrer för kägla 6 och kägla 10 åt bara ungefärligt.",
+    "hotter": "Den här glasyrens kemi liknar mer en glasyr för {looksLike, select, high {hög temperatur} other {mellantemperatur}} än en för {scale, select, band {{band, select, low {låg temperatur} mid {mellantemperatur} other {hög temperatur}}} sk {SK {cone}} temperature {{cone} °C} other {kägla {cone}}}.",
+    "hotterSoft": "Den här glasyrens kemi lutar mot en hetare bränning än {scale, select, band {{band, select, low {låg temperatur} mid {mellantemperatur} other {hög temperatur}}} sk {SK {cone}} temperature {{cone} °C} other {kägla {cone}}}, närmare kägla 10, men enbart kemin skiljer glasyrer för kägla 6 och kägla 10 åt bara ungefärligt.",
+    "closer": "Av det spann den är angiven för verkar den här glasyrens kemi ligga närmare änden för {scale, select, band {{band, select, low {låg temperatur} mid {mellantemperatur} other {hög temperatur}}} sk {SK {cone}} temperature {{cone} °C} other {kägla {cone}}}.",
+    "coolerSilica": "Den har mer bor ({boron}) än glasyrer vid {scale, select, band {{band, select, low {låg temperatur} mid {mellantemperatur} other {hög temperatur}}} sk {SK {cone}} temperature {{cone} °C} other {kägla {cone}}} vanligen behöver, och mindre kiseldioxid ({silica}) än de vanligen har.",
+    "coolerAlumina": "Den har mer bor ({boron}) än glasyrer vid {scale, select, band {{band, select, low {låg temperatur} mid {mellantemperatur} other {hög temperatur}}} sk {SK {cone}} temperature {{cone} °C} other {kägla {cone}}} vanligen behöver, och lite aluminiumoxid ({alumina}).",
+    "coolerBoth": "Den har mer bor ({boron}) än glasyrer vid {scale, select, band {{band, select, low {låg temperatur} mid {mellantemperatur} other {hög temperatur}}} sk {SK {cone}} temperature {{cone} °C} other {kägla {cone}}} vanligen behöver, och mindre kiseldioxid ({silica}) och aluminiumoxid ({alumina}) än de vanligen har.",
+    "hotterSilica": "Den har lite bor ({boron}) för {scale, select, band {{band, select, low {låg temperatur} mid {mellantemperatur} other {hög temperatur}}} sk {SK {cone}} temperature {{cone} °C} other {kägla {cone}}}, och mer kiseldioxid ({silica}) än glasyrer vid den bränningen vanligen har.",
+    "coolerEffect": "Vid den bränningen kan den rinna eller smälta för mycket: bränn först en provplatta på ett uppsamlingsfat.",
+    "hotterEffect": "Vid den bränningen kan den bli underbränd: torr, sträv eller inte helt tät. Provbränn den innan du använder den på kärl, och framför allt innan du använder den där mat eller dryck kommer i kontakt med den.",
+    "hotterEffectSoft": "Vissa glasyrer smälter vid den bränningen utan bor, så det här är bara en vink: kontrollera på en provplatta att den smälter helt.",
+    "gerstley": "En del av dess bor kommer från Gerstley-borat, som varierar från sats till sats, så den siffran är mindre säker.",
+    "guide": "Det här jämför kemin med publicerade siffror: det är en vägledning, inte ett test. Om glasyren har bränts bra för dig vid den här käglan, lita på dina provplattor.",
+    "fits": "Dess bor, kiseldioxid och aluminiumoxid pekar inte mot en annan bränning än {scale, select, band {{band, select, low {låg temperatur} mid {mellantemperatur} other {hög temperatur}}} sk {SK {cone}} temperature {{cone} °C} other {kägla {cone}}}. Det här är en vägledning, inte ett test: det säger ingenting om huruvida glasyren är stabil eller livsmedelssäker.",
+    "sources": "Källor:",
+    "skip": {
+      "lead": "Glazecalc kan inte jämföra den här glasyrens kemi med dess bränning: en stor del av dess smälta kommer från bly, som de publicerade siffrorna som den här kontrollen använder inte täcker.",
+      "lithium": "Glazecalc kan inte jämföra den här glasyrens kemi med dess bränning: en stor del av dess smälta kommer från litium, som de publicerade siffrorna som den här kontrollen använder inte täcker.",
+      "alkali": "Glazecalc kan inte jämföra den här glasyrens kemi med dess bränning: en stor del av dess smälta kommer från soda och pottaska, som de publicerade siffrorna som den här kontrollen använder inte täcker.",
+      "zinc": "Glazecalc kan inte jämföra den här glasyrens kemi med dess bränning: den har mycket zink, som kristallglasyrer har, vilket de publicerade siffrorna som den här kontrollen använder inte täcker.",
+      "notGlaze": "Glazecalc kan inte jämföra den här glasyrens kemi med dess bränning: dess formel är inte en vanlig glasyrs (mycket lite eller mycket kiseldioxid, eller mycket färgande oxider), så de publicerade siffrorna som den här kontrollen använder passar inte.",
+      "process": "Glazecalc kan inte jämföra den här glasyrens kemi med dess bränning: den är för en {process, select, raku {raku-bränning} salt {saltbränning} soda {sodabränning} wood {vedbränning} other {gropbränning}}, där ugnen sköter en del av glaseringen, vilket de publicerade siffrorna som den här kontrollen använder inte täcker.",
+      "ash": "Glazecalc kan inte jämföra den här glasyrens kemi med dess bränning: den innehåller aska, vars sammansättning varierar för mycket för de publicerade siffrorna som den här kontrollen använder.",
+      "noTemperature": "Glazecalc kan inte jämföra den här glasyrens kemi med {scale, select, band {{band, select, low {låg temperatur} mid {mellantemperatur} other {hög temperatur}}} sk {SK {cone}} temperature {{cone} °C} other {kägla {cone}}}: det finns ingen uppmätt temperatur för den käglan.",
+      "between": "Glazecalc kan inte jämföra den här glasyrens kemi med {scale, select, band {{band, select, low {låg temperatur} mid {mellantemperatur} other {hög temperatur}}} sk {SK {cone}} temperature {{cone} °C} other {kägla {cone}}}: de publicerade siffrorna som den här kontrollen använder gäller låg temperatur och mellan- och hög temperatur, inte käglorna däremellan (01 till 3).",
+      "belowChart": "Glazecalc kan inte jämföra den här glasyrens kemi med {scale, select, band {{band, select, low {låg temperatur} mid {mellantemperatur} other {hög temperatur}}} sk {SK {cone}} temperature {{cone} °C} other {kägla {cone}}}: Katz boregel gäller kägla 06 till kägla 10, och den bränningen är svalare."
+    }
   },
   "stull": {
     "heading": "Stull-diagram",
@@ -904,7 +934,7 @@
     "foodSurface": "För en yta som kommer i kontakt med mat (en insidesglasyr)",
     "liner": {
       "note": "Livsmedelssäkerheten beror på att den här glasyren bränns till den kägla den testades vid: en underbränd glasyr kan avge metaller.",
-      "range": "Den anges för ett intervall, så testa den vid intervallets nedre ände, där den smälter minst.",
+      "range": "Den här glasyrens bränning anges som ett spann, så prova den i spannets nedre ände, där den smälter minst.",
       "untested": "Ingen kägla är ännu markerad som testad.",
       "test": "Bara ett test av metallavgivningen från egna brända föremål visar om den är livsmedelssäker."
     },
@@ -967,5 +997,23 @@
     "replaceAsk": "Under Testad vid är {now} markerat. Ersätt det med de käglor som loggarna nämner, {logs}?",
     "replace": "Ersätt",
     "keep": "Behåll som det är"
+  },
+  "coneCards": {
+    "heading": "Resultat per kägla",
+    "unplaced": "Inte placerade vid en kägla",
+    "unplacedNote": "De här brännloggarna är ännu inte placerade vid en kägla: välj var var och en brändes.",
+    "approx": "≈ {temperature}",
+    "cautions": "{count, plural, =0 {inga gränsvarningar} one {# gränsvarning} other {# gränsvarningar}}",
+    "logs": "{count, plural, =0 {inga brännloggar} one {# brännlogg} other {# brännloggar}}",
+    "outside": "utanför den angivna bränningen",
+    "outsideChoice": "{place} (utanför den angivna bränningen)",
+    "summaryLabel": "Hur det blev vid {place}",
+    "summaryPlaceholder": "Yta, färg, rinningar, krackelering...",
+    "noAtmosphere": "atmosfär inte angiven",
+    "placeLabel": "Var {title} brändes",
+    "notPlaced": "Inte placerad",
+    "add": "Lägg till ett resultat för",
+    "addButton": "Lägg till",
+    "saveFailed": "Det gick inte att spara var brännloggen brändes."
   }
 }

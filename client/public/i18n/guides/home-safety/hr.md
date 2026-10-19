@@ -167,7 +167,7 @@ Rio Grande preporučuje **zaseban strujni krug** (na koji nije priključeno niš
 
 ### Budite prisutni kad pečenje završi
 
-**Kiln-Sitter** je mehanička sklopka na mnogim pećima s ručnim upravljanjem: na kraju pečenja savije se mali stožac{{en: cone}} i sklopka isključi peć. U njegovim uputama za uporabu piše da „NIJE namijenjen da služi kao uređaj za isključivanje siguran u slučaju kvara”. Rio Grande kaže da peć u radu nikad ne treba ostavljati bez nadzora, „osobito u vrijeme kad se očekuje isključivanje”. Zato tijekom pečenja ostanite u blizini i provjeravajte peć, prije svega pred kraj; pecite samo kad će kod kuće biti odrasla osoba koja će biti budna da ostane u blizini i provjerava peć, provjerite je li se peć isključila i držite u prostoriji s peći aparat za gašenje požara ABC. Kako rade Kiln-Sitteri, regulatori i programi pečenja, pogledajte u vodiču [Pečenje u jednostavnoj peći](/guides/firing).
+**Kiln-Sitter** je mehanička sklopka na mnogim pećima s ručnim upravljanjem: na kraju pečenja savije se mali stožac{{en: cone}} i sklopka isključi peć. U njegovim uputama za uporabu piše da „NIJE namijenjen da služi kao uređaj za isključivanje siguran u slučaju kvara”. Rio Grande kaže da peć u radu nikad ne treba ostavljati bez nadzora, „osobito u vrijeme kad se očekuje isključivanje”. Zato tijekom pečenja ostanite u blizini i provjeravajte peć, prije svega pred kraj; pecite samo kad će kod kuće biti odrasla osoba koja će biti budna tijekom cijelog pečenja, provjerite je li se peć isključila i držite u prostoriji s peći aparat za gašenje požara ABC. Kako rade Kiln-Sitteri, regulatori i programi pečenja, pogledajte u vodiču [Pečenje u jednostavnoj peći](/guides/firing).
 
 ### Plinovi, pare i ugljikov monoksid
 

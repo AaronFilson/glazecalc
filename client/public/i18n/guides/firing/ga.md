@@ -199,11 +199,11 @@ Tá **lasc ama** ar go leor Kiln-Sitter, samhlacha LT Dawson ina measc: clog a m
 Table: Cá fhad a shocrófar an lasc ama
 Label: Socruithe na laisce ama
 
-| Foinse    | Socrú                                                                                                                                                                                                 |
-| --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Dawson    | ½ uair an chloig níos faide ná an t-am bácála a bhfuiltear ag súil leis go dtí go mbeidh aithne agat ar an áith, níos déanaí chomh beag le ¼ uair an chloig; ná socraigh thar 20 uair an chloig riamh |
-| L&L       | An-ard an chéad uair, agus nóta á dhéanamh agat den fhad a thógann an bhácáil; ina dhiaidh sin, thart ar 1 uair an chloig níos faide                                                                  |
-| Bracker's | 30 nóiméad go 1 uair an chloig níos faide ná an t-am bácála                                                                                                                                           |
+| Foinse    | Socrú                                                                                                                                                                                              |
+| --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Dawson    | ½ uair an chloig níos faide ná an t-am bácála a bhfuiltear ag súil leis go dtí go mbeidh aithne agat ar an áith, níos déanaí ¼ uair an chloig níos faide; ná socraigh thar 20 uair an chloig riamh |
+| L&L       | An-ard an chéad uair, agus nóta á dhéanamh agat den fhad a thógann an bhácáil; ina dhiaidh sin, thart ar 1 uair an chloig níos faide                                                               |
+| Bracker's | 30 nóiméad go 1 uair an chloig níos faide ná an t-am bácála                                                                                                                                        |
 
 > [!NOTE]
 > Ár bpointe tosaigh: go fial an chéad uair (laistigh de 20 uair an chloig an diail), ansin ½ go 1 uair an chloig níos faide ná an t-am a thaifead tú. Insíonn an lasc ama duit freisin cé chomh fada a mhair bácáil: má socraíodh ar 7 í agus má chríochnaigh sí ar 1, ciallaíonn sé sin 6 huaire an chloig.
@@ -352,11 +352,11 @@ Label: Cairt SK
 | SK 19   |   {{2768 °F; 1520 °C}} |
 | SK 20   |   {{2786 °F; 1530 °C}} |
 
-Is ainmniúil (JIS) gach figiúr: an teocht a thugann an caighdeán don chón, mar atá clóite i dtábla Yuko Trading. Ní thugann an tábla ráta téimh. Tugann an caighdeán teochtaí tagartha. Ag ráta téimh potadóra de thart ar 100 °C/h, thomhais institiúid bhardasach Kyoto a cóin Kyoto féin ag lúbadh 40–70 °C níos fuaire ná figiúr JIS na huimhreach céanna; níor aimsíomar a leithéid de thomhais do chóin SK de réir JIS. Cuir cón fianaise isteach agus déan comparáid.
+Is ainmniúil (JIS) gach figiúr: an teocht a thugann an caighdeán don chón, mar atá clóite i dtábla Yuko Trading. Ní thugann an tábla ráta téimh. Tugann an caighdeán teochtaí tagartha. Ag ráta téimh potadóra de thart ar 100 °C/h, thomhais institiúid bhardasach Kyoto a cóin Kyoto féin ag lúbadh 47–79 °C níos fuaire ná figiúr JIS na huimhreach céanna; níor aimsíomar a leithéid de thomhais do chóin SK de réir JIS. Cuir cón fianaise isteach agus déan comparáid.
 
 ### Cóin Kyoto
 
-Rinne institiúid bhardasach Kyoto cóin Kyoto (京都ゼーゲル), ach ní dhéantar a thuilleadh iad: deir tuairiscí nuachta gur stop an institiúid á ndéanamh ag deireadh bhliain fhioscach 2009. Tá na huimhreacha céanna orthu agus atá ar chóin SK de réir JIS, ach lúbann siad níos fuaire: den chuid is mó, lúbann cón Kyoto ag thart ar theocht an chóin SK de réir JIS atá dhá uimhir níos fuaire. D’fhéadfadh cón Kyoto a bheith i gceist le hoideas ó Kyoto a deir “SK 8”. D’fhoilsigh an institiúid comhairle do photadóirí atá ag aistriú ó chóin Kyoto go cóin Orton, agus cuireann sí cón Orton 10 in áit a cóin Kyoto SK 12 féin; is é sin rogha na hinstitiúide óna tomhais féin ag 100 °C/h, agus ní bhaineann sé le haon chón eile.
+Rinne institiúid bhardasach Kyoto cóin Kyoto (京都ゼーゲル), ach ní dhéantar a thuilleadh iad: deir tuairiscí nuachta gur stop an institiúid á ndéanamh ag deireadh bhliain fhioscach 2009. Tá na huimhreacha céanna orthu agus atá ar chóin SK de réir JIS, ach lúbann siad níos fuaire: lúbann cón Kyoto ag thart ar theocht an chóin SK de réir JIS atá dhá nó trí huimhir níos fuaire. D’fhéadfadh cón Kyoto a bheith i gceist le hoideas ó Kyoto a deir “SK 8”. D’fhoilsigh an institiúid comhairle do photadóirí atá ag aistriú ó chóin Kyoto go cóin Orton, agus cuireann sí cón Orton 10 in áit a cóin Kyoto SK 12 féin; is é sin rogha na hinstitiúide óna tomhais féin ag 100 °C/h, agus ní bhaineann sé le haon chón eile.
 
 ### Cóin Orton a dhíoltar sa tSeapáin
 

@@ -3,6 +3,7 @@ import { api, expect, makeUser, sessionToken } from './support/app.ts';
 import User from '../models/user.ts';
 import Note from '../models/note.ts';
 import Recipe from '../models/recipe.ts';
+import { ACCOUNT_RECORDS_MOST, accountRecords, type RecordModel } from '../lib/guest_limits.ts';
 import * as guestNames from '../lib/guest_names.ts';
 import * as sweeper from '../lib/guest_sweeper.ts';
 import * as mailer from '../lib/mailer.ts';
@@ -199,32 +200,56 @@ describe('trial accounts', () => {
     });
   });
 
-  it('caps the records an account keeps too, each kind on its own, but not by the trial cap', async () => {
+  it(`caps an account at ${ACCOUNT_RECORDS_MOST} records of every kind together, but not by the trial cap`, async () => {
     const { user, token } = await makeUser();
     const trial = await startTrial();
-    await withEnv('ACCOUNT_MAX_RECORDS', '2', async () => {
+    await withEnv('ACCOUNT_MAX_RECORDS', '3', async () => {
       const first = await addNote(token);
       expect(first).to.have.status(200);
       expect(await addNote(token)).to.have.status(200);
-      const third = await addNote(token);
-      expect(third).to.have.status(403);
-      expect(third.body).to.eql({
-        code: 'account-limit',
-        msg: 'An account can keep up to 2 notes. Please remove some to save more.',
-        params: { limit: 2, label: 'note' }
-      });
-      expect(await Note.countDocuments({ ownedBy: String(user._id) })).to.eql(2);
-      // Other kinds have their own count.
+      // Every kind counts toward the one cap.
       expect(await addRecipe(token)).to.have.status(200);
-      // A removed record makes room.
+      for (const refused of [await addNote(token), await addRecipe(token)]) {
+        expect(refused).to.have.status(403);
+        expect(refused.body).to.eql({
+          code: 'account-limit',
+          msg: 'An account can keep up to 3 records in all: recipes, materials, notes, firing logs and the rest together. Please remove some to save more.',
+          params: { limit: 3 }
+        });
+      }
+      expect(await Note.countDocuments({ ownedBy: String(user._id) })).to.eql(2);
+      // A removed record makes room, for any kind.
       const removed = await api()
         .delete('/notes/delete/' + (first.body as { _id: string })._id)
         .set('Authorization', 'Bearer ' + token);
       expect(removed).to.have.status(200);
-      expect(await addNote(token)).to.have.status(200);
+      expect(await addRecipe(token)).to.have.status(200);
+      expect(await addNote(token)).to.have.status(403);
       // A trial keeps its own cap.
       for (let i = 0; i < 3; i++) expect(await addNote(trial.token)).to.have.status(200);
     });
+  });
+
+  it('counts an account’s records on the owner index, and no further than the cap asks', async () => {
+    const { user } = await makeUser();
+    const ownedBy = String(user._id);
+    await Note.insertMany(
+      Array.from({ length: 4 }, () => ({
+        content: 'x',
+        relatedCollection: 'Notes',
+        relatedId: 'general notes',
+        ownedBy
+      }))
+    );
+    await Recipe.insertMany(Array.from({ length: 3 }, (_, i) => ({ title: 'R' + i, materials: [{}], ownedBy })));
+    expect(await accountRecords(ownedBy, 100)).to.equal(7);
+    expect(await accountRecords(ownedBy, 5)).to.equal(5);
+    expect(await accountRecords(ownedBy, 2)).to.equal(2);
+    // Each kind is counted on its { ownedBy, _id } index, never by reading the records.
+    for (const Model of [Note, Recipe] as RecordModel[]) {
+      const plan = JSON.stringify(await Model.find({ ownedBy }, { _id: 1 }).explain('queryPlanner'));
+      expect(plan).to.include('IXSCAN').and.include('ownedBy_1__id_1');
+    }
   });
 
   it('keeps the cap when many records are sent at the same moment', async () => {

@@ -211,7 +211,7 @@ Label: Wasser für ein spezifisches Gewicht
 
 **Glasurkleber CMC** (Carboxymethylcellulose) macht einen Glasurschlicker klebriger, lässt ihn langsamer trocknen und hinterlässt eine härtere Schicht, die am Stück haftet. Am wichtigsten ist er für Streichglasuren und Glasuren mit viel Fritte{{en: frit}}. Im Beispiel von Digitalfire werden 3,75 g in 1000 g Glasurschlicker eingemischt, und das muss mit einem Mixer geschehen. Eine Glasur mit CMC lässt sich mit Bittersalz nicht andicken, und weil Mikroben sich von dem Kleber ernähren, kann sie sich im Eimer verändern und anfangen zu riechen.
 
-**Bentonit**, ein sehr feiner Ton, hilft, die übrigen Teilchen in der Schwebe zu halten. Tauchglasuren verlassen sich dafür meist auf 15 bis 25 % rohen Ton. Bei einem Rezept mit wenig Ton helfen etwa 1 bis 3 % Bentonit; laut Digitalfire sollte eine Glasur mit mehr als 15 % Ton nicht mehr als 1 % brauchen.
+**Bentonit**, ein sehr feiner Ton, hilft, die übrigen Teilchen in der Schwebe zu halten. Tauchglasuren verlassen sich dafür meist auf 15 bis 25 % rohen Ton. Bei einem Rezept mit wenig Ton helfen etwa 1 bis 3 % Bentonit; laut Digitalfire sollte eine Glasur mit mehr als 15 % Ton nicht mehr als 1 % Bentonit vom Gewicht der trockenen Glasur brauchen.
 
 ## Probeplättchen und Testreihen {#testing}
 

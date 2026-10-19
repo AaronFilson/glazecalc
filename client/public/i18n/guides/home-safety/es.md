@@ -167,7 +167,7 @@ Rio Grande recomienda un **circuito independiente** (uno que no alimente nada m�
 
 ### Esté presente al final de la cocción
 
-Un **kiln sitter** es el interruptor mecánico de muchos hornos manuales: un cono{{en: cone}} pequeño se dobla al final de la cocción y hace saltar el interruptor. Su manual dice que «NO está pensado para funcionar como dispositivo de apagado a prueba de fallos». Rio Grande dice que nunca se deje sin vigilancia un horno que está cociendo, «sobre todo cerca de la hora prevista de apagado». Así que permanezca cerca y revise el horno mientras cuece, sobre todo hacia el final; cueza solo cuando vaya a haber un adulto en casa y despierto para permanecer cerca y revisarlo, compruebe que el horno se ha apagado y tenga un extintor ABC en la sala del horno. Para saber cómo funcionan los kiln sitters, los programadores y las curvas de cocción, vea [La cocción en un horno sencillo](/guides/firing).
+Un **kiln sitter** es el interruptor mecánico de muchos hornos manuales: un cono{{en: cone}} pequeño se dobla al final de la cocción y hace saltar el interruptor. Su manual dice que «NO está pensado para funcionar como dispositivo de apagado a prueba de fallos». Rio Grande dice que nunca se deje sin vigilancia un horno que está cociendo, «sobre todo cerca de la hora prevista de apagado». Así que permanezca cerca y revise el horno mientras cuece, sobre todo hacia el final; cueza solo cuando vaya a haber un adulto en casa y despierto durante toda la cocción, compruebe que el horno se ha apagado y tenga un extintor ABC en la sala del horno. Para saber cómo funcionan los kiln sitters, los programadores y las curvas de cocción, vea [La cocción en un horno sencillo](/guides/firing).
 
 ### Humos y monóxido de carbono
 

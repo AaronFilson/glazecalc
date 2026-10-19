@@ -199,11 +199,11 @@ Sok Kiln-Sitteren, köztük a Dawson LT modelljein, van **biztonsági időkapcso
 Table: Mennyi időre állítsa a biztonsági időkapcsolót
 Label: Időkapcsoló beállítása
 
-| Forrás    | Beállítás                                                                                                                                        |
-| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Dawson    | ½ órával hosszabb a várható égetési időnél, amíg nem ismeri a kemencét, később akár csak ¼ órával hosszabb; soha ne állítsa 20 óránál hosszabbra |
-| L&L       | Első alkalommal nagyon hosszú idő, az égetés időtartamát feljegyezve; utána körülbelül 1 órával hosszabb                                         |
-| Bracker’s | 30 perc és 1 óra közötti idővel hosszabb az égetési időnél                                                                                       |
+| Forrás    | Beállítás                                                                                                                              |
+| --------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| Dawson    | ½ órával hosszabb a várható égetési időnél, amíg nem ismeri a kemencét, később ¼ órával hosszabb; soha ne állítsa 20 óránál hosszabbra |
+| L&L       | Első alkalommal nagyon hosszú idő, az égetés időtartamát feljegyezve; utána körülbelül 1 órával hosszabb                               |
+| Bracker’s | 30 perc és 1 óra közötti idővel hosszabb az égetési időnél                                                                             |
 
 > [!NOTE]
 > Kiindulópontunk: először bőkezűen (a számlap 20 óráján belül), utána ½–1 órával hosszabbra, mint a feljegyzett idő. Az időkapcsoló azt is megmutatja, mennyi ideig tartott az égetés: ha 7-re állította, és 1-en állt meg, az 6 órát jelent.
@@ -352,11 +352,11 @@ Label: SK-táblázat
 | SK 19   |       {{2768 °F; 1520 °C}} |
 | SK 20   |       {{2786 °F; 1530 °C}} |
 
-Minden adat névleges (JIS): az a hőmérséklet, amelyet a szabvány az adott gúlára megad, ahogyan a Yuko Trading táblázata közli. A táblázat nem ad meg felfűtési sebességet. A szabvány viszonyítási hőmérsékleteket ad meg. Fazekasoknál szokásos, körülbelül 100 °C/h felfűtési sebesség mellett Kiotó városi intézete azt mérte, hogy a saját kiotói gúlái 40–70 °C-kal alacsonyabb hőmérsékleten hajlanak le, mint az azonos számhoz tartozó JIS-érték; a JIS szerinti SK-gúlákra nem találtunk ilyen méréseket. Állítson fel ellenőrző gúlát, és vesse össze.
+Minden adat névleges (JIS): az a hőmérséklet, amelyet a szabvány az adott gúlára megad, ahogyan a Yuko Trading táblázata közli. A táblázat nem ad meg felfűtési sebességet. A szabvány viszonyítási hőmérsékleteket ad meg. Fazekasoknál szokásos, körülbelül 100 °C/h felfűtési sebesség mellett Kiotó városi intézete azt mérte, hogy a saját kiotói gúlái 47–79 °C-kal alacsonyabb hőmérsékleten hajlanak le, mint az azonos számhoz tartozó JIS-érték; a JIS szerinti SK-gúlákra nem találtunk ilyen méréseket. Állítson fel ellenőrző gúlát, és vesse össze.
 
 ### Kiotói gúlák
 
-A kiotói gúlákat (京都ゼーゲル), amelyeket Kiotó városi intézete készített, már nem gyártják: hírek szerint az intézet a 2009-es pénzügyi év végén leállította a gyártásukat. Ugyanazokat a számokat viselik, mint a JIS szerinti SK-gúlák, de alacsonyabb hőmérsékleten hajlanak le: egy kiotói gúla többnyire nagyjából annak a JIS szerinti SK-gúlának a hőmérsékletén hajlik le, amelynek a száma kettővel alacsonyabb. Egy kiotói recept, amely „SK 8”-at ír, kiotói gúlát is jelenthet. Az intézet tanácsokat tett közzé azoknak a fazekasoknak, akik kiotói gúlákról Orton-gúlákra térnek át, és saját kiotói SK 12-es gúlája helyett a 10-es Orton-gúlát adja meg; ez az intézet saját választása, a saját, 100 °C/h mellett végzett mérései alapján, és semmilyen más gúlára nem vonatkozik.
+A kiotói gúlákat (京都ゼーゲル), amelyeket Kiotó városi intézete készített, már nem gyártják: hírek szerint az intézet a 2009-es pénzügyi év végén leállította a gyártásukat. Ugyanazokat a számokat viselik, mint a JIS szerinti SK-gúlák, de alacsonyabb hőmérsékleten hajlanak le: egy kiotói gúla nagyjából annak a JIS szerinti SK-gúlának a hőmérsékletén hajlik le, amelynek a száma kettővel vagy hárommal alacsonyabb. Egy kiotói recept, amely „SK 8”-at ír, kiotói gúlát is jelenthet. Az intézet tanácsokat tett közzé azoknak a fazekasoknak, akik kiotói gúlákról Orton-gúlákra térnek át, és saját kiotói SK 12-es gúlája helyett a 10-es Orton-gúlát adja meg; ez az intézet saját választása, a saját, 100 °C/h mellett végzett mérései alapján, és semmilyen más gúlára nem vonatkozik.
 
 ### Japánban árusított Orton-gúlák
 

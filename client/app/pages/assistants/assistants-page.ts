@@ -30,6 +30,12 @@ const TOKEN = 'YOUR_TOKEN';
     </section>
 
     <section class="panel">
+      <h2>{{ t('site.assistants.writeHeading') }}</h2>
+      <p>{{ t('site.assistants.write') }}</p>
+      <p>{{ t('site.assistants.writeSafely') }}</p>
+    </section>
+
+    <section class="panel">
       <h2>{{ t('site.assistants.addressHeading') }}</h2>
       <p>{{ t('site.assistants.address') }}</p>
       <ng-container

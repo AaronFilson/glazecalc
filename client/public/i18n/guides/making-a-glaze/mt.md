@@ -211,7 +211,7 @@ Il-**melħ Epsom** (sulfat tal-manjeżju) iġiegħel il-glejż jagħqad kemmxejn
 
 Il-**gomma CMC** (karbossimetilċelluloża) tagħmel il-glejż likwidu aktar iwaħħal u jdum aktar biex jinxef, u tħalli saff aktar iebes li jeħel mal-biċċa. L-aktar hija importanti għall-glejżijiet għall-pinzell u għal dawk b’ħafna fritta{{en: frit}}. L-eżempju ta’ Digitalfire jħallat 3.75 g f’1000 g ta’ glejż likwidu, u trid tiżdied bil-blender. Glejż bis-CMC ma jagħqadx bil-melħ Epsom, u peress li l-mikrobi jieklu l-gomma, jista’ jinbidel fil-barmil u jibda jinten.
 
-Il-**bentonit**, tafal fin ħafna, jgħin iżomm il-partiċelli l-oħra f’sospensjoni. Il-glejżijiet għall-għadis normalment jiddependu fuq 15 sa 25% tafal mhux moħmi għal dan. Għal riċetta li m’għandhiex biżżejjed tafal, madwar 1 sa 3% bentonit jgħin; Digitalfire tgħid li glejż b’aktar minn 15% tafal m’għandux ikollu bżonn aktar minn 1%.
+Il-**bentonit**, tafal fin ħafna, jgħin iżomm il-partiċelli l-oħra f’sospensjoni. Il-glejżijiet għall-għadis normalment jiddependu fuq 15 sa 25% tafal mhux moħmi għal dan. Għal riċetta li m’għandhiex biżżejjed tafal, madwar 1 sa 3% bentonit jgħin; Digitalfire tgħid li glejż b’aktar minn 15% tafal m’għandux ikollu bżonn aktar minn 1% bentonit mill-piż tal-glejż niexef.
 
 ## Madum tal-prova u sensiela ta’ provi {#testing}
 

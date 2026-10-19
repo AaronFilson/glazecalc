@@ -211,7 +211,7 @@ Label: Ūdens daudzums mērķa relatīvajam blīvumam
 
 **CMC** (karboksimetilceluloze) padara glazūras suspensiju lipīgāku un lēnāk žūstošu un atstāj cietāku kārtu, kas labi turas uz izstrādājuma. Vislielākā nozīme tai ir glazūrām uzklāšanai ar otu un glazūrām ar daudz frites{{en: frit}}. Digitalfire piemērā 3,75 g iejauc 1000 g suspensijas, un CMC jāiejauc ar blenderi. Glazūra ar CMC ar Epsoma sāli nesabiezē, un, tā kā mikrobi barojas ar šo saistvielu, glazūra spainī var mainīties un sākt smirdēt.
 
-**Bentonīts**, ļoti smalks māls, palīdz noturēt pārējās daļiņas suspensijā. Iemērkšanas glazūrās šo uzdevumu parasti veic 15–25% neapdedzināta māla. Receptei, kurā māla ir maz, palīdz apmēram 1–3% bentonīta; Digitalfire norāda, ka glazūrai, kurā ir vairāk nekā 15% māla, nevajadzētu būt vajadzīgs vairāk par 1%.
+**Bentonīts**, ļoti smalks māls, palīdz noturēt pārējās daļiņas suspensijā. Iemērkšanas glazūrās šo uzdevumu parasti veic 15–25% neapdedzināta māla. Receptei, kurā māla ir maz, palīdz apmēram 1–3% bentonīta; Digitalfire norāda, ka glazūrai, kurā ir vairāk nekā 15% māla, nevajadzētu būt vajadzīgs vairāk bentonīta par 1% no sausās glazūras masas.
 
 ## Proves un provju rindas {#testing}
 

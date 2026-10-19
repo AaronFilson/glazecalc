@@ -5,7 +5,10 @@
 // the RFC 6750 and RFC 9728 headers that point a client at the resource's
 // metadata. The session's sign-in token is never accepted (it is not an access
 // token, so it fails as any other), and the session cookie is never read: a
-// browser riding on someone's session gets the public tools at most.
+// browser riding on someone's session gets the public tools at most. Every
+// request is checked afresh, so a token revoked or expired stops at once,
+// changes included. Only personal tokens: no OAuth client reaches the tools,
+// to read or to write, until the authorization server (Phase 4) is built.
 import type { NextFunction, Request, Response } from 'express';
 import { ipKeyGenerator } from 'express-rate-limit';
 import { allows, isScope } from '../lib/scopes.ts';
@@ -21,7 +24,7 @@ export const metadataUrl = (): string => site.siteUrl() + '/.well-known/oauth-pr
 export const resourceMetadata = () => ({
   resource: resourceUrl(),
   bearer_methods_supported: ['header'],
-  scopes_supported: ['data:read'],
+  scopes_supported: ['data:read', 'data:write'],
   resource_name: 'Glazecalc',
   resource_documentation: site.siteUrl() + '/assistants'
 });
@@ -74,6 +77,7 @@ export const mcpAuth = async (req: Request, res: Response, next: NextFunction): 
     key: 'user:' + userId,
     userId,
     tokenId: String(found.token._id),
+    name: found.token.name,
     scopes: found.token.scopes.filter(isScope)
   };
   next();

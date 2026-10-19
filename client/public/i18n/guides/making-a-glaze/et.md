@@ -211,7 +211,7 @@ Label: Vee kogus soovitud suhtelise tiheduse jaoks
 
 **CMC** (karboksümetüültselluloos, glasuuriliim) muudab glasuurilahuse kleepuvamaks ja aeglasemalt kuivavaks ning jätab kõvema kihi, mis püsib esemel. See on kõige olulisem pintselglasuuride ja suure fritisisaldusega glasuuride puhul. Digitalfire’i näites segatakse 3,75 g 1000 g glasuurilahusesse ja see tuleb sisse segada blenderiga. CMC-ga glasuur ei tarretu inglise soolaga ja kuna mikroobid toituvad sellest liimainest, võib glasuur ämbris muutuda ja hakata haisema.
 
-**Bentoniit**, väga peen savi, aitab hoida teisi osakesi hõljumas. Kastmisglasuurides teeb seda tavaliselt 15–25% toorest savi. Kui retseptis on savi vähe, aitab umbes 1–3% bentoniiti; Digitalfire’i sõnul ei peaks glasuur, milles on üle 15% savi, vajama üle 1%.
+**Bentoniit**, väga peen savi, aitab hoida teisi osakesi hõljumas. Kastmisglasuurides teeb seda tavaliselt 15–25% toorest savi. Kui retseptis on savi vähe, aitab umbes 1–3% bentoniiti; Digitalfire’i sõnul ei peaks glasuur, milles on üle 15% savi, vajama bentoniiti rohkem kui 1% kuiva glasuuri massist.
 
 ## Proovitükid ja katseread {#testing}
 

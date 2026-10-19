@@ -476,6 +476,54 @@ describe('RecipePage', () => {
     expect(page['notices'].messages()[0]).toContain('usually means reformulating it');
   });
 
+  it('saves the results by cone with the recipe and clears them with null; a copy and a duplicate start with none', async () => {
+    const fired: Recipe = {
+      _id: 'r8',
+      title: 'Celadon',
+      materials: [{ ...WHITING, amount: '20' }],
+      firedAt: { scale: 'orton', low: '10', atmospheres: ['reduction'] },
+      coneResults: [{ cone: '10', atmosphere: 'reduction', summary: 'Pale green' }]
+    };
+    const { fixture, page } = await create([fired]);
+    page['open'](fired);
+    await fixture.whenStable();
+    expect(page['dirty']()).toBe(false);
+    const box = fixture.nativeElement.querySelector('#cone-summary-0') as HTMLTextAreaElement;
+    expect(box.value).toBe('Pale green');
+    box.value = 'Deep green where thick';
+    box.dispatchEvent(new Event('change'));
+    await fixture.whenStable();
+    expect(page['dirty']()).toBe(true);
+    let saving = page['save']();
+    let req = httpMock().expectOne({ method: 'PUT', url: API + '/recipe/change/r8' });
+    expect(req.request.body.recipe.coneResults).toEqual([
+      { cone: '10', atmosphere: 'reduction', summary: 'Deep green where thick' }
+    ]);
+    req.flush({ msg: 'Successfully updated recipe' });
+    await saving;
+    page['coneResults'].set([]);
+    saving = page['save']();
+    req = httpMock().expectOne({ method: 'PUT', url: API + '/recipe/change/r8' });
+    expect(req.request.body.recipe.coneResults).toBeNull();
+    req.flush({ msg: 'Successfully updated recipe' });
+    await saving;
+
+    page['open'](fired);
+    await fixture.whenStable();
+    page['title'].set('Celadon copy');
+    saving = page['saveAsCopy']();
+    const created = httpMock().expectOne({ method: 'POST', url: API + '/recipe/create' });
+    expect(created.request.body.coneResults).toBeUndefined();
+    created.flush({ ...created.request.body, _id: 'r9' });
+    await saving;
+    expect(page['coneResults']()).toEqual([]);
+    expect(page['dirty']()).toBe(false);
+
+    page['duplicateForCone'](fired);
+    await fixture.whenStable();
+    expect(page['coneResults']()).toEqual([]);
+  });
+
   it('filters the saved recipes by cone, a range matching any cone inside it and the tested ones first, and by atmosphere', async () => {
     const recipes: Recipe[] = [
       { _id: 'a', title: 'Ranged', materials: [], firedAt: { scale: 'orton', low: '5', high: '7' } },

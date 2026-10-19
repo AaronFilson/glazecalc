@@ -22,7 +22,7 @@ interface Change {
 }
 
 /**
- * "Sign in with Google or GitHub" on the account page
+ * "Sign in with Google, GitHub or Microsoft" on the account page
  * (docs/adr/0015-provider-sign-in.md): which providers are linked, and
  * linking or unlinking one, each confirmed with the password and, once
  * two-step sign-in is on, a second step. Linking goes to the provider, which
@@ -173,7 +173,7 @@ export class ProvidersSection {
   protected readonly rows = computed(() => {
     const methods = this.methods();
     if (!methods) return [];
-    const order: ProviderId[] = ['google', 'github'];
+    const order: ProviderId[] = ['google', 'github', 'microsoft'];
     return order
       .filter((provider) => methods.enabled.includes(provider) || methods.linked.some((l) => l.provider === provider))
       .map((provider) => ({

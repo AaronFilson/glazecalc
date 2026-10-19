@@ -272,7 +272,7 @@
     "numbers": {
       "heading": "Analyysin ja raja-arvojen lukeminen",
       "analysis": "<b>Analyysi ja raja-arvot</b> reseptin alla näyttää kunkin oksidin moolit, mooliprosentin ja painoprosentin poltettuna, polttohäviön sekä lasketun lämpölaajenemisen, joka on arvio lasitteiden vertailuun.",
-      "limits": "<b>Raja-arvot</b> asettaa Segerin kaavan raja-arvosarjaa vasten: Hesselberthin ja Royn vakaiden lasitteiden raja-arvoja, ellei valita Glazecalcin omaa sarjaa (valinta tallentuu asetuksiin). Valitse <b>Poltto</b>, jotta tarkistus tehdään oikeilla arvoilla; se tallentuu reseptin mukana. Hesselberthin ja Royn arvot koskevat keiloja 6 ja 10, joten matalassa poltossa se kertoo, etteivät ne päde. Ne ovat ohjearvoja, eivät hyväksytty/hylätty-arvio.",
+      "limits": "<b>Raja-arvot</b> asettaa Segerin kaavan raja-arvosarjaa vasten: Hesselberthin ja Royn vakaiden lasitteiden raja-arvoja, ellei valita Glazecalcin omaa sarjaa (valinta tallentuu asetuksiin). Se tarkistaa polttoalueen, jonka reseptin <b>Poltto</b> antaa: sen keilan tai vaihteluvälin. Vaihteluväli, joka ylittää alueiden rajan, esimerkiksi keilasta 6 keilaan 10, näyttää molempien alueiden tarkistukset rinnakkain. Jos halutaan tarkistaa vain yksi alue, valitaan se raja-arvojen omassa <b>Poltto</b>-kentässä, joka ohittaa reseptin polton ja tallentuu reseptin mukana. Hesselberthin ja Royn arvot koskevat keiloja 6 ja 10, joten matalassa poltossa se kertoo, etteivät ne päde. Ne ovat ohjearvoja, eivät hyväksytty/hylätty-arvio. Ylimpänä yksi rivi vertaa lasitteen booria, piidioksidia ja alumiinioksidia sen polttoon Katzin boorisäännöllä ja Hesselberthin ja Royn arvoilla, kumpaa raja-arvosarjaa tahansa valitaankin: se antaa huomautuksen vain, kun ne ovat yhtä mieltä siitä, että lasite näyttää toiselta poltolta, kertoo, kun se ei voi arvioida (lyijy, litium, raku ja vastaavat), ja on ohje, ei koe.",
       "stull": "<b>Stullin kartta</b> piirtää lasitteen piidioksidin alumiinioksidia vasten Stullin matta-, puolimatta- ja kiiltäväalueineen sekä raja-arvosarjan vaihteluväleineen. Se on opas pintaan, ei ennuste.",
       "slurry": "<b>Ominaispaino ja vesi</b> käyttää Brongniartin kaavaa: punnitse mitattu tilavuus lasitetta, katso sitten kuivan lasitteen määrä sangossa, vesi, joka tuo sen haluttuun ominaispainoon, tai vesi uuteen erään. Tiheydet noudattavat asetusta, joka koskee ominaispainoa, Baumé-asteita tai pinttipainoa."
     },
@@ -599,6 +599,36 @@
     "bothBands": "Reseptin poltto kattaa alueen {bands}, joten jokainen tarkistetaan rinnakkain: lasite harvoin käyttäytyy samoin molemmissa ääripäissä.",
     "fromFiring": "Luvut koskevat reseptin polttoa: {band}. Valitse yllä poltto, jos haluat tarkistaa toisen."
   },
+  "coneFit": {
+    "cooler": "Lasitteen kemia muistuttaa enemmän {looksLike, select, low {matalapolton} other {keskipolton}} lasitetta kuin ilmoitetulle poltolle ({scale, select, band {{band, select, low {matalapoltto} mid {keskipoltto} other {korkeapoltto}}} sk {SK {cone}} temperature {{cone} °C} other {keila {cone}}}) tarkoitettua.",
+    "coolerSoft": "Lasitteen kemia viittaa ilmoitettua polttoa ({scale, select, band {{band, select, low {matalapoltto} mid {keskipoltto} other {korkeapoltto}}} sk {SK {cone}} temperature {{cone} °C} other {keila {cone}}}) viileämpään polttoon, lähemmäs keilaa 6, vaikka kemia yksin erottaa keilan 6 ja keilan 10 lasitteet toisistaan vain summittaisesti.",
+    "hotter": "Lasitteen kemia muistuttaa enemmän {looksLike, select, high {korkeapolton} other {keskipolton}} lasitetta kuin ilmoitetulle poltolle ({scale, select, band {{band, select, low {matalapoltto} mid {keskipoltto} other {korkeapoltto}}} sk {SK {cone}} temperature {{cone} °C} other {keila {cone}}}) tarkoitettua.",
+    "hotterSoft": "Lasitteen kemia viittaa ilmoitettua polttoa ({scale, select, band {{band, select, low {matalapoltto} mid {keskipoltto} other {korkeapoltto}}} sk {SK {cone}} temperature {{cone} °C} other {keila {cone}}}) kuumempaan polttoon, lähemmäs keilaa 10, vaikka kemia yksin erottaa keilan 6 ja keilan 10 lasitteet toisistaan vain summittaisesti.",
+    "closer": "Ilmoitetusta vaihteluvälistä lasitteen kemia muistuttaa enemmän tätä päätä: {scale, select, band {{band, select, low {matalapoltto} mid {keskipoltto} other {korkeapoltto}}} sk {SK {cone}} temperature {{cone} °C} other {keila {cone}}}.",
+    "coolerSilica": "Siinä on enemmän booria ({boron}) kuin tämän polton ({scale, select, band {{band, select, low {matalapoltto} mid {keskipoltto} other {korkeapoltto}}} sk {SK {cone}} temperature {{cone} °C} other {keila {cone}}}) lasitteissa yleensä tarvitaan, ja vähemmän piidioksidia ({silica}) kuin niissä yleensä on.",
+    "coolerAlumina": "Siinä on enemmän booria ({boron}) kuin tämän polton ({scale, select, band {{band, select, low {matalapoltto} mid {keskipoltto} other {korkeapoltto}}} sk {SK {cone}} temperature {{cone} °C} other {keila {cone}}}) lasitteissa yleensä tarvitaan, ja vähän alumiinioksidia ({alumina}).",
+    "coolerBoth": "Siinä on enemmän booria ({boron}) kuin tämän polton ({scale, select, band {{band, select, low {matalapoltto} mid {keskipoltto} other {korkeapoltto}}} sk {SK {cone}} temperature {{cone} °C} other {keila {cone}}}) lasitteissa yleensä tarvitaan, ja vähemmän piidioksidia ({silica}) ja alumiinioksidia ({alumina}) kuin niissä yleensä on.",
+    "hotterSilica": "Siinä on vähän booria ({boron}) tälle poltolle ({scale, select, band {{band, select, low {matalapoltto} mid {keskipoltto} other {korkeapoltto}}} sk {SK {cone}} temperature {{cone} °C} other {keila {cone}}}) ja enemmän piidioksidia ({silica}) kuin tämän polton lasitteissa yleensä on.",
+    "coolerEffect": "Tässä poltossa se voi valua tai sulaa liikaa: polta koepala ensin valuma-alustalla.",
+    "hotterEffect": "Tässä poltossa se voi jäädä alipoltetuksi: kuivaksi, karheaksi tai ei täysin tiiviiksi. Koepolta se ennen kuin sitä käytetään esineisiin, ja etenkin ennen kuin sitä käytetään siellä, missä ruoka tai juoma koskettaa.",
+    "hotterEffectSoft": "Jotkin lasitteet sulavat tässä poltossa ilman booria, joten tämä on vain vihje: tarkista koepalasta, että lasite sulaa kokonaan.",
+    "gerstley": "Osa sen boorista tulee Gerstley borate -raaka-aineesta, joka vaihtelee erästä toiseen, joten tuo luku on epävarmempi.",
+    "guide": "Tämä vertaa kemiaa julkaistuihin arvoihin: se on ohje, ei koe. Jos lasite on omissa poltoissasi palanut hyvin tällä keilalla, luota omiin koepaloihisi.",
+    "fits": "Sen boori, piidioksidi ja alumiinioksidi eivät viittaa poispäin tästä poltosta ({scale, select, band {{band, select, low {matalapoltto} mid {keskipoltto} other {korkeapoltto}}} sk {SK {cone}} temperature {{cone} °C} other {keila {cone}}}). Tämä on ohje, ei koe: se ei kerro mitään siitä, onko lasite vakaa tai elintarvikekäyttöön sopiva.",
+    "sources": "Lähteet:",
+    "skip": {
+      "lead": "Glazecalc ei voi verrata lasitteen kemiaa sen polttoon: suuri osa sen sulasta tulee lyijystä, jota tässä tarkistuksessa käytetyt julkaistut arvot eivät kata.",
+      "lithium": "Glazecalc ei voi verrata lasitteen kemiaa sen polttoon: suuri osa sen sulasta tulee litiumista, jota tässä tarkistuksessa käytetyt julkaistut arvot eivät kata.",
+      "alkali": "Glazecalc ei voi verrata lasitteen kemiaa sen polttoon: suuri osa sen sulasta tulee natriumista ja kaliumista, joita tässä tarkistuksessa käytetyt julkaistut arvot eivät kata.",
+      "zinc": "Glazecalc ei voi verrata lasitteen kemiaa sen polttoon: siinä on paljon sinkkiä, kuten kiteisissä lasitteissa, jota tässä tarkistuksessa käytetyt julkaistut arvot eivät kata.",
+      "notGlaze": "Glazecalc ei voi verrata lasitteen kemiaa sen polttoon: sen kaava ei ole tavallisen lasitteen (hyvin vähän tai hyvin paljon piidioksidia tai paljon värioksideja), joten tässä tarkistuksessa käytetyt julkaistut arvot eivät sovi siihen.",
+      "process": "Glazecalc ei voi verrata lasitteen kemiaa sen polttoon: se on tarkoitettu {process, select, raku {rakupolttoon} salt {suolapolttoon} soda {soodapolttoon} wood {puupolttoon} other {kuoppapolttoon}}, jossa uuni tekee osan lasituksesta; tässä tarkistuksessa käytetyt julkaistut arvot eivät kata sellaista polttoa.",
+      "ash": "Glazecalc ei voi verrata lasitteen kemiaa sen polttoon: siinä on tuhkaa, jonka koostumus vaihtelee liikaa tässä tarkistuksessa käytettyjen julkaistujen arvojen kannalta.",
+      "noTemperature": "Glazecalc ei voi verrata lasitteen kemiaa tähän polttoon ({scale, select, band {{band, select, low {matalapoltto} mid {keskipoltto} other {korkeapoltto}}} sk {SK {cone}} temperature {{cone} °C} other {keila {cone}}}): kyseiselle keilalle ei ole mitattua lämpötilaa.",
+      "between": "Glazecalc ei voi verrata lasitteen kemiaa tähän polttoon ({scale, select, band {{band, select, low {matalapoltto} mid {keskipoltto} other {korkeapoltto}}} sk {SK {cone}} temperature {{cone} °C} other {keila {cone}}}): tässä tarkistuksessa käytetyt julkaistut arvot koskevat matalapolttoa sekä keski- ja korkeapolttoa, eivät niiden välisiä keiloja (01–3).",
+      "belowChart": "Glazecalc ei voi verrata lasitteen kemiaa tähän polttoon ({scale, select, band {{band, select, low {matalapoltto} mid {keskipoltto} other {korkeapoltto}}} sk {SK {cone}} temperature {{cone} °C} other {keila {cone}}}): Katzin boorisääntö koskee keiloja 06–10, ja tämä poltto on viileämpi."
+    }
+  },
   "stull": {
     "heading": "Stullin kartta",
     "title": "Stullin kartta: piidioksidi alumiinioksidia vasten Segerin kaavassa",
@@ -904,7 +934,7 @@
     "foodSurface": "Elintarvikepinnalle (sisälasite)",
     "liner": {
       "note": "Elintarvikekäytön turvallisuus riippuu siitä, että tämä lasite poltetaan siihen keilaan, jolla se on testattu: alipoltetusta lasitteesta voi liueta metalleja.",
-      "range": "Se on annettu vaihteluvälinä, joten testaa se vaihteluvälin alapäässä, jossa se sulaa vähiten.",
+      "range": "Lasitteen poltto on annettu vaihteluvälinä, joten testaa se vaihteluvälin alapäässä, jossa se sulaa vähiten.",
       "untested": "Yhtäkään keilaa ei ole vielä merkitty testatuksi.",
       "test": "Vain omille poltetuille astioille tehty metallien liukenemisen laboratoriotesti osoittaa, onko se turvallinen elintarvikekäyttöön."
     },
@@ -967,5 +997,23 @@
     "replaceAsk": "Testatuksi on merkitty {now}. Korvataanko se päiväkirjojen mainitsemilla keiloilla: {logs}?",
     "replace": "Korvaa",
     "keep": "Pidä ennallaan"
+  },
+  "coneCards": {
+    "heading": "Tulokset keilan mukaan",
+    "unplaced": "Ei sijoitettu keilalle",
+    "unplacedNote": "Näitä polttopäiväkirjoja ei ole vielä sijoitettu keilalle: valitse, missä kukin poltettiin.",
+    "approx": "≈ {temperature}",
+    "cautions": "{count, plural, =0 {ei raja-arvovaroituksia} one {# raja-arvovaroitus} other {# raja-arvovaroitusta}}",
+    "logs": "{count, plural, =0 {ei polttopäiväkirjoja} one {# polttopäiväkirja} other {# polttopäiväkirjaa}}",
+    "outside": "ilmoitetun polton ulkopuolella",
+    "outsideChoice": "{place} (ilmoitetun polton ulkopuolella)",
+    "summaryLabel": "Miten se onnistui: {place}",
+    "summaryPlaceholder": "Pinta, väri, valumat, säröily...",
+    "noAtmosphere": "atmosfääriä ei ole annettu",
+    "placeLabel": "Missä poltettiin: {title}",
+    "notPlaced": "Ei sijoitettu",
+    "add": "Lisää tulos kohteelle",
+    "addButton": "Lisää",
+    "saveFailed": "Polttopäiväkirjan polttopaikan tallentaminen ei onnistunut."
   }
 }

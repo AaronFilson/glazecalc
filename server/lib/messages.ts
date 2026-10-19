@@ -17,7 +17,7 @@ const WAIT = 'Please wait a few minutes and try again.';
 const ONE =
   'additive {additive} advice {advice} firing {firing} material {material} note {note} recipe {recipe} trash {trash} other {record}';
 /** A sign-in provider (server/lib/oauth.ts), by its id: brand names, kept as they are. */
-const PROVIDER = '{provider, select, google {Google} github {GitHub} other {the provider}}';
+const PROVIDER = '{provider, select, google {Google} github {GitHub} microsoft {Microsoft} other {the provider}}';
 const MANY =
   'additive {additives} advice {pieces of advice} firing {firing logs} material {materials} note {notes} recipe {recipes} trash {items in the trash} other {records}';
 
@@ -91,12 +91,14 @@ export const MESSAGES = {
   'mfa-off': 'Two-step sign-in is off, and your recovery codes no longer work.',
   'mfa-not-on': 'Two-step sign-in is not on, so there are no recovery codes to make. Set up a second step first.',
 
-  // Signing in with Google or GitHub (server/routes/oauth_routes.ts).
+  // Signing in with Google, GitHub or Microsoft (server/routes/oauth_routes.ts).
   'provider-off': 'That way of signing in is not available.',
   'provider-expired': 'Signing in took too long, or was started in another browser. Please try again.',
   'provider-failed': `Signing in with ${PROVIDER} did not work. Please try again.`,
   'provider-cancelled': `Signing in with ${PROVIDER} was cancelled.`,
   'provider-email-unverified': `Your ${PROVIDER} account has no verified email, so we cannot make an account with it. Please verify your email with ${PROVIDER}, or sign up with an email and password.`,
+  'provider-email-missing': `Your ${PROVIDER} account did not give us an email address, so we cannot make an account with it. Please sign up with an email and password, then link ${PROVIDER} on your account page.`,
+  'provider-email-in-use': `A Glazecalc account already uses the email from ${PROVIDER}. Please sign in to it the usual way, then link ${PROVIDER} on your account page.`,
   'provider-sign-in-to-link': `A Glazecalc account already uses the email from ${PROVIDER}. Please sign in to it once, the usual way, to link ${PROVIDER} to it.`,
   'provider-other-account': `This account does not have the email from ${PROVIDER}, so ${PROVIDER} was not linked. Please sign in to the account that does.`,
   'provider-verify-first': `Please confirm your email first, with the link we sent you. Then link ${PROVIDER} on your account page.`,
@@ -108,7 +110,8 @@ export const MESSAGES = {
   'provider-last-method':
     'This is the only way to sign in to this account. Please set a password or link another way first.',
   'provider-reauth-needed':
-    'This account has no password, so please confirm it is you by signing in again with Google or GitHub, then try again within 5 minutes.',
+    'This account has no password, so please confirm it is you by signing in again with Google, GitHub or Microsoft, whichever you linked, then try again within 5 minutes.',
+
   'provider-reauth-other': `That ${PROVIDER} account is not linked to this Glazecalc account, so it cannot confirm a change here.`,
   'provider-reauth-password': 'This account has a password: please confirm with it instead.',
   'provider-not-fresh': `${PROVIDER} did not ask you to sign in again, so it cannot confirm a change. Please try again.`,
@@ -166,7 +169,8 @@ export const MESSAGES = {
   'trash-full':
     'The Trash is full, so an access token cannot move anything more to it. Please empty some of it on the website first.',
   'firing-links-full': 'A recipe can be linked to at most {most} firing logs. Unlink one to link another.',
-  'account-limit': `An account can keep up to {limit} {label, select, ${MANY}}. Please remove some to save more.`,
+  'account-limit':
+    'An account can keep up to {limit} records in all: recipes, materials, notes, firing logs and the rest together. Please remove some to save more.',
 
   // Share links (server/routes/share_routes.ts).
   'not-shared': 'This recipe is not shared, or the link is not complete.',
@@ -180,7 +184,9 @@ export const MESSAGES = {
   // The account page's access tokens (server/routes/token_routes.ts).
   'token-name': 'Please give the token a name of 1 to {most} characters.',
   'token-expiry-choices': 'Please choose when the token expires: after {choices} days.',
-  'token-scope-choices': 'For now a token can only read your records.',
+  'token-scope-choices': 'Please choose whether the token can only read your records, or read and change them.',
+  'token-write-expiry':
+    'A token that can change your records stops working after at most {most} days. Please choose a shorter time.',
   'token-needs-confirmed-email': 'Please confirm your email before making an access token.',
   'token-limit': 'An account can have up to {most} access tokens at once. Please revoke one you no longer use first.',
   'token-made': 'Your access token is ready. Copy it now: it will not be shown again.',
@@ -207,6 +213,8 @@ export const MESSAGES = {
   'too-many-shared-views': 'Too many shared recipes were opened from this address. ' + WAIT,
   'too-many-deletes':
     'This access token has moved too many records to the Trash in the last hour. Please try again later.',
+  'too-many-changes':
+    'Too many changes were made to this account with access tokens. Please wait a while and try again; changes on the website still work.',
   'too-many-mcp': 'Too many requests to the Glazecalc tools for AI assistants. ' + WAIT
 } satisfies Record<string, Text>;
 

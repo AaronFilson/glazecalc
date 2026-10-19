@@ -167,7 +167,7 @@ Rio Grande anbefaler en **egen gruppe** (en gruppe, der ikke forsyner noget ande
 
 ### Vær til stede, når brændingen slutter
 
-En **Kiln-Sitter** er den mekaniske afbryder på mange manuelt styrede ovne: En lille kegle{{en: cone}} bøjer ved brændingens slutning og slår afbryderen fra. Dens manual siger, at den »IKKE er beregnet til at fungere som en fejlsikker sikkerhedsafbryder«. Rio Grande siger, at man aldrig skal lade en ovn, der er i gang, stå uden opsyn, »især ikke omkring det forventede tidspunkt for slukning«. Bliv derfor i nærheden og kontrollér ovnen, mens den brænder, især hen mod slutningen; brænd kun, når en voksen er hjemme og vågen til at gøre det, kontrollér, at ovnen er slukket, og hav en ABC-brandslukker i ovnrummet. Se [Brænding i en enkel ovn](/guides/firing) om, hvordan Kiln-Sitter, styring og brændekurve fungerer.
+En **Kiln-Sitter** er den mekaniske afbryder på mange manuelt styrede ovne: En lille kegle{{en: cone}} bøjer ved brændingens slutning og slår afbryderen fra. Dens manual siger, at den »IKKE er beregnet til at fungere som en fejlsikker sikkerhedsafbryder«. Rio Grande siger, at man aldrig skal lade en ovn, der er i gang, stå uden opsyn, »især ikke omkring det forventede tidspunkt for slukning«. Bliv derfor i nærheden og kontrollér ovnen, mens den brænder, især hen mod slutningen; brænd kun, når en voksen er hjemme og vågen under hele brændingen, kontrollér, at ovnen er slukket, og hav en ABC-brandslukker i ovnrummet. Se [Brænding i en enkel ovn](/guides/firing) om, hvordan Kiln-Sitter, styring og brændekurve fungerer.
 
 ### Røggas og kulilte
 

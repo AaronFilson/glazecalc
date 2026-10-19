@@ -199,11 +199,11 @@ Banyak sitter, termasuk model LT Dawson, memiliki **pengatur waktu batas**: jam 
 Table: Berapa lama mengatur pengatur waktu batas
 Label: Pengaturan pengatur waktu batas
 
-| Sumber    | Pengaturan                                                                                                                                                                  |
-| --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Dawson    | ½ jam lebih lama daripada waktu pembakaran yang diperkirakan sampai Anda mengenal tungku, kemudian bisa cukup ¼ jam lebih lama; jangan pernah mengaturnya lebih dari 20 jam |
-| L&L       | Sangat tinggi pertama kali, mencatat berapa lama pembakaran; setelah itu, sekitar 1 jam lebih lama                                                                          |
-| Bracker's | 30 menit sampai 1 jam lebih lama daripada waktu pembakaran                                                                                                                  |
+| Sumber    | Pengaturan                                                                                                                                                       |
+| --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Dawson    | ½ jam lebih lama daripada waktu pembakaran yang diperkirakan sampai Anda mengenal tungku, kemudian ¼ jam lebih lama; jangan pernah mengaturnya lebih dari 20 jam |
+| L&L       | Sangat tinggi pertama kali, mencatat berapa lama pembakaran; setelah itu, sekitar 1 jam lebih lama                                                               |
+| Bracker's | 30 menit sampai 1 jam lebih lama daripada waktu pembakaran                                                                                                       |
 
 > [!NOTE]
 > Titik awal kami: beri waktu longgar pada kali pertama (dalam batas 20 jam pada dial), lalu ½ sampai 1 jam lebih lama daripada waktu yang Anda catat. Pengatur waktu juga memberi tahu berapa lama pembakaran berlangsung: diatur pada 7 dan berakhir pada 1 berarti 6 jam.
@@ -352,11 +352,11 @@ Label: Tabel SK
 | SK 19   | {{2768 °F; 1520 °C}} |
 | SK 20   | {{2786 °F; 1530 °C}} |
 
-Setiap angka bersifat nominal (JIS): suhu yang diberikan standar untuk kerucut, seperti dicetak dalam tabel Yuko Trading. Tabel tidak mencetak laju pemanasan. Standar memberikan suhu acuan. Pada laju pembuat keramik sekitar 100 °C/h, institut kota Kyoto mengukur kerucut Kyoto miliknya sendiri menekuk 40–70 °C lebih dingin daripada angka JIS untuk nomor yang sama; kami tidak menemukan pengukuran seperti itu untuk kerucut SK menurut JIS. Pasang kerucut saksi dan bandingkan.
+Setiap angka bersifat nominal (JIS): suhu yang diberikan standar untuk kerucut, seperti dicetak dalam tabel Yuko Trading. Tabel tidak mencetak laju pemanasan. Standar memberikan suhu acuan. Pada laju pembuat keramik sekitar 100 °C/h, institut kota Kyoto mengukur kerucut Kyoto miliknya sendiri menekuk 47–79 °C lebih dingin daripada angka JIS untuk nomor yang sama; kami tidak menemukan pengukuran seperti itu untuk kerucut SK menurut JIS. Pasang kerucut saksi dan bandingkan.
 
 ### Kerucut Kyoto
 
-Kerucut Kyoto (Kyoto zeegeru), dibuat oleh institut kota Kyoto, tidak lagi dibuat: laporan berita menyatakan institut itu mengakhiri produksi pada akhir tahun fiskal 2009. Kerucut ini membawa nomor yang sama dengan kerucut SK menurut JIS tetapi menekuk lebih dingin: kerucut Kyoto kebanyakan menekuk pada suhu kerucut SK menurut JIS dua nomor lebih dingin. Resep dari Kyoto yang menyebut "SK 8" mungkin berarti kerucut Kyoto. Institut telah menerbitkan saran bagi pembuat keramik yang beralih dari kerucut Kyoto ke kerucut Orton, dan menggantikan kerucut Orton 10 untuk Kyoto SK 12 miliknya; itu pilihan institut dari pengukurannya sendiri pada 100 °C/h, dan tidak berlaku untuk kerucut lain mana pun.
+Kerucut Kyoto (Kyoto zeegeru), dibuat oleh institut kota Kyoto, tidak lagi dibuat: laporan berita menyatakan institut itu mengakhiri produksi pada akhir tahun fiskal 2009. Kerucut ini membawa nomor yang sama dengan kerucut SK menurut JIS tetapi menekuk lebih dingin: kerucut Kyoto menekuk pada suhu kerucut SK menurut JIS dua atau tiga nomor lebih dingin. Resep dari Kyoto yang menyebut "SK 8" mungkin berarti kerucut Kyoto. Institut telah menerbitkan saran bagi pembuat keramik yang beralih dari kerucut Kyoto ke kerucut Orton, dan memakai kerucut Orton 10 sebagai pengganti Kyoto SK 12 miliknya; itu pilihan institut dari pengukurannya sendiri pada 100 °C/h, dan tidak berlaku untuk kerucut lain mana pun.
 
 ### Kerucut Orton yang dijual di Jepang
 

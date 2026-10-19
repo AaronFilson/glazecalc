@@ -199,11 +199,11 @@ Monissa katkaisimissa, myös Dawsonin LT-malleissa, on **aikarajoitin**: kello, 
 Table: Kuinka pitkäksi aikarajoitin asetetaan
 Label: Aikarajoittimen asetukset
 
-| Lähde     | Asetus                                                                                                                                     |
-| --------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| Dawson    | ½ tuntia odotettua polttoaikaa pidemmäksi, kunnes uuni on tuttu, myöhemmin vain ¼ tuntia pidemmäksi; älä koskaan aseta sitä yli 20 tuntiin |
-| L&L       | Ensimmäisellä kerralla hyvin pitkäksi, ja polton kesto merkitään muistiin; sen jälkeen noin 1 tunti pidemmäksi                             |
-| Bracker’s | 30 minuutista 1 tuntiin polttoaikaa pidemmäksi                                                                                             |
+| Lähde     | Asetus                                                                                                                                |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| Dawson    | ½ tuntia odotettua polttoaikaa pidemmäksi, kunnes uuni on tuttu, myöhemmin ¼ tuntia pidemmäksi; älä koskaan aseta sitä yli 20 tuntiin |
+| L&L       | Ensimmäisellä kerralla hyvin pitkäksi, ja polton kesto merkitään muistiin; sen jälkeen noin 1 tunti pidemmäksi                        |
+| Bracker’s | 30 minuutista 1 tuntiin polttoaikaa pidemmäksi                                                                                        |
 
 > [!NOTE]
 > Oma lähtökohtamme: ensimmäisellä kerralla reilusti (asteikon 20 tunnin rajoissa), sitten ½–1 tuntia kirjattua polttoaikaa pidemmäksi. Aikarajoitin kertoo myös, kauanko poltto kesti: jos se asetettiin lukemaan 7 ja se pysähtyi lukemaan 1, poltto kesti 6 tuntia.
@@ -352,11 +352,11 @@ Label: SK-taulukko
 | SK 19   |       {{2768 °F; 1520 °C}} |
 | SK 20   |       {{2786 °F; 1530 °C}} |
 
-Jokainen luku on nimellinen (JIS): lämpötila, jonka standardi antaa keilalle, sellaisena kuin se on painettu Yuko Tradingin taulukkoon. Taulukossa ei ole nousunopeutta. Standardi antaa vertailulämpötiloja. Keraamikon tavallisella, noin 100 °C/h nousunopeudella Kioton kaupungin tutkimuslaitos mittasi omien Kioton keilojensa taipuvan 40–70 °C alemmassa lämpötilassa kuin saman numeron JIS-lämpötila; JIS-standardin mukaisista SK-keiloista emme löytäneet vastaavia mittauksia. Aseta tarkkailukeila ja vertaa.
+Jokainen luku on nimellinen (JIS): lämpötila, jonka standardi antaa keilalle, sellaisena kuin se on painettu Yuko Tradingin taulukkoon. Taulukossa ei ole nousunopeutta. Standardi antaa vertailulämpötiloja. Keraamikon tavallisella, noin 100 °C/h nousunopeudella Kioton kaupungin tutkimuslaitos mittasi omien Kioton keilojensa taipuvan 47–79 °C alemmassa lämpötilassa kuin saman numeron JIS-lämpötila; JIS-standardin mukaisista SK-keiloista emme löytäneet vastaavia mittauksia. Aseta tarkkailukeila ja vertaa.
 
 ### Kioton keilat
 
-Kioton keiloja (京都ゼーゲル), joita Kioton kaupungin tutkimuslaitos valmisti, ei enää valmisteta: uutisten mukaan laitos lopetti valmistuksen tilikauden 2009 päättyessä. Niissä on samat numerot kuin JIS-standardin mukaisissa SK-keiloissa, mutta ne taipuvat alemmassa lämpötilassa: Kioton keila taipuu useimmiten suunnilleen sen JIS-standardin mukaisen SK-keilan lämpötilassa, jonka numero on kahta numeroa alempi. Kiotolainen resepti, jossa lukee ”SK 8”, voi tarkoittaa Kioton keilaa. Laitos on julkaissut ohjeita keraamikoille, jotka siirtyvät Kioton keiloista Orton-keiloihin, ja korvaa oman Kioton SK 12 -keilansa Orton-keilalla 10; se on laitoksen oma valinta sen omien 100 °C/h:n mittausten perusteella, eikä se koske mitään muuta keilaa.
+Kioton keiloja (京都ゼーゲル), joita Kioton kaupungin tutkimuslaitos valmisti, ei enää valmisteta: uutisten mukaan laitos lopetti valmistuksen tilikauden 2009 päättyessä. Niissä on samat numerot kuin JIS-standardin mukaisissa SK-keiloissa, mutta ne taipuvat alemmassa lämpötilassa: Kioton keila taipuu suunnilleen sen JIS-standardin mukaisen SK-keilan lämpötilassa, jonka numero on kahta tai kolmea numeroa alempi. Kiotolainen resepti, jossa lukee ”SK 8”, voi tarkoittaa Kioton keilaa. Laitos on julkaissut ohjeita keraamikoille, jotka siirtyvät Kioton keiloista Orton-keiloihin, ja korvaa oman Kioton SK 12 -keilansa Orton-keilalla 10; se on laitoksen oma valinta sen omien 100 °C/h:n mittausten perusteella, eikä se koske mitään muuta keilaa.
 
 ### Japanissa myytävät Orton-keilat
 

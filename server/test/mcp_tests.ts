@@ -5,12 +5,20 @@ import chemistry from '../../lib/chemistry/index.js';
 import standardData from '../../data/index.js';
 import recipe from '../../lib/recipe/index.js';
 import { MOST_LINES, resetFits, FITS_PER_MINUTE, guarded, ToolProblem, UNEXPECTED } from '../mcp/common.ts';
-import { MCP_LIMITS } from '../lib/rate_limit.ts';
-import { termsOf } from '../mcp/guides.ts';
+import { countTokenDelete, MCP_LIMITS, TOKEN_DELETES_PER_HOUR, TOKEN_WRITE_LIMITS } from '../lib/rate_limit.ts';
+import { READ_ONLY_TOKEN, TOO_MANY_CHANGES } from '../mcp/tools/account_write.ts';
+import Activity from '../models/activity.ts';
+import Note from '../models/note.ts';
+import RecordVersion from '../models/record_version.ts';
+import ShareLink from '../models/share_link.ts';
+import Trash, { TRASH_MAX_ACCOUNT } from '../models/trash.ts';
+import { GUIDE_IDS, termsOf } from '../mcp/guides.ts';
 import { findMaterial } from '../mcp/library.ts';
 import { MOST_STREAMS_PER_ADDRESS, sdkSubscribers, streamsOpen } from '../mcp/index.ts';
 import { SERVER_INFO } from '../mcp/server.ts';
-import { readdirSync, readFileSync } from 'node:fs';
+import { PLACES } from '../mcp/words.ts';
+import { readFileSync } from 'node:fs';
+import path from 'node:path';
 import mongoose from 'mongoose';
 import * as site from '../lib/site.ts';
 import { hashToken } from '../lib/token_auth.ts';
@@ -23,17 +31,28 @@ import { makeToken } from './support/tokens.ts';
 
 const PROTOCOL = '2025-06-18';
 
-const GUIDES = new URL('../../client/public/i18n/guides/', import.meta.url);
 const plain = (text: string): string => text.normalize('NFKD').replace(/\p{M}/gu, '').toLowerCase();
+/**
+ * A guide file as the server reads it (markdownOf in server/mcp/guides.ts): from the built
+ * client where it has the file, else from the sources. Reading the same copy keeps the word
+ * picked below right whether a build has run or not, and when that build is stale.
+ */
+const guideFile = (id: string, file: string): string | null => {
+  for (const place of PLACES) {
+    try {
+      return readFileSync(path.join(place, 'guides', id, file), 'utf8');
+    } catch {
+      // Not built, or not translated: the next place.
+    }
+  }
+  return null;
+};
 /** A word in the English guides whose search term is in no guide in the language. */
 const onlyInEnglish = (language: string): string => {
   const read = (file: string): string[] =>
-    readdirSync(GUIDES).flatMap((id) => {
-      try {
-        return [plain(readFileSync(new URL(`${id}/${file}`, GUIDES), 'utf8'))];
-      } catch {
-        return [];
-      }
+    GUIDE_IDS.flatMap((id) => {
+      const text = guideFile(id, file);
+      return text === null ? [] : [plain(text)];
     });
   const theirs = read(`${language}.md`).join(' ');
   const words = new Set(
@@ -127,6 +146,16 @@ const ACCOUNT_TOOLS = [
   'list_notes',
   'list_recipes',
   'match_with_what_i_have'
+];
+const WRITE_TOOLS = [
+  'add_my_material',
+  'add_notebook_entry',
+  'add_to_shelf',
+  'create_recipe',
+  'move_to_trash',
+  'remove_from_shelf',
+  'update_my_material',
+  'update_recipe'
 ];
 
 const LINES = [
@@ -253,7 +282,7 @@ describe('MCP: the endpoint', () => {
       expect(await res.json()).to.deep.include({
         resource: 'https://glazecalc.test/mcp',
         bearer_methods_supported: ['header'],
-        scopes_supported: ['data:read']
+        scopes_supported: ['data:read', 'data:write']
       });
     }
   });
@@ -343,6 +372,42 @@ describe('MCP: the public tools', () => {
     expect(badCone.content[0]!.text).to.include('06, 05');
     const badSet = await call('check_limits', { lines, limitSet: 'nope' });
     expect(badSet.isError).to.equal(true);
+  });
+
+  it('check_limits says whether the chemistry fits the firing given, with its figures and sources', async () => {
+    const fritty = [
+      { material: 'Ferro Frit 3134', amount: 80 },
+      { material: 'EPK', amount: 5 },
+      { material: 'Silica', amount: 15 }
+    ];
+    // A low-fire glaze fired at 1300 °C: more boron than Katz asks for, less silica and alumina than H&R's least.
+    const hot = await data('check_limits', { lines: fritty, firing: { celsius: 1300 } });
+    expect(hot.coneFit).to.include({ verdict: 'cooler', looksLike: 'low', strength: 'firm' });
+    expect(hot.coneFit.against.ends[0]).to.include({ scale: 'temperature', cone: '1300', band: 'high' });
+    expect(hot.coneFit.signals.map((s: { oxide: string; source: string }) => [s.oxide, s.source])).to.eql([
+      ['B2O3', 'katz'],
+      ['SiO2', 'hesselberth-roy'],
+      ['Al2O3', 'hesselberth-roy']
+    ]);
+    expect(hot.coneFit.text).to.include('looks more like a low-fire glaze than one for 1300 °C');
+    expect(hot.coneFit.text).to.include('a guide, not a test');
+    expect(hot.coneFit.sources.map((s: { title: string }) => s.title).join(' ')).to.include('Katz');
+    // The same figures whichever limit set is chosen.
+    const set = await data('check_limits', { lines: fritty, firing: { celsius: 1300 }, limitSet: 'glazecalc' });
+    expect(set.coneFit.verdict).to.equal('cooler');
+    // Much soda and potash: the figures do not reach it. No firing: no check.
+    const alkaline = [
+      { material: 'Custer Spar', amount: 70 },
+      { material: 'Whiting', amount: 10 },
+      { material: 'Silica', amount: 20 }
+    ];
+    const skipped = await data('check_limits', { lines: alkaline, firing: { cone: '6' } });
+    expect(skipped.coneFit).to.include({ verdict: 'skipped', skipped: 'alkali' });
+    expect(skipped.coneFit.text).to.include("can't compare");
+    expect(await data('check_limits', { lines: alkaline })).to.not.have.property('coneFit');
+    // An SK cone with no measured bend says so.
+    const sk = await data('check_limits', { lines: fritty, firing: { cone: '6a', chart: 'sk' } });
+    expect(sk.coneFit).to.include({ verdict: 'skipped', skipped: 'noTemperature' });
   });
 
   it('check_limits names every limit set it takes', async () => {
@@ -630,10 +695,11 @@ describe('MCP: the guides, resources and prompts', () => {
 });
 
 describe('MCP: personal access tokens', () => {
-  it('adds the read tools for a working token, and records its use', async () => {
+  it('adds the account tools for a working token, and records its use', async () => {
     const { user } = await makeUser();
     const token = await makeToken(user);
-    expect(await toolNames(bearer(token))).to.eql([...PUBLIC_TOOLS, ...ACCOUNT_TOOLS].sort());
+    // The write tools too, so an assistant with a read-only token can say why it changes nothing.
+    expect(await toolNames(bearer(token))).to.eql([...PUBLIC_TOOLS, ...ACCOUNT_TOOLS, ...WRITE_TOOLS].sort());
     expect((await AccessToken.findOne({ hash: hashToken(token) }))!.lastUsedAt).to.be.an.instanceOf(Date);
   });
 
@@ -799,7 +865,13 @@ describe('MCP: personal access tokens', () => {
       expect(one.checks.limitSet.id).to.equal('hesselberth-roy');
       expect(one).to.not.have.property('firing');
       expect(one).to.not.have.property('sgTarget');
+      // The chemistry against the firing asked about: a stoneware glaze with no boron at cone 6 fits; at cone 04, it looks hotter.
+      expect(one.coneFit).to.include({ verdict: 'fits', looksLike: null });
+      const low = await data('get_recipe', { id: recipeId, firing: { cone: '04' } }, headers);
+      expect(low.coneFit).to.include({ verdict: 'hotter', strength: 'firm' });
+      expect(low.coneFit.text).to.include('where food or drink will touch');
       expect((await data('get_recipe', { id: recipeId }, headers)).checks).to.equal(undefined);
+      expect(await data('get_recipe', { id: recipeId }, headers)).to.not.have.property('coneFit');
       const theirs = await call('get_recipe', { id: otherRecipeId }, headers);
       expect(theirs.isError).to.equal(true);
       expect((await call('get_recipe', { id: 'nonsense' }, headers)).isError).to.equal(true);
@@ -816,6 +888,8 @@ describe('MCP: personal access tokens', () => {
         expect(saved.checks.bandUsed).to.equal('mid');
         expect(saved.checks.firingFrom).to.equal('recipe');
         expect(saved.checks).to.not.have.property('celsius');
+        // The band chosen on the recipe, read at its cone (10), as the recipe page does.
+        expect(saved.coneFit.against).to.deep.include({ bands: ['high'], chosen: 'high' });
         await User.updateOne({ _id: mine.user._id }, { $set: { 'preferences.limitSet': 'hesselberth-roy' } });
         expect((await data('get_recipe', { id: recipeId }, headers)).checks.band).to.equal('high');
         // A firing asked about wins over the saved one.
@@ -836,7 +910,15 @@ describe('MCP: personal access tokens', () => {
             firedAt: { scale: 'orton', low: '6', high: '10', tested: ['10'], atmospheres: ['reduction'] },
             foodSurface: true,
             // The second log is gone (in the Trash, or deleted): an assistant is never given its id.
-            firings: [{ firing: firingId, result: 'glossy' }, { firing: new mongoose.Types.ObjectId().toString() }]
+            firings: [
+              { firing: firingId, result: 'glossy', cone: '10', atmosphere: 'reduction' },
+              { firing: new mongoose.Types.ObjectId().toString() }
+            ],
+            // A result at a cone outside the range is kept, and given as it is.
+            coneResults: [
+              { cone: '10', atmosphere: 'reduction', summary: 'Glossy, breaks brown on edges' },
+              { cone: '5', summary: 'Underfired' }
+            ]
           }
         }
       );
@@ -851,10 +933,16 @@ describe('MCP: personal access tokens', () => {
           bands: ['mid', 'high']
         });
         expect(one.foodSurface).to.equal(true);
-        expect(one.firings).to.eql([{ firingId, result: 'glossy' }]);
+        expect(one.firings).to.eql([{ firingId, result: 'glossy', cone: '10', atmosphere: 'reduction' }]);
+        expect(one.coneResults).to.eql([
+          { cone: '10', atmosphere: 'reduction', summary: 'Glossy, breaks brown on edges' },
+          { cone: '5', summary: 'Underfired' }
+        ]);
         expect(one.checks.band).to.equal('mid');
         expect(one.checks.firingFrom).to.equal('firedAt');
         expect(one.checksAtOtherBands.high.band).to.equal('high');
+        expect(one.coneFit.against.bands).to.eql(['mid', 'high']);
+        expect(one.coneFit.verdict).to.equal('fits');
         const titles = (list: Json) => list.recipes.map((r: { title: string }) => r.title);
         expect(titles(await data('list_recipes', { cone: '8' }, headers))).to.eql(['Satin white']);
         expect(titles(await data('list_recipes', { cone: '06' }, headers))).to.eql([]);
@@ -870,7 +958,10 @@ describe('MCP: personal access tokens', () => {
         expect((await data('list_recipes', { cone: '10' }, headers)).recipes[0].firedAt.tested).to.eql(['10']);
         expect((await call('list_recipes', { cone: '6a' }, headers)).isError).to.equal(true);
       } finally {
-        await Recipe.updateOne({ _id: recipeId }, { $unset: { firedAt: 1, foodSurface: 1, firings: 1 } });
+        await Recipe.updateOne(
+          { _id: recipeId },
+          { $unset: { firedAt: 1, foodSurface: 1, firings: 1, coneResults: 1 } }
+        );
       }
     });
 
@@ -950,6 +1041,314 @@ const until = async (ok: () => boolean, what: string): Promise<void> => {
   expect(ok(), what).to.equal(true);
 };
 
+describe('MCP: the write tools', () => {
+  let mine: Awaited<ReturnType<typeof makeUser>>;
+  let headers: Record<string, string>;
+  let ownedBy: string;
+  beforeEach(async () => {
+    mine = await makeUser();
+    ownedBy = String(mine.user._id);
+    headers = bearer(await makeToken(mine.user, { scopes: ['data:write'] }));
+  });
+  afterEach(() => {
+    process.env.RATE_LIMITS = 'off';
+  });
+
+  it('say they change things, and need a token that can', async () => {
+    const tools = ((await rpc('tools/list', {}, headers)).body!.result as { tools: Json[] }).tools;
+    for (const name of WRITE_TOOLS) {
+      const tool = tools.find((t) => t.name === name)!;
+      expect(tool.annotations, name).to.include({ readOnlyHint: false, openWorldHint: false });
+      expect(tool.description, name).to.include('Needs an access token that can read and change your records.');
+    }
+    const init = await rpc('initialize', {
+      protocolVersion: PROTOCOL,
+      capabilities: {},
+      clientInfo: { name: 't', version: '1' }
+    });
+    const instructions = (init.body!.result as { instructions: string }).instructions;
+    expect(instructions).to.include('move_to_trash').and.include('read-only token').and.not.include('never change');
+  });
+
+  it('refuse a read-only token, changing nothing', async () => {
+    const read = bearer(await makeToken(mine.user, { scopes: ['data:read'] }));
+    const id = (
+      await api()
+        .post('/recipe/create')
+        .set('Authorization', 'Bearer ' + mine.token)
+        .send({ title: 'Mine', materials: [{ name: 'Silica', amount: '1' }] })
+    ).body._id as string;
+    const calls: Array<[string, object]> = [
+      ['create_recipe', { title: 'New', lines: LINES }],
+      ['update_recipe', { id, title: 'Changed' }],
+      ['add_notebook_entry', { content: 'Hello' }],
+      ['add_my_material', { name: 'Spar', analysis: { SiO2: 70, Al2O3: 18, K2O: 12 } }],
+      ['update_my_material', { id, name: 'x' }],
+      ['add_to_shelf', { materials: ['Silica'] }],
+      ['remove_from_shelf', { materials: ['Silica'] }],
+      ['move_to_trash', { kind: 'recipe', id }]
+    ];
+    for (const [name, args] of calls) {
+      const result = await call(name, args, read);
+      expect(result.isError, name).to.equal(true);
+      expect(result.content[0]!.text, name).to.equal(READ_ONLY_TOKEN);
+    }
+    expect(await Recipe.countDocuments({ ownedBy })).to.equal(1);
+    expect((await Recipe.findById(id))!.title).to.equal('Mine');
+    expect(await Activity.countDocuments({ ownedBy })).to.equal(0);
+    expect((await User.findById(mine.user._id))!.shelf ?? []).to.eql([]);
+  });
+
+  it('create_recipe saves a recipe with the unity formula the server works out, as the account’s', async () => {
+    const made = await data(
+      'create_recipe',
+      {
+        title: 'Satin',
+        lines: LINES,
+        colorants: [{ name: 'Cobalt Carbonate', amount: 1 }],
+        notes: 'From the assistant',
+        firing: 'mid'
+      },
+      headers
+    );
+    const expected = await data('analyze_recipe', { lines: LINES }, headers);
+    expect(made.analysis.unityFormula).to.eql(expected.unityFormula);
+    const saved = (await Recipe.findById(made.id).lean())!;
+    expect(saved).to.include({ ownedBy, title: 'Satin', firing: 'mid', includeAdditives: false });
+    expect(saved.notes).to.eql(['From the assistant']);
+    expect(saved.materials).to.have.length(4);
+    // A library material keeps the id the app keeps for it.
+    expect((saved.materials[0] as { _id?: string })._id).to.be.a('string');
+    expect((saved.computed[0] as { uList: Record<string, number> }).uList.SiO2).to.be.closeTo(
+      expected.unityFormula.SiO2,
+      0.01
+    );
+    expect(saved.additives).to.have.length(1);
+    expect(saved.additives[0]).to.include({ name: 'Cobalt carbonate', amount: '1', unit: 'percent' });
+    const [line] = await Activity.find({ ownedBy }).lean();
+    expect(line).to.include({ action: 'create', fromCollection: 'recipes', via: 'pat', title: 'Satin' });
+    expect(line!.client).to.equal('Test token');
+    // It reads as any other.
+    expect((await data('list_recipes', {}, headers)).recipes[0].title).to.equal('Satin');
+    // A material not found, or a recipe with no flux, is refused and nothing is saved.
+    for (const lines of [[{ material: 'Unobtainium', amount: 10 }], [{ material: 'Silica', amount: 10 }]]) {
+      const refused = await call('create_recipe', { title: 'Bad', lines }, headers);
+      expect(refused.isError).to.equal(true);
+    }
+    expect(await Recipe.countDocuments({ ownedBy })).to.equal(1);
+  });
+
+  it('keep within the account’s limit on records', async () => {
+    process.env.ACCOUNT_MAX_RECORDS = '1';
+    try {
+      expect((await call('add_notebook_entry', { content: 'One' }, headers)).isError).to.not.equal(true);
+      const tries: Array<[string, object]> = [
+        ['create_recipe', { title: 'Two', lines: LINES }],
+        ['add_notebook_entry', { content: 'Two' }],
+        ['add_my_material', { name: 'Spar', analysis: { SiO2: 70, Al2O3: 18, K2O: 12 } }]
+      ];
+      for (const [name, args] of tries) {
+        const refused = await call(name, args, headers);
+        expect(refused.isError, name).to.equal(true);
+        expect(refused.content[0]!.text, name).to.include('An account can keep up to 1 records');
+      }
+    } finally {
+      delete process.env.ACCOUNT_MAX_RECORDS;
+    }
+  });
+
+  it('update_recipe changes only the account’s own recipe, keeping a version Undo puts back', async () => {
+    const { id } = await data('create_recipe', { title: 'Satin', lines: LINES }, headers);
+    const changed = await data(
+      'update_recipe',
+      { id, title: 'Satin 2', lines: [...LINES.slice(0, 3), { material: 'Silica', amount: 30 }] },
+      headers
+    );
+    expect(changed.changed).to.have.members(['title', 'materials']);
+    expect(changed.analysis.unityFormula.SiO2).to.be.above(0);
+    const versions = await RecordVersion.find({ ownedBy, recordId: id }).lean();
+    expect(versions).to.have.length(1);
+    expect(versions[0]).to.include({ by: 'pat', fromCollection: 'recipes' });
+    const log = await Activity.find({ ownedBy }).sort({ at: 1, _id: 1 }).lean();
+    expect(log.map((l) => [l.action, l.title])).to.eql([
+      ['create', 'Satin'],
+      ['change', 'Satin 2']
+    ]);
+    const undone = await api()
+      .post('/recipe/undo/' + id)
+      .set('Authorization', 'Bearer ' + mine.token);
+    expect(undone.body.record.title).to.equal('Satin');
+
+    const other = await makeUser();
+    const theirs = (
+      await api()
+        .post('/recipe/create')
+        .set('Authorization', 'Bearer ' + other.token)
+        .send({ title: 'Theirs', materials: [{ name: 'Silica', amount: '1' }] })
+    ).body._id as string;
+    for (const target of [theirs, 'not-an-id', new mongoose.Types.ObjectId().toString()]) {
+      const refused = await call('update_recipe', { id: target, title: 'Mine now' }, headers);
+      expect(refused.isError, target).to.equal(true);
+      expect(refused.content[0]!.text).to.include('No recipe with id');
+    }
+    expect((await Recipe.findById(theirs))!.title).to.equal('Theirs');
+    expect((await call('update_recipe', { id }, headers)).isError).to.equal(true);
+  });
+
+  it('add_notebook_entry adds to the Notebook page', async () => {
+    const { id } = await data('add_notebook_entry', { title: 'Tiles', content: 'Crawled at the rim' }, headers);
+    const note = (await Note.findById(id).lean())!;
+    expect(note).to.include({ ownedBy, relatedCollection: 'Notes', relatedId: 'general notes', title: 'Tiles' });
+    const listed = await data('list_notes', {}, headers);
+    expect(listed.notes.map((n: { id: string }) => n.id)).to.include(id);
+  });
+
+  it('add_my_material and update_my_material keep the account’s materials, by name, with versions', async () => {
+    const added = await data(
+      'add_my_material',
+      { name: 'Local spar', analysis: { SiO2: 68, Al2O3: 18, K2O: 10, Na2O: 3 }, loi: 0.5 },
+      headers
+    );
+    const saved = (await Material.findById(added.id).lean())!;
+    expect(saved).to.include({ ownedBy, percentmole: 'percent', loi: 0.5 });
+    expect(saved.fields).to.have.length(4);
+    expect(saved.equivalent).to.be.above(0);
+    // Another of the same name is refused; a recipe can use it by name.
+    const twice = await call('add_my_material', { name: 'local SPAR', analysis: { SiO2: 1 } }, headers);
+    expect(twice.content[0]!.text).to.include('You already have a material named Local spar');
+    await data(
+      'create_recipe',
+      { title: 'With mine', lines: [{ material: 'Local spar', amount: 60 }, ...LINES.slice(1)] },
+      headers
+    );
+
+    const changed = await data('update_my_material', { id: added.id, name: 'Local spar 2', loi: 1 }, headers);
+    expect(changed.changed).to.have.members(['name', 'loi', 'fields']);
+    expect((await Material.findById(added.id).lean())!).to.include({ name: 'Local spar 2', loi: 1 });
+    expect(await RecordVersion.countDocuments({ ownedBy, recordId: added.id, by: 'pat' })).to.equal(1);
+    const other = await makeUser();
+    const copy: Record<string, unknown> = { ...saved };
+    delete copy._id;
+    const theirs = await Material.create({ ...copy, ownedBy: String(other.user._id) });
+    const refused = await call('update_my_material', { id: String(theirs._id), name: 'x' }, headers);
+    expect(refused.content[0]!.text).to.include('No material with id');
+  });
+
+  it('add_to_shelf and remove_from_shelf keep the shelf as the app does', async () => {
+    const added = await data('add_to_shelf', { materials: ['Whiting', 'epk', 'Silica'] }, headers);
+    expect(added.added).to.have.length(3);
+    const shelf = (await User.findById(mine.user._id))!.shelf!;
+    const standard = standardData.load<{ _id: unknown; name: string }>('materials');
+    expect(shelf).to.include(String(standard.find((m) => m.name === 'Whiting')!._id));
+    expect((await data('get_shelf', {}, headers)).materials).to.have.length(3);
+    // Twice is once.
+    await data('add_to_shelf', { materials: ['Whiting'] }, headers);
+    expect((await User.findById(mine.user._id))!.shelf).to.have.length(3);
+    const unknown = await call('add_to_shelf', { materials: ['Unobtainium'] }, headers);
+    expect(unknown.isError).to.equal(true);
+
+    const removed = await data('remove_from_shelf', { materials: ['Whiting', 'Custer Spar'] }, headers);
+    expect(removed.removed).to.eql(['Whiting']);
+    expect(removed.notOnShelf).to.eql(['Custer Spar']);
+    expect((await User.findById(mine.user._id))!.shelf).to.have.length(2);
+  });
+
+  it('move_to_trash moves the account’s own record to the Trash, never deleting it', async () => {
+    const { id } = await data('create_recipe', { title: 'Satin', lines: LINES }, headers);
+    const shared = await api()
+      .post('/share/recipe/' + id)
+      .set('Authorization', 'Bearer ' + mine.token);
+    const moved = await data('move_to_trash', { kind: 'recipe', id }, headers);
+    expect(moved).to.include({ kind: 'recipe', id, title: 'Satin' });
+    expect(await Recipe.countDocuments({ _id: id })).to.equal(0);
+    const entry = (await Trash.findOne({ ownedBy, recordId: id }).lean())!;
+    expect(entry).to.include({ fromCollection: 'recipes', by: 'pat' });
+    // Its share link stopped.
+    expect(shared).to.have.status(200);
+    expect(await ShareLink.countDocuments({ recipeId: id })).to.equal(0);
+    expect((await Activity.findOne({ ownedBy, action: 'trash' }).lean())!.title).to.equal('Satin');
+    // Put back on the website, it is as it was.
+    const back = await api()
+      .post('/trash/restore/' + String(entry._id))
+      .set('Authorization', 'Bearer ' + mine.token);
+    expect(back.body.record.title).to.equal('Satin');
+
+    const other = await makeUser();
+    const theirs = (
+      await api()
+        .post('/notes/create')
+        .set('Authorization', 'Bearer ' + other.token)
+        .send({ content: 'Theirs', relatedCollection: 'Notes', relatedId: 'general notes' })
+    ).body._id as string;
+    const refused = await call('move_to_trash', { kind: 'note', id: theirs }, headers);
+    expect(refused.content[0]!.text).to.include('No notebook entry with id');
+    expect(await Note.countDocuments({ _id: theirs })).to.equal(1);
+    // The wrong kind finds nothing either.
+    expect((await call('move_to_trash', { kind: 'firing', id }, headers)).isError).to.equal(true);
+  });
+
+  it('move_to_trash is refused when the Trash is full, and past the token’s removals an hour', async () => {
+    const recipes = await Recipe.insertMany(
+      Array.from({ length: 2 }, (_, i) => ({ title: 'R' + i, materials: [{}], ownedBy }))
+    );
+    await Trash.insertMany(
+      Array.from({ length: TRASH_MAX_ACCOUNT }, () => ({
+        ownedBy,
+        fromCollection: 'notes',
+        record: {},
+        trashedAt: new Date()
+      }))
+    );
+    const full = await call('move_to_trash', { kind: 'recipe', id: String(recipes[0]!._id) }, headers);
+    expect(full.content[0]!.text).to.include('the Trash is full');
+    expect(await Recipe.countDocuments({ ownedBy })).to.equal(2);
+    await Trash.deleteMany({ ownedBy });
+
+    const row = (await AccessToken.findOne({ userId: mine.user._id }))!;
+    process.env.RATE_LIMITS = 'on';
+    for (let i = 0; i < TOKEN_DELETES_PER_HOUR; i++) expect(await countTokenDelete(String(row._id))).to.equal(true);
+    const over = await call('move_to_trash', { kind: 'recipe', id: String(recipes[1]!._id) }, headers);
+    expect(over.content[0]!.text).to.include(`moved ${TOKEN_DELETES_PER_HOUR} records to the Trash`);
+    expect(await Recipe.countDocuments({ ownedBy })).to.equal(2);
+  });
+
+  it(`count against the account’s ${TOKEN_WRITE_LIMITS.minute} changes a minute, with the record routes`, async function () {
+    this.timeout(30000);
+    process.env.RATE_LIMITS = 'on';
+    for (let i = 0; i < TOKEN_WRITE_LIMITS.minute; i++) {
+      expect((await call('add_notebook_entry', { content: 'n' + i }, headers)).isError).to.not.equal(true);
+    }
+    const over = await call('add_notebook_entry', { content: 'over' }, headers);
+    expect(over.content[0]!.text).to.equal(TOO_MANY_CHANGES);
+    // The same count as the record routes, for any token of the account; reading goes on.
+    const rest = await api()
+      .post('/notes/create')
+      .set('Authorization', 'Bearer ' + (await makeToken(mine.user, { scopes: ['data:write'] })))
+      .send({ content: 'x', relatedCollection: 'Notes', relatedId: 'general notes' });
+    expect(rest).to.have.status(429);
+    expect((await call('list_notes', {}, headers)).isError).to.not.equal(true);
+    expect(await Note.countDocuments({ ownedBy })).to.equal(TOKEN_WRITE_LIMITS.minute);
+  });
+
+  it('stop the moment the token is revoked, and never take an OAuth token', async () => {
+    expect((await call('add_notebook_entry', { content: 'Before' }, headers)).isError).to.not.equal(true);
+    const row = (await AccessToken.findOne({ userId: mine.user._id }))!;
+    await api()
+      .delete('/tokens/' + String(row._id))
+      .set('Authorization', 'Bearer ' + mine.token);
+    const after = await rpc('tools/call', { name: 'add_notebook_entry', arguments: { content: 'After' } }, headers);
+    expect(after.status).to.equal(401);
+    const oauth = await makeToken(mine.user, { kind: 'oauth', scopes: ['data:write'] });
+    const viaOauth = await rpc(
+      'tools/call',
+      { name: 'add_notebook_entry', arguments: { content: 'OAuth' } },
+      bearer(oauth)
+    );
+    expect(viaOauth.status).to.equal(401);
+    expect(await Note.countDocuments({ ownedBy })).to.equal(1);
+  });
+});
+
 describe('MCP: subscription streams', () => {
   it(`keeps at most ${MOST_STREAMS_PER_ADDRESS} open from one address, and ends each when its client goes`, async () => {
     const clients = Array.from({ length: MOST_STREAMS_PER_ADDRESS }, () => new AbortController());
@@ -981,7 +1380,9 @@ describe('MCP: limits', () => {
     process.env.RATE_LIMITS = 'off';
   });
 
-  it('allows 60 requests a minute from one address without a token, more for an account', async () => {
+  it('allows 60 requests a minute from one address without a token, more for an account', async function () {
+    // About 360 requests: more than the default 5 s on a busy machine.
+    this.timeout(30000);
     const { user } = await makeUser();
     const token = await makeToken(user);
     process.env.RATE_LIMITS = 'on';

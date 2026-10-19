@@ -167,7 +167,7 @@ Rio Grande, düzgün topraklanmış bir prizi olan **ayrı bir hat** (başka hi�
 
 ### Pişirim biterken orada olun
 
-**Kiln sitter**{{en: kiln sitter}}, birçok manuel fırındaki mekanik anahtardır: pişirimin sonunda küçük bir piramit eğilir ve anahtarı kapatır. Kullanım kılavuzu, bunun “bir arıza emniyeti kapatma düzeneği olarak çalışmak üzere TASARLANMADIĞINI” söyler. Rio Grande, pişirim sürerken fırını, “özellikle beklenen kapanma saatine yakın”, asla başında kimse olmadan bırakmamayı söyler. Bu yüzden pişirim sürerken, özellikle sona doğru, fırının yakınında kalın ve fırını kontrol edin; pişirimi yalnızca bunu yapmak için evde ve uyanık bir yetişkin olacağı zamanlarda yapın, fırının kapandığını kontrol edin ve fırın odasında ABC tipi bir yangın söndürücü bulundurun. Kiln sitter’ların, kontrol ünitelerinin ve pişirim programlarının nasıl çalıştığı için [Basit bir fırında pişirim](/guides/firing) rehberine bakın.
+**Kiln sitter**{{en: kiln sitter}}, birçok manuel fırındaki mekanik anahtardır: pişirimin sonunda küçük bir piramit eğilir ve anahtarı kapatır. Kullanım kılavuzu, bunun “bir arıza emniyeti kapatma düzeneği olarak çalışmak üzere TASARLANMADIĞINI” söyler. Rio Grande, pişirim sürerken fırını, “özellikle beklenen kapanma saatine yakın”, asla başında kimse olmadan bırakmamayı söyler. Bu yüzden pişirim sürerken, özellikle sona doğru, fırının yakınında kalın ve fırını kontrol edin; pişirimi yalnızca tüm pişirim boyunca evde ve uyanık bir yetişkin olacağı zamanlarda yapın, fırının kapandığını kontrol edin ve fırın odasında ABC tipi bir yangın söndürücü bulundurun. Kiln sitter’ların, kontrol ünitelerinin ve pişirim programlarının nasıl çalıştığı için [Basit bir fırında pişirim](/guides/firing) rehberine bakın.
 
 ### Dumanlar ve karbon monoksit
 

@@ -244,6 +244,23 @@ describe('RecipePrint', () => {
     expect(text(fixture, '.print-firing strong')).toBe('Tested at cone 6');
   });
 
+  it('prints the results by cone and atmosphere on the whole recipe, without the firing logs', async () => {
+    const { fixture } = await create({
+      ...RECIPE,
+      firedAt: { scale: 'orton', low: '6', atmospheres: ['oxidation', 'reduction'] },
+      firings: [{ firing: 'f1', cone: '6', atmosphere: 'reduction', result: 'kiln 2' }],
+      coneResults: [
+        { cone: '6', atmosphere: 'oxidation', summary: 'Satin' },
+        { cone: '6', atmosphere: 'reduction', summary: 'Celadon' }
+      ]
+    });
+    const printed = text(fixture, '.print-cone-summaries');
+    expect(printed).toContain('Results by cone');
+    expect(printed).toContain('cone 6 · oxidation');
+    expect(printed).toContain('Celadon');
+    expect(printed).not.toContain('kiln 2');
+  });
+
   it('makes the batch list a mix ticket: batch number, date, target SG when there is one, and lines to sign', async () => {
     const { fixture, root } = await create({ ...RECIPE, sgTarget: 1.45 });
     // Only the batch list asks for a batch number.

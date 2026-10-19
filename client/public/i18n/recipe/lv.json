@@ -272,7 +272,7 @@
     "numbers": {
       "heading": "Analīzes un robežvērtību lasīšana",
       "analysis": "<b>Analīze un robežvērtības</b> zem receptes parāda katra oksīda molus, mol% un masas % pēc apdedzināšanas, karsēšanas zudumus un aprēķināto termisko izplešanos, kas ir tuvinājums glazūru salīdzināšanai.",
-      "limits": "<b>Robežvērtības</b> salīdzina Zēgera formulu ar robežvērtību kopu: ar Heselberta (Hesselberth) un Roja (Roy) stabilo glazūru robežvērtībām, ja vien neizvēlaties Glazecalc paša robežvērtības (izvēle tiek saglabāta kopā ar jūsu iestatījumiem). Izvēlieties <b>Apdedzināšana</b>, lai to pārbaudītu pret pareizajiem skaitļiem; tā tiek saglabāta kopā ar recepti. Heselberta un Roja skaitļi attiecas uz konusu 6 un konusu 10, tāpēc zemā apdedzināšanā tiek rādīts, ka tie neattiecas. Tās ir vadlīnijas, nevis “izturēts” vai “neizturēts”.",
+      "limits": "<b>Robežvērtības</b> salīdzina Zēgera formulu ar robežvērtību kopu: ar Heselberta (Hesselberth) un Roja (Roy) stabilo glazūru robežvērtībām, ja vien neizvēlaties Glazecalc paša robežvērtības (izvēle tiek saglabāta kopā ar jūsu iestatījumiem). Tās pārbauda apdedzināšanas joslu, ko norāda receptes <b>Apdedzināšana</b>: tās konusu vai diapazonu. Ja diapazons šķērso joslas, piemēram, konuss 6 līdz 10, abu joslu pārbaudes tiek rādītas blakus. Lai pārbaudītu tikai vienu joslu, izvēlieties to pašu robežvērtību lodziņā <b>Apdedzināšana</b>, kas aizstāj receptes apdedzināšanu un tiek saglabāts kopā ar recepti. Heselberta un Roja skaitļi attiecas uz konusu 6 un konusu 10, tāpēc zemā temperatūrā tiek norādīts, ka tie neattiecas. Tie ir orientieri, nevis izturēts vai neizturēts vērtējums. Augšpusē viena rindiņa salīdzina glazūras boru, silīcija dioksīdu un alumīnija oksīdu ar tās apdedzināšanu pēc Kaca (Katz) bora likuma un Heselberta un Roja skaitļiem neatkarīgi no izvēlētās robežvērtību kopas: tā sniedz piezīmi tikai tad, ja tie vienojas, ka glazūra izskatās pēc citas apdedzināšanas, norāda, kad nevar spriest (svins, litijs, raku un tamlīdzīgi), un ir orientieris, nevis pārbaude.",
       "stull": "<b>Stala (Stull) diagramma</b> attēlo glazūras silīcija dioksīdu pret tās alumīnija oksīdu, ar Stala matētā, pusmatētā un spīdīgā apgabaliem un robežvērtību kopas diapazoniem. Tas ir virsmas orientieris, nevis prognoze.",
       "slurry": "<b>Relatīvais blīvums un ūdens</b> izmanto Bronjāra (Brongniart) formulu: nosveriet izmērītu glazūras tilpumu, pēc tam apskatiet sauso glazūru spainī, ūdens daudzumu, kas vajadzīgs vēlamā relatīvā blīvuma sasniegšanai, vai ūdeni jaunai porcijai. Blīvumi atbilst jūsu iestatījumam relatīvajam blīvumam, Baumé grādiem vai pintes masai."
     },
@@ -472,7 +472,7 @@
     "expansionRises": "Tās aprēķinātā termiskā izplešanās palielinās no {was} līdz {now}.",
     "expansionRisesProbably": "Ja vecā glazūra tik tikko derēja jūsu mālam, šajā, visticamāk, veidosies matplaisas, dažkārt tikai pēc vairākām nedēļām.",
     "expansionRisesMay": "Ja vecā glazūra tik tikko derēja jūsu mālam, šajā var veidoties matplaisas, dažkārt tikai pēc vairākām nedēļām.",
-    "expansionRisesFix": "Matplaisas vājina izstrādājumus, un tās nav ieteicamas uz virsmām, kas saskaras ar pārtiku. Izplešanos samazina, ja daļu sodas un potaša aizstāj ar kušņiem ar mazāku izplešanos (bors, litijs, magnijs vai kalcijs); dažkārt iesaka pievienot silīcija dioksīdu, taču avoti nav vienisprātis.",
+    "expansionRisesFix": "Matplaisas vājina izstrādājumus, un uz pārtikas virsmām tās nav ieteicamas. Aizstājot daļu sodas un potaša ar kušņiem, kam ir mazāka izplešanās (bors, litijs, magnijs vai kalcijs), termiskā izplešanās samazinās; dažkārt iesaka pievienot silīcija dioksīdu, bet avoti šajā jautājumā nav vienisprātis.",
     "expansionFalls": "Tās aprēķinātā termiskā izplešanās samazinās no {was} līdz {now}. Nedaudz mazāka izplešanās parasti labāk novērš matplaisas.",
     "expansionFallsProbably": "Ja izplešanās ir daudz mazāka, visticamāk, notiks glazūras atšķelšanās, ar asiem atšķēlumiem no malām un šķautnēm.",
     "expansionFallsCan": "Ja izplešanās ir daudz mazāka, var notikt glazūras atšķelšanās, ar asiem atšķēlumiem no malām un šķautnēm.",
@@ -598,6 +598,36 @@
     "firingFromBlock": "No receptes apdedzināšanas ({bands})",
     "bothBands": "Receptes apdedzināšana aptver {bands}, tāpēc katra tiek pārbaudīta atsevišķi, blakus citai: glazūra reti uzvedas vienādi abos galos.",
     "fromFiring": "Skaitļi attiecas uz receptes apdedzināšanu: {band}. Lai pārbaudītu citu, augstāk izvēlieties apdedzināšanu."
+  },
+  "coneFit": {
+    "cooler": "Šīs glazūras ķīmija vairāk izskatās pēc {looksLike, select, low {zemas temperatūras} other {vidējas temperatūras}} glazūras nekā pēc glazūras, kas paredzēta šādai apdedzināšanai: {scale, select, band {{band, select, low {zemas temperatūras apdedzināšana} mid {vidējas temperatūras apdedzināšana} other {augstas temperatūras apdedzināšana}}} sk {SK {cone}} temperature {{cone} °C} other {konuss {cone}}}.",
+    "coolerSoft": "Šīs glazūras ķīmija vairāk atbilst vēsākai apdedzināšanai nekā šī: {scale, select, band {{band, select, low {zemas temperatūras apdedzināšana} mid {vidējas temperatūras apdedzināšana} other {augstas temperatūras apdedzināšana}}} sk {SK {cone}} temperature {{cone} °C} other {konuss {cone}}}, tuvāk konusam 6, lai gan ar ķīmiju vien konusa 6 un konusa 10 glazūras var atšķirt tikai aptuveni.",
+    "hotter": "Šīs glazūras ķīmija vairāk izskatās pēc {looksLike, select, high {augstas temperatūras} other {vidējas temperatūras}} glazūras nekā pēc glazūras, kas paredzēta šādai apdedzināšanai: {scale, select, band {{band, select, low {zemas temperatūras apdedzināšana} mid {vidējas temperatūras apdedzināšana} other {augstas temperatūras apdedzināšana}}} sk {SK {cone}} temperature {{cone} °C} other {konuss {cone}}}.",
+    "hotterSoft": "Šīs glazūras ķīmija vairāk atbilst karstākai apdedzināšanai nekā šī: {scale, select, band {{band, select, low {zemas temperatūras apdedzināšana} mid {vidējas temperatūras apdedzināšana} other {augstas temperatūras apdedzināšana}}} sk {SK {cone}} temperature {{cone} °C} other {konuss {cone}}}, tuvāk konusam 10, lai gan ar ķīmiju vien konusa 6 un konusa 10 glazūras var atšķirt tikai aptuveni.",
+    "closer": "No diapazona, kādam tā norādīta, šīs glazūras ķīmija izskatās tuvāka šim galam: {scale, select, band {{band, select, low {zemas temperatūras apdedzināšana} mid {vidējas temperatūras apdedzināšana} other {augstas temperatūras apdedzināšana}}} sk {SK {cone}} temperature {{cone} °C} other {konuss {cone}}}.",
+    "coolerSilica": "Tajā ir vairāk bora ({boron}), nekā parasti vajag glazūrām šādai apdedzināšanai: {scale, select, band {{band, select, low {zemas temperatūras apdedzināšana} mid {vidējas temperatūras apdedzināšana} other {augstas temperatūras apdedzināšana}}} sk {SK {cone}} temperature {{cone} °C} other {konuss {cone}}}, un mazāk silīcija dioksīda ({silica}), nekā tām parasti ir.",
+    "coolerAlumina": "Tajā ir vairāk bora ({boron}), nekā parasti vajag glazūrām šādai apdedzināšanai: {scale, select, band {{band, select, low {zemas temperatūras apdedzināšana} mid {vidējas temperatūras apdedzināšana} other {augstas temperatūras apdedzināšana}}} sk {SK {cone}} temperature {{cone} °C} other {konuss {cone}}}, un maz alumīnija oksīda ({alumina}).",
+    "coolerBoth": "Tajā ir vairāk bora ({boron}), nekā parasti vajag glazūrām šādai apdedzināšanai: {scale, select, band {{band, select, low {zemas temperatūras apdedzināšana} mid {vidējas temperatūras apdedzināšana} other {augstas temperatūras apdedzināšana}}} sk {SK {cone}} temperature {{cone} °C} other {konuss {cone}}}, un mazāk silīcija dioksīda ({silica}) un alumīnija oksīda ({alumina}), nekā tām parasti ir.",
+    "hotterSilica": "Tajā ir maz bora ({boron}) šādai apdedzināšanai: {scale, select, band {{band, select, low {zemas temperatūras apdedzināšana} mid {vidējas temperatūras apdedzināšana} other {augstas temperatūras apdedzināšana}}} sk {SK {cone}} temperature {{cone} °C} other {konuss {cone}}}, un vairāk silīcija dioksīda ({silica}), nekā parasti ir glazūrām šādā apdedzināšanā.",
+    "coolerEffect": "Šādā apdedzināšanā tā var notecēt vai pārlieku izkust: vispirms apdedziniet izmēģinājuma plāksnīti uz biskvīta paliktņa, kas uztver notecējumus.",
+    "hotterEffect": "Šādā apdedzināšanā tā var izrādīties nepietiekami apdedzināta: sausa, raupja vai ne līdz galam noslēgta. Apdedziniet to izmēģinājumam, pirms lietojat uz izstrādājumiem, un jo īpaši pirms lietojat tur, kur pieskarsies ēdiens vai dzēriens.",
+    "hotterEffectSoft": "Dažas glazūras šādā apdedzināšanā izkūst bez bora, tāpēc tas ir tikai mājiens: pārbaudiet uz izmēģinājuma plāksnītes, vai tā izkūst pilnībā.",
+    "gerstley": "Daļa tās bora nāk no Gerstley borāta, kas dažādās partijās atšķiras, tāpēc šis skaitlis ir mazāk drošs.",
+    "guide": "Tas salīdzina ķīmiju ar publicētiem skaitļiem: tas ir orientieris, nevis pārbaude. Ja glazūra jums šajā konusā ir labi apdedzinājusies, ticiet savām plāksnītēm.",
+    "fits": "Tās bors, silīcija dioksīds un alumīnija oksīds neliecina pret šādu apdedzināšanu: {scale, select, band {{band, select, low {zemas temperatūras apdedzināšana} mid {vidējas temperatūras apdedzināšana} other {augstas temperatūras apdedzināšana}}} sk {SK {cone}} temperature {{cone} °C} other {konuss {cone}}}. Tas ir orientieris, nevis pārbaude: tas neko neliecina par to, vai glazūra ir stabila vai droša saskarei ar pārtiku.",
+    "sources": "Avoti:",
+    "skip": {
+      "lead": "Glazecalc nevar salīdzināt šīs glazūras ķīmiju ar tās apdedzināšanu: liela daļa tās kausējuma nāk no svina, ko šajā pārbaudē izmantotie publicētie skaitļi neaptver.",
+      "lithium": "Glazecalc nevar salīdzināt šīs glazūras ķīmiju ar tās apdedzināšanu: liela daļa tās kausējuma nāk no litija, ko šajā pārbaudē izmantotie publicētie skaitļi neaptver.",
+      "alkali": "Glazecalc nevar salīdzināt šīs glazūras ķīmiju ar tās apdedzināšanu: liela daļa tās kausējuma nāk no sodas un potaša, ko šajā pārbaudē izmantotie publicētie skaitļi neaptver.",
+      "zinc": "Glazecalc nevar salīdzināt šīs glazūras ķīmiju ar tās apdedzināšanu: tajā ir daudz cinka, kā kristāliskajās glazūrās, ko šajā pārbaudē izmantotie publicētie skaitļi neaptver.",
+      "notGlaze": "Glazecalc nevar salīdzināt šīs glazūras ķīmiju ar tās apdedzināšanu: tās formula nav parastas glazūras formula (ļoti maz vai ļoti daudz silīcija dioksīda vai daudz krāsojošo oksīdu), tāpēc šajā pārbaudē izmantotie publicētie skaitļi tai neder.",
+      "process": "Glazecalc nevar salīdzināt šīs glazūras ķīmiju ar tās apdedzināšanu: tā ir paredzēta {process, select, raku {raku} salt {sāls} soda {sodas} wood {malkas} other {bedres}} apdedzināšanai, kurā daļu glazēšanas veic krāsns, ko šajā pārbaudē izmantotie publicētie skaitļi neaptver.",
+      "ash": "Glazecalc nevar salīdzināt šīs glazūras ķīmiju ar tās apdedzināšanu: tajā ir pelni, kuru sastāvs ir pārāk mainīgs šajā pārbaudē izmantotajiem publicētajiem skaitļiem.",
+      "noTemperature": "Glazecalc nevar salīdzināt šīs glazūras ķīmiju ar šo apdedzināšanu ({scale, select, band {{band, select, low {zemas temperatūras apdedzināšana} mid {vidējas temperatūras apdedzināšana} other {augstas temperatūras apdedzināšana}}} sk {SK {cone}} temperature {{cone} °C} other {konuss {cone}}}): šim konusam nav izmērītas temperatūras.",
+      "between": "Glazecalc nevar salīdzināt šīs glazūras ķīmiju ar šo apdedzināšanu ({scale, select, band {{band, select, low {zemas temperatūras apdedzināšana} mid {vidējas temperatūras apdedzināšana} other {augstas temperatūras apdedzināšana}}} sk {SK {cone}} temperature {{cone} °C} other {konuss {cone}}}): šajā pārbaudē izmantotie publicētie skaitļi ir zemas temperatūras un vidējas un augstas temperatūras apdedzināšanai, nevis konusiem starp tiem (no 01 līdz 3).",
+      "belowChart": "Glazecalc nevar salīdzināt šīs glazūras ķīmiju ar šo apdedzināšanu ({scale, select, band {{band, select, low {zemas temperatūras apdedzināšana} mid {vidējas temperatūras apdedzināšana} other {augstas temperatūras apdedzināšana}}} sk {SK {cone}} temperature {{cone} °C} other {konuss {cone}}}): Kaca (Katz) bora likums attiecas uz konusiem no 06 līdz 10, un šī apdedzināšana ir vēsāka."
+    }
   },
   "stull": {
     "heading": "Stala diagramma",
@@ -904,7 +934,7 @@
     "foodSurface": "Virsmai, kas saskaras ar pārtiku (iekšpuses glazūrai)",
     "liner": {
       "note": "Piemērotība saskarei ar pārtiku ir atkarīga no tā, vai šī glazūra apdedzināta līdz konusam, ar kuru tā pārbaudīta: nepietiekami apdedzinātā glazūrā var notikt metālu izskalošanās.",
-      "range": "Tā norādīta diapazonam, tāpēc pārbaudiet to diapazona zemākajā galā, kur tā kūst vismazāk.",
+      "range": "Šīs glazūras apdedzināšana ir norādīta kā diapazons, tāpēc izmēģiniet to diapazona zemākajā galā, kur tā izkūst vismazāk.",
       "untested": "Vēl neviens konuss nav atzīmēts kā pārbaudīts.",
       "test": "Tikai jūsu pašu apdedzināto izstrādājumu metālu izskalošanās laboratorijas pārbaude parāda, vai tā ir droša saskarei ar pārtiku."
     },
@@ -967,5 +997,23 @@
     "replaceAsk": "Kā pārbaudīti atzīmēti: {now}. Vai aizstāt tos ar konusiem, ko min žurnāli: {logs}?",
     "replace": "Aizstāt",
     "keep": "Atstāt kā ir"
+  },
+  "coneCards": {
+    "heading": "Rezultāti pēc konusa",
+    "unplaced": "Nav piešķirti konusam",
+    "unplacedNote": "Šie apdedzināšanas žurnāli vēl nav piešķirti konusam: izvēlieties, kurā konusā katrs tika apdedzināts.",
+    "approx": "≈ {temperature}",
+    "cautions": "{count, plural, =0 {nav robežvērtību brīdinājumu} zero {# robežvērtību brīdinājumu} one {# robežvērtību brīdinājums} other {# robežvērtību brīdinājumi}}",
+    "logs": "{count, plural, =0 {nav apdedzināšanas žurnālu} zero {# apdedzināšanas žurnālu} one {# apdedzināšanas žurnāls} other {# apdedzināšanas žurnāli}}",
+    "outside": "ārpus norādītās apdedzināšanas",
+    "outsideChoice": "{place} (ārpus norādītās apdedzināšanas)",
+    "summaryLabel": "Kā sanāca šeit: {place}",
+    "summaryPlaceholder": "Virsma, krāsa, notecējumi, matplaisas...",
+    "noAtmosphere": "atmosfēra nav norādīta",
+    "placeLabel": "Kur apdedzināts: {title}",
+    "notPlaced": "Nav piešķirts",
+    "add": "Pievienot rezultātu šim:",
+    "addButton": "Pievienot",
+    "saveFailed": "Neizdevās saglabāt, kur apdedzināts apdedzināšanas žurnāls."
   }
 }

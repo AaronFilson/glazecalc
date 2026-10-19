@@ -272,7 +272,7 @@
     "numbers": {
       "heading": "An anailís agus na teorainneacha a léamh",
       "analysis": "Taispeánann <b>Anailís agus teorainneacha</b>, faoin oideas, móil gach ocsaíde, céatadán móil agus céatadán meáchain tar éis bácála, an chailliúint ar adhaint agus an fhorbairt theirmeach ríofa, meastachán chun glónraí a chur i gcomparáid.",
-      "limits": "Cuireann <b>Teorainneacha</b> an fhoirmle Seger i gcomparáid le sraith teorainneacha: teorainneacha glónraí cobhsaí Hesselberth & Roy mura roghnaíonn tú teorainneacha Glazecalc féin (sábháiltear an rogha le do shocruithe). Roghnaigh an rogha <b>Bácáil</b> chun é a sheiceáil leis na figiúirí cearta; sábháiltear leis an oideas í. Is do chón 6 agus do chón 10 atá figiúirí Hesselberth & Roy, mar sin ag ísealbhácáil deir sé nach bhfuil siad infheidhme. Is treoirlínte iad, ní pas ná teip.",
+      "limits": "Cuireann <b>Teorainneacha</b> an fhoirmle Seger i gcomparáid le sraith teorainneacha: teorainneacha glónraí cobhsaí Hesselberth & Roy mura roghnaíonn tú teorainneacha Glazecalc féin (sábháiltear an rogha le do shocruithe). Seiceálann sé an banda bácála a thugann <b>Bácáil</b> an oidis: a chón, nó a raon. Má thrasnaíonn raon bandaí, mar shampla cón 6 go 10, taispeántar seiceálacha an dá bhanda taobh le taobh. Chun banda amháin a sheiceáil, roghnaigh é i mbosca <b>Bácáil</b> na dteorainneacha féin, a sháraíonn bácáil an oidis agus a shábháiltear leis an oideas. Is do chón 6 agus do chón 10 atá figiúirí Hesselberth & Roy, mar sin ag ísealbhácáil deir sé nach bhfuil siad infheidhme. Is treoirlínte iad, ní pas ná teip. Ag an mbarr, cuireann líne amháin bórón, silice agus alúmana an ghlónra i gcomparáid lena bhácáil, de réir riail bhóróin Katz agus figiúirí Hesselberth & Roy cibé sraith teorainneacha a roghnaíonn tú: ní thugann sé nóta ach amháin nuair a aontaíonn siad go bhfuil an glónra cosúil le bácáil eile, deir sé nuair nach féidir leis breith (luaidhe, litiam, raku agus a leithéidí), agus is treoir é, ní tástáil.",
       "stull": "Léiríonn <b>Cairt Stull</b> silice an ghlónra i gcomparáid lena alúmana, le limistéir neamhlonracha, leath-neamhlonracha agus lonracha Stull agus raonta na sraithe teorainneacha. Is treoir don dromchla í, ní tuar.",
       "slurry": "Úsáideann <b>Sainmheáchan agus uisce</b> foirmle Brongniart: meáigh toirt thomhaiste den ghlónra, agus ansin féach an glónra tirim atá sa bhuicéad, an t-uisce a thugann go dtí an sainmheáchan atá uait é, nó an t-uisce do bhaisc nua. Leanann na luachanna dlúis do shocrú don sainmheáchan, do Baumé nó do mheáchan pionta."
     },
@@ -472,7 +472,7 @@
     "expansionRises": "Ardaíonn a fhorbairt theirmeach ríofa ó {was} go {now}.",
     "expansionRisesProbably": "Más ar éigean a d’oir an seanghlónra do do chré, is dócha go snáithlíonróidh an ceann seo, uaireanta seachtainí ina dhiaidh sin.",
     "expansionRisesMay": "Más ar éigean a d’oir an seanghlónra do do chré, d’fhéadfadh an ceann seo snáithlíonrú, uaireanta seachtainí ina dhiaidh sin.",
-    "expansionRisesFix": "Laghdaíonn snáithlíonrú neart na bpotaí agus ní mholtar é ar dhromchlaí a mbíonn bia orthu. Má mhalartaíonn tú roinnt sóide agus potaise ar fhloscanna a bhfuil forbairt theirmeach níos ísle acu (bórón, litiam, maignéisiam nó cailciam), íslíonn sé sin í. Moltar uaireanta silice a chur leis, ach ní réitíonn na foinsí le chéile.",
+    "expansionRisesFix": "Laghdaíonn snáithlíonrú neart na bpotaí agus ní mholtar é ar dhromchlaí bia. Má chuirtear flosc a bhfuil forbairt níos ísle acu (bórón, litiam, maignéisiam nó cailciam) in ionad cuid de shóid agus de photais, laghdaítear an fhorbairt theirmeach; molann roinnt foinsí silice a chur leis uaireanta, ach ní aontaíonn na foinsí.",
     "expansionFalls": "Titeann a fhorbairt theirmeach ríofa ó {was} go {now}. Is gnách gur fearr a sheasann forbairt atá beagán níos ísle in aghaidh an tsnáithlíonraithe.",
     "expansionFallsProbably": "Le forbairt i bhfad níos ísle, is dócha go dtarlóidh spallú glónra, le slisní géara ag scealpadh de na béil agus de na himill.",
     "expansionFallsCan": "Le forbairt i bhfad níos ísle, is féidir go dtarlóidh spallú glónra, le slisní géara ag scealpadh de na béil agus de na himill.",
@@ -598,6 +598,36 @@
     "firingFromBlock": "Ó bhácáil an oidis ({bands})",
     "bothBands": "Clúdaíonn bácáil an oidis {bands}, mar sin seiceáiltear gach ceann acu, taobh le taobh: is annamh a iompraíonn glónra ar an gcuma chéanna ag an dá cheann.",
     "fromFiring": "Is do bhácáil an oidis na figiúirí: {band}. Roghnaigh bácáil thuas chun ceann eile a sheiceáil."
+  },
+  "coneFit": {
+    "cooler": "Is cosúla ceimic an ghlónra seo le glónra {looksLike, select, low {ísealbhácála} other {meánbhácála}} ná le glónra don bhácáil seo: {scale, select, band {{band, select, low {ísealbhácáil} mid {meánbhácáil} other {ardbhácáil}}} sk {SK {cone}} temperature {{cone} °C} other {cón {cone}}}.",
+    "coolerSoft": "Claonann ceimic an ghlónra seo i dtreo bácála níos fuaire ná an bhácáil seo: {scale, select, band {{band, select, low {ísealbhácáil} mid {meánbhácáil} other {ardbhácáil}}} sk {SK {cone}} temperature {{cone} °C} other {cón {cone}}}, níos gaire do chón 6, cé nach n-insíonn an cheimic ina haonar glónraí chón 6 agus chón 10 óna chéile ach go garbh.",
+    "hotter": "Is cosúla ceimic an ghlónra seo le glónra {looksLike, select, high {ardbhácála} other {meánbhácála}} ná le glónra don bhácáil seo: {scale, select, band {{band, select, low {ísealbhácáil} mid {meánbhácáil} other {ardbhácáil}}} sk {SK {cone}} temperature {{cone} °C} other {cón {cone}}}.",
+    "hotterSoft": "Claonann ceimic an ghlónra seo i dtreo bácála níos teo ná an bhácáil seo: {scale, select, band {{band, select, low {ísealbhácáil} mid {meánbhácáil} other {ardbhácáil}}} sk {SK {cone}} temperature {{cone} °C} other {cón {cone}}}, níos gaire do chón 10, cé nach n-insíonn an cheimic ina haonar glónraí chón 6 agus chón 10 óna chéile ach go garbh.",
+    "closer": "As an raon dá bhfuil sé luaite, is cosúil go bhfuil ceimic an ghlónra seo níos gaire don cheann seo: {scale, select, band {{band, select, low {ísealbhácáil} mid {meánbhácáil} other {ardbhácáil}}} sk {SK {cone}} temperature {{cone} °C} other {cón {cone}}}.",
+    "coolerSilica": "Tá níos mó bóróin ann ({boron}) ná mar a bhíonn de ghnáth ag teastáil ó ghlónraí don bhácáil seo: {scale, select, band {{band, select, low {ísealbhácáil} mid {meánbhácáil} other {ardbhácáil}}} sk {SK {cone}} temperature {{cone} °C} other {cón {cone}}}, agus níos lú silice ({silica}) ná mar a bhíonn de ghnáth acu.",
+    "coolerAlumina": "Tá níos mó bóróin ann ({boron}) ná mar a bhíonn de ghnáth ag teastáil ó ghlónraí don bhácáil seo: {scale, select, band {{band, select, low {ísealbhácáil} mid {meánbhácáil} other {ardbhácáil}}} sk {SK {cone}} temperature {{cone} °C} other {cón {cone}}}, agus beagán alúmana ({alumina}).",
+    "coolerBoth": "Tá níos mó bóróin ann ({boron}) ná mar a bhíonn de ghnáth ag teastáil ó ghlónraí don bhácáil seo: {scale, select, band {{band, select, low {ísealbhácáil} mid {meánbhácáil} other {ardbhácáil}}} sk {SK {cone}} temperature {{cone} °C} other {cón {cone}}}, agus níos lú silice ({silica}) agus alúmana ({alumina}) ná mar a bhíonn de ghnáth acu.",
+    "hotterSilica": "Tá beagán bóróin ann ({boron}) don bhácáil seo: {scale, select, band {{band, select, low {ísealbhácáil} mid {meánbhácáil} other {ardbhácáil}}} sk {SK {cone}} temperature {{cone} °C} other {cón {cone}}}, agus níos mó silice ({silica}) ná mar a bhíonn de ghnáth ag glónraí ag an mbácáil sin.",
+    "coolerEffect": "Ag an mbácáil sin, d’fhéadfadh sé rith nó leá thar fóir: bácáil tíl tástála ar dhiosca brioscbhácáilte a ghabhfaidh aon sileadh, ar dtús.",
+    "hotterEffect": "Ag an mbácáil sin, d’fhéadfadh sé teacht amach tearcbhácáilte: tirim, garbh nó gan a bheith séalaithe go hiomlán. Bácáil mar thástáil é sula n-úsáideann tú ar photaí é, agus go háirithe sula n-úsáideann tú é i gcás a mbeidh bia nó deoch i dteagmháil leis.",
+    "hotterEffectSoft": "Leánn roinnt glónraí ag an mbácáil sin gan bórón, mar sin níl anseo ach leid: seiceáil ar tíl tástála go leánn sé go hiomlán.",
+    "gerstley": "Tagann cuid dá bhórón ó bhórát Gerstley, a athraíonn ó bhaisc go baisc, mar sin tá an figiúr sin níos lú cinnte.",
+    "guide": "Cuireann sé seo an cheimic i gcomparáid le figiúirí foilsithe: is treoir é, ní tástáil. Má bhácáil an glónra go maith duit ag an gcón seo, cuir muinín i do thíleanna.",
+    "fits": "Ní thugann a bhórón, a shilice agus a alúmana le fios nach bhfuil sé oiriúnach don bhácáil seo: {scale, select, band {{band, select, low {ísealbhácáil} mid {meánbhácáil} other {ardbhácáil}}} sk {SK {cone}} temperature {{cone} °C} other {cón {cone}}}. Is treoir é seo, ní tástáil: ní deir sé tada faoi cibé an bhfuil an glónra cobhsaí nó slán i gcomhair bia.",
+    "sources": "Foinsí:",
+    "skip": {
+      "lead": "Ní féidir le Glazecalc ceimic an ghlónra seo a chur i gcomparáid lena bhácáil: tagann cuid mhór dá leátán ó luaidhe, nach gclúdaíonn na figiúirí foilsithe a úsáideann an seiceáil seo.",
+      "lithium": "Ní féidir le Glazecalc ceimic an ghlónra seo a chur i gcomparáid lena bhácáil: tagann cuid mhór dá leátán ó litiam, nach gclúdaíonn na figiúirí foilsithe a úsáideann an seiceáil seo.",
+      "alkali": "Ní féidir le Glazecalc ceimic an ghlónra seo a chur i gcomparáid lena bhácáil: tagann cuid mhór dá leátán ó sóid agus ó photais, nach gclúdaíonn na figiúirí foilsithe a úsáideann an seiceáil seo.",
+      "zinc": "Ní féidir le Glazecalc ceimic an ghlónra seo a chur i gcomparáid lena bhácáil: tá a lán sinc ann, mar atá i nglónraí criostalta, nach gclúdaíonn na figiúirí foilsithe a úsáideann an seiceáil seo.",
+      "notGlaze": "Ní féidir le Glazecalc ceimic an ghlónra seo a chur i gcomparáid lena bhácáil: níl a fhoirmle cosúil le foirmle ghnáthghlónra (an-bheagán nó an-chuid silice, nó a lán ocsaídí datha), mar sin ní oireann na figiúirí foilsithe a úsáideann an seiceáil seo dó.",
+      "process": "Ní féidir le Glazecalc ceimic an ghlónra seo a chur i gcomparáid lena bhácáil: is do bhácáil {process, select, raku {raku} salt {salainn} soda {sóide} wood {adhmaid} other {poill}} é, ina ndéanann an áith cuid den ghlónrú, nach gclúdaíonn na figiúirí foilsithe a úsáideann an seiceáil seo.",
+      "ash": "Ní féidir le Glazecalc ceimic an ghlónra seo a chur i gcomparáid lena bhácáil: tá luaith ann, a bhfuil a comhdhéanamh ró-athraitheach do na figiúirí foilsithe a úsáideann an seiceáil seo.",
+      "noTemperature": "Ní féidir le Glazecalc ceimic an ghlónra seo a chur i gcomparáid leis an mbácáil seo ({scale, select, band {{band, select, low {ísealbhácáil} mid {meánbhácáil} other {ardbhácáil}}} sk {SK {cone}} temperature {{cone} °C} other {cón {cone}}}): níl aon teocht tomhaiste ann don chón sin.",
+      "between": "Ní féidir le Glazecalc ceimic an ghlónra seo a chur i gcomparáid leis an mbácáil seo ({scale, select, band {{band, select, low {ísealbhácáil} mid {meánbhácáil} other {ardbhácáil}}} sk {SK {cone}} temperature {{cone} °C} other {cón {cone}}}): is don ísealbhácáil agus don mheánbhácáil agus don ardbhácáil atá na figiúirí foilsithe a úsáideann an seiceáil seo, ní do na cóin eatarthu (01 go 3).",
+      "belowChart": "Ní féidir le Glazecalc ceimic an ghlónra seo a chur i gcomparáid leis an mbácáil seo ({scale, select, band {{band, select, low {ísealbhácáil} mid {meánbhácáil} other {ardbhácáil}}} sk {SK {cone}} temperature {{cone} °C} other {cón {cone}}}): is do chón 06 go cón 10 atá riail bhóróin Katz, agus tá an bhácáil sin níos fuaire."
+    }
   },
   "stull": {
     "heading": "Cairt Stull",
@@ -904,7 +934,7 @@
     "foodSurface": "Do dhromchla bia (glónra líneála)",
     "liner": {
       "note": "Braitheann sábháilteacht bia ar an nglónra seo a bhácáil go dtí an cón ar tástáladh é: d’fhéadfadh láisteadh tarlú i nglónra tearcbhácáilte.",
-      "range": "Tugtar é do raon, mar sin déan tástáil air ag bun an raoin, áit a leánn sé is lú.",
+      "range": "Tugtar bácáil an ghlónra seo mar raon, mar sin déan tástáil air ag bun an raoin, áit a leánn sé ar a laghad.",
       "untested": "Níl aon chón marcáilte mar thástáilte fós.",
       "test": "Ní thaispeánann ach tástáil láistithe miotal ar do photaí bácáilte féin an bhfuil sé slán i gcomhair bia."
     },
@@ -967,5 +997,23 @@
     "replaceAsk": "Tá ‘Tástáilte’ ticeáilte ag {now}. An gcuirfear na cóin a ainmníonn na taifid, {logs}, ina ionad?",
     "replace": "Cuir ina ionad",
     "keep": "Coinnigh mar atá sé"
+  },
+  "coneCards": {
+    "heading": "Torthaí de réir cóin",
+    "unplaced": "Gan áit ag cón",
+    "unplacedNote": "Níl na taifid bhácála seo curtha ag cón fós: roghnaigh cá ndearnadh gach ceann a bhácáil.",
+    "approx": "≈ {temperature}",
+    "cautions": "{count, plural, =0 {gan rabhaidh teorainneacha} one {# rabhadh teorainneacha} two {# rabhadh teorainneacha} few {# rabhadh teorainneacha} many {# rabhadh teorainneacha} other {# rabhadh teorainneacha}}",
+    "logs": "{count, plural, =0 {gan taifid bhácála} one {# taifead bácála} two {# thaifead bácála} few {# thaifead bácála} many {# dtaifead bácála} other {# taifead bácála}}",
+    "outside": "lasmuigh den bhácáil luaite",
+    "outsideChoice": "{place} (lasmuigh den bhácáil luaite)",
+    "summaryLabel": "Conas a tháinig sé amach ag: {place}",
+    "summaryPlaceholder": "Dromchla, dath, rith, snáithlíonrú...",
+    "noAtmosphere": "atmaisféar gan a bheith luaite",
+    "placeLabel": "Cá ndearnadh a bhácáil: {title}",
+    "notPlaced": "Gan áit",
+    "add": "Cuir toradh leis le haghaidh:",
+    "addButton": "Cuir leis",
+    "saveFailed": "Níorbh fhéidir a shábháil cá ndearnadh an taifead bácála a bhácáil."
   }
 }

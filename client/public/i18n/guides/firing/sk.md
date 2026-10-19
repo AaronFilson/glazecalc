@@ -199,11 +199,11 @@ Mnohé vypínače Kiln-Sitter vrátane modelov LT od firmy Dawson majú **časov
 Table: Na aký čas nastaviť časovú poistku
 Label: Nastavenie časovej poistky
 
-| Zdroj     | Nastavenie                                                                                                                              |
-| --------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| Dawson    | O ½ hodiny dlhšie ako očakávaný čas výpalu, kým pec nepoznáte, neskôr len o ¼ hodiny dlhšie; nikdy to nenastavujte na viac ako 20 hodín |
-| L&L       | Prvýkrát veľmi vysoko, pričom si zaznamenáte, ako dlho výpal trvá; potom asi o 1 hodinu dlhšie                                          |
-| Bracker's | O 30 minút až 1 hodinu dlhšie ako čas výpalu                                                                                            |
+| Zdroj     | Nastavenie                                                                                                                          |
+| --------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| Dawson    | O ½ hodiny dlhšie ako očakávaný čas výpalu, kým pec nepoznáte, neskôr o ¼ hodiny dlhšie; nikdy to nenastavujte na viac ako 20 hodín |
+| L&L       | Prvýkrát veľmi vysoko, pričom si zaznamenáte, ako dlho výpal trvá; potom asi o 1 hodinu dlhšie                                      |
+| Bracker's | O 30 minút až 1 hodinu dlhšie ako čas výpalu                                                                                        |
 
 > [!NOTE]
 > Odporúčame začať takto: prvýkrát nastavte čas veľkoryso (v rámci 20 hodín na stupnici), potom o ½ až 1 hodinu dlhšie, ako je čas, ktorý ste zaznamenali. Časová poistka vám prezradí aj to, ako dlho výpal trval: nastavená na 7 a zastavená na 1 znamená 6 hodín.
@@ -352,11 +352,11 @@ Label: Tabuľka kužeľov SK
 | SK 19   |   {{2768 °F; 1520 °C}} |
 | SK 20   |   {{2786 °F; 1530 °C}} |
 
-Každý údaj je menovitý (JIS): teplota, ktorú pre kužeľ udáva norma, ako je vytlačená v tabuľke firmy Yuko Trading. Tabuľka neuvádza rýchlosť ohrevu. Norma udáva referenčné teploty. Pri rýchlosti bežnej u keramikárov, asi 100 °C/h, kjótsky mestský inštitút nameral, že sa jeho vlastné kjótske kužele ohýbajú o 40–70 °C nižšie, ako je údaj JIS pre rovnaké číslo; pre kužele SK podľa JIS sme také merania nenašli. Postavte kontrolný kužeľ a porovnajte.
+Každý údaj je menovitý (JIS): teplota, ktorú pre kužeľ udáva norma, ako je vytlačená v tabuľke firmy Yuko Trading. Tabuľka neuvádza rýchlosť ohrevu. Norma udáva referenčné teploty. Pri rýchlosti bežnej u keramikárov, asi 100 °C/h, kjótsky mestský inštitút nameral, že sa jeho vlastné kjótske kužele ohýbajú o 47–79 °C nižšie, ako je údaj JIS pre rovnaké číslo; pre kužele SK podľa JIS sme také merania nenašli. Postavte kontrolný kužeľ a porovnajte.
 
 ### Kjótske kužele
 
-Kjótske kužele (京都ゼーゲル), ktoré vyrábal kjótsky mestský inštitút, sa už nevyrábajú: podľa správ v tlači inštitút ukončil výrobu na konci fiškálneho roka 2009. Majú rovnaké čísla ako kužele SK podľa JIS, ale ohýbajú sa pri nižšej teplote: kjótsky kužeľ sa väčšinou ohne približne pri teplote kužeľa SK podľa JIS o dve čísla nižšieho. Recept z Kjóta, ktorý uvádza „SK 8“, môže myslieť kjótsky kužeľ. Inštitút zverejnil rady pre keramikárov, ktorí prechádzajú z kjótskych kužeľov na Ortonove, a namiesto svojho kjótskeho SK 12 používa Ortonov kužeľ 10; je to voľba inštitútu podľa jeho vlastných meraní pri 100 °C/h a neplatí pre žiadny iný kužeľ.
+Kjótske kužele (京都ゼーゲル), ktoré vyrábal kjótsky mestský inštitút, sa už nevyrábajú: podľa správ v tlači inštitút ukončil výrobu na konci fiškálneho roka 2009. Majú rovnaké čísla ako kužele SK podľa JIS, ale ohýbajú sa pri nižšej teplote: kjótsky kužeľ sa ohne približne pri teplote kužeľa SK podľa JIS o dve alebo tri čísla nižšieho. Recept z Kjóta, ktorý uvádza „SK 8“, môže myslieť kjótsky kužeľ. Inštitút zverejnil rady pre keramikárov, ktorí prechádzajú z kjótskych kužeľov na Ortonove, a namiesto svojho kjótskeho SK 12 používa Ortonov kužeľ 10; je to voľba inštitútu podľa jeho vlastných meraní pri 100 °C/h a neplatí pre žiadny iný kužeľ.
 
 ### Ortonove kužele predávané v Japonsku
 

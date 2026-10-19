@@ -199,11 +199,11 @@ Mnogi Kiln-Sitterji, tudi Dawsonovi modeli LT, imajo **časovni omejevalnik**: u
 Table: Na koliko nastaviti časovni omejevalnik
 Label: Nastavitve časovnega omejevalnika
 
-| Vir       | Nastavitev                                                                                                                               |
-| --------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| Dawson    | ½ ure dlje od predvidenega časa žganja, dokler peči ne poznate, pozneje tudi samo ¼ ure dlje; nikoli ga ne nastavljajte na več kot 20 ur |
-| L&L       | Prvič zelo visoko, pri čemer si zapišite, koliko časa traja žganje; nato približno 1 uro dlje                                            |
-| Bracker's | 30 minut do 1 uro dlje od časa žganja                                                                                                    |
+| Vir       | Nastavitev                                                                                                                     |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| Dawson    | ½ ure dlje od predvidenega časa žganja, dokler peči ne poznate, pozneje ¼ ure dlje; nikoli ga ne nastavljajte na več kot 20 ur |
+| L&L       | Prvič zelo visoko, pri čemer si zapišite, koliko časa traja žganje; nato približno 1 uro dlje                                  |
+| Bracker's | 30 minut do 1 uro dlje od časa žganja                                                                                          |
 
 > [!NOTE]
 > Naše izhodišče: prvič velikodušno (v okviru 20 ur na številčnici), nato ½ do 1 uro dlje od časa, ki ste ga zapisali. Časovni omejevalnik vam pove tudi, koliko je žganje trajalo: nastavljen na 7 in ustavljen pri 1 pomeni 6 ur.
@@ -352,11 +352,11 @@ Label: Preglednica stožcev SK
 | SK 19   |      {{2768 °F; 1520 °C}} |
 | SK 20   |      {{2786 °F; 1530 °C}} |
 
-Vsaka vrednost je nazivna (JIS): temperatura, ki jo standard navaja za stožec, kot je natisnjena v preglednici podjetja Yuko Trading. Preglednica ne navaja hitrosti segrevanja. Standard navaja referenčne temperature. Pri hitrosti, običajni v keramični delavnici, okoli 100 °C/h, je kjotski mestni inštitut izmeril, da se njegovi lastni kjotski stožci upognejo 40–70 °C hladneje od vrednosti JIS za isto številko; takih meritev za stožce SK po JIS nismo našli. Postavite kontrolni stožec in primerjajte.
+Vsaka vrednost je nazivna (JIS): temperatura, ki jo standard navaja za stožec, kot je natisnjena v preglednici podjetja Yuko Trading. Preglednica ne navaja hitrosti segrevanja. Standard navaja referenčne temperature. Pri hitrosti, običajni v keramični delavnici, okoli 100 °C/h, je kjotski mestni inštitut izmeril, da se njegovi lastni kjotski stožci upognejo 47–79 °C hladneje od vrednosti JIS za isto številko; takih meritev za stožce SK po JIS nismo našli. Postavite kontrolni stožec in primerjajte.
 
 ### Kjotski stožci
 
-Kjotskih stožcev (京都ゼーゲル), ki jih je izdeloval kjotski mestni inštitut, ne izdelujejo več: po poročanju medijev je inštitut proizvodnjo ustavil ob koncu poslovnega leta 2009. Imajo enake številke kot stožci SK po JIS, vendar se upognejo hladneje: kjotski stožec se večinoma upogne pri približno temperaturi stožca SK po JIS, ki je za dve številki hladnejši. Recept iz Kjota, ki pravi »SK 8«, morda misli na kjotski stožec. Inštitut je objavil nasvete za keramike, ki s kjotskih stožcev prehajajo na Ortonove stožce, in namesto svojega kjotskega SK 12 uporablja Ortonov stožec 10; to je izbira inštituta na podlagi njegovih lastnih meritev pri 100 °C/h in ne velja za noben drug stožec.
+Kjotskih stožcev (京都ゼーゲル), ki jih je izdeloval kjotski mestni inštitut, ne izdelujejo več: po poročanju medijev je inštitut proizvodnjo ustavil ob koncu poslovnega leta 2009. Imajo enake številke kot stožci SK po JIS, vendar se upognejo hladneje: kjotski stožec se upogne pri približno temperaturi stožca SK po JIS, ki je za dve ali tri številke hladnejši. Recept iz Kjota, ki pravi »SK 8«, morda misli na kjotski stožec. Inštitut je objavil nasvete za keramike, ki s kjotskih stožcev prehajajo na Ortonove stožce, in namesto svojega kjotskega SK 12 uporablja Ortonov stožec 10; to je izbira inštituta na podlagi njegovih lastnih meritev pri 100 °C/h in ne velja za noben drug stožec.
 
 ### Ortonovi stožci, ki se prodajajo na Japonskem
 

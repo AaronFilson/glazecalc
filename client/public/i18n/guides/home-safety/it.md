@@ -167,7 +167,7 @@ Rio Grande raccomanda una **linea elettrica dedicata** (che non alimenta nient�
 
 ### Essere presenti alla fine della cottura
 
-Il **kiln sitter** è l’interruttore meccanico di molti forni manuali: un piccolo cono{{en: cone}} si piega alla fine della cottura e fa scattare lo spegnimento. Il suo manuale dice che «NON è concepito per funzionare come dispositivo di spegnimento a prova di guasto». Rio Grande dice di non lasciare mai incustodito un forno in cottura, «soprattutto vicino all’ora prevista di spegnimento». Quindi restare nelle vicinanze e controllare il forno durante la cottura, soprattutto verso la fine; cuocere solo quando un adulto sarà in casa e sveglio per restare nelle vicinanze e controllare, controllare che il forno si sia spento e tenere un estintore ABC nel locale del forno. Per il funzionamento di kiln sitter, centraline e curve di cottura, vedere [Cuocere in un forno semplice](/guides/firing).
+Il **kiln sitter** è l’interruttore meccanico di molti forni manuali: un piccolo cono{{en: cone}} si piega alla fine della cottura e fa scattare lo spegnimento. Il suo manuale dice che «NON è concepito per funzionare come dispositivo di spegnimento a prova di guasto». Rio Grande dice di non lasciare mai incustodito un forno in cottura, «soprattutto vicino all’ora prevista di spegnimento». Quindi restare nelle vicinanze e controllare il forno durante la cottura, soprattutto verso la fine; cuocere solo quando un adulto sarà in casa e sveglio per tutta la cottura, controllare che il forno si sia spento e tenere un estintore ABC nel locale del forno. Per il funzionamento di kiln sitter, centraline e curve di cottura, vedere [Cuocere in un forno semplice](/guides/firing).
 
 ### Fumi e monossido di carbonio
 

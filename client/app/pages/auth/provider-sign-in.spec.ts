@@ -20,17 +20,22 @@ const route = (mode: 'signin' | 'signup', query: Record<string, string> = {}) =>
   snapshot: { queryParamMap: convertToParamMap(query) }
 });
 
-// Signing in with Google or GitHub (docs/adr/0015-provider-sign-in.md): the
-// buttons, finishing what the provider sent back, and the account page's section.
+// Signing in with Google, GitHub or Microsoft (docs/adr/0015-provider-sign-in.md,
+// 0023): the buttons, finishing what the provider sent back, and the account
+// page's section.
 describe('signing in with a provider', () => {
-  const create = async (mode: 'signin' | 'signup', query: Record<string, string> = {}) => {
+  const create = async (
+    mode: 'signin' | 'signup',
+    query: Record<string, string> = {},
+    providers: string[] = ['google', 'github']
+  ) => {
     localStorage.clear();
     TestBed.configureTestingModule({
       providers: [
         ...testProviders(),
         { provide: ActivatedRoute, useValue: route(mode, query) },
         { provide: PASSKEYS, useValue: noPasskeys },
-        { provide: SIGN_IN_PROVIDERS, useValue: () => Promise.resolve(['google', 'github']) }
+        { provide: SIGN_IN_PROVIDERS, useValue: () => Promise.resolve(providers) }
       ]
     });
     const router = TestBed.inject(Router);
@@ -51,6 +56,33 @@ describe('signing in with a provider', () => {
     page['keep'].set(true);
     await settle(fixture);
     expect(links[1]!.getAttribute('href')).toBe(API + '/auth/github/start?next=%2F&keep=1');
+  });
+
+  it('shows Microsoft\'s own button: its four squares and "Sign in with Microsoft"', async () => {
+    const { fixture } = await create('signup', {}, ['google', 'github', 'microsoft']);
+    const link = fixture.nativeElement.querySelector('a[data-provider="microsoft"]') as HTMLAnchorElement;
+    expect(link.textContent?.trim()).toBe('Sign in with Microsoft');
+    expect(link.classList).toContain('provider-microsoft');
+    expect(link.classList).not.toContain('btn-outline-secondary');
+    expect(link.getAttribute('href')).toBe(API + '/auth/microsoft/start?next=%2F');
+    const squares = [...link.querySelectorAll('svg rect')].map((rect) => rect.getAttribute('fill'));
+    expect(squares).toEqual(['#f25022', '#00a4ef', '#7fba00', '#ffb900']);
+  });
+
+  it('notes a new account from Microsoft as unconfirmed, as after signing up', async () => {
+    await create('signin', { provider: 'microsoft' }, ['microsoft']);
+    httpMock()
+      .expectOne(API + '/auth/finish')
+      .flush({
+        code: 'signed-in',
+        msg: 'Success in signin',
+        email: 'potter@example.com',
+        kept: 0,
+        next: '/home',
+        unverified: true
+      });
+    await settle();
+    expect(TestBed.inject(AuthService).unverified()).toBe(true);
   });
 
   it('finishes a sign-in the provider sent back, and goes on to the page it was for', async () => {

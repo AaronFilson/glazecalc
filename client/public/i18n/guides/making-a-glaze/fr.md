@@ -211,7 +211,7 @@ Le **sel d’Epsom** (sulfate de magnésium) fait légèrement gélifier un éma
 
 La **gomme CMC** (carboxyméthylcellulose) rend un bain plus collant et plus lent à sécher, et laisse une couche plus dure qui adhère à la pièce. Elle compte surtout pour les émaux au pinceau et les émaux riches en fritte{{en: frit}}. L’exemple de Digitalfire en incorpore 3,75 g dans 1000 g de bain, et elle doit être ajoutée au mixeur. Un émail contenant de la CMC ne gélifie pas avec le sel d’Epsom, et comme les microbes se nourrissent de la gomme, il peut changer dans le seau et se mettre à sentir mauvais.
 
-La **bentonite**, une argile très fine, aide à maintenir les autres particules en suspension. Les émaux pour le trempé comptent en général pour cela sur 15 à 25 % d’argile crue. Pour une recette pauvre en argile, environ 1 à 3 % de bentonite aide ; selon Digitalfire, un émail contenant plus de 15 % d’argile ne devrait pas en demander plus de 1 %.
+La **bentonite**, une argile très fine, aide à maintenir les autres particules en suspension. Les émaux pour le trempé comptent en général pour cela sur 15 à 25 % d’argile crue. Pour une recette pauvre en argile, environ 1 à 3 % de bentonite aide ; selon Digitalfire, un émail contenant plus de 15 % d’argile ne devrait pas demander plus de 1 % de bentonite par rapport au poids de l’émail sec.
 
 ## Tessons d’essai et essais en ligne {#testing}
 

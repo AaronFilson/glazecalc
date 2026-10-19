@@ -211,7 +211,7 @@ Label: Vand til en ønsket massefylde
 
 **CMC-gummi** (carboxymethylcellulose) gør en glasurvælling mere klæbrig og langsommere at tørre og giver et hårdere lag, der hænger fast på emnet. Det betyder mest for penselglasurer og glasurer med meget fritte{{en: frit}}. I Digitalfires eksempel blendes 3,75 g i 1000 g glasurvælling, og det skal i med en blender. En glasur med CMC vil ikke gelere med bittersalt, og da mikrober lever af gummiet, kan den ændre sig i spanden og begynde at lugte.
 
-**Bentonit**, et meget fint ler, hjælper med at holde de andre partikler svævende. Dyppeglasurer klarer det som regel med 15 til 25 % rå ler. Til en opskrift med for lidt ler hjælper ca. 1 til 3 % bentonit; Digitalfire siger, at en glasur med mere end 15 % ler ikke bør have brug for mere end 1 %.
+**Bentonit**, et meget fint ler, hjælper med at holde de andre partikler svævende. Dyppeglasurer klarer det som regel med 15 til 25 % rå ler. Til en opskrift med for lidt ler hjælper ca. 1 til 3 % bentonit; Digitalfire siger, at en glasur med mere end 15 % ler ikke bør have brug for bentonit i mere end 1 % af den tørre glasurs vægt.
 
 ## Prøvebrikker og prøverækker {#testing}
 

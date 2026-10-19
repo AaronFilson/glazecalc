@@ -272,7 +272,7 @@
     "numbers": {
       "heading": "Aqra l-analiżi u l-limiti",
       "analysis": "<b>Analiżi u limiti</b>, taħt ir-riċetta, juri l-mol ta’ kull ossidu, il-% mol u l-% tal-piż wara l-ħami, it-telf mit-tqabbid bin-nar u l-espansjoni termali kkalkulata, stima biex tqabbel il-glejżijiet.",
-      "limits": "<b>Limiti</b> iqabbel il-formula ta’ Seger ma’ sett ta’ limiti: il-limiti ta’ Hesselberth & Roy għal glejżijiet stabbli, sakemm ma tagħżilx dawk ta’ Glazecalc stess (l-għażla tinżamm mas-settings tiegħek). Agħżel l-għażla <b>Ħami</b> biex tiċċekkja bil-figuri t-tajbin; tinżamm mar-riċetta. Il-figuri ta’ Hesselberth & Roy huma għall-kon 6 u l-kon 10, għalhekk fil-ħami baxx jgħid li ma japplikawx. Huma linji gwida, mhux ‘għadda’ jew ‘falla’.",
+      "limits": "<b>Limiti</b> iqabbel il-formula ta’ Seger ma’ sett ta’ limiti: il-limiti ta’ Hesselberth & Roy għal glejżijiet stabbli, sakemm ma tagħżilx dawk ta’ Glazecalc stess (l-għażla tinżamm mas-settings tiegħek). Jiċċekkja l-medda tal-ħami li jagħti <b>Ħami</b> tar-riċetta: il-kon tagħha, jew il-firxa tagħha. Firxa li taqsam il-meddi, bħal kon 6 sa 10, turi l-kontrolli taż-żewġ meddi ħdejn xulxin. Biex tiċċekkja medda waħda biss, agħżilha fil-kaxxa <b>Ħami</b> tal-limiti stess, li tieħu post il-ħami tar-riċetta u tinżamm mar-riċetta. Il-figuri ta’ Hesselberth & Roy huma għall-kon 6 u l-kon 10, għalhekk fil-ħami baxx jgħid li ma japplikawx. Huma linji gwida, mhux ‘għadda’ jew ‘falla’. Fuq nett, linja waħda tqabbel il-boron, is-silika u l-alumina tal-glejż mal-ħami tiegħu, bir-regola tal-boron ta’ Katz u l-figuri ta’ Hesselberth & Roy ma’ kwalunkwe sett ta’ limiti li tagħżel: tagħti nota biss meta jaqblu li l-glejż jidher bħal ħami differenti, tgħid meta ma tistax tiddeċiedi (ċomb, litju, raku u simili), u hija gwida, mhux test.",
       "stull": "<b>Mappa ta’ Stull</b> turi s-silika tal-glejż kontra l-alumina tiegħu, bir-reġjuni matti, nofs matti u jleqqu ta’ Stull u l-firxiet tas-sett ta’ limiti. Hija gwida għall-wiċċ, mhux tbassir.",
       "slurry": "<b>Gravità speċifika u ilma</b> juża l-formula ta’ Brongniart: iżen volum imkejjel tal-glejż, imbagħad ara l-glejż niexef fil-barmil, l-ilma li jġibu għall-gravità speċifika li trid, jew l-ilma għal taħlita ġdida. Id-densitajiet isegwu l-għażla tiegħek għall-gravità speċifika, għal Baumé jew għall-piż tal-pinta."
     },
@@ -472,7 +472,7 @@
     "expansionRises": "L-espansjoni kkalkulata tiegħu togħla minn {was} għal {now}.",
     "expansionRisesProbably": "Jekk il-glejż il-qadim bilkemm qabel mat-tafal tiegħek, dan x’aktarx se jagħmel ix-xegħir, xi drabi ġimgħat wara.",
     "expansionRisesMay": "Jekk il-glejż il-qadim bilkemm qabel mat-tafal tiegħek, dan jista’ jagħmel ix-xegħir, xi drabi ġimgħat wara.",
-    "expansionRisesFix": "Ix-xegħir idgħajjef il-biċċiet u mhuwiex rakkomandat fuq uċuħ li jmissu l-ikel. Jekk tibdel xi sodju u potassju b’flussi b’espansjoni aktar baxxa (boron, litju, manjesju jew kalċju), l-espansjoni tonqos; xi drabi jissuġġerixxu żieda ta’ silika, imma s-sorsi ma jaqblux.",
+    "expansionRisesFix": "Ix-xegħir idgħajjef il-biċċiet u mhuwiex rakkomandat fuq uċuħ li jmissu l-ikel. Jekk tibdel xi sodju u potassju b’flussi b’espansjoni aktar baxxa (boron, litju, manjesju jew kalċju), l-espansjoni termali tonqos; xi drabi jissuġġerixxu żieda ta’ silika, imma s-sorsi ma jaqblux.",
     "expansionFalls": "L-espansjoni kkalkulata tiegħu tinżel minn {was} għal {now}. Ftit aktar baxxa normalment tirreżisti x-xegħir aħjar.",
     "expansionFallsProbably": "Jekk tkun ħafna aktar baxxa, x’aktarx il-glejż jitqaxxar, bi qxur jaqtgħu mix-xfar u mit-truf.",
     "expansionFallsCan": "Jekk tkun ħafna aktar baxxa, il-glejż jista’ jitqaxxar, bi qxur jaqtgħu mix-xfar u mit-truf.",
@@ -598,6 +598,36 @@
     "firingFromBlock": "Mill-ħami tar-riċetta ({bands})",
     "bothBands": "Il-ħami tar-riċetta jkopri {bands}, għalhekk jiġi kkontrollat kull wieħed, ġenb ma’ ġenb: glejż rari jġib ruħu bl-istess mod fiż-żewġ truf.",
     "fromFiring": "Il-figuri huma għall-ħami tar-riċetta: {band}. Agħżel ħami ’l fuq biex tiċċekkja ieħor."
+  },
+  "coneFit": {
+    "cooler": "Il-kimika ta’ dan il-glejż tixbaħ aktar glejż għal {looksLike, select, low {ħami baxx} other {ħami medju}} milli glejż għal dan il-ħami: {scale, select, band {{band, select, low {ħami baxx} mid {ħami medju} other {ħami għoli}}} sk {SK {cone}} temperature {{cone} °C} other {kon {cone}}}.",
+    "coolerSoft": "Il-kimika ta’ dan il-glejż tinklina lejn ħami aktar kiesaħ minn dan: {scale, select, band {{band, select, low {ħami baxx} mid {ħami medju} other {ħami għoli}}} sk {SK {cone}} temperature {{cone} °C} other {kon {cone}}}, eqreb tal-kon 6, għalkemm il-kimika waħedha tiddistingwi bejn glejżijiet tal-kon 6 u tal-kon 10 biss bejn wieħed u ieħor.",
+    "hotter": "Il-kimika ta’ dan il-glejż tixbaħ aktar glejż għal {looksLike, select, high {ħami għoli} other {ħami medju}} milli glejż għal dan il-ħami: {scale, select, band {{band, select, low {ħami baxx} mid {ħami medju} other {ħami għoli}}} sk {SK {cone}} temperature {{cone} °C} other {kon {cone}}}.",
+    "hotterSoft": "Il-kimika ta’ dan il-glejż tinklina lejn ħami aktar sħun minn dan: {scale, select, band {{band, select, low {ħami baxx} mid {ħami medju} other {ħami għoli}}} sk {SK {cone}} temperature {{cone} °C} other {kon {cone}}}, eqreb tal-kon 10, għalkemm il-kimika waħedha tiddistingwi bejn glejżijiet tal-kon 6 u tal-kon 10 biss bejn wieħed u ieħor.",
+    "closer": "Mill-firxa li għaliha hu stabbilit, il-kimika ta’ dan il-glejż tidher eqreb ta’ dan it-tarf: {scale, select, band {{band, select, low {ħami baxx} mid {ħami medju} other {ħami għoli}}} sk {SK {cone}} temperature {{cone} °C} other {kon {cone}}}.",
+    "coolerSilica": "Fih aktar boron ({boron}) milli normalment jeħtieġu l-glejżijiet għal dan il-ħami: {scale, select, band {{band, select, low {ħami baxx} mid {ħami medju} other {ħami għoli}}} sk {SK {cone}} temperature {{cone} °C} other {kon {cone}}}, u inqas silika ({silica}) milli normalment ikollhom.",
+    "coolerAlumina": "Fih aktar boron ({boron}) milli normalment jeħtieġu l-glejżijiet għal dan il-ħami: {scale, select, band {{band, select, low {ħami baxx} mid {ħami medju} other {ħami għoli}}} sk {SK {cone}} temperature {{cone} °C} other {kon {cone}}}, u ftit alumina ({alumina}).",
+    "coolerBoth": "Fih aktar boron ({boron}) milli normalment jeħtieġu l-glejżijiet għal dan il-ħami: {scale, select, band {{band, select, low {ħami baxx} mid {ħami medju} other {ħami għoli}}} sk {SK {cone}} temperature {{cone} °C} other {kon {cone}}}, u inqas silika ({silica}) u alumina ({alumina}) milli normalment ikollhom.",
+    "hotterSilica": "Fih ftit boron ({boron}) għal dan il-ħami: {scale, select, band {{band, select, low {ħami baxx} mid {ħami medju} other {ħami għoli}}} sk {SK {cone}} temperature {{cone} °C} other {kon {cone}}}, u aktar silika ({silica}) milli normalment ikollhom il-glejżijiet f’dak il-ħami.",
+    "coolerEffect": "F’dak il-ħami jista’ jinżel jew jdub żżejjed: ħami l-ewwel maduma tal-prova fuq diska tal-bisque li taqbad il-glejż li jinżel.",
+    "hotterEffect": "F’dak il-ħami jista’ joħroġ moħmi wisq ftit: niexef, aħrax jew mhux issiġillat għal kollox. Ittestjah bil-ħami qabel ma tużah fuq il-biċċiet, u b’mod speċjali qabel ma tużah fejn se jmiss ikel jew xorb.",
+    "hotterEffectSoft": "Xi glejżijiet jdubu f’dak il-ħami mingħajr boron, għalhekk din hija biss ħjiel: iċċekkja fuq maduma tal-prova li jdub għal kollox.",
+    "gerstley": "Parti mill-boron tiegħu ġejja minn Gerstley borate, li tvarja minn lott għal ieħor, għalhekk dik iċ-ċifra hija inqas ċerta.",
+    "guide": "Dan iqabbel il-kimika ma’ figuri ppubblikati: hija gwida, mhux test. Jekk il-glejż ħareġ tajjeb għalik f’dan il-kon, afda l-madum tiegħek.",
+    "fits": "Il-boron, is-silika u l-alumina tiegħu ma jurux li mhuwiex tajjeb għal dan il-ħami: {scale, select, band {{band, select, low {ħami baxx} mid {ħami medju} other {ħami għoli}}} sk {SK {cone}} temperature {{cone} °C} other {kon {cone}}}. Din hija gwida, mhux test: ma tgħid xejn dwar jekk il-glejż huwiex stabbli jew sikur għall-ikel.",
+    "sources": "Sorsi:",
+    "skip": {
+      "lead": "Glazecalc ma jistax iqabbel il-kimika ta’ dan il-glejż mal-ħami tiegħu: ħafna mid-dewbien tiegħu jiġi miċ-ċomb, li l-figuri ppubblikati li juża dan il-kontroll ma jkoprux.",
+      "lithium": "Glazecalc ma jistax iqabbel il-kimika ta’ dan il-glejż mal-ħami tiegħu: ħafna mid-dewbien tiegħu jiġi mil-litju, li l-figuri ppubblikati li juża dan il-kontroll ma jkoprux.",
+      "alkali": "Glazecalc ma jistax iqabbel il-kimika ta’ dan il-glejż mal-ħami tiegħu: ħafna mid-dewbien tiegħu jiġi mis-sodju u mill-potassju, li l-figuri ppubblikati li juża dan il-kontroll ma jkoprux.",
+      "zinc": "Glazecalc ma jistax iqabbel il-kimika ta’ dan il-glejż mal-ħami tiegħu: fih ħafna żingu, kif għandhom il-glejżijiet kristallini, li l-figuri ppubblikati li juża dan il-kontroll ma jkoprux.",
+      "notGlaze": "Glazecalc ma jistax iqabbel il-kimika ta’ dan il-glejż mal-ħami tiegħu: il-formula tiegħu mhix dik ta’ glejż tas-soltu (ftit ħafna jew ħafna silika, jew ħafna ossidi li jagħtu l-kulur), għalhekk il-figuri ppubblikati li juża dan il-kontroll ma jaqblux miegħu.",
+      "process": "Glazecalc ma jistax iqabbel il-kimika ta’ dan il-glejż mal-ħami tiegħu: huwa għal ħami {process, select, raku {raku} salt {bil-melħ} soda {bis-soda} wood {bl-injam} other {fil-fossa}}, fejn il-forn jagħmel parti mill-glejżjar, li l-figuri ppubblikati li juża dan il-kontroll ma jkoprux.",
+      "ash": "Glazecalc ma jistax iqabbel il-kimika ta’ dan il-glejż mal-ħami tiegħu: fih rimda, li l-kompożizzjoni tagħha tvarja wisq għall-figuri ppubblikati li juża dan il-kontroll.",
+      "noTemperature": "Glazecalc ma jistax iqabbel il-kimika ta’ dan il-glejż ma’ dan il-ħami ({scale, select, band {{band, select, low {ħami baxx} mid {ħami medju} other {ħami għoli}}} sk {SK {cone}} temperature {{cone} °C} other {kon {cone}}}): m’hemm l-ebda temperatura mkejla għal dak il-kon.",
+      "between": "Glazecalc ma jistax iqabbel il-kimika ta’ dan il-glejż ma’ dan il-ħami ({scale, select, band {{band, select, low {ħami baxx} mid {ħami medju} other {ħami għoli}}} sk {SK {cone}} temperature {{cone} °C} other {kon {cone}}}): il-figuri ppubblikati li juża dan il-kontroll huma għal ħami baxx u għal ħami medju u għoli, mhux għall-koni bejniethom (01 sa 3).",
+      "belowChart": "Glazecalc ma jistax iqabbel il-kimika ta’ dan il-glejż ma’ dan il-ħami ({scale, select, band {{band, select, low {ħami baxx} mid {ħami medju} other {ħami għoli}}} sk {SK {cone}} temperature {{cone} °C} other {kon {cone}}}): ir-regola tal-boron ta’ Katz hija għall-kon 06 sal-kon 10, u dak il-ħami huwa aktar kiesaħ."
+    }
   },
   "stull": {
     "heading": "Mappa ta’ Stull",
@@ -904,7 +934,7 @@
     "foodSurface": "Għal wiċċ tal-ikel (glejż għal ġewwa)",
     "liner": {
       "note": "Is-sigurtà tal-ikel tiddependi mill-ħami ta’ dan il-glejż sal-kon li fih ġie ttestjat: glejż moħmi wisq ftit jista’ jirrilaxxa metalli.",
-      "range": "Mogħti għal firxa, għalhekk ittestjah fit-tarf l-aktar kiesaħ tal-firxa, fejn jdub l-inqas.",
+      "range": "Il-ħami ta’ dan il-glejż mogħti bħala firxa, għalhekk ittestjah fit-tarf l-aktar kiesaħ tal-firxa, fejn jdub l-inqas.",
       "untested": "Għad m’hemm l-ebda kon immarkat bħala ttestjat.",
       "test": "Test tal-laboratorju tar-rilaxx tal-metalli tal-biċċiet moħmija tiegħek stess biss juri jekk huwiex sikur għall-ikel."
     },
@@ -967,5 +997,23 @@
     "replaceAsk": "‘Ittestjat’ huwa mmarkat għal: {now}. Tibdel dan bil-koni msemmija fir-reġistri: {logs}?",
     "replace": "Ibdel",
     "keep": "Żomm kif inhu"
+  },
+  "coneCards": {
+    "heading": "Riżultati skont il-kon",
+    "unplaced": "Mhux imqiegħed f’kon",
+    "unplacedNote": "Dawn ir-reġistri tal-ħami għadhom ma tqegħdux f’kon: agħżel fejn inħema kull wieħed.",
+    "approx": "≈ {temperature}",
+    "cautions": "{count, plural, =0 {l-ebda twissija dwar il-limiti} one {# twissija dwar il-limiti} two {# twissijiet dwar il-limiti} few {# twissijiet dwar il-limiti} many {#-il twissija dwar il-limiti} other {# twissija dwar il-limiti}}",
+    "logs": "{count, plural, =0 {l-ebda reġistru tal-ħami} one {# reġistru tal-ħami} two {# reġistri tal-ħami} few {# reġistri tal-ħami} many {#-il reġistru tal-ħami} other {# reġistru tal-ħami}}",
+    "outside": "barra l-ħami stabbilit",
+    "outsideChoice": "{place} (barra l-ħami stabbilit)",
+    "summaryLabel": "Kif ħareġ f’dan: {place}",
+    "summaryPlaceholder": "Wiċċ, kulur, nżul tal-glejż, xegħir...",
+    "noAtmosphere": "l-atmosfera mhix indikata",
+    "placeLabel": "Fejn inħema: {title}",
+    "notPlaced": "Mhux imqiegħed",
+    "add": "Żid riżultat għal:",
+    "addButton": "Żid",
+    "saveFailed": "Ma setax jiġi ssejvjat fejn inħema r-reġistru tal-ħami."
   }
 }

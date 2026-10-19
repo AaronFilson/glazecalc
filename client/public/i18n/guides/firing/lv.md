@@ -199,11 +199,11 @@ Daudziem Kiln-Sitter slēdžiem, arī Dawson LT modeļiem, ir **laika ierobežot
 Table: Cik ilgu laiku iestatīt laika ierobežotājam
 Label: Laika ierobežotāja iestatījumi
 
-| Avots     | Iestatījums                                                                                                                                                                   |
-| --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Dawson    | Par ½ stundas ilgāk nekā paredzamais apdedzināšanas laiks, kamēr krāsni vēl nepazīstat, vēlāk šo rezervi var samazināt līdz ¼ stundai; nekad neiestatiet ilgāk par 20 stundām |
-| L&L       | Pirmajā reizē ļoti ilgs laiks, pierakstot, cik ilgi apdedzināšana ilgst; pēc tam apmēram par 1 stundu ilgāk                                                                   |
-| Bracker's | No 30 minūtēm līdz 1 stundai ilgāk nekā apdedzināšanas laiks                                                                                                                  |
+| Avots     | Iestatījums                                                                                                                                               |
+| --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Dawson    | Par ½ stundas ilgāk nekā paredzamais apdedzināšanas laiks, kamēr krāsni vēl nepazīstat, vēlāk par ¼ stundas ilgāk; nekad neiestatiet ilgāk par 20 stundām |
+| L&L       | Pirmajā reizē ļoti ilgs laiks, pierakstot, cik ilgi apdedzināšana ilgst; pēc tam apmēram par 1 stundu ilgāk                                               |
+| Bracker's | No 30 minūtēm līdz 1 stundai ilgāk nekā apdedzināšanas laiks                                                                                              |
 
 > [!NOTE]
 > Mūsu ieteikums sākumam: pirmajā reizē ar lielu rezervi (nepārsniedzot skalas 20 stundas), pēc tam par ½ līdz 1 stundu ilgāk nekā jūsu pierakstītais laiks. Laika ierobežotājs parāda arī to, cik ilgi apdedzināšana ilga: ja tas iestatīts uz 7 un apstājies pie 1, tas nozīmē 6 stundas.
@@ -352,11 +352,11 @@ Label: SK konusu tabula
 | SK 19   |       {{2768 °F; 1520 °C}} |
 | SK 20   |       {{2786 °F; 1530 °C}} |
 
-Visi skaitļi ir nominālie (JIS): temperatūra, ko standarts norāda konusam, kā tā uzdrukāta Yuko Trading tabulā. Tabulā nav norādīts sildīšanas ātrums. Standarts dod atsauces temperatūras. Pie keramiķiem ierasta ātruma, apmēram 100 °C/h, Kioto pašvaldības institūts izmērīja, ka tā paša Kioto konusi saliecas par 40–70 °C vēsāk, nekā JIS norāda tam pašam numuram; līdzīgus mērījumus SK konusiem pēc JIS mēs neatradām. Novietojiet kontrolkonusu un salīdziniet.
+Visi skaitļi ir nominālie (JIS): temperatūra, ko standarts norāda konusam, kā tā uzdrukāta Yuko Trading tabulā. Tabulā nav norādīts sildīšanas ātrums. Standarts dod atsauces temperatūras. Pie keramiķiem ierasta ātruma, apmēram 100 °C/h, Kioto pašvaldības institūts izmērīja, ka tā paša Kioto konusi saliecas par 47–79 °C vēsāk, nekā JIS norāda tam pašam numuram; līdzīgus mērījumus SK konusiem pēc JIS mēs neatradām. Novietojiet kontrolkonusu un salīdziniet.
 
 ### Kioto konusi
 
-Kioto konusus (京都ゼーゲル), ko izgatavoja Kioto pašvaldības institūts, vairs neražo: saskaņā ar ziņām plašsaziņas līdzekļos institūts ražošanu beidza 2009. finanšu gada beigās. Tiem ir tie paši numuri, kas SK konusiem pēc JIS, bet tie saliecas vēsāk: Kioto konuss lielākoties saliecas apmēram tajā temperatūrā, kas atbilst par diviem numuriem vēsākam SK konusam pēc JIS. Recepte no Kioto, kurā rakstīts “SK 8”, var nozīmēt Kioto konusu. Institūts ir publicējis padomus keramiķiem, kas pāriet no Kioto konusiem uz Ortona konusiem, un sava Kioto SK 12 vietā izmanto Ortona konusu 10; tā ir paša institūta izvēle, kas balstīta uz tā mērījumiem ar ātrumu 100 °C/h, un tā neattiecas ne uz vienu citu konusu.
+Kioto konusus (京都ゼーゲル), ko izgatavoja Kioto pašvaldības institūts, vairs neražo: saskaņā ar ziņām plašsaziņas līdzekļos institūts ražošanu beidza 2009. finanšu gada beigās. Tiem ir tie paši numuri, kas SK konusiem pēc JIS, bet tie saliecas vēsāk: Kioto konuss saliecas apmēram tajā temperatūrā, kas atbilst par diviem vai trim numuriem vēsākam SK konusam pēc JIS. Recepte no Kioto, kurā rakstīts “SK 8”, var nozīmēt Kioto konusu. Institūts ir publicējis padomus keramiķiem, kas pāriet no Kioto konusiem uz Ortona konusiem, un sava Kioto SK 12 vietā izmanto Ortona konusu 10; tā ir paša institūta izvēle, kas balstīta uz tā mērījumiem ar ātrumu 100 °C/h, un tā neattiecas ne uz vienu citu konusu.
 
 ### Japānā pārdotie Ortona konusi
 

@@ -36,7 +36,7 @@ import { SecondStep } from './second-step';
  * passkeys saved for this site (conditional mediation), either of which signs
  * in without the password (docs/mfa-plan.md, items 12 and 17).
  *
- * Where Google or GitHub sign-in is on, both forms offer it too
+ * Where Google, GitHub or Microsoft sign-in is on, both forms offer it too
  * (docs/adr/0015-provider-sign-in.md). The provider sends the browser back
  * here with ?provider=<id>, and the page finishes the sign-in: signed in, a
  * second step, or an account that has the provider's email, to sign in to
@@ -166,6 +166,10 @@ import { SecondStep } from './second-step';
           @if (signup()) {
             <p class="form-text privacy-note">
               <gc-rich [text]="t('account.auth.privacy')" [links]="{ privacy: '/privacy' }" />
+            </p>
+            <!-- The terms bind an account from its start (site/en.json terms.*). -->
+            <p class="form-text terms-note">
+              <gc-rich [text]="t('account.auth.terms')" [links]="{ terms: '/terms' }" />
             </p>
             <p class="auth-links">
               <gc-rich [text]="t('account.auth.haveAccount')" [links]="{ signin: '/signin' }" />

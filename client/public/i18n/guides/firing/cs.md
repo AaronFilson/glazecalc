@@ -199,11 +199,11 @@ Mnoho vypínačů, včetně modelů LT od společnosti Dawson, má **pojistný �
 Table: Na jak dlouho nastavit pojistný časovač
 Label: Nastavení pojistného časovače
 
-| Zdroj     | Nastavení                                                                                                                                |
-| --------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| Dawson    | O ½ hodiny déle, než je očekávaná doba výpalu, dokud pec neznáte, později jen o ¼ hodiny déle; nikdy to nenastavujte na víc než 20 hodin |
-| L&L       | Poprvé na velmi dlouhou dobu; zapište si, jak dlouho výpal trvá; potom asi o 1 hodinu déle                                               |
-| Bracker's | O 30 minut až 1 hodinu déle, než trvá výpal                                                                                              |
+| Zdroj     | Nastavení                                                                                                                            |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| Dawson    | O ½ hodiny déle, než je očekávaná doba výpalu, dokud pec neznáte, později o ¼ hodiny déle; nikdy to nenastavujte na víc než 20 hodin |
+| L&L       | Poprvé na velmi dlouhou dobu; zapište si, jak dlouho výpal trvá; potom asi o 1 hodinu déle                                           |
+| Bracker's | O 30 minut až 1 hodinu déle, než trvá výpal                                                                                          |
 
 > [!NOTE]
 > Náš výchozí postup: poprvé s velkou rezervou (v rámci 20 hodin na stupnici), potom o ½ až 1 hodinu déle, než je zaznamenaná doba. Časovač vám také řekne, jak dlouho výpal trval: nastavený na 7 a zastavený na 1 znamená 6 hodin.
@@ -352,11 +352,11 @@ Label: Tabulka žároměrek SK
 | SK 19     |    {{2768 °F; 1520 °C}} |
 | SK 20     |    {{2786 °F; 1530 °C}} |
 
-Každý údaj je jmenovitý (JIS): teplota, kterou pro žároměrku udává norma, jak je vytištěna v tabulce firmy Yuko Trading. Tabulka neuvádí rychlost ohřevu. Norma udává referenční teploty. Při rychlosti obvyklé u keramiků, asi 100 °C/h, naměřil kjótský městský institut, že se jeho vlastní kjótské žároměrky ohýbají o 40–70 °C níž, než je údaj JIS pro stejné číslo; pro žároměrky SK podle JIS jsme taková měření nenašli. Postavte kontrolní žároměrku a porovnejte.
+Každý údaj je jmenovitý (JIS): teplota, kterou pro žároměrku udává norma, jak je vytištěna v tabulce firmy Yuko Trading. Tabulka neuvádí rychlost ohřevu. Norma udává referenční teploty. Při rychlosti obvyklé u keramiků, asi 100 °C/h, naměřil kjótský městský institut, že se jeho vlastní kjótské žároměrky ohýbají o 47–79 °C níž, než je údaj JIS pro stejné číslo; pro žároměrky SK podle JIS jsme taková měření nenašli. Postavte kontrolní žároměrku a porovnejte.
 
 ### Kjótské žároměrky
 
-Kjótské žároměrky (京都ゼーゲル), které vyráběl kjótský městský institut, se už nevyrábějí: podle zpráv v tisku institut ukončil výrobu na konci fiskálního roku 2009. Mají stejná čísla jako žároměrky SK podle JIS, ale ohýbají se při nižší teplotě: kjótská žároměrka se většinou ohne přibližně při teplotě žároměrky SK podle JIS o dvě čísla nižší. Recept z Kjóta, který uvádí „SK 8“, může myslet kjótskou žároměrku. Institut zveřejnil rady pro keramiky, kteří přecházejí z kjótských žároměrek na Ortonovy, a místo své kjótské SK 12 používá Ortonovu žároměrku 10; to je volba institutu podle jeho vlastních měření při 100 °C/h a neplatí pro žádnou jinou žároměrku.
+Kjótské žároměrky (京都ゼーゲル), které vyráběl kjótský městský institut, se už nevyrábějí: podle zpráv v tisku institut ukončil výrobu na konci fiskálního roku 2009. Mají stejná čísla jako žároměrky SK podle JIS, ale ohýbají se při nižší teplotě: kjótská žároměrka se ohne přibližně při teplotě žároměrky SK podle JIS o dvě nebo tři čísla nižší. Recept z Kjóta, který uvádí „SK 8“, může myslet kjótskou žároměrku. Institut zveřejnil rady pro keramiky, kteří přecházejí z kjótských žároměrek na Ortonovy, a místo své kjótské SK 12 používá Ortonovu žároměrku 10; to je volba institutu podle jeho vlastních měření při 100 °C/h a neplatí pro žádnou jinou žároměrku.
 
 ### Ortonovy žároměrky prodávané v Japonsku
 

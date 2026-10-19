@@ -272,7 +272,7 @@
     "numbers": {
       "heading": "Leggere l’analisi e i limiti",
       "analysis": "<b>Analisi e limiti</b>, sotto la ricetta, mostra per ogni ossido le moli, la % molare e la % in peso dopo cottura, la perdita al fuoco e la dilatazione termica calcolata, una stima per confrontare gli smalti.",
-      "limits": "<b>Limiti</b> confronta la formula di Seger con una serie di limiti: i limiti per smalti stabili di Hesselberth & Roy, a meno che si scelgano quelli propri di Glazecalc (la scelta viene salvata con le impostazioni). Scegliere la <b>Cottura</b> per confrontarla con i valori giusti; viene salvata con la ricetta. I valori di Hesselberth & Roy valgono per il cono 6 e il cono 10, quindi a bassa temperatura l’app dice che non si applicano. Sono indicazioni, non un esito positivo o negativo.",
+      "limits": "<b>Limiti</b> confronta la formula di Seger con una serie di limiti: i limiti per smalti stabili di Hesselberth & Roy, a meno che si scelgano quelli propri di Glazecalc (la scelta viene salvata con le impostazioni). Verifica la fascia di cottura indicata dalla <b>Cottura</b> della ricetta: il suo cono, o il suo intervallo. Un intervallo che attraversa più fasce, come da cono 6 a cono 10, mostra affiancati i controlli di entrambe le fasce. Per controllare una sola fascia, sceglierla nella casella <b>Cottura</b> propria dei limiti, che prevale sulla cottura della ricetta e viene salvata con la ricetta. I valori di Hesselberth & Roy valgono per il cono 6 e il cono 10, quindi a bassa temperatura l’app dice che non si applicano. Sono indicazioni, non un esito positivo o negativo. In cima, una riga confronta boro, silice e allumina dello smalto con la sua cottura, secondo la regola del boro di Katz e i valori di Hesselberth & Roy, qualunque serie di limiti si scelga: dà un’indicazione solo quando i due concordano che lo smalto assomiglia a un’altra cottura, dice quando non può giudicare (piombo, litio, raku e simili), ed è una guida, non un test.",
       "stull": "Il <b>diagramma di Stull</b> riporta la silice dello smalto rispetto alla sua allumina, con le regioni opaca, semiopaca e lucida di Stull e gli intervalli della serie di limiti. È una guida per l’aspetto della superficie, non una previsione.",
       "slurry": "<b>Peso specifico e acqua</b> usa la formula di Brongniart: pesare un volume misurato di smalto, poi vedere lo smalto secco nel secchio, l’acqua che lo porta al peso specifico voluto, o l’acqua per una nuova pesata. Le densità seguono l’impostazione scelta per peso specifico, gradi Baumé o peso a pinta."
     },
@@ -472,7 +472,7 @@
     "expansionRises": "La dilatazione calcolata sale da {was} a {now}.",
     "expansionRisesProbably": "Se il vecchio smalto era appena in accordo con l’impasto, questo probabilmente cavillerà, a volte dopo settimane.",
     "expansionRisesMay": "Se il vecchio smalto era appena in accordo con l’impasto, questo potrebbe cavillare, a volte dopo settimane.",
-    "expansionRisesFix": "La cavillatura indebolisce i pezzi e non è consigliata sulle superfici a contatto con il cibo. Sostituire una parte di sodio e potassio con fondenti a minore dilatazione (boro, litio, magnesio o calcio) abbassa la dilatazione; a volte si suggerisce di aggiungere silice, ma le fonti non concordano.",
+    "expansionRisesFix": "La cavillatura indebolisce i pezzi e non è consigliata sulle superfici a contatto con il cibo. Sostituire una parte di sodio e potassio con fondenti a minore dilatazione (boro, litio, magnesio o calcio) abbassa la dilatazione termica; a volte si suggerisce di aggiungere silice, ma le fonti non concordano.",
     "expansionFalls": "La dilatazione calcolata scende da {was} a {now}. Una dilatazione un po’ più bassa di solito resiste meglio alla cavillatura.",
     "expansionFallsProbably": "Se è molto più bassa, lo smalto probabilmente darà scagliatura, con schegge taglienti che si staccano da bordi e spigoli.",
     "expansionFallsCan": "Se è molto più bassa, lo smalto può dare scagliatura, con schegge taglienti che si staccano da bordi e spigoli.",
@@ -598,6 +598,36 @@
     "firingFromBlock": "Dalla cottura della ricetta ({bands})",
     "bothBands": "La cottura della ricetta copre {bands}, quindi ogni intervallo è controllato, affiancato agli altri: uno smalto raramente si comporta allo stesso modo alle due estremità.",
     "fromFiring": "I valori sono per la cottura della ricetta: {band}. Scegliere sopra una cottura per controllarne un’altra."
+  },
+  "coneFit": {
+    "cooler": "La chimica di questo smalto assomiglia più a quella di uno smalto per {looksLike, select, low {la bassa temperatura} other {la media temperatura}} che a quella di uno smalto per {scale, select, band {{band, select, low {la bassa temperatura} mid {la media temperatura} other {l’alta temperatura}}} sk {SK {cone}} temperature {{cone} °C} other {il cono {cone}}}.",
+    "coolerSoft": "La chimica di questo smalto tende a una cottura meno calda che {scale, select, band {{band, select, low {alla bassa temperatura} mid {alla media temperatura} other {all’alta temperatura}}} sk {a SK {cone}} temperature {a {cone} °C} other {a cono {cone}}}, più vicina al cono 6, anche se la sola chimica distingue solo approssimativamente gli smalti per cono 6 e per cono 10.",
+    "hotter": "La chimica di questo smalto assomiglia più a quella di uno smalto per {looksLike, select, high {l’alta temperatura} other {la media temperatura}} che a quella di uno smalto per {scale, select, band {{band, select, low {la bassa temperatura} mid {la media temperatura} other {l’alta temperatura}}} sk {SK {cone}} temperature {{cone} °C} other {il cono {cone}}}.",
+    "hotterSoft": "La chimica di questo smalto tende a una cottura più calda che {scale, select, band {{band, select, low {alla bassa temperatura} mid {alla media temperatura} other {all’alta temperatura}}} sk {a SK {cone}} temperature {a {cone} °C} other {a cono {cone}}}, più vicina al cono 10, anche se la sola chimica distingue solo approssimativamente gli smalti per cono 6 e per cono 10.",
+    "closer": "Nell’intervallo per cui è indicato, la chimica di questo smalto sembra più vicina all’estremo {scale, select, band {{band, select, low {della bassa temperatura} mid {della media temperatura} other {dell’alta temperatura}}} sk {di SK {cone}} temperature {di {cone} °C} other {del cono {cone}}}.",
+    "coolerSilica": "Contiene più boro ({boron}) di quanto ne serva di solito agli smalti cotti {scale, select, band {{band, select, low {alla bassa temperatura} mid {alla media temperatura} other {all’alta temperatura}}} sk {a SK {cone}} temperature {a {cone} °C} other {a cono {cone}}}, e meno silice ({silica}) di quanta ne abbiano di solito.",
+    "coolerAlumina": "Contiene più boro ({boron}) di quanto ne serva di solito agli smalti cotti {scale, select, band {{band, select, low {alla bassa temperatura} mid {alla media temperatura} other {all’alta temperatura}}} sk {a SK {cone}} temperature {a {cone} °C} other {a cono {cone}}}, e poca allumina ({alumina}).",
+    "coolerBoth": "Contiene più boro ({boron}) di quanto ne serva di solito agli smalti cotti {scale, select, band {{band, select, low {alla bassa temperatura} mid {alla media temperatura} other {all’alta temperatura}}} sk {a SK {cone}} temperature {a {cone} °C} other {a cono {cone}}}, e meno silice ({silica}) e allumina ({alumina}) di quanta ne abbiano di solito.",
+    "hotterSilica": "Contiene poco boro ({boron}) per {scale, select, band {{band, select, low {la bassa temperatura} mid {la media temperatura} other {l’alta temperatura}}} sk {SK {cone}} temperature {{cone} °C} other {il cono {cone}}}, e più silice ({silica}) di quanta ne abbiano di solito gli smalti con quella cottura.",
+    "coolerEffect": "A quella cottura può colare o fondere troppo: cuocere prima un provino su un dischetto di biscotto.",
+    "hotterEffect": "A quella cottura può uscire sottocotto: asciutto, ruvido o non del tutto sigillato. Cuocerlo in prova prima di usarlo sui pezzi, e soprattutto prima di usarlo dove cibo o bevande lo toccheranno.",
+    "hotterEffectSoft": "Alcuni smalti fondono a quella cottura anche senza boro, quindi questa è solo un’indicazione: verificare su un provino che fonda del tutto.",
+    "gerstley": "Una parte del suo boro viene dal Gerstley Borate, che varia da un lotto all’altro, quindi quel valore è meno sicuro.",
+    "guide": "Questo confronta la chimica con valori pubblicati: è una guida, non un test. Se lo smalto ha cotto bene per Lei a questo cono, si fidi dei Suoi provini.",
+    "fits": "Il suo boro, la sua silice e la sua allumina non sono in contrasto con {scale, select, band {{band, select, low {la bassa temperatura} mid {la media temperatura} other {l’alta temperatura}}} sk {SK {cone}} temperature {{cone} °C} other {il cono {cone}}}. È una guida, non un test: non dice nulla sulla stabilità dello smalto o sulla sua idoneità al contatto con gli alimenti.",
+    "sources": "Fonti:",
+    "skip": {
+      "lead": "Glazecalc non può confrontare la chimica di questo smalto con la sua cottura: gran parte del suo fuso viene dal piombo, che i valori pubblicati usati da questo controllo non coprono.",
+      "lithium": "Glazecalc non può confrontare la chimica di questo smalto con la sua cottura: gran parte del suo fuso viene dal litio, che i valori pubblicati usati da questo controllo non coprono.",
+      "alkali": "Glazecalc non può confrontare la chimica di questo smalto con la sua cottura: gran parte del suo fuso viene da sodio e potassio, che i valori pubblicati usati da questo controllo non coprono.",
+      "zinc": "Glazecalc non può confrontare la chimica di questo smalto con la sua cottura: contiene molto zinco, come gli smalti cristallini, e i valori pubblicati usati da questo controllo non lo coprono.",
+      "notGlaze": "Glazecalc non può confrontare la chimica di questo smalto con la sua cottura: la sua formula non è quella di uno smalto usuale (pochissima o moltissima silice, o molti ossidi coloranti), quindi i valori pubblicati usati da questo controllo non le si adattano.",
+      "process": "Glazecalc non può confrontare la chimica di questo smalto con la sua cottura: è per una cottura {process, select, raku {raku} salt {a sale} soda {a soda} wood {a legna} other {in buca}}, in cui il forno compie una parte della smaltatura, e i valori pubblicati usati da questo controllo non la coprono.",
+      "ash": "Glazecalc non può confrontare la chimica di questo smalto con la sua cottura: contiene cenere, la cui composizione varia troppo per i valori pubblicati usati da questo controllo.",
+      "noTemperature": "Glazecalc non può confrontare la chimica di questo smalto con {scale, select, band {{band, select, low {la bassa temperatura} mid {la media temperatura} other {l’alta temperatura}}} sk {SK {cone}} temperature {{cone} °C} other {il cono {cone}}}: non esiste una temperatura misurata per quel cono.",
+      "between": "Glazecalc non può confrontare la chimica di questo smalto con {scale, select, band {{band, select, low {la bassa temperatura} mid {la media temperatura} other {l’alta temperatura}}} sk {SK {cone}} temperature {{cone} °C} other {il cono {cone}}}: i valori pubblicati usati da questo controllo sono per la bassa temperatura e per la media e alta temperatura, non per i coni intermedi (da 01 a 3).",
+      "belowChart": "Glazecalc non può confrontare la chimica di questo smalto con {scale, select, band {{band, select, low {la bassa temperatura} mid {la media temperatura} other {l’alta temperatura}}} sk {SK {cone}} temperature {{cone} °C} other {il cono {cone}}}: la regola del boro di Katz vale dal cono 06 al cono 10, e quella cottura è meno calda."
+    }
   },
   "stull": {
     "heading": "Diagramma di Stull",
@@ -904,7 +934,7 @@
     "foodSurface": "Per una superficie a contatto con gli alimenti (uno smalto interno)",
     "liner": {
       "note": "La sicurezza alimentare dipende dal cuocere questo smalto al cono a cui è stato provato: uno smalto sottocotto può cedere metalli.",
-      "range": "È indicato per un intervallo, quindi provarlo all’estremità bassa dell’intervallo, dove fonde meno.",
+      "range": "La cottura di questo smalto è indicata come intervallo, quindi provarlo all’estremità bassa dell’intervallo, dove fonde meno.",
       "untested": "Nessun cono è ancora segnato come provato.",
       "test": "Solo una prova di cessione sui propri pezzi cotti mostra se è idoneo al contatto con gli alimenti."
     },
@@ -967,5 +997,23 @@
     "replaceAsk": "Spuntati come provati: {now}. Sostituirli con i coni indicati dai registri, {logs}?",
     "replace": "Sostituisci",
     "keep": "Lascia così"
+  },
+  "coneCards": {
+    "heading": "Risultati per cono",
+    "unplaced": "Non assegnato a un cono",
+    "unplacedNote": "Questi registri di cottura non sono ancora assegnati a un cono: scegliere dove è stato cotto ciascuno.",
+    "approx": "≈ {temperature}",
+    "cautions": "{count, plural, =0 {nessuna avvertenza sui limiti} one {# avvertenza sui limiti} many {# di avvertenze sui limiti} other {# avvertenze sui limiti}}",
+    "logs": "{count, plural, =0 {nessun registro di cottura} one {# registro di cottura} many {# di registri di cottura} other {# registri di cottura}}",
+    "outside": "fuori dalla cottura indicata",
+    "outsideChoice": "{place} (fuori dalla cottura indicata)",
+    "summaryLabel": "Risultato per {place}",
+    "summaryPlaceholder": "Superficie, colore, colature, cavillatura...",
+    "noAtmosphere": "atmosfera non indicata",
+    "placeLabel": "Dove è stato cotto {title}",
+    "notPlaced": "Non assegnato",
+    "add": "Aggiungi un risultato per",
+    "addButton": "Aggiungi",
+    "saveFailed": "Non è stato possibile salvare dove è stato cotto il registro di cottura."
   }
 }

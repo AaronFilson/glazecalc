@@ -167,7 +167,7 @@ Rio Grande khuyên dùng một **mạch điện riêng** (một mạch không c�
 
 ### Hãy có mặt khi lần nung kết thúc
 
-**Kiln-Sitter** là công tắc cơ khí trên nhiều lò thủ công (lò điều khiển bằng tay): một côn nhỏ cong ở cuối lần nung và làm công tắc ngắt. Hướng dẫn sử dụng của nó nói nó “KHÔNG được thiết kế để hoạt động như một thiết bị ngắt an toàn khi có sự cố (fail-safe).” Rio Grande nói tuyệt đối không để một lò đang nung không người trông, “đặc biệt là gần thời điểm tắt dự kiến”. Vì vậy hãy ở gần và kiểm tra lò trong khi nung, nhất là gần lúc kết thúc; chỉ nung khi có một người lớn ở nhà và tỉnh táo để làm việc đó, kiểm tra rằng lò đã tắt, và giữ một bình chữa cháy ABC trong phòng lò. Để biết Kiln-Sitter, bộ điều khiển và đường cong nung hoạt động thế nào, xem [Nung một lò gốm cơ bản](/guides/firing).
+**Kiln-Sitter** là công tắc cơ khí trên nhiều lò thủ công (lò điều khiển bằng tay): một côn nhỏ cong ở cuối lần nung và làm công tắc ngắt. Hướng dẫn sử dụng của nó nói nó “KHÔNG được thiết kế để hoạt động như một thiết bị ngắt an toàn khi có sự cố (fail-safe).” Rio Grande nói tuyệt đối không để một lò đang nung không người trông, “đặc biệt là gần thời điểm tắt dự kiến”. Vì vậy hãy ở gần và kiểm tra lò trong khi nung, nhất là gần lúc kết thúc; chỉ nung khi có một người lớn ở nhà và tỉnh táo suốt lần nung, kiểm tra rằng lò đã tắt, và giữ một bình chữa cháy ABC trong phòng lò. Để biết Kiln-Sitter, bộ điều khiển và đường cong nung hoạt động thế nào, xem [Nung một lò gốm cơ bản](/guides/firing).
 
 ### Khói và cacbon monoxit
 

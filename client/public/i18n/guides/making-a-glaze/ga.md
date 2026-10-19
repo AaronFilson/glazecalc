@@ -211,7 +211,7 @@ Fágann **salann Epsom** go nglóthaíonn glónra beagán nuair a sheasann sé s
 
 Fágann **guma CMC** (ceallalós carbocsaimeitile) draoib níos greamaithí agus níos moille ag triomú, agus fágann sé brat níos crua a ghreamaíonn den phota. Is mó a bhíonn sé tábhachtach do ghlónraí scuabtha agus do ghlónraí a bhfuil cuid mhór friota{{en: frit}} iontu. I sampla Digitalfire, cumasctar 3.75 g isteach i 1000 g draoibe, agus caithfear cumascóir a úsáid chun é a chur isteach. Ní ghlóthóidh salann Epsom glónra a bhfuil CMC ann, agus ós rud é go n-itheann miocróib an guma, is féidir leis an nglónra athrú sa bhuicéad agus tosú ag cur drochbholadh de.
 
-Cabhraíonn **beintinít**, cré an-mhín, leis na cáithníní eile a choinneáil ar fuaidreán. Is gnách go mbíonn glónraí tumtha ag brath ar 15 go 25% cré neamhbhácáilte chuige sin. I gcás oidis nach bhfuil a dhóthain cré ann, cabhraíonn thart ar 1 go 3% beintiníte; deir Digitalfire nár cheart go mbeadh níos mó ná 1% de dhíth ar ghlónra a bhfuil níos mó ná 15% cré ann.
+Cabhraíonn **beintinít**, cré an-mhín, leis na cáithníní eile a choinneáil ar fuaidreán. Is gnách go mbíonn glónraí tumtha ag brath ar 15 go 25% cré neamhbhácáilte chuige sin. I gcás oidis nach bhfuil a dhóthain cré ann, cabhraíonn thart ar 1 go 3% beintiníte; deir Digitalfire nár cheart go mbeadh beintinít de dhíth ar ghlónra a bhfuil níos mó ná 15% cré ann ag níos mó ná 1% de mheáchan an ghlónra thirim.
 
 ## Tíleanna tástála agus sraitheanna cumaisc {#testing}
 

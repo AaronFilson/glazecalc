@@ -199,11 +199,11 @@ Mnogi Kiln-Sitteri, uključujući Dawsonove modele LT, imaju **vremenski isklju�
 Table: Na koliko postaviti vremenski isključivač
 Label: Postavke vremenskog isključivača
 
-| Izvor     | Postavka                                                                                                                                |
-| --------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| Dawson    | ½ sata dulje od očekivanog trajanja pečenja dok ne upoznate peć, poslije samo ¼ sata dulje; nikad ga ne postavljajte na više od 20 sati |
-| L&L       | Prvi put na vrlo dugo vrijeme, uz bilježenje koliko pečenje traje; nakon toga oko 1 sat dulje                                           |
-| Bracker's | 30 minuta do 1 sat dulje od trajanja pečenja                                                                                            |
+| Izvor     | Postavka                                                                                                                           |
+| --------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| Dawson    | ½ sata dulje od očekivanog trajanja pečenja dok ne upoznate peć, poslije ¼ sata dulje; nikad ga ne postavljajte na više od 20 sati |
+| L&L       | Prvi put na vrlo dugo vrijeme, uz bilježenje koliko pečenje traje; nakon toga oko 1 sat dulje                                      |
+| Bracker's | 30 minuta do 1 sat dulje od trajanja pečenja                                                                                       |
 
 > [!NOTE]
 > Naše polazište: prvi put s velikom zalihom vremena (unutar 20 sati koliko ima brojčanik), a zatim ½ do 1 sat dulje od vremena koje ste zabilježili. Vremenski isključivač pokazuje i koliko je pečenje trajalo: ako je postavljen na 7, a stao na 1, pečenje je trajalo 6 sati.
@@ -352,11 +352,11 @@ Label: Tablica stožaca SK
 | SK 19   |      {{2768 °F; 1520 °C}} |
 | SK 20   |      {{2786 °F; 1530 °C}} |
 
-Svaka je vrijednost nazivna (JIS): temperatura koju norma daje za stožac, kako je otisnuta u tablici tvrtke Yuko Trading. Tablica ne navodi brzinu zagrijavanja. Norma daje referentne temperature. Pri brzini uobičajenoj u keramičkoj radionici, oko 100 °C/h, kyotski gradski institut izmjerio je da se njegovi vlastiti kyotski stošci savijaju 40–70 °C hladnije od vrijednosti JIS za isti broj; takva mjerenja za stošce SK prema JIS-u nismo pronašli. Postavite kontrolni stožac i usporedite.
+Svaka je vrijednost nazivna (JIS): temperatura koju norma daje za stožac, kako je otisnuta u tablici tvrtke Yuko Trading. Tablica ne navodi brzinu zagrijavanja. Norma daje referentne temperature. Pri brzini uobičajenoj u keramičkoj radionici, oko 100 °C/h, kyotski gradski institut izmjerio je da se njegovi vlastiti kyotski stošci savijaju 47–79 °C hladnije od vrijednosti JIS za isti broj; takva mjerenja za stošce SK prema JIS-u nismo pronašli. Postavite kontrolni stožac i usporedite.
 
 ### Kyotski stošci
 
-Kyotski stošci (京都ゼーゲル), koje je izrađivao kyotski gradski institut, više se ne izrađuju: prema novinskim izvješćima institut je proizvodnju obustavio krajem poslovne godine 2009. Nose iste brojeve kao stošci SK prema JIS-u, ali se savijaju hladnije: kyotski se stožac uglavnom savije pri otprilike temperaturi stošca SK prema JIS-u koji je dva broja hladniji. Recept iz Kyota koji kaže „SK 8” možda misli na kyotski stožac. Institut je objavio savjete za keramičare koji s kyotskih stožaca prelaze na Ortonove stošce, a umjesto svojeg kyotskog SK 12 uzima Ortonov stožac 10; to je izbor instituta na temelju vlastitih mjerenja pri 100 °C/h i ne vrijedi ni za jedan drugi stožac.
+Kyotski stošci (京都ゼーゲル), koje je izrađivao kyotski gradski institut, više se ne izrađuju: prema novinskim izvješćima institut je proizvodnju obustavio krajem poslovne godine 2009. Nose iste brojeve kao stošci SK prema JIS-u, ali se savijaju hladnije: kyotski se stožac savije pri otprilike temperaturi stošca SK prema JIS-u koji je dva ili tri broja hladniji. Recept iz Kyota koji kaže „SK 8” možda misli na kyotski stožac. Institut je objavio savjete za keramičare koji s kyotskih stožaca prelaze na Ortonove stošce, a umjesto svojeg kyotskog SK 12 uzima Ortonov stožac 10; to je izbor instituta na temelju vlastitih mjerenja pri 100 °C/h i ne vrijedi ni za jedan drugi stožac.
 
 ### Ortonovi stošci koji se prodaju u Japanu
 

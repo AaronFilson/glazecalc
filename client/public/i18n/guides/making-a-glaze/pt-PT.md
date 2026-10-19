@@ -211,7 +211,7 @@ O **sal de Epsom** faz um vidrado gelificar ligeiramente quando está parado e v
 
 A **goma CMC** (carboximetilcelulose) torna a suspensão mais pegajosa e mais lenta a secar, e deixa uma camada mais dura que adere à peça. É mais importante nos vidrados para pincel e nos vidrados ricos em frita{{en: frit}}. O exemplo do Digitalfire mistura 3,75 g em 1000 g de suspensão, e tem de ser incorporada com uma liquidificadora. Um vidrado com CMC não gelifica com sal de Epsom e, como os micróbios se alimentam da goma, pode alterar-se no balde e começar a cheirar mal.
 
-A **bentonite**, uma argila muito fina, ajuda a manter as outras partículas em suspensão. Os vidrados para imersão costumam contar com 15 a 25% de argila crua para isso. Numa receita com pouca argila, cerca de 1 a 3% de bentonite ajuda; segundo o Digitalfire, um vidrado com mais de 15% de argila não deve precisar de mais de 1%.
+A **bentonite**, uma argila muito fina, ajuda a manter as outras partículas em suspensão. Os vidrados para imersão costumam contar com 15 a 25% de argila crua para isso. Numa receita com pouca argila, cerca de 1 a 3% de bentonite ajuda; segundo o Digitalfire, um vidrado com mais de 15% de argila não deve precisar de mais de 1% de bentonite sobre o peso do vidrado seco.
 
 ## Peças de teste e testes em linha {#testing}
 

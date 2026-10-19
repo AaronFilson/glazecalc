@@ -199,11 +199,11 @@ Molti kiln sitter, compresi i modelli LT di Dawson, hanno un **timer di sicurezz
 Table: Per quanto tempo impostare il timer di sicurezza
 Label: Impostazioni del timer di sicurezza
 
-| Fonte     | Impostazione                                                                                                                              |
-| --------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| Dawson    | ½ ora in più della durata prevista della cottura finché non si conosce il forno, poi solo ¼ d’ora in più; non impostarlo mai oltre 20 ore |
-| L&L       | Molto alto la prima volta, annotando quanto dura la cottura; in seguito, circa 1 ora in più                                               |
-| Bracker’s | Da 30 minuti a 1 ora in più della durata della cottura                                                                                    |
+| Fonte     | Impostazione                                                                                                                         |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| Dawson    | ½ ora in più della durata prevista della cottura finché non si conosce il forno, poi ¼ d’ora in più; non impostarlo mai oltre 20 ore |
+| L&L       | Molto alto la prima volta, annotando quanto dura la cottura; in seguito, circa 1 ora in più                                          |
+| Bracker’s | Da 30 minuti a 1 ora in più della durata della cottura                                                                               |
 
 > [!NOTE]
 > Il nostro punto di partenza: abbondante la prima volta (entro le 20 ore del quadrante), poi da ½ a 1 ora in più del tempo annotato. Il timer indica anche quanto è durata una cottura: impostato su 7 e fermo su 1 significa 6 ore.
@@ -352,11 +352,11 @@ Label: Tabella dei coni SK
 | SK 19   |       {{2768 °F; 1520 °C}} |
 | SK 20   |       {{2786 °F; 1530 °C}} |
 
-Ogni valore è nominale (JIS): la temperatura che la norma indica per il cono, come stampata nella tabella di Yuko Trading. La tabella non indica una velocità di riscaldamento. La norma dà temperature di riferimento. A una velocità di riscaldamento abituale per chi fa ceramica, circa 100 °C/h, l’istituto municipale di Kyoto ha misurato che i propri coni di Kyoto si piegano 40–70 °C più in basso del valore JIS per lo stesso numero; per i coni SK secondo la JIS non abbiamo trovato misurazioni di questo tipo. Mettere un cono testimone e confrontare.
+Ogni valore è nominale (JIS): la temperatura che la norma indica per il cono, come stampata nella tabella di Yuko Trading. La tabella non indica una velocità di riscaldamento. La norma dà temperature di riferimento. A una velocità di riscaldamento abituale per chi fa ceramica, circa 100 °C/h, l’istituto municipale di Kyoto ha misurato che i propri coni di Kyoto si piegano 47–79 °C più in basso del valore JIS per lo stesso numero; per i coni SK secondo la JIS non abbiamo trovato misurazioni di questo tipo. Mettere un cono testimone e confrontare.
 
 ### I coni di Kyoto
 
-I coni di Kyoto (京都ゼーゲル), prodotti dall’istituto municipale di Kyoto, non si fabbricano più: secondo le notizie di stampa l’istituto ha cessato la produzione alla chiusura dell’esercizio 2009. Portano gli stessi numeri dei coni SK secondo la JIS, ma si piegano più in basso: un cono di Kyoto si piega per lo più a circa la temperatura del cono SK secondo la JIS di due numeri inferiore. Una ricetta di Kyoto che dice «SK 8» può intendere un cono di Kyoto. L’istituto ha pubblicato indicazioni per chi passa dai coni di Kyoto ai coni Orton, e sostituisce il proprio cono di Kyoto SK 12 con il cono Orton 10; è una scelta dell’istituto, basata sulle sue misurazioni a 100 °C/h, e non vale per nessun altro cono.
+I coni di Kyoto (京都ゼーゲル), prodotti dall’istituto municipale di Kyoto, non si fabbricano più: secondo le notizie di stampa l’istituto ha cessato la produzione alla chiusura dell’esercizio 2009. Portano gli stessi numeri dei coni SK secondo la JIS, ma si piegano più in basso: un cono di Kyoto si piega a circa la temperatura del cono SK secondo la JIS di due o tre numeri inferiore. Una ricetta di Kyoto che dice «SK 8» può intendere un cono di Kyoto. L’istituto ha pubblicato indicazioni per chi passa dai coni di Kyoto ai coni Orton, e sostituisce il proprio cono di Kyoto SK 12 con il cono Orton 10; è una scelta dell’istituto, basata sulle sue misurazioni a 100 °C/h, e non vale per nessun altro cono.
 
 ### I coni Orton venduti in Giappone
 

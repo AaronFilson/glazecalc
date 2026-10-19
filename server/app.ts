@@ -14,7 +14,7 @@ import authRoutes from './routes/auth_routes.ts';
 import exportRoutes from './routes/export_routes.ts';
 import guestRoutes from './routes/guest_routes.ts';
 import mfaRoutes from './routes/mfa_routes.ts';
-import oauthRoutes from './routes/oauth_routes.ts';
+import oauthRoutes, { microsoftAssociation } from './routes/oauth_routes.ts';
 import emailRoutes from './routes/email_routes.ts';
 import passwordRoutes from './routes/password_routes.ts';
 import tokenRoutes from './routes/token_routes.ts';
@@ -116,7 +116,7 @@ api.use('/email', emailRoutes);
 api.use('/tokens', tokenRoutes);
 // Two-step sign-in: the account's factors (docs/mfa-plan.md).
 api.use('/mfa', mfaRoutes);
-// Signing in with Google or GitHub (docs/adr/0015-provider-sign-in.md).
+// Signing in with Google, GitHub or Microsoft (docs/adr/0015-provider-sign-in.md, 0023).
 api.use('/auth', oauthRoutes);
 // /signup, /signin, /signout, /verify, /usersettings/:id and /deleteuser/:id
 api.use('/', authRoutes);
@@ -128,6 +128,8 @@ app.use('/api', api);
 // its own checks and limits, and its metadata for clients (RFC 9728).
 app.use('/mcp', mcpRouter);
 app.use('/.well-known', metadataRouter);
+// Microsoft's publisher domain file, written from MICROSOFT_CLIENT_ID (docs/adr/0023-microsoft-sign-in.md).
+app.get('/.well-known/microsoft-identity-association.json', microsoftAssociation);
 
 // The client. Built file names carry a content hash, so browsers may keep
 // them for a year; index.html must be checked each time to pick up new builds.

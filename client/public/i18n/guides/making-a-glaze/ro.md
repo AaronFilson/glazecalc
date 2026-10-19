@@ -211,7 +211,7 @@ Label: Apa pentru o greutate specifică țintă
 
 **CMC** (carboximetilceluloză) face glazura preparată mai lipicioasă și mai lentă la uscare și lasă un strat mai tare, care aderă la piesă. Contează cel mai mult la glazurile pentru pensulare și la cele cu multă frită{{en: frit}}. În exemplul Digitalfire se amestecă 3,75 g în 1000 g de glazură preparată, iar încorporarea trebuie făcută cu blenderul. O glazură cu CMC nu se gelifică cu sare amară și, pentru că microbii se hrănesc cu acest liant, se poate schimba în găleată și poate începe să miroasă.
 
-**Bentonita**, o argilă foarte fină, ajută la menținerea celorlalte particule în suspensie. Pentru aceasta, glazurile pentru imersie se bazează de obicei pe 15–25 % argilă crudă. Pentru o rețetă cu prea puțină argilă, ajută aproximativ 1–3 % bentonită; Digitalfire spune că o glazură cu peste 15 % argilă nu ar trebui să aibă nevoie de mai mult de 1 %.
+**Bentonita**, o argilă foarte fină, ajută la menținerea celorlalte particule în suspensie. Pentru aceasta, glazurile pentru imersie se bazează de obicei pe 15–25 % argilă crudă. Pentru o rețetă cu prea puțină argilă, ajută aproximativ 1–3 % bentonită; Digitalfire spune că o glazură cu peste 15 % argilă nu ar trebui să aibă nevoie de bentonită în proporție de peste 1 % din greutatea glazurii uscate.
 
 ## Plăcuțe de test și serii de teste {#testing}
 

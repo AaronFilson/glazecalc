@@ -205,6 +205,28 @@ describe('share links', () => {
     expect((await view(secret)).body).to.not.have.property('firedAt');
   });
 
+  it('send the result summaries for each cone and atmosphere only with the notes, never the logs they came from', async () => {
+    const { secret } = await share();
+    const logId = '64b7f0c2a1b2c3d4e5f60718';
+    const coneResults = [
+      { cone: '6', atmosphere: 'oxidation', summary: 'Satin, pools glossy' },
+      { cone: '6', atmosphere: 'reduction', summary: 'Celadon green' }
+    ];
+    await as(alice.token).put('/recipe/change/' + recipeId, {
+      recipe: {
+        firedAt: { scale: 'orton', low: '6', atmospheres: ['oxidation', 'reduction'] },
+        firings: [{ firing: logId, result: 'kiln 2', cone: '6', atmosphere: 'reduction' }],
+        coneResults
+      }
+    });
+    expect((await view(secret)).body).to.not.have.property('coneResults');
+    expect(await as(alice.token).put('/share/recipe/' + recipeId, { includeNotes: true })).to.have.status(200);
+    const body = (await view(secret)).body;
+    expect(body.coneResults).to.eql(coneResults);
+    expect(body).to.not.have.property('firings');
+    expect(JSON.stringify(body)).to.not.include(logId).and.not.include('kiln 2');
+  });
+
   it("carry the chemistry an additive borrows by name, from the owner's records too", async () => {
     await Additive.create({
       name: 'Bentonite',

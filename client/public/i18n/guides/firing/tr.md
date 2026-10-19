@@ -199,11 +199,11 @@ Dawson’ın LT modelleri de dahil olmak üzere birçok kiln sitter’da bir **s
 Table: Süre sınırlayıcı zamanlayıcı ne kadara ayarlanmalı
 Label: Zamanlayıcı ayarları
 
-| Kaynak    | Ayar                                                                                                                                      |
-| --------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| Dawson    | Fırını tanıyana kadar beklenen pişirim süresinden ½ saat fazla, sonra ¼ saat fazlasına kadar inebilir; 20 saatin ötesine asla ayarlamayın |
-| L&L       | İlk seferde çok yüksek, pişirimin ne kadar sürdüğünü not ederek; sonrasında yaklaşık 1 saat fazla                                         |
-| Bracker's | Pişirim süresinden 30 dakika ile 1 saat arası fazla                                                                                       |
+| Kaynak    | Ayar                                                                                                                   |
+| --------- | ---------------------------------------------------------------------------------------------------------------------- |
+| Dawson    | Fırını tanıyana kadar beklenen pişirim süresinden ½ saat fazla, sonra ¼ saat fazla; 20 saatin ötesine asla ayarlamayın |
+| L&L       | İlk seferde çok yüksek, pişirimin ne kadar sürdüğünü not ederek; sonrasında yaklaşık 1 saat fazla                      |
+| Bracker's | Pişirim süresinden 30 dakika ile 1 saat arası fazla                                                                    |
 
 > [!NOTE]
 > Başlangıç noktamız: ilk seferde cömert davranın (kadranın 20 saati içinde), sonra kaydettiğiniz süreden ½ ila 1 saat fazla. Zamanlayıcı bir pişirimin ne kadar sürdüğünü de söyler: 7’ye ayarlanıp 1’de bitmesi 6 saat demektir.
@@ -352,11 +352,11 @@ Label: SK tablosu
 | SK 19   |   {{2768 °F; 1520 °C}} |
 | SK 20   |   {{2786 °F; 1530 °C}} |
 
-Her değer nominaldir (JIS): standardın piramit için verdiği, Yuko Trading’in tablosunda basıldığı biçimiyle sıcaklık. Tabloda bir ısıtma hızı yazmaz. Standart referans sıcaklıklar verir. Seramikçilerin kullandığı yaklaşık 100 °C/h hızda Kyoto’nun belediye enstitüsü, kendi Kyoto piramitlerinin aynı numaranın JIS değerinden 40–70 °C daha düşük sıcaklıkta eğildiğini ölçmüştür; JIS’e uygun SK piramitleri için böyle ölçümler bulamadık. Bir gözlem piramidi koyun ve karşılaştırın.
+Her değer nominaldir (JIS): standardın piramit için verdiği, Yuko Trading’in tablosunda basıldığı biçimiyle sıcaklık. Tabloda bir ısıtma hızı yazmaz. Standart referans sıcaklıklar verir. Seramikçilerin kullandığı yaklaşık 100 °C/h hızda Kyoto’nun belediye enstitüsü, kendi Kyoto piramitlerinin aynı numaranın JIS değerinden 47–79 °C daha düşük sıcaklıkta eğildiğini ölçmüştür; JIS’e uygun SK piramitleri için böyle ölçümler bulamadık. Bir gözlem piramidi koyun ve karşılaştırın.
 
 ### Kyoto piramitleri
 
-Kyoto’nun belediye enstitüsünün ürettiği Kyoto piramitleri (京都ゼーゲル) artık üretilmiyor: haberlere göre enstitü üretimi 2009 mali yılının sonunda durdurdu. JIS’e uygun SK piramitleriyle aynı numaraları taşırlar ama daha soğuk eğilirler: bir Kyoto piramidi çoğunlukla, iki numara aşağıdaki JIS’e uygun SK piramidinin sıcaklığı civarında eğilir. Kyoto’dan gelen ve “SK 8” diyen bir reçete bir Kyoto piramidini kastediyor olabilir. Enstitü, Kyoto piramitlerinden Orton piramitlerine geçen seramikçiler için tavsiyeler yayımlamıştır ve kendi Kyoto SK 12’sinin yerine 10 numaralı Orton piramidini kullanır; bu, enstitünün 100 °C/h hızda yaptığı kendi ölçümlerine dayanan kendi tercihidir ve başka hiçbir piramide uygulanmaz.
+Kyoto’nun belediye enstitüsünün ürettiği Kyoto piramitleri (京都ゼーゲル) artık üretilmiyor: haberlere göre enstitü üretimi 2009 mali yılının sonunda durdurdu. JIS’e uygun SK piramitleriyle aynı numaraları taşırlar ama daha soğuk eğilirler: bir Kyoto piramidi, iki veya üç numara aşağıdaki JIS’e uygun SK piramidinin sıcaklığı civarında eğilir. Kyoto’dan gelen ve “SK 8” diyen bir reçete bir Kyoto piramidini kastediyor olabilir. Enstitü, Kyoto piramitlerinden Orton piramitlerine geçen seramikçiler için tavsiyeler yayımlamıştır ve kendi Kyoto SK 12’sinin yerine 10 numaralı Orton piramidini kullanır; bu, enstitünün 100 °C/h hızda yaptığı kendi ölçümlerine dayanan kendi tercihidir ve başka hiçbir piramide uygulanmaz.
 
 ### Japonya’da satılan Orton piramitleri
 

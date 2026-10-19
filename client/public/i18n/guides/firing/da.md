@@ -199,11 +199,11 @@ Mange Kiln-Sittere, også Dawsons LT-modeller, har en **tidsbegrænser** (limit 
 Table: Hvor længe tidsbegrænseren skal indstilles
 Label: Indstilling af tidsbegrænseren
 
-| Kilde     | Indstilling                                                                                                                                       |
-| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Dawson    | ½ time længere end den forventede brændingstid, indtil man kender ovnen, senere helt ned til ¼ time længere; sæt den aldrig til mere end 20 timer |
-| L&L       | Meget højt første gang, og notér, hvor lang tid brændingen tager; derefter ca. 1 time længere                                                     |
-| Bracker’s | 30 minutter til 1 time længere end brændingstiden                                                                                                 |
+| Kilde     | Indstilling                                                                                                                          |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| Dawson    | ½ time længere end den forventede brændingstid, indtil man kender ovnen, senere ¼ time længere; sæt den aldrig til mere end 20 timer |
+| L&L       | Meget højt første gang, og notér, hvor lang tid brændingen tager; derefter ca. 1 time længere                                        |
+| Bracker’s | 30 minutter til 1 time længere end brændingstiden                                                                                    |
 
 > [!NOTE]
 > Vores udgangspunkt: rigeligt første gang (inden for urskivens 20 timer), derefter ½ til 1 time længere end den noterede tid. Uret viser også, hvor lang tid en brænding tog: Indstillet på 7 og slut på 1 betyder 6 timer.
@@ -352,11 +352,11 @@ Label: SK-tabel
 | SK 19   |     {{2768 °F; 1520 °C}} |
 | SK 20   |     {{2786 °F; 1530 °C}} |
 
-Alle tal er nominelle (JIS): den temperatur, standarden angiver for keglen, som den er trykt i Yuko Tradings tabel. Tabellen angiver ingen opvarmningshastighed. Standarden giver referencetemperaturer. Ved en hastighed, som keramikere bruger, omkring 100 °C/h, målte Kyotos kommunale institut, at dets egne Kyoto-kegler bøjede ved en temperatur 40–70 °C lavere end JIS-tallet for samme nummer; vi har ikke fundet sådanne målinger for SK-kegler efter JIS. Sæt en kontrolkegle, og sammenlign.
+Alle tal er nominelle (JIS): den temperatur, standarden angiver for keglen, som den er trykt i Yuko Tradings tabel. Tabellen angiver ingen opvarmningshastighed. Standarden giver referencetemperaturer. Ved en hastighed, som keramikere bruger, omkring 100 °C/h, målte Kyotos kommunale institut, at dets egne Kyoto-kegler bøjede ved en temperatur 47–79 °C lavere end JIS-tallet for samme nummer; vi har ikke fundet sådanne målinger for SK-kegler efter JIS. Sæt en kontrolkegle, og sammenlign.
 
 ### Kyoto-kegler
 
-Kyoto-kegler (京都ゼーゲル), lavet af Kyotos kommunale institut, fremstilles ikke længere: Ifølge nyhedsartikler stoppede instituttet produktionen ved udgangen af regnskabsåret 2009. De har de samme numre som SK-kegler efter JIS, men bøjer køligere: En Kyoto-kegle bøjer for det meste ved omtrent samme temperatur som den SK-kegle efter JIS, der ligger to numre lavere. En opskrift fra Kyoto, der siger »SK 8«, kan mene en Kyoto-kegle. Instituttet har udgivet råd til keramikere, der skifter fra Kyoto-kegler til Ortonkegler, og erstatter sin egen Kyoto-kegle SK 12 med Ortonkegle 10; det er instituttets valg ud fra dets egne målinger ved 100 °C/h og gælder ingen anden kegle.
+Kyoto-kegler (京都ゼーゲル), lavet af Kyotos kommunale institut, fremstilles ikke længere: Ifølge nyhedsartikler stoppede instituttet produktionen ved udgangen af regnskabsåret 2009. De har de samme numre som SK-kegler efter JIS, men bøjer køligere: En Kyoto-kegle bøjer ved omtrent samme temperatur som den SK-kegle efter JIS, der ligger to eller tre numre lavere. En opskrift fra Kyoto, der siger »SK 8«, kan mene en Kyoto-kegle. Instituttet har udgivet råd til keramikere, der skifter fra Kyoto-kegler til Ortonkegler, og erstatter sin egen Kyoto-kegle SK 12 med Ortonkegle 10; det er instituttets valg ud fra dets egne målinger ved 100 °C/h og gælder ingen anden kegle.
 
 ### Ortonkegler, der sælges i Japan
 

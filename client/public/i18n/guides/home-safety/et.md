@@ -167,7 +167,7 @@ Rio Grande soovitab **eraldi kaitsmega toiteliini** (mis ei toida midagi muud) j
 
 ### Kohalolek põletuse lõpus
 
-**Kiln-Sitter** on mehaaniline lüliti paljudel käsijuhtimisega ahjudel: põletuse lõpus paindub väike koonus{{en: cone}} ja lülitab ahju välja. Kiln-Sitteri kasutusjuhendis on kirjas, et see „EI OLE mõeldud rikkekindlaks väljalülitusseadmeks“. Rio Grande ütleb, et põletavat ahju ei tohi kunagi järelevalveta jätta, „eriti eeldatava väljalülitusaja lähedal“. Seega olge ahju lähedal ja kontrollige ahju põletuse ajal, eriti lõpu lähedal; põletage ainult siis, kui täiskasvanu on kodus ja ärkvel, et seda teha, kontrollige, et ahi on välja lülitunud, ja hoidke ahjuruumis ABC-tulekustutit. Kuidas Kiln-Sitterid, kontrollerid ja põletusprogrammid töötavad, vaadake juhendist [Põletamine lihtsas keraamikaahjus](/guides/firing).
+**Kiln-Sitter** on mehaaniline lüliti paljudel käsijuhtimisega ahjudel: põletuse lõpus paindub väike koonus{{en: cone}} ja lülitab ahju välja. Kiln-Sitteri kasutusjuhendis on kirjas, et see „EI OLE mõeldud rikkekindlaks väljalülitusseadmeks“. Rio Grande ütleb, et põletavat ahju ei tohi kunagi järelevalveta jätta, „eriti eeldatava väljalülitusaja lähedal“. Seega olge ahju lähedal ja kontrollige ahju põletuse ajal, eriti lõpu lähedal; põletage ainult siis, kui täiskasvanu on kodus ja kogu põletuse ajal ärkvel, kontrollige, et ahi on välja lülitunud, ja hoidke ahjuruumis ABC-tulekustutit. Kuidas Kiln-Sitterid, kontrollerid ja põletusprogrammid töötavad, vaadake juhendist [Põletamine lihtsas keraamikaahjus](/guides/firing).
 
 ### Ahjuaurud ja vingugaas
 

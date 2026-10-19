@@ -129,6 +129,14 @@ describe('AuthPage', () => {
     expect(fixture.nativeElement.querySelector('.privacy-note a').getAttribute('href')).toBe('/privacy');
   });
 
+  it('says on the sign up form that making an account agrees to the terms, with a link to them', async () => {
+    const { fixture } = await create('signup');
+    const link = fixture.nativeElement.querySelector('.terms-note a') as HTMLAnchorElement;
+    expect(text(fixture, '.terms-note')).toContain('By creating an account, you agree to the');
+    expect(link.getAttribute('href')).toBe('/terms');
+    expect(link.textContent).toBe('Terms of use');
+  });
+
   it('tells everyone outside the US, before the account is made, where accounts are kept and whose choice it is', async () => {
     const { fixture } = await create('signup');
     const preferences = TestBed.inject(PreferencesService);
@@ -232,6 +240,7 @@ describe('AuthPage hidden fields', () => {
     expect(fixture.nativeElement.querySelector('#confirmation')).toBeNull();
     expect(text(fixture, 'button[type=submit]')).toBe('Sign in');
     expect(fixture.nativeElement.querySelector('.privacy-note')).toBeNull();
+    expect(fixture.nativeElement.querySelector('.terms-note')).toBeNull();
     expect(fixture.nativeElement.querySelector('.data-notice')).toBeNull();
   });
 });

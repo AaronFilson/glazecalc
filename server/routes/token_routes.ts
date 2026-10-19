@@ -3,7 +3,7 @@
 // this after refuseAccessTokens, so no token can make, list or revoke tokens.
 //
 //   GET    /api/tokens      the account's personal tokens, newest first, and the choices for a new one:
-//                           { tokens: [TokenRow], expiryDays, defaultDays, most, scopes }
+//                           { tokens: [TokenRow], expiryDays, writeExpiryDays, defaultDays, most, scopes }
 //   POST   /api/tokens      { name, days, scope?, password, and with two-step sign-in on a current
 //                           factor (lib/mfa.d.ts IdentityProof) } makes one: 201 with
 //                           { ...say('token-made'), token: the token itself, shown this once, row: TokenRow };
@@ -14,8 +14,10 @@
 // Making one confirms the owner as any other change to how the account is
 // reached does (decision 6): the password, and a factor once two-step sign-in
 // is on. Revoking needs only the session: it takes access away, never gives it.
-// A trial makes none (decision 9), nor an account whose email is not yet
-// confirmed: 403 token-needs-confirmed-email. The token is never logged and never kept:
+// A token reads the account's records (data:read) or reads and changes them
+// (data:write); one that changes them lasts at most WRITE_PAT_MOST_DAYS. The
+// notice email says which. A trial makes none (decision 9), nor an account
+// whose email is not yet confirmed: 403 token-needs-confirmed-email. The token is never logged and never kept:
 // only its hash and last four characters are (server/models/access_token.ts).
 import express from 'express';
 import mongoose from 'mongoose';
@@ -34,13 +36,21 @@ import AccessToken, {
   keepWithinPatLimit,
   MAX_PATS,
   PAT_EXPIRY_DAYS,
+  patExpiryDays,
   revokeAll,
+  WRITE_PAT_MOST_DAYS,
   workingTokens,
   type AccessTokenDocument
 } from '../models/access_token.ts';
 
-/** The scopes a person may give a new token in this release: reading only (Phase 3; writing comes with Phase 4). */
-export const OFFERED_SCOPES: readonly Scope[] = ['data:read'];
+/**
+ * The scopes a person may give a new token: reading their records, the
+ * default, or reading and changing them (owner decision, 2026-10-19). What
+ * each allows is in server/lib/scopes.ts; changes are limited
+ * (server/lib/rate_limit.ts TOKEN_WRITE_LIMITS) and kept as versions and in
+ * the activity log (server/lib/record_history.ts).
+ */
+export const OFFERED_SCOPES: readonly Scope[] = ['data:read', 'data:write'];
 /** The longest name a token may have. */
 export const TOKEN_NAME_MAX = 100;
 const DAY = 24 * 60 * 60 * 1000;
@@ -89,6 +99,7 @@ tokenRouter.get('/', jwtAuth, notGuest, async (req, res) => {
   res.status(200).json({
     tokens: tokens.map((token) => rowOf(token, now)),
     expiryDays: PAT_EXPIRY_DAYS,
+    writeExpiryDays: patExpiryDays('data:write'),
     defaultDays: DEFAULT_PAT_EXPIRY_DAYS,
     most: MAX_PATS,
     scopes: OFFERED_SCOPES
@@ -100,15 +111,18 @@ tokenRouter.post('/', jwtAuth, notGuest, limits.passwordCheck, express.json(), a
   // The token's own fields first, so a mistake there never uses up a recovery code.
   const name = nameOf(body.name);
   if (!name) return res.status(400).json(say('token-name', { most: TOKEN_NAME_MAX }, { field: 'name' }));
+  const scope = body.scope === undefined ? OFFERED_SCOPES[0] : body.scope;
+  if (!isScope(scope) || !OFFERED_SCOPES.includes(scope)) {
+    return res.status(400).json(say('token-scope-choices', undefined, { field: 'scope' }));
+  }
   const days = body.days === undefined ? DEFAULT_PAT_EXPIRY_DAYS : body.days;
   if (!PAT_EXPIRY_DAYS.includes(days as (typeof PAT_EXPIRY_DAYS)[number])) {
     return res
       .status(400)
       .json(say('token-expiry-choices', { choices: PAT_EXPIRY_DAYS.join(', ') }, { field: 'days' }));
   }
-  const scope = body.scope === undefined ? OFFERED_SCOPES[0] : body.scope;
-  if (!isScope(scope) || !OFFERED_SCOPES.includes(scope)) {
-    return res.status(400).json(say('token-scope-choices', undefined, { field: 'scope' }));
+  if (!patExpiryDays(scope).includes(days as number)) {
+    return res.status(400).json(say('token-write-expiry', { most: WRITE_PAT_MOST_DAYS }, { field: 'days' }));
   }
   // Only to an address the owner has confirmed (owner decision): the notices about tokens go there.
   if (userOf(req).emailUnverified) return res.status(403).json(say('token-needs-confirmed-email'));
@@ -142,7 +156,7 @@ tokenRouter.post('/', jwtAuth, notGuest, limits.passwordCheck, express.json(), a
   if (!(await keepWithinPatLimit(user._id, row._id))) {
     return res.status(409).json(say('token-limit', { most: MAX_PATS }));
   }
-  log.info('Access token made', { tokenId: String(row._id), days });
+  log.info('Access token made', { tokenId: String(row._id), days, scope });
   // A notice to the owner, after the reply; not to an address nobody has confirmed.
   if (!user.emailUnverified && mailer.available()) {
     accountMail

@@ -272,7 +272,7 @@
     "numbers": {
       "heading": "Analüüsi ja piirväärtuste lugemine",
       "analysis": "<b>Analüüs ja piirväärtused</b> retsepti all näitab iga oksiidi moole, moolprotsenti ja põletatud massiprotsenti, hõõgumiskadu ja arvutatud soojuspaisumist, mis on hinnang glasuuride võrdlemiseks.",
-      "limits": "<b>Piirväärtused</b> võrdleb Segeri valemit piirväärtuste komplektiga: Hesselberthi ja Roy stabiilsete glasuuride piirväärtustega, kui te ei vali Glazecalci enda komplekti (valik salvestatakse teie sätetega). Valige <b>Põletus</b>, et kontrollida õigete arvude vastu; see salvestatakse koos retseptiga. Hesselberthi ja Roy arvud on koonuste 6 ja 10 jaoks, seega madalkuumuse puhul teatab see, et need ei kehti. Need on juhisväärtused, mitte hinnang „läbis“ või „ei läbinud“.",
+      "limits": "<b>Piirväärtused</b> võrdleb Segeri valemit piirväärtuste komplektiga: Hesselberthi ja Roy stabiilsete glasuuride piirväärtustega, kui te ei vali Glazecalci enda komplekti (valik salvestatakse teie sätetega). See kontrollib põletusriba, mille annab retsepti <b>Põletus</b>: selle koonust või vahemikku. Vahemik, mis ületab ribade piiri, näiteks koonusest 6 koonuseni 10, näitab mõlema riba kontrolle kõrvuti. Ainult ühe riba kontrollimiseks valige see piirväärtuste enda väljal <b>Põletus</b>, mis tühistab retsepti põletuse ja salvestatakse koos retseptiga. Hesselberthi ja Roy arvud on koonuste 6 ja 10 jaoks, seega madalkuumuse puhul teatab see, et need ei kehti. Need on juhisväärtused, mitte hinnang „läbis“ või „ei läbinud“. Üleval võrdleb üks rida glasuuri boori, ränidioksiidi ja alumiiniumoksiidi selle põletusega Katzi booriregli ja Hesselberthi ja Roy arvude järgi, ükskõik millise piirväärtuste komplekti te valite: see annab märkuse ainult siis, kui need on ühel meelel, et glasuur näeb välja nagu teine põletus, teatab, kui see ei saa hinnata (plii, liitium, raku ja sarnased), ning on juhis, mitte katse.",
       "stull": "<b>Stulli diagramm</b> kujutab glasuuri ränidioksiidi alumiiniumoksiidi suhtes, koos Stulli mati, poolmati ja läikiva alaga ning piirväärtuste komplekti vahemikega. See on juhend pinna kohta, mitte ennustus.",
       "slurry": "<b>Suhteline tihedus ja vesi</b> kasutab Brongniarti valemit: kaaluge mõõdetud ruumala glasuuri, seejärel vaadake kuivat glasuuri ämbris, vett, mis viib selle soovitud suhtelise tiheduseni, või vett uue segu jaoks. Tihedused järgivad teie sätet suhtelise tiheduse, Baumé kraadide või pindi kaalu jaoks."
     },
@@ -599,6 +599,36 @@
     "bothBands": "Retsepti põletus hõlmab vahemikku {bands}, seega kontrollitakse igaüht kõrvuti: glasuur käitub harva mõlemas otsas ühtmoodi.",
     "fromFiring": "Arvud on retsepti põletuse kohta: {band}. Teise kontrollimiseks valige ülal põletus."
   },
+  "coneFit": {
+    "cooler": "Selle glasuuri keemia sarnaneb rohkem {looksLike, select, low {madalkuumuse} other {keskkuumuse}} glasuuriga kui määratud põletusele ({scale, select, band {{band, select, low {madalkuumus} mid {keskkuumus} other {kõrgkuumus}}} sk {SK {cone}} temperature {{cone} °C} other {koonus {cone}}}) mõeldud glasuuriga.",
+    "coolerSoft": "Selle glasuuri keemia kaldub määratud põletusest ({scale, select, band {{band, select, low {madalkuumus} mid {keskkuumus} other {kõrgkuumus}}} sk {SK {cone}} temperature {{cone} °C} other {koonus {cone}}}) jahedama põletuse poole, lähemale koonusele 6, kuigi keemia üksi eristab koonuse 6 ja koonuse 10 glasuure vaid ligikaudu.",
+    "hotter": "Selle glasuuri keemia sarnaneb rohkem {looksLike, select, high {kõrgkuumuse} other {keskkuumuse}} glasuuriga kui määratud põletusele ({scale, select, band {{band, select, low {madalkuumus} mid {keskkuumus} other {kõrgkuumus}}} sk {SK {cone}} temperature {{cone} °C} other {koonus {cone}}}) mõeldud glasuuriga.",
+    "hotterSoft": "Selle glasuuri keemia kaldub määratud põletusest ({scale, select, band {{band, select, low {madalkuumus} mid {keskkuumus} other {kõrgkuumus}}} sk {SK {cone}} temperature {{cone} °C} other {koonus {cone}}}) kuumema põletuse poole, lähemale koonusele 10, kuigi keemia üksi eristab koonuse 6 ja koonuse 10 glasuure vaid ligikaudu.",
+    "closer": "Määratud vahemikust sarnaneb selle glasuuri keemia rohkem selle otsaga: {scale, select, band {{band, select, low {madalkuumus} mid {keskkuumus} other {kõrgkuumus}}} sk {SK {cone}} temperature {{cone} °C} other {koonus {cone}}}.",
+    "coolerSilica": "Selles on rohkem boori ({boron}), kui selle põletuse ({scale, select, band {{band, select, low {madalkuumus} mid {keskkuumus} other {kõrgkuumus}}} sk {SK {cone}} temperature {{cone} °C} other {koonus {cone}}}) glasuurid tavaliselt vajavad, ja vähem ränidioksiidi ({silica}), kui neis tavaliselt on.",
+    "coolerAlumina": "Selles on rohkem boori ({boron}), kui selle põletuse ({scale, select, band {{band, select, low {madalkuumus} mid {keskkuumus} other {kõrgkuumus}}} sk {SK {cone}} temperature {{cone} °C} other {koonus {cone}}}) glasuurid tavaliselt vajavad, ja vähe alumiiniumoksiidi ({alumina}).",
+    "coolerBoth": "Selles on rohkem boori ({boron}), kui selle põletuse ({scale, select, band {{band, select, low {madalkuumus} mid {keskkuumus} other {kõrgkuumus}}} sk {SK {cone}} temperature {{cone} °C} other {koonus {cone}}}) glasuurid tavaliselt vajavad, ja vähem ränidioksiidi ({silica}) ja alumiiniumoksiidi ({alumina}), kui neis tavaliselt on.",
+    "hotterSilica": "Selles on selle põletuse ({scale, select, band {{band, select, low {madalkuumus} mid {keskkuumus} other {kõrgkuumus}}} sk {SK {cone}} temperature {{cone} °C} other {koonus {cone}}}) jaoks vähe boori ({boron}) ja rohkem ränidioksiidi ({silica}), kui selle põletuse glasuurides tavaliselt on.",
+    "coolerEffect": "Sellel põletusel võib see voolata või üle sulada: põletage esmalt proovitükk tilgaalusel.",
+    "hotterEffect": "Sellel põletusel võib see jääda alapõletatuks: kuivaks, krobeliseks või mitte täielikult suletud. Proovipõletage see enne, kui kasutate seda esemetel, ja eriti enne, kui kasutate seda seal, kus toit või jook sellega kokku puutub.",
+    "hotterEffectSoft": "Mõned glasuurid sulavad sellel põletusel ilma boorita, seega on see vaid vihje: kontrollige proovitükil, et see sulab täielikult.",
+    "gerstley": "Osa selle boorist pärineb Gerstley boraadist, mis varieerub partiiti, seega on see arv vähem kindel.",
+    "guide": "See võrdleb keemiat avaldatud arvudega: see on juhis, mitte katse. Kui glasuur on teie jaoks sellel koonusel hästi põlenud, usaldage oma proovitükke.",
+    "fits": "Selle boor, ränidioksiid ja alumiiniumoksiid ei viita sellest põletusest ({scale, select, band {{band, select, low {madalkuumus} mid {keskkuumus} other {kõrgkuumus}}} sk {SK {cone}} temperature {{cone} °C} other {koonus {cone}}}) eemale. See on juhis, mitte katse: see ei ütle midagi selle kohta, kas glasuur on stabiilne või toidunõudele sobiv.",
+    "sources": "Allikad:",
+    "skip": {
+      "lead": "Glazecalc ei saa selle glasuuri keemiat selle põletusega võrrelda: suur osa selle sulatisest pärineb pliist, mida selle kontrolli jaoks kasutatud avaldatud arvud ei hõlma.",
+      "lithium": "Glazecalc ei saa selle glasuuri keemiat selle põletusega võrrelda: suur osa selle sulatisest pärineb liitiumist, mida selle kontrolli jaoks kasutatud avaldatud arvud ei hõlma.",
+      "alkali": "Glazecalc ei saa selle glasuuri keemiat selle põletusega võrrelda: suur osa selle sulatisest pärineb naatriumist ja kaaliumist, mida selle kontrolli jaoks kasutatud avaldatud arvud ei hõlma.",
+      "zinc": "Glazecalc ei saa selle glasuuri keemiat selle põletusega võrrelda: selles on palju tsinki, nagu kristallglasuurides, ja selle kontrolli jaoks kasutatud avaldatud arvud seda ei hõlma.",
+      "notGlaze": "Glazecalc ei saa selle glasuuri keemiat selle põletusega võrrelda: selle valem ei ole tavalise glasuuri oma (väga vähe või väga palju ränidioksiidi või palju värvioksiide), seega ei sobi selle kontrolli jaoks kasutatud avaldatud arvud sellele.",
+      "process": "Glazecalc ei saa selle glasuuri keemiat selle põletusega võrrelda: see on mõeldud {process, select, raku {rakupõletusele} salt {soolapõletusele} soda {soodapõletusele} wood {puupõletusele} other {aukpõletusele}}, kus ahi teeb osa glasuurimisest; selle kontrolli jaoks kasutatud avaldatud arvud sellist põletust ei hõlma.",
+      "ash": "Glazecalc ei saa selle glasuuri keemiat selle põletusega võrrelda: selles on tuhka, mille koostis varieerub liiga palju selle kontrolli jaoks kasutatud avaldatud arvude jaoks.",
+      "noTemperature": "Glazecalc ei saa selle glasuuri keemiat võrrelda põletusega ({scale, select, band {{band, select, low {madalkuumus} mid {keskkuumus} other {kõrgkuumus}}} sk {SK {cone}} temperature {{cone} °C} other {koonus {cone}}}): selle koonuse jaoks ei ole mõõdetud temperatuuri.",
+      "between": "Glazecalc ei saa selle glasuuri keemiat võrrelda põletusega ({scale, select, band {{band, select, low {madalkuumus} mid {keskkuumus} other {kõrgkuumus}}} sk {SK {cone}} temperature {{cone} °C} other {koonus {cone}}}): selle kontrolli jaoks kasutatud avaldatud arvud on madalkuumuse ning kesk- ja kõrgkuumuse kohta, mitte nende vahele jäävate koonuste (01 kuni 3) kohta.",
+      "belowChart": "Glazecalc ei saa selle glasuuri keemiat võrrelda põletusega ({scale, select, band {{band, select, low {madalkuumus} mid {keskkuumus} other {kõrgkuumus}}} sk {SK {cone}} temperature {{cone} °C} other {koonus {cone}}}): Katzi booriregel on koonuste 06 kuni 10 jaoks ja see põletus on jahedam."
+    }
+  },
   "stull": {
     "heading": "Stulli diagramm",
     "title": "Stulli diagramm: ränidioksiid alumiiniumoksiidi suhtes Segeri valemis",
@@ -904,7 +934,7 @@
     "foodSurface": "Toiduga kokkupuutuvale pinnale (toidunõuglasuur)",
     "liner": {
       "note": "Toiduohutus sõltub sellest, kas glasuur põletatakse koonuseni, mille juures seda katsetati: alapõletatud glasuurist võivad metallid eralduda.",
-      "range": "See on antud vahemikuna, seega katsetage seda vahemiku madalamas otsas, kus see sulab kõige vähem.",
+      "range": "Selle glasuuri põletus on antud vahemikuna, seega katsetage seda vahemiku madalamas otsas, kus see sulab kõige vähem.",
       "untested": "Ühtegi koonust pole veel katsetatuks märgitud.",
       "test": "Ainult teie enda põletatud nõude metallide eraldumise laborikatse näitab, kas see on toiduga kokkupuuteks ohutu."
     },
@@ -967,5 +997,23 @@
     "replaceAsk": "Katsetatuks on märgitud {now}. Kas asendada see koonustega, mida päevikud nimetavad: {logs}?",
     "replace": "Asenda",
     "keep": "Jäta nii nagu on"
+  },
+  "coneCards": {
+    "heading": "Tulemused koonuse järgi",
+    "unplaced": "Koonusele paigutamata",
+    "unplacedNote": "Neid põletuspäevikuid ei ole veel koonusele paigutatud: valige, kus igaüht põletati.",
+    "approx": "≈ {temperature}",
+    "cautions": "{count, plural, =0 {piirväärtuse hoiatusi ei ole} one {# piirväärtuse hoiatus} other {# piirväärtuse hoiatust}}",
+    "logs": "{count, plural, =0 {põletuspäevikuid ei ole} one {# põletuspäevik} other {# põletuspäevikut}}",
+    "outside": "määratud põletusest väljaspool",
+    "outsideChoice": "{place} (määratud põletusest väljaspool)",
+    "summaryLabel": "Kuidas see õnnestus: {place}",
+    "summaryPlaceholder": "Pind, värv, voolamine, juuspragunemine...",
+    "noAtmosphere": "atmosfääri ei ole antud",
+    "placeLabel": "Kus põletati: {title}",
+    "notPlaced": "Paigutamata",
+    "add": "Lisa tulemus:",
+    "addButton": "Lisa",
+    "saveFailed": "Põletuspäeviku põletuskohta ei saanud salvestada."
   }
 }

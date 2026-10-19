@@ -167,7 +167,7 @@ A Rio Grande **külön áramkört** ajánl (amelyről semmi más nem kap áramot
 
 ### Legyen jelen az égetés végén
 
-A **Kiln-Sitter** (gúlás lekapcsoló) sok vezérlő nélküli, kézi kapcsolású kemence mechanikus kapcsolója: az égetés végén egy kis gúla{{en: cone}} meghajlik, és kioldja a kapcsolót. A kezelési útmutatója szerint „NEM arra szolgál, hogy hibabiztos lekapcsoló berendezésként működjön”. A Rio Grande szerint égető kemencét soha nem szabad felügyelet nélkül hagyni, „különösen a várható lekapcsolási idő közelében”. Ezért maradjon a közelben, és égetés közben ellenőrizze a kemencét, különösen a vége felé; csak akkor égessen, ha egy felnőtt otthon lesz és ébren lesz, hogy ezt megtehesse, ellenőrizze, hogy a kemence kikapcsolt-e, és tartson ABC tűzoltó készüléket a kemencehelyiségben. A Kiln-Sitterek, a vezérlők és az égetési programok működéséről az [Égetés egyszerű kemencében](/guides/firing) című útmutató szól.
+A **Kiln-Sitter** (gúlás lekapcsoló) sok vezérlő nélküli, kézi kapcsolású kemence mechanikus kapcsolója: az égetés végén egy kis gúla{{en: cone}} meghajlik, és kioldja a kapcsolót. A kezelési útmutatója szerint „NEM arra szolgál, hogy hibabiztos lekapcsoló berendezésként működjön”. A Rio Grande szerint égető kemencét soha nem szabad felügyelet nélkül hagyni, „különösen a várható lekapcsolási idő közelében”. Ezért maradjon a közelben, és égetés közben ellenőrizze a kemencét, különösen a vége felé; csak akkor égessen, ha egy felnőtt otthon lesz, és az egész égetés alatt ébren lesz, ellenőrizze, hogy a kemence kikapcsolt-e, és tartson ABC tűzoltó készüléket a kemencehelyiségben. A Kiln-Sitterek, a vezérlők és az égetési programok működéséről az [Égetés egyszerű kemencében](/guides/firing) című útmutató szól.
 
 ### Füstgázok és szén-monoxid
 

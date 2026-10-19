@@ -6,6 +6,43 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Added
 
+- **Chemistry against the stated cone** (docs/adr/0022-chemistry-against-the-stated-cone.md): one
+  line at the top of the recipe page's limits panel says whether the glaze's chemistry fits its
+  firing, the recipe's stated cone or the band chosen in the panel. It gives a note only when boron
+  (against Matt Katz's rule, _Ceramics Monthly_ 2012) and silica or alumina (against Hesselberth &
+  Roy's cone 6 and 10 figures, or the UK limits at low fire) agree that the glaze looks like
+  another firing, whatever limit set is chosen; a range across bands is told which end it looks
+  closer to; cone 6 against cone 10 is worded softest, since chemistry tells them apart only
+  roughly. It says when it can't judge (lead, lithium, much soda and potash or zinc, raku, salt,
+  soda, wood and pit firings, ash, cones 01 to 3, SK cones with no measured temperature), never
+  calls a glaze a pass, and every note shows its sources and says it is a guide, not a test. Also
+  `coneFit` in the MCP tools `get_recipe` and `check_limits` (with a firing); not on print or
+  shared pages. Katz's rule now starts from his own 1305 °C for cone 10 (was 1300 °C), so the "too
+  little boron" check and replacing lead ask for 0.01 more boron. English only for now.
+- **Sign in with Microsoft** (docs/adr/0023-microsoft-sign-in.md), beside Google and GitHub, for
+  personal and work or school accounts, with Microsoft's own button. Accounts are found by the
+  Microsoft tenant and the account's id, never by email: Microsoft's email is not taken on trust,
+  so a new account made with it confirms its address with the emailed link, as after signing up,
+  and an email another Glazecalc account has is refused, to be linked from the account page once
+  signed in. Confirming a change on an account without a password asks Microsoft for the password
+  again. Off until its settings exist (deploy/README.md); the privacy notice names Microsoft. The
+  provider messages and texts that now name Microsoft show in English until the next translation
+  round.
+- **Access tokens that can change records.** On the account page a token can now be made to
+  "Read only" or to "Read and change" (still confirmed with the password and, with two-step
+  sign-in on, a second step); one that can change records lasts at most 90 days, and the notice
+  email and the token list say what each can do. With it, scripts can create, change, undo and
+  move to the Trash every kind of record through the same routes as the website, and AI
+  assistants get eight MCP tools: `create_recipe` (Glazecalc works out the unity formula),
+  `update_recipe`, `add_notebook_entry`, `add_my_material`, `update_my_material`, `add_to_shelf`,
+  `remove_from_shelf` and `move_to_trash` (the Trash only, never deleted). A read-only token is
+  refused by them and changes nothing. Every change keeps the record as it was, so it can be
+  undone, and is written to the activity log. Safeguards: changes with tokens are limited to 60 a
+  minute and 5,000 a day per account (apart from reads), each token still moves at most 100
+  records an hour to the Trash, and an account keeps at most 20,000 earlier versions (the oldest
+  go first, never the one from before a token's changes). The "Use Glazecalc from your AI
+  assistant" page says how to use such a token safely. English only for now.
+
 - **Terms of use** at `/terms`, linked from every page's footer: Glazecalc is free for your own
   glazes, records and learning, as a hobby, for teaching or in business; the code stays under the
   MIT License, and the terms are for the site. They ask users not to break the shared server
@@ -32,6 +69,15 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   links change one at a time, so two open pages never undo each other's; a log in the Trash is hidden and comes back
   with it. A shared recipe shows the firing's schedule note only with the notes. Existing recipes show the firing as
   not stated.
+- **Results by cone** on the recipe page (docs/adr/0021-recipe-firing.md): a card for each cone and atmosphere a glaze
+  was fired at (cone 6 oxidation and cone 6 reduction are two cards), with the cone's approximate temperature, its
+  limits band and how many limit cautions the glaze has there, your summary of how it came out, and the firing logs
+  fired there with their result notes. A linked log is placed at its cone and atmosphere when it names just one within
+  the stated firing (its Atmosphere column read for "ox", "reduction", "red" or "neutral"); otherwise you place it from
+  its card. A summary outside a firing stated later is kept and marked outside. The summaries are printed, shown on a
+  shared page only with the notes (never the logs), carried by versions, Undo, the Trash and the export, given by the
+  MCP `get_recipe` (`coneResults`, and each firing's `cone` and `atmosphere`), and left behind by Save as copy and
+  Duplicate for another cone.
 - **Analysis, limits and a Stull chart on the recipe page**, under the recipe, as you type: each
   oxide's moles, mole % and fired weight %, the loss on ignition and the calculated thermal
   expansion (an estimate, with the coefficients named); the unity formula against a limit set,
@@ -597,6 +643,10 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   `SECURITY.md` say where to report a security problem.
 
 ### Changed
+
+- **One limit on what an account keeps.** An account keeps up to 100,000 records of every kind
+  together (recipes, materials, notes, firing logs and the rest), in place of 2,000 of each kind;
+  `ACCOUNT_MAX_RECORDS` still sets another. Trials keep their own limits.
 
 - **One email after a password reset.** A reset stops the account's access tokens and connected
   apps, unlinks Google and GitHub, and stops its share links, all in the same step, and its notice

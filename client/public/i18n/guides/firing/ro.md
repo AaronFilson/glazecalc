@@ -199,11 +199,11 @@ Multe dispozitive Kiln-Sitter, inclusiv modelele LT de la Dawson, au un **tempor
 Table: Pe cât timp setați temporizatorul de siguranță
 Label: Setările temporizatorului
 
-| Sursă     | Setare                                                                                                                                                    |
-| --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Dawson    | Cu ½ oră peste durata estimată a arderii până când vă cunoașteți cuptorul, mai târziu cu doar ¼ oră peste; nu-l setați niciodată la mai mult de 20 de ore |
-| L&L       | Pe o durată foarte lungă prima dată, notând cât durează arderea; după aceea, cu aproximativ 1 oră peste                                                   |
-| Bracker's | Cu 30 de minute până la 1 oră peste durata arderii                                                                                                        |
+| Sursă     | Setare                                                                                                                                               |
+| --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Dawson    | Cu ½ oră peste durata estimată a arderii până când vă cunoașteți cuptorul, mai târziu cu ¼ oră peste; nu-l setați niciodată la mai mult de 20 de ore |
+| L&L       | Pe o durată foarte lungă prima dată, notând cât durează arderea; după aceea, cu aproximativ 1 oră peste                                              |
+| Bracker's | Cu 30 de minute până la 1 oră peste durata arderii                                                                                                   |
 
 > [!NOTE]
 > Punctul nostru de plecare: generos prima dată (în limita celor 20 de ore de pe cadran), apoi cu ½ până la 1 oră peste timpul pe care l-ați notat. Temporizatorul vă arată și cât a durat arderea: setat la 7 și oprit la 1 înseamnă 6 ore.
@@ -352,11 +352,11 @@ Label: Tabelul SK
 | SK 19   |       {{2768 °F; 1520 °C}} |
 | SK 20   |       {{2786 °F; 1530 °C}} |
 
-Toate valorile sunt nominale (JIS): temperatura pe care standardul o dă pentru con, așa cum este tipărită în tabelul Yuko Trading. Tabelul nu indică o viteză de încălzire. Standardul dă temperaturi de referință. La o viteză obișnuită pentru un ceramist, de aproximativ 100 °C/h, institutul municipal din Kyoto a măsurat că propriile sale conuri Kyoto se îndoaie cu 40–70 °C mai jos decât valoarea JIS pentru același număr; pentru conurile SK după JIS nu am găsit astfel de măsurători. Așezați un con martor și comparați.
+Toate valorile sunt nominale (JIS): temperatura pe care standardul o dă pentru con, așa cum este tipărită în tabelul Yuko Trading. Tabelul nu indică o viteză de încălzire. Standardul dă temperaturi de referință. La o viteză obișnuită pentru un ceramist, de aproximativ 100 °C/h, institutul municipal din Kyoto a măsurat că propriile sale conuri Kyoto se îndoaie cu 47–79 °C mai jos decât valoarea JIS pentru același număr; pentru conurile SK după JIS nu am găsit astfel de măsurători. Așezați un con martor și comparați.
 
 ### Conurile Kyoto
 
-Conurile Kyoto (京都ゼーゲル), fabricate de institutul municipal din Kyoto, nu se mai fabrică: potrivit presei, institutul a oprit producția la sfârșitul anului fiscal 2009. Au aceleași numere ca și conurile SK după JIS, dar se îndoaie la temperaturi mai joase: un con Kyoto se îndoaie, în cele mai multe cazuri, cam la temperatura conului SK după JIS cu două trepte mai rece. O rețetă din Kyoto care spune „SK 8” se poate referi la un con Kyoto. Institutul a publicat sfaturi pentru ceramiștii care trec de la conurile Kyoto la conurile Orton și folosește conul Orton 10 în locul propriului său con Kyoto SK 12; aceasta este alegerea institutului, făcută pe baza propriilor măsurători la 100 °C/h, și nu se aplică niciunui alt con.
+Conurile Kyoto (京都ゼーゲル), fabricate de institutul municipal din Kyoto, nu se mai fabrică: potrivit presei, institutul a oprit producția la sfârșitul anului fiscal 2009. Au aceleași numere ca și conurile SK după JIS, dar se îndoaie la temperaturi mai joase: un con Kyoto se îndoaie cam la temperatura conului SK după JIS cu două sau trei trepte mai rece. O rețetă din Kyoto care spune „SK 8” se poate referi la un con Kyoto. Institutul a publicat sfaturi pentru ceramiștii care trec de la conurile Kyoto la conurile Orton și folosește conul Orton 10 în locul propriului său con Kyoto SK 12; aceasta este alegerea institutului, făcută pe baza propriilor măsurători la 100 °C/h, și nu se aplică niciunui alt con.
 
 ### Conurile Orton vândute în Japonia
 

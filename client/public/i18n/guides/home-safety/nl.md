@@ -167,7 +167,7 @@ Rio Grande raadt een **eigen groep** aan (een groep die verder niets van stroom 
 
 ### Wees erbij als de stook eindigt
 
-Een **kiln sitter** is de mechanische schakelaar op veel handbediende ovens: aan het eind van de stook buigt een kleine kegel{{en: cone}} door en zet de schakelaar uit. Volgens de handleiding is de kiln sitter “NIET bedoeld om te werken als faalveilige uitschakelbeveiliging”. Rio Grande zegt een oven tijdens het stoken nooit zonder toezicht te laten, “vooral rond de verwachte uitschakeltijd”. Blijf dus in de buurt en controleer de oven tijdens het stoken, vooral tegen het einde; stook alleen als er een volwassene thuis en wakker is om in de buurt te blijven en de oven te controleren, controleer of de oven is uitgeschakeld, en zet een ABC-brandblusser in de ovenruimte. Hoe kiln sitters, regelaars en stookschema’s werken, leest u in [Een eenvoudige oven stoken](/guides/firing).
+Een **kiln sitter** is de mechanische schakelaar op veel handbediende ovens: aan het eind van de stook buigt een kleine kegel{{en: cone}} door en zet de schakelaar uit. Volgens de handleiding is de kiln sitter “NIET bedoeld om te werken als faalveilige uitschakelbeveiliging”. Rio Grande zegt een oven tijdens het stoken nooit zonder toezicht te laten, “vooral rond de verwachte uitschakeltijd”. Blijf dus in de buurt en controleer de oven tijdens het stoken, vooral tegen het einde; stook alleen als er een volwassene thuis en wakker is tijdens de hele stook, controleer of de oven is uitgeschakeld, en zet een ABC-brandblusser in de ovenruimte. Hoe kiln sitters, regelaars en stookschema’s werken, leest u in [Een eenvoudige oven stoken](/guides/firing).
 
 ### Dampen en koolmonoxide
 

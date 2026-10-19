@@ -199,11 +199,11 @@ Veel kiln sitters, waaronder de LT-modellen van Dawson, hebben een **tijdschakel
 Table: Hoe lang u de tijdschakelaar instelt
 Label: Instelling van de tijdschakelaar
 
-| Bron      | Instelling                                                                                                                    |
-| --------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| Dawson    | ½ uur langer dan de verwachte stooktijd tot u de oven kent, later nog maar ¼ uur langer; stel hem nooit in op meer dan 20 uur |
-| L&L       | De eerste keer heel hoog, en noteer hoe lang de stook duurt; daarna ongeveer 1 uur langer                                     |
-| Bracker’s | 30 minuten tot 1 uur langer dan de stooktijd                                                                                  |
+| Bron      | Instelling                                                                                                           |
+| --------- | -------------------------------------------------------------------------------------------------------------------- |
+| Dawson    | ½ uur langer dan de verwachte stooktijd tot u de oven kent, later ¼ uur langer; stel hem nooit in op meer dan 20 uur |
+| L&L       | De eerste keer heel hoog, en noteer hoe lang de stook duurt; daarna ongeveer 1 uur langer                            |
+| Bracker’s | 30 minuten tot 1 uur langer dan de stooktijd                                                                         |
 
 > [!NOTE]
 > Ons uitgangspunt: de eerste keer ruim (binnen de 20 uur van de schaal), daarna ½ tot 1 uur langer dan de tijd die u hebt genoteerd. De tijdschakelaar laat ook zien hoe lang een stook duurde: ingesteld op 7 en geëindigd op 1 betekent 6 uur.
@@ -352,11 +352,11 @@ Label: SK-tabel
 | SK 19   |       {{2768 °F; 1520 °C}} |
 | SK 20   |       {{2786 °F; 1530 °C}} |
 
-Elk getal is nominaal (JIS): de temperatuur die de norm voor de kegel geeft, zoals gedrukt in de tabel van Yuko Trading. De tabel vermeldt geen stooksnelheid. De norm geeft referentietemperaturen. Bij een stooksnelheid zoals pottenbakkers die gebruiken, ongeveer 100 °C/h, mat het gemeentelijke instituut van Kyoto dat zijn eigen Kyoto-kegels bij een temperatuur 40–70 °C lager bogen dan het JIS-getal voor hetzelfde nummer; voor SK-kegels volgens JIS hebben we zulke metingen niet gevonden. Zet een controlekegel en vergelijk.
+Elk getal is nominaal (JIS): de temperatuur die de norm voor de kegel geeft, zoals gedrukt in de tabel van Yuko Trading. De tabel vermeldt geen stooksnelheid. De norm geeft referentietemperaturen. Bij een stooksnelheid zoals pottenbakkers die gebruiken, ongeveer 100 °C/h, mat het gemeentelijke instituut van Kyoto dat zijn eigen Kyoto-kegels bij een temperatuur 47–79 °C lager bogen dan het JIS-getal voor hetzelfde nummer; voor SK-kegels volgens JIS hebben we zulke metingen niet gevonden. Zet een controlekegel en vergelijk.
 
 ### Kyoto-kegels
 
-Kyoto-kegels (京都ゼーゲル), gemaakt door het gemeentelijke instituut van Kyoto, worden niet meer gemaakt: volgens nieuwsberichten stopte het instituut met de productie aan het eind van het boekjaar 2009. Ze dragen dezelfde nummers als SK-kegels volgens JIS, maar buigen koeler: een Kyoto-kegel buigt meestal bij ongeveer de temperatuur van de SK-kegel volgens JIS die twee nummers lager is. Een recept uit Kyoto dat “SK 8” zegt, kan een Kyoto-kegel bedoelen. Het instituut heeft advies gepubliceerd voor pottenbakkers die van Kyoto-kegels overstappen op Ortonkegels, en vervangt zijn eigen Kyoto-kegel SK 12 door Ortonkegel 10; dat is de keuze van het instituut op grond van zijn eigen metingen bij 100 °C/h, en die geldt voor geen enkele andere kegel.
+Kyoto-kegels (京都ゼーゲル), gemaakt door het gemeentelijke instituut van Kyoto, worden niet meer gemaakt: volgens nieuwsberichten stopte het instituut met de productie aan het eind van het boekjaar 2009. Ze dragen dezelfde nummers als SK-kegels volgens JIS, maar buigen koeler: een Kyoto-kegel buigt bij ongeveer de temperatuur van de SK-kegel volgens JIS die twee of drie nummers lager is. Een recept uit Kyoto dat “SK 8” zegt, kan een Kyoto-kegel bedoelen. Het instituut heeft advies gepubliceerd voor pottenbakkers die van Kyoto-kegels overstappen op Ortonkegels, en vervangt zijn eigen Kyoto-kegel SK 12 door Ortonkegel 10; dat is de keuze van het instituut op grond van zijn eigen metingen bij 100 °C/h, en die geldt voor geen enkele andere kegel.
 
 ### Ortonkegels die in Japan worden verkocht
 

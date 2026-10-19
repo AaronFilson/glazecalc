@@ -167,7 +167,7 @@ Rio Grande jirrakkomanda **ċirkwit apposta** (wieħed li ma jħaddem xejn aktar
 
 ### Kun hemm meta tispiċċa l-ħamja
 
-Is-**sitter**{{en: kiln sitter}} huwa s-swiċċ mekkaniku ta’ ħafna fran mingħajr kontrollur: kon{{en: cone}} żgħir jitgħawweġ fl-aħħar tal-ħamja u jitfi s-swiċċ. Il-manwal tiegħu jgħid li “MHUX maħsub biex jaħdem bħala apparat ta’ tifi ta’ sigurtà li ma jfallix.” Rio Grande jgħid li qatt ma tħalli forn qed jaħmi mingħajr sorveljanza, “speċjalment qrib il-ħin mistenni li jintefa”. Għalhekk ibqa’ qrib u ċċekkja l-forn waqt li jkun qed jaħmi, speċjalment qrib it-tmiem; aħmi biss meta se jkun hemm adult fid-dar u mqajjem biex jagħmel dan, iċċekkja li l-forn intefa, u żomm fire extinguisher tat-tip ABC fil-kamra tal-forn. Biex tifhem kif jaħdmu s-sitters, il-kontrolluri u l-programmi tal-ħami, ara l-gwida [Il-ħami f’forn sempliċi](/guides/firing).
+Is-**sitter**{{en: kiln sitter}} huwa s-swiċċ mekkaniku ta’ ħafna fran mingħajr kontrollur: kon{{en: cone}} żgħir jitgħawweġ fl-aħħar tal-ħamja u jitfi s-swiċċ. Il-manwal tiegħu jgħid li “MHUX maħsub biex jaħdem bħala apparat ta’ tifi ta’ sigurtà li ma jfallix.” Rio Grande jgħid li qatt ma tħalli forn qed jaħmi mingħajr sorveljanza, “speċjalment qrib il-ħin mistenni li jintefa”. Għalhekk ibqa’ qrib u ċċekkja l-forn waqt li jkun qed jaħmi, speċjalment qrib it-tmiem; aħmi biss meta se jkun hemm adult fid-dar u mqajjem matul il-ħami kollu, iċċekkja li l-forn intefa, u żomm fire extinguisher tat-tip ABC fil-kamra tal-forn. Biex tifhem kif jaħdmu s-sitters, il-kontrolluri u l-programmi tal-ħami, ara l-gwida [Il-ħami f’forn sempliċi](/guides/firing).
 
 ### Id-dħaħen u l-monossidu tal-karbonju
 

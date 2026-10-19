@@ -272,7 +272,7 @@
     "numbers": {
       "heading": "Kako čitati analizu i granice",
       "analysis": "<b>Analiza i granice</b>, ispod recepta, prikazuje molove, molni % i masu nakon pečenja u % za svaki oksid, gubitak žarenjem i izračunato toplinsko rastezanje, procjenu za usporedbu glazura.",
-      "limits": "<b>Granice</b> uspoređuju Segerovu formulu sa skupom granica: Hesselberthovim i Royevim granicama za stabilne glazure, osim ako odaberete Glazecalcov vlastiti skup (odabir se sprema uz vaše postavke). Odaberite <b>Pečenje</b> da recept provjerite prema odgovarajućim vrijednostima; sprema se uz recept. Hesselberthove i Royeve vrijednosti vrijede za stožac 6 i stožac 10, pa za nisko pečenje piše da ne vrijede. To su smjernice, a ne „prošlo” ili „palo”.",
+      "limits": "<b>Granice</b> uspoređuju Segerovu formulu sa skupom granica: Hesselberthovim i Royevim granicama za stabilne glazure, osim ako odaberete Glazecalcov vlastiti skup (odabir se sprema uz vaše postavke). Provjeravaju pojas pečenja koji daje <b>Pečenje</b> recepta: njegov stožac ili njegov raspon. Raspon koji prelazi preko više pojasa, na primjer stožac 6 do 10, prikazuje provjere oba pojasa jednu pokraj druge. Da biste provjerili samo jedan pojas, odaberite ga u polju <b>Pečenje</b> uz same granice, koje nadjačava pečenje recepta i sprema se uz recept. Hesselberthove i Royeve vrijednosti vrijede za stožac 6 i stožac 10, pa za nisko pečenje piše da ne vrijede. To su smjernice, a ne „prošlo” ili „palo”. Na vrhu jedan redak uspoređuje bor, silicijev dioksid i glinicu glazure s njezinim pečenjem prema Katzovu pravilu za bor i Hesselberthovim i Royevim vrijednostima, koji god skup granica odaberete: daje napomenu samo kad se slože da glazura izgleda kao za drugo pečenje, kaže kad ne može prosuditi (olovo, litij, raku i slično) i smjernica je, a ne ispitivanje.",
       "stull": "<b>Stullov dijagram</b> prikazuje silicijev dioksid glazure naspram njezine glinice, sa Stullovim matiranim, polumatiranim i sjajnim područjem te rasponima skupa granica. To je vodič za površinu, a ne predviđanje.",
       "slurry": "<b>Relativna gustoća i voda</b> koristi Brongniartovu formulu: odvagnite izmjereni volumen glazure, pa pogledajte suhu glazuru u kanti, vodu koja je dovodi na željenu relativnu gustoću ili vodu za novu smjesu. Gustoće slijede vašu postavku za relativnu gustoću, stupnjeve Baumé ili masu pinte."
     },
@@ -599,6 +599,36 @@
     "bothBands": "Pečenje recepta obuhvaća {bands}, pa se svaki raspon provjerava zasebno, jedan uz drugi: glazura se rijetko jednako ponaša na oba kraja.",
     "fromFiring": "Podaci se odnose na pečenje recepta: {band}. Odaberite pečenje iznad da biste provjerili drugo."
   },
+  "coneFit": {
+    "cooler": "Kemija ove glazure više nalikuje glazuri za {looksLike, select, low {nisko pečenje} other {srednje pečenje}} nego glazuri za {scale, select, band {{band, select, low {nisko pečenje} mid {srednje pečenje} other {visoko pečenje}}} sk {SK {cone}} temperature {{cone} °C} other {stožac {cone}}}.",
+    "coolerSoft": "Kemija ove glazure naginje hladnijem pečenju nego što je {scale, select, band {{band, select, low {nisko pečenje} mid {srednje pečenje} other {visoko pečenje}}} sk {SK {cone}} temperature {{cone} °C} other {stožac {cone}}}, bliže stošcu 6, iako sama kemija razlikuje glazure za stožac 6 i stožac 10 samo približno.",
+    "hotter": "Kemija ove glazure više nalikuje glazuri za {looksLike, select, high {visoko pečenje} other {srednje pečenje}} nego glazuri za {scale, select, band {{band, select, low {nisko pečenje} mid {srednje pečenje} other {visoko pečenje}}} sk {SK {cone}} temperature {{cone} °C} other {stožac {cone}}}.",
+    "hotterSoft": "Kemija ove glazure naginje toplijem pečenju nego što je {scale, select, band {{band, select, low {nisko pečenje} mid {srednje pečenje} other {visoko pečenje}}} sk {SK {cone}} temperature {{cone} °C} other {stožac {cone}}}, bliže stošcu 10, iako sama kemija razlikuje glazure za stožac 6 i stožac 10 samo približno.",
+    "closer": "Od raspona za koji je navedena, kemija ove glazure čini se bližom kraju na kojem je {scale, select, band {{band, select, low {nisko pečenje} mid {srednje pečenje} other {visoko pečenje}}} sk {SK {cone}} temperature {{cone} °C} other {stožac {cone}}}.",
+    "coolerSilica": "Ima više bora ({boron}) nego što je obično potrebno glazurama za {scale, select, band {{band, select, low {nisko pečenje} mid {srednje pečenje} other {visoko pečenje}}} sk {SK {cone}} temperature {{cone} °C} other {stožac {cone}}} i manje silicijeva dioksida ({silica}) nego što ga obično imaju.",
+    "coolerAlumina": "Ima više bora ({boron}) nego što je obično potrebno glazurama za {scale, select, band {{band, select, low {nisko pečenje} mid {srednje pečenje} other {visoko pečenje}}} sk {SK {cone}} temperature {{cone} °C} other {stožac {cone}}} i malo glinice ({alumina}).",
+    "coolerBoth": "Ima više bora ({boron}) nego što je obično potrebno glazurama za {scale, select, band {{band, select, low {nisko pečenje} mid {srednje pečenje} other {visoko pečenje}}} sk {SK {cone}} temperature {{cone} °C} other {stožac {cone}}} i manje silicijeva dioksida ({silica}) i glinice ({alumina}) nego što ih obično imaju.",
+    "hotterSilica": "Ima malo bora ({boron}) za {scale, select, band {{band, select, low {nisko pečenje} mid {srednje pečenje} other {visoko pečenje}}} sk {SK {cone}} temperature {{cone} °C} other {stožac {cone}}}, a više silicijeva dioksida ({silica}) nego što ga glazure pri tom pečenju obično imaju.",
+    "coolerEffect": "Pri tom pečenju može teći ili se prekomjerno rastaliti: prvo ispecite probnu pločicu na podložnoj pločici.",
+    "hotterEffect": "Pri tom pečenju može ispasti nedopečena: suha, hrapava ili ne posve zatvorena. Ispecite je probno prije nego što je upotrijebite na posuđu, a osobito prije nego što je upotrijebite tamo gdje će dodirivati hranu ili piće.",
+    "hotterEffectSoft": "Neke se glazure pri tom pečenju tale i bez bora, pa je ovo samo naznaka: na probnoj pločici provjerite tali li se potpuno.",
+    "gerstley": "Dio njezina bora potječe iz Gerstley Borate, koji se razlikuje od šarže do šarže, pa je ta vrijednost manje pouzdana.",
+    "guide": "Ovo uspoređuje kemiju s objavljenim vrijednostima: to je smjernica, a ne ispitivanje. Ako se glazura na ovom stošcu za vas dobro ispekla, vjerujte svojim pločicama.",
+    "fits": "Njezin bor, silicijev dioksid i glinica ne upućuju na to da je glazura prije za drugo pečenje nego za {scale, select, band {{band, select, low {nisko pečenje} mid {srednje pečenje} other {visoko pečenje}}} sk {SK {cone}} temperature {{cone} °C} other {stožac {cone}}}. To je smjernica, a ne ispitivanje: ne govori ništa o tome je li glazura stabilna ili sigurna za hranu.",
+    "sources": "Izvori:",
+    "skip": {
+      "lead": "Glazecalc ne može usporediti kemiju ove glazure s njezinim pečenjem: velik dio njezine taline potječe iz olova, koje objavljene vrijednosti što ih ova provjera koristi ne pokrivaju.",
+      "lithium": "Glazecalc ne može usporediti kemiju ove glazure s njezinim pečenjem: velik dio njezine taline potječe iz litija, koji objavljene vrijednosti što ih ova provjera koristi ne pokrivaju.",
+      "alkali": "Glazecalc ne može usporediti kemiju ove glazure s njezinim pečenjem: velik dio njezine taline potječe iz natrija i kalija, koje objavljene vrijednosti što ih ova provjera koristi ne pokrivaju.",
+      "zinc": "Glazecalc ne može usporediti kemiju ove glazure s njezinim pečenjem: sadrži mnogo cinka, kao kristalne glazure, a to objavljene vrijednosti koje ova provjera koristi ne pokrivaju.",
+      "notGlaze": "Glazecalc ne može usporediti kemiju ove glazure s njezinim pečenjem: njezina formula nije formula uobičajene glazure (vrlo malo ili vrlo mnogo silicijeva dioksida ili mnogo oksida za bojenje), pa joj objavljene vrijednosti što ih ova provjera koristi ne odgovaraju.",
+      "process": "Glazecalc ne može usporediti kemiju ove glazure s njezinim pečenjem: namijenjena je za {process, select, raku {raku pečenje} salt {pečenje solju} soda {pečenje sodom} wood {pečenje na drva} other {pečenje u jami}}, pri kojem peć obavlja dio glaziranja, a to objavljene vrijednosti koje ova provjera koristi ne pokrivaju.",
+      "ash": "Glazecalc ne može usporediti kemiju ove glazure s njezinim pečenjem: sadrži pepeo, čiji je sastav previše promjenjiv za objavljene vrijednosti koje ova provjera koristi.",
+      "noTemperature": "Glazecalc ne može usporediti kemiju ove glazure {scale, select, band {{band, select, low {s niskim pečenjem} mid {sa srednjim pečenjem} other {s visokim pečenjem}}} sk {sa SK {cone}} temperature {s {cone} °C} other {sa stošcem {cone}}}: za taj stožac nema izmjerene temperature.",
+      "between": "Glazecalc ne može usporediti kemiju ove glazure {scale, select, band {{band, select, low {s niskim pečenjem} mid {sa srednjim pečenjem} other {s visokim pečenjem}}} sk {sa SK {cone}} temperature {s {cone} °C} other {sa stošcem {cone}}}: objavljene vrijednosti koje ova provjera koristi vrijede za nisko te za srednje i visoko pečenje, a ne za stošce između njih (01 do 3).",
+      "belowChart": "Glazecalc ne može usporediti kemiju ove glazure {scale, select, band {{band, select, low {s niskim pečenjem} mid {sa srednjim pečenjem} other {s visokim pečenjem}}} sk {sa SK {cone}} temperature {s {cone} °C} other {sa stošcem {cone}}}: Katzovo pravilo za bor vrijedi za stožac 06 do stožac 10, a to je pečenje hladnije."
+    }
+  },
   "stull": {
     "heading": "Stullov dijagram",
     "title": "Stullov dijagram: silicijev dioksid naspram glinice u Segerovoj formuli",
@@ -904,7 +934,7 @@
     "foodSurface": "Za površinu u dodiru s hranom (glazura za unutrašnjost)",
     "liner": {
       "note": "Sigurnost u dodiru s hranom ovisi o tome peče li se ova glazura na stožac na kojem je ispitana: nedopečena glazura može otpuštati metale.",
-      "range": "Navedena je za raspon, pa je ispitajte na donjem kraju raspona, gdje se najmanje tali.",
+      "range": "Pečenje ove glazure navedeno je kao raspon, pa je ispitajte na donjem kraju raspona, gdje se najmanje tali.",
       "untested": "Još nijedan stožac nije označen kao ispitan.",
       "test": "Samo ispitivanje otpuštanja metala na vašim vlastitim pečenim posudama pokazuje je li sigurna za hranu."
     },
@@ -967,5 +997,23 @@
     "replaceAsk": "Kao ispitano označeno je {now}. Zamijeniti to stošcima koje navode zapisnici, {logs}?",
     "replace": "Zamijeni",
     "keep": "Ostavi kako jest"
+  },
+  "coneCards": {
+    "heading": "Rezultati po stošcima",
+    "unplaced": "Nije svrstano uz stožac",
+    "unplacedNote": "Ovi zapisnici pečenja još nisu svrstani uz stožac: odaberite gdje je koji pečen.",
+    "approx": "≈ {temperature}",
+    "cautions": "{count, plural, =0 {nema upozorenja o granicama} one {# upozorenje o granicama} few {# upozorenja o granicama} other {# upozorenja o granicama}}",
+    "logs": "{count, plural, =0 {nema zapisnika pečenja} one {# zapisnik pečenja} few {# zapisnika pečenja} other {# zapisnika pečenja}}",
+    "outside": "izvan navedenog pečenja",
+    "outsideChoice": "{place} (izvan navedenog pečenja)",
+    "summaryLabel": "Kako je ispalo: {place}",
+    "summaryPlaceholder": "Površina, boja, curenje, pucanje…",
+    "noAtmosphere": "atmosfera nije navedena",
+    "placeLabel": "Gdje je pečeno: {title}",
+    "notPlaced": "Nije svrstano",
+    "add": "Dodaj rezultat za",
+    "addButton": "Dodaj",
+    "saveFailed": "Nije bilo moguće spremiti gdje je zapisnik pečenja pečen."
   }
 }

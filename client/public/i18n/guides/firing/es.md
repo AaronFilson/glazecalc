@@ -199,11 +199,11 @@ Muchos kiln sitters, entre ellos los modelos LT de Dawson, tienen un **temporiza
 Table: Cuánto tiempo poner en el temporizador de seguridad
 Label: Ajustes del temporizador de seguridad
 
-| Fuente    | Ajuste                                                                                                                                             |
-| --------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Dawson    | ½ hora más que la duración prevista de la cocción mientras no conozca el horno; después, tan solo ¼ de hora más; nunca lo ajuste a más de 20 horas |
-| L&L       | Muy alto la primera vez, anotando cuánto dura la cocción; después, alrededor de 1 hora más                                                         |
-| Bracker’s | De 30 minutos a 1 hora más que la duración de la cocción                                                                                           |
+| Fuente    | Ajuste                                                                                                                                    |
+| --------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| Dawson    | ½ hora más que la duración prevista de la cocción mientras no conozca el horno; después, ¼ de hora más; nunca lo ajuste a más de 20 horas |
+| L&L       | Muy alto la primera vez, anotando cuánto dura la cocción; después, alrededor de 1 hora más                                                |
+| Bracker’s | De 30 minutos a 1 hora más que la duración de la cocción                                                                                  |
 
 > [!NOTE]
 > Nuestro punto de partida: un margen amplio la primera vez (sin pasar de las 20 horas del dial), y después de ½ a 1 hora más que el tiempo que anotó. El temporizador también indica cuánto duró una cocción: si se puso en 7 y terminó en 1, la cocción duró 6 horas.
@@ -352,11 +352,11 @@ Label: Tabla SK
 | SK 19   |      {{2768 °F; 1520 °C}} |
 | SK 20   |      {{2786 °F; 1530 °C}} |
 
-Todas las cifras son nominales (JIS): la temperatura que da la norma para cada cono, tal como figura en la tabla de Yuko Trading. La tabla no indica ninguna velocidad de subida. La norma da temperaturas de referencia. A una velocidad habitual en cerámica, de unos 100 °C/h, el instituto municipal de Kioto midió que sus propios conos de Kioto se doblaban a 40–70 °C menos que la cifra JIS del mismo número; no hemos encontrado mediciones así para los conos SK según la JIS. Coloque un cono testigo y compare.
+Todas las cifras son nominales (JIS): la temperatura que da la norma para cada cono, tal como figura en la tabla de Yuko Trading. La tabla no indica ninguna velocidad de subida. La norma da temperaturas de referencia. A una velocidad habitual en cerámica, de unos 100 °C/h, el instituto municipal de Kioto midió que sus propios conos de Kioto se doblaban a 47–79 °C menos que la cifra JIS del mismo número; no hemos encontrado mediciones así para los conos SK según la JIS. Coloque un cono testigo y compare.
 
 ### Los conos de Kioto
 
-Los conos de Kioto (京都ゼーゲル), fabricados por el instituto municipal de Kioto, ya no se fabrican: según la prensa, el instituto dejó de producirlos al cierre del ejercicio fiscal de 2009. Llevan los mismos números que los conos SK según la JIS, pero se doblan a menos temperatura: un cono de Kioto se dobla, en la mayoría de los casos, a más o menos la temperatura del cono SK según la JIS de dos números menos. Una receta de Kioto que diga «SK 8» puede referirse a un cono de Kioto. El instituto ha publicado consejos para los ceramistas que pasan de los conos de Kioto a los conos Orton, y sustituye su propio SK 12 de Kioto por el cono Orton 10; es una elección del instituto a partir de sus propias mediciones a 100 °C/h, y no se aplica a ningún otro cono.
+Los conos de Kioto (京都ゼーゲル), fabricados por el instituto municipal de Kioto, ya no se fabrican: según la prensa, el instituto dejó de producirlos al cierre del ejercicio fiscal de 2009. Llevan los mismos números que los conos SK según la JIS, pero se doblan a menos temperatura: un cono de Kioto se dobla a más o menos la temperatura del cono SK según la JIS de dos o tres números menos. Una receta de Kioto que diga «SK 8» puede referirse a un cono de Kioto. El instituto ha publicado consejos para los ceramistas que pasan de los conos de Kioto a los conos Orton, y sustituye su propio SK 12 de Kioto por el cono Orton 10; es una elección del instituto a partir de sus propias mediciones a 100 °C/h, y no se aplica a ningún otro cono.
 
 ### Conos Orton vendidos en Japón
 

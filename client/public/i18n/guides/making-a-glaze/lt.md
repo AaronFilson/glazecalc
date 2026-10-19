@@ -211,7 +211,7 @@ Label: Vanduo norimam santykiniam tankiui
 
 **Glazūros klijai CMC** (karboksimetilceliuliozė) padaro suspensiją lipnesnę ir lėčiau džiūstančią bei palieka kietesnį sluoksnį, kuris laikosi ant dirbinio. Jie svarbiausi glazūroms tepimui teptuku ir glazūroms, kuriose daug frito{{en: frit}}. Digitalfire pavyzdyje į 1000 g suspensijos įmaišoma 3,75 g, ir tai būtina daryti trintuvu. Glazūra su CMC nuo Epsom druskos nesutirštėja, o kadangi klijais minta mikrobai, ji kibire gali pakisti ir pradėti dvokti.
 
-**Bentonitas** – labai smulkus molis – padeda kitoms dalelėms išsilaikyti suspensijoje. Glazūrose merkimui tam paprastai naudojama 15–25 % nedegto molio. Receptui, kuriame molio trūksta, padeda maždaug 1–3 % bentonito; pasak Digitalfire, glazūrai, kurioje yra daugiau kaip 15 % molio, neturėtų reikėti daugiau kaip 1 %.
+**Bentonitas** – labai smulkus molis – padeda kitoms dalelėms išsilaikyti suspensijoje. Glazūrose merkimui tam paprastai naudojama 15–25 % nedegto molio. Receptui, kuriame molio trūksta, padeda maždaug 1–3 % bentonito; pasak Digitalfire, glazūrai, kurioje yra daugiau kaip 15 % molio, neturėtų reikėti bentonito daugiau kaip 1 % sausos glazūros masės.
 
 ## Bandiniai ir linijinės bandinių serijos {#testing}
 

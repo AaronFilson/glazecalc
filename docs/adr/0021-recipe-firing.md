@@ -115,6 +115,39 @@ panel. Recipes so far say their firing only in the notes, if at all.
 - **Duplicate for another cone** copies a saved recipe into the editor, unsaved, with the firing,
   band and links cleared, and says that moving cones usually needs reformulating.
 
+- **Result cards (amended 2026-10-19).** A recipe keeps the potter's summary of how it came out
+  for each **cone and atmosphere** (owner's decision: cone 6 oxidation and cone 6 reduction are
+  separate cards), as `coneResults: [{ cone, atmosphere?, summary }]` (`lib/cones/results.js`):
+  the cone as the firing block writes it, read in the recipe's scale (or, for a cone that is not
+  one of that scale, the scale it is a cone of), an atmosphere of the three, and at most 1000
+  characters, at most 100 results. The server cleans the list on every write as it does `firedAt`
+  (unknown fields dropped, summaries trimmed, an empty one left out, one for each cone and
+  atmosphere); versions, Undo, the Trash, the JSON export and a trial joining an account carry it
+  with the record. Save as copy and Duplicate for another cone start with none. Each firing log
+  link may have a `cone` and an `atmosphere` too: set when the log is linked if exactly one cone
+  the log names in its cone columns is within the stated range, and if every cell of its
+  Atmosphere column that names an atmosphere ("ox", "body reduction", "red", "neutral") names the
+  same one, which the recipe states (or any, when it states none); otherwise the potter places the
+  log from its card, through the link's `PUT`, which now changes only the fields it is given.
+  A log that goes from "ox" to "reduction" is not read: it is left to the potter. The cards are
+  keyed by the atmospheres the firing states:
+  - **none**: a card for each cone, with no atmosphere; a log's own atmosphere shows on its line;
+  - **one**: a card for each cone at that atmosphere; a log or result with none is taken to be at it;
+  - **several**: a card for each cone and atmosphere with a summary or a log, and one for a cone
+    whose logs have no atmosphere yet; any other cone of the range at any stated atmosphere can be
+    added.
+
+  With none or one stated, each tested cone has a card from the start. A card gives the cone, its
+  approximate temperature, its limits band and how many limit cautions the glaze has in that band
+  (the account's limit set), the summary, and the logs there with title, date, atmosphere and
+  result note; logs not placed have a card of their own. More than one card, and they start
+  collapsed. A summary or log at a cone or atmosphere outside a firing stated later is kept, and
+  its card says it is outside. The print view shows the summaries; a shared page shows them only
+  when the owner ticks Show the recipe's notes (they are the author's own words) and never the
+  logs; `get_recipe` gives `coneResults` and each firing's `cone` and `atmosphere`, read-only.
+  No photos yet. The card has a place for a one-line "cone fit" note (chemistry against the
+  cone), filled by later work.
+
 ## Consequences
 
 - A glaze's firing can be searched, filtered (the saved list and `list_recipes` match a cone
@@ -124,5 +157,5 @@ panel. Recipes so far say their firing only in the notes, if at all.
   which limits a recipe is checked against, never the stored cone.
 - The Orton chart above 14 and SK cones other than 8, 10 and 12 have no measured cross-scale
   equivalent: the page shows nothing rather than a guess or a nominal figure.
-- Not done yet: chemistry-against-cone warnings ("stated cone 6, fluxes look like cone 10"), per-cone
-  result cards and test plans (the report's phases 2 and 3).
+- Not done yet: chemistry-against-cone warnings ("stated cone 6, fluxes look like cone 10") and test
+  plans (the report's phases 2 and 3); result cards are done (above), without photos.

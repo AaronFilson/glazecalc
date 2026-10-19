@@ -7,6 +7,7 @@ export * from './amounts';
 export * from './analysis';
 export * from './blends';
 export * from './checks';
+export * from './cone-fit';
 export * from './cost';
 export * from './hazards';
 export * from './lead';

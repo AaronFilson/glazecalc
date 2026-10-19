@@ -199,11 +199,11 @@ Beaucoup de Kiln-Sitter, dont les modèles LT de Dawson, ont une **minuterie de 
 Table: Sur quelle durée régler la minuterie de sécurité
 Label: Réglages de la minuterie de sécurité
 
-| Source    | Réglage                                                                                                                                                                     |
-| --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Dawson    | ½ heure de plus que la durée de cuisson prévue tant que vous ne connaissez pas le four, par la suite seulement ¼ d’heure de plus ; ne le réglez jamais au-delà de 20 heures |
-| L&L       | Très élevé la première fois, en notant la durée de la cuisson ; ensuite, environ 1 heure de plus                                                                            |
-| Bracker’s | De 30 minutes à 1 heure de plus que la durée de cuisson                                                                                                                     |
+| Source    | Réglage                                                                                                                                                           |
+| --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Dawson    | ½ heure de plus que la durée de cuisson prévue tant que vous ne connaissez pas le four, par la suite ¼ d’heure de plus ; ne le réglez jamais au-delà de 20 heures |
+| L&L       | Très élevé la première fois, en notant la durée de la cuisson ; ensuite, environ 1 heure de plus                                                                  |
+| Bracker’s | De 30 minutes à 1 heure de plus que la durée de cuisson                                                                                                           |
 
 > [!NOTE]
 > Notre point de départ : une marge large la première fois (dans la limite des 20 heures du cadran), puis de ½ à 1 heure de plus que la durée que vous avez notée. La minuterie indique aussi combien de temps a duré une cuisson : réglée sur 7 et arrêtée sur 1, elle a tourné 6 heures.
@@ -352,11 +352,11 @@ Label: Tableau des cônes SK
 | SK 19   |       {{2768 °F; 1520 °C}} |
 | SK 20   |       {{2786 °F; 1530 °C}} |
 
-Chaque valeur est nominale (JIS) : c’est la température que la norme donne pour le cône, telle qu’elle est imprimée dans le tableau de Yuko Trading. Ce tableau n’indique pas de vitesse de montée. La norme donne des températures de référence. À une vitesse de montée courante chez les céramistes, environ 100 °C/h, l’institut municipal de Kyoto a mesuré que ses propres cônes de Kyoto se courbaient 40–70 °C plus bas que la valeur JIS du même numéro ; nous n’avons trouvé aucune mesure de ce genre pour les cônes SK selon la JIS. Placez un cône témoin et comparez.
+Chaque valeur est nominale (JIS) : c’est la température que la norme donne pour le cône, telle qu’elle est imprimée dans le tableau de Yuko Trading. Ce tableau n’indique pas de vitesse de montée. La norme donne des températures de référence. À une vitesse de montée courante chez les céramistes, environ 100 °C/h, l’institut municipal de Kyoto a mesuré que ses propres cônes de Kyoto se courbaient 47–79 °C plus bas que la valeur JIS du même numéro ; nous n’avons trouvé aucune mesure de ce genre pour les cônes SK selon la JIS. Placez un cône témoin et comparez.
 
 ### Cônes de Kyoto
 
-Les cônes de Kyoto (京都ゼーゲル), fabriqués par l’institut municipal de Kyoto, ne sont plus fabriqués : selon la presse, l’institut a arrêté la production à la fin de l’exercice 2009. Ils portent les mêmes numéros que les cônes SK selon la JIS, mais se courbent plus bas : un cône de Kyoto se courbe le plus souvent à peu près à la température du cône SK selon la JIS dont le numéro est inférieur de deux. Une recette de Kyoto qui indique « SK 8 » peut désigner un cône de Kyoto. L’institut a publié des conseils pour les céramistes qui passent des cônes de Kyoto aux cônes Orton, et remplace son propre cône de Kyoto SK 12 par le cône 10 d’Orton ; c’est le choix de l’institut, d’après ses propres mesures à 100 °C/h, et il ne vaut pour aucun autre cône.
+Les cônes de Kyoto (京都ゼーゲル), fabriqués par l’institut municipal de Kyoto, ne sont plus fabriqués : selon la presse, l’institut a arrêté la production à la fin de l’exercice 2009. Ils portent les mêmes numéros que les cônes SK selon la JIS, mais se courbent plus bas : un cône de Kyoto se courbe à peu près à la température du cône SK selon la JIS dont le numéro est inférieur de deux ou trois. Une recette de Kyoto qui indique « SK 8 » peut désigner un cône de Kyoto. L’institut a publié des conseils pour les céramistes qui passent des cônes de Kyoto aux cônes Orton, et remplace son propre cône de Kyoto SK 12 par le cône 10 d’Orton ; c’est le choix de l’institut, d’après ses propres mesures à 100 °C/h, et il ne vaut pour aucun autre cône.
 
 ### Cônes Orton vendus au Japon
 

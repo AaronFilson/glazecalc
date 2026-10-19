@@ -211,7 +211,7 @@ Label: Voda za ciljno relativno gostoto
 
 **CMC** (karboksimetilceluloza) naredi suspenzijo bolj lepljivo in počasneje sušečo ter pusti trši nanos, ki se drži izdelka. Najbolj je pomembna pri glazurah za nanos s čopičem in glazurah z veliko frite{{en: frit}}. V primeru spletnega mesta Digitalfire v 1000 g suspenzije vmešajo 3,75 g, vmešati pa jo je treba z blenderjem. Glazura s CMC se z grenko soljo ne zgosti, in ker se mikrobi hranijo z vezivom, se lahko v vedru spremeni in začne smrdeti.
 
-**Bentonit**, zelo drobna glina, pomaga ohranjati druge delce v suspenziji. Glazure za namakanje se pri tem navadno zanašajo na 15 do 25 % surove gline. Pri receptu z premalo gline pomaga približno 1 do 3 % bentonita; po navedbah Digitalfire glazura z več kot 15 % gline ne bi smela potrebovati več kot 1 %.
+**Bentonit**, zelo drobna glina, pomaga ohranjati druge delce v suspenziji. Glazure za namakanje se pri tem navadno zanašajo na 15 do 25 % surove gline. Pri receptu z premalo gline pomaga približno 1 do 3 % bentonita; po navedbah Digitalfire glazura z več kot 15 % gline ne bi smela potrebovati bentonita v več kot 1 % mase suhe glazure.
 
 ## Testne ploščice in testne serije {#testing}
 

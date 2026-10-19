@@ -199,11 +199,11 @@ Paljudel Kiln-Sitteritel, sealhulgas Dawsoni LT-mudelitel, on **kaitsetaimer**: 
 Table: Kui pikaks kaitsetaimer seada
 Label: Kaitsetaimeri seaded
 
-| Allikas   | Seadistus                                                                                                                                 |
-| --------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| Dawson    | Kuni te oma ahju veel ei tunne, ½ tundi pikem kui eeldatav põletusaeg, hiljem kõigest ¼ tundi pikem; ärge seadke seda kunagi üle 20 tunni |
-| L&L       | Esimesel korral väga pikk, märkides üles, kui kaua põletus kestab; edaspidi umbes 1 tund pikem                                            |
-| Bracker’s | Põletusajast 30 minutit kuni 1 tund pikem                                                                                                 |
+| Allikas   | Seadistus                                                                                                                         |
+| --------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| Dawson    | Kuni te oma ahju veel ei tunne, ½ tundi pikem kui eeldatav põletusaeg, hiljem ¼ tundi pikem; ärge seadke seda kunagi üle 20 tunni |
+| L&L       | Esimesel korral väga pikk, märkides üles, kui kaua põletus kestab; edaspidi umbes 1 tund pikem                                    |
+| Bracker’s | Põletusajast 30 minutit kuni 1 tund pikem                                                                                         |
 
 > [!NOTE]
 > Selle juhendi lähtepunkt: esimesel korral heldelt (skaala 20 tunni piires), seejärel ½ kuni 1 tund pikem kui teie kirja pandud aeg. Kaitsetaimer näitab ka, kui kaua põletus kestis: kui see oli seatud 7 peale ja näitas lõpus 1, tähendab see 6 tundi.
@@ -352,11 +352,11 @@ Label: SK-tabel
 | SK 19   |         {{2768 °F; 1520 °C}} |
 | SK 20   |         {{2786 °F; 1530 °C}} |
 
-Iga arv on nominaalne (JIS): temperatuur, mille standard koonusele annab, nagu see on trükitud Yuko Tradingu tabelis. Tabelis ei ole kuumutuskiirust. Standard annab võrdlustemperatuurid. Keraamikule tavapärase, umbes 100 °C/h kuumutuskiiruse juures mõõtis Kyoto linna instituut, et tema enda Kyoto koonused painduvad 40–70 °C jahedamal kui sama numbri JIS-i temperatuur; JIS-i järgi valmistatud SK-koonuste kohta me selliseid mõõtmisi ei leidnud. Pange kontrollkoonus ja võrrelge.
+Iga arv on nominaalne (JIS): temperatuur, mille standard koonusele annab, nagu see on trükitud Yuko Tradingu tabelis. Tabelis ei ole kuumutuskiirust. Standard annab võrdlustemperatuurid. Keraamikule tavapärase, umbes 100 °C/h kuumutuskiiruse juures mõõtis Kyoto linna instituut, et tema enda Kyoto koonused painduvad 47–79 °C jahedamal kui sama numbri JIS-i temperatuur; JIS-i järgi valmistatud SK-koonuste kohta me selliseid mõõtmisi ei leidnud. Pange kontrollkoonus ja võrrelge.
 
 ### Kyoto koonused
 
-Kyoto koonuseid (京都ゼーゲル), mida valmistas Kyoto linna instituut, enam ei toodeta: uudiste järgi lõpetas instituut tootmise 2009. majandusaasta lõpus. Neil on samad numbrid kui JIS-i järgi valmistatud SK-koonustel, kuid need painduvad jahedamal: Kyoto koonus paindub enamasti umbes sama temperatuuri juures kui JIS-i järgi valmistatud SK-koonus, mille number on kahe võrra väiksem. Kyoto retsept, milles on „SK 8“, võib tähendada Kyoto koonust. Instituut on avaldanud nõuandeid keraamikutele, kes lähevad Kyoto koonustelt üle Ortoni koonustele, ja asendab oma Kyoto koonuse SK 12 Ortoni koonusega 10; see on instituudi enda valik, mis põhineb tema enda mõõtmistel kiirusel 100 °C/h, ega kehti ühegi teise koonuse kohta.
+Kyoto koonuseid (京都ゼーゲル), mida valmistas Kyoto linna instituut, enam ei toodeta: uudiste järgi lõpetas instituut tootmise 2009. majandusaasta lõpus. Neil on samad numbrid kui JIS-i järgi valmistatud SK-koonustel, kuid need painduvad jahedamal: Kyoto koonus paindub umbes sama temperatuuri juures kui JIS-i järgi valmistatud SK-koonus, mille number on kahe või kolme võrra väiksem. Kyoto retsept, milles on „SK 8“, võib tähendada Kyoto koonust. Instituut on avaldanud nõuandeid keraamikutele, kes lähevad Kyoto koonustelt üle Ortoni koonustele, ja asendab oma Kyoto koonuse SK 12 Ortoni koonusega 10; see on instituudi enda valik, mis põhineb tema enda mõõtmistel kiirusel 100 °C/h, ega kehti ühegi teise koonuse kohta.
 
 ### Jaapanis müüdavad Ortoni koonused
 

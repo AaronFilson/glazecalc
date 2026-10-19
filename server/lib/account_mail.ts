@@ -4717,7 +4717,7 @@ export const noticeMfa = (
   }
 };
 
-// Notices about signing in with Google or GitHub (server/routes/oauth_routes.ts),
+// Notices about signing in with Google, GitHub or Microsoft (server/routes/oauth_routes.ts),
 // in English until the next translation wave; other languages get the English.
 
 /** Sent when a provider is linked: {account}, {provider}, {page}, {forgot} and {app}. */
@@ -5241,7 +5241,7 @@ export const PROVIDER_UNLINKED: Record<string, Email> = {
 };
 
 /** A provider's name as the emails write it: a brand, the same in every language. */
-export const PROVIDER_NAMES: Record<string, string> = { google: 'Google', github: 'GitHub' };
+export const PROVIDER_NAMES: Record<string, string> = { google: 'Google', github: 'GitHub', microsoft: 'Microsoft' };
 
 /**
  * The parts of the email after a password reset that stopped anything, put
@@ -5250,7 +5250,7 @@ export const PROVIDER_NAMES: Record<string, string> = { google: 'Google', github
  * named as brands, and {page}; none), and the closing ({forgot} and {app}).
  * A reset means someone else may have had the password, so it stops the
  * account's access tokens and connected apps (docs/adr/0017-mcp-server.md), its
- * links to Google and GitHub (docs/adr/0015-provider-sign-in.md) and its share
+ * links to Google, GitHub and Microsoft (docs/adr/0015-provider-sign-in.md) and its share
  * links (docs/adr/0020-share-links.md). English only so far: the next
  * translation wave adds the others, and until then every language gets it.
  */
@@ -6133,6 +6133,301 @@ export const TOKEN_MADE: Record<string, Email> = {
   }
 };
 
+/**
+ * A new personal access token that can change records (data:write): as
+ * TOKEN_MADE, with the same values, saying so. English only so far: the next
+ * translation wave adds the others.
+ */
+export const TOKEN_MADE_WRITE: Record<string, Email> = {
+  en: {
+    subject: 'A new access token that can change your Glazecalc records',
+    text:
+      'An access token named "{name}" was just made for the Glazecalc account {account}. It can read and change the recipes, materials, notes and firing logs saved in the account, and move them to the Trash, until {date}. Every change it makes keeps the record as it was, so you can undo it on the website.\n\n' +
+      'If this was you, there is nothing else to do. You can see and revoke your tokens at {page}\n\n' +
+      'If not, revoke it there and reset your password right away at {forgot}\n' +
+      '\n-- \nGlazecalc, {app}\n'
+  },
+  bg: {
+    subject: 'Нов токен за достъп, който може да променя записите Ви в Glazecalc',
+    text:
+      'Току-що беше създаден токен за достъп с име „{name}“ за профила {account} в Glazecalc. До {date} той може да чете и променя рецептите, суровините, бележките и дневниците на изпичане, запазени в профила, и да ги премества в Кошчето. Всяка промяна, която направи, запазва записа такъв, какъвто е бил, така че можете да я отмените в уебсайта.\n\n' +
+      'Ако това сте били Вие, не е нужно да правите нищо друго. Можете да видите и отмените токените си на {page}\n\n' +
+      'Ако не, отменете го там и нулирайте паролата си веднага на {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  cs: {
+    subject: 'Nový přístupový token, který může měnit záznamy ve Vašem účtu Glazecalc',
+    text:
+      'Přístupový token s názvem „{name}“ byl právě vytvořen pro účet Glazecalc {account}. Do {date} může číst a měnit recepty, suroviny, poznámky a záznamy výpalů uložené v účtu a přesouvat je do koše. Každá změna, kterou provede, zachová záznam tak, jak byl, takže ji můžete na webu vrátit zpět.\n\n' +
+      'Pokud jste to byli Vy, nemusíte už nic dělat. Své tokeny můžete vidět a zneplatnit na {page}\n\n' +
+      'Pokud ne, zneplatněte ho tam a ihned si obnovte heslo zde: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  da: {
+    subject: 'Et nyt adgangstoken, der kan ændre dine poster i Glazecalc',
+    text:
+      'Et adgangstoken med navnet »{name}« er netop oprettet til Glazecalc-kontoen {account}. Det kan læse og ændre opskrifterne, råvarerne, noterne og brændingsjournalerne, der er gemt i kontoen, og flytte dem til papirkurven, indtil {date}. Hver ændring, det foretager, bevarer posten, som den var, så du kan fortryde den på webstedet.\n\n' +
+      'Hvis det var dig, er der ikke mere at gøre. Du kan se og tilbagekalde dine adgangstokens på {page}\n\n' +
+      'Hvis ikke, så tilbagekald det dér, og nulstil adgangskoden med det samme på {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  de: {
+    subject: 'Ein neues Zugriffstoken, das Ihre Glazecalc-Datensätze ändern kann',
+    text:
+      'Für das Glazecalc-Konto {account} wurde gerade das Zugriffstoken „{name}“ erstellt. Es kann bis zum {date} die Rezepte, Rohstoffe, Notizen und Brennprotokolle, die im Konto gespeichert sind, lesen und ändern und sie in den Papierkorb legen. Jede Änderung, die es vornimmt, bewahrt den Datensatz, wie er war, sodass Sie sie auf der Website rückgängig machen können.\n\n' +
+      'Wenn Sie das waren, müssen Sie nichts weiter tun. Ihre Token können Sie unter {page} ansehen und widerrufen.\n\n' +
+      'Wenn nicht, widerrufen Sie es dort und setzen Sie Ihr Passwort sofort hier zurück: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  el: {
+    subject: 'Νέο διακριτικό πρόσβασης που μπορεί να αλλάζει τις εγγραφές σας στο Glazecalc',
+    text:
+      'Μόλις δημιουργήθηκε ένα διακριτικό πρόσβασης με όνομα «{name}» για τον λογαριασμό {account} στο Glazecalc. Μπορεί να διαβάζει και να αλλάζει τις συνταγές, τα υλικά, τις σημειώσεις και τα ημερολόγια ψησίματος που είναι αποθηκευμένα στον λογαριασμό, και να τα μετακινεί στον Κάδο απορριμμάτων, μέχρι τις {date}. Κάθε αλλαγή που κάνει κρατά την εγγραφή όπως ήταν, ώστε να μπορείτε να την αναιρέσετε στον ιστότοπο.\n\n' +
+      'Αν το κάνατε εσείς, δεν χρειάζεται να κάνετε τίποτα άλλο. Μπορείτε να δείτε και να ανακαλέσετε τα διακριτικά σας στο {page}\n\n' +
+      'Αν όχι, ανακαλέστε το εκεί και επαναφέρετε αμέσως τον κωδικό πρόσβασής σας εδώ: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  es: {
+    subject: 'Un token de acceso nuevo que puede cambiar sus registros de Glazecalc',
+    text:
+      'Se acaba de crear un token de acceso llamado «{name}» para la cuenta de Glazecalc {account}. Puede leer y cambiar las recetas, los materiales, las notas y los registros de cocción guardados en la cuenta, y moverlos a la papelera, hasta el {date}. Cada cambio que hace conserva el registro como era, así que usted puede deshacerlo en el sitio web.\n\n' +
+      'Si ha sido usted, no tiene que hacer nada más. Puede ver y revocar sus tokens en {page}\n\n' +
+      'Si no, revóquelo allí y restablezca su contraseña de inmediato en {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  et: {
+    subject: 'Uus juurdepääsuluba, mis saab muuta teie Glazecalci kirjeid',
+    text:
+      'Glazecalci kontole {account} tehti just juurdepääsuluba „{name}“. See saab lugeda ja muuta kontole salvestatud retsepte, tooraineid, märkmeid ja põletuspäevikuid ning viia neid prügikasti kuni {date}. Iga selle tehtud muudatus säilitab kirje sellisena, nagu see oli, nii et saate selle veebisaidil tagasi võtta.\n\n' +
+      'Kui see olite teie, ei pea te midagi muud tegema. Oma lube saate näha ja tühistada aadressil {page}\n\n' +
+      'Kui mitte, tühistage see seal ja lähtestage parool kohe siin: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  fi: {
+    subject: 'Uusi käyttöoikeustunnus, joka voi muuttaa Glazecalc-tietueita',
+    text:
+      'Glazecalc-tilille {account} tehtiin juuri käyttöoikeustunnus ”{name}”. Se voi lukea ja muuttaa tilille tallennettuja reseptejä, raaka-aineita, muistiinpanoja ja polttopäiväkirjoja sekä siirtää niitä roskakoriin {date} asti. Jokainen sen tekemä muutos säilyttää tietueen sellaisena kuin se oli, joten sen voi kumota verkkosivustolla.\n\n' +
+      'Jos tämän teki tilin omistaja itse, muuta ei tarvitse tehdä. Tunnukset voi nähdä ja peruuttaa osoitteessa {page}\n\n' +
+      'Muussa tapauksessa peruuta tunnus siellä ja palauta salasana heti osoitteessa {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  fr: {
+    subject: 'Un nouveau jeton d’accès qui peut modifier vos enregistrements Glazecalc',
+    text:
+      'Un jeton d’accès nommé « {name} » vient d’être créé pour le compte Glazecalc {account}. Il peut lire et modifier les recettes, matières, notes et relevés de cuisson enregistrés dans le compte, et les mettre à la corbeille, jusqu’au {date}. Chaque modification qu’il fait garde l’enregistrement tel qu’il était : vous pouvez donc l’annuler sur le site.\n\n' +
+      'Si c’est vous, il n’y a rien d’autre à faire. Vous pouvez voir et révoquer vos jetons sur {page}\n\n' +
+      'Sinon, révoquez-le là et réinitialisez votre mot de passe tout de suite sur {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  ga: {
+    subject: 'Comhartha rochtana nua atá in ann do thaifid Glazecalc a athrú',
+    text:
+      'Rinneadh comhartha rochtana darb ainm “{name}” anois díreach don chuntas Glazecalc {account}. Is féidir leis na hoidis, na hábhair, na nótaí agus na taifid bhácála atá sábháilte sa chuntas a léamh agus a athrú, agus iad a bhogadh go dtí an bruscar, go dtí {date}. Coinníonn gach athrú a dhéanann sé an taifead mar a bhí sé, mar sin is féidir leat é a chealú ar an suíomh gréasáin.\n\n' +
+      'Más tusa a rinne é, níl aon rud eile le déanamh. Is féidir leat do chomharthaí a fheiceáil agus a chúlghairm ag {page}\n\n' +
+      'Mura tusa, cúlghair é ansin agus athshocraigh do phasfhocal láithreach ag {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  hr: {
+    subject: 'Novi pristupni token koji može mijenjati zapise na vašem računu Glazecalc',
+    text:
+      'Upravo je izrađen pristupni token naziva „{name}” za račun Glazecalc {account}. Do {date} može čitati i mijenjati recepte, sirovine, bilješke i zapisnike pečenja spremljene u računu te ih premještati u Koš za smeće. Svaka promjena koju napravi čuva zapis onakvim kakav je bio, pa je možete poništiti na web-stranici.\n\n' +
+      'Ako ste to bili vi, ne morate ništa drugo učiniti. Svoje tokene možete vidjeti i opozvati na adresi {page}\n\n' +
+      'Ako niste, opozovite ga ondje i odmah ponovno postavite lozinku ovdje: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  hu: {
+    subject: 'Új hozzáférési token, amely módosíthatja a Glazecalc-bejegyzéseit',
+    text:
+      'A(z) {account} Glazecalc-fiókhoz az imént létrehoztak egy „{name}” nevű hozzáférési tokent. Olvashatja és módosíthatja a fiókban mentett recepteket, nyersanyagokat, jegyzeteket és égetési naplókat, és a Lomtárba helyezheti őket, eddig: {date}. Minden módosítása megőrzi a bejegyzést olyannak, amilyen volt, így a weboldalon visszavonhatja.\n\n' +
+      'Ha Ön volt az, nincs további teendője. A tokenjeit itt láthatja és vonhatja vissza: {page}\n\n' +
+      'Ha nem, vonja vissza ott, és azonnal állítsa vissza a jelszavát itt: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  id: {
+    subject: 'Token akses baru yang dapat mengubah catatan Glazecalc Anda',
+    text:
+      'Token akses bernama "{name}" baru saja dibuat untuk akun Glazecalc {account}. Token ini dapat membaca dan mengubah resep, bahan, catatan, dan catatan pembakaran yang tersimpan di akun, dan memindahkannya ke Sampah, sampai {date}. Setiap perubahan yang dibuatnya menyimpan catatan seperti sebelumnya, jadi Anda dapat mengurungkannya di situs web.\n\n' +
+      'Jika ini Anda, tidak ada lagi yang perlu dilakukan. Anda dapat melihat dan mencabut token Anda di {page}\n\n' +
+      'Jika bukan, cabut token itu di sana dan segera setel ulang kata sandi Anda di {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  it: {
+    subject: 'Un nuovo token di accesso che può modificare i Suoi dati Glazecalc',
+    text:
+      'È stato appena creato un token di accesso chiamato «{name}» per l’account Glazecalc {account}. Può leggere e modificare le ricette, i materiali, le note e i registri di cottura salvati nell’account, e spostarli nel cestino, fino al {date}. Ogni modifica che fa conserva l’elemento com’era, così Lei può annullarla nel sito.\n\n' +
+      'Se l’ha fatto Lei, non c’è altro da fare. Può vedere e revocare i Suoi token all’indirizzo {page}\n\n' +
+      'Altrimenti, lo revochi lì e reimposti subito la password all’indirizzo {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  ja: {
+    subject: 'Glazecalc の記録を変更できる新しいアクセストークンが作成されました',
+    text:
+      'Glazecalc のアカウント {account} に、「{name}」というアクセストークンが先ほど作成されました。このトークンは、{date}まで、アカウントに保存された調合、原料、メモ、焼成記録を読み取って変更でき、ごみ箱に移すこともできます。トークンが行った変更は、そのたびに記録が変更前の状態で保管されるため、ウェブサイトで元に戻せます。\n\n' +
+      'ご本人による操作であれば、ほかに必要な操作はありません。トークンは {page} で確認と失効ができます。\n\n' +
+      'そうでない場合は、そこでトークンを失効させ、すぐに次のページでパスワードを再設定してください: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  ko: {
+    subject: '기록을 바꿀 수 있는 Glazecalc 새 액세스 토큰',
+    text:
+      'Glazecalc 계정 {account}에서 이름이 “{name}”인 액세스 토큰을 방금 만들었습니다. 이 토큰은 {date}까지 계정에 저장된 레시피, 원료, 메모, 소성 기록을 읽고 바꿀 수 있으며, 휴지통으로 옮길 수도 있습니다. 토큰이 하는 변경마다 바꾸기 전의 기록이 보관되므로 웹사이트에서 되돌릴 수 있습니다.\n\n' +
+      '본인이 한 일이라면 따로 할 일은 없습니다. {page}에서 토큰을 확인하고 폐기할 수 있습니다.\n\n' +
+      '그렇지 않다면 그곳에서 토큰을 폐기하고 바로 비밀번호를 재설정하세요: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  lt: {
+    subject: 'Glazecalc: naujas prieigos žetonas, galintis keisti jūsų įrašus',
+    text:
+      'Glazecalc paskyrai {account} ką tik sukurtas prieigos žetonas „{name}“. Jis gali skaityti ir keisti paskyroje įrašytus receptus, žaliavas, užrašus ir degimo žurnalus bei perkelti juos į šiukšlinę iki {date}. Kiekvienas jo atliktas pakeitimas išsaugo įrašą tokį, koks jis buvo prieš tai, todėl pakeitimą galite anuliuoti svetainėje.\n\n' +
+      'Jei tai buvote jūs, daugiau nieko daryti nereikia. Savo žetonus galite matyti ir atšaukti adresu {page}\n\n' +
+      'Jei ne, atšaukite jį ten ir nedelsdami atkurkite slaptažodį čia: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  lv: {
+    subject: 'Jauns piekļuves marķieris, kas var mainīt Jūsu Glazecalc ierakstus',
+    text:
+      'Lietotnes Glazecalc kontam {account} tikko tika izveidots piekļuves marķieris “{name}”. Tas var lasīt un mainīt kontā saglabātās receptes, izejvielas, piezīmes un apdedzināšanas žurnālus un pārvietot tos uz atkritni līdz: {date}. Katra tā veiktā izmaiņa saglabā ierakstu tādu, kāds tas bija, tāpēc to var atsaukt tīmekļa vietnē.\n\n' +
+      'Ja to izdarījāt Jūs, nekas cits nav jādara. Savus marķierus varat apskatīt un anulēt adresē {page}\n\n' +
+      'Ja ne, anulējiet to tur un nekavējoties atiestatiet paroli šeit: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  mt: {
+    subject: 'Token tal-aċċess ġdid li jista’ jibdel ir-rekords tiegħek ta’ Glazecalc',
+    text:
+      'Token tal-aċċess bl-isem “{name}” għadu kif inħoloq għall-kont {account} ta’ Glazecalc. Jista’ jaqra u jibdel ir-riċetti, il-materjali, in-noti u r-reġistri tal-ħami ssejvjati fil-kont, u jgħaddihom għall-barmil, sa din id-data: {date}. Kull bidla li jagħmel iżżomm ir-rekord kif kien, għalhekk tkun tista’ terġa’ lura minnha fuq il-websajt.\n\n' +
+      'Jekk kont int, m’hemmx għalfejn tagħmel xejn aktar. Tista’ tara u tirrevoka t-tokens tiegħek hawn: {page}\n\n' +
+      'Jekk le, irrevokah hemm u rrisettja l-password tiegħek minnufih hawn: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  nl: {
+    subject: 'Een nieuw toegangstoken waarmee uw Glazecalc-records kunnen worden gewijzigd',
+    text:
+      'Er is zojuist een toegangstoken met de naam “{name}” gemaakt voor het Glazecalc-account {account}. Het kan tot {date} de recepten, grondstoffen, notities en stookverslagen die in het account zijn opgeslagen lezen en wijzigen, en ze naar de prullenbak verplaatsen. Elke wijziging die het aanbrengt, bewaart het record zoals het was, zodat u haar op de website ongedaan kunt maken.\n\n' +
+      'Was u dit zelf, dan hoeft u verder niets te doen. U kunt uw tokens zien en intrekken via {page}\n\n' +
+      'Zo niet, trek het daar dan in en stel uw wachtwoord meteen opnieuw in via {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  pl: {
+    subject: 'Nowy token dostępu, który może zmieniać zapisy w Glazecalc',
+    text:
+      'Token dostępu o nazwie „{name}” został właśnie utworzony dla konta Glazecalc {account}. Może on odczytywać i zmieniać receptury, surowce, notatki i dzienniki wypałów zapisane na koncie oraz przenosić je do kosza, do {date}. Każda wprowadzona przez niego zmiana zachowuje zapis w dotychczasowej postaci, więc można ją cofnąć na stronie internetowej.\n\n' +
+      'Jeśli zrobił to właściciel konta, nie trzeba nic więcej robić. Tokeny można zobaczyć i unieważnić na stronie {page}\n\n' +
+      'Jeśli nie, należy go tam unieważnić i od razu zresetować hasło na stronie {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  'pt-PT': {
+    subject: 'Um novo token de acesso que pode alterar os seus registos do Glazecalc',
+    text:
+      'Acabou de ser criado um token de acesso com o nome «{name}» para a conta Glazecalc {account}. Pode ler e alterar as receitas, as matérias-primas, as notas e os registos de cozedura guardados na conta, e movê-los para o Lixo, até {date}. Cada alteração que faz guarda o registo como estava, por isso pode anulá-la no site.\n\n' +
+      'Se foi você, não precisa de fazer mais nada. Pode ver e revogar os seus tokens em {page}\n\n' +
+      'Caso contrário, revogue-o aí e reponha já a sua palavra-passe em {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  ro: {
+    subject: 'Un nou token de acces care vă poate modifica înregistrările Glazecalc',
+    text:
+      'Tocmai a fost creat un token de acces numit „{name}” pentru contul Glazecalc {account}. Poate citi și modifica rețetele, materiile prime, notițele și jurnalele de ardere salvate în cont și le poate muta în coșul de reciclare, până la {date}. Fiecare modificare pe care o face păstrează înregistrarea așa cum era, deci o puteți anula pe site.\n\n' +
+      'Dacă ați fost dumneavoastră, nu mai aveți nimic de făcut. Vă puteți vedea și revoca tokenurile la {page}\n\n' +
+      'Dacă nu, revocați-l acolo și resetați imediat parola la {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  sk: {
+    subject: 'Nový prístupový token, ktorý môže meniť záznamy vo Vašom účte Glazecalc',
+    text:
+      'Prístupový token s názvom „{name}“ bol práve vytvorený pre účet Glazecalc {account}. Do {date} môže čítať a meniť recepty, suroviny, poznámky a záznamy výpalov uložené v účte a presúvať ich do Koša. Každá zmena, ktorú urobí, zachová záznam tak, ako bol, takže ju môžete na webe vrátiť späť.\n\n' +
+      'Ak ste to boli Vy, nemusíte už nič robiť. Svoje tokeny môžete vidieť a zneplatniť na {page}\n\n' +
+      'Ak nie, zneplatnite ho tam a ihneď si obnovte heslo tu: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  sl: {
+    subject: 'Nov dostopni žeton, ki lahko spreminja zapise v Vašem računu Glazecalc',
+    text:
+      'Za račun Glazecalc {account} je bil pravkar ustvarjen dostopni žeton z imenom »{name}«. Lahko bere in spreminja recepte, surovine, zapiske in dnevnike žganja, shranjene v računu, ter jih premika v koš do izteka: {date}. Vsaka njegova sprememba ohrani zapis, kakršen je bil, zato jo lahko razveljavite na spletni strani.\n\n' +
+      'Če ste bili to Vi, Vam ni treba storiti ničesar več. Žetone lahko vidite in prekličete na {page}\n\n' +
+      'Če ne, ga tam prekličite in takoj ponastavite geslo tukaj: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  sv: {
+    subject: 'En ny åtkomsttoken som kan ändra dina poster i Glazecalc',
+    text:
+      'En åtkomsttoken med namnet ”{name}” har just skapats för Glazecalc-kontot {account}. Den kan läsa och ändra recepten, råvarorna, anteckningarna och brännloggarna som sparats i kontot, och flytta dem till papperskorgen, fram till {date}. Varje ändring den gör behåller posten som den var, så att du kan ångra den på webbplatsen.\n\n' +
+      'Om det var du behöver du inte göra något mer. Du kan se och återkalla åtkomsttoken på {page}\n\n' +
+      'Om inte, återkalla den där och återställ lösenordet direkt på {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  th: {
+    subject: 'โทเค็นการเข้าถึงใหม่ที่เปลี่ยนแปลงบันทึก Glazecalc ของคุณได้',
+    text:
+      'เพิ่งสร้างโทเค็นการเข้าถึงชื่อ “{name}” สำหรับบัญชี Glazecalc {account} โทเค็นอ่านและเปลี่ยนแปลงสูตรเคลือบ วัตถุดิบ บันทึกย่อ และบันทึกการเผาที่บันทึกไว้ในบัญชี และย้ายไปที่ถังขยะได้จนถึง {date} ทุกการเปลี่ยนแปลงที่โทเค็นทำจะเก็บบันทึกไว้ตามที่เป็นอยู่ก่อน คุณจึงเลิกทำได้บนเว็บไซต์\n\n' +
+      'หากเป็นคุณ ไม่ต้องทำอะไรเพิ่ม คุณดูและเพิกถอนโทเค็นของคุณได้ที่ {page}\n\n' +
+      'หากไม่ใช่ ให้เพิกถอนที่นั่นและรีเซ็ตรหัสผ่านทันทีที่ {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  tr: {
+    subject: 'Glazecalc kayıtlarınızı değiştirebilen yeni bir erişim belirteci',
+    text:
+      'Glazecalc hesabı {account} için az önce “{name}” adlı bir erişim belirteci oluşturuldu. {date} tarihine kadar hesapta kayıtlı reçeteleri, hammaddeleri, notları ve pişirim kayıtlarını okuyabilir ve değiştirebilir, ayrıca bunları çöp kutusuna taşıyabilir. Yaptığı her değişiklik kaydı eski haliyle saklar; böylece web sitesinde geri alabilirsiniz.\n\n' +
+      'Bu sizseniz başka bir şey yapmanız gerekmez. Belirteçlerinizi şu adreste görebilir ve iptal edebilirsiniz: {page}\n\n' +
+      'Değilseniz onu orada iptal edin ve parolanızı hemen şu adresten sıfırlayın: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  vi: {
+    subject: 'Một mã thông báo truy cập mới có thể thay đổi các bản ghi Glazecalc của bạn',
+    text:
+      'Một mã thông báo truy cập có tên “{name}” vừa được tạo cho tài khoản Glazecalc {account}. Nó có thể đọc và thay đổi các công thức men, nguyên liệu, ghi chú và nhật ký nung đã lưu trong tài khoản, và chuyển chúng vào Thùng rác, đến {date}. Mỗi thay đổi nó thực hiện đều giữ lại bản ghi như trước đó, nên bạn có thể hoàn tác trên trang web.\n\n' +
+      'Nếu đó là bạn, không cần làm gì thêm. Bạn có thể xem và thu hồi các mã thông báo của mình tại {page}\n\n' +
+      'Nếu không, hãy thu hồi nó ở đó và đặt lại mật khẩu của bạn ngay tại {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  'zh-Hans': {
+    subject: '您的 Glazecalc 账户有了可以更改记录的新访问令牌',
+    text:
+      '刚刚为 Glazecalc 账户 {account} 生成了一个名为“{name}”的访问令牌。在 {date} 之前，它可以读取和更改该账户中保存的配方、原料、笔记和烧窑记录，并把它们移入回收站。它所做的每一次更改都会保留记录原来的样子，所以您可以在网站上撤销。\n\n' +
+      '如果是您本人操作，无需再做任何事。您可以在 {page} 查看并吊销您的令牌\n\n' +
+      '如果不是，请在那里吊销它，并立即在此重置密码：{forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  'zh-Hant': {
+    subject: '您的 Glazecalc 帳戶有了可以變更紀錄的新存取權杖',
+    text:
+      '剛剛為 Glazecalc 帳戶 {account} 建立了一個名為「{name}」的存取權杖。在 {date} 之前，這個權杖可以讀取和變更該帳戶中儲存的釉方、原料、筆記和燒窯紀錄，並把它們移到垃圾桶。它所做的每一次變更都會保留紀錄原來的樣子，所以您可以在網站上復原。\n\n' +
+      '如果這是您本人的操作，就不需要再做任何事。您可以在 {page} 查看並撤銷您的權杖。\n\n' +
+      '如果不是，請在那裡撤銷這個權杖，並立即到 {forgot} 重設密碼\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  }
+};
+
 /** A personal access token expiring soon: {account}, {name}, {date}, {page} and {app}. */
 export const TOKEN_EXPIRING: Record<string, Email> = {
   en: {
@@ -6422,8 +6717,13 @@ const sendTokenMail = (
   });
 };
 
-export const sendTokenMade = (to: string, token: { name: string; expiresAt: Date }, language?: string): Promise<void> =>
-  sendTokenMail(TOKEN_MADE, to, token, language);
+/** The notice for a new token, naming what it may do: read, or read and change (TOKEN_MADE_WRITE). */
+export const sendTokenMade = (
+  to: string,
+  token: { name: string; expiresAt: Date; scopes?: readonly string[] },
+  language?: string
+): Promise<void> =>
+  sendTokenMail(token.scopes?.includes('data:write') ? TOKEN_MADE_WRITE : TOKEN_MADE, to, token, language);
 
 export const sendTokenExpiring = (
   to: string,

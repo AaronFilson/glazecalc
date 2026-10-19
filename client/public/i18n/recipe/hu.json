@@ -272,7 +272,7 @@
     "numbers": {
       "heading": "Az elemzés és a határértékek olvasása",
       "analysis": "Az <b>Elemzés és határértékek</b> a recept alatt megmutatja az egyes oxidok móljait, mól%-át és égetett tömeg%-át, az izzítási veszteséget és a számított hőtágulást, amely a mázak összehasonlítására szolgáló becslés.",
-      "limits": "A <b>Határértékek</b> a Seger-képletet egy határérték-készlethez méri: Hesselberth és Roy stabil mázakra vonatkozó határértékeihez, hacsak nem a Glazecalc saját készletét választja (a választás a beállításaival együtt mentődik). Válassza ki az <b>Égetést</b>, hogy a megfelelő értékekhez hasonlítsa; a recepttel együtt mentődik. Hesselberth és Roy értékei a 6-os és a 10-es gúlára szólnak, ezért alacsony tüzű égetésnél azt jelzi, hogy nem alkalmazhatók. Ezek irányelvek, nem megfelelt/nem felelt meg minősítések.",
+      "limits": "A <b>Határértékek</b> a Seger-képletet egy határérték-készlethez méri: Hesselberth és Roy stabil mázakra vonatkozó határértékeihez, hacsak nem a Glazecalc saját készletét választja (a választás a beállításaival együtt mentődik). Azt az égetési sávot ellenőrzi, amelyet a recept <b>Égetés</b> mezője megad: a gúláját vagy a tartományát. Az a tartomány, amely több sávot átfog, például a 6-os és a 10-es gúla között, mindkét sáv ellenőrzését egymás mellett mutatja. Ha csak egy sávot szeretne ellenőrizni, válassza ki a határértékek saját <b>Égetés</b> mezőjében; ez felülírja a recept égetését, és a recepttel együtt mentődik. Hesselberth és Roy értékei a 6-os és a 10-es gúlára szólnak, ezért alacsony tüzű égetésnél azt jelzi, hogy nem alkalmazhatók. Ezek irányelvek, nem megfelelt/nem felelt meg minősítések. Legfelül egy sor összeveti a máz bórját, szilícium-dioxidját és timföldjét az égetésével, Katz bórszabálya és Hesselberth és Roy értékei alapján, bármelyik határérték-készletet választja: csak akkor ír megjegyzést, ha ezek egyetértenek abban, hogy a máz más égetésre hasonlít, jelzi, ha nem tud ítélni (ólom, lítium, raku és hasonlók esetén), és útmutató, nem vizsgálat.",
       "stull": "A <b>Stull-diagram</b> a máz szilícium-dioxid-tartalmát ábrázolja a timföldtartalma függvényében, Stull matt, félmatt és fényes tartományaival és a határérték-készlet tartományaival. Útmutató a felülethez, nem előrejelzés.",
       "slurry": "A <b>Fajsúly és víz</b> Brongniart képletét használja: mérje le a máz egy megmért térfogatát, majd nézze meg a vödörben lévő száraz mázat, a kívánt fajsúlyra hozó vizet, vagy egy új adag vizét. A sűrűségek a fajsúlyra, a Baumé-fokra vagy a pint-súlyra vonatkozó beállítását követik."
     },
@@ -599,6 +599,36 @@
     "bothBands": "A recept égetése a következőket fedi le: {bands}, ezért mindegyiket ellenőrizzük, egymás mellett: egy máz ritkán viselkedik ugyanúgy mindkét végén.",
     "fromFiring": "Az értékek a recept égetésére vonatkoznak: {band}. Másik ellenőrzéséhez válasszon fent egy égetést."
   },
+  "coneFit": {
+    "cooler": "A máz kémiája inkább {looksLike, select, low {alacsony tüzű} other {közepes tüzű}} mázra hasonlít, mint a megadott égetésre ({scale, select, band {{band, select, low {alacsony tüzű égetés} mid {közepes tüzű égetés} other {magas tüzű égetés}}} sk {SK {cone}} temperature {{cone} °C} other {gúla {cone}}}) szánt mázra.",
+    "coolerSoft": "A máz kémiája a megadott égetésnél ({scale, select, band {{band, select, low {alacsony tüzű égetés} mid {közepes tüzű égetés} other {magas tüzű égetés}}} sk {SK {cone}} temperature {{cone} °C} other {gúla {cone}}}) hűvösebb égetés felé hajlik, a 6-os gúlához közelebb, bár a kémia önmagában csak hozzávetőlegesen különbözteti meg a 6-os és a 10-es gúla mázait.",
+    "hotter": "A máz kémiája inkább {looksLike, select, high {magas tüzű} other {közepes tüzű}} mázra hasonlít, mint a megadott égetésre ({scale, select, band {{band, select, low {alacsony tüzű égetés} mid {közepes tüzű égetés} other {magas tüzű égetés}}} sk {SK {cone}} temperature {{cone} °C} other {gúla {cone}}}) szánt mázra.",
+    "hotterSoft": "A máz kémiája a megadott égetésnél ({scale, select, band {{band, select, low {alacsony tüzű égetés} mid {közepes tüzű égetés} other {magas tüzű égetés}}} sk {SK {cone}} temperature {{cone} °C} other {gúla {cone}}}) forróbb égetés felé hajlik, a 10-es gúlához közelebb, bár a kémia önmagában csak hozzávetőlegesen különbözteti meg a 6-os és a 10-es gúla mázait.",
+    "closer": "A megadott tartományon belül a máz kémiája láthatóan a tartomány ezen végéhez áll közelebb: {scale, select, band {{band, select, low {alacsony tüzű égetés} mid {közepes tüzű égetés} other {magas tüzű égetés}}} sk {SK {cone}} temperature {{cone} °C} other {gúla {cone}}}.",
+    "coolerSilica": "Több bór ({boron}) van benne, mint amennyi az ennél az égetésnél ({scale, select, band {{band, select, low {alacsony tüzű égetés} mid {közepes tüzű égetés} other {magas tüzű égetés}}} sk {SK {cone}} temperature {{cone} °C} other {gúla {cone}}}) használt mázakban általában kell, és kevesebb szilícium-dioxid ({silica}), mint amennyi bennük általában van.",
+    "coolerAlumina": "Több bór ({boron}) van benne, mint amennyi az ennél az égetésnél ({scale, select, band {{band, select, low {alacsony tüzű égetés} mid {közepes tüzű égetés} other {magas tüzű égetés}}} sk {SK {cone}} temperature {{cone} °C} other {gúla {cone}}}) használt mázakban általában kell, és kevés timföld ({alumina}).",
+    "coolerBoth": "Több bór ({boron}) van benne, mint amennyi az ennél az égetésnél ({scale, select, band {{band, select, low {alacsony tüzű égetés} mid {közepes tüzű égetés} other {magas tüzű égetés}}} sk {SK {cone}} temperature {{cone} °C} other {gúla {cone}}}) használt mázakban általában kell, és kevesebb szilícium-dioxid ({silica}) és timföld ({alumina}), mint amennyi bennük általában van.",
+    "hotterSilica": "Kevés bór ({boron}) van benne ehhez az égetéshez ({scale, select, band {{band, select, low {alacsony tüzű égetés} mid {közepes tüzű égetés} other {magas tüzű égetés}}} sk {SK {cone}} temperature {{cone} °C} other {gúla {cone}}}), és több szilícium-dioxid ({silica}), mint amennyi az ilyen égetésű mázakban általában van.",
+    "coolerEffect": "Ennél az égetésnél lefolyhat vagy túlolvadhat: előbb égessen ki egy próbalapot csepegésfogó alátéten.",
+    "hotterEffect": "Ennél az égetésnél alulégetett maradhat: száraz, érdes vagy nem teljesen zárt. Mielőtt edényekre használná, égesse ki próbán, és különösen mielőtt olyan helyen használná, ahol étel vagy ital érintkezik majd vele.",
+    "hotterEffectSoft": "Egyes mázak bór nélkül is megolvadnak ennél az égetésnél, ezért ez csak támpont: próbalapon ellenőrizze, hogy teljesen megolvad-e.",
+    "gerstley": "Bórjának egy része Gerstley Borate-ból származik, amely tételenként változik, ezért ez az érték kevésbé biztos.",
+    "guide": "Ez a kémiát közzétett értékekkel veti össze: útmutató, nem vizsgálat. Ha a máz ennél a gúlánál jól kiégett Önnél, bízzon a próbalapjaiban.",
+    "fits": "Bór-, szilícium-dioxid- és timföldtartalma nem mutat el ettől az égetéstől ({scale, select, band {{band, select, low {alacsony tüzű égetés} mid {közepes tüzű égetés} other {magas tüzű égetés}}} sk {SK {cone}} temperature {{cone} °C} other {gúla {cone}}}). Ez útmutató, nem vizsgálat: nem mond semmit arról, hogy a máz stabil vagy élelmiszerrel érintkezésre alkalmas-e.",
+    "sources": "Források:",
+    "skip": {
+      "lead": "A Glazecalc nem tudja összevetni a máz kémiáját az égetésével: olvadékának nagy része ólomból származik, amelyre az ehhez az ellenőrzéshez használt közzétett értékek nem terjednek ki.",
+      "lithium": "A Glazecalc nem tudja összevetni a máz kémiáját az égetésével: olvadékának nagy része lítiumból származik, amelyre az ehhez az ellenőrzéshez használt közzétett értékek nem terjednek ki.",
+      "alkali": "A Glazecalc nem tudja összevetni a máz kémiáját az égetésével: olvadékának nagy része nátriumból és káliumból származik, amelyekre az ehhez az ellenőrzéshez használt közzétett értékek nem terjednek ki.",
+      "zinc": "A Glazecalc nem tudja összevetni a máz kémiáját az égetésével: sok cinket tartalmaz, ahogy a kristálymázak, amelyre az ehhez az ellenőrzéshez használt közzétett értékek nem terjednek ki.",
+      "notGlaze": "A Glazecalc nem tudja összevetni a máz kémiáját az égetésével: a képlete nem egy szokásos máz képlete (nagyon kevés vagy nagyon sok szilícium-dioxid, vagy sok színező oxid), ezért az ehhez az ellenőrzéshez használt közzétett értékek nem illenek rá.",
+      "process": "A Glazecalc nem tudja összevetni a máz kémiáját az égetésével: {process, select, raku {rakuégetésre} salt {sóégetésre} soda {szódaégetésre} wood {fatüzelésre} other {gödörégetésre}} szolgál, ahol a kemence végzi a mázazás egy részét, és erre az ehhez az ellenőrzéshez használt közzétett értékek nem terjednek ki.",
+      "ash": "A Glazecalc nem tudja összevetni a máz kémiáját az égetésével: hamu van benne, amelynek összetétele túlságosan változó az ehhez az ellenőrzéshez használt közzétett értékekhez.",
+      "noTemperature": "A Glazecalc nem tudja összevetni a máz kémiáját ezzel az égetéssel ({scale, select, band {{band, select, low {alacsony tüzű égetés} mid {közepes tüzű égetés} other {magas tüzű égetés}}} sk {SK {cone}} temperature {{cone} °C} other {gúla {cone}}}): ehhez a gúlához nincs mért hőmérséklet.",
+      "between": "A Glazecalc nem tudja összevetni a máz kémiáját ezzel az égetéssel ({scale, select, band {{band, select, low {alacsony tüzű égetés} mid {közepes tüzű égetés} other {magas tüzű égetés}}} sk {SK {cone}} temperature {{cone} °C} other {gúla {cone}}}): az ehhez az ellenőrzéshez használt közzétett értékek az alacsony tüzű, valamint a közepes és magas tüzű égetésre vonatkoznak, nem a köztük lévő gúlákra (01 és 3 között).",
+      "belowChart": "A Glazecalc nem tudja összevetni a máz kémiáját ezzel az égetéssel ({scale, select, band {{band, select, low {alacsony tüzű égetés} mid {közepes tüzű égetés} other {magas tüzű égetés}}} sk {SK {cone}} temperature {{cone} °C} other {gúla {cone}}}): Katz bórszabálya a 06-os gúlától a 10-es gúláig érvényes, és ez az égetés hűvösebb."
+    }
+  },
   "stull": {
     "heading": "Stull-diagram",
     "title": "Stull-diagram: a szilícium-dioxid a timföld függvényében a Seger-képletben",
@@ -904,7 +934,7 @@
     "foodSurface": "Élelmiszerrel érintkező felülethez (belső máz)",
     "liner": {
       "note": "Az élelmiszerrel érintkezésre való alkalmasság azon múlik, hogy ezt a mázat arra a gúlára égetik-e, amelyen kipróbálták: az alulégetett mázból fémek oldódhatnak ki.",
-      "range": "Tartományként van megadva, ezért a tartomány alsó végén próbálja ki, ahol a legkevésbé olvad.",
+      "range": "A máz égetése tartományként van megadva, ezért a tartomány alsó végén próbálja ki, ahol a legkevésbé olvad.",
       "untested": "Még egyetlen gúla sincs kipróbáltként megjelölve.",
       "test": "Csak a saját kiégetett edényei kioldódási vizsgálata mutatja meg, hogy élelmiszerrel érintkezésre alkalmas-e."
     },
@@ -967,5 +997,23 @@
     "replaceAsk": "A kipróbált gúlák jelenleg ezek: {now}. Lecseréli ezeket a naplókban megnevezett gúlákra ({logs})?",
     "replace": "Csere",
     "keep": "Marad úgy, ahogy van"
+  },
+  "coneCards": {
+    "heading": "Eredmények gúla szerint",
+    "unplaced": "Nincs gúlához rendelve",
+    "unplacedNote": "Ezek az égetési naplók még nincsenek gúlához rendelve: válassza ki, hol égették ki őket.",
+    "approx": "≈ {temperature}",
+    "cautions": "{count, plural, =0 {nincs határérték-figyelmeztetés} one {# határérték-figyelmeztetés} other {# határérték-figyelmeztetés}}",
+    "logs": "{count, plural, =0 {nincs égetési napló} one {# égetési napló} other {# égetési napló}}",
+    "outside": "a megadott égetésen kívül",
+    "outsideChoice": "{place} (a megadott égetésen kívül)",
+    "summaryLabel": "Hogyan sikerült ennél: {place}",
+    "summaryPlaceholder": "Felület, szín, lefolyás, hajszálrepedés...",
+    "noAtmosphere": "az atmoszféra nincs megadva",
+    "placeLabel": "Hol égették ki: {title}",
+    "notPlaced": "Nincs hozzárendelve",
+    "add": "Eredmény hozzáadása ehhez:",
+    "addButton": "Hozzáadás",
+    "saveFailed": "Nem sikerült elmenteni, hol égették ki az égetési naplót."
   }
 }

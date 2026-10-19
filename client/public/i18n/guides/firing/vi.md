@@ -199,11 +199,11 @@ Nhiều Kiln-Sitter, gồm các mẫu LT của Dawson, có **bộ hẹn giờ gi
 Table: Đặt bộ hẹn giờ giới hạn bao lâu
 Label: Cài đặt bộ hẹn giờ giới hạn
 
-| Nguồn     | Cài đặt                                                                                                                     |
-| --------- | --------------------------------------------------------------------------------------------------------------------------- |
-| Dawson    | Dài hơn thời gian nung dự kiến ½ giờ cho đến khi bạn biết lò, sau đó có thể chỉ dài hơn ¼ giờ; không bao giờ đặt quá 20 giờ |
-| L&L       | Rất cao lần đầu, ghi lại lần nung kéo dài bao lâu; sau đó, dài hơn khoảng 1 giờ                                             |
-| Bracker's | Dài hơn thời gian nung 30 phút đến 1 giờ                                                                                    |
+| Nguồn     | Cài đặt                                                                                                          |
+| --------- | ---------------------------------------------------------------------------------------------------------------- |
+| Dawson    | Dài hơn thời gian nung dự kiến ½ giờ cho đến khi bạn biết lò, sau đó dài hơn ¼ giờ; không bao giờ đặt quá 20 giờ |
+| L&L       | Rất cao lần đầu, ghi lại lần nung kéo dài bao lâu; sau đó, dài hơn khoảng 1 giờ                                  |
+| Bracker's | Dài hơn thời gian nung 30 phút đến 1 giờ                                                                         |
 
 > [!NOTE]
 > Điểm xuất phát của chúng tôi: rộng rãi lần đầu (trong 20 giờ của mặt số), sau đó dài hơn ½ đến 1 giờ so với thời gian bạn đã ghi. Bộ hẹn giờ cũng cho bạn biết một lần nung kéo dài bao lâu: đặt ở 7 và kết thúc ở 1 nghĩa là 6 giờ.
@@ -352,11 +352,11 @@ Label: Bảng SK
 | SK 19   |     {{2768 °F; 1520 °C}} |
 | SK 20   |     {{2786 °F; 1530 °C}} |
 
-Mọi số liệu đều là danh định (JIS): nhiệt độ mà tiêu chuẩn nêu cho côn, như được in trong bảng của Yuko Trading. Bảng không in tốc độ nâng nhiệt. Tiêu chuẩn nêu các nhiệt độ tham chiếu. Ở tốc độ của thợ gốm khoảng 100 °C/h, viện công nghiệp thành phố Kyoto đã đo các côn Kyoto của chính họ cong ở nhiệt độ thấp hơn con số JIS cho cùng số từ 40–70 °C; chúng tôi không tìm thấy các phép đo như vậy cho côn SK theo JIS. Hãy đặt một côn chứng và so sánh.
+Mọi số liệu đều là danh định (JIS): nhiệt độ mà tiêu chuẩn nêu cho côn, như được in trong bảng của Yuko Trading. Bảng không in tốc độ nâng nhiệt. Tiêu chuẩn nêu các nhiệt độ tham chiếu. Ở tốc độ của thợ gốm khoảng 100 °C/h, viện công nghiệp thành phố Kyoto đã đo các côn Kyoto của chính họ cong ở nhiệt độ thấp hơn con số JIS cho cùng số từ 47–79 °C; chúng tôi không tìm thấy các phép đo như vậy cho côn SK theo JIS. Hãy đặt một côn chứng và so sánh.
 
 ### Côn Kyoto
 
-Côn Kyoto (Kyoto zeegeru), do viện công nghiệp thành phố Kyoto làm ra, không còn được sản xuất: các bản tin cho biết viện đã chấm dứt sản xuất vào cuối năm tài chính 2009. Chúng mang cùng số với côn SK theo JIS nhưng cong ở nhiệt độ thấp hơn: một côn Kyoto thường cong ở khoảng nhiệt độ của côn SK theo JIS thấp hơn hai số. Một công thức men từ Kyoto nói “SK 8” có thể có nghĩa là một côn Kyoto. Viện đã công bố lời khuyên cho thợ gốm chuyển từ côn Kyoto sang côn Orton, và dùng côn Orton 10 thay cho côn Kyoto SK 12 của chính mình; đó là lựa chọn của viện từ các phép đo riêng của họ ở 100 °C/h, và không áp dụng cho côn nào khác.
+Côn Kyoto (Kyoto zeegeru), do viện công nghiệp thành phố Kyoto làm ra, không còn được sản xuất: các bản tin cho biết viện đã chấm dứt sản xuất vào cuối năm tài chính 2009. Chúng mang cùng số với côn SK theo JIS nhưng cong ở nhiệt độ thấp hơn: một côn Kyoto cong ở khoảng nhiệt độ của côn SK theo JIS nguội hơn hai hoặc ba bậc. Một công thức men từ Kyoto nói “SK 8” có thể có nghĩa là một côn Kyoto. Viện đã công bố lời khuyên cho thợ gốm chuyển từ côn Kyoto sang côn Orton, và dùng côn Orton 10 thay cho côn Kyoto SK 12 của chính mình; đó là lựa chọn của viện từ các phép đo riêng của họ ở 100 °C/h, và không áp dụng cho côn nào khác.
 
 ### Côn Orton được bán ở Nhật
 

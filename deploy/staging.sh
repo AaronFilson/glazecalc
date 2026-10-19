@@ -298,11 +298,12 @@ else
   fail "Could not read /glazecalc/smtp-url; staging is unchanged."
 fi
 unset smtp
-# Sign in with Google and GitHub, from staging's own provider apps
+# Sign in with Google, GitHub and Microsoft, from staging's own provider apps
 # (/glazecalc/staging/<provider>-client-id and -client-secret): a GitHub OAuth
-# app has one callback URL, so production's cannot serve staging. Each is off
+# app has one callback URL, so production's cannot serve staging, and staging
+# has its own Google client and Microsoft app registration too. Each is off
 # until both of its parameters exist.
-for provider in google github; do
+for provider in google github microsoft; do
   upper=$(printf '%s' "$provider" | tr '[:lower:]' '[:upper:]')
   if client_id=$(param "/glazecalc/staging/$provider-client-id" 2> /dev/null) \
     && client_secret=$(param "/glazecalc/staging/$provider-client-secret" 2> /dev/null); then

@@ -332,6 +332,7 @@
             [(block)]="firedAt"
             [recipeId]="savedId()"
             (saved)="linksSaved($event)"
+            (logsLoaded)="firingLogs.set($event)"
           />
         } @else {
           <p>
@@ -339,6 +340,18 @@
               {{ t('recipe.firings.open') }}
             </button>
           </p>
+        }
+        @if (coneCardsShown()) {
+          <gc-recipe-cone-cards
+            [block]="firedAt()"
+            [(links)]="firings"
+            [logs]="firingLogs()"
+            [(results)]="coneResults"
+            [recipeId]="savedId()"
+            [unity]="unityForCards()"
+            [coneFit]="coneFitForCard()"
+            (saved)="linksSaved($event)"
+          />
         }
 
         <h3 id="materials-heading" tabindex="-1">{{ t('recipe.page.materialsHeading') }}</h3>
@@ -1021,6 +1034,7 @@
         [counted]="includeAdditives()"
         [(firing)]="firing"
         [firedAt]="firedAt()"
+        [materials]="materialNames()"
       />
     }
     <gc-slurry-calculator [(sgTarget)]="sgTarget" />

@@ -167,7 +167,7 @@ A Rio Grande recomenda um **circuito dedicado** (um circuito que não alimenta m
 
 ### Esteja presente no fim da cozedura
 
-Um **kiln sitter** (interruptor de cone) é o interruptor mecânico de muitos fornos manuais: um pequeno cone dobra-se no fim da cozedura e faz disparar o interruptor, que desliga o forno. O seu manual diz que «NÃO se destina a funcionar como dispositivo de corte de segurança à prova de falhas». A Rio Grande diz para nunca deixar sem vigilância um forno em cozedura, «sobretudo perto da hora prevista para desligar». Por isso, fique por perto e verifique o forno enquanto coze, sobretudo perto do fim; coza apenas quando houver um adulto em casa e acordado para ficar por perto e verificar o forno, confirme que o forno se desligou e tenha um extintor ABC na divisão do forno. Para saber como funcionam os kiln sitters, os controladores e as curvas de cozedura, veja [Cozer num forno simples](/guides/firing).
+Um **kiln sitter** (interruptor de cone) é o interruptor mecânico de muitos fornos manuais: um pequeno cone dobra-se no fim da cozedura e faz disparar o interruptor, que desliga o forno. O seu manual diz que «NÃO se destina a funcionar como dispositivo de corte de segurança à prova de falhas». A Rio Grande diz para nunca deixar sem vigilância um forno em cozedura, «sobretudo perto da hora prevista para desligar». Por isso, fique por perto e verifique o forno enquanto coze, sobretudo perto do fim; coza apenas quando houver um adulto em casa e acordado durante toda a cozedura, confirme que o forno se desligou e tenha um extintor ABC na divisão do forno. Para saber como funcionam os kiln sitters, os controladores e as curvas de cozedura, veja [Cozer num forno simples](/guides/firing).
 
 ### Fumos e monóxido de carbono
 

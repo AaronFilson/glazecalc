@@ -211,7 +211,7 @@ Label: Vesimäärä tavoiteominaispainoon
 
 **CMC** eli lasiteliima (karboksimetyyliselluloosa) tekee lasitelietteestä tahmeamman ja hitaammin kuivuvan ja jättää kovemman lasitekerroksen, joka pysyy esineessä kiinni. Sillä on eniten merkitystä sivellinlasitteissa ja lasitteissa, joissa on paljon frittiä{{en: frit}}. Digitalfiren esimerkissä 3,75 g sekoitetaan 1000 g:aan lasitelietettä, ja se on lisättävä tehosekoittimella. Lasite, jossa on CMC:tä, ei jähmety Epsom-suolalla, ja koska mikrobit käyttävät liimaa ravinnokseen, lasite voi muuttua ämpärissä ja alkaa haista.
 
-**Bentoniitti**, erittäin hienojakoinen savi, auttaa pitämään muut hiukkaset suspensiossa. Upotuslasitteissa tähän tarkoitukseen on yleensä 15–25 % polttamatonta savea. Jos reseptissä on vähän savea, noin 1–3 % bentoniittia auttaa; Digitalfiren mukaan lasite, jossa on yli 15 % savea, ei tarvitsisi yli 1 %:a.
+**Bentoniitti**, erittäin hienojakoinen savi, auttaa pitämään muut hiukkaset suspensiossa. Upotuslasitteissa tähän tarkoitukseen on yleensä 15–25 % polttamatonta savea. Jos reseptissä on vähän savea, noin 1–3 % bentoniittia auttaa; Digitalfiren mukaan lasite, jossa on yli 15 % savea, ei tarvitsisi bentoniittia yli 1 % kuivan lasitteen painosta.
 
 ## Koepalat ja koesarjat {#testing}
 

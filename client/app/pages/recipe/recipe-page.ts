@@ -16,7 +16,7 @@ import {
 import { toSignal } from '@angular/core/rxjs-interop';
 import { FormsModule } from '@angular/forms';
 import { ActivatedRoute, Router, RouterLink } from '@angular/router';
-import { TranslocoDirective, translate } from '@jsverse/transloco';
+import { TranslocoDirective, TranslocoService, translate } from '@jsverse/transloco';
 import { marker } from '@jsverse/transloco-keys-manager/marker';
 import { map } from 'rxjs';
 import { CONES, MaterialInput } from '../../../../lib/chemistry';
@@ -24,7 +24,7 @@ import { ApiResourceFactory } from '../../core/api-resource.service';
 import { AuthService } from '../../core/auth.service';
 import { errorMessage } from '../../core/error-message';
 import { AsksBeforeLeaving } from '../../core/leave.guard';
-import { Additive, AdditiveUnit, FiringLink, Material, Recipe, RecipeMaterial } from '../../core/models';
+import { Additive, AdditiveUnit, Firing, FiringLink, Material, Recipe, RecipeMaterial } from '../../core/models';
 import { PreferencesService } from '../../core/preferences.service';
 import { LocaleService } from '../../core/locale.service';
 import { ShelfService } from '../../core/shelf.service';
@@ -76,8 +76,12 @@ import {
   inRange,
   testedCones
 } from '../../../../lib/cones/firing';
+import type { ConeResult } from '../../../../lib/cones/results';
 import { RecipeFiring } from './recipe-firing';
 import { RecipeFirings } from './recipe-firings';
+import { RecipeConeCards, type ConePlace } from './recipe-cone-cards';
+import { recipeText } from './recipe-messages';
+import { coneFit } from '../../../../lib/recipe/cone-fit';
 import { ATMOSPHERE_NAMES, Reader, coneText, firingLine } from './firing-text';
 
 const INCLUDE_KEY = 'includeAdditives';
@@ -196,7 +200,8 @@ const toggled = (set: ReadonlySet<string>, id: string): ReadonlySet<string> => {
     OwnLimitsNote,
     SlurryCalculator,
     RecipeFiring,
-    RecipeFirings
+    RecipeFirings,
+    RecipeConeCards
   ],
   templateUrl: './recipe-page.html',
   // The saved recipes (styles.scss has the rest of the page's).
@@ -337,6 +342,8 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
   protected readonly notes = signal('');
   protected readonly lines = signal<RecipeMaterial[]>([]);
   protected readonly additiveLines = signal<Additive[]>([]);
+  /** The materials' names, for the limits' cone check (ash, Gerstley borate). */
+  protected readonly materialNames = computed(() => this.lines().map((line) => line.name));
 
   // The lists to add from, and the saved recipes.
   protected readonly myMaterials = signal<Material[]>([]);
@@ -455,6 +462,35 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
   /** The firing logs part is open: asked for, or the recipe has links. */
   protected readonly firingsAsked = signal(false);
   protected readonly firingsShown = computed(() => this.firingsAsked() || this.firings().length > 0);
+  /** The account's firing logs that are there, once the firing logs part has fetched them, for the result cards. */
+  protected readonly firingLogs = signal<Firing[]>([]);
+  /** What it came out like at each cone and atmosphere; saved with the recipe as coneResults. */
+  protected readonly coneResults = signal<ConeResult[]>([]);
+  /** The result cards show once there is a cone, a result or a link to place. */
+  protected readonly coneCardsShown = computed(
+    () => !!this.firedAt()?.low || this.coneResults().length > 0 || this.firings().length > 0
+  );
+  /** The recipe's unity formula, for the limit cautions on each result card. */
+  protected readonly unityForCards = computed(() => this.evaluation().analysis?.uList ?? null);
+  private readonly language = toSignal(inject(TranslocoService).langChanges$);
+  /**
+   * The cone check (lib/recipe/cone-fit.js, docs/adr/0022) for one result card's
+   * cone: only a note (the chemistry looks cooler or hotter than that cone), and
+   * only its first sentence; the limits panel gives the rest and the sources.
+   */
+  protected readonly coneFitForCard = computed(() => {
+    this.language();
+    const unity = this.unityForCards();
+    if (!unity) return null;
+    const processes = this.firedAt()?.processes ?? [];
+    const materials = this.materialNames();
+    return (place: ConePlace & { scale: ConeScale }): string | null => {
+      if (!place.cone) return null;
+      const fit = coneFit(unity, { scale: place.scale, low: place.cone, processes }, { materials });
+      const note = fit && (fit.verdict === 'cooler' || fit.verdict === 'hotter');
+      return note ? recipeText(fit.sentences[0]!) : null;
+    };
+  });
 
   // Saving: the saved recipe this is (if any), and whether it has changed since.
   protected readonly savedId = signal<string | null>(null);
@@ -471,7 +507,8 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
       sgTarget: this.sgTarget(),
       firedAt: this.firedAt(),
       foodSurface: this.foodSurface(),
-      firings: this.firings()
+      firings: this.firings(),
+      coneResults: this.coneResults()
     })
   );
   private readonly savedSnapshot = signal(this.snapshot());
@@ -580,7 +617,8 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
     ...(this.sgTarget() !== null ? { sgTarget: this.sgTarget() } : {}),
     ...(this.firedAt() ? { firedAt: this.firedAt() } : {}),
     ...(this.foodSurface() ? { foodSurface: true } : {}),
-    ...(this.firings().length ? { firings: this.firings() } : {})
+    ...(this.firings().length ? { firings: this.firings() } : {}),
+    ...(this.coneResults().length ? { coneResults: this.coneResults() } : {})
   }));
   /** The recipe in the print view, while it is open. */
   protected readonly printRecipe = computed<Recipe | null>(() => {
@@ -1055,7 +1093,13 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
       // The links to firing logs go with a new recipe only. A saved recipe's links change one at a time as they
       // are made (recipe-firings.ts), so a save never sends a list that could undo another page's; a copy starts
       // with none.
-      ...(!this.savedId() && mode !== 'copy' && this.firings().length ? { firings: this.firings() } : {})
+      ...(!this.savedId() && mode !== 'copy' && this.firings().length ? { firings: this.firings() } : {}),
+      // The results go with the recipe, like the notes; a copy starts with none, as it has no logs.
+      ...(mode !== 'copy' && this.coneResults().length
+        ? { coneResults: this.coneResults() }
+        : this.savedId() && mode !== 'copy'
+          ? { coneResults: null }
+          : {})
     };
     // What is sent, and which recipe the page shows: both can change before the server answers.
     const sent = this.snapshot();
@@ -1078,8 +1122,13 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
         // Changes made while it saved are not in it, so they still count as not saved.
         this.savedSnapshot.set(sent);
         this.savedAt.set(new Date());
-        // The copy shown now has no links to firing logs.
-        if (mode === 'copy') this.linksSaved([]);
+        // The copy shown now has no links to firing logs, and no results.
+        if (mode === 'copy') {
+          this.linksSaved([]);
+          this.coneResults.set([]);
+          const saved = this.savedSnapshot();
+          if (saved) this.savedSnapshot.set(JSON.stringify({ ...JSON.parse(saved), coneResults: [] }));
+        }
       }
       return { title: recipe.title, stillOpen, changedSince: this.snapshot() !== sent, changedId: id };
     } catch (err) {
@@ -1707,6 +1756,7 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
     this.firedAt.set(recipe?.firedAt ? copy(recipe.firedAt) : null);
     this.foodSurface.set(recipe?.foodSurface === true);
     this.firings.set(copy(recipe?.firings ?? []));
+    this.coneResults.set(copy(recipe?.coneResults ?? []));
     this.firingsAsked.set(false);
   }
 
@@ -1728,7 +1778,7 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
       // A new firing: the band by hand, the block and the links go; the food-surface flag stays with the glaze.
       this.firing.set('');
       this.sgTarget.set(recipe.sgTarget ?? null);
-      this.setFiringFrom({ ...recipe, firedAt: null, firings: [] });
+      this.setFiringFrom({ ...recipe, firedAt: null, firings: [], coneResults: [] });
       this.savedId.set(null);
       this.savedSnapshot.set('');
       this.savedAt.set(null);

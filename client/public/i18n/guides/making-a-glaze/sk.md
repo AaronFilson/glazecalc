@@ -211,7 +211,7 @@ Label: Voda pre cieľovú relatívnu hustotu
 
 **CMC** (karboxymetylcelulóza) robí rozmiešanú glazúru lepkavejšou, spomaľuje jej schnutie a zanecháva tvrdšiu vrstvu, ktorá drží na výrobku. Najviac na nej záleží pri glazúrach na natieranie štetcom a glazúrach s vysokým obsahom frity{{en: frit}}. V príklade od Digitalfire sa 3,75 g zamieša do 1000 g rozmiešanej glazúry, a to sa musí urobiť mixérom. Glazúra s CMC sa horkou soľou nezahustí, a keďže mikróby sa živia týmto spojivom, môže sa vo vedre meniť a začať zapáchať.
 
-**Bentonit**, veľmi jemná hlina, pomáha udržať ostatné čiastočky vo vznose. Glazúry na ponáranie sa v tom zvyčajne spoliehajú na 15 – 25 % surovej hliny. Receptu, v ktorom je málo hliny, pomôže asi 1 – 3 % bentonitu; podľa Digitalfire by glazúra s viac ako 15 % hliny nemala potrebovať viac ako 1 %.
+**Bentonit**, veľmi jemná hlina, pomáha udržať ostatné čiastočky vo vznose. Glazúry na ponáranie sa v tom zvyčajne spoliehajú na 15 – 25 % surovej hliny. Receptu, v ktorom je málo hliny, pomôže asi 1 – 3 % bentonitu; podľa Digitalfire by glazúra s viac ako 15 % hliny nemala potrebovať bentonit v množstve väčšom ako 1 % hmotnosti suchej glazúry.
 
 ## Skúšobné doštičky a skúšobné rady {#testing}
 

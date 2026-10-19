@@ -167,7 +167,7 @@ Rio Grande zaleca **osobny obwód elektryczny** (który nie zasila niczego inneg
 
 ### Obecność przy końcu wypału
 
-**Kiln-Sitter** (wyłącznik stożkowy) to mechaniczny wyłącznik w wielu piecach sterowanych ręcznie: pod koniec wypału mały stożek{{en: cone}} ugina się i wyzwala wyłącznik. Jego instrukcja mówi, że „NIE jest przeznaczony do pełnienia funkcji niezawodnego wyłącznika bezpieczeństwa”. Rio Grande radzi nigdy nie zostawiać pracującego pieca bez nadzoru, „zwłaszcza w pobliżu spodziewanego czasu wyłączenia”. Dlatego należy zostać w pobliżu i sprawdzać piec podczas wypału, zwłaszcza pod jego koniec; wypalać należy tylko wtedy, gdy w domu będzie osoba dorosła, która nie śpi i może to robić, a potem sprawdzić, czy piec się wyłączył; w pomieszczeniu z piecem trzeba też trzymać gaśnicę ABC. Jak działają wyłączniki stożkowe, sterowniki i programy wypału – w poradniku [Wypał w prostym piecu](/guides/firing).
+**Kiln-Sitter** (wyłącznik stożkowy) to mechaniczny wyłącznik w wielu piecach sterowanych ręcznie: pod koniec wypału mały stożek{{en: cone}} ugina się i wyzwala wyłącznik. Jego instrukcja mówi, że „NIE jest przeznaczony do pełnienia funkcji niezawodnego wyłącznika bezpieczeństwa”. Rio Grande radzi nigdy nie zostawiać pracującego pieca bez nadzoru, „zwłaszcza w pobliżu spodziewanego czasu wyłączenia”. Dlatego należy zostać w pobliżu i sprawdzać piec podczas wypału, zwłaszcza pod jego koniec; wypalać należy tylko wtedy, gdy w domu będzie osoba dorosła, która nie śpi przez cały czas wypału, a potem sprawdzić, czy piec się wyłączył; w pomieszczeniu z piecem trzeba też trzymać gaśnicę ABC. Jak działają wyłączniki stożkowe, sterowniki i programy wypału – w poradniku [Wypał w prostym piecu](/guides/firing).
 
 ### Opary i tlenek węgla
 

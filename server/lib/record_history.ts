@@ -6,7 +6,7 @@
 import type { Request } from 'express';
 import type { Types } from 'mongoose';
 import Activity, { TITLE_LENGTH, type ActivityAction } from '../models/activity.ts';
-import RecordVersion, { VERSIONS_KEPT } from '../models/record_version.ts';
+import RecordVersion, { VERSIONS_KEPT, VERSIONS_MOST_ACCOUNT } from '../models/record_version.ts';
 import Trash, { TRASH_DAYS, TRASH_MAX_ACCOUNT, TRASH_MAX_TRIAL } from '../models/trash.ts';
 import type { UserDocument } from '../models/user.ts';
 import type { RecordModel } from './guest_limits.ts';
@@ -116,11 +116,61 @@ const beforeTokens = (versions: Array<{ by?: string | null }>): number => {
   return i;
 };
 
+/** The id of a record's version from before the newest run of access-token changes (beforeTokens), or null. */
+const floorOf = async (ownedBy: string, recordId: Types.ObjectId): Promise<string | null> => {
+  const versions = await RecordVersion.find({ ownedBy, recordId })
+    .sort({ savedAt: -1, _id: -1 })
+    .select({ _id: 1, by: 1 })
+    .lean();
+  const floor = beforeTokens(versions);
+  return floor === -1 ? null : String(versions[floor]!._id);
+};
+
+/**
+ * How many of the account's oldest versions are looked at, past the number to
+ * remove, for one save: room for that many records' versions from before a
+ * token's changes, which stay.
+ */
+const FLOOR_ROOM = 200;
+
+/**
+ * Keeps the account's versions to VERSIONS_MOST_ACCOUNT: the oldest go first,
+ * but never a record's version from before the newest run of access-token
+ * changes (beforeTokens), so what the person had before a token started stays
+ * however much it does. Each save looks at most FLOOR_ROOM versions past the
+ * ones it removes, so an account whose oldest are all such versions can stay
+ * a little over until they expire (VERSION_DAYS).
+ */
+export const keepAccountVersionsWithin = async (ownedBy: string, most = VERSIONS_MOST_ACCOUNT): Promise<number> => {
+  const over = (await RecordVersion.countDocuments({ ownedBy })) - most;
+  if (over <= 0) return 0;
+  const oldest = await RecordVersion.find({ ownedBy })
+    .sort({ savedAt: 1, _id: 1 })
+    .limit(over + FLOOR_ROOM)
+    .select({ _id: 1, recordId: 1, by: 1 })
+    .lean();
+  const floors = new Map<string, string | null>();
+  const drop: Types.ObjectId[] = [];
+  for (const version of oldest) {
+    if (drop.length >= over) break;
+    // Only a token's change saves a version that can be a record's floor.
+    if (version.by !== 'session') {
+      const record = String(version.recordId);
+      if (!floors.has(record)) floors.set(record, await floorOf(ownedBy, version.recordId));
+      if (floors.get(record) === String(version._id)) continue;
+    }
+    drop.push(version._id);
+  }
+  if (drop.length) await RecordVersion.deleteMany({ _id: { $in: drop } });
+  return drop.length;
+};
+
 /**
  * Keeps the record as it was before a change: the newest VERSIONS_KEPT of it,
  * and the one from before the newest run of access-token changes
- * (beforeTokens). `replacing` is a version this one takes the place of (Undo
- * puts it back), removed before the count.
+ * (beforeTokens); then the account's to VERSIONS_MOST_ACCOUNT
+ * (keepAccountVersionsWithin). `replacing` is a version this one takes the
+ * place of (Undo puts it back), removed before the count.
  */
 export const saveVersion = async (
   kind: string,
@@ -135,10 +185,12 @@ export const saveVersion = async (
     .sort({ savedAt: -1, _id: -1 })
     .select({ _id: 1, by: 1 })
     .lean();
-  if (versions.length <= VERSIONS_KEPT) return;
-  const floor = beforeTokens(versions);
-  const older = versions.filter((_version, i) => i >= VERSIONS_KEPT && i !== floor);
-  if (older.length) await RecordVersion.deleteMany({ _id: { $in: older.map((version) => version._id) } });
+  if (versions.length > VERSIONS_KEPT) {
+    const floor = beforeTokens(versions);
+    const older = versions.filter((_version, i) => i >= VERSIONS_KEPT && i !== floor);
+    if (older.length) await RecordVersion.deleteMany({ _id: { $in: older.map((version) => version._id) } });
+  }
+  await keepAccountVersionsWithin(ownedBy);
 };
 
 /**
@@ -162,25 +214,33 @@ export const dateOldTrash = async (now = new Date()): Promise<number> => {
   return result.modifiedCount;
 };
 
+/** An access token, as the activity log names who made a change. */
+export interface TokenActor {
+  via: 'pat' | 'oauth';
+  tokenId: string;
+  /** The token's name, or the client's. */
+  name: string;
+}
+
 /**
- * Writes what an access token did to the activity log; nothing for the web
- * session. The record is named by its title alone. A failure to write is
- * logged, not passed on: the change itself is made.
+ * Writes what an access token did to the account `ownedBy` to the activity
+ * log: the record named by its title alone. A failure to write is logged,
+ * not passed on: the change itself is made. The MCP write tools call this;
+ * the record routes, logActivity.
  */
-export const logActivity = async (
-  req: Request,
+export const logActivityBy = async (
+  actor: TokenActor,
+  ownedBy: string,
   action: ActivityAction,
   kind: string,
   record: Record<string, unknown> & { _id?: Types.ObjectId | string }
 ): Promise<void> => {
-  const access = req.access;
-  if (!access || access.via === 'session' || !req.user) return;
   try {
     await Activity.create({
-      ownedBy: String(req.user._id),
-      via: access.via,
-      tokenId: access.tokenId,
-      client: access.name.slice(0, 100),
+      ownedBy,
+      via: actor.via,
+      tokenId: actor.tokenId,
+      client: actor.name.slice(0, 100),
       action,
       fromCollection: kind,
       recordId: record._id,
@@ -189,4 +249,22 @@ export const logActivity = async (
   } catch (err) {
     log.error('Activity log write failed', { err, action, kind });
   }
+};
+
+/** Writes what an access token did to the activity log (logActivityBy); nothing for the web session. */
+export const logActivity = async (
+  req: Request,
+  action: ActivityAction,
+  kind: string,
+  record: Record<string, unknown> & { _id?: Types.ObjectId | string }
+): Promise<void> => {
+  const access = req.access;
+  if (!access || access.via === 'session' || !req.user) return;
+  await logActivityBy(
+    { via: access.via, tokenId: access.tokenId, name: access.name },
+    String(req.user._id),
+    action,
+    kind,
+    record
+  );
 };

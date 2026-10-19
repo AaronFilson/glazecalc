@@ -85,7 +85,8 @@ test.describe('home and navigation', () => {
       ['/guides/firing', 'Firing a basic kiln'],
       ['/about', 'About Glazecalc'],
       ['/privacy', 'Privacy'],
-      ['/terms', 'Terms of use']
+      ['/terms', 'Terms of use'],
+      ['/assistants', 'Use Glazecalc from your AI assistant']
     ]) {
       await visitor.goto(path);
       await expect(visitor.locator('h1')).toHaveText(heading);
@@ -102,6 +103,7 @@ test.describe('home and navigation', () => {
     const visitor = await browser.newPage();
     await visitor.goto('/signup');
     await expect(visitor.locator('.privacy-note')).toContainText('Amazon Web Services in the US');
+    await expect(visitor.locator('.terms-note a')).toHaveAttribute('href', '/terms');
     await visitor.locator('.privacy-note a').click();
     await expect(visitor).toHaveURL(/\/privacy$/);
     await expect(visitor.locator('h1')).toHaveText('Privacy');

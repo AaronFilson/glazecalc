@@ -211,7 +211,7 @@ Label: Water voor een gewenst soortelijk gewicht
 
 **CMC** (carboxymethylcellulose, ook verkocht als glazuurlijm) maakt aangemaakt glazuur kleveriger en laat het langzamer drogen, en geeft een hardere laag die aan de pot hecht. Het is het belangrijkst voor kwastglazuren en glazuren met veel fritte{{en: frit}}. In het voorbeeld van Digitalfire wordt 3,75 g door 1000 g aangemaakt glazuur gemengd, en dat moet met een blender. Een glazuur met CMC stijft niet op met bitterzout, en omdat microben zich met de CMC voeden, kan het in de emmer veranderen en gaan stinken.
 
-**Bentoniet**, een zeer fijne klei, helpt de andere deeltjes in suspensie te houden. Dompelglazuren rekenen hiervoor meestal op 15 tot 25% ongebakken klei. Bij een recept met te weinig klei helpt ongeveer 1 tot 3% bentoniet; Digitalfire zegt dat een glazuur met meer dan 15% klei niet meer dan 1% nodig zou moeten hebben.
+**Bentoniet**, een zeer fijne klei, helpt de andere deeltjes in suspensie te houden. Dompelglazuren rekenen hiervoor meestal op 15 tot 25% ongebakken klei. Bij een recept met te weinig klei helpt ongeveer 1 tot 3% bentoniet; Digitalfire zegt dat een glazuur met meer dan 15% klei niet meer bentoniet nodig zou moeten hebben dan 1% van het gewicht van het droge glazuur.
 
 ## Proefplaatjes en proevenreeksen {#testing}
 

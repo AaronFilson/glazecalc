@@ -5,7 +5,8 @@
 // only the fields named here: what the unity formula and the worked
 // calculation need, the title and date, the firing as stated and whether it is
 // for a food surface (never the firing logs it is linked to), and the notes, with
-// the firing's schedule note, when the owner chose to show them. A line that is a
+// the firing's schedule note and the result summaries for each cone and
+// atmosphere, when the owner chose to show them. A line that is a
 // standard material or additive is marked
 // ownedBy 'Standard' and carries the library's current hazards, which are
 // public (the library ships in data/), so the page can show the recipe's
@@ -17,6 +18,7 @@ import crypto from 'node:crypto';
 import type { Types } from 'mongoose';
 import firing from '../../lib/cones/firing.js';
 import type { FiringBlock } from '../../lib/cones/firing.js';
+import results from '../../lib/cones/results.js';
 import Additive from '../models/additive.ts';
 import Material from '../models/material.ts';
 import Recipe from '../models/recipe.ts';
@@ -266,6 +268,8 @@ export async function sharedRecipe(recipe: Row, includeNotes: boolean, ownedBy: 
   // The schedule note is the author's own words, like the notes: shared only when the notes are.
   const stated = firing.cleanFiring(recipe.firedAt as FiringBlock | undefined);
   const firedAt = includeNotes || !stated ? stated : firing.cleanFiring({ ...stated, schedule: undefined });
+  // So are the summaries of how it came out at each cone and atmosphere; never the logs they came from.
+  const coneResults = includeNotes ? (results.cleanConeResults(recipe.coneResults ?? []) ?? []) : [];
   return {
     title: isText(recipe.title) ? recipe.title : '',
     ...(isText(recipe.date) && { date: recipe.date }),
@@ -277,6 +281,7 @@ export async function sharedRecipe(recipe: Row, includeNotes: boolean, ownedBy: 
     materials,
     additives,
     ...(notes.length && { notes }),
+    ...(coneResults.length && { coneResults }),
     borrowed: await borrowedFor(additives as Row[], ownedBy)
   };
 }

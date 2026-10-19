@@ -272,7 +272,7 @@
     "numbers": {
       "heading": "Baca analisis dan batasnya",
       "analysis": "<b>Analisis dan batas</b>, di bawah resep, menampilkan mol, % mol, dan % berat setelah dibakar setiap oksida, susut pijar, dan pemuaian termal terhitung, perkiraan untuk membandingkan glasir.",
-      "limits": "<b>Batas</b> membandingkan formula Seger dengan satu set batas: batas glasir stabil Hesselberth & Roy kecuali Anda memilih milik Glazecalc sendiri (pilihan ini disimpan bersama pengaturan Anda). Pilih <b>Pembakaran</b> untuk memeriksanya terhadap angka yang tepat; ini disimpan bersama resep. Angka Hesselberth & Roy untuk kerucut 6 dan kerucut 10, jadi pada suhu rendah aplikasi menyatakan angka itu tidak berlaku. Ini pedoman, bukan lulus atau gagal.",
+      "limits": "<b>Batas</b> membandingkan formula Seger dengan satu set batas: batas glasir stabil Hesselberth & Roy kecuali Anda memilih milik Glazecalc sendiri (pilihan ini disimpan bersama pengaturan Anda). Pemeriksaan mengikuti pita pembakaran yang diberikan <b>Pembakaran</b> pada resep: kerucutnya, atau rentangnya. Rentang yang melintasi beberapa pita, seperti kerucut 6 sampai 10, menampilkan hasil pemeriksaan kedua pita berdampingan. Untuk memeriksa satu pita saja, pilih pita itu di kotak <b>Pembakaran</b> milik batas itu sendiri, yang menggantikan pembakaran resep dan disimpan bersama resep. Angka Hesselberth & Roy berlaku untuk kerucut 6 dan kerucut 10, jadi pada suhu rendah aplikasi menyatakan angka itu tidak berlaku. Ini pedoman, bukan lulus atau gagal. Di bagian atas, satu baris membandingkan boron, silika, dan alumina glasir dengan pembakarannya, menurut aturan boron Katz dan angka Hesselberth & Roy, set batas mana pun yang Anda pilih: baris itu memberi catatan hanya bila keduanya sepakat bahwa glasir tampak seperti pembakaran yang berbeda, menyatakan bila tidak dapat menilai (timbal, litium, raku, dan sejenisnya), dan merupakan pedoman, bukan uji.",
       "stull": "<b>Bagan Stull</b> memetakan silika glasir terhadap aluminanya, dengan wilayah doff, semi-doff, dan cerah menurut Stull serta rentang set batas. Ini petunjuk tentang permukaan, bukan prediksi.",
       "slurry": "<b>Berat jenis dan air</b> memakai rumus Brongniart: timbang volume glasir yang terukur, lalu lihat glasir kering di dalam ember, air yang membawanya ke berat jenis yang Anda inginkan, atau air untuk batch baru. Kerapatan mengikuti pengaturan Anda untuk berat jenis, Baumé, atau berat pint."
     },
@@ -472,7 +472,7 @@
     "expansionRises": "Ekspansi terhitungnya naik dari {was} menjadi {now}.",
     "expansionRisesProbably": "Jika glasir lama hanya pas dengan tanah liat Anda, glasir ini kemungkinan akan retak halus, kadang berminggu-minggu kemudian.",
     "expansionRisesMay": "Jika glasir lama hanya pas dengan tanah liat Anda, glasir ini dapat retak halus, kadang berminggu-minggu kemudian.",
-    "expansionRisesFix": "Retak halus melemahkan benda dan tidak dianjurkan pada permukaan pangan. Mengganti sebagian natrium dan kalium dengan pelebur yang berekspansi lebih rendah (boron, litium, magnesium, atau kalsium) menurunkan ekspansinya; menambah silika kadang disarankan, tetapi sumber-sumber tidak sepakat.",
+    "expansionRisesFix": "Retak halus melemahkan benda dan tidak dianjurkan pada permukaan pangan. Mengganti sebagian natrium dan kalium dengan pelebur yang berekspansi lebih rendah (boron, litium, magnesium, atau kalsium) menurunkan ekspansi termalnya; menambah silika kadang disarankan, tetapi sumber-sumber tidak sepakat.",
     "expansionFalls": "Ekspansi terhitungnya turun dari {was} menjadi {now}. Sedikit lebih rendah biasanya lebih tahan retak halus.",
     "expansionFallsProbably": "Jauh lebih rendah kemungkinan akan mengelupas, dengan serpihan tajam dari tepi dan sudut.",
     "expansionFallsCan": "Jauh lebih rendah dapat mengelupas, dengan serpihan tajam dari tepi dan sudut.",
@@ -598,6 +598,36 @@
     "firingFromBlock": "Dari pembakaran resep ({bands})",
     "bothBands": "Pembakaran resep mencakup {bands}, sehingga masing-masing diperiksa berdampingan: glasir jarang berperilaku sama di kedua ujung.",
     "fromFiring": "Angka-angka ini untuk pembakaran resep: {band}. Pilih pembakaran di atas untuk memeriksa yang lain."
+  },
+  "coneFit": {
+    "cooler": "Kimia glasir ini tampak lebih mirip glasir {looksLike, select, low {suhu rendah} other {suhu menengah}} daripada glasir untuk {scale, select, band {{band, select, low {suhu rendah} mid {suhu menengah} other {suhu tinggi}}} sk {SK {cone}} temperature {{cone} °C} other {kerucut {cone}}}.",
+    "coolerSoft": "Kimia glasir ini condong ke pembakaran yang lebih dingin daripada {scale, select, band {{band, select, low {suhu rendah} mid {suhu menengah} other {suhu tinggi}}} sk {SK {cone}} temperature {{cone} °C} other {kerucut {cone}}}, lebih dekat ke kerucut 6, meski kimia saja hanya dapat membedakan glasir kerucut 6 dan kerucut 10 secara kasar.",
+    "hotter": "Kimia glasir ini tampak lebih mirip glasir {looksLike, select, high {suhu tinggi} other {suhu menengah}} daripada glasir untuk {scale, select, band {{band, select, low {suhu rendah} mid {suhu menengah} other {suhu tinggi}}} sk {SK {cone}} temperature {{cone} °C} other {kerucut {cone}}}.",
+    "hotterSoft": "Kimia glasir ini condong ke pembakaran yang lebih panas daripada {scale, select, band {{band, select, low {suhu rendah} mid {suhu menengah} other {suhu tinggi}}} sk {SK {cone}} temperature {{cone} °C} other {kerucut {cone}}}, lebih dekat ke kerucut 10, meski kimia saja hanya dapat membedakan glasir kerucut 6 dan kerucut 10 secara kasar.",
+    "closer": "Dari rentang yang dinyatakan, kimia glasir ini tampak lebih dekat ke ujung {scale, select, band {{band, select, low {suhu rendah} mid {suhu menengah} other {suhu tinggi}}} sk {SK {cone}} temperature {{cone} °C} other {kerucut {cone}}}.",
+    "coolerSilica": "Glasir ini memiliki lebih banyak boron ({boron}) daripada yang biasanya dibutuhkan glasir pada {scale, select, band {{band, select, low {suhu rendah} mid {suhu menengah} other {suhu tinggi}}} sk {SK {cone}} temperature {{cone} °C} other {kerucut {cone}}}, dan lebih sedikit silika ({silica}) daripada yang biasanya mereka miliki.",
+    "coolerAlumina": "Glasir ini memiliki lebih banyak boron ({boron}) daripada yang biasanya dibutuhkan glasir pada {scale, select, band {{band, select, low {suhu rendah} mid {suhu menengah} other {suhu tinggi}}} sk {SK {cone}} temperature {{cone} °C} other {kerucut {cone}}}, dan sedikit alumina ({alumina}).",
+    "coolerBoth": "Glasir ini memiliki lebih banyak boron ({boron}) daripada yang biasanya dibutuhkan glasir pada {scale, select, band {{band, select, low {suhu rendah} mid {suhu menengah} other {suhu tinggi}}} sk {SK {cone}} temperature {{cone} °C} other {kerucut {cone}}}, dan lebih sedikit silika ({silica}) dan alumina ({alumina}) daripada yang biasanya mereka miliki.",
+    "hotterSilica": "Glasir ini memiliki sedikit boron ({boron}) untuk {scale, select, band {{band, select, low {suhu rendah} mid {suhu menengah} other {suhu tinggi}}} sk {SK {cone}} temperature {{cone} °C} other {kerucut {cone}}}, dan lebih banyak silika ({silica}) daripada yang biasanya dimiliki glasir pada pembakaran itu.",
+    "coolerEffect": "Pada pembakaran itu glasir dapat mengalir atau meleleh berlebihan: bakar dulu satu ubin uji di atas piring penadah.",
+    "hotterEffect": "Pada pembakaran itu glasir dapat keluar kurang bakar: kering, kasar, atau tidak tertutup sepenuhnya. Bakar uji dulu sebelum dipakai pada benda, dan terutama sebelum dipakai di tempat yang akan disentuh makanan atau minuman.",
+    "hotterEffectSoft": "Beberapa glasir meleleh pada pembakaran itu tanpa boron, jadi ini hanya petunjuk: periksa pada ubin uji bahwa glasir meleleh sepenuhnya.",
+    "gerstley": "Sebagian boronnya berasal dari Gerstley borate, yang berbeda dari lot ke lot, jadi angka itu kurang pasti.",
+    "guide": "Ini membandingkan kimia dengan angka yang diterbitkan: ini pedoman, bukan uji. Jika glasir ini sudah terbakar baik bagi Anda pada kerucut ini, percayai ubin uji Anda.",
+    "fits": "Boron, silika, dan aluminanya tidak menunjuk menjauh dari {scale, select, band {{band, select, low {suhu rendah} mid {suhu menengah} other {suhu tinggi}}} sk {SK {cone}} temperature {{cone} °C} other {kerucut {cone}}}. Ini pedoman, bukan uji: ini tidak menyatakan apa pun tentang apakah glasir stabil atau aman untuk pangan.",
+    "sources": "Sumber:",
+    "skip": {
+      "lead": "Glazecalc tidak dapat membandingkan kimia glasir ini dengan pembakarannya: banyak leburannya berasal dari timbal, yang tidak tercakup angka terbitan yang dipakai pemeriksaan ini.",
+      "lithium": "Glazecalc tidak dapat membandingkan kimia glasir ini dengan pembakarannya: banyak leburannya berasal dari litium, yang tidak tercakup angka terbitan yang dipakai pemeriksaan ini.",
+      "alkali": "Glazecalc tidak dapat membandingkan kimia glasir ini dengan pembakarannya: banyak leburannya berasal dari natrium dan kalium, yang tidak tercakup angka terbitan yang dipakai pemeriksaan ini.",
+      "zinc": "Glazecalc tidak dapat membandingkan kimia glasir ini dengan pembakarannya: glasir ini memiliki banyak seng, seperti glasir kristalin, yang tidak tercakup angka terbitan yang dipakai pemeriksaan ini.",
+      "notGlaze": "Glazecalc tidak dapat membandingkan kimia glasir ini dengan pembakarannya: formulanya bukan formula glasir yang lazim (silika sangat sedikit atau sangat banyak, atau banyak oksida pewarna), jadi angka terbitan yang dipakai pemeriksaan ini tidak cocok untuknya.",
+      "process": "Glazecalc tidak dapat membandingkan kimia glasir ini dengan pembakarannya: glasir ini untuk pembakaran {process, select, raku {raku} salt {garam} soda {soda} wood {kayu} other {lubang}}, tempat tungku mengerjakan sebagian proses pembentukan glasir, yang tidak tercakup angka terbitan yang dipakai pemeriksaan ini.",
+      "ash": "Glazecalc tidak dapat membandingkan kimia glasir ini dengan pembakarannya: glasir ini mengandung abu, yang susunannya terlalu beragam untuk angka terbitan yang dipakai pemeriksaan ini.",
+      "noTemperature": "Glazecalc tidak dapat membandingkan kimia glasir ini dengan {scale, select, band {{band, select, low {suhu rendah} mid {suhu menengah} other {suhu tinggi}}} sk {SK {cone}} temperature {{cone} °C} other {kerucut {cone}}}: tidak ada suhu terukur untuk kerucut itu.",
+      "between": "Glazecalc tidak dapat membandingkan kimia glasir ini dengan {scale, select, band {{band, select, low {suhu rendah} mid {suhu menengah} other {suhu tinggi}}} sk {SK {cone}} temperature {{cone} °C} other {kerucut {cone}}}: angka terbitan yang dipakai pemeriksaan ini untuk suhu rendah serta untuk suhu menengah dan tinggi, bukan kerucut di antaranya (01 sampai 3).",
+      "belowChart": "Glazecalc tidak dapat membandingkan kimia glasir ini dengan {scale, select, band {{band, select, low {suhu rendah} mid {suhu menengah} other {suhu tinggi}}} sk {SK {cone}} temperature {{cone} °C} other {kerucut {cone}}}: aturan boron Katz untuk kerucut 06 sampai kerucut 10, dan pembakaran itu lebih dingin."
+    }
   },
   "stull": {
     "heading": "Bagan Stull",
@@ -904,7 +934,7 @@
     "foodSurface": "Untuk permukaan makanan (glasir lapisan dalam)",
     "liner": {
       "note": "Keamanan pangan bergantung pada pembakaran glasir ini sampai kerucut tempat glasir itu diuji: glasir yang kurang matang dapat mengalami pelindian.",
-      "range": "Kerucutnya diberikan sebagai rentang, jadi ujilah pada ujung bawah rentang, tempat glasir paling sedikit meleleh.",
+      "range": "Pembakaran glasir ini diberikan sebagai rentang, jadi ujilah pada ujung bawah rentang, tempat glasir paling sedikit meleleh.",
       "untested": "Belum ada kerucut yang ditandai sebagai sudah diuji.",
       "test": "Hanya uji pelindian terhadap benda Anda sendiri yang sudah dibakar yang menunjukkan apakah glasir ini aman untuk pangan."
     },
@@ -967,5 +997,23 @@
     "replaceAsk": "Yang dicentang sebagai sudah diuji sekarang: {now}. Ganti dengan kerucut yang disebut catatan, yaitu {logs}?",
     "replace": "Ganti",
     "keep": "Biarkan seperti semula"
+  },
+  "coneCards": {
+    "heading": "Hasil menurut kerucut",
+    "unplaced": "Belum ditempatkan pada kerucut",
+    "unplacedNote": "Catatan pembakaran ini belum ditempatkan pada kerucut: pilih tempat setiap catatan dibakar.",
+    "approx": "≈ {temperature}",
+    "cautions": "{count, plural, =0 {tidak ada peringatan batas} other {# peringatan batas}}",
+    "logs": "{count, plural, =0 {tidak ada catatan pembakaran} other {# catatan pembakaran}}",
+    "outside": "di luar pembakaran yang dinyatakan",
+    "outsideChoice": "{place} (di luar pembakaran yang dinyatakan)",
+    "summaryLabel": "Hasilnya pada {place}",
+    "summaryPlaceholder": "Permukaan, warna, aliran, retak halus...",
+    "noAtmosphere": "atmosfer tidak dicantumkan",
+    "placeLabel": "Tempat {title} dibakar",
+    "notPlaced": "Belum ditempatkan",
+    "add": "Tambah hasil untuk",
+    "addButton": "Tambah",
+    "saveFailed": "Tempat catatan pembakaran ini dibakar tidak dapat disimpan."
   }
 }

@@ -167,7 +167,7 @@ Rio Grande priporoča **ločen tokokrog** (takšen, ki ne napaja ničesar drugeg
 
 ### Bodite zraven, ko se žganje konča
 
-**Kiln-Sitter** je mehansko stikalo na številnih pečeh brez krmilnika: na koncu žganja se mali stožec{{en: cone}} upogne in sproži izklop stikala. Njegova navodila za uporabo navajajo, da »NI namenjen delovanju kot izklopna naprava, varna ob odpovedi{{en: fail-safe}}«. Rio Grande pravi, naj peči med žganjem nikoli ne puščate brez nadzora, »še posebej blizu pričakovanega časa izklopa«. Zato ostanite v bližini in med žganjem preverjajte peč, predvsem proti koncu; žgite samo, kadar bo doma budna odrasla oseba, ki bo to lahko storila, preverite, ali se je peč izklopila, in v prostoru s pečjo imejte gasilnik ABC. Kako delujejo stikala Kiln-Sitter, krmilniki in programi žganja, preberite v vodniku [Žganje v preprosti peči](/guides/firing).
+**Kiln-Sitter** je mehansko stikalo na številnih pečeh brez krmilnika: na koncu žganja se mali stožec{{en: cone}} upogne in sproži izklop stikala. Njegova navodila za uporabo navajajo, da »NI namenjen delovanju kot izklopna naprava, varna ob odpovedi{{en: fail-safe}}«. Rio Grande pravi, naj peči med žganjem nikoli ne puščate brez nadzora, »še posebej blizu pričakovanega časa izklopa«. Zato ostanite v bližini in med žganjem preverjajte peč, predvsem proti koncu; žgite samo, kadar bo doma odrasla oseba, ki bo budna med celotnim žganjem, preverite, ali se je peč izklopila, in v prostoru s pečjo imejte gasilnik ABC. Kako delujejo stikala Kiln-Sitter, krmilniki in programi žganja, preberite v vodniku [Žganje v preprosti peči](/guides/firing).
 
 ### Plini, hlapi in ogljikov monoksid
 

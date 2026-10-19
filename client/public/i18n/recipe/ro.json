@@ -272,7 +272,7 @@
     "numbers": {
       "heading": "Citiți analiza și limitele",
       "analysis": "<b>Analiza și limitele</b>, sub rețetă, arată moli, % molar și % în greutate după ardere pentru fiecare oxid, pierderea la calcinare și dilatarea termică calculată, o estimare pentru compararea glazurilor.",
-      "limits": "<b>Limitele</b> compară formula Seger cu un set de limite: limitele pentru glazuri stabile ale lui Hesselberth și Roy, dacă nu alegeți setul propriu al Glazecalc (alegerea se salvează cu setările dumneavoastră). Alegeți <b>Arderea</b> ca să o verificați cu cifrele potrivite; se salvează cu rețeta. Cifrele lui Hesselberth și Roy sunt pentru conul 6 și conul 10, așa că la temperatură joasă spune că nu se aplică. Sunt repere, nu o notă de trecere sau de respingere.",
+      "limits": "<b>Limitele</b> compară formula Seger cu un set de limite: limitele pentru glazuri stabile ale lui Hesselberth și Roy, dacă nu alegeți propriul set al Glazecalc (alegerea se salvează odată cu setările). Verifică treapta de ardere pe care o dă câmpul <b>Ardere</b> al rețetei: conul ei sau intervalul ei. Un interval care trece prin mai multe trepte, cum ar fi conul 6–10, arată alăturat verificările ambelor trepte. Ca să verificați o singură treaptă, alegeți-o în câmpul <b>Ardere</b> propriu al limitelor, care înlocuiește arderea rețetei și se salvează odată cu rețeta. Cifrele lui Hesselberth și Roy sunt pentru conul 6 și conul 10, așa că la temperatură joasă Limitele arată că nu se aplică. Sunt orientări, nu o reușită sau o respingere. În partea de sus, o linie compară borul, silicea și alumina glazurii cu arderea ei, după regula borului a lui Katz și cifrele lui Hesselberth și Roy, indiferent de setul de limite ales: dă o notă numai când acestea sunt de acord că glazura seamănă cu una pentru altă ardere, spune când nu poate judeca (plumb, litiu, raku și altele asemenea) și este un ghid, nu un test.",
       "stull": "<b>Diagrama Stull</b> așază silicea glazurii față de alumina ei, cu regiunile mat, semimat și lucios ale lui Stull și intervalele setului de limite. Este un ghid pentru suprafață, nu o prezicere.",
       "slurry": "<b>Greutatea specifică și apa</b> folosește formula lui Brongniart: cântăriți un volum măsurat de glazură, apoi vedeți glazura uscată din găleată, apa care o aduce la greutatea specifică dorită sau apa pentru un amestec nou. Densitățile urmează setarea dumneavoastră pentru greutatea specifică, grade Baumé sau greutatea pintei."
     },
@@ -472,7 +472,7 @@
     "expansionRises": "Dilatarea ei calculată crește de la {was} la {now}.",
     "expansionRisesProbably": "Dacă glazura veche abia era compatibilă cu argila dumneavoastră, aceasta probabil va fisura, uneori după câteva săptămâni.",
     "expansionRisesMay": "Dacă glazura veche abia era compatibilă cu argila dumneavoastră, aceasta poate fisura, uneori după câteva săptămâni.",
-    "expansionRisesFix": "Fisurarea slăbește piesele și nu este recomandată pe suprafețele în contact cu alimentele. Înlocuirea unei părți din sodiu și potasiu cu fondanți cu dilatare mai mică (bor, litiu, magneziu sau calciu) reduce dilatarea; uneori se sugerează adăugarea de silice, dar sursele nu sunt de acord.",
+    "expansionRisesFix": "Fisurarea slăbește piesele și nu este recomandată pe suprafețele în contact cu alimentele. Înlocuirea unei părți din sodă și potasă cu fondanți cu dilatare mai mică (bor, litiu, magneziu sau calciu) scade dilatarea termică; uneori se sugerează adăugarea de silice, dar sursele nu sunt de acord.",
     "expansionFalls": "Dilatarea ei calculată scade de la {was} la {now}. Cu o valoare puțin mai mică, glazura rezistă de obicei mai bine la fisurare.",
     "expansionFallsProbably": "Cu o valoare mult mai mică, glazura probabil se va exfolia, cu așchii tăioase desprinse de pe buze și muchii.",
     "expansionFallsCan": "Cu o valoare mult mai mică, glazura se poate exfolia, cu așchii tăioase desprinse de pe buze și muchii.",
@@ -598,6 +598,36 @@
     "firingFromBlock": "Din arderea rețetei ({bands})",
     "bothBands": "Arderea rețetei acoperă {bands}, așa că fiecare este verificată, una lângă alta: o glazură rareori se comportă la fel la ambele capete.",
     "fromFiring": "Cifrele sunt pentru arderea rețetei: {band}. Alegeți mai sus o ardere pentru a verifica alta."
+  },
+  "coneFit": {
+    "cooler": "Chimia acestei glazuri seamănă mai mult cu cea a unei glazuri {looksLike, select, low {de temperatură joasă} other {de temperatură medie}} decât cu cea a uneia arse la {scale, select, band {{band, select, low {temperatură joasă} mid {temperatură medie} other {temperatură înaltă}}} sk {SK {cone}} temperature {{cone} °C} other {conul {cone}}}.",
+    "coolerSoft": "Chimia acestei glazuri înclină spre o ardere la temperatură mai joasă decât cea la {scale, select, band {{band, select, low {temperatură joasă} mid {temperatură medie} other {temperatură înaltă}}} sk {SK {cone}} temperature {{cone} °C} other {conul {cone}}}, mai aproape de conul 6, deși chimia singură deosebește glazurile pentru conul 6 de cele pentru conul 10 doar aproximativ.",
+    "hotter": "Chimia acestei glazuri seamănă mai mult cu cea a unei glazuri {looksLike, select, high {de temperatură înaltă} other {de temperatură medie}} decât cu cea a uneia arse la {scale, select, band {{band, select, low {temperatură joasă} mid {temperatură medie} other {temperatură înaltă}}} sk {SK {cone}} temperature {{cone} °C} other {conul {cone}}}.",
+    "hotterSoft": "Chimia acestei glazuri înclină spre o ardere la temperatură mai înaltă decât cea la {scale, select, band {{band, select, low {temperatură joasă} mid {temperatură medie} other {temperatură înaltă}}} sk {SK {cone}} temperature {{cone} °C} other {conul {cone}}}, mai aproape de conul 10, deși chimia singură deosebește glazurile pentru conul 6 de cele pentru conul 10 doar aproximativ.",
+    "closer": "Din intervalul pentru care este indicată, chimia acestei glazuri pare mai apropiată de capătul dinspre {scale, select, band {{band, select, low {temperatură joasă} mid {temperatură medie} other {temperatură înaltă}}} sk {SK {cone}} temperature {{cone} °C} other {conul {cone}}}.",
+    "coolerSilica": "Are mai mult bor ({boron}) decât au nevoie de obicei glazurile arse la {scale, select, band {{band, select, low {temperatură joasă} mid {temperatură medie} other {temperatură înaltă}}} sk {SK {cone}} temperature {{cone} °C} other {conul {cone}}} și mai puțină silice ({silica}) decât au de obicei.",
+    "coolerAlumina": "Are mai mult bor ({boron}) decât au nevoie de obicei glazurile arse la {scale, select, band {{band, select, low {temperatură joasă} mid {temperatură medie} other {temperatură înaltă}}} sk {SK {cone}} temperature {{cone} °C} other {conul {cone}}} și puțină alumină ({alumina}).",
+    "coolerBoth": "Are mai mult bor ({boron}) decât au nevoie de obicei glazurile arse la {scale, select, band {{band, select, low {temperatură joasă} mid {temperatură medie} other {temperatură înaltă}}} sk {SK {cone}} temperature {{cone} °C} other {conul {cone}}} și mai puțină silice ({silica}) și alumină ({alumina}) decât au de obicei.",
+    "hotterSilica": "Are puțin bor ({boron}) pentru o ardere la {scale, select, band {{band, select, low {temperatură joasă} mid {temperatură medie} other {temperatură înaltă}}} sk {SK {cone}} temperature {{cone} °C} other {conul {cone}}} și mai multă silice ({silica}) decât au de obicei glazurile arse la acea temperatură.",
+    "coolerEffect": "La acea ardere se poate scurge sau topi prea mult: ardeți mai întâi o plăcuță de probă pe o farfurie pentru scurgeri.",
+    "hotterEffect": "La acea ardere poate ieși insuficient arsă: uscată, aspră sau nu complet etanșă. Ardeți o probă înainte de a o folosi pe piese și mai ales înainte de a o folosi acolo unde vor atinge mâncarea sau băutura.",
+    "hotterEffectSoft": "Unele glazuri se topesc la acea ardere și fără bor, așa că este doar o indicație: verificați pe o plăcuță de probă că se topește complet.",
+    "gerstley": "O parte din borul ei provine din boratul Gerstley, care variază de la un lot la altul, așa că acea valoare este mai puțin sigură.",
+    "guide": "Aceasta compară chimia cu cifre publicate: este un ghid, nu un test. Dacă glazura s-a ars bine la acest con, aveți încredere în plăcuțele dumneavoastră.",
+    "fits": "Borul, silicea și alumina ei nu indică o ardere diferită de cea la {scale, select, band {{band, select, low {temperatură joasă} mid {temperatură medie} other {temperatură înaltă}}} sk {SK {cone}} temperature {{cone} °C} other {conul {cone}}}. Este un ghid, nu un test: nu spune nimic despre dacă glazura este stabilă sau potrivită pentru contact alimentar.",
+    "sources": "Surse:",
+    "skip": {
+      "lead": "Glazecalc nu poate compara chimia acestei glazuri cu arderea ei: o mare parte din topitura ei provine din plumb, pe care cifrele publicate folosite de această verificare nu îl acoperă.",
+      "lithium": "Glazecalc nu poate compara chimia acestei glazuri cu arderea ei: o mare parte din topitura ei provine din litiu, pe care cifrele publicate folosite de această verificare nu îl acoperă.",
+      "alkali": "Glazecalc nu poate compara chimia acestei glazuri cu arderea ei: o mare parte din topitura ei provine din sodă și potasă, pe care cifrele publicate folosite de această verificare nu le acoperă.",
+      "zinc": "Glazecalc nu poate compara chimia acestei glazuri cu arderea ei: conține mult zinc, ca glazurile cristaline, pe care cifrele publicate folosite de această verificare nu îl acoperă.",
+      "notGlaze": "Glazecalc nu poate compara chimia acestei glazuri cu arderea ei: formula ei nu este cea a unei glazuri obișnuite (foarte puțină sau foarte multă silice ori mulți oxizi coloranți), așa că cifrele publicate folosite de această verificare nu i se potrivesc.",
+      "process": "Glazecalc nu poate compara chimia acestei glazuri cu arderea ei: este pentru o ardere {process, select, raku {raku} salt {cu sare} soda {cu sodă} wood {pe lemne} other {în groapă}}, în care cuptorul face o parte din glazurare, lucru pe care cifrele publicate folosite de această verificare nu îl acoperă.",
+      "ash": "Glazecalc nu poate compara chimia acestei glazuri cu arderea ei: conține cenușă, a cărei compoziție variază prea mult pentru cifrele publicate folosite de această verificare.",
+      "noTemperature": "Glazecalc nu poate compara chimia acestei glazuri cu arderea la {scale, select, band {{band, select, low {temperatură joasă} mid {temperatură medie} other {temperatură înaltă}}} sk {SK {cone}} temperature {{cone} °C} other {conul {cone}}}: nu există o temperatură măsurată pentru acel con.",
+      "between": "Glazecalc nu poate compara chimia acestei glazuri cu arderea la {scale, select, band {{band, select, low {temperatură joasă} mid {temperatură medie} other {temperatură înaltă}}} sk {SK {cone}} temperature {{cone} °C} other {conul {cone}}}: cifrele publicate folosite de această verificare sunt pentru temperatură joasă și pentru temperatură medie și înaltă, nu pentru conurile dintre ele (01–3).",
+      "belowChart": "Glazecalc nu poate compara chimia acestei glazuri cu arderea la {scale, select, band {{band, select, low {temperatură joasă} mid {temperatură medie} other {temperatură înaltă}}} sk {SK {cone}} temperature {{cone} °C} other {conul {cone}}}: regula borului a lui Katz este pentru conurile 06–10, iar acea ardere este mai rece."
+    }
   },
   "stull": {
     "heading": "Diagrama Stull",
@@ -904,7 +934,7 @@
     "foodSurface": "Pentru o suprafață în contact cu alimentele (glazură pentru interior)",
     "liner": {
       "note": "Siguranța pentru alimente depinde de arderea acestei glazuri la conul la care a fost testată: o glazură insuficient arsă poate ceda metale.",
-      "range": "Este dată pentru un interval, așa că testați-o la capătul de jos al intervalului, unde se topește cel mai puțin.",
+      "range": "Arderea acestei glazuri este dată ca interval, așa că testați-o la capătul de jos al intervalului, unde se topește cel mai puțin.",
       "untested": "Niciun con nu este încă marcat ca testat.",
       "test": "Doar un test privind migrarea metalelor, făcut pe propriile dumneavoastră piese arse, arată dacă glazura este sigură pentru alimente."
     },
@@ -967,5 +997,23 @@
     "replaceAsk": "La „Testată la” este bifat {now}. Înlocuiți cu conurile menționate de jurnale, {logs}?",
     "replace": "Înlocuiți",
     "keep": "Lăsați așa"
+  },
+  "coneCards": {
+    "heading": "Rezultate pe conuri",
+    "unplaced": "Neîncadrate la un con",
+    "unplacedNote": "Aceste jurnale de ardere nu sunt încă încadrate la un con: alegeți unde a avut loc fiecare ardere.",
+    "approx": "≈ {temperature}",
+    "cautions": "{count, plural, =0 {fără avertismente de limite} one {# avertisment de limite} few {# avertismente de limite} other {# de avertismente de limite}}",
+    "logs": "{count, plural, =0 {fără jurnale de ardere} one {# jurnal de ardere} few {# jurnale de ardere} other {# de jurnale de ardere}}",
+    "outside": "în afara arderii indicate",
+    "outsideChoice": "{place} (în afara arderii indicate)",
+    "summaryLabel": "Cum a ieșit la {place}",
+    "summaryPlaceholder": "Suprafață, culoare, scurgeri, fisurare...",
+    "noAtmosphere": "atmosferă nespecificată",
+    "placeLabel": "Unde s-a ars {title}",
+    "notPlaced": "Neîncadrat",
+    "add": "Adăugați un rezultat pentru",
+    "addButton": "Adăugați",
+    "saveFailed": "Nu s-a putut salva locul în care s-a făcut arderea din jurnal."
   }
 }

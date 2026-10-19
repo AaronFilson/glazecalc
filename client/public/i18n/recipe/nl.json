@@ -272,7 +272,7 @@
     "numbers": {
       "heading": "De analyse en de limieten lezen",
       "analysis": "<b>Analyse en limieten</b>, onder het recept, toont per oxide de mol, het mol% en het gewicht% na het stoken, het gloeiverlies en de berekende thermische uitzetting, een schatting om glazuren te vergelijken.",
-      "limits": "<b>Limieten</b> zet de Segerformule naast een limietenset: de limieten voor stabiele glazuren van Hesselberth & Roy, tenzij u de eigen limieten van Glazecalc kiest (de keuze wordt bij uw instellingen bewaard). Kies de <b>Stook</b> om te controleren aan de hand van de juiste cijfers; die wordt bij het recept bewaard. De cijfers van Hesselberth & Roy gelden voor kegel 6 en kegel 10, dus bij lage temperatuur staat er dat ze niet van toepassing zijn. Het zijn richtlijnen, geen test die een glazuur haalt of niet haalt.",
+      "limits": "De <b>Limieten</b> zetten de Segerformule af tegen een limietenset: de limieten voor stabiele glazuren van Hesselberth en Roy, tenzij u de eigen set van Glazecalc kiest (de keuze wordt bij uw instellingen bewaard). Ze controleren de stookband die de <b>Stook</b> van het recept aangeeft: de kegel of het bereik. Een bereik dat over meerdere banden loopt, zoals kegel 6 tot 10, toont de controles van beide banden naast elkaar. Om maar één band te controleren, kiest u die in het eigen vak <b>Stook</b> van de limieten, dat de stook van het recept overschrijft en bij het recept wordt bewaard. De cijfers van Hesselberth en Roy gelden voor kegel 6 en kegel 10, dus bij lage temperatuur zeggen de limieten dat ze niet van toepassing zijn. Het zijn richtlijnen, geen geslaagd of gezakt. Bovenaan vergelijkt één regel het boor, het siliciumoxide en het aluminiumoxide van het glazuur met de stook, volgens de boorregel van Katz en de cijfers van Hesselberth en Roy, welke limietenset u ook kiest: ze geeft alleen een opmerking als die het erover eens zijn dat het glazuur op een andere stook lijkt, zegt wanneer ze niet kan oordelen (lood, lithium, raku en dergelijke), en is een richtlijn, geen test.",
       "stull": "Het <b>Stull-diagram</b> zet het siliciumoxide van het glazuur uit tegen het aluminiumoxide, met de matte, halfmatte en glanzende gebieden van Stull en de bereiken van de limietenset. Het is een richtlijn voor het oppervlak, geen voorspelling.",
       "slurry": "<b>Soortelijk gewicht en water</b> gebruikt de formule van Brongniart: weeg een afgemeten volume van het glazuur, en zie dan het droge glazuur in de emmer, het water dat het op het gewenste soortelijk gewicht brengt, of het water voor een nieuw mengsel. De dichtheden volgen uw instelling voor soortelijk gewicht, graden Baumé of pintgewicht."
     },
@@ -472,7 +472,7 @@
     "expansionRises": "De berekende uitzetting stijgt van {was} naar {now}.",
     "expansionRisesProbably": "Als het oude glazuur net op uw klei paste, krijgt dit glazuur waarschijnlijk haarscheuren, soms pas weken later.",
     "expansionRisesMay": "Als het oude glazuur net op uw klei paste, kan dit glazuur haarscheuren krijgen, soms pas weken later.",
-    "expansionRisesFix": "Haarscheuren verzwakken het werk en worden afgeraden op oppervlakken die met voedsel in aanraking komen. Als u een deel van het natrium en kalium vervangt door smeltmiddelen met een lagere uitzetting (boor, lithium, magnesium of calcium), gaat de uitzetting omlaag; soms wordt het toevoegen van siliciumoxide voorgesteld, maar de bronnen zijn het daar niet over eens.",
+    "expansionRisesFix": "Haarscheuren verzwakken potten en worden afgeraden op oppervlakken die met voedsel in aanraking komen. Een deel van de soda en de potas vervangen door fluxen met een lagere uitzetting (boor, lithium, magnesium of calcium) verlaagt de thermische uitzetting; soms wordt voorgesteld silica toe te voegen, maar de bronnen zijn het daar niet over eens.",
     "expansionFalls": "De berekende uitzetting daalt van {was} naar {now}. Iets lager is meestal beter bestand tegen haarscheuren.",
     "expansionFallsProbably": "Bij een veel lagere uitzetting springt het glazuur waarschijnlijk af, met scherpe schilfers van randen en kanten.",
     "expansionFallsCan": "Bij een veel lagere uitzetting kan het glazuur afspringen, met scherpe schilfers van randen en kanten.",
@@ -598,6 +598,36 @@
     "firingFromBlock": "Uit de stook van het recept ({bands})",
     "bothBands": "De stook van het recept beslaat {bands}, dus elk wordt gecontroleerd, naast elkaar: een glazuur gedraagt zich zelden aan beide uiteinden hetzelfde.",
     "fromFiring": "De cijfers gelden voor de stook van het recept: {band}. Kies hierboven een stook om een andere te controleren."
+  },
+  "coneFit": {
+    "cooler": "De chemie van dit glazuur lijkt meer op die van een glazuur voor {looksLike, select, low {lage temperatuur} other {middentemperatuur}} dan op die van een glazuur voor {scale, select, band {{band, select, low {lage temperatuur} mid {middentemperatuur} other {hoge temperatuur}}} sk {SK {cone}} temperature {{cone} °C} other {kegel {cone}}}.",
+    "coolerSoft": "De chemie van dit glazuur neigt naar een koelere stook dan bij {scale, select, band {{band, select, low {lage temperatuur} mid {middentemperatuur} other {hoge temperatuur}}} sk {SK {cone}} temperature {{cone} °C} other {kegel {cone}}}, dichter bij kegel 6, al kan de chemie alleen glazuren voor kegel 6 en kegel 10 maar ruwweg onderscheiden.",
+    "hotter": "De chemie van dit glazuur lijkt meer op die van een glazuur voor {looksLike, select, high {hoge temperatuur} other {middentemperatuur}} dan op die van een glazuur voor {scale, select, band {{band, select, low {lage temperatuur} mid {middentemperatuur} other {hoge temperatuur}}} sk {SK {cone}} temperature {{cone} °C} other {kegel {cone}}}.",
+    "hotterSoft": "De chemie van dit glazuur neigt naar een hetere stook dan bij {scale, select, band {{band, select, low {lage temperatuur} mid {middentemperatuur} other {hoge temperatuur}}} sk {SK {cone}} temperature {{cone} °C} other {kegel {cone}}}, dichter bij kegel 10, al kan de chemie alleen glazuren voor kegel 6 en kegel 10 maar ruwweg onderscheiden.",
+    "closer": "Van het bereik waarvoor het is opgegeven, lijkt de chemie van dit glazuur dichter bij de kant van {scale, select, band {{band, select, low {lage temperatuur} mid {middentemperatuur} other {hoge temperatuur}}} sk {SK {cone}} temperature {{cone} °C} other {kegel {cone}}} te liggen.",
+    "coolerSilica": "Het heeft meer boor ({boron}) dan glazuren bij {scale, select, band {{band, select, low {lage temperatuur} mid {middentemperatuur} other {hoge temperatuur}}} sk {SK {cone}} temperature {{cone} °C} other {kegel {cone}}} gewoonlijk nodig hebben, en minder siliciumoxide ({silica}) dan ze gewoonlijk hebben.",
+    "coolerAlumina": "Het heeft meer boor ({boron}) dan glazuren bij {scale, select, band {{band, select, low {lage temperatuur} mid {middentemperatuur} other {hoge temperatuur}}} sk {SK {cone}} temperature {{cone} °C} other {kegel {cone}}} gewoonlijk nodig hebben, en weinig aluminiumoxide ({alumina}).",
+    "coolerBoth": "Het heeft meer boor ({boron}) dan glazuren bij {scale, select, band {{band, select, low {lage temperatuur} mid {middentemperatuur} other {hoge temperatuur}}} sk {SK {cone}} temperature {{cone} °C} other {kegel {cone}}} gewoonlijk nodig hebben, en minder siliciumoxide ({silica}) en aluminiumoxide ({alumina}) dan ze gewoonlijk hebben.",
+    "hotterSilica": "Het heeft weinig boor ({boron}) voor {scale, select, band {{band, select, low {lage temperatuur} mid {middentemperatuur} other {hoge temperatuur}}} sk {SK {cone}} temperature {{cone} °C} other {kegel {cone}}}, en meer siliciumoxide ({silica}) dan glazuren bij die stook gewoonlijk hebben.",
+    "coolerEffect": "Bij die stook kan het gaan lopen of te veel smelten: stook eerst een proefplaatje op een opvangplaatje.",
+    "hotterEffect": "Bij die stook komt het misschien te laag gestookt uit de oven: droog, ruw of niet helemaal gesloten. Stook eerst een proef voordat u het op potten gebruikt, en zeker voordat u het gebruikt waar voedsel of drank mee in aanraking komt.",
+    "hotterEffectSoft": "Sommige glazuren smelten bij die stook zonder boor, dus dit is slechts een aanwijzing: controleer op een proefplaatje dat het helemaal smelt.",
+    "gerstley": "Een deel van het boor komt uit Gerstley-boraat, dat van partij tot partij verschilt, dus dat cijfer is minder zeker.",
+    "guide": "Dit vergelijkt de chemie met gepubliceerde cijfers: het is een richtlijn, geen test. Als het glazuur bij deze kegel goed bij u is uitgekomen, vertrouw dan op uw proefplaatjes.",
+    "fits": "Het boor, het siliciumoxide en het aluminiumoxide wijzen niet op een andere stook dan {scale, select, band {{band, select, low {lage temperatuur} mid {middentemperatuur} other {hoge temperatuur}}} sk {SK {cone}} temperature {{cone} °C} other {kegel {cone}}}. Dit is een richtlijn, geen test: het zegt niets over of het glazuur stabiel of voedselveilig is.",
+    "sources": "Bronnen:",
+    "skip": {
+      "lead": "Glazecalc kan de chemie van dit glazuur niet met de stook vergelijken: een groot deel van de smelt komt van lood, dat de gepubliceerde cijfers die deze controle gebruikt niet dekken.",
+      "lithium": "Glazecalc kan de chemie van dit glazuur niet met de stook vergelijken: een groot deel van de smelt komt van lithium, dat de gepubliceerde cijfers die deze controle gebruikt niet dekken.",
+      "alkali": "Glazecalc kan de chemie van dit glazuur niet met de stook vergelijken: een groot deel van de smelt komt van soda en potas, die de gepubliceerde cijfers die deze controle gebruikt niet dekken.",
+      "zinc": "Glazecalc kan de chemie van dit glazuur niet met de stook vergelijken: het bevat veel zink, zoals kristalglazuren, en dat dekken de gepubliceerde cijfers die deze controle gebruikt niet.",
+      "notGlaze": "Glazecalc kan de chemie van dit glazuur niet met de stook vergelijken: de formule is niet die van een gewoon glazuur (heel weinig of heel veel siliciumoxide, of veel kleurende oxiden), dus de gepubliceerde cijfers die deze controle gebruikt passen er niet bij.",
+      "process": "Glazecalc kan de chemie van dit glazuur niet met de stook vergelijken: het is voor een {process, select, raku {rakustook} salt {zoutstook} soda {sodastook} wood {houtstook} other {kuilstook}}, waarbij de oven een deel van het glazuren doet, en dat dekken de gepubliceerde cijfers die deze controle gebruikt niet.",
+      "ash": "Glazecalc kan de chemie van dit glazuur niet met de stook vergelijken: er zit as in, waarvan de samenstelling te veel verschilt voor de gepubliceerde cijfers die deze controle gebruikt.",
+      "noTemperature": "Glazecalc kan de chemie van dit glazuur niet vergelijken met {scale, select, band {{band, select, low {lage temperatuur} mid {middentemperatuur} other {hoge temperatuur}}} sk {SK {cone}} temperature {{cone} °C} other {kegel {cone}}}: voor die kegel is er geen gemeten temperatuur.",
+      "between": "Glazecalc kan de chemie van dit glazuur niet vergelijken met {scale, select, band {{band, select, low {lage temperatuur} mid {middentemperatuur} other {hoge temperatuur}}} sk {SK {cone}} temperature {{cone} °C} other {kegel {cone}}}: de gepubliceerde cijfers die deze controle gebruikt gelden voor lage temperatuur en voor midden- en hoge temperatuur, niet voor de kegels ertussen (01 tot 3).",
+      "belowChart": "Glazecalc kan de chemie van dit glazuur niet vergelijken met {scale, select, band {{band, select, low {lage temperatuur} mid {middentemperatuur} other {hoge temperatuur}}} sk {SK {cone}} temperature {{cone} °C} other {kegel {cone}}}: de boorregel van Katz geldt voor kegel 06 tot kegel 10, en die stook is koeler."
+    }
   },
   "stull": {
     "heading": "Stull-diagram",
@@ -904,7 +934,7 @@
     "foodSurface": "Voor een oppervlak waar voedsel mee in aanraking komt (een binnenglazuur)",
     "liner": {
       "note": "Voedselveiligheid hangt ervan af dat dit glazuur wordt gestookt tot de kegel waarbij het is getest: een te laag gestookt glazuur kan metalen afgeven.",
-      "range": "Het is opgegeven als bereik, dus test het aan het onderste uiteinde van het bereik, waar het het minst smelt.",
+      "range": "De stook van dit glazuur is als bereik opgegeven, dus test het aan de onderkant van het bereik, waar het het minst smelt.",
       "untested": "Er is nog geen kegel als getest gemarkeerd.",
       "test": "Alleen een test op de afgifte van metalen door uw eigen gestookte potten laat zien of het veilig is voor voedsel."
     },
@@ -967,5 +997,23 @@
     "replaceAsk": "Bij Getest bij is {now} aangevinkt. Vervangen door de kegels die de verslagen noemen, {logs}?",
     "replace": "Vervangen",
     "keep": "Laten zoals het is"
+  },
+  "coneCards": {
+    "heading": "Resultaten per kegel",
+    "unplaced": "Niet bij een kegel geplaatst",
+    "unplacedNote": "Deze stookverslagen zijn nog niet bij een kegel geplaatst: kies waar elk is gestookt.",
+    "approx": "≈ {temperature}",
+    "cautions": "{count, plural, =0 {geen limietwaarschuwingen} one {# limietwaarschuwing} other {# limietwaarschuwingen}}",
+    "logs": "{count, plural, =0 {geen stookverslagen} one {# stookverslag} other {# stookverslagen}}",
+    "outside": "buiten de opgegeven stook",
+    "outsideChoice": "{place} (buiten de opgegeven stook)",
+    "summaryLabel": "Hoe het uitkwam bij {place}",
+    "summaryPlaceholder": "Oppervlak, kleur, lopen, haarscheuren...",
+    "noAtmosphere": "atmosfeer niet opgegeven",
+    "placeLabel": "Waar {title} is gestookt",
+    "notPlaced": "Niet geplaatst",
+    "add": "Een resultaat toevoegen voor",
+    "addButton": "Toevoegen",
+    "saveFailed": "Kon niet opslaan waar het stookverslag is gestookt."
   }
 }

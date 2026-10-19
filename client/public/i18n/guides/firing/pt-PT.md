@@ -199,11 +199,11 @@ Muitos kiln sitters, incluindo os modelos LT da Dawson, têm um **temporizador d
 Table: Para quanto tempo regular o temporizador de segurança
 Label: Regulação do temporizador
 
-| Fonte     | Regulação                                                                                                                                                 |
-| --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Dawson    | ½ hora a mais do que o tempo de cozedura previsto enquanto não conhecer o forno, mais tarde apenas ¼ de hora a mais; nunca o regule para além de 20 horas |
-| L&L       | Muito alto da primeira vez, anotando quanto tempo demora a cozedura; depois, cerca de 1 hora a mais                                                       |
-| Bracker's | 30 minutos a 1 hora a mais do que o tempo de cozedura                                                                                                     |
+| Fonte     | Regulação                                                                                                                                          |
+| --------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Dawson    | ½ hora a mais do que o tempo de cozedura previsto enquanto não conhecer o forno, mais tarde ¼ de hora a mais; nunca o regule para além de 20 horas |
+| L&L       | Muito alto da primeira vez, anotando quanto tempo demora a cozedura; depois, cerca de 1 hora a mais                                                |
+| Bracker's | 30 minutos a 1 hora a mais do que o tempo de cozedura                                                                                              |
 
 > [!NOTE]
 > O nosso ponto de partida: generoso da primeira vez (dentro das 20 horas do mostrador), depois ½ a 1 hora a mais do que o tempo que registou. O temporizador também indica quanto tempo durou uma cozedura: regulado para 7 e parado em 1 quer dizer 6 horas.
@@ -352,11 +352,11 @@ Label: Tabela SK
 | SK 19   |      {{2768 °F; 1520 °C}} |
 | SK 20   |      {{2786 °F; 1530 °C}} |
 
-Todos os valores são nominais (JIS): a temperatura que a norma dá para o cone, tal como impressa na tabela da Yuko Trading. A tabela não indica uma velocidade de aquecimento. A norma dá temperaturas de referência. A uma velocidade habitual para um ceramista, de cerca de 100 °C/h, o instituto municipal de Quioto mediu os seus próprios cones de Quioto a dobrar 40–70 °C abaixo do valor JIS para o mesmo número; não encontrámos medições deste tipo para os cones SK segundo a JIS. Coloque um cone testemunho e compare.
+Todos os valores são nominais (JIS): a temperatura que a norma dá para o cone, tal como impressa na tabela da Yuko Trading. A tabela não indica uma velocidade de aquecimento. A norma dá temperaturas de referência. A uma velocidade habitual para um ceramista, de cerca de 100 °C/h, o instituto municipal de Quioto mediu os seus próprios cones de Quioto a dobrar 47–79 °C abaixo do valor JIS para o mesmo número; não encontrámos medições deste tipo para os cones SK segundo a JIS. Coloque um cone testemunho e compare.
 
 ### Cones de Quioto
 
-Os cones de Quioto (京都ゼーゲル), feitos pelo instituto municipal de Quioto, já não são fabricados: segundo notícias da imprensa, o instituto terminou a produção no fim do ano fiscal de 2009. Têm os mesmos números que os cones SK segundo a JIS, mas dobram mais frios: um cone de Quioto dobra, na maioria dos casos, a cerca da temperatura do cone SK segundo a JIS dois números abaixo. Uma receita de Quioto que diga «SK 8» pode referir-se a um cone de Quioto. O instituto publicou conselhos para os ceramistas que passam dos cones de Quioto para os cones Orton, e substitui o seu próprio SK 12 de Quioto pelo cone Orton 10; é uma escolha do instituto, feita a partir das suas próprias medições a 100 °C/h, e não se aplica a nenhum outro cone.
+Os cones de Quioto (京都ゼーゲル), feitos pelo instituto municipal de Quioto, já não são fabricados: segundo notícias da imprensa, o instituto terminou a produção no fim do ano fiscal de 2009. Têm os mesmos números que os cones SK segundo a JIS, mas dobram mais frios: um cone de Quioto dobra a cerca da temperatura do cone SK segundo a JIS dois ou três números abaixo. Uma receita de Quioto que diga «SK 8» pode referir-se a um cone de Quioto. O instituto publicou conselhos para os ceramistas que passam dos cones de Quioto para os cones Orton, e substitui o seu próprio SK 12 de Quioto pelo cone Orton 10; é uma escolha do instituto, feita a partir das suas próprias medições a 100 °C/h, e não se aplica a nenhum outro cone.
 
 ### Cones Orton vendidos no Japão
 

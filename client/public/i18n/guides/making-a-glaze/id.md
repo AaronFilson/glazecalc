@@ -211,7 +211,7 @@ Label: Air untuk berat jenis target
 
 **Gom CMC** (karboksimetil selulosa) membuat cairan lebih lengket dan lebih lambat kering, dan meninggalkan lapisan lebih keras yang melekat pada benda. Gom ini paling penting untuk glasir kuas dan glasir tinggi frit. Contoh Digitalfire mencampur 3,75 g ke dalam 1000 g cairan, dan harus dimasukkan dengan blender. Glasir dengan CMC tidak akan menggel dengan garam Epsom, dan karena mikroba memakan gom, glasir dapat berubah di ember dan mulai berbau.
 
-**Bentonit**, tanah liat sangat halus, membantu menahan partikel lain tetap tersuspensi. Glasir celup biasanya mengandalkan 15 sampai 25% tanah liat mentah untuk ini. Untuk resep yang kekurangan tanah liat, sekitar 1 sampai 3% bentonit membantu; Digitalfire mengatakan glasir dengan lebih dari 15% tanah liat seharusnya tidak membutuhkan lebih dari 1%.
+**Bentonit**, tanah liat sangat halus, membantu menahan partikel lain tetap tersuspensi. Glasir celup biasanya mengandalkan 15 sampai 25% tanah liat mentah untuk ini. Untuk resep yang kekurangan tanah liat, sekitar 1 sampai 3% bentonit membantu; Digitalfire mengatakan glasir dengan lebih dari 15% tanah liat seharusnya tidak membutuhkan bentonit lebih dari 1% dari berat glasir kering.
 
 ## Ubin uji dan campuran garis {#testing}
 

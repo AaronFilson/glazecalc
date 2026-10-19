@@ -1187,9 +1187,11 @@ describe('glaze chemistry', () => {
 
     it("should set boron by Katz's rule for the firing", () => {
       const at = (cone: string) => chemistry.boronFor(chemistry.CONES.find((c) => c.cone === cone)!.celsius);
-      expect(at('06')).to.be.closeTo(0.6, 0.01);
-      expect(at('04')).to.be.closeTo(0.48, 0.01);
-      expect(at('03')).to.be.closeTo(0.4, 0.01);
+      expect(at('06')).to.be.closeTo(0.61, 0.005);
+      expect(at('04')).to.be.closeTo(0.49, 0.005);
+      expect(at('03')).to.be.closeTo(0.41, 0.005);
+      // Katz's baseline is cone 10, 1305 °C, where no boron is needed.
+      expect(chemistry.boronFor(1305)).to.equal(0);
       expect(chemistry.boronFor(1400)).to.equal(0);
     });
 
@@ -1210,7 +1212,8 @@ describe('glaze chemistry', () => {
       expect(now.SrO ?? 0).to.equal(0);
       expect(now.SiO2).to.be.closeTo(was.SiO2, 1e-9);
       expect(now.Al2O3).to.be.closeTo(was.Al2O3, 1e-9);
-      expect(now.B2O3).to.be.closeTo(0.48, 1e-9);
+      // Katz's need at cone 04 (1060 °C), from cone 10 at 1305 °C.
+      expect(now.B2O3).to.be.closeTo(0.49, 1e-9);
     });
 
     it('should keep the fluxes a glaze has, raise alumina to 0.2, and leave out zinc and magnesia for chrome', () => {

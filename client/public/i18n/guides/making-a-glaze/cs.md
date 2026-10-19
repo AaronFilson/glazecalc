@@ -211,7 +211,7 @@ Label: Voda pro cílovou měrnou hmotnost
 
 **CMC** (karboxymethylcelulóza) dělá glazurovou suspenzi lepivější a pomaleji schnoucí a zanechává tvrdší vrstvu, která na výrobku drží. Nejdůležitější je u glazur na nanášení štětcem a u glazur s vysokým podílem frity{{en: frit}}. V příkladu od Digitalfire se 3,75 g zamíchá do 1000 g suspenze a musí se přidat mixérem. Glazura s CMC se hořkou solí nezgelovatí a protože se tímto pojivem živí mikroby, může se v kbelíku měnit a začít zapáchat.
 
-**Bentonit**, velmi jemný jíl, pomáhá udržet ostatní částice ve vznosu. Glazury na namáčení k tomu obvykle spoléhají na 15–25 % syrové hlíny. U receptu s nedostatkem hlíny pomůže asi 1–3 % bentonitu; podle Digitalfire by glazura s více než 15 % hlíny neměla potřebovat víc než 1 %.
+**Bentonit**, velmi jemný jíl, pomáhá udržet ostatní částice ve vznosu. Glazury na namáčení k tomu obvykle spoléhají na 15–25 % syrové hlíny. U receptu s nedostatkem hlíny pomůže asi 1–3 % bentonitu; podle Digitalfire by glazura s více než 15 % hlíny neměla potřebovat bentonit v množství větším než 1 % hmotnosti suché glazury.
 
 ## Zkušební střípky a zkušební řady {#testing}
 

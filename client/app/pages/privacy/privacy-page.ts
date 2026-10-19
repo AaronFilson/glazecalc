@@ -28,7 +28,7 @@ export const STORED: ReadonlyArray<{ names: string[]; kind: string; key: string 
     kind: marker('site.privacy.storageCookie'),
     key: 'cookie'
   },
-  // server/lib/session.ts (oauthName): only while signing in with Google or GitHub.
+  // server/lib/session.ts (oauthName): only while signing in with Google, GitHub or Microsoft.
   {
     names: ['__Host-glazecalc_oauth', 'glazecalc_oauth'],
     kind: marker('site.privacy.storageCookie'),

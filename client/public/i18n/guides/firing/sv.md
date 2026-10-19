@@ -199,11 +199,11 @@ Många Kiln-Sitter-brytare, bland dem Dawsons LT-modeller, har en **säkerhetsti
 Table: Hur länge säkerhetstimern ska ställas in
 Label: Inställning av säkerhetstimer
 
-| Källa     | Inställning                                                                                                                              |
-| --------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| Dawson    | ½ timme längre än den väntade bränntiden tills man känner ugnen, senare så lite som ¼ timme längre; ställ den aldrig på mer än 20 timmar |
-| L&L       | Mycket högt första gången, och notera hur lång tid bränningen tar; därefter cirka 1 timme längre                                         |
-| Bracker's | 30 minuter till 1 timme längre än bränntiden                                                                                             |
+| Källa     | Inställning                                                                                                                  |
+| --------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| Dawson    | ½ timme längre än den väntade bränntiden tills man känner ugnen, senare ¼ timme längre; ställ den aldrig på mer än 20 timmar |
+| L&L       | Mycket högt första gången, och notera hur lång tid bränningen tar; därefter cirka 1 timme längre                             |
+| Bracker's | 30 minuter till 1 timme längre än bränntiden                                                                                 |
 
 > [!NOTE]
 > Vår utgångspunkt: generöst första gången (inom skalans 20 timmar), sedan ½ till 1 timme längre än den tid som antecknades. Timern visar också hur länge en bränning tog: inställd på 7 och slut på 1 betyder 6 timmar.
@@ -352,11 +352,11 @@ Label: SK-tabell
 | SK 19   |      {{2768 °F; 1520 °C}} |
 | SK 20   |      {{2786 °F; 1530 °C}} |
 
-Alla värden är nominella (JIS): den temperatur som standarden anger för käglan, så som den är tryckt i Yuko Tradings tabell. Tabellen anger ingen uppvärmningshastighet. Standarden ger referenstemperaturer. Vid en hastighet som keramiker brukar använda, omkring 100 °C/h, mätte Kyotos kommunala institut att dess egna Kyotokäglor böjde sig vid en temperatur 40–70 °C lägre än JIS-värdet för samma nummer; vi har inte hittat några sådana mätningar för SK-käglor enligt JIS. Sätt en kontrollkägla och jämför.
+Alla värden är nominella (JIS): den temperatur som standarden anger för käglan, så som den är tryckt i Yuko Tradings tabell. Tabellen anger ingen uppvärmningshastighet. Standarden ger referenstemperaturer. Vid en hastighet som keramiker brukar använda, omkring 100 °C/h, mätte Kyotos kommunala institut att dess egna Kyotokäglor böjde sig vid en temperatur 47–79 °C lägre än JIS-värdet för samma nummer; vi har inte hittat några sådana mätningar för SK-käglor enligt JIS. Sätt en kontrollkägla och jämför.
 
 ### Kyotokäglor
 
-Kyotokäglor (京都ゼーゲル), som Kyotos kommunala institut gjorde, tillverkas inte längre: enligt nyhetsrapporter slutade institutet tillverka dem vid slutet av räkenskapsåret 2009. De har samma nummer som SK-käglor enligt JIS men böjer sig kallare: en Kyotokägla böjer sig oftast vid ungefär samma temperatur som den SK-kägla enligt JIS som ligger två nummer lägre. Ett recept från Kyoto som säger ”SK 8” kan avse en Kyotokägla. Institutet har publicerat råd till keramiker som går över från Kyotokäglor till Ortonkäglor, och ersätter sin egen Kyotokägla SK 12 med Ortonkägla 10; det är institutets val utifrån dess egna mätningar vid 100 °C/h och gäller ingen annan kägla.
+Kyotokäglor (京都ゼーゲル), som Kyotos kommunala institut gjorde, tillverkas inte längre: enligt nyhetsrapporter slutade institutet tillverka dem vid slutet av räkenskapsåret 2009. De har samma nummer som SK-käglor enligt JIS men böjer sig kallare: en Kyotokägla böjer sig vid ungefär samma temperatur som den SK-kägla enligt JIS som ligger två eller tre nummer lägre. Ett recept från Kyoto som säger ”SK 8” kan avse en Kyotokägla. Institutet har publicerat råd till keramiker som går över från Kyotokäglor till Ortonkäglor, och ersätter sin egen Kyotokägla SK 12 med Ortonkägla 10; det är institutets val utifrån dess egna mätningar vid 100 °C/h och gäller ingen annan kägla.
 
 ### Ortonkäglor som säljs i Japan
 

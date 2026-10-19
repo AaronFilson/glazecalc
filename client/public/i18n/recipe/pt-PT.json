@@ -272,7 +272,7 @@
     "numbers": {
       "heading": "Ler a análise e os limites",
       "analysis": "<b>Análise e limites</b>, por baixo da receita, mostra as moles, a % molar e a % em peso após cozedura de cada óxido, a perda ao fogo e a dilatação térmica calculada, uma estimativa para comparar vidrados.",
-      "limits": "<b>Limites</b> compara a fórmula de Seger com um conjunto de limites: os limites de vidrados estáveis de Hesselberth e Roy, a menos que escolha os do próprio Glazecalc (a escolha fica guardada nas suas definições). Escolha a <b>Cozedura</b> para a verificar com os valores certos; fica guardada com a receita. Os valores de Hesselberth e Roy são para cone 6 e cone 10, por isso a baixa temperatura diz que não se aplicam. São orientações, não uma aprovação ou uma reprovação.",
+      "limits": "<b>Limites</b> compara a fórmula de Seger com um conjunto de limites: os limites de vidrados estáveis de Hesselberth e Roy, a menos que escolha os do próprio Glazecalc (a escolha fica guardada nas suas definições). Verifica a faixa de cozedura que a <b>Cozedura</b> da receita indica: o seu cone, ou o seu intervalo. Um intervalo que atravessa várias faixas, como de cone 6 a cone 10, mostra lado a lado as verificações das duas faixas. Para verificar apenas uma faixa, escolha-a na caixa <b>Cozedura</b> própria dos limites, que se sobrepõe à cozedura da receita e fica guardada com a receita. Os valores de Hesselberth e Roy são para cone 6 e cone 10, por isso a baixa temperatura diz que não se aplicam. São orientações, não uma aprovação ou uma reprovação. No topo, uma linha compara o boro, a sílica e a alumina do vidrado com a sua cozedura, segundo a regra do boro de Katz e os valores de Hesselberth e Roy, qualquer que seja o conjunto de limites que escolha: só dá uma nota quando ambos concordam que o vidrado se parece com outra cozedura, diz quando não consegue avaliar (chumbo, lítio, raku e afins), e é uma orientação, não um teste.",
       "stull": "O <b>gráfico de Stull</b> coloca a sílica do vidrado em relação à sua alumina, com as regiões mate, semimate e brilhante de Stull e os intervalos do conjunto de limites. É um guia para a superfície, não uma previsão.",
       "slurry": "<b>Densidade e água</b> usa a fórmula de Brongniart: pese um volume medido do vidrado e veja depois o vidrado seco que está no balde, a água que o leva à densidade que quer ou a água para um novo lote. As densidades seguem a sua definição de densidade relativa, graus Baumé ou peso por pinta."
     },
@@ -472,7 +472,7 @@
     "expansionRises": "A dilatação calculada sobe de {was} para {now}.",
     "expansionRisesProbably": "Se o vidrado antigo mal se ajustava à sua pasta, este provavelmente vai fendilhar, às vezes semanas depois.",
     "expansionRisesMay": "Se o vidrado antigo mal se ajustava à sua pasta, este pode fendilhar, às vezes semanas depois.",
-    "expansionRisesFix": "O fendilhamento enfraquece as peças e não é aconselhado em superfícies em contacto com alimentos. Trocar parte do sódio e do potássio por fundentes de menor dilatação (boro, lítio, magnésio ou cálcio) faz descer a dilatação; por vezes sugere-se acrescentar sílica, mas as fontes não concordam.",
+    "expansionRisesFix": "O fendilhamento enfraquece as peças e não é aconselhado em superfícies em contacto com alimentos. Trocar parte do sódio e do potássio por fundentes de menor dilatação (boro, lítio, magnésio ou cálcio) reduz a dilatação térmica; por vezes sugere-se acrescentar sílica, mas as fontes não concordam.",
     "expansionFalls": "A dilatação calculada desce de {was} para {now}. Um pouco mais baixa costuma resistir melhor ao fendilhamento.",
     "expansionFallsProbably": "Muito mais baixa, provavelmente vai descascar, com lascas cortantes a soltar-se dos bordos e das arestas.",
     "expansionFallsCan": "Muito mais baixa, pode descascar, com lascas cortantes a soltar-se dos bordos e das arestas.",
@@ -598,6 +598,36 @@
     "firingFromBlock": "Da cozedura da receita ({bands})",
     "bothBands": "A cozedura da receita abrange {bands}, por isso cada uma é verificada, lado a lado: um vidrado raramente se comporta da mesma forma nos dois extremos.",
     "fromFiring": "Os valores são para a cozedura da receita: {band}. Escolha acima uma cozedura para verificar outra."
+  },
+  "coneFit": {
+    "cooler": "A química deste vidrado parece-se mais com a de um vidrado para {looksLike, select, low {a baixa temperatura} other {a média temperatura}} do que com a de um vidrado para {scale, select, band {{band, select, low {a baixa temperatura} mid {a média temperatura} other {a alta temperatura}}} sk {SK {cone}} temperature {{cone} °C} other {cone {cone}}}.",
+    "coolerSoft": "A química deste vidrado tende para uma cozedura mais fria do que a {scale, select, band {{band, select, low {da baixa temperatura} mid {da média temperatura} other {da alta temperatura}}} sk {de SK {cone}} temperature {de {cone} °C} other {de cone {cone}}}, mais próxima do cone 6, embora a química, por si só, distinga apenas de forma aproximada os vidrados de cone 6 e de cone 10.",
+    "hotter": "A química deste vidrado parece-se mais com a de um vidrado para {looksLike, select, high {a alta temperatura} other {a média temperatura}} do que com a de um vidrado para {scale, select, band {{band, select, low {a baixa temperatura} mid {a média temperatura} other {a alta temperatura}}} sk {SK {cone}} temperature {{cone} °C} other {cone {cone}}}.",
+    "hotterSoft": "A química deste vidrado tende para uma cozedura mais quente do que a {scale, select, band {{band, select, low {da baixa temperatura} mid {da média temperatura} other {da alta temperatura}}} sk {de SK {cone}} temperature {de {cone} °C} other {de cone {cone}}}, mais próxima do cone 10, embora a química, por si só, distinga apenas de forma aproximada os vidrados de cone 6 e de cone 10.",
+    "closer": "Dentro do intervalo para que está indicado, a química deste vidrado parece mais próxima da extremidade de {scale, select, band {{band, select, low {baixa temperatura} mid {média temperatura} other {alta temperatura}}} sk {SK {cone}} temperature {{cone} °C} other {cone {cone}}}.",
+    "coolerSilica": "Tem mais boro ({boron}) do que os vidrados cozidos {scale, select, band {{band, select, low {a baixa temperatura} mid {a média temperatura} other {a alta temperatura}}} sk {a SK {cone}} temperature {a {cone} °C} other {ao cone {cone}}} costumam precisar, e menos sílica ({silica}) do que costumam ter.",
+    "coolerAlumina": "Tem mais boro ({boron}) do que os vidrados cozidos {scale, select, band {{band, select, low {a baixa temperatura} mid {a média temperatura} other {a alta temperatura}}} sk {a SK {cone}} temperature {a {cone} °C} other {ao cone {cone}}} costumam precisar, e pouca alumina ({alumina}).",
+    "coolerBoth": "Tem mais boro ({boron}) do que os vidrados cozidos {scale, select, band {{band, select, low {a baixa temperatura} mid {a média temperatura} other {a alta temperatura}}} sk {a SK {cone}} temperature {a {cone} °C} other {ao cone {cone}}} costumam precisar, e menos sílica ({silica}) e alumina ({alumina}) do que costumam ter.",
+    "hotterSilica": "Tem pouco boro ({boron}) para {scale, select, band {{band, select, low {a baixa temperatura} mid {a média temperatura} other {a alta temperatura}}} sk {SK {cone}} temperature {{cone} °C} other {cone {cone}}}, e mais sílica ({silica}) do que os vidrados cozidos a essa temperatura costumam ter.",
+    "coolerEffect": "Com essa cozedura pode escorrer ou fundir demais: coza primeiro uma peça de teste num disco de chacota.",
+    "hotterEffect": "Com essa cozedura pode sair subcozido: seco, áspero ou não totalmente selado. Coza-o em teste antes de o usar em peças, e sobretudo antes de o usar onde vá estar em contacto com alimentos ou bebidas.",
+    "hotterEffectSoft": "Alguns vidrados fundem com essa cozedura sem boro, por isso isto é apenas uma pista: confirme numa peça de teste que funde por completo.",
+    "gerstley": "Parte do seu boro vem do Gerstley Borate, que varia de lote para lote, por isso esse valor é menos seguro.",
+    "guide": "Isto compara a química com valores publicados: é uma orientação, não um teste. Se o vidrado cozeu bem para si a este cone, confie nas suas peças de teste.",
+    "fits": "O seu boro, a sua sílica e a sua alumina não apontam contra {scale, select, band {{band, select, low {a baixa temperatura} mid {a média temperatura} other {a alta temperatura}}} sk {SK {cone}} temperature {{cone} °C} other {o cone {cone}}}. É uma orientação, não um teste: não diz nada sobre se o vidrado é estável ou apto para contacto com alimentos.",
+    "sources": "Fontes:",
+    "skip": {
+      "lead": "O Glazecalc não consegue comparar a química deste vidrado com a sua cozedura: grande parte da sua fusão vem do chumbo, que os valores publicados usados por esta verificação não abrangem.",
+      "lithium": "O Glazecalc não consegue comparar a química deste vidrado com a sua cozedura: grande parte da sua fusão vem do lítio, que os valores publicados usados por esta verificação não abrangem.",
+      "alkali": "O Glazecalc não consegue comparar a química deste vidrado com a sua cozedura: grande parte da sua fusão vem do sódio e do potássio, que os valores publicados usados por esta verificação não abrangem.",
+      "zinc": "O Glazecalc não consegue comparar a química deste vidrado com a sua cozedura: tem muito zinco, como os vidrados cristalinos, e os valores publicados usados por esta verificação não o abrangem.",
+      "notGlaze": "O Glazecalc não consegue comparar a química deste vidrado com a sua cozedura: a sua fórmula não é a de um vidrado habitual (muito pouca ou muitíssima sílica, ou muitos óxidos corantes), por isso os valores publicados usados por esta verificação não lhe servem.",
+      "process": "O Glazecalc não consegue comparar a química deste vidrado com a sua cozedura: é para uma cozedura {process, select, raku {raku} salt {com sal} soda {com sódio} wood {a lenha} other {em fossa}}, em que o forno faz parte do trabalho de vidrar, e os valores publicados usados por esta verificação não a abrangem.",
+      "ash": "O Glazecalc não consegue comparar a química deste vidrado com a sua cozedura: tem cinza, cuja composição varia demasiado para os valores publicados usados por esta verificação.",
+      "noTemperature": "O Glazecalc não consegue comparar a química deste vidrado com {scale, select, band {{band, select, low {a baixa temperatura} mid {a média temperatura} other {a alta temperatura}}} sk {SK {cone}} temperature {{cone} °C} other {o cone {cone}}}: não há temperatura medida para esse cone.",
+      "between": "O Glazecalc não consegue comparar a química deste vidrado com {scale, select, band {{band, select, low {a baixa temperatura} mid {a média temperatura} other {a alta temperatura}}} sk {SK {cone}} temperature {{cone} °C} other {o cone {cone}}}: os valores publicados usados por esta verificação são para a baixa temperatura e para a média e a alta, não para os cones intermédios (01 a 3).",
+      "belowChart": "O Glazecalc não consegue comparar a química deste vidrado com {scale, select, band {{band, select, low {a baixa temperatura} mid {a média temperatura} other {a alta temperatura}}} sk {SK {cone}} temperature {{cone} °C} other {o cone {cone}}}: a regra do boro de Katz vai do cone 06 ao cone 10, e essa cozedura é mais fria."
+    }
   },
   "stull": {
     "heading": "Gráfico de Stull",
@@ -904,7 +934,7 @@
     "foodSurface": "Para uma superfície em contacto com alimentos (um vidrado de interior)",
     "liner": {
       "note": "A segurança alimentar depende de cozer este vidrado ao cone a que foi testado: um vidrado insuficientemente cozido pode libertar metais.",
-      "range": "É dado para um intervalo, por isso teste-o na extremidade baixa do intervalo, onde funde menos.",
+      "range": "A cozedura deste vidrado é dada como intervalo, por isso teste-o na extremidade baixa do intervalo, onde funde menos.",
       "untested": "Ainda não há nenhum cone marcado como testado.",
       "test": "Só um ensaio de libertação de metais das suas próprias peças cozidas mostra se é apto para contacto com alimentos."
     },
@@ -967,5 +997,23 @@
     "replaceAsk": "Assinalado como testado: {now}. Substituir pelos cones que os registos indicam, {logs}?",
     "replace": "Substituir",
     "keep": "Deixar como está"
+  },
+  "coneCards": {
+    "heading": "Resultados por cone",
+    "unplaced": "Sem cone atribuído",
+    "unplacedNote": "Estes registos de cozedura ainda não têm um cone atribuído: escolha onde cada um foi cozido.",
+    "approx": "≈ {temperature}",
+    "cautions": "{count, plural, =0 {sem avisos de limites} one {# aviso de limites} many {# avisos de limites} other {# avisos de limites}}",
+    "logs": "{count, plural, =0 {sem registos de cozedura} one {# registo de cozedura} many {# registos de cozedura} other {# registos de cozedura}}",
+    "outside": "fora da cozedura indicada",
+    "outsideChoice": "{place} (fora da cozedura indicada)",
+    "summaryLabel": "Resultado para {place}",
+    "summaryPlaceholder": "Superfície, cor, escorrimentos, fendilhamento...",
+    "noAtmosphere": "atmosfera não indicada",
+    "placeLabel": "Onde {title} foi cozido",
+    "notPlaced": "Não atribuído",
+    "add": "Adicionar um resultado para",
+    "addButton": "Adicionar",
+    "saveFailed": "Não foi possível guardar onde o registo de cozedura foi cozido."
   }
 }

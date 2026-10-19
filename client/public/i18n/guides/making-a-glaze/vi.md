@@ -211,7 +211,7 @@ Label: Nước cho một tỷ trọng mục tiêu
 
 **Keo CMC** (carboxymethyl cellulose) làm nước men dính hơn và khô chậm hơn, và để lại lớp phủ cứng hơn bám vào sản phẩm. Nó quan trọng nhất với men quét và men nhiều frit. Ví dụ của Digitalfire trộn 3,75 g vào 1000 g nước men, và nó phải được cho vào bằng máy xay. Một loại men có CMC sẽ không keo hóa với muối Epsom, và vì vi sinh vật ăn keo, nó có thể thay đổi trong xô và bắt đầu có mùi.
 
-**Bentonit**, một loại đất sét rất mịn, giúp giữ các hạt khác lơ lửng. Men nhúng thường dựa vào 15 đến 25% đất sét thô cho việc này. Với một công thức men thiếu đất sét, khoảng 1 đến 3% bentonit sẽ giúp ích; Digitalfire cho biết một loại men có hơn 15% đất sét có lẽ không cần quá 1%.
+**Bentonit**, một loại đất sét rất mịn, giúp giữ các hạt khác lơ lửng. Men nhúng thường dựa vào 15 đến 25% đất sét thô cho việc này. Với một công thức men thiếu đất sét, khoảng 1 đến 3% bentonit sẽ giúp ích; Digitalfire cho biết một loại men có hơn 15% đất sét có lẽ không cần bentonit quá 1% trọng lượng men khô.
 
 ## Mẫu thử men và thử nghiệm tuyến tính {#testing}
 

@@ -211,7 +211,7 @@ Label: Hedef özgül ağırlık için su
 
 **CMC zamkı** (karboksimetil selüloz) sulu sırrı daha yapışkan ve daha geç kuruyan bir hâle getirir ve kaba tutunan daha sert bir tabaka bırakır. En çok fırçayla sürülen sırlarda ve fritçe zengin sırlarda önemlidir. Digitalfire’ın örneğinde 1000 g sulu sırra 3,75 g katılıyor ve bunun blenderla katılması gerekiyor. CMC içeren bir sır Epsom tuzuyla jelleşmez; mikroplar zamkla beslendiği için de kovada değişebilir ve kokmaya başlayabilir.
 
-**Bentonit**, çok ince taneli bir kil, diğer taneciklerin süspansiyonda kalmasına yardım eder. Daldırma sırları bunun için genellikle %15–25 ham kile dayanır. Kili az olan bir reçetede yaklaşık %1–3 bentonit yardımcı olur; Digitalfire, %15’ten fazla kil içeren bir sırın %1’den fazlasına ihtiyaç duymaması gerektiğini söyler.
+**Bentonit**, çok ince taneli bir kil, diğer taneciklerin süspansiyonda kalmasına yardım eder. Daldırma sırları bunun için genellikle %15–25 ham kile dayanır. Kili az olan bir reçetede yaklaşık %1–3 bentonit yardımcı olur; Digitalfire, %15’ten fazla kil içeren bir sırın, kuru sır ağırlığının %1’inden fazla bentonite ihtiyaç duymaması gerektiğini söyler.
 
 ## Test karoları ve doğrusal karışım testleri {#testing}
 

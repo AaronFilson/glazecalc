@@ -199,11 +199,11 @@ Daugelis išjungiklių, tarp jų gamintojo Dawson LT modeliai, turi **ribinį la
 Table: Kiek laiko nustatyti ribinį laikmatį
 Label: Ribinio laikmačio nustatymai
 
-| Šaltinis  | Nustatymas                                                                                                                                   |
-| --------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| Dawson    | ½ val. ilgiau už numatomą degimo trukmę, kol krosnies dar nepažįstate, vėliau – vos ¼ val. ilgiau; niekada nenustatykite ilgiau kaip 20 val. |
-| L&L       | Pirmą kartą – labai ilgam laikui, užsirašant, kiek trunka degimas; vėliau – maždaug 1 val. ilgiau                                            |
-| Bracker's | Nuo 30 min. iki 1 val. ilgiau už degimo trukmę                                                                                               |
+| Šaltinis  | Nustatymas                                                                                                                               |
+| --------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| Dawson    | ½ val. ilgiau už numatomą degimo trukmę, kol krosnies dar nepažįstate, vėliau – ¼ val. ilgiau; niekada nenustatykite ilgiau kaip 20 val. |
+| L&L       | Pirmą kartą – labai ilgam laikui, užsirašant, kiek trunka degimas; vėliau – maždaug 1 val. ilgiau                                        |
+| Bracker's | Nuo 30 min. iki 1 val. ilgiau už degimo trukmę                                                                                           |
 
 > [!NOTE]
 > Mūsų atspirties taškas: pirmą kartą nustatykite su didele atsarga (neviršydami skalės 20 valandų), vėliau – ½–1 valanda ilgiau už jūsų užrašytą trukmę. Laikmatis taip pat parodo, kiek truko degimas: nustatytas ties 7 ir sustojęs ties 1, jis rodo 6 valandas.
@@ -352,11 +352,11 @@ Label: SK piroskopų lentelė
 | SK 19      |          {{2768 °F; 1520 °C}} |
 | SK 20      |          {{2786 °F; 1530 °C}} |
 
-Visi skaičiai yra nominalieji (JIS): temperatūra, kurią standartas nurodo piroskopui, kaip išspausdinta Yuko Trading lentelėje. Lentelėje kaitinimo sparta nenurodyta. Standartas pateikia atskaitos temperatūras. Esant keramikams įprastai maždaug 100 °C/val. spartai, Kioto miesto institutas išmatavo, kad jo paties Kioto piroskopai sulinksta 40–70 °C žemesnėje temperatūroje, nei JIS nurodo tam pačiam numeriui; tokių SK piroskopų pagal JIS matavimų neradome. Pastatykite kontrolinį piroskopą ir palyginkite.
+Visi skaičiai yra nominalieji (JIS): temperatūra, kurią standartas nurodo piroskopui, kaip išspausdinta Yuko Trading lentelėje. Lentelėje kaitinimo sparta nenurodyta. Standartas pateikia atskaitos temperatūras. Esant keramikams įprastai maždaug 100 °C/val. spartai, Kioto miesto institutas išmatavo, kad jo paties Kioto piroskopai sulinksta 47–79 °C žemesnėje temperatūroje, nei JIS nurodo tam pačiam numeriui; tokių SK piroskopų pagal JIS matavimų neradome. Pastatykite kontrolinį piroskopą ir palyginkite.
 
 ### Kioto piroskopai
 
-Kioto piroskopai (京都ゼーゲル), kuriuos gamino Kioto miesto institutas, nebegaminami: žiniasklaidos pranešimais, institutas jų gamybą nutraukė 2009 finansinių metų pabaigoje. Jie turi tuos pačius numerius kaip SK piroskopai pagal JIS, bet sulinksta žemesnėje temperatūroje: Kioto piroskopas dažniausiai sulinksta maždaug tokioje temperatūroje kaip dviem numeriais vėsesnis SK piroskopas pagal JIS. Kioto receptas, kuriame parašyta „SK 8“, gali turėti omenyje Kioto piroskopą. Institutas yra paskelbęs patarimų keramikams, pereinantiems nuo Kioto piroskopų prie Ortono piroskopų, ir vietoj savo Kioto SK 12 naudoja Ortono piroskopą 10; tai paties instituto pasirinkimas pagal jo matavimus esant 100 °C/val. spartai, ir jis netaikomas jokiam kitam piroskopui.
+Kioto piroskopai (京都ゼーゲル), kuriuos gamino Kioto miesto institutas, nebegaminami: žiniasklaidos pranešimais, institutas jų gamybą nutraukė 2009 finansinių metų pabaigoje. Jie turi tuos pačius numerius kaip SK piroskopai pagal JIS, bet sulinksta žemesnėje temperatūroje: Kioto piroskopas sulinksta maždaug tokioje temperatūroje kaip dviem ar trimis numeriais vėsesnis SK piroskopas pagal JIS. Kioto receptas, kuriame parašyta „SK 8“, gali turėti omenyje Kioto piroskopą. Institutas yra paskelbęs patarimų keramikams, pereinantiems nuo Kioto piroskopų prie Ortono piroskopų, ir vietoj savo Kioto SK 12 naudoja Ortono piroskopą 10; tai paties instituto pasirinkimas pagal jo matavimus esant 100 °C/val. spartai, ir jis netaikomas jokiam kitam piroskopui.
 
 ### Japonijoje parduodami Ortono piroskopai
 
