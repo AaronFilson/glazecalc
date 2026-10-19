@@ -15,10 +15,12 @@ if [[ ! "$tag" =~ $pattern ]]; then
   exit 1
 fi
 
+# SSM takes a comment of at most 100 characters; the document is named apart.
+comment="GitHub run $GITHUB_RUN_ID: $tag"
 command_id=$(aws ssm send-command \
   --document-name "$document" \
   --targets Key=tag:app,Values=glazecalc \
-  --comment "$document $tag from GitHub run $GITHUB_RUN_ID" \
+  --comment "${comment:0:100}" \
   --parameters "tag=$tag" \
   --timeout-seconds 900 \
   --query Command.CommandId --output text)
