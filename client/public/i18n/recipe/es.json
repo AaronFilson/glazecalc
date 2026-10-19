@@ -272,7 +272,6 @@
     "numbers": {
       "heading": "Leer el análisis y los límites",
       "analysis": "<b>Análisis y límites</b>, bajo la receta, muestra los moles, el % molar y el % en peso cocido de cada óxido, la pérdida al fuego y la dilatación térmica calculada, una estimación para comparar esmaltes.",
-      "limits": "<b>Límites</b> compara la fórmula Seger con un conjunto de límites: los límites de esmaltes estables de Hesselberth y Roy, salvo que elija los propios de Glazecalc (la elección se guarda con sus ajustes). Elija la <b>Cocción</b> para comprobarla con las cifras adecuadas; se guarda con la receta. Las cifras de Hesselberth y Roy son para cono 6 y cono 10, así que a baja temperatura dice que no se aplican. Son orientaciones, no un aprobado o un suspenso.",
       "stull": "El <b>gráfico de Stull</b> sitúa la sílice del esmalte frente a su alúmina, con las regiones mate, semimate y brillante de Stull y los intervalos del conjunto de límites. Es una guía para la superficie, no una predicción.",
       "slurry": "<b>Densidad y agua</b> usa la fórmula de Brongniart: pese un volumen medido del esmalte, y vea después el esmalte seco que hay en el cubo, el agua que lo lleva a la densidad que quiere o el agua para una tanda nueva. Las densidades siguen su ajuste de densidad relativa, grados Baumé o peso por pinta."
     },

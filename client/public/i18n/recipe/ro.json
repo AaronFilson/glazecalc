@@ -272,7 +272,6 @@
     "numbers": {
       "heading": "Citiți analiza și limitele",
       "analysis": "<b>Analiza și limitele</b>, sub rețetă, arată moli, % molar și % în greutate după ardere pentru fiecare oxid, pierderea la calcinare și dilatarea termică calculată, o estimare pentru compararea glazurilor.",
-      "limits": "<b>Limitele</b> compară formula Seger cu un set de limite: limitele pentru glazuri stabile ale lui Hesselberth și Roy, dacă nu alegeți setul propriu al Glazecalc (alegerea se salvează cu setările dumneavoastră). Alegeți <b>Arderea</b> ca să o verificați cu cifrele potrivite; se salvează cu rețeta. Cifrele lui Hesselberth și Roy sunt pentru conul 6 și conul 10, așa că la temperatură joasă spune că nu se aplică. Sunt repere, nu o notă de trecere sau de respingere.",
       "stull": "<b>Diagrama Stull</b> așază silicea glazurii față de alumina ei, cu regiunile mat, semimat și lucios ale lui Stull și intervalele setului de limite. Este un ghid pentru suprafață, nu o prezicere.",
       "slurry": "<b>Greutatea specifică și apa</b> folosește formula lui Brongniart: cântăriți un volum măsurat de glazură, apoi vedeți glazura uscată din găleată, apa care o aduce la greutatea specifică dorită sau apa pentru un amestec nou. Densitățile urmează setarea dumneavoastră pentru greutatea specifică, grade Baumé sau greutatea pintei."
     },

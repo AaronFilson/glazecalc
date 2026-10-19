@@ -272,7 +272,6 @@
     "numbers": {
       "heading": "De analyse en de limieten lezen",
       "analysis": "<b>Analyse en limieten</b>, onder het recept, toont per oxide de mol, het mol% en het gewicht% na het stoken, het gloeiverlies en de berekende thermische uitzetting, een schatting om glazuren te vergelijken.",
-      "limits": "<b>Limieten</b> zet de Segerformule naast een limietenset: de limieten voor stabiele glazuren van Hesselberth & Roy, tenzij u de eigen limieten van Glazecalc kiest (de keuze wordt bij uw instellingen bewaard). Kies de <b>Stook</b> om te controleren aan de hand van de juiste cijfers; die wordt bij het recept bewaard. De cijfers van Hesselberth & Roy gelden voor kegel 6 en kegel 10, dus bij lage temperatuur staat er dat ze niet van toepassing zijn. Het zijn richtlijnen, geen test die een glazuur haalt of niet haalt.",
       "stull": "Het <b>Stull-diagram</b> zet het siliciumoxide van het glazuur uit tegen het aluminiumoxide, met de matte, halfmatte en glanzende gebieden van Stull en de bereiken van de limietenset. Het is een richtlijn voor het oppervlak, geen voorspelling.",
       "slurry": "<b>Soortelijk gewicht en water</b> gebruikt de formule van Brongniart: weeg een afgemeten volume van het glazuur, en zie dan het droge glazuur in de emmer, het water dat het op het gewenste soortelijk gewicht brengt, of het water voor een nieuw mengsel. De dichtheden volgen uw instelling voor soortelijk gewicht, graden Baumé of pintgewicht."
     },

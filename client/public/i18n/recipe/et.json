@@ -272,7 +272,6 @@
     "numbers": {
       "heading": "Analüüsi ja piirväärtuste lugemine",
       "analysis": "<b>Analüüs ja piirväärtused</b> retsepti all näitab iga oksiidi moole, moolprotsenti ja põletatud massiprotsenti, hõõgumiskadu ja arvutatud soojuspaisumist, mis on hinnang glasuuride võrdlemiseks.",
-      "limits": "<b>Piirväärtused</b> võrdleb Segeri valemit piirväärtuste komplektiga: Hesselberthi ja Roy stabiilsete glasuuride piirväärtustega, kui te ei vali Glazecalci enda komplekti (valik salvestatakse teie sätetega). Valige <b>Põletus</b>, et kontrollida õigete arvude vastu; see salvestatakse koos retseptiga. Hesselberthi ja Roy arvud on koonuste 6 ja 10 jaoks, seega madalkuumuse puhul teatab see, et need ei kehti. Need on juhisväärtused, mitte hinnang „läbis“ või „ei läbinud“.",
       "stull": "<b>Stulli diagramm</b> kujutab glasuuri ränidioksiidi alumiiniumoksiidi suhtes, koos Stulli mati, poolmati ja läikiva alaga ning piirväärtuste komplekti vahemikega. See on juhend pinna kohta, mitte ennustus.",
       "slurry": "<b>Suhteline tihedus ja vesi</b> kasutab Brongniarti valemit: kaaluge mõõdetud ruumala glasuuri, seejärel vaadake kuivat glasuuri ämbris, vett, mis viib selle soovitud suhtelise tiheduseni, või vett uue segu jaoks. Tihedused järgivad teie sätet suhtelise tiheduse, Baumé kraadide või pindi kaalu jaoks."
     },

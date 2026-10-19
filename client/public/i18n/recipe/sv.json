@@ -272,7 +272,6 @@
     "numbers": {
       "heading": "Läs analysen och gränserna",
       "analysis": "<b>Analys och gränser</b>, under receptet, visar varje oxids mol, mol-% och viktprocent efter bränning, glödförlusten och den beräknade värmeutvidgningen, en uppskattning för att jämföra glasyrer.",
-      "limits": "<b>Gränser</b> ställer Segerformeln mot en gränsuppsättning: Hesselberth & Roys gränser för stabila glasyrer, om inte Glazecalcs egna väljs (valet sparas med inställningarna). Välj <b>Bränning</b> för att kontrollera mot rätt siffror; den sparas med receptet. Hesselberth & Roys siffror gäller kägla 6 och kägla 10, så vid låg temperatur står det att de inte gäller. De är riktlinjer, inget betyg i form av godkänt eller underkänt.",
       "stull": "<b>Stull-diagrammet</b> ritar glasyrens kiseldioxid mot dess aluminiumoxid, med Stulls matta, halvmatta och blanka områden och gränsuppsättningens intervall. Det är en vägledning för ytan, inte en förutsägelse.",
       "slurry": "<b>Specifik vikt och vatten</b> använder Brongniarts formel: väg en uppmätt volym av glasyren, och se sedan den torra glasyren i hinken, vattnet som för den till önskad specifik vikt, eller vattnet för en ny sats. Densiteterna följer inställningen för specifik vikt, baumégrader eller pintvikt."
     },

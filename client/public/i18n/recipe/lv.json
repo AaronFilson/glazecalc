@@ -272,7 +272,6 @@
     "numbers": {
       "heading": "Analīzes un robežvērtību lasīšana",
       "analysis": "<b>Analīze un robežvērtības</b> zem receptes parāda katra oksīda molus, mol% un masas % pēc apdedzināšanas, karsēšanas zudumus un aprēķināto termisko izplešanos, kas ir tuvinājums glazūru salīdzināšanai.",
-      "limits": "<b>Robežvērtības</b> salīdzina Zēgera formulu ar robežvērtību kopu: ar Heselberta (Hesselberth) un Roja (Roy) stabilo glazūru robežvērtībām, ja vien neizvēlaties Glazecalc paša robežvērtības (izvēle tiek saglabāta kopā ar jūsu iestatījumiem). Izvēlieties <b>Apdedzināšana</b>, lai to pārbaudītu pret pareizajiem skaitļiem; tā tiek saglabāta kopā ar recepti. Heselberta un Roja skaitļi attiecas uz konusu 6 un konusu 10, tāpēc zemā apdedzināšanā tiek rādīts, ka tie neattiecas. Tās ir vadlīnijas, nevis “izturēts” vai “neizturēts”.",
       "stull": "<b>Stala (Stull) diagramma</b> attēlo glazūras silīcija dioksīdu pret tās alumīnija oksīdu, ar Stala matētā, pusmatētā un spīdīgā apgabaliem un robežvērtību kopas diapazoniem. Tas ir virsmas orientieris, nevis prognoze.",
       "slurry": "<b>Relatīvais blīvums un ūdens</b> izmanto Bronjāra (Brongniart) formulu: nosveriet izmērītu glazūras tilpumu, pēc tam apskatiet sauso glazūru spainī, ūdens daudzumu, kas vajadzīgs vēlamā relatīvā blīvuma sasniegšanai, vai ūdeni jaunai porcijai. Blīvumi atbilst jūsu iestatījumam relatīvajam blīvumam, Baumé grādiem vai pintes masai."
     },

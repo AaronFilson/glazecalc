@@ -272,7 +272,6 @@
     "numbers": {
       "heading": "Az elemzés és a határértékek olvasása",
       "analysis": "Az <b>Elemzés és határértékek</b> a recept alatt megmutatja az egyes oxidok móljait, mól%-át és égetett tömeg%-át, az izzítási veszteséget és a számított hőtágulást, amely a mázak összehasonlítására szolgáló becslés.",
-      "limits": "A <b>Határértékek</b> a Seger-képletet egy határérték-készlethez méri: Hesselberth és Roy stabil mázakra vonatkozó határértékeihez, hacsak nem a Glazecalc saját készletét választja (a választás a beállításaival együtt mentődik). Válassza ki az <b>Égetést</b>, hogy a megfelelő értékekhez hasonlítsa; a recepttel együtt mentődik. Hesselberth és Roy értékei a 6-os és a 10-es gúlára szólnak, ezért alacsony tüzű égetésnél azt jelzi, hogy nem alkalmazhatók. Ezek irányelvek, nem megfelelt/nem felelt meg minősítések.",
       "stull": "A <b>Stull-diagram</b> a máz szilícium-dioxid-tartalmát ábrázolja a timföldtartalma függvényében, Stull matt, félmatt és fényes tartományaival és a határérték-készlet tartományaival. Útmutató a felülethez, nem előrejelzés.",
       "slurry": "A <b>Fajsúly és víz</b> Brongniart képletét használja: mérje le a máz egy megmért térfogatát, majd nézze meg a vödörben lévő száraz mázat, a kívánt fajsúlyra hozó vizet, vagy egy új adag vizét. A sűrűségek a fajsúlyra, a Baumé-fokra vagy a pint-súlyra vonatkozó beállítását követik."
     },

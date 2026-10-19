@@ -272,7 +272,6 @@
     "numbers": {
       "heading": "Odczytywanie analizy i limitów",
       "analysis": "<b>Analiza i limity</b>, pod recepturą, pokazują dla każdego tlenku mole, % molowy i % masowy po wypale, stratę prażenia oraz obliczoną rozszerzalność cieplną, czyli oszacowanie do porównywania szkliw.",
-      "limits": "<b>Limity</b> zestawiają wzór Segera z wybranym zestawem limitów: domyślnie są to limity trwałych szkliw według Hesselberth & Roy, chyba że zostaną wybrane własne limity Glazecalc (wybór zapisuje się w ustawieniach). Należy wybrać <b>Wypał</b>, aby porównać wzór z właściwymi wartościami; wypał zapisuje się razem z recepturą. Wartości Hesselberth & Roy dotyczą stożka 6 i stożka 10, więc przy niskim wypale zestaw informuje, że nie mają zastosowania. To wytyczne, a nie ocena „zalicza lub nie zalicza”.",
       "stull": "<b>Wykres Stulla</b> przedstawia zależność krzemionki szkliwa od tlenku glinu, z obszarami Stulla (matowym, półmatowym i błyszczącym) oraz zakresami zestawu limitów. To wskazówka co do powierzchni, a nie prognoza.",
       "slurry": "<b>Gęstość względna i woda</b> korzystają ze wzoru Brongniarta: należy zważyć odmierzoną objętość szkliwa, a potem odczytać, ile suchego szkliwa jest w wiadrze, ile wody doprowadzi je do wybranej gęstości względnej albo ile wody potrzeba na nową porcję. Gęstości są podawane według ustawienia gęstości względnej, stopni Baumé lub masy pinty."
     },

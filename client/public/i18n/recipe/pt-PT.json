@@ -272,7 +272,6 @@
     "numbers": {
       "heading": "Ler a análise e os limites",
       "analysis": "<b>Análise e limites</b>, por baixo da receita, mostra as moles, a % molar e a % em peso após cozedura de cada óxido, a perda ao fogo e a dilatação térmica calculada, uma estimativa para comparar vidrados.",
-      "limits": "<b>Limites</b> compara a fórmula de Seger com um conjunto de limites: os limites de vidrados estáveis de Hesselberth e Roy, a menos que escolha os do próprio Glazecalc (a escolha fica guardada nas suas definições). Escolha a <b>Cozedura</b> para a verificar com os valores certos; fica guardada com a receita. Os valores de Hesselberth e Roy são para cone 6 e cone 10, por isso a baixa temperatura diz que não se aplicam. São orientações, não uma aprovação ou uma reprovação.",
       "stull": "O <b>gráfico de Stull</b> coloca a sílica do vidrado em relação à sua alumina, com as regiões mate, semimate e brilhante de Stull e os intervalos do conjunto de limites. É um guia para a superfície, não uma previsão.",
       "slurry": "<b>Densidade e água</b> usa a fórmula de Brongniart: pese um volume medido do vidrado e veja depois o vidrado seco que está no balde, a água que o leva à densidade que quer ou a água para um novo lote. As densidades seguem a sua definição de densidade relativa, graus Baumé ou peso por pinta."
     },

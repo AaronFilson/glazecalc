@@ -272,7 +272,6 @@
     "numbers": {
       "heading": "Đọc phân tích và các giới hạn",
       "analysis": "<b>Phân tích và giới hạn</b>, dưới công thức men, cho thấy mol, % mol và % khối lượng sau nung của mỗi oxit, lượng mất khi nung và độ giãn nở nhiệt tính toán, một ước tính để so sánh các loại men.",
-      "limits": "<b>Giới hạn</b> đặt công thức Seger đối chiếu với một bộ giới hạn: các giới hạn men ổn định của Hesselberth & Roy trừ khi bạn chọn bộ riêng của Glazecalc (lựa chọn được lưu cùng cài đặt của bạn). Chọn <b>Nung</b> để kiểm tra theo đúng các số liệu; nó được lưu cùng công thức men. Số liệu của Hesselberth & Roy dành cho côn 6 và côn 10, nên ở nhiệt độ thấp nó cho biết chúng không áp dụng. Chúng là hướng dẫn tham khảo, không phải tiêu chí đạt hay không đạt.",
       "stull": "<b>Biểu đồ Stull</b> vẽ silica của men theo alumina của nó, với các vùng mờ, bán mờ và sáng bóng của Stull và các khoảng của bộ giới hạn. Nó là một chỉ dẫn về bề mặt, không phải một dự đoán.",
       "slurry": "<b>Tỷ trọng và nước</b> dùng công thức của Brongniart: cân một thể tích men đã đo, rồi xem men khô trong xô, nước đưa nó đến tỷ trọng bạn muốn, hoặc nước cho một mẻ mới. Các độ đặc theo cài đặt của bạn cho tỷ trọng, độ Baumé hoặc trọng lượng pint."
     },

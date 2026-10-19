@@ -272,7 +272,6 @@
     "numbers": {
       "heading": "Branje analize in mej",
       "analysis": "<b>Analiza in meje</b> pod receptom pokažeta mole, mol. % in masni % po žganju za vsak oksid, izgubo pri žarenju in izračunano toplotno raztezanje, ki je ocena za primerjavo glazur.",
-      "limits": "<b>Meje</b> primerjajo Segerjevo formulo s skupino mej: s stabilnimi mejami glazur, ki sta jih določila Hesselberth in Roy, razen če izberete Glazecalcove lastne (izbira se shrani z vašimi nastavitvami). Izberite <b>Žganje</b>, da formulo preverite z ustreznimi vrednostmi; shrani se z receptom. Vrednosti Hesselbertha in Roya veljajo za stožec 6 in stožec 10, zato pri nizkem žganju piše, da ne veljajo. So smernice, ne ocena »uspešno« ali »neuspešno«.",
       "stull": "<b>Stullov diagram</b> prikazuje kremenico glazure glede na njeno glinico, s Stullovimi območji mat, polmat in sijajno ter razponi skupine mej. Je vodilo za površino, ne napoved.",
       "slurry": "<b>Relativna gostota in voda</b> uporablja Brongniartovo formulo: stehtajte odmerjeno prostornino glazure, nato si oglejte suho glazuro v vedru, vodo, s katero jo dosežete na želeno relativno gostoto, ali vodo za novo mešanico. Gostote sledijo vaši nastavitvi za relativno gostoto, Baumé ali maso pinte."
     },

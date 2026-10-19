@@ -272,7 +272,6 @@
     "numbers": {
       "heading": "Čítanie rozboru a limitov",
       "analysis": "<b>Rozbor a limity</b> pod receptom ukazujú pri každom oxide móly, molárne % a hmotnostné % po výpale, stratu žíhaním a vypočítanú tepelnú rozťažnosť, čo je odhad na porovnávanie glazúr.",
-      "limits": "<b>Limity</b> porovnávajú Segerov vzorec so sadou limitov: predvolene sú to limity stabilných glazúr podľa Hesselberth & Roy, ak nezvolíte vlastné limity Glazecalc (voľba sa ukladá do nastavení). Zvoľte <b>Výpal</b>, aby sa porovnanie vykonalo so správnymi hodnotami; ukladá sa s receptom. Hodnoty Hesselberth & Roy platia pre kužeľ 6 a kužeľ 10, takže pri nízkom výpale aplikácia uvedie, že sa nepoužijú. Sú to usmernenia, nie hodnotenie „vyhovel, alebo nevyhovel“.",
       "stull": "<b>Stullov diagram</b> vynáša oxid kremičitý glazúry proti oxidu hlinitému, so Stullovými oblasťami matných, polomatných a lesklých glazúr a rozsahmi sady limitov. Je to orientačná pomôcka k povrchu, nie predpoveď.",
       "slurry": "<b>Relatívna hustota a voda</b> používajú Brongniartov vzorec: odvážte odmeraný objem glazúry a uvidíte suchú glazúru vo vedre, vodu, ktorá ju privedie na požadovanú relatívnu hustotu, alebo vodu na novú dávku. Hustoty sa riadia vaším nastavením relatívnej hustoty, stupňov Baumé alebo hmotnosti pinty."
     },

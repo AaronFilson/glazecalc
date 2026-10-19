@@ -272,7 +272,6 @@
     "numbers": {
       "heading": "Lire l’analyse et les limites",
       "analysis": "<b>Analyse et limites</b>, sous la recette, montre pour chaque oxyde les moles, le % molaire et le % en poids après cuisson, la perte au feu et la dilatation thermique calculée, une estimation pour comparer des émaux.",
-      "limits": "<b>Limites</b> compare la formule de Seger à un jeu de limites : les limites pour émaux stables de Hesselberth & Roy, sauf si vous choisissez celles de Glazecalc (le choix est enregistré avec vos paramètres). Choisissez la <b>Cuisson</b> pour la comparer aux bons chiffres ; elle est enregistrée avec la recette. Les chiffres de Hesselberth & Roy valent pour le cône 6 et le cône 10 : à basse température, l’application indique donc qu’ils ne s’appliquent pas. Ce sont des repères, pas un verdict de réussite ou d’échec.",
       "stull": "Le <b>diagramme de Stull</b> place la silice de l’émail en regard de son alumine, avec les régions mate, semi-mate et brillante de Stull et les plages du jeu de limites. C’est un repère pour l’aspect de la surface, pas une prédiction.",
       "slurry": "<b>Densité et eau</b> utilise la formule de Brongniart : pesez un volume mesuré d’émail, puis voyez l’émail sec dans le seau, l’eau qui l’amène à la densité voulue, ou l’eau pour une nouvelle préparation. Les densités suivent votre réglage de densité, de degrés Baumé ou de poids de la pinte."
     },

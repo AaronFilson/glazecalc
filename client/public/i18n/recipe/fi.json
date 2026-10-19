@@ -272,7 +272,6 @@
     "numbers": {
       "heading": "Analyysin ja raja-arvojen lukeminen",
       "analysis": "<b>Analyysi ja raja-arvot</b> reseptin alla näyttää kunkin oksidin moolit, mooliprosentin ja painoprosentin poltettuna, polttohäviön sekä lasketun lämpölaajenemisen, joka on arvio lasitteiden vertailuun.",
-      "limits": "<b>Raja-arvot</b> asettaa Segerin kaavan raja-arvosarjaa vasten: Hesselberthin ja Royn vakaiden lasitteiden raja-arvoja, ellei valita Glazecalcin omaa sarjaa (valinta tallentuu asetuksiin). Valitse <b>Poltto</b>, jotta tarkistus tehdään oikeilla arvoilla; se tallentuu reseptin mukana. Hesselberthin ja Royn arvot koskevat keiloja 6 ja 10, joten matalassa poltossa se kertoo, etteivät ne päde. Ne ovat ohjearvoja, eivät hyväksytty/hylätty-arvio.",
       "stull": "<b>Stullin kartta</b> piirtää lasitteen piidioksidin alumiinioksidia vasten Stullin matta-, puolimatta- ja kiiltäväalueineen sekä raja-arvosarjan vaihteluväleineen. Se on opas pintaan, ei ennuste.",
       "slurry": "<b>Ominaispaino ja vesi</b> käyttää Brongniartin kaavaa: punnitse mitattu tilavuus lasitetta, katso sitten kuivan lasitteen määrä sangossa, vesi, joka tuo sen haluttuun ominaispainoon, tai vesi uuteen erään. Tiheydet noudattavat asetusta, joka koskee ominaispainoa, Baumé-asteita tai pinttipainoa."
     },

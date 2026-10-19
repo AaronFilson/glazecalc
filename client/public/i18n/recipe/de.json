@@ -272,7 +272,6 @@
     "numbers": {
       "heading": "Die Analyse und die Grenzwerte lesen",
       "analysis": "<b>Analyse und Grenzwerte</b> unter dem Rezept zeigt für jedes Oxid die Mole, Mol-% und Gewichts-% nach dem Brand, den Glühverlust und die berechnete Wärmeausdehnung, eine Schätzung zum Vergleichen von Glasuren.",
-      "limits": "<b>Grenzwerte</b> misst die Segerformel an einer Grenzwerttabelle: an den Grenzwerten für stabile Glasuren von Hesselberth & Roy, sofern Sie nicht die eigenen von Glazecalc wählen (die Wahl wird mit Ihren Einstellungen gespeichert). Wählen Sie den <b>Brand</b>, um sie an den passenden Werten zu prüfen; er wird mit dem Rezept gespeichert. Die Werte von Hesselberth & Roy gelten für Kegel 6 und Kegel 10, deshalb steht im niedrigen Brennbereich, dass sie nicht zutreffen. Es sind Richtwerte, kein Urteil über „bestanden“ oder „nicht bestanden“.",
       "stull": "Das <b>Stull-Diagramm</b> trägt die Kieselsäure der Glasur gegen ihre Tonerde auf, mit Stulls matten, halbmatten und glänzenden Bereichen und den Bereichen der Grenzwerttabelle. Es ist ein Anhaltspunkt für die Oberfläche, keine Vorhersage.",
       "slurry": "<b>Spezifisches Gewicht und Wasser</b> verwendet die Formel von Brongniart: Wiegen Sie ein abgemessenes Volumen der Glasur, und sehen Sie dann die trockene Glasur im Eimer, das Wasser, das sie auf das gewünschte SG bringt, oder das Wasser für einen neuen Ansatz. Die Dichten folgen Ihrer Einstellung für spezifisches Gewicht, Baumé oder Pint-Gewicht."
     },

@@ -272,7 +272,6 @@
     "numbers": {
       "heading": "Leggere l’analisi e i limiti",
       "analysis": "<b>Analisi e limiti</b>, sotto la ricetta, mostra per ogni ossido le moli, la % molare e la % in peso dopo cottura, la perdita al fuoco e la dilatazione termica calcolata, una stima per confrontare gli smalti.",
-      "limits": "<b>Limiti</b> confronta la formula di Seger con una serie di limiti: i limiti per smalti stabili di Hesselberth & Roy, a meno che si scelgano quelli propri di Glazecalc (la scelta viene salvata con le impostazioni). Scegliere la <b>Cottura</b> per confrontarla con i valori giusti; viene salvata con la ricetta. I valori di Hesselberth & Roy valgono per il cono 6 e il cono 10, quindi a bassa temperatura l’app dice che non si applicano. Sono indicazioni, non un esito positivo o negativo.",
       "stull": "Il <b>diagramma di Stull</b> riporta la silice dello smalto rispetto alla sua allumina, con le regioni opaca, semiopaca e lucida di Stull e gli intervalli della serie di limiti. È una guida per l’aspetto della superficie, non una previsione.",
       "slurry": "<b>Peso specifico e acqua</b> usa la formula di Brongniart: pesare un volume misurato di smalto, poi vedere lo smalto secco nel secchio, l’acqua che lo porta al peso specifico voluto, o l’acqua per una nuova pesata. Le densità seguono l’impostazione scelta per peso specifico, gradi Baumé o peso a pinta."
     },

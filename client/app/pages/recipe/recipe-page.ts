@@ -337,6 +337,8 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
   protected readonly notes = signal('');
   protected readonly lines = signal<RecipeMaterial[]>([]);
   protected readonly additiveLines = signal<Additive[]>([]);
+  /** The materials' names, for the limits' cone check (ash, Gerstley borate). */
+  protected readonly materialNames = computed(() => this.lines().map((line) => line.name));
 
   // The lists to add from, and the saved recipes.
   protected readonly myMaterials = signal<Material[]>([]);
