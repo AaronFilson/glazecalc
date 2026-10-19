@@ -457,7 +457,6 @@
   },
   "tokens": {
     "heading": "Mã thông báo truy cập",
-    "intro": "Mã thông báo truy cập cho phép trợ lý AI hoặc tập lệnh của riêng bạn đọc các công thức men, nguyên liệu, ghi chú và nhật ký nung trong tài khoản của bạn. Hiện tại một mã thông báo chỉ có thể đọc: nó không bao giờ thay đổi hay xóa gì. Mỗi mã thông báo ngừng hoạt động vào ngày bạn chọn, hoặc ngay khi bạn thu hồi nó.",
     "howTo": "Cách kết nối một trợ lý AI",
     "listLabel": "Các mã thông báo truy cập của bạn",
     "none": "Bạn không có mã thông báo truy cập nào.",

@@ -458,7 +458,6 @@
   },
   "tokens": {
     "heading": "Åtkomsttoken",
-    "intro": "Med en åtkomsttoken kan en egen AI-assistent eller ett eget skript läsa recepten, råvarorna, anteckningarna och brännloggarna i kontot. Än så länge kan en åtkomsttoken bara läsa: den ändrar eller tar aldrig bort något. Varje åtkomsttoken slutar fungera den dag som väljs, eller så fort den återkallas.",
     "howTo": "Koppla en AI-assistent",
     "listLabel": "Åtkomsttoken i kontot",
     "none": "Det finns inga åtkomsttoken.",

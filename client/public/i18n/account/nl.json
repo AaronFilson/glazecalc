@@ -458,7 +458,6 @@
   },
   "tokens": {
     "heading": "Toegangstokens",
-    "intro": "Met een toegangstoken kan uw eigen AI-assistent of script de recepten, grondstoffen, notities en stookverslagen in uw account lezen. Voorlopig kan een token alleen lezen: het wijzigt of verwijdert nooit iets. Elk token houdt op te werken op de dag die u kiest, of zodra u het intrekt.",
     "howTo": "Een AI-assistent verbinden",
     "listLabel": "Uw toegangstokens",
     "none": "U hebt geen toegangstokens.",

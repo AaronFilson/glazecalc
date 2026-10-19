@@ -458,7 +458,6 @@
   },
   "tokens": {
     "heading": "Hozzáférési tokenek",
-    "intro": "A hozzáférési token lehetővé teszi, hogy a saját MI-asszisztense vagy szkriptje elolvassa a fiókjában lévő recepteket, nyersanyagokat, jegyzeteket és égetési naplókat. A token egyelőre csak olvasni tud: soha nem módosít és nem távolít el semmit. Minden token az Ön által választott napon leáll, vagy amint visszavonja.",
     "howTo": "Hogyan kapcsolhat össze egy MI-asszisztenst",
     "listLabel": "Hozzáférési tokenjei",
     "none": "Nincs hozzáférési tokenje.",

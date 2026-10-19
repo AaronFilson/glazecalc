@@ -91,6 +91,41 @@ test('makes a read-only token, shows it once, and revokes it', async ({ page, re
   expect(after.status()).toBe(401);
 });
 
+test('makes a token that can read and change, for at most 90 days, and it changes records', async ({
+  page,
+  request
+}) => {
+  await confirmedOnPage(page);
+  await page.goto('/account');
+  const section = page.locator('.tokens-section');
+  await expect(section.getByLabel('Read only')).toBeChecked();
+  await section.getByLabel('Read and change').check();
+  // Only the shorter lifetimes.
+  await expect(section.getByLabel('Stops working after').locator('option')).toHaveText([
+    '7 days',
+    '30 days',
+    '90 days'
+  ]);
+  await expect(section).toContainText('A token that can change your records stops working after at most 90 days.');
+  const token = await makeToken(page, 'Claude with changes');
+  await expect(section.locator('.new-token-panel')).toContainText('can read and change your records');
+
+  const auth = { Authorization: 'Bearer ' + token };
+  const made = await request.post(API + '/recipe/create', {
+    headers: auth,
+    data: { title: 'From a script', materials: [{ name: 'Silica', amount: '30' }] }
+  });
+  expect(made.status()).toBe(200);
+  const removed = await request.delete(API + '/recipe/delete/' + (await made.json())._id, { headers: auth });
+  expect(removed.status()).toBe(200);
+
+  await section.getByRole('button', { name: 'I have copied it' }).click();
+  const row = section.locator('.token-row', { hasText: 'Claude with changes' });
+  await expect(row).toContainText('Read and change');
+  // The form is back to reading only.
+  await expect(section.getByLabel('Read only')).toBeChecked();
+});
+
 test('offers to revoke the tokens still working after a password change', async ({ page, request }) => {
   await confirmedOnPage(page);
   await page.goto('/account');

@@ -458,7 +458,6 @@
   },
   "tokens": {
     "heading": "Jetons d’accès",
-    "intro": "Un jeton d’accès permet à votre propre assistant IA ou à votre propre script de lire les recettes, matières, notes et relevés de cuisson de votre compte. Pour l’instant, un jeton ne peut que lire : il ne modifie ni ne retire jamais rien. Chaque jeton cesse de fonctionner le jour que vous choisissez, ou dès que vous le révoquez.",
     "howTo": "Comment connecter un assistant IA",
     "listLabel": "Vos jetons d’accès",
     "none": "Vous n’avez aucun jeton d’accès.",

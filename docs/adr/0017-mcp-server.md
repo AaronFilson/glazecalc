@@ -2,7 +2,8 @@
 
 Accepted, 2026-10-16; the guides, resources, prompts, conformance check and registry listing added 2026-10-17. Phases 2 and 3 of [the integrations plan](../integrations-plan.md): the public
 tools, and read-only personal access tokens. The plan's decisions 3, 4, 5, 6 and 9 are the owner's,
-all as recommended.
+all as recommended. Amended 2026-10-19: personal tokens can also change records, and the MCP
+endpoint has write tools (see [Amended: tokens that write](#amended-tokens-that-write)).
 
 ## Context
 
@@ -153,3 +154,51 @@ an assistant to act for one person that is not their web session.
 - Not built: the plan's `/.well-known/mcp-registry-auth` route, which the DNS proof makes
   unneeded. The prompts' requests and the resources' line about the parts drawn by country are in
   English, as the tools' descriptions are.
+
+## Amended: tokens that write
+
+2026-10-19, the owner's request ("token CRUD in this round, cap an account at 100,000 records of
+all kinds"), with the plan's item 37 and decision 10 (no delete but the Trash), ahead of the
+authorization server: personal tokens only, no OAuth client.
+
+- **A token reads, or reads and changes.** The account page offers "Read only" (`data:read`, the
+  default) and "Read and change" (`data:write`, `server/routes/token_routes.ts` `OFFERED_SCOPES`),
+  confirmed as before with the password and a factor. A writing token lasts at most 90 days
+  (`WRITE_PAT_MOST_DAYS`, `server/models/access_token.ts`); read tokens keep 7 to 365. The notice
+  email (`TOKEN_MADE_WRITE`) and the token list say which a token is.
+- **The record routes** already asked each route for its permission (`requireScope`); with
+  `data:write` a script creates, changes, undoes and moves to the Trash every kind of record, and
+  puts records back from it, as the website does. Every change keeps a version and an activity
+  line; a removal is refused when the Trash is full rather than pushing anything out of it.
+- **Eight MCP write tools** (`server/mcp/tools/account_write.ts`): `create_recipe` (the server
+  works out the unity formula and saves it as the recipe page does), `update_recipe`,
+  `add_notebook_entry`, `add_my_material`, `update_my_material`, `add_to_shelf`,
+  `remove_from_shelf` and `move_to_trash` (to the Trash only). They are listed for every token, so
+  an assistant holding a read-only one can say why nothing changed; each checks the token's scopes
+  itself and refuses in words otherwise. They do what the record routes do for a change, and the
+  server's instructions no longer say the tools never change anything.
+- **Limits** (`server/lib/rate_limit.ts`): changes made with tokens, 60 a minute and 5,000 a day per
+  account (`TOKEN_WRITE_LIMITS`), counted once for the record routes and the MCP tools, on top of
+  the request limits (which reads keep to themselves: 120 and 5,000, or 300 and 20,000 on MCP);
+  removals, 100 an hour per token (`TOKEN_DELETES_PER_HOUR`), shared the same way.
+- **What an account keeps:** at most 100,000 records of every kind together
+  (`ACCOUNT_RECORDS_MOST`, `server/lib/guest_limits.ts`; `ACCOUNT_MAX_RECORDS` sets another), in
+  place of 2,000 of each kind. They are counted kind by kind on the `{ ownedBy, _id }` index,
+  each kind asked only for as many as are still needed to reach the cap, so a full account costs
+  at most 100,000 index keys and a usual one a few hundred. A running total was not chosen: records
+  also arrive from a trial and the Trash, and a counter could drift from what is there. At most
+  20,000 earlier versions per account (`VERSIONS_MOST_ACCOUNT`), the oldest first, but never a
+  record's version from before the newest run of token changes, so Undo still reaches what the
+  person had before a token started.
+- **Prompt injection, revisited.** With write tools, words planted in a note or a recipe could
+  steer an assistant into changing or removing records. What bounds it: the person chooses a
+  writing token on purpose, for at most 90 days; nothing is deleted for good (the Trash keeps a
+  removal 30 days, a version keeps each change); the limits above stop a runaway; the tools are
+  marked as changing things (`readOnlyHint: false`, `destructiveHint` on the ones that replace or
+  remove), which clients use to ask the person first; and the instructions ask the assistant to
+  change only what the person asked for. Asking the person through MCP elicitation before a
+  removal (plan item 43) is not built yet.
+- **Revocation** is checked on every request, so a revoked or expired token stops writing at once.
+- **OAuth clients** cannot write yet: nothing issues OAuth tokens, and the MCP endpoint takes only
+  personal ones. The record routes judge any token by its scopes alone (decision 3), so when the
+  authorization server comes, its consent screen decides whether a client may hold `data:write`.

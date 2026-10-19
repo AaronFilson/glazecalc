@@ -458,7 +458,6 @@
   },
   "tokens": {
     "heading": "Tokenuri de acces",
-    "intro": "Un token de acces îi permite propriului dumneavoastră asistent AI sau script să citească rețetele, materiile prime, notițele și jurnalele de ardere din cont. Deocamdată un token poate doar să citească: nu schimbă și nu șterge nimic niciodată. Fiecare token încetează să funcționeze în ziua pe care o alegeți sau imediat ce îl revocați.",
     "howTo": "Cum conectați un asistent AI",
     "listLabel": "Tokenurile dumneavoastră de acces",
     "none": "Nu aveți niciun token de acces.",

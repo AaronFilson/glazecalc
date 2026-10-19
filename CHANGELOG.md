@@ -6,6 +6,21 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Added
 
+- **Access tokens that can change records.** On the account page a token can now be made to
+  "Read only" or to "Read and change" (still confirmed with the password and, with two-step
+  sign-in on, a second step); one that can change records lasts at most 90 days, and the notice
+  email and the token list say what each can do. With it, scripts can create, change, undo and
+  move to the Trash every kind of record through the same routes as the website, and AI
+  assistants get eight MCP tools: `create_recipe` (Glazecalc works out the unity formula),
+  `update_recipe`, `add_notebook_entry`, `add_my_material`, `update_my_material`, `add_to_shelf`,
+  `remove_from_shelf` and `move_to_trash` (the Trash only, never deleted). A read-only token is
+  refused by them and changes nothing. Every change keeps the record as it was, so it can be
+  undone, and is written to the activity log. Safeguards: changes with tokens are limited to 60 a
+  minute and 5,000 a day per account (apart from reads), each token still moves at most 100
+  records an hour to the Trash, and an account keeps at most 20,000 earlier versions (the oldest
+  go first, never the one from before a token's changes). The "Use Glazecalc from your AI
+  assistant" page says how to use such a token safely. English only for now.
+
 - **Terms of use** at `/terms`, linked from every page's footer: Glazecalc is free for your own
   glazes, records and learning, as a hobby, for teaching or in business; the code stays under the
   MIT License, and the terms are for the site. They ask users not to break the shared server
@@ -597,6 +612,10 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   `SECURITY.md` say where to report a security problem.
 
 ### Changed
+
+- **One limit on what an account keeps.** An account keeps up to 100,000 records of every kind
+  together (recipes, materials, notes, firing logs and the rest), in place of 2,000 of each kind;
+  `ACCOUNT_MAX_RECORDS` still sets another. Trials keep their own limits.
 
 - **One email after a password reset.** A reset stops the account's access tokens and connected
   apps, unlinks Google and GitHub, and stops its share links, all in the same step, and its notice

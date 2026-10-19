@@ -458,7 +458,6 @@
   },
   "tokens": {
     "heading": "Pristupni tokeni",
-    "intro": "Pristupni token omogućuje vašem AI asistentu ili skripti da čita recepte, sirovine, bilješke i zapisnike pečenja na vašem računu. Za sada token može samo čitati: nikad ništa ne mijenja ni uklanja. Svaki token prestaje raditi na dan koji odaberete ili čim ga opozovete.",
     "howTo": "Kako povezati AI asistenta",
     "listLabel": "Vaši pristupni tokeni",
     "none": "Nemate pristupnih tokena.",

@@ -593,7 +593,6 @@
     "providers.reauthFirst": "12mzrcd",
     "providers.reauthFailed": "1kwgl68",
     "tokens.heading": "khe627",
-    "tokens.intro": "vaewfs",
     "tokens.howTo": "myrxmb",
     "tokens.listLabel": "yaopwq",
     "tokens.none": "1rfv0yp",
@@ -2070,7 +2069,6 @@
     "privacy.storedShares": "10n8a65",
     "privacy.storedTokens": "1n2w0b0",
     "privacy.storedActivity": "f8ryl4",
-    "privacy.storedLimits": "ut83i8",
     "privacy.storedTrial": "1g22xkw",
     "privacy.storedResets": "13cd566",
     "privacy.storedLogs": "1hueguh",
@@ -2093,7 +2091,6 @@
     "privacy.choiceNoWarranty": "14uhp5z",
     "privacy.keptHeading": "rtds2u",
     "privacy.keptAccount": "mtin3m",
-    "privacy.keptTrash": "hrybzf",
     "privacy.keptShares": "odqwr3",
     "privacy.keptTokens": "1bhz5zt",
     "privacy.keptActivity": "juu58r",
@@ -2179,7 +2176,6 @@
     "assistants.lead": "tzorvq",
     "assistants.whatHeading": "1ucqwwz",
     "assistants.what": "qlnvtg",
-    "assistants.mine": "rqdn7x",
     "assistants.caution": "xwqt6p",
     "assistants.addressHeading": "1qm31bo",
     "assistants.address": "61jvpl",
@@ -2199,8 +2195,7 @@
     "assistants.appsHeading": "ihmrjv",
     "assistants.apps": "1934ihq",
     "assistants.stopHeading": "55fvxd",
-    "assistants.stop": "o7w95d",
-    "assistants.limits": "2fat5v"
+    "assistants.stop": "o7w95d"
   },
   "guides/firing": {
     "": "e0sp8g",

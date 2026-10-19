@@ -458,7 +458,6 @@
   },
   "tokens": {
     "heading": "Tokens de acceso",
-    "intro": "Un token de acceso permite a su propio asistente de IA o script leer las recetas, los materiales, las notas y los registros de cocción de su cuenta. Por ahora un token solo puede leer: nunca cambia ni quita nada. Cada token deja de funcionar el día que elija, o en cuanto lo revoque.",
     "howTo": "Cómo conectar un asistente de IA",
     "listLabel": "Sus tokens de acceso",
     "none": "No tiene ningún token de acceso.",

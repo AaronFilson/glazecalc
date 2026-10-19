@@ -458,7 +458,6 @@
   },
   "tokens": {
     "heading": "Dostopni žetoni",
-    "intro": "Dostopni žeton omogoča vašemu pomočniku z umetno inteligenco ali skriptu, da bere recepte, surovine, zapiske in dnevnike žganja v vašem računu. Za zdaj lahko žeton samo bere: nikoli ničesar ne spremeni ali odstrani. Vsak žeton preneha delovati na dan, ki ga izberete, ali takoj, ko ga prekličete.",
     "howTo": "Kako povezati pomočnika z umetno inteligenco",
     "listLabel": "Vaši dostopni žetoni",
     "none": "Nimate dostopnih žetonov.",

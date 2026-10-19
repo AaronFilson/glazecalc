@@ -4,6 +4,7 @@ import {
   Injector,
   OnInit,
   afterNextRender,
+  computed,
   inject,
   input,
   signal,
@@ -37,8 +38,10 @@ const nameCheck =
 
 /**
  * "Access tokens" on the account page (docs/integrations-plan.md, item 27):
- * tokens the person makes for their own AI assistant or script, which for now
- * can only read their records. Making one asks for the password (for an
+ * tokens the person makes for their own AI assistant or script, to read their
+ * records ("Read only", the default) or to read and change them ("Read and
+ * change", for a shorter time: the server sends the lifetimes each may have).
+ * Making one asks for the password (for an
  * account with no password, a fresh sign-in with Google or GitHub) and, with
  * two-step sign-in on, a second step (IdentityConfirm), as other changes to
  * how the account is reached do. The new token is shown once, to copy; the
@@ -62,7 +65,7 @@ const nameCheck =
       @if (made(); as token) {
         <div class="new-token-panel">
           <h3 id="new-token-heading" tabindex="-1" #panelHeading>{{ t('account.tokens.newHeading') }}</h3>
-          <p>{{ t('account.tokens.newText') }}</p>
+          <p>{{ madeCanWrite() ? t('account.tokens.newTextWrite') : t('account.tokens.newText') }}</p>
           <label for="new-token" class="form-label">{{ t('account.tokens.newLabel') }}</label>
           <input
             id="new-token"
@@ -96,7 +99,7 @@ const nameCheck =
                   <span class="token-hint">{{ t('account.tokens.hint', { hint: token.hint }) }}</span>
                 </div>
                 <div class="form-text">
-                  {{ t('account.tokens.readOnly') }} ·
+                  {{ canWrite(token) ? t('account.tokens.readWrite') : t('account.tokens.readOnly') }} ·
                   {{ t('account.tokens.created', { date: (token.createdAt | gcDate: 'medium') }) }} ·
                   @if (token.lastUsedAt) {
                     {{ t('account.tokens.lastUsed', { date: (token.lastUsedAt | gcDate: 'medium') }) }}
@@ -172,16 +175,53 @@ const nameCheck =
               />
               <div id="token-name-hint" class="form-text">{{ t('account.tokens.nameHint') }}</div>
             </div>
+            <fieldset class="mb-3">
+              <legend class="form-label scope-legend">{{ t('account.tokens.scope') }}</legend>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="tokenScope"
+                  id="token-scope-read"
+                  value="data:read"
+                  aria-describedby="token-scope-read-hint"
+                  [ngModel]="scope()"
+                  (ngModelChange)="chooseScope($event)"
+                />
+                <label class="form-check-label" for="token-scope-read">{{ t('account.tokens.readOnly') }}</label>
+                <div id="token-scope-read-hint" class="form-text">{{ t('account.tokens.scopeNote') }}</div>
+              </div>
+              @if (list.scopes.includes('data:write')) {
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="tokenScope"
+                    id="token-scope-write"
+                    value="data:write"
+                    aria-describedby="token-scope-write-hint"
+                    [ngModel]="scope()"
+                    (ngModelChange)="chooseScope($event)"
+                  />
+                  <label class="form-check-label" for="token-scope-write">{{ t('account.tokens.readWrite') }}</label>
+                  <div id="token-scope-write-hint" class="form-text">{{ t('account.tokens.scopeWriteNote') }}</div>
+                </div>
+              }
+            </fieldset>
             <div class="mb-3">
               <label for="token-days" class="form-label">{{ t('account.tokens.expiry') }}</label>
               <select id="token-days" name="tokenDays" class="form-select" [(ngModel)]="days">
-                @for (choice of list.expiryDays; track choice) {
+                @for (choice of expiryChoices(); track choice) {
                   <option [ngValue]="choice">{{ t('account.tokens.days', { count: choice }) }}</option>
                 }
               </select>
-              <div class="form-text">{{ t('account.tokens.expiryHint') }}</div>
+              <div class="form-text">
+                {{ t('account.tokens.expiryHint') }}
+                @if (scope() === 'data:write') {
+                  {{ t('account.tokens.expiryWriteHint', { count: writeMost() }) }}
+                }
+              </div>
             </div>
-            <p class="form-text">{{ t('account.tokens.scopeNote') }}</p>
             @if (!confirming()) {
               <button
                 id="token-submit"
@@ -214,6 +254,9 @@ const nameCheck =
   styles: `
     .account-form {
       max-width: 26rem;
+    }
+    .scope-legend {
+      font-size: inherit;
     }
     .token-list {
       list-style: none;
@@ -271,6 +314,18 @@ export class TokensSection implements OnInit {
   protected readonly nameMax = TOKEN_NAME_MAX;
   protected readonly name = signal('');
   protected readonly days = signal(30);
+  /** What the new token may do: read only (the default), or read and change. */
+  protected readonly scope = signal<'data:read' | 'data:write'>('data:read');
+  /** Whether the token just made can change records, for the words beside it. */
+  protected readonly madeCanWrite = signal(false);
+  /** The lifetimes the chosen scope may have: a token that changes records has the shorter ones. */
+  protected readonly expiryChoices = computed(() => {
+    const list = this.service.list();
+    if (!list) return [];
+    return this.scope() === 'data:write' ? (list.writeExpiryDays ?? []) : list.expiryDays;
+  });
+  /** The longest a token that changes records may last. */
+  protected readonly writeMost = computed(() => Math.max(0, ...(this.service.list()?.writeExpiryDays ?? [])));
   protected readonly busy = signal(false);
   protected readonly loadFailed = signal(false);
   protected readonly confirming = signal(false);
@@ -287,6 +342,17 @@ export class TokensSection implements OnInit {
     } catch {
       this.loadFailed.set(true);
     }
+  }
+
+  protected canWrite(token: TokenRow): boolean {
+    return token.scopes.includes('data:write');
+  }
+
+  /** Chooses what the token may do; a lifetime the choice does not allow becomes its longest. */
+  protected chooseScope(scope: 'data:read' | 'data:write'): void {
+    this.scope.set(scope);
+    const choices = this.expiryChoices();
+    if (choices.length && !choices.includes(this.days())) this.days.set(Math.max(...choices));
   }
 
   protected start(): void {
@@ -306,9 +372,11 @@ export class TokensSection implements OnInit {
       return;
     }
     try {
-      const { token } = await this.service.create(this.name().trim(), this.days(), proof);
+      const { token } = await this.service.create(this.name().trim(), this.days(), proof, this.scope());
       this.confirming.set(false);
+      this.madeCanWrite.set(this.scope() === 'data:write');
       this.name.set('');
+      this.scope.set('data:read');
       this.copied.set('');
       this.made.set(token);
       afterNextRender(() => this.panelHeading()?.nativeElement.focus(), { injector: this.injector });
@@ -325,6 +393,7 @@ export class TokensSection implements OnInit {
           return;
         case 'token-limit':
         case 'token-expiry-choices':
+        case 'token-write-expiry':
         case 'token-scope-choices':
           this.confirming.set(false);
           this.notices.error(errorMessage(err, translate('account.tokens.failed')));
