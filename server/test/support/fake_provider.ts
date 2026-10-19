@@ -1,10 +1,13 @@
-// A stand-in for Google and GitHub, for the server tests and the browser
-// tests (e2e/oauth.spec.js): the endpoints server/lib/oauth.ts calls when
-// OAUTH_TEST_BASE points here. It checks what a real provider checks (the
+// A stand-in for Google, GitHub and Microsoft, for the server tests and the
+// browser tests (e2e/oauth.spec.js): the endpoints server/lib/oauth.ts calls
+// when OAUTH_TEST_BASE points here. It checks what a real provider checks (the
 // client id and secret, the redirect URI, the PKCE verifier against the
 // challenge, a code used once) and answers as each does: Google with an ID
 // token signed by a key of its own, published at /google/jwks; GitHub with an
-// access token for /user and /user/emails.
+// access token for /user and /user/emails; Microsoft with an ID token naming
+// the person's tenant (tid), its issuer <base>/microsoft/<tid>/v2.0, signed by
+// the same key, published at /microsoft/jwks with the issuer template
+// Microsoft's `common` keys carry.
 //
 // The person signing in at the provider is set beforehand: for the next
 // authorize request (next.google = { sub, email, emailVerified }), which
@@ -15,13 +18,19 @@ import http from 'node:http';
 import type { AddressInfo } from 'node:net';
 import jwt from 'jsonwebtoken';
 
-export type FakeProviderId = 'google' | 'github';
+export type FakeProviderId = 'google' | 'github' | 'microsoft';
+
+/** Microsoft's tenant for personal accounts; the fake's default tenant. */
+export const CONSUMER_TENANT = '9188040d-6c67-4c5b-b112-36a304b66dad';
 
 export interface FakeIdentity {
-  /** Google's sub; GitHub's id, digits only. */
+  /** Google's and Microsoft's sub; GitHub's id, digits only. */
   sub: string;
   email?: string | null;
+  /** Google and GitHub; Microsoft sends no such claim. */
   emailVerified?: boolean;
+  /** Microsoft: the tenant (CONSUMER_TENANT when none is given). */
+  tid?: string;
 }
 
 interface Grant {
@@ -32,7 +41,7 @@ interface Grant {
   method: string;
   redirectUri: string;
   clientId: string;
-  /** max_age=0 was asked for: the person signed in again just now (auth_time). */
+  /** max_age=0 (Google) or prompt=login (Microsoft) was asked for: the person signed in again just now (auth_time). */
   signInAgain: boolean;
 }
 
@@ -41,12 +50,15 @@ export const FAKE_SETTINGS = {
   GOOGLE_CLIENT_ID: 'google-client',
   GOOGLE_CLIENT_SECRET: 'google-secret',
   GITHUB_CLIENT_ID: 'github-client',
-  GITHUB_CLIENT_SECRET: 'github-secret'
+  GITHUB_CLIENT_SECRET: 'github-secret',
+  MICROSOFT_CLIENT_ID: '00000000-1111-2222-3333-444444444444',
+  MICROSOFT_CLIENT_SECRET: 'microsoft-secret'
 };
 
 const SECRETS: Record<FakeProviderId, [string, string]> = {
   google: [FAKE_SETTINGS.GOOGLE_CLIENT_ID, FAKE_SETTINGS.GOOGLE_CLIENT_SECRET],
-  github: [FAKE_SETTINGS.GITHUB_CLIENT_ID, FAKE_SETTINGS.GITHUB_CLIENT_SECRET]
+  github: [FAKE_SETTINGS.GITHUB_CLIENT_ID, FAKE_SETTINGS.GITHUB_CLIENT_SECRET],
+  microsoft: [FAKE_SETTINGS.MICROSOFT_CLIENT_ID, FAKE_SETTINGS.MICROSOFT_CLIENT_SECRET]
 };
 
 const sha256 = (value: string): string => crypto.createHash('sha256').update(value).digest('base64url');
@@ -56,10 +68,16 @@ export class FakeProvider {
   base = '';
   /** Who signs in at the next authorize request, per provider; none answers access_denied. */
   next: Partial<Record<FakeProviderId, FakeIdentity>> = {};
-  /** Changes made to the next ID token, to test that the app refuses it (nonce, aud, iss, exp, auth_time). */
+  /** Changes made to the next ID token, to test that the app refuses it (nonce, aud, iss, tid, exp, auth_time). */
   tamper: Record<string, unknown> | null = null;
+  /**
+   * The issuer /microsoft/jwks names for its key: the `common` key set's
+   * template by default (null); one tenant's issuer to test that its key signs
+   * for no other; or '' for none.
+   */
+  microsoftKeyIssuer: string | null = null;
   /** Token requests answered, per provider. */
-  tokenRequests: Record<FakeProviderId, number> = { google: 0, github: 0 };
+  tokenRequests: Record<FakeProviderId, number> = { google: 0, github: 0, microsoft: 0 };
   private server: http.Server | null = null;
   private readonly keys: { privateKey: crypto.KeyObject; publicKey: crypto.KeyObject };
   private readonly kid: string;
@@ -113,7 +131,7 @@ export class FakeProvider {
       method: get('code_challenge_method'),
       redirectUri: get('redirect_uri'),
       clientId: get('client_id'),
-      signInAgain: get('max_age') === '0'
+      signInAgain: get('max_age') === '0' || (provider === 'microsoft' && get('prompt') === 'login')
     });
     return { code, state: get('state') };
   }
@@ -132,7 +150,7 @@ export class FakeProvider {
     const url = new URL(req.url ?? '/', this.base);
     const [, provider, ...rest] = url.pathname.split('/') as [string, FakeProviderId, ...string[]];
     const step = rest.join('/');
-    if (provider !== 'google' && provider !== 'github') return this.json(res, 404, { error: 'not_found' });
+    if (!(provider in SECRETS)) return this.json(res, 404, { error: 'not_found' });
 
     if (step === 'authorize' && req.method === 'GET') {
       const back = new URL(url.searchParams.get('redirect_uri') ?? '');
@@ -177,6 +195,29 @@ export class FakeProvider {
         return this.json(res, 200, { access_token: accessToken, token_type: 'bearer', scope: 'user:email' });
       }
       const now = Math.floor(Date.now() / 1000);
+      if (provider === 'microsoft') {
+        // As Microsoft's v2.0 ID token: the tenant's issuer, tid, a sub, the
+        // email when the account has one (never email_verified), and auth_time
+        // when the app registration asks for it (here: after prompt=login).
+        const tid = grant.identity.tid ?? CONSUMER_TENANT;
+        const claims: Record<string, unknown> = {
+          ver: '2.0',
+          iss: this.base + '/microsoft/' + tid + '/v2.0',
+          aud: id,
+          tid,
+          sub: grant.identity.sub,
+          ...(grant.identity.email ? { email: grant.identity.email } : {}),
+          nonce: grant.nonce,
+          ...(grant.signInAgain && { auth_time: now }),
+          iat: now,
+          nbf: now,
+          exp: now + 3600,
+          ...this.tamper
+        };
+        this.tamper = null;
+        const idToken = jwt.sign(claims, this.keys.privateKey, { algorithm: 'RS256', keyid: this.kid });
+        return this.json(res, 200, { access_token: 'eyJ.fake', id_token: idToken, token_type: 'Bearer' });
+      }
       const claims: Record<string, unknown> = {
         iss: this.base + '/google',
         aud: id,
@@ -196,6 +237,14 @@ export class FakeProvider {
     if (provider === 'google' && step === 'jwks') {
       const jwk = this.keys.publicKey.export({ format: 'jwk' });
       return this.json(res, 200, { keys: [{ ...jwk, kid: this.kid, use: 'sig', alg: 'RS256' }] });
+    }
+
+    if (provider === 'microsoft' && step === 'jwks') {
+      const jwk = this.keys.publicKey.export({ format: 'jwk' });
+      const issuer = this.microsoftKeyIssuer ?? this.base + '/microsoft/{tenantid}/v2.0';
+      return this.json(res, 200, {
+        keys: [{ ...jwk, kid: this.kid, use: 'sig', ...(this.microsoftKeyIssuer !== '' && { issuer }) }]
+      });
     }
 
     if (provider === 'github' && step.startsWith('api/')) {

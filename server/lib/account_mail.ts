@@ -4717,7 +4717,7 @@ export const noticeMfa = (
   }
 };
 
-// Notices about signing in with Google or GitHub (server/routes/oauth_routes.ts),
+// Notices about signing in with Google, GitHub or Microsoft (server/routes/oauth_routes.ts),
 // in English until the next translation wave; other languages get the English.
 
 /** Sent when a provider is linked: {account}, {provider}, {page}, {forgot} and {app}. */
@@ -5241,7 +5241,7 @@ export const PROVIDER_UNLINKED: Record<string, Email> = {
 };
 
 /** A provider's name as the emails write it: a brand, the same in every language. */
-export const PROVIDER_NAMES: Record<string, string> = { google: 'Google', github: 'GitHub' };
+export const PROVIDER_NAMES: Record<string, string> = { google: 'Google', github: 'GitHub', microsoft: 'Microsoft' };
 
 /**
  * The parts of the email after a password reset that stopped anything, put
@@ -5250,7 +5250,7 @@ export const PROVIDER_NAMES: Record<string, string> = { google: 'Google', github
  * named as brands, and {page}; none), and the closing ({forgot} and {app}).
  * A reset means someone else may have had the password, so it stops the
  * account's access tokens and connected apps (docs/adr/0017-mcp-server.md), its
- * links to Google and GitHub (docs/adr/0015-provider-sign-in.md) and its share
+ * links to Google, GitHub and Microsoft (docs/adr/0015-provider-sign-in.md) and its share
  * links (docs/adr/0020-share-links.md). English only so far: the next
  * translation wave adds the others, and until then every language gets it.
  */
