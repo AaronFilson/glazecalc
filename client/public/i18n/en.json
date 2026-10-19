@@ -95,7 +95,7 @@
     "about": "Glazecalc is a free, open-source glaze chemistry calculator and notebook. See how it works out a unity formula and how it is built.",
     "privacy": "How Glazecalc handles your data: no ads, no analytics and no tracking, and nothing is sold. What is kept, why, and how to use your rights.",
     "terms": "The terms for using Glazecalc: free for your own glazes and work, fair to the shared server, and provided as is.",
-    "assistants": "Connect Claude, GitHub Copilot, Cursor or Gemini to Glazecalc through MCP: glaze chemistry, limit checks, substitutes and the guides, and your own recipes with an access token.",
+    "assistants": "Use Glazecalc from Claude, Copilot, Cursor or Gemini through MCP: glaze chemistry, limit checks, substitutes and the guides, and your own recipes.",
     "signup": "Create a free Glazecalc account to keep your glaze recipes, materials, notes and firing logs. No ads, and your data is never sold.",
     "imageAlt": "The Glazecalc home page: free glaze chemistry for potters, beside a photo of fired cone packs."
   },
