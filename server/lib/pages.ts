@@ -6,7 +6,9 @@
 // and preview text in the language with its og:locale, and noindex for a
 // language not offered yet or a page with nothing to find in a search
 // (isAppOnlyPage). hreflang is the code in the address, script and
-// all (zh-Hans), which Google reads.
+// all (zh-Hans), which Google reads. A page in English only (ENGLISH_ONLY_PAGES) has one
+// address for search engines, the English: every language's copy names it as
+// canonical, the others are noindex, and none has hreflang.
 import languages from '../../lib/regions/languages.js';
 import type { Language } from '../../lib/regions/languages.js';
 import { ENGLISH_ONLY_PAGES, PUBLIC_PAGES, prerenderedFile } from '../../lib/pages.js';

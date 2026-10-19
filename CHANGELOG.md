@@ -6,6 +6,19 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Added
 
+- **A companion to John Britt's free glaze course** (/guides/learn-with-john-britt): a sixth
+  guide, in English only, with one section for each of 12 units of his free online Glaze Course on
+  YouTube. Each unit links his videos by the titles he gave them (never copied, retold or
+  embedded), credits him, his site and his two glaze books, says Glazecalc is not connected with
+  him, and adds the Glazecalc guide sections to read and one to three exercises on the recipe page,
+  Blends, the specific gravity calculator, firing logs and the MCP tools; the lab units send the
+  reader to the safe mixing guide first. Every language shows the English with the "not
+  translated" notice; search engines get the English address only (canonical, noindex on the other
+  languages' copies, no hreflang, the English alone in the sitemap), and the translation checks
+  expect no copies (`ENGLISH_ONLY_PAGES` in lib/pages.js). The MCP prompt `glaze_course_lesson`
+  (unit completed from the units' names; recipe, cone and language optional) reads the units from
+  the same guide (server/mcp/course.ts) and attaches the unit and its guide sections.
+  `node scripts/live-check.mjs --videos` checks by hand that the videos are still on YouTube.
 - **Chemistry against the stated cone** (docs/adr/0022-chemistry-against-the-stated-cone.md): one
   line at the top of the recipe page's limits panel says whether the glaze's chemistry fits its
   firing, the recipe's stated cone or the band chosen in the panel. It gives a note only when boron

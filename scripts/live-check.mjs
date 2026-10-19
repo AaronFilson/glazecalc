@@ -9,6 +9,16 @@
 // 3. Every live language's home page and every English public page
 //    (lib/pages.js) answers 200 with a page that has a heading.
 // Read-only: plain GETs, a few at a time. e2e/live loads the same pages in a browser.
+//
+//   node scripts/live-check.mjs --videos
+//
+// Instead, checks that each of John Britt's videos the course companion links
+// (client/public/i18n/guides/learn-with-john-britt/en.md) is still on YouTube,
+// by asking YouTube's oEmbed address about it, which answers 404 or 401 for a
+// video removed or made private. Off by default and never in CI: run it now
+// and then, by hand, and fix the guide if a video has gone.
+import { readFileSync } from 'node:fs';
+import path from 'node:path';
 import { pathToFileURL } from 'node:url';
 import languages from '../lib/regions/languages.js';
 import pages from '../lib/pages.js';
@@ -42,6 +52,55 @@ export function headerProblems(headers, url) {
   if (staging && !noindex) problems.push('staging lacks X-Robots-Tag: noindex');
   if (!staging && noindex) problems.push('production says X-Robots-Tag: noindex (a staging file?)');
   return problems;
+}
+
+const COURSE_GUIDE = path.join(
+  import.meta.dirname,
+  '..',
+  'client',
+  'public',
+  'i18n',
+  'guides',
+  'learn-with-john-britt',
+  'en.md'
+);
+
+/**
+ * The videos a guide links: each title and address, in order, once.
+ * @param {string} markdown
+ * @returns {Array<{ title: string, url: string }>}
+ */
+export function videosIn(markdown) {
+  const seen = new Map();
+  for (const [, title, url] of markdown.matchAll(/\[([^\]]+)\]\((https:\/\/www\.youtube\.com\/watch\?v=[\w-]+)\)/g)) {
+    if (!seen.has(url)) seen.set(url, title);
+  }
+  return [...seen].map(([url, title]) => ({ title, url }));
+}
+
+/**
+ * Where YouTube says whether a video is there to watch.
+ * @param {string} url
+ * @returns {string}
+ */
+export const oembedFor = (url) => 'https://www.youtube.com/oembed?format=json&url=' + encodeURIComponent(url);
+
+/** Checks every video the course companion links; exits 1 if any has gone. */
+async function checkVideos() {
+  const videos = videosIn(readFileSync(COURSE_GUIDE, 'utf8'));
+  const failures = [];
+  await inTurns(
+    videos.map((video) => async () => {
+      const reply = await fetch(oembedFor(video.url), { redirect: 'manual' });
+      if (reply.status !== 200) failures.push(`${video.url} (${video.title}) answered ${reply.status}`);
+    })
+  );
+  if (failures.length) {
+    console.error(`${failures.length} of John Britt's videos could not be found:`);
+    for (const failure of failures) console.error('  ' + failure);
+    process.exit(1);
+  }
+  console.log(`All ${videos.length} of John Britt's videos the course companion links are on YouTube.`);
 }
 
 /** Runs each of the jobs, AT_ONCE at a time; resolves when all have. */
@@ -88,4 +147,7 @@ async function main() {
   console.log(`${base}: health, headers and ${list.length} pages are as they should be.`);
 }
 
-if (import.meta.url === pathToFileURL(process.argv[1] ?? '').href) await main();
+if (import.meta.url === pathToFileURL(process.argv[1] ?? '').href) {
+  if (process.argv.includes('--videos')) await checkVideos();
+  else await main();
+}

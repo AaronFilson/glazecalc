@@ -13,6 +13,7 @@ import guideList from '../../../public/i18n/guides/en.json';
 import firing from '../../../public/i18n/guides/firing/en.md';
 import glazingBasics from '../../../public/i18n/guides/glazing-basics/en.md';
 import homeSafety from '../../../public/i18n/guides/home-safety/en.md';
+import course from '../../../public/i18n/guides/learn-with-john-britt/en.md';
 import makingAGlaze from '../../../public/i18n/guides/making-a-glaze/en.md';
 import safeMixing from '../../../public/i18n/guides/safe-mixing/en.md';
 
@@ -26,6 +27,9 @@ const PAGES: Array<[string, string]> = [
 
 /** What the guides list and the more-guides block call the home safety guide. */
 const HOME_SAFETY_LINK = 'Glaze safety at home: children, pets and the kiln';
+
+/** The companion to John Britt's course, in English only. */
+const COURSE_TITLE = "Learn with John Britt's free glaze course";
 
 /** The address the guides are opened at. */
 const HERE = '/guides/this-guide';
@@ -50,16 +54,37 @@ describe('guides', () => {
     return { fixture, page: fixture.nativeElement as HTMLElement };
   };
 
-  it('lists the five guides, each linked to its page', async () => {
+  it('lists the six guides, each linked to its page', async () => {
     const fixture = TestBed.createComponent(GuidesPage);
     await fixture.whenStable();
     const page = fixture.nativeElement as HTMLElement;
     const cards = [...page.querySelectorAll('.guide-card')];
     expect(cards.map((a) => a.getAttribute('href'))).toEqual(GUIDES.map((guide) => guide.path));
     // The list's link text carries the search words; the home safety guide's own heading stays friendly.
-    expect(cards.map((a) => a.querySelector('h2')?.textContent?.trim())).toEqual(
-      PAGES.map(([title]) => (title === "Don't poison your family" ? HOME_SAFETY_LINK : title))
-    );
+    expect(cards.map((a) => a.querySelector('h2')?.textContent?.trim())).toEqual([
+      ...PAGES.map(([title]) => (title === "Don't poison your family" ? HOME_SAFETY_LINK : title)),
+      COURSE_TITLE
+    ]);
+  });
+
+  it("shows the companion to John Britt's course: credited, linked to his videos, never embedding them", async () => {
+    const { page } = await render(course, 'en');
+    expect([...page.querySelectorAll('h1')].map((h) => h.textContent?.trim())).toEqual([COURSE_TITLE]);
+    expect(page.textContent).toContain('This guide is not translated yet, so it is shown in English.');
+    const sections = [...page.querySelectorAll('.guide h2')].map((h) => h.id);
+    expect(sections[0]).toBe('about');
+    expect(sections.at(-1)).toBe('sources');
+    expect(sections.filter((id) => id !== 'about' && id !== 'more' && id !== 'sources')).toHaveSize(12);
+    expect(page.querySelector('#about')?.closest('section')?.textContent).toContain('not connected with him');
+    // His videos are links to YouTube, opened there; nothing is embedded.
+    const videos = [...page.querySelectorAll<HTMLAnchorElement>('.guide a[href^="https://www.youtube.com/watch"]')];
+    expect(videos.length).toBe(49);
+    expect(page.querySelector('iframe, embed, object, video')).toBeNull();
+    // Every unit with lab work sends the reader to the safe mixing guide first.
+    for (const id of ['blending', 'test-tiles-and-melt', 'slurry-and-application', 'raw-materials']) {
+      const warning = page.querySelector(`#${id}`)?.closest('section')?.querySelector('.guide-warning');
+      expect(warning?.querySelector('a')?.getAttribute('href'), id).toContain('/guides/safe-mixing');
+    }
   });
 
   it("keeps the home safety guide's friendly heading but gives search the words in its title and meta", () => {
@@ -319,6 +344,18 @@ describe('guides', () => {
       const german = load('de');
       httpMock().expectOne('/i18n/guides/firing/de.md').flush('', { status: 404, statusText: 'Not Found' });
       httpMock().expectOne('/i18n/guides/firing/en.md').flush('# English');
+      expect(await german).toEqual({ text: '# English', language: 'en' });
+    });
+
+    it('reads the English at once for a guide in English only, with the notice', async () => {
+      TestBed.overrideProvider(PAGE_LANGUAGE, { useValue: 'de' });
+      const route = {
+        data: { guide: 'learn-with-john-britt', englishOnly: true }
+      } as unknown as ActivatedRouteSnapshot;
+      const result = TestBed.runInInjectionContext(() => guideText(route, {} as RouterStateSnapshot));
+      const german = isObservable(result) ? firstValueFrom(result) : Promise.resolve(result as GuideText);
+      httpMock().expectNone('/i18n/guides/learn-with-john-britt/de.md');
+      httpMock().expectOne('/i18n/guides/learn-with-john-britt/en.md').flush('# English');
       expect(await german).toEqual({ text: '# English', language: 'en' });
     });
 
