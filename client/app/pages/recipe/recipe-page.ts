@@ -16,7 +16,7 @@ import {
 import { toSignal } from '@angular/core/rxjs-interop';
 import { FormsModule } from '@angular/forms';
 import { ActivatedRoute, Router, RouterLink } from '@angular/router';
-import { TranslocoDirective, translate } from '@jsverse/transloco';
+import { TranslocoDirective, TranslocoService, translate } from '@jsverse/transloco';
 import { marker } from '@jsverse/transloco-keys-manager/marker';
 import { map } from 'rxjs';
 import { CONES, MaterialInput } from '../../../../lib/chemistry';
@@ -79,7 +79,9 @@ import {
 import type { ConeResult } from '../../../../lib/cones/results';
 import { RecipeFiring } from './recipe-firing';
 import { RecipeFirings } from './recipe-firings';
-import { RecipeConeCards } from './recipe-cone-cards';
+import { RecipeConeCards, type ConePlace } from './recipe-cone-cards';
+import { recipeText } from './recipe-messages';
+import { coneFit } from '../../../../lib/recipe/cone-fit';
 import { ATMOSPHERE_NAMES, Reader, coneText, firingLine } from './firing-text';
 
 const INCLUDE_KEY = 'includeAdditives';
@@ -470,6 +472,25 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
   );
   /** The recipe's unity formula, for the limit cautions on each result card. */
   protected readonly unityForCards = computed(() => this.evaluation().analysis?.uList ?? null);
+  private readonly language = toSignal(inject(TranslocoService).langChanges$);
+  /**
+   * The cone check (lib/recipe/cone-fit.js, docs/adr/0022) for one result card's
+   * cone: only a note (the chemistry looks cooler or hotter than that cone), and
+   * only its first sentence; the limits panel gives the rest and the sources.
+   */
+  protected readonly coneFitForCard = computed(() => {
+    this.language();
+    const unity = this.unityForCards();
+    if (!unity) return null;
+    const processes = this.firedAt()?.processes ?? [];
+    const materials = this.materialNames();
+    return (place: ConePlace & { scale: ConeScale }): string | null => {
+      if (!place.cone) return null;
+      const fit = coneFit(unity, { scale: place.scale, low: place.cone, processes }, { materials });
+      const note = fit && (fit.verdict === 'cooler' || fit.verdict === 'hotter');
+      return note ? recipeText(fit.sentences[0]!) : null;
+    };
+  });
 
   // Saving: the saved recipe this is (if any), and whether it has changed since.
   protected readonly savedId = signal<string | null>(null);
