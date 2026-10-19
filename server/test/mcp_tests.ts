@@ -1380,7 +1380,9 @@ describe('MCP: limits', () => {
     process.env.RATE_LIMITS = 'off';
   });
 
-  it('allows 60 requests a minute from one address without a token, more for an account', async () => {
+  it('allows 60 requests a minute from one address without a token, more for an account', async function () {
+    // About 360 requests: more than the default 5 s on a busy machine.
+    this.timeout(30000);
     const { user } = await makeUser();
     const token = await makeToken(user);
     process.env.RATE_LIMITS = 'on';
