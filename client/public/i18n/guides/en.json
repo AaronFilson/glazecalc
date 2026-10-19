@@ -27,7 +27,7 @@
       "text": "Dust, respirators, cleaning, the materials that need most care, and venting the kiln."
     },
     "homeSafety": {
-      "title": "Don't poison your family",
+      "title": "Glaze safety at home: children, pets and the kiln",
       "text": "Pottery at home with children and pets: storage, dust, the kiln, and what to do if something is swallowed."
     },
     "firing": {
@@ -39,6 +39,7 @@
       "text": "His free video course on YouTube, unit by unit, with our guides to read and exercises to try in Glazecalc. In English."
     }
   },
+  "more": "More guides",
   "contents": "On this page",
   "poison": {
     "numbersFor": "Numbers for",

@@ -8,6 +8,8 @@ import { blocks, coneSystemsIn, forConeSystem, readGuide } from './guide-documen
 import { GuidePage } from './guide-page';
 import { GuideText, guideText } from './guide-text';
 import { GUIDES, GuidesPage } from './guides-page';
+import en from '../../../public/i18n/en.json';
+import guideList from '../../../public/i18n/guides/en.json';
 import firing from '../../../public/i18n/guides/firing/en.md';
 import glazingBasics from '../../../public/i18n/guides/glazing-basics/en.md';
 import homeSafety from '../../../public/i18n/guides/home-safety/en.md';
@@ -21,6 +23,9 @@ const PAGES: Array<[string, string]> = [
   ["Don't poison your family", homeSafety],
   ['Firing a basic kiln', firing]
 ];
+
+/** What the guides list and the more-guides block call the home safety guide. */
+const HOME_SAFETY_LINK = 'Glaze safety at home: children, pets and the kiln';
 
 /** The address the guides are opened at. */
 const HERE = '/guides/this-guide';
@@ -51,7 +56,41 @@ describe('guides', () => {
     const page = fixture.nativeElement as HTMLElement;
     const cards = [...page.querySelectorAll('.guide-card')];
     expect(cards.map((a) => a.getAttribute('href'))).toEqual(GUIDES.map((guide) => guide.path));
-    expect(cards.map((a) => a.querySelector('h2')?.textContent?.trim())).toEqual(PAGES.map(([title]) => title));
+    // The list's link text carries the search words; the home safety guide's own heading stays friendly.
+    expect(cards.map((a) => a.querySelector('h2')?.textContent?.trim())).toEqual(
+      PAGES.map(([title]) => (title === "Don't poison your family" ? HOME_SAFETY_LINK : title))
+    );
+  });
+
+  it("keeps the home safety guide's friendly heading but gives search the words in its title and meta", () => {
+    expect(readGuide(homeSafety).title).toBe("Don't poison your family");
+    expect(en.titles.homeSafety).toBe(`${HOME_SAFETY_LINK} - Glazecalc`);
+    expect(guideList.list.homeSafety.title).toBe(HOME_SAFETY_LINK);
+  });
+
+  afterEach(() => window.history.pushState({}, '', '/'));
+
+  for (const guide of GUIDES) {
+    it(`ends ${guide.path} with a block linking the other guides, by the list, and not itself`, async () => {
+      // The page's own address, as the browser has it (the guide view reads it).
+      window.history.pushState({}, '', guide.path);
+      const { page } = await render(firing);
+      const block = page.querySelector('nav.more-guides')!;
+      expect(block.querySelector('h2')?.textContent?.trim()).toBe('More guides');
+      const others = GUIDES.filter((other) => other.path !== guide.path);
+      expect([...block.querySelectorAll('a')].map((a) => a.getAttribute('href'))).toEqual(others.map((o) => o.path));
+      // Each link has the list's title, and its text follows.
+      expect(block.querySelector('li')?.textContent).toContain(': ');
+      expect(page.querySelector('.guide nav')).toBeNull();
+    });
+  }
+
+  it('lists every guide in the block on a page of no guide of the list', async () => {
+    const { page } = await render(firing);
+    expect([...page.querySelectorAll('.more-guides a')].map((a) => a.getAttribute('href'))).toEqual(
+      GUIDES.map((guide) => guide.path)
+    );
+    expect(page.querySelector('.more-guides a')?.textContent?.trim()).toBe('Glazing from first principles');
   });
 
   for (const [title, markdown] of PAGES) {

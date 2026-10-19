@@ -103,9 +103,40 @@ describe('recipe firing (lib/cones/firing.js)', () => {
     expect(firing.approxCone('sk', '10', 'orton')?.cone).to.not.equal('10');
     expect(firing.approxCone('sk', '12', 'orton')).to.eql({ cone: '10', basis: 'kyoto' });
     expect(firing.approxCone('orton', '10', 'sk')).to.eql({ cone: '12', basis: 'kyoto' });
-    // No fair equivalent from a nominal SK figure.
-    expect(firing.approxCone('sk', '9', 'orton')).to.equal(null);
+    // No equivalent for an SK cone Kyoto did not measure, nor for the JIS figure of one it did.
+    expect(firing.approxCone('sk', '6a', 'orton')).to.equal(null);
+    expect(firing.approxCone('sk', '15', 'orton')).to.equal(null);
     expect(firing.approxCone('temperature', '1222', 'orton')).to.eql({ cone: '6', basis: 'orton-60' });
+  });
+
+  it('matches SK and Orton by Kyoto’s same-kiln columns (100 °C an hour), not Orton’s 60 °C an hour chart', () => {
+    // Kyoto SK 7 … 14: 1183 1198 1211 1232 1253 1290 1311 1331; its Orton 4 … 12: 1179 1207 1211 1232 1252 1271 1290 1301 1324.
+    const sk = { 7: '4', 8: '5', 9: '6', 10: '7', 11: '8', 12: '10', 13: '11', 14: '12' };
+    for (const [from, to] of Object.entries(sk)) {
+      expect(firing.approxCone('sk', from, 'orton'), `SK ${from}`).to.eql({ cone: to, basis: 'kyoto' });
+    }
+    // The other way: the SK cone nearest within 15 °C; Orton 4 is SK 7 (not 8), Orton 6 is SK 9 (not 10).
+    const orton = { 4: '7', 5: '9', 6: '9', 7: '10', 8: '11', 10: '12', 11: '13', 12: '14' };
+    for (const [from, to] of Object.entries(orton)) {
+      expect(firing.approxCone('orton', from, 'sk'), `Orton ${from}`).to.eql({ cone: to, basis: 'kyoto' });
+    }
+    // Orton 9 (1271) is 18 °C from SK 11 and 19 from SK 12: no match; outside 4 to 12 and half cones, none.
+    for (const from of ['9', '3', '04', '5.5', '13']) expect(firing.approxCone('orton', from, 'sk')).to.equal(null);
+    // What is shown as a temperature is unchanged: SK 8 and 10 only.
+    expect(firing.approxCelsius('sk', '9')).to.equal(null);
+    // A cone is matched across the scales through them: SK 8 to 10 is Orton 5 to 7, and 4 and 8 are outside.
+    const block = { scale: 'sk' as const, low: '8', high: '10' };
+    expect([4, 5, 6, 7, 8].map((c) => firing.matchesCone(block, 'orton', String(c)))).to.eql([
+      false,
+      true,
+      true,
+      true,
+      false
+    ]);
+    // Orton 4 to 6 is SK 7 to 9, so SK 8 is within it and SK 10 is not.
+    const ortonBlock = { scale: 'orton' as const, low: '4', high: '6' };
+    expect(firing.matchesCone(ortonBlock, 'sk', '8')).to.equal(true);
+    expect(firing.matchesCone(ortonBlock, 'sk', '10')).to.equal(false);
   });
 
   it('shows half cones as ½', () => {

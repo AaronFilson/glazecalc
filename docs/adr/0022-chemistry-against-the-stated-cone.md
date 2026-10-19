@@ -52,7 +52,7 @@ The published evidence for reading the cone from the chemistry is thin:
   its figures are for (low fire at cone 04, mid at cone 6, high at cone 10), with the stated
   firing's processes; else the recipe's stated firing (`firedAt`). A cone's temperature comes from
   the existing helpers (`approxCelsius`): Orton's chart at 60 °C an hour, Kyoto's measured bends
-  for SK 8 and 10, SK 12 by its stated Orton equivalent (cone 10), a temperature as given.
+  for SK 8 and 10 (the SK to Orton match is ADR 0021's same-kiln one, not used here), SK 12 by its stated Orton equivalent (cone 10), a temperature as given.
   Bands are drawn as Hesselberth & Roy's set draws them: low below 1150 °C, mid below 1250 °C.
 - **A range is judged at its ends.** Cooler than its coolest cone, or hotter than its hottest, is
   a note. A range across two bands (cone 6–10) whose chemistry points to one band only, judged at

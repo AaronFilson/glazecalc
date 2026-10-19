@@ -69,7 +69,7 @@ const coneFilterArgs = {
     .max(6)
     .optional()
     .describe(
-      'Only recipes whose stated firing includes this cone ("6", "06", "5.5", SK "6a"), or for scale "temperature" this °C. A range matches any cone inside it; recipes tested at it come first. Recipes stated in another scale match approximately: Orton and SK by measured equivalents only (SK 8, 10 and 12), a temperature when the cone bends within 15 °C of it (Orton at 60 °C an hour).'
+      'Only recipes whose stated firing includes this cone ("6", "06", "5.5", SK "6a"), or for scale "temperature" this °C. A range matches any cone inside it; recipes tested at it come first. Recipes stated in another scale match approximately: Orton and SK by the Kyoto institute’s same-kiln table (SK 7 to 14 against Orton 4 to 12; other cones match their own scale only), a temperature when the cone bends within 15 °C of it (Orton at 60 °C an hour).'
     ),
   scale: z
     .enum(['orton', 'sk', 'temperature'])

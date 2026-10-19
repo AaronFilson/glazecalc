@@ -14,8 +14,8 @@ Glazecalc's SK chart gives the JIS nominal figures (SK 8 1250 °C, SK 10 1300 °
 municipal institute measured its own cones bending at 1198 °C and 1232 °C at 100 °C an hour, and
 names SK 12 as the replacement for Orton 10. (Its table measured more than those two: its own
 cones SK 7 to 14, at 1183, 1198, 1211, 1232, 1253, 1290, 1311 and 1331 °C, beside Orton cones 4 to
-12 bent in the same kiln. This was noted in review on 2026-10-18; the decision below uses only SK 8
-and 10, and whether to use the rest is open for the owner.)
+12 bent in the same kiln. This was noted in review on 2026-10-18; the owner then chose to match
+SK and Orton by that same-kiln table, see the amendment of 2026-10-19 below.)
 
 Wave 2 added `recipe.firing` as a band, `low`, `mid` or `high`, picked by hand for the limits
 panel. Recipes so far say their firing only in the notes, if at all.
@@ -50,18 +50,18 @@ panel. Recipes so far say their firing only in the notes, if at all.
   to °C by Orton's large-cone chart at 60 °C an hour (022–14; none above 14; a half cone halfway).
   SK to °C **only** by Kyoto's measured bends for SK 8 and 10 (1198 °C and 1232 °C, at 100 °C an
   hour), labelled approximate; every other SK cone shows no temperature at all (owner's decision,
-  review 2026-10-17). Kyoto measured SK 7 to 14 in the same table (see Context); the others are not
-  used. The JIS figures are never shown as a conversion: beside the measured ones they put
+  review 2026-10-17); Kyoto measured SK 7 to 14 in the same table (see Context), but only these two
+  are shown as a temperature. The JIS figures are never shown as a conversion: beside the measured ones they put
   the cones out of order (SK 7 1230 °C above SK 8 1198 °C, SK 9 1280 °C above SK 10). An SK cone
-  gets an Orton equivalent only from those two measured bends or where Kyoto named the replacement
-  (SK 12 ≈ Orton 10). A range is converted only when both ends have a figure and they run low to high, so no
+  gets an Orton equivalent, and the other way, only by Kyoto's same-kiln columns, see the amendment
+  below (SK 12 ≈ Orton 10 is Kyoto's own). A range is converted only when both ends have a figure and they run low to high, so no
   page shows half a range or one backwards. A shared recipe shows the author's own scale first,
   the conversion into the reader's beside it.
 - **The limits panel takes its bands from the firing.** Each cone maps to a band: Orton and
   temperatures by Hesselberth & Roy's edges (below 1150 °C low, below 1250 °C mid, else high, at
   the Orton chart's 60 °C/h figures, so cone 1–7 is mid and 8 up high); SK by a table, 022–4a low,
-  5a–10 mid, 11 up high, from Kyoto's equivalents (SK 8 near Orton 5, SK 10 near Orton 6–7, SK 12
-  for Orton 10). A range across bands (cone 6–10) shows **both bands' checks side by side**; a set
+  5a–10 mid, 11 up high, from Kyoto's equivalents (SK 8 near Orton 5, SK 10 near Orton 7, SK 11 near
+  Orton 8, SK 12 for Orton 10). A range across bands (cone 6–10) shows **both bands' checks side by side**; a set
   that reads two bands by the same figures shows them once. The wave-2 band picker stays and, when
   set, overrides. The MCP `get_recipe` checks the same way, with `checksAtOtherBands`. The recipe
   help (`recipe.help.numbers.limits`) says so.
@@ -109,12 +109,26 @@ panel. Recipes so far say their firing only in the notes, if at all.
   trial's records joining an account carry the fields as part of the record.
 - **Assistants match a cone across scales** (`list_recipes`, `matchesCone`): in the same scale,
   anywhere in the range; between Orton and SK, the recipe's range put into the asked scale by the
-  measured equivalents only (an SK cone with no measured equivalent matches SK recipes only); a
+  same-kiln equivalents only (a cone with none matches recipes in its own scale only); a
   cone against a temperature firing (either way) when the cone's figure (Orton's chart at 60 °C an
   hour, Kyoto's measured SK bends) is within 15 °C of the stated temperature or range.
 - **Duplicate for another cone** copies a saved recipe into the editor, unsaved, with the firing,
   band and links cleared, and says that moving cones usually needs reformulating.
 
+- **SK and Orton by Kyoto's same-kiln columns (amended 2026-10-19; owner's decision, from the
+  overnight review sci-data-04).** The institute's table measures its own cones SK 7 to 14 (1183,
+  1198, 1211, 1232, 1253, 1290, 1311, 1331 °C) and Orton cones 4 to 12 (1179, 1207, 1211, 1232,
+  1252, 1271, 1290, 1301, 1324 °C) in one kiln at 100 °C an hour. The first version compared
+  Kyoto's SK bends with Orton's own chart at 60 °C an hour, a different rate, which put Orton 4 at
+  SK 8 and Orton 6 at SK 10. Now an SK cone is given the Orton cone nearest it in Kyoto's Orton
+  column, and an Orton cone the SK cone nearest it in Kyoto's SK column, each within 15 °C or none
+  (`KYOTO_SK` and `KYOTO_ORTON` in `lib/cones/firing.js`; the table labels Orton 4 to 6 "4a" to
+  "6a" and the figure sits in the Orton column). So SK 7 to 14 are Orton 4, 5, 6, 7, 8, 10, 11 and
+  12; Orton 4, 5, 6, 7, 8, 10, 11 and 12 are SK 7, 9, 9, 10, 11, 12, 13 and 14; Orton 9, half
+  cones and cones outside 4 to 12 have none. (Orton 5 and 6 are 4 °C apart in the table, so both
+  are SK 9, and SK 8 is Orton 5: the match is approximate in both directions.) SK 12 for Orton 10
+  is still the institute's own statement. What is shown as a temperature is unchanged (SK 8 and
+  10 only), as are the bands. Conversions stay display only and say they are approximate.
 - **Result cards (amended 2026-10-19).** A recipe keeps the potter's summary of how it came out
   for each **cone and atmosphere** (owner's decision: cone 6 oxidation and cone 6 reduction are
   separate cards), as `coneResults: [{ cone, atmosphere?, summary }]` (`lib/cones/results.js`):
