@@ -285,11 +285,14 @@ each, and `staging.sh` refuses production's secret. The callbacks are exactly:
       to the password manager).
    7. A second client, "Glazecalc staging", with only
       `https://staging.glazecalcapp.com/api/auth/google/callback`.
-   8. Turn on the **`auth_time` claim** in the Google Auth Platform settings (Google's OpenID
-      Connect page: the claim is sent only when the request asks for it and it is enabled in
-      settings). A fresh sign-in that confirms a change on an account without a password asks
-      Google to sign the person in again (`max_age=0`) and needs `auth_time` to show it did;
-      without the claim every such confirmation is refused (`provider-not-fresh`).
+   8. **After brand verification:** Settings → Advanced Settings → **Session age claims**, which
+      sends the `auth_time` claim. Google offers it only to verified apps (until then it is greyed
+      out, "Advanced settings are available for verified apps"), so sign-in goes live without it.
+      A fresh sign-in that confirms a change on an account without a password asks Google to sign
+      the person in again (`max_age=0`) and needs `auth_time` to show it did; until the claim is
+      on, every such confirmation is refused (`provider-not-fresh`), and such a person sets a
+      password with "Forgot password" and confirms with that. Brand verification needs the home
+      page, privacy and terms links and the domain verified in Search Console.
 2. **GitHub** (the owner's account or the organisation: Settings → Developer settings → OAuth
    Apps → New OAuth App), twice:
    - "Glazecalc": homepage `https://glazecalcapp.com`, authorization callback URL
