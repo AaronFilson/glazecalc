@@ -28,6 +28,12 @@ import { createRequire } from 'node:module';
 import path from 'node:path';
 
 const { languageFor } = createRequire(import.meta.url)('../lib/regions/languages.js');
+const { ENGLISH_ONLY_PAGES } = createRequire(import.meta.url)('../lib/pages.js');
+
+/** The guides written in English only (lib/pages.js): never translated, so never counted as still in English. */
+export const ENGLISH_ONLY_GUIDES = ENGLISH_ONLY_PAGES.filter((page) => page.startsWith('/guides/')).map((page) =>
+  page.slice('/guides/'.length)
+);
 
 const ROOT = path.resolve(import.meta.dirname, '..');
 export const I18N = path.join(ROOT, 'client', 'public', 'i18n');
@@ -154,6 +160,7 @@ const guides = (dir) =>
     ? readdirSync(path.join(dir, 'guides'), { withFileTypes: true })
         .filter((entry) => entry.isDirectory() && existsSync(path.join(dir, 'guides', entry.name, 'en.md')))
         .map((entry) => entry.name)
+        .filter((name) => !ENGLISH_ONLY_GUIDES.includes(name))
         .sort()
     : [];
 

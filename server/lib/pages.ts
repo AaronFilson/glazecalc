@@ -9,10 +9,10 @@
 // all (zh-Hans), which Google reads.
 import languages from '../../lib/regions/languages.js';
 import type { Language } from '../../lib/regions/languages.js';
-import { PUBLIC_PAGES, prerenderedFile } from '../../lib/pages.js';
+import { ENGLISH_ONLY_PAGES, PUBLIC_PAGES, prerenderedFile } from '../../lib/pages.js';
 import { labelShown } from './site.ts';
 
-export { PUBLIC_PAGES };
+export { ENGLISH_ONLY_PAGES, PUBLIC_PAGES };
 
 /**
  * Pages that anyone can open but no search engine may index, nor any Referer
@@ -21,6 +21,15 @@ export { PUBLIC_PAGES };
  * set on the reply (server/app.ts), and pageHtml adds the same as <meta>.
  */
 export const PRIVATE_PAGES = ['/shared'];
+
+/**
+ * Whether an address is a public page written in English only (ENGLISH_ONLY_PAGES),
+ * in any language: /de/guides/learn-with-john-britt is. Its one address for
+ * search engines is the English; the other languages' copies are noindex, with
+ * no hreflang, and only the English is in the sitemap.
+ */
+export const isEnglishOnlyPage = (pathname: string): boolean =>
+  ENGLISH_ONLY_PAGES.includes(languages.pagePath(pathname));
 
 /** Whether an address is one of PRIVATE_PAGES, in any language: /de/shared is. */
 export const isPrivatePage = (pathname: string): boolean => PRIVATE_PAGES.includes(languages.pagePath(pathname));
@@ -173,7 +182,12 @@ export function pageHtml(
     head.push('<meta name="robots" content="noindex, nofollow" />');
     head.push('<meta name="referrer" content="no-referrer" />');
   }
-  if (listed) {
+  const englishOnly = listed && isEnglishOnlyPage(pathname);
+  if (englishOnly) {
+    // One page, in English, at one address: each language's copy points to it and stays out of the index.
+    head.push(`<link rel="canonical" href="${attribute(addressIn(site, 'en', page))}" />`);
+    if (code !== 'en' || !live.includes(code)) head.push('<meta name="robots" content="noindex" />');
+  } else if (listed) {
     head.push(`<link rel="canonical" href="${attribute(here)}" />`);
     if (!live.includes(code)) {
       head.push('<meta name="robots" content="noindex" />');
@@ -185,7 +199,9 @@ export function pageHtml(
     }
   }
   // Link previews read these; og:locale:alternate lists the other languages offered.
-  if (listed && live.includes(code)) {
+  if (englishOnly && code === 'en' && live.includes(code)) {
+    head.push(`<meta property="og:locale" content="${ogLocale(code)}" />`);
+  } else if (listed && !englishOnly && live.includes(code)) {
     head.push(`<meta property="og:locale" content="${ogLocale(code)}" />`);
     for (const other of live.filter((l) => l !== code)) {
       head.push(`<meta property="og:locale:alternate" content="${ogLocale(other)}" />`);
@@ -209,21 +225,26 @@ export function pageHtml(
   return out;
 }
 
-/** The sitemap: each public page in each language offered, with its other languages beside it. */
+/**
+ * The sitemap: each public page in each language offered, with its other
+ * languages beside it; a page in English only, at its English address alone.
+ */
 export function sitemap(site: string, live: readonly string[] = languages.LIVE_LANGUAGES): string {
   const entries = PUBLIC_PAGES.flatMap((page) =>
-    live.map((code) => {
-      const others =
-        live.length > 1
-          ? live
-              .map(
-                (other) =>
-                  `<xhtml:link rel="alternate" hreflang="${other}" href="${attribute(addressIn(site, other, page))}"/>`
-              )
-              .join('')
-          : '';
-      return `  <url><loc>${attribute(addressIn(site, code, page))}</loc>${others}</url>`;
-    })
+    ENGLISH_ONLY_PAGES.includes(page)
+      ? [`  <url><loc>${attribute(addressIn(site, 'en', page))}</loc></url>`]
+      : live.map((code) => {
+          const others =
+            live.length > 1
+              ? live
+                  .map(
+                    (other) =>
+                      `<xhtml:link rel="alternate" hreflang="${other}" href="${attribute(addressIn(site, other, page))}"/>`
+                  )
+                  .join('')
+              : '';
+          return `  <url><loc>${attribute(addressIn(site, code, page))}</loc>${others}</url>`;
+        })
   );
   return [
     '<?xml version="1.0" encoding="UTF-8"?>',
