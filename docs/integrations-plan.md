@@ -31,7 +31,7 @@ Google and GitHub are built ([ADR 0015](adr/0015-provider-sign-in.md)), on `fetc
 ## Phase 2: Public MCP tools, no account (4–6 days after item 6)
 
 19. **`POST /mcp`** on SDK v2, stateless, also serving 2025-era clients; GET and DELETE return 405; Origin and Host checks. M (1–2 d). New `server/mcp/index.ts`; `server/app.ts` (mount before the SPA fallback).
-20. **Tools:** `search_materials`, `get_material`, `analyze_recipe`, `check_limits`, `convert_cone_temperature`, `suggest_substitutes`, `search_guides`, with structured output and `language`/`temperature` arguments. M (2 d). `server/mcp/tools/*.ts`, `lib/chemistry`, `lib/recipe`, `data/`.
+20. **Tools:** `search_materials`, `get_material`, `analyze_recipe`, `check_limits`, `convert_cone_temperature`, `suggest_substitutes`, `search_guides`, and later `blend_recipes` (test tiles of a blend, or a comparison of two recipes; `server/mcp/tools/blends.ts`), with structured output and `language`/`temperature` arguments. M (2 d). `server/mcp/tools/*.ts`, `lib/chemistry`, `lib/recipe`, `data/`.
 21. **Resources and prompts** (guides per language and section, materials, cones; four prompts). S (0.5–1 d). `server/mcp/`.
 22. **Server-side translator** over `client/public/i18n/<lang>.json` using `intl-messageformat`. S. `server/mcp/i18n.ts`.
 23. **Limits and caps.** Per IP 60 a minute and 2,000 a day (with a token, per account 300 and 20,000); fitting tools 10 a minute; at most 40 recipe lines. S. `server/lib/rate_limit.ts`.

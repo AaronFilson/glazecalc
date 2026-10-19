@@ -3,16 +3,22 @@ import { FormsModule } from '@angular/forms';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { TranslocoDirective, translate } from '@jsverse/transloco';
 import { marker } from '@jsverse/transloco-keys-manager/marker';
+import { formatFormula } from '../../../../lib/chemistry';
+import { firingBands, isStated } from '../../../../lib/cones/firing';
+import type { FiringBlock } from '../../../../lib/cones/firing';
 import { formatScaled, totalOf } from '../../../../lib/recipe/amounts';
 import { BLEND_STEPS, blendTiles, mixRecipes } from '../../../../lib/recipe/blends';
 import type { BlendKind, BlendTile } from '../../../../lib/recipe/blends';
+import { coneFit } from '../../../../lib/recipe/cone-fit';
+import { LIMIT_SETS, limitRows } from '../../../../lib/recipe/limits';
+import { silicaAluminaRatio } from '../../../../lib/recipe/compare';
 import { ApiResourceFactory } from '../../core/api-resource.service';
 import { errorMessage } from '../../core/error-message';
 import { Additive, Recipe, RecipeMaterial } from '../../core/models';
 import { PreferencesService } from '../../core/preferences.service';
 import { Busy } from '../../shared/busy';
 import { localDate } from '../../shared/dates';
-import { percent } from '../../shared/format';
+import { fixed, percent } from '../../shared/format';
 import { Notices, NoticesList } from '../../shared/notices';
 import { NumberInput } from '../../shared/number-input';
 import { PageHeader } from '../../shared/page-header';
@@ -57,6 +63,26 @@ const KINDS: ReadonlyArray<{ kind: BlendKind; label: string; corners: string[]; 
 
 /** A test batch to start from, in each unit. */
 const DEFAULT_BATCH = { g: '100', lb: '0.25' };
+
+/** What a tile's row of the chemistry table shows; null where there is no figure. */
+interface TileChemistry {
+  number: number;
+  siAl: string;
+  boron: string;
+  expansion: string;
+  /** How many of the limit set's ranges the tile is past, for the firing's band. */
+  cautions: number | null;
+  /** The cone fit's verdict, when a firing is set. */
+  fit: string | null;
+}
+
+/** The cone fit's verdicts, as the keys of their words in the table. */
+const FIT_WORDS: Record<string, string> = {
+  fits: marker('recipe.blends.chemistry.fits'),
+  cooler: marker('recipe.blends.chemistry.cooler'),
+  hotter: marker('recipe.blends.chemistry.hotter'),
+  skipped: marker('recipe.blends.chemistry.skipped')
+};
 
 interface TileRecipe {
   tile: BlendTile;
@@ -260,6 +286,53 @@ interface TileRecipe {
           </ol>
         </section>
 
+        <section class="panel no-print" aria-labelledby="blend-chemistry-heading">
+          <details class="blend-chemistry" (toggle)="chemistryOpen.set($any($event.target).open)">
+            <summary id="blend-chemistry-heading">{{ t('recipe.blends.chemistry.heading') }}</summary>
+            @if (chemistryOpen()) {
+              <p class="small muted">{{ t('recipe.blends.chemistry.help') }}</p>
+              @if (firingFrom(); as from) {
+                <p class="small muted">{{ t('recipe.blends.chemistry.firing', { letter: from }) }}</p>
+              }
+              <div
+                class="blend-chemistry-scroll"
+                tabindex="0"
+                role="region"
+                [attr.aria-label]="t('recipe.blends.chemistry.heading')"
+              >
+                <table class="table table-sm blend-chemistry-table">
+                  <thead>
+                    <tr>
+                      <th scope="col">{{ t('recipe.blends.chemistry.tile') }}</th>
+                      <th scope="col">{{ t('recipe.compare.silicaToAlumina') }}</th>
+                      <th scope="col" translate="no">{{ boronLabel }}</th>
+                      <th scope="col">{{ t('recipe.compare.expansion') }}</th>
+                      <th scope="col">{{ t('recipe.blends.chemistry.cautions') }}</th>
+                      @if (firingFrom()) {
+                        <th scope="col">{{ t('recipe.blends.chemistry.coneFit') }}</th>
+                      }
+                    </tr>
+                  </thead>
+                  <tbody>
+                    @for (row of chemistry(); track row.number) {
+                      <tr>
+                        <th scope="row">{{ row.number }}</th>
+                        <td>{{ row.siAl }}</td>
+                        <td>{{ row.boron }}</td>
+                        <td>{{ row.expansion }}</td>
+                        <td>{{ row.cautions ?? '–' }}</td>
+                        @if (firingFrom()) {
+                          <td>{{ row.fit ? t(row.fit) : '–' }}</td>
+                        }
+                      </tr>
+                    }
+                  </tbody>
+                </table>
+              </div>
+            }
+          </details>
+        </section>
+
         <section class="panel no-print" aria-labelledby="blend-save-heading">
           <h2 class="h4" id="blend-save-heading">{{ t('recipe.blends.saveHeading') }}</h2>
           <p class="small muted">{{ t('recipe.blends.saveHelp') }}</p>
@@ -383,6 +456,23 @@ interface TileRecipe {
       position: absolute;
       bottom: 0.25rem;
       margin: 0;
+    }
+    .blend-chemistry summary {
+      font-size: 1.25rem;
+      cursor: pointer;
+    }
+    /* The table scrolls inside its own box, so a narrow screen's page does not. */
+    .blend-chemistry-scroll {
+      max-width: 100%;
+      overflow-x: auto;
+    }
+    .blend-chemistry-table {
+      margin: 0;
+      min-width: 28rem;
+    }
+    .blend-chemistry-table td,
+    .blend-chemistry-table th[scope='row'] {
+      font-variant-numeric: tabular-nums;
     }
     .blend-print-title {
       display: none;
@@ -527,6 +617,59 @@ export class BlendsPage implements OnInit {
       additives: recipe!.additives ?? []
     }));
     return blend.tiles.map((tile) => ({ tile, ...mixRecipes<RecipeMaterial, Additive>(corners, tile.shares)! }));
+  });
+
+  /** Whether the "Chemistry per tile" table is open: its figures are worked out only then. */
+  protected readonly chemistryOpen = signal(false);
+  protected readonly boronLabel = formatFormula('B2O3');
+
+  /** The first corner with a stated firing, which the table's limits and cone fit follow. */
+  private readonly firingCorner = computed<{ letter: string; block: FiringBlock } | null>(() => {
+    const corners = this.corners();
+    for (let c = 0; c < corners.length; c++) {
+      const block = corners[c]?.firedAt;
+      if (block && isStated(block)) return { letter: LETTERS[c], block };
+    }
+    return null;
+  });
+  /** The letter of the recipe whose firing is used, or null when none has one. */
+  protected readonly firingFrom = computed(() => this.firingCorner()?.letter ?? null);
+
+  /** Each tile's chemistry: Si:Al, boron, expansion, the cautions against the limit set, the cone fit. */
+  protected readonly chemistry = computed<TileChemistry[]>(() => {
+    const tiles = this.chemistryOpen() ? this.tileRecipes() : null;
+    if (!tiles) return [];
+    const set = LIMIT_SETS[this.preferences.limitSet()] ?? LIMIT_SETS['hesselberth-roy'];
+    const firing = this.firingCorner()?.block ?? null;
+    const band = firing ? (firingBands(firing)[0] ?? set.whenUnknown) : set.whenUnknown;
+    const includeAdditives = this.includeAdditives();
+    return tiles.map((entry) => {
+      const materials = entry.materials.map(({ line, amount }) => ({ ...line, amount: String(amount) }));
+      const additives = entry.additives.map(({ line, amount }) => ({
+        ...line,
+        amount: String(amount),
+        unit: 'percent' as const
+      }));
+      const { analysis } = evaluate(materials, additives, { includeAdditives });
+      if (!analysis)
+        return { number: entry.tile.number, siAl: '–', boron: '–', expansion: '–', cautions: null, fit: null };
+      const ratio = silicaAluminaRatio(analysis);
+      const rows = limitRows(analysis.uList, set, band);
+      const fit = firing
+        ? coneFit(analysis.uList, firing, {
+            processes: firing.processes ?? [],
+            materials: materials.map((m) => m.name)
+          })
+        : null;
+      return {
+        number: entry.tile.number,
+        siAl: ratio === null ? '–' : fixed(ratio, 2),
+        boron: fixed(analysis.uList['B2O3'] ?? 0, 2),
+        expansion: analysis.expansion === null || analysis.expansion === undefined ? '–' : fixed(analysis.expansion, 2),
+        cautions: rows ? rows.filter((row) => row.past).length : null,
+        fit: fit ? (FIT_WORDS[fit.verdict] ?? null) : null
+      };
+    });
   });
 
   protected readonly unitName = computed(() => unitLabel(this.preferences.weightUnit()));

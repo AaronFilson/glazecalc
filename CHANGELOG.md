@@ -6,6 +6,15 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Added
 
+- **Blend tiles for assistants and a chemistry table on the Blends page.** A new public MCP tool,
+  `blend_recipes`, works out the tiles of a line blend between two recipes (2 to 11 steps) or a
+  triaxial blend between three (2 to 6 rows): each tile's shares, its recipe in percent, its key
+  unity formula figures, silica to alumina, expansion, the names of its limit cautions and, with a
+  firing, its cone fit. With two recipes and two steps it compares them oxide by oxide. It says it
+  is a calculation, not a test result. On the Blends page, a closed "Chemistry per tile" table
+  shows silica to alumina, boron, expansion, the number of cautions and, when a recipe has a
+  firing, the cone fit. The comparison of two unity formulas moved to `lib/recipe/compare.js`, so
+  the app and the server share it. English only for now.
 - **Chemistry against the stated cone** (docs/adr/0022-chemistry-against-the-stated-cone.md): one
   line at the top of the recipe page's limits panel says whether the glaze's chemistry fits its
   firing, the recipe's stated cone or the band chosen in the panel. It gives a note only when boron

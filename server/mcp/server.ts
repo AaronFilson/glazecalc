@@ -10,6 +10,7 @@ import type { Caller } from './common.ts';
 import { registerPrompts } from './prompts.ts';
 import { registerAccountTools } from './tools/account.ts';
 import { registerWriteTools } from './tools/account_write.ts';
+import { registerBlendTools } from './tools/blends.ts';
 import { registerGuides } from './tools/guides.ts';
 import { registerPublicTools } from './tools/public.ts';
 
@@ -22,7 +23,8 @@ export const SERVER_INFO = {
 
 const INSTRUCTIONS =
   'Glazecalc works out ceramic glaze chemistry. Use search_materials to find material names, then analyze_recipe, ' +
-  'check_limits, suggest_substitutes or match_from_materials with recipe lines. Amounts can be in any unit the lines ' +
+  'check_limits, suggest_substitutes or match_from_materials with recipe lines; blend_recipes works out the test ' +
+  'tiles of a line or triaxial blend between recipes, or compares two. Amounts can be in any unit the lines ' +
   'share. The limit checks are cautions from published limits, not proof that a glaze is food safe: say so, and ' +
   'advise a test firing and, for food surfaces, a leach test. search_guides finds what the guides say about glaze ' +
   'defects, safety and firing, in the person’s language, with addresses to cite; resources/read gives a guide or ' +
@@ -54,6 +56,7 @@ export const makeServer = (ctx: McpRequestContext): McpServer => {
     capabilities: { tools: {}, resources: {}, prompts: {}, completions: {} }
   });
   registerPublicTools(server, caller);
+  registerBlendTools(server);
   registerGuides(server);
   registerPrompts(server);
   registerAccountTools(server, caller);

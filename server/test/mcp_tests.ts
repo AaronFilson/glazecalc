@@ -128,6 +128,7 @@ const bearer = (token: string) => ({ authorization: 'Bearer ' + token });
 
 const PUBLIC_TOOLS = [
   'analyze_recipe',
+  'blend_recipes',
   'check_limits',
   'convert_cone_temperature',
   'get_material',
@@ -466,6 +467,120 @@ describe('MCP: the public tools', () => {
     for (const line of result.recipe) if (line.amount > 0) expect(allowed).to.include(line.material);
     const unknown = await call('match_from_materials', { lines: LINES, have: ['Moon dust'] });
     expect(unknown.isError).to.equal(true);
+  });
+});
+
+describe('MCP: blend_recipes', () => {
+  const GLOSSY = [
+    { material: 'Custer Spar', amount: 40 },
+    { material: 'Whiting', amount: 20 },
+    { material: 'EPK', amount: 15 },
+    { material: 'Silica', amount: 25 }
+  ];
+  const MATTE = [
+    { material: 'Custer Spar', amount: 30 },
+    { material: 'Dolomite', amount: 25 },
+    { material: 'EPK', amount: 25 },
+    { material: 'Silica', amount: 20 }
+  ];
+  const BORON = [
+    { material: 'Ferro Frit 3134', amount: 50 },
+    { material: 'EPK', amount: 20 },
+    { material: 'Silica', amount: 30 }
+  ];
+  const sum = (values: number[]) => values.reduce((a, b) => a + b, 0);
+
+  it('a line blend gives each tile its shares, percent recipe and chemistry, and says it is no test', async () => {
+    const result = await data('blend_recipes', { a: GLOSSY, b: MATTE, steps: 5 });
+    expect(result).to.include({ kind: 'line', steps: 5, tileCount: 5 });
+    expect(result.tiles).to.have.length(5);
+    expect(result.note).to.include('not a test result');
+    for (const tile of result.tiles) {
+      expect(sum(Object.values(tile.shares)), 'shares').to.be.closeTo(1, 1e-3);
+      expect(sum(tile.recipe.map((line: { percent: number }) => line.percent)), 'percent').to.be.closeTo(100, 0.1);
+      expect(tile.unity.SiO2).to.be.greaterThan(0);
+      expect(tile.cautions).to.be.an('array');
+      expect(tile).to.not.have.property('coneFit');
+    }
+    expect(result.tiles[0].shares).to.eql({ A: 1, B: 0 });
+    expect(result.tiles[4].shares).to.eql({ A: 0, B: 1 });
+    // The first tile is recipe A, whose chemistry analyze_recipe gives.
+    const a = await data('analyze_recipe', { lines: GLOSSY });
+    expect(result.tiles[0].unity.SiO2).to.equal(a.unityFormula.SiO2);
+    expect(result.tiles[0].silicaToAlumina).to.equal(a.silicaToAlumina);
+    expect(result.tiles[0].expansion).to.equal(a.expansion);
+    expect(result).to.not.have.property('differences');
+  });
+
+  it('a triaxial blend of n rows has n(n+1)/2 tiles with three shares each', async () => {
+    const result = await data('blend_recipes', { a: GLOSSY, b: MATTE, c: BORON, steps: 4 });
+    expect(result).to.include({ kind: 'triaxial', tileCount: 10 });
+    for (const tile of result.tiles) {
+      expect(Object.keys(tile.shares)).to.eql(['A', 'B', 'C']);
+      expect(sum(Object.values(tile.shares)), 'shares').to.be.closeTo(1, 1e-3);
+    }
+    expect(result.tiles[0].shares).to.eql({ A: 1, B: 0, C: 0 });
+    expect(result.tiles.at(-1).shares).to.eql({ A: 0, B: 0, C: 1 });
+    // Boron comes only from corner C, so it rises down the triangle.
+    expect(result.tiles[0].unity.B2O3).to.equal(0);
+    expect(result.tiles.at(-1).unity.B2O3).to.be.greaterThan(0);
+  });
+
+  it('takes a firing: a coneFit verdict on every tile, and the limit set chosen', async () => {
+    const result = await data('blend_recipes', {
+      a: GLOSSY,
+      b: BORON,
+      steps: 3,
+      firing: { cone: '6' },
+      limitSet: 'hesselberth-roy'
+    });
+    expect(result).to.include({ limitSet: 'hesselberth-roy', celsius: 1222 });
+    for (const tile of result.tiles) expect(tile.coneFit, 'tile ' + tile.number).to.be.a('string');
+    const other = await data('blend_recipes', { a: GLOSSY, b: BORON, steps: 3, firing: { cone: '6' } });
+    expect(other.limitSet).to.equal('glazecalc');
+    const bad = await call('blend_recipes', { a: GLOSSY, b: BORON, limitSet: 'nonsense' });
+    expect(bad.isError).to.equal(true);
+  });
+
+  it('names the cautions a tile has against the limits, as check_limits does', async () => {
+    const lean = [
+      { material: 'Custer Spar', amount: 85 },
+      { material: 'Whiting', amount: 15 }
+    ];
+    const result = await data('blend_recipes', { a: GLOSSY, b: lean, steps: 3, firing: { cone: '6' } });
+    const names = result.tiles.flatMap((tile: { cautions: string[] }) => tile.cautions);
+    expect(names.length).to.be.greaterThan(0);
+    const checked = await data('check_limits', { lines: lean, firing: { cone: '6' } });
+    const expected = [...new Set(checked.cautions.map((c: { check: string }) => c.check))];
+    expect(result.tiles[2].cautions).to.have.members(expected as string[]);
+  });
+
+  it('with two recipes and two steps it compares them, with the differences oxide by oxide', async () => {
+    const result = await data('blend_recipes', { a: GLOSSY, b: MATTE, steps: 2 });
+    expect(result.tileCount).to.equal(2);
+    const mg = result.differences.find((d: { what: string }) => d.what === 'MgO');
+    expect(mg.a).to.be.lessThan(0.01);
+    expect(mg.change).to.be.greaterThan(0.1);
+    for (const d of result.differences) expect(d.change).to.not.equal(0);
+    expect(result.differences.map((d: { what: string }) => d.what)).to.include('silicaToAlumina');
+  });
+
+  it('refuses bad input with words: unknown material, steps out of range, no amounts, no flux', async () => {
+    const moon = await call('blend_recipes', { a: GLOSSY, b: [{ material: 'Moon dust', amount: 1 }] });
+    expect(moon.isError).to.equal(true);
+    expect((await call('blend_recipes', { a: GLOSSY, b: MATTE, steps: 12 })).isError).to.equal(true);
+    expect((await call('blend_recipes', { a: GLOSSY, b: MATTE, steps: 1 })).isError).to.equal(true);
+    const triangle = await call('blend_recipes', { a: GLOSSY, b: MATTE, c: BORON, steps: 7 });
+    expect(triangle.isError).to.equal(true);
+    expect(triangle.content[0].text).to.include('at most 6');
+    const none = await call('blend_recipes', { a: GLOSSY, b: [{ material: 'Silica', amount: 0 }] });
+    expect(none.isError).to.equal(true);
+    expect(none.content[0].text).to.include('Recipe B');
+    const noFlux = await call('blend_recipes', { a: GLOSSY, b: [{ material: 'Silica', amount: 10 }] });
+    expect(noFlux.isError).to.equal(true);
+    expect(noFlux.content[0].text).to.include('Recipe B');
+    expect((await call('blend_recipes', { a: GLOSSY })).isError).to.equal(true);
+    expect((await call('blend_recipes', { a: GLOSSY, b: MATTE, firing: { cone: '99' } })).isError).to.equal(true);
   });
 });
 
