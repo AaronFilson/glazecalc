@@ -6,6 +6,19 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Added
 
+- **Chemistry against the stated cone** (docs/adr/0022-chemistry-against-the-stated-cone.md): one
+  line at the top of the recipe page's limits panel says whether the glaze's chemistry fits its
+  firing, the recipe's stated cone or the band chosen in the panel. It gives a note only when boron
+  (against Matt Katz's rule, _Ceramics Monthly_ 2012) and silica or alumina (against Hesselberth &
+  Roy's cone 6 and 10 figures, or the UK limits at low fire) agree that the glaze looks like
+  another firing, whatever limit set is chosen; a range across bands is told which end it looks
+  closer to; cone 6 against cone 10 is worded softest, since chemistry tells them apart only
+  roughly. It says when it can't judge (lead, lithium, much soda and potash or zinc, raku, salt,
+  soda, wood and pit firings, ash, cones 01 to 3, SK cones with no measured temperature), never
+  calls a glaze a pass, and every note shows its sources and says it is a guide, not a test. Also
+  `coneFit` in the MCP tools `get_recipe` and `check_limits` (with a firing); not on print or
+  shared pages. Katz's rule now starts from his own 1305 °C for cone 10 (was 1300 °C), so the "too
+  little boron" check and replacing lead ask for 0.01 more boron. English only for now.
 - **Terms of use** at `/terms`, linked from every page's footer: Glazecalc is free for your own
   glazes, records and learning, as a hobby, for teaching or in business; the code stays under the
   MIT License, and the terms are for the site. They ask users not to break the shared server
