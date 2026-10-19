@@ -272,7 +272,6 @@
     "numbers": {
       "heading": "Kako čitati analizu i granice",
       "analysis": "<b>Analiza i granice</b>, ispod recepta, prikazuje molove, molni % i masu nakon pečenja u % za svaki oksid, gubitak žarenjem i izračunato toplinsko rastezanje, procjenu za usporedbu glazura.",
-      "limits": "<b>Granice</b> uspoređuju Segerovu formulu sa skupom granica: Hesselberthovim i Royevim granicama za stabilne glazure, osim ako odaberete Glazecalcov vlastiti skup (odabir se sprema uz vaše postavke). Odaberite <b>Pečenje</b> da recept provjerite prema odgovarajućim vrijednostima; sprema se uz recept. Hesselberthove i Royeve vrijednosti vrijede za stožac 6 i stožac 10, pa za nisko pečenje piše da ne vrijede. To su smjernice, a ne „prošlo” ili „palo”.",
       "stull": "<b>Stullov dijagram</b> prikazuje silicijev dioksid glazure naspram njezine glinice, sa Stullovim matiranim, polumatiranim i sjajnim područjem te rasponima skupa granica. To je vodič za površinu, a ne predviđanje.",
       "slurry": "<b>Relativna gustoća i voda</b> koristi Brongniartovu formulu: odvagnite izmjereni volumen glazure, pa pogledajte suhu glazuru u kanti, vodu koja je dovodi na željenu relativnu gustoću ili vodu za novu smjesu. Gustoće slijede vašu postavku za relativnu gustoću, stupnjeve Baumé ili masu pinte."
     },

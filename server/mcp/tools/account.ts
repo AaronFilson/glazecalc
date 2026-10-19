@@ -36,7 +36,7 @@ import {
   type RecipeLine
 } from '../common.ts';
 import { findById, findMaterial, nameKey, oxidesOf } from '../library.ts';
-import { analysisOf, checksOf, matchOut } from './public.ts';
+import { analysisOf, checksOf, coneFitOut, firingBlockOf, matchOut } from './public.ts';
 
 const READ_ONLY = { readOnlyHint: true, destructiveHint: false, idempotentHint: true, openWorldHint: false } as const;
 
@@ -218,7 +218,7 @@ export const registerAccountTools = (server: McpServer, caller: Caller): void =>
       {
         title: 'Get one of my recipes',
         description:
-          'One recipe from your account: its materials and amounts, colorants, notes, its stated firing (firedAt: the cone scale, the low and optional high cone of the claimed range, the cones actually tested, the atmospheres and processes, and for a temperature the rate and hold; each cone exactly as the potter gave it), whether it is for a food surface, the firing logs it went through with a result note each, the firing band and target specific gravity saved with it, and its unity formula worked out afresh. It is checked against the limit set chosen in your settings: for the firing given here, or else the band chosen on the recipe, or else the bands its stated firing falls in (a range across two bands is checked at each).',
+          "One recipe from your account: its materials and amounts, colorants, notes, its stated firing (firedAt: the cone scale, the low and optional high cone of the claimed range, the cones actually tested, the atmospheres and processes, and for a temperature the rate and hold; each cone exactly as the potter gave it), whether it is for a food surface, the firing logs it went through with a result note each, the firing band and target specific gravity saved with it, and its unity formula worked out afresh. It is checked against the limit set chosen in your settings: for the firing given here, or else the band chosen on the recipe, or else the bands its stated firing falls in (a range across two bands is checked at each). coneFit says, for the same firing, whether the chemistry looks like that firing's, as the recipe page's limits panel does: by Katz's boron rule and Hesselberth & Roy's silica and alumina whatever limit set is chosen, a note (verdict 'cooler' or 'hotter') only when boron and silica or alumina agree on another band, 'closer' when a range across bands looks nearer one end, 'fits' when nothing points away (not a pass), 'skipped' where the published figures do not reach. Cone 6 against cone 10 is told apart only roughly (strength 'soft'). A guide, not a test.",
         inputSchema: z.object({ id: idArg, firing: firingArg, language: languageArg }),
         annotations: READ_ONLY
       },
@@ -235,8 +235,18 @@ export const registerAccountTools = (server: McpServer, caller: Caller): void =>
           // The band chosen on the recipe wins; else the bands its stated firing falls in, coolest first.
           const bands: FiringBand[] = band ? [band] : (firedAt?.bands ?? []);
           let alsoChecks: Record<string, unknown> | undefined;
+          let coneFit: ReturnType<typeof coneFitOut> = null;
           try {
             analysis = analysisOf(lines, lang).out;
+            // The firing asked about, else the band chosen on the recipe, else the stated firing, as the page has it.
+            const against = firing ? firingBlockOf(firing) : (band ?? firedAt ?? null);
+            coneFit = coneFitOut(
+              recipe.coneFit(analysis.unityFormula as Record<string, number>, against, {
+                processes: firedAt?.processes ?? [],
+                materials: lines.map((line) => line.name)
+              }),
+              lang
+            );
             if (firing || bands.length) {
               const setting = await settingsOf(userId);
               // The recipe page's check: the account's limit set, for the firing asked about or the one saved.
@@ -283,7 +293,8 @@ export const registerAccountTools = (server: McpServer, caller: Caller): void =>
             ...(found.includeAdditives && { colorantsInUnityFormula: true }),
             analysis,
             ...(checks && { checks }),
-            ...(alsoChecks && { checksAtOtherBands: alsoChecks })
+            ...(alsoChecks && { checksAtOtherBands: alsoChecks }),
+            ...(coneFit && { coneFit })
           });
         }, lang);
       }

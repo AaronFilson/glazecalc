@@ -5,6 +5,7 @@ import { marker } from '@jsverse/transloco-keys-manager/marker';
 import { formatFormula } from '../../../../lib/chemistry';
 import { stullPoint } from '../../../../lib/recipe/analysis';
 import { FiringBlock, firingBands } from '../../../../lib/cones/firing';
+import { coneFit } from '../../../../lib/recipe/cone-fit';
 import {
   FIRING_BANDS,
   FiringBand,
@@ -16,6 +17,7 @@ import {
 } from '../../../../lib/recipe/limits';
 import { LimitSetChoice, PreferencesService } from '../../core/preferences.service';
 import { fixed, listOf } from '../../shared/format';
+import { recipeText } from './recipe-messages';
 import { StullChart } from './stull-chart';
 
 // The glaze against a limit set, as it is typed (docs/adr/0019-shared-recipe-tools.md):
@@ -23,6 +25,12 @@ import { StullChart } from './stull-chart';
 // with the set's silica and alumina drawn on it. Hesselberth & Roy's set is the
 // default and the choice is kept with the account's settings. The ranges are
 // guidance, worded so: outside them is a reason to look, not a fault.
+//
+// At the top, one line on whether the chemistry fits the firing
+// (lib/recipe/cone-fit.js, docs/adr/0022): against the band chosen here, or
+// else the recipe's stated firing, by Katz's boron rule and Hesselberth & Roy's
+// silica and alumina whichever set is chosen. A note shows its sources and says
+// it is a guide, not a test.
 
 const SET_NAMES: Record<string, string> = {
   'hesselberth-roy': marker('recipe.limits.sets.hesselberth-roy'),
@@ -110,6 +118,24 @@ export function statusText(row: LimitRow): string {
   template: `<ng-container *transloco="let t">
     <section class="limits" aria-labelledby="limits-heading">
       <h3 id="limits-heading">{{ t('recipe.limits.heading') }}</h3>
+      @if (fit(); as fit) {
+        <p
+          class="cone-fit"
+          [class.cone-fit-note]="fit.verdict === 'cooler' || fit.verdict === 'hotter'"
+          [attr.data-verdict]="fit.verdict"
+        >
+          {{ fit.text }}
+          @if (fit.sources.length) {
+            <span class="cone-fit-sources">
+              {{ t('recipe.coneFit.sources') }}
+              @for (source of fit.sources; track source.id; let last = $last) {
+                <a [href]="source.url" target="_blank" rel="noopener" translate="no">{{ source.title }}</a
+                >{{ last ? '' : ';' }}
+              }
+            </span>
+          }
+        </p>
+      }
       <div class="limits-choices">
         <div>
           <label for="limit-set" class="form-label">{{ t('recipe.limits.set') }}</label>
@@ -240,6 +266,21 @@ export function statusText(row: LimitRow): string {
     .limits-problem {
       color: var(--gc-danger-text);
     }
+    .cone-fit {
+      font-size: 0.9rem;
+      color: var(--gc-muted);
+    }
+    /* A note stands out from the panel's other notes, without looking like an error. */
+    .cone-fit-note {
+      color: var(--gc-text);
+      border-inline-start: 3px solid var(--gc-accent);
+      padding-inline-start: 0.5rem;
+    }
+    .cone-fit-sources {
+      display: block;
+      color: var(--gc-muted);
+      margin-top: 0.25rem;
+    }
     .limits-table {
       font-variant-numeric: tabular-nums;
       margin-bottom: 0.5rem;
@@ -275,6 +316,8 @@ export class RecipeLimits {
   readonly firing = model<FiringBand | ''>('');
   /** The recipe's firing block (lib/cones/firing.js), whose range gives the bands when none is chosen by hand. */
   readonly firedAt = input<FiringBlock | null>(null);
+  /** The recipe's material names, for the cone check: ash, and Gerstley borate. */
+  readonly materials = input<string[]>([]);
 
   private readonly preferences = inject(PreferencesService);
   protected readonly setIds = Object.keys(LIMIT_SETS) as LimitSetChoice[];
@@ -307,6 +350,19 @@ export class RecipeLimits {
     return this.bandsShown()
       .filter((band, i, all) => i === 0 || unityFor(set, band) !== unityFor(set, all[i - 1]!))
       .map((band) => bandView(this.unity(), set, band));
+  });
+  /**
+   * Whether the chemistry fits the firing: the band chosen here (with the stated firing's
+   * processes), or else the stated firing; null with neither. Said again when the language changes.
+   */
+  protected readonly fit = computed(() => {
+    this.language();
+    const block = this.firedAt();
+    const result = coneFit(this.unity(), this.firing() || block, {
+      processes: block?.processes ?? [],
+      materials: this.materials()
+    });
+    return result && { ...result, text: result.sentences.map(recipeText).join(' ') };
   });
   /** The Stull chart draws the coolest band's ranges. */
   protected readonly ranges = computed(() => unityFor(this.set(), this.bandsShown()[0]!));

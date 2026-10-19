@@ -272,7 +272,6 @@
     "numbers": {
       "heading": "Læs analysen og grænserne",
       "analysis": "<b>Analyse og grænser</b>, under opskriften, viser hvert oxids mol, mol-% og brændte vægt-%, glødetabet og den beregnede termiske udvidelse, et skøn til at sammenligne glasurer.",
-      "limits": "<b>Grænser</b> sætter Seger-formlen op mod et grænsesæt: Hesselberth & Roys grænser for stabile glasurer, medmindre Glazecalcs egne vælges (valget gemmes sammen med indstillingerne). Vælg <b>Brænding</b> for at kontrollere mod de rigtige tal; den gemmes sammen med opskriften. Hesselberth & Roys tal gælder kegle 6 og kegle 10, så ved lav temperatur står der, at de ikke gælder. De er retningslinjer og ikke en afgørelse af bestået eller ikke bestået.",
       "stull": "<b>Stull-diagrammet</b> afsætter glasurens silica mod dens aluminiumoxid, med Stulls matte, halvmatte og blanke områder og grænsesættets intervaller. Det er en vejledning til overfladen, ikke en forudsigelse.",
       "slurry": "<b>Massefylde og vand</b> bruger Brongniarts formel: vej et afmålt volumen af glasuren, og se så den tørre glasur i spanden, det vand, der bringer den til den ønskede massefylde, eller vandet til en ny portion. Densiteterne følger indstillingen for massefylde, baumégrader eller pintvægt."
     },

@@ -136,3 +136,13 @@ DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
 FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
 OTHER DEALINGS IN THE FONT SOFTWARE.
 ```
+
+## Glazy recipes in the cone check's test set
+
+`scripts/cone-fit-test-set.json`, the test set for the check of a glaze's chemistry against its
+stated cone (docs/adr/0022), keeps recipes from [Glazy](https://glazy.org): each one's id, name,
+author as Glazy gives it, cone, atmospheres, material names and a unity formula computed from
+Glazy's percent analysis (the public export of 31 May 2026,
+<https://github.com/derekphilipau/glazy-data>). Glazy's public data is licensed under
+[Creative Commons Attribution-NonCommercial-ShareAlike 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/),
+and so is that file. It is used to test the app, and is not part of the app.

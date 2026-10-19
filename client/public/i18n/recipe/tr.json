@@ -272,7 +272,6 @@
     "numbers": {
       "heading": "Analizi ve sınırları okuyun",
       "analysis": "<b>Analiz ve sınırlar</b>, reçetenin altında, her oksidin mol sayısını, mol yüzdesini ve pişmiş ağırlık yüzdesini, kızdırma kaybını ve hesaplanan ısıl genleşmeyi gösterir; ısıl genleşme sırları karşılaştırmak için bir tahmindir.",
-      "limits": "<b>Sınırlar</b>, Seger formülünü bir sınır setiyle karşılaştırır: Glazecalc’in kendi sınırlarını seçmedikçe Hesselberth & Roy’un kararlı sır sınırları kullanılır (seçim ayarlarınızla birlikte kaydedilir). Doğru değerlerle kontrol etmek için <b>Pişirim</b> seçeneğini seçin; reçeteyle birlikte kaydedilir. Hesselberth & Roy’un değerleri 6 numaralı ve 10 numaralı piramit içindir; bu yüzden düşük ısıda geçerli olmadıklarını söyler. Bunlar yol göstericidir; geçti ya da kaldı demek değildir.",
       "stull": "<b>Stull diyagramı</b>, sırın silisini alüminasına karşı gösterir; Stull’un mat, yarı mat ve parlak bölgelerini ve sınır setinin aralıklarını içerir. Yüzey için yol göstericidir, bir tahmin değildir.",
       "slurry": "<b>Özgül ağırlık ve su</b>, Brongniart formülünü kullanır: sırdan ölçülü bir hacmi tartın; ardından kovadaki kuru sırı, onu istediğiniz özgül ağırlığa getiren suyu ya da yeni bir tartım için gereken suyu görün. Yoğunluklar, özgül ağırlık, bome veya pint ağırlığı ayarınıza uyar."
     },

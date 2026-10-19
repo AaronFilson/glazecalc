@@ -272,7 +272,6 @@
     "numbers": {
       "heading": "Čtení rozboru a limitů",
       "analysis": "<b>Rozbor a limity</b> pod receptem ukazují u každého oxidu moly, molární % a hmotnostní % po výpalu, ztrátu žíháním a vypočtenou teplotní roztažnost, což je odhad pro porovnávání glazur.",
-      "limits": "<b>Limity</b> poměřují Segerův vzorec se sadou limitů: ve výchozím stavu jsou to limity stabilních glazur podle Hesselberth & Roy, pokud nezvolíte vlastní limity Glazecalc (volba se ukládá do nastavení). Zvolte <b>Výpal</b>, aby se porovnání provedlo se správnými hodnotami; ukládá se s receptem. Hodnoty Hesselberth & Roy platí pro žároměrku 6 a žároměrku 10, takže u nízkého výpalu aplikace uvede, že se nepoužijí. Jsou to vodítka, ne hodnocení „vyhověl, nebo nevyhověl“.",
       "stull": "<b>Stullův diagram</b> vynáší oxid křemičitý glazury proti oxidu hlinitému, s Stullovými oblastmi matných, polomatných a lesklých glazur a rozsahy sady limitů. Je to vodítko k povrchu, ne předpověď.",
       "slurry": "<b>Měrná hmotnost a voda</b> používají Brongniartův vzorec: zvažte odměřený objem glazury a uvidíte suchou glazuru v kbelíku, vodu, která ji přivede na požadovanou měrnou hmotnost, nebo vodu pro novou dávku. Hustoty se řídí vaším nastavením měrné hmotnosti, stupňů Baumé nebo hmotnosti pinty."
     },

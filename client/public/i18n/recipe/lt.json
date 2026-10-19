@@ -272,7 +272,6 @@
     "numbers": {
       "heading": "Analizės ir ribų skaitymas",
       "analysis": "<b>Analizė ir ribos</b> po receptu parodo kiekvieno oksido molius, mol. % ir masės % po degimo, degimo nuostolius ir apskaičiuotą šiluminį plėtimąsi – įvertį glazūroms palyginti.",
-      "limits": "<b>Ribos</b> palygina Segerio formulę su ribų rinkiniu: Hesselbertho ir Roy stabilių glazūrų ribomis, nebent pasirinktumėte Glazecalc savąsias (pasirinkimas įrašomas su jūsų nustatymais). Pasirinkite <b>Degimas</b>, kad formulė būtų tikrinama pagal tinkamus skaičius; jis įrašomas su receptu. Hesselbertho ir Roy skaičiai skirti piroskopams 6 ir 10, todėl žemoje temperatūroje rodoma, kad jie netaikomi. Tai gairės, o ne „išlaikyta“ ar „neišlaikyta“.",
       "stull": "<b>Stullo diagrama</b> atvaizduoja glazūros silicio dioksidą pagal jos aliuminio oksidą, su Stullo matinės, pusiau matinės ir blizgios sritimis bei ribų rinkinio intervalais. Tai paviršiaus orientyras, o ne prognozė.",
       "slurry": "<b>Santykinis tankis ir vanduo</b> naudoja Brongniarto formulę: pasverkite išmatuotą glazūros tūrį, tada pažiūrėkite, kiek sausos glazūros yra kibire, kiek vandens reikia norimam santykiniam tankiui pasiekti arba kiek vandens reikia naujam užmaišui. Tankiai atitinka jūsų santykinio tankio, Baumé ar pintos masės nustatymą."
     },

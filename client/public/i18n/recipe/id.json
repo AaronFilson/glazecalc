@@ -272,7 +272,6 @@
     "numbers": {
       "heading": "Baca analisis dan batasnya",
       "analysis": "<b>Analisis dan batas</b>, di bawah resep, menampilkan mol, % mol, dan % berat setelah dibakar setiap oksida, susut pijar, dan pemuaian termal terhitung, perkiraan untuk membandingkan glasir.",
-      "limits": "<b>Batas</b> membandingkan formula Seger dengan satu set batas: batas glasir stabil Hesselberth & Roy kecuali Anda memilih milik Glazecalc sendiri (pilihan ini disimpan bersama pengaturan Anda). Pilih <b>Pembakaran</b> untuk memeriksanya terhadap angka yang tepat; ini disimpan bersama resep. Angka Hesselberth & Roy untuk kerucut 6 dan kerucut 10, jadi pada suhu rendah aplikasi menyatakan angka itu tidak berlaku. Ini pedoman, bukan lulus atau gagal.",
       "stull": "<b>Bagan Stull</b> memetakan silika glasir terhadap aluminanya, dengan wilayah doff, semi-doff, dan cerah menurut Stull serta rentang set batas. Ini petunjuk tentang permukaan, bukan prediksi.",
       "slurry": "<b>Berat jenis dan air</b> memakai rumus Brongniart: timbang volume glasir yang terukur, lalu lihat glasir kering di dalam ember, air yang membawanya ke berat jenis yang Anda inginkan, atau air untuk batch baru. Kerapatan mengikuti pengaturan Anda untuk berat jenis, Baumé, atau berat pint."
     },

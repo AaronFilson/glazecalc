@@ -73,7 +73,12 @@ import { silicaAluminaRatio, unityColumnOf } from './unity-formula';
             <p class="numbers-note">{{ t('recipe.numbers.expansionNote') }}</p>
           }
         </section>
-        <gc-recipe-limits [unity]="analysis().uList" [(firing)]="firing" [firedAt]="firedAt()" />
+        <gc-recipe-limits
+          [unity]="analysis().uList"
+          [(firing)]="firing"
+          [firedAt]="firedAt()"
+          [materials]="materials()"
+        />
       </div>
     </section>
   </ng-container>`,
@@ -142,6 +147,8 @@ export class RecipeNumbers {
   readonly firing = model<FiringBand | ''>('');
   /** The recipe's firing block, whose range gives the limits' bands when none is chosen. */
   readonly firedAt = input<FiringBlock | null>(null);
+  /** The recipe's material names, for the limits' cone check. */
+  readonly materials = input<string[]>([]);
 
   /** A row per oxide, in the order potters read the unity formula. */
   protected readonly rows = computed(() => {

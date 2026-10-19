@@ -272,7 +272,6 @@
     "numbers": {
       "heading": "Aqra l-analiżi u l-limiti",
       "analysis": "<b>Analiżi u limiti</b>, taħt ir-riċetta, juri l-mol ta’ kull ossidu, il-% mol u l-% tal-piż wara l-ħami, it-telf mit-tqabbid bin-nar u l-espansjoni termali kkalkulata, stima biex tqabbel il-glejżijiet.",
-      "limits": "<b>Limiti</b> iqabbel il-formula ta’ Seger ma’ sett ta’ limiti: il-limiti ta’ Hesselberth & Roy għal glejżijiet stabbli, sakemm ma tagħżilx dawk ta’ Glazecalc stess (l-għażla tinżamm mas-settings tiegħek). Agħżel l-għażla <b>Ħami</b> biex tiċċekkja bil-figuri t-tajbin; tinżamm mar-riċetta. Il-figuri ta’ Hesselberth & Roy huma għall-kon 6 u l-kon 10, għalhekk fil-ħami baxx jgħid li ma japplikawx. Huma linji gwida, mhux ‘għadda’ jew ‘falla’.",
       "stull": "<b>Mappa ta’ Stull</b> turi s-silika tal-glejż kontra l-alumina tiegħu, bir-reġjuni matti, nofs matti u jleqqu ta’ Stull u l-firxiet tas-sett ta’ limiti. Hija gwida għall-wiċċ, mhux tbassir.",
       "slurry": "<b>Gravità speċifika u ilma</b> juża l-formula ta’ Brongniart: iżen volum imkejjel tal-glejż, imbagħad ara l-glejż niexef fil-barmil, l-ilma li jġibu għall-gravità speċifika li trid, jew l-ilma għal taħlita ġdida. Id-densitajiet isegwu l-għażla tiegħek għall-gravità speċifika, għal Baumé jew għall-piż tal-pinta."
     },
