@@ -282,6 +282,11 @@ const mfaSchema = new mongoose.Schema<MfaFields>(
   { _id: false }
 );
 
+/** At most this many materials on the shelf, by the website (PUT /api/shelf) or an assistant (add_to_shelf). */
+export const SHELF_MOST = 500;
+/** The longest key the shelf takes. */
+export const SHELF_KEY_LONGEST = 200;
+
 const userSchema = new mongoose.Schema<UserFields, UserModel, UserMethods>({
   email: { type: String, required: true, trim: true, lowercase: true },
   displayname: String,

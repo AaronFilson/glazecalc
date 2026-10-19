@@ -1,5 +1,6 @@
 import { Types } from 'mongoose';
 import { mergeTrial, deleteAccount } from '../lib/account_data.ts';
+import { TOKEN_WRITE_LIMITS } from '../lib/rate_limit.ts';
 import { dateOldTrash } from '../lib/record_history.ts';
 import AccessToken from '../models/access_token.ts';
 import Activity, { ACTIVITY_DAYS } from '../models/activity.ts';
@@ -17,7 +18,9 @@ const bearer = (token: string | null) => 'Bearer ' + token;
 
 /** The TTL of a model's index on one field, in days. */
 const ttlDays = async (Model: { listIndexes: () => Promise<Array<Record<string, unknown>>> }, field: string) => {
-  const index = (await Model.listIndexes()).find((i) => (i.key as Record<string, number>)[field] === 1);
+  const index = (await Model.listIndexes()).find(
+    (i) => (i.key as Record<string, number>)[field] === 1 && i.expireAfterSeconds !== undefined
+  );
   return Number(index?.expireAfterSeconds) / (24 * 60 * 60);
 };
 
@@ -228,6 +231,10 @@ describe('Trash', () => {
         Array.from({ length: 102 }, (_, i) => ({ ...recipe, title: 'R' + i, ownedBy: String(user._id) }))
       )
     ).map((saved) => String(saved._id));
+    // Room for more changes a minute than the limit on them (TOKEN_WRITE_LIMITS), to reach this one.
+    const changes = TOKEN_WRITE_LIMITS as { minute: number };
+    const minute = changes.minute;
+    changes.minute = 1000;
     process.env.RATE_LIMITS = 'on';
     try {
       for (const id of ids.slice(0, 100)) expect(await remove(id, write)).to.have.status(200);
@@ -240,6 +247,7 @@ describe('Trash', () => {
       expect(await remove(ids[101])).to.have.status(200);
     } finally {
       process.env.RATE_LIMITS = 'off';
+      changes.minute = minute;
     }
   });
 

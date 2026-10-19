@@ -4,7 +4,8 @@ import mongoose from 'mongoose';
 // change to a recipe, material, note or other record saves the record as it
 // was just before, so the change can be undone. Kept for VERSION_DAYS, and
 // at most VERSIONS_KEPT for one record (and the one from before an access
-// token's changes, server/lib/record_history.ts). A record in the Trash keeps
+// token's changes, server/lib/record_history.ts), and VERSIONS_MOST_ACCOUNT
+// for the whole account, the oldest going first. A record in the Trash keeps
 // its versions only as long as its Trash entry: expiresAt is set to the same
 // moment when it is trashed, cleared when it is put back, and they are deleted
 // with the entry when it is deleted for good or pushed out. Deleted and
@@ -12,6 +13,13 @@ import mongoose from 'mongoose';
 
 export const VERSION_DAYS = 90;
 export const VERSIONS_KEPT = 20;
+/**
+ * At most this many versions on one account, of all its records together
+ * (owner decision, 2026-10-19): past it the oldest go first, but never a
+ * record's version from before an access token's changes. So a token making
+ * many changes to many records cannot fill the disk with versions.
+ */
+export const VERSIONS_MOST_ACCOUNT = 5000;
 
 const recordVersionSchema = new mongoose.Schema(
   {
@@ -31,6 +39,8 @@ const recordVersionSchema = new mongoose.Schema(
 );
 
 recordVersionSchema.index({ ownedBy: 1, recordId: 1, savedAt: -1 });
+// The account's oldest first, for VERSIONS_MOST_ACCOUNT.
+recordVersionSchema.index({ ownedBy: 1, savedAt: 1 });
 // MongoDB removes a version VERSION_DAYS after it was saved.
 recordVersionSchema.index({ savedAt: 1 }, { expireAfterSeconds: VERSION_DAYS * 24 * 60 * 60 });
 // And at expiresAt, for a record in the Trash.

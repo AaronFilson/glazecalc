@@ -11,7 +11,8 @@ import AccessToken, {
   keepWithinPatLimit,
   MAX_PATS,
   REMINDER_DAYS_BEFORE,
-  workingTokens
+  workingTokens,
+  WRITE_PAT_MOST_DAYS
 } from '../models/access_token.ts';
 import User from '../models/user.ts';
 import { api, makeUser, sessionToken } from './support/app.ts';
@@ -43,7 +44,8 @@ describe('access tokens: the account page', () => {
     expect(list).to.have.status(200);
     expect(list.body).to.include({ defaultDays: 30, most: MAX_PATS });
     expect(list.body.expiryDays).to.eql([7, 30, 90, 365]);
-    expect(list.body.scopes).to.eql(['data:read']);
+    expect(list.body.scopes).to.eql(['data:read', 'data:write']);
+    expect(list.body.writeExpiryDays).to.eql([7, 30]);
     expect(list.body.tokens).to.have.length(1);
     expect(JSON.stringify(list.body)).not.to.include(res.body.token);
     expect(list.body.tokens[0]).not.to.have.property('hash');
@@ -68,8 +70,7 @@ describe('access tokens: the account page', () => {
       expect(res, String(days)).to.have.status(400);
       expect(res.body).to.include({ code: 'token-expiry-choices', field: 'days' });
     }
-    // Writing comes with Phase 4.
-    for (const scope of ['data:write', 'admin', ['data:read']]) {
+    for (const scope of ['admin', ['data:read'], 'data:delete', null]) {
       const res = await make(session, { name: 'x', scope, password });
       expect(res).to.have.status(400);
       expect(res.body).to.include({ code: 'token-scope-choices', field: 'scope' });
@@ -82,6 +83,35 @@ describe('access tokens: the account page', () => {
     // A name is kept to one line.
     const lined = await make(session, { name: 'my\nlaptop​', password });
     expect(lined.body.row.name).to.equal('my laptop');
+  });
+
+  it(`makes a token that can read and change, for at most ${WRITE_PAT_MOST_DAYS} days, and says so in the email`, async () => {
+    const { user, token: session, password, email } = await makeUser();
+    for (const days of [90, 365]) {
+      const long = await make(session, { name: 'Writer', scope: 'data:write', days, password });
+      expect(long, String(days)).to.have.status(400);
+      expect(long.body).to.include({ code: 'token-write-expiry', field: 'days' });
+      expect(long.body.params).to.eql({ most: WRITE_PAT_MOST_DAYS });
+    }
+    expect(await AccessToken.countDocuments({ userId: user._id })).to.equal(0);
+
+    const res = await make(session, { name: 'Writer', scope: 'data:write', days: 30, password });
+    expect(res, JSON.stringify(res.body)).to.have.status(201);
+    expect(res.body.row.scopes).to.eql(['data:write']);
+    const life = new Date(res.body.row.expiresAt).getTime() - new Date(res.body.row.createdAt).getTime();
+    expect(life).to.equal(30 * DAY);
+    // It changes records, and the notice says it can.
+    const made = await api()
+      .post('/recipe/create')
+      .set('Authorization', bearer(res.body.token))
+      .send({ title: 'Celadon', materials: [{ name: 'Silica', amount: '30' }] });
+    expect(made).to.have.status(200);
+    const sent = await mail.waitFor(email, 1);
+    expect(sent[0]!.subject).to.equal(accountMail.TOKEN_MADE_WRITE['en']!.subject);
+    expect(sent[0]!.text).to.include('read and change');
+    expect(sent[0]!.text).to.include('"Writer"');
+    // A read token keeps every lifetime.
+    expect(await make(session, { name: 'Reader', scope: 'data:read', days: 365, password })).to.have.status(201);
   });
 
   it('needs the right password, and with two-step sign-in on, a factor too', async () => {
@@ -297,8 +327,9 @@ describe('access tokens: the emails', () => {
   it('give the values and signature of the others', async () => {
     const values = (text: string) => [...new Set([...text.matchAll(/\{(\w+)\}/g)].map((match) => match[1]))].sort();
     expect(values(accountMail.TOKEN_MADE['en']!.text)).to.eql(['account', 'app', 'date', 'forgot', 'name', 'page']);
+    expect(values(accountMail.TOKEN_MADE_WRITE['en']!.text)).to.eql(values(accountMail.TOKEN_MADE['en']!.text));
     expect(values(accountMail.TOKEN_EXPIRING['en']!.text)).to.eql(['account', 'app', 'date', 'name', 'page']);
-    for (const emails of [accountMail.TOKEN_MADE, accountMail.TOKEN_EXPIRING]) {
+    for (const emails of [accountMail.TOKEN_MADE, accountMail.TOKEN_MADE_WRITE, accountMail.TOKEN_EXPIRING]) {
       expect(emails['en']!.text).to.match(/\n-- \nGlazecalc, \{app\}\n$/);
       expect(emails['en']!.subject).to.include('Glazecalc');
     }

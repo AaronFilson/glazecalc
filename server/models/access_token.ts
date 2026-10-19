@@ -3,7 +3,8 @@ import { SCOPES } from '../lib/scopes.ts';
 
 // Access to an account that Glazecalc gave out, other than the web session
 // (docs/integrations-plan.md, item 4): a personal access token (kind 'pat')
-// that the person made for their own assistant or script, or an OAuth
+// that the person made for their own assistant or script, to read their
+// records or to read and change them (server/lib/scopes.ts), or an OAuth
 // client's grant (kind 'oauth') that they approved. One table, so one page
 // lists both, and one check (server/lib/token_auth.ts) serves both.
 //
@@ -15,6 +16,15 @@ import { SCOPES } from '../lib/scopes.ts';
 /** Lifetimes a person can choose for a personal token, in days (decision 4): no "never". */
 export const PAT_EXPIRY_DAYS = [7, 30, 90, 365] as const;
 export const DEFAULT_PAT_EXPIRY_DAYS = 30;
+/**
+ * A token that can change records (data:write) lasts at most this many days
+ * (owner decision, 2026-10-19): the choices up to it, so one forgotten in a
+ * script's settings stops on its own soon.
+ */
+export const WRITE_PAT_MOST_DAYS = 30;
+/** The lifetimes a person can choose for a token with this scope. */
+export const patExpiryDays = (scope: string): number[] =>
+  scope === 'data:write' ? PAT_EXPIRY_DAYS.filter((days) => days <= WRITE_PAT_MOST_DAYS) : [...PAT_EXPIRY_DAYS];
 /** The reminder email goes this many days before a personal token expires. */
 export const REMINDER_DAYS_BEFORE = 7;
 /** At most this many personal tokens in use on one account. */

@@ -6133,6 +6133,22 @@ export const TOKEN_MADE: Record<string, Email> = {
   }
 };
 
+/**
+ * A new personal access token that can change records (data:write): as
+ * TOKEN_MADE, with the same values, saying so. English only so far: the next
+ * translation wave adds the others.
+ */
+export const TOKEN_MADE_WRITE: Record<string, Email> = {
+  en: {
+    subject: 'A new access token that can change your Glazecalc records',
+    text:
+      'An access token named "{name}" was just made for the Glazecalc account {account}. It can read and change the recipes, materials, notes and firing logs saved in the account, and move them to the Trash, until {date}. Every change it makes keeps the record as it was, so you can undo it on the website.\n\n' +
+      'If this was you, there is nothing else to do. You can see and revoke your tokens at {page}\n\n' +
+      'If not, revoke it there and reset your password right away at {forgot}\n' +
+      '\n-- \nGlazecalc, {app}\n'
+  }
+};
+
 /** A personal access token expiring soon: {account}, {name}, {date}, {page} and {app}. */
 export const TOKEN_EXPIRING: Record<string, Email> = {
   en: {
@@ -6422,8 +6438,13 @@ const sendTokenMail = (
   });
 };
 
-export const sendTokenMade = (to: string, token: { name: string; expiresAt: Date }, language?: string): Promise<void> =>
-  sendTokenMail(TOKEN_MADE, to, token, language);
+/** The notice for a new token, naming what it may do: read, or read and change (TOKEN_MADE_WRITE). */
+export const sendTokenMade = (
+  to: string,
+  token: { name: string; expiresAt: Date; scopes?: readonly string[] },
+  language?: string
+): Promise<void> =>
+  sendTokenMail(token.scopes?.includes('data:write') ? TOKEN_MADE_WRITE : TOKEN_MADE, to, token, language);
 
 export const sendTokenExpiring = (
   to: string,
