@@ -49,6 +49,8 @@ const recordSchema = new mongoose.Schema(
     userCode: String,
     /** When a code or refresh token was used: set once, atomically. */
     consumedAt: Date,
+    /** A kept app document (client_documents.ts): when it is next checked again. */
+    freshUntil: Date,
     expiresAt: Date
   },
   { versionKey: false, collection: 'oauth_records' }
@@ -152,6 +154,8 @@ export class MongoAdapter implements Adapter {
 
   async find(id: string): Promise<AdapterPayload | undefined> {
     if (typeof id !== 'string' || !id) return undefined;
+    // An app named by its address: its document kept with a working connection, if any (client_documents.ts).
+    if (this.kind === 'Client' && /^https:\/\//i.test(id)) return findClientDocument(id);
     return this.load({ _id: recordKey(this.kind, id) }, id);
   }
 
@@ -204,6 +208,13 @@ let onReuse = (grantId: string): Promise<void> => deleteGrantRecords([grantId]);
 const revokeGrantRecordsAsReused = (grantId: string): Promise<void> => onReuse(grantId);
 
 let onGrantEnded = (grantId: string): Promise<void> => deleteGrantRecords([grantId]);
+
+let findClientDocument = (_clientId: string): Promise<AdapterPayload | undefined> => Promise.resolve(undefined);
+
+/** Sets where the documents of apps named by their address are kept (server/oauth/provider.ts). */
+export const whenClientDocumentWanted = (handler: (clientId: string) => Promise<AdapterPayload | undefined>): void => {
+  findClientDocument = handler;
+};
 
 /** Sets what ending a grant does (server/oauth/provider.ts). */
 export const whenGrantEnded = (handler: (grantId: string) => Promise<void>): void => {

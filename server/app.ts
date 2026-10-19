@@ -26,7 +26,7 @@ import pendingChangeRoutes from './routes/pending_change_routes.ts';
 import userRoutes from './routes/user_routes.ts';
 import mcpRouter, { metadataRouter } from './mcp/index.ts';
 import connectRouter from './oauth/interactions.ts';
-import { authorizationServerMetadata, oauthServer } from './oauth/provider.ts';
+import { asTheSiteForConnect, authorizationServerMetadata, oauthServer } from './oauth/provider.ts';
 import { say } from './lib/messages.ts';
 import * as site from './lib/site.ts';
 import {
@@ -124,8 +124,9 @@ api.use('/password', passwordRoutes);
 api.use('/email', emailRoutes);
 // The account's own access tokens: made, listed and revoked with the web session only.
 api.use('/tokens', tokenRoutes);
-// Answering an AI assistant that asks to connect (docs/adr/0024-authorization-server.md), with the web session only.
-api.use('/connect', connectRouter);
+// Answering an AI assistant that asks to connect (docs/adr/0024-authorization-server.md), with the web session only,
+// as the site's own host and scheme for the authorization server, whatever X-Forwarded-Host or -Proto said.
+api.use('/connect', asTheSiteForConnect, connectRouter);
 // Connected apps: the personal tokens and OAuth connections, what each did, and the Trash it filled; session only.
 api.use('/connections', connectionRoutes);
 // Two-step sign-in: the account's factors (docs/mfa-plan.md).

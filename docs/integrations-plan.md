@@ -30,6 +30,10 @@ Google and GitHub are built ([ADR 0015](adr/0015-provider-sign-in.md)), on `fetc
 
 ## Phase 2: Public MCP tools, no account (4–6 days after item 6)
 
+Built ([ADR 0017](adr/0017-mcp-server.md)). Round 5 added `blend_recipes` (item 20) and a fifth prompt,
+`glaze_course_lesson`, which pairs a unit of John Britt's free Glaze Course with the guide sections to read (item 21;
+it links his videos, never embeds them or sends anything to YouTube).
+
 19. **`POST /mcp`** on SDK v2, stateless, also serving 2025-era clients; GET and DELETE return 405; Origin and Host checks. M (1–2 d). New `server/mcp/index.ts`; `server/app.ts` (mount before the SPA fallback).
 20. **Tools:** `search_materials`, `get_material`, `analyze_recipe`, `check_limits`, `convert_cone_temperature`, `suggest_substitutes`, `search_guides`, and later `blend_recipes` (test tiles of a blend, or a comparison of two recipes; `server/mcp/tools/blends.ts`), with structured output and `language`/`temperature` arguments. M (2 d). `server/mcp/tools/*.ts`, `lib/chemistry`, `lib/recipe`, `data/`.
 21. **Resources and prompts** (guides per language and section, materials, cones; four prompts). S (0.5–1 d). `server/mcp/`.
@@ -49,6 +53,13 @@ Google and GitHub are built ([ADR 0015](adr/0015-provider-sign-in.md)), on `fetc
 32. **Help text** for Claude Code (`--header`), VS Code, Cursor and Gemini CLI. Test Cursor's header behaviour first. S. Docs page.
 
 ## Phase 4: Own authorization server and write tools (11–16 days)
+
+Built in round 5 (October 2026), items 33–38 and the English of 39: the authorization server
+([ADR 0024](adr/0024-authorization-server.md)), the consent page, Connected apps (`/account/apps`: activity, the Trash
+each connection filled, with Put back and Put all back; revoke one or all), the write tools with the REST shelf and its
+one Undo, and the ChatGPT step-up. Dynamic Client Registration is kept as the second way for apps to name themselves, though the
+MCP authorization specification of 2026-07-28 calls it deprecated (still MAY) and prefers Client ID Metadata
+Documents (SHOULD). Still to do: the notice's other languages (39) and the real-client checks on staging (40).
 
 33. **`oidc-provider`** in Express: CIMD with an SSRF guard, DCR (rate-limited and expiring), PKCE S256, resource indicators (`aud` = `/mcp`), rotating refresh tokens, and RFC 9207 `iss` if supported; a MongoDB adapter. L (4–6 d). New `server/oauth/`; `server/app.ts`.
 34. **Session-scoped AS cookies.** Login runs through `/connect`, which uses same-site `/api` calls with the existing session; no persistent AS session. S–M. `server/oauth/interactions.ts`.

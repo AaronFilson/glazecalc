@@ -19,6 +19,17 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   from this token need no confirmation". Asking less sends the owner an email; a change waits 30
   minutes at most, and what it would do is removed once it is decided. `get_my_settings` shows the
   choice. English only.
+- **The consent page for AI apps, and a notice for each connection** (docs/adr/0024-authorization-server.md).
+  An app such as Claude or ChatGPT that asks to connect sends the person to `/connect/<id>`, after
+  signing in if needed (the sign-in page now takes `?next=`, this site's pages only). It shows the
+  app's name, marked "self-described" when the app registered itself; its checked address; where
+  the answer goes, with a warning when that is the person's own computer, an app's own link scheme
+  (shown whole: `evilapp://claude.ai/cb` is not claude.ai), or another host than the app's; what
+  it can read; and "Also let it change my records", never ticked for the person. Trials and
+  unconfirmed emails are told why they cannot connect. Each new connection emails the account,
+  naming the app, its host and whether it can change records, with a link to Connected apps,
+  which now marks self-described apps. The `/assistants` page explains the two ways to connect.
+  The consent API reports a redirect's host for http and https only. English only for now.
 - **The shelf over REST, with one Undo.** A token that can change records may add or remove one
   material at a time (`POST /api/shelf/add` and `/remove`, by `key` or `name`) and put back the
   shelf as it was before the last change (`POST /api/shelf/undo`, one step); `GET /api/shelf`
@@ -714,6 +725,18 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Changed
 
+- **The privacy notice says what connecting an AI app means** (a new section, "Connecting an AI
+  app", with the ADR 0024 notices): what is kept for each connected app (its name and address as
+  it gives them, where it sends you back, what it may do, its dates, its codes and tokens only as
+  hashes, what it did), that Glazecalc's server fetches an app's details from the app's own
+  address and keeps them 1 to 24 hours in memory, how long each part lasts (60 days from the last
+  renewal for an app that reads, 90 days from the yes for one that may change records, 7 or 30
+  days for an app that registered itself), how to end a connection, and that the app answers for
+  what it does with your records under its own privacy policy. It also names the shelf's list
+  before its last change, kept for one Undo. The terms of use add that connecting an app is your
+  choice and that you answer for what an app you allow does in your account. The record of
+  processing (docs/processing-record.md) has a new activity, Connected AI apps, and names AI apps
+  as separate controllers, with no new processor. English only for now.
 - **MCP `check_limits` follows the account's own limit set.** Called with a personal access token
   that may read preferences and no `limitSet`, it checks against the limit set saved in the
   account's settings (the recipe page's own, Hesselberth & Roy's until changed), as `get_recipe`
@@ -884,6 +907,13 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Fixed
 
+- **The OAuth authorization server, after its security review** (docs/adr/0024, "Review fixes"):
+  addresses under `/oauth/` answer only as written (`/oauth/REGISTER` or `/oauth/register/` no
+  longer slip past the registration limits); fetches of apps' documents (CIMD) are limited per
+  address and per host as well as for everyone, and an app someone has connected keeps working
+  from a copy of its document kept with the connection, whatever else is fetched; refused
+  registrations no longer count towards everyone's day; the guard blocks IPv4-compatible and SIIT
+  IPv6 addresses; and the consent API hands the authorization server the site's own host and scheme.
 - **A test of the sign-in notice email no longer fails now and then under load.** The app sends
   such a notice after its reply, so a busy machine could be slow to write it; the mail helper for
   tests now waits for sends in progress (`mailer.idle`) and for up to 10 s, and the test timeout is

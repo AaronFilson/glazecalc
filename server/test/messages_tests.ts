@@ -153,6 +153,24 @@ describe('account emails', () => {
     expect(fingerprint(JSON.stringify([m.MFA_OFF['en'], m.MFA_CLEAR_NOTICE['en']]))).to.equal('18fasis');
   });
 
+  it('should give the connected app notice its values, signature and English', async () => {
+    const { CONNECTION_MADE } = await import('../lib/account_mail.ts');
+    const { fingerprint } = await import('../../scripts/i18n-fingerprints.mjs');
+    const email = CONNECTION_MADE['en']!;
+    const values = (text: string) => [...new Set([...text.matchAll(/\{(\w+)\}/g)].map((match) => match[1]))].sort();
+    expect(values(email.opening)).to.eql(['account', 'date', 'time']);
+    expect(values(email.named)).to.eql(['name']);
+    for (const part of [email.checked, email.answerAt, email.loopback]) expect(values(part)).to.eql(['host']);
+    expect(values(email.selfDescribed)).to.eql([]);
+    expect(values(email.read)).to.eql([]);
+    expect(values(email.write)).to.eql(['days']);
+    expect(values(email.closing)).to.eql(['app', 'forgot', 'page']);
+    expect(email.closing).to.match(/\n-- \nGlazecalc, \{app\}\n$/);
+    expect(email.subject).to.include('Glazecalc');
+    // English only so far: the next wave translates it, and fingerprints it here.
+    expect(fingerprint(JSON.stringify(email))).to.equal('165ly6s');
+  });
+
   it('should give the unfinished second step notice its values and signature', async () => {
     const { SECOND_STEP_UNFINISHED } = await import('../lib/account_mail.ts');
     const { fingerprint } = await import('../../scripts/i18n-fingerprints.mjs');

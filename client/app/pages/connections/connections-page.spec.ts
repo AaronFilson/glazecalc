@@ -11,6 +11,7 @@ const ROWS: ConnectionRow[] = [
     name: 'Claude',
     clientHost: 'claude.ai',
     redirectHost: 'claude.ai',
+    selfDescribed: false,
     access: 'write',
     createdAt: '2026-10-10T10:00:00Z',
     lastUsedAt: '2026-10-18T10:00:00Z',
@@ -82,6 +83,24 @@ describe('ConnectionsPage', () => {
     return { fixture, root, click, open };
   };
 
+  it('marks an app that registered itself as self-described, with what that means', async () => {
+    const dcr: ConnectionRow = {
+      ...ROWS[0]!,
+      id: 'c3',
+      name: 'Helpful Assistant',
+      clientHost: undefined,
+      redirectHost: '127.0.0.1:33418',
+      selfDescribed: true
+    };
+    const { fixture } = await create([dcr]);
+    expect(text(fixture, '.connection-row h3')).toBe('Helpful Assistant self-described');
+    expect(text(fixture, '.connection-row')).toContain(
+      'It registered itself, so its name is only what it says about itself.'
+    );
+    expect(text(fixture, '.connection-row')).toContain('Sends you back to: 127.0.0.1:33418');
+    expect(text(fixture, '.connection-row')).not.toContain('App address');
+  });
+
   it('lists each connection with what it may do, its hosts, dates and what it did in 90 days', async () => {
     const { fixture } = await create();
     const [claude, script] = [...(fixture.nativeElement as HTMLElement).querySelectorAll('.connection-row')];
@@ -91,6 +110,7 @@ describe('ConnectionsPage', () => {
     expect(first).toContain('Read and change');
     expect(first).toContain('App address: claude.ai');
     expect(first).toContain('Sends you back to: claude.ai');
+    expect(first).not.toContain('self-described');
     expect(first).toContain('1 record made, 3 records changed, 2 records moved to the Trash.');
     const second = script!.textContent!.replace(/\s+/g, ' ');
     expect(second).toContain('Access token');

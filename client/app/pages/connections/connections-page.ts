@@ -117,7 +117,15 @@ interface Detail {
               <li class="connection-row" [class.ended]="!row.working">
                 <div class="connection-head">
                   <div class="connection-name">
-                    <h3 class="h5">{{ row.name }}</h3>
+                    <h3 class="h5 connection-title">
+                      {{ row.name }}
+                      @if (row.selfDescribed) {
+                        <span class="badge-self">{{ t('account.apps.selfDescribed') }}</span>
+                      }
+                    </h3>
+                    @if (row.selfDescribed) {
+                      <p class="small muted">{{ t('account.apps.selfDescribedNote') }}</p>
+                    }
                     <p class="small muted">
                       {{ row.kind === 'oauth' ? t('account.apps.kindOauth') : t('account.apps.kindToken') }}
                       @if (row.hint) {
@@ -325,6 +333,20 @@ interface Detail {
     </section>
   </ng-container>`,
   styles: `
+    .connection-title {
+      overflow-wrap: anywhere;
+    }
+    .badge-self {
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 0.05rem 0.45rem;
+      border-radius: 999px;
+      border: 1px solid var(--gc-border);
+      background: var(--gc-surface-2);
+      color: var(--gc-text);
+    }
     .connection-list,
     .moved-list,
     .activity-list {

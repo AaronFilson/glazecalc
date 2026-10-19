@@ -78,12 +78,12 @@ const pendingIdIn = (text: string): string => /\/confirm\/([A-Za-z0-9_-]+)/.exec
 
 describe('confirm before changes: the page', () => {
   it('is a page of the app in every language, private as a share link is', () => {
-    for (const path of ['/confirm/AbC_12-xyz', '/de/confirm/AbC_12-xyz']) {
+    for (const path of ['/confirm/AbC_12-xyzAbC_12-xyz12', '/de/confirm/AbC_12-xyzAbC_12-xyz12']) {
       expect(isPage(path), path).to.equal(true);
       expect(isPrivatePage(path), path).to.equal(true);
       expect(isAppOnlyPage(path), path).to.equal(false);
     }
-    for (const path of ['/confirm', '/confirm/', '/confirm/a/b', '/confirm/' + 'x'.repeat(65), '/confirm/a.b']) {
+    for (const path of ['/confirm', '/confirm/', '/confirm/a/b', '/confirm/short', '/confirm/' + 'x'.repeat(23)]) {
       expect(isPage(path), path).to.equal(false);
     }
   });

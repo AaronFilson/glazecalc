@@ -20,7 +20,16 @@ const limiter = (
   limit: number | ((req: Request) => number),
   code: MessageCode,
   more: Partial<
-    Pick<Options, 'keyGenerator' | 'skipSuccessfulRequests' | 'requestWasSuccessful' | 'handler' | 'store'>
+    Pick<
+      Options,
+      | 'keyGenerator'
+      | 'skipSuccessfulRequests'
+      | 'skipFailedRequests'
+      | 'requestWasSuccessful'
+      | 'handler'
+      | 'store'
+      | 'ipv6Subnet'
+    >
   > & {
     skip?: (req: Request, res: Response) => boolean | Promise<boolean>;
   } = {}
@@ -277,14 +286,19 @@ const oauthLimiter = (minutes: number, limit: number, code: MessageCode, more: P
 
 /**
  * Apps registering themselves (POST /oauth/register, DCR): 10 an hour from
- * one address, and OAUTH_REGISTRATIONS_A_DAY a day from everyone together, so
- * nobody can fill the database with apps. Each one that nobody connects goes
- * after 7 days (server/oauth/adapter.ts).
+ * one address (an IPv6 address counts with its whole /56, as one home or
+ * office is given), and OAUTH_REGISTRATIONS_A_DAY a day from everyone
+ * together, so nobody can fill the database with apps. Only registrations
+ * that were made count for the day: refused ones (bad metadata) use up
+ * nothing of everyone's. Each one that nobody connects goes after 7 days
+ * (server/oauth/adapter.ts). Why a day's count and not a ceiling on the apps
+ * kept: docs/adr/0024, "Review fixes".
  */
 export const OAUTH_REGISTRATIONS_A_DAY = 500;
-export const oauthRegister = oauthLimiter(60, 10, 'too-many-registrations');
+export const oauthRegister = oauthLimiter(60, 10, 'too-many-registrations', { ipv6Subnet: 56 });
 export const oauthRegisterAll = oauthLimiter(24 * 60, OAUTH_REGISTRATIONS_A_DAY, 'too-many-registrations', {
-  keyGenerator: () => 'oauth-register-all'
+  keyGenerator: () => 'oauth-register-all',
+  skipFailedRequests: true
 });
 /**
  * Starting a connection (GET /oauth/authorize, and its return from the

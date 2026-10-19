@@ -2,7 +2,7 @@ import { Routes } from '@angular/router';
 import { provideTranslocoScope } from '@jsverse/transloco';
 import { marker } from '@jsverse/transloco-keys-manager/marker';
 import { askBeforeLeaving } from './core/leave.guard';
-import { signedInGuard, visitorsOnlyGuard } from './core/signed-in.guard';
+import { signInThenBackGuard, signedInGuard, visitorsOnlyGuard } from './core/signed-in.guard';
 import { scopeTranslations } from './i18n/provide-i18n';
 import { guideText } from './pages/guides/guide-text';
 
@@ -252,10 +252,20 @@ export const routes: Routes = [
     loadComponent: () => import('./pages/connections/connections-page').then((m) => m.ConnectionsPage)
   },
   {
-    // A change an app asks to make, waiting for the person's approval (docs/adr/0025). The page itself
-    // says to sign in when no one is: the link must still work once they have.
+    // An AI app asking to connect (docs/adr/0024-authorization-server.md): signed in first, then back here.
+    path: 'connect/:uid',
+    title: marker('titles.connect'),
+    canActivate: [signInThenBackGuard],
+    providers: [provideTranslocoScope('account')],
+    resolve: { messages: scopeTranslations },
+    loadComponent: () => import('./pages/connect/connect-page').then((m) => m.ConnectPage)
+  },
+  {
+    // A change an app asks to make, waiting for the person's approval (docs/adr/0025): signed in first,
+    // then back here.
     path: 'confirm/:id',
     title: marker('titles.confirm'),
+    canActivate: [signInThenBackGuard],
     providers: [provideTranslocoScope('account')],
     resolve: { messages: scopeTranslations },
     loadComponent: () => import('./pages/confirm/confirm-page').then((m) => m.ConfirmPage)

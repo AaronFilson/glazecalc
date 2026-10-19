@@ -110,6 +110,8 @@ const accessTokenSchema = new mongoose.Schema(
 accessTokenSchema.index({ hash: 1 }, { unique: true, partialFilterExpression: { hash: { $type: 'string' } } });
 // A connected app's tokens find their connection by its grant.
 accessTokenSchema.index({ grantId: 1 }, { unique: true, partialFilterExpression: { grantId: { $type: 'string' } } });
+// An app's working connections, found by the app (server/oauth/client_documents.ts).
+accessTokenSchema.index({ clientId: 1, expiresAt: -1 }, { partialFilterExpression: { clientId: { $type: 'string' } } });
 // MongoDB removes a row KEEP_AFTER_EXPIRY_DAYS after it expires.
 accessTokenSchema.index({ expiresAt: 1 }, { expireAfterSeconds: KEEP_AFTER_EXPIRY_DAYS * 24 * 60 * 60 });
 

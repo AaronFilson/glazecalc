@@ -42,8 +42,16 @@ import AccessToken, {
 } from '../models/access_token.ts';
 import User from '../models/user.ts';
 import { issuerUrl, resourceUrl } from '../mcp/urls.ts';
-import { extendGrant, keepRegisteredClient, MongoAdapter, whenGrantEnded, whenReused } from './adapter.ts';
+import {
+  extendGrant,
+  keepRegisteredClient,
+  MongoAdapter,
+  whenClientDocumentWanted,
+  whenGrantEnded,
+  whenReused
+} from './adapter.ts';
 import { allowedClientIdUrl, CACHE_SECONDS, countFetch, guardedFetch, MOST_BYTES } from './cimd.ts';
+import { keepClientDocument, keptClientDocument } from './client_documents.ts';
 import { revokeGrant } from './revoke.ts';
 
 /** The scopes an app can be given (server/lib/scopes.ts); data:write only when the person ticks it. */
@@ -75,6 +83,29 @@ export const ROUTES = {
   challenge: '/oauth/challenge',
   credential: '/oauth/credential'
 } as const;
+
+/**
+ * The addresses under /oauth/ that are offered, exactly as written: the
+ * endpoints above that are on, and the way back from the consent page
+ * (/oauth/authorize/<uid>). oidc-provider's own router would also take them
+ * in other letter cases or with a slash at the end (/oauth/REGISTER,
+ * /oauth/register/), which the limits here would not know; anything else
+ * under /oauth/ is answered 404 before it gets there.
+ */
+const OFFERED = new Set<string>([
+  ROUTES.authorization,
+  ROUTES.token,
+  ROUTES.registration,
+  ROUTES.revocation,
+  ROUTES.jwks
+]);
+const RESUME = /^\/oauth\/authorize\/[A-Za-z0-9_-]{1,64}$/;
+
+/** Whether a path is one the authorization server offers, written exactly so. */
+export const offeredPath = (path: string): boolean => OFFERED.has(path) || RESUME.test(path);
+
+/** A path as oidc-provider's router matches it: any letter case, without a slash at the end. */
+const routerPath = (path: string): string => path.toLowerCase().replace(/\/+$/, '');
 
 /** The consent API's address for an interaction: it sends the browser on to the consent page (interactions.ts). */
 export const interactionPath = (uid: string): string => '/api/connect/' + uid;
@@ -346,15 +377,28 @@ const configuration = (): Configuration => ({
       enabled: true,
       // Experimental in oidc-provider: draft 02 of the Client ID Metadata Document, acknowledged.
       ack: 'draft-02',
-      allowFetch: (_ctx, clientId) => allowedClientIdUrl(clientId) && countFetch(),
-      allowClient: () => true,
+      allowFetch: (_ctx, clientId) =>
+        allowedClientIdUrl(clientId) &&
+        countFetch({ address: current.getStore()?.address, host: new URL(clientId).host }),
+      // Every app is allowed; one with a working connection has its document kept from now on (client_documents.ts).
+      allowClient: async (_ctx, client) => {
+        await keepClientDocument(client.clientId, client.metadata()).catch((err: unknown) =>
+          log.error('Could not keep an app document', { err })
+        );
+        return true;
+      },
       cacheDuration: { min: CACHE_SECONDS.min, max: CACHE_SECONDS.max }
     }
   } as Configuration['features']
 });
 
-/** The path of the request the authorization server is answering, for whenGrantEnded. */
-const requestPath = new AsyncLocalStorage<string>();
+/**
+ * The request the authorization server is answering: its path, for
+ * whenGrantEnded, and its address (Express's req.ip, which trusts one proxy
+ * hop; Koa's would take the first X-Forwarded-For, which anyone can write),
+ * for the fetch limits (cimd.ts countFetch).
+ */
+const current = new AsyncLocalStorage<{ path: string; address: string | undefined }>();
 
 let made: { issuer: string; provider: Provider; handler: ReturnType<Provider['callback']> } | undefined;
 
@@ -375,28 +419,52 @@ const serverFor = () => {
 };
 
 whenReused((grantId) => revokeGrant(grantId, 'reused'));
+// An app named by its address reads from the document kept with its working connections first.
+whenClientDocumentWanted((clientId) =>
+  keptClientDocument(clientId, (metadata) => getProvider().Client.validate(metadata), current.getStore()?.address)
+);
 // The app ended its connection (revocation), or at the token endpoint a refresh token or code was used twice.
-whenGrantEnded((grantId) => revokeGrant(grantId, requestPath.getStore() === ROUTES.token ? 'reused' : 'app'));
+whenGrantEnded((grantId) =>
+  revokeGrant(grantId, routerPath(current.getStore()?.path ?? '') === ROUTES.token ? 'reused' : 'app')
+);
 
 /**
- * Hands a request to the authorization server, with the site's own host and
- * scheme in place of whatever the request said (its addresses, cookies and
- * redirects are then always the site's, whatever Host or X-Forwarded-Host a
- * client sends).
+ * Puts the site's own host and scheme in place of whatever the request said,
+ * for oidc-provider (provider.proxy is on, so Koa would believe a client's
+ * X-Forwarded-Host and X-Forwarded-Proto): its addresses, cookies and
+ * redirects are then always the site's.
  */
-const handOver = (req: Request, res: Response): void => {
+const asTheSite = (req: Request): void => {
   const site = new URL(issuerUrl());
   req.headers.host = site.host;
   delete req.headers['x-forwarded-host'];
   req.headers['x-forwarded-proto'] = site.protocol.slice(0, -1);
-  void requestPath.run(req.path, () => serverFor().handler(req, res));
+};
+
+/** Hands a request to the authorization server, as the site's own (asTheSite). */
+const handOver = (req: Request, res: Response): void => {
+  asTheSite(req);
+  void current.run({ path: req.path, address: req.ip }, () => serverFor().handler(req, res));
+};
+
+/**
+ * Express middleware for the consent API (/api/connect, server/app.ts), whose
+ * routes call oidc-provider directly (interactionDetails, interactionResult):
+ * the same site's host and scheme as handOver, and the request's address for
+ * the fetch limits.
+ */
+export const asTheSiteForConnect = (req: Request, _res: Response, next: NextFunction): void => {
+  asTheSite(req);
+  current.run({ path: req.path, address: req.ip }, next);
 };
 
 /** The authorization server's limits (server/lib/rate_limit.ts), by address and method. */
 const limitsFor = (req: Request): RequestHandler[] => {
-  if (req.path === ROUTES.registration) return [limits.oauthRegister, limits.oauthRegisterAll];
-  if (req.path === ROUTES.token) return [limits.oauthToken];
-  if (req.path === ROUTES.authorization || req.path.startsWith(ROUTES.authorization + '/')) {
+  // As the router matches it, should a path other than offeredPath's ever get this far.
+  const path = routerPath(req.path);
+  if (path === ROUTES.registration) return [limits.oauthRegister, limits.oauthRegisterAll];
+  if (path === ROUTES.token) return [limits.oauthToken];
+  if (path === ROUTES.authorization || path.startsWith(ROUTES.authorization + '/')) {
     return [limits.oauthAuthorize];
   }
   return [limits.oauthOther];
@@ -419,7 +487,11 @@ const withRead = (req: Request): void => {
 /** Express middleware: everything under /oauth/ goes to the authorization server, after its limits. */
 export const oauthServer = (req: Request, res: Response, next: NextFunction): void => {
   if (!req.path.startsWith('/oauth/')) return next();
-  if (req.path === ROUTES.authorization && req.method === 'GET') withRead(req);
+  if (!offeredPath(req.path)) {
+    res.status(404).json({ error: 'not_found', error_description: 'There is nothing at this address.' });
+    return;
+  }
+  if (routerPath(req.path) === ROUTES.authorization && ['GET', 'HEAD'].includes(req.method)) withRead(req);
   const chain = limitsFor(req);
   const run =
     (i: number) =>

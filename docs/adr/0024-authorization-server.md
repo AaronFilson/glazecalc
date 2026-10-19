@@ -56,7 +56,7 @@ assistant's grant must be a Glazecalc connection the person can see and revoke w
   unique-local, multicast, documentation, NAT64, 6to4 or otherwise special (IPv4-mapped IPv6
   judged as IPv4); connects to the address it checked, with the name only for TLS and `Host` (no
   DNS rebinding); follows no redirect; stops after 5 seconds or 5 kB; takes JSON only; and makes at
-  most 30 fetches a minute for everyone together. oidc-provider checks that the document's
+  most 10 fetches a minute from one address, 10 for one host and 120 for everyone together (see Review fixes). oidc-provider checks that the document's
   `client_id` is its address and has no secret, and keeps it 1 to 24 hours. **DCR** is kept as the
   second way: 10 registrations an hour from one address and 500 a day from everyone; ids start
   `dcr_`; no registration access token; an app nobody connects goes after 7 days, one connected
@@ -153,13 +153,56 @@ The privacy page, the processing record and the `/assistants` page are a later b
 - **JWT access tokens:** checkable without the database, but not revocable before they expire; the
   endpoint already reads the connection's row on every request.
 
+## Review fixes
+
+A security review of this branch (2026-10-19) found five things, fixed on `r5-oauth-fixes`, each
+with a test that failed before:
+
+- **Exact addresses under `/oauth/`.** oidc-provider's router ignores letter case and a slash at
+  the end, so `POST /oauth/REGISTER` or `/oauth/register/` reached registration without its
+  limits. Now only the offered addresses, written exactly (`/oauth/authorize`, its way back
+  `/oauth/authorize/<uid>`, `/oauth/token`, `/oauth/register`, `/oauth/revoke`, `/oauth/jwks`),
+  reach it; anything else under `/oauth/` is 404 `not_found` (`offeredPath`). The limits also match
+  paths as the router does, as a second line.
+- **CIMD fetches and kept documents.** The one budget of 30 fetches a minute could be used up by
+  anyone naming made-up addresses, and oidc-provider keeps fetched documents only in memory (100 of
+  them), so a connected app pushed out could fail its next refresh. Now fetches are counted per
+  requesting address (Express's `req.ip`, one proxy hop; a /56 for IPv6), 10 a minute, per host
+  named, 10 a minute, and 120 a minute for everyone. And an app with at least one working
+  connection has its document kept in `oauth_records` (`server/oauth/client_documents.ts`), which
+  oidc-provider reads through the adapter's `Client.find` before its own memory or any fetch. It is
+  checked again when its time is up (its Cache-Control, 1 to 24 hours); a new document that passes
+  oidc-provider's checks replaces it, and a check that cannot be made or does not pass keeps the old
+  one and tries again 5 minutes later: a connection ends by the person or the app, never by a failed
+  fetch. The copy is the app's public metadata, nothing about a person; it goes after the last
+  connection to the app ends (when the app is next looked up), at the latest when that connection
+  would have run out (TTL). The privacy notice and the processing record say so.
+- **DCR's day for everyone** counts only registrations made (`skipFailedRequests`): refused ones use
+  up nothing. The 10 an hour per address counts an IPv6 /56 as one address (stricter than the /64
+  the review asked for; express-rate-limit's default, now written out). A ceiling on unused apps
+  kept was considered instead of the day's count, and not taken: someone filling it would block
+  registration for the 7 days an unused app is kept, where the day's count recovers in a day, and
+  CIMD, the way the specification now prefers, is unaffected either way.
+- **More IPv6 blocks in the CIMD guard:** IPv4-compatible `::/96` and SIIT `::ffff:0:0:0/96` (NAT64
+  `64:ff9b::/96` and `64:ff9b:1::/48`, 6to4 `2002::/16` and Teredo, inside `2001::/23`, were
+  already blocked whole).
+- **The consent API as the site.** `provider.proxy` is on, so Koa believes `X-Forwarded-Host` and
+  `-Proto`; the `/api/connect` routes call oidc-provider directly, and now get the site's own host
+  and scheme first, as `/oauth/` does (`asTheSiteForConnect`).
+
 ## Consequences
 
 - Assistants that connect only with OAuth can use a person's records, and the person sees and
   revokes each connection like a token.
-- Until the consent page ships (`r5-oauth-consent`), `/connect/:uid` is the client's not-found
-  page, so nobody can finish a connection; the server side is complete and tested
-  (`server/test/oauth_tests.ts`).
+- The consent page (`client/app/pages/connect/connect-page.ts`, route `connect/:uid`, a private
+  page: noindex, no Referer, no cache) shows the app's name, "self-described" for a DCR app, its
+  checked host, and where the answer goes: a host only for http and https (`redirectShown` in
+  `interactions.ts`); an app's own scheme is shown whole with a warning, since
+  `evilapp://claude.ai/cb` goes to whichever app opens `evilapp:`; a loopback answer and a CIMD
+  app answering on another host than its own are warned about too. "Also let it change my records"
+  is never ticked for the person, and neither button is focused. A visitor not signed in signs in
+  and comes back (`?next=`, this site's paths only). Each yes emails the account a notice naming
+  the app, its host and whether it may change records (`sendConnectionMade`).
 - oidc-provider's CIMD support is experimental (draft 02): a new draft may change it, so it is
   pinned and moved by hand. Its updates are taken like the MCP SDK's.
 - Koa runs inside Express for `/oauth/` only; an error there is logged without the request.
@@ -169,5 +212,6 @@ The privacy page, the processing record and the `/assistants` page are a later b
   `_meta["mcp/www_authenticate"]`, is to be checked with the real clients on staging.
 - The MCP conformance suite's `auth/*` scenarios test clients, not servers; its authorization
   server scenarios are run where they can be (`npm run test:mcp`).
-- The 30 CIMD fetches a minute are shared: someone sending many made-up addresses can hold up new
-  CIMD apps for a minute at a time (apps already fetched are cached), not anything else.
+- The 120 CIMD fetches a minute for everyone are shared: someone sending made-up addresses from many
+  addresses at once can hold up new CIMD apps for a minute at a time, not apps already connected
+  (Review fixes).
