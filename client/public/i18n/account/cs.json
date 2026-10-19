@@ -453,7 +453,6 @@
   },
   "tokens": {
     "heading": "Přístupové tokeny",
-    "intro": "Přístupový token umožní vašemu vlastnímu AI asistentovi nebo skriptu číst recepty, suroviny, poznámky a záznamy výpalů ve vašem účtu. Token zatím může jen číst: nikdy nic nemění ani neodstraňuje. Každý token přestane fungovat v den, který zvolíte, nebo hned po zneplatnění.",
     "howTo": "Jak připojit AI asistenta",
     "listLabel": "Vaše přístupové tokeny",
     "none": "Nemáte žádné přístupové tokeny.",

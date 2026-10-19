@@ -83,7 +83,7 @@ describe('AccountPage access tokens', () => {
     await press(fixture, 'Make the token');
     const req = httpMock().expectOne(API + '/tokens');
     expect(req.request.method).toBe('POST');
-    expect(req.request.body).toEqual({ name: 'My laptop', days: 30, password: 'password123' });
+    expect(req.request.body).toEqual({ name: 'My laptop', days: 30, scope: 'data:read', password: 'password123' });
     const token = 'glazecalc_pat_' + 'x'.repeat(49);
     req.flush(
       { code: 'token-made', msg: 'Your access token is ready.', token, row: row('My laptop') },
@@ -97,6 +97,46 @@ describe('AccountPage access tokens', () => {
     await press(fixture, 'I have copied it');
     expect(el(fixture, '#new-token')).toBeNull();
     expect((fixture.nativeElement as HTMLElement).textContent).not.toContain(token);
+  });
+
+  it('makes a token that can read and change, with only the shorter lifetimes, and says what each row can do', async () => {
+    const { fixture } = await create(OFF, { ...NO_TOKENS, tokens: [row('Reader')] });
+    expect(text(fixture, '.token-list')).toContain('Read only');
+    const days = () => [...(el(fixture, '#token-days') as HTMLSelectElement).options].map((o) => o.textContent?.trim());
+    expect(days()).toEqual(['7 days', '30 days', '90 days', '365 days']);
+    // A year chosen first becomes the longest a writing token may have.
+    const select = el(fixture, '#token-days') as HTMLSelectElement;
+    select.value = select.options[3]!.value;
+    select.dispatchEvent(new Event('change'));
+    await fixture.whenStable();
+    (el(fixture, '#token-scope-write') as HTMLInputElement).click();
+    await settle(fixture);
+    expect(days()).toEqual(['7 days', '30 days', '90 days']);
+    expect(text(fixture, '.tokens-section')).toContain(
+      'A token that can change your records stops working after at most 90 days.'
+    );
+    expect(el(fixture, '#token-scope-write')!.getAttribute('aria-describedby')).toBe('token-scope-write-hint');
+
+    await type(fixture, 'token-name', 'Claude');
+    await press(fixture, 'Continue', '.tokens-section');
+    await type(fixture, 'token-confirm-password', 'password123');
+    await press(fixture, 'Make the token');
+    const req = httpMock().expectOne(API + '/tokens');
+    expect(req.request.body).toEqual({ name: 'Claude', days: 90, scope: 'data:write', password: 'password123' });
+    req.flush(
+      {
+        code: 'token-made',
+        msg: 'Your access token is ready.',
+        token: 'glazecalc_pat_' + 'y'.repeat(49),
+        row: row('Claude', { scopes: ['data:write'] })
+      },
+      { status: 201, statusText: 'Created' }
+    );
+    await settle(fixture);
+    expect(text(fixture, '.new-token-panel')).toContain('can read and change your records');
+    expect(text(fixture, '.token-list')).toContain('Read and change');
+    // The form goes back to reading only.
+    expect((el(fixture, '#token-scope-read') as HTMLInputElement).checked).toBe(true);
   });
 
   it('asks an account whose email is not confirmed to confirm it first, and sends the link again', async () => {
@@ -148,7 +188,13 @@ describe('AccountPage access tokens', () => {
     await type(fixture, 'token-confirm-code', '123456');
     await press(fixture, 'Make the token');
     const req = httpMock().expectOne(API + '/tokens');
-    expect(req.request.body).toEqual({ name: 'Cursor', days: 30, password: 'password123', code: '123456' });
+    expect(req.request.body).toEqual({
+      name: 'Cursor',
+      days: 30,
+      scope: 'data:read',
+      password: 'password123',
+      code: '123456'
+    });
     req.flush(
       { code: 'factor-needed', msg: 'Please also confirm it is you.' },
       { status: 400, statusText: 'Bad Request' }
@@ -177,7 +223,13 @@ describe('AccountPage access tokens', () => {
     await type(fixture, 'token-confirm-code', '123456');
     await press(fixture, 'Make the token');
     const req = httpMock().expectOne(API + '/tokens');
-    expect(req.request.body).toEqual({ name: 'Cursor', days: 30, reauth: 'fresh-grant', code: '123456' });
+    expect(req.request.body).toEqual({
+      name: 'Cursor',
+      days: 30,
+      scope: 'data:read',
+      reauth: 'fresh-grant',
+      code: '123456'
+    });
     req.flush(
       {
         code: 'token-made',

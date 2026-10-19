@@ -453,7 +453,6 @@
   },
   "tokens": {
     "heading": "Adgangstokens",
-    "intro": "Med et adgangstoken kan en egen AI-assistent eller et eget script læse opskrifterne, råvarerne, noterne og brændingsjournalerne i kontoen. Foreløbig kan et adgangstoken kun læse: det ændrer eller fjerner aldrig noget. Hvert adgangstoken holder op med at virke den dag, der vælges, eller så snart det tilbagekaldes.",
     "howTo": "Sådan tilsluttes en AI-assistent",
     "listLabel": "Kontoens adgangstokens",
     "none": "Der er ingen adgangstokens.",

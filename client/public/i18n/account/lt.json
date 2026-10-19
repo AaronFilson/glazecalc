@@ -453,7 +453,6 @@
   },
   "tokens": {
     "heading": "Prieigos žetonai",
-    "intro": "Prieigos žetonas leidžia jūsų dirbtinio intelekto asistentui ar scenarijui skaityti jūsų paskyroje esančius receptus, žaliavas, užrašus ir degimo žurnalus. Kol kas žetonas gali tik skaityti: jis niekada nieko nekeičia ir nešalina. Kiekvienas žetonas nustoja veikti jūsų pasirinktą dieną arba iš karto, kai jį atšaukiate.",
     "howTo": "Kaip prijungti dirbtinio intelekto asistentą",
     "listLabel": "Jūsų prieigos žetonai",
     "none": "Neturite prieigos žetonų.",

@@ -453,7 +453,6 @@
   },
   "tokens": {
     "heading": "Juurdepääsuload",
-    "intro": "Juurdepääsuluba lubab teie enda tehisintellekti assistendil või skriptil lugeda teie konto retsepte, tooraineid, märkmeid ja põletuspäevikuid. Praegu saab luba ainult lugeda: see ei muuda ega eemalda kunagi midagi. Iga luba lakkab töötamast teie valitud päeval või kohe, kui selle tühistate.",
     "howTo": "Tehisintellekti assistendi ühendamine",
     "listLabel": "Teie juurdepääsuload",
     "none": "Teil pole juurdepääsulube.",

@@ -453,7 +453,6 @@
   },
   "tokens": {
     "heading": "Piekļuves marķieri",
-    "intro": "Piekļuves marķieris ļauj jūsu mākslīgā intelekta asistentam vai skriptam lasīt receptes, izejvielas, piezīmes un apdedzināšanas žurnālus jūsu kontā. Pagaidām marķieris var tikai lasīt: tas nekad neko nemaina un nedzēš. Katrs marķieris pārstāj darboties jūsu izvēlētajā dienā vai tiklīdz to anulējat.",
     "howTo": "Kā pievienot mākslīgā intelekta asistentu",
     "listLabel": "Jūsu piekļuves marķieri",
     "none": "Jums nav piekļuves marķieru.",

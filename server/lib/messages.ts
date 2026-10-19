@@ -169,7 +169,8 @@ export const MESSAGES = {
   'trash-full':
     'The Trash is full, so an access token cannot move anything more to it. Please empty some of it on the website first.',
   'firing-links-full': 'A recipe can be linked to at most {most} firing logs. Unlink one to link another.',
-  'account-limit': `An account can keep up to {limit} {label, select, ${MANY}}. Please remove some to save more.`,
+  'account-limit':
+    'An account can keep up to {limit} records in all: recipes, materials, notes, firing logs and the rest together. Please remove some to save more.',
 
   // Share links (server/routes/share_routes.ts).
   'not-shared': 'This recipe is not shared, or the link is not complete.',
@@ -183,7 +184,9 @@ export const MESSAGES = {
   // The account page's access tokens (server/routes/token_routes.ts).
   'token-name': 'Please give the token a name of 1 to {most} characters.',
   'token-expiry-choices': 'Please choose when the token expires: after {choices} days.',
-  'token-scope-choices': 'For now a token can only read your records.',
+  'token-scope-choices': 'Please choose whether the token can only read your records, or read and change them.',
+  'token-write-expiry':
+    'A token that can change your records stops working after at most {most} days. Please choose a shorter time.',
   'token-needs-confirmed-email': 'Please confirm your email before making an access token.',
   'token-limit': 'An account can have up to {most} access tokens at once. Please revoke one you no longer use first.',
   'token-made': 'Your access token is ready. Copy it now: it will not be shown again.',
@@ -210,6 +213,8 @@ export const MESSAGES = {
   'too-many-shared-views': 'Too many shared recipes were opened from this address. ' + WAIT,
   'too-many-deletes':
     'This access token has moved too many records to the Trash in the last hour. Please try again later.',
+  'too-many-changes':
+    'Too many changes were made to this account with access tokens. Please wait a while and try again; changes on the website still work.',
   'too-many-mcp': 'Too many requests to the Glazecalc tools for AI assistants. ' + WAIT
 } satisfies Record<string, Text>;
 

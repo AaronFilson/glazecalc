@@ -83,7 +83,6 @@
     "storedShares": "<b>Recepty sdílené odkazem, pokud nějaké sdílíte:</b> který recept, kdy byl jeho odkaz vytvořen a zda zobrazuje poznámky receptu, s jednosměrným otiskem (hash) odkazu (nikdy sám odkaz). Kdokoli, kdo odkaz má, uvidí recept tak, jak je nyní, s jeho Segerovým vzorcem a s poznámkami, pokud jste zvolili jejich zobrazení; nikdy váš e-mail, váš účet ani žádné ceny. Sdílené recepty jsou vyloučeny z vyhledávačů a odkaz se nikdy nedostane do protokolů serveru. Aby se zabránilo zneužití, počítají se v paměti 15 minut sdílené recepty otevřené z každé IP adresy. Zkušební přístup sdílet nemůže.",
     "storedTokens": "<b>Přístupové tokeny a připojené aplikace, pokud nějaké vytvoříte nebo schválíte:</b> u každého jeho název, co smí dělat, jednosměrný otisk (hash) tokenu (nikdy sám token) a jeho poslední 4 znaky a kdy byl vytvořen, naposledy použit, kdy vyprší a kdy byl zneplatněn.",
     "storedActivity": "<b>Co dělaly tokeny a aplikace:</b> řádek pro každý záznam, který přístupový token nebo připojená aplikace vytvořily, změnily, přesunuly do koše, vrátily z koše nebo u nich vrátily změnu zpět: kdy, který token nebo aplikace, co udělaly a název záznamu, zkrácený. Nikdy text poznámky ani nic jiného ze záznamu. Změny, které provedete na webu, se neuvádějí.",
-    "storedLimits": "<b>Omezení četnosti:</b> aby se zabránilo hádání a splašeným skriptům, počítají se pokusy o přihlášení, registrace, žádosti o obnovení a zkušební přístupy podle IP adresy nebo účtu, nefunkční přístupové tokeny podle IP adresy, požadavky s přístupovými tokeny podle účtu (120 za minutu a 5000 za den), záznamy, které každý přístupový token přesune do koše, podle tokenu, otevřené sdílené recepty a sdílené odkazy, které nic neotevřou, podle IP adresy, a požadavky na nástroje pro AI asistenty (MCP): 60 za minutu a 2000 za den podle IP adresy, nebo 300 za minutu a 20 000 za den podle účtu, když se používá přístupový token, s nejvýše 10 záměnami nebo shodami za minutu.",
     "storedTrial": "<b>Zkušební přístup (Vyzkoušet hned):</b> žádný e-mail ani heslo, jen vymyšlené jméno, například „speckled quiet kilns“. Pokud se během zkušebního přístupu přihlásíte k účtu ve stejném prohlížeči, přesune se to, co ve zkušebním přístupu vzniklo, do účtu.",
     "storedResets": "<b>Odkazy pro obnovení hesla a e-mailové odkazy:</b> který účet o ně požádal, kdy, adresa, na kterou byl poslán odkaz k potvrzení adresy, a otisk každého odkazu (ne odkaz samotný).",
     "storedLogs": "<b>Protokoly:</b> webový server zaznamenává každý požadavek: vaši IP adresu, čas, požadovanou stránku a název vašeho prohlížeče. Aplikace zaznamenává chyby se stránkou, na které nastaly, nikdy s vaší e-mailovou adresou.",
@@ -106,7 +105,6 @@
     "choiceNoWarranty": "Glazecalc se poskytuje tak, jak je, bez záruky. Ti, kdo projekt udržují, nepřebírají žádnou odpovědnost ani ručení za vaše rozhodnutí vytvořit si účet ani za to, kde jsou jeho data uložena.",
     "keptHeading": "Jak dlouho se data uchovávají",
     "keptAccount": "<b>Váš účet a to, co uložíte:</b> dokud je neodstraníte. Účty se neodstraňují kvůli tomu, že se nepoužívají.",
-    "keptTrash": "<b>Koš a dřívější verze:</b> odebraný záznam 30 dnů po odebrání, nebo dokud ho nesmažete nadobro či nevyprázdníte koš; dřívější verze 90 dnů, a jen posledních 20 u každého záznamu (a ta těsně před změnami přístupového tokenu), nikdy však déle než záznam: dokud je v koši, jeho verze zmizí spolu s ním. Obojí zmizí hned, když smažete účet.",
     "keptShares": "<b>Sdílené odkazy:</b> dokud recept nepřestanete sdílet, nevytvoříte pro něj nový odkaz, nepřesunete ho do koše nebo nesmažete účet. Vrácení receptu z koše ho znovu nesdílí. Obnovení hesla nebo odhlášení všude také zneplatní všechny vaše odkazy; změna hesla ne.",
     "keptTokens": "<b>Přístupové tokeny a připojené aplikace:</b> každý do 30 dnů po vypršení (každý vyprší, nejpozději do roku) nebo dokud nesmažete účet. Obnovení hesla nebo „Odhlásit se všude“ je zneplatní všechny najednou.",
     "keptActivity": "<b>Co dělaly tokeny a aplikace:</b> 90 dnů, nebo dokud nesmažete účet.",
@@ -216,7 +214,6 @@
     "lead": "AI asistenti, například Claude, GitHub Copilot, Cursor a Gemini, mohou využívat výpočty Glazecalc přímo, přes Model Context Protocol (MCP).",
     "whatHeading": "Co umí",
     "what": "Bez účtu může asistent vyhledávat suroviny v knihovně, počítat Segerův vzorec receptu, porovnávat ho s limity pro jeho výpal, navrhovat náhrady za suroviny, které se už nevyrábějí, přestavět recept ze surovin, které uvedete, převádět mezi žároměrkami a teplotami a vyhledávat v návodech a číst je. Nic z toho, co pošle, se neukládá; stejně jako u každé stránky protokol webového serveru zaznamenává 14 dnů IP adresu, čas a adresu každého požadavku (nikdy to, co bylo odesláno).",
-    "mine": "S přístupovým tokenem ze <account>stránky vašeho účtu</account> může také číst vaše vlastní recepty, suroviny, zápisník, záznamy výpalů a suroviny, které máte v zásobě. Token může jen číst: nikdy nic nemění ani neodstraňuje.",
     "caution": "Kontroly limitů jsou upozornění z publikovaných limitů, stejně jako v aplikaci, ne důkaz, že je glazura bezpečná pro styk s potravinami. Vypalte zkoušku každé glazury a glazury pro povrchy ve styku s potravinami nechte otestovat na uvolňování kovů.",
     "addressHeading": "Adresa",
     "address": "Dejte svému asistentovi tuto adresu a použijte přenos Streamable HTTP:",
@@ -236,7 +233,6 @@
     "appsHeading": "Claude, ChatGPT a další aplikace",
     "apps": "Přidejte vlastní konektor s výše uvedenou adresou. Tyto aplikace zatím nemohou poslat přístupový token, takže dostanou nástroje, které účet nepotřebují. Přístup k vašim vlastním záznamům z nich přijde s přihlášením z aplikace.",
     "stopHeading": "Ukončení přístupu",
-    "stop": "Token můžete kdykoli zneplatnit na <account>stránce svého účtu</account>. Každý token přestane fungovat v den, který jste zvolili, a všechny přestanou fungovat najednou, když obnovíte heslo nebo se odhlásíte všude.",
-    "limits": "Z každé adresy lze poslat 60 požadavků za minutu a 2000 za den; účet používající token 300 za minutu a 20 000 za den. Záměny a shody jsou omezeny na 10 za minutu."
+    "stop": "Token můžete kdykoli zneplatnit na <account>stránce svého účtu</account>. Každý token přestane fungovat v den, který jste zvolili, a všechny přestanou fungovat najednou, když obnovíte heslo nebo se odhlásíte všude."
   }
 }

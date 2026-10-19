@@ -453,7 +453,6 @@
   },
   "tokens": {
     "heading": "Käyttöoikeustunnukset",
-    "intro": "Käyttöoikeustunnuksen avulla oma tekoälyavustaja tai skripti voi lukea tilin reseptit, raaka-aineet, muistiinpanot ja polttopäiväkirjat. Toistaiseksi tunnus voi vain lukea: se ei koskaan muuta tai poista mitään. Jokainen tunnus lakkaa toimimasta valittuna päivänä tai heti, kun se peruutetaan.",
     "howTo": "Tekoälyavustajan yhdistäminen",
     "listLabel": "Käyttöoikeustunnukset",
     "none": "Käyttöoikeustunnuksia ei ole.",

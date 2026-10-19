@@ -453,7 +453,6 @@
   },
   "tokens": {
     "heading": "Comharthaí rochtana",
-    "intro": "Ligeann comhartha rochtana do chúntóir AI féin nó do script féin oidis, ábhair, nótaí agus taifid bhácála do chuntais a léamh. Faoi láthair ní féidir le comhartha ach léamh: ní athraíonn sé ná ní bhaineann sé aon rud riamh. Stopann gach comhartha ag obair ar an lá a roghnaíonn tú, nó chomh luath agus a chúlghairtear é.",
     "howTo": "Conas cúntóir AI a cheangal",
     "listLabel": "Do chomharthaí rochtana",
     "none": "Níl aon chomhartha rochtana agat.",

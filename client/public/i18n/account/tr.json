@@ -453,7 +453,6 @@
   },
   "tokens": {
     "heading": "Erişim belirteçleri",
-    "intro": "Erişim belirteci, kendi yapay zekâ asistanınızın veya betiğinizin hesabınızdaki reçeteleri, hammaddeleri, notları ve pişirim kayıtlarını okumasını sağlar. Şimdilik bir belirteç yalnızca okuyabilir: hiçbir şeyi asla değiştirmez veya kaldırmaz. Her belirteç, seçtiğiniz günde ya da iptal ettiğiniz anda çalışmayı bırakır.",
     "howTo": "Yapay zekâ asistanı nasıl bağlanır",
     "listLabel": "Erişim belirteçleriniz",
     "none": "Hiç erişim belirteciniz yok.",

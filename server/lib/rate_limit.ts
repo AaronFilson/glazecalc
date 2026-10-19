@@ -1,5 +1,5 @@
 import type { Request, Response } from 'express';
-import { type Options, rateLimit } from 'express-rate-limit';
+import { MemoryStore, type Options, rateLimit } from 'express-rate-limit';
 import { type MessageCode, say } from './messages.ts';
 import { accessTokenIn, checkAccessToken } from './token_auth.ts';
 
@@ -19,7 +19,9 @@ const limiter = (
   minutes: number,
   limit: number | ((req: Request) => number),
   code: MessageCode,
-  more: Partial<Pick<Options, 'keyGenerator' | 'skipSuccessfulRequests' | 'requestWasSuccessful' | 'handler'>> & {
+  more: Partial<
+    Pick<Options, 'keyGenerator' | 'skipSuccessfulRequests' | 'requestWasSuccessful' | 'handler' | 'store'>
+  > & {
     skip?: (req: Request, res: Response) => boolean | Promise<boolean>;
   } = {}
 ) => {
@@ -111,15 +113,36 @@ export const accessTokens = limiter(15, 30, 'too-many-tokens', {
 });
 
 /**
- * Records moved to the Trash with an access token (DELETE /api/<kind>/delete/:id),
- * per token: plenty for a script tidying up, too few for one gone wrong to
- * clear out an account before anyone notices. The web session is not counted.
- * After requireScope, which says which token it is.
+ * Records moved to the Trash with an access token (DELETE /api/<kind>/delete/:id,
+ * and the MCP tool move_to_trash), per token: plenty for a script tidying up,
+ * too few for one gone wrong to clear out an account before anyone notices.
+ * The web session is not counted. After requireScope, which says which token
+ * it is. The MCP tool counts in the same store (countTokenDelete).
  */
-export const tokenDeletes = limiter(60, 100, 'too-many-deletes', {
+export const TOKEN_DELETES_PER_HOUR = 100;
+const deletesStore = new MemoryStore();
+const deletesKey = (tokenId: string): string => 'token-deletes:' + tokenId;
+export const tokenDeletes = limiter(60, TOKEN_DELETES_PER_HOUR, 'too-many-deletes', {
   skip: (req) => !req.access || req.access.via === 'session',
-  keyGenerator: (req) => 'token-deletes:' + (req.access && 'tokenId' in req.access ? req.access.tokenId : '')
+  keyGenerator: (req) => deletesKey(req.access && 'tokenId' in req.access ? req.access.tokenId : ''),
+  store: deletesStore
 });
+
+/**
+ * Changes made with an access token (TOKEN_WRITE_LIMITS), per account,
+ * whichever of its tokens is used and whether through the record routes
+ * (server/lib/require_scope.ts, for every permission that writes) or the MCP
+ * write tools (countTokenWrite): 60 a minute and 5,000 a day (owner decision,
+ * 2026-10-19). Enough for an assistant saving a day's tests, too few for a
+ * script gone wrong to bury the account's history before anyone notices: each
+ * change keeps a version and writes the activity log. On top of the limits on
+ * every token request (TOKEN_LIMITS, MCP_LIMITS), which still count changes
+ * too. The web session is not counted.
+ */
+export const TOKEN_WRITE_LIMITS = { minute: 60, day: 5000 } as const;
+const writesMinuteStore = new MemoryStore();
+const writesDayStore = new MemoryStore();
+const writesKey = (userId: string): string => 'token-writes:' + userId;
 
 /**
  * Every request made with an access token (server/lib/require_scope.ts: the
@@ -141,6 +164,35 @@ export const tokenDay = limiter(24 * 60, () => TOKEN_LIMITS.day, 'too-many-attem
   skip: (req) => !viaToken(req),
   keyGenerator: (req) => tokenKey(req) + ':day'
 });
+export const tokenWriteMinute = limiter(1, () => TOKEN_WRITE_LIMITS.minute, 'too-many-changes', {
+  skip: (req) => !viaToken(req),
+  keyGenerator: (req) => writesKey(String(req.user?._id)),
+  store: writesMinuteStore
+});
+export const tokenWriteDay = limiter(24 * 60, () => TOKEN_WRITE_LIMITS.day, 'too-many-changes', {
+  skip: (req) => !viaToken(req),
+  keyGenerator: (req) => writesKey(String(req.user?._id)),
+  store: writesDayStore
+});
+
+/**
+ * Counts one change made through the MCP write tools against the account's
+ * TOKEN_WRITE_LIMITS, in the same counts as the record routes; resolves false
+ * once over, and the change is then not made. As a limiter does, a refused
+ * change is counted in the minute, and not in the day.
+ */
+export const countTokenWrite = async (userId: string): Promise<boolean> => {
+  if (process.env.RATE_LIMITS === 'off') return true;
+  const key = writesKey(userId);
+  if ((await writesMinuteStore.increment(key)).totalHits > TOKEN_WRITE_LIMITS.minute) return false;
+  return (await writesDayStore.increment(key)).totalHits <= TOKEN_WRITE_LIMITS.day;
+};
+
+/** Counts one record moved to the Trash by the MCP tool against its token's TOKEN_DELETES_PER_HOUR; false once over. */
+export const countTokenDelete = async (tokenId: string): Promise<boolean> => {
+  if (process.env.RATE_LIMITS === 'off') return true;
+  return (await deletesStore.increment(deletesKey(tokenId))).totalHits <= TOKEN_DELETES_PER_HOUR;
+};
 
 /**
  * Recipes opened by share link (GET /api/shared/recipe), per address: loose,

@@ -453,7 +453,6 @@
   },
   "tokens": {
     "heading": "Tokeny dostępu",
-    "intro": "Token dostępu pozwala własnemu asystentowi AI lub skryptowi odczytywać receptury, surowce, notatki i dzienniki wypałów z konta. Na razie token może tylko odczytywać: nigdy niczego nie zmienia ani nie usuwa. Każdy token przestaje działać w wybranym dniu albo od razu po unieważnieniu.",
     "howTo": "Jak połączyć asystenta AI",
     "listLabel": "Tokeny dostępu",
     "none": "Brak tokenów dostępu.",

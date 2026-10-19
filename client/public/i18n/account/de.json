@@ -453,7 +453,6 @@
   },
   "tokens": {
     "heading": "Zugriffstoken",
-    "intro": "Mit einem Zugriffstoken kann Ihr eigener KI-Assistent oder Ihr eigenes Skript die Rezepte, Rohstoffe, Notizen und Brennprotokolle in Ihrem Konto lesen. Vorerst kann ein Token nur lesen: Es ändert oder entfernt nie etwas. Jedes Token hört an dem Tag auf zu funktionieren, den Sie wählen, oder sobald Sie es widerrufen.",
     "howTo": "So verbinden Sie einen KI-Assistenten",
     "listLabel": "Ihre Zugriffstoken",
     "none": "Sie haben keine Zugriffstoken.",

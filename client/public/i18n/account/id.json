@@ -452,7 +452,6 @@
   },
   "tokens": {
     "heading": "Token akses",
-    "intro": "Token akses memungkinkan asisten AI atau skrip Anda sendiri membaca resep, bahan, catatan, dan catatan pembakaran di akun Anda. Untuk saat ini token hanya dapat membaca: token tidak pernah mengubah atau menghapus apa pun. Setiap token berhenti berfungsi pada hari yang Anda pilih, atau segera setelah Anda mencabutnya.",
     "howTo": "Cara menghubungkan asisten AI",
     "listLabel": "Token akses Anda",
     "none": "Anda tidak punya token akses.",
