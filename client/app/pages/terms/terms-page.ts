@@ -49,6 +49,11 @@ const LINKS = {
       </ul>
     </section>
 
+    <section class="panel">
+      <h2>{{ t('site.terms.yoursHeading') }}</h2>
+      <p>{{ t('site.terms.yours') }}</p>
+    </section>
+
     <section class="panel" id="fair-use">
       <h2>{{ t('site.terms.fairHeading') }}</h2>
       <p>{{ t('site.terms.fairIntro') }}</p>
@@ -63,6 +68,11 @@ const LINKS = {
     <section class="panel">
       <h2>{{ t('site.terms.stopHeading') }}</h2>
       <p>{{ t('site.terms.stop') }}</p>
+    </section>
+
+    <section class="panel">
+      <h2>{{ t('site.terms.leaveHeading') }}</h2>
+      <p>{{ t('site.terms.leave') }}</p>
     </section>
 
     <section class="panel">
