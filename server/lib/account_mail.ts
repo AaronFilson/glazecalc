@@ -6730,3 +6730,98 @@ export const sendTokenExpiring = (
   token: { name: string; expiresAt: Date },
   language?: string
 ): Promise<void> => sendTokenMail(TOKEN_EXPIRING, to, token, language);
+
+// The notice for each new connection of an AI app (docs/adr/0024-authorization-server.md),
+// sent from the consent API when the person says yes. English only so far: the
+// next wave translates it, and fingerprints it in the tests.
+
+/** The parts of the connection notice, put together as the connection is. */
+export interface ConnectionEmail {
+  subject: string;
+  /** {account}, {date} and {time}: when it was connected. */
+  opening: string;
+  /** {name}: the app's name, as it gave it. */
+  named: string;
+  /** {host}: the app's own address, which Glazecalc fetched its details from (CIMD). */
+  checked: string;
+  /** An app that registered itself (DCR): its name is only its own word. */
+  selfDescribed: string;
+  /** {host}: where the answer goes. */
+  answerAt: string;
+  /** {host}: the answer goes to the person's own computer (a loopback address). */
+  loopback: string;
+  read: string;
+  /** {days}: how long it may change records. */
+  write: string;
+  /** {page}, {forgot} and {app}. */
+  closing: string;
+}
+
+export const CONNECTION_MADE: Record<string, ConnectionEmail> = {
+  en: {
+    subject: 'An app was connected to your Glazecalc account',
+    opening: 'An app was connected to the Glazecalc account {account} on {date} at {time} (UTC).\n\n',
+    named: 'The app: "{name}"\n',
+    checked: 'Its address, checked by Glazecalc: {host}\n',
+    selfDescribed: 'It registered itself, so its name is only what it says about itself.\n',
+    answerAt: 'It receives the answer at: {host}\n',
+    loopback: 'It receives the answer on the computer it was connected from ({host}).\n',
+    read:
+      '\nIt can read the recipes, notebook, materials, shelf and settings saved in the account. ' +
+      'It cannot change anything.\n\n',
+    write:
+      '\nIt can read the recipes, notebook, materials, shelf and settings saved in the account, and for {days} days it can also change them: ' +
+      'make and change records, and move them to the Trash. Every change keeps a version of the record as it was, so you can undo it on the website.\n\n',
+    closing:
+      'If this was you, there is nothing else to do. You can see what it does and revoke it at {page}\n\n' +
+      'If not, revoke it there and reset your password right away at {forgot}\n' +
+      '\n-- \nGlazecalc, {app}\n'
+  }
+};
+
+/** A new connection, as the notice names it. */
+export interface ConnectionMade {
+  /** The app's name, cleaned (oauth/provider.ts cleanName). */
+  name: string;
+  /** The app's own host, for an app named by its address (CIMD). */
+  clientHost?: string;
+  /** Where the answer goes: a host, or an app's own scheme (com.example.app:). */
+  redirectHost?: string;
+  /** Whether the answer goes to the person's own computer. */
+  loopback: boolean;
+  /** Whether it registered itself (DCR). */
+  selfDescribed: boolean;
+  /** For how many days it may change records; 0 or absent when it may only read. */
+  writeDays?: number;
+  createdAt: Date;
+}
+
+/** The time of day, in UTC, as 14:05. */
+const mailTime = (date: Date): string => date.toISOString().slice(11, 16);
+
+export const sendConnectionMade = (to: string, connection: ConnectionMade, language?: string): Promise<void> => {
+  const email = (language && CONNECTION_MADE[language]) || CONNECTION_MADE['en']!;
+  // The date in the email's own language: English where the email falls back to it.
+  const dateLanguage = language && CONNECTION_MADE[language] ? language : 'en';
+  const values = {
+    account: to,
+    name: tokenNameForMail(connection.name),
+    date: mailDate(connection.createdAt, dateLanguage),
+    time: mailTime(connection.createdAt),
+    days: connection.writeDays ?? 0,
+    page: pageIn(language, '/account/apps'),
+    forgot: pageIn(language, '/forgot'),
+    app: mailer.appUrl()
+  };
+  const host = (value: string) => fill(value, { host: tokenNameForMail(connection.redirectHost ?? '') });
+  const parts = [
+    fill(email.opening, values),
+    fill(email.named, values),
+    ...(connection.clientHost ? [fill(email.checked, { host: tokenNameForMail(connection.clientHost) })] : []),
+    ...(connection.selfDescribed ? [email.selfDescribed] : []),
+    ...(connection.redirectHost ? [host(connection.loopback ? email.loopback : email.answerAt)] : []),
+    fill(connection.writeDays ? email.write : email.read, values),
+    fill(email.closing, values)
+  ];
+  return mailer.send({ to, subject: email.subject, text: parts.join('') });
+};

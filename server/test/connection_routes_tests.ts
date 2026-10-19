@@ -71,6 +71,7 @@ describe('Connected apps', () => {
         kind: 'oauth',
         name: 'Claude',
         scopes: ['data:read', 'data:write'],
+        clientSource: 'cimd',
         clientHost: 'claude.ai',
         redirectHost: 'claude.ai'
       });
@@ -84,15 +85,29 @@ describe('Connected apps', () => {
         access: 'write',
         clientHost: 'claude.ai',
         redirectHost: 'claude.ai',
+        selfDescribed: false,
         working: true
       });
       expect(older).to.include({ id: pat.id, kind: 'pat', name: 'Script', access: 'read', working: true });
+      expect(older).not.to.have.property('selfDescribed');
       expect(older.hint).to.equal(pat.token.slice(-4));
       expect(older).to.have.property('lastUsedAt');
       expect(newest).not.to.have.property('hint');
       expect(JSON.stringify(res.body)).not.to.match(/"hash"/);
       expect(JSON.stringify(res.body)).not.to.include(pat.token);
       expect(older.changes).to.eql({ create: 0, change: 0, trash: 0, restore: 0, undo: 0 });
+    });
+
+    it('marks an app that registered itself (DCR) as self-described', async () => {
+      const dcr = await connect(user, {
+        kind: 'oauth',
+        name: 'Some Assistant',
+        clientSource: 'dcr',
+        redirectHost: '127.0.0.1'
+      });
+      const [row] = (await get('')).body.connections;
+      expect(row).to.include({ id: dcr.id, selfDescribed: true, redirectHost: '127.0.0.1' });
+      expect(row).not.to.have.property('clientHost');
     });
 
     it('says when one is revoked or has expired', async () => {

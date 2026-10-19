@@ -23,7 +23,9 @@ import {
 } from '../oauth/cimd.ts';
 import { keptClientDocument, RETRY_SECONDS } from '../oauth/client_documents.ts';
 import { checkClientMetadata, cleanName, getProvider } from '../oauth/provider.ts';
+import { redirectShown } from '../oauth/interactions.ts';
 import { revokeGrant } from '../oauth/revoke.ts';
+import { CONNECTION_MADE } from '../lib/account_mail.ts';
 import { securitySchemes } from '../mcp/server.ts';
 import { READ_ONLY_TOKEN, WRITE_TOOLS } from '../mcp/tools/account_write.ts';
 import { api, base, expect, makeUser, sessionToken } from './support/app.ts';
@@ -475,7 +477,7 @@ describe('OAuth: the authorization server', function () {
         checkClientMetadata({ ...base, client_id: 'x', redirect_uris: ['cursor://anysphere.app/cb'] })
       ).to.not.throw();
       expect(() => checkClientMetadata({ ...base, client_id: 'x', redirect_uris: ['mailto:a@b.example'] })).to.throw();
-      expect(cleanName('  Good‮app\u0000  name ')).to.equal('Goodapp name');
+      expect(cleanName('  Good\u202eapp\u0000  name ')).to.equal('Goodapp name');
       expect(cleanName('​⁦')).to.equal(undefined);
       expect(cleanName(42)).to.equal(undefined);
     });
@@ -615,7 +617,8 @@ describe('OAuth: the authorization server', function () {
       const body = (await shown.json()) as any;
       expect(body.uid).to.equal(started.uid);
       expect(body.client).to.eql({ name: 'Helpful Assistant', source: 'dcr', host: null, selfDescribed: true });
-      expect(body.redirect).to.eql({ host: '127.0.0.1:7777', loopback: true });
+      expect(body.redirect).to.eql({ scheme: 'http:', host: '127.0.0.1:7777', loopback: true, app: null });
+      expect(body.redirectElsewhere).to.equal(false);
       expect(body.writeRequested).to.equal(true);
       expect(shown.headers.get('cache-control')).to.equal('no-store');
     });
@@ -772,6 +775,69 @@ describe('OAuth: the authorization server', function () {
       expect((await rpc('tools/list', {}, unticked.tokens.access_token)).status).to.equal(401);
     });
 
+    it('shows an app’s own scheme whole, never as a host it looks like (evilapp://claude.ai)', async () => {
+      const { session, user } = await person();
+      const evil = await registered({ client_name: 'Claude', redirect_uris: ['evilapp://claude.ai/cb'] });
+      const started = await authorize(evil, { redirect: 'evilapp://claude.ai/cb' });
+      expect(started.res.status, await started.res.clone().text()).to.equal(303);
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any -- JSON read in the tests
+      const body = (await (await details(started, session)).json()) as any;
+      expect(body.client).to.include({ name: 'Claude', host: null, selfDescribed: true });
+      expect(body.redirect).to.eql({ scheme: 'evilapp:', host: null, loopback: false, app: 'evilapp://claude.ai/cb' });
+      // The row and the notice name the scheme, never claude.ai.
+      const { redirectTo } = (await (await answer(started, session, { decision: 'allow' })).json()) as {
+        redirectTo: string;
+      };
+      expect((await resume(started, redirectTo)).protocol).to.equal('evilapp:');
+      const row = (await AccessToken.findOne({ userId: user._id, kind: 'oauth' }))!;
+      expect(row.redirectHost).to.equal('evilapp:');
+      const [notice] = (await mail.waitFor(user.email, 1)).filter(
+        (sent) => sent.subject === CONNECTION_MADE['en']!.subject
+      );
+      expect(notice!.text).to.include('It receives the answer at: evilapp:');
+      expect(notice!.text).not.to.include('claude.ai');
+      // Shown without its query, cleaned of anything that hides or reorders text.
+      expect(redirectShown('com.example.app:/oauth?code=x#y')).to.eql({
+        scheme: 'com.example.app:',
+        host: null,
+        loopback: false,
+        app: 'com.example.app:/oauth'
+      });
+      expect(redirectShown('evilapp://claude.ai‮/cb').app).to.equal('evilapp://claude.ai/cb');
+      expect(redirectShown('http://localhost:8080/cb')).to.include({ host: 'localhost:8080', loopback: true });
+      expect(redirectShown(undefined)).to.include({ host: null, app: null, loopback: false });
+    });
+
+    it('emails a notice for each new connection: the app, its host, what it may do, and where to revoke it', async () => {
+      const { session, user } = await person();
+      const subject = CONNECTION_MADE['en']!.subject;
+      const notices = async (count: number) =>
+        (await mail.waitFor(user.email, count)).filter((sent) => sent.subject === subject);
+
+      await connect(clientId, session, { scope: 'data:read data:write' });
+      const [read] = await notices(1);
+      expect(read!.text).to.include('The app: "Helpful Assistant"');
+      expect(read!.text).to.include('It registered itself, so its name is only what it says about itself.');
+      expect(read!.text).to.include('It receives the answer on the computer it was connected from (127.0.0.1:7777).');
+      expect(read!.text).to.include('It cannot change anything.');
+      expect(read!.text).not.to.include('Its address, checked');
+      expect(read!.text).to.match(/connected to the Glazecalc account \S+ on \d{1,2} \w+ \d{4} at \d\d:\d\d \(UTC\)/);
+      expect(read!.text).to.include('/account/apps');
+      expect(read!.text).to.include('/forgot');
+
+      await connect(clientId, session, { scope: 'data:read data:write', write: true });
+      const [, write] = await notices(2);
+      expect(write!.text).to.include(`for ${OAUTH_WRITE_DAYS} days it can also change them`);
+      expect(write!.text).to.include('move them to the Trash');
+      expect(write!.text).to.include('undo it on the website');
+      expect(write!.text).not.to.include('It cannot change anything.');
+
+      // A no sends nothing.
+      const started = await authorize(clientId);
+      await answer(started, session, { decision: 'deny' });
+      expect(await notices(0)).to.have.length(2);
+    });
+
     it('lasts 60 days to read, renewed as it is used, and 90 days to change records, never renewed', async () => {
       const { session } = await person();
       const read = await connect(clientId, session);
@@ -906,7 +972,8 @@ describe('OAuth: the authorization server', function () {
     it('with a password reset, and with "Sign out everywhere"', async () => {
       const { session, user } = await person();
       const { tokens, row } = await connect(clientId, session);
-      const before = mail.to(user.email).length;
+      // Once the connection's notice is written.
+      const before = (await mail.waitFor(user.email, 0)).length;
       expect((await api().post('/password/forgot').send({ email: user.email })).status).to.equal(200);
       const sent = await mail.waitFor(user.email, before + 1);
       const link = mail.tokenIn(sent[sent.length - 1]!);
@@ -1119,7 +1186,8 @@ describe('OAuth: apps named by their address (CIMD)', function () {
       host: 'app.example',
       selfDescribed: false
     });
-    expect(shown.redirect).to.eql({ host: 'app.example', loopback: false });
+    expect(shown.redirect).to.eql({ scheme: 'https:', host: 'app.example', loopback: false, app: null });
+    expect(shown.redirectElsewhere).to.equal(false);
     const { redirectTo } = (await (await answer(started, session, { decision: 'allow' })).json()) as {
       redirectTo: string;
     };
@@ -1129,6 +1197,31 @@ describe('OAuth: apps named by their address (CIMD)', function () {
     expect(row.clientSource).to.equal('cimd');
     expect(row.clientHost).to.equal('app.example');
     expect(calls).to.eql(['app.example' + new URL(url).pathname]);
+    const [notice] = (await mail.waitFor(user.email, 1)).filter(
+      (sent) => sent.subject === CONNECTION_MADE['en']!.subject
+    );
+    expect(notice!.text).to.include('The app: "Address Assistant"');
+    expect(notice!.text).to.include('Its address, checked by Glazecalc: app.example');
+    expect(notice!.text).to.include('It receives the answer at: app.example');
+    expect(notice!.text).not.to.include('registered itself');
+  });
+
+  it('says when an app named by its address sends the answer to another host', async () => {
+    const url = fresh();
+    useNetwork(
+      network(
+        { 'app.example': [ADDRESS] },
+        { 'app.example': () => documentFor(url, { redirect_uris: ['https://elsewhere.example/callback'] }) }
+      )
+    );
+    const { session } = await person();
+    const started = await authorize(url, { redirect: 'https://elsewhere.example/callback' });
+    expect(started.res.status, await started.res.clone().text()).to.equal(303);
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any -- JSON read in the tests
+    const shown = (await (await details(started, session)).json()) as any;
+    expect(shown.client.host).to.equal('app.example');
+    expect(shown.redirect.host).to.equal('elsewhere.example');
+    expect(shown.redirectElsewhere).to.equal(true);
   });
 
   it('never fetches from this machine, its network or the cloud’s metadata service', async () => {

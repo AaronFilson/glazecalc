@@ -35,6 +35,14 @@ const TOKEN = 'YOUR_TOKEN';
       <p>{{ t('site.assistants.writeSafely') }}</p>
     </section>
 
+    <section class="panel" id="connect">
+      <h2>{{ t('site.assistants.connectHeading') }}</h2>
+      <p>{{ t('site.assistants.connectIntro') }}</p>
+      <p><gc-rich [text]="t('site.assistants.connectSignIn')" /></p>
+      <p><gc-rich [text]="t('site.assistants.connectToken')" [links]="{ account: '/account' }" /></p>
+      <p><gc-rich [text]="t('site.assistants.connectSee')" [links]="{ apps: '/account/apps' }" /></p>
+    </section>
+
     <section class="panel">
       <h2>{{ t('site.assistants.addressHeading') }}</h2>
       <p>{{ t('site.assistants.address') }}</p>

@@ -42,6 +42,11 @@ export interface Connection {
   /** An OAuth client's own address and where it asked to be sent back, when known. */
   clientHost?: string;
   redirectHost?: string;
+  /**
+   * An OAuth app that registered itself (DCR): its name is only what it says
+   * of itself. One that names itself by its address (CIMD) has its host checked.
+   */
+  selfDescribed?: boolean;
   /** What it may do: read only, or read and change. */
   access: 'read' | 'write';
   /** A token's last four characters. */
@@ -95,6 +100,7 @@ connectionRouter.get('/', jwtAuth, notGuest, async (req, res) => {
       name: row.name,
       ...(row.clientHost && { clientHost: row.clientHost }),
       ...(row.redirectHost && { redirectHost: row.redirectHost }),
+      ...(row.kind === 'oauth' && { selfDescribed: row.clientSource !== 'cimd' }),
       access: row.scopes.includes('data:write') ? 'write' : 'read',
       ...(row.kind === 'pat' && row.hint && { hint: row.hint }),
       createdAt: row.createdAt,

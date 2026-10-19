@@ -194,9 +194,15 @@ with a test that failed before:
 
 - Assistants that connect only with OAuth can use a person's records, and the person sees and
   revokes each connection like a token.
-- Until the consent page ships (`r5-oauth-consent`), `/connect/:uid` is the client's not-found
-  page, so nobody can finish a connection; the server side is complete and tested
-  (`server/test/oauth_tests.ts`).
+- The consent page (`client/app/pages/connect/connect-page.ts`, route `connect/:uid`, a private
+  page: noindex, no Referer, no cache) shows the app's name, "self-described" for a DCR app, its
+  checked host, and where the answer goes: a host only for http and https (`redirectShown` in
+  `interactions.ts`); an app's own scheme is shown whole with a warning, since
+  `evilapp://claude.ai/cb` goes to whichever app opens `evilapp:`; a loopback answer and a CIMD
+  app answering on another host than its own are warned about too. "Also let it change my records"
+  is never ticked for the person, and neither button is focused. A visitor not signed in signs in
+  and comes back (`?next=`, this site's paths only). Each yes emails the account a notice naming
+  the app, its host and whether it may change records (`sendConnectionMade`).
 - oidc-provider's CIMD support is experimental (draft 02): a new draft may change it, so it is
   pinned and moved by hand. Its updates are taken like the MCP SDK's.
 - Koa runs inside Express for `/oauth/` only; an error there is logged without the request.

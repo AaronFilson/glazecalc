@@ -19,6 +19,8 @@ import type { AuthenticationResponseJSON, SecondStepResponse } from '../../../..
 import { AuthService, SIGN_IN_PROVIDERS, type ProviderId } from '../../core/auth.service';
 import { errorMessage } from '../../core/error-message';
 import { LocaleService } from '../../core/locale.service';
+import { sameSitePath } from '../../core/signed-in.guard';
+import { languageOfPath, pathIn } from '../../i18n/language';
 import { RichText } from '../../i18n/rich-text';
 import { FieldCheck, FieldChecks, emailAddress, filled, newPassword, samePassword } from '../../shared/field-checks';
 import { Notices, NoticesList } from '../../shared/notices';
@@ -266,10 +268,22 @@ export class AuthPage {
 
   /** The providers that are on here, once the server has said. */
   protected readonly providers = signal<ProviderId[]>([]);
-  /** This page's address, for the provider to come back in the same language. */
-  protected readonly here = typeof location === 'undefined' ? '/signin' : location.pathname;
+  /**
+   * Where to go once signed in: the page that sent the visitor here (?next=,
+   * such as an AI app's consent page), if it is one of this site's
+   * (sameSitePath); otherwise home.
+   */
+  private readonly next = sameSitePath(inject(ActivatedRoute).snapshot?.queryParamMap?.get('next')) ?? '/home';
+  /**
+   * What the provider is given to come back to, in this page's language: the
+   * page to go on to, or this page's own address (which the server takes as home).
+   */
+  protected readonly here = ((page: string) =>
+    this.next === '/home' ? page : pathIn(languageOfPath(page), this.next))(
+    typeof location === 'undefined' ? '/signin' : location.pathname
+  );
   /** Where a provider sign-in goes once finished. */
-  private providerNext = '/home';
+  private providerNext = this.next;
   /** A provider waiting to be linked once the account with its email is signed in to. */
   private readonly linkWaiting = signal<ProviderId | null>(null);
   private readonly route = inject(ActivatedRoute);
@@ -366,7 +380,7 @@ export class AuthPage {
       }
     }
     const next = this.providerNext;
-    this.providerNext = '/home';
+    this.providerNext = this.next;
     return this.router.navigateByUrl(next);
   }
 

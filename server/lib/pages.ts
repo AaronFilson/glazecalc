@@ -25,6 +25,20 @@ export { ENGLISH_ONLY_PAGES, PUBLIC_PAGES };
 export const PRIVATE_PAGES = ['/shared'];
 
 /**
+ * Pages whose address carries an id, as the client's routes write them: the
+ * consent page an AI app sends the person to (/connect/<uid>,
+ * docs/adr/0024-authorization-server.md), with the id oidc-provider gives an
+ * interaction. Each is private as well (PRIVATE_PAGES' headers): never
+ * indexed, cached or named in a Referer.
+ */
+export const ID_PAGES: Record<string, RegExp> = {
+  '/connect/:uid': /^\/connect\/[A-Za-z0-9_-]{16,64}$/
+};
+
+/** Whether a page, without its language, is one of ID_PAGES. */
+const isIdPage = (page: string): boolean => Object.values(ID_PAGES).some((pattern) => pattern.test(page));
+
+/**
  * Whether an address is a public page written in English only (ENGLISH_ONLY_PAGES),
  * in any language: /de/guides/learn-with-john-britt is. Its one address for
  * search engines is the English; the other languages' copies are noindex, with
@@ -33,13 +47,16 @@ export const PRIVATE_PAGES = ['/shared'];
 export const isEnglishOnlyPage = (pathname: string): boolean =>
   ENGLISH_ONLY_PAGES.includes(languages.pagePath(pathname));
 
-/** Whether an address is one of PRIVATE_PAGES, in any language: /de/shared is. */
-export const isPrivatePage = (pathname: string): boolean => PRIVATE_PAGES.includes(languages.pagePath(pathname));
+/** Whether an address is one of PRIVATE_PAGES or ID_PAGES, in any language: /de/shared is. */
+export const isPrivatePage = (pathname: string): boolean => {
+  const page = languages.pagePath(pathname);
+  return PRIVATE_PAGES.includes(page) || isIdPage(page);
+};
 
 /**
  * Every page of the app (client/app/app.routes.ts): the public ones, and those
  * for signing in and once signed in. Any other address is the app's
- * not-found page.
+ * not-found page. ID_PAGES are pages too (isPage).
  */
 export const APP_PAGES = [
   ...PUBLIC_PAGES,
@@ -62,7 +79,10 @@ export const APP_PAGES = [
 ];
 
 /** Whether an address is one of the app's pages, in a language it knows: /de/recipe is, /xx/recipe is not. */
-export const isPage = (pathname: string): boolean => APP_PAGES.includes(languages.pagePath(pathname));
+export const isPage = (pathname: string): boolean => {
+  const page = languages.pagePath(pathname);
+  return APP_PAGES.includes(page) || isIdPage(page);
+};
 
 /**
  * Whether an address is a page of the app that is neither public nor private:
