@@ -1,39 +1,49 @@
 // Who is calling the MCP endpoint (docs/integrations-plan.md, item 29), decided
 // before the SDK sees the request. With no Authorization header, anyone: the
 // public tools, limited per address. With one, it must be a working personal
-// access token (glazecalc_pat_...), or the request is answered 401 here, with
-// the RFC 6750 and RFC 9728 headers that point a client at the resource's
-// metadata. The session's sign-in token is never accepted (it is not an access
+// access token (glazecalc_pat_...) or an OAuth access token from Glazecalc's
+// authorization server (server/oauth/, docs/adr/0024), whose audience is
+// this endpoint and whose connection still works; otherwise the request is
+// answered 401 here, with the RFC 6750 and RFC 9728 headers that point a
+// client at the resource's metadata, and from there at the authorization
+// server. The session's sign-in token is never accepted (it is not an access
 // token, so it fails as any other), and the session cookie is never read: a
 // browser riding on someone's session gets the public tools at most. Every
-// request is checked afresh, so a token revoked or expired stops at once,
-// changes included. Only personal tokens: no OAuth client reaches the tools,
-// to read or to write, until the authorization server (Phase 4) is built.
+// request is checked afresh, so a token or connection revoked or expired
+// stops at once, changes included.
+//
+// An app connected with OAuth that may only read, calling a tool that
+// changes records, is answered 403 insufficient_scope with
+// scope="data:read data:write" (stepUp): the MCP way to ask the app to come
+// back through the consent page for more. A personal token that may only
+// read gets the tool's own refusal in words instead (tools/account_write.ts):
+// a person makes a new token on the website, not through a consent page.
 import type { NextFunction, Request, Response } from 'express';
 import { ipKeyGenerator } from 'express-rate-limit';
-import { allows, isScope } from '../lib/scopes.ts';
+import { allows } from '../lib/scopes.ts';
 import * as site from '../lib/site.ts';
 import { accessTokenIn, checkAccessToken, touchToken } from '../lib/token_auth.ts';
+import { WRITE_TOOLS } from './tools/account_write.ts';
+import { challenge, issuerUrl, metadataUrl, resourceUrl, writeChallenge } from './urls.ts';
 
-/** The endpoint's address, as its metadata names it (RFC 9728 resource). */
-export const resourceUrl = (): string => site.siteUrl() + '/mcp';
-/** Where its Protected Resource Metadata is (RFC 9728, section 3). */
-export const metadataUrl = (): string => site.siteUrl() + '/.well-known/oauth-protected-resource/mcp';
+export { challenge, metadataUrl, resourceUrl, writeChallenge };
 
-/** The Protected Resource Metadata. No authorization server yet: tokens are made on the account page. */
+/**
+ * The Protected Resource Metadata (RFC 9728). Its scopes are data:read only:
+ * a client asks for every scope listed when a challenge names none, and
+ * changing records is asked for by stepping up, never at the first connection.
+ */
 export const resourceMetadata = () => ({
   resource: resourceUrl(),
+  authorization_servers: [issuerUrl()],
   bearer_methods_supported: ['header'],
-  scopes_supported: ['data:read', 'data:write'],
+  scopes_supported: ['data:read'],
   resource_name: 'Glazecalc',
   resource_documentation: site.siteUrl() + '/assistants'
 });
 
 /** A JSON-RPC error body, as MCP clients read refusals. */
 export const rpcError = (code: number, message: string) => ({ jsonrpc: '2.0', error: { code, message }, id: null });
-
-const challenge = (error: string, description: string): string =>
-  `Bearer realm="glazecalc", error="${error}", error_description="${description}", resource_metadata="${metadataUrl()}"`;
 
 /** 401 for an Authorization header that is not a working access token. */
 const refuse = (res: Response, error = 'invalid_token'): void => {
@@ -43,7 +53,7 @@ const refuse = (res: Response, error = 'invalid_token'): void => {
     .json(
       rpcError(
         -32001,
-        'The access token is not valid, has expired or was revoked. Make a new one on your Glazecalc account page.'
+        'The access token is not valid, has expired or was revoked. Connect the app again, or make a new token on your Glazecalc account page.'
       )
     );
 };
@@ -59,9 +69,8 @@ export const mcpAuth = async (req: Request, res: Response, next: NextFunction): 
   // Not Bearer, or a bearer that is no access token (a session's sign-in token above all).
   if (token === null) return refuse(res, /^Bearer /i.test(header) ? 'invalid_token' : 'invalid_request');
   const found = await checkAccessToken(req, token);
-  // Only personal tokens until the authorization server (Phase 4) gives out OAuth ones.
-  if (!found || found.token.kind !== 'pat') return refuse(res);
-  if (!allows(found.token.scopes, 'recipes:read')) {
+  if (!found) return refuse(res);
+  if (!allows(found.scopes, 'recipes:read')) {
     res
       .status(403)
       .set(
@@ -76,10 +85,42 @@ export const mcpAuth = async (req: Request, res: Response, next: NextFunction): 
   req.mcpCaller = {
     key: 'user:' + userId,
     userId,
+    // A connected app's is its connection's row, so its limits and its activity are the connection's.
     tokenId: String(found.token._id),
-    via: found.token.kind,
     name: found.token.name,
-    scopes: found.token.scopes.filter(isScope)
+    scopes: found.scopes,
+    via: found.via,
+    ...(found.via === 'oauth' && found.token.clientId && { clientId: found.token.clientId })
   };
+  next();
+};
+
+/**
+ * After the body is read: an app connected with OAuth that may only read,
+ * calling a tool that changes records, is answered 403 insufficient_scope,
+ * asking for data:read and data:write together (MCP's step-up), and the SDK
+ * never sees the call.
+ */
+export const stepUp = (req: Request, res: Response, next: NextFunction): void => {
+  const caller = req.mcpCaller;
+  const body = req.body as { method?: unknown; params?: { name?: unknown } } | undefined;
+  if (
+    caller?.via === 'oauth' &&
+    !(caller.scopes ?? []).includes('data:write') &&
+    body?.method === 'tools/call' &&
+    typeof body.params?.name === 'string' &&
+    WRITE_TOOLS.has(body.params.name)
+  ) {
+    res
+      .status(403)
+      .set('WWW-Authenticate', writeChallenge())
+      .json(
+        rpcError(
+          -32001,
+          'Nothing was changed: this app may only read your Glazecalc records. Connect it again and allow it to change them.'
+        )
+      );
+    return;
+  }
   next();
 };

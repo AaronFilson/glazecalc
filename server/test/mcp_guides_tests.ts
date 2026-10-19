@@ -18,8 +18,15 @@ import {
 } from '../mcp/guides.ts';
 
 describe('MCP: the guides, read', () => {
-  it('are the five guides the site lists', () => {
-    expect(GUIDE_IDS).to.eql(['glazing-basics', 'making-a-glaze', 'safe-mixing', 'home-safety', 'firing']);
+  it('are the six guides the site lists', () => {
+    expect(GUIDE_IDS).to.eql([
+      'glazing-basics',
+      'making-a-glaze',
+      'safe-mixing',
+      'home-safety',
+      'firing',
+      'learn-with-john-britt'
+    ]);
   });
 
   it('settle the site’s marks: both scales, specific gravity, English terms, the parts by country', () => {

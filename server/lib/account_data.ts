@@ -4,6 +4,7 @@
 // backup can be put right: reapplyDeletions removes those accounts again.
 import type { Types } from 'mongoose';
 import AccessToken from '../models/access_token.ts';
+import { deleteGrantRecords } from '../oauth/adapter.ts';
 import Activity from '../models/activity.ts';
 import Additive from '../models/additive.ts';
 import Advice from '../models/advice.ts';
@@ -116,6 +117,13 @@ export const mergeTrial = async (trialId: Id, accountId: Id): Promise<{ records:
 
 /** Removes the records of these users; resolves with how many. */
 const deleteRecords = async (ids: string[]): Promise<number> => {
+  // Connected apps' grants, with their codes and tokens, in the authorization server (server/oauth/adapter.ts):
+  // first, while their rows still say which they are.
+  const grants = await AccessToken.find(
+    { userId: { $in: ids }, kind: 'oauth', grantId: { $type: 'string' } },
+    { grantId: 1 }
+  ).lean();
+  await deleteGrantRecords(grants.map((row) => row.grantId!));
   const results = await Promise.all([
     ...OWNED_MODELS.map((Model) => Model.deleteMany({ ownedBy: { $in: ids } })),
     PasswordReset.deleteMany({ userId: { $in: ids } }),

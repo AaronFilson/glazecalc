@@ -65,7 +65,7 @@ export const registerGuides = (server: McpServer): void => {
     {
       title: 'Search the guides',
       description:
-        "Searches Glazecalc's plain-language guides for potters (glazing from first principles, making a glaze, safe mixing, safety at home with children and pets, firing a kiln) in the language asked for, or in English where that language has no match. Returns each matching section's title, anchor, a short excerpt, its address on the website and its resource URI, which resources/read returns in full. Use it for glaze defects, safety, firing and terms, and cite the address.",
+        "Searches Glazecalc's plain-language guides for potters (glazing from first principles, making a glaze, safe mixing, safety at home with children and pets, firing a kiln, and a companion to John Britt's free glaze course, in English only) in the language asked for, or in English where that language has no match. Returns each matching section's title, anchor, a short excerpt, its address on the website and its resource URI, which resources/read returns in full. Use it for glaze defects, safety, firing and terms, and cite the address.",
       inputSchema: z.object({
         query: z
           .string()

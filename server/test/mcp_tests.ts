@@ -6,7 +6,7 @@ import standardData from '../../data/index.js';
 import recipe from '../../lib/recipe/index.js';
 import { MOST_LINES, resetFits, FITS_PER_MINUTE, guarded, ToolProblem, UNEXPECTED } from '../mcp/common.ts';
 import { countTokenDelete, MCP_LIMITS, TOKEN_DELETES_PER_HOUR, TOKEN_WRITE_LIMITS } from '../lib/rate_limit.ts';
-import { READ_ONLY_TOKEN, TOO_MANY_CHANGES } from '../mcp/tools/account_write.ts';
+import { READ_ONLY_TOKEN, TOO_MANY_CHANGES, WRITE_TOOLS as STEP_UP_TOOLS } from '../mcp/tools/account_write.ts';
 import Activity from '../models/activity.ts';
 import Note from '../models/note.ts';
 import RecordVersion from '../models/record_version.ts';
@@ -283,8 +283,10 @@ describe('MCP: the endpoint', () => {
       expect(res.status, path).to.equal(200);
       expect(await res.json()).to.deep.include({
         resource: 'https://glazecalc.test/mcp',
+        authorization_servers: ['https://glazecalc.test'],
         bearer_methods_supported: ['header'],
-        scopes_supported: ['data:read', 'data:write']
+        // Only data:read: changing records is asked for by stepping up (docs/adr/0024).
+        scopes_supported: ['data:read']
       });
     }
   });
@@ -707,6 +709,7 @@ describe('MCP: the guides, resources and prompts', () => {
       'glazecalc://guides/en/firing',
       'glazecalc://guides/en/glazing-basics',
       'glazecalc://guides/en/home-safety',
+      'glazecalc://guides/en/learn-with-john-britt',
       'glazecalc://guides/en/making-a-glaze',
       'glazecalc://guides/en/safe-mixing'
     ]);
@@ -766,15 +769,17 @@ describe('MCP: the guides, resources and prompts', () => {
     }
   });
 
-  it('offers four prompts, each naming the tools to use', async () => {
+  it('offers five prompts, each naming the tools to use', async () => {
     const { prompts } = await result('prompts/list');
     expect(prompts.map((p: Json) => p.name).sort()).to.eql([
       'diagnose_glaze_fault',
       'explain_recipe',
+      'glaze_course_lesson',
       'make_lead_free',
       'replace_discontinued'
     ]);
-    for (const prompt of prompts) {
+    // A lesson needs a unit; the recipe is the learner's own, if they have one.
+    for (const prompt of prompts.filter((p: Json) => p.name !== 'glaze_course_lesson')) {
       expect(prompt.description, prompt.name).to.have.length.above(40);
       expect(
         prompt.arguments.find((a: Json) => a.name === 'recipe'),
@@ -823,6 +828,65 @@ describe('MCP: the guides, resources and prompts', () => {
     expect((await rpc('prompts/get', { name: 'explain_recipe', arguments: {} })).body!.error).to.have.property('code');
   });
 
+  it("sets up a lesson from John Britt's course: his videos linked and credited, the guide sections attached", async () => {
+    const lesson = await result('prompts/get', {
+      name: 'glaze_course_lesson',
+      arguments: {
+        unit: 'blending',
+        recipe: 'Custer Spar 40, Silica 30, Whiting 20, EPK 10',
+        cone: '6',
+        language: 'de'
+      }
+    });
+    expect(lesson.description).to.equal('Unit 5: Blending and testing methods');
+    const [ask, ...attached] = lesson.messages;
+    const text: string = ask.content.text;
+    for (const part of [
+      'John Britt',
+      'johnbrittpottery.com',
+      'Understanding the Triaxial Blend (Free Online Glaze Course Part 9 Practical lab work): https://www.youtube.com/watch?v=PMwi9K6_fOk',
+      'Do not retell, summarise or quote',
+      'not connected with him',
+      'lab work',
+      'safe mixing guide',
+      'blend_recipes',
+      'Custer Spar 40',
+      'fired to 6',
+      'language: "de"',
+      'His videos are in English',
+      'leach test'
+    ]) {
+      expect(text).to.include(part);
+    }
+    // Twelve of his videos for this unit, and no embedding.
+    expect(text.match(/https:\/\/www\.youtube\.com\/watch\?v=/g)).to.have.length(12);
+    expect(text).not.to.match(/embed|iframe/i);
+    // The unit itself, the safe mixing habits first, then the sections it points to, in the language asked.
+    expect(attached.map((m: Json) => m.content.resource.uri)).to.eql([
+      'glazecalc://guides/de/learn-with-john-britt/blending',
+      'glazecalc://guides/de/safe-mixing/habits',
+      'glazecalc://guides/de/making-a-glaze/testing',
+      'glazecalc://guides/de/making-a-glaze/weighing'
+    ]);
+    for (const message of attached) expect(message.content.resource.mimeType).to.equal('text/markdown');
+
+    // By number, with no recipe; a unit that is not lab work starts with what it covers.
+    const first = await result('prompts/get', { name: 'glaze_course_lesson', arguments: { unit: '1' } });
+    expect(first.description).to.equal('Unit 1: The unity formula');
+    expect(first.messages[0].content.text).not.to.include('lab work');
+    expect(first.messages[0].content.text).not.to.include('My recipe');
+    expect(first.messages[0].content.text).not.to.include('His videos are in English: say so');
+    expect(first.messages.slice(1).map((m: Json) => m.content.resource.uri)).to.eql([
+      'glazecalc://guides/en/learn-with-john-britt/unity-formula',
+      'glazecalc://guides/en/glazing-basics/unity-formula',
+      'glazecalc://guides/en/glazing-basics/what-a-glaze-is'
+    ]);
+
+    const missing = await rpc('prompts/get', { name: 'glaze_course_lesson', arguments: { unit: 'pottery' } });
+    expect(missing.body!.error).to.have.property('code');
+    expect(JSON.stringify(missing.body!.error)).to.include('unity-formula');
+  });
+
   it('completes a fault, a guide and a language', async () => {
     const complete = async (ref: object, argument: object) =>
       ((await result('completion/complete', { ref, argument })).completion as Json).values;
@@ -831,6 +895,12 @@ describe('MCP: the guides, resources and prompts', () => {
       ['crawling', 'crazing']
     );
     expect(await complete(guides, { name: 'guide', value: 'f' })).to.eql(['firing']);
+    expect(await complete({ type: 'ref/prompt', name: 'glaze_course_lesson' }, { name: 'unit', value: 'b' })).to.eql([
+      'blending'
+    ]);
+    expect(
+      await complete({ type: 'ref/prompt', name: 'glaze_course_lesson' }, { name: 'unit', value: '' })
+    ).to.have.length(12);
     expect(await complete(guides, { name: 'language', value: 'zh' })).to.have.members(['zh-Hans', 'zh-Hant']);
   });
 });
@@ -842,6 +912,10 @@ describe('MCP: personal access tokens', () => {
     // The write tools too, so an assistant with a read-only token can say why it changes nothing.
     expect(await toolNames(bearer(token))).to.eql([...PUBLIC_TOOLS, ...ACCOUNT_TOOLS, ...WRITE_TOOLS].sort());
     expect((await AccessToken.findOne({ hash: hashToken(token) }))!.lastUsedAt).to.be.an.instanceOf(Date);
+  });
+
+  it('asks a read-only connected app to step up for every tool that changes records, and only those', () => {
+    expect([...STEP_UP_TOOLS].sort()).to.eql(WRITE_TOOLS);
   });
 
   it('answers a list tool that fails with the same plain refusal as the others, never the error', async () => {
@@ -1208,7 +1282,10 @@ describe('MCP: the write tools', () => {
       clientInfo: { name: 't', version: '1' }
     });
     const instructions = (init.body!.result as { instructions: string }).instructions;
-    expect(instructions).to.include('move_to_trash').and.include('read-only token').and.not.include('never change');
+    expect(instructions)
+      .to.include('move_to_trash')
+      .and.include('only when the person allowed changes')
+      .and.not.include('never change');
   });
 
   it('refuse a read-only token, changing nothing', async () => {

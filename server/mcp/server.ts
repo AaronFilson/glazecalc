@@ -6,12 +6,12 @@
 // puts who it is in authInfo.extra; each tool that changes anything checks
 // that the token allows it, and waits for the person's approval when the
 // account asks for it, tools/account_write.ts).
-import { McpServer, type McpRequestContext } from '@modelcontextprotocol/server';
+import { McpServer, type McpRequestContext, type RegisteredTool } from '@modelcontextprotocol/server';
 import type { Caller } from './common.ts';
 import { registerPrompts } from './prompts.ts';
 import { requestStateCodec } from './request_state.ts';
 import { registerAccountTools } from './tools/account.ts';
-import { registerWriteTools } from './tools/account_write.ts';
+import { registerWriteTools, WRITE_TOOLS } from './tools/account_write.ts';
 import { registerBlendTools } from './tools/blends.ts';
 import { registerGuides } from './tools/guides.ts';
 import { registerPublicTools } from './tools/public.ts';
@@ -31,11 +31,11 @@ const INSTRUCTIONS =
   'advise a test firing and, for food surfaces, a leach test. search_guides finds what the guides say about glaze ' +
   'defects, safety and firing, in the person’s language, with addresses to cite; resources/read gives a guide or ' +
   'section in full (glazecalc://guides/<language>/<guide>[/<section>]), a material (glazecalc://materials/<name>) ' +
-  'and the cone charts (glazecalc://cones). With a personal access token, the tools whose names ' +
-  'say "my" or list_recipes read the person\'s own saved records. create_recipe, update_recipe, ' +
-  'add_notebook_entry, add_my_material, update_my_material, add_to_shelf, remove_from_shelf, undo_shelf_change and move_to_trash ' +
-  'change them, and only with a token the person made to read and change; with a read-only token they are ' +
-  'refused and change nothing. Change only what the person asked for, and tell them what you changed: each ' +
+  'and the cone charts (glazecalc://cones). With a personal access token, or once the person has connected ' +
+  'this app to their account, the tools whose names say "my" or list_recipes read the person\'s own saved ' +
+  'records. create_recipe, update_recipe, add_notebook_entry, add_my_material, update_my_material, add_to_shelf, ' +
+  'remove_from_shelf, undo_shelf_change and move_to_trash change them, and only when the person allowed changes; otherwise they ' +
+  'are refused and change nothing. Change only what the person asked for, and tell them what you changed: each ' +
   'change keeps the record as it was, so they can undo it on the website, and move_to_trash puts a record in ' +
   'the Trash for 30 days, never deleting it. The shelf keeps the list it had before its last change: ' +
   'undo_shelf_change puts it back, one step only.';
@@ -47,9 +47,46 @@ export const callerOf = (ctx: McpRequestContext): Caller => {
     key: typeof extra.key === 'string' ? extra.key : 'unknown',
     ...(typeof extra.userId === 'string' && { userId: extra.userId }),
     ...(typeof extra.tokenId === 'string' && { tokenId: extra.tokenId }),
-    ...((extra.via === 'pat' || extra.via === 'oauth') && { via: extra.via }),
     ...(typeof extra.name === 'string' && { name: extra.name }),
-    ...(Array.isArray(extra.scopes) && { scopes: extra.scopes.filter((s): s is string => typeof s === 'string') })
+    ...(Array.isArray(extra.scopes) && { scopes: extra.scopes.filter((s): s is string => typeof s === 'string') }),
+    ...((extra.via === 'pat' || extra.via === 'oauth') && { via: extra.via }),
+    ...(typeof extra.clientId === 'string' && { clientId: extra.clientId })
+  };
+};
+
+/** The tools that read the person's own records (tools/account.ts). */
+const ACCOUNT_TOOLS = new Set([
+  'list_recipes',
+  'get_recipe',
+  'list_my_materials',
+  'get_shelf',
+  'match_with_what_i_have',
+  'list_firings',
+  'get_firing',
+  'list_notes',
+  'get_my_settings'
+]);
+
+/**
+ * How each tool may be called, as OpenAI's Apps SDK reads it from the tool's
+ * _meta.securitySchemes (ChatGPT; docs/adr/0024): the public tools with no
+ * sign-in or with one, the person's own with OAuth and data:read, the tools
+ * that change records with data:write too.
+ */
+export const securitySchemes = (name: string) =>
+  WRITE_TOOLS.has(name)
+    ? [{ type: 'oauth2', scopes: ['data:read', 'data:write'] }]
+    : ACCOUNT_TOOLS.has(name)
+      ? [{ type: 'oauth2', scopes: ['data:read'] }]
+      : [{ type: 'noauth' }, { type: 'oauth2', scopes: ['data:read'] }];
+
+/** Gives every tool registered on this server its securitySchemes. */
+const withSecuritySchemes = (server: McpServer): void => {
+  const register = server.registerTool.bind(server) as (...args: unknown[]) => RegisteredTool;
+  (server as unknown as { registerTool: (...args: unknown[]) => RegisteredTool }).registerTool = (...args) => {
+    const tool = register(...args);
+    tool._meta = { ...tool._meta, securitySchemes: securitySchemes(String(args[0])) };
+    return tool;
   };
 };
 
@@ -66,6 +103,7 @@ export const makeServer = (ctx: McpRequestContext): McpServer => {
     // The state handed out while asking is signed; the SDK refuses any that fails this.
     requestState: { verify: requestStateCodec.verify }
   });
+  withSecuritySchemes(server);
   registerPublicTools(server, caller);
   registerBlendTools(server);
   registerGuides(server);

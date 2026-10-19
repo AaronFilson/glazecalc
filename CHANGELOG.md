@@ -23,6 +23,19 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   shows silica to alumina, boron, expansion, the number of cautions and, when a recipe has a
   firing, the cone fit. The comparison of two unity formulas moved to `lib/recipe/compare.js`, so
   the app and the server share it. English only for now.
+- **An OAuth authorization server for AI assistants** (docs/adr/0024-authorization-server.md), the
+  server side: apps such as Claude and ChatGPT will connect to a person's records by asking on the
+  website, once the consent page ships. oidc-provider 9.12.2 under `/oauth/`, with its metadata at
+  `/.well-known/oauth-authorization-server`; the code flow with PKCE (S256) only, refresh tokens
+  that rotate (a second use ends the connection), `iss` in every answer, and tokens for the MCP
+  endpoint alone, opaque and for an hour. Apps name themselves by an https address (CIMD, fetched
+  only from the public internet, under limits) or register themselves (limited, and gone after 7
+  days unused). A connection reads; it may change records only when the app asks and the person
+  ticks it, and an app that may only read is asked to step up (403 `insufficient_scope`). Each
+  connection is a row beside the access tokens: read-only ones last 60 days from their last use,
+  ones that change records 90 days; revoking one, a password reset or "Sign out everywhere" stops
+  all its tokens at once. The consent API is `/api/connect/:uid`; the page, the notice email and the
+  privacy notice follow.
 - **Connected apps** (`/account/apps`, docs/integrations-plan.md items 3 and 27): one page lists
   the account's access tokens and OAuth connections with what each may do (read only, or read and
   change), when it was made and last used, when it stops working, and how many records it made,
@@ -37,6 +50,19 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   records which token moved it (`tokenId`, from the REST routes and the `move_to_trash` tool);
   older entries are matched through the activity log. The privacy notice says the activity also
   shows on Connected apps. English only for now.
+- **A companion to John Britt's free glaze course** (/guides/learn-with-john-britt): a sixth
+  guide, in English only, with one section for each of 12 units of his free online Glaze Course on
+  YouTube. Each unit links his videos by the titles he gave them (never copied, retold or
+  embedded), credits him, his site and his two glaze books, says Glazecalc is not connected with
+  him, and adds the Glazecalc guide sections to read and one to three exercises on the recipe page,
+  Blends, the specific gravity calculator, firing logs and the MCP tools; the lab units send the
+  reader to the safe mixing guide first. Every language shows the English with the "not
+  translated" notice; search engines get the English address only (canonical, noindex on the other
+  languages' copies, no hreflang, the English alone in the sitemap), and the translation checks
+  expect no copies (`ENGLISH_ONLY_PAGES` in lib/pages.js). The MCP prompt `glaze_course_lesson`
+  (unit completed from the units' names; recipe, cone and language optional) reads the units from
+  the same guide (server/mcp/course.ts) and attaches the unit and its guide sections.
+  `node scripts/live-check.mjs --videos` checks by hand that the videos are still on YouTube.
 - **Chemistry against the stated cone** (docs/adr/0022-chemistry-against-the-stated-cone.md): one
   line at the top of the recipe page's limits panel says whether the glaze's chemistry fits its
   firing, the recipe's stated cone or the band chosen in the panel. It gives a note only when boron

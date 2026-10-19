@@ -3,10 +3,12 @@
 // formula), update_recipe, add_notebook_entry, add_my_material,
 // update_my_material, add_to_shelf, remove_from_shelf, undo_shelf_change and
 // move_to_trash. They
-// are offered with every working personal access token, so that an assistant
+// are offered with every working access token, so that an assistant
 // holding a read-only one can say why nothing was changed; each refuses,
 // changing nothing, unless the token's scopes allow its area's write
-// permission (data:write, server/lib/scopes.ts).
+// permission (data:write, server/lib/scopes.ts). An app connected with OAuth
+// that may only read never reaches them: the endpoint answers 403 and asks it
+// to step up (server/mcp/auth.ts stepUp, WRITE_TOOLS).
 //
 // What the record routes do for a change made with a token, these do too
 // (server/lib/record_routes.ts): every query is limited to the token's
@@ -96,6 +98,7 @@ import {
   linesArg,
   ok,
   resolveLines,
+  ScopeProblem,
   ToolProblem,
   type RecipeLine
 } from '../common.ts';
@@ -114,6 +117,10 @@ export const READ_ONLY_TOKEN =
   'Nothing was changed: this access token can only read your Glazecalc records. To let an assistant change them, ' +
   `make a token that can "Read and change" on your Glazecalc account page (it lasts at most ${WRITE_PAT_MOST_DAYS} days) ` +
   'and use it in place of this one.';
+/** What they say to an app connected with OAuth that may only read (should stepUp ever let one through). */
+export const READ_ONLY_APP =
+  'Nothing was changed: this app was allowed only to read your Glazecalc records. To let it change them, ' +
+  'connect it again and tick "Also let it change my records" on the Glazecalc page that asks.';
 /** What they say once the account has made too many changes with tokens. */
 export const TOO_MANY_CHANGES =
   `Nothing was changed: an account can make at most ${TOKEN_WRITE_LIMITS.minute} changes a minute and ` +
@@ -276,7 +283,7 @@ const makeWork = ({ userId, tokenId, scopes, actor }: Who) => {
    * is changed.
    */
   const mayChange = async (permission: Permission): Promise<void> => {
-    if (!allows(scopes, permission)) throw new ToolProblem(READ_ONLY_TOKEN);
+    if (!allows(scopes, permission)) throw new ScopeProblem(actor.via === 'oauth' ? READ_ONLY_APP : READ_ONLY_TOKEN);
     if (!(await countTokenWrite(userId))) throw new ToolProblem(TOO_MANY_CHANGES);
   };
 
@@ -615,8 +622,8 @@ const makeWork = ({ userId, tokenId, scopes, actor }: Who) => {
 
 type WriteTool = keyof ReturnType<typeof makeWork>;
 
-/** The tool names, as the endpoint's step-up and the tests list them. */
-export const WRITE_TOOLS: readonly WriteTool[] = [
+/** The tools here: every one changes records, so an app connected with OAuth must have data:write to call it. */
+export const WRITE_TOOLS: ReadonlySet<string> = new Set<WriteTool>([
   'create_recipe',
   'update_recipe',
   'add_notebook_entry',
@@ -626,7 +633,7 @@ export const WRITE_TOOLS: readonly WriteTool[] = [
   'remove_from_shelf',
   'undo_shelf_change',
   'move_to_trash'
-];
+]);
 /** The tools that remove something: what the setting 'removals' asks about. */
 export const REMOVAL_TOOLS: readonly WriteTool[] = ['move_to_trash', 'remove_from_shelf'];
 
@@ -741,7 +748,7 @@ export const registerWriteTools = (server: McpServer, caller: Caller): void => {
   const tokenId = caller.tokenId;
   if (!userId || !tokenId) return;
   const scopes = caller.scopes ?? [];
-  // A personal token, or an OAuth client's grant (server/mcp/auth.ts says which).
+  // A personal token, or an app connected with OAuth (its connection's row is the tokenId).
   const via = caller.via ?? 'pat';
   const client = caller.name ?? 'Access token';
   const actor: TokenActor = { via, tokenId, name: client };
@@ -838,7 +845,7 @@ export const registerWriteTools = (server: McpServer, caller: Caller): void => {
     args: Record<string, unknown>,
     ctx: ServerContext
   ): Promise<ToolAnswer> => {
-    if (!allows(scopes, permission)) throw new ToolProblem(READ_ONLY_TOKEN);
+    if (!allows(scopes, permission)) throw new ScopeProblem(via === 'oauth' ? READ_ONLY_APP : READ_ONLY_TOKEN);
     const state = ctx.mcpReq.requestState<unknown>();
     if (state !== undefined) return retry(tool, args, state, ctx);
     const run = work[tool] as (args: unknown) => Promise<CallToolResult>;
