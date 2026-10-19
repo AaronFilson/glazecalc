@@ -374,6 +374,31 @@ describe('MCP: the public tools', () => {
     expect(badSet.isError).to.equal(true);
   });
 
+  it('check_limits follows the account’s own limit set for a token that may read preferences, unless one is asked for', async () => {
+    const lines = [
+      { material: 'Custer Spar', amount: 70 },
+      { material: 'Whiting', amount: 10 },
+      { material: 'Silica', amount: 20 }
+    ];
+    const { user } = await makeUser();
+    const headers = bearer(await makeToken(user));
+    // Nothing saved: the account's default, the recipe page's (hesselberth-roy).
+    expect((await data('check_limits', { lines, firing: { cone: '6' } }, headers)).limitSet.id).to.equal(
+      'hesselberth-roy'
+    );
+    await User.updateOne({ _id: user._id }, { $set: { 'preferences.limitSet': 'glazecalc' } });
+    expect((await data('check_limits', { lines, firing: { cone: '6' } }, headers)).limitSet.id).to.equal('glazecalc');
+    await User.updateOne({ _id: user._id }, { $set: { 'preferences.limitSet': 'hesselberth-roy' } });
+    expect((await data('check_limits', { lines, firing: { cone: '6' } }, headers)).limitSet.id).to.equal(
+      'hesselberth-roy'
+    );
+    // An argument wins.
+    const asked = await data('check_limits', { lines, firing: { cone: '6' }, limitSet: 'glazecalc' }, headers);
+    expect(asked.limitSet.id).to.equal('glazecalc');
+    // No token, or a token that may not read preferences: the tool's own default.
+    expect((await data('check_limits', { lines, firing: { cone: '6' } })).limitSet.id).to.equal('glazecalc');
+  });
+
   it('check_limits says whether the chemistry fits the firing given, with its figures and sources', async () => {
     const fritty = [
       { material: 'Ferro Frit 3134', amount: 80 },

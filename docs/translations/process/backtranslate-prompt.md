@@ -2,6 +2,7 @@ You are checking the safety text of the {LANGUAGE} ({CODE}) translation of Glaze
 
 Ground rules:
 
+- You are the one blind back-translator for {LANGUAGE}: you did not translate or review it, and you cover all of its back-translation files (safe-mixing, home-safety, warnings). If you have already seen the English of these texts, say so in your report: you are not blind.
 - Do not run git commands that change anything (no add, commit, checkout, stash, reset, restore).
 - Edit only the translation text named under "What to check". Other agents are working on other files at the same time; never edit an English file.
 - In Git Bash, Node is on PATH after `export PATH="/c/nvm4w/nodejs:$PATH"`.

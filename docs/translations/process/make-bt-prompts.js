@@ -26,4 +26,5 @@ for (const [part, what] of Object.entries(WHAT)) {
     })
   );
 }
+// One blind back-translator per language: a fresh agent, not one that translated or reviewed it, given all three.
 console.log(['safe-mixing', 'home-safety', 'warnings'].map((part) => `bt/${code}-${part}.md`).join('  '));

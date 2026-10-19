@@ -644,6 +644,11 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Changed
 
+- **MCP `check_limits` follows the account's own limit set.** Called with a personal access token
+  that may read preferences and no `limitSet`, it checks against the limit set saved in the
+  account's settings (the recipe page's own, Hesselberth & Roy's until changed), as `get_recipe`
+  does; with no token, or a `limitSet` given, nothing changes ("glazecalc" is still the default
+  without an account). Its description says so.
 - **One limit on what an account keeps.** An account keeps up to 100,000 records of every kind
   together (recipes, materials, notes, firing logs and the rest), in place of 2,000 of each kind;
   `ACCOUNT_MAX_RECORDS` still sets another. Trials keep their own limits.
@@ -789,6 +794,10 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Fixed
 
+- **A test of the sign-in notice email no longer fails now and then under load.** The app sends
+  such a notice after its reply, so a busy machine could be slow to write it; the mail helper for
+  tests now waits for sends in progress (`mailer.idle`) and for up to 10 s, and the test timeout is
+  15 s. Test-only; the app sends the same mail.
 - **nginx's logs are rotated and deleted after 14 days, as the privacy notice says.** Debian's cloud
   image has no logrotate, and the instance was set up without it, so nothing was ever rotated:
   `setup-instance.sh` now installs it, and a deploy installs it on an instance that lacks it.

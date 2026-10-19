@@ -18,5 +18,5 @@ module.exports = {
   require: ['server/test/support/env.ts', 'server/test/support/app.ts'],
   parallel: true,
   exit: true,
-  timeout: 5000
+  timeout: 15000
 };

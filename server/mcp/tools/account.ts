@@ -21,7 +21,7 @@ import Material from '../../models/material.ts';
 import Note from '../../models/note.ts';
 import Recipe from '../../models/recipe.ts';
 import Trash from '../../models/trash.ts';
-import User, { PREFERENCES } from '../../models/user.ts';
+import User from '../../models/user.ts';
 import {
   type Caller,
   countFit,
@@ -37,6 +37,7 @@ import {
   type RecipeLine
 } from '../common.ts';
 import { findById, findMaterial, nameKey, oxidesOf } from '../library.ts';
+import { settingsOf } from '../settings.ts';
 import { analysisOf, checksOf, coneFitOut, firingBlockOf, matchOut } from './public.ts';
 
 const READ_ONLY = { readOnlyHint: true, destructiveHint: false, idempotentHint: true, openWorldHint: false } as const;
@@ -83,14 +84,6 @@ const coneFilterArgs = {
     .enum(['wood', 'soda', 'salt', 'raku', 'pit'])
     .optional()
     .describe('Only recipes stated for this firing process.')
-};
-
-/** The account's saved settings, with each one's default where none is saved. */
-const settingsOf = async (userId: string) => {
-  const user = await User.findById(userId, { preferences: 1 });
-  const saved = (user?.preferences ?? {}) as Record<string, unknown>;
-  return <K extends keyof typeof PREFERENCES>(name: K) =>
-    (saved[name] ?? PREFERENCES[name][0]) as (typeof PREFERENCES)[K][number];
 };
 
 /** A pattern matching text that contains the query, in any case; special characters taken literally. */
