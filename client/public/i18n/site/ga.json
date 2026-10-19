@@ -128,7 +128,6 @@
     "rightsAsk": "Maidir le haon rud eile, mar shampla iarraidh nach n-úsáidfí do shonraí fad a bhíonn botún á cheartú, nó agóid a dhéanamh i gcoinne an chaoi a n-úsáidtear iad, scríobh chuig <mail>privacy@glazecalcapp.com</mail>. Tá sé saor in aisce, agus gheobhaidh tú freagra laistigh de mhí. Ní iarrfar ort ach a thaispeáint gur leatsa an cuntas, trí shíniú isteach nó trí nasc a sheoltar chuig a sheoladh a oscailt, agus ní iarrfar cárta aitheantais ort riamh.",
     "rightsComplain": "Mura bhfuil tú sásta, is féidir leat gearán a dhéanamh le húdarás cosanta sonraí: san Aontas Eorpach, <edpb>an t-údarás i do thír féin</edpb>, agus sa Ríocht Aontaithe, an <ico>Information Commissioner’s Office</ico>.",
     "storageHeading": "Fianáin agus stóras brabhsálaí",
-    "storageIntro": "Socraíonn Glazecalc dhá fhianán, an dara ceann ach amháin le linn duit síniú isteach le Google nó le GitHub, agus coinníonn sé cúpla luach beag i do bhrabhsálaí. Tá gach ceann ann le haghaidh rud a d’iarr tú: fanacht sínithe isteach, síniú isteach le Google nó le GitHub, nó rogha a rinne tú a mheabhrú. Ní rianaíonn aon cheann acu thú agus ní roinntear aon cheann, mar sin ní éilíonn an dlí go n-iarrfaí ar dtús, agus níl aon bhratach fianán ann.",
     "storageLabel": "Fianáin agus stóras brabhsálaí",
     "storageName": "Ainm",
     "storagePurpose": "Cad chuige é",
@@ -181,19 +180,12 @@
       "reloadedFor": {
         "purpose": "Tar éis leagan nua den suíomh a eisiúint, cén leathanach a athlódáladh agus cathain, ionas nach n-athlódálann leathanach ach uair amháin sa nóiméad ar a mhéad.",
         "lasts": "Go dtí go ndúnann tú an cluaisín."
-      },
-      "oauthCookie": {
-        "purpose": "Le linn duit síniú isteach le Google nó le GitHub amháin: ceanglaíonn sé freagra Google nó GitHub le do bhrabhsálaí, ionas nach féidir le duine ar bith eile do shíniú isteach a chríochnú ná ceann a thosú duit. Ní féidir le scripteanna ar an leathanach é a léamh.",
-        "lasts": "Socraítear é nuair a bhrúnn tú ‘Lean ar aghaidh le Google’ nó ‘Lean ar aghaidh le GitHub’, nó nuair a cheanglaíonn tú ceann ar leathanach do chuntais. Bainfear é nuair a chríochnaíonn an síniú isteach, nó tar éis 10 nóiméad."
       }
     },
     "childrenHeading": "Leanaí",
     "children": "Uirlis do photadóirí is ea Glazecalc, agus níl sé dírithe ar leanaí.",
     "changesHeading": "Athruithe",
-    "changes": "Má athraíonn an fógra seo, athraíonn an dáta ag barr an leathanaigh freisin.",
-    "storedProviders": "<b>Google nó GitHub, má shíníonn tú isteach le ceann acu:</b> id féin na seirbhíse duit (uimhir nó cód nach n-athraíonn riamh), cathain a cheangail tú é agus cathain a shínigh tú isteach leis go deireanach, agus an bhfuil pasfhocal de do chuid féin ag do chuntas. Ní choinnítear aon rud eile ón tseirbhís: ní d’ainm, do phictiúr ná aon eochair do do chuntas ansin. Le linn duit síniú isteach, coinníonn an freastalaí nóta den síniú isteach, leis an ríomhphost a deir an tseirbhís gur leatsa é nuair a bhíonn gá leis: do chuntas nua, áit a ndéantar ríomhphost do chuntais de, nó, nuair a bhíonn an ríomhphost sin ag cuntas Glazecalc cheana, chun an tseirbhís a cheangal leis nuair a shíníonn tú isteach sa chuntas sin. Scriostar an nóta, agus an ríomhphost atá ann, laistigh de thart ar 10 nóiméad.",
-    "providers": "<b>Is rogha leatsa é síniú isteach le Google nó le GitHub</b>, agus ní tharlaíonn sé ach nuair a bhrúnn tú a chnaipe. Téann do bhrabhsálaí ansin chuig Google nó GitHub, a sheolann a n-id duit agus do ríomhphost chuig Glazecalc. Is cuideachta ar leith é gach ceann, atá freagrach as an méid a roinneann tú leis faoina bheartas príobháideachta féin. Ní luchtaítear aon script ná íomhá ó cheachtar acu ar leathanaigh Glazecalc.",
-    "keptProviders": "<b>Google nó GitHub:</b> gach ceangal go dtí go ndícheanglaíonn tú é nó go scriosann tú do chuntas. Scriostar síniú isteach atá ar siúl tar éis 10 nóiméad."
+    "changes": "Má athraíonn an fógra seo, athraíonn an dáta ag barr an leathanaigh freisin."
   },
   "notFound": {
     "heading": "Níor aimsíodh an leathanach",

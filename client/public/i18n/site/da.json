@@ -128,7 +128,6 @@
     "rightsAsk": "Skriv til <mail>privacy@glazecalcapp.com</mail> om alt andet, fx hvis du vil have, at dine data ikke bruges, mens en fejl bliver rettet, eller vil gøre indsigelse mod, hvordan de bruges. Det er gratis, og du får svar inden for en måned. Du bliver kun bedt om at vise, at kontoen er din, ved at logge ind eller ved at åbne et link, der sendes til dens adresse, aldrig om legitimation.",
     "rightsComplain": "Hvis du ikke er tilfreds, kan du klage til en databeskyttelsesmyndighed: i EU til <edpb>myndigheden i dit land</edpb> og i Storbritannien til <ico>Information Commissioner’s Office</ico>.",
     "storageHeading": "Cookies og lagring i browseren",
-    "storageIntro": "Glazecalc sætter to cookies, den anden kun mens der logges ind med Google eller GitHub, og gemmer nogle få små værdier i browseren. Hver findes til noget, der er bedt om: at forblive logget ind, at logge ind med Google eller GitHub, eller at huske et valg, der er truffet. Ingen sporer brugeren, og ingen deles, så loven kræver ikke, at der spørges først, og der er intet cookiebanner.",
     "storageLabel": "Cookies og lagring i browseren",
     "storageName": "Navn",
     "storagePurpose": "Hvad den bruges til",
@@ -181,19 +180,12 @@
       "reloadedFor": {
         "purpose": "Når en ny version af webstedet er udgivet: hvilken side der blev genindlæst og hvornår, så en side højst genindlæses én gang i minuttet.",
         "lasts": "Indtil du lukker fanen."
-      },
-      "oauthCookie": {
-        "purpose": "Kun mens der logges ind med Google eller GitHub: den knytter udbyderens svar til browseren, så ingen andre kan gennemføre login eller starte et. Scripts på siden kan ikke læse den.",
-        "lasts": "Sættes, når der trykkes på »Fortsæt med Google« eller »Fortsæt med GitHub«, eller når en tilknyttes på kontosiden. Fjernes, når login er færdigt, eller efter 10 minutter."
       }
     },
     "childrenHeading": "Børn",
     "children": "Glazecalc er et værktøj for keramikere og er ikke rettet mod børn.",
     "changesHeading": "Ændringer",
-    "changes": "Hvis denne politik ændres, ændres datoen øverst på siden også.",
-    "storedProviders": "<b>Google eller GitHub, hvis der logges ind med en af dem:</b> udbyderens eget id for brugeren (et tal eller en kode, der aldrig ændres), hvornår den blev tilknyttet, og hvornår der sidst blev logget ind med den, og om kontoen har en egen adgangskode. Intet andet fra udbyderen gemmes: ikke navn, billede eller nogen nøgle til kontoen dér. Mens der logges ind, gemmer serveren en notits om login, med den e-mailadresse, som udbyderen angiver som brugerens, når det er nødvendigt: til en ny konto, hvor den bliver kontoens e-mailadresse, eller, når en Glazecalc-konto allerede har den e-mailadresse, for at tilknytte udbyderen til den, når der logges ind på den konto. Notitsen og e-mailadressen i den slettes inden for omkring 10 minutter.",
-    "providers": "<b>Login med Google eller GitHub</b> er et valg og sker kun, når der trykkes på dens knap. Browseren går så til Google eller GitHub, som sender Glazecalc deres id for brugeren og e-mailadressen. Hver er en separat virksomhed, ansvarlig for det, der deles med den, efter sin egen privatlivspolitik. Intet script eller billede fra nogen af dem indlæses på Glazecalcs sider.",
-    "keptProviders": "<b>Google eller GitHub:</b> hver tilknytning, indtil den frakobles, eller kontoen slettes. Et login, der er i gang, slettes efter 10 minutter."
+    "changes": "Hvis denne politik ændres, ændres datoen øverst på siden også."
   },
   "notFound": {
     "heading": "Siden blev ikke fundet",

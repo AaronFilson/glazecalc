@@ -128,7 +128,6 @@
     "rightsAsk": "Dėl visų kitų dalykų, pvz., norėdami, kad jūsų duomenys nebūtų naudojami, kol taisoma klaida, arba nesutikdami su tuo, kaip jie naudojami, rašykite adresu <mail>privacy@glazecalcapp.com</mail>. Tai nemokama, o atsakymą gausite per mėnesį. Jūsų bus paprašyta tik įrodyti, kad paskyra jūsų – prisijungiant arba atidarant nuorodą, išsiųstą jos adresu, – ir niekada asmens dokumento.",
     "rightsComplain": "Jei esate nepatenkinti, galite pateikti skundą duomenų apsaugos priežiūros institucijai: ES – <edpb>savo šalies institucijai</edpb>, o Jungtinėje Karalystėje – <ico>Informacijos komisaro tarnybai (Information Commissioner’s Office)</ico>.",
     "storageHeading": "Slapukai ir naršyklės saugykla",
-    "storageIntro": "Glazecalc nustato du slapukus, antrąjį tik tada, kai prisijungiate per Google ar GitHub, ir naršyklėje saugo keletą mažų reikšmių. Kiekviena yra todėl, kad to paprašėte: kad liktumėte prisijungę, prisijungtumėte per Google ar GitHub arba kad būtų prisimintas jūsų pasirinkimas. Nė viena jūsų neseka ir nė viena niekam neperduodama, todėl pagal įstatymą klausti iš anksto nereikia, ir slapukų pranešimo juostos nėra.",
     "storageLabel": "Slapukai ir naršyklės saugykla",
     "storageName": "Pavadinimas",
     "storagePurpose": "Kam skirta",
@@ -181,19 +180,12 @@
       "reloadedFor": {
         "purpose": "Išleidus naują svetainės versiją – kuris puslapis ir kada buvo įkeltas iš naujo, kad puslapis būtų įkeliamas iš naujo ne dažniau kaip kartą per minutę.",
         "lasts": "Kol uždarysite skirtuką."
-      },
-      "oauthCookie": {
-        "purpose": "Tik kai prisijungiate per Google ar GitHub: jis susieja paslaugos atsakymą su jūsų naršykle, kad niekas kitas negalėtų užbaigti jūsų prisijungimo ar pradėti jo už jus. Puslapio scenarijai jo perskaityti negali.",
-        "lasts": "Nustatomas, kai paspaudžiate Tęsti su Google ar Tęsti su GitHub arba susiejate vieną iš jų paskyros puslapyje. Pašalinamas, kai prisijungimas baigiasi, arba po 10 minučių."
       }
     },
     "childrenHeading": "Vaikai",
     "children": "Glazecalc yra įrankis keramikams ir nėra skirtas vaikams.",
     "changesHeading": "Pakeitimai",
-    "changes": "Jei šis privatumo pranešimas pasikeis, pasikeis ir data puslapio viršuje.",
-    "storedProviders": "<b>Google ar GitHub, jei prisijungiate per vieną iš jų:</b> paslaugos suteiktas jūsų ID (skaičius ar kodas, kuris niekada nesikeičia), kada ją susiejote ir kada paskutinį kartą per ją prisijungėte, taip pat ar jūsų paskyra turi savo slaptažodį. Daugiau nieko iš paslaugos nesaugoma: nei jūsų vardas, nei nuotrauka, nei joks raktas į jūsų paskyrą ten. Jums prisijungiant, serveris saugo prisijungimo įrašą su el. paštu, kurį paslauga nurodo kaip jūsų, kai jo reikia: naujai paskyrai, kur jis tampa paskyros el. paštu, arba, kai Glazecalc paskyra jau turi tą el. paštą, kad paslaugą su ja susietų, kai prie tos paskyros prisijungsite. Įrašas ir jame esantis el. paštas panaikinami maždaug per 10 minučių.",
-    "providers": "<b>Prisijungimas per Google ar GitHub</b> yra jūsų pasirinkimas ir įvyksta tik paspaudus jo mygtuką. Tada jūsų naršyklė pereina į Google ar GitHub, kurie Glazecalc atsiunčia savo ID apie jus ir jūsų el. paštą. Kiekviena yra atskira bendrovė, atsakinga už tai, kuo su ja dalijatės, pagal savo privatumo politiką. Jokie jų scenarijai ar paveikslėliai Glazecalc puslapiuose neįkeliami.",
-    "keptProviders": "<b>Google ar GitHub:</b> kiekviena nuoroda, kol ją atsiesite arba panaikinsite paskyrą. Vykstantis prisijungimas panaikinamas po 10 minučių."
+    "changes": "Jei šis privatumo pranešimas pasikeis, pasikeis ir data puslapio viršuje."
   },
   "notFound": {
     "heading": "Puslapis nerastas",

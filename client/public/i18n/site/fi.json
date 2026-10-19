@@ -128,7 +128,6 @@
     "rightsAsk": "Muissa asioissa, esimerkiksi kun pyydetään, ettei tietoja käytetä sinä aikana, kun virhettä korjataan, tai kun vastustetaan tietojen käyttötapaa, kirjoita osoitteeseen <mail>privacy@glazecalcapp.com</mail>. Se on maksutonta, ja vastaus annetaan kuukauden kuluessa. Ainoastaan tilin omistajuus pyydetään osoittamaan, kirjautumalla sisään tai avaamalla tilin osoitteeseen lähetetty linkki; henkilöllisyystodistusta ei koskaan pyydetä.",
     "rightsComplain": "Jos vastaus ei tyydytä, valituksen voi tehdä tietosuojaviranomaiselle: EU:ssa <edpb>oman maan viranomaiselle</edpb> ja Isossa-Britanniassa viranomaiselle <ico>Information Commissioner’s Office</ico>.",
     "storageHeading": "Evästeet ja selaimen tallennustila",
-    "storageIntro": "Glazecalc asettaa kaksi evästettä, toisen vain silloin, kun kirjaudutaan Googlella tai GitHubilla, ja säilyttää muutamia pieniä arvoja selaimessa. Jokainen on olemassa jonkin pyydetyn asian vuoksi: sisäänkirjautuneena pysymiseksi, Googlella tai GitHubilla kirjautumiseksi tai tehdyn valinnan muistamiseksi. Mikään ei seuraa käyttäjää eikä mitään jaeta, joten laki ei vaadi kysymään ensin, eikä evästebanneria ole.",
     "storageLabel": "Evästeet ja selaimen tallennustila",
     "storageName": "Nimi",
     "storagePurpose": "Käyttötarkoitus",
@@ -181,19 +180,12 @@
       "reloadedFor": {
         "purpose": "Sivuston uuden version julkaisun jälkeen tieto siitä, mikä sivu ladattiin uudelleen ja milloin, jotta sivu latautuu uudelleen enintään kerran minuutissa.",
         "lasts": "Kunnes välilehti suljetaan."
-      },
-      "oauthCookie": {
-        "purpose": "Vain silloin, kun kirjaudutaan Googlella tai GitHubilla: se sitoo palveluntarjoajan vastauksen selaimeen, jotta kukaan muu ei voi viimeistellä kirjautumista tai aloittaa sellaista. Sivun skriptit eivät voi lukea sitä.",
-        "lasts": "Asetetaan, kun painetaan ”Jatka Googlella” tai ”Jatka GitHubilla” tai liitetään jompikumpi tilisivulla. Poistetaan, kun kirjautuminen päättyy tai 10 minuutin kuluttua."
       }
     },
     "childrenHeading": "Lapset",
     "children": "Glazecalc on keraamikoiden työkalu, eikä sitä ole suunnattu lapsille.",
     "changesHeading": "Muutokset",
-    "changes": "Jos tämä seloste muuttuu, myös sivun yläreunan päivämäärä muuttuu.",
-    "storedProviders": "<b>Google tai GitHub, jos kirjaudutaan jommallakummalla:</b> palveluntarjoajan oma tunniste käyttäjästä (numero tai koodi, joka ei koskaan muutu), milloin se liitettiin ja milloin sillä kirjauduttiin viimeksi sekä onko tilillä oma salasana. Muuta palveluntarjoajalta ei säilytetä: ei nimeä, kuvaa eikä mitään avainta tiliin siellä. Kirjautumisen aikana palvelin säilyttää muistiinpanon kirjautumisesta sekä sähköpostiosoitteen, jonka palveluntarjoaja ilmoittaa käyttäjän omaksi, kun sitä tarvitaan: uuden tilin kohdalla, jolloin siitä tulee tilin sähköpostiosoite, tai, kun Glazecalc-tilillä on jo tuo osoite, palveluntarjoajan liittämiseksi siihen, kun siihen tiliin kirjaudutaan. Muistiinpano ja siinä oleva sähköpostiosoite poistetaan noin 10 minuutin kuluessa.",
-    "providers": "<b>Googlella tai GitHubilla kirjautuminen</b> on oma valinta, ja se tapahtuu vain, kun sen painiketta painetaan. Selain siirtyy silloin Googleen tai GitHubiin, jotka lähettävät Glazecalcille oman tunnisteensa käyttäjästä ja sähköpostiosoitteen. Kumpikin on erillinen yritys, joka vastaa siitä, mitä sille jaetaan, omien tietosuojakäytäntöjensä mukaan. Kummaltakaan ei ladata skriptiä tai kuvaa Glazecalcin sivuille.",
-    "keptProviders": "<b>Google tai GitHub:</b> kukin liitos, kunnes se irrotetaan tai tili poistetaan. Kesken oleva kirjautuminen poistetaan 10 minuutin kuluttua."
+    "changes": "Jos tämä seloste muuttuu, myös sivun yläreunan päivämäärä muuttuu."
   },
   "notFound": {
     "heading": "Sivua ei löydy",

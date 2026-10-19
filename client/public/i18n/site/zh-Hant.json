@@ -128,7 +128,6 @@
     "rightsAsk": "其他事項，例如要求在更正錯誤期間暫停使用您的資料，或反對資料的使用方式，請寫信到 <mail>privacy@glazecalcapp.com</mail>。免費，您會在一個月內得到答覆。只會要求您證明帳戶是您的，方式是登入或開啟寄到該地址的連結，絕不會要求身分證件。",
     "rightsComplain": "如果您不滿意，可以向資料保護主管機關投訴：在歐盟，是<edpb>您所在國家的主管機關</edpb>；在英國，是<ico>資訊專員辦公室（Information Commissioner’s Office）</ico>。",
     "storageHeading": "Cookie 與瀏覽器儲存空間",
-    "storageIntro": "Glazecalc 設定兩個 Cookie（第二個只在您用 Google 或 GitHub 登入時設定），並在您的瀏覽器中儲存幾個小的值。每一個都用於您要求的某件事：保持登入、用 Google 或 GitHub 登入，或記住您做出的選擇。沒有一個會追蹤您，也沒有一個被分享，所以法律不要求事先徵求同意，也沒有 Cookie 橫幅。",
     "storageLabel": "Cookie 與瀏覽器儲存空間",
     "storageName": "名稱",
     "storagePurpose": "用途",
@@ -181,19 +180,12 @@
       "reloadedFor": {
         "purpose": "網站發布新版本後，記下重新載入了哪個頁面和時間，讓頁面每分鐘最多重新載入一次。",
         "lasts": "直到您關閉分頁為止。"
-      },
-      "oauthCookie": {
-        "purpose": "只在您用 Google 或 GitHub 登入時使用：這個 Cookie 把登入服務的回應與您的瀏覽器綁在一起，這樣別人無法完成您的登入，也無法替您開始登入。頁面上的指令碼無法讀取這個 Cookie。",
-        "lasts": "在您按下「使用 Google 繼續」或「使用 GitHub 繼續」，或在帳戶頁面連結其中一個時設定。登入完成時移除，或 10 分鐘後移除。"
       }
     },
     "childrenHeading": "兒童",
     "children": "Glazecalc 是給陶藝家使用的工具，並非針對兒童。",
     "changesHeading": "變更",
-    "changes": "如果本說明有變更，頁面頂端的日期也會跟著更新。",
-    "storedProviders": "<b>Google 或 GitHub（如果您用其中之一登入）：</b>登入服務給您的 ID（一個永不改變的數字或代碼）、您連結的時間和上次用來登入的時間，以及您的帳戶是否有自己的密碼。登入服務的其他任何資料都不儲存：不儲存您的名稱、大頭貼，也不儲存能存取您在那裡的帳戶的任何金鑰。在您登入期間，伺服器會記下這次登入，其中在需要時包含登入服務所說的您的電子郵件：用於新帳戶時，這個電子郵件會成為帳戶的電子郵件；或者當某個 Glazecalc 帳戶已使用該電子郵件時，在您登入該帳戶後，藉此把登入服務連結到該帳戶。這筆記錄及其中的電子郵件會在大約 10 分鐘內刪除。",
-    "providers": "<b>用 Google 或 GitHub 登入</b>由您選擇，只有在您按下對應的按鈕時才會發生。您的瀏覽器隨後會前往 Google 或 GitHub，這兩個服務會把您的 ID 和電子郵件傳給 Glazecalc。兩者都是獨立的公司，依各自的隱私權政策，對您與其分享的內容負責。Glazecalc 的頁面不會載入這兩家公司的任何指令碼或圖片。",
-    "keptProviders": "<b>Google 或 GitHub：</b>每個連結保留到您取消連結或刪除帳戶。進行中的登入會在 10 分鐘後刪除。"
+    "changes": "如果本說明有變更，頁面頂端的日期也會跟著更新。"
   },
   "notFound": {
     "heading": "找不到頁面",

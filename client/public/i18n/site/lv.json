@@ -128,7 +128,6 @@
     "rightsAsk": "Visos citos jautājumos, piemēram, lai lūgtu nelietot jūsu datus, kamēr tiek labota kļūda, vai lai iebilstu pret to izmantošanu, rakstiet uz <mail>privacy@glazecalcapp.com</mail>. Tas ir bez maksas, un atbildi saņemsiet mēneša laikā. Jums lūgs tikai pierādīt, ka konts ir jūsu, pierakstoties vai atverot saiti, kas nosūtīta uz tā adresi, bet nekad – uzrādīt personu apliecinošu dokumentu.",
     "rightsComplain": "Ja kaut kas jūs neapmierina, varat iesniegt sūdzību datu aizsardzības uzraudzības iestādē: ES – <edpb>savas valsts iestādē</edpb>, Apvienotajā Karalistē – <ico>Information Commissioner’s Office</ico>.",
     "storageHeading": "Sīkdatnes un pārlūkprogrammas krātuve",
-    "storageIntro": "Lietotne Glazecalc iestata divas sīkdatnes, otro tikai tad, kad pierakstāties ar Google vai GitHub, un glabā dažas mazas vērtības jūsu pārlūkprogrammā. Katra ir tur kaut kā dēļ, ko jūs pieprasījāt: lai pierakstīšanās saglabātos, lai pierakstītos ar Google vai GitHub vai lai atcerētos jūsu izvēli. Neviena jūs neizseko, un nevienu nekopīgo, tāpēc likums neprasa jautāt iepriekš, un sīkdatņu joslas nav.",
     "storageLabel": "Sīkdatnes un pārlūkprogrammas krātuve",
     "storageName": "Nosaukums",
     "storagePurpose": "Mērķis",
@@ -181,19 +180,12 @@
       "reloadedFor": {
         "purpose": "Pēc jaunas vietnes versijas izlaišanas – kura lapa tika pārlādēta un kad, lai lapa tiktu pārlādēta ne biežāk kā reizi minūtē.",
         "lasts": "Līdz aizverat cilni."
-      },
-      "oauthCookie": {
-        "purpose": "Tikai tad, kad pierakstāties ar Google vai GitHub: tā saista pakalpojuma atbildi ar jūsu pārlūkprogrammu, lai neviens cits nevarētu pabeigt jūsu pierakstīšanos vai to sākt jūsu vietā. Lapas skripti to nevar nolasīt.",
-        "lasts": "Tiek iestatīta, kad nospiežat Turpināt ar Google vai Turpināt ar GitHub vai saistāt vienu no tiem sava konta lapā. Tiek noņemta, kad pierakstīšanās beidzas, vai pēc 10 minūtēm."
       }
     },
     "childrenHeading": "Bērni",
     "children": "Glazecalc ir rīks keramiķiem un nav paredzēts bērniem.",
     "changesHeading": "Izmaiņas",
-    "changes": "Ja šis paziņojums mainās, mainās arī datums lapas augšdaļā.",
-    "storedProviders": "<b>Google vai GitHub, ja pierakstāties ar vienu no tiem:</b> pakalpojuma piešķirtais jūsu ID (skaitlis vai kods, kas nekad nemainās), kad to sasaistījāt un kad pēdējoreiz ar to pierakstījāties, kā arī tas, vai jūsu kontam ir sava parole. Nekas cits no pakalpojuma netiek glabāts: ne jūsu vārds, ne attēls, ne jebkāda atslēga uz jūsu kontu tur. Kamēr pierakstāties, serveris glabā pierakstīšanās piezīmi ar e-pasta adresi, ko pakalpojums norāda kā jūsu, kad tā ir vajadzīga: jaunam kontam, kur tā kļūst par konta e-pasta adresi, vai, ja Glazecalc kontam jau ir šī e-pasta adrese, lai pakalpojumu ar to sasaistītu, kad pierakstīsities šajā kontā. Piezīme un tajā esošā e-pasta adrese tiek izdzēsta apmēram 10 minūšu laikā.",
-    "providers": "<b>Pierakstīšanās ar Google vai GitHub</b> ir jūsu izvēle, un tā notiek tikai tad, kad nospiežat attiecīgo pogu. Pēc tam jūsu pārlūkprogramma dodas uz Google vai GitHub, kas nosūta lietotnei Glazecalc jums piešķirto ID un jūsu e-pasta adresi. Katrs ir atsevišķs uzņēmums, kas atbild par to, ko ar to kopīgojat, saskaņā ar savu privātuma politiku. Neviens skripts vai attēls no tiem Glazecalc lapās netiek ielādēts.",
-    "keptProviders": "<b>Google vai GitHub:</b> katra sasaiste, līdz brīdim, kad to atsaistāt vai izdzēšat kontu. Notiekoša pierakstīšanās tiek izdzēsta pēc 10 minūtēm."
+    "changes": "Ja šis paziņojums mainās, mainās arī datums lapas augšdaļā."
   },
   "notFound": {
     "heading": "Lapa nav atrasta",

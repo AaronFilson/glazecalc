@@ -128,7 +128,6 @@
     "rightsAsk": "Għal kull ħaġa oħra, bħal biex titlob li d-data tiegħek ma tintużax sakemm jiġi kkoreġut żball, jew biex toġġezzjona għal kif tintuża, ikteb lil <mail>privacy@glazecalcapp.com</mail>. Huwa b’xejn, u jkollok tweġiba fi żmien xahar. Tintalab biss turi li l-kont huwa tiegħek, billi tidħol fih jew billi tiftaħ link mibgħut lill-indirizz tiegħu, qatt biex turi dokument tal-identità.",
     "rightsComplain": "Jekk m’intix sodisfatt, tista’ tressaq ilment quddiem awtorità tal-protezzjoni tad-data: fl-UE, <edpb>l-awtorità tal-pajjiż tiegħek</edpb>, u fir-Renju Unit, l-<ico>Information Commissioner's Office</ico>.",
     "storageHeading": "Cookies u l-ħażna tal-brawżer",
-    "storageIntro": "Glazecalc jistabbilixxi żewġ cookies, it-tieni waħda biss waqt li tidħol b’Google jew b’GitHub, u jżomm ftit valuri żgħar fil-brawżer tiegħek. Kull waħda hi hemm għal xi ħaġa li talbt: biex tibqa’ dieħel, biex tidħol b’Google jew b’GitHub, jew biex tiġi mfakkra għażla li għamilt. Ebda waħda ma ssegwik u ebda waħda ma tinqasam, għalhekk il-liġi ma teħtieġx li nistaqsuk l-ewwel, u m’hemm l-ebda banner tal-cookies.",
     "storageLabel": "Cookies u l-ħażna tal-brawżer",
     "storageName": "Isem",
     "storagePurpose": "Għal xiex inhu",
@@ -181,19 +180,12 @@
       "reloadedFor": {
         "purpose": "Wara li toħroġ verżjoni ġdida tas-sit, liema paġna reġgħet ingħabbiet u meta, biex paġna ma terġax tingħabba aktar minn darba fil-minuta.",
         "lasts": "Sakemm tagħlaq it-tab."
-      },
-      "oauthCookie": {
-        "purpose": "Biss waqt li tidħol b’Google jew b’GitHub: torbot it-tweġiba ta’ Google jew GitHub mal-brawżer tiegħek, biex ħadd ieħor ma jkun jista’ jlesti d-dħul tiegħek jew jibda wieħed għalik. L-iscripts fil-paġna ma jistgħux jaqrawha.",
-        "lasts": "Tiġi mistabbilita meta tagħfas Kompli b’Google jew Kompli b’GitHub, jew tgħaqqad waħda fil-paġna tal-kont tiegħek. Titneħħa meta jintemm id-dħul, jew wara 10 minuti."
       }
     },
     "childrenHeading": "It-tfal",
     "children": "Glazecalc huwa għodda għall-fuħħarin u mhuwiex immirat lejn it-tfal.",
     "changesHeading": "Bidliet",
-    "changes": "Jekk dan l-avviż jinbidel, tinbidel ukoll id-data tal-aħħar aġġornament fil-quċċata tal-paġna.",
-    "storedProviders": "<b>Google jew GitHub, jekk tidħol b’wieħed minnhom:</b> l-id tiegħek stess għal dak is-servizz (numru jew kodiċi li qatt ma jinbidel), meta għaqqadtu u meta dħalt bih l-aħħar, u jekk il-kont tiegħek għandux password tiegħu stess. Xejn aktar mis-servizz ma jinżamm: la ismek, la r-ritratt tiegħek u lanqas ebda ċavetta għall-kont tiegħek hemm. Waqt li tidħol, is-server iżomm nota tad-dħul, bl-indirizz elettroniku li s-servizz jgħid li hu tiegħek meta jkun meħtieġ: għal kont ġdid, fejn isir l-indirizz elettroniku tal-kont tiegħek, jew, meta kont ta’ Glazecalc diġà għandu dak l-indirizz, biex is-servizz jiġi magħqud miegħu ladarba tidħol f’dak il-kont. In-nota, u l-indirizz elettroniku fiha, jitħassru fi żmien madwar 10 minuti.",
-    "providers": "<b>Id-dħul b’Google jew b’GitHub</b> huwa għażla tiegħek, u jseħħ biss meta tagħfas il-buttuna tiegħu. Il-brawżer tiegħek imbagħad imur għand Google jew GitHub, li jibagħtu lil Glazecalc l-id tagħhom għalik u l-indirizz elettroniku tiegħek. Kull waħda minnhom hija kumpanija separata, responsabbli għal dak li taqsam magħha taħt il-politika tal-privatezza tagħha stess. L-ebda script jew immaġni minn Google jew minn GitHub ma jitgħabbew fuq il-paġni ta’ Glazecalc.",
-    "keptProviders": "<b>Google jew GitHub:</b> kull għaqda sakemm tneħħi l-għaqda jew tħassar il-kont tiegħek. Dħul li għaddej jitħassar wara 10 minuti."
+    "changes": "Jekk dan l-avviż jinbidel, tinbidel ukoll id-data tal-aħħar aġġornament fil-quċċata tal-paġna."
   },
   "notFound": {
     "heading": "Il-paġna ma nstabitx",

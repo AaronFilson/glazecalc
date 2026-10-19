@@ -128,7 +128,6 @@
     "rightsAsk": "Kõige muu jaoks, näiteks kui soovite, et teie andmete kasutamine peatataks vea parandamise ajaks, või kui esitate vastuväite nende kasutamisele, kirjutage aadressil <mail>privacy@glazecalcapp.com</mail>. See on tasuta ja vastuse saate kuu jooksul. Teil palutakse ainult tõendada, et konto on teie oma, sisse logides või selle aadressile saadetud linki avades, mitte kunagi isikut tõendava dokumendiga.",
     "rightsComplain": "Kui te ei ole rahul, võite esitada kaebuse andmekaitse järelevalveasutusele: EL-is <edpb>oma riigi asutusele</edpb> ja Ühendkuningriigis asutusele <ico>Information Commissioner’s Office</ico>.",
     "storageHeading": "Küpsised ja brauseri salvestusruum",
-    "storageIntro": "Glazecalc seab kaks küpsist, teise ainult siis, kui logite sisse Google’i või GitHubiga, ja hoiab brauseris mõnda väikest väärtust. Igaüks on olemas millegi jaoks, mida te palusite: sisselogituks jäämiseks, Google’i või GitHubiga sisselogimiseks või tehtud valiku meeldejätmiseks. Mitte ükski ei jälgi teid ega ole jagatud, seega ei nõua seadus eelnevat küsimist ja küpsisepaneeli pole.",
     "storageLabel": "Küpsised ja brauseri salvestusruum",
     "storageName": "Nimi",
     "storagePurpose": "Mille jaoks",
@@ -181,19 +180,12 @@
       "reloadedFor": {
         "purpose": "Pärast saidi uue versiooni avaldamist: milline leht laaditi uuesti ja millal, et leht laaditaks uuesti kõige rohkem kord minutis.",
         "lasts": "Kuni sulgete vahekaardi."
-      },
-      "oauthCookie": {
-        "purpose": "Ainult siis, kui logite sisse Google’i või GitHubiga: see seob teenusepakkuja vastuse teie brauseriga, et keegi teine ei saaks teie sisselogimist lõpule viia ega teie eest ühte alustada. Lehe skriptid ei saa seda lugeda.",
-        "lasts": "Seatakse, kui vajutate „Jätka Google’iga“ või „Jätka GitHubiga“ või seote ühe oma konto lehel. Eemaldatakse, kui sisselogimine lõpeb, või 10 minuti pärast."
       }
     },
     "childrenHeading": "Lapsed",
     "children": "Glazecalc on tööriist keraamikutele ega ole suunatud lastele.",
     "changesHeading": "Muudatused",
-    "changes": "Kui see teade muutub, muutub ka kuupäev lehe ülaosas.",
-    "storedProviders": "<b>Google või GitHub, kui logite sisse ühega neist:</b> teenusepakkuja enda ID teie kohta (arv või kood, mis ei muutu kunagi), millal te selle sidusite ja millal viimati sellega sisse logisite, ning kas teie kontol on oma parool. Muud teenusepakkujalt ei säilitata: mitte teie nime, pilti ega ühtegi võtit teie kontole seal. Sisselogimise ajal hoiab server sisselogimise kohta märget, koos e-posti aadressiga, mida teenusepakkuja teie omaks nimetab, kui seda vaja on: uue konto jaoks, kus sellest saab konto e-posti aadress, või, kui Glazecalci kontol on see aadress juba olemas, teenusepakkuja sidumiseks sellega, kui logite sellesse kontosse sisse. Märge ja selles olev e-posti aadress kustutatakse umbes 10 minuti jooksul.",
-    "providers": "<b>Google’i või GitHubiga sisselogimine</b> on teie valik ja toimub ainult siis, kui vajutate selle nuppu. Teie brauser läheb siis Google’i või GitHubi juurde, mis saadavad Glazecalcile oma ID teie kohta ja teie e-posti aadressi. Kumbki on eraldi ettevõte, kes vastutab selle eest, mida te sellega jagate, oma privaatsuspoliitika alusel. Kummaltki ei laeta Glazecalci lehtedele skripti ega pilti.",
-    "keptProviders": "<b>Google või GitHub:</b> iga seos kuni lahti ühendate või kustutate oma konto. Pooleliolev sisselogimine kustutatakse 10 minuti pärast."
+    "changes": "Kui see teade muutub, muutub ka kuupäev lehe ülaosas."
   },
   "notFound": {
     "heading": "Lehte ei leitud",

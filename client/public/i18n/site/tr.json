@@ -128,7 +128,6 @@
     "rightsAsk": "Başka herhangi bir şey için, örneğin bir hata düzeltilirken verilerinizin kullanılmamasını istemek ya da nasıl kullanıldığına itiraz etmek için <mail>privacy@glazecalcapp.com</mail> adresine yazın. Bu ücretsizdir ve bir ay içinde yanıt alırsınız. Sizden yalnızca hesabın size ait olduğunu göstermeniz istenir; bunu oturum açarak ya da hesabın adresine gönderilen bir bağlantıyı açarak yaparsınız, asla kimlik belgesiyle değil.",
     "rightsComplain": "Memnun kalmazsanız bir veri koruma otoritesine şikâyette bulunabilirsiniz: AB’de <edpb>ülkenizdeki otoriteye</edpb>, Birleşik Krallık’ta ise <ico>Information Commissioner’s Office</ico> kurumuna.",
     "storageHeading": "Çerezler ve tarayıcı depolama alanı",
-    "storageIntro": "Glazecalc iki çerez ayarlar; ikincisini yalnızca Google veya GitHub ile oturum açarken ayarlar; ayrıca tarayıcınızda birkaç küçük değer saklar. Her biri sizin istediğiniz bir şey için vardır: oturumun açık kalması, Google veya GitHub ile oturum açma ya da yaptığınız bir seçimi hatırlama. Hiçbiri sizi izlemez ve hiçbiri paylaşılmaz; bu yüzden yasa önce sormayı gerektirmez ve çerez bildirimi yoktur.",
     "storageLabel": "Çerezler ve tarayıcı depolama alanı",
     "storageName": "Ad",
     "storagePurpose": "Ne için",
@@ -181,19 +180,12 @@
       "reloadedFor": {
         "purpose": "Sitenin yeni bir sürümü yayımlandıktan sonra hangi sayfanın ne zaman yeniden yüklendiği; böylece bir sayfa dakikada en fazla bir kez yeniden yüklenir.",
         "lasts": "Sekmeyi kapatana kadar."
-      },
-      "oauthCookie": {
-        "purpose": "Yalnızca Google veya GitHub ile oturum açarken: Google veya GitHub’ın yanıtını tarayıcınıza bağlar; böylece başka hiç kimse oturum açmanızı tamamlayamaz veya sizin adınıza bir tane başlatamaz. Sayfadaki betikler onu okuyamaz.",
-        "lasts": "Google ile devam et veya GitHub ile devam et düğmesine bastığınızda ya da hesap sayfanızdan birini bağladığınızda ayarlanır. Oturum açma bittiğinde veya 10 dakika sonra kaldırılır."
       }
     },
     "childrenHeading": "Çocuklar",
     "children": "Glazecalc seramikçiler için bir araçtır ve çocuklara yönelik değildir.",
     "changesHeading": "Değişiklikler",
-    "changes": "Bu bildirim değişirse sayfanın üstündeki tarih de değişir.",
-    "storedProviders": "<b>Google veya GitHub, birinde oturum açarsanız:</b> hizmetin sizin için verdiği kimlik numarası (hiç değişmeyen bir sayı veya kod), bağladığınız zaman ve onunla son oturum açtığınız zaman, ve hesabınızın kendi parolasının olup olmadığı. Hizmetten başka hiçbir şey saklanmaz: adınız, resminiz ya da oradaki hesabınıza ait hiçbir anahtar değil. Oturum açarken sunucu, gerektiğinde hizmetin sizin dediği e-posta adresiyle birlikte, oturum açmanın bir notunu tutar: yeni bir hesap için, o adres hesabınızın e-postası olur; ya da bir Glazecalc hesabında bu e-posta zaten varsa, o hesapta oturum açtığınızda hizmeti ona bağlamak için. Not ve içindeki e-posta yaklaşık 10 dakika içinde silinir.",
-    "providers": "<b>Google veya GitHub ile oturum açma</b> sizin tercihinizdir ve yalnızca düğmesine bastığınızda gerçekleşir. Tarayıcınız o zaman Google veya GitHub’a gider; onlar da Glazecalc’e sizin kimlik numaranızı ve e-postanızı gönderir. Her biri ayrı bir şirkettir ve kendi gizlilik politikası uyarınca onunla paylaştıklarınızdan sorumludur. İkisinden de hiçbir betik veya görsel Glazecalc sayfalarında yüklenmez.",
-    "keptProviders": "<b>Google veya GitHub:</b> her bağlantı, bağlantısını kaldırana veya hesabınızı silene kadar. Devam eden bir oturum açma 10 dakika sonra silinir."
+    "changes": "Bu bildirim değişirse sayfanın üstündeki tarih de değişir."
   },
   "notFound": {
     "heading": "Sayfa bulunamadı",

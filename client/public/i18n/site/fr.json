@@ -128,7 +128,6 @@
     "rightsAsk": "Pour toute autre demande, par exemple pour que l’utilisation de vos données soit suspendue le temps de corriger une erreur, ou pour vous opposer à la façon dont elles sont utilisées, écrivez à <mail>privacy@glazecalcapp.com</mail>. C’est gratuit, et vous aurez une réponse dans un délai d’un mois. On vous demandera seulement de montrer que le compte est bien le vôtre, en vous connectant ou en ouvrant un lien envoyé à son adresse, jamais une pièce d’identité.",
     "rightsComplain": "Si vous n’êtes pas satisfait, vous pouvez déposer une plainte auprès d’une autorité de protection des données : dans l’UE, <edpb>l’autorité de votre pays</edpb>, et au Royaume-Uni, l’<ico>Information Commissioner’s Office</ico>.",
     "storageHeading": "Cookies et stockage du navigateur",
-    "storageIntro": "Glazecalc dépose deux cookies, le second seulement pendant que vous vous connectez avec Google ou GitHub, et conserve quelques petites valeurs dans votre navigateur. Chacun sert à quelque chose que vous avez demandé : rester connecté, vous connecter avec Google ou GitHub, ou retenir un choix que vous avez fait. Aucun ne vous suit et aucun n’est partagé : la loi n’exige donc pas de demander d’abord, et il n’y a pas de bandeau de cookies.",
     "storageLabel": "Cookies et stockage du navigateur",
     "storageName": "Nom",
     "storagePurpose": "À quoi il sert",
@@ -181,19 +180,12 @@
       "reloadedFor": {
         "purpose": "Après la mise en ligne d’une nouvelle version du site, la page rechargée et l’heure du rechargement, pour qu’une page ne se recharge pas plus d’une fois par minute.",
         "lasts": "Jusqu’à la fermeture de l’onglet."
-      },
-      "oauthCookie": {
-        "purpose": "Seulement pendant que vous vous connectez avec Google ou GitHub : il relie la réponse du service de connexion à votre navigateur, pour que personne d’autre ne puisse terminer votre connexion ni en lancer une à votre place. Les scripts de la page ne peuvent pas le lire.",
-        "lasts": "Déposé quand vous appuyez sur « Continuer avec Google » ou « Continuer avec GitHub », ou que vous en associez un sur la page de votre compte. Supprimé quand la connexion se termine, ou après 10 minutes."
       }
     },
     "childrenHeading": "Enfants",
     "children": "Glazecalc est un outil pour les céramistes et ne s’adresse pas aux enfants.",
     "changesHeading": "Modifications",
-    "changes": "Si cette notice change, la date en haut de la page change aussi.",
-    "storedProviders": "<b>Google ou GitHub, si vous vous connectez avec l’un d’eux :</b> l’identifiant que ce service vous attribue (un numéro ou un code qui ne change jamais), la date à laquelle vous l’avez associé et celle de votre dernière connexion avec lui, et si votre compte a un mot de passe à lui. Rien d’autre venant de ce service n’est conservé : ni votre nom, ni votre photo, ni aucune clé de votre compte chez lui. Pendant que vous vous connectez, le serveur garde une note de la connexion, avec l’adresse e-mail que ce service indique comme la vôtre quand elle est nécessaire : pour un nouveau compte, où elle devient l’adresse e-mail de votre compte, ou, quand un compte Glazecalc a déjà cette adresse, pour y associer ce service une fois que vous vous connectez à ce compte. La note, et l’adresse e-mail qu’elle contient, est supprimée en 10 minutes environ.",
-    "providers": "<b>Se connecter avec Google ou GitHub</b> est votre choix, et ne se produit que lorsque vous appuyez sur son bouton. Votre navigateur va alors vers Google ou GitHub, qui envoient à Glazecalc leur identifiant pour vous et votre adresse e-mail. Chacun est une entreprise distincte, responsable de ce que vous partagez avec elle selon sa propre politique de confidentialité. Aucun script ni aucune image de l’un ou de l’autre ne se charge sur les pages de Glazecalc.",
-    "keptProviders": "<b>Google ou GitHub :</b> chaque association jusqu’à ce que vous la dissociiez ou que vous supprimiez votre compte. Une connexion en cours est supprimée au bout de 10 minutes."
+    "changes": "Si cette notice change, la date en haut de la page change aussi."
   },
   "notFound": {
     "heading": "Page introuvable",

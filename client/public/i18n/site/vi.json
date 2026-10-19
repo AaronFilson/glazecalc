@@ -128,7 +128,6 @@
     "rightsAsk": "Với bất kỳ điều gì khác, chẳng hạn yêu cầu giữ dữ liệu của bạn lại không sử dụng trong khi một sai sót được sửa, hoặc phản đối cách nó được sử dụng, hãy viết thư đến <mail>privacy@glazecalcapp.com</mail>. Việc này miễn phí, và bạn sẽ có câu trả lời trong vòng một tháng. Bạn chỉ được yêu cầu chứng minh tài khoản là của bạn, bằng cách đăng nhập hoặc mở một liên kết gửi đến địa chỉ của nó, không bao giờ yêu cầu giấy tờ tùy thân.",
     "rightsComplain": "Nếu bạn không hài lòng, bạn có thể khiếu nại với cơ quan bảo vệ dữ liệu: ở EU, <edpb>cơ quan ở quốc gia của bạn</edpb>, và ở Vương quốc Anh, <ico>Văn phòng Ủy viên Thông tin</ico>.",
     "storageHeading": "Cookie và bộ nhớ trình duyệt",
-    "storageIntro": "Glazecalc đặt hai cookie, cookie thứ hai chỉ khi bạn đăng nhập bằng Google hoặc GitHub, và giữ một vài giá trị nhỏ trong trình duyệt của bạn. Mỗi cái có mặt vì một điều bạn đã yêu cầu: giữ đăng nhập, đăng nhập bằng Google hoặc GitHub, hoặc ghi nhớ một lựa chọn bạn đã đưa ra. Không cái nào theo dõi bạn và không cái nào được chia sẻ, nên luật không yêu cầu phải hỏi trước, và không có biểu ngữ cookie.",
     "storageLabel": "Cookie và bộ nhớ trình duyệt",
     "storageName": "Tên",
     "storagePurpose": "Dùng để làm gì",
@@ -181,19 +180,12 @@
       "reloadedFor": {
         "purpose": "Sau khi một phiên bản mới của trang được phát hành, trang nào đã được tải lại và khi nào, để một trang tải lại tối đa một lần mỗi phút.",
         "lasts": "Cho đến khi bạn đóng tab."
-      },
-      "oauthCookie": {
-        "purpose": "Chỉ khi bạn đăng nhập bằng Google hoặc GitHub: nó gắn câu trả lời của dịch vụ đăng nhập với trình duyệt của bạn, để không ai khác có thể hoàn tất đăng nhập của bạn hay bắt đầu một lần cho bạn. Các tập lệnh trên trang không đọc được nó.",
-        "lasts": "Được đặt khi bạn nhấn “Tiếp tục với Google” hoặc “Tiếp tục với GitHub”, hoặc liên kết một tài khoản trên trang tài khoản của bạn. Bị xóa khi đăng nhập hoàn tất, hoặc sau 10 phút."
       }
     },
     "childrenHeading": "Trẻ em",
     "children": "Glazecalc là một công cụ cho thợ gốm và không hướng đến trẻ em.",
     "changesHeading": "Các thay đổi",
-    "changes": "Nếu thông báo này thay đổi, ngày ở đầu trang cũng thay đổi.",
-    "storedProviders": "<b>Google hoặc GitHub, nếu bạn đăng nhập bằng một trong hai:</b> id riêng của dịch vụ đăng nhập cho bạn (một số hoặc mã không bao giờ đổi), thời điểm bạn liên kết nó và lần đăng nhập cuối bằng nó, và việc tài khoản của bạn có mật khẩu riêng hay không. Không có gì khác từ dịch vụ đăng nhập được giữ: không tên, ảnh hay khóa nào vào tài khoản của bạn ở đó. Trong khi bạn đăng nhập, máy chủ giữ một ghi chú về lần đăng nhập, cùng email mà dịch vụ đăng nhập nói là của bạn khi cần: với một tài khoản mới, nơi nó trở thành email của tài khoản, hoặc, khi một tài khoản Glazecalc đã có email đó, để liên kết dịch vụ đăng nhập với nó khi bạn đăng nhập vào tài khoản đó. Ghi chú, và email trong đó, bị xóa trong vòng khoảng 10 phút.",
-    "providers": "<b>Đăng nhập bằng Google hoặc GitHub</b> là lựa chọn của bạn, và chỉ xảy ra khi bạn nhấn nút của nó. Trình duyệt của bạn khi đó đến Google hoặc GitHub, nơi gửi cho Glazecalc id của họ dành cho bạn và email của bạn. Mỗi bên là một công ty riêng, chịu trách nhiệm về những gì bạn chia sẻ với họ theo chính sách quyền riêng tư của họ. Không tập lệnh hay hình ảnh nào của hai bên được tải trên các trang của Glazecalc.",
-    "keptProviders": "<b>Google hoặc GitHub:</b> mỗi liên kết cho đến khi bạn hủy liên kết hoặc xóa tài khoản. Một lần đăng nhập đang diễn ra bị xóa sau 10 phút."
+    "changes": "Nếu thông báo này thay đổi, ngày ở đầu trang cũng thay đổi."
   },
   "notFound": {
     "heading": "Không tìm thấy trang",

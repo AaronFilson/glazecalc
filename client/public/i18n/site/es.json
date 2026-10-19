@@ -128,7 +128,6 @@
     "rightsAsk": "Para cualquier otra cosa, como pedir que sus datos no se usen mientras se corrige un error, u oponerse a cómo se usan, escriba a <mail>privacy@glazecalcapp.com</mail>. Es gratuito, y recibirá una respuesta en el plazo de un mes. Solo se le pedirá que demuestre que la cuenta es suya, iniciando sesión o abriendo un enlace enviado a su dirección, nunca un documento de identidad.",
     "rightsComplain": "Si no está conforme, puede presentar una reclamación ante una autoridad de protección de datos: en la UE, <edpb>la autoridad de su país</edpb>, y en el Reino Unido, la <ico>Information Commissioner’s Office</ico>.",
     "storageHeading": "Cookies y almacenamiento del navegador",
-    "storageIntro": "Glazecalc establece dos cookies, la segunda solo mientras inicia sesión con Google o GitHub, y guarda unos pocos valores pequeños en su navegador. Cada uno está ahí para algo que usted ha pedido: seguir con la sesión iniciada, iniciar sesión con Google o GitHub, o recordar una elección que hizo. Ninguno le rastrea y ninguno se comparte, así que la ley no exige pedir permiso antes, y no hay banner de cookies.",
     "storageLabel": "Cookies y almacenamiento del navegador",
     "storageName": "Nombre",
     "storagePurpose": "Para qué sirve",
@@ -181,19 +180,12 @@
       "reloadedFor": {
         "purpose": "Después de publicarse una versión nueva del sitio, qué página se recargó y cuándo, para que una página se recargue como mucho una vez por minuto.",
         "lasts": "Hasta que cierre la pestaña."
-      },
-      "oauthCookie": {
-        "purpose": "Solo mientras inicia sesión con Google o GitHub: vincula la respuesta de Google o GitHub a su navegador, para que nadie más pueda terminar su inicio de sesión ni empezar uno por usted. Los scripts de la página no pueden leerla.",
-        "lasts": "Se crea cuando pulsa «Continuar con Google» o «Continuar con GitHub», o vincula uno en la página de su cuenta. Se quita cuando termina el inicio de sesión, o al cabo de 10 minutos."
       }
     },
     "childrenHeading": "Menores",
     "children": "Glazecalc es una herramienta para ceramistas y no está dirigida a menores.",
     "changesHeading": "Cambios",
-    "changes": "Si este aviso cambia, también cambia la fecha del principio de la página.",
-    "storedProviders": "<b>Google o GitHub, si inicia sesión con uno:</b> el identificador que ese servicio le asigna (un número o código que nunca cambia), cuándo lo vinculó y cuándo inició sesión con él por última vez, y si su cuenta tiene una contraseña propia. No se guarda nada más de ese servicio: ni su nombre, ni su imagen, ni ninguna clave de su cuenta allí. Mientras inicia sesión, el servidor guarda una nota del inicio de sesión, con el correo electrónico que el servicio dice que es suyo cuando hace falta: para una cuenta nueva, donde pasa a ser el correo electrónico de su cuenta, o, cuando una cuenta de Glazecalc ya tiene ese correo electrónico, para vincularle el servicio cuando inicia sesión en esa cuenta. La nota, y el correo electrónico que contiene, se eliminan en unos 10 minutos.",
-    "providers": "<b>Iniciar sesión con Google o GitHub</b> es una elección suya, y solo ocurre cuando pulsa su botón. Su navegador va entonces a Google o GitHub, que envían a Glazecalc su identificador para usted y su correo electrónico. Cada uno es una empresa distinta, responsable de lo que comparte con ella según su propia política de privacidad. Ningún script ni imagen de ninguna de las dos se carga en las páginas de Glazecalc.",
-    "keptProviders": "<b>Google o GitHub:</b> cada vínculo hasta que lo desvincule o elimine su cuenta. Un inicio de sesión en curso se elimina al cabo de 10 minutos."
+    "changes": "Si este aviso cambia, también cambia la fecha del principio de la página."
   },
   "notFound": {
     "heading": "Página no encontrada",
