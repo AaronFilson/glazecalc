@@ -112,7 +112,7 @@ test('approves all from one app, and a token made exempt is never asked', async 
   );
 });
 
-test('asks a visitor who is not signed in to sign in first', async ({ page }) => {
+test('sends a visitor who is not signed in to sign in, then back to the change', async ({ page }) => {
   await page.goto('/confirm/AAAAAAAAAAAAAAAAAAAAAA');
-  await expect(page.locator('.signed-out')).toContainText('Sign in to Glazecalc with the account the change is for');
+  await expect(page).toHaveURL(/\/signin\?next=%2Fconfirm%2FAAAAAAAAAAAAAAAAAAAAAA$/);
 });
