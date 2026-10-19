@@ -21,7 +21,7 @@ export const DEFAULT_PAT_EXPIRY_DAYS = 30;
  * (owner decision, 2026-10-19): the choices up to it, so one forgotten in a
  * script's settings stops on its own soon.
  */
-export const WRITE_PAT_MOST_DAYS = 30;
+export const WRITE_PAT_MOST_DAYS = 90;
 /** The lifetimes a person can choose for a token with this scope. */
 export const patExpiryDays = (scope: string): number[] =>
   scope === 'data:write' ? PAT_EXPIRY_DAYS.filter((days) => days <= WRITE_PAT_MOST_DAYS) : [...PAT_EXPIRY_DAYS];

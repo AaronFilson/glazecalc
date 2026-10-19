@@ -45,7 +45,7 @@ describe('access tokens: the account page', () => {
     expect(list.body).to.include({ defaultDays: 30, most: MAX_PATS });
     expect(list.body.expiryDays).to.eql([7, 30, 90, 365]);
     expect(list.body.scopes).to.eql(['data:read', 'data:write']);
-    expect(list.body.writeExpiryDays).to.eql([7, 30]);
+    expect(list.body.writeExpiryDays).to.eql([7, 30, 90]);
     expect(list.body.tokens).to.have.length(1);
     expect(JSON.stringify(list.body)).not.to.include(res.body.token);
     expect(list.body.tokens[0]).not.to.have.property('hash');
@@ -87,7 +87,7 @@ describe('access tokens: the account page', () => {
 
   it(`makes a token that can read and change, for at most ${WRITE_PAT_MOST_DAYS} days, and says so in the email`, async () => {
     const { user, token: session, password, email } = await makeUser();
-    for (const days of [90, 365]) {
+    for (const days of [365]) {
       const long = await make(session, { name: 'Writer', scope: 'data:write', days, password });
       expect(long, String(days)).to.have.status(400);
       expect(long.body).to.include({ code: 'token-write-expiry', field: 'days' });
@@ -95,11 +95,11 @@ describe('access tokens: the account page', () => {
     }
     expect(await AccessToken.countDocuments({ userId: user._id })).to.equal(0);
 
-    const res = await make(session, { name: 'Writer', scope: 'data:write', days: 30, password });
+    const res = await make(session, { name: 'Writer', scope: 'data:write', days: 90, password });
     expect(res, JSON.stringify(res.body)).to.have.status(201);
     expect(res.body.row.scopes).to.eql(['data:write']);
     const life = new Date(res.body.row.expiresAt).getTime() - new Date(res.body.row.createdAt).getTime();
-    expect(life).to.equal(30 * DAY);
+    expect(life).to.equal(90 * DAY);
     // It changes records, and the notice says it can.
     const made = await api()
       .post('/recipe/create')

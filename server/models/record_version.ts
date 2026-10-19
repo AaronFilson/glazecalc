@@ -19,7 +19,7 @@ export const VERSIONS_KEPT = 20;
  * record's version from before an access token's changes. So a token making
  * many changes to many records cannot fill the disk with versions.
  */
-export const VERSIONS_MOST_ACCOUNT = 5000;
+export const VERSIONS_MOST_ACCOUNT = 20_000;
 
 const recordVersionSchema = new mongoose.Schema(
   {

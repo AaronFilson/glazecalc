@@ -132,14 +132,14 @@ export const tokenDeletes = limiter(60, TOKEN_DELETES_PER_HOUR, 'too-many-delete
  * Changes made with an access token (TOKEN_WRITE_LIMITS), per account,
  * whichever of its tokens is used and whether through the record routes
  * (server/lib/require_scope.ts, for every permission that writes) or the MCP
- * write tools (countTokenWrite): 30 a minute and 1,000 a day (owner decision,
+ * write tools (countTokenWrite): 60 a minute and 5,000 a day (owner decision,
  * 2026-10-19). Enough for an assistant saving a day's tests, too few for a
  * script gone wrong to bury the account's history before anyone notices: each
  * change keeps a version and writes the activity log. On top of the limits on
  * every token request (TOKEN_LIMITS, MCP_LIMITS), which still count changes
  * too. The web session is not counted.
  */
-export const TOKEN_WRITE_LIMITS = { minute: 30, day: 1000 } as const;
+export const TOKEN_WRITE_LIMITS = { minute: 60, day: 5000 } as const;
 const writesMinuteStore = new MemoryStore();
 const writesDayStore = new MemoryStore();
 const writesKey = (userId: string): string => 'token-writes:' + userId;
