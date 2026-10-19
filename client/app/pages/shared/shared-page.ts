@@ -20,6 +20,7 @@ import { UnityFormula, unityColumns } from '../recipe/unity-formula';
 import { WorkedCalculation } from '../recipe/worked-calculation';
 import { LocaleService } from '../../core/locale.service';
 import { firingWords } from '../recipe/firing-text';
+import { ConeSummaries } from '../recipe/recipe-cone-cards';
 
 /**
  * What GET /api/shared/recipe sends (server/lib/share_links.ts): the recipe,
@@ -28,7 +29,7 @@ import { firingWords } from '../recipe/firing-text';
  */
 export interface SharedRecipe extends Pick<
   Recipe,
-  'title' | 'date' | 'materials' | 'additives' | 'includeAdditives' | 'firedAt' | 'foodSurface'
+  'title' | 'date' | 'materials' | 'additives' | 'includeAdditives' | 'firedAt' | 'foodSurface' | 'coneResults'
 > {
   notes?: string[];
   borrowed?: Array<Additive & { aliases?: string[] }>;
@@ -48,7 +49,16 @@ type View = 'recipe' | 'worked';
  */
 @Component({
   selector: 'gc-shared-page',
-  imports: [DatePipe, RecipeHazards, RichText, RouterLink, TranslocoDirective, UnityFormula, WorkedCalculation],
+  imports: [
+    ConeSummaries,
+    DatePipe,
+    RecipeHazards,
+    RichText,
+    RouterLink,
+    TranslocoDirective,
+    UnityFormula,
+    WorkedCalculation
+  ],
   template: `<ng-container *transloco="let t">
     @if (recipe(); as recipe) {
       <header class="page-header">
@@ -241,6 +251,15 @@ type View = 'recipe' | 'worked';
               }
             </section>
           }
+          <!-- How it came out at each cone and atmosphere: sent only with the notes, never the logs behind it. -->
+          <gc-cone-summaries
+            class="shared-cone-summaries"
+            headingId="shared-cone-summaries-heading"
+            [level]="2"
+            [block]="recipe.firedAt"
+            [results]="recipe.coneResults"
+            [reader]="reader()"
+          />
         }
         @if (hazardSources().length) {
           <gc-recipe-hazards
@@ -463,10 +482,10 @@ export class SharedPage implements OnInit {
 
   protected readonly title = computed(() => this.recipe()?.title.trim() || translate('recipe.page.untitled'));
   private readonly locale = inject(LocaleService);
+  /** How the reader fires: their cone system and temperature scale. */
+  protected readonly reader = computed(() => ({ cones: this.locale.cones(), temperature: this.locale.temperature() }));
   /** The firing as the author stated it, with a conversion into the reader's scale marked approximate. */
-  protected readonly firing = computed(() =>
-    firingWords(this.recipe()?.firedAt, { cones: this.locale.cones(), temperature: this.locale.temperature() })
-  );
+  protected readonly firing = computed(() => firingWords(this.recipe()?.firedAt, this.reader()));
   /** The chemistry an additive borrows by name, from the records the server sent with the recipe. */
   protected readonly chemistryOf = (name: string): MaterialInput | undefined => {
     const wanted = folded(name.trim());

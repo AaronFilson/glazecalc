@@ -2,6 +2,7 @@ import { Component, OnInit, computed, inject, input, model, output, signal } fro
 import { RouterLink } from '@angular/router';
 import { TranslocoDirective, translate } from '@jsverse/transloco';
 import { FiringBlock, cleanFiring, conesBetween, conesFromLog, readsDecimalComma } from '../../../../lib/cones/firing';
+import { linkPlace } from '../../../../lib/cones/results';
 import { ApiResourceFactory } from '../../core/api-resource.service';
 import { errorMessage } from '../../core/error-message';
 import { FiringLinksService } from '../../core/firing-links.service';
@@ -18,7 +19,9 @@ import { coneText } from './firing-text';
 // once never undo each other's; a new recipe's go with it when it is saved.
 // A link to a log in the Trash is not shown, and shows again if the log is put
 // back. The cones a linked log names can fill in the tested ticks, after
-// asking when that would change them.
+// asking when that would change them. A linked log is placed at the cone and
+// atmosphere it names clearly, for the result cards (recipe-cone-cards.ts):
+// by the server for a saved recipe, here for one not saved yet.
 
 /** How long a result note can be (server/models/recipe.ts, FIRING_LINKS). */
 const RESULT_MAX = 500;
@@ -173,6 +176,8 @@ export class RecipeFirings implements OnInit {
   readonly recipeId = input<string | null>(null);
   /** A saved recipe's links as the server has them, after one changed: they are saved already. */
   readonly saved = output<FiringLink[]>();
+  /** The account's firing logs that are there, once fetched: the result cards show the links to them. */
+  readonly logsLoaded = output<Firing[]>();
 
   private readonly firings = inject(ApiResourceFactory).for<Firing>('firing');
   private readonly locale = inject(LocaleService);
@@ -216,6 +221,7 @@ export class RecipeFirings implements OnInit {
   async ngOnInit(): Promise<void> {
     try {
       this.logs.set(await this.firings.getAll());
+      this.logsLoaded.emit(this.logs());
     } catch {
       this.failed.set(true);
     } finally {
@@ -229,8 +235,10 @@ export class RecipeFirings implements OnInit {
 
   protected link(id: string): Promise<void> {
     if (!id || this.links().some((link) => link.firing === id)) return Promise.resolve();
+    const reading = { decimalComma: readsDecimalComma(typedDecimalMark(), formatLocale()) };
+    const place = linkPlace(this.logOf(id), this.block(), reading);
     return this.change(
-      (list) => [...list, { firing: id }],
+      (list) => [...list, { firing: id, ...place }],
       (recipeId) => this.linksApi.link(recipeId, id)
     );
   }
@@ -245,7 +253,16 @@ export class RecipeFirings implements OnInit {
   protected setResult(firing: string, result: string): Promise<void> {
     const text = result.trim().slice(0, RESULT_MAX);
     return this.change(
-      (list) => list.map((link) => (link.firing === firing ? { firing, ...(text && { result: text }) } : link)),
+      (list) =>
+        list.map((link) => {
+          if (link.firing !== firing) return link;
+          return {
+            firing,
+            ...(text && { result: text }),
+            ...(link.cone && { cone: link.cone }),
+            ...(link.atmosphere && { atmosphere: link.atmosphere })
+          };
+        }),
       (recipeId) => this.linksApi.setResult(recipeId, firing, text)
     );
   }

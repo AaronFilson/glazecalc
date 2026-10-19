@@ -1,6 +1,7 @@
 import type { MaterialField, UmfResult } from '../../../lib/chemistry';
 import type { FiringBand } from '../../../lib/recipe/limits';
-import type { FiringBlock } from '../../../lib/cones/firing';
+import type { Atmosphere, FiringBlock } from '../../../lib/cones/firing';
+import type { ConeResult } from '../../../lib/cones/results';
 
 /** Records the server stores per user; 'Standard' marks built-in records. */
 export interface Owned {
@@ -117,12 +118,17 @@ export interface Recipe extends Owned {
   foodSurface?: boolean | null;
   /** The firing logs it went through, each with its result. */
   firings?: FiringLink[];
+  /** What it came out like at each cone and atmosphere (lib/cones/results.js); null clears them. */
+  coneResults?: ConeResult[] | null;
 }
 
 /** A recipe's link to a firing log, by the log's id, with what came of it there. */
 export interface FiringLink {
   firing: string;
   result?: string;
+  /** The cone it was fired to there, as the firing block writes it, and the atmosphere: for the result cards. */
+  cone?: string;
+  atmosphere?: Atmosphere;
 }
 
 export interface Advice extends Owned {
