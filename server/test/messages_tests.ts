@@ -14,7 +14,8 @@ describe('messages', () => {
       wait: 'hour',
       provider: 'google',
       choices: '7, 30, 90, 365',
-      count: 2
+      count: 2,
+      skipped: 1
     };
     for (const code of Object.keys(MESSAGES) as MessageCode[]) {
       const text = textOf(code, params);

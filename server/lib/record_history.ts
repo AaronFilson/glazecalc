@@ -23,6 +23,12 @@ export const byOf = (req: Request): By => {
   return via === 'pat' || via === 'oauth' ? via : 'session';
 };
 
+/** The id of the access token (or OAuth grant) making the change, or undefined for the web session. */
+export const tokenIdOf = (req: Request): string | undefined => {
+  const access = req.access;
+  return access && access.via !== 'session' ? access.tokenId : undefined;
+};
+
 /** What a record is called, cut short: its title, or its name. Never a note's text. */
 export const titleOf = (record: Record<string, unknown>): string | undefined => {
   const title = typeof record.title === 'string' && record.title ? record.title : record.name;
@@ -48,6 +54,7 @@ export const moveToTrash = async (
   user: UserDocument,
   id: string,
   by: By,
+  tokenId?: string,
   now = new Date()
 ): Promise<{ record: Row; trashId: string } | typeof TRASH_FULL | null> => {
   const ownedBy = String(user._id);
@@ -63,7 +70,8 @@ export const moveToTrash = async (
     record,
     title: titleOf(record),
     trashedAt: now,
-    by
+    by,
+    ...(tokenId && { tokenId })
   });
   // Counted again with this entry in, so tokens trashing at the same moment cannot go past the limit.
   if (byToken && (await Trash.countDocuments({ ownedBy })) > most) {

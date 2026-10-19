@@ -23,6 +23,20 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   shows silica to alumina, boron, expansion, the number of cautions and, when a recipe has a
   firing, the cone fit. The comparison of two unity formulas moved to `lib/recipe/compare.js`, so
   the app and the server share it. English only for now.
+- **Connected apps** (`/account/apps`, docs/integrations-plan.md items 3 and 27): one page lists
+  the account's access tokens and OAuth connections with what each may do (read only, or read and
+  change), when it was made and last used, when it stops working, and how many records it made,
+  changed, moved to the Trash, put back or undid in the last 90 days. A row opens out to show its
+  recent activity (50 lines a page) and the Trash entries it moved, each with Put back, and Put all
+  back, which skips any record whose place is already taken. Revoke and Revoke all ask for a
+  confirming click; Revoke uses the same revoking as the account page. Making a token stays on the
+  account page, whose list of tokens moved here and left a link. `GET /api/connections`,
+  `GET /api/connections/:id/activity`, `GET /api/connections/:id/trash`,
+  `POST /api/connections/:id/restore-all`, `DELETE /api/connections/:id` and `DELETE
+/api/connections`: the web session only, every query the account's own. A Trash entry now
+  records which token moved it (`tokenId`, from the REST routes and the `move_to_trash` tool);
+  older entries are matched through the activity log. The privacy notice says the activity also
+  shows on Connected apps. English only for now.
 - **Chemistry against the stated cone** (docs/adr/0022-chemistry-against-the-stated-cone.md): one
   line at the top of the recipe page's limits panel says whether the glaze's chemistry fits its
   firing, the recipe's stated cone or the band chosen in the panel. It gives a note only when boron

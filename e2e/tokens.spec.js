@@ -47,7 +47,7 @@ test('makes a read-only token, shows it once, and revokes it', async ({ page, re
   await page.goto('/account');
   const section = page.locator('.tokens-section');
   await expect(section.getByRole('heading', { name: 'Access tokens' })).toBeVisible();
-  await expect(section.getByText('You have no access tokens.')).toBeVisible();
+  await expect(section.getByText('are on the Connected apps page')).toBeVisible();
   // 30 days unless chosen.
   await expect(section.getByLabel('Stops working after')).toHaveValue(/30/);
 
@@ -76,15 +76,19 @@ test('makes a read-only token, shows it once, and revokes it', async ({ page, re
   // Once "Done", it is gone from the page; the list shows its last four characters.
   await section.getByRole('button', { name: 'I have copied it' }).click();
   await expect(section.locator('#new-token')).toHaveCount(0);
-  const row = section.locator('.token-row', { hasText: 'Claude Code on my laptop' });
+  // The list, with Revoke, is on Connected apps.
+  await expect(section.locator('.token-row')).toHaveCount(0);
+  await page.goto('/account/apps');
+  const row = page.locator('.connection-row', { hasText: 'Claude Code on my laptop' });
   await expect(row).toContainText('ending ' + token.slice(-4));
   await expect(row).toContainText('Read only');
-  await expect(row).toContainText('never used');
+  await expect(row).toContainText('last used');
   await page.reload();
   await expect(page.locator('body')).not.toContainText(token);
 
   await row.getByRole('button', { name: 'Revoke Claude Code on my laptop' }).click();
-  await expect(section).toContainText('The access token was revoked.');
+  await row.getByRole('button', { name: 'Yes, revoke' }).click();
+  await expect(page.locator('.server-msg')).toContainText('The access token was revoked.');
   await expect(row).toContainText('revoked');
   await expect(row.getByRole('button', { name: /^Revoke/ })).toHaveCount(0);
   const after = await request.get(API + '/recipe/getAll', { headers: { Authorization: 'Bearer ' + token } });
@@ -120,10 +124,10 @@ test('makes a token that can read and change, for at most 90 days, and it change
   expect(removed.status()).toBe(200);
 
   await section.getByRole('button', { name: 'I have copied it' }).click();
-  const row = section.locator('.token-row', { hasText: 'Claude with changes' });
-  await expect(row).toContainText('Read and change');
   // The form is back to reading only.
   await expect(section.getByLabel('Read only')).toBeChecked();
+  await page.goto('/account/apps');
+  await expect(page.locator('.connection-row', { hasText: 'Claude with changes' })).toContainText('Read and change');
 });
 
 test('offers to revoke the tokens still working after a password change', async ({ page, request }) => {

@@ -55,6 +55,9 @@ const accessTokenSchema = new mongoose.Schema(
     name: { type: String, required: true, maxlength: 100 },
     /** The OAuth client this grant is for. */
     clientId: String,
+    /** An OAuth grant's client address and where it asked to be sent back (hosts only), shown on Connected apps. */
+    clientHost: String,
+    redirectHost: String,
     /** The token's SHA-256, in hex. An OAuth grant's tokens carry its id instead, so it may have none. */
     hash: String,
     /** Its last four characters, to tell tokens apart on the settings page. */
@@ -94,6 +97,28 @@ export const revokeAll = async (userId: string | Types.ObjectId, why: RevokedWhy
       { $set: { revokedAt: now, revokedWhy: why } }
     )
   ).modifiedCount;
+
+/**
+ * Revokes one token or grant of an account, if it is still in use; resolves
+ * with whether the row exists (so a second revoke is no error). The one path
+ * the account page and Connected apps use to revoke a single token or grant.
+ */
+export const revokeOne = async (
+  userId: string | Types.ObjectId,
+  tokenId: string | Types.ObjectId,
+  kinds: Array<'pat' | 'oauth'>,
+  why: RevokedWhy,
+  now = new Date()
+): Promise<boolean> => {
+  const row = await AccessToken.findOne({ _id: tokenId, userId, kind: { $in: kinds } })
+    .select({ revokedAt: 1 })
+    .lean();
+  if (!row) return false;
+  if (!row.revokedAt) {
+    await AccessToken.updateOne({ _id: row._id, revokedAt: null }, { $set: { revokedAt: now, revokedWhy: why } });
+  }
+  return true;
+};
 
 /** The filter for an account's personal tokens that still work: neither revoked nor expired. */
 export const workingTokens = (userId: string | Types.ObjectId, now = new Date()) => ({

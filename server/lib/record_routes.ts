@@ -34,7 +34,7 @@ import { userOf } from './jwt_auth.ts';
 import * as log from './log.ts';
 import { say } from './messages.ts';
 import * as limits from './rate_limit.ts';
-import { byOf, logActivity, moveToTrash, saveVersion, titleOf, TRASH_FULL } from './record_history.ts';
+import { byOf, logActivity, moveToTrash, saveVersion, titleOf, tokenIdOf, TRASH_FULL } from './record_history.ts';
 import requireScope from './require_scope.ts';
 import type { Area } from './scopes.ts';
 
@@ -160,7 +160,7 @@ export default function recordRoutes(
   router.delete('/delete/:id', writing, limits.tokenDeletes, async (req, res) => {
     if (!validId(req, res)) return;
     const user = userOf(req);
-    const trashed = await moveToTrash(Model, area, user, req.params.id as string, byOf(req));
+    const trashed = await moveToTrash(Model, area, user, req.params.id as string, byOf(req), tokenIdOf(req));
     if (!trashed) {
       res.status(404).json(notFound);
       return;
