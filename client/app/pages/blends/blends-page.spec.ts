@@ -323,4 +323,73 @@ describe('BlendsPage', () => {
     await settle(fixture);
     expect(print).toHaveBeenCalled();
   });
+
+  describe('Chemistry per tile', () => {
+    const open = async (fixture: { nativeElement: HTMLElement } & Parameters<typeof settle>[0]) => {
+      const details = (fixture.nativeElement as HTMLElement).querySelector('.blend-chemistry') as HTMLDetailsElement;
+      details.open = true;
+      details.dispatchEvent(new Event('toggle'));
+      await settle(fixture);
+    };
+    const cells = (root: HTMLElement) =>
+      [...root.querySelectorAll('.blend-chemistry-table tbody tr')].map((tr) =>
+        [...tr.children].map((cell) => cell.textContent?.trim())
+      );
+
+    it('is closed until opened, and works nothing out while closed', async () => {
+      const { fixture, root, pick, page } = await create(undefined, { recipe: 'cel' });
+      await pick('blend-corner-1', 'Matte');
+      const details = root.querySelector('.blend-chemistry') as HTMLDetailsElement;
+      expect(details.open).toBe(false);
+      expect(details.querySelector('summary')?.textContent?.trim()).toBe('Chemistry per tile');
+      expect(root.querySelector('.blend-chemistry-table')).toBeNull();
+      expect(page['chemistry']()).toEqual([]);
+      await open(fixture);
+      expect(root.querySelectorAll('.blend-chemistry-table tbody tr').length).toBe(page['blend']().tiles.length);
+    });
+
+    it('gives each tile its silica to alumina, boron, expansion and caution count, and no cone fit without a firing', async () => {
+      const { root, fixture, pick } = await create(undefined, { recipe: 'cel' });
+      await pick('blend-corner-1', 'Matte');
+      await pick('blend-steps', '3');
+      await open(fixture);
+      const headers = [...root.querySelectorAll('.blend-chemistry-table thead th')].map((th) => th.textContent?.trim());
+      expect(headers).toEqual(['Tile', 'Silica to alumina', 'B₂O₃', 'Expansion, ×10⁻⁶/°C', 'Cautions']);
+      const rows = cells(root);
+      expect(rows.map((r) => r[0])).toEqual(['1', '2', '3']);
+      // Silica to alumina differs between the two recipes, so down the line.
+      expect(rows[0][1]).not.toBe(rows[2][1]);
+      expect(rows[0][2]).toBe('0.00');
+      for (const row of rows) {
+        expect(row[1]).toMatch(/^\d+\.\d\d$/);
+        expect(row[3]).toMatch(/^\d+\.\d\d$/);
+        expect(row[4]).toMatch(/^\d+$/);
+      }
+      expect(root.querySelector('.blend-chemistry')?.textContent).not.toContain('follow the firing');
+    });
+
+    it('adds a cone fit column when a recipe has a firing, and says whose', async () => {
+      const fired: Recipe = { ...CELADON, firedAt: { scale: 'orton', low: '6' } };
+      const { root, fixture, pick } = await create([fired, MATTE, SHINO, EMPTY], { recipe: 'cel' });
+      await pick('blend-corner-1', 'Matte');
+      await pick('blend-steps', '3');
+      await open(fixture);
+      const headers = [...root.querySelectorAll('.blend-chemistry-table thead th')].map((th) => th.textContent?.trim());
+      expect(headers.at(-1)).toBe('Cone fit');
+      expect(root.querySelector('.blend-chemistry')?.textContent).toContain('follow the firing of recipe A');
+      for (const row of cells(root)) {
+        expect(['Nothing against it', 'Looks cooler', 'Looks hotter', 'Not judged']).toContain(row[5]);
+      }
+    });
+
+    it('scrolls inside its own box, which can be reached by keyboard', async () => {
+      const { root, fixture, pick } = await create(undefined, { recipe: 'cel' });
+      await pick('blend-corner-1', 'Matte');
+      await open(fixture);
+      const box = root.querySelector('.blend-chemistry-scroll') as HTMLElement;
+      expect(box.getAttribute('tabindex')).toBe('0');
+      expect(box.getAttribute('role')).toBe('region');
+      expect(box.querySelector('table')).not.toBeNull();
+    });
+  });
 });

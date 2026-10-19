@@ -803,6 +803,18 @@
     "saveHelp": "Tick the tiles you want to keep, in the drawing above. Each is saved as a recipe in percent.",
     "nameLabel": "Name for the saved tiles",
     "defaultName": "{titles} blend",
+    "chemistry": {
+      "heading": "Chemistry per tile",
+      "help": "Worked out from the recipes, as a guide. The fired tiles tell you what really happens.",
+      "firing": "Cautions and cone fit follow the firing of recipe {letter}.",
+      "tile": "Tile",
+      "cautions": "Cautions",
+      "coneFit": "Cone fit",
+      "fits": "Nothing against it",
+      "cooler": "Looks cooler",
+      "hotter": "Looks hotter",
+      "skipped": "Not judged"
+    },
     "chooseAll": "Choose every tile",
     "chooseNone": "Choose none",
     "save": "{count, plural, =0 {Save the tiles chosen} one {Save # tile} other {Save # tiles}}",

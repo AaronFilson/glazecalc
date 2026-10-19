@@ -8,6 +8,7 @@ export * from './analysis';
 export * from './blends';
 export * from './checks';
 export * from './cone-fit';
+export * from './compare';
 export * from './cost';
 export * from './hazards';
 export * from './lead';

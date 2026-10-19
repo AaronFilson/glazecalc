@@ -168,3 +168,38 @@ describe('Blends: mixing the corners', () => {
     expect(recipe.mixRecipes([celadon, empty], [1, 0])).to.not.equal(null);
   });
 });
+
+describe('Comparing two unity formulas (lib/recipe/compare.js)', () => {
+  const analysis = (uList: Record<string, number>, extra: object = {}) => ({
+    uList,
+    groups: { R2O: 0, RO: 1 },
+    loi: 10,
+    ...extra
+  });
+
+  it('lines up every oxide under its column, with the change, and a balance group of keys', () => {
+    const groups = recipe.compareUnity(
+      analysis({ CaO: 1, Al2O3: 0.3, SiO2: 3 }),
+      analysis({ CaO: 0.8, MgO: 0.2, Al2O3: 0.35, SiO2: 3 }, { loi: 12 })
+    );
+    expect(groups.map((g) => g.key)).to.eql(['fluxes', 'stabilizers', 'glassFormers', 'balance']);
+    expect(groups[0].rows.map((r) => [r.label, r.left, r.right, r.change === null ? null : round(r.change)])).to.eql([
+      ['CaO', 1, 0.8, -0.2],
+      ['MgO', null, 0.2, 0.2]
+    ]);
+    const balance = Object.fromEntries(groups[3].rows.map((r) => [r.key, [r.left, r.right]]));
+    expect(balance.silicaToAlumina).to.eql([10, 3 / 0.35]);
+    expect(balance.loi).to.eql([10, 12]);
+  });
+
+  it('works out expansion from the fired analysis, and has no change against a missing recipe', () => {
+    const only = recipe.compareUnity(
+      analysis({ CaO: 1, SiO2: 2, ZrO2: 0.1 }, { analysis: { CaO: 30, SiO2: 70 } }),
+      null
+    );
+    expect(only.map((g) => g.key)).to.include('wildcards');
+    expect(only[0].rows[0]).to.include({ left: 1, right: null, change: null });
+    const expands = only.at(-1)!.rows.find((r) => r.key === 'expansion')!;
+    expect(expands.left).to.be.closeTo(30 * 0.148 + 70 * 0.035, 1e-9);
+  });
+});
