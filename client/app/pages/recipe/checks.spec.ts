@@ -55,7 +55,7 @@ describe('saying what is past a limit', () => {
     expect(mid).toContain('a lot of boron for cone 6');
     // Too little boron to melt at low fire.
     const [under] = pastLimits({ lines: BASE, unity: { ...GLOSSY, B2O3: 0.3 }, celsius: 1060 });
-    expect(under).toContain('less boron (0.30) than glazes usually need at this firing (about 0.48)');
+    expect(under).toContain('less boron (0.30) than glazes usually need at this firing (about 0.49)');
   });
 
   it('says only what is new or worse than the old recipe', () => {

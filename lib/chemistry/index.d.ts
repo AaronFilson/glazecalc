@@ -139,7 +139,7 @@ export function bestFit(
 /** Orton large cones heated at 60 °C an hour: the temperature each bends at. */
 export const CONES: ReadonlyArray<{ cone: string; celsius: number }>;
 
-/** Katz's rule: at least 0.1 B2O3 in the unity formula for every 50 °C below 1300 °C. */
+/** Katz's rule: at least 0.1 B2O3 in the unity formula for every 50 °C below cone 10 (1305 °C). */
 export function boronFor(celsius: number): number;
 
 /**

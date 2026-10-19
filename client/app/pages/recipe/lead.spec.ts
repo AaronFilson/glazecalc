@@ -159,7 +159,8 @@ describe('replacing lead', () => {
     expect(materials.reduce((sum, m) => sum + Number(m.amount), 0)).toBeCloseTo(100, 0);
     const [was, now] = [unity(HONEY), unity(materials)];
     expect(now['PbO']).toBeUndefined();
-    expect(now['B2O3']).toBeCloseTo(0.48, 1);
+    // Katz's need at cone 04: 0.49, from cone 10 at 1305 °C.
+    expect(now['B2O3']).toBeCloseTo(0.49, 1);
     expect((now['K2O'] ?? 0) + (now['Na2O'] ?? 0)).toBeCloseTo(0.3, 1);
     expect(now['Al2O3']).toBeCloseTo(was['Al2O3'], 1);
     expect(now['SiO2']).toBeCloseTo(was['SiO2'], 0);
