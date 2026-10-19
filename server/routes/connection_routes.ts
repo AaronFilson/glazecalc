@@ -3,7 +3,9 @@
 // and the Trash it filled. Behind the web session only: app.ts mounts this
 // after refuseAccessTokens, so no token can list, read or revoke tokens.
 //
-//   GET    /api/connections                   { connections: [Connection] }, newest first
+//   GET    /api/connections                   { connections: [Connection], confirmChanges }, newest first
+//   PUT    /api/connections/confirm-setting   { confirmChanges: 'off' | 'removals' | 'all' }: when changes
+//                                             from apps and tokens wait for approval (docs/adr/0025)
 //   GET    /api/connections/:id/activity      what it did, newest first, 50 a page:
 //                                             ?before=<next from the last page> -> { activity, next }
 //   GET    /api/connections/:id/trash         the Trash entries it moved, newest first
@@ -19,11 +21,15 @@ import express from 'express';
 import mongoose, { type Types } from 'mongoose';
 import { notGuest } from '../lib/guest_limits.ts';
 import jwtAuth, { userOf } from '../lib/jwt_auth.ts';
+import * as accountMail from '../lib/account_mail.ts';
+import * as log from '../lib/log.ts';
+import * as mailer from '../lib/mailer.ts';
 import { say } from '../lib/messages.ts';
 import { CURRENT, LABELS, putBackEntry } from '../lib/trash_restore.ts';
 import AccessToken, { revokeAll, revokeOne } from '../models/access_token.ts';
 import Activity, { ACTIONS, ACTIVITY_DAYS } from '../models/activity.ts';
 import Trash, { TRASH_DAYS } from '../models/trash.ts';
+import User, { CONFIRM_CHANGES, type ConfirmChanges } from '../models/user.ts';
 
 const DAY = 24 * 60 * 60 * 1000;
 /** Lines of activity on a page. */
@@ -52,6 +58,8 @@ export interface Connection {
   revokedAt?: Date;
   /** Whether it works now: neither revoked nor expired. */
   working: boolean;
+  /** A personal token made so that its changes never wait for approval. */
+  noConfirm?: boolean;
   changes: ChangeCounts;
 }
 
@@ -102,10 +110,38 @@ connectionRouter.get('/', jwtAuth, notGuest, async (req, res) => {
       expiresAt: row.expiresAt,
       ...(row.revokedAt && { revokedAt: row.revokedAt }),
       working: !row.revokedAt && row.expiresAt > now,
+      ...(row.kind === 'pat' && row.noConfirm && { noConfirm: true }),
       changes: counts.get(String(row._id)) ?? noChanges()
     };
   });
-  res.status(200).json({ connections });
+  res.status(200).json({ connections, confirmChanges: userOf(req).confirmChanges ?? 'off' });
+});
+
+/** How much each choice asks: a change to a lower one is a loosening, which the owner is told about by email. */
+const STRICTNESS: Record<ConfirmChanges, number> = { off: 0, removals: 1, all: 2 };
+
+// Confirm before changes (docs/adr/0025-confirm-before-changes.md): when changes from apps and tokens
+// wait for the person's approval. The web session only, as everything here; asking less sends a notice,
+// so an asking-less that the person did not make does not go unseen.
+connectionRouter.put('/confirm-setting', jwtAuth, notGuest, express.json(), async (req, res) => {
+  const wanted = ((req.body ?? {}) as { confirmChanges?: unknown }).confirmChanges;
+  if (!CONFIRM_CHANGES.includes(wanted as ConfirmChanges)) {
+    return res.status(400).json(say('confirm-setting-invalid', undefined, { field: 'confirmChanges' }));
+  }
+  const choice = wanted as ConfirmChanges;
+  const user = userOf(req);
+  const before = (await User.findOneAndUpdate(
+    { _id: user._id },
+    { $set: { confirmChanges: choice } },
+    { returnDocument: 'before', projection: { confirmChanges: 1 } }
+  ).lean()) ?? { confirmChanges: undefined };
+  const was = before.confirmChanges ?? 'off';
+  if (STRICTNESS[choice] < STRICTNESS[was] && !user.emailUnverified && mailer.available()) {
+    accountMail
+      .sendConfirmLoosened(user.email, choice, user.preferences?.language ?? undefined)
+      .catch((err: unknown) => log.error('Could not send the confirm-changes email', { code: log.codeOf(err) }));
+  }
+  return res.status(200).json({ ...say('confirm-setting-saved'), confirmChanges: choice });
 });
 
 /** The id of one of the account's connections, or null (after sending the error) when it is not. */

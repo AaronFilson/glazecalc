@@ -23,19 +23,27 @@
 // access token those its scopes allow (server/lib/require_scope.ts), and what
 // it does is written to the activity log.
 //
+// When the account asks to confirm changes made with tokens (removals, or
+// every change; docs/adr/0025-confirm-before-changes.md), a token's create,
+// change, delete or undo waits for the person's approval and is answered 202
+// (server/lib/rest_changes.ts confirmFirst). Each is an Op, registered as
+// '<area>.create', '<area>.change', '<area>.delete' and '<area>.undo', so an
+// approved change runs the same code.
+//
 // Database errors go to the app's error handler (server/app.ts): values of the
 // wrong type are a 400, anything else a 500.
-import express, { type Request, type Response } from 'express';
+import express, { type Request } from 'express';
 import mongoose from 'mongoose';
 import RecordVersion from '../models/record_version.ts';
 import { standardSet } from './standard_library.ts';
-import { giveBack, quota, type RecordModel } from './guest_limits.ts';
+import { giveBack, makeRoom, quota, type RecordModel } from './guest_limits.ts';
 import { userOf } from './jwt_auth.ts';
 import * as log from './log.ts';
 import { say } from './messages.ts';
 import * as limits from './rate_limit.ts';
 import { byOf, logActivity, moveToTrash, saveVersion, titleOf, tokenIdOf, TRASH_FULL } from './record_history.ts';
 import requireScope from './require_scope.ts';
+import { confirmFirst, inputOf, named, registerOp, send, type Describe, type Op } from './rest_changes.ts';
 import type { Area } from './scopes.ts';
 
 export interface RecordRoutesOptions {
@@ -62,6 +70,7 @@ export interface RecordRoutesOptions {
 type Body = Record<string, unknown>;
 
 const MISSING = say('missing-information');
+const INVALID_ID = { status: 400, body: say('invalid-id') };
 
 /** Absent or empty. 0 is a value: a material's loss on ignition can be 0. */
 const missing = (value: unknown): boolean => value === undefined || value === null || value === '';
@@ -70,8 +79,8 @@ const isObject = (value: unknown): value is Body =>
   Boolean(value) && typeof value === 'object' && !Array.isArray(value);
 
 /** The body, or the object the client wrapped the record in, if it is an object. */
-const recordIn = (req: Request, wrapper?: string): Body | null => {
-  const body: unknown = wrapper ? ((req.body ?? {}) as Body)[wrapper] : req.body;
+const recordIn = (given: unknown, wrapper?: string): Body | null => {
+  const body: unknown = wrapper ? ((given ?? {}) as Body)[wrapper] : given;
   return isObject(body) ? body : null;
 };
 
@@ -81,11 +90,8 @@ const pick = (source: Body, fields: string[]): Body =>
 /** A version's fields, to replace a record's with: the record keeps its own _id and owner. */
 const earlierOf = ({ _id: _id, ownedBy: _owner, ...earlier }: Body): Body => earlier;
 
-const validId = (req: Request, res: Response): boolean => {
-  if (mongoose.isValidObjectId(req.params.id)) return true;
-  res.status(400).json(say('invalid-id'));
-  return false;
-};
+/** Who is asking: the account, and how it got in. */
+const whoIs = (req: Request) => ({ user: userOf(req), access: req.access });
 
 export default function recordRoutes(
   Model: RecordModel,
@@ -98,15 +104,123 @@ export default function recordRoutes(
   const jsonParser = express.json();
   const notFound = say('record-not-found', { label });
 
-  router.post('/create', writing, quota(Model, label), jsonParser, async (req, res) => {
-    const source = recordIn(req, wrapper.create) ?? {};
-    if (required.some((field) => missing(source[field]))) {
-      res.status(400).json(MISSING);
-      return;
+  const create: Op = async (who, { body }) => {
+    const source = recordIn(body, wrapper.create) ?? {};
+    if (required.some((field) => missing(source[field]))) return { status: 400, body: MISSING };
+    const saved = await Model.create({ ...pick(source, fields), ownedBy: String(who.user._id) });
+    await logActivity(who, 'create', area, saved.toObject());
+    return { status: 200, body: saved };
+  };
+
+  const change: Op = async (who, { params, body }) => {
+    if (!mongoose.isValidObjectId(params.id)) return INVALID_ID;
+    const source = recordIn(body, wrapper.change);
+    if (!source) return { status: 400, body: MISSING };
+    const changes = pick(source, fields);
+    if (!Object.keys(changes).length) return { status: 400, body: say('nothing-to-update') };
+    try {
+      // The record as it was, found and changed in one step, so the version kept is the one changed.
+      const before = await Model.findOneAndUpdate(
+        { _id: params.id, ownedBy: String(who.user._id) },
+        { $set: changes },
+        { runValidators: true, returnDocument: 'before', lean: true }
+      );
+      if (!before) return { status: 404, body: notFound };
+      await saveVersion(area, before, byOf(who));
+      await logActivity(who, 'change', area, { ...before, ...changes });
+      return { status: 200, body: say('record-updated', { label }) };
+    } catch (err) {
+      if (err instanceof Error && (err.name === 'ValidationError' || err.name === 'CastError')) {
+        return { status: 400, body: say('record-invalid', { label }) };
+      }
+      throw err;
     }
-    const saved = await Model.create({ ...pick(source, fields), ownedBy: userOf(req).id });
-    await logActivity(req, 'create', area, saved.toObject());
-    res.status(200).json(saved);
+  };
+
+  const remove: Op = async (who, { params }) => {
+    if (!mongoose.isValidObjectId(params.id)) return INVALID_ID;
+    const id = params.id!;
+    const user = who.user;
+    const trashed = await moveToTrash(Model, area, user, id, byOf(who), tokenIdOf(who));
+    if (!trashed) return { status: 404, body: notFound };
+    if (trashed === TRASH_FULL) return { status: 409, body: say('trash-full') };
+    // A failure here is logged and the delete still answers: the record is in the Trash already,
+    // and putting it back stops anything it had (its share link) on its own.
+    await onTrash?.(id, String(user._id)).catch((err: unknown) =>
+      log.error('Could not finish moving a record to the Trash', { area, code: log.codeOf(err) })
+    );
+    await logActivity(who, 'trash', area, trashed.record);
+    // A trial gets the place back for another record; the Trash does not count.
+    if (user.guest) await giveBack(user._id, Model);
+    return { status: 200, body: { ...say('record-trashed', { label }), trashId: trashed.trashId } };
+  };
+
+  const undo: Op = async (who, { params }) => {
+    if (!mongoose.isValidObjectId(params.id)) return INVALID_ID;
+    const ownedBy = String(who.user._id);
+    const version = await RecordVersion.findOne({ ownedBy, fromCollection: area, recordId: params.id }).sort({
+      savedAt: -1,
+      _id: -1
+    });
+    if (!version) return { status: 404, body: say('nothing-to-undo') };
+    const filter = { _id: params.id, ownedBy };
+    const replacement = { ...earlierOf(version.record as Body), ownedBy };
+    // The record as it was, found and replaced in one step, so the version kept is the one replaced.
+    const before = await Model.findOneAndReplace(filter, replacement, { returnDocument: 'before', lean: true });
+    // In the Trash, or gone: the version stays, for when it is put back.
+    if (!before) return { status: 404, body: notFound };
+    // What the undo replaced is kept in place of the version it put back, so the undo can be undone.
+    await saveVersion(area, before, byOf(who), { replacing: version._id });
+    const restored = (await Model.findOne(filter).lean()) ?? { ...replacement, _id: before._id };
+    await logActivity(who, 'undo', area, restored);
+    return { status: 200, body: { ...say('record-undone', { label }), record: restored } };
+  };
+
+  // A confirmed create needs room under the account's limit then, as quota checks it now.
+  registerOp(area + '.create', async (who, input) => {
+    const refusal = await makeRoom(who.user, Model, label);
+    return refusal ? { status: 403, body: refusal } : create(who, input);
+  });
+  registerOp(area + '.change', change);
+  registerOp(area + '.delete', remove, { trashes: true });
+  registerOp(area + '.undo', undo);
+
+  /** The title of one of the account's records of this kind ('' for none), or null when there is no such record. */
+  const titleIn = async (id: unknown, userId: unknown): Promise<string | null> => {
+    if (!mongoose.isValidObjectId(id)) return null;
+    const record = (await Model.findOne({ _id: id, ownedBy: String(userId) }).lean()) as Body | null;
+    return record ? (titleOf(record) ?? '') : null;
+  };
+  /** A change to one record: what it is, and the record, which must not change while it waits. */
+  const about =
+    (code: string, extra: (req: Request) => Record<string, string> = () => ({})): Describe =>
+    async (req, who) => {
+      const title = await titleIn(req.params.id, who.user._id);
+      if (title === null) return null;
+      return {
+        summary: { code, params: { ...named(label, title), ...extra(req) } },
+        base: { kind: 'record', area, id: String(req.params.id) }
+      };
+    };
+  const asking = {
+    create: confirmFirst(area + '.create', {
+      removal: false,
+      describe: async (req) => ({
+        summary: { code: 'pending-create', params: named(label, titleOf(recordIn(req.body, wrapper.create) ?? {})) }
+      })
+    }),
+    change: confirmFirst(area + '.change', {
+      removal: false,
+      describe: about('pending-change', (req) => ({
+        fields: Object.keys(pick(recordIn(req.body, wrapper.change) ?? {}, fields)).join(', ')
+      }))
+    }),
+    remove: confirmFirst(area + '.delete', { removal: true, describe: about('pending-trash') }),
+    undo: confirmFirst(area + '.undo', { removal: false, describe: about('pending-undo') })
+  };
+
+  router.post('/create', writing, quota(Model, label), jsonParser, asking.create, async (req, res) => {
+    send(res, await create(whoIs(req), inputOf(req)));
   });
 
   router.get('/getAll', reading, async (req, res) => {
@@ -122,66 +236,19 @@ export default function recordRoutes(
     res.status(200).json(newest);
   });
 
-  router.put('/change/:id', writing, jsonParser, async (req, res) => {
-    if (!validId(req, res)) return;
-    const source = recordIn(req, wrapper.change);
-    if (!source) {
-      res.status(400).json(MISSING);
-      return;
-    }
-    const changes = pick(source, fields);
-    if (!Object.keys(changes).length) {
-      res.status(400).json(say('nothing-to-update'));
-      return;
-    }
-    try {
-      // The record as it was, found and changed in one step, so the version kept is the one changed.
-      const before = await Model.findOneAndUpdate(
-        { _id: req.params.id, ownedBy: userOf(req).id },
-        { $set: changes },
-        { runValidators: true, returnDocument: 'before', lean: true }
-      );
-      if (!before) {
-        res.status(404).json(notFound);
-        return;
-      }
-      await saveVersion(area, before, byOf(req));
-      await logActivity(req, 'change', area, { ...before, ...changes });
-      res.status(200).json(say('record-updated', { label }));
-    } catch (err) {
-      if (err instanceof Error && (err.name === 'ValidationError' || err.name === 'CastError')) {
-        res.status(400).json(say('record-invalid', { label }));
-        return;
-      }
-      throw err;
-    }
+  router.put('/change/:id', writing, jsonParser, asking.change, async (req, res) => {
+    send(res, await change(whoIs(req), inputOf(req)));
   });
 
-  router.delete('/delete/:id', writing, limits.tokenDeletes, async (req, res) => {
-    if (!validId(req, res)) return;
-    const user = userOf(req);
-    const trashed = await moveToTrash(Model, area, user, req.params.id as string, byOf(req), tokenIdOf(req));
-    if (!trashed) {
-      res.status(404).json(notFound);
-      return;
-    }
-    if (trashed === TRASH_FULL) {
-      res.status(409).json(say('trash-full'));
-      return;
-    }
-    // A failure here is logged and the delete still answers: the record is in the Trash already,
-    // and putting it back stops anything it had (its share link) on its own.
-    await onTrash?.(req.params.id as string, String(user._id)).catch((err: unknown) =>
-      log.error('Could not finish moving a record to the Trash', { area, code: log.codeOf(err) })
-    );
-    await logActivity(req, 'trash', area, trashed.record);
-    // A trial gets the place back for another record; the Trash does not count.
-    if (user.guest) await giveBack(user._id, Model);
-    res.status(200).json({ ...say('record-trashed', { label }), trashId: trashed.trashId });
+  router.delete('/delete/:id', writing, limits.tokenDeletes, asking.remove, async (req, res) => {
+    send(res, await remove(whoIs(req), inputOf(req)));
   });
 
   router.get('/versions/:id', reading, async (req, res) => {
-    if (!validId(req, res)) return;
+    if (!mongoose.isValidObjectId(req.params.id)) {
+      res.status(400).json(say('invalid-id'));
+      return;
+    }
     const versions = await RecordVersion.find({
       ownedBy: userOf(req).id,
       fromCollection: area,
@@ -196,31 +263,8 @@ export default function recordRoutes(
       .json(versions.map(({ _id, savedAt, by, record }) => ({ _id, savedAt, by, title: titleOf(record as Body) })));
   });
 
-  router.post('/undo/:id', writing, async (req, res) => {
-    if (!validId(req, res)) return;
-    const ownedBy = userOf(req).id as string;
-    const version = await RecordVersion.findOne({ ownedBy, fromCollection: area, recordId: req.params.id }).sort({
-      savedAt: -1,
-      _id: -1
-    });
-    if (!version) {
-      res.status(404).json(say('nothing-to-undo'));
-      return;
-    }
-    const filter = { _id: req.params.id, ownedBy };
-    const replacement = { ...earlierOf(version.record as Body), ownedBy };
-    // The record as it was, found and replaced in one step, so the version kept is the one replaced.
-    const before = await Model.findOneAndReplace(filter, replacement, { returnDocument: 'before', lean: true });
-    if (!before) {
-      // In the Trash, or gone: the version stays, for when it is put back.
-      res.status(404).json(notFound);
-      return;
-    }
-    // What the undo replaced is kept in place of the version it put back, so the undo can be undone.
-    await saveVersion(area, before, byOf(req), { replacing: version._id });
-    const restored = (await Model.findOne(filter).lean()) ?? { ...replacement, _id: before._id };
-    await logActivity(req, 'undo', area, restored);
-    res.status(200).json({ ...say('record-undone', { label }), record: restored });
+  router.post('/undo/:id', writing, asking.undo, async (req, res) => {
+    send(res, await undo(whoIs(req), inputOf(req)));
   });
 
   if (standard) {

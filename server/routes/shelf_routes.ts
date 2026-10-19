@@ -12,11 +12,16 @@
 //                                  account's limits on changes made with tokens, and a token's are written to the
 //                                  activity log ('change' and 'undo' on 'shelf'). The list before the last change
 //                                  is User.shelfPrevious (exported and deleted with the account).
-import express, { type Request, type Response } from 'express';
+//
+// When the account asks to confirm changes made with tokens (docs/adr/0025-confirm-before-changes.md), a
+// token's remove (a removal), or any of the three (every change), waits for the person's approval and is
+// answered 202 (server/lib/rest_changes.ts); 'shelf.add', 'shelf.remove' and 'shelf.undo' run the same code.
+import express, { type Request } from 'express';
 import jwtAuth, { userOf } from '../lib/jwt_auth.ts';
 import { say } from '../lib/messages.ts';
 import { logActivity } from '../lib/record_history.ts';
 import requireScope from '../lib/require_scope.ts';
+import { confirmFirst, inputOf, registerOp, send, type Op, type Reply, type Who } from '../lib/rest_changes.ts';
 import * as shelves from '../lib/shelf.ts';
 import { SHELF_KEY_LONGEST, SHELF_MOST } from '../models/user.ts';
 
@@ -51,47 +56,83 @@ shelfRouter.put('/', jwtAuth, express.json(), async (req, res) => {
 
 /**
  * The keys a body names: { key } as it is, or { name }, a material of the
- * account or the library. Sends the answer and resolves with null when it
- * names neither or no such material.
+ * account or the library; or what to answer when it names neither or no such
+ * material.
  */
-const keysNamed = async (req: Request, res: Response): Promise<{ name: string; keys: string[] } | null> => {
-  const { key, name } = (req.body ?? {}) as { key?: unknown; name?: unknown };
+const keysNamed = async (who: Who, body: unknown): Promise<{ name: string; keys: string[] } | Reply> => {
+  const { key, name } = (body ?? {}) as { key?: unknown; name?: unknown };
   if (typeof key === 'string' && key && key.length <= KEY_LONGEST) return { name: key, keys: [key] };
   if (typeof name === 'string' && name.trim() && name.length <= KEY_LONGEST - 5) {
-    const { keys } = await shelves.shelfKeys(String(userOf(req)._id), [name]);
+    const { keys } = await shelves.shelfKeys(String(who.user._id), [name]);
     if (keys[0]) return keys[0];
-    res.status(404).json(say('shelf-material-unknown'));
-    return null;
+    return { status: 404, body: say('shelf-material-unknown') };
   }
-  res.status(400).json(say('missing-information'));
-  return null;
+  return { status: 400, body: say('missing-information') };
 };
 
 // One material at a time, for the web session or a token that can change the
 // shelf (shelf:write); an account's limits on changes made with tokens apply.
 // A token's change is written to the activity log, and the list it replaced is
 // kept for one Undo.
-shelfRouter.post('/add', requireScope('shelf:write'), express.json(), async (req, res) => {
-  const named = await keysNamed(req, res);
-  if (!named) return;
-  const done = await shelves.addKeys(String(userOf(req)._id), [named.keys[0]!]);
-  if (done === 'full') return res.status(409).json(say('shelf-full', { most: SHELF_MOST }));
-  if (done.changed) await logActivity(req, 'change', 'shelf', { name: named.name });
-  return res.status(200).json(done);
-});
+const add: Op = async (who, { body }) => {
+  const named = await keysNamed(who, body);
+  if ('status' in named) return named;
+  const done = await shelves.addKeys(String(who.user._id), [named.keys[0]!]);
+  if (done === 'full') return { status: 409, body: say('shelf-full', { most: SHELF_MOST }) };
+  if (done.changed) await logActivity(who, 'change', 'shelf', { name: named.name });
+  return { status: 200, body: done };
+};
 
-shelfRouter.post('/remove', requireScope('shelf:write'), express.json(), async (req, res) => {
-  const named = await keysNamed(req, res);
-  if (!named) return;
-  const done = await shelves.removeKeys(String(userOf(req)._id), named.keys);
-  if (done.changed) await logActivity(req, 'change', 'shelf', { name: named.name });
-  return res.status(200).json(done);
-});
+const remove: Op = async (who, { body }) => {
+  const named = await keysNamed(who, body);
+  if ('status' in named) return named;
+  const done = await shelves.removeKeys(String(who.user._id), named.keys);
+  if (done.changed) await logActivity(who, 'change', 'shelf', { name: named.name });
+  return { status: 200, body: done };
+};
 
 // Puts back the list the last change replaced; one step, then it is spent.
-shelfRouter.post('/undo', requireScope('shelf:write'), async (req, res) => {
-  const shelf = await shelves.undoShelf(String(userOf(req)._id));
-  if (!shelf) return res.status(409).json(say('shelf-nothing-to-undo'));
-  await logActivity(req, 'undo', 'shelf', { name: 'Shelf' });
-  return res.status(200).json({ shelf, changed: true });
+const undo: Op = async (who) => {
+  const shelf = await shelves.undoShelf(String(who.user._id));
+  if (!shelf) return { status: 409, body: say('shelf-nothing-to-undo') };
+  await logActivity(who, 'undo', 'shelf', { name: 'Shelf' });
+  return { status: 200, body: { shelf, changed: true } };
+};
+
+registerOp('shelf.add', add);
+registerOp('shelf.remove', remove);
+registerOp('shelf.undo', undo);
+
+/** The material a body names, as the change's summary says it. */
+const nameIn = (req: Request): string => {
+  const { key, name } = (req.body ?? {}) as { key?: unknown; name?: unknown };
+  return typeof name === 'string' ? name.trim() : typeof key === 'string' ? key : '';
+};
+const asking = {
+  add: confirmFirst('shelf.add', {
+    removal: false,
+    describe: async (req) => ({ summary: { code: 'pending-shelf-add', params: { names: nameIn(req) } } })
+  }),
+  remove: confirmFirst('shelf.remove', {
+    removal: true,
+    describe: async (req) => ({ summary: { code: 'pending-shelf-remove', params: { names: nameIn(req) } } })
+  }),
+  // An undo must put back the shelf the person saw when they approved it.
+  undo: confirmFirst('shelf.undo', {
+    removal: false,
+    describe: async () => ({ summary: { code: 'pending-shelf-undo', params: {} }, base: { kind: 'shelf' } })
+  })
+};
+const whoIs = (req: Request): Who => ({ user: userOf(req), access: req.access });
+
+shelfRouter.post('/add', requireScope('shelf:write'), express.json(), asking.add, async (req, res) => {
+  send(res, await add(whoIs(req), inputOf(req)));
+});
+
+shelfRouter.post('/remove', requireScope('shelf:write'), express.json(), asking.remove, async (req, res) => {
+  send(res, await remove(whoIs(req), inputOf(req)));
+});
+
+shelfRouter.post('/undo', requireScope('shelf:write'), asking.undo, async (req, res) => {
+  send(res, await undo(whoIs(req), inputOf(req)));
 });

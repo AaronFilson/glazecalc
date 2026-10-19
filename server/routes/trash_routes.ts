@@ -10,7 +10,10 @@
 //   DELETE /api/trash/empty        deletes everything in it for good
 //
 // An access token can look and put back (trash:read, trash:write); deleting
-// for good is only done signed in on the website.
+// for good is only done signed in on the website. When the account asks to
+// confirm every change (docs/adr/0025-confirm-before-changes.md), a token's
+// put back waits for the person's approval and is answered 202
+// (server/lib/rest_changes.ts); 'trash.restore' runs the same code.
 import express from 'express';
 import mongoose from 'mongoose';
 import { pullFiringLinks } from '../lib/firing_links.ts';
@@ -18,6 +21,7 @@ import jwtAuth, { userOf } from '../lib/jwt_auth.ts';
 import { say } from '../lib/messages.ts';
 import { logActivity } from '../lib/record_history.ts';
 import requireScope from '../lib/require_scope.ts';
+import { confirmFirst, inputOf, named, registerOp, send, type Op } from '../lib/rest_changes.ts';
 import { CURRENT, LABELS, putBackEntry } from '../lib/trash_restore.ts';
 import RecordVersion from '../models/record_version.ts';
 import Trash, { TRASH_DAYS } from '../models/trash.ts';
@@ -49,18 +53,40 @@ trashRouter.get('/getAll', requireScope('trash:read'), async (req, res) => {
   );
 });
 
-trashRouter.post('/restore/:id', requireScope('trash:write'), async (req, res) => {
-  if (!validId(req.params.id)) return res.status(400).json(say('invalid-id'));
-  const result = await putBackEntry(userOf(req), req.params.id);
-  if (result.status === 'missing') return res.status(404).json(NOT_FOUND);
-  if (result.status === 'refused') return res.status(403).json(result.refusal);
-  if (result.status === 'conflict') return res.status(409).json(say('trash-restored-already'));
-  await logActivity(req, 'restore', result.fromCollection, result.record);
-  return res.status(200).json({
-    ...say('trash-restored', { label: LABELS[result.fromCollection] }),
-    fromCollection: result.fromCollection,
-    record: result.record
-  });
+const restore: Op = async (who, { params }) => {
+  if (!validId(params.id)) return { status: 400, body: say('invalid-id') };
+  const result = await putBackEntry(who.user, params.id);
+  if (result.status === 'missing') return { status: 404, body: NOT_FOUND };
+  if (result.status === 'refused') return { status: 403, body: result.refusal };
+  if (result.status === 'conflict') return { status: 409, body: say('trash-restored-already') };
+  await logActivity(who, 'restore', result.fromCollection, result.record);
+  return {
+    status: 200,
+    body: {
+      ...say('trash-restored', { label: LABELS[result.fromCollection] }),
+      fromCollection: result.fromCollection,
+      record: result.record
+    }
+  };
+};
+registerOp('trash.restore', restore);
+
+const askToRestore = confirmFirst('trash.restore', {
+  removal: false,
+  describe: async (req, who) => {
+    if (!validId(req.params.id)) return null;
+    const entry = await Trash.findOne({ _id: req.params.id, ownedBy: String(who.user._id), ...CURRENT })
+      .select({ fromCollection: 1, title: 1 })
+      .lean();
+    if (!entry) return null;
+    return {
+      summary: { code: 'pending-restore', params: named(LABELS[entry.fromCollection] ?? 'other', entry.title ?? '') }
+    };
+  }
+});
+
+trashRouter.post('/restore/:id', requireScope('trash:write'), askToRestore, async (req, res) => {
+  send(res, await restore({ user: userOf(req), access: req.access }, inputOf(req)));
 });
 
 trashRouter.delete('/delete/:id', jwtAuth, async (req, res) => {

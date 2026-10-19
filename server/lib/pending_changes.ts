@@ -184,7 +184,10 @@ export interface Ask {
  * Keeps a change to wait for the person, and resolves with its id and the
  * address of its page. TooManyWaiting when MOST_WAITING are waiting already.
  */
-export const askToConfirm = async (ask: Ask, now = new Date()): Promise<{ id: string; url: string; expiresAt: Date }> => {
+export const askToConfirm = async (
+  ask: Ask,
+  now = new Date()
+): Promise<{ id: string; url: string; expiresAt: Date }> => {
   const waiting = await PendingChange.countDocuments({
     userId: ask.userId,
     status: 'pending',

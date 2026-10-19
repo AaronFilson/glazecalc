@@ -221,7 +221,8 @@ export const MESSAGES = {
     'Nothing changed yet. This account asks to approve changes made with access tokens: the person can approve this one on the Glazecalc website, at the address given, within {minutes, plural, one {# minute} other {# minutes}}, and it is made then. GET /api/pending-changes/ and its pendingId, with this token, says what came of it.',
   'pending-too-many':
     'Nothing was changed: {most} changes are already waiting for approval on this account. The person can approve or decline those first.',
-  'pending-not-found': 'There is no change waiting at this address. It may have been decided already, or waited too long.',
+  'pending-not-found':
+    'There is no change waiting at this address. It may have been decided already, or waited too long.',
   'pending-waiting': 'This change is waiting for the person to approve it.',
   'pending-declined': 'Nothing was changed: the person did not approve this change.',
   'pending-token-gone':

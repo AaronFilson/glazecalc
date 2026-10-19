@@ -6730,3 +6730,49 @@ export const sendTokenExpiring = (
   token: { name: string; expiresAt: Date },
   language?: string
 ): Promise<void> => sendTokenMail(TOKEN_EXPIRING, to, token, language);
+
+/**
+ * Sent when the account asks less before changes from apps and access tokens
+ * are made (docs/adr/0025-confirm-before-changes.md): {account}, {choice},
+ * {page}, {forgot} and {app}. English only so far: the next translation wave
+ * adds the others.
+ */
+export const CONFIRM_LOOSENED: Record<string, Email> = {
+  en: {
+    subject: 'Glazecalc now asks less before apps change your records',
+    text:
+      'The Glazecalc account {account} was just set to ask for approval {choice}.\n\n' +
+      'If this was you, there is nothing else to do. You can see and change it on Connected apps at {page}\n\n' +
+      'If not, set it back there, revoke any app or token you do not know, and reset your password right away at {forgot}\n' +
+      '\n-- \nGlazecalc, {app}\n'
+  }
+};
+
+/** How CONFIRM_LOOSENED names each choice it can be loosened to. */
+export const CONFIRM_CHOICES: Record<string, Record<'off' | 'removals', string>> = {
+  en: {
+    off: 'never: changes from apps and access tokens are made at once',
+    removals:
+      'only before a removal: moving a record to the Trash, or taking a material off the materials on hand. Other changes from apps and access tokens are made at once'
+  }
+};
+
+export const sendConfirmLoosened = (
+  to: string,
+  choice: 'off' | 'removals' | 'all',
+  language?: string
+): Promise<void> => {
+  const email = inLanguage(CONFIRM_LOOSENED, language);
+  const choices = (language && CONFIRM_LOOSENED[language] && CONFIRM_CHOICES[language]) || CONFIRM_CHOICES['en']!;
+  return mailer.send({
+    to,
+    subject: email.subject,
+    text: fill(email.text, {
+      account: to,
+      choice: choice === 'all' ? '' : choices[choice],
+      page: pageIn(language, '/account/apps'),
+      forgot: pageIn(language, '/forgot'),
+      app: mailer.appUrl()
+    })
+  });
+};

@@ -37,6 +37,7 @@ import {
   type RecipeLine
 } from '../common.ts';
 import { findById, findMaterial, nameKey, oxidesOf } from '../library.ts';
+import { confirmSettingOf } from '../../lib/pending_changes.ts';
 import { settingsOf } from '../settings.ts';
 import { analysisOf, checksOf, coneFitOut, firingBlockOf, matchOut } from './public.ts';
 
@@ -488,7 +489,7 @@ export const registerAccountTools = (server: McpServer, caller: Caller): void =>
       {
         title: 'My settings',
         description:
-          'Your Glazecalc settings that matter when talking about glazes: region, temperature scale, cones, language, weight unit, whether lead may be suggested, the limit set recipes are checked against, and the currency your prices are in (never the prices).',
+          'Your Glazecalc settings that matter when talking about glazes: region, temperature scale, cones, language, weight unit, whether lead may be suggested, the limit set recipes are checked against, the currency your prices are in (never the prices), and whether changes made by assistants wait for your approval on the website (confirmChanges: off, removals or all; it can be changed only there).',
         inputSchema: z.object({}),
         annotations: READ_ONLY
       },
@@ -504,7 +505,9 @@ export const registerAccountTools = (server: McpServer, caller: Caller): void =>
             lead: pick('lead'),
             limitSet: pick('limitSet'),
             // '' follows the region (lib/regions currencyFor).
-            currency: pick('currency')
+            currency: pick('currency'),
+            // Read only: set on Connected apps with the web session (docs/adr/0025). Failing closed, as the tools do.
+            confirmChanges: await confirmSettingOf(userId)
           });
         })
     );

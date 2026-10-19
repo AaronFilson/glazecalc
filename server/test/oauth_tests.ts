@@ -9,6 +9,7 @@ import * as limits from '../lib/rate_limit.ts';
 import AccessToken, { OAUTH_REFRESH_DAYS, OAUTH_WRITE_DAYS, revokeOne } from '../models/access_token.ts';
 import Activity from '../models/activity.ts';
 import Note from '../models/note.ts';
+import PendingChange from '../models/pending_change.ts';
 import User from '../models/user.ts';
 import { DCR_IDLE_DAYS, DCR_UNUSED_DAYS, OAuthRecord, recordKey } from '../oauth/adapter.ts';
 import {
@@ -696,6 +697,32 @@ describe('OAuth: the authorization server', function () {
     let clientId: string;
     before(async () => {
       clientId = await registered();
+    });
+
+    it('asks the person before an app that may change records makes a change, when the account says so (ADR 0025)', async () => {
+      const { session, user } = await person();
+      const { tokens, row } = await connect(clientId, session, { scope: 'data:read data:write', write: true });
+      await api()
+        .put('/connections/confirm-setting')
+        .set('Authorization', 'Bearer ' + session)
+        .send({ confirmChanges: 'all' });
+      const asked = await rpc(
+        'tools/call',
+        { name: 'add_notebook_entry', arguments: { content: 'From the app', title: 'Via OAuth' } },
+        tokens.access_token
+      );
+      const text = asked.body.result.content[0].text as string;
+      expect(asked.body.result.isError, text).to.equal(true);
+      const id = /\/confirm\/([\w-]+)/.exec(text)![1]!;
+      const waiting = await PendingChange.findById(id).lean();
+      expect(waiting).to.include({ via: 'oauth', client: row.name });
+      expect(String(waiting!.tokenId)).to.equal(String(row._id));
+      expect(await Note.countDocuments({ ownedBy: String(user._id) })).to.equal(0);
+      const approved = await api()
+        .post('/pending-changes/' + id + '/approve')
+        .set('Authorization', 'Bearer ' + session);
+      expect(approved.body.status).to.equal('done');
+      expect(await Note.countDocuments({ ownedBy: String(user._id), title: 'Via OAuth' })).to.equal(1);
     });
 
     it('gives opaque access tokens for an hour, stored only as hashes', async () => {

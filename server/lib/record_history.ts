@@ -18,13 +18,13 @@ type By = 'session' | 'pat' | 'oauth';
 const DAY = 24 * 60 * 60 * 1000;
 
 /** Who is making the change: the web session, or the kind of access token. */
-export const byOf = (req: Request): By => {
+export const byOf = (req: Pick<Request, 'access'>): By => {
   const via = req.access?.via;
   return via === 'pat' || via === 'oauth' ? via : 'session';
 };
 
 /** The id of the access token (or OAuth grant) making the change, or undefined for the web session. */
-export const tokenIdOf = (req: Request): string | undefined => {
+export const tokenIdOf = (req: Pick<Request, 'access'>): string | undefined => {
   const access = req.access;
   return access && access.via !== 'session' ? access.tokenId : undefined;
 };
@@ -261,7 +261,7 @@ export const logActivityBy = async (
 
 /** Writes what an access token did to the activity log (logActivityBy); nothing for the web session. */
 export const logActivity = async (
-  req: Request,
+  req: Pick<Request, 'access' | 'user'>,
   action: ActivityAction,
   kind: string,
   record: Record<string, unknown> & { _id?: Types.ObjectId | string }

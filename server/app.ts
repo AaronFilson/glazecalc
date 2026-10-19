@@ -22,6 +22,7 @@ import tokenRoutes from './routes/token_routes.ts';
 import records from './routes/records.ts';
 import { privateHeaders, sharedRouter, shareRouter } from './routes/share_routes.ts';
 import shelfRoutes from './routes/shelf_routes.ts';
+import pendingChangeRoutes from './routes/pending_change_routes.ts';
 import userRoutes from './routes/user_routes.ts';
 import mcpRouter, { metadataRouter } from './mcp/index.ts';
 import connectRouter from './oauth/interactions.ts';
@@ -107,6 +108,9 @@ api.get('/health', (req, res) => {
 for (const [name, router] of Object.entries(records)) api.use('/' + name, router);
 // And /shelf: reading it and changing one material at a time (routes/shelf_routes.ts); its PUT is the session's.
 api.use('/shelf', shelfRoutes);
+// Changes waiting for the person's approval (docs/adr/0025): the token that asked may read what came of
+// one; approving and declining are the web session's alone (routes/pending_change_routes.ts).
+api.use('/pending-changes', pendingChangeRoutes);
 // Nothing below takes an access token: the account, the password, signing in
 // and out, two-step sign-in, the export (default deny, docs/integrations-plan.md
 // item 5). A route that should take one goes above, behind requireScope.

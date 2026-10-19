@@ -740,7 +740,9 @@ const answerOf = (outcome: Outcome): CallToolResult => {
   const reply = outcome.reply as Partial<CallToolResult> & { code?: string };
   if (reply && Array.isArray(reply.content)) return reply as CallToolResult;
   const code = typeof reply?.code === 'string' ? reply.code : 'pending-failed';
-  return fail(textOf((['pending-token-gone', 'pending-conflict'].includes(code) ? code : 'pending-failed') as MessageCode));
+  return fail(
+    textOf((['pending-token-gone', 'pending-conflict'].includes(code) ? code : 'pending-failed') as MessageCode)
+  );
 };
 
 export const registerWriteTools = (server: McpServer, caller: Caller): void => {
@@ -828,8 +830,9 @@ export const registerWriteTools = (server: McpServer, caller: Caller): void => {
       const url = confirmUrl(state.pendingId, user?.preferences?.language);
       if (state.round >= MOST_ROUNDS) return fail(approveAt(url));
       const waiting = await findForUser(state.pendingId, userId);
-      const { mode: _mode, round, ...same } = state;
-      return ask(same, waiting?.summary ?? { code: 'pending-waiting', params: {} }, url, 'all', ctx, round + 1);
+      const { pendingId, argsDigest } = state;
+      const same = { pendingId, userId, tokenId, tool, argsDigest };
+      return ask(same, waiting?.summary ?? { code: 'pending-waiting', params: {} }, url, 'all', ctx, state.round + 1);
     }
     return answerOf(outcome);
   };

@@ -4,7 +4,7 @@
 //
 //   GET    /api/tokens      the account's personal tokens, newest first, and the choices for a new one:
 //                           { tokens: [TokenRow], expiryDays, writeExpiryDays, defaultDays, most, scopes }
-//   POST   /api/tokens      { name, days, scope?, password, and with two-step sign-in on a current
+//   POST   /api/tokens      { name, days, scope?, noConfirm?, password, and with two-step sign-in on a current
 //                           factor (lib/mfa.d.ts IdentityProof) } makes one: 201 with
 //                           { ...say('token-made'), token: the token itself, shown this once, row: TokenRow };
 //                           403 token-needs-confirmed-email before the email is confirmed
@@ -69,6 +69,8 @@ export interface TokenRow {
   revokedWhy?: string;
   /** Whether it works now: neither revoked nor expired. */
   working: boolean;
+  /** Its changes never wait for approval, whatever the account asks (docs/adr/0025). */
+  noConfirm?: boolean;
 }
 
 export const rowOf = (token: AccessTokenDocument, now = new Date()): TokenRow => ({
@@ -81,7 +83,8 @@ export const rowOf = (token: AccessTokenDocument, now = new Date()): TokenRow =>
   ...(token.lastUsedAt && { lastUsedAt: token.lastUsedAt }),
   ...(token.revokedAt && { revokedAt: token.revokedAt }),
   ...(token.revokedWhy && { revokedWhy: token.revokedWhy }),
-  working: !token.revokedAt && token.expiresAt > now
+  working: !token.revokedAt && token.expiresAt > now,
+  ...(token.noConfirm && { noConfirm: true })
 });
 
 /** A name as given, on one line, or null when it is empty or too long. */
@@ -108,7 +111,7 @@ tokenRouter.get('/', jwtAuth, notGuest, async (req, res) => {
 });
 
 tokenRouter.post('/', jwtAuth, notGuest, limits.passwordCheck, express.json(), async (req, res) => {
-  const body = (req.body ?? {}) as { name?: unknown; days?: unknown; scope?: unknown };
+  const body = (req.body ?? {}) as { name?: unknown; days?: unknown; scope?: unknown; noConfirm?: unknown };
   // The token's own fields first, so a mistake there never uses up a recovery code.
   const name = nameOf(body.name);
   if (!name) return res.status(400).json(say('token-name', { most: TOKEN_NAME_MAX }, { field: 'name' }));
@@ -116,6 +119,12 @@ tokenRouter.post('/', jwtAuth, notGuest, limits.passwordCheck, express.json(), a
   if (!isScope(scope) || !OFFERED_SCOPES.includes(scope)) {
     return res.status(400).json(say('token-scope-choices', undefined, { field: 'scope' }));
   }
+  // "Changes from this token need no confirmation" (docs/adr/0025): chosen only now, with the
+  // password, and only for a token that can change records.
+  if (body.noConfirm !== undefined && typeof body.noConfirm !== 'boolean') {
+    return res.status(400).json(say('invalid-input', undefined, { field: 'noConfirm' }));
+  }
+  const noConfirm = body.noConfirm === true && scope === 'data:write';
   const days = body.days === undefined ? DEFAULT_PAT_EXPIRY_DAYS : body.days;
   if (!PAT_EXPIRY_DAYS.includes(days as (typeof PAT_EXPIRY_DAYS)[number])) {
     return res
@@ -150,6 +159,7 @@ tokenRouter.post('/', jwtAuth, notGuest, limits.passwordCheck, express.json(), a
     hash,
     hint,
     scopes: [scope],
+    ...(noConfirm && { noConfirm: true }),
     createdAt,
     expiresAt: new Date(createdAt.getTime() + (days as number) * DAY)
   });
