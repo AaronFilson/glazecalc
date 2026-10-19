@@ -14,14 +14,15 @@ import { DCR_IDLE_DAYS, DCR_UNUSED_DAYS, OAuthRecord, recordKey } from '../oauth
 import {
   allowedClientIdUrl,
   countFetch,
-  FETCHES_PER_MINUTE,
+  FETCH_LIMITS,
   publicAddress,
   resetFetchCount,
   useNetwork,
   type Network,
   type RawAnswer
 } from '../oauth/cimd.ts';
-import { checkClientMetadata, cleanName } from '../oauth/provider.ts';
+import { keptClientDocument, RETRY_SECONDS } from '../oauth/client_documents.ts';
+import { checkClientMetadata, cleanName, getProvider } from '../oauth/provider.ts';
 import { revokeGrant } from '../oauth/revoke.ts';
 import { securitySchemes } from '../mcp/server.ts';
 import { READ_ONLY_TOKEN, WRITE_TOOLS } from '../mcp/tools/account_write.ts';
@@ -301,6 +302,50 @@ describe('OAuth: the authorization server', function () {
         expect(res.status, path).to.be.oneOf([404, 405]);
       }
     });
+
+    it('answers 404 for every address under /oauth/ not written exactly as offered', async () => {
+      // oidc-provider's own router ignores letter case and a slash at the end; the limits would not.
+      const variants: Array<[string, string]> = [];
+      for (const [method, path] of [
+        ['GET', '/oauth/authorize'],
+        ['POST', '/oauth/authorize'],
+        ['POST', '/oauth/token'],
+        ['POST', '/oauth/register'],
+        ['POST', '/oauth/revoke'],
+        ['GET', '/oauth/jwks'],
+        ['GET', '/oauth/authorize/abcdefghijklmnopqrstu']
+      ] as const) {
+        const [, , name, ...rest] = path.split('/');
+        const tail = rest.length ? '/' + rest.join('/') : '';
+        variants.push(
+          [method, path + '/'],
+          [method, path.toUpperCase()],
+          [method, '/oauth/' + name![0]!.toUpperCase() + name!.slice(1) + tail],
+          [method, path.toUpperCase().replace('/OAUTH/', '/oauth/') + '/']
+        );
+      }
+      // And addresses oidc-provider has but nothing here offers: reading or changing a registration.
+      variants.push(['GET', '/oauth/register/dcr_someone'], ['PUT', '/oauth/register/dcr_someone']);
+      for (const [method, path] of variants) {
+        const res = await request(path, {
+          method,
+          ...(method !== 'GET' && {
+            headers: { 'content-type': 'application/json' },
+            body: JSON.stringify({ client_name: 'Sideways', redirect_uris: [REDIRECT] })
+          })
+        });
+        // /OAUTH/... is not under /oauth/ at all: the authorization server never sees it.
+        if (path.startsWith('/OAUTH/')) {
+          expect(res.status, method + ' ' + path).to.not.be.oneOf([200, 201, 303]);
+          continue;
+        }
+        expect(res.status, method + ' ' + path).to.equal(404);
+        expect(((await res.json()) as { error: string }).error, method + ' ' + path).to.equal('not_found');
+      }
+      // Written exactly, they still answer.
+      expect((await request('/oauth/jwks')).status).to.equal(200);
+      expect((await register()).status).to.equal(201);
+    });
   });
 
   describe('apps that register themselves (DCR)', () => {
@@ -367,6 +412,32 @@ describe('OAuth: the authorization server', function () {
         // The one refused from the first address never reached the day's count.
         expect(day?.totalHits).to.equal(11);
         expect(limits.OAUTH_REGISTRATIONS_A_DAY).to.equal(500);
+      } finally {
+        process.env.RATE_LIMITS = 'off';
+        limits.oauthRegisterAll.resetKey(all);
+      }
+    });
+
+    it(`counts only registrations made towards everyone's day, and an IPv6 network as one address`, async () => {
+      const all = 'oauth-register-all';
+      limits.oauthRegisterAll.resetKey(all);
+      process.env.RATE_LIMITS = 'on';
+      try {
+        const refused = await register(
+          { token_endpoint_auth_method: 'client_secret_basic' },
+          { 'x-forwarded-for': '198.51.100.' + Math.floor(Math.random() * 200 + 20) }
+        );
+        expect(refused.status).to.equal(400);
+        expect((await limits.oauthRegisterAll.getKey(all))?.totalHits ?? 0).to.equal(0);
+        // Ten from one /64, then its neighbours in the same /56 are refused too.
+        const network = '2001:db8:' + Math.floor(Math.random() * 0xfff).toString(16) + ':';
+        for (let i = 0; i < 10; i++) {
+          const res = await register({}, { 'x-forwarded-for': network + '100::' + (i + 1) });
+          expect(res.status, 'registration ' + i).to.equal(201);
+        }
+        expect((await register({}, { 'x-forwarded-for': network + '100::99' })).status).to.equal(429);
+        expect((await register({}, { 'x-forwarded-for': network + '1ff::1' })).status).to.equal(429);
+        expect((await limits.oauthRegisterAll.getKey(all))?.totalHits).to.equal(10);
       } finally {
         process.env.RATE_LIMITS = 'off';
         limits.oauthRegisterAll.resetKey(all);
@@ -547,6 +618,44 @@ describe('OAuth: the authorization server', function () {
       expect(body.redirect).to.eql({ host: '127.0.0.1:7777', loopback: true });
       expect(body.writeRequested).to.equal(true);
       expect(shown.headers.get('cache-control')).to.equal('no-store');
+    });
+
+    it('hands oidc-provider the site’s own host and scheme, whatever X-Forwarded-Host or -Proto said', async () => {
+      const { session } = await person();
+      const started = await authorize(clientId);
+      const provider = getProvider();
+      const seen: Array<{ host: string; protocol: string }> = [];
+      const own = provider.createContext.bind(provider);
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any -- watching oidc-provider's own Koa contexts
+      (provider as any).createContext = (req: any, res: any) => {
+        const ctx = own(req, res);
+        seen.push({ host: ctx.host, protocol: ctx.protocol });
+        return ctx;
+      };
+      try {
+        const headers = {
+          authorization: 'Bearer ' + session,
+          'x-forwarded-host': 'evil.example',
+          'x-forwarded-proto': 'http'
+        };
+        const shown = await request('/api/connect/' + started.uid, {
+          jar: started.jar,
+          headers: { accept: 'application/json', ...headers }
+        });
+        expect(shown.status).to.equal(200);
+        const denied = await request('/api/connect/' + started.uid, {
+          method: 'POST',
+          jar: started.jar,
+          headers: { ...JSON_TYPE, ...headers },
+          body: JSON.stringify({ decision: 'deny' })
+        });
+        expect(denied.status).to.equal(200);
+      } finally {
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any -- putting oidc-provider's own back
+        delete (provider as any).createContext;
+      }
+      expect(seen.length).to.be.at.least(2);
+      for (const ctx of seen) expect(ctx).to.eql({ host: 'glazecalc.test', protocol: 'https' });
     });
 
     it('asks to be signed in, and turns away trials, unconfirmed emails and other browsers', async () => {
@@ -976,6 +1085,20 @@ describe('OAuth: apps named by their address (CIMD)', function () {
   /** An address no other test has used, so oidc-provider's cache of documents never answers for it. */
   const fresh = () => `https://app.example/clients/${Date.now()}-${n++}.json`;
 
+  /** The start of a connection as from an address (X-Forwarded-For, as nginx passes it on). */
+  const authorizeFrom = async (clientId: string, forwardedFor: string) => {
+    const { challenge } = pkce();
+    const query = new URLSearchParams({
+      client_id: clientId,
+      redirect_uri: 'https://app.example/callback',
+      response_type: 'code',
+      code_challenge: challenge,
+      code_challenge_method: 'S256',
+      scope: 'data:read'
+    });
+    return request('/oauth/authorize?' + query.toString(), { headers: { 'x-forwarded-for': forwardedFor } });
+  };
+
   beforeEach(() => {
     calls = [];
     resetFetchCount();
@@ -1024,7 +1147,10 @@ describe('OAuth: apps named by their address (CIMD)', function () {
       'fe80::1',
       '::ffff:10.0.0.1',
       '::ffff:a9fe:a9fe',
-      '64:ff9b::a9fe:a9fe'
+      '64:ff9b::a9fe:a9fe',
+      '::a9fe:a9fe',
+      '::ffff:0:a9fe:a9fe',
+      '2002:a9fe:a9fe::1'
     ]) {
       const url = fresh();
       useNetwork(network({ 'app.example': [address] }, { 'app.example': () => documentFor(url) }));
@@ -1085,22 +1211,157 @@ describe('OAuth: apps named by their address (CIMD)', function () {
     for (const address of ['169.254.169.254', '10.1.2.3', '::1', 'fc00::1', 'not an address', '::ffff:127.0.0.1']) {
       expect(publicAddress(address), address).to.equal(false);
     }
+    // IPv4 inside IPv6 every other way: IPv4-compatible (::/96), SIIT (::ffff:0:0:0/96), NAT64, 6to4 and Teredo.
+    for (const address of [
+      '::a9fe:a9fe',
+      '::169.254.169.254',
+      '::10.0.0.1',
+      '::8.8.8.8',
+      '::ffff:0:a9fe:a9fe',
+      '::ffff:0:10.0.0.1',
+      '64:ff9b::a00:1',
+      '64:ff9b:1::a00:1',
+      '2002:a00:1::1',
+      '2002:a9fe:a9fe::1',
+      '2001:0:4136:e378:8000:63bf:3fff:fdd2'
+    ]) {
+      expect(publicAddress(address), address).to.equal(false);
+    }
     expect(allowedClientIdUrl('https://app.example/oauth/client.json')).to.equal(true);
     expect(allowedClientIdUrl('https://app.example:443/oauth/client.json')).to.equal(true);
     expect(allowedClientIdUrl('https://app.example/a#b')).to.equal(false);
     expect(allowedClientIdUrl('https://intranet/client.json')).to.equal(false);
   });
 
-  it(`fetches at most ${FETCHES_PER_MINUTE} documents a minute for everyone together`, () => {
+  it('limits fetches a minute from one address, for one host, and for everyone together', () => {
     process.env.RATE_LIMITS = 'on';
     try {
       const now = Date.now();
-      for (let i = 0; i < FETCHES_PER_MINUTE; i++) expect(countFetch(now)).to.equal(true);
-      expect(countFetch(now)).to.equal(false);
-      expect(countFetch(now + 61 * 1000)).to.equal(true);
+      for (let i = 0; i < FETCH_LIMITS.address; i++) {
+        expect(countFetch({ address: '198.51.100.1', host: `h${i}.example` }, now)).to.equal(true);
+      }
+      expect(countFetch({ address: '198.51.100.1', host: 'other.example' }, now)).to.equal(false);
+      // An IPv6 network counts as one address.
+      for (let i = 0; i < FETCH_LIMITS.address; i++) {
+        expect(countFetch({ address: '2001:db8:1:2::' + (i + 1), host: `v${i}.example` }, now)).to.equal(true);
+      }
+      expect(countFetch({ address: '2001:db8:1:3::1', host: 'other.example' }, now)).to.equal(false);
+      resetFetchCount();
+      for (let i = 0; i < FETCH_LIMITS.host; i++) {
+        expect(countFetch({ address: '198.51.100.' + (i + 1), host: 'busy.example' }, now)).to.equal(true);
+      }
+      expect(countFetch({ address: '198.51.100.99', host: 'BUSY.example' }, now)).to.equal(false);
+      expect(countFetch({ address: '198.51.100.99', host: 'quiet.example' }, now)).to.equal(true);
+      resetFetchCount();
+      for (let i = 0; i < FETCH_LIMITS.everyone; i++) {
+        expect(countFetch({ address: '203.0.113.' + (i % 200), host: `e${i}.example` }, now)).to.equal(true);
+      }
+      expect(countFetch({ address: '192.0.2.1', host: 'last.example' }, now)).to.equal(false);
+      expect(countFetch({ address: '192.0.2.1', host: 'last.example' }, now + 61 * 1000)).to.equal(true);
     } finally {
       process.env.RATE_LIMITS = 'off';
       resetFetchCount();
     }
+  });
+
+  it('counts fetches by the address that asked (one proxy hop), each its own share', async () => {
+    const hosts = Array.from({ length: FETCH_LIMITS.address + 2 }, (_, i) => `a${Date.now()}x${i}.example`);
+    const urls = hosts.map((host) => `https://${host}/client.json`);
+    useNetwork(
+      network(
+        Object.fromEntries(hosts.map((host) => [host, [ADDRESS]])),
+        Object.fromEntries(hosts.map((host, i) => [host, () => documentFor(urls[i]!)]))
+      )
+    );
+    const stranger = '198.51.100.' + Math.floor(Math.random() * 200 + 20);
+    process.env.RATE_LIMITS = 'on';
+    try {
+      for (let i = 0; i < FETCH_LIMITS.address; i++) {
+        expect((await authorizeFrom(urls[i]!, stranger)).status, urls[i]).to.equal(303);
+      }
+      // The stranger's share is used up, whatever X-Forwarded-For they write first; another address's is not.
+      expect((await authorizeFrom(urls[FETCH_LIMITS.address]!, '192.0.2.9, ' + stranger)).status).to.equal(400);
+      expect((await authorizeFrom(urls[FETCH_LIMITS.address + 1]!, '203.0.113.77')).status).to.equal(303);
+    } finally {
+      process.env.RATE_LIMITS = 'off';
+    }
+  });
+
+  it('keeps a connected app working without fetching, however many other addresses are named', async function () {
+    this.timeout(120000);
+    const url = fresh();
+    // Any document under app.example is there, as its own address says.
+    useNetwork(
+      network({ 'app.example': [ADDRESS] }, { 'app.example': (path) => documentFor('https://app.example' + path) })
+    );
+    const { session, user } = await person();
+    const { tokens } = await connect(url, session, { redirect: 'https://app.example/callback' });
+    const key = recordKey('ClientDocument', url);
+    expect(await OAuthRecord.exists({ _id: key })).to.not.equal(null);
+    // Two hundred other addresses push it out of oidc-provider's memory (it keeps 100).
+    for (let batch = 0; batch < 10; batch++) {
+      await Promise.all(
+        Array.from({ length: 21 }, () => authorize(fresh(), { redirect: 'https://app.example/callback' }))
+      );
+    }
+    // The app's server is down, and every fetch is used up.
+    calls = [];
+    useNetwork({
+      lookup: async (hostname) => {
+        calls.push(hostname);
+        throw new Error('down');
+      },
+      get: async () => {
+        throw new Error('down');
+      }
+    });
+    process.env.RATE_LIMITS = 'on';
+    try {
+      for (let i = 0; i < FETCH_LIMITS.everyone; i++) {
+        countFetch({ address: '203.0.113.' + (i % 200), host: `f${i}.example` });
+      }
+      const res = await refresh(tokens.refresh_token, url);
+      const next = (await res.json()) as Tokens;
+      expect(res.status, JSON.stringify(next)).to.equal(200);
+      expect(calls).to.eql([]);
+
+      // Its time up, it is checked again: a failed check keeps the one it had, and tries again later.
+      await OAuthRecord.updateOne({ _id: key }, { $set: { freshUntil: new Date(Date.now() - 1000) } });
+      resetFetchCount();
+      const again = await refresh(next.refresh_token, url);
+      const after = (await again.json()) as Tokens;
+      expect(again.status, JSON.stringify(after)).to.equal(200);
+      expect(calls).to.eql(['app.example']);
+      const kept = (await OAuthRecord.findById(key).lean())!;
+      expect((kept.freshUntil!.getTime() - Date.now()) / 1000).to.be.within(RETRY_SECONDS - 30, RETRY_SECONDS);
+
+      // A check that passes takes the new document, for as long as its Cache-Control says.
+      calls = [];
+      useNetwork(
+        network(
+          { 'app.example': [ADDRESS] },
+          {
+            'app.example': () => ({
+              ...documentFor(url, { client_name: 'Renamed Assistant' }),
+              headers: { 'content-type': 'application/json', 'cache-control': 'max-age=7200' }
+            })
+          }
+        )
+      );
+      await OAuthRecord.updateOne({ _id: key }, { $set: { freshUntil: new Date(Date.now() - 1000) } });
+      const third = await refresh(after.refresh_token, url);
+      expect(third.status, await third.clone().text()).to.equal(200);
+      const renewed = (await OAuthRecord.findById(key).lean())!;
+      expect(JSON.parse(renewed.payload).client_name).to.equal('Renamed Assistant');
+      expect((renewed.freshUntil!.getTime() - Date.now()) / 1000).to.be.within(7200 - 30, 7200);
+      expect(calls).to.eql(['app.example' + new URL(url).pathname]);
+    } finally {
+      process.env.RATE_LIMITS = 'off';
+      resetFetchCount();
+    }
+
+    // Revoked, it is no longer read from what was kept.
+    await AccessToken.updateMany({ userId: user._id, kind: 'oauth' }, { $set: { revokedAt: new Date() } });
+    expect(await keptClientDocument(url, async () => {})).to.equal(undefined);
   });
 });

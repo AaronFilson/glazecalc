@@ -13,17 +13,23 @@
 //     address checked, with the name only for TLS (SNI) and the Host header,
 //     so a second lookup cannot point it elsewhere (DNS rebinding);
 //   - no redirects followed; at most 5 seconds; at most 5 kB; JSON only;
-//   - at most FETCHES_PER_MINUTE fetches a minute for everyone together.
+//   - at most FETCH_LIMITS a minute: from one address (a /56 for IPv6), for
+//     one host, and for everyone together (countFetch).
+//
+// An app with a working connection never needs a fetch to go on working: its
+// document is kept with the connection (server/oauth/client_documents.ts).
 //
 // oidc-provider checks the rest (the document's client_id is the address, no
 // secrets) and keeps a document for CACHE_SECONDS, from 1 to 24 hours.
 import dns from 'node:dns';
 import https from 'node:https';
 import net from 'node:net';
+import { ipKeyGenerator } from 'express-rate-limit';
 
 export const FETCH_TIMEOUT_MS = 5000;
 export const MOST_BYTES = 5 * 1024;
-export const FETCHES_PER_MINUTE = 30;
+/** Fetches a minute: from one address, for one host named, and for everyone together. */
+export const FETCH_LIMITS = { address: 10, host: 10, everyone: 120 } as const;
 /** How long a fetched document is kept: its Cache-Control, held between an hour and a day. */
 export const CACHE_SECONDS = { min: 60 * 60, max: 24 * 60 * 60 } as const;
 
@@ -49,14 +55,14 @@ for (const [prefix, bits] of [
   BLOCKED.addSubnet(prefix, bits, 'ipv4');
 }
 for (const [prefix, bits] of [
-  ['::', 128], // unspecified
-  ['::1', 128], // loopback
-  ['64:ff9b::', 96], // NAT64
+  ['::', 96], // unspecified, loopback, and IPv4-compatible (::10.0.0.1, deprecated)
+  ['::ffff:0:0:0', 96], // SIIT, IPv4-translated (::ffff:0:10.0.0.1)
+  ['64:ff9b::', 96], // NAT64, any IPv4 address inside
   ['64:ff9b:1::', 48], // local NAT64
   ['100::', 64], // discard
-  ['2001::', 23], // IETF protocol assignments, Teredo
+  ['2001::', 23], // IETF protocol assignments, Teredo (2001::/32) among them
   ['2001:db8::', 32], // documentation
-  ['2002::', 16], // 6to4
+  ['2002::', 16], // 6to4, any IPv4 address inside
   ['3fff::', 20], // documentation
   ['5f00::', 16], // segment routing
   ['fc00::', 7], // unique local
@@ -171,21 +177,48 @@ export const useNetwork = (replacement?: Network): void => {
   network = replacement ?? realNetwork;
 };
 
-// FETCHES_PER_MINUTE for everyone together, in memory as the other limits.
-let fetchTimes: number[] = [];
+// The fetches of the last minute, in memory as the other limits: by address, by host, and all of them.
+let fetchTimes = new Map<string, number[]>();
 
-/** Counts one fetch; false once over FETCHES_PER_MINUTE. RATE_LIMITS=off turns it off, as the others. */
-export const countFetch = (now = Date.now()): boolean => {
+/** Who is asking for a fetch, and of what host: the request's address (Express's, trusting one proxy) and the host named. */
+export interface FetchFor {
+  address?: string;
+  host: string;
+}
+
+/** The key for an address: a /56 for IPv6, as the other limits (express-rate-limit), so one network counts once. */
+export const addressKey = (address: string | undefined): string => (address ? ipKeyGenerator(address, 56) : 'unknown');
+
+const recent = (key: string, now: number): number[] => {
+  const times = (fetchTimes.get(key) ?? []).filter((time) => now - time < 60 * 1000);
+  if (times.length) fetchTimes.set(key, times);
+  else fetchTimes.delete(key);
+  return times;
+};
+
+/**
+ * Counts one fetch; false (and not counted) once any of FETCH_LIMITS is
+ * reached: from this address, for this host, or for everyone. One stranger
+ * naming many addresses uses up only their own share, and a host only its
+ * own. RATE_LIMITS=off turns it off, as the others.
+ */
+export const countFetch = ({ address, host }: FetchFor, now = Date.now()): boolean => {
   if (process.env.RATE_LIMITS === 'off') return true;
-  fetchTimes = fetchTimes.filter((time) => now - time < 60 * 1000);
-  if (fetchTimes.length >= FETCHES_PER_MINUTE) return false;
-  fetchTimes.push(now);
+  // Hosts nobody names again are swept now and then, so the counts stay small.
+  if (fetchTimes.size > 1000) for (const key of [...fetchTimes.keys()]) recent(key, now);
+  const keys = [
+    ['address:' + addressKey(address), FETCH_LIMITS.address],
+    ['host:' + host.toLowerCase(), FETCH_LIMITS.host],
+    ['everyone', FETCH_LIMITS.everyone]
+  ] as const;
+  if (keys.some(([key, limit]) => recent(key, now).length >= limit)) return false;
+  for (const [key] of keys) fetchTimes.set(key, [...recent(key, now), now]);
   return true;
 };
 
 /** Forgets the fetches counted (the tests). */
 export const resetFetchCount = (): void => {
-  fetchTimes = [];
+  fetchTimes = new Map();
 };
 
 /**
