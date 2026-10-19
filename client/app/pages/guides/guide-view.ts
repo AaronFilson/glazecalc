@@ -1,8 +1,8 @@
 import { DOCUMENT, LocationStrategy, NgTemplateOutlet } from '@angular/common';
 import { Component, SecurityContext, computed, forwardRef, inject, input } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
-import { translate } from '@jsverse/transloco';
-import { Router } from '@angular/router';
+import { TranslocoDirective, translate } from '@jsverse/transloco';
+import { Router, RouterLink } from '@angular/router';
 import { baseLanguage, languageFor } from '../../../../lib/regions/languages';
 import { LocaleService } from '../../core/locale.service';
 import { PreferencesService } from '../../core/preferences.service';
@@ -14,6 +14,7 @@ import { StructuredData, article, pageAddress } from '../../shared/structured-da
 import { GuideContents, SectionLinks } from './guide-contents';
 import { Block, Guide, GuideSection, Inline, Reading, blocks } from './guide-document';
 import { GuideInline, GuideRow, InlineContext } from './guide-inline';
+import { GUIDES } from './guides-page';
 import { FoodLimits } from './food-limits';
 import { LocalEquivalents } from './local-equivalents';
 import { PoisonLines } from './poison-lines';
@@ -40,9 +41,11 @@ import { SilicaLimit } from './silica-limit';
     NgTemplateOutlet,
     PageHeader,
     PoisonLines,
+    RouterLink,
     ShopList,
     SilicaLimit,
-    StructuredData
+    StructuredData,
+    TranslocoDirective
   ],
   templateUrl: './guide-view.html',
   providers: [{ provide: InlineContext, useExisting: forwardRef(() => GuideView) }]
@@ -74,6 +77,15 @@ export class GuideView implements InlineContext {
       pageAddress(this.language, this.pathname),
       modified
     );
+  });
+  /**
+   * The other guides, for the block at the end of the page (search engines follow these links, and they
+   * are in the prerendered page): every guide of the list (guides-page.ts) but this one, so a guide added
+   * there appears here with no other change.
+   */
+  protected readonly moreGuides = computed(() => {
+    const here = this.pathname.replace(/\/+$/, '');
+    return GUIDES.filter((guide) => !here.endsWith(guide.path));
   });
   /** Over a section of a translation still in English, in the page's language. */
   protected readonly sectionInEnglish = translate('guides.sectionInEnglish');

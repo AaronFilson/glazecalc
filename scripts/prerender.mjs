@@ -55,6 +55,9 @@ const ADVICE_COUNT = readFileSync(path.join(ROOT, 'data', 'advice.ndjson'), 'utf
   .split('\n')
   .filter((line) => line.trim()).length;
 
+/** The guides among the public pages (not the list of them). */
+const GUIDE_PAGES = pages.PUBLIC_PAGES.filter((page) => page.startsWith('/guides/'));
+
 /** What is wrong with one page in particular: the advice page has each piece of the standard advice. */
 export function pageProblems(html, page) {
   const found = [];
@@ -63,6 +66,14 @@ export function pageProblems(html, page) {
     const list = /<ul\b[^>]*class="general-advice"[^>]*>([\s\S]*?)<\/ul>/.exec(html)?.[1] ?? '';
     const shown = (list.match(/<h3\b/g) ?? []).length;
     if (shown !== ADVICE_COUNT) found.push(`it shows ${shown} of the ${ADVICE_COUNT} pieces of standard advice`);
+  }
+  // A guide ends with links to the others (the "More guides" block), so a search engine can follow them.
+  if (GUIDE_PAGES.includes(page)) {
+    for (const other of GUIDE_PAGES.filter((guide) => guide !== page)) {
+      if (!html.includes(`${other}"`) || !new RegExp(`href="[^"]*${other}"`).test(html)) {
+        found.push(`it does not link the guide ${other}`);
+      }
+    }
   }
   return found;
 }
