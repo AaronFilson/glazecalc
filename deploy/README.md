@@ -272,7 +272,7 @@ each, and `staging.sh` refuses production's secret. The callbacks are exactly:
       "Glazecalc", user support email the owner's, audience **External**, contact email the
       owner's; accept the policy.
    3. Branding: home page `https://glazecalcapp.com`, privacy policy
-      `https://glazecalcapp.com/privacy`, authorized domain `glazecalcapp.com` (verified in
+      `https://glazecalcapp.com/privacy`, terms of service `https://glazecalcapp.com/terms`, authorized domain `glazecalcapp.com` (verified in
       Search Console for brand verification). Leave the logo empty unless brand verification is
       wanted: a logo sends the app to review.
    4. Data access: add the scopes `openid` and `.../auth/userinfo.email`. The app asks only for

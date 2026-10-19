@@ -1,7 +1,16 @@
 import fs from 'node:fs';
 import http from 'node:http';
 import path from 'node:path';
-import { APP_PAGES, looksLikeFile, ogLocale, pageHtml, prerenderedKey, sitemap, withNonce } from '../lib/pages.ts';
+import {
+  APP_PAGES,
+  PUBLIC_PAGES,
+  looksLikeFile,
+  ogLocale,
+  pageHtml,
+  prerenderedKey,
+  sitemap,
+  withNonce
+} from '../lib/pages.ts';
 import languages from '../../lib/regions/languages.js';
 import { base, expect, site } from './support/app.ts';
 
@@ -343,7 +352,8 @@ describe('pages in each language', () => {
     expect(two).to.include(
       '<url><loc>https://glazecalcapp.com/de/guides</loc><xhtml:link rel="alternate" hreflang="en" href="https://glazecalcapp.com/guides"/><xhtml:link rel="alternate" hreflang="de" href="https://glazecalcapp.com/de/guides"/></url>'
     );
-    expect(two.match(/<url>/g)).to.have.length(22);
+    // Each public page once in each of the two languages.
+    expect(two.match(/<url>/g)).to.have.length(PUBLIC_PAGES.length * 2);
   });
 
   it('serves the sitemap, and sends /en/ addresses to the plain English ones', async () => {

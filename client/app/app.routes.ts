@@ -96,6 +96,14 @@ export const routes: Routes = [
     loadComponent: () => import('./pages/privacy/privacy-page').then((m) => m.PrivacyPage)
   },
   {
+    path: 'terms',
+    title: marker('titles.terms'),
+    data: { description: marker('meta.terms') },
+    providers: [provideTranslocoScope('site')],
+    resolve: { messages: scopeTranslations },
+    loadComponent: () => import('./pages/terms/terms-page').then((m) => m.TermsPage)
+  },
+  {
     // Translated, but not a public page: not in the sitemap, and noindex (docs/integrations-plan.md, item 25).
     path: 'assistants',
     title: marker('titles.assistants'),

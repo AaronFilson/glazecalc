@@ -50,6 +50,7 @@ const PUBLIC_PAGES = [
   '/about',
   ...GUIDES,
   '/privacy',
+  '/terms',
   '/assistants',
   '/signin',
   '/signup',
