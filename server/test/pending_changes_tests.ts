@@ -561,7 +561,8 @@ describe('confirm before changes: the MCP write tools', () => {
 
     // Changed by one character: refused before any tool runs.
     const [head, body, mac] = state.split('.');
-    const forged = [head, body, mac!.slice(0, -1) + (mac!.endsWith('A') ? 'B' : 'A')].join('.');
+    // (A middle character: the last one of a base64url MAC can carry only padding bits.)
+    const forged = [head, body, mac!.slice(0, 5) + (mac![5] === 'A' ? 'B' : 'A') + mac!.slice(6)].join('.');
     const tampered = await callTool(write, 'move_to_trash', args, {
       capabilities,
       inputResponses: yes,

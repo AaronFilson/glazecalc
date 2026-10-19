@@ -6,6 +6,19 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Added
 
+- **Confirm before changes** (docs/adr/0025-confirm-before-changes.md). On Connected apps, an
+  account can choose that changes from assistants, apps and access tokens wait for its approval:
+  never (the default), only removals, or every change. A waiting change has its own page,
+  `/confirm/<id>`, where the person approves or declines it signed in (or approves every change
+  waiting from the same app); no token can approve one, and it is made once, after the token, its
+  permission and the record are checked again. An assistant whose client supports the 2026-07-28
+  multi-round-trip requests is asked through the client (the website's page in URL mode, or, for a
+  removal, the client's own yes/no form); any other is told to ask the person to approve it at the
+  link. A script on the REST routes gets `202` with the change's id and link, and asks
+  `GET /api/pending-changes/:id` for what came of it. A personal token can be made with "Changes
+  from this token need no confirmation". Asking less sends the owner an email; a change waits 30
+  minutes at most, and what it would do is removed once it is decided. `get_my_settings` shows the
+  choice. English only.
 - **The shelf over REST, with one Undo.** A token that can change records may add or remove one
   material at a time (`POST /api/shelf/add` and `/remove`, by `key` or `name`) and put back the
   shelf as it was before the last change (`POST /api/shelf/undo`, one step); `GET /api/shelf`

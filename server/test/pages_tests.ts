@@ -6,6 +6,7 @@ import {
   ENGLISH_ONLY_PAGES,
   PUBLIC_PAGES,
   isEnglishOnlyPage,
+  isPage,
   looksLikeFile,
   ogLocale,
   pageHtml,
@@ -332,8 +333,12 @@ describe('pages in each language', () => {
       path.join(import.meta.dirname, '..', '..', 'client', 'app', 'app.routes.ts'),
       'utf8'
     );
-    const pages = [...routes.matchAll(/^\s*path: '([^']*)'/gm)].map((m) => '/' + m[1]).filter((page) => page !== '/**');
+    const all = [...routes.matchAll(/^\s*path: '([^']*)'/gm)].map((m) => '/' + m[1]).filter((page) => page !== '/**');
+    // A page with a value in its address (/confirm/:id) is known by its pattern (CONFIRM_PAGE).
+    const pages = all.filter((page) => !page.includes('/:'));
     expect([...APP_PAGES].sort()).to.eql(pages.sort());
+    expect(all.filter((page) => page.includes('/:'))).to.eql(['/confirm/:id']);
+    expect(isPage('/confirm/AbC_12-xyz')).to.equal(true);
   });
 
   it('tells a file from a page in one pass, even on a long path of dots', () => {

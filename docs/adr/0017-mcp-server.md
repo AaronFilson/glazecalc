@@ -230,3 +230,15 @@ apps connected with OAuth tokens for this endpoint alone. What changes here:
   the Trash; every tool carries `_meta.securitySchemes` for ChatGPT.
 - "OAuth clients cannot write yet" and "the chat apps get only the public tools until Phase 4",
   above, no longer hold once the consent page ships.
+
+## Amended: confirm before changes
+
+2026-10-19, [ADR 25](0025-confirm-before-changes.md), to the prompt-injection sections above
+("What the assistant is given is data" and "Prompt injection, revisited"): asking the person before
+a change is built. An account can choose that changes from assistants and access tokens wait for
+its approval: removals only, or every change (off by default). A waiting change is made only when
+the person approves it on the website, signed in, or (for a removal, by the owner's choice) answers
+yes in the client's own form; no token can approve one, the state handed to the client is signed
+and bound to the one change, and a change runs once, after everything is checked again. Words
+planted in a note can still lead an assistant to ask for a change, but no longer to make one
+unseen, when the setting is on. A form's yes is weaker than the website's (ADR 25, Consequences).

@@ -38,7 +38,9 @@ const INSTRUCTIONS =
   'are refused and change nothing. Change only what the person asked for, and tell them what you changed: each ' +
   'change keeps the record as it was, so they can undo it on the website, and move_to_trash puts a record in ' +
   'the Trash for 30 days, never deleting it. The shelf keeps the list it had before its last change: ' +
-  'undo_shelf_change puts it back, one step only.';
+  'undo_shelf_change puts it back, one step only. When the person has chosen to confirm changes, a change waits ' +
+  'for their approval and nothing is changed until they give it: pass on the link Glazecalc gives, and never ' +
+  'say a change was made before it was.';
 
 /** The caller authInfo carries, as server/mcp/index.ts sets it. */
 export const callerOf = (ctx: McpRequestContext): Caller => {
