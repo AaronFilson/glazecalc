@@ -422,7 +422,7 @@
     "boronLowFireEffects": "Puede dar pinchados o ampollas, volverse de un blanco azulado lechoso donde la capa es gruesa y resistir peor el desgaste. Más caolín y sílice lo estabilizan.",
     "boronMidFire": "Es mucho boro para cono 6 ({boron}; la industria considera alto un valor de {high}).",
     "boronMidFireSet": "Es mucho boro para cono 6 ({boron}; este conjunto de límites considera {high} como alto).",
-    "boronHighFire": "Es mucho boro para cono 10 ({boron}; este conjunto de límites considera alto a partir de {high}).",
+    "boronHighFire": "Es mucho boro para cono 10 ({boron}; este conjunto de límites considera {high} como alto).",
     "boronMidFireProbably": "Los esmaltes así probablemente escurrirán, quedarán lechosos o con vetas, y pueden cuartearse o resistir peor el desgaste.",
     "boronMidFireTends": "Los esmaltes así tienden a escurrir, a quedar lechosos o con vetas, y pueden cuartearse o resistir peor el desgaste.",
     "boronMidFireFix": "Use solo el boro necesario para que funda; el caolín y la sílice lo estabilizan.",
