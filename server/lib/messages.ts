@@ -148,6 +148,9 @@ export const MESSAGES = {
   'calendar-choices':
     'Dates can be shown in the Gregorian calendar (gregory), the Thai Buddhist era (buddhist) or Japanese eras (japanese).',
   'shelf-invalid': (p: Params) => 'The shelf is a list of up to ' + p.most + ' materials.',
+  'shelf-full': (p: Params) => 'The shelf can hold at most ' + p.most + ' materials. Nothing was changed.',
+  'shelf-material-unknown': 'That material is not in your materials or the Glazecalc library.',
+  'shelf-nothing-to-undo': 'There is no change to the shelf to undo.',
   'prices-invalid': (p: Params) =>
     'Prices are a list of up to ' + p.most + ' materials, each with a price per kilogram of 0 or more.',
 

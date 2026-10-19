@@ -20,6 +20,7 @@ import passwordRoutes from './routes/password_routes.ts';
 import tokenRoutes from './routes/token_routes.ts';
 import records from './routes/records.ts';
 import { privateHeaders, sharedRouter, shareRouter } from './routes/share_routes.ts';
+import shelfRoutes from './routes/shelf_routes.ts';
 import userRoutes from './routes/user_routes.ts';
 import mcpRouter, { metadataRouter } from './mcp/index.ts';
 import { say } from './lib/messages.ts';
@@ -98,9 +99,11 @@ api.get('/health', (req, res) => {
 });
 
 // /additives, /advice, /firing, /materials, /notes, /recipe and /trash: the
-// only routes an access token can reach, each route asking for its permission
+// only routes an access token can reach (with /shelf, below), each route asking for its permission
 // (server/lib/require_scope.ts).
 for (const [name, router] of Object.entries(records)) api.use('/' + name, router);
+// And /shelf: reading it and changing one material at a time (routes/shelf_routes.ts); its PUT is the session's.
+api.use('/shelf', shelfRoutes);
 // Nothing below takes an access token: the account, the password, signing in
 // and out, two-step sign-in, the export (default deny, docs/integrations-plan.md
 // item 5). A route that should take one goes above, behind requireScope.

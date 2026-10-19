@@ -6,6 +6,14 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Added
 
+- **The shelf over REST, with one Undo.** A token that can change records may add or remove one
+  material at a time (`POST /api/shelf/add` and `/remove`, by `key` or `name`) and put back the
+  shelf as it was before the last change (`POST /api/shelf/undo`, one step); `GET /api/shelf`
+  takes a token that can read the shelf. The website's own changes, and an assistant's
+  `add_to_shelf` and `remove_from_shelf`, keep the earlier list for that Undo too; a new MCP tool,
+  `undo_shelf_change`, puts it back. A token's shelf changes are written to the activity log, and
+  the earlier list goes with the account's export and deletion. The website has no Undo button
+  for it yet. English only.
 - **Chemistry against the stated cone** (docs/adr/0022-chemistry-against-the-stated-cone.md): one
   line at the top of the recipe page's limits panel says whether the glaze's chemistry fits its
   firing, the recipe's stated cone or the band chosen in the panel. It gives a note only when boron

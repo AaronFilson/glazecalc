@@ -170,10 +170,11 @@ authorization server: personal tokens only, no OAuth client.
   `data:write` a script creates, changes, undoes and moves to the Trash every kind of record, and
   puts records back from it, as the website does. Every change keeps a version and an activity
   line; a removal is refused when the Trash is full rather than pushing anything out of it.
-- **Eight MCP write tools** (`server/mcp/tools/account_write.ts`): `create_recipe` (the server
+- **Nine MCP write tools** (`server/mcp/tools/account_write.ts`): `create_recipe` (the server
   works out the unity formula and saves it as the recipe page does), `update_recipe`,
   `add_notebook_entry`, `add_my_material`, `update_my_material`, `add_to_shelf`,
-  `remove_from_shelf` and `move_to_trash` (to the Trash only). They are listed for every token, so
+  `remove_from_shelf`, `undo_shelf_change` (puts back the shelf as it was before its last change,
+  one step) and `move_to_trash` (to the Trash only). They are listed for every token, so
   an assistant holding a read-only one can say why nothing changed; each checks the token's scopes
   itself and refuses in words otherwise. They do what the record routes do for a change, and the
   server's instructions no longer say the tools never change anything.

@@ -27,6 +27,7 @@ describe('export API', () => {
         displayname: 'Alice',
         preferences: { theme: 'dark', region: 'DE', currency: 'EUR' },
         shelf: ['name:Whiting'],
+        shelfPrevious: ['name:Silica'],
         prices: [{ key: 'name:Whiting', perKg: 0.75 }]
       }
     );
@@ -87,6 +88,7 @@ describe('export API', () => {
     expect(body.account).to.include({ id: String(alice.user._id), email: alice.email, displayname: 'Alice' });
     expect(body.preferences).to.include({ theme: 'dark', region: 'DE' });
     expect(body.shelf).to.eql(['name:Whiting']);
+    expect(body.shelfPrevious).to.eql(['name:Silica']);
     expect(body.prices).to.eql([{ key: 'name:Whiting', perKg: 0.75 }]);
     expect(body.preferences).to.include({ currency: 'EUR' });
     expect(body.records).to.have.all.keys('additives', 'advice', 'firing', 'materials', 'notes', 'recipes', 'trash');
@@ -121,6 +123,7 @@ describe('export API', () => {
     const { body } = await get('/export', bob.token);
     expect(body.preferences).to.eql({});
     expect(body.shelf).to.eql([]);
+    expect(body).not.to.have.property('shelfPrevious');
     expect(body.prices).to.eql([]);
     expect(body.signIn).to.eql({
       ownPassword: true,

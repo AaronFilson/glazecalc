@@ -1,7 +1,8 @@
 // The MCP tools that change a person's own records (docs/integrations-plan.md,
 // item 37, and decision 10): create_recipe (the server works out its unity
 // formula), update_recipe, add_notebook_entry, add_my_material,
-// update_my_material, add_to_shelf, remove_from_shelf and move_to_trash. They
+// update_my_material, add_to_shelf, remove_from_shelf, undo_shelf_change and
+// move_to_trash. They
 // are offered with every working personal access token, so that an assistant
 // holding a read-only one can say why nothing was changed; each refuses,
 // changing nothing, unless the token's scopes allow its area's write
@@ -40,6 +41,7 @@ import Material from '../../models/material.ts';
 import Note from '../../models/note.ts';
 import Recipe from '../../models/recipe.ts';
 import { TRASH_DAYS } from '../../models/trash.ts';
+import { addKeys, removeKeys, shelfKeys, shelfOf, undoShelf } from '../../lib/shelf.ts';
 import User, { SHELF_KEY_LONGEST, SHELF_MOST } from '../../models/user.ts';
 import { WRITE_PAT_MOST_DAYS } from '../../models/access_token.ts';
 import {
@@ -53,7 +55,7 @@ import {
   ToolProblem,
   type RecipeLine
 } from '../common.ts';
-import { findAdditive, findMaterial, libraryIdOf, libraryKeyOf, nameKey } from '../library.ts';
+import { findAdditive, findMaterial, libraryIdOf, nameKey } from '../library.ts';
 import { chemistryText } from '../words.ts';
 import { analysisOf } from './public.ts';
 
@@ -113,6 +115,12 @@ const TRASHABLE: Record<string, { Model: RecordModel; area: Exclude<Area, 'trash
   note: { Model: Note, area: 'notes' },
   firing: { Model: Firing, area: 'firing' }
 };
+
+/** What remove_from_shelf says about getting the shelf back. */
+const UNDO_SHELF = 'The shelf as it was is kept: undo_shelf_change puts it back.';
+
+/** The materials changed, as one activity title. */
+const namesOf = (changed: Array<{ name: string }>): string => changed.map((k) => k.name).join(', ');
 
 /** Today's date as the recipe page writes it: 2026-10-19. */
 const today = (now = new Date()): string => now.toISOString().slice(0, 10);
@@ -474,21 +482,6 @@ export const registerWriteTools = (server: McpServer, caller: Caller): void => {
     }
   );
 
-  /** The shelf keys for materials named: your own material's id, or the library's key; and the names not found. */
-  const shelfKeys = async (names: string[]) => {
-    const own = await ownMaterials();
-    const keys: Array<{ name: string; keys: string[] }> = [];
-    const unknown: string[] = [];
-    for (const name of names) {
-      const mine = own(name);
-      const library = mine ? undefined : findMaterial(name);
-      if (mine) keys.push({ name: mine.name, keys: [String(mine._id)] });
-      else if (library)
-        keys.push({ name: library.name, keys: [...new Set([libraryKeyOf(library), 'name:' + library.name])] });
-      else unknown.push(name);
-    }
-    return { keys, unknown };
-  };
   const namesArg = z
     .array(
       z
@@ -503,32 +496,29 @@ export const registerWriteTools = (server: McpServer, caller: Caller): void => {
     'add_to_shelf',
     {
       title: 'Add to the materials I have on hand',
-      description: `Marks materials as on hand (the shelf that Match with what I have uses), by the library's names or your own materials'. ${NEEDS}`,
+      description: `Marks materials as on hand (the shelf that Match with what I have uses), by the library's names or your own materials'. The shelf as it was is kept: undo_shelf_change puts it back. ${NEEDS}`,
       inputSchema: z.object({ materials: namesArg.describe('The materials, by name.') }),
       annotations: ADDS
     },
     async ({ materials }) =>
       guarded(async () => {
         await mayChange('shelf:write');
-        const { keys, unknown } = await shelfKeys(materials);
+        const { keys, unknown } = await shelfKeys(userId, materials);
         if (unknown.length) {
           throw new ToolProblem(
             `Not in your materials or the Glazecalc library: ${unknown.join(', ')}. Use search_materials to find the name. Nothing was changed.`
           );
         }
         // The first key of each is the one the app keeps (its library key, or your material's id).
-        const adding = [...new Set(keys.map((k) => k.keys[0]!))];
         // Added only while the shelf stays within SHELF_MOST, in one step.
-        const result = await User.updateOne(
-          {
-            _id: userId,
-            $expr: { $lte: [{ $size: { $setUnion: [{ $ifNull: ['$shelf', []] }, adding] } }, SHELF_MOST] }
-          },
-          { $addToSet: { shelf: { $each: adding } } }
+        const result = await addKeys(
+          userId,
+          keys.map((k) => k.keys[0]!)
         );
-        if (!result.matchedCount) {
+        if (result === 'full') {
           throw new ToolProblem(`The shelf can hold at most ${SHELF_MOST} materials. Nothing was changed.`);
         }
+        if (result.changed) await logActivityBy(actor, userId, 'change', 'shelf', { name: namesOf(keys) });
         return ok({ added: keys.map((k) => k.name) });
       })
   );
@@ -537,22 +527,47 @@ export const registerWriteTools = (server: McpServer, caller: Caller): void => {
     'remove_from_shelf',
     {
       title: 'Remove from the materials I have on hand',
-      description: `Takes materials off the shelf of materials on hand, by name. The materials themselves stay. ${NEEDS}`,
+      description: `Takes materials off the shelf of materials on hand, by name. The materials themselves stay. The shelf as it was is kept: undo_shelf_change puts it back. ${NEEDS}`,
       inputSchema: z.object({ materials: namesArg.describe('The materials, by name.') }),
       annotations: REPLACES
     },
     async ({ materials }) =>
       guarded(async () => {
         await mayChange('shelf:write');
-        const { keys, unknown } = await shelfKeys(materials);
-        const user = await User.findById(userId, { shelf: 1 });
-        const shelf = new Set(user?.shelf ?? []);
+        const { keys, unknown } = await shelfKeys(userId, materials);
+        const shelf = new Set(await shelfOf(userId));
         const removed = keys.filter((k) => k.keys.some((key) => shelf.has(key)));
         if (removed.length) {
-          await User.updateOne({ _id: userId }, { $pull: { shelf: { $in: removed.flatMap((k) => k.keys) } } });
+          await removeKeys(
+            userId,
+            removed.flatMap((k) => k.keys)
+          );
+          await logActivityBy(actor, userId, 'change', 'shelf', { name: namesOf(removed) });
         }
         const notOnShelf = [...keys.filter((k) => !removed.includes(k)).map((k) => k.name), ...unknown];
-        return ok({ removed: removed.map((k) => k.name), ...(notOnShelf.length && { notOnShelf }) });
+        return ok({
+          removed: removed.map((k) => k.name),
+          ...(notOnShelf.length && { notOnShelf }),
+          ...(removed.length && { undo: UNDO_SHELF })
+        });
+      })
+  );
+
+  server.registerTool(
+    'undo_shelf_change',
+    {
+      title: 'Undo the last change to the materials I have on hand',
+      description: `Puts back the shelf as it was before its last change (by the website, an access token or an assistant). One step back only: a second call finds nothing to undo until the shelf changes again. ${NEEDS}`,
+      inputSchema: z.object({}),
+      annotations: REPLACES
+    },
+    async () =>
+      guarded(async () => {
+        await mayChange('shelf:write');
+        const shelf = await undoShelf(userId);
+        if (!shelf) throw new ToolProblem('There is no change to the shelf to undo. Nothing was changed.');
+        await logActivityBy(actor, userId, 'undo', 'shelf', { name: 'Shelf' });
+        return ok({ restored: true, materialsOnShelf: shelf.length });
       })
   );
 

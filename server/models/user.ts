@@ -191,6 +191,11 @@ export interface UserFields {
    */
   shelf?: string[];
   /**
+   * The shelf as it was before its last change, kept for one Undo (server/lib/shelf.ts);
+   * gone once undone. Exported and deleted with the account.
+   */
+  shelfPrevious?: string[];
+  /**
    * What the potter pays for materials, for cost per batch: a price per
    * kilogram by library key (as the shelf's), in the account's one currency
    * (preferences.currency). Business data, private to the account: never in
@@ -284,7 +289,7 @@ const mfaSchema = new mongoose.Schema<MfaFields>(
   { _id: false }
 );
 
-/** At most this many materials on the shelf, by the website (PUT /api/shelf) or an assistant (add_to_shelf). */
+/** At most this many materials on the shelf, by the website (PUT /api/shelf), a token (POST /api/shelf/add) or an assistant (add_to_shelf). */
 export const SHELF_MOST = 500;
 /** The longest key the shelf takes. */
 export const SHELF_KEY_LONGEST = 200;
@@ -317,6 +322,7 @@ const userSchema = new mongoose.Schema<UserFields, UserModel, UserMethods>({
     calendar: { type: String, enum: PREFERENCES.calendar }
   },
   shelf: { type: [String], default: undefined },
+  shelfPrevious: { type: [String], default: undefined },
   prices: {
     type: [new mongoose.Schema<Price>({ key: { type: String, required: true }, perKg: Number }, { _id: false })],
     default: undefined
