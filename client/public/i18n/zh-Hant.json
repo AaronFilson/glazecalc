@@ -95,7 +95,6 @@
     "about": "Glazecalc 是免費、開放原始碼的釉藥化學計算工具與筆記本。了解 Glazecalc 如何算出塞格式，以及如何建置。",
     "privacy": "Glazecalc 如何處理您的資料：沒有廣告、沒有分析、沒有追蹤，也不出售任何資料。保存什麼、為什麼，以及如何行使您的權利。",
     "terms": "使用 Glazecalc 的條款：您自己的釉藥和工作可免費使用，對共用的伺服器保持公平，並依現狀提供。",
-    "assistants": "透過 MCP 把 Claude、GitHub Copilot、Cursor 或 Gemini 連接到 Glazecalc：釉藥的化學計算、限值檢查、替代原料和指南，用存取權杖還可以使用您自己的釉方。",
     "signup": "建立免費的 Glazecalc 帳戶，保存您的釉方、原料、筆記與燒窯紀錄。沒有廣告，也絕不出售您的資料。",
     "imageAlt": "Glazecalc 首頁：給陶藝家的免費釉藥化學工具，旁邊是一張燒過的測溫錐組的照片。"
   },
