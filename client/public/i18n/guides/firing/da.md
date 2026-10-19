@@ -165,69 +165,69 @@ Regn med forskelle: Ifølge Orton »vil man typisk se mindst én kegles forskel 
 
 :::orton
 
-## Kiln-Sitteren {#kiln-sitter}
+## The kiln sitter {#kiln-sitter lang=en}
 
-En **Kiln-Sitter** er den mekaniske afbryder uden på mange enkle og ældre ovne, der slukker ovnen, når en lille kegle{{en: cone}} bøjer. Den mest kendte er Kiln-Sitteren fra Dawson. Den gør brændingen lettere, men den er en bekvemmelighed, ikke en sikkerhedsanordning.
+A **kiln sitter** is the mechanical switch, on the outside of many basic and older kilns, that turns the kiln off when a small cone bends. The best known is the Dawson Kiln-Sitter. It makes firing easier, but it is a convenience, not a safety device.
 
-### Sådan virker den
+### How it works
 
-Et rør af porcelæn går ind i ovnen. For enden af det ligger en lille kegle eller en stav på tværs af to kegleholdere af metal, under en **følerstang**, der bevæger sig om et drejepunkt som en vippe. Uden for ovnen holder stangens anden ende et lod oppe med en lille klo. Når keglen bliver blød og bøjer til ca. 90°, falder stangen så langt, at loddet udløses, loddet falder, og strømmen til varmelegemerne afbrydes.
+A porcelain tube reaches into the kiln. At its end, a small cone or a bar lies across two metal supports, under a **sensing rod** that pivots like a seesaw. Outside the kiln, the other end of the rod holds up a weight by a small claw. When the cone softens and bends to about 90°, the rod drops far enough to release the weight, the weight falls, and the power to the elements is cut.
 
-Små kegler og stave »giver tilsvarende varmebehandling«. Orton bemærker, at mange begyndere vælger stave, fordi deres jævne form gør det let at placere dem ens hver gang. En lille kegle er tilspidset, så det betyder noget, hvordan den ligger: Med den tynde del under stangen slukker ovnen ved en lavere temperatur, og med den tykke del ved en højere, en forskydning på »helt op til 1/2 kegle«.
+Small cones and bars "give equivalent heat treatment". Orton notes that many beginners choose bars, because their even shape makes it easy to place them the same way every time. A small cone tapers, so where it sits matters: with its thin part under the rod the kiln shuts off cooler, and with its thick part hotter, a shift of "as much as 1/2 cone".
 
-### Hvilken kegle skal i Kiln-Sitteren
+### Which cone goes in the sitter
 
-Kilderne er uenige. Dawson, der lavede Kiln-Sitteren, siger, at man skal bruge samme nummer som målkeglen på ovnpladen og kun gå ét nummer varmere, hvis keglen på ovnpladen forbliver ubøjet. L&L siger, at man skal bruge ét nummer varmere end keglerne på ovnpladen, fordi Kiln-Sitteren sidder nær væggen og varmelegemerne, får mere varme og har tendens til at slukke for tidligt. Orton fastslår princippet: »Keglen på ovnpladen er den endelige dommer over brændingen, ikke keglen eller staven i Kiln-Sitteren.«
-
-> [!NOTE]
-> Vores udgangspunkt: Læg en lille kegle med samme nummer som målet i Kiln-Sitteren, med et keglesæt på ovnpladen. Er målkeglen på ovnpladen ikke bøjet nok, når ovnen slukker, så gå ét nummer varmere i Kiln-Sitteren næste gang, eller læg den tykkere del af keglen under stangen. Er den bøjet for meget, så gør det modsatte.
-
-### Opsætning og kontrol før hver brænding
-
-Dawsons fremgangsmåde, der også fungerer som kontrol før hver brænding:
-
-1. Slå alle kontakter fra. Kontrollér, at følerstangen bevæger sig frit, sidder midt i røret og ikke er bøjet eller korroderet. Går den trægt, siger Dawson, at hele rørenheden skal udskiftes.
-2. Pensl et tyndt lag **pladebeskyttelse** til høj temperatur (et lag, der forhindrer smeltet materiale i at sætte sig fast) på kegleholderne og på stangen, hvor den rører keglen. Kom aldrig pladebeskyttelse på keglen eller porcelænsrøret.
-3. Sæt ovnplader og emner mindst 1 tomme (25 mm) over eller under røret, så intet kan røre det, falde mod det eller blokere det.
-4. Løft loddet, tryk kloen ned på udløseren, og læg keglen eller staven fladt på kegleholderne op mod metaltrinnet, som brugsanvisningen til Kiln-Sitteren viser, på samme måde hver gang. Tjek den igen, før låget lukkes: »EN FORKERT PLACERET KEGLE ELLER STAV KAN FORÅRSAGE EN OVERBRÆNDING.«
-5. Indstil tidsbegrænseren, og tryk knappen ind, til den går i hak. Hold ovnen i vater og pladsen under loddet fri, så loddet kan falde.
-
-### Tidsbegrænseren
-
-Mange Kiln-Sittere, også Dawsons LT-modeller, har en **tidsbegrænser** (limit timer): et ur, der slukker ovnen efter en indstillet tid, som reserve »hvis KILN-SITTEREN svigter«. Den bør altid indstilles længere, end brændingen forventes at tage. Kilderne sætter margenen forskelligt:
-
-Table: Hvor længe tidsbegrænseren skal indstilles
-Label: Indstilling af tidsbegrænseren
-
-| Kilde     | Indstilling                                                                                                                                       |
-| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Dawson    | ½ time længere end den forventede brændingstid, indtil man kender ovnen, senere helt ned til ¼ time længere; sæt den aldrig til mere end 20 timer |
-| L&L       | Meget højt første gang, og notér, hvor lang tid brændingen tager; derefter ca. 1 time længere                                                     |
-| Bracker’s | 30 minutter til 1 time længere end brændingstiden                                                                                                 |
+Sources disagree. Dawson, who made the sitter, says to use the same number as the firing cone on the shelf, and to go one number hotter only if the shelf cone stays unbent. L&L says to use one number hotter than the shelf cones, because the sitter sits near the wall and the elements, gets more heat, and tends to shut off early. Orton settles the principle: "The shelf cone is the final judge of the firing process, not the Kiln-Sitter cone or bar."
 
 > [!NOTE]
-> Vores udgangspunkt: rigeligt første gang (inden for urskivens 20 timer), derefter ½ til 1 time længere end den noterede tid. Uret viser også, hvor lang tid en brænding tog: Indstillet på 7 og slut på 1 betyder 6 timer.
+> Our starting point: put a small cone of the same number as your target in the sitter, with a cone pack on the shelf. If the shelf firing cone is under-bent when the kiln shuts off, go one number hotter in the sitter next time, or set the thicker part of the cone under the rod. If it is over-bent, do the opposite.
 
-### Når den slukker for tidligt eller for sent
+### Setting it up, and checks before every firing
 
-Aflæs efter hver brænding keglen fra Kiln-Sitteren sammen med keglerne fra ovnpladen.
+Dawson's procedure, which doubles as a check before every firing:
 
-Table: Aflæsning af Kiln-Sitteren efter en brænding
-Label: Problemer med Kiln-Sitteren
+1. Turn all the switches off. Check that the sensing rod moves freely, sits centered in the tube and is not bent or corroded. If it is sluggish, Dawson says to replace the tube assembly.
+2. Brush a thin coat of high-fire **kiln wash** (a coating that stops melted material sticking) onto the cone supports and the rod where it touches the cone. Never put wash on the cone or the porcelain tube.
+3. Load shelves and ware at least 1 in (25 mm) above or below the tube, so nothing can touch, fall against or block it.
+4. Lift the weight, press the claw down onto the trigger, and lay the cone or bar flat on the supports against the metal step, as your sitter's manual shows, the same way every time. Check it again before closing the lid: "AN IMPROPERLY PLACED CONE OR BAR COULD CAUSE AN OVERFIRING."
+5. Set the limit timer and push in the plunger until it locks. Keep the kiln level and the space under the weight clear, so the weight can fall.
 
-| Det, der ses                                                     | Sandsynlig årsag                                                                                                        | Hvad der skal gøres                                                             |
-| ---------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- |
-| Kiln-Sitteren slog fra, målkeglen på ovnpladen er ikke bøjet nok | Kiln-Sitteren fik mere varme end ovnpladen (den sidder nær væggen)                                                      | Én kegle varmere i Kiln-Sitteren, eller den tykkere del under stangen           |
-| Keglen i Kiln-Sitteren er sunket langt forbi 90°                 | Ovnen steg for hurtigt mod slutningen                                                                                   | Skru ned for kontakterne, så stigningen bliver langsommere (Dawson)             |
-| Keglen i Kiln-Sitteren bøjede ikke eller smeltede til en klat    | Selve Kiln-Sitteren: dårlig justering, en bøjet eller korroderet stang eller noget, der sidder fast i eller op ad røret | Kontrollér og justér Kiln-Sitteren efter brugsanvisningen, før der brændes igen |
-| For tidligt eller for sent hver gang                             | Forkert justeret, eller en slidt stang                                                                                  | Kontrollér med indstillingslæren; flyt udløserpladen                            |
+### The limit timer
 
-Til at kontrollere justeringen bruger Dawson en **indstillingslære**, der holder stangen, hvor en helt bøjet kegle ville efterlade den; der bør så være »1/16 tomme frigang« (ca. 1,6 mm) ved kloen. Kontrollér det for hver 30. brænding. Ceramics Monthlys regel: Slukker ovnen for tidligt, så flyt udløserpladen lidt op; slukker den for sent, så flyt den lidt ned. Uanset hvad Kiln-Sitteren gør: »Stol altid mere på store kontrolkegler end på små kegler i Kiln-Sitteren.«
+Many sitters, including Dawson's LT models, have a **limit timer**: a clock that turns the kiln off after a set time, as a backup "in case the KILN-SITTER fails". It should always be set longer than the firing is expected to take. Sources set the margin differently:
+
+Table: How long to set the limit timer
+Label: Limit timer settings
+
+| Source    | Setting                                                                                                                |
+| --------- | ---------------------------------------------------------------------------------------------------------------------- |
+| Dawson    | ½ hour longer than the expected firing time until you know the kiln, later ¼ hour longer; never set it beyond 20 hours |
+| L&L       | Very high the first time, noting how long the firing takes; after that, about 1 hour longer                            |
+| Bracker's | 30 minutes to 1 hour longer than the firing time                                                                       |
+
+> [!NOTE]
+> Our starting point: generous the first time (within the dial's 20 hours), then ½ to 1 hour longer than the time you recorded. The timer also tells you how long a firing took: set at 7 and ending at 1 means 6 hours.
+
+### When it shuts off early or late
+
+After each firing, read the sitter cone beside the shelf cones.
+
+Table: Reading the sitter after a firing
+Label: Kiln sitter problems
+
+| What you see                                    | Likely cause                                                                                           | What to do                                                       |
+| ----------------------------------------------- | ------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------- |
+| Sitter tripped, shelf firing cone under-bent    | The sitter ran hotter than the shelf (it sits near the wall)                                           | One cone hotter in the sitter, or the thicker part under the rod |
+| Sitter cone sagged well past 90°                | The kiln climbed too fast near the end                                                                 | Lower the switch settings, so the climb is slower (Dawson)       |
+| Sitter cone did not bend, or melted into a blob | The sitter itself: poor adjustment, a bent or corroded rod, or something lodged in or against the tube | Check and adjust the sitter by its manual before firing again    |
+| Early or late every time                        | Out of adjustment, or a worn rod                                                                       | Check with the firing gauge; move the trigger plate              |
+
+To check the adjustment, Dawson uses a **firing gauge** that holds the rod where a fully bent cone would leave it; there should then be "1/16th-inch clearance" (about 1.6 mm) at the claw. Check it every 30 firings. Ceramics Monthly's rule: if the kiln shuts off early, move the trigger plate up slightly; if late, move it down slightly. Whatever the sitter does, "Always trust large witness cones over small sitter cones."
 
 > [!WARNING]
-> **En Kiln-Sitter er ikke en sikkerhedsanordning.** Ifølge Dawsons brugsanvisning »er den IKKE beregnet til at fungere som en fejlsikker afbryder, og ovnen bør IKKE efterlades uden opsyn ud over den forventede brændingstid.« Noget så simpelt som et ubrændt emne{{en: greenware}}, der falder mod røret, »kan forårsage en overbrænding«. Vær til stede, og tjek ovnen, når brændingen burde være ved at slutte, og brænd den aldrig over eller nær noget, der kan brænde, fx et trægulv eller et tæppe.
+> **A kiln sitter is not a safety device.** Dawson's manual says it "is NOT intended to perform as a fail-safe shut-off device and your kiln should NOT be left unattended beyond the estimated firing time." Something as simple as greenware falling against the tube "might cause an over-firing". Be there to check the kiln when it should be finishing, and never fire it over or near anything that burns, such as a wood floor or carpet.
 
-Kiln-Sitteren er bygget til brændinger »op til og med kegle 8«. Den kan ikke selv holde en temperatur eller køle langsomt af. Med øvelse og en brændingsjournal kan man dog »blive styringen«, som Digitalfire udtrykker det: Hold øje med keglerne, og drej kontakterne med hånden.
+The sitter is built for firings "up to and including Cone 8". It cannot hold a temperature or cool slowly by itself. With practice and a log, though, you can "become the controller", as Digitalfire puts it: watch the cones and turn the switches by hand.
 
 :::
 
@@ -281,92 +281,92 @@ Et **kegleoffset** er en indstilling i styringen, der flytter dens temperatur fo
 
 :::sk
 
-## Brænding efter SK-kegler {#sk-cones}
+## Firing to SK cones {#sk-cones lang=en}
 
-SK-kegler er de pyrometriske kegler{{en: pyrometric cone}}, der fremstilles efter Japans standard, JIS R 8101, og sælges i Japan af forhandlere som Yuko Trading (有恒商事). Som enhver kegle måler en SK-kegle varmepåvirkning{{en: heatwork}}, ikke temperatur alene: Den bliver blød og bøjer over, når emnerne har fået varme nok, og man aflæser, hvor langt den har bøjet. Kontrolkegler{{en: witness cone}}, aflæsning af, hvor langt en kegle har bøjet, og holdetider virker for den som for enhver kegle. Dette afsnit angiver hver kegles system og omregner aldrig et SK-nummer til et nummer i et andet system: Numrene i forskellige keglerækker kan ikke bruges i hinandens sted.
+SK cones are the pyrometric cones made to Japan's standard, JIS R 8101, and sold in Japan by dealers such as Yuko Trading (有恒商事). Like any cone, an SK cone measures heatwork, not temperature alone: it softens and bends over when the ware has had enough heat, and you read how far it bent. Witness cones, reading how far a cone has bent, and holds work for it as for any cone. This section names each cone's system, and never turns an SK number into another system's number: the numbers of different cone series are not interchangeable.
 
 > [!NOTE]
-> Skriv altid »SK« foran nummeret. Mange ældre japanske opskrifter siger kun »SK 8« eller »SK 9« uden at sige, hvis kegle det er. Kyoto-kegler og SK-kegler efter JIS har de samme numre, men bøjer ved forskellige temperaturer (se Kyoto-kegler nedenfor).
+> Always write "SK" before the number. Many older Japanese recipes say only "SK 8" or "SK 9" without saying whose cone. Kyoto cones and SK cones to JIS carry the same numbers but bend at different temperatures (see Kyoto cones, below).
 
-### De store kegler
+### The large cones
 
-Standarden har to størrelser. Store kegler (大型コーン) bruges »hovedsageligt til at måle brændingsgraden« (焼度測定), og det er det, en keramiker har brug for. Små kegler (SK 26 til SK 42, øverst i rækken) bruges »hovedsageligt til prøvning af ildfasthed« og er ikke med her. Tabellen nedenfor viser de store kegler fra SK 022 til SK 20.
+The standard has two sizes. Large cones (大型コーン) are "mainly used for measuring the degree of firing" (焼度測定), which is what a potter wants. Small cones (SK 26 to SK 42, at the top of the range) are "mainly used for refractoriness tests" and are not covered here. The table below gives the large cones from SK 022 to SK 20.
 
-Numrene går her fra SK 022, den koldeste, op til SK 20. Mellem SK 015 og SK 6 har de trykte numre et »a« (SK 015a, SK 6a); skriv det, som det er trykt.
+The numbers run from SK 022, the coolest, up to SK 20 here. Between SK 015 and SK 6 the printed numbers carry an "a" (SK 015a, SK 6a); write it as printed.
 
-### Sådan sættes store kegler
+### Setting large cones
 
-Sæt hver stor kegle i en keglestander eller en klump ler, så den hælder mod sin bøjeside. Hold, som med enhver kegle, højden og hældningen ens fra brænding til brænding, fordi en forskel i den ene eller den anden ændrer, hvor langt den bøjer. Sæt de tre kegler i keglesættet{{en: cone pack}} (nedenfor) sammen, dybt inde i ovnen nær midten af ovnfyldet, hvor de får den varme, emnerne får, men hvor de stadig kan ses gennem et kighul; kontrollér, før ovnen lukkes, at alle tre kan ses.
+Set each large cone in a plaque or a pat of clay, leaning toward its bending face. As with any cone, keep the height and the lean the same from firing to firing, because a difference in either changes how far it bends. Set the three cones of the pack (below) together, deep in the kiln near the middle of the load, where they get the heat the ware gets, yet where you can see them through a peephole; before you close the kiln, check that you can see all three.
 
-### Advarselskegle, målkegle og sikkerhedskegle
+### Guide, firing and guard cones
 
-Kegler sælges og sættes tre ad gangen: en advarselskegle, en målkegle ved målet og en sikkerhedskegle. Tag som målkegle det SK-nummer, som opskriften eller leret angiver, som advarselskegle den nærmeste køligere kegle (en række op i tabellen) og som sikkerhedskegle den nærmeste varmere. Når advarselskeglen begynder at bøje, er slutningen nær; når sikkerhedskeglen bøjer, er brændingen gået for langt.
+Cones are sold and set as three: a guide cone, a firing cone at the target, and a guard cone. Take the firing cone as the SK number your recipe or clay names, the guide cone as the next cooler cone (one row up in the table) and the guard cone as the next hotter one. When the guide cone starts to bend, the end is near; when the guard cone bends, the firing has gone too far.
 
-### SK-tabellen
+### The SK chart
 
-Table: Store SK-kegler (JIS R 8101): hver kegles nominelle temperatur (JIS)
-Label: SK-tabel
+Table: SK large cones (JIS R 8101): the nominal (JIS) temperature of each
+Label: SK chart
 
-| Kegle   | Nominel temperatur (JIS) |
-| ------- | -----------------------: |
-| SK 022  |      {{1112 °F; 600 °C}} |
-| SK 021  |      {{1202 °F; 650 °C}} |
-| SK 020  |      {{1238 °F; 670 °C}} |
-| SK 019  |      {{1274 °F; 690 °C}} |
-| SK 018  |      {{1310 °F; 710 °C}} |
-| SK 017  |      {{1346 °F; 730 °C}} |
-| SK 016  |      {{1382 °F; 750 °C}} |
-| SK 015a |      {{1454 °F; 790 °C}} |
-| SK 014a |      {{1499 °F; 815 °C}} |
-| SK 013a |      {{1535 °F; 835 °C}} |
-| SK 012a |      {{1571 °F; 855 °C}} |
-| SK 011a |      {{1616 °F; 880 °C}} |
-| SK 010a |      {{1652 °F; 900 °C}} |
-| SK 09a  |      {{1688 °F; 920 °C}} |
-| SK 08a  |      {{1724 °F; 940 °C}} |
-| SK 07a  |      {{1760 °F; 960 °C}} |
-| SK 06a  |      {{1796 °F; 980 °C}} |
-| SK 05a  |     {{1832 °F; 1000 °C}} |
-| SK 04a  |     {{1868 °F; 1020 °C}} |
-| SK 03a  |     {{1904 °F; 1040 °C}} |
-| SK 02a  |     {{1940 °F; 1060 °C}} |
-| SK 01a  |     {{1976 °F; 1080 °C}} |
-| SK 1a   |     {{2012 °F; 1100 °C}} |
-| SK 2a   |     {{2048 °F; 1120 °C}} |
-| SK 3a   |     {{2084 °F; 1140 °C}} |
-| SK 4a   |     {{2120 °F; 1160 °C}} |
-| SK 5a   |     {{2156 °F; 1180 °C}} |
-| SK 6a   |     {{2192 °F; 1200 °C}} |
-| SK 7    |     {{2246 °F; 1230 °C}} |
-| SK 8    |     {{2282 °F; 1250 °C}} |
-| SK 9    |     {{2336 °F; 1280 °C}} |
-| SK 10   |     {{2372 °F; 1300 °C}} |
-| SK 11   |     {{2408 °F; 1320 °C}} |
-| SK 12   |     {{2462 °F; 1350 °C}} |
-| SK 13   |     {{2516 °F; 1380 °C}} |
-| SK 14   |     {{2570 °F; 1410 °C}} |
-| SK 15   |     {{2615 °F; 1435 °C}} |
-| SK 16   |     {{2660 °F; 1460 °C}} |
-| SK 17   |     {{2696 °F; 1480 °C}} |
-| SK 18   |     {{2732 °F; 1500 °C}} |
-| SK 19   |     {{2768 °F; 1520 °C}} |
-| SK 20   |     {{2786 °F; 1530 °C}} |
+| Cone    | Nominal (JIS) temperature |
+| ------- | ------------------------: |
+| SK 022  |       {{1112 °F; 600 °C}} |
+| SK 021  |       {{1202 °F; 650 °C}} |
+| SK 020  |       {{1238 °F; 670 °C}} |
+| SK 019  |       {{1274 °F; 690 °C}} |
+| SK 018  |       {{1310 °F; 710 °C}} |
+| SK 017  |       {{1346 °F; 730 °C}} |
+| SK 016  |       {{1382 °F; 750 °C}} |
+| SK 015a |       {{1454 °F; 790 °C}} |
+| SK 014a |       {{1499 °F; 815 °C}} |
+| SK 013a |       {{1535 °F; 835 °C}} |
+| SK 012a |       {{1571 °F; 855 °C}} |
+| SK 011a |       {{1616 °F; 880 °C}} |
+| SK 010a |       {{1652 °F; 900 °C}} |
+| SK 09a  |       {{1688 °F; 920 °C}} |
+| SK 08a  |       {{1724 °F; 940 °C}} |
+| SK 07a  |       {{1760 °F; 960 °C}} |
+| SK 06a  |       {{1796 °F; 980 °C}} |
+| SK 05a  |      {{1832 °F; 1000 °C}} |
+| SK 04a  |      {{1868 °F; 1020 °C}} |
+| SK 03a  |      {{1904 °F; 1040 °C}} |
+| SK 02a  |      {{1940 °F; 1060 °C}} |
+| SK 01a  |      {{1976 °F; 1080 °C}} |
+| SK 1a   |      {{2012 °F; 1100 °C}} |
+| SK 2a   |      {{2048 °F; 1120 °C}} |
+| SK 3a   |      {{2084 °F; 1140 °C}} |
+| SK 4a   |      {{2120 °F; 1160 °C}} |
+| SK 5a   |      {{2156 °F; 1180 °C}} |
+| SK 6a   |      {{2192 °F; 1200 °C}} |
+| SK 7    |      {{2246 °F; 1230 °C}} |
+| SK 8    |      {{2282 °F; 1250 °C}} |
+| SK 9    |      {{2336 °F; 1280 °C}} |
+| SK 10   |      {{2372 °F; 1300 °C}} |
+| SK 11   |      {{2408 °F; 1320 °C}} |
+| SK 12   |      {{2462 °F; 1350 °C}} |
+| SK 13   |      {{2516 °F; 1380 °C}} |
+| SK 14   |      {{2570 °F; 1410 °C}} |
+| SK 15   |      {{2615 °F; 1435 °C}} |
+| SK 16   |      {{2660 °F; 1460 °C}} |
+| SK 17   |      {{2696 °F; 1480 °C}} |
+| SK 18   |      {{2732 °F; 1500 °C}} |
+| SK 19   |      {{2768 °F; 1520 °C}} |
+| SK 20   |      {{2786 °F; 1530 °C}} |
 
-Alle tal er nominelle (JIS): den temperatur, standarden angiver for keglen, som den er trykt i Yuko Tradings tabel. Tabellen angiver ingen opvarmningshastighed. Standarden giver referencetemperaturer. Ved en hastighed, som keramikere bruger, omkring 100 °C/h, målte Kyotos kommunale institut, at dets egne Kyoto-kegler bøjede ved en temperatur 40–70 °C lavere end JIS-tallet for samme nummer; vi har ikke fundet sådanne målinger for SK-kegler efter JIS. Sæt en kontrolkegle, og sammenlign.
+Every figure is nominal (JIS): the temperature the standard gives for the cone, as printed in Yuko Trading's table. The table does not print a heating rate. The standard gives reference temperatures. At a potter's rate of about 100 °C/h, Kyoto's municipal institute measured its own Kyoto cones bending 47–79 °C cooler than the JIS figure for the same number; we found no such measurements for SK cones to JIS. Set a witness cone and compare.
 
-### Kyoto-kegler
+### Kyoto cones
 
-Kyoto-kegler (京都ゼーゲル), lavet af Kyotos kommunale institut, fremstilles ikke længere: Ifølge nyhedsartikler stoppede instituttet produktionen ved udgangen af regnskabsåret 2009. De har de samme numre som SK-kegler efter JIS, men bøjer køligere: En Kyoto-kegle bøjer for det meste ved omtrent samme temperatur som den SK-kegle efter JIS, der ligger to numre lavere. En opskrift fra Kyoto, der siger »SK 8«, kan mene en Kyoto-kegle. Instituttet har udgivet råd til keramikere, der skifter fra Kyoto-kegler til Ortonkegler, og erstatter sin egen Kyoto-kegle SK 12 med Ortonkegle 10; det er instituttets valg ud fra dets egne målinger ved 100 °C/h og gælder ingen anden kegle.
+Kyoto cones (京都ゼーゲル), made by Kyoto's municipal institute, are no longer made: news reports say the institute ended production at the close of fiscal 2009. They carry the same numbers as SK cones to JIS but bend cooler: a Kyoto cone bends at about the temperature of the SK cone to JIS two or three numbers lower. A recipe from Kyoto that says "SK 8" may mean a Kyoto cone. The institute has published advice for potters moving from Kyoto cones to Orton cones, and substitutes Orton cone 10 for its own Kyoto SK 12; that is the institute's choice from its own measurements at 100 °C/h, and applies to no other cone.
 
-### Ortonkegler, der sælges i Japan
+### Orton cones sold in Japan
 
-Selvstående Ortonkegler sælges i Japan under navnet 立つゼーゲル (»stående Seger«), fordi de hverken skal bruge keglestander eller fod. De er Ortonkegler, med Ortons numre og Ortons tabel (ovenfor): Brænd kun til en sådan kegle efter dens Ortonnummer, og hold SK-kegler og Ortonkegler i hver sit keglesæt, aldrig i det samme.
+Orton self-supporting cones are sold in Japan under the name 立つゼーゲル ("standing Seger"), because they need no plaque or stand. They are Orton cones, with Orton's numbers and Orton's chart (above): fire to one only by its Orton number, and keep SK and Orton cones in separate packs, never in the same one.
 
-### Kilder om SK-kegler
+### Sources for SK cones
 
-- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (SK-tabellen, tjekket 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
-- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (gældende, bekræftet igen 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
-- [Kyoto Municipal Institute of Industrial Technology and Culture: hvad man skal være opmærksom på ved skiftet fra Kyoto-kegler til Ortonkegler](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
+- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (the SK table, checked 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
+- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (in force, reconfirmed 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
+- [Kyoto Municipal Institute of Industrial Technology and Culture: points to note when moving from Kyoto cones to Orton cones](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
 
 :::
 

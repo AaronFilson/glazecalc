@@ -36,6 +36,16 @@ describe('the hanja check', () => {
     ]);
   });
 
+  it('leaves a guide section still in English alone, though it quotes Japanese', () => {
+    writeFileSync(
+      path.join(dir, 'guides', 'firing', 'ko.md'),
+      '# 소성\n\n콘이 휘어집니다.\n\n## SK cones {#sk-cones lang=en}\n\nKyoto cones (京都ゼーゲル).\n\n## 출처 {#sources}\n\n콘(錐).\n'
+    );
+    expect(checkHanja({ dir, glossary })).to.eql([
+      'guides/firing/ko.md: Korean is written in Hangul, not hanja such as 錐 (or give them in its glossary)'
+    ]);
+  });
+
   it('leaves the other languages alone, Japanese and Chinese above all', () => {
     writeFileSync(path.join(dir, 'ja.json'), JSON.stringify({ material: '長石' }));
     writeFileSync(path.join(dir, 'zh-Hant.json'), JSON.stringify({ material: '長石' }));

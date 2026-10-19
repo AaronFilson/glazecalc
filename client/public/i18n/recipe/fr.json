@@ -472,7 +472,6 @@
     "expansionRises": "Sa dilatation calculée passe de {was} à {now}.",
     "expansionRisesProbably": "Si l’ancien émail s’accordait tout juste à votre terre, celui-ci va probablement tressailler, parfois des semaines plus tard.",
     "expansionRisesMay": "Si l’ancien émail s’accordait tout juste à votre terre, celui-ci peut tressailler, parfois des semaines plus tard.",
-    "expansionRisesFix": "Le tressaillage fragilise les pièces et est déconseillé sur les surfaces en contact avec les aliments. Remplacer une partie de la soude et de la potasse par des fondants à plus faible dilatation (bore, lithium, magnésium ou calcium) fait baisser la dilatation ; ajouter de la silice est parfois suggéré, mais les sources ne sont pas d’accord.",
     "expansionFalls": "Sa dilatation calculée baisse de {was} à {now}. Un émail à dilatation un peu plus basse résiste généralement mieux au tressaillage.",
     "expansionFallsProbably": "Avec une dilatation beaucoup plus basse, l’émail va probablement s’écailler, en détachant des éclats coupants des bords et des arêtes.",
     "expansionFallsCan": "Avec une dilatation beaucoup plus basse, l’émail peut s’écailler, en détachant des éclats coupants des bords et des arêtes.",
@@ -904,7 +903,6 @@
     "foodSurface": "Pour une surface alimentaire (un émail intérieur)",
     "liner": {
       "note": "La sécurité alimentaire dépend de la cuisson de cet émail au cône auquel il a été testé : un émail sous-cuit peut relarguer des métaux.",
-      "range": "Il est indiqué pour une plage : testez-le donc à l’extrémité basse de la plage, là où il fond le moins.",
       "untested": "Aucun cône n’est encore marqué comme testé.",
       "test": "Seul un test de relargage de vos propres pièces cuites montre s’il est apte au contact alimentaire."
     },

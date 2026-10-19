@@ -149,38 +149,38 @@ Label: Διαλυτά υλικά
 
 Αν ένα κατοικίδιο ίσως έφαγε ή ήπιε κάτι από το εργαστήριο, ή δείχνει σημάδια σαν αυτά που αναφέρθηκαν, καλέστε τον κτηνίατρό σας ή μια γραμμή δηλητηριάσεων ζώων (δείτε τον πίνακα στην αρχή), έχοντας πρόχειρα το όνομα του υλικού και το βάρος του ζώου.
 
-## Το καμίνι {#the-kiln}
+## The kiln {#the-kiln lang=en}
 
-### Το εξωτερικό ζεσταίνεται τόσο που καίει
+### The outside gets hot enough to burn
 
-Μια βρετανική εκτίμηση κινδύνων για σχολεία λέει ότι η εξωτερική επιφάνεια ενός καμινιού «μπορεί να φτάσει τους 160 °C και ίσως περισσότερο» (περίπου 320 °F), και ένας οδηγός καμινιών για σχολεία αναφέρει έως 460 °F (περίπου 240 °C) στις μεταλλικές λωρίδες. Η Skutt, εταιρεία που κατασκευάζει καμίνια, συνιστά έναν χώρο για το καμίνι που να κλειδώνει, ώστε να μην μπαίνουν παιδιά και κατοικίδια. Όπου ο χώρος δεν μπορεί να κλειδώσει, ο οδηγός για σχολεία προτείνει ένα φράγμα, όπως ένα προστατευτικό πλέγμα για το καμίνι.
+A UK schools risk assessment says a kiln's outside "can reach 160 °C and possibly more" (about 320 °F), and a school kiln guide reports metal bands at up to 460 °F (about 240 °C). Skutt, a kiln maker, recommends a kiln room that can be locked against children and pets. Where a room cannot be locked, the school guide suggests a barrier such as a kiln safety screen.
 
-Τα μικρά παιδιά και τα κατοικίδια δεν μπορούν να καταλάβουν μια προειδοποιητική πινακίδα. Προτείνουμε να τα κρατάτε πίσω από κλειδωμένη πόρτα ή φράγμα όσο ψήνει το καμίνι και όσο κρυώνει, και να βάλετε προειδοποιητική πινακίδα για όλους τους άλλους.
+Small children and pets cannot understand a warning sign. We suggest keeping them behind a locked door or a barrier while the kiln fires and while it cools, and posting a warning sign for everyone else.
 
-### Ο χώρος γύρω από το καμίνι
+### Space around it
 
-Οι πηγές διαφωνούν για την απόσταση ασφαλείας. Η Rio Grande λέει τουλάχιστον 12 ίντσες (30 cm) από τους τοίχους και από οτιδήποτε καύσιμο. Η L&L συνιστά έντονα 18 ίντσες (46 cm) από όλους τους τοίχους, και ο οικοδομικός κανονισμός στον οποίο παραπέμπει ζητά 3 πόδια (0,9 m) από τοίχους από καύσιμο υλικό. Ακολουθήστε το εγχειρίδιο του καμινιού σας και τους τοπικούς κανονισμούς πυρασφάλειας. Αν έχετε αμφιβολίες, αφήστε 18 ίντσες από κάθε τοίχο και 3 πόδια από οτιδήποτε μπορεί να καεί. Σε γκαράζ, κρατάτε τα αυτοκίνητα, τα καύσιμα και τις μπογιές πολύ μακριά.
+Sources disagree on clearance. Rio Grande says at least 12 inches (30 cm) from walls and anything combustible. L&L strongly recommends 18 inches (46 cm) to all walls, and the building code it cites asks for 3 feet (0.9 m) from combustible walls. Follow your kiln's manual and local fire code; if you are unsure, allow 18 inches from any wall and 3 feet from anything that can burn. In a garage, keep cars, fuel and paint well away.
 
-### Ρεύμα
+### Power
 
-Η Rio Grande συνιστά **ξεχωριστή ηλεκτρική γραμμή** (που δεν τροφοδοτεί τίποτε άλλο) με σωστά γειωμένη πρίζα. Προτείνουμε να μη χρησιμοποιείτε καλώδιο προέκτασης. Ανάμεσα στα ψησίματα, κατεβάζετε την ασφάλεια του καμινιού ή τον διακόπτη απομόνωσής του, ή το βγάζετε από την πρίζα, ώστε να μην μπορεί ένα παιδί να το θέσει σε λειτουργία.
+Rio Grande recommends a **dedicated circuit** (one that powers nothing else) with a properly grounded outlet. We suggest no extension cord. Between firings, switch off the kiln's breaker or disconnect switch, or unplug it, so a child cannot start it.
 
-### Να είστε εκεί όταν τελειώνει το ψήσιμο
+### Be there when the firing ends
 
-Το **Kiln-Sitter** είναι ο μηχανικός διακόπτης σε πολλά καμίνια χωρίς ελεγκτή: ένας μικρός κώνος{{en: cone}} λυγίζει στο τέλος του ψησίματος και κατεβάζει τον διακόπτη. Το εγχειρίδιό του λέει ότι «ΔΕΝ προορίζεται να λειτουργεί ως διάταξη διακοπής ασφαλής σε περίπτωση βλάβης». Η Rio Grande λέει να μην αφήνετε ποτέ χωρίς επίβλεψη ένα καμίνι που ψήνει, «ιδίως κοντά στην αναμενόμενη ώρα διακοπής». Άρα, μένετε κοντά και ελέγχετε το καμίνι όσο ψήνει, πάνω απ’ όλα προς το τέλος· ψήνετε μόνο όταν ένας ενήλικας θα είναι στο σπίτι και ξύπνιος για να μένει κοντά και να ελέγχει το καμίνι, ελέγχετε ότι το καμίνι έχει σβήσει, και έχετε πυροσβεστήρα τύπου ABC στον χώρο του καμινιού. Για το πώς λειτουργούν τα Kiln-Sitter, οι ελεγκτές και τα προγράμματα ψησίματος, δείτε [Ψήσιμο σε ένα απλό καμίνι](/guides/firing).
+A **kiln sitter** is the mechanical switch on many manual kilns: a small cone bends at the end of the firing and trips the switch off. Its manual says it "is NOT intended to perform as a fail-safe shut-off device." Rio Grande says never to leave a firing kiln unattended, "especially near the expected shut-off time". So stay nearby and check the kiln while it fires, above all near the end; fire only when an adult will be home and awake through the whole firing, check that it has switched off, and keep an ABC fire extinguisher in the kiln room. For how sitters, controllers and schedules work, see [Firing a basic kiln](/guides/firing).
 
-### Αναθυμιάσεις και μονοξείδιο του άνθρακα
+### Fumes and carbon monoxide
 
-Το ψήσιμο βγάζει αναθυμιάσεις, οπότε αερίστε το καμίνι προς τα έξω. Ο οδηγός [Ασφαλής ανάμειξη και εξαερισμός](/guides/safe-mixing) εξηγεί πώς. Ένα καμίνι σε γκαράζ κολλητό στο σπίτι χρειάζεται εξαερισμό που να εμποδίζει τις αναθυμιάσεις να φτάσουν στο σπίτι από την ενδιάμεση πόρτα. Κρατάτε τα πουλιά σε μακρινό δωμάτιο κάθε φορά που ψήνει το καμίνι.
+Firing gives off fumes, so vent the kiln to the outdoors; [Safe mixing and ventilation](/guides/safe-mixing) explains how. A kiln in an attached garage needs venting that keeps fumes from reaching the house through the connecting door. Keep birds in a far room whenever the kiln fires.
 
-Το **μονοξείδιο του άνθρακα** (CO) είναι δηλητηριώδες αέριο που δεν μπορείτε να δείτε ούτε να μυρίσετε. Ένα φυλλάδιο ασφάλειας καμινιών ενός πανεπιστημίου απαιτεί ανιχνευτές μονοξειδίου του άνθρακα στα καμίνια αερίου. Για τα ηλεκτρικά καμίνια οι απόψεις διαφέρουν, όμως το κάψιμο των οργανικών υλών (στον πηλό, ή σε πράγματα όπως χαρτί ή κερί) μπορεί να παράγει CO. Πιστεύουμε ότι ένας ανιχνευτής CO στον χώρο του καμινιού και στα διπλανά δωμάτια είναι λογικό και φτηνό μέτρο για κάθε καμίνι.
+**Carbon monoxide** (CO) is a poisonous gas you cannot see or smell. A university kiln safety sheet requires CO alarms with gas kilns. Views differ for electric kilns, but burning off organic matter (in clay, or things like paper or wax) can make CO. We think a CO alarm in the kiln room and the rooms next to it is a sensible, inexpensive step for any kiln.
 
-### Οπές παρατήρησης και μάτια
+### Peepholes and eyes
 
-Η υπέρυθρη ακτινοβολία, που δεν μπορείτε να τη δείτε, «ξεκινά στους 752°F (400°C)», και το Ceramic Arts Network λέει ότι όταν κοιτάτε μέσα σε καμίνι πάνω από αυτή τη θερμοκρασία θα πρέπει πάντα να φοράτε προστασία για τα μάτια. Η υπέρυθρη ακτινοβολία μπορεί να βλάψει τον φακό του ματιού και να οδηγήσει σε καταρράκτη, και το παρατεταμένο κοίταγμα μπορεί να τραυματίσει τον αμφιβληστροειδή. Τα γυαλιά ηλίου και τα γυαλιά διδυμίου δεν την εμποδίζουν.
+Infrared light, which you cannot see, "starts at 752°F (400°C)", and the Ceramic Arts Network says looking into a kiln above this should always be done with eye protection. Infrared can damage the lens of the eye and lead to cataracts, and long gazing can injure the retina. Sunglasses and didymium glasses do not block it.
 
 > [!WARNING]
-> Τα παιδιά δεν θα πρέπει να κοιτάζουν καθόλου μέσα σε καμίνι. Μια οπή παρατήρησης που λάμπει τα τραβάει, και δεν είναι σίγουρο ότι θα κρατήσουν φορεμένα τα προστατευτικά γυαλιά, οπότε κρατάτε τα μακριά όσο το καμίνι είναι ζεστό. Οι ενήλικες θα πρέπει να κοιτάζουν μόνο για λίγο, μέσα από γυαλιά συγκόλλησης με φίλτρο υπερύθρων. Οι πηγές συνιστούν βαθμούς σκίασης από 1,7 έως 5. Ο βαθμός σκίασης 3 είναι λογική επιλογή, ή πιο σκούρος αν βλέπετε κηλίδες μετά.
+> Children should not look into a kiln at all. A glowing peephole draws them, and they will not reliably keep protective glasses on, so keep them away while the kiln is hot. Adults should look only briefly, through IR-rated welding glasses. Sources recommend shades from 1.7 to 5; shade 3 is a sensible choice, darker if you see spots afterward.
 
 ## Χειροποίητα κεραμικά στο οικογενειακό τραπέζι {#handmade-ware}
 

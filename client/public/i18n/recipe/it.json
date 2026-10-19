@@ -472,7 +472,6 @@
     "expansionRises": "La dilatazione calcolata sale da {was} a {now}.",
     "expansionRisesProbably": "Se il vecchio smalto era appena in accordo con l’impasto, questo probabilmente cavillerà, a volte dopo settimane.",
     "expansionRisesMay": "Se il vecchio smalto era appena in accordo con l’impasto, questo potrebbe cavillare, a volte dopo settimane.",
-    "expansionRisesFix": "La cavillatura indebolisce i pezzi e non è consigliata sulle superfici a contatto con il cibo. Sostituire una parte di sodio e potassio con fondenti a minore dilatazione (boro, litio, magnesio o calcio) abbassa la dilatazione; a volte si suggerisce di aggiungere silice, ma le fonti non concordano.",
     "expansionFalls": "La dilatazione calcolata scende da {was} a {now}. Una dilatazione un po’ più bassa di solito resiste meglio alla cavillatura.",
     "expansionFallsProbably": "Se è molto più bassa, lo smalto probabilmente darà scagliatura, con schegge taglienti che si staccano da bordi e spigoli.",
     "expansionFallsCan": "Se è molto più bassa, lo smalto può dare scagliatura, con schegge taglienti che si staccano da bordi e spigoli.",
@@ -904,7 +903,6 @@
     "foodSurface": "Per una superficie a contatto con gli alimenti (uno smalto interno)",
     "liner": {
       "note": "La sicurezza alimentare dipende dal cuocere questo smalto al cono a cui è stato provato: uno smalto sottocotto può cedere metalli.",
-      "range": "È indicato per un intervallo, quindi provarlo all’estremità bassa dell’intervallo, dove fonde meno.",
       "untested": "Nessun cono è ancora segnato come provato.",
       "test": "Solo una prova di cessione sui propri pezzi cotti mostra se è idoneo al contatto con gli alimenti."
     },

@@ -472,7 +472,6 @@
     "expansionRises": "Sen laskennallinen lämpölaajeneminen nousee arvosta {was} arvoon {now}.",
     "expansionRisesProbably": "Jos vanha lasite sopi juuri ja juuri käytettyyn saveen, tämä todennäköisesti säröilee, joskus vasta viikkojen päästä.",
     "expansionRisesMay": "Jos vanha lasite sopi juuri ja juuri käytettyyn saveen, tämä voi säröillä, joskus vasta viikkojen päästä.",
-    "expansionRisesFix": "Säröily heikentää esineitä, eikä sitä suositella ruoan kanssa kosketuksiin tuleville pinnoille. Osan natriumin ja kaliumin vaihtaminen vähemmän laajeneviin sulattajiin (boori, litium, magnesium tai kalsium) laskee lämpölaajenemista; piidioksidin lisäämistä ehdotetaan joskus, mutta lähteet ovat eri mieltä.",
     "expansionFalls": "Sen laskennallinen lämpölaajeneminen laskee arvosta {was} arvoon {now}. Hieman pienempi kestää yleensä säröilyä paremmin.",
     "expansionFallsProbably": "Paljon pienempi todennäköisesti hilseilee, ja suista ja reunoista irtoaa teräviä siruja.",
     "expansionFallsCan": "Paljon pienempi voi hilseillä, ja suista ja reunoista voi irrota teräviä siruja.",
@@ -904,7 +903,6 @@
     "foodSurface": "Elintarvikepinnalle (sisälasite)",
     "liner": {
       "note": "Elintarvikekäytön turvallisuus riippuu siitä, että tämä lasite poltetaan siihen keilaan, jolla se on testattu: alipoltetusta lasitteesta voi liueta metalleja.",
-      "range": "Se on annettu vaihteluvälinä, joten testaa se vaihteluvälin alapäässä, jossa se sulaa vähiten.",
       "untested": "Yhtäkään keilaa ei ole vielä merkitty testatuksi.",
       "test": "Vain omille poltetuille astioille tehty metallien liukenemisen laboratoriotesti osoittaa, onko se turvallinen elintarvikekäyttöön."
     },

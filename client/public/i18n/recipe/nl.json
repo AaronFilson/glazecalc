@@ -472,7 +472,6 @@
     "expansionRises": "De berekende uitzetting stijgt van {was} naar {now}.",
     "expansionRisesProbably": "Als het oude glazuur net op uw klei paste, krijgt dit glazuur waarschijnlijk haarscheuren, soms pas weken later.",
     "expansionRisesMay": "Als het oude glazuur net op uw klei paste, kan dit glazuur haarscheuren krijgen, soms pas weken later.",
-    "expansionRisesFix": "Haarscheuren verzwakken het werk en worden afgeraden op oppervlakken die met voedsel in aanraking komen. Als u een deel van het natrium en kalium vervangt door smeltmiddelen met een lagere uitzetting (boor, lithium, magnesium of calcium), gaat de uitzetting omlaag; soms wordt het toevoegen van siliciumoxide voorgesteld, maar de bronnen zijn het daar niet over eens.",
     "expansionFalls": "De berekende uitzetting daalt van {was} naar {now}. Iets lager is meestal beter bestand tegen haarscheuren.",
     "expansionFallsProbably": "Bij een veel lagere uitzetting springt het glazuur waarschijnlijk af, met scherpe schilfers van randen en kanten.",
     "expansionFallsCan": "Bij een veel lagere uitzetting kan het glazuur afspringen, met scherpe schilfers van randen en kanten.",
@@ -904,7 +903,6 @@
     "foodSurface": "Voor een oppervlak waar voedsel mee in aanraking komt (een binnenglazuur)",
     "liner": {
       "note": "Voedselveiligheid hangt ervan af dat dit glazuur wordt gestookt tot de kegel waarbij het is getest: een te laag gestookt glazuur kan metalen afgeven.",
-      "range": "Het is opgegeven als bereik, dus test het aan het onderste uiteinde van het bereik, waar het het minst smelt.",
       "untested": "Er is nog geen kegel als getest gemarkeerd.",
       "test": "Alleen een test op de afgifte van metalen door uw eigen gestookte potten laat zien of het veilig is voor voedsel."
     },

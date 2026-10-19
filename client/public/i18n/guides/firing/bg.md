@@ -165,69 +165,69 @@ L&L, американски производител на пещи, препор
 
 :::orton
 
-## Изключвателят Kiln-Sitter {#kiln-sitter}
+## The kiln sitter {#kiln-sitter lang=en}
 
-**Kiln-Sitter** е механичният изключвател отвън на много обикновени и по-стари пещи, който изключва пещта, когато малък конус се огъне. Най-известният е Kiln-Sitter на Dawson. Той улеснява изпичането, но е удобство, а не предпазно устройство.
+A **kiln sitter** is the mechanical switch, on the outside of many basic and older kilns, that turns the kiln off when a small cone bends. The best known is the Dawson Kiln-Sitter. It makes firing easier, but it is a convenience, not a safety device.
 
-### Как работи
+### How it works
 
-Порцеланова тръбичка влиза в пещта. В края ѝ малък конус{{en: cone}} или пръчица лежи напречно върху две метални опори, под **сензорен прът**, който се накланя като люлка-везна. Извън пещта другият край на пръта задържа тежест с малка щипка. Когато конусът омекне и се огъне до около 90°, прътът се спуска достатъчно, за да освободи тежестта, тежестта пада и захранването на нагревателите се прекъсва.
+A porcelain tube reaches into the kiln. At its end, a small cone or a bar lies across two metal supports, under a **sensing rod** that pivots like a seesaw. Outside the kiln, the other end of the rod holds up a weight by a small claw. When the cone softens and bends to about 90°, the rod drops far enough to release the weight, the weight falls, and the power to the elements is cut.
 
-Малките конуси и пръчиците „дават еквивалентна термична обработка“. Orton отбелязва, че много начинаещи избират пръчици, защото равномерната им форма позволява лесно да ги поставят всеки път по един и същи начин. Малкият конус се стеснява към върха, затова е важно как лежи: с тънката си част под пръта пещта изключва при по-ниска температура, а с дебелата – при по-висока, отместване „до 1/2 конус“.
+Small cones and bars "give equivalent heat treatment". Orton notes that many beginners choose bars, because their even shape makes it easy to place them the same way every time. A small cone tapers, so where it sits matters: with its thin part under the rod the kiln shuts off cooler, and with its thick part hotter, a shift of "as much as 1/2 cone".
 
-### Кой конус да сложите в Kiln-Sitter
+### Which cone goes in the sitter
 
-Източниците не са единодушни. Dawson, производителят на Kiln-Sitter, казва да се използва същият номер като основния конус на плочата и да се мине на конус с един номер по-горещ само ако конусът на плочата остане неогънат. L&L казва да се използва конус с един номер по-горещ от конусите на плочата, защото Kiln-Sitter е близо до стената и нагревателите, получава повече топлина и има склонност да изключва рано. Orton установява принципа: „Конусът на плочата е окончателният съдия в процеса на изпичане, а не конусът или пръчицата в Kiln-Sitter.“
-
-> [!NOTE]
-> Нашата отправна точка: сложете в Kiln-Sitter малък конус със същия номер като целевия, а на плочата – комплект от три конуса{{en: cone pack}}. Ако основният конус на плочата е недоогънат, когато пещта изключи, следващия път сложете в Kiln-Sitter конус с един номер по-горещ или поставете по-дебелата част на конуса под пръта. Ако е преогънат, направете обратното.
-
-### Настройка и проверки преди всяко изпичане
-
-Процедурата на Dawson, която служи и за проверка преди всяко изпичане:
-
-1. Изключете всички превключватели. Проверете дали сензорният прът се движи свободно, стои в центъра на тръбичката и не е огънат или корозирал. Ако се движи трудно, Dawson казва да се смени целият възел на тръбичката.
-2. Нанесете с четка тънък слой високотемпературна **огнеупорна ангоба** (покритие, което не позволява на разтопения материал да залепва) върху опорите за конуса и върху пръта там, където докосва конуса. Никога не нанасяйте ангоба върху конуса или порцелановата тръбичка.
-3. Подреждайте плочите и изделията поне 1 инч (25 mm) над или под тръбичката, за да не може нищо да я докосне, да падне върху нея или да я блокира.
-4. Повдигнете тежестта, натиснете щипката надолу върху спусъка и положете конуса или пръчицата плоско върху опорите, опрени в металното стъпало, както показва ръководството за експлоатация на Вашия Kiln-Sitter, всеки път по един и същи начин. Проверете отново, преди да затворите капака: „НЕПРАВИЛНО ПОСТАВЕН КОНУС ИЛИ ПРЪЧИЦА МОЖЕ ДА ПРИЧИНИ ПРЕПИЧАНЕ.“
-5. Настройте таймера за изключване и натиснете бутона, докато се фиксира. Поддържайте пещта в хоризонтално положение и мястото под тежестта свободно, за да може тежестта да падне.
-
-### Таймерът за изключване
-
-Много изключватели Kiln-Sitter, включително моделите LT на Dawson, имат **таймер за изключване**: часовник, който изключва пещта след зададено време, като резерва „в случай че KILN-SITTER откаже“. Той винаги следва да е настроен за по-дълго време от очакваната продължителност на изпичането. Източниците дават различен запас:
-
-Table: За колко време да настроите таймера за изключване
-Label: Настройки на таймера за изключване
-
-| Източник  | Настройка                                                                                                                            |
-| --------- | ------------------------------------------------------------------------------------------------------------------------------------ |
-| Dawson    | ½ час повече от очакваното време на изпичане, докато опознаете пещта, после само ¼ час повече; никога не го настройвайте над 20 часа |
-| L&L       | Много дълго време първия път, като отбележите колко трае изпичането; след това – около 1 час повече                                  |
-| Bracker’s | 30 минути до 1 час повече от времето на изпичане                                                                                     |
+Sources disagree. Dawson, who made the sitter, says to use the same number as the firing cone on the shelf, and to go one number hotter only if the shelf cone stays unbent. L&L says to use one number hotter than the shelf cones, because the sitter sits near the wall and the elements, gets more heat, and tends to shut off early. Orton settles the principle: "The shelf cone is the final judge of the firing process, not the Kiln-Sitter cone or bar."
 
 > [!NOTE]
-> Нашата отправна точка: с щедър запас първия път (в рамките на 20-те часа на скалата), после с ½ до 1 час повече от записаното време. Таймерът показва и колко е продължило изпичането: настроен на 7 и спрял на 1 означава 6 часа.
+> Our starting point: put a small cone of the same number as your target in the sitter, with a cone pack on the shelf. If the shelf firing cone is under-bent when the kiln shuts off, go one number hotter in the sitter next time, or set the thicker part of the cone under the rod. If it is over-bent, do the opposite.
 
-### Когато изключва твърде рано или твърде късно
+### Setting it up, and checks before every firing
 
-След всяко изпичане разгледайте конуса от Kiln-Sitter заедно с конусите на плочата.
+Dawson's procedure, which doubles as a check before every firing:
 
-Table: Отчитане на Kiln-Sitter след изпичане
-Label: Проблеми с Kiln-Sitter
+1. Turn all the switches off. Check that the sensing rod moves freely, sits centered in the tube and is not bent or corroded. If it is sluggish, Dawson says to replace the tube assembly.
+2. Brush a thin coat of high-fire **kiln wash** (a coating that stops melted material sticking) onto the cone supports and the rod where it touches the cone. Never put wash on the cone or the porcelain tube.
+3. Load shelves and ware at least 1 in (25 mm) above or below the tube, so nothing can touch, fall against or block it.
+4. Lift the weight, press the claw down onto the trigger, and lay the cone or bar flat on the supports against the metal step, as your sitter's manual shows, the same way every time. Check it again before closing the lid: "AN IMPROPERLY PLACED CONE OR BAR COULD CAUSE AN OVERFIRING."
+5. Set the limit timer and push in the plunger until it locks. Keep the kiln level and the space under the weight clear, so the weight can fall.
 
-| Какво виждате                                                   | Вероятна причина                                                                                                | Какво да направите                                                                                  |
-| --------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| Kiln-Sitter е сработил, основният конус на плочата е недоогънат | В Kiln-Sitter е било по-горещо, отколкото на плочата (той е близо до стената)                                   | Конус с един номер по-горещ в Kiln-Sitter или по-дебелата част под пръта                            |
-| Конусът в Kiln-Sitter е увиснал доста над 90°                   | Пещта се е нагрявала твърде бързо към края                                                                      | Намалете положенията на превключвателите, за да е по-бавно нагряването (Dawson)                     |
-| Конусът в Kiln-Sitter не се е огънал или се е разтопил на буца  | Самият Kiln-Sitter: лоша настройка, огънат или корозирал прът или нещо, заседнало в тръбичката или опряно в нея | Проверете и настройте Kiln-Sitter според ръководството му за експлоатация, преди да изпичате отново |
-| Всеки път изключва рано или късно                               | Разнастроен е или прътът е износен                                                                              | Проверете с шаблона за настройка; преместете спусъковата пластина                                   |
+### The limit timer
 
-За да провери настройката, Dawson използва **шаблон за настройка**, който задържа пръта там, където би го оставил напълно огънат конус; тогава при щипката следва да има „хлабина от 1/16 инча“ (около 1,6 mm). Проверявайте я на всеки 30 изпичания. Правилото на Ceramics Monthly: ако пещта изключва рано, преместете спусъковата пластина малко нагоре; ако изключва късно – малко надолу. Каквото и да прави Kiln-Sitter, „Винаги вярвайте повече на големите контролни конуси{{en: witness cones}}, отколкото на малките конуси в Kiln-Sitter.“
+Many sitters, including Dawson's LT models, have a **limit timer**: a clock that turns the kiln off after a set time, as a backup "in case the KILN-SITTER fails". It should always be set longer than the firing is expected to take. Sources set the margin differently:
+
+Table: How long to set the limit timer
+Label: Limit timer settings
+
+| Source    | Setting                                                                                                                |
+| --------- | ---------------------------------------------------------------------------------------------------------------------- |
+| Dawson    | ½ hour longer than the expected firing time until you know the kiln, later ¼ hour longer; never set it beyond 20 hours |
+| L&L       | Very high the first time, noting how long the firing takes; after that, about 1 hour longer                            |
+| Bracker's | 30 minutes to 1 hour longer than the firing time                                                                       |
+
+> [!NOTE]
+> Our starting point: generous the first time (within the dial's 20 hours), then ½ to 1 hour longer than the time you recorded. The timer also tells you how long a firing took: set at 7 and ending at 1 means 6 hours.
+
+### When it shuts off early or late
+
+After each firing, read the sitter cone beside the shelf cones.
+
+Table: Reading the sitter after a firing
+Label: Kiln sitter problems
+
+| What you see                                    | Likely cause                                                                                           | What to do                                                       |
+| ----------------------------------------------- | ------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------- |
+| Sitter tripped, shelf firing cone under-bent    | The sitter ran hotter than the shelf (it sits near the wall)                                           | One cone hotter in the sitter, or the thicker part under the rod |
+| Sitter cone sagged well past 90°                | The kiln climbed too fast near the end                                                                 | Lower the switch settings, so the climb is slower (Dawson)       |
+| Sitter cone did not bend, or melted into a blob | The sitter itself: poor adjustment, a bent or corroded rod, or something lodged in or against the tube | Check and adjust the sitter by its manual before firing again    |
+| Early or late every time                        | Out of adjustment, or a worn rod                                                                       | Check with the firing gauge; move the trigger plate              |
+
+To check the adjustment, Dawson uses a **firing gauge** that holds the rod where a fully bent cone would leave it; there should then be "1/16th-inch clearance" (about 1.6 mm) at the claw. Check it every 30 firings. Ceramics Monthly's rule: if the kiln shuts off early, move the trigger plate up slightly; if late, move it down slightly. Whatever the sitter does, "Always trust large witness cones over small sitter cones."
 
 > [!WARNING]
-> **Kiln-Sitter не е предпазно устройство.** Ръководството за експлоатация на Dawson казва, че той „НЕ е предназначен да действа като изключващо устройство, безопасно при отказ, и пещта НЕ следва да се оставя без надзор след очакваното време на изпичане“. Нещо толкова просто като сурово (неизпечено) изделие{{en: greenware}}, паднало върху тръбичката, „може да причини препичане“. Бъдете до пещта, за да я проверите, когато изпичането би трябвало да приключва, и никога не изпичайте с нея върху нещо горимо или близо до него, като дървен под или килим.
+> **A kiln sitter is not a safety device.** Dawson's manual says it "is NOT intended to perform as a fail-safe shut-off device and your kiln should NOT be left unattended beyond the estimated firing time." Something as simple as greenware falling against the tube "might cause an over-firing". Be there to check the kiln when it should be finishing, and never fire it over or near anything that burns, such as a wood floor or carpet.
 
-Kiln-Sitter е направен за изпичания „до конус 8 включително“. Сам той не може да задържа температура или да охлажда бавно. С практика и дневник на изпичане обаче можете да „станете контролерът“, както се изразява Digitalfire: следете конусите и въртете превключвателите на ръка.
+The sitter is built for firings "up to and including Cone 8". It cannot hold a temperature or cool slowly by itself. With practice and a log, though, you can "become the controller", as Digitalfire puts it: watch the cones and turn the switches by hand.
 
 :::
 
@@ -281,92 +281,92 @@ Label: Корекции за следващото изпичане
 
 :::sk
 
-## Изпичане по конуси SK {#sk-cones}
+## Firing to SK cones {#sk-cones lang=en}
 
-Конусите SK са пирометричните конуси, произведени по японския стандарт JIS R 8101, които в Япония се продават от търговци като Yuko Trading (有恒商事). Като всеки конус, конусът SK измерва топлинното въздействие{{en: heatwork}}, а не само температурата: той омеква и се огъва, когато изделията са получили достатъчно топлина, и по него се отчита колко се е огънал. Контролните конуси{{en: witness cone}}, отчитането на това колко се е огънал конусът, и задържането{{en: hold}} действат при него както при всеки друг конус. Този раздел посочва системата на всеки конус и никога не превръща номер SK в номер от друга система: номерата на различните серии конуси не са взаимозаменяеми.
+SK cones are the pyrometric cones made to Japan's standard, JIS R 8101, and sold in Japan by dealers such as Yuko Trading (有恒商事). Like any cone, an SK cone measures heatwork, not temperature alone: it softens and bends over when the ware has had enough heat, and you read how far it bent. Witness cones, reading how far a cone has bent, and holds work for it as for any cone. This section names each cone's system, and never turns an SK number into another system's number: the numbers of different cone series are not interchangeable.
 
 > [!NOTE]
-> Винаги пишете „SK“ пред номера. Много по-стари японски рецепти казват само „SK 8“ или „SK 9“, без да уточняват чий е конусът. Конусите от Киото и конусите SK по JIS имат едни и същи номера, но се огъват при различни температури (вижте „Конуси от Киото“ по-долу).
+> Always write "SK" before the number. Many older Japanese recipes say only "SK 8" or "SK 9" without saying whose cone. Kyoto cones and SK cones to JIS carry the same numbers but bend at different temperatures (see Kyoto cones, below).
 
-### Големите конуси
+### The large cones
 
-Стандартът има два размера. Големите конуси (大型コーン) се използват „главно за измерване на степента на изпичане“ (焼度測定) – точно това, което търси керамикът. Малките конуси (от SK 26 до SK 42, в горния край на обхвата) се използват „главно за изпитвания на огнеупорност“ и не са разгледани тук. Таблицата по-долу дава големите конуси от SK 022 до SK 20.
+The standard has two sizes. Large cones (大型コーン) are "mainly used for measuring the degree of firing" (焼度測定), which is what a potter wants. Small cones (SK 26 to SK 42, at the top of the range) are "mainly used for refractoriness tests" and are not covered here. The table below gives the large cones from SK 022 to SK 20.
 
-Номерата тук вървят от SK 022, най-хладния, до SK 20. Между SK 015 и SK 6 отпечатаните номера имат буквата „a“ (SK 015a, SK 6a); пишете я така, както е отпечатана.
+The numbers run from SK 022, the coolest, up to SK 20 here. Between SK 015 and SK 6 the printed numbers carry an "a" (SK 015a, SK 6a); write it as printed.
 
-### Поставяне на големите конуси
+### Setting large cones
 
-Поставете всеки голям конус в държач или в питка от глина, наклонен към страната си на огъване. Както при всеки конус, запазвайте височината и наклона еднакви от изпичане на изпичане, защото разлика в което и да е от двете променя колко се огъва конусът. Поставете трите конуса от комплекта (вижте по-долу) заедно, дълбоко в пещта, близо до средата на заредените изделия, където получават същата топлина като изделията, но където можете да ги видите през наблюдателен отвор; преди да затворите пещта, проверете дали виждате и трите.
+Set each large cone in a plaque or a pat of clay, leaning toward its bending face. As with any cone, keep the height and the lean the same from firing to firing, because a difference in either changes how far it bends. Set the three cones of the pack (below) together, deep in the kiln near the middle of the load, where they get the heat the ware gets, yet where you can see them through a peephole; before you close the kiln, check that you can see all three.
 
-### Водещ, основен и предпазен конус
+### Guide, firing and guard cones
 
-Конусите се продават и поставят по три: водещ конус, основен конус, който е целта, и предпазен конус. За основен конус вземете номера SK, който посочва рецептата или глината Ви, за водещ – следващия по-хладен конус (един ред по-горе в таблицата), а за предпазен – следващия по-горещ. Когато водещият конус започне да се огъва, краят наближава; когато предпазният конус се огъне, изпичането е отишло твърде далеч.
+Cones are sold and set as three: a guide cone, a firing cone at the target, and a guard cone. Take the firing cone as the SK number your recipe or clay names, the guide cone as the next cooler cone (one row up in the table) and the guard cone as the next hotter one. When the guide cone starts to bend, the end is near; when the guard cone bends, the firing has gone too far.
 
-### Таблица на конусите SK
+### The SK chart
 
-Table: Големи конуси SK (JIS R 8101): номиналната температура (JIS) на всеки
-Label: Таблица на конусите SK
+Table: SK large cones (JIS R 8101): the nominal (JIS) temperature of each
+Label: SK chart
 
-| Конус   | Номинална температура (JIS) |
-| ------- | --------------------------: |
-| SK 022  |         {{1112 °F; 600 °C}} |
-| SK 021  |         {{1202 °F; 650 °C}} |
-| SK 020  |         {{1238 °F; 670 °C}} |
-| SK 019  |         {{1274 °F; 690 °C}} |
-| SK 018  |         {{1310 °F; 710 °C}} |
-| SK 017  |         {{1346 °F; 730 °C}} |
-| SK 016  |         {{1382 °F; 750 °C}} |
-| SK 015a |         {{1454 °F; 790 °C}} |
-| SK 014a |         {{1499 °F; 815 °C}} |
-| SK 013a |         {{1535 °F; 835 °C}} |
-| SK 012a |         {{1571 °F; 855 °C}} |
-| SK 011a |         {{1616 °F; 880 °C}} |
-| SK 010a |         {{1652 °F; 900 °C}} |
-| SK 09a  |         {{1688 °F; 920 °C}} |
-| SK 08a  |         {{1724 °F; 940 °C}} |
-| SK 07a  |         {{1760 °F; 960 °C}} |
-| SK 06a  |         {{1796 °F; 980 °C}} |
-| SK 05a  |        {{1832 °F; 1000 °C}} |
-| SK 04a  |        {{1868 °F; 1020 °C}} |
-| SK 03a  |        {{1904 °F; 1040 °C}} |
-| SK 02a  |        {{1940 °F; 1060 °C}} |
-| SK 01a  |        {{1976 °F; 1080 °C}} |
-| SK 1a   |        {{2012 °F; 1100 °C}} |
-| SK 2a   |        {{2048 °F; 1120 °C}} |
-| SK 3a   |        {{2084 °F; 1140 °C}} |
-| SK 4a   |        {{2120 °F; 1160 °C}} |
-| SK 5a   |        {{2156 °F; 1180 °C}} |
-| SK 6a   |        {{2192 °F; 1200 °C}} |
-| SK 7    |        {{2246 °F; 1230 °C}} |
-| SK 8    |        {{2282 °F; 1250 °C}} |
-| SK 9    |        {{2336 °F; 1280 °C}} |
-| SK 10   |        {{2372 °F; 1300 °C}} |
-| SK 11   |        {{2408 °F; 1320 °C}} |
-| SK 12   |        {{2462 °F; 1350 °C}} |
-| SK 13   |        {{2516 °F; 1380 °C}} |
-| SK 14   |        {{2570 °F; 1410 °C}} |
-| SK 15   |        {{2615 °F; 1435 °C}} |
-| SK 16   |        {{2660 °F; 1460 °C}} |
-| SK 17   |        {{2696 °F; 1480 °C}} |
-| SK 18   |        {{2732 °F; 1500 °C}} |
-| SK 19   |        {{2768 °F; 1520 °C}} |
-| SK 20   |        {{2786 °F; 1530 °C}} |
+| Cone    | Nominal (JIS) temperature |
+| ------- | ------------------------: |
+| SK 022  |       {{1112 °F; 600 °C}} |
+| SK 021  |       {{1202 °F; 650 °C}} |
+| SK 020  |       {{1238 °F; 670 °C}} |
+| SK 019  |       {{1274 °F; 690 °C}} |
+| SK 018  |       {{1310 °F; 710 °C}} |
+| SK 017  |       {{1346 °F; 730 °C}} |
+| SK 016  |       {{1382 °F; 750 °C}} |
+| SK 015a |       {{1454 °F; 790 °C}} |
+| SK 014a |       {{1499 °F; 815 °C}} |
+| SK 013a |       {{1535 °F; 835 °C}} |
+| SK 012a |       {{1571 °F; 855 °C}} |
+| SK 011a |       {{1616 °F; 880 °C}} |
+| SK 010a |       {{1652 °F; 900 °C}} |
+| SK 09a  |       {{1688 °F; 920 °C}} |
+| SK 08a  |       {{1724 °F; 940 °C}} |
+| SK 07a  |       {{1760 °F; 960 °C}} |
+| SK 06a  |       {{1796 °F; 980 °C}} |
+| SK 05a  |      {{1832 °F; 1000 °C}} |
+| SK 04a  |      {{1868 °F; 1020 °C}} |
+| SK 03a  |      {{1904 °F; 1040 °C}} |
+| SK 02a  |      {{1940 °F; 1060 °C}} |
+| SK 01a  |      {{1976 °F; 1080 °C}} |
+| SK 1a   |      {{2012 °F; 1100 °C}} |
+| SK 2a   |      {{2048 °F; 1120 °C}} |
+| SK 3a   |      {{2084 °F; 1140 °C}} |
+| SK 4a   |      {{2120 °F; 1160 °C}} |
+| SK 5a   |      {{2156 °F; 1180 °C}} |
+| SK 6a   |      {{2192 °F; 1200 °C}} |
+| SK 7    |      {{2246 °F; 1230 °C}} |
+| SK 8    |      {{2282 °F; 1250 °C}} |
+| SK 9    |      {{2336 °F; 1280 °C}} |
+| SK 10   |      {{2372 °F; 1300 °C}} |
+| SK 11   |      {{2408 °F; 1320 °C}} |
+| SK 12   |      {{2462 °F; 1350 °C}} |
+| SK 13   |      {{2516 °F; 1380 °C}} |
+| SK 14   |      {{2570 °F; 1410 °C}} |
+| SK 15   |      {{2615 °F; 1435 °C}} |
+| SK 16   |      {{2660 °F; 1460 °C}} |
+| SK 17   |      {{2696 °F; 1480 °C}} |
+| SK 18   |      {{2732 °F; 1500 °C}} |
+| SK 19   |      {{2768 °F; 1520 °C}} |
+| SK 20   |      {{2786 °F; 1530 °C}} |
 
-Всяка стойност е номинална (JIS): температурата, която стандартът дава за конуса, както е отпечатана в таблицата на Yuko Trading. Таблицата не посочва скорост на нагряване. Стандартът дава референтни температури. При обичайна за керамиците скорост от около 100 °C/h общинският институт в Киото е измерил, че собствените му конуси от Киото се огъват при температура с 40–70 °C по-ниска от стойността по JIS за същия номер; за конусите SK по JIS не открихме такива измервания. Поставете контролен конус и сравнете.
+Every figure is nominal (JIS): the temperature the standard gives for the cone, as printed in Yuko Trading's table. The table does not print a heating rate. The standard gives reference temperatures. At a potter's rate of about 100 °C/h, Kyoto's municipal institute measured its own Kyoto cones bending 47–79 °C cooler than the JIS figure for the same number; we found no such measurements for SK cones to JIS. Set a witness cone and compare.
 
-### Конуси от Киото
+### Kyoto cones
 
-Конусите от Киото (京都ゼーゲル), произвеждани от общинския институт в Киото, вече не се произвеждат: според съобщения в новините институтът е спрял производството в края на финансовата 2009 година. Те имат същите номера като конусите SK по JIS, но се огъват при по-ниска температура: конусът от Киото в повечето случаи се огъва при приблизително температурата на конуса SK по JIS с два номера по-хладен. Рецепта от Киото, в която пише „SK 8“, може да има предвид конус от Киото. Институтът е публикувал съвети за керамиците, които преминават от конуси от Киото към конуси Orton, и използва конус Orton 10 вместо собствения си конус от Киото SK 12; това е изборът на института въз основа на собствените му измервания при 100 °C/h и не се отнася за никой друг конус.
+Kyoto cones (京都ゼーゲル), made by Kyoto's municipal institute, are no longer made: news reports say the institute ended production at the close of fiscal 2009. They carry the same numbers as SK cones to JIS but bend cooler: a Kyoto cone bends at about the temperature of the SK cone to JIS two or three numbers lower. A recipe from Kyoto that says "SK 8" may mean a Kyoto cone. The institute has published advice for potters moving from Kyoto cones to Orton cones, and substitutes Orton cone 10 for its own Kyoto SK 12; that is the institute's choice from its own measurements at 100 °C/h, and applies to no other cone.
 
-### Конуси Orton, продавани в Япония
+### Orton cones sold in Japan
 
-Самостоящите конуси Orton се продават в Япония под името 立つゼーゲル („стоящ Зегер“), защото не им трябва държач или поставка. Те са конуси Orton, с номерата на Orton и таблицата на Orton (по-горе): изпичайте до такъв конус само по номера му Orton и дръжте конусите SK и Orton в отделни комплекти, никога в един и същ.
+Orton self-supporting cones are sold in Japan under the name 立つゼーゲル ("standing Seger"), because they need no plaque or stand. They are Orton cones, with Orton's numbers and Orton's chart (above): fire to one only by its Orton number, and keep SK and Orton cones in separate packs, never in the same one.
 
-### Източници за конусите SK
+### Sources for SK cones
 
-- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (таблицата на конусите SK, проверено на 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
-- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (в сила, потвърден отново на 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
-- [Kyoto Municipal Institute of Industrial Technology and Culture: на какво да обърнете внимание при преминаване от конуси от Киото към конуси Orton](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
+- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (the SK table, checked 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
+- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (in force, reconfirmed 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
+- [Kyoto Municipal Institute of Industrial Technology and Culture: points to note when moving from Kyoto cones to Orton cones](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
 
 :::
 

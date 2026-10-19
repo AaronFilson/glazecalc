@@ -149,38 +149,38 @@ Pet Poison Helpline navaja, da je »svinec strupen za vse vrste, največje tvega
 
 Če je hišni ljubljenček morda pojedel ali popil kar koli iz delavnice ali kaže znake, kot so opisani zgoraj, pokličite svojega veterinarja ali linijo za zastrupitve živali (glejte preglednico na vrhu) in imejte pri roki ime surovine in težo živali.
 
-## Peč {#the-kiln}
+## The kiln {#the-kiln lang=en}
 
-### Zunanjost peči se segreje dovolj, da opeče
+### The outside gets hot enough to burn
 
-Britanska ocena tveganja za šole navaja, da lahko zunanjost peči »doseže 160 °C in morda več« (približno 320 °F), šolski priročnik o pečeh pa poroča o kovinskih obročih s temperaturo do 460 °F (približno 240 °C). Skutt, proizvajalec peči, priporoča prostor za peč, ki ga je mogoče zakleniti pred otroki in hišnimi ljubljenčki. Kjer prostora ni mogoče zakleniti, šolski priročnik predlaga pregrado, na primer zaščitni zaslon za peč.
+A UK schools risk assessment says a kiln's outside "can reach 160 °C and possibly more" (about 320 °F), and a school kiln guide reports metal bands at up to 460 °F (about 240 °C). Skutt, a kiln maker, recommends a kiln room that can be locked against children and pets. Where a room cannot be locked, the school guide suggests a barrier such as a kiln safety screen.
 
-Majhni otroci in hišni ljubljenčki opozorilnega znaka ne razumejo. Predlagamo, da jih med žganjem in ohlajanjem peči zadržite za zaklenjenimi vrati ali za pregrado, za vse druge pa namestite opozorilni znak.
+Small children and pets cannot understand a warning sign. We suggest keeping them behind a locked door or a barrier while the kiln fires and while it cools, and posting a warning sign for everyone else.
 
-### Prostor okoli peči
+### Space around it
 
-Viri se glede varne razdalje ne ujemajo. Rio Grande navaja najmanj 12 palcev (30 cm) od sten in vsega, kar je gorljivo. L&L močno priporoča 18 palcev (46 cm) do vseh sten, gradbeni predpis, ki ga navaja, pa zahteva 3 čevlje (0,9 m) od gorljivih sten. Upoštevajte navodila za uporabo svoje peči in lokalne požarne predpise; če niste prepričani, pustite 18 palcev od vsake stene in 3 čevlje od vsega, kar lahko gori. V garaži imejte avtomobile, gorivo in barve daleč stran.
+Sources disagree on clearance. Rio Grande says at least 12 inches (30 cm) from walls and anything combustible. L&L strongly recommends 18 inches (46 cm) to all walls, and the building code it cites asks for 3 feet (0.9 m) from combustible walls. Follow your kiln's manual and local fire code; if you are unsure, allow 18 inches from any wall and 3 feet from anything that can burn. In a garage, keep cars, fuel and paint well away.
 
-### Elektrika
+### Power
 
-Rio Grande priporoča **ločen tokokrog** (takšen, ki ne napaja ničesar drugega) z ustrezno ozemljeno vtičnico. Predlagamo, da ne uporabljate podaljška. Med žganji izklopite varovalko ali ločilno stikalo peči ali izvlecite vtič, da je otrok ne more vklopiti.
+Rio Grande recommends a **dedicated circuit** (one that powers nothing else) with a properly grounded outlet. We suggest no extension cord. Between firings, switch off the kiln's breaker or disconnect switch, or unplug it, so a child cannot start it.
 
-### Bodite zraven, ko se žganje konča
+### Be there when the firing ends
 
-**Kiln-Sitter** je mehansko stikalo na številnih pečeh brez krmilnika: na koncu žganja se mali stožec{{en: cone}} upogne in sproži izklop stikala. Njegova navodila za uporabo navajajo, da »NI namenjen delovanju kot izklopna naprava, varna ob odpovedi{{en: fail-safe}}«. Rio Grande pravi, naj peči med žganjem nikoli ne puščate brez nadzora, »še posebej blizu pričakovanega časa izklopa«. Zato ostanite v bližini in med žganjem preverjajte peč, predvsem proti koncu; žgite samo, kadar bo doma budna odrasla oseba, ki bo to lahko storila, preverite, ali se je peč izklopila, in v prostoru s pečjo imejte gasilnik ABC. Kako delujejo stikala Kiln-Sitter, krmilniki in programi žganja, preberite v vodniku [Žganje v preprosti peči](/guides/firing).
+A **kiln sitter** is the mechanical switch on many manual kilns: a small cone bends at the end of the firing and trips the switch off. Its manual says it "is NOT intended to perform as a fail-safe shut-off device." Rio Grande says never to leave a firing kiln unattended, "especially near the expected shut-off time". So stay nearby and check the kiln while it fires, above all near the end; fire only when an adult will be home and awake through the whole firing, check that it has switched off, and keep an ABC fire extinguisher in the kiln room. For how sitters, controllers and schedules work, see [Firing a basic kiln](/guides/firing).
 
-### Plini, hlapi in ogljikov monoksid
+### Fumes and carbon monoxide
 
-Pri žganju nastajajo plini in hlapi, zato peč odzračujte na prosto; kako, pojasnjuje vodnik [Varno mešanje in prezračevanje](/guides/safe-mixing). Peč v garaži, ki je prizidana k hiši, potrebuje odzračevanje, ki plinom in hlapom preprečuje, da bi skozi vmesna vrata prišli v hišo. Ptice imejte v oddaljenem prostoru, kadar koli peč žge.
+Firing gives off fumes, so vent the kiln to the outdoors; [Safe mixing and ventilation](/guides/safe-mixing) explains how. A kiln in an attached garage needs venting that keeps fumes from reaching the house through the connecting door. Keep birds in a far room whenever the kiln fires.
 
-**Ogljikov monoksid** (CO) je strupen plin, ki ga ne vidite in ne zavohate. Varnostna navodila neke univerze za delo s pečmi pri plinskih pečeh zahtevajo detektorje CO. Pri električnih pečeh so mnenja različna, vendar lahko pri izgorevanju organskih snovi (v glini ali v stvareh, kot sta papir ali vosek) nastane CO. Menimo, da je detektor CO v prostoru s pečjo in v sosednjih prostorih smiseln in poceni ukrep pri vsaki peči.
+**Carbon monoxide** (CO) is a poisonous gas you cannot see or smell. A university kiln safety sheet requires CO alarms with gas kilns. Views differ for electric kilns, but burning off organic matter (in clay, or things like paper or wax) can make CO. We think a CO alarm in the kiln room and the rooms next to it is a sensible, inexpensive step for any kiln.
 
-### Opazovalne odprtine in oči
+### Peepholes and eyes
 
-Infrardeča svetloba, ki je ne vidite, se »začne pri 752°F (400°C)«, Ceramic Arts Network pa pravi, da bi morali v peč nad to temperaturo vedno gledati z zaščito za oči. Infrardeča svetloba lahko poškoduje očesno lečo in povzroči sivo mreno, dolgo strmenje pa lahko poškoduje mrežnico. Sončna očala in didimijeva očala je ne zaustavijo.
+Infrared light, which you cannot see, "starts at 752°F (400°C)", and the Ceramic Arts Network says looking into a kiln above this should always be done with eye protection. Infrared can damage the lens of the eye and lead to cataracts, and long gazing can injure the retina. Sunglasses and didymium glasses do not block it.
 
 > [!WARNING]
-> Otroci naj sploh ne gledajo v peč. Žareča opazovalna odprtina jih privlači in zaščitnih očal ne bodo zanesljivo obdržali na očeh, zato jih imejte stran, dokler je peč vroča. Odrasli naj gledajo le na kratko, skozi varilska očala z zaščito pred IR. Viri priporočajo zaščitne stopnje od 1,7 do 5; zaščitna stopnja 3 je smiselna izbira, temnejša, če potem vidite lise pred očmi.
+> Children should not look into a kiln at all. A glowing peephole draws them, and they will not reliably keep protective glasses on, so keep them away while the kiln is hot. Adults should look only briefly, through IR-rated welding glasses. Sources recommend shades from 1.7 to 5; shade 3 is a sensible choice, darker if you see spots afterward.
 
 ## Ročno izdelana keramika na družinski mizi {#handmade-ware}
 

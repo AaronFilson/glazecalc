@@ -472,7 +472,6 @@
     "expansionRises": "Vypočtená roztažnost stoupá: dříve {was}, nyní {now}.",
     "expansionRisesProbably": "Pokud původní glazura na vaší hlíně sotva seděla, tato bude pravděpodobně trhlinkovat, někdy i po týdnech.",
     "expansionRisesMay": "Pokud původní glazura na vaší hlíně sotva seděla, tato může trhlinkovat, někdy i po týdnech.",
-    "expansionRisesFix": "Trhlinkování oslabuje výrobky a na plochách ve styku s potravinami se nedoporučuje. Roztažnost sníží výměna části sodíku a draslíku za taviva s nižší roztažností (bor, lithium, hořčík nebo vápník); přidání oxidu křemičitého se někdy navrhuje, ale zdroje se rozcházejí.",
     "expansionFalls": "Vypočtená roztažnost klesá: dříve {was}, nyní {now}. O trochu nižší obvykle lépe odolává trhlinkování.",
     "expansionFallsProbably": "Při mnohem nižší bude glazura pravděpodobně odprýskávat a z okrajů a hran budou odletovat ostré úlomky.",
     "expansionFallsCan": "Při mnohem nižší může glazura odprýskávat a z okrajů a hran mohou odletovat ostré úlomky.",
@@ -904,7 +903,6 @@
     "foodSurface": "Pro plochu ve styku s potravinami (vnitřní glazura)",
     "liner": {
       "note": "Bezpečnost pro styk s potravinami závisí na tom, zda se tato glazura vypálí na žároměrku, na kterou byla zkoušena: nedopálená glazura může uvolňovat kovy.",
-      "range": "Je uvedena pro rozmezí, proto ji vyzkoušejte na spodním konci rozmezí, kde se taví nejméně.",
       "untested": "Zatím není označena žádná vyzkoušená žároměrka.",
       "test": "Jen zkouška uvolňování kovů z vašich vlastních vypálených nádob ukáže, zda je bezpečná pro styk s potravinami."
     },

@@ -40,7 +40,7 @@ describe('SK cones', () => {
       checked: '2026-10-14',
       status: 'verified'
     });
-    expect(SK.note).to.include('40–70 °C cooler');
+    expect(SK.note).to.include('47–79 °C cooler');
     expect(SK.note).to.include('witness cone');
   });
 });

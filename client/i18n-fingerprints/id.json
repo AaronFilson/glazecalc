@@ -1429,7 +1429,6 @@
     "checks.expansionRises": "1fhv3kq",
     "checks.expansionRisesProbably": "vkp626",
     "checks.expansionRisesMay": "uzik24",
-    "checks.expansionRisesFix": "1czzrw6",
     "checks.expansionFalls": "bvtf5i",
     "checks.expansionFallsProbably": "1ddr1bk",
     "checks.expansionFallsCan": "1xnrpnp",
@@ -1798,7 +1797,6 @@
     "firing.witness": "i7hc0m",
     "firing.foodSurface": "1lr9qy0",
     "firing.liner.note": "11fctxj",
-    "firing.liner.range": "5ow8jt",
     "firing.liner.untested": "fpc8n8",
     "firing.liner.test": "1hvzt2v",
     "firing.helpSummary": "1psca4g",
@@ -2210,9 +2208,7 @@
     "cone-chart": "hy0o6z",
     "by-temperature": "5i13a4",
     "cone-pack": "sqc3fr",
-    "kiln-sitter": "my2j3z",
     "reading-cones": "1o9qd6k",
-    "sk-cones": "by8t90",
     "bisque": "43c2bq",
     "glaze": "co42bj",
     "manual-kilns": "xuno5u",
@@ -2234,8 +2230,7 @@
     "food-safety": "lf9w5s",
     "application": "ylx2ai",
     "atmosphere": "k0ltqo",
-    "glossary": "ywcc4k",
-    "sources": "10mvz25"
+    "glossary": "ywcc4k"
   },
   "guides/home-safety": {
     "": "q4eeld",
@@ -2245,7 +2240,6 @@
     "keeping-dust-in-the-studio": "1uwwdw5",
     "lead-and-children": "11gi1p8",
     "pets": "1r3jzye",
-    "the-kiln": "1xfkfqc",
     "handmade-ware": "w0bbl1",
     "sources": "v2d7bj"
   },
@@ -2256,7 +2250,6 @@
     "storing": "m07la4",
     "weighing": "6tc9of",
     "mixing": "o2f2yc",
-    "specific-gravity": "1qeja48",
     "testing": "10v9uq1",
     "records": "1jwvhfa",
     "sources": "1mqleb6"
@@ -2269,7 +2262,6 @@
     "cleaning": "g2hdwa",
     "extraction-and-spraying": "75nkh",
     "kiln": "1a0b97n",
-    "materials": "t9lowf",
     "gloves-and-eyes": "1p7idjd",
     "safety-data-sheets": "112n6p8",
     "official-guidance": "psw6gr",

@@ -149,38 +149,38 @@ Le Pet Poison Helpline indique que « le plomb est toxique pour toutes les esp�
 
 Si un animal a pu manger ou boire quoi que ce soit venant de l’atelier, ou s’il montre des signes comme ceux décrits plus haut, appelez votre vétérinaire ou un centre antipoison vétérinaire (voir le tableau en haut de la page), en ayant sous la main le nom de la matière et le poids de l’animal.
 
-## Le four {#the-kiln}
+## The kiln {#the-kiln lang=en}
 
-### L’extérieur devient assez chaud pour brûler
+### The outside gets hot enough to burn
 
-Une évaluation des risques pour les écoles britanniques indique que l’extérieur d’un four « peut atteindre 160 °C et peut-être davantage » (environ 320 °F), et un guide des fours scolaires signale des cerclages métalliques jusqu’à 460 °F (environ 240 °C). Skutt, un fabricant de fours, recommande une pièce pour le four que l’on peut fermer à clé pour en interdire l’accès aux enfants et aux animaux. Là où une pièce ne peut pas être fermée à clé, le guide scolaire suggère une barrière, comme un écran de sécurité pour four.
+A UK schools risk assessment says a kiln's outside "can reach 160 °C and possibly more" (about 320 °F), and a school kiln guide reports metal bands at up to 460 °F (about 240 °C). Skutt, a kiln maker, recommends a kiln room that can be locked against children and pets. Where a room cannot be locked, the school guide suggests a barrier such as a kiln safety screen.
 
-Nous suggérons de tenir les jeunes enfants et les animaux, qui ne peuvent pas comprendre un panneau d’avertissement, derrière une porte fermée à clé ou une barrière pendant la cuisson et pendant le refroidissement, et d’afficher un panneau d’avertissement pour tous les autres.
+Small children and pets cannot understand a warning sign. We suggest keeping them behind a locked door or a barrier while the kiln fires and while it cools, and posting a warning sign for everyone else.
 
-### L’espace autour du four
+### Space around it
 
-Les sources divergent sur la distance de sécurité. Rio Grande indique au moins 12 pouces (30 cm) des murs et de tout ce qui est combustible. L&L recommande vivement 18 pouces (46 cm) par rapport à tous les murs, et le code de la construction qu’il cite demande 3 pieds (0,9 m) par rapport aux murs combustibles. Suivez le manuel de votre four et la réglementation incendie locale ; en cas de doute, laissez 18 pouces par rapport à tout mur et 3 pieds par rapport à tout ce qui peut brûler. Dans un garage, tenez voitures, carburant et peinture bien à l’écart.
+Sources disagree on clearance. Rio Grande says at least 12 inches (30 cm) from walls and anything combustible. L&L strongly recommends 18 inches (46 cm) to all walls, and the building code it cites asks for 3 feet (0.9 m) from combustible walls. Follow your kiln's manual and local fire code; if you are unsure, allow 18 inches from any wall and 3 feet from anything that can burn. In a garage, keep cars, fuel and paint well away.
 
-### L’alimentation électrique
+### Power
 
-Rio Grande recommande un **circuit électrique dédié** (qui n’alimente rien d’autre) avec une prise correctement reliée à la terre. Nous suggérons de ne pas utiliser de rallonge. Entre deux cuissons, coupez le disjoncteur ou l’interrupteur-sectionneur du four, ou débranchez-le, pour qu’un enfant ne puisse pas le mettre en marche.
+Rio Grande recommends a **dedicated circuit** (one that powers nothing else) with a properly grounded outlet. We suggest no extension cord. Between firings, switch off the kiln's breaker or disconnect switch, or unplug it, so a child cannot start it.
 
-### Soyez là à la fin de la cuisson
+### Be there when the firing ends
 
-Un **Kiln-Sitter** (coupe-circuit à cône) est l’interrupteur mécanique de nombreux fours à commande manuelle : un petit cône se courbe à la fin de la cuisson et déclenche la coupure. Son manuel précise qu’il « n’est PAS conçu pour servir de dispositif de coupure à sécurité intégrée ». Rio Grande dit de ne jamais laisser un four en cuisson sans surveillance, « surtout à l’approche de l’heure d’arrêt prévue ». Restez donc à proximité et vérifiez le four pendant la cuisson, surtout vers la fin ; ne lancez une cuisson que si un adulte sera à la maison et éveillé pour rester à proximité et vérifier le four, vérifiez que le four s’est bien arrêté, et gardez un extincteur ABC dans la pièce du four. Pour le fonctionnement des Kiln-Sitter, des programmateurs et des courbes de cuisson, voir [Cuire dans un four simple](/guides/firing).
+A **kiln sitter** is the mechanical switch on many manual kilns: a small cone bends at the end of the firing and trips the switch off. Its manual says it "is NOT intended to perform as a fail-safe shut-off device." Rio Grande says never to leave a firing kiln unattended, "especially near the expected shut-off time". So stay nearby and check the kiln while it fires, above all near the end; fire only when an adult will be home and awake through the whole firing, check that it has switched off, and keep an ABC fire extinguisher in the kiln room. For how sitters, controllers and schedules work, see [Firing a basic kiln](/guides/firing).
 
-### Fumées et monoxyde de carbone
+### Fumes and carbon monoxide
 
-La cuisson dégage des fumées : évacuez donc les fumées du four vers l’extérieur ; [Préparation en sécurité et ventilation](/guides/safe-mixing) explique comment. Un four installé dans un garage attenant à la maison a besoin d’une évacuation qui empêche les fumées d’atteindre la maison par la porte de communication. Gardez les oiseaux dans une pièce éloignée chaque fois que le four est en cuisson.
+Firing gives off fumes, so vent the kiln to the outdoors; [Safe mixing and ventilation](/guides/safe-mixing) explains how. A kiln in an attached garage needs venting that keeps fumes from reaching the house through the connecting door. Keep birds in a far room whenever the kiln fires.
 
-Le **monoxyde de carbone** (CO) est un gaz toxique que vous ne pouvez ni voir ni sentir. Une fiche d’une université sur la sécurité des fours exige des détecteurs de CO avec les fours à gaz. Les avis divergent pour les fours électriques, mais la combustion des matières organiques (dans la terre, ou dans des choses comme le papier ou la cire) peut produire du CO. Nous pensons qu’un détecteur de CO dans la pièce du four et dans les pièces voisines est une précaution sensée et peu coûteuse, quel que soit le four.
+**Carbon monoxide** (CO) is a poisonous gas you cannot see or smell. A university kiln safety sheet requires CO alarms with gas kilns. Views differ for electric kilns, but burning off organic matter (in clay, or things like paper or wax) can make CO. We think a CO alarm in the kiln room and the rooms next to it is a sensible, inexpensive step for any kiln.
 
-### Les regards du four et les yeux
+### Peepholes and eyes
 
-Le rayonnement infrarouge, que vous ne pouvez pas voir, « commence à 752°F (400°C) », et le Ceramic Arts Network indique qu’au-delà, il faut toujours porter une protection oculaire pour regarder dans un four. L’infrarouge peut endommager le cristallin de l’œil et provoquer une cataracte, et le fait de regarder longtemps peut léser la rétine. Les lunettes de soleil et les lunettes au didyme ne le bloquent pas.
+Infrared light, which you cannot see, "starts at 752°F (400°C)", and the Ceramic Arts Network says looking into a kiln above this should always be done with eye protection. Infrared can damage the lens of the eye and lead to cataracts, and long gazing can injure the retina. Sunglasses and didymium glasses do not block it.
 
 > [!WARNING]
-> Les enfants ne doivent pas du tout regarder dans un four. Le regard rougeoyant d’un four les attire, et on ne peut pas compter sur eux pour garder des lunettes de protection : tenez-les donc à l’écart tant que le four est chaud. Les adultes ne doivent regarder que brièvement, à travers des lunettes de soudage anti-IR. Les sources recommandent des teintes de 1,7 à 5 ; la teinte 3 est un choix raisonnable, ou une teinte plus foncée si vous voyez des taches ensuite.
+> Children should not look into a kiln at all. A glowing peephole draws them, and they will not reliably keep protective glasses on, so keep them away while the kiln is hot. Adults should look only briefly, through IR-rated welding glasses. Sources recommend shades from 1.7 to 5; shade 3 is a sensible choice, darker if you see spots afterward.
 
 ## Les pièces faites main sur la table familiale {#handmade-ware}
 

@@ -163,55 +163,55 @@ Label: Szitaméret
 | Színezőanyagot{{en: colorants}}, például kobaltot vagy vasat tartalmazó mázak | 100–120 mesh              |
 | Hamumázak és más, durva nyersanyagot tartalmazó mázak                         | 60–80 mesh                |
 
-## Fajsúly {#specific-gravity}
+## Specific gravity {#specific-gravity lang=en}
 
-A **fajsúly**{{en: specific gravity}} (angolul: SG) megmutatja, mennyi por van a máziszapban{{en: slurry}}. Egy adott térfogatú máz{{en: glaze}} tömegének és ugyanakkora térfogatú víz tömegének a hányadosa. A víz értéke 1,00, egy máz pedig {{SG 1.45}} mellett 100 mL-enként 145 g. Ha mért fajsúlyra keveri, minden alkalommal ugyanazt a sűrűséget és ugyanolyan mázréteget kapja. Nincs mértékegysége, így grammban és unciában számolva is ugyanannyi.
+**Specific gravity** (SG) tells you how much powder is in your slurry. It is the weight of a volume of glaze divided by the weight of the same volume of water. Water is 1.00, and a glaze at {{SG 1.45}} weighs 145 g per 100 mL. Mixing to a measured SG is how you get the same thickness, and the same coat, every time. It has no units, so it is the same in grams or ounces.
 
-### Mérés 100 mL lemérésével
+### Measure it by weighing 100 mL
 
-1. Keverje fel a mázat, hogy semmi ne maradjon leülepedve.
-2. Tegyen a mérlegre egy 100 mL-es **mérőhengert** (magas, beosztásos mérőedényt) vagy egy 100 mL-es fecskendőt, és nullázza le a mérleget.
-3. Töltse meg mázzal pontosan 100 mL-ig, a jelet szemmagasságból leolvasva.
-4. Mérje le, és ossza el a grammokat 100-zal: 145 g esetén a fajsúly 1,45.
+1. Stir the glaze so nothing has settled.
+2. Put a 100 mL **graduated cylinder** (a tall, marked measuring tube) or a 100 mL syringe on the scale, and tare it.
+3. Fill it with glaze to exactly 100 mL, reading the mark at eye level.
+4. Weigh it and divide the grams by 100: 145 g is SG 1.45.
 
-A Digitalfire egy poharon bejelöli 500 g víz szintjét, a jelig tölti mázzal, és a tömeget elosztja 500-zal; a nagyobb, teltebb mérőedény pontosabb. Az **areométer** (sűrűségmérő), egy úszótest, amelyről ott kell leolvasni az értéket, ahol a mázban megáll, gyors, de sűrű vagy bedermedt mázaknál tévesen mérhet. A brit areométerek, például a Potclays areométere, Baumé-fokban (°Bé) mérnek. Saját számításunk szerint fajsúly = 145 ÷ (145 − °Bé), így 46 °Bé kb. 1,46-nak felel meg. Régebbi brit könyvek **pint-súlyt** adnak meg, vagyis azt, hogy hány uncia egy angol pint máz: ezt ossza el 20-szal, így 29 oz kb. 1,45-ös fajsúlynak felel meg (ez is saját számításunk).
+Digitalfire also marks a cup at the level of 500 g of water, fills it to the mark with glaze, and divides the weight by 500; a bigger, fuller measure is more accurate. A **hydrometer**, a float read where it sits in the glaze, is quick but can misread thick or gelled glazes. UK hydrometers, such as Potclays', read in degrees Baumé (°Bé). By our arithmetic, SG = 145 ÷ (145 − °Bé), so 46 °Bé is about 1.46. Older UK books give a **pint weight**, the ounces in an imperial pint of glaze: divide it by 20, so 29 oz is about SG 1.45 (also our arithmetic).
 
-### Célértékek
+### What to aim for
 
-A források eltérnek, leginkább az ecsetelésnél és a szórásnál, ahol a brit Potclays forgalmazó jóval magasabb értékeket ad meg (saját közlése szerint értékei „csak tájékoztató jellegűek”). Minden számot kiindulópontnak tekintsen. A Digitalfire fő tanácsa az, hogy minden mázhoz keresse meg a jól működő fajsúlyt és bedermesztést, majd ezeket ismételje meg és jegyezze fel.
+Sources disagree, most of all on brushing and spraying, where the UK supplier Potclays gives much higher figures (its own are "for guidance only"). Treat every number as a starting point. Digitalfire's core advice is to find the SG and gelling that work for each glaze, then repeat them and write them down.
 
-Table: Fajsúly-célértékek, ahol a források eltérnek
-Label: Fajsúly-célértékek
+Table: Specific gravity targets, where sources disagree
+Label: Specific gravity targets
 
-| Felhordás | Digitalfire és Glazy                                                                                                                                                                   | Potclays (Egyesült Királyság)                    | Biztonságos kiindulópont                                                        |
-| --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------ | ------------------------------------------------------------------------------- |
-| Mártás    | {{SG 1.40}} (5 másodperces mártáshoz) és {{SG 1.50}} (1 másodperces mártáshoz) között; a házilag kevert, bedermesztett mázak {{SG 1.43–1.45}} mellett a legjobbak                      | Színtelen: {{SG 1.46–1.48}}; színes: {{SG 1.61}} | {{SG 1.45}}; ha csepeg, hígítsa {{SG 1.43}} értékre, és dermessze be            |
-| Ecsetelés | {{SG 1.25}} (híg, színtelen máz) és {{SG 1.55}} (sötét részletek) között                                                                                                               | {{SG 1.71–1.81}}                                 | Kövesse a termék előírásait; használjon CMC mázragasztót vagy ecsetelő médiumot |
-| Szórás    | Nincs érték; Hopper a Ceramic Arts Network számára írt cikkében jóval hígabbat javasol, folyósítószerrel{{en: deflocculant}} (olyan adalékkal, amely hígfolyósabbá teszi a máziszapot) | {{SG 1.71}}                                      | Nincs megbízható szám; csak szórófülkében szórjon                               |
+| Use      | Digitalfire and Glazy                                                                                                                 | Potclays (UK)                               | Safe starting point                                     |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- | ------------------------------------------------------- |
+| Dipping  | {{SG 1.40}} (for a 5-second dip) to {{SG 1.50}} (for a 1-second dip); home-mixed glazes that are gelled do best at {{SG 1.43–1.45}}   | Clear {{SG 1.46–1.48}}; colored {{SG 1.61}} | {{SG 1.45}}; thin to {{SG 1.43}} and gel it if it drips |
+| Brushing | {{SG 1.25}} (thin clear) to {{SG 1.55}} (dark detail)                                                                                 | {{SG 1.71–1.81}}                            | Follow the product; use CMC gum or a brushing medium    |
+| Spraying | No figure; Hopper, writing for Ceramic Arts Network, says much thinner, with a deflocculant (an additive that makes a slurry runnier) | {{SG 1.71}}                                 | No reliable number; spray only in a spray booth         |
 
-A mártómáz szemre történő ellenőrzéséhez az AMACO 5 másodpercig márt, és kb. egy amerikai tízcentes érme (dime) vastagságú mázréteget keres. A Digitalfire ellenőrzésképpen 5 másodpercig mártott próbalapokat{{en: test tiles}} éget ki.
+To check a dipping glaze by eye, AMACO dips for 5 seconds and looks for a coat about as thick as a US dime. Digitalfire fires tiles dipped for 5 seconds to check.
 
-### Víz a kívánt fajsúlyhoz: saját becslésünk
+### Water for a target SG: our estimate
 
-Az alábbi táblázat a saját számításunk, nem egy forrásé. Azzal számol, hogy a por szemcséinek sűrűsége 2,6 g/cm³, ami feltételezés, nem mérési eredmény. Az agyag, az oldódó nyersanyagok és a bedermesztés mind módosítják a valódi mázat, ezért kiindulásnak használja, aztán mérjen. Ellenőrzésképpen: azonos tömegű por és víz esetén {{SG 1.44}} értéket ad, ami közel van a Digitalfire által mért {{SG 1.46}} értékhez. Azt is mutatja, hogy 100 g-onként 70–80 mL vízzel {{SG 1.50}} fölött kezd, vagyis sűrűbben, mint amire szükség van.
+The table below is our own arithmetic, not a source's. It assumes the powder's particles have a density of 2.6 g per cm³, which is an assumption, not a measurement. Clay, soluble materials and gelling all change a real glaze, so use it to start, then measure. As a check, it predicts {{SG 1.44}} for equal weights of powder and water, close to Digitalfire's measured {{SG 1.46}}. It also shows that 70 to 80 mL per 100 g starts you above {{SG 1.50}}, thicker than you need.
 
-Table: Víz a kívánt fajsúlyhoz (saját becslésünk)
-Label: Víz a kívánt fajsúlyhoz
+Table: Water for a target specific gravity (our estimate)
+Label: Water for a target specific gravity
 
-| Cél         | 100 g porhoz | Kilogrammonként |      Fontonként |
-| ----------- | -----------: | --------------: | --------------: |
-| {{SG 1.40}} |   kb. 115 mL |     kb. 1150 mL | kb. 18 US fl oz |
-| {{SG 1.45}} |    kb. 98 mL |      kb. 980 mL | kb. 15 US fl oz |
-| {{SG 1.50}} |    kb. 85 mL |      kb. 850 mL | kb. 13 US fl oz |
-| {{SG 1.60}} |    kb. 64 mL |      kb. 640 mL | kb. 10 US fl oz |
+| Target      | Per 100 g of powder |  Per kilogram |         Per pound |
+| ----------- | ------------------: | ------------: | ----------------: |
+| {{SG 1.40}} |        about 115 mL | about 1150 mL | about 18 US fl oz |
+| {{SG 1.45}} |         about 98 mL |  about 980 mL | about 15 US fl oz |
+| {{SG 1.50}} |         about 85 mL |  about 850 mL | about 13 US fl oz |
+| {{SG 1.60}} |         about 64 mL |  about 640 mL | about 10 US fl oz |
 
-### Keserűsó, CMC és bentonit
+### Epsom salts, CMC gum and bentonite
 
-A **keserűsó** (magnézium-szulfát) hatására a máz állás közben kissé bedermed, keveréskor pedig újra folyóssá válik. Ezt **flokkulálásnak**{{en: flocculating}} nevezik, az így viselkedő máz pedig **tixotróp**{{en: thixotropic}}: egyenletesebben hordható fel, kevésbé csepeg, és kevésbé ülepedik le. A Digitalfire azt javasolja, hogy ha a fajsúly már megfelelő, gallononként kb. 2 g-mal kezdje (saját átszámításunk szerint ez durván 0,5 g literenként), és a mennyiséget minden keverésnél állítsa be újra, mert az adagot egyetlen receptnek sem kellene rögzítenie. Azt javasoljuk, hogy előbb oldja fel kevés forró vízben. A Digitalfire egyik példájában egy máz {{SG 1.45}} mellett csepegett, ezért vízzel {{SG 1.43}} értékre hígították, keserűsóval pedig újra krémes állagúra dermesztették, és így egyenletesen felhordható lett. Egy durva próba: keverje meg, hagyja abba, és figyelje. A bedermesztett máz még kb. 2 vagy 3 másodpercig mozog, aztán megáll, és kicsit visszalendül.
+**Epsom salts** make a glaze gel slightly when it stands still and flow again when it is stirred. This is called **flocculating** it, and a glaze that behaves this way is **thixotropic**: it goes on more evenly, drips less and settles less. Digitalfire suggests starting at about 2 g per gallon once the SG is right (roughly 0.5 g per liter, our conversion) and tuning the amount each time you mix, since no recipe should fix the dose. We suggest dissolving it in a little hot water first. In a Digitalfire example, a glaze at {{SG 1.45}} dripped, so water brought it down to {{SG 1.43}} and Epsom salts gelled it back to creamy, and it went on evenly. A rough check: stir, stop and watch. A gelled glaze moves on for about 2 or 3 seconds, then stops and springs back a little.
 
-A **CMC** (karboxi-metil-cellulóz) mázragasztó ragacsosabbá és lassabban száradóvá teszi a máziszapot, és keményebb mázréteget hagy, amely jól tapad az edényre. Leginkább az ecsetelhető mázaknál és a sok frittet{{en: frit}} tartalmazó mázaknál fontos. A Digitalfire példájában 3,75 g-ot kevernek 1000 g máziszapba, és ezt turmixgéppel kell bekeverni. A CMC-t tartalmazó máz keserűsóval nem dermeszthető be, és mivel a ragasztóval mikrobák táplálkoznak, a vödörben megváltozhat, és szagossá válhat.
+**CMC gum** (carboxymethyl cellulose) makes a slurry stickier and slower to dry, and leaves a harder coat that holds to the pot. It matters most for brushing glazes and glazes high in frit. Digitalfire's example blends 3.75 g into 1000 g of slurry, and it has to go in with a blender. A glaze with CMC will not gel with Epsom salts, and since microbes feed on the gum, it can change in the bucket and start to smell.
 
-A **bentonit**, ez a nagyon finom agyag, segít lebegésben tartani a többi szemcsét. A mártómázak ehhez általában 15–25% nyers agyagra támaszkodnak. Kevés agyagot tartalmazó receptnél kb. 1–3% bentonit segít; a Digitalfire szerint a 15%-nál több agyagot tartalmazó mázhoz nem kellene 1%-nál több.
+**Bentonite**, a very fine clay, helps hold the other particles in suspension. Dipping glazes usually rely on 15 to 25% raw clay for this. For a recipe short of clay, about 1 to 3% bentonite helps; Digitalfire says a glaze with more than 15% clay should not need bentonite at more than 1% of the dry glaze's weight.
 
 ## Próbalapok és próbasorok {#testing}
 

@@ -472,7 +472,6 @@
     "expansionRises": "Den beregnede udvidelse stiger fra {was} til {now}.",
     "expansionRisesProbably": "Hvis den gamle glasur lige akkurat passede til leret, vil denne sandsynligvis krakelere, sommetider uger senere.",
     "expansionRisesMay": "Hvis den gamle glasur lige akkurat passede til leret, kan denne krakelere, sommetider uger senere.",
-    "expansionRisesFix": "Krakelering svækker emnerne og frarådes på flader med fødevarekontakt. Hvis en del af natriumet og kaliet erstattes med flusmidler med lavere udvidelse (bor, lithium, magnesium eller calcium), sænkes den; tilsætning af silica foreslås nogle gange, men kilderne er uenige.",
     "expansionFalls": "Den beregnede udvidelse falder fra {was} til {now}. Lidt lavere modstår som regel krakelering bedre.",
     "expansionFallsProbably": "Meget lavere vil sandsynligvis skalle af, med skarpe skår fra rande og kanter.",
     "expansionFallsCan": "Meget lavere kan skalle af, med skarpe skår fra rande og kanter.",
@@ -904,7 +903,6 @@
     "foodSurface": "Til en overflade, der kommer i kontakt med mad (en indvendig glasur)",
     "liner": {
       "note": "Fødevaresikkerhed afhænger af, at glasuren brændes til den kegle, den er testet ved: en underbrændt glasur kan afgive metaller.",
-      "range": "Den er angivet for et interval, så test den i intervallets nedre ende, hvor den smelter mindst.",
       "untested": "Ingen kegle er endnu markeret som testet.",
       "test": "Kun en migrationstest af egne brændte genstande viser, om den er sikker til mad."
     },

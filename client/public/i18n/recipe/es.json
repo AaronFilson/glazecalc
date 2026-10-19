@@ -422,7 +422,7 @@
     "boronLowFireEffects": "Puede dar pinchados o ampollas, volverse de un blanco azulado lechoso donde la capa es gruesa y resistir peor el desgaste. Más caolín y sílice lo estabilizan.",
     "boronMidFire": "Es mucho boro para cono 6 ({boron}; la industria considera alto un valor de {high}).",
     "boronMidFireSet": "Es mucho boro para cono 6 ({boron}; este conjunto de límites considera {high} como alto).",
-    "boronHighFire": "Es mucho boro para cono 10 ({boron}; este conjunto de límites considera alto a partir de {high}).",
+    "boronHighFire": "Es mucho boro para cono 10 ({boron}; este conjunto de límites considera {high} como alto).",
     "boronMidFireProbably": "Los esmaltes así probablemente escurrirán, quedarán lechosos o con vetas, y pueden cuartearse o resistir peor el desgaste.",
     "boronMidFireTends": "Los esmaltes así tienden a escurrir, a quedar lechosos o con vetas, y pueden cuartearse o resistir peor el desgaste.",
     "boronMidFireFix": "Use solo el boro necesario para que funda; el caolín y la sílice lo estabilizan.",
@@ -472,7 +472,6 @@
     "expansionRises": "Su dilatación calculada sube de {was} a {now}.",
     "expansionRisesProbably": "Si el esmalte antiguo apenas se acoplaba a su pasta, este probablemente se cuarteará, a veces semanas después.",
     "expansionRisesMay": "Si el esmalte antiguo apenas se acoplaba a su pasta, este puede cuartearse, a veces semanas después.",
-    "expansionRisesFix": "El cuarteado debilita las piezas y no se recomienda en superficies en contacto con alimentos. Cambiar parte del sodio y del potasio por fundentes de menor dilatación (boro, litio, magnesio o calcio) reduce la dilatación; a veces se sugiere añadir sílice, pero las fuentes no coinciden.",
     "expansionFalls": "Su dilatación calculada baja de {was} a {now}. Algo más baja suele resistir mejor el cuarteado.",
     "expansionFallsProbably": "Si es mucho más baja, probablemente se desconchará, con lascas cortantes que saltan de bordes y cantos.",
     "expansionFallsCan": "Si es mucho más baja, puede desconcharse, con lascas cortantes que saltan de bordes y cantos.",
@@ -904,7 +903,6 @@
     "foodSurface": "Para una superficie en contacto con alimentos (un esmalte de interior)",
     "liner": {
       "note": "La seguridad alimentaria depende de cocer este esmalte al cono al que se probó: un esmalte poco cocido puede ceder metales.",
-      "range": "Se da para un intervalo, así que pruébelo en el extremo bajo del intervalo, donde menos se funde.",
       "untested": "Todavía no hay ningún cono marcado como probado.",
       "test": "Solo un ensayo de cesión de sus propias piezas cocidas muestra si es apto para uso alimentario."
     },

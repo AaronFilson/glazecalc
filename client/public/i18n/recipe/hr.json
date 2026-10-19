@@ -472,7 +472,6 @@
     "expansionRises": "Izračunato toplinsko rastezanje raste s {was} na {now}.",
     "expansionRisesProbably": "Ako je stara glazura jedva odgovarala vašoj glini, ova će vjerojatno pucati, ponekad i nakon nekoliko tjedana.",
     "expansionRisesMay": "Ako je stara glazura jedva odgovarala vašoj glini, ova bi mogla pucati, ponekad i nakon nekoliko tjedana.",
-    "expansionRisesFix": "Pucanje glazure slabi predmete i ne preporučuje se na površinama u dodiru s hranom. Toplinsko rastezanje smanjuje zamjena dijela natrija i kalija topiteljima manjeg toplinskog rastezanja (bor, litij, magnezij ili kalcij); ponekad se predlaže i dodavanje silicijeva dioksida, ali se izvori ne slažu.",
     "expansionFalls": "Izračunato toplinsko rastezanje pada s {was} na {now}. Malo niže obično bolje sprječava pucanje glazure.",
     "expansionFallsProbably": "Znatno niže vjerojatno će dovesti do ljuštenja glazure, pri čemu s rubova i bridova otpadaju oštre ljuskice.",
     "expansionFallsCan": "Znatno niže može dovesti do ljuštenja glazure, pri čemu s rubova i bridova otpadaju oštre ljuskice.",
@@ -904,7 +903,6 @@
     "foodSurface": "Za površinu u dodiru s hranom (glazura za unutrašnjost)",
     "liner": {
       "note": "Sigurnost u dodiru s hranom ovisi o tome peče li se ova glazura na stožac na kojem je ispitana: nedopečena glazura može otpuštati metale.",
-      "range": "Navedena je za raspon, pa je ispitajte na donjem kraju raspona, gdje se najmanje tali.",
       "untested": "Još nijedan stožac nije označen kao ispitan.",
       "test": "Samo ispitivanje otpuštanja metala na vašim vlastitim pečenim posudama pokazuje je li sigurna za hranu."
     },

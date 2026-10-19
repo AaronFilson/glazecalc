@@ -163,55 +163,55 @@ Label: Il-mesh tal-għarbiel
 | Glejżijiet b’kuluranti{{en: colorants}} bħall-kobalt jew il-ħadid | 100 sa 120 mesh       |
 | Glejżijiet tar-rmied, u oħrajn b’materjali ħoxnin                 | 60 sa 80 mesh         |
 
-## Il-gravità speċifika {#specific-gravity}
+## Specific gravity {#specific-gravity lang=en}
 
-Il-**gravità speċifika**{{en: specific gravity}} (SG) turik kemm hemm trab fil-glejż likwidu{{en: slurry}} tiegħek. Hija l-piż ta’ volum ta’ glejż{{en: glaze}} maqsum bil-piż tal-istess volum ta’ ilma. L-ilma huwa 1.00, u glejż b’{{SG 1.45}} jiżen 145 g kull 100 mL. It-taħlit sa gravità speċifika mkejla huwa l-mod kif tikseb l-istess ħxuna, u l-istess saff, kull darba. M’għandha l-ebda unità, għalhekk hija l-istess kemm bil-grammi kif ukoll bl-uqija.
+**Specific gravity** (SG) tells you how much powder is in your slurry. It is the weight of a volume of glaze divided by the weight of the same volume of water. Water is 1.00, and a glaze at {{SG 1.45}} weighs 145 g per 100 mL. Mixing to a measured SG is how you get the same thickness, and the same coat, every time. It has no units, so it is the same in grams or ounces.
 
-### Kejjilha billi tiżen 100 mL
+### Measure it by weighing 100 mL
 
-1. Ħawwad il-glejż biex xejn ma jkun niżel fil-qiegħ.
-2. Poġġi **ċilindru graduat** ta’ 100 mL (tubu twil tal-kejl, immarkat) jew siringa ta’ 100 mL fuq il-miżien, u ġib il-miżien fuq żero.
-3. Imlieh bil-glejż sa eżatt 100 mL, u aqra l-marka b’għajnejk fil-livell tagħha.
-4. Iżnu u aqsam il-grammi b’100: 145 g ifissru gravità speċifika ta’ 1.45.
+1. Stir the glaze so nothing has settled.
+2. Put a 100 mL **graduated cylinder** (a tall, marked measuring tube) or a 100 mL syringe on the scale, and tare it.
+3. Fill it with glaze to exactly 100 mL, reading the mark at eye level.
+4. Weigh it and divide the grams by 100: 145 g is SG 1.45.
 
-Digitalfire jimmarka wkoll tazza fil-livell ta’ 500 g ilma, jimlieha bil-glejż sal-marka, u jaqsam il-piż b’500; kejl akbar u aktar mimli huwa aktar preċiż. **Idrometru**, għawwiema li taqraha fejn tieqaf fil-glejż, huwa mgħaġġel iżda jista’ jaqra ħażin fi glejżijiet ħoxnin jew ġellifikati. L-idrometri tar-Renju Unit, bħal dak ta’ Potclays, jaqraw bi gradi Baumé (°Bé). Skont il-kalkolu tagħna, gravità speċifika = 145 ÷ (145 − °Bé), għalhekk 46 °Bé jagħti madwar 1.46. Il-kotba Brittaniċi eqdem jagħtu l-**piż tal-pinta**, l-uqija f’pinta imperjali ta’ glejż: aqsmu b’20, għalhekk 29 oz jagħtu madwar gravità speċifika ta’ 1.45 (ukoll skont il-kalkolu tagħna).
+Digitalfire also marks a cup at the level of 500 g of water, fills it to the mark with glaze, and divides the weight by 500; a bigger, fuller measure is more accurate. A **hydrometer**, a float read where it sits in the glaze, is quick but can misread thick or gelled glazes. UK hydrometers, such as Potclays', read in degrees Baumé (°Bé). By our arithmetic, SG = 145 ÷ (145 − °Bé), so 46 °Bé is about 1.46. Older UK books give a **pint weight**, the ounces in an imperial pint of glaze: divide it by 20, so 29 oz is about SG 1.45 (also our arithmetic).
 
-### Għal xiex timmira
+### What to aim for
 
-Is-sorsi ma jaqblux, l-aktar fuq il-pinzellar u l-isprejjar, fejn il-fornitur Brittaniku Potclays jagħti ċifri ferm ogħla (iċ-ċifri tiegħu stess huma “indikattivi biss”). Qis kull numru bħala punt tat-tluq. Il-parir ewlieni ta’ Digitalfire huwa li ssib il-gravità speċifika u l-ġellifikazzjoni li jaħdmu għal kull glejż, imbagħad tirrepetihom u tiktibhom.
+Sources disagree, most of all on brushing and spraying, where the UK supplier Potclays gives much higher figures (its own are "for guidance only"). Treat every number as a starting point. Digitalfire's core advice is to find the SG and gelling that work for each glaze, then repeat them and write them down.
 
-Table: Gravità speċifika fil-mira, fejn is-sorsi ma jaqblux
-Label: Gravità speċifika fil-mira
+Table: Specific gravity targets, where sources disagree
+Label: Specific gravity targets
 
-| Użu       | Digitalfire u Glazy                                                                                                                                                     | Potclays (Renju Unit)                                 | Punt tat-tluq sikur                                                 |
-| --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------- | ------------------------------------------------------------------- |
-| Għadis    | {{SG 1.40}} (għal għadsa ta’ 5 sekondi) sa {{SG 1.50}} (għal għadsa ta’ 1 sekonda); il-glejżijiet imħallta d-dar li jkunu ġellifikati jaħdmu l-aħjar b’{{SG 1.43–1.45}} | Trasparenti: {{SG 1.46–1.48}}; ikkulurit: {{SG 1.61}} | {{SG 1.45}}; raqqaq sa {{SG 1.43}} u ġegħlu jagħqad jekk iqattar    |
-| Pinzellar | {{SG 1.25}} (trasparenti rqiq) sa {{SG 1.55}} (dettall skur)                                                                                                            | {{SG 1.71–1.81}}                                      | Segwi dak li jgħid il-prodott; uża gomma CMC jew mezz għall-pinzell |
-| Sprejjar  | L-ebda ċifra; Hopper, li jikteb għal Ceramic Arts Network, jgħid ferm irqaq, b’deflokkulant{{en: deflocculant}} (addittiv li jagħmel il-glejż likwidu jiġri aktar)      | {{SG 1.71}}                                           | L-ebda numru affidabbli; sprejja biss ġo kabina tal-isprejjar       |
+| Use      | Digitalfire and Glazy                                                                                                                 | Potclays (UK)                               | Safe starting point                                     |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- | ------------------------------------------------------- |
+| Dipping  | {{SG 1.40}} (for a 5-second dip) to {{SG 1.50}} (for a 1-second dip); home-mixed glazes that are gelled do best at {{SG 1.43–1.45}}   | Clear {{SG 1.46–1.48}}; colored {{SG 1.61}} | {{SG 1.45}}; thin to {{SG 1.43}} and gel it if it drips |
+| Brushing | {{SG 1.25}} (thin clear) to {{SG 1.55}} (dark detail)                                                                                 | {{SG 1.71–1.81}}                            | Follow the product; use CMC gum or a brushing medium    |
+| Spraying | No figure; Hopper, writing for Ceramic Arts Network, says much thinner, with a deflocculant (an additive that makes a slurry runnier) | {{SG 1.71}}                                 | No reliable number; spray only in a spray booth         |
 
-Biex tiċċekkja glejż għall-għadis bl-għajn, AMACO jgħaddas għal 5 sekondi u jfittex saff oħxon madwar daqs munita dime Amerikana. Digitalfire jaħmi madum imgħaddas għal 5 sekondi biex jiċċekkja.
+To check a dipping glaze by eye, AMACO dips for 5 seconds and looks for a coat about as thick as a US dime. Digitalfire fires tiles dipped for 5 seconds to check.
 
-### Ilma għal gravità speċifika fil-mira: l-istima tagħna
+### Water for a target SG: our estimate
 
-It-tabella hawn taħt hija l-kalkolu tagħna stess, mhux ta’ sors. Tassumi li l-partiċelli tat-trab għandhom densità ta’ 2.6 g kull cm³, li hija suppożizzjoni, mhux kejl. It-tafal, il-materjali solubbli u l-ġellifikazzjoni kollha jibdlu glejż reali, għalhekk użaha biex tibda, imbagħad kejjel. Bħala kontroll, tbassar {{SG 1.44}} għall-istess piż ta’ trab u ta’ ilma, qrib il-valur li kejjel Digitalfire, {{SG 1.46}}. Turi wkoll li b’70 sa 80 mL kull 100 g tibda ’l fuq minn {{SG 1.50}}, aktar oħxon milli għandek bżonn.
+The table below is our own arithmetic, not a source's. It assumes the powder's particles have a density of 2.6 g per cm³, which is an assumption, not a measurement. Clay, soluble materials and gelling all change a real glaze, so use it to start, then measure. As a check, it predicts {{SG 1.44}} for equal weights of powder and water, close to Digitalfire's measured {{SG 1.46}}. It also shows that 70 to 80 mL per 100 g starts you above {{SG 1.50}}, thicker than you need.
 
-Table: Ilma għal gravità speċifika fil-mira (l-istima tagħna)
-Label: Ilma għal gravità speċifika fil-mira
+Table: Water for a target specific gravity (our estimate)
+Label: Water for a target specific gravity
 
-| Mira        | Kull 100 g trab | Kull kilogramma |         Kull libra |
-| ----------- | --------------: | --------------: | -----------------: |
-| {{SG 1.40}} |   madwar 115 mL |  madwar 1150 mL | madwar 18 US fl oz |
-| {{SG 1.45}} |    madwar 98 mL |   madwar 980 mL | madwar 15 US fl oz |
-| {{SG 1.50}} |    madwar 85 mL |   madwar 850 mL | madwar 13 US fl oz |
-| {{SG 1.60}} |    madwar 64 mL |   madwar 640 mL | madwar 10 US fl oz |
+| Target      | Per 100 g of powder |  Per kilogram |         Per pound |
+| ----------- | ------------------: | ------------: | ----------------: |
+| {{SG 1.40}} |        about 115 mL | about 1150 mL | about 18 US fl oz |
+| {{SG 1.45}} |         about 98 mL |  about 980 mL | about 15 US fl oz |
+| {{SG 1.50}} |         about 85 mL |  about 850 mL | about 13 US fl oz |
+| {{SG 1.60}} |         about 64 mL |  about 640 mL | about 10 US fl oz |
 
-### Melħ Epsom, gomma CMC u bentonit
+### Epsom salts, CMC gum and bentonite
 
-Il-**melħ Epsom** (sulfat tal-manjeżju) iġiegħel il-glejż jagħqad kemmxejn meta jkun wieqaf u jerġa’ jiġri meta tħawwdu. Dan jissejjaħ **flokkulazzjoni**{{en: flocculating}}, u glejż li jġib ruħu hekk huwa **tissotropiku**{{en: thixotropic}}: jitqiegħed b’mod aktar uniformi, iqattar inqas u jinżel inqas fil-qiegħ. Digitalfire jissuġġerixxi li tibda b’madwar 2 g kull gallun ladarba l-gravità speċifika tkun it-tajba (bejn wieħed u ieħor 0.5 g kull litru, skont il-konverżjoni tagħna) u li taġġusta l-ammont kull darba li tħallat, għax l-ebda riċetta m’għandha tiffissa d-doża. Nissuġġerixxu li l-ewwel tħollu fi ftit ilma sħun. F’eżempju ta’ Digitalfire, glejż b’{{SG 1.45}} kien iqattar, għalhekk l-ilma niżżlu għal {{SG 1.43}} u l-melħ Epsom reġa’ għaqqdu sakemm sar kremuż, u tqiegħed b’mod uniformi. Kontroll approssimattiv: ħawwad, ieqaf u osserva. Glejż ġellifikat jibqa’ jiċċaqlaq għal madwar 2 jew 3 sekondi, imbagħad jieqaf u jerġa’ lura ftit.
+**Epsom salts** make a glaze gel slightly when it stands still and flow again when it is stirred. This is called **flocculating** it, and a glaze that behaves this way is **thixotropic**: it goes on more evenly, drips less and settles less. Digitalfire suggests starting at about 2 g per gallon once the SG is right (roughly 0.5 g per liter, our conversion) and tuning the amount each time you mix, since no recipe should fix the dose. We suggest dissolving it in a little hot water first. In a Digitalfire example, a glaze at {{SG 1.45}} dripped, so water brought it down to {{SG 1.43}} and Epsom salts gelled it back to creamy, and it went on evenly. A rough check: stir, stop and watch. A gelled glaze moves on for about 2 or 3 seconds, then stops and springs back a little.
 
-Il-**gomma CMC** (karbossimetilċelluloża) tagħmel il-glejż likwidu aktar iwaħħal u jdum aktar biex jinxef, u tħalli saff aktar iebes li jeħel mal-biċċa. L-aktar hija importanti għall-glejżijiet għall-pinzell u għal dawk b’ħafna fritta{{en: frit}}. L-eżempju ta’ Digitalfire jħallat 3.75 g f’1000 g ta’ glejż likwidu, u trid tiżdied bil-blender. Glejż bis-CMC ma jagħqadx bil-melħ Epsom, u peress li l-mikrobi jieklu l-gomma, jista’ jinbidel fil-barmil u jibda jinten.
+**CMC gum** (carboxymethyl cellulose) makes a slurry stickier and slower to dry, and leaves a harder coat that holds to the pot. It matters most for brushing glazes and glazes high in frit. Digitalfire's example blends 3.75 g into 1000 g of slurry, and it has to go in with a blender. A glaze with CMC will not gel with Epsom salts, and since microbes feed on the gum, it can change in the bucket and start to smell.
 
-Il-**bentonit**, tafal fin ħafna, jgħin iżomm il-partiċelli l-oħra f’sospensjoni. Il-glejżijiet għall-għadis normalment jiddependu fuq 15 sa 25% tafal mhux moħmi għal dan. Għal riċetta li m’għandhiex biżżejjed tafal, madwar 1 sa 3% bentonit jgħin; Digitalfire tgħid li glejż b’aktar minn 15% tafal m’għandux ikollu bżonn aktar minn 1%.
+**Bentonite**, a very fine clay, helps hold the other particles in suspension. Dipping glazes usually rely on 15 to 25% raw clay for this. For a recipe short of clay, about 1 to 3% bentonite helps; Digitalfire says a glaze with more than 15% clay should not need bentonite at more than 1% of the dry glaze's weight.
 
 ## Madum tal-prova u sensiela ta’ provi {#testing}
 

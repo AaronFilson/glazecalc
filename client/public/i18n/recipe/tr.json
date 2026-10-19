@@ -472,7 +472,6 @@
     "expansionRises": "Hesaplanan genleşmesi {was} değerinden {now} değerine çıkıyor.",
     "expansionRisesProbably": "Eski sır çamurunuza ancak uyuyorduysa, bu sır muhtemelen sır çatlağı yapar, bazen haftalar sonra.",
     "expansionRisesMay": "Eski sır çamurunuza ancak uyuyorduysa, bu sır sır çatlağı yapabilir, bazen haftalar sonra.",
-    "expansionRisesFix": "Sır çatlağı parçaları zayıflatır ve yiyecekle temas eden yüzeylerde önerilmez. Bir miktar sodyum ve potasyumu daha düşük genleşmeli ergiticilerle (bor, lityum, magnezyum veya kalsiyum) değiştirmek genleşmeyi düşürür; silis eklemek bazen önerilir, ama kaynaklar bu konuda aynı fikirde değildir.",
     "expansionFalls": "Hesaplanan genleşmesi {was} değerinden {now} değerine düşüyor. Biraz daha düşük genleşme genellikle sır çatlağına daha iyi direnir.",
     "expansionFallsProbably": "Çok daha düşük genleşme muhtemelen kavlamaya yol açar; ağız kenarlarından ve kenarlardan keskin pullar kopar.",
     "expansionFallsCan": "Çok daha düşük genleşme kavlamaya yol açabilir; ağız kenarlarından ve kenarlardan keskin pullar kopar.",
@@ -904,7 +903,6 @@
     "foodSurface": "Gıda ile temas eden yüzey için (iç sır)",
     "liner": {
       "note": "Gıda güvenliği, bu sırrın test edildiği piramide kadar pişirilmesine bağlıdır: az pişmiş bir sır metal salabilir.",
-      "range": "Bir aralık olarak verilmiştir; bu yüzden aralığın, sırrın en az eridiği alt ucunda test edin.",
       "untested": "Henüz hiçbir piramit test edilmiş olarak işaretlenmedi.",
       "test": "Gıdaya uygun olup olmadığını yalnızca kendi pişirdiğiniz parçalar üzerinde yapılan bir metal salımı testi gösterir."
     },

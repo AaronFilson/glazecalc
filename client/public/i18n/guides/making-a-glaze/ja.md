@@ -163,55 +163,55 @@ Label: ふるいのメッシュ
 | コバルトや鉄などの着色剤{{en: colorants}}を含む釉薬 | 100〜120 メッシュ     |
 | 灰釉、そのほか粗い原料を含む釉薬                    | 60〜80 メッシュ       |
 
-## 比重 {#specific-gravity}
+## Specific gravity {#specific-gravity lang=en}
 
-**比重**{{en: specific gravity, SG}}は、釉液{{en: slurry}}にどれだけ粉末が入っているかを示します。ある体積の釉薬の重さを、同じ体積の水の重さで割った値です。水は 1.00 で、{{SG 1.45}} の釉薬は 100 mL あたり 145 g です。測った比重に合わせて混ぜれば、毎回同じ濃さ、同じ釉層になります。比重には単位がないので、グラムでもオンスでも同じです。
+**Specific gravity** (SG) tells you how much powder is in your slurry. It is the weight of a volume of glaze divided by the weight of the same volume of water. Water is 1.00, and a glaze at {{SG 1.45}} weighs 145 g per 100 mL. Mixing to a measured SG is how you get the same thickness, and the same coat, every time. It has no units, so it is the same in grams or ounces.
 
-### 100 mL を量って測る
+### Measure it by weighing 100 mL
 
-1. 沈殿がないように、釉薬をかき混ぜてください。
-2. 100 mL の**メスシリンダー**（目盛りの付いた細長い計量用の筒）か 100 mL の注射器をはかりに載せ、風袋引きをしてください。
-3. 釉薬をちょうど 100 mL まで入れてください。目盛りは目の高さで読みます。
-4. 重さを量り、グラム数を100で割ってください。145 g なら比重 1.45 です。
+1. Stir the glaze so nothing has settled.
+2. Put a 100 mL **graduated cylinder** (a tall, marked measuring tube) or a 100 mL syringe on the scale, and tare it.
+3. Fill it with glaze to exactly 100 mL, reading the mark at eye level.
+4. Weigh it and divide the grams by 100: 145 g is SG 1.45.
 
-Digitalfire は、カップに 500 g の水の水位で印を付け、釉薬を印まで入れて、その重さを500で割る方法も使っています。大きく、たっぷり入る容器ほど正確です。**比重計**は、釉薬に浮かべて止まった位置で読む浮きで、手早く測れますが、濃い釉薬やゲル状になった釉薬では読み違えることがあります。Potclays のものなど英国の比重計は、ボーメ度（°Bé）で表示します。私たちの計算では、比重 = 145 ÷ (145 − °Bé) なので、46 °Bé は約 1.46 です。英国の古い本は**パイント重量**、つまり英パイントあたりの釉薬のオンス数を示しています。これを20で割ってください。29 oz なら比重は約 1.45 です（これも私たちの計算です）。
+Digitalfire also marks a cup at the level of 500 g of water, fills it to the mark with glaze, and divides the weight by 500; a bigger, fuller measure is more accurate. A **hydrometer**, a float read where it sits in the glaze, is quick but can misread thick or gelled glazes. UK hydrometers, such as Potclays', read in degrees Baumé (°Bé). By our arithmetic, SG = 145 ÷ (145 − °Bé), so 46 °Bé is about 1.46. Older UK books give a **pint weight**, the ounces in an imperial pint of glaze: divide it by 20, so 29 oz is about SG 1.45 (also our arithmetic).
 
-### 目標値
+### What to aim for
 
-情報源によって意見が分かれ、特に筆塗りと吹き掛けで大きく違います。英国の販売店 Potclays はずっと高い数値を示しています（Potclays 自身、その数値は「あくまで目安」としています）。どの数値も出発点として扱ってください。Digitalfire の基本的な助言は、釉薬ごとにうまくいく比重とゲル化の具合を見つけ、それを毎回再現し、書き留めることです。
+Sources disagree, most of all on brushing and spraying, where the UK supplier Potclays gives much higher figures (its own are "for guidance only"). Treat every number as a starting point. Digitalfire's core advice is to find the SG and gelling that work for each glaze, then repeat them and write them down.
 
-Table: 比重の目標値（情報源で意見が分かれるもの）
-Label: 比重の目標値
+Table: Specific gravity targets, where sources disagree
+Label: Specific gravity targets
 
-| 用途     | Digitalfire と Glazy                                                                                                                                | Potclays（英国）                          | 無難な出発点                                               |
-| -------- | --------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------- | ---------------------------------------------------------- |
-| 浸し掛け | {{SG 1.40}}（5秒浸す場合）から {{SG 1.50}}（1秒浸す場合）まで。自家調合でゲル状にした釉薬は {{SG 1.43–1.45}} が最適                                 | 透明釉 {{SG 1.46–1.48}}、色釉 {{SG 1.61}} | {{SG 1.45}}。垂れるなら {{SG 1.43}} まで薄めてゲル状にする |
-| 筆塗り   | {{SG 1.25}}（薄い透明釉）から {{SG 1.55}}（濃い色の細部）まで                                                                                       | {{SG 1.71–1.81}}                          | 製品の指示に従う。CMC か筆塗り用の糊剤を使う               |
-| 吹き掛け | 数値なし。Ceramic Arts Network に寄稿している Hopper は、解膠剤{{en: deflocculant}}（釉液を流れやすくする添加剤）を加えて、ずっと薄くするとしている | {{SG 1.71}}                               | 信頼できる数値はない。吹き掛けは吹付けブースの中でだけ行う |
+| Use      | Digitalfire and Glazy                                                                                                                 | Potclays (UK)                               | Safe starting point                                     |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- | ------------------------------------------------------- |
+| Dipping  | {{SG 1.40}} (for a 5-second dip) to {{SG 1.50}} (for a 1-second dip); home-mixed glazes that are gelled do best at {{SG 1.43–1.45}}   | Clear {{SG 1.46–1.48}}; colored {{SG 1.61}} | {{SG 1.45}}; thin to {{SG 1.43}} and gel it if it drips |
+| Brushing | {{SG 1.25}} (thin clear) to {{SG 1.55}} (dark detail)                                                                                 | {{SG 1.71–1.81}}                            | Follow the product; use CMC gum or a brushing medium    |
+| Spraying | No figure; Hopper, writing for Ceramic Arts Network, says much thinner, with a deflocculant (an additive that makes a slurry runnier) | {{SG 1.71}}                                 | No reliable number; spray only in a spray booth         |
 
-浸し掛け用の釉薬を目で確かめるために、AMACO は5秒浸して、米国のダイム硬貨ほどの厚さの釉層になっているかを見ます。Digitalfire は、5秒浸したテストピース{{en: test tiles}}を焼成して確かめます。
+To check a dipping glaze by eye, AMACO dips for 5 seconds and looks for a coat about as thick as a US dime. Digitalfire fires tiles dipped for 5 seconds to check.
 
-### 目標比重に必要な水: 私たちの目安
+### Water for a target SG: our estimate
 
-下の表は情報源のものではなく、私たち自身の計算です。粉末の粒子の密度を cm³ あたり 2.6 g と仮定していますが、これは仮定であり、測定値ではありません。粘土、水溶性の原料、ゲル化はどれも実際の釉薬を変えるので、出発点として使い、そのあと測ってください。検算として、この計算では粉末と水が同じ重さのとき {{SG 1.44}} になり、Digitalfire の実測値 {{SG 1.46}} に近い値です。また、100 g あたり 70〜80 mL で始めると {{SG 1.50}} を超える、必要より濃い状態から始まることもわかります。
+The table below is our own arithmetic, not a source's. It assumes the powder's particles have a density of 2.6 g per cm³, which is an assumption, not a measurement. Clay, soluble materials and gelling all change a real glaze, so use it to start, then measure. As a check, it predicts {{SG 1.44}} for equal weights of powder and water, close to Digitalfire's measured {{SG 1.46}}. It also shows that 70 to 80 mL per 100 g starts you above {{SG 1.50}}, thicker than you need.
 
-Table: 目標比重に必要な水（私たちの目安）
-Label: 目標比重に必要な水
+Table: Water for a target specific gravity (our estimate)
+Label: Water for a target specific gravity
 
-| 目標        | 粉末 100 g あたり | キログラムあたり |   ポンドあたり |
-| ----------- | ----------------: | ---------------: | -------------: |
-| {{SG 1.40}} |         約 115 mL |       約 1150 mL | 約 18 US fl oz |
-| {{SG 1.45}} |          約 98 mL |        約 980 mL | 約 15 US fl oz |
-| {{SG 1.50}} |          約 85 mL |        約 850 mL | 約 13 US fl oz |
-| {{SG 1.60}} |          約 64 mL |        約 640 mL | 約 10 US fl oz |
+| Target      | Per 100 g of powder |  Per kilogram |         Per pound |
+| ----------- | ------------------: | ------------: | ----------------: |
+| {{SG 1.40}} |        about 115 mL | about 1150 mL | about 18 US fl oz |
+| {{SG 1.45}} |         about 98 mL |  about 980 mL | about 15 US fl oz |
+| {{SG 1.50}} |         about 85 mL |  about 850 mL | about 13 US fl oz |
+| {{SG 1.60}} |         about 64 mL |  about 640 mL | about 10 US fl oz |
 
-### エプソムソルト、CMC、ベントナイト
+### Epsom salts, CMC gum and bentonite
 
-**エプソムソルト**（硫酸マグネシウム）を加えると、釉薬は静かに置いておくと軽くゲル状になり、かき混ぜるとまた流れるようになります。これを**凝集させる**{{en: flocculating}}といい、このようにふるまう釉薬は**チキソ性**{{en: thixotropic}}がある、といいます。ムラなく掛かり、垂れにくく、沈殿しにくくなります。Digitalfire は、比重が合ったらガロンあたり約 2 g から始め（私たちの換算では、リットルあたりおよそ 0.5 g）、混ぜるたびに量を調整することを勧めています。量は調合で固定するべきものではないからです。私たちは、先に少量のお湯に溶かすことをおすすめします。Digitalfire の例では、{{SG 1.45}} の釉薬が垂れたので、水で {{SG 1.43}} まで下げ、エプソムソルトでクリーム状に戻したところ、ムラなく掛かりました。簡単な確かめ方: かき混ぜて、止めて、観察します。ゲル状になった釉薬は約2、3秒動き続けてから止まり、少し戻ります。
+**Epsom salts** make a glaze gel slightly when it stands still and flow again when it is stirred. This is called **flocculating** it, and a glaze that behaves this way is **thixotropic**: it goes on more evenly, drips less and settles less. Digitalfire suggests starting at about 2 g per gallon once the SG is right (roughly 0.5 g per liter, our conversion) and tuning the amount each time you mix, since no recipe should fix the dose. We suggest dissolving it in a little hot water first. In a Digitalfire example, a glaze at {{SG 1.45}} dripped, so water brought it down to {{SG 1.43}} and Epsom salts gelled it back to creamy, and it went on evenly. A rough check: stir, stop and watch. A gelled glaze moves on for about 2 or 3 seconds, then stops and springs back a little.
 
-**CMC**（カルボキシメチルセルロースの糊剤）は、釉液をねばりのある乾きにくいものにし、器にしっかり付く硬い釉層を残します。筆塗り用の釉薬と、フリット{{en: frit}}の多い釉薬で特に重要です。Digitalfire の例では釉液 1000 g に 3.75 g を混ぜており、ミキサーで混ぜ込む必要があります。CMC を含む釉薬は、エプソムソルトではゲル状になりません。また、微生物が糊剤を餌にするので、バケツの中で変化して、においが出てくることがあります。
+**CMC gum** (carboxymethyl cellulose) makes a slurry stickier and slower to dry, and leaves a harder coat that holds to the pot. It matters most for brushing glazes and glazes high in frit. Digitalfire's example blends 3.75 g into 1000 g of slurry, and it has to go in with a blender. A glaze with CMC will not gel with Epsom salts, and since microbes feed on the gum, it can change in the bucket and start to smell.
 
-**ベントナイト**はとても細かい粘土で、ほかの粒子を懸濁させておくのを助けます。浸し掛け用の釉薬は、ふつうこのために15〜25%の生の粘土に頼っています。粘土の少ない調合には、約1〜3%のベントナイトが役立ちます。Digitalfire は、粘土が15%を超える釉薬には1%を超えるベントナイトは必要ないはずだとしています。
+**Bentonite**, a very fine clay, helps hold the other particles in suspension. Dipping glazes usually rely on 15 to 25% raw clay for this. For a recipe short of clay, about 1 to 3% bentonite helps; Digitalfire says a glaze with more than 15% clay should not need bentonite at more than 1% of the dry glaze's weight.
 
 ## テストピースとラインブレンド {#testing}
 

@@ -163,55 +163,55 @@ Label: Maglia del setaccio
 | Smalti con coloranti{{en: colorants}} come cobalto o ferro | 100–120 mesh           |
 | Smalti di cenere e altri con materiali grossolani          | 60–80 mesh             |
 
-## Peso specifico {#specific-gravity}
+## Specific gravity {#specific-gravity lang=en}
 
-Il **peso specifico**{{en: specific gravity (SG)}} indica quanta polvere c’è nella sospensione{{en: slurry}}. È il peso di un volume di smalto{{en: glaze}} diviso per il peso dello stesso volume d’acqua. L’acqua vale 1,00 e uno smalto con {{SG 1.45}} pesa 145 g ogni 100 mL. Preparare lo smalto a un peso specifico misurato è il modo per ottenere ogni volta la stessa densità e lo stesso strato. Non ha unità di misura, quindi è lo stesso in grammi o in once.
+**Specific gravity** (SG) tells you how much powder is in your slurry. It is the weight of a volume of glaze divided by the weight of the same volume of water. Water is 1.00, and a glaze at {{SG 1.45}} weighs 145 g per 100 mL. Mixing to a measured SG is how you get the same thickness, and the same coat, every time. It has no units, so it is the same in grams or ounces.
 
-### Misurarlo pesando 100 mL
+### Measure it by weighing 100 mL
 
-1. Mescolare lo smalto perché nulla resti depositato sul fondo.
-2. Mettere sulla bilancia un **cilindro graduato** da 100 mL (un tubo di misura alto, con le tacche) o una siringa da 100 mL e fare la tara.
-3. Riempirlo di smalto esattamente fino a 100 mL, leggendo la tacca all’altezza degli occhi.
-4. Pesarlo e dividere i grammi per 100: 145 g corrispondono a un peso specifico di 1,45.
+1. Stir the glaze so nothing has settled.
+2. Put a 100 mL **graduated cylinder** (a tall, marked measuring tube) or a 100 mL syringe on the scale, and tare it.
+3. Fill it with glaze to exactly 100 mL, reading the mark at eye level.
+4. Weigh it and divide the grams by 100: 145 g is SG 1.45.
 
-Digitalfire segna anche su un bicchiere il livello di 500 g d’acqua, lo riempie di smalto fino al segno e divide il peso per 500: una misura più grande e più piena è più precisa. Il **densimetro**, un galleggiante che si legge nel punto in cui si ferma nello smalto, è rapido ma può dare letture sbagliate con smalti densi o gelificati{{en: gelled}}. I densimetri del Regno Unito, come quello di Potclays, leggono in gradi Baumé (°Bé). Secondo il nostro calcolo, peso specifico = 145 ÷ (145 − °Bé), quindi 46 °Bé corrispondono a circa 1,46. I libri britannici più vecchi indicano il **peso a pinta**, le once in una pinta imperiale di smalto: dividerlo per 20, quindi 29 oz corrispondono a circa un peso specifico di 1,45 (anche questo è un nostro calcolo).
+Digitalfire also marks a cup at the level of 500 g of water, fills it to the mark with glaze, and divides the weight by 500; a bigger, fuller measure is more accurate. A **hydrometer**, a float read where it sits in the glaze, is quick but can misread thick or gelled glazes. UK hydrometers, such as Potclays', read in degrees Baumé (°Bé). By our arithmetic, SG = 145 ÷ (145 − °Bé), so 46 °Bé is about 1.46. Older UK books give a **pint weight**, the ounces in an imperial pint of glaze: divide it by 20, so 29 oz is about SG 1.45 (also our arithmetic).
 
-### Valori da raggiungere
+### What to aim for
 
-Le fonti non concordano, soprattutto per la pennellatura e la spruzzatura, dove il fornitore britannico Potclays dà valori molto più alti (che lo stesso Potclays presenta come «solo indicativi»). Considerare ogni numero come un punto di partenza. Il consiglio di fondo di Digitalfire è trovare il peso specifico e la gelificazione giusti per ogni smalto, poi ripeterli e annotarli.
+Sources disagree, most of all on brushing and spraying, where the UK supplier Potclays gives much higher figures (its own are "for guidance only"). Treat every number as a starting point. Digitalfire's core advice is to find the SG and gelling that work for each glaze, then repeat them and write them down.
 
-Table: Pesi specifici consigliati, dove le fonti non concordano
-Label: Pesi specifici consigliati
+Table: Specific gravity targets, where sources disagree
+Label: Specific gravity targets
 
-| Uso          | Digitalfire e Glazy                                                                                                                                                                    | Potclays (Regno Unito)                                    | Punto di partenza sicuro                                                   |
-| ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- | -------------------------------------------------------------------------- |
-| Immersione   | Da {{SG 1.40}} (per un’immersione di 5 secondi) a {{SG 1.50}} (per un’immersione di 1 secondo); gli smalti preparati in proprio e gelificati rendono meglio a {{SG 1.43–1.45}}         | Cristallina {{SG 1.46–1.48}}; smalti colorati {{SG 1.61}} | {{SG 1.45}}; se gocciola, diluire fino a {{SG 1.43}} e gelificarlo         |
-| Pennellatura | Da {{SG 1.25}} (cristallina sottile) a {{SG 1.55}} (dettagli scuri)                                                                                                                    | {{SG 1.71–1.81}}                                          | Seguire le indicazioni del prodotto; usare la CMC o un medium per pennello |
-| Spruzzatura  | Nessun valore; Hopper, in un articolo per Ceramic Arts Network, lo vuole molto più diluito, con un deflocculante{{en: deflocculant}} (un additivo che rende più fluida la sospensione) | {{SG 1.71}}                                               | Nessun valore affidabile; spruzzare solo in una cabina di spruzzatura      |
+| Use      | Digitalfire and Glazy                                                                                                                 | Potclays (UK)                               | Safe starting point                                     |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- | ------------------------------------------------------- |
+| Dipping  | {{SG 1.40}} (for a 5-second dip) to {{SG 1.50}} (for a 1-second dip); home-mixed glazes that are gelled do best at {{SG 1.43–1.45}}   | Clear {{SG 1.46–1.48}}; colored {{SG 1.61}} | {{SG 1.45}}; thin to {{SG 1.43}} and gel it if it drips |
+| Brushing | {{SG 1.25}} (thin clear) to {{SG 1.55}} (dark detail)                                                                                 | {{SG 1.71–1.81}}                            | Follow the product; use CMC gum or a brushing medium    |
+| Spraying | No figure; Hopper, writing for Ceramic Arts Network, says much thinner, with a deflocculant (an additive that makes a slurry runnier) | {{SG 1.71}}                                 | No reliable number; spray only in a spray booth         |
 
-Per controllare a occhio uno smalto per immersione, AMACO immerge per 5 secondi e cerca uno strato spesso circa quanto un dime, la monetina statunitense. Per verificare, Digitalfire cuoce provini immersi per 5 secondi.
+To check a dipping glaze by eye, AMACO dips for 5 seconds and looks for a coat about as thick as a US dime. Digitalfire fires tiles dipped for 5 seconds to check.
 
-### Acqua per il peso specifico voluto: la nostra stima
+### Water for a target SG: our estimate
 
-La tabella qui sotto è un nostro calcolo, non di una fonte. Presuppone che le particelle della polvere abbiano una densità di 2,6 g per cm³: è un’ipotesi, non una misura. L’argilla, i materiali solubili e la gelificazione cambiano tutti uno smalto reale, quindi usarla per iniziare, poi misurare. Come verifica, per pesi uguali di polvere e acqua prevede {{SG 1.44}}, vicino a {{SG 1.46}}, il valore misurato da Digitalfire. Mostra anche che con 70–80 mL per 100 g si parte da oltre {{SG 1.50}}, più denso del necessario.
+The table below is our own arithmetic, not a source's. It assumes the powder's particles have a density of 2.6 g per cm³, which is an assumption, not a measurement. Clay, soluble materials and gelling all change a real glaze, so use it to start, then measure. As a check, it predicts {{SG 1.44}} for equal weights of powder and water, close to Digitalfire's measured {{SG 1.46}}. It also shows that 70 to 80 mL per 100 g starts you above {{SG 1.50}}, thicker than you need.
 
-Table: Acqua per il peso specifico voluto (la nostra stima)
-Label: Acqua per il peso specifico voluto
+Table: Water for a target specific gravity (our estimate)
+Label: Water for a target specific gravity
 
-| Obiettivo   | Per 100 g di polvere | Per chilogrammo |         Per libbra |
-| ----------- | -------------------: | --------------: | -----------------: |
-| {{SG 1.40}} |         circa 115 mL |   circa 1150 mL | circa 18 fl oz USA |
-| {{SG 1.45}} |          circa 98 mL |    circa 980 mL | circa 15 fl oz USA |
-| {{SG 1.50}} |          circa 85 mL |    circa 850 mL | circa 13 fl oz USA |
-| {{SG 1.60}} |          circa 64 mL |    circa 640 mL | circa 10 fl oz USA |
+| Target      | Per 100 g of powder |  Per kilogram |         Per pound |
+| ----------- | ------------------: | ------------: | ----------------: |
+| {{SG 1.40}} |        about 115 mL | about 1150 mL | about 18 US fl oz |
+| {{SG 1.45}} |         about 98 mL |  about 980 mL | about 15 US fl oz |
+| {{SG 1.50}} |         about 85 mL |  about 850 mL | about 13 US fl oz |
+| {{SG 1.60}} |         about 64 mL |  about 640 mL | about 10 US fl oz |
 
-### Sale inglese, CMC e bentonite
+### Epsom salts, CMC gum and bentonite
 
-Il **sale inglese** (solfato di magnesio) fa gelificare leggermente uno smalto quando sta fermo e lo fa tornare fluido quando lo si mescola. Questo si chiama **flocculare**{{en: flocculating}} lo smalto, e uno smalto che si comporta così è **tissotropico**{{en: thixotropic}}: si stende in modo più uniforme, gocciola meno e si deposita meno. Digitalfire suggerisce di partire da circa 2 g per gallone una volta che il peso specifico è giusto (circa 0,5 g per litro, una nostra conversione) e di regolare la quantità ogni volta che si prepara lo smalto, perché nessuna ricetta dovrebbe fissare la dose. Suggeriamo di scioglierlo prima in un po’ d’acqua calda. In un esempio di Digitalfire, uno smalto con {{SG 1.45}} gocciolava: l’acqua lo ha portato a {{SG 1.43}}, il sale inglese lo ha gelificato fino a renderlo di nuovo cremoso, e si è steso in modo uniforme. Una verifica approssimativa: mescolare, fermarsi e guardare. Uno smalto gelificato continua a muoversi per circa 2 o 3 secondi, poi si ferma e torna un po’ indietro.
+**Epsom salts** make a glaze gel slightly when it stands still and flow again when it is stirred. This is called **flocculating** it, and a glaze that behaves this way is **thixotropic**: it goes on more evenly, drips less and settles less. Digitalfire suggests starting at about 2 g per gallon once the SG is right (roughly 0.5 g per liter, our conversion) and tuning the amount each time you mix, since no recipe should fix the dose. We suggest dissolving it in a little hot water first. In a Digitalfire example, a glaze at {{SG 1.45}} dripped, so water brought it down to {{SG 1.43}} and Epsom salts gelled it back to creamy, and it went on evenly. A rough check: stir, stop and watch. A gelled glaze moves on for about 2 or 3 seconds, then stops and springs back a little.
 
-La **CMC** (carbossimetilcellulosa) rende la sospensione più appiccicosa e più lenta ad asciugare, e lascia uno strato più duro che aderisce al pezzo. Conta soprattutto per gli smalti a pennello e per quelli ricchi di fritta{{en: frit}}. Nell’esempio di Digitalfire si incorporano 3,75 g in 1000 g di sospensione, e va aggiunta con un frullatore. Uno smalto con CMC non gelifica con il sale inglese e, poiché i microbi si nutrono della colla, può alterarsi nel secchio e cominciare a puzzare.
+**CMC gum** (carboxymethyl cellulose) makes a slurry stickier and slower to dry, and leaves a harder coat that holds to the pot. It matters most for brushing glazes and glazes high in frit. Digitalfire's example blends 3.75 g into 1000 g of slurry, and it has to go in with a blender. A glaze with CMC will not gel with Epsom salts, and since microbes feed on the gum, it can change in the bucket and start to smell.
 
-La **bentonite**, un’argilla finissima, aiuta a tenere in sospensione le altre particelle. Per questo gli smalti per immersione di solito contano su un 15–25% di argilla cruda. Per una ricetta con poca argilla aiuta circa l’1–3% di bentonite; secondo Digitalfire, uno smalto con più del 15% di argilla non dovrebbe averne bisogno di più dell’1%.
+**Bentonite**, a very fine clay, helps hold the other particles in suspension. Dipping glazes usually rely on 15 to 25% raw clay for this. For a recipe short of clay, about 1 to 3% bentonite helps; Digitalfire says a glaze with more than 15% clay should not need bentonite at more than 1% of the dry glaze's weight.
 
 ## Provini e progressioni lineari {#testing}
 

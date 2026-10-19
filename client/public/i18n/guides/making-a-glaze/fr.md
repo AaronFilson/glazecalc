@@ -163,55 +163,55 @@ Label: Maille du tamis
 | Émaux avec des colorants{{en: colorants}} comme le cobalt ou le fer | 100 à 120 mesh          |
 | Émaux de cendre, et autres émaux à matières grossières              | 60 à 80 mesh            |
 
-## Densité {#specific-gravity}
+## Specific gravity {#specific-gravity lang=en}
 
-La **densité**{{en: specific gravity}} (SG) indique la quantité de poudre dans votre bain{{en: slurry}}. C’est le poids d’un volume d’émail{{en: glaze}} divisé par le poids du même volume d’eau. L’eau est à 1,00, et un émail à {{SG 1.45}} pèse 145 g pour 100 mL. Préparer l’émail à une densité mesurée permet d’obtenir chaque fois la même consistance, et la même couche. Elle n’a pas d’unité : elle est la même en grammes ou en onces.
+**Specific gravity** (SG) tells you how much powder is in your slurry. It is the weight of a volume of glaze divided by the weight of the same volume of water. Water is 1.00, and a glaze at {{SG 1.45}} weighs 145 g per 100 mL. Mixing to a measured SG is how you get the same thickness, and the same coat, every time. It has no units, so it is the same in grams or ounces.
 
-### Mesurez-la en pesant 100 mL
+### Measure it by weighing 100 mL
 
-1. Remuez l’émail pour que rien ne reste déposé au fond.
-2. Posez sur la balance une **éprouvette graduée** de 100 mL (un tube de mesure haut et gradué) ou une seringue de 100 mL, et faites la tare.
-3. Remplissez-la d’émail exactement jusqu’à 100 mL, en lisant le trait à hauteur des yeux.
-4. Pesez-la et divisez les grammes par 100 : 145 g correspondent à une densité de 1,45.
+1. Stir the glaze so nothing has settled.
+2. Put a 100 mL **graduated cylinder** (a tall, marked measuring tube) or a 100 mL syringe on the scale, and tare it.
+3. Fill it with glaze to exactly 100 mL, reading the mark at eye level.
+4. Weigh it and divide the grams by 100: 145 g is SG 1.45.
 
-Digitalfire marque aussi sur un gobelet le niveau de 500 g d’eau, le remplit d’émail jusqu’au trait, et divise le poids par 500 ; une mesure plus grande et bien remplie est plus précise. Un **densimètre**, un flotteur qu’on lit au niveau où il s’enfonce dans l’émail, est rapide mais peut donner une lecture fausse dans les émaux épais ou gélifiés. Les densimètres britanniques, comme celui de Potclays, sont gradués en degrés Baumé (°Bé). D’après notre calcul, densité = 145 ÷ (145 − °Bé) : 46 °Bé correspondent donc à environ 1,46. Les anciens livres britanniques donnent un **poids de la pinte**, le nombre d’onces dans une pinte impériale d’émail : divisez-le par 20 ; 29 oz correspondent ainsi à une densité d’environ 1,45 (là encore, notre calcul).
+Digitalfire also marks a cup at the level of 500 g of water, fills it to the mark with glaze, and divides the weight by 500; a bigger, fuller measure is more accurate. A **hydrometer**, a float read where it sits in the glaze, is quick but can misread thick or gelled glazes. UK hydrometers, such as Potclays', read in degrees Baumé (°Bé). By our arithmetic, SG = 145 ÷ (145 − °Bé), so 46 °Bé is about 1.46. Older UK books give a **pint weight**, the ounces in an imperial pint of glaze: divide it by 20, so 29 oz is about SG 1.45 (also our arithmetic).
 
-### Quelle densité viser
+### What to aim for
 
-Les sources divergent, surtout pour l’application au pinceau et au pistolet, où le fournisseur britannique Potclays donne des chiffres bien plus élevés (il les donne lui-même « à titre indicatif seulement »). Prenez chaque chiffre comme un point de départ. Le conseil essentiel de Digitalfire : trouver la densité et la gélification qui conviennent à chaque émail, puis les reproduire et les noter.
+Sources disagree, most of all on brushing and spraying, where the UK supplier Potclays gives much higher figures (its own are "for guidance only"). Treat every number as a starting point. Digitalfire's core advice is to find the SG and gelling that work for each glaze, then repeat them and write them down.
 
-Table: Densités cibles, là où les sources divergent
-Label: Densités cibles
+Table: Specific gravity targets, where sources disagree
+Label: Specific gravity targets
 
-| Application | Digitalfire et Glazy                                                                                                                                                                          | Potclays (Royaume-Uni)                            | Point de départ sûr                                                              |
-| ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------- | -------------------------------------------------------------------------------- |
-| Trempé      | De {{SG 1.40}} (pour un trempage de 5 secondes) à {{SG 1.50}} (pour un trempage de 1 seconde) ; les émaux préparés soi-même et gélifiés donnent le meilleur résultat à {{SG 1.43–1.45}}       | Transparent {{SG 1.46–1.48}} ; coloré {{SG 1.61}} | {{SG 1.45}} ; s’il goutte, diluez à {{SG 1.43}} et gélifiez-le                   |
-| Pinceau     | De {{SG 1.25}} (transparent fluide) à {{SG 1.55}} (détails sombres)                                                                                                                           | {{SG 1.71–1.81}}                                  | Suivez les indications du produit ; utilisez de la CMC ou un médium pour pinceau |
-| Pistolet    | Pas de chiffre ; Hopper, dans un article pour Ceramic Arts Network, conseille un émail beaucoup plus dilué, avec un défloculant{{en: deflocculant}} (un additif qui rend un bain plus fluide) | {{SG 1.71}}                                       | Pas de chiffre fiable ; n’émaillez au pistolet que dans une cabine d’émaillage   |
+| Use      | Digitalfire and Glazy                                                                                                                 | Potclays (UK)                               | Safe starting point                                     |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- | ------------------------------------------------------- |
+| Dipping  | {{SG 1.40}} (for a 5-second dip) to {{SG 1.50}} (for a 1-second dip); home-mixed glazes that are gelled do best at {{SG 1.43–1.45}}   | Clear {{SG 1.46–1.48}}; colored {{SG 1.61}} | {{SG 1.45}}; thin to {{SG 1.43}} and gel it if it drips |
+| Brushing | {{SG 1.25}} (thin clear) to {{SG 1.55}} (dark detail)                                                                                 | {{SG 1.71–1.81}}                            | Follow the product; use CMC gum or a brushing medium    |
+| Spraying | No figure; Hopper, writing for Ceramic Arts Network, says much thinner, with a deflocculant (an additive that makes a slurry runnier) | {{SG 1.71}}                                 | No reliable number; spray only in a spray booth         |
 
-Pour vérifier à l’œil un émail pour le trempé, AMACO trempe 5 secondes et cherche une couche à peu près aussi épaisse qu’une pièce américaine de dix cents. Digitalfire cuit des tessons d’essai{{en: test tiles}} trempés 5 secondes pour vérifier.
+To check a dipping glaze by eye, AMACO dips for 5 seconds and looks for a coat about as thick as a US dime. Digitalfire fires tiles dipped for 5 seconds to check.
 
-### L’eau pour une densité cible : notre estimation
+### Water for a target SG: our estimate
 
-Le tableau ci-dessous est notre propre calcul, pas celui d’une source. Il suppose que les particules de la poudre ont une masse volumique de 2,6 g par cm³, ce qui est une hypothèse, pas une mesure. L’argile, les matières solubles et la gélification modifient toutes un émail réel : servez-vous-en pour commencer, puis mesurez. À titre de vérification, il prévoit {{SG 1.44}} pour des poids égaux de poudre et d’eau, proche de la mesure de Digitalfire, {{SG 1.46}}. Il montre aussi qu’avec 70 à 80 mL pour 100 g, vous partez au-dessus de {{SG 1.50}}, plus épais que nécessaire.
+The table below is our own arithmetic, not a source's. It assumes the powder's particles have a density of 2.6 g per cm³, which is an assumption, not a measurement. Clay, soluble materials and gelling all change a real glaze, so use it to start, then measure. As a check, it predicts {{SG 1.44}} for equal weights of powder and water, close to Digitalfire's measured {{SG 1.46}}. It also shows that 70 to 80 mL per 100 g starts you above {{SG 1.50}}, thicker than you need.
 
-Table: Eau pour une densité cible (notre estimation)
-Label: Eau pour une densité cible
+Table: Water for a target specific gravity (our estimate)
+Label: Water for a target specific gravity
 
-| Cible       | Pour 100 g de poudre |  Par kilogramme |           Par livre |
-| ----------- | -------------------: | --------------: | ------------------: |
-| {{SG 1.40}} |       environ 115 mL | environ 1150 mL | environ 18 fl oz US |
-| {{SG 1.45}} |        environ 98 mL |  environ 980 mL | environ 15 fl oz US |
-| {{SG 1.50}} |        environ 85 mL |  environ 850 mL | environ 13 fl oz US |
-| {{SG 1.60}} |        environ 64 mL |  environ 640 mL | environ 10 fl oz US |
+| Target      | Per 100 g of powder |  Per kilogram |         Per pound |
+| ----------- | ------------------: | ------------: | ----------------: |
+| {{SG 1.40}} |        about 115 mL | about 1150 mL | about 18 US fl oz |
+| {{SG 1.45}} |         about 98 mL |  about 980 mL | about 15 US fl oz |
+| {{SG 1.50}} |         about 85 mL |  about 850 mL | about 13 US fl oz |
+| {{SG 1.60}} |         about 64 mL |  about 640 mL | about 10 US fl oz |
 
-### Sel d’Epsom, CMC et bentonite
+### Epsom salts, CMC gum and bentonite
 
-Le **sel d’Epsom** (sulfate de magnésium) fait légèrement gélifier un émail au repos, qui redevient fluide quand on le remue. On appelle cela **floculer**{{en: flocculating}} l’émail, et un émail qui se comporte ainsi est **thixotrope**{{en: thixotropic}} : il s’applique plus régulièrement, goutte moins et se dépose moins. Digitalfire conseille de commencer à environ 2 g par gallon une fois la densité correcte (à peu près 0,5 g par litre, selon notre conversion), et d’ajuster la quantité à chaque préparation, car aucune recette ne devrait fixer la dose. Nous vous suggérons de le dissoudre d’abord dans un peu d’eau chaude. Dans un exemple de Digitalfire, un émail à {{SG 1.45}} gouttait : de l’eau l’a ramené à {{SG 1.43}}, le sel d’Epsom l’a gélifié pour lui rendre une consistance crémeuse, et il s’est appliqué régulièrement. Un test approximatif : remuez, arrêtez et observez. Un émail gélifié continue de tourner environ 2 ou 3 secondes, puis s’arrête et revient un peu en arrière.
+**Epsom salts** make a glaze gel slightly when it stands still and flow again when it is stirred. This is called **flocculating** it, and a glaze that behaves this way is **thixotropic**: it goes on more evenly, drips less and settles less. Digitalfire suggests starting at about 2 g per gallon once the SG is right (roughly 0.5 g per liter, our conversion) and tuning the amount each time you mix, since no recipe should fix the dose. We suggest dissolving it in a little hot water first. In a Digitalfire example, a glaze at {{SG 1.45}} dripped, so water brought it down to {{SG 1.43}} and Epsom salts gelled it back to creamy, and it went on evenly. A rough check: stir, stop and watch. A gelled glaze moves on for about 2 or 3 seconds, then stops and springs back a little.
 
-La **gomme CMC** (carboxyméthylcellulose) rend un bain plus collant et plus lent à sécher, et laisse une couche plus dure qui adhère à la pièce. Elle compte surtout pour les émaux au pinceau et les émaux riches en fritte{{en: frit}}. L’exemple de Digitalfire en incorpore 3,75 g dans 1000 g de bain, et elle doit être ajoutée au mixeur. Un émail contenant de la CMC ne gélifie pas avec le sel d’Epsom, et comme les microbes se nourrissent de la gomme, il peut changer dans le seau et se mettre à sentir mauvais.
+**CMC gum** (carboxymethyl cellulose) makes a slurry stickier and slower to dry, and leaves a harder coat that holds to the pot. It matters most for brushing glazes and glazes high in frit. Digitalfire's example blends 3.75 g into 1000 g of slurry, and it has to go in with a blender. A glaze with CMC will not gel with Epsom salts, and since microbes feed on the gum, it can change in the bucket and start to smell.
 
-La **bentonite**, une argile très fine, aide à maintenir les autres particules en suspension. Les émaux pour le trempé comptent en général pour cela sur 15 à 25 % d’argile crue. Pour une recette pauvre en argile, environ 1 à 3 % de bentonite aide ; selon Digitalfire, un émail contenant plus de 15 % d’argile ne devrait pas en demander plus de 1 %.
+**Bentonite**, a very fine clay, helps hold the other particles in suspension. Dipping glazes usually rely on 15 to 25% raw clay for this. For a recipe short of clay, about 1 to 3% bentonite helps; Digitalfire says a glaze with more than 15% clay should not need bentonite at more than 1% of the dry glaze's weight.
 
 ## Tessons d’essai et essais en ligne {#testing}
 

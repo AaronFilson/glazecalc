@@ -149,38 +149,38 @@ Pet Poison Helpline 说：“铅对所有物种都有毒，但幼小和/或营�
 
 如果宠物可能吃了或喝了工作室里的任何东西，或出现上述症状，就给兽医或动物中毒咨询热线打电话（见本页顶部的表格），并准备好原料名称和宠物的体重。
 
-## 窑 {#the-kiln}
+## The kiln {#the-kiln lang=en}
 
-### 窑的外壳烫得足以烧伤人
+### The outside gets hot enough to burn
 
-英国一份学校风险评估说，窑的外壳“可达 160 °C，甚至可能更高”（约 320 °F），一份学校窑炉管理手册报告说金属箍的温度可达 460 °F（约 240 °C）。窑炉制造商 Skutt 建议窑房要能上锁，防止儿童和宠物进入。房间无法上锁时，这份学校手册建议设置屏障，例如窑炉安全围挡。
+A UK schools risk assessment says a kiln's outside "can reach 160 °C and possibly more" (about 320 °F), and a school kiln guide reports metal bands at up to 460 °F (about 240 °C). Skutt, a kiln maker, recommends a kiln room that can be locked against children and pets. Where a room cannot be locked, the school guide suggests a barrier such as a kiln safety screen.
 
-年幼的孩子和宠物理解不了警告标志。我们建议在窑烧制和冷却期间，用上锁的门或屏障把他们挡在外面，并为其他人张贴警告标志。
+Small children and pets cannot understand a warning sign. We suggest keeping them behind a locked door or a barrier while the kiln fires and while it cools, and posting a warning sign for everyone else.
 
-### 窑周围的空间
+### Space around it
 
-关于安全距离{{en: clearance}}，各来源说法不一。Rio Grande 说，与墙壁和任何可燃物至少相距 12 英寸（30 cm）。L&L 强烈建议与所有墙壁相距 18 英寸（46 cm），它引用的建筑规范则要求与可燃墙壁相距 3 英尺（0.9 m）。遵照窑的使用说明书和当地的消防规范；如果不确定，与任何墙壁留出 18 英寸，与任何可燃物留出 3 英尺。在车库里，让汽车、燃料和油漆远离窑。
+Sources disagree on clearance. Rio Grande says at least 12 inches (30 cm) from walls and anything combustible. L&L strongly recommends 18 inches (46 cm) to all walls, and the building code it cites asks for 3 feet (0.9 m) from combustible walls. Follow your kiln's manual and local fire code; if you are unsure, allow 18 inches from any wall and 3 feet from anything that can burn. In a garage, keep cars, fuel and paint well away.
 
-### 电源
+### Power
 
-Rio Grande 建议使用**专用线路**（不为其他任何设备供电的线路），并配有正确接地的插座。我们建议不要使用延长线。两次烧窑之间，关闭窑的断路器或隔离开关，或者拔掉插头，以免孩子启动它。
+Rio Grande recommends a **dedicated circuit** (one that powers nothing else) with a properly grounded outlet. We suggest no extension cord. Between firings, switch off the kiln's breaker or disconnect switch, or unplug it, so a child cannot start it.
 
-### 烧成结束时要在场
+### Be there when the firing ends
 
-**窑炉看管器**{{en: kiln sitter}}（Kiln-Sitter）是许多手动控制的窑上的机械开关：烧成结束时，一支小测温锥{{en: cone}}弯倒，触发开关断电。它的使用说明书说，它“**并非**设计用作故障安全型断电装置”。Rio Grande 说切勿让正在烧制的窑无人看管，“尤其是在预计断电的时间前后”。因此，烧窑期间要留在附近查看窑，尤其是临近结束的时候；只在有成年人在家且醒着、能做到这一点时才烧窑，检查窑是否已经断电，并在窑房里放一个 ABC 灭火器。关于窑炉看管器、温控仪和烧成曲线如何工作，参阅[《简易窑炉烧成》](/guides/firing)。
+A **kiln sitter** is the mechanical switch on many manual kilns: a small cone bends at the end of the firing and trips the switch off. Its manual says it "is NOT intended to perform as a fail-safe shut-off device." Rio Grande says never to leave a firing kiln unattended, "especially near the expected shut-off time". So stay nearby and check the kiln while it fires, above all near the end; fire only when an adult will be home and awake through the whole firing, check that it has switched off, and keep an ABC fire extinguisher in the kiln room. For how sitters, controllers and schedules work, see [Firing a basic kiln](/guides/firing).
 
-### 废气和一氧化碳
+### Fumes and carbon monoxide
 
-烧窑会释放废气，所以要把窑的废气排到室外；[《安全配料与通风》](/guides/safe-mixing)介绍了具体方法。如果窑放在与住宅相连的车库里，需要排风来防止废气通过连通的门进入住宅。每次烧窑时都把鸟放在远处的房间里。
+Firing gives off fumes, so vent the kiln to the outdoors; [Safe mixing and ventilation](/guides/safe-mixing) explains how. A kiln in an attached garage needs venting that keeps fumes from reaching the house through the connecting door. Keep birds in a far room whenever the kiln fires.
 
-**一氧化碳**（CO）是一种看不见也闻不到的有毒气体。一所大学的窑炉安全资料要求气窑配备一氧化碳报警器。对于电窑，看法不一，但有机物（黏土中的有机物，或纸、蜡之类的东西）燃烧时可能产生一氧化碳。我们认为，在窑房及其相邻的房间安装一氧化碳报警器，对任何窑来说都是明智而且花费不多的一步。
+**Carbon monoxide** (CO) is a poisonous gas you cannot see or smell. A university kiln safety sheet requires CO alarms with gas kilns. Views differ for electric kilns, but burning off organic matter (in clay, or things like paper or wax) can make CO. We think a CO alarm in the kiln room and the rooms next to it is a sensible, inexpensive step for any kiln.
 
-### 观火孔与眼睛
+### Peepholes and eyes
 
-看不见的红外线“从 752°F (400°C) 开始”，Ceramic Arts Network 说，窑温高于此时，往窑里看应始终佩戴护目用具。红外线可能损伤眼睛的晶状体并导致白内障，长时间注视还可能伤害视网膜。太阳镜和钕镨玻璃眼镜都不能阻挡红外线。
+Infrared light, which you cannot see, "starts at 752°F (400°C)", and the Ceramic Arts Network says looking into a kiln above this should always be done with eye protection. Infrared can damage the lens of the eye and lead to cataracts, and long gazing can injure the retina. Sunglasses and didymium glasses do not block it.
 
 > [!WARNING]
-> 儿童完全不应往窑里看。发光的观火孔会吸引他们，而他们不会可靠地一直戴着护目镜，所以在窑还热的时候，让他们远离窑。成年人只应透过防红外的焊接护目镜短暂地看。各来源推荐的遮光号为 1.7～5；遮光号 3 是合理的选择，如果看后眼前出现斑点，就用更深的遮光号。
+> Children should not look into a kiln at all. A glowing peephole draws them, and they will not reliably keep protective glasses on, so keep them away while the kiln is hot. Adults should look only briefly, through IR-rated welding glasses. Sources recommend shades from 1.7 to 5; shade 3 is a sensible choice, darker if you see spots afterward.
 
 ## 家庭餐桌上的手工器物 {#handmade-ware}
 

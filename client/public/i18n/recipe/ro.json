@@ -472,7 +472,6 @@
     "expansionRises": "Dilatarea ei calculată crește de la {was} la {now}.",
     "expansionRisesProbably": "Dacă glazura veche abia era compatibilă cu argila dumneavoastră, aceasta probabil va fisura, uneori după câteva săptămâni.",
     "expansionRisesMay": "Dacă glazura veche abia era compatibilă cu argila dumneavoastră, aceasta poate fisura, uneori după câteva săptămâni.",
-    "expansionRisesFix": "Fisurarea slăbește piesele și nu este recomandată pe suprafețele în contact cu alimentele. Înlocuirea unei părți din sodiu și potasiu cu fondanți cu dilatare mai mică (bor, litiu, magneziu sau calciu) reduce dilatarea; uneori se sugerează adăugarea de silice, dar sursele nu sunt de acord.",
     "expansionFalls": "Dilatarea ei calculată scade de la {was} la {now}. Cu o valoare puțin mai mică, glazura rezistă de obicei mai bine la fisurare.",
     "expansionFallsProbably": "Cu o valoare mult mai mică, glazura probabil se va exfolia, cu așchii tăioase desprinse de pe buze și muchii.",
     "expansionFallsCan": "Cu o valoare mult mai mică, glazura se poate exfolia, cu așchii tăioase desprinse de pe buze și muchii.",
@@ -904,7 +903,6 @@
     "foodSurface": "Pentru o suprafață în contact cu alimentele (glazură pentru interior)",
     "liner": {
       "note": "Siguranța pentru alimente depinde de arderea acestei glazuri la conul la care a fost testată: o glazură insuficient arsă poate ceda metale.",
-      "range": "Este dată pentru un interval, așa că testați-o la capătul de jos al intervalului, unde se topește cel mai puțin.",
       "untested": "Niciun con nu este încă marcat ca testat.",
       "test": "Doar un test privind migrarea metalelor, făcut pe propriile dumneavoastră piese arse, arată dacă glazura este sigură pentru alimente."
     },

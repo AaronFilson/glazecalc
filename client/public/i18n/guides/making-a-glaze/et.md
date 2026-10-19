@@ -163,55 +163,55 @@ Label: Sõela mesh
 | Glasuurid, milles on värvaineid{{en: colorants}}, nagu koobalt või raud | 100–120 mesh                  |
 | Tuhaglasuurid ja muud jämedate toorainetega glasuurid                   | 60–80 mesh                    |
 
-## Suhteline tihedus {#specific-gravity}
+## Specific gravity {#specific-gravity lang=en}
 
-**Suhteline tihedus**{{en: specific gravity, SG}} näitab, kui palju pulbrit on teie glasuurilahuses{{en: slurry}}. See on teatud mahu glasuuri{{en: glaze}} mass jagatud sama mahu vee massiga. Vee suhteline tihedus on 1,00 ja glasuur, mille näit on {{SG 1.45}}, kaalub 145 g 100 mL kohta. Kui segate glasuuri mõõdetud suhtelise tiheduseni, saate iga kord sama paksuse ja sama glasuurikihi. Suhtelisel tihedusel pole ühikut, seega on see sama nii grammides kui untsides.
+**Specific gravity** (SG) tells you how much powder is in your slurry. It is the weight of a volume of glaze divided by the weight of the same volume of water. Water is 1.00, and a glaze at {{SG 1.45}} weighs 145 g per 100 mL. Mixing to a measured SG is how you get the same thickness, and the same coat, every time. It has no units, so it is the same in grams or ounces.
 
-### Mõõtmine 100 mL kaalumisega
+### Measure it by weighing 100 mL
 
-1. Segage glasuuri, et midagi poleks settinud.
-2. Asetage kaalule 100 mL **mõõtesilinder** (kõrge, jaotistega mõõtenõu) või 100 mL süstal ja tareerige.
-3. Täitke see glasuuriga täpselt 100 mL-ni, lugedes jaotist silmade kõrguselt.
-4. Kaaluge ja jagage grammid 100-ga: 145 g vastab suhtelisele tihedusele 1,45.
+1. Stir the glaze so nothing has settled.
+2. Put a 100 mL **graduated cylinder** (a tall, marked measuring tube) or a 100 mL syringe on the scale, and tare it.
+3. Fill it with glaze to exactly 100 mL, reading the mark at eye level.
+4. Weigh it and divide the grams by 100: 145 g is SG 1.45.
 
-Digitalfire märgib ka tassile 500 g vee taseme, täidab tassi glasuuriga märgini ja jagab massi 500-ga; suurem ja täiem mõõtenõu on täpsem. **Areomeeter**, ujuk, mille näitu loetakse sealt, kus see glasuuris hõljub, on kiire, kuid võib paksude või tarretunud glasuuride puhul valesti näidata. Briti areomeetrid, näiteks Potclaysi oma, näitavad Baumé kraade (°Bé). Selle juhendi arvutuse järgi on suhteline tihedus = 145 ÷ (145 − °Bé), seega 46 °Bé vastab umbes 1,46-le. Vanemad Briti raamatud annavad **pindi kaalu**, s.o Briti pindi glasuuri massi untsides: jagage see 20-ga, seega 29 oz vastab suhtelisele tihedusele umbes 1,45 (samuti selle juhendi arvutus).
+Digitalfire also marks a cup at the level of 500 g of water, fills it to the mark with glaze, and divides the weight by 500; a bigger, fuller measure is more accurate. A **hydrometer**, a float read where it sits in the glaze, is quick but can misread thick or gelled glazes. UK hydrometers, such as Potclays', read in degrees Baumé (°Bé). By our arithmetic, SG = 145 ÷ (145 − °Bé), so 46 °Bé is about 1.46. Older UK books give a **pint weight**, the ounces in an imperial pint of glaze: divide it by 20, so 29 oz is about SG 1.45 (also our arithmetic).
 
-### Millist näitu sihtida
+### What to aim for
 
-Allikad on eri meelt, kõige rohkem pintseldamise ja pritsimise osas, kus Briti tarnija Potclays annab palju suuremad arvud (tema enda sõnul on need „ainult orienteeruvad“). Käsitlege iga arvu lähtepunktina. Digitalfire’i põhisoovitus on leida iga glasuuri jaoks sobiv suhteline tihedus ja tarretumine, siis neid korrata ja need üles kirjutada.
+Sources disagree, most of all on brushing and spraying, where the UK supplier Potclays gives much higher figures (its own are "for guidance only"). Treat every number as a starting point. Digitalfire's core advice is to find the SG and gelling that work for each glaze, then repeat them and write them down.
 
-Table: Suhtelise tiheduse sihtväärtused, milles allikad on eri meelt
-Label: Suhtelise tiheduse sihtväärtused
+Table: Specific gravity targets, where sources disagree
+Label: Specific gravity targets
 
-| Kasutus       | Digitalfire ja Glazy                                                                                                                                                                 | Potclays (Ühendkuningriik)                            | Kindel lähtepunkt                                                                       |
-| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------- | --------------------------------------------------------------------------------------- |
-| Sissekastmine | {{SG 1.40}} (5-sekundilise kastmise jaoks) kuni {{SG 1.50}} (1-sekundilise kastmise jaoks); kodus segatud tarretunud glasuurid toimivad kõige paremini, kui näit on {{SG 1.43–1.45}} | Läbipaistev: {{SG 1.46–1.48}}; värviline: {{SG 1.61}} | {{SG 1.45}}; kui glasuur tilgub, lahjendage, kuni näit on {{SG 1.43}}, ja tarretage see |
-| Pintseldamine | {{SG 1.25}} (õhuke läbipaistev) kuni {{SG 1.55}} (tumedad detailid)                                                                                                                  | {{SG 1.71–1.81}}                                      | Järgige toote juhiseid; kasutage CMC-d (glasuuriliimi) või pintslilisandit              |
-| Pritsimine    | Arv puudub; Hopper, kes kirjutab väljaandele Ceramic Arts Network, ütleb: palju vedelam, deflokulandiga{{en: deflocculant}} (lisaaine, mis muudab glasuurilahuse vedelamaks)         | {{SG 1.71}}                                           | Usaldusväärset arvu pole; pritsige ainult glasuurimiskapis                              |
+| Use      | Digitalfire and Glazy                                                                                                                 | Potclays (UK)                               | Safe starting point                                     |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- | ------------------------------------------------------- |
+| Dipping  | {{SG 1.40}} (for a 5-second dip) to {{SG 1.50}} (for a 1-second dip); home-mixed glazes that are gelled do best at {{SG 1.43–1.45}}   | Clear {{SG 1.46–1.48}}; colored {{SG 1.61}} | {{SG 1.45}}; thin to {{SG 1.43}} and gel it if it drips |
+| Brushing | {{SG 1.25}} (thin clear) to {{SG 1.55}} (dark detail)                                                                                 | {{SG 1.71–1.81}}                            | Follow the product; use CMC gum or a brushing medium    |
+| Spraying | No figure; Hopper, writing for Ceramic Arts Network, says much thinner, with a deflocculant (an additive that makes a slurry runnier) | {{SG 1.71}}                                 | No reliable number; spray only in a spray booth         |
 
-Kastmisglasuuri silma järgi kontrollimiseks kastab AMACO 5 sekundit ja otsib umbes sama paksu kihti kui USA kümnesendine münt. Digitalfire põletab kontrolliks 5 sekundit kastetud proovitükke{{en: test tiles}}.
+To check a dipping glaze by eye, AMACO dips for 5 seconds and looks for a coat about as thick as a US dime. Digitalfire fires tiles dipped for 5 seconds to check.
 
-### Vee kogus soovitud suhtelise tiheduse jaoks: selle juhendi hinnang
+### Water for a target SG: our estimate
 
-Allolev tabel on selle juhendi enda arvutus, mitte allika oma. See eeldab, et pulbri osakeste tihedus on 2,6 g/cm³, mis on eeldus, mitte mõõtmistulemus. Savi, lahustuvad toorained ja tarretumine muudavad päris glasuuri, seega kasutage tabelit alustamiseks ja seejärel mõõtke. Kontrolliks: võrdse massiga pulbri ja vee korral on arvutuse tulemuseks {{SG 1.44}}, mis on lähedane Digitalfire’i mõõtmistulemusele ({{SG 1.46}}). See näitab ka, et 70–80 mL vett 100 g kohta teeb glasuuri alguses paksemaks, kui vaja: näit on suurem kui {{SG 1.50}}.
+The table below is our own arithmetic, not a source's. It assumes the powder's particles have a density of 2.6 g per cm³, which is an assumption, not a measurement. Clay, soluble materials and gelling all change a real glaze, so use it to start, then measure. As a check, it predicts {{SG 1.44}} for equal weights of powder and water, close to Digitalfire's measured {{SG 1.46}}. It also shows that 70 to 80 mL per 100 g starts you above {{SG 1.50}}, thicker than you need.
 
-Table: Vee kogus soovitud suhtelise tiheduse jaoks (selle juhendi hinnang)
-Label: Vee kogus soovitud suhtelise tiheduse jaoks
+Table: Water for a target specific gravity (our estimate)
+Label: Water for a target specific gravity
 
-| Siht        | 100 g pulbri kohta | Kilogrammi kohta |        Naela kohta |
-| ----------- | -----------------: | ---------------: | -----------------: |
-| {{SG 1.40}} |       umbes 115 mL |    umbes 1150 mL | umbes 18 USA fl oz |
-| {{SG 1.45}} |        umbes 98 mL |     umbes 980 mL | umbes 15 USA fl oz |
-| {{SG 1.50}} |        umbes 85 mL |     umbes 850 mL | umbes 13 USA fl oz |
-| {{SG 1.60}} |        umbes 64 mL |     umbes 640 mL | umbes 10 USA fl oz |
+| Target      | Per 100 g of powder |  Per kilogram |         Per pound |
+| ----------- | ------------------: | ------------: | ----------------: |
+| {{SG 1.40}} |        about 115 mL | about 1150 mL | about 18 US fl oz |
+| {{SG 1.45}} |         about 98 mL |  about 980 mL | about 15 US fl oz |
+| {{SG 1.50}} |         about 85 mL |  about 850 mL | about 13 US fl oz |
+| {{SG 1.60}} |         about 64 mL |  about 640 mL | about 10 US fl oz |
 
-### Inglise sool, CMC ja bentoniit
+### Epsom salts, CMC gum and bentonite
 
-**Inglise sool** (magneesiumsulfaat) paneb glasuuri seistes kergelt tarretuma ja segamisel uuesti voolama. Seda nimetatakse **flokuleerimiseks**{{en: flocculating}} ja nii käituv glasuur on **tiksotroopne**{{en: thixotropic}}: see kandub peale ühtlasemalt, tilgub vähem ja settib vähem. Digitalfire soovitab alustada, kui suhteline tihedus on paigas, kogusega umbes 2 g galloni kohta (ligikaudu 0,5 g liitri kohta, selle juhendi ümberarvutus) ja kohandada kogust iga segamise korral, sest annus ei peaks olema retseptiga kindlaks määratud. See juhend soovitab inglise soola kõigepealt väheses kuumas vees lahustada. Ühes Digitalfire’i näites tilkus glasuur, mille näit oli {{SG 1.45}}; vett lisati, kuni näit oli {{SG 1.43}}, ja inglise sool tarretas glasuuri taas kreemjaks, nii et see kandus peale ühtlaselt. Ligikaudne kontroll: segage, lõpetage ja vaadake. Tarretunud glasuur liigub veel umbes 2 või 3 sekundit, siis peatub ja põrkab veidi tagasi.
+**Epsom salts** make a glaze gel slightly when it stands still and flow again when it is stirred. This is called **flocculating** it, and a glaze that behaves this way is **thixotropic**: it goes on more evenly, drips less and settles less. Digitalfire suggests starting at about 2 g per gallon once the SG is right (roughly 0.5 g per liter, our conversion) and tuning the amount each time you mix, since no recipe should fix the dose. We suggest dissolving it in a little hot water first. In a Digitalfire example, a glaze at {{SG 1.45}} dripped, so water brought it down to {{SG 1.43}} and Epsom salts gelled it back to creamy, and it went on evenly. A rough check: stir, stop and watch. A gelled glaze moves on for about 2 or 3 seconds, then stops and springs back a little.
 
-**CMC** (karboksümetüültselluloos, glasuuriliim) muudab glasuurilahuse kleepuvamaks ja aeglasemalt kuivavaks ning jätab kõvema kihi, mis püsib esemel. See on kõige olulisem pintselglasuuride ja suure fritisisaldusega glasuuride puhul. Digitalfire’i näites segatakse 3,75 g 1000 g glasuurilahusesse ja see tuleb sisse segada blenderiga. CMC-ga glasuur ei tarretu inglise soolaga ja kuna mikroobid toituvad sellest liimainest, võib glasuur ämbris muutuda ja hakata haisema.
+**CMC gum** (carboxymethyl cellulose) makes a slurry stickier and slower to dry, and leaves a harder coat that holds to the pot. It matters most for brushing glazes and glazes high in frit. Digitalfire's example blends 3.75 g into 1000 g of slurry, and it has to go in with a blender. A glaze with CMC will not gel with Epsom salts, and since microbes feed on the gum, it can change in the bucket and start to smell.
 
-**Bentoniit**, väga peen savi, aitab hoida teisi osakesi hõljumas. Kastmisglasuurides teeb seda tavaliselt 15–25% toorest savi. Kui retseptis on savi vähe, aitab umbes 1–3% bentoniiti; Digitalfire’i sõnul ei peaks glasuur, milles on üle 15% savi, vajama üle 1%.
+**Bentonite**, a very fine clay, helps hold the other particles in suspension. Dipping glazes usually rely on 15 to 25% raw clay for this. For a recipe short of clay, about 1 to 3% bentonite helps; Digitalfire says a glaze with more than 15% clay should not need bentonite at more than 1% of the dry glaze's weight.
 
 ## Proovitükid ja katseread {#testing}
 

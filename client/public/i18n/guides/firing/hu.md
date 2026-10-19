@@ -165,69 +165,69 @@ Számítson eltérésekre: az Orton szerint „Jellemzően legalább egy gúlán
 
 :::orton
 
-## A Kiln-Sitter {#kiln-sitter}
+## The kiln sitter {#kiln-sitter lang=en}
 
-A **Kiln-Sitter** (gúlás lekapcsoló) sok egyszerű és régebbi kemence külső oldalán található mechanikus kapcsoló, amely lekapcsolja a kemencét, amikor egy kis gúla{{en: cone}} meghajlik. A legismertebb a Dawson Kiln-Sitter. Megkönnyíti az égetést, de kényelmi eszköz, nem biztonsági berendezés.
+A **kiln sitter** is the mechanical switch, on the outside of many basic and older kilns, that turns the kiln off when a small cone bends. The best known is the Dawson Kiln-Sitter. It makes firing easier, but it is a convenience, not a safety device.
 
-### Hogyan működik
+### How it works
 
-Egy porcelán cső nyúlik be a kemencébe. A végén egy kis gúla vagy egy rúd fekszik keresztben két fém támaszon, egy mérleghintaként billenő **érzékelőrúd** alatt. A kemencén kívül a rúd másik vége egy kis kapocs segítségével feltart egy súlyt. Amikor a gúla meglágyul, és körülbelül 90°-ig meghajlik, a rúd annyira lesüllyed, hogy elengedi a súlyt, a súly leesik, és a fűtőszálak áramellátása megszakad.
+A porcelain tube reaches into the kiln. At its end, a small cone or a bar lies across two metal supports, under a **sensing rod** that pivots like a seesaw. Outside the kiln, the other end of the rod holds up a weight by a small claw. When the cone softens and bends to about 90°, the rod drops far enough to release the weight, the weight falls, and the power to the elements is cut.
 
-A kis gúlák és a rudak „egyenértékű hőkezelést adnak”. Az Orton megjegyzi, hogy sok kezdő a rudakat választja, mert egyenletes alakjuk miatt könnyű őket minden alkalommal ugyanúgy elhelyezni. A kis gúla az egyik vége felé elvékonyodik, ezért számít, hogyan fekszik: ha a vékony része van a rúd alatt, a kemence alacsonyabb hőmérsékleten kapcsol le, ha a vastag része, magasabbon, és az eltolódás „akár 1/2 gúlányi” is lehet.
+Small cones and bars "give equivalent heat treatment". Orton notes that many beginners choose bars, because their even shape makes it easy to place them the same way every time. A small cone tapers, so where it sits matters: with its thin part under the rod the kiln shuts off cooler, and with its thick part hotter, a shift of "as much as 1/2 cone".
 
-### Melyik gúla kerül a Kiln-Sitterbe
+### Which cone goes in the sitter
 
-A források nem értenek egyet. A Kiln-Sitter gyártója, a Dawson szerint ugyanolyan számú gúlát kell használni, mint az égetőlapon álló célgúla, és csak akkor kell eggyel magasabb hőfokúra váltani, ha az égetőlapon álló gúla nem hajlik meg. Az L&L szerint eggyel magasabb hőfokú gúlát kell használni, mint az égetőlapon állók, mert a Kiln-Sitter a fal és a fűtőszálak közelében ül, több hőt kap, és hajlamos korán lekapcsolni. Az elvet az Orton rögzíti: „Az égetési folyamat végső bírája az égetőlapon álló gúla, nem a Kiln-Sitter gúlája vagy rúdja.”
-
-> [!NOTE]
-> Kiindulópontunk: tegyen a Kiln-Sitterbe egy, a célgúlával azonos számú kis gúlát, az égetőlapra pedig egy gúlasort{{en: cone pack}}. Ha a kemence lekapcsolásakor az égetőlapon álló célgúla nem hajlott meg eléggé, legközelebb tegyen a Kiln-Sitterbe eggyel magasabb hőfokú gúlát, vagy a gúla vastagabb részét helyezze a rúd alá. Ha túlságosan meghajlott, tegye az ellenkezőjét.
-
-### Beállítás és ellenőrzés minden égetés előtt
-
-A Dawson eljárása, amely egyben minden égetés előtti ellenőrzésként is szolgál:
-
-1. Kapcsoljon ki minden kapcsolót. Ellenőrizze, hogy az érzékelőrúd szabadon mozog-e, középen helyezkedik-e el a csőben, és hogy nem görbült-e el, nem korrodálódott-e. Ha nehezen mozog, a Dawson szerint ki kell cserélni a csőegységet.
-2. Ecsettel vigyen fel vékony réteg magas tüzű **lapkencét** (olyan bevonatot, amely megakadályozza, hogy a megolvadt anyag odaragadjon) a gúlatámaszokra és a rúdnak arra a részére, ahol a gúlához ér. Soha ne tegyen lapkencét a gúlára vagy a porcelán csőre.
-3. Az égetőlapokat és az árut legalább 1 hüvelykkel (25 mm) a cső fölé vagy alá rakja be, hogy semmi ne érhessen hozzá, ne dőlhessen neki, és ne zárhassa el.
-4. Emelje fel a súlyt, nyomja le a kapcsot a kioldóra, és fektesse a gúlát vagy a rudat laposan a támaszokra, a fém lépcsőnek ütköztetve, ahogy a Kiln-Sitter kezelési útmutatója mutatja, minden alkalommal ugyanúgy. A fedél lezárása előtt ellenőrizze újra: „A ROSSZUL ELHELYEZETT GÚLA VAGY RÚD TÚLÉGETÉST OKOZHAT.”
-5. Állítsa be a biztonsági időkapcsolót, és nyomja be az indítógombot, amíg nem rögzül. A kemence álljon vízszintesen, és a súly alatti hely legyen szabad, hogy a súly le tudjon esni.
-
-### A biztonsági időkapcsoló
-
-Sok Kiln-Sitteren, köztük a Dawson LT modelljein, van **biztonsági időkapcsoló** (limit timer): óra, amely a beállított idő után lekapcsolja a kemencét, tartalékként arra az esetre, „ha a KILN-SITTER meghibásodik”. Mindig hosszabb időre kellene beállítani, mint amennyi ideig az égetés várhatóan tart. A források különböző ráhagyást adnak meg:
-
-Table: Mennyi időre állítsa a biztonsági időkapcsolót
-Label: Időkapcsoló beállítása
-
-| Forrás    | Beállítás                                                                                                                                        |
-| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Dawson    | ½ órával hosszabb a várható égetési időnél, amíg nem ismeri a kemencét, később akár csak ¼ órával hosszabb; soha ne állítsa 20 óránál hosszabbra |
-| L&L       | Első alkalommal nagyon hosszú idő, az égetés időtartamát feljegyezve; utána körülbelül 1 órával hosszabb                                         |
-| Bracker’s | 30 perc és 1 óra közötti idővel hosszabb az égetési időnél                                                                                       |
+Sources disagree. Dawson, who made the sitter, says to use the same number as the firing cone on the shelf, and to go one number hotter only if the shelf cone stays unbent. L&L says to use one number hotter than the shelf cones, because the sitter sits near the wall and the elements, gets more heat, and tends to shut off early. Orton settles the principle: "The shelf cone is the final judge of the firing process, not the Kiln-Sitter cone or bar."
 
 > [!NOTE]
-> Kiindulópontunk: először bőkezűen (a számlap 20 óráján belül), utána ½–1 órával hosszabbra, mint a feljegyzett idő. Az időkapcsoló azt is megmutatja, mennyi ideig tartott az égetés: ha 7-re állította, és 1-en állt meg, az 6 órát jelent.
+> Our starting point: put a small cone of the same number as your target in the sitter, with a cone pack on the shelf. If the shelf firing cone is under-bent when the kiln shuts off, go one number hotter in the sitter next time, or set the thicker part of the cone under the rod. If it is over-bent, do the opposite.
 
-### Ha túl korán vagy túl későn kapcsol le
+### Setting it up, and checks before every firing
 
-Minden égetés után olvassa le a Kiln-Sitter gúláját az égetőlapon álló gúlákkal együtt.
+Dawson's procedure, which doubles as a check before every firing:
 
-Table: A Kiln-Sitter leolvasása égetés után
-Label: A Kiln-Sitter hibái
+1. Turn all the switches off. Check that the sensing rod moves freely, sits centered in the tube and is not bent or corroded. If it is sluggish, Dawson says to replace the tube assembly.
+2. Brush a thin coat of high-fire **kiln wash** (a coating that stops melted material sticking) onto the cone supports and the rod where it touches the cone. Never put wash on the cone or the porcelain tube.
+3. Load shelves and ware at least 1 in (25 mm) above or below the tube, so nothing can touch, fall against or block it.
+4. Lift the weight, press the claw down onto the trigger, and lay the cone or bar flat on the supports against the metal step, as your sitter's manual shows, the same way every time. Check it again before closing the lid: "AN IMPROPERLY PLACED CONE OR BAR COULD CAUSE AN OVERFIRING."
+5. Set the limit timer and push in the plunger until it locks. Keep the kiln level and the space under the weight clear, so the weight can fall.
 
-| Amit lát                                                                    | Valószínű ok                                                                                                       | Teendő                                                                                    |
-| --------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------- |
-| A Kiln-Sitter lekapcsolt, az égetőlapon álló célgúla nem hajlott meg eléggé | A Kiln-Sitter több hőt kapott, mint az égetőlap (a fal közelében ül)                                               | Eggyel magasabb hőfokú gúla a Kiln-Sitterbe, vagy a vastagabb rész a rúd alá              |
-| A Kiln-Sitter gúlája jóval 90°-on túl lehajlott                             | A kemence a végén túl gyorsan fűtött fel                                                                           | Állítsa alacsonyabbra a kapcsolókat, hogy lassabb legyen a felfűtés (Dawson)              |
-| A Kiln-Sitter gúlája nem hajlott meg, vagy csomóvá olvadt                   | Maga a Kiln-Sitter: rossz beállítás, elgörbült vagy korrodált rúd, vagy valami beszorult a csőbe, vagy nekiszorult | Újabb égetés előtt ellenőrizze és állítsa be a Kiln-Sittert a kezelési útmutatója szerint |
-| Mindig túl korán vagy túl későn                                             | Elállítódott, vagy kopott a rúd                                                                                    | Ellenőrizze a beállítósablonnal; állítsa át a kioldólapot                                 |
+### The limit timer
 
-A beállítás ellenőrzéséhez a Dawson **beállítósablont** használ, amely ott tartja a rudat, ahol egy teljesen meghajlott gúla hagyná; a kapocsnál ekkor „1/16 hüvelyk hézag” (körülbelül 1,6 mm) legyen. 30 égetésenként ellenőrizze. A Ceramics Monthly szabálya: ha a kemence túl korán kapcsol le, tolja kissé feljebb a kioldólapot; ha túl későn, tolja kissé lejjebb. Bármit tesz is a Kiln-Sitter, „Mindig a nagy ellenőrző gúláknak{{en: witness cones}} higgyen, ne a Kiln-Sitter kis gúláinak.”
+Many sitters, including Dawson's LT models, have a **limit timer**: a clock that turns the kiln off after a set time, as a backup "in case the KILN-SITTER fails". It should always be set longer than the firing is expected to take. Sources set the margin differently:
+
+Table: How long to set the limit timer
+Label: Limit timer settings
+
+| Source    | Setting                                                                                                                |
+| --------- | ---------------------------------------------------------------------------------------------------------------------- |
+| Dawson    | ½ hour longer than the expected firing time until you know the kiln, later ¼ hour longer; never set it beyond 20 hours |
+| L&L       | Very high the first time, noting how long the firing takes; after that, about 1 hour longer                            |
+| Bracker's | 30 minutes to 1 hour longer than the firing time                                                                       |
+
+> [!NOTE]
+> Our starting point: generous the first time (within the dial's 20 hours), then ½ to 1 hour longer than the time you recorded. The timer also tells you how long a firing took: set at 7 and ending at 1 means 6 hours.
+
+### When it shuts off early or late
+
+After each firing, read the sitter cone beside the shelf cones.
+
+Table: Reading the sitter after a firing
+Label: Kiln sitter problems
+
+| What you see                                    | Likely cause                                                                                           | What to do                                                       |
+| ----------------------------------------------- | ------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------- |
+| Sitter tripped, shelf firing cone under-bent    | The sitter ran hotter than the shelf (it sits near the wall)                                           | One cone hotter in the sitter, or the thicker part under the rod |
+| Sitter cone sagged well past 90°                | The kiln climbed too fast near the end                                                                 | Lower the switch settings, so the climb is slower (Dawson)       |
+| Sitter cone did not bend, or melted into a blob | The sitter itself: poor adjustment, a bent or corroded rod, or something lodged in or against the tube | Check and adjust the sitter by its manual before firing again    |
+| Early or late every time                        | Out of adjustment, or a worn rod                                                                       | Check with the firing gauge; move the trigger plate              |
+
+To check the adjustment, Dawson uses a **firing gauge** that holds the rod where a fully bent cone would leave it; there should then be "1/16th-inch clearance" (about 1.6 mm) at the claw. Check it every 30 firings. Ceramics Monthly's rule: if the kiln shuts off early, move the trigger plate up slightly; if late, move it down slightly. Whatever the sitter does, "Always trust large witness cones over small sitter cones."
 
 > [!WARNING]
-> **A Kiln-Sitter nem biztonsági berendezés.** A Dawson kezelési útmutatója szerint „NEM arra szolgál, hogy hibabiztos lekapcsoló berendezésként működjön, és a kemencéjét NEM szabadna felügyelet nélkül hagyni a becsült égetési időn túl.” Akár egy olyan egyszerű dolog is, mint a csőnek dőlő nyers áru{{en: greenware}}, „túlégetést okozhat”. Legyen ott, és ellenőrizze a kemencét, amikor az égetésnek be kellene fejeződnie, és soha ne égessen semmi éghető fölött vagy közelében, amilyen például a fapadló vagy a szőnyeg.
+> **A kiln sitter is not a safety device.** Dawson's manual says it "is NOT intended to perform as a fail-safe shut-off device and your kiln should NOT be left unattended beyond the estimated firing time." Something as simple as greenware falling against the tube "might cause an over-firing". Be there to check the kiln when it should be finishing, and never fire it over or near anything that burns, such as a wood floor or carpet.
 
-A Kiln-Sitter „a 8-as gúlával bezárólag” végzett égetésekre készült. Magától nem tud hőmérsékletet tartani, sem lassan hűteni. Gyakorlattal és égetési naplóval azonban „vezérlővé válhat”, ahogy a Digitalfire fogalmaz: figyelje a gúlákat, és kézzel állítsa a kapcsolókat.
+The sitter is built for firings "up to and including Cone 8". It cannot hold a temperature or cool slowly by itself. With practice and a log, though, you can "become the controller", as Digitalfire puts it: watch the cones and turn the switches by hand.
 
 :::
 
@@ -281,92 +281,92 @@ A **gúlakorrekció** (cone offset) a vezérlő olyan beállítása, amely az ad
 
 :::sk
 
-## Égetés SK-gúlákra {#sk-cones}
+## Firing to SK cones {#sk-cones lang=en}
 
-Az SK-gúlák a japán szabvány, a JIS R 8101 szerint gyártott hőfokjelző gúlák, amelyeket Japánban olyan kereskedők árusítanak, mint a Yuko Trading (有恒商事). Mint minden gúla, az SK-gúla is a felvett hőmennyiséget{{en: heatwork}} méri, nem csupán a hőmérsékletet: meglágyul és lehajlik, amikor az áru elég hőt kapott, és Ön azt olvassa le, mennyire hajlott meg. Az ellenőrző gúla{{en: witness cone}}, annak leolvasása, mennyire hajlott meg a gúla, és a hőntartás ugyanúgy működik vele, mint bármely más gúlával. Ez a szakasz minden gúlánál megnevezi a rendszerét, és soha nem alakít át egy SK-számot egy másik rendszer számává: a különböző gúlasorozatok számai nem cserélhetők fel egymással.
+SK cones are the pyrometric cones made to Japan's standard, JIS R 8101, and sold in Japan by dealers such as Yuko Trading (有恒商事). Like any cone, an SK cone measures heatwork, not temperature alone: it softens and bends over when the ware has had enough heat, and you read how far it bent. Witness cones, reading how far a cone has bent, and holds work for it as for any cone. This section names each cone's system, and never turns an SK number into another system's number: the numbers of different cone series are not interchangeable.
 
 > [!NOTE]
-> Mindig írja ki az „SK” jelölést a szám elé. Sok régebbi japán recept csak annyit ír, hogy „SK 8” vagy „SK 9”, és nem mondja meg, kinek a gúlájáról van szó. A kiotói gúlák és a JIS szerinti SK-gúlák ugyanazokat a számokat viselik, de eltérő hőmérsékleten hajlanak le (lásd alább: Kiotói gúlák).
+> Always write "SK" before the number. Many older Japanese recipes say only "SK 8" or "SK 9" without saying whose cone. Kyoto cones and SK cones to JIS carry the same numbers but bend at different temperatures (see Kyoto cones, below).
 
-### A nagy gúlák
+### The large cones
 
-A szabvány két méretet ismer. A nagy gúlákat (大型コーン) „főként az égetési fok mérésére használják” (焼度測定), és a fazekasnak éppen erre van szüksége. A kis gúlákat (SK 26-tól SK 42-ig, a tartomány felső végén) „főként tűzállósági vizsgálatokra használják”, és itt nem foglalkozunk velük. Az alábbi táblázat a nagy gúlákat adja meg SK 022-től SK 20-ig.
+The standard has two sizes. Large cones (大型コーン) are "mainly used for measuring the degree of firing" (焼度測定), which is what a potter wants. Small cones (SK 26 to SK 42, at the top of the range) are "mainly used for refractoriness tests" and are not covered here. The table below gives the large cones from SK 022 to SK 20.
 
-A számok itt SK 022-től, a legalacsonyabb hőfokútól SK 20-ig tartanak. SK 015 és SK 6 között a nyomtatott számok után „a” betű áll (SK 015a, SK 6a); írja úgy, ahogy nyomtatva van.
+The numbers run from SK 022, the coolest, up to SK 20 here. Between SK 015 and SK 6 the printed numbers carry an "a" (SK 015a, SK 6a); write it as printed.
 
-### A nagy gúlák elhelyezése
+### Setting large cones
 
-Minden nagy gúlát gúlatartóba vagy agyaglepénybe állítson, a hajlási oldala felé döntve. Mint minden gúlánál, a magasságot és a dőlést égetésről égetésre tartsa azonosan, mert bármelyik eltérése megváltoztatja, mennyire hajlik meg a gúla. A gúlasor{{en: cone pack}} három gúláját (lásd alább) együtt állítsa fel, mélyen a kemencében, a rakat közepe táján, ahol ugyanazt a hőt kapják, amit az áru, mégis ott, ahol a kémlelőnyíláson át láthatók; mielőtt lezárja a kemencét, ellenőrizze, hogy mindhárom gúlát látja.
+Set each large cone in a plaque or a pat of clay, leaning toward its bending face. As with any cone, keep the height and the lean the same from firing to firing, because a difference in either changes how far it bends. Set the three cones of the pack (below) together, deep in the kiln near the middle of the load, where they get the heat the ware gets, yet where you can see them through a peephole; before you close the kiln, check that you can see all three.
 
-### Előjelző gúla, célgúla és őrgúla
+### Guide, firing and guard cones
 
-A gúlákat hármasával árusítják és állítják fel: egy előjelző gúla, egy célgúla a célhőfokra, és egy őrgúla. Célgúlának azt az SK-számot vegye, amelyet a receptje vagy az agyaga megad, előjelző gúlának az eggyel alacsonyabb hőfokú gúlát (a táblázatban egy sorral feljebb), őrgúlának pedig az eggyel magasabb hőfokút. Ha az előjelző gúla hajlani kezd, közel a vég; ha az őrgúla meghajlik, az égetés túl messzire ment.
+Cones are sold and set as three: a guide cone, a firing cone at the target, and a guard cone. Take the firing cone as the SK number your recipe or clay names, the guide cone as the next cooler cone (one row up in the table) and the guard cone as the next hotter one. When the guide cone starts to bend, the end is near; when the guard cone bends, the firing has gone too far.
 
-### Az SK-táblázat
+### The SK chart
 
-Table: Nagy SK-gúlák (JIS R 8101): az egyes gúlák névleges (JIS) hőmérséklete
-Label: SK-táblázat
+Table: SK large cones (JIS R 8101): the nominal (JIS) temperature of each
+Label: SK chart
 
-| Gúla    | Névleges (JIS) hőmérséklet |
-| ------- | -------------------------: |
-| SK 022  |        {{1112 °F; 600 °C}} |
-| SK 021  |        {{1202 °F; 650 °C}} |
-| SK 020  |        {{1238 °F; 670 °C}} |
-| SK 019  |        {{1274 °F; 690 °C}} |
-| SK 018  |        {{1310 °F; 710 °C}} |
-| SK 017  |        {{1346 °F; 730 °C}} |
-| SK 016  |        {{1382 °F; 750 °C}} |
-| SK 015a |        {{1454 °F; 790 °C}} |
-| SK 014a |        {{1499 °F; 815 °C}} |
-| SK 013a |        {{1535 °F; 835 °C}} |
-| SK 012a |        {{1571 °F; 855 °C}} |
-| SK 011a |        {{1616 °F; 880 °C}} |
-| SK 010a |        {{1652 °F; 900 °C}} |
-| SK 09a  |        {{1688 °F; 920 °C}} |
-| SK 08a  |        {{1724 °F; 940 °C}} |
-| SK 07a  |        {{1760 °F; 960 °C}} |
-| SK 06a  |        {{1796 °F; 980 °C}} |
-| SK 05a  |       {{1832 °F; 1000 °C}} |
-| SK 04a  |       {{1868 °F; 1020 °C}} |
-| SK 03a  |       {{1904 °F; 1040 °C}} |
-| SK 02a  |       {{1940 °F; 1060 °C}} |
-| SK 01a  |       {{1976 °F; 1080 °C}} |
-| SK 1a   |       {{2012 °F; 1100 °C}} |
-| SK 2a   |       {{2048 °F; 1120 °C}} |
-| SK 3a   |       {{2084 °F; 1140 °C}} |
-| SK 4a   |       {{2120 °F; 1160 °C}} |
-| SK 5a   |       {{2156 °F; 1180 °C}} |
-| SK 6a   |       {{2192 °F; 1200 °C}} |
-| SK 7    |       {{2246 °F; 1230 °C}} |
-| SK 8    |       {{2282 °F; 1250 °C}} |
-| SK 9    |       {{2336 °F; 1280 °C}} |
-| SK 10   |       {{2372 °F; 1300 °C}} |
-| SK 11   |       {{2408 °F; 1320 °C}} |
-| SK 12   |       {{2462 °F; 1350 °C}} |
-| SK 13   |       {{2516 °F; 1380 °C}} |
-| SK 14   |       {{2570 °F; 1410 °C}} |
-| SK 15   |       {{2615 °F; 1435 °C}} |
-| SK 16   |       {{2660 °F; 1460 °C}} |
-| SK 17   |       {{2696 °F; 1480 °C}} |
-| SK 18   |       {{2732 °F; 1500 °C}} |
-| SK 19   |       {{2768 °F; 1520 °C}} |
-| SK 20   |       {{2786 °F; 1530 °C}} |
+| Cone    | Nominal (JIS) temperature |
+| ------- | ------------------------: |
+| SK 022  |       {{1112 °F; 600 °C}} |
+| SK 021  |       {{1202 °F; 650 °C}} |
+| SK 020  |       {{1238 °F; 670 °C}} |
+| SK 019  |       {{1274 °F; 690 °C}} |
+| SK 018  |       {{1310 °F; 710 °C}} |
+| SK 017  |       {{1346 °F; 730 °C}} |
+| SK 016  |       {{1382 °F; 750 °C}} |
+| SK 015a |       {{1454 °F; 790 °C}} |
+| SK 014a |       {{1499 °F; 815 °C}} |
+| SK 013a |       {{1535 °F; 835 °C}} |
+| SK 012a |       {{1571 °F; 855 °C}} |
+| SK 011a |       {{1616 °F; 880 °C}} |
+| SK 010a |       {{1652 °F; 900 °C}} |
+| SK 09a  |       {{1688 °F; 920 °C}} |
+| SK 08a  |       {{1724 °F; 940 °C}} |
+| SK 07a  |       {{1760 °F; 960 °C}} |
+| SK 06a  |       {{1796 °F; 980 °C}} |
+| SK 05a  |      {{1832 °F; 1000 °C}} |
+| SK 04a  |      {{1868 °F; 1020 °C}} |
+| SK 03a  |      {{1904 °F; 1040 °C}} |
+| SK 02a  |      {{1940 °F; 1060 °C}} |
+| SK 01a  |      {{1976 °F; 1080 °C}} |
+| SK 1a   |      {{2012 °F; 1100 °C}} |
+| SK 2a   |      {{2048 °F; 1120 °C}} |
+| SK 3a   |      {{2084 °F; 1140 °C}} |
+| SK 4a   |      {{2120 °F; 1160 °C}} |
+| SK 5a   |      {{2156 °F; 1180 °C}} |
+| SK 6a   |      {{2192 °F; 1200 °C}} |
+| SK 7    |      {{2246 °F; 1230 °C}} |
+| SK 8    |      {{2282 °F; 1250 °C}} |
+| SK 9    |      {{2336 °F; 1280 °C}} |
+| SK 10   |      {{2372 °F; 1300 °C}} |
+| SK 11   |      {{2408 °F; 1320 °C}} |
+| SK 12   |      {{2462 °F; 1350 °C}} |
+| SK 13   |      {{2516 °F; 1380 °C}} |
+| SK 14   |      {{2570 °F; 1410 °C}} |
+| SK 15   |      {{2615 °F; 1435 °C}} |
+| SK 16   |      {{2660 °F; 1460 °C}} |
+| SK 17   |      {{2696 °F; 1480 °C}} |
+| SK 18   |      {{2732 °F; 1500 °C}} |
+| SK 19   |      {{2768 °F; 1520 °C}} |
+| SK 20   |      {{2786 °F; 1530 °C}} |
 
-Minden adat névleges (JIS): az a hőmérséklet, amelyet a szabvány az adott gúlára megad, ahogyan a Yuko Trading táblázata közli. A táblázat nem ad meg felfűtési sebességet. A szabvány viszonyítási hőmérsékleteket ad meg. Fazekasoknál szokásos, körülbelül 100 °C/h felfűtési sebesség mellett Kiotó városi intézete azt mérte, hogy a saját kiotói gúlái 40–70 °C-kal alacsonyabb hőmérsékleten hajlanak le, mint az azonos számhoz tartozó JIS-érték; a JIS szerinti SK-gúlákra nem találtunk ilyen méréseket. Állítson fel ellenőrző gúlát, és vesse össze.
+Every figure is nominal (JIS): the temperature the standard gives for the cone, as printed in Yuko Trading's table. The table does not print a heating rate. The standard gives reference temperatures. At a potter's rate of about 100 °C/h, Kyoto's municipal institute measured its own Kyoto cones bending 47–79 °C cooler than the JIS figure for the same number; we found no such measurements for SK cones to JIS. Set a witness cone and compare.
 
-### Kiotói gúlák
+### Kyoto cones
 
-A kiotói gúlákat (京都ゼーゲル), amelyeket Kiotó városi intézete készített, már nem gyártják: hírek szerint az intézet a 2009-es pénzügyi év végén leállította a gyártásukat. Ugyanazokat a számokat viselik, mint a JIS szerinti SK-gúlák, de alacsonyabb hőmérsékleten hajlanak le: egy kiotói gúla többnyire nagyjából annak a JIS szerinti SK-gúlának a hőmérsékletén hajlik le, amelynek a száma kettővel alacsonyabb. Egy kiotói recept, amely „SK 8”-at ír, kiotói gúlát is jelenthet. Az intézet tanácsokat tett közzé azoknak a fazekasoknak, akik kiotói gúlákról Orton-gúlákra térnek át, és saját kiotói SK 12-es gúlája helyett a 10-es Orton-gúlát adja meg; ez az intézet saját választása, a saját, 100 °C/h mellett végzett mérései alapján, és semmilyen más gúlára nem vonatkozik.
+Kyoto cones (京都ゼーゲル), made by Kyoto's municipal institute, are no longer made: news reports say the institute ended production at the close of fiscal 2009. They carry the same numbers as SK cones to JIS but bend cooler: a Kyoto cone bends at about the temperature of the SK cone to JIS two or three numbers lower. A recipe from Kyoto that says "SK 8" may mean a Kyoto cone. The institute has published advice for potters moving from Kyoto cones to Orton cones, and substitutes Orton cone 10 for its own Kyoto SK 12; that is the institute's choice from its own measurements at 100 °C/h, and applies to no other cone.
 
-### Japánban árusított Orton-gúlák
+### Orton cones sold in Japan
 
-Az önálló Orton-gúlákat Japánban 立つゼーゲル („álló Seger”) néven árusítják, mert nem kell hozzájuk gúlatartó vagy állvány. Ezek Orton-gúlák, az Orton számaival és az Orton táblázatával (lásd fent): egy ilyen gúlára csak az Orton-száma szerint égessen, és az SK- és az Orton-gúlákat külön gúlasorba tegye, soha ne ugyanabba.
+Orton self-supporting cones are sold in Japan under the name 立つゼーゲル ("standing Seger"), because they need no plaque or stand. They are Orton cones, with Orton's numbers and Orton's chart (above): fire to one only by its Orton number, and keep SK and Orton cones in separate packs, never in the same one.
 
-### Az SK-gúlák forrásai
+### Sources for SK cones
 
-- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (az SK-táblázat, ellenőrizve: 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
-- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (hatályos, megerősítve: 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
-- [Kyoto Municipal Institute of Industrial Technology and Culture: tudnivalók a kiotói gúlákról Orton-gúlákra való áttéréshez](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
+- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (the SK table, checked 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
+- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (in force, reconfirmed 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
+- [Kyoto Municipal Institute of Industrial Technology and Culture: points to note when moving from Kyoto cones to Orton cones](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
 
 :::
 

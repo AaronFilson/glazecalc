@@ -165,69 +165,69 @@ Stenna differenzi: Orton jgħid “Normalment, tara differenza ta’ mill-inqas 
 
 :::orton
 
-## Is-sitter {#kiln-sitter}
+## The kiln sitter {#kiln-sitter lang=en}
 
-Is-**sitter**{{en: kiln sitter}} huwa s-swiċċ mekkaniku, fuq barra ta’ ħafna fran sempliċi u qodma, li jitfi l-forn meta kon{{en: cone}} żgħir jitgħawweġ. L-aktar magħruf huwa Kiln-Sitter ta’ Dawson. Jagħmel il-ħami aktar faċli, imma hu kumdità, mhux apparat ta’ sigurtà.
+A **kiln sitter** is the mechanical switch, on the outside of many basic and older kilns, that turns the kiln off when a small cone bends. The best known is the Dawson Kiln-Sitter. It makes firing easier, but it is a convenience, not a safety device.
 
-### Kif jaħdem
+### How it works
 
-Tubu tal-porċellana jidħol ġol-forn. F’tarfu, kon żgħir jew virga jimteddu minn naħa għal oħra fuq żewġ appoġġi tal-metall, taħt **virga tas-sensur** li ddur fuq pern: meta tarf jinżel, l-ieħor jitla’. Barra mill-forn, it-tarf l-ieħor tal-virga jżomm piż ’il fuq b’difer żgħir. Meta l-kon jirtab u jitgħawweġ sa madwar 90°, il-virga tinżel biżżejjed biex teħles il-piż, il-piż jaqa’, u l-kurrent lejn l-elementi tat-tisħin jinqata’.
+A porcelain tube reaches into the kiln. At its end, a small cone or a bar lies across two metal supports, under a **sensing rod** that pivots like a seesaw. Outside the kiln, the other end of the rod holds up a weight by a small claw. When the cone softens and bends to about 90°, the rod drops far enough to release the weight, the weight falls, and the power to the elements is cut.
 
-Il-koni ż-żgħar u l-vireg “jagħtu trattament tas-sħana ekwivalenti”. Orton jinnota li ħafna li għadhom jibdew jagħżlu l-vireg, għax il-forma uniformi tagħhom tagħmilha faċli li tqegħidhom bl-istess mod kull darba. Kon żgħir jirqaq lejn il-ponta, għalhekk jgħodd fejn jinsab: bil-parti rqiqa tiegħu taħt il-virga, il-forn jintefa aktar kiesaħ, u bil-parti ħoxna, aktar sħun, differenza ta’ “sa 1/2 kon”.
+Small cones and bars "give equivalent heat treatment". Orton notes that many beginners choose bars, because their even shape makes it easy to place them the same way every time. A small cone tapers, so where it sits matters: with its thin part under the rod the kiln shuts off cooler, and with its thick part hotter, a shift of "as much as 1/2 cone".
 
-### Liema kon jidħol fis-sitter
+### Which cone goes in the sitter
 
-Is-sorsi ma jaqblux. Dawson, li għamel is-sitter, jgħid li tuża l-istess numru tal-kon tal-mira fuq ix-xkaffa, u li tpoġġi kon numru wieħed aktar sħun biss jekk il-kon fuq ix-xkaffa jibqa’ ma jitgħawweġx. L&L jgħid li tuża kon numru wieħed aktar sħun mill-koni fuq ix-xkaffa, għax is-sitter jinsab qrib il-ħajt u l-elementi tat-tisħin, jieħu aktar sħana, u għandu t-tendenza li jitfi kmieni. Orton jiddeċiedi l-prinċipju: “Il-kon fuq ix-xkaffa huwa l-imħallef finali tal-proċess tal-ħami, mhux il-kon jew il-virga ta’ Kiln-Sitter.”
-
-> [!NOTE]
-> Il-punt tat-tluq tagħna: poġġi fis-sitter kon żgħir bl-istess numru tal-mira tiegħek, b’sett ta’ koni{{en: cone pack}} fuq ix-xkaffa. Jekk il-kon tal-mira fuq ix-xkaffa ma jkunx tgħawweġ biżżejjed meta l-forn jintefa, il-ħamja ta’ wara poġġi fis-sitter kon numru wieħed aktar sħun, jew poġġi l-parti l-eħxen tal-kon taħt il-virga. Jekk ikun tgħawweġ iżżejjed, agħmel bil-maqlub.
-
-### L-issettjar, u kontrolli qabel kull ħamja
-
-Il-proċedura ta’ Dawson, li sservi wkoll ta’ kontroll qabel kull ħamja:
-
-1. Itfi s-swiċċijiet kollha. Iċċekkja li l-virga tas-sensur tiċċaqlaq liberament, tkun fiċ-ċentru tat-tubu u ma tkunx mgħawġa jew mikula. Jekk tiċċaqlaq b’diffikultà, Dawson jgħid li tibdel it-tubu bil-partijiet kollha tiegħu.
-2. Għaddi bil-pinzell saff irqiq ta’ **kisja tax-xkafef** għal ħami għoli (kisja li ma tħallix materjal imdewweb jeħel) fuq l-appoġġi tal-kon u fuq il-parti tal-virga li tmiss il-kon. Qatt ma tpoġġi kisja fuq il-kon jew fuq it-tubu tal-porċellana.
-3. Poġġi x-xkafef u l-oġġetti mill-inqas 1 pulzier (25 mm) ’il fuq jew ’l isfel mit-tubu, biex xejn ma jkun jista’ jmissu, jaqa’ fuqu jew jimblokkah.
-4. Għolli l-piż, agħfas id-difer ’l isfel fuq il-mekkaniżmu tal-iskattar, u poġġi l-kon jew il-virga ċatti fuq l-appoġġi, kontra t-tarġa tal-metall, kif juri l-manwal tas-sitter tiegħek, bl-istess mod kull darba. Erġa’ ċċekkjah qabel ma tagħlaq l-għatu: “KON JEW VIRGA MQIEGĦDA ĦAŻIN JISTGĦU JIKKAWŻAW ĦAMI ŻŻEJJED.”
-5. Issettja t-timer tal-limitu u agħfas il-buttuna ’l ġewwa sakemm tinqafel. Żomm il-forn livellat u l-ispazju taħt il-piż ħieles, biex il-piż ikun jista’ jaqa’.
-
-### It-timer tal-limitu
-
-Ħafna sitters, fosthom il-mudelli LT ta’ Dawson, għandhom **timer tal-limitu**: arloġġ li jitfi l-forn wara ħin stabbilit, bħala riżerva “f’każ li KILN-SITTER ifalli”. Dejjem għandek tissettjah għal aktar żmien milli tistenna li tieħu l-ħamja. Is-sorsi jagħtu marġni differenti:
-
-Table: Għal kemm tissettja t-timer tal-limitu
-Label: Issettjar tat-timer tal-limitu
-
-| Sors      | Issettjar                                                                                                                                      |
-| --------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
-| Dawson    | ½ siegħa aktar mill-ħin mistenni tal-ħamja sakemm issir taf il-forn, wara anke ¼ ta’ siegħa biss; qatt ma tissettjah għal aktar minn 20 siegħa |
-| L&L       | Għoli ħafna l-ewwel darba, u niżżel kemm tieħu l-ħamja; wara, madwar 1 siegħa aktar                                                            |
-| Bracker’s | Minn 30 minuta sa 1 siegħa aktar mill-ħin tal-ħamja                                                                                            |
+Sources disagree. Dawson, who made the sitter, says to use the same number as the firing cone on the shelf, and to go one number hotter only if the shelf cone stays unbent. L&L says to use one number hotter than the shelf cones, because the sitter sits near the wall and the elements, gets more heat, and tends to shut off early. Orton settles the principle: "The shelf cone is the final judge of the firing process, not the Kiln-Sitter cone or bar."
 
 > [!NOTE]
-> Il-punt tat-tluq tagħna: ħin twil l-ewwel darba (fil-limitu tal-20 siegħa tat-timer), imbagħad minn ½ sa 1 siegħa aktar mill-ħin li niżżilt. It-timer jgħidlek ukoll kemm damet il-ħamja: jekk issettjajtu fuq 7 u spiċċa fuq 1, il-ħamja damet 6 sigħat.
+> Our starting point: put a small cone of the same number as your target in the sitter, with a cone pack on the shelf. If the shelf firing cone is under-bent when the kiln shuts off, go one number hotter in the sitter next time, or set the thicker part of the cone under the rod. If it is over-bent, do the opposite.
 
-### Meta jitfi kmieni jew tard
+### Setting it up, and checks before every firing
 
-Wara kull ħamja, aqra l-kon tas-sitter ħdejn il-koni tax-xkaffa.
+Dawson's procedure, which doubles as a check before every firing:
 
-Table: Il-qari tas-sitter wara ħamja
-Label: Problemi tas-sitter
+1. Turn all the switches off. Check that the sensing rod moves freely, sits centered in the tube and is not bent or corroded. If it is sluggish, Dawson says to replace the tube assembly.
+2. Brush a thin coat of high-fire **kiln wash** (a coating that stops melted material sticking) onto the cone supports and the rod where it touches the cone. Never put wash on the cone or the porcelain tube.
+3. Load shelves and ware at least 1 in (25 mm) above or below the tube, so nothing can touch, fall against or block it.
+4. Lift the weight, press the claw down onto the trigger, and lay the cone or bar flat on the supports against the metal step, as your sitter's manual shows, the same way every time. Check it again before closing the lid: "AN IMPROPERLY PLACED CONE OR BAR COULD CAUSE AN OVERFIRING."
+5. Set the limit timer and push in the plunger until it locks. Keep the kiln level and the space under the weight clear, so the weight can fall.
 
-| X’tara                                                                 | Il-kawża probabbli                                                                                           | X’għandek tagħmel                                                                          |
-| ---------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ |
-| Is-sitter skatta, il-kon tal-mira fuq ix-xkaffa ma tgħawwiġx biżżejjed | Is-sitter kien aktar sħun mix-xkaffa (jinsab qrib il-ħajt)                                                   | Kon numru wieħed aktar sħun fis-sitter, jew il-parti l-eħxen taħt il-virga                 |
-| Il-kon tas-sitter niżel ħafna aktar minn 90°                           | Il-forn tela’ malajr wisq qrib it-tmiem                                                                      | Naqqas il-pożizzjonijiet tas-swiċċijiet, biex it-temperatura titla’ aktar bil-mod (Dawson) |
-| Il-kon tas-sitter ma tgħawwiġx, jew dab f’ċappa                        | Is-sitter innifsu: aġġustament ħażin, virga mgħawġa jew mikula, jew xi ħaġa mwaħħla ġewwa t-tubu jew kontrih | Iċċekkja u aġġusta s-sitter skont il-manwal tiegħu qabel ma terġa’ taħmi                   |
-| Kmieni jew tard kull darba                                             | Mhux aġġustat, jew virga milbusa                                                                             | Iċċekkja bil-gauge tal-issettjar; ċaqlaq il-pjanċa tal-iskattar                            |
+### The limit timer
 
-Biex jiċċekkja l-aġġustament, Dawson juża **gauge tal-issettjar** li jżomm il-virga fejn kien iħalliha kon mgħawweġ għal kollox; imbagħad għandu jkun hemm “spazju ta’ 1/16 ta’ pulzier” (madwar 1.6 mm) fid-difer. Iċċekkjah kull 30 ħamja. Ir-regola ta’ Ceramics Monthly: jekk il-forn jintefa kmieni, għolli ftit il-pjanċa tal-iskattar; jekk jintefa tard, niżżilha ftit. Jagħmel x’jagħmel is-sitter, “Dejjem afda l-koni xhieda{{en: witness cones}} kbar aktar mill-koni ż-żgħar tas-sitter.”
+Many sitters, including Dawson's LT models, have a **limit timer**: a clock that turns the kiln off after a set time, as a backup "in case the KILN-SITTER fails". It should always be set longer than the firing is expected to take. Sources set the margin differently:
+
+Table: How long to set the limit timer
+Label: Limit timer settings
+
+| Source    | Setting                                                                                                                |
+| --------- | ---------------------------------------------------------------------------------------------------------------------- |
+| Dawson    | ½ hour longer than the expected firing time until you know the kiln, later ¼ hour longer; never set it beyond 20 hours |
+| L&L       | Very high the first time, noting how long the firing takes; after that, about 1 hour longer                            |
+| Bracker's | 30 minutes to 1 hour longer than the firing time                                                                       |
+
+> [!NOTE]
+> Our starting point: generous the first time (within the dial's 20 hours), then ½ to 1 hour longer than the time you recorded. The timer also tells you how long a firing took: set at 7 and ending at 1 means 6 hours.
+
+### When it shuts off early or late
+
+After each firing, read the sitter cone beside the shelf cones.
+
+Table: Reading the sitter after a firing
+Label: Kiln sitter problems
+
+| What you see                                    | Likely cause                                                                                           | What to do                                                       |
+| ----------------------------------------------- | ------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------- |
+| Sitter tripped, shelf firing cone under-bent    | The sitter ran hotter than the shelf (it sits near the wall)                                           | One cone hotter in the sitter, or the thicker part under the rod |
+| Sitter cone sagged well past 90°                | The kiln climbed too fast near the end                                                                 | Lower the switch settings, so the climb is slower (Dawson)       |
+| Sitter cone did not bend, or melted into a blob | The sitter itself: poor adjustment, a bent or corroded rod, or something lodged in or against the tube | Check and adjust the sitter by its manual before firing again    |
+| Early or late every time                        | Out of adjustment, or a worn rod                                                                       | Check with the firing gauge; move the trigger plate              |
+
+To check the adjustment, Dawson uses a **firing gauge** that holds the rod where a fully bent cone would leave it; there should then be "1/16th-inch clearance" (about 1.6 mm) at the claw. Check it every 30 firings. Ceramics Monthly's rule: if the kiln shuts off early, move the trigger plate up slightly; if late, move it down slightly. Whatever the sitter does, "Always trust large witness cones over small sitter cones."
 
 > [!WARNING]
-> **Is-sitter mhuwiex apparat ta’ sigurtà.** Il-manwal ta’ Dawson jgħid li “MHUWIEX maħsub biex jaħdem bħala apparat li jitfi l-forn b’mod żgur f’każ ta’ ħsara, u l-forn tiegħek MA GĦANDUX jitħalla mingħajr sorveljanza wara l-ħin stmat tal-ħamja.” Xi ħaġa sempliċi daqs oġġett mhux moħmi{{en: greenware}} li jaqa’ kontra t-tubu “tista’ tikkawża ħami żżejjed”. Kun hemm biex tiċċekkja l-forn meta suppost ikun qed jispiċċa, u qatt ma taħmih fuq jew qrib xi ħaġa li taqbad, bħal art tal-injam jew tapit.
+> **A kiln sitter is not a safety device.** Dawson's manual says it "is NOT intended to perform as a fail-safe shut-off device and your kiln should NOT be left unattended beyond the estimated firing time." Something as simple as greenware falling against the tube "might cause an over-firing". Be there to check the kiln when it should be finishing, and never fire it over or near anything that burns, such as a wood floor or carpet.
 
-Is-sitter huwa magħmul għal ħamjiet “sal-kon 8 inkluż”. Ma jistax iżomm temperatura jew ikessaħ bil-mod waħdu. Imma bil-prattika u b’reġistru tal-ħami, tista’ “ssir int il-kontrollur”, kif jgħidha Digitalfire: segwi l-koni u dawwar is-swiċċijiet bl-idejn.
+The sitter is built for firings "up to and including Cone 8". It cannot hold a temperature or cool slowly by itself. With practice and a log, though, you can "become the controller", as Digitalfire puts it: watch the cones and turn the switches by hand.
 
 :::
 
@@ -281,92 +281,92 @@ L-**aġġustament tal-kon** huwa ssettjar tal-kontrollur li jgħolli jew ibaxxi 
 
 :::sk
 
-## Il-ħami bil-koni SK {#sk-cones}
+## Firing to SK cones {#sk-cones lang=en}
 
-Il-koni SK huma l-koni pirometriċi magħmulin skont l-istandard tal-Ġappun, JIS R 8101, u mibjugħin fil-Ġappun minn negozjanti bħal Yuko Trading (有恒商事). Bħal kull kon{{en: cone}}, kon SK ikejjel ix-xogħol tas-sħana{{en: heatwork}}, mhux it-temperatura biss: jirtab u jitgħawweġ meta l-oġġetti jkunu ħadu biżżejjed sħana, u int taqra kemm tgħawweġ. Il-koni xhieda{{en: witness cone}}, il-qari ta’ kemm tgħawweġ kon, u ż-żamma f’temperatura{{en: hold}} jaħdmu għalih bħal għal kull kon ieħor. Din it-taqsima ssemmi s-sistema ta’ kull kon, u qatt ma tibdel numru SK f’numru ta’ sistema oħra: in-numri ta’ serje differenti ta’ koni ma jistgħux jinbidlu ma’ xulxin.
+SK cones are the pyrometric cones made to Japan's standard, JIS R 8101, and sold in Japan by dealers such as Yuko Trading (有恒商事). Like any cone, an SK cone measures heatwork, not temperature alone: it softens and bends over when the ware has had enough heat, and you read how far it bent. Witness cones, reading how far a cone has bent, and holds work for it as for any cone. This section names each cone's system, and never turns an SK number into another system's number: the numbers of different cone series are not interchangeable.
 
 > [!NOTE]
-> Dejjem ikteb “SK” qabel in-numru. Ħafna riċetti Ġappuniżi antiki jgħidu biss “SK 8” jew “SK 9”, mingħajr ma jgħidu ta’ min hu l-kon. Il-koni ta’ Kyoto u l-koni SK skont il-JIS għandhom l-istess numri, iżda jitgħawġu f’temperaturi differenti (ara l-koni ta’ Kyoto, hawn taħt).
+> Always write "SK" before the number. Many older Japanese recipes say only "SK 8" or "SK 9" without saying whose cone. Kyoto cones and SK cones to JIS carry the same numbers but bend at different temperatures (see Kyoto cones, below).
 
-### Il-koni l-kbar
+### The large cones
 
-L-istandard għandu żewġ daqsijiet. Il-koni l-kbar (大型コーン) “jintużaw l-aktar biex jitkejjel il-grad tal-ħami” (焼度測定), u dan hu li jrid fuħħari. Il-koni ż-żgħar (minn SK 26 sa SK 42, fil-quċċata tal-firxa) “jintużaw l-aktar għat-testijiet tar-reżistenza għas-sħana”, u mhumiex koperti hawn. It-tabella hawn taħt tagħti l-koni l-kbar minn SK 022 sa SK 20.
+The standard has two sizes. Large cones (大型コーン) are "mainly used for measuring the degree of firing" (焼度測定), which is what a potter wants. Small cones (SK 26 to SK 42, at the top of the range) are "mainly used for refractoriness tests" and are not covered here. The table below gives the large cones from SK 022 to SK 20.
 
-Hawn in-numri jibdew minn SK 022, l-aktar kiesaħ, u jaslu sa SK 20. Minn SK 015 sa SK 6 in-numri stampati għandhom “a” (SK 015a, SK 6a); iktibhom kif inhuma stampati.
+The numbers run from SK 022, the coolest, up to SK 20 here. Between SK 015 and SK 6 the printed numbers carry an "a" (SK 015a, SK 6a); write it as printed.
 
-### Kif tqiegħed il-koni l-kbar
+### Setting large cones
 
-Qiegħed kull kon kbir f’bażi tal-koni jew f’ftit tafal, inklinat lejn il-wiċċ tat-tgħawwiġ tiegħu. Bħal ma tagħmel ma’ kull kon, żomm l-għoli u l-inklinazzjoni l-istess minn ħamja għal oħra, għax differenza f’xi waħda minnhom tibdel kemm jitgħawweġ. Qiegħed it-tliet koni tas-sett{{en: cone pack}} (ara hawn taħt) flimkien, fil-fond tal-forn, qrib in-nofs ta’ dak li hemm fil-forn, fejn jieħdu s-sħana li jieħdu l-oġġetti, iżda fejn tista’ tarahom minn toqba tal-ħarsa; qabel ma tagħlaq il-forn, iċċekkja li tista’ tara t-tlieta.
+Set each large cone in a plaque or a pat of clay, leaning toward its bending face. As with any cone, keep the height and the lean the same from firing to firing, because a difference in either changes how far it bends. Set the three cones of the pack (below) together, deep in the kiln near the middle of the load, where they get the heat the ware gets, yet where you can see them through a peephole; before you close the kiln, check that you can see all three.
 
-### Il-kon ta’ twissija, il-kon tal-mira u l-kon ta’ kontroll
+### Guide, firing and guard cones
 
-Il-koni jinbiegħu u jitqiegħdu fi tlieta: kon ta’ twissija, kon tal-mira fil-mira, u kon ta’ kontroll. Ħu bħala kon tal-mira n-numru SK li ssemmi r-riċetta jew it-tafal tiegħek, bħala kon ta’ twissija l-kon li jmiss aktar kiesaħ (ringiela waħda ’l fuq fit-tabella), u bħala kon ta’ kontroll dak li jmiss aktar sħun. Meta l-kon ta’ twissija jibda jitgħawweġ, it-tmiem ikun qrib; meta jitgħawweġ il-kon ta’ kontroll, il-ħamja tkun marret iżżejjed.
+Cones are sold and set as three: a guide cone, a firing cone at the target, and a guard cone. Take the firing cone as the SK number your recipe or clay names, the guide cone as the next cooler cone (one row up in the table) and the guard cone as the next hotter one. When the guide cone starts to bend, the end is near; when the guard cone bends, the firing has gone too far.
 
-### It-tabella SK
+### The SK chart
 
-Table: Il-koni SK il-kbar (JIS R 8101): it-temperatura nominali (JIS) ta’ kull wieħed
-Label: Tabella SK
+Table: SK large cones (JIS R 8101): the nominal (JIS) temperature of each
+Label: SK chart
 
-| Kon     | Temperatura nominali (JIS) |
-| ------- | -------------------------: |
-| SK 022  |        {{1112 °F; 600 °C}} |
-| SK 021  |        {{1202 °F; 650 °C}} |
-| SK 020  |        {{1238 °F; 670 °C}} |
-| SK 019  |        {{1274 °F; 690 °C}} |
-| SK 018  |        {{1310 °F; 710 °C}} |
-| SK 017  |        {{1346 °F; 730 °C}} |
-| SK 016  |        {{1382 °F; 750 °C}} |
-| SK 015a |        {{1454 °F; 790 °C}} |
-| SK 014a |        {{1499 °F; 815 °C}} |
-| SK 013a |        {{1535 °F; 835 °C}} |
-| SK 012a |        {{1571 °F; 855 °C}} |
-| SK 011a |        {{1616 °F; 880 °C}} |
-| SK 010a |        {{1652 °F; 900 °C}} |
-| SK 09a  |        {{1688 °F; 920 °C}} |
-| SK 08a  |        {{1724 °F; 940 °C}} |
-| SK 07a  |        {{1760 °F; 960 °C}} |
-| SK 06a  |        {{1796 °F; 980 °C}} |
-| SK 05a  |       {{1832 °F; 1000 °C}} |
-| SK 04a  |       {{1868 °F; 1020 °C}} |
-| SK 03a  |       {{1904 °F; 1040 °C}} |
-| SK 02a  |       {{1940 °F; 1060 °C}} |
-| SK 01a  |       {{1976 °F; 1080 °C}} |
-| SK 1a   |       {{2012 °F; 1100 °C}} |
-| SK 2a   |       {{2048 °F; 1120 °C}} |
-| SK 3a   |       {{2084 °F; 1140 °C}} |
-| SK 4a   |       {{2120 °F; 1160 °C}} |
-| SK 5a   |       {{2156 °F; 1180 °C}} |
-| SK 6a   |       {{2192 °F; 1200 °C}} |
-| SK 7    |       {{2246 °F; 1230 °C}} |
-| SK 8    |       {{2282 °F; 1250 °C}} |
-| SK 9    |       {{2336 °F; 1280 °C}} |
-| SK 10   |       {{2372 °F; 1300 °C}} |
-| SK 11   |       {{2408 °F; 1320 °C}} |
-| SK 12   |       {{2462 °F; 1350 °C}} |
-| SK 13   |       {{2516 °F; 1380 °C}} |
-| SK 14   |       {{2570 °F; 1410 °C}} |
-| SK 15   |       {{2615 °F; 1435 °C}} |
-| SK 16   |       {{2660 °F; 1460 °C}} |
-| SK 17   |       {{2696 °F; 1480 °C}} |
-| SK 18   |       {{2732 °F; 1500 °C}} |
-| SK 19   |       {{2768 °F; 1520 °C}} |
-| SK 20   |       {{2786 °F; 1530 °C}} |
+| Cone    | Nominal (JIS) temperature |
+| ------- | ------------------------: |
+| SK 022  |       {{1112 °F; 600 °C}} |
+| SK 021  |       {{1202 °F; 650 °C}} |
+| SK 020  |       {{1238 °F; 670 °C}} |
+| SK 019  |       {{1274 °F; 690 °C}} |
+| SK 018  |       {{1310 °F; 710 °C}} |
+| SK 017  |       {{1346 °F; 730 °C}} |
+| SK 016  |       {{1382 °F; 750 °C}} |
+| SK 015a |       {{1454 °F; 790 °C}} |
+| SK 014a |       {{1499 °F; 815 °C}} |
+| SK 013a |       {{1535 °F; 835 °C}} |
+| SK 012a |       {{1571 °F; 855 °C}} |
+| SK 011a |       {{1616 °F; 880 °C}} |
+| SK 010a |       {{1652 °F; 900 °C}} |
+| SK 09a  |       {{1688 °F; 920 °C}} |
+| SK 08a  |       {{1724 °F; 940 °C}} |
+| SK 07a  |       {{1760 °F; 960 °C}} |
+| SK 06a  |       {{1796 °F; 980 °C}} |
+| SK 05a  |      {{1832 °F; 1000 °C}} |
+| SK 04a  |      {{1868 °F; 1020 °C}} |
+| SK 03a  |      {{1904 °F; 1040 °C}} |
+| SK 02a  |      {{1940 °F; 1060 °C}} |
+| SK 01a  |      {{1976 °F; 1080 °C}} |
+| SK 1a   |      {{2012 °F; 1100 °C}} |
+| SK 2a   |      {{2048 °F; 1120 °C}} |
+| SK 3a   |      {{2084 °F; 1140 °C}} |
+| SK 4a   |      {{2120 °F; 1160 °C}} |
+| SK 5a   |      {{2156 °F; 1180 °C}} |
+| SK 6a   |      {{2192 °F; 1200 °C}} |
+| SK 7    |      {{2246 °F; 1230 °C}} |
+| SK 8    |      {{2282 °F; 1250 °C}} |
+| SK 9    |      {{2336 °F; 1280 °C}} |
+| SK 10   |      {{2372 °F; 1300 °C}} |
+| SK 11   |      {{2408 °F; 1320 °C}} |
+| SK 12   |      {{2462 °F; 1350 °C}} |
+| SK 13   |      {{2516 °F; 1380 °C}} |
+| SK 14   |      {{2570 °F; 1410 °C}} |
+| SK 15   |      {{2615 °F; 1435 °C}} |
+| SK 16   |      {{2660 °F; 1460 °C}} |
+| SK 17   |      {{2696 °F; 1480 °C}} |
+| SK 18   |      {{2732 °F; 1500 °C}} |
+| SK 19   |      {{2768 °F; 1520 °C}} |
+| SK 20   |      {{2786 °F; 1530 °C}} |
 
-Kull figura hija nominali (JIS): it-temperatura li l-istandard jagħti għall-kon, kif stampata fit-tabella ta’ Yuko Trading. It-tabella ma tagħtix rata tat-tisħin. L-istandard jagħti temperaturi ta’ referenza. B’rata ta’ fuħħari ta’ madwar 100 °C/h, l-istitut muniċipali ta’ Kyoto kejjel il-koni ta’ Kyoto tiegħu stess jitgħawġu f’temperatura 40–70 °C aktar baxxa mill-figura tal-JIS għall-istess numru; ma sibna l-ebda kejl bħal dan għall-koni SK skont il-JIS. Qiegħed kon xhud u qabbel.
+Every figure is nominal (JIS): the temperature the standard gives for the cone, as printed in Yuko Trading's table. The table does not print a heating rate. The standard gives reference temperatures. At a potter's rate of about 100 °C/h, Kyoto's municipal institute measured its own Kyoto cones bending 47–79 °C cooler than the JIS figure for the same number; we found no such measurements for SK cones to JIS. Set a witness cone and compare.
 
-### Il-koni ta’ Kyoto
+### Kyoto cones
 
-Il-koni ta’ Kyoto (京都ゼーゲル), magħmulin mill-istitut muniċipali ta’ Kyoto, m’għadhomx isiru: rapporti tal-aħbarijiet jgħidu li l-istitut waqqaf il-produzzjoni fl-aħħar tas-sena fiskali 2009. Għandhom l-istess numri tal-koni SK skont il-JIS, iżda jitgħawġu f’temperatura aktar baxxa: kon ta’ Kyoto l-aktar jitgħawweġ madwar it-temperatura tal-kon SK skont il-JIS li hu żewġ numri aktar kiesaħ. Riċetta minn Kyoto li tgħid “SK 8” tista’ tfisser kon ta’ Kyoto. L-istitut ippubblika pariri għall-fuħħarin li qed jgħaddu mill-koni ta’ Kyoto għall-koni Orton, u juża l-kon Orton 10 minflok il-Kyoto SK 12 tiegħu stess; dik hija l-għażla tal-istitut mill-kejl tiegħu stess b’100 °C/h, u ma tapplika għall-ebda kon ieħor.
+Kyoto cones (京都ゼーゲル), made by Kyoto's municipal institute, are no longer made: news reports say the institute ended production at the close of fiscal 2009. They carry the same numbers as SK cones to JIS but bend cooler: a Kyoto cone bends at about the temperature of the SK cone to JIS two or three numbers lower. A recipe from Kyoto that says "SK 8" may mean a Kyoto cone. The institute has published advice for potters moving from Kyoto cones to Orton cones, and substitutes Orton cone 10 for its own Kyoto SK 12; that is the institute's choice from its own measurements at 100 °C/h, and applies to no other cone.
 
-### Il-koni Orton mibjugħin fil-Ġappun
+### Orton cones sold in Japan
 
-Il-koni Orton li joqogħdu weħidhom jinbiegħu fil-Ġappun bl-isem 立つゼーゲル (“Seger wieqaf”), għax ma jridux bażi tal-koni jew stand. Huma koni Orton, bin-numri ta’ Orton u t-tabella ta’ Orton (hawn fuq): aħmi sa wieħed minnhom biss skont in-numru Orton tiegħu, u żomm il-koni SK u l-koni Orton f’settijiet separati, qatt fl-istess sett.
+Orton self-supporting cones are sold in Japan under the name 立つゼーゲル ("standing Seger"), because they need no plaque or stand. They are Orton cones, with Orton's numbers and Orton's chart (above): fire to one only by its Orton number, and keep SK and Orton cones in separate packs, never in the same one.
 
-### Sorsi għall-koni SK
+### Sources for SK cones
 
-- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (it-tabella SK, iċċekkjata 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
-- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (fis-seħħ, ikkonfermat mill-ġdid 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
-- [Istitut Muniċipali ta’ Kyoto għat-Teknoloġija Industrijali u l-Kultura: x’għandek toqgħod attent għalih meta tgħaddi mill-koni ta’ Kyoto għall-koni Orton](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
+- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (the SK table, checked 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
+- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (in force, reconfirmed 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
+- [Kyoto Municipal Institute of Industrial Technology and Culture: points to note when moving from Kyoto cones to Orton cones](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
 
 :::
 

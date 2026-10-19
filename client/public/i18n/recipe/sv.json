@@ -472,7 +472,6 @@
     "expansionRises": "Den beräknade utvidgningen stiger från {was} till {now}.",
     "expansionRisesProbably": "Om den gamla glasyren passade nätt och jämnt till leran kommer den här troligen att krackelera, ibland veckor senare.",
     "expansionRisesMay": "Om den gamla glasyren passade nätt och jämnt till leran kan den här krackelera, ibland veckor senare.",
-    "expansionRisesFix": "Krackelering försvagar föremålen och rekommenderas inte på ytor som kommer i kontakt med mat. Om man byter ut en del av natriumet och kaliumet mot flussmedel med lägre utvidgning (bor, litium, magnesium eller kalcium) sänks den; att tillsätta kiseldioxid föreslås ibland, men källorna är oeniga.",
     "expansionFalls": "Den beräknade utvidgningen sjunker från {was} till {now}. Något lägre brukar stå emot krackelering bättre.",
     "expansionFallsProbably": "Mycket lägre leder troligen till avskalning, med vassa flagor från mynningar och kanter.",
     "expansionFallsCan": "Mycket lägre kan leda till avskalning, med vassa flagor från mynningar och kanter.",
@@ -904,7 +903,6 @@
     "foodSurface": "För en yta som kommer i kontakt med mat (en insidesglasyr)",
     "liner": {
       "note": "Livsmedelssäkerheten beror på att den här glasyren bränns till den kägla den testades vid: en underbränd glasyr kan avge metaller.",
-      "range": "Den anges för ett intervall, så testa den vid intervallets nedre ände, där den smälter minst.",
       "untested": "Ingen kägla är ännu markerad som testad.",
       "test": "Bara ett test av metallavgivningen från egna brända föremål visar om den är livsmedelssäker."
     },

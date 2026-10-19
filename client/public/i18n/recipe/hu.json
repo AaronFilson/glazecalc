@@ -472,7 +472,6 @@
     "expansionRises": "A számított hőtágulása {was} értékről {now} értékre nő.",
     "expansionRisesProbably": "Ha a régi máz épp hogy illeszkedett az Ön masszájához, ez valószínűleg hajszálrepedezik, néha hetekkel később.",
     "expansionRisesMay": "Ha a régi máz épp hogy illeszkedett az Ön masszájához, ez hajszálrepedezhet, néha hetekkel később.",
-    "expansionRisesFix": "A hajszálrepedés gyengíti az edényt, és élelmiszerrel érintkező felületen nem ajánlott. Ha a nátrium és a kálium egy részét kisebb hőtágulású olvasztóanyagokra (bór, lítium, magnézium vagy kalcium) cseréli, csökken a hőtágulás; olykor szilícium-dioxid hozzáadását is javasolják, de a források ebben nem értenek egyet.",
     "expansionFalls": "A számított hőtágulása {was} értékről {now} értékre csökken. A kissé alacsonyabb érték általában jobban ellenáll a hajszálrepedésnek.",
     "expansionFallsProbably": "Jóval alacsonyabb érték esetén valószínűleg lepattogzik, éles szilánkok válnak le a peremekről és az élekről.",
     "expansionFallsCan": "Jóval alacsonyabb érték esetén lepattogzhat, éles szilánkok válhatnak le a peremekről és az élekről.",
@@ -904,7 +903,6 @@
     "foodSurface": "Élelmiszerrel érintkező felülethez (belső máz)",
     "liner": {
       "note": "Az élelmiszerrel érintkezésre való alkalmasság azon múlik, hogy ezt a mázat arra a gúlára égetik-e, amelyen kipróbálták: az alulégetett mázból fémek oldódhatnak ki.",
-      "range": "Tartományként van megadva, ezért a tartomány alsó végén próbálja ki, ahol a legkevésbé olvad.",
       "untested": "Még egyetlen gúla sincs kipróbáltként megjelölve.",
       "test": "Csak a saját kiégetett edényei kioldódási vizsgálata mutatja meg, hogy élelmiszerrel érintkezésre alkalmas-e."
     },

@@ -165,69 +165,69 @@ Rēķinieties ar atšķirībām. Orton raksta: “Parasti starp krāsns augšu u
 
 :::orton
 
-## Kiln-Sitter slēdzis {#kiln-sitter}
+## The kiln sitter {#kiln-sitter lang=en}
 
-**Kiln-Sitter** ir mehānisks slēdzis, kas izslēdz krāsni, kad saliecas mazs konuss; tas atrodas daudzu vienkāršu un vecāku krāsnu ārpusē. Vispazīstamākais ir Dawson ražotais Kiln-Sitter. Tas atvieglo apdedzināšanu, taču tas ir ērtības līdzeklis, nevis drošības ierīce.
+A **kiln sitter** is the mechanical switch, on the outside of many basic and older kilns, that turns the kiln off when a small cone bends. The best known is the Dawson Kiln-Sitter. It makes firing easier, but it is a convenience, not a safety device.
 
-### Kā tas darbojas
+### How it works
 
-Krāsnī iesniedzas porcelāna caurulīte. Tās galā mazs konuss vai stienītis guļ pāri diviem metāla balstiem zem **sensora stieņa**, kas šūpojas ap asi kā šūpoles. Krāsns ārpusē stieņa otrs gals ar mazu satvērēju notur atsvaru. Kad konuss kļūst mīksts un saliecas apmēram līdz 90°, stienis noslīd tik zemu, ka atbrīvo atsvaru, atsvars nokrīt, un sildelementu barošana atslēdzas.
+A porcelain tube reaches into the kiln. At its end, a small cone or a bar lies across two metal supports, under a **sensing rod** that pivots like a seesaw. Outside the kiln, the other end of the rod holds up a weight by a small claw. When the cone softens and bends to about 90°, the rod drops far enough to release the weight, the weight falls, and the power to the elements is cut.
 
-Mazie konusi un stienīši “nodrošina līdzvērtīgu termisko apstrādi”. Orton norāda, ka daudzi iesācēji izvēlas stienīšus, jo to vienmērīgās formas dēļ tos ir viegli katru reizi novietot vienādi. Mazais konuss sašaurinās, tāpēc ir svarīgi, kā tas novietots: ja zem stieņa ir tā plānā daļa, krāsns izslēdzas vēsākā temperatūrā, ja biezā – karstākā; nobīde var sasniegt “pat 1/2 konusa”.
+Small cones and bars "give equivalent heat treatment". Orton notes that many beginners choose bars, because their even shape makes it easy to place them the same way every time. A small cone tapers, so where it sits matters: with its thin part under the rod the kiln shuts off cooler, and with its thick part hotter, a shift of "as much as 1/2 cone".
 
-### Kuru konusu likt Kiln-Sitter slēdzī
+### Which cone goes in the sitter
 
-Avoti nav vienisprātis. Dawson, kas Kiln-Sitter ražoja, iesaka likt konusu ar tādu pašu numuru kā mērķa konusam uz plaukta un ņemt konusu, kas ir par vienu numuru karstāks, tikai tad, ja konuss uz plaukta paliek nesaliecies. L&L iesaka konusu, kas ir par vienu numuru karstāks nekā konusi uz plaukta, jo Kiln-Sitter atrodas tuvu sienai un sildelementiem, saņem vairāk siltuma un mēdz izslēgt krāsni par agru. Orton principu nosaka skaidri: “Galīgais apdedzināšanas procesa vērtētājs ir konuss uz plaukta, nevis Kiln-Sitter konuss vai stienītis.”
-
-> [!NOTE]
-> Mūsu ieteikums sākumam: ielieciet Kiln-Sitter slēdzī mazu konusu ar tādu pašu numuru kā mērķa konusam, bet uz plaukta novietojiet konusu komplektu{{en: cone pack}}. Ja mērķa konuss uz plaukta brīdī, kad krāsns izslēdzas, ir saliecies par maz, nākamreiz ielieciet Kiln-Sitter slēdzī konusu, kas ir par vienu numuru karstāks, vai novietojiet zem stieņa konusa biezāko daļu. Ja tas ir saliecies par daudz, rīkojieties pretēji.
-
-### Sagatavošana un pārbaude pirms katras apdedzināšanas
-
-Dawson procedūra, kas reizē ir arī pārbaude pirms katras apdedzināšanas:
-
-1. Izslēdziet visus slēdžus. Pārbaudiet, vai sensora stienis kustas brīvi, atrodas caurulītes centrā un nav saliekts vai korodējis. Ja tas kustas gausi, Dawson iesaka nomainīt caurulītes mezglu.
-2. Ar otu uzklājiet plānu augstas temperatūras **atdalīšanas līdzekļa** (pārklājuma, kas neļauj izkusušam materiālam pielipt) kārtu uz konusa balstiem un uz stieņa vietā, kur tas pieskaras konusam. Nekad neuzklājiet atdalīšanas līdzekli uz konusa vai porcelāna caurulītes.
-3. Plauktus un izstrādājumus ievietojiet vismaz 1 collu (25 mm) augstāk vai zemāk par caurulīti, lai nekas tai nevarētu pieskarties, uzkrist vai to aizšķērsot.
-4. Paceliet atsvaru, nospiediet satvērēju uz sprūda un noguldiet konusu vai stienīti plakaniski uz balstiem pret metāla pakāpienu, kā parādīts jūsu Kiln-Sitter lietošanas instrukcijā, katru reizi vienādi. Pirms vāka aizvēršanas pārbaudiet vēlreiz: “NEPAREIZI NOVIETOTS KONUSS VAI STIENĪTIS VAR IZRAISĪT PĀRDEDZINĀŠANU.”
-5. Iestatiet laika ierobežotāju un iespiediet ieslēgšanas pogu, līdz tā nofiksējas. Raugieties, lai krāsns stāvētu līmeniski un vieta zem atsvara būtu brīva, lai atsvars varētu nokrist.
-
-### Laika ierobežotājs
-
-Daudziem Kiln-Sitter slēdžiem, arī Dawson LT modeļiem, ir **laika ierobežotājs**: pulkstenis, kas pēc iestatītā laika izslēdz krāsni kā rezerves drošība “gadījumam, ja KILN-SITTER atteiktu”. To vienmēr vajadzētu iestatīt uz ilgāku laiku, nekā paredzams, ka ilgs apdedzināšana. Avoti rezervi nosaka dažādi:
-
-Table: Cik ilgu laiku iestatīt laika ierobežotājam
-Label: Laika ierobežotāja iestatījumi
-
-| Avots     | Iestatījums                                                                                                                                                                   |
-| --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Dawson    | Par ½ stundas ilgāk nekā paredzamais apdedzināšanas laiks, kamēr krāsni vēl nepazīstat, vēlāk šo rezervi var samazināt līdz ¼ stundai; nekad neiestatiet ilgāk par 20 stundām |
-| L&L       | Pirmajā reizē ļoti ilgs laiks, pierakstot, cik ilgi apdedzināšana ilgst; pēc tam apmēram par 1 stundu ilgāk                                                                   |
-| Bracker's | No 30 minūtēm līdz 1 stundai ilgāk nekā apdedzināšanas laiks                                                                                                                  |
+Sources disagree. Dawson, who made the sitter, says to use the same number as the firing cone on the shelf, and to go one number hotter only if the shelf cone stays unbent. L&L says to use one number hotter than the shelf cones, because the sitter sits near the wall and the elements, gets more heat, and tends to shut off early. Orton settles the principle: "The shelf cone is the final judge of the firing process, not the Kiln-Sitter cone or bar."
 
 > [!NOTE]
-> Mūsu ieteikums sākumam: pirmajā reizē ar lielu rezervi (nepārsniedzot skalas 20 stundas), pēc tam par ½ līdz 1 stundu ilgāk nekā jūsu pierakstītais laiks. Laika ierobežotājs parāda arī to, cik ilgi apdedzināšana ilga: ja tas iestatīts uz 7 un apstājies pie 1, tas nozīmē 6 stundas.
+> Our starting point: put a small cone of the same number as your target in the sitter, with a cone pack on the shelf. If the shelf firing cone is under-bent when the kiln shuts off, go one number hotter in the sitter next time, or set the thicker part of the cone under the rod. If it is over-bent, do the opposite.
 
-### Pārāk agra vai pārāk vēla izslēgšanās
+### Setting it up, and checks before every firing
 
-Pēc katras apdedzināšanas nolasiet Kiln-Sitter konusu kopā ar konusiem uz plaukta.
+Dawson's procedure, which doubles as a check before every firing:
 
-Table: Kiln-Sitter nolasīšana pēc apdedzināšanas
-Label: Kiln-Sitter problēmas
+1. Turn all the switches off. Check that the sensing rod moves freely, sits centered in the tube and is not bent or corroded. If it is sluggish, Dawson says to replace the tube assembly.
+2. Brush a thin coat of high-fire **kiln wash** (a coating that stops melted material sticking) onto the cone supports and the rod where it touches the cone. Never put wash on the cone or the porcelain tube.
+3. Load shelves and ware at least 1 in (25 mm) above or below the tube, so nothing can touch, fall against or block it.
+4. Lift the weight, press the claw down onto the trigger, and lay the cone or bar flat on the supports against the metal step, as your sitter's manual shows, the same way every time. Check it again before closing the lid: "AN IMPROPERLY PLACED CONE OR BAR COULD CAUSE AN OVERFIRING."
+5. Set the limit timer and push in the plunger until it locks. Keep the kiln level and the space under the weight clear, so the weight can fall.
 
-| Ko redzat                                                         | Iespējamais cēlonis                                                                                                                 | Ko darīt                                                                                           |
-| ----------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
-| Kiln-Sitter nostrādāja, mērķa konuss uz plaukta saliecies par maz | Kiln-Sitter bija karstāks nekā plaukts (tas atrodas pie sienas)                                                                     | Kiln-Sitter slēdzī konuss, kas ir par vienu numuru karstāks, vai zem stieņa biezākā daļa           |
-| Kiln-Sitter konuss noliecies krietni tālāk par 90°                | Krāsns beigās sildījās pārāk ātri                                                                                                   | Pagrieziet slēdžus uz zemākām pozīcijām, lai sildīšana būtu lēnāka (Dawson)                        |
-| Kiln-Sitter konuss nesaliecās vai izkusa lāsē                     | Vaina ir pašā Kiln-Sitter: slikts regulējums, saliekts vai korodējis stienis vai kaut kas iesprūdis caurulītē vai atbalstās pret to | Pirms nākamās apdedzināšanas pārbaudiet un noregulējiet Kiln-Sitter pēc tā lietošanas instrukcijas |
-| Katru reizi par agru vai par vēlu                                 | Nav noregulēts vai nodilis stienis                                                                                                  | Pārbaudiet ar regulēšanas šablonu; pārvietojiet sprūda plāksni                                     |
+### The limit timer
 
-Lai pārbaudītu regulējumu, Dawson izmanto **regulēšanas šablonu**, kas notur stieni tur, kur to atstātu pilnīgi saliecies konuss; tad pie satvērēja vajadzētu būt “1/16 collas spraugai” (apmēram 1,6 mm). Pārbaudiet to ik pēc 30 apdedzināšanām. Žurnāla Ceramics Monthly ieteikums: ja krāsns izslēdzas par agru, nedaudz paceliet sprūda plāksni uz augšu; ja par vēlu – nedaudz nolaidiet to uz leju. Lai ko Kiln-Sitter darītu, “Vienmēr uzticieties lielajiem kontrolkonusiem{{en: witness cones}} vairāk nekā mazajiem Kiln-Sitter konusiem.”
+Many sitters, including Dawson's LT models, have a **limit timer**: a clock that turns the kiln off after a set time, as a backup "in case the KILN-SITTER fails". It should always be set longer than the firing is expected to take. Sources set the margin differently:
+
+Table: How long to set the limit timer
+Label: Limit timer settings
+
+| Source    | Setting                                                                                                                |
+| --------- | ---------------------------------------------------------------------------------------------------------------------- |
+| Dawson    | ½ hour longer than the expected firing time until you know the kiln, later ¼ hour longer; never set it beyond 20 hours |
+| L&L       | Very high the first time, noting how long the firing takes; after that, about 1 hour longer                            |
+| Bracker's | 30 minutes to 1 hour longer than the firing time                                                                       |
+
+> [!NOTE]
+> Our starting point: generous the first time (within the dial's 20 hours), then ½ to 1 hour longer than the time you recorded. The timer also tells you how long a firing took: set at 7 and ending at 1 means 6 hours.
+
+### When it shuts off early or late
+
+After each firing, read the sitter cone beside the shelf cones.
+
+Table: Reading the sitter after a firing
+Label: Kiln sitter problems
+
+| What you see                                    | Likely cause                                                                                           | What to do                                                       |
+| ----------------------------------------------- | ------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------- |
+| Sitter tripped, shelf firing cone under-bent    | The sitter ran hotter than the shelf (it sits near the wall)                                           | One cone hotter in the sitter, or the thicker part under the rod |
+| Sitter cone sagged well past 90°                | The kiln climbed too fast near the end                                                                 | Lower the switch settings, so the climb is slower (Dawson)       |
+| Sitter cone did not bend, or melted into a blob | The sitter itself: poor adjustment, a bent or corroded rod, or something lodged in or against the tube | Check and adjust the sitter by its manual before firing again    |
+| Early or late every time                        | Out of adjustment, or a worn rod                                                                       | Check with the firing gauge; move the trigger plate              |
+
+To check the adjustment, Dawson uses a **firing gauge** that holds the rod where a fully bent cone would leave it; there should then be "1/16th-inch clearance" (about 1.6 mm) at the claw. Check it every 30 firings. Ceramics Monthly's rule: if the kiln shuts off early, move the trigger plate up slightly; if late, move it down slightly. Whatever the sitter does, "Always trust large witness cones over small sitter cones."
 
 > [!WARNING]
-> **Kiln-Sitter nav drošības ierīce.** Dawson lietošanas instrukcijā teikts, ka tas “NAV paredzēts darboties kā drošības izslēgšanas ierīce, kas nostrādātu arī bojājuma gadījumā, un krāsni NEVAJADZĒTU atstāt bez uzraudzības ilgāk par paredzamo apdedzināšanas laiku”. Pat kaut kas tik vienkāršs kā neapdedzināts izstrādājums{{en: greenware}}, kas uzkrīt caurulītei, “var izraisīt pārdedzināšanu”. Esiet klāt, lai pārbaudītu krāsni, kad apdedzināšanai vajadzētu beigties, un nekad neapdedziniet krāsnī, kas novietota virs kaut kā degoša vai tā tuvumā, piemēram, virs koka grīdas vai paklāja.
+> **A kiln sitter is not a safety device.** Dawson's manual says it "is NOT intended to perform as a fail-safe shut-off device and your kiln should NOT be left unattended beyond the estimated firing time." Something as simple as greenware falling against the tube "might cause an over-firing". Be there to check the kiln when it should be finishing, and never fire it over or near anything that burns, such as a wood floor or carpet.
 
-Kiln-Sitter ir paredzēts apdedzināšanām “līdz konusam 8 ieskaitot”. Tas pats nevar noturēt temperatūru vai lēni dzesēt. Taču ar pieredzi un pierakstiem jūs varat “kļūt par kontrolieri”, kā saka Digitalfire: vērot konusus un griezt slēdžus ar roku.
+The sitter is built for firings "up to and including Cone 8". It cannot hold a temperature or cool slowly by itself. With practice and a log, though, you can "become the controller", as Digitalfire puts it: watch the cones and turn the switches by hand.
 
 :::
 
@@ -281,92 +281,92 @@ Label: Nākamās apdedzināšanas korekcija
 
 :::sk
 
-## Apdedzināšana pēc SK konusiem {#sk-cones}
+## Firing to SK cones {#sk-cones lang=en}
 
-SK konusi ir pirometriskie konusi, kas izgatavoti saskaņā ar Japānas standartu JIS R 8101; Japānā tos pārdod tādi tirgotāji kā Yuko Trading (有恒商事). Tāpat kā jebkurš konuss{{en: cone}}, SK konuss mēra siltuma iedarbību{{en: heatwork}}, nevis tikai temperatūru: tas kļūst mīksts un saliecas, kad izstrādājumi saņēmuši pietiekami daudz siltuma, un jūs nolasāt, cik tālu tas saliecies. Kontrolkonusi{{en: witness cone}}, nolasīšana, cik tālu konuss saliecies, un noturēšana{{en: hold}} darbojas ar to tāpat kā ar jebkuru konusu. Šajā sadaļā pie katra konusa ir nosaukta tā sistēma, un SK numurs nekad netiek pārvērsts citas sistēmas numurā: dažādu konusu sēriju numuri nav savstarpēji aizstājami.
+SK cones are the pyrometric cones made to Japan's standard, JIS R 8101, and sold in Japan by dealers such as Yuko Trading (有恒商事). Like any cone, an SK cone measures heatwork, not temperature alone: it softens and bends over when the ware has had enough heat, and you read how far it bent. Witness cones, reading how far a cone has bent, and holds work for it as for any cone. This section names each cone's system, and never turns an SK number into another system's number: the numbers of different cone series are not interchangeable.
 
 > [!NOTE]
-> Vienmēr rakstiet “SK” pirms numura. Daudzās vecākās japāņu receptēs ir rakstīts tikai “SK 8” vai “SK 9”, nepasakot, kura ražotāja konuss domāts. Kioto konusiem un SK konusiem pēc JIS ir tie paši numuri, bet tie saliecas dažādās temperatūrās (sk. “Kioto konusi” tālāk).
+> Always write "SK" before the number. Many older Japanese recipes say only "SK 8" or "SK 9" without saying whose cone. Kyoto cones and SK cones to JIS carry the same numbers but bend at different temperatures (see Kyoto cones, below).
 
-### Lielie konusi
+### The large cones
 
-Standartā ir divi izmēri. Lielie konusi (大型コーン) “galvenokārt tiek izmantoti apdedzināšanas pakāpes mērīšanai” (焼度測定), un tieši to keramiķim vajag. Mazie konusi (no SK 26 līdz SK 42, diapazona augšgalā) “galvenokārt tiek izmantoti ugunsizturības pārbaudēm”, un tie šeit nav aplūkoti. Tabulā zemāk ir doti lielie konusi no SK 022 līdz SK 20.
+The standard has two sizes. Large cones (大型コーン) are "mainly used for measuring the degree of firing" (焼度測定), which is what a potter wants. Small cones (SK 26 to SK 42, at the top of the range) are "mainly used for refractoriness tests" and are not covered here. The table below gives the large cones from SK 022 to SK 20.
 
-Numuri šeit iet no SK 022, vēsākā, līdz SK 20. No SK 015 līdz SK 6 uzdrukātajiem numuriem ir burts “a” (SK 015a, SK 6a); rakstiet tos tā, kā uzdrukāts.
+The numbers run from SK 022, the coolest, up to SK 20 here. Between SK 015 and SK 6 the printed numbers carry an "a" (SK 015a, SK 6a); write it as printed.
 
-### Lielo konusu novietošana
+### Setting large cones
 
-Iespraudiet katru lielo konusu plāksnītē vai māla pikā, sasvērtu uz tā liekšanās pusi. Tāpat kā ar jebkuru konusu, saglabājiet augstumu un slīpumu vienādu no apdedzināšanas uz apdedzināšanu, jo atšķirība jebkurā no tiem maina to, cik tālu konuss saliecas. Novietojiet trīs komplekta{{en: cone pack}} konusus (sk. tālāk) kopā, dziļi krāsnī tuvāk krāsns satura vidum, kur tie saņem to pašu siltumu, ko izstrādājumi, tomēr kur tos var redzēt caur skatlodziņu; pirms krāsns aizvēršanas pārbaudiet, vai redzat visus trīs.
+Set each large cone in a plaque or a pat of clay, leaning toward its bending face. As with any cone, keep the height and the lean the same from firing to firing, because a difference in either changes how far it bends. Set the three cones of the pack (below) together, deep in the kiln near the middle of the load, where they get the heat the ware gets, yet where you can see them through a peephole; before you close the kiln, check that you can see all three.
 
-### Brīdinājuma, mērķa un drošības konuss
+### Guide, firing and guard cones
 
-Konusus pārdod un novieto pa trim: brīdinājuma konuss, mērķa konuss, kas atbilst mērķim, un drošības konuss. Par mērķa konusu ņemiet SK numuru, ko nosauc jūsu recepte vai māls, par brīdinājuma konusu – nākamo vēsāko konusu (vienu rindu augstāk tabulā), bet par drošības konusu – nākamo karstāko. Kad brīdinājuma konuss sāk liekties, beigas ir tuvu; kad saliecas drošības konuss, apdedzināšana ir aizgājusi par tālu.
+Cones are sold and set as three: a guide cone, a firing cone at the target, and a guard cone. Take the firing cone as the SK number your recipe or clay names, the guide cone as the next cooler cone (one row up in the table) and the guard cone as the next hotter one. When the guide cone starts to bend, the end is near; when the guard cone bends, the firing has gone too far.
 
-### SK konusu tabula
+### The SK chart
 
-Table: Lielie SK konusi (JIS R 8101): katra konusa nominālā (JIS) temperatūra
-Label: SK konusu tabula
+Table: SK large cones (JIS R 8101): the nominal (JIS) temperature of each
+Label: SK chart
 
-| Konuss  | Nominālā (JIS) temperatūra |
-| ------- | -------------------------: |
-| SK 022  |        {{1112 °F; 600 °C}} |
-| SK 021  |        {{1202 °F; 650 °C}} |
-| SK 020  |        {{1238 °F; 670 °C}} |
-| SK 019  |        {{1274 °F; 690 °C}} |
-| SK 018  |        {{1310 °F; 710 °C}} |
-| SK 017  |        {{1346 °F; 730 °C}} |
-| SK 016  |        {{1382 °F; 750 °C}} |
-| SK 015a |        {{1454 °F; 790 °C}} |
-| SK 014a |        {{1499 °F; 815 °C}} |
-| SK 013a |        {{1535 °F; 835 °C}} |
-| SK 012a |        {{1571 °F; 855 °C}} |
-| SK 011a |        {{1616 °F; 880 °C}} |
-| SK 010a |        {{1652 °F; 900 °C}} |
-| SK 09a  |        {{1688 °F; 920 °C}} |
-| SK 08a  |        {{1724 °F; 940 °C}} |
-| SK 07a  |        {{1760 °F; 960 °C}} |
-| SK 06a  |        {{1796 °F; 980 °C}} |
-| SK 05a  |       {{1832 °F; 1000 °C}} |
-| SK 04a  |       {{1868 °F; 1020 °C}} |
-| SK 03a  |       {{1904 °F; 1040 °C}} |
-| SK 02a  |       {{1940 °F; 1060 °C}} |
-| SK 01a  |       {{1976 °F; 1080 °C}} |
-| SK 1a   |       {{2012 °F; 1100 °C}} |
-| SK 2a   |       {{2048 °F; 1120 °C}} |
-| SK 3a   |       {{2084 °F; 1140 °C}} |
-| SK 4a   |       {{2120 °F; 1160 °C}} |
-| SK 5a   |       {{2156 °F; 1180 °C}} |
-| SK 6a   |       {{2192 °F; 1200 °C}} |
-| SK 7    |       {{2246 °F; 1230 °C}} |
-| SK 8    |       {{2282 °F; 1250 °C}} |
-| SK 9    |       {{2336 °F; 1280 °C}} |
-| SK 10   |       {{2372 °F; 1300 °C}} |
-| SK 11   |       {{2408 °F; 1320 °C}} |
-| SK 12   |       {{2462 °F; 1350 °C}} |
-| SK 13   |       {{2516 °F; 1380 °C}} |
-| SK 14   |       {{2570 °F; 1410 °C}} |
-| SK 15   |       {{2615 °F; 1435 °C}} |
-| SK 16   |       {{2660 °F; 1460 °C}} |
-| SK 17   |       {{2696 °F; 1480 °C}} |
-| SK 18   |       {{2732 °F; 1500 °C}} |
-| SK 19   |       {{2768 °F; 1520 °C}} |
-| SK 20   |       {{2786 °F; 1530 °C}} |
+| Cone    | Nominal (JIS) temperature |
+| ------- | ------------------------: |
+| SK 022  |       {{1112 °F; 600 °C}} |
+| SK 021  |       {{1202 °F; 650 °C}} |
+| SK 020  |       {{1238 °F; 670 °C}} |
+| SK 019  |       {{1274 °F; 690 °C}} |
+| SK 018  |       {{1310 °F; 710 °C}} |
+| SK 017  |       {{1346 °F; 730 °C}} |
+| SK 016  |       {{1382 °F; 750 °C}} |
+| SK 015a |       {{1454 °F; 790 °C}} |
+| SK 014a |       {{1499 °F; 815 °C}} |
+| SK 013a |       {{1535 °F; 835 °C}} |
+| SK 012a |       {{1571 °F; 855 °C}} |
+| SK 011a |       {{1616 °F; 880 °C}} |
+| SK 010a |       {{1652 °F; 900 °C}} |
+| SK 09a  |       {{1688 °F; 920 °C}} |
+| SK 08a  |       {{1724 °F; 940 °C}} |
+| SK 07a  |       {{1760 °F; 960 °C}} |
+| SK 06a  |       {{1796 °F; 980 °C}} |
+| SK 05a  |      {{1832 °F; 1000 °C}} |
+| SK 04a  |      {{1868 °F; 1020 °C}} |
+| SK 03a  |      {{1904 °F; 1040 °C}} |
+| SK 02a  |      {{1940 °F; 1060 °C}} |
+| SK 01a  |      {{1976 °F; 1080 °C}} |
+| SK 1a   |      {{2012 °F; 1100 °C}} |
+| SK 2a   |      {{2048 °F; 1120 °C}} |
+| SK 3a   |      {{2084 °F; 1140 °C}} |
+| SK 4a   |      {{2120 °F; 1160 °C}} |
+| SK 5a   |      {{2156 °F; 1180 °C}} |
+| SK 6a   |      {{2192 °F; 1200 °C}} |
+| SK 7    |      {{2246 °F; 1230 °C}} |
+| SK 8    |      {{2282 °F; 1250 °C}} |
+| SK 9    |      {{2336 °F; 1280 °C}} |
+| SK 10   |      {{2372 °F; 1300 °C}} |
+| SK 11   |      {{2408 °F; 1320 °C}} |
+| SK 12   |      {{2462 °F; 1350 °C}} |
+| SK 13   |      {{2516 °F; 1380 °C}} |
+| SK 14   |      {{2570 °F; 1410 °C}} |
+| SK 15   |      {{2615 °F; 1435 °C}} |
+| SK 16   |      {{2660 °F; 1460 °C}} |
+| SK 17   |      {{2696 °F; 1480 °C}} |
+| SK 18   |      {{2732 °F; 1500 °C}} |
+| SK 19   |      {{2768 °F; 1520 °C}} |
+| SK 20   |      {{2786 °F; 1530 °C}} |
 
-Visi skaitļi ir nominālie (JIS): temperatūra, ko standarts norāda konusam, kā tā uzdrukāta Yuko Trading tabulā. Tabulā nav norādīts sildīšanas ātrums. Standarts dod atsauces temperatūras. Pie keramiķiem ierasta ātruma, apmēram 100 °C/h, Kioto pašvaldības institūts izmērīja, ka tā paša Kioto konusi saliecas par 40–70 °C vēsāk, nekā JIS norāda tam pašam numuram; līdzīgus mērījumus SK konusiem pēc JIS mēs neatradām. Novietojiet kontrolkonusu un salīdziniet.
+Every figure is nominal (JIS): the temperature the standard gives for the cone, as printed in Yuko Trading's table. The table does not print a heating rate. The standard gives reference temperatures. At a potter's rate of about 100 °C/h, Kyoto's municipal institute measured its own Kyoto cones bending 47–79 °C cooler than the JIS figure for the same number; we found no such measurements for SK cones to JIS. Set a witness cone and compare.
 
-### Kioto konusi
+### Kyoto cones
 
-Kioto konusus (京都ゼーゲル), ko izgatavoja Kioto pašvaldības institūts, vairs neražo: saskaņā ar ziņām plašsaziņas līdzekļos institūts ražošanu beidza 2009. finanšu gada beigās. Tiem ir tie paši numuri, kas SK konusiem pēc JIS, bet tie saliecas vēsāk: Kioto konuss lielākoties saliecas apmēram tajā temperatūrā, kas atbilst par diviem numuriem vēsākam SK konusam pēc JIS. Recepte no Kioto, kurā rakstīts “SK 8”, var nozīmēt Kioto konusu. Institūts ir publicējis padomus keramiķiem, kas pāriet no Kioto konusiem uz Ortona konusiem, un sava Kioto SK 12 vietā izmanto Ortona konusu 10; tā ir paša institūta izvēle, kas balstīta uz tā mērījumiem ar ātrumu 100 °C/h, un tā neattiecas ne uz vienu citu konusu.
+Kyoto cones (京都ゼーゲル), made by Kyoto's municipal institute, are no longer made: news reports say the institute ended production at the close of fiscal 2009. They carry the same numbers as SK cones to JIS but bend cooler: a Kyoto cone bends at about the temperature of the SK cone to JIS two or three numbers lower. A recipe from Kyoto that says "SK 8" may mean a Kyoto cone. The institute has published advice for potters moving from Kyoto cones to Orton cones, and substitutes Orton cone 10 for its own Kyoto SK 12; that is the institute's choice from its own measurements at 100 °C/h, and applies to no other cone.
 
-### Japānā pārdotie Ortona konusi
+### Orton cones sold in Japan
 
-Ortona pašstāvošos konusus Japānā pārdod ar nosaukumu 立つゼーゲル (“stāvošais Zēgers”), jo tiem nav vajadzīga ne plāksnīte, ne statīvs. Tie ir Ortona konusi ar Ortona numuriem un Ortona tabulu (iepriekš): apdedziniet līdz tādam konusam tikai pēc tā Ortona numura un turiet SK un Ortona konusus atsevišķos komplektos, nekad ne vienā.
+Orton self-supporting cones are sold in Japan under the name 立つゼーゲル ("standing Seger"), because they need no plaque or stand. They are Orton cones, with Orton's numbers and Orton's chart (above): fire to one only by its Orton number, and keep SK and Orton cones in separate packs, never in the same one.
 
-### SK konusu avoti
+### Sources for SK cones
 
-- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (SK konusu tabula, pārbaudīts 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
-- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (spēkā, atkārtoti apstiprināts 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
-- [Kioto pašvaldības Rūpniecības tehnoloģiju un kultūras institūts: kam pievērst uzmanību, pārejot no Kioto konusiem uz Ortona konusiem](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
+- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (the SK table, checked 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
+- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (in force, reconfirmed 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
+- [Kyoto Municipal Institute of Industrial Technology and Culture: points to note when moving from Kyoto cones to Orton cones](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
 
 :::
 

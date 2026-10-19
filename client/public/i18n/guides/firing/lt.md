@@ -165,69 +165,69 @@ Tikėkitės skirtumų. Pasak Ortono, „paprastai tarp krosnies viršaus ir apa�
 
 :::orton
 
-## Išjungiklis Kiln-Sitter {#kiln-sitter}
+## The kiln sitter {#kiln-sitter lang=en}
 
-**Išjungiklis Kiln-Sitter**{{en: kiln sitter}} – tai mechaninis išjungiklis daugelio paprastų ir senesnių krosnių išorėje, kuris išjungia krosnį, kai mažasis piroskopas{{en: cone}} sulinksta. Žinomiausias – gamintojo Dawson Kiln-Sitter. Jis palengvina degimą, bet tai patogumo priemonė, o ne apsauginis įtaisas.
+A **kiln sitter** is the mechanical switch, on the outside of many basic and older kilns, that turns the kiln off when a small cone bends. The best known is the Dawson Kiln-Sitter. It makes firing easier, but it is a convenience, not a safety device.
 
-### Kaip jis veikia
+### How it works
 
-Porcelianinis vamzdelis siekia krosnies vidų. Jo gale mažasis piroskopas arba lazdelė guli skersai ant dviejų metalinių atramų, po **jutiklio strypeliu**, kuris svyruoja kaip sūpuoklių lenta. Krosnies išorėje kitas strypelio galas mažu **gnybtu** prilaiko pakeltą **svarelį**. Kai piroskopas suminkštėja ir sulinksta maždaug 90°, strypelis nusileidžia tiek, kad atleidžia svarelį, svarelis nukrenta ir kaitinimo elementų maitinimas nutrūksta.
+A porcelain tube reaches into the kiln. At its end, a small cone or a bar lies across two metal supports, under a **sensing rod** that pivots like a seesaw. Outside the kiln, the other end of the rod holds up a weight by a small claw. When the cone softens and bends to about 90°, the rod drops far enough to release the weight, the weight falls, and the power to the elements is cut.
 
-Mažieji piroskopai ir lazdelės „suteikia lygiavertį šiluminį poveikį“. Ortonas pažymi, kad daug pradedančiųjų renkasi lazdeles, nes dėl tolygios formos jas lengva kaskart padėti vienodai. Mažasis piroskopas siaurėja, todėl svarbu, kaip jis padėtas: kai po strypeliu yra plonoji jo dalis, krosnis išsijungia vėsesnė, o kai storoji – karštesnė; skirtumas gali siekti „net 1/2 piroskopo numerio“.
+Small cones and bars "give equivalent heat treatment". Orton notes that many beginners choose bars, because their even shape makes it easy to place them the same way every time. A small cone tapers, so where it sits matters: with its thin part under the rod the kiln shuts off cooler, and with its thick part hotter, a shift of "as much as 1/2 cone".
 
-### Kokį piroskopą dėti į išjungiklį
+### Which cone goes in the sitter
 
-Šaltiniai nesutaria. Išjungiklio gamintojas Dawson nurodo naudoti tokį patį numerį kaip degimo piroskopo ant plokštės, o vienu numeriu karštesnį dėti tik tuo atveju, jei piroskopas ant plokštės lieka nesulinkęs. L&L nurodo naudoti vienu numeriu karštesnį piroskopą nei ant plokščių, nes išjungiklis yra prie sienelės ir kaitinimo elementų, gauna daugiau šilumos ir linkęs išjungti krosnį per anksti. Principą nustato Ortonas: „Galutinis degimo proceso teisėjas yra piroskopas ant plokštės, o ne išjungiklio Kiln-Sitter piroskopas ar lazdelė.“
-
-> [!NOTE]
-> Mūsų atspirties taškas: į išjungiklį dėkite tokio paties numerio mažąjį piroskopą kaip jūsų tikslinis, o ant plokštės pastatykite piroskopų rinkinį{{en: cone pack}}. Jei krosniai išsijungus degimo piroskopas ant plokštės nepakankamai sulinkęs, kitą kartą į išjungiklį dėkite vienu numeriu karštesnį piroskopą arba po strypeliu padėkite storesnę piroskopo dalį. Jei jis per daug sulinkęs, darykite atvirkščiai.
-
-### Paruošimas ir patikra prieš kiekvieną degimą
-
-Gamintojo Dawson nurodyta tvarka, kuri kartu tinka ir patikrai prieš kiekvieną degimą:
-
-1. Išjunkite visus jungiklius. Patikrinkite, ar jutiklio strypelis laisvai juda, yra vamzdelio centre ir nėra sulinkęs ar korozijos pažeistas. Jei jis juda sunkiai, Dawson nurodo pakeisti visą vamzdelio mazgą.
-2. Ant piroskopo atramų ir ant strypelio toje vietoje, kur jis liečia piroskopą, teptuku užtepkite ploną aukšto degimo **krosnies plokščių apsaugos** (dangos, neleidžiančios prilipti išsilydžiusiai medžiagai) sluoksnį. Niekada netepkite apsaugos ant piroskopo ar porcelianinio vamzdelio.
-3. Plokštes ir dirbinius krauskite bent 1 coliu (25 mm) aukščiau ar žemiau vamzdelio, kad niekas negalėtų jo liesti, ant jo užvirsti ar jo užblokuoti.
-4. Pakelkite svarelį, nuspauskite gnybtą ant paleidimo plokštelės ir paguldykite piroskopą ar lazdelę plokščiai ant atramų, prie metalinės pakopėlės, kaip parodyta jūsų išjungiklio naudojimo instrukcijoje, kiekvieną kartą vienodai. Prieš uždarydami dangtį, patikrinkite dar kartą: „NETINKAMAI PADĖTAS PIROSKOPAS AR LAZDELĖ GALI SUKELTI PERDEGIMĄ.“
-5. Nustatykite ribinį laikmatį ir įspauskite paleidimo mygtuką, kol jis užsifiksuos. Krosnį laikykite pastatytą lygiai, o vietą po svareliu – laisvą, kad svarelis galėtų nukristi.
-
-### Ribinis laikmatis
-
-Daugelis išjungiklių, tarp jų gamintojo Dawson LT modeliai, turi **ribinį laikmatį** – laikrodį, kuris po nustatyto laiko išjungia krosnį; tai atsarginė priemonė, „jei išjungiklis KILN-SITTER sugestų“. Jis visada turėtų būti nustatytas ilgesniam laikui, nei tikimasi, kad truks degimas. Šaltiniai atsargą nustato skirtingai:
-
-Table: Kiek laiko nustatyti ribinį laikmatį
-Label: Ribinio laikmačio nustatymai
-
-| Šaltinis  | Nustatymas                                                                                                                                   |
-| --------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| Dawson    | ½ val. ilgiau už numatomą degimo trukmę, kol krosnies dar nepažįstate, vėliau – vos ¼ val. ilgiau; niekada nenustatykite ilgiau kaip 20 val. |
-| L&L       | Pirmą kartą – labai ilgam laikui, užsirašant, kiek trunka degimas; vėliau – maždaug 1 val. ilgiau                                            |
-| Bracker's | Nuo 30 min. iki 1 val. ilgiau už degimo trukmę                                                                                               |
+Sources disagree. Dawson, who made the sitter, says to use the same number as the firing cone on the shelf, and to go one number hotter only if the shelf cone stays unbent. L&L says to use one number hotter than the shelf cones, because the sitter sits near the wall and the elements, gets more heat, and tends to shut off early. Orton settles the principle: "The shelf cone is the final judge of the firing process, not the Kiln-Sitter cone or bar."
 
 > [!NOTE]
-> Mūsų atspirties taškas: pirmą kartą nustatykite su didele atsarga (neviršydami skalės 20 valandų), vėliau – ½–1 valanda ilgiau už jūsų užrašytą trukmę. Laikmatis taip pat parodo, kiek truko degimas: nustatytas ties 7 ir sustojęs ties 1, jis rodo 6 valandas.
+> Our starting point: put a small cone of the same number as your target in the sitter, with a cone pack on the shelf. If the shelf firing cone is under-bent when the kiln shuts off, go one number hotter in the sitter next time, or set the thicker part of the cone under the rod. If it is over-bent, do the opposite.
 
-### Kai išjungia per anksti ar per vėlai
+### Setting it up, and checks before every firing
 
-Po kiekvieno degimo išjungiklio piroskopą apžiūrėkite kartu su piroskopais ant plokščių.
+Dawson's procedure, which doubles as a check before every firing:
 
-Table: Išjungiklio vertinimas po degimo
-Label: Išjungiklio problemos
+1. Turn all the switches off. Check that the sensing rod moves freely, sits centered in the tube and is not bent or corroded. If it is sluggish, Dawson says to replace the tube assembly.
+2. Brush a thin coat of high-fire **kiln wash** (a coating that stops melted material sticking) onto the cone supports and the rod where it touches the cone. Never put wash on the cone or the porcelain tube.
+3. Load shelves and ware at least 1 in (25 mm) above or below the tube, so nothing can touch, fall against or block it.
+4. Lift the weight, press the claw down onto the trigger, and lay the cone or bar flat on the supports against the metal step, as your sitter's manual shows, the same way every time. Check it again before closing the lid: "AN IMPROPERLY PLACED CONE OR BAR COULD CAUSE AN OVERFIRING."
+5. Set the limit timer and push in the plunger until it locks. Keep the kiln level and the space under the weight clear, so the weight can fall.
 
-| Ką matote                                                                 | Tikėtina priežastis                                                                                                              | Ką daryti                                                                                  |
-| ------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
-| Išjungiklis suveikė, degimo piroskopas ant plokštės nepakankamai sulinkęs | Išjungiklyje buvo karščiau nei ant plokštės (jis yra prie sienelės)                                                              | Į išjungiklį – vienu numeriu karštesnis piroskopas arba po strypeliu storesnė dalis        |
-| Išjungiklio piroskopas nulinko gerokai daugiau nei 90°                    | Pabaigoje krosnis kaito per greitai                                                                                              | Nustatykite žemesnes jungiklių padėtis, kad kaistų lėčiau (Dawson)                         |
-| Išjungiklio piroskopas nesulinko arba išsilydė į lašą                     | Pats išjungiklis: blogai sureguliuotas, sulinkęs ar korozijos pažeistas strypelis arba kažkas įstrigo vamzdelyje ar remiasi į jį | Prieš kitą degimą patikrinkite ir sureguliuokite išjungiklį pagal jo naudojimo instrukciją |
-| Kiekvieną kartą per anksti ar per vėlai                                   | Išsireguliavęs išjungiklis arba susidėvėjęs strypelis                                                                            | Patikrinkite reguliavimo šablonu; pastumkite paleidimo plokštelę                           |
+### The limit timer
 
-Reguliavimui patikrinti Dawson naudoja **reguliavimo šabloną**, kuris laiko strypelį toje padėtyje, kurioje jį paliktų visiškai sulinkęs piroskopas; tada prie gnybto turėtų likti „1/16 colio tarpas“ (apie 1,6 mm). Tikrinkite tai kas 30 degimų. Žurnalo Ceramics Monthly taisyklė: jei krosnis išsijungia per anksti, šiek tiek pakelkite paleidimo plokštelę; jei per vėlai – šiek tiek nuleiskite. Kad ir ką darytų išjungiklis, „visada labiau pasitikėkite dideliais kontroliniais piroskopais nei mažais išjungiklio piroskopais“.
+Many sitters, including Dawson's LT models, have a **limit timer**: a clock that turns the kiln off after a set time, as a backup "in case the KILN-SITTER fails". It should always be set longer than the firing is expected to take. Sources set the margin differently:
+
+Table: How long to set the limit timer
+Label: Limit timer settings
+
+| Source    | Setting                                                                                                                |
+| --------- | ---------------------------------------------------------------------------------------------------------------------- |
+| Dawson    | ½ hour longer than the expected firing time until you know the kiln, later ¼ hour longer; never set it beyond 20 hours |
+| L&L       | Very high the first time, noting how long the firing takes; after that, about 1 hour longer                            |
+| Bracker's | 30 minutes to 1 hour longer than the firing time                                                                       |
+
+> [!NOTE]
+> Our starting point: generous the first time (within the dial's 20 hours), then ½ to 1 hour longer than the time you recorded. The timer also tells you how long a firing took: set at 7 and ending at 1 means 6 hours.
+
+### When it shuts off early or late
+
+After each firing, read the sitter cone beside the shelf cones.
+
+Table: Reading the sitter after a firing
+Label: Kiln sitter problems
+
+| What you see                                    | Likely cause                                                                                           | What to do                                                       |
+| ----------------------------------------------- | ------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------- |
+| Sitter tripped, shelf firing cone under-bent    | The sitter ran hotter than the shelf (it sits near the wall)                                           | One cone hotter in the sitter, or the thicker part under the rod |
+| Sitter cone sagged well past 90°                | The kiln climbed too fast near the end                                                                 | Lower the switch settings, so the climb is slower (Dawson)       |
+| Sitter cone did not bend, or melted into a blob | The sitter itself: poor adjustment, a bent or corroded rod, or something lodged in or against the tube | Check and adjust the sitter by its manual before firing again    |
+| Early or late every time                        | Out of adjustment, or a worn rod                                                                       | Check with the firing gauge; move the trigger plate              |
+
+To check the adjustment, Dawson uses a **firing gauge** that holds the rod where a fully bent cone would leave it; there should then be "1/16th-inch clearance" (about 1.6 mm) at the claw. Check it every 30 firings. Ceramics Monthly's rule: if the kiln shuts off early, move the trigger plate up slightly; if late, move it down slightly. Whatever the sitter does, "Always trust large witness cones over small sitter cones."
 
 > [!WARNING]
-> **Išjungiklis Kiln-Sitter nėra apsauginis įtaisas.** Gamintojo Dawson naudojimo instrukcijoje rašoma, kad jis „NĖRA skirtas veikti kaip išjungimo įtaisas, saugus gedimo atveju{{en: fail-safe}}, ir jūsų krosnis NETURĖTŲ būti palikta be priežiūros ilgiau nei numatoma degimo trukmė“. Net toks paprastas dalykas kaip ant vamzdelio užvirtęs nedegtas dirbinys{{en: greenware}} „galėtų sukelti perdegimą“. Būkite šalia ir patikrinkite krosnį tada, kai degimas turėtų baigtis, ir niekada neįjunkite jos ant to, kas gali užsidegti, ar šalia to, pavyzdžiui, ant medinių grindų ar kilimo.
+> **A kiln sitter is not a safety device.** Dawson's manual says it "is NOT intended to perform as a fail-safe shut-off device and your kiln should NOT be left unattended beyond the estimated firing time." Something as simple as greenware falling against the tube "might cause an over-firing". Be there to check the kiln when it should be finishing, and never fire it over or near anything that burns, such as a wood floor or carpet.
 
-Išjungiklis skirtas degimams „iki piroskopo 8 imtinai“. Pats jis negali išlaikyti temperatūros ar lėtai aušinti. Vis dėlto, įgiję patirties ir vesdami žurnalą, galite „tapti valdikliu“, kaip sako Digitalfire: stebėti piroskopus ir sukti jungiklius ranka.
+The sitter is built for firings "up to and including Cone 8". It cannot hold a temperature or cool slowly by itself. With practice and a log, though, you can "become the controller", as Digitalfire puts it: watch the cones and turn the switches by hand.
 
 :::
 
@@ -281,92 +281,92 @@ Label: Kito degimo pataisymai
 
 :::sk
 
-## Degimas pagal SK piroskopus {#sk-cones}
+## Firing to SK cones {#sk-cones lang=en}
 
-SK piroskopai – tai pirometriniai kūgiai, pagaminti pagal Japonijos standartą JIS R 8101; Japonijoje juos parduoda tokie prekiautojai kaip Yuko Trading (有恒商事). Kaip ir bet kuris piroskopas{{en: cone}}, SK piroskopas matuoja šilumos poveikį{{en: heatwork}}, o ne vien temperatūrą: jis suminkštėja ir sulinksta, kai dirbiniai gauna pakankamai šilumos, o jūs įvertinate, kiek jis sulinko. Kontroliniai piroskopai{{en: witness cone}}, sulinkimo vertinimas ir išlaikymai{{en: hold}} jam tinka taip pat kaip bet kuriam piroskopui. Šiame skyriuje prie kiekvieno piroskopo nurodoma jo sistema, ir SK numeris niekada nepaverčiamas kitos sistemos numeriu: skirtingų piroskopų serijų numeriai nėra tarpusavyje keičiami.
+SK cones are the pyrometric cones made to Japan's standard, JIS R 8101, and sold in Japan by dealers such as Yuko Trading (有恒商事). Like any cone, an SK cone measures heatwork, not temperature alone: it softens and bends over when the ware has had enough heat, and you read how far it bent. Witness cones, reading how far a cone has bent, and holds work for it as for any cone. This section names each cone's system, and never turns an SK number into another system's number: the numbers of different cone series are not interchangeable.
 
 > [!NOTE]
-> Prieš numerį visada rašykite „SK“. Daugelyje senesnių japoniškų receptų parašyta tik „SK 8“ arba „SK 9“, nenurodant, kieno tai piroskopas. Kioto piroskopai ir SK piroskopai pagal JIS turi tuos pačius numerius, bet sulinksta skirtingoje temperatūroje (žr. „Kioto piroskopai“ toliau).
+> Always write "SK" before the number. Many older Japanese recipes say only "SK 8" or "SK 9" without saying whose cone. Kyoto cones and SK cones to JIS carry the same numbers but bend at different temperatures (see Kyoto cones, below).
 
-### Dideli piroskopai
+### The large cones
 
-Standarte yra du dydžiai. Dideli piroskopai (大型コーン) „daugiausia naudojami išdegimo laipsniui matuoti“ (焼度測定), o to ir reikia keramikui. Mažieji piroskopai (nuo SK 26 iki SK 42, intervalo viršuje) „daugiausia naudojami ugniai atsparumo bandymams“, ir čia jie neaptariami. Toliau pateiktoje lentelėje nurodyti dideli piroskopai nuo SK 022 iki SK 20.
+The standard has two sizes. Large cones (大型コーン) are "mainly used for measuring the degree of firing" (焼度測定), which is what a potter wants. Small cones (SK 26 to SK 42, at the top of the range) are "mainly used for refractoriness tests" and are not covered here. The table below gives the large cones from SK 022 to SK 20.
 
-Čia numeriai eina nuo SK 022, vėsiausio, iki SK 20. Nuo SK 015 iki SK 6 išspausdinti numeriai turi raidę „a“ (SK 015a, SK 6a); rašykite juos taip, kaip išspausdinta.
+The numbers run from SK 022, the coolest, up to SK 20 here. Between SK 015 and SK 6 the printed numbers carry an "a" (SK 015a, SK 6a); write it as printed.
 
-### Didelių piroskopų statymas
+### Setting large cones
 
-Kiekvieną didelį piroskopą įstatykite į stovelį arba molio paplotėlį, pakreiptą į jo linkimo pusę. Kaip ir bet kurio piroskopo, aukštį ir pasvirimą kiekvieną kartą degdami išlaikykite vienodus, nes bet kurio iš jų skirtumas pakeičia, kiek piroskopas sulinksta. Tris rinkinio{{en: cone pack}} piroskopus (apie juos – toliau) statykite kartu, giliai krosnyje, arčiau įkrovos vidurio, kur jie gauna tiek pat šilumos kaip dirbiniai, tačiau kur juos matote pro stebėjimo angą; prieš uždarydami krosnį patikrinkite, ar matote visus tris.
+Set each large cone in a plaque or a pat of clay, leaning toward its bending face. As with any cone, keep the height and the lean the same from firing to firing, because a difference in either changes how far it bends. Set the three cones of the pack (below) together, deep in the kiln near the middle of the load, where they get the heat the ware gets, yet where you can see them through a peephole; before you close the kiln, check that you can see all three.
 
-### Orientacinis, degimo ir apsauginis piroskopai
+### Guide, firing and guard cones
 
-Piroskopai parduodami ir statomi po tris: orientacinis piroskopas, degimo piroskopas, atitinkantis tikslą, ir apsauginis piroskopas. Degimo piroskopu imkite tą SK numerį, kurį nurodo jūsų receptas ar molis, orientaciniu – artimiausią vėsesnį piroskopą (viena eilute aukščiau lentelėje), o apsauginiu – artimiausią karštesnį. Kai orientacinis piroskopas pradeda linkti, pabaiga arti; kai sulinksta apsauginis piroskopas, degimas nuėjo per toli.
+Cones are sold and set as three: a guide cone, a firing cone at the target, and a guard cone. Take the firing cone as the SK number your recipe or clay names, the guide cone as the next cooler cone (one row up in the table) and the guard cone as the next hotter one. When the guide cone starts to bend, the end is near; when the guard cone bends, the firing has gone too far.
 
-### SK piroskopų lentelė
+### The SK chart
 
-Table: Dideli SK piroskopai (JIS R 8101): kiekvieno nominalioji (JIS) temperatūra
-Label: SK piroskopų lentelė
+Table: SK large cones (JIS R 8101): the nominal (JIS) temperature of each
+Label: SK chart
 
-| Piroskopas | Nominalioji (JIS) temperatūra |
-| ---------- | ----------------------------: |
-| SK 022     |           {{1112 °F; 600 °C}} |
-| SK 021     |           {{1202 °F; 650 °C}} |
-| SK 020     |           {{1238 °F; 670 °C}} |
-| SK 019     |           {{1274 °F; 690 °C}} |
-| SK 018     |           {{1310 °F; 710 °C}} |
-| SK 017     |           {{1346 °F; 730 °C}} |
-| SK 016     |           {{1382 °F; 750 °C}} |
-| SK 015a    |           {{1454 °F; 790 °C}} |
-| SK 014a    |           {{1499 °F; 815 °C}} |
-| SK 013a    |           {{1535 °F; 835 °C}} |
-| SK 012a    |           {{1571 °F; 855 °C}} |
-| SK 011a    |           {{1616 °F; 880 °C}} |
-| SK 010a    |           {{1652 °F; 900 °C}} |
-| SK 09a     |           {{1688 °F; 920 °C}} |
-| SK 08a     |           {{1724 °F; 940 °C}} |
-| SK 07a     |           {{1760 °F; 960 °C}} |
-| SK 06a     |           {{1796 °F; 980 °C}} |
-| SK 05a     |          {{1832 °F; 1000 °C}} |
-| SK 04a     |          {{1868 °F; 1020 °C}} |
-| SK 03a     |          {{1904 °F; 1040 °C}} |
-| SK 02a     |          {{1940 °F; 1060 °C}} |
-| SK 01a     |          {{1976 °F; 1080 °C}} |
-| SK 1a      |          {{2012 °F; 1100 °C}} |
-| SK 2a      |          {{2048 °F; 1120 °C}} |
-| SK 3a      |          {{2084 °F; 1140 °C}} |
-| SK 4a      |          {{2120 °F; 1160 °C}} |
-| SK 5a      |          {{2156 °F; 1180 °C}} |
-| SK 6a      |          {{2192 °F; 1200 °C}} |
-| SK 7       |          {{2246 °F; 1230 °C}} |
-| SK 8       |          {{2282 °F; 1250 °C}} |
-| SK 9       |          {{2336 °F; 1280 °C}} |
-| SK 10      |          {{2372 °F; 1300 °C}} |
-| SK 11      |          {{2408 °F; 1320 °C}} |
-| SK 12      |          {{2462 °F; 1350 °C}} |
-| SK 13      |          {{2516 °F; 1380 °C}} |
-| SK 14      |          {{2570 °F; 1410 °C}} |
-| SK 15      |          {{2615 °F; 1435 °C}} |
-| SK 16      |          {{2660 °F; 1460 °C}} |
-| SK 17      |          {{2696 °F; 1480 °C}} |
-| SK 18      |          {{2732 °F; 1500 °C}} |
-| SK 19      |          {{2768 °F; 1520 °C}} |
-| SK 20      |          {{2786 °F; 1530 °C}} |
+| Cone    | Nominal (JIS) temperature |
+| ------- | ------------------------: |
+| SK 022  |       {{1112 °F; 600 °C}} |
+| SK 021  |       {{1202 °F; 650 °C}} |
+| SK 020  |       {{1238 °F; 670 °C}} |
+| SK 019  |       {{1274 °F; 690 °C}} |
+| SK 018  |       {{1310 °F; 710 °C}} |
+| SK 017  |       {{1346 °F; 730 °C}} |
+| SK 016  |       {{1382 °F; 750 °C}} |
+| SK 015a |       {{1454 °F; 790 °C}} |
+| SK 014a |       {{1499 °F; 815 °C}} |
+| SK 013a |       {{1535 °F; 835 °C}} |
+| SK 012a |       {{1571 °F; 855 °C}} |
+| SK 011a |       {{1616 °F; 880 °C}} |
+| SK 010a |       {{1652 °F; 900 °C}} |
+| SK 09a  |       {{1688 °F; 920 °C}} |
+| SK 08a  |       {{1724 °F; 940 °C}} |
+| SK 07a  |       {{1760 °F; 960 °C}} |
+| SK 06a  |       {{1796 °F; 980 °C}} |
+| SK 05a  |      {{1832 °F; 1000 °C}} |
+| SK 04a  |      {{1868 °F; 1020 °C}} |
+| SK 03a  |      {{1904 °F; 1040 °C}} |
+| SK 02a  |      {{1940 °F; 1060 °C}} |
+| SK 01a  |      {{1976 °F; 1080 °C}} |
+| SK 1a   |      {{2012 °F; 1100 °C}} |
+| SK 2a   |      {{2048 °F; 1120 °C}} |
+| SK 3a   |      {{2084 °F; 1140 °C}} |
+| SK 4a   |      {{2120 °F; 1160 °C}} |
+| SK 5a   |      {{2156 °F; 1180 °C}} |
+| SK 6a   |      {{2192 °F; 1200 °C}} |
+| SK 7    |      {{2246 °F; 1230 °C}} |
+| SK 8    |      {{2282 °F; 1250 °C}} |
+| SK 9    |      {{2336 °F; 1280 °C}} |
+| SK 10   |      {{2372 °F; 1300 °C}} |
+| SK 11   |      {{2408 °F; 1320 °C}} |
+| SK 12   |      {{2462 °F; 1350 °C}} |
+| SK 13   |      {{2516 °F; 1380 °C}} |
+| SK 14   |      {{2570 °F; 1410 °C}} |
+| SK 15   |      {{2615 °F; 1435 °C}} |
+| SK 16   |      {{2660 °F; 1460 °C}} |
+| SK 17   |      {{2696 °F; 1480 °C}} |
+| SK 18   |      {{2732 °F; 1500 °C}} |
+| SK 19   |      {{2768 °F; 1520 °C}} |
+| SK 20   |      {{2786 °F; 1530 °C}} |
 
-Visi skaičiai yra nominalieji (JIS): temperatūra, kurią standartas nurodo piroskopui, kaip išspausdinta Yuko Trading lentelėje. Lentelėje kaitinimo sparta nenurodyta. Standartas pateikia atskaitos temperatūras. Esant keramikams įprastai maždaug 100 °C/val. spartai, Kioto miesto institutas išmatavo, kad jo paties Kioto piroskopai sulinksta 40–70 °C žemesnėje temperatūroje, nei JIS nurodo tam pačiam numeriui; tokių SK piroskopų pagal JIS matavimų neradome. Pastatykite kontrolinį piroskopą ir palyginkite.
+Every figure is nominal (JIS): the temperature the standard gives for the cone, as printed in Yuko Trading's table. The table does not print a heating rate. The standard gives reference temperatures. At a potter's rate of about 100 °C/h, Kyoto's municipal institute measured its own Kyoto cones bending 47–79 °C cooler than the JIS figure for the same number; we found no such measurements for SK cones to JIS. Set a witness cone and compare.
 
-### Kioto piroskopai
+### Kyoto cones
 
-Kioto piroskopai (京都ゼーゲル), kuriuos gamino Kioto miesto institutas, nebegaminami: žiniasklaidos pranešimais, institutas jų gamybą nutraukė 2009 finansinių metų pabaigoje. Jie turi tuos pačius numerius kaip SK piroskopai pagal JIS, bet sulinksta žemesnėje temperatūroje: Kioto piroskopas dažniausiai sulinksta maždaug tokioje temperatūroje kaip dviem numeriais vėsesnis SK piroskopas pagal JIS. Kioto receptas, kuriame parašyta „SK 8“, gali turėti omenyje Kioto piroskopą. Institutas yra paskelbęs patarimų keramikams, pereinantiems nuo Kioto piroskopų prie Ortono piroskopų, ir vietoj savo Kioto SK 12 naudoja Ortono piroskopą 10; tai paties instituto pasirinkimas pagal jo matavimus esant 100 °C/val. spartai, ir jis netaikomas jokiam kitam piroskopui.
+Kyoto cones (京都ゼーゲル), made by Kyoto's municipal institute, are no longer made: news reports say the institute ended production at the close of fiscal 2009. They carry the same numbers as SK cones to JIS but bend cooler: a Kyoto cone bends at about the temperature of the SK cone to JIS two or three numbers lower. A recipe from Kyoto that says "SK 8" may mean a Kyoto cone. The institute has published advice for potters moving from Kyoto cones to Orton cones, and substitutes Orton cone 10 for its own Kyoto SK 12; that is the institute's choice from its own measurements at 100 °C/h, and applies to no other cone.
 
-### Japonijoje parduodami Ortono piroskopai
+### Orton cones sold in Japan
 
-Ortono savaime stovintys piroskopai Japonijoje parduodami pavadinimu 立つゼーゲル („stovintis Segeris“), nes jiems nereikia nei stovelio, nei laikiklio. Tai Ortono piroskopai, su Ortono numeriais ir Ortono lentele (aukščiau): degdami iki tokio piroskopo vadovaukitės tik jo Ortono numeriu, o SK ir Ortono piroskopus statykite atskiruose rinkiniuose, niekada ne tame pačiame.
+Orton self-supporting cones are sold in Japan under the name 立つゼーゲル ("standing Seger"), because they need no plaque or stand. They are Orton cones, with Orton's numbers and Orton's chart (above): fire to one only by its Orton number, and keep SK and Orton cones in separate packs, never in the same one.
 
-### SK piroskopų šaltiniai
+### Sources for SK cones
 
-- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (SK piroskopų lentelė, patikrinta 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
-- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (galioja, pakartotinai patvirtintas 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
-- [Kioto miesto pramonės technologijų ir kultūros institutas: į ką atkreipti dėmesį pereinant nuo Kioto piroskopų prie Ortono piroskopų](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
+- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (the SK table, checked 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
+- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (in force, reconfirmed 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
+- [Kyoto Municipal Institute of Industrial Technology and Culture: points to note when moving from Kyoto cones to Orton cones](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
 
 :::
 

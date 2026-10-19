@@ -472,7 +472,6 @@
     "expansionRises": "L-espansjoni kkalkulata tiegħu togħla minn {was} għal {now}.",
     "expansionRisesProbably": "Jekk il-glejż il-qadim bilkemm qabel mat-tafal tiegħek, dan x’aktarx se jagħmel ix-xegħir, xi drabi ġimgħat wara.",
     "expansionRisesMay": "Jekk il-glejż il-qadim bilkemm qabel mat-tafal tiegħek, dan jista’ jagħmel ix-xegħir, xi drabi ġimgħat wara.",
-    "expansionRisesFix": "Ix-xegħir idgħajjef il-biċċiet u mhuwiex rakkomandat fuq uċuħ li jmissu l-ikel. Jekk tibdel xi sodju u potassju b’flussi b’espansjoni aktar baxxa (boron, litju, manjesju jew kalċju), l-espansjoni tonqos; xi drabi jissuġġerixxu żieda ta’ silika, imma s-sorsi ma jaqblux.",
     "expansionFalls": "L-espansjoni kkalkulata tiegħu tinżel minn {was} għal {now}. Ftit aktar baxxa normalment tirreżisti x-xegħir aħjar.",
     "expansionFallsProbably": "Jekk tkun ħafna aktar baxxa, x’aktarx il-glejż jitqaxxar, bi qxur jaqtgħu mix-xfar u mit-truf.",
     "expansionFallsCan": "Jekk tkun ħafna aktar baxxa, il-glejż jista’ jitqaxxar, bi qxur jaqtgħu mix-xfar u mit-truf.",
@@ -904,7 +903,6 @@
     "foodSurface": "Għal wiċċ tal-ikel (glejż għal ġewwa)",
     "liner": {
       "note": "Is-sigurtà tal-ikel tiddependi mill-ħami ta’ dan il-glejż sal-kon li fih ġie ttestjat: glejż moħmi wisq ftit jista’ jirrilaxxa metalli.",
-      "range": "Mogħti għal firxa, għalhekk ittestjah fit-tarf l-aktar kiesaħ tal-firxa, fejn jdub l-inqas.",
       "untested": "Għad m’hemm l-ebda kon immarkat bħala ttestjat.",
       "test": "Test tal-laboratorju tar-rilaxx tal-metalli tal-biċċiet moħmija tiegħek stess biss juri jekk huwiex sikur għall-ikel."
     },

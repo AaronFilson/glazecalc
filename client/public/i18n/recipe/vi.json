@@ -472,7 +472,6 @@
     "expansionRises": "Độ giãn nở tính toán của nó tăng từ {was} lên {now}.",
     "expansionRisesProbably": "Nếu men cũ chỉ vừa khít với đất của bạn, thì men này nhiều khả năng sẽ rạn nứt men, đôi khi vài tuần sau.",
     "expansionRisesMay": "Nếu men cũ chỉ vừa khít với đất của bạn, thì men này có thể rạn nứt men, đôi khi vài tuần sau.",
-    "expansionRisesFix": "Rạn nứt men làm yếu sản phẩm và không được khuyên dùng trên bề mặt tiếp xúc thực phẩm. Thay một phần natri và kali bằng các chất trợ chảy giãn nở thấp hơn (bo, liti, magie hoặc canxi) sẽ hạ độ giãn nở xuống; đôi khi người ta gợi ý thêm silica, nhưng các nguồn không đồng ý với nhau.",
     "expansionFalls": "Độ giãn nở tính toán của nó giảm từ {was} xuống {now}. Thấp hơn một chút thường chống rạn nứt men tốt hơn.",
     "expansionFallsProbably": "Thấp hơn nhiều thì nhiều khả năng sẽ bong tróc men, với các mảnh sắc văng khỏi mép và cạnh.",
     "expansionFallsCan": "Thấp hơn nhiều thì có thể bong tróc men, với các mảnh sắc văng khỏi mép và cạnh.",
@@ -904,7 +903,6 @@
     "foodSurface": "Cho bề mặt tiếp xúc thực phẩm (men phủ mặt trong)",
     "liner": {
       "note": "An toàn thực phẩm phụ thuộc vào việc nung men này tới đúng côn đã thử: men nung chưa đủ có thể thôi nhiễm.",
-      "range": "Men được nêu cho một khoảng, nên hãy thử ở đầu thấp của khoảng, nơi men chảy ít nhất.",
       "untested": "Chưa có côn nào được đánh dấu là đã thử.",
       "test": "Chỉ một thử nghiệm thôi nhiễm trên chính các sản phẩm bạn đã nung mới cho biết men này có an toàn với thực phẩm hay không."
     },

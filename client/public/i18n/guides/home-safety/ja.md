@@ -149,38 +149,38 @@ Pet Poison Helpline は、「鉛はすべての動物種にとって有毒です
 
 ペットが工房の何かを食べたり飲んだりしたかもしれないとき、または上のような症状が見られるときは、原料名とペットの体重を手元に用意して、獣医師か動物の中毒相談窓口（上の表を参照）に電話してください。
 
-## 窯 {#the-kiln}
+## The kiln {#the-kiln lang=en}
 
-### 外側はやけどするほど熱くなります
+### The outside gets hot enough to burn
 
-英国の学校向けのリスク評価は、窯の外側は「160 °C、あるいはそれ以上に達することがある」（約320 °F）としており、学校向けの窯の手引きは、金属の帯が最高460 °F（約240 °C）になったと報告しています。窯メーカーの Skutt は、子どもやペットが入れないように鍵をかけられる窯部屋を勧めています。部屋に鍵をかけられない場合は、窯用の安全スクリーンのような柵を設けるよう、その学校向けの手引きは勧めています。
+A UK schools risk assessment says a kiln's outside "can reach 160 °C and possibly more" (about 320 °F), and a school kiln guide reports metal bands at up to 460 °F (about 240 °C). Skutt, a kiln maker, recommends a kiln room that can be locked against children and pets. Where a room cannot be locked, the school guide suggests a barrier such as a kiln safety screen.
 
-小さな子どもやペットは、警告表示を理解できません。窯を焚いている間と冷めるまでの間は、鍵をかけたドアか柵の向こうに子どもやペットを置き、ほかの人のために警告表示を掲げることをおすすめします。
+Small children and pets cannot understand a warning sign. We suggest keeping them behind a locked door or a barrier while the kiln fires and while it cools, and posting a warning sign for everyone else.
 
-### 周りの空間
+### Space around it
 
-離隔距離{{en: clearance}}については資料によって異なります。Rio Grande は、壁や燃えるものから少なくとも12 インチ（30 cm）としています。L&L は、すべての壁から18 インチ（46 cm）離すことを強く勧めており、同社が引用する建築基準は、燃える壁から3 フィート（0.9 m）を求めています。お使いの窯の取扱説明書と地域の火災予防条例に従ってください。わからないときは、どの壁からも18 インチ、燃えるものからは3 フィート離してください。ガレージでは、車、燃料、塗料を十分に離してください。
+Sources disagree on clearance. Rio Grande says at least 12 inches (30 cm) from walls and anything combustible. L&L strongly recommends 18 inches (46 cm) to all walls, and the building code it cites asks for 3 feet (0.9 m) from combustible walls. Follow your kiln's manual and local fire code; if you are unsure, allow 18 inches from any wall and 3 feet from anything that can burn. In a garage, keep cars, fuel and paint well away.
 
-### 電源
+### Power
 
-Rio Grande は、正しく接地されたコンセントのある**専用回路**（ほかに何もつながない回路）を勧めています。延長コードは使わないことをおすすめします。焼成と焼成の間は、子どもが窯のスイッチを入れられないように、窯のブレーカーか電源の開閉器を切るか、プラグを抜いておいてください。
+Rio Grande recommends a **dedicated circuit** (one that powers nothing else) with a properly grounded outlet. We suggest no extension cord. Between firings, switch off the kiln's breaker or disconnect switch, or unplug it, so a child cannot start it.
 
-### 焼成の終わりには立ち会う
+### Be there when the firing ends
 
-**キルンシッター**{{en: kiln sitter}}は、多くの手動の窯に付いている機械式のスイッチです。焼成の終わりに小さなコーン{{en: cone}}が曲がり、スイッチが切れます。その取扱説明書には、キルンシッターは「フェイルセーフの停止装置として働くことを意図したものでは**ない**」と書かれています。Rio Grande は、焼成中の窯を決して放置しないように、「特に停止予定時刻が近いときは」と述べています。ですから、焼成中、とりわけ終わり近くは、窯の近くにいて様子を確認してください。焼成するのは、それができる大人が家にいて起きているときだけにしてください。また、窯が停止したことを確認し、窯部屋には ABC 消火器を置いてください。キルンシッター、コントローラー、焼成スケジュールのしくみについては、「[基本の窯焚き](/guides/firing)」を参照してください。
+A **kiln sitter** is the mechanical switch on many manual kilns: a small cone bends at the end of the firing and trips the switch off. Its manual says it "is NOT intended to perform as a fail-safe shut-off device." Rio Grande says never to leave a firing kiln unattended, "especially near the expected shut-off time". So stay nearby and check the kiln while it fires, above all near the end; fire only when an adult will be home and awake through the whole firing, check that it has switched off, and keep an ABC fire extinguisher in the kiln room. For how sitters, controllers and schedules work, see [Firing a basic kiln](/guides/firing).
 
-### 窯から出るガスと一酸化炭素
+### Fumes and carbon monoxide
 
-焼成ではガスが出るので、窯の排気を屋外に出してください。方法は「[安全な調合と換気](/guides/safe-mixing)」で説明しています。家とつながったガレージにある窯では、つながっているドアから家の中にガスが入らないように排気する必要があります。窯を焚くときは、いつも鳥を離れた部屋に入れておいてください。
+Firing gives off fumes, so vent the kiln to the outdoors; [Safe mixing and ventilation](/guides/safe-mixing) explains how. A kiln in an attached garage needs venting that keeps fumes from reaching the house through the connecting door. Keep birds in a far room whenever the kiln fires.
 
-**一酸化炭素**（CO）は、目に見えず、においもない有毒なガスです。ある大学の窯の安全に関する資料は、ガス窯には一酸化炭素警報器を必須としています。電気窯については意見が分かれますが、有機物（粘土に含まれるもの、紙やろうなど）が燃えると一酸化炭素が出ることがあります。どの窯でも、窯部屋と隣の部屋に一酸化炭素警報器を付けるのは、手ごろで賢明な対策だと考えます。
+**Carbon monoxide** (CO) is a poisonous gas you cannot see or smell. A university kiln safety sheet requires CO alarms with gas kilns. Views differ for electric kilns, but burning off organic matter (in clay, or things like paper or wax) can make CO. We think a CO alarm in the kiln room and the rooms next to it is a sensible, inexpensive step for any kiln.
 
-### のぞき穴と目
+### Peepholes and eyes
 
-目に見えない赤外線は「752°F (400°C) から始まり」、Ceramic Arts Network は、この温度を超える窯の中をのぞくときは常に目の保護具を着けるべきだとしています。赤外線は目の水晶体を傷つけて白内障の原因になることがあり、長く見つめると網膜を損傷することがあります。サングラスやジジム（ディディミウム）ガラスのメガネでは赤外線を遮れません。
+Infrared light, which you cannot see, "starts at 752°F (400°C)", and the Ceramic Arts Network says looking into a kiln above this should always be done with eye protection. Infrared can damage the lens of the eye and lead to cataracts, and long gazing can injure the retina. Sunglasses and didymium glasses do not block it.
 
 > [!WARNING]
-> 子どもは窯の中を一切のぞくべきではありません。光るのぞき穴は子どもを引きつけますし、子どもは保護メガネを確実にかけたままではいられないので、窯が熱い間は近づけないでください。大人は、赤外線を遮る溶接用遮光メガネを通して、短時間だけのぞくべきです。資料は遮光度番号1.7〜5を勧めています。遮光度番号3が妥当な選択で、のぞいた後に斑点が見えるならもっと濃いものにしてください。
+> Children should not look into a kiln at all. A glowing peephole draws them, and they will not reliably keep protective glasses on, so keep them away while the kiln is hot. Adults should look only briefly, through IR-rated welding glasses. Sources recommend shades from 1.7 to 5; shade 3 is a sensible choice, darker if you see spots afterward.
 
 ## 手作りの器を家族の食卓で使う {#handmade-ware}
 

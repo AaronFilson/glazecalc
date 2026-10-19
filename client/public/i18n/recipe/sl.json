@@ -472,7 +472,6 @@
     "expansionRises": "Izračunano toplotno raztezanje naraste od {was} do {now}.",
     "expansionRisesProbably": "Če se je stara glazura komaj še ujemala z vašo glino, bodo v tej verjetno nastale lasaste razpoke, včasih šele čez nekaj tednov.",
     "expansionRisesMay": "Če se je stara glazura komaj še ujemala z vašo glino, lahko v tej nastanejo lasaste razpoke, včasih šele čez nekaj tednov.",
-    "expansionRisesFix": "Lasaste razpoke oslabijo izdelke in na površinah v stiku s hrano niso priporočljive. Če del natrija in kalija zamenjate s talili z manjšim raztezkom (bor, litij, magnezij ali kalcij), se toplotni raztezek zniža; včasih predlagajo dodajanje kremena, a se viri ne ujemajo.",
     "expansionFalls": "Izračunano toplotno raztezanje se zmanjša od {was} do {now}. Nekoliko nižje navadno bolje prepreči lasaste razpoke.",
     "expansionFallsProbably": "Pri precej nižjem se bo glazura verjetno luščila, z ostrimi drobci, ki odletijo z ustij in robov.",
     "expansionFallsCan": "Pri precej nižjem se glazura lahko lušči, z ostrimi drobci, ki odletijo z ustij in robov.",
@@ -904,7 +903,6 @@
     "foodSurface": "Za površino v stiku z živili (notranja glazura)",
     "liner": {
       "note": "Primernost za stik z živili je odvisna od tega, ali to glazuro žgete do stožca, pri katerem je bila preizkušena: premalo žgana glazura lahko sprošča kovine.",
-      "range": "Podana je kot razpon, zato jo preizkusite na spodnjem koncu razpona, kjer se najmanj tali.",
       "untested": "Noben stožec še ni označen kot preizkušen.",
       "test": "Le preskus sproščanja kovin iz vaših lastnih žganih izdelkov pokaže, ali je primerna za stik z živili."
     },

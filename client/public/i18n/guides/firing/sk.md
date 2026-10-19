@@ -165,69 +165,69 @@ Počítajte s rozdielmi: Orton uvádza, že „Zvyčajne uvidíte medzi hornou a
 
 :::orton
 
-## Vypínač Kiln-Sitter {#kiln-sitter}
+## The kiln sitter {#kiln-sitter lang=en}
 
-**Kiln-Sitter** je mechanický vypínač na vonkajšej strane mnohých jednoduchých a starších pecí, ktorý pec vypne, keď sa ohne malý kužeľ{{en: cone}}. Najznámejší je Dawson Kiln-Sitter. Uľahčuje výpal, ale je to pomôcka, nie bezpečnostné zariadenie.
+A **kiln sitter** is the mechanical switch, on the outside of many basic and older kilns, that turns the kiln off when a small cone bends. The best known is the Dawson Kiln-Sitter. It makes firing easier, but it is a convenience, not a safety device.
 
-### Ako funguje
+### How it works
 
-Do pece vedie porcelánová trubica. Na jej konci leží naprieč dvoma kovovými podperami malý kužeľ alebo tyčinka, pod **snímacou tyčou**, ktorá sa kýve ako hojdačka. Mimo pece drží druhý koniec snímacej tyče malou západkou závažie. Keď kužeľ zmäkne a ohne sa asi na 90°, snímacia tyč klesne dosť na to, aby uvoľnila závažie, závažie spadne a prívod prúdu do vykurovacích špirál sa preruší.
+A porcelain tube reaches into the kiln. At its end, a small cone or a bar lies across two metal supports, under a **sensing rod** that pivots like a seesaw. Outside the kiln, the other end of the rod holds up a weight by a small claw. When the cone softens and bends to about 90°, the rod drops far enough to release the weight, the weight falls, and the power to the elements is cut.
 
-Malé kužele a tyčinky „poskytujú rovnocenné tepelné spracovanie“. Orton uvádza, že mnohí začiatočníci volia tyčinky, pretože vďaka ich rovnomernému tvaru ich ľahko uložia zakaždým rovnako. Malý kužeľ sa zužuje, takže záleží na tom, ako leží: ak je pod snímacou tyčou jeho tenšia časť, pec sa vypne pri nižšej teplote, a ak hrubšia, pri vyššej, s posunom „až o 1/2 kužeľa“.
+Small cones and bars "give equivalent heat treatment". Orton notes that many beginners choose bars, because their even shape makes it easy to place them the same way every time. A small cone tapers, so where it sits matters: with its thin part under the rod the kiln shuts off cooler, and with its thick part hotter, a shift of "as much as 1/2 cone".
 
-### Ktorý kužeľ dať do vypínača
+### Which cone goes in the sitter
 
-Zdroje sa nezhodujú. Firma Dawson, ktorá Kiln-Sitter vyrábala, radí použiť rovnaké číslo ako cieľový kužeľ na doske a o číslo teplejší kužeľ len vtedy, ak kužeľ na doske zostane neohnutý. L&L radí použiť kužeľ o jedno číslo teplejší ako kužele na doske, pretože Kiln-Sitter je pri stene a pri vykurovacích špirálach, dostáva viac tepla a má sklon vypínať priskoro. O princípe rozhoduje Orton: „Konečným sudcom výpalu je kužeľ na doske, nie kužeľ ani tyčinka vo vypínači Kiln-Sitter.“
-
-> [!NOTE]
-> Odporúčame začať takto: dajte do vypínača malý kužeľ s rovnakým číslom, ako je váš cieľ, a na dosku sadu troch kužeľov{{en: cone pack}}. Ak je cieľový kužeľ na doske po vypnutí pece nedostatočne ohnutý, nabudúce dajte do vypínača kužeľ o číslo teplejší alebo pod snímaciu tyč umiestnite hrubšiu časť kužeľa. Ak je ohnutý príliš, urobte opak.
-
-### Nastavenie a kontrola pred každým výpalom
-
-Postup firmy Dawson, ktorý zároveň slúži ako kontrola pred každým výpalom:
-
-1. Vypnite všetky prepínače. Skontrolujte, či sa snímacia tyč voľne pohybuje, je v strede trubice a nie je ohnutá ani skorodovaná. Ak sa pohybuje ťažko, Dawson radí vymeniť celú zostavu trubice.
-2. Na podpery kužeľa a na snímaciu tyč tam, kde sa dotýka kužeľa, natrite štetcom tenkú vrstvu **ochranného náteru** na vysoký výpal (náteru, ktorý bráni prilepeniu roztaveného materiálu). Nikdy nenanášajte náter na kužeľ ani na porcelánovú trubicu.
-3. Dosky a výrobky nakladajte aspoň 1 palec (25 mm) nad trubicu alebo pod ňu, aby sa jej nič nemohlo dotknúť, spadnúť na ňu ani ju zablokovať.
-4. Nadvihnite závažie, pritlačte západku nadol na spúšť a položte kužeľ alebo tyčinku naplocho na podpery ku kovovému stupienku, ako ukazuje návod na obsluhu vášho vypínača, zakaždým rovnako. Pred zatvorením veka to znova skontrolujte: „NESPRÁVNE ULOŽENÝ KUŽEĽ ALEBO TYČINKA MÔŽE SPÔSOBIŤ PREPÁLENIE.“
-5. Nastavte časovú poistku a zatlačte tlačidlo, kým sa nezaistí. Pec udržujte vo vodorovnej polohe a priestor pod závažím voľný, aby závažie mohlo spadnúť.
-
-### Časová poistka
-
-Mnohé vypínače Kiln-Sitter vrátane modelov LT od firmy Dawson majú **časovú poistku** (limit timer): hodiny, ktoré pec vypnú po nastavenom čase, ako zálohu „pre prípad, že KILN-SITTER zlyhá“. Vždy by mala byť nastavená na dlhší čas, než má výpal podľa očakávania trvať. Zdroje určujú rezervu rôzne:
-
-Table: Na aký čas nastaviť časovú poistku
-Label: Nastavenie časovej poistky
-
-| Zdroj     | Nastavenie                                                                                                                              |
-| --------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| Dawson    | O ½ hodiny dlhšie ako očakávaný čas výpalu, kým pec nepoznáte, neskôr len o ¼ hodiny dlhšie; nikdy to nenastavujte na viac ako 20 hodín |
-| L&L       | Prvýkrát veľmi vysoko, pričom si zaznamenáte, ako dlho výpal trvá; potom asi o 1 hodinu dlhšie                                          |
-| Bracker's | O 30 minút až 1 hodinu dlhšie ako čas výpalu                                                                                            |
+Sources disagree. Dawson, who made the sitter, says to use the same number as the firing cone on the shelf, and to go one number hotter only if the shelf cone stays unbent. L&L says to use one number hotter than the shelf cones, because the sitter sits near the wall and the elements, gets more heat, and tends to shut off early. Orton settles the principle: "The shelf cone is the final judge of the firing process, not the Kiln-Sitter cone or bar."
 
 > [!NOTE]
-> Odporúčame začať takto: prvýkrát nastavte čas veľkoryso (v rámci 20 hodín na stupnici), potom o ½ až 1 hodinu dlhšie, ako je čas, ktorý ste zaznamenali. Časová poistka vám prezradí aj to, ako dlho výpal trval: nastavená na 7 a zastavená na 1 znamená 6 hodín.
+> Our starting point: put a small cone of the same number as your target in the sitter, with a cone pack on the shelf. If the shelf firing cone is under-bent when the kiln shuts off, go one number hotter in the sitter next time, or set the thicker part of the cone under the rod. If it is over-bent, do the opposite.
 
-### Keď vypne priskoro alebo neskoro
+### Setting it up, and checks before every firing
 
-Po každom výpale odčítajte kužeľ z vypínača spolu s kužeľmi na doske.
+Dawson's procedure, which doubles as a check before every firing:
 
-Table: Čo ukáže vypínač po výpale
-Label: Problémy s vypínačom Kiln-Sitter
+1. Turn all the switches off. Check that the sensing rod moves freely, sits centered in the tube and is not bent or corroded. If it is sluggish, Dawson says to replace the tube assembly.
+2. Brush a thin coat of high-fire **kiln wash** (a coating that stops melted material sticking) onto the cone supports and the rod where it touches the cone. Never put wash on the cone or the porcelain tube.
+3. Load shelves and ware at least 1 in (25 mm) above or below the tube, so nothing can touch, fall against or block it.
+4. Lift the weight, press the claw down onto the trigger, and lay the cone or bar flat on the supports against the metal step, as your sitter's manual shows, the same way every time. Check it again before closing the lid: "AN IMPROPERLY PLACED CONE OR BAR COULD CAUSE AN OVERFIRING."
+5. Set the limit timer and push in the plunger until it locks. Keep the kiln level and the space under the weight clear, so the weight can fall.
 
-| Čo vidíte                                                        | Pravdepodobná príčina                                                                                                 | Čo robiť                                                                         |
-| ---------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
-| Vypínač vypol pec, cieľový kužeľ na doske je nedostatočne ohnutý | Vo vypínači bolo teplejšie ako na doske (je pri stene)                                                                | Do vypínača kužeľ o číslo teplejší alebo pod snímaciu tyč hrubšiu časť           |
-| Kužeľ vo vypínači sa prehol ďaleko za 90°                        | Teplota v peci na konci stúpala príliš rýchlo                                                                         | Znížte nastavenie prepínačov, aby teplota stúpala pomalšie (Dawson)              |
-| Kužeľ vo vypínači sa neohol alebo sa roztavil na kvapku          | Samotný vypínač: zlé nastavenie, ohnutá alebo skorodovaná snímacia tyč alebo niečo zaseknuté v trubici či opreté o ňu | Pred ďalším výpalom vypínač skontrolujte a nastavte podľa jeho návodu na obsluhu |
-| Zakaždým priskoro alebo neskoro                                  | Nesprávne nastavenie alebo opotrebovaná snímacia tyč                                                                  | Skontrolujte nastavovacou mierkou; posuňte spúšťaciu doštičku                    |
+### The limit timer
 
-Na kontrolu nastavenia používa Dawson **nastavovaciu mierku**, ktorá podrží snímaciu tyč tam, kde by ju nechal úplne ohnutý kužeľ; pri západke má potom byť „vôľa 1/16 palca“ (asi 1,6 mm). Kontrolujte to každých 30 výpalov. Pravidlo časopisu Ceramics Monthly: ak pec vypína priskoro, posuňte spúšťaciu doštičku mierne nahor; ak neskoro, mierne nadol. Nech vypínač robí čokoľvek, „Vždy dôverujte veľkým kontrolným kužeľom{{en: witness cones}} viac ako malým kužeľom vo vypínači.“
+Many sitters, including Dawson's LT models, have a **limit timer**: a clock that turns the kiln off after a set time, as a backup "in case the KILN-SITTER fails". It should always be set longer than the firing is expected to take. Sources set the margin differently:
+
+Table: How long to set the limit timer
+Label: Limit timer settings
+
+| Source    | Setting                                                                                                                |
+| --------- | ---------------------------------------------------------------------------------------------------------------------- |
+| Dawson    | ½ hour longer than the expected firing time until you know the kiln, later ¼ hour longer; never set it beyond 20 hours |
+| L&L       | Very high the first time, noting how long the firing takes; after that, about 1 hour longer                            |
+| Bracker's | 30 minutes to 1 hour longer than the firing time                                                                       |
+
+> [!NOTE]
+> Our starting point: generous the first time (within the dial's 20 hours), then ½ to 1 hour longer than the time you recorded. The timer also tells you how long a firing took: set at 7 and ending at 1 means 6 hours.
+
+### When it shuts off early or late
+
+After each firing, read the sitter cone beside the shelf cones.
+
+Table: Reading the sitter after a firing
+Label: Kiln sitter problems
+
+| What you see                                    | Likely cause                                                                                           | What to do                                                       |
+| ----------------------------------------------- | ------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------- |
+| Sitter tripped, shelf firing cone under-bent    | The sitter ran hotter than the shelf (it sits near the wall)                                           | One cone hotter in the sitter, or the thicker part under the rod |
+| Sitter cone sagged well past 90°                | The kiln climbed too fast near the end                                                                 | Lower the switch settings, so the climb is slower (Dawson)       |
+| Sitter cone did not bend, or melted into a blob | The sitter itself: poor adjustment, a bent or corroded rod, or something lodged in or against the tube | Check and adjust the sitter by its manual before firing again    |
+| Early or late every time                        | Out of adjustment, or a worn rod                                                                       | Check with the firing gauge; move the trigger plate              |
+
+To check the adjustment, Dawson uses a **firing gauge** that holds the rod where a fully bent cone would leave it; there should then be "1/16th-inch clearance" (about 1.6 mm) at the claw. Check it every 30 firings. Ceramics Monthly's rule: if the kiln shuts off early, move the trigger plate up slightly; if late, move it down slightly. Whatever the sitter does, "Always trust large witness cones over small sitter cones."
 
 > [!WARNING]
-> **Kiln-Sitter nie je bezpečnostné zariadenie.** Návod na obsluhu od firmy Dawson uvádza, že „NIE JE určený na to, aby slúžil ako vypínacie zariadenie bezpečné pri poruche, a pec by NEMALA zostať bez dozoru dlhšie, ako je odhadovaný čas výpalu“. Aj taká obyčajná vec, ako je surový výrobok{{en: greenware}}, ktorý spadne na trubicu, „môže spôsobiť prepálenie“. Buďte pri peci a skontrolujte ju, keď by mal výpal končiť, a nikdy v nej nevypaľujte nad niečím horľavým ani v jeho blízkosti, napríklad nad drevenou podlahou alebo kobercom.
+> **A kiln sitter is not a safety device.** Dawson's manual says it "is NOT intended to perform as a fail-safe shut-off device and your kiln should NOT be left unattended beyond the estimated firing time." Something as simple as greenware falling against the tube "might cause an over-firing". Be there to check the kiln when it should be finishing, and never fire it over or near anything that burns, such as a wood floor or carpet.
 
-Kiln-Sitter je určený na výpaly „až po kužeľ 8 vrátane“. Sám nedokáže udržať teplotu ani pomaly chladiť. S praxou a záznamami sa však môžete „stať regulátorom“, ako hovorí Digitalfire: sledovať kužele a ručne otáčať prepínačmi.
+The sitter is built for firings "up to and including Cone 8". It cannot hold a temperature or cool slowly by itself. With practice and a log, though, you can "become the controller", as Digitalfire puts it: watch the cones and turn the switches by hand.
 
 :::
 
@@ -281,92 +281,92 @@ Label: Úprava ďalšieho výpalu
 
 :::sk
 
-## Výpal podľa kužeľov SK {#sk-cones}
+## Firing to SK cones {#sk-cones lang=en}
 
-Kužele SK sú pyrometrické kužele vyrobené podľa japonskej normy JIS R 8101, ktoré v Japonsku predávajú obchodníci, ako je Yuko Trading (有恒商事). Ako každý kužeľ, aj kužeľ SK meria tepelnú prácu{{en: heatwork}}, nie len teplotu: zmäkne a ohne sa, keď výrobky dostali dosť tepla, a vy odčítate, ako ďaleko sa ohol. Kontrolné kužele{{en: witness cone}}, odčítanie toho, ako ďaleko sa kužeľ ohol, a výdrže{{en: hold}} pri ňom fungujú rovnako ako pri každom kuželi. Táto časť pri každom kuželi uvádza jeho systém a nikdy neprevádza číslo SK na číslo iného systému: čísla rôznych radov kužeľov nie sú zameniteľné.
+SK cones are the pyrometric cones made to Japan's standard, JIS R 8101, and sold in Japan by dealers such as Yuko Trading (有恒商事). Like any cone, an SK cone measures heatwork, not temperature alone: it softens and bends over when the ware has had enough heat, and you read how far it bent. Witness cones, reading how far a cone has bent, and holds work for it as for any cone. This section names each cone's system, and never turns an SK number into another system's number: the numbers of different cone series are not interchangeable.
 
 > [!NOTE]
-> Pred číslo vždy píšte „SK“. Mnohé staršie japonské recepty uvádzajú len „SK 8“ alebo „SK 9“ a nehovoria, čí kužeľ to je. Kjótske kužele a kužele SK podľa JIS majú rovnaké čísla, ale ohýbajú sa pri rôznych teplotách (pozri Kjótske kužele nižšie).
+> Always write "SK" before the number. Many older Japanese recipes say only "SK 8" or "SK 9" without saying whose cone. Kyoto cones and SK cones to JIS carry the same numbers but bend at different temperatures (see Kyoto cones, below).
 
-### Veľké kužele
+### The large cones
 
-Norma pozná dve veľkosti. Veľké kužele (大型コーン) sa „používajú hlavne na meranie stupňa výpalu“ (焼度測定), a to je to, čo keramikár potrebuje. Malé kužele (SK 26 až SK 42, na hornom konci radu) sa „používajú hlavne na skúšky žiaruvzdornosti“ a tu sa nimi nezaoberáme. Tabuľka nižšie uvádza veľké kužele od SK 022 po SK 20.
+The standard has two sizes. Large cones (大型コーン) are "mainly used for measuring the degree of firing" (焼度測定), which is what a potter wants. Small cones (SK 26 to SK 42, at the top of the range) are "mainly used for refractoriness tests" and are not covered here. The table below gives the large cones from SK 022 to SK 20.
 
-Čísla tu idú od SK 022, najchladnejšieho, po SK 20. Medzi SK 015 a SK 6 majú vytlačené čísla písmeno „a“ (SK 015a, SK 6a); píšte ich tak, ako sú vytlačené.
+The numbers run from SK 022, the coolest, up to SK 20 here. Between SK 015 and SK 6 the printed numbers carry an "a" (SK 015a, SK 6a); write it as printed.
 
-### Osadenie veľkých kužeľov
+### Setting large cones
 
-Každý veľký kužeľ zasaďte do držiaka alebo do hrudky hliny, so sklonom k svojej ohybovej strane. Ako pri každom kuželi, výšku aj sklon dodržiavajte od výpalu k výpalu rovnaké, pretože rozdiel v ktoromkoľvek z nich mení, ako ďaleko sa kužeľ ohne. Tri kužele sady{{en: cone pack}} (pozri nižšie) postavte spolu hlboko v peci blízko stredu vsádzky, kde dostávajú rovnaké teplo ako výrobky, no tam, kde ich uvidíte cez kontrolný otvor; pred zatvorením pece overte, či vidíte všetky tri.
+Set each large cone in a plaque or a pat of clay, leaning toward its bending face. As with any cone, keep the height and the lean the same from firing to firing, because a difference in either changes how far it bends. Set the three cones of the pack (below) together, deep in the kiln near the middle of the load, where they get the heat the ware gets, yet where you can see them through a peephole; before you close the kiln, check that you can see all three.
 
-### Vodiaci, cieľový a poistný kužeľ
+### Guide, firing and guard cones
 
-Kužele sa predávajú a stavajú po troch: vodiaci kužeľ, cieľový kužeľ a poistný kužeľ. Ako cieľový vezmite číslo SK, ktoré uvádza váš recept alebo hlina, ako vodiaci najbližší chladnejší kužeľ (o riadok vyššie v tabuľke) a ako poistný najbližší teplejší. Keď sa vodiaci kužeľ začne ohýbať, koniec je blízko; keď sa ohne poistný kužeľ, výpal zašiel príliš ďaleko.
+Cones are sold and set as three: a guide cone, a firing cone at the target, and a guard cone. Take the firing cone as the SK number your recipe or clay names, the guide cone as the next cooler cone (one row up in the table) and the guard cone as the next hotter one. When the guide cone starts to bend, the end is near; when the guard cone bends, the firing has gone too far.
 
-### Tabuľka kužeľov SK
+### The SK chart
 
-Table: Veľké kužele SK (JIS R 8101): menovitá teplota (JIS) každého z nich
-Label: Tabuľka kužeľov SK
+Table: SK large cones (JIS R 8101): the nominal (JIS) temperature of each
+Label: SK chart
 
-| Kužeľ   | Menovitá teplota (JIS) |
-| ------- | ---------------------: |
-| SK 022  |    {{1112 °F; 600 °C}} |
-| SK 021  |    {{1202 °F; 650 °C}} |
-| SK 020  |    {{1238 °F; 670 °C}} |
-| SK 019  |    {{1274 °F; 690 °C}} |
-| SK 018  |    {{1310 °F; 710 °C}} |
-| SK 017  |    {{1346 °F; 730 °C}} |
-| SK 016  |    {{1382 °F; 750 °C}} |
-| SK 015a |    {{1454 °F; 790 °C}} |
-| SK 014a |    {{1499 °F; 815 °C}} |
-| SK 013a |    {{1535 °F; 835 °C}} |
-| SK 012a |    {{1571 °F; 855 °C}} |
-| SK 011a |    {{1616 °F; 880 °C}} |
-| SK 010a |    {{1652 °F; 900 °C}} |
-| SK 09a  |    {{1688 °F; 920 °C}} |
-| SK 08a  |    {{1724 °F; 940 °C}} |
-| SK 07a  |    {{1760 °F; 960 °C}} |
-| SK 06a  |    {{1796 °F; 980 °C}} |
-| SK 05a  |   {{1832 °F; 1000 °C}} |
-| SK 04a  |   {{1868 °F; 1020 °C}} |
-| SK 03a  |   {{1904 °F; 1040 °C}} |
-| SK 02a  |   {{1940 °F; 1060 °C}} |
-| SK 01a  |   {{1976 °F; 1080 °C}} |
-| SK 1a   |   {{2012 °F; 1100 °C}} |
-| SK 2a   |   {{2048 °F; 1120 °C}} |
-| SK 3a   |   {{2084 °F; 1140 °C}} |
-| SK 4a   |   {{2120 °F; 1160 °C}} |
-| SK 5a   |   {{2156 °F; 1180 °C}} |
-| SK 6a   |   {{2192 °F; 1200 °C}} |
-| SK 7    |   {{2246 °F; 1230 °C}} |
-| SK 8    |   {{2282 °F; 1250 °C}} |
-| SK 9    |   {{2336 °F; 1280 °C}} |
-| SK 10   |   {{2372 °F; 1300 °C}} |
-| SK 11   |   {{2408 °F; 1320 °C}} |
-| SK 12   |   {{2462 °F; 1350 °C}} |
-| SK 13   |   {{2516 °F; 1380 °C}} |
-| SK 14   |   {{2570 °F; 1410 °C}} |
-| SK 15   |   {{2615 °F; 1435 °C}} |
-| SK 16   |   {{2660 °F; 1460 °C}} |
-| SK 17   |   {{2696 °F; 1480 °C}} |
-| SK 18   |   {{2732 °F; 1500 °C}} |
-| SK 19   |   {{2768 °F; 1520 °C}} |
-| SK 20   |   {{2786 °F; 1530 °C}} |
+| Cone    | Nominal (JIS) temperature |
+| ------- | ------------------------: |
+| SK 022  |       {{1112 °F; 600 °C}} |
+| SK 021  |       {{1202 °F; 650 °C}} |
+| SK 020  |       {{1238 °F; 670 °C}} |
+| SK 019  |       {{1274 °F; 690 °C}} |
+| SK 018  |       {{1310 °F; 710 °C}} |
+| SK 017  |       {{1346 °F; 730 °C}} |
+| SK 016  |       {{1382 °F; 750 °C}} |
+| SK 015a |       {{1454 °F; 790 °C}} |
+| SK 014a |       {{1499 °F; 815 °C}} |
+| SK 013a |       {{1535 °F; 835 °C}} |
+| SK 012a |       {{1571 °F; 855 °C}} |
+| SK 011a |       {{1616 °F; 880 °C}} |
+| SK 010a |       {{1652 °F; 900 °C}} |
+| SK 09a  |       {{1688 °F; 920 °C}} |
+| SK 08a  |       {{1724 °F; 940 °C}} |
+| SK 07a  |       {{1760 °F; 960 °C}} |
+| SK 06a  |       {{1796 °F; 980 °C}} |
+| SK 05a  |      {{1832 °F; 1000 °C}} |
+| SK 04a  |      {{1868 °F; 1020 °C}} |
+| SK 03a  |      {{1904 °F; 1040 °C}} |
+| SK 02a  |      {{1940 °F; 1060 °C}} |
+| SK 01a  |      {{1976 °F; 1080 °C}} |
+| SK 1a   |      {{2012 °F; 1100 °C}} |
+| SK 2a   |      {{2048 °F; 1120 °C}} |
+| SK 3a   |      {{2084 °F; 1140 °C}} |
+| SK 4a   |      {{2120 °F; 1160 °C}} |
+| SK 5a   |      {{2156 °F; 1180 °C}} |
+| SK 6a   |      {{2192 °F; 1200 °C}} |
+| SK 7    |      {{2246 °F; 1230 °C}} |
+| SK 8    |      {{2282 °F; 1250 °C}} |
+| SK 9    |      {{2336 °F; 1280 °C}} |
+| SK 10   |      {{2372 °F; 1300 °C}} |
+| SK 11   |      {{2408 °F; 1320 °C}} |
+| SK 12   |      {{2462 °F; 1350 °C}} |
+| SK 13   |      {{2516 °F; 1380 °C}} |
+| SK 14   |      {{2570 °F; 1410 °C}} |
+| SK 15   |      {{2615 °F; 1435 °C}} |
+| SK 16   |      {{2660 °F; 1460 °C}} |
+| SK 17   |      {{2696 °F; 1480 °C}} |
+| SK 18   |      {{2732 °F; 1500 °C}} |
+| SK 19   |      {{2768 °F; 1520 °C}} |
+| SK 20   |      {{2786 °F; 1530 °C}} |
 
-Každý údaj je menovitý (JIS): teplota, ktorú pre kužeľ udáva norma, ako je vytlačená v tabuľke firmy Yuko Trading. Tabuľka neuvádza rýchlosť ohrevu. Norma udáva referenčné teploty. Pri rýchlosti bežnej u keramikárov, asi 100 °C/h, kjótsky mestský inštitút nameral, že sa jeho vlastné kjótske kužele ohýbajú o 40–70 °C nižšie, ako je údaj JIS pre rovnaké číslo; pre kužele SK podľa JIS sme také merania nenašli. Postavte kontrolný kužeľ a porovnajte.
+Every figure is nominal (JIS): the temperature the standard gives for the cone, as printed in Yuko Trading's table. The table does not print a heating rate. The standard gives reference temperatures. At a potter's rate of about 100 °C/h, Kyoto's municipal institute measured its own Kyoto cones bending 47–79 °C cooler than the JIS figure for the same number; we found no such measurements for SK cones to JIS. Set a witness cone and compare.
 
-### Kjótske kužele
+### Kyoto cones
 
-Kjótske kužele (京都ゼーゲル), ktoré vyrábal kjótsky mestský inštitút, sa už nevyrábajú: podľa správ v tlači inštitút ukončil výrobu na konci fiškálneho roka 2009. Majú rovnaké čísla ako kužele SK podľa JIS, ale ohýbajú sa pri nižšej teplote: kjótsky kužeľ sa väčšinou ohne približne pri teplote kužeľa SK podľa JIS o dve čísla nižšieho. Recept z Kjóta, ktorý uvádza „SK 8“, môže myslieť kjótsky kužeľ. Inštitút zverejnil rady pre keramikárov, ktorí prechádzajú z kjótskych kužeľov na Ortonove, a namiesto svojho kjótskeho SK 12 používa Ortonov kužeľ 10; je to voľba inštitútu podľa jeho vlastných meraní pri 100 °C/h a neplatí pre žiadny iný kužeľ.
+Kyoto cones (京都ゼーゲル), made by Kyoto's municipal institute, are no longer made: news reports say the institute ended production at the close of fiscal 2009. They carry the same numbers as SK cones to JIS but bend cooler: a Kyoto cone bends at about the temperature of the SK cone to JIS two or three numbers lower. A recipe from Kyoto that says "SK 8" may mean a Kyoto cone. The institute has published advice for potters moving from Kyoto cones to Orton cones, and substitutes Orton cone 10 for its own Kyoto SK 12; that is the institute's choice from its own measurements at 100 °C/h, and applies to no other cone.
 
-### Ortonove kužele predávané v Japonsku
+### Orton cones sold in Japan
 
-Samostojné Ortonove kužele sa v Japonsku predávajú pod názvom 立つゼーゲル („stojaci Seger“), pretože nepotrebujú držiak ani stojan. Sú to Ortonove kužele s Ortonovými číslami a Ortonovou tabuľkou (pozri vyššie): vypaľujte na ne len podľa ich Ortonovho čísla a kužele SK a Ortonove kužele majte v oddelených sadách, nikdy nie v jednej.
+Orton self-supporting cones are sold in Japan under the name 立つゼーゲル ("standing Seger"), because they need no plaque or stand. They are Orton cones, with Orton's numbers and Orton's chart (above): fire to one only by its Orton number, and keep SK and Orton cones in separate packs, never in the same one.
 
-### Zdroje ku kužeľom SK
+### Sources for SK cones
 
-- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (tabuľka SK, overené 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
-- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (platná, znovu potvrdená 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
-- [Kyoto Municipal Institute of Industrial Technology and Culture: na čo si dať pozor pri prechode z kjótskych kužeľov na Ortonove](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
+- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (the SK table, checked 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
+- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (in force, reconfirmed 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
+- [Kyoto Municipal Institute of Industrial Technology and Culture: points to note when moving from Kyoto cones to Orton cones](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
 
 :::
 

@@ -149,38 +149,38 @@ Pet Poison Helpline, “Kurşun tüm türler için toksiktir, ancak zehirlenme r
 
 Bir evcil hayvan atölyeden bir şey yemiş ya da içmiş olabilirse veya yukarıdakilere benzer belirtiler gösteriyorsa, hammaddenin adını ve hayvanın ağırlığını elinizin altında bulundurarak veterinerinizi veya hayvanlar için bir zehir danışma hattını arayın (en üstteki tabloya bakın).
 
-## Fırın {#the-kiln}
+## The kiln {#the-kiln lang=en}
 
-### Dışı yakacak kadar ısınır
+### The outside gets hot enough to burn
 
-Birleşik Krallık’taki okullar için hazırlanmış bir risk değerlendirmesi, bir fırının dışının “160 °C’ye ve muhtemelen daha fazlasına ulaşabileceğini” (yaklaşık 320 °F) söyler; okullar için bir fırın rehberi de metal kuşakların 460 °F’ye (yaklaşık 240 °C) kadar ısındığını bildirir. Fırın üreticisi Skutt, çocuklara ve evcil hayvanlara karşı kilitlenebilen bir fırın odası önerir. Odanın kilitlenemediği yerlerde okul rehberi, fırın güvenlik paravanı gibi bir engel önerir.
+A UK schools risk assessment says a kiln's outside "can reach 160 °C and possibly more" (about 320 °F), and a school kiln guide reports metal bands at up to 460 °F (about 240 °C). Skutt, a kiln maker, recommends a kiln room that can be locked against children and pets. Where a room cannot be locked, the school guide suggests a barrier such as a kiln safety screen.
 
-Küçük çocuklar ve evcil hayvanlar bir uyarı levhasını anlayamaz. Fırında pişirim sürerken ve fırın soğurken onları kilitli bir kapının veya bir engelin arkasında tutmanızı, diğer herkes için de bir uyarı levhası asmanızı öneririz.
+Small children and pets cannot understand a warning sign. We suggest keeping them behind a locked door or a barrier while the kiln fires and while it cools, and posting a warning sign for everyone else.
 
-### Çevresindeki boşluk
+### Space around it
 
-Kaynaklar güvenlik mesafesi konusunda farklı şeyler söyler. Rio Grande, duvarlardan ve yanabilecek her şeyden en az 12 inç (30 cm) diyor. L&L tüm duvarlara 18 inç (46 cm) mesafeyi kuvvetle öneriyor; dayandığı yapı yönetmeliği de yanıcı duvarlardan 3 fit (0,9 m) istiyor. Fırınınızın kullanım kılavuzuna ve yerel yangın yönetmeliğine uyun; emin değilseniz her duvardan 18 inç, yanabilecek her şeyden 3 fit bırakın. Garajda arabaları, yakıtı ve boyayı fırından iyice uzak tutun.
+Sources disagree on clearance. Rio Grande says at least 12 inches (30 cm) from walls and anything combustible. L&L strongly recommends 18 inches (46 cm) to all walls, and the building code it cites asks for 3 feet (0.9 m) from combustible walls. Follow your kiln's manual and local fire code; if you are unsure, allow 18 inches from any wall and 3 feet from anything that can burn. In a garage, keep cars, fuel and paint well away.
 
-### Elektrik
+### Power
 
-Rio Grande, düzgün topraklanmış bir prizi olan **ayrı bir hat** (başka hiçbir şeyi beslemeyen bir elektrik hattı) önerir. Uzatma kablosu kullanmamanızı öneririz. Pişirimler arasında, bir çocuk fırını çalıştıramasın diye fırının sigortasını veya ayırıcı şalterini kapatın ya da fişini çekin.
+Rio Grande recommends a **dedicated circuit** (one that powers nothing else) with a properly grounded outlet. We suggest no extension cord. Between firings, switch off the kiln's breaker or disconnect switch, or unplug it, so a child cannot start it.
 
-### Pişirim biterken orada olun
+### Be there when the firing ends
 
-**Kiln sitter**{{en: kiln sitter}}, birçok manuel fırındaki mekanik anahtardır: pişirimin sonunda küçük bir piramit eğilir ve anahtarı kapatır. Kullanım kılavuzu, bunun “bir arıza emniyeti kapatma düzeneği olarak çalışmak üzere TASARLANMADIĞINI” söyler. Rio Grande, pişirim sürerken fırını, “özellikle beklenen kapanma saatine yakın”, asla başında kimse olmadan bırakmamayı söyler. Bu yüzden pişirim sürerken, özellikle sona doğru, fırının yakınında kalın ve fırını kontrol edin; pişirimi yalnızca bunu yapmak için evde ve uyanık bir yetişkin olacağı zamanlarda yapın, fırının kapandığını kontrol edin ve fırın odasında ABC tipi bir yangın söndürücü bulundurun. Kiln sitter’ların, kontrol ünitelerinin ve pişirim programlarının nasıl çalıştığı için [Basit bir fırında pişirim](/guides/firing) rehberine bakın.
+A **kiln sitter** is the mechanical switch on many manual kilns: a small cone bends at the end of the firing and trips the switch off. Its manual says it "is NOT intended to perform as a fail-safe shut-off device." Rio Grande says never to leave a firing kiln unattended, "especially near the expected shut-off time". So stay nearby and check the kiln while it fires, above all near the end; fire only when an adult will be home and awake through the whole firing, check that it has switched off, and keep an ABC fire extinguisher in the kiln room. For how sitters, controllers and schedules work, see [Firing a basic kiln](/guides/firing).
 
-### Dumanlar ve karbon monoksit
+### Fumes and carbon monoxide
 
-Pişirim sırasında gazlar ve dumanlar çıkar; bu yüzden fırını dışarıya havalandırın. Nasıl yapılacağını [Güvenli karıştırma ve havalandırma](/guides/safe-mixing) rehberi anlatır. Eve bitişik bir garajdaki fırının havalandırması, gazların ve dumanların ara kapıdan eve ulaşmasını önlemelidir. Fırında her pişirim yapıldığında kuşları uzak bir odada tutun.
+Firing gives off fumes, so vent the kiln to the outdoors; [Safe mixing and ventilation](/guides/safe-mixing) explains how. A kiln in an attached garage needs venting that keeps fumes from reaching the house through the connecting door. Keep birds in a far room whenever the kiln fires.
 
-**Karbon monoksit** (CO), göremediğiniz ve kokusunu alamadığınız zehirli bir gazdır. Bir üniversitenin fırın güvenliği belgesi, gazlı fırınlarda CO dedektörlerini zorunlu tutar. Elektrikli fırınlar için görüşler farklıdır, ama organik maddelerin (çamurdaki ya da kâğıt veya mum gibi şeylerdeki) yanması CO oluşturabilir. Fırın odasına ve yanındaki odalara bir CO dedektörü takmanın, her fırın için mantıklı ve ucuz bir adım olduğunu düşünüyoruz.
+**Carbon monoxide** (CO) is a poisonous gas you cannot see or smell. A university kiln safety sheet requires CO alarms with gas kilns. Views differ for electric kilns, but burning off organic matter (in clay, or things like paper or wax) can make CO. We think a CO alarm in the kiln room and the rooms next to it is a sensible, inexpensive step for any kiln.
 
-### Gözetleme delikleri ve gözler
+### Peepholes and eyes
 
-Göremediğiniz kızılötesi ışık “752°F’ta (400°C) başlar” ve Ceramic Arts Network, bunun üzerindeki sıcaklıkta bir fırının içine bakarken her zaman göz koruması kullanılması gerektiğini söyler. Kızılötesi ışık göz merceğine zarar verip katarakta yol açabilir; uzun süre bakmak da retinayı yaralayabilir. Güneş gözlükleri ve didimyum gözlükler onu engellemez.
+Infrared light, which you cannot see, "starts at 752°F (400°C)", and the Ceramic Arts Network says looking into a kiln above this should always be done with eye protection. Infrared can damage the lens of the eye and lead to cataracts, and long gazing can injure the retina. Sunglasses and didymium glasses do not block it.
 
 > [!WARNING]
-> Çocuklar bir fırının içine hiç bakmamalıdır. Kızıl parlayan bir gözetleme deliği onları çeker ve koruyucu gözlüğü takılı tutacaklarına güvenilemez; bu yüzden fırın sıcakken onları uzak tutun. Yetişkinler yalnızca kısa süre ve IR korumalı kaynak gözlüğüyle bakmalıdır. Kaynaklar 1,7 ile 5 arası koyuluk dereceleri öneriyor; koyuluk derecesi 3 mantıklı bir seçimdir, sonrasında gözünüzün önünde lekeler görüyorsanız daha koyusunu seçin.
+> Children should not look into a kiln at all. A glowing peephole draws them, and they will not reliably keep protective glasses on, so keep them away while the kiln is hot. Adults should look only briefly, through IR-rated welding glasses. Sources recommend shades from 1.7 to 5; shade 3 is a sensible choice, darker if you see spots afterward.
 
 ## Aile sofrasında el yapımı kaplar {#handmade-ware}
 
