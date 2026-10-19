@@ -149,38 +149,38 @@ La Pet Poison Helpline afferma che «Il piombo è tossico per tutte le specie, m
 
 Se un animale può aver mangiato o bevuto qualcosa dal laboratorio, o mostra segni come quelli descritti sopra, chiamare il veterinario o un centro antiveleni per animali (vedere la tabella in cima alla pagina), con a portata di mano il nome del materiale e il peso dell’animale.
 
-## The kiln {#the-kiln lang=en}
+## Il forno {#the-kiln}
 
-### The outside gets hot enough to burn
+### L’esterno diventa così caldo da ustionare
 
-A UK schools risk assessment says a kiln's outside "can reach 160 °C and possibly more" (about 320 °F), and a school kiln guide reports metal bands at up to 460 °F (about 240 °C). Skutt, a kiln maker, recommends a kiln room that can be locked against children and pets. Where a room cannot be locked, the school guide suggests a barrier such as a kiln safety screen.
+Una valutazione dei rischi per le scuole del Regno Unito dice che l’esterno di un forno «può raggiungere 160 °C e forse di più» (circa 320 °F) e una guida ai forni per le scuole riporta fasce metalliche fino a 460 °F (circa 240 °C). Skutt, un produttore di forni, raccomanda un locale del forno che si possa chiudere a chiave per impedire l’accesso a bambini e animali. Dove un locale non si può chiudere a chiave, la guida per le scuole suggerisce una barriera, come uno schermo di protezione per forni.
 
-Small children and pets cannot understand a warning sign. We suggest keeping them behind a locked door or a barrier while the kiln fires and while it cools, and posting a warning sign for everyone else.
+Suggeriamo di tenere i bambini piccoli e gli animali domestici, che non possono capire un cartello di avvertimento, dietro una porta chiusa a chiave o una barriera mentre il forno è in cottura e mentre si raffredda, e di affiggere un cartello di avvertimento per tutti gli altri.
 
-### Space around it
+### Spazio intorno al forno
 
-Sources disagree on clearance. Rio Grande says at least 12 inches (30 cm) from walls and anything combustible. L&L strongly recommends 18 inches (46 cm) to all walls, and the building code it cites asks for 3 feet (0.9 m) from combustible walls. Follow your kiln's manual and local fire code; if you are unsure, allow 18 inches from any wall and 3 feet from anything that can burn. In a garage, keep cars, fuel and paint well away.
+Le fonti non concordano sulla distanza di sicurezza. Rio Grande indica almeno 12 pollici (30 cm) dalle pareti e da qualsiasi cosa combustibile. L&L raccomanda vivamente 18 pollici (46 cm) da tutte le pareti e la norma edilizia che cita chiede 3 piedi (0,9 m) dalle pareti combustibili. Seguire il manuale del forno e le norme antincendio locali; in caso di dubbio, lasciare 18 pollici da qualsiasi parete e 3 piedi da tutto ciò che può bruciare. In un garage, tenere ben lontani auto, carburante e vernici.
 
-### Power
+### Alimentazione elettrica
 
-Rio Grande recommends a **dedicated circuit** (one that powers nothing else) with a properly grounded outlet. We suggest no extension cord. Between firings, switch off the kiln's breaker or disconnect switch, or unplug it, so a child cannot start it.
+Rio Grande raccomanda una **linea elettrica dedicata** (che non alimenta nient’altro) con una presa correttamente collegata a terra. Suggeriamo di non usare prolunghe. Tra una cottura e l’altra, spegnere l’interruttore automatico o il sezionatore del forno, oppure staccare la spina, così che un bambino non possa accenderlo.
 
-### Be there when the firing ends
+### Essere presenti alla fine della cottura
 
-A **kiln sitter** is the mechanical switch on many manual kilns: a small cone bends at the end of the firing and trips the switch off. Its manual says it "is NOT intended to perform as a fail-safe shut-off device." Rio Grande says never to leave a firing kiln unattended, "especially near the expected shut-off time". So stay nearby and check the kiln while it fires, above all near the end; fire only when an adult will be home and awake through the whole firing, check that it has switched off, and keep an ABC fire extinguisher in the kiln room. For how sitters, controllers and schedules work, see [Firing a basic kiln](/guides/firing).
+Il **kiln sitter** è l’interruttore meccanico di molti forni manuali: un piccolo cono{{en: cone}} si piega alla fine della cottura e fa scattare lo spegnimento. Il suo manuale dice che «NON è concepito per funzionare come dispositivo di spegnimento a prova di guasto». Rio Grande dice di non lasciare mai incustodito un forno in cottura, «soprattutto vicino all’ora prevista di spegnimento». Quindi restare nelle vicinanze e controllare il forno durante la cottura, soprattutto verso la fine; cuocere solo quando un adulto sarà in casa e sveglio per tutta la cottura, controllare che il forno si sia spento e tenere un estintore ABC nel locale del forno. Per il funzionamento di kiln sitter, centraline e curve di cottura, vedere [Cuocere in un forno semplice](/guides/firing).
 
-### Fumes and carbon monoxide
+### Fumi e monossido di carbonio
 
-Firing gives off fumes, so vent the kiln to the outdoors; [Safe mixing and ventilation](/guides/safe-mixing) explains how. A kiln in an attached garage needs venting that keeps fumes from reaching the house through the connecting door. Keep birds in a far room whenever the kiln fires.
+La cottura sprigiona fumi, quindi scaricare all’esterno i fumi del forno; [Miscelazione sicura e ventilazione](/guides/safe-mixing) spiega come. Un forno in un garage attaccato alla casa ha bisogno di un’aspirazione che impedisca ai fumi di raggiungere la casa attraverso la porta di comunicazione. Tenere gli uccelli in una stanza lontana ogni volta che il forno è in cottura.
 
-**Carbon monoxide** (CO) is a poisonous gas you cannot see or smell. A university kiln safety sheet requires CO alarms with gas kilns. Views differ for electric kilns, but burning off organic matter (in clay, or things like paper or wax) can make CO. We think a CO alarm in the kiln room and the rooms next to it is a sensible, inexpensive step for any kiln.
+Il **monossido di carbonio** (CO) è un gas velenoso invisibile e senza odore. La scheda sulla sicurezza dei forni di un’università richiede rilevatori di CO con i forni a gas. Per i forni elettrici le opinioni divergono, ma la combustione delle sostanze organiche (nell’argilla, o in cose come carta o cera) può produrre CO. Riteniamo che un rilevatore di CO nel locale del forno e nelle stanze vicine sia una precauzione sensata ed economica per qualsiasi forno.
 
-### Peepholes and eyes
+### Spioncini e occhi
 
-Infrared light, which you cannot see, "starts at 752°F (400°C)", and the Ceramic Arts Network says looking into a kiln above this should always be done with eye protection. Infrared can damage the lens of the eye and lead to cataracts, and long gazing can injure the retina. Sunglasses and didymium glasses do not block it.
+La luce infrarossa, che non si vede, «inizia a 752°F (400°C)» e il Ceramic Arts Network dice che, sopra questa temperatura, si dovrebbe sempre guardare dentro un forno con una protezione per gli occhi. Gli infrarossi possono danneggiare il cristallino e causare la cataratta; uno sguardo prolungato può lesionare la retina. Gli occhiali da sole e gli occhiali al didimio non li bloccano.
 
 > [!WARNING]
-> Children should not look into a kiln at all. A glowing peephole draws them, and they will not reliably keep protective glasses on, so keep them away while the kiln is hot. Adults should look only briefly, through IR-rated welding glasses. Sources recommend shades from 1.7 to 5; shade 3 is a sensible choice, darker if you see spots afterward.
+> I bambini non dovrebbero guardare affatto dentro un forno. Uno spioncino incandescente li attira e non si può contare sul fatto che tengano addosso gli occhiali protettivi, quindi tenerli lontani mentre il forno è caldo. Gli adulti dovrebbero guardare solo per pochi istanti, attraverso occhiali da saldatura con filtro IR. Le fonti raccomandano gradi di protezione da 1,7 a 5; il grado 3 è una scelta sensata, o uno più scuro se dopo si vedono delle macchie.
 
 ## Ceramiche fatte a mano sulla tavola di famiglia {#handmade-ware}
 

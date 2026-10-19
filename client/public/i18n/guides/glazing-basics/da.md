@@ -462,7 +462,7 @@ Varmepåvirkning (heatwork)
 Voks (wax resist)
 : Voks, der males på, hvor glasuren ikke må komme, som regel foden.
 
-## Sources {#sources lang=en}
+## Kilder {#sources}
 
 - [Glazy Help: Glaze](https://help.glazy.org/concepts/glaze)
 - [Glazy Help: Oxides](https://help.glazy.org/concepts/oxides)

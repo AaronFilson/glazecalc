@@ -149,38 +149,38 @@ Pet Poison Helpline podaje: „Ołów jest toksyczny dla wszystkich gatunków, a
 
 Jeśli zwierzę mogło zjeść lub wypić cokolwiek z pracowni albo ma objawy podobne do opisanych wyżej, należy zadzwonić do swojego weterynarza lub na linię pomocy przy zatruciach zwierząt (zob. tabela na górze strony), mając pod ręką nazwę surowca i wagę zwierzęcia.
 
-## The kiln {#the-kiln lang=en}
+## Piec {#the-kiln}
 
-### The outside gets hot enough to burn
+### Obudowa nagrzewa się tak, że może poparzyć
 
-A UK schools risk assessment says a kiln's outside "can reach 160 °C and possibly more" (about 320 °F), and a school kiln guide reports metal bands at up to 460 °F (about 240 °C). Skutt, a kiln maker, recommends a kiln room that can be locked against children and pets. Where a room cannot be locked, the school guide suggests a barrier such as a kiln safety screen.
+Brytyjska ocena ryzyka dla szkół podaje, że obudowa pieca „może osiągnąć 160 °C i być może więcej” (około 320 °F), a szkolny poradnik o piecach podaje, że metalowe obręcze nagrzewają się do 460 °F (około 240 °C). Skutt, producent pieców, zaleca pomieszczenie na piec, które można zamknąć na klucz przed dziećmi i zwierzętami. Tam, gdzie pomieszczenia nie da się zamknąć na klucz, szkolny poradnik proponuje barierę, na przykład osłonę ochronną pieca.
 
-Small children and pets cannot understand a warning sign. We suggest keeping them behind a locked door or a barrier while the kiln fires and while it cools, and posting a warning sign for everyone else.
+Małe dzieci i zwierzęta nie zrozumieją znaku ostrzegawczego. Podczas wypału i stygnięcia pieca proponujemy trzymać je za zamkniętymi na klucz drzwiami lub za barierą, a dla wszystkich pozostałych wywiesić znak ostrzegawczy.
 
-### Space around it
+### Wolna przestrzeń wokół pieca
 
-Sources disagree on clearance. Rio Grande says at least 12 inches (30 cm) from walls and anything combustible. L&L strongly recommends 18 inches (46 cm) to all walls, and the building code it cites asks for 3 feet (0.9 m) from combustible walls. Follow your kiln's manual and local fire code; if you are unsure, allow 18 inches from any wall and 3 feet from anything that can burn. In a garage, keep cars, fuel and paint well away.
+Źródła różnią się co do odstępów. Rio Grande podaje co najmniej 12 cali (30 cm) od ścian i wszystkiego, co palne. L&L zdecydowanie zaleca 18 cali (46 cm) od wszystkich ścian, a przepisy budowlane, na które się powołuje, wymagają 3 stóp (0,9 m) od palnych ścian. Należy stosować się do instrukcji pieca i obowiązujących w danym miejscu przepisów przeciwpożarowych; w razie wątpliwości zachować 18 cali od każdej ściany i 3 stopy od wszystkiego, co może się palić. W garażu samochody, paliwo i farby trzymać w dużej odległości od pieca.
 
-### Power
+### Zasilanie
 
-Rio Grande recommends a **dedicated circuit** (one that powers nothing else) with a properly grounded outlet. We suggest no extension cord. Between firings, switch off the kiln's breaker or disconnect switch, or unplug it, so a child cannot start it.
+Rio Grande zaleca **osobny obwód elektryczny** (który nie zasila niczego innego) z prawidłowo uziemionym gniazdem. Proponujemy nie używać przedłużacza. Między wypałami należy wyłączyć bezpiecznik lub wyłącznik główny pieca albo wyjąć wtyczkę z gniazda, żeby dziecko nie mogło go uruchomić.
 
-### Be there when the firing ends
+### Obecność przy końcu wypału
 
-A **kiln sitter** is the mechanical switch on many manual kilns: a small cone bends at the end of the firing and trips the switch off. Its manual says it "is NOT intended to perform as a fail-safe shut-off device." Rio Grande says never to leave a firing kiln unattended, "especially near the expected shut-off time". So stay nearby and check the kiln while it fires, above all near the end; fire only when an adult will be home and awake through the whole firing, check that it has switched off, and keep an ABC fire extinguisher in the kiln room. For how sitters, controllers and schedules work, see [Firing a basic kiln](/guides/firing).
+**Kiln-Sitter** (wyłącznik stożkowy) to mechaniczny wyłącznik w wielu piecach sterowanych ręcznie: pod koniec wypału mały stożek{{en: cone}} ugina się i wyzwala wyłącznik. Jego instrukcja mówi, że „NIE jest przeznaczony do pełnienia funkcji niezawodnego wyłącznika bezpieczeństwa”. Rio Grande radzi nigdy nie zostawiać pracującego pieca bez nadzoru, „zwłaszcza w pobliżu spodziewanego czasu wyłączenia”. Dlatego należy zostać w pobliżu i sprawdzać piec podczas wypału, zwłaszcza pod jego koniec; wypalać należy tylko wtedy, gdy w domu będzie osoba dorosła, która nie śpi przez cały czas wypału, a potem sprawdzić, czy piec się wyłączył; w pomieszczeniu z piecem trzeba też trzymać gaśnicę ABC. Jak działają wyłączniki stożkowe, sterowniki i programy wypału – w poradniku [Wypał w prostym piecu](/guides/firing).
 
-### Fumes and carbon monoxide
+### Opary i tlenek węgla
 
-Firing gives off fumes, so vent the kiln to the outdoors; [Safe mixing and ventilation](/guides/safe-mixing) explains how. A kiln in an attached garage needs venting that keeps fumes from reaching the house through the connecting door. Keep birds in a far room whenever the kiln fires.
+Podczas wypału wydzielają się opary, dlatego należy odprowadzać je z pieca na zewnątrz; jak to zrobić, wyjaśnia poradnik [Bezpieczne rozrabianie szkliw i wentylacja](/guides/safe-mixing). Piec w garażu połączonym z domem wymaga wentylacji, która nie pozwoli oparom przedostać się do domu przez drzwi łączące. Podczas każdego wypału ptaki należy trzymać w odległym pokoju.
 
-**Carbon monoxide** (CO) is a poisonous gas you cannot see or smell. A university kiln safety sheet requires CO alarms with gas kilns. Views differ for electric kilns, but burning off organic matter (in clay, or things like paper or wax) can make CO. We think a CO alarm in the kiln room and the rooms next to it is a sensible, inexpensive step for any kiln.
+**Tlenek węgla** (CO, czad) to trujący gaz, którego nie widać ani nie czuć. Instrukcja bezpieczeństwa pieców jednego z uniwersytetów wymaga czujników czadu przy piecach gazowych. Co do pieców elektrycznych opinie są podzielone, ale przy wypalaniu substancji organicznych (zawartych w glinie albo w takich rzeczach jak papier czy wosk) może powstawać CO. Uważamy, że czujnik czadu w pomieszczeniu z piecem i w sąsiednich pomieszczeniach to rozsądny i niedrogi krok przy każdym piecu.
 
-### Peepholes and eyes
+### Wzierniki i oczy
 
-Infrared light, which you cannot see, "starts at 752°F (400°C)", and the Ceramic Arts Network says looking into a kiln above this should always be done with eye protection. Infrared can damage the lens of the eye and lead to cataracts, and long gazing can injure the retina. Sunglasses and didymium glasses do not block it.
+Podczerwień, której nie widać, „zaczyna się od 752°F (400°C)”, a według Ceramic Arts Network do pieca rozgrzanego powyżej tej temperatury należy zaglądać zawsze z ochroną oczu. Podczerwień może uszkodzić soczewkę oka i prowadzić do zaćmy, a długie wpatrywanie się może uszkodzić siatkówkę. Okulary przeciwsłoneczne i okulary didymowe jej nie blokują.
 
 > [!WARNING]
-> Children should not look into a kiln at all. A glowing peephole draws them, and they will not reliably keep protective glasses on, so keep them away while the kiln is hot. Adults should look only briefly, through IR-rated welding glasses. Sources recommend shades from 1.7 to 5; shade 3 is a sensible choice, darker if you see spots afterward.
+> Dzieci w ogóle nie powinny zaglądać do pieca. Świecący wziernik je przyciąga, a nie można liczyć na to, że nie zdejmą okularów ochronnych, dlatego trzeba trzymać je z dala od pieca, dopóki jest gorący. Dorośli powinni zaglądać tylko na krótko, przez okulary spawalnicze z filtrem podczerwieni. Źródła zalecają stopnie ochrony od 1,7 do 5; stopień 3 to rozsądny wybór, a ciemniejszy, jeśli potem przed oczami pojawiają się plamy.
 
 ## Ręcznie robione naczynia na rodzinnym stole {#handmade-ware}
 

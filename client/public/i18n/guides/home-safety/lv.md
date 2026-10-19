@@ -149,38 +149,38 @@ Pet Poison Helpline raksta: “Svins ir toksisks visām sugām, bet saindēšan�
 
 Ja mājdzīvnieks, iespējams, ir apēdis vai izdzēris kaut ko no darbnīcas vai tam ir iepriekš minētajām līdzīgas pazīmes, zvaniet savam veterinārārstam vai uz dzīvnieku saindēšanās informācijas tālruni (skatiet tabulu lapas augšdaļā) un turiet pa rokai izejvielas nosaukumu un mājdzīvnieka svaru.
 
-## The kiln {#the-kiln lang=en}
+## Krāsns {#the-kiln}
 
-### The outside gets hot enough to burn
+### Krāsns ārpuse sakarst tik stipri, ka var apdegties
 
-A UK schools risk assessment says a kiln's outside "can reach 160 °C and possibly more" (about 320 °F), and a school kiln guide reports metal bands at up to 460 °F (about 240 °C). Skutt, a kiln maker, recommends a kiln room that can be locked against children and pets. Where a room cannot be locked, the school guide suggests a barrier such as a kiln safety screen.
+Kādā Apvienotās Karalistes skolu riska novērtējumā teikts, ka krāsns ārpuse “var sasniegt 160 °C un, iespējams, vairāk” (apmēram 320 °F), un kādā skolu krāsns ceļvedī minēts, ka metāla stīpas sakarst līdz 460 °F (apmēram 240 °C). Krāsnu ražotājs Skutt iesaka krāsns telpu, ko var aizslēgt, lai tajā nenokļūtu bērni un mājdzīvnieki. Ja telpu nevar aizslēgt, skolu ceļvedis iesaka barjeru, piemēram, krāsns aizsargekrānu.
 
-Small children and pets cannot understand a warning sign. We suggest keeping them behind a locked door or a barrier while the kiln fires and while it cools, and posting a warning sign for everyone else.
+Mazi bērni un mājdzīvnieki nevar saprast brīdinājuma zīmi. Iesakām apdedzināšanas un atdzišanas laikā turēt viņus aiz aizslēgtām durvīm vai barjeras, bet visiem pārējiem izvietot brīdinājuma zīmi.
 
-### Space around it
+### Brīvā vieta ap krāsni
 
-Sources disagree on clearance. Rio Grande says at least 12 inches (30 cm) from walls and anything combustible. L&L strongly recommends 18 inches (46 cm) to all walls, and the building code it cites asks for 3 feet (0.9 m) from combustible walls. Follow your kiln's manual and local fire code; if you are unsure, allow 18 inches from any wall and 3 feet from anything that can burn. In a garage, keep cars, fuel and paint well away.
+Avoti nav vienisprātis par drošības attālumu. Rio Grande min vismaz 12 collu (30 cm) attālumu no sienām un visa degošā. L&L stingri iesaka 18 collu (46 cm) attālumu līdz visām sienām, un būvnormatīvi, uz kuriem šis ražotājs atsaucas, prasa 3 pēdu (0,9 m) attālumu no degošām sienām. Ievērojiet savas krāsns lietošanas instrukciju un vietējos ugunsdrošības noteikumus; ja rodas šaubas, atstājiet 18 collu atstarpi no jebkuras sienas un 3 pēdu atstarpi no visa, kas var degt. Garāžā turiet automašīnas, degvielu un krāsas krietni tālu no krāsns.
 
-### Power
+### Elektrība
 
-Rio Grande recommends a **dedicated circuit** (one that powers nothing else) with a properly grounded outlet. We suggest no extension cord. Between firings, switch off the kiln's breaker or disconnect switch, or unplug it, so a child cannot start it.
+Rio Grande iesaka **atsevišķu elektrisko ķēdi** (tādu, kurai nav pieslēgts nekas cits) ar pareizi iezemētu kontaktligzdu. Iesakām neizmantot pagarinātāju. Starp apdedzināšanām izslēdziet krāsns automātisko drošinātāju vai atvienošanas slēdzi vai atvienojiet krāsni no kontaktligzdas, lai bērns nevarētu to ieslēgt.
 
-### Be there when the firing ends
+### Esiet klāt, kad apdedzināšana beidzas
 
-A **kiln sitter** is the mechanical switch on many manual kilns: a small cone bends at the end of the firing and trips the switch off. Its manual says it "is NOT intended to perform as a fail-safe shut-off device." Rio Grande says never to leave a firing kiln unattended, "especially near the expected shut-off time". So stay nearby and check the kiln while it fires, above all near the end; fire only when an adult will be home and awake through the whole firing, check that it has switched off, and keep an ABC fire extinguisher in the kiln room. For how sitters, controllers and schedules work, see [Firing a basic kiln](/guides/firing).
+**Kiln-Sitter** ir mehānisks slēdzis daudzām manuāli vadāmām krāsnīm: apdedzināšanas beigās mazs konuss{{en: cone}} saliecas un izslēdz slēdzi. Tā lietošanas instrukcijā teikts, ka tas “NAV paredzēts darboties kā drošības izslēgšanas ierīce, kas nostrādātu arī bojājuma gadījumā”. Rio Grande norāda: nekad neatstājiet apdedzināmu krāsni bez uzraudzības, “īpaši tuvu paredzamajam izslēgšanās laikam”. Tāpēc uzturieties tuvumā un pārbaudiet krāsni apdedzināšanas laikā, īpaši tuvu beigām; apdedziniet tikai tad, kad mājās būs kāds pieaugušais, kas būs nomodā visu apdedzināšanas laiku, pārbaudiet, vai krāsns ir izslēgusies, un turiet krāsns telpā ABC tipa ugunsdzēsības aparātu. Kā darbojas Kiln-Sitter slēdži, kontrolieri un apdedzināšanas programmas, skatiet ceļvedī [Apdedzināšana vienkāršā krāsnī](/guides/firing).
 
-### Fumes and carbon monoxide
+### Izplūdes gāzes un tvana gāze
 
-Firing gives off fumes, so vent the kiln to the outdoors; [Safe mixing and ventilation](/guides/safe-mixing) explains how. A kiln in an attached garage needs venting that keeps fumes from reaching the house through the connecting door. Keep birds in a far room whenever the kiln fires.
+Apdedzināšanas laikā izdalās izplūdes gāzes un tvaiki, tāpēc novadiet tos no krāsns uz āru; kā to izdarīt, paskaidrots ceļvedī [Droša jaukšana un ventilācija](/guides/safe-mixing). Krāsnij garāžā, kas piebūvēta mājai, vajadzīga tāda nosūce, kas neļauj gāzēm un tvaikiem nokļūt mājā pa savienojošajām durvīm. Kamēr krāsnī notiek apdedzināšana, vienmēr turiet putnus tālākā istabā.
 
-**Carbon monoxide** (CO) is a poisonous gas you cannot see or smell. A university kiln safety sheet requires CO alarms with gas kilns. Views differ for electric kilns, but burning off organic matter (in clay, or things like paper or wax) can make CO. We think a CO alarm in the kiln room and the rooms next to it is a sensible, inexpensive step for any kiln.
+**Oglekļa monoksīds** (tvana gāze, CO) ir indīga gāze, ko nevar ne redzēt, ne saost. Kādas universitātes krāsns drošības lapā noteikts, ka pie gāzes krāsnīm jābūt tvana gāzes detektoriem. Par elektriskajām krāsnīm viedokļi atšķiras, taču, izdegot organiskajām vielām (mālā vai, piemēram, papīrā vai vaskā), var rasties tvana gāze. Mūsuprāt, tvana gāzes detektors krāsns telpā un blakus telpās ir saprātīgs un lēts piesardzības pasākums jebkurai krāsnij.
 
-### Peepholes and eyes
+### Skatlodziņi un acis
 
-Infrared light, which you cannot see, "starts at 752°F (400°C)", and the Ceramic Arts Network says looking into a kiln above this should always be done with eye protection. Infrared can damage the lens of the eye and lead to cataracts, and long gazing can injure the retina. Sunglasses and didymium glasses do not block it.
+Infrasarkanais starojums, ko nevar redzēt, “sākas no 752°F (400°C)”, un Ceramic Arts Network raksta, ka krāsnī, kas ir karstāka par šo, vienmēr vajadzētu skatīties ar acu aizsargiem. Infrasarkanais starojums var bojāt acs lēcu un izraisīt kataraktu, bet ilga skatīšanās var savainot tīkleni. Saulesbrilles un didīma brilles to neaiztur.
 
 > [!WARNING]
-> Children should not look into a kiln at all. A glowing peephole draws them, and they will not reliably keep protective glasses on, so keep them away while the kiln is hot. Adults should look only briefly, through IR-rated welding glasses. Sources recommend shades from 1.7 to 5; shade 3 is a sensible choice, darker if you see spots afterward.
+> Bērniem vispār nevajadzētu skatīties krāsnī. Kvēlojošs skatlodziņš viņus vilina, un nevar paļauties, ka viņi noturēs aizsargbrilles uz acīm, tāpēc turiet viņus pa gabalu, kamēr krāsns ir karsta. Pieaugušajiem vajadzētu skatīties tikai īsu brīdi, caur metināšanas aizsargbrillēm ar IS aizsardzību. Avoti iesaka tumšuma pakāpi no 1,7 līdz 5; pakāpe 3 ir saprātīga izvēle, tumšāka, ja pēc tam acu priekšā redzat plankumus.
 
 ## Pašdarināti trauki uz ģimenes galda {#handmade-ware}
 

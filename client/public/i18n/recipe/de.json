@@ -272,6 +272,7 @@
     "numbers": {
       "heading": "Die Analyse und die Grenzwerte lesen",
       "analysis": "<b>Analyse und Grenzwerte</b> unter dem Rezept zeigt für jedes Oxid die Mole, Mol-% und Gewichts-% nach dem Brand, den Glühverlust und die berechnete Wärmeausdehnung, eine Schätzung zum Vergleichen von Glasuren.",
+      "limits": "<b>Grenzwerte</b> misst die Segerformel an einer Grenzwerttabelle: an den Grenzwerten für stabile Glasuren von Hesselberth & Roy, sofern Sie nicht die eigenen von Glazecalc wählen (die Wahl wird mit Ihren Einstellungen gespeichert). Geprüft wird der Brennbereich, den der <b>Brand</b> des Rezepts angibt: sein Kegel oder sein Bereich. Ein Bereich, der über mehrere Brennbereiche reicht, etwa Kegel 6 bis 10, zeigt die Prüfungen beider Brennbereiche nebeneinander. Um nur einen Brennbereich zu prüfen, wählen Sie ihn im eigenen Feld <b>Brand</b> der Grenzwerte; es hat Vorrang vor dem Brand des Rezepts und wird mit dem Rezept gespeichert. Die Werte von Hesselberth & Roy gelten für Kegel 6 und Kegel 10, deshalb steht im niedrigen Brennbereich, dass sie nicht zutreffen. Es sind Richtwerte, kein Urteil über „bestanden“ oder „nicht bestanden“. Oben vergleicht eine Zeile Bor, Kieselsäure und Tonerde der Glasur mit ihrem Brand, nach Katz’ Borregel und den Werten von Hesselberth & Roy, welche Grenzwerttabelle Sie auch wählen: Sie gibt nur dann einen Hinweis, wenn beide darin übereinstimmen, dass die Glasur wie für einen anderen Brand aussieht, sagt, wenn sie nicht urteilen kann (Blei, Lithium, Raku und dergleichen), und ist ein Richtwert, kein Test.",
       "stull": "Das <b>Stull-Diagramm</b> trägt die Kieselsäure der Glasur gegen ihre Tonerde auf, mit Stulls matten, halbmatten und glänzenden Bereichen und den Bereichen der Grenzwerttabelle. Es ist ein Anhaltspunkt für die Oberfläche, keine Vorhersage.",
       "slurry": "<b>Spezifisches Gewicht und Wasser</b> verwendet die Formel von Brongniart: Wiegen Sie ein abgemessenes Volumen der Glasur, und sehen Sie dann die trockene Glasur im Eimer, das Wasser, das sie auf das gewünschte SG bringt, oder das Wasser für einen neuen Ansatz. Die Dichten folgen Ihrer Einstellung für spezifisches Gewicht, Baumé oder Pint-Gewicht."
     },
@@ -471,6 +472,7 @@
     "expansionRises": "Die berechnete Wärmeausdehnung steigt von {was} auf {now}.",
     "expansionRisesProbably": "Wenn die alte Glasur gerade noch auf Ihre Tonmasse passte, bekommt diese wahrscheinlich Haarrisse, manchmal erst Wochen später.",
     "expansionRisesMay": "Wenn die alte Glasur gerade noch auf Ihre Tonmasse passte, kann diese Haarrisse bekommen, manchmal erst Wochen später.",
+    "expansionRisesFix": "Haarrisse schwächen die Stücke und sind auf Flächen mit Lebensmittelkontakt nicht ratsam. Ersetzt man einen Teil des Natriums und Kaliums durch Flussmittel mit geringerer Wärmeausdehnung (Bor, Lithium, Magnesium oder Calcium), senkt das die Wärmeausdehnung; mehr Kieselsäure wird manchmal empfohlen, doch die Quellen sind sich uneinig.",
     "expansionFalls": "Die berechnete Wärmeausdehnung sinkt von {was} auf {now}. Eine etwas niedrigere schützt meist besser vor Haarrissen.",
     "expansionFallsProbably": "Ist sie viel niedriger, platzt die Glasur wahrscheinlich ab, mit scharfkantigen Splittern an Rändern und Kanten.",
     "expansionFallsCan": "Ist sie viel niedriger, kann die Glasur abplatzen, mit scharfkantigen Splittern an Rändern und Kanten.",
@@ -596,6 +598,36 @@
     "firingFromBlock": "Aus dem Brand des Rezepts ({bands})",
     "bothBands": "Der Brand des Rezepts erstreckt sich über {bands}, daher wird jeder Bereich geprüft, nebeneinander: Eine Glasur verhält sich selten an beiden Enden gleich.",
     "fromFiring": "Die Werte gelten für den Brand des Rezepts: {band}. Wählen Sie oben einen Brand, um einen anderen zu prüfen."
+  },
+  "coneFit": {
+    "cooler": "Die Chemie dieser Glasur sieht eher nach einer Glasur für den {looksLike, select, low {niedrigen} other {mittleren}} Brennbereich aus als nach einer Glasur für {scale, select, band {{band, select, low {den niedrigen Brennbereich} mid {den mittleren Brennbereich} other {den hohen Brennbereich}}} sk {SK {cone}} temperature {{cone} °C} other {Kegel {cone}}}.",
+    "coolerSoft": "Die Chemie dieser Glasur neigt zu einem kühleren Brand als {scale, select, band {{band, select, low {im niedrigen Brennbereich} mid {im mittleren Brennbereich} other {im hohen Brennbereich}}} sk {bei SK {cone}} temperature {bei {cone} °C} other {bei Kegel {cone}}}, näher an Kegel 6, auch wenn die Chemie allein Glasuren für Kegel 6 und Kegel 10 nur ungefähr unterscheiden kann.",
+    "hotter": "Die Chemie dieser Glasur sieht eher nach einer Glasur für den {looksLike, select, high {hohen} other {mittleren}} Brennbereich aus als nach einer Glasur für {scale, select, band {{band, select, low {den niedrigen Brennbereich} mid {den mittleren Brennbereich} other {den hohen Brennbereich}}} sk {SK {cone}} temperature {{cone} °C} other {Kegel {cone}}}.",
+    "hotterSoft": "Die Chemie dieser Glasur neigt zu einem heißeren Brand als {scale, select, band {{band, select, low {im niedrigen Brennbereich} mid {im mittleren Brennbereich} other {im hohen Brennbereich}}} sk {bei SK {cone}} temperature {bei {cone} °C} other {bei Kegel {cone}}}, näher an Kegel 10, auch wenn die Chemie allein Glasuren für Kegel 6 und Kegel 10 nur ungefähr unterscheiden kann.",
+    "closer": "Innerhalb des Bereichs, für den sie angegeben ist, sieht die Chemie dieser Glasur näher am Ende {scale, select, band {{band, select, low {im niedrigen Brennbereich} mid {im mittleren Brennbereich} other {im hohen Brennbereich}}} sk {bei SK {cone}} temperature {bei {cone} °C} other {bei Kegel {cone}}} aus.",
+    "coolerSilica": "Sie enthält mehr Bor ({boron}), als Glasuren {scale, select, band {{band, select, low {im niedrigen Brennbereich} mid {im mittleren Brennbereich} other {im hohen Brennbereich}}} sk {bei SK {cone}} temperature {bei {cone} °C} other {bei Kegel {cone}}} meist brauchen, und weniger Kieselsäure ({silica}), als sie meist haben.",
+    "coolerAlumina": "Sie enthält mehr Bor ({boron}), als Glasuren {scale, select, band {{band, select, low {im niedrigen Brennbereich} mid {im mittleren Brennbereich} other {im hohen Brennbereich}}} sk {bei SK {cone}} temperature {bei {cone} °C} other {bei Kegel {cone}}} meist brauchen, und wenig Tonerde ({alumina}).",
+    "coolerBoth": "Sie enthält mehr Bor ({boron}), als Glasuren {scale, select, band {{band, select, low {im niedrigen Brennbereich} mid {im mittleren Brennbereich} other {im hohen Brennbereich}}} sk {bei SK {cone}} temperature {bei {cone} °C} other {bei Kegel {cone}}} meist brauchen, und weniger Kieselsäure ({silica}) und Tonerde ({alumina}), als sie meist haben.",
+    "hotterSilica": "Sie enthält wenig Bor ({boron}) für {scale, select, band {{band, select, low {den niedrigen Brennbereich} mid {den mittleren Brennbereich} other {den hohen Brennbereich}}} sk {SK {cone}} temperature {{cone} °C} other {Kegel {cone}}} und mehr Kieselsäure ({silica}), als Glasuren bei diesem Brand meist haben.",
+    "coolerEffect": "Bei diesem Brand kann sie ablaufen oder zu stark schmelzen: Brennen Sie zuerst ein Probeplättchen auf einer Tropfscheibe.",
+    "hotterEffect": "Bei diesem Brand kann sie zu schwach gebrannt herauskommen: trocken, rau oder nicht vollständig geschlossen. Brennen Sie sie zur Probe, bevor Sie sie auf Stücken verwenden, und vor allem, bevor Sie sie dort verwenden, wo Speisen oder Getränke sie berühren.",
+    "hotterEffectSoft": "Manche Glasuren schmelzen bei diesem Brand auch ohne Bor, das ist also nur ein Hinweis: Prüfen Sie auf einem Probeplättchen, dass sie vollständig schmilzt.",
+    "gerstley": "Ein Teil ihres Bors stammt aus Gerstley Borate, das von Charge zu Charge schwankt, daher ist dieser Wert weniger sicher.",
+    "guide": "Dies vergleicht die Chemie mit veröffentlichten Werten: Es ist ein Richtwert, kein Test. Wenn die Glasur bei diesem Kegel bei Ihnen gut gebrannt hat, vertrauen Sie Ihren Probeplättchen.",
+    "fits": "Ihr Bor, ihre Kieselsäure und ihre Tonerde sprechen nicht gegen {scale, select, band {{band, select, low {den niedrigen Brennbereich} mid {den mittleren Brennbereich} other {den hohen Brennbereich}}} sk {SK {cone}} temperature {{cone} °C} other {Kegel {cone}}}. Das ist ein Richtwert, kein Test: Es sagt nichts darüber, ob die Glasur stabil oder lebensmittelgeeignet ist.",
+    "sources": "Quellen:",
+    "skip": {
+      "lead": "Glazecalc kann die Chemie dieser Glasur nicht mit ihrem Brand vergleichen: Ein großer Teil ihrer Schmelze stammt von Blei, das die veröffentlichten Werte, die diese Prüfung verwendet, nicht abdecken.",
+      "lithium": "Glazecalc kann die Chemie dieser Glasur nicht mit ihrem Brand vergleichen: Ein großer Teil ihrer Schmelze stammt von Lithium, das die veröffentlichten Werte, die diese Prüfung verwendet, nicht abdecken.",
+      "alkali": "Glazecalc kann die Chemie dieser Glasur nicht mit ihrem Brand vergleichen: Ein großer Teil ihrer Schmelze stammt von Natrium und Kalium, die die veröffentlichten Werte, die diese Prüfung verwendet, nicht abdecken.",
+      "zinc": "Glazecalc kann die Chemie dieser Glasur nicht mit ihrem Brand vergleichen: Sie enthält viel Zink, wie Kristallglasuren es tun, und die veröffentlichten Werte, die diese Prüfung verwendet, decken das nicht ab.",
+      "notGlaze": "Glazecalc kann die Chemie dieser Glasur nicht mit ihrem Brand vergleichen: Ihre Formel ist nicht die einer üblichen Glasur (sehr wenig oder sehr viel Kieselsäure oder viele färbende Oxide), daher passen die veröffentlichten Werte, die diese Prüfung verwendet, nicht dazu.",
+      "process": "Glazecalc kann die Chemie dieser Glasur nicht mit ihrem Brand vergleichen: Sie ist für einen {process, select, raku {Rakubrand} salt {Salzbrand} soda {Sodabrand} wood {Holzbrand} other {Grubenbrand}}, bei dem der Ofen einen Teil des Glasierens übernimmt, und die veröffentlichten Werte, die diese Prüfung verwendet, decken das nicht ab.",
+      "ash": "Glazecalc kann die Chemie dieser Glasur nicht mit ihrem Brand vergleichen: Sie enthält Asche, deren Zusammensetzung zu stark schwankt für die veröffentlichten Werte, die diese Prüfung verwendet.",
+      "noTemperature": "Glazecalc kann die Chemie dieser Glasur nicht mit {scale, select, band {{band, select, low {dem niedrigen Brennbereich} mid {dem mittleren Brennbereich} other {dem hohen Brennbereich}}} sk {SK {cone}} temperature {{cone} °C} other {Kegel {cone}}} vergleichen: Für diesen Kegel gibt es keine gemessene Temperatur.",
+      "between": "Glazecalc kann die Chemie dieser Glasur nicht mit {scale, select, band {{band, select, low {dem niedrigen Brennbereich} mid {dem mittleren Brennbereich} other {dem hohen Brennbereich}}} sk {SK {cone}} temperature {{cone} °C} other {Kegel {cone}}} vergleichen: Die veröffentlichten Werte, die diese Prüfung verwendet, gelten für den niedrigen Brennbereich und für den mittleren und hohen Brennbereich, nicht für die Kegel dazwischen (01 bis 3).",
+      "belowChart": "Glazecalc kann die Chemie dieser Glasur nicht mit {scale, select, band {{band, select, low {dem niedrigen Brennbereich} mid {dem mittleren Brennbereich} other {dem hohen Brennbereich}}} sk {SK {cone}} temperature {{cone} °C} other {Kegel {cone}}} vergleichen: Katz’ Borregel gilt für Kegel 06 bis Kegel 10, und dieser Brand ist kühler."
+    }
   },
   "stull": {
     "heading": "Stull-Diagramm",
@@ -902,6 +934,7 @@
     "foodSurface": "Für eine Fläche mit Lebensmittelkontakt (eine Innenglasur)",
     "liner": {
       "note": "Die Lebensmittelsicherheit hängt davon ab, diese Glasur auf den Kegel zu brennen, bei dem sie getestet wurde: Eine zu schwach gebrannte Glasur kann Metalle abgeben.",
+      "range": "Der Brand dieser Glasur ist als Bereich angegeben, testen Sie sie daher am unteren Ende des Bereichs, wo sie am wenigsten schmilzt.",
       "untested": "Noch kein Kegel ist als getestet markiert.",
       "test": "Nur eine Prüfung der Metallabgabe an Ihren eigenen gebrannten Töpfen zeigt, ob sie lebensmittelgeeignet ist."
     },
@@ -964,5 +997,23 @@
     "replaceAsk": "Als getestet angehakt: {now}. Durch die Kegel ersetzen, die die Protokolle nennen, {logs}?",
     "replace": "Ersetzen",
     "keep": "So lassen"
+  },
+  "coneCards": {
+    "heading": "Ergebnisse nach Kegel",
+    "unplaced": "Keinem Kegel zugeordnet",
+    "unplacedNote": "Diese Brennprotokolle sind noch keinem Kegel zugeordnet: Wählen Sie, wo jedes gebrannt wurde.",
+    "approx": "≈ {temperature}",
+    "cautions": "{count, plural, =0 {keine Grenzwert-Warnhinweise} one {# Grenzwert-Warnhinweis} other {# Grenzwert-Warnhinweise}}",
+    "logs": "{count, plural, =0 {keine Brennprotokolle} one {# Brennprotokoll} other {# Brennprotokolle}}",
+    "outside": "außerhalb des angegebenen Brandes",
+    "outsideChoice": "{place} (außerhalb des angegebenen Brandes)",
+    "summaryLabel": "Wie es bei {place} geworden ist",
+    "summaryPlaceholder": "Oberfläche, Farbe, Ablaufen, Haarrisse ...",
+    "noAtmosphere": "Ofenatmosphäre nicht angegeben",
+    "placeLabel": "Wo {title} gebrannt wurde",
+    "notPlaced": "Nicht zugeordnet",
+    "add": "Ergebnis hinzufügen für",
+    "addButton": "Hinzufügen",
+    "saveFailed": "Wo das Brennprotokoll gebrannt wurde, konnte nicht gespeichert werden."
   }
 }

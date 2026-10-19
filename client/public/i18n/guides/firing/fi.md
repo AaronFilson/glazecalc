@@ -165,69 +165,69 @@ Eroja on odotettavissa: Orton sanoo, että ”tyypillisesti uunin ylä- ja alaos
 
 :::orton
 
-## The kiln sitter {#kiln-sitter lang=en}
+## Kiln-Sitter-katkaisin {#kiln-sitter}
 
-A **kiln sitter** is the mechanical switch, on the outside of many basic and older kilns, that turns the kiln off when a small cone bends. The best known is the Dawson Kiln-Sitter. It makes firing easier, but it is a convenience, not a safety device.
+**Kiln-Sitter-katkaisin**{{en: kiln sitter}} on monien yksinkertaisten ja vanhempien uunien kylkeen asennettu mekaaninen keilakatkaisin, joka sammuttaa uunin, kun pieni keila{{en: cone}} taipuu. Tunnetuin on Dawsonin Kiln-Sitter. Se helpottaa polttamista, mutta se on mukavuusvaruste, ei turvalaite.
 
-### How it works
+### Toimintaperiaate
 
-A porcelain tube reaches into the kiln. At its end, a small cone or a bar lies across two metal supports, under a **sensing rod** that pivots like a seesaw. Outside the kiln, the other end of the rod holds up a weight by a small claw. When the cone softens and bends to about 90°, the rod drops far enough to release the weight, the weight falls, and the power to the elements is cut.
+Posliiniputki ulottuu uunin sisään. Sen päässä pieni keila tai keilatanko on poikittain kahden metallituen päällä keinulaudan tavoin kääntyvän **tuntovarren** alla. Uunin ulkopuolella varren toinen pää pitää painoa ylhäällä pienen salvan varassa. Kun keila pehmenee ja taipuu noin 90°:n kulmaan, varsi laskee niin paljon, että paino vapautuu ja putoaa, ja vastusten virta katkeaa.
 
-Small cones and bars "give equivalent heat treatment". Orton notes that many beginners choose bars, because their even shape makes it easy to place them the same way every time. A small cone tapers, so where it sits matters: with its thin part under the rod the kiln shuts off cooler, and with its thick part hotter, a shift of "as much as 1/2 cone".
+Pienet keilat ja keilatangot ”antavat vastaavan lämpökäsittelyn”. Orton huomauttaa, että monet aloittelijat valitsevat tangot, koska niiden tasaisen muodon vuoksi ne on helppo asettaa joka kerta samalla tavalla. Pieni keila on suippo, joten sen asennolla on merkitystä: kun sen ohut osa on varren alla, uuni sammuu viileämpänä, ja kun paksu osa on varren alla, kuumempana, mikä siirtää sammumista ”jopa 1/2 keilaa”.
 
-### Which cone goes in the sitter
+### Katkaisimen keilan valinta
 
-Sources disagree. Dawson, who made the sitter, says to use the same number as the firing cone on the shelf, and to go one number hotter only if the shelf cone stays unbent. L&L says to use one number hotter than the shelf cones, because the sitter sits near the wall and the elements, gets more heat, and tends to shut off early. Orton settles the principle: "The shelf cone is the final judge of the firing process, not the Kiln-Sitter cone or bar."
-
-> [!NOTE]
-> Our starting point: put a small cone of the same number as your target in the sitter, with a cone pack on the shelf. If the shelf firing cone is under-bent when the kiln shuts off, go one number hotter in the sitter next time, or set the thicker part of the cone under the rod. If it is over-bent, do the opposite.
-
-### Setting it up, and checks before every firing
-
-Dawson's procedure, which doubles as a check before every firing:
-
-1. Turn all the switches off. Check that the sensing rod moves freely, sits centered in the tube and is not bent or corroded. If it is sluggish, Dawson says to replace the tube assembly.
-2. Brush a thin coat of high-fire **kiln wash** (a coating that stops melted material sticking) onto the cone supports and the rod where it touches the cone. Never put wash on the cone or the porcelain tube.
-3. Load shelves and ware at least 1 in (25 mm) above or below the tube, so nothing can touch, fall against or block it.
-4. Lift the weight, press the claw down onto the trigger, and lay the cone or bar flat on the supports against the metal step, as your sitter's manual shows, the same way every time. Check it again before closing the lid: "AN IMPROPERLY PLACED CONE OR BAR COULD CAUSE AN OVERFIRING."
-5. Set the limit timer and push in the plunger until it locks. Keep the kiln level and the space under the weight clear, so the weight can fall.
-
-### The limit timer
-
-Many sitters, including Dawson's LT models, have a **limit timer**: a clock that turns the kiln off after a set time, as a backup "in case the KILN-SITTER fails". It should always be set longer than the firing is expected to take. Sources set the margin differently:
-
-Table: How long to set the limit timer
-Label: Limit timer settings
-
-| Source    | Setting                                                                                                                |
-| --------- | ---------------------------------------------------------------------------------------------------------------------- |
-| Dawson    | ½ hour longer than the expected firing time until you know the kiln, later ¼ hour longer; never set it beyond 20 hours |
-| L&L       | Very high the first time, noting how long the firing takes; after that, about 1 hour longer                            |
-| Bracker's | 30 minutes to 1 hour longer than the firing time                                                                       |
+Lähteet ovat eri mieltä. Katkaisimen valmistaja Dawson neuvoo käyttämään samaa numeroa kuin uunilevyllä oleva tavoitekeila ja siirtymään numeroa kuumempaan vain, jos uunilevyn keila jää taipumatta. L&L neuvoo käyttämään numeroa kuumempaa keilaa kuin uunilevyn keilat, koska katkaisin on lähellä seinää ja vastuksia, saa enemmän lämpöä ja sammuttaa uunin helposti liian aikaisin. Orton ratkaisee periaatteen: ”Uunilevyn keila on polton lopullinen tuomari, ei Kiln-Sitter-katkaisimen keila tai tanko.”
 
 > [!NOTE]
-> Our starting point: generous the first time (within the dial's 20 hours), then ½ to 1 hour longer than the time you recorded. The timer also tells you how long a firing took: set at 7 and ending at 1 means 6 hours.
+> Oma lähtökohtamme: aseta katkaisimeen pieni keila, jonka numero on sama kuin tavoitteen, ja uunilevylle keilasarja{{en: cone pack}}. Jos uunilevyn tavoitekeila on uunin sammuessa taipunut liian vähän, käytä katkaisimessa seuraavalla kerralla numeroa kuumempaa keilaa tai aseta keilan paksumpi osa varren alle. Jos se on taipunut liikaa, tee päinvastoin.
 
-### When it shuts off early or late
+### Valmistelu ja tarkistukset ennen jokaista polttoa
 
-After each firing, read the sitter cone beside the shelf cones.
+Dawsonin menettely, joka toimii samalla tarkistuksena ennen jokaista polttoa:
 
-Table: Reading the sitter after a firing
-Label: Kiln sitter problems
+1. Käännä kaikki kytkimet pois päältä. Tarkista, että tuntovarsi liikkuu vapaasti, on keskellä putkea eikä ole taipunut tai syöpynyt. Jos varsi liikkuu jäykästi, Dawson neuvoo vaihtamaan koko putkiyksikön.
+2. Sivele keilan tukiin ja tuntovarteen siltä kohdalta, joka koskettaa keilaa, ohut kerros korkeapolttoon sopivaa **uunilevyn suoja-ainetta** (pinnoite, joka estää sulaneen aineen tarttumisen). Älä koskaan sivele suoja-ainetta keilaan tai posliiniputkeen.
+3. Lado uunilevyt ja esineet vähintään 1 tuuman (25 mm) päähän putken ylä- tai alapuolelle, jotta mikään ei voi koskettaa putkea, kaatua sitä vasten tai tukkia sitä.
+4. Nosta painoa, paina salpa alas laukaisimen päälle ja aseta keila tai keilatanko lappeelleen tukien päälle metalliolaketta vasten katkaisimen käyttöohjeen mukaisesti, joka kerta samalla tavalla. Tarkista asento uudelleen ennen kannen sulkemista: ”VÄÄRIN ASETETTU KEILA TAI TANKO VOI AIHEUTTAA YLIPOLTON.”
+5. Aseta aikarajoitin ja paina painike sisään, kunnes se lukittuu. Pidä uuni vaakasuorassa ja painon alla oleva tila vapaana, jotta paino pääsee putoamaan.
 
-| What you see                                    | Likely cause                                                                                           | What to do                                                       |
-| ----------------------------------------------- | ------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------- |
-| Sitter tripped, shelf firing cone under-bent    | The sitter ran hotter than the shelf (it sits near the wall)                                           | One cone hotter in the sitter, or the thicker part under the rod |
-| Sitter cone sagged well past 90°                | The kiln climbed too fast near the end                                                                 | Lower the switch settings, so the climb is slower (Dawson)       |
-| Sitter cone did not bend, or melted into a blob | The sitter itself: poor adjustment, a bent or corroded rod, or something lodged in or against the tube | Check and adjust the sitter by its manual before firing again    |
-| Early or late every time                        | Out of adjustment, or a worn rod                                                                       | Check with the firing gauge; move the trigger plate              |
+### Aikarajoitin
 
-To check the adjustment, Dawson uses a **firing gauge** that holds the rod where a fully bent cone would leave it; there should then be "1/16th-inch clearance" (about 1.6 mm) at the claw. Check it every 30 firings. Ceramics Monthly's rule: if the kiln shuts off early, move the trigger plate up slightly; if late, move it down slightly. Whatever the sitter does, "Always trust large witness cones over small sitter cones."
+Monissa katkaisimissa, myös Dawsonin LT-malleissa, on **aikarajoitin**: kello, joka sammuttaa uunin asetetun ajan jälkeen varmistuksena ”siltä varalta, että KILN-SITTER pettää”. Se pitäisi asettaa aina pidemmäksi kuin polton odotetaan kestävän. Lähteet mitoittavat varmuusmarginaalin eri tavoin:
+
+Table: Kuinka pitkäksi aikarajoitin asetetaan
+Label: Aikarajoittimen asetukset
+
+| Lähde     | Asetus                                                                                                                                |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| Dawson    | ½ tuntia odotettua polttoaikaa pidemmäksi, kunnes uuni on tuttu, myöhemmin ¼ tuntia pidemmäksi; älä koskaan aseta sitä yli 20 tuntiin |
+| L&L       | Ensimmäisellä kerralla hyvin pitkäksi, ja polton kesto merkitään muistiin; sen jälkeen noin 1 tunti pidemmäksi                        |
+| Bracker’s | 30 minuutista 1 tuntiin polttoaikaa pidemmäksi                                                                                        |
+
+> [!NOTE]
+> Oma lähtökohtamme: ensimmäisellä kerralla reilusti (asteikon 20 tunnin rajoissa), sitten ½–1 tuntia kirjattua polttoaikaa pidemmäksi. Aikarajoitin kertoo myös, kauanko poltto kesti: jos se asetettiin lukemaan 7 ja se pysähtyi lukemaan 1, poltto kesti 6 tuntia.
+
+### Liian aikainen tai myöhäinen sammutus
+
+Lue jokaisen polton jälkeen katkaisimen keila uunilevyn keilojen rinnalla.
+
+Table: Katkaisimen lukeminen polton jälkeen
+Label: Kiln-Sitter-katkaisimen ongelmat
+
+| Mitä näkyy                                                   | Todennäköinen syy                                                                                     | Mitä tehdä                                                              |
+| ------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
+| Katkaisin laukesi, uunilevyn tavoitekeila taipui liian vähän | Katkaisin kävi kuumempana kuin uunilevy (se on lähellä seinää)                                        | Numeroa kuumempi keila katkaisimeen tai paksumpi osa varren alle        |
+| Katkaisimen keila lysähti selvästi yli 90°                   | Uunin lämpötila nousi lopussa liian nopeasti                                                          | Käännä kytkimet pienemmälle, jotta nousu on hitaampi (Dawson)           |
+| Katkaisimen keila ei taipunut tai suli möykyksi              | Itse katkaisin: huono säätö, taipunut tai syöpynyt varsi tai jotain juuttunut putkeen tai sitä vasten | Tarkista ja säädä katkaisin käyttöohjeen mukaan ennen seuraavaa polttoa |
+| Joka kerta liian aikaisin tai myöhään                        | Säätö pielessä tai kulunut varsi                                                                      | Tarkista säätötulkilla; siirrä laukaisulevyä                            |
+
+Säädön tarkistamiseen Dawson käyttää **säätötulkkia**, joka pitää varren siinä asennossa, johon täysin taipunut keila sen jättäisi; silloin salvassa pitäisi olla ”1/16 tuuman välys” (noin 1,6 mm). Tarkista säätö 30 polton välein. Ceramics Monthly -lehden sääntö: jos uuni sammuu liian aikaisin, siirrä laukaisulevyä hieman ylöspäin; jos liian myöhään, siirrä sitä hieman alaspäin. Teki katkaisin mitä tahansa, ”luota aina enemmän isoihin tarkkailukeiloihin kuin pieniin katkaisimen keiloihin”.
 
 > [!WARNING]
-> **A kiln sitter is not a safety device.** Dawson's manual says it "is NOT intended to perform as a fail-safe shut-off device and your kiln should NOT be left unattended beyond the estimated firing time." Something as simple as greenware falling against the tube "might cause an over-firing". Be there to check the kiln when it should be finishing, and never fire it over or near anything that burns, such as a wood floor or carpet.
+> **Kiln-Sitter-katkaisin ei ole turvalaite.** Dawsonin käyttöohjeen mukaan se ”EI ole tarkoitettu toimimaan vikaturvallisena katkaisulaitteena, eikä uunia PITÄISI jättää valvomatta arvioidun polttoajan jälkeen”. Niinkin yksinkertainen asia kuin putkea vasten kaatuva polttamaton esine ”voi aiheuttaa ylipolton”. Ole paikalla tarkistamassa uuni, kun polton pitäisi olla päättymässä, äläkä koskaan käytä uunia palavan materiaalin, kuten puulattian tai maton, päällä tai lähellä.
 
-The sitter is built for firings "up to and including Cone 8". It cannot hold a temperature or cool slowly by itself. With practice and a log, though, you can "become the controller", as Digitalfire puts it: watch the cones and turn the switches by hand.
+Katkaisin on tehty polttoihin ”keilaan 8 asti, se mukaan lukien”. Se ei pysty itse pitämään lämpötilaa tai jäähdyttämään hitaasti. Harjoituksen ja polttopäiväkirjan avulla voi kuitenkin ”ryhtyä itse automatiikaksi”, kuten Digitalfire asian ilmaisee: seurata keiloja ja kääntää kytkimiä käsin.
 
 :::
 
@@ -281,92 +281,92 @@ Label: Seuraavan polton säätäminen
 
 :::sk
 
-## Firing to SK cones {#sk-cones lang=en}
+## Poltto SK-keiloihin {#sk-cones}
 
-SK cones are the pyrometric cones made to Japan's standard, JIS R 8101, and sold in Japan by dealers such as Yuko Trading (有恒商事). Like any cone, an SK cone measures heatwork, not temperature alone: it softens and bends over when the ware has had enough heat, and you read how far it bent. Witness cones, reading how far a cone has bent, and holds work for it as for any cone. This section names each cone's system, and never turns an SK number into another system's number: the numbers of different cone series are not interchangeable.
+SK-keilat ovat Japanin standardin JIS R 8101 mukaan valmistettuja pyrometrisiä keiloja, ja Japanissa niitä myyvät esimerkiksi Yuko Tradingin (有恒商事) kaltaiset jälleenmyyjät. Kuten mikä tahansa keila, SK-keila mittaa lämpötyötä{{en: heatwork}}, ei pelkkää lämpötilaa: se pehmenee ja taipuu, kun esineet ovat saaneet tarpeeksi lämpöä, ja siitä katsotaan, kuinka pitkälle se taipui. Tarkkailukeilat{{en: witness cone}}, keilan taipuman lukeminen ja haudutus toimivat sen kanssa samoin kuin minkä tahansa keilan kanssa. Tässä osiossa jokaisen keilan järjestelmä mainitaan nimeltä, eikä SK-numeroa koskaan muuteta toisen järjestelmän numeroksi: eri keilajärjestelmien numerot eivät ole keskenään vaihdettavissa.
 
 > [!NOTE]
-> Always write "SK" before the number. Many older Japanese recipes say only "SK 8" or "SK 9" without saying whose cone. Kyoto cones and SK cones to JIS carry the same numbers but bend at different temperatures (see Kyoto cones, below).
+> Kirjoita numeron eteen aina ”SK”. Monissa vanhemmissa japanilaisissa resepteissä lukee vain ”SK 8” tai ”SK 9” kertomatta, kenen keilasta on kyse. Kioton keiloissa ja JIS-standardin mukaisissa SK-keiloissa on samat numerot, mutta ne taipuvat eri lämpötiloissa (katso alempaa Kioton keilat).
 
-### The large cones
+### Isot keilat
 
-The standard has two sizes. Large cones (大型コーン) are "mainly used for measuring the degree of firing" (焼度測定), which is what a potter wants. Small cones (SK 26 to SK 42, at the top of the range) are "mainly used for refractoriness tests" and are not covered here. The table below gives the large cones from SK 022 to SK 20.
+Standardissa on kaksi kokoa. Isoja keiloja (大型コーン) käytetään ”pääasiassa polttoasteen mittaamiseen” (焼度測定), ja juuri sitä keraamikko tarvitsee. Pieniä keiloja (SK 26–SK 42, asteikon yläpäässä) käytetään ”pääasiassa tulenkestävyyskokeisiin”, eikä niitä käsitellä tässä. Alla olevassa taulukossa ovat isot keilat väliltä SK 022–SK 20.
 
-The numbers run from SK 022, the coolest, up to SK 20 here. Between SK 015 and SK 6 the printed numbers carry an "a" (SK 015a, SK 6a); write it as printed.
+Numerot alkavat tässä viileimmästä keilasta SK 022 ja päättyvät keilaan SK 20. Välillä SK 015–SK 6 painetuissa numeroissa on ”a” (SK 015a, SK 6a); kirjoita se niin kuin se on painettu.
 
-### Setting large cones
+### Isojen keilojen asettaminen
 
-Set each large cone in a plaque or a pat of clay, leaning toward its bending face. As with any cone, keep the height and the lean the same from firing to firing, because a difference in either changes how far it bends. Set the three cones of the pack (below) together, deep in the kiln near the middle of the load, where they get the heat the ware gets, yet where you can see them through a peephole; before you close the kiln, check that you can see all three.
+Aseta jokainen iso keila keilapidikkeeseen tai savipetiin kallelleen kohti taipumispuoltaan. Kuten minkä tahansa keilan kohdalla, pidä korkeus ja kallistus samoina poltosta toiseen, koska ero kummassa tahansa muuttaa sitä, kuinka pitkälle keila taipuu. Aseta keilasarjan{{en: cone pack}} kolme keilaa (katso alempaa) yhdessä syvälle uuniin, lähelle uunillisen keskikohtaa, jossa ne saavat saman lämmön kuin esineet, mutta kuitenkin tirkistysaukosta näkyviin; varmista ennen uunin sulkemista, että näet kaikki kolme.
 
-### Guide, firing and guard cones
+### Ennakko-, tavoite- ja varmistuskeila
 
-Cones are sold and set as three: a guide cone, a firing cone at the target, and a guard cone. Take the firing cone as the SK number your recipe or clay names, the guide cone as the next cooler cone (one row up in the table) and the guard cone as the next hotter one. When the guide cone starts to bend, the end is near; when the guard cone bends, the firing has gone too far.
+Keiloja myydään ja asetetaan kolmen sarjoina: ennakkokeila, tavoitekeila tavoitelämpötilaan ja varmistuskeila. Valitse tavoitekeilaksi se SK-numero, jonka resepti tai savi ilmoittaa, ennakkokeilaksi yhtä numeroa viileämpi keila (taulukossa yhtä riviä ylempänä) ja varmistuskeilaksi yhtä numeroa kuumempi. Kun ennakkokeila alkaa taipua, loppu on lähellä; kun varmistuskeila taipuu, poltto on mennyt liian pitkälle.
 
-### The SK chart
+### SK-taulukko
 
-Table: SK large cones (JIS R 8101): the nominal (JIS) temperature of each
-Label: SK chart
+Table: Isot SK-keilat (JIS R 8101): kunkin keilan nimellinen (JIS) lämpötila
+Label: SK-taulukko
 
-| Cone    | Nominal (JIS) temperature |
-| ------- | ------------------------: |
-| SK 022  |       {{1112 °F; 600 °C}} |
-| SK 021  |       {{1202 °F; 650 °C}} |
-| SK 020  |       {{1238 °F; 670 °C}} |
-| SK 019  |       {{1274 °F; 690 °C}} |
-| SK 018  |       {{1310 °F; 710 °C}} |
-| SK 017  |       {{1346 °F; 730 °C}} |
-| SK 016  |       {{1382 °F; 750 °C}} |
-| SK 015a |       {{1454 °F; 790 °C}} |
-| SK 014a |       {{1499 °F; 815 °C}} |
-| SK 013a |       {{1535 °F; 835 °C}} |
-| SK 012a |       {{1571 °F; 855 °C}} |
-| SK 011a |       {{1616 °F; 880 °C}} |
-| SK 010a |       {{1652 °F; 900 °C}} |
-| SK 09a  |       {{1688 °F; 920 °C}} |
-| SK 08a  |       {{1724 °F; 940 °C}} |
-| SK 07a  |       {{1760 °F; 960 °C}} |
-| SK 06a  |       {{1796 °F; 980 °C}} |
-| SK 05a  |      {{1832 °F; 1000 °C}} |
-| SK 04a  |      {{1868 °F; 1020 °C}} |
-| SK 03a  |      {{1904 °F; 1040 °C}} |
-| SK 02a  |      {{1940 °F; 1060 °C}} |
-| SK 01a  |      {{1976 °F; 1080 °C}} |
-| SK 1a   |      {{2012 °F; 1100 °C}} |
-| SK 2a   |      {{2048 °F; 1120 °C}} |
-| SK 3a   |      {{2084 °F; 1140 °C}} |
-| SK 4a   |      {{2120 °F; 1160 °C}} |
-| SK 5a   |      {{2156 °F; 1180 °C}} |
-| SK 6a   |      {{2192 °F; 1200 °C}} |
-| SK 7    |      {{2246 °F; 1230 °C}} |
-| SK 8    |      {{2282 °F; 1250 °C}} |
-| SK 9    |      {{2336 °F; 1280 °C}} |
-| SK 10   |      {{2372 °F; 1300 °C}} |
-| SK 11   |      {{2408 °F; 1320 °C}} |
-| SK 12   |      {{2462 °F; 1350 °C}} |
-| SK 13   |      {{2516 °F; 1380 °C}} |
-| SK 14   |      {{2570 °F; 1410 °C}} |
-| SK 15   |      {{2615 °F; 1435 °C}} |
-| SK 16   |      {{2660 °F; 1460 °C}} |
-| SK 17   |      {{2696 °F; 1480 °C}} |
-| SK 18   |      {{2732 °F; 1500 °C}} |
-| SK 19   |      {{2768 °F; 1520 °C}} |
-| SK 20   |      {{2786 °F; 1530 °C}} |
+| Keila   | Nimellinen (JIS) lämpötila |
+| ------- | -------------------------: |
+| SK 022  |        {{1112 °F; 600 °C}} |
+| SK 021  |        {{1202 °F; 650 °C}} |
+| SK 020  |        {{1238 °F; 670 °C}} |
+| SK 019  |        {{1274 °F; 690 °C}} |
+| SK 018  |        {{1310 °F; 710 °C}} |
+| SK 017  |        {{1346 °F; 730 °C}} |
+| SK 016  |        {{1382 °F; 750 °C}} |
+| SK 015a |        {{1454 °F; 790 °C}} |
+| SK 014a |        {{1499 °F; 815 °C}} |
+| SK 013a |        {{1535 °F; 835 °C}} |
+| SK 012a |        {{1571 °F; 855 °C}} |
+| SK 011a |        {{1616 °F; 880 °C}} |
+| SK 010a |        {{1652 °F; 900 °C}} |
+| SK 09a  |        {{1688 °F; 920 °C}} |
+| SK 08a  |        {{1724 °F; 940 °C}} |
+| SK 07a  |        {{1760 °F; 960 °C}} |
+| SK 06a  |        {{1796 °F; 980 °C}} |
+| SK 05a  |       {{1832 °F; 1000 °C}} |
+| SK 04a  |       {{1868 °F; 1020 °C}} |
+| SK 03a  |       {{1904 °F; 1040 °C}} |
+| SK 02a  |       {{1940 °F; 1060 °C}} |
+| SK 01a  |       {{1976 °F; 1080 °C}} |
+| SK 1a   |       {{2012 °F; 1100 °C}} |
+| SK 2a   |       {{2048 °F; 1120 °C}} |
+| SK 3a   |       {{2084 °F; 1140 °C}} |
+| SK 4a   |       {{2120 °F; 1160 °C}} |
+| SK 5a   |       {{2156 °F; 1180 °C}} |
+| SK 6a   |       {{2192 °F; 1200 °C}} |
+| SK 7    |       {{2246 °F; 1230 °C}} |
+| SK 8    |       {{2282 °F; 1250 °C}} |
+| SK 9    |       {{2336 °F; 1280 °C}} |
+| SK 10   |       {{2372 °F; 1300 °C}} |
+| SK 11   |       {{2408 °F; 1320 °C}} |
+| SK 12   |       {{2462 °F; 1350 °C}} |
+| SK 13   |       {{2516 °F; 1380 °C}} |
+| SK 14   |       {{2570 °F; 1410 °C}} |
+| SK 15   |       {{2615 °F; 1435 °C}} |
+| SK 16   |       {{2660 °F; 1460 °C}} |
+| SK 17   |       {{2696 °F; 1480 °C}} |
+| SK 18   |       {{2732 °F; 1500 °C}} |
+| SK 19   |       {{2768 °F; 1520 °C}} |
+| SK 20   |       {{2786 °F; 1530 °C}} |
 
-Every figure is nominal (JIS): the temperature the standard gives for the cone, as printed in Yuko Trading's table. The table does not print a heating rate. The standard gives reference temperatures. At a potter's rate of about 100 °C/h, Kyoto's municipal institute measured its own Kyoto cones bending 47–79 °C cooler than the JIS figure for the same number; we found no such measurements for SK cones to JIS. Set a witness cone and compare.
+Jokainen luku on nimellinen (JIS): lämpötila, jonka standardi antaa keilalle, sellaisena kuin se on painettu Yuko Tradingin taulukkoon. Taulukossa ei ole nousunopeutta. Standardi antaa vertailulämpötiloja. Keraamikon tavallisella, noin 100 °C/h nousunopeudella Kioton kaupungin tutkimuslaitos mittasi omien Kioton keilojensa taipuvan 47–79 °C alemmassa lämpötilassa kuin saman numeron JIS-lämpötila; JIS-standardin mukaisista SK-keiloista emme löytäneet vastaavia mittauksia. Aseta tarkkailukeila ja vertaa.
 
-### Kyoto cones
+### Kioton keilat
 
-Kyoto cones (京都ゼーゲル), made by Kyoto's municipal institute, are no longer made: news reports say the institute ended production at the close of fiscal 2009. They carry the same numbers as SK cones to JIS but bend cooler: a Kyoto cone bends at about the temperature of the SK cone to JIS two or three numbers lower. A recipe from Kyoto that says "SK 8" may mean a Kyoto cone. The institute has published advice for potters moving from Kyoto cones to Orton cones, and substitutes Orton cone 10 for its own Kyoto SK 12; that is the institute's choice from its own measurements at 100 °C/h, and applies to no other cone.
+Kioton keiloja (京都ゼーゲル), joita Kioton kaupungin tutkimuslaitos valmisti, ei enää valmisteta: uutisten mukaan laitos lopetti valmistuksen tilikauden 2009 päättyessä. Niissä on samat numerot kuin JIS-standardin mukaisissa SK-keiloissa, mutta ne taipuvat alemmassa lämpötilassa: Kioton keila taipuu suunnilleen sen JIS-standardin mukaisen SK-keilan lämpötilassa, jonka numero on kahta tai kolmea numeroa alempi. Kiotolainen resepti, jossa lukee ”SK 8”, voi tarkoittaa Kioton keilaa. Laitos on julkaissut ohjeita keraamikoille, jotka siirtyvät Kioton keiloista Orton-keiloihin, ja korvaa oman Kioton SK 12 -keilansa Orton-keilalla 10; se on laitoksen oma valinta sen omien 100 °C/h:n mittausten perusteella, eikä se koske mitään muuta keilaa.
 
-### Orton cones sold in Japan
+### Japanissa myytävät Orton-keilat
 
-Orton self-supporting cones are sold in Japan under the name 立つゼーゲル ("standing Seger"), because they need no plaque or stand. They are Orton cones, with Orton's numbers and Orton's chart (above): fire to one only by its Orton number, and keep SK and Orton cones in separate packs, never in the same one.
+Ortonin itsestään seisovia keiloja myydään Japanissa nimellä 立つゼーゲル (”seisova Seger”), koska ne eivät tarvitse keilapidikettä tai telinettä. Ne ovat Orton-keiloja, joilla on Ortonin numerot ja Ortonin taulukko (yllä): polta sellaiseen keilaan vain sen Orton-numeron mukaan, ja pidä SK- ja Orton-keilat eri keilasarjoissa, ei koskaan samassa.
 
-### Sources for SK cones
+### SK-keilojen lähteet
 
-- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (the SK table, checked 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
-- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (in force, reconfirmed 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
-- [Kyoto Municipal Institute of Industrial Technology and Culture: points to note when moving from Kyoto cones to Orton cones](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
+- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (SK-taulukko, tarkistettu 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
+- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (voimassa, vahvistettu uudelleen 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
+- [Kyoto Municipal Institute of Industrial Technology and Culture: huomioitavaa siirryttäessä Kioton keiloista Orton-keiloihin](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
 
 :::
 

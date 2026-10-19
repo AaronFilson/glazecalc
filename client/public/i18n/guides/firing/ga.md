@@ -165,69 +165,69 @@ Bí ag súil le difríochtaí: deir Orton “De ghnáth, feicfidh tú difríocht
 
 :::orton
 
-## The kiln sitter {#kiln-sitter lang=en}
+## An Kiln-Sitter {#kiln-sitter}
 
-A **kiln sitter** is the mechanical switch, on the outside of many basic and older kilns, that turns the kiln off when a small cone bends. The best known is the Dawson Kiln-Sitter. It makes firing easier, but it is a convenience, not a safety device.
+Is éard is **Kiln-Sitter** ann ná an lasc mheicniúil, ar an taobh amuigh de go leor áitheanna simplí agus áitheanna níos sine, a mhúchann an áith nuair a lúbann cón{{en: cone}} beag. Is é Kiln-Sitter Dawson an ceann is cáiliúla. Déanann sé an bhácáil níos éasca, ach is áis é, ní gléas sábháilteachta.
 
-### How it works
+### Conas a oibríonn sé
 
-A porcelain tube reaches into the kiln. At its end, a small cone or a bar lies across two metal supports, under a **sensing rod** that pivots like a seesaw. Outside the kiln, the other end of the rod holds up a weight by a small claw. When the cone softens and bends to about 90°, the rod drops far enough to release the weight, the weight falls, and the power to the elements is cut.
+Síneann feadán poircealláin isteach san áith. Ag a cheann, luíonn cón beag nó barra trasna ar dhá thaca miotail, faoi **shlat bhraite** a chasann ar mhaighdeog mar chrandaí bogadaí. Lasmuigh den áith, coinníonn ceann eile na slaite meáchan in airde le crúb bheag. Nuair a bhogann an cón agus a lúbann sé go dtí thart ar 90°, titeann an tslat sách fada chun an meáchan a scaoileadh, titeann an meáchan, agus gearrtar an chumhacht chuig na heilimintí.
 
-Small cones and bars "give equivalent heat treatment". Orton notes that many beginners choose bars, because their even shape makes it easy to place them the same way every time. A small cone tapers, so where it sits matters: with its thin part under the rod the kiln shuts off cooler, and with its thick part hotter, a shift of "as much as 1/2 cone".
+Tugann cóin bheaga agus barraí “cóireáil teasa choibhéiseach”. Tugann Orton faoi deara go roghnaíonn go leor tosaitheoirí barraí, mar go bhfuil sé éasca, de bharr a gcrutha chothroim, iad a chur ar an mbealach céanna gach uair. Bíonn cón beag ag caolú, mar sin is tábhachtach an áit a luíonn sé: má bhíonn a chuid tanaí faoin tslat, múchtar an áith níos fuaire, agus má bhíonn a chuid tiubh faoin tslat, níos teo, athrú “an oiread le 1/2 cón”.
 
-### Which cone goes in the sitter
+### Cén cón a théann sa Kiln-Sitter
 
-Sources disagree. Dawson, who made the sitter, says to use the same number as the firing cone on the shelf, and to go one number hotter only if the shelf cone stays unbent. L&L says to use one number hotter than the shelf cones, because the sitter sits near the wall and the elements, gets more heat, and tends to shut off early. Orton settles the principle: "The shelf cone is the final judge of the firing process, not the Kiln-Sitter cone or bar."
-
-> [!NOTE]
-> Our starting point: put a small cone of the same number as your target in the sitter, with a cone pack on the shelf. If the shelf firing cone is under-bent when the kiln shuts off, go one number hotter in the sitter next time, or set the thicker part of the cone under the rod. If it is over-bent, do the opposite.
-
-### Setting it up, and checks before every firing
-
-Dawson's procedure, which doubles as a check before every firing:
-
-1. Turn all the switches off. Check that the sensing rod moves freely, sits centered in the tube and is not bent or corroded. If it is sluggish, Dawson says to replace the tube assembly.
-2. Brush a thin coat of high-fire **kiln wash** (a coating that stops melted material sticking) onto the cone supports and the rod where it touches the cone. Never put wash on the cone or the porcelain tube.
-3. Load shelves and ware at least 1 in (25 mm) above or below the tube, so nothing can touch, fall against or block it.
-4. Lift the weight, press the claw down onto the trigger, and lay the cone or bar flat on the supports against the metal step, as your sitter's manual shows, the same way every time. Check it again before closing the lid: "AN IMPROPERLY PLACED CONE OR BAR COULD CAUSE AN OVERFIRING."
-5. Set the limit timer and push in the plunger until it locks. Keep the kiln level and the space under the weight clear, so the weight can fall.
-
-### The limit timer
-
-Many sitters, including Dawson's LT models, have a **limit timer**: a clock that turns the kiln off after a set time, as a backup "in case the KILN-SITTER fails". It should always be set longer than the firing is expected to take. Sources set the margin differently:
-
-Table: How long to set the limit timer
-Label: Limit timer settings
-
-| Source    | Setting                                                                                                                |
-| --------- | ---------------------------------------------------------------------------------------------------------------------- |
-| Dawson    | ½ hour longer than the expected firing time until you know the kiln, later ¼ hour longer; never set it beyond 20 hours |
-| L&L       | Very high the first time, noting how long the firing takes; after that, about 1 hour longer                            |
-| Bracker's | 30 minutes to 1 hour longer than the firing time                                                                       |
+Ní réitíonn na foinsí le chéile. Deir Dawson, a rinne an Kiln-Sitter, an uimhir chéanna a úsáid agus atá ag an gcón bácála ar an tseilf, agus dul uimhir amháin níos teo sa chás amháin go bhfanann cón na seilfe gan lúbadh. Deir L&L cón atá uimhir amháin níos teo ná cóin na seilfe a úsáid, mar go mbíonn an Kiln-Sitter in aice leis an mballa agus leis na heilimintí, go bhfaigheann sé níos mó teasa, agus gur gnách leis an áith a mhúchadh go luath. Socraíonn Orton an prionsabal: “Is é cón na seilfe an breitheamh deiridh ar phróiseas na bácála, ní cón ná barra an Kiln-Sitter.”
 
 > [!NOTE]
-> Our starting point: generous the first time (within the dial's 20 hours), then ½ to 1 hour longer than the time you recorded. The timer also tells you how long a firing took: set at 7 and ending at 1 means 6 hours.
+> Ár bpointe tosaigh: cuir cón beag sa Kiln-Sitter a bhfuil an uimhir chéanna air is atá ar do sprioc, agus paca cón{{en: cone pack}} ar an tseilf. Mura bhfuil cón bácála na seilfe lúbtha a dhóthain nuair a mhúchann an áith, téigh uimhir amháin níos teo sa Kiln-Sitter an chéad uair eile, nó cuir an chuid is tiubh den chón faoin tslat. Má tá sé lúbtha an iomarca, déan a mhalairt.
 
-### When it shuts off early or late
+### É a shocrú, agus seiceálacha roimh gach bácáil
 
-After each firing, read the sitter cone beside the shelf cones.
+Nós imeachta Dawson, a fheidhmíonn freisin mar sheiceáil roimh gach bácáil:
 
-Table: Reading the sitter after a firing
-Label: Kiln sitter problems
+1. Múch na lasca go léir. Seiceáil go mbogann an tslat bhraite go saor, go bhfuil sí i lár an fheadáin agus nach bhfuil sí lúbtha ná creimthe. Má bhogann sí go righin, deir Dawson cóimeáil an fheadáin a athsholáthar.
+2. Scuab sraith thanaí de **bhrat seilfe** ardbhácála (brat a choisceann ar ábhar leáite greamú) ar thacaí an chóin, agus ar an tslat san áit a mbaineann sí leis an gcón. Ná cuir brat seilfe riamh ar an gcón ná ar an bhfeadán poircealláin.
+3. Lódáil seilfeanna agus píosaí 1 orlach (25 mm) ar a laghad níos airde nó níos ísle ná an feadán, ionas nach féidir le haon rud teagmháil leis, titim ina choinne ná é a bhlocáil.
+4. Ardaigh an meáchan, brúigh an chrúb anuas ar an truicear, agus leag an cón nó an barra cothrom ar na tacaí in aghaidh na céime miotail, mar a thaispeánann lámhleabhar do Kiln-Sitter, ar an mbealach céanna gach uair. Seiceáil arís é sula ndúnann tú an clúdach: “D’FHÉADFADH RÓBHÁCÁIL A BHEITH MAR THORADH AR CHÓN NÓ AR BHARRA A CHUIRTEAR SA SUÍOMH MÍCHEART.”
+5. Socraigh an lasc ama agus brúigh isteach an suncaire go dtí go nglasálann sé. Coinnigh an áith ar leibhéal agus an spás faoin meáchan glan, ionas gur féidir leis an meáchan titim.
 
-| What you see                                    | Likely cause                                                                                           | What to do                                                       |
-| ----------------------------------------------- | ------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------- |
-| Sitter tripped, shelf firing cone under-bent    | The sitter ran hotter than the shelf (it sits near the wall)                                           | One cone hotter in the sitter, or the thicker part under the rod |
-| Sitter cone sagged well past 90°                | The kiln climbed too fast near the end                                                                 | Lower the switch settings, so the climb is slower (Dawson)       |
-| Sitter cone did not bend, or melted into a blob | The sitter itself: poor adjustment, a bent or corroded rod, or something lodged in or against the tube | Check and adjust the sitter by its manual before firing again    |
-| Early or late every time                        | Out of adjustment, or a worn rod                                                                       | Check with the firing gauge; move the trigger plate              |
+### An lasc ama
 
-To check the adjustment, Dawson uses a **firing gauge** that holds the rod where a fully bent cone would leave it; there should then be "1/16th-inch clearance" (about 1.6 mm) at the claw. Check it every 30 firings. Ceramics Monthly's rule: if the kiln shuts off early, move the trigger plate up slightly; if late, move it down slightly. Whatever the sitter does, "Always trust large witness cones over small sitter cones."
+Tá **lasc ama** ar go leor Kiln-Sitter, samhlacha LT Dawson ina measc: clog a mhúchann an áith tar éis ama shocraithe, mar chúltaca “ar eagla go dteipfeadh ar an KILN-SITTER”. Ba cheart í a shocrú i gcónaí níos faide ná an t-am a bhfuiltear ag súil go dtógfaidh an bhácáil. Socraíonn na foinsí an corrlach ar bhealaí difriúla:
+
+Table: Cá fhad a shocrófar an lasc ama
+Label: Socruithe na laisce ama
+
+| Foinse    | Socrú                                                                                                                                                                                              |
+| --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Dawson    | ½ uair an chloig níos faide ná an t-am bácála a bhfuiltear ag súil leis go dtí go mbeidh aithne agat ar an áith, níos déanaí ¼ uair an chloig níos faide; ná socraigh thar 20 uair an chloig riamh |
+| L&L       | An-ard an chéad uair, agus nóta á dhéanamh agat den fhad a thógann an bhácáil; ina dhiaidh sin, thart ar 1 uair an chloig níos faide                                                               |
+| Bracker's | 30 nóiméad go 1 uair an chloig níos faide ná an t-am bácála                                                                                                                                        |
+
+> [!NOTE]
+> Ár bpointe tosaigh: go fial an chéad uair (laistigh de 20 uair an chloig an diail), ansin ½ go 1 uair an chloig níos faide ná an t-am a thaifead tú. Insíonn an lasc ama duit freisin cé chomh fada a mhair bácáil: má socraíodh ar 7 í agus má chríochnaigh sí ar 1, ciallaíonn sé sin 6 huaire an chloig.
+
+### Nuair a mhúchann sé go luath nó go déanach
+
+Tar éis gach bácála, léigh cón an Kiln-Sitter in aice le cóin na seilfe.
+
+Table: An Kiln-Sitter a léamh tar éis bácála
+Label: Fadhbanna an Kiln-Sitter
+
+| An rud a fheiceann tú                                                        | Cúis is dóichí                                                                                                  | Cad atá le déanamh                                                                      |
+| ---------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| Mhúch an Kiln-Sitter an áith, ach níl cón bácála na seilfe lúbtha a dhóthain | Bhí an Kiln-Sitter níos teo ná an tseilf (tá sé in aice leis an mballa)                                         | Uimhir amháin níos teo sa Kiln-Sitter, nó an chuid is tiubh faoin tslat                 |
+| Chrom cón an Kiln-Sitter i bhfad thar 90°                                    | D’ardaigh an teocht rótapa gar don deireadh                                                                     | Ísligh socruithe na lasc, ionas go mbeidh an t-ardú níos moille (Dawson)                |
+| Níor lúb cón an Kiln-Sitter, nó leáigh sé ina mheall                         | An Kiln-Sitter féin: droch-choigeartú, slat lúbtha nó chreimthe, nó rud éigin sáite san fheadán nó ina luí leis | Seiceáil agus coigeartaigh an Kiln-Sitter de réir a lámhleabhair sula mbácálann tú arís |
+| Go luath nó go déanach gach uair                                             | As coigeartú, nó slat chaite                                                                                    | Seiceáil leis an tomhsaire bácála; bog an pláta truicir                                 |
+
+Chun an coigeartú a sheiceáil, úsáideann Dawson **tomhsaire bácála** a choinníonn an tslat san áit a bhfágfadh cón lánlúbtha í; ba cheart go mbeadh “glanspás 1/16 orlach” (thart ar 1.6 mm) ag an gcrúb ansin. Seiceáil é gach 30 bácáil. Riail Ceramics Monthly: má mhúchann an áith go luath, bog an pláta truicir suas beagán; má mhúchann sí go déanach, bog síos beagán é. Is cuma cad a dhéanann an Kiln-Sitter, “Bíodh muinín agat i gcónaí as cóin fhianaise mhóra{{en: witness cones}} seachas as cóin bheaga an Kiln-Sitter.”
 
 > [!WARNING]
-> **A kiln sitter is not a safety device.** Dawson's manual says it "is NOT intended to perform as a fail-safe shut-off device and your kiln should NOT be left unattended beyond the estimated firing time." Something as simple as greenware falling against the tube "might cause an over-firing". Be there to check the kiln when it should be finishing, and never fire it over or near anything that burns, such as a wood floor or carpet.
+> **Ní gléas sábháilteachta é Kiln-Sitter.** Deir lámhleabhar Dawson “NÍL sé ceaptha feidhmiú mar ghléas múchta slánchinnte agus NÍOR CHEART d’áith a fhágáil gan aire thar an am bácála measta.” Rud chomh simplí le hamh-earraí{{en: greenware}} a thiteann in aghaidh an fheadáin, “d’fhéadfadh sé róbhácáil a chruthú”. Bí ann chun an áith a sheiceáil nuair ba cheart di a bheith ag críochnú, agus ná bácáil riamh í os cionn aon ruda indóite ná in aice leis, mar shampla urlár adhmaid nó cairpéad.
 
-The sitter is built for firings "up to and including Cone 8". It cannot hold a temperature or cool slowly by itself. With practice and a log, though, you can "become the controller", as Digitalfire puts it: watch the cones and turn the switches by hand.
+Tá an Kiln-Sitter déanta do bhácálacha “go dtí Cón 8, Cón 8 féin san áireamh”. Ní féidir leis teocht a choinneáil ná fuarú go mall leis féin. Le cleachtadh agus le taifead bácála, áfach, is féidir leat “a bheith i do rialaitheoir”, mar a deir Digitalfire: bí ag faire ar na cóin agus cas na lasca de láimh.
 
 :::
 
@@ -281,92 +281,92 @@ Is éard is **ceartú cóin** ann ná socrú rialaitheora a ardaíonn nó a ísl
 
 :::sk
 
-## Firing to SK cones {#sk-cones lang=en}
+## Bácáil go cóin SK {#sk-cones}
 
-SK cones are the pyrometric cones made to Japan's standard, JIS R 8101, and sold in Japan by dealers such as Yuko Trading (有恒商事). Like any cone, an SK cone measures heatwork, not temperature alone: it softens and bends over when the ware has had enough heat, and you read how far it bent. Witness cones, reading how far a cone has bent, and holds work for it as for any cone. This section names each cone's system, and never turns an SK number into another system's number: the numbers of different cone series are not interchangeable.
+Is éard is cóin SK ann ná na cóin phiriméadracha a dhéantar de réir chaighdeán na Seapáine, JIS R 8101, agus a dhíolann déileálaithe sa tSeapáin, mar shampla Yuko Trading (有恒商事). Cosúil le haon chón{{en: cone}}, tomhaiseann cón SK obair teasa{{en: heatwork}}, ní teocht amháin: bogann sé agus lúbann sé anonn nuair a bhíonn a ndóthain teasa faighte ag na píosaí, agus léann tú cé chomh fada a lúb sé. Oibríonn cóin fhianaise{{en: witness cone}}, léamh cé chomh fada a lúb cón, agus coinneáil{{en: hold}} dó mar a oibríonn siad d’aon chón. Ainmníonn an chuid seo córas gach cóin, agus ní iompaíonn sí uimhir SK ina huimhir de chóras eile riamh: ní féidir uimhreacha sraitheanna éagsúla cón a mhalartú.
 
 > [!NOTE]
-> Always write "SK" before the number. Many older Japanese recipes say only "SK 8" or "SK 9" without saying whose cone. Kyoto cones and SK cones to JIS carry the same numbers but bend at different temperatures (see Kyoto cones, below).
+> Scríobh “SK” roimh an uimhir i gcónaí. Ní deir go leor seanoideas Seapánach ach “SK 8” nó “SK 9”, gan a rá cé leis an cón. Tá na huimhreacha céanna ar chóin Kyoto agus ar chóin SK de réir JIS, ach lúbann siad ag teochtaí difriúla (féach Cóin Kyoto, thíos).
 
-### The large cones
+### Na cóin mhóra
 
-The standard has two sizes. Large cones (大型コーン) are "mainly used for measuring the degree of firing" (焼度測定), which is what a potter wants. Small cones (SK 26 to SK 42, at the top of the range) are "mainly used for refractoriness tests" and are not covered here. The table below gives the large cones from SK 022 to SK 20.
+Tá dhá mhéid sa chaighdeán. Úsáidtear cóin mhóra (大型コーン) “go príomha chun méid na bácála a thomhas” (焼度測定), agus sin a theastaíonn ó photadóir. Úsáidtear cóin bheaga (SK 26 go SK 42, ag barr an raoin) “go príomha le haghaidh tástálacha teasfhulangachta”, agus ní phléitear anseo iad. Tugann an tábla thíos na cóin mhóra ó SK 022 go SK 20.
 
-The numbers run from SK 022, the coolest, up to SK 20 here. Between SK 015 and SK 6 the printed numbers carry an "a" (SK 015a, SK 6a); write it as printed.
+Anseo téann na huimhreacha ó SK 022, an ceann is fuaire, go SK 20. Idir SK 015 agus SK 6 tá “a” ar na huimhreacha clóite (SK 015a, SK 6a); scríobh iad mar atá siad clóite.
 
-### Setting large cones
+### Cóin mhóra a shuíomh
 
-Set each large cone in a plaque or a pat of clay, leaning toward its bending face. As with any cone, keep the height and the lean the same from firing to firing, because a difference in either changes how far it bends. Set the three cones of the pack (below) together, deep in the kiln near the middle of the load, where they get the heat the ware gets, yet where you can see them through a peephole; before you close the kiln, check that you can see all three.
+Cuir gach cón mór i bplaic nó i gcnap cré, claonta i dtreo a thaoibh lúbtha. Mar is amhlaidh le haon chón, coinnigh an airde agus an claonadh mar an gcéanna ó bhácáil go bácáil, mar athraíonn difríocht i gceachtar acu cé chomh fada a lúbann sé. Cuir trí chón an phaca{{en: cone pack}} (thíos) le chéile, i bhfad isteach san áith gar do lár an lochta, áit a bhfaigheann siad an teas a fhaigheann na píosaí, ach áit ar féidir leat iad a fheiceáil trí pholl faire; sula ndúnann tú an áith, seiceáil gur féidir leat na trí cinn a fheiceáil.
 
-### Guide, firing and guard cones
+### Cón treorach, cón bácála agus cón cosanta
 
-Cones are sold and set as three: a guide cone, a firing cone at the target, and a guard cone. Take the firing cone as the SK number your recipe or clay names, the guide cone as the next cooler cone (one row up in the table) and the guard cone as the next hotter one. When the guide cone starts to bend, the end is near; when the guard cone bends, the firing has gone too far.
+Díoltar agus cuirtear cóin ina dtrí cinn: cón treorach, cón bácála ag an sprioc, agus cón cosanta. Glac mar chón bácála an uimhir SK a ainmníonn d’oideas nó do chré, mar chón treorach an chéad chón eile atá níos fuaire (an ró díreach os a chionn sa tábla), agus mar chón cosanta an chéad cheann eile atá níos teo. Nuair a thosaíonn an cón treorach ag lúbadh, tá an deireadh gar; nuair a lúbann an cón cosanta, tá an bhácáil imithe rófhada.
 
-### The SK chart
+### Cairt SK
 
-Table: SK large cones (JIS R 8101): the nominal (JIS) temperature of each
-Label: SK chart
+Table: Cóin mhóra SK (JIS R 8101): teocht ainmniúil (JIS) gach cóin
+Label: Cairt SK
 
-| Cone    | Nominal (JIS) temperature |
-| ------- | ------------------------: |
-| SK 022  |       {{1112 °F; 600 °C}} |
-| SK 021  |       {{1202 °F; 650 °C}} |
-| SK 020  |       {{1238 °F; 670 °C}} |
-| SK 019  |       {{1274 °F; 690 °C}} |
-| SK 018  |       {{1310 °F; 710 °C}} |
-| SK 017  |       {{1346 °F; 730 °C}} |
-| SK 016  |       {{1382 °F; 750 °C}} |
-| SK 015a |       {{1454 °F; 790 °C}} |
-| SK 014a |       {{1499 °F; 815 °C}} |
-| SK 013a |       {{1535 °F; 835 °C}} |
-| SK 012a |       {{1571 °F; 855 °C}} |
-| SK 011a |       {{1616 °F; 880 °C}} |
-| SK 010a |       {{1652 °F; 900 °C}} |
-| SK 09a  |       {{1688 °F; 920 °C}} |
-| SK 08a  |       {{1724 °F; 940 °C}} |
-| SK 07a  |       {{1760 °F; 960 °C}} |
-| SK 06a  |       {{1796 °F; 980 °C}} |
-| SK 05a  |      {{1832 °F; 1000 °C}} |
-| SK 04a  |      {{1868 °F; 1020 °C}} |
-| SK 03a  |      {{1904 °F; 1040 °C}} |
-| SK 02a  |      {{1940 °F; 1060 °C}} |
-| SK 01a  |      {{1976 °F; 1080 °C}} |
-| SK 1a   |      {{2012 °F; 1100 °C}} |
-| SK 2a   |      {{2048 °F; 1120 °C}} |
-| SK 3a   |      {{2084 °F; 1140 °C}} |
-| SK 4a   |      {{2120 °F; 1160 °C}} |
-| SK 5a   |      {{2156 °F; 1180 °C}} |
-| SK 6a   |      {{2192 °F; 1200 °C}} |
-| SK 7    |      {{2246 °F; 1230 °C}} |
-| SK 8    |      {{2282 °F; 1250 °C}} |
-| SK 9    |      {{2336 °F; 1280 °C}} |
-| SK 10   |      {{2372 °F; 1300 °C}} |
-| SK 11   |      {{2408 °F; 1320 °C}} |
-| SK 12   |      {{2462 °F; 1350 °C}} |
-| SK 13   |      {{2516 °F; 1380 °C}} |
-| SK 14   |      {{2570 °F; 1410 °C}} |
-| SK 15   |      {{2615 °F; 1435 °C}} |
-| SK 16   |      {{2660 °F; 1460 °C}} |
-| SK 17   |      {{2696 °F; 1480 °C}} |
-| SK 18   |      {{2732 °F; 1500 °C}} |
-| SK 19   |      {{2768 °F; 1520 °C}} |
-| SK 20   |      {{2786 °F; 1530 °C}} |
+| Cón     | Teocht ainmniúil (JIS) |
+| ------- | ---------------------: |
+| SK 022  |    {{1112 °F; 600 °C}} |
+| SK 021  |    {{1202 °F; 650 °C}} |
+| SK 020  |    {{1238 °F; 670 °C}} |
+| SK 019  |    {{1274 °F; 690 °C}} |
+| SK 018  |    {{1310 °F; 710 °C}} |
+| SK 017  |    {{1346 °F; 730 °C}} |
+| SK 016  |    {{1382 °F; 750 °C}} |
+| SK 015a |    {{1454 °F; 790 °C}} |
+| SK 014a |    {{1499 °F; 815 °C}} |
+| SK 013a |    {{1535 °F; 835 °C}} |
+| SK 012a |    {{1571 °F; 855 °C}} |
+| SK 011a |    {{1616 °F; 880 °C}} |
+| SK 010a |    {{1652 °F; 900 °C}} |
+| SK 09a  |    {{1688 °F; 920 °C}} |
+| SK 08a  |    {{1724 °F; 940 °C}} |
+| SK 07a  |    {{1760 °F; 960 °C}} |
+| SK 06a  |    {{1796 °F; 980 °C}} |
+| SK 05a  |   {{1832 °F; 1000 °C}} |
+| SK 04a  |   {{1868 °F; 1020 °C}} |
+| SK 03a  |   {{1904 °F; 1040 °C}} |
+| SK 02a  |   {{1940 °F; 1060 °C}} |
+| SK 01a  |   {{1976 °F; 1080 °C}} |
+| SK 1a   |   {{2012 °F; 1100 °C}} |
+| SK 2a   |   {{2048 °F; 1120 °C}} |
+| SK 3a   |   {{2084 °F; 1140 °C}} |
+| SK 4a   |   {{2120 °F; 1160 °C}} |
+| SK 5a   |   {{2156 °F; 1180 °C}} |
+| SK 6a   |   {{2192 °F; 1200 °C}} |
+| SK 7    |   {{2246 °F; 1230 °C}} |
+| SK 8    |   {{2282 °F; 1250 °C}} |
+| SK 9    |   {{2336 °F; 1280 °C}} |
+| SK 10   |   {{2372 °F; 1300 °C}} |
+| SK 11   |   {{2408 °F; 1320 °C}} |
+| SK 12   |   {{2462 °F; 1350 °C}} |
+| SK 13   |   {{2516 °F; 1380 °C}} |
+| SK 14   |   {{2570 °F; 1410 °C}} |
+| SK 15   |   {{2615 °F; 1435 °C}} |
+| SK 16   |   {{2660 °F; 1460 °C}} |
+| SK 17   |   {{2696 °F; 1480 °C}} |
+| SK 18   |   {{2732 °F; 1500 °C}} |
+| SK 19   |   {{2768 °F; 1520 °C}} |
+| SK 20   |   {{2786 °F; 1530 °C}} |
 
-Every figure is nominal (JIS): the temperature the standard gives for the cone, as printed in Yuko Trading's table. The table does not print a heating rate. The standard gives reference temperatures. At a potter's rate of about 100 °C/h, Kyoto's municipal institute measured its own Kyoto cones bending 47–79 °C cooler than the JIS figure for the same number; we found no such measurements for SK cones to JIS. Set a witness cone and compare.
+Is ainmniúil (JIS) gach figiúr: an teocht a thugann an caighdeán don chón, mar atá clóite i dtábla Yuko Trading. Ní thugann an tábla ráta téimh. Tugann an caighdeán teochtaí tagartha. Ag ráta téimh potadóra de thart ar 100 °C/h, thomhais institiúid bhardasach Kyoto a cóin Kyoto féin ag lúbadh 47–79 °C níos fuaire ná figiúr JIS na huimhreach céanna; níor aimsíomar a leithéid de thomhais do chóin SK de réir JIS. Cuir cón fianaise isteach agus déan comparáid.
 
-### Kyoto cones
+### Cóin Kyoto
 
-Kyoto cones (京都ゼーゲル), made by Kyoto's municipal institute, are no longer made: news reports say the institute ended production at the close of fiscal 2009. They carry the same numbers as SK cones to JIS but bend cooler: a Kyoto cone bends at about the temperature of the SK cone to JIS two or three numbers lower. A recipe from Kyoto that says "SK 8" may mean a Kyoto cone. The institute has published advice for potters moving from Kyoto cones to Orton cones, and substitutes Orton cone 10 for its own Kyoto SK 12; that is the institute's choice from its own measurements at 100 °C/h, and applies to no other cone.
+Rinne institiúid bhardasach Kyoto cóin Kyoto (京都ゼーゲル), ach ní dhéantar a thuilleadh iad: deir tuairiscí nuachta gur stop an institiúid á ndéanamh ag deireadh bhliain fhioscach 2009. Tá na huimhreacha céanna orthu agus atá ar chóin SK de réir JIS, ach lúbann siad níos fuaire: lúbann cón Kyoto ag thart ar theocht an chóin SK de réir JIS atá dhá nó trí huimhir níos fuaire. D’fhéadfadh cón Kyoto a bheith i gceist le hoideas ó Kyoto a deir “SK 8”. D’fhoilsigh an institiúid comhairle do photadóirí atá ag aistriú ó chóin Kyoto go cóin Orton, agus cuireann sí cón Orton 10 in áit a cóin Kyoto SK 12 féin; is é sin rogha na hinstitiúide óna tomhais féin ag 100 °C/h, agus ní bhaineann sé le haon chón eile.
 
-### Orton cones sold in Japan
+### Cóin Orton a dhíoltar sa tSeapáin
 
-Orton self-supporting cones are sold in Japan under the name 立つゼーゲル ("standing Seger"), because they need no plaque or stand. They are Orton cones, with Orton's numbers and Orton's chart (above): fire to one only by its Orton number, and keep SK and Orton cones in separate packs, never in the same one.
+Díoltar cóin fhéintacaithe Orton sa tSeapáin faoin ainm 立つゼーゲル (“Seger ina sheasamh”), mar nach bhfuil plaic ná seastán ag teastáil uathu. Is cóin Orton iad, le huimhreacha Orton agus cairt Orton (thuas): bácáil go ceann acu de réir a uimhreach Orton amháin, agus coinnigh cóin SK agus cóin Orton i bpacaí ar leith, agus ná cuir riamh sa phaca céanna iad.
 
-### Sources for SK cones
+### Foinsí do chóin SK
 
-- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (the SK table, checked 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
-- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (in force, reconfirmed 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
-- [Kyoto Municipal Institute of Industrial Technology and Culture: points to note when moving from Kyoto cones to Orton cones](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
+- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (an tábla SK, seiceáilte 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
+- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (i bhfeidhm, athdhearbhaithe 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
+- [Institiúid Bhardasach Teicneolaíochta Tionscail agus Cultúir Kyoto: pointí le tabhairt faoi deara agus tú ag aistriú ó chóin Kyoto go cóin Orton](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
 
 :::
 

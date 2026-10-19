@@ -149,38 +149,38 @@ Pet Poison Helplinen mukaan ”lyijy on myrkyllistä kaikille lajeille, mutta nu
 
 Jos lemmikki on voinut syödä tai juoda jotain pajasta tai sillä on yllä kuvatun kaltaisia oireita, soita omalle eläinlääkärille tai eläinten myrkytysneuvontaan (ks. taulukko sivun alussa), ja pidä raaka-aineen nimi ja lemmikin paino käsillä.
 
-## The kiln {#the-kiln lang=en}
+## Keramiikkauuni {#the-kiln}
 
-### The outside gets hot enough to burn
+### Ulkopinta kuumenee niin, että siitä saa palovamman
 
-A UK schools risk assessment says a kiln's outside "can reach 160 °C and possibly more" (about 320 °F), and a school kiln guide reports metal bands at up to 460 °F (about 240 °C). Skutt, a kiln maker, recommends a kiln room that can be locked against children and pets. Where a room cannot be locked, the school guide suggests a barrier such as a kiln safety screen.
+Brittiläisten koulujen riskinarviossa todetaan, että uunin ulkopinta ”voi kuumentua lämpötilaan 160 °C ja mahdollisesti enemmänkin” (noin 320 °F), ja koulujen uunioppaan mukaan metallivanteet kuumenevat jopa lämpötilaan 460 °F (noin 240 °C). Uunivalmistaja Skutt suosittelee uunihuonetta, jonka voi lukita lapsilta ja lemmikeiltä. Jos huonetta ei voi lukita, koulujen opas ehdottaa estettä, kuten uunin suoja-aitaa.
 
-Small children and pets cannot understand a warning sign. We suggest keeping them behind a locked door or a barrier while the kiln fires and while it cools, and posting a warning sign for everyone else.
+Pienet lapset ja lemmikit eivät ymmärrä varoituskylttiä. Suosittelemme, että lapset ja lemmikit pidetään lukitun oven tai esteen takana polton ja jäähtymisen ajan ja että muita varten laitetaan varoituskyltti.
 
-### Space around it
+### Tila uunin ympärillä
 
-Sources disagree on clearance. Rio Grande says at least 12 inches (30 cm) from walls and anything combustible. L&L strongly recommends 18 inches (46 cm) to all walls, and the building code it cites asks for 3 feet (0.9 m) from combustible walls. Follow your kiln's manual and local fire code; if you are unsure, allow 18 inches from any wall and 3 feet from anything that can burn. In a garage, keep cars, fuel and paint well away.
+Lähteet ovat eri mieltä suojaetäisyydestä. Rio Grande neuvoo vähintään 12 tuuman (30 cm) etäisyyttä seiniin ja kaikkeen palavaan. L&L suosittelee painokkaasti 18 tuuman (46 cm) etäisyyttä kaikkiin seiniin, ja sen lainaama rakennusmääräys vaatii 3 jalan (0,9 m) etäisyyttä palaviin seiniin. Noudata oman uunin käyttöohjetta ja paikallisia paloturvallisuusmääräyksiä; epävarmassa tapauksessa jätä 18 tuumaa tilaa kaikkiin seiniin ja 3 jalkaa kaikkeen, mikä voi palaa. Autotallissa pidä autot, polttoaineet ja maalit kaukana uunista.
 
-### Power
+### Sähkö
 
-Rio Grande recommends a **dedicated circuit** (one that powers nothing else) with a properly grounded outlet. We suggest no extension cord. Between firings, switch off the kiln's breaker or disconnect switch, or unplug it, so a child cannot start it.
+Rio Grande suosittelee **omaa ryhmää** (sähkökeskuksen ryhmä, josta ei saa virtaa mikään muu) ja asianmukaisesti maadoitettua pistorasiaa. Suosittelemme, ettei jatkojohtoa käytetä. Kytke polttojen välillä uunin sulake tai turvakytkin pois päältä tai irrota pistoke, jottei lapsi voi käynnistää uunia.
 
-### Be there when the firing ends
+### Ole paikalla polton päättyessä
 
-A **kiln sitter** is the mechanical switch on many manual kilns: a small cone bends at the end of the firing and trips the switch off. Its manual says it "is NOT intended to perform as a fail-safe shut-off device." Rio Grande says never to leave a firing kiln unattended, "especially near the expected shut-off time". So stay nearby and check the kiln while it fires, above all near the end; fire only when an adult will be home and awake through the whole firing, check that it has switched off, and keep an ABC fire extinguisher in the kiln room. For how sitters, controllers and schedules work, see [Firing a basic kiln](/guides/firing).
+**Kiln-Sitter** on monissa käsisäätöisissä uuneissa oleva mekaaninen keilakatkaisin: pieni keila{{en: cone}} taipuu polton lopussa ja laukaisee katkaisimen pois päältä. Sen käyttöohjeen mukaan sitä ”EI ole tarkoitettu toimimaan vikaturvallisena katkaisulaitteena.” Rio Granden mukaan polttavaa uunia ei pidä koskaan jättää ilman valvontaa, ”etenkään lähellä odotettua sammumisaikaa”. Pysy siis lähellä ja tarkista uuni polton aikana, etenkin lähellä loppua; polta vain, kun kotona on aikuinen, joka on hereillä koko polton ajan, tarkista, että uuni on sammunut, ja pidä uunihuoneessa ABC-käsisammutin. Siitä, miten Kiln-Sitterit, automatiikat ja polttokäyrät toimivat, kerrotaan oppaassa [Polttaminen yksinkertaisessa keramiikkauunissa](/guides/firing).
 
-### Fumes and carbon monoxide
+### Savukaasut ja häkä
 
-Firing gives off fumes, so vent the kiln to the outdoors; [Safe mixing and ventilation](/guides/safe-mixing) explains how. A kiln in an attached garage needs venting that keeps fumes from reaching the house through the connecting door. Keep birds in a far room whenever the kiln fires.
+Poltossa syntyy savukaasuja, joten johda uunin savukaasut ulos; opas [Turvallinen sekoittaminen ja ilmanvaihto](/guides/safe-mixing) kertoo, miten. Taloon liitetyssä autotallissa olevan uunin tuuletuksen on estettävä savukaasujen pääsy taloon väliovesta. Pidä linnut kaukaisessa huoneessa aina, kun uuni on päällä.
 
-**Carbon monoxide** (CO) is a poisonous gas you cannot see or smell. A university kiln safety sheet requires CO alarms with gas kilns. Views differ for electric kilns, but burning off organic matter (in clay, or things like paper or wax) can make CO. We think a CO alarm in the kiln room and the rooms next to it is a sensible, inexpensive step for any kiln.
+**Häkä** (hiilimonoksidi, CO) on myrkyllinen kaasu, jota ei voi nähdä eikä haistaa. Erään yliopiston uunien turvallisuusohje vaatii häkävaroittimet kaasu-uunien yhteyteen. Sähköuuneista näkemykset vaihtelevat, mutta orgaanisen aineen poispalaminen (savesta tai esimerkiksi paperista tai vahasta) voi tuottaa häkää. Mielestämme häkävaroitin uunihuoneessa ja sen viereisissä huoneissa on järkevä ja edullinen toimenpide minkä tahansa uunin kanssa.
 
-### Peepholes and eyes
+### Tirkistysaukot ja silmät
 
-Infrared light, which you cannot see, "starts at 752°F (400°C)", and the Ceramic Arts Network says looking into a kiln above this should always be done with eye protection. Infrared can damage the lens of the eye and lead to cataracts, and long gazing can injure the retina. Sunglasses and didymium glasses do not block it.
+Infrapunasäteily, jota ei voi nähdä, ”alkaa lämpötilasta 752°F (400°C)”, ja Ceramic Arts Networkin mukaan tätä kuumempaan uuniin pitäisi aina katsoa silmiensuojaimet päässä. Infrapunasäteily voi vaurioittaa silmän mykiötä ja aiheuttaa kaihia, ja pitkä tuijottaminen voi vahingoittaa verkkokalvoa. Aurinkolasit ja didymiumlasit eivät suojaa siltä.
 
 > [!WARNING]
-> Children should not look into a kiln at all. A glowing peephole draws them, and they will not reliably keep protective glasses on, so keep them away while the kiln is hot. Adults should look only briefly, through IR-rated welding glasses. Sources recommend shades from 1.7 to 5; shade 3 is a sensible choice, darker if you see spots afterward.
+> Lasten ei pitäisi katsoa uuniin lainkaan. Hehkuva tirkistysaukko houkuttelee heitä, eivätkä he luotettavasti pidä suojalaseja päässään, joten pidä heidät poissa uunin luota, kun uuni on kuuma. Aikuisten pitäisi katsoa vain hetken ja IR-suojattujen hitsauslasien läpi. Lähteet suosittelevat tummuusasteita 1,7–5; tummuusaste 3 on järkevä valinta, tummempi, jos silmissä näkyy katsomisen jälkeen pisteitä.
 
 ## Käsintehdyt astiat perheen ruokapöydässä {#handmade-ware}
 

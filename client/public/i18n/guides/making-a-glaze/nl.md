@@ -163,55 +163,55 @@ Label: Maaswijdte van de zeef
 | Glazuren met kleurstoffen{{en: colorants}} zoals kobalt of ijzer | 100 tot 120 mesh       |
 | Asglazuren en andere glazuren met grove grondstoffen             | 60 tot 80 mesh         |
 
-## Specific gravity {#specific-gravity lang=en}
+## Soortelijk gewicht {#specific-gravity}
 
-**Specific gravity** (SG) tells you how much powder is in your slurry. It is the weight of a volume of glaze divided by the weight of the same volume of water. Water is 1.00, and a glaze at {{SG 1.45}} weighs 145 g per 100 mL. Mixing to a measured SG is how you get the same thickness, and the same coat, every time. It has no units, so it is the same in grams or ounces.
+Het **soortelijk gewicht**{{en: specific gravity, SG}} zegt hoeveel poeder er in uw aangemaakte glazuur{{en: slurry}} zit. Het is het gewicht van een volume glazuur{{en: glaze}} gedeeld door het gewicht van hetzelfde volume water. Water is 1,00, en een glazuur met {{SG 1.45}} weegt 145 g per 100 mL. Door te mengen tot een gemeten soortelijk gewicht krijgt u elke keer dezelfde dikte, en dezelfde laag. Het heeft geen eenheid, dus het is hetzelfde in grammen of in ounces.
 
-### Measure it by weighing 100 mL
+### Meten door 100 mL te wegen
 
-1. Stir the glaze so nothing has settled.
-2. Put a 100 mL **graduated cylinder** (a tall, marked measuring tube) or a 100 mL syringe on the scale, and tare it.
-3. Fill it with glaze to exactly 100 mL, reading the mark at eye level.
-4. Weigh it and divide the grams by 100: 145 g is SG 1.45.
+1. Roer het glazuur om, zodat er niets bezonken is.
+2. Zet een **maatcilinder** van 100 mL (een hoge buis met maatstreepjes) of een spuit van 100 mL op de weegschaal, en tarreer.
+3. Vul hem met glazuur tot precies 100 mL, en lees de streep op ooghoogte af.
+4. Weeg hem en deel het aantal gram door 100: 145 g is een soortelijk gewicht van 1,45.
 
-Digitalfire also marks a cup at the level of 500 g of water, fills it to the mark with glaze, and divides the weight by 500; a bigger, fuller measure is more accurate. A **hydrometer**, a float read where it sits in the glaze, is quick but can misread thick or gelled glazes. UK hydrometers, such as Potclays', read in degrees Baumé (°Bé). By our arithmetic, SG = 145 ÷ (145 − °Bé), so 46 °Bé is about 1.46. Older UK books give a **pint weight**, the ounces in an imperial pint of glaze: divide it by 20, so 29 oz is about SG 1.45 (also our arithmetic).
+Digitalfire markeert ook een beker op de hoogte van 500 g water, vult die tot de streep met glazuur en deelt het gewicht door 500; een grotere, vollere maat is nauwkeuriger. Een **areometer**, een drijver die u afleest op de hoogte waarop hij in het glazuur drijft, is snel, maar kan bij dikke of opgestijfde glazuren verkeerd aangeven. Britse areometers, zoals die van Potclays, geven graden Baumé (°Bé) aan. Volgens onze berekening is het soortelijk gewicht = 145 ÷ (145 − °Bé), dus 46 °Bé is ongeveer 1,46. Oudere Britse boeken geven een **pintgewicht**, het aantal ounces in een Engelse pint glazuur: deel het door 20, dus 29 oz is ongeveer een soortelijk gewicht van 1,45 (ook onze berekening).
 
-### What to aim for
+### Waar u naar streeft
 
-Sources disagree, most of all on brushing and spraying, where the UK supplier Potclays gives much higher figures (its own are "for guidance only"). Treat every number as a starting point. Digitalfire's core advice is to find the SG and gelling that work for each glaze, then repeat them and write them down.
+Bronnen zijn het oneens, vooral over kwasten en spuiten, waarvoor de Britse leverancier Potclays veel hogere waarden geeft (zijn eigen waarden zijn “alleen ter indicatie”). Zie elk getal als een vertrekpunt. Het kernadvies van Digitalfire is: zoek het soortelijk gewicht en de mate van opstijven die bij elk glazuur werken, herhaal die daarna en schrijf ze op.
 
-Table: Specific gravity targets, where sources disagree
-Label: Specific gravity targets
+Table: Streefwaarden voor het soortelijk gewicht, waar bronnen het oneens zijn
+Label: Streefwaarden soortelijk gewicht
 
-| Use      | Digitalfire and Glazy                                                                                                                 | Potclays (UK)                               | Safe starting point                                     |
-| -------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- | ------------------------------------------------------- |
-| Dipping  | {{SG 1.40}} (for a 5-second dip) to {{SG 1.50}} (for a 1-second dip); home-mixed glazes that are gelled do best at {{SG 1.43–1.45}}   | Clear {{SG 1.46–1.48}}; colored {{SG 1.61}} | {{SG 1.45}}; thin to {{SG 1.43}} and gel it if it drips |
-| Brushing | {{SG 1.25}} (thin clear) to {{SG 1.55}} (dark detail)                                                                                 | {{SG 1.71–1.81}}                            | Follow the product; use CMC gum or a brushing medium    |
-| Spraying | No figure; Hopper, writing for Ceramic Arts Network, says much thinner, with a deflocculant (an additive that makes a slurry runnier) | {{SG 1.71}}                                 | No reliable number; spray only in a spray booth         |
+| Gebruik  | Digitalfire en Glazy                                                                                                                                                                      | Potclays (VK)                                        | Veilig vertrekpunt                                                       |
+| -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------- | ------------------------------------------------------------------------ |
+| Dompelen | {{SG 1.40}} (voor een dompeltijd van 5 seconden) tot {{SG 1.50}} (voor een dompeltijd van 1 seconde); zelf aangemaakte glazuren die zijn opgestijfd, werken het best bij {{SG 1.43–1.45}} | Transparant: {{SG 1.46–1.48}}; gekleurd: {{SG 1.61}} | {{SG 1.45}}; verdun tot {{SG 1.43}} en laat het opstijven als het druipt |
+| Kwasten  | {{SG 1.25}} (dun transparant) tot {{SG 1.55}} (donker detailwerk)                                                                                                                         | {{SG 1.71–1.81}}                                     | Volg de aanwijzingen van het product; gebruik CMC of een kwastmedium     |
+| Spuiten  | Geen waarde; Hopper zegt in een artikel voor Ceramic Arts Network: veel dunner, met een ontvlokkingsmiddel{{en: deflocculant}} (een toevoeging die aangemaakt glazuur dunner maakt)       | {{SG 1.71}}                                          | Geen betrouwbaar getal; spuit alleen in een spuitcabine                  |
 
-To check a dipping glaze by eye, AMACO dips for 5 seconds and looks for a coat about as thick as a US dime. Digitalfire fires tiles dipped for 5 seconds to check.
+Om een dompelglazuur op het oog te controleren, dompelt AMACO 5 seconden en kijkt of de laag ongeveer zo dik is als een Amerikaans dubbeltje (dime). Digitalfire stookt ter controle proefplaatjes{{en: test tiles}} die 5 seconden zijn gedompeld.
 
-### Water for a target SG: our estimate
+### Water voor een gewenst soortelijk gewicht: onze schatting
 
-The table below is our own arithmetic, not a source's. It assumes the powder's particles have a density of 2.6 g per cm³, which is an assumption, not a measurement. Clay, soluble materials and gelling all change a real glaze, so use it to start, then measure. As a check, it predicts {{SG 1.44}} for equal weights of powder and water, close to Digitalfire's measured {{SG 1.46}}. It also shows that 70 to 80 mL per 100 g starts you above {{SG 1.50}}, thicker than you need.
+De tabel hieronder is ons eigen rekenwerk, niet dat van een bron. Hij gaat ervan uit dat de deeltjes van het poeder een dichtheid van 2,6 g per cm³ hebben, wat een aanname is, geen meting. Klei, oplosbare grondstoffen en opstijven veranderen allemaal een echt glazuur, dus gebruik hem om te beginnen, en meet daarna. Ter controle: hij voorspelt {{SG 1.44}} bij evenveel poeder als water in gewicht, dicht bij wat Digitalfire mat: {{SG 1.46}}. Hij laat ook zien dat u met 70 tot 80 mL per 100 g boven {{SG 1.50}} begint, dikker dan nodig.
 
-Table: Water for a target specific gravity (our estimate)
-Label: Water for a target specific gravity
+Table: Water voor een gewenst soortelijk gewicht (onze schatting)
+Label: Water voor een gewenst soortelijk gewicht
 
-| Target      | Per 100 g of powder |  Per kilogram |         Per pound |
-| ----------- | ------------------: | ------------: | ----------------: |
-| {{SG 1.40}} |        about 115 mL | about 1150 mL | about 18 US fl oz |
-| {{SG 1.45}} |         about 98 mL |  about 980 mL | about 15 US fl oz |
-| {{SG 1.50}} |         about 85 mL |  about 850 mL | about 13 US fl oz |
-| {{SG 1.60}} |         about 64 mL |  about 640 mL | about 10 US fl oz |
+| Streefwaarde | Per 100 g poeder |     Per kilogram |      Per Engels pond |
+| ------------ | ---------------: | ---------------: | -------------------: |
+| {{SG 1.40}}  |  ongeveer 115 mL | ongeveer 1150 mL | ongeveer 18 US fl oz |
+| {{SG 1.45}}  |   ongeveer 98 mL |  ongeveer 980 mL | ongeveer 15 US fl oz |
+| {{SG 1.50}}  |   ongeveer 85 mL |  ongeveer 850 mL | ongeveer 13 US fl oz |
+| {{SG 1.60}}  |   ongeveer 64 mL |  ongeveer 640 mL | ongeveer 10 US fl oz |
 
-### Epsom salts, CMC gum and bentonite
+### Bitterzout, CMC en bentoniet
 
-**Epsom salts** make a glaze gel slightly when it stands still and flow again when it is stirred. This is called **flocculating** it, and a glaze that behaves this way is **thixotropic**: it goes on more evenly, drips less and settles less. Digitalfire suggests starting at about 2 g per gallon once the SG is right (roughly 0.5 g per liter, our conversion) and tuning the amount each time you mix, since no recipe should fix the dose. We suggest dissolving it in a little hot water first. In a Digitalfire example, a glaze at {{SG 1.45}} dripped, so water brought it down to {{SG 1.43}} and Epsom salts gelled it back to creamy, and it went on evenly. A rough check: stir, stop and watch. A gelled glaze moves on for about 2 or 3 seconds, then stops and springs back a little.
+**Bitterzout** (magnesiumsulfaat) laat een glazuur een beetje opstijven als het stilstaat, en weer vloeien als het wordt geroerd. Dit heet **uitvlokken**{{en: flocculating}}, en een glazuur dat zich zo gedraagt, is **thixotroop**{{en: thixotropic}}: het gaat gelijkmatiger op, druipt minder en bezinkt minder. Digitalfire raadt aan te beginnen met ongeveer 2 g per gallon zodra het soortelijk gewicht klopt (grofweg 0,5 g per liter, onze omrekening), en de hoeveelheid bij elke keer mengen bij te stellen, omdat geen recept de dosis zou moeten vastleggen. We raden aan het eerst in een beetje heet water op te lossen. In een voorbeeld van Digitalfire droop een glazuur met {{SG 1.45}}, dus bracht water het terug naar {{SG 1.43}} en liet bitterzout het weer romig opstijven, en het ging gelijkmatig op. Een ruwe controle: roer, stop en kijk. Een opgestijfd glazuur beweegt nog ongeveer 2 of 3 seconden door, stopt dan en veert een beetje terug.
 
-**CMC gum** (carboxymethyl cellulose) makes a slurry stickier and slower to dry, and leaves a harder coat that holds to the pot. It matters most for brushing glazes and glazes high in frit. Digitalfire's example blends 3.75 g into 1000 g of slurry, and it has to go in with a blender. A glaze with CMC will not gel with Epsom salts, and since microbes feed on the gum, it can change in the bucket and start to smell.
+**CMC** (carboxymethylcellulose, ook verkocht als glazuurlijm) maakt aangemaakt glazuur kleveriger en laat het langzamer drogen, en geeft een hardere laag die aan de pot hecht. Het is het belangrijkst voor kwastglazuren en glazuren met veel fritte{{en: frit}}. In het voorbeeld van Digitalfire wordt 3,75 g door 1000 g aangemaakt glazuur gemengd, en dat moet met een blender. Een glazuur met CMC stijft niet op met bitterzout, en omdat microben zich met de CMC voeden, kan het in de emmer veranderen en gaan stinken.
 
-**Bentonite**, a very fine clay, helps hold the other particles in suspension. Dipping glazes usually rely on 15 to 25% raw clay for this. For a recipe short of clay, about 1 to 3% bentonite helps; Digitalfire says a glaze with more than 15% clay should not need bentonite at more than 1% of the dry glaze's weight.
+**Bentoniet**, een zeer fijne klei, helpt de andere deeltjes in suspensie te houden. Dompelglazuren rekenen hiervoor meestal op 15 tot 25% ongebakken klei. Bij een recept met te weinig klei helpt ongeveer 1 tot 3% bentoniet; Digitalfire zegt dat een glazuur met meer dan 15% klei niet meer bentoniet nodig zou moeten hebben dan 1% van het gewicht van het droge glazuur.
 
 ## Proefplaatjes en proevenreeksen {#testing}
 

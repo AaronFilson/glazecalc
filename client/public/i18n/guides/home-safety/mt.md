@@ -149,38 +149,38 @@ Is-servizz Pet Poison Helpline jgħid li “Iċ-ċomb huwa tossiku għall-ispeċ
 
 Jekk jista’ jkun li annimal domestiku kiel jew xorob xi ħaġa mill-istudjo, jew juri sinjali bħal dawk ta’ hawn fuq, ċempel lill-veterinarju tiegħek jew lil xi linja tal-veleni għall-annimali (ara t-tabella fil-bidu tal-paġna), u żomm f’idejk l-isem tal-materjal u l-piż tal-annimal.
 
-## The kiln {#the-kiln lang=en}
+## Il-forn {#the-kiln}
 
-### The outside gets hot enough to burn
+### Il-parti ta’ barra tisħon biżżejjed biex taħraq
 
-A UK schools risk assessment says a kiln's outside "can reach 160 °C and possibly more" (about 320 °F), and a school kiln guide reports metal bands at up to 460 °F (about 240 °C). Skutt, a kiln maker, recommends a kiln room that can be locked against children and pets. Where a room cannot be locked, the school guide suggests a barrier such as a kiln safety screen.
+Valutazzjoni tar-riskju għall-iskejjel tar-Renju Unit tgħid li l-parti ta’ barra ta’ forn “tista’ tilħaq 160 °C u possibbilment aktar” (madwar 320 °F), u pubblikazzjoni għall-iskejjel dwar il-fran tirrapporta ċineg tal-metall sa 460 °F (madwar 240 °C). Skutt, manifattur tal-fran, jirrakkomanda kamra tal-forn li tista’ tissakkar biex it-tfal u l-annimali ma jidħlux fiha. Fejn kamra ma tistax tissakkar, il-pubblikazzjoni għall-iskejjel tissuġġerixxi barriera bħal skrin tas-sigurtà madwar il-forn.
 
-Small children and pets cannot understand a warning sign. We suggest keeping them behind a locked door or a barrier while the kiln fires and while it cools, and posting a warning sign for everyone else.
+It-tfal żgħar u l-annimali ma jistgħux jifhmu sinjal ta’ twissija. Nissuġġerixxu li żżommhom wara bieb imsakkar jew wara barriera waqt il-ħamja u waqt li l-forn ikun qed jiksaħ, u li twaħħal sinjal ta’ twissija għall-oħrajn kollha.
 
-### Space around it
+### L-ispazju madwaru
 
-Sources disagree on clearance. Rio Grande says at least 12 inches (30 cm) from walls and anything combustible. L&L strongly recommends 18 inches (46 cm) to all walls, and the building code it cites asks for 3 feet (0.9 m) from combustible walls. Follow your kiln's manual and local fire code; if you are unsure, allow 18 inches from any wall and 3 feet from anything that can burn. In a garage, keep cars, fuel and paint well away.
+Is-sorsi ma jaqblux dwar id-distanza ta’ sigurtà. Rio Grande jgħid mill-inqas 12-il pulzier (30 cm) mill-ħitan u minn kull materjal li jaqbad. L&L jirrakkomanda bil-qawwa 18-il pulzier (46 cm) mill-ħitan kollha, u l-kodiċi tal-bini li jikkwota jitlob 3 piedi (0.9 m) mill-ħitan li jaqbdu. Segwi l-manwal tal-forn tiegħek u r-regoli lokali dwar is-sigurtà min-nar; jekk għandek xi dubju, ħalli 18-il pulzier minn kull ħajt u 3 piedi minn kull ħaġa li tista’ taqbad. Fil-garaxx, żomm il-karozzi, il-fjuwil u ż-żebgħa ferm ’il bogħod.
 
-### Power
+### L-elettriku
 
-Rio Grande recommends a **dedicated circuit** (one that powers nothing else) with a properly grounded outlet. We suggest no extension cord. Between firings, switch off the kiln's breaker or disconnect switch, or unplug it, so a child cannot start it.
+Rio Grande jirrakkomanda **ċirkwit apposta** (wieħed li ma jħaddem xejn aktar) b’sokit b’konnessjoni mal-art kif suppost. Nissuġġerixxu li ma tużax kejbil tal-estensjoni. Bejn ħamja u oħra, itfi l-interruttur taċ-ċirkwit tal-forn jew is-swiċċ tal-iżolament, jew aqla’ l-plagg, biex tifel ma jkunx jista’ jixegħlu.
 
-### Be there when the firing ends
+### Kun hemm meta tispiċċa l-ħamja
 
-A **kiln sitter** is the mechanical switch on many manual kilns: a small cone bends at the end of the firing and trips the switch off. Its manual says it "is NOT intended to perform as a fail-safe shut-off device." Rio Grande says never to leave a firing kiln unattended, "especially near the expected shut-off time". So stay nearby and check the kiln while it fires, above all near the end; fire only when an adult will be home and awake through the whole firing, check that it has switched off, and keep an ABC fire extinguisher in the kiln room. For how sitters, controllers and schedules work, see [Firing a basic kiln](/guides/firing).
+Is-**sitter**{{en: kiln sitter}} huwa s-swiċċ mekkaniku ta’ ħafna fran mingħajr kontrollur: kon{{en: cone}} żgħir jitgħawweġ fl-aħħar tal-ħamja u jitfi s-swiċċ. Il-manwal tiegħu jgħid li “MHUX maħsub biex jaħdem bħala apparat ta’ tifi ta’ sigurtà li ma jfallix.” Rio Grande jgħid li qatt ma tħalli forn qed jaħmi mingħajr sorveljanza, “speċjalment qrib il-ħin mistenni li jintefa”. Għalhekk ibqa’ qrib u ċċekkja l-forn waqt li jkun qed jaħmi, speċjalment qrib it-tmiem; aħmi biss meta se jkun hemm adult fid-dar u mqajjem matul il-ħami kollu, iċċekkja li l-forn intefa, u żomm fire extinguisher tat-tip ABC fil-kamra tal-forn. Biex tifhem kif jaħdmu s-sitters, il-kontrolluri u l-programmi tal-ħami, ara l-gwida [Il-ħami f’forn sempliċi](/guides/firing).
 
-### Fumes and carbon monoxide
+### Id-dħaħen u l-monossidu tal-karbonju
 
-Firing gives off fumes, so vent the kiln to the outdoors; [Safe mixing and ventilation](/guides/safe-mixing) explains how. A kiln in an attached garage needs venting that keeps fumes from reaching the house through the connecting door. Keep birds in a far room whenever the kiln fires.
+Il-ħami joħroġ id-dħaħen, għalhekk ħalli l-arja toħroġ mill-forn għal barra; il-gwida [Taħlit sikur u ventilazzjoni](/guides/safe-mixing) tispjega kif. Forn f’garaxx imwaħħal mad-dar għandu bżonn ventilazzjoni li żżomm id-dħaħen milli jaslu fid-dar mill-bieb li jgħaqqad. Żomm l-għasafar f’kamra ’l bogħod kull meta jkun hemm ħamja.
 
-**Carbon monoxide** (CO) is a poisonous gas you cannot see or smell. A university kiln safety sheet requires CO alarms with gas kilns. Views differ for electric kilns, but burning off organic matter (in clay, or things like paper or wax) can make CO. We think a CO alarm in the kiln room and the rooms next to it is a sensible, inexpensive step for any kiln.
+Il-**monossidu tal-karbonju** (CO) huwa gass velenuż li ma tistax tarah jew txommu. Folja ta’ università dwar is-sigurtà tal-fran titlob allarmi tal-CO mal-fran tal-gass. Għall-fran elettriċi l-opinjonijiet ivarjaw, iżda l-ħruq tal-materja organika (fit-tafal, jew f’affarijiet bħall-karta jew ix-xama’) jista’ jipproduċi CO. Aħna naħsbu li allarm tal-CO fil-kamra tal-forn u fil-kmamar ta’ ħdejha huwa pass għaqli u rħis għal kull forn.
 
-### Peepholes and eyes
+### It-toqba tal-ħarsa u l-għajnejn
 
-Infrared light, which you cannot see, "starts at 752°F (400°C)", and the Ceramic Arts Network says looking into a kiln above this should always be done with eye protection. Infrared can damage the lens of the eye and lead to cataracts, and long gazing can injure the retina. Sunglasses and didymium glasses do not block it.
+Ir-radjazzjoni infraħamra, li ma tistax taraha, “tibda minn 752°F (400°C)”, u Ceramic Arts Network jgħid li l-ħarsa ġo forn ’il fuq minn din it-temperatura għandha dejjem issir bi protezzjoni għall-għajnejn. Ir-radjazzjoni infraħamra tista’ tagħmel ħsara lill-lenti tal-għajn u twassal għall-katarretti, u l-ħarsa fit-tul tista’ tagħmel ħsara lir-retina. In-nuċċali tax-xemx u n-nuċċali tad-didimju ma jimblokkawhiex.
 
 > [!WARNING]
-> Children should not look into a kiln at all. A glowing peephole draws them, and they will not reliably keep protective glasses on, so keep them away while the kiln is hot. Adults should look only briefly, through IR-rated welding glasses. Sources recommend shades from 1.7 to 5; shade 3 is a sensible choice, darker if you see spots afterward.
+> It-tfal m’għandhomx iħarsu ġo forn b’ebda mod. Toqba tal-ħarsa li tiddi tiġbidhom, u ma tistax toqgħod fuqhom li jżommu n-nuċċali protettivi fuq wiċċhom, għalhekk żommhom ’il bogħod meta l-forn ikun sħun. L-adulti għandhom iħarsu biss għal ftit ħin, minn ġo nuċċali tal-iwweldjar kontra l-IR. Is-sorsi jirrakkomandaw gradi ta’ dlam minn 1.7 sa 5; il-grad 3 huwa għażla għaqlija, jew grad aktar skur jekk wara tara tikek.
 
 ## Oġġetti magħmula bl-idejn fuq il-mejda tal-familja {#handmade-ware}
 

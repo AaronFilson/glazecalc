@@ -149,38 +149,38 @@ Pet Poison Helpline spune că „Plumbul este toxic pentru toate speciile, dar a
 
 Dacă un animal de companie ar fi putut mânca sau bea ceva din atelier ori are semne ca cele de mai sus, sunați medicul veterinar sau o linie pentru intoxicații la animale (vedeți tabelul de la început), cu denumirea materiei prime și greutatea animalului la îndemână.
 
-## The kiln {#the-kiln lang=en}
+## Cuptorul {#the-kiln}
 
-### The outside gets hot enough to burn
+### Exteriorul se încinge cât să provoace arsuri
 
-A UK schools risk assessment says a kiln's outside "can reach 160 °C and possibly more" (about 320 °F), and a school kiln guide reports metal bands at up to 460 °F (about 240 °C). Skutt, a kiln maker, recommends a kiln room that can be locked against children and pets. Where a room cannot be locked, the school guide suggests a barrier such as a kiln safety screen.
+O evaluare a riscurilor pentru școlile din Regatul Unit spune că exteriorul unui cuptor „poate ajunge la 160 °C și posibil mai mult” (aproximativ 320 °F), iar un ghid despre cuptoare pentru școli raportează temperaturi de până la 460 °F (aproximativ 240 °C) la benzile metalice. Skutt, un producător de cuptoare, recomandă o cameră pentru cuptor care să poată fi încuiată, ca să nu intre copiii și animalele de companie. Acolo unde camera nu poate fi încuiată, ghidul pentru școli sugerează o barieră, de exemplu un paravan de protecție pentru cuptor.
 
-Small children and pets cannot understand a warning sign. We suggest keeping them behind a locked door or a barrier while the kiln fires and while it cools, and posting a warning sign for everyone else.
+Copiii mici și animalele de companie nu pot înțelege un semn de avertizare. Vă sugerăm să-i țineți în spatele unei uși încuiate sau al unei bariere în timpul arderii și cât timp cuptorul se răcește și să puneți un semn de avertizare pentru toți ceilalți.
 
-### Space around it
+### Spațiul din jurul cuptorului
 
-Sources disagree on clearance. Rio Grande says at least 12 inches (30 cm) from walls and anything combustible. L&L strongly recommends 18 inches (46 cm) to all walls, and the building code it cites asks for 3 feet (0.9 m) from combustible walls. Follow your kiln's manual and local fire code; if you are unsure, allow 18 inches from any wall and 3 feet from anything that can burn. In a garage, keep cars, fuel and paint well away.
+Sursele nu sunt de acord asupra distanței de siguranță. Rio Grande indică cel puțin 12 țoli (30 cm) față de pereți și de orice lucru combustibil. L&L recomandă cu tărie 18 țoli (46 cm) față de toți pereții, iar codul de construcții pe care îl citează cere 3 picioare (0,9 m) față de pereții combustibili. Respectați manualul cuptorului și normele locale de prevenire a incendiilor; dacă aveți îndoieli, lăsați 18 țoli față de orice perete și 3 picioare față de orice poate lua foc. Într-un garaj, țineți mașinile, combustibilul și vopselele la mare distanță.
 
-### Power
+### Alimentarea electrică
 
-Rio Grande recommends a **dedicated circuit** (one that powers nothing else) with a properly grounded outlet. We suggest no extension cord. Between firings, switch off the kiln's breaker or disconnect switch, or unplug it, so a child cannot start it.
+Rio Grande recomandă un **circuit electric separat** (unul care nu alimentează nimic altceva), cu o priză împământată corect. Vă sugerăm să nu folosiți prelungitor. Între arderi, opriți siguranța automată sau întrerupătorul de separare al cuptorului ori scoateți-l din priză, ca un copil să nu-l poată porni.
 
-### Be there when the firing ends
+### Fiți de față când se termină arderea
 
-A **kiln sitter** is the mechanical switch on many manual kilns: a small cone bends at the end of the firing and trips the switch off. Its manual says it "is NOT intended to perform as a fail-safe shut-off device." Rio Grande says never to leave a firing kiln unattended, "especially near the expected shut-off time". So stay nearby and check the kiln while it fires, above all near the end; fire only when an adult will be home and awake through the whole firing, check that it has switched off, and keep an ABC fire extinguisher in the kiln room. For how sitters, controllers and schedules work, see [Firing a basic kiln](/guides/firing).
+Un **Kiln-Sitter** este întrerupătorul mecanic de pe multe cuptoare cu comandă manuală: un con{{en: cone}} mic se îndoaie la sfârșitul arderii și declanșează oprirea. Manualul lui spune că „NU este destinat să funcționeze ca dispozitiv de oprire sigură în caz de defecțiune”. Rio Grande spune să nu lăsați niciodată nesupravegheat un cuptor în timpul arderii, „mai ales în apropierea momentului în care se așteaptă oprirea”. Așadar, rămâneți în apropiere și verificați cuptorul în timpul arderii, mai ales spre sfârșit; ardeți doar când un adult va fi acasă și treaz pe tot parcursul arderii, verificați că cuptorul s-a oprit și țineți un stingător ABC în camera cuptorului. Despre cum funcționează dispozitivele Kiln-Sitter, controlerele și programele de ardere, vedeți ghidul [Arderea într-un cuptor simplu](/guides/firing).
 
-### Fumes and carbon monoxide
+### Gazele cuptorului și monoxidul de carbon
 
-Firing gives off fumes, so vent the kiln to the outdoors; [Safe mixing and ventilation](/guides/safe-mixing) explains how. A kiln in an attached garage needs venting that keeps fumes from reaching the house through the connecting door. Keep birds in a far room whenever the kiln fires.
+Arderea produce gaze și vapori, așa că aerisiți cuptorul spre exterior; ghidul [Prepararea în siguranță și ventilația](/guides/safe-mixing) explică cum. Un cuptor aflat într-un garaj lipit de casă are nevoie de o evacuare care să împiedice gazele să ajungă în casă prin ușa de legătură. Țineți păsările într-o cameră îndepărtată la fiecare ardere.
 
-**Carbon monoxide** (CO) is a poisonous gas you cannot see or smell. A university kiln safety sheet requires CO alarms with gas kilns. Views differ for electric kilns, but burning off organic matter (in clay, or things like paper or wax) can make CO. We think a CO alarm in the kiln room and the rooms next to it is a sensible, inexpensive step for any kiln.
+**Monoxidul de carbon** (CO) este un gaz otrăvitor pe care nu îl puteți vedea și nici mirosi. Instrucțiunile de siguranță ale unei universități pentru cuptoare cer detectoare de monoxid de carbon la cuptoarele cu gaz. Pentru cuptoarele electrice părerile diferă, dar arderea materiilor organice (din argilă sau din lucruri precum hârtia sau ceara) poate produce CO. Credem că un detector de monoxid de carbon în camera cuptorului și în camerele vecine este o măsură rezonabilă și ieftină pentru orice cuptor.
 
-### Peepholes and eyes
+### Vizoarele și ochii
 
-Infrared light, which you cannot see, "starts at 752°F (400°C)", and the Ceramic Arts Network says looking into a kiln above this should always be done with eye protection. Infrared can damage the lens of the eye and lead to cataracts, and long gazing can injure the retina. Sunglasses and didymium glasses do not block it.
+Radiația infraroșie, pe care nu o puteți vedea, „începe de la 752°F (400°C)”, iar Ceramic Arts Network spune că privitul într-un cuptor peste această temperatură ar trebui făcut întotdeauna cu protecție pentru ochi. Radiația infraroșie poate deteriora cristalinul și poate duce la cataractă, iar privitul îndelungat poate leza retina. Ochelarii de soare și ochelarii cu didim nu o opresc.
 
 > [!WARNING]
-> Children should not look into a kiln at all. A glowing peephole draws them, and they will not reliably keep protective glasses on, so keep them away while the kiln is hot. Adults should look only briefly, through IR-rated welding glasses. Sources recommend shades from 1.7 to 5; shade 3 is a sensible choice, darker if you see spots afterward.
+> Copiii nu ar trebui să se uite deloc într-un cuptor. Un vizor care strălucește îi atrage și nu se poate conta că vor ține ochelarii de protecție la ochi, așa că țineți-i departe cât timp cuptorul este fierbinte. Adulții ar trebui să se uite doar scurt, prin ochelari de sudură cu filtru IR. Sursele recomandă nuanțe între 1,7 și 5; nuanța 3 este o alegere rezonabilă, iar dacă vedeți pete după aceea, alegeți una mai închisă.
 
 ## Piesele făcute de mână pe masa familiei {#handmade-ware}
 

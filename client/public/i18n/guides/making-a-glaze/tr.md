@@ -163,55 +163,55 @@ Label: Elek meshi
 | Kobalt ya da demir gibi renklendiriciler içeren sırlar | 100–120 mesh               |
 | Kül sırları ve iri taneli hammadde içeren diğer sırlar | 60–80 mesh                 |
 
-## Specific gravity {#specific-gravity lang=en}
+## Özgül ağırlık {#specific-gravity}
 
-**Specific gravity** (SG) tells you how much powder is in your slurry. It is the weight of a volume of glaze divided by the weight of the same volume of water. Water is 1.00, and a glaze at {{SG 1.45}} weighs 145 g per 100 mL. Mixing to a measured SG is how you get the same thickness, and the same coat, every time. It has no units, so it is the same in grams or ounces.
+**Özgül ağırlık**{{en: specific gravity, SG}} size sulu sırrınızda{{en: slurry}} ne kadar toz olduğunu söyler. Belli bir hacimdeki sırrın{{en: glaze}} ağırlığının, aynı hacimdeki suyun ağırlığına bölümüdür. Suyun özgül ağırlığı 1,00’dır ve {{SG 1.45}} olan bir sır 100 mL’de 145 g gelir. Ölçülmüş bir özgül ağırlığa göre karıştırmak, her seferinde aynı kıvamı ve aynı sır tabakasını elde etmenin yoludur. Birimi yoktur; bu yüzden gram ya da ons kullansanız da aynıdır.
 
-### Measure it by weighing 100 mL
+### 100 mL’yi tartarak ölçün
 
-1. Stir the glaze so nothing has settled.
-2. Put a 100 mL **graduated cylinder** (a tall, marked measuring tube) or a 100 mL syringe on the scale, and tare it.
-3. Fill it with glaze to exactly 100 mL, reading the mark at eye level.
-4. Weigh it and divide the grams by 100: 145 g is SG 1.45.
+1. Hiçbir şey dibe çökmüş olmasın diye sırrı karıştırın.
+2. 100 mL’lik bir **dereceli silindiri** (uzun, çizgili bir ölçü tüpü) ya da 100 mL’lik bir şırıngayı teraziye koyun ve darasını alın.
+3. Göz hizasında çizgiyi okuyarak tam 100 mL’ye kadar sırla doldurun.
+4. Tartın ve gramı 100’e bölün: 145 g, özgül ağırlık 1,45 demektir.
 
-Digitalfire also marks a cup at the level of 500 g of water, fills it to the mark with glaze, and divides the weight by 500; a bigger, fuller measure is more accurate. A **hydrometer**, a float read where it sits in the glaze, is quick but can misread thick or gelled glazes. UK hydrometers, such as Potclays', read in degrees Baumé (°Bé). By our arithmetic, SG = 145 ÷ (145 − °Bé), so 46 °Bé is about 1.46. Older UK books give a **pint weight**, the ounces in an imperial pint of glaze: divide it by 20, so 29 oz is about SG 1.45 (also our arithmetic).
+Digitalfire ayrıca bir bardakta 500 g suyun geldiği seviyeyi işaretliyor, bardağı bu çizgiye kadar sırla dolduruyor ve ağırlığı 500’e bölüyor; daha büyük ve daha dolu bir ölçek daha doğru sonuç verir. **Boumetre**, yani sırda durduğu yerden okunan bir şamandıra, hızlıdır ama koyu ya da jelleşmiş sırlarda yanlış okuyabilir. Potclays’inki gibi Birleşik Krallık boumetreleri bome derecesi (°Bé) gösterir. Bizim hesabımıza göre özgül ağırlık = 145 ÷ (145 − °Bé); yani 46 °Bé yaklaşık 1,46’ya karşılık gelir. Eski Birleşik Krallık kitapları **pint ağırlığı** verir, yani bir İngiliz pintlik sırrın ons cinsinden ağırlığını: bunu 20’ye bölün; böylece 29 oz yaklaşık özgül ağırlık 1,45 eder (bu da bizim hesabımız).
 
-### What to aim for
+### Neyi hedeflemeli
 
-Sources disagree, most of all on brushing and spraying, where the UK supplier Potclays gives much higher figures (its own are "for guidance only"). Treat every number as a starting point. Digitalfire's core advice is to find the SG and gelling that work for each glaze, then repeat them and write them down.
+Kaynaklar anlaşamıyor, en çok da fırçayla sürme ve püskürtmede: Birleşik Krallık tedarikçisi Potclays çok daha yüksek değerler veriyor (kendi değerleri “yalnızca yol göstermek içindir”). Her sayıyı bir başlangıç noktası olarak görün. Digitalfire’ın temel tavsiyesi, her sır için işe yarayan özgül ağırlığı ve jelleşmeyi bulmak, sonra bunları tekrarlamak ve yazmaktır.
 
-Table: Specific gravity targets, where sources disagree
-Label: Specific gravity targets
+Table: Özgül ağırlık hedefleri, kaynakların anlaşamadığı yerler
+Label: Özgül ağırlık hedefleri
 
-| Use      | Digitalfire and Glazy                                                                                                                 | Potclays (UK)                               | Safe starting point                                     |
-| -------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- | ------------------------------------------------------- |
-| Dipping  | {{SG 1.40}} (for a 5-second dip) to {{SG 1.50}} (for a 1-second dip); home-mixed glazes that are gelled do best at {{SG 1.43–1.45}}   | Clear {{SG 1.46–1.48}}; colored {{SG 1.61}} | {{SG 1.45}}; thin to {{SG 1.43}} and gel it if it drips |
-| Brushing | {{SG 1.25}} (thin clear) to {{SG 1.55}} (dark detail)                                                                                 | {{SG 1.71–1.81}}                            | Follow the product; use CMC gum or a brushing medium    |
-| Spraying | No figure; Hopper, writing for Ceramic Arts Network, says much thinner, with a deflocculant (an additive that makes a slurry runnier) | {{SG 1.71}}                                 | No reliable number; spray only in a spray booth         |
+| Kullanım       | Digitalfire ve Glazy                                                                                                                                                              | Potclays (Birleşik Krallık)                 | Güvenli başlangıç noktası                                         |
+| -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- | ----------------------------------------------------------------- |
+| Daldırma       | {{SG 1.40}} (5 saniyelik daldırma için) ile {{SG 1.50}} (1 saniyelik daldırma için) arası; evde karıştırılıp jelleştirilmiş sırlar en iyi sonucu {{SG 1.43–1.45}} değerinde verir | Şeffaf {{SG 1.46–1.48}}; renkli {{SG 1.61}} | {{SG 1.45}}; damlıyorsa {{SG 1.43}} değerine inceltip jelleştirin |
+| Fırçayla sürme | {{SG 1.25}} (ince şeffaf) ile {{SG 1.55}} (koyu ayrıntı) arası                                                                                                                    | {{SG 1.71–1.81}}                            | Ürünün önerisine uyun; CMC ya da fırça medyumu kullanın           |
+| Püskürtme      | Değer yok; Ceramic Arts Network için yazan Hopper, deflokülan{{en: deflocculant}} (sulu sırrı daha akışkan yapan bir katkı) ile çok daha ince olması gerektiğini söylüyor         | {{SG 1.71}}                                 | Güvenilir bir sayı yok; yalnızca sırlama kabininde püskürtün      |
 
-To check a dipping glaze by eye, AMACO dips for 5 seconds and looks for a coat about as thick as a US dime. Digitalfire fires tiles dipped for 5 seconds to check.
+AMACO, daldırma sırrını gözle kontrol etmek için 5 saniye daldırıyor ve yaklaşık bir ABD dime madeni parası kalınlığında bir tabaka arıyor. Digitalfire kontrol için 5 saniye daldırılmış karoları pişiriyor.
 
-### Water for a target SG: our estimate
+### Hedef özgül ağırlık için su: bizim tahminimiz
 
-The table below is our own arithmetic, not a source's. It assumes the powder's particles have a density of 2.6 g per cm³, which is an assumption, not a measurement. Clay, soluble materials and gelling all change a real glaze, so use it to start, then measure. As a check, it predicts {{SG 1.44}} for equal weights of powder and water, close to Digitalfire's measured {{SG 1.46}}. It also shows that 70 to 80 mL per 100 g starts you above {{SG 1.50}}, thicker than you need.
+Aşağıdaki tablo bir kaynağın değil, bizim kendi hesabımızdır. Tozun taneciklerinin yoğunluğunu cm³ başına 2,6 g kabul eder; bu bir ölçüm değil, bir varsayımdır. Kil, çözünür hammaddeler ve jelleşme gerçek bir sırrı değiştirir; bu yüzden tabloyu başlamak için kullanın, sonra ölçün. Bir sağlama olarak, eşit ağırlıkta toz ve su için {{SG 1.44}} öngörüyor; bu, Digitalfire’ın ölçtüğü {{SG 1.46}} değerine yakın. Ayrıca 100 g başına 70–80 mL ile başlamanın sizi {{SG 1.50}} değerinin üzerinde, yani gerekenden daha koyu bir kıvamda başlattığını gösteriyor.
 
-Table: Water for a target specific gravity (our estimate)
-Label: Water for a target specific gravity
+Table: Hedef özgül ağırlık için su (bizim tahminimiz)
+Label: Hedef özgül ağırlık için su
 
-| Target      | Per 100 g of powder |  Per kilogram |         Per pound |
-| ----------- | ------------------: | ------------: | ----------------: |
-| {{SG 1.40}} |        about 115 mL | about 1150 mL | about 18 US fl oz |
-| {{SG 1.45}} |         about 98 mL |  about 980 mL | about 15 US fl oz |
-| {{SG 1.50}} |         about 85 mL |  about 850 mL | about 13 US fl oz |
-| {{SG 1.60}} |         about 64 mL |  about 640 mL | about 10 US fl oz |
+| Hedef       | 100 g toz başına |  Kilogram başına |         Libre başına |
+| ----------- | ---------------: | ---------------: | -------------------: |
+| {{SG 1.40}} |  yaklaşık 115 mL | yaklaşık 1150 mL | yaklaşık 18 US fl oz |
+| {{SG 1.45}} |   yaklaşık 98 mL |  yaklaşık 980 mL | yaklaşık 15 US fl oz |
+| {{SG 1.50}} |   yaklaşık 85 mL |  yaklaşık 850 mL | yaklaşık 13 US fl oz |
+| {{SG 1.60}} |   yaklaşık 64 mL |  yaklaşık 640 mL | yaklaşık 10 US fl oz |
 
-### Epsom salts, CMC gum and bentonite
+### Epsom tuzu, CMC ve bentonit
 
-**Epsom salts** make a glaze gel slightly when it stands still and flow again when it is stirred. This is called **flocculating** it, and a glaze that behaves this way is **thixotropic**: it goes on more evenly, drips less and settles less. Digitalfire suggests starting at about 2 g per gallon once the SG is right (roughly 0.5 g per liter, our conversion) and tuning the amount each time you mix, since no recipe should fix the dose. We suggest dissolving it in a little hot water first. In a Digitalfire example, a glaze at {{SG 1.45}} dripped, so water brought it down to {{SG 1.43}} and Epsom salts gelled it back to creamy, and it went on evenly. A rough check: stir, stop and watch. A gelled glaze moves on for about 2 or 3 seconds, then stops and springs back a little.
+**Epsom tuzu**, sırrın dururken hafifçe jelleşmesini ve karıştırılınca yeniden akmasını sağlar. Buna sırrın **flokülasyonu**{{en: flocculating}} denir ve bu şekilde davranan bir sır **tiksotropiktir**{{en: thixotropic}}: daha düzgün sürülür, daha az damlar ve daha az çöker. Digitalfire, özgül ağırlık doğru olduktan sonra galon başına yaklaşık 2 g ile başlamayı (kabaca litre başına 0,5 g; bu bizim çevirimiz) ve miktarı her karıştırmada ayarlamayı öneriyor, çünkü dozu hiçbir reçete sabitlememelidir. Önce biraz sıcak suda çözmenizi öneririz. Digitalfire’ın bir örneğinde {{SG 1.45}} olan bir sır damlıyordu; su ile {{SG 1.43}} değerine indirildi, Epsom tuzu da onu yeniden krem kıvamına jelleştirdi ve sır düzgün sürüldü. Kabaca bir kontrol: karıştırın, durun ve izleyin. Jelleşmiş bir sır yaklaşık 2 ya da 3 saniye daha hareket eder, sonra durur ve biraz geri esner.
 
-**CMC gum** (carboxymethyl cellulose) makes a slurry stickier and slower to dry, and leaves a harder coat that holds to the pot. It matters most for brushing glazes and glazes high in frit. Digitalfire's example blends 3.75 g into 1000 g of slurry, and it has to go in with a blender. A glaze with CMC will not gel with Epsom salts, and since microbes feed on the gum, it can change in the bucket and start to smell.
+**CMC zamkı** (karboksimetil selüloz) sulu sırrı daha yapışkan ve daha geç kuruyan bir hâle getirir ve kaba tutunan daha sert bir tabaka bırakır. En çok fırçayla sürülen sırlarda ve fritçe zengin sırlarda önemlidir. Digitalfire’ın örneğinde 1000 g sulu sırra 3,75 g katılıyor ve bunun blenderla katılması gerekiyor. CMC içeren bir sır Epsom tuzuyla jelleşmez; mikroplar zamkla beslendiği için de kovada değişebilir ve kokmaya başlayabilir.
 
-**Bentonite**, a very fine clay, helps hold the other particles in suspension. Dipping glazes usually rely on 15 to 25% raw clay for this. For a recipe short of clay, about 1 to 3% bentonite helps; Digitalfire says a glaze with more than 15% clay should not need bentonite at more than 1% of the dry glaze's weight.
+**Bentonit**, çok ince taneli bir kil, diğer taneciklerin süspansiyonda kalmasına yardım eder. Daldırma sırları bunun için genellikle %15–25 ham kile dayanır. Kili az olan bir reçetede yaklaşık %1–3 bentonit yardımcı olur; Digitalfire, %15’ten fazla kil içeren bir sırın, kuru sır ağırlığının %1’inden fazla bentonite ihtiyaç duymaması gerektiğini söyler.
 
 ## Test karoları ve doğrusal karışım testleri {#testing}
 

@@ -149,38 +149,38 @@ Pet Poison Helpline menyatakan "Timbal beracun bagi semua spesies, tetapi hewan 
 
 Jika hewan peliharaan mungkin telah memakan atau meminum apa pun dari studio, atau menunjukkan tanda seperti di atas, hubungi dokter hewan Anda atau saluran informasi keracunan hewan (lihat tabel di bagian atas), dengan nama bahan dan berat hewan peliharaan di tangan.
 
-## The kiln {#the-kiln lang=en}
+## Tungku {#the-kiln}
 
-### The outside gets hot enough to burn
+### Bagian luarnya cukup panas untuk membakar
 
-A UK schools risk assessment says a kiln's outside "can reach 160 °C and possibly more" (about 320 °F), and a school kiln guide reports metal bands at up to 460 °F (about 240 °C). Skutt, a kiln maker, recommends a kiln room that can be locked against children and pets. Where a room cannot be locked, the school guide suggests a barrier such as a kiln safety screen.
+Penilaian risiko sekolah di Inggris menyatakan bagian luar tungku "dapat mencapai 160 °C dan mungkin lebih" (sekitar 320 °F), dan panduan tungku sekolah melaporkan pita logam sampai 460 °F (sekitar 240 °C). Skutt, pembuat tungku, merekomendasikan ruang tungku yang dapat dikunci dari anak-anak dan hewan peliharaan. Bila ruangan tidak dapat dikunci, panduan sekolah menyarankan penghalang seperti layar pengaman tungku.
 
-Small children and pets cannot understand a warning sign. We suggest keeping them behind a locked door or a barrier while the kiln fires and while it cools, and posting a warning sign for everyone else.
+Anak kecil dan hewan peliharaan tidak dapat memahami tanda peringatan. Kami menyarankan menjaga mereka di balik pintu terkunci atau penghalang saat tungku membakar dan saat mendingin, dan memasang tanda peringatan untuk orang lain.
 
-### Space around it
+### Ruang di sekelilingnya
 
-Sources disagree on clearance. Rio Grande says at least 12 inches (30 cm) from walls and anything combustible. L&L strongly recommends 18 inches (46 cm) to all walls, and the building code it cites asks for 3 feet (0.9 m) from combustible walls. Follow your kiln's manual and local fire code; if you are unsure, allow 18 inches from any wall and 3 feet from anything that can burn. In a garage, keep cars, fuel and paint well away.
+Sumber berbeda tentang jarak aman. Rio Grande menyatakan paling sedikit 12 inci (30 cm) dari dinding dan apa pun yang mudah terbakar. L&L sangat merekomendasikan 18 inci (46 cm) ke semua dinding, dan kode bangunan yang dikutipnya meminta 3 kaki (0,9 m) dari dinding yang mudah terbakar. Ikuti buku petunjuk tungku Anda dan kode kebakaran setempat; jika ragu, sisakan 18 inci dari dinding mana pun dan 3 kaki dari apa pun yang dapat terbakar. Di garasi, jauhkan mobil, bahan bakar, dan cat.
 
-### Power
+### Daya
 
-Rio Grande recommends a **dedicated circuit** (one that powers nothing else) with a properly grounded outlet. We suggest no extension cord. Between firings, switch off the kiln's breaker or disconnect switch, or unplug it, so a child cannot start it.
+Rio Grande merekomendasikan **sirkuit khusus** (yang tidak menyalurkan daya ke apa pun yang lain) dengan stopkontak yang diarde dengan benar. Kami menyarankan agar tidak memakai kabel ekstensi. Di antara pembakaran, matikan pemutus sirkuit atau sakelar pemutus tungku, atau cabut steker, agar anak tidak dapat menyalakannya.
 
-### Be there when the firing ends
+### Berada di sana saat pembakaran berakhir
 
-A **kiln sitter** is the mechanical switch on many manual kilns: a small cone bends at the end of the firing and trips the switch off. Its manual says it "is NOT intended to perform as a fail-safe shut-off device." Rio Grande says never to leave a firing kiln unattended, "especially near the expected shut-off time". So stay nearby and check the kiln while it fires, above all near the end; fire only when an adult will be home and awake through the whole firing, check that it has switched off, and keep an ABC fire extinguisher in the kiln room. For how sitters, controllers and schedules work, see [Firing a basic kiln](/guides/firing).
+**Kiln-Sitter** adalah sakelar mekanis pada banyak tungku manual: kerucut kecil menekuk pada akhir pembakaran dan memicu sakelar mati. Buku petunjuknya menyatakan bahwa alat ini "TIDAK dimaksudkan berfungsi sebagai alat pemutus yang aman dari kegagalan." Rio Grande menyatakan jangan pernah meninggalkan tungku yang sedang membakar tanpa pengawasan, "terutama mendekati waktu mati yang diperkirakan". Jadi tetaplah berada di dekat tungku dan periksa tungku selama pembakaran, terutama menjelang akhir; bakarlah hanya saat ada orang dewasa di rumah dan terjaga selama seluruh pembakaran, periksa bahwa tungku telah mati, dan simpan alat pemadam api ringan (APAR) ABC di ruang tungku. Untuk cara kerja Kiln-Sitter, pengendali, dan jadwal, lihat [Membakar di tungku sederhana](/guides/firing).
 
-### Fumes and carbon monoxide
+### Asap dan karbon monoksida
 
-Firing gives off fumes, so vent the kiln to the outdoors; [Safe mixing and ventilation](/guides/safe-mixing) explains how. A kiln in an attached garage needs venting that keeps fumes from reaching the house through the connecting door. Keep birds in a far room whenever the kiln fires.
+Pembakaran melepaskan asap, jadi beri ventilasi tungku ke luar ruangan; [Mencampur dengan aman dan ventilasi](/guides/safe-mixing) menjelaskan caranya. Tungku di garasi yang menyatu dengan rumah memerlukan ventilasi yang mencegah asap mencapai rumah melalui pintu penghubung. Simpan burung di ruangan yang jauh setiap kali tungku membakar.
 
-**Carbon monoxide** (CO) is a poisonous gas you cannot see or smell. A university kiln safety sheet requires CO alarms with gas kilns. Views differ for electric kilns, but burning off organic matter (in clay, or things like paper or wax) can make CO. We think a CO alarm in the kiln room and the rooms next to it is a sensible, inexpensive step for any kiln.
+**Karbon monoksida** (CO) adalah gas beracun yang tidak dapat Anda lihat atau cium. Lembar keselamatan tungku universitas mewajibkan alarm CO dengan tungku gas. Pandangan berbeda untuk tungku listrik, tetapi membakar habis bahan organik (dalam tanah liat, atau benda seperti kertas atau lilin) dapat menghasilkan CO. Menurut kami, alarm CO di ruang tungku dan ruangan di sebelahnya adalah langkah yang masuk akal dan murah untuk tungku apa pun.
 
-### Peepholes and eyes
+### Lubang intip dan mata
 
-Infrared light, which you cannot see, "starts at 752°F (400°C)", and the Ceramic Arts Network says looking into a kiln above this should always be done with eye protection. Infrared can damage the lens of the eye and lead to cataracts, and long gazing can injure the retina. Sunglasses and didymium glasses do not block it.
+Cahaya inframerah, yang tidak dapat Anda lihat, "mulai pada 752°F (400°C)", dan Ceramic Arts Network menyatakan melihat ke dalam tungku di atas suhu ini sebaiknya selalu dilakukan dengan pelindung mata. Inframerah dapat merusak lensa mata dan menyebabkan katarak, dan menatap lama dapat melukai retina. Kacamata hitam dan kacamata didimium tidak menghalanginya.
 
 > [!WARNING]
-> Children should not look into a kiln at all. A glowing peephole draws them, and they will not reliably keep protective glasses on, so keep them away while the kiln is hot. Adults should look only briefly, through IR-rated welding glasses. Sources recommend shades from 1.7 to 5; shade 3 is a sensible choice, darker if you see spots afterward.
+> Anak-anak sebaiknya tidak melihat ke dalam tungku sama sekali. Lubang intip yang berpijar menarik mereka, dan mereka tidak akan tetap memakai kacamata pelindung dengan andal, jadi jauhkan mereka saat tungku panas. Orang dewasa sebaiknya melihat hanya sebentar, melalui kacamata las berperingkat IR. Sumber merekomendasikan shade dari 1,7 sampai 5; shade 3 adalah pilihan yang masuk akal, lebih gelap jika Anda melihat bintik sesudahnya.
 
 ## Benda buatan tangan di meja keluarga {#handmade-ware}
 

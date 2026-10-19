@@ -272,6 +272,7 @@
     "numbers": {
       "heading": "Analizės ir ribų skaitymas",
       "analysis": "<b>Analizė ir ribos</b> po receptu parodo kiekvieno oksido molius, mol. % ir masės % po degimo, degimo nuostolius ir apskaičiuotą šiluminį plėtimąsi – įvertį glazūroms palyginti.",
+      "limits": "<b>Ribos</b> palygina Segerio formulę su ribų rinkiniu: Hesselbertho ir Roy stabilių glazūrų ribomis, nebent pasirinktumėte Glazecalc savąsias (pasirinkimas įrašomas su jūsų nustatymais). Jos tikrina degimo juostą, kurią nurodo recepto <b>Degimas</b>: jo piroskopą arba intervalą. Intervalas, kertantis juostas, pavyzdžiui, nuo piroskopo 6 iki 10, abiejų juostų patikras rodo greta. Norėdami tikrinti tik vieną juostą, pasirinkite ją pačių ribų lauke <b>Degimas</b>, kuris nustelbia recepto degimą ir įrašomas su receptu. Hesselbertho ir Roy skaičiai skirti piroskopams 6 ir 10, todėl žemoje temperatūroje rodoma, kad jie netaikomi. Tai gairės, o ne „išlaikyta“ ar „neišlaikyta“. Viršuje viena eilutė palygina glazūros boro, silicio dioksido ir aliuminio oksido kiekį su jos degimu pagal Katzo boro taisyklę ir Hesselbertho ir Roy skaičius, kad ir kurį ribų rinkinį pasirinktumėte: pastabą ji pateikia tik tada, kai jie sutaria, kad glazūra panaši į kitą degimą, pasako, kai negali įvertinti (švinas, litis, raku ir panašūs atvejai), ir yra gairės, o ne bandymas.",
       "stull": "<b>Stullo diagrama</b> atvaizduoja glazūros silicio dioksidą pagal jos aliuminio oksidą, su Stullo matinės, pusiau matinės ir blizgios sritimis bei ribų rinkinio intervalais. Tai paviršiaus orientyras, o ne prognozė.",
       "slurry": "<b>Santykinis tankis ir vanduo</b> naudoja Brongniarto formulę: pasverkite išmatuotą glazūros tūrį, tada pažiūrėkite, kiek sausos glazūros yra kibire, kiek vandens reikia norimam santykiniam tankiui pasiekti arba kiek vandens reikia naujam užmaišui. Tankiai atitinka jūsų santykinio tankio, Baumé ar pintos masės nustatymą."
     },
@@ -471,6 +472,7 @@
     "expansionRises": "Apskaičiuotas šios glazūros šiluminis plėtimasis padidėja nuo {was} iki {now}.",
     "expansionRisesProbably": "Jei senoji glazūra vos tiko jūsų molio masei, ši tikriausiai trūkinės, kartais praėjus kelioms savaitėms.",
     "expansionRisesMay": "Jei senoji glazūra vos tiko jūsų molio masei, ši gali trūkinėti, kartais praėjus kelioms savaitėms.",
+    "expansionRisesFix": "Trūkinėjimas silpnina dirbinius, ir jo nepatariama turėti paviršiuose, kurie liečiasi su maistu. Dalį natrio ir kalio pakeitus mažiau besiplečiančiais fliusais (boru, ličiu, magniu ar kalciu), šiluminis plėtimasis sumažėja; kartais siūloma pridėti silicio dioksido, bet šaltiniai nesutaria.",
     "expansionFalls": "Apskaičiuotas šios glazūros šiluminis plėtimasis sumažėja nuo {was} iki {now}. Kai jis šiek tiek mažesnis, glazūra paprastai geriau atspari trūkinėjimui.",
     "expansionFallsProbably": "Kai jis daug mažesnis, glazūra tikriausiai atšoks, nuo kraštų ir briaunų atskeldama aštrias skeveldras.",
     "expansionFallsCan": "Kai jis daug mažesnis, glazūra gali atšokti, nuo kraštų ir briaunų atskeldama aštrias skeveldras.",
@@ -596,6 +598,36 @@
     "firingFromBlock": "Pagal recepto degimą ({bands})",
     "bothBands": "Recepto degimas apima {bands}, todėl kiekvienas tikrinamas greta: glazūra retai elgiasi vienodai abiejuose galuose.",
     "fromFiring": "Skaičiai skirti recepto degimui: {band}. Norėdami patikrinti kitą, aukščiau pasirinkite degimą."
+  },
+  "coneFit": {
+    "cooler": "Šios glazūros chemija labiau panaši į {looksLike, select, low {žemo degimo} other {vidutinio degimo}} glazūrą nei į skirtą nurodytam degimui ({scale, select, band {{band, select, low {žemas degimas} mid {vidutinis degimas} other {aukštas degimas}}} sk {SK {cone}} temperature {{cone} °C} other {piroskopas {cone}}}).",
+    "coolerSoft": "Šios glazūros chemija linksta į vėsesnį degimą nei nurodytasis ({scale, select, band {{band, select, low {žemas degimas} mid {vidutinis degimas} other {aukštas degimas}}} sk {SK {cone}} temperature {{cone} °C} other {piroskopas {cone}}}), arčiau piroskopo 6, nors vien pagal chemiją 6 ir 10 piroskopų glazūros atskiriamos tik apytiksliai.",
+    "hotter": "Šios glazūros chemija labiau panaši į {looksLike, select, high {aukšto degimo} other {vidutinio degimo}} glazūrą nei į skirtą nurodytam degimui ({scale, select, band {{band, select, low {žemas degimas} mid {vidutinis degimas} other {aukštas degimas}}} sk {SK {cone}} temperature {{cone} °C} other {piroskopas {cone}}}).",
+    "hotterSoft": "Šios glazūros chemija linksta į karštesnį degimą nei nurodytasis ({scale, select, band {{band, select, low {žemas degimas} mid {vidutinis degimas} other {aukštas degimas}}} sk {SK {cone}} temperature {{cone} °C} other {piroskopas {cone}}}), arčiau piroskopo 10, nors vien pagal chemiją 6 ir 10 piroskopų glazūros atskiriamos tik apytiksliai.",
+    "closer": "Iš intervalo, kuriam ji nurodyta, šios glazūros chemija labiau panaši į šį galą: {scale, select, band {{band, select, low {žemas degimas} mid {vidutinis degimas} other {aukštas degimas}}} sk {SK {cone}} temperature {{cone} °C} other {piroskopas {cone}}}.",
+    "coolerSilica": "Joje yra daugiau boro ({boron}), nei glazūroms esant šiam degimui ({scale, select, band {{band, select, low {žemas degimas} mid {vidutinis degimas} other {aukštas degimas}}} sk {SK {cone}} temperature {{cone} °C} other {piroskopas {cone}}}) paprastai reikia, ir mažiau silicio dioksido ({silica}), nei jose paprastai būna.",
+    "coolerAlumina": "Joje yra daugiau boro ({boron}), nei glazūroms esant šiam degimui ({scale, select, band {{band, select, low {žemas degimas} mid {vidutinis degimas} other {aukštas degimas}}} sk {SK {cone}} temperature {{cone} °C} other {piroskopas {cone}}}) paprastai reikia, ir mažai aliuminio oksido ({alumina}).",
+    "coolerBoth": "Joje yra daugiau boro ({boron}), nei glazūroms esant šiam degimui ({scale, select, band {{band, select, low {žemas degimas} mid {vidutinis degimas} other {aukštas degimas}}} sk {SK {cone}} temperature {{cone} °C} other {piroskopas {cone}}}) paprastai reikia, ir mažiau silicio dioksido ({silica}) bei aliuminio oksido ({alumina}), nei jose paprastai būna.",
+    "hotterSilica": "Joje yra mažai boro ({boron}) šiam degimui ({scale, select, band {{band, select, low {žemas degimas} mid {vidutinis degimas} other {aukštas degimas}}} sk {SK {cone}} temperature {{cone} °C} other {piroskopas {cone}}}) ir daugiau silicio dioksido ({silica}), nei šio degimo glazūrose paprastai būna.",
+    "coolerEffect": "Šiame degime ji gali nutekėti arba per daug išsilydyti: pirmiausia išdeginkite bandinį ant biskvito padėkliuko.",
+    "hotterEffect": "Šiame degime ji gali likti nepakankamai išdegusi: sausa, šiurkšti arba ne visiškai sandari. Išbandykite degindami prieš naudodami ją dirbiniams ir ypač prieš naudodami ten, kur lies maistas ar gėrimas.",
+    "hotterEffectSoft": "Kai kurios glazūros šiame degime išsilydo ir be boro, todėl tai tik užuomina: bandinyje patikrinkite, ar ji visiškai išsilydo.",
+    "gerstley": "Dalis jos boro gaunama iš Gerstley borato, kuris įvairuoja nuo partijos iki partijos, todėl šis skaičius mažiau patikimas.",
+    "guide": "Tai palygina chemiją su paskelbtais skaičiais: tai gairės, o ne bandymas. Jei glazūra jums gerai išdegė šiame piroskope, pasitikėkite savo bandiniais.",
+    "fits": "Jos boras, silicio dioksidas ir aliuminio oksidas nenukreipia nuo šio degimo ({scale, select, band {{band, select, low {žemas degimas} mid {vidutinis degimas} other {aukštas degimas}}} sk {SK {cone}} temperature {{cone} °C} other {piroskopas {cone}}}). Tai gairės, o ne bandymas: jos nieko nesako apie tai, ar glazūra stabili ar tinkama kontaktui su maistu.",
+    "sources": "Šaltiniai:",
+    "skip": {
+      "lead": "Glazecalc negali palyginti šios glazūros chemijos su jos degimu: didelė jos lydalo dalis gaunama iš švino, kurio šiam tikrinimui naudojami paskelbti skaičiai neapima.",
+      "lithium": "Glazecalc negali palyginti šios glazūros chemijos su jos degimu: didelė jos lydalo dalis gaunama iš ličio, kurio šiam tikrinimui naudojami paskelbti skaičiai neapima.",
+      "alkali": "Glazecalc negali palyginti šios glazūros chemijos su jos degimu: didelė jos lydalo dalis gaunama iš natrio ir kalio, kurių šiam tikrinimui naudojami paskelbti skaičiai neapima.",
+      "zinc": "Glazecalc negali palyginti šios glazūros chemijos su jos degimu: joje daug cinko, kaip kristalinėse glazūrose, kurio šiam tikrinimui naudojami paskelbti skaičiai neapima.",
+      "notGlaze": "Glazecalc negali palyginti šios glazūros chemijos su jos degimu: jos formulė nėra įprastos glazūros (labai mažai arba labai daug silicio dioksido ar daug spalvinamųjų oksidų), todėl šiam tikrinimui naudojami paskelbti skaičiai jai netinka.",
+      "process": "Glazecalc negali palyginti šios glazūros chemijos su jos degimu: ji skirta {process, select, raku {raku degimui} salt {degimui su druska} soda {degimui su soda} wood {degimui malkomis} other {duobiniam degimui}}, kai krosnis atlieka dalį glazūravimo, o to šiam tikrinimui naudojami paskelbti skaičiai neapima.",
+      "ash": "Glazecalc negali palyginti šios glazūros chemijos su jos degimu: joje yra pelenų, kurių sudėtis per daug kinta šiam tikrinimui naudojamiems paskelbtiems skaičiams.",
+      "noTemperature": "Glazecalc negali palyginti šios glazūros chemijos su nurodytu degimu ({scale, select, band {{band, select, low {žemas degimas} mid {vidutinis degimas} other {aukštas degimas}}} sk {SK {cone}} temperature {{cone} °C} other {piroskopas {cone}}}): šiam piroskopui išmatuotos temperatūros nėra.",
+      "between": "Glazecalc negali palyginti šios glazūros chemijos su nurodytu degimu ({scale, select, band {{band, select, low {žemas degimas} mid {vidutinis degimas} other {aukštas degimas}}} sk {SK {cone}} temperature {{cone} °C} other {piroskopas {cone}}}): šiam tikrinimui naudojami paskelbti skaičiai skirti žemam degimui ir vidutiniam bei aukštam degimui, o ne tarp jų esantiems piroskopams (nuo 01 iki 3).",
+      "belowChart": "Glazecalc negali palyginti šios glazūros chemijos su nurodytu degimu ({scale, select, band {{band, select, low {žemas degimas} mid {vidutinis degimas} other {aukštas degimas}}} sk {SK {cone}} temperature {{cone} °C} other {piroskopas {cone}}}): Katzo boro taisyklė skirta piroskopams nuo 06 iki 10, o šis degimas vėsesnis."
+    }
   },
   "stull": {
     "heading": "Stullo diagrama",
@@ -902,6 +934,7 @@
     "foodSurface": "Maisto paviršiui (vidinė glazūra)",
     "liner": {
       "note": "Tinkamumas liestis su maistu priklauso nuo to, ar ši glazūra išdegta iki piroskopo, su kuriuo ji buvo išbandyta: nepakankamai išdegusi glazūra gali išskirti metalų.",
+      "range": "Šios glazūros degimas nurodytas kaip intervalas, todėl išbandykite ją apatiniame intervalo gale, kur ji mažiausiai išsilydo.",
       "untested": "Dar nė vienas piroskopas nepažymėtas kaip išbandytas.",
       "test": "Tik jūsų pačių išdegtų indų laboratorinis metalų išsiskyrimo tyrimas parodo, ar ji saugi liestis su maistu."
     },
@@ -964,5 +997,23 @@
     "replaceAsk": "Kaip išbandyti pažymėta {now}. Pakeisti tai piroskopais, kuriuos nurodo žurnalai: {logs}?",
     "replace": "Pakeisti",
     "keep": "Palikti kaip yra"
+  },
+  "coneCards": {
+    "heading": "Rezultatai pagal piroskopą",
+    "unplaced": "Nepriskirta piroskopui",
+    "unplacedNote": "Šie degimo žurnalai dar nepriskirti piroskopui: pasirinkite, kur kiekvienas buvo degtas.",
+    "approx": "≈ {temperature}",
+    "cautions": "{count, plural, =0 {nėra ribų įspėjimų} one {# ribų įspėjimas} few {# ribų įspėjimai} many {# ribų įspėjimo} other {# ribų įspėjimų}}",
+    "logs": "{count, plural, =0 {nėra degimo žurnalų} one {# degimo žurnalas} few {# degimo žurnalai} many {# degimo žurnalo} other {# degimo žurnalų}}",
+    "outside": "už nurodyto degimo ribų",
+    "outsideChoice": "{place} (už nurodyto degimo ribų)",
+    "summaryLabel": "Kaip pavyko: {place}",
+    "summaryPlaceholder": "Paviršius, spalva, nubėgimas, trūkinėjimas...",
+    "noAtmosphere": "atmosfera nenurodyta",
+    "placeLabel": "Kur degta: {title}",
+    "notPlaced": "Nepriskirta",
+    "add": "Pridėti rezultatą:",
+    "addButton": "Pridėti",
+    "saveFailed": "Nepavyko įrašyti, kur degtas degimo žurnalas."
   }
 }

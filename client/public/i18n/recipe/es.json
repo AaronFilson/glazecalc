@@ -272,6 +272,7 @@
     "numbers": {
       "heading": "Leer el análisis y los límites",
       "analysis": "<b>Análisis y límites</b>, bajo la receta, muestra los moles, el % molar y el % en peso cocido de cada óxido, la pérdida al fuego y la dilatación térmica calculada, una estimación para comparar esmaltes.",
+      "limits": "<b>Límites</b> compara la fórmula Seger con un conjunto de límites: los límites de esmaltes estables de Hesselberth y Roy, salvo que elija los propios de Glazecalc (la elección se guarda con sus ajustes). Comprueba la franja de cocción que da la <b>Cocción</b> de la receta: su cono, o su intervalo. Un intervalo que cruza varias franjas, como de cono 6 a cono 10, muestra una junto a otra las comprobaciones de ambas franjas. Para comprobar una sola franja, elíjala en la casilla <b>Cocción</b> propia de los límites, que prevalece sobre la cocción de la receta y se guarda con la receta. Las cifras de Hesselberth y Roy son para cono 6 y cono 10, así que a baja temperatura dice que no se aplican. Son orientaciones, no un aprobado o un suspenso. Arriba, una línea compara el boro, la sílice y la alúmina del esmalte con su cocción, según la regla del boro de Katz y las cifras de Hesselberth y Roy, sea cual sea el conjunto de límites que elija: solo da una nota cuando ambas coinciden en que el esmalte se parece a otra cocción, dice cuándo no puede juzgar (plomo, litio, raku y similares), y es una orientación, no una prueba.",
       "stull": "El <b>gráfico de Stull</b> sitúa la sílice del esmalte frente a su alúmina, con las regiones mate, semimate y brillante de Stull y los intervalos del conjunto de límites. Es una guía para la superficie, no una predicción.",
       "slurry": "<b>Densidad y agua</b> usa la fórmula de Brongniart: pese un volumen medido del esmalte, y vea después el esmalte seco que hay en el cubo, el agua que lo lleva a la densidad que quiere o el agua para una tanda nueva. Las densidades siguen su ajuste de densidad relativa, grados Baumé o peso por pinta."
     },
@@ -471,6 +472,7 @@
     "expansionRises": "Su dilatación calculada sube de {was} a {now}.",
     "expansionRisesProbably": "Si el esmalte antiguo apenas se acoplaba a su pasta, este probablemente se cuarteará, a veces semanas después.",
     "expansionRisesMay": "Si el esmalte antiguo apenas se acoplaba a su pasta, este puede cuartearse, a veces semanas después.",
+    "expansionRisesFix": "El cuarteado debilita las piezas y no se recomienda en superficies en contacto con alimentos. Cambiar parte del sodio y del potasio por fundentes de menor dilatación (boro, litio, magnesio o calcio) reduce la dilatación térmica; a veces se sugiere añadir sílice, pero las fuentes no coinciden.",
     "expansionFalls": "Su dilatación calculada baja de {was} a {now}. Algo más baja suele resistir mejor el cuarteado.",
     "expansionFallsProbably": "Si es mucho más baja, probablemente se desconchará, con lascas cortantes que saltan de bordes y cantos.",
     "expansionFallsCan": "Si es mucho más baja, puede desconcharse, con lascas cortantes que saltan de bordes y cantos.",
@@ -596,6 +598,36 @@
     "firingFromBlock": "De la cocción de la receta ({bands})",
     "bothBands": "La cocción de la receta abarca {bands}, así que se comprueba cada una, una al lado de la otra: un esmalte rara vez se comporta igual en los dos extremos.",
     "fromFiring": "Las cifras son para la cocción de la receta: {band}. Elija arriba una cocción para comprobar otra."
+  },
+  "coneFit": {
+    "cooler": "La química de este esmalte se parece más a la de un esmalte para {looksLike, select, low {la baja temperatura} other {la media temperatura}} que a la de uno para {scale, select, band {{band, select, low {la baja temperatura} mid {la media temperatura} other {la alta temperatura}}} sk {SK {cone}} temperature {{cone} °C} other {cono {cone}}}.",
+    "coolerSoft": "La química de este esmalte tiende a una cocción más fría que la de {scale, select, band {{band, select, low {la baja temperatura} mid {la media temperatura} other {la alta temperatura}}} sk {SK {cone}} temperature {{cone} °C} other {cono {cone}}}, más cerca de cono 6, aunque la química sola solo distingue de forma aproximada los esmaltes de cono 6 y de cono 10.",
+    "hotter": "La química de este esmalte se parece más a la de un esmalte para {looksLike, select, high {la alta temperatura} other {la media temperatura}} que a la de uno para {scale, select, band {{band, select, low {la baja temperatura} mid {la media temperatura} other {la alta temperatura}}} sk {SK {cone}} temperature {{cone} °C} other {cono {cone}}}.",
+    "hotterSoft": "La química de este esmalte tiende a una cocción más caliente que la de {scale, select, band {{band, select, low {la baja temperatura} mid {la media temperatura} other {la alta temperatura}}} sk {SK {cone}} temperature {{cone} °C} other {cono {cone}}}, más cerca de cono 10, aunque la química sola solo distingue de forma aproximada los esmaltes de cono 6 y de cono 10.",
+    "closer": "Dentro del intervalo para el que se indica, la química de este esmalte parece más cercana al extremo de {scale, select, band {{band, select, low {baja temperatura} mid {media temperatura} other {alta temperatura}}} sk {SK {cone}} temperature {{cone} °C} other {cono {cone}}}.",
+    "coolerSilica": "Tiene más boro ({boron}) del que suelen necesitar los esmaltes cocidos {scale, select, band {{band, select, low {a baja temperatura} mid {a media temperatura} other {a alta temperatura}}} sk {a SK {cone}} temperature {a {cone} °C} other {a cono {cone}}}, y menos sílice ({silica}) de la que suelen tener.",
+    "coolerAlumina": "Tiene más boro ({boron}) del que suelen necesitar los esmaltes cocidos {scale, select, band {{band, select, low {a baja temperatura} mid {a media temperatura} other {a alta temperatura}}} sk {a SK {cone}} temperature {a {cone} °C} other {a cono {cone}}}, y poca alúmina ({alumina}).",
+    "coolerBoth": "Tiene más boro ({boron}) del que suelen necesitar los esmaltes cocidos {scale, select, band {{band, select, low {a baja temperatura} mid {a media temperatura} other {a alta temperatura}}} sk {a SK {cone}} temperature {a {cone} °C} other {a cono {cone}}}, y menos sílice ({silica}) y alúmina ({alumina}) de las que suelen tener.",
+    "hotterSilica": "Tiene poco boro ({boron}) para {scale, select, band {{band, select, low {la baja temperatura} mid {la media temperatura} other {la alta temperatura}}} sk {SK {cone}} temperature {{cone} °C} other {cono {cone}}}, y más sílice ({silica}) de la que suelen tener los esmaltes cocidos a esa temperatura.",
+    "coolerEffect": "Con esa cocción puede escurrirse o fundirse en exceso: cueza antes una probeta sobre un disco de bizcocho.",
+    "hotterEffect": "Con esa cocción puede salir poco cocido: seco, áspero o sin sellar del todo. Pruébelo cociendo antes de usarlo en piezas, y sobre todo antes de usarlo donde vaya a tocar comida o bebida.",
+    "hotterEffectSoft": "Algunos esmaltes se funden con esa cocción sin boro, así que esto es solo una pista: compruebe en una probeta que se funde por completo.",
+    "gerstley": "Parte de su boro procede del Gerstley Borate, que varía de un lote a otro, así que esa cifra es menos segura.",
+    "guide": "Esto compara la química con cifras publicadas: es una orientación, no una prueba. Si el esmalte le ha cocido bien a este cono, confíe en sus probetas.",
+    "fits": "Su boro, su sílice y su alúmina no apuntan en contra de {scale, select, band {{band, select, low {la baja temperatura} mid {la media temperatura} other {la alta temperatura}}} sk {SK {cone}} temperature {{cone} °C} other {cono {cone}}}. Es una orientación, no una prueba: no dice nada sobre si el esmalte es estable o apto para uso alimentario.",
+    "sources": "Fuentes:",
+    "skip": {
+      "lead": "Glazecalc no puede comparar la química de este esmalte con su cocción: gran parte de su fundido procede del plomo, que las cifras publicadas que usa esta comprobación no cubren.",
+      "lithium": "Glazecalc no puede comparar la química de este esmalte con su cocción: gran parte de su fundido procede del litio, que las cifras publicadas que usa esta comprobación no cubren.",
+      "alkali": "Glazecalc no puede comparar la química de este esmalte con su cocción: gran parte de su fundido procede del sodio y del potasio, que las cifras publicadas que usa esta comprobación no cubren.",
+      "zinc": "Glazecalc no puede comparar la química de este esmalte con su cocción: tiene mucho zinc, como los esmaltes cristalinos, y las cifras publicadas que usa esta comprobación no lo cubren.",
+      "notGlaze": "Glazecalc no puede comparar la química de este esmalte con su cocción: su fórmula no es la de un esmalte habitual (muy poca o muchísima sílice, o muchos óxidos colorantes), así que las cifras publicadas que usa esta comprobación no le sirven.",
+      "process": "Glazecalc no puede comparar la química de este esmalte con su cocción: es para una cocción {process, select, raku {raku} salt {de sal} soda {de sosa} wood {de leña} other {en hoyo}}, en la que el horno hace parte del esmaltado, y las cifras publicadas que usa esta comprobación no lo cubren.",
+      "ash": "Glazecalc no puede comparar la química de este esmalte con su cocción: tiene ceniza, cuya composición varía demasiado para las cifras publicadas que usa esta comprobación.",
+      "noTemperature": "Glazecalc no puede comparar la química de este esmalte con {scale, select, band {{band, select, low {la baja temperatura} mid {la media temperatura} other {la alta temperatura}}} sk {SK {cone}} temperature {{cone} °C} other {cono {cone}}}: no hay una temperatura medida para ese cono.",
+      "between": "Glazecalc no puede comparar la química de este esmalte con {scale, select, band {{band, select, low {la baja temperatura} mid {la media temperatura} other {la alta temperatura}}} sk {SK {cone}} temperature {{cone} °C} other {cono {cone}}}: las cifras publicadas que usa esta comprobación son para la baja temperatura y para la media y la alta, no para los conos intermedios (de 01 a 3).",
+      "belowChart": "Glazecalc no puede comparar la química de este esmalte con {scale, select, band {{band, select, low {la baja temperatura} mid {la media temperatura} other {la alta temperatura}}} sk {SK {cone}} temperature {{cone} °C} other {cono {cone}}}: la regla del boro de Katz va de cono 06 a cono 10, y esa cocción es más fría."
+    }
   },
   "stull": {
     "heading": "Gráfico de Stull",
@@ -902,6 +934,7 @@
     "foodSurface": "Para una superficie en contacto con alimentos (un esmalte de interior)",
     "liner": {
       "note": "La seguridad alimentaria depende de cocer este esmalte al cono al que se probó: un esmalte poco cocido puede ceder metales.",
+      "range": "La cocción de este esmalte se da como intervalo, así que pruébelo en el extremo bajo del intervalo, donde menos se funde.",
       "untested": "Todavía no hay ningún cono marcado como probado.",
       "test": "Solo un ensayo de cesión de sus propias piezas cocidas muestra si es apto para uso alimentario."
     },
@@ -964,5 +997,23 @@
     "replaceAsk": "Marcado como probado: {now}. ¿Sustituirlo por los conos que nombran los registros, {logs}?",
     "replace": "Sustituir",
     "keep": "Dejarlo como está"
+  },
+  "coneCards": {
+    "heading": "Resultados por cono",
+    "unplaced": "Sin asignar a un cono",
+    "unplacedNote": "Estos registros de cocción aún no están asignados a un cono: elija dónde se coció cada uno.",
+    "approx": "≈ {temperature}",
+    "cautions": "{count, plural, =0 {sin avisos de límites} one {# aviso de límites} many {# avisos de límites} other {# avisos de límites}}",
+    "logs": "{count, plural, =0 {sin registros de cocción} one {# registro de cocción} many {# registros de cocción} other {# registros de cocción}}",
+    "outside": "fuera de la cocción indicada",
+    "outsideChoice": "{place} (fuera de la cocción indicada)",
+    "summaryLabel": "Resultado para {place}",
+    "summaryPlaceholder": "Superficie, color, escurridos, cuarteado...",
+    "noAtmosphere": "atmósfera no indicada",
+    "placeLabel": "Dónde se coció {title}",
+    "notPlaced": "Sin asignar",
+    "add": "Añadir un resultado para",
+    "addButton": "Añadir",
+    "saveFailed": "No se ha podido guardar dónde se coció el registro de cocción."
   }
 }

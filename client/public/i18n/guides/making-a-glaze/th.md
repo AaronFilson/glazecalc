@@ -163,55 +163,55 @@ Label: เมชของตะแกรง
 | เคลือบที่มีสารให้สี เช่น โคบอลต์หรือเหล็ก    | 100 ถึง 120 เมช   |
 | เคลือบขี้เถ้า และเคลือบอื่นที่มีวัตถุดิบหยาบ | 60 ถึง 80 เมช     |
 
-## Specific gravity {#specific-gravity lang=en}
+## ความถ่วงจำเพาะ {#specific-gravity}
 
-**Specific gravity** (SG) tells you how much powder is in your slurry. It is the weight of a volume of glaze divided by the weight of the same volume of water. Water is 1.00, and a glaze at {{SG 1.45}} weighs 145 g per 100 mL. Mixing to a measured SG is how you get the same thickness, and the same coat, every time. It has no units, so it is the same in grams or ounces.
+**ความถ่วงจำเพาะ**{{en: specific gravity}} (SG) บอกว่ามีผงในน้ำเคลือบของคุณเท่าใด คือน้ำหนักของปริมาตรเคลือบหารด้วยน้ำหนักของน้ำปริมาตรเท่ากัน น้ำคือ 1.00 และเคลือบที่ {{SG 1.45}} หนัก 145 g ต่อ 100 mL การผสมให้ถึงความถ่วงจำเพาะที่วัดได้คือวิธีที่ทำให้ได้ความหนาเท่ากันและชั้นเคลือบเท่ากันทุกครั้ง ไม่มีหน่วย จึงเหมือนกันทั้งกรัมหรือออนซ์
 
-### Measure it by weighing 100 mL
+### วัดโดยชั่ง 100 mL
 
-1. Stir the glaze so nothing has settled.
-2. Put a 100 mL **graduated cylinder** (a tall, marked measuring tube) or a 100 mL syringe on the scale, and tare it.
-3. Fill it with glaze to exactly 100 mL, reading the mark at eye level.
-4. Weigh it and divide the grams by 100: 145 g is SG 1.45.
+1. คนเคลือบเพื่อไม่ให้มีอะไรตกตะกอน
+2. วาง**กระบอกตวง** (หลอดตวงสูงที่มีขีด) 100 mL หรือกระบอกฉีดยา 100 mL บนเครื่องชั่ง และปรับศูนย์
+3. เติมเคลือบให้ได้ 100 mL พอดี อ่านขีดในระดับสายตา
+4. ชั่งและหารกรัมด้วย 100: 145 g คือ SG 1.45
 
-Digitalfire also marks a cup at the level of 500 g of water, fills it to the mark with glaze, and divides the weight by 500; a bigger, fuller measure is more accurate. A **hydrometer**, a float read where it sits in the glaze, is quick but can misread thick or gelled glazes. UK hydrometers, such as Potclays', read in degrees Baumé (°Bé). By our arithmetic, SG = 145 ÷ (145 − °Bé), so 46 °Bé is about 1.46. Older UK books give a **pint weight**, the ounces in an imperial pint of glaze: divide it by 20, so 29 oz is about SG 1.45 (also our arithmetic).
+Digitalfire ยังทำเครื่องหมายถ้วยที่ระดับน้ำ 500 g เติมเคลือบถึงขีด และหารน้ำหนักด้วย 500 เครื่องตวงที่ใหญ่และเต็มกว่าแม่นยำกว่า **ไฮโดรมิเตอร์** ซึ่งเป็นทุ่นที่อ่านตรงที่ลอยอยู่ในเคลือบ ใช้เร็วแต่อาจอ่านผิดในเคลือบที่ข้นหรือจับเป็นเจล ไฮโดรมิเตอร์ของสหราชอาณาจักร เช่นของ Potclays อ่านเป็นองศาโบเม (°Bé) ตามเลขคณิตของเรา SG = 145 ÷ (145 − °Bé) ดังนั้น 46 °Bé ประมาณ 1.46 หนังสือสหราชอาณาจักรรุ่นเก่าให้**น้ำหนักต่อไพนต์** คือออนซ์ในหนึ่งไพนต์อิมพีเรียลของเคลือบ: หารด้วย 20 ดังนั้น 29 oz ประมาณ SG 1.45 (เป็นเลขคณิตของเราเช่นกัน)
 
-### What to aim for
+### เล็งไปที่เท่าใด
 
-Sources disagree, most of all on brushing and spraying, where the UK supplier Potclays gives much higher figures (its own are "for guidance only"). Treat every number as a starting point. Digitalfire's core advice is to find the SG and gelling that work for each glaze, then repeat them and write them down.
+แหล่งข้อมูลไม่ตรงกัน มากที่สุดเรื่องการทาและการพ่น ซึ่งผู้จำหน่ายในสหราชอาณาจักร Potclays ให้ตัวเลขสูงกว่ามาก (ของตนเองคือ “เพื่อเป็นแนวทางเท่านั้น”) ถือทุกตัวเลขเป็นจุดเริ่มต้น คำแนะนำหลักของ Digitalfire คือหา SG และการจับเป็นเจลที่ได้ผลสำหรับเคลือบแต่ละสูตร แล้วทำซ้ำและจดไว้
 
-Table: Specific gravity targets, where sources disagree
-Label: Specific gravity targets
+Table: เป้าหมายความถ่วงจำเพาะ เมื่อแหล่งข้อมูลไม่ตรงกัน
+Label: เป้าหมายความถ่วงจำเพาะ
 
-| Use      | Digitalfire and Glazy                                                                                                                 | Potclays (UK)                               | Safe starting point                                     |
-| -------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- | ------------------------------------------------------- |
-| Dipping  | {{SG 1.40}} (for a 5-second dip) to {{SG 1.50}} (for a 1-second dip); home-mixed glazes that are gelled do best at {{SG 1.43–1.45}}   | Clear {{SG 1.46–1.48}}; colored {{SG 1.61}} | {{SG 1.45}}; thin to {{SG 1.43}} and gel it if it drips |
-| Brushing | {{SG 1.25}} (thin clear) to {{SG 1.55}} (dark detail)                                                                                 | {{SG 1.71–1.81}}                            | Follow the product; use CMC gum or a brushing medium    |
-| Spraying | No figure; Hopper, writing for Ceramic Arts Network, says much thinner, with a deflocculant (an additive that makes a slurry runnier) | {{SG 1.71}}                                 | No reliable number; spray only in a spray booth         |
+| การใช้ | Digitalfire และ Glazy                                                                                                                      | Potclays (สหราชอาณาจักร)              | จุดเริ่มต้นที่ปลอดภัย                                           |
+| ------ | ------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------- | --------------------------------------------------------------- |
+| ชุบ    | {{SG 1.40}} (สำหรับการชุบ 5 วินาที) ถึง {{SG 1.50}} (สำหรับการชุบ 1 วินาที); เคลือบที่ผสมเองและจับเป็นเจลได้ผลดีที่สุดที่ {{SG 1.43–1.45}} | ใส {{SG 1.46–1.48}}; มีสี {{SG 1.61}} | {{SG 1.45}}; ทำให้บางลงถึง {{SG 1.43}} และทำให้จับเป็นเจลหากหยด |
+| ทา     | {{SG 1.25}} (ใสบาง) ถึง {{SG 1.55}} (รายละเอียดสีเข้ม)                                                                                     | {{SG 1.71–1.81}}                      | ทำตามผลิตภัณฑ์; ใช้กาว CMC หรือสื่อสำหรับทา                     |
+| พ่น    | ไม่มีตัวเลข; Hopper เขียนให้ Ceramic Arts Network ระบุว่าบางกว่ามาก พร้อมสารช่วยกระจายตัว (สารเติมแต่งที่ทำให้น้ำเคลือบไหลง่ายขึ้น)        | {{SG 1.71}}                           | ไม่มีตัวเลขที่เชื่อถือได้; พ่นเฉพาะในห้องพ่นเคลือบ              |
 
-To check a dipping glaze by eye, AMACO dips for 5 seconds and looks for a coat about as thick as a US dime. Digitalfire fires tiles dipped for 5 seconds to check.
+หากต้องการตรวจเคลือบสำหรับชุบด้วยตา AMACO ชุบ 5 วินาทีและมองหาชั้นเคลือบที่หนาประมาณเหรียญไดม์ของสหรัฐอเมริกา Digitalfire เผาแผ่นทดสอบที่ชุบ 5 วินาทีเพื่อตรวจ
 
-### Water for a target SG: our estimate
+### น้ำสำหรับ SG เป้าหมาย: ค่าประมาณของเรา
 
-The table below is our own arithmetic, not a source's. It assumes the powder's particles have a density of 2.6 g per cm³, which is an assumption, not a measurement. Clay, soluble materials and gelling all change a real glaze, so use it to start, then measure. As a check, it predicts {{SG 1.44}} for equal weights of powder and water, close to Digitalfire's measured {{SG 1.46}}. It also shows that 70 to 80 mL per 100 g starts you above {{SG 1.50}}, thicker than you need.
+ตารางด้านล่างเป็นเลขคณิตของเราเอง ไม่ใช่ของแหล่งข้อมูล สมมติว่าอนุภาคของผงมีความหนาแน่น 2.6 g ต่อ cm³ ซึ่งเป็นข้อสมมติ ไม่ใช่การวัด ดิน วัตถุดิบที่ละลายได้ และการจับเป็นเจลล้วนเปลี่ยนเคลือบจริง จึงใช้เพื่อเริ่ม แล้ววัด เพื่อตรวจสอบ ตารางทำนาย {{SG 1.44}} สำหรับผงและน้ำน้ำหนักเท่ากัน ใกล้เคียง {{SG 1.46}} ที่ Digitalfire วัดได้ ตารางยังแสดงว่า 70 ถึง 80 mL ต่อ 100 g เริ่มคุณที่สูงกว่า {{SG 1.50}} ซึ่งข้นกว่าที่ต้องการ
 
-Table: Water for a target specific gravity (our estimate)
-Label: Water for a target specific gravity
+Table: น้ำสำหรับความถ่วงจำเพาะเป้าหมาย (ค่าประมาณของเรา)
+Label: น้ำสำหรับความถ่วงจำเพาะเป้าหมาย
 
-| Target      | Per 100 g of powder |  Per kilogram |         Per pound |
-| ----------- | ------------------: | ------------: | ----------------: |
-| {{SG 1.40}} |        about 115 mL | about 1150 mL | about 18 US fl oz |
-| {{SG 1.45}} |         about 98 mL |  about 980 mL | about 15 US fl oz |
-| {{SG 1.50}} |         about 85 mL |  about 850 mL | about 13 US fl oz |
-| {{SG 1.60}} |         about 64 mL |  about 640 mL | about 10 US fl oz |
+| เป้าหมาย    |   ต่อผง 100 g |    ต่อกิโลกรัม |           ต่อปอนด์ |
+| ----------- | ------------: | -------------: | -----------------: |
+| {{SG 1.40}} | ประมาณ 115 mL | ประมาณ 1150 mL | ประมาณ 18 US fl oz |
+| {{SG 1.45}} |  ประมาณ 98 mL |  ประมาณ 980 mL | ประมาณ 15 US fl oz |
+| {{SG 1.50}} |  ประมาณ 85 mL |  ประมาณ 850 mL | ประมาณ 13 US fl oz |
+| {{SG 1.60}} |  ประมาณ 64 mL |  ประมาณ 640 mL | ประมาณ 10 US fl oz |
 
-### Epsom salts, CMC gum and bentonite
+### เกลือเอปซัม กาว CMC และเบนโทไนต์
 
-**Epsom salts** make a glaze gel slightly when it stands still and flow again when it is stirred. This is called **flocculating** it, and a glaze that behaves this way is **thixotropic**: it goes on more evenly, drips less and settles less. Digitalfire suggests starting at about 2 g per gallon once the SG is right (roughly 0.5 g per liter, our conversion) and tuning the amount each time you mix, since no recipe should fix the dose. We suggest dissolving it in a little hot water first. In a Digitalfire example, a glaze at {{SG 1.45}} dripped, so water brought it down to {{SG 1.43}} and Epsom salts gelled it back to creamy, and it went on evenly. A rough check: stir, stop and watch. A gelled glaze moves on for about 2 or 3 seconds, then stops and springs back a little.
+**เกลือเอปซัม**ทำให้เคลือบจับเป็นเจลเล็กน้อยเมื่อตั้งนิ่งและไหลอีกครั้งเมื่อคน เรียกว่า**การทำให้จับกลุ่ม**{{en: flocculant}} และเคลือบที่ทำงานแบบนี้เป็น**ไทโซโทรปี**{{en: thixotropy}}: เคลือบสม่ำเสมอกว่า หยดน้อยกว่า และตกตะกอนน้อยกว่า Digitalfire แนะนำให้เริ่มที่ประมาณ 2 g ต่อแกลลอนเมื่อ SG ถูกต้องแล้ว (ประมาณ 0.5 g ต่อลิตร ตามการแปลงของเรา) และปรับปริมาณทุกครั้งที่ผสม เพราะไม่มีสูตรเคลือบใดควรกำหนดปริมาณ เราแนะนำให้ละลายในน้ำร้อนเล็กน้อยก่อน ในตัวอย่างของ Digitalfire เคลือบที่ {{SG 1.45}} หยด จึงใช้น้ำลดลงเป็น {{SG 1.43}} และเกลือเอปซัมทำให้จับเป็นเจลกลับเป็นครีม และเคลือบได้สม่ำเสมอ การตรวจแบบหยาบ: คน หยุด และดู เคลือบที่จับเป็นเจลเคลื่อนต่อประมาณ 2 หรือ 3 วินาที แล้วหยุดและเด้งกลับเล็กน้อย
 
-**CMC gum** (carboxymethyl cellulose) makes a slurry stickier and slower to dry, and leaves a harder coat that holds to the pot. It matters most for brushing glazes and glazes high in frit. Digitalfire's example blends 3.75 g into 1000 g of slurry, and it has to go in with a blender. A glaze with CMC will not gel with Epsom salts, and since microbes feed on the gum, it can change in the bucket and start to smell.
+**กาว CMC** (คาร์บอกซีเมทิลเซลลูโลส) ทำให้น้ำเคลือบเหนียวขึ้นและแห้งช้าลง และทิ้งชั้นเคลือบที่แข็งกว่าซึ่งยึดกับชิ้นงาน สำคัญที่สุดสำหรับเคลือบสำหรับทาและเคลือบที่มีฟริตสูง ตัวอย่างของ Digitalfire ผสม 3.75 g ลงในน้ำเคลือบ 1000 g และต้องใส่ด้วยเครื่องปั่น เคลือบที่มี CMC จะไม่จับเป็นเจลกับเกลือเอปซัม และเพราะจุลินทรีย์กินกัม จึงเปลี่ยนในถังและเริ่มมีกลิ่นได้
 
-**Bentonite**, a very fine clay, helps hold the other particles in suspension. Dipping glazes usually rely on 15 to 25% raw clay for this. For a recipe short of clay, about 1 to 3% bentonite helps; Digitalfire says a glaze with more than 15% clay should not need bentonite at more than 1% of the dry glaze's weight.
+**เบนโทไนต์** ดินละเอียดมาก ช่วยให้อนุภาคอื่นแขวนลอย เคลือบสำหรับชุบมักพึ่งดินดิบ 15 ถึง 25% สำหรับเรื่องนี้ สำหรับสูตรเคลือบที่ขาดดิน เบนโทไนต์ประมาณ 1 ถึง 3% ช่วยได้ Digitalfire ระบุว่าเคลือบที่มีดินมากกว่า 15% ไม่น่าจะต้องใช้เบนโทไนต์เกิน 1% ของน้ำหนักเคลือบแห้ง
 
 ## แผ่นทดสอบและชุดทดสอบแบบเส้น {#testing}
 

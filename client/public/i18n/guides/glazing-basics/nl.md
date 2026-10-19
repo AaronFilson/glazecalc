@@ -462,7 +462,7 @@ Vlokmiddel en ontvlokkingsmiddel (flocculant and deflocculant)
 Voedselveilig (food safe)
 : Volgens de wet: geeft in een test met zuur minder lood en cadmium af dan de grenswaarden. Niet hetzelfde als loodvrij.
 
-## Sources {#sources lang=en}
+## Bronnen {#sources}
 
 - [Glazy Help: Glaze](https://help.glazy.org/concepts/glaze)
 - [Glazy Help: Oxides](https://help.glazy.org/concepts/oxides)

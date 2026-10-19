@@ -272,6 +272,7 @@
     "numbers": {
       "heading": "Analizi ve sınırları okuyun",
       "analysis": "<b>Analiz ve sınırlar</b>, reçetenin altında, her oksidin mol sayısını, mol yüzdesini ve pişmiş ağırlık yüzdesini, kızdırma kaybını ve hesaplanan ısıl genleşmeyi gösterir; ısıl genleşme sırları karşılaştırmak için bir tahmindir.",
+      "limits": "<b>Sınırlar</b>, Seger formülünü bir sınır setiyle karşılaştırır: Glazecalc’in kendi sınırlarını seçmedikçe Hesselberth & Roy’un kararlı sır sınırları kullanılır (seçim ayarlarınızla birlikte kaydedilir). Reçetenin <b>Pişirim</b> alanının verdiği pişirim bandını kontrol eder: piramidini veya aralığını. Bantları aşan bir aralık, örneğin 6 ile 10 numaralı piramit, iki bandın kontrollerini yan yana gösterir. Yalnızca bir bandı kontrol etmek için sınırların kendi <b>Pişirim</b> kutusundan onu seçin; bu seçim reçetenin pişirimini geçersiz kılar ve reçeteyle birlikte kaydedilir. Hesselberth & Roy’un değerleri 6 numaralı ve 10 numaralı piramit içindir; bu yüzden düşük ısıda geçerli olmadıklarını söyler. Bunlar yol göstericidir; geçti ya da kaldı demek değildir. En üstte tek bir satır, sırrın bor, silis ve alüminasını pişirimiyle, hangi sınır setini seçerseniz seçin Katz’ın bor kuralına ve Hesselberth & Roy’un değerlerine göre karşılaştırır: yalnızca ikisi de sırrın farklı bir pişirime benzediği konusunda uzlaştığında bir not verir, karar veremediğinde (kurşun, lityum, raku ve benzerleri) bunu söyler ve bir test değil, yol göstericidir.",
       "stull": "<b>Stull diyagramı</b>, sırın silisini alüminasına karşı gösterir; Stull’un mat, yarı mat ve parlak bölgelerini ve sınır setinin aralıklarını içerir. Yüzey için yol göstericidir, bir tahmin değildir.",
       "slurry": "<b>Özgül ağırlık ve su</b>, Brongniart formülünü kullanır: sırdan ölçülü bir hacmi tartın; ardından kovadaki kuru sırı, onu istediğiniz özgül ağırlığa getiren suyu ya da yeni bir tartım için gereken suyu görün. Yoğunluklar, özgül ağırlık, bome veya pint ağırlığı ayarınıza uyar."
     },
@@ -471,6 +472,7 @@
     "expansionRises": "Hesaplanan genleşmesi {was} değerinden {now} değerine çıkıyor.",
     "expansionRisesProbably": "Eski sır çamurunuza ancak uyuyorduysa, bu sır muhtemelen sır çatlağı yapar, bazen haftalar sonra.",
     "expansionRisesMay": "Eski sır çamurunuza ancak uyuyorduysa, bu sır sır çatlağı yapabilir, bazen haftalar sonra.",
+    "expansionRisesFix": "Sır çatlağı parçaları zayıflatır ve yiyecekle temas eden yüzeylerde önerilmez. Bir miktar sodyum ve potasyumu daha düşük genleşmeli ergiticilerle (bor, lityum, magnezyum veya kalsiyum) değiştirmek ısıl genleşmeyi düşürür; silis eklemek bazen önerilir, ama kaynaklar bu konuda aynı fikirde değildir.",
     "expansionFalls": "Hesaplanan genleşmesi {was} değerinden {now} değerine düşüyor. Biraz daha düşük genleşme genellikle sır çatlağına daha iyi direnir.",
     "expansionFallsProbably": "Çok daha düşük genleşme muhtemelen kavlamaya yol açar; ağız kenarlarından ve kenarlardan keskin pullar kopar.",
     "expansionFallsCan": "Çok daha düşük genleşme kavlamaya yol açabilir; ağız kenarlarından ve kenarlardan keskin pullar kopar.",
@@ -596,6 +598,36 @@
     "firingFromBlock": "Reçetenin pişiriminden ({bands})",
     "bothBands": "Reçetenin pişirimi şunları kapsar: {bands}. Bu yüzden her biri yan yana kontrol edilir: bir sır, iki ucunda nadiren aynı davranır.",
     "fromFiring": "Değerler reçetenin pişirimi içindir: {band}. Başka birini kontrol etmek için yukarıdan bir pişirim seçin."
+  },
+  "coneFit": {
+    "cooler": "Bu sırrın kimyası, şu pişirim için hazırlanmış bir sırdan ({scale, select, band {{band, select, low {düşük ısı} mid {orta ısı} other {yüksek ısı}}} sk {SK {cone}} temperature {{cone} °C} other {{cone} numaralı piramit}}) ziyade bir {looksLike, select, low {düşük ısı} other {orta ısı}} sırrına benziyor.",
+    "coolerSoft": "Bu sırrın kimyası, şu pişirimden ({scale, select, band {{band, select, low {düşük ısı} mid {orta ısı} other {yüksek ısı}}} sk {SK {cone}} temperature {{cone} °C} other {{cone} numaralı piramit}}) daha soğuk bir pişirime, 6 numaralı piramide daha yakın bir pişirime yöneliyor; yine de kimya tek başına 6 numaralı ve 10 numaralı piramit sırlarını ancak kabaca ayırt eder.",
+    "hotter": "Bu sırrın kimyası, şu pişirim için hazırlanmış bir sırdan ({scale, select, band {{band, select, low {düşük ısı} mid {orta ısı} other {yüksek ısı}}} sk {SK {cone}} temperature {{cone} °C} other {{cone} numaralı piramit}}) ziyade bir {looksLike, select, high {yüksek ısı} other {orta ısı}} sırrına benziyor.",
+    "hotterSoft": "Bu sırrın kimyası, şu pişirimden ({scale, select, band {{band, select, low {düşük ısı} mid {orta ısı} other {yüksek ısı}}} sk {SK {cone}} temperature {{cone} °C} other {{cone} numaralı piramit}}) daha sıcak bir pişirime, 10 numaralı piramide daha yakın bir pişirime yöneliyor; yine de kimya tek başına 6 numaralı ve 10 numaralı piramit sırlarını ancak kabaca ayırt eder.",
+    "closer": "Belirtilen aralıktan, bu sırrın kimyası şu uca daha yakın görünüyor: {scale, select, band {{band, select, low {düşük ısı} mid {orta ısı} other {yüksek ısı}}} sk {SK {cone}} temperature {{cone} °C} other {{cone} numaralı piramit}}.",
+    "coolerSilica": "Şu pişirimdeki sırların ({scale, select, band {{band, select, low {düşük ısı} mid {orta ısı} other {yüksek ısı}}} sk {SK {cone}} temperature {{cone} °C} other {{cone} numaralı piramit}}) genellikle ihtiyaç duyduğundan daha fazla bor ({boron}) içeriyor ve genellikle sahip olduklarından daha az silis ({silica}) içeriyor.",
+    "coolerAlumina": "Şu pişirimdeki sırların ({scale, select, band {{band, select, low {düşük ısı} mid {orta ısı} other {yüksek ısı}}} sk {SK {cone}} temperature {{cone} °C} other {{cone} numaralı piramit}}) genellikle ihtiyaç duyduğundan daha fazla bor ({boron}) içeriyor ve az alümina ({alumina}) içeriyor.",
+    "coolerBoth": "Şu pişirimdeki sırların ({scale, select, band {{band, select, low {düşük ısı} mid {orta ısı} other {yüksek ısı}}} sk {SK {cone}} temperature {{cone} °C} other {{cone} numaralı piramit}}) genellikle ihtiyaç duyduğundan daha fazla bor ({boron}) içeriyor ve genellikle sahip olduklarından daha az silis ({silica}) ve alümina ({alumina}) içeriyor.",
+    "hotterSilica": "Şu pişirim için ({scale, select, band {{band, select, low {düşük ısı} mid {orta ısı} other {yüksek ısı}}} sk {SK {cone}} temperature {{cone} °C} other {{cone} numaralı piramit}}) az bor ({boron}) içeriyor ve o pişirimdeki sırların genellikle sahip olduğundan daha fazla silis ({silica}) içeriyor.",
+    "coolerEffect": "Bu pişirimde akabilir veya fazla erimiş olabilir: önce bir damlama altlığı üzerinde bir test karosu pişirin.",
+    "hotterEffect": "Bu pişirimde az pişmiş çıkabilir: kuru, pürüzlü veya tam olarak kapanmamış olabilir. Parçalarda kullanmadan önce, özellikle yiyecek veya içecek temas edecek yerlerde kullanmadan önce deneme pişirimi yapın.",
+    "hotterEffectSoft": "Bazı sırlar bu pişirimde borsuz da erir; bu yüzden bu yalnızca bir ipucudur: bir test karosunda tamamen eridiğini kontrol edin.",
+    "gerstley": "Borunun bir kısmı partiden partiye değişen Gerstley boratından geliyor; bu yüzden bu rakam daha az kesindir.",
+    "guide": "Bu, kimyayı yayımlanmış değerlerle karşılaştırır: bir test değil, yol göstericidir. Sır sizin için bu piramitte iyi piştiyse karolarınıza güvenin.",
+    "fits": "Bor, silis ve alümina değerleri bu pişirimden ({scale, select, band {{band, select, low {düşük ısı} mid {orta ısı} other {yüksek ısı}}} sk {SK {cone}} temperature {{cone} °C} other {{cone} numaralı piramit}}) uzak bir pişirimi göstermiyor. Bu bir test değil, yol göstericidir: sırrın kararlı veya gıdaya uygun olup olmadığı hakkında hiçbir şey söylemez.",
+    "sources": "Kaynaklar:",
+    "skip": {
+      "lead": "Glazecalc bu sırrın kimyasını pişirimiyle karşılaştıramaz: eriyiğinin büyük kısmı kurşundan geliyor ve bu kontrolün kullandığı yayımlanmış değerler kurşunu kapsamıyor.",
+      "lithium": "Glazecalc bu sırrın kimyasını pişirimiyle karşılaştıramaz: eriyiğinin büyük kısmı lityumdan geliyor ve bu kontrolün kullandığı yayımlanmış değerler lityumu kapsamıyor.",
+      "alkali": "Glazecalc bu sırrın kimyasını pişirimiyle karşılaştıramaz: eriyiğinin büyük kısmı sodyum ve potasyumdan geliyor ve bu kontrolün kullandığı yayımlanmış değerler bunları kapsamıyor.",
+      "zinc": "Glazecalc bu sırrın kimyasını pişirimiyle karşılaştıramaz: kristal sırlarda olduğu gibi çok çinko içeriyor ve bu kontrolün kullandığı yayımlanmış değerler bunu kapsamıyor.",
+      "notGlaze": "Glazecalc bu sırrın kimyasını pişirimiyle karşılaştıramaz: formülü olağan bir sır formülü değil (çok az veya çok fazla silis ya da çok miktarda renklendirici oksit), bu yüzden bu kontrolün kullandığı yayımlanmış değerler ona uymuyor.",
+      "process": "Glazecalc bu sırrın kimyasını pişirimiyle karşılaştıramaz: sır, fırının sırlamanın bir kısmını yaptığı bir {process, select, raku {raku} salt {tuz} soda {soda} wood {odun} other {çukur}} pişirimi içindir ve bu kontrolün kullandığı yayımlanmış değerler bunu kapsamıyor.",
+      "ash": "Glazecalc bu sırrın kimyasını pişirimiyle karşılaştıramaz: içinde kül var ve külün bileşimi bu kontrolün kullandığı yayımlanmış değerler için fazla değişken.",
+      "noTemperature": "Glazecalc bu sırrın kimyasını bu pişirimle ({scale, select, band {{band, select, low {düşük ısı} mid {orta ısı} other {yüksek ısı}}} sk {SK {cone}} temperature {{cone} °C} other {{cone} numaralı piramit}}) karşılaştıramaz: o piramit için ölçülmüş bir sıcaklık yok.",
+      "between": "Glazecalc bu sırrın kimyasını bu pişirimle ({scale, select, band {{band, select, low {düşük ısı} mid {orta ısı} other {yüksek ısı}}} sk {SK {cone}} temperature {{cone} °C} other {{cone} numaralı piramit}}) karşılaştıramaz: bu kontrolün kullandığı yayımlanmış değerler düşük ısı ile orta ve yüksek ısı içindir; aradaki piramitler (01 ile 3) için değildir.",
+      "belowChart": "Glazecalc bu sırrın kimyasını bu pişirimle ({scale, select, band {{band, select, low {düşük ısı} mid {orta ısı} other {yüksek ısı}}} sk {SK {cone}} temperature {{cone} °C} other {{cone} numaralı piramit}}) karşılaştıramaz: Katz’ın bor kuralı 06 ile 10 numaralı piramitler içindir ve bu pişirim daha soğuktur."
+    }
   },
   "stull": {
     "heading": "Stull diyagramı",
@@ -902,6 +934,7 @@
     "foodSurface": "Gıda ile temas eden yüzey için (iç sır)",
     "liner": {
       "note": "Gıda güvenliği, bu sırrın test edildiği piramide kadar pişirilmesine bağlıdır: az pişmiş bir sır metal salabilir.",
+      "range": "Bu sırrın pişirimi bir aralık olarak verilmiştir; bu yüzden aralığın, sırrın en az eridiği alt ucunda test edin.",
       "untested": "Henüz hiçbir piramit test edilmiş olarak işaretlenmedi.",
       "test": "Gıdaya uygun olup olmadığını yalnızca kendi pişirdiğiniz parçalar üzerinde yapılan bir metal salımı testi gösterir."
     },
@@ -964,5 +997,23 @@
     "replaceAsk": "Test edilen olarak {now} işaretli. Bunun yerine kayıtların adını verdiği piramitler, {logs}, işaretlensin mi?",
     "replace": "Değiştir",
     "keep": "Olduğu gibi bırak"
+  },
+  "coneCards": {
+    "heading": "Piramide göre sonuçlar",
+    "unplaced": "Piramide yerleştirilmemiş",
+    "unplacedNote": "Bu pişirim kayıtları henüz bir piramide yerleştirilmedi: her birinin hangi piramitte pişirildiğini seçin.",
+    "approx": "≈ {temperature}",
+    "cautions": "{count, plural, =0 {sınır uyarısı yok} one {# sınır uyarısı} other {# sınır uyarısı}}",
+    "logs": "{count, plural, =0 {pişirim kaydı yok} one {# pişirim kaydı} other {# pişirim kaydı}}",
+    "outside": "belirtilen pişirimin dışında",
+    "outsideChoice": "{place} (belirtilen pişirimin dışında)",
+    "summaryLabel": "Şurada nasıl çıktı: {place}",
+    "summaryPlaceholder": "Yüzey, renk, akma, sır çatlağı...",
+    "noAtmosphere": "atmosfer belirtilmemiş",
+    "placeLabel": "Nerede pişirildi: {title}",
+    "notPlaced": "Yerleştirilmemiş",
+    "add": "Şunun için sonuç ekle:",
+    "addButton": "Ekle",
+    "saveFailed": "Pişirim kaydının nerede pişirildiği kaydedilemedi."
   }
 }

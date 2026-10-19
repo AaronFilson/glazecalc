@@ -272,6 +272,7 @@
     "numbers": {
       "heading": "查看分析值與限值",
       "analysis": "釉方下方的<b>分析值與限值</b>，顯示每種氧化物的莫耳數、莫耳百分比和燒成後的重量百分比、燒失量，以及計算得出的熱膨脹，這是用於比較各種釉的估算值。",
+      "limits": "<b>限值</b>把塞格式與一組限值對照：預設是 Hesselberth 與 Roy 的穩定釉限值，除非您選擇 Glazecalc 自己的限值（這個選擇會隨您的設定儲存）。它檢查釉方的<b>燒成</b>所給的燒成區間：它的錐號或範圍。跨越區間的範圍（例如 Orton 6 號到 10 號測溫錐）會並排顯示兩個區間的檢查結果。若只想檢查一個區間，請在限值自己的<b>燒成</b>框中選擇它：這會覆蓋釉方的燒成，並隨釉方儲存。Hesselberth 與 Roy 的數值適用於 Orton 6 號和 10 號測溫錐，所以低溫燒成時會提示這些數值不適用。這些只是參考，不是合格與否的判定。最上面有一行，依 Katz 的硼規則和 Hesselberth 與 Roy 的數值（無論您選哪組限值），把釉藥的硼、二氧化矽和氧化鋁與它的燒成作比較：只有當兩者都認為這種釉藥看起來更像另一種燒成時，才會給出提示；無法判斷時（鉛、鋰、樂燒之類）會說明；它只是參考，不是測試。",
       "stull": "<b>Stull 圖</b>把釉的二氧化矽含量對氧化鋁含量繪成圖，標出 Stull 的霧面、半霧面和亮面區域，以及限值組的範圍。這張圖是判斷釉面的參考，不是預測。",
       "slurry": "<b>比重與水</b>用的是布隆尼亞爾（Brongniart）公式：秤取一定體積的釉漿，就能算出桶裡的乾釉料量、調到想要的比重所需的水，或新調一批所需的水。密度依您對比重、波美度或品脫重的設定顯示。"
     },
@@ -471,6 +472,7 @@
     "expansionRises": "這個釉的計算熱膨脹係數從 {was} 升到 {now}。",
     "expansionRisesProbably": "如果舊釉與您的坯土剛好勉強適配，這個釉很可能開片，有時幾週後才出現。",
     "expansionRisesMay": "如果舊釉與您的坯土剛好勉強適配，這個釉可能開片，有時幾週後才出現。",
+    "expansionRisesFix": "釉裂會削弱器物，不建議用於接觸食物的表面。把部分鈉和鉀換成膨脹較低的熔劑（硼、鋰、鎂或鈣），可以降低熱膨脹；有時也有人建議加二氧化矽，但各來源說法不一。",
     "expansionFalls": "這個釉的計算熱膨脹係數從 {was} 降到 {now}。稍微低一點通常更能防止開片。",
     "expansionFallsProbably": "低很多就很可能跳釉，從口緣和邊緣掉下鋒利的碎片。",
     "expansionFallsCan": "低很多就可能跳釉，從口緣和邊緣掉下鋒利的碎片。",
@@ -596,6 +598,36 @@
     "firingFromBlock": "來自釉方的燒成（{bands}）",
     "bothBands": "釉方的燒成橫跨{bands}，所以兩端都會並排檢查：同一種釉在兩端的表現很少相同。",
     "fromFiring": "這些數值針對釉方的燒成：{band}。要檢查其他燒成，請在上方選擇。"
+  },
+  "coneFit": {
+    "cooler": "這種釉藥的化學成分，看起來更像{looksLike, select, low {低溫燒成} other {中溫燒成}}的釉藥，而不是 {scale, select, band {{band, select, low {低溫燒成} mid {中溫燒成} other {高溫燒成}}} sk {SK {cone}} temperature {{cone} °C} other {Orton {cone} 號測溫錐}} 用的釉藥。",
+    "coolerSoft": "這種釉藥的化學成分偏向比 {scale, select, band {{band, select, low {低溫燒成} mid {中溫燒成} other {高溫燒成}}} sk {SK {cone}} temperature {{cone} °C} other {Orton {cone} 號測溫錐}} 更低溫的燒成，更接近 Orton 6 號測溫錐，不過光憑化學成分，只能大致區分 6 號和 10 號的釉藥。",
+    "hotter": "這種釉藥的化學成分，看起來更像{looksLike, select, high {高溫燒成} other {中溫燒成}}的釉藥，而不是 {scale, select, band {{band, select, low {低溫燒成} mid {中溫燒成} other {高溫燒成}}} sk {SK {cone}} temperature {{cone} °C} other {Orton {cone} 號測溫錐}} 用的釉藥。",
+    "hotterSoft": "這種釉藥的化學成分偏向比 {scale, select, band {{band, select, low {低溫燒成} mid {中溫燒成} other {高溫燒成}}} sk {SK {cone}} temperature {{cone} °C} other {Orton {cone} 號測溫錐}} 更高溫的燒成，更接近 Orton 10 號測溫錐，不過光憑化學成分，只能大致區分 6 號和 10 號的釉藥。",
+    "closer": "在標明的範圍內，這種釉藥的化學成分看起來更接近 {scale, select, band {{band, select, low {低溫燒成} mid {中溫燒成} other {高溫燒成}}} sk {SK {cone}} temperature {{cone} °C} other {Orton {cone} 號測溫錐}} 這一端。",
+    "coolerSilica": "它的硼（{boron}）比 {scale, select, band {{band, select, low {低溫燒成} mid {中溫燒成} other {高溫燒成}}} sk {SK {cone}} temperature {{cone} °C} other {Orton {cone} 號測溫錐}} 的釉藥通常需要的多，而二氧化矽（{silica}）比這類釉藥通常含有的少。",
+    "coolerAlumina": "它的硼（{boron}）比 {scale, select, band {{band, select, low {低溫燒成} mid {中溫燒成} other {高溫燒成}}} sk {SK {cone}} temperature {{cone} °C} other {Orton {cone} 號測溫錐}} 的釉藥通常需要的多，而氧化鋁（{alumina}）很少。",
+    "coolerBoth": "它的硼（{boron}）比 {scale, select, band {{band, select, low {低溫燒成} mid {中溫燒成} other {高溫燒成}}} sk {SK {cone}} temperature {{cone} °C} other {Orton {cone} 號測溫錐}} 的釉藥通常需要的多，而二氧化矽（{silica}）和氧化鋁（{alumina}）都比這類釉藥通常含有的少。",
+    "hotterSilica": "以 {scale, select, band {{band, select, low {低溫燒成} mid {中溫燒成} other {高溫燒成}}} sk {SK {cone}} temperature {{cone} °C} other {Orton {cone} 號測溫錐}} 來說，它的硼（{boron}）很少，而二氧化矽（{silica}）比該燒成的釉藥通常含有的多。",
+    "coolerEffect": "在該燒成下，它可能流釉或熔過頭：請先把試片放在接釉盤上試燒。",
+    "hotterEffect": "在該燒成下，它可能燒成不足：乾澀、粗糙或沒有完全封閉。用於器物之前請先試燒，尤其是用在會接觸食物或飲品的地方之前。",
+    "hotterEffectSoft": "有些釉藥不含硼也能在該燒成下熔融，所以這只是一個提示：請用試片檢查它是否完全熔融。",
+    "gerstley": "它的部分硼來自 Gerstley borate，而它每批都不一樣，所以這個數字不太確定。",
+    "guide": "這是把化學成分與已發表的數據作比較：它只是參考，不是測試。如果這種釉藥在這個錐號下您已經燒得很好，就相信您的試片。",
+    "fits": "它的硼、二氧化矽和氧化鋁並沒有偏離 {scale, select, band {{band, select, low {低溫燒成} mid {中溫燒成} other {高溫燒成}}} sk {SK {cone}} temperature {{cone} °C} other {Orton {cone} 號測溫錐}}。這只是參考，不是測試：它並不說明這種釉藥是否穩定或食品安全。",
+    "sources": "來源：",
+    "skip": {
+      "lead": "Glazecalc 無法把這種釉藥的化學成分與它的燒成作比較：它的熔體有相當一部分來自鉛，而這項檢查所用的已發表數據不涵蓋鉛。",
+      "lithium": "Glazecalc 無法把這種釉藥的化學成分與它的燒成作比較：它的熔體有相當一部分來自鋰，而這項檢查所用的已發表數據不涵蓋鋰。",
+      "alkali": "Glazecalc 無法把這種釉藥的化學成分與它的燒成作比較：它的熔體有相當一部分來自鈉和鉀，而這項檢查所用的已發表數據不涵蓋它們。",
+      "zinc": "Glazecalc 無法把這種釉藥的化學成分與它的燒成作比較：它含有大量鋅（結晶釉就是如此），而這項檢查所用的已發表數據不涵蓋鋅。",
+      "notGlaze": "Glazecalc 無法把這種釉藥的化學成分與它的燒成作比較：它的化學式不是一般釉藥的化學式（二氧化矽極少或極多，或含有大量著色氧化物），所以這項檢查所用的已發表數據不適用。",
+      "process": "Glazecalc 無法把這種釉藥的化學成分與它的燒成作比較：它用於{process, select, raku {樂燒} salt {鹽燒} soda {蘇打燒} wood {柴燒} other {坑燒}}，由窯承擔一部分成釉的作用，而這項檢查所用的已發表數據不涵蓋這種情況。",
+      "ash": "Glazecalc 無法把這種釉藥的化學成分與它的燒成作比較：它含有灰，而灰的成分差異太大，這項檢查所用的已發表數據無法適用。",
+      "noTemperature": "Glazecalc 無法把這種釉藥的化學成分與 {scale, select, band {{band, select, low {低溫燒成} mid {中溫燒成} other {高溫燒成}}} sk {SK {cone}} temperature {{cone} °C} other {Orton {cone} 號測溫錐}} 作比較：該錐號沒有實測溫度。",
+      "between": "Glazecalc 無法把這種釉藥的化學成分與 {scale, select, band {{band, select, low {低溫燒成} mid {中溫燒成} other {高溫燒成}}} sk {SK {cone}} temperature {{cone} °C} other {Orton {cone} 號測溫錐}} 作比較：這項檢查所用的已發表數據針對低溫燒成，以及中溫和高溫燒成，不包括它們之間的錐號（01 到 3 號）。",
+      "belowChart": "Glazecalc 無法把這種釉藥的化學成分與 {scale, select, band {{band, select, low {低溫燒成} mid {中溫燒成} other {高溫燒成}}} sk {SK {cone}} temperature {{cone} °C} other {Orton {cone} 號測溫錐}} 作比較：Katz 的硼規則適用於 Orton 06 號到 10 號測溫錐，而該燒成的溫度更低。"
+    }
   },
   "stull": {
     "heading": "Stull 圖",
@@ -902,6 +934,7 @@
     "foodSurface": "用於接觸食物的表面（內層釉）",
     "liner": {
       "note": "食品安全取決於把這種釉燒到測試時所用的錐號：燒得不足的釉可能溶出。",
+      "range": "這種釉藥的燒成給的是一個範圍，所以請在範圍的低端測試，那裡釉熔融得最少。",
       "untested": "尚未標記任何測試過的錐號。",
       "test": "只有對您自己燒成的作品做溶出試驗，才能判明它是否可安全盛裝食物。"
     },
@@ -964,5 +997,23 @@
     "replaceAsk": "已勾選的測試錐號是 {now}。要換成紀錄裡寫明的錐號 {logs} 嗎？",
     "replace": "取代",
     "keep": "維持原樣"
+  },
+  "coneCards": {
+    "heading": "依錐號看結果",
+    "unplaced": "尚未歸入錐號",
+    "unplacedNote": "這些燒窯紀錄尚未歸入錐號：請選擇每一筆是在哪裡燒的。",
+    "approx": "≈ {temperature}",
+    "cautions": "{count, plural, =0 {沒有限值提醒} other {# 則限值提醒}}",
+    "logs": "{count, plural, =0 {沒有燒窯紀錄} other {# 筆燒窯紀錄}}",
+    "outside": "在標明的燒成範圍之外",
+    "outsideChoice": "{place}（在標明的燒成範圍之外）",
+    "summaryLabel": "在 {place} 燒出的結果",
+    "summaryPlaceholder": "表面、顏色、流釉、釉裂……",
+    "noAtmosphere": "未註明氣氛",
+    "placeLabel": "{title} 是在哪裡燒的",
+    "notPlaced": "未歸入",
+    "add": "為以下條件新增結果",
+    "addButton": "新增",
+    "saveFailed": "無法儲存這筆燒窯紀錄是在哪裡燒的。"
   }
 }

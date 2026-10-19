@@ -165,69 +165,69 @@ Harapkan perbedaan: Orton menyatakan "Biasanya, Anda akan melihat paling sedikit
 
 :::orton
 
-## The kiln sitter {#kiln-sitter lang=en}
+## Kiln-Sitter {#kiln-sitter}
 
-A **kiln sitter** is the mechanical switch, on the outside of many basic and older kilns, that turns the kiln off when a small cone bends. The best known is the Dawson Kiln-Sitter. It makes firing easier, but it is a convenience, not a safety device.
+**Kiln-Sitter** adalah sakelar mekanis, di bagian luar banyak tungku sederhana dan lama, yang mematikan tungku ketika kerucut kecil menekuk. Yang paling terkenal adalah Dawson Kiln-Sitter. Alat ini mempermudah pembakaran, tetapi hanya alat bantu, bukan alat pengaman.
 
-### How it works
+### Cara kerjanya
 
-A porcelain tube reaches into the kiln. At its end, a small cone or a bar lies across two metal supports, under a **sensing rod** that pivots like a seesaw. Outside the kiln, the other end of the rod holds up a weight by a small claw. When the cone softens and bends to about 90°, the rod drops far enough to release the weight, the weight falls, and the power to the elements is cut.
+Tabung porselen menjangkau ke dalam tungku. Di ujungnya, kerucut kecil atau batang terbaring melintang di atas dua penyangga logam, di bawah **batang sensor** yang berporos seperti jungkat-jungkit. Di luar tungku, ujung lain batang menahan bobot dengan **cakar** kecil. Ketika kerucut melunak dan menekuk sekitar 90°, batang turun cukup jauh untuk melepaskan bobot, bobot jatuh, dan daya ke elemen pemanas terputus.
 
-Small cones and bars "give equivalent heat treatment". Orton notes that many beginners choose bars, because their even shape makes it easy to place them the same way every time. A small cone tapers, so where it sits matters: with its thin part under the rod the kiln shuts off cooler, and with its thick part hotter, a shift of "as much as 1/2 cone".
+Kerucut kecil dan batang "memberikan perlakuan panas yang setara". Orton mencatat bahwa banyak pemula memilih batang, karena bentuknya yang rata memudahkan menaruhnya dengan cara yang sama setiap kali. Kerucut kecil meruncing, jadi posisinya penting: dengan bagian tipisnya di bawah batang, tungku mati lebih dingin, dan dengan bagian tebalnya lebih panas, pergeseran "sebanyak 1/2 kerucut".
 
-### Which cone goes in the sitter
+### Kerucut mana yang masuk ke sitter
 
-Sources disagree. Dawson, who made the sitter, says to use the same number as the firing cone on the shelf, and to go one number hotter only if the shelf cone stays unbent. L&L says to use one number hotter than the shelf cones, because the sitter sits near the wall and the elements, gets more heat, and tends to shut off early. Orton settles the principle: "The shelf cone is the final judge of the firing process, not the Kiln-Sitter cone or bar."
-
-> [!NOTE]
-> Our starting point: put a small cone of the same number as your target in the sitter, with a cone pack on the shelf. If the shelf firing cone is under-bent when the kiln shuts off, go one number hotter in the sitter next time, or set the thicker part of the cone under the rod. If it is over-bent, do the opposite.
-
-### Setting it up, and checks before every firing
-
-Dawson's procedure, which doubles as a check before every firing:
-
-1. Turn all the switches off. Check that the sensing rod moves freely, sits centered in the tube and is not bent or corroded. If it is sluggish, Dawson says to replace the tube assembly.
-2. Brush a thin coat of high-fire **kiln wash** (a coating that stops melted material sticking) onto the cone supports and the rod where it touches the cone. Never put wash on the cone or the porcelain tube.
-3. Load shelves and ware at least 1 in (25 mm) above or below the tube, so nothing can touch, fall against or block it.
-4. Lift the weight, press the claw down onto the trigger, and lay the cone or bar flat on the supports against the metal step, as your sitter's manual shows, the same way every time. Check it again before closing the lid: "AN IMPROPERLY PLACED CONE OR BAR COULD CAUSE AN OVERFIRING."
-5. Set the limit timer and push in the plunger until it locks. Keep the kiln level and the space under the weight clear, so the weight can fall.
-
-### The limit timer
-
-Many sitters, including Dawson's LT models, have a **limit timer**: a clock that turns the kiln off after a set time, as a backup "in case the KILN-SITTER fails". It should always be set longer than the firing is expected to take. Sources set the margin differently:
-
-Table: How long to set the limit timer
-Label: Limit timer settings
-
-| Source    | Setting                                                                                                                |
-| --------- | ---------------------------------------------------------------------------------------------------------------------- |
-| Dawson    | ½ hour longer than the expected firing time until you know the kiln, later ¼ hour longer; never set it beyond 20 hours |
-| L&L       | Very high the first time, noting how long the firing takes; after that, about 1 hour longer                            |
-| Bracker's | 30 minutes to 1 hour longer than the firing time                                                                       |
+Sumber berbeda pendapat. Dawson, pembuat sitter, menyatakan memakai nomor yang sama dengan kerucut bakar di rak, dan naik satu nomor lebih panas hanya jika kerucut rak tetap tidak menekuk. L&L menyatakan memakai satu nomor lebih panas daripada kerucut rak, karena sitter berada di dekat dinding dan elemen pemanas, menerima lebih banyak panas, dan cenderung mati lebih awal. Orton menyelesaikan prinsipnya: "Kerucut rak adalah hakim terakhir proses pembakaran, bukan kerucut atau batang Kiln-Sitter."
 
 > [!NOTE]
-> Our starting point: generous the first time (within the dial's 20 hours), then ½ to 1 hour longer than the time you recorded. The timer also tells you how long a firing took: set at 7 and ending at 1 means 6 hours.
+> Titik awal kami: pasang kerucut kecil bernomor sama dengan target Anda di sitter, dengan set kerucut di rak. Jika kerucut bakar di rak kurang menekuk saat tungku mati, naik satu nomor lebih panas di sitter pada kesempatan berikutnya, atau pasang bagian kerucut yang lebih tebal di bawah batang. Jika terlalu menekuk, lakukan sebaliknya.
 
-### When it shuts off early or late
+### Memasangnya, dan pemeriksaan sebelum setiap pembakaran
 
-After each firing, read the sitter cone beside the shelf cones.
+Prosedur Dawson, yang sekaligus menjadi pemeriksaan sebelum setiap pembakaran:
 
-Table: Reading the sitter after a firing
-Label: Kiln sitter problems
+1. Matikan semua sakelar. Periksa bahwa batang sensor bergerak bebas, berada di tengah tabung, dan tidak bengkok atau berkarat. Jika lamban, Dawson menyatakan untuk mengganti rakitan tabung.
+2. Oleskan lapisan tipis **pelapis rak tungku** (kiln wash, lapisan yang mencegah bahan leleh menempel) suhu tinggi pada penyangga kerucut dan batang di tempat menyentuh kerucut. Jangan pernah mengoleskan pelapis pada kerucut atau tabung porselen.
+3. Muat rak dan benda paling sedikit 1 inci (25 mm) di atas atau di bawah tabung, agar tidak ada yang dapat menyentuh, jatuh menimpa, atau menghalanginya.
+4. Angkat bobot, tekan cakar ke pemicu, dan baringkan kerucut atau batang rata pada penyangga bersandar pada undakan logam, seperti ditunjukkan buku petunjuk sitter Anda, dengan cara yang sama setiap kali. Periksa lagi sebelum menutup penutup tungku: "KERUCUT ATAU BATANG YANG DIPASANG TIDAK BENAR DAPAT MENYEBABKAN PEMBAKARAN BERLEBIH."
+5. Atur pengatur waktu batas dan dorong plunger sampai terkunci. Jaga tungku tetap rata dan ruang di bawah bobot tetap bebas, agar bobot dapat jatuh.
 
-| What you see                                    | Likely cause                                                                                           | What to do                                                       |
-| ----------------------------------------------- | ------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------- |
-| Sitter tripped, shelf firing cone under-bent    | The sitter ran hotter than the shelf (it sits near the wall)                                           | One cone hotter in the sitter, or the thicker part under the rod |
-| Sitter cone sagged well past 90°                | The kiln climbed too fast near the end                                                                 | Lower the switch settings, so the climb is slower (Dawson)       |
-| Sitter cone did not bend, or melted into a blob | The sitter itself: poor adjustment, a bent or corroded rod, or something lodged in or against the tube | Check and adjust the sitter by its manual before firing again    |
-| Early or late every time                        | Out of adjustment, or a worn rod                                                                       | Check with the firing gauge; move the trigger plate              |
+### Pengatur waktu batas
 
-To check the adjustment, Dawson uses a **firing gauge** that holds the rod where a fully bent cone would leave it; there should then be "1/16th-inch clearance" (about 1.6 mm) at the claw. Check it every 30 firings. Ceramics Monthly's rule: if the kiln shuts off early, move the trigger plate up slightly; if late, move it down slightly. Whatever the sitter does, "Always trust large witness cones over small sitter cones."
+Banyak sitter, termasuk model LT Dawson, memiliki **pengatur waktu batas**: jam yang mematikan tungku setelah waktu yang ditetapkan, sebagai cadangan "jika KILN-SITTER gagal". Pengatur ini sebaiknya selalu diatur lebih lama daripada waktu yang diperkirakan untuk pembakaran. Sumber menetapkan margin secara berbeda:
+
+Table: Berapa lama mengatur pengatur waktu batas
+Label: Pengaturan pengatur waktu batas
+
+| Sumber    | Pengaturan                                                                                                                                                       |
+| --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Dawson    | ½ jam lebih lama daripada waktu pembakaran yang diperkirakan sampai Anda mengenal tungku, kemudian ¼ jam lebih lama; jangan pernah mengaturnya lebih dari 20 jam |
+| L&L       | Sangat tinggi pertama kali, mencatat berapa lama pembakaran; setelah itu, sekitar 1 jam lebih lama                                                               |
+| Bracker's | 30 menit sampai 1 jam lebih lama daripada waktu pembakaran                                                                                                       |
+
+> [!NOTE]
+> Titik awal kami: beri waktu longgar pada kali pertama (dalam batas 20 jam pada dial), lalu ½ sampai 1 jam lebih lama daripada waktu yang Anda catat. Pengatur waktu juga memberi tahu berapa lama pembakaran berlangsung: diatur pada 7 dan berakhir pada 1 berarti 6 jam.
+
+### Bila mati terlalu awal atau terlambat
+
+Setelah setiap pembakaran, baca kerucut sitter di samping kerucut rak.
+
+Table: Membaca sitter setelah pembakaran
+Label: Masalah Kiln-Sitter
+
+| Yang Anda lihat                                             | Kemungkinan penyebab                                                                                                           | Yang dilakukan                                                                   |
+| ----------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------- |
+| Sitter terpicu, kerucut bakar di rak kurang menekuk         | Sitter berjalan lebih panas daripada rak (berada di dekat dinding)                                                             | Satu kerucut lebih panas di sitter, atau bagian yang lebih tebal di bawah batang |
+| Kerucut sitter terkulai jauh melewati 90°                   | Tungku naik terlalu cepat menjelang akhir                                                                                      | Turunkan pengaturan sakelar, agar kenaikannya lebih lambat (Dawson)              |
+| Kerucut sitter tidak menekuk, atau meleleh menjadi gumpalan | Sitter itu sendiri: penyetelan buruk, batang bengkok atau berkarat, atau sesuatu tersangkut di dalam atau menempel pada tabung | Periksa dan setel sitter menurut buku petunjuknya sebelum membakar lagi          |
+| Terlalu awal atau terlambat setiap kali                     | Tidak tersetel, atau batang aus                                                                                                | Periksa dengan pengukur pembakaran; geser pelat pemicu                           |
+
+Untuk memeriksa penyetelan, Dawson memakai **pengukur pembakaran** yang menahan batang di tempat kerucut yang menekuk penuh akan meninggalkannya; seharusnya ada "celah 1/16 inci" (sekitar 1,6 mm) pada cakar. Periksa setiap 30 pembakaran. Aturan Ceramics Monthly: jika tungku mati terlalu awal, geser pelat pemicu sedikit ke atas; jika terlambat, sedikit ke bawah. Apa pun yang dilakukan sitter, "Selalu percayai kerucut saksi besar daripada kerucut sitter kecil."
 
 > [!WARNING]
-> **A kiln sitter is not a safety device.** Dawson's manual says it "is NOT intended to perform as a fail-safe shut-off device and your kiln should NOT be left unattended beyond the estimated firing time." Something as simple as greenware falling against the tube "might cause an over-firing". Be there to check the kiln when it should be finishing, and never fire it over or near anything that burns, such as a wood floor or carpet.
+> **Kiln-Sitter bukan alat pengaman.** Buku petunjuk Dawson menyatakan bahwa alat ini "TIDAK dimaksudkan berfungsi sebagai alat pemutus yang aman dari kegagalan dan tungku Anda sebaiknya TIDAK ditinggalkan tanpa pengawasan melewati waktu pembakaran yang diperkirakan." Sesuatu yang sesederhana keramik mentah jatuh menimpa tabung "dapat menyebabkan pembakaran berlebih". Pastikan Anda ada di sana untuk memeriksa tungku saat seharusnya selesai, dan jangan pernah membakarnya di atas atau di dekat apa pun yang dapat terbakar, seperti lantai kayu atau karpet.
 
-The sitter is built for firings "up to and including Cone 8". It cannot hold a temperature or cool slowly by itself. With practice and a log, though, you can "become the controller", as Digitalfire puts it: watch the cones and turn the switches by hand.
+Sitter dibuat untuk pembakaran "sampai dan termasuk Kerucut 8". Ia tidak dapat menahan suhu atau mendingin perlahan dengan sendirinya. Dengan latihan dan catatan, Anda dapat "menjadi pengendalinya", kata Digitalfire: amati kerucut dan putar sakelar dengan tangan.
 
 :::
 
@@ -281,92 +281,92 @@ Label: Menyesuaikan pembakaran berikutnya
 
 :::sk
 
-## Firing to SK cones {#sk-cones lang=en}
+## Membakar dengan kerucut SK {#sk-cones}
 
-SK cones are the pyrometric cones made to Japan's standard, JIS R 8101, and sold in Japan by dealers such as Yuko Trading (有恒商事). Like any cone, an SK cone measures heatwork, not temperature alone: it softens and bends over when the ware has had enough heat, and you read how far it bent. Witness cones, reading how far a cone has bent, and holds work for it as for any cone. This section names each cone's system, and never turns an SK number into another system's number: the numbers of different cone series are not interchangeable.
+Kerucut SK adalah kerucut pirometrik yang dibuat menurut standar Jepang, JIS R 8101, dan dijual di Jepang oleh penyalur seperti Yuko Trading (Yuukou Shouji). Seperti kerucut mana pun, kerucut SK mengukur kerja panas, bukan suhu saja: kerucut melunak dan menekuk bila benda telah menerima cukup panas, dan Anda membaca seberapa jauh kerucut menekuk. Kerucut saksi, yang membaca seberapa jauh kerucut menekuk, dan penahanan bekerja untuknya seperti untuk kerucut mana pun. Bagian ini menyebut sistem setiap kerucut, dan tidak pernah mengubah nomor SK menjadi nomor sistem lain: nomor seri kerucut yang berbeda tidak dapat dipertukarkan.
 
 > [!NOTE]
-> Always write "SK" before the number. Many older Japanese recipes say only "SK 8" or "SK 9" without saying whose cone. Kyoto cones and SK cones to JIS carry the same numbers but bend at different temperatures (see Kyoto cones, below).
+> Selalu tulis "SK" sebelum nomor. Banyak resep Jepang lama hanya menyebut "SK 8" atau "SK 9" tanpa menyebut kerucut milik siapa. Kerucut Kyoto dan kerucut SK menurut JIS membawa nomor yang sama tetapi menekuk pada suhu berbeda (lihat Kerucut Kyoto, di bawah).
 
-### The large cones
+### Kerucut besar
 
-The standard has two sizes. Large cones (大型コーン) are "mainly used for measuring the degree of firing" (焼度測定), which is what a potter wants. Small cones (SK 26 to SK 42, at the top of the range) are "mainly used for refractoriness tests" and are not covered here. The table below gives the large cones from SK 022 to SK 20.
+Standar ini memiliki dua ukuran. Kerucut besar (oogata kon) "terutama dipakai untuk mengukur tingkat pembakaran" (shoudo sokutei), yang diinginkan pembuat keramik. Kerucut kecil (SK 26 sampai SK 42, di puncak rentang) "terutama dipakai untuk uji ketahanan api" dan tidak dibahas di sini. Tabel di bawah memberikan kerucut besar dari SK 022 sampai SK 20.
 
-The numbers run from SK 022, the coolest, up to SK 20 here. Between SK 015 and SK 6 the printed numbers carry an "a" (SK 015a, SK 6a); write it as printed.
+Nomor berjalan dari SK 022, yang terdingin, naik sampai SK 20 di sini. Antara SK 015 dan SK 6 nomor yang dicetak membawa huruf "a" (SK 015a, SK 6a); tulis seperti yang dicetak.
 
-### Setting large cones
+### Memasang kerucut besar
 
-Set each large cone in a plaque or a pat of clay, leaning toward its bending face. As with any cone, keep the height and the lean the same from firing to firing, because a difference in either changes how far it bends. Set the three cones of the pack (below) together, deep in the kiln near the middle of the load, where they get the heat the ware gets, yet where you can see them through a peephole; before you close the kiln, check that you can see all three.
+Pasang setiap kerucut besar pada plakat atau gumpalan tanah liat, condong ke arah sisi lengkungnya. Seperti kerucut mana pun, jaga tinggi dan kemiringan tetap sama dari pembakaran ke pembakaran, karena selisih pada salah satunya mengubah seberapa jauh kerucut menekuk. Pasang ketiga kerucut set (di bawah) bersama, jauh di dalam tungku dekat tengah muatan, tempat kerucut menerima panas yang diterima benda, namun dapat Anda lihat melalui lubang intip; sebelum menutup tungku, pastikan Anda dapat melihat ketiganya.
 
-### Guide, firing and guard cones
+### Kerucut pemandu, bakar, dan pengaman
 
-Cones are sold and set as three: a guide cone, a firing cone at the target, and a guard cone. Take the firing cone as the SK number your recipe or clay names, the guide cone as the next cooler cone (one row up in the table) and the guard cone as the next hotter one. When the guide cone starts to bend, the end is near; when the guard cone bends, the firing has gone too far.
+Kerucut dijual dan dipasang sebagai tiga: kerucut pemandu, kerucut bakar pada target, dan kerucut pengaman. Ambil kerucut bakar sebagai nomor SK yang disebut resep atau tanah liat Anda, kerucut pemandu sebagai kerucut berikutnya yang lebih dingin (satu baris ke atas pada tabel) dan kerucut pengaman sebagai yang berikutnya yang lebih panas. Ketika kerucut pemandu mulai menekuk, akhir sudah dekat; ketika kerucut pengaman menekuk, pembakaran sudah terlalu jauh.
 
-### The SK chart
+### Tabel SK
 
-Table: SK large cones (JIS R 8101): the nominal (JIS) temperature of each
-Label: SK chart
+Table: Kerucut besar SK (JIS R 8101): suhu nominal (JIS) masing-masing
+Label: Tabel SK
 
-| Cone    | Nominal (JIS) temperature |
-| ------- | ------------------------: |
-| SK 022  |       {{1112 °F; 600 °C}} |
-| SK 021  |       {{1202 °F; 650 °C}} |
-| SK 020  |       {{1238 °F; 670 °C}} |
-| SK 019  |       {{1274 °F; 690 °C}} |
-| SK 018  |       {{1310 °F; 710 °C}} |
-| SK 017  |       {{1346 °F; 730 °C}} |
-| SK 016  |       {{1382 °F; 750 °C}} |
-| SK 015a |       {{1454 °F; 790 °C}} |
-| SK 014a |       {{1499 °F; 815 °C}} |
-| SK 013a |       {{1535 °F; 835 °C}} |
-| SK 012a |       {{1571 °F; 855 °C}} |
-| SK 011a |       {{1616 °F; 880 °C}} |
-| SK 010a |       {{1652 °F; 900 °C}} |
-| SK 09a  |       {{1688 °F; 920 °C}} |
-| SK 08a  |       {{1724 °F; 940 °C}} |
-| SK 07a  |       {{1760 °F; 960 °C}} |
-| SK 06a  |       {{1796 °F; 980 °C}} |
-| SK 05a  |      {{1832 °F; 1000 °C}} |
-| SK 04a  |      {{1868 °F; 1020 °C}} |
-| SK 03a  |      {{1904 °F; 1040 °C}} |
-| SK 02a  |      {{1940 °F; 1060 °C}} |
-| SK 01a  |      {{1976 °F; 1080 °C}} |
-| SK 1a   |      {{2012 °F; 1100 °C}} |
-| SK 2a   |      {{2048 °F; 1120 °C}} |
-| SK 3a   |      {{2084 °F; 1140 °C}} |
-| SK 4a   |      {{2120 °F; 1160 °C}} |
-| SK 5a   |      {{2156 °F; 1180 °C}} |
-| SK 6a   |      {{2192 °F; 1200 °C}} |
-| SK 7    |      {{2246 °F; 1230 °C}} |
-| SK 8    |      {{2282 °F; 1250 °C}} |
-| SK 9    |      {{2336 °F; 1280 °C}} |
-| SK 10   |      {{2372 °F; 1300 °C}} |
-| SK 11   |      {{2408 °F; 1320 °C}} |
-| SK 12   |      {{2462 °F; 1350 °C}} |
-| SK 13   |      {{2516 °F; 1380 °C}} |
-| SK 14   |      {{2570 °F; 1410 °C}} |
-| SK 15   |      {{2615 °F; 1435 °C}} |
-| SK 16   |      {{2660 °F; 1460 °C}} |
-| SK 17   |      {{2696 °F; 1480 °C}} |
-| SK 18   |      {{2732 °F; 1500 °C}} |
-| SK 19   |      {{2768 °F; 1520 °C}} |
-| SK 20   |      {{2786 °F; 1530 °C}} |
+| Kerucut |   Suhu nominal (JIS) |
+| ------- | -------------------: |
+| SK 022  |  {{1112 °F; 600 °C}} |
+| SK 021  |  {{1202 °F; 650 °C}} |
+| SK 020  |  {{1238 °F; 670 °C}} |
+| SK 019  |  {{1274 °F; 690 °C}} |
+| SK 018  |  {{1310 °F; 710 °C}} |
+| SK 017  |  {{1346 °F; 730 °C}} |
+| SK 016  |  {{1382 °F; 750 °C}} |
+| SK 015a |  {{1454 °F; 790 °C}} |
+| SK 014a |  {{1499 °F; 815 °C}} |
+| SK 013a |  {{1535 °F; 835 °C}} |
+| SK 012a |  {{1571 °F; 855 °C}} |
+| SK 011a |  {{1616 °F; 880 °C}} |
+| SK 010a |  {{1652 °F; 900 °C}} |
+| SK 09a  |  {{1688 °F; 920 °C}} |
+| SK 08a  |  {{1724 °F; 940 °C}} |
+| SK 07a  |  {{1760 °F; 960 °C}} |
+| SK 06a  |  {{1796 °F; 980 °C}} |
+| SK 05a  | {{1832 °F; 1000 °C}} |
+| SK 04a  | {{1868 °F; 1020 °C}} |
+| SK 03a  | {{1904 °F; 1040 °C}} |
+| SK 02a  | {{1940 °F; 1060 °C}} |
+| SK 01a  | {{1976 °F; 1080 °C}} |
+| SK 1a   | {{2012 °F; 1100 °C}} |
+| SK 2a   | {{2048 °F; 1120 °C}} |
+| SK 3a   | {{2084 °F; 1140 °C}} |
+| SK 4a   | {{2120 °F; 1160 °C}} |
+| SK 5a   | {{2156 °F; 1180 °C}} |
+| SK 6a   | {{2192 °F; 1200 °C}} |
+| SK 7    | {{2246 °F; 1230 °C}} |
+| SK 8    | {{2282 °F; 1250 °C}} |
+| SK 9    | {{2336 °F; 1280 °C}} |
+| SK 10   | {{2372 °F; 1300 °C}} |
+| SK 11   | {{2408 °F; 1320 °C}} |
+| SK 12   | {{2462 °F; 1350 °C}} |
+| SK 13   | {{2516 °F; 1380 °C}} |
+| SK 14   | {{2570 °F; 1410 °C}} |
+| SK 15   | {{2615 °F; 1435 °C}} |
+| SK 16   | {{2660 °F; 1460 °C}} |
+| SK 17   | {{2696 °F; 1480 °C}} |
+| SK 18   | {{2732 °F; 1500 °C}} |
+| SK 19   | {{2768 °F; 1520 °C}} |
+| SK 20   | {{2786 °F; 1530 °C}} |
 
-Every figure is nominal (JIS): the temperature the standard gives for the cone, as printed in Yuko Trading's table. The table does not print a heating rate. The standard gives reference temperatures. At a potter's rate of about 100 °C/h, Kyoto's municipal institute measured its own Kyoto cones bending 47–79 °C cooler than the JIS figure for the same number; we found no such measurements for SK cones to JIS. Set a witness cone and compare.
+Setiap angka bersifat nominal (JIS): suhu yang diberikan standar untuk kerucut, seperti dicetak dalam tabel Yuko Trading. Tabel tidak mencetak laju pemanasan. Standar memberikan suhu acuan. Pada laju pembuat keramik sekitar 100 °C/h, institut kota Kyoto mengukur kerucut Kyoto miliknya sendiri menekuk 47–79 °C lebih dingin daripada angka JIS untuk nomor yang sama; kami tidak menemukan pengukuran seperti itu untuk kerucut SK menurut JIS. Pasang kerucut saksi dan bandingkan.
 
-### Kyoto cones
+### Kerucut Kyoto
 
-Kyoto cones (京都ゼーゲル), made by Kyoto's municipal institute, are no longer made: news reports say the institute ended production at the close of fiscal 2009. They carry the same numbers as SK cones to JIS but bend cooler: a Kyoto cone bends at about the temperature of the SK cone to JIS two or three numbers lower. A recipe from Kyoto that says "SK 8" may mean a Kyoto cone. The institute has published advice for potters moving from Kyoto cones to Orton cones, and substitutes Orton cone 10 for its own Kyoto SK 12; that is the institute's choice from its own measurements at 100 °C/h, and applies to no other cone.
+Kerucut Kyoto (Kyoto zeegeru), dibuat oleh institut kota Kyoto, tidak lagi dibuat: laporan berita menyatakan institut itu mengakhiri produksi pada akhir tahun fiskal 2009. Kerucut ini membawa nomor yang sama dengan kerucut SK menurut JIS tetapi menekuk lebih dingin: kerucut Kyoto menekuk pada suhu kerucut SK menurut JIS dua atau tiga nomor lebih dingin. Resep dari Kyoto yang menyebut "SK 8" mungkin berarti kerucut Kyoto. Institut telah menerbitkan saran bagi pembuat keramik yang beralih dari kerucut Kyoto ke kerucut Orton, dan memakai kerucut Orton 10 sebagai pengganti Kyoto SK 12 miliknya; itu pilihan institut dari pengukurannya sendiri pada 100 °C/h, dan tidak berlaku untuk kerucut lain mana pun.
 
-### Orton cones sold in Japan
+### Kerucut Orton yang dijual di Jepang
 
-Orton self-supporting cones are sold in Japan under the name 立つゼーゲル ("standing Seger"), because they need no plaque or stand. They are Orton cones, with Orton's numbers and Orton's chart (above): fire to one only by its Orton number, and keep SK and Orton cones in separate packs, never in the same one.
+Kerucut berdiri sendiri Orton dijual di Jepang dengan nama tatsu zeegeru ("Seger berdiri"), karena tidak memerlukan plakat atau penyangga. Kerucut ini adalah kerucut Orton, dengan nomor Orton dan tabel Orton (di atas): bakar sampai satu hanya menurut nomor Ortonnya, dan simpan kerucut SK dan Orton dalam set terpisah, jangan pernah dalam set yang sama.
 
-### Sources for SK cones
+### Sumber untuk kerucut SK
 
-- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (the SK table, checked 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
-- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (in force, reconfirmed 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
-- [Kyoto Municipal Institute of Industrial Technology and Culture: points to note when moving from Kyoto cones to Orton cones](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
+- [Yuko Trading (Yuukou Shouji Kabushiki Kaisha): Hyoujun youtou ondo hyou (tabel SK, diperiksa 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
+- [JSA: JIS R 8101:1999, Taikado shiken you hyoujun koon (berlaku, dikonfirmasi ulang 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
+- [Kyoto Municipal Institute of Industrial Technology and Culture: hal yang perlu diperhatikan saat beralih dari kerucut Kyoto ke kerucut Orton](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
 
 :::
 

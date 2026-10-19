@@ -272,6 +272,7 @@
     "numbers": {
       "heading": "Læs analysen og grænserne",
       "analysis": "<b>Analyse og grænser</b>, under opskriften, viser hvert oxids mol, mol-% og brændte vægt-%, glødetabet og den beregnede termiske udvidelse, et skøn til at sammenligne glasurer.",
+      "limits": "<b>Grænserne</b> sætter Seger-formlen op mod et grænsesæt: Hesselberths og Roys grænser for stabile glasurer, medmindre du vælger Glazecalcs eget (valget gemmes sammen med dine indstillinger). De kontrollerer det brændingsbånd, som opskriftens <b>Brænding</b> angiver: dens kegle eller dens spænd. Et spænd, der går over flere bånd, som kegle 6 til 10, viser kontrollerne for begge bånd side om side. For at kontrollere kun ét bånd vælger du det i grænsernes eget felt <b>Brænding</b>, som går forud for opskriftens brænding og gemmes sammen med opskriften. Hesselberths og Roys tal gælder kegle 6 og kegle 10, så ved lav temperatur siger grænserne, at de ikke gælder. De er retningslinjer, ikke bestået eller dumpet. Øverst sammenligner en linje glasurens bor, silica og aluminiumoxid med dens brænding, efter Katz’ borregel og Hesselberths og Roys tal, uanset hvilket grænsesæt du vælger: den giver kun en bemærkning, når de er enige om, at glasuren ligner en anden brænding, siger til, når den ikke kan bedømme (bly, lithium, raku og lignende), og er en vejledning, ikke en test.",
       "stull": "<b>Stull-diagrammet</b> afsætter glasurens silica mod dens aluminiumoxid, med Stulls matte, halvmatte og blanke områder og grænsesættets intervaller. Det er en vejledning til overfladen, ikke en forudsigelse.",
       "slurry": "<b>Massefylde og vand</b> bruger Brongniarts formel: vej et afmålt volumen af glasuren, og se så den tørre glasur i spanden, det vand, der bringer den til den ønskede massefylde, eller vandet til en ny portion. Densiteterne følger indstillingen for massefylde, baumégrader eller pintvægt."
     },
@@ -471,6 +472,7 @@
     "expansionRises": "Den beregnede udvidelse stiger fra {was} til {now}.",
     "expansionRisesProbably": "Hvis den gamle glasur lige akkurat passede til leret, vil denne sandsynligvis krakelere, sommetider uger senere.",
     "expansionRisesMay": "Hvis den gamle glasur lige akkurat passede til leret, kan denne krakelere, sommetider uger senere.",
+    "expansionRisesFix": "Krakelering svækker kar og frarådes på overflader, der kommer i kontakt med fødevarer. At bytte noget af soda og potaske ud med flusmidler med lavere udvidelse (bor, lithium, magnesium eller calcium) sænker den termiske udvidelse; af og til foreslås det at tilføje silica, men kilderne er uenige.",
     "expansionFalls": "Den beregnede udvidelse falder fra {was} til {now}. Lidt lavere modstår som regel krakelering bedre.",
     "expansionFallsProbably": "Meget lavere vil sandsynligvis skalle af, med skarpe skår fra rande og kanter.",
     "expansionFallsCan": "Meget lavere kan skalle af, med skarpe skår fra rande og kanter.",
@@ -596,6 +598,36 @@
     "firingFromBlock": "Fra opskriftens brænding ({bands})",
     "bothBands": "Opskriftens brænding omfatter {bands}, så hver kontrolleres, side om side: en glasur opfører sig sjældent ens i begge ender.",
     "fromFiring": "Tallene gælder opskriftens brænding: {band}. Vælg en brænding ovenfor for at kontrollere en anden."
+  },
+  "coneFit": {
+    "cooler": "Denne glasurs kemi ligner mere en glasur til {looksLike, select, low {lav temperatur} other {mellemtemperatur}} end en til {scale, select, band {{band, select, low {lav temperatur} mid {mellemtemperatur} other {høj temperatur}}} sk {SK {cone}} temperature {{cone} °C} other {kegle {cone}}}.",
+    "coolerSoft": "Denne glasurs kemi hælder mod en køligere brænding end {scale, select, band {{band, select, low {lav temperatur} mid {mellemtemperatur} other {høj temperatur}}} sk {SK {cone}} temperature {{cone} °C} other {kegle {cone}}}, tættere på kegle 6, selv om kemien alene kun nogenlunde kan skille glasurer til kegle 6 og kegle 10 ad.",
+    "hotter": "Denne glasurs kemi ligner mere en glasur til {looksLike, select, high {høj temperatur} other {mellemtemperatur}} end en til {scale, select, band {{band, select, low {lav temperatur} mid {mellemtemperatur} other {høj temperatur}}} sk {SK {cone}} temperature {{cone} °C} other {kegle {cone}}}.",
+    "hotterSoft": "Denne glasurs kemi hælder mod en varmere brænding end {scale, select, band {{band, select, low {lav temperatur} mid {mellemtemperatur} other {høj temperatur}}} sk {SK {cone}} temperature {{cone} °C} other {kegle {cone}}}, tættere på kegle 10, selv om kemien alene kun nogenlunde kan skille glasurer til kegle 6 og kegle 10 ad.",
+    "closer": "Af det spænd, den er angivet til, ligger denne glasurs kemi tættere på enden ved {scale, select, band {{band, select, low {lav temperatur} mid {mellemtemperatur} other {høj temperatur}}} sk {SK {cone}} temperature {{cone} °C} other {kegle {cone}}}.",
+    "coolerSilica": "Den har mere bor ({boron}), end glasurer ved {scale, select, band {{band, select, low {lav temperatur} mid {mellemtemperatur} other {høj temperatur}}} sk {SK {cone}} temperature {{cone} °C} other {kegle {cone}}} som regel har brug for, og mindre silica ({silica}), end de som regel har.",
+    "coolerAlumina": "Den har mere bor ({boron}), end glasurer ved {scale, select, band {{band, select, low {lav temperatur} mid {mellemtemperatur} other {høj temperatur}}} sk {SK {cone}} temperature {{cone} °C} other {kegle {cone}}} som regel har brug for, og lidt aluminiumoxid ({alumina}).",
+    "coolerBoth": "Den har mere bor ({boron}), end glasurer ved {scale, select, band {{band, select, low {lav temperatur} mid {mellemtemperatur} other {høj temperatur}}} sk {SK {cone}} temperature {{cone} °C} other {kegle {cone}}} som regel har brug for, og mindre silica ({silica}) og aluminiumoxid ({alumina}), end de som regel har.",
+    "hotterSilica": "Den har lidt bor ({boron}) til {scale, select, band {{band, select, low {lav temperatur} mid {mellemtemperatur} other {høj temperatur}}} sk {SK {cone}} temperature {{cone} °C} other {kegle {cone}}} og mere silica ({silica}), end glasurer ved den brænding som regel har.",
+    "coolerEffect": "Ved den brænding kan den løbe eller smelte for meget: brænd først en prøveflise på et opsamlingsfad.",
+    "hotterEffect": "Ved den brænding kan den blive underbrændt: tør, ru eller ikke helt tæt. Prøvebrænd den, før du bruger den på kar, og især før du bruger den, hvor mad eller drikke kommer i kontakt med den.",
+    "hotterEffectSoft": "Nogle glasurer smelter ved den brænding uden bor, så det er kun et fingerpeg: kontrollér på en prøveflise, at den smelter helt.",
+    "gerstley": "Noget af dens bor kommer fra Gerstley-borat, som varierer fra parti til parti, så det tal er mindre sikkert.",
+    "guide": "Dette sammenligner kemien med offentliggjorte tal: det er en vejledning, ikke en test. Hvis glasuren er brændt godt for dig ved denne kegle, så stol på dine prøvefliser.",
+    "fits": "Dens bor, silica og aluminiumoxid peger ikke mod en anden brænding end {scale, select, band {{band, select, low {lav temperatur} mid {mellemtemperatur} other {høj temperatur}}} sk {SK {cone}} temperature {{cone} °C} other {kegle {cone}}}. Det er en vejledning, ikke en test: det siger intet om, hvorvidt glasuren er stabil eller fødevaresikker.",
+    "sources": "Kilder:",
+    "skip": {
+      "lead": "Glazecalc kan ikke sammenligne denne glasurs kemi med dens brænding: en stor del af dens smelte kommer fra bly, som de offentliggjorte tal, denne kontrol bruger, ikke dækker.",
+      "lithium": "Glazecalc kan ikke sammenligne denne glasurs kemi med dens brænding: en stor del af dens smelte kommer fra lithium, som de offentliggjorte tal, denne kontrol bruger, ikke dækker.",
+      "alkali": "Glazecalc kan ikke sammenligne denne glasurs kemi med dens brænding: en stor del af dens smelte kommer fra soda og potaske, som de offentliggjorte tal, denne kontrol bruger, ikke dækker.",
+      "zinc": "Glazecalc kan ikke sammenligne denne glasurs kemi med dens brænding: den har meget zink, som krystalglasurer har, hvilket de offentliggjorte tal, denne kontrol bruger, ikke dækker.",
+      "notGlaze": "Glazecalc kan ikke sammenligne denne glasurs kemi med dens brænding: dens formel er ikke en almindelig glasurs (meget lidt eller meget silica, eller mange farvende oxider), så de offentliggjorte tal, denne kontrol bruger, passer ikke.",
+      "process": "Glazecalc kan ikke sammenligne denne glasurs kemi med dens brænding: den er til en {process, select, raku {raku-brænding} salt {saltbrænding} soda {sodabrænding} wood {træbrænding} other {gruebrænding}}, hvor ovnen står for en del af glaseringen, hvilket de offentliggjorte tal, denne kontrol bruger, ikke dækker.",
+      "ash": "Glazecalc kan ikke sammenligne denne glasurs kemi med dens brænding: den indeholder aske, hvis sammensætning varierer for meget til de offentliggjorte tal, denne kontrol bruger.",
+      "noTemperature": "Glazecalc kan ikke sammenligne denne glasurs kemi med {scale, select, band {{band, select, low {lav temperatur} mid {mellemtemperatur} other {høj temperatur}}} sk {SK {cone}} temperature {{cone} °C} other {kegle {cone}}}: der er ingen målt temperatur for den kegle.",
+      "between": "Glazecalc kan ikke sammenligne denne glasurs kemi med {scale, select, band {{band, select, low {lav temperatur} mid {mellemtemperatur} other {høj temperatur}}} sk {SK {cone}} temperature {{cone} °C} other {kegle {cone}}}: de offentliggjorte tal, denne kontrol bruger, gælder lav temperatur samt mellem- og høj temperatur, ikke keglerne imellem (01 til 3).",
+      "belowChart": "Glazecalc kan ikke sammenligne denne glasurs kemi med {scale, select, band {{band, select, low {lav temperatur} mid {mellemtemperatur} other {høj temperatur}}} sk {SK {cone}} temperature {{cone} °C} other {kegle {cone}}}: Katz’ borregel gælder kegle 06 til kegle 10, og den brænding er køligere."
+    }
   },
   "stull": {
     "heading": "Stull-diagram",
@@ -902,6 +934,7 @@
     "foodSurface": "Til en overflade, der kommer i kontakt med mad (en indvendig glasur)",
     "liner": {
       "note": "Fødevaresikkerhed afhænger af, at glasuren brændes til den kegle, den er testet ved: en underbrændt glasur kan afgive metaller.",
+      "range": "Denne glasurs brænding er angivet som et spænd, så test den i spændets nedre ende, hvor den smelter mindst.",
       "untested": "Ingen kegle er endnu markeret som testet.",
       "test": "Kun en migrationstest af egne brændte genstande viser, om den er sikker til mad."
     },
@@ -964,5 +997,23 @@
     "replaceAsk": "Ved Testet ved er {now} afkrydset. Skal det erstattes med de kegler, journalerne nævner, {logs}?",
     "replace": "Erstat",
     "keep": "Behold som det er"
+  },
+  "coneCards": {
+    "heading": "Resultater pr. kegle",
+    "unplaced": "Ikke placeret ved en kegle",
+    "unplacedNote": "Disse brændingsjournaler er endnu ikke placeret ved en kegle: vælg, hvor hver blev brændt.",
+    "approx": "≈ {temperature}",
+    "cautions": "{count, plural, =0 {ingen grænseadvarsler} one {# grænseadvarsel} other {# grænseadvarsler}}",
+    "logs": "{count, plural, =0 {ingen brændingsjournaler} one {# brændingsjournal} other {# brændingsjournaler}}",
+    "outside": "uden for den angivne brænding",
+    "outsideChoice": "{place} (uden for den angivne brænding)",
+    "summaryLabel": "Hvordan det blev ved {place}",
+    "summaryPlaceholder": "Overflade, farve, løb, krakelering...",
+    "noAtmosphere": "atmosfære ikke angivet",
+    "placeLabel": "Hvor {title} blev brændt",
+    "notPlaced": "Ikke placeret",
+    "add": "Tilføj et resultat for",
+    "addButton": "Tilføj",
+    "saveFailed": "Det lykkedes ikke at gemme, hvor brændingsjournalen blev brændt."
   }
 }

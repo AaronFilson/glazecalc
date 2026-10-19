@@ -149,38 +149,38 @@ Gyvūnų apsinuodijimų informacijos linija Pet Poison Helpline teigia: „Švin
 
 Jei augintinis galėjo ką nors suėsti ar išgerti iš dirbtuvės arba jam pasireiškė panašūs požymiai kaip aprašyti aukščiau, skambinkite savo veterinarui arba į gyvūnų apsinuodijimų informacijos liniją (žr. lentelę vadovo pradžioje), turėdami po ranka žaliavos pavadinimą ir augintinio svorį.
 
-## The kiln {#the-kiln lang=en}
+## Krosnis {#the-kiln}
 
-### The outside gets hot enough to burn
+### Krosnies išorė įkaista tiek, kad gali nudeginti
 
-A UK schools risk assessment says a kiln's outside "can reach 160 °C and possibly more" (about 320 °F), and a school kiln guide reports metal bands at up to 460 °F (about 240 °C). Skutt, a kiln maker, recommends a kiln room that can be locked against children and pets. Where a room cannot be locked, the school guide suggests a barrier such as a kiln safety screen.
+Jungtinės Karalystės mokykloms skirtame rizikos vertinime rašoma, kad krosnies išorė „gali įkaisti iki 160 °C ir galbūt daugiau“ (apie 320 °F), o mokykloms skirtame krosnių priežiūros leidinyje nurodoma, kad metalinės juostos įkaista iki 460 °F (apie 240 °C). Krosnių gamintoja Skutt rekomenduoja krosniai skirti patalpą, kurią galima užrakinti nuo vaikų ir augintinių. Jei patalpos užrakinti negalima, mokykloms skirtame leidinyje siūloma įrengti užtvarą, pavyzdžiui, apsauginę krosnies pertvarą.
 
-Small children and pets cannot understand a warning sign. We suggest keeping them behind a locked door or a barrier while the kiln fires and while it cools, and posting a warning sign for everyone else.
+Maži vaikai ir augintiniai nesupranta įspėjamojo ženklo. Siūlome, kol vyksta degimas ir kol krosnis aušta, laikyti juos už užrakintų durų ar užtvaros, o kitiems pakabinti įspėjamąjį ženklą.
 
-### Space around it
+### Erdvė aplink krosnį
 
-Sources disagree on clearance. Rio Grande says at least 12 inches (30 cm) from walls and anything combustible. L&L strongly recommends 18 inches (46 cm) to all walls, and the building code it cites asks for 3 feet (0.9 m) from combustible walls. Follow your kiln's manual and local fire code; if you are unsure, allow 18 inches from any wall and 3 feet from anything that can burn. In a garage, keep cars, fuel and paint well away.
+Šaltiniai nesutaria, kokį atstumą palikti. Rio Grande nurodo ne mažiau kaip 12 colių (30 cm) iki sienų ir visų degių medžiagų. L&L primygtinai rekomenduoja 18 colių (46 cm) iki visų sienų, o L&L cituojamame statybos kodekse reikalaujama 3 pėdų (0,9 m) atstumo iki degių sienų. Laikykitės krosnies naudojimo instrukcijos ir vietos priešgaisrinės saugos taisyklių; jei abejojate, palikite 18 colių iki bet kurios sienos ir 3 pėdas iki visko, kas gali degti. Garaže automobilius, kurą ir dažus laikykite gerokai atokiau.
 
-### Power
+### Elektros maitinimas
 
-Rio Grande recommends a **dedicated circuit** (one that powers nothing else) with a properly grounded outlet. We suggest no extension cord. Between firings, switch off the kiln's breaker or disconnect switch, or unplug it, so a child cannot start it.
+Rio Grande rekomenduoja **atskirą elektros grandinę** (prie kurios nejungiama nieko kita) su tinkamai įžemintu lizdu. Siūlome nenaudoti ilgintuvo. Tarp degimų išjunkite krosnies automatinį jungiklį ar atjungiklį arba ištraukite kištuką iš lizdo, kad vaikas negalėtų jos įjungti.
 
-### Be there when the firing ends
+### Buvimas šalia degimo pabaigoje
 
-A **kiln sitter** is the mechanical switch on many manual kilns: a small cone bends at the end of the firing and trips the switch off. Its manual says it "is NOT intended to perform as a fail-safe shut-off device." Rio Grande says never to leave a firing kiln unattended, "especially near the expected shut-off time". So stay nearby and check the kiln while it fires, above all near the end; fire only when an adult will be home and awake through the whole firing, check that it has switched off, and keep an ABC fire extinguisher in the kiln room. For how sitters, controllers and schedules work, see [Firing a basic kiln](/guides/firing).
+**Kiln-Sitter**{{en: kiln sitter}} – tai mechaninis išjungiklis, kuriuo įrengta daug rankinio valdymo krosnių: degimo pabaigoje sulinksta mažas piroskopas{{en: cone}} ir išjungiklis išjungia krosnį. Jo naudojimo instrukcijoje rašoma, kad jis „NĖRA skirtas veikti kaip išjungimo įtaisas, saugus gedimo atveju{{en: fail-safe}}“. Rio Grande sako, kad veikiančios krosnies niekada negalima palikti be priežiūros, „ypač artėjant numatytam išsijungimo laikui“. Todėl būkite netoliese ir degimo metu tikrinkite krosnį, ypač artėjant pabaigai; degkite tik tada, kai namie bus suaugęs žmogus, nemiegantis per visą degimą, patikrinkite, ar krosnis išsijungė, ir krosnies patalpoje laikykite ABC klasės gesintuvą. Kaip veikia Kiln-Sitter išjungikliai, valdikliai ir degimo programos, skaitykite vadove [Degimas paprastoje krosnyje](/guides/firing).
 
-### Fumes and carbon monoxide
+### Krosnies dūmai ir anglies monoksidas
 
-Firing gives off fumes, so vent the kiln to the outdoors; [Safe mixing and ventilation](/guides/safe-mixing) explains how. A kiln in an attached garage needs venting that keeps fumes from reaching the house through the connecting door. Keep birds in a far room whenever the kiln fires.
+Degant išsiskiria dūmai ir garai, todėl krosnį vėdinkite į lauką; kaip tai padaryti, paaiškinta vadove [Saugus maišymas ir vėdinimas](/guides/safe-mixing). Prie namo prijungtame garaže stovinčiai krosniai reikia tokio vėdinimo, kad dūmai ir garai nepatektų į namą pro jungiamąsias duris. Kai krosnyje vyksta degimas, paukščius visada laikykite tolimame kambaryje.
 
-**Carbon monoxide** (CO) is a poisonous gas you cannot see or smell. A university kiln safety sheet requires CO alarms with gas kilns. Views differ for electric kilns, but burning off organic matter (in clay, or things like paper or wax) can make CO. We think a CO alarm in the kiln room and the rooms next to it is a sensible, inexpensive step for any kiln.
+**Anglies monoksidas** (smalkės, CO) – nuodingos dujos, kurių negalima nei pamatyti, nei užuosti. Vieno universiteto krosnių saugos lape reikalaujama prie dujinių krosnių įrengti smalkių detektorius. Dėl elektrinių krosnių nuomonės skiriasi, tačiau išdegant organinėms medžiagoms (esančioms molyje ar, pavyzdžiui, popieriuje ar vaške) gali susidaryti smalkių. Manome, kad smalkių detektorius krosnies patalpoje ir gretimuose kambariuose – protingas ir nebrangus žingsnis, tinkantis bet kuriai krosniai.
 
-### Peepholes and eyes
+### Stebėjimo angos ir akys
 
-Infrared light, which you cannot see, "starts at 752°F (400°C)", and the Ceramic Arts Network says looking into a kiln above this should always be done with eye protection. Infrared can damage the lens of the eye and lead to cataracts, and long gazing can injure the retina. Sunglasses and didymium glasses do not block it.
+Infraraudonoji spinduliuotė, kurios nematote, „prasideda nuo 752°F (400°C)“, o Ceramic Arts Network teigia, kad į krosnį, kurioje temperatūra aukštesnė, visada reikėtų žiūrėti apsaugojus akis. Infraraudonoji spinduliuotė gali pažeisti akies lęšiuką ir sukelti kataraktą, o ilgai žiūrint galima pažeisti tinklainę. Akiniai nuo saulės ir didimio akiniai jos nesulaiko.
 
 > [!WARNING]
-> Children should not look into a kiln at all. A glowing peephole draws them, and they will not reliably keep protective glasses on, so keep them away while the kiln is hot. Adults should look only briefly, through IR-rated welding glasses. Sources recommend shades from 1.7 to 5; shade 3 is a sensible choice, darker if you see spots afterward.
+> Vaikai visiškai neturėtų žiūrėti į krosnį. Švytinti stebėjimo anga juos traukia, ir negalima pasikliauti, kad jie nenusiims apsauginių akinių, todėl, kol krosnis karšta, laikykite juos atokiau. Suaugusieji turėtų žiūrėti tik trumpai, pro IR spinduliuotę sulaikančius suvirintojo akinius. Šaltiniai rekomenduoja nuo 1,7 iki 5 tamsumo laipsnio; 3 tamsumo laipsnis – protingas pasirinkimas, o jei po to akyse matote dėmes, rinkitės tamsesnius.
 
 ## Rankų darbo indai ant šeimos stalo {#handmade-ware}
 

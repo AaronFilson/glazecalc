@@ -149,38 +149,38 @@ Deir Pet Poison Helpline “Tá luaidhe tocsaineach do gach speiceas, ach is iad
 
 Má d’fhéadfadh sé gur ith nó gur ól peata rud ar bith ón stiúideo, nó má tá comharthaí air cosúil leo siúd thuas, cuir glao ar do thréidlia nó ar líne chomhairle faoi nimh d’ainmhithe (féach an tábla ag an mbarr), agus ainm an ábhair agus meáchan an pheata ar láimh agat.
 
-## The kiln {#the-kiln lang=en}
+## An áith {#the-kiln}
 
-### The outside gets hot enough to burn
+### Éiríonn an taobh amuigh te go leor chun tú a dhó
 
-A UK schools risk assessment says a kiln's outside "can reach 160 °C and possibly more" (about 320 °F), and a school kiln guide reports metal bands at up to 460 °F (about 240 °C). Skutt, a kiln maker, recommends a kiln room that can be locked against children and pets. Where a room cannot be locked, the school guide suggests a barrier such as a kiln safety screen.
+Deir measúnú riosca do scoileanna sa Ríocht Aontaithe gur féidir le taobh amuigh áithe “160 °C a bhaint amach agus níos mó b’fhéidir” (thart ar 320 °F), agus tuairiscíonn treoirlínte scoile faoi áitheanna bandaí miotail suas le 460 °F (thart ar 240 °C). Molann Skutt, déantóir áitheanna, seomra áithe is féidir a ghlasáil ar leanaí agus ar pheataí. Nuair nach féidir seomra a chur faoi ghlas, molann na treoirlínte scoile bacainn, mar shampla scáileán sábháilteachta áithe.
 
-Small children and pets cannot understand a warning sign. We suggest keeping them behind a locked door or a barrier while the kiln fires and while it cools, and posting a warning sign for everyone else.
+Ní féidir le leanaí beaga ná le peataí comhartha rabhaidh a thuiscint. Molaimid iad a choinneáil taobh thiar de dhoras faoi ghlas nó de bhacainn fad a bhíonn an áith ag bácáil agus fad a bhíonn sí ag fuarú, agus comhartha rabhaidh a chur suas do gach duine eile.
 
-### Space around it
+### Spás timpeall uirthi
 
-Sources disagree on clearance. Rio Grande says at least 12 inches (30 cm) from walls and anything combustible. L&L strongly recommends 18 inches (46 cm) to all walls, and the building code it cites asks for 3 feet (0.9 m) from combustible walls. Follow your kiln's manual and local fire code; if you are unsure, allow 18 inches from any wall and 3 feet from anything that can burn. In a garage, keep cars, fuel and paint well away.
+Ní réitíonn na foinsí le chéile faoin nglanspás. Deir Rio Grande: 12 orlach (30 cm) ar a laghad ó bhallaí agus ó aon rud indóite. Molann L&L go láidir 18 n-orlach (46 cm) ó gach balla, agus iarrann an cód tógála a luann sé 3 troithe (0.9 m) ó bhallaí indóite. Lean lámhleabhar d’áithe agus an cód dóiteáin áitiúil; mura bhfuil tú cinnte, fág 18 n-orlach ó aon bhalla agus 3 troithe ó aon rud a dhófadh. I ngaráiste, coinnigh carranna, breosla agus péint i bhfad ón áith.
 
-### Power
+### Leictreachas
 
-Rio Grande recommends a **dedicated circuit** (one that powers nothing else) with a properly grounded outlet. We suggest no extension cord. Between firings, switch off the kiln's breaker or disconnect switch, or unplug it, so a child cannot start it.
+Molann Rio Grande **ciorcad tiomnaithe** (ciorcad nach dtugann cumhacht d’aon rud eile) le soicéad atá talmhaithe i gceart. Molaimid gan cábla sínteach a úsáid. Idir bácálacha, cas as scoradán ciorcaid nó lasc aonrúcháin na háithe, nó díphlugáil í, ionas nach féidir le leanbh í a chur ar siúl.
 
-### Be there when the firing ends
+### A bheith i láthair nuair a chríochnaíonn an bhácáil
 
-A **kiln sitter** is the mechanical switch on many manual kilns: a small cone bends at the end of the firing and trips the switch off. Its manual says it "is NOT intended to perform as a fail-safe shut-off device." Rio Grande says never to leave a firing kiln unattended, "especially near the expected shut-off time". So stay nearby and check the kiln while it fires, above all near the end; fire only when an adult will be home and awake through the whole firing, check that it has switched off, and keep an ABC fire extinguisher in the kiln room. For how sitters, controllers and schedules work, see [Firing a basic kiln](/guides/firing).
+Is é **Kiln-Sitter** an lasc mheicniúil atá ar go leor áitheanna láimhe: lúbann cón{{en: cone}} beag ag deireadh na bácála agus cuireann sé an lasc as. Deir a lámhleabhar “NÍL sé ceaptha feidhmiú mar ghléas múchta slánchinnte.” Deir Rio Grande gan áith atá ag bácáil a fhágáil gan aire riamh, “go háirithe in aice leis an am múchta a bhfuiltear ag súil leis”. Mar sin, fan in aice láimhe agus seiceáil an áith agus í ag bácáil, go háirithe gar don deireadh; ná bácáil ach nuair a bheidh duine fásta sa bhaile agus ina dhúiseacht tríd an mbácáil ar fad, seiceáil gur mhúch an áith, agus coinnigh múchtóir dóiteáin ABC i seomra na háithe. Chun a fháil amach conas a oibríonn Kiln-Sitter, rialaitheoirí agus cláir bhácála, féach an treoirleabhar [Bácáil in áith shimplí](/guides/firing).
 
-### Fumes and carbon monoxide
+### Múch agus aonocsaíd charbóin
 
-Firing gives off fumes, so vent the kiln to the outdoors; [Safe mixing and ventilation](/guides/safe-mixing) explains how. A kiln in an attached garage needs venting that keeps fumes from reaching the house through the connecting door. Keep birds in a far room whenever the kiln fires.
+Tugann an bhácáil múch uaithi, mar sin aeráil an áith amach faoin aer; míníonn an treoirleabhar [Meascadh sábháilte agus aeráil](/guides/safe-mixing) conas é sin a dhéanamh. Teastaíonn ó áith i ngaráiste atá ceangailte den teach aeráil a choinníonn an mhúch ó theacht isteach sa teach tríd an doras eatarthu. Coinnigh éin i seomra i bhfad ón áith aon uair a bhíonn sí ag bácáil.
 
-**Carbon monoxide** (CO) is a poisonous gas you cannot see or smell. A university kiln safety sheet requires CO alarms with gas kilns. Views differ for electric kilns, but burning off organic matter (in clay, or things like paper or wax) can make CO. We think a CO alarm in the kiln room and the rooms next to it is a sensible, inexpensive step for any kiln.
+Gás nimhiúil is ea **aonocsaíd charbóin** (CO) nach féidir leat a fheiceáil ná a bholadh. Éilíonn bileog sábháilteachta áithe ó ollscoil aláraim aonocsaíde carbóin le háitheanna gáis. Tá tuairimí éagsúla ann faoi áitheanna leictreacha, ach nuair a dhóitear ábhar orgánach (sa chré, nó i rudaí ar nós páipéir nó céarach) is féidir CO a chruthú. Is dóigh linn gur céim chiallmhar nach gcosnaíonn mórán é aláram aonocsaíde carbóin i seomra na háithe agus sna seomraí in aice leis, d’aon áith.
 
-### Peepholes and eyes
+### Poill faire agus na súile
 
-Infrared light, which you cannot see, "starts at 752°F (400°C)", and the Ceramic Arts Network says looking into a kiln above this should always be done with eye protection. Infrared can damage the lens of the eye and lead to cataracts, and long gazing can injure the retina. Sunglasses and didymium glasses do not block it.
+Tosaíonn solas infridhearg, nach féidir leat a fheiceáil, “ag 752°F (400°C)”, agus deir Ceramic Arts Network gur cheart súilchosaint a chaitheamh i gcónaí nuair a bhreathnaíonn tú isteach in áith os cionn na teochta sin. Is féidir le solas infridhearg damáiste a dhéanamh do lionsa na súile agus cataracht a chruthú, agus is féidir le stánadh fada an reitine a ghortú. Ní choisceann spéaclaí gréine ná spéaclaí didimiam é.
 
 > [!WARNING]
-> Children should not look into a kiln at all. A glowing peephole draws them, and they will not reliably keep protective glasses on, so keep them away while the kiln is hot. Adults should look only briefly, through IR-rated welding glasses. Sources recommend shades from 1.7 to 5; shade 3 is a sensible choice, darker if you see spots afterward.
+> Níor cheart do leanaí breathnú isteach in áith ar chor ar bith. Meallann poll faire atá ag lonrú iad, agus ní féidir brath orthu spéaclaí cosanta a choinneáil orthu, mar sin coinnigh uaithi iad fad atá an áith te. Níor cheart do dhaoine fásta breathnú isteach ach go hachomair, trí spéaclaí táthúcháin rátáilte do IR. Molann foinsí scáthanna ó 1.7 go 5; is rogha chiallmhar é scáth 3, nó scáth níos dorcha má fheiceann tú spotaí ina dhiaidh sin.
 
 ## Gréithe lámhdhéanta ar bhord an teaghlaigh {#handmade-ware}
 

@@ -165,69 +165,69 @@ Label: 세 개 한 조의 콘 세트
 
 :::orton
 
-## The kiln sitter {#kiln-sitter lang=en}
+## 킬른 시터 {#kiln-sitter}
 
-A **kiln sitter** is the mechanical switch, on the outside of many basic and older kilns, that turns the kiln off when a small cone bends. The best known is the Dawson Kiln-Sitter. It makes firing easier, but it is a convenience, not a safety device.
+**킬른 시터**{{en: kiln sitter}}는 많은 기본형 가마와 오래된 가마의 바깥에 달린 기계식 스위치로, 스몰 콘이 휘면 가마를 끕니다. 가장 잘 알려진 것은 Dawson의 Kiln-Sitter입니다. 소성을 쉽게 해 주지만 편의 장치일 뿐 안전 장치가 아닙니다.
 
-### How it works
+### 작동 원리
 
-A porcelain tube reaches into the kiln. At its end, a small cone or a bar lies across two metal supports, under a **sensing rod** that pivots like a seesaw. Outside the kiln, the other end of the rod holds up a weight by a small claw. When the cone softens and bends to about 90°, the rod drops far enough to release the weight, the weight falls, and the power to the elements is cut.
+자기로 만든 튜브가 가마 안으로 들어가 있습니다. 튜브 끝에서 스몰 콘이나 바 콘이 두 개의 금속 받침 위에 가로질러 놓이고, 그 위에서 시소처럼 움직이는 **센싱 로드**가 누릅니다. 가마 바깥에서는 로드의 반대쪽 끝이 작은 **클로**로 **웨이트**를 받치고 있습니다. 콘이 부드러워져 약 90°로 휘면 로드가 충분히 내려가 웨이트를 놓고, 웨이트가 떨어지면서 열선에 가는 전원이 끊깁니다.
 
-Small cones and bars "give equivalent heat treatment". Orton notes that many beginners choose bars, because their even shape makes it easy to place them the same way every time. A small cone tapers, so where it sits matters: with its thin part under the rod the kiln shuts off cooler, and with its thick part hotter, a shift of "as much as 1/2 cone".
+스몰 콘과 바 콘은 “같은 열처리를 해 줍니다”. Orton은 모양이 고르기 때문에 매번 같은 방식으로 놓기 쉬워서 많은 초보자가 바 콘을 고른다고 말합니다. 스몰 콘은 끝이 가늘어지므로 놓는 방향이 중요합니다. 가는 쪽이 로드 아래에 오면 가마가 더 저온에서 꺼지고, 굵은 쪽이 오면 더 고온에서 꺼지며, 그 차이는 “최대 콘 1/2개”입니다.
 
-### Which cone goes in the sitter
+### 킬른 시터에 넣는 콘
 
-Sources disagree. Dawson, who made the sitter, says to use the same number as the firing cone on the shelf, and to go one number hotter only if the shelf cone stays unbent. L&L says to use one number hotter than the shelf cones, because the sitter sits near the wall and the elements, gets more heat, and tends to shut off early. Orton settles the principle: "The shelf cone is the final judge of the firing process, not the Kiln-Sitter cone or bar."
-
-> [!NOTE]
-> Our starting point: put a small cone of the same number as your target in the sitter, with a cone pack on the shelf. If the shelf firing cone is under-bent when the kiln shuts off, go one number hotter in the sitter next time, or set the thicker part of the cone under the rod. If it is over-bent, do the opposite.
-
-### Setting it up, and checks before every firing
-
-Dawson's procedure, which doubles as a check before every firing:
-
-1. Turn all the switches off. Check that the sensing rod moves freely, sits centered in the tube and is not bent or corroded. If it is sluggish, Dawson says to replace the tube assembly.
-2. Brush a thin coat of high-fire **kiln wash** (a coating that stops melted material sticking) onto the cone supports and the rod where it touches the cone. Never put wash on the cone or the porcelain tube.
-3. Load shelves and ware at least 1 in (25 mm) above or below the tube, so nothing can touch, fall against or block it.
-4. Lift the weight, press the claw down onto the trigger, and lay the cone or bar flat on the supports against the metal step, as your sitter's manual shows, the same way every time. Check it again before closing the lid: "AN IMPROPERLY PLACED CONE OR BAR COULD CAUSE AN OVERFIRING."
-5. Set the limit timer and push in the plunger until it locks. Keep the kiln level and the space under the weight clear, so the weight can fall.
-
-### The limit timer
-
-Many sitters, including Dawson's LT models, have a **limit timer**: a clock that turns the kiln off after a set time, as a backup "in case the KILN-SITTER fails". It should always be set longer than the firing is expected to take. Sources set the margin differently:
-
-Table: How long to set the limit timer
-Label: Limit timer settings
-
-| Source    | Setting                                                                                                                |
-| --------- | ---------------------------------------------------------------------------------------------------------------------- |
-| Dawson    | ½ hour longer than the expected firing time until you know the kiln, later ¼ hour longer; never set it beyond 20 hours |
-| L&L       | Very high the first time, noting how long the firing takes; after that, about 1 hour longer                            |
-| Bracker's | 30 minutes to 1 hour longer than the firing time                                                                       |
+출처마다 말이 다릅니다. 킬른 시터를 만든 Dawson은 내화판 위의 소성 콘과 같은 번호를 쓰고, 내화판 위의 콘이 휘지 않을 때만 한 단계 고온의 콘을 쓰라고 합니다. L&L은 내화판 위의 콘보다 한 단계 고온의 콘을 쓰라고 합니다. 킬른 시터는 벽과 열선 가까이에 있어 열을 더 받고 일찍 꺼지는 경향이 있기 때문입니다. Orton은 원칙을 정리합니다. “소성 과정의 최종 판단자는 Kiln-Sitter의 콘이나 바 콘이 아니라 내화판 위의 콘입니다.”
 
 > [!NOTE]
-> Our starting point: generous the first time (within the dial's 20 hours), then ½ to 1 hour longer than the time you recorded. The timer also tells you how long a firing took: set at 7 and ending at 1 means 6 hours.
+> 저희의 출발점은 다음과 같습니다. 킬른 시터에는 목표와 같은 번호의 스몰 콘을 넣고, 내화판 위에는 콘 세트를 놓습니다. 가마가 꺼졌을 때 내화판 위의 소성 콘이 덜 휘어 있으면, 다음에는 킬른 시터에 한 단계 고온의 콘을 넣거나 콘의 굵은 쪽이 로드 아래에 오게 놓으세요. 너무 많이 휘어 있으면 반대로 하세요.
 
-### When it shuts off early or late
+### 설치와 소성 전 점검
 
-After each firing, read the sitter cone beside the shelf cones.
+Dawson의 순서이며, 매번 소성하기 전의 점검도 됩니다.
 
-Table: Reading the sitter after a firing
-Label: Kiln sitter problems
+1. 모든 스위치를 끕니다. 센싱 로드가 자유롭게 움직이는지, 튜브 가운데에 있는지, 휘거나 녹슬지 않았는지 확인하세요. 움직임이 둔하면 Dawson은 튜브 조립품을 교체하라고 합니다.
+2. 콘 받침과, 로드가 콘에 닿는 부분에 고화도용 **내화판 코팅제**(녹은 물질이 달라붙지 않게 하는 코팅)를 얇게 바르세요. 콘이나 자기 튜브에는 절대 코팅제를 바르지 마세요.
+3. 아무것도 튜브에 닿거나, 기대어 쓰러지거나, 튜브를 막지 못하도록 내화판과 기물을 튜브에서 위나 아래로 1인치(25 mm) 이상 띄워 재임하세요.
+4. 웨이트를 들어 올리고, 클로를 트리거 위로 눌러 내린 다음, 사용하는 킬른 시터의 사용 설명서에 나온 대로 콘이나 바 콘을 받침 위의 금속 턱에 붙여 평평하게 놓으세요. 매번 같은 방식으로 놓습니다. 뚜껑을 닫기 전에 한 번 더 확인하세요. “콘이나 바 콘을 잘못 놓으면 과다 소성이 될 수 있습니다.”
+5. 리밋 타이머를 설정하고 플런저를 잠길 때까지 밀어 넣으세요. 웨이트가 떨어질 수 있도록 가마를 수평으로 유지하고 웨이트 아래 공간을 비워 두세요.
 
-| What you see                                    | Likely cause                                                                                           | What to do                                                       |
-| ----------------------------------------------- | ------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------- |
-| Sitter tripped, shelf firing cone under-bent    | The sitter ran hotter than the shelf (it sits near the wall)                                           | One cone hotter in the sitter, or the thicker part under the rod |
-| Sitter cone sagged well past 90°                | The kiln climbed too fast near the end                                                                 | Lower the switch settings, so the climb is slower (Dawson)       |
-| Sitter cone did not bend, or melted into a blob | The sitter itself: poor adjustment, a bent or corroded rod, or something lodged in or against the tube | Check and adjust the sitter by its manual before firing again    |
-| Early or late every time                        | Out of adjustment, or a worn rod                                                                       | Check with the firing gauge; move the trigger plate              |
+### 리밋 타이머
 
-To check the adjustment, Dawson uses a **firing gauge** that holds the rod where a fully bent cone would leave it; there should then be "1/16th-inch clearance" (about 1.6 mm) at the claw. Check it every 30 firings. Ceramics Monthly's rule: if the kiln shuts off early, move the trigger plate up slightly; if late, move it down slightly. Whatever the sitter does, "Always trust large witness cones over small sitter cones."
+Dawson의 LT 모델을 비롯한 많은 킬른 시터에는 **리밋 타이머**가 있습니다. 정해진 시간이 지나면 가마를 끄는 시계이며, “KILN-SITTER가 고장 날 때”를 대비한 예비 장치입니다. 소성에 걸릴 것으로 예상하는 시간보다 항상 길게 설정해야 합니다. 여유를 얼마나 둘지는 출처마다 다릅니다.
+
+Table: 리밋 타이머를 얼마나 길게 설정할까
+Label: 리밋 타이머 설정
+
+| 출처      | 설정                                                                                                                      |
+| --------- | ------------------------------------------------------------------------------------------------------------------------- |
+| Dawson    | 가마에 익숙해질 때까지는 예상 소성 시간보다 ½시간 길게, 익숙해진 뒤에는 ¼시간 더 길게, 절대 20시간을 넘겨 설정하지 마세요 |
+| L&L       | 처음에는 아주 길게 설정하고 소성에 걸리는 시간을 기록, 그 뒤에는 약 1시간 더 길게                                         |
+| Bracker's | 소성 시간보다 30분~1시간 더 길게                                                                                          |
+
+> [!NOTE]
+> 저희의 출발점은 다음과 같습니다. 처음에는 넉넉하게(다이얼의 20시간 안에서) 설정하고, 그 뒤에는 기록한 시간보다 ½~1시간 길게 설정하세요. 타이머는 소성에 걸린 시간도 알려 줍니다. 7에 맞추었는데 1에서 끝났다면 6시간이 걸린 것입니다.
+
+### 너무 일찍 또는 늦게 꺼질 때
+
+소성할 때마다 끝난 뒤에 내화판 위의 콘 옆에서 킬른 시터 콘을 읽으세요.
+
+Table: 소성 후 킬른 시터 읽기
+Label: 킬른 시터 문제
+
+| 보이는 것                                                 | 있을 만한 원인                                                                      | 할 일                                                                   |
+| --------------------------------------------------------- | ----------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
+| 킬른 시터가 작동했는데 내화판 위의 소성 콘이 덜 휘어 있음 | 킬른 시터가 내화판보다 더 고온으로 소성되었음(벽 근처에 있기 때문)                  | 킬른 시터에 한 단계 고온의 콘을 넣거나, 굵은 쪽이 로드 아래에 오게 놓음 |
+| 킬른 시터 콘이 90°를 크게 넘어 처졌음                     | 끝 무렵에 가마가 너무 빨리 올랐음                                                   | 스위치 설정을 낮추어 더 천천히 오르게 함(Dawson)                        |
+| 킬른 시터 콘이 휘지 않았거나 덩어리로 녹았음              | 킬른 시터 자체의 문제: 조정 불량, 휘거나 녹슨 로드, 튜브 안이나 옆에 끼어 있는 물체 | 다시 소성하기 전에 사용 설명서에 따라 킬른 시터를 점검하고 조정함       |
+| 매번 일찍 또는 늦게 꺼짐                                  | 조정이 맞지 않음, 또는 로드가 마모되었음                                            | 파이어링 게이지로 점검하고, 트리거 플레이트를 움직임                    |
+
+조정을 점검하려면 Dawson은 **파이어링 게이지**를 쓰는데, 완전히 휜 콘이 놓일 때 로드가 있을 자리에 로드를 잡아 주는 도구입니다. 그때 클로에 “1/16인치 간격”(약 1.6 mm)이 있어야 합니다. 30번 소성할 때마다 점검하세요. Ceramics Monthly의 규칙은, 가마가 일찍 꺼지면 트리거 플레이트를 조금 위로, 늦게 꺼지면 조금 아래로 옮기라는 것입니다. 킬른 시터가 어떻게 작동했든 “작은 킬른 시터 콘보다 큰 확인용 콘을 항상 믿으세요.”
 
 > [!WARNING]
-> **A kiln sitter is not a safety device.** Dawson's manual says it "is NOT intended to perform as a fail-safe shut-off device and your kiln should NOT be left unattended beyond the estimated firing time." Something as simple as greenware falling against the tube "might cause an over-firing". Be there to check the kiln when it should be finishing, and never fire it over or near anything that burns, such as a wood floor or carpet.
+> **킬른 시터는 안전 장치가 아닙니다.** Dawson의 사용 설명서는 킬른 시터가 “고장이 나도 안전하게 전원을 차단하는 장치로 작동하도록 만든 것이 아니며, 가마를 예상 소성 시간이 지난 뒤에도 지켜보는 사람 없이 두어서는 안 됩니다”라고 말합니다. 소성 전 기물이 튜브에 기대어 쓰러지는 것처럼 단순한 일도 “과다 소성을 일으킬 수 있습니다”. 가마가 끝날 시간에 가마를 확인할 수 있도록 곁에 있고, 나무 바닥이나 카펫처럼 불에 타는 것 위나 근처에서는 절대 소성하지 마세요.
 
-The sitter is built for firings "up to and including Cone 8". It cannot hold a temperature or cool slowly by itself. With practice and a log, though, you can "become the controller", as Digitalfire puts it: watch the cones and turn the switches by hand.
+킬른 시터는 “오튼 콘 8까지 포함하는” 소성용으로 만들어져 있습니다. 혼자서는 온도를 유지하거나 천천히 식힐 수 없습니다. 하지만 연습하고 기록을 남기면 Digitalfire의 표현처럼 “직접 컨트롤러가 될” 수 있습니다. 콘을 보면서 스위치를 손으로 돌리는 것입니다.
 
 :::
 
@@ -281,92 +281,92 @@ Label: 다음 소성 조정
 
 :::sk
 
-## Firing to SK cones {#sk-cones lang=en}
+## SK 콘 기준 소성 {#sk-cones}
 
-SK cones are the pyrometric cones made to Japan's standard, JIS R 8101, and sold in Japan by dealers such as Yuko Trading (有恒商事). Like any cone, an SK cone measures heatwork, not temperature alone: it softens and bends over when the ware has had enough heat, and you read how far it bent. Witness cones, reading how far a cone has bent, and holds work for it as for any cone. This section names each cone's system, and never turns an SK number into another system's number: the numbers of different cone series are not interchangeable.
+SK 콘은 일본 규격 JIS R 8101에 따라 만든 파이로메트릭 콘으로, 일본에서는 Yuko Trading(유코 상사) 같은 판매점이 팝니다. 다른 콘과 마찬가지로 SK 콘은 온도만이 아니라 소성 정도{{en: heatwork}}를 잽니다. 기물이 열을 충분히 받으면 부드러워져 휘어 쓰러지고, 얼마나 휘었는지 읽습니다. 확인용 콘{{en: witness cone}}, 콘이 얼마나 휘었는지 읽는 방법, 유지도 다른 콘과 똑같이 적용됩니다. 이 부분은 콘마다 어느 계열인지 밝히며, SK 번호를 다른 계열의 번호로 바꾸어 말하지 않습니다. 계열이 다른 콘의 번호는 서로 바꿔 쓸 수 없기 때문입니다.
 
 > [!NOTE]
-> Always write "SK" before the number. Many older Japanese recipes say only "SK 8" or "SK 9" without saying whose cone. Kyoto cones and SK cones to JIS carry the same numbers but bend at different temperatures (see Kyoto cones, below).
+> 번호 앞에는 항상 “SK”를 쓰세요. 오래된 일본 레시피 중에는 누구의 콘인지 밝히지 않고 “SK 8”이나 “SK 9”라고만 쓴 것이 많습니다. 교토 콘과 JIS에 따른 SK 콘은 번호가 같지만 휘는 온도가 다릅니다(아래의 “교토 콘” 참조).
 
-### The large cones
+### 대형 콘
 
-The standard has two sizes. Large cones (大型コーン) are "mainly used for measuring the degree of firing" (焼度測定), which is what a potter wants. Small cones (SK 26 to SK 42, at the top of the range) are "mainly used for refractoriness tests" and are not covered here. The table below gives the large cones from SK 022 to SK 20.
+규격에는 크기가 두 가지 있습니다. 대형 콘은 “주로 소성 정도 측정에 쓰이며”, 도예가에게 필요한 것이 바로 이것입니다. 소형 콘(범위 맨 위의 SK 26~SK 42)은 “주로 내화도 시험에 쓰이며” 여기서는 다루지 않습니다. 아래 표는 SK 022부터 SK 20까지의 대형 콘을 제시합니다.
 
-The numbers run from SK 022, the coolest, up to SK 20 here. Between SK 015 and SK 6 the printed numbers carry an "a" (SK 015a, SK 6a); write it as printed.
+번호는 여기서는 가장 저온인 SK 022부터 SK 20까지입니다. SK 015와 SK 6 사이에서는 인쇄된 번호에 “a”가 붙습니다(SK 015a, SK 6a). 인쇄된 대로 쓰세요.
 
-### Setting large cones
+### 대형 콘 놓기
 
-Set each large cone in a plaque or a pat of clay, leaning toward its bending face. As with any cone, keep the height and the lean the same from firing to firing, because a difference in either changes how far it bends. Set the three cones of the pack (below) together, deep in the kiln near the middle of the load, where they get the heat the ware gets, yet where you can see them through a peephole; before you close the kiln, check that you can see all three.
+대형 콘은 콘 받침대나 점토 덩이에 꽂아, 휘는 면 쪽으로 기울여 놓습니다. 다른 콘과 마찬가지로 높이와 기울기를 소성할 때마다 같게 하세요. 둘 중 어느 쪽이든 달라지면 휘는 정도가 달라지기 때문입니다. 콘 세트(아래)의 콘 세 개를 함께, 재임한 기물의 가운데 근처에서 가마 안쪽 깊숙이 놓으세요. 기물이 받는 열을 받으면서도 불구멍으로 보이는 곳입니다. 가마를 닫기 전에 콘 세 개가 모두 보이는지 확인하세요.
 
-### Guide, firing and guard cones
+### 가이드 콘, 소성 콘, 가드 콘
 
-Cones are sold and set as three: a guide cone, a firing cone at the target, and a guard cone. Take the firing cone as the SK number your recipe or clay names, the guide cone as the next cooler cone (one row up in the table) and the guard cone as the next hotter one. When the guide cone starts to bend, the end is near; when the guard cone bends, the firing has gone too far.
+콘은 세 개를 한 조로 팔고 놓습니다. 가이드 콘, 목표에 맞춘 소성 콘, 가드 콘입니다. 소성 콘은 레시피나 점토가 알려 주는 SK 번호로 하고, 가이드 콘은 바로 위(저온 쪽)의 콘, 가드 콘은 바로 아래(고온 쪽)의 콘으로 하세요. 가이드 콘이 휘기 시작하면 끝이 가까운 것이고, 가드 콘이 휘면 소성이 지나친 것입니다.
 
-### The SK chart
+### SK 콘 온도표
 
-Table: SK large cones (JIS R 8101): the nominal (JIS) temperature of each
-Label: SK chart
+Table: SK 대형 콘(JIS R 8101): 각 콘의 공칭(JIS) 온도
+Label: SK 콘 온도표
 
-| Cone    | Nominal (JIS) temperature |
-| ------- | ------------------------: |
-| SK 022  |       {{1112 °F; 600 °C}} |
-| SK 021  |       {{1202 °F; 650 °C}} |
-| SK 020  |       {{1238 °F; 670 °C}} |
-| SK 019  |       {{1274 °F; 690 °C}} |
-| SK 018  |       {{1310 °F; 710 °C}} |
-| SK 017  |       {{1346 °F; 730 °C}} |
-| SK 016  |       {{1382 °F; 750 °C}} |
-| SK 015a |       {{1454 °F; 790 °C}} |
-| SK 014a |       {{1499 °F; 815 °C}} |
-| SK 013a |       {{1535 °F; 835 °C}} |
-| SK 012a |       {{1571 °F; 855 °C}} |
-| SK 011a |       {{1616 °F; 880 °C}} |
-| SK 010a |       {{1652 °F; 900 °C}} |
-| SK 09a  |       {{1688 °F; 920 °C}} |
-| SK 08a  |       {{1724 °F; 940 °C}} |
-| SK 07a  |       {{1760 °F; 960 °C}} |
-| SK 06a  |       {{1796 °F; 980 °C}} |
-| SK 05a  |      {{1832 °F; 1000 °C}} |
-| SK 04a  |      {{1868 °F; 1020 °C}} |
-| SK 03a  |      {{1904 °F; 1040 °C}} |
-| SK 02a  |      {{1940 °F; 1060 °C}} |
-| SK 01a  |      {{1976 °F; 1080 °C}} |
-| SK 1a   |      {{2012 °F; 1100 °C}} |
-| SK 2a   |      {{2048 °F; 1120 °C}} |
-| SK 3a   |      {{2084 °F; 1140 °C}} |
-| SK 4a   |      {{2120 °F; 1160 °C}} |
-| SK 5a   |      {{2156 °F; 1180 °C}} |
-| SK 6a   |      {{2192 °F; 1200 °C}} |
-| SK 7    |      {{2246 °F; 1230 °C}} |
-| SK 8    |      {{2282 °F; 1250 °C}} |
-| SK 9    |      {{2336 °F; 1280 °C}} |
-| SK 10   |      {{2372 °F; 1300 °C}} |
-| SK 11   |      {{2408 °F; 1320 °C}} |
-| SK 12   |      {{2462 °F; 1350 °C}} |
-| SK 13   |      {{2516 °F; 1380 °C}} |
-| SK 14   |      {{2570 °F; 1410 °C}} |
-| SK 15   |      {{2615 °F; 1435 °C}} |
-| SK 16   |      {{2660 °F; 1460 °C}} |
-| SK 17   |      {{2696 °F; 1480 °C}} |
-| SK 18   |      {{2732 °F; 1500 °C}} |
-| SK 19   |      {{2768 °F; 1520 °C}} |
-| SK 20   |      {{2786 °F; 1530 °C}} |
+| 콘      |       공칭(JIS) 온도 |
+| ------- | -------------------: |
+| SK 022  |  {{1112 °F; 600 °C}} |
+| SK 021  |  {{1202 °F; 650 °C}} |
+| SK 020  |  {{1238 °F; 670 °C}} |
+| SK 019  |  {{1274 °F; 690 °C}} |
+| SK 018  |  {{1310 °F; 710 °C}} |
+| SK 017  |  {{1346 °F; 730 °C}} |
+| SK 016  |  {{1382 °F; 750 °C}} |
+| SK 015a |  {{1454 °F; 790 °C}} |
+| SK 014a |  {{1499 °F; 815 °C}} |
+| SK 013a |  {{1535 °F; 835 °C}} |
+| SK 012a |  {{1571 °F; 855 °C}} |
+| SK 011a |  {{1616 °F; 880 °C}} |
+| SK 010a |  {{1652 °F; 900 °C}} |
+| SK 09a  |  {{1688 °F; 920 °C}} |
+| SK 08a  |  {{1724 °F; 940 °C}} |
+| SK 07a  |  {{1760 °F; 960 °C}} |
+| SK 06a  |  {{1796 °F; 980 °C}} |
+| SK 05a  | {{1832 °F; 1000 °C}} |
+| SK 04a  | {{1868 °F; 1020 °C}} |
+| SK 03a  | {{1904 °F; 1040 °C}} |
+| SK 02a  | {{1940 °F; 1060 °C}} |
+| SK 01a  | {{1976 °F; 1080 °C}} |
+| SK 1a   | {{2012 °F; 1100 °C}} |
+| SK 2a   | {{2048 °F; 1120 °C}} |
+| SK 3a   | {{2084 °F; 1140 °C}} |
+| SK 4a   | {{2120 °F; 1160 °C}} |
+| SK 5a   | {{2156 °F; 1180 °C}} |
+| SK 6a   | {{2192 °F; 1200 °C}} |
+| SK 7    | {{2246 °F; 1230 °C}} |
+| SK 8    | {{2282 °F; 1250 °C}} |
+| SK 9    | {{2336 °F; 1280 °C}} |
+| SK 10   | {{2372 °F; 1300 °C}} |
+| SK 11   | {{2408 °F; 1320 °C}} |
+| SK 12   | {{2462 °F; 1350 °C}} |
+| SK 13   | {{2516 °F; 1380 °C}} |
+| SK 14   | {{2570 °F; 1410 °C}} |
+| SK 15   | {{2615 °F; 1435 °C}} |
+| SK 16   | {{2660 °F; 1460 °C}} |
+| SK 17   | {{2696 °F; 1480 °C}} |
+| SK 18   | {{2732 °F; 1500 °C}} |
+| SK 19   | {{2768 °F; 1520 °C}} |
+| SK 20   | {{2786 °F; 1530 °C}} |
 
-Every figure is nominal (JIS): the temperature the standard gives for the cone, as printed in Yuko Trading's table. The table does not print a heating rate. The standard gives reference temperatures. At a potter's rate of about 100 °C/h, Kyoto's municipal institute measured its own Kyoto cones bending 47–79 °C cooler than the JIS figure for the same number; we found no such measurements for SK cones to JIS. Set a witness cone and compare.
+모든 수치는 공칭(JIS)입니다. Yuko Trading의 표에 인쇄된 대로, 규격이 그 콘에 대해 제시하는 온도입니다. 이 표에는 승온 속도가 인쇄되어 있지 않습니다. 규격은 기준 온도를 제시합니다. 교토시의 공업 연구 기관은 도예가의 속도인 약 100 °C/h에서 자체 교토 콘이 같은 번호의 JIS 수치보다 47~79 °C 저온에서 휘는 것을 측정했습니다. JIS에 따른 SK 콘에 대해서는 그런 측정을 찾지 못했습니다. 확인용 콘을 놓고 비교해 보세요.
 
-### Kyoto cones
+### 교토 콘
 
-Kyoto cones (京都ゼーゲル), made by Kyoto's municipal institute, are no longer made: news reports say the institute ended production at the close of fiscal 2009. They carry the same numbers as SK cones to JIS but bend cooler: a Kyoto cone bends at about the temperature of the SK cone to JIS two or three numbers lower. A recipe from Kyoto that says "SK 8" may mean a Kyoto cone. The institute has published advice for potters moving from Kyoto cones to Orton cones, and substitutes Orton cone 10 for its own Kyoto SK 12; that is the institute's choice from its own measurements at 100 °C/h, and applies to no other cone.
+교토 콘(교토 제게르)은 교토시의 공업 연구 기관이 만들었지만 더 이상 생산되지 않습니다. 보도에 따르면 이 기관은 2009 회계연도 말에 생산을 마쳤습니다. JIS에 따른 SK 콘과 번호는 같지만 더 저온에서 휩니다. 교토 콘은 JIS에 따른 SK 콘 중 두세 단계 저온의 번호와 비슷한 온도에서 휩니다. 교토에서 온 레시피의 “SK 8”은 교토 콘을 뜻할 수 있습니다. 이 기관은 교토 콘에서 오튼 콘으로 바꾸는 도예가를 위한 안내를 발표했으며, 자체 교토 콘 SK 12 대신 오튼 콘 10을 쓰도록 합니다. 이는 100 °C/h에서 자체 측정한 결과에 따른 이 기관의 선택이며, 다른 어떤 콘에도 적용되지 않습니다.
 
-### Orton cones sold in Japan
+### 일본에서 파는 오튼 콘
 
-Orton self-supporting cones are sold in Japan under the name 立つゼーゲル ("standing Seger"), because they need no plaque or stand. They are Orton cones, with Orton's numbers and Orton's chart (above): fire to one only by its Orton number, and keep SK and Orton cones in separate packs, never in the same one.
+일본에서는 Orton 셀프 서포트 콘을 “서 있는 제게르”라는 이름으로 팝니다. 콘 받침대나 스탠드가 필요 없기 때문입니다. 이 콘은 오튼 콘이며, 번호도 온도표(위)도 Orton의 것입니다. 오튼 번호로만 소성을 정하고, SK 콘과 오튼 콘은 서로 다른 콘 세트에 두며 같은 콘 세트에는 절대 함께 넣지 마세요.
 
-### Sources for SK cones
+### SK 콘 출처
 
-- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (the SK table, checked 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
-- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (in force, reconfirmed 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
-- [Kyoto Municipal Institute of Industrial Technology and Culture: points to note when moving from Kyoto cones to Orton cones](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
+- [Yuko Trading (Yūkō Shōji Kabushikigaisha): Hyōjun yōtō ondo hyō (SK 표, 2026년 10월 14일 확인)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
+- [JSA: JIS R 8101:1999, Taikado shiken'yō hyōjun kōn (현행, 2023년 10월 20일 재확인)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
+- [Kyoto Municipal Institute of Industrial Technology and Culture: 교토 콘에서 오튼 콘으로 바꿀 때 유의할 점](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
 
 :::
 

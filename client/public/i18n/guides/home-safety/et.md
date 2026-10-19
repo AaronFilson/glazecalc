@@ -149,38 +149,38 @@ Pet Poison Helpline ütleb: „Plii on mürgine kõigile liikidele, kuid mürgis
 
 Kui lemmikloom võis töökojast midagi süüa või juua või tal ilmnevad ülalkirjeldatud tunnused, helistage oma loomaarstile või loomade mürgistusteabeliinile (vt tabelit lehe alguses), hoides käepärast tooraine nime ja lemmiklooma kehakaalu.
 
-## The kiln {#the-kiln lang=en}
+## Keraamikaahi {#the-kiln}
 
-### The outside gets hot enough to burn
+### Välispind on nii kuum, et võib tekitada põletushaavu
 
-A UK schools risk assessment says a kiln's outside "can reach 160 °C and possibly more" (about 320 °F), and a school kiln guide reports metal bands at up to 460 °F (about 240 °C). Skutt, a kiln maker, recommends a kiln room that can be locked against children and pets. Where a room cannot be locked, the school guide suggests a barrier such as a kiln safety screen.
+Ühendkuningriigi koolide riskihinnang ütleb, et ahju välispind „võib ulatuda 160 °C-ni ja võib-olla rohkemgi“ (umbes 320 °F), ning koolidele mõeldud ahjukäsiraamat teatab metallvöödest temperatuuriga kuni 460 °F (umbes 240 °C). Ahjutootja Skutt soovitab ahjuruumi, mida saab laste ja lemmikloomade eest lukustada. Kui ruumi ei saa lukustada, soovitab koolide ahjukäsiraamat tõket, näiteks ahju kaitsevõret.
 
-Small children and pets cannot understand a warning sign. We suggest keeping them behind a locked door or a barrier while the kiln fires and while it cools, and posting a warning sign for everyone else.
+Väikelapsed ja lemmikloomad ei saa hoiatussildist aru. See juhend soovitab hoida neid lukustatud ukse või tõkke taga nii põletuse kui ka jahtumise ajal ning panna kõigi teiste jaoks üles hoiatussildi.
 
-### Space around it
+### Ruum ahju ümber
 
-Sources disagree on clearance. Rio Grande says at least 12 inches (30 cm) from walls and anything combustible. L&L strongly recommends 18 inches (46 cm) to all walls, and the building code it cites asks for 3 feet (0.9 m) from combustible walls. Follow your kiln's manual and local fire code; if you are unsure, allow 18 inches from any wall and 3 feet from anything that can burn. In a garage, keep cars, fuel and paint well away.
+Ohutu vahekauguse kohta on allikad eri meelt. Rio Grande annab vahekauguseks seintest ja kõigest süttivast vähemalt 12 tolli (30 cm). L&L soovitab tungivalt 18 tolli (46 cm) kõigist seintest ja tema viidatud ehitusnorm nõuab süttivatest seintest 3 jalga (0,9 m). Järgige oma ahju kasutusjuhendit ja kohalikke tuleohutusnõudeid; kui te pole kindel, jätke igast seinast 18 tolli ja kõigest, mis võib põleda, 3 jalga. Garaažis hoidke autod, kütus ja värv ahjust kaugel.
 
-### Power
+### Toide
 
-Rio Grande recommends a **dedicated circuit** (one that powers nothing else) with a properly grounded outlet. We suggest no extension cord. Between firings, switch off the kiln's breaker or disconnect switch, or unplug it, so a child cannot start it.
+Rio Grande soovitab **eraldi kaitsmega toiteliini** (mis ei toida midagi muud) ja korralikult maandatud pistikupesa. See juhend soovitab mitte kasutada pikendusjuhet. Lülitage põletuste vahel ahju kaitselüliti või pealüliti välja või tõmmake pistik seinast, et laps ei saaks ahju käivitada.
 
-### Be there when the firing ends
+### Kohalolek põletuse lõpus
 
-A **kiln sitter** is the mechanical switch on many manual kilns: a small cone bends at the end of the firing and trips the switch off. Its manual says it "is NOT intended to perform as a fail-safe shut-off device." Rio Grande says never to leave a firing kiln unattended, "especially near the expected shut-off time". So stay nearby and check the kiln while it fires, above all near the end; fire only when an adult will be home and awake through the whole firing, check that it has switched off, and keep an ABC fire extinguisher in the kiln room. For how sitters, controllers and schedules work, see [Firing a basic kiln](/guides/firing).
+**Kiln-Sitter** on mehaaniline lüliti paljudel käsijuhtimisega ahjudel: põletuse lõpus paindub väike koonus{{en: cone}} ja lülitab ahju välja. Kiln-Sitteri kasutusjuhendis on kirjas, et see „EI OLE mõeldud rikkekindlaks väljalülitusseadmeks“. Rio Grande ütleb, et põletavat ahju ei tohi kunagi järelevalveta jätta, „eriti eeldatava väljalülitusaja lähedal“. Seega olge ahju lähedal ja kontrollige ahju põletuse ajal, eriti lõpu lähedal; põletage ainult siis, kui täiskasvanu on kodus ja kogu põletuse ajal ärkvel, kontrollige, et ahi on välja lülitunud, ja hoidke ahjuruumis ABC-tulekustutit. Kuidas Kiln-Sitterid, kontrollerid ja põletusprogrammid töötavad, vaadake juhendist [Põletamine lihtsas keraamikaahjus](/guides/firing).
 
-### Fumes and carbon monoxide
+### Ahjuaurud ja vingugaas
 
-Firing gives off fumes, so vent the kiln to the outdoors; [Safe mixing and ventilation](/guides/safe-mixing) explains how. A kiln in an attached garage needs venting that keeps fumes from reaching the house through the connecting door. Keep birds in a far room whenever the kiln fires.
+Põletamisel eraldub aure, seega juhtige ahju aurud õue; kuidas, seda selgitab juhend [Ohutu segamine ja ventilatsioon](/guides/safe-mixing). Majaga ühendatud garaažis asuv ahi vajab ventilatsiooni, mis ei lase aurudel ühendusukse kaudu majja jõuda. Hoidke linde alati põletuse ajal kaugemas ruumis.
 
-**Carbon monoxide** (CO) is a poisonous gas you cannot see or smell. A university kiln safety sheet requires CO alarms with gas kilns. Views differ for electric kilns, but burning off organic matter (in clay, or things like paper or wax) can make CO. We think a CO alarm in the kiln room and the rooms next to it is a sensible, inexpensive step for any kiln.
+**Vingugaas** (süsinikmonooksiid, CO) on mürgine gaas, mida ei näe ega tunne lõhna järgi. Ühe ülikooli ahjuohutuse infoleht nõuab gaasiahjude puhul vinguandureid. Elektriahjude kohta on arvamused erinevad, kuid orgaanilise aine (savis või näiteks paberis või vahas) väljapõlemisel võib tekkida vingugaasi. Selle juhendi hinnangul on vinguandur ahjuruumis ja sellega külgnevates ruumides iga ahju puhul mõistlik ja odav samm.
 
-### Peepholes and eyes
+### Vaateavad ja silmad
 
-Infrared light, which you cannot see, "starts at 752°F (400°C)", and the Ceramic Arts Network says looking into a kiln above this should always be done with eye protection. Infrared can damage the lens of the eye and lead to cataracts, and long gazing can injure the retina. Sunglasses and didymium glasses do not block it.
+Infrapunakiirgus, mida silm ei näe, „algab 752°F (400°C) juures“ ja Ceramic Arts Network ütleb, et sellest kõrgemal temperatuuril tuleks ahju sisse vaadata alati silmakaitsega. Infrapunakiirgus võib kahjustada silmaläätse ja põhjustada hallkae ning pikaajaline sissevaatamine võib kahjustada võrkkesta. Päikeseprillid ja didüümiumprillid seda kinni ei pea.
 
 > [!WARNING]
-> Children should not look into a kiln at all. A glowing peephole draws them, and they will not reliably keep protective glasses on, so keep them away while the kiln is hot. Adults should look only briefly, through IR-rated welding glasses. Sources recommend shades from 1.7 to 5; shade 3 is a sensible choice, darker if you see spots afterward.
+> Lapsed ei peaks ahju sisse üldse vaatama. Helendav vaateava tõmbab neid ja nad ei hoia kaitseprille usaldusväärselt ees, seega hoidke neid eemal, kuni ahi on kuum. Täiskasvanud peaksid vaatama ainult põgusalt, läbi IR-kaitsega keevitusprillide. Allikad soovitavad tumedusastmeid 1,7–5; tumedusaste 3 on mõistlik valik, või tumedam, kui näete pärast vaatamist silme ees täppe.
 
 ## Käsitsi valmistatud nõud pere toidulaual {#handmade-ware}
 

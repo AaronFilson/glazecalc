@@ -163,55 +163,55 @@ Label: Sieto akučių dydis
 | Glazūros su dažikliais{{en: colorants}}, pvz., kobaltu ar geležimi | 100–120 mesh          |
 | Pelenų glazūros ir kitos su stambiai maltomis žaliavomis           | 60–80 mesh            |
 
-## Specific gravity {#specific-gravity lang=en}
+## Santykinis tankis {#specific-gravity}
 
-**Specific gravity** (SG) tells you how much powder is in your slurry. It is the weight of a volume of glaze divided by the weight of the same volume of water. Water is 1.00, and a glaze at {{SG 1.45}} weighs 145 g per 100 mL. Mixing to a measured SG is how you get the same thickness, and the same coat, every time. It has no units, so it is the same in grams or ounces.
+**Santykinis tankis**{{en: specific gravity}} (angl. SG) parodo, kiek miltelių yra glazūros suspensijoje{{en: slurry}}. Tai tam tikro glazūros{{en: glaze}} tūrio masė, padalyta iš tokio pat vandens tūrio masės. Vandens santykinis tankis – 1,00, o glazūros, kurios rodmuo {{SG 1.45}}, 100 mL sveria 145 g. Maišydami iki išmatuoto santykinio tankio, kaskart gausite tą patį tirštumą ir tokį pat sluoksnį. Santykinis tankis neturi matavimo vienetų, todėl yra toks pat ir gramais, ir uncijomis.
 
-### Measure it by weighing 100 mL
+### Matavimas sveriant 100 mL
 
-1. Stir the glaze so nothing has settled.
-2. Put a 100 mL **graduated cylinder** (a tall, marked measuring tube) or a 100 mL syringe on the scale, and tare it.
-3. Fill it with glaze to exactly 100 mL, reading the mark at eye level.
-4. Weigh it and divide the grams by 100: 145 g is SG 1.45.
+1. Išmaišykite glazūrą, kad niekas nebūtų nusėdę.
+2. Ant svarstyklių padėkite 100 mL **matavimo cilindrą** (aukštą matavimo indą su padalomis) arba 100 mL švirkštą ir nunulinkite svarstykles.
+3. Pripildykite jį glazūros lygiai iki 100 mL žymos, žymą žiūrėdami akių lygyje.
+4. Pasverkite ir gramus padalykite iš 100: 145 g atitinka santykinį tankį 1,45.
 
-Digitalfire also marks a cup at the level of 500 g of water, fills it to the mark with glaze, and divides the weight by 500; a bigger, fuller measure is more accurate. A **hydrometer**, a float read where it sits in the glaze, is quick but can misread thick or gelled glazes. UK hydrometers, such as Potclays', read in degrees Baumé (°Bé). By our arithmetic, SG = 145 ÷ (145 − °Bé), so 46 °Bé is about 1.46. Older UK books give a **pint weight**, the ounces in an imperial pint of glaze: divide it by 20, so 29 oz is about SG 1.45 (also our arithmetic).
+Digitalfire taip pat pasižymi puodelyje 500 g vandens lygį, pripildo jį glazūros iki žymos ir masę padalija iš 500; didesnis ir pilnesnis matas yra tikslesnis. **Areometras** – plūdė, kurios rodmuo nuskaitomas pagal tai, kiek ji panyra glazūroje, – greitas, bet tirštose ar sutirštintose glazūrose gali rodyti netiksliai. Jungtinės Karalystės areometrai, pvz., Potclays, rodo Baumé laipsniais (°Bé). Mūsų skaičiavimu, santykinis tankis = 145 ÷ (145 − °Bé), taigi 46 °Bé atitinka maždaug 1,46. Senesnėse Jungtinės Karalystės knygose nurodoma **pintos masė** – kiek uncijų sveria imperinė pinta glazūros: padalykite ją iš 20, taigi 29 oz atitinka maždaug santykinį tankį 1,45 (tai irgi mūsų skaičiavimas).
 
-### What to aim for
+### Siektinos vertės
 
-Sources disagree, most of all on brushing and spraying, where the UK supplier Potclays gives much higher figures (its own are "for guidance only"). Treat every number as a starting point. Digitalfire's core advice is to find the SG and gelling that work for each glaze, then repeat them and write them down.
+Šaltiniai nesutaria, labiausiai dėl tepimo teptuku ir purškimo, kur Jungtinės Karalystės tiekėjas Potclays nurodo daug didesnes vertes (jo paties vertės – „tik orientacinės“). Kiekvieną skaičių laikykite atspirties tašku. Pagrindinis Digitalfire patarimas – kiekvienai glazūrai rasti tinkamą santykinį tankį ir sutirštinimą, tada juos kartoti ir užsirašyti.
 
-Table: Specific gravity targets, where sources disagree
-Label: Specific gravity targets
+Table: Siektinas santykinis tankis (šaltiniai nesutaria)
+Label: Siektinas santykinis tankis
 
-| Use      | Digitalfire and Glazy                                                                                                                 | Potclays (UK)                               | Safe starting point                                     |
-| -------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- | ------------------------------------------------------- |
-| Dipping  | {{SG 1.40}} (for a 5-second dip) to {{SG 1.50}} (for a 1-second dip); home-mixed glazes that are gelled do best at {{SG 1.43–1.45}}   | Clear {{SG 1.46–1.48}}; colored {{SG 1.61}} | {{SG 1.45}}; thin to {{SG 1.43}} and gel it if it drips |
-| Brushing | {{SG 1.25}} (thin clear) to {{SG 1.55}} (dark detail)                                                                                 | {{SG 1.71–1.81}}                            | Follow the product; use CMC gum or a brushing medium    |
-| Spraying | No figure; Hopper, writing for Ceramic Arts Network, says much thinner, with a deflocculant (an additive that makes a slurry runnier) | {{SG 1.71}}                                 | No reliable number; spray only in a spray booth         |
+| Paskirtis       | Digitalfire ir Glazy                                                                                                                                      | Potclays (JK)                                    | Saugus atspirties taškas                                                                       |
+| --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------ | ---------------------------------------------------------------------------------------------- |
+| Merkimas        | {{SG 1.40}} (merkiant 5 sekundes) – {{SG 1.50}} (merkiant 1 sekundę); namuose maišytoms sutirštintoms glazūroms geriausia {{SG 1.43–1.45}}                | Skaidri: {{SG 1.46–1.48}}; spalvota: {{SG 1.61}} | {{SG 1.45}}; jei varva, skieskite, kol rodmuo bus {{SG 1.43}}, ir sutirštinkite                |
+| Tepimas teptuku | {{SG 1.25}} (skysta skaidri) – {{SG 1.55}} (tamsios detalės)                                                                                              | {{SG 1.71–1.81}}                                 | Laikykitės produkto nurodymų; naudokite glazūros klijus CMC arba priemonę glazūravimui teptuku |
+| Purškimas       | Vertės nėra; Ceramic Arts Network straipsnyje (Hopper) rašoma: daug skystesnė, su deflokuliantu{{en: deflocculant}} (priedu, kuris suskystina suspensiją) | {{SG 1.71}}                                      | Patikimos vertės nėra; purkškite tik purškimo kameroje                                         |
 
-To check a dipping glaze by eye, AMACO dips for 5 seconds and looks for a coat about as thick as a US dime. Digitalfire fires tiles dipped for 5 seconds to check.
+AMACO glazūrą merkimui tikrina akimis: merkia 5 sekundes ir žiūri, ar sluoksnis maždaug tokio storio kaip JAV moneta dime. Digitalfire tikrinimui išdegina 5 sekundes merktus bandinius{{en: test tiles}}.
 
-### Water for a target SG: our estimate
+### Vanduo norimam santykiniam tankiui: mūsų įvertis
 
-The table below is our own arithmetic, not a source's. It assumes the powder's particles have a density of 2.6 g per cm³, which is an assumption, not a measurement. Clay, soluble materials and gelling all change a real glaze, so use it to start, then measure. As a check, it predicts {{SG 1.44}} for equal weights of powder and water, close to Digitalfire's measured {{SG 1.46}}. It also shows that 70 to 80 mL per 100 g starts you above {{SG 1.50}}, thicker than you need.
+Toliau pateikta lentelė – mūsų pačių skaičiavimas, ne šaltinio. Joje laikoma, kad miltelių dalelių tankis yra 2,6 g/cm³, – tai prielaida, o ne matavimas. Molis, tirpios žaliavos ir sutirštinimas keičia tikrą glazūrą, todėl lentele naudokitės pradžiai, o tada matuokite. Patikrinimui: vienodų miltelių ir vandens masių rodmuo pagal ją būtų {{SG 1.44}}, o Digitalfire išmatavo artimą – {{SG 1.46}}. Ji taip pat rodo, kad pradėjus nuo 70–80 mL 100 g rodmuo bus didesnis nei {{SG 1.50}} – glazūra bus tirštesnė, nei reikia.
 
-Table: Water for a target specific gravity (our estimate)
-Label: Water for a target specific gravity
+Table: Vanduo norimam santykiniam tankiui (mūsų įvertis)
+Label: Vanduo norimam santykiniam tankiui
 
-| Target      | Per 100 g of powder |  Per kilogram |         Per pound |
-| ----------- | ------------------: | ------------: | ----------------: |
-| {{SG 1.40}} |        about 115 mL | about 1150 mL | about 18 US fl oz |
-| {{SG 1.45}} |         about 98 mL |  about 980 mL | about 15 US fl oz |
-| {{SG 1.50}} |         about 85 mL |  about 850 mL | about 13 US fl oz |
-| {{SG 1.60}} |         about 64 mL |  about 640 mL | about 10 US fl oz |
+| Siektinas rodmuo | 100 g miltelių |   Kilogramui |            Svarui |
+| ---------------- | -------------: | -----------: | ----------------: |
+| {{SG 1.40}}      |    apie 115 mL | apie 1150 mL | apie 18 JAV fl oz |
+| {{SG 1.45}}      |     apie 98 mL |  apie 980 mL | apie 15 JAV fl oz |
+| {{SG 1.50}}      |     apie 85 mL |  apie 850 mL | apie 13 JAV fl oz |
+| {{SG 1.60}}      |     apie 64 mL |  apie 640 mL | apie 10 JAV fl oz |
 
-### Epsom salts, CMC gum and bentonite
+### Magnio sulfatas (Epsom druska), glazūros klijai CMC ir bentonitas
 
-**Epsom salts** make a glaze gel slightly when it stands still and flow again when it is stirred. This is called **flocculating** it, and a glaze that behaves this way is **thixotropic**: it goes on more evenly, drips less and settles less. Digitalfire suggests starting at about 2 g per gallon once the SG is right (roughly 0.5 g per liter, our conversion) and tuning the amount each time you mix, since no recipe should fix the dose. We suggest dissolving it in a little hot water first. In a Digitalfire example, a glaze at {{SG 1.45}} dripped, so water brought it down to {{SG 1.43}} and Epsom salts gelled it back to creamy, and it went on evenly. A rough check: stir, stop and watch. A gelled glaze moves on for about 2 or 3 seconds, then stops and springs back a little.
+**Magnio sulfatas (Epsom druska)** glazūrą, kai ji stovi ramiai, šiek tiek sutirština, o pamaišius ji vėl teka. Tai vadinama **flokuliacija**{{en: flocculating}}, o taip besielgianti glazūra yra **tiksotropinė**{{en: thixotropic}}: ji tolygiau dengiasi, mažiau varva ir mažiau nusėda. Digitalfire siūlo, kai santykinis tankis jau tinkamas, pradėti nuo maždaug 2 g galonui (mūsų perskaičiavimu, maždaug 0,5 g litrui) ir kiekį derinti kaskart maišant, nes dozės neturėtų nustatyti joks receptas. Siūlome druską pirmiausia ištirpinti nedideliame kiekyje karšto vandens. Digitalfire pavyzdyje glazūra ({{SG 1.45}}) varvėjo, todėl ją praskiedė vandeniu ({{SG 1.43}}), o Epsom druska vėl sutirštino iki kreminės konsistencijos, ir glazūra pasidengė tolygiai. Apytikris patikrinimas: išmaišykite, sustokite ir stebėkite. Sutirštinta glazūra dar maždaug 2 ar 3 sekundes juda, tada sustoja ir šiek tiek grįžta atgal.
 
-**CMC gum** (carboxymethyl cellulose) makes a slurry stickier and slower to dry, and leaves a harder coat that holds to the pot. It matters most for brushing glazes and glazes high in frit. Digitalfire's example blends 3.75 g into 1000 g of slurry, and it has to go in with a blender. A glaze with CMC will not gel with Epsom salts, and since microbes feed on the gum, it can change in the bucket and start to smell.
+**Glazūros klijai CMC** (karboksimetilceliuliozė) padaro suspensiją lipnesnę ir lėčiau džiūstančią bei palieka kietesnį sluoksnį, kuris laikosi ant dirbinio. Jie svarbiausi glazūroms tepimui teptuku ir glazūroms, kuriose daug frito{{en: frit}}. Digitalfire pavyzdyje į 1000 g suspensijos įmaišoma 3,75 g, ir tai būtina daryti trintuvu. Glazūra su CMC nuo Epsom druskos nesutirštėja, o kadangi klijais minta mikrobai, ji kibire gali pakisti ir pradėti dvokti.
 
-**Bentonite**, a very fine clay, helps hold the other particles in suspension. Dipping glazes usually rely on 15 to 25% raw clay for this. For a recipe short of clay, about 1 to 3% bentonite helps; Digitalfire says a glaze with more than 15% clay should not need bentonite at more than 1% of the dry glaze's weight.
+**Bentonitas** – labai smulkus molis – padeda kitoms dalelėms išsilaikyti suspensijoje. Glazūrose merkimui tam paprastai naudojama 15–25 % nedegto molio. Receptui, kuriame molio trūksta, padeda maždaug 1–3 % bentonito; pasak Digitalfire, glazūrai, kurioje yra daugiau kaip 15 % molio, neturėtų reikėti bentonito daugiau kaip 1 % sausos glazūros masės.
 
 ## Bandiniai ir linijinės bandinių serijos {#testing}
 

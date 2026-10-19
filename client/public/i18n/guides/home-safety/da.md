@@ -149,38 +149,38 @@ Pet Poison Helpline siger: »Bly er giftigt for alle arter, men unge og/eller un
 
 Hvis et kæledyr kan have spist eller drukket noget fra værkstedet, eller viser tegn som dem ovenfor, ring til dyrlægen eller en giftlinje for dyr (se tabellen øverst), med råvarens navn og dyrets vægt ved hånden.
 
-## The kiln {#the-kiln lang=en}
+## Keramikovnen {#the-kiln}
 
-### The outside gets hot enough to burn
+### Ydersiden bliver varm nok til at give forbrændinger
 
-A UK schools risk assessment says a kiln's outside "can reach 160 °C and possibly more" (about 320 °F), and a school kiln guide reports metal bands at up to 460 °F (about 240 °C). Skutt, a kiln maker, recommends a kiln room that can be locked against children and pets. Where a room cannot be locked, the school guide suggests a barrier such as a kiln safety screen.
+En britisk risikovurdering for skoler siger, at ydersiden af en keramikovn »kan nå 160 °C og muligvis mere« (omkring 320 °F), og en vejledning om keramikovne på skoler oplyser om metalbånd på op til 460 °F (omkring 240 °C). Ovnproducenten Skutt anbefaler et ovnrum, der kan låses af for børn og kæledyr. Hvor et rum ikke kan låses, foreslår skolevejledningen en afspærring, fx et sikkerhedsgitter omkring ovnen.
 
-Small children and pets cannot understand a warning sign. We suggest keeping them behind a locked door or a barrier while the kiln fires and while it cools, and posting a warning sign for everyone else.
+Små børn og kæledyr kan ikke forstå et advarselsskilt. Vi foreslår, at de holdes bag en låst dør eller en afspærring, mens der brændes, og mens ovnen køler af, og at der sættes et advarselsskilt op for alle andre.
 
-### Space around it
+### Plads omkring ovnen
 
-Sources disagree on clearance. Rio Grande says at least 12 inches (30 cm) from walls and anything combustible. L&L strongly recommends 18 inches (46 cm) to all walls, and the building code it cites asks for 3 feet (0.9 m) from combustible walls. Follow your kiln's manual and local fire code; if you are unsure, allow 18 inches from any wall and 3 feet from anything that can burn. In a garage, keep cars, fuel and paint well away.
+Kilderne er uenige om sikkerhedsafstanden. Rio Grande siger mindst 12 tommer (30 cm) fra vægge og alt brændbart. L&L anbefaler kraftigt 18 tommer (46 cm) til alle vægge, og de byggeregler, L&L henviser til, kræver 3 fod (0,9 m) fra brændbare vægge. Følg brugsanvisningen til ovnen og de lokale brandforskrifter; er man i tvivl, så hold 18 tommer fra enhver væg og 3 fod fra alt, der kan brænde. I en garage skal biler, brændstof og maling holdes et godt stykke væk.
 
-### Power
+### Strøm
 
-Rio Grande recommends a **dedicated circuit** (one that powers nothing else) with a properly grounded outlet. We suggest no extension cord. Between firings, switch off the kiln's breaker or disconnect switch, or unplug it, so a child cannot start it.
+Rio Grande anbefaler en **egen gruppe** (en gruppe, der ikke forsyner noget andet) med en korrekt jordet stikkontakt. Vi foreslår, at der ikke bruges forlængerledning. Slå ovnens sikring eller afbryder fra mellem brændingerne, eller tag stikket ud, så et barn ikke kan starte ovnen.
 
-### Be there when the firing ends
+### Vær til stede, når brændingen slutter
 
-A **kiln sitter** is the mechanical switch on many manual kilns: a small cone bends at the end of the firing and trips the switch off. Its manual says it "is NOT intended to perform as a fail-safe shut-off device." Rio Grande says never to leave a firing kiln unattended, "especially near the expected shut-off time". So stay nearby and check the kiln while it fires, above all near the end; fire only when an adult will be home and awake through the whole firing, check that it has switched off, and keep an ABC fire extinguisher in the kiln room. For how sitters, controllers and schedules work, see [Firing a basic kiln](/guides/firing).
+En **Kiln-Sitter** er den mekaniske afbryder på mange manuelt styrede ovne: En lille kegle{{en: cone}} bøjer ved brændingens slutning og slår afbryderen fra. Dens manual siger, at den »IKKE er beregnet til at fungere som en fejlsikker sikkerhedsafbryder«. Rio Grande siger, at man aldrig skal lade en ovn, der er i gang, stå uden opsyn, »især ikke omkring det forventede tidspunkt for slukning«. Bliv derfor i nærheden og kontrollér ovnen, mens den brænder, især hen mod slutningen; brænd kun, når en voksen er hjemme og vågen under hele brændingen, kontrollér, at ovnen er slukket, og hav en ABC-brandslukker i ovnrummet. Se [Brænding i en enkel ovn](/guides/firing) om, hvordan Kiln-Sitter, styring og brændekurve fungerer.
 
-### Fumes and carbon monoxide
+### Røggas og kulilte
 
-Firing gives off fumes, so vent the kiln to the outdoors; [Safe mixing and ventilation](/guides/safe-mixing) explains how. A kiln in an attached garage needs venting that keeps fumes from reaching the house through the connecting door. Keep birds in a far room whenever the kiln fires.
+Brænding afgiver røggas, så led ovnens aftræk ud i det fri; [Sikker blanding og ventilation](/guides/safe-mixing) forklarer hvordan. En keramikovn i en garage, der er bygget sammen med huset, skal have et aftræk, der forhindrer, at røggassen når ind i huset gennem døren mellem garage og hus. Hold fugle i et rum langt væk, når der brændes i ovnen.
 
-**Carbon monoxide** (CO) is a poisonous gas you cannot see or smell. A university kiln safety sheet requires CO alarms with gas kilns. Views differ for electric kilns, but burning off organic matter (in clay, or things like paper or wax) can make CO. We think a CO alarm in the kiln room and the rooms next to it is a sensible, inexpensive step for any kiln.
+**Kulilte** (CO) er en giftig gas, der hverken kan ses eller lugtes. Et universitets sikkerhedsark for keramikovne kræver kuliltealarmer ved gasovne. Meningerne er delte, når det gælder elektriske ovne, men når organisk materiale brænder af (i ler eller i ting som papir eller voks), kan der dannes CO. Vi mener, at en kuliltealarm i ovnrummet og i rummene ved siden af er et fornuftigt og billigt skridt ved enhver ovn.
 
-### Peepholes and eyes
+### Kighuller og øjne
 
-Infrared light, which you cannot see, "starts at 752°F (400°C)", and the Ceramic Arts Network says looking into a kiln above this should always be done with eye protection. Infrared can damage the lens of the eye and lead to cataracts, and long gazing can injure the retina. Sunglasses and didymium glasses do not block it.
+Infrarødt lys, som ikke kan ses, »begynder ved 752°F (400°C)«, og Ceramic Arts Network siger, at man altid bør bruge øjenbeskyttelse, når man kigger ind i en ovn over denne temperatur. Infrarødt lys kan skade øjets linse og føre til grå stær, og at stirre længe kan skade nethinden. Solbriller og didymiumbriller blokerer det ikke.
 
 > [!WARNING]
-> Children should not look into a kiln at all. A glowing peephole draws them, and they will not reliably keep protective glasses on, so keep them away while the kiln is hot. Adults should look only briefly, through IR-rated welding glasses. Sources recommend shades from 1.7 to 5; shade 3 is a sensible choice, darker if you see spots afterward.
+> Børn bør slet ikke kigge ind i en keramikovn. Et glødende kighul tiltrækker dem, og man kan ikke regne med, at de beholder beskyttelsesbrillerne på, så hold dem væk, mens ovnen er varm. Voksne bør kun kigge kortvarigt og gennem svejsebriller med IR-filter. Kilderne anbefaler beskyttelsestrin fra 1,7 til 5; beskyttelsestrin 3 er et fornuftigt valg, et mørkere trin, hvis man ser pletter bagefter.
 
 ## Hjemmelavet keramik på familiens bord {#handmade-ware}
 

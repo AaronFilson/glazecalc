@@ -272,6 +272,7 @@
     "numbers": {
       "heading": "Branje analize in mej",
       "analysis": "<b>Analiza in meje</b> pod receptom pokažeta mole, mol. % in masni % po žganju za vsak oksid, izgubo pri žarenju in izračunano toplotno raztezanje, ki je ocena za primerjavo glazur.",
+      "limits": "<b>Meje</b> primerjajo Segerjevo formulo s skupino mej: s stabilnimi mejami glazur, ki sta jih določila Hesselberth in Roy, razen če izberete Glazecalcove lastne (izbira se shrani z vašimi nastavitvami). Preverijo pas žganja, ki ga določa <b>Žganje</b> recepta: njegov stožec ali razpon. Razpon, ki prečka pasove, na primer stožec 6 do 10, prikaže preverjanji obeh pasov drug ob drugem. Če želite preveriti samo en pas, ga izberite v polju <b>Žganje</b> pri mejah, ki preglasi žganje recepta in se shrani z receptom. Vrednosti Hesselbertha in Roya veljajo za stožec 6 in stožec 10, zato pri nizkem žganju piše, da ne veljajo. So smernice, ne ocena »uspešno« ali »neuspešno«. Na vrhu ena vrstica primerja bor, kremen in glinico glazure z njenim žganjem po Katzovem pravilu za bor in vrednostih Hesselbertha in Roya, ne glede na to, katero skupino mej izberete: opombo poda samo, kadar se strinjata, da je glazura videti kot za drugo žganje, pove, kdaj ne more presoditi (svinec, litij, raku in podobno), in je smernica, ne preskus.",
       "stull": "<b>Stullov diagram</b> prikazuje kremenico glazure glede na njeno glinico, s Stullovimi območji mat, polmat in sijajno ter razponi skupine mej. Je vodilo za površino, ne napoved.",
       "slurry": "<b>Relativna gostota in voda</b> uporablja Brongniartovo formulo: stehtajte odmerjeno prostornino glazure, nato si oglejte suho glazuro v vedru, vodo, s katero jo dosežete na želeno relativno gostoto, ali vodo za novo mešanico. Gostote sledijo vaši nastavitvi za relativno gostoto, Baumé ali maso pinte."
     },
@@ -471,6 +472,7 @@
     "expansionRises": "Izračunano toplotno raztezanje naraste od {was} do {now}.",
     "expansionRisesProbably": "Če se je stara glazura komaj še ujemala z vašo glino, bodo v tej verjetno nastale lasaste razpoke, včasih šele čez nekaj tednov.",
     "expansionRisesMay": "Če se je stara glazura komaj še ujemala z vašo glino, lahko v tej nastanejo lasaste razpoke, včasih šele čez nekaj tednov.",
+    "expansionRisesFix": "Lasaste razpoke oslabijo izdelke in na površinah v stiku s hrano niso priporočljive. Če del natrija in kalija zamenjate s talili z manjšim raztezkom (bor, litij, magnezij ali kalcij), se toplotni raztezek zniža; včasih predlagajo dodajanje kremena, a se viri ne ujemajo.",
     "expansionFalls": "Izračunano toplotno raztezanje se zmanjša od {was} do {now}. Nekoliko nižje navadno bolje prepreči lasaste razpoke.",
     "expansionFallsProbably": "Pri precej nižjem se bo glazura verjetno luščila, z ostrimi drobci, ki odletijo z ustij in robov.",
     "expansionFallsCan": "Pri precej nižjem se glazura lahko lušči, z ostrimi drobci, ki odletijo z ustij in robov.",
@@ -596,6 +598,36 @@
     "firingFromBlock": "Po žganju recepta ({bands})",
     "bothBands": "Žganje recepta zajema {bands}, zato se vsako preveri posebej, drugo ob drugem: glazura se redko obnaša enako na obeh koncih.",
     "fromFiring": "Številke veljajo za žganje recepta: {band}. Zgoraj izberite žganje, če želite preveriti drugo."
+  },
+  "coneFit": {
+    "cooler": "Kemija te glazure bolj spominja na {looksLike, select, low {nizkotemperaturno} other {srednjetemperaturno}} glazuro kot na glazuro za navedeno žganje ({scale, select, band {{band, select, low {nizkotemperaturno žganje} mid {srednjetemperaturno žganje} other {visokotemperaturno žganje}}} sk {SK {cone}} temperature {{cone} °C} other {stožec {cone}}}).",
+    "coolerSoft": "Kemija te glazure se nagiba k hladnejšemu žganju od navedenega ({scale, select, band {{band, select, low {nizkotemperaturno žganje} mid {srednjetemperaturno žganje} other {visokotemperaturno žganje}}} sk {SK {cone}} temperature {{cone} °C} other {stožec {cone}}}), bližje stožcu 6, čeprav kemija sama razlikuje glazure za stožec 6 in stožec 10 le približno.",
+    "hotter": "Kemija te glazure bolj spominja na {looksLike, select, high {visokotemperaturno} other {srednjetemperaturno}} glazuro kot na glazuro za navedeno žganje ({scale, select, band {{band, select, low {nizkotemperaturno žganje} mid {srednjetemperaturno žganje} other {visokotemperaturno žganje}}} sk {SK {cone}} temperature {{cone} °C} other {stožec {cone}}}).",
+    "hotterSoft": "Kemija te glazure se nagiba k vročejšemu žganju od navedenega ({scale, select, band {{band, select, low {nizkotemperaturno žganje} mid {srednjetemperaturno žganje} other {visokotemperaturno žganje}}} sk {SK {cone}} temperature {{cone} °C} other {stožec {cone}}}), bližje stožcu 10, čeprav kemija sama razlikuje glazure za stožec 6 in stožec 10 le približno.",
+    "closer": "Od razpona, za katerega je navedena, je kemija te glazure bližje temu koncu: {scale, select, band {{band, select, low {nizkotemperaturno žganje} mid {srednjetemperaturno žganje} other {visokotemperaturno žganje}}} sk {SK {cone}} temperature {{cone} °C} other {stožec {cone}}}.",
+    "coolerSilica": "Vsebuje več bora ({boron}), kot ga glazure za to žganje ({scale, select, band {{band, select, low {nizkotemperaturno žganje} mid {srednjetemperaturno žganje} other {visokotemperaturno žganje}}} sk {SK {cone}} temperature {{cone} °C} other {stožec {cone}}}) običajno potrebujejo, in manj kremena ({silica}), kot ga običajno imajo.",
+    "coolerAlumina": "Vsebuje več bora ({boron}), kot ga glazure za to žganje ({scale, select, band {{band, select, low {nizkotemperaturno žganje} mid {srednjetemperaturno žganje} other {visokotemperaturno žganje}}} sk {SK {cone}} temperature {{cone} °C} other {stožec {cone}}}) običajno potrebujejo, in malo glinice ({alumina}).",
+    "coolerBoth": "Vsebuje več bora ({boron}), kot ga glazure za to žganje ({scale, select, band {{band, select, low {nizkotemperaturno žganje} mid {srednjetemperaturno žganje} other {visokotemperaturno žganje}}} sk {SK {cone}} temperature {{cone} °C} other {stožec {cone}}}) običajno potrebujejo, in manj kremena ({silica}) ter glinice ({alumina}), kot ju običajno imajo.",
+    "hotterSilica": "Vsebuje malo bora ({boron}) za to žganje ({scale, select, band {{band, select, low {nizkotemperaturno žganje} mid {srednjetemperaturno žganje} other {visokotemperaturno žganje}}} sk {SK {cone}} temperature {{cone} °C} other {stožec {cone}}}) in več kremena ({silica}), kot ga imajo glazure pri tem žganju običajno.",
+    "coolerEffect": "Pri tem žganju lahko steče ali se preveč stali: najprej žgite testno ploščico na podložni ploščici.",
+    "hotterEffect": "Pri tem žganju lahko ostane premalo žgana: suha, groba ali ne povsem zaprta. Preizkusno jo žgite, preden jo uporabite na izdelkih, še posebej preden jo uporabite tam, kjer se bo dotikala hrana ali pijača.",
+    "hotterEffectSoft": "Nekatere glazure se pri tem žganju stalijo brez bora, zato je to le namig: na testni ploščici preverite, ali se popolnoma stali.",
+    "gerstley": "Del njenega bora izvira iz Gerstley borata, ki se od serije do serije razlikuje, zato je ta podatek manj zanesljiv.",
+    "guide": "To primerja kemijo z objavljenimi vrednostmi: je smernica, ne preskus. Če se je glazura pri tem stožcu pri vas dobro žgala, zaupajte svojim testnim ploščicam.",
+    "fits": "Njen bor, kremen in glinica ne kažejo proč od žganja ({scale, select, band {{band, select, low {nizkotemperaturno žganje} mid {srednjetemperaturno žganje} other {visokotemperaturno žganje}}} sk {SK {cone}} temperature {{cone} °C} other {stožec {cone}}}). To je smernica, ne preskus: ne pove ničesar o tem, ali je glazura stabilna ali varna za stik s hrano.",
+    "sources": "Viri:",
+    "skip": {
+      "lead": "Glazecalc ne more primerjati kemije te glazure z njenim žganjem: velik del njene taline prihaja iz svinca, ki ga objavljene vrednosti, uporabljene pri tem preverjanju, ne zajemajo.",
+      "lithium": "Glazecalc ne more primerjati kemije te glazure z njenim žganjem: velik del njene taline prihaja iz litija, ki ga objavljene vrednosti, uporabljene pri tem preverjanju, ne zajemajo.",
+      "alkali": "Glazecalc ne more primerjati kemije te glazure z njenim žganjem: velik del njene taline prihaja iz natrija in kalija, ki ju objavljene vrednosti, uporabljene pri tem preverjanju, ne zajemajo.",
+      "zinc": "Glazecalc ne more primerjati kemije te glazure z njenim žganjem: vsebuje veliko cinka, kot kristalne glazure, ki ga objavljene vrednosti, uporabljene pri tem preverjanju, ne zajemajo.",
+      "notGlaze": "Glazecalc ne more primerjati kemije te glazure z njenim žganjem: njena formula ni formula običajne glazure (zelo malo ali zelo veliko kremena ali veliko barvnih oksidov), zato objavljene vrednosti, uporabljene pri tem preverjanju, zanjo ne ustrezajo.",
+      "process": "Glazecalc ne more primerjati kemije te glazure z njenim žganjem: namenjena je {process, select, raku {raku žganju} salt {žganju s soljo} soda {žganju s sodo} wood {žganju na drva} other {jamskemu žganju}}, kjer peč opravi del glaziranja, česar objavljene vrednosti, uporabljene pri tem preverjanju, ne zajemajo.",
+      "ash": "Glazecalc ne more primerjati kemije te glazure z njenim žganjem: vsebuje pepel, katerega sestava je preveč spremenljiva za objavljene vrednosti, uporabljene pri tem preverjanju.",
+      "noTemperature": "Glazecalc ne more primerjati kemije te glazure z navedenim žganjem ({scale, select, band {{band, select, low {nizkotemperaturno žganje} mid {srednjetemperaturno žganje} other {visokotemperaturno žganje}}} sk {SK {cone}} temperature {{cone} °C} other {stožec {cone}}}): za ta stožec ni izmerjene temperature.",
+      "between": "Glazecalc ne more primerjati kemije te glazure z navedenim žganjem ({scale, select, band {{band, select, low {nizkotemperaturno žganje} mid {srednjetemperaturno žganje} other {visokotemperaturno žganje}}} sk {SK {cone}} temperature {{cone} °C} other {stožec {cone}}}): objavljene vrednosti, uporabljene pri tem preverjanju, so za nizkotemperaturno ter srednje- in visokotemperaturno žganje, ne za stožce vmes (od 01 do 3).",
+      "belowChart": "Glazecalc ne more primerjati kemije te glazure z navedenim žganjem ({scale, select, band {{band, select, low {nizkotemperaturno žganje} mid {srednjetemperaturno žganje} other {visokotemperaturno žganje}}} sk {SK {cone}} temperature {{cone} °C} other {stožec {cone}}}): Katzovo pravilo za bor velja za stožce od 06 do 10, to žganje pa je hladnejše."
+    }
   },
   "stull": {
     "heading": "Stullov diagram",
@@ -902,6 +934,7 @@
     "foodSurface": "Za površino v stiku z živili (notranja glazura)",
     "liner": {
       "note": "Primernost za stik z živili je odvisna od tega, ali to glazuro žgete do stožca, pri katerem je bila preizkušena: premalo žgana glazura lahko sprošča kovine.",
+      "range": "Žganje te glazure je podano kot razpon, zato jo preizkusite na spodnjem koncu razpona, kjer se najmanj tali.",
       "untested": "Noben stožec še ni označen kot preizkušen.",
       "test": "Le preskus sproščanja kovin iz vaših lastnih žganih izdelkov pokaže, ali je primerna za stik z živili."
     },
@@ -964,5 +997,23 @@
     "replaceAsk": "Kot preizkušeno je označeno {now}. Želite to zamenjati s stožci, ki jih navajajo dnevniki ({logs})?",
     "replace": "Zamenjaj",
     "keep": "Pusti, kot je"
+  },
+  "coneCards": {
+    "heading": "Rezultati po stožcih",
+    "unplaced": "Ni uvrščeno k stožcu",
+    "unplacedNote": "Ti dnevniki žganja še niso uvrščeni k stožcu: izberite, kje je bil vsak žgan.",
+    "approx": "≈ {temperature}",
+    "cautions": "{count, plural, =0 {brez opozoril o mejah} one {# opozorilo o meji} two {# opozorili o meji} few {# opozorila o meji} other {# opozoril o meji}}",
+    "logs": "{count, plural, =0 {brez dnevnikov žganja} one {# dnevnik žganja} two {# dnevnika žganja} few {# dnevniki žganja} other {# dnevnikov žganja}}",
+    "outside": "zunaj navedenega žganja",
+    "outsideChoice": "{place} (zunaj navedenega žganja)",
+    "summaryLabel": "Kako je izpadlo: {place}",
+    "summaryPlaceholder": "Površina, barva, tečenje, lasaste razpoke...",
+    "noAtmosphere": "atmosfera ni navedena",
+    "placeLabel": "Kje je bil žgan: {title}",
+    "notPlaced": "Ni uvrščeno",
+    "add": "Dodaj rezultat za",
+    "addButton": "Dodaj",
+    "saveFailed": "Mesta žganja dnevnika žganja ni bilo mogoče shraniti."
   }
 }

@@ -149,38 +149,38 @@ A Pet Poison Helpline szerint „az ólom minden állatfajra mérgező, de a mé
 
 Ha egy háziállat ehetett vagy ihatott valamit a műhelyből, vagy a fentiekhez hasonló jeleket mutat, hívja fel az állatorvosát vagy egy állatmérgezési segélyvonalat (lásd a táblázatot az oldal tetején), és legyen kéznél a nyersanyag neve és az állat testsúlya.
 
-## The kiln {#the-kiln lang=en}
+## A kemence {#the-kiln}
 
-### The outside gets hot enough to burn
+### A külseje annyira felforrósodik, hogy megégethet
 
-A UK schools risk assessment says a kiln's outside "can reach 160 °C and possibly more" (about 320 °F), and a school kiln guide reports metal bands at up to 460 °F (about 240 °C). Skutt, a kiln maker, recommends a kiln room that can be locked against children and pets. Where a room cannot be locked, the school guide suggests a barrier such as a kiln safety screen.
+Egy brit iskolai kockázatértékelés szerint a kemence külső felülete „elérheti a 160 °C-ot, esetleg többet is” (kb. 320 °F), egy iskolai kemencekezelési útmutató pedig legfeljebb 460 °F-os (kb. 240 °C) fémpántokról számol be. A Skutt kemencegyártó olyan kemencehelyiséget ajánl, amely a gyermekek és a háziállatok elől bezárható. Ahol a helyiség nem zárható, az iskolai útmutató valamilyen elzárást javasol, például a kemence köré állítható védőrácsot.
 
-Small children and pets cannot understand a warning sign. We suggest keeping them behind a locked door or a barrier while the kiln fires and while it cools, and posting a warning sign for everyone else.
+A kisgyermekek és a háziállatok nem tudják megérteni a figyelmeztető táblát. Javasoljuk, hogy égetés és hűlés közben tartsa őket bezárt ajtó vagy elzárás mögött, mindenki más számára pedig tegyen ki figyelmeztető táblát.
 
-### Space around it
+### Hely a kemence körül
 
-Sources disagree on clearance. Rio Grande says at least 12 inches (30 cm) from walls and anything combustible. L&L strongly recommends 18 inches (46 cm) to all walls, and the building code it cites asks for 3 feet (0.9 m) from combustible walls. Follow your kiln's manual and local fire code; if you are unsure, allow 18 inches from any wall and 3 feet from anything that can burn. In a garage, keep cars, fuel and paint well away.
+A források eltérnek a védőtávolságot illetően. A Rio Grande szerint legalább 12 hüvelyk (30 cm) kell a falaktól és minden éghető anyagtól. Az L&L nyomatékosan 18 hüvelyket (46 cm) ajánl minden faltól, az általa idézett építési előírás pedig 3 láb (0,9 m) távolságot kér az éghető falaktól. Kövesse a kemencéje kezelési útmutatóját és a helyi tűzvédelmi előírásokat; ha bizonytalan, hagyjon 18 hüvelyket minden faltól és 3 lábat mindentől, ami éghet. Garázsban az autókat, az üzemanyagot és a festéket tartsa jó messze.
 
-### Power
+### Áramellátás
 
-Rio Grande recommends a **dedicated circuit** (one that powers nothing else) with a properly grounded outlet. We suggest no extension cord. Between firings, switch off the kiln's breaker or disconnect switch, or unplug it, so a child cannot start it.
+A Rio Grande **külön áramkört** ajánl (amelyről semmi más nem kap áramot), szabályosan földelt aljzattal. Azt javasoljuk, hogy ne használjon hosszabbítót. Két égetés között kapcsolja le a kemence kismegszakítóját vagy leválasztó kapcsolóját, vagy húzza ki a csatlakozóját, hogy egy gyermek ne tudja elindítani.
 
-### Be there when the firing ends
+### Legyen jelen az égetés végén
 
-A **kiln sitter** is the mechanical switch on many manual kilns: a small cone bends at the end of the firing and trips the switch off. Its manual says it "is NOT intended to perform as a fail-safe shut-off device." Rio Grande says never to leave a firing kiln unattended, "especially near the expected shut-off time". So stay nearby and check the kiln while it fires, above all near the end; fire only when an adult will be home and awake through the whole firing, check that it has switched off, and keep an ABC fire extinguisher in the kiln room. For how sitters, controllers and schedules work, see [Firing a basic kiln](/guides/firing).
+A **Kiln-Sitter** (gúlás lekapcsoló) sok vezérlő nélküli, kézi kapcsolású kemence mechanikus kapcsolója: az égetés végén egy kis gúla{{en: cone}} meghajlik, és kioldja a kapcsolót. A kezelési útmutatója szerint „NEM arra szolgál, hogy hibabiztos lekapcsoló berendezésként működjön”. A Rio Grande szerint égető kemencét soha nem szabad felügyelet nélkül hagyni, „különösen a várható lekapcsolási idő közelében”. Ezért maradjon a közelben, és égetés közben ellenőrizze a kemencét, különösen a vége felé; csak akkor égessen, ha egy felnőtt otthon lesz, és az egész égetés alatt ébren lesz, ellenőrizze, hogy a kemence kikapcsolt-e, és tartson ABC tűzoltó készüléket a kemencehelyiségben. A Kiln-Sitterek, a vezérlők és az égetési programok működéséről az [Égetés egyszerű kemencében](/guides/firing) című útmutató szól.
 
-### Fumes and carbon monoxide
+### Füstgázok és szén-monoxid
 
-Firing gives off fumes, so vent the kiln to the outdoors; [Safe mixing and ventilation](/guides/safe-mixing) explains how. A kiln in an attached garage needs venting that keeps fumes from reaching the house through the connecting door. Keep birds in a far room whenever the kiln fires.
+Égetés közben füstgázok keletkeznek, ezért a kemence füstgázait vezesse a szabadba; hogy hogyan, azt a [Biztonságos keverés és szellőzés](/guides/safe-mixing) című útmutató írja le. A házhoz csatlakozó garázsban álló kemencénél olyan elszívás kell, amely megakadályozza, hogy a füstgázok az összekötő ajtón át a lakásba jussanak. Amikor a kemence éget, a madarakat mindig tartsa egy távoli szobában.
 
-**Carbon monoxide** (CO) is a poisonous gas you cannot see or smell. A university kiln safety sheet requires CO alarms with gas kilns. Views differ for electric kilns, but burning off organic matter (in clay, or things like paper or wax) can make CO. We think a CO alarm in the kiln room and the rooms next to it is a sensible, inexpensive step for any kiln.
+A **szén-monoxid** (CO) mérgező gáz, amelyet nem lehet sem látni, sem szagolni. Egy egyetem kemencebiztonsági lapja gázkemencék mellé előírja a szén-monoxid-érzékelőt. Elektromos kemencéknél megoszlanak a vélemények, de a szerves anyagok (az agyagban lévők, vagy például a papír vagy a viasz) kiégése is termelhet szén-monoxidot. Úgy gondoljuk, hogy a kemencehelyiségben és a szomszédos helyiségekben elhelyezett szén-monoxid-érzékelő bármilyen kemencénél észszerű, olcsó lépés.
 
-### Peepholes and eyes
+### A kémlelőnyílás és a szem
 
-Infrared light, which you cannot see, "starts at 752°F (400°C)", and the Ceramic Arts Network says looking into a kiln above this should always be done with eye protection. Infrared can damage the lens of the eye and lead to cataracts, and long gazing can injure the retina. Sunglasses and didymium glasses do not block it.
+A szabad szemmel nem látható infravörös sugárzás „752°F (400°C) hőmérsékleten kezdődik”, és a Ceramic Arts Network szerint efölött a kemencébe mindig szemvédővel kellene benézni. Az infravörös sugárzás károsíthatja a szemlencsét és szürkehályoghoz vezethet, a hosszas belenézés pedig a retinát sértheti meg. A napszemüveg és a didímiumos szemüveg nem szűri ki.
 
 > [!WARNING]
-> Children should not look into a kiln at all. A glowing peephole draws them, and they will not reliably keep protective glasses on, so keep them away while the kiln is hot. Adults should look only briefly, through IR-rated welding glasses. Sources recommend shades from 1.7 to 5; shade 3 is a sensible choice, darker if you see spots afterward.
+> Gyermekeknek egyáltalán nem kellene benézniük a kemencébe. Az izzó kémlelőnyílás vonzza őket, és nem fogják megbízhatóan magukon tartani a védőszemüveget, ezért tartsa távol őket, amíg a kemence forró. Felnőtteknek csak röviden kellene benézniük, IR-szűrős hegesztőszemüvegen át. A források 1,7 és 5 közötti védőfokozatot ajánlanak; a 3-as védőfokozat észszerű választás, ha pedig utána foltokat lát, sötétebb.
 
 ## Kézműves edények a családi asztalon {#handmade-ware}
 

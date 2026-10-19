@@ -165,69 +165,69 @@ Aspettarsi delle differenze: secondo Orton, «Di solito si vede almeno un cono d
 
 :::orton
 
-## The kiln sitter {#kiln-sitter lang=en}
+## Il kiln sitter {#kiln-sitter}
 
-A **kiln sitter** is the mechanical switch, on the outside of many basic and older kilns, that turns the kiln off when a small cone bends. The best known is the Dawson Kiln-Sitter. It makes firing easier, but it is a convenience, not a safety device.
+Il **kiln sitter** è l’interruttore meccanico, montato all’esterno di molti forni semplici e meno recenti, che spegne il forno quando un piccolo cono{{en: cone}} si piega. Il più noto è il Kiln-Sitter di Dawson. Rende la cottura più semplice, ma è una comodità, non un dispositivo di sicurezza.
 
-### How it works
+### Come funziona
 
-A porcelain tube reaches into the kiln. At its end, a small cone or a bar lies across two metal supports, under a **sensing rod** that pivots like a seesaw. Outside the kiln, the other end of the rod holds up a weight by a small claw. When the cone softens and bends to about 90°, the rod drops far enough to release the weight, the weight falls, and the power to the elements is cut.
+Un tubo di porcellana entra nel forno. Alla sua estremità, un cono piccolo o una barretta poggia di traverso su due supporti metallici, sotto un’**astina sensore** che fa perno come un’altalena a bilico. Fuori dal forno, l’altra estremità dell’astina regge un peso tramite un piccolo gancio. Quando il cono si ammorbidisce e si piega fino a circa 90°, l’astina scende abbastanza da liberare il peso, il peso cade e la corrente alle resistenze viene interrotta.
 
-Small cones and bars "give equivalent heat treatment". Orton notes that many beginners choose bars, because their even shape makes it easy to place them the same way every time. A small cone tapers, so where it sits matters: with its thin part under the rod the kiln shuts off cooler, and with its thick part hotter, a shift of "as much as 1/2 cone".
+I coni piccoli e le barrette «danno un trattamento termico equivalente». Orton nota che molti principianti scelgono le barrette, perché la loro forma uniforme rende facile posizionarle ogni volta nello stesso modo. Un cono piccolo si assottiglia verso la punta, quindi conta come è appoggiato: con la parte sottile sotto l’astina il forno si spegne a una temperatura più bassa, e con la parte spessa a una più alta, con uno scarto «fino a 1/2 cono».
 
-### Which cone goes in the sitter
+### Quale cono mettere nel kiln sitter
 
-Sources disagree. Dawson, who made the sitter, says to use the same number as the firing cone on the shelf, and to go one number hotter only if the shelf cone stays unbent. L&L says to use one number hotter than the shelf cones, because the sitter sits near the wall and the elements, gets more heat, and tends to shut off early. Orton settles the principle: "The shelf cone is the final judge of the firing process, not the Kiln-Sitter cone or bar."
-
-> [!NOTE]
-> Our starting point: put a small cone of the same number as your target in the sitter, with a cone pack on the shelf. If the shelf firing cone is under-bent when the kiln shuts off, go one number hotter in the sitter next time, or set the thicker part of the cone under the rod. If it is over-bent, do the opposite.
-
-### Setting it up, and checks before every firing
-
-Dawson's procedure, which doubles as a check before every firing:
-
-1. Turn all the switches off. Check that the sensing rod moves freely, sits centered in the tube and is not bent or corroded. If it is sluggish, Dawson says to replace the tube assembly.
-2. Brush a thin coat of high-fire **kiln wash** (a coating that stops melted material sticking) onto the cone supports and the rod where it touches the cone. Never put wash on the cone or the porcelain tube.
-3. Load shelves and ware at least 1 in (25 mm) above or below the tube, so nothing can touch, fall against or block it.
-4. Lift the weight, press the claw down onto the trigger, and lay the cone or bar flat on the supports against the metal step, as your sitter's manual shows, the same way every time. Check it again before closing the lid: "AN IMPROPERLY PLACED CONE OR BAR COULD CAUSE AN OVERFIRING."
-5. Set the limit timer and push in the plunger until it locks. Keep the kiln level and the space under the weight clear, so the weight can fall.
-
-### The limit timer
-
-Many sitters, including Dawson's LT models, have a **limit timer**: a clock that turns the kiln off after a set time, as a backup "in case the KILN-SITTER fails". It should always be set longer than the firing is expected to take. Sources set the margin differently:
-
-Table: How long to set the limit timer
-Label: Limit timer settings
-
-| Source    | Setting                                                                                                                |
-| --------- | ---------------------------------------------------------------------------------------------------------------------- |
-| Dawson    | ½ hour longer than the expected firing time until you know the kiln, later ¼ hour longer; never set it beyond 20 hours |
-| L&L       | Very high the first time, noting how long the firing takes; after that, about 1 hour longer                            |
-| Bracker's | 30 minutes to 1 hour longer than the firing time                                                                       |
+Le fonti non sono d’accordo. Dawson, produttore del kiln sitter, dice di usare lo stesso numero del cono di cottura sulla piastra, e di passare a un numero più caldo solo se il cono sulla piastra resta dritto. L&L dice di usare un numero più caldo dei coni sulla piastra, perché il kiln sitter si trova vicino alla parete e alle resistenze, riceve più calore e tende a spegnere il forno in anticipo. Orton fissa il principio: «È il cono sulla piastra il giudice finale del processo di cottura, non il cono o la barretta del Kiln-Sitter».
 
 > [!NOTE]
-> Our starting point: generous the first time (within the dial's 20 hours), then ½ to 1 hour longer than the time you recorded. The timer also tells you how long a firing took: set at 7 and ending at 1 means 6 hours.
+> Il nostro punto di partenza: mettere nel kiln sitter un cono piccolo dello stesso numero dell’obiettivo, con una terna di coni sulla piastra. Se, quando il forno si spegne, il cono di cottura sulla piastra è piegato troppo poco, la volta successiva usare nel kiln sitter un numero più caldo, oppure mettere sotto l’astina la parte più spessa del cono. Se è piegato troppo, fare il contrario.
 
-### When it shuts off early or late
+### Preparazione e controlli prima di ogni cottura
 
-After each firing, read the sitter cone beside the shelf cones.
+La procedura di Dawson, che serve anche da controllo prima di ogni cottura:
 
-Table: Reading the sitter after a firing
-Label: Kiln sitter problems
+1. Spegnere tutti i commutatori. Verificare che l’astina sensore si muova liberamente, sia centrata nel tubo e non sia piegata o corrosa. Se si muove a fatica, Dawson dice di sostituire il gruppo del tubo.
+2. Stendere a pennello uno strato sottile di **protettivo per piastre** per alta temperatura (un rivestimento che impedisce al materiale fuso di attaccarsi) sui supporti del cono e sull’astina, nel punto in cui tocca il cono. Non mettere mai il protettivo sul cono o sul tubo di porcellana.
+3. Caricare piastre e pezzi almeno 1 pollice (25 mm) sopra o sotto il tubo, in modo che niente possa toccarlo, cadergli contro o bloccarlo.
+4. Sollevare il peso, premere il gancio sul grilletto e appoggiare il cono o la barretta in piano sui supporti, contro il gradino metallico, come mostra il manuale del kiln sitter, ogni volta nello stesso modo. Ricontrollarlo prima di chiudere il coperchio: «UN CONO O UNA BARRETTA POSIZIONATI MALE POSSONO CAUSARE UNA SOVRACOTTURA».
+5. Impostare il timer di sicurezza e premere il pulsante finché non resta bloccato. Tenere il forno in piano e lo spazio sotto il peso libero, in modo che il peso possa cadere.
 
-| What you see                                    | Likely cause                                                                                           | What to do                                                       |
-| ----------------------------------------------- | ------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------- |
-| Sitter tripped, shelf firing cone under-bent    | The sitter ran hotter than the shelf (it sits near the wall)                                           | One cone hotter in the sitter, or the thicker part under the rod |
-| Sitter cone sagged well past 90°                | The kiln climbed too fast near the end                                                                 | Lower the switch settings, so the climb is slower (Dawson)       |
-| Sitter cone did not bend, or melted into a blob | The sitter itself: poor adjustment, a bent or corroded rod, or something lodged in or against the tube | Check and adjust the sitter by its manual before firing again    |
-| Early or late every time                        | Out of adjustment, or a worn rod                                                                       | Check with the firing gauge; move the trigger plate              |
+### Il timer di sicurezza
 
-To check the adjustment, Dawson uses a **firing gauge** that holds the rod where a fully bent cone would leave it; there should then be "1/16th-inch clearance" (about 1.6 mm) at the claw. Check it every 30 firings. Ceramics Monthly's rule: if the kiln shuts off early, move the trigger plate up slightly; if late, move it down slightly. Whatever the sitter does, "Always trust large witness cones over small sitter cones."
+Molti kiln sitter, compresi i modelli LT di Dawson, hanno un **timer di sicurezza**: un orologio che spegne il forno dopo un tempo impostato, come riserva «nel caso in cui il KILN-SITTER non funzioni». Va sempre impostato su un tempo più lungo della durata prevista della cottura. Le fonti fissano il margine in modo diverso:
+
+Table: Per quanto tempo impostare il timer di sicurezza
+Label: Impostazioni del timer di sicurezza
+
+| Fonte     | Impostazione                                                                                                                         |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| Dawson    | ½ ora in più della durata prevista della cottura finché non si conosce il forno, poi ¼ d’ora in più; non impostarlo mai oltre 20 ore |
+| L&L       | Molto alto la prima volta, annotando quanto dura la cottura; in seguito, circa 1 ora in più                                          |
+| Bracker’s | Da 30 minuti a 1 ora in più della durata della cottura                                                                               |
+
+> [!NOTE]
+> Il nostro punto di partenza: abbondante la prima volta (entro le 20 ore del quadrante), poi da ½ a 1 ora in più del tempo annotato. Il timer indica anche quanto è durata una cottura: impostato su 7 e fermo su 1 significa 6 ore.
+
+### Quando spegne troppo presto o troppo tardi
+
+Dopo ogni cottura, leggere il cono del kiln sitter insieme ai coni sulla piastra.
+
+Table: Leggere il kiln sitter dopo una cottura
+Label: Problemi del kiln sitter
+
+| Che cosa si vede                                                        | Causa probabile                                                                                                            | Che cosa fare                                                                           |
+| ----------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| Kiln sitter scattato, cono di cottura sulla piastra piegato troppo poco | Il kiln sitter era più caldo della piastra (si trova vicino alla parete)                                                   | Un cono più caldo nel kiln sitter, o la parte più spessa sotto l’astina                 |
+| Cono del kiln sitter afflosciato ben oltre i 90°                        | Il forno è salito troppo in fretta verso la fine                                                                           | Abbassare le posizioni dei commutatori, così la salita è più lenta (Dawson)             |
+| Cono del kiln sitter non piegato, o fuso in una goccia                  | Il kiln sitter stesso: regolazione sbagliata, un’astina piegata o corrosa, o qualcosa incastrato nel tubo o contro di esso | Controllare e regolare il kiln sitter seguendo il suo manuale prima di cuocere di nuovo |
+| Troppo presto o troppo tardi ogni volta                                 | Fuori regolazione, o un’astina consumata                                                                                   | Controllare con il calibro; spostare la piastrina di sgancio                            |
+
+Per controllare la regolazione, Dawson usa un **calibro** che tiene l’astina nella posizione in cui la lascerebbe un cono completamente piegato; a quel punto al gancio deve esserci «un gioco di 1/16 di pollice» (circa 1,6 mm). Controllarla ogni 30 cotture. La regola di Ceramics Monthly: se il forno si spegne troppo presto, alzare leggermente la piastrina di sgancio; se si spegne troppo tardi, abbassarla leggermente. Qualunque cosa faccia il kiln sitter, «Fidarsi sempre dei grandi coni testimone{{en: witness cones}} più che dei piccoli coni del kiln sitter».
 
 > [!WARNING]
-> **A kiln sitter is not a safety device.** Dawson's manual says it "is NOT intended to perform as a fail-safe shut-off device and your kiln should NOT be left unattended beyond the estimated firing time." Something as simple as greenware falling against the tube "might cause an over-firing". Be there to check the kiln when it should be finishing, and never fire it over or near anything that burns, such as a wood floor or carpet.
+> **Il kiln sitter non è un dispositivo di sicurezza.** Il manuale di Dawson dice che «NON è destinato a funzionare come dispositivo di spegnimento a prova di guasto e il forno NON deve essere lasciato incustodito oltre la durata stimata della cottura». Anche una cosa semplice come un pezzo crudo{{en: greenware}} che cade contro il tubo «potrebbe causare una sovracottura». Essere presenti per controllare il forno quando la cottura dovrebbe finire, e non cuocere mai sopra o vicino a qualcosa che brucia, come un pavimento di legno o una moquette.
 
-The sitter is built for firings "up to and including Cone 8". It cannot hold a temperature or cool slowly by itself. With practice and a log, though, you can "become the controller", as Digitalfire puts it: watch the cones and turn the switches by hand.
+Il kiln sitter è costruito per cotture «fino al cono 8 compreso». Da solo non può mantenere una temperatura né raffreddare lentamente. Con la pratica e un registro, però, si può «diventare la centralina», come dice Digitalfire: osservare i coni e girare i commutatori a mano.
 
 :::
 
@@ -281,92 +281,92 @@ La **correzione del cono** (offset) è un’impostazione della centralina che al
 
 :::sk
 
-## Firing to SK cones {#sk-cones lang=en}
+## Cuocere a coni SK {#sk-cones}
 
-SK cones are the pyrometric cones made to Japan's standard, JIS R 8101, and sold in Japan by dealers such as Yuko Trading (有恒商事). Like any cone, an SK cone measures heatwork, not temperature alone: it softens and bends over when the ware has had enough heat, and you read how far it bent. Witness cones, reading how far a cone has bent, and holds work for it as for any cone. This section names each cone's system, and never turns an SK number into another system's number: the numbers of different cone series are not interchangeable.
+I coni SK sono i coni pirometrici fabbricati secondo la norma giapponese JIS R 8101 e venduti in Giappone da rivenditori come Yuko Trading (有恒商事). Come ogni cono{{en: cone}}, un cono SK misura il lavoro termico{{en: heatwork}}, non la sola temperatura: si ammorbidisce e si piega quando i pezzi hanno ricevuto abbastanza calore, e si legge quanto si è piegato. I coni testimone{{en: witness cone}}, la lettura di quanto si è piegato un cono e le soste{{en: hold}} valgono per lui come per ogni cono. Questa sezione indica il sistema di ogni cono e non trasforma mai un numero SK nel numero di un altro sistema: i numeri di serie di coni diverse non sono intercambiabili.
 
 > [!NOTE]
-> Always write "SK" before the number. Many older Japanese recipes say only "SK 8" or "SK 9" without saying whose cone. Kyoto cones and SK cones to JIS carry the same numbers but bend at different temperatures (see Kyoto cones, below).
+> Scrivere sempre «SK» prima del numero. Molte ricette giapponesi meno recenti dicono solo «SK 8» o «SK 9», senza dire di quale cono si tratti. I coni di Kyoto e i coni SK secondo la JIS portano gli stessi numeri, ma si piegano a temperature diverse (vedere I coni di Kyoto, più sotto).
 
-### The large cones
+### I coni grandi
 
-The standard has two sizes. Large cones (大型コーン) are "mainly used for measuring the degree of firing" (焼度測定), which is what a potter wants. Small cones (SK 26 to SK 42, at the top of the range) are "mainly used for refractoriness tests" and are not covered here. The table below gives the large cones from SK 022 to SK 20.
+La norma prevede due misure. I coni grandi (大型コーン) sono «usati principalmente per misurare il grado di cottura» (焼度測定), cioè ciò che serve a chi fa ceramica. I coni piccoli (da SK 26 a SK 42, nella parte alta della serie) sono «usati principalmente per le prove di refrattarietà» e qui non sono trattati. La tabella qui sotto riporta i coni grandi da SK 022 a SK 20.
 
-The numbers run from SK 022, the coolest, up to SK 20 here. Between SK 015 and SK 6 the printed numbers carry an "a" (SK 015a, SK 6a); write it as printed.
+Qui i numeri vanno da SK 022, il più freddo, fino a SK 20. Tra SK 015 e SK 6 i numeri stampati hanno una «a» (SK 015a, SK 6a); scriverla come è stampata.
 
-### Setting large cones
+### Posizionare i coni grandi
 
-Set each large cone in a plaque or a pat of clay, leaning toward its bending face. As with any cone, keep the height and the lean the same from firing to firing, because a difference in either changes how far it bends. Set the three cones of the pack (below) together, deep in the kiln near the middle of the load, where they get the heat the ware gets, yet where you can see them through a peephole; before you close the kiln, check that you can see all three.
+Fissare ogni cono grande in un supporto per coni o in un blocchetto di argilla, inclinato verso la sua faccia di piegatura. Come per ogni cono, mantenere la stessa altezza e la stessa inclinazione da una cottura all’altra, perché una differenza nell’una o nell’altra cambia quanto si piega. Posizionare insieme i tre coni della terna di coni{{en: cone pack}} (più sotto), ben dentro il forno, vicino al centro dell’infornata, dove ricevono il calore che ricevono i pezzi, ma dove si possono comunque vedere da uno spioncino; prima di chiudere il forno, controllare di vederli tutti e tre.
 
-### Guide, firing and guard cones
+### Cono guida, cono di cottura e cono di guardia
 
-Cones are sold and set as three: a guide cone, a firing cone at the target, and a guard cone. Take the firing cone as the SK number your recipe or clay names, the guide cone as the next cooler cone (one row up in the table) and the guard cone as the next hotter one. When the guide cone starts to bend, the end is near; when the guard cone bends, the firing has gone too far.
+I coni si vendono e si posizionano a tre a tre: un cono guida, un cono di cottura all’obiettivo e un cono di guardia. Come cono di cottura si prende il numero SK indicato dalla ricetta o dall’argilla, come cono guida il cono immediatamente più freddo (una riga più in alto nella tabella) e come cono di guardia quello immediatamente più caldo. Quando il cono guida comincia a piegarsi, la fine è vicina; quando si piega il cono di guardia, la cottura è andata troppo oltre.
 
-### The SK chart
+### La tabella dei coni SK
 
-Table: SK large cones (JIS R 8101): the nominal (JIS) temperature of each
-Label: SK chart
+Table: Coni grandi SK (JIS R 8101): la temperatura nominale (JIS) di ciascuno
+Label: Tabella dei coni SK
 
-| Cone    | Nominal (JIS) temperature |
-| ------- | ------------------------: |
-| SK 022  |       {{1112 °F; 600 °C}} |
-| SK 021  |       {{1202 °F; 650 °C}} |
-| SK 020  |       {{1238 °F; 670 °C}} |
-| SK 019  |       {{1274 °F; 690 °C}} |
-| SK 018  |       {{1310 °F; 710 °C}} |
-| SK 017  |       {{1346 °F; 730 °C}} |
-| SK 016  |       {{1382 °F; 750 °C}} |
-| SK 015a |       {{1454 °F; 790 °C}} |
-| SK 014a |       {{1499 °F; 815 °C}} |
-| SK 013a |       {{1535 °F; 835 °C}} |
-| SK 012a |       {{1571 °F; 855 °C}} |
-| SK 011a |       {{1616 °F; 880 °C}} |
-| SK 010a |       {{1652 °F; 900 °C}} |
-| SK 09a  |       {{1688 °F; 920 °C}} |
-| SK 08a  |       {{1724 °F; 940 °C}} |
-| SK 07a  |       {{1760 °F; 960 °C}} |
-| SK 06a  |       {{1796 °F; 980 °C}} |
-| SK 05a  |      {{1832 °F; 1000 °C}} |
-| SK 04a  |      {{1868 °F; 1020 °C}} |
-| SK 03a  |      {{1904 °F; 1040 °C}} |
-| SK 02a  |      {{1940 °F; 1060 °C}} |
-| SK 01a  |      {{1976 °F; 1080 °C}} |
-| SK 1a   |      {{2012 °F; 1100 °C}} |
-| SK 2a   |      {{2048 °F; 1120 °C}} |
-| SK 3a   |      {{2084 °F; 1140 °C}} |
-| SK 4a   |      {{2120 °F; 1160 °C}} |
-| SK 5a   |      {{2156 °F; 1180 °C}} |
-| SK 6a   |      {{2192 °F; 1200 °C}} |
-| SK 7    |      {{2246 °F; 1230 °C}} |
-| SK 8    |      {{2282 °F; 1250 °C}} |
-| SK 9    |      {{2336 °F; 1280 °C}} |
-| SK 10   |      {{2372 °F; 1300 °C}} |
-| SK 11   |      {{2408 °F; 1320 °C}} |
-| SK 12   |      {{2462 °F; 1350 °C}} |
-| SK 13   |      {{2516 °F; 1380 °C}} |
-| SK 14   |      {{2570 °F; 1410 °C}} |
-| SK 15   |      {{2615 °F; 1435 °C}} |
-| SK 16   |      {{2660 °F; 1460 °C}} |
-| SK 17   |      {{2696 °F; 1480 °C}} |
-| SK 18   |      {{2732 °F; 1500 °C}} |
-| SK 19   |      {{2768 °F; 1520 °C}} |
-| SK 20   |      {{2786 °F; 1530 °C}} |
+| Cono    | Temperatura nominale (JIS) |
+| ------- | -------------------------: |
+| SK 022  |        {{1112 °F; 600 °C}} |
+| SK 021  |        {{1202 °F; 650 °C}} |
+| SK 020  |        {{1238 °F; 670 °C}} |
+| SK 019  |        {{1274 °F; 690 °C}} |
+| SK 018  |        {{1310 °F; 710 °C}} |
+| SK 017  |        {{1346 °F; 730 °C}} |
+| SK 016  |        {{1382 °F; 750 °C}} |
+| SK 015a |        {{1454 °F; 790 °C}} |
+| SK 014a |        {{1499 °F; 815 °C}} |
+| SK 013a |        {{1535 °F; 835 °C}} |
+| SK 012a |        {{1571 °F; 855 °C}} |
+| SK 011a |        {{1616 °F; 880 °C}} |
+| SK 010a |        {{1652 °F; 900 °C}} |
+| SK 09a  |        {{1688 °F; 920 °C}} |
+| SK 08a  |        {{1724 °F; 940 °C}} |
+| SK 07a  |        {{1760 °F; 960 °C}} |
+| SK 06a  |        {{1796 °F; 980 °C}} |
+| SK 05a  |       {{1832 °F; 1000 °C}} |
+| SK 04a  |       {{1868 °F; 1020 °C}} |
+| SK 03a  |       {{1904 °F; 1040 °C}} |
+| SK 02a  |       {{1940 °F; 1060 °C}} |
+| SK 01a  |       {{1976 °F; 1080 °C}} |
+| SK 1a   |       {{2012 °F; 1100 °C}} |
+| SK 2a   |       {{2048 °F; 1120 °C}} |
+| SK 3a   |       {{2084 °F; 1140 °C}} |
+| SK 4a   |       {{2120 °F; 1160 °C}} |
+| SK 5a   |       {{2156 °F; 1180 °C}} |
+| SK 6a   |       {{2192 °F; 1200 °C}} |
+| SK 7    |       {{2246 °F; 1230 °C}} |
+| SK 8    |       {{2282 °F; 1250 °C}} |
+| SK 9    |       {{2336 °F; 1280 °C}} |
+| SK 10   |       {{2372 °F; 1300 °C}} |
+| SK 11   |       {{2408 °F; 1320 °C}} |
+| SK 12   |       {{2462 °F; 1350 °C}} |
+| SK 13   |       {{2516 °F; 1380 °C}} |
+| SK 14   |       {{2570 °F; 1410 °C}} |
+| SK 15   |       {{2615 °F; 1435 °C}} |
+| SK 16   |       {{2660 °F; 1460 °C}} |
+| SK 17   |       {{2696 °F; 1480 °C}} |
+| SK 18   |       {{2732 °F; 1500 °C}} |
+| SK 19   |       {{2768 °F; 1520 °C}} |
+| SK 20   |       {{2786 °F; 1530 °C}} |
 
-Every figure is nominal (JIS): the temperature the standard gives for the cone, as printed in Yuko Trading's table. The table does not print a heating rate. The standard gives reference temperatures. At a potter's rate of about 100 °C/h, Kyoto's municipal institute measured its own Kyoto cones bending 47–79 °C cooler than the JIS figure for the same number; we found no such measurements for SK cones to JIS. Set a witness cone and compare.
+Ogni valore è nominale (JIS): la temperatura che la norma indica per il cono, come stampata nella tabella di Yuko Trading. La tabella non indica una velocità di riscaldamento. La norma dà temperature di riferimento. A una velocità di riscaldamento abituale per chi fa ceramica, circa 100 °C/h, l’istituto municipale di Kyoto ha misurato che i propri coni di Kyoto si piegano 47–79 °C più in basso del valore JIS per lo stesso numero; per i coni SK secondo la JIS non abbiamo trovato misurazioni di questo tipo. Mettere un cono testimone e confrontare.
 
-### Kyoto cones
+### I coni di Kyoto
 
-Kyoto cones (京都ゼーゲル), made by Kyoto's municipal institute, are no longer made: news reports say the institute ended production at the close of fiscal 2009. They carry the same numbers as SK cones to JIS but bend cooler: a Kyoto cone bends at about the temperature of the SK cone to JIS two or three numbers lower. A recipe from Kyoto that says "SK 8" may mean a Kyoto cone. The institute has published advice for potters moving from Kyoto cones to Orton cones, and substitutes Orton cone 10 for its own Kyoto SK 12; that is the institute's choice from its own measurements at 100 °C/h, and applies to no other cone.
+I coni di Kyoto (京都ゼーゲル), prodotti dall’istituto municipale di Kyoto, non si fabbricano più: secondo le notizie di stampa l’istituto ha cessato la produzione alla chiusura dell’esercizio 2009. Portano gli stessi numeri dei coni SK secondo la JIS, ma si piegano più in basso: un cono di Kyoto si piega a circa la temperatura del cono SK secondo la JIS di due o tre numeri inferiore. Una ricetta di Kyoto che dice «SK 8» può intendere un cono di Kyoto. L’istituto ha pubblicato indicazioni per chi passa dai coni di Kyoto ai coni Orton, e sostituisce il proprio cono di Kyoto SK 12 con il cono Orton 10; è una scelta dell’istituto, basata sulle sue misurazioni a 100 °C/h, e non vale per nessun altro cono.
 
-### Orton cones sold in Japan
+### I coni Orton venduti in Giappone
 
-Orton self-supporting cones are sold in Japan under the name 立つゼーゲル ("standing Seger"), because they need no plaque or stand. They are Orton cones, with Orton's numbers and Orton's chart (above): fire to one only by its Orton number, and keep SK and Orton cones in separate packs, never in the same one.
+I coni Orton autoportanti sono venduti in Giappone con il nome 立つゼーゲル («Seger in piedi»), perché non hanno bisogno né di supporto né di sostegno. Sono coni Orton, con i numeri e la tabella di Orton (più sopra): cuocere a uno di questi coni solo in base al suo numero Orton, e tenere i coni SK e i coni Orton in terne separate, mai nella stessa.
 
-### Sources for SK cones
+### Fonti sui coni SK
 
-- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (the SK table, checked 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
-- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (in force, reconfirmed 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
-- [Kyoto Municipal Institute of Industrial Technology and Culture: points to note when moving from Kyoto cones to Orton cones](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
+- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (la tabella SK, verificata il 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
+- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (in vigore, riconfermata il 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
+- [Kyoto Municipal Institute of Industrial Technology and Culture: indicazioni per il passaggio dai coni di Kyoto ai coni Orton](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
 
 :::
 

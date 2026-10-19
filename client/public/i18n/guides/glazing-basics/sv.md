@@ -462,7 +462,7 @@ Vax (wax resist)
 Värmearbete (heatwork)
 : Den sammanlagda effekten av temperatur och tid i en ugn; det som käglor mäter.
 
-## Sources {#sources lang=en}
+## Källor {#sources}
 
 - [Glazy Help: Glaze](https://help.glazy.org/concepts/glaze)
 - [Glazy Help: Oxides](https://help.glazy.org/concepts/oxides)

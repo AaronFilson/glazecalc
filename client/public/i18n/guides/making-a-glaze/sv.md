@@ -163,55 +163,55 @@ Label: Maskvidd
 | Glasyrer med färgmedel som kobolt eller järn | 100 till 120 mesh          |
 | Askglasyrer och andra med grova råvaror      | 60 till 80 mesh            |
 
-## Specific gravity {#specific-gravity lang=en}
+## Specifik vikt {#specific-gravity}
 
-**Specific gravity** (SG) tells you how much powder is in your slurry. It is the weight of a volume of glaze divided by the weight of the same volume of water. Water is 1.00, and a glaze at {{SG 1.45}} weighs 145 g per 100 mL. Mixing to a measured SG is how you get the same thickness, and the same coat, every time. It has no units, so it is the same in grams or ounces.
+**Specifik vikt**{{en: specific gravity, SG}} visar hur mycket pulver det finns i glasyrslammet{{en: slurry}}. Den är vikten av en viss volym glasyr delad med vikten av samma volym vatten. Vatten har 1,00, och en glasyr med {{SG 1.45}} väger 145 g per 100 mL. Att blanda till en uppmätt specifik vikt är sättet att få samma tjocklek, och samma lager, varje gång. Den har ingen enhet, så den är densamma i gram och i uns.
 
-### Measure it by weighing 100 mL
+### Mät den genom att väga 100 mL
 
-1. Stir the glaze so nothing has settled.
-2. Put a 100 mL **graduated cylinder** (a tall, marked measuring tube) or a 100 mL syringe on the scale, and tare it.
-3. Fill it with glaze to exactly 100 mL, reading the mark at eye level.
-4. Weigh it and divide the grams by 100: 145 g is SG 1.45.
+1. Rör om glasyren så att inget ligger kvar på botten.
+2. Ställ en **mätcylinder** på 100 mL (ett högt mätrör med gradering) eller en spruta på 100 mL på vågen och tarera.
+3. Fyll den med glasyr till exakt 100 mL och läs av markeringen i ögonhöjd.
+4. Väg och dela antalet gram med 100: 145 g ger specifik vikt 1,45.
 
-Digitalfire also marks a cup at the level of 500 g of water, fills it to the mark with glaze, and divides the weight by 500; a bigger, fuller measure is more accurate. A **hydrometer**, a float read where it sits in the glaze, is quick but can misread thick or gelled glazes. UK hydrometers, such as Potclays', read in degrees Baumé (°Bé). By our arithmetic, SG = 145 ÷ (145 − °Bé), so 46 °Bé is about 1.46. Older UK books give a **pint weight**, the ounces in an imperial pint of glaze: divide it by 20, so 29 oz is about SG 1.45 (also our arithmetic).
+Digitalfire markerar också en mugg vid nivån för 500 g vatten, fyller den med glasyr upp till markeringen och delar vikten med 500; ett större och fullare mått är noggrannare. En **flytvikt**, en flottör som läses av där den flyter i glasyren, går snabbt men kan visa fel i tjocka eller geléartade glasyrer. Brittiska flytvikter, som den från Potclays, visar baumégrader (°Bé). Enligt vår uträkning är specifik vikt = 145 ÷ (145 − °Bé), så 46 °Bé motsvarar ungefär 1,46. Äldre brittiska böcker anger **pintvikt**, antalet uns i en brittisk pint glasyr: dela den med 20, så 29 oz motsvarar ungefär specifik vikt 1,45 (också vår uträkning).
 
-### What to aim for
+### Målvärden
 
-Sources disagree, most of all on brushing and spraying, where the UK supplier Potclays gives much higher figures (its own are "for guidance only"). Treat every number as a starting point. Digitalfire's core advice is to find the SG and gelling that work for each glaze, then repeat them and write them down.
+Källorna är oeniga, mest av allt om penselglasering och sprutning, där den brittiska leverantören Potclays anger mycket högre värden (dess egna är ”endast vägledande”). Se varje siffra som en utgångspunkt. Digitalfires viktigaste råd är att hitta den specifika vikt och den flockning som fungerar för varje glasyr, och sedan upprepa dem och skriva upp dem.
 
-Table: Specific gravity targets, where sources disagree
-Label: Specific gravity targets
+Table: Målvärden för specifik vikt, där källorna är oeniga
+Label: Målvärden för specifik vikt
 
-| Use      | Digitalfire and Glazy                                                                                                                 | Potclays (UK)                               | Safe starting point                                     |
-| -------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- | ------------------------------------------------------- |
-| Dipping  | {{SG 1.40}} (for a 5-second dip) to {{SG 1.50}} (for a 1-second dip); home-mixed glazes that are gelled do best at {{SG 1.43–1.45}}   | Clear {{SG 1.46–1.48}}; colored {{SG 1.61}} | {{SG 1.45}}; thin to {{SG 1.43}} and gel it if it drips |
-| Brushing | {{SG 1.25}} (thin clear) to {{SG 1.55}} (dark detail)                                                                                 | {{SG 1.71–1.81}}                            | Follow the product; use CMC gum or a brushing medium    |
-| Spraying | No figure; Hopper, writing for Ceramic Arts Network, says much thinner, with a deflocculant (an additive that makes a slurry runnier) | {{SG 1.71}}                                 | No reliable number; spray only in a spray booth         |
+| Användning      | Digitalfire och Glazy                                                                                                                                                   | Potclays (Storbritannien)                          | Säker utgångspunkt                                                     |
+| --------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------- | ---------------------------------------------------------------------- |
+| Doppning        | {{SG 1.40}} (för 5 sekunders doppning) till {{SG 1.50}} (för 1 sekunds doppning); egenblandade glasyrer som är flockade fungerar bäst vid {{SG 1.43–1.45}}              | Transparent: {{SG 1.46–1.48}}; färgad: {{SG 1.61}} | {{SG 1.45}}; späd till {{SG 1.43}} och flocka den om den droppar       |
+| Penselglasering | {{SG 1.25}} (tunn transparent) till {{SG 1.55}} (mörka detaljer)                                                                                                        | {{SG 1.71–1.81}}                                   | Följ produktens anvisningar; använd glasyrlim (CMC) eller penselmedium |
+| Sprutning       | Inget värde; Hopper, som skriver för Ceramic Arts Network, säger mycket tunnare, med flytmedel{{en: deflocculant}} (en tillsats som gör glasyrslammet mer lättflytande) | {{SG 1.71}}                                        | Inget pålitligt värde; spruta bara i ett sprutskåp                     |
 
-To check a dipping glaze by eye, AMACO dips for 5 seconds and looks for a coat about as thick as a US dime. Digitalfire fires tiles dipped for 5 seconds to check.
+För att bedöma en doppglasyr med ögat doppar AMACO i 5 sekunder och letar efter ett lager som är ungefär lika tjockt som ett amerikanskt tiocentsmynt. Digitalfire bränner provbitar{{en: test tiles}} som doppats i 5 sekunder för att kontrollera.
 
-### Water for a target SG: our estimate
+### Vatten för en viss specifik vikt: vår uppskattning
 
-The table below is our own arithmetic, not a source's. It assumes the powder's particles have a density of 2.6 g per cm³, which is an assumption, not a measurement. Clay, soluble materials and gelling all change a real glaze, so use it to start, then measure. As a check, it predicts {{SG 1.44}} for equal weights of powder and water, close to Digitalfire's measured {{SG 1.46}}. It also shows that 70 to 80 mL per 100 g starts you above {{SG 1.50}}, thicker than you need.
+Tabellen nedan är vår egen uträkning, inte en källas. Den förutsätter att pulvrets partiklar har en densitet på 2,6 g per cm³, vilket är ett antagande, inte en mätning. Lera, lösliga råvaror och flockning ändrar alla en verklig glasyr, så använd tabellen som start och mät sedan. Som kontroll förutsäger den {{SG 1.44}} för lika vikt pulver och vatten, nära Digitalfires uppmätta värde, {{SG 1.46}}. Den visar också att man med 70 till 80 mL per 100 g börjar över {{SG 1.50}}, tjockare än vad som behövs.
 
-Table: Water for a target specific gravity (our estimate)
-Label: Water for a target specific gravity
+Table: Vatten för en viss specifik vikt (vår uppskattning)
+Label: Vatten för en viss specifik vikt
 
-| Target      | Per 100 g of powder |  Per kilogram |         Per pound |
-| ----------- | ------------------: | ------------: | ----------------: |
-| {{SG 1.40}} |        about 115 mL | about 1150 mL | about 18 US fl oz |
-| {{SG 1.45}} |         about 98 mL |  about 980 mL | about 15 US fl oz |
-| {{SG 1.50}} |         about 85 mL |  about 850 mL | about 13 US fl oz |
-| {{SG 1.60}} |         about 64 mL |  about 640 mL | about 10 US fl oz |
+| Mål         | Per 100 g pulver |   Per kilo |       Per pund |
+| ----------- | ---------------: | ---------: | -------------: |
+| {{SG 1.40}} |        ca 115 mL | ca 1150 mL | ca 18 US fl oz |
+| {{SG 1.45}} |         ca 98 mL |  ca 980 mL | ca 15 US fl oz |
+| {{SG 1.50}} |         ca 85 mL |  ca 850 mL | ca 13 US fl oz |
+| {{SG 1.60}} |         ca 64 mL |  ca 640 mL | ca 10 US fl oz |
 
-### Epsom salts, CMC gum and bentonite
+### Epsomsalt, glasyrlim (CMC) och bentonit
 
-**Epsom salts** make a glaze gel slightly when it stands still and flow again when it is stirred. This is called **flocculating** it, and a glaze that behaves this way is **thixotropic**: it goes on more evenly, drips less and settles less. Digitalfire suggests starting at about 2 g per gallon once the SG is right (roughly 0.5 g per liter, our conversion) and tuning the amount each time you mix, since no recipe should fix the dose. We suggest dissolving it in a little hot water first. In a Digitalfire example, a glaze at {{SG 1.45}} dripped, so water brought it down to {{SG 1.43}} and Epsom salts gelled it back to creamy, and it went on evenly. A rough check: stir, stop and watch. A gelled glaze moves on for about 2 or 3 seconds, then stops and springs back a little.
+**Epsomsalt** (magnesiumsulfat) får en glasyr att stelna lite, som en gelé, när den står still och att flyta igen när den rörs om. Det kallas att **flocka**{{en: flocculate}} glasyren, och en glasyr som beter sig så är **tixotrop**{{en: thixotropic}}: den läggs på jämnare, droppar mindre och sjunker mindre till botten. Digitalfire föreslår att börja med ungefär 2 g per gallon när den specifika vikten är rätt (ungefär 0,5 g per liter, vår omräkning) och att justera mängden varje gång glasyren blandas, eftersom inget recept bör låsa fast doseringen. Vi föreslår att saltet först löses i lite hett vatten. I ett exempel från Digitalfire droppade en glasyr med {{SG 1.45}}, så vatten fick ner den till {{SG 1.43}} och epsomsalt flockade den tillbaka till krämig konsistens, och den lade sig jämnt. En enkel kontroll: rör om, sluta och titta. En flockad glasyr rör sig vidare i ungefär 2 eller 3 sekunder, stannar sedan och fjädrar tillbaka lite.
 
-**CMC gum** (carboxymethyl cellulose) makes a slurry stickier and slower to dry, and leaves a harder coat that holds to the pot. It matters most for brushing glazes and glazes high in frit. Digitalfire's example blends 3.75 g into 1000 g of slurry, and it has to go in with a blender. A glaze with CMC will not gel with Epsom salts, and since microbes feed on the gum, it can change in the bucket and start to smell.
+**Glasyrlim** (CMC, karboximetylcellulosa) gör glasyrslammet klibbigare och långsammare att torka, och ger ett hårdare lager som sitter fast på föremålet. Det betyder mest för penselglasyrer och glasyrer med mycket fritta{{en: frit}}. I Digitalfires exempel blandas 3,75 g in i 1000 g glasyrslam, och det måste göras med mixer. En glasyr med CMC flockar inte med epsomsalt, och eftersom mikrober lever av limmet kan den förändras i hinken och börja lukta.
 
-**Bentonite**, a very fine clay, helps hold the other particles in suspension. Dipping glazes usually rely on 15 to 25% raw clay for this. For a recipe short of clay, about 1 to 3% bentonite helps; Digitalfire says a glaze with more than 15% clay should not need bentonite at more than 1% of the dry glaze's weight.
+**Bentonit**, en mycket finkornig lera, hjälper till att hålla de andra partiklarna svävande. Doppglasyrer brukar förlita sig på 15 till 25 % obränd lera för detta. För ett recept med för lite lera hjälper ungefär 1 till 3 % bentonit; Digitalfire säger att en glasyr med mer än 15 % lera inte bör behöva bentonit till mer än 1 % av den torra glasyrens vikt.
 
 ## Provbitar och provserier {#testing}
 

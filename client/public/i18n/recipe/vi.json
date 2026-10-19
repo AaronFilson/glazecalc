@@ -272,6 +272,7 @@
     "numbers": {
       "heading": "Đọc phân tích và các giới hạn",
       "analysis": "<b>Phân tích và giới hạn</b>, dưới công thức men, cho thấy mol, % mol và % khối lượng sau nung của mỗi oxit, lượng mất khi nung và độ giãn nở nhiệt tính toán, một ước tính để so sánh các loại men.",
+      "limits": "<b>Giới hạn</b> đặt công thức Seger đối chiếu với một bộ giới hạn: các giới hạn men ổn định của Hesselberth & Roy trừ khi bạn chọn bộ riêng của Glazecalc (lựa chọn được lưu cùng cài đặt của bạn). Nó kiểm tra theo dải nung mà mục <b>Nung</b> của công thức men cho biết: côn của nó, hoặc khoảng của nó. Một khoảng bắc qua nhiều dải, chẳng hạn côn 6 đến 10, hiển thị kết quả kiểm tra của cả hai dải cạnh nhau. Để chỉ kiểm tra một dải, hãy chọn dải đó trong ô <b>Nung</b> riêng của các giới hạn; ô này ghi đè việc nung của công thức men và được lưu cùng công thức men. Số liệu của Hesselberth & Roy dành cho côn 6 và côn 10, nên ở nhiệt độ thấp nó cho biết chúng không áp dụng. Chúng là hướng dẫn tham khảo, không phải tiêu chí đạt hay không đạt. Ở trên cùng, một dòng so sánh bo, silica và alumina của men với việc nung của nó, theo quy tắc bo của Katz và số liệu của Hesselberth & Roy, dù bạn chọn bộ giới hạn nào: nó chỉ đưa ra ghi chú khi cả hai đồng ý rằng men này trông giống một lần nung khác, cho biết khi nó không thể đánh giá (chì, liti, raku và những thứ tương tự), và chỉ là hướng dẫn tham khảo, không phải một phép thử.",
       "stull": "<b>Biểu đồ Stull</b> vẽ silica của men theo alumina của nó, với các vùng mờ, bán mờ và sáng bóng của Stull và các khoảng của bộ giới hạn. Nó là một chỉ dẫn về bề mặt, không phải một dự đoán.",
       "slurry": "<b>Tỷ trọng và nước</b> dùng công thức của Brongniart: cân một thể tích men đã đo, rồi xem men khô trong xô, nước đưa nó đến tỷ trọng bạn muốn, hoặc nước cho một mẻ mới. Các độ đặc theo cài đặt của bạn cho tỷ trọng, độ Baumé hoặc trọng lượng pint."
     },
@@ -471,6 +472,7 @@
     "expansionRises": "Độ giãn nở tính toán của nó tăng từ {was} lên {now}.",
     "expansionRisesProbably": "Nếu men cũ chỉ vừa khít với đất của bạn, thì men này nhiều khả năng sẽ rạn nứt men, đôi khi vài tuần sau.",
     "expansionRisesMay": "Nếu men cũ chỉ vừa khít với đất của bạn, thì men này có thể rạn nứt men, đôi khi vài tuần sau.",
+    "expansionRisesFix": "Rạn nứt men làm yếu sản phẩm và không được khuyên dùng trên bề mặt tiếp xúc thực phẩm. Thay một phần natri và kali bằng các chất trợ chảy giãn nở thấp hơn (bo, liti, magie hoặc canxi) sẽ hạ độ giãn nở nhiệt xuống; đôi khi người ta gợi ý thêm silica, nhưng các nguồn không đồng ý với nhau.",
     "expansionFalls": "Độ giãn nở tính toán của nó giảm từ {was} xuống {now}. Thấp hơn một chút thường chống rạn nứt men tốt hơn.",
     "expansionFallsProbably": "Thấp hơn nhiều thì nhiều khả năng sẽ bong tróc men, với các mảnh sắc văng khỏi mép và cạnh.",
     "expansionFallsCan": "Thấp hơn nhiều thì có thể bong tróc men, với các mảnh sắc văng khỏi mép và cạnh.",
@@ -596,6 +598,36 @@
     "firingFromBlock": "Theo lần nung của công thức ({bands})",
     "bothBands": "Lần nung của công thức trải dài {bands}, nên mỗi khoảng được kiểm tra, đặt cạnh nhau: một loại men hiếm khi cư xử giống nhau ở cả hai đầu.",
     "fromFiring": "Các số liệu dành cho lần nung của công thức: {band}. Hãy chọn một lần nung ở trên để kiểm tra lần nung khác."
+  },
+  "coneFit": {
+    "cooler": "Hóa học của men này trông giống một loại men {looksLike, select, low {nhiệt độ thấp} other {nhiệt độ trung bình}} hơn là men cho {scale, select, band {{band, select, low {nhiệt độ thấp} mid {nhiệt độ trung bình} other {nhiệt độ cao}}} sk {SK {cone}} temperature {{cone} °C} other {côn {cone}}}.",
+    "coolerSoft": "Hóa học của men này nghiêng về một lần nung nguội hơn {scale, select, band {{band, select, low {nhiệt độ thấp} mid {nhiệt độ trung bình} other {nhiệt độ cao}}} sk {SK {cone}} temperature {{cone} °C} other {côn {cone}}}, gần côn 6 hơn, dù chỉ riêng hóa học thì chỉ phân biệt được men côn 6 và côn 10 một cách đại khái.",
+    "hotter": "Hóa học của men này trông giống một loại men {looksLike, select, high {nhiệt độ cao} other {nhiệt độ trung bình}} hơn là men cho {scale, select, band {{band, select, low {nhiệt độ thấp} mid {nhiệt độ trung bình} other {nhiệt độ cao}}} sk {SK {cone}} temperature {{cone} °C} other {côn {cone}}}.",
+    "hotterSoft": "Hóa học của men này nghiêng về một lần nung nóng hơn {scale, select, band {{band, select, low {nhiệt độ thấp} mid {nhiệt độ trung bình} other {nhiệt độ cao}}} sk {SK {cone}} temperature {{cone} °C} other {côn {cone}}}, gần côn 10 hơn, dù chỉ riêng hóa học thì chỉ phân biệt được men côn 6 và côn 10 một cách đại khái.",
+    "closer": "Trong khoảng được nêu, hóa học của men này trông gần đầu {scale, select, band {{band, select, low {nhiệt độ thấp} mid {nhiệt độ trung bình} other {nhiệt độ cao}}} sk {SK {cone}} temperature {{cone} °C} other {côn {cone}}} hơn.",
+    "coolerSilica": "Nó có nhiều bo ({boron}) hơn mức men ở {scale, select, band {{band, select, low {nhiệt độ thấp} mid {nhiệt độ trung bình} other {nhiệt độ cao}}} sk {SK {cone}} temperature {{cone} °C} other {côn {cone}}} thường cần, và ít silica ({silica}) hơn mức chúng thường có.",
+    "coolerAlumina": "Nó có nhiều bo ({boron}) hơn mức men ở {scale, select, band {{band, select, low {nhiệt độ thấp} mid {nhiệt độ trung bình} other {nhiệt độ cao}}} sk {SK {cone}} temperature {{cone} °C} other {côn {cone}}} thường cần, và ít alumina ({alumina}).",
+    "coolerBoth": "Nó có nhiều bo ({boron}) hơn mức men ở {scale, select, band {{band, select, low {nhiệt độ thấp} mid {nhiệt độ trung bình} other {nhiệt độ cao}}} sk {SK {cone}} temperature {{cone} °C} other {côn {cone}}} thường cần, và ít silica ({silica}) và alumina ({alumina}) hơn mức chúng thường có.",
+    "hotterSilica": "Nó có ít bo ({boron}) so với {scale, select, band {{band, select, low {nhiệt độ thấp} mid {nhiệt độ trung bình} other {nhiệt độ cao}}} sk {SK {cone}} temperature {{cone} °C} other {côn {cone}}}, và nhiều silica ({silica}) hơn mức men ở lần nung đó thường có.",
+    "coolerEffect": "Ở lần nung đó, nó có thể chảy hoặc nóng chảy quá mức: hãy nung một mẫu thử men trên đĩa hứng trước.",
+    "hotterEffect": "Ở lần nung đó, nó có thể bị non lửa: khô, nhám hoặc chưa kín hoàn toàn. Hãy nung thử trước khi dùng trên sản phẩm, và nhất là trước khi dùng ở nơi thực phẩm hoặc đồ uống sẽ chạm vào.",
+    "hotterEffectSoft": "Một số loại men nóng chảy ở lần nung đó mà không có bo, nên đây chỉ là một gợi ý: hãy kiểm tra trên mẫu thử men xem nó có chảy hoàn toàn không.",
+    "gerstley": "Một phần bo của nó đến từ Gerstley borate, loại này thay đổi theo từng lô, nên con số đó kém chắc chắn hơn.",
+    "guide": "Đây là so sánh hóa học với các số liệu đã công bố: nó là hướng dẫn tham khảo, không phải một phép thử. Nếu men này đã nung tốt cho bạn ở côn này, hãy tin các mẫu thử men của bạn.",
+    "fits": "Bo, silica và alumina của nó không cho thấy dấu hiệu lệch khỏi {scale, select, band {{band, select, low {nhiệt độ thấp} mid {nhiệt độ trung bình} other {nhiệt độ cao}}} sk {SK {cone}} temperature {{cone} °C} other {côn {cone}}}. Đây là hướng dẫn tham khảo, không phải một phép thử: nó không cho biết men có ổn định hay an toàn với thực phẩm hay không.",
+    "sources": "Nguồn:",
+    "skip": {
+      "lead": "Glazecalc không thể so sánh hóa học của men này với việc nung của nó: một phần đáng kể chất chảy của nó đến từ chì, mà các số liệu đã công bố mà phép kiểm tra này dùng không bao gồm.",
+      "lithium": "Glazecalc không thể so sánh hóa học của men này với việc nung của nó: một phần đáng kể chất chảy của nó đến từ liti, mà các số liệu đã công bố mà phép kiểm tra này dùng không bao gồm.",
+      "alkali": "Glazecalc không thể so sánh hóa học của men này với việc nung của nó: một phần đáng kể chất chảy của nó đến từ natri và kali, mà các số liệu đã công bố mà phép kiểm tra này dùng không bao gồm.",
+      "zinc": "Glazecalc không thể so sánh hóa học của men này với việc nung của nó: nó có nhiều kẽm, như các loại men tinh thể, mà các số liệu đã công bố mà phép kiểm tra này dùng không bao gồm.",
+      "notGlaze": "Glazecalc không thể so sánh hóa học của men này với việc nung của nó: công thức của nó không phải của một loại men thông thường (rất ít hoặc rất nhiều silica, hoặc nhiều oxit tạo màu), nên các số liệu đã công bố mà phép kiểm tra này dùng không phù hợp với nó.",
+      "process": "Glazecalc không thể so sánh hóa học của men này với việc nung của nó: nó dành cho lần nung {process, select, raku {raku} salt {muối} soda {soda} wood {củi} other {trong hố}}, nơi lò đảm nhận một phần việc tạo men, mà các số liệu đã công bố mà phép kiểm tra này dùng không bao gồm.",
+      "ash": "Glazecalc không thể so sánh hóa học của men này với việc nung của nó: nó có tro, mà thành phần thay đổi quá nhiều so với các số liệu đã công bố mà phép kiểm tra này dùng.",
+      "noTemperature": "Glazecalc không thể so sánh hóa học của men này với {scale, select, band {{band, select, low {nhiệt độ thấp} mid {nhiệt độ trung bình} other {nhiệt độ cao}}} sk {SK {cone}} temperature {{cone} °C} other {côn {cone}}}: không có nhiệt độ đo được cho côn đó.",
+      "between": "Glazecalc không thể so sánh hóa học của men này với {scale, select, band {{band, select, low {nhiệt độ thấp} mid {nhiệt độ trung bình} other {nhiệt độ cao}}} sk {SK {cone}} temperature {{cone} °C} other {côn {cone}}}: các số liệu đã công bố mà phép kiểm tra này dùng dành cho nhiệt độ thấp và cho nhiệt độ trung bình và cao, không phải các côn ở giữa (01 đến 3).",
+      "belowChart": "Glazecalc không thể so sánh hóa học của men này với {scale, select, band {{band, select, low {nhiệt độ thấp} mid {nhiệt độ trung bình} other {nhiệt độ cao}}} sk {SK {cone}} temperature {{cone} °C} other {côn {cone}}}: quy tắc bo của Katz dành cho côn 06 đến côn 10, và lần nung đó nguội hơn."
+    }
   },
   "stull": {
     "heading": "Biểu đồ Stull",
@@ -902,6 +934,7 @@
     "foodSurface": "Cho bề mặt tiếp xúc thực phẩm (men phủ mặt trong)",
     "liner": {
       "note": "An toàn thực phẩm phụ thuộc vào việc nung men này tới đúng côn đã thử: men nung chưa đủ có thể thôi nhiễm.",
+      "range": "Việc nung men này được nêu cho một khoảng, nên hãy thử ở đầu thấp của khoảng, nơi men chảy ít nhất.",
       "untested": "Chưa có côn nào được đánh dấu là đã thử.",
       "test": "Chỉ một thử nghiệm thôi nhiễm trên chính các sản phẩm bạn đã nung mới cho biết men này có an toàn với thực phẩm hay không."
     },
@@ -964,5 +997,23 @@
     "replaceAsk": "Mục đã thử đang đánh dấu {now}. Thay bằng các côn mà nhật ký nêu, {logs}?",
     "replace": "Thay thế",
     "keep": "Giữ nguyên"
+  },
+  "coneCards": {
+    "heading": "Kết quả theo côn",
+    "unplaced": "Chưa xếp vào côn nào",
+    "unplacedNote": "Các nhật ký nung này chưa được xếp vào côn nào: hãy chọn mỗi lần nung ở đâu.",
+    "approx": "≈ {temperature}",
+    "cautions": "{count, plural, =0 {không có cảnh báo giới hạn} other {# cảnh báo giới hạn}}",
+    "logs": "{count, plural, =0 {không có nhật ký nung} other {# nhật ký nung}}",
+    "outside": "ngoài khoảng nung đã nêu",
+    "outsideChoice": "{place} (ngoài khoảng nung đã nêu)",
+    "summaryLabel": "Kết quả ở {place}",
+    "summaryPlaceholder": "Bề mặt, màu, chảy men, rạn men...",
+    "noAtmosphere": "chưa nêu môi trường nung",
+    "placeLabel": "{title} đã được nung ở đâu",
+    "notPlaced": "Chưa xếp",
+    "add": "Thêm một kết quả cho",
+    "addButton": "Thêm",
+    "saveFailed": "Không lưu được nơi lần nung của nhật ký nung này."
   }
 }

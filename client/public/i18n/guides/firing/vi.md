@@ -165,69 +165,69 @@ Hãy dự kiến có khác biệt: Orton nói “Thông thường, bạn sẽ th
 
 :::orton
 
-## The kiln sitter {#kiln-sitter lang=en}
+## Kiln-Sitter {#kiln-sitter}
 
-A **kiln sitter** is the mechanical switch, on the outside of many basic and older kilns, that turns the kiln off when a small cone bends. The best known is the Dawson Kiln-Sitter. It makes firing easier, but it is a convenience, not a safety device.
+**Kiln-Sitter** là công tắc cơ khí, ở bên ngoài nhiều lò nung cơ bản và cũ, tắt lò khi một côn nhỏ cong. Loại nổi tiếng nhất là Dawson Kiln-Sitter. Nó làm cho việc nung dễ hơn, nhưng là một tiện ích, không phải một thiết bị an toàn.
 
-### How it works
+### Cách nó hoạt động
 
-A porcelain tube reaches into the kiln. At its end, a small cone or a bar lies across two metal supports, under a **sensing rod** that pivots like a seesaw. Outside the kiln, the other end of the rod holds up a weight by a small claw. When the cone softens and bends to about 90°, the rod drops far enough to release the weight, the weight falls, and the power to the elements is cut.
+Một ống sứ vươn vào trong lò. Ở đầu của nó, một côn nhỏ hoặc một thanh côn nằm ngang qua hai giá đỡ kim loại, dưới một **que cảm biến**{{en: sensing rod}} xoay như một cái bập bênh. Bên ngoài lò, đầu kia của que giữ một quả cân bằng một cái móc nhỏ. Khi côn mềm ra và cong đến khoảng 90°, que hạ xuống đủ xa để nhả quả cân, quả cân rơi, và điện đến các dây điện trở bị cắt.
 
-Small cones and bars "give equivalent heat treatment". Orton notes that many beginners choose bars, because their even shape makes it easy to place them the same way every time. A small cone tapers, so where it sits matters: with its thin part under the rod the kiln shuts off cooler, and with its thick part hotter, a shift of "as much as 1/2 cone".
+Côn nhỏ và thanh côn “cho cùng một xử lý nhiệt”. Orton ghi chú rằng nhiều người mới chọn thanh côn, vì hình dạng đều của chúng giúp dễ đặt chúng theo cùng một cách mỗi lần. Một côn nhỏ thon dần, nên vị trí nó nằm quan trọng: với phần mỏng dưới que, lò tắt nguội hơn, và với phần dày, nóng hơn, một độ lệch “đến 1/2 côn”.
 
-### Which cone goes in the sitter
+### Côn nào đặt vào Kiln-Sitter
 
-Sources disagree. Dawson, who made the sitter, says to use the same number as the firing cone on the shelf, and to go one number hotter only if the shelf cone stays unbent. L&L says to use one number hotter than the shelf cones, because the sitter sits near the wall and the elements, gets more heat, and tends to shut off early. Orton settles the principle: "The shelf cone is the final judge of the firing process, not the Kiln-Sitter cone or bar."
-
-> [!NOTE]
-> Our starting point: put a small cone of the same number as your target in the sitter, with a cone pack on the shelf. If the shelf firing cone is under-bent when the kiln shuts off, go one number hotter in the sitter next time, or set the thicker part of the cone under the rod. If it is over-bent, do the opposite.
-
-### Setting it up, and checks before every firing
-
-Dawson's procedure, which doubles as a check before every firing:
-
-1. Turn all the switches off. Check that the sensing rod moves freely, sits centered in the tube and is not bent or corroded. If it is sluggish, Dawson says to replace the tube assembly.
-2. Brush a thin coat of high-fire **kiln wash** (a coating that stops melted material sticking) onto the cone supports and the rod where it touches the cone. Never put wash on the cone or the porcelain tube.
-3. Load shelves and ware at least 1 in (25 mm) above or below the tube, so nothing can touch, fall against or block it.
-4. Lift the weight, press the claw down onto the trigger, and lay the cone or bar flat on the supports against the metal step, as your sitter's manual shows, the same way every time. Check it again before closing the lid: "AN IMPROPERLY PLACED CONE OR BAR COULD CAUSE AN OVERFIRING."
-5. Set the limit timer and push in the plunger until it locks. Keep the kiln level and the space under the weight clear, so the weight can fall.
-
-### The limit timer
-
-Many sitters, including Dawson's LT models, have a **limit timer**: a clock that turns the kiln off after a set time, as a backup "in case the KILN-SITTER fails". It should always be set longer than the firing is expected to take. Sources set the margin differently:
-
-Table: How long to set the limit timer
-Label: Limit timer settings
-
-| Source    | Setting                                                                                                                |
-| --------- | ---------------------------------------------------------------------------------------------------------------------- |
-| Dawson    | ½ hour longer than the expected firing time until you know the kiln, later ¼ hour longer; never set it beyond 20 hours |
-| L&L       | Very high the first time, noting how long the firing takes; after that, about 1 hour longer                            |
-| Bracker's | 30 minutes to 1 hour longer than the firing time                                                                       |
+Các nguồn không thống nhất. Dawson, người làm ra Kiln-Sitter, nói hãy dùng cùng số với côn nung trên kệ, và chỉ nóng hơn một bậc nếu côn kệ vẫn chưa cong. L&L nói hãy dùng nóng hơn các côn kệ một bậc, vì Kiln-Sitter nằm gần thành lò và các dây điện trở, nhận nhiều nhiệt hơn, và có xu hướng tắt sớm. Orton giải quyết nguyên tắc: “Côn trên kệ là người phán xét cuối cùng của quá trình nung, không phải côn hay thanh của Kiln-Sitter.”
 
 > [!NOTE]
-> Our starting point: generous the first time (within the dial's 20 hours), then ½ to 1 hour longer than the time you recorded. The timer also tells you how long a firing took: set at 7 and ending at 1 means 6 hours.
+> Điểm xuất phát của chúng tôi: đặt một côn nhỏ cùng số với mục tiêu của bạn vào Kiln-Sitter, kèm một bộ côn trên kệ. Nếu côn nung trên kệ cong chưa đủ khi lò tắt, lần sau hãy dùng nóng hơn một bậc trong Kiln-Sitter, hoặc đặt phần dày hơn của côn dưới que. Nếu nó cong quá mức, hãy làm ngược lại.
 
-### When it shuts off early or late
+### Thiết lập nó, và các kiểm tra trước mỗi lần nung
 
-After each firing, read the sitter cone beside the shelf cones.
+Quy trình của Dawson, cũng là một kiểm tra trước mỗi lần nung:
 
-Table: Reading the sitter after a firing
-Label: Kiln sitter problems
+1. Tắt tất cả các công tắc. Kiểm tra que cảm biến di chuyển tự do, nằm giữa trong ống và không bị cong hay bị ăn mòn. Nếu nó chậm, Dawson nói hãy thay cụm ống.
+2. Quét một lớp mỏng **lớp phủ chống dính tấm kê** (kiln wash) nhiệt độ cao (một lớp phủ ngăn vật liệu nóng chảy dính) lên các giá đỡ côn và lên que ở chỗ nó chạm côn. Tuyệt đối không phủ lớp này lên côn hay ống sứ.
+3. Xếp kệ và sản phẩm cách ống ít nhất 1 inch (25 mm) ở trên hoặc dưới, để không gì có thể chạm, đổ vào hay chặn nó.
+4. Nâng quả cân, ấn móc xuống bàn đạp kích hoạt, và đặt côn hoặc thanh nằm phẳng lên các giá đỡ sát với bậc kim loại, như hướng dẫn sử dụng Kiln-Sitter của bạn chỉ, theo cùng một cách mỗi lần. Kiểm tra lại trước khi đóng nắp: “MỘT CÔN HOẶC THANH ĐẶT SAI CÁCH CÓ THỂ GÂY NUNG QUÁ LỬA.”
+5. Đặt bộ hẹn giờ giới hạn và đẩy cần vào cho đến khi nó khóa. Giữ lò nằm ngang và khoảng trống dưới quả cân thông thoáng, để quả cân có thể rơi.
 
-| What you see                                    | Likely cause                                                                                           | What to do                                                       |
-| ----------------------------------------------- | ------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------- |
-| Sitter tripped, shelf firing cone under-bent    | The sitter ran hotter than the shelf (it sits near the wall)                                           | One cone hotter in the sitter, or the thicker part under the rod |
-| Sitter cone sagged well past 90°                | The kiln climbed too fast near the end                                                                 | Lower the switch settings, so the climb is slower (Dawson)       |
-| Sitter cone did not bend, or melted into a blob | The sitter itself: poor adjustment, a bent or corroded rod, or something lodged in or against the tube | Check and adjust the sitter by its manual before firing again    |
-| Early or late every time                        | Out of adjustment, or a worn rod                                                                       | Check with the firing gauge; move the trigger plate              |
+### Bộ hẹn giờ giới hạn
 
-To check the adjustment, Dawson uses a **firing gauge** that holds the rod where a fully bent cone would leave it; there should then be "1/16th-inch clearance" (about 1.6 mm) at the claw. Check it every 30 firings. Ceramics Monthly's rule: if the kiln shuts off early, move the trigger plate up slightly; if late, move it down slightly. Whatever the sitter does, "Always trust large witness cones over small sitter cones."
+Nhiều Kiln-Sitter, gồm các mẫu LT của Dawson, có **bộ hẹn giờ giới hạn**{{en: limit timer}}: một đồng hồ tắt lò sau một thời gian đã đặt, như một dự phòng “phòng khi KILN-SITTER hỏng”. Nó luôn nên được đặt dài hơn thời gian dự kiến của lần nung. Các nguồn đặt biên độ khác nhau:
+
+Table: Đặt bộ hẹn giờ giới hạn bao lâu
+Label: Cài đặt bộ hẹn giờ giới hạn
+
+| Nguồn     | Cài đặt                                                                                                          |
+| --------- | ---------------------------------------------------------------------------------------------------------------- |
+| Dawson    | Dài hơn thời gian nung dự kiến ½ giờ cho đến khi bạn biết lò, sau đó dài hơn ¼ giờ; không bao giờ đặt quá 20 giờ |
+| L&L       | Rất cao lần đầu, ghi lại lần nung kéo dài bao lâu; sau đó, dài hơn khoảng 1 giờ                                  |
+| Bracker's | Dài hơn thời gian nung 30 phút đến 1 giờ                                                                         |
+
+> [!NOTE]
+> Điểm xuất phát của chúng tôi: rộng rãi lần đầu (trong 20 giờ của mặt số), sau đó dài hơn ½ đến 1 giờ so với thời gian bạn đã ghi. Bộ hẹn giờ cũng cho bạn biết một lần nung kéo dài bao lâu: đặt ở 7 và kết thúc ở 1 nghĩa là 6 giờ.
+
+### Khi nó tắt sớm hoặc muộn
+
+Sau mỗi lần nung, hãy đọc côn Kiln-Sitter bên cạnh các côn kệ.
+
+Table: Đọc Kiln-Sitter sau một lần nung
+Label: Sự cố của Kiln-Sitter
+
+| Điều bạn thấy                                           | Nguyên nhân có thể                                                                                           | Cần làm gì                                                                   |
+| ------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------- |
+| Kiln-Sitter đã kích hoạt, côn nung trên kệ cong chưa đủ | Kiln-Sitter chạy nóng hơn kệ (nó nằm gần thành lò)                                                           | Dùng côn nóng hơn một bậc trong Kiln-Sitter, hoặc phần dày hơn dưới que      |
+| Côn Kiln-Sitter võng xuống quá xa so với 90°            | Lò tăng nhiệt quá nhanh ở gần cuối                                                                           | Hạ các cài đặt công tắc, để việc tăng nhiệt chậm hơn (Dawson)                |
+| Côn Kiln-Sitter không cong, hoặc chảy thành một cục     | Chính Kiln-Sitter: điều chỉnh kém, một que bị cong hoặc bị ăn mòn, hoặc có thứ gì kẹt trong hoặc dựa vào ống | Kiểm tra và điều chỉnh Kiln-Sitter theo hướng dẫn sử dụng trước khi nung lại |
+| Lần nào cũng sớm hoặc muộn                              | Lệch điều chỉnh, hoặc một que bị mòn                                                                         | Kiểm tra bằng đồng hồ đo nung; di chuyển tấm kích hoạt                       |
+
+Để kiểm tra điều chỉnh, Dawson dùng một **đồng hồ đo nung**{{en: firing gauge}} giữ que ở chỗ một côn cong hoàn toàn sẽ để nó; khi đó phải có “khe hở 1/16 inch” (khoảng 1,6 mm) ở móc. Hãy kiểm tra mỗi 30 lần nung. Quy tắc của Ceramics Monthly: nếu lò tắt sớm, hãy di chuyển tấm kích hoạt lên một chút; nếu muộn, di chuyển xuống một chút. Dù Kiln-Sitter làm gì, “Luôn tin các côn chứng lớn hơn các côn nhỏ của Kiln-Sitter.”
 
 > [!WARNING]
-> **A kiln sitter is not a safety device.** Dawson's manual says it "is NOT intended to perform as a fail-safe shut-off device and your kiln should NOT be left unattended beyond the estimated firing time." Something as simple as greenware falling against the tube "might cause an over-firing". Be there to check the kiln when it should be finishing, and never fire it over or near anything that burns, such as a wood floor or carpet.
+> **Kiln-Sitter không phải là một thiết bị an toàn.** Hướng dẫn sử dụng của Dawson nói nó “KHÔNG được thiết kế để hoạt động như một thiết bị ngắt an toàn khi có sự cố (fail-safe) và lò của bạn KHÔNG được để không người trông quá thời gian nung ước tính.” Một việc đơn giản như phôi chưa nung đổ vào ống “có thể gây nung quá lửa”. Hãy có mặt để kiểm tra lò khi nó sắp xong, và tuyệt đối không nung nó trên hoặc gần bất cứ thứ gì cháy được, như sàn gỗ hay thảm.
 
-The sitter is built for firings "up to and including Cone 8". It cannot hold a temperature or cool slowly by itself. With practice and a log, though, you can "become the controller", as Digitalfire puts it: watch the cones and turn the switches by hand.
+Kiln-Sitter được làm cho các lần nung “đến hết côn 8”. Nó không thể tự giữ một nhiệt độ hay làm nguội chậm. Tuy nhiên, với luyện tập và một nhật ký, bạn có thể “trở thành bộ điều khiển”, như Digitalfire nói: theo dõi các côn và xoay các công tắc bằng tay.
 
 :::
 
@@ -281,92 +281,92 @@ Label: Điều chỉnh lần nung tiếp theo
 
 :::sk
 
-## Firing to SK cones {#sk-cones lang=en}
+## Nung theo côn SK {#sk-cones}
 
-SK cones are the pyrometric cones made to Japan's standard, JIS R 8101, and sold in Japan by dealers such as Yuko Trading (有恒商事). Like any cone, an SK cone measures heatwork, not temperature alone: it softens and bends over when the ware has had enough heat, and you read how far it bent. Witness cones, reading how far a cone has bent, and holds work for it as for any cone. This section names each cone's system, and never turns an SK number into another system's number: the numbers of different cone series are not interchangeable.
+Côn SK là các côn nhiệt được làm theo tiêu chuẩn của Nhật Bản, JIS R 8101, và được bán ở Nhật bởi các đại lý như Yuko Trading. Như mọi côn, một côn SK đo công nhiệt, không chỉ nhiệt độ: nó mềm ra và cong xuống khi sản phẩm đã nhận đủ nhiệt, và bạn đọc xem nó đã cong bao nhiêu. Côn chứng, việc đọc một côn đã cong bao nhiêu, và giữ nhiệt đều áp dụng cho nó như cho mọi côn. Phần này nêu hệ thống của mỗi côn, và không bao giờ biến một số SK thành số của hệ thống khác: các số của những dãy côn khác nhau không thể hoán đổi cho nhau.
 
 > [!NOTE]
-> Always write "SK" before the number. Many older Japanese recipes say only "SK 8" or "SK 9" without saying whose cone. Kyoto cones and SK cones to JIS carry the same numbers but bend at different temperatures (see Kyoto cones, below).
+> Luôn viết “SK” trước số. Nhiều công thức men cũ của Nhật chỉ nói “SK 8” hoặc “SK 9” mà không nói côn của ai. Côn Kyoto và côn SK theo JIS mang cùng số nhưng cong ở các nhiệt độ khác nhau (xem Côn Kyoto, bên dưới).
 
-### The large cones
+### Các côn lớn
 
-The standard has two sizes. Large cones (大型コーン) are "mainly used for measuring the degree of firing" (焼度測定), which is what a potter wants. Small cones (SK 26 to SK 42, at the top of the range) are "mainly used for refractoriness tests" and are not covered here. The table below gives the large cones from SK 022 to SK 20.
+Tiêu chuẩn có hai cỡ. Côn lớn (oogata kon) “chủ yếu được dùng để đo mức nung” (shoudo sokutei), đó là điều thợ gốm cần. Côn nhỏ (SK 26 đến SK 42, ở đầu trên của dãy) “chủ yếu được dùng cho các thử nghiệm độ chịu lửa” và không được đề cập ở đây. Bảng dưới đây nêu các côn lớn từ SK 022 đến SK 20.
 
-The numbers run from SK 022, the coolest, up to SK 20 here. Between SK 015 and SK 6 the printed numbers carry an "a" (SK 015a, SK 6a); write it as printed.
+Các số chạy từ SK 022, nguội nhất, đến SK 20 ở đây. Giữa SK 015 và SK 6, các số in có chữ “a” (SK 015a, SK 6a); hãy viết như đã in.
 
-### Setting large cones
+### Đặt côn lớn
 
-Set each large cone in a plaque or a pat of clay, leaning toward its bending face. As with any cone, keep the height and the lean the same from firing to firing, because a difference in either changes how far it bends. Set the three cones of the pack (below) together, deep in the kiln near the middle of the load, where they get the heat the ware gets, yet where you can see them through a peephole; before you close the kiln, check that you can see all three.
+Đặt mỗi côn lớn trong một tấm côn hoặc một viên đất, nghiêng về phía mặt cong của nó. Như với mọi côn, hãy giữ chiều cao và độ nghiêng giống nhau từ lần nung này sang lần nung khác, vì khác biệt ở một trong hai làm thay đổi mức độ nó cong. Đặt ba côn của bộ côn (bên dưới) cùng nhau, sâu trong lò gần giữa mẻ xếp, nơi chúng nhận nhiệt mà sản phẩm nhận, nhưng bạn nhìn thấy được chúng qua lỗ quan sát; trước khi đóng lò, hãy kiểm tra rằng bạn thấy được cả ba.
 
-### Guide, firing and guard cones
+### Côn dẫn, côn nung và côn bảo vệ
 
-Cones are sold and set as three: a guide cone, a firing cone at the target, and a guard cone. Take the firing cone as the SK number your recipe or clay names, the guide cone as the next cooler cone (one row up in the table) and the guard cone as the next hotter one. When the guide cone starts to bend, the end is near; when the guard cone bends, the firing has gone too far.
+Côn được bán và đặt theo bộ ba: một côn dẫn, một côn nung ở mục tiêu, và một côn bảo vệ. Lấy côn nung là số SK mà công thức men hoặc đất của bạn nêu, côn dẫn là côn nguội hơn kế tiếp (một hàng lên trên trong bảng) và côn bảo vệ là côn nóng hơn kế tiếp. Khi côn dẫn bắt đầu cong, sắp kết thúc; khi côn bảo vệ cong, lần nung đã đi quá xa.
 
-### The SK chart
+### Bảng SK
 
-Table: SK large cones (JIS R 8101): the nominal (JIS) temperature of each
-Label: SK chart
+Table: Côn lớn SK (JIS R 8101): nhiệt độ danh định (JIS) của mỗi côn
+Label: Bảng SK
 
-| Cone    | Nominal (JIS) temperature |
-| ------- | ------------------------: |
-| SK 022  |       {{1112 °F; 600 °C}} |
-| SK 021  |       {{1202 °F; 650 °C}} |
-| SK 020  |       {{1238 °F; 670 °C}} |
-| SK 019  |       {{1274 °F; 690 °C}} |
-| SK 018  |       {{1310 °F; 710 °C}} |
-| SK 017  |       {{1346 °F; 730 °C}} |
-| SK 016  |       {{1382 °F; 750 °C}} |
-| SK 015a |       {{1454 °F; 790 °C}} |
-| SK 014a |       {{1499 °F; 815 °C}} |
-| SK 013a |       {{1535 °F; 835 °C}} |
-| SK 012a |       {{1571 °F; 855 °C}} |
-| SK 011a |       {{1616 °F; 880 °C}} |
-| SK 010a |       {{1652 °F; 900 °C}} |
-| SK 09a  |       {{1688 °F; 920 °C}} |
-| SK 08a  |       {{1724 °F; 940 °C}} |
-| SK 07a  |       {{1760 °F; 960 °C}} |
-| SK 06a  |       {{1796 °F; 980 °C}} |
-| SK 05a  |      {{1832 °F; 1000 °C}} |
-| SK 04a  |      {{1868 °F; 1020 °C}} |
-| SK 03a  |      {{1904 °F; 1040 °C}} |
-| SK 02a  |      {{1940 °F; 1060 °C}} |
-| SK 01a  |      {{1976 °F; 1080 °C}} |
-| SK 1a   |      {{2012 °F; 1100 °C}} |
-| SK 2a   |      {{2048 °F; 1120 °C}} |
-| SK 3a   |      {{2084 °F; 1140 °C}} |
-| SK 4a   |      {{2120 °F; 1160 °C}} |
-| SK 5a   |      {{2156 °F; 1180 °C}} |
-| SK 6a   |      {{2192 °F; 1200 °C}} |
-| SK 7    |      {{2246 °F; 1230 °C}} |
-| SK 8    |      {{2282 °F; 1250 °C}} |
-| SK 9    |      {{2336 °F; 1280 °C}} |
-| SK 10   |      {{2372 °F; 1300 °C}} |
-| SK 11   |      {{2408 °F; 1320 °C}} |
-| SK 12   |      {{2462 °F; 1350 °C}} |
-| SK 13   |      {{2516 °F; 1380 °C}} |
-| SK 14   |      {{2570 °F; 1410 °C}} |
-| SK 15   |      {{2615 °F; 1435 °C}} |
-| SK 16   |      {{2660 °F; 1460 °C}} |
-| SK 17   |      {{2696 °F; 1480 °C}} |
-| SK 18   |      {{2732 °F; 1500 °C}} |
-| SK 19   |      {{2768 °F; 1520 °C}} |
-| SK 20   |      {{2786 °F; 1530 °C}} |
+| Côn     | Nhiệt độ danh định (JIS) |
+| ------- | -----------------------: |
+| SK 022  |      {{1112 °F; 600 °C}} |
+| SK 021  |      {{1202 °F; 650 °C}} |
+| SK 020  |      {{1238 °F; 670 °C}} |
+| SK 019  |      {{1274 °F; 690 °C}} |
+| SK 018  |      {{1310 °F; 710 °C}} |
+| SK 017  |      {{1346 °F; 730 °C}} |
+| SK 016  |      {{1382 °F; 750 °C}} |
+| SK 015a |      {{1454 °F; 790 °C}} |
+| SK 014a |      {{1499 °F; 815 °C}} |
+| SK 013a |      {{1535 °F; 835 °C}} |
+| SK 012a |      {{1571 °F; 855 °C}} |
+| SK 011a |      {{1616 °F; 880 °C}} |
+| SK 010a |      {{1652 °F; 900 °C}} |
+| SK 09a  |      {{1688 °F; 920 °C}} |
+| SK 08a  |      {{1724 °F; 940 °C}} |
+| SK 07a  |      {{1760 °F; 960 °C}} |
+| SK 06a  |      {{1796 °F; 980 °C}} |
+| SK 05a  |     {{1832 °F; 1000 °C}} |
+| SK 04a  |     {{1868 °F; 1020 °C}} |
+| SK 03a  |     {{1904 °F; 1040 °C}} |
+| SK 02a  |     {{1940 °F; 1060 °C}} |
+| SK 01a  |     {{1976 °F; 1080 °C}} |
+| SK 1a   |     {{2012 °F; 1100 °C}} |
+| SK 2a   |     {{2048 °F; 1120 °C}} |
+| SK 3a   |     {{2084 °F; 1140 °C}} |
+| SK 4a   |     {{2120 °F; 1160 °C}} |
+| SK 5a   |     {{2156 °F; 1180 °C}} |
+| SK 6a   |     {{2192 °F; 1200 °C}} |
+| SK 7    |     {{2246 °F; 1230 °C}} |
+| SK 8    |     {{2282 °F; 1250 °C}} |
+| SK 9    |     {{2336 °F; 1280 °C}} |
+| SK 10   |     {{2372 °F; 1300 °C}} |
+| SK 11   |     {{2408 °F; 1320 °C}} |
+| SK 12   |     {{2462 °F; 1350 °C}} |
+| SK 13   |     {{2516 °F; 1380 °C}} |
+| SK 14   |     {{2570 °F; 1410 °C}} |
+| SK 15   |     {{2615 °F; 1435 °C}} |
+| SK 16   |     {{2660 °F; 1460 °C}} |
+| SK 17   |     {{2696 °F; 1480 °C}} |
+| SK 18   |     {{2732 °F; 1500 °C}} |
+| SK 19   |     {{2768 °F; 1520 °C}} |
+| SK 20   |     {{2786 °F; 1530 °C}} |
 
-Every figure is nominal (JIS): the temperature the standard gives for the cone, as printed in Yuko Trading's table. The table does not print a heating rate. The standard gives reference temperatures. At a potter's rate of about 100 °C/h, Kyoto's municipal institute measured its own Kyoto cones bending 47–79 °C cooler than the JIS figure for the same number; we found no such measurements for SK cones to JIS. Set a witness cone and compare.
+Mọi số liệu đều là danh định (JIS): nhiệt độ mà tiêu chuẩn nêu cho côn, như được in trong bảng của Yuko Trading. Bảng không in tốc độ nâng nhiệt. Tiêu chuẩn nêu các nhiệt độ tham chiếu. Ở tốc độ của thợ gốm khoảng 100 °C/h, viện công nghiệp thành phố Kyoto đã đo các côn Kyoto của chính họ cong ở nhiệt độ thấp hơn con số JIS cho cùng số từ 47–79 °C; chúng tôi không tìm thấy các phép đo như vậy cho côn SK theo JIS. Hãy đặt một côn chứng và so sánh.
 
-### Kyoto cones
+### Côn Kyoto
 
-Kyoto cones (京都ゼーゲル), made by Kyoto's municipal institute, are no longer made: news reports say the institute ended production at the close of fiscal 2009. They carry the same numbers as SK cones to JIS but bend cooler: a Kyoto cone bends at about the temperature of the SK cone to JIS two or three numbers lower. A recipe from Kyoto that says "SK 8" may mean a Kyoto cone. The institute has published advice for potters moving from Kyoto cones to Orton cones, and substitutes Orton cone 10 for its own Kyoto SK 12; that is the institute's choice from its own measurements at 100 °C/h, and applies to no other cone.
+Côn Kyoto (Kyoto zeegeru), do viện công nghiệp thành phố Kyoto làm ra, không còn được sản xuất: các bản tin cho biết viện đã chấm dứt sản xuất vào cuối năm tài chính 2009. Chúng mang cùng số với côn SK theo JIS nhưng cong ở nhiệt độ thấp hơn: một côn Kyoto cong ở khoảng nhiệt độ của côn SK theo JIS nguội hơn hai hoặc ba bậc. Một công thức men từ Kyoto nói “SK 8” có thể có nghĩa là một côn Kyoto. Viện đã công bố lời khuyên cho thợ gốm chuyển từ côn Kyoto sang côn Orton, và dùng côn Orton 10 thay cho côn Kyoto SK 12 của chính mình; đó là lựa chọn của viện từ các phép đo riêng của họ ở 100 °C/h, và không áp dụng cho côn nào khác.
 
-### Orton cones sold in Japan
+### Côn Orton được bán ở Nhật
 
-Orton self-supporting cones are sold in Japan under the name 立つゼーゲル ("standing Seger"), because they need no plaque or stand. They are Orton cones, with Orton's numbers and Orton's chart (above): fire to one only by its Orton number, and keep SK and Orton cones in separate packs, never in the same one.
+Côn tự đứng của Orton được bán ở Nhật với tên Seger đứng (tatsu zeegeru), vì chúng không cần tấm côn hay giá đỡ. Chúng là côn Orton, với số của Orton và bảng của Orton (ở trên): chỉ nung theo một côn bằng số Orton của nó, và giữ côn SK và côn Orton trong các bộ riêng biệt, không bao giờ trong cùng một bộ.
 
-### Sources for SK cones
+### Nguồn cho côn SK
 
-- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (the SK table, checked 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
-- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (in force, reconfirmed 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
-- [Kyoto Municipal Institute of Industrial Technology and Culture: points to note when moving from Kyoto cones to Orton cones](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
+- [Yuko Trading: hyoujun youtou ondo hyou (bảng SK, đã kiểm tra 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
+- [JSA: JIS R 8101:1999, taikado shiken you hyoujun koun (đang có hiệu lực, xác nhận lại 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
+- [Kyoto Municipal Institute of Industrial Technology and Culture: những điểm cần lưu ý khi chuyển từ côn Kyoto sang côn Orton](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
 
 :::
 

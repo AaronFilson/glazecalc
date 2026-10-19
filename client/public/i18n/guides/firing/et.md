@@ -165,69 +165,69 @@ Arvestage erinevustega: Orton ütleb: „Tavaliselt näete ahju ülaosa ja alaos
 
 :::orton
 
-## The kiln sitter {#kiln-sitter lang=en}
+## Kiln-Sitter {#kiln-sitter}
 
-A **kiln sitter** is the mechanical switch, on the outside of many basic and older kilns, that turns the kiln off when a small cone bends. The best known is the Dawson Kiln-Sitter. It makes firing easier, but it is a convenience, not a safety device.
+**Kiln-Sitter** on mehaaniline lüliti, mis lülitab ahju välja, kui väike koonus paindub; see asub paljude lihtsate ja vanemate ahjude välisküljel. Tuntuim neist on Dawsoni Kiln-Sitter. See teeb põletamise lihtsamaks, kuid on mugavusvahend, mitte ohutusseade.
 
-### How it works
+### Kuidas see töötab
 
-A porcelain tube reaches into the kiln. At its end, a small cone or a bar lies across two metal supports, under a **sensing rod** that pivots like a seesaw. Outside the kiln, the other end of the rod holds up a weight by a small claw. When the cone softens and bends to about 90°, the rod drops far enough to release the weight, the weight falls, and the power to the elements is cut.
+Portselantoru ulatub ahju sisse. Selle otsas lebab väike koonus või pulk risti kahel metalltoel, **andurivarda** all, mis pöördub nagu kiiklaud. Väljaspool ahju hoiab varda teine ots väikese haaratsiga üleval raskust. Kui koonus pehmeneb ja paindub umbes 90° võrra, langeb varras piisavalt, et raskus vabaneks, raskus kukub ja küttekehade toide katkeb.
 
-Small cones and bars "give equivalent heat treatment". Orton notes that many beginners choose bars, because their even shape makes it easy to place them the same way every time. A small cone tapers, so where it sits matters: with its thin part under the rod the kiln shuts off cooler, and with its thick part hotter, a shift of "as much as 1/2 cone".
+Väikesed koonused ja pulgad „annavad samaväärse kuumtöötluse“. Orton märgib, et paljud algajad valivad pulgad, sest nende ühtlane kuju võimaldab neid hõlpsalt iga kord ühtemoodi paigutada. Väike koonus aheneb tipu poole, nii et oluline on, kuidas see lebab: kui varda all on selle õhem osa, lülitub ahi välja jahedamal, ja kui jämedam osa, siis kuumemal; vahe on „koguni 1/2 koonust“.
 
-### Which cone goes in the sitter
+### Milline koonus panna Kiln-Sitterisse
 
-Sources disagree. Dawson, who made the sitter, says to use the same number as the firing cone on the shelf, and to go one number hotter only if the shelf cone stays unbent. L&L says to use one number hotter than the shelf cones, because the sitter sits near the wall and the elements, gets more heat, and tends to shut off early. Orton settles the principle: "The shelf cone is the final judge of the firing process, not the Kiln-Sitter cone or bar."
-
-> [!NOTE]
-> Our starting point: put a small cone of the same number as your target in the sitter, with a cone pack on the shelf. If the shelf firing cone is under-bent when the kiln shuts off, go one number hotter in the sitter next time, or set the thicker part of the cone under the rod. If it is over-bent, do the opposite.
-
-### Setting it up, and checks before every firing
-
-Dawson's procedure, which doubles as a check before every firing:
-
-1. Turn all the switches off. Check that the sensing rod moves freely, sits centered in the tube and is not bent or corroded. If it is sluggish, Dawson says to replace the tube assembly.
-2. Brush a thin coat of high-fire **kiln wash** (a coating that stops melted material sticking) onto the cone supports and the rod where it touches the cone. Never put wash on the cone or the porcelain tube.
-3. Load shelves and ware at least 1 in (25 mm) above or below the tube, so nothing can touch, fall against or block it.
-4. Lift the weight, press the claw down onto the trigger, and lay the cone or bar flat on the supports against the metal step, as your sitter's manual shows, the same way every time. Check it again before closing the lid: "AN IMPROPERLY PLACED CONE OR BAR COULD CAUSE AN OVERFIRING."
-5. Set the limit timer and push in the plunger until it locks. Keep the kiln level and the space under the weight clear, so the weight can fall.
-
-### The limit timer
-
-Many sitters, including Dawson's LT models, have a **limit timer**: a clock that turns the kiln off after a set time, as a backup "in case the KILN-SITTER fails". It should always be set longer than the firing is expected to take. Sources set the margin differently:
-
-Table: How long to set the limit timer
-Label: Limit timer settings
-
-| Source    | Setting                                                                                                                |
-| --------- | ---------------------------------------------------------------------------------------------------------------------- |
-| Dawson    | ½ hour longer than the expected firing time until you know the kiln, later ¼ hour longer; never set it beyond 20 hours |
-| L&L       | Very high the first time, noting how long the firing takes; after that, about 1 hour longer                            |
-| Bracker's | 30 minutes to 1 hour longer than the firing time                                                                       |
+Allikad on eri meelt. Kiln-Sitteri valmistanud Dawson ütleb, et kasutada tuleb sama numbrit, mis on ahjuplaadil oleval sihtkoonusel, ja minna ühe numbri võrra kuumemale ainult siis, kui ahjuplaadi koonus jääb paindumata. L&L ütleb, et kasutada tuleb ahjuplaadi koonustest ühe numbri võrra kuumemat, sest Kiln-Sitter asub seina ja küttekehade lähedal, saab rohkem kuumust ja kipub ahju liiga vara välja lülitama. Orton määrab põhimõtte: „Põletuse lõplik kohtunik on ahjuplaadil olev koonus, mitte Kiln-Sitteri koonus või pulk.“
 
 > [!NOTE]
-> Our starting point: generous the first time (within the dial's 20 hours), then ½ to 1 hour longer than the time you recorded. The timer also tells you how long a firing took: set at 7 and ending at 1 means 6 hours.
+> Selle juhendi lähtepunkt: pange Kiln-Sitterisse sihtkoonusega sama numbriga väike koonus ja ahjuplaadile koonusekomplekt. Kui ahjuplaadi sihtkoonus on ahju väljalülitumisel alapaindunud, pange järgmisel korral Kiln-Sitterisse ühe numbri võrra kuumem koonus või asetage varda alla koonuse jämedam osa. Kui see on ülepaindunud, tehke vastupidi.
 
-### When it shuts off early or late
+### Seadistamine ja kontroll enne iga põletust
 
-After each firing, read the sitter cone beside the shelf cones.
+Dawsoni kord, mis on ühtlasi kontroll enne iga põletust:
 
-Table: Reading the sitter after a firing
-Label: Kiln sitter problems
+1. Lülitage kõik lülitid välja. Kontrollige, et andurivarras liigub vabalt, asub toru keskel ega ole kõver ega korrodeerunud. Kui see liigub kangelt, ütleb Dawson, et tuleb vahetada kogu torukoost.
+2. Kandke koonusetugedele ja vardale kohas, kus see koonust puudutab, õhuke kiht kõrgkuumusele sobivat **ahjuplaatide kaitseainet** (kate, mis takistab sulanud materjali kinnijäämist). Ärge kunagi kandke kaitseainet koonusele ega portselantorule.
+3. Pakkige ahjuplaadid ja esemed torust vähemalt 1 toll (25 mm) kõrgemale või madalamale, et miski ei saaks seda puudutada, selle vastu kukkuda ega seda blokeerida.
+4. Tõstke raskus üles, suruge haarats alla päästikplaadile ja asetage koonus või pulk tugedele lapiti vastu metallastet, nagu näitab teie Kiln-Sitteri kasutusjuhend, iga kord ühtemoodi. Kontrollige seda enne kaane sulgemist uuesti: „VALESTI PAIGUTATUD KOONUS VÕI PULK VÕIB PÕHJUSTADA ÜLEPÕLETUSE.“
+5. Seadke kaitsetaimer ja vajutage käivitusnupp sisse, kuni see lukustub. Hoidke ahi loodis ja raskuse all olev ruum vaba, et raskus saaks kukkuda.
 
-| What you see                                    | Likely cause                                                                                           | What to do                                                       |
-| ----------------------------------------------- | ------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------- |
-| Sitter tripped, shelf firing cone under-bent    | The sitter ran hotter than the shelf (it sits near the wall)                                           | One cone hotter in the sitter, or the thicker part under the rod |
-| Sitter cone sagged well past 90°                | The kiln climbed too fast near the end                                                                 | Lower the switch settings, so the climb is slower (Dawson)       |
-| Sitter cone did not bend, or melted into a blob | The sitter itself: poor adjustment, a bent or corroded rod, or something lodged in or against the tube | Check and adjust the sitter by its manual before firing again    |
-| Early or late every time                        | Out of adjustment, or a worn rod                                                                       | Check with the firing gauge; move the trigger plate              |
+### Kaitsetaimer
 
-To check the adjustment, Dawson uses a **firing gauge** that holds the rod where a fully bent cone would leave it; there should then be "1/16th-inch clearance" (about 1.6 mm) at the claw. Check it every 30 firings. Ceramics Monthly's rule: if the kiln shuts off early, move the trigger plate up slightly; if late, move it down slightly. Whatever the sitter does, "Always trust large witness cones over small sitter cones."
+Paljudel Kiln-Sitteritel, sealhulgas Dawsoni LT-mudelitel, on **kaitsetaimer**: kell, mis lülitab ahju määratud aja järel välja, varuks „juhuks, kui KILN-SITTER üles ütleb“. See peaks alati olema seatud pikemaks, kui põletus eeldatavasti kestab. Allikad annavad varu erinevalt:
+
+Table: Kui pikaks kaitsetaimer seada
+Label: Kaitsetaimeri seaded
+
+| Allikas   | Seadistus                                                                                                                         |
+| --------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| Dawson    | Kuni te oma ahju veel ei tunne, ½ tundi pikem kui eeldatav põletusaeg, hiljem ¼ tundi pikem; ärge seadke seda kunagi üle 20 tunni |
+| L&L       | Esimesel korral väga pikk, märkides üles, kui kaua põletus kestab; edaspidi umbes 1 tund pikem                                    |
+| Bracker’s | Põletusajast 30 minutit kuni 1 tund pikem                                                                                         |
+
+> [!NOTE]
+> Selle juhendi lähtepunkt: esimesel korral heldelt (skaala 20 tunni piires), seejärel ½ kuni 1 tund pikem kui teie kirja pandud aeg. Kaitsetaimer näitab ka, kui kaua põletus kestis: kui see oli seatud 7 peale ja näitas lõpus 1, tähendab see 6 tundi.
+
+### Kui ahi lülitub välja liiga vara või liiga hilja
+
+Lugege pärast iga põletust Kiln-Sitteri koonust koos ahjuplaadi koonustega.
+
+Table: Kiln-Sitteri lugemine pärast põletust
+Label: Kiln-Sitteri probleemid
+
+| Mida näete                                                         | Tõenäoline põhjus                                                                                       | Mida teha                                                                                |
+| ------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| Kiln-Sitter lülitas ahju välja, ahjuplaadi sihtkoonus alapaindunud | Kiln-Sitteris oli kuumem kui ahjuplaadil (see asub seina lähedal)                                       | Kiln-Sitterisse ühe numbri võrra kuumem koonus või varda alla jämedam osa                |
+| Kiln-Sitteri koonus vajus palju üle 90°                            | Ahi tõusis lõpus liiga kiiresti                                                                         | Keerake lülitid madalamatesse asenditesse, et tõus oleks aeglasem (Dawson)               |
+| Kiln-Sitteri koonus ei paindunud või sulas tilgaks                 | Kiln-Sitter ise: halb reguleering, kõver või korrodeerunud varras või midagi torus või vastu toru kinni | Kontrollige ja reguleerige Kiln-Sitter enne järgmist põletust selle kasutusjuhendi järgi |
+| Iga kord liiga vara või liiga hilja                                | Reguleeringust väljas või kulunud varras                                                                | Kontrollige seadistusmõõdikuga; nihutage päästikplaati                                   |
+
+Reguleeringu kontrollimiseks kasutab Dawson **seadistusmõõdikut**, mis hoiab varrast seal, kuhu täielikult paindunud koonus selle jätaks; haaratsi juures peaks siis olema „1/16 tolli vahet“ (umbes 1,6 mm). Kontrollige seda iga 30 põletuse järel. Ajakirja Ceramics Monthly reegel: kui ahi lülitub välja liiga vara, nihutage päästikplaati veidi üles; kui liiga hilja, nihutage seda veidi alla. Mida iganes Kiln-Sitter teeb: „Usaldage alati suuri kontrollkoonuseid rohkem kui Kiln-Sitteri väikesi koonuseid.“
 
 > [!WARNING]
-> **A kiln sitter is not a safety device.** Dawson's manual says it "is NOT intended to perform as a fail-safe shut-off device and your kiln should NOT be left unattended beyond the estimated firing time." Something as simple as greenware falling against the tube "might cause an over-firing". Be there to check the kiln when it should be finishing, and never fire it over or near anything that burns, such as a wood floor or carpet.
+> **Kiln-Sitter ei ole ohutusseade.** Dawsoni kasutusjuhend ütleb, et see „EI OLE mõeldud rikkekindlaks väljalülitusseadmeks ja teie ahju EI PEAKS jätma järelevalveta kauemaks kui hinnanguline põletusaeg“. Isegi nii lihtne asi kui vastu toru kukkuv põletamata ese{{en: greenware}} „võib põhjustada ülepõletuse“. Olge kohal, et ahju kontrollida, kui põletus peaks lõppema, ja ärge kunagi põletage millegi süttiva kohal ega lähedal, nagu puitpõrand või vaip.
 
-The sitter is built for firings "up to and including Cone 8". It cannot hold a temperature or cool slowly by itself. With practice and a log, though, you can "become the controller", as Digitalfire puts it: watch the cones and turn the switches by hand.
+Kiln-Sitter on ehitatud põletusteks „kuni koonuseni 8 kaasa arvatud“. See ei suuda ise temperatuuri hoida ega aeglaselt jahutada. Harjutamise ja põletuspäevikuga võite siiski „ise kontrolleriks hakata“, nagu Digitalfire ütleb: jälgige koonuseid ja keerake lüliteid käsitsi.
 
 :::
 
@@ -281,92 +281,92 @@ Label: Järgmise põletuse korrigeerimine
 
 :::sk
 
-## Firing to SK cones {#sk-cones lang=en}
+## Põletamine SK-koonuste järgi {#sk-cones}
 
-SK cones are the pyrometric cones made to Japan's standard, JIS R 8101, and sold in Japan by dealers such as Yuko Trading (有恒商事). Like any cone, an SK cone measures heatwork, not temperature alone: it softens and bends over when the ware has had enough heat, and you read how far it bent. Witness cones, reading how far a cone has bent, and holds work for it as for any cone. This section names each cone's system, and never turns an SK number into another system's number: the numbers of different cone series are not interchangeable.
+SK-koonused on Jaapani standardi JIS R 8101 järgi valmistatud püromeetrilised koonused, mida Jaapanis müüvad sellised edasimüüjad nagu Yuko Trading (有恒商事). Nagu iga koonus, mõõdab ka SK-koonus kuumustööd{{en: heatwork}}, mitte ainult temperatuuri: see pehmeneb ja paindub, kui esemed on saanud piisavalt kuumust, ja teie loete, kui kaugele see paindus. Kontrollkoonused{{en: witness cone}}, koonuse painde lugemine ja hoid toimivad sellega samamoodi nagu iga teise koonusega. See jaotis nimetab iga koonuse juures selle süsteemi ega teisenda kunagi SK-numbrit mõne teise süsteemi numbriks: eri koonuseseeriate numbrid ei ole omavahel asendatavad.
 
 > [!NOTE]
-> Always write "SK" before the number. Many older Japanese recipes say only "SK 8" or "SK 9" without saying whose cone. Kyoto cones and SK cones to JIS carry the same numbers but bend at different temperatures (see Kyoto cones, below).
+> Kirjutage numbri ette alati „SK“. Paljudes vanemates Jaapani retseptides on ainult „SK 8“ või „SK 9“, ütlemata, kelle koonust mõeldakse. Kyoto koonustel ja JIS-i järgi valmistatud SK-koonustel on samad numbrid, kuid need painduvad eri temperatuuril (vt allpool „Kyoto koonused“).
 
-### The large cones
+### Suured koonused
 
-The standard has two sizes. Large cones (大型コーン) are "mainly used for measuring the degree of firing" (焼度測定), which is what a potter wants. Small cones (SK 26 to SK 42, at the top of the range) are "mainly used for refractoriness tests" and are not covered here. The table below gives the large cones from SK 022 to SK 20.
+Standardis on kaks suurust. Suuri koonuseid (大型コーン) „kasutatakse peamiselt põletusastme mõõtmiseks“ (焼度測定) ja just seda keraamik vajabki. Väikesi koonuseid (SK 26 kuni SK 42, vahemiku ülaotsas) „kasutatakse peamiselt tulekindluse katseteks“ ja neid siin ei käsitleta. Allolevas tabelis on suured koonused SK 022 kuni SK 20.
 
-The numbers run from SK 022, the coolest, up to SK 20 here. Between SK 015 and SK 6 the printed numbers carry an "a" (SK 015a, SK 6a); write it as printed.
+Numbrid algavad siin kõige jahedamast koonusest SK 022 ja lõpevad koonusega SK 20. Koonuste SK 015 ja SK 6 vahel on trükitud numbrite järel „a“ (SK 015a, SK 6a); kirjutage see nii, nagu on trükitud.
 
-### Setting large cones
+### Suurte koonuste paigaldamine
 
-Set each large cone in a plaque or a pat of clay, leaning toward its bending face. As with any cone, keep the height and the lean the same from firing to firing, because a difference in either changes how far it bends. Set the three cones of the pack (below) together, deep in the kiln near the middle of the load, where they get the heat the ware gets, yet where you can see them through a peephole; before you close the kiln, check that you can see all three.
+Pange iga suur koonus koonusealusesse või savitükki, kaldu oma paindekülje poole. Nagu iga koonuse puhul, hoidke kõrgus ja kalle põletusest põletusse samad, sest erinevus kummaski muudab seda, kui kaugele koonus paindub. Pange komplekti{{en: cone pack}} kolm koonust (vt allpool) koos sügavale ahju, ahjutäie keskosa lähedale, kus need saavad sama kuumust, mida saavad esemed, kuid kus neid on siiski vaateavast näha; enne ahju sulgemist kontrollige, et näete kõiki kolme.
 
-### Guide, firing and guard cones
+### Hoiatus-, siht- ja valvekoonus
 
-Cones are sold and set as three: a guide cone, a firing cone at the target, and a guard cone. Take the firing cone as the SK number your recipe or clay names, the guide cone as the next cooler cone (one row up in the table) and the guard cone as the next hotter one. When the guide cone starts to bend, the end is near; when the guard cone bends, the firing has gone too far.
+Koonuseid müüakse ja pannakse kolmekaupa: hoiatuskoonus, sihtkoonus sihttemperatuuri jaoks ja valvekoonus. Võtke sihtkoonuseks SK-number, mille teie retsept või savi nimetab, hoiatuskoonuseks ühe numbri võrra jahedam koonus (tabelis üks rida ülevalpool) ja valvekoonuseks ühe numbri võrra kuumem koonus. Kui hoiatuskoonus hakkab painduma, on lõpp lähedal; kui valvekoonus paindub, on põletus läinud liiga kaugele.
 
-### The SK chart
+### SK-tabel
 
-Table: SK large cones (JIS R 8101): the nominal (JIS) temperature of each
-Label: SK chart
+Table: Suured SK-koonused (JIS R 8101): iga koonuse nominaalne (JIS) temperatuur
+Label: SK-tabel
 
-| Cone    | Nominal (JIS) temperature |
-| ------- | ------------------------: |
-| SK 022  |       {{1112 °F; 600 °C}} |
-| SK 021  |       {{1202 °F; 650 °C}} |
-| SK 020  |       {{1238 °F; 670 °C}} |
-| SK 019  |       {{1274 °F; 690 °C}} |
-| SK 018  |       {{1310 °F; 710 °C}} |
-| SK 017  |       {{1346 °F; 730 °C}} |
-| SK 016  |       {{1382 °F; 750 °C}} |
-| SK 015a |       {{1454 °F; 790 °C}} |
-| SK 014a |       {{1499 °F; 815 °C}} |
-| SK 013a |       {{1535 °F; 835 °C}} |
-| SK 012a |       {{1571 °F; 855 °C}} |
-| SK 011a |       {{1616 °F; 880 °C}} |
-| SK 010a |       {{1652 °F; 900 °C}} |
-| SK 09a  |       {{1688 °F; 920 °C}} |
-| SK 08a  |       {{1724 °F; 940 °C}} |
-| SK 07a  |       {{1760 °F; 960 °C}} |
-| SK 06a  |       {{1796 °F; 980 °C}} |
-| SK 05a  |      {{1832 °F; 1000 °C}} |
-| SK 04a  |      {{1868 °F; 1020 °C}} |
-| SK 03a  |      {{1904 °F; 1040 °C}} |
-| SK 02a  |      {{1940 °F; 1060 °C}} |
-| SK 01a  |      {{1976 °F; 1080 °C}} |
-| SK 1a   |      {{2012 °F; 1100 °C}} |
-| SK 2a   |      {{2048 °F; 1120 °C}} |
-| SK 3a   |      {{2084 °F; 1140 °C}} |
-| SK 4a   |      {{2120 °F; 1160 °C}} |
-| SK 5a   |      {{2156 °F; 1180 °C}} |
-| SK 6a   |      {{2192 °F; 1200 °C}} |
-| SK 7    |      {{2246 °F; 1230 °C}} |
-| SK 8    |      {{2282 °F; 1250 °C}} |
-| SK 9    |      {{2336 °F; 1280 °C}} |
-| SK 10   |      {{2372 °F; 1300 °C}} |
-| SK 11   |      {{2408 °F; 1320 °C}} |
-| SK 12   |      {{2462 °F; 1350 °C}} |
-| SK 13   |      {{2516 °F; 1380 °C}} |
-| SK 14   |      {{2570 °F; 1410 °C}} |
-| SK 15   |      {{2615 °F; 1435 °C}} |
-| SK 16   |      {{2660 °F; 1460 °C}} |
-| SK 17   |      {{2696 °F; 1480 °C}} |
-| SK 18   |      {{2732 °F; 1500 °C}} |
-| SK 19   |      {{2768 °F; 1520 °C}} |
-| SK 20   |      {{2786 °F; 1530 °C}} |
+| Koonus  | Nominaalne (JIS) temperatuur |
+| ------- | ---------------------------: |
+| SK 022  |          {{1112 °F; 600 °C}} |
+| SK 021  |          {{1202 °F; 650 °C}} |
+| SK 020  |          {{1238 °F; 670 °C}} |
+| SK 019  |          {{1274 °F; 690 °C}} |
+| SK 018  |          {{1310 °F; 710 °C}} |
+| SK 017  |          {{1346 °F; 730 °C}} |
+| SK 016  |          {{1382 °F; 750 °C}} |
+| SK 015a |          {{1454 °F; 790 °C}} |
+| SK 014a |          {{1499 °F; 815 °C}} |
+| SK 013a |          {{1535 °F; 835 °C}} |
+| SK 012a |          {{1571 °F; 855 °C}} |
+| SK 011a |          {{1616 °F; 880 °C}} |
+| SK 010a |          {{1652 °F; 900 °C}} |
+| SK 09a  |          {{1688 °F; 920 °C}} |
+| SK 08a  |          {{1724 °F; 940 °C}} |
+| SK 07a  |          {{1760 °F; 960 °C}} |
+| SK 06a  |          {{1796 °F; 980 °C}} |
+| SK 05a  |         {{1832 °F; 1000 °C}} |
+| SK 04a  |         {{1868 °F; 1020 °C}} |
+| SK 03a  |         {{1904 °F; 1040 °C}} |
+| SK 02a  |         {{1940 °F; 1060 °C}} |
+| SK 01a  |         {{1976 °F; 1080 °C}} |
+| SK 1a   |         {{2012 °F; 1100 °C}} |
+| SK 2a   |         {{2048 °F; 1120 °C}} |
+| SK 3a   |         {{2084 °F; 1140 °C}} |
+| SK 4a   |         {{2120 °F; 1160 °C}} |
+| SK 5a   |         {{2156 °F; 1180 °C}} |
+| SK 6a   |         {{2192 °F; 1200 °C}} |
+| SK 7    |         {{2246 °F; 1230 °C}} |
+| SK 8    |         {{2282 °F; 1250 °C}} |
+| SK 9    |         {{2336 °F; 1280 °C}} |
+| SK 10   |         {{2372 °F; 1300 °C}} |
+| SK 11   |         {{2408 °F; 1320 °C}} |
+| SK 12   |         {{2462 °F; 1350 °C}} |
+| SK 13   |         {{2516 °F; 1380 °C}} |
+| SK 14   |         {{2570 °F; 1410 °C}} |
+| SK 15   |         {{2615 °F; 1435 °C}} |
+| SK 16   |         {{2660 °F; 1460 °C}} |
+| SK 17   |         {{2696 °F; 1480 °C}} |
+| SK 18   |         {{2732 °F; 1500 °C}} |
+| SK 19   |         {{2768 °F; 1520 °C}} |
+| SK 20   |         {{2786 °F; 1530 °C}} |
 
-Every figure is nominal (JIS): the temperature the standard gives for the cone, as printed in Yuko Trading's table. The table does not print a heating rate. The standard gives reference temperatures. At a potter's rate of about 100 °C/h, Kyoto's municipal institute measured its own Kyoto cones bending 47–79 °C cooler than the JIS figure for the same number; we found no such measurements for SK cones to JIS. Set a witness cone and compare.
+Iga arv on nominaalne (JIS): temperatuur, mille standard koonusele annab, nagu see on trükitud Yuko Tradingu tabelis. Tabelis ei ole kuumutuskiirust. Standard annab võrdlustemperatuurid. Keraamikule tavapärase, umbes 100 °C/h kuumutuskiiruse juures mõõtis Kyoto linna instituut, et tema enda Kyoto koonused painduvad 47–79 °C jahedamal kui sama numbri JIS-i temperatuur; JIS-i järgi valmistatud SK-koonuste kohta me selliseid mõõtmisi ei leidnud. Pange kontrollkoonus ja võrrelge.
 
-### Kyoto cones
+### Kyoto koonused
 
-Kyoto cones (京都ゼーゲル), made by Kyoto's municipal institute, are no longer made: news reports say the institute ended production at the close of fiscal 2009. They carry the same numbers as SK cones to JIS but bend cooler: a Kyoto cone bends at about the temperature of the SK cone to JIS two or three numbers lower. A recipe from Kyoto that says "SK 8" may mean a Kyoto cone. The institute has published advice for potters moving from Kyoto cones to Orton cones, and substitutes Orton cone 10 for its own Kyoto SK 12; that is the institute's choice from its own measurements at 100 °C/h, and applies to no other cone.
+Kyoto koonuseid (京都ゼーゲル), mida valmistas Kyoto linna instituut, enam ei toodeta: uudiste järgi lõpetas instituut tootmise 2009. majandusaasta lõpus. Neil on samad numbrid kui JIS-i järgi valmistatud SK-koonustel, kuid need painduvad jahedamal: Kyoto koonus paindub umbes sama temperatuuri juures kui JIS-i järgi valmistatud SK-koonus, mille number on kahe või kolme võrra väiksem. Kyoto retsept, milles on „SK 8“, võib tähendada Kyoto koonust. Instituut on avaldanud nõuandeid keraamikutele, kes lähevad Kyoto koonustelt üle Ortoni koonustele, ja asendab oma Kyoto koonuse SK 12 Ortoni koonusega 10; see on instituudi enda valik, mis põhineb tema enda mõõtmistel kiirusel 100 °C/h, ega kehti ühegi teise koonuse kohta.
 
-### Orton cones sold in Japan
+### Jaapanis müüdavad Ortoni koonused
 
-Orton self-supporting cones are sold in Japan under the name 立つゼーゲル ("standing Seger"), because they need no plaque or stand. They are Orton cones, with Orton's numbers and Orton's chart (above): fire to one only by its Orton number, and keep SK and Orton cones in separate packs, never in the same one.
+Ortoni isetoetuvaid koonuseid müüakse Jaapanis nime all 立つゼーゲル („seisev Seger“), sest need ei vaja koonusealust ega hoidikut. Need on Ortoni koonused, Ortoni numbrite ja Ortoni tabeliga (vt eespool): põletage sellise koonuseni ainult selle Ortoni numbri järgi ning hoidke SK- ja Ortoni koonuseid eri komplektides, mitte kunagi samas.
 
-### Sources for SK cones
+### SK-koonuste allikad
 
-- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (the SK table, checked 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
-- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (in force, reconfirmed 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
-- [Kyoto Municipal Institute of Industrial Technology and Culture: points to note when moving from Kyoto cones to Orton cones](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
+- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (SK-tabel, kontrollitud 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
+- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (kehtiv, uuesti kinnitatud 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
+- [Kyoto Municipal Institute of Industrial Technology and Culture: mida arvestada üleminekul Kyoto koonustelt Ortoni koonustele](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
 
 :::
 

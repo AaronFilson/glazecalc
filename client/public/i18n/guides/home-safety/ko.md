@@ -149,38 +149,38 @@ Pet Poison Helpline은 “납은 모든 종에게 유독하지만, 어리거나 
 
 반려동물이 작업실의 무언가를 먹거나 마셨을 수 있거나, 위와 같은 증상을 보이면, 원료 이름과 반려동물의 체중을 바로 말할 수 있게 준비해 수의사나 동물 중독 상담 전화(맨 위의 표 참조)로 전화하세요.
 
-## The kiln {#the-kiln lang=en}
+## 가마 {#the-kiln}
 
-### The outside gets hot enough to burn
+### 화상을 입을 만큼 뜨거운 가마 겉면
 
-A UK schools risk assessment says a kiln's outside "can reach 160 °C and possibly more" (about 320 °F), and a school kiln guide reports metal bands at up to 460 °F (about 240 °C). Skutt, a kiln maker, recommends a kiln room that can be locked against children and pets. Where a room cannot be locked, the school guide suggests a barrier such as a kiln safety screen.
+영국의 한 학교용 위험성 평가는 가마 겉면이 “160 °C, 어쩌면 그 이상에 이를 수 있다”(약 320 °F)고 하며, 한 학교용 가마 관리 안내서는 금속 밴드가 최대 460 °F(약 240 °C)에 이른다고 보고합니다. 가마 제조사 Skutt은 아이와 반려동물이 들어오지 못하게 잠글 수 있는 가마실을 권합니다. 방을 잠글 수 없는 경우, 그 학교용 안내서는 가마 안전 스크린 같은 차단물을 제안합니다.
 
-Small children and pets cannot understand a warning sign. We suggest keeping them behind a locked door or a barrier while the kiln fires and while it cools, and posting a warning sign for everyone else.
+어린아이와 반려동물은 경고 표지를 이해하지 못합니다. 가마를 소성하는 동안과 식는 동안에는 잠긴 문이나 차단물 뒤에 있게 하고, 다른 사람들을 위해서는 경고 표지를 붙여 두기를 권합니다.
 
-### Space around it
+### 주변 공간
 
-Sources disagree on clearance. Rio Grande says at least 12 inches (30 cm) from walls and anything combustible. L&L strongly recommends 18 inches (46 cm) to all walls, and the building code it cites asks for 3 feet (0.9 m) from combustible walls. Follow your kiln's manual and local fire code; if you are unsure, allow 18 inches from any wall and 3 feet from anything that can burn. In a garage, keep cars, fuel and paint well away.
+이격 거리{{en: clearance}}에 대해서는 자료마다 다릅니다. Rio Grande는 벽과 가연물에서 최소 12인치(30 cm)를 띄우라고 합니다. L&L은 모든 벽에서 18인치(46 cm)를 강력히 권하며, L&L이 인용하는 건축 법규는 가연성 벽에서 3피트(0.9 m)를 요구합니다. 사용하는 가마의 사용 설명서와 지역의 소방 법규를 따르세요. 확실하지 않으면 모든 벽에서 18인치, 탈 수 있는 모든 것에서 3피트를 띄우세요. 차고라면 자동차, 연료, 페인트를 충분히 멀리 두세요.
 
-### Power
+### 전원
 
-Rio Grande recommends a **dedicated circuit** (one that powers nothing else) with a properly grounded outlet. We suggest no extension cord. Between firings, switch off the kiln's breaker or disconnect switch, or unplug it, so a child cannot start it.
+Rio Grande는 제대로 접지된 콘센트가 있는 **전용 회로**(다른 것에는 전기를 공급하지 않는 회로)를 권합니다. 저희는 연장선을 쓰지 않기를 권합니다. 소성과 소성 사이에는 가마의 차단기나 전원 차단 스위치를 내리거나 플러그를 뽑아, 아이가 가마를 켜지 못하게 하세요.
 
-### Be there when the firing ends
+### 소성이 끝날 때 곁에 있기
 
-A **kiln sitter** is the mechanical switch on many manual kilns: a small cone bends at the end of the firing and trips the switch off. Its manual says it "is NOT intended to perform as a fail-safe shut-off device." Rio Grande says never to leave a firing kiln unattended, "especially near the expected shut-off time". So stay nearby and check the kiln while it fires, above all near the end; fire only when an adult will be home and awake through the whole firing, check that it has switched off, and keep an ABC fire extinguisher in the kiln room. For how sitters, controllers and schedules work, see [Firing a basic kiln](/guides/firing).
+**킬른 시터**{{en: kiln sitter}}는 여러 수동 가마에 달린 기계식 스위치입니다. 소성이 끝날 무렵 작은 콘{{en: cone}}이 휘면서 스위치를 끕니다. 그 사용 설명서는 킬른 시터가 “고장이 나도 안전하게 전원을 차단하는 장치로 작동하도록 만든 것이 **아니다**”라고 말합니다. Rio Grande는 소성 중인 가마를 “특히 꺼질 것으로 예상되는 시각 무렵에는” 절대 지켜보는 사람 없이 두지 말라고 합니다. 그러니 소성하는 동안, 특히 끝날 무렵에는 가까이에 머물면서 가마를 확인하세요. 소성하는 내내 어른이 집에 있고 깨어 있을 때만 소성하고, 가마가 꺼졌는지 확인하고, 가마실에 ABC 소화기를 두세요. 킬른 시터, 컨트롤러, 소성 스케줄이 작동하는 방식은 《[기본 가마 소성](/guides/firing)》을 보세요.
 
-### Fumes and carbon monoxide
+### 가스와 일산화탄소
 
-Firing gives off fumes, so vent the kiln to the outdoors; [Safe mixing and ventilation](/guides/safe-mixing) explains how. A kiln in an attached garage needs venting that keeps fumes from reaching the house through the connecting door. Keep birds in a far room whenever the kiln fires.
+소성하면 가스가 나오므로 가마를 바깥으로 배기하세요. 방법은 《[안전한 유약 배합과 환기](/guides/safe-mixing)》에서 설명합니다. 집에 붙은 차고에 있는 가마는 가스가 연결된 문을 통해 집 안으로 들어오지 않도록 배기해야 합니다. 가마를 소성할 때마다 새는 멀리 떨어진 방에 두세요.
 
-**Carbon monoxide** (CO) is a poisonous gas you cannot see or smell. A university kiln safety sheet requires CO alarms with gas kilns. Views differ for electric kilns, but burning off organic matter (in clay, or things like paper or wax) can make CO. We think a CO alarm in the kiln room and the rooms next to it is a sensible, inexpensive step for any kiln.
+**일산화탄소**(CO)는 보이지도 않고 냄새도 나지 않는 유독 가스입니다. 한 대학의 가마 안전 자료는 가스가마에 일산화탄소 경보기를 갖추도록 요구합니다. 전기가마에 대해서는 의견이 갈리지만, 유기물(점토 속의 유기물, 또는 종이나 왁스 같은 것)이 타면서 CO가 생길 수 있습니다. 저희는 어떤 가마든 가마실과 그 옆방에 일산화탄소 경보기를 다는 것이 합리적이고 저렴한 조치라고 생각합니다.
 
-### Peepholes and eyes
+### 불구멍과 눈
 
-Infrared light, which you cannot see, "starts at 752°F (400°C)", and the Ceramic Arts Network says looking into a kiln above this should always be done with eye protection. Infrared can damage the lens of the eye and lead to cataracts, and long gazing can injure the retina. Sunglasses and didymium glasses do not block it.
+눈에 보이지 않는 적외선은 “752°F (400°C)부터 시작”되며, Ceramic Arts Network는 이보다 높은 온도에서 가마 안을 들여다볼 때는 언제나 보안경을 쓰고 해야 한다고 말합니다. 적외선은 눈의 수정체를 손상시켜 백내장을 일으킬 수 있으며, 오래 들여다보면 망막을 다칠 수 있습니다. 선글라스와 디디뮴 안경으로는 적외선을 막지 못합니다.
 
 > [!WARNING]
-> Children should not look into a kiln at all. A glowing peephole draws them, and they will not reliably keep protective glasses on, so keep them away while the kiln is hot. Adults should look only briefly, through IR-rated welding glasses. Sources recommend shades from 1.7 to 5; shade 3 is a sensible choice, darker if you see spots afterward.
+> 아이들은 가마 안을 아예 들여다보면 안 됩니다. 빛나는 불구멍은 아이들의 눈길을 끌고, 아이들이 보안경을 계속 쓰고 있으리라 믿을 수 없으므로, 가마가 뜨거운 동안에는 가까이 오지 못하게 하세요. 어른도 적외선을 막는 용접용 보안경을 쓰고 잠깐만 들여다봐야 합니다. 자료들은 차광도 1.7~5를 권합니다. 차광도 3이 합리적인 선택이며, 들여다본 뒤 눈앞에 점이 보이면 더 어두운 것을 쓰세요.
 
 ## 가족 식탁의 수제 그릇 {#handmade-ware}
 
