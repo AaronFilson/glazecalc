@@ -894,6 +894,10 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Fixed
 
+- **Sign-in keeps the page you were going to.** "Create a free account" and "Sign in" on the sign-in and
+  sign-up pages carry `?next=` (this site's pages only) so an AI app's consent page is not lost; and a
+  session that has gone stale sends you to sign-in with the page you were on, which you come back to.
+
 - **The OAuth authorization server, after its security review** (docs/adr/0024, "Review fixes"):
   addresses under `/oauth/` answer only as written (`/oauth/REGISTER` or `/oauth/register/` no
   longer slip past the registration limits); fetches of apps' documents (CIMD) are limited per

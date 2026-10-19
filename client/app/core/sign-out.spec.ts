@@ -38,6 +38,32 @@ describe('rejected sign-ins', () => {
     expect(navigate).toHaveBeenCalledWith('/signin', { state: { sessionEnded: true } });
   });
 
+  describe('coming back after signing in again (?next=)', () => {
+    const rejectedOn = async (url: string) => {
+      setup(true);
+      vi.spyOn(TestBed.inject(Router), 'url', 'get').mockReturnValue(url);
+      const result = get('/recipe/getAll');
+      httpMock()
+        .expectOne(API + '/recipe/getAll')
+        .flush({ msg: 'could not authenticate user' }, unauthorized);
+      await result;
+    };
+
+    it('asks the sign-in page to return to the page left', async () => {
+      await rejectedOn('/recipe/abc?tab=1');
+      expect(navigate).toHaveBeenCalledWith('/signin?next=' + encodeURIComponent('/recipe/abc?tab=1'), {
+        state: { sessionEnded: true }
+      });
+    });
+
+    for (const url of ['/', '/signin', '/signup?next=%2Fa', '/confirm-email', '//evil.example/x', '/\\evil.example']) {
+      it(`goes to plain sign-in from ${url}`, async () => {
+        await rejectedOn(url);
+        expect(navigate).toHaveBeenCalledWith('/signin', { state: { sessionEnded: true } });
+      });
+    }
+  });
+
   it('keeps a sign-in made while the rejected request was out', async () => {
     setup(true);
     const result = get('/recipe/getAll');
