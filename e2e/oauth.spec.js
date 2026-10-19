@@ -1,11 +1,12 @@
-// Signing in with Google and GitHub (docs/adr/0015-provider-sign-in.md)
-// through the fake provider (server/test/support/fake_provider.ts), which
-// listens on E2E_OAUTH_PORT; playwright.config.js points the server at it
-// (OAUTH_TEST_BASE) with its client ids and secrets. The browser goes to the
-// provider and back as it would to Google or GitHub, cookies and all.
+// Signing in with Google, GitHub and Microsoft (docs/adr/0015-provider-sign-in.md,
+// 0023-microsoft-sign-in.md) through the fake provider
+// (server/test/support/fake_provider.ts), which listens on E2E_OAUTH_PORT;
+// playwright.config.js points the server at it (OAUTH_TEST_BASE) with its
+// client ids and secrets. The browser goes to the provider and back as it
+// would to Google, GitHub or Microsoft, cookies and all.
 const { test, expect } = require('@playwright/test');
 const { confirmedAccount, uniqueEmail } = require('./helpers');
-const { nextEmail } = require('./mail');
+const { confirmLink, nextEmail } = require('./mail');
 const { FakeProvider } = require('../server/test/support/fake_provider.ts');
 
 // The key the global setup made, the same in every worker: a worker started
@@ -31,7 +32,7 @@ test('makes an account with a verified Google email and signs in to it', async (
   await page.goto('/account');
   await expect(page.getByText('Signed in as ' + email)).toBeVisible();
   // Made with Google: no password yet, and the section says how to set one.
-  await expect(page.getByRole('heading', { name: 'Google and GitHub' })).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'Google, GitHub and Microsoft' })).toBeVisible();
   await expect(page.getByRole('button', { name: 'Email me a link to set a password' })).toBeVisible();
 });
 
@@ -174,4 +175,58 @@ test("another person's Google account cannot confirm a change", async ({ page })
   await expect(section).toContainText('That Google account is not linked to this Glazecalc account');
   await page.locator('#delete-submit').click();
   await expect(page.locator('.confirm-step .identity-confirm')).toContainText('confirm it is you by signing in again');
+});
+
+test('makes an account from Microsoft with its email still to confirm, and confirms it from the email', async ({
+  page
+}) => {
+  const email = uniqueEmail('microsoft');
+  const microsoft = { sub: 'ms-' + subject(), email };
+  fake.next.microsoft = microsoft;
+  await page.goto('/signup');
+  await page.getByRole('link', { name: 'Sign in with Microsoft' }).click();
+  await expect(page).toHaveURL(/\/home$/);
+  // Microsoft's email is not taken on trust: the home page asks to confirm it.
+  await expect(page.getByRole('heading', { name: 'Confirm your email' })).toBeVisible();
+  const sent = await nextEmail(email, 0);
+  expect(sent.subject).toBe('Confirm your email for Glazecalc');
+  await page.goto(confirmLink(sent));
+  await page.getByRole('button', { name: 'Confirm' }).click();
+  await expect(page.locator('.done-text')).toHaveText('Your email is confirmed.');
+
+  // Microsoft signs in to it again, by its tenant and id.
+  await page.context().clearCookies();
+  fake.next.microsoft = microsoft;
+  await page.goto('/signin');
+  await page.getByRole('link', { name: 'Sign in with Microsoft' }).click();
+  await expect(page).toHaveURL(/\/home$/);
+  await page.goto('/account');
+  await expect(page.getByText('Signed in as ' + email)).toBeVisible();
+  await expect(page.locator('.providers-section .provider-list li', { hasText: 'Microsoft' })).toContainText(
+    'Linked on'
+  );
+});
+
+test('never links Microsoft by email: it is linked from the account page once signed in', async ({ page, request }) => {
+  const { email, password } = await confirmedAccount(request);
+  // Someone's Microsoft account claiming this account's email (nOAuth).
+  fake.next.microsoft = { sub: 'ms-' + subject(), tid: '72f988bf-86f1-41af-91ab-2d7cd011db47', email };
+  await page.goto('/signin');
+  await page.getByRole('link', { name: 'Sign in with Microsoft' }).click();
+  await expect(page).toHaveURL(/\/signin$/);
+  await expect(page.getByText('A Glazecalc account already uses the email from Microsoft.')).toBeVisible();
+
+  // Signing in to the account links nothing.
+  await signInOnPage(page, email, password);
+  await page.goto('/account');
+  const section = page.locator('.providers-section');
+  await expect(section.locator('.provider-list li', { hasText: 'Microsoft' })).toContainText('Not linked');
+
+  // The owner links their own Microsoft account, confirmed with the password.
+  fake.next.microsoft = { sub: 'ms-' + subject(), email: uniqueEmail('own') };
+  await section.getByRole('button', { name: 'Link Microsoft' }).click();
+  await section.locator('#provider-confirm-password').fill(password);
+  await section.locator('.identity-confirm').getByRole('button', { name: 'Link Microsoft' }).click();
+  await expect(page).toHaveURL(/\/account$/);
+  await expect(section).toContainText('Microsoft is linked. You can now sign in with it.');
 });

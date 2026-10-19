@@ -7,7 +7,7 @@ const { assertTestDatabase } = require('../scripts/test-database');
 // Resets the end-to-end database and loads the standard materials, additives
 // and advice from the same data files the production seed uses.
 module.exports = async () => {
-  // One signing key for the fake Google in every worker (e2e/oauth.spec.js);
+  // One signing key for the fake Google and Microsoft in every worker (e2e/oauth.spec.js);
   // the workers start after this and inherit the environment.
   process.env.E2E_OAUTH_KEY ||= crypto
     .generateKeyPairSync('rsa', { modulusLength: 2048 })
