@@ -701,6 +701,18 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Changed
 
+- **The privacy notice says what connecting an AI app means** (a new section, "Connecting an AI
+  app", with the ADR 0024 notices): what is kept for each connected app (its name and address as
+  it gives them, where it sends you back, what it may do, its dates, its codes and tokens only as
+  hashes, what it did), that Glazecalc's server fetches an app's details from the app's own
+  address and keeps them 1 to 24 hours in memory, how long each part lasts (60 days from the last
+  renewal for an app that reads, 90 days from the yes for one that may change records, 7 or 30
+  days for an app that registered itself), how to end a connection, and that the app answers for
+  what it does with your records under its own privacy policy. It also names the shelf's list
+  before its last change, kept for one Undo. The terms of use add that connecting an app is your
+  choice and that you answer for what an app you allow does in your account. The record of
+  processing (docs/processing-record.md) has a new activity, Connected AI apps, and names AI apps
+  as separate controllers, with no new processor. English only for now.
 - **MCP `check_limits` follows the account's own limit set.** Called with a personal access token
   that may read preferences and no `limitSet`, it checks against the limit set saved in the
   account's settings (the recipe page's own, Hesselberth & Roy's until changed), as `get_recipe`
