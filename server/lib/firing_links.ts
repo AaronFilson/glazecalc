@@ -6,8 +6,12 @@
 //   POST   /api/recipe/firings/:id           { firing, result? } links a firing log; nothing
 //                                            changes when it is linked already. 404 when the
 //                                            recipe or the log is not the user's; 409 when the
-//                                            recipe has FIRING_LINKS.most links to logs there now
-//   PUT    /api/recipe/firings/:id/:firing   { result } sets the link's result note ('' clears it)
+//                                            recipe has FIRING_LINKS.most links to logs there now.
+//                                            The link's cone and atmosphere are read from the log
+//                                            when it says clearly (lib/cones/results.js, linkPlace)
+//   PUT    /api/recipe/firings/:id/:firing   { result?, cone?, atmosphere? } sets what is given of
+//                                            the link's result note, cone and atmosphere ('' or
+//                                            null clears one); what is not given stays
 //   DELETE /api/recipe/firings/:id/:firing   takes the link off
 //
 // Each answers with the recipe's links as they are now: { firings: [...] }.
@@ -19,6 +23,9 @@
 // toward the limit.
 import express, { type Request, type Response, type Router } from 'express';
 import mongoose from 'mongoose';
+import firingLib from '../../lib/cones/firing.js';
+import type { Atmosphere, FiringBlock } from '../../lib/cones/firing.js';
+import results from '../../lib/cones/results.js';
 import Firing from '../models/firing.ts';
 import Recipe, { FIRING_LINKS } from '../models/recipe.ts';
 import { userOf } from './jwt_auth.ts';
@@ -26,9 +33,12 @@ import { say } from './messages.ts';
 import { logActivity } from './record_history.ts';
 import requireScope from './require_scope.ts';
 
-interface Link {
+export interface Link {
   firing: string;
   result?: string;
+  /** The cone it was fired to, as the firing block writes it, and the atmosphere: the result cards'. */
+  cone?: string;
+  atmosphere?: Atmosphere;
 }
 
 /** The ids of the firing logs an account has now (not those in the Trash or gone). */
@@ -58,11 +68,17 @@ export async function pullFiringLinks(ownedBy: string, firingIds: string[]): Pro
   );
 }
 
+/** A link as it is answered and logged: only the fields it has. */
+export const linkOut = ({ firing, result, cone, atmosphere }: Link): Link => ({
+  firing,
+  ...(result && { result }),
+  ...(cone && { cone }),
+  ...(atmosphere && { atmosphere })
+});
+
 const linksOf = async (id: string, ownedBy: string): Promise<Link[] | null> => {
   const recipe = await Recipe.findOne({ _id: id, ownedBy }, { firings: 1 }).lean();
-  return recipe
-    ? ((recipe.firings ?? []) as Link[]).map(({ firing, result }) => ({ firing, ...(result && { result }) }))
-    : null;
+  return recipe ? ((recipe.firings ?? []) as Link[]).map(linkOut) : null;
 };
 
 const resultOf = (value: unknown): string | null | undefined => {
@@ -71,6 +87,14 @@ const resultOf = (value: unknown): string | null | undefined => {
   const text = value.trim();
   return text.length > FIRING_LINKS.result ? null : text;
 };
+
+/** A cone or atmosphere given for a link: undefined when not given, '' to clear it, null when it is not one. */
+const placeOf = (value: unknown, valid: (text: string) => boolean): string | null | undefined => {
+  if (value === undefined) return undefined;
+  if (value === null || value === '') return '';
+  return typeof value === 'string' && valid(value) ? value : null;
+};
+const isAtmosphere = (text: string): boolean => (firingLib.ATMOSPHERES as readonly string[]).includes(text);
 
 /** Adds the link routes to the recipe routes. */
 export function addFiringLinkRoutes(router: Router): void {
@@ -103,15 +127,17 @@ export function addFiringLinkRoutes(router: Router): void {
       res.status(400).json(say('record-invalid', { label: 'recipe' }));
       return;
     }
-    if (!(await Firing.exists({ _id: firing, ownedBy }))) {
+    const log = await Firing.findOne({ _id: firing, ownedBy }, { fieldsIncluded: 1, rows: 1 }).lean();
+    if (!log) {
       res.status(404).json(say('record-not-found', { label: 'firing' }));
       return;
     }
-    const links = await linksOf(req.params.id as string, ownedBy);
-    if (!links) {
+    const recipe = await Recipe.findOne({ _id: req.params.id, ownedBy }, { firings: 1, firedAt: 1 }).lean();
+    if (!recipe) {
       res.status(404).json(notFound);
       return;
     }
+    const links = ((recipe.firings ?? []) as Link[]).map(linkOut);
     if (!links.some((l) => l.firing === firing)) {
       // Links to logs in the Trash or gone do not count toward the limit.
       const live = await liveLinks(ownedBy, links);
@@ -127,7 +153,18 @@ export function addFiringLinkRoutes(router: Router): void {
           'firings.firing': { $ne: firing },
           [`firings.${FIRING_LINKS.stored - 1}`]: { $exists: false }
         },
-        { $push: { firings: { firing, ...(result && { result }) } } }
+        {
+          $push: {
+            firings: {
+              firing,
+              ...(result && { result }),
+              ...results.linkPlace(
+                log as { fieldsIncluded?: string[]; rows?: unknown[][] },
+                firingLib.cleanFiring(recipe.firedAt as FiringBlock | undefined)
+              )
+            }
+          }
+        }
       );
     }
     await answer(req, res, ownedBy);
@@ -136,15 +173,30 @@ export function addFiringLinkRoutes(router: Router): void {
   router.put('/firings/:id/:firing', writing, jsonParser, async (req, res) => {
     if (!valid(req, res)) return;
     const ownedBy = userOf(req).id as string;
-    const result = resultOf(((req.body ?? {}) as Record<string, unknown>).result);
-    if (result === null) {
+    const body = (req.body ?? {}) as Record<string, unknown>;
+    const given = {
+      // A result given as null clears it, as '' does.
+      result: Object.hasOwn(body, 'result') ? (body.result === null ? '' : resultOf(body.result)) : undefined,
+      cone: placeOf(body.cone, results.isAnyCone),
+      atmosphere: placeOf(body.atmosphere, isAtmosphere)
+    };
+    if (Object.values(given).includes(null)) {
       res.status(400).json(say('record-invalid', { label: 'recipe' }));
       return;
     }
-    await Recipe.updateOne(
-      { _id: req.params.id, ownedBy, 'firings.firing': req.params.firing },
-      result ? { $set: { 'firings.$.result': result } } : { $unset: { 'firings.$.result': '' } }
-    );
+    const set: Record<string, string> = {};
+    const unset: Record<string, ''> = {};
+    for (const [field, value] of Object.entries(given)) {
+      if (value === undefined) continue;
+      if (value) set['firings.$.' + field] = value;
+      else unset['firings.$.' + field] = '';
+    }
+    if (Object.keys(set).length || Object.keys(unset).length) {
+      await Recipe.updateOne(
+        { _id: req.params.id, ownedBy, 'firings.firing': req.params.firing },
+        { ...(Object.keys(set).length && { $set: set }), ...(Object.keys(unset).length && { $unset: unset }) }
+      );
+    }
     await answer(req, res, ownedBy);
   });
 

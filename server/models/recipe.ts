@@ -1,6 +1,7 @@
 import mongoose from 'mongoose';
 import firing from '../../lib/cones/firing.js';
 import type { FiringBlock } from '../../lib/cones/firing.js';
+import results from '../../lib/cones/results.js';
 import slurry from '../../lib/recipe/slurry.js';
 
 /**
@@ -17,7 +18,15 @@ const firingLinkSchema = new mongoose.Schema(
       required: true,
       validate: { validator: (id: string) => mongoose.isValidObjectId(id), message: 'not an id' }
     },
-    result: { type: String, maxlength: FIRING_LINKS.result }
+    result: { type: String, maxlength: FIRING_LINKS.result },
+    // Where it was fired, for the result cards (lib/cones/results.js): the cone as the firing block
+    // writes it, and the atmosphere. Read from the log when it is linked, if the log says clearly;
+    // else set by the potter. Either may be outside the recipe's stated firing, and is kept.
+    cone: {
+      type: String,
+      validate: { validator: (cone: string) => results.isAnyCone(cone), message: 'not a cone' }
+    },
+    atmosphere: { type: String, enum: firing.ATMOSPHERES }
   },
   { _id: false }
 );
@@ -54,6 +63,21 @@ const recipeSchema = new mongoose.Schema({
     type: [firingLinkSchema],
     default: undefined,
     validate: { validator: (list: unknown[]) => list.length <= FIRING_LINKS.stored, message: 'too many' }
+  },
+  // What it came out like at each cone and atmosphere (lib/cones/results.js): the potter's summary for
+  // each, [{ cone, atmosphere?, summary }], cleaned on every write like firedAt. A result outside the
+  // stated firing is kept. None (or null) is "none written".
+  coneResults: {
+    type: mongoose.Schema.Types.Mixed,
+    set: (list: unknown) => {
+      if (list === null || list === undefined || results.coneResultsProblem(list)) return list;
+      const clean = results.cleanConeResults(list);
+      return clean?.length ? clean : null;
+    },
+    validate: {
+      validator: (list: unknown) => list === null || list === undefined || results.coneResultsProblem(list) === null,
+      message: 'not results'
+    }
   },
   // The specific gravity the glaze is mixed to, set from the recipe page's SG calculator and
   // read by the mix ticket. A number from 1 (water) to 2.5; null clears it.

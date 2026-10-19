@@ -836,7 +836,15 @@ describe('MCP: personal access tokens', () => {
             firedAt: { scale: 'orton', low: '6', high: '10', tested: ['10'], atmospheres: ['reduction'] },
             foodSurface: true,
             // The second log is gone (in the Trash, or deleted): an assistant is never given its id.
-            firings: [{ firing: firingId, result: 'glossy' }, { firing: new mongoose.Types.ObjectId().toString() }]
+            firings: [
+              { firing: firingId, result: 'glossy', cone: '10', atmosphere: 'reduction' },
+              { firing: new mongoose.Types.ObjectId().toString() }
+            ],
+            // A result at a cone outside the range is kept, and given as it is.
+            coneResults: [
+              { cone: '10', atmosphere: 'reduction', summary: 'Glossy, breaks brown on edges' },
+              { cone: '5', summary: 'Underfired' }
+            ]
           }
         }
       );
@@ -851,7 +859,11 @@ describe('MCP: personal access tokens', () => {
           bands: ['mid', 'high']
         });
         expect(one.foodSurface).to.equal(true);
-        expect(one.firings).to.eql([{ firingId, result: 'glossy' }]);
+        expect(one.firings).to.eql([{ firingId, result: 'glossy', cone: '10', atmosphere: 'reduction' }]);
+        expect(one.coneResults).to.eql([
+          { cone: '10', atmosphere: 'reduction', summary: 'Glossy, breaks brown on edges' },
+          { cone: '5', summary: 'Underfired' }
+        ]);
         expect(one.checks.band).to.equal('mid');
         expect(one.checks.firingFrom).to.equal('firedAt');
         expect(one.checksAtOtherBands.high.band).to.equal('high');
@@ -870,7 +882,10 @@ describe('MCP: personal access tokens', () => {
         expect((await data('list_recipes', { cone: '10' }, headers)).recipes[0].firedAt.tested).to.eql(['10']);
         expect((await call('list_recipes', { cone: '6a' }, headers)).isError).to.equal(true);
       } finally {
-        await Recipe.updateOne({ _id: recipeId }, { $unset: { firedAt: 1, foodSurface: 1, firings: 1 } });
+        await Recipe.updateOne(
+          { _id: recipeId },
+          { $unset: { firedAt: 1, foodSurface: 1, firings: 1, coneResults: 1 } }
+        );
       }
     });
 
