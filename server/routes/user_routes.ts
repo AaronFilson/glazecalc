@@ -5,8 +5,7 @@
 //                                  region, format, decimalMark, temperature, cones, language,
 //                                  density, englishTerms, notice, recipeHelp, limitSet, currency, calendar }
 //   PUT    /api/preferences       any of them (models/user.ts PREFERENCES lists what each may be)
-//   GET    /api/shelf             the materials the account (or trial) has on hand: { shelf: [key] }
-//   PUT    /api/shelf             { shelf: [key] } in place of the list
+//   /api/shelf             the materials on hand, with Undo (routes/shelf_routes.ts)
 //   GET    /api/prices            what the account (or trial) pays for materials: { prices: [{ key, perKg }] },
 //                                  per kilogram in its one currency (preferences.currency); private to it
 //   PUT    /api/prices            { prices: [{ key, perKg }] } in place of the list
@@ -30,14 +29,7 @@ import * as password from '../lib/password.ts';
 import * as limits from '../lib/rate_limit.ts';
 import { confirmChange } from '../lib/second_step.ts';
 import * as session from '../lib/session.ts';
-import User, {
-  mfaOn,
-  PREFERENCES,
-  SHELF_KEY_LONGEST,
-  SHELF_MOST,
-  type Preferences,
-  type Price
-} from '../models/user.ts';
+import User, { mfaOn, PREFERENCES, SHELF_KEY_LONGEST, type Preferences, type Price } from '../models/user.ts';
 import { isPrice } from '../../lib/recipe/cost.js';
 import regions from '../../lib/regions/index.js';
 import { say } from '../lib/messages.ts';
@@ -100,28 +92,8 @@ userRouter.put('/preferences', jwtAuth, express.json(), async (req, res) => {
   return res.status(200).json(preferencesOf(user?.preferences));
 });
 
-// The materials on hand, for Match with what I have: library keys, as the
-// client's libraryKey makes them. Like the preferences, a trial may keep one.
-// At most SHELF_MOST keys of at most SHELF_KEY_LONGEST characters (server/models/user.ts).
+// A key is at most SHELF_KEY_LONGEST characters (server/models/user.ts), as the shelf's.
 const KEY_LONGEST = SHELF_KEY_LONGEST;
-
-userRouter.get('/shelf', jwtAuth, (req, res) => {
-  res.status(200).json({ shelf: userOf(req).shelf ?? [] });
-});
-
-userRouter.put('/shelf', jwtAuth, express.json(), async (req, res) => {
-  const shelf = ((req.body ?? {}) as { shelf?: unknown }).shelf;
-  const keys = Array.isArray(shelf) ? [...new Set(shelf)] : null;
-  if (
-    !keys ||
-    keys.length > SHELF_MOST ||
-    keys.some((key) => typeof key !== 'string' || !key || key.length > KEY_LONGEST)
-  ) {
-    return res.status(400).json(say('shelf-invalid', { most: SHELF_MOST }));
-  }
-  await User.updateOne({ _id: userOf(req)._id }, { $set: { shelf: keys } });
-  return res.status(200).json({ shelf: keys });
-});
 
 // What the potter pays for materials, for cost per batch: a price per kilogram
 // by library key, as the shelf's. Like the shelf, a trial may keep them; like

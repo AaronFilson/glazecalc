@@ -154,6 +154,7 @@ const WRITE_TOOLS = [
   'create_recipe',
   'move_to_trash',
   'remove_from_shelf',
+  'undo_shelf_change',
   'update_my_material',
   'update_recipe'
 ];
@@ -1111,6 +1112,7 @@ describe('MCP: the write tools', () => {
       ['update_my_material', { id, name: 'x' }],
       ['add_to_shelf', { materials: ['Silica'] }],
       ['remove_from_shelf', { materials: ['Silica'] }],
+      ['undo_shelf_change', {}],
       ['move_to_trash', { kind: 'recipe', id }]
     ];
     for (const [name, args] of calls) {
@@ -1276,6 +1278,37 @@ describe('MCP: the write tools', () => {
     expect(removed.removed).to.eql(['Whiting']);
     expect(removed.notOnShelf).to.eql(['Custer Spar']);
     expect((await User.findById(mine.user._id))!.shelf).to.have.length(2);
+  });
+
+  it('keep the shelf as it was before a change, undo_shelf_change puts it back once, and each change is logged', async () => {
+    const nothing = await call('undo_shelf_change', {}, headers);
+    expect(nothing.isError).to.equal(true);
+    expect(nothing.content[0]!.text).to.include('no change to the shelf');
+    await data('add_to_shelf', { materials: ['Whiting'] }, headers);
+    const first = (await User.findById(mine.user._id))!.shelf!;
+    await data('add_to_shelf', { materials: ['Silica', 'EPK'] }, headers);
+    const shelf = (await User.findById(mine.user._id))!.shelf!;
+    expect(shelf).to.have.length(3);
+    // The new materials come after the earlier one, which Undo keeps.
+    expect(shelf[0]).to.equal(first[0]);
+    expect((await User.findById(mine.user._id))!.shelfPrevious).to.eql(first);
+    // Twice is once, and a change that changes nothing keeps the earlier list for Undo.
+    await data('add_to_shelf', { materials: ['Whiting'] }, headers);
+    expect((await User.findById(mine.user._id))!.shelfPrevious).to.eql(first);
+    const removed = await data('remove_from_shelf', { materials: ['Silica'] }, headers);
+    expect(removed.undo).to.include('undo_shelf_change');
+    expect((await User.findById(mine.user._id))!.shelfPrevious).to.eql(shelf);
+    const undone = await data('undo_shelf_change', {}, headers);
+    expect(undone).to.eql({ restored: true, materialsOnShelf: 3 });
+    expect((await User.findById(mine.user._id))!.shelf).to.eql(shelf);
+    expect((await call('undo_shelf_change', {}, headers)).isError).to.equal(true);
+    const lines = await Activity.find({ ownedBy, fromCollection: 'shelf' }).sort({ at: 1, _id: 1 }).lean();
+    expect(lines.map((l) => [l.action, l.title, l.via])).to.eql([
+      ['change', 'Whiting', 'pat'],
+      ['change', 'Silica, EPK Kaolin', 'pat'],
+      ['change', 'Silica', 'pat'],
+      ['undo', 'Shelf', 'pat']
+    ]);
   });
 
   it('move_to_trash moves the account’s own record to the Trash, never deleting it', async () => {

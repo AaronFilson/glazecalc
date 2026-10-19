@@ -1,3 +1,4 @@
+import Material from '../models/material.ts';
 import User, { type UserDocument } from '../models/user.ts';
 import { api, expect, makeUser, sessionToken, uniqueEmail } from './support/app.ts';
 
@@ -243,9 +244,97 @@ describe('user API', () => {
       expect((await get(token)).body).to.eql({ shelf: [] });
     });
 
+    const post = (bearer: string, path: string, body: object = {}) =>
+      api()
+        .post('/shelf/' + path)
+        .set('Authorization', 'Bearer ' + bearer)
+        .send(body);
+
+    it('keeps the list a change replaced for one Undo, and a PUT with the same list keeps the earlier one', async () => {
+      expect((await post(token, 'undo')).status).to.equal(409);
+      await put(token, { shelf: ['name:Whiting'] });
+      await put(token, { shelf: ['name:Whiting', 'name:Silica'] });
+      expect((await User.findById(user._id))!.shelfPrevious).to.eql(['name:Whiting']);
+      // The same list again changes nothing, so Undo still goes back one change.
+      await put(token, { shelf: ['name:Whiting', 'name:Silica'] });
+      expect((await User.findById(user._id))!.shelfPrevious).to.eql(['name:Whiting']);
+      const undone = await post(token, 'undo');
+      expect(undone).to.have.status(200);
+      expect(undone.body).to.eql({ shelf: ['name:Whiting'], changed: true });
+      expect((await get(token)).body).to.eql({ shelf: ['name:Whiting'] });
+      // One step: it is spent.
+      const again = await post(token, 'undo');
+      expect(again).to.have.status(409);
+      expect(again.body.code).to.equal('shelf-nothing-to-undo');
+      // An emptied shelf can be undone to its earlier, empty list too.
+      await put(token, { shelf: [] });
+      await put(token, { shelf: ['name:Silica'] });
+      expect((await post(token, 'undo')).body.shelf).to.eql([]);
+    });
+
+    it('adds and removes one material at a time, by key or name, once and in order', async () => {
+      const added = await post(token, 'add', { name: 'whiting' });
+      expect(added).to.have.status(200);
+      expect(added.body.changed).to.equal(true);
+      const whiting = added.body.shelf as string[];
+      expect(whiting).to.have.length(1);
+      expect((await post(token, 'add', { key: 'name:Silica' })).body.shelf).to.eql([...whiting, 'name:Silica']);
+      // Twice is once, and changes nothing, so the earlier list for Undo stays.
+      const twice = await post(token, 'add', { key: 'name:Silica' });
+      expect(twice.body).to.eql({ shelf: [...whiting, 'name:Silica'], changed: false });
+      expect((await User.findById(user._id))!.shelfPrevious).to.eql(whiting);
+      // Removed by name: the library's key and its name key both go; the others keep their order.
+      const removed = await post(token, 'remove', { name: 'Whiting' });
+      expect(removed.body).to.eql({ shelf: ['name:Silica'], changed: true });
+      expect((await post(token, 'remove', { key: 'name:Nothing' })).body).to.eql({
+        shelf: ['name:Silica'],
+        changed: false
+      });
+      expect((await post(token, 'undo')).body.shelf).to.eql([...whiting, 'name:Silica']);
+    });
+
+    it('adds an account’s own material by its id, and keeps a key that starts with $ as text', async () => {
+      const made = await Material.create({
+        name: 'Local spar',
+        fields: [{ name: 'SiO2', amount: '68' }],
+        percentmole: 'percent',
+        formulaweight: 100,
+        molecularweight: 100,
+        equivalent: 100,
+        loi: 0,
+        ownedBy: String(user._id)
+      });
+      const id = String(made._id);
+      expect((await post(token, 'add', { name: 'local spar' })).body.shelf).to.eql([id]);
+      expect((await post(token, 'add', { key: '$shelf' })).body.shelf).to.eql([id, '$shelf']);
+      expect((await post(token, 'remove', { key: '$shelf' })).body.shelf).to.eql([id]);
+    });
+
+    it('refuses an unknown material, a missing or too long key, and a full shelf, changing nothing', async () => {
+      const unknown = await post(token, 'add', { name: 'Unobtainium' });
+      expect(unknown).to.have.status(404);
+      expect(unknown.body.code).to.equal('shelf-material-unknown');
+      for (const body of [{}, { key: '' }, { key: 3 }, { name: '  ' }, { key: 'x'.repeat(201) }]) {
+        expect(await post(token, 'add', body), JSON.stringify(body)).to.have.status(400);
+        expect(await post(token, 'remove', body), JSON.stringify(body)).to.have.status(400);
+      }
+      const full = Array.from({ length: 500 }, (_, i) => 'name:M' + i);
+      await put(token, { shelf: full });
+      const over = await post(token, 'add', { key: 'name:One more' });
+      expect(over).to.have.status(409);
+      expect(over.body.code).to.equal('shelf-full');
+      expect((await get(token)).body.shelf).to.have.length(500);
+      // A key already there is not new, so it is not refused.
+      expect((await post(token, 'add', { key: 'name:M3' })).body.changed).to.equal(false);
+    });
+
     it('can be kept by a trial, and needs a sign-in', async () => {
       const trial = await api().post('/guest');
       const trialToken = sessionToken(trial) ?? '';
+      expect((await post(trialToken, 'add', { key: 'name:Silica' })).body.shelf).to.eql(['name:Silica']);
+      expect(await api().post('/shelf/add').send({ key: 'name:Silica' })).to.have.status(401);
+      expect(await api().post('/shelf/remove').send({ key: 'name:Silica' })).to.have.status(401);
+      expect(await api().post('/shelf/undo')).to.have.status(401);
       expect(await put(trialToken, { shelf: ['name:Silica'] })).to.have.status(200);
       expect((await get(trialToken)).body).to.eql({ shelf: ['name:Silica'] });
       expect(await api().get('/shelf')).to.have.status(401);

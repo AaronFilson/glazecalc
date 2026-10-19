@@ -124,6 +124,7 @@ export const exportAccount = async (userId: Id, now = new Date()): Promise<Row |
     role: 1,
     preferences: 1,
     shelf: 1,
+    shelfPrevious: 1,
     prices: 1,
     guest: 1,
     expiresAt: 1,
@@ -155,6 +156,8 @@ export const exportAccount = async (userId: Id, now = new Date()): Promise<Row |
     },
     preferences: user.preferences ?? {},
     shelf: user.shelf ?? [],
+    // The list before the last change, which Undo puts back; absent when there is none.
+    ...(user.shelfPrevious && { shelfPrevious: user.shelfPrevious }),
     // Per kilogram, in the account's currency (preferences.currency, or the region's when '').
     prices: (user.prices ?? []).map(({ key, perKg }) => ({ key, perKg })),
     signIn: signInOf(user),
