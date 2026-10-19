@@ -731,6 +731,10 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Fixed
 
+- **nginx's logs are rotated and deleted after 14 days, as the privacy notice says.** Debian's cloud
+  image has no logrotate, and the instance was set up without it, so nothing was ever rotated:
+  `setup-instance.sh` now installs it, and a deploy installs it on an instance that lacks it.
+
 - **Two guide corrections, in every language:** the glazing guide no longer suggests blowing or
   dry-brushing dust off bisque, which puts silica dust in the air; it says to wipe it with a barely
   damp sponge, as the safety guide does. The firing guide's cone clock now reads as Orton's chart

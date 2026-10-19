@@ -111,13 +111,26 @@ else
   echo "nginx: the $site files are already those of $ref."
 fi
 
-# The nginx log rotation (14 days), with production's files. A failed download
-# or an invalid file leaves the one in use.
+# The nginx log rotation (14 days, as the privacy notice says), with
+# production's files. Debian's cloud image has no logrotate, and an instance
+# set up before setup-instance.sh installed it rotated nothing, so it is
+# installed here once (its logrotate.timer runs daily). A failed download or
+# an invalid file leaves the one in use, saying why.
 if [ "$site" = production ]; then
-  if curl -fsSL "$raw/logrotate/nginx" -o "$new/logrotate-nginx" \
-    && logrotate --debug "$new/logrotate-nginx" > /dev/null 2>&1; then
-    cmp -s "$new/logrotate-nginx" /etc/logrotate.d/nginx || install -m 644 "$new/logrotate-nginx" /etc/logrotate.d/nginx
-  else
-    echo 'nginx: could not update the log rotation; the current one is unchanged.' >&2
+  if ! command -v logrotate > /dev/null; then
+    echo 'nginx: logrotate is not installed, so the logs are never rotated; installing it.'
+    DEBIAN_FRONTEND=noninteractive apt-get -o DPkg::Lock::Timeout=120 install -y -q logrotate > /dev/null \
+      || echo 'nginx: could not install logrotate (above); install it by hand: apt-get install -y logrotate' >&2
+  fi
+  if ! curl -fsSL "$raw/logrotate/nginx" -o "$new/logrotate-nginx"; then
+    echo 'nginx: could not download the log rotation; the current one is unchanged.' >&2
+  elif ! command -v logrotate > /dev/null; then
+    echo 'nginx: no logrotate, so the log rotation is unchanged.' >&2
+  elif ! check=$(logrotate --debug "$new/logrotate-nginx" 2>&1); then
+    echo "$check" | grep -iE 'error|warning' | head -5 >&2
+    echo 'nginx: logrotate refused the new log rotation (above); the current one is unchanged.' >&2
+  elif ! cmp -s "$new/logrotate-nginx" /etc/logrotate.d/nginx; then
+    install -m 644 "$new/logrotate-nginx" /etc/logrotate.d/nginx
+    echo 'nginx: installed the log rotation (14 days).'
   fi
 fi
