@@ -74,7 +74,7 @@ describe('guides', () => {
     const sections = [...page.querySelectorAll('.guide h2')].map((h) => h.id);
     expect(sections[0]).toBe('about');
     expect(sections.at(-1)).toBe('sources');
-    expect(sections.filter((id) => id !== 'about' && id !== 'more' && id !== 'sources')).toHaveSize(12);
+    expect(sections.filter((id) => id !== 'about' && id !== 'more' && id !== 'sources')).toHaveLength(12);
     expect(page.querySelector('#about')?.closest('section')?.textContent).toContain('not connected with him');
     // His videos are links to YouTube, opened there; nothing is embedded.
     const videos = [...page.querySelectorAll<HTMLAnchorElement>('.guide a[href^="https://www.youtube.com/watch"]')];
