@@ -3,22 +3,27 @@
 //
 //   glazecalc_pat_ + 43 base62 characters (32 random bytes) + 6 of CRC32
 //
-// (glazecalc_oat_ for an OAuth client's), so a leaked one is easy to spot and
-// a made-up one fails its checksum before the database is asked. Only its
-// SHA-256 is stored (models/access_token.ts). The token itself is never
-// logged, never put in a URL and never sent back after it is made.
+// so a leaked one is easy to spot and a made-up one fails its checksum
+// before the database is asked. Only its SHA-256 is stored
+// (models/access_token.ts). The token itself is never logged, never put in a
+// URL and never sent back after it is made. (glazecalc_oat_ was kept for
+// OAuth clients, and is never given out: an app connected with OAuth gets the
+// authorization server's own opaque tokens, server/oauth/resource.ts, which
+// work only at the MCP endpoint.)
 //
 // It arrives only in an Authorization: Bearer header. A request that carries
 // one is judged by that header alone, never by a session cookie riding along,
 // and its replies never set a cookie. Routes take a token only through
-// requireScope (server/lib/require_scope.ts); jwtAuth refuses one.
+// requireScope (server/lib/require_scope.ts); jwtAuth refuses one. The MCP
+// endpoint takes both kinds (server/mcp/auth.ts); requireScope refuses an
+// OAuth one (403), since it is for the MCP endpoint alone.
 import crypto from 'node:crypto';
 import zlib from 'node:zlib';
 import type { NextFunction, Request, Response } from 'express';
 import AccessToken, { type AccessTokenDocument } from '../models/access_token.ts';
 import User, { type UserDocument } from '../models/user.ts';
 import { say } from './messages.ts';
-import type { Permission, Scope } from './scopes.ts';
+import { isScope, type Permission, type Scope } from './scopes.ts';
 
 export const PREFIXES = { pat: 'glazecalc_pat_', oauth: 'glazecalc_oat_' } as const;
 export type TokenKind = keyof typeof PREFIXES;
@@ -69,38 +74,59 @@ export const kindOf = (token: string): TokenKind | null => {
   return match[1] === 'pat' ? 'pat' : 'oauth';
 };
 
-/**
- * The access token in the request's Authorization header, if it holds one
- * (anything starting glazecalc_, well written or not); null otherwise, and
- * for a session token sent by a script.
- */
-export const accessTokenIn = (req: Request): string | null => {
+/** The bearer in the request's Authorization header, or null. */
+const bearerOf = (req: Request): string | null => {
   const auth = req.headers.authorization;
   if (!auth || !/^Bearer /i.test(auth)) return null;
-  const token = auth.slice(7).trim();
-  return token.startsWith('glazecalc_') ? token : null;
+  return auth.slice(7).trim();
 };
 
-/** Who a token is for, and the token's row. */
+/** The shape of the authorization server's access tokens (server/oauth/resource.ts): 43 base64url characters. */
+const OAUTH_SHAPE = /^[A-Za-z0-9_-]{43}$/;
+
+/**
+ * The access token in the request's Authorization header, if it holds one:
+ * anything starting glazecalc_, well written or not, or a token in the shape
+ * the authorization server gives out; null otherwise, and for a session
+ * token sent by a script (a JWT, which has dots).
+ */
+export const accessTokenIn = (req: Request): string | null => {
+  const token = bearerOf(req);
+  if (token === null) return null;
+  return token.startsWith('glazecalc_') || OAUTH_SHAPE.test(token) ? token : null;
+};
+
+/** Who a token is for, the row of its token or connection, what it allows, and its kind. */
 export interface Verified {
   user: UserDocument;
   token: AccessTokenDocument;
+  scopes: Scope[];
+  via: TokenKind;
 }
 
 /**
- * The account and row of a token that works now: well written, known,
- * neither revoked nor expired, and an account's, never a trial's. null for
- * any other, without saying which test it failed. `touch` records the use
- * (at most once a minute); a route that refuses every token does not.
+ * The account and row of a token that works now: a personal token well
+ * written, known, neither revoked nor expired, and an account's, never a
+ * trial's; or an OAuth access token its connection still allows
+ * (server/oauth/resource.ts). null for any other, without saying which test
+ * it failed. `touch` records the use (at most once a minute); a route that
+ * refuses every token does not.
  */
 export const verifyAccessToken = async (
   token: string,
   { now = new Date(), touch = true }: { now?: Date; touch?: boolean } = {}
 ): Promise<Verified | null> => {
-  const kind = kindOf(token);
-  if (!kind) return null;
+  if (OAUTH_SHAPE.test(token)) {
+    // Loaded when first needed, so this file and the authorization server do not import each other.
+    const { verifyOAuthAccessToken } = await import('../oauth/resource.ts');
+    const found = await verifyOAuthAccessToken(token, now);
+    if (found && touch) await touchToken(found.token, now);
+    return found;
+  }
+  // Only personal tokens are written this way: glazecalc_oat_ is never given out.
+  if (kindOf(token) !== 'pat') return null;
   const hash = hashToken(token);
-  const row = await AccessToken.findOne({ hash, kind });
+  const row = await AccessToken.findOne({ hash, kind: 'pat' });
   // Found by its hash, which already says the two are the same; compared
   // again in constant time all the same, in case an index ever matched loosely.
   if (!row?.hash || !crypto.timingSafeEqual(Buffer.from(row.hash, 'hex'), Buffer.from(hash, 'hex'))) return null;
@@ -109,7 +135,7 @@ export const verifyAccessToken = async (
   // Trials cannot make tokens (decision 9); a trial with one is refused all the same.
   if (!user || user.guest) return null;
   if (touch) await touchToken(row, now);
-  return { user, token: row };
+  return { user, token: row, scopes: row.scopes.filter(isScope), via: 'pat' };
 };
 
 /** Records a token's use, at most once a minute. */

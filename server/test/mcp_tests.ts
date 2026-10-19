@@ -6,7 +6,7 @@ import standardData from '../../data/index.js';
 import recipe from '../../lib/recipe/index.js';
 import { MOST_LINES, resetFits, FITS_PER_MINUTE, guarded, ToolProblem, UNEXPECTED } from '../mcp/common.ts';
 import { countTokenDelete, MCP_LIMITS, TOKEN_DELETES_PER_HOUR, TOKEN_WRITE_LIMITS } from '../lib/rate_limit.ts';
-import { READ_ONLY_TOKEN, TOO_MANY_CHANGES } from '../mcp/tools/account_write.ts';
+import { READ_ONLY_TOKEN, TOO_MANY_CHANGES, WRITE_TOOLS as STEP_UP_TOOLS } from '../mcp/tools/account_write.ts';
 import Activity from '../models/activity.ts';
 import Note from '../models/note.ts';
 import RecordVersion from '../models/record_version.ts';
@@ -283,8 +283,10 @@ describe('MCP: the endpoint', () => {
       expect(res.status, path).to.equal(200);
       expect(await res.json()).to.deep.include({
         resource: 'https://glazecalc.test/mcp',
+        authorization_servers: ['https://glazecalc.test'],
         bearer_methods_supported: ['header'],
-        scopes_supported: ['data:read', 'data:write']
+        // Only data:read: changing records is asked for by stepping up (docs/adr/0024).
+        scopes_supported: ['data:read']
       });
     }
   });
@@ -912,6 +914,10 @@ describe('MCP: personal access tokens', () => {
     expect((await AccessToken.findOne({ hash: hashToken(token) }))!.lastUsedAt).to.be.an.instanceOf(Date);
   });
 
+  it('asks a read-only connected app to step up for every tool that changes records, and only those', () => {
+    expect([...STEP_UP_TOOLS].sort()).to.eql(WRITE_TOOLS);
+  });
+
   it('answers a list tool that fails with the same plain refusal as the others, never the error', async () => {
     const { user } = await makeUser();
     const headers = bearer(await makeToken(user));
@@ -1276,7 +1282,10 @@ describe('MCP: the write tools', () => {
       clientInfo: { name: 't', version: '1' }
     });
     const instructions = (init.body!.result as { instructions: string }).instructions;
-    expect(instructions).to.include('move_to_trash').and.include('read-only token').and.not.include('never change');
+    expect(instructions)
+      .to.include('move_to_trash')
+      .and.include('only when the person allowed changes')
+      .and.not.include('never change');
   });
 
   it('refuse a read-only token, changing nothing', async () => {

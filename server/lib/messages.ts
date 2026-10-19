@@ -197,6 +197,12 @@ export const MESSAGES = {
   'tokens-revoked':
     '{count, plural, =0 {No access tokens were working.} one {# access token was revoked.} other {# access tokens were revoked.}}',
   'token-not-found': 'No access token with that id.',
+  // Connecting an AI assistant (the consent page, server/oauth/interactions.ts).
+  'connect-not-found':
+    'This request to connect an app has ended or was already answered. Please start again in the app.',
+  'connect-trial': 'A trial cannot connect apps. Please create a free account first.',
+  'connect-needs-confirmed-email': 'Please confirm your email before connecting an app.',
+  'connect-decision': 'Please choose whether to allow the app.',
 
   // Connected apps (server/routes/connection_routes.ts).
   'connection-restored':
@@ -224,7 +230,9 @@ export const MESSAGES = {
     'This access token has moved too many records to the Trash in the last hour. Please try again later.',
   'too-many-changes':
     'Too many changes were made to this account with access tokens. Please wait a while and try again; changes on the website still work.',
-  'too-many-mcp': 'Too many requests to the Glazecalc tools for AI assistants. ' + WAIT
+  'too-many-mcp': 'Too many requests to the Glazecalc tools for AI assistants. ' + WAIT,
+  'too-many-oauth': 'Too many requests to connect apps from this address. ' + WAIT,
+  'too-many-registrations': 'Too many apps registered themselves. Please try again later.'
 } satisfies Record<string, Text>;
 
 export type MessageCode = keyof typeof MESSAGES;
