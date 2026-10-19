@@ -234,7 +234,18 @@ export interface UserFields {
    * Absent on every other account.
    */
   passwordless?: boolean;
+  /**
+   * Whether a change made with an access token or a connected app waits for
+   * the person to approve it on the website (docs/adr/0025-confirm-before-changes.md):
+   * never ('off', the default, and what an account without it means), only
+   * removals, or every change. Set on Connected apps with the web session only.
+   */
+  confirmChanges?: ConfirmChanges;
 }
+
+/** The choices for UserFields.confirmChanges, from the least asked to the most. */
+export const CONFIRM_CHANGES = ['off', 'removals', 'all'] as const;
+export type ConfirmChanges = (typeof CONFIRM_CHANGES)[number];
 
 interface UserMethods {
   /** Sets the password, hashed. Synchronous, for tests and scripts; routes use lib/password.ts. */
@@ -349,7 +360,8 @@ const userSchema = new mongoose.Schema<UserFields, UserModel, UserMethods>({
     ],
     default: undefined
   },
-  passwordless: Boolean
+  passwordless: Boolean,
+  confirmChanges: { type: String, enum: CONFIRM_CHANGES }
 });
 
 userSchema.method('hashPassword', function (this: UserDocument, password: string) {

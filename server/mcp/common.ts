@@ -19,6 +19,8 @@ export interface Caller {
   /** The account, when the request carried a working token with data:read. */
   userId?: string;
   tokenId?: string;
+  /** The kind of token: a personal one, or an OAuth client's grant. */
+  via?: 'pat' | 'oauth';
   /** The token's name, for the activity log. */
   name?: string;
   scopes?: string[];

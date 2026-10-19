@@ -73,7 +73,13 @@ const accessTokenSchema = new mongoose.Schema(
     revokedAt: Date,
     revokedWhy: { type: String, enum: REVOKED_WHY },
     /** When the "expires in 7 days" email went, so it goes once. */
-    remindedAt: Date
+    remindedAt: Date,
+    /**
+     * A personal token that can change records whose changes never wait for
+     * approval, whatever the account's confirmChanges (docs/adr/0025-confirm-before-changes.md):
+     * chosen only when the token is made, with the password, never later.
+     */
+    noConfirm: Boolean
   },
   { versionKey: false }
 );

@@ -15,7 +15,14 @@ describe('messages', () => {
       provider: 'google',
       choices: '7, 30, 90, 365',
       count: 2,
-      skipped: 1
+      skipped: 1,
+      kind: 'recipe',
+      title: 'Celadon',
+      named: 'yes',
+      fields: 'title, notes',
+      names: 'Silica, Whiting',
+      made: 2,
+      notMade: 1
     };
     for (const code of Object.keys(MESSAGES) as MessageCode[]) {
       const text = textOf(code, params);

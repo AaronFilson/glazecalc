@@ -4,10 +4,12 @@
 // and the prompts always, and a person's own tools, to read and to change their
 // records, only when the request carried a working token (server/mcp/auth.ts
 // puts who it is in authInfo.extra; each tool that changes anything checks
-// that the token allows it, tools/account_write.ts).
+// that the token allows it, and waits for the person's approval when the
+// account asks for it, tools/account_write.ts).
 import { McpServer, type McpRequestContext } from '@modelcontextprotocol/server';
 import type { Caller } from './common.ts';
 import { registerPrompts } from './prompts.ts';
+import { requestStateCodec } from './request_state.ts';
 import { registerAccountTools } from './tools/account.ts';
 import { registerWriteTools } from './tools/account_write.ts';
 import { registerBlendTools } from './tools/blends.ts';
@@ -45,6 +47,7 @@ export const callerOf = (ctx: McpRequestContext): Caller => {
     key: typeof extra.key === 'string' ? extra.key : 'unknown',
     ...(typeof extra.userId === 'string' && { userId: extra.userId }),
     ...(typeof extra.tokenId === 'string' && { tokenId: extra.tokenId }),
+    ...((extra.via === 'pat' || extra.via === 'oauth') && { via: extra.via }),
     ...(typeof extra.name === 'string' && { name: extra.name }),
     ...(Array.isArray(extra.scopes) && { scopes: extra.scopes.filter((s): s is string => typeof s === 'string') })
   };
@@ -54,7 +57,14 @@ export const makeServer = (ctx: McpRequestContext): McpServer => {
   const caller = callerOf(ctx);
   const server = new McpServer(SERVER_INFO, {
     instructions: INSTRUCTIONS,
-    capabilities: { tools: {}, resources: {}, prompts: {}, completions: {} }
+    capabilities: { tools: {}, resources: {}, prompts: {}, completions: {} },
+    // A write tool may ask the person to confirm a change (tools/account_write.ts) with the
+    // 2026-07-28 multi-round-trip requests only. The endpoint is stateless, so the SDK's shim,
+    // which would ask a 2025 client from the server in the same request, is off: a 2025 client
+    // is given the website's link instead.
+    inputRequired: { legacyShim: false },
+    // The state handed out while asking is signed; the SDK refuses any that fails this.
+    requestState: { verify: requestStateCodec.verify }
   });
   registerPublicTools(server, caller);
   registerBlendTools(server);

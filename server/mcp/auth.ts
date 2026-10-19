@@ -77,6 +77,7 @@ export const mcpAuth = async (req: Request, res: Response, next: NextFunction): 
     key: 'user:' + userId,
     userId,
     tokenId: String(found.token._id),
+    via: found.token.kind,
     name: found.token.name,
     scopes: found.token.scopes.filter(isScope)
   };
