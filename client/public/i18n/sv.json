@@ -95,6 +95,7 @@
     "about": "Glazecalc är en gratis kalkylator och anteckningsbok för glasyrkemi, med öppen källkod. Se hur den räknar fram Segerformeln (UMF) och hur den är byggd.",
     "privacy": "Så hanterar Glazecalc dina uppgifter: inga annonser, ingen analys eller spårning, och inget säljs. Vad som sparas, varför och hur du använder dina rättigheter.",
     "terms": "Villkoren för att använda Glazecalc: gratis för dina egna glasyrer och ditt eget arbete, rättvist mot den delade servern och tillhandahållet i befintligt skick.",
+    "assistants": "Använd Glazecalc från Claude, Copilot, Cursor eller Gemini via MCP: glasyrkemi, gränskontroller, ersättare, guiderna och dina egna recept.",
     "signup": "Skapa ett gratis konto på Glazecalc och spara glasyrrecept, råvaror, anteckningar och brännloggar. Inga annonser, och uppgifterna säljs aldrig.",
     "imageAlt": "Glazecalcs startsida: gratis glasyrkemi för keramiker, bredvid ett foto av brända kägelsatser."
   },
