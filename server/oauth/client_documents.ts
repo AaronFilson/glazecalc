@@ -8,6 +8,10 @@
 // reads it through the adapter (server/oauth/adapter.ts) before it would
 // ever fetch: a working connection never waits on a fetch.
 //
+// It is the app's own public details, nothing about the person, and goes
+// once no connection to the app works (keptClientDocument; at the latest
+// when the last one would have ended, TTL).
+//
 // The document is still checked again when its time is up (its Cache-Control,
 // held between an hour and a day, as oidc-provider does): a new one that
 // passes every check replaces it. A check that cannot be made (the limits, the
@@ -141,7 +145,11 @@ export const keptClientDocument = async (
   now = new Date()
 ): Promise<AdapterPayload | undefined> => {
   const until = await workingUntil(clientId, now);
-  if (!until) return undefined;
+  if (!until) {
+    // Nobody's connection to the app works any more: what was kept goes now (or, unasked, when the last would have ended).
+    await OAuthRecord.deleteOne({ _id: keyFor(clientId), kind: KIND });
+    return undefined;
+  }
   const record = await OAuthRecord.findById(keyFor(clientId)).lean();
   if (!record || record.kind !== KIND) return undefined;
   const kept = JSON.parse(record.payload) as AdapterPayload;

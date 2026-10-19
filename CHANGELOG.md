@@ -883,6 +883,13 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Fixed
 
+- **The OAuth authorization server, after its security review** (docs/adr/0024, "Review fixes"):
+  addresses under `/oauth/` answer only as written (`/oauth/REGISTER` or `/oauth/register/` no
+  longer slip past the registration limits); fetches of apps' documents (CIMD) are limited per
+  address and per host as well as for everyone, and an app someone has connected keeps working
+  from a copy of its document kept with the connection, whatever else is fetched; refused
+  registrations no longer count towards everyone's day; the guard blocks IPv4-compatible and SIIT
+  IPv6 addresses; and the consent API hands the authorization server the site's own host and scheme.
 - **A test of the sign-in notice email no longer fails now and then under load.** The app sends
   such a notice after its reply, so a busy machine could be slow to write it; the mail helper for
   tests now waits for sends in progress (`mailer.idle`) and for up to 10 s, and the test timeout is

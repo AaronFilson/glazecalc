@@ -1360,8 +1360,9 @@ describe('OAuth: apps named by their address (CIMD)', function () {
       resetFetchCount();
     }
 
-    // Revoked, it is no longer read from what was kept.
+    // Revoked, it is no longer read from what was kept, and goes.
     await AccessToken.updateMany({ userId: user._id, kind: 'oauth' }, { $set: { revokedAt: new Date() } });
     expect(await keptClientDocument(url, async () => {})).to.equal(undefined);
+    expect(await OAuthRecord.exists({ _id: key })).to.equal(null);
   });
 });
