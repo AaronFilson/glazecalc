@@ -345,6 +345,42 @@ describe('MCP: the public tools', () => {
     expect(badSet.isError).to.equal(true);
   });
 
+  it('check_limits says whether the chemistry fits the firing given, with its figures and sources', async () => {
+    const fritty = [
+      { material: 'Ferro Frit 3134', amount: 80 },
+      { material: 'EPK', amount: 5 },
+      { material: 'Silica', amount: 15 }
+    ];
+    // A low-fire glaze fired at 1300 °C: more boron than Katz asks for, less silica and alumina than H&R's least.
+    const hot = await data('check_limits', { lines: fritty, firing: { celsius: 1300 } });
+    expect(hot.coneFit).to.include({ verdict: 'cooler', looksLike: 'low', strength: 'firm' });
+    expect(hot.coneFit.against.ends[0]).to.include({ scale: 'temperature', cone: '1300', band: 'high' });
+    expect(hot.coneFit.signals.map((s: { oxide: string; source: string }) => [s.oxide, s.source])).to.eql([
+      ['B2O3', 'katz'],
+      ['SiO2', 'hesselberth-roy'],
+      ['Al2O3', 'hesselberth-roy']
+    ]);
+    expect(hot.coneFit.text).to.include('looks more like a low-fire glaze than one for 1300 °C');
+    expect(hot.coneFit.text).to.include('a guide, not a test');
+    expect(hot.coneFit.sources.map((s: { title: string }) => s.title).join(' ')).to.include('Katz');
+    // The same figures whichever limit set is chosen.
+    const set = await data('check_limits', { lines: fritty, firing: { celsius: 1300 }, limitSet: 'glazecalc' });
+    expect(set.coneFit.verdict).to.equal('cooler');
+    // Much soda and potash: the figures do not reach it. No firing: no check.
+    const alkaline = [
+      { material: 'Custer Spar', amount: 70 },
+      { material: 'Whiting', amount: 10 },
+      { material: 'Silica', amount: 20 }
+    ];
+    const skipped = await data('check_limits', { lines: alkaline, firing: { cone: '6' } });
+    expect(skipped.coneFit).to.include({ verdict: 'skipped', skipped: 'alkali' });
+    expect(skipped.coneFit.text).to.include("can't compare");
+    expect(await data('check_limits', { lines: alkaline })).to.not.have.property('coneFit');
+    // An SK cone with no measured bend says so.
+    const sk = await data('check_limits', { lines: fritty, firing: { cone: '6a', chart: 'sk' } });
+    expect(sk.coneFit).to.include({ verdict: 'skipped', skipped: 'noTemperature' });
+  });
+
   it('check_limits names every limit set it takes', async () => {
     const tools = ((await rpc('tools/list')).body!.result as { tools: Json[] }).tools;
     const tool = tools.find((t) => t.name === 'check_limits')!;
@@ -799,7 +835,13 @@ describe('MCP: personal access tokens', () => {
       expect(one.checks.limitSet.id).to.equal('hesselberth-roy');
       expect(one).to.not.have.property('firing');
       expect(one).to.not.have.property('sgTarget');
+      // The chemistry against the firing asked about: a stoneware glaze with no boron at cone 6 fits; at cone 04, it looks hotter.
+      expect(one.coneFit).to.include({ verdict: 'fits', looksLike: null });
+      const low = await data('get_recipe', { id: recipeId, firing: { cone: '04' } }, headers);
+      expect(low.coneFit).to.include({ verdict: 'hotter', strength: 'firm' });
+      expect(low.coneFit.text).to.include('where food or drink will touch');
       expect((await data('get_recipe', { id: recipeId }, headers)).checks).to.equal(undefined);
+      expect(await data('get_recipe', { id: recipeId }, headers)).to.not.have.property('coneFit');
       const theirs = await call('get_recipe', { id: otherRecipeId }, headers);
       expect(theirs.isError).to.equal(true);
       expect((await call('get_recipe', { id: 'nonsense' }, headers)).isError).to.equal(true);
@@ -816,6 +858,8 @@ describe('MCP: personal access tokens', () => {
         expect(saved.checks.bandUsed).to.equal('mid');
         expect(saved.checks.firingFrom).to.equal('recipe');
         expect(saved.checks).to.not.have.property('celsius');
+        // The band chosen on the recipe, read at its cone (10), as the recipe page does.
+        expect(saved.coneFit.against).to.deep.include({ bands: ['high'], chosen: 'high' });
         await User.updateOne({ _id: mine.user._id }, { $set: { 'preferences.limitSet': 'hesselberth-roy' } });
         expect((await data('get_recipe', { id: recipeId }, headers)).checks.band).to.equal('high');
         // A firing asked about wins over the saved one.
@@ -855,6 +899,8 @@ describe('MCP: personal access tokens', () => {
         expect(one.checks.band).to.equal('mid');
         expect(one.checks.firingFrom).to.equal('firedAt');
         expect(one.checksAtOtherBands.high.band).to.equal('high');
+        expect(one.coneFit.against.bands).to.eql(['mid', 'high']);
+        expect(one.coneFit.verdict).to.equal('fits');
         const titles = (list: Json) => list.recipes.map((r: { title: string }) => r.title);
         expect(titles(await data('list_recipes', { cone: '8' }, headers))).to.eql(['Satin white']);
         expect(titles(await data('list_recipes', { cone: '06' }, headers))).to.eql([]);

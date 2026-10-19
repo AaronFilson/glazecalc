@@ -1,6 +1,7 @@
 // The MCP tools anyone may use, with no account (docs/integrations-plan.md,
-// Phase 2, item 20): the library, a recipe's unity formula, the limit checks,
-// substitutions for old materials, a match from given materials, and cones.
+// Phase 2, item 20): the library, a recipe's unity formula, the limit checks
+// (with the chemistry against the firing, docs/adr/0022), substitutions for old
+// materials, a match from given materials, and cones.
 // Each runs the same code as the app (lib/chemistry, lib/recipe) and answers
 // with structured data, sentences in the caller's language, and the same as
 // JSON text. Nothing a caller sends is stored.
@@ -8,8 +9,9 @@ import * as z from 'zod';
 import type { McpServer } from '@modelcontextprotocol/server';
 import chemistry from '../../../lib/chemistry/index.js';
 import cones from '../../../lib/cones/index.js';
+import type { FiringBlock } from '../../../lib/cones/firing.js';
 import recipe from '../../../lib/recipe/index.js';
-import type { MaterialRecord, TryMaterial } from '../../../lib/recipe/index.js';
+import type { ConeFit, MaterialRecord, TryMaterial } from '../../../lib/recipe/index.js';
 import {
   type Caller,
   cautionOut,
@@ -17,6 +19,7 @@ import {
   coneCelsius,
   countFit,
   firingArg,
+  type Firing,
   guarded,
   languageArg,
   languageOf,
@@ -98,6 +101,43 @@ export const analysisOf = (lines: RecipeLine[], language: string) => {
     }
   };
 };
+
+/** A firing asked about as a firing block, for the cone check: a cone of its chart, or a temperature. */
+export const firingBlockOf = (firing: Firing): FiringBlock | null => {
+  if (!firing) return null;
+  if (firing.celsius !== undefined || firing.fahrenheit !== undefined) {
+    return { scale: 'temperature', low: String(celsiusOf(firing)) };
+  }
+  if (!firing.cone) return null;
+  const chart = firing.chart ?? 'orton';
+  const list = chart === 'sk' ? cones.SK.cones : chemistry.CONES;
+  const found = list.find((c) => c.cone.toLowerCase() === firing.cone!.trim().toLowerCase());
+  return found ? { scale: chart, low: found.cone } : null;
+};
+
+/**
+ * Whether the chemistry fits the firing (lib/recipe/cone-fit.js), as the tools answer it: the
+ * verdict and its figures as data, what the recipe page says in the language, and the sources.
+ */
+export const coneFitOut = (fit: ConeFit | null, language: string) =>
+  fit && {
+    verdict: fit.verdict,
+    looksLike: fit.looksLike,
+    ...(fit.closerTo && { closerTo: fit.closerTo }),
+    strength: fit.strength,
+    ...(fit.skipped && { skipped: fit.skipped }),
+    against: fit.stated,
+    signals: fit.signals.map((signal) => ({
+      oxide: signal.key,
+      value: rounded(signal.value, 2),
+      figure: rounded(signal.figure, 2),
+      side: signal.side,
+      band: signal.band,
+      source: signal.source
+    })),
+    text: fit.sentences.map((sentence) => recipeText(sentence, language)).join(' '),
+    sources: fit.sources.map((source) => ({ title: source.title, url: source.url }))
+  };
 
 /** The limit set a caller chose, or the app's own. */
 const limitSetOf = (id: string | undefined) => {
@@ -217,7 +257,7 @@ export const registerPublicTools = (server: McpServer, caller: Caller): void => 
     {
       title: 'Check a recipe against limits',
       description:
-        'Checks a glaze recipe for what is past a recommended limit for its firing (too much boron or alkali, too little alumina, too little or too much clay, rising expansion...) and says what the fired glaze will likely do, as the Glazecalc app does. These are cautions from published limits, not a guarantee of food safety.',
+        "Checks a glaze recipe for what is past a recommended limit for its firing (too much boron or alkali, too little alumina, too little or too much clay, rising expansion...) and says what the fired glaze will likely do, as the Glazecalc app does. With a firing, coneFit says whether the chemistry looks like that firing's, by Katz's boron rule and Hesselberth & Roy's silica and alumina whatever limit set is chosen: verdict 'cooler' or 'hotter' only when boron and silica or alumina agree on another band; 'fits' (nothing points away, not a pass); 'skipped' where the published figures do not reach (lead, lithium, much soda and potash or zinc, raku, cones 01 to 3...). Cone 6 against cone 10 is told apart only roughly (strength 'soft'). These are cautions and guides from published figures, not a test and not a guarantee of food safety.",
       inputSchema: z.object({
         lines: linesArg,
         firing: firingArg,
@@ -234,7 +274,15 @@ export const registerPublicTools = (server: McpServer, caller: Caller): void => 
     },
     async ({ lines, firing, limitSet, language }) => {
       const lang = languageOf(language);
-      return guarded(() => ok(checksOf(resolveLines(lines), celsiusOf(firing), limitSet, lang)), lang);
+      return guarded(() => {
+        const resolved = resolveLines(lines);
+        const checks = checksOf(resolved, celsiusOf(firing), limitSet, lang);
+        const fit = coneFitOut(
+          recipe.coneFit(checks.unityFormula, firingBlockOf(firing), { materials: resolved.map((line) => line.name) }),
+          lang
+        );
+        return ok({ ...checks, ...(fit && { coneFit: fit }) });
+      }, lang);
     }
   );
 
