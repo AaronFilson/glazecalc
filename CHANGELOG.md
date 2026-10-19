@@ -45,6 +45,15 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   links change one at a time, so two open pages never undo each other's; a log in the Trash is hidden and comes back
   with it. A shared recipe shows the firing's schedule note only with the notes. Existing recipes show the firing as
   not stated.
+- **Results by cone** on the recipe page (docs/adr/0021-recipe-firing.md): a card for each cone and atmosphere a glaze
+  was fired at (cone 6 oxidation and cone 6 reduction are two cards), with the cone's approximate temperature, its
+  limits band and how many limit cautions the glaze has there, your summary of how it came out, and the firing logs
+  fired there with their result notes. A linked log is placed at its cone and atmosphere when it names just one within
+  the stated firing (its Atmosphere column read for "ox", "reduction", "red" or "neutral"); otherwise you place it from
+  its card. A summary outside a firing stated later is kept and marked outside. The summaries are printed, shown on a
+  shared page only with the notes (never the logs), carried by versions, Undo, the Trash and the export, given by the
+  MCP `get_recipe` (`coneResults`, and each firing's `cone` and `atmosphere`), and left behind by Save as copy and
+  Duplicate for another cone.
 - **Analysis, limits and a Stull chart on the recipe page**, under the recipe, as you type: each
   oxide's moles, mole % and fired weight %, the loss on ignition and the calculated thermal
   expansion (an estimate, with the coefficients named); the unity formula against a limit set,

@@ -1,9 +1,11 @@
 import firing from '../../lib/cones/firing.js';
 import cones from '../../lib/cones/index.js';
+import results from '../../lib/cones/results.js';
 import paste from '../../lib/recipe/paste.js';
+import { mergeTrial } from '../lib/account_data.ts';
 import Firing from '../models/firing.ts';
 import Recipe, { FIRING_LINKS } from '../models/recipe.ts';
-import { api, expect, makeUser } from './support/app.ts';
+import { api, expect, makeUser, sessionToken } from './support/app.ts';
 
 // A recipe's firing block (docs/adr/0021-recipe-firing.md): the cone as stated,
 // in order, its range and tested cones, its bands, and reading it from a paste.
@@ -274,6 +276,66 @@ describe('recipe firing (lib/cones/firing.js)', () => {
   });
 });
 
+describe('results by cone and atmosphere (lib/cones/results.js)', () => {
+  it('cleans a list of results: trimmed, empty ones out, one for each cone and atmosphere, no unknown field', () => {
+    expect(
+      results.cleanConeResults([
+        { cone: '6', atmosphere: 'oxidation', summary: '  satin  ', extra: 'dropped' },
+        { cone: '6', atmosphere: 'reduction', summary: 'celadon' },
+        { cone: '6', atmosphere: 'oxidation', summary: 'satin, pools glossy' },
+        { cone: '10', summary: '   ' },
+        { cone: '6a', atmosphere: '', summary: 'SK' },
+        { cone: '1240', atmosphere: null, summary: 'by temperature' }
+      ])
+    ).to.eql([
+      { cone: '6', atmosphere: 'oxidation', summary: 'satin, pools glossy' },
+      { cone: '6', atmosphere: 'reduction', summary: 'celadon' },
+      { cone: '6a', summary: 'SK' },
+      { cone: '1240', summary: 'by temperature' }
+    ]);
+  });
+
+  it('refuses what is not a list of results', () => {
+    expect(results.coneResultsProblem('cone 6: glossy')).to.equal('list');
+    expect(results.coneResultsProblem([{ cone: '99', summary: 'x' }])).to.equal('cone');
+    expect(results.coneResultsProblem([{ cone: 6, summary: 'x' }])).to.equal('cone');
+    expect(results.coneResultsProblem([{ cone: '6', atmosphere: 'smoky', summary: 'x' }])).to.equal('atmosphere');
+    expect(results.coneResultsProblem([{ cone: '6', summary: 'x'.repeat(1001) }])).to.equal('summary');
+    expect(results.coneResultsProblem([{ cone: '6', summary: 'x'.repeat(1000) }])).to.equal(null);
+    const many = Array.from({ length: 101 }, () => ({ cone: '6', summary: 'x' }));
+    expect(results.coneResultsProblem(many)).to.equal('most');
+  });
+
+  it("reads a log's atmosphere only when its Atmosphere column names just one", () => {
+    const log = (...cells: string[]) => ({ fieldsIncluded: ['Time', 'Atmosphere'], rows: cells.map((c) => ['', c]) });
+    expect(results.atmosphereFromLog(log('', 'Body reduction', 'heavy red'))).to.equal('reduction');
+    expect(results.atmosphereFromLog(log('ox', 'Ox.'))).to.equal('oxidation');
+    expect(results.atmosphereFromLog(log('neutral'))).to.equal('neutral');
+    // Both named: not clear, left to the potter.
+    expect(results.atmosphereFromLog(log('ox', 'reduction'))).to.equal(null);
+    expect(results.atmosphereFromLog(log('smoky', ''))).to.equal(null);
+    expect(results.atmosphereFromLog({ fieldsIncluded: ['Comments'], rows: [['reduction']] })).to.equal(null);
+  });
+
+  it('places a linked log at its one cone within the stated range, and at an atmosphere the recipe states', () => {
+    const log = {
+      fieldsIncluded: ['Cone', 'Atmosphere'],
+      rows: [
+        ['5', 'red'],
+        ['6', 'red'],
+        ['7 down', '']
+      ]
+    };
+    const block = { scale: 'orton' as const, low: '6', atmospheres: ['oxidation' as const, 'reduction' as const] };
+    expect(results.linkPlace(log, block)).to.eql({ cone: '6', atmosphere: 'reduction' });
+    // Two cones of the range named: the potter chooses.
+    expect(results.linkPlace(log, { scale: 'orton', low: '5', high: '6' })).to.eql({ atmosphere: 'reduction' });
+    // An atmosphere the recipe does not state is not set; with none stated, any is.
+    expect(results.linkPlace(log, { scale: 'orton', low: '6', atmospheres: ['oxidation'] })).to.eql({ cone: '6' });
+    expect(results.linkPlace(log, null)).to.eql({ atmosphere: 'reduction' });
+  });
+});
+
 describe('recipe firing (API)', () => {
   const recipe = {
     title: 'Clear',
@@ -509,6 +571,131 @@ describe('recipe firing (API)', () => {
         .delete('/firing/delete/' + ids[0])
         .set('Authorization', 'Bearer ' + token);
       expect(await link(saved, ids[FIRING_LINKS.most]!)).to.have.status(200);
+    });
+  });
+
+  describe('results by cone and atmosphere', () => {
+    const coneResults = [
+      { cone: '6', atmosphere: 'oxidation', summary: 'Satin, pools glossy' },
+      { cone: '6', atmosphere: 'reduction', summary: 'Celadon green' }
+    ];
+    const stated = { scale: 'orton', low: '6', atmospheres: ['oxidation', 'reduction'] };
+
+    it('keeps a summary for each cone and atmosphere, cleaned on create and change, and refuses one it cannot read', async () => {
+      const saved = await create({
+        ...recipe,
+        firedAt: stated,
+        coneResults: [...coneResults, { cone: '10', summary: ' ' }, { cone: '6', summary: ' Plain ', note: 'dropped' }]
+      });
+      expect(saved).to.have.status(200);
+      expect(saved.body.coneResults).to.eql([...coneResults, { cone: '6', summary: 'Plain' }]);
+      const matte = await change(saved.body._id, { coneResults: [{ cone: '6', summary: '  Matte  ' }] });
+      expect(matte).to.have.status(200);
+      expect((await latest()).coneResults).to.eql([{ cone: '6', summary: 'Matte' }]);
+      for (const bad of [
+        [{ cone: '99', summary: 'x' }],
+        [{ cone: '6', atmosphere: 'smoky', summary: 'x' }],
+        [{ cone: '6', summary: 'x'.repeat(1001) }],
+        'glossy'
+      ]) {
+        expect(await change(saved.body._id, { coneResults: bad }), JSON.stringify(bad)).to.have.status(400);
+      }
+      // Nothing written clears them.
+      expect(await change(saved.body._id, { coneResults: [{ cone: '6', summary: '' }] })).to.have.status(200);
+      expect((await latest()).coneResults ?? null).to.equal(null);
+    });
+
+    it('keeps a result outside a range stated later', async () => {
+      const saved = await create({ ...recipe, firedAt: stated, coneResults });
+      expect(await change(saved.body._id, { firedAt: { scale: 'orton', low: '10' } })).to.have.status(200);
+      expect((await latest()).coneResults).to.eql(coneResults);
+    });
+
+    it('carries them in versions and Undo, the Trash, the export and a trial joining an account', async () => {
+      const saved = (await create({ ...recipe, firedAt: stated, coneResults })).body._id as string;
+      expect(await change(saved, { coneResults: [{ cone: '6', summary: 'Changed' }] })).to.have.status(200);
+      const undone = await api()
+        .post('/recipe/undo/' + saved)
+        .set('Authorization', 'Bearer ' + token);
+      expect(undone.body.record.coneResults).to.eql(coneResults);
+      const json = await api()
+        .get('/export')
+        .set('Authorization', 'Bearer ' + token);
+      expect(json.body.records.recipes[0].coneResults).to.eql(coneResults);
+      const trashed = await api()
+        .delete('/recipe/delete/' + saved)
+        .set('Authorization', 'Bearer ' + token);
+      const restored = await api()
+        .post('/trash/restore/' + trashed.body.trashId)
+        .set('Authorization', 'Bearer ' + token);
+      expect(restored).to.have.status(200);
+      expect((await latest()).coneResults).to.eql(coneResults);
+
+      const trial = sessionToken(await api().post('/guest'))!;
+      const trialId = (
+        await api()
+          .get('/verify')
+          .set('Authorization', 'Bearer ' + trial)
+      ).body.id as string;
+      await api()
+        .post('/recipe/create')
+        .set('Authorization', 'Bearer ' + trial)
+        .send({ ...recipe, title: 'Trial glaze', coneResults });
+      await mergeTrial(trialId, owner);
+      const joined = await Recipe.findOne({ ownedBy: owner, title: 'Trial glaze' }).lean();
+      expect(joined?.coneResults).to.eql(coneResults);
+    });
+
+    it("reads a linked log's cone and atmosphere when clear, and lets the potter set or clear them", async () => {
+      const block = { ...stated, low: '5', high: '6' };
+      const saved = (await create({ ...recipe, firedAt: block })).body._id as string;
+      const newLog = async (rows: string[][]) =>
+        (
+          await api()
+            .post('/firing/create')
+            .set('Authorization', 'Bearer ' + token)
+            .send({ title: 'Log', fieldsIncluded: ['Cone', 'Atmosphere'], rows })
+        ).body._id as string;
+      const clear = await newLog([['6', 'body reduction']]);
+      const mixed = await newLog([
+        ['5', 'ox'],
+        ['6', 'red']
+      ]);
+      const link = (firing: string) =>
+        api()
+          .post('/recipe/firings/' + saved)
+          .set('Authorization', 'Bearer ' + token)
+          .send({ firing });
+      const put = (firing: string, body: object) =>
+        api()
+          .put(`/recipe/firings/${saved}/${firing}`)
+          .set('Authorization', 'Bearer ' + token)
+          .send(body);
+      expect((await link(clear)).body.firings).to.eql([{ firing: clear, cone: '6', atmosphere: 'reduction' }]);
+      // Two cones of the range and two atmospheres named: the log does not say, so neither is set.
+      expect((await link(mixed)).body.firings[1]).to.eql({ firing: mixed });
+      // The potter sets them; what is not given stays.
+      expect((await put(mixed, { cone: '5', atmosphere: 'oxidation' })).body.firings[1]).to.eql({
+        firing: mixed,
+        cone: '5',
+        atmosphere: 'oxidation'
+      });
+      expect((await put(mixed, { result: 'Dry' })).body.firings[1]).to.eql({
+        firing: mixed,
+        result: 'Dry',
+        cone: '5',
+        atmosphere: 'oxidation'
+      });
+      // A cone outside the range is kept; '' or null clears one.
+      expect((await put(mixed, { cone: '10', atmosphere: null })).body.firings[1]).to.eql({
+        firing: mixed,
+        result: 'Dry',
+        cone: '10'
+      });
+      expect((await put(mixed, { cone: '' })).body.firings[1]).to.eql({ firing: mixed, result: 'Dry' });
+      expect(await put(mixed, { cone: '99' })).to.have.status(400);
+      expect(await put(mixed, { atmosphere: 'smoky' })).to.have.status(400);
+      expect((await latest()).firings[1]).to.eql({ firing: mixed, result: 'Dry' });
     });
   });
 

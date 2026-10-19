@@ -11,9 +11,10 @@ import mongoose from 'mongoose';
 import type { McpServer } from '@modelcontextprotocol/server';
 import firingLib from '../../../lib/cones/firing.js';
 import type { FiringBlock } from '../../../lib/cones/firing.js';
+import results from '../../../lib/cones/results.js';
 import recipe from '../../../lib/recipe/index.js';
 import type { MaterialRecord, TryMaterial } from '../../../lib/recipe/index.js';
-import { liveLinks } from '../../lib/firing_links.ts';
+import { liveLinks, type Link } from '../../lib/firing_links.ts';
 import { allows, type Permission } from '../../lib/scopes.ts';
 import Firing from '../../models/firing.ts';
 import Material from '../../models/material.ts';
@@ -218,7 +219,7 @@ export const registerAccountTools = (server: McpServer, caller: Caller): void =>
       {
         title: 'Get one of my recipes',
         description:
-          "One recipe from your account: its materials and amounts, colorants, notes, its stated firing (firedAt: the cone scale, the low and optional high cone of the claimed range, the cones actually tested, the atmospheres and processes, and for a temperature the rate and hold; each cone exactly as the potter gave it), whether it is for a food surface, the firing logs it went through with a result note each, the firing band and target specific gravity saved with it, and its unity formula worked out afresh. It is checked against the limit set chosen in your settings: for the firing given here, or else the band chosen on the recipe, or else the bands its stated firing falls in (a range across two bands is checked at each). coneFit says, for the same firing, whether the chemistry looks like that firing's, as the recipe page's limits panel does: by Katz's boron rule and Hesselberth & Roy's silica and alumina whatever limit set is chosen, a note (verdict 'cooler' or 'hotter') only when boron and silica or alumina agree on another band, 'closer' when a range across bands looks nearer one end, 'fits' when nothing points away (not a pass), 'skipped' where the published figures do not reach. Cone 6 against cone 10 is told apart only roughly (strength 'soft'). A guide, not a test.",
+          "One recipe from your account: its materials and amounts, colorants, notes, its stated firing (firedAt: the cone scale, the low and optional high cone of the claimed range, the cones actually tested, the atmospheres and processes, and for a temperature the rate and hold; each cone exactly as the potter gave it), whether it is for a food surface, the firing logs it went through with a result note each and, where known, the cone and atmosphere each was fired at, the potter’s summary of how it came out at each cone and atmosphere (coneResults; one outside the stated firing is kept), the firing band and target specific gravity saved with it, and its unity formula worked out afresh. It is checked against the limit set chosen in your settings: for the firing given here, or else the band chosen on the recipe, or else the bands its stated firing falls in (a range across two bands is checked at each). coneFit says, for the same firing, whether the chemistry looks like that firing's, as the recipe page's limits panel does: by Katz's boron rule and Hesselberth & Roy's silica and alumina whatever limit set is chosen, a note (verdict 'cooler' or 'hotter') only when boron and silica or alumina agree on another band, 'closer' when a range across bands looks nearer one end, 'fits' when nothing points away (not a pass), 'skipped' where the published figures do not reach. Cone 6 against cone 10 is told apart only roughly (strength 'soft'). A guide, not a test.",
         inputSchema: z.object({ id: idArg, firing: firingArg, language: languageArg }),
         annotations: READ_ONLY
       },
@@ -231,7 +232,8 @@ export const registerAccountTools = (server: McpServer, caller: Caller): void =>
           let checks: Record<string, unknown> | null = null;
           const band = Object.hasOwn(BAND_CELSIUS, found.firing ?? '') ? (found.firing as FiringBand) : undefined;
           const firedAt = firingOut(found.firedAt);
-          const links = await liveLinks(userId, found.firings as Array<{ firing: string; result?: string }>);
+          const links = await liveLinks(userId, found.firings as Link[]);
+          const coneResults = results.cleanConeResults(found.coneResults ?? []) ?? [];
           // The band chosen on the recipe wins; else the bands its stated firing falls in, coolest first.
           const bands: FiringBand[] = band ? [band] : (firedAt?.bands ?? []);
           let alsoChecks: Record<string, unknown> | undefined;
@@ -282,9 +284,12 @@ export const registerAccountTools = (server: McpServer, caller: Caller): void =>
             ...(links.length && {
               firings: links.map((link) => ({
                 firingId: link.firing,
-                ...(link.result && { result: link.result })
+                ...(link.result && { result: link.result }),
+                ...(link.cone && { cone: link.cone }),
+                ...(link.atmosphere && { atmosphere: link.atmosphere })
               }))
             }),
+            ...(coneResults.length && { coneResults }),
             ...(typeof found.sgTarget === 'number' && { sgTarget: found.sgTarget }),
             materials: lines.map((line) => ({ material: line.name, amount: recipe.amountOf(line.amount) })),
             colorants: ((found.additives ?? []) as Array<{ name?: string; amount?: string; unit?: string }>)

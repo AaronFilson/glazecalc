@@ -997,5 +997,23 @@
     "replaceAsk": "Tested is ticked at {now}. Replace that with the cones the logs name, {logs}?",
     "replace": "Replace",
     "keep": "Keep as it is"
+  },
+  "coneCards": {
+    "heading": "Results by cone",
+    "unplaced": "Not placed at a cone",
+    "unplacedNote": "These firing logs are not placed at a cone yet: choose where each was fired.",
+    "approx": "≈ {temperature}",
+    "cautions": "{count, plural, =0 {no limit cautions} one {# limit caution} other {# limit cautions}}",
+    "logs": "{count, plural, =0 {no firing logs} one {# firing log} other {# firing logs}}",
+    "outside": "outside the stated firing",
+    "outsideChoice": "{place} (outside the stated firing)",
+    "summaryLabel": "How it came out at {place}",
+    "summaryPlaceholder": "Surface, colour, runs, crazing...",
+    "noAtmosphere": "atmosphere not given",
+    "placeLabel": "Where {title} was fired",
+    "notPlaced": "Not placed",
+    "add": "Add a result for",
+    "addButton": "Add",
+    "saveFailed": "Where the firing log was fired could not be saved."
   }
 }

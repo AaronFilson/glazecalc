@@ -35,7 +35,7 @@ test('a range with the cones tested, both bands of the limits, the liner note, a
   await expect(page.locator('.firing-tested')).toHaveText('Tested at cone 6, cone 10');
   await expect(page.locator('.firing-claimed')).toHaveText('claimed range cone 6–10');
   await expect(page.locator('.firing-approx')).toContainText('approximate');
-  await page.getByLabel('reduction', { exact: true }).check();
+  await page.locator('#firing-atmosphere-reduction').check();
 
   // The limits check both bands, side by side.
   await expect(page.locator('.limits-band')).toHaveCount(2);
@@ -83,7 +83,7 @@ test("a shared recipe shows the author's own scale first, with an approximate co
   await startRecipe(page, 'Kyoto celadon');
   await page.locator('#firing-scale').selectOption('sk');
   await page.locator('#firing-low').selectOption('10');
-  await page.getByLabel('reduction', { exact: true }).check();
+  await page.locator('#firing-atmosphere-reduction').check();
   await page.getByRole('button', { name: 'Save', exact: true }).click();
   await page.getByRole('button', { name: 'More for Kyoto celadon' }).click();
   await page.getByRole('button', { name: 'Share Kyoto celadon' }).click();
@@ -142,4 +142,46 @@ test('firing logs link both ways: a log picks its recipes, a recipe notes each r
   const saved = await (await page.request.get(API + '/recipe/getAll')).json();
   expect(saved[0].firings).toEqual([{ firing: logId, result: 'glossy, no crazing' }]);
   expect(saved[0].firedAt.tested).toEqual(['6', '7']);
+});
+
+test('a linked log shows on the result card for its cone and atmosphere, beside the summary written there', async ({
+  page
+}) => {
+  await signUpAndSignIn(page);
+  await startRecipe(page, 'Celadon');
+  await page.locator('#firing-low').selectOption('10');
+  await page.locator('#firing-atmosphere-oxidation').check();
+  await page.locator('#firing-atmosphere-reduction').check();
+  await page.getByRole('button', { name: 'Save', exact: true }).click();
+  await expect(page.locator('.saved-recipe-open', { hasText: 'Celadon' })).toBeVisible();
+
+  const made = await page.request.post(API + '/firing/create', {
+    data: {
+      title: 'Gas kiln 3',
+      fieldsIncluded: ['Time', 'Cone', 'Atmosphere'],
+      rows: [
+        ['9:00', '', 'body reduction'],
+        ['14:00', '10 down', 'reduction']
+      ]
+    }
+  });
+  expect(made.ok()).toBe(true);
+
+  // Linked from the recipe: the log names cone 10 and reduction only, so it goes on that card.
+  await page.locator('#firings-open').click();
+  await page.locator('#firing-link-choice').selectOption({ label: 'Gas kiln 3' });
+  await page.locator('#firing-link').click();
+  const card = page.locator('details.cone-card', { hasText: 'cone 10 · reduction' });
+  await expect(card).toBeVisible();
+  await expect(card.locator('summary')).toContainText('1 firing log');
+  await expect(card.locator('.cone-card-logs')).toContainText('Gas kiln 3');
+  await card.getByLabel('How it came out at cone 10 · reduction').fill('Pale green, crackle where thick');
+  await card.getByLabel('How it came out at cone 10 · reduction').blur();
+  await page.getByRole('button', { name: 'Save', exact: true }).click();
+  await expect(page.locator('.recipe-status')).toContainText('Saved');
+  const saved = await (await page.request.get(API + '/recipe/getAll')).json();
+  expect(saved[0].coneResults).toEqual([
+    { cone: '10', atmosphere: 'reduction', summary: 'Pale green, crackle where thick' }
+  ]);
+  expect(saved[0].firings[0]).toMatchObject({ cone: '10', atmosphere: 'reduction' });
 });

@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable, inject } from '@angular/core';
 import { firstValueFrom } from 'rxjs';
 import { API_BASE } from './api-base';
+import type { Atmosphere } from '../../../lib/cones/firing';
 import { FiringLink } from './models';
 
 /**
@@ -28,5 +29,15 @@ export class FiringLinksService {
     return (
       await firstValueFrom(this.http.put<{ firings: FiringLink[] }>(this.url + recipeId + '/' + firing, { result }))
     ).firings;
+  }
+
+  /** Where the log was fired, for the result cards: its cone and atmosphere ('' clears one). */
+  async setPlace(
+    recipeId: string,
+    firing: string,
+    place: { cone: string; atmosphere: Atmosphere | '' }
+  ): Promise<FiringLink[]> {
+    return (await firstValueFrom(this.http.put<{ firings: FiringLink[] }>(this.url + recipeId + '/' + firing, place)))
+      .firings;
   }
 }

@@ -79,6 +79,19 @@ describe('SharedPage', () => {
     expect(root.querySelector('gc-worked-calculation')).toBeNull();
   });
 
+  it('shows the results by cone and atmosphere when the owner sends them with the notes', async () => {
+    const { fixture, root } = await open('#' + SECRET, (req) =>
+      req.flush({
+        ...SHARED,
+        firedAt: { scale: 'orton', low: '6', atmospheres: ['reduction'] },
+        coneResults: [{ cone: '6', atmosphere: 'reduction', summary: 'Celadon green' }]
+      })
+    );
+    expect(text(fixture, '.shared-cone-summaries h2')).toBe('Results by cone');
+    expect(text(fixture, '.shared-cone-summaries')).toContain('Celadon green');
+    expect(root.querySelector('gc-recipe-cone-cards')).toBeNull();
+  });
+
   it('shows the working, as the recipe page does', async () => {
     const { fixture, root } = await open('#' + SECRET, (req) => req.flush(SHARED));
     (root.querySelector('#shared-view-worked') as HTMLButtonElement).click();

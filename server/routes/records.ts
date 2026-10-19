@@ -31,6 +31,7 @@ const recipeRoutes = recordRoutes(Recipe, {
     'firedAt',
     'foodSurface',
     'firings',
+    'coneResults',
     'sgTarget'
   ],
   required: ['title', 'materials'],
