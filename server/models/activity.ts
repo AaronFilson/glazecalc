@@ -35,6 +35,8 @@ const activitySchema = new mongoose.Schema(
 );
 
 activitySchema.index({ ownedBy: 1, at: -1 });
+// Connected apps: what one token did, newest first, and its counts.
+activitySchema.index({ ownedBy: 1, tokenId: 1, at: -1 });
 // MongoDB removes a line ACTIVITY_DAYS after it was written.
 activitySchema.index({ at: 1 }, { expireAfterSeconds: ACTIVITY_DAYS * 24 * 60 * 60 });
 

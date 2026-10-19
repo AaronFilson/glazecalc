@@ -88,7 +88,7 @@ assistant's grant must be a Glazecalc connection the person can see and revoke w
   the person's earlier one to the same app (`revokedWhy: 'replaced'`). The MCP endpoint
   (`server/oauth/resource.ts`) and the token endpoint (`findAccount`) each ask for a working row,
   the same account and app, and an account that is not a trial, on every request; so revoking the
-  row stops every access and refresh token of the connection at once. `revokeToken` and `revokeAll`
+  row stops every access and refresh token of the connection at once. `revokeOne` and `revokeAll`
   (the account page, a password reset, "Sign out everywhere") and `revokeGrant` also delete the
   grant with its codes and tokens; deleting the account deletes them too. An app revoking its own
   refresh token ends the connection (`revokedWhy: 'app'`).

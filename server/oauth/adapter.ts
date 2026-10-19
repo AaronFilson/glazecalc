@@ -184,6 +184,9 @@ export class MongoAdapter implements Adapter {
   }
 
   async destroy(id: string): Promise<void> {
+    // oidc-provider ends a grant only when its app revoked it or a token of it was used twice:
+    // its connection's row stops first, in the same request, before the answer goes.
+    if (this.kind === 'Grant') await onGrantEnded(id);
     await OAuthRecord.deleteOne({ _id: recordKey(this.kind, id) });
   }
 
@@ -199,6 +202,13 @@ export class MongoAdapter implements Adapter {
  */
 let onReuse = (grantId: string): Promise<void> => deleteGrantRecords([grantId]);
 const revokeGrantRecordsAsReused = (grantId: string): Promise<void> => onReuse(grantId);
+
+let onGrantEnded = (grantId: string): Promise<void> => deleteGrantRecords([grantId]);
+
+/** Sets what ending a grant does (server/oauth/provider.ts). */
+export const whenGrantEnded = (handler: (grantId: string) => Promise<void>): void => {
+  onGrantEnded = handler;
+};
 
 /** Sets what a reused code or refresh token does (server/oauth/provider.ts). */
 export const whenReused = (handler: (grantId: string) => Promise<void>): void => {

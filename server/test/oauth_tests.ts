@@ -6,7 +6,7 @@
 // MCP endpoint taking its tokens, and nothing else taking them.
 import crypto from 'node:crypto';
 import * as limits from '../lib/rate_limit.ts';
-import AccessToken, { OAUTH_REFRESH_DAYS, OAUTH_WRITE_DAYS, revokeToken } from '../models/access_token.ts';
+import AccessToken, { OAUTH_REFRESH_DAYS, OAUTH_WRITE_DAYS, revokeOne } from '../models/access_token.ts';
 import Activity from '../models/activity.ts';
 import Note from '../models/note.ts';
 import User from '../models/user.ts';
@@ -763,7 +763,7 @@ describe('OAuth: the authorization server', function () {
       const { session, user } = await person();
       const { tokens, row } = await connect(clientId, session);
       expect((await rpc('tools/list', {}, tokens.access_token)).status).to.equal(200);
-      await revokeToken(user._id, row._id);
+      expect(await revokeOne(user._id, row._id, ['pat', 'oauth'], 'person')).to.equal(true);
       expect((await rpc('tools/list', {}, tokens.access_token)).status).to.equal(401);
       expect((await refresh(tokens.refresh_token, clientId)).status).to.equal(400);
       expect(await OAuthRecord.countDocuments({ grantId: row.grantId })).to.equal(0);

@@ -25,6 +25,7 @@
 // 'oauth', server/models/access_token.ts) beside the grant here. The row is
 // the connection: revoked, every token of the grant stops (resource.ts and
 // findAccount below ask for a working row).
+import { AsyncLocalStorage } from 'node:async_hooks';
 import crypto from 'node:crypto';
 import type { NextFunction, Request, RequestHandler, Response } from 'express';
 import mongoose from 'mongoose';
@@ -41,7 +42,7 @@ import AccessToken, {
 } from '../models/access_token.ts';
 import User from '../models/user.ts';
 import { issuerUrl, resourceUrl } from '../mcp/urls.ts';
-import { extendGrant, keepRegisteredClient, MongoAdapter, whenReused } from './adapter.ts';
+import { extendGrant, keepRegisteredClient, MongoAdapter, whenGrantEnded, whenReused } from './adapter.ts';
 import { allowedClientIdUrl, CACHE_SECONDS, countFetch, guardedFetch, MOST_BYTES } from './cimd.ts';
 import { revokeGrant } from './revoke.ts';
 
@@ -352,6 +353,9 @@ const configuration = (): Configuration => ({
   } as Configuration['features']
 });
 
+/** The path of the request the authorization server is answering, for whenGrantEnded. */
+const requestPath = new AsyncLocalStorage<string>();
+
 let made: { issuer: string; provider: Provider; handler: ReturnType<Provider['callback']> } | undefined;
 
 /** The authorization server for the site's address, made on first use (the tests set the address first). */
@@ -366,17 +370,13 @@ const serverFor = () => {
   // Koa's own logging is off; errors are logged here, without the request.
   provider.silent = true;
   provider.on('server_error', (_ctx, err) => log.error('OAuth server error', { err }));
-  // The app ended its connection (revocation), or a refresh token or code was used twice: the row stops too.
-  provider.on('grant.revoked', (ctx, grantId) => {
-    void revokeGrant(grantId, ctx.oidc?.route === 'token' ? 'reused' : 'app').catch((err: unknown) =>
-      log.error('Could not revoke a connection', { code: log.codeOf(err) })
-    );
-  });
   made = { issuer, provider, handler: provider.callback() };
   return made;
 };
 
 whenReused((grantId) => revokeGrant(grantId, 'reused'));
+// The app ended its connection (revocation), or at the token endpoint a refresh token or code was used twice.
+whenGrantEnded((grantId) => revokeGrant(grantId, requestPath.getStore() === ROUTES.token ? 'reused' : 'app'));
 
 /**
  * Hands a request to the authorization server, with the site's own host and
@@ -389,7 +389,7 @@ const handOver = (req: Request, res: Response): void => {
   req.headers.host = site.host;
   delete req.headers['x-forwarded-host'];
   req.headers['x-forwarded-proto'] = site.protocol.slice(0, -1);
-  void serverFor().handler(req, res);
+  void requestPath.run(req.path, () => serverFor().handler(req, res));
 };
 
 /** The authorization server's limits (server/lib/rate_limit.ts), by address and method. */

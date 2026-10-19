@@ -5,7 +5,7 @@
 // grant's codes, access and refresh tokens are then deleted too.
 //
 // The account page's paths call these through models/access_token.ts
-// (revokeToken, revokeAll), which a password reset and "Sign out everywhere"
+// (revokeOne, revokeAll), which a password reset and "Sign out everywhere"
 // use; these are for code that has the grant rather than the row.
 import type { Types } from 'mongoose';
 import AccessToken, { type RevokedWhy } from '../models/access_token.ts';

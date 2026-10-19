@@ -235,6 +235,14 @@ export const routes: Routes = [
     loadComponent: () => import('./pages/trash/trash-page').then((m) => m.TrashPage)
   },
   {
+    path: 'account/apps',
+    title: marker('titles.apps'),
+    canActivate: [signedInGuard],
+    providers: [provideTranslocoScope('account', 'notebook')],
+    resolve: { messages: scopeTranslations },
+    loadComponent: () => import('./pages/connections/connections-page').then((m) => m.ConnectionsPage)
+  },
+  {
     path: 'account',
     title: marker('titles.account'),
     canActivate: [signedInGuard],

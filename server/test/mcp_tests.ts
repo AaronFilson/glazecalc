@@ -1268,6 +1268,9 @@ describe('MCP: the write tools', () => {
     expect(await Recipe.countDocuments({ _id: id })).to.equal(0);
     const entry = (await Trash.findOne({ ownedBy, recordId: id }).lean())!;
     expect(entry).to.include({ fromCollection: 'recipes', by: 'pat' });
+    // Marked with the token that moved it, as the activity line is, so Connected apps can list it.
+    const line = (await Activity.findOne({ ownedBy, action: 'trash', recordId: id }).lean())!;
+    expect(String(entry.tokenId)).to.equal(String(line.tokenId));
     // Its share link stopped.
     expect(shared).to.have.status(200);
     expect(await ShareLink.countDocuments({ recipeId: id })).to.equal(0);

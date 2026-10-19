@@ -597,7 +597,7 @@ export const registerWriteTools = (server: McpServer, caller: Caller): void => {
           );
         }
         const user = mongoose.isObjectIdOrHexString(id) ? await User.findById(userId) : null;
-        const trashed = user ? await moveToTrash(Model, area, user, id, via) : null;
+        const trashed = user ? await moveToTrash(Model, area, user, id, via, tokenId) : null;
         if (!trashed)
           throw new ToolProblem(`No ${kind === 'note' ? 'notebook entry' : kind} with id ${id} in your account.`);
         if (trashed === TRASH_FULL) {

@@ -46,6 +46,7 @@ export const APP_PAGES = [
   '/notes',
   '/trash',
   '/account',
+  '/account/apps',
   ...PRIVATE_PAGES
 ];
 

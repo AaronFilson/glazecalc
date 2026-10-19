@@ -137,25 +137,27 @@ export const revokeAll = async (
 };
 
 /**
- * Revokes one token or connected app of an account (the account page, the
- * Connected apps page); resolves with its row, or null when the account has
- * none with that id. A connected app's grant goes with it, so every access
- * and refresh token it holds stops at once. Revoking one already revoked
- * changes nothing more.
+ * Revokes one token or grant of an account, if it is still in use; resolves
+ * with whether the row exists (so a second revoke is no error). The one path
+ * the account page and Connected apps use to revoke a single token or grant.
  */
-export const revokeToken = async (
+export const revokeOne = async (
   userId: string | Types.ObjectId,
-  id: string | Types.ObjectId,
-  why: RevokedWhy = 'person',
+  tokenId: string | Types.ObjectId,
+  kinds: Array<'pat' | 'oauth'>,
+  why: RevokedWhy,
   now = new Date()
-): Promise<AccessTokenDocument | null> => {
-  const row = await AccessToken.findOne({ _id: id, userId });
-  if (!row) return null;
+): Promise<boolean> => {
+  const row = await AccessToken.findOne({ _id: tokenId, userId, kind: { $in: kinds } })
+    .select({ revokedAt: 1, kind: 1, grantId: 1 })
+    .lean();
+  if (!row) return false;
   if (!row.revokedAt) {
     await AccessToken.updateOne({ _id: row._id, revokedAt: null }, { $set: { revokedAt: now, revokedWhy: why } });
   }
+  // A connected app's grant goes with it (server/oauth/), so every access and refresh token it holds stops at once.
   if (row.kind === 'oauth' && row.grantId) await deleteGrantRecords([row.grantId]);
-  return row;
+  return true;
 };
 
 /** The filter for an account's personal tokens that still work: neither revoked nor expired. */
