@@ -62,8 +62,9 @@ MongoDB user), `/glazecalc/mfa-key` (SecureString, two-step sign-in's key; see "
 below), `/glazecalc/backup-bucket`, `/glazecalc/smtp-url` (SecureString,
 the SES SMTP credentials that turn email on; see aws/README.md section 14), and optionally
 `/glazecalc/acme-email` (Let's Encrypt account contact) and `/glazecalc/google-client-id`,
-`/glazecalc/google-client-secret`, `/glazecalc/github-client-id`, `/glazecalc/github-client-secret`
-(sign in with Google and GitHub; see "Sign in with Google and GitHub" below).
+`/glazecalc/google-client-secret`, `/glazecalc/github-client-id`, `/glazecalc/github-client-secret`,
+`/glazecalc/microsoft-client-id`, `/glazecalc/microsoft-client-secret` (sign in with Google, GitHub
+and Microsoft; see "Sign in with Google, GitHub and Microsoft" below).
 
 Day to day:
 
@@ -252,17 +253,19 @@ docker compose -f compose.prod.yaml run --rm --no-deps app node server/clear_mfa
 docker compose -f compose.prod.yaml run --rm --no-deps app node server/clear_mfa.ts --clear someone@example.com
 ```
 
-## Sign in with Google and GitHub
+## Sign in with Google, GitHub and Microsoft
 
-"Continue with Google" and "Continue with GitHub" ([ADR 15](../docs/adr/0015-provider-sign-in.md))
-are off, with no button, until a provider's two parameters exist. Each copy of the site has its
-own apps: a GitHub OAuth app allows **one** callback URL, so production and staging need one
-each, and `staging.sh` refuses production's secret. The callbacks are exactly:
+"Continue with Google", "Continue with GitHub" ([ADR 15](../docs/adr/0015-provider-sign-in.md))
+and "Sign in with Microsoft" ([ADR 23](../docs/adr/0023-microsoft-sign-in.md)) are off, with no
+button, until a provider's two parameters exist. Each copy of the site has its own apps: a GitHub
+OAuth app allows **one** callback URL, so production and staging need one each, Microsoft's staging
+app is separate too (the owner's decision), and `staging.sh` refuses production's secret. The
+callbacks are exactly `<site>/api/auth/<provider>/callback`:
 
-| Copy       | Google                                                      | GitHub                                                      |
-| ---------- | ----------------------------------------------------------- | ----------------------------------------------------------- |
-| production | `https://glazecalcapp.com/api/auth/google/callback`         | `https://glazecalcapp.com/api/auth/github/callback`         |
-| staging    | `https://staging.glazecalcapp.com/api/auth/google/callback` | `https://staging.glazecalcapp.com/api/auth/github/callback` |
+| Copy       | Site                               | Google                      | GitHub                      | Microsoft                      |
+| ---------- | ---------------------------------- | --------------------------- | --------------------------- | ------------------------------ |
+| production | `https://glazecalcapp.com`         | `/api/auth/google/callback` | `/api/auth/github/callback` | `/api/auth/microsoft/callback` |
+| staging    | `https://staging.glazecalcapp.com` | `/api/auth/google/callback` | `/api/auth/github/callback` | `/api/auth/microsoft/callback` |
 
 **Owner steps, once** (staging first, try it there, then production):
 
@@ -303,52 +306,121 @@ each, and `staging.sh` refuses production's secret. The callbacks are exactly:
    On each, Generate a new client secret and copy it with the client id. The app asks for
    `user:email` only, to read the primary verified address.
 
-3. **The parameters** (drafts: put in the real values; the ids are not secret, but SecureString
-   keeps them all alike):
+3. **Microsoft** ([Microsoft Entra admin center](https://entra.microsoft.com), signed in with a
+   **work or school account**: only an app registered in a Microsoft Entra tenant can be
+   publisher verified, not one registered with a personal account. A free tenant will do, for
+   example the "Default Directory" an Azure free account makes), twice, staging first:
+   1. Entra ID → App registrations → New registration: name "Glazecalc (staging)" (later
+      "Glazecalc"); supported account types **Accounts in any organizational directory and
+      personal Microsoft accounts** (the `common` endpoint: the owner's decision); redirect URI,
+      platform **Web**: `https://staging.glazecalcapp.com/api/auth/microsoft/callback` (later
+      `https://glazecalcapp.com/api/auth/microsoft/callback`), and no other.
+   2. Authentication: leave **Access tokens** and **ID tokens** under "Implicit grant and hybrid
+      flows" unticked (the app uses the authorization code flow with PKCE, and the ID token comes
+      from the token endpoint); "Allow public client flows" **No**.
+   3. API permissions: remove Microsoft Graph `User.Read` (added by default); add Microsoft Graph
+      → Delegated → `openid` and `email`. Nothing else: the app asks for `openid email` only, so
+      no name, no picture and no `oid` arrive.
+   4. **Token configuration → Add optional claim → ID → `auth_time`.** Microsoft sends
+      `auth_time` only as an optional claim
+      ([optional claims](https://learn.microsoft.com/en-us/entra/identity-platform/optional-claims-reference)).
+      A fresh sign-in that confirms a change on an account without a password sends
+      `prompt=login` and needs `auth_time` to show the person signed in just then; without the
+      claim every such confirmation is refused (`provider-not-fresh`), and such a person sets a
+      password with "Forgot password". Do not add the `email` optional claim: the `email` scope
+      already brings it, and it is never trusted anyway (ADR 23).
+   5. Certificates & secrets → Client secrets → New client secret, description "glazecalc
+      <date>", expiry **12 months** (Microsoft recommends under 12; the portal allows at most 24,
+      [credentials](https://learn.microsoft.com/en-us/entra/identity-platform/how-to-add-credentials)).
+      Copy the **Value** at once (it is shown once) and the Application (client) ID from
+      Overview. **Put a reminder in the calendar a month before it expires** (see "A new
+      secret" below): when it runs out, every Microsoft sign-in fails with
+      `OAUTH_INVALID_CLIENT` in the log.
+   6. Branding & properties: name "Glazecalc", home page `https://glazecalcapp.com`, terms
+      `https://glazecalcapp.com/terms`, privacy `https://glazecalcapp.com/privacy`. No logo is
+      needed.
+   7. **Publisher domain**, once the app is deployed with its parameters (step 6 below): Branding
+      & properties → Publisher domain → Verify a new domain → `glazecalcapp.com` (staging:
+      `staging.glazecalcapp.com`). Microsoft fetches
+      `https://<domain>/.well-known/microsoft-identity-association.json`; the app serves it itself
+      while Microsoft is on, as `{"associatedApplications":[{"applicationId":"<this copy's
+client id>"}]}` with `Content-Type: application/json`, written from
+      `MICROSOFT_CLIENT_ID`, so nothing is committed or copied by hand
+      ([publisher domain](https://learn.microsoft.com/en-us/entra/identity-platform/howto-configure-publisher-domain)).
+      Check it first with `curl -i https://glazecalcapp.com/.well-known/microsoft-identity-association.json`.
+   8. **Publisher verification, before production goes live** (the owner's decision): without
+      it the consent screen says the app is from an **unverified** publisher, and organizations
+      may block it ([publisher verification](https://learn.microsoft.com/en-us/entra/identity-platform/publisher-verification-overview)).
+      It is free and needs: a verified Microsoft AI Cloud Partner Program account (its partner
+      global account) for the publisher; the app's tenant associated with it; the email used
+      for the partner account's verification at the publisher domain (`@glazecalcapp.com`, for
+      example `privacy@glazecalcapp.com`, which reaches the owner), or that domain DNS-verified
+      in the tenant; the publisher domain set (step 7, not `*.onmicrosoft.com`); the person
+      doing it an Application Administrator (or Cloud Application Administrator) in the tenant
+      and a partner admin, signed in with multifactor authentication. Then Branding &
+      properties → Publisher verification → Add Partner One ID. The staging app need not be
+      verified.
+
+   **Never delete or replace the production app registration.** Microsoft's `sub` is different
+   for each app (pairwise), so a new registration would sign everyone in as someone new: their
+   links would find nothing, and accounts made with Microsoft would have to set a password with
+   "Forgot password" (ADR 23). Rotate its secret instead.
+
+4. **The parameters**. Each command asks for its value without echoing it, so no secret lands in
+   the shell's history; the ids are not secret, but SecureString keeps them all alike:
 
    ```bash
    export MSYS_NO_PATHCONV=1   # Git Bash only: else it turns /glazecalc/... into C:/Program Files/Git/glazecalc/...
+   put() {  # put <parameter name>: asks for the value, then stores it as a SecureString
+     local value
+     read -rsp "$1: " value && echo
+     aws ssm put-parameter --region us-west-2 --name "$1" --type SecureString --value "$value" > /dev/null \
+       && echo "stored $1"
+     unset value
+   }
    # Staging
-   aws ssm put-parameter --region us-west-2 --name /glazecalc/staging/google-client-id --type SecureString \
-     --value 'STAGING_GOOGLE_CLIENT_ID.apps.googleusercontent.com'
-   aws ssm put-parameter --region us-west-2 --name /glazecalc/staging/google-client-secret --type SecureString \
-     --value 'STAGING_GOOGLE_CLIENT_SECRET'
-   aws ssm put-parameter --region us-west-2 --name /glazecalc/staging/github-client-id --type SecureString \
-     --value 'STAGING_GITHUB_CLIENT_ID'
-   aws ssm put-parameter --region us-west-2 --name /glazecalc/staging/github-client-secret --type SecureString \
-     --value 'STAGING_GITHUB_CLIENT_SECRET'
+   for provider in google github microsoft; do
+     put /glazecalc/staging/$provider-client-id
+     put /glazecalc/staging/$provider-client-secret
+   done
    # Production
-   aws ssm put-parameter --region us-west-2 --name /glazecalc/google-client-id --type SecureString \
-     --value 'PROD_GOOGLE_CLIENT_ID.apps.googleusercontent.com'
-   aws ssm put-parameter --region us-west-2 --name /glazecalc/google-client-secret --type SecureString \
-     --value 'PROD_GOOGLE_CLIENT_SECRET'
-   aws ssm put-parameter --region us-west-2 --name /glazecalc/github-client-id --type SecureString \
-     --value 'PROD_GITHUB_CLIENT_ID'
-   aws ssm put-parameter --region us-west-2 --name /glazecalc/github-client-secret --type SecureString \
-     --value 'PROD_GITHUB_CLIENT_SECRET'
+   for provider in google github microsoft; do
+     put /glazecalc/$provider-client-id
+     put /glazecalc/$provider-client-secret
+   done
    ```
 
-4. **nginx, before the first provider sign-in.** Each deploy installs nginx's files from its
+   To store only one provider, run its two `put` lines alone.
+
+5. **nginx, before the first provider sign-in.** Each deploy installs nginx's files from its
    commit, so a deploy of the release that brought provider sign-in has done this. The files make
    nginx's access logs write the callback (`/api/auth/<provider>/callback`) without its query,
    which carries the provider's one-time code and the state (the `$glazecalc_request` map in
    `nginx/glazecalc.conf`; `nginx/glazecalc-staging.conf` has its own copy,
    `$glazecalc_staging_request`, so staging's log strips it even when its file comes from a
    branch). Without them those codes and states would sit in `access.log` for 14 days.
-5. Run `staging.sh` (or Deploy for production). It prints `Sign in with google: on.` and
-   `Sign in with github: on.`, or `off` with the parameter it did not find. The instance role
-   already reads `/glazecalc/*`, so no policy changes.
-6. Try it: sign in with each on staging, with a new address and with one an account already has
-   (it must ask you to sign in first), and with two-step sign-in on (it must ask for the second
-   step). With an account made with Google, change its email from the account page: "Sign in
-   again with Google" must ask for the Google password, not only for the account.
+6. Run `staging.sh` (or Deploy for production). It prints `Sign in with google: on.`,
+   `Sign in with github: on.` and `Sign in with microsoft: on.`, or `off` with the parameter it
+   did not find. The instance role already reads `/glazecalc/*`, so no policy changes.
+7. Try it: sign in with each on staging, with a new address and with one an account already has
+   (Google and GitHub must ask you to sign in first; Microsoft must refuse and say to link it
+   from the account page), and with two-step sign-in on (it must ask for the second step). With
+   an account made with Google, change its email from the account page: "Sign in again with
+   Google" must ask for the Google password, not only for the account. For Microsoft, with a
+   personal account **and** a work or school account: a new account must get the confirmation
+   email and show "Confirm your email"; and "Sign in again with Microsoft" must ask for the
+   password and then hold the change (`provider-not-fresh` instead means `auth_time` is not
+   arriving: check step 3.4, and whether personal accounts send it).
 
 Afterwards:
 
 - **Turning one off:** delete its two parameters and deploy. Accounts made with it keep working
   through "Forgot password", which gives them a password of their own.
-- **A new secret:** generate one at the provider (both providers allow two at once), put it with
-  `put-parameter --overwrite`, deploy, then delete the old one at the provider.
+- **A new secret:** generate one at the provider (all three allow two at once), put it with
+  `put-parameter --overwrite` (add `--overwrite` to the `aws ssm put-parameter` line in `put`
+  above), deploy, then delete the old one at the provider. Microsoft's secrets expire (at most 24
+  months, 12 recommended): renew before the date in the calendar, and set the next reminder.
+
 - **`OAUTH_INVALID_CLIENT` in the app's log** means a provider refused the client id or secret:
   check the parameters against the provider's console. `OAUTH_FAILED` lines are single sign-ins
   that did not work (a code reused, the provider slow), worth a look only in numbers.
