@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 import { catchError, finalize, from, switchMap, throwError } from 'rxjs';
 import { API_BASE } from './api-base';
 import { AuthService } from './auth.service';
+import { sameSitePath } from './signed-in.guard';
 
 // 401s these answer are handled where they are called: /signin's means a wrong
 // password, and those of the routes under it (/signin/second-step, /signin/passkey)
@@ -56,7 +57,7 @@ export class SessionChanges {
 /**
  * When the API stops accepting this browser's session (it expired, or the
  * password was changed on another device), signs out and goes to the sign-in
- * page; a trial that has run out goes to the start page, which says so. The
+ * page, which comes back to the page left; a trial that has run out goes to the start page, which says so. The
  * session itself is a cookie the browser sends on its own. A 401 for a request
  * that crossed a change to the session (SessionChanges) is asked once more,
  * after the change, with the cookie it left.
@@ -89,7 +90,14 @@ export const sessionExpiredInterceptor: HttpInterceptorFn = (req, next) => {
       const wasTrial = auth.trial() !== null;
       auth.sessionEnded();
       // The page left can tell why (core/leave.guard.ts): nothing on it can be saved now.
-      void router.navigateByUrl(wasTrial ? '/' : '/signin', { state: { sessionEnded: true } });
+      // Signing in again comes back to the page left (?next=), unless it is a sign-in page or not this site's.
+      const back = sameSitePath(router.url);
+      void router.navigateByUrl(
+        wasTrial ? '/' : back && back !== '/' ? '/signin?next=' + encodeURIComponent(back) : '/signin',
+        {
+          state: { sessionEnded: true }
+        }
+      );
     }
     return throwError(() => err);
   };

@@ -104,6 +104,45 @@ describe('AuthPage', () => {
     }
   });
 
+  describe('links between sign-in and sign-up keep ?next=', () => {
+    const linkFor = async (mode: 'signin' | 'signup', next: string | null, label: RegExp) => {
+      TestBed.configureTestingModule({
+        providers: [
+          ...testProviders(),
+          {
+            provide: ActivatedRoute,
+            useValue: {
+              data: of({ mode }),
+              snapshot: { queryParamMap: convertToParamMap(next === null ? {} : { next }) }
+            }
+          }
+        ]
+      });
+      localStorage.clear();
+      const fixture = TestBed.createComponent(AuthPage);
+      await fixture.whenStable();
+      const links = [
+        ...(fixture.nativeElement as HTMLElement).querySelectorAll('.auth-links a')
+      ] as HTMLAnchorElement[];
+      return links.find((a) => label.test(a.textContent ?? ''))?.getAttribute('href');
+    };
+
+    it('carries a same-site page from sign-in to sign-up and back', async () => {
+      const next = '/connect/aB3_dE5-gH7iJ9kL1mN';
+      expect(await linkFor('signin', next, /account/i)).toBe('/signup?next=' + encodeURIComponent(next));
+      TestBed.resetTestingModule();
+      expect(await linkFor('signup', next, /sign in/i)).toBe('/signin?next=' + encodeURIComponent(next));
+    });
+
+    it('has no ?next= when there is none, or it is not a page of this site', async () => {
+      expect(await linkFor('signin', null, /account/i)).toBe('/signup');
+      for (const bad of ['//evil.example/x', '/\\evil.example', 'https://evil.example/']) {
+        TestBed.resetTestingModule();
+        expect(await linkFor('signin', bad, /account/i), bad).toBe('/signup');
+      }
+    });
+  });
+
   it('has the keep-me-signed-in box unticked, and sends its choice', async () => {
     const { fixture, page } = await create('signin');
     const box = fixture.nativeElement.querySelector('#keep') as HTMLInputElement;

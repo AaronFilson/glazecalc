@@ -70,7 +70,10 @@ import { SecondStep } from './second-step';
         } @else {
           @if (!signup() && auth.trial(); as trial) {
             <p class="trial-note">
-              <gc-rich [text]="t('account.auth.trialNote', { name: trial.name })" [links]="{ signup: '/signup' }" />
+              <gc-rich
+                [text]="t('account.auth.trialNote', { name: trial.name })"
+                [links]="{ signup: otherPage('/signup') }"
+              />
             </p>
           }
 
@@ -174,13 +177,13 @@ import { SecondStep } from './second-step';
               <gc-rich [text]="t('account.auth.terms')" [links]="{ terms: '/terms' }" />
             </p>
             <p class="auth-links">
-              <gc-rich [text]="t('account.auth.haveAccount')" [links]="{ signin: '/signin' }" />
+              <gc-rich [text]="t('account.auth.haveAccount')" [links]="{ signin: otherPage('/signin') }" />
             </p>
           } @else {
             <p class="auth-links">
               <a routerLink="/forgot">{{ t('account.auth.forgot') }}</a
               ><br />
-              <gc-rich [text]="t('account.auth.newHere')" [links]="{ signup: '/signup' }" />
+              <gc-rich [text]="t('account.auth.newHere')" [links]="{ signup: otherPage('/signup') }" />
             </p>
           }
         }
@@ -274,6 +277,14 @@ export class AuthPage {
    * (sameSitePath); otherwise home.
    */
   private readonly next = sameSitePath(inject(ActivatedRoute).snapshot?.queryParamMap?.get('next')) ?? '/home';
+  /**
+   * The sign-in and sign-up pages link to each other and carry ?next= along,
+   * so the visitor still comes back to the page that sent them (next is
+   * already a same-site path; it is encoded into the link).
+   */
+  protected otherPage(page: '/signin' | '/signup'): string {
+    return this.next === '/home' ? page : page + '?next=' + encodeURIComponent(this.next);
+  }
   /**
    * What the provider is given to come back to, in this page's language: the
    * page to go on to, or this page's own address (which the server takes as home).

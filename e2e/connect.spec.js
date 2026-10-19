@@ -175,3 +175,14 @@ test('turns a trial away in words', async ({ page, request }) => {
   await expect(page.getByRole('alert')).toHaveText('A trial cannot connect apps. Please create a free account first.');
   await expect(page.getByRole('button', { name: 'Allow', exact: true })).toHaveCount(0);
 });
+
+test('a signed-out visitor who opens a consent page keeps it through "Create an account"', async ({ page }) => {
+  const consent = '/connect/aB3_dE5-gH7iJ9kL1mN';
+  await page.goto(consent);
+  await expect(page).toHaveURL(/\/signin\?next=%2Fconnect%2F[\w-]+$/);
+  await page.locator('#main').getByRole('link', { name: 'Create a free account' }).click();
+  await expect(page).toHaveURL(/\/signup\?next=%2Fconnect%2FaB3_dE5-gH7iJ9kL1mN$/);
+  // And back again, still carrying it.
+  await page.locator('#main').getByRole('link', { name: 'Sign in', exact: true }).click();
+  await expect(page).toHaveURL(/\/signin\?next=%2Fconnect%2FaB3_dE5-gH7iJ9kL1mN$/);
+});

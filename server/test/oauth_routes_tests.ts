@@ -149,7 +149,10 @@ describe('signing in with Google, GitHub and Microsoft', () => {
         ['//evil.example/recipe', '/signin?provider=google'],
         ['https://evil.example/', '/signin?provider=google'],
         ['/\\evil.example', '/signin?provider=google'],
-        ['/fr/signin', '/fr/signin?provider=google']
+        ['/fr/signin', '/fr/signin?provider=google'],
+        ['/connect/aB3_dE5-gH7iJ9kL1mN', '/signin?provider=google'],
+        ['/	/evil.example', '/signin?provider=google'],
+        ['/connect/aB3_dE5-gH7iJ9kL1mN/../../x', '/signin?provider=google']
       ];
       for (const [next, page] of cases) {
         const flow = await start('google', { next });
@@ -159,6 +162,12 @@ describe('signing in with Google, GitHub and Microsoft', () => {
       const flow = await start('google', { next: '/de/recipe' });
       await callback('google', flow, { sub: subject(), email: uniqueEmail('g'), emailVerified: true });
       expect((await finish(flow.cookie)).body.next).to.eql('/recipe');
+      const connect = await start('google', { next: '/connect/aB3_dE5-gH7iJ9kL1mN' });
+      await callback('google', connect, { sub: subject(), email: uniqueEmail('g'), emailVerified: true });
+      expect((await finish(connect.cookie)).body.next).to.eql('/connect/aB3_dE5-gH7iJ9kL1mN');
+      const evil = await start('google', { next: '/\\evil.example' });
+      await callback('google', evil, { sub: subject(), email: uniqueEmail('g'), emailVerified: true });
+      expect((await finish(evil.cookie)).body.next).to.eql('/home');
       const home = await start('google', { next: '/fr/signin' });
       await callback('google', home, { sub: subject(), email: uniqueEmail('g'), emailVerified: true });
       expect((await finish(home.cookie)).body.next).to.eql('/home');
