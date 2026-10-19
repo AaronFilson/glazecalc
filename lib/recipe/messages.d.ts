@@ -77,7 +77,32 @@ export type RecipeMessageCode =
   | 'lead.copper'
   | 'lead.manganese'
   | 'lead.iron'
-  | 'shelf.empty';
+  | 'shelf.empty'
+  | 'coneFit.cooler'
+  | 'coneFit.coolerSoft'
+  | 'coneFit.hotter'
+  | 'coneFit.hotterSoft'
+  | 'coneFit.closer'
+  | 'coneFit.coolerSilica'
+  | 'coneFit.coolerAlumina'
+  | 'coneFit.coolerBoth'
+  | 'coneFit.hotterSilica'
+  | 'coneFit.coolerEffect'
+  | 'coneFit.hotterEffect'
+  | 'coneFit.hotterEffectSoft'
+  | 'coneFit.gerstley'
+  | 'coneFit.guide'
+  | 'coneFit.fits'
+  | 'coneFit.skip.lead'
+  | 'coneFit.skip.lithium'
+  | 'coneFit.skip.alkali'
+  | 'coneFit.skip.zinc'
+  | 'coneFit.skip.notGlaze'
+  | 'coneFit.skip.process'
+  | 'coneFit.skip.ash'
+  | 'coneFit.skip.noTemperature'
+  | 'coneFit.skip.between'
+  | 'coneFit.skip.belowChart';
 
 export const CODES: ReadonlyArray<RecipeMessageCode>;
 

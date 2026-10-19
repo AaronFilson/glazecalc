@@ -84,7 +84,32 @@ const KEYS: Record<RecipeMessageCode, string> = {
   'lead.copper': marker('recipe.lead.copper'),
   'lead.manganese': marker('recipe.lead.manganese'),
   'lead.iron': marker('recipe.lead.iron'),
-  'shelf.empty': marker('recipe.shelf.empty')
+  'shelf.empty': marker('recipe.shelf.empty'),
+  'coneFit.cooler': marker('recipe.coneFit.cooler'),
+  'coneFit.coolerSoft': marker('recipe.coneFit.coolerSoft'),
+  'coneFit.hotter': marker('recipe.coneFit.hotter'),
+  'coneFit.hotterSoft': marker('recipe.coneFit.hotterSoft'),
+  'coneFit.closer': marker('recipe.coneFit.closer'),
+  'coneFit.coolerSilica': marker('recipe.coneFit.coolerSilica'),
+  'coneFit.coolerAlumina': marker('recipe.coneFit.coolerAlumina'),
+  'coneFit.coolerBoth': marker('recipe.coneFit.coolerBoth'),
+  'coneFit.hotterSilica': marker('recipe.coneFit.hotterSilica'),
+  'coneFit.coolerEffect': marker('recipe.coneFit.coolerEffect'),
+  'coneFit.hotterEffect': marker('recipe.coneFit.hotterEffect'),
+  'coneFit.hotterEffectSoft': marker('recipe.coneFit.hotterEffectSoft'),
+  'coneFit.gerstley': marker('recipe.coneFit.gerstley'),
+  'coneFit.guide': marker('recipe.coneFit.guide'),
+  'coneFit.fits': marker('recipe.coneFit.fits'),
+  'coneFit.skip.lead': marker('recipe.coneFit.skip.lead'),
+  'coneFit.skip.lithium': marker('recipe.coneFit.skip.lithium'),
+  'coneFit.skip.alkali': marker('recipe.coneFit.skip.alkali'),
+  'coneFit.skip.zinc': marker('recipe.coneFit.skip.zinc'),
+  'coneFit.skip.notGlaze': marker('recipe.coneFit.skip.notGlaze'),
+  'coneFit.skip.process': marker('recipe.coneFit.skip.process'),
+  'coneFit.skip.ash': marker('recipe.coneFit.skip.ash'),
+  'coneFit.skip.noTemperature': marker('recipe.coneFit.skip.noTemperature'),
+  'coneFit.skip.between': marker('recipe.coneFit.skip.between'),
+  'coneFit.skip.belowChart': marker('recipe.coneFit.skip.belowChart')
 };
 
 /** A figure as the reader writes numbers: 0,30 or 0.30. */
