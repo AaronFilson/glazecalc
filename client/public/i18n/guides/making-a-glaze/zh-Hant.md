@@ -163,55 +163,55 @@ Label: 篩網目數
 | 含鈷或鐵等呈色劑的釉藥           | 100–120 目  |
 | 灰釉，以及其他含粗顆粒原料的釉藥 | 60–80 目    |
 
-## 比重 {#specific-gravity}
+## Specific gravity {#specific-gravity lang=en}
 
-**比重**{{en: specific gravity}}（SG）告訴您釉漿裡有多少粉料。比重是一定體積的釉藥重量，除以同體積水的重量。水是 1.00，{{SG 1.45}} 的釉藥每 100 mL 重 145 g。依測得的比重來調配，就能每次得到同樣的濃稠度與同樣的釉層。比重沒有單位，所以不論以公克還是盎司計都相同。
+**Specific gravity** (SG) tells you how much powder is in your slurry. It is the weight of a volume of glaze divided by the weight of the same volume of water. Water is 1.00, and a glaze at {{SG 1.45}} weighs 145 g per 100 mL. Mixing to a measured SG is how you get the same thickness, and the same coat, every time. It has no units, so it is the same in grams or ounces.
 
-### 秤 100 mL 來測量
+### Measure it by weighing 100 mL
 
-1. 把釉藥攪拌均勻，不要有任何沉澱。
-2. 把 100 mL 的**量筒**（有刻度的高管狀量具）或 100 mL 的針筒放在秤上，並扣重。
-3. 裝入釉藥到剛好 100 mL，讀刻度時視線與液面齊平。
-4. 秤重，把公克數除以 100：145 g 就是比重 1.45。
+1. Stir the glaze so nothing has settled.
+2. Put a 100 mL **graduated cylinder** (a tall, marked measuring tube) or a 100 mL syringe on the scale, and tare it.
+3. Fill it with glaze to exactly 100 mL, reading the mark at eye level.
+4. Weigh it and divide the grams by 100: 145 g is SG 1.45.
 
-Digitalfire 還會在杯子上標出 500 g 水的液面，把釉藥裝到記號處，再把重量除以 500；較大、裝得較滿的量具比較準確。**比重計**是浮在釉藥中、依其浮出位置讀數的浮標，很快，但遇到濃稠或已膠化的釉藥可能讀錯。英國的比重計，例如 Potclays 的，讀數單位是波美度（°Bé）。依我們的算法，SG = 145 ÷ (145 − °Bé)，所以 46 °Bé 約為 1.46。較舊的英國書籍給的是**品脫重**，也就是一英制品脫釉藥的盎司數：除以 20，所以 29 oz 約為比重 1.45（同樣是我們的算法）。
+Digitalfire also marks a cup at the level of 500 g of water, fills it to the mark with glaze, and divides the weight by 500; a bigger, fuller measure is more accurate. A **hydrometer**, a float read where it sits in the glaze, is quick but can misread thick or gelled glazes. UK hydrometers, such as Potclays', read in degrees Baumé (°Bé). By our arithmetic, SG = 145 ÷ (145 − °Bé), so 46 °Bé is about 1.46. Older UK books give a **pint weight**, the ounces in an imperial pint of glaze: divide it by 20, so 29 oz is about SG 1.45 (also our arithmetic).
 
-### 目標值
+### What to aim for
 
-各來源說法不一，尤其是刷釉和噴釉，英國供應商 Potclays 給的數值高得多（該公司自己的數值「僅供參考」）。請把每個數字都當成起點。Digitalfire 的核心建議是，為每款釉藥找出適合的比重與膠化程度，然後重複使用並記下來。
+Sources disagree, most of all on brushing and spraying, where the UK supplier Potclays gives much higher figures (its own are "for guidance only"). Treat every number as a starting point. Digitalfire's core advice is to find the SG and gelling that work for each glaze, then repeat them and write them down.
 
-Table: 目標比重，各來源說法不一
-Label: 比重目標值
+Table: Specific gravity targets, where sources disagree
+Label: Specific gravity targets
 
-| 用途 | Digitalfire 與 Glazy                                                                                             | Potclays（英國）                            | 穩妥的起點                                             |
-| ---- | ---------------------------------------------------------------------------------------------------------------- | ------------------------------------------- | ------------------------------------------------------ |
-| 浸釉 | {{SG 1.40}}（浸 5 秒）至 {{SG 1.50}}（浸 1 秒）；自己調配且已膠化的釉藥，在 {{SG 1.43–1.45}} 效果最好            | 透明釉 {{SG 1.46–1.48}}；有色釉 {{SG 1.61}} | {{SG 1.45}}；如果會滴流，稀釋到 {{SG 1.43}} 並使其膠化 |
-| 刷釉 | {{SG 1.25}}（稀的透明釉）至 {{SG 1.55}}（深色細部）                                                              | {{SG 1.71–1.81}}                            | 照產品說明；使用 CMC 或刷釉用調和劑                    |
-| 噴釉 | 沒有數值；為 Ceramic Arts Network 撰文的 Hopper 說要稀得多，並加解膠劑{{en: deflocculant}}（使釉漿變稀的添加物） | {{SG 1.71}}                                 | 沒有可靠的數值；只在噴釉台內噴釉                       |
+| Use      | Digitalfire and Glazy                                                                                                                 | Potclays (UK)                               | Safe starting point                                     |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- | ------------------------------------------------------- |
+| Dipping  | {{SG 1.40}} (for a 5-second dip) to {{SG 1.50}} (for a 1-second dip); home-mixed glazes that are gelled do best at {{SG 1.43–1.45}}   | Clear {{SG 1.46–1.48}}; colored {{SG 1.61}} | {{SG 1.45}}; thin to {{SG 1.43}} and gel it if it drips |
+| Brushing | {{SG 1.25}} (thin clear) to {{SG 1.55}} (dark detail)                                                                                 | {{SG 1.71–1.81}}                            | Follow the product; use CMC gum or a brushing medium    |
+| Spraying | No figure; Hopper, writing for Ceramic Arts Network, says much thinner, with a deflocculant (an additive that makes a slurry runnier) | {{SG 1.71}}                                 | No reliable number; spray only in a spray booth         |
 
-用肉眼檢查浸釉用釉藥時，AMACO 浸 5 秒，看釉層是否約有一枚美國十美分硬幣那麼厚。Digitalfire 則燒浸 5 秒的試片來檢查。
+To check a dipping glaze by eye, AMACO dips for 5 seconds and looks for a coat about as thick as a US dime. Digitalfire fires tiles dipped for 5 seconds to check.
 
-### 達到目標比重所需的水量：我們的估算
+### Water for a target SG: our estimate
 
-下表是我們自己算的，不是哪個來源的。這個表假設粉料顆粒的密度是 2.6 g/cm³，這是假設，不是測量值。黏土、可溶的原料和膠化都會改變實際的釉藥，所以只用這個表來起步，然後再測量。作為對照，粉料與水等重時這個表預測 {{SG 1.44}}，和 Digitalfire 量到的 {{SG 1.46}} 很接近。這個表也顯示，每 100 g 加 70–80 mL 的起點會高於 {{SG 1.50}}，比您需要的更稠。
+The table below is our own arithmetic, not a source's. It assumes the powder's particles have a density of 2.6 g per cm³, which is an assumption, not a measurement. Clay, soluble materials and gelling all change a real glaze, so use it to start, then measure. As a check, it predicts {{SG 1.44}} for equal weights of powder and water, close to Digitalfire's measured {{SG 1.46}}. It also shows that 70 to 80 mL per 100 g starts you above {{SG 1.50}}, thicker than you need.
 
-Table: 達到目標比重所需的水量（我們的估算）
-Label: 達到目標比重所需的水量
+Table: Water for a target specific gravity (our estimate)
+Label: Water for a target specific gravity
 
-| 目標        | 每 100 g 粉料 |     每公斤 |           每磅 |
-| ----------- | ------------: | ---------: | -------------: |
-| {{SG 1.40}} |     約 115 mL | 約 1150 mL | 約 18 US fl oz |
-| {{SG 1.45}} |      約 98 mL |  約 980 mL | 約 15 US fl oz |
-| {{SG 1.50}} |      約 85 mL |  約 850 mL | 約 13 US fl oz |
-| {{SG 1.60}} |      約 64 mL |  約 640 mL | 約 10 US fl oz |
+| Target      | Per 100 g of powder |  Per kilogram |         Per pound |
+| ----------- | ------------------: | ------------: | ----------------: |
+| {{SG 1.40}} |        about 115 mL | about 1150 mL | about 18 US fl oz |
+| {{SG 1.45}} |         about 98 mL |  about 980 mL | about 15 US fl oz |
+| {{SG 1.50}} |         about 85 mL |  about 850 mL | about 13 US fl oz |
+| {{SG 1.60}} |         about 64 mL |  about 640 mL | about 10 US fl oz |
 
-### 瀉鹽、CMC 與皂土
+### Epsom salts, CMC gum and bentonite
 
-**瀉鹽**（硫酸鎂）會讓釉藥靜置時輕微膠化，攪拌時又能再流動。這稱為使釉藥**絮凝**{{en: flocculating}}，具有這種特性的釉藥是**觸變**{{en: thixotropic}}的：上得更均勻、較不易滴流、也較不易沉澱。Digitalfire 建議在比重調對之後，從每加侖約 2 g 開始（約每公升 0.5 g，這是我們的換算），並在每次調配時調整用量，因為不該由釉方來固定劑量。我們建議先用少量熱水溶解。在 Digitalfire 的一個例子中，一款 {{SG 1.45}} 的釉藥會滴流，所以加水把比重降到 {{SG 1.43}}，再用瀉鹽讓釉藥膠化回奶油般的狀態，結果上得很均勻。簡單的檢查方法：攪拌，停下來，觀察。膠化的釉藥會繼續流動約 2 或 3 秒，然後停住，並稍微彈回一點。
+**Epsom salts** make a glaze gel slightly when it stands still and flow again when it is stirred. This is called **flocculating** it, and a glaze that behaves this way is **thixotropic**: it goes on more evenly, drips less and settles less. Digitalfire suggests starting at about 2 g per gallon once the SG is right (roughly 0.5 g per liter, our conversion) and tuning the amount each time you mix, since no recipe should fix the dose. We suggest dissolving it in a little hot water first. In a Digitalfire example, a glaze at {{SG 1.45}} dripped, so water brought it down to {{SG 1.43}} and Epsom salts gelled it back to creamy, and it went on evenly. A rough check: stir, stop and watch. A gelled glaze moves on for about 2 or 3 seconds, then stops and springs back a little.
 
-**CMC**（羧甲基纖維素）會讓釉漿更黏、乾得更慢，並留下較硬、附著在作品上更牢的釉層。CMC 對刷釉用釉藥和熔塊含量高的釉藥最重要。Digitalfire 的例子是在 1000 g 釉漿中混入 3.75 g，而且必須用果汁機打進去。含 CMC 的釉藥不會被瀉鹽膠化，而且由於微生物以這種膠為食，這種釉藥在桶子裡可能變質並開始發臭。
+**CMC gum** (carboxymethyl cellulose) makes a slurry stickier and slower to dry, and leaves a harder coat that holds to the pot. It matters most for brushing glazes and glazes high in frit. Digitalfire's example blends 3.75 g into 1000 g of slurry, and it has to go in with a blender. A glaze with CMC will not gel with Epsom salts, and since microbes feed on the gum, it can change in the bucket and start to smell.
 
-**皂土**是一種非常細的黏土，有助於讓其他顆粒保持懸浮。浸釉用釉藥通常靠 15–25% 的生土來達成這一點。對缺少黏土的釉方，加約 1–3% 的皂土會有幫助；Digitalfire 指出，黏土含量超過 15% 的釉藥應該不需要超過 1%。
+**Bentonite**, a very fine clay, helps hold the other particles in suspension. Dipping glazes usually rely on 15 to 25% raw clay for this. For a recipe short of clay, about 1 to 3% bentonite helps; Digitalfire says a glaze with more than 15% clay should not need bentonite at more than 1% of the dry glaze's weight.
 
 ## 試片與直線配比試驗 {#testing}
 

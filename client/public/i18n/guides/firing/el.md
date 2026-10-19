@@ -165,69 +165,69 @@ Label: Τριάδα κώνων
 
 :::orton
 
-## Το Kiln-Sitter {#kiln-sitter}
+## The kiln sitter {#kiln-sitter lang=en}
 
-Το **Kiln-Sitter** είναι ο μηχανικός διακόπτης, στο εξωτερικό πολλών απλών και παλαιότερων καμινιών, που σβήνει το καμίνι όταν λυγίσει ένας μικρός κώνος{{en: cone}}. Το πιο γνωστό είναι το Kiln-Sitter της Dawson. Κάνει το ψήσιμο πιο εύκολο, αλλά είναι διευκόλυνση, όχι συσκευή ασφαλείας.
+A **kiln sitter** is the mechanical switch, on the outside of many basic and older kilns, that turns the kiln off when a small cone bends. The best known is the Dawson Kiln-Sitter. It makes firing easier, but it is a convenience, not a safety device.
 
-### Πώς λειτουργεί
+### How it works
 
-Ένας σωλήνας από πορσελάνη μπαίνει μέσα στο καμίνι. Στην άκρη του, ένας μικρός κώνος ή μια ράβδος ακουμπά οριζόντια σε δύο μεταλλικά στηρίγματα, κάτω από μια **ράβδο ανίχνευσης** που περιστρέφεται γύρω από έναν άξονα σαν τραμπάλα. Έξω από το καμίνι, η άλλη άκρη της ράβδου ανίχνευσης κρατά ψηλά ένα βαρίδι με μια μικρή αρπάγη. Όταν ο κώνος μαλακώσει και λυγίσει περίπου 90°, η ράβδος ανίχνευσης πέφτει αρκετά ώστε να ελευθερώσει το βαρίδι, το βαρίδι πέφτει και κόβεται το ρεύμα στις αντιστάσεις.
+A porcelain tube reaches into the kiln. At its end, a small cone or a bar lies across two metal supports, under a **sensing rod** that pivots like a seesaw. Outside the kiln, the other end of the rod holds up a weight by a small claw. When the cone softens and bends to about 90°, the rod drops far enough to release the weight, the weight falls, and the power to the elements is cut.
 
-Οι μικροί κώνοι και οι ράβδοι «δίνουν ισοδύναμη θερμική επεξεργασία». Η Orton σημειώνει ότι πολλοί αρχάριοι διαλέγουν ράβδους, γιατί με το ομοιόμορφο σχήμα τους είναι εύκολο να τις τοποθετούν κάθε φορά με τον ίδιο τρόπο. Ο μικρός κώνος λεπταίνει προς τη μύτη, οπότε έχει σημασία πώς κάθεται: με το λεπτό μέρος του κάτω από τη ράβδο ανίχνευσης το καμίνι σβήνει σε χαμηλότερη θερμοκρασία, και με το χοντρό μέρος σε υψηλότερη, μια μετατόπιση «έως και 1/2 κώνου».
+Small cones and bars "give equivalent heat treatment". Orton notes that many beginners choose bars, because their even shape makes it easy to place them the same way every time. A small cone tapers, so where it sits matters: with its thin part under the rod the kiln shuts off cooler, and with its thick part hotter, a shift of "as much as 1/2 cone".
 
-### Ποιος κώνος μπαίνει στο Kiln-Sitter
+### Which cone goes in the sitter
 
-Οι πηγές διαφωνούν. Η Dawson, που κατασκεύαζε το Kiln-Sitter, λέει να βάζετε τον ίδιο αριθμό με τον κώνο-στόχο της πυρόπλακας, και να πηγαίνετε έναν αριθμό θερμότερα μόνο αν ο κώνος της πυρόπλακας δεν λυγίσει. Η L&L λέει να βάζετε κώνο έναν αριθμό θερμότερο από τους κώνους της πυρόπλακας, γιατί το Kiln-Sitter βρίσκεται κοντά στο τοίχωμα και στις αντιστάσεις, δέχεται περισσότερη θερμότητα και τείνει να σβήνει νωρίς. Η Orton ξεκαθαρίζει την αρχή: «Ο κώνος της πυρόπλακας είναι ο τελικός κριτής του ψησίματος, όχι ο κώνος ή η ράβδος του Kiln-Sitter.»
-
-> [!NOTE]
-> Το σημείο εκκίνησης που προτείνουμε: βάλτε στο Kiln-Sitter έναν μικρό κώνο με τον ίδιο αριθμό με τον στόχο σας, και μια τριάδα κώνων{{en: cone pack}} στην πυρόπλακα. Αν ο κώνος-στόχος της πυρόπλακας δεν έχει λυγίσει αρκετά όταν σβήσει το καμίνι, την επόμενη φορά βάλτε στο Kiln-Sitter κώνο έναν αριθμό θερμότερο, ή βάλτε το χοντρότερο μέρος του κώνου κάτω από τη ράβδο ανίχνευσης. Αν έχει λυγίσει υπερβολικά, κάντε το αντίθετο.
-
-### Ρύθμιση και έλεγχοι πριν από κάθε ψήσιμο
-
-Η διαδικασία της Dawson, που χρησιμεύει και ως έλεγχος πριν από κάθε ψήσιμο:
-
-1. Κλείστε όλους τους διακόπτες. Ελέγξτε ότι η ράβδος ανίχνευσης κινείται ελεύθερα, κάθεται στο κέντρο του σωλήνα και δεν είναι στραβή ή διαβρωμένη. Αν κινείται δύσκολα, η Dawson λέει να αλλάξετε ολόκληρο τον σωλήνα με τα εξαρτήματά του.
-2. Περάστε με πινέλο μια λεπτή στρώση από **προστατευτικό υψηλής θερμοκρασίας για πυρόπλακες** (μια επίστρωση που εμποδίζει το λιωμένο υλικό να κολλήσει) στα στηρίγματα του κώνου και στη ράβδο ανίχνευσης, εκεί που ακουμπά τον κώνο. Μην περνάτε ποτέ προστατευτικό στον κώνο ή στον σωλήνα από πορσελάνη.
-3. Φορτώστε πυρόπλακες και κομμάτια τουλάχιστον 1 ίντσα (25 mm) πάνω ή κάτω από τον σωλήνα, ώστε τίποτα να μην μπορεί να τον αγγίξει, να πέσει πάνω του ή να τον φράξει.
-4. Σηκώστε το βαρίδι, πιέστε την αρπάγη προς τα κάτω πάνω στη σκανδάλη, και ακουμπήστε τον κώνο ή τη ράβδο οριζόντια στα στηρίγματα, κόντρα στο μεταλλικό σκαλοπάτι, όπως δείχνει το εγχειρίδιο του Kiln-Sitter σας, κάθε φορά με τον ίδιο τρόπο. Ελέγξτε τον ξανά πριν κλείσετε το καπάκι: «**Ένας κώνος ή μια ράβδος σε λάθος θέση μπορεί να προκαλέσει υπερβολικό ψήσιμο.**»
-5. Ρυθμίστε τον χρονοδιακόπτη ασφαλείας (limit timer) και πιέστε προς τα μέσα το έμβολο μέχρι να κλειδώσει. Κρατήστε το καμίνι οριζόντιο και τον χώρο κάτω από το βαρίδι ελεύθερο, ώστε το βαρίδι να μπορεί να πέσει.
-
-### Ο χρονοδιακόπτης ασφαλείας
-
-Πολλά Kiln-Sitter, ανάμεσά τους και τα μοντέλα LT της Dawson, έχουν **χρονοδιακόπτη ασφαλείας**: ένα ρολόι που σβήνει το καμίνι μετά από ορισμένο χρόνο, ως εφεδρεία «σε περίπτωση που το Kiln-Sitter αστοχήσει». Θα πρέπει πάντα να ρυθμίζεται σε περισσότερο χρόνο από όσο αναμένεται να διαρκέσει το ψήσιμο. Οι πηγές ορίζουν διαφορετικά το περιθώριο:
-
-Table: Σε πόσο χρόνο ρυθμίζεται ο χρονοδιακόπτης ασφαλείας
-Label: Ρύθμιση χρονοδιακόπτη
-
-| Πηγή      | Ρύθμιση                                                                                                                                                          |
-| --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Dawson    | ½ ώρα περισσότερο από τον αναμενόμενο χρόνο ψησίματος μέχρι να γνωρίσετε το καμίνι, αργότερα μόνο ¼ της ώρας περισσότερο. Ποτέ μην το ρυθμίζετε πάνω από 20 ώρες |
-| L&L       | Πολύ ψηλά την πρώτη φορά, σημειώνοντας πόσο διαρκεί το ψήσιμο. Μετά, περίπου 1 ώρα περισσότερο                                                                   |
-| Bracker's | 30 λεπτά έως 1 ώρα περισσότερο από τον χρόνο ψησίματος                                                                                                           |
+Sources disagree. Dawson, who made the sitter, says to use the same number as the firing cone on the shelf, and to go one number hotter only if the shelf cone stays unbent. L&L says to use one number hotter than the shelf cones, because the sitter sits near the wall and the elements, gets more heat, and tends to shut off early. Orton settles the principle: "The shelf cone is the final judge of the firing process, not the Kiln-Sitter cone or bar."
 
 > [!NOTE]
-> Το σημείο εκκίνησης που προτείνουμε: γενναιόδωρη ρύθμιση την πρώτη φορά (μέσα στις 20 ώρες της κλίμακας), μετά ½ έως 1 ώρα περισσότερο από τον χρόνο που καταγράψατε. Ο χρονοδιακόπτης δείχνει επίσης πόσο κράτησε ένα ψήσιμο: αν τον ρυθμίσατε στο 7 και σταμάτησε στο 1, το ψήσιμο κράτησε 6 ώρες.
+> Our starting point: put a small cone of the same number as your target in the sitter, with a cone pack on the shelf. If the shelf firing cone is under-bent when the kiln shuts off, go one number hotter in the sitter next time, or set the thicker part of the cone under the rod. If it is over-bent, do the opposite.
 
-### Όταν σβήνει νωρίς ή αργά
+### Setting it up, and checks before every firing
 
-Μετά από κάθε ψήσιμο, διαβάστε τον κώνο του Kiln-Sitter μαζί με τους κώνους της πυρόπλακας.
+Dawson's procedure, which doubles as a check before every firing:
 
-Table: Ανάγνωση του Kiln-Sitter μετά το ψήσιμο
-Label: Προβλήματα του Kiln-Sitter
+1. Turn all the switches off. Check that the sensing rod moves freely, sits centered in the tube and is not bent or corroded. If it is sluggish, Dawson says to replace the tube assembly.
+2. Brush a thin coat of high-fire **kiln wash** (a coating that stops melted material sticking) onto the cone supports and the rod where it touches the cone. Never put wash on the cone or the porcelain tube.
+3. Load shelves and ware at least 1 in (25 mm) above or below the tube, so nothing can touch, fall against or block it.
+4. Lift the weight, press the claw down onto the trigger, and lay the cone or bar flat on the supports against the metal step, as your sitter's manual shows, the same way every time. Check it again before closing the lid: "AN IMPROPERLY PLACED CONE OR BAR COULD CAUSE AN OVERFIRING."
+5. Set the limit timer and push in the plunger until it locks. Keep the kiln level and the space under the weight clear, so the weight can fall.
 
-| Τι βλέπετε                                                            | Πιθανή αιτία                                                                                                          | Τι να κάνετε                                                                            |
-| --------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
-| Το Kiln-Sitter έκοψε, ο κώνος-στόχος της πυρόπλακας δεν λύγισε αρκετά | Το Kiln-Sitter ζεστάθηκε περισσότερο από την πυρόπλακα (βρίσκεται κοντά στο τοίχωμα)                                  | Έναν κώνο θερμότερο στο Kiln-Sitter, ή το χοντρότερο μέρος κάτω από τη ράβδο ανίχνευσης |
-| Ο κώνος του Kiln-Sitter λύγισε πολύ πέρα από τις 90°                  | Το καμίνι ανέβηκε πολύ γρήγορα κοντά στο τέλος                                                                        | Χαμηλώστε τις θέσεις των διακοπτών, ώστε η άνοδος να είναι πιο αργή (Dawson)            |
-| Ο κώνος του Kiln-Sitter δεν λύγισε ή έλιωσε σε σβόλο                  | Το ίδιο το Kiln-Sitter: κακή ρύθμιση, στραβή ή διαβρωμένη ράβδος ανίχνευσης, ή κάτι σφηνωμένο μέσα ή πάνω στον σωλήνα | Ελέγξτε και ρυθμίστε το Kiln-Sitter σύμφωνα με το εγχειρίδιό του πριν ψήσετε ξανά       |
-| Νωρίς ή αργά κάθε φορά                                                | Απορρύθμιση, ή φθαρμένη ράβδος ανίχνευσης                                                                             | Ελέγξτε με τον μετρητή ρύθμισης και μετακινήστε την πλάκα σκανδάλης                     |
+### The limit timer
 
-Για να ελέγξει τη ρύθμιση, η Dawson χρησιμοποιεί έναν **μετρητή ρύθμισης** που κρατά τη ράβδο ανίχνευσης εκεί όπου θα την άφηνε ένας κώνος που έχει λυγίσει τελείως. Τότε πρέπει να υπάρχει «διάκενο 1/16 της ίντσας» (περίπου 1,6 mm) στην αρπάγη. Κάντε αυτόν τον έλεγχο κάθε 30 ψησίματα. Ο κανόνας του Ceramics Monthly: αν το καμίνι σβήνει νωρίς, μετακινήστε την πλάκα σκανδάλης λίγο προς τα πάνω. Αν σβήνει αργά, λίγο προς τα κάτω. Ό,τι κι αν κάνει το Kiln-Sitter, «Να εμπιστεύεστε πάντα τους μεγάλους κώνους-μάρτυρες περισσότερο από τους μικρούς κώνους του Kiln-Sitter.»
+Many sitters, including Dawson's LT models, have a **limit timer**: a clock that turns the kiln off after a set time, as a backup "in case the KILN-SITTER fails". It should always be set longer than the firing is expected to take. Sources set the margin differently:
+
+Table: How long to set the limit timer
+Label: Limit timer settings
+
+| Source    | Setting                                                                                                                |
+| --------- | ---------------------------------------------------------------------------------------------------------------------- |
+| Dawson    | ½ hour longer than the expected firing time until you know the kiln, later ¼ hour longer; never set it beyond 20 hours |
+| L&L       | Very high the first time, noting how long the firing takes; after that, about 1 hour longer                            |
+| Bracker's | 30 minutes to 1 hour longer than the firing time                                                                       |
+
+> [!NOTE]
+> Our starting point: generous the first time (within the dial's 20 hours), then ½ to 1 hour longer than the time you recorded. The timer also tells you how long a firing took: set at 7 and ending at 1 means 6 hours.
+
+### When it shuts off early or late
+
+After each firing, read the sitter cone beside the shelf cones.
+
+Table: Reading the sitter after a firing
+Label: Kiln sitter problems
+
+| What you see                                    | Likely cause                                                                                           | What to do                                                       |
+| ----------------------------------------------- | ------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------- |
+| Sitter tripped, shelf firing cone under-bent    | The sitter ran hotter than the shelf (it sits near the wall)                                           | One cone hotter in the sitter, or the thicker part under the rod |
+| Sitter cone sagged well past 90°                | The kiln climbed too fast near the end                                                                 | Lower the switch settings, so the climb is slower (Dawson)       |
+| Sitter cone did not bend, or melted into a blob | The sitter itself: poor adjustment, a bent or corroded rod, or something lodged in or against the tube | Check and adjust the sitter by its manual before firing again    |
+| Early or late every time                        | Out of adjustment, or a worn rod                                                                       | Check with the firing gauge; move the trigger plate              |
+
+To check the adjustment, Dawson uses a **firing gauge** that holds the rod where a fully bent cone would leave it; there should then be "1/16th-inch clearance" (about 1.6 mm) at the claw. Check it every 30 firings. Ceramics Monthly's rule: if the kiln shuts off early, move the trigger plate up slightly; if late, move it down slightly. Whatever the sitter does, "Always trust large witness cones over small sitter cones."
 
 > [!WARNING]
-> **Το Kiln-Sitter δεν είναι συσκευή ασφαλείας.** Το εγχειρίδιο της Dawson λέει ότι «**δεν** προορίζεται να λειτουργεί ως διάταξη διακοπής ασφαλής σε περίπτωση βλάβης και το καμίνι σας **δεν** θα πρέπει να μένει χωρίς επίβλεψη πέρα από τον εκτιμώμενο χρόνο ψησίματος.» Κάτι τόσο απλό όσο ένα ωμό κομμάτι{{en: greenware}} που πέφτει πάνω στον σωλήνα «μπορεί να προκαλέσει υπερβολικό ψήσιμο». Να είστε εκεί για να ελέγξετε το καμίνι όταν θα πρέπει να τελειώνει, και μην το ψήνετε ποτέ πάνω ή κοντά σε ό,τι μπορεί να καεί, όπως ξύλινο πάτωμα ή χαλί.
+> **A kiln sitter is not a safety device.** Dawson's manual says it "is NOT intended to perform as a fail-safe shut-off device and your kiln should NOT be left unattended beyond the estimated firing time." Something as simple as greenware falling against the tube "might cause an over-firing". Be there to check the kiln when it should be finishing, and never fire it over or near anything that burns, such as a wood floor or carpet.
 
-Το Kiln-Sitter είναι φτιαγμένο για ψησίματα «έως και τον κώνο 8». Δεν μπορεί μόνο του να κρατήσει μια θερμοκρασία ή να κρυώσει αργά το καμίνι. Με εξάσκηση και ένα ημερολόγιο ψησίματος, όμως, μπορείτε να «γίνετε εσείς ο ελεγκτής», όπως το λέει το Digitalfire: παρακολουθείτε τους κώνους και γυρίζετε τους διακόπτες με το χέρι.
+The sitter is built for firings "up to and including Cone 8". It cannot hold a temperature or cool slowly by itself. With practice and a log, though, you can "become the controller", as Digitalfire puts it: watch the cones and turn the switches by hand.
 
 :::
 
@@ -281,92 +281,92 @@ Label: Διόρθωση του επόμενου ψησίματος
 
 :::sk
 
-## Ψήσιμο σε κώνους SK {#sk-cones}
+## Firing to SK cones {#sk-cones lang=en}
 
-Οι κώνοι SK είναι οι πυρομετρικοί κώνοι που κατασκευάζονται σύμφωνα με το ιαπωνικό πρότυπο JIS R 8101 και πωλούνται στην Ιαπωνία από εμπόρους όπως η Yuko Trading (有恒商事). Όπως κάθε κώνος, ένας κώνος SK μετρά το θερμικό έργο{{en: heatwork}}, όχι μόνο τη θερμοκρασία: μαλακώνει και λυγίζει όταν τα κομμάτια έχουν δεχτεί αρκετή θερμότητα, και διαβάζετε πόσο λύγισε. Οι κώνοι-μάρτυρες{{en: witness cone}}, η ανάγνωση του πόσο έχει λυγίσει ένας κώνος και οι παραμονές{{en: hold}} ισχύουν γι’ αυτόν όπως για κάθε κώνο. Αυτή η ενότητα ονομάζει το σύστημα κάθε κώνου και ποτέ δεν μετατρέπει έναν αριθμό SK σε αριθμό άλλου συστήματος: οι αριθμοί διαφορετικών σειρών κώνων δεν είναι εναλλάξιμοι.
+SK cones are the pyrometric cones made to Japan's standard, JIS R 8101, and sold in Japan by dealers such as Yuko Trading (有恒商事). Like any cone, an SK cone measures heatwork, not temperature alone: it softens and bends over when the ware has had enough heat, and you read how far it bent. Witness cones, reading how far a cone has bent, and holds work for it as for any cone. This section names each cone's system, and never turns an SK number into another system's number: the numbers of different cone series are not interchangeable.
 
 > [!NOTE]
-> Γράφετε πάντα «SK» πριν από τον αριθμό. Πολλές παλαιότερες ιαπωνικές συνταγές λένε μόνο «SK 8» ή «SK 9» χωρίς να λένε ποιανού ο κώνος. Οι κώνοι του Κιότο και οι κώνοι SK κατά JIS έχουν τους ίδιους αριθμούς αλλά λυγίζουν σε διαφορετικές θερμοκρασίες (δείτε «Κώνοι του Κιότο», παρακάτω).
+> Always write "SK" before the number. Many older Japanese recipes say only "SK 8" or "SK 9" without saying whose cone. Kyoto cones and SK cones to JIS carry the same numbers but bend at different temperatures (see Kyoto cones, below).
 
-### Οι μεγάλοι κώνοι
+### The large cones
 
-Το πρότυπο έχει δύο μεγέθη. Οι μεγάλοι κώνοι (大型コーン) «χρησιμοποιούνται κυρίως για τη μέτρηση του βαθμού ψησίματος» (焼度測定), που είναι αυτό που χρειάζεται ένας κεραμίστας. Οι μικροί κώνοι (SK 26 έως SK 42, στο πάνω άκρο της κλίμακας) «χρησιμοποιούνται κυρίως για δοκιμές πυριμαχότητας» και δεν καλύπτονται εδώ. Ο πίνακας παρακάτω δίνει τους μεγάλους κώνους από SK 022 έως SK 20.
+The standard has two sizes. Large cones (大型コーン) are "mainly used for measuring the degree of firing" (焼度測定), which is what a potter wants. Small cones (SK 26 to SK 42, at the top of the range) are "mainly used for refractoriness tests" and are not covered here. The table below gives the large cones from SK 022 to SK 20.
 
-Οι αριθμοί ξεκινούν εδώ από τον SK 022, τον ψυχρότερο, και φτάνουν έως τον SK 20. Από τον SK 015 έως τον SK 6 οι τυπωμένοι αριθμοί έχουν ένα «a» (SK 015a, SK 6a). Γράφετέ τον όπως είναι τυπωμένος.
+The numbers run from SK 022, the coolest, up to SK 20 here. Between SK 015 and SK 6 the printed numbers carry an "a" (SK 015a, SK 6a); write it as printed.
 
-### Στήσιμο μεγάλων κώνων
+### Setting large cones
 
-Στήστε κάθε μεγάλο κώνο σε μια βάση κώνων ή σε ένα κομμάτι πηλού, με κλίση προς την πλευρά κάμψης του. Όπως με κάθε κώνο, κρατάτε το ύψος και την κλίση ίδια από ψήσιμο σε ψήσιμο, γιατί μια διαφορά σε οποιοδήποτε από τα δύο αλλάζει πόσο λυγίζει. Στήστε τους τρεις κώνους της τριάδας (παρακάτω) μαζί, βαθιά μέσα στο καμίνι κοντά στο κέντρο του φορτώματος, όπου δέχονται τη θερμότητα που δέχονται τα κομμάτια, αλλά όπου μπορείτε να τους βλέπετε από μια οπή παρατήρησης. Πριν κλείσετε το καμίνι, ελέγξτε ότι βλέπετε και τους τρεις.
+Set each large cone in a plaque or a pat of clay, leaning toward its bending face. As with any cone, keep the height and the lean the same from firing to firing, because a difference in either changes how far it bends. Set the three cones of the pack (below) together, deep in the kiln near the middle of the load, where they get the heat the ware gets, yet where you can see them through a peephole; before you close the kiln, check that you can see all three.
 
-### Κώνος-οδηγός, κώνος-στόχος και κώνος-φύλακας
+### Guide, firing and guard cones
 
-Οι κώνοι πωλούνται και στήνονται ανά τρεις: ένας κώνος-οδηγός, ένας κώνος-στόχος στον βαθμό που θέλετε και ένας κώνος-φύλακας. Ως κώνο-στόχο πάρτε τον αριθμό SK που ορίζει η συνταγή ή ο πηλός σας, ως κώνο-οδηγό τον αμέσως ψυχρότερο κώνο (μία γραμμή πιο πάνω στον πίνακα) και ως κώνο-φύλακα τον αμέσως θερμότερο. Όταν ο κώνος-οδηγός αρχίσει να λυγίζει, το τέλος πλησιάζει. Όταν λυγίσει ο κώνος-φύλακας, το ψήσιμο έχει προχωρήσει πάρα πολύ.
+Cones are sold and set as three: a guide cone, a firing cone at the target, and a guard cone. Take the firing cone as the SK number your recipe or clay names, the guide cone as the next cooler cone (one row up in the table) and the guard cone as the next hotter one. When the guide cone starts to bend, the end is near; when the guard cone bends, the firing has gone too far.
 
-### Ο πίνακας κώνων SK
+### The SK chart
 
-Table: Μεγάλοι κώνοι SK (JIS R 8101): η ονομαστική θερμοκρασία (JIS) του καθενός
-Label: Πίνακας κώνων SK
+Table: SK large cones (JIS R 8101): the nominal (JIS) temperature of each
+Label: SK chart
 
-| Κώνος   | Ονομαστική θερμοκρασία (JIS) |
-| ------- | ---------------------------: |
-| SK 022  |          {{1112 °F; 600 °C}} |
-| SK 021  |          {{1202 °F; 650 °C}} |
-| SK 020  |          {{1238 °F; 670 °C}} |
-| SK 019  |          {{1274 °F; 690 °C}} |
-| SK 018  |          {{1310 °F; 710 °C}} |
-| SK 017  |          {{1346 °F; 730 °C}} |
-| SK 016  |          {{1382 °F; 750 °C}} |
-| SK 015a |          {{1454 °F; 790 °C}} |
-| SK 014a |          {{1499 °F; 815 °C}} |
-| SK 013a |          {{1535 °F; 835 °C}} |
-| SK 012a |          {{1571 °F; 855 °C}} |
-| SK 011a |          {{1616 °F; 880 °C}} |
-| SK 010a |          {{1652 °F; 900 °C}} |
-| SK 09a  |          {{1688 °F; 920 °C}} |
-| SK 08a  |          {{1724 °F; 940 °C}} |
-| SK 07a  |          {{1760 °F; 960 °C}} |
-| SK 06a  |          {{1796 °F; 980 °C}} |
-| SK 05a  |         {{1832 °F; 1000 °C}} |
-| SK 04a  |         {{1868 °F; 1020 °C}} |
-| SK 03a  |         {{1904 °F; 1040 °C}} |
-| SK 02a  |         {{1940 °F; 1060 °C}} |
-| SK 01a  |         {{1976 °F; 1080 °C}} |
-| SK 1a   |         {{2012 °F; 1100 °C}} |
-| SK 2a   |         {{2048 °F; 1120 °C}} |
-| SK 3a   |         {{2084 °F; 1140 °C}} |
-| SK 4a   |         {{2120 °F; 1160 °C}} |
-| SK 5a   |         {{2156 °F; 1180 °C}} |
-| SK 6a   |         {{2192 °F; 1200 °C}} |
-| SK 7    |         {{2246 °F; 1230 °C}} |
-| SK 8    |         {{2282 °F; 1250 °C}} |
-| SK 9    |         {{2336 °F; 1280 °C}} |
-| SK 10   |         {{2372 °F; 1300 °C}} |
-| SK 11   |         {{2408 °F; 1320 °C}} |
-| SK 12   |         {{2462 °F; 1350 °C}} |
-| SK 13   |         {{2516 °F; 1380 °C}} |
-| SK 14   |         {{2570 °F; 1410 °C}} |
-| SK 15   |         {{2615 °F; 1435 °C}} |
-| SK 16   |         {{2660 °F; 1460 °C}} |
-| SK 17   |         {{2696 °F; 1480 °C}} |
-| SK 18   |         {{2732 °F; 1500 °C}} |
-| SK 19   |         {{2768 °F; 1520 °C}} |
-| SK 20   |         {{2786 °F; 1530 °C}} |
+| Cone    | Nominal (JIS) temperature |
+| ------- | ------------------------: |
+| SK 022  |       {{1112 °F; 600 °C}} |
+| SK 021  |       {{1202 °F; 650 °C}} |
+| SK 020  |       {{1238 °F; 670 °C}} |
+| SK 019  |       {{1274 °F; 690 °C}} |
+| SK 018  |       {{1310 °F; 710 °C}} |
+| SK 017  |       {{1346 °F; 730 °C}} |
+| SK 016  |       {{1382 °F; 750 °C}} |
+| SK 015a |       {{1454 °F; 790 °C}} |
+| SK 014a |       {{1499 °F; 815 °C}} |
+| SK 013a |       {{1535 °F; 835 °C}} |
+| SK 012a |       {{1571 °F; 855 °C}} |
+| SK 011a |       {{1616 °F; 880 °C}} |
+| SK 010a |       {{1652 °F; 900 °C}} |
+| SK 09a  |       {{1688 °F; 920 °C}} |
+| SK 08a  |       {{1724 °F; 940 °C}} |
+| SK 07a  |       {{1760 °F; 960 °C}} |
+| SK 06a  |       {{1796 °F; 980 °C}} |
+| SK 05a  |      {{1832 °F; 1000 °C}} |
+| SK 04a  |      {{1868 °F; 1020 °C}} |
+| SK 03a  |      {{1904 °F; 1040 °C}} |
+| SK 02a  |      {{1940 °F; 1060 °C}} |
+| SK 01a  |      {{1976 °F; 1080 °C}} |
+| SK 1a   |      {{2012 °F; 1100 °C}} |
+| SK 2a   |      {{2048 °F; 1120 °C}} |
+| SK 3a   |      {{2084 °F; 1140 °C}} |
+| SK 4a   |      {{2120 °F; 1160 °C}} |
+| SK 5a   |      {{2156 °F; 1180 °C}} |
+| SK 6a   |      {{2192 °F; 1200 °C}} |
+| SK 7    |      {{2246 °F; 1230 °C}} |
+| SK 8    |      {{2282 °F; 1250 °C}} |
+| SK 9    |      {{2336 °F; 1280 °C}} |
+| SK 10   |      {{2372 °F; 1300 °C}} |
+| SK 11   |      {{2408 °F; 1320 °C}} |
+| SK 12   |      {{2462 °F; 1350 °C}} |
+| SK 13   |      {{2516 °F; 1380 °C}} |
+| SK 14   |      {{2570 °F; 1410 °C}} |
+| SK 15   |      {{2615 °F; 1435 °C}} |
+| SK 16   |      {{2660 °F; 1460 °C}} |
+| SK 17   |      {{2696 °F; 1480 °C}} |
+| SK 18   |      {{2732 °F; 1500 °C}} |
+| SK 19   |      {{2768 °F; 1520 °C}} |
+| SK 20   |      {{2786 °F; 1530 °C}} |
 
-Κάθε τιμή είναι ονομαστική (JIS): η θερμοκρασία που δίνει το πρότυπο για τον κώνο, όπως είναι τυπωμένη στον πίνακα της Yuko Trading. Ο πίνακας δεν αναφέρει ρυθμό ανόδου. Το πρότυπο δίνει θερμοκρασίες αναφοράς. Με έναν ρυθμό ανόδου συνηθισμένο για κεραμίστες, περίπου 100 °C/h, το δημοτικό ινστιτούτο του Κιότο μέτρησε ότι οι δικοί του κώνοι του Κιότο λύγιζαν 40–70 °C χαμηλότερα από την τιμή JIS για τον ίδιο αριθμό. Δεν βρήκαμε τέτοιες μετρήσεις για κώνους SK κατά JIS. Στήστε έναν κώνο-μάρτυρα και συγκρίνετε.
+Every figure is nominal (JIS): the temperature the standard gives for the cone, as printed in Yuko Trading's table. The table does not print a heating rate. The standard gives reference temperatures. At a potter's rate of about 100 °C/h, Kyoto's municipal institute measured its own Kyoto cones bending 47–79 °C cooler than the JIS figure for the same number; we found no such measurements for SK cones to JIS. Set a witness cone and compare.
 
-### Κώνοι του Κιότο
+### Kyoto cones
 
-Οι κώνοι του Κιότο (京都ゼーゲル), που κατασκεύαζε το δημοτικό ινστιτούτο του Κιότο, δεν κατασκευάζονται πια: σύμφωνα με δημοσιεύματα, το ινστιτούτο σταμάτησε την παραγωγή στο τέλος του οικονομικού έτους 2009. Έχουν τους ίδιους αριθμούς με τους κώνους SK κατά JIS, αλλά λυγίζουν σε χαμηλότερη θερμοκρασία: ένας κώνος του Κιότο λυγίζει τις περισσότερες φορές περίπου στη θερμοκρασία του κώνου SK κατά JIS που είναι δύο αριθμούς ψυχρότερος. Μια συνταγή από το Κιότο που λέει «SK 8» μπορεί να εννοεί κώνο του Κιότο. Το ινστιτούτο έχει δημοσιεύσει οδηγίες για κεραμίστες που περνούν από τους κώνους του Κιότο στους κώνους Orton, και βάζει τον κώνο Orton 10 στη θέση του δικού του SK 12 του Κιότο. Αυτή είναι επιλογή του ινστιτούτου, από τις δικές του μετρήσεις στους 100 °C/h, και δεν ισχύει για κανέναν άλλο κώνο.
+Kyoto cones (京都ゼーゲル), made by Kyoto's municipal institute, are no longer made: news reports say the institute ended production at the close of fiscal 2009. They carry the same numbers as SK cones to JIS but bend cooler: a Kyoto cone bends at about the temperature of the SK cone to JIS two or three numbers lower. A recipe from Kyoto that says "SK 8" may mean a Kyoto cone. The institute has published advice for potters moving from Kyoto cones to Orton cones, and substitutes Orton cone 10 for its own Kyoto SK 12; that is the institute's choice from its own measurements at 100 °C/h, and applies to no other cone.
 
-### Κώνοι Orton που πωλούνται στην Ιαπωνία
+### Orton cones sold in Japan
 
-Οι αυτοστηριζόμενοι κώνοι Orton πωλούνται στην Ιαπωνία με το όνομα 立つゼーゲル («όρθιος Seger»), επειδή δεν χρειάζονται βάση ή στήριγμα. Είναι κώνοι Orton, με τους αριθμούς και τον πίνακα της Orton (παραπάνω): ψήνετε σε τέτοιον κώνο μόνο με βάση τον αριθμό Orton του, και κρατάτε τους κώνους SK και τους κώνους Orton σε χωριστές τριάδες, ποτέ στην ίδια.
+Orton self-supporting cones are sold in Japan under the name 立つゼーゲル ("standing Seger"), because they need no plaque or stand. They are Orton cones, with Orton's numbers and Orton's chart (above): fire to one only by its Orton number, and keep SK and Orton cones in separate packs, never in the same one.
 
-### Πηγές για τους κώνους SK
+### Sources for SK cones
 
-- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (ο πίνακας κώνων SK, ελέγχθηκε 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
-- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (σε ισχύ, επιβεβαιώθηκε εκ νέου 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
-- [Kyoto Municipal Institute of Industrial Technology and Culture: τι να προσέξετε όταν περνάτε από τους κώνους του Κιότο στους κώνους Orton](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
+- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (the SK table, checked 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
+- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (in force, reconfirmed 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
+- [Kyoto Municipal Institute of Industrial Technology and Culture: points to note when moving from Kyoto cones to Orton cones](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
 
 :::
 

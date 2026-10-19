@@ -163,55 +163,55 @@ Label: Mesh ayakan
 | Glasir dengan pewarna seperti kobalt atau besi | 100 sampai 120 mesh    |
 | Glasir abu, dan lainnya dengan bahan kasar     | 60 sampai 80 mesh      |
 
-## Berat jenis {#specific-gravity}
+## Specific gravity {#specific-gravity lang=en}
 
-**Berat jenis**{{en: specific gravity}} memberi tahu seberapa banyak bubuk dalam cairan glasir Anda. Ini adalah berat sejumlah volume glasir dibagi berat volume air yang sama. Air adalah 1,00, dan glasir dengan {{SG 1.45}} beratnya 145 g per 100 mL. Mencampur sampai berat jenis yang terukur adalah cara Anda mendapatkan kekentalan yang sama, dan lapisan yang sama, setiap kali. Berat jenis tidak memiliki satuan, jadi sama dalam gram atau ons.
+**Specific gravity** (SG) tells you how much powder is in your slurry. It is the weight of a volume of glaze divided by the weight of the same volume of water. Water is 1.00, and a glaze at {{SG 1.45}} weighs 145 g per 100 mL. Mixing to a measured SG is how you get the same thickness, and the same coat, every time. It has no units, so it is the same in grams or ounces.
 
-### Ukur dengan menimbang 100 mL
+### Measure it by weighing 100 mL
 
-1. Aduk glasir agar tidak ada yang mengendap.
-2. Taruh **gelas ukur** 100 mL (tabung ukur tinggi bertanda) atau semprit 100 mL di timbangan, dan tara.
-3. Isi dengan glasir sampai tepat 100 mL, membaca tanda setinggi mata.
-4. Timbang dan bagi gramnya dengan 100: 145 g adalah berat jenis 1,45.
+1. Stir the glaze so nothing has settled.
+2. Put a 100 mL **graduated cylinder** (a tall, marked measuring tube) or a 100 mL syringe on the scale, and tare it.
+3. Fill it with glaze to exactly 100 mL, reading the mark at eye level.
+4. Weigh it and divide the grams by 100: 145 g is SG 1.45.
 
-Digitalfire juga menandai cangkir pada tingkat 500 g air, mengisinya sampai tanda dengan glasir, dan membagi beratnya dengan 500; ukuran yang lebih besar dan lebih penuh lebih akurat. **Hidrometer**, pelampung yang dibaca pada tempat ia berada di glasir, cepat tetapi dapat salah membaca glasir kental atau menggel. Hidrometer Inggris, seperti milik Potclays, membaca dalam derajat Baumé (°Bé). Menurut hitungan kami, berat jenis = 145 ÷ (145 − °Bé), jadi 46 °Bé sekitar 1,46. Buku Inggris lama memberikan **berat pint**, ons dalam satu pint imperial glasir: bagi dengan 20, jadi 29 oz sekitar berat jenis 1,45 (juga hitungan kami).
+Digitalfire also marks a cup at the level of 500 g of water, fills it to the mark with glaze, and divides the weight by 500; a bigger, fuller measure is more accurate. A **hydrometer**, a float read where it sits in the glaze, is quick but can misread thick or gelled glazes. UK hydrometers, such as Potclays', read in degrees Baumé (°Bé). By our arithmetic, SG = 145 ÷ (145 − °Bé), so 46 °Bé is about 1.46. Older UK books give a **pint weight**, the ounces in an imperial pint of glaze: divide it by 20, so 29 oz is about SG 1.45 (also our arithmetic).
 
-### Apa yang dituju
+### What to aim for
 
-Sumber berbeda pendapat, terutama pada pengkuasan dan penyemprotan, di mana pemasok Inggris Potclays memberikan angka yang jauh lebih tinggi (angkanya sendiri "hanya sebagai panduan"). Perlakukan setiap angka sebagai titik awal. Saran inti Digitalfire adalah menemukan berat jenis dan penggelan yang cocok untuk setiap glasir, lalu mengulanginya dan mencatatnya.
+Sources disagree, most of all on brushing and spraying, where the UK supplier Potclays gives much higher figures (its own are "for guidance only"). Treat every number as a starting point. Digitalfire's core advice is to find the SG and gelling that work for each glaze, then repeat them and write them down.
 
-Table: Target berat jenis, di tempat sumber berbeda pendapat
-Label: Target berat jenis
+Table: Specific gravity targets, where sources disagree
+Label: Specific gravity targets
 
-| Penggunaan   | Digitalfire dan Glazy                                                                                                                                        | Potclays (Inggris)                            | Titik awal yang aman                                         |
-| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------- | ------------------------------------------------------------ |
-| Pencelupan   | {{SG 1.40}} (untuk celup 5 detik) sampai {{SG 1.50}} (untuk celup 1 detik); glasir campuran rumahan yang menggel paling baik pada {{SG 1.43–1.45}}           | Bening {{SG 1.46–1.48}}; berwarna {{SG 1.61}} | {{SG 1.45}}; encerkan ke {{SG 1.43}} dan gelkan bila menetes |
-| Pengkuasan   | {{SG 1.25}} (bening tipis) sampai {{SG 1.55}} (detail gelap)                                                                                                 | {{SG 1.71–1.81}}                              | Ikuti produk; pakai gom CMC atau medium kuas                 |
-| Penyemprotan | Tidak ada angka; Hopper, menulis untuk Ceramic Arts Network, menyatakan jauh lebih encer, dengan deflokulan (bahan tambahan yang membuat cairan lebih encer) | {{SG 1.71}}                                   | Tidak ada angka yang andal; semprot hanya di bilik semprot   |
+| Use      | Digitalfire and Glazy                                                                                                                 | Potclays (UK)                               | Safe starting point                                     |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- | ------------------------------------------------------- |
+| Dipping  | {{SG 1.40}} (for a 5-second dip) to {{SG 1.50}} (for a 1-second dip); home-mixed glazes that are gelled do best at {{SG 1.43–1.45}}   | Clear {{SG 1.46–1.48}}; colored {{SG 1.61}} | {{SG 1.45}}; thin to {{SG 1.43}} and gel it if it drips |
+| Brushing | {{SG 1.25}} (thin clear) to {{SG 1.55}} (dark detail)                                                                                 | {{SG 1.71–1.81}}                            | Follow the product; use CMC gum or a brushing medium    |
+| Spraying | No figure; Hopper, writing for Ceramic Arts Network, says much thinner, with a deflocculant (an additive that makes a slurry runnier) | {{SG 1.71}}                                 | No reliable number; spray only in a spray booth         |
 
-Untuk memeriksa glasir celup dengan mata, AMACO mencelup selama 5 detik dan mencari lapisan setebal koin dime AS. Digitalfire membakar ubin yang dicelup 5 detik untuk memeriksa.
+To check a dipping glaze by eye, AMACO dips for 5 seconds and looks for a coat about as thick as a US dime. Digitalfire fires tiles dipped for 5 seconds to check.
 
-### Air untuk berat jenis target: perkiraan kami
+### Water for a target SG: our estimate
 
-Tabel di bawah adalah hitungan kami sendiri, bukan milik sumber. Tabel mengasumsikan partikel bubuk memiliki kerapatan 2,6 g per cm³, yang merupakan asumsi, bukan pengukuran. Tanah liat, bahan larut, dan penggelan semuanya mengubah glasir nyata, jadi pakai untuk memulai, lalu ukur. Sebagai pemeriksaan, tabel memprediksi {{SG 1.44}} untuk berat bubuk dan air yang sama, mendekati {{SG 1.46}} terukur Digitalfire. Tabel juga menunjukkan bahwa 70 sampai 80 mL per 100 g membuat Anda mulai di atas {{SG 1.50}}, lebih kental daripada yang Anda perlukan.
+The table below is our own arithmetic, not a source's. It assumes the powder's particles have a density of 2.6 g per cm³, which is an assumption, not a measurement. Clay, soluble materials and gelling all change a real glaze, so use it to start, then measure. As a check, it predicts {{SG 1.44}} for equal weights of powder and water, close to Digitalfire's measured {{SG 1.46}}. It also shows that 70 to 80 mL per 100 g starts you above {{SG 1.50}}, thicker than you need.
 
-Table: Air untuk berat jenis target (perkiraan kami)
-Label: Air untuk berat jenis target
+Table: Water for a target specific gravity (our estimate)
+Label: Water for a target specific gravity
 
-| Target      | Per 100 g bubuk |    Per kilogram |             Per pon |
-| ----------- | --------------: | --------------: | ------------------: |
-| {{SG 1.40}} |  sekitar 115 mL | sekitar 1150 mL | sekitar 18 US fl oz |
-| {{SG 1.45}} |   sekitar 98 mL |  sekitar 980 mL | sekitar 15 US fl oz |
-| {{SG 1.50}} |   sekitar 85 mL |  sekitar 850 mL | sekitar 13 US fl oz |
-| {{SG 1.60}} |   sekitar 64 mL |  sekitar 640 mL | sekitar 10 US fl oz |
+| Target      | Per 100 g of powder |  Per kilogram |         Per pound |
+| ----------- | ------------------: | ------------: | ----------------: |
+| {{SG 1.40}} |        about 115 mL | about 1150 mL | about 18 US fl oz |
+| {{SG 1.45}} |         about 98 mL |  about 980 mL | about 15 US fl oz |
+| {{SG 1.50}} |         about 85 mL |  about 850 mL | about 13 US fl oz |
+| {{SG 1.60}} |         about 64 mL |  about 640 mL | about 10 US fl oz |
 
-### Garam Epsom, gom CMC, dan bentonit
+### Epsom salts, CMC gum and bentonite
 
-**Garam Epsom** membuat glasir menggel sedikit saat diam dan mengalir lagi saat diaduk. Ini disebut **memflokulasi**nya, dan glasir yang berperilaku demikian **tiksotropik**: dioleskan lebih merata, lebih sedikit menetes dan lebih sedikit mengendap. Digitalfire menyarankan mulai dari sekitar 2 g per galon setelah berat jenis tepat (kira-kira 0,5 g per liter, konversi kami) dan menyetel jumlahnya setiap kali Anda mencampur, karena tidak ada resep yang sebaiknya menetapkan dosisnya. Kami menyarankan melarutkannya dalam sedikit air panas lebih dulu. Dalam contoh Digitalfire, glasir dengan {{SG 1.45}} menetes, jadi air menurunkannya ke {{SG 1.43}} dan garam Epsom menggelkannya kembali menjadi seperti krim, dan glasir terpakai merata. Pemeriksaan kasar: aduk, berhenti, dan amati. Glasir yang menggel terus bergerak sekitar 2 atau 3 detik, lalu berhenti dan sedikit memantul kembali.
+**Epsom salts** make a glaze gel slightly when it stands still and flow again when it is stirred. This is called **flocculating** it, and a glaze that behaves this way is **thixotropic**: it goes on more evenly, drips less and settles less. Digitalfire suggests starting at about 2 g per gallon once the SG is right (roughly 0.5 g per liter, our conversion) and tuning the amount each time you mix, since no recipe should fix the dose. We suggest dissolving it in a little hot water first. In a Digitalfire example, a glaze at {{SG 1.45}} dripped, so water brought it down to {{SG 1.43}} and Epsom salts gelled it back to creamy, and it went on evenly. A rough check: stir, stop and watch. A gelled glaze moves on for about 2 or 3 seconds, then stops and springs back a little.
 
-**Gom CMC** (karboksimetil selulosa) membuat cairan lebih lengket dan lebih lambat kering, dan meninggalkan lapisan lebih keras yang melekat pada benda. Gom ini paling penting untuk glasir kuas dan glasir tinggi frit. Contoh Digitalfire mencampur 3,75 g ke dalam 1000 g cairan, dan harus dimasukkan dengan blender. Glasir dengan CMC tidak akan menggel dengan garam Epsom, dan karena mikroba memakan gom, glasir dapat berubah di ember dan mulai berbau.
+**CMC gum** (carboxymethyl cellulose) makes a slurry stickier and slower to dry, and leaves a harder coat that holds to the pot. It matters most for brushing glazes and glazes high in frit. Digitalfire's example blends 3.75 g into 1000 g of slurry, and it has to go in with a blender. A glaze with CMC will not gel with Epsom salts, and since microbes feed on the gum, it can change in the bucket and start to smell.
 
-**Bentonit**, tanah liat sangat halus, membantu menahan partikel lain tetap tersuspensi. Glasir celup biasanya mengandalkan 15 sampai 25% tanah liat mentah untuk ini. Untuk resep yang kekurangan tanah liat, sekitar 1 sampai 3% bentonit membantu; Digitalfire mengatakan glasir dengan lebih dari 15% tanah liat seharusnya tidak membutuhkan lebih dari 1%.
+**Bentonite**, a very fine clay, helps hold the other particles in suspension. Dipping glazes usually rely on 15 to 25% raw clay for this. For a recipe short of clay, about 1 to 3% bentonite helps; Digitalfire says a glaze with more than 15% clay should not need bentonite at more than 1% of the dry glaze's weight.
 
 ## Ubin uji dan campuran garis {#testing}
 

@@ -472,7 +472,6 @@
     "expansionRises": "Tās aprēķinātā termiskā izplešanās palielinās no {was} līdz {now}.",
     "expansionRisesProbably": "Ja vecā glazūra tik tikko derēja jūsu mālam, šajā, visticamāk, veidosies matplaisas, dažkārt tikai pēc vairākām nedēļām.",
     "expansionRisesMay": "Ja vecā glazūra tik tikko derēja jūsu mālam, šajā var veidoties matplaisas, dažkārt tikai pēc vairākām nedēļām.",
-    "expansionRisesFix": "Matplaisas vājina izstrādājumus, un tās nav ieteicamas uz virsmām, kas saskaras ar pārtiku. Izplešanos samazina, ja daļu sodas un potaša aizstāj ar kušņiem ar mazāku izplešanos (bors, litijs, magnijs vai kalcijs); dažkārt iesaka pievienot silīcija dioksīdu, taču avoti nav vienisprātis.",
     "expansionFalls": "Tās aprēķinātā termiskā izplešanās samazinās no {was} līdz {now}. Nedaudz mazāka izplešanās parasti labāk novērš matplaisas.",
     "expansionFallsProbably": "Ja izplešanās ir daudz mazāka, visticamāk, notiks glazūras atšķelšanās, ar asiem atšķēlumiem no malām un šķautnēm.",
     "expansionFallsCan": "Ja izplešanās ir daudz mazāka, var notikt glazūras atšķelšanās, ar asiem atšķēlumiem no malām un šķautnēm.",
@@ -904,7 +903,6 @@
     "foodSurface": "Virsmai, kas saskaras ar pārtiku (iekšpuses glazūrai)",
     "liner": {
       "note": "Piemērotība saskarei ar pārtiku ir atkarīga no tā, vai šī glazūra apdedzināta līdz konusam, ar kuru tā pārbaudīta: nepietiekami apdedzinātā glazūrā var notikt metālu izskalošanās.",
-      "range": "Tā norādīta diapazonam, tāpēc pārbaudiet to diapazona zemākajā galā, kur tā kūst vismazāk.",
       "untested": "Vēl neviens konuss nav atzīmēts kā pārbaudīts.",
       "test": "Tikai jūsu pašu apdedzināto izstrādājumu metālu izskalošanās laboratorijas pārbaude parāda, vai tā ir droša saskarei ar pārtiku."
     },

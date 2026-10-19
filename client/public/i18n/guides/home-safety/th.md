@@ -149,38 +149,38 @@ Pet Poison Helpline ระบุว่า “ตะกั่วเป็นพ�
 
 หากสัตว์เลี้ยงอาจกินหรือดื่มสิ่งใดจากสตูดิโอ หรือแสดงอาการเช่นข้างต้น ให้โทรหาสัตวแพทย์หรือสายด่วนพิษสัตว์ (ดูตารางด้านบนสุด) โดยเตรียมชื่อวัตถุดิบและน้ำหนักของสัตว์เลี้ยงไว้
 
-## เตาเผา {#the-kiln}
+## The kiln {#the-kiln lang=en}
 
-### ด้านนอกร้อนพอที่จะทำให้ไหม้
+### The outside gets hot enough to burn
 
-การประเมินความเสี่ยงของโรงเรียนในสหราชอาณาจักรระบุว่าด้านนอกของเตาเผา “อาจถึง 160 °C และอาจมากกว่า” (ประมาณ 320 °F) และเอกสารแนวทางเรื่องเตาเผาสำหรับโรงเรียนรายงานแถบโลหะที่สูงถึง 460 °F (ประมาณ 240 °C) Skutt ผู้ผลิตเตาเผา แนะนำห้องเตาเผาที่ล็อกกันเด็กและสัตว์เลี้ยงได้ ในที่ที่ล็อกห้องไม่ได้ เอกสารแนวทางสำหรับโรงเรียนนั้นแนะนำสิ่งกั้น เช่น ฉากกั้นความปลอดภัยของเตาเผา
+A UK schools risk assessment says a kiln's outside "can reach 160 °C and possibly more" (about 320 °F), and a school kiln guide reports metal bands at up to 460 °F (about 240 °C). Skutt, a kiln maker, recommends a kiln room that can be locked against children and pets. Where a room cannot be locked, the school guide suggests a barrier such as a kiln safety screen.
 
-เด็กเล็กและสัตว์เลี้ยงไม่เข้าใจป้ายเตือน เราแนะนำให้เก็บพวกเขาไว้หลังประตูที่ล็อกหรือสิ่งกั้นขณะที่เตาเผากำลังเผาและขณะเย็นลง และติดป้ายเตือนสำหรับคนอื่น
+Small children and pets cannot understand a warning sign. We suggest keeping them behind a locked door or a barrier while the kiln fires and while it cools, and posting a warning sign for everyone else.
 
-### พื้นที่รอบเตา
+### Space around it
 
-แหล่งข้อมูลไม่ตรงกันเรื่องระยะห่าง Rio Grande ระบุอย่างน้อย 12 นิ้ว (30 cm) จากผนังและสิ่งที่ติดไฟได้ L&L แนะนำอย่างยิ่งให้ 18 นิ้ว (46 cm) ถึงผนังทุกด้าน และข้อกำหนดอาคารที่อ้างถึงขอ 3 ฟุต (0.9 m) จากผนังที่ติดไฟได้ ทำตามคู่มือการใช้งานของเตาเผาและข้อกำหนดป้องกันอัคคีภัยท้องถิ่น หากไม่แน่ใจ ให้เว้น 18 นิ้วจากผนังใดก็ตาม และ 3 ฟุตจากสิ่งที่ติดไฟได้ ในโรงรถ ให้เก็บรถ เชื้อเพลิง และสีให้ห่างมาก
+Sources disagree on clearance. Rio Grande says at least 12 inches (30 cm) from walls and anything combustible. L&L strongly recommends 18 inches (46 cm) to all walls, and the building code it cites asks for 3 feet (0.9 m) from combustible walls. Follow your kiln's manual and local fire code; if you are unsure, allow 18 inches from any wall and 3 feet from anything that can burn. In a garage, keep cars, fuel and paint well away.
 
-### ไฟฟ้า
+### Power
 
-Rio Grande แนะนำ**วงจรเฉพาะ** (วงจรที่ไม่จ่ายไฟให้สิ่งอื่น) พร้อมเต้ารับที่ต่อสายดินอย่างถูกต้อง เราแนะนำไม่ให้ใช้สายต่อพ่วง ในช่วงที่ไม่ได้เผา ให้ปิดเบรกเกอร์หรือสวิตช์ตัดไฟของเตาเผา หรือถอดปลั๊ก เพื่อไม่ให้เด็กเริ่มเตาเผาได้
+Rio Grande recommends a **dedicated circuit** (one that powers nothing else) with a properly grounded outlet. We suggest no extension cord. Between firings, switch off the kiln's breaker or disconnect switch, or unplug it, so a child cannot start it.
 
-### อยู่ที่นั่นเมื่อการเผาสิ้นสุด
+### Be there when the firing ends
 
-**Kiln-Sitter**{{en: kiln sitter}}คือสวิตช์เชิงกลบนเตาเผาแบบมือหลายเตา: โคนเล็กโค้งเมื่อสิ้นสุดการเผาและทำให้สวิตช์ตัด คู่มือการใช้งานของ Kiln-Sitter ระบุว่า “**ไม่ได้**มีไว้เพื่อทำหน้าที่เป็นอุปกรณ์ตัดไฟที่รับประกันความปลอดภัย (fail-safe)” Rio Grande ระบุว่าห้ามปล่อยเตาเผาที่กำลังเผาโดยไม่มีคนดูแลโดยเด็ดขาด “โดยเฉพาะใกล้เวลาที่คาดว่าจะตัด” ดังนั้นให้อยู่ใกล้ ๆ และตรวจเตาเผาระหว่างที่เผา โดยเฉพาะใกล้ช่วงสิ้นสุด เผาเฉพาะเมื่อมีผู้ใหญ่อยู่บ้านและตื่นอยู่เพื่อทำเช่นนั้นได้ ตรวจว่าเตาเผาตัดไฟแล้ว และเก็บถังดับเพลิง ABC ไว้ในห้องเตาเผา สำหรับวิธีที่ Kiln-Sitter ตัวควบคุมอุณหภูมิ และโปรแกรมการเผาทำงาน ดู [การเผาเตาพื้นฐาน](/guides/firing)
+A **kiln sitter** is the mechanical switch on many manual kilns: a small cone bends at the end of the firing and trips the switch off. Its manual says it "is NOT intended to perform as a fail-safe shut-off device." Rio Grande says never to leave a firing kiln unattended, "especially near the expected shut-off time". So stay nearby and check the kiln while it fires, above all near the end; fire only when an adult will be home and awake through the whole firing, check that it has switched off, and keep an ABC fire extinguisher in the kiln room. For how sitters, controllers and schedules work, see [Firing a basic kiln](/guides/firing).
 
-### ควันและคาร์บอนมอนอกไซด์
+### Fumes and carbon monoxide
 
-การเผาปล่อยควัน จึงให้ระบายควันจากเตาเผาออกสู่ภายนอก [การผสมอย่างปลอดภัยและการระบายอากาศ](/guides/safe-mixing) อธิบายวิธีทำ เตาเผาในโรงรถที่ติดกับบ้านต้องมีการระบายอากาศที่กันไม่ให้ควันไปถึงบ้านผ่านประตูเชื่อม ให้นกอยู่ในห้องที่ไกลออกไปทุกครั้งที่เตาเผากำลังเผา
+Firing gives off fumes, so vent the kiln to the outdoors; [Safe mixing and ventilation](/guides/safe-mixing) explains how. A kiln in an attached garage needs venting that keeps fumes from reaching the house through the connecting door. Keep birds in a far room whenever the kiln fires.
 
-**คาร์บอนมอนอกไซด์** (CO) เป็นแก๊สพิษที่คุณมองไม่เห็นหรือได้กลิ่น เอกสารความปลอดภัยของเตาเผาของมหาวิทยาลัยแห่งหนึ่งกำหนดให้มีเครื่องตรวจจับ CO กับเตาเผาแก๊ส ความเห็นต่างกันสำหรับเตาเผาไฟฟ้า แต่การเผาไหม้สารอินทรีย์ (ในดิน หรือสิ่งของเช่นกระดาษหรือขี้ผึ้ง) ทำให้เกิด CO ได้ เราคิดว่าเครื่องตรวจจับ CO ในห้องเตาเผาและห้องข้างเคียงเป็นขั้นตอนที่สมเหตุสมผลและราคาไม่แพงสำหรับเตาเผาทุกเตา
+**Carbon monoxide** (CO) is a poisonous gas you cannot see or smell. A university kiln safety sheet requires CO alarms with gas kilns. Views differ for electric kilns, but burning off organic matter (in clay, or things like paper or wax) can make CO. We think a CO alarm in the kiln room and the rooms next to it is a sensible, inexpensive step for any kiln.
 
-### ช่องดูไฟและดวงตา
+### Peepholes and eyes
 
-แสงอินฟราเรด ซึ่งคุณมองไม่เห็น “เริ่มที่ 752°F (400°C)” และ Ceramic Arts Network ระบุว่าการมองเข้าไปในเตาเผาเหนืออุณหภูมินี้ควรทำโดยป้องกันดวงตาเสมอ อินฟราเรดทำลายเลนส์ตาและนำไปสู่ต้อกระจกได้ และการจ้องนานทำให้จอประสาทตาบาดเจ็บได้ แว่นกันแดดและแว่นดิดิเมียมไม่กันอินฟราเรด
+Infrared light, which you cannot see, "starts at 752°F (400°C)", and the Ceramic Arts Network says looking into a kiln above this should always be done with eye protection. Infrared can damage the lens of the eye and lead to cataracts, and long gazing can injure the retina. Sunglasses and didymium glasses do not block it.
 
 > [!WARNING]
-> เด็กไม่ควรมองเข้าไปในเตาเผาเลย ช่องดูไฟที่เรืองแสงดึงดูดพวกเขา และไม่อาจไว้ใจได้ว่าจะสวมแว่นป้องกันไว้ตลอด จึงให้อยู่ห่างขณะที่เตาเผาร้อน ผู้ใหญ่ควรมองเพียงครู่เดียว ผ่านแว่นเชื่อมที่กันอินฟราเรด แหล่งข้อมูลแนะนำเฉดสี 1.7 ถึง 5; เฉดสี 3 เป็นทางเลือกที่สมเหตุสมผล เข้มกว่านั้นหากคุณเห็นจุดภายหลัง
+> Children should not look into a kiln at all. A glowing peephole draws them, and they will not reliably keep protective glasses on, so keep them away while the kiln is hot. Adults should look only briefly, through IR-rated welding glasses. Sources recommend shades from 1.7 to 5; shade 3 is a sensible choice, darker if you see spots afterward.
 
 ## ชิ้นงานทำมือบนโต๊ะอาหารของครอบครัว {#handmade-ware}
 

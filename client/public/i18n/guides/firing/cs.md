@@ -165,69 +165,69 @@ Počítejte s rozdíly: Orton píše, že „obvykle uvidíte mezi horní a spod
 
 :::orton
 
-## Vypínač Kiln-Sitter {#kiln-sitter}
+## The kiln sitter {#kiln-sitter lang=en}
 
-**Kiln-Sitter**{{en: kiln sitter}} je mechanický vypínač zvenku na mnoha jednoduchých a starších pecích, který pec vypne, když se v něm ohne malá žároměrka{{en: cone}}. Nejznámější je Kiln-Sitter od společnosti Dawson. Výpal usnadňuje, ale je to pomůcka pro pohodlí, ne bezpečnostní zařízení.
+A **kiln sitter** is the mechanical switch, on the outside of many basic and older kilns, that turns the kiln off when a small cone bends. The best known is the Dawson Kiln-Sitter. It makes firing easier, but it is a convenience, not a safety device.
 
-### Jak funguje
+### How it works
 
-Do pece vede porcelánová trubička. Na jejím konci leží napříč přes dvě kovové podpěrky malá žároměrka nebo tyčinka, pod **snímací tyčí**, která se kývá jako houpačka. Vně pece drží druhý konec snímací tyče závaží, zachycené malou západkou. Když žároměrka změkne a ohne se asi na 90°, snímací tyč klesne natolik, že uvolní závaží, závaží spadne a přívod proudu do topných spirál se přeruší.
+A porcelain tube reaches into the kiln. At its end, a small cone or a bar lies across two metal supports, under a **sensing rod** that pivots like a seesaw. Outside the kiln, the other end of the rod holds up a weight by a small claw. When the cone softens and bends to about 90°, the rod drops far enough to release the weight, the weight falls, and the power to the elements is cut.
 
-Malé žároměrky a tyčinky „dávají rovnocenné tepelné zpracování“. Orton uvádí, že mnoho začátečníků volí tyčinky, protože díky jejich rovnoměrnému tvaru je snadné je pokaždé uložit stejně. Malá žároměrka se zužuje, takže záleží na tom, jak leží: když je pod snímací tyčí její tenká část, pec vypne při nižší teplotě, a když silná část, při vyšší, a to s posunem „až o 1/2 žároměrky“.
+Small cones and bars "give equivalent heat treatment". Orton notes that many beginners choose bars, because their even shape makes it easy to place them the same way every time. A small cone tapers, so where it sits matters: with its thin part under the rod the kiln shuts off cooler, and with its thick part hotter, a shift of "as much as 1/2 cone".
 
-### Kterou žároměrku dát do vypínače
+### Which cone goes in the sitter
 
-Zdroje se rozcházejí. Dawson, výrobce vypínače, radí použít stejné číslo jako u cílové žároměrky na plátě a o jedno číslo teplejší jen tehdy, když žároměrka na plátě zůstane neohnutá. L&L radí použít žároměrku o jedno číslo teplejší, než jsou žároměrky na plátě, protože vypínač je blízko stěny a topných spirál, dostává víc tepla a má sklon vypínat brzy. Princip stanoví Orton: „Konečným soudcem výpalu je žároměrka na plátě, ne žároměrka nebo tyčinka ve vypínači Kiln-Sitter.“
-
-> [!NOTE]
-> Náš výchozí postup: dejte do vypínače malou žároměrku se stejným číslem, jako má váš cíl, a na plát sadu tří žároměrek{{en: cone pack}}. Pokud je cílová žároměrka na plátě po vypnutí pece málo ohnutá, dejte příště do vypínače žároměrku o číslo teplejší, nebo pod snímací tyč položte silnější část žároměrky. Pokud je ohnutá příliš, udělejte opak.
-
-### Příprava a kontrola před každým výpalem
-
-Postup společnosti Dawson, který zároveň slouží jako kontrola před každým výpalem:
-
-1. Vypněte všechny přepínače. Zkontrolujte, že se snímací tyč volně pohybuje, je uprostřed trubičky a není ohnutá ani zkorodovaná. Pokud se pohybuje ztěžka, Dawson radí vyměnit celou sestavu trubičky.
-2. Štětcem naneste tenkou vrstvu vysokoteplotního **nátěru na pláty** (nátěru, který brání přilepení roztaveného materiálu) na podpěrky žároměrky a na snímací tyč v místě, kde se dotýká žároměrky. Nikdy nenanášejte nátěr na žároměrku ani na porcelánovou trubičku.
-3. Pláty a výrobky zakládejte alespoň 1 palec (25 mm) nad trubičkou nebo pod ní, aby se jí nic nemohlo dotknout, spadnout na ni ani ji zablokovat.
-4. Zvedněte závaží, přitlačte západku dolů na spoušť a položte žároměrku nebo tyčinku naplocho na podpěrky ke kovové zarážce, jak ukazuje návod k obsluze vašeho vypínače, pokaždé stejně. Před zavřením víka to znovu zkontrolujte: „NESPRÁVNĚ ULOŽENÁ ŽÁROMĚRKA NEBO TYČINKA MŮŽE ZPŮSOBIT PŘEPÁLENÍ.“
-5. Nastavte pojistný časovač a zatlačte tlačítko, až zaskočí. Pec udržujte ve vodorovné poloze a prostor pod závažím volný, aby závaží mohlo spadnout.
-
-### Pojistný časovač
-
-Mnoho vypínačů, včetně modelů LT od společnosti Dawson, má **pojistný časovač**: hodiny, které po nastavené době pec vypnou, jako zálohu „pro případ, že KILN-SITTER selže“. Vždy by měl být nastavený na delší dobu, než jak dlouho má výpal trvat. Zdroje určují rezervu různě:
-
-Table: Na jak dlouho nastavit pojistný časovač
-Label: Nastavení pojistného časovače
-
-| Zdroj     | Nastavení                                                                                                                                |
-| --------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| Dawson    | O ½ hodiny déle, než je očekávaná doba výpalu, dokud pec neznáte, později jen o ¼ hodiny déle; nikdy to nenastavujte na víc než 20 hodin |
-| L&L       | Poprvé na velmi dlouhou dobu; zapište si, jak dlouho výpal trvá; potom asi o 1 hodinu déle                                               |
-| Bracker's | O 30 minut až 1 hodinu déle, než trvá výpal                                                                                              |
+Sources disagree. Dawson, who made the sitter, says to use the same number as the firing cone on the shelf, and to go one number hotter only if the shelf cone stays unbent. L&L says to use one number hotter than the shelf cones, because the sitter sits near the wall and the elements, gets more heat, and tends to shut off early. Orton settles the principle: "The shelf cone is the final judge of the firing process, not the Kiln-Sitter cone or bar."
 
 > [!NOTE]
-> Náš výchozí postup: poprvé s velkou rezervou (v rámci 20 hodin na stupnici), potom o ½ až 1 hodinu déle, než je zaznamenaná doba. Časovač vám také řekne, jak dlouho výpal trval: nastavený na 7 a zastavený na 1 znamená 6 hodin.
+> Our starting point: put a small cone of the same number as your target in the sitter, with a cone pack on the shelf. If the shelf firing cone is under-bent when the kiln shuts off, go one number hotter in the sitter next time, or set the thicker part of the cone under the rod. If it is over-bent, do the opposite.
 
-### Když vypíná příliš brzy nebo pozdě
+### Setting it up, and checks before every firing
 
-Po každém výpalu odečtěte žároměrku z vypínače spolu se žároměrkami na plátě.
+Dawson's procedure, which doubles as a check before every firing:
 
-Table: Co ukazuje vypínač po výpalu
-Label: Problémy s vypínačem Kiln-Sitter
+1. Turn all the switches off. Check that the sensing rod moves freely, sits centered in the tube and is not bent or corroded. If it is sluggish, Dawson says to replace the tube assembly.
+2. Brush a thin coat of high-fire **kiln wash** (a coating that stops melted material sticking) onto the cone supports and the rod where it touches the cone. Never put wash on the cone or the porcelain tube.
+3. Load shelves and ware at least 1 in (25 mm) above or below the tube, so nothing can touch, fall against or block it.
+4. Lift the weight, press the claw down onto the trigger, and lay the cone or bar flat on the supports against the metal step, as your sitter's manual shows, the same way every time. Check it again before closing the lid: "AN IMPROPERLY PLACED CONE OR BAR COULD CAUSE AN OVERFIRING."
+5. Set the limit timer and push in the plunger until it locks. Keep the kiln level and the space under the weight clear, so the weight can fall.
 
-| Co vidíte                                                    | Pravděpodobná příčina                                                                                               | Co dělat                                                                       |
-| ------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
-| Vypínač vypnul, cílová žároměrka na plátě je málo ohnutá     | Ve vypínači bylo tepleji než na plátě (je u stěny)                                                                  | Do vypínače žároměrku o číslo teplejší, nebo silnější část pod snímací tyč     |
-| Žároměrka ve vypínači se prohnula daleko za 90°              | Teplota v peci ke konci stoupala příliš rychle                                                                      | Nastavte přepínače níž, aby nárůst byl pomalejší (Dawson)                      |
-| Žároměrka ve vypínači se neohnula, nebo se roztavila v kapku | Samotný vypínač: špatné seřízení, ohnutá nebo zkorodovaná snímací tyč, nebo něco uvízlo v trubičce či se o ni opírá | Před dalším výpalem vypínač zkontrolujte a seřiďte podle jeho návodu k obsluze |
-| Pokaždé brzy nebo pozdě                                      | Vypínač není seřízený, nebo je snímací tyč opotřebovaná                                                             | Zkontrolujte seřizovací měrkou; posuňte spouštěcí destičku                     |
+### The limit timer
 
-Ke kontrole seřízení používá Dawson **seřizovací měrku**, která podrží snímací tyč tam, kde by ji nechala úplně ohnutá žároměrka; u západky pak má být „vůle 1/16 palce“ (asi 1,6 mm). Kontrolujte to každých 30 výpalů. Pravidlo časopisu Ceramics Monthly: když pec vypíná brzy, posuňte spouštěcí destičku mírně nahoru; když pozdě, mírně dolů. Ať vypínač dělá cokoli, „vždy věřte velkým kontrolním žároměrkám víc než malým žároměrkám ve vypínači“.
+Many sitters, including Dawson's LT models, have a **limit timer**: a clock that turns the kiln off after a set time, as a backup "in case the KILN-SITTER fails". It should always be set longer than the firing is expected to take. Sources set the margin differently:
+
+Table: How long to set the limit timer
+Label: Limit timer settings
+
+| Source    | Setting                                                                                                                |
+| --------- | ---------------------------------------------------------------------------------------------------------------------- |
+| Dawson    | ½ hour longer than the expected firing time until you know the kiln, later ¼ hour longer; never set it beyond 20 hours |
+| L&L       | Very high the first time, noting how long the firing takes; after that, about 1 hour longer                            |
+| Bracker's | 30 minutes to 1 hour longer than the firing time                                                                       |
+
+> [!NOTE]
+> Our starting point: generous the first time (within the dial's 20 hours), then ½ to 1 hour longer than the time you recorded. The timer also tells you how long a firing took: set at 7 and ending at 1 means 6 hours.
+
+### When it shuts off early or late
+
+After each firing, read the sitter cone beside the shelf cones.
+
+Table: Reading the sitter after a firing
+Label: Kiln sitter problems
+
+| What you see                                    | Likely cause                                                                                           | What to do                                                       |
+| ----------------------------------------------- | ------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------- |
+| Sitter tripped, shelf firing cone under-bent    | The sitter ran hotter than the shelf (it sits near the wall)                                           | One cone hotter in the sitter, or the thicker part under the rod |
+| Sitter cone sagged well past 90°                | The kiln climbed too fast near the end                                                                 | Lower the switch settings, so the climb is slower (Dawson)       |
+| Sitter cone did not bend, or melted into a blob | The sitter itself: poor adjustment, a bent or corroded rod, or something lodged in or against the tube | Check and adjust the sitter by its manual before firing again    |
+| Early or late every time                        | Out of adjustment, or a worn rod                                                                       | Check with the firing gauge; move the trigger plate              |
+
+To check the adjustment, Dawson uses a **firing gauge** that holds the rod where a fully bent cone would leave it; there should then be "1/16th-inch clearance" (about 1.6 mm) at the claw. Check it every 30 firings. Ceramics Monthly's rule: if the kiln shuts off early, move the trigger plate up slightly; if late, move it down slightly. Whatever the sitter does, "Always trust large witness cones over small sitter cones."
 
 > [!WARNING]
-> **Kiln-Sitter není bezpečnostní zařízení.** Návod k obsluze od společnosti Dawson uvádí, že vypínač „NENÍ určen k tomu, aby sloužil jako vypínací zařízení bezpečné při poruše, a vaše pec by NEMĚLA zůstávat bez dozoru déle, než je odhadovaná doba výpalu“. Už něco tak prostého, jako když syrový výrobek{{en: greenware}} spadne na trubičku, „může způsobit přepálení“. Buďte u pece a zkontrolujte ji, když má výpal končit, a nikdy ji nevypalujte nad ničím hořlavým ani v blízkosti čehokoli hořlavého, jako je dřevěná podlaha nebo koberec.
+> **A kiln sitter is not a safety device.** Dawson's manual says it "is NOT intended to perform as a fail-safe shut-off device and your kiln should NOT be left unattended beyond the estimated firing time." Something as simple as greenware falling against the tube "might cause an over-firing". Be there to check the kiln when it should be finishing, and never fire it over or near anything that burns, such as a wood floor or carpet.
 
-Vypínač je určen pro výpaly „až do žároměrky 8 včetně“. Sám neumí držet teplotu ani pomalu chladit. S praxí a se záznamy výpalů se ale můžete „stát regulátorem“, jak říká Digitalfire: sledovat žároměrky a otáčet přepínači ručně.
+The sitter is built for firings "up to and including Cone 8". It cannot hold a temperature or cool slowly by itself. With practice and a log, though, you can "become the controller", as Digitalfire puts it: watch the cones and turn the switches by hand.
 
 :::
 
@@ -281,92 +281,92 @@ Label: Úprava dalšího výpalu
 
 :::sk
 
-## Výpal na žároměrky SK {#sk-cones}
+## Firing to SK cones {#sk-cones lang=en}
 
-Žároměrky SK jsou pyrometrické žároměrky vyrobené podle japonské normy JIS R 8101, které v Japonsku prodávají obchodníci, jako je Yuko Trading (有恒商事). Jako každá žároměrka měří i žároměrka SK tepelnou expozici{{en: heatwork}}, ne jen teplotu: změkne a ohne se, když výrobky dostaly dost tepla, a vy odečítáte, jak daleko se ohnula. Kontrolní žároměrky{{en: witness cone}}, odečítání toho, jak daleko se žároměrka ohnula, a výdrže{{en: hold}} u ní fungují stejně jako u každé žároměrky. Tato část u každé žároměrky uvádí její systém a nikdy nepřevádí číslo SK na číslo jiného systému: čísla různých řad žároměrek nejsou zaměnitelná.
+SK cones are the pyrometric cones made to Japan's standard, JIS R 8101, and sold in Japan by dealers such as Yuko Trading (有恒商事). Like any cone, an SK cone measures heatwork, not temperature alone: it softens and bends over when the ware has had enough heat, and you read how far it bent. Witness cones, reading how far a cone has bent, and holds work for it as for any cone. This section names each cone's system, and never turns an SK number into another system's number: the numbers of different cone series are not interchangeable.
 
 > [!NOTE]
-> Před číslo vždy pište „SK“. Mnoho starších japonských receptů uvádí jen „SK 8“ nebo „SK 9“ a neříká, čí je to žároměrka. Kjótské žároměrky a žároměrky SK podle JIS mají stejná čísla, ale ohýbají se při různých teplotách (viz Kjótské žároměrky níže).
+> Always write "SK" before the number. Many older Japanese recipes say only "SK 8" or "SK 9" without saying whose cone. Kyoto cones and SK cones to JIS carry the same numbers but bend at different temperatures (see Kyoto cones, below).
 
-### Velké žároměrky
+### The large cones
 
-Norma zná dvě velikosti. Velké žároměrky (大型コーン) se „používají hlavně k měření stupně výpalu“ (焼度測定), a to je to, co keramik potřebuje. Malé žároměrky (SK 26 až SK 42, na horním konci řady) se „používají hlavně ke zkouškám žárovzdornosti“ a tady se jimi nezabýváme. Tabulka níže uvádí velké žároměrky od SK 022 do SK 20.
+The standard has two sizes. Large cones (大型コーン) are "mainly used for measuring the degree of firing" (焼度測定), which is what a potter wants. Small cones (SK 26 to SK 42, at the top of the range) are "mainly used for refractoriness tests" and are not covered here. The table below gives the large cones from SK 022 to SK 20.
 
-Čísla tu jdou od SK 022, nejchladnější, až do SK 20. Mezi SK 015 a SK 6 mají vytištěná čísla písmeno „a“ (SK 015a, SK 6a); pište je tak, jak jsou vytištěná.
+The numbers run from SK 022, the coolest, up to SK 20 here. Between SK 015 and SK 6 the printed numbers carry an "a" (SK 015a, SK 6a); write it as printed.
 
-### Stavění velkých žároměrek
+### Setting large cones
 
-Každou velkou žároměrku zasaďte do držáku nebo do placky z hlíny, se sklonem ke své ohybové straně. Jako u každé žároměrky držte výšku i sklon od výpalu k výpalu stejné, protože rozdíl v kterémkoli z nich mění, jak daleko se ohne. Tři žároměrky sady{{en: cone pack}} (viz níže) postavte vedle sebe hluboko do pece blízko středu vsázky, kde dostávají stejné teplo jako výrobky, a přitom tam, kde je uvidíte průzorem; než pec zavřete, ověřte, že vidíte všechny tři.
+Set each large cone in a plaque or a pat of clay, leaning toward its bending face. As with any cone, keep the height and the lean the same from firing to firing, because a difference in either changes how far it bends. Set the three cones of the pack (below) together, deep in the kiln near the middle of the load, where they get the heat the ware gets, yet where you can see them through a peephole; before you close the kiln, check that you can see all three.
 
-### Signální, cílová a pojistná žároměrka
+### Guide, firing and guard cones
 
-Žároměrky se prodávají a stavějí po třech: signální žároměrka, cílová žároměrka a pojistná žároměrka. Jako cílovou vezměte číslo SK, které uvádí váš recept nebo hlína, jako signální nejbližší chladnější žároměrku (o řádek výš v tabulce) a jako pojistnou nejbližší teplejší. Když se signální žároměrka začne ohýbat, konec se blíží; když se ohne pojistná žároměrka, výpal zašel příliš daleko.
+Cones are sold and set as three: a guide cone, a firing cone at the target, and a guard cone. Take the firing cone as the SK number your recipe or clay names, the guide cone as the next cooler cone (one row up in the table) and the guard cone as the next hotter one. When the guide cone starts to bend, the end is near; when the guard cone bends, the firing has gone too far.
 
-### Tabulka žároměrek SK
+### The SK chart
 
-Table: Velké žároměrky SK (JIS R 8101): jmenovitá teplota (JIS) každé z nich
-Label: Tabulka žároměrek SK
+Table: SK large cones (JIS R 8101): the nominal (JIS) temperature of each
+Label: SK chart
 
-| Žároměrka | Jmenovitá teplota (JIS) |
-| --------- | ----------------------: |
-| SK 022    |     {{1112 °F; 600 °C}} |
-| SK 021    |     {{1202 °F; 650 °C}} |
-| SK 020    |     {{1238 °F; 670 °C}} |
-| SK 019    |     {{1274 °F; 690 °C}} |
-| SK 018    |     {{1310 °F; 710 °C}} |
-| SK 017    |     {{1346 °F; 730 °C}} |
-| SK 016    |     {{1382 °F; 750 °C}} |
-| SK 015a   |     {{1454 °F; 790 °C}} |
-| SK 014a   |     {{1499 °F; 815 °C}} |
-| SK 013a   |     {{1535 °F; 835 °C}} |
-| SK 012a   |     {{1571 °F; 855 °C}} |
-| SK 011a   |     {{1616 °F; 880 °C}} |
-| SK 010a   |     {{1652 °F; 900 °C}} |
-| SK 09a    |     {{1688 °F; 920 °C}} |
-| SK 08a    |     {{1724 °F; 940 °C}} |
-| SK 07a    |     {{1760 °F; 960 °C}} |
-| SK 06a    |     {{1796 °F; 980 °C}} |
-| SK 05a    |    {{1832 °F; 1000 °C}} |
-| SK 04a    |    {{1868 °F; 1020 °C}} |
-| SK 03a    |    {{1904 °F; 1040 °C}} |
-| SK 02a    |    {{1940 °F; 1060 °C}} |
-| SK 01a    |    {{1976 °F; 1080 °C}} |
-| SK 1a     |    {{2012 °F; 1100 °C}} |
-| SK 2a     |    {{2048 °F; 1120 °C}} |
-| SK 3a     |    {{2084 °F; 1140 °C}} |
-| SK 4a     |    {{2120 °F; 1160 °C}} |
-| SK 5a     |    {{2156 °F; 1180 °C}} |
-| SK 6a     |    {{2192 °F; 1200 °C}} |
-| SK 7      |    {{2246 °F; 1230 °C}} |
-| SK 8      |    {{2282 °F; 1250 °C}} |
-| SK 9      |    {{2336 °F; 1280 °C}} |
-| SK 10     |    {{2372 °F; 1300 °C}} |
-| SK 11     |    {{2408 °F; 1320 °C}} |
-| SK 12     |    {{2462 °F; 1350 °C}} |
-| SK 13     |    {{2516 °F; 1380 °C}} |
-| SK 14     |    {{2570 °F; 1410 °C}} |
-| SK 15     |    {{2615 °F; 1435 °C}} |
-| SK 16     |    {{2660 °F; 1460 °C}} |
-| SK 17     |    {{2696 °F; 1480 °C}} |
-| SK 18     |    {{2732 °F; 1500 °C}} |
-| SK 19     |    {{2768 °F; 1520 °C}} |
-| SK 20     |    {{2786 °F; 1530 °C}} |
+| Cone    | Nominal (JIS) temperature |
+| ------- | ------------------------: |
+| SK 022  |       {{1112 °F; 600 °C}} |
+| SK 021  |       {{1202 °F; 650 °C}} |
+| SK 020  |       {{1238 °F; 670 °C}} |
+| SK 019  |       {{1274 °F; 690 °C}} |
+| SK 018  |       {{1310 °F; 710 °C}} |
+| SK 017  |       {{1346 °F; 730 °C}} |
+| SK 016  |       {{1382 °F; 750 °C}} |
+| SK 015a |       {{1454 °F; 790 °C}} |
+| SK 014a |       {{1499 °F; 815 °C}} |
+| SK 013a |       {{1535 °F; 835 °C}} |
+| SK 012a |       {{1571 °F; 855 °C}} |
+| SK 011a |       {{1616 °F; 880 °C}} |
+| SK 010a |       {{1652 °F; 900 °C}} |
+| SK 09a  |       {{1688 °F; 920 °C}} |
+| SK 08a  |       {{1724 °F; 940 °C}} |
+| SK 07a  |       {{1760 °F; 960 °C}} |
+| SK 06a  |       {{1796 °F; 980 °C}} |
+| SK 05a  |      {{1832 °F; 1000 °C}} |
+| SK 04a  |      {{1868 °F; 1020 °C}} |
+| SK 03a  |      {{1904 °F; 1040 °C}} |
+| SK 02a  |      {{1940 °F; 1060 °C}} |
+| SK 01a  |      {{1976 °F; 1080 °C}} |
+| SK 1a   |      {{2012 °F; 1100 °C}} |
+| SK 2a   |      {{2048 °F; 1120 °C}} |
+| SK 3a   |      {{2084 °F; 1140 °C}} |
+| SK 4a   |      {{2120 °F; 1160 °C}} |
+| SK 5a   |      {{2156 °F; 1180 °C}} |
+| SK 6a   |      {{2192 °F; 1200 °C}} |
+| SK 7    |      {{2246 °F; 1230 °C}} |
+| SK 8    |      {{2282 °F; 1250 °C}} |
+| SK 9    |      {{2336 °F; 1280 °C}} |
+| SK 10   |      {{2372 °F; 1300 °C}} |
+| SK 11   |      {{2408 °F; 1320 °C}} |
+| SK 12   |      {{2462 °F; 1350 °C}} |
+| SK 13   |      {{2516 °F; 1380 °C}} |
+| SK 14   |      {{2570 °F; 1410 °C}} |
+| SK 15   |      {{2615 °F; 1435 °C}} |
+| SK 16   |      {{2660 °F; 1460 °C}} |
+| SK 17   |      {{2696 °F; 1480 °C}} |
+| SK 18   |      {{2732 °F; 1500 °C}} |
+| SK 19   |      {{2768 °F; 1520 °C}} |
+| SK 20   |      {{2786 °F; 1530 °C}} |
 
-Každý údaj je jmenovitý (JIS): teplota, kterou pro žároměrku udává norma, jak je vytištěna v tabulce firmy Yuko Trading. Tabulka neuvádí rychlost ohřevu. Norma udává referenční teploty. Při rychlosti obvyklé u keramiků, asi 100 °C/h, naměřil kjótský městský institut, že se jeho vlastní kjótské žároměrky ohýbají o 40–70 °C níž, než je údaj JIS pro stejné číslo; pro žároměrky SK podle JIS jsme taková měření nenašli. Postavte kontrolní žároměrku a porovnejte.
+Every figure is nominal (JIS): the temperature the standard gives for the cone, as printed in Yuko Trading's table. The table does not print a heating rate. The standard gives reference temperatures. At a potter's rate of about 100 °C/h, Kyoto's municipal institute measured its own Kyoto cones bending 47–79 °C cooler than the JIS figure for the same number; we found no such measurements for SK cones to JIS. Set a witness cone and compare.
 
-### Kjótské žároměrky
+### Kyoto cones
 
-Kjótské žároměrky (京都ゼーゲル), které vyráběl kjótský městský institut, se už nevyrábějí: podle zpráv v tisku institut ukončil výrobu na konci fiskálního roku 2009. Mají stejná čísla jako žároměrky SK podle JIS, ale ohýbají se při nižší teplotě: kjótská žároměrka se většinou ohne přibližně při teplotě žároměrky SK podle JIS o dvě čísla nižší. Recept z Kjóta, který uvádí „SK 8“, může myslet kjótskou žároměrku. Institut zveřejnil rady pro keramiky, kteří přecházejí z kjótských žároměrek na Ortonovy, a místo své kjótské SK 12 používá Ortonovu žároměrku 10; to je volba institutu podle jeho vlastních měření při 100 °C/h a neplatí pro žádnou jinou žároměrku.
+Kyoto cones (京都ゼーゲル), made by Kyoto's municipal institute, are no longer made: news reports say the institute ended production at the close of fiscal 2009. They carry the same numbers as SK cones to JIS but bend cooler: a Kyoto cone bends at about the temperature of the SK cone to JIS two or three numbers lower. A recipe from Kyoto that says "SK 8" may mean a Kyoto cone. The institute has published advice for potters moving from Kyoto cones to Orton cones, and substitutes Orton cone 10 for its own Kyoto SK 12; that is the institute's choice from its own measurements at 100 °C/h, and applies to no other cone.
 
-### Ortonovy žároměrky prodávané v Japonsku
+### Orton cones sold in Japan
 
-Samostojné Ortonovy žároměrky se v Japonsku prodávají pod názvem 立つゼーゲル („stojící Seger“), protože nepotřebují držák ani stojánek. Jsou to Ortonovy žároměrky s Ortonovými čísly a Ortonovou tabulkou (viz výše): vypalujte na ně jen podle jejich Ortonova čísla a žároměrky SK a Ortonovy žároměrky mějte v oddělených sadách, nikdy v jedné.
+Orton self-supporting cones are sold in Japan under the name 立つゼーゲル ("standing Seger"), because they need no plaque or stand. They are Orton cones, with Orton's numbers and Orton's chart (above): fire to one only by its Orton number, and keep SK and Orton cones in separate packs, never in the same one.
 
-### Zdroje k žároměrkám SK
+### Sources for SK cones
 
-- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (tabulka SK, ověřeno 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
-- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (platná, znovu potvrzena 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
-- [Kyoto Municipal Institute of Industrial Technology and Culture: na co dát pozor při přechodu z kjótských žároměrek na Ortonovy](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
+- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (the SK table, checked 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
+- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (in force, reconfirmed 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
+- [Kyoto Municipal Institute of Industrial Technology and Culture: points to note when moving from Kyoto cones to Orton cones](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
 
 :::
 

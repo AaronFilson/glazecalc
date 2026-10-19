@@ -163,55 +163,55 @@ Label: Mesh của sàng
 | Men có chất tạo màu như coban hoặc sắt       | 100 đến 120 mesh    |
 | Men tro, và các loại khác có nguyên liệu thô | 60 đến 80 mesh      |
 
-## Tỷ trọng {#specific-gravity}
+## Specific gravity {#specific-gravity lang=en}
 
-**Tỷ trọng** cho bạn biết có bao nhiêu bột trong nước men. Nó là khối lượng của một thể tích men chia cho khối lượng của cùng thể tích nước. Nước là 1,00, và một loại men ở {{SG 1.45}} nặng 145 g trên 100 mL. Pha đến một tỷ trọng đã đo là cách bạn có cùng độ đặc, và cùng một lớp phủ, mỗi lần. Nó không có đơn vị, nên giống nhau dù tính bằng gam hay ounce.
+**Specific gravity** (SG) tells you how much powder is in your slurry. It is the weight of a volume of glaze divided by the weight of the same volume of water. Water is 1.00, and a glaze at {{SG 1.45}} weighs 145 g per 100 mL. Mixing to a measured SG is how you get the same thickness, and the same coat, every time. It has no units, so it is the same in grams or ounces.
 
-### Đo bằng cách cân 100 mL
+### Measure it by weighing 100 mL
 
-1. Khuấy men để không gì lắng lại.
-2. Đặt một **ống đong** 100 mL (một ống đo cao có vạch) hoặc một ống tiêm 100 mL lên cân, và trừ bì.
-3. Đổ đầy men đến đúng 100 mL, đọc vạch ở ngang tầm mắt.
-4. Cân nó và chia số gam cho 100: 145 g là tỷ trọng 1,45.
+1. Stir the glaze so nothing has settled.
+2. Put a 100 mL **graduated cylinder** (a tall, marked measuring tube) or a 100 mL syringe on the scale, and tare it.
+3. Fill it with glaze to exactly 100 mL, reading the mark at eye level.
+4. Weigh it and divide the grams by 100: 145 g is SG 1.45.
 
-Digitalfire cũng đánh dấu một cái cốc ở mức 500 g nước, đổ men đến vạch, và chia khối lượng cho 500; một dụng cụ đo lớn hơn, đầy hơn thì chính xác hơn. Một **tỷ trọng kế**, một cái phao đọc ở chỗ nó nằm trong men, nhanh nhưng có thể đọc sai với men đặc hoặc bị keo hóa. Tỷ trọng kế của Anh, như của Potclays, đọc theo độ Baumé (°Bé). Theo phép tính của chúng tôi, tỷ trọng = 145 ÷ (145 − °Bé), nên 46 °Bé là khoảng 1,46. Các sách cũ của Anh nêu **trọng lượng pint**, số ounce trong một pint Anh men: chia nó cho 20, nên 29 oz là khoảng tỷ trọng 1,45 (cũng là phép tính của chúng tôi).
+Digitalfire also marks a cup at the level of 500 g of water, fills it to the mark with glaze, and divides the weight by 500; a bigger, fuller measure is more accurate. A **hydrometer**, a float read where it sits in the glaze, is quick but can misread thick or gelled glazes. UK hydrometers, such as Potclays', read in degrees Baumé (°Bé). By our arithmetic, SG = 145 ÷ (145 − °Bé), so 46 °Bé is about 1.46. Older UK books give a **pint weight**, the ounces in an imperial pint of glaze: divide it by 20, so 29 oz is about SG 1.45 (also our arithmetic).
 
-### Nhắm đến mức nào
+### What to aim for
 
-Các nguồn không thống nhất, nhất là về quét và phun, nơi nhà cung cấp Anh Potclays nêu các số cao hơn nhiều (số của chính họ là “chỉ để tham khảo”). Hãy coi mọi con số là điểm khởi đầu. Lời khuyên cốt lõi của Digitalfire là tìm tỷ trọng và độ keo hóa phù hợp cho từng loại men, rồi lặp lại chúng và ghi lại.
+Sources disagree, most of all on brushing and spraying, where the UK supplier Potclays gives much higher figures (its own are "for guidance only"). Treat every number as a starting point. Digitalfire's core advice is to find the SG and gelling that work for each glaze, then repeat them and write them down.
 
-Table: Mục tiêu tỷ trọng, nơi các nguồn không thống nhất
-Label: Mục tiêu tỷ trọng
+Table: Specific gravity targets, where sources disagree
+Label: Specific gravity targets
 
-| Cách dùng | Digitalfire và Glazy                                                                                                                           | Potclays (Anh)                                  | Điểm khởi đầu an toàn                                                  |
-| --------- | ---------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------- | ---------------------------------------------------------------------- |
-| Nhúng     | {{SG 1.40}} (cho lần nhúng 5 giây) đến {{SG 1.50}} (cho lần nhúng 1 giây); men tự pha tại nhà bị keo hóa hoạt động tốt nhất ở {{SG 1.43–1.45}} | Men trong {{SG 1.46–1.48}}; men màu {{SG 1.61}} | {{SG 1.45}}; làm loãng đến {{SG 1.43}} và làm keo hóa nếu nó chảy giọt |
-| Quét      | {{SG 1.25}} (trong, loãng) đến {{SG 1.55}} (chi tiết đậm)                                                                                      | {{SG 1.71–1.81}}                                | Làm theo sản phẩm; dùng keo CMC hoặc chất quét                         |
-| Phun      | Không có số liệu; Hopper, viết cho Ceramic Arts Network, nói loãng hơn nhiều, với một chất khử keo tụ (phụ gia làm nước men lỏng hơn)          | {{SG 1.71}}                                     | Không có con số đáng tin; chỉ phun trong buồng phun                    |
+| Use      | Digitalfire and Glazy                                                                                                                 | Potclays (UK)                               | Safe starting point                                     |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- | ------------------------------------------------------- |
+| Dipping  | {{SG 1.40}} (for a 5-second dip) to {{SG 1.50}} (for a 1-second dip); home-mixed glazes that are gelled do best at {{SG 1.43–1.45}}   | Clear {{SG 1.46–1.48}}; colored {{SG 1.61}} | {{SG 1.45}}; thin to {{SG 1.43}} and gel it if it drips |
+| Brushing | {{SG 1.25}} (thin clear) to {{SG 1.55}} (dark detail)                                                                                 | {{SG 1.71–1.81}}                            | Follow the product; use CMC gum or a brushing medium    |
+| Spraying | No figure; Hopper, writing for Ceramic Arts Network, says much thinner, with a deflocculant (an additive that makes a slurry runnier) | {{SG 1.71}}                                 | No reliable number; spray only in a spray booth         |
 
-Để kiểm tra men nhúng bằng mắt, AMACO nhúng trong 5 giây và tìm lớp phủ dày xấp xỉ một đồng dime của Mỹ. Digitalfire nung các mẫu thử nhúng 5 giây để kiểm tra.
+To check a dipping glaze by eye, AMACO dips for 5 seconds and looks for a coat about as thick as a US dime. Digitalfire fires tiles dipped for 5 seconds to check.
 
-### Nước cho một tỷ trọng mục tiêu: ước tính của chúng tôi
+### Water for a target SG: our estimate
 
-Bảng bên dưới là phép tính riêng của chúng tôi, không phải của một nguồn nào. Nó giả định các hạt bột có khối lượng riêng 2,6 g trên cm³, đó là một giả định, không phải một phép đo. Đất sét, các nguyên liệu tan và việc keo hóa đều làm thay đổi một loại men thật, nên hãy dùng nó để bắt đầu, rồi đo. Để kiểm tra, nó dự đoán {{SG 1.44}} cho khối lượng bột và nước bằng nhau, gần với {{SG 1.46}} mà Digitalfire đã đo. Nó cũng cho thấy 70 đến 80 mL trên 100 g khiến bạn bắt đầu trên {{SG 1.50}}, đặc hơn mức bạn cần.
+The table below is our own arithmetic, not a source's. It assumes the powder's particles have a density of 2.6 g per cm³, which is an assumption, not a measurement. Clay, soluble materials and gelling all change a real glaze, so use it to start, then measure. As a check, it predicts {{SG 1.44}} for equal weights of powder and water, close to Digitalfire's measured {{SG 1.46}}. It also shows that 70 to 80 mL per 100 g starts you above {{SG 1.50}}, thicker than you need.
 
-Table: Nước cho một tỷ trọng mục tiêu (ước tính của chúng tôi)
-Label: Nước cho một tỷ trọng mục tiêu
+Table: Water for a target specific gravity (our estimate)
+Label: Water for a target specific gravity
 
-| Mục tiêu    | Trên 100 g bột |   Trên kilôgam |         Trên pound |
-| ----------- | -------------: | -------------: | -----------------: |
-| {{SG 1.40}} |  khoảng 115 mL | khoảng 1150 mL | khoảng 18 US fl oz |
-| {{SG 1.45}} |   khoảng 98 mL |  khoảng 980 mL | khoảng 15 US fl oz |
-| {{SG 1.50}} |   khoảng 85 mL |  khoảng 850 mL | khoảng 13 US fl oz |
-| {{SG 1.60}} |   khoảng 64 mL |  khoảng 640 mL | khoảng 10 US fl oz |
+| Target      | Per 100 g of powder |  Per kilogram |         Per pound |
+| ----------- | ------------------: | ------------: | ----------------: |
+| {{SG 1.40}} |        about 115 mL | about 1150 mL | about 18 US fl oz |
+| {{SG 1.45}} |         about 98 mL |  about 980 mL | about 15 US fl oz |
+| {{SG 1.50}} |         about 85 mL |  about 850 mL | about 13 US fl oz |
+| {{SG 1.60}} |         about 64 mL |  about 640 mL | about 10 US fl oz |
 
-### Muối Epsom, keo CMC và bentonit
+### Epsom salts, CMC gum and bentonite
 
-**Muối Epsom** làm men keo hóa nhẹ khi đứng yên và chảy lại khi được khuấy. Việc này gọi là **keo tụ** nó, và một loại men hoạt động như vậy là **xúc biến**: nó phủ đều hơn, ít chảy giọt hơn và ít lắng hơn. Digitalfire gợi ý bắt đầu ở khoảng 2 g trên mỗi gallon khi tỷ trọng đã đúng (xấp xỉ 0,5 g trên mỗi lít, phép quy đổi của chúng tôi) và tinh chỉnh lượng mỗi lần bạn pha, vì không công thức men nào nên cố định liều. Chúng tôi gợi ý hòa tan nó trong một ít nước nóng trước. Trong một ví dụ của Digitalfire, một loại men ở {{SG 1.45}} chảy giọt, nên nước đưa nó xuống {{SG 1.43}} và muối Epsom làm nó keo hóa lại thành dạng kem, và nó phủ đều. Một cách kiểm tra sơ bộ: khuấy, dừng và quan sát. Một loại men keo hóa tiếp tục chuyển động khoảng 2 hoặc 3 giây, rồi dừng và nảy lại một chút.
+**Epsom salts** make a glaze gel slightly when it stands still and flow again when it is stirred. This is called **flocculating** it, and a glaze that behaves this way is **thixotropic**: it goes on more evenly, drips less and settles less. Digitalfire suggests starting at about 2 g per gallon once the SG is right (roughly 0.5 g per liter, our conversion) and tuning the amount each time you mix, since no recipe should fix the dose. We suggest dissolving it in a little hot water first. In a Digitalfire example, a glaze at {{SG 1.45}} dripped, so water brought it down to {{SG 1.43}} and Epsom salts gelled it back to creamy, and it went on evenly. A rough check: stir, stop and watch. A gelled glaze moves on for about 2 or 3 seconds, then stops and springs back a little.
 
-**Keo CMC** (carboxymethyl cellulose) làm nước men dính hơn và khô chậm hơn, và để lại lớp phủ cứng hơn bám vào sản phẩm. Nó quan trọng nhất với men quét và men nhiều frit. Ví dụ của Digitalfire trộn 3,75 g vào 1000 g nước men, và nó phải được cho vào bằng máy xay. Một loại men có CMC sẽ không keo hóa với muối Epsom, và vì vi sinh vật ăn keo, nó có thể thay đổi trong xô và bắt đầu có mùi.
+**CMC gum** (carboxymethyl cellulose) makes a slurry stickier and slower to dry, and leaves a harder coat that holds to the pot. It matters most for brushing glazes and glazes high in frit. Digitalfire's example blends 3.75 g into 1000 g of slurry, and it has to go in with a blender. A glaze with CMC will not gel with Epsom salts, and since microbes feed on the gum, it can change in the bucket and start to smell.
 
-**Bentonit**, một loại đất sét rất mịn, giúp giữ các hạt khác lơ lửng. Men nhúng thường dựa vào 15 đến 25% đất sét thô cho việc này. Với một công thức men thiếu đất sét, khoảng 1 đến 3% bentonit sẽ giúp ích; Digitalfire cho biết một loại men có hơn 15% đất sét có lẽ không cần quá 1%.
+**Bentonite**, a very fine clay, helps hold the other particles in suspension. Dipping glazes usually rely on 15 to 25% raw clay for this. For a recipe short of clay, about 1 to 3% bentonite helps; Digitalfire says a glaze with more than 15% clay should not need bentonite at more than 1% of the dry glaze's weight.
 
 ## Mẫu thử men và thử nghiệm tuyến tính {#testing}
 

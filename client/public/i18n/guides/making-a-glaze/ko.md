@@ -163,55 +163,55 @@ Label: 체 메시
 | 코발트나 철 같은 발색제가 든 유약 | 100~120메시    |
 | 회유와 거친 원료가 든 다른 유약   | 60~80메시      |
 
-## 비중 {#specific-gravity}
+## Specific gravity {#specific-gravity lang=en}
 
-**비중**{{en: specific gravity}}(SG)은 유약물에 가루가 얼마나 들어 있는지를 알려 줍니다. 어떤 부피의 유약 무게를 같은 부피의 물의 무게로 나눈 값입니다. 물은 1.00이고, {{SG 1.45}}인 유약은 100 mL의 무게가 145 g입니다. 잰 비중에 맞춰 섞으면 매번 같은 걸쭉함과 같은 유약층을 얻을 수 있습니다. 비중에는 단위가 없으므로 그램으로 재든 온스로 재든 같습니다.
+**Specific gravity** (SG) tells you how much powder is in your slurry. It is the weight of a volume of glaze divided by the weight of the same volume of water. Water is 1.00, and a glaze at {{SG 1.45}} weighs 145 g per 100 mL. Mixing to a measured SG is how you get the same thickness, and the same coat, every time. It has no units, so it is the same in grams or ounces.
 
-### 100 mL의 무게로 재기
+### Measure it by weighing 100 mL
 
-1. 유약을 저어서 가라앉은 것이 없게 하세요.
-2. 100 mL **눈금 실린더**(눈금이 있는 길쭉한 계량 관) 또는 100 mL 주사기를 저울에 올리고 영점을 맞추세요.
-3. 유약을 정확히 100 mL까지 채우세요. 눈금은 눈높이에서 읽습니다.
-4. 무게를 재고 그램 값을 100으로 나눕니다. 145 g이면 비중 1.45입니다.
+1. Stir the glaze so nothing has settled.
+2. Put a 100 mL **graduated cylinder** (a tall, marked measuring tube) or a 100 mL syringe on the scale, and tare it.
+3. Fill it with glaze to exactly 100 mL, reading the mark at eye level.
+4. Weigh it and divide the grams by 100: 145 g is SG 1.45.
 
-Digitalfire는 컵에 물 500 g이 들어가는 높이를 표시해 두고, 그 표시까지 유약을 채워 무게를 500으로 나누기도 합니다. 더 크고 가득 채운 용기가 더 정확합니다. **비중계**는 유약에 띄워 떠 있는 위치를 읽는 부표로, 빠르지만 걸쭉하거나 젤 상태인 유약은 잘못 읽을 수 있습니다. Potclays 같은 영국의 비중계는 보메도(°Bé)로 읽습니다. 저희 계산으로는 비중 = 145 ÷ (145 − °Bé)이므로 46 °Bé는 약 1.46입니다. 영국의 옛 책에는 **파인트 무게**, 즉 영국 파인트의 유약에 든 온스 수가 나옵니다. 이를 20으로 나누면 되며, 29 oz는 약 비중 1.45입니다(이것도 저희 계산입니다).
+Digitalfire also marks a cup at the level of 500 g of water, fills it to the mark with glaze, and divides the weight by 500; a bigger, fuller measure is more accurate. A **hydrometer**, a float read where it sits in the glaze, is quick but can misread thick or gelled glazes. UK hydrometers, such as Potclays', read in degrees Baumé (°Bé). By our arithmetic, SG = 145 ÷ (145 − °Bé), so 46 °Bé is about 1.46. Older UK books give a **pint weight**, the ounces in an imperial pint of glaze: divide it by 20, so 29 oz is about SG 1.45 (also our arithmetic).
 
-### 목표로 삼을 비중
+### What to aim for
 
-자료마다 다르며, 특히 붓 시유와 분무 시유에서 크게 다릅니다. 영국 공급업체 Potclays는 훨씬 높은 수치를 제시합니다(Potclays 자신의 수치는 “참고용일 뿐”입니다). 모든 숫자를 시작점으로 여기세요. Digitalfire의 핵심 조언은 유약마다 맞는 비중과 젤 상태를 찾은 다음 그것을 반복하고 기록하라는 것입니다.
+Sources disagree, most of all on brushing and spraying, where the UK supplier Potclays gives much higher figures (its own are "for guidance only"). Treat every number as a starting point. Digitalfire's core advice is to find the SG and gelling that work for each glaze, then repeat them and write them down.
 
-Table: 비중 목표, 자료마다 다른 값
-Label: 비중 목표
+Table: Specific gravity targets, where sources disagree
+Label: Specific gravity targets
 
-| 용도      | Digitalfire와 Glazy                                                                                                                             | Potclays(영국)                               | 안전한 시작점                                                           |
-| --------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------- | ----------------------------------------------------------------------- |
-| 덤벙 시유 | {{SG 1.40}}(5초 담그기)에서 {{SG 1.50}}(1초 담그기)까지. 집에서 섞어 젤 상태로 만든 유약은 {{SG 1.43–1.45}}에서 가장 잘 맞습니다                | 투명유 {{SG 1.46–1.48}}, 색 유약 {{SG 1.61}} | {{SG 1.45}}. 뚝뚝 떨어지면 {{SG 1.43}}까지 묽게 하고 젤 상태로 만드세요 |
-| 붓 시유   | {{SG 1.25}}(묽은 투명유)에서 {{SG 1.55}}(진한 세부 표현)까지                                                                                    | {{SG 1.71–1.81}}                             | 제품의 지시를 따르세요. CMC 바인더나 붓 시유용 미디엄을 쓰세요          |
-| 분무 시유 | 수치 없음. Ceramic Arts Network에 글을 쓴 Hopper는 훨씬 묽게 하고 해교제{{en: deflocculant}}(유약물을 더 잘 흐르게 하는 첨가제)를 쓴다고 합니다 | {{SG 1.71}}                                  | 믿을 만한 수치 없음. 스프레이 부스에서만 분무하세요                     |
+| Use      | Digitalfire and Glazy                                                                                                                 | Potclays (UK)                               | Safe starting point                                     |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- | ------------------------------------------------------- |
+| Dipping  | {{SG 1.40}} (for a 5-second dip) to {{SG 1.50}} (for a 1-second dip); home-mixed glazes that are gelled do best at {{SG 1.43–1.45}}   | Clear {{SG 1.46–1.48}}; colored {{SG 1.61}} | {{SG 1.45}}; thin to {{SG 1.43}} and gel it if it drips |
+| Brushing | {{SG 1.25}} (thin clear) to {{SG 1.55}} (dark detail)                                                                                 | {{SG 1.71–1.81}}                            | Follow the product; use CMC gum or a brushing medium    |
+| Spraying | No figure; Hopper, writing for Ceramic Arts Network, says much thinner, with a deflocculant (an additive that makes a slurry runnier) | {{SG 1.71}}                                 | No reliable number; spray only in a spray booth         |
 
-덤벙 시유 유약을 눈으로 확인하려면, AMACO는 5초 동안 담근 뒤 미국 다임 동전 두께쯤 되는 유약층이 생겼는지 봅니다. Digitalfire는 5초 담근 시편을 구워서 확인합니다.
+To check a dipping glaze by eye, AMACO dips for 5 seconds and looks for a coat about as thick as a US dime. Digitalfire fires tiles dipped for 5 seconds to check.
 
-### 목표 비중에 맞는 물의 양: 저희의 추정
+### Water for a target SG: our estimate
 
-아래 표는 어느 자료의 것이 아니라 저희가 직접 계산한 값입니다. 가루 입자의 밀도를 cm³당 2.6 g으로 가정했으며, 이는 측정값이 아니라 가정입니다. 점토, 수용성 원료, 젤 상태는 모두 실제 유약을 바꾸므로, 시작점으로만 쓰고 그다음에 재세요. 확인 삼아 보면, 가루와 물을 같은 무게로 섞을 때 {{SG 1.44}}로 예측하는데, 이는 Digitalfire가 측정한 {{SG 1.46}}과 가깝습니다. 또한 100 g당 70~80 mL로 시작하면 {{SG 1.50}}보다 높은 값에서 출발하게 되며, 필요한 것보다 걸쭉하다는 것도 보여 줍니다.
+The table below is our own arithmetic, not a source's. It assumes the powder's particles have a density of 2.6 g per cm³, which is an assumption, not a measurement. Clay, soluble materials and gelling all change a real glaze, so use it to start, then measure. As a check, it predicts {{SG 1.44}} for equal weights of powder and water, close to Digitalfire's measured {{SG 1.46}}. It also shows that 70 to 80 mL per 100 g starts you above {{SG 1.50}}, thicker than you need.
 
-Table: 목표 비중에 맞는 물의 양(저희의 추정)
-Label: 목표 비중에 맞는 물의 양
+Table: Water for a target specific gravity (our estimate)
+Label: Water for a target specific gravity
 
-| 목표        | 가루 100 g당 | 킬로그램당 |       파운드당 |
-| ----------- | -----------: | ---------: | -------------: |
-| {{SG 1.40}} |    약 115 mL | 약 1150 mL | 약 18 US fl oz |
-| {{SG 1.45}} |     약 98 mL |  약 980 mL | 약 15 US fl oz |
-| {{SG 1.50}} |     약 85 mL |  약 850 mL | 약 13 US fl oz |
-| {{SG 1.60}} |     약 64 mL |  약 640 mL | 약 10 US fl oz |
+| Target      | Per 100 g of powder |  Per kilogram |         Per pound |
+| ----------- | ------------------: | ------------: | ----------------: |
+| {{SG 1.40}} |        about 115 mL | about 1150 mL | about 18 US fl oz |
+| {{SG 1.45}} |         about 98 mL |  about 980 mL | about 15 US fl oz |
+| {{SG 1.50}} |         about 85 mL |  about 850 mL | about 13 US fl oz |
+| {{SG 1.60}} |         about 64 mL |  about 640 mL | about 10 US fl oz |
 
-### 황산마그네슘, CMC, 벤토나이트
+### Epsom salts, CMC gum and bentonite
 
-**황산마그네슘**(엡섬염)은 유약이 가만히 있으면 살짝 젤처럼 굳고 저으면 다시 흐르게 합니다. 이를 **응집시킨다**{{en: flocculate}}고 하며, 이렇게 움직이는 유약은 **틱소트로피**{{en: thixotropic}}(요변성)가 있는 유약입니다. 이런 유약은 더 고르게 발리고, 덜 흘러내리고, 덜 가라앉습니다. Digitalfire는 비중이 맞은 뒤에 갤런당 약 2 g으로 시작하고(리터당 약 0.5 g, 저희의 환산) 배합할 때마다 양을 조정하라고 제안합니다. 어떤 레시피도 투입량을 고정하지 않는 것이 좋기 때문입니다. 저희는 먼저 소량의 뜨거운 물에 녹이기를 권합니다. Digitalfire의 한 예에서는 {{SG 1.45}}인 유약이 뚝뚝 흘러서 물로 {{SG 1.43}}까지 낮추고 엡섬염으로 다시 크림처럼 젤 상태로 만들었더니 고르게 발렸습니다. 대략 확인하는 방법은 젓고, 멈추고, 지켜보는 것입니다. 젤 상태의 유약은 약 2~3초 동안 계속 움직이다가 멈추고 조금 되튑니다.
+**Epsom salts** make a glaze gel slightly when it stands still and flow again when it is stirred. This is called **flocculating** it, and a glaze that behaves this way is **thixotropic**: it goes on more evenly, drips less and settles less. Digitalfire suggests starting at about 2 g per gallon once the SG is right (roughly 0.5 g per liter, our conversion) and tuning the amount each time you mix, since no recipe should fix the dose. We suggest dissolving it in a little hot water first. In a Digitalfire example, a glaze at {{SG 1.45}} dripped, so water brought it down to {{SG 1.43}} and Epsom salts gelled it back to creamy, and it went on evenly. A rough check: stir, stop and watch. A gelled glaze moves on for about 2 or 3 seconds, then stops and springs back a little.
 
-**CMC**(카복시메틸셀룰로스) 바인더는 유약물을 더 끈적하고 더디게 마르게 하며, 기물에 달라붙는 더 단단한 유약층을 남깁니다. 붓 시유용 유약과 프릿이 많은 유약에서 특히 중요합니다. Digitalfire의 예는 유약물 1000 g에 3.75 g을 섞는 것이며, 믹서로 넣어야 합니다. CMC가 든 유약은 엡섬염으로 젤 상태가 되지 않으며, 미생물이 이 바인더를 먹고 살기 때문에 통 안에서 변하거나 냄새가 나기 시작할 수 있습니다.
+**CMC gum** (carboxymethyl cellulose) makes a slurry stickier and slower to dry, and leaves a harder coat that holds to the pot. It matters most for brushing glazes and glazes high in frit. Digitalfire's example blends 3.75 g into 1000 g of slurry, and it has to go in with a blender. A glaze with CMC will not gel with Epsom salts, and since microbes feed on the gum, it can change in the bucket and start to smell.
 
-**벤토나이트**는 아주 고운 점토로, 다른 입자가 가라앉지 않고 떠 있도록 도와줍니다. 덤벙 시유 유약은 보통 이를 위해 15~25%의 하소하지 않은 점토에 의지합니다. 점토가 부족한 레시피에는 벤토나이트 약 1~3%가 도움이 됩니다. Digitalfire는 점토가 15%를 넘는 유약에는 1%를 넘게 넣을 필요가 없을 것이라고 합니다.
+**Bentonite**, a very fine clay, helps hold the other particles in suspension. Dipping glazes usually rely on 15 to 25% raw clay for this. For a recipe short of clay, about 1 to 3% bentonite helps; Digitalfire says a glaze with more than 15% clay should not need bentonite at more than 1% of the dry glaze's weight.
 
 ## 시편과 라인 블렌드 {#testing}
 

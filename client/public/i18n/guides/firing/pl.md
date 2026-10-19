@@ -165,69 +165,69 @@ Należy się spodziewać różnic. Orton pisze: „Zwykle między górą a dołe
 
 :::orton
 
-## Wyłącznik stożkowy {#kiln-sitter}
+## The kiln sitter {#kiln-sitter lang=en}
 
-**Wyłącznik stożkowy**{{en: kiln sitter}} to mechaniczny wyłącznik na zewnątrz wielu prostych i starszych pieców, który wyłącza piec, gdy zegnie się mały stożek{{en: cone}}. Najbardziej znany jest Kiln-Sitter firmy Dawson. Ułatwia wypał, ale jest udogodnieniem, a nie urządzeniem zabezpieczającym.
+A **kiln sitter** is the mechanical switch, on the outside of many basic and older kilns, that turns the kiln off when a small cone bends. The best known is the Dawson Kiln-Sitter. It makes firing easier, but it is a convenience, not a safety device.
 
-### Jak działa
+### How it works
 
-Porcelanowa rurka sięga do wnętrza pieca. Na jej końcu mały stożek lub pręt stożkowy leży w poprzek dwóch metalowych podpórek, pod **prętem czujnika**, który obraca się na osi jak huśtawka wagowa. Na zewnątrz pieca drugi koniec pręta czujnika podtrzymuje ciężarek za pomocą małego zaczepu. Gdy stożek mięknie i zgina się do około 90°, pręt czujnika opada na tyle, by zwolnić ciężarek, ciężarek spada i zasilanie grzałek zostaje odcięte.
+A porcelain tube reaches into the kiln. At its end, a small cone or a bar lies across two metal supports, under a **sensing rod** that pivots like a seesaw. Outside the kiln, the other end of the rod holds up a weight by a small claw. When the cone softens and bends to about 90°, the rod drops far enough to release the weight, the weight falls, and the power to the elements is cut.
 
-Małe stożki i pręty stożkowe „dają równoważną obróbkę cieplną”. Orton zauważa, że wielu początkujących wybiera pręty, bo ich równy kształt ułatwia układanie ich za każdym razem tak samo. Mały stożek się zwęża, więc liczy się jego położenie: gdy pod prętem czujnika leży jego cienka część, piec wyłącza się w niższej temperaturze, a gdy gruba – w wyższej, z przesunięciem „nawet o 1/2 stożka”.
+Small cones and bars "give equivalent heat treatment". Orton notes that many beginners choose bars, because their even shape makes it easy to place them the same way every time. A small cone tapers, so where it sits matters: with its thin part under the rod the kiln shuts off cooler, and with its thick part hotter, a shift of "as much as 1/2 cone".
 
-### Jaki stożek włożyć do wyłącznika
+### Which cone goes in the sitter
 
-Źródła się różnią. Dawson, producent wyłącznika, zaleca ten sam numer co stożek docelowy na płycie, a stożek o jeden numer gorętszy tylko wtedy, gdy stożek na płycie pozostaje niezgięty. L&L zaleca stożek o jeden numer gorętszy niż stożki na płycie, bo wyłącznik znajduje się przy ścianie i grzałkach, dostaje więcej ciepła i ma skłonność do zbyt wczesnego wyłączania. Rozstrzygającą zasadę podaje Orton: „Ostatecznym sędzią procesu wypału jest stożek na płycie, a nie stożek ani pręt w wyłączniku Kiln-Sitter”.
-
-> [!NOTE]
-> Nasz punkt wyjścia: włożyć do wyłącznika mały stożek o tym samym numerze co docelowy, a na płycie ustawić zestaw stożków{{en: cone pack}}. Jeśli w chwili wyłączenia pieca stożek docelowy na płycie jest za mało zgięty, następnym razem użyć w wyłączniku stożka o jeden numer gorętszego albo ułożyć stożek grubszą częścią pod prętem czujnika. Jeśli jest zgięty za bardzo, postąpić odwrotnie.
-
-### Przygotowanie i kontrola przed każdym wypałem
-
-Procedura Dawsona, która służy też jako kontrola przed każdym wypałem:
-
-1. Wyłączyć wszystkie przełączniki. Sprawdzić, czy pręt czujnika porusza się swobodnie, jest wyśrodkowany w rurce i nie jest wygięty ani skorodowany. Jeśli porusza się opornie, Dawson zaleca wymianę zespołu rurki.
-2. Nałożyć pędzlem cienką warstwę wysokotemperaturowej **pobiałki** (powłoki, która zapobiega przywieraniu stopionego materiału) na podpórki stożka i na pręt czujnika w miejscu, gdzie dotyka stożka. Nigdy nie nakładać pobiałki na stożek ani na porcelanową rurkę.
-3. Płyty i wyroby ustawiać co najmniej 1 cal (25 mm) nad rurką lub pod nią, tak by nic nie mogło jej dotknąć, upaść na nią ani jej zablokować.
-4. Unieść ciężarek, docisnąć zaczep do spustu i położyć stożek lub pręt stożkowy płasko na podpórkach, przy metalowym progu, jak pokazuje instrukcja wyłącznika, za każdym razem tak samo. Sprawdzić to jeszcze raz przed zamknięciem pokrywy: „NIEWŁAŚCIWIE UŁOŻONY STOŻEK LUB PRĘT MOŻE SPOWODOWAĆ PRZEPALENIE”.
-5. Nastawić wyłącznik czasowy i wcisnąć przycisk, aż się zablokuje. Piec musi stać poziomo, a miejsce pod ciężarkiem musi być wolne, żeby ciężarek mógł spaść.
-
-### Wyłącznik czasowy
-
-Wiele wyłączników stożkowych, w tym modele LT firmy Dawson, ma **wyłącznik czasowy**: zegar, który wyłącza piec po ustawionym czasie, jako zabezpieczenie „na wypadek, gdyby KILN-SITTER zawiódł”. Zawsze należy go ustawiać na dłużej, niż ma trwać wypał. Źródła różnie określają zapas:
-
-Table: Na ile ustawić wyłącznik czasowy
-Label: Ustawienia wyłącznika czasowego
-
-| Źródło    | Ustawienie                                                                                                                                            |
-| --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Dawson    | O ½ godziny dłużej niż przewidywany czas wypału, dopóki nie pozna się pieca, później nawet tylko o ¼ godziny; nigdy nie ustawiać go powyżej 20 godzin |
-| L&L       | Za pierwszym razem bardzo długo, notując, ile trwa wypał; potem o około 1 godzinę dłużej                                                              |
-| Bracker's | O 30 minut do 1 godziny dłużej niż czas wypału                                                                                                        |
+Sources disagree. Dawson, who made the sitter, says to use the same number as the firing cone on the shelf, and to go one number hotter only if the shelf cone stays unbent. L&L says to use one number hotter than the shelf cones, because the sitter sits near the wall and the elements, gets more heat, and tends to shut off early. Orton settles the principle: "The shelf cone is the final judge of the firing process, not the Kiln-Sitter cone or bar."
 
 > [!NOTE]
-> Nasz punkt wyjścia: za pierwszym razem z dużym zapasem (w granicach 20 godzin na tarczy), potem o ½ do 1 godziny dłużej niż zapisany czas. Wyłącznik czasowy pokazuje też, ile trwał wypał: ustawiony na 7 i zatrzymany na 1 oznacza 6 godzin.
+> Our starting point: put a small cone of the same number as your target in the sitter, with a cone pack on the shelf. If the shelf firing cone is under-bent when the kiln shuts off, go one number hotter in the sitter next time, or set the thicker part of the cone under the rod. If it is over-bent, do the opposite.
 
-### Gdy wyłącza się za wcześnie lub za późno
+### Setting it up, and checks before every firing
 
-Po każdym wypale należy odczytać stożek z wyłącznika obok stożków z płyty.
+Dawson's procedure, which doubles as a check before every firing:
 
-Table: Odczyt wyłącznika po wypale
-Label: Problemy z wyłącznikiem stożkowym
+1. Turn all the switches off. Check that the sensing rod moves freely, sits centered in the tube and is not bent or corroded. If it is sluggish, Dawson says to replace the tube assembly.
+2. Brush a thin coat of high-fire **kiln wash** (a coating that stops melted material sticking) onto the cone supports and the rod where it touches the cone. Never put wash on the cone or the porcelain tube.
+3. Load shelves and ware at least 1 in (25 mm) above or below the tube, so nothing can touch, fall against or block it.
+4. Lift the weight, press the claw down onto the trigger, and lay the cone or bar flat on the supports against the metal step, as your sitter's manual shows, the same way every time. Check it again before closing the lid: "AN IMPROPERLY PLACED CONE OR BAR COULD CAUSE AN OVERFIRING."
+5. Set the limit timer and push in the plunger until it locks. Keep the kiln level and the space under the weight clear, so the weight can fall.
 
-| Co widać                                                      | Prawdopodobna przyczyna                                                                                        | Co zrobić                                                                        |
-| ------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
-| Wyłącznik zadziałał, stożek docelowy na płycie za mało zgięty | W wyłączniku było goręcej niż na płycie (znajduje się przy ścianie)                                            | Stożek o jeden numer gorętszy w wyłączniku lub grubsza część pod prętem czujnika |
-| Stożek w wyłączniku zgiął się znacznie ponad 90°              | Pod koniec temperatura rosła za szybko                                                                         | Obniżyć ustawienia przełączników, żeby temperatura rosła wolniej (Dawson)        |
-| Stożek w wyłączniku się nie zgiął albo stopił się w bryłkę    | Sam wyłącznik: złe wyregulowanie, wygięty lub skorodowany pręt czujnika albo coś utkwiło w rurce lub przy niej | Przed kolejnym wypałem sprawdzić i wyregulować wyłącznik według jego instrukcji  |
-| Za każdym razem za wcześnie lub za późno                      | Rozregulowanie lub zużyty pręt czujnika                                                                        | Sprawdzić sprawdzianem; przesunąć płytkę spustową                                |
+### The limit timer
 
-Do sprawdzania wyregulowania Dawson używa **sprawdzianu**, który przytrzymuje pręt czujnika tam, gdzie zostawiłby go całkowicie zgięty stożek; przy zaczepie powinien wtedy być „luz 1/16 cala” (około 1,6 mm). Należy to sprawdzać co 30 wypałów. Zasada Ceramics Monthly: jeśli piec wyłącza się za wcześnie, przesunąć płytkę spustową lekko w górę; jeśli za późno, lekko w dół. Cokolwiek robi wyłącznik, „Zawsze należy ufać dużym stożkom kontrolnym bardziej niż małym stożkom z wyłącznika”.
+Many sitters, including Dawson's LT models, have a **limit timer**: a clock that turns the kiln off after a set time, as a backup "in case the KILN-SITTER fails". It should always be set longer than the firing is expected to take. Sources set the margin differently:
+
+Table: How long to set the limit timer
+Label: Limit timer settings
+
+| Source    | Setting                                                                                                                |
+| --------- | ---------------------------------------------------------------------------------------------------------------------- |
+| Dawson    | ½ hour longer than the expected firing time until you know the kiln, later ¼ hour longer; never set it beyond 20 hours |
+| L&L       | Very high the first time, noting how long the firing takes; after that, about 1 hour longer                            |
+| Bracker's | 30 minutes to 1 hour longer than the firing time                                                                       |
+
+> [!NOTE]
+> Our starting point: generous the first time (within the dial's 20 hours), then ½ to 1 hour longer than the time you recorded. The timer also tells you how long a firing took: set at 7 and ending at 1 means 6 hours.
+
+### When it shuts off early or late
+
+After each firing, read the sitter cone beside the shelf cones.
+
+Table: Reading the sitter after a firing
+Label: Kiln sitter problems
+
+| What you see                                    | Likely cause                                                                                           | What to do                                                       |
+| ----------------------------------------------- | ------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------- |
+| Sitter tripped, shelf firing cone under-bent    | The sitter ran hotter than the shelf (it sits near the wall)                                           | One cone hotter in the sitter, or the thicker part under the rod |
+| Sitter cone sagged well past 90°                | The kiln climbed too fast near the end                                                                 | Lower the switch settings, so the climb is slower (Dawson)       |
+| Sitter cone did not bend, or melted into a blob | The sitter itself: poor adjustment, a bent or corroded rod, or something lodged in or against the tube | Check and adjust the sitter by its manual before firing again    |
+| Early or late every time                        | Out of adjustment, or a worn rod                                                                       | Check with the firing gauge; move the trigger plate              |
+
+To check the adjustment, Dawson uses a **firing gauge** that holds the rod where a fully bent cone would leave it; there should then be "1/16th-inch clearance" (about 1.6 mm) at the claw. Check it every 30 firings. Ceramics Monthly's rule: if the kiln shuts off early, move the trigger plate up slightly; if late, move it down slightly. Whatever the sitter does, "Always trust large witness cones over small sitter cones."
 
 > [!WARNING]
-> **Wyłącznik stożkowy nie jest urządzeniem zabezpieczającym.** Instrukcja Dawsona mówi, że „NIE jest przeznaczony do działania jako niezawodny wyłącznik bezpieczeństwa, a pieca NIE należy pozostawiać bez nadzoru dłużej niż przez przewidywany czas wypału”. Coś tak prostego jak wyrób surowy{{en: greenware}}, który przewróci się na rurkę, „może spowodować przepalenie”. Trzeba być przy piecu, by go sprawdzić, gdy wypał powinien się kończyć, i nigdy nie wypalać nad niczym palnym ani w pobliżu czegokolwiek palnego, np. drewnianej podłogi czy wykładziny.
+> **A kiln sitter is not a safety device.** Dawson's manual says it "is NOT intended to perform as a fail-safe shut-off device and your kiln should NOT be left unattended beyond the estimated firing time." Something as simple as greenware falling against the tube "might cause an over-firing". Be there to check the kiln when it should be finishing, and never fire it over or near anything that burns, such as a wood floor or carpet.
 
-Wyłącznik jest przeznaczony do wypałów „do stożka 8 włącznie”. Sam nie potrafi utrzymać temperatury ani powoli schładzać pieca. Z wprawą i dziennikiem wypałów można jednak, jak to ujmuje Digitalfire, „stać się sterownikiem”: obserwować stożki i ręcznie przestawiać przełączniki.
+The sitter is built for firings "up to and including Cone 8". It cannot hold a temperature or cool slowly by itself. With practice and a log, though, you can "become the controller", as Digitalfire puts it: watch the cones and turn the switches by hand.
 
 :::
 
@@ -281,92 +281,92 @@ Label: Poprawki następnego wypału
 
 :::sk
 
-## Wypał według stożków SK {#sk-cones}
+## Firing to SK cones {#sk-cones lang=en}
 
-Stożki SK to stożki pirometryczne{{en: pyrometric cone}} wykonane według japońskiej normy JIS R 8101, sprzedawane w Japonii przez dystrybutorów takich jak Yuko Trading (有恒商事). Jak każdy stożek, stożek SK mierzy pracę cieplną{{en: heatwork}}, a nie samą temperaturę: mięknie i zgina się, gdy wyroby otrzymały dość ciepła, a odczytuje się, jak bardzo się zgiął. Stożki kontrolne{{en: witness cone}}, odczytywanie, jak bardzo stożek się zgiął, i przetrzymania{{en: hold}} działają przy nim tak samo jak przy każdym stożku. Ta sekcja przy każdym stożku podaje jego system i nigdy nie zamienia numeru SK na numer innego systemu: numery różnych serii stożków nie są zamienne.
+SK cones are the pyrometric cones made to Japan's standard, JIS R 8101, and sold in Japan by dealers such as Yuko Trading (有恒商事). Like any cone, an SK cone measures heatwork, not temperature alone: it softens and bends over when the ware has had enough heat, and you read how far it bent. Witness cones, reading how far a cone has bent, and holds work for it as for any cone. This section names each cone's system, and never turns an SK number into another system's number: the numbers of different cone series are not interchangeable.
 
 > [!NOTE]
-> Zawsze należy pisać „SK” przed numerem. Wiele starszych japońskich receptur podaje tylko „SK 8” lub „SK 9”, nie mówiąc, czyj to stożek. Stożki z Kioto i stożki SK według JIS mają te same numery, ale zginają się w różnych temperaturach (zob. Stożki z Kioto, niżej).
+> Always write "SK" before the number. Many older Japanese recipes say only "SK 8" or "SK 9" without saying whose cone. Kyoto cones and SK cones to JIS carry the same numbers but bend at different temperatures (see Kyoto cones, below).
 
-### Duże stożki
+### The large cones
 
-Norma przewiduje dwa rozmiary. Duże stożki (大型コーン) są „używane głównie do pomiaru stopnia wypalenia” (焼度測定), a tego właśnie potrzebuje ceramik. Małe stożki (od SK 26 do SK 42, na górze zakresu) są „używane głównie w badaniach ogniotrwałości” i nie są tu omawiane. Poniższa tabela podaje duże stożki od SK 022 do SK 20.
+The standard has two sizes. Large cones (大型コーン) are "mainly used for measuring the degree of firing" (焼度測定), which is what a potter wants. Small cones (SK 26 to SK 42, at the top of the range) are "mainly used for refractoriness tests" and are not covered here. The table below gives the large cones from SK 022 to SK 20.
 
-Numery biegną od SK 022, najchłodniejszego, do SK 20 w tej tabeli. Między SK 015 a SK 6 drukowane numery mają literę „a” (SK 015a, SK 6a); należy je pisać tak, jak są wydrukowane.
+The numbers run from SK 022, the coolest, up to SK 20 here. Between SK 015 and SK 6 the printed numbers carry an "a" (SK 015a, SK 6a); write it as printed.
 
-### Ustawianie dużych stożków
+### Setting large cones
 
-Każdy duży stożek należy osadzić w podstawce lub w placku z gliny, pochylony w stronę ściany zginania. Jak przy każdym stożku, wysokość i pochylenie należy zachować takie same w każdym wypale, bo różnica w jednym lub drugim zmienia to, jak bardzo stożek się zegnie. Trzy stożki zestawu{{en: cone pack}} (niżej) należy ustawić razem, głęboko w piecu, blisko środka wsadu, gdzie otrzymują to samo ciepło co wyroby, a jednak tam, gdzie widać je przez wziernik; przed zamknięciem pieca należy sprawdzić, czy widać wszystkie trzy.
+Set each large cone in a plaque or a pat of clay, leaning toward its bending face. As with any cone, keep the height and the lean the same from firing to firing, because a difference in either changes how far it bends. Set the three cones of the pack (below) together, deep in the kiln near the middle of the load, where they get the heat the ware gets, yet where you can see them through a peephole; before you close the kiln, check that you can see all three.
 
-### Stożek ostrzegawczy, docelowy i zabezpieczający
+### Guide, firing and guard cones
 
-Stożki sprzedaje się i ustawia po trzy: stożek ostrzegawczy, stożek docelowy i stożek zabezpieczający. Jako stożek docelowy należy wziąć numer SK, który podaje receptura lub glina, jako stożek ostrzegawczy następny chłodniejszy stożek (jeden wiersz wyżej w tabeli), a jako stożek zabezpieczający następny gorętszy. Gdy stożek ostrzegawczy zaczyna się zginać, koniec jest blisko; gdy zegnie się stożek zabezpieczający, wypał poszedł za daleko.
+Cones are sold and set as three: a guide cone, a firing cone at the target, and a guard cone. Take the firing cone as the SK number your recipe or clay names, the guide cone as the next cooler cone (one row up in the table) and the guard cone as the next hotter one. When the guide cone starts to bend, the end is near; when the guard cone bends, the firing has gone too far.
 
-### Tabela stożków SK
+### The SK chart
 
-Table: Duże stożki SK (JIS R 8101): nominalna temperatura (JIS) każdego z nich
-Label: Tabela stożków SK
+Table: SK large cones (JIS R 8101): the nominal (JIS) temperature of each
+Label: SK chart
 
-| Stożek  | Temperatura nominalna (JIS) |
-| ------- | --------------------------: |
-| SK 022  |         {{1112 °F; 600 °C}} |
-| SK 021  |         {{1202 °F; 650 °C}} |
-| SK 020  |         {{1238 °F; 670 °C}} |
-| SK 019  |         {{1274 °F; 690 °C}} |
-| SK 018  |         {{1310 °F; 710 °C}} |
-| SK 017  |         {{1346 °F; 730 °C}} |
-| SK 016  |         {{1382 °F; 750 °C}} |
-| SK 015a |         {{1454 °F; 790 °C}} |
-| SK 014a |         {{1499 °F; 815 °C}} |
-| SK 013a |         {{1535 °F; 835 °C}} |
-| SK 012a |         {{1571 °F; 855 °C}} |
-| SK 011a |         {{1616 °F; 880 °C}} |
-| SK 010a |         {{1652 °F; 900 °C}} |
-| SK 09a  |         {{1688 °F; 920 °C}} |
-| SK 08a  |         {{1724 °F; 940 °C}} |
-| SK 07a  |         {{1760 °F; 960 °C}} |
-| SK 06a  |         {{1796 °F; 980 °C}} |
-| SK 05a  |        {{1832 °F; 1000 °C}} |
-| SK 04a  |        {{1868 °F; 1020 °C}} |
-| SK 03a  |        {{1904 °F; 1040 °C}} |
-| SK 02a  |        {{1940 °F; 1060 °C}} |
-| SK 01a  |        {{1976 °F; 1080 °C}} |
-| SK 1a   |        {{2012 °F; 1100 °C}} |
-| SK 2a   |        {{2048 °F; 1120 °C}} |
-| SK 3a   |        {{2084 °F; 1140 °C}} |
-| SK 4a   |        {{2120 °F; 1160 °C}} |
-| SK 5a   |        {{2156 °F; 1180 °C}} |
-| SK 6a   |        {{2192 °F; 1200 °C}} |
-| SK 7    |        {{2246 °F; 1230 °C}} |
-| SK 8    |        {{2282 °F; 1250 °C}} |
-| SK 9    |        {{2336 °F; 1280 °C}} |
-| SK 10   |        {{2372 °F; 1300 °C}} |
-| SK 11   |        {{2408 °F; 1320 °C}} |
-| SK 12   |        {{2462 °F; 1350 °C}} |
-| SK 13   |        {{2516 °F; 1380 °C}} |
-| SK 14   |        {{2570 °F; 1410 °C}} |
-| SK 15   |        {{2615 °F; 1435 °C}} |
-| SK 16   |        {{2660 °F; 1460 °C}} |
-| SK 17   |        {{2696 °F; 1480 °C}} |
-| SK 18   |        {{2732 °F; 1500 °C}} |
-| SK 19   |        {{2768 °F; 1520 °C}} |
-| SK 20   |        {{2786 °F; 1530 °C}} |
+| Cone    | Nominal (JIS) temperature |
+| ------- | ------------------------: |
+| SK 022  |       {{1112 °F; 600 °C}} |
+| SK 021  |       {{1202 °F; 650 °C}} |
+| SK 020  |       {{1238 °F; 670 °C}} |
+| SK 019  |       {{1274 °F; 690 °C}} |
+| SK 018  |       {{1310 °F; 710 °C}} |
+| SK 017  |       {{1346 °F; 730 °C}} |
+| SK 016  |       {{1382 °F; 750 °C}} |
+| SK 015a |       {{1454 °F; 790 °C}} |
+| SK 014a |       {{1499 °F; 815 °C}} |
+| SK 013a |       {{1535 °F; 835 °C}} |
+| SK 012a |       {{1571 °F; 855 °C}} |
+| SK 011a |       {{1616 °F; 880 °C}} |
+| SK 010a |       {{1652 °F; 900 °C}} |
+| SK 09a  |       {{1688 °F; 920 °C}} |
+| SK 08a  |       {{1724 °F; 940 °C}} |
+| SK 07a  |       {{1760 °F; 960 °C}} |
+| SK 06a  |       {{1796 °F; 980 °C}} |
+| SK 05a  |      {{1832 °F; 1000 °C}} |
+| SK 04a  |      {{1868 °F; 1020 °C}} |
+| SK 03a  |      {{1904 °F; 1040 °C}} |
+| SK 02a  |      {{1940 °F; 1060 °C}} |
+| SK 01a  |      {{1976 °F; 1080 °C}} |
+| SK 1a   |      {{2012 °F; 1100 °C}} |
+| SK 2a   |      {{2048 °F; 1120 °C}} |
+| SK 3a   |      {{2084 °F; 1140 °C}} |
+| SK 4a   |      {{2120 °F; 1160 °C}} |
+| SK 5a   |      {{2156 °F; 1180 °C}} |
+| SK 6a   |      {{2192 °F; 1200 °C}} |
+| SK 7    |      {{2246 °F; 1230 °C}} |
+| SK 8    |      {{2282 °F; 1250 °C}} |
+| SK 9    |      {{2336 °F; 1280 °C}} |
+| SK 10   |      {{2372 °F; 1300 °C}} |
+| SK 11   |      {{2408 °F; 1320 °C}} |
+| SK 12   |      {{2462 °F; 1350 °C}} |
+| SK 13   |      {{2516 °F; 1380 °C}} |
+| SK 14   |      {{2570 °F; 1410 °C}} |
+| SK 15   |      {{2615 °F; 1435 °C}} |
+| SK 16   |      {{2660 °F; 1460 °C}} |
+| SK 17   |      {{2696 °F; 1480 °C}} |
+| SK 18   |      {{2732 °F; 1500 °C}} |
+| SK 19   |      {{2768 °F; 1520 °C}} |
+| SK 20   |      {{2786 °F; 1530 °C}} |
 
-Każda wartość jest nominalna (JIS): to temperatura, którą norma podaje dla stożka, wydrukowana w tabeli Yuko Trading. Tabela nie podaje szybkości grzania. Norma podaje temperatury odniesienia. Przy typowej dla ceramików szybkości około 100 °C/h miejski instytut w Kioto zmierzył, że jego własne stożki z Kioto zginają się w temperaturze o 40–70 °C niższej niż wartość JIS dla tego samego numeru; dla stożków SK według JIS nie znaleźliśmy takich pomiarów. Należy ustawić stożek kontrolny i porównać.
+Every figure is nominal (JIS): the temperature the standard gives for the cone, as printed in Yuko Trading's table. The table does not print a heating rate. The standard gives reference temperatures. At a potter's rate of about 100 °C/h, Kyoto's municipal institute measured its own Kyoto cones bending 47–79 °C cooler than the JIS figure for the same number; we found no such measurements for SK cones to JIS. Set a witness cone and compare.
 
-### Stożki z Kioto
+### Kyoto cones
 
-Stożki z Kioto (京都ゼーゲル), wytwarzane przez miejski instytut w Kioto, nie są już produkowane: według doniesień prasowych instytut zakończył produkcję z końcem roku budżetowego 2009. Mają te same numery co stożki SK według JIS, ale zginają się w niższej temperaturze: stożek z Kioto przeważnie zgina się mniej więcej w temperaturze stożka SK według JIS o dwa numery niższego. Receptura z Kioto, która podaje „SK 8”, może mieć na myśli stożek z Kioto. Instytut opublikował wskazówki dla ceramików przechodzących ze stożków z Kioto na stożki Ortona i swój stożek z Kioto SK 12 zastępuje stożkiem Ortona 10; to wybór instytutu, oparty na jego własnych pomiarach przy 100 °C/h, i nie dotyczy żadnego innego stożka.
+Kyoto cones (京都ゼーゲル), made by Kyoto's municipal institute, are no longer made: news reports say the institute ended production at the close of fiscal 2009. They carry the same numbers as SK cones to JIS but bend cooler: a Kyoto cone bends at about the temperature of the SK cone to JIS two or three numbers lower. A recipe from Kyoto that says "SK 8" may mean a Kyoto cone. The institute has published advice for potters moving from Kyoto cones to Orton cones, and substitutes Orton cone 10 for its own Kyoto SK 12; that is the institute's choice from its own measurements at 100 °C/h, and applies to no other cone.
 
-### Stożki Ortona sprzedawane w Japonii
+### Orton cones sold in Japan
 
-Samonośne stożki Ortona są sprzedawane w Japonii pod nazwą 立つゼーゲル („stojący Seger”), bo nie potrzebują podstawki ani stojaka. To stożki Ortona, z numerami Ortona i tabelą Ortona (wyżej): do takiego stożka należy wypalać tylko według jego numeru Ortona, a stożki SK i stożki Ortona trzymać w osobnych zestawach, nigdy w jednym.
+Orton self-supporting cones are sold in Japan under the name 立つゼーゲル ("standing Seger"), because they need no plaque or stand. They are Orton cones, with Orton's numbers and Orton's chart (above): fire to one only by its Orton number, and keep SK and Orton cones in separate packs, never in the same one.
 
-### Źródła dotyczące stożków SK
+### Sources for SK cones
 
-- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (tabela stożków SK, sprawdzono 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
-- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (obowiązuje, ponownie zatwierdzona 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
-- [Kyoto Municipal Institute of Industrial Technology and Culture: na co zwrócić uwagę, przechodząc ze stożków z Kioto na stożki Ortona](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
+- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (the SK table, checked 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
+- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (in force, reconfirmed 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
+- [Kyoto Municipal Institute of Industrial Technology and Culture: points to note when moving from Kyoto cones to Orton cones](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
 
 :::
 

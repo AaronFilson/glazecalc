@@ -472,7 +472,6 @@
     "expansionRises": "Apskaičiuotas šios glazūros šiluminis plėtimasis padidėja nuo {was} iki {now}.",
     "expansionRisesProbably": "Jei senoji glazūra vos tiko jūsų molio masei, ši tikriausiai trūkinės, kartais praėjus kelioms savaitėms.",
     "expansionRisesMay": "Jei senoji glazūra vos tiko jūsų molio masei, ši gali trūkinėti, kartais praėjus kelioms savaitėms.",
-    "expansionRisesFix": "Trūkinėjimas silpnina dirbinius, ir jo nepatariama turėti paviršiuose, kurie liečiasi su maistu. Dalį natrio ir kalio pakeitus mažiau besiplečiančiais fliusais (boru, ličiu, magniu ar kalciu), šiluminis plėtimasis sumažėja; kartais siūloma pridėti silicio dioksido, bet šaltiniai nesutaria.",
     "expansionFalls": "Apskaičiuotas šios glazūros šiluminis plėtimasis sumažėja nuo {was} iki {now}. Kai jis šiek tiek mažesnis, glazūra paprastai geriau atspari trūkinėjimui.",
     "expansionFallsProbably": "Kai jis daug mažesnis, glazūra tikriausiai atšoks, nuo kraštų ir briaunų atskeldama aštrias skeveldras.",
     "expansionFallsCan": "Kai jis daug mažesnis, glazūra gali atšokti, nuo kraštų ir briaunų atskeldama aštrias skeveldras.",
@@ -904,7 +903,6 @@
     "foodSurface": "Maisto paviršiui (vidinė glazūra)",
     "liner": {
       "note": "Tinkamumas liestis su maistu priklauso nuo to, ar ši glazūra išdegta iki piroskopo, su kuriuo ji buvo išbandyta: nepakankamai išdegusi glazūra gali išskirti metalų.",
-      "range": "Nurodytas intervalas, todėl išbandykite apatiniame intervalo gale, kur ji mažiausiai išsilydo.",
       "untested": "Dar nė vienas piroskopas nepažymėtas kaip išbandytas.",
       "test": "Tik jūsų pačių išdegtų indų laboratorinis metalų išsiskyrimo tyrimas parodo, ar ji saugi liestis su maistu."
     },

@@ -163,55 +163,55 @@ Label: Malla del tamiz
 | Esmaltes con colorantes{{en: colorants}} como el cobalto o el hierro | Malla de 100 a 120       |
 | Esmaltes de ceniza y otros con materiales gruesos                    | Malla de 60 a 80         |
 
-## Densidad {#specific-gravity}
+## Specific gravity {#specific-gravity lang=en}
 
-La **densidad**{{en: specific gravity, SG}} indica cuánto polvo hay en la suspensión{{en: slurry}}. Es el peso de un volumen de esmalte{{en: glaze}} dividido entre el peso del mismo volumen de agua. La del agua es 1,00, y un esmalte de {{SG 1.45}} pesa 145 g por cada 100 mL. Preparar el esmalte con una densidad medida es la forma de conseguir siempre la misma consistencia y la misma capa. No tiene unidades, así que es la misma en gramos que en onzas.
+**Specific gravity** (SG) tells you how much powder is in your slurry. It is the weight of a volume of glaze divided by the weight of the same volume of water. Water is 1.00, and a glaze at {{SG 1.45}} weighs 145 g per 100 mL. Mixing to a measured SG is how you get the same thickness, and the same coat, every time. It has no units, so it is the same in grams or ounces.
 
-### Cómo medirla pesando 100 mL
+### Measure it by weighing 100 mL
 
-1. Remueva el esmalte para que no quede nada sedimentado.
-2. Ponga en la báscula un **cilindro graduado** de 100 mL (un tubo alto con marcas para medir) o una jeringa de 100 mL, y tárelo.
-3. Llénelo de esmalte hasta exactamente 100 mL, leyendo la marca a la altura de los ojos.
-4. Péselo y divida los gramos entre 100: 145 g equivalen a una densidad de 1,45.
+1. Stir the glaze so nothing has settled.
+2. Put a 100 mL **graduated cylinder** (a tall, marked measuring tube) or a 100 mL syringe on the scale, and tare it.
+3. Fill it with glaze to exactly 100 mL, reading the mark at eye level.
+4. Weigh it and divide the grams by 100: 145 g is SG 1.45.
 
-Digitalfire también marca en un vaso el nivel de 500 g de agua, lo llena de esmalte hasta la marca y divide el peso entre 500; una medida más grande y más llena es más precisa. Un **densímetro**, un flotador que se lee según el nivel al que flota en el esmalte, es rápido, pero puede dar lecturas erróneas con esmaltes espesos o gelificados{{en: gelled}}. Los densímetros británicos, como el de Potclays, marcan grados Baumé (°Bé). Según nuestros cálculos, densidad = 145 ÷ (145 − °Bé), así que 46 °Bé equivalen a unos 1,46. Los libros británicos antiguos dan el **peso por pinta**, las onzas que pesa una pinta imperial de esmalte: divídalo entre 20, de modo que 29 oz equivalen a una densidad de 1,45 aproximadamente (también según nuestros cálculos).
+Digitalfire also marks a cup at the level of 500 g of water, fills it to the mark with glaze, and divides the weight by 500; a bigger, fuller measure is more accurate. A **hydrometer**, a float read where it sits in the glaze, is quick but can misread thick or gelled glazes. UK hydrometers, such as Potclays', read in degrees Baumé (°Bé). By our arithmetic, SG = 145 ÷ (145 − °Bé), so 46 °Bé is about 1.46. Older UK books give a **pint weight**, the ounces in an imperial pint of glaze: divide it by 20, so 29 oz is about SG 1.45 (also our arithmetic).
 
-### Qué valores buscar
+### What to aim for
 
-Las fuentes no coinciden, sobre todo en la aplicación a pincel y a pistola, donde el proveedor británico Potclays da cifras mucho más altas (sus propias cifras son «solo orientativas»). Tome cada cifra como un punto de partida. El consejo central de Digitalfire es encontrar la densidad y el grado de gelificación que funcionan para cada esmalte, y después repetirlos y anotarlos.
+Sources disagree, most of all on brushing and spraying, where the UK supplier Potclays gives much higher figures (its own are "for guidance only"). Treat every number as a starting point. Digitalfire's core advice is to find the SG and gelling that work for each glaze, then repeat them and write them down.
 
-Table: Densidades objetivo, donde las fuentes no coinciden
-Label: Densidades objetivo
+Table: Specific gravity targets, where sources disagree
+Label: Specific gravity targets
 
-| Uso           | Digitalfire y Glazy                                                                                                                                                                         | Potclays (Reino Unido)                                 | Punto de partida seguro                                                        |
-| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------ | ------------------------------------------------------------------------------ |
-| Por inmersión | De {{SG 1.40}} (para una inmersión de 5 segundos) a {{SG 1.50}} (para una inmersión de 1 segundo); los esmaltes preparados en casa y gelificados dan mejor resultado con {{SG 1.43–1.45}}   | Transparente: {{SG 1.46–1.48}}; con color: {{SG 1.61}} | {{SG 1.45}}; diluya hasta {{SG 1.43}} y gelifíquelo si gotea                   |
-| A pincel      | De {{SG 1.25}} (transparente diluido) a {{SG 1.55}} (detalles oscuros)                                                                                                                      | {{SG 1.71–1.81}}                                       | Siga las indicaciones del producto; use goma CMC o un medio para pincel        |
-| A pistola     | Sin cifra; Hopper, en un artículo para Ceramic Arts Network, habla de una mezcla mucho más diluida, con un defloculante{{en: deflocculant}} (un aditivo que hace más líquida la suspensión) | {{SG 1.71}}                                            | No hay una cifra fiable; aplique a pistola solo en una cabina de pulverización |
+| Use      | Digitalfire and Glazy                                                                                                                 | Potclays (UK)                               | Safe starting point                                     |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- | ------------------------------------------------------- |
+| Dipping  | {{SG 1.40}} (for a 5-second dip) to {{SG 1.50}} (for a 1-second dip); home-mixed glazes that are gelled do best at {{SG 1.43–1.45}}   | Clear {{SG 1.46–1.48}}; colored {{SG 1.61}} | {{SG 1.45}}; thin to {{SG 1.43}} and gel it if it drips |
+| Brushing | {{SG 1.25}} (thin clear) to {{SG 1.55}} (dark detail)                                                                                 | {{SG 1.71–1.81}}                            | Follow the product; use CMC gum or a brushing medium    |
+| Spraying | No figure; Hopper, writing for Ceramic Arts Network, says much thinner, with a deflocculant (an additive that makes a slurry runnier) | {{SG 1.71}}                                 | No reliable number; spray only in a spray booth         |
 
-Para comprobar a ojo un esmalte para inmersión, AMACO hace una inmersión de 5 segundos y busca una capa de un grosor parecido al de una moneda estadounidense de diez centavos. Digitalfire cuece probetas{{en: test tiles}} sumergidas 5 segundos para comprobarlo.
+To check a dipping glaze by eye, AMACO dips for 5 seconds and looks for a coat about as thick as a US dime. Digitalfire fires tiles dipped for 5 seconds to check.
 
-### Agua para una densidad objetivo: nuestra estimación
+### Water for a target SG: our estimate
 
-La tabla siguiente es un cálculo nuestro, no de una fuente. Supone que las partículas del polvo tienen una densidad de 2,6 g por cm³, lo cual es una suposición, no una medición. La arcilla, los materiales solubles y la gelificación cambian un esmalte real, así que úsela para empezar y después mida. Como comprobación, predice {{SG 1.44}} para pesos iguales de polvo y agua, cerca del valor que midió Digitalfire, {{SG 1.46}}. También muestra que con 70 a 80 mL por cada 100 g se empieza por encima de {{SG 1.50}}, más espeso de lo necesario.
+The table below is our own arithmetic, not a source's. It assumes the powder's particles have a density of 2.6 g per cm³, which is an assumption, not a measurement. Clay, soluble materials and gelling all change a real glaze, so use it to start, then measure. As a check, it predicts {{SG 1.44}} for equal weights of powder and water, close to Digitalfire's measured {{SG 1.46}}. It also shows that 70 to 80 mL per 100 g starts you above {{SG 1.50}}, thicker than you need.
 
-Table: Agua para una densidad objetivo (nuestra estimación)
-Label: Agua para una densidad objetivo
+Table: Water for a target specific gravity (our estimate)
+Label: Water for a target specific gravity
 
-| Objetivo    | Por 100 g de polvo | Por kilogramo |                     Por libra |
-| ----------- | -----------------: | ------------: | ----------------------------: |
-| {{SG 1.40}} |        unos 115 mL |  unos 1150 mL | unas 18 fl oz estadounidenses |
-| {{SG 1.45}} |         unos 98 mL |   unos 980 mL | unas 15 fl oz estadounidenses |
-| {{SG 1.50}} |         unos 85 mL |   unos 850 mL | unas 13 fl oz estadounidenses |
-| {{SG 1.60}} |         unos 64 mL |   unos 640 mL | unas 10 fl oz estadounidenses |
+| Target      | Per 100 g of powder |  Per kilogram |         Per pound |
+| ----------- | ------------------: | ------------: | ----------------: |
+| {{SG 1.40}} |        about 115 mL | about 1150 mL | about 18 US fl oz |
+| {{SG 1.45}} |         about 98 mL |  about 980 mL | about 15 US fl oz |
+| {{SG 1.50}} |         about 85 mL |  about 850 mL | about 13 US fl oz |
+| {{SG 1.60}} |         about 64 mL |  about 640 mL | about 10 US fl oz |
 
-### Sales de Epsom, goma CMC y bentonita
+### Epsom salts, CMC gum and bentonite
 
-Las **sales de Epsom** (sulfato de magnesio) hacen que un esmalte gelifique ligeramente cuando está en reposo y vuelva a fluir cuando se remueve. Esto se llama **flocular**{{en: flocculating}} el esmalte, y un esmalte que se comporta así es **tixotrópico**{{en: thixotropic}}: se aplica de forma más uniforme, gotea menos y sedimenta menos. Digitalfire propone empezar con unos 2 g por galón una vez que la densidad sea la correcta (más o menos 0,5 g por litro, según nuestra conversión) y ajustar la cantidad cada vez que prepare el esmalte, ya que ninguna receta debería fijar la dosis. Le recomendamos disolverlas antes en un poco de agua caliente. En un ejemplo de Digitalfire, un esmalte de {{SG 1.45}} goteaba, así que se le añadió agua hasta bajarlo a {{SG 1.43}}, las sales de Epsom lo gelificaron hasta volver a dejarlo cremoso, y se aplicó de forma uniforme. Una comprobación aproximada: remueva, pare y observe. Un esmalte gelificado sigue moviéndose unos 2 o 3 segundos; luego se detiene y retrocede un poco.
+**Epsom salts** make a glaze gel slightly when it stands still and flow again when it is stirred. This is called **flocculating** it, and a glaze that behaves this way is **thixotropic**: it goes on more evenly, drips less and settles less. Digitalfire suggests starting at about 2 g per gallon once the SG is right (roughly 0.5 g per liter, our conversion) and tuning the amount each time you mix, since no recipe should fix the dose. We suggest dissolving it in a little hot water first. In a Digitalfire example, a glaze at {{SG 1.45}} dripped, so water brought it down to {{SG 1.43}} and Epsom salts gelled it back to creamy, and it went on evenly. A rough check: stir, stop and watch. A gelled glaze moves on for about 2 or 3 seconds, then stops and springs back a little.
 
-La **goma CMC** (carboximetilcelulosa) hace la suspensión más pegajosa y más lenta en secar, y deja una capa más dura que se adhiere a la pieza. Importa sobre todo en los esmaltes para pincel y en los que llevan mucha frita{{en: frit}}. En el ejemplo de Digitalfire se incorporan 3,75 g a 1000 g de suspensión, y hay que añadirla con batidora. Un esmalte con CMC no gelifica con sales de Epsom y, como los microbios se alimentan de la goma, puede cambiar en el cubo y empezar a oler mal.
+**CMC gum** (carboxymethyl cellulose) makes a slurry stickier and slower to dry, and leaves a harder coat that holds to the pot. It matters most for brushing glazes and glazes high in frit. Digitalfire's example blends 3.75 g into 1000 g of slurry, and it has to go in with a blender. A glaze with CMC will not gel with Epsom salts, and since microbes feed on the gum, it can change in the bucket and start to smell.
 
-La **bentonita**, una arcilla muy fina, ayuda a mantener en suspensión las demás partículas. Para ello, los esmaltes para inmersión suelen contar con un 15 a 25 % de arcilla cruda. En una receta con poca arcilla, ayuda alrededor de un 1 a 3 % de bentonita; según Digitalfire, un esmalte con más de un 15 % de arcilla no debería necesitar más de un 1 %.
+**Bentonite**, a very fine clay, helps hold the other particles in suspension. Dipping glazes usually rely on 15 to 25% raw clay for this. For a recipe short of clay, about 1 to 3% bentonite helps; Digitalfire says a glaze with more than 15% clay should not need bentonite at more than 1% of the dry glaze's weight.
 
 ## Probetas y mezclas lineales {#testing}
 

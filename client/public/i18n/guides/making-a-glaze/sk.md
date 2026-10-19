@@ -163,55 +163,55 @@ Label: Sito (mesh)
 | Glazúry s farbivami{{en: colorants}}, napríklad s kobaltom alebo železom | 100 – 120 mesh      |
 | Popolové glazúry a iné s hrubozrnnými surovinami                         | 60 – 80 mesh        |
 
-## Relatívna hustota {#specific-gravity}
+## Specific gravity {#specific-gravity lang=en}
 
-**Relatívna hustota**{{en: specific gravity}} (SG) vám povie, koľko prášku je v rozmiešanej glazúre{{en: slurry}}. Je to hmotnosť určitého objemu glazúry{{en: glaze}} vydelená hmotnosťou rovnakého objemu vody. Voda má hodnotu 1,00; ak je {{SG 1.45}}, glazúra váži 145 g na 100 mL. Keď glazúru zakaždým namiešate na nameranú relatívnu hustotu, dostanete vždy rovnako hustú glazúru a rovnako hrubú vrstvu. Relatívna hustota nemá jednotky, takže je rovnaká v gramoch aj v unciach.
+**Specific gravity** (SG) tells you how much powder is in your slurry. It is the weight of a volume of glaze divided by the weight of the same volume of water. Water is 1.00, and a glaze at {{SG 1.45}} weighs 145 g per 100 mL. Mixing to a measured SG is how you get the same thickness, and the same coat, every time. It has no units, so it is the same in grams or ounces.
 
-### Meranie odvážením 100 mL
+### Measure it by weighing 100 mL
 
-1. Glazúru premiešajte, aby sa nič neusadilo.
-2. Na váhu položte **odmerný valec** na 100 mL (vysokú odmernú nádobu so stupnicou) alebo striekačku na 100 mL a váhu vytárujte.
-3. Naplňte ho glazúrou presne po 100 mL; rysku odčítajte v úrovni očí.
-4. Odvážte ho a gramy vydeľte 100: 145 g znamená relatívnu hustotu 1,45.
+1. Stir the glaze so nothing has settled.
+2. Put a 100 mL **graduated cylinder** (a tall, marked measuring tube) or a 100 mL syringe on the scale, and tare it.
+3. Fill it with glaze to exactly 100 mL, reading the mark at eye level.
+4. Weigh it and divide the grams by 100: 145 g is SG 1.45.
 
-V Digitalfire si tiež na pohári označia úroveň 500 g vody, naplnia ho po značku glazúrou a hmotnosť vydelia 500; väčšia a plnšia odmerka je presnejšia. **Hustomer**, plavák, z ktorého odčítate hodnotu podľa toho, ako hlboko sa v glazúre ponorí, je rýchly, ale pri hustých alebo zahustených glazúrach môže ukazovať nesprávne. Britské hustomery, napríklad od Potclays, ukazujú v stupňoch Baumé (°Bé). Podľa nášho výpočtu SG = 145 ÷ (145 − °Bé), takže 46 °Bé je asi 1,46. Staršie britské knihy uvádzajú **hmotnosť pinty**, počet uncí v britskej pinte glazúry: vydeľte ju 20, takže 29 oz zodpovedá relatívnej hustote asi 1,45 (aj to je náš výpočet).
+Digitalfire also marks a cup at the level of 500 g of water, fills it to the mark with glaze, and divides the weight by 500; a bigger, fuller measure is more accurate. A **hydrometer**, a float read where it sits in the glaze, is quick but can misread thick or gelled glazes. UK hydrometers, such as Potclays', read in degrees Baumé (°Bé). By our arithmetic, SG = 145 ÷ (145 − °Bé), so 46 °Bé is about 1.46. Older UK books give a **pint weight**, the ounces in an imperial pint of glaze: divide it by 20, so 29 oz is about SG 1.45 (also our arithmetic).
 
-### Cieľové hodnoty
+### What to aim for
 
-Zdroje sa nezhodujú, najviac pri natieraní štetcom a striekaní, kde britský dodávateľ Potclays uvádza oveľa vyššie hodnoty (jeho vlastné sú „len orientačné“). Každé číslo berte ako východisko. Hlavná rada Digitalfire znie: nájdite relatívnu hustotu a mieru zahustenia, ktoré pre danú glazúru fungujú, potom ich opakujte a zapíšte si ich.
+Sources disagree, most of all on brushing and spraying, where the UK supplier Potclays gives much higher figures (its own are "for guidance only"). Treat every number as a starting point. Digitalfire's core advice is to find the SG and gelling that work for each glaze, then repeat them and write them down.
 
-Table: Cieľová relatívna hustota, kde sa zdroje nezhodujú
-Label: Cieľová relatívna hustota
+Table: Specific gravity targets, where sources disagree
+Label: Specific gravity targets
 
-| Použitie           | Digitalfire a Glazy                                                                                                                                                             | Potclays (Veľká Británia)                             | Bezpečné východisko                                                      |
-| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------- | ------------------------------------------------------------------------ |
-| Ponáranie          | {{SG 1.40}} (pri ponorení na 5 sekúnd) – {{SG 1.50}} (pri ponorení na 1 sekundu); zahustené glazúry namiešané doma sú najlepšie, keď je {{SG 1.43–1.45}}                        | Transparentná: {{SG 1.46–1.48}}; farebná: {{SG 1.61}} | {{SG 1.45}}; ak kvapká, zrieďte ju, aby bola {{SG 1.43}}, a zahustite ju |
-| Natieranie štetcom | {{SG 1.25}} (riedka transparentná) – {{SG 1.55}} (tmavé detaily)                                                                                                                | {{SG 1.71–1.81}}                                      | Podľa pokynov k výrobku; použite CMC alebo médium na nanášanie štetcom   |
-| Striekanie         | Bez hodnoty; Hopper v článku pre Ceramic Arts Network uvádza, že má byť oveľa redšia, so stekucovadlom{{en: deflocculant}} (prísadou, ktorá robí rozmiešanú glazúru tekutejšou) | {{SG 1.71}}                                           | Spoľahlivá hodnota neexistuje; striekajte len v striekacom boxe          |
+| Use      | Digitalfire and Glazy                                                                                                                 | Potclays (UK)                               | Safe starting point                                     |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- | ------------------------------------------------------- |
+| Dipping  | {{SG 1.40}} (for a 5-second dip) to {{SG 1.50}} (for a 1-second dip); home-mixed glazes that are gelled do best at {{SG 1.43–1.45}}   | Clear {{SG 1.46–1.48}}; colored {{SG 1.61}} | {{SG 1.45}}; thin to {{SG 1.43}} and gel it if it drips |
+| Brushing | {{SG 1.25}} (thin clear) to {{SG 1.55}} (dark detail)                                                                                 | {{SG 1.71–1.81}}                            | Follow the product; use CMC gum or a brushing medium    |
+| Spraying | No figure; Hopper, writing for Ceramic Arts Network, says much thinner, with a deflocculant (an additive that makes a slurry runnier) | {{SG 1.71}}                                 | No reliable number; spray only in a spray booth         |
 
-Ak chcete glazúru na ponáranie posúdiť od oka, v AMACO ponárajú na 5 sekúnd a sledujú, či je vrstva hrubá asi ako americká desaťcentová minca (dime). V Digitalfire na kontrolu vypaľujú doštičky{{en: test tiles}} ponorené na 5 sekúnd.
+To check a dipping glaze by eye, AMACO dips for 5 seconds and looks for a coat about as thick as a US dime. Digitalfire fires tiles dipped for 5 seconds to check.
 
-### Voda pre cieľovú relatívnu hustotu: náš odhad
+### Water for a target SG: our estimate
 
-Tabuľka nižšie je náš vlastný výpočet, nie údaj zo zdroja. Predpokladá, že čiastočky prášku majú hustotu 2,6 g na cm³, čo je predpoklad, nie meranie. Hlina, rozpustné suroviny aj zahustenie skutočnú glazúru menia, preto tabuľku použite ako východisko a potom merajte. Pre kontrolu: pri rovnakej hmotnosti prášku a vody z nej vychádza {{SG 1.44}}, blízko hodnoty nameranej v Digitalfire ({{SG 1.46}}). Ukazuje tiež, že pri 70 – 80 mL na 100 g začínate vyššie, než je {{SG 1.50}}, teda s hustejšou glazúrou, než potrebujete.
+The table below is our own arithmetic, not a source's. It assumes the powder's particles have a density of 2.6 g per cm³, which is an assumption, not a measurement. Clay, soluble materials and gelling all change a real glaze, so use it to start, then measure. As a check, it predicts {{SG 1.44}} for equal weights of powder and water, close to Digitalfire's measured {{SG 1.46}}. It also shows that 70 to 80 mL per 100 g starts you above {{SG 1.50}}, thicker than you need.
 
-Table: Voda pre cieľovú relatívnu hustotu (náš odhad)
-Label: Voda pre cieľovú relatívnu hustotu
+Table: Water for a target specific gravity (our estimate)
+Label: Water for a target specific gravity
 
-| Cieľ        | Na 100 g prášku | Na kilogram |        Na libru |
-| ----------- | --------------: | ----------: | --------------: |
-| {{SG 1.40}} |      asi 115 mL | asi 1150 mL | asi 18 US fl oz |
-| {{SG 1.45}} |       asi 98 mL |  asi 980 mL | asi 15 US fl oz |
-| {{SG 1.50}} |       asi 85 mL |  asi 850 mL | asi 13 US fl oz |
-| {{SG 1.60}} |       asi 64 mL |  asi 640 mL | asi 10 US fl oz |
+| Target      | Per 100 g of powder |  Per kilogram |         Per pound |
+| ----------- | ------------------: | ------------: | ----------------: |
+| {{SG 1.40}} |        about 115 mL | about 1150 mL | about 18 US fl oz |
+| {{SG 1.45}} |         about 98 mL |  about 980 mL | about 15 US fl oz |
+| {{SG 1.50}} |         about 85 mL |  about 850 mL | about 13 US fl oz |
+| {{SG 1.60}} |         about 64 mL |  about 640 mL | about 10 US fl oz |
 
-### Horká soľ, CMC a bentonit
+### Epsom salts, CMC gum and bentonite
 
-**Horká soľ** (síran horečnatý) spôsobí, že glazúra v pokoji mierne zhustne do gélu a po premiešaní znova tečie. Tomu sa hovorí **flokulácia**{{en: flocculating}} a glazúra, ktorá sa takto správa, je **tixotropná**{{en: thixotropic}}: nanáša sa rovnomernejšie, menej kvapká a menej sa usadzuje. Digitalfire odporúča začať s asi 2 g na galón, keď je relatívna hustota správna (zhruba 0,5 g na liter, náš prepočet), a množstvo dolaďovať pri každom miešaní, pretože žiadny recept by nemal dávku pevne určovať. Odporúčame horkú soľ najprv rozpustiť v troche horúcej vody. V jednom príklade od Digitalfire glazúra ({{SG 1.45}}) kvapkala, preto ju zriedili vodou, aby bola {{SG 1.43}}, a horkou soľou ju znova zahustili do krémovej konzistencie; potom sa nanášala rovnomerne. Hrubá skúška: premiešajte, prestaňte a pozorujte. Zahustená glazúra sa pohybuje ešte asi 2 alebo 3 sekundy, potom sa zastaví a trochu sa vráti späť.
+**Epsom salts** make a glaze gel slightly when it stands still and flow again when it is stirred. This is called **flocculating** it, and a glaze that behaves this way is **thixotropic**: it goes on more evenly, drips less and settles less. Digitalfire suggests starting at about 2 g per gallon once the SG is right (roughly 0.5 g per liter, our conversion) and tuning the amount each time you mix, since no recipe should fix the dose. We suggest dissolving it in a little hot water first. In a Digitalfire example, a glaze at {{SG 1.45}} dripped, so water brought it down to {{SG 1.43}} and Epsom salts gelled it back to creamy, and it went on evenly. A rough check: stir, stop and watch. A gelled glaze moves on for about 2 or 3 seconds, then stops and springs back a little.
 
-**CMC** (karboxymetylcelulóza) robí rozmiešanú glazúru lepkavejšou, spomaľuje jej schnutie a zanecháva tvrdšiu vrstvu, ktorá drží na výrobku. Najviac na nej záleží pri glazúrach na natieranie štetcom a glazúrach s vysokým obsahom frity{{en: frit}}. V príklade od Digitalfire sa 3,75 g zamieša do 1000 g rozmiešanej glazúry, a to sa musí urobiť mixérom. Glazúra s CMC sa horkou soľou nezahustí, a keďže mikróby sa živia týmto spojivom, môže sa vo vedre meniť a začať zapáchať.
+**CMC gum** (carboxymethyl cellulose) makes a slurry stickier and slower to dry, and leaves a harder coat that holds to the pot. It matters most for brushing glazes and glazes high in frit. Digitalfire's example blends 3.75 g into 1000 g of slurry, and it has to go in with a blender. A glaze with CMC will not gel with Epsom salts, and since microbes feed on the gum, it can change in the bucket and start to smell.
 
-**Bentonit**, veľmi jemná hlina, pomáha udržať ostatné čiastočky vo vznose. Glazúry na ponáranie sa v tom zvyčajne spoliehajú na 15 – 25 % surovej hliny. Receptu, v ktorom je málo hliny, pomôže asi 1 – 3 % bentonitu; podľa Digitalfire by glazúra s viac ako 15 % hliny nemala potrebovať viac ako 1 %.
+**Bentonite**, a very fine clay, helps hold the other particles in suspension. Dipping glazes usually rely on 15 to 25% raw clay for this. For a recipe short of clay, about 1 to 3% bentonite helps; Digitalfire says a glaze with more than 15% clay should not need bentonite at more than 1% of the dry glaze's weight.
 
 ## Skúšobné doštičky a skúšobné rady {#testing}
 

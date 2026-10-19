@@ -165,69 +165,69 @@ Label: 三支一組
 
 :::orton
 
-## 自動斷電器 {#kiln-sitter}
+## The kiln sitter {#kiln-sitter lang=en}
 
-**自動斷電器**{{en: kiln sitter}}是許多基本款與老式窯外側的機械開關，小型測溫錐彎倒時，開關就會把窯關掉。最有名的是 Dawson 的 Kiln-Sitter。自動斷電器讓燒窯更輕鬆，但只是方便的工具，不是安全裝置。
+A **kiln sitter** is the mechanical switch, on the outside of many basic and older kilns, that turns the kiln off when a small cone bends. The best known is the Dawson Kiln-Sitter. It makes firing easier, but it is a convenience, not a safety device.
 
-### 運作方式
+### How it works
 
-一根瓷質**套管**伸進窯裡。在套管末端，一支小型錐或一根測溫棒橫放在兩個金屬**錐架**上，位於像翹翹板一樣轉動的**感應桿**下方。在窯外，感應桿的另一端用一個小**爪**撐住一個**配重**。小型錐軟化並彎到約 90° 時，感應桿會下垂到足以釋放配重，配重落下，電熱線的電源就被切斷。
+A porcelain tube reaches into the kiln. At its end, a small cone or a bar lies across two metal supports, under a **sensing rod** that pivots like a seesaw. Outside the kiln, the other end of the rod holds up a weight by a small claw. When the cone softens and bends to about 90°, the rod drops far enough to release the weight, the weight falls, and the power to the elements is cut.
 
-小型錐與測溫棒「提供等效的熱處理」。Orton 指出，許多初學者選擇測溫棒，因為測溫棒形狀均勻，容易每次都用相同的方式放置。小型錐是逐漸變細的，所以放在哪裡有影響：細的一端在感應桿下，窯會在較低的溫度關閉，粗的一端在感應桿下，則在較高的溫度關閉，差異「多達 1/2 個錐號」。
+Small cones and bars "give equivalent heat treatment". Orton notes that many beginners choose bars, because their even shape makes it easy to place them the same way every time. A small cone tapers, so where it sits matters: with its thin part under the rod the kiln shuts off cooler, and with its thick part hotter, a shift of "as much as 1/2 cone".
 
-### 自動斷電器該放哪一號錐
+### Which cone goes in the sitter
 
-各資料來源看法不一。製造自動斷電器的 Dawson 說，要用與棚板上目標錐相同的號數，只有在棚板上的錐沒有彎倒時，才改用溫度高一號的錐。L&L 說要用比棚板上的錐溫度高一號的錐，因為自動斷電器靠近窯壁和電熱線，受熱較多，容易太早關機。Orton 則確立了原則：「燒窯過程的最終判斷依據是棚板上的錐，不是 Kiln-Sitter 的錐或測溫棒。」
-
-> [!NOTE]
-> 我們的起點是：自動斷電器裡放與目標相同號數的小型錐，棚板上放一組測溫錐。如果窯關閉時，棚板上的目標錐彎得不夠，下次就把自動斷電器的錐換成溫度高一號的，或把錐較粗的一端放在感應桿下。如果彎過頭，就反過來做。
-
-### 設定方式，以及每次燒窯前的檢查
-
-Dawson 的步驟，同時也是每次燒窯前的檢查：
-
-1. 關掉所有開關。確認感應桿活動自如、位在套管正中央，沒有彎曲或腐蝕。如果動作遲鈍，Dawson 說要更換整組套管。
-2. 在錐架上，以及感應桿接觸錐的地方，刷一層薄薄的高溫**棚板隔離劑**（防止熔化物質黏住的塗層）。切勿把隔離劑塗在錐或瓷質套管上。
-3. 棚板與作品要與套管上下至少隔 1 英寸（25 mm），這樣就不會有東西碰到、倒向或擋住套管。
-4. 抬起配重，把爪壓在觸發板上，然後依您的自動斷電器使用說明書所示，把錐或測溫棒平放在錐架上，抵住金屬階，每次都用相同的方式。蓋上窯蓋前再檢查一次：「錐或測溫棒放置不當，可能造成過燒。」
-5. 設定限時器，並把推桿壓入直到鎖住。讓窯保持水平，配重下方的空間要淨空，配重才能落下。
-
-### 限時器
-
-許多自動斷電器，包括 Dawson 的 LT 型號，都有**限時器**：一種到了設定時間就把窯關掉的計時器，作為「萬一 KILN-SITTER 失效時」的備援。限時器應該一律設得比預期的燒窯時間更長。各資料來源設定的餘裕不同：
-
-Table: 限時器要設多久
-Label: 限時器的設定
-
-| 來源      | 設定                                                                                 |
-| --------- | ------------------------------------------------------------------------------------ |
-| Dawson    | 在熟悉這座窯之前，比預期的燒窯時間多 ½ 小時，之後可只多 ¼ 小時；絕不設定超過 20 小時 |
-| L&L       | 第一次設得非常高，並記下燒窯花了多久；之後約多 1 小時                                |
-| Bracker's | 比燒窯時間多 30 分鐘到 1 小時                                                        |
+Sources disagree. Dawson, who made the sitter, says to use the same number as the firing cone on the shelf, and to go one number hotter only if the shelf cone stays unbent. L&L says to use one number hotter than the shelf cones, because the sitter sits near the wall and the elements, gets more heat, and tends to shut off early. Orton settles the principle: "The shelf cone is the final judge of the firing process, not the Kiln-Sitter cone or bar."
 
 > [!NOTE]
-> 我們的起點是：第一次設得寬裕（在撥盤的 20 小時以內），之後比您記錄的時間多 ½ 到 1 小時。限時器也能告訴您燒窯花了多久：設在 7、結束時停在 1，就表示燒了 6 小時。
+> Our starting point: put a small cone of the same number as your target in the sitter, with a cone pack on the shelf. If the shelf firing cone is under-bent when the kiln shuts off, go one number hotter in the sitter next time, or set the thicker part of the cone under the rod. If it is over-bent, do the opposite.
 
-### 太早或太晚關機時
+### Setting it up, and checks before every firing
 
-每次燒窯後，把自動斷電器的錐與棚板上的錐一起檢查。
+Dawson's procedure, which doubles as a check before every firing:
 
-Table: 燒窯後判讀自動斷電器
-Label: 自動斷電器的問題
+1. Turn all the switches off. Check that the sensing rod moves freely, sits centered in the tube and is not bent or corroded. If it is sluggish, Dawson says to replace the tube assembly.
+2. Brush a thin coat of high-fire **kiln wash** (a coating that stops melted material sticking) onto the cone supports and the rod where it touches the cone. Never put wash on the cone or the porcelain tube.
+3. Load shelves and ware at least 1 in (25 mm) above or below the tube, so nothing can touch, fall against or block it.
+4. Lift the weight, press the claw down onto the trigger, and lay the cone or bar flat on the supports against the metal step, as your sitter's manual shows, the same way every time. Check it again before closing the lid: "AN IMPROPERLY PLACED CONE OR BAR COULD CAUSE AN OVERFIRING."
+5. Set the limit timer and push in the plunger until it locks. Keep the kiln level and the space under the weight clear, so the weight can fall.
 
-| 看到的情況                               | 可能原因                                                                         | 處理方式                                                   |
-| ---------------------------------------- | -------------------------------------------------------------------------------- | ---------------------------------------------------------- |
-| 自動斷電器已跳電，棚板上的目標錐彎得不夠 | 自動斷電器比棚板更熱（自動斷電器靠近窯壁）                                       | 自動斷電器的錐換成溫度高一號的，或把較粗的一端放在感應桿下 |
-| 自動斷電器的錐彎過 90° 很多              | 接近結束時窯升溫太快                                                             | 調低開關的設定，讓升溫慢一點（Dawson）                     |
-| 自動斷電器的錐沒有彎，或熔成一團         | 問題出在自動斷電器本身：調整不良、感應桿彎曲或腐蝕，或有東西卡在套管內或頂住套管 | 再次燒窯前，依使用說明書檢查並調整自動斷電器               |
-| 每次都太早或太晚                         | 調整不準，或感應桿磨損                                                           | 用校正規檢查；移動觸發板                                   |
+### The limit timer
 
-檢查調整時，Dawson 使用**校正規**，校正規會把感應桿固定在完全彎倒的錐會讓感應桿停下的位置；此時爪處應有「1/16 英寸的間隙」（約 1.6 mm）。每 30 次燒窯檢查一次。Ceramics Monthly 的原則是：窯太早關，就把觸發板稍微往上移；太晚關，就稍微往下移。不論自動斷電器怎麼動作，「永遠相信大型見證錐，而不是小型的斷電器錐。」
+Many sitters, including Dawson's LT models, have a **limit timer**: a clock that turns the kiln off after a set time, as a backup "in case the KILN-SITTER fails". It should always be set longer than the firing is expected to take. Sources set the margin differently:
+
+Table: How long to set the limit timer
+Label: Limit timer settings
+
+| Source    | Setting                                                                                                                |
+| --------- | ---------------------------------------------------------------------------------------------------------------------- |
+| Dawson    | ½ hour longer than the expected firing time until you know the kiln, later ¼ hour longer; never set it beyond 20 hours |
+| L&L       | Very high the first time, noting how long the firing takes; after that, about 1 hour longer                            |
+| Bracker's | 30 minutes to 1 hour longer than the firing time                                                                       |
+
+> [!NOTE]
+> Our starting point: generous the first time (within the dial's 20 hours), then ½ to 1 hour longer than the time you recorded. The timer also tells you how long a firing took: set at 7 and ending at 1 means 6 hours.
+
+### When it shuts off early or late
+
+After each firing, read the sitter cone beside the shelf cones.
+
+Table: Reading the sitter after a firing
+Label: Kiln sitter problems
+
+| What you see                                    | Likely cause                                                                                           | What to do                                                       |
+| ----------------------------------------------- | ------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------- |
+| Sitter tripped, shelf firing cone under-bent    | The sitter ran hotter than the shelf (it sits near the wall)                                           | One cone hotter in the sitter, or the thicker part under the rod |
+| Sitter cone sagged well past 90°                | The kiln climbed too fast near the end                                                                 | Lower the switch settings, so the climb is slower (Dawson)       |
+| Sitter cone did not bend, or melted into a blob | The sitter itself: poor adjustment, a bent or corroded rod, or something lodged in or against the tube | Check and adjust the sitter by its manual before firing again    |
+| Early or late every time                        | Out of adjustment, or a worn rod                                                                       | Check with the firing gauge; move the trigger plate              |
+
+To check the adjustment, Dawson uses a **firing gauge** that holds the rod where a fully bent cone would leave it; there should then be "1/16th-inch clearance" (about 1.6 mm) at the claw. Check it every 30 firings. Ceramics Monthly's rule: if the kiln shuts off early, move the trigger plate up slightly; if late, move it down slightly. Whatever the sitter does, "Always trust large witness cones over small sitter cones."
 
 > [!WARNING]
-> **自動斷電器不是安全裝置**。Dawson 的使用說明書說，Kiln-Sitter「並非設計作為故障安全的斷電裝置，您的窯在超過預估燒窯時間後，不應無人看管。」生坯倒向套管這麼簡單的事，就「可能造成過燒」。請在窯應該快燒完時到場檢查，而且切勿在會燃燒的東西上方或附近燒窯，例如木地板或地毯。
+> **A kiln sitter is not a safety device.** Dawson's manual says it "is NOT intended to perform as a fail-safe shut-off device and your kiln should NOT be left unattended beyond the estimated firing time." Something as simple as greenware falling against the tube "might cause an over-firing". Be there to check the kiln when it should be finishing, and never fire it over or near anything that burns, such as a wood floor or carpet.
 
-自動斷電器是為「最高到 8 號錐（含）」的燒窯而設計的。自動斷電器無法自行維持某個溫度，也無法自行緩慢降溫。不過，只要多練習並做好紀錄，就能像 Digitalfire 所說的「自己成為溫度控制器」：盯著測溫錐，用手轉動開關。
+The sitter is built for firings "up to and including Cone 8". It cannot hold a temperature or cool slowly by itself. With practice and a log, though, you can "become the controller", as Digitalfire puts it: watch the cones and turn the switches by hand.
 
 :::
 
@@ -281,92 +281,92 @@ Label: 調整下一次燒窯
 
 :::sk
 
-## 燒到 SK 測溫錐 {#sk-cones}
+## Firing to SK cones {#sk-cones lang=en}
 
-SK 測溫錐是依日本標準 JIS R 8101 製造的測溫錐，在日本由有恒商事（Yuko Trading）等經銷商販售。和任何測溫錐一樣，SK 測溫錐量的不只是溫度，而是熱功{{en: heatwork}}：作品受到足夠的熱時，SK 錐會變軟並彎倒，您看錐彎了多少。見證錐、判讀錐彎了多少，以及持溫，對 SK 錐的作用都和對其他測溫錐一樣。本節會說明每支錐屬於哪個系統，而且絕不會把 SK 號數換成其他系統的號數：不同系列測溫錐的號數，不能互換。
+SK cones are the pyrometric cones made to Japan's standard, JIS R 8101, and sold in Japan by dealers such as Yuko Trading (有恒商事). Like any cone, an SK cone measures heatwork, not temperature alone: it softens and bends over when the ware has had enough heat, and you read how far it bent. Witness cones, reading how far a cone has bent, and holds work for it as for any cone. This section names each cone's system, and never turns an SK number into another system's number: the numbers of different cone series are not interchangeable.
 
 > [!NOTE]
-> 一律在號數前寫上「SK」。許多較舊的日本釉方只寫「SK 8」或「SK 9」，沒有說明是誰的錐。京都錐與依 JIS 製造的 SK 測溫錐號數相同，但彎倒的溫度不同（見下方的「京都錐」）。
+> Always write "SK" before the number. Many older Japanese recipes say only "SK 8" or "SK 9" without saying whose cone. Kyoto cones and SK cones to JIS carry the same numbers but bend at different temperatures (see Kyoto cones, below).
 
-### 大型錐
+### The large cones
 
-這個標準有兩種尺寸。大型錐（大型コーン）「主要用於測量燒成程度」（焼度測定），這正是陶藝家需要的。小型錐（SK 26 到 SK 42，在範圍的最高端）「主要用於耐火度試驗」，本指南不涉及。下表列出 SK 022 到 SK 20 的大型錐。
+The standard has two sizes. Large cones (大型コーン) are "mainly used for measuring the degree of firing" (焼度測定), which is what a potter wants. Small cones (SK 26 to SK 42, at the top of the range) are "mainly used for refractoriness tests" and are not covered here. The table below gives the large cones from SK 022 to SK 20.
 
-號數從最低溫的 SK 022 一路到這裡的 SK 20。SK 015 到 SK 6 之間，印出來的號數帶有「a」（SK 015a、SK 6a）；請照印的寫。
+The numbers run from SK 022, the coolest, up to SK 20 here. Between SK 015 and SK 6 the printed numbers carry an "a" (SK 015a, SK 6a); write it as printed.
 
-### 設置大型錐
+### Setting large cones
 
-把每支大型錐插在錐座或一小塊黏土中，朝其彎倒面傾斜。和任何測溫錐一樣，每次燒窯的高度與傾斜角度都要保持一致，因為兩者任何一個不同，都會改變錐彎倒的程度。把一組的三支錐（見下）放在一起，放在窯內深處、裝載物中央附近，讓三支錐受到作品受到的熱，同時又能從觀火孔看見；關窯前，確認三支錐都看得到。
+Set each large cone in a plaque or a pat of clay, leaning toward its bending face. As with any cone, keep the height and the lean the same from firing to firing, because a difference in either changes how far it bends. Set the three cones of the pack (below) together, deep in the kiln near the middle of the load, where they get the heat the ware gets, yet where you can see them through a peephole; before you close the kiln, check that you can see all three.
 
-### 指示錐、目標錐與保護錐
+### Guide, firing and guard cones
 
-測溫錐是三支一組販售與擺放的：指示錐、位於目標的目標錐，以及保護錐。目標錐取您的釉方或坯土指定的 SK 號數，指示錐取溫度低一號的錐（表中往上一列），保護錐取溫度高一號的錐。指示錐開始彎倒時，表示快結束了；保護錐彎倒時，表示燒窯已經過頭。
+Cones are sold and set as three: a guide cone, a firing cone at the target, and a guard cone. Take the firing cone as the SK number your recipe or clay names, the guide cone as the next cooler cone (one row up in the table) and the guard cone as the next hotter one. When the guide cone starts to bend, the end is near; when the guard cone bends, the firing has gone too far.
 
-### SK 對照表
+### The SK chart
 
-Table: SK 大型錐（JIS R 8101）：各錐的標稱（JIS）溫度
-Label: SK 對照表
+Table: SK large cones (JIS R 8101): the nominal (JIS) temperature of each
+Label: SK chart
 
-| 測溫錐  |      標稱（JIS）溫度 |
-| ------- | -------------------: |
-| SK 022  |  {{1112 °F; 600 °C}} |
-| SK 021  |  {{1202 °F; 650 °C}} |
-| SK 020  |  {{1238 °F; 670 °C}} |
-| SK 019  |  {{1274 °F; 690 °C}} |
-| SK 018  |  {{1310 °F; 710 °C}} |
-| SK 017  |  {{1346 °F; 730 °C}} |
-| SK 016  |  {{1382 °F; 750 °C}} |
-| SK 015a |  {{1454 °F; 790 °C}} |
-| SK 014a |  {{1499 °F; 815 °C}} |
-| SK 013a |  {{1535 °F; 835 °C}} |
-| SK 012a |  {{1571 °F; 855 °C}} |
-| SK 011a |  {{1616 °F; 880 °C}} |
-| SK 010a |  {{1652 °F; 900 °C}} |
-| SK 09a  |  {{1688 °F; 920 °C}} |
-| SK 08a  |  {{1724 °F; 940 °C}} |
-| SK 07a  |  {{1760 °F; 960 °C}} |
-| SK 06a  |  {{1796 °F; 980 °C}} |
-| SK 05a  | {{1832 °F; 1000 °C}} |
-| SK 04a  | {{1868 °F; 1020 °C}} |
-| SK 03a  | {{1904 °F; 1040 °C}} |
-| SK 02a  | {{1940 °F; 1060 °C}} |
-| SK 01a  | {{1976 °F; 1080 °C}} |
-| SK 1a   | {{2012 °F; 1100 °C}} |
-| SK 2a   | {{2048 °F; 1120 °C}} |
-| SK 3a   | {{2084 °F; 1140 °C}} |
-| SK 4a   | {{2120 °F; 1160 °C}} |
-| SK 5a   | {{2156 °F; 1180 °C}} |
-| SK 6a   | {{2192 °F; 1200 °C}} |
-| SK 7    | {{2246 °F; 1230 °C}} |
-| SK 8    | {{2282 °F; 1250 °C}} |
-| SK 9    | {{2336 °F; 1280 °C}} |
-| SK 10   | {{2372 °F; 1300 °C}} |
-| SK 11   | {{2408 °F; 1320 °C}} |
-| SK 12   | {{2462 °F; 1350 °C}} |
-| SK 13   | {{2516 °F; 1380 °C}} |
-| SK 14   | {{2570 °F; 1410 °C}} |
-| SK 15   | {{2615 °F; 1435 °C}} |
-| SK 16   | {{2660 °F; 1460 °C}} |
-| SK 17   | {{2696 °F; 1480 °C}} |
-| SK 18   | {{2732 °F; 1500 °C}} |
-| SK 19   | {{2768 °F; 1520 °C}} |
-| SK 20   | {{2786 °F; 1530 °C}} |
+| Cone    | Nominal (JIS) temperature |
+| ------- | ------------------------: |
+| SK 022  |       {{1112 °F; 600 °C}} |
+| SK 021  |       {{1202 °F; 650 °C}} |
+| SK 020  |       {{1238 °F; 670 °C}} |
+| SK 019  |       {{1274 °F; 690 °C}} |
+| SK 018  |       {{1310 °F; 710 °C}} |
+| SK 017  |       {{1346 °F; 730 °C}} |
+| SK 016  |       {{1382 °F; 750 °C}} |
+| SK 015a |       {{1454 °F; 790 °C}} |
+| SK 014a |       {{1499 °F; 815 °C}} |
+| SK 013a |       {{1535 °F; 835 °C}} |
+| SK 012a |       {{1571 °F; 855 °C}} |
+| SK 011a |       {{1616 °F; 880 °C}} |
+| SK 010a |       {{1652 °F; 900 °C}} |
+| SK 09a  |       {{1688 °F; 920 °C}} |
+| SK 08a  |       {{1724 °F; 940 °C}} |
+| SK 07a  |       {{1760 °F; 960 °C}} |
+| SK 06a  |       {{1796 °F; 980 °C}} |
+| SK 05a  |      {{1832 °F; 1000 °C}} |
+| SK 04a  |      {{1868 °F; 1020 °C}} |
+| SK 03a  |      {{1904 °F; 1040 °C}} |
+| SK 02a  |      {{1940 °F; 1060 °C}} |
+| SK 01a  |      {{1976 °F; 1080 °C}} |
+| SK 1a   |      {{2012 °F; 1100 °C}} |
+| SK 2a   |      {{2048 °F; 1120 °C}} |
+| SK 3a   |      {{2084 °F; 1140 °C}} |
+| SK 4a   |      {{2120 °F; 1160 °C}} |
+| SK 5a   |      {{2156 °F; 1180 °C}} |
+| SK 6a   |      {{2192 °F; 1200 °C}} |
+| SK 7    |      {{2246 °F; 1230 °C}} |
+| SK 8    |      {{2282 °F; 1250 °C}} |
+| SK 9    |      {{2336 °F; 1280 °C}} |
+| SK 10   |      {{2372 °F; 1300 °C}} |
+| SK 11   |      {{2408 °F; 1320 °C}} |
+| SK 12   |      {{2462 °F; 1350 °C}} |
+| SK 13   |      {{2516 °F; 1380 °C}} |
+| SK 14   |      {{2570 °F; 1410 °C}} |
+| SK 15   |      {{2615 °F; 1435 °C}} |
+| SK 16   |      {{2660 °F; 1460 °C}} |
+| SK 17   |      {{2696 °F; 1480 °C}} |
+| SK 18   |      {{2732 °F; 1500 °C}} |
+| SK 19   |      {{2768 °F; 1520 °C}} |
+| SK 20   |      {{2786 °F; 1530 °C}} |
 
-每個數值都是標稱值（JIS）：標準給該錐的溫度，如有恒商事的表所印。該表沒有印升溫速率。標準給的是參考溫度。以陶藝家常用的約 100 °C/h 升溫速率，京都市立的研究機構量測自家的京都錐，彎倒的溫度比同一號數的 JIS 數值低 40–70 °C；依 JIS 製造的 SK 錐，我們找不到這類量測。請放一支見證錐來比對。
+Every figure is nominal (JIS): the temperature the standard gives for the cone, as printed in Yuko Trading's table. The table does not print a heating rate. The standard gives reference temperatures. At a potter's rate of about 100 °C/h, Kyoto's municipal institute measured its own Kyoto cones bending 47–79 °C cooler than the JIS figure for the same number; we found no such measurements for SK cones to JIS. Set a witness cone and compare.
 
-### 京都錐
+### Kyoto cones
 
-京都錐（京都ゼーゲル）由京都市立的研究機構製造，現已停產：新聞報導說，該機構在 2009 年度結束時停止生產。京都錐的號數與依 JIS 製造的 SK 錐相同，但彎倒的溫度較低：多半在大約溫度低兩號的 JIS SK 錐的溫度彎倒。京都的釉方若寫「SK 8」，可能指的是京都錐。該機構已發布從京都錐改用 Orton 錐的陶藝家建議，並以 Orton 10 號錐取代自己的京都 SK 12；這是該機構依自己在 100 °C/h 下的量測所做的選擇，不適用於任何其他的錐。
+Kyoto cones (京都ゼーゲル), made by Kyoto's municipal institute, are no longer made: news reports say the institute ended production at the close of fiscal 2009. They carry the same numbers as SK cones to JIS but bend cooler: a Kyoto cone bends at about the temperature of the SK cone to JIS two or three numbers lower. A recipe from Kyoto that says "SK 8" may mean a Kyoto cone. The institute has published advice for potters moving from Kyoto cones to Orton cones, and substitutes Orton cone 10 for its own Kyoto SK 12; that is the institute's choice from its own measurements at 100 °C/h, and applies to no other cone.
 
-### 日本販售的 Orton 測溫錐
+### Orton cones sold in Japan
 
-Orton 的自立式測溫錐在日本以「立つゼーゲル」（直譯為「站立的塞格」）的名稱販售，因為這種錐不需要錐座或支架。這些是 Orton 錐，使用 Orton 的號數與 Orton 的對照表（見上）：只能依其 Orton 號數燒到該錐，而且 SK 錐與 Orton 錐要分開放在不同組，切勿放在同一組。
+Orton self-supporting cones are sold in Japan under the name 立つゼーゲル ("standing Seger"), because they need no plaque or stand. They are Orton cones, with Orton's numbers and Orton's chart (above): fire to one only by its Orton number, and keep SK and Orton cones in separate packs, never in the same one.
 
-### SK 測溫錐的資料來源
+### Sources for SK cones
 
-- [Yuko Trading（有恒商事株式会社）：標準溶倒溫度表（SK 對照表，2026年10月14日查閱）](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
-- [JSA：JIS R 8101:1999，耐火度試験用標準コーン（現行有效，2023年10月20日再次確認）](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
-- [Kyoto Municipal Institute of Industrial Technology and Culture：從京都錐改用 Orton 錐的注意事項](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
+- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (the SK table, checked 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
+- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (in force, reconfirmed 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
+- [Kyoto Municipal Institute of Industrial Technology and Culture: points to note when moving from Kyoto cones to Orton cones](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
 
 :::
 

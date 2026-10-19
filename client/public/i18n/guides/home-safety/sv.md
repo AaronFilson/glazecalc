@@ -149,38 +149,38 @@ Pet Poison Helpline säger ”Bly är giftigt för alla arter, men unga och/elle
 
 Om ett husdjur kan ha ätit eller druckit något från verkstaden, eller visar tecken som de ovan, ring veterinären eller en giftlinje för djur (se tabellen överst), med råvarans namn och djurets vikt till hands.
 
-## Keramikugnen {#the-kiln}
+## The kiln {#the-kiln lang=en}
 
-### Utsidan blir så het att man kan bränna sig
+### The outside gets hot enough to burn
 
-En brittisk riskbedömning för skolor säger att utsidan av en ugn ”kan nå 160 °C och möjligen mer” (omkring 320 °F), och en guide om ugnar för skolor uppger temperaturer på upp till 460 °F (omkring 240 °C) på metallbanden. Ugnstillverkaren Skutt rekommenderar ett ugnsrum som kan låsas för barn och husdjur. Där ett rum inte kan låsas föreslår skolguiden en avspärrning, till exempel en skyddsskärm runt ugnen.
+A UK schools risk assessment says a kiln's outside "can reach 160 °C and possibly more" (about 320 °F), and a school kiln guide reports metal bands at up to 460 °F (about 240 °C). Skutt, a kiln maker, recommends a kiln room that can be locked against children and pets. Where a room cannot be locked, the school guide suggests a barrier such as a kiln safety screen.
 
-Små barn och husdjur kan inte förstå en varningsskylt. Vi föreslår att de hålls bakom en låst dörr eller en avspärrning medan ugnen bränner och medan den svalnar, och att en varningsskylt sätts upp för alla andra.
+Small children and pets cannot understand a warning sign. We suggest keeping them behind a locked door or a barrier while the kiln fires and while it cools, and posting a warning sign for everyone else.
 
-### Utrymme runt ugnen
+### Space around it
 
-Källorna går isär om säkerhetsavståndet. Rio Grande anger minst 12 tum (30 cm) till väggar och allt brännbart. L&L rekommenderar starkt 18 tum (46 cm) till alla väggar, och byggreglerna som L&L hänvisar till kräver 3 fot (0,9 m) till brännbara väggar. Följ ugnens bruksanvisning och de lokala brandskyddsreglerna; vid osäkerhet, lämna 18 tum till varje vägg och 3 fot till allt som kan brinna. I ett garage: håll bilar, bränsle och färg på gott avstånd.
+Sources disagree on clearance. Rio Grande says at least 12 inches (30 cm) from walls and anything combustible. L&L strongly recommends 18 inches (46 cm) to all walls, and the building code it cites asks for 3 feet (0.9 m) from combustible walls. Follow your kiln's manual and local fire code; if you are unsure, allow 18 inches from any wall and 3 feet from anything that can burn. In a garage, keep cars, fuel and paint well away.
 
-### Elanslutning
+### Power
 
-Rio Grande rekommenderar en **egen grupp** i elcentralen (en som inte försörjer något annat) med ett ordentligt jordat uttag. Vi föreslår att ingen förlängningssladd används. Slå av ugnens säkring eller arbetsbrytare mellan bränningarna, eller dra ur kontakten, så att ett barn inte kan starta den.
+Rio Grande recommends a **dedicated circuit** (one that powers nothing else) with a properly grounded outlet. We suggest no extension cord. Between firings, switch off the kiln's breaker or disconnect switch, or unplug it, so a child cannot start it.
 
-### Var på plats när bränningen är klar
+### Be there when the firing ends
 
-En **Kiln-Sitter** är den mekaniska brytaren på många ugnar utan automatik: en liten kägla{{en: cone}} böjer sig i slutet av bränningen och slår av brytaren. Bruksanvisningen säger att den ”INTE är avsedd att fungera som en felsäker avstängningsanordning”. Rio Grande säger att en ugn som bränner aldrig ska lämnas utan tillsyn, ”särskilt inte nära den förväntade avstängningstiden”. Stanna därför i närheten och kontrollera ugnen medan den bränner, framför allt mot slutet; bränn bara när en vuxen är hemma och vaken för att stanna i närheten och kontrollera ugnen, kontrollera att ugnen har stängts av, och ha en ABC-brandsläckare i ugnsrummet. Hur Kiln-Sitter-brytare, automatik och brännprogram fungerar beskrivs i [Bränna i en enkel keramikugn](/guides/firing).
+A **kiln sitter** is the mechanical switch on many manual kilns: a small cone bends at the end of the firing and trips the switch off. Its manual says it "is NOT intended to perform as a fail-safe shut-off device." Rio Grande says never to leave a firing kiln unattended, "especially near the expected shut-off time". So stay nearby and check the kiln while it fires, above all near the end; fire only when an adult will be home and awake through the whole firing, check that it has switched off, and keep an ABC fire extinguisher in the kiln room. For how sitters, controllers and schedules work, see [Firing a basic kiln](/guides/firing).
 
-### Ugnsgaser och kolmonoxid
+### Fumes and carbon monoxide
 
-Bränning ger ifrån sig ugnsgaser, så led ut dem från ugnen till det fria; [Säker blandning och ventilation](/guides/safe-mixing) förklarar hur. En ugn i ett garage som sitter ihop med huset behöver ventilation som hindrar gaserna från att nå bostaden genom dörren emellan. Ha fåglar i ett rum långt bort varje gång ugnen bränner.
+Firing gives off fumes, so vent the kiln to the outdoors; [Safe mixing and ventilation](/guides/safe-mixing) explains how. A kiln in an attached garage needs venting that keeps fumes from reaching the house through the connecting door. Keep birds in a far room whenever the kiln fires.
 
-**Kolmonoxid** (CO) är en giftig gas som varken syns eller luktar. Ett universitets säkerhetsblad för ugnar kräver kolmonoxidlarm vid gasugnar. Åsikterna går isär om elugnar, men när organiskt material bränns bort (i leran, eller saker som papper eller vax) kan kolmonoxid bildas. Vi anser att ett kolmonoxidlarm i ugnsrummet och i rummen intill är ett förnuftigt och billigt steg för alla ugnar.
+**Carbon monoxide** (CO) is a poisonous gas you cannot see or smell. A university kiln safety sheet requires CO alarms with gas kilns. Views differ for electric kilns, but burning off organic matter (in clay, or things like paper or wax) can make CO. We think a CO alarm in the kiln room and the rooms next to it is a sensible, inexpensive step for any kiln.
 
-### Titthål och ögon
+### Peepholes and eyes
 
-Infrarött ljus, som inte syns, ”börjar vid 752°F (400°C)”, och Ceramic Arts Network säger att man alltid bör använda ögonskydd när man tittar in i en ugn som är varmare än så. Infrarött ljus kan skada ögats lins och leda till grå starr, och att stirra länge kan skada näthinnan. Solglasögon och didymiumglasögon stoppar det inte.
+Infrared light, which you cannot see, "starts at 752°F (400°C)", and the Ceramic Arts Network says looking into a kiln above this should always be done with eye protection. Infrared can damage the lens of the eye and lead to cataracts, and long gazing can injure the retina. Sunglasses and didymium glasses do not block it.
 
 > [!WARNING]
-> Barn bör inte titta in i en ugn alls. Ett glödande titthål lockar dem, och man kan inte lita på att de behåller skyddsglasögonen på, så håll dem borta medan ugnen är varm. Vuxna bör bara titta kort, genom svetsglasögon med IR-skydd. Källorna rekommenderar skyddsgrad från 1,7 till 5; skyddsgrad 3 är ett förnuftigt val, en mörkare om du ser fläckar efteråt.
+> Children should not look into a kiln at all. A glowing peephole draws them, and they will not reliably keep protective glasses on, so keep them away while the kiln is hot. Adults should look only briefly, through IR-rated welding glasses. Sources recommend shades from 1.7 to 5; shade 3 is a sensible choice, darker if you see spots afterward.
 
 ## Handgjort gods på familjens bord {#handmade-ware}
 

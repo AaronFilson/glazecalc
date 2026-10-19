@@ -149,38 +149,38 @@ Pet Poison Helpline посочва, че „оловото е токсично �
 
 Ако домашен любимец може да е изял или изпил нещо от ателието или има признаци като описаните по-горе, обадете се на ветеринарния си лекар или на линия за отравяния при животни (вижте таблицата в началото), като имате подръка името на суровината и теглото на животното.
 
-## Пещта {#the-kiln}
+## The kiln {#the-kiln lang=en}
 
-### Отвън пещта става толкова гореща, че изгаря
+### The outside gets hot enough to burn
 
-Британска оценка на риска за училища посочва, че външната повърхност на пещта „може да достигне 160 °C и евентуално повече“ (около 320 °F), а училищен наръчник за пещи съобщава за метални обръчи с температура до 460 °F (около 240 °C). Производителят на пещи Skutt препоръчва помещение за пещта, което може да се заключва, така че децата и домашните любимци да нямат достъп. Където помещението не може да се заключи, училищният наръчник предлага преграда, например предпазен параван за пещ.
+A UK schools risk assessment says a kiln's outside "can reach 160 °C and possibly more" (about 320 °F), and a school kiln guide reports metal bands at up to 460 °F (about 240 °C). Skutt, a kiln maker, recommends a kiln room that can be locked against children and pets. Where a room cannot be locked, the school guide suggests a barrier such as a kiln safety screen.
 
-Малките деца и домашните любимци не могат да разберат предупредителен знак. Предлагаме да ги държите зад заключена врата или преграда, по време на изпичане и докато пещта изстива, и да поставите предупредителен знак за всички останали.
+Small children and pets cannot understand a warning sign. We suggest keeping them behind a locked door or a barrier while the kiln fires and while it cools, and posting a warning sign for everyone else.
 
-### Разстояние около пещта
+### Space around it
 
-Източниците се разминават за безопасното разстояние. Rio Grande посочва поне 12 инча (30 cm) от стените и от всичко горимо. L&L настоятелно препоръчва 18 инча (46 cm) от всички стени, а строителният кодекс, на който се позовава, изисква 3 фута (0,9 m) от горими стени. Спазвайте ръководството за експлоатация на пещта си и местните правила за пожарна безопасност; ако се съмнявате, оставете 18 инча от всяка стена и 3 фута от всичко, което може да гори. В гараж дръжте колите, горивото и боите далеч от пещта.
+Sources disagree on clearance. Rio Grande says at least 12 inches (30 cm) from walls and anything combustible. L&L strongly recommends 18 inches (46 cm) to all walls, and the building code it cites asks for 3 feet (0.9 m) from combustible walls. Follow your kiln's manual and local fire code; if you are unsure, allow 18 inches from any wall and 3 feet from anything that can burn. In a garage, keep cars, fuel and paint well away.
 
-### Захранване
+### Power
 
-Rio Grande препоръчва **отделна електрическа верига** (която не захранва нищо друго) с правилно заземен контакт. Предлагаме да не използвате удължител. Между изпичанията изключвайте автоматичния предпазител или главния прекъсвач на пещта или изваждайте щепсела ѝ от контакта, за да не може дете да я пусне.
+Rio Grande recommends a **dedicated circuit** (one that powers nothing else) with a properly grounded outlet. We suggest no extension cord. Between firings, switch off the kiln's breaker or disconnect switch, or unplug it, so a child cannot start it.
 
-### Бъдете наблизо, когато изпичането свършва
+### Be there when the firing ends
 
-**Kiln-Sitter** е механичният изключвател на много пещи с ръчно управление: в края на изпичането малък конус{{en: cone}} се огъва и задейства изключвателя. В ръководството за експлоатация на Kiln-Sitter пише, че той „НЕ е предназначен да действа като устройство за изключване, безопасно при отказ“. Rio Grande казва никога да не оставяте работеща пещ без надзор, „особено около очакваното време на изключване“. Затова по време на изпичането стойте наблизо и проверявайте пещта, най-вече към края му; пускайте изпичане само когато у дома ще има възрастен, който ще бъде буден, за да стои наблизо и да проверява пещта, проверявайте дали пещта се е изключила и дръжте пожарогасител ABC в помещението с пещта. Как работят изключвателите Kiln-Sitter, контролерите и програмите за изпичане, вижте в наръчника [Изпичане в обикновена пещ](/guides/firing).
+A **kiln sitter** is the mechanical switch on many manual kilns: a small cone bends at the end of the firing and trips the switch off. Its manual says it "is NOT intended to perform as a fail-safe shut-off device." Rio Grande says never to leave a firing kiln unattended, "especially near the expected shut-off time". So stay nearby and check the kiln while it fires, above all near the end; fire only when an adult will be home and awake through the whole firing, check that it has switched off, and keep an ABC fire extinguisher in the kiln room. For how sitters, controllers and schedules work, see [Firing a basic kiln](/guides/firing).
 
-### Газове и въглероден оксид
+### Fumes and carbon monoxide
 
-При изпичане се отделят газове и пари, затова извеждайте газовете от пещта навън; как, обяснява наръчникът [Безопасно смесване и вентилация](/guides/safe-mixing). Пещ в гараж, долепен до къщата, се нуждае от вентилация, която не позволява газовете да стигнат до къщата през свързващата врата. Винаги по време на изпичане дръжте птиците в отдалечена стая.
+Firing gives off fumes, so vent the kiln to the outdoors; [Safe mixing and ventilation](/guides/safe-mixing) explains how. A kiln in an attached garage needs venting that keeps fumes from reaching the house through the connecting door. Keep birds in a far room whenever the kiln fires.
 
-**Въглеродният оксид** (CO) е отровен газ, който не можете да видите или помиришете. Инструкция за безопасност при работа с пещи на един университет изисква детектори за въглероден оксид при газовите пещи. За електрическите пещи мненията се различават, но при изгарянето на органичните вещества (в глината или в неща като хартия или восък) може да се образува CO. Смятаме, че детектор за въглероден оксид в помещението с пещта и в съседните стаи е разумна и евтина мярка за всяка пещ.
+**Carbon monoxide** (CO) is a poisonous gas you cannot see or smell. A university kiln safety sheet requires CO alarms with gas kilns. Views differ for electric kilns, but burning off organic matter (in clay, or things like paper or wax) can make CO. We think a CO alarm in the kiln room and the rooms next to it is a sensible, inexpensive step for any kiln.
 
-### Наблюдателните отвори и очите
+### Peepholes and eyes
 
-Инфрачервеното лъчение, което не можете да видите, „започва от 752°F (400°C)“, а Ceramic Arts Network посочва, че гледането в пещ над тази температура следва винаги да става със защита за очите. Инфрачервеното лъчение може да увреди лещата на окото и да доведе до катаракта, а продължителното взиране може да увреди ретината. Слънчевите и дидимиевите очила не го спират.
+Infrared light, which you cannot see, "starts at 752°F (400°C)", and the Ceramic Arts Network says looking into a kiln above this should always be done with eye protection. Infrared can damage the lens of the eye and lead to cataracts, and long gazing can injure the retina. Sunglasses and didymium glasses do not block it.
 
 > [!WARNING]
-> Децата изобщо не следва да гледат в пещ. Светещият наблюдателен отвор ги привлича, а на тях не може да се разчита, че ще държат предпазните очила на очите си, затова ги дръжте далеч, докато пещта е гореща. Възрастните следва да гледат само за кратко, през заваръчни очила с IR филтър. Източниците препоръчват степени на затъмняване от 1,7 до 5; степен 3 е разумен избор, а по-тъмна, ако след това виждате петна пред очите си.
+> Children should not look into a kiln at all. A glowing peephole draws them, and they will not reliably keep protective glasses on, so keep them away while the kiln is hot. Adults should look only briefly, through IR-rated welding glasses. Sources recommend shades from 1.7 to 5; shade 3 is a sensible choice, darker if you see spots afterward.
 
 ## Ръчно изработени съдове на семейната трапеза {#handmade-ware}
 

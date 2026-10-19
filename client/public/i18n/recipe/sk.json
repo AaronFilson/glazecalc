@@ -472,7 +472,6 @@
     "expansionRises": "Jej vypočítaná tepelná rozťažnosť stúpa: predtým {was}, teraz {now}.",
     "expansionRisesProbably": "Ak bola pôvodná glazúra s vašou hlinou zladená len tesne, táto bude pravdepodobne trhlinkovať, niekedy až po týždňoch.",
     "expansionRisesMay": "Ak bola pôvodná glazúra s vašou hlinou zladená len tesne, táto môže trhlinkovať, niekedy až po týždňoch.",
-    "expansionRisesFix": "Trhlinkovanie oslabuje výrobky a na plochy v styku s potravinami sa neodporúča. Rozťažnosť zníži výmena časti sodíka a draslíka za taviva s nižšou rozťažnosťou (bór, lítium, horčík alebo vápnik); pridanie oxidu kremičitého sa niekedy navrhuje, ale zdroje sa nezhodujú.",
     "expansionFalls": "Jej vypočítaná tepelná rozťažnosť klesá: predtým {was}, teraz {now}. Trochu nižšia zvyčajne lepšie odoláva trhlinkovaniu.",
     "expansionFallsProbably": "Pri oveľa nižšej sa glazúra pravdepodobne bude odlupovať a z okrajov a hrán budú odskakovať ostré úlomky.",
     "expansionFallsCan": "Pri oveľa nižšej sa glazúra môže odlupovať a z okrajov a hrán môžu odskakovať ostré úlomky.",
@@ -904,7 +903,6 @@
     "foodSurface": "Pre plochu v styku s potravinami (glazúra na vnútro nádob)",
     "liner": {
       "note": "Bezpečnosť pri styku s potravinami závisí od toho, či sa táto glazúra vypáli na kužeľ, na ktorý bola skúšaná: nedopálená glazúra môže uvoľňovať kovy.",
-      "range": "Je uvedená pre rozsah, preto ju vyskúšajte na dolnom konci rozsahu, kde sa taví najmenej.",
       "untested": "Zatiaľ nie je označený žiadny vyskúšaný kužeľ.",
       "test": "Len skúška vylúhovania kovov z vašich vlastných vypálených nádob ukáže, či je bezpečná na styk s potravinami."
     },

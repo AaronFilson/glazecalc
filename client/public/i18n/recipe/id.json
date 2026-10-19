@@ -472,7 +472,6 @@
     "expansionRises": "Ekspansi terhitungnya naik dari {was} menjadi {now}.",
     "expansionRisesProbably": "Jika glasir lama hanya pas dengan tanah liat Anda, glasir ini kemungkinan akan retak halus, kadang berminggu-minggu kemudian.",
     "expansionRisesMay": "Jika glasir lama hanya pas dengan tanah liat Anda, glasir ini dapat retak halus, kadang berminggu-minggu kemudian.",
-    "expansionRisesFix": "Retak halus melemahkan benda dan tidak dianjurkan pada permukaan pangan. Mengganti sebagian natrium dan kalium dengan pelebur yang berekspansi lebih rendah (boron, litium, magnesium, atau kalsium) menurunkan ekspansinya; menambah silika kadang disarankan, tetapi sumber-sumber tidak sepakat.",
     "expansionFalls": "Ekspansi terhitungnya turun dari {was} menjadi {now}. Sedikit lebih rendah biasanya lebih tahan retak halus.",
     "expansionFallsProbably": "Jauh lebih rendah kemungkinan akan mengelupas, dengan serpihan tajam dari tepi dan sudut.",
     "expansionFallsCan": "Jauh lebih rendah dapat mengelupas, dengan serpihan tajam dari tepi dan sudut.",
@@ -904,7 +903,6 @@
     "foodSurface": "Untuk permukaan makanan (glasir lapisan dalam)",
     "liner": {
       "note": "Keamanan pangan bergantung pada pembakaran glasir ini sampai kerucut tempat glasir itu diuji: glasir yang kurang matang dapat mengalami pelindian.",
-      "range": "Kerucutnya diberikan sebagai rentang, jadi ujilah pada ujung bawah rentang, tempat glasir paling sedikit meleleh.",
       "untested": "Belum ada kerucut yang ditandai sebagai sudah diuji.",
       "test": "Hanya uji pelindian terhadap benda Anda sendiri yang sudah dibakar yang menunjukkan apakah glasir ini aman untuk pangan."
     },

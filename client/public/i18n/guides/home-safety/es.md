@@ -149,38 +149,38 @@ La Pet Poison Helpline dice que «El plomo es tóxico para todas las especies, p
 
 Si una mascota puede haber comido o bebido algo del taller, o muestra signos como los descritos arriba, llame a su veterinario o a una línea de información toxicológica para animales (vea la tabla del principio), con el nombre del material y el peso de la mascota a mano.
 
-## El horno cerámico {#the-kiln}
+## The kiln {#the-kiln lang=en}
 
-### Por fuera se calienta lo bastante para quemar
+### The outside gets hot enough to burn
 
-Una evaluación de riesgos para colegios del Reino Unido dice que el exterior de un horno «puede alcanzar 160 °C y posiblemente más» (unos 320 °F), y una guía de hornos para colegios recoge que las bandas metálicas llegan hasta 460 °F (unos 240 °C). Skutt, un fabricante de hornos, recomienda una sala del horno que se pueda cerrar con llave para que no entren niños ni mascotas. Donde no se pueda cerrar la sala con llave, la guía para colegios sugiere una barrera, como una mampara de seguridad para hornos.
+A UK schools risk assessment says a kiln's outside "can reach 160 °C and possibly more" (about 320 °F), and a school kiln guide reports metal bands at up to 460 °F (about 240 °C). Skutt, a kiln maker, recommends a kiln room that can be locked against children and pets. Where a room cannot be locked, the school guide suggests a barrier such as a kiln safety screen.
 
-Le recomendamos mantener a los niños pequeños y a las mascotas, que no pueden entender un cartel de advertencia, tras una puerta cerrada con llave o una barrera mientras el horno cuece y mientras se enfría, y poner un cartel de advertencia para todos los demás.
+Small children and pets cannot understand a warning sign. We suggest keeping them behind a locked door or a barrier while the kiln fires and while it cools, and posting a warning sign for everyone else.
 
-### Espacio alrededor
+### Space around it
 
-Las fuentes no coinciden en la distancia de seguridad. Rio Grande indica al menos 12 pulgadas (30 cm) de separación con las paredes y con cualquier cosa combustible. L&L recomienda encarecidamente 18 pulgadas (46 cm) de separación con todas las paredes, y el código de edificación que cita pide 3 pies (0,9 m) con las paredes combustibles. Siga el manual de su horno y la normativa local contra incendios; si tiene dudas, deje 18 pulgadas de separación con cualquier pared y 3 pies con cualquier cosa que pueda arder. En un garaje, mantenga bien lejos los coches, el combustible y la pintura.
+Sources disagree on clearance. Rio Grande says at least 12 inches (30 cm) from walls and anything combustible. L&L strongly recommends 18 inches (46 cm) to all walls, and the building code it cites asks for 3 feet (0.9 m) from combustible walls. Follow your kiln's manual and local fire code; if you are unsure, allow 18 inches from any wall and 3 feet from anything that can burn. In a garage, keep cars, fuel and paint well away.
 
-### Electricidad
+### Power
 
-Rio Grande recomienda un **circuito independiente** (uno que no alimente nada más), con una toma de corriente bien conectada a tierra. Le recomendamos no usar alargadores. Entre cocciones, desconecte el interruptor automático o el seccionador del horno, o desenchúfelo, para que un niño no pueda ponerlo en marcha.
+Rio Grande recommends a **dedicated circuit** (one that powers nothing else) with a properly grounded outlet. We suggest no extension cord. Between firings, switch off the kiln's breaker or disconnect switch, or unplug it, so a child cannot start it.
 
-### Esté presente al final de la cocción
+### Be there when the firing ends
 
-Un **kiln sitter** es el interruptor mecánico de muchos hornos manuales: un cono{{en: cone}} pequeño se dobla al final de la cocción y hace saltar el interruptor. Su manual dice que «NO está pensado para funcionar como dispositivo de apagado a prueba de fallos». Rio Grande dice que nunca se deje sin vigilancia un horno que está cociendo, «sobre todo cerca de la hora prevista de apagado». Así que permanezca cerca y revise el horno mientras cuece, sobre todo hacia el final; cueza solo cuando vaya a haber un adulto en casa y despierto para permanecer cerca y revisarlo, compruebe que el horno se ha apagado y tenga un extintor ABC en la sala del horno. Para saber cómo funcionan los kiln sitters, los programadores y las curvas de cocción, vea [La cocción en un horno sencillo](/guides/firing).
+A **kiln sitter** is the mechanical switch on many manual kilns: a small cone bends at the end of the firing and trips the switch off. Its manual says it "is NOT intended to perform as a fail-safe shut-off device." Rio Grande says never to leave a firing kiln unattended, "especially near the expected shut-off time". So stay nearby and check the kiln while it fires, above all near the end; fire only when an adult will be home and awake through the whole firing, check that it has switched off, and keep an ABC fire extinguisher in the kiln room. For how sitters, controllers and schedules work, see [Firing a basic kiln](/guides/firing).
 
-### Humos y monóxido de carbono
+### Fumes and carbon monoxide
 
-La cocción desprende humos, así que ventile el horno hacia el exterior; [Preparación segura y ventilación](/guides/safe-mixing) explica cómo. Un horno en un garaje anexo a la casa necesita una ventilación que impida que los humos lleguen a la vivienda por la puerta que los comunica. Tenga las aves en una habitación alejada siempre que el horno esté cociendo.
+Firing gives off fumes, so vent the kiln to the outdoors; [Safe mixing and ventilation](/guides/safe-mixing) explains how. A kiln in an attached garage needs venting that keeps fumes from reaching the house through the connecting door. Keep birds in a far room whenever the kiln fires.
 
-El **monóxido de carbono** (CO) es un gas tóxico que no se puede ver ni oler. La ficha de seguridad de hornos de una universidad exige detectores de CO con los hornos de gas. Con los hornos eléctricos las opiniones difieren, pero la combustión de la materia orgánica (de la arcilla, o de cosas como papel o cera) puede producir CO. Creemos que un detector de CO en la sala del horno y en las habitaciones contiguas es una medida sensata y económica con cualquier horno.
+**Carbon monoxide** (CO) is a poisonous gas you cannot see or smell. A university kiln safety sheet requires CO alarms with gas kilns. Views differ for electric kilns, but burning off organic matter (in clay, or things like paper or wax) can make CO. We think a CO alarm in the kiln room and the rooms next to it is a sensible, inexpensive step for any kiln.
 
-### Mirillas y ojos
+### Peepholes and eyes
 
-La luz infrarroja, que no se ve, «empieza a 752°F (400°C)», y Ceramic Arts Network dice que mirar dentro de un horno por encima de esa temperatura debería hacerse siempre con protección ocular. El infrarrojo puede dañar el cristalino del ojo y provocar cataratas, y mirar fijamente durante mucho tiempo puede lesionar la retina. Las gafas de sol y las gafas de didimio no lo bloquean.
+Infrared light, which you cannot see, "starts at 752°F (400°C)", and the Ceramic Arts Network says looking into a kiln above this should always be done with eye protection. Infrared can damage the lens of the eye and lead to cataracts, and long gazing can injure the retina. Sunglasses and didymium glasses do not block it.
 
 > [!WARNING]
-> Los niños no deberían mirar dentro de un horno en absoluto. Una mirilla incandescente los atrae, y no se puede contar con que se dejen puestas las gafas de protección, así que manténgalos alejados mientras el horno esté caliente. Los adultos deberían mirar solo un momento, con gafas de soldadura con filtro de infrarrojo. Las fuentes recomiendan grados de protección de 1,7 a 5; el grado 3 es una opción sensata, o uno más oscuro si después ve manchas.
+> Children should not look into a kiln at all. A glowing peephole draws them, and they will not reliably keep protective glasses on, so keep them away while the kiln is hot. Adults should look only briefly, through IR-rated welding glasses. Sources recommend shades from 1.7 to 5; shade 3 is a sensible choice, darker if you see spots afterward.
 
 ## Piezas hechas a mano en la mesa familiar {#handmade-ware}
 

@@ -165,69 +165,69 @@ Așteptați-vă la diferențe: Orton spune că „De obicei, veți vedea o difer
 
 :::orton
 
-## Întrerupătorul Kiln-Sitter {#kiln-sitter}
+## The kiln sitter {#kiln-sitter lang=en}
 
-**Kiln-Sitter** este întrerupătorul mecanic, montat pe exteriorul multor cuptoare simple și mai vechi, care oprește cuptorul când se îndoaie un con{{en: cone}} mic. Cel mai cunoscut este Kiln-Sitter de la Dawson. Face arderea mai ușoară, dar este o comoditate, nu un dispozitiv de siguranță.
+A **kiln sitter** is the mechanical switch, on the outside of many basic and older kilns, that turns the kiln off when a small cone bends. The best known is the Dawson Kiln-Sitter. It makes firing easier, but it is a convenience, not a safety device.
 
-### Cum funcționează
+### How it works
 
-Un tub de porțelan pătrunde în cuptor. La capătul lui, un con mic sau o bară stă de-a curmezișul pe două suporturi metalice, sub o **tijă senzor** care basculează ca un balansoar. În afara cuptorului, celălalt capăt al tijei ține ridicată o greutate cu ajutorul unei gheare mici. Când conul se înmoaie și se îndoaie la aproximativ 90°, tija coboară destul cât să elibereze greutatea, greutatea cade și alimentarea rezistențelor este întreruptă.
+A porcelain tube reaches into the kiln. At its end, a small cone or a bar lies across two metal supports, under a **sensing rod** that pivots like a seesaw. Outside the kiln, the other end of the rod holds up a weight by a small claw. When the cone softens and bends to about 90°, the rod drops far enough to release the weight, the weight falls, and the power to the elements is cut.
 
-Conurile mici și barele „dau un tratament termic echivalent”. Orton observă că mulți începători aleg barele, pentru că forma lor uniformă le face ușor de așezat la fel de fiecare dată. Un con mic se subțiază spre vârf, așa că poziția lui contează: cu partea subțire sub tijă, cuptorul se oprește la o temperatură mai joasă, iar cu partea groasă, la una mai înaltă, o diferență „de până la 1/2 con”.
+Small cones and bars "give equivalent heat treatment". Orton notes that many beginners choose bars, because their even shape makes it easy to place them the same way every time. A small cone tapers, so where it sits matters: with its thin part under the rod the kiln shuts off cooler, and with its thick part hotter, a shift of "as much as 1/2 cone".
 
-### Ce con puneți în Kiln-Sitter
+### Which cone goes in the sitter
 
-Sursele nu sunt de acord. Dawson, care a produs Kiln-Sitter, spune să folosiți același număr ca al conului țintă de pe placă și să treceți la conul imediat mai fierbinte doar dacă conul de pe placă rămâne neîndoit. L&L spune să folosiți conul imediat mai fierbinte decât conurile de pe placă, pentru că Kiln-Sitter se află lângă perete și lângă rezistențe, primește mai multă căldură și tinde să oprească cuptorul prea devreme. Orton stabilește principiul: „Conul de pe placă este judecătorul final al procesului de ardere, nu conul sau bara din Kiln-Sitter.”
-
-> [!NOTE]
-> Punctul nostru de plecare: puneți în Kiln-Sitter un con mic cu același număr ca ținta, cu un set de conuri{{en: cone pack}} pe placă. Dacă, atunci când cuptorul se oprește, conul țintă de pe placă este îndoit insuficient, data viitoare puneți în Kiln-Sitter conul imediat mai fierbinte sau așezați partea mai groasă a conului sub tijă. Dacă este îndoit prea mult, faceți invers.
-
-### Pregătirea și verificările dinaintea fiecărei arderi
-
-Procedura Dawson, care servește și ca verificare înainte de fiecare ardere:
-
-1. Opriți toate comutatoarele. Verificați că tija senzor se mișcă liber, stă centrată în tub și nu este îndoită sau corodată. Dacă se mișcă greu, Dawson spune să înlocuiți ansamblul tubului.
-2. Aplicați cu pensula, pe suporturile conului și pe tijă, acolo unde atinge conul, un strat subțire de **kiln wash** pentru temperatură înaltă (stratul protector care împiedică lipirea materialului topit). Nu puneți niciodată acest strat protector pe con sau pe tubul de porțelan.
-3. Așezați plăcile și piesele la cel puțin 1 țol (25 mm) deasupra sau dedesubtul tubului, ca nimic să nu-l poată atinge, să nu cadă pe el și să nu-l blocheze.
-4. Ridicați greutatea, apăsați gheara în jos pe declanșator și așezați conul sau bara pe suporturi, în poziție culcată și în contact cu treapta metalică, cum arată manualul dispozitivului, de fiecare dată la fel. Verificați din nou înainte să închideți capacul: „AȘEZAREA GREȘITĂ A CONULUI SAU A BAREI AR PUTEA PROVOCA O ARDERE EXCESIVĂ.”
-5. Setați temporizatorul de siguranță și apăsați butonul de pornire până se blochează. Țineți cuptorul orizontal și spațiul de sub greutate liber, ca greutatea să poată cădea.
-
-### Temporizatorul de siguranță
-
-Multe dispozitive Kiln-Sitter, inclusiv modelele LT de la Dawson, au un **temporizator de siguranță**: un ceas care oprește cuptorul după un timp stabilit, ca rezervă „în cazul în care KILN-SITTER se defectează”. Ar trebui setat întotdeauna pe un timp mai lung decât durata estimată a arderii. Sursele stabilesc marja diferit:
-
-Table: Pe cât timp setați temporizatorul de siguranță
-Label: Setările temporizatorului
-
-| Sursă     | Setare                                                                                                                                                    |
-| --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Dawson    | Cu ½ oră peste durata estimată a arderii până când vă cunoașteți cuptorul, mai târziu cu doar ¼ oră peste; nu-l setați niciodată la mai mult de 20 de ore |
-| L&L       | Pe o durată foarte lungă prima dată, notând cât durează arderea; după aceea, cu aproximativ 1 oră peste                                                   |
-| Bracker's | Cu 30 de minute până la 1 oră peste durata arderii                                                                                                        |
+Sources disagree. Dawson, who made the sitter, says to use the same number as the firing cone on the shelf, and to go one number hotter only if the shelf cone stays unbent. L&L says to use one number hotter than the shelf cones, because the sitter sits near the wall and the elements, gets more heat, and tends to shut off early. Orton settles the principle: "The shelf cone is the final judge of the firing process, not the Kiln-Sitter cone or bar."
 
 > [!NOTE]
-> Punctul nostru de plecare: generos prima dată (în limita celor 20 de ore de pe cadran), apoi cu ½ până la 1 oră peste timpul pe care l-ați notat. Temporizatorul vă arată și cât a durat arderea: setat la 7 și oprit la 1 înseamnă 6 ore.
+> Our starting point: put a small cone of the same number as your target in the sitter, with a cone pack on the shelf. If the shelf firing cone is under-bent when the kiln shuts off, go one number hotter in the sitter next time, or set the thicker part of the cone under the rod. If it is over-bent, do the opposite.
 
-### Când se oprește prea devreme sau prea târziu
+### Setting it up, and checks before every firing
 
-După fiecare ardere, citiți conul din Kiln-Sitter alături de conurile de pe placă.
+Dawson's procedure, which doubles as a check before every firing:
 
-Table: Citirea dispozitivului Kiln-Sitter după ardere
-Label: Probleme cu Kiln-Sitter
+1. Turn all the switches off. Check that the sensing rod moves freely, sits centered in the tube and is not bent or corroded. If it is sluggish, Dawson says to replace the tube assembly.
+2. Brush a thin coat of high-fire **kiln wash** (a coating that stops melted material sticking) onto the cone supports and the rod where it touches the cone. Never put wash on the cone or the porcelain tube.
+3. Load shelves and ware at least 1 in (25 mm) above or below the tube, so nothing can touch, fall against or block it.
+4. Lift the weight, press the claw down onto the trigger, and lay the cone or bar flat on the supports against the metal step, as your sitter's manual shows, the same way every time. Check it again before closing the lid: "AN IMPROPERLY PLACED CONE OR BAR COULD CAUSE AN OVERFIRING."
+5. Set the limit timer and push in the plunger until it locks. Keep the kiln level and the space under the weight clear, so the weight can fall.
 
-| Ce vedeți                                                                  | Cauza probabilă                                                                                           | Ce faceți                                                                        |
-| -------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
-| Kiln-Sitter s-a declanșat, conul țintă de pe placă este îndoit insuficient | Kiln-Sitter a primit mai multă căldură decât placa (se află lângă perete)                                 | Conul imediat mai fierbinte în Kiln-Sitter sau partea mai groasă sub tijă        |
-| Conul din Kiln-Sitter s-a lăsat mult peste 90°                             | Cuptorul a urcat prea repede spre final                                                                   | Coborâți pozițiile comutatoarelor, ca urcarea să fie mai lentă (Dawson)          |
-| Conul din Kiln-Sitter nu s-a îndoit sau s-a topit, formând o masă informă  | Kiln-Sitter însuși: reglaj greșit, o tijă îndoită sau corodată ori ceva blocat în tub sau sprijinit de el | Verificați și reglați Kiln-Sitter după manualul lui înainte de următoarea ardere |
-| De fiecare dată prea devreme sau prea târziu                               | Dereglat sau cu tija uzată                                                                                | Verificați cu calibrul de reglare; mutați placa declanșatoare                    |
+### The limit timer
 
-Pentru a verifica reglajul, Dawson folosește un **calibru de reglare** care ține tija în poziția în care ar lăsa-o un con complet îndoit; atunci ar trebui să existe „un joc de 1/16 țol” (aproximativ 1,6 mm) la gheară. Verificați-l la fiecare 30 de arderi. Regula din Ceramics Monthly: dacă cuptorul se oprește prea devreme, mutați placa declanșatoare puțin mai sus; dacă se oprește prea târziu, puțin mai jos. Orice ar face Kiln-Sitter, „Aveți întotdeauna mai multă încredere în conurile martor mari decât în conurile mici din Kiln-Sitter.”
+Many sitters, including Dawson's LT models, have a **limit timer**: a clock that turns the kiln off after a set time, as a backup "in case the KILN-SITTER fails". It should always be set longer than the firing is expected to take. Sources set the margin differently:
+
+Table: How long to set the limit timer
+Label: Limit timer settings
+
+| Source    | Setting                                                                                                                |
+| --------- | ---------------------------------------------------------------------------------------------------------------------- |
+| Dawson    | ½ hour longer than the expected firing time until you know the kiln, later ¼ hour longer; never set it beyond 20 hours |
+| L&L       | Very high the first time, noting how long the firing takes; after that, about 1 hour longer                            |
+| Bracker's | 30 minutes to 1 hour longer than the firing time                                                                       |
+
+> [!NOTE]
+> Our starting point: generous the first time (within the dial's 20 hours), then ½ to 1 hour longer than the time you recorded. The timer also tells you how long a firing took: set at 7 and ending at 1 means 6 hours.
+
+### When it shuts off early or late
+
+After each firing, read the sitter cone beside the shelf cones.
+
+Table: Reading the sitter after a firing
+Label: Kiln sitter problems
+
+| What you see                                    | Likely cause                                                                                           | What to do                                                       |
+| ----------------------------------------------- | ------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------- |
+| Sitter tripped, shelf firing cone under-bent    | The sitter ran hotter than the shelf (it sits near the wall)                                           | One cone hotter in the sitter, or the thicker part under the rod |
+| Sitter cone sagged well past 90°                | The kiln climbed too fast near the end                                                                 | Lower the switch settings, so the climb is slower (Dawson)       |
+| Sitter cone did not bend, or melted into a blob | The sitter itself: poor adjustment, a bent or corroded rod, or something lodged in or against the tube | Check and adjust the sitter by its manual before firing again    |
+| Early or late every time                        | Out of adjustment, or a worn rod                                                                       | Check with the firing gauge; move the trigger plate              |
+
+To check the adjustment, Dawson uses a **firing gauge** that holds the rod where a fully bent cone would leave it; there should then be "1/16th-inch clearance" (about 1.6 mm) at the claw. Check it every 30 firings. Ceramics Monthly's rule: if the kiln shuts off early, move the trigger plate up slightly; if late, move it down slightly. Whatever the sitter does, "Always trust large witness cones over small sitter cones."
 
 > [!WARNING]
-> **Kiln-Sitter nu este un dispozitiv de siguranță.** Manualul Dawson spune că „NU este destinat să funcționeze ca dispozitiv de oprire sigură în caz de defecțiune, iar cuptorul NU ar trebui lăsat nesupravegheat după durata estimată a arderii”. Ceva atât de simplu ca o piesă crudă{{en: greenware}} care cade pe tub „ar putea provoca o ardere excesivă”. Fiți de față ca să verificați cuptorul când arderea ar trebui să se încheie și nu porniți niciodată cuptorul deasupra sau în apropierea a ceva ce poate lua foc, cum ar fi o podea de lemn sau un covor.
+> **A kiln sitter is not a safety device.** Dawson's manual says it "is NOT intended to perform as a fail-safe shut-off device and your kiln should NOT be left unattended beyond the estimated firing time." Something as simple as greenware falling against the tube "might cause an over-firing". Be there to check the kiln when it should be finishing, and never fire it over or near anything that burns, such as a wood floor or carpet.
 
-Kiln-Sitter este construit pentru arderi „până la conul 8 inclusiv”. Nu poate menține singur o temperatură și nici nu poate răci lent cuptorul. Totuși, cu exercițiu și cu un jurnal, puteți „deveni controlerul”, cum spune Digitalfire: urmăriți conurile și rotiți comutatoarele manual.
+The sitter is built for firings "up to and including Cone 8". It cannot hold a temperature or cool slowly by itself. With practice and a log, though, you can "become the controller", as Digitalfire puts it: watch the cones and turn the switches by hand.
 
 :::
 
@@ -281,92 +281,92 @@ Label: Ajustarea următoarei arderi
 
 :::sk
 
-## Arderea la conuri SK {#sk-cones}
+## Firing to SK cones {#sk-cones lang=en}
 
-Conurile SK sunt conurile pirometrice fabricate după standardul japonez JIS R 8101 și vândute în Japonia de distribuitori precum Yuko Trading (有恒商事). Ca orice con, un con SK măsoară lucrul termic{{en: heatwork}}, nu doar temperatura: se înmoaie și se îndoaie când piesele au primit destulă căldură, iar apoi citiți cât de mult s-a îndoit. Conurile martor{{en: witness cones}}, citirea gradului de îndoire a unui con și menținerile{{en: holds}} funcționează la el ca la orice con. Această secțiune numește sistemul fiecărui con și nu transformă niciodată un număr SK în numărul altui sistem: numerele diferitelor serii de conuri nu sunt interschimbabile.
+SK cones are the pyrometric cones made to Japan's standard, JIS R 8101, and sold in Japan by dealers such as Yuko Trading (有恒商事). Like any cone, an SK cone measures heatwork, not temperature alone: it softens and bends over when the ware has had enough heat, and you read how far it bent. Witness cones, reading how far a cone has bent, and holds work for it as for any cone. This section names each cone's system, and never turns an SK number into another system's number: the numbers of different cone series are not interchangeable.
 
 > [!NOTE]
-> Scrieți întotdeauna „SK” înaintea numărului. Multe rețete japoneze mai vechi spun doar „SK 8” sau „SK 9”, fără să spună al cui este conul. Conurile Kyoto și conurile SK după JIS au aceleași numere, dar se îndoaie la temperaturi diferite (vedeți „Conurile Kyoto”, mai jos).
+> Always write "SK" before the number. Many older Japanese recipes say only "SK 8" or "SK 9" without saying whose cone. Kyoto cones and SK cones to JIS carry the same numbers but bend at different temperatures (see Kyoto cones, below).
 
-### Conurile mari
+### The large cones
 
-Standardul are două mărimi. Conurile mari (大型コーン) sunt „folosite în principal pentru măsurarea gradului de ardere” (焼度測定), adică ceea ce îi trebuie unui ceramist. Conurile mici (de la SK 26 la SK 42, la capătul de sus al gamei) sunt „folosite în principal pentru încercările de refractaritate” și nu sunt tratate aici. Tabelul de mai jos dă conurile mari de la SK 022 la SK 20.
+The standard has two sizes. Large cones (大型コーン) are "mainly used for measuring the degree of firing" (焼度測定), which is what a potter wants. Small cones (SK 26 to SK 42, at the top of the range) are "mainly used for refractoriness tests" and are not covered here. The table below gives the large cones from SK 022 to SK 20.
 
-Aici numerele merg de la SK 022, cel mai rece, până la SK 20. Între SK 015 și SK 6, numerele tipărite au un „a” (SK 015a, SK 6a); scrieți-l așa cum este tipărit.
+The numbers run from SK 022, the coolest, up to SK 20 here. Between SK 015 and SK 6 the printed numbers carry an "a" (SK 015a, SK 6a); write it as printed.
 
-### Așezarea conurilor mari
+### Setting large cones
 
-Fixați fiecare con mare într-un suport de conuri sau într-o turtă de argilă, înclinat spre fața de îndoire. Ca la orice con, păstrați aceeași înălțime și aceeași înclinare de la o ardere la alta, pentru că o diferență la oricare dintre ele schimbă cât de mult se îndoaie conul. Așezați împreună cele trei conuri ale setului{{en: cone pack}} (vedeți mai jos), adânc în cuptor, aproape de centrul încărcăturii, unde primesc aceeași căldură ca piesele, dar unde le puteți vedea prin vizor; înainte să închideți cuptorul, verificați că le vedeți pe toate trei.
+Set each large cone in a plaque or a pat of clay, leaning toward its bending face. As with any cone, keep the height and the lean the same from firing to firing, because a difference in either changes how far it bends. Set the three cones of the pack (below) together, deep in the kiln near the middle of the load, where they get the heat the ware gets, yet where you can see them through a peephole; before you close the kiln, check that you can see all three.
 
-### Conul de ghidaj, conul țintă și conul de control
+### Guide, firing and guard cones
 
-Conurile se vând și se așază câte trei: un con de ghidaj, un con țintă la temperatura dorită și un con de control. Luați drept con țintă numărul SK pe care îl indică rețeta sau argila, drept con de ghidaj conul imediat mai rece (un rând mai sus în tabel) și drept con de control conul imediat mai fierbinte. Când conul de ghidaj începe să se îndoaie, finalul este aproape; când se îndoaie conul de control, arderea a mers prea departe.
+Cones are sold and set as three: a guide cone, a firing cone at the target, and a guard cone. Take the firing cone as the SK number your recipe or clay names, the guide cone as the next cooler cone (one row up in the table) and the guard cone as the next hotter one. When the guide cone starts to bend, the end is near; when the guard cone bends, the firing has gone too far.
 
-### Tabelul SK
+### The SK chart
 
-Table: Conurile SK mari (JIS R 8101): temperatura nominală (JIS) a fiecăruia
-Label: Tabelul SK
+Table: SK large cones (JIS R 8101): the nominal (JIS) temperature of each
+Label: SK chart
 
-| Con     | Temperatura nominală (JIS) |
-| ------- | -------------------------: |
-| SK 022  |        {{1112 °F; 600 °C}} |
-| SK 021  |        {{1202 °F; 650 °C}} |
-| SK 020  |        {{1238 °F; 670 °C}} |
-| SK 019  |        {{1274 °F; 690 °C}} |
-| SK 018  |        {{1310 °F; 710 °C}} |
-| SK 017  |        {{1346 °F; 730 °C}} |
-| SK 016  |        {{1382 °F; 750 °C}} |
-| SK 015a |        {{1454 °F; 790 °C}} |
-| SK 014a |        {{1499 °F; 815 °C}} |
-| SK 013a |        {{1535 °F; 835 °C}} |
-| SK 012a |        {{1571 °F; 855 °C}} |
-| SK 011a |        {{1616 °F; 880 °C}} |
-| SK 010a |        {{1652 °F; 900 °C}} |
-| SK 09a  |        {{1688 °F; 920 °C}} |
-| SK 08a  |        {{1724 °F; 940 °C}} |
-| SK 07a  |        {{1760 °F; 960 °C}} |
-| SK 06a  |        {{1796 °F; 980 °C}} |
-| SK 05a  |       {{1832 °F; 1000 °C}} |
-| SK 04a  |       {{1868 °F; 1020 °C}} |
-| SK 03a  |       {{1904 °F; 1040 °C}} |
-| SK 02a  |       {{1940 °F; 1060 °C}} |
-| SK 01a  |       {{1976 °F; 1080 °C}} |
-| SK 1a   |       {{2012 °F; 1100 °C}} |
-| SK 2a   |       {{2048 °F; 1120 °C}} |
-| SK 3a   |       {{2084 °F; 1140 °C}} |
-| SK 4a   |       {{2120 °F; 1160 °C}} |
-| SK 5a   |       {{2156 °F; 1180 °C}} |
-| SK 6a   |       {{2192 °F; 1200 °C}} |
-| SK 7    |       {{2246 °F; 1230 °C}} |
-| SK 8    |       {{2282 °F; 1250 °C}} |
-| SK 9    |       {{2336 °F; 1280 °C}} |
-| SK 10   |       {{2372 °F; 1300 °C}} |
-| SK 11   |       {{2408 °F; 1320 °C}} |
-| SK 12   |       {{2462 °F; 1350 °C}} |
-| SK 13   |       {{2516 °F; 1380 °C}} |
-| SK 14   |       {{2570 °F; 1410 °C}} |
-| SK 15   |       {{2615 °F; 1435 °C}} |
-| SK 16   |       {{2660 °F; 1460 °C}} |
-| SK 17   |       {{2696 °F; 1480 °C}} |
-| SK 18   |       {{2732 °F; 1500 °C}} |
-| SK 19   |       {{2768 °F; 1520 °C}} |
-| SK 20   |       {{2786 °F; 1530 °C}} |
+| Cone    | Nominal (JIS) temperature |
+| ------- | ------------------------: |
+| SK 022  |       {{1112 °F; 600 °C}} |
+| SK 021  |       {{1202 °F; 650 °C}} |
+| SK 020  |       {{1238 °F; 670 °C}} |
+| SK 019  |       {{1274 °F; 690 °C}} |
+| SK 018  |       {{1310 °F; 710 °C}} |
+| SK 017  |       {{1346 °F; 730 °C}} |
+| SK 016  |       {{1382 °F; 750 °C}} |
+| SK 015a |       {{1454 °F; 790 °C}} |
+| SK 014a |       {{1499 °F; 815 °C}} |
+| SK 013a |       {{1535 °F; 835 °C}} |
+| SK 012a |       {{1571 °F; 855 °C}} |
+| SK 011a |       {{1616 °F; 880 °C}} |
+| SK 010a |       {{1652 °F; 900 °C}} |
+| SK 09a  |       {{1688 °F; 920 °C}} |
+| SK 08a  |       {{1724 °F; 940 °C}} |
+| SK 07a  |       {{1760 °F; 960 °C}} |
+| SK 06a  |       {{1796 °F; 980 °C}} |
+| SK 05a  |      {{1832 °F; 1000 °C}} |
+| SK 04a  |      {{1868 °F; 1020 °C}} |
+| SK 03a  |      {{1904 °F; 1040 °C}} |
+| SK 02a  |      {{1940 °F; 1060 °C}} |
+| SK 01a  |      {{1976 °F; 1080 °C}} |
+| SK 1a   |      {{2012 °F; 1100 °C}} |
+| SK 2a   |      {{2048 °F; 1120 °C}} |
+| SK 3a   |      {{2084 °F; 1140 °C}} |
+| SK 4a   |      {{2120 °F; 1160 °C}} |
+| SK 5a   |      {{2156 °F; 1180 °C}} |
+| SK 6a   |      {{2192 °F; 1200 °C}} |
+| SK 7    |      {{2246 °F; 1230 °C}} |
+| SK 8    |      {{2282 °F; 1250 °C}} |
+| SK 9    |      {{2336 °F; 1280 °C}} |
+| SK 10   |      {{2372 °F; 1300 °C}} |
+| SK 11   |      {{2408 °F; 1320 °C}} |
+| SK 12   |      {{2462 °F; 1350 °C}} |
+| SK 13   |      {{2516 °F; 1380 °C}} |
+| SK 14   |      {{2570 °F; 1410 °C}} |
+| SK 15   |      {{2615 °F; 1435 °C}} |
+| SK 16   |      {{2660 °F; 1460 °C}} |
+| SK 17   |      {{2696 °F; 1480 °C}} |
+| SK 18   |      {{2732 °F; 1500 °C}} |
+| SK 19   |      {{2768 °F; 1520 °C}} |
+| SK 20   |      {{2786 °F; 1530 °C}} |
 
-Toate valorile sunt nominale (JIS): temperatura pe care standardul o dă pentru con, așa cum este tipărită în tabelul Yuko Trading. Tabelul nu indică o viteză de încălzire. Standardul dă temperaturi de referință. La o viteză obișnuită pentru un ceramist, de aproximativ 100 °C/h, institutul municipal din Kyoto a măsurat că propriile sale conuri Kyoto se îndoaie cu 40–70 °C mai jos decât valoarea JIS pentru același număr; pentru conurile SK după JIS nu am găsit astfel de măsurători. Așezați un con martor și comparați.
+Every figure is nominal (JIS): the temperature the standard gives for the cone, as printed in Yuko Trading's table. The table does not print a heating rate. The standard gives reference temperatures. At a potter's rate of about 100 °C/h, Kyoto's municipal institute measured its own Kyoto cones bending 47–79 °C cooler than the JIS figure for the same number; we found no such measurements for SK cones to JIS. Set a witness cone and compare.
 
-### Conurile Kyoto
+### Kyoto cones
 
-Conurile Kyoto (京都ゼーゲル), fabricate de institutul municipal din Kyoto, nu se mai fabrică: potrivit presei, institutul a oprit producția la sfârșitul anului fiscal 2009. Au aceleași numere ca și conurile SK după JIS, dar se îndoaie la temperaturi mai joase: un con Kyoto se îndoaie, în cele mai multe cazuri, cam la temperatura conului SK după JIS cu două trepte mai rece. O rețetă din Kyoto care spune „SK 8” se poate referi la un con Kyoto. Institutul a publicat sfaturi pentru ceramiștii care trec de la conurile Kyoto la conurile Orton și folosește conul Orton 10 în locul propriului său con Kyoto SK 12; aceasta este alegerea institutului, făcută pe baza propriilor măsurători la 100 °C/h, și nu se aplică niciunui alt con.
+Kyoto cones (京都ゼーゲル), made by Kyoto's municipal institute, are no longer made: news reports say the institute ended production at the close of fiscal 2009. They carry the same numbers as SK cones to JIS but bend cooler: a Kyoto cone bends at about the temperature of the SK cone to JIS two or three numbers lower. A recipe from Kyoto that says "SK 8" may mean a Kyoto cone. The institute has published advice for potters moving from Kyoto cones to Orton cones, and substitutes Orton cone 10 for its own Kyoto SK 12; that is the institute's choice from its own measurements at 100 °C/h, and applies to no other cone.
 
-### Conurile Orton vândute în Japonia
+### Orton cones sold in Japan
 
-Conurile Orton autoportante se vând în Japonia sub numele 立つゼーゲル („Seger în picioare”), pentru că nu au nevoie de suport de conuri sau de stativ. Sunt conuri Orton, cu numerele Orton și tabelul Orton (mai sus): ardeți la un astfel de con numai după numărul lui Orton și păstrați conurile SK și conurile Orton în seturi separate, niciodată în același set.
+Orton self-supporting cones are sold in Japan under the name 立つゼーゲル ("standing Seger"), because they need no plaque or stand. They are Orton cones, with Orton's numbers and Orton's chart (above): fire to one only by its Orton number, and keep SK and Orton cones in separate packs, never in the same one.
 
-### Surse pentru conurile SK
+### Sources for SK cones
 
-- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (tabelul SK, verificat la 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
-- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (în vigoare, reconfirmat la 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
-- [Kyoto Municipal Institute of Industrial Technology and Culture: ce trebuie avut în vedere la trecerea de la conurile Kyoto la conurile Orton](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
+- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (the SK table, checked 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
+- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (in force, reconfirmed 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
+- [Kyoto Municipal Institute of Industrial Technology and Culture: points to note when moving from Kyoto cones to Orton cones](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
 
 :::
 

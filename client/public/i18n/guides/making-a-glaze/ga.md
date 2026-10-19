@@ -163,55 +163,55 @@ Label: Mesh an chriathair
 | Glónraí le hábhair datha{{en: colorants}} ar nós cóbailt nó iarainn | 100 go 120 mesh                |
 | Glónraí luaithe, agus glónraí eile le hábhair gharbha               | 60 go 80 mesh                  |
 
-## Sainmheáchan {#specific-gravity}
+## Specific gravity {#specific-gravity lang=en}
 
-Insíonn an **sainmheáchan**{{en: specific gravity, SG}} (SM) duit cé mhéad púdair atá i do dhraoib{{en: slurry}}. Is é atá ann ná meáchan toirte áirithe glónra{{en: glaze}} roinnte ar mheáchan na toirte céanna uisce. Is é 1.00 luach an uisce, agus meánn glónra ag {{SG 1.45}} 145 g sa 100 mL. Má mheascann tú go sainmheáchan tomhaiste, gheobhaidh tú an tiús céanna, agus an brat céanna, gach uair. Níl aonad ar bith leis, mar sin is ionann é i ngraim nó in unsaí.
+**Specific gravity** (SG) tells you how much powder is in your slurry. It is the weight of a volume of glaze divided by the weight of the same volume of water. Water is 1.00, and a glaze at {{SG 1.45}} weighs 145 g per 100 mL. Mixing to a measured SG is how you get the same thickness, and the same coat, every time. It has no units, so it is the same in grams or ounces.
 
-### É a thomhas trí 100 mL a mheá
+### Measure it by weighing 100 mL
 
-1. Corraigh an glónra ionas nach bhfuil aon rud síothlaithe.
-2. Cuir **sorcóir tomhais** 100 mL (feadán tomhais ard marcáilte) nó steallaire 100 mL ar an meá, agus brúigh táir.
-3. Líon le glónra é go dtí 100 mL go díreach, ag léamh an mhairc ag leibhéal na súl.
-4. Meáigh é agus roinn na graim ar 100: is ionann 145 g agus SM 1.45.
+1. Stir the glaze so nothing has settled.
+2. Put a 100 mL **graduated cylinder** (a tall, marked measuring tube) or a 100 mL syringe on the scale, and tare it.
+3. Fill it with glaze to exactly 100 mL, reading the mark at eye level.
+4. Weigh it and divide the grams by 100: 145 g is SG 1.45.
 
-Cuireann Digitalfire marc freisin ar chupán ag leibhéal 500 g uisce, líonann sé go dtí an marc é le glónra, agus roinneann sé an meáchan ar 500; is cruinne tomhas níos mó, níos lána. Is tapa an **hidriméadar**, snámhán a léitear san áit a luíonn sé sa ghlónra, ach is féidir leis léamh mícheart a thabhairt ar ghlónraí tiubha nó glóthaithe. Léann hidriméadair na Ríochta Aontaithe, ar nós an chinn ó Potclays, i gcéimeanna Baumé (°Bé). De réir ár n-uimhríochta, SM = 145 ÷ (145 − °Bé), mar sin is ionann 46 °Bé agus thart ar 1.46. Tugann seanleabhair ón Ríocht Aontaithe **meáchan pionta**, na hunsaí i bpionta impiriúil glónra: roinn ar 20 é, mar sin is ionann 29 oz agus thart ar SM 1.45 (ár n-uimhríocht féin freisin).
+Digitalfire also marks a cup at the level of 500 g of water, fills it to the mark with glaze, and divides the weight by 500; a bigger, fuller measure is more accurate. A **hydrometer**, a float read where it sits in the glaze, is quick but can misread thick or gelled glazes. UK hydrometers, such as Potclays', read in degrees Baumé (°Bé). By our arithmetic, SG = 145 ÷ (145 − °Bé), so 46 °Bé is about 1.46. Older UK books give a **pint weight**, the ounces in an imperial pint of glaze: divide it by 20, so 29 oz is about SG 1.45 (also our arithmetic).
 
-### Cad ar cheart díriú air
+### What to aim for
 
-Ní réitíonn na foinsí le chéile, go háirithe faoi scuabadh agus spraeáil, áit a dtugann Potclays, soláthraí sa Ríocht Aontaithe, figiúirí i bhfad níos airde (deir sé féin go bhfuil a fhigiúirí “mar threoir amháin”). Caith le gach uimhir mar phointe tosaigh. Is é príomhchomhairle Digitalfire an sainmheáchan agus an glóthú a oibríonn do gach glónra a aimsiú, ansin iad a athdhéanamh agus a scríobh síos.
+Sources disagree, most of all on brushing and spraying, where the UK supplier Potclays gives much higher figures (its own are "for guidance only"). Treat every number as a starting point. Digitalfire's core advice is to find the SG and gelling that work for each glaze, then repeat them and write them down.
 
-Table: Spriocanna sainmheáchain, áit a n-easaontaíonn na foinsí
-Label: Spriocanna sainmheáchain
+Table: Specific gravity targets, where sources disagree
+Label: Specific gravity targets
 
-| Úsáid    | Digitalfire agus Glazy                                                                                                                                                      | Potclays (UK)                                           | Pointe tosaigh sábháilte                                                               |
-| -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------- | -------------------------------------------------------------------------------------- |
-| Tumadh   | {{SG 1.40}} (do thumadh 5 shoicind) go {{SG 1.50}} (do thumadh 1 soicind); is fearr a oibríonn glónraí measctha sa bhaile atá glóthaithe ag {{SG 1.43–1.45}}                | Glónra glé: {{SG 1.46–1.48}}; glónra daite: {{SG 1.61}} | {{SG 1.45}}; má shileann sé, tanaigh é go dtí go léann sé {{SG 1.43}} agus glóthaigh é |
-| Scuabadh | {{SG 1.25}} (glónra glé tanaí) go {{SG 1.55}} (mionsonraí dorcha)                                                                                                           | {{SG 1.71–1.81}}                                        | Lean treoracha an táirge; úsáid guma CMC nó meán scuabtha                              |
-| Spraeáil | Gan figiúr; deir Hopper, ag scríobh do Ceramic Arts Network, go mbíonn sé i bhfad níos tanaí, le dífhlocasach{{en: deflocculant}} (breiseán a fhágann draoib níos leachtaí) | {{SG 1.71}}                                             | Níl figiúr iontaofa ann; ná spraeáil ach i mboth spraeála                              |
+| Use      | Digitalfire and Glazy                                                                                                                 | Potclays (UK)                               | Safe starting point                                     |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- | ------------------------------------------------------- |
+| Dipping  | {{SG 1.40}} (for a 5-second dip) to {{SG 1.50}} (for a 1-second dip); home-mixed glazes that are gelled do best at {{SG 1.43–1.45}}   | Clear {{SG 1.46–1.48}}; colored {{SG 1.61}} | {{SG 1.45}}; thin to {{SG 1.43}} and gel it if it drips |
+| Brushing | {{SG 1.25}} (thin clear) to {{SG 1.55}} (dark detail)                                                                                 | {{SG 1.71–1.81}}                            | Follow the product; use CMC gum or a brushing medium    |
+| Spraying | No figure; Hopper, writing for Ceramic Arts Network, says much thinner, with a deflocculant (an additive that makes a slurry runnier) | {{SG 1.71}}                                 | No reliable number; spray only in a spray booth         |
 
-Chun glónra tumtha a sheiceáil le do shúil, tumann AMACO ar feadh 5 shoicind agus lorgaíonn sé brat atá thart ar chomh tiubh le dím, bonn deich gcent SAM. Bácálann Digitalfire tíleanna a tumadh ar feadh 5 shoicind chun é a sheiceáil.
+To check a dipping glaze by eye, AMACO dips for 5 seconds and looks for a coat about as thick as a US dime. Digitalfire fires tiles dipped for 5 seconds to check.
 
-### An méid uisce do gach sprioc: ár meastachán
+### Water for a target SG: our estimate
 
-Is é ár n-uimhríocht féin an tábla thíos, ní uimhríocht foinse. Glacann sé leis go bhfuil dlús 2.6 g sa cm³ ag cáithníní an phúdair; is toimhde é sin, ní tomhas. Athraíonn cré, ábhair intuaslagtha agus glóthú glónra fíor, mar sin úsáid é chun tosú, ansin tomhais. Mar sheiceáil, tuarann sé {{SG 1.44}} do mheáchain chothroma púdair agus uisce, agus thomhais Digitalfire {{SG 1.46}}, atá gar dó. Léiríonn sé freisin go dtosaíonn tú ag níos mó ná {{SG 1.50}} le 70 go 80 mL sa 100 g: níos tibhe ná mar is gá.
+The table below is our own arithmetic, not a source's. It assumes the powder's particles have a density of 2.6 g per cm³, which is an assumption, not a measurement. Clay, soluble materials and gelling all change a real glaze, so use it to start, then measure. As a check, it predicts {{SG 1.44}} for equal weights of powder and water, close to Digitalfire's measured {{SG 1.46}}. It also shows that 70 to 80 mL per 100 g starts you above {{SG 1.50}}, thicker than you need.
 
-Table: Uisce do gach sprioc sainmheáchain (ár meastachán)
-Label: Uisce do gach sprioc sainmheáchain
+Table: Water for a target specific gravity (our estimate)
+Label: Water for a target specific gravity
 
-| Sprioc      | Sa 100 g púdair |    Sa chileagram |             Sa phunt |
-| ----------- | --------------: | ---------------: | -------------------: |
-| {{SG 1.40}} | thart ar 115 mL | thart ar 1150 mL | thart ar 18 US fl oz |
-| {{SG 1.45}} |  thart ar 98 mL |  thart ar 980 mL | thart ar 15 US fl oz |
-| {{SG 1.50}} |  thart ar 85 mL |  thart ar 850 mL | thart ar 13 US fl oz |
-| {{SG 1.60}} |  thart ar 64 mL |  thart ar 640 mL | thart ar 10 US fl oz |
+| Target      | Per 100 g of powder |  Per kilogram |         Per pound |
+| ----------- | ------------------: | ------------: | ----------------: |
+| {{SG 1.40}} |        about 115 mL | about 1150 mL | about 18 US fl oz |
+| {{SG 1.45}} |         about 98 mL |  about 980 mL | about 15 US fl oz |
+| {{SG 1.50}} |         about 85 mL |  about 850 mL | about 13 US fl oz |
+| {{SG 1.60}} |         about 64 mL |  about 640 mL | about 10 US fl oz |
 
-### Salann Epsom, guma CMC agus beintinít
+### Epsom salts, CMC gum and bentonite
 
-Fágann **salann Epsom** go nglóthaíonn glónra beagán nuair a sheasann sé socair, agus go sreabhann sé arís nuair a chorraítear é. **Flocasú**{{en: flocculating}} a thugtar air seo, agus is glónra **ticseatrópach**{{en: thixotropic}} é glónra a iompraíonn é féin mar seo: leathann sé níos cothroime, sileann sé níos lú agus síothlaíonn sé níos lú. Molann Digitalfire tosú le thart ar 2 g sa ghalún nuair a bhíonn an sainmheáchan ceart (thart ar 0.5 g sa lítear, de réir ár n-athraithe féin) agus an méid a choigeartú gach uair a mheascann tú, mar níor cheart d’aon oideas an dáileog a shocrú. Molaimid é a thuaslagadh i mbeagán uisce te ar dtús. I sampla ó Digitalfire, shil glónra ag {{SG 1.45}}, mar sin tanaíodh le huisce é go dtí go raibh sé ag {{SG 1.43}}, agus ghlóthaigh salann Epsom é go raibh sé cosúil le huachtar arís, agus leath sé go cothrom. Seiceáil gharbh: corraigh, stop agus breathnaigh. Leanann glónra glóthaithe ag gluaiseacht ar feadh thart ar 2 nó 3 shoicind, ansin stopann sé agus preabann sé siar beagán.
+**Epsom salts** make a glaze gel slightly when it stands still and flow again when it is stirred. This is called **flocculating** it, and a glaze that behaves this way is **thixotropic**: it goes on more evenly, drips less and settles less. Digitalfire suggests starting at about 2 g per gallon once the SG is right (roughly 0.5 g per liter, our conversion) and tuning the amount each time you mix, since no recipe should fix the dose. We suggest dissolving it in a little hot water first. In a Digitalfire example, a glaze at {{SG 1.45}} dripped, so water brought it down to {{SG 1.43}} and Epsom salts gelled it back to creamy, and it went on evenly. A rough check: stir, stop and watch. A gelled glaze moves on for about 2 or 3 seconds, then stops and springs back a little.
 
-Fágann **guma CMC** (ceallalós carbocsaimeitile) draoib níos greamaithí agus níos moille ag triomú, agus fágann sé brat níos crua a ghreamaíonn den phota. Is mó a bhíonn sé tábhachtach do ghlónraí scuabtha agus do ghlónraí a bhfuil cuid mhór friota{{en: frit}} iontu. I sampla Digitalfire, cumasctar 3.75 g isteach i 1000 g draoibe, agus caithfear cumascóir a úsáid chun é a chur isteach. Ní ghlóthóidh salann Epsom glónra a bhfuil CMC ann, agus ós rud é go n-itheann miocróib an guma, is féidir leis an nglónra athrú sa bhuicéad agus tosú ag cur drochbholadh de.
+**CMC gum** (carboxymethyl cellulose) makes a slurry stickier and slower to dry, and leaves a harder coat that holds to the pot. It matters most for brushing glazes and glazes high in frit. Digitalfire's example blends 3.75 g into 1000 g of slurry, and it has to go in with a blender. A glaze with CMC will not gel with Epsom salts, and since microbes feed on the gum, it can change in the bucket and start to smell.
 
-Cabhraíonn **beintinít**, cré an-mhín, leis na cáithníní eile a choinneáil ar fuaidreán. Is gnách go mbíonn glónraí tumtha ag brath ar 15 go 25% cré neamhbhácáilte chuige sin. I gcás oidis nach bhfuil a dhóthain cré ann, cabhraíonn thart ar 1 go 3% beintiníte; deir Digitalfire nár cheart go mbeadh níos mó ná 1% de dhíth ar ghlónra a bhfuil níos mó ná 15% cré ann.
+**Bentonite**, a very fine clay, helps hold the other particles in suspension. Dipping glazes usually rely on 15 to 25% raw clay for this. For a recipe short of clay, about 1 to 3% bentonite helps; Digitalfire says a glaze with more than 15% clay should not need bentonite at more than 1% of the dry glaze's weight.
 
 ## Tíleanna tástála agus sraitheanna cumaisc {#testing}
 

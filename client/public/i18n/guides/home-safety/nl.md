@@ -149,38 +149,38 @@ De Pet Poison Helpline zegt: “Lood is giftig voor alle diersoorten, maar jonge
 
 Als een huisdier iets uit het atelier kan hebben gegeten of gedronken, of verschijnselen als hierboven vertoont, bel dan uw dierenarts of een hulplijn voor dierenvergiftigingen (zie de tabel bovenaan), met de naam van de grondstof en het gewicht van het dier bij de hand.
 
-## De oven {#the-kiln}
+## The kiln {#the-kiln lang=en}
 
-### De buitenkant wordt zo heet dat u zich kunt branden
+### The outside gets hot enough to burn
 
-Een Britse risicobeoordeling voor scholen zegt dat de buitenkant van een oven “160 °C en mogelijk meer kan bereiken” (ongeveer 320 °F), en een leidraad voor ovens op scholen meldt tot 460 °F (ongeveer 240 °C) aan de metalen banden. Skutt, een ovenfabrikant, raadt een ovenruimte aan die tegen kinderen en huisdieren op slot kan. Waar een ruimte niet op slot kan, stelt de leidraad voor scholen een afscheiding voor, zoals een veiligheidshek rond de oven.
+A UK schools risk assessment says a kiln's outside "can reach 160 °C and possibly more" (about 320 °F), and a school kiln guide reports metal bands at up to 460 °F (about 240 °C). Skutt, a kiln maker, recommends a kiln room that can be locked against children and pets. Where a room cannot be locked, the school guide suggests a barrier such as a kiln safety screen.
 
-Kleine kinderen en huisdieren begrijpen een waarschuwingsbord niet. We stellen voor ze achter een afgesloten deur of een afscheiding te houden tijdens het stoken en terwijl de oven afkoelt, en voor alle anderen een waarschuwingsbord op te hangen.
+Small children and pets cannot understand a warning sign. We suggest keeping them behind a locked door or a barrier while the kiln fires and while it cools, and posting a warning sign for everyone else.
 
-### Ruimte rondom de oven
+### Space around it
 
-Over de veiligheidsafstand zijn de bronnen het niet eens. Rio Grande noemt minstens 12 inch (30 cm) tot muren en alles wat brandbaar is. L&L raadt sterk 18 inch (46 cm) tot alle muren aan, en de bouwvoorschriften die L&L aanhaalt vragen 3 voet (0,9 m) tot brandbare muren. Volg de handleiding van uw oven en de plaatselijke brandveiligheidsvoorschriften; houd bij twijfel 18 inch afstand tot elke muur en 3 voet tot alles wat kan branden. Houd in een garage auto’s, brandstof en verf ver weg.
+Sources disagree on clearance. Rio Grande says at least 12 inches (30 cm) from walls and anything combustible. L&L strongly recommends 18 inches (46 cm) to all walls, and the building code it cites asks for 3 feet (0.9 m) from combustible walls. Follow your kiln's manual and local fire code; if you are unsure, allow 18 inches from any wall and 3 feet from anything that can burn. In a garage, keep cars, fuel and paint well away.
 
-### Stroom
+### Power
 
-Rio Grande raadt een **eigen groep** aan (een groep die verder niets van stroom voorziet; in België: een aparte kring), met een goed geaard stopcontact. We stellen voor geen verlengsnoer te gebruiken. Zet tussen twee stoken de zekering of de werkschakelaar van de oven uit, of haal de stekker uit het stopcontact, zodat een kind de oven niet kan aanzetten.
+Rio Grande recommends a **dedicated circuit** (one that powers nothing else) with a properly grounded outlet. We suggest no extension cord. Between firings, switch off the kiln's breaker or disconnect switch, or unplug it, so a child cannot start it.
 
-### Wees erbij als de stook eindigt
+### Be there when the firing ends
 
-Een **kiln sitter** is de mechanische schakelaar op veel handbediende ovens: aan het eind van de stook buigt een kleine kegel{{en: cone}} door en zet de schakelaar uit. Volgens de handleiding is de kiln sitter “NIET bedoeld om te werken als faalveilige uitschakelbeveiliging”. Rio Grande zegt een oven tijdens het stoken nooit zonder toezicht te laten, “vooral rond de verwachte uitschakeltijd”. Blijf dus in de buurt en controleer de oven tijdens het stoken, vooral tegen het einde; stook alleen als er een volwassene thuis en wakker is om in de buurt te blijven en de oven te controleren, controleer of de oven is uitgeschakeld, en zet een ABC-brandblusser in de ovenruimte. Hoe kiln sitters, regelaars en stookschema’s werken, leest u in [Een eenvoudige oven stoken](/guides/firing).
+A **kiln sitter** is the mechanical switch on many manual kilns: a small cone bends at the end of the firing and trips the switch off. Its manual says it "is NOT intended to perform as a fail-safe shut-off device." Rio Grande says never to leave a firing kiln unattended, "especially near the expected shut-off time". So stay nearby and check the kiln while it fires, above all near the end; fire only when an adult will be home and awake through the whole firing, check that it has switched off, and keep an ABC fire extinguisher in the kiln room. For how sitters, controllers and schedules work, see [Firing a basic kiln](/guides/firing).
 
-### Dampen en koolmonoxide
+### Fumes and carbon monoxide
 
-Bij het stoken komen dampen vrij, dus ontlucht de oven naar buiten; [Veilig mengen en ventileren](/guides/safe-mixing) legt uit hoe. Een oven in een aangebouwde garage heeft een ontluchting nodig die voorkomt dat dampen via de tussendeur het huis bereiken. Houd vogels tijdens elke stook in een kamer ver weg.
+Firing gives off fumes, so vent the kiln to the outdoors; [Safe mixing and ventilation](/guides/safe-mixing) explains how. A kiln in an attached garage needs venting that keeps fumes from reaching the house through the connecting door. Keep birds in a far room whenever the kiln fires.
 
-**Koolmonoxide** (CO) is een giftig gas dat u niet kunt zien of ruiken. Een veiligheidsblad over ovens van een universiteit schrijft CO-melders voor bij gasovens. Over elektrische ovens lopen de meningen uiteen, maar bij het uitbranden van organisch materiaal (in klei, of in dingen als papier of was) kan CO ontstaan. Wij vinden een CO-melder in de ovenruimte en in de kamers ernaast een verstandige, goedkope stap bij elke oven.
+**Carbon monoxide** (CO) is a poisonous gas you cannot see or smell. A university kiln safety sheet requires CO alarms with gas kilns. Views differ for electric kilns, but burning off organic matter (in clay, or things like paper or wax) can make CO. We think a CO alarm in the kiln room and the rooms next to it is a sensible, inexpensive step for any kiln.
 
-### Kijkgaten en ogen
+### Peepholes and eyes
 
-Infrarood licht, dat u niet kunt zien, “begint bij 752°F (400°C)”, en het Ceramic Arts Network zegt dat in een oven kijken boven die temperatuur altijd met oogbescherming zou moeten gebeuren. Infrarood kan de ooglens beschadigen en tot grauwe staar leiden, en lang kijken kan het netvlies beschadigen. Een zonnebril of een didymiumbril houdt het niet tegen.
+Infrared light, which you cannot see, "starts at 752°F (400°C)", and the Ceramic Arts Network says looking into a kiln above this should always be done with eye protection. Infrared can damage the lens of the eye and lead to cataracts, and long gazing can injure the retina. Sunglasses and didymium glasses do not block it.
 
 > [!WARNING]
-> Kinderen zouden helemaal niet in een oven moeten kijken. Een gloeiend kijkgat trekt ze aan, en ze houden een beschermbril niet betrouwbaar op; houd ze dus uit de buurt zolang de oven heet is. Volwassenen zouden maar kort moeten kijken, door een lasbril met IR-filter. Bronnen raden beschermingsniveaus van 1,7 tot 5 aan; beschermingsniveau 3 is een verstandige keuze, donkerder als u daarna vlekken ziet.
+> Children should not look into a kiln at all. A glowing peephole draws them, and they will not reliably keep protective glasses on, so keep them away while the kiln is hot. Adults should look only briefly, through IR-rated welding glasses. Sources recommend shades from 1.7 to 5; shade 3 is a sensible choice, darker if you see spots afterward.
 
 ## Handgemaakt serviesgoed op de eettafel {#handmade-ware}
 
