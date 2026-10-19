@@ -2,8 +2,8 @@
 // item 30), offered only to a request with a working personal access token
 // whose scopes allow each (server/lib/scopes.ts; data:read allows them all).
 // Every query is limited to the token's account, as the record routes are
-// (server/lib/record_routes.ts), and nothing here changes anything: writing
-// waits for Phase 4. Records in the Trash are not in these collections, so
+// (server/lib/record_routes.ts), and nothing here changes anything: the tools
+// that do are in ./account_write.ts. Records in the Trash are not in these collections, so
 // they are never shown; nor are the notes about one, as the app shows a note
 // about a record only on that record's page.
 import * as z from 'zod';

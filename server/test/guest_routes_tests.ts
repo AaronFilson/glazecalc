@@ -3,7 +3,7 @@ import { api, expect, makeUser, sessionToken } from './support/app.ts';
 import User from '../models/user.ts';
 import Note from '../models/note.ts';
 import Recipe from '../models/recipe.ts';
-import { ACCOUNT_RECORDS_MOST, accountRecords } from '../lib/guest_limits.ts';
+import { ACCOUNT_RECORDS_MOST, accountRecords, type RecordModel } from '../lib/guest_limits.ts';
 import * as guestNames from '../lib/guest_names.ts';
 import * as sweeper from '../lib/guest_sweeper.ts';
 import * as mailer from '../lib/mailer.ts';
@@ -246,7 +246,7 @@ describe('trial accounts', () => {
     expect(await accountRecords(ownedBy, 5)).to.equal(5);
     expect(await accountRecords(ownedBy, 2)).to.equal(2);
     // Each kind is counted on its { ownedBy, _id } index, never by reading the records.
-    for (const Model of [Note, Recipe]) {
+    for (const Model of [Note, Recipe] as RecordModel[]) {
       const plan = JSON.stringify(await Model.find({ ownedBy }, { _id: 1 }).explain('queryPlanner'));
       expect(plan).to.include('IXSCAN').and.include('ownedBy_1__id_1');
     }

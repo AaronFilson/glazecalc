@@ -23,6 +23,8 @@ interface Library {
   additiveByName: Map<string, LibraryRecord>;
   /** By the database id the app's shelf keeps for a standard record (client: libraryKey). */
   byId: Map<string, LibraryRecord>;
+  /** And the other way: a standard record's database id. */
+  idOf: Map<LibraryRecord, string>;
 }
 
 let loaded: Library | undefined;
@@ -53,14 +55,18 @@ const library = (): Library => {
   if (!loaded) {
     // Without the database's _id: a tool shows names, never ids of shared records.
     const byId = new Map<string, LibraryRecord>();
+    const idOf = new Map<LibraryRecord, string>();
     const strip = ({ _id: id, __v: _v, ownedBy: _owner, ...rest }: Record<string, unknown>) => {
       const record = rest as unknown as LibraryRecord;
-      if (id) byId.set(String(id), record);
+      if (id) {
+        byId.set(String(id), record);
+        idOf.set(record, String(id));
+      }
       return record;
     };
     const materials = standardData.load<Record<string, unknown>>('materials').map(strip);
     const additives = standardData.load<Record<string, unknown>>('additives').map(strip);
-    loaded = { materials, additives, byName: index(materials), additiveByName: index(additives), byId };
+    loaded = { materials, additives, byName: index(materials), additiveByName: index(additives), byId, idOf };
   }
   return loaded;
 };
@@ -73,6 +79,15 @@ export const findMaterial = (name: string): LibraryRecord | undefined => library
 
 /** The standard material or additive the app's shelf names by its id. */
 export const findById = (id: string): LibraryRecord | undefined => library().byId.get(id);
+
+/**
+ * The key the app's shelf and prices know a standard record by (client:
+ * libraryKey): its database id, or 'name:' and its name when it has none.
+ */
+export const libraryKeyOf = (record: LibraryRecord): string => library().idOf.get(record) ?? 'name:' + record.name;
+
+/** A standard record's database id, as a recipe the app saves keeps it with its copy; undefined for none. */
+export const libraryIdOf = (record: LibraryRecord): string | undefined => library().idOf.get(record);
 
 /** The standard additive (colorant, opacifier) with this name or alias. */
 export const findAdditive = (name: string): (LibraryRecord & AdditiveRecord) | undefined =>
