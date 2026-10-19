@@ -16,8 +16,7 @@ import { TranslocoDirective, translate } from '@jsverse/transloco';
 import type { IdentityProof, MfaSummary } from '../../../../lib/mfa';
 import { AuthService } from '../../core/auth.service';
 import { errorMessage } from '../../core/error-message';
-import { TokenRow, TokensService } from '../../core/tokens.service';
-import { DatePipe } from '../../shared/format-pipes';
+import { TokensService } from '../../core/tokens.service';
 import { Check, FieldCheck, FieldChecks } from '../../shared/field-checks';
 import { Notices, NoticesList } from '../../shared/notices';
 import { IdentityConfirm } from '../auth/identity-confirm';
@@ -45,20 +44,25 @@ const nameCheck =
  * account with no password, a fresh sign-in with Google, GitHub or Microsoft) and, with
  * two-step sign-in on, a second step (IdentityConfirm), as other changes to
  * how the account is reached do. The new token is shown once, to copy; the
- * list shows each token's name, last characters, dates and whether it still
- * works, with Revoke and Revoke all. A trial has no section (the account page
+ * list of tokens, with Revoke, is on Connected apps (connections-page.ts),
+ * which this links to. A trial has no section (the account page
  * leaves it out), and an account whose email is not yet confirmed is asked
  * to confirm it first, with the link sent again on request.
  */
 @Component({
   selector: 'gc-tokens-section',
-  imports: [DatePipe, FieldCheck, FormsModule, IdentityConfirm, NoticesList, RouterLink, TranslocoDirective],
+  imports: [FieldCheck, FormsModule, IdentityConfirm, NoticesList, RouterLink, TranslocoDirective],
   template: `<ng-container *transloco="let t">
     <section class="auth-text tokens-section" aria-labelledby="tokens-heading">
       <h2 id="tokens-heading" tabindex="-1">{{ t('account.tokens.heading') }}</h2>
       <p>{{ t('account.tokens.intro') }}</p>
       <p>
         <a routerLink="/assistants">{{ t('account.tokens.howTo') }}</a>
+      </p>
+      <!-- The list of tokens, with Revoke, is on Connected apps. -->
+      <p class="see-apps">
+        {{ t('account.tokens.seeThem') }}
+        <a routerLink="/account/apps">{{ t('account.tokens.seeThemLink') }}</a>
       </p>
       <gc-notices [notices]="notices" />
 
@@ -90,59 +94,6 @@ const nameCheck =
       @if (loadFailed()) {
         <p class="help-text">{{ t('account.tokens.loadFailed') }}</p>
       } @else if (service.list(); as list) {
-        @if (list.tokens.length) {
-          <ul class="token-list" [attr.aria-label]="t('account.tokens.listLabel')">
-            @for (token of list.tokens; track token.id) {
-              <li class="token-row" [class.ended]="!token.working">
-                <div class="token-name">
-                  <strong>{{ token.name }}</strong>
-                  <span class="token-hint">{{ t('account.tokens.hint', { hint: token.hint }) }}</span>
-                </div>
-                <div class="form-text">
-                  {{ canWrite(token) ? t('account.tokens.readWrite') : t('account.tokens.readOnly') }} ·
-                  {{ t('account.tokens.created', { date: (token.createdAt | gcDate: 'medium') }) }} ·
-                  @if (token.lastUsedAt) {
-                    {{ t('account.tokens.lastUsed', { date: (token.lastUsedAt | gcDate: 'medium') }) }}
-                  } @else {
-                    {{ t('account.tokens.neverUsed') }}
-                  }
-                  ·
-                  @if (token.revokedAt) {
-                    {{ t('account.tokens.revokedOn', { date: (token.revokedAt | gcDate: 'medium') }) }}
-                  } @else if (token.working) {
-                    {{ t('account.tokens.expires', { date: (token.expiresAt | gcDate: 'medium') }) }}
-                  } @else {
-                    {{ t('account.tokens.expiredOn', { date: (token.expiresAt | gcDate: 'medium') }) }}
-                  }
-                </div>
-                @if (token.working) {
-                  <button
-                    type="button"
-                    class="btn btn-outline-secondary btn-sm revoke-token"
-                    [attr.aria-label]="t('account.tokens.revokeNamed', { name: token.name })"
-                    [attr.aria-disabled]="busy() || null"
-                    (click)="revoke(token)"
-                  >
-                    {{ t('account.tokens.revoke') }}
-                  </button>
-                }
-              </li>
-            }
-          </ul>
-          @if (service.working().length) {
-            <button
-              type="button"
-              class="btn btn-outline-danger revoke-all"
-              [attr.aria-disabled]="busy() || null"
-              (click)="revokeAll()"
-            >
-              {{ t('account.tokens.revokeAll') }}
-            </button>
-          }
-        } @else {
-          <p class="help-text">{{ t('account.tokens.none') }}</p>
-        }
-
         <h3 class="h5 mt-4" id="token-create-heading">{{ t('account.tokens.createHeading') }}</h3>
         @if (auth.unverified()) {
           <!-- Only with a confirmed email (owner decision): the server refuses one before. -->
@@ -258,34 +209,6 @@ const nameCheck =
     .scope-legend {
       font-size: inherit;
     }
-    .token-list {
-      list-style: none;
-      padding: 0;
-      margin: 0 0 1rem;
-    }
-    .token-row {
-      border-top: 1px solid var(--bs-border-color);
-      padding: 0.6rem 0;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.25rem 1rem;
-      align-items: baseline;
-    }
-    .token-row > .form-text {
-      flex: 1 1 100%;
-      margin: 0;
-    }
-    .token-row.ended {
-      opacity: 0.75;
-    }
-    .token-name {
-      flex: 1 1 auto;
-      overflow-wrap: anywhere;
-    }
-    .token-hint {
-      margin-left: 0.5rem;
-      font-family: var(--bs-font-monospace);
-    }
     .new-token-panel {
       border: 1px solid var(--bs-border-color);
       border-radius: 0.5rem;
@@ -342,10 +265,6 @@ export class TokensSection implements OnInit {
     } catch {
       this.loadFailed.set(true);
     }
-  }
-
-  protected canWrite(token: TokenRow): boolean {
-    return token.scopes.includes('data:write');
   }
 
   /** Chooses what the token may do; a lifetime the choice does not allow becomes its longest. */
@@ -432,30 +351,6 @@ export class TokensSection implements OnInit {
       this.notices.success(await this.auth.resendVerification());
     } catch (err) {
       this.notices.error(errorMessage(err, translate('account.account.resendFailed')));
-    } finally {
-      this.busy.set(false);
-    }
-  }
-
-  protected async revoke(token: TokenRow): Promise<void> {
-    if (this.busy()) return;
-    this.busy.set(true);
-    try {
-      this.notices.success(await this.service.revoke(token.id), 'tokens');
-    } catch (err) {
-      this.notices.error(errorMessage(err, translate('account.tokens.revokeFailed')));
-    } finally {
-      this.busy.set(false);
-    }
-  }
-
-  protected async revokeAll(): Promise<void> {
-    if (this.busy()) return;
-    this.busy.set(true);
-    try {
-      this.notices.success(await this.service.revokeAll(), 'tokens');
-    } catch (err) {
-      this.notices.error(errorMessage(err, translate('account.tokens.revokeFailed')));
     } finally {
       this.busy.set(false);
     }

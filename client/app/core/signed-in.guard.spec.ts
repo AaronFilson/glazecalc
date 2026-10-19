@@ -71,6 +71,7 @@ describe('signedInGuard and visitorsOnlyGuard', () => {
       .sort();
     expect(guarded).toEqual([
       'account',
+      'account/apps',
       'additive',
       'blends',
       'firing',

@@ -21,9 +21,14 @@ const connect = async (
   {
     kind = 'pat',
     name = 'Claude Code',
-    scopes = ['data:read'],
+    scopes = ['data:read'] as Array<'data:read' | 'data:write'>,
     ...more
-  }: { kind?: 'pat' | 'oauth'; name?: string; scopes?: string[]; [field: string]: unknown } = {}
+  }: {
+    kind?: 'pat' | 'oauth';
+    name?: string;
+    scopes?: Array<'data:read' | 'data:write'>;
+    [field: string]: unknown;
+  } = {}
 ) => {
   const { token, hash, hint } = mintToken('pat');
   const row = await AccessToken.create({

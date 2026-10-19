@@ -70,7 +70,7 @@ describe('AccountPage access tokens', () => {
 
   it('makes a token with the password, 30 days unless chosen, and shows it once', async () => {
     const { fixture } = await create();
-    expect(text(fixture, '.tokens-section')).toContain('You have no access tokens.');
+    expect(text(fixture, '.tokens-section')).toContain('are on the Connected apps page');
     expect((el(fixture, '#token-days') as HTMLSelectElement).selectedOptions[0]!.textContent?.trim()).toBe('30 days');
     // The name first.
     await press(fixture, 'Continue', '.tokens-section');
@@ -91,8 +91,8 @@ describe('AccountPage access tokens', () => {
     );
     await settle(fixture);
     expect((el(fixture, '#new-token') as HTMLInputElement).value).toBe(token);
-    expect(text(fixture, '.token-list')).toContain('My laptop');
-    expect(text(fixture, '.token-list')).toContain('ending Ab12');
+    // The new token counts toward the limit; the list itself is on Connected apps.
+    expect(el(fixture, '.token-list')).toBeNull();
 
     await press(fixture, 'I have copied it');
     expect(el(fixture, '#new-token')).toBeNull();
@@ -101,7 +101,6 @@ describe('AccountPage access tokens', () => {
 
   it('makes a token that can read and change, with only the shorter lifetimes, and says what each row can do', async () => {
     const { fixture } = await create(OFF, { ...NO_TOKENS, tokens: [row('Reader')] });
-    expect(text(fixture, '.token-list')).toContain('Read only');
     const days = () => [...(el(fixture, '#token-days') as HTMLSelectElement).options].map((o) => o.textContent?.trim());
     expect(days()).toEqual(['7 days', '30 days', '90 days', '365 days']);
     // A year chosen first becomes the longest a writing token may have.
@@ -134,7 +133,6 @@ describe('AccountPage access tokens', () => {
     );
     await settle(fixture);
     expect(text(fixture, '.new-token-panel')).toContain('can read and change your records');
-    expect(text(fixture, '.token-list')).toContain('Read and change');
     // The form goes back to reading only.
     expect((el(fixture, '#token-scope-read') as HTMLInputElement).checked).toBe(true);
   });
@@ -244,7 +242,7 @@ describe('AccountPage access tokens', () => {
     expect(auth.reauth()).toBeNull();
   });
 
-  it('lists tokens, revokes one, and says when the most are working', async () => {
+  it('links to Connected apps for the list and Revoke, and says when the most are working', async () => {
     const list = {
       ...NO_TOKENS,
       most: 2,
@@ -257,25 +255,10 @@ describe('AccountPage access tokens', () => {
       'It also stops your 2 access tokens, for good.'
     );
     expect(el(fixture, '#token-name')).toBeNull();
-    const old = [...(fixture.nativeElement as HTMLElement).querySelectorAll('.token-row')].find((li) =>
-      li.textContent?.includes('Old')
-    )!;
-    expect(old.textContent).toContain('revoked');
-    expect(old.querySelector('button')).toBeNull();
-
-    (el(fixture, 'button[aria-label="Revoke Laptop"]') as HTMLButtonElement).click();
-    await settle(fixture);
-    const req = httpMock().expectOne(API + '/tokens/laptop');
-    expect(req.request.method).toBe('DELETE');
-    req.flush({ code: 'token-revoked', msg: 'The access token was revoked. It no longer works.' });
-    await settle(fixture);
-    answer('/tokens', {
-      ...list,
-      tokens: [row('Laptop', { working: false, revokedAt: '2026-10-16T10:00:00Z' }), row('Desk')]
-    });
-    await settle(fixture);
-    expect(text(fixture, '.tokens-section')).toContain('The access token was revoked.');
-    expect(el(fixture, '#token-name')).not.toBeNull();
+    // The list, with Revoke, moved to Connected apps: a link is left.
+    expect(el(fixture, '.token-list')).toBeNull();
+    expect(el(fixture, '.revoke-token')).toBeNull();
+    expect(el(fixture, '.tokens-section .see-apps a')!.getAttribute('href')).toBe('/account/apps');
   });
 
   it('offers to revoke the tokens still working after a password change', async () => {

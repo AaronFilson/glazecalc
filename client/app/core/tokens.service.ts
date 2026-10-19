@@ -31,13 +31,13 @@ export interface TokenList {
   scopes: string[];
 }
 
-interface Said {
+export interface Said {
   code?: string;
   msg: string;
   params?: Record<string, string | number>;
 }
 
-const said = (res: Said): string => (res.code && codedMessage('server', res.code, res.params)) || res.msg;
+export const said = (res: Said): string => (res.code && codedMessage('server', res.code, res.params)) || res.msg;
 
 /**
  * The account's personal access tokens (docs/integrations-plan.md, items 26
@@ -77,12 +77,6 @@ export class TokensService {
     );
     this.list.update((list) => (list ? { ...list, tokens: [res.row, ...list.tokens] } : list));
     return { token: res.token, message: said(res) };
-  }
-
-  async revoke(id: string): Promise<string> {
-    const res = await firstValueFrom(this.http.delete<Said>(this.apiBase + '/tokens/' + encodeURIComponent(id)));
-    await this.load().catch(() => undefined);
-    return said(res);
   }
 
   /** Revokes every token (and connected app) still working. */

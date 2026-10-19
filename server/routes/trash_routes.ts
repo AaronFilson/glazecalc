@@ -56,13 +56,11 @@ trashRouter.post('/restore/:id', requireScope('trash:write'), async (req, res) =
   if (result.status === 'refused') return res.status(403).json(result.refusal);
   if (result.status === 'conflict') return res.status(409).json(say('trash-restored-already'));
   await logActivity(req, 'restore', result.fromCollection, result.record);
-  return res
-    .status(200)
-    .json({
-      ...say('trash-restored', { label: LABELS[result.fromCollection] }),
-      fromCollection: result.fromCollection,
-      record: result.record
-    });
+  return res.status(200).json({
+    ...say('trash-restored', { label: LABELS[result.fromCollection] }),
+    fromCollection: result.fromCollection,
+    record: result.record
+  });
 });
 
 trashRouter.delete('/delete/:id', jwtAuth, async (req, res) => {
