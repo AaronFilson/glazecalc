@@ -15,6 +15,7 @@ import Trash from '../models/trash.ts';
 import User, { type UserDocument } from '../models/user.ts';
 import { approveAt, MOST_ROUNDS, NOT_WAITING, OTHER_CHANGE } from '../mcp/tools/account_write.ts';
 import { requestStateCodec } from '../mcp/request_state.ts';
+import { isAppOnlyPage, isPage, isPrivatePage } from '../lib/pages.ts';
 import { api, base, expect, makeUser } from './support/app.ts';
 import { waitFor } from './support/mail.ts';
 import { makeToken } from './support/tokens.ts';
@@ -74,6 +75,19 @@ const callTool = async (
 };
 const textOf = (body: Json): string => body.result?.content?.[0]?.text ?? JSON.stringify(body);
 const pendingIdIn = (text: string): string => /\/confirm\/([A-Za-z0-9_-]+)/.exec(text)![1]!;
+
+describe('confirm before changes: the page', () => {
+  it('is a page of the app in every language, private as a share link is', () => {
+    for (const path of ['/confirm/AbC_12-xyz', '/de/confirm/AbC_12-xyz']) {
+      expect(isPage(path), path).to.equal(true);
+      expect(isPrivatePage(path), path).to.equal(true);
+      expect(isAppOnlyPage(path), path).to.equal(false);
+    }
+    for (const path of ['/confirm', '/confirm/', '/confirm/a/b', '/confirm/' + 'x'.repeat(65), '/confirm/a.b']) {
+      expect(isPage(path), path).to.equal(false);
+    }
+  });
+});
 
 describe('confirm before changes: the setting', () => {
   let mine: Awaited<ReturnType<typeof makeUser>>;
