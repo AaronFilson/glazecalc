@@ -158,6 +158,20 @@ const main = async () => {
       check(result.code === 0, `conformance ${revision}`);
     }
 
+    // The authorization server (docs/adr/0024-authorization-server.md): its metadata, as the
+    // suite's authorization-server scenario checks it. The suite's other one,
+    // authorization-code-grant, needs a person to say yes on the consent page, so it is left to
+    // the checks with real clients (deploy/README.md); the auth/* scenarios test clients.
+    if (!process.env.MCP_INSPECTOR_ONLY) {
+      console.log('\n== Conformance suite, authorization server ==');
+      const result = await run(
+        'conformance',
+        ['authorization', '--url', new URL(url).origin, '--scenario', 'authorization-server-metadata-endpoint'],
+        { cwd: work }
+      );
+      check(result.code === 0, 'conformance authorization-server-metadata-endpoint');
+    }
+
     console.log('\n== MCP Inspector ==');
     await inspector('tools/list, with portable schemas', ['--method', 'tools/list', '--strict'], (body) =>
       ['search_materials', 'analyze_recipe', 'check_limits', 'search_guides'].every((name) =>

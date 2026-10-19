@@ -16,7 +16,7 @@ import { ipKeyGenerator } from 'express-rate-limit';
 import * as log from '../lib/log.ts';
 import * as limits from '../lib/rate_limit.ts';
 import * as site from '../lib/site.ts';
-import { mcpAuth, resourceMetadata, rpcError } from './auth.ts';
+import { mcpAuth, resourceMetadata, rpcError, stepUp } from './auth.ts';
 import { makeServer } from './server.ts';
 
 /** The largest request body taken: far more than 40 recipe lines need. */
@@ -165,6 +165,7 @@ mcpRouter.post(
   limits.mcpDay,
   express.json({ limit: MOST_BODY }),
   refuseBatches,
+  stepUp,
   async (req, res) => {
     const caller = req.mcpCaller!;
     const listen = isListen(req.body);
@@ -193,8 +194,9 @@ mcpRouter.post(
         parsedBody: req.body,
         authInfo: {
           // Never the token itself: the SDK and the tools need only who is calling.
-          token: caller.tokenId ? 'pat:' + caller.tokenId : '',
-          clientId: caller.userId ? 'personal-access-token' : 'anyone',
+          token: caller.tokenId ? (caller.via ?? 'pat') + ':' + caller.tokenId : '',
+          clientId:
+            caller.via === 'oauth' ? (caller.clientId ?? 'oauth') : caller.userId ? 'personal-access-token' : 'anyone',
           scopes: caller.scopes ?? [],
           extra: { ...caller }
         }

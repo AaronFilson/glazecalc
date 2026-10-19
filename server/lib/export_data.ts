@@ -91,10 +91,25 @@ const activityOf = async (userId: Id): Promise<Row[]> =>
 /** The account's access tokens and connected apps, in names and dates only: never a token's hash. */
 const accessTokensOf = async (userId: Id): Promise<Row[]> =>
   (await AccessToken.find({ userId }).sort({ createdAt: 1, _id: 1 }).lean()).map(
-    ({ kind, name, clientId, hint, scopes, createdAt, expiresAt, lastUsedAt, revokedAt, revokedWhy }) => ({
+    ({
+      kind,
+      name,
+      clientId,
+      clientHost,
+      redirectHost,
+      hint,
+      scopes,
+      createdAt,
+      expiresAt,
+      lastUsedAt,
+      revokedAt,
+      revokedWhy
+    }) => ({
       kind,
       name,
       ...(clientId && { clientId }),
+      ...(clientHost && { clientHost }),
+      ...(redirectHost && { redirectHost }),
       ...(hint && { endsWith: hint }),
       scopes,
       createdAt,

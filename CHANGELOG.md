@@ -6,6 +6,19 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Added
 
+- **An OAuth authorization server for AI assistants** (docs/adr/0024-authorization-server.md), the
+  server side: apps such as Claude and ChatGPT will connect to a person's records by asking on the
+  website, once the consent page ships. oidc-provider 9.12.2 under `/oauth/`, with its metadata at
+  `/.well-known/oauth-authorization-server`; the code flow with PKCE (S256) only, refresh tokens
+  that rotate (a second use ends the connection), `iss` in every answer, and tokens for the MCP
+  endpoint alone, opaque and for an hour. Apps name themselves by an https address (CIMD, fetched
+  only from the public internet, under limits) or register themselves (limited, and gone after 7
+  days unused). A connection reads; it may change records only when the app asks and the person
+  ticks it, and an app that may only read is asked to step up (403 `insufficient_scope`). Each
+  connection is a row beside the access tokens: read-only ones last 60 days from their last use,
+  ones that change records 90 days; revoking one, a password reset or "Sign out everywhere" stops
+  all its tokens at once. The consent API is `/api/connect/:uid`; the page, the notice email and the
+  privacy notice follow.
 - **Chemistry against the stated cone** (docs/adr/0022-chemistry-against-the-stated-cone.md): one
   line at the top of the recipe page's limits panel says whether the glaze's chemistry fits its
   firing, the recipe's stated cone or the band chosen in the panel. It gives a note only when boron

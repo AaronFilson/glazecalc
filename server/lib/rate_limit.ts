@@ -264,6 +264,42 @@ export const mfaChallenges = limiter(15, 30, 'too-many-attempts', {
   keyGenerator: (req) => 'mfa-challenge:' + String(req.user?._id)
 });
 
+// The authorization server for AI assistants (server/oauth/, docs/adr/0024),
+// per address unless they say otherwise. Its refusals are OAuth's shape,
+// { error, error_description }, which the apps read.
+const oauthLimiter = (minutes: number, limit: number, code: MessageCode, more: Parameters<typeof limiter>[3] = {}) =>
+  limiter(minutes, limit, code, {
+    handler: (_req, res) => {
+      res.status(429).json({ error: 'too_many_requests', error_description: say(code).msg });
+    },
+    ...more
+  });
+
+/**
+ * Apps registering themselves (POST /oauth/register, DCR): 10 an hour from
+ * one address, and OAUTH_REGISTRATIONS_A_DAY a day from everyone together, so
+ * nobody can fill the database with apps. Each one that nobody connects goes
+ * after 7 days (server/oauth/adapter.ts).
+ */
+export const OAUTH_REGISTRATIONS_A_DAY = 500;
+export const oauthRegister = oauthLimiter(60, 10, 'too-many-registrations');
+export const oauthRegisterAll = oauthLimiter(24 * 60, OAUTH_REGISTRATIONS_A_DAY, 'too-many-registrations', {
+  keyGenerator: () => 'oauth-register-all'
+});
+/**
+ * Starting a connection (GET /oauth/authorize, and its return from the
+ * consent page): each start keeps a short record, and may fetch an app's
+ * address (CIMD), so they are bounded; loose, for the many people behind one
+ * address.
+ */
+export const oauthAuthorize = limiter(15, 100, 'too-many-oauth');
+/** The token endpoint: an app refreshes about once an hour, so this is far above what many apps behind one address need. */
+export const oauthToken = oauthLimiter(15, 300, 'too-many-oauth');
+/** The rest of /oauth/ (revocation, its keys). */
+export const oauthOther = oauthLimiter(15, 100, 'too-many-oauth');
+/** The consent API (GET and POST /api/connect/:uid), per address. */
+export const connect = limiter(15, 100, 'too-many-oauth');
+
 /**
  * The MCP endpoint (server/mcp/index.ts; docs/integrations-plan.md, items 23
  * and 31): requests a minute and a day. Without a token, per address: 60 a

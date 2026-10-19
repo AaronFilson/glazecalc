@@ -2,10 +2,12 @@
 // item 37, and decision 10): create_recipe (the server works out its unity
 // formula), update_recipe, add_notebook_entry, add_my_material,
 // update_my_material, add_to_shelf, remove_from_shelf and move_to_trash. They
-// are offered with every working personal access token, so that an assistant
+// are offered with every working access token, so that an assistant
 // holding a read-only one can say why nothing was changed; each refuses,
 // changing nothing, unless the token's scopes allow its area's write
-// permission (data:write, server/lib/scopes.ts).
+// permission (data:write, server/lib/scopes.ts). An app connected with OAuth
+// that may only read never reaches them: the endpoint answers 403 and asks it
+// to step up (server/mcp/auth.ts stepUp, WRITE_TOOLS).
 //
 // What the record routes do for a change made with a token, these do too
 // (server/lib/record_routes.ts): every query is limited to the token's
@@ -50,6 +52,7 @@ import {
   linesArg,
   ok,
   resolveLines,
+  ScopeProblem,
   ToolProblem,
   type RecipeLine
 } from '../common.ts';
@@ -62,11 +65,27 @@ const ADDS = { readOnlyHint: false, destructiveHint: false, idempotentHint: fals
 /** A tool that replaces or removes something (kept as a version, or in the Trash). */
 const REPLACES = { readOnlyHint: false, destructiveHint: true, idempotentHint: false, openWorldHint: false } as const;
 
+/** The tools here: every one changes records, so an app connected with OAuth must have data:write to call it. */
+export const WRITE_TOOLS: ReadonlySet<string> = new Set([
+  'create_recipe',
+  'update_recipe',
+  'add_notebook_entry',
+  'add_my_material',
+  'update_my_material',
+  'add_to_shelf',
+  'remove_from_shelf',
+  'move_to_trash'
+]);
+
 /** What every tool here says when the token can only read. */
 export const READ_ONLY_TOKEN =
   'Nothing was changed: this access token can only read your Glazecalc records. To let an assistant change them, ' +
   `make a token that can "Read and change" on your Glazecalc account page (it lasts at most ${WRITE_PAT_MOST_DAYS} days) ` +
   'and use it in place of this one.';
+/** What they say to an app connected with OAuth that may only read (should stepUp ever let one through). */
+export const READ_ONLY_APP =
+  'Nothing was changed: this app was allowed only to read your Glazecalc records. To let it change them, ' +
+  'connect it again and tick "Also let it change my records" on the Glazecalc page that asks.';
 /** What they say once the account has made too many changes with tokens. */
 export const TOO_MANY_CHANGES =
   `Nothing was changed: an account can make at most ${TOKEN_WRITE_LIMITS.minute} changes a minute and ` +
@@ -124,8 +143,9 @@ export const registerWriteTools = (server: McpServer, caller: Caller): void => {
   const tokenId = caller.tokenId;
   if (!userId || !tokenId) return;
   const scopes = caller.scopes ?? [];
-  // Only personal tokens reach the tools (server/mcp/auth.ts).
-  const actor: TokenActor = { via: 'pat', tokenId, name: caller.name ?? 'Access token' };
+  // A personal token, or an app connected with OAuth (its connection's row is the tokenId).
+  const via = caller.via ?? 'pat';
+  const actor: TokenActor = { via, tokenId, name: caller.name ?? 'Access token' };
 
   /**
    * Before any change: the token must allow it, and the account be within its
@@ -133,7 +153,7 @@ export const registerWriteTools = (server: McpServer, caller: Caller): void => {
    * is changed.
    */
   const mayChange = async (permission: Permission): Promise<void> => {
-    if (!allows(scopes, permission)) throw new ToolProblem(READ_ONLY_TOKEN);
+    if (!allows(scopes, permission)) throw new ScopeProblem(via === 'oauth' ? READ_ONLY_APP : READ_ONLY_TOKEN);
     if (!(await countTokenWrite(userId))) throw new ToolProblem(TOO_MANY_CHANGES);
   };
 
@@ -288,7 +308,7 @@ export const registerWriteTools = (server: McpServer, caller: Caller): void => {
           }
           throw new ToolProblem(`No recipe with id ${id} in your account.`);
         }
-        await saveVersion('recipes', before, 'pat');
+        await saveVersion('recipes', before, via);
         await logActivityBy(actor, userId, 'change', 'recipes', { ...before, ...changes });
         return ok({
           id: String(before._id),
@@ -461,7 +481,7 @@ export const registerWriteTools = (server: McpServer, caller: Caller): void => {
           { runValidators: true, returnDocument: 'before', lean: true }
         );
         if (!before) throw new ToolProblem(`No material with id ${id} in your account.`);
-        await saveVersion('materials', before, 'pat');
+        await saveVersion('materials', before, via);
         await logActivityBy(actor, userId, 'change', 'materials', { ...before, ...changes });
         return ok({
           id: String(before._id),
@@ -577,7 +597,7 @@ export const registerWriteTools = (server: McpServer, caller: Caller): void => {
           );
         }
         const user = mongoose.isObjectIdOrHexString(id) ? await User.findById(userId) : null;
-        const trashed = user ? await moveToTrash(Model, area, user, id, 'pat') : null;
+        const trashed = user ? await moveToTrash(Model, area, user, id, via) : null;
         if (!trashed)
           throw new ToolProblem(`No ${kind === 'note' ? 'notebook entry' : kind} with id ${id} in your account.`);
         if (trashed === TRASH_FULL) {

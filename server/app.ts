@@ -22,6 +22,8 @@ import records from './routes/records.ts';
 import { privateHeaders, sharedRouter, shareRouter } from './routes/share_routes.ts';
 import userRoutes from './routes/user_routes.ts';
 import mcpRouter, { metadataRouter } from './mcp/index.ts';
+import connectRouter from './oauth/interactions.ts';
+import { authorizationServerMetadata, oauthServer } from './oauth/provider.ts';
 import { say } from './lib/messages.ts';
 import * as site from './lib/site.ts';
 import {
@@ -114,6 +116,8 @@ api.use('/password', passwordRoutes);
 api.use('/email', emailRoutes);
 // The account's own access tokens: made, listed and revoked with the web session only.
 api.use('/tokens', tokenRoutes);
+// Answering an AI assistant that asks to connect (docs/adr/0024-authorization-server.md), with the web session only.
+api.use('/connect', connectRouter);
 // Two-step sign-in: the account's factors (docs/mfa-plan.md).
 api.use('/mfa', mfaRoutes);
 // Signing in with Google, GitHub or Microsoft (docs/adr/0015-provider-sign-in.md, 0023).
@@ -128,6 +132,12 @@ app.use('/api', api);
 // its own checks and limits, and its metadata for clients (RFC 9728).
 app.use('/mcp', mcpRouter);
 app.use('/.well-known', metadataRouter);
+// The authorization server for AI assistants (docs/adr/0024-authorization-server.md): everything
+// under /oauth/, and its metadata (RFC 8414) where clients look for it from the issuer, the site.
+app.use(oauthServer);
+app.get('/.well-known/oauth-authorization-server', (req, res) => {
+  res.set('Cache-Control', 'public, max-age=3600').json(authorizationServerMetadata());
+});
 // Microsoft's publisher domain file, written from MICROSOFT_CLIENT_ID (docs/adr/0023-microsoft-sign-in.md).
 app.get('/.well-known/microsoft-identity-association.json', microsoftAssociation);
 

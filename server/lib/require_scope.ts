@@ -7,7 +7,7 @@
 import type { NextFunction, Request, RequestHandler, Response } from 'express';
 import jwtAuth from './jwt_auth.ts';
 import { tokenDay, tokenMinute, tokenWriteDay, tokenWriteMinute } from './rate_limit.ts';
-import { allows, isScope, scopeFor, type Permission } from './scopes.ts';
+import { allows, scopeFor, type Permission } from './scopes.ts';
 import { accessTokenIn, checkAccessToken, insufficientScope, invalidToken, touchToken } from './token_auth.ts';
 
 export const requireScope =
@@ -17,14 +17,16 @@ export const requireScope =
     if (token === null) return jwtAuth(req, res, next);
     const found = await checkAccessToken(req, token);
     if (!found) return invalidToken(res);
-    if (!allows(found.token.scopes, permission)) return insufficientScope(res, scopeFor(permission));
+    // An app connected with OAuth is given tokens for the MCP endpoint alone (docs/adr/0024).
+    if (found.via !== 'pat') return insufficientScope(res);
+    if (!allows(found.scopes, permission)) return insufficientScope(res, scopeFor(permission));
     await touchToken(found.token);
     req.user = found.user;
     req.access = {
-      via: found.token.kind === 'pat' ? 'pat' : 'oauth',
+      via: found.via,
       tokenId: String(found.token._id),
       name: found.token.name,
-      scopes: found.token.scopes.filter(isScope),
+      scopes: found.scopes,
       permission
     };
     // Trials never hold a token, so the trial's smaller body limit does not apply here.

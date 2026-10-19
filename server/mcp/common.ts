@@ -8,6 +8,7 @@ import recipe from '../../lib/recipe/index.js';
 import type { Caution, MaterialRecord } from '../../lib/recipe/index.js';
 import * as log from '../lib/log.ts';
 import { findMaterial, searchLibrary } from './library.ts';
+import { writeChallenge } from './urls.ts';
 import { cautionText, chemistryText, languageOf, recipeText } from './words.ts';
 
 /** At most this many lines in a recipe sent to a tool. */
@@ -22,6 +23,10 @@ export interface Caller {
   /** The token's name, for the activity log. */
   name?: string;
   scopes?: string[];
+  /** Which kind of token: a personal one, or an app connected with OAuth (docs/adr/0024). */
+  via?: 'pat' | 'oauth';
+  /** The connected app's client id (OAuth only). */
+  clientId?: string;
 }
 
 export const languageArg = z
@@ -90,6 +95,13 @@ export const fail = (text: string) => ({ content: [{ type: 'text' as const, text
 
 /** Thrown inside a tool to refuse with these words; the tool's wrapper turns it into fail(). */
 export class ToolProblem extends Error {}
+
+/**
+ * A ToolProblem for a token that may only read, calling a tool that changes
+ * records. Its refusal also carries the challenge that asks for more, in
+ * _meta["mcp/www_authenticate"], where ChatGPT looks for one in a tool's result.
+ */
+export class ScopeProblem extends ToolProblem {}
 
 /** The Orton or SK cone's temperature in °C, or a ToolProblem naming the cones known. */
 export const coneCelsius = (cone: string, chart: 'orton' | 'sk' = 'orton'): number => {
@@ -210,6 +222,9 @@ export const guarded = async <T>(work: () => T | Promise<T>, language = 'en') =>
   try {
     return await work();
   } catch (err) {
+    if (err instanceof ScopeProblem) {
+      return { ...fail(err.message), _meta: { 'mcp/www_authenticate': [writeChallenge()] } };
+    }
     if (err instanceof ToolProblem) return fail(err.message);
     if (err instanceof recipe.RecipeError) {
       return fail(recipeText({ code: err.code, params: err.params }, language));

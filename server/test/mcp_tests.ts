@@ -281,8 +281,10 @@ describe('MCP: the endpoint', () => {
       expect(res.status, path).to.equal(200);
       expect(await res.json()).to.deep.include({
         resource: 'https://glazecalc.test/mcp',
+        authorization_servers: ['https://glazecalc.test'],
         bearer_methods_supported: ['header'],
-        scopes_supported: ['data:read', 'data:write']
+        // Only data:read: changing records is asked for by stepping up (docs/adr/0024).
+        scopes_supported: ['data:read']
       });
     }
   });
@@ -1067,7 +1069,10 @@ describe('MCP: the write tools', () => {
       clientInfo: { name: 't', version: '1' }
     });
     const instructions = (init.body!.result as { instructions: string }).instructions;
-    expect(instructions).to.include('move_to_trash').and.include('read-only token').and.not.include('never change');
+    expect(instructions)
+      .to.include('move_to_trash')
+      .and.include('only when the person allowed changes')
+      .and.not.include('never change');
   });
 
   it('refuse a read-only token, changing nothing', async () => {

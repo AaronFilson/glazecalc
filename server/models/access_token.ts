@@ -1,5 +1,6 @@
 import mongoose, { type InferSchemaType, type Types } from 'mongoose';
 import { SCOPES } from '../lib/scopes.ts';
+import { deleteGrantRecords } from '../oauth/adapter.ts';
 
 // Access to an account that Glazecalc gave out, other than the web session
 // (docs/integrations-plan.md, item 4): a personal access token (kind 'pat')
@@ -30,12 +31,15 @@ export const REMINDER_DAYS_BEFORE = 7;
 /** At most this many personal tokens in use on one account. */
 export const MAX_PATS = 10;
 /**
- * An OAuth access token lasts an hour; its grant's refresh token 60 days, renewed as it rotates.
- * Nothing issues OAuth tokens yet: these are for the assistants' authorization server
- * (docs/integrations-plan.md, item 33).
+ * An app connected with OAuth (server/oauth/, docs/adr/0024): its access
+ * tokens last an hour. A connection that can only read lasts
+ * OAUTH_REFRESH_DAYS from its last refresh, renewed each time its refresh
+ * token is used; one that can also change records lasts OAUTH_WRITE_DAYS
+ * from the day it was allowed, never renewed (owner decision, 2026-10-19).
  */
 export const OAUTH_ACCESS_SECONDS = 60 * 60;
 export const OAUTH_REFRESH_DAYS = 60;
+export const OAUTH_WRITE_DAYS = 90;
 /**
  * How long a row stays after it expires, in days, so the settings page can
  * still say "expired on ...". A revoked one stays until then too: its hash
@@ -43,8 +47,21 @@ export const OAUTH_REFRESH_DAYS = 60;
  */
 export const KEEP_AFTER_EXPIRY_DAYS = 30;
 
-/** Why a token stopped working before it expired. */
-export const REVOKED_WHY = ['person', 'password-reset', 'signed-out-everywhere', 'leaked'] as const;
+/**
+ * Why a token stopped working before it expired. For a connected app also:
+ * 'app', the app ended it itself (OAuth revocation); 'reused', one of its
+ * refresh tokens or codes was used twice, so it may have been copied;
+ * 'replaced', the person connected the same app again.
+ */
+export const REVOKED_WHY = [
+  'person',
+  'password-reset',
+  'signed-out-everywhere',
+  'leaked',
+  'app',
+  'reused',
+  'replaced'
+] as const;
 export type RevokedWhy = (typeof REVOKED_WHY)[number];
 
 const accessTokenSchema = new mongoose.Schema(
@@ -53,8 +70,16 @@ const accessTokenSchema = new mongoose.Schema(
     userId: { type: mongoose.Schema.Types.ObjectId, required: true, index: true },
     /** What the person called it, or the OAuth client's name. */
     name: { type: String, required: true, maxlength: 100 },
-    /** The OAuth client this grant is for. */
+    /** The OAuth client this grant is for: a CIMD address, or the id a self-registered (DCR) app was given. */
     clientId: String,
+    /** A connected app's grant in the authorization server (server/oauth/): its tokens carry this id. */
+    grantId: String,
+    /** Where the app's details came from: its own address (CIMD), or what it said of itself (DCR). */
+    clientSource: { type: String, enum: ['cimd', 'dcr'] },
+    /** The host of a CIMD app's address; none for a DCR app, whose name and address are self-described. */
+    clientHost: String,
+    /** The host the app's sign-in came back to (its redirect URI). */
+    redirectHost: String,
     /** The token's SHA-256, in hex. An OAuth grant's tokens carry its id instead, so it may have none. */
     hash: String,
     /** Its last four characters, to tell tokens apart on the settings page. */
@@ -77,6 +102,8 @@ const accessTokenSchema = new mongoose.Schema(
 
 // The check finds a token by its hash, and only by that.
 accessTokenSchema.index({ hash: 1 }, { unique: true, partialFilterExpression: { hash: { $type: 'string' } } });
+// A connected app's tokens find their connection by its grant.
+accessTokenSchema.index({ grantId: 1 }, { unique: true, partialFilterExpression: { grantId: { $type: 'string' } } });
 // MongoDB removes a row KEEP_AFTER_EXPIRY_DAYS after it expires.
 accessTokenSchema.index({ expiresAt: 1 }, { expireAfterSeconds: KEEP_AFTER_EXPIRY_DAYS * 24 * 60 * 60 });
 
@@ -86,14 +113,50 @@ const AccessToken = mongoose.model('AccessToken', accessTokenSchema);
 export default AccessToken;
 export type AccessTokenDocument = ReturnType<(typeof AccessToken)['hydrate']>;
 
-/** Revokes every token and grant of an account still in use; resolves with how many. */
-export const revokeAll = async (userId: string | Types.ObjectId, why: RevokedWhy, now = new Date()): Promise<number> =>
-  (
+/**
+ * Revokes every token and connected app of an account still in use (a
+ * password reset, "Sign out everywhere", "Revoke all"); resolves with how
+ * many. The rows first, which stops them at once; then each connected app's
+ * grant in the authorization server, with all its codes, access and refresh
+ * tokens.
+ */
+export const revokeAll = async (
+  userId: string | Types.ObjectId,
+  why: RevokedWhy,
+  now = new Date()
+): Promise<number> => {
+  const count = (
     await AccessToken.updateMany(
       { userId, revokedAt: null, expiresAt: { $gt: now } },
       { $set: { revokedAt: now, revokedWhy: why } }
     )
   ).modifiedCount;
+  const grants = await AccessToken.find({ userId, kind: 'oauth', grantId: { $type: 'string' } }, { grantId: 1 }).lean();
+  await deleteGrantRecords(grants.map((row) => row.grantId!));
+  return count;
+};
+
+/**
+ * Revokes one token or connected app of an account (the account page, the
+ * Connected apps page); resolves with its row, or null when the account has
+ * none with that id. A connected app's grant goes with it, so every access
+ * and refresh token it holds stops at once. Revoking one already revoked
+ * changes nothing more.
+ */
+export const revokeToken = async (
+  userId: string | Types.ObjectId,
+  id: string | Types.ObjectId,
+  why: RevokedWhy = 'person',
+  now = new Date()
+): Promise<AccessTokenDocument | null> => {
+  const row = await AccessToken.findOne({ _id: id, userId });
+  if (!row) return null;
+  if (!row.revokedAt) {
+    await AccessToken.updateOne({ _id: row._id, revokedAt: null }, { $set: { revokedAt: now, revokedWhy: why } });
+  }
+  if (row.kind === 'oauth' && row.grantId) await deleteGrantRecords([row.grantId]);
+  return row;
+};
 
 /** The filter for an account's personal tokens that still work: neither revoked nor expired. */
 export const workingTokens = (userId: string | Types.ObjectId, now = new Date()) => ({
