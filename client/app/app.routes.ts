@@ -2,7 +2,7 @@ import { Routes } from '@angular/router';
 import { provideTranslocoScope } from '@jsverse/transloco';
 import { marker } from '@jsverse/transloco-keys-manager/marker';
 import { askBeforeLeaving } from './core/leave.guard';
-import { signedInGuard, visitorsOnlyGuard } from './core/signed-in.guard';
+import { signInThenBackGuard, signedInGuard, visitorsOnlyGuard } from './core/signed-in.guard';
 import { scopeTranslations } from './i18n/provide-i18n';
 import { guideText } from './pages/guides/guide-text';
 
@@ -250,6 +250,15 @@ export const routes: Routes = [
     providers: [provideTranslocoScope('account', 'notebook')],
     resolve: { messages: scopeTranslations },
     loadComponent: () => import('./pages/connections/connections-page').then((m) => m.ConnectionsPage)
+  },
+  {
+    // An AI app asking to connect (docs/adr/0024-authorization-server.md): signed in first, then back here.
+    path: 'connect/:uid',
+    title: marker('titles.connect'),
+    canActivate: [signInThenBackGuard],
+    providers: [provideTranslocoScope('account')],
+    resolve: { messages: scopeTranslations },
+    loadComponent: () => import('./pages/connect/connect-page').then((m) => m.ConnectPage)
   },
   {
     path: 'account',

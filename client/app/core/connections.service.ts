@@ -20,6 +20,8 @@ export interface ConnectionRow {
   name: string;
   clientHost?: string;
   redirectHost?: string;
+  /** An OAuth app that registered itself (DCR): its name is only its own word. */
+  selfDescribed?: boolean;
   access: 'read' | 'write';
   /** A personal token's last four characters. */
   hint?: string;

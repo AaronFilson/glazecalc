@@ -6,6 +6,17 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Added
 
+- **The consent page for AI apps, and a notice for each connection** (docs/adr/0024-authorization-server.md).
+  An app such as Claude or ChatGPT that asks to connect sends the person to `/connect/<id>`, after
+  signing in if needed (the sign-in page now takes `?next=`, this site's pages only). It shows the
+  app's name, marked "self-described" when the app registered itself; its checked address; where
+  the answer goes, with a warning when that is the person's own computer, an app's own link scheme
+  (shown whole: `evilapp://claude.ai/cb` is not claude.ai), or another host than the app's; what
+  it can read; and "Also let it change my records", never ticked for the person. Trials and
+  unconfirmed emails are told why they cannot connect. Each new connection emails the account,
+  naming the app, its host and whether it can change records, with a link to Connected apps,
+  which now marks self-described apps. The `/assistants` page explains the two ways to connect.
+  The consent API reports a redirect's host for http and https only. English only for now.
 - **The shelf over REST, with one Undo.** A token that can change records may add or remove one
   material at a time (`POST /api/shelf/add` and `/remove`, by `key` or `name`) and put back the
   shelf as it was before the last change (`POST /api/shelf/undo`, one step); `GET /api/shelf`

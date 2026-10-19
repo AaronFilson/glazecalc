@@ -353,7 +353,13 @@ describe('pages in each language', () => {
       expect(html, address).to.include('<meta name="referrer" content="no-referrer" />');
       expect(html, address).not.to.include('rel="canonical"');
     }
-    for (const address of ['/connect', '/connect/', '/connect/short', '/connect/' + uid + '/more', '/connect/a.b' + uid]) {
+    for (const address of [
+      '/connect',
+      '/connect/',
+      '/connect/short',
+      '/connect/' + uid + '/more',
+      '/connect/a.b' + uid
+    ]) {
       expect(isPage(address), address).to.equal(false);
     }
     expect(prerenderedKey('/connect/' + uid)).to.equal(null);

@@ -1,5 +1,5 @@
 import { TestBed } from '@angular/core/testing';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute, Router, convertToParamMap } from '@angular/router';
 import { of } from 'rxjs';
 import { AuthService } from '../../core/auth.service';
 import { LocaleService } from '../../core/locale.service';
@@ -56,6 +56,52 @@ describe('AuthPage', () => {
     await submitting;
     expect(TestBed.inject(AuthService).email()).toBe('a@b.com');
     expect(navigate).toHaveBeenCalledWith('/home');
+  });
+
+  describe('coming back to the page that sent the visitor here (?next=)', () => {
+    const withNext = async (next: string) => {
+      TestBed.configureTestingModule({
+        providers: [
+          ...testProviders(),
+          {
+            provide: ActivatedRoute,
+            useValue: { data: of({ mode: 'signin' }), snapshot: { queryParamMap: convertToParamMap({ next }) } }
+          }
+        ]
+      });
+      localStorage.clear();
+      const fixture = TestBed.createComponent(AuthPage);
+      await fixture.whenStable();
+      const page = fixture.componentInstance as unknown as Record<string, any>;
+      const navigate = vi.spyOn(TestBed.inject(Router), 'navigateByUrl').mockResolvedValue(true);
+      page['email'].set('a@b.com');
+      page['password'].set('password123');
+      const submitting = page['submit']();
+      httpMock()
+        .expectOne(API + '/signin')
+        .flush({ email: 'a@b.com' });
+      await submitting;
+      return { page, navigate };
+    };
+
+    it('goes back to a page of this site, and gives it to a provider sign-in too', async () => {
+      const { page, navigate } = await withNext('/connect/aB3_dE5-gH7iJ9kL1mN');
+      expect(navigate).toHaveBeenCalledWith('/connect/aB3_dE5-gH7iJ9kL1mN');
+      expect(page['here']).toBe('/connect/aB3_dE5-gH7iJ9kL1mN');
+    });
+
+    for (const next of [
+      'https://evil.example/x',
+      '//evil.example/x',
+      '/\\evil.example',
+      'javascript:alert(1)',
+      '/signin'
+    ]) {
+      it(`goes home instead of ${next}`, async () => {
+        const { navigate } = await withNext(next);
+        expect(navigate).toHaveBeenCalledWith('/home');
+      });
+    }
   });
 
   it('has the keep-me-signed-in box unticked, and sends its choice', async () => {

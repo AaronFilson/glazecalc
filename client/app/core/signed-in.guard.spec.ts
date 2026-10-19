@@ -2,7 +2,7 @@ import { TestBed } from '@angular/core/testing';
 import { Router, UrlTree } from '@angular/router';
 import { API, httpMock, testProviders } from '../testing/test-providers';
 import { routes } from '../app.routes';
-import { signedInGuard, visitorsOnlyGuard } from './signed-in.guard';
+import { sameSitePath, signInThenBackGuard, signedInGuard, visitorsOnlyGuard } from './signed-in.guard';
 
 describe('signedInGuard and visitorsOnlyGuard', () => {
   let configured = false;
@@ -62,6 +62,44 @@ describe('signedInGuard and visitorsOnlyGuard', () => {
     localStorage.setItem('trial', JSON.stringify({ name: 'rusty humble jugs', expiresAt: '2020-01-01T00:00:00Z' }));
     expect(url(await run(signedInGuard))).toBe('/');
     expect(await run(visitorsOnlyGuard)).toBe(true);
+  });
+
+  it('sends a signed-out visitor of the consent page to sign in, and back to it after', async () => {
+    setup(null);
+    const result = await TestBed.runInInjectionContext(() =>
+      signInThenBackGuard({} as never, { url: '/connect/aB3_dE5-gH7iJ9kL1mN' } as never)
+    );
+    expect(url(result)).toBe('/signin?next=%2Fconnect%2FaB3_dE5-gH7iJ9kL1mN');
+    TestBed.resetTestingModule();
+    setup('account');
+    const signedIn = TestBed.runInInjectionContext(() =>
+      signInThenBackGuard({} as never, { url: '/connect/aB3_dE5-gH7iJ9kL1mN' } as never)
+    ) as Promise<boolean | UrlTree>;
+    verify({ msg: 'User verified', id: 'u1', email: 'a@b.com' });
+    expect(await signedIn).toBe(true);
+  });
+
+  it('takes only this site’s pages as the page to come back to', () => {
+    expect(sameSitePath('/connect/abc')).toBe('/connect/abc');
+    expect(sameSitePath('/recipe?id=1')).toBe('/recipe?id=1');
+    for (const bad of [
+      null,
+      undefined,
+      42,
+      '',
+      'connect/abc',
+      'https://evil.example',
+      '//evil.example',
+      '/\\evil.example',
+      '/ /evil',
+      '/a\nb',
+      'javascript:alert(1)',
+      '/signin',
+      '/signup?next=/x',
+      '/' + 'a'.repeat(200)
+    ]) {
+      expect(sameSitePath(bad), String(bad)).toBeNull();
+    }
   });
 
   it('guards every page that loads the user’s data, and only those', () => {

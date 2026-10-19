@@ -6817,9 +6817,7 @@ export const sendConnectionMade = (to: string, connection: ConnectionMade, langu
   const parts = [
     fill(email.opening, values),
     fill(email.named, values),
-    ...(connection.clientHost
-      ? [fill(email.checked, { host: tokenNameForMail(connection.clientHost) })]
-      : []),
+    ...(connection.clientHost ? [fill(email.checked, { host: tokenNameForMail(connection.clientHost) })] : []),
     ...(connection.selfDescribed ? [email.selfDescribed] : []),
     ...(connection.redirectHost ? [host(connection.loopback ? email.loopback : email.answerAt)] : []),
     fill(connection.writeDays ? email.write : email.read, values),
