@@ -128,7 +128,6 @@
     "rightsAsk": "W każdej innej sprawie, np. aby poprosić o wstrzymanie wykorzystywania danych do czasu poprawienia błędu lub aby wnieść sprzeciw wobec sposobu ich wykorzystywania, należy napisać na adres <mail>privacy@glazecalcapp.com</mail>. Jest to bezpłatne, a odpowiedź nadejdzie w ciągu miesiąca. Poprosimy jedynie o wykazanie, że konto należy do osoby piszącej, przez zalogowanie się lub otwarcie linku wysłanego na adres konta, nigdy o dokument tożsamości.",
     "rightsComplain": "W razie niezadowolenia można złożyć skargę do organu ochrony danych: w UE do <edpb>organu we własnym kraju</edpb>, a w Wielkiej Brytanii do <ico>Information Commissioner’s Office</ico>.",
     "storageHeading": "Pliki cookie i pamięć przeglądarki",
-    "storageIntro": "Glazecalc ustawia dwa pliki cookie, drugi tylko podczas logowania przez Google lub GitHub, i przechowuje kilka małych wartości w przeglądarce. Każdy służy do czegoś, o co poproszono: pozostawania zalogowanym, logowania przez Google lub GitHub albo zapamiętania dokonanego wyboru. Żaden nie śledzi i żaden nie jest udostępniany, więc prawo nie wymaga uprzedniego pytania o zgodę i nie ma banera cookie.",
     "storageLabel": "Pliki cookie i pamięć przeglądarki",
     "storageName": "Nazwa",
     "storagePurpose": "Do czego służy",
@@ -181,19 +180,12 @@
       "reloadedFor": {
         "purpose": "Po wydaniu nowej wersji strony: która strona została przeładowana i kiedy, aby strona przeładowywała się najwyżej raz na minutę.",
         "lasts": "Do zamknięcia karty."
-      },
-      "oauthCookie": {
-        "purpose": "Tylko podczas logowania przez Google lub GitHub: łączy odpowiedź serwisu logowania z przeglądarką, aby nikt inny nie mógł dokończyć logowania ani rozpocząć go w czyimś imieniu. Skrypty na stronie nie mogą go odczytać.",
-        "lasts": "Ustawiany po naciśnięciu „Kontynuuj z Google” lub „Kontynuuj z GitHub” albo po połączeniu jednego z nich na stronie konta. Usuwany po zakończeniu logowania lub po 10 min."
       }
     },
     "childrenHeading": "Dzieci",
     "children": "Glazecalc to narzędzie dla ceramików i nie jest skierowane do dzieci.",
     "changesHeading": "Zmiany",
-    "changes": "Jeśli ta informacja się zmieni, zmieni się też data na górze strony.",
-    "storedProviders": "<b>Google lub GitHub, jeśli logowanie odbywa się przez jeden z nich:</b> własny identyfikator serwisu dla danej osoby (liczba lub kod, który nigdy się nie zmienia), kiedy połączono konto i kiedy ostatnio użyto go do logowania, oraz czy konto ma własne hasło. Nic więcej z serwisu nie jest przechowywane: ani imię i nazwisko, ani zdjęcie, ani żaden klucz do konta tam. Podczas logowania serwer przechowuje notatkę o logowaniu, wraz z adresem e-mail, który serwis podaje jako należący do danej osoby, gdy jest potrzebny: dla nowego konta, gdzie staje się adresem e-mail konta, albo, gdy konto Glazecalc ma już taki adres, aby połączyć z nim konto serwisu po zalogowaniu na to konto. Notatka, a w niej adres e-mail, jest usuwana w ciągu około 10 min.",
-    "providers": "<b>Logowanie przez Google lub GitHub</b> jest dobrowolne i odbywa się tylko po naciśnięciu jego przycisku. Przeglądarka przechodzi wtedy do Google lub GitHub, które przesyłają Glazecalc swój identyfikator danej osoby i jej adres e-mail. Każdy z nich to osobna firma, odpowiedzialna za to, co się jej przekazuje, zgodnie z własną polityką prywatności. Żaden skrypt ani obraz z żadnego z nich nie jest ładowany na stronach Glazecalc.",
-    "keptProviders": "<b>Google lub GitHub:</b> każde połączenie do chwili jego odłączenia lub usunięcia konta. Trwające logowanie jest usuwane po 10 min."
+    "changes": "Jeśli ta informacja się zmieni, zmieni się też data na górze strony."
   },
   "notFound": {
     "heading": "Nie znaleziono strony",

@@ -1,7 +1,8 @@
-// Signing in with Google or GitHub, and linking them to an account
-// (docs/adr/0015-provider-sign-in.md; the provider side is server/lib/oauth.ts).
+// Signing in with Google, GitHub or Microsoft, and linking them to an account
+// (docs/adr/0015-provider-sign-in.md, docs/adr/0023-microsoft-sign-in.md; the
+// provider side is server/lib/oauth.ts).
 //
-//   GET    /api/auth/providers          { providers: ['google', 'github'] }: those that are on
+//   GET    /api/auth/providers          { providers: ['google', 'github', 'microsoft'] }: those that are on
 //   GET    /api/auth/:provider/start    ?next=/de/recipe&keep=1: sets the provider cookie and
 //                                      sends the browser to the provider (303)
 //   GET    /api/auth/:provider/callback the provider sends the browser back here; 303 to
@@ -34,9 +35,13 @@
 //     or a passkey), and the same browser then finishes the link; and only to an
 //     account whose own email is confirmed. That closes "pre-hijacking": someone
 //     who made an account with another person's address cannot have that
-//     person's Google or GitHub joined to it;
+//     person's Google or GitHub joined to it (Microsoft never links by email);
 //   - from the account page, after the password (and a second step when two-step
 //     sign-in is on), any provider account not linked elsewhere; one per provider.
+// Microsoft's email is never trusted (oauth.trustsEmail, "nOAuth"): it makes a
+// new account whose email is unconfirmed until the confirmation email's link
+// is opened, and an email another account has is refused, never linked: the
+// person signs in to that account and links Microsoft from the account page.
 // An account with two-step sign-in still takes its second step after a provider
 // (docs/adr/0014-two-step-sign-in.md): finish answers as the password step does.
 // Linking and unlinking send a notice to a confirmed address.
@@ -56,6 +61,7 @@ import languages from '../../lib/regions/languages.js';
 import { mergeTrial } from '../lib/account_data.ts';
 import * as accountMail from '../lib/account_mail.ts';
 import * as email from '../lib/email.ts';
+import * as emailLinks from '../lib/email_links.ts';
 import { notGuest } from '../lib/guest_limits.ts';
 import * as changeGrant from '../lib/change_grant.ts';
 import jwtAuth, { currentUser, keepsSignIn, sessionKeyOf, userOf } from '../lib/jwt_auth.ts';
@@ -196,8 +202,15 @@ const resolve = async (
     return { outcome: 'link', subject };
   }
   if (owner && !owner.guest) return { outcome: 'signin', userId: owner._id, subject };
-  // A new account, or a link to one, only from an email the provider vouches for.
   const address = identity.email;
+  if (!oauth.trustsEmail(provider)) {
+    // Microsoft: the email finds nothing and links nothing (ADR 23). A new
+    // account starts with it unconfirmed; one another account has is refused.
+    if (!address || !email.isValid(address)) return error('provider-email-missing');
+    if (await User.exists({ email: address }).collation(email.collation)) return error('provider-email-in-use');
+    return { outcome: 'create', subject, email: address };
+  }
+  // A new account, or a link to one, only from an email the provider vouches for.
   if (!address || !identity.emailVerified || !email.isValid(address)) return error('provider-email-unverified');
   if (await User.exists({ email: address }).collation(email.collation)) {
     return { outcome: 'link-needed', subject, email: address };
@@ -260,9 +273,15 @@ const signedIn = async (
     ? await mergeTrial(trial._id, user._id)
     : { records: 0, pricesSkipped: 0 };
   session.start(res, user, 7, keep);
-  return res
-    .status(200)
-    .json(say('signed-in', undefined, { email: user.email, kept, next, ...(pricesSkipped && { pricesSkipped }) }));
+  return res.status(200).json(
+    say('signed-in', undefined, {
+      email: user.email,
+      kept,
+      next,
+      ...(pricesSkipped && { pricesSkipped }),
+      ...(user.emailUnverified && { unverified: true })
+    })
+  );
 };
 
 /**
@@ -369,6 +388,8 @@ oauthRouter.post('/finish', limits.oauth, async (req, res) => {
     case 'create': {
       const now = new Date();
       const subject = login.subject!;
+      // An email the provider does not vouch for (Microsoft's) is confirmed as a sign-up's is.
+      const unconfirmed = oauth.isProvider(provider) && !oauth.trustsEmail(provider);
       let user: UserDocument;
       try {
         user = await User.create({
@@ -376,6 +397,7 @@ oauthRouter.post('/finish', limits.oauth, async (req, res) => {
           // Like a trial's: a password nobody knows, until one is set by the reset email.
           password: await password.hash(oauth.randomValue()),
           passwordless: true,
+          ...(unconfirmed && { emailUnverified: true }),
           identities: [{ provider, subject, uid: uidOf(provider, subject), linkedAt: now, lastUsedAt: now }]
         });
       } catch (err) {
@@ -383,6 +405,7 @@ oauthRouter.post('/finish', limits.oauth, async (req, res) => {
         if (isDuplicateKey(err)) return res.status(409).json(say('provider-expired'));
         throw err;
       }
+      if (unconfirmed) emailLinks.sendVerification(user);
       return signedIn(res, user, login.trialId, login.keep, next);
     }
     case 'link-needed':
@@ -442,7 +465,25 @@ oauthRouter.post('/finish', limits.oauth, async (req, res) => {
   }
 });
 
+/**
+ * Microsoft's publisher domain file (/.well-known/microsoft-identity-association.json),
+ * which shows Microsoft that this site's domain belongs to the app registration
+ * (https://learn.microsoft.com/en-us/entra/identity-platform/howto-configure-publisher-domain):
+ * written from MICROSOFT_CLIENT_ID, so each copy of the site names its own
+ * app, and nothing but a client id (public: every sign-in sends it) is shown.
+ * Not found while Microsoft is off.
+ */
+export const microsoftAssociation = (req: Request, res: Response): void => {
+  const microsoft = oauth.credentials('microsoft');
+  if (!microsoft) {
+    res.status(404).json(say('not-found'));
+    return;
+  }
+  res.status(200).json({ associatedApplications: [{ applicationId: microsoft.id }] });
+};
+
 /** Whether unlinking `provider` would leave an account with no password no way in. */
+
 const lastWayIn = (user: UserDocument, provider: string): boolean =>
   user.passwordless === true && !(user.identities ?? []).some((identity) => identity.provider !== provider);
 

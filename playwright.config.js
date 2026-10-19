@@ -64,12 +64,14 @@ module.exports = defineConfig({
       MAIL_DIR: mailDir,
       // The tests sign up many accounts from one address.
       RATE_LIMITS: 'off',
-      // Sign in with Google and GitHub, against the fake provider (test use only).
+      // Sign in with Google, GitHub and Microsoft, against the fake provider (test use only).
       OAUTH_TEST_BASE: 'http://127.0.0.1:' + oauthPort,
       GOOGLE_CLIENT_ID: 'google-client',
       GOOGLE_CLIENT_SECRET: 'google-secret',
       GITHUB_CLIENT_ID: 'github-client',
-      GITHUB_CLIENT_SECRET: 'github-secret'
+      GITHUB_CLIENT_SECRET: 'github-secret',
+      MICROSOFT_CLIENT_ID: '00000000-1111-2222-3333-444444444444',
+      MICROSOFT_CLIENT_SECRET: 'microsoft-secret'
     }
   }
 });

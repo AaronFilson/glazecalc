@@ -1,9 +1,10 @@
-// Signing in with Google and GitHub (server/routes/oauth_routes.ts), against
-// the fake provider (support/fake_provider.ts): the flow and its checks, the
-// linking rules (pre-hijacking above all), two-step sign-in after a provider,
-// unconfirmed emails, linking and unlinking on the account page, confirming
-// a change with a fresh provider sign-in when the account has no password,
-// and the account's data.
+// Signing in with Google, GitHub and Microsoft (server/routes/oauth_routes.ts),
+// against the fake provider (support/fake_provider.ts): the flow and its
+// checks, the linking rules (pre-hijacking above all), two-step sign-in after
+// a provider, unconfirmed emails, linking and unlinking on the account page,
+// confirming a change with a fresh provider sign-in when the account has no
+// password, Microsoft's own rules (its tenant, an email never trusted), and
+// the account's data.
 import { exportAccount } from '../lib/export_data.ts';
 import * as oauth from '../lib/oauth.ts';
 import * as totp from '../lib/totp.ts';
@@ -11,8 +12,14 @@ import AuthChallenge from '../models/auth_challenge.ts';
 import OAuthLogin from '../models/oauth_login.ts';
 import Recipe from '../models/recipe.ts';
 import User from '../models/user.ts';
-import { api, expect, makeUser, sessionToken, uniqueEmail } from './support/app.ts';
-import { FAKE_SETTINGS, FakeProvider, type FakeIdentity, type FakeProviderId } from './support/fake_provider.ts';
+import { api, expect, makeUser, sessionToken, site, uniqueEmail } from './support/app.ts';
+import {
+  CONSUMER_TENANT,
+  FAKE_SETTINGS,
+  FakeProvider,
+  type FakeIdentity,
+  type FakeProviderId
+} from './support/fake_provider.ts';
 import * as mail from './support/mail.ts';
 
 type Res = Awaited<ReturnType<ReturnType<typeof api>['get']>>;
@@ -78,7 +85,7 @@ const signInWith = async (provider: FakeProviderId, identity: FakeIdentity, opti
   return { flow, back, done: await finish(flow.cookie, options.token) };
 };
 
-describe('signing in with Google and GitHub', () => {
+describe('signing in with Google, GitHub and Microsoft', () => {
   before(async () => {
     await fake.start();
     Object.assign(process.env, FAKE_SETTINGS, { OAUTH_TEST_BASE: fake.base });
@@ -92,18 +99,18 @@ describe('signing in with Google and GitHub', () => {
 
   describe('which providers are on', () => {
     it('lists only those with a client id and secret, and refuses the others', async () => {
-      expect((await api().get('/auth/providers')).body.providers).to.eql(['google', 'github']);
+      expect((await api().get('/auth/providers')).body.providers).to.eql(['google', 'github', 'microsoft']);
       const secret = process.env.GITHUB_CLIENT_SECRET;
       delete process.env.GITHUB_CLIENT_SECRET;
       try {
-        expect((await api().get('/auth/providers')).body.providers).to.eql(['google']);
+        expect((await api().get('/auth/providers')).body.providers).to.eql(['google', 'microsoft']);
         const res = await api().get('/auth/github/start').redirects(0);
         expect(res).to.have.status(404);
         expect(res.body.code).to.eql('provider-off');
       } finally {
         process.env.GITHUB_CLIENT_SECRET = secret;
       }
-      expect(await api().get('/auth/microsoft/start').redirects(0)).to.have.status(404);
+      expect(await api().get('/auth/facebook/start').redirects(0)).to.have.status(404);
     });
   });
 
@@ -504,7 +511,7 @@ describe('signing in with Google and GitHub', () => {
       const renewed = sessionToken(done)!;
 
       const methods = await api().get('/auth/methods').set(bearer(renewed));
-      expect(methods.body.enabled).to.eql(['google', 'github']);
+      expect(methods.body.enabled).to.eql(['google', 'github', 'microsoft']);
       expect(methods.body.passwordless).to.eql(false);
       expect(methods.body.linked.map((entry: { provider: string }) => entry.provider)).to.eql(['github']);
       expect(JSON.stringify(methods.body)).to.not.include(sub);
@@ -917,6 +924,223 @@ describe('signing in with Google and GitHub', () => {
       await User.updateOne({ _id: user._id }, { $set: { 'mfa.totp.lastStep': totp.stepAt() - 2 } });
       const withCode = await make(renewed, { reauth: second, code: totp.codeAt(secret, totp.stepAt()) });
       expect(withCode, JSON.stringify(withCode.body)).to.have.status(201);
+    });
+  });
+
+  describe('Microsoft', () => {
+    const OTHER_TENANT = '72f988bf-86f1-41af-91ab-2d7cd011db47';
+    const tenantIssuer = (tid: string) => fake.base + '/microsoft/' + tid + '/v2.0';
+
+    afterEach(() => {
+      fake.microsoftKeyIssuer = null;
+      fake.tamper = null;
+      oauth.forgetKeys();
+    });
+
+    it('sends the browser to the common endpoint with PKCE, a state, a nonce and the account picker', async () => {
+      const url = new URL((await start('microsoft')).location);
+      expect(url.origin + url.pathname).to.eql(fake.base + '/microsoft/authorize');
+      expect(url.searchParams.get('client_id')).to.eql(FAKE_SETTINGS.MICROSOFT_CLIENT_ID);
+      expect(url.searchParams.get('redirect_uri')).to.eql('https://glazecalc.test/api/auth/microsoft/callback');
+      expect(url.searchParams.get('response_type')).to.eql('code');
+      expect(url.searchParams.get('scope')).to.eql('openid email');
+      expect(url.searchParams.get('code_challenge_method')).to.eql('S256');
+      expect(url.searchParams.get('nonce')).to.match(/^[A-Za-z0-9_-]{43}$/);
+      expect(url.searchParams.get('prompt')).to.eql('select_account');
+      expect(url.searchParams.get('max_age')).to.eql(null);
+      // The real endpoints: `common`, for personal and work or school accounts.
+      const nodeEnv = process.env.NODE_ENV;
+      process.env.NODE_ENV = 'production';
+      try {
+        const real = oauth.endpoints('microsoft');
+        expect(real.authorize).to.eql('https://login.microsoftonline.com/common/oauth2/v2.0/authorize');
+        expect(real.token).to.eql('https://login.microsoftonline.com/common/oauth2/v2.0/token');
+        expect(real.jwks).to.eql('https://login.microsoftonline.com/common/discovery/v2.0/keys');
+        expect(real.issuerTemplate).to.eql('https://login.microsoftonline.com/{tenantid}/v2.0');
+      } finally {
+        process.env.NODE_ENV = nodeEnv;
+      }
+    });
+
+    it('makes a new account with its email unconfirmed, and sends the confirmation email', async () => {
+      const address = uniqueEmail('microsoft');
+      const sub = 'AAAAAAAAAAAAAAAAAAAAAIkzqFVrSaSaFHy782bbtaQ' + subjects++;
+      const { done } = await signInWith('microsoft', { sub, email: address });
+      expect(done, JSON.stringify(done.body)).to.have.status(200);
+      expect(done.body.code).to.eql('signed-in');
+      expect(done.body.unverified).to.eql(true);
+      const user = (await User.findOne({ email: address }).lean())!;
+      expect(user.emailUnverified).to.eql(true);
+      expect(user.passwordless).to.eql(true);
+      // Found by its tenant and sub together.
+      expect(user.identities!.map(({ provider, subject: s, uid }) => ({ provider, s, uid }))).to.eql([
+        { provider: 'microsoft', s: CONSUMER_TENANT + ':' + sub, uid: 'microsoft:' + CONSUMER_TENANT + ':' + sub }
+      ]);
+      const [sent] = await mail.waitFor(address, 1);
+      expect(sent!.subject).to.eql('Confirm your email for Glazecalc');
+      const confirmed = await api()
+        .post('/email/confirm')
+        .send({ token: mail.linkTokenIn(sent!) });
+      expect(confirmed).to.have.status(200);
+      expect((await User.findById(user._id).lean())!.emailUnverified).to.eql(undefined);
+
+      // Signs in again by tenant and sub, whatever the email says now.
+      const again = await signInWith('microsoft', { sub, email: uniqueEmail('changed') });
+      expect(again.done.body.email).to.eql(address);
+      expect(again.done.body.unverified).to.eql(undefined);
+    });
+
+    it('treats the same sub in another tenant as another person', async () => {
+      const sub = 'same-sub-' + subjects++;
+      const first = await signInWith('microsoft', { sub, email: uniqueEmail('t1') });
+      const second = await signInWith('microsoft', { sub, tid: OTHER_TENANT, email: uniqueEmail('t2') });
+      expect(second.done.body.code).to.eql('signed-in');
+      expect(second.done.body.email).to.not.eql(first.done.body.email);
+      expect(await User.exists({ 'identities.uid': 'microsoft:' + OTHER_TENANT + ':' + sub })).to.not.eql(null);
+    });
+
+    it('never links by email, nor signs in to the account that has it, even signed in to it', async () => {
+      // nOAuth: a tenant's administrator can give anyone any email.
+      const { user, token, email } = await makeUser();
+      const flow = await start('microsoft');
+      await callback('microsoft', flow, { sub: 'nOAuth-' + subjects++, tid: OTHER_TENANT, email });
+      const refused = await finish(flow.cookie);
+      expect(refused).to.have.status(400);
+      expect(refused.body.code).to.eql('provider-email-in-use');
+      expect(refused.body.msg).to.include('sign in to it the usual way, then link Microsoft on your account page');
+      expect(sessionToken(refused)).to.eql(null);
+      // Taken once: finishing it signed in to that account links nothing.
+      expect((await finish(flow.cookie, token)).body.code).to.eql('provider-expired');
+      expect((await User.findById(user._id).lean())!.identities).to.eql(undefined);
+
+      // Whatever its case, and for an unconfirmed account too.
+      const other = await makeUser({ email: uniqueEmail('unconfirmed') });
+      await User.updateOne({ _id: other.user._id }, { $set: { emailUnverified: true } });
+      for (const address of [email.toUpperCase(), other.email]) {
+        const { done } = await signInWith('microsoft', { sub: 'nOAuth-' + subjects++, email: address });
+        expect(done.body.code, address).to.eql('provider-email-in-use');
+      }
+      expect(await User.countDocuments({ 'identities.provider': 'microsoft', email })).to.eql(0);
+    });
+
+    it('makes no account without an email', async () => {
+      const { done } = await signInWith('microsoft', { sub: 'no-mail-' + subjects++, email: null });
+      expect(done.body.code).to.eql('provider-email-missing');
+      expect(sessionToken(done)).to.eql(null);
+    });
+
+    it('links from the account page after the password, whatever its email', async () => {
+      const { user, token, email, password } = await makeUser();
+      const res = await api().post('/auth/microsoft/link').set(bearer(token)).send({ password });
+      expect(res, JSON.stringify(res.body)).to.have.status(200);
+      const flow = { location: res.body.location as string, cookie: oauthCookie(res)! };
+      const sub = 'linked-' + subjects++;
+      await callback('microsoft', flow, { sub, tid: OTHER_TENANT, email: uniqueEmail('elsewhere') });
+      const linked = await finish(flow.cookie, token);
+      expect(linked.body.code).to.eql('provider-linked');
+      expect((await User.findById(user._id).lean())!.identities![0]!.uid).to.eql(
+        'microsoft:' + OTHER_TENANT + ':' + sub
+      );
+      const [notice] = await mail.waitFor(email, 1);
+      expect(notice!.text).to.include('with Microsoft');
+      // Now it signs in to that account.
+      const { done } = await signInWith('microsoft', { sub, tid: OTHER_TENANT, email: uniqueEmail('x') });
+      expect(done.body.email).to.eql(email);
+    });
+
+    it("refuses an ID token from another tenant's issuer, or with a tid, audience, nonce or time not its own", async () => {
+      const identity = () => ({ sub: 'tampered-' + subjects++, email: uniqueEmail('tamper') });
+      const cases: Array<Record<string, unknown>> = [
+        // Another tenant's issuer, with this token's tid: the issuer must be the token's own tenant's.
+        { iss: tenantIssuer(OTHER_TENANT) },
+        { tid: OTHER_TENANT },
+        { iss: fake.base + '/microsoft/common/v2.0' },
+        { iss: fake.base + '/microsoft/{tenantid}/v2.0' },
+        { tid: 'common', iss: tenantIssuer('common') },
+        { tid: undefined },
+        { aud: 'another-app' },
+        { nonce: 'another-nonce' },
+        { exp: Math.floor(Date.now() / 1000) - 3600 },
+        { nbf: Math.floor(Date.now() / 1000) + 3600 },
+        { sub: undefined }
+      ];
+      for (const tamper of cases) {
+        fake.tamper = tamper;
+        const one = identity();
+        const { done } = await signInWith('microsoft', one);
+        expect(done.body.code, JSON.stringify(tamper)).to.eql('provider-failed');
+        expect(await User.exists({ email: one.email })).to.eql(null);
+      }
+      // An untampered one is taken.
+      expect((await signInWith('microsoft', identity())).done.body.code).to.eql('signed-in');
+    });
+
+    it('uses a key only for the issuer the key set names for it', async () => {
+      // A key for one tenant only signs that tenant's tokens.
+      fake.microsoftKeyIssuer = tenantIssuer(OTHER_TENANT);
+      oauth.forgetKeys();
+      const wrong = await signInWith('microsoft', { sub: 'key-' + subjects++, email: uniqueEmail('key') });
+      expect(wrong.done.body.code).to.eql('provider-failed');
+      const right = await signInWith('microsoft', {
+        sub: 'key-' + subjects++,
+        tid: OTHER_TENANT,
+        email: uniqueEmail('key')
+      });
+      expect(right.done.body.code).to.eql('signed-in');
+      // A key with no issuer signs nothing.
+      fake.microsoftKeyIssuer = '';
+      oauth.forgetKeys();
+      const none = await signInWith('microsoft', { sub: 'key-' + subjects++, email: uniqueEmail('key') });
+      expect(none.done.body.code).to.eql('provider-failed');
+    });
+
+    it('confirms a change with prompt=login and a fresh auth_time, and refuses a stale or missing one', async () => {
+      const sub = 'reauth-' + subjects++;
+      const email = uniqueEmail('msreauth');
+      const made = await signInWith('microsoft', { sub, email });
+      const token = sessionToken(made.done)!;
+      const reauthStart = () => api().post('/auth/microsoft/reauth').set(bearer(token)).send({ next: '/account' });
+      const reauth = async () => {
+        const res = await reauthStart();
+        expect(res, JSON.stringify(res.body)).to.have.status(200);
+        const flow = { location: res.body.location as string, cookie: oauthCookie(res)! };
+        await callback('microsoft', flow, { sub, email });
+        return finish(flow.cookie, token);
+      };
+      const url = new URL((await reauthStart()).body.location as string);
+      expect(url.searchParams.get('prompt')).to.eql('login');
+      expect(url.searchParams.get('max_age')).to.eql(null);
+      expect(url.searchParams.get('claims')).to.eql(null);
+
+      for (const tamper of [{ auth_time: Math.floor(Date.now() / 1000) - 3600 }, { auth_time: undefined }]) {
+        fake.tamper = tamper;
+        const done = await reauth();
+        expect(done.body.code, JSON.stringify(tamper)).to.eql('provider-not-fresh');
+        expect(done.body.reauth).to.eql(undefined);
+      }
+      const done = await reauth();
+      expect(done.body.code).to.eql('provider-reauthed');
+      expect(done.body.provider).to.eql('microsoft');
+      // The grant stands in for the password, once.
+      const deleted = await api()
+        .delete('/deleteuser/' + String((await User.findOne({ email }))!._id))
+        .set(bearer(token))
+        .send({ reauth: done.body.reauth });
+      expect(deleted, JSON.stringify(deleted.body)).to.have.status(200);
+    });
+
+    it('serves the publisher domain file with its own client id, and none while Microsoft is off', async () => {
+      const res = await site().get('/.well-known/microsoft-identity-association.json');
+      expect(res).to.have.status(200);
+      expect(res.headers['content-type']).to.match(/^application\/json/);
+      expect(res.body).to.eql({ associatedApplications: [{ applicationId: FAKE_SETTINGS.MICROSOFT_CLIENT_ID }] });
+      const secret = process.env.MICROSOFT_CLIENT_SECRET;
+      delete process.env.MICROSOFT_CLIENT_SECRET;
+      try {
+        expect(await site().get('/.well-known/microsoft-identity-association.json')).to.have.status(404);
+      } finally {
+        process.env.MICROSOFT_CLIENT_SECRET = secret;
+      }
     });
   });
 

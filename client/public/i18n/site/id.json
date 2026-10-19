@@ -128,7 +128,6 @@
     "rightsAsk": "Untuk hal lain, seperti meminta agar data Anda ditahan dari penggunaan sementara kesalahan diperbaiki, atau keberatan atas cara data dipakai, tulis ke <mail>privacy@glazecalcapp.com</mail>. Gratis, dan Anda akan mendapat jawaban dalam sebulan. Anda hanya akan diminta menunjukkan bahwa akun itu milik Anda, dengan masuk atau dengan membuka tautan yang dikirim ke alamatnya, tidak pernah kartu identitas.",
     "rightsComplain": "Jika Anda tidak puas, Anda dapat mengajukan pengaduan ke otoritas perlindungan data: di UE, <edpb>otoritas di negara Anda</edpb>, dan di Inggris Raya, <ico>Information Commissioner's Office</ico>.",
     "storageHeading": "Cookie dan penyimpanan peramban",
-    "storageIntro": "Glazecalc menetapkan dua cookie, yang kedua hanya saat Anda masuk dengan Google atau GitHub, dan menyimpan beberapa nilai kecil di peramban Anda. Masing-masing ada untuk sesuatu yang Anda minta: tetap masuk, masuk dengan Google atau GitHub, atau mengingat pilihan yang Anda buat. Tidak ada yang melacak Anda dan tidak ada yang dibagikan, jadi hukum tidak mewajibkan meminta izin terlebih dahulu, dan tidak ada spanduk cookie.",
     "storageLabel": "Cookie dan penyimpanan peramban",
     "storageName": "Nama",
     "storagePurpose": "Untuk apa",
@@ -181,19 +180,12 @@
       "reloadedFor": {
         "purpose": "Setelah versi baru situs dirilis, halaman mana yang dimuat ulang dan kapan, agar halaman dimuat ulang paling banyak sekali semenit.",
         "lasts": "Sampai Anda menutup tab."
-      },
-      "oauthCookie": {
-        "purpose": "Hanya saat Anda masuk dengan Google atau GitHub: mengikat jawaban penyedia ke peramban Anda, agar tidak ada orang lain yang dapat menyelesaikan proses masuk Anda atau memulai satu untuk Anda. Skrip di halaman tidak dapat membacanya.",
-        "lasts": "Ditetapkan saat Anda menekan \"Lanjutkan dengan Google\" atau \"Lanjutkan dengan GitHub\", atau menautkan salah satunya di halaman akun Anda. Dihapus saat proses masuk selesai, atau setelah 10 menit."
       }
     },
     "childrenHeading": "Anak-anak",
     "children": "Glazecalc adalah alat untuk pembuat keramik dan tidak ditujukan kepada anak-anak.",
     "changesHeading": "Perubahan",
-    "changes": "Jika pemberitahuan ini berubah, tanggal di bagian atas halaman juga berubah.",
-    "storedProviders": "<b>Google atau GitHub, jika Anda masuk dengan salah satunya:</b> id milik penyedia untuk Anda (angka atau kode yang tidak pernah berubah), kapan Anda menautkannya dan kapan terakhir masuk dengannya, dan apakah akun Anda memiliki kata sandi sendiri. Tidak ada yang lain dari penyedia yang disimpan: bukan nama Anda, foto Anda, atau kunci apa pun ke akun Anda di sana. Saat Anda masuk, server menyimpan catatan proses masuk itu, dengan email yang menurut penyedia milik Anda bila diperlukan: untuk akun baru, tempat email itu menjadi email akun Anda, atau, bila akun Glazecalc sudah memiliki email itu, untuk menautkan penyedia ke akun tersebut setelah Anda masuk ke akun itu. Catatan itu, dan email di dalamnya, dihapus dalam sekitar 10 menit.",
-    "providers": "<b>Masuk dengan Google atau GitHub</b> adalah pilihan Anda, dan hanya terjadi saat Anda menekan tombolnya. Peramban Anda lalu menuju Google atau GitHub, yang mengirim ke Glazecalc id mereka untuk Anda dan email Anda. Masing-masing adalah perusahaan terpisah, yang bertanggung jawab atas apa yang Anda bagikan kepadanya berdasarkan kebijakan privasinya sendiri. Tidak ada skrip atau gambar dari keduanya yang dimuat di halaman Glazecalc.",
-    "keptProviders": "<b>Google atau GitHub:</b> setiap tautan sampai Anda melepaskannya atau menghapus akun. Proses masuk yang sedang berlangsung dihapus setelah 10 menit."
+    "changes": "Jika pemberitahuan ini berubah, tanggal di bagian atas halaman juga berubah."
   },
   "notFound": {
     "heading": "Halaman tidak ditemukan",

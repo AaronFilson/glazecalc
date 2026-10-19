@@ -128,7 +128,6 @@
     "rightsAsk": "Voor al het andere, zoals vragen om uw gegevens niet te gebruiken zolang een fout wordt rechtgezet, of bezwaar maken tegen hoe ze worden gebruikt, schrijft u naar <mail>privacy@glazecalcapp.com</mail>. Dat is gratis, en u krijgt binnen een maand antwoord. U wordt alleen gevraagd aan te tonen dat het account van u is, door in te loggen of door een link te openen die naar het adres ervan is gestuurd, nooit om een identiteitsbewijs.",
     "rightsComplain": "Als u niet tevreden bent, kunt u een klacht indienen bij een toezichthouder voor gegevensbescherming: in de EU bij <edpb>de toezichthouder in uw land</edpb>, en in het Verenigd Koninkrijk bij het <ico>Information Commissioner’s Office</ico>.",
     "storageHeading": "Cookies en browseropslag",
-    "storageIntro": "Glazecalc plaatst twee cookies, de tweede alleen terwijl u met Google of GitHub inlogt, en bewaart een paar kleine waarden in uw browser. Elk is er voor iets waar u om hebt gevraagd: ingelogd blijven, inloggen met Google of GitHub, of een keuze onthouden die u hebt gemaakt. Geen enkele volgt u en geen enkele wordt gedeeld, dus de wet vereist niet dat we eerst toestemming vragen, en er is geen cookiebanner.",
     "storageLabel": "Cookies en browseropslag",
     "storageName": "Naam",
     "storagePurpose": "Waarvoor",
@@ -181,19 +180,12 @@
       "reloadedFor": {
         "purpose": "Na het uitbrengen van een nieuwe versie van de site: welke pagina opnieuw is geladen en wanneer, zodat een pagina ten hoogste één keer per minuut opnieuw laadt.",
         "lasts": "Tot u het tabblad sluit."
-      },
-      "oauthCookie": {
-        "purpose": "Alleen terwijl u met Google of GitHub inlogt: het koppelt het antwoord van de aanbieder aan uw browser, zodat niemand anders uw inlogpoging kan afronden of er een voor u kan starten. Scripts op de pagina kunnen het niet lezen.",
-        "lasts": "Geplaatst als u op “Doorgaan met Google” of “Doorgaan met GitHub” drukt, of er een koppelt op uw accountpagina. Verwijderd als het inloggen klaar is, of na 10 minuten."
       }
     },
     "childrenHeading": "Kinderen",
     "children": "Glazecalc is een hulpmiddel voor pottenbakkers en is niet op kinderen gericht.",
     "changesHeading": "Wijzigingen",
-    "changes": "Als deze verklaring verandert, verandert ook de datum bovenaan de pagina.",
-    "storedProviders": "<b>Google of GitHub, als u met een van beide inlogt:</b> de eigen id van de aanbieder voor u (een getal of code die nooit verandert), wanneer u hem hebt gekoppeld en wanneer u er voor het laatst mee hebt ingelogd, en of uw account een eigen wachtwoord heeft. Verder wordt niets van de aanbieder bewaard: niet uw naam, uw foto of een sleutel tot uw account daar. Terwijl u inlogt, bewaart de server een notitie over het inloggen, met het e-mailadres dat de aanbieder als het uwe opgeeft, wanneer dat nodig is: voor een nieuw account, waar het het e-mailadres van uw account wordt, of, als een Glazecalc-account dat e-mailadres al heeft, om de aanbieder eraan te koppelen zodra u op dat account inlogt. De notitie, en het e-mailadres erin, wordt binnen ongeveer 10 minuten verwijderd.",
-    "providers": "<b>Inloggen met Google of GitHub</b> is uw keuze, en gebeurt alleen als u op de knop ervan drukt. Uw browser gaat dan naar Google of GitHub, die Glazecalc hun id voor u en uw e-mailadres sturen. Elk is een apart bedrijf, verantwoordelijk voor wat u ermee deelt volgens zijn eigen privacybeleid. Er wordt geen script of afbeelding van een van beide op de pagina’s van Glazecalc geladen.",
-    "keptProviders": "<b>Google of GitHub:</b> elke koppeling totdat u hem ontkoppelt of uw account verwijdert. Een inlogpoging die bezig is, wordt na 10 minuten verwijderd."
+    "changes": "Als deze verklaring verandert, verandert ook de datum bovenaan de pagina."
   },
   "notFound": {
     "heading": "Pagina niet gevonden",

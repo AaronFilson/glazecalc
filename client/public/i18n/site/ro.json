@@ -128,7 +128,6 @@
     "rightsAsk": "Pentru orice altceva, cum ar fi să cereți ca datele să nu fie folosite cât timp se corectează o greșeală sau să vă opuneți modului în care sunt folosite, scrieți la <mail>privacy@glazecalcapp.com</mail>. Este gratuit și veți primi un răspuns în termen de o lună. Vi se va cere doar să arătați că acel cont vă aparține, conectându-vă sau deschizând un link trimis la adresa contului, niciodată un act de identitate.",
     "rightsComplain": "Dacă răspunsul nu vă mulțumește, puteți depune o plângere la o autoritate pentru protecția datelor: în UE, la <edpb>autoritatea din țara dumneavoastră</edpb>, iar în Regatul Unit, la <ico>Information Commissioner’s Office</ico>.",
     "storageHeading": "Cookie-uri și stocarea în browser",
-    "storageIntro": "Glazecalc setează două cookie-uri, al doilea doar cât vă conectați cu Google sau GitHub, și păstrează câteva valori mici în browser. Fiecare există pentru ceva ce ați cerut: să rămâneți conectat, să vă conectați cu Google sau GitHub ori să vă amintim o alegere pe care ați făcut-o. Niciunul nu vă urmărește și niciunul nu este partajat, așa că legea nu cere să se ceară acordul mai întâi și nu există banner de cookie-uri.",
     "storageLabel": "Cookie-uri și stocarea în browser",
     "storageName": "Denumire",
     "storagePurpose": "La ce folosește",
@@ -181,19 +180,12 @@
       "reloadedFor": {
         "purpose": "După lansarea unei versiuni noi a site-ului, ce pagină a fost reîncărcată și când, astfel încât o pagină să se reîncarce cel mult o dată pe minut.",
         "lasts": "Până când închideți fila."
-      },
-      "oauthCookie": {
-        "purpose": "Doar cât vă conectați cu Google sau GitHub: leagă răspunsul de la Google sau GitHub de browserul dumneavoastră, ca nimeni altcineva să nu poată încheia conectarea dumneavoastră sau începe una în locul dumneavoastră. Scripturile din pagină nu îl pot citi.",
-        "lasts": "Se setează când apăsați „Continuați cu Google” sau „Continuați cu GitHub”, sau asociați unul pe pagina contului. Se elimină când conectarea se încheie sau după 10 minute."
       }
     },
     "childrenHeading": "Copii",
     "children": "Glazecalc este un instrument pentru ceramiști și nu se adresează copiilor.",
     "changesHeading": "Modificări",
-    "changes": "Dacă această informare se modifică, se modifică și data din partea de sus a paginii.",
-    "storedProviders": "<b>Google sau GitHub, dacă vă conectați cu unul:</b> identificatorul pe care vi-l dă acel serviciu (un număr sau cod care nu se schimbă niciodată), când l-ați asociat și când v-ați conectat ultima dată cu el, și dacă contul dumneavoastră are o parolă proprie. Nimic altceva de la acel serviciu nu este păstrat: nici numele, nici poza, nici vreo cheie către contul dumneavoastră de acolo. Cât vă conectați, serverul păstrează o notă despre conectare, cu adresa de e-mail pe care serviciul spune că este a dumneavoastră când este nevoie: pentru un cont nou, unde devine adresa de e-mail a contului, sau, când un cont Glazecalc are deja acea adresă de e-mail, ca să asocieze serviciul la el odată ce vă conectați la acel cont. Nota și adresa de e-mail din ea sunt șterse în aproximativ 10 minute.",
-    "providers": "<b>Conectarea cu Google sau GitHub</b> este alegerea dumneavoastră și se întâmplă doar când apăsați butonul lui. Browserul dumneavoastră merge atunci la Google sau GitHub, care trimit către Glazecalc identificatorul lor pentru dumneavoastră și adresa de e-mail. Fiecare este o companie separată, responsabilă pentru ce partajați cu ea conform propriei politici de confidențialitate. Niciun script sau imagine de la niciuna dintre ele nu se încarcă pe paginile Glazecalc.",
-    "keptProviders": "<b>Google sau GitHub:</b> fiecare asociere până o dezasociați sau ștergeți contul. O conectare în curs este ștearsă după 10 minute."
+    "changes": "Dacă această informare se modifică, se modifică și data din partea de sus a paginii."
   },
   "notFound": {
     "heading": "Pagina nu a fost găsită",

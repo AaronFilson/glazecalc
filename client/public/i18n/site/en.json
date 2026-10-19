@@ -128,7 +128,7 @@
     "rightsAsk": "For anything else, such as asking for your data to be held back from use while a mistake is put right, or objecting to how it is used, write to <mail>privacy@glazecalcapp.com</mail>. It is free, and you will have an answer within a month. You will only be asked to show the account is yours, by signing in or by opening a link sent to its address, never for an ID.",
     "rightsComplain": "If you are not satisfied, you can complain to a data protection authority: in the EU, <edpb>the authority in your country</edpb>, and in the UK, the <ico>Information Commissioner's Office</ico>.",
     "storageHeading": "Cookies and browser storage",
-    "storageIntro": "Glazecalc sets two cookies, the second only while you sign in with Google or GitHub, and keeps a few small values in your browser. Each is there for something you asked for: staying signed in, signing in with Google or GitHub, or remembering a choice you made. None tracks you and none is shared, so the law does not require asking first, and there is no cookie banner.",
+    "storageIntro": "Glazecalc sets two cookies, the second only while you sign in with Google, GitHub or Microsoft, and keeps a few small values in your browser. Each is there for something you asked for: staying signed in, signing in with Google, GitHub or Microsoft, or remembering a choice you made. None tracks you and none is shared, so the law does not require asking first, and there is no cookie banner.",
     "storageLabel": "Cookies and browser storage",
     "storageName": "Name",
     "storagePurpose": "What it is for",
@@ -183,17 +183,17 @@
         "lasts": "Until you close the tab."
       },
       "oauthCookie": {
-        "purpose": "Only while you sign in with Google or GitHub: it ties the provider's answer to your browser, so no one else can finish your sign-in or start one for you. Scripts on the page cannot read it.",
-        "lasts": "Set when you press \"Continue with Google\" or \"Continue with GitHub\", or link one on your account page. Removed when the sign-in finishes, or after 10 minutes."
+        "purpose": "Only while you sign in with Google, GitHub or Microsoft: it ties the provider's answer to your browser, so no one else can finish your sign-in or start one for you. Scripts on the page cannot read it.",
+        "lasts": "Set when you press \"Continue with Google\", \"Continue with GitHub\" or \"Sign in with Microsoft\", or link one on your account page. Removed when the sign-in finishes, or after 10 minutes."
       }
     },
     "childrenHeading": "Children",
     "children": "Glazecalc is a tool for potters and is not directed at children.",
     "changesHeading": "Changes",
     "changes": "If this notice changes, the date at the top of the page changes too.",
-    "storedProviders": "<b>Google or GitHub, if you sign in with one:</b> the provider's own id for you (a number or code that never changes), when you linked it and when you last signed in with it, and whether your account has a password of its own. Nothing else from the provider is kept: not your name, your picture or any key to your account there. While you sign in, the server keeps a note of the sign-in, with the email the provider says is yours when it is needed: for a new account, where it becomes your account's email, or, when a Glazecalc account already has that email, to link the provider to it once you sign in to that account. The note, and the email in it, is deleted within about 10 minutes.",
-    "providers": "<b>Signing in with Google or GitHub</b> is your choice, and only happens when you press its button. Your browser then goes to Google or GitHub, which send Glazecalc their id for you and your email. Each is a separate company, responsible for what you share with it under its own privacy policy. No script or image from either loads on Glazecalc's pages.",
-    "keptProviders": "<b>Google or GitHub:</b> each link until you unlink it or delete your account. A sign-in under way is deleted after 10 minutes."
+    "storedProviders": "<b>Google, GitHub or Microsoft, if you sign in with one:</b> the provider's own id for you (a number or code that never changes; for Microsoft, together with the id of the directory your account belongs to: your organization's, or Microsoft's own for personal accounts), when you linked it and when you last signed in with it, and whether your account has a password of its own. Nothing else from the provider is kept: not your name, your picture or any key to your account there. While you sign in, the server keeps a note of the sign-in, with the email the provider says is yours when it is needed: for a new account, where it becomes your account's email (an email from Microsoft is not taken on trust: you confirm it with the link we email you, as when you sign up), or, when a Glazecalc account already has that email, to link Google or GitHub to it once you sign in to that account (Microsoft is linked only from the account page). The note, and the email in it, is deleted within about 10 minutes.",
+    "providers": "<b>Signing in with Google, GitHub or Microsoft</b> is your choice, and only happens when you press its button. Your browser then goes to that provider, which sends Glazecalc its id for you and your email. Each is a separate company, responsible for what you share with it under its own privacy policy. No script or image from any of them loads on Glazecalc's pages.",
+    "keptProviders": "<b>Google, GitHub or Microsoft:</b> each link until you unlink it or delete your account. A sign-in under way is deleted after 10 minutes."
   },
   "terms": {
     "title": "Terms of use",

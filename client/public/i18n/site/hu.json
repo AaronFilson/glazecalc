@@ -128,7 +128,6 @@
     "rightsAsk": "Minden egyébhez, például ha azt kéri, hogy adatait egy hiba kijavításáig ne használjuk, vagy ha tiltakozik a felhasználásuk módja ellen, írjon ide: <mail>privacy@glazecalcapp.com</mail>. Ez ingyenes, és egy hónapon belül választ kap. Csak azt kell igazolnia, hogy a fiók az Öné, bejelentkezéssel vagy a fiók címére küldött link megnyitásával; személyazonosító igazolványt soha nem kérünk.",
     "rightsComplain": "Ha nem elégedett, panaszt tehet egy adatvédelmi hatóságnál: az EU-ban <edpb>az országa hatóságánál</edpb>, az Egyesült Királyságban pedig az <ico>Information Commissioner’s Office</ico> nevű hivatalnál.",
     "storageHeading": "Sütik és böngészőtárhely",
-    "storageIntro": "A Glazecalc két sütit állít be, a másodikat csak akkor, amikor Google-lal vagy GitHubbal jelentkezik be, és néhány kis értéket tárol a böngészőjében. Mindegyik valamilyen kért dologhoz kell: a bejelentkezve maradáshoz, a Google-lal vagy GitHubbal való bejelentkezéshez, vagy egy választása megjegyzéséhez. Egyik sem követi Önt, és egyiket sem osztjuk meg, ezért a jogszabály nem írja elő, hogy előbb megkérdezzük, és nincs süti-szalag.",
     "storageLabel": "Sütik és böngészőtárhely",
     "storageName": "Név",
     "storagePurpose": "Mire szolgál",
@@ -181,19 +180,12 @@
       "reloadedFor": {
         "purpose": "A webhely új verziójának kiadása után az, hogy melyik oldal töltődött újra és mikor, hogy egy oldal legfeljebb percenként egyszer töltődjön újra.",
         "lasts": "Amíg be nem zárja a lapot."
-      },
-      "oauthCookie": {
-        "purpose": "Csak amíg Google-lal vagy GitHubbal jelentkezik be: a szolgáltató válaszát a böngészőjéhez köti, így senki más nem fejezheti be az Ön bejelentkezését, és nem indíthat el helyette egyet. Az oldalon futó szkriptek nem olvashatják.",
-        "lasts": "Akkor jön létre, amikor megnyomja a „Folytatás a Google-lal” vagy a „Folytatás a GitHubbal” gombot, vagy összekapcsol egyet a fiókoldalán. Törlődik, amikor a bejelentkezés befejeződik, vagy 10 perc múlva."
       }
     },
     "childrenHeading": "Gyermekek",
     "children": "A Glazecalc fazekasoknak szóló eszköz, és nem gyermekeknek készült.",
     "changesHeading": "Változások",
-    "changes": "Ha ez a tájékoztató megváltozik, az oldal tetején lévő dátum is megváltozik.",
-    "storedProviders": "<b>Google vagy GitHub, ha valamelyikkel bejelentkezik:</b> a szolgáltató saját azonosítója Önről (egy szám vagy kód, amely soha nem változik), mikor kapcsolta össze, és mikor jelentkezett be vele utoljára, valamint hogy a fióknak van-e saját jelszava. A szolgáltatótól mást nem őrzünk meg: se a nevét, se a képét, se semmilyen kulcsot az ottani fiókjához. Amíg bejelentkezik, a szerver feljegyzést tart a bejelentkezésről, azzal az e-mail-címmel, amelyet a szolgáltató az Öné gyanánt megad, amikor szükség van rá: új fióknál, ahol ez lesz a fiók e-mail-címe, vagy ha egy Glazecalc-fiók már rendelkezik ezzel az e-mail-címmel, hogy a bejelentkezés után ahhoz a fiókhoz kapcsolhassuk a szolgáltatót. A feljegyzés, és benne az e-mail-cím, körülbelül 10 percen belül törlődik.",
-    "providers": "<b>A Google-lal vagy GitHubbal való bejelentkezés</b> az Ön döntése, és csak akkor történik meg, amikor megnyomja a gombját. A böngészője ekkor a Google-hoz vagy a GitHubhoz megy, amelyek elküldik a Glazecalcnak az Önre vonatkozó azonosítójukat és az e-mail-címét. Mindkettő önálló vállalat, és a saját adatvédelmi szabályzata szerint felel azért, amit megoszt vele. Egyiküktől sem töltődik be szkript vagy kép a Glazecalc oldalain.",
-    "keptProviders": "<b>Google vagy GitHub:</b> mindegyik összekapcsolás addig, amíg le nem választja, vagy nem törli a fiókját. A folyamatban lévő bejelentkezés 10 perc után törlődik."
+    "changes": "Ha ez a tájékoztató megváltozik, az oldal tetején lévő dátum is megváltozik."
   },
   "notFound": {
     "heading": "Az oldal nem található",

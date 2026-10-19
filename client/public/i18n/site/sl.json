@@ -128,7 +128,6 @@
     "rightsAsk": "Za vse drugo, na primer če želite, da se vaši podatki ne uporabljajo, dokler se napaka ne popravi, ali če ugovarjate načinu njihove uporabe, pišite na <mail>privacy@glazecalcapp.com</mail>. To je brezplačno in odgovor boste prejeli v enem mesecu. Prosili vas bomo samo, da dokažete, da je račun vaš, s prijavo ali z odprtjem povezave, poslane na njegov naslov, nikoli pa za osebni dokument.",
     "rightsComplain": "Če niste zadovoljni, se lahko pritožite pri nadzornem organu za varstvo podatkov: v EU pri <edpb>organu v vaši državi</edpb>, v Združenem kraljestvu pa pri <ico>Information Commissioner's Office</ico>.",
     "storageHeading": "Piškotki in shramba brskalnika",
-    "storageIntro": "Glazecalc nastavi dva piškotka, drugega samo med prijavo z Googlom ali GitHubom, in hrani nekaj majhnih vrednosti v vašem brskalniku. Vsaka je tam zaradi nečesa, kar ste zahtevali: da ostanete prijavljeni, da se prijavite z Googlom ali GitHubom ali da se zapomni vaša izbira. Nobena vam ne sledi in nobena se ne deli, zato zakon ne zahteva, da bi vprašali vnaprej, pasice o piškotkih pa ni.",
     "storageLabel": "Piškotki in shramba brskalnika",
     "storageName": "Ime",
     "storagePurpose": "Čemu služi",
@@ -181,19 +180,12 @@
       "reloadedFor": {
         "purpose": "Po izidu nove različice spletnega mesta to, katera stran se je znova naložila in kdaj, da se stran znova naloži največ enkrat na minuto.",
         "lasts": "Dokler ne zaprete zavihka."
-      },
-      "oauthCookie": {
-        "purpose": "Samo med prijavo z Googlom ali GitHubom: odgovor storitve poveže z vašim brskalnikom, da nihče drug ne more dokončati vaše prijave ali je začeti namesto vas. Skripti na strani ga ne morejo prebrati.",
-        "lasts": "Nastavi se, ko pritisnete »Nadaljuj z Googlom« ali »Nadaljuj z GitHubom« ali enega povežete na strani računa. Odstrani se, ko je prijava končana, ali po 10 minutah."
       }
     },
     "childrenHeading": "Otroci",
     "children": "Glazecalc je orodje za lončarje in ni namenjen otrokom.",
     "changesHeading": "Spremembe",
-    "changes": "Če se to obvestilo spremeni, se spremeni tudi datum na vrhu strani.",
-    "storedProviders": "<b>Google ali GitHub, če se prijavljate z enim od njiju:</b> ID, ki vam ga je dodelila storitev (število ali koda, ki se nikoli ne spremeni), kdaj ste jo povezali in kdaj ste se nazadnje prijavili z njo ter ali ima vaš račun lastno geslo. Nič drugega od storitve se ne hrani: ne vaše ime, vaša slika ali kakršen koli ključ do vašega računa tam. Med prijavo strežnik hrani zapis o prijavi, z e-poštnim naslovom, ki ga storitev navaja kot vašega, kadar je potreben: za nov račun, kjer postane e-poštni naslov računa, ali, kadar račun Glazecalc že ima ta naslov, da storitev poveže z njim, ko se prijavite v ta račun. Zapis in e-poštni naslov v njem se izbrišeta v približno 10 minutah.",
-    "providers": "<b>Prijava z Googlom ali GitHubom</b> je vaša izbira in se zgodi samo, ko pritisnete njen gumb. Vaš brskalnik se nato preusmeri na Google ali GitHub, ki Glazecalc pošljeta svoj ID za vas in vaš e-poštni naslov. Vsak je samostojno podjetje, odgovorno za to, kar delite z njim, v skladu z lastnimi pravili o zasebnosti. Na straneh Glazecalc se ne naloži noben skript ali slika od njiju.",
-    "keptProviders": "<b>Google ali GitHub:</b> vsaka povezava, dokler je ne prekinete ali ne izbrišete računa. Prijava v teku se izbriše po 10 minutah."
+    "changes": "Če se to obvestilo spremeni, se spremeni tudi datum na vrhu strani."
   },
   "notFound": {
     "heading": "Strani ni mogoče najti",

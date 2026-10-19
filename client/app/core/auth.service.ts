@@ -46,10 +46,14 @@ interface EmailResponse {
 export type SignInResult = { done: true; kept: number } | { done: false; secondStep: SecondStepResponse };
 
 /** A sign-in provider (server/lib/oauth.ts). */
-export type ProviderId = 'google' | 'github';
+export type ProviderId = 'google' | 'github' | 'microsoft';
 
 /** A provider's name as the page shows it: a brand, the same in every language. */
-export const PROVIDER_NAMES: Record<ProviderId, string> = { google: 'Google', github: 'GitHub' };
+export const PROVIDER_NAMES: Record<ProviderId, string> = {
+  google: 'Google',
+  github: 'GitHub',
+  microsoft: 'Microsoft'
+};
 
 /**
  * What finishing a provider sign-in came to (POST /api/auth/finish): signed in
@@ -271,7 +275,7 @@ export class AuthService {
     return this.finished(res);
   }
 
-  // Signing in with Google or GitHub (server/routes/oauth_routes.ts).
+  // Signing in with Google, GitHub or Microsoft (server/routes/oauth_routes.ts).
 
   /** The providers that are on here; none when the server says nothing. */
   async providers(): Promise<ProviderId[]> {
@@ -301,6 +305,8 @@ export class AuthService {
       provider?: ProviderId;
       reauth?: string;
       expiresAt?: string;
+      /** A new account whose email the provider does not vouch for (Microsoft's): the confirmation email is on its way. */
+      unverified?: boolean;
     };
     let res: Finished;
     try {
@@ -315,8 +321,11 @@ export class AuthService {
     if (isSecondStep(res as SecondStepResponse)) {
       return { kind: 'second-step', next, email: res.email ?? '', secondStep: res as unknown as SecondStepResponse };
     }
-    if (res.code === 'signed-in' && res.email)
-      return { kind: 'signed-in', next, kept: this.finished(res as { email: string }) };
+    if (res.code === 'signed-in' && res.email) {
+      const kept = this.finished(res as { email: string });
+      this.unverified.set(res.unverified === true);
+      return { kind: 'signed-in', next, kept };
+    }
     if (res.code === 'provider-reauthed' && res.reauth && res.provider && res.expiresAt) {
       this.holdReauth({ grant: res.reauth, provider: res.provider, expiresAt: Date.parse(res.expiresAt) });
       return { kind: 'reauthed', message: said(res) };

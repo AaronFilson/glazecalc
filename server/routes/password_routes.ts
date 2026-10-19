@@ -10,7 +10,7 @@
 // A new password signs out every device (the user's tokenVersion goes up) and
 // sends a notice to the account's address. A reset, which may mean someone
 // else knew the password, also revokes every access token and connected app
-// (decision 5), and unlinks every Google or GitHub account (the owner's
+// (decision 5), and unlinks every Google, GitHub or Microsoft account (the owner's
 // decision of 2026-10-17, ADR 15): someone who got in may have linked their
 // own. Its notice says so, and that they can be linked again from the account
 // page. An ordinary change keeps them all. A 400 about one field names it:

@@ -19,6 +19,15 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   `coneFit` in the MCP tools `get_recipe` and `check_limits` (with a firing); not on print or
   shared pages. Katz's rule now starts from his own 1305 °C for cone 10 (was 1300 °C), so the "too
   little boron" check and replacing lead ask for 0.01 more boron. English only for now.
+- **Sign in with Microsoft** (docs/adr/0023-microsoft-sign-in.md), beside Google and GitHub, for
+  personal and work or school accounts, with Microsoft's own button. Accounts are found by the
+  Microsoft tenant and the account's id, never by email: Microsoft's email is not taken on trust,
+  so a new account made with it confirms its address with the emailed link, as after signing up,
+  and an email another Glazecalc account has is refused, to be linked from the account page once
+  signed in. Confirming a change on an account without a password asks Microsoft for the password
+  again. Off until its settings exist (deploy/README.md); the privacy notice names Microsoft. The
+  provider messages and texts that now name Microsoft show in English until the next translation
+  round.
 - **Terms of use** at `/terms`, linked from every page's footer: Glazecalc is free for your own
   glazes, records and learning, as a hobby, for teaching or in business; the code stays under the
   MIT License, and the terms are for the site. They ask users not to break the shared server

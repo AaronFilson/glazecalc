@@ -30,8 +30,8 @@ services:
     restart: unless-stopped
     # APP_SECRET, MONGODB_URI (with the app's MongoDB user and password),
     # MFA_KEY (two-step sign-in's key), the email settings and, once their
-    # parameters exist, GOOGLE_/GITHUB_CLIENT_ID and _CLIENT_SECRET (sign in
-    # with Google and GitHub), written by deploy.sh from SSM Parameter Store
+    # parameters exist, GOOGLE_/GITHUB_/MICROSOFT_CLIENT_ID and _CLIENT_SECRET
+    # (sign in with Google, GitHub and Microsoft), written by deploy.sh from SSM Parameter Store
     # (root-only file).
     env_file: /opt/glazecalc/app.env
     environment:

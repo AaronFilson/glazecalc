@@ -128,7 +128,6 @@
     "rightsAsk": "Pri čomkoľvek inom, napríklad ak chcete, aby sa vaše údaje nepoužívali, kým sa neopraví chyba, alebo ak namietate proti tomu, ako sa používajú, napíšte na <mail>privacy@glazecalcapp.com</mail>. Je to bezplatné a odpoveď dostanete do mesiaca. Bude potrebné len preukázať, že účet je váš, a to prihlásením alebo otvorením odkazu poslaného na jeho adresu, nikdy nie dokladom totožnosti.",
     "rightsComplain": "Ak vás výsledok neuspokojí, môžete podať sťažnosť dozornému orgánu pre ochranu údajov: v EÚ <edpb>orgánu vo vašej krajine</edpb> a v Spojenom kráľovstve úradu <ico>Information Commissioner’s Office</ico>.",
     "storageHeading": "Súbory cookie a úložisko prehliadača",
-    "storageIntro": "Glazecalc nastavuje dva súbory cookie, druhý len počas prihlasovania cez Google alebo GitHub, a uchováva pár drobných hodnôt vo vašom prehliadači. Každé z nich je tu kvôli niečomu, o čo ste požiadali: zostať prihlásení, prihlásiť sa cez Google alebo GitHub, alebo si zapamätať vašu voľbu. Žiadne vás nesleduje a žiadne sa nezdieľa, takže zákon nevyžaduje predchádzajúci súhlas a nie je tu lišta o cookies.",
     "storageLabel": "Súbory cookie a úložisko prehliadača",
     "storageName": "Názov",
     "storagePurpose": "Na čo slúži",
@@ -181,19 +180,12 @@
       "reloadedFor": {
         "purpose": "Po vydaní novej verzie stránky to, ktorá stránka sa znova načítala a kedy, aby sa stránka znova načítala najviac raz za minútu.",
         "lasts": "Kým nezatvoríte kartu."
-      },
-      "oauthCookie": {
-        "purpose": "Len počas prihlasovania cez Google alebo GitHub: spája odpoveď služby s vaším prehliadačom, takže nikto iný nemôže dokončiť vaše prihlásenie ani nejaké za vás spustiť. Skripty na stránke ho nemôžu prečítať.",
-        "lasts": "Nastaví sa, keď stlačíte „Pokračovať cez Google“ alebo „Pokračovať cez GitHub“, alebo jednu z nich prepojíte na stránke účtu. Odstráni sa po dokončení prihlásenia alebo po 10 minútach."
       }
     },
     "childrenHeading": "Deti",
     "children": "Glazecalc je nástroj pre keramikárov a nie je určený deťom.",
     "changesHeading": "Zmeny",
-    "changes": "Ak sa toto oznámenie zmení, zmení sa aj dátum v hornej časti stránky.",
-    "storedProviders": "<b>Google alebo GitHub, ak sa prihlasujete jedným z nich:</b> vlastný identifikátor služby pre vás (číslo alebo kód, ktorý sa nikdy nemení), kedy bolo prepojenie vytvorené a kedy sa ním naposledy prihlasovalo, a či má váš účet vlastné heslo. Nič ďalšie zo služby sa neuchováva: ani vaše meno, ani obrázok, ani žiadny kľúč k vášmu účtu tam. Pri prihlasovaní si server uchováva záznam o prihlásení, s e-mailom, ktorý služba označuje za váš, keď je potrebný: pri novom účte, kde sa stane e-mailom vášho účtu, alebo, ak už účet Glazecalc taký e-mail má, aby sa služba k nemu prepojila, keď sa do toho účtu prihlásite. Záznam aj e-mail v ňom sa zmaže približne do 10 minút.",
-    "providers": "<b>Prihlásenie cez Google alebo GitHub</b> je vaša voľba a stane sa len vtedy, keď stlačíte jeho tlačidlo. Váš prehliadač potom prejde na Google alebo GitHub, ktoré Glazecalc pošlú svoj identifikátor pre vás a váš e-mail. Každý z nich je samostatná spoločnosť, zodpovedná za to, čo jej poskytnete, podľa vlastných zásad ochrany osobných údajov. Na stránkach Glazecalc sa nenačítava žiadny skript ani obrázok od žiadneho z nich.",
-    "keptProviders": "<b>Google alebo GitHub:</b> každé prepojenie, kým ho nezrušíte alebo nezmažete účet. Prebiehajúce prihlásenie sa zmaže po 10 minútach."
+    "changes": "Ak sa toto oznámenie zmení, zmení sa aj dátum v hornej časti stránky."
   },
   "notFound": {
     "heading": "Stránka sa nenašla",
