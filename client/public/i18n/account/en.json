@@ -302,17 +302,17 @@
     "cones": {
       "legend": "Firing",
       "orton": {
-        "label": "To Orton cones",
+        "label": "Orton cones",
         "example": "cone 04, cone 6",
         "saved": "Saved: firing to Orton cones."
       },
       "sk": {
-        "label": "To SK cones, JIS R 8101",
+        "label": "SK cones, JIS R 8101",
         "example": "SK 4a, SK 8",
         "saved": "Saved: firing to SK cones."
       },
       "temperature": {
-        "label": "By temperature, as a kiln controller's program",
+        "label": "Temperature, as a kiln controller's program",
         "saved": "Saved: firing by temperature."
       },
       "help": "Until you choose, this follows your region: Orton cones in the US, UK, Ireland, Australia and New Zealand, SK cones in Japan, temperature in the rest of Europe."

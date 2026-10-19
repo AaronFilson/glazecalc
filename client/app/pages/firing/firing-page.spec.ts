@@ -11,7 +11,9 @@ import {
   text
 } from '../../testing/test-providers';
 import { formatLocale } from '../../shared/format';
+import { FiringLog } from './firing-log';
 import { FiringPage } from './firing-page';
+import { PreferencesService } from '../../core/preferences.service';
 
 describe('FiringPage', () => {
   beforeEach(() => {
@@ -21,19 +23,26 @@ describe('FiringPage', () => {
   });
   afterEach(() => httpMock().verify());
 
-  const create = async (stored: Firing[] = [], recipes: Recipe[] = []) => {
+  // A new log starts with columns; most tests here begin from an empty one (starter: false).
+  const create = async (stored: Firing[] = [], recipes: Recipe[] = [], starter = false) => {
     const fixture = TestBed.createComponent(FiringPage);
     await fixture.whenStable();
     answer('/recipe/getAll', recipes);
     answer('/firing/getAll', stored);
     await settle(fixture);
-    return { fixture, page: fixture.componentInstance as unknown as Record<string, any> };
+    const page = fixture.componentInstance as unknown as Record<string, any>;
+    if (!starter) {
+      page['log'].set(new FiringLog());
+      page['selectedField'].set('Time');
+      await fixture.whenStable();
+    }
+    return { fixture, page };
   };
 
   it('says what to do while there is nothing yet: no saved firings, no fields, no rows', async () => {
     const { fixture, page } = await create();
     expect(text(fixture, '#stored-heading + p')).toBe('None yet. Saved firings appear here.');
-    expect(text(fixture, '.firing-table-empty')).toBe('Add a field above, then add rows.');
+    expect(fixture.nativeElement.querySelector('.firing-table-empty')).toBeNull();
     expect(fixture.nativeElement.querySelector('.firing-table')).toBeNull();
     // Add a row waits for a field, and says so beside it.
     const addRow = [...fixture.nativeElement.querySelectorAll('button')].find(
@@ -51,6 +60,33 @@ describe('FiringPage', () => {
     expect(addRow.getAttribute('aria-describedby')).toBeNull();
     expect(fixture.nativeElement.querySelector('#add-row-why')).toBeNull();
     expect(skippedHeadings(fixture)).toEqual([]);
+  });
+
+  it('starts a new log with Time, Temperature and Cone, which can all be removed', async () => {
+    const { fixture, page } = await create([], [], true);
+    expect(page['log']().fields).toEqual(['Time', 'Temperature F', 'Cone']);
+    expect(fixture.nativeElement.querySelector('.firing-table')).not.toBeNull();
+    expect(fixture.nativeElement.querySelector('#add-row-why')).toBeNull();
+    for (let i = 0; i < 3; i++) page['removeField'](0);
+    await fixture.whenStable();
+    expect(page['log']().fields).toEqual([]);
+    expect(text(fixture, '#add-row-why')).toBe('Add a field first.');
+  });
+
+  it('starts with the temperature in the scale chosen, and Celsius for Kelvin readers', async () => {
+    const preferences = TestBed.inject(PreferencesService);
+    preferences.remember('temperature', 'C');
+    const { fixture, page } = await create([], [], true);
+    expect(page['log']().fields).toEqual(['Time', 'Temperature C', 'Cone']);
+    // Until the log is changed, the columns follow the scale (the preferences may arrive late).
+    preferences.remember('temperature', 'F');
+    await fixture.whenStable();
+    expect(page['log']().fields).toEqual(['Time', 'Temperature F', 'Cone']);
+    page['removeField'](2);
+    preferences.remember('temperature', 'C');
+    await fixture.whenStable();
+    expect(page['log']().fields).toEqual(['Time', 'Temperature F']);
+    preferences.remember('temperature', 'F');
   });
 
   it('builds a log table from the chosen fields and typed cells', async () => {
@@ -142,7 +178,9 @@ describe('FiringPage', () => {
     await saving;
     await fixture.whenStable();
 
-    expect(page['log']().fields).toEqual([]);
+    // A new log starts over with the starting columns and no rows.
+    expect(page['log']().fields).toEqual(['Time', 'Temperature F', 'Cone']);
+    expect(page['log']().rows).toEqual([]);
     expect(page['title']()).toBe('');
     expect(text(fixture, '.stored-firing h3')).toBe('Bisque');
     expect(text(fixture, '.stored-firing')).toContain('Fired in Electric on Sunday, October 4, 2026.');

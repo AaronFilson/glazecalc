@@ -82,7 +82,7 @@ import { RecipeFirings } from './recipe-firings';
 import { RecipeConeCards, type ConePlace } from './recipe-cone-cards';
 import { recipeText } from './recipe-messages';
 import { coneFit } from '../../../../lib/recipe/cone-fit';
-import { ATMOSPHERE_NAMES, Reader, coneText, firingLine } from './firing-text';
+import { ATMOSPHERE_NAMES, Reader, coneText, firingLine, firingSummary } from './firing-text';
 
 const INCLUDE_KEY = 'includeAdditives';
 
@@ -170,6 +170,9 @@ const toggled = (set: ReadonlySet<string>, id: string): ReadonlySet<string> => {
   return next;
 };
 
+/** A phone-width screen (Bootstrap's md breakpoint), where the firing part folds once it is set. */
+const narrowScreen = (): boolean => typeof matchMedia === 'function' && matchMedia('(max-width: 767.98px)').matches;
+
 @Component({
   selector: 'gc-recipe-page',
   imports: [
@@ -206,6 +209,17 @@ const toggled = (set: ReadonlySet<string>, id: string): ReadonlySet<string> => {
   templateUrl: './recipe-page.html',
   // The saved recipes (styles.scss has the rest of the page's).
   styles: `
+    /* The firing part folds on a phone: its summary is the one line shown. */
+    .firing-fold > summary {
+      cursor: pointer;
+      font-weight: 600;
+      padding: 0.5rem 0;
+      border-top: 1px solid var(--gc-border);
+    }
+    .firing-fold[open] > summary {
+      border-top: 0;
+      padding-bottom: 0;
+    }
     /* Paste in recipes and Blends, which have pages of their own. */
     .recipe-tools {
       display: flex;
@@ -459,6 +473,13 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
   protected readonly foodSurface = signal(false);
   /** The firing logs it went through, with a result each; saved with the recipe as firings. */
   protected readonly firings = signal<FiringLink[]>([]);
+  /** The firing part's summary line, said again when the language changes. */
+  protected readonly firingSummary = computed(() => {
+    this.language();
+    return firingSummary(this.firedAt(), this.reader());
+  });
+  /** Whether the firing part is open: when nothing is stated yet, and on wide screens; closed on a phone once set. */
+  protected readonly firingFoldOpen = signal(true);
   /** The firing logs part is open: asked for, or the recipe has links. */
   protected readonly firingsAsked = signal(false);
   protected readonly firingsShown = computed(() => this.firingsAsked() || this.firings().length > 0);
@@ -1758,6 +1779,7 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
     this.firings.set(copy(recipe?.firings ?? []));
     this.coneResults.set(copy(recipe?.coneResults ?? []));
     this.firingsAsked.set(false);
+    this.firingFoldOpen.set(!recipe?.firedAt?.low || !narrowScreen());
   }
 
   /**

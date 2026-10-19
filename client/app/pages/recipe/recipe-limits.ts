@@ -1,4 +1,4 @@
-import { Component, computed, inject, input, model, signal } from '@angular/core';
+import { Component, Injector, afterNextRender, computed, inject, input, model, signal } from '@angular/core';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { TranslocoDirective, TranslocoService, translate } from '@jsverse/transloco';
 import { marker } from '@jsverse/transloco-keys-manager/marker';
@@ -145,21 +145,34 @@ export function statusText(row: LimitRow): string {
             }
           </select>
         </div>
-        <div>
-          <label for="limit-firing" class="form-label">{{ t('recipe.limits.firing') }}</label>
-          <select id="limit-firing" class="form-select form-select-sm" (change)="firing.set($any($event.target).value)">
-            <option value="" [selected]="!firing()">
-              @if (fromBlock().length) {
-                {{ t('recipe.limits.firingFromBlock', { bands: blockBandNames() }) }}
-              } @else {
-                {{ t('recipe.limits.firingUnknown') }}
+        @if (bandFromBlock()) {
+          <div class="limits-from-block">
+            <p id="limit-firing-text">{{ t('recipe.limits.firingFromBlockText', { bands: blockBandNames() }) }}</p>
+            <button id="limit-firing-choose" type="button" class="btn btn-link p-0" (click)="chooseAnother()">
+              {{ t('recipe.limits.chooseAnother') }}
+            </button>
+          </div>
+        } @else {
+          <div>
+            <label for="limit-firing" class="form-label">{{ t('recipe.limits.firing') }}</label>
+            <select
+              id="limit-firing"
+              class="form-select form-select-sm"
+              (change)="chooseBand($any($event.target).value)"
+            >
+              <option value="" [selected]="!firing()">
+                @if (fromBlock().length) {
+                  {{ t('recipe.limits.firingFromBlock', { bands: blockBandNames() }) }}
+                } @else {
+                  {{ t('recipe.limits.firingUnknown') }}
+                }
+              </option>
+              @for (band of bands; track band) {
+                <option [value]="band" [selected]="band === firing()">{{ t(bandNames[band]) }}</option>
               }
-            </option>
-            @for (band of bands; track band) {
-              <option [value]="band" [selected]="band === firing()">{{ t(bandNames[band]) }}</option>
-            }
-          </select>
-        </div>
+            </select>
+          </div>
+        }
       </div>
       @if (saveFailed()) {
         <p class="limits-problem" role="alert">{{ t('recipe.limits.saveFailed') }}</p>
@@ -169,7 +182,9 @@ export function statusText(row: LimitRow): string {
         @if (views().length > 1) {
           <p class="limits-note limits-both">{{ t('recipe.limits.bothBands', { bands: blockBandNames() }) }}</p>
         } @else if (fromBlock().length) {
-          <p class="limits-note">{{ t('recipe.limits.fromFiring', { band: blockBandNames() }) }}</p>
+          @if (!bandFromBlock()) {
+            <p class="limits-note">{{ t('recipe.limits.fromFiring', { band: blockBandNames() }) }}</p>
+          }
         } @else {
           <p class="limits-note">{{ t('recipe.limits.shownFor', { band: t(bandNames[views()[0].band]) }) }}</p>
         }
@@ -244,6 +259,9 @@ export function statusText(row: LimitRow): string {
     .limits-choices > div {
       flex: 1 1 12rem;
       min-width: 0;
+    }
+    .limits-from-block p {
+      margin: 0 0 0.25rem;
     }
     .limits-note {
       font-size: 0.9rem;
@@ -320,6 +338,7 @@ export class RecipeLimits {
   readonly materials = input<string[]>([]);
 
   private readonly preferences = inject(PreferencesService);
+  private readonly injector = inject(Injector);
   protected readonly setIds = Object.keys(LIMIT_SETS) as LimitSetChoice[];
   protected readonly setNames = SET_NAMES;
   protected readonly setNotes = SET_NOTES;
@@ -331,6 +350,10 @@ export class RecipeLimits {
   protected readonly set = computed(() => LIMIT_SETS[this.preferences.limitSet()] ?? LIMIT_SETS['hesselberth-roy']);
   /** The bands the firing block's range falls in, coolest first: two when it crosses a band (cone 6–10). */
   protected readonly fromBlock = computed(() => firingBands(this.firedAt()));
+  /** Whether the band picker is open: asked for with "Choose another", or used. */
+  private readonly choosing = signal(false);
+  /** The band is shown as text, from the recipe's firing, until another is asked for or chosen. */
+  protected readonly bandFromBlock = computed(() => this.fromBlock().length > 0 && !this.firing() && !this.choosing());
   /** The language the band names are in: they are named again when it changes. */
   private readonly language = toSignal(inject(TranslocoService).langChanges$);
   protected readonly blockBandNames = computed(() => {
@@ -373,6 +396,17 @@ export class RecipeLimits {
   protected readonly status = statusText;
   protected value(value: number): string {
     return fixed(value, 2);
+  }
+
+  protected chooseAnother(): void {
+    this.choosing.set(true);
+    // The button goes with the click; the picker takes the focus.
+    afterNextRender(() => document.getElementById('limit-firing')?.focus(), { injector: this.injector });
+  }
+
+  protected chooseBand(value: string): void {
+    this.choosing.set(true);
+    this.firing.set(value as FiringBand | '');
   }
 
   /** Kept with the account's settings; if saving fails, the choice before comes back (the service puts it back) and this says so. */

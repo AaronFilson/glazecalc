@@ -196,7 +196,9 @@ describe('SettingsSection', () => {
     // The example is a message, so each language writes it its own way.
     expect(text(fixture, 'label[for="density-sg"]')).toBe('Specific gravity (SG 1.45)');
     // One pair of brackets each: the example's, not the standard's too.
-    expect(text(fixture, 'label[for="cones-sk"]')).toBe('To SK cones, JIS R 8101 (SK 4a, SK 8)');
+    expect(text(fixture, 'label[for="cones-sk"]')).toBe('SK cones, JIS R 8101 (SK 4a, SK 8)');
+    expect(text(fixture, 'label[for="cones-orton"]')).toBe('Orton cones (cone 04, cone 6)');
+    expect(text(fixture, 'label[for="cones-temperature"]')).toContain("Temperature, as a kiln controller's program");
     choice('sg').click();
     await fixture.whenStable();
     const req = httpMock().expectOne(API + '/preferences');

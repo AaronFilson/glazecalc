@@ -301,6 +301,45 @@ describe('RecipePage', () => {
     await saving;
   });
 
+  it('folds the firing part under a summary line: open when empty and on wide screens, closed on a phone once set', async () => {
+    const fired: Recipe = {
+      _id: 'r3',
+      title: 'Cone 6 clear',
+      firedAt: { scale: 'orton', low: '6', atmospheres: ['oxidation'] },
+      materials: [{ ...WHITING, amount: '20' }]
+    };
+    const { fixture, page } = await create([fired]);
+    const root = fixture.nativeElement as HTMLElement;
+    const fold = () => root.querySelector('#firing-fold') as HTMLDetailsElement;
+    expect(fold().open).toBe(true);
+    expect(fold().querySelector('summary')?.textContent).toBe('Firing: not set');
+    expect(fold().querySelector('gc-recipe-firing')).not.toBeNull();
+
+    const original = window.matchMedia;
+    window.matchMedia = ((query: string) => ({ matches: true, media: query })) as unknown as typeof window.matchMedia;
+    try {
+      page['open'](fired);
+      await fixture.whenStable();
+      expect(fold().querySelector('summary')?.textContent).toBe('Firing: cone 6, oxidation');
+      expect(fold().open).toBe(false);
+      // Asked to open, it stays open.
+      fold().open = true;
+      fold().dispatchEvent(new Event('toggle'));
+      await fixture.whenStable();
+      expect(fold().open).toBe(true);
+      // A recipe with no firing opens it again.
+      page['open']({ _id: 'r4', title: 'Bare', materials: [] } as Recipe);
+      await fixture.whenStable();
+      expect(fold().open).toBe(true);
+    } finally {
+      window.matchMedia = original;
+    }
+    // On a wide screen a set firing stays open.
+    page['open'](fired);
+    await fixture.whenStable();
+    expect(fold().open).toBe(true);
+  });
+
   it('shows the analysis, limits and Stull chart under the recipe, and saves the firing chosen for its limits', async () => {
     const fired: Recipe = {
       _id: 'r2',
