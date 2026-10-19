@@ -348,7 +348,7 @@ type Confirming = 'password' | 'email' | 'delete';
 })
 export class AccountPage {
   protected readonly auth = inject(AuthService);
-  /** Whether Google or GitHub sign-in is on here, so the page has a section for it. */
+  /** Whether Google, GitHub or Microsoft sign-in is on here, so the page has a section for it. */
   private readonly providersOn = signal(false);
   private readonly signInProviders = inject(SIGN_IN_PROVIDERS);
   /** The sections, for the contents at the top: each heading's id and its message. */

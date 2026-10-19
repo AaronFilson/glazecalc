@@ -35,7 +35,7 @@
 //     or a passkey), and the same browser then finishes the link; and only to an
 //     account whose own email is confirmed. That closes "pre-hijacking": someone
 //     who made an account with another person's address cannot have that
-//     person's Google or GitHub joined to it;
+//     person's Google or GitHub joined to it (Microsoft never links by email);
 //   - from the account page, after the password (and a second step when two-step
 //     sign-in is on), any provider account not linked elsewhere; one per provider.
 // Microsoft's email is never trusted (oauth.trustsEmail, "nOAuth"): it makes a

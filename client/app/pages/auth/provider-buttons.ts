@@ -6,14 +6,17 @@ import { AuthService, type ProviderId } from '../../core/auth.service';
 /** Each provider's button label (one key each, so a language can word each its own way). */
 const LABELS: Record<ProviderId, string> = {
   google: marker('account.providers.continueGoogle'),
-  github: marker('account.providers.continueGithub')
+  github: marker('account.providers.continueGithub'),
+  microsoft: marker('account.providers.continueMicrosoft')
 };
 
 /**
  * A provider's logo, drawn here rather than loaded from the provider: no
  * provider script or image is fetched before the person presses the button
  * (docs/adr/0015-provider-sign-in.md). GitHub's mark takes the text color, so
- * it shows in the dark theme too.
+ * it shows in the dark theme too. Microsoft's is its four squares as its
+ * branding guidelines give them to download, unaltered (ms-symbollockup_mssymbol_19.svg,
+ * https://learn.microsoft.com/en-us/entra/identity-platform/howto-add-branding-in-apps).
  */
 @Component({
   selector: 'gc-provider-logo',
@@ -46,6 +49,14 @@ const LABELS: Record<ProviderId, string> = {
         />
       </svg>
     }
+    @case ('microsoft') {
+      <svg viewBox="0 0 21 21" width="21" height="21" aria-hidden="true" focusable="false">
+        <rect x="1" y="1" width="9" height="9" fill="#f25022" />
+        <rect x="1" y="11" width="9" height="9" fill="#00a4ef" />
+        <rect x="11" y="1" width="9" height="9" fill="#7fba00" />
+        <rect x="11" y="11" width="9" height="9" fill="#ffb900" />
+      </svg>
+    }
   }`,
   styles: `
     :host {
@@ -59,9 +70,15 @@ export class ProviderLogo {
 }
 
 /**
- * "Continue with Google" and "Continue with GitHub" under the sign-in and
- * sign-up forms, for the providers that are on. Each is a plain link: the
- * server sends the browser on to the provider.
+ * "Continue with Google", "Continue with GitHub" and "Sign in with Microsoft"
+ * under the sign-in and sign-up forms, for the providers that are on. Each is
+ * a plain link: the server sends the browser on to the provider. Microsoft's
+ * follows its branding guidelines
+ * (https://learn.microsoft.com/en-us/entra/identity-platform/howto-add-branding-in-apps):
+ * its logo with "Sign in with Microsoft", its light button (white, a #8c8c8c
+ * border, #5e5e5e text) or, in the dark theme, its dark one (#2f2f2f, white
+ * text), 41 pixels high, Segoe UI where the device has it (no font is
+ * fetched).
  */
 @Component({
   selector: 'gc-provider-buttons',
@@ -70,7 +87,13 @@ export class ProviderLogo {
     @if (providers().length) {
       <div class="provider-buttons">
         @for (provider of providers(); track provider) {
-          <a class="btn btn-outline-secondary w-100" [href]="hrefs()[provider]" [attr.data-provider]="provider">
+          <a
+            class="btn w-100"
+            [class.btn-outline-secondary]="provider !== 'microsoft'"
+            [class.provider-microsoft]="provider === 'microsoft'"
+            [href]="hrefs()[provider]"
+            [attr.data-provider]="provider"
+          >
             <gc-provider-logo [provider]="provider" />
             <span>{{ t(labels[provider]) }}</span>
           </a>
@@ -88,6 +111,23 @@ export class ProviderLogo {
       align-items: center;
       justify-content: center;
       gap: 0.5rem;
+    }
+    .provider-buttons a.provider-microsoft {
+      min-height: 41px;
+      gap: 12px;
+      padding: 0 12px;
+      border: 1px solid #8c8c8c;
+      border-radius: 0;
+      background: #fff;
+      color: #5e5e5e;
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      font-size: 15px;
+      font-weight: 600;
+    }
+    :host-context([data-bs-theme='dark']) .provider-buttons a.provider-microsoft {
+      border-color: #2f2f2f;
+      background: #2f2f2f;
+      color: #fff;
     }
   `
 })

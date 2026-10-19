@@ -91,7 +91,7 @@ export const MESSAGES = {
   'mfa-off': 'Two-step sign-in is off, and your recovery codes no longer work.',
   'mfa-not-on': 'Two-step sign-in is not on, so there are no recovery codes to make. Set up a second step first.',
 
-  // Signing in with Google or GitHub (server/routes/oauth_routes.ts).
+  // Signing in with Google, GitHub or Microsoft (server/routes/oauth_routes.ts).
   'provider-off': 'That way of signing in is not available.',
   'provider-expired': 'Signing in took too long, or was started in another browser. Please try again.',
   'provider-failed': `Signing in with ${PROVIDER} did not work. Please try again.`,
