@@ -6,11 +6,13 @@ import standardData from '../../data/index.js';
 import recipe from '../../lib/recipe/index.js';
 import { MOST_LINES, resetFits, FITS_PER_MINUTE, guarded, ToolProblem, UNEXPECTED } from '../mcp/common.ts';
 import { MCP_LIMITS } from '../lib/rate_limit.ts';
-import { termsOf } from '../mcp/guides.ts';
+import { GUIDE_IDS, termsOf } from '../mcp/guides.ts';
 import { findMaterial } from '../mcp/library.ts';
 import { MOST_STREAMS_PER_ADDRESS, sdkSubscribers, streamsOpen } from '../mcp/index.ts';
 import { SERVER_INFO } from '../mcp/server.ts';
-import { readdirSync, readFileSync } from 'node:fs';
+import { PLACES } from '../mcp/words.ts';
+import { readFileSync } from 'node:fs';
+import path from 'node:path';
 import mongoose from 'mongoose';
 import * as site from '../lib/site.ts';
 import { hashToken } from '../lib/token_auth.ts';
@@ -23,17 +25,28 @@ import { makeToken } from './support/tokens.ts';
 
 const PROTOCOL = '2025-06-18';
 
-const GUIDES = new URL('../../client/public/i18n/guides/', import.meta.url);
 const plain = (text: string): string => text.normalize('NFKD').replace(/\p{M}/gu, '').toLowerCase();
+/**
+ * A guide file as the server reads it (markdownOf in server/mcp/guides.ts): from the built
+ * client where it has the file, else from the sources. Reading the same copy keeps the word
+ * picked below right whether a build has run or not, and when that build is stale.
+ */
+const guideFile = (id: string, file: string): string | null => {
+  for (const place of PLACES) {
+    try {
+      return readFileSync(path.join(place, 'guides', id, file), 'utf8');
+    } catch {
+      // Not built, or not translated: the next place.
+    }
+  }
+  return null;
+};
 /** A word in the English guides whose search term is in no guide in the language. */
 const onlyInEnglish = (language: string): string => {
   const read = (file: string): string[] =>
-    readdirSync(GUIDES).flatMap((id) => {
-      try {
-        return [plain(readFileSync(new URL(`${id}/${file}`, GUIDES), 'utf8'))];
-      } catch {
-        return [];
-      }
+    GUIDE_IDS.flatMap((id) => {
+      const text = guideFile(id, file);
+      return text === null ? [] : [plain(text)];
     });
   const theirs = read(`${language}.md`).join(' ');
   const words = new Set(
