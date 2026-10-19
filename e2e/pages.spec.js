@@ -85,7 +85,8 @@ test.describe('home and navigation', () => {
       ['/guides/firing', 'Firing a basic kiln'],
       ['/about', 'About Glazecalc'],
       ['/privacy', 'Privacy'],
-      ['/terms', 'Terms of use']
+      ['/terms', 'Terms of use'],
+      ['/assistants', 'Use Glazecalc from your AI assistant']
     ]) {
       await visitor.goto(path);
       await expect(visitor.locator('h1')).toHaveText(heading);

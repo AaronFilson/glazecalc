@@ -129,6 +129,13 @@ describe('AuthPage', () => {
     expect(fixture.nativeElement.querySelector('.privacy-note a').getAttribute('href')).toBe('/privacy');
   });
 
+  it('says on the sign up form that making an account agrees to the terms, with a link to them', async () => {
+    const { fixture } = await create('signup');
+    const links = [...fixture.nativeElement.querySelectorAll('.privacy-note a')] as HTMLAnchorElement[];
+    expect(links.map((a) => a.getAttribute('href'))).toEqual(['/privacy', '/terms']);
+    expect(links[1]!.textContent).toBe('Terms of use');
+  });
+
   it('tells everyone outside the US, before the account is made, where accounts are kept and whose choice it is', async () => {
     const { fixture } = await create('signup');
     const preferences = TestBed.inject(PreferencesService);

@@ -270,7 +270,7 @@ describe('pages in each language', () => {
   });
 
   it('tells search engines not to index the pages for signing in and once signed in, with no canonical address or other languages', () => {
-    for (const address of ['/recipe', '/de/recipe', '/signin', '/th/account', '/assistants', '/ar/home']) {
+    for (const address of ['/recipe', '/de/recipe', '/signin', '/th/account', '/ar/home']) {
       const html = pageHtml(HTML, address, SITE, {}, ['en', 'de', 'th']);
       expect(html.match(/<meta name="robots" content="noindex" \/>/g), address).to.have.length(1);
       expect(html, address).not.to.include('rel="canonical"');

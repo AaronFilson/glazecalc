@@ -17,6 +17,7 @@
     "signIn": "Sign in",
     "haveAccount": "Already have an account? <signin>Sign in</signin>",
     "privacy": "Your email and what you save are used only to run your account, and are stored with Amazon Web Services in the US. <privacy>How Glazecalc handles your data</privacy>",
+    "terms": "By creating an account, you agree to the <terms>Terms of use</terms>.",
     "dataNotice": "Glazecalc is a free, open-source project, and accounts are kept on servers in the United States. You can read the guides and try the calculator without an account, or run your own copy. Whether to create an account here is your own decision, and the project accepts no responsibility for it. <where>Where your account is kept, and your choice</where>",
     "forgot": "Forgot your password? Reset it",
     "newHere": "New here? <signup>Create a free account</signup>",

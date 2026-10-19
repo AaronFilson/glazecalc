@@ -167,6 +167,10 @@ import { SecondStep } from './second-step';
             <p class="form-text privacy-note">
               <gc-rich [text]="t('account.auth.privacy')" [links]="{ privacy: '/privacy' }" />
             </p>
+            <!-- The terms bind an account from its start (site/en.json terms.*). -->
+            <p class="form-text privacy-note">
+              <gc-rich [text]="t('account.auth.terms')" [links]="{ terms: '/terms' }" />
+            </p>
             <p class="auth-links">
               <gc-rich [text]="t('account.auth.haveAccount')" [links]="{ signin: '/signin' }" />
             </p>
