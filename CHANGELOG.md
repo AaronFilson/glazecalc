@@ -56,8 +56,8 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   fired it to (the tested cone shows first); Orton 022 to 13, half cones and 14 to 42; atmosphere (oxidation, reduction,
   neutral) and process (wood, soda, salt, raku, pit); for a temperature, the rate over the last hour and the hold; a
   schedule note and a witness cone. Conversions into your own scale are shown beside it, marked approximate, using
-  Kyoto's measured SK bends only (SK 8, 10 and 12; other SK cones show no temperature or Orton cone, never the JIS
-  figures). The limits panel takes its band from the firing and shows both
+  Kyoto's measured SK bends only (SK 8 and 10 as temperatures; other SK cones show no temperature, never the JIS
+  figures); SK and Orton are matched by Kyoto's same-kiln table (see Changed). The limits panel takes its band from the firing and shows both
   bands side by side for a range across them (cone 6–10); the band picker still overrides. A **food surface** flag brings
   a note that food safety depends on firing to the tested cone (test a range at its low end). **Firing logs** link to
   recipes both ways, each with a result note, and can fill in the tested cones. **Duplicate for another cone**, cone and
@@ -649,6 +649,17 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   account's settings (the recipe page's own, Hesselberth & Roy's until changed), as `get_recipe`
   does; with no token, or a `limitSet` given, nothing changes ("glazecalc" is still the default
   without an account). Its description says so.
+- **SK and Orton cones are matched by Kyoto's same-kiln table** (docs/adr/0021-recipe-firing.md, amended): the
+  conversion beside a recipe's cone, and an assistant's search across the two scales, now use the Kyoto municipal
+  institute's own Orton column, bent in the same kiln at the same rate as its SK cones, instead of Orton's chart at a
+  different heating rate. Orton 4 is now SK 7 (was SK 8) and Orton 6 is SK 9 (was SK 10); SK 7, 9, 11, 13 and 14 and
+  Orton 8, 11 and 12 now have a match. The firing guide's Kyoto cones paragraph says so (English; the other
+  languages follow with the next translation round).
+- **Guides end with "More guides"**, links to the other guides with their summaries, drawn into the prerendered page so
+  search engines follow them. The home safety guide keeps its heading, "Don't poison your family"; its page title,
+  search description and link in the guides list now read "Glaze safety at home: children, pets and the kiln"
+  (English; the other languages follow with the next translation round).
+
 - **One limit on what an account keeps.** An account keeps up to 100,000 records of every kind
   together (recipes, materials, notes, firing logs and the rest), in place of 2,000 of each kind;
   `ACCOUNT_MAX_RECORDS` still sets another. Trials keep their own limits.

@@ -121,7 +121,7 @@ describe('RecipeFiring', () => {
 describe('firing in words', () => {
   beforeEach(() => TestBed.configureTestingModule({ providers: testProviders() }));
 
-  it("keeps the author's scale first and converts approximately, by Kyoto's measured SK, not JIS", () => {
+  it("keeps the author's scale first and converts approximately, by Kyoto's measured SK and same-kiln Orton, not JIS", () => {
     const orton = { cones: 'orton' as const, temperature: 'F' as const };
     const sk: FiringBlock = { scale: 'sk', low: '10', tested: ['10'], atmospheres: ['reduction'] };
     const words = firingWords(sk, orton)!;
@@ -131,11 +131,16 @@ describe('firing in words', () => {
     expect(words.conversion).toContain("measured at 100 °C an hour by Kyoto's municipal institute");
     expect(words.conversion).toContain('≈ cone 7');
     expect(words.conversion).not.toContain('cone 10');
-    // An SK cone other than 8, 10 and 12 gets no temperature and no Orton cone: the JIS figures are never shown.
-    expect(firingWords({ scale: 'sk', low: '9' }, orton)!.conversion).toBe('');
-    expect(firingWords({ scale: 'sk', low: '7' }, orton)!.conversion).toBe('');
-    // A range is converted only when both ends are measured, and then in order.
-    expect(firingWords({ scale: 'sk', low: '8', high: '9' }, orton)!.conversion).toBe('');
+    // An SK cone other than 8 and 10 gets no temperature (the JIS figures are never shown), only the Orton cone
+    // beside it in Kyoto's same-kiln table.
+    expect(firingWords({ scale: 'sk', low: '9' }, orton)!.conversion).toMatch(/^≈ cone 6 \(measured at 100 °C an hour/);
+    expect(firingWords({ scale: 'sk', low: '7' }, orton)!.conversion).toMatch(/^≈ cone 4 \(/);
+    expect(firingWords({ scale: 'sk', low: '12' }, orton)!.conversion).toMatch(/^≈ cone 10 \(/);
+    // No Orton cone for an SK cone of no equivalent there.
+    expect(firingWords({ scale: 'sk', low: '6a' }, orton)!.conversion).toBe('');
+    // A range is converted only when both ends have a figure, and then in order.
+    expect(firingWords({ scale: 'sk', low: '8', high: '9' }, orton)!.conversion).toMatch(/^≈ cone 5–6 \(/);
+    expect(firingWords({ scale: 'sk', low: '8', high: '16' }, orton)!.conversion).toBe('');
     const measured = firingWords({ scale: 'sk', low: '8', high: '10' }, { cones: 'orton', temperature: 'C' })!;
     expect(measured.conversion).toMatch(/1198\s°C–1232\s°C/);
     expect(firingLine({ scale: 'orton', low: '5.5' }, orton)).toBe('Tested at cone 5½');

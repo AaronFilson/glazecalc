@@ -24,6 +24,21 @@
     </section>
   }
 </div>
+@if (moreGuides().length) {
+  <ng-container *transloco="let t">
+    <nav class="panel more-guides" aria-labelledby="more-guides">
+      <h2 id="more-guides">{{ t('guides.more') }}</h2>
+      <ul>
+        @for (guide of moreGuides(); track guide.path) {
+          <li>
+            <a [routerLink]="guide.path">{{ t(guide.title) }}</a>
+            <span class="more-guides-text">: {{ t(guide.text) }}</span>
+          </li>
+        }
+      </ul>
+    </nav>
+  </ng-container>
+}
 
 <ng-template #blockList let-list>
   @for (block of asBlocks(list); track $index) {

@@ -356,7 +356,7 @@ Every figure is nominal (JIS): the temperature the standard gives for the cone, 
 
 ### Kyoto cones
 
-Kyoto cones (京都ゼーゲル), made by Kyoto's municipal institute, are no longer made: news reports say the institute ended production at the close of fiscal 2009. They carry the same numbers as SK cones to JIS but bend cooler: a Kyoto cone bends at about the temperature of the SK cone to JIS two or three numbers lower. A recipe from Kyoto that says "SK 8" may mean a Kyoto cone. The institute has published advice for potters moving from Kyoto cones to Orton cones, and substitutes Orton cone 10 for its own Kyoto SK 12; that is the institute's choice from its own measurements at 100 °C/h, and applies to no other cone.
+Kyoto cones (京都ゼーゲル), made by Kyoto's municipal institute, are no longer made: news reports say the institute ended production at the close of fiscal 2009. They carry the same numbers as SK cones to JIS but bend cooler: a Kyoto cone bends at about the temperature of the SK cone to JIS two or three numbers lower. A recipe from Kyoto that says "SK 8" may mean a Kyoto cone. The institute has published advice for potters moving from Kyoto cones to Orton cones, and substitutes Orton cone 10 for its own Kyoto SK 12. That is the institute's choice from its own measurements: it bent Kyoto cones and Orton cones in the same kiln at 100 °C/h, and Kyoto SK 12 (1290 °C) bent where Orton 10 (1290 °C) did. In the same table Kyoto SK 8 (1198 °C) bent near Orton 5 (1207 °C), and Kyoto SK 10 (1232 °C) where Orton 7 (1232 °C) did. Glazecalc uses this table, not the Orton chart at 60 °C/h, when it shows an SK cone beside an Orton cone, and says each match is approximate.
 
 ### Orton cones sold in Japan
 
