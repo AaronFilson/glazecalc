@@ -18,6 +18,8 @@ export interface TokenRow {
   revokedAt?: string;
   revokedWhy?: string;
   working: boolean;
+  /** Its changes never wait for approval (docs/adr/0025). */
+  noConfirm?: boolean;
 }
 
 /** GET /api/tokens: the account's tokens and the choices for a new one. */
@@ -65,13 +67,15 @@ export class TokensService {
     name: string,
     days: number,
     proof: IdentityProof,
-    scope: 'data:read' | 'data:write' = 'data:read'
+    scope: 'data:read' | 'data:write' = 'data:read',
+    noConfirm = false
   ): Promise<{ token: string; message: string }> {
     const res = await firstValueFrom(
       this.http.post<Said & { token: string; row: TokenRow }>(this.apiBase + '/tokens', {
         name,
         days,
         scope,
+        ...(noConfirm && { noConfirm: true }),
         ...proof
       })
     );

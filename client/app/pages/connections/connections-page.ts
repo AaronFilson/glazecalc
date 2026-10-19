@@ -5,6 +5,7 @@ import { marker } from '@jsverse/transloco-keys-manager/marker';
 import {
   ConnectionRow,
   ConnectionsService,
+  type ConfirmChanges,
   type ActivityLine,
   type ChangeCounts,
   type MovedEntry
@@ -33,6 +34,16 @@ const ACTIONS: Record<keyof ChangeCounts, { line: string; count: string }> = {
   restore: { line: marker('account.apps.action.restore'), count: marker('account.apps.count.restore') },
   undo: { line: marker('account.apps.action.undo'), count: marker('account.apps.count.undo') }
 };
+/** The choices of when changes wait for approval, with their words. */
+const CONFIRM_CHOICES: ReadonlyArray<{ choice: ConfirmChanges; label: string; hint: string }> = [
+  { choice: 'off', label: marker('account.apps.confirm.off'), hint: marker('account.apps.confirm.offHint') },
+  {
+    choice: 'removals',
+    label: marker('account.apps.confirm.removals'),
+    hint: marker('account.apps.confirm.removalsHint')
+  },
+  { choice: 'all', label: marker('account.apps.confirm.all'), hint: marker('account.apps.confirm.allHint') }
+];
 const ACTION_ORDER = ['create', 'change', 'trash', 'restore', 'undo'] as const;
 
 /** What one expanded row shows: its activity and the Trash it filled. */
@@ -60,11 +71,35 @@ interface Detail {
   template: `<ng-container *transloco="let t">
     <gc-page-header [title]="t('account.apps.title')" [lead]="t('account.apps.lead')" />
 
-    <!--
-      A later branch (r5-confirm-changes) puts the "Confirm before changes" setting here, above the list.
-    -->
-
     <gc-notices [notices]="notices" />
+
+    <section class="panel" aria-labelledby="confirm-heading">
+      <h2 class="h3" id="confirm-heading">{{ t('account.apps.confirm.heading') }}</h2>
+      <p>{{ t('account.apps.confirm.intro') }}</p>
+      @if (service.confirmChanges(); as current) {
+        <fieldset class="confirm-choices" [attr.aria-busy]="savingConfirm() || null">
+          <legend class="visually-hidden">{{ t('account.apps.confirm.heading') }}</legend>
+          @for (option of CONFIRM_CHOICES; track option.choice) {
+            @let choice = option.choice;
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="confirm-changes"
+                [id]="'confirm-' + choice"
+                [value]="choice"
+                [checked]="current === choice"
+                [attr.aria-describedby]="'confirm-' + choice + '-hint'"
+                (change)="chooseConfirm(choice)"
+              />
+              <label class="form-check-label" [for]="'confirm-' + choice">{{ t(option.label) }}</label>
+              <div class="form-text" [id]="'confirm-' + choice + '-hint'">{{ t(option.hint) }}</div>
+            </div>
+          }
+        </fieldset>
+        <p class="small muted">{{ t('account.apps.confirm.how') }}</p>
+      }
+    </section>
 
     <section class="panel" aria-labelledby="apps-heading">
       <h2 class="h3" id="apps-heading" tabindex="-1">{{ t('account.apps.listHeading') }}</h2>
@@ -117,6 +152,9 @@ interface Detail {
                         {{ t('account.tokens.expiredOn', { date: (row.expiresAt | gcDate: 'medium') }) }}
                       }
                     </p>
+                    @if (row.noConfirm) {
+                      <p class="small muted">{{ t('account.apps.confirm.exempt') }}</p>
+                    }
                     <p class="small counts">
                       @if (counted(row.changes).length) {
                         {{ t('account.apps.last90') }}
@@ -351,6 +389,9 @@ interface Detail {
     .revoke-all-row {
       margin-top: 1rem;
     }
+    .confirm-choices .form-check + .form-check {
+      margin-top: 0.5rem;
+    }
     .confirm {
       display: inline-flex;
       flex-wrap: wrap;
@@ -368,6 +409,8 @@ export class ConnectionsPage implements OnInit {
   private readonly injector = inject(Injector);
 
   protected readonly ACTIONS = ACTIONS;
+  protected readonly CONFIRM_CHOICES = CONFIRM_CHOICES;
+  protected readonly savingConfirm = signal(false);
   protected readonly notices = new Notices();
   protected readonly loadFailed = signal(false);
   protected readonly busy = signal(false);
@@ -381,6 +424,23 @@ export class ConnectionsPage implements OnInit {
       await this.service.load();
     } catch {
       this.loadFailed.set(true);
+    }
+  }
+
+  /** Saves when changes wait for approval; on failure the choice shown goes back to the one saved. */
+  protected async chooseConfirm(choice: ConfirmChanges): Promise<void> {
+    const before = this.service.confirmChanges();
+    if (choice === before || this.savingConfirm()) return;
+    this.savingConfirm.set(true);
+    try {
+      this.notices.success(await this.service.setConfirmChanges(choice), 'confirm');
+    } catch (err) {
+      // The radio clicked is checked in the page; the one saved is checked again.
+      const saved = document.querySelector<HTMLInputElement>('#confirm-' + before);
+      if (saved) saved.checked = true;
+      this.notices.error(errorMessage(err, translate('account.apps.confirm.saveFailed')));
+    } finally {
+      this.savingConfirm.set(false);
     }
   }
 

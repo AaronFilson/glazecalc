@@ -232,4 +232,33 @@ describe('ConnectionsPage', () => {
     await settle(fixture);
     expect(text(fixture)).toContain('Your connected apps could not be loaded.');
   });
+
+  it('shows when changes need approval, and saves a new choice at once', async () => {
+    const { fixture, root } = await create();
+    const off = root.querySelector<HTMLInputElement>('#confirm-off')!;
+    expect(off.checked).toBe(true);
+    expect(text(fixture, '.confirm-choices')).toContain('Ask before removals');
+    root.querySelector<HTMLInputElement>('#confirm-all')!.click();
+    await settle(fixture);
+    const req = httpMock().expectOne(API + '/connections/confirm-setting');
+    expect(req.request.method).toBe('PUT');
+    expect(req.request.body).toEqual({ confirmChanges: 'all' });
+    req.flush({ code: 'confirm-setting-saved', msg: 'Saved.', confirmChanges: 'all' });
+    await settle(fixture);
+    expect(root.querySelector<HTMLInputElement>('#confirm-all')!.checked).toBe(true);
+    expect(text(fixture, '.server-msg')).toContain('Saved.');
+  });
+
+  it('puts the choice back when it cannot be saved, and marks a token that is never asked', async () => {
+    const { fixture, root } = await create([{ ...ROWS[1]!, working: true, access: 'write', noConfirm: true }]);
+    expect(text(fixture, '.connection-row')).toContain('Its changes need no confirmation.');
+    root.querySelector<HTMLInputElement>('#confirm-removals')!.click();
+    await settle(fixture);
+    httpMock()
+      .expectOne(API + '/connections/confirm-setting')
+      .flush({}, { status: 500, statusText: 'Server Error' });
+    await settle(fixture);
+    expect(root.querySelector<HTMLInputElement>('#confirm-off')!.checked).toBe(true);
+    expect(text(fixture)).toContain('could not save your choice');
+  });
 });

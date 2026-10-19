@@ -30,7 +30,8 @@
     "apps": "Connected apps - Glazecalc",
     "notFound": "Not found - Glazecalc",
     "shared": "Shared recipe - Glazecalc",
-    "assistants": "Use Glazecalc from your AI assistant - Glazecalc"
+    "assistants": "Use Glazecalc from your AI assistant - Glazecalc",
+    "confirm": "Approve a change - Glazecalc"
   },
   "nav": {
     "skip": "Skip to content",

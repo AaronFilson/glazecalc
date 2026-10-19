@@ -503,7 +503,20 @@
     "revokeAll": "Revoke all",
     "revokeAllQuestion": "{count, plural, one {Revoke the # connection still working?} other {Revoke all # connections still working?}} They stop working at once.",
     "revokeFailed": "Error: could not revoke. Please try again.",
-    "restoreFailed": "Error: could not put the records back. Please try again."
+    "restoreFailed": "Error: could not put the records back. Please try again.",
+    "confirm": {
+      "heading": "Confirm before changes",
+      "intro": "Choose whether a change from an assistant, app or access token waits until you approve it here, signed in. Nothing it asks for is changed until you do.",
+      "off": "Never ask",
+      "offHint": "Changes are made at once. Each one keeps the record as it was, so you can undo it, and what each app did is shown below.",
+      "removals": "Ask before removals",
+      "removalsHint": "Moving a record to the Trash, or taking a material off the materials you have on hand, waits for your approval. An assistant that can ask you itself may do so in its own window.",
+      "all": "Ask before every change",
+      "allHint": "Every new record, change, undo and removal waits for your approval on this website.",
+      "how": "A change that waits has its own page, which the assistant or script gives you a link to. It waits 30 minutes, then nothing is changed. An access token made with \"Changes from this token need no confirmation\" is never asked.",
+      "exempt": "Its changes need no confirmation.",
+      "saveFailed": "Error: could not save your choice. Please try again."
+    }
   },
   "tokens": {
     "heading": "Access tokens",
@@ -553,6 +566,27 @@
     "keptHeading": "Your access tokens still work",
     "keptText": "{count, plural, one {Changing your password did not stop your access token. If you changed it because someone else may know it, revoke the token too.} other {Changing your password did not stop your # access tokens. If you changed it because someone else may know it, revoke them too.}}",
     "keep": "Keep them",
-    "signOutNote": "{count, plural, one {It also stops your access token, for good.} other {It also stops your # access tokens, for good.}}"
+    "signOutNote": "{count, plural, one {It also stops your access token, for good.} other {It also stops your # access tokens, for good.}}",
+    "noConfirm": "Changes from this token need no confirmation",
+    "noConfirmHint": "For a script you run yourself. If you choose to confirm changes on Connected apps, this token is still never asked. You can only choose this now, when the token is made."
+  },
+  "confirm": {
+    "title": "Approve a change",
+    "lead": "An app connected to your account asks to make this change. Nothing is changed until you approve it.",
+    "from": "Asked by {name}",
+    "fromToken": "an access token",
+    "fromApp": "a connected app (the name is the one it gave itself)",
+    "asked": "Asked {date}. It waits until {time}, then nothing is changed.",
+    "removal": "This removes something: a record goes to the Trash, where you can put it back for 30 days, or a material comes off the materials you have on hand.",
+    "check": "Approve it only if you asked for this change. If you did not, decline it, and revoke the app on Connected apps.",
+    "approve": "Approve the change",
+    "decline": "Decline",
+    "approveAll": "{count, plural, one {Also approve the # other change waiting from {name}} other {Also approve the # other changes waiting from {name}}}",
+    "notFound": "There is no change waiting at this address. It may have been approved or declined already, or waited more than 30 minutes, or it is for another account.",
+    "signIn": "Sign in to Glazecalc with the account the change is for, then open this link again.",
+    "signInLink": "Sign in",
+    "loadFailed": "The change could not be loaded. Please reload the page to try again.",
+    "failed": "Error: could not send your answer. Please try again.",
+    "apps": "See your connected apps"
   }
 }

@@ -252,6 +252,15 @@ export const routes: Routes = [
     loadComponent: () => import('./pages/connections/connections-page').then((m) => m.ConnectionsPage)
   },
   {
+    // A change an app asks to make, waiting for the person's approval (docs/adr/0025). The page itself
+    // says to sign in when no one is: the link must still work once they have.
+    path: 'confirm/:id',
+    title: marker('titles.confirm'),
+    providers: [provideTranslocoScope('account')],
+    resolve: { messages: scopeTranslations },
+    loadComponent: () => import('./pages/confirm/confirm-page').then((m) => m.ConfirmPage)
+  },
+  {
     path: 'account',
     title: marker('titles.account'),
     canActivate: [signedInGuard],

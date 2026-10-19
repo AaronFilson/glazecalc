@@ -33,8 +33,18 @@ export const PRIVATE_PAGES = ['/shared'];
 export const isEnglishOnlyPage = (pathname: string): boolean =>
   ENGLISH_ONLY_PAGES.includes(languages.pagePath(pathname));
 
-/** Whether an address is one of PRIVATE_PAGES, in any language: /de/shared is. */
-export const isPrivatePage = (pathname: string): boolean => PRIVATE_PAGES.includes(languages.pagePath(pathname));
+/**
+ * A change waiting for the person's approval (/confirm/<id>, docs/adr/0025):
+ * a page of the app with the change's id in its address, private as a share
+ * link is, so no Referer names the id.
+ */
+export const CONFIRM_PAGE = /^\/confirm\/[A-Za-z0-9_-]{1,64}$/;
+
+/** Whether an address is one of PRIVATE_PAGES, or a change's page, in any language: /de/shared is. */
+export const isPrivatePage = (pathname: string): boolean => {
+  const page = languages.pagePath(pathname);
+  return PRIVATE_PAGES.includes(page) || CONFIRM_PAGE.test(page);
+};
 
 /**
  * Every page of the app (client/app/app.routes.ts): the public ones, and those
@@ -62,7 +72,10 @@ export const APP_PAGES = [
 ];
 
 /** Whether an address is one of the app's pages, in a language it knows: /de/recipe is, /xx/recipe is not. */
-export const isPage = (pathname: string): boolean => APP_PAGES.includes(languages.pagePath(pathname));
+export const isPage = (pathname: string): boolean => {
+  const page = languages.pagePath(pathname);
+  return APP_PAGES.includes(page) || CONFIRM_PAGE.test(page);
+};
 
 /**
  * Whether an address is a page of the app that is neither public nor private:

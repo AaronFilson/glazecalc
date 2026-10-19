@@ -104,7 +104,9 @@ describe('signedInGuard and visitorsOnlyGuard', () => {
       'forgot',
       'reset',
       'confirm-email',
-      'shared'
+      'shared',
+      // A change waiting for approval: the page says to sign in, so its link still works afterwards.
+      'confirm/:id'
     ]);
   });
 });

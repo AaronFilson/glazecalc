@@ -137,6 +137,35 @@ describe('AccountPage access tokens', () => {
     expect((el(fixture, '#token-scope-read') as HTMLInputElement).checked).toBe(true);
   });
 
+  it('offers "need no confirmation" only for a token that can change records, and sends it when ticked', async () => {
+    const { fixture } = await create(OFF, NO_TOKENS);
+    expect(el(fixture, '#token-no-confirm')).toBeNull();
+    (el(fixture, '#token-scope-write') as HTMLInputElement).click();
+    await settle(fixture);
+    const box = el(fixture, '#token-no-confirm') as HTMLInputElement;
+    expect(box.checked).toBe(false);
+    expect(text(fixture, '#token-no-confirm-hint')).toContain('You can only choose this now');
+    box.click();
+    await settle(fixture);
+    await type(fixture, 'token-name', 'Script');
+    await press(fixture, 'Continue', '.tokens-section');
+    await type(fixture, 'token-confirm-password', 'password123');
+    await press(fixture, 'Make the token');
+    const req = httpMock().expectOne(API + '/tokens');
+    expect(req.request.body).toEqual({
+      name: 'Script',
+      days: 30,
+      scope: 'data:write',
+      noConfirm: true,
+      password: 'password123'
+    });
+    req.flush(
+      { code: 'token-made', msg: 'Ready.', token: 'glazecalc_pat_' + 'z'.repeat(49), row: row('Script') },
+      { status: 201, statusText: 'Created' }
+    );
+    await settle(fixture);
+  });
+
   it('asks an account whose email is not confirmed to confirm it first, and sends the link again', async () => {
     const { fixture } = await create();
     const auth = TestBed.inject(AuthService);

@@ -159,6 +159,20 @@ const nameCheck =
                 </div>
               }
             </fieldset>
+            @if (scope() === 'data:write') {
+              <div class="form-check mb-3">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="tokenNoConfirm"
+                  id="token-no-confirm"
+                  aria-describedby="token-no-confirm-hint"
+                  [(ngModel)]="noConfirm"
+                />
+                <label class="form-check-label" for="token-no-confirm">{{ t('account.tokens.noConfirm') }}</label>
+                <div id="token-no-confirm-hint" class="form-text">{{ t('account.tokens.noConfirmHint') }}</div>
+              </div>
+            }
             <div class="mb-3">
               <label for="token-days" class="form-label">{{ t('account.tokens.expiry') }}</label>
               <select id="token-days" name="tokenDays" class="form-select" [(ngModel)]="days">
@@ -239,6 +253,8 @@ export class TokensSection implements OnInit {
   protected readonly days = signal(30);
   /** What the new token may do: read only (the default), or read and change. */
   protected readonly scope = signal<'data:read' | 'data:write'>('data:read');
+  /** "Changes from this token need no confirmation" (docs/adr/0025): unticked, and only for a token that can change records. */
+  protected readonly noConfirm = signal(false);
   /** Whether the token just made can change records, for the words beside it. */
   protected readonly madeCanWrite = signal(false);
   /** The lifetimes the chosen scope may have: a token that changes records has the shorter ones. */
@@ -291,11 +307,19 @@ export class TokensSection implements OnInit {
       return;
     }
     try {
-      const { token } = await this.service.create(this.name().trim(), this.days(), proof, this.scope());
+      const write = this.scope() === 'data:write';
+      const { token } = await this.service.create(
+        this.name().trim(),
+        this.days(),
+        proof,
+        this.scope(),
+        write && this.noConfirm()
+      );
       this.confirming.set(false);
       this.madeCanWrite.set(this.scope() === 'data:write');
       this.name.set('');
       this.scope.set('data:read');
+      this.noConfirm.set(false);
       this.copied.set('');
       this.made.set(token);
       afterNextRender(() => this.panelHeading()?.nativeElement.focus(), { injector: this.injector });
