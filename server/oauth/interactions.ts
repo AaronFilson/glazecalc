@@ -10,7 +10,10 @@
 //   GET  /api/connect/:uid   a browser opening the address: 303 to /connect/:uid.
 //                            The page's own request (Accept: application/json):
 //                            { uid, client: { name, source, host, selfDescribed },
-//                              redirect: { host, loopback }, writeRequested, expiresAt }
+//                              redirect: { scheme, host, loopback, app }, redirectElsewhere,
+//                              writeRequested, expiresAt }
+//                            (redirectShown: a host only for http and https; an app's own
+//                            scheme is shown whole, as `app`)
 //   POST /api/connect/:uid   { decision: 'allow' | 'deny', write?: boolean }:
 //                            { redirectTo }, the address the page sends the browser to next
 //
@@ -20,10 +23,15 @@
 // another browser's (no cookie). A connection may change records only when
 // the app asked for data:write and the person ticked it: write is false
 // unless sent as true. Every allow is a new connection, and the person's
-// earlier connection to the same app ends (one per app).
+// earlier connection to the same app ends (one per app); each sends the
+// account a notice email naming the app, its host and what it may do
+// (account_mail.ts, sendConnectionMade).
 import express, { type Request, type Response } from 'express';
 import type { Interaction } from 'oidc-provider';
+import * as accountMail from '../lib/account_mail.ts';
 import jwtAuth, { userOf } from '../lib/jwt_auth.ts';
+import * as log from '../lib/log.ts';
+import * as mailer from '../lib/mailer.ts';
 import { say } from '../lib/messages.ts';
 import type { Scope } from '../lib/scopes.ts';
 import * as limits from '../lib/rate_limit.ts';
@@ -80,6 +88,47 @@ const mayConnect = (req: Request, res: Response): boolean => {
   return true;
 };
 
+/** Where the answer (the code) goes, as the consent page shows it. */
+export interface RedirectShown {
+  /** The scheme with its colon: 'https:', 'http:', or an app's own ('cursor:'). */
+  scheme: string;
+  /** The host, for http and https only: an app's own scheme names no host it is held to. */
+  host: string | null;
+  /** Whether it is the person's own computer (http to 127.0.0.1, [::1] or localhost). */
+  loopback: boolean;
+  /**
+   * For an app's own scheme, the whole address without its query
+   * (evilapp://claude.ai/cb): whichever app on the device opens that scheme
+   * gets the answer, whatever the part after it looks like.
+   */
+  app: string | null;
+}
+
+/**
+ * Where a redirect URI sends the answer. Only http and https have a host that
+ * means anything: evilapp://claude.ai/cb goes to whichever app opens evilapp:
+ * links, not to claude.ai, so it is shown whole, never as a host.
+ */
+export const redirectShown = (uri: unknown): RedirectShown => {
+  const url = typeof uri === 'string' ? URL.parse(uri) : null;
+  if (!url) return { scheme: '', host: null, loopback: false, app: null };
+  const web = url.protocol === 'http:' || url.protocol === 'https:';
+  return {
+    scheme: url.protocol,
+    host: web ? url.host || null : null,
+    loopback: web && isLoopback(String(uri)),
+    app: web
+      ? null
+      : String(uri)
+          .split(/[?#]/)[0]!
+          .replace(/[\p{Cc}\p{Cf}\p{Z}]/gu, '')
+          .slice(0, 200) || null
+  };
+};
+
+/** The redirect as a connection's row and its notice name it: the web host, or an app's own scheme. */
+const redirectLabel = (shown: RedirectShown): string | undefined => shown.host ?? (shown.scheme || undefined);
+
 /** What the scope asked for: always data:read (the authorization server adds it), data:write only if asked. */
 const writeRequested = (interaction: Interaction): boolean =>
   String(interaction.params.scope ?? '')
@@ -98,20 +147,20 @@ connectRouter.get('/:uid', async (req, res) => {
   if (!found) return void notFound(res);
   const { interaction, client } = found;
   const cimd = isCimdClient(client.clientId);
-  const redirectUri = interaction.params.redirect_uri;
+  const redirect = redirectShown(interaction.params.redirect_uri);
+  const clientHost = cimd ? (hostOf(client.clientId) ?? null) : null;
   res.json({
     uid: interaction.uid,
     client: {
       name: cleanName(client.clientName) ?? null,
       source: cimd ? 'cimd' : 'dcr',
       // A CIMD app is its address, so its host is checked; a DCR app's name is only what it says of itself.
-      host: cimd ? (hostOf(client.clientId) ?? null) : null,
+      host: clientHost,
       selfDescribed: !cimd
     },
-    redirect: {
-      host: hostOf(redirectUri) ?? null,
-      loopback: typeof redirectUri === 'string' && isLoopback(redirectUri)
-    },
+    redirect,
+    // An app named by its address that sends the answer somewhere else: the page warns.
+    redirectElsewhere: Boolean(clientHost && !redirect.loopback && redirect.host !== clientHost),
     writeRequested: writeRequested(interaction),
     expiresAt: new Date(interaction.exp * 1000).toISOString()
   });
@@ -162,22 +211,42 @@ connectRouter.post('/:uid', jwtAuth, express.json({ limit: '1kb' }), async (req,
 
   const cimd = isCimdClient(client.clientId);
   await replaceEarlierGrants(user._id, client.clientId, now);
-  const redirectUri = interaction.params.redirect_uri;
-  await AccessToken.create({
+  const redirect = redirectShown(interaction.params.redirect_uri);
+  const row = await AccessToken.create({
     kind: 'oauth',
     userId: user._id,
-    name: cleanName(client.clientName) ?? hostOf(cimd ? client.clientId : redirectUri) ?? 'AI app',
+    name: cleanName(client.clientName) ?? (cimd ? hostOf(client.clientId) : redirect.host) ?? 'AI app',
     clientId: client.clientId,
     grantId,
     clientSource: cimd ? 'cimd' : 'dcr',
     ...(cimd && { clientHost: hostOf(client.clientId) }),
-    ...(hostOf(redirectUri) && { redirectHost: hostOf(redirectUri) }),
+    ...(redirectLabel(redirect) && { redirectHost: redirectLabel(redirect) }),
     scopes,
     createdAt: now,
     // A connection that changes records ends OAUTH_WRITE_DAYS from now, for good; one that reads is renewed as it is used.
     expiresAt: new Date(now.getTime() + (write ? OAUTH_WRITE_DAYS : OAUTH_REFRESH_DAYS) * DAY)
   });
   if (!cimd) await keepRegisteredClient(client.clientId, now);
+  log.info('App connected', { tokenId: String(row._id), source: row.clientSource, write });
+  // A notice to the owner, after the reply, for every new connection: what it
+  // is, where it lives, whether it may change records, and where to revoke it.
+  if (mailer.available()) {
+    accountMail
+      .sendConnectionMade(
+        user.email,
+        {
+          name: row.name,
+          ...(row.clientHost && { clientHost: row.clientHost }),
+          ...(row.redirectHost && { redirectHost: row.redirectHost }),
+          loopback: redirect.loopback,
+          selfDescribed: !cimd,
+          ...(write && { writeDays: OAUTH_WRITE_DAYS }),
+          createdAt: now
+        },
+        user.preferences?.language ?? undefined
+      )
+      .catch((err: unknown) => log.error('Could not send the app connected email', { code: log.codeOf(err) }));
+  }
 
   const redirectTo = await provider.interactionResult(
     req,

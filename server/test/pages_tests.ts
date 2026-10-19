@@ -4,8 +4,12 @@ import path from 'node:path';
 import {
   APP_PAGES,
   ENGLISH_ONLY_PAGES,
+  ID_PAGES,
   PUBLIC_PAGES,
+  isAppOnlyPage,
   isEnglishOnlyPage,
+  isPage,
+  isPrivatePage,
   looksLikeFile,
   ogLocale,
   pageHtml,
@@ -333,7 +337,26 @@ describe('pages in each language', () => {
       'utf8'
     );
     const pages = [...routes.matchAll(/^\s*path: '([^']*)'/gm)].map((m) => '/' + m[1]).filter((page) => page !== '/**');
-    expect([...APP_PAGES].sort()).to.eql(pages.sort());
+    // A page with an id in its address (/connect/:uid) is one of ID_PAGES.
+    expect([...APP_PAGES].sort()).to.eql(pages.filter((page) => !page.includes(':')).sort());
+    expect(Object.keys(ID_PAGES).sort()).to.eql(pages.filter((page) => page.includes(':')).sort());
+  });
+
+  it('knows the consent page by its id, as a private page in any language', () => {
+    const uid = 'aB3_dE5-gH7iJ9kL1mN';
+    for (const address of ['/connect/' + uid, '/de/connect/' + uid]) {
+      expect(isPage(address), address).to.equal(true);
+      expect(isPrivatePage(address), address).to.equal(true);
+      expect(isAppOnlyPage(address), address).to.equal(false);
+      const html = pageHtml(HTML, address, SITE, {}, ['en', 'de']);
+      expect(html, address).to.include('<meta name="robots" content="noindex, nofollow" />');
+      expect(html, address).to.include('<meta name="referrer" content="no-referrer" />');
+      expect(html, address).not.to.include('rel="canonical"');
+    }
+    for (const address of ['/connect', '/connect/', '/connect/short', '/connect/' + uid + '/more', '/connect/a.b' + uid]) {
+      expect(isPage(address), address).to.equal(false);
+    }
+    expect(prerenderedKey('/connect/' + uid)).to.equal(null);
   });
 
   it('tells a file from a page in one pass, even on a long path of dots', () => {
