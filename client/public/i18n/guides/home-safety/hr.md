@@ -149,38 +149,38 @@ Pet Poison Helpline kaže: „Olovo je otrovno za sve vrste, ali najveća je opa
 
 Ako je ljubimac možda pojeo ili popio nešto iz radionice ili pokazuje znakove poput onih navedenih gore, nazovite svojeg veterinara ili liniju za otrovanja životinja (pogledajte tablicu na vrhu stranice), a naziv sirovine i tjelesnu masu ljubimca imajte pri ruci.
 
-## The kiln {#the-kiln lang=en}
+## Peć {#the-kiln}
 
-### The outside gets hot enough to burn
+### Vanjska stijenka dovoljno je vruća da opeče
 
-A UK schools risk assessment says a kiln's outside "can reach 160 °C and possibly more" (about 320 °F), and a school kiln guide reports metal bands at up to 460 °F (about 240 °C). Skutt, a kiln maker, recommends a kiln room that can be locked against children and pets. Where a room cannot be locked, the school guide suggests a barrier such as a kiln safety screen.
+Jedna britanska procjena rizika za škole navodi da vanjska stijenka peći „može doseći 160 °C, a možda i više” (oko 320 °F), a jedan vodič za školske peći navodi da metalni obruči dosežu do 460 °F (oko 240 °C). Skutt, proizvođač peći, preporučuje prostoriju za peć koja se može zaključati kako u nju ne bi ušli djeca i kućni ljubimci. Gdje se prostorija ne može zaključati, taj školski vodič predlaže pregradu, primjerice zaštitnu ogradu oko peći.
 
-Small children and pets cannot understand a warning sign. We suggest keeping them behind a locked door or a barrier while the kiln fires and while it cools, and posting a warning sign for everyone else.
+Mala djeca i kućni ljubimci ne mogu razumjeti znak upozorenja. Predlažemo da ih dok peć radi i dok se hladi držite iza zaključanih vrata ili pregrade, a za sve ostale postavite znak upozorenja.
 
-### Space around it
+### Prostor oko peći
 
-Sources disagree on clearance. Rio Grande says at least 12 inches (30 cm) from walls and anything combustible. L&L strongly recommends 18 inches (46 cm) to all walls, and the building code it cites asks for 3 feet (0.9 m) from combustible walls. Follow your kiln's manual and local fire code; if you are unsure, allow 18 inches from any wall and 3 feet from anything that can burn. In a garage, keep cars, fuel and paint well away.
+Izvori se ne slažu oko sigurnosnog razmaka. Rio Grande navodi najmanje 12 inča (30 cm) od zidova i svega što je zapaljivo. L&L izričito preporučuje 18 inča (46 cm) do svih zidova, a građevinski propis na koji se poziva traži 3 stope (0,9 m) od zapaljivih zidova. Držite se uputa za uporabu svoje peći i lokalnih propisa o zaštiti od požara; ako niste sigurni, ostavite 18 inča od svakog zida i 3 stope od svega što može gorjeti. U garaži neka automobili, gorivo i boje budu daleko od peći.
 
-### Power
+### Napajanje
 
-Rio Grande recommends a **dedicated circuit** (one that powers nothing else) with a properly grounded outlet. We suggest no extension cord. Between firings, switch off the kiln's breaker or disconnect switch, or unplug it, so a child cannot start it.
+Rio Grande preporučuje **zaseban strujni krug** (na koji nije priključeno ništa drugo) s ispravno uzemljenom utičnicom. Predlažemo da ne koristite produžni kabel. Između pečenja isključite automatski osigurač ili rastavnu sklopku peći ili izvucite utikač, kako je dijete ne bi moglo uključiti.
 
-### Be there when the firing ends
+### Budite prisutni kad pečenje završi
 
-A **kiln sitter** is the mechanical switch on many manual kilns: a small cone bends at the end of the firing and trips the switch off. Its manual says it "is NOT intended to perform as a fail-safe shut-off device." Rio Grande says never to leave a firing kiln unattended, "especially near the expected shut-off time". So stay nearby and check the kiln while it fires, above all near the end; fire only when an adult will be home and awake through the whole firing, check that it has switched off, and keep an ABC fire extinguisher in the kiln room. For how sitters, controllers and schedules work, see [Firing a basic kiln](/guides/firing).
+**Kiln-Sitter** je mehanička sklopka na mnogim pećima s ručnim upravljanjem: na kraju pečenja savije se mali stožac{{en: cone}} i sklopka isključi peć. U njegovim uputama za uporabu piše da „NIJE namijenjen da služi kao uređaj za isključivanje siguran u slučaju kvara”. Rio Grande kaže da peć u radu nikad ne treba ostavljati bez nadzora, „osobito u vrijeme kad se očekuje isključivanje”. Zato tijekom pečenja ostanite u blizini i provjeravajte peć, prije svega pred kraj; pecite samo kad će kod kuće biti odrasla osoba koja će biti budna tijekom cijelog pečenja, provjerite je li se peć isključila i držite u prostoriji s peći aparat za gašenje požara ABC. Kako rade Kiln-Sitteri, regulatori i programi pečenja, pogledajte u vodiču [Pečenje u jednostavnoj peći](/guides/firing).
 
-### Fumes and carbon monoxide
+### Plinovi, pare i ugljikov monoksid
 
-Firing gives off fumes, so vent the kiln to the outdoors; [Safe mixing and ventilation](/guides/safe-mixing) explains how. A kiln in an attached garage needs venting that keeps fumes from reaching the house through the connecting door. Keep birds in a far room whenever the kiln fires.
+Pri pečenju se oslobađaju plinovi i pare, pa peć odzračite prema van; kako, objašnjava vodič [Sigurno miješanje i ventilacija](/guides/safe-mixing). Peć u garaži spojenoj s kućom treba odzračivanje koje sprječava da plinovi i pare kroz vrata između garaže i kuće uđu u kuću. Kad god pečete, neka ptice budu u udaljenoj prostoriji.
 
-**Carbon monoxide** (CO) is a poisonous gas you cannot see or smell. A university kiln safety sheet requires CO alarms with gas kilns. Views differ for electric kilns, but burning off organic matter (in clay, or things like paper or wax) can make CO. We think a CO alarm in the kiln room and the rooms next to it is a sensible, inexpensive step for any kiln.
+**Ugljikov monoksid** (CO) otrovan je plin koji ne možete ni vidjeti ni nanjušiti. Sigurnosne upute jednog sveučilišta za rad s pećima zahtijevaju detektore ugljikova monoksida uz plinske peći. Za električne peći mišljenja se razlikuju, ali izgaranje organskih tvari (u glini ili u stvarima poput papira ili voska) može stvoriti CO. Smatramo da je detektor ugljikova monoksida u prostoriji s peći i u susjednim prostorijama razuman i jeftin korak uz svaku peć.
 
-### Peepholes and eyes
+### Kontrolni otvori i oči
 
-Infrared light, which you cannot see, "starts at 752°F (400°C)", and the Ceramic Arts Network says looking into a kiln above this should always be done with eye protection. Infrared can damage the lens of the eye and lead to cataracts, and long gazing can injure the retina. Sunglasses and didymium glasses do not block it.
+Infracrveno zračenje, koje ne možete vidjeti, „počinje na 752°F (400°C)”, a Ceramic Arts Network kaže da bi u peć zagrijanu iznad te temperature uvijek trebalo gledati sa zaštitom za oči. Infracrveno zračenje može oštetiti očnu leću i dovesti do sive mrene, a dugo gledanje može ozlijediti mrežnicu. Sunčane naočale i didimijske naočale ne zaustavljaju ga.
 
 > [!WARNING]
-> Children should not look into a kiln at all. A glowing peephole draws them, and they will not reliably keep protective glasses on, so keep them away while the kiln is hot. Adults should look only briefly, through IR-rated welding glasses. Sources recommend shades from 1.7 to 5; shade 3 is a sensible choice, darker if you see spots afterward.
+> Djeca uopće ne bi trebala gledati u peć. Užareni kontrolni otvor privlači ih, a zaštitne naočale neće pouzdano držati na očima, pa ih držite podalje dok je peć vruća. Odrasli bi trebali gledati samo kratko, kroz naočale za zavarivanje s IC zaštitom. Izvori preporučuju stupanj zatamnjenja od 1,7 do 5; stupanj 3 razuman je izbor, a tamniji ako poslije pred očima vidite mrlje.
 
 ## Ručno izrađeno posuđe na obiteljskom stolu {#handmade-ware}
 

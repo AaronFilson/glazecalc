@@ -149,38 +149,38 @@ Linka Pet Poison Helpline uvádí: „Olovo je toxické pro všechny druhy, ale 
 
 Pokud zvíře mohlo sníst nebo vypít cokoli z dílny nebo má příznaky jako ty výše, zavolejte svému veterináři nebo na toxikologickou linku pro zvířata (viz tabulka na začátku stránky) a mějte po ruce název suroviny a hmotnost zvířete.
 
-## The kiln {#the-kiln lang=en}
+## Pec {#the-kiln}
 
-### The outside gets hot enough to burn
+### Povrch pece se rozpálí tak, že popálí
 
-A UK schools risk assessment says a kiln's outside "can reach 160 °C and possibly more" (about 320 °F), and a school kiln guide reports metal bands at up to 460 °F (about 240 °C). Skutt, a kiln maker, recommends a kiln room that can be locked against children and pets. Where a room cannot be locked, the school guide suggests a barrier such as a kiln safety screen.
+Britské hodnocení rizik pro školy uvádí, že povrch pece „může dosáhnout 160 °C a možná i víc“ (asi 320 °F), a školní příručka o pecích uvádí teplotu kovových pásů až 460 °F (asi 240 °C). Výrobce pecí Skutt doporučuje místnost pro pec, kterou lze zamknout před dětmi a zvířaty. Kde místnost zamknout nelze, školní příručka navrhuje zábranu, například ochrannou zástěnu kolem pece.
 
-Small children and pets cannot understand a warning sign. We suggest keeping them behind a locked door or a barrier while the kiln fires and while it cools, and posting a warning sign for everyone else.
+Malé děti a zvířata výstražné ceduli nerozumějí. Navrhujeme je proto během výpalu i chladnutí držet za zamčenými dveřmi nebo za zábranou a pro všechny ostatní vyvěsit výstražnou ceduli.
 
-### Space around it
+### Místo kolem pece
 
-Sources disagree on clearance. Rio Grande says at least 12 inches (30 cm) from walls and anything combustible. L&L strongly recommends 18 inches (46 cm) to all walls, and the building code it cites asks for 3 feet (0.9 m) from combustible walls. Follow your kiln's manual and local fire code; if you are unsure, allow 18 inches from any wall and 3 feet from anything that can burn. In a garage, keep cars, fuel and paint well away.
+Zdroje se v otázce bezpečné vzdálenosti rozcházejí. Rio Grande uvádí nejméně 12 palců (30 cm) od stěn a od všeho hořlavého. L&L důrazně doporučuje 18 palců (46 cm) od všech stěn a stavební předpis, na který se odvolává, požaduje 3 stopy (0,9 m) od hořlavých stěn. Řiďte se návodem k obsluze vaší pece a místními požárními předpisy; v případě pochybností nechte 18 palců od každé stěny a 3 stopy od všeho, co může hořet. V garáži mějte auta, palivo a barvy daleko od pece.
 
-### Power
+### Elektrické připojení
 
-Rio Grande recommends a **dedicated circuit** (one that powers nothing else) with a properly grounded outlet. We suggest no extension cord. Between firings, switch off the kiln's breaker or disconnect switch, or unplug it, so a child cannot start it.
+Rio Grande doporučuje **samostatně jištěný okruh** (který nenapájí nic jiného) se správně uzemněnou zásuvkou. Navrhujeme nepoužívat prodlužovací kabel. Mezi výpaly vypněte jistič nebo hlavní vypínač pece, případně vytáhněte zástrčku ze zásuvky, aby dítě nemohlo pec zapnout.
 
-### Be there when the firing ends
+### Buďte u toho, když výpal končí
 
-A **kiln sitter** is the mechanical switch on many manual kilns: a small cone bends at the end of the firing and trips the switch off. Its manual says it "is NOT intended to perform as a fail-safe shut-off device." Rio Grande says never to leave a firing kiln unattended, "especially near the expected shut-off time". So stay nearby and check the kiln while it fires, above all near the end; fire only when an adult will be home and awake through the whole firing, check that it has switched off, and keep an ABC fire extinguisher in the kiln room. For how sitters, controllers and schedules work, see [Firing a basic kiln](/guides/firing).
+**Kiln-Sitter** je mechanický vypínač na mnoha ručně ovládaných pecích (bez regulátoru): na konci výpalu se ohne malá žároměrka{{en: cone}} a vypínač se tím vypne. Jeho návod k obsluze uvádí, že „NENÍ určen k tomu, aby sloužil jako vypínací zařízení bezpečné při poruše“. Rio Grande radí nikdy nenechávat pec během výpalu bez dozoru, „zvlášť kolem očekávané doby vypnutí“. Proto během výpalu zůstaňte poblíž a pec kontrolujte, především ke konci; vypalujte jen tehdy, když bude doma dospělý, který bude vzhůru po celou dobu výpalu, zkontrolujte, že se pec vypnula, a v místnosti s pecí mějte hasicí přístroj typu ABC. Jak fungují vypínače Kiln-Sitter, regulátory a vypalovací křivky, popisuje návod [Výpal v jednoduché peci](/guides/firing).
 
-### Fumes and carbon monoxide
+### Výpary a oxid uhelnatý
 
-Firing gives off fumes, so vent the kiln to the outdoors; [Safe mixing and ventilation](/guides/safe-mixing) explains how. A kiln in an attached garage needs venting that keeps fumes from reaching the house through the connecting door. Keep birds in a far room whenever the kiln fires.
+Při výpalu vznikají výpary, proto je z pece odvádějte ven; jak na to, vysvětluje návod [Bezpečné míchání a větrání](/guides/safe-mixing). Pec v garáži spojené s domem potřebuje odtah, který zabrání tomu, aby se výpary dostaly do domu spojovacími dveřmi. Při každém výpalu mějte ptáky ve vzdálené místnosti.
 
-**Carbon monoxide** (CO) is a poisonous gas you cannot see or smell. A university kiln safety sheet requires CO alarms with gas kilns. Views differ for electric kilns, but burning off organic matter (in clay, or things like paper or wax) can make CO. We think a CO alarm in the kiln room and the rooms next to it is a sensible, inexpensive step for any kiln.
+**Oxid uhelnatý** (CO) je jedovatý plyn, který nevidíte ani necítíte. Bezpečnostní pokyny jedné univerzity pro práci s pecemi vyžadují u plynových pecí detektory CO. U elektrických pecí se názory liší, ale při vyhořívání organických látek (v hlíně{{en: clay}} nebo ve věcech jako papír či vosk) může CO vznikat. Myslíme si, že detektor CO v místnosti s pecí a v sousedních místnostech je u jakékoli pece rozumný a levný krok.
 
-### Peepholes and eyes
+### Průzory a oči
 
-Infrared light, which you cannot see, "starts at 752°F (400°C)", and the Ceramic Arts Network says looking into a kiln above this should always be done with eye protection. Infrared can damage the lens of the eye and lead to cataracts, and long gazing can injure the retina. Sunglasses and didymium glasses do not block it.
+Infračervené záření, které nevidíte, „začíná při 752°F (400°C)“ a podle Ceramic Arts Network by se do pece rozpálené nad tuto teplotu mělo vždy dívat s ochranou očí. Infračervené záření může poškodit oční čočku a vést k šedému zákalu a dlouhé dívání může poškodit sítnici. Sluneční ani didymové brýle ho neblokují.
 
 > [!WARNING]
-> Children should not look into a kiln at all. A glowing peephole draws them, and they will not reliably keep protective glasses on, so keep them away while the kiln is hot. Adults should look only briefly, through IR-rated welding glasses. Sources recommend shades from 1.7 to 5; shade 3 is a sensible choice, darker if you see spots afterward.
+> Děti by se do pece neměly dívat vůbec. Žhnoucí průzor je láká a nedá se spolehnout na to, že si ochranné brýle nechají na očích, proto je držte dál, dokud je pec horká. Dospělí by se měli dívat jen krátce, přes svářečské brýle s ochranou proti IR. Zdroje doporučují stupně ochrany od 1,7 do 5; stupeň 3 je rozumná volba, tmavší, pokud potom vidíte před očima skvrny.
 
 ## Ručně dělaná keramika na rodinném stole {#handmade-ware}
 

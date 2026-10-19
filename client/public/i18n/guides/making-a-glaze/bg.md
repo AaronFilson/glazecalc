@@ -163,55 +163,55 @@ Label: Размер на ситото
 | Глазури с оцветители{{en: colorants}} като кобалт или желязо | 100–120 меша                |
 | Пепелни глазури и други глазури с едри суровини              | 60–80 меша                  |
 
-## Specific gravity {#specific-gravity lang=en}
+## Относително тегло {#specific-gravity}
 
-**Specific gravity** (SG) tells you how much powder is in your slurry. It is the weight of a volume of glaze divided by the weight of the same volume of water. Water is 1.00, and a glaze at {{SG 1.45}} weighs 145 g per 100 mL. Mixing to a measured SG is how you get the same thickness, and the same coat, every time. It has no units, so it is the same in grams or ounces.
+**Относителното тегло**{{en: specific gravity, SG}} (отн. тегло) показва колко прах има в глазурната суспензия{{en: slurry}}. То е теглото на даден обем глазура{{en: glaze}}, разделено на теглото на същия обем вода. За водата то е 1,00, а глазура с {{SG 1.45}} тежи 145 g на 100 mL. Като замесвате до измерено относително тегло, получавате всеки път една и съща гъстота и един и същ слой. То няма мерни единици, затова е едно и също в грамове или в унции.
 
-### Measure it by weighing 100 mL
+### Измерване чрез претегляне на 100 mL
 
-1. Stir the glaze so nothing has settled.
-2. Put a 100 mL **graduated cylinder** (a tall, marked measuring tube) or a 100 mL syringe on the scale, and tare it.
-3. Fill it with glaze to exactly 100 mL, reading the mark at eye level.
-4. Weigh it and divide the grams by 100: 145 g is SG 1.45.
+1. Разбъркайте глазурата, така че нищо да не е утаено.
+2. Поставете на везната **мерителен цилиндър** (висока мерителна тръба с деления) от 100 mL или спринцовка от 100 mL и тарирайте.
+3. Напълнете го с глазура точно до 100 mL, като отчитате чертата на нивото на очите.
+4. Претеглете го и разделете грамовете на 100: 145 g означава отн. тегло 1,45.
 
-Digitalfire also marks a cup at the level of 500 g of water, fills it to the mark with glaze, and divides the weight by 500; a bigger, fuller measure is more accurate. A **hydrometer**, a float read where it sits in the glaze, is quick but can misread thick or gelled glazes. UK hydrometers, such as Potclays', read in degrees Baumé (°Bé). By our arithmetic, SG = 145 ÷ (145 − °Bé), so 46 °Bé is about 1.46. Older UK books give a **pint weight**, the ounces in an imperial pint of glaze: divide it by 20, so 29 oz is about SG 1.45 (also our arithmetic).
+Digitalfire също отбелязва на чаша нивото на 500 g вода, напълва я с глазура до чертата и разделя теглото на 500; по-голямата и по-пълна мярка е по-точна. **Ареометърът** – поплавък, който се отчита там, докъдето потъне в глазурата – е бърз, но може да покаже грешно при гъсти или желирани глазури. Британските ареометри, като този на Potclays, показват градуси Боме (°Bé). По наша сметка отн. тегло = 145 ÷ (145 − °Bé), така че 46 °Bé е около 1,46. По-старите британски книги дават **тегло на пинта** – унциите в една имперска пинта глазура: разделете го на 20, така че 29 oz е около отн. тегло 1,45 (също наша сметка).
 
-### What to aim for
+### Към какво да се стремите
 
-Sources disagree, most of all on brushing and spraying, where the UK supplier Potclays gives much higher figures (its own are "for guidance only"). Treat every number as a starting point. Digitalfire's core advice is to find the SG and gelling that work for each glaze, then repeat them and write them down.
+Източниците се различават, най-вече за нанасянето с четка и пръскането, където британският доставчик Potclays дава много по-високи стойности (самият той ги дава „само за ориентир“). Приемайте всяко число като отправна точка. Основният съвет на Digitalfire е да намерите относителното тегло и желирането, които работят за всяка глазура, след това да ги повтаряте и да ги записвате.
 
-Table: Specific gravity targets, where sources disagree
-Label: Specific gravity targets
+Table: Целеви стойности на относителното тегло, по които източниците се различават
+Label: Целеви стойности на относителното тегло
 
-| Use      | Digitalfire and Glazy                                                                                                                 | Potclays (UK)                               | Safe starting point                                     |
-| -------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- | ------------------------------------------------------- |
-| Dipping  | {{SG 1.40}} (for a 5-second dip) to {{SG 1.50}} (for a 1-second dip); home-mixed glazes that are gelled do best at {{SG 1.43–1.45}}   | Clear {{SG 1.46–1.48}}; colored {{SG 1.61}} | {{SG 1.45}}; thin to {{SG 1.43}} and gel it if it drips |
-| Brushing | {{SG 1.25}} (thin clear) to {{SG 1.55}} (dark detail)                                                                                 | {{SG 1.71–1.81}}                            | Follow the product; use CMC gum or a brushing medium    |
-| Spraying | No figure; Hopper, writing for Ceramic Arts Network, says much thinner, with a deflocculant (an additive that makes a slurry runnier) | {{SG 1.71}}                                 | No reliable number; spray only in a spray booth         |
+| Нанасяне         | Digitalfire и Glazy                                                                                                                                                             | Potclays (Обединеното кралство)                | Сигурна отправна точка                                                                  |
+| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------- | --------------------------------------------------------------------------------------- |
+| Потапяне         | От {{SG 1.40}} (при потапяне за 5 секунди) до {{SG 1.50}} (при потапяне за 1 секунда); желираните глазури, замесени у дома, се държат най-добре при {{SG 1.43–1.45}}            | Прозрачни {{SG 1.46–1.48}}; цветни {{SG 1.61}} | {{SG 1.45}}; ако капе, разредете я до {{SG 1.43}} и я желирайте                         |
+| Нанасяне с четка | От {{SG 1.25}} (тънка прозрачна) до {{SG 1.55}} (тъмни детайли)                                                                                                                 | {{SG 1.71–1.81}}                               | Следвайте указанията за продукта; използвайте CMC или готово лепило за глазури за четка |
+| Пръскане         | Няма стойност; Хопър (Hopper) в статия за Ceramic Arts Network пише, че трябва да е много по-рядка, с втечнител{{en: deflocculant}} (добавка, която прави суспензията по-течна) | {{SG 1.71}}                                    | Няма надеждна стойност; пръскайте само в кабина за пръскане                             |
 
-To check a dipping glaze by eye, AMACO dips for 5 seconds and looks for a coat about as thick as a US dime. Digitalfire fires tiles dipped for 5 seconds to check.
+За да провери на око глазура за потапяне, AMACO потапя за 5 секунди и търси слой, дебел приблизително колкото американската монета от десет цента (dime). Digitalfire изпича за проверка пробни плочки{{en: test tiles}}, потопени за 5 секунди.
 
-### Water for a target SG: our estimate
+### Вода за целево относително тегло: наша оценка
 
-The table below is our own arithmetic, not a source's. It assumes the powder's particles have a density of 2.6 g per cm³, which is an assumption, not a measurement. Clay, soluble materials and gelling all change a real glaze, so use it to start, then measure. As a check, it predicts {{SG 1.44}} for equal weights of powder and water, close to Digitalfire's measured {{SG 1.46}}. It also shows that 70 to 80 mL per 100 g starts you above {{SG 1.50}}, thicker than you need.
+Таблицата по-долу е наша собствена сметка, а не на някой източник. Тя приема, че частиците на праха имат плътност 2,6 g на cm³, което е допускане, а не измерване. Глината, разтворимите суровини и желирането променят истинската глазура, затова я използвайте за начало, а после мерете. За проверка: за равни тегла прах и вода тя предвижда {{SG 1.44}}, близо до измереното от Digitalfire {{SG 1.46}}. Тя показва също, че с 70–80 mL на 100 g започвате над {{SG 1.50}}, по-гъсто, отколкото Ви трябва.
 
-Table: Water for a target specific gravity (our estimate)
-Label: Water for a target specific gravity
+Table: Вода за целево относително тегло (наша оценка)
+Label: Вода за целево относително тегло
 
-| Target      | Per 100 g of powder |  Per kilogram |         Per pound |
-| ----------- | ------------------: | ------------: | ----------------: |
-| {{SG 1.40}} |        about 115 mL | about 1150 mL | about 18 US fl oz |
-| {{SG 1.45}} |         about 98 mL |  about 980 mL | about 15 US fl oz |
-| {{SG 1.50}} |         about 85 mL |  about 850 mL | about 13 US fl oz |
-| {{SG 1.60}} |         about 64 mL |  about 640 mL | about 10 US fl oz |
+| Цел         | На 100 g прах |   На килограм |           На фунт |
+| ----------- | ------------: | ------------: | ----------------: |
+| {{SG 1.40}} |  около 115 mL | около 1150 mL | около 18 US fl oz |
+| {{SG 1.45}} |   около 98 mL |  около 980 mL | около 15 US fl oz |
+| {{SG 1.50}} |   около 85 mL |  около 850 mL | около 13 US fl oz |
+| {{SG 1.60}} |   около 64 mL |  около 640 mL | около 10 US fl oz |
 
-### Epsom salts, CMC gum and bentonite
+### Английска сол, лепило CMC и бентонит
 
-**Epsom salts** make a glaze gel slightly when it stands still and flow again when it is stirred. This is called **flocculating** it, and a glaze that behaves this way is **thixotropic**: it goes on more evenly, drips less and settles less. Digitalfire suggests starting at about 2 g per gallon once the SG is right (roughly 0.5 g per liter, our conversion) and tuning the amount each time you mix, since no recipe should fix the dose. We suggest dissolving it in a little hot water first. In a Digitalfire example, a glaze at {{SG 1.45}} dripped, so water brought it down to {{SG 1.43}} and Epsom salts gelled it back to creamy, and it went on evenly. A rough check: stir, stop and watch. A gelled glaze moves on for about 2 or 3 seconds, then stops and springs back a little.
+**Английската сол** (магнезиев сулфат) кара глазурата леко да желира, когато стои неподвижно, и отново да тече, когато се разбърка. Това се нарича **флокулиране**{{en: flocculating}} (сгъстяване), а глазура, която се държи така, е **тиксотропна**{{en: thixotropic}}: нанася се по-равномерно, капе по-малко и се утаява по-малко. Digitalfire предлага да започнете с около 2 g на галон, след като относителното тегло е правилно (грубо 0,5 g на литър, наше преобразуване), и да нагласяте количеството всеки път, когато замесвате, тъй като никоя рецепта не би трябвало да определя дозата. Предлагаме първо да я разтворите в малко гореща вода. В пример на Digitalfire глазура с {{SG 1.45}} капеше, затова с вода я свалиха до {{SG 1.43}}, а английската сол я желира обратно до кремообразна гъстота и тя легна равномерно. Груба проверка: разбъркайте, спрете и наблюдавайте. Желираната глазура продължава да се движи около 2 или 3 секунди, после спира и леко се връща назад.
 
-**CMC gum** (carboxymethyl cellulose) makes a slurry stickier and slower to dry, and leaves a harder coat that holds to the pot. It matters most for brushing glazes and glazes high in frit. Digitalfire's example blends 3.75 g into 1000 g of slurry, and it has to go in with a blender. A glaze with CMC will not gel with Epsom salts, and since microbes feed on the gum, it can change in the bucket and start to smell.
+**Лепилото CMC** (карбоксиметилцелулоза) прави суспензията по-лепкава и по-бавно съхнеща и оставя по-твърд слой, който се държи за изделието. То е най-важно за глазурите за четка и за глазурите с много фрита{{en: frit}}. В примера на Digitalfire 3,75 g се разбъркват в 1000 g суспензия, като това трябва да стане с блендер. Глазура с CMC няма да желира с английска сол, а тъй като микробите се хранят с лепилото, тя може да се промени в кофата и да започне да мирише.
 
-**Bentonite**, a very fine clay, helps hold the other particles in suspension. Dipping glazes usually rely on 15 to 25% raw clay for this. For a recipe short of clay, about 1 to 3% bentonite helps; Digitalfire says a glaze with more than 15% clay should not need bentonite at more than 1% of the dry glaze's weight.
+**Бентонитът**, много фина глина, помага останалите частици да стоят в суспензия. Глазурите за потапяне обикновено разчитат за това на 15–25% некалцинирана глина. При рецепта с малко глина помагат около 1–3% бентонит; според Digitalfire глазура с над 15% глина не би трябвало да се нуждае от бентонит над 1% от теглото на сухата глазура.
 
 ## Пробни плочки и серии проби {#testing}
 

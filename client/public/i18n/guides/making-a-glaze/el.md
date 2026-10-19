@@ -163,55 +163,55 @@ Label: Mesh κόσκινου
 | Υαλώματα με χρωστικές{{en: colorants}} όπως κοβάλτιο ή σίδηρο | 100 έως 120 mesh          |
 | Υαλώματα στάχτης και άλλα με χονδρόκοκκα υλικά                | 60 έως 80 mesh            |
 
-## Specific gravity {#specific-gravity lang=en}
+## Ειδικό βάρος {#specific-gravity}
 
-**Specific gravity** (SG) tells you how much powder is in your slurry. It is the weight of a volume of glaze divided by the weight of the same volume of water. Water is 1.00, and a glaze at {{SG 1.45}} weighs 145 g per 100 mL. Mixing to a measured SG is how you get the same thickness, and the same coat, every time. It has no units, so it is the same in grams or ounces.
+Το **ειδικό βάρος**{{en: specific gravity, SG}} δείχνει πόση σκόνη υπάρχει στο υγρό σας υάλωμα{{en: slurry}}. Είναι το βάρος ενός όγκου υαλώματος διαιρεμένο με το βάρος του ίδιου όγκου νερού. Για το νερό είναι 1,00, και ένα υάλωμα{{en: glaze}} με {{SG 1.45}} ζυγίζει 145 g ανά 100 mL. Αν φτιάχνετε το υάλωμα σε μετρημένο ειδικό βάρος, πετυχαίνετε την ίδια πυκνότητα, και την ίδια στρώση, κάθε φορά. Δεν έχει μονάδες, οπότε είναι το ίδιο σε γραμμάρια ή σε ουγγιές.
 
-### Measure it by weighing 100 mL
+### Μετρήστε το ζυγίζοντας 100 mL
 
-1. Stir the glaze so nothing has settled.
-2. Put a 100 mL **graduated cylinder** (a tall, marked measuring tube) or a 100 mL syringe on the scale, and tare it.
-3. Fill it with glaze to exactly 100 mL, reading the mark at eye level.
-4. Weigh it and divide the grams by 100: 145 g is SG 1.45.
+1. Ανακατέψτε το υάλωμα ώστε να μην έχει καθιζήσει τίποτα.
+2. Βάλτε στη ζυγαριά έναν **ογκομετρικό κύλινδρο** 100 mL (ψηλό σωλήνα μέτρησης με χαραγές) ή μια σύριγγα 100 mL, και μηδενίστε τη ζυγαριά.
+3. Γεμίστε με υάλωμα ακριβώς ως τα 100 mL, διαβάζοντας τη χαραγή στο ύψος των ματιών.
+4. Ζυγίστε και διαιρέστε τα γραμμάρια με το 100: 145 g σημαίνουν ειδικό βάρος 1,45.
 
-Digitalfire also marks a cup at the level of 500 g of water, fills it to the mark with glaze, and divides the weight by 500; a bigger, fuller measure is more accurate. A **hydrometer**, a float read where it sits in the glaze, is quick but can misread thick or gelled glazes. UK hydrometers, such as Potclays', read in degrees Baumé (°Bé). By our arithmetic, SG = 145 ÷ (145 − °Bé), so 46 °Bé is about 1.46. Older UK books give a **pint weight**, the ounces in an imperial pint of glaze: divide it by 20, so 29 oz is about SG 1.45 (also our arithmetic).
+Το Digitalfire σημαδεύει επίσης ένα κύπελλο στη στάθμη που φτάνουν 500 g νερού, το γεμίζει με υάλωμα ως το σημάδι και διαιρεί το βάρος με το 500. Ένα μεγαλύτερο, πιο γεμάτο μέτρο είναι πιο ακριβές. Το **αραιόμετρο**, ένας πλωτήρας που διαβάζεται στο σημείο όπου ισορροπεί μέσα στο υάλωμα, είναι γρήγορο, αλλά μπορεί να δώσει λάθος ένδειξη σε πυκνά ή πηκτά υαλώματα. Τα βρετανικά αραιόμετρα, όπως αυτά της Potclays, δείχνουν βαθμούς Baumé (°Bé). Κατά τους υπολογισμούς μας, ειδ. βάρος = 145 ÷ (145 − °Bé), οπότε 46 °Bé αντιστοιχούν περίπου σε 1,46. Παλαιότερα βρετανικά βιβλία δίνουν το **βάρος πίντας**, τις ουγγιές σε μία αγγλική πίντα υαλώματος: διαιρέστε το με το 20, οπότε 29 oz αντιστοιχούν περίπου σε ειδικό βάρος 1,45 (επίσης δικός μας υπολογισμός).
 
-### What to aim for
+### Πού να στοχεύσετε
 
-Sources disagree, most of all on brushing and spraying, where the UK supplier Potclays gives much higher figures (its own are "for guidance only"). Treat every number as a starting point. Digitalfire's core advice is to find the SG and gelling that work for each glaze, then repeat them and write them down.
+Οι πηγές διαφωνούν, πάνω από όλα για το πινέλο και τον ψεκασμό, όπου ο βρετανικός προμηθευτής Potclays δίνει πολύ υψηλότερες τιμές (οι δικές του είναι «μόνο ενδεικτικές»). Θεωρήστε κάθε αριθμό σημείο εκκίνησης. Η κύρια συμβουλή του Digitalfire είναι να βρείτε το ειδικό βάρος και τον βαθμό πήξης που ταιριάζουν σε κάθε υάλωμα, και μετά να τα επαναλαμβάνετε και να τα καταγράφετε.
 
-Table: Specific gravity targets, where sources disagree
-Label: Specific gravity targets
+Table: Τιμές-στόχοι ειδικού βάρους, όπου οι πηγές διαφωνούν
+Label: Τιμές-στόχοι ειδικού βάρους
 
-| Use      | Digitalfire and Glazy                                                                                                                 | Potclays (UK)                               | Safe starting point                                     |
-| -------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- | ------------------------------------------------------- |
-| Dipping  | {{SG 1.40}} (for a 5-second dip) to {{SG 1.50}} (for a 1-second dip); home-mixed glazes that are gelled do best at {{SG 1.43–1.45}}   | Clear {{SG 1.46–1.48}}; colored {{SG 1.61}} | {{SG 1.45}}; thin to {{SG 1.43}} and gel it if it drips |
-| Brushing | {{SG 1.25}} (thin clear) to {{SG 1.55}} (dark detail)                                                                                 | {{SG 1.71–1.81}}                            | Follow the product; use CMC gum or a brushing medium    |
-| Spraying | No figure; Hopper, writing for Ceramic Arts Network, says much thinner, with a deflocculant (an additive that makes a slurry runnier) | {{SG 1.71}}                                 | No reliable number; spray only in a spray booth         |
+| Χρήση    | Digitalfire και Glazy                                                                                                                                                    | Potclays (ΗΒ)                                      | Ασφαλές σημείο εκκίνησης                                                          |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------- | --------------------------------------------------------------------------------- |
+| Βύθιση   | Από {{SG 1.40}} (για βύθιση 5 δευτερολέπτων) έως {{SG 1.50}} (για βύθιση 1 δευτερολέπτου). Τα σπιτικά υαλώματα, όταν είναι πηκτά, δουλεύουν καλύτερα σε {{SG 1.43–1.45}} | Διάφανα: {{SG 1.46–1.48}}. Χρωματιστά: {{SG 1.61}} | {{SG 1.45}}. Αραιώστε μέχρι {{SG 1.43}} και κάντε το πηκτό, αν στάζει             |
+| Πινέλο   | Από {{SG 1.25}} (αραιό διάφανο) έως {{SG 1.55}} (σκούρες λεπτομέρειες)                                                                                                   | {{SG 1.71–1.81}}                                   | Ακολουθήστε τις οδηγίες του προϊόντος. Χρησιμοποιήστε κόλλα CMC ή μέσο για πινέλο |
+| Ψεκασμός | Χωρίς τιμή. Ο Hopper, σε άρθρο του για το Ceramic Arts Network, λέει πολύ πιο αραιό, με διασπορέα{{en: deflocculant}} (πρόσθετο που κάνει το υγρό υάλωμα πιο ρευστό)     | {{SG 1.71}}                                        | Δεν υπάρχει αξιόπιστος αριθμός. Ψεκάζετε μόνο σε θάλαμο ψεκασμού                  |
 
-To check a dipping glaze by eye, AMACO dips for 5 seconds and looks for a coat about as thick as a US dime. Digitalfire fires tiles dipped for 5 seconds to check.
+Για να ελέγξει με το μάτι ένα υάλωμα για βύθιση, η AMACO βυθίζει για 5 δευτερόλεπτα και κοιτάζει αν η στρώση έχει περίπου το πάχος ενός αμερικανικού κέρματος dime. Το Digitalfire, για έλεγχο, ψήνει δοκιμαστικά πλακίδια{{en: test tiles}} βυθισμένα για 5 δευτερόλεπτα.
 
-### Water for a target SG: our estimate
+### Νερό για ειδικό βάρος-στόχο: δική μας εκτίμηση
 
-The table below is our own arithmetic, not a source's. It assumes the powder's particles have a density of 2.6 g per cm³, which is an assumption, not a measurement. Clay, soluble materials and gelling all change a real glaze, so use it to start, then measure. As a check, it predicts {{SG 1.44}} for equal weights of powder and water, close to Digitalfire's measured {{SG 1.46}}. It also shows that 70 to 80 mL per 100 g starts you above {{SG 1.50}}, thicker than you need.
+Ο παρακάτω πίνακας βγαίνει από δικούς μας υπολογισμούς, όχι από κάποια πηγή. Υποθέτει ότι τα σωματίδια της σκόνης έχουν πυκνότητα 2,6 g ανά cm³, κάτι που είναι υπόθεση, όχι μέτρηση. Ο πηλός, τα διαλυτά υλικά και η πήξη αλλάζουν όλα ένα πραγματικό υάλωμα, οπότε χρησιμοποιήστε τον πίνακα για να ξεκινήσετε και μετά μετρήστε. Για έλεγχο: προβλέπει {{SG 1.44}} για ίσα βάρη σκόνης και νερού, κοντά στο {{SG 1.46}} που μέτρησε το Digitalfire. Δείχνει επίσης ότι με 70 έως 80 mL ανά 100 g ξεκινάτε πάνω από {{SG 1.50}}, πιο πυκνό από όσο χρειάζεστε.
 
-Table: Water for a target specific gravity (our estimate)
-Label: Water for a target specific gravity
+Table: Νερό για ειδικό βάρος-στόχο (δική μας εκτίμηση)
+Label: Νερό για ειδικό βάρος-στόχο
 
-| Target      | Per 100 g of powder |  Per kilogram |         Per pound |
-| ----------- | ------------------: | ------------: | ----------------: |
-| {{SG 1.40}} |        about 115 mL | about 1150 mL | about 18 US fl oz |
-| {{SG 1.45}} |         about 98 mL |  about 980 mL | about 15 US fl oz |
-| {{SG 1.50}} |         about 85 mL |  about 850 mL | about 13 US fl oz |
-| {{SG 1.60}} |         about 64 mL |  about 640 mL | about 10 US fl oz |
+| Στόχος      | Ανά 100 g σκόνης |        Ανά κιλό |           Ανά λίβρα |
+| ----------- | ---------------: | --------------: | ------------------: |
+| {{SG 1.40}} |   περίπου 115 mL | περίπου 1150 mL | περίπου 18 US fl oz |
+| {{SG 1.45}} |    περίπου 98 mL |  περίπου 980 mL | περίπου 15 US fl oz |
+| {{SG 1.50}} |    περίπου 85 mL |  περίπου 850 mL | περίπου 13 US fl oz |
+| {{SG 1.60}} |    περίπου 64 mL |  περίπου 640 mL | περίπου 10 US fl oz |
 
-### Epsom salts, CMC gum and bentonite
+### Αγγλικό άλας, κόλλα CMC και μπεντονίτης
 
-**Epsom salts** make a glaze gel slightly when it stands still and flow again when it is stirred. This is called **flocculating** it, and a glaze that behaves this way is **thixotropic**: it goes on more evenly, drips less and settles less. Digitalfire suggests starting at about 2 g per gallon once the SG is right (roughly 0.5 g per liter, our conversion) and tuning the amount each time you mix, since no recipe should fix the dose. We suggest dissolving it in a little hot water first. In a Digitalfire example, a glaze at {{SG 1.45}} dripped, so water brought it down to {{SG 1.43}} and Epsom salts gelled it back to creamy, and it went on evenly. A rough check: stir, stop and watch. A gelled glaze moves on for about 2 or 3 seconds, then stops and springs back a little.
+Το **αγγλικό άλας** (θειικό μαγνήσιο) κάνει ένα υάλωμα να πήζει ελαφρά όταν μένει ακίνητο και να ρέει ξανά όταν ανακατεύεται. Αυτό λέγεται **κροκίδωση**{{en: flocculating}}, και ένα υάλωμα που συμπεριφέρεται έτσι είναι **θιξοτροπικό**{{en: thixotropic}}: απλώνεται πιο ομοιόμορφα, στάζει λιγότερο και καθιζάνει λιγότερο. Το Digitalfire προτείνει να ξεκινήσετε με περίπου 2 g ανά γαλόνι, όταν το ειδικό βάρος είναι πια σωστό (περίπου 0,5 g ανά λίτρο, δική μας μετατροπή), και να ρυθμίζετε την ποσότητα κάθε φορά που αναμειγνύετε, γιατί καμία συνταγή δεν πρέπει να ορίζει τη δόση. Προτείνουμε να το διαλύετε πρώτα σε λίγο ζεστό νερό. Σε ένα παράδειγμα του Digitalfire, ένα υάλωμα με {{SG 1.45}} έσταζε, οπότε με νερό κατέβηκε σε {{SG 1.43}} και με αγγλικό άλας έγινε ξανά πηκτό και κρεμώδες, και απλώθηκε ομοιόμορφα. Ένας πρόχειρος έλεγχος: ανακατέψτε, σταματήστε και παρατηρήστε. Ένα πηκτό υάλωμα συνεχίζει να κινείται για περίπου 2 ή 3 δευτερόλεπτα, μετά σταματά και γυρίζει λίγο πίσω.
 
-**CMC gum** (carboxymethyl cellulose) makes a slurry stickier and slower to dry, and leaves a harder coat that holds to the pot. It matters most for brushing glazes and glazes high in frit. Digitalfire's example blends 3.75 g into 1000 g of slurry, and it has to go in with a blender. A glaze with CMC will not gel with Epsom salts, and since microbes feed on the gum, it can change in the bucket and start to smell.
+Η **κόλλα CMC** (καρβοξυμεθυλοκυτταρίνη) κάνει το υγρό υάλωμα πιο κολλώδες και πιο αργό στο στέγνωμα, και αφήνει πιο σκληρή στρώση που κρατιέται στο κομμάτι. Έχει τη μεγαλύτερη σημασία στα υαλώματα για πινέλο και στα υαλώματα με πολλή φρίτα{{en: frit}}. Στο παράδειγμα του Digitalfire, 3,75 g ανακατεύονται σε 1000 g υγρού υαλώματος, και πρέπει να μπουν με μπλέντερ. Ένα υάλωμα με CMC δεν πήζει με αγγλικό άλας, και επειδή τα μικρόβια τρέφονται με την κόλλα, μπορεί να αλλάξει μέσα στον κουβά και να αρχίσει να μυρίζει.
 
-**Bentonite**, a very fine clay, helps hold the other particles in suspension. Dipping glazes usually rely on 15 to 25% raw clay for this. For a recipe short of clay, about 1 to 3% bentonite helps; Digitalfire says a glaze with more than 15% clay should not need bentonite at more than 1% of the dry glaze's weight.
+Ο **μπεντονίτης**, ένας πολύ λεπτόκοκκος πηλός, βοηθά να μένουν τα άλλα σωματίδια σε αιώρηση. Για τον σκοπό αυτό, τα υαλώματα για βύθιση στηρίζονται συνήθως σε 15 έως 25% ωμό πηλό. Σε συνταγή με λίγο πηλό, βοηθά περίπου 1 έως 3% μπεντονίτης· το Digitalfire λέει ότι ένα υάλωμα με πάνω από 15% πηλό δεν θα έπρεπε να χρειάζεται μπεντονίτη πάνω από 1% του βάρους του ξερού υαλώματος.
 
 ## Δοκιμαστικά πλακίδια και σειρές δοκιμών {#testing}
 
