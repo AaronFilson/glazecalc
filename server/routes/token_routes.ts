@@ -38,6 +38,7 @@ import AccessToken, {
   PAT_EXPIRY_DAYS,
   patExpiryDays,
   revokeAll,
+  revokeOne,
   WRITE_PAT_MOST_DAYS,
   workingTokens,
   type AccessTokenDocument
@@ -168,14 +169,8 @@ tokenRouter.post('/', jwtAuth, notGuest, limits.passwordCheck, express.json(), a
 
 tokenRouter.delete('/:id', jwtAuth, notGuest, async (req, res) => {
   if (!mongoose.isObjectIdOrHexString(req.params.id)) return res.status(400).json(say('invalid-id'));
-  const now = new Date();
-  const token = await AccessToken.findOne({ _id: req.params.id, userId: userOf(req)._id, kind: 'pat' });
-  if (!token) return res.status(404).json(say('token-not-found'));
-  if (!token.revokedAt) {
-    await AccessToken.updateOne(
-      { _id: token._id, revokedAt: null },
-      { $set: { revokedAt: now, revokedWhy: 'person' } }
-    );
+  if (!(await revokeOne(userOf(req)._id, String(req.params.id), ['pat'], 'person'))) {
+    return res.status(404).json(say('token-not-found'));
   }
   return res.status(200).json(say('token-revoked'));
 });

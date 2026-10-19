@@ -17,6 +17,7 @@ import mfaRoutes from './routes/mfa_routes.ts';
 import oauthRoutes, { microsoftAssociation } from './routes/oauth_routes.ts';
 import emailRoutes from './routes/email_routes.ts';
 import passwordRoutes from './routes/password_routes.ts';
+import connectionRoutes from './routes/connection_routes.ts';
 import tokenRoutes from './routes/token_routes.ts';
 import records from './routes/records.ts';
 import { privateHeaders, sharedRouter, shareRouter } from './routes/share_routes.ts';
@@ -114,6 +115,8 @@ api.use('/password', passwordRoutes);
 api.use('/email', emailRoutes);
 // The account's own access tokens: made, listed and revoked with the web session only.
 api.use('/tokens', tokenRoutes);
+// Connected apps: the personal tokens and OAuth connections, what each did, and the Trash it filled; session only.
+api.use('/connections', connectionRoutes);
 // Two-step sign-in: the account's factors (docs/mfa-plan.md).
 api.use('/mfa', mfaRoutes);
 // Signing in with Google, GitHub or Microsoft (docs/adr/0015-provider-sign-in.md, 0023).

@@ -195,6 +195,12 @@ export const MESSAGES = {
     '{count, plural, =0 {No access tokens were working.} one {# access token was revoked.} other {# access tokens were revoked.}}',
   'token-not-found': 'No access token with that id.',
 
+  // Connected apps (server/routes/connection_routes.ts).
+  'connection-restored':
+    '{count, plural, =0 {Nothing was put back.} one {# record was put back from the Trash.} other {# records were put back from the Trash.}}',
+  'connection-restored-skipped':
+    '{count, plural, =0 {Nothing was put back.} one {# record was put back from the Trash.} other {# records were put back from the Trash.}} {skipped, plural, one {# was left in the Trash, because a record with the same id is already in its list.} other {# were left in the Trash, because records with the same ids are already in their lists.}}',
+
   // Requests in general.
   'not-found': 'Not found',
   'other-site': 'Requests from other sites are not accepted.',
