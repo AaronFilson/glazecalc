@@ -734,6 +734,24 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Changed
 
+- **A searchable, grouped list for the language and the region, and grouped language lists** (for
+  45 languages and more, and the right-to-left ones to come). In Settings, the language and the
+  region are chosen from a combobox (the WAI-ARIA pattern, no new library) instead of a plain
+  `select`: type to narrow it, by a language's own name or its English name (`german`, `deu` or
+  `deutsch` finds Deutsch; `turkce` finds Türkçe; `日本` finds 日本語), arrow keys, Page Up and Page Down, Enter
+  to choose, Escape to close and put the choice back; the number of matches and "No language
+  matches" are said to a screen reader and shown. Each language is named in itself with its English
+  name beside it, and the current one is marked (a check mark, and `aria-selected`). Languages are
+  grouped by the part of the world they are mostly spoken in (English first, then East Asia, Europe,
+  Middle East and North Africa, South Asia, Southeast Asia); regions by continent, named in the
+  page's language with the English name beside it, which the search finds too. The guides' "Shops
+  in", "Rules in" and similar region lists are the same list. The footer's folded language list and
+  the about page's full list are grouped under the same headings and laid out in columns that fit
+  the window (two at 320 px). Names are set in `<bdi>` and the styles use logical properties, so
+  Arabic and Urdu will mirror correctly. A group is a line in `lib/regions/groups.js`, which a
+  server test requires for every language and region. What is saved is unchanged (the language's
+  code, the region's code). English only: the headings and "No language matches" are translated
+  with the next wave.
 - **The privacy notice says what connecting an AI app means** (a new section, "Connecting an AI
   app", with the ADR 0024 notices): what is kept for each connected app (its name and address as
   it gives them, where it sends you back, what it may do, its dates, its codes and tokens only as

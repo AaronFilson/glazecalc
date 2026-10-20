@@ -466,6 +466,10 @@ The EU plan is built so that later regions add languages and data, not a new app
   link there also needs a route that works in China, such as an email address.
 - **The language picker.** At 60–80 languages it becomes a searchable list grouped by region, each language in its own
   name, never flags.
+  Built in round 6 (`client/app/shared/picker.ts`, an editable combobox with a listbox): the languages are grouped by
+  the part of the world they are mostly spoken in and the regions by continent (`lib/regions/groups.js`: a new
+  language or region needs a line there, which a server test requires), each found by its own name, its English name or
+  its code, accents ignored. The footer's and the about page's lists stay links, in the same groups and in columns.
 
 What the EU work should do now so this is cheap later: the right-to-left groundwork and the any-script parser (Phase 1),
 `intl-messageformat` for plurals, BCP 47 tags with room for scripts, and the region list as data rather than a fixed
