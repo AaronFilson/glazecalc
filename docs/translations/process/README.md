@@ -121,3 +121,21 @@ standard notice) and in wave.js, and their style sheets are docs/translations/zh
 Kong also reads), ko.md and zh-Hans.md, each with a table of the two-step sign-in words. They are written separately:
 zh-Hant is never converted from zh-Hans or the reverse (矽/硅). ko.md must hold no Chinese or Japanese characters
 except hanja a translator may use, since the hanja check allows every run of them it finds there.
+
+## Indian subcontinent and Arabic, Phase D: Arabic and Hindi (in preparation)
+
+The owner's decisions of 2026-10-20 (round 6): Arabic and Hindi first, then Urdu and Bengali, then the other Indic
+languages. `ar` (العربية, right to left) and `hi` (हिन्दी) are in lib/regions/languages.js (`live: false`, the standard
+notice) and in wave.js, whose research lines and notes replace the EU's. **Arabic** is Modern Standard Arabic, one page
+for more than 20 countries (Egypt's pages first, region `EG`): pan-Arab terms with the Mashriq's and the Maghreb's
+variants in the Notes, impersonal forms and verbal nouns where "you" would be masculine or feminine, all six CLDR plural
+forms (zero, one, two, few, many, other) in every plural message, and Latin units, formulas and trade names kept as the
+English writes them, left to right; its glossary rests on the shops' and makers' names, Arabic courses, ALECSO's
+unified dictionaries (the Arabization Coordination Bureau), the Arabic texts of the GSO and SFDA, Egypt's decrees and
+ES standards, and the UAE federal portal. **Hindi** is India's (region `IN`): आप, the studio potters' English loanwords
+first (ग्लेज़, फ्रिट) with CSTT's term in brackets where it differs, and `one` (which covers 0 and 1) and `other`; its
+glossary rests on the Indian shops, Hindi potters' usage, CSTT, NCERT's Hindi chemistry and BIS's Hindi titles. Both
+write the digits 0 to 9 only, never Arabic-Indic or Devanagari digits: the app writes each region's own digits and
+grouping (Arabic-Indic for Egypt, 0 to 9 for the UAE and the Maghreb, the Indian grouping 12,34,567) when it formats a
+number, and the numbers check reads 0 to 9. The style sheets are docs/translations/ar.md and hi.md. Neither goes live
+before the groundwork for right-to-left pages, digits, fonts and the numbers check (Phase A) and the regions (Phase C).

@@ -6,6 +6,9 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Added
 
+- **Groundwork for Arabic and Hindi** (not offered yet): Hindi joins Arabic as a known language (its pages exist,
+  unindexed), both with the standard notice, and the translation prompts know them: Modern Standard Arabic for every
+  Arab country, right to left, with six plural forms, and Hindi with आप and the potters' loanwords.
 - **Confirm before changes** (docs/adr/0025-confirm-before-changes.md). On Connected apps, an
   account can choose that changes from assistants, apps and access tokens wait for its approval:
   never (the default), only removals, or every change. It holds back an assistant that misbehaves
