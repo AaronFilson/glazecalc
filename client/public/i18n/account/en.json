@@ -270,6 +270,22 @@
         "saved": "Saved: dates are shown in Japanese eras."
       }
     },
+    "digits": {
+      "legend": "Digits",
+      "help": "The digits numbers are shown in. Some languages have their own, such as Arabic, Bengali and Hindi, and where you are decides which are usual. You can type numbers with either.",
+      "auto": {
+        "label": "As usual where you are",
+        "saved": "Saved: digits as usual where you are."
+      },
+      "western": {
+        "label": "Western digits, 0–9",
+        "saved": "Saved: numbers are shown with the digits 0–9."
+      },
+      "native": {
+        "label": "The language's own digits, where it has them",
+        "saved": "Saved: numbers are shown in the language's own digits, where it has them."
+      }
+    },
     "decimalMark": {
       "legend": "Typing amounts",
       "either": {

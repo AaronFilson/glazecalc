@@ -151,7 +151,8 @@ const PREFERENCE_COPIES = [
   'recipeHelp',
   'limitSet',
   'currency',
-  'calendar'
+  'calendar',
+  'digits'
 ];
 
 test('deletes the account from the account page, leaving no choices on this browser', async ({ page, request }) => {

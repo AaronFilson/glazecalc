@@ -181,6 +181,34 @@ describe('SettingsSection', () => {
     expect(thai(fixture)).toMatch(/· 8\/10\/69\)$/);
   });
 
+  it('offers digits as usual, 0–9 or the language’s own, each with an example, and saves the choice', async () => {
+    const fixture = TestBed.createComponent(SettingsSection);
+    await fixture.whenStable();
+    answer('/preferences', { format: 'ar-EG' });
+    await settle(fixture);
+    const egypt = () =>
+      (fixture.nativeElement.querySelector('#format option[value="ar-EG"]') as HTMLOptionElement).textContent
+        ?.replace(/\s+/g, ' ')
+        .trim();
+    // Arabic in Egypt writes Arabic-Indic digits as usual.
+    expect((fixture.nativeElement.querySelector('#digits-auto') as HTMLInputElement).checked).toBe(true);
+    expect(text(fixture, 'label[for="digits-auto"]')).toBe('As usual where you are (١٢٬٣٤٥٫٦)');
+    expect(text(fixture, 'label[for="digits-western"]')).toBe('Western digits, 0–9 (12,345.6)');
+    expect(text(fixture, 'label[for="digits-native"]')).toBe("The language's own digits, where it has them (١٢٬٣٤٥٫٦)");
+    expect(egypt()).toContain('١٢٬٣٤٥٫٦');
+    (fixture.nativeElement.querySelector('#digits-western') as HTMLInputElement).click();
+    await fixture.whenStable();
+    const req = httpMock().expectOne(API + '/preferences');
+    expect(req.request.method).toBe('PUT');
+    expect(req.request.body).toEqual({ digits: 'western' });
+    req.flush({ digits: 'western' });
+    await settle(fixture);
+    expect(text(fixture, '.settings-status')).toBe('Saved: numbers are shown with the digits 0–9.');
+    expect(localStorage.getItem('digits')).toBe('western');
+    // The formats' examples follow the choice.
+    expect(egypt()).toContain('12,345.6');
+  });
+
   it('says when the choice could not be saved, and shows the one still in place', async () => {
     const { fixture, radio } = await create();
     radio('g').click();

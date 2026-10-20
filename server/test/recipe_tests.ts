@@ -101,6 +101,49 @@ describe('Shared recipe tools', () => {
     expect(recipe.forTyping('12.5', 'either', 'de')).to.equal('12,5');
   });
 
+  it('reads Indian digit groups, native digits, the Arabic marks and the marks that keep a direction', () => {
+    // The marks Intl writes around a sign or a percent in Arabic: the Arabic letter mark, and left-to-right marks.
+    const ALM = String.fromCodePoint(0x61c);
+    const LRM = String.fromCodePoint(0x200e);
+    const RLM = String.fromCodePoint(0x200f);
+    const isolated = (text: string) => String.fromCodePoint(0x2066) + text + String.fromCodePoint(0x2069);
+    // A lakh, and Indian groups with a decimal point (en-IN, hi-IN, bn-BD).
+    expect(recipe.parseNumber('1,00,000')).to.equal(100000);
+    expect(recipe.parseNumber('12,34,567.5')).to.equal(1234567.5);
+    expect(recipe.parseNumber('1,23,45,67,890')).to.equal(1234567890);
+    expect(recipe.parseNumber('1,00,000', 'point')).to.equal(100000);
+    // Arabic-Indic digits with the Arabic thousands and decimal marks (ar-EG), and Extended ones (ur-IN).
+    expect(recipe.parseNumber('١٬٢٣٤٫٥')).to.equal(1234.5);
+    expect(recipe.parseNumber('۱٬۲۳۴٫۵')).to.equal(1234.5);
+    // Bengali and Devanagari digits in Indian groups.
+    expect(recipe.parseNumber('১২,৩৪,৫৬৭.৫')).to.equal(1234567.5);
+    expect(recipe.parseNumber('१,००,०००')).to.equal(100000);
+    // A sign or a percent among the marks that keep its direction, as Intl writes them.
+    expect(recipe.parseNumber(ALM + '-3')).to.equal(-3);
+    expect(recipe.parseNumber(ALM + '-٣')).to.equal(-3);
+    expect(recipe.parseNumber(LRM + '-' + LRM + '۳')).to.equal(-3);
+    expect(recipe.parseNumber(RLM + '12.5' + RLM)).to.equal(12.5);
+    expect(recipe.parseNumber(isolated('12,5'))).to.equal(12.5);
+    // A percentage reads as its number, the sign before or after it.
+    expect(recipe.parseNumber('٥٪')).to.equal(5);
+    expect(recipe.parseNumber('٥٪' + ALM)).to.equal(5);
+    expect(recipe.parseNumber('5' + LRM + '%' + LRM)).to.equal(5);
+    expect(recipe.parseNumber('%5')).to.equal(5);
+    expect(recipe.parseNumber('-%5')).to.equal(-5);
+    expect(recipe.parseNumber('7 %', 'either', 'fr')).to.equal(7);
+    // Not numbers: groups of two below the thousands, a sign alone, two signs, a sign inside.
+    for (const text of ['12,5,3', '1,000,00', '1,00,00', '12,34,567,5', '1.00.000', '%', '٪', '5%%', '5%5', '%-5']) {
+      expect(recipe.parseNumber(text), text).to.equal(null);
+    }
+    // One separator is still a decimal, or a thousand as the locale reads it, and Arabic's marks read as English's.
+    expect(recipe.parseNumber('1,00')).to.equal(1);
+    expect(recipe.parseNumber('1,250', 'either', 'ar-EG-u-nu-arab')).to.equal(1250);
+    expect(recipe.parseNumber('1,250', 'either', 'ar-MA')).to.equal(1.25);
+    expect(recipe.separators('ar-EG-u-nu-arab')).to.eql({ decimal: '.', group: ',' });
+    expect(recipe.forTyping('12.5', 'either', 'ar-EG-u-nu-arab')).to.equal('12.5');
+    expect(recipe.plainDigits(LRM + '-' + LRM + '۳ ١٢٫٥ १२')).to.equal('-3 12٫5 12');
+  });
+
   it('converts and writes temperatures in either scale', () => {
     expect(recipe.inScale(1240, 'F')).to.equal(2264);
     expect(recipe.temperatureText(1222, 'C')).to.equal('1222 °C');
