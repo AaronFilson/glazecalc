@@ -5,6 +5,7 @@ import {
   APP_PAGES,
   ENGLISH_ONLY_PAGES,
   ID_PAGES,
+  MATERIAL_PAGES,
   PUBLIC_PAGES,
   isAppOnlyPage,
   isEnglishOnlyPage,
@@ -13,11 +14,13 @@ import {
   looksLikeFile,
   ogLocale,
   pageHtml,
+  prerenderLanguages,
   prerenderedKey,
   sitemap,
   withNonce
 } from '../lib/pages.ts';
 import languages from '../../lib/regions/languages.js';
+import { materialSlug } from '../../lib/material-slug.js';
 import { base, expect, site } from './support/app.ts';
 
 // What search engines and link previews read before the app's script runs:
@@ -359,9 +362,16 @@ describe('pages in each language', () => {
       'utf8'
     );
     const pages = [...routes.matchAll(/^\s*path: '([^']*)'/gm)].map((m) => '/' + m[1]).filter((page) => page !== '/**');
-    // A page with an id in its address (/connect/:uid) is one of ID_PAGES.
-    expect([...APP_PAGES].sort()).to.eql(pages.filter((page) => !page.includes(':')).sort());
-    expect(Object.keys(ID_PAGES).sort()).to.eql(pages.filter((page) => page.includes(':')).sort());
+    // A page with an id in its address (/connect/:uid) is one of ID_PAGES; the one route of the standard
+    // materials' pages (/materials/:slug) stands for MATERIAL_PAGES, a page for each material in the data.
+    const ofMaterials = '/materials/:slug';
+    expect(pages).to.include(ofMaterials);
+    expect([...APP_PAGES].filter((page) => !MATERIAL_PAGES.includes(page)).sort()).to.eql(
+      pages.filter((page) => !page.includes(':')).sort()
+    );
+    expect(Object.keys(ID_PAGES).sort()).to.eql(
+      pages.filter((page) => page.includes(':') && page !== ofMaterials).sort()
+    );
   });
 
   it('knows the consent page by its id, as a private page in any language', () => {
@@ -406,12 +416,14 @@ describe('pages in each language', () => {
       '<url><loc>https://glazecalcapp.com/de/guides</loc><xhtml:link rel="alternate" hreflang="en" href="https://glazecalcapp.com/guides"/><xhtml:link rel="alternate" hreflang="de" href="https://glazecalcapp.com/de/guides"/></url>'
     );
     // Each public page once in each of the two languages, and a page in English only once.
-    expect(two.match(/<url>/g)).to.have.length((PUBLIC_PAGES.length - ENGLISH_ONLY_PAGES.length) * 2 + 1);
+    expect(two.match(/<url>/g)).to.have.length(
+      (PUBLIC_PAGES.length - ENGLISH_ONLY_PAGES.length) * 2 + ENGLISH_ONLY_PAGES.length
+    );
   });
 
   it('gives the guide in English only one address for search engines: the English, alone in the sitemap', () => {
     const page = '/guides/learn-with-john-britt';
-    expect(ENGLISH_ONLY_PAGES).to.eql([page]);
+    expect(ENGLISH_ONLY_PAGES).to.include(page);
     expect(PUBLIC_PAGES).to.include(page);
     expect(isEnglishOnlyPage('/de/guides/learn-with-john-britt')).to.equal(true);
     expect(isEnglishOnlyPage('/de/guides/firing')).to.equal(false);
@@ -440,6 +452,71 @@ describe('pages in each language', () => {
     expect(map).to.include('<url><loc>https://glazecalcapp.com/guides/learn-with-john-britt</loc></url>');
     expect(map).not.to.include('/de/guides/learn-with-john-britt');
     expect(map).not.to.match(/hreflang="[^"]*" href="[^"]*learn-with-john-britt"/);
+  });
+
+  describe('the reference pages: the cone chart, the materials and a page for each standard material', () => {
+    const names = fs
+      .readFileSync(path.join(import.meta.dirname, '..', '..', 'data', 'materials.ndjson'), 'utf8')
+      .split('\n')
+      .filter(Boolean)
+      .map((line) => (JSON.parse(line) as { name: string }).name);
+
+    it('has a page for each standard material, each at an address of its own', () => {
+      expect(MATERIAL_PAGES).to.have.length(names.length);
+      expect(new Set(MATERIAL_PAGES).size).to.equal(names.length);
+      for (const address of MATERIAL_PAGES) expect(address).to.match(/^\/materials\/[a-z0-9]+(-[a-z0-9]+)*$/);
+      expect(MATERIAL_PAGES).to.include('/materials/ferro-frit-3134');
+      expect(MATERIAL_PAGES).to.include('/materials/mondre-and-manz-frit-m-1233');
+      // The Japanese in a name is left out, and the Latin name before it stays.
+      expect(MATERIAL_PAGES).to.include('/materials/amakusa-pottery-stone');
+      expect(materialSlug('Lead, Red')).to.equal('lead-red');
+      expect(materialSlug('Tile #6 Kaolin')).to.equal('tile-6-kaolin');
+    });
+
+    it('lists them, the index and the cone chart among the public pages, in English only', () => {
+      for (const address of ['/cones', '/materials', ...MATERIAL_PAGES]) {
+        expect(PUBLIC_PAGES, address).to.include(address);
+        expect(ENGLISH_ONLY_PAGES, address).to.include(address);
+        expect(isPage(address), address).to.equal(true);
+        expect(isAppOnlyPage(address), address).to.equal(false);
+      }
+      // The signed-in page of your own materials is another address, and stays out of the index.
+      expect(PUBLIC_PAGES).not.to.include('/material');
+      expect(isAppOnlyPage('/material')).to.equal(true);
+      expect(isPage('/materials/no-such-material')).to.equal(false);
+    });
+
+    it('gives each one a single address for search engines, the English', () => {
+      const live = ['en', 'de'];
+      const english = pageHtml(HTML, '/materials/silica', SITE, {}, live, true);
+      expect(english).to.include('<link rel="canonical" href="https://glazecalcapp.com/materials/silica" />');
+      expect(english).not.to.include('noindex');
+      expect(english).not.to.include('hreflang');
+      const german = pageHtml(HTML, '/de/materials/silica', SITE, {}, live);
+      expect(german).to.include('<link rel="canonical" href="https://glazecalcapp.com/materials/silica" />');
+      expect(german).to.include('<meta name="robots" content="noindex" />');
+      expect(german).not.to.include('hreflang');
+    });
+
+    it('prerenders them in English only', () => {
+      const live = ['en', 'de', 'ja'];
+      for (const address of ['/cones', '/materials', '/materials/silica']) {
+        expect(prerenderedKey(address, live), address).to.equal('en' + address + '.html');
+        expect(prerenderedKey('/de' + address, live), address).to.equal(null);
+      }
+      // The guides in other languages are still rendered, the one in English only too.
+      expect(prerenderedKey('/de/guides/firing', live)).to.equal('de/guides/firing.html');
+      expect(prerenderLanguages('/materials/silica', live)).to.eql(['en']);
+      expect(prerenderLanguages('/guides/firing', live)).to.eql(live);
+    });
+
+    it('puts each in the sitemap once, at its English address', () => {
+      const map = sitemap(SITE, ['en', 'de']);
+      for (const address of ['/cones', '/materials', ...MATERIAL_PAGES]) {
+        expect(map, address).to.include(`<url><loc>https://glazecalcapp.com${address}</loc></url>`);
+        expect(map, address).not.to.include(`/de${address}</loc>`);
+      }
+    });
   });
 
   it('serves the sitemap, and sends /en/ addresses to the plain English ones', async () => {

@@ -62,6 +62,48 @@ export function article(
 }
 
 /**
+ * A reference page in English (a standard material's, the materials list, the cone chart): a WebPage
+ * of the site (https://schema.org/WebPage) and its trail of pages (https://schema.org/BreadcrumbList),
+ * which search results show in place of the address. `path` is the page's English address, such as
+ * /materials/silica: these pages have one address for search engines (lib/pages.js, ENGLISH_ONLY_PAGES).
+ * `crumbs` is the trail from the home page to this page, each { name, path }.
+ */
+export function referencePage(
+  name: string,
+  description: string,
+  path: string,
+  crumbs: ReadonlyArray<{ name: string; path: string }>,
+  type: 'WebPage' | 'CollectionPage' = 'WebPage'
+): object {
+  const address = SITE + path;
+  return {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': type,
+        '@id': address,
+        name,
+        description,
+        inLanguage: 'en',
+        url: address,
+        isPartOf: { '@type': 'WebSite', name: 'Glazecalc', url: SITE + '/' },
+        breadcrumb: { '@id': address + '#breadcrumb' }
+      },
+      {
+        '@type': 'BreadcrumbList',
+        '@id': address + '#breadcrumb',
+        itemListElement: crumbs.map((crumb, index) => ({
+          '@type': 'ListItem',
+          position: index + 1,
+          name: crumb.name,
+          item: SITE + crumb.path
+        }))
+      }
+    ]
+  };
+}
+
+/**
  * JSON for inside a script tag: a "<" is written as a Unicode escape, so no text in it can
  * close the tag or open a comment.
  */

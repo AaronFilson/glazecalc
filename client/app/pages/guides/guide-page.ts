@@ -7,6 +7,7 @@ import type { ConeSystem } from '../../core/preferences.service';
 import { coneSystemsIn, forConeSystem, readGuide } from './guide-document';
 import { GuideText } from './guide-text';
 import { GuideView } from './guide-view';
+import { REFERENCE_PAGES, ReferencePage } from './guides-page';
 
 /**
  * One of the guides for new potters, from its Markdown (guide-document.ts).
@@ -17,7 +18,7 @@ import { GuideView } from './guide-view';
   selector: 'gc-guide-page',
   imports: [GuideView, TranslocoDirective],
   template: `<ng-container *transloco="let t">
-    <gc-guide-view [guide]="guide()" [textLanguage]="source.language">
+    <gc-guide-view [guide]="guide()" [textLanguage]="source.language" [related]="related">
       @if (source.language) {
         <p class="guide-note">{{ t('guides.notTranslated') }}</p>
       }
@@ -36,7 +37,10 @@ import { GuideView } from './guide-view';
 })
 export class GuidePage {
   private readonly locale = inject(LocaleService);
-  protected readonly source: GuideText = inject(ActivatedRoute).snapshot.data['text'];
+  private readonly data = inject(ActivatedRoute).snapshot.data;
+  protected readonly source: GuideText = this.data['text'];
+  /** The reference pages the route names (data: { related: ['cones'] }). */
+  protected readonly related = ((this.data['related'] ?? []) as ReferencePage[]).map((name) => REFERENCE_PAGES[name]);
   /** The way the reader asked for here, instead of their own. */
   private readonly asked = signal<ConeSystem | null>(null);
   /** Orton cones, SK cones or temperature: the reader's (which follows Settings once the page is up), until they ask for another. */

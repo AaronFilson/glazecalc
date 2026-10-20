@@ -140,6 +140,7 @@ This is what Angular's own SSR package does. It is not a crazy idea; it is the u
 15. **A preview image per language,** with the tagline translated. Effort S.
 16. **Event replay,** if the timing check in item 13 shows people tapping before hydration finishes (decision 3). Effort S.
 17. **More public pages worth finding:** each Standard material (`/materials/<name>`: what it is, its oxides, its safety notes) and a cone chart. These are what potters search for; each would be prerendered the same way. Effort L (mostly content and translation).
+    **Built in English (2026-10-20):** `/materials` (the list), `/materials/<slug>` (one for each of the 170 standard materials, the slug made from the name by `lib/material-slug.js`) and `/cones` (Orton and SK). The addresses are plural to keep them apart from the signed-in `/material`. The page of a material says only what `data/materials.ndjson` holds and works the unity contribution out with `materialWeights`, as the recipe page does. All three are in `ENGLISH_ONLY_PAGES`, so the other languages' addresses show the English with a notice, are `noindex` with the English as canonical, and the build renders them in English alone (`prerenderLanguages` in `lib/pages.js`): 170 pages in each of 31 languages would only fill the disk. Their words are in `client/public/i18n/reference/en.json`; translating them, and taking them out of `ENGLISH_ONLY_PAGES`, is the later wave.
 
 ## Decisions for the owner
 
