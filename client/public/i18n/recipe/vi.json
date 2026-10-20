@@ -364,7 +364,7 @@
     "intro": "Như bản ghi của mỗi nguyên liệu nêu; các nguy hiểm của thư viện có sẵn đến từ phiếu an toàn hóa chất của nhà cung cấp.",
     "line": "<b>{names}:</b> {hazards}",
     "unknown": "{count, plural, other {Không có nguy hiểm nào được nêu cho {list}: hãy xem phiếu an toàn hóa chất đi kèm.}}",
-    "safety": "Các nguyên liệu men khô tạo bụi: đừng để bụi đó vào phổi bạn, kể cả bụi từ những nguyên liệu không được phân loại là nguy hiểm: xem <mixing>Pha trộn an toàn và thông gió</mixing>, và <home>Không gây ngộ độc cho gia đình bạn</home> nếu có trẻ em hoặc thú cưng ở gần. Khi phiếu an toàn hóa chất của một nguyên liệu nói nhiều hơn, hãy làm theo nó."
+    "safety": "Các nguyên liệu men khô tạo bụi, và bạn phải giữ cho bụi đó không vào phổi, kể cả bụi từ những nguyên liệu không được phân loại là nguy hiểm. Xem <mixing>Pha trộn an toàn và thông gió</mixing>. Nếu có trẻ em hoặc thú cưng ở gần, xem thêm <home>Không gây ngộ độc cho gia đình bạn</home>. Khi phiếu an toàn hóa chất của một nguyên liệu nói nhiều hơn, hãy làm theo nó."
   },
   "compare": {
     "heading": "So sánh hai công thức men",
@@ -533,7 +533,10 @@
     "suppliesShare": "{percent}% {oxide}",
     "suppliesLittle": "một ít men",
     "changed": "{name} {from} → {to}",
-    "added": "{name} {amount}, mới"
+    "added": "{name} {amount}, mới",
+    "why": {
+      "rawClay": "đất sét thô co lại khi men khô, và khi dùng nhiều, nó có thể nứt trên sản phẩm và gây cuốn men trong lò; cao lanh đã nung sơ bộ có thể bù phần còn lại"
+    }
   },
   "shelf": {
     "empty": "Không có nguyên liệu tôi có nào để khớp."
@@ -571,7 +574,8 @@
     "bands": {
       "low": "Nhiệt độ thấp, côn 06–02",
       "mid": "Nhiệt độ trung bình, côn 4–6",
-      "high": "Nhiệt độ cao, côn 9–11"
+      "high": "Nhiệt độ cao, côn 9–11",
+      "top": "Nhiệt độ rất cao, côn 12 trở lên"
     },
     "shownFor": "Khi chưa chọn lần nung, các số liệu hiển thị là cho: {band}. Lần nung được lưu cùng công thức men.",
     "cone": "Đây là các số liệu của bộ này cho côn {cone}.",
@@ -591,6 +595,7 @@
     "notInSet": "Bộ này không có khoảng cho {oxides}.",
     "checksOnly": "Bộ này chỉ kiểm tra {oxides}.",
     "notApply": "{name} không có số liệu cho lần nung này ({band}), nên không được kiểm tra: số liệu của lần nung khác sẽ gây hiểu lầm.",
+    "topNote": "Các giới hạn men đã công bố mà chúng tôi tìm thấy dừng ở côn 10, và Glazecalc đọc chúng không xa hơn côn 11, nên một lần nung từ côn 12 trở lên không được kiểm tra theo giới hạn. Mẫu thử men của bạn sẽ quyết định.",
     "guidance": "Đây là hướng dẫn tham khảo, không phải tiêu chí đạt hay không đạt: một loại men nằm ngoài chúng vẫn có thể ổn, và một loại nằm trong chúng vẫn có thể rạn nứt men, thôi nhiễm hoặc hỏng. Hãy thử nó.",
     "source": "Nguồn:",
     "saveFailed": "Không thể lưu lựa chọn bộ giới hạn của bạn vào tài khoản, nên bộ giới hạn trước đó vẫn đang được dùng.",
@@ -628,7 +633,8 @@
       "ash": "Glazecalc không thể so sánh hóa học của men này với việc nung của nó: nó có tro, mà thành phần thay đổi quá nhiều so với các số liệu đã công bố mà phép kiểm tra này dùng.",
       "noTemperature": "Glazecalc không thể so sánh hóa học của men này với {scale, select, band {{band, select, low {nhiệt độ thấp} mid {nhiệt độ trung bình} other {nhiệt độ cao}}} sk {SK {cone}} temperature {{cone} °C} other {côn {cone}}}: không có nhiệt độ đo được cho côn đó.",
       "between": "Glazecalc không thể so sánh hóa học của men này với {scale, select, band {{band, select, low {nhiệt độ thấp} mid {nhiệt độ trung bình} other {nhiệt độ cao}}} sk {SK {cone}} temperature {{cone} °C} other {côn {cone}}}: các số liệu đã công bố mà phép kiểm tra này dùng dành cho nhiệt độ thấp và cho nhiệt độ trung bình và cao, không phải các côn ở giữa (01 đến 3).",
-      "belowChart": "Glazecalc không thể so sánh hóa học của men này với {scale, select, band {{band, select, low {nhiệt độ thấp} mid {nhiệt độ trung bình} other {nhiệt độ cao}}} sk {SK {cone}} temperature {{cone} °C} other {côn {cone}}}: quy tắc bo của Katz dành cho côn 06 đến côn 10, và lần nung đó nguội hơn."
+      "belowChart": "Glazecalc không thể so sánh hóa học của men này với {scale, select, band {{band, select, low {nhiệt độ thấp} mid {nhiệt độ trung bình} other {nhiệt độ cao}}} sk {SK {cone}} temperature {{cone} °C} other {côn {cone}}}: quy tắc bo của Katz dành cho côn 06 đến côn 10, và lần nung đó nguội hơn.",
+      "aboveChart": "Glazecalc không thể so sánh hóa học của men này với {scale, select, band {{band, select, top {nhiệt độ rất cao} other {nhiệt độ cao}}} sk {SK {cone}} temperature {{cone} °C} other {côn {cone}}}: quy tắc bo của Katz dành cho côn 06 đến côn 10, các số liệu silica và alumina của Hesselberth & Roy dừng ở côn 10, và lần nung đó nóng hơn."
     }
   },
   "stull": {
@@ -979,7 +985,7 @@
     "approxTemperature": "≈ {temperature} ({basis}; gần đúng)",
     "approxCone": "≈ {cone} ({basis}; gần đúng)",
     "basis": {
-      "orton60": "côn Orton lớn ở 60 °C mỗi giờ",
+      "orton150": "bảng cũ của Orton cho côn lớn ở 150 °C mỗi giờ",
       "kyoto": "đo ở 100 °C mỗi giờ bởi viện nghiên cứu của thành phố Kyoto",
       "stated": "như đã nêu"
     },

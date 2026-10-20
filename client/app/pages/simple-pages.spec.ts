@@ -6,6 +6,7 @@ import { filter, firstValueFrom } from 'rxjs';
 import type { MockInstance } from 'vitest';
 import { App } from '../app';
 import { AuthService } from '../core/auth.service';
+import { LIVE_LANGUAGES } from '../../../lib/regions/languages';
 import { OFFERED_LANGUAGES } from '../i18n/language';
 import {
   answer,
@@ -107,9 +108,36 @@ describe('static pages', () => {
     expect(nav).not.toBeNull();
     expect(fixture.nativeElement.querySelector('#about-languages-heading')).not.toBeNull();
     const links = [...nav.querySelectorAll('li a')] as HTMLAnchorElement[];
-    expect(links.map((a) => a.getAttribute('href'))).toEqual(['/about', '/de/about', '/fr/about']);
-    expect(links.map((a) => a.getAttribute('lang'))).toEqual(['en', 'de', 'fr']);
-    expect(links.map((a) => a.textContent)).toEqual(['English', 'Deutsch', 'Français']);
+    // English first, then Europe's by English name (French before German).
+    expect(links.map((a) => a.getAttribute('href'))).toEqual(['/about', '/fr/about', '/de/about']);
+    expect(links.map((a) => a.getAttribute('lang'))).toEqual(['en', 'fr', 'de']);
+    expect(links.map((a) => a.getAttribute('hreflang'))).toEqual(['en', 'fr', 'de']);
+    expect(links.map((a) => a.textContent)).toEqual(['English', 'Français', 'Deutsch']);
+    expect(links[0]!.getAttribute('aria-current')).toBe('page');
+    expect(links[1]!.hasAttribute('aria-current')).toBe(false);
+  });
+
+  it('keeps the whole list on the about page at 45 languages and more, grouped by the part of the world, each group named', async () => {
+    // The live languages and the ones planned: Arabic, Hindi, Urdu, Bengali and the Indic wave.
+    const many = [...LIVE_LANGUAGES, 'ar', 'hi', 'ur', 'bn', 'ta', 'te', 'mr', 'gu', 'pa', 'ne', 'si', 'kn', 'ml'];
+    expect(many.length).toBeGreaterThan(44);
+    TestBed.overrideProvider(OFFERED_LANGUAGES, { useValue: many });
+    const { fixture } = await create(AboutPage);
+    const nav = fixture.nativeElement.querySelector('nav[aria-labelledby="about-languages-heading"]') as HTMLElement;
+    expect(nav.querySelectorAll('li a')).toHaveLength(many.length);
+    const names = [...nav.querySelectorAll('.language-group-name')].map((p) => p.textContent);
+    expect(names).toEqual(['East Asia', 'Europe', 'Middle East and North Africa', 'South Asia', 'Southeast Asia']);
+    // Each list is named by its heading, for a screen reader; English's has none.
+    const lists = [...nav.querySelectorAll('ul')];
+    expect(
+      lists.map(
+        (ul) =>
+          ul.getAttribute('aria-labelledby') &&
+          document.getElementById(ul.getAttribute('aria-labelledby')!)?.textContent
+      )
+    ).toEqual([null, 'East Asia', 'Europe', 'Middle East and North Africa', 'South Asia', 'Southeast Asia']);
+    // No heading level is added to the page's outline (a heading after the h2 would be one more to skip).
+    expect(nav.querySelectorAll('h1, h2, h3, h4, h5, h6')).toHaveLength(0);
   });
 
   it('leaves the language list off the about page while only English is offered', async () => {
@@ -132,7 +160,7 @@ describe('static pages', () => {
     );
     expect(names).toEqual(expect.arrayContaining(['visitor.language', 'region', 'printBatch', 'reloadedFor']));
     expect(names).toEqual(expect.arrayContaining(['__Host-glazecalc_oauth', 'glazecalc_oauth']));
-    expect(names.length).toBe(33);
+    expect(names.length).toBe(34);
     for (const row of rows) {
       const cells = [...row.querySelectorAll('td')].map((td) => td.textContent?.trim() ?? '');
       expect(cells.length).toBe(2);
@@ -417,6 +445,53 @@ describe('App', () => {
     await fixture.whenStable();
     expect(fixture.nativeElement.querySelector('.nav-account')).toBeNull();
     expect(fixture.nativeElement.querySelector('.nav-quick-signin')).toBeNull();
+  });
+
+  describe("the menu's Sign in and Create account links keep the page a sign-in is for (?next=)", () => {
+    @Component({ template: '<h1>Page</h1>' })
+    class Page {}
+    const CONNECT = '/connect/aB3_dE5-gH7iJ9kL1mN';
+    const linksAt = async (url: string) => {
+      TestBed.resetTestingModule();
+      TestBed.configureTestingModule({
+        providers: [...testProviders(), provideRouter([{ path: '**', component: Page }])]
+      });
+      const { fixture } = await create(App);
+      await TestBed.inject(Router).navigateByUrl(url);
+      await settle(fixture);
+      const href = (selector: string) =>
+        (fixture.nativeElement.querySelector(selector) as HTMLAnchorElement | null)?.getAttribute('href');
+      return {
+        signIn: href('.nav-account a:not(.btn)'),
+        signUp: href('.nav-account a.btn'),
+        quick: href('.nav-quick-signin')
+      };
+    };
+
+    it('carries a page of this site from the sign-in or sign-up page to both', async () => {
+      const carried = '?next=' + encodeURIComponent(CONNECT);
+      for (const page of ['/signin', '/signup']) {
+        expect(await linksAt(page + carried)).toEqual({
+          signIn: '/signin' + carried,
+          signUp: '/signup' + carried,
+          quick: '/signin' + carried
+        });
+      }
+    });
+
+    it('carries nothing where there is no ?next=, or it is not a page of this site', async () => {
+      const plain = { signIn: '/signin', signUp: '/signup', quick: '/signin' };
+      expect(await linksAt('/guides')).toEqual(plain);
+      for (const bad of [
+        '//evil.example/x',
+        '/\\evil.example',
+        'https://evil.example/',
+        'javascript:alert(1)',
+        '/signup'
+      ]) {
+        expect(await linksAt('/signin?next=' + encodeURIComponent(bad)), bad).toEqual(plain);
+      }
+    });
   });
 
   it('opens and closes the phone menu', async () => {

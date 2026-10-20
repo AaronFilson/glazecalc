@@ -100,6 +100,7 @@
   "limitSet-choices": "Scegliere hesselberth-roy o glazecalc.",
   "currency-choices": "Scegliere una delle valute dell’elenco, oppure lasciare che segua il paese.",
   "calendar-choices": "Le date possono essere mostrate nel calendario gregoriano (gregory), nell’era buddista thailandese (buddhist) o nelle ere giapponesi (japanese).",
+  "digits-choices": "Le cifre possono essere mostrate come d’uso dove si trova (auto), come 0–9 (western) o con le cifre proprie della lingua (native).",
   "shelf-invalid": "Lo scaffale è un elenco di al massimo {most} materiali.",
   "shelf-full": "Lo scaffale può contenere al massimo {most} materiali. Non è stato modificato nulla.",
   "shelf-material-unknown": "Quel materiale non è tra i Suoi materiali né nella biblioteca di Glazecalc.",

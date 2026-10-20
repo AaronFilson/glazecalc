@@ -66,8 +66,9 @@ The published evidence for reading the cone from the chemistry is thin:
   MnO + CuO + CoO + Fe2O3 + FeO over 0.5 (not a usual glaze's formula), raku, salt, soda, wood or
   pit firings, wood or plant ash among the materials (not bone ash, pearl ash or soda ash), the
   cones between low and mid fire (01 to 3, which neither band's figures fit), cones below 06
-  (Katz's chart starts there), and an SK cone with no measured temperature. Gerstley borate is
-  judged, and a "cooler" note says its boron varies from lot to lot.
+  (Katz's chart starts there), firings hotter than cone 10 (amended 2026-10-20, below), and an SK
+  cone with no measured temperature. Gerstley borate is judged, and a "cooler" note says its boron
+  varies from lot to lot.
 - **Never a pass.** With nothing pointing away, the line says the boron, silica and alumina "do
   not point away" from the firing and that this says nothing about whether the glaze is stable or
   food safe. Every note ends that it is a guide, not a test ("if it has fired well for you at this
@@ -81,6 +82,22 @@ The published evidence for reading the cone from the chemistry is thin:
   1305 °C. It now uses 1305 °C. Its other uses (the "too little boron" check at low fire and the
   boron target when replacing lead) ask for 0.01 more B2O3 than before: 0.49 at cone 04 rather
   than 0.48. ADR 0011 keeps its words as written then.
+
+- **Nothing past cone 10 (amended 2026-10-20, with ADR 0021's higher cones).** Katz's rule is
+  for cone 06 to 10 and asks for no boron at cone 10; Hesselberth & Roy's silica and alumina
+  stop at their cone 10 column. Past cone 10 the check would only be holding a cone 14 glaze to a
+  cone 10 glaze's figures, so it does not judge: an Orton cone above 10 (10½ up, with a figure or
+  without), an SK cone above SK 12 (Kyoto's own stand-in for Orton 10), a temperature above
+  1305 °C, or the `top` band chosen by hand say "can't compare" (`coneFit.skip.aboveChart`:
+  "Katz's boron rule is for cone 06 to cone 10, Hesselberth & Roy's silica and alumina figures
+  stop at cone 10, and that firing is hotter"). Before, cones 11 to 14 and temperatures to
+  1600 °C were judged as cone 10 (boron need 0), and Orton cones from 15 up said "no
+  temperature". One thing is still said for a range that starts within the figures and ends past
+  them (cone 9–11, 10–12): a glaze that looks cooler than its coolest cone looks cooler than every
+  cone of the range, so that note stands, judged at that end; anything else is not judged (no
+  "fits", no "closer"), since the hot end cannot be read. On the test set three Glazy rows stated
+  9–11, 9–11 and 9–12 go from "fits" to "can't judge"; no note changes. The Glazy measurement below
+  was taken before this: its "High (8–13)" row judged cones 11 to 13 as cone 10.
 
 ## Measured
 

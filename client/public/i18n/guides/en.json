@@ -52,6 +52,7 @@
     "emergency": "An emergency: unconscious, not breathing, a seizure",
     "poisonAdvice": "{who, select, children {Poison advice: {name} (children only)} other {Poison advice: {name}}}",
     "or": "or {number}",
+    "orCall": "or <link>{number}</link>",
     "online": "Online: <link>{name}</link>.",
     "poisonAdviceNone": "Poison advice",
     "noLine": "We could not confirm a public poison line here. Call your doctor, or the emergency number if it is urgent.",
@@ -61,8 +62,7 @@
     "vet": "Call your vet.",
     "checkedOn": "Checked on:",
     "choosePrompt": "Choose your country to see who to call there.",
-    "ministry": "The health ministry's page: <link>{name}</link>.",
-    "reported": "Official government pages list 113, 114 and 115, but not what each is for; the roles shown follow Circular 22/2014/TT-BTTTT, as secondary pages quote it."
+    "ministry": "The health ministry's page: <link>{name}</link>."
   },
   "density": {
     "sg": "SG {value}",
@@ -112,6 +112,10 @@
     "bandFromTo": "Dust with {from}% to {to}% free silica (SiO₂)",
     "bandOverTo": "Dust with more than {from}% and up to {to}% free silica",
     "bandAbove": "Dust with more than {from}% free silica",
+    "untilDate": "Until {date}",
+    "fromDate": "From {date}",
+    "beforeFormula": "Limit for respirable dust, where Q is the crystalline silica in it, in %",
+    "beforeAll": "For dust that is all crystalline silica",
     "recommended": "Recommended by {abbr}",
     "value": "{value} mg/m³",
     "kind": {
@@ -122,6 +126,7 @@
     },
     "setBy": "Set by <link>{law}</link>.",
     "from": "It applies from {date}.",
+    "beforeSetBy": "Until then, the limit is set by <link>{law}</link>.",
     "lowerThanEu": "Lower than the EU's binding limit of {value} mg/m³.",
     "sameAsEu": "The same as the EU's binding limit.",
     "recommendedBy": "{abbr} ({by}) recommends this value in its <link>{title}</link>. It is not law.",
@@ -184,7 +189,13 @@
       "vnMedium": "Deep pieces for holding food, from 1100 mL to under 3000 mL",
       "vnStorage": "Deep pieces for holding food, 3000 mL or more",
       "vnCooking": "Deep pieces for cooking",
-      "vnCups": "Cups and small bowls"
+      "vnCups": "Cups and small bowls",
+      "cnFlat": "Flat ware, 25 mm deep or less",
+      "cnSmall": "Small hollow ware, under 1.1 L, other than cups",
+      "cnLarge": "Large hollow ware, from 1.1 L to under 3 L",
+      "cnStorage": "Storage jars, 3 L or more",
+      "cnCups": "Cups, for water or drinks",
+      "cnCooking": "Cooking ware, for heating food"
     },
     "judged": {
       "average": "average of 6 pieces",
@@ -198,6 +209,8 @@
     "atMost": "A piece passes if it releases no more than the limit: the law says “at most”.",
     "ppm": "ppm here is milligrams per litre of the test solution (mg/L).",
     "unknown": "We have not yet confirmed the rules in {region}.",
+    "none": "There is no law in {region} that sets limits for the lead and cadmium a fired piece may release (checked {date}).",
+    "noneSource": "Source: <link>{law}</link>.",
     "choosePrompt": "Choose your country to see its rules."
   },
   "equivalents": {

@@ -54,7 +54,13 @@ const CATEGORY: Record<string, string> = {
   vnMedium: marker('guides.food.category.vnMedium'),
   vnStorage: marker('guides.food.category.vnStorage'),
   vnCooking: marker('guides.food.category.vnCooking'),
-  vnCups: marker('guides.food.category.vnCups')
+  vnCups: marker('guides.food.category.vnCups'),
+  cnFlat: marker('guides.food.category.cnFlat'),
+  cnSmall: marker('guides.food.category.cnSmall'),
+  cnLarge: marker('guides.food.category.cnLarge'),
+  cnStorage: marker('guides.food.category.cnStorage'),
+  cnCups: marker('guides.food.category.cnCups'),
+  cnCooking: marker('guides.food.category.cnCooking')
 };
 /** How a sample is judged. */
 const JUDGED: Record<NonNullable<FoodLimit['judged']>, string> = {
@@ -71,14 +77,24 @@ const JUDGED_OF: Record<NonNullable<FoodLimit['judged']>, string> = {
  * The limits on lead and cadmium a fired piece may release, in the reader's
  * region (lib/regions/food.js): its own rules, or in an EU member state
  * without its own, the EU's. Each kind of article with its limits, in the
- * law's own units, and the law, linked.
+ * law's own units, and the law, linked. Where an official page says there is
+ * no law with figures (Hong Kong), that is said, with the page.
  */
 @Component({
   selector: 'gc-food-limits',
   imports: [RegionSelect, RichText, SourceLinks, TranslocoDirective],
   template: `<ng-container *transloco="let t">
     <gc-region-select [choice]="choice" [label]="t('guides.food.rulesIn')" [prompt]="t('guides.poison.choose')" />
-    @if (found(); as found) {
+    @if (noLaw(); as rules) {
+      <p>
+        {{ t('guides.food.none', { region: regionName(), date: checked() }) }}
+        <gc-rich [text]="t('guides.food.noneSource', { law: rules.law })" [links]="{ link: rules.source }" />
+        @if (rules.note; as note) {
+          {{ words(note) }}
+        }
+      </p>
+      <gc-source-links [label]="t('guides.poison.checkedOn')" [urls]="[rules.source]" />
+    } @else if (found(); as found) {
       <div
         class="guide-table-scroll"
         tabindex="0"
@@ -159,6 +175,8 @@ export class FoodLimits {
   protected readonly judged = JUDGED;
   protected readonly judgedOf = JUDGED_OF;
   protected readonly found = computed(() => (this.region() ? foodRulesFor(this.region()) : null));
+  /** The page that says the region has no law with figures (Hong Kong's), in place of a table. */
+  protected readonly noLaw = computed(() => (this.found()?.rules.none ? this.found()!.rules : null));
   protected readonly checked = computed(() => earliest(this.found() ? [this.found()!.rules.checked] : []));
   /** Taiwan's law writes ppm: said once, under the table, as mg/L of the test solution. */
   protected readonly hasPpm = computed(() => (this.found()?.rules.limits ?? []).some((limit) => limit.unit === 'ppm'));

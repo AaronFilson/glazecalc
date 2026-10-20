@@ -364,7 +364,7 @@
     "intro": "So, wie der Datensatz jedes Rohstoffs sie angibt; die der Standardbibliothek stammen aus den Sicherheitsdatenblättern der Lieferanten.",
     "line": "<b>{names}:</b> {hazards}",
     "unknown": "{count, plural, one {Für {list} sind keine Gefahren angegeben: Lesen Sie das Sicherheitsdatenblatt, das dazugehört.} other {Für {list} sind keine Gefahren angegeben: Lesen Sie die Sicherheitsdatenblätter, die dazugehören.}}",
-    "safety": "Trockene Glasurrohstoffe erzeugen Staub: Halten Sie ihn aus Ihrer Lunge heraus, auch Staub von Rohstoffen, die nicht als gefährlich eingestuft sind. Lesen Sie <mixing>Sicheres Anmischen und Lüften</mixing> und, wenn Kinder oder Haustiere in der Nähe sind, <home>Vergiften Sie Ihre Familie nicht</home>. Wo das Sicherheitsdatenblatt eines Rohstoffs mehr sagt, befolgen Sie es."
+    "safety": "Trockene Glasurrohstoffe erzeugen Staub, und Sie müssen ihn aus Ihrer Lunge heraushalten, auch Staub von Rohstoffen, die nicht als gefährlich eingestuft sind. Lesen Sie <mixing>Sicheres Anmischen und Lüften</mixing> und, wenn Kinder oder Haustiere in der Nähe sind, <home>Vergiften Sie Ihre Familie nicht</home>. Wo das Sicherheitsdatenblatt eines Rohstoffs mehr sagt, befolgen Sie es."
   },
   "compare": {
     "heading": "Zwei Rezepte vergleichen",
@@ -533,7 +533,10 @@
     "suppliesShare": "{oxide} zu {percent} %",
     "suppliesLittle": "einen kleinen Teil der Glasur",
     "changed": "{name} {from} → {to}",
-    "added": "{name} {amount}, neu"
+    "added": "{name} {amount}, neu",
+    "why": {
+      "rawClay": "ungebrannter Ton schwindet, wenn die Glasur trocknet, und mit viel davon kann sie auf dem Stück reißen und im Ofen abrollen; kalzinierter Kaolin kann den Rest ausmachen"
+    }
   },
   "shelf": {
     "empty": "Es sind keine Rohstoffe vorrätig, mit denen nachgebaut werden könnte."
@@ -571,7 +574,8 @@
     "bands": {
       "low": "Niedriger Brennbereich, Kegel 06–02",
       "mid": "Mittlerer Brennbereich, Kegel 4–6",
-      "high": "Hoher Brennbereich, Kegel 9–11"
+      "high": "Hoher Brennbereich, Kegel 9–11",
+      "top": "Sehr hoher Brennbereich, ab Kegel 12"
     },
     "shownFor": "Ist kein Brand gewählt, gelten die angezeigten Werte für: {band}. Der Brand wird mit dem Rezept gespeichert.",
     "cone": "Das sind die Werte der Tabelle für Kegel {cone}.",
@@ -591,6 +595,7 @@
     "notInSet": "Diese Tabelle hat keinen Bereich für {oxides}.",
     "checksOnly": "Diese Tabelle prüft nur {oxides}.",
     "notApply": "{name} hat keine Werte für diesen Brand ({band}) und prüft ihn deshalb nicht: Werte für einen anderen Brand würden in die Irre führen.",
+    "topNote": "Die veröffentlichten Grenzwerte für Glasuren, die wir gefunden haben, enden bei Kegel 10, und Glazecalc liest sie nicht über Kegel 11 hinaus, deshalb wird ein Brand ab Kegel 12 nicht anhand von Grenzwerten geprüft. Ihre Probeplättchen entscheiden.",
     "guidance": "Das sind Richtwerte, kein Urteil über „bestanden“ oder „nicht bestanden“: Eine Glasur außerhalb davon kann in Ordnung sein, und eine innerhalb kann trotzdem Haarrisse bekommen, Metalle abgeben oder versagen. Testen Sie sie.",
     "source": "Quelle:",
     "saveFailed": "Ihre Wahl der Grenzwerttabelle konnte nicht in Ihrem Konto gespeichert werden, deshalb gilt weiterhin die vorherige Grenzwerttabelle.",
@@ -628,7 +633,8 @@
       "ash": "Glazecalc kann die Chemie dieser Glasur nicht mit ihrem Brand vergleichen: Sie enthält Asche, deren Zusammensetzung zu stark schwankt für die veröffentlichten Werte, die diese Prüfung verwendet.",
       "noTemperature": "Glazecalc kann die Chemie dieser Glasur nicht mit {scale, select, band {{band, select, low {dem niedrigen Brennbereich} mid {dem mittleren Brennbereich} other {dem hohen Brennbereich}}} sk {SK {cone}} temperature {{cone} °C} other {Kegel {cone}}} vergleichen: Für diesen Kegel gibt es keine gemessene Temperatur.",
       "between": "Glazecalc kann die Chemie dieser Glasur nicht mit {scale, select, band {{band, select, low {dem niedrigen Brennbereich} mid {dem mittleren Brennbereich} other {dem hohen Brennbereich}}} sk {SK {cone}} temperature {{cone} °C} other {Kegel {cone}}} vergleichen: Die veröffentlichten Werte, die diese Prüfung verwendet, gelten für den niedrigen Brennbereich und für den mittleren und hohen Brennbereich, nicht für die Kegel dazwischen (01 bis 3).",
-      "belowChart": "Glazecalc kann die Chemie dieser Glasur nicht mit {scale, select, band {{band, select, low {dem niedrigen Brennbereich} mid {dem mittleren Brennbereich} other {dem hohen Brennbereich}}} sk {SK {cone}} temperature {{cone} °C} other {Kegel {cone}}} vergleichen: Katz’ Borregel gilt für Kegel 06 bis Kegel 10, und dieser Brand ist kühler."
+      "belowChart": "Glazecalc kann die Chemie dieser Glasur nicht mit {scale, select, band {{band, select, low {dem niedrigen Brennbereich} mid {dem mittleren Brennbereich} other {dem hohen Brennbereich}}} sk {SK {cone}} temperature {{cone} °C} other {Kegel {cone}}} vergleichen: Katz’ Borregel gilt für Kegel 06 bis Kegel 10, und dieser Brand ist kühler.",
+      "aboveChart": "Glazecalc kann die Chemie dieser Glasur nicht mit {scale, select, band {{band, select, top {dem sehr hohen Brennbereich} other {dem hohen Brennbereich}}} sk {SK {cone}} temperature {{cone} °C} other {Kegel {cone}}} vergleichen: Katz’ Borregel gilt für Kegel 06 bis Kegel 10, die Werte von Hesselberth & Roy für Kieselsäure und Tonerde enden bei Kegel 10, und dieser Brand ist heißer."
     }
   },
   "stull": {
@@ -979,7 +985,7 @@
     "approxTemperature": "≈ {temperature} ({basis}; ungefähr)",
     "approxCone": "≈ {cone} ({basis}; ungefähr)",
     "basis": {
-      "orton60": "große Ortonkegel bei 60 °C pro Stunde",
+      "orton150": "Ortons ältere Tabelle für Normalkegel bei 150 °C pro Stunde",
       "kyoto": "gemessen bei 100 °C pro Stunde vom städtischen Institut in Kyoto",
       "stated": "wie angegeben"
     },

@@ -19,12 +19,13 @@ export interface ShelfMatch {
 /**
  * The recipe made from the materials on the shelf only, on the old batch's
  * total, so colorants keep their share of it. Materials marked "must use"
- * stay in; names in `avoid` are left out.
+ * stay in; names in `avoid` are left out; raw clays in `uncapped` may go past
+ * the 20% the match holds raw clay to.
  */
 export function matchFromShelf(
   lines: RecipeMaterial[],
   shelf: TryMaterial[],
-  options: { avoid?: string[]; additives?: Additive[] } = {}
+  options: { avoid?: string[]; additives?: Additive[]; uncapped?: string[] } = {}
 ): ShelfMatch {
   let match: shelfLib.ShelfMatch<RecipeMaterial>;
   try {

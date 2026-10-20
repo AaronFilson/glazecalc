@@ -270,6 +270,22 @@
         "saved": "Issejvjat: id-dati jidhru fl-ere Ġappuniżi."
       }
     },
+    "digits": {
+      "legend": "Ċifri",
+      "help": "Iċ-ċifri li bihom jidhru n-numri. Xi lingwi għandhom iċ-ċifri tagħhom, bħall-Għarbi, il-Bengali u l-Ħindi, u l-post fejn tkun jiddeċiedi liema huma tas-soltu. Tista’ tikteb in-numri bil-waħda jew bl-oħra.",
+      "auto": {
+        "label": "Kif tas-soltu fejn tkun",
+        "saved": "Issejvjat: iċ-ċifri kif tas-soltu fejn tkun."
+      },
+      "western": {
+        "label": "Ċifri tal-Punent, 0–9",
+        "saved": "Issejvjat: in-numri jidhru biċ-ċifri 0–9."
+      },
+      "native": {
+        "label": "Iċ-ċifri tal-lingwa stess, fejn għandha",
+        "saved": "Issejvjat: in-numri jidhru biċ-ċifri tal-lingwa stess, fejn għandha."
+      }
+    },
     "decimalMark": {
       "legend": "Il-kitba tal-ammonti",
       "either": {

@@ -81,7 +81,7 @@ Tugann an tábla {{2232 °F; 1222 °C}} do chón 6 féintacaithe, ach amháin nu
 
 ## An tábla cón {#cone-chart}
 
-Is ó thábla cón{{en: cone}} Orton (©2001) do chóin fhéintacaithe na figiúirí seo. Roghnaigh an colún atá ag teacht le luas ardaithe d’áithe thar an {{180 °F; 100 °C}} deiridh. Is é riail ordóige Orton: an colún {{270 °F/h; 150 °C/h}} do bhácáil thapa, an colún {{108 °F/h; 60 °C/h}} do bhácáil mheánach agus an colún {{27 °F/h; 15 °C/h}} do bhácáil mhall. Chun ráta a oibriú amach, roinn an méid a d’ardaigh an teocht ar líon na n-uaireanta a thóg sé: tá áith a ardaíonn {{900 °F; 500 °C}} i gceann 3 huaire an chloig ag téamh ag thart ar {{300 °F/h; 167 °C/h}}.
+Is ó thábla cón{{en: cone}} Orton (©2001) do chóin fhéintacaithe na figiúirí seo; is ó na táblaí a fhoilsíonn Orton anois a thagann cóin 11 go 14: tugann siad na figiúirí céanna san áit a bhforluíonn siad, agus ní thugann siad cóin 13 agus 14 ach i °C (is tiontú é an °F anseo dóibh). Roghnaigh an colún atá ag teacht le luas ardaithe d’áithe thar an {{180 °F; 100 °C}} deiridh. Is é riail ordóige Orton: an colún {{270 °F/h; 150 °C/h}} do bhácáil thapa, an colún {{108 °F/h; 60 °C/h}} do bhácáil mheánach agus an colún {{27 °F/h; 15 °C/h}} do bhácáil mhall. Chun ráta a oibriú amach, roinn an méid a d’ardaigh an teocht ar líon na n-uaireanta a thóg sé: tá áith a ardaíonn {{900 °F; 500 °C}} i gceann 3 huaire an chloig ag téamh ag thart ar {{300 °F/h; 167 °C/h}}.
 
 Table: Cóin fhéintacaithe Orton: an teocht a lúbann gach ceann aici, de réir an ráta téimh thar an {{180 °F; 100 °C}} deiridh
 Label: Tábla cón Orton
@@ -108,8 +108,14 @@ Label: Tábla cón Orton
 | 8   |       {{2212 °F; 1211 °C}} |           {{2280 °F; 1249 °C}} |         {{2320 °F; 1271 °C}} |
 | 9   |       {{2235 °F; 1224 °C}} |           {{2300 °F; 1260 °C}} |         {{2336 °F; 1280 °C}} |
 | 10  |       {{2284 °F; 1251 °C}} |           {{2345 °F; 1285 °C}} |         {{2381 °F; 1305 °C}} |
+| 11  |       {{2322 °F; 1272 °C}} |           {{2361 °F; 1294 °C}} |         {{2399 °F; 1315 °C}} |
+| 12  |       {{2345 °F; 1285 °C}} |           {{2383 °F; 1306 °C}} |         {{2419 °F; 1326 °C}} |
+| 13  |       {{2390 °F; 1310 °C}} |           {{2428 °F; 1331 °C}} |         {{2458 °F; 1348 °C}} |
+| 14  |       {{2464 °F; 1351 °C}} |           {{2489 °F; 1365 °C}} |         {{2523 °F; 1384 °C}} |
 
 Léiríonn dais figiúr nár cóipeáladh anseo; féach tábla iomlán Orton chun é a fháil.
+
+Déanann Orton cóin suas go 42 le haghaidh oibre ardteochta, ach ní fhoilsíonn sé teochtaí ach suas go cón 14; maidir le cóin níos teo, tá a tháblaí “ar fáil (ach iad a iarraidh)”. Tugann tábla níos sine de chuid Orton, mar a athchlónn déantóirí áitheanna é, {{2608 °F; 1431 °C}} do chón mór 15 ag {{270 °F/h; 150 °C/h}}, agus níor aimsíomar aon fhigiúr foilsithe do chón 16 ná do chón níos teo. Thar chón 14, cuir cóin fhianaise isteach agus lean iad, agus seiceáil go sroicheann an teocht uasta a luann déantóir d’áithe an teas sin.
 
 Bíonn cóin mhóra laistigh de chúpla céim de na figiúirí seo: lúbann cón mór 6 ag {{2228 °F; 1220 °C}} nuair a ardaíonn an teocht ag {{108 °F/h; 60 °C/h}}. Ní thugtar cóin bheaga, an cineál a úsáidtear i Kiln-Sitter, ach ag {{540 °F/h; 300 °C/h}}, agus mar sin tugann an tábla {{2291 °F; 1255 °C}} do chón beag 6. Ní hí sin an teocht a mhúchann Kiln-Sitter an áith aici. Is é an fheidhm atá ag cón an Kiln-Sitter ná teacht le cón na seilfe, agus is ag cón na seilfe atá an focal deiridh.
 
@@ -298,6 +304,8 @@ Anseo téann na huimhreacha ó SK 022, an ceann is fuaire, go SK 20. Idir SK 015
 
 Cuir gach cón mór i bplaic nó i gcnap cré, claonta i dtreo a thaoibh lúbtha. Mar is amhlaidh le haon chón, coinnigh an airde agus an claonadh mar an gcéanna ó bhácáil go bácáil, mar athraíonn difríocht i gceachtar acu cé chomh fada a lúbann sé. Cuir trí chón an phaca{{en: cone pack}} (thíos) le chéile, i bhfad isteach san áith gar do lár an lochta, áit a bhfaigheann siad an teas a fhaigheann na píosaí, ach áit ar féidir leat iad a fheiceáil trí pholl faire; sula ndúnann tú an áith, seiceáil gur féidir leat na trí cinn a fheiceáil.
 
+Níor aimsíomar aon treoracha ó dhéantóir ná ó dhíoltóir faoi cé chomh domhain ná cén uillinn ar cheart cóin SK a shuíomh. Is é an rud is gaire dó sin caighdeán saotharlainne, JIS R 2204, tástáil na Seapáine ar an méid teasa a sheasann ábhar teasfhulangach: suíonn sé gach cón SK agus a aghaidh mharcáilte ag 80° le seastán cothrom agus a bhun thart ar 4 mm isteach ann. Is tástáil é sin d’ábhair theasfhulangacha, ní riail do photaí a bhácáil, agus léamar é i dtras-scríbhinn den chaighdeán, ní sa chaighdeán féin.
+
 ### Cón treorach, cón bácála agus cón cosanta
 
 Díoltar agus cuirtear cóin ina dtrí cinn: cón treorach, cón bácála ag an sprioc, agus cón cosanta. Glac mar chón bácála an uimhir SK a ainmníonn d’oideas nó do chré, mar chón treorach an chéad chón eile atá níos fuaire (an ró díreach os a chionn sa tábla), agus mar chón cosanta an chéad cheann eile atá níos teo. Nuair a thosaíonn an cón treorach ag lúbadh, tá an deireadh gar; nuair a lúbann an cón cosanta, tá an bhácáil imithe rófhada.
@@ -366,6 +374,8 @@ Díoltar cóin fhéintacaithe Orton sa tSeapáin faoin ainm 立つゼーゲル (
 
 - [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (an tábla SK, seiceáilte 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
 - [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (i bhfeidhm, athdhearbhaithe 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
+- [JSA: JIS R 2204:1999, 耐火物及び耐火物原料の耐火度試験方法 (i bhfeidhm, athdhearbhaithe 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+2204:1999)
+- [kikakurui.com: tras-scríbhinn de JIS R 2204:1999, ina socraíonn clásal 5 a) na cóin (léite 2026-10-19)](https://kikakurui.com/r2/R2204-1999-01.html)
 - [Institiúid Bhardasach Teicneolaíochta Tionscail agus Cultúir Kyoto: pointí le tabhairt faoi deara agus tú ag aistriú ó chóin Kyoto go cóin Orton](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
 
 :::
@@ -607,7 +617,7 @@ Maidir leis an seomra a aeráil, agus le haláraim aonocsaíde carbóin, féach 
 ### Le linn don áith a bheith ag bácáil
 
 - Ná féach trí pholl faire ach le spéaclaí táthúcháin scáth 3 atá rátáilte do IR; ní leor spéaclaí gréine. Molann Skutt na dalláin a chasadh isteach ina n-áit ionas nach dtitfidh siad amach.
-- Ná fág an áith gan aire thar an am bácála a bhfuiltear ag súil leis; ní cosaint shlánchinnte é Kiln-Sitter.
+- Fan in aice láimhe agus seiceáil an áith agus í ag bácáil, go háirithe gar don am críochnaithe a bhfuiltear ag súil leis; ní cosaint shlánchinnte é Kiln-Sitter. Ná bácáil ach nuair a bheidh duine fásta sa bhaile agus ina dhúiseacht tríd an mbácáil ar fad.
 - Ná bácáil riamh ar aon rud indóite ná in aice leis, mar shampla urlár adhmaid nó cairpéad.
 - Coinnigh an glanspás a thugann do lámhleabhar. Téann na figiúirí foilsithe ó 12 orlach (30 cm) go 3 troithe (91 cm); mura ndeir an lámhleabhar tada, is é 18 n-orlach (46 cm) ó bhallaí agus 3 troithe (91 cm) ó aon rud indóite an rogha is sábháilte.
 - Coinnigh an spás timpeall ar mheáchan an Kiln-Sitter glan, ionas gur féidir leis titim.

@@ -42,6 +42,7 @@ export const shareAddress = (secret: string, origin = globalThis.location?.origi
               class="form-control"
               readonly
               translate="no"
+              dir="ltr"
               [id]="'share-address-' + recipeId()"
               [value]="address"
               [attr.aria-describedby]="'share-once-' + recipeId()"

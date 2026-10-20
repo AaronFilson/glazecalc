@@ -81,7 +81,7 @@ Keilataulukko antaa itsestään seisovalle keilalle 6 lämpötilan {{2232 °F; 1
 
 ## Keilataulukko {#cone-chart}
 
-Nämä luvut ovat Ortonin keilataulukosta (©2001) itsestään seisoville keiloille{{en: cones}}. Valitse sarake sen mukaan, kuinka nopeasti uunin lämpötila nousi polton viimeiset {{180 °F; 100 °C}}. Ortonin nyrkkisääntö on sarake {{270 °F/h; 150 °C/h}} nopealle poltolle, sarake {{108 °F/h; 60 °C/h}} keskinopealle ja sarake {{27 °F/h; 15 °C/h}} hitaalle. Nousunopeus lasketaan jakamalla lämpötilan nousu siihen kuluneilla tunneilla: uuni, jonka lämpötila nousee 3 tunnissa {{900 °F; 500 °C}}, lämpenee noin nopeudella {{300 °F/h; 167 °C/h}}.
+Nämä luvut ovat Ortonin keilataulukosta (©2001) itsestään seisoville keiloille{{en: cones}}; keilat 11–14 ovat Ortonin nykyisin julkaisemista taulukoista, jotka antavat päällekkäisiltä osin samat luvut, ja keilat 13 ja 14 vain °C-asteina (niiden °F-arvot on tässä muunnettu). Valitse sarake sen mukaan, kuinka nopeasti uunin lämpötila nousi polton viimeiset {{180 °F; 100 °C}}. Ortonin nyrkkisääntö on sarake {{270 °F/h; 150 °C/h}} nopealle poltolle, sarake {{108 °F/h; 60 °C/h}} keskinopealle ja sarake {{27 °F/h; 15 °C/h}} hitaalle. Nousunopeus lasketaan jakamalla lämpötilan nousu siihen kuluneilla tunneilla: uuni, jonka lämpötila nousee 3 tunnissa {{900 °F; 500 °C}}, lämpenee noin nopeudella {{300 °F/h; 167 °C/h}}.
 
 Table: Ortonin itsestään seisovat keilat: lämpötila, jossa kukin taipuu, polton viimeisten {{180 °F; 100 °C}} nousunopeuden mukaan
 Label: Ortonin keilataulukko
@@ -108,8 +108,14 @@ Label: Ortonin keilataulukko
 | 8     |        {{2212 °F; 1211 °C}} |              {{2280 °F; 1249 °C}} |          {{2320 °F; 1271 °C}} |
 | 9     |        {{2235 °F; 1224 °C}} |              {{2300 °F; 1260 °C}} |          {{2336 °F; 1280 °C}} |
 | 10    |        {{2284 °F; 1251 °C}} |              {{2345 °F; 1285 °C}} |          {{2381 °F; 1305 °C}} |
+| 11    |        {{2322 °F; 1272 °C}} |              {{2361 °F; 1294 °C}} |          {{2399 °F; 1315 °C}} |
+| 12    |        {{2345 °F; 1285 °C}} |              {{2383 °F; 1306 °C}} |          {{2419 °F; 1326 °C}} |
+| 13    |        {{2390 °F; 1310 °C}} |              {{2428 °F; 1331 °C}} |          {{2458 °F; 1348 °C}} |
+| 14    |        {{2464 °F; 1351 °C}} |              {{2489 °F; 1365 °C}} |          {{2523 °F; 1384 °C}} |
 
 Viiva tarkoittaa lukua, jota ei ole kopioitu tähän; se löytyy Ortonin koko keilataulukosta.
+
+Orton valmistaa korkean lämpötilan käyttöön keiloja keilaan 42 asti, mutta julkaisee lämpötiloja vain keilaan 14 asti; kuumempien keilojen taulukot ovat sen mukaan ”saatavilla (pyynnöstä)”. Ortonin vanhempi taulukko, sellaisena kuin uunivalmistajat sitä julkaisevat uudelleen, antaa isolle keilalle 15 lämpötilan {{2608 °F; 1431 °C}} nopeudella {{270 °F/h; 150 °C/h}}, emmekä löytäneet julkaistua lukua keilalle 16 tai sitä kuumemmille. Keilaa 14 kuumemmissa poltoissa aseta tarkkailukeilat ja toimi niiden mukaan, ja tarkista, että valmistajan ilmoittama uunin enimmäislämpötila yltää niin korkealle.
 
 Isojen keilojen lukemat poikkeavat näistä luvuista enintään muutaman asteen: iso keila 6 taipuu nousunopeudella {{108 °F/h; 60 °C/h}} lämpötilassa {{2228 °F; 1220 °C}}. Pienet keilat, joita käytetään Kiln-Sitter-katkaisimessa{{en: kiln sitter}}, on taulukoitu vain nopeudelle {{540 °F/h; 300 °C/h}}, joten taulukko antaa pienelle keilalle 6 lämpötilan {{2291 °F; 1255 °C}}. Se ei ole lämpötila, jossa katkaisin sammuttaa uunin. Katkaisimen keilan tehtävä on vastata uunilevyn keilaa, ja uunilevyn keila ratkaisee lopullisesti.
 
@@ -298,6 +304,8 @@ Numerot alkavat tässä viileimmästä keilasta SK 022 ja päättyvät keilaan S
 
 Aseta jokainen iso keila keilapidikkeeseen tai savipetiin kallelleen kohti taipumispuoltaan. Kuten minkä tahansa keilan kohdalla, pidä korkeus ja kallistus samoina poltosta toiseen, koska ero kummassa tahansa muuttaa sitä, kuinka pitkälle keila taipuu. Aseta keilasarjan{{en: cone pack}} kolme keilaa (katso alempaa) yhdessä syvälle uuniin, lähelle uunillisen keskikohtaa, jossa ne saavat saman lämmön kuin esineet, mutta kuitenkin tirkistysaukosta näkyviin; varmista ennen uunin sulkemista, että näet kaikki kolme.
 
+Emme löytäneet valmistajan tai myyjän ohjeita siitä, kuinka syvälle tai missä kulmassa SK-keilat asetetaan. Lähimpänä on laboratoriostandardi JIS R 2204, Japanin testi sille, kuinka paljon lämpöä tulenkestävä materiaali kestää: siinä jokainen SK-keila asetetaan niin, että sen merkitty puoli on 80° kulmassa tasaiseen alustaan nähden ja sen jalka on noin 4 mm alustan sisässä. Se on tulenkestävien materiaalien testi, ei sääntö esineiden polttamiseen, ja luimme sen standardin jäljennöksestä, emme itse standardista.
+
 ### Ennakko-, tavoite- ja varmistuskeila
 
 Keiloja myydään ja asetetaan kolmen sarjoina: ennakkokeila, tavoitekeila tavoitelämpötilaan ja varmistuskeila. Valitse tavoitekeilaksi se SK-numero, jonka resepti tai savi ilmoittaa, ennakkokeilaksi yhtä numeroa viileämpi keila (taulukossa yhtä riviä ylempänä) ja varmistuskeilaksi yhtä numeroa kuumempi. Kun ennakkokeila alkaa taipua, loppu on lähellä; kun varmistuskeila taipuu, poltto on mennyt liian pitkälle.
@@ -366,6 +374,8 @@ Ortonin itsestään seisovia keiloja myydään Japanissa nimellä 立つゼー�
 
 - [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (SK-taulukko, tarkistettu 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
 - [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (voimassa, vahvistettu uudelleen 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
+- [JSA: JIS R 2204:1999, 耐火物及び耐火物原料の耐火度試験方法 (voimassa, vahvistettu uudelleen 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+2204:1999)
+- [kikakurui.com: standardin JIS R 2204:1999 jäljennös, jonka kohta 5 a) määrää keilojen asettamisen (luettu 2026-10-19)](https://kikakurui.com/r2/R2204-1999-01.html)
 - [Kyoto Municipal Institute of Industrial Technology and Culture: huomioitavaa siirryttäessä Kioton keiloista Orton-keiloihin](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
 
 :::
@@ -607,7 +617,7 @@ Huoneen tuuletuksesta ja häkävaroittimista kerrotaan oppaissa [Turvallinen sek
 ### Uunin ollessa päällä
 
 - Katso tirkistysaukosta vain IR-suojatuilla hitsauslaseilla, tummuusaste 3; aurinkolasit eivät riitä. Skutt neuvoo kiertämään tulpat paikoilleen, jotta ne eivät putoa.
-- Älä jätä uunia valvomatta odotetun polttoajan jälkeen; Kiln-Sitter ei ole vikaturvallinen varmistus.
+- Pysy lähellä ja tarkista uuni polton aikana, etenkin lähellä odotettua päättymisaikaa; Kiln-Sitter ei ole vikaturvallinen varmistus. Polta vain, kun kotona on aikuinen, joka on hereillä koko polton ajan.
 - Älä koskaan käytä uunia palavan materiaalin, kuten puulattian tai maton, päällä tai lähellä.
 - Noudata käyttöohjeen suojaetäisyyksiä. Julkaistut luvut vaihtelevat 12 tuumasta (30 cm) 3 jalkaan (91 cm); jos käyttöohje ei kerro, turvallisin valinta on 18 tuumaa (46 cm) seinistä ja 3 jalkaa (91 cm) kaikesta palavasta.
 - Pidä Kiln-Sitterin painon ympäristö vapaana, jotta paino pääsee putoamaan.

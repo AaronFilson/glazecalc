@@ -81,7 +81,7 @@ Tabuľka uvádza pre samostojný kužeľ 6 teplotu {{2232 °F; 1222 °C}}, ale l
 
 ## Tabuľka kužeľov {#cone-chart}
 
-Tieto údaje sú z Ortonovej tabuľky kužeľov (©2001) pre samostojné kužele{{en: cones}}. Vyberte stĺpec, ktorý zodpovedá tomu, ako rýchlo teplota vo vašej peci stúpala počas posledných {{180 °F; 100 °C}}. Podľa Ortonovho orientačného pravidla platí stĺpec {{270 °F/h; 150 °C/h}} pre rýchly výpal, stĺpec {{108 °F/h; 60 °C/h}} pre stredný a stĺpec {{27 °F/h; 15 °C/h}} pre pomalý. Rýchlosť vypočítate tak, že nárast teploty vydelíte počtom hodín, ktoré trval: pec, ktorej teplota stúpne o {{900 °F; 500 °C}} za 3 hodiny, sa ohrieva rýchlosťou asi {{300 °F/h; 167 °C/h}}.
+Tieto údaje sú z Ortonovej tabuľky kužeľov (©2001) pre samostojné kužele{{en: cones}}; kužele 11 až 14 sú z tabuliek, ktoré Orton vydáva dnes a ktoré tam, kde sa prekrývajú, uvádzajú rovnaké údaje, kužele 13 a 14 však len v °C (ich hodnoty v °F sú tu prepočítané). Vyberte stĺpec, ktorý zodpovedá tomu, ako rýchlo teplota vo vašej peci stúpala počas posledných {{180 °F; 100 °C}}. Podľa Ortonovho orientačného pravidla platí stĺpec {{270 °F/h; 150 °C/h}} pre rýchly výpal, stĺpec {{108 °F/h; 60 °C/h}} pre stredný a stĺpec {{27 °F/h; 15 °C/h}} pre pomalý. Rýchlosť vypočítate tak, že nárast teploty vydelíte počtom hodín, ktoré trval: pec, ktorej teplota stúpne o {{900 °F; 500 °C}} za 3 hodiny, sa ohrieva rýchlosťou asi {{300 °F/h; 167 °C/h}}.
 
 Table: Ortonove samostojné kužele: teplota, pri ktorej sa každý ohne, podľa rýchlosti ohrevu počas posledných {{180 °F; 100 °C}}
 Label: Tabuľka Ortonových kužeľov
@@ -108,8 +108,14 @@ Label: Tabuľka Ortonových kužeľov
 | 8     |         {{2212 °F; 1211 °C}} |           {{2280 °F; 1249 °C}} |           {{2320 °F; 1271 °C}} |
 | 9     |         {{2235 °F; 1224 °C}} |           {{2300 °F; 1260 °C}} |           {{2336 °F; 1280 °C}} |
 | 10    |         {{2284 °F; 1251 °C}} |           {{2345 °F; 1285 °C}} |           {{2381 °F; 1305 °C}} |
+| 11    |         {{2322 °F; 1272 °C}} |           {{2361 °F; 1294 °C}} |           {{2399 °F; 1315 °C}} |
+| 12    |         {{2345 °F; 1285 °C}} |           {{2383 °F; 1306 °C}} |           {{2419 °F; 1326 °C}} |
+| 13    |         {{2390 °F; 1310 °C}} |           {{2428 °F; 1331 °C}} |           {{2458 °F; 1348 °C}} |
+| 14    |         {{2464 °F; 1351 °C}} |           {{2489 °F; 1365 °C}} |           {{2523 °F; 1384 °C}} |
 
 Pomlčka označuje údaj, ktorý sem nebol prevzatý; nájdete ho v úplnej tabuľke firmy Orton.
+
+Orton vyrába kužele až po číslo 42 na prácu pri vysokých teplotách, ale teploty zverejňuje len po kužeľ 14; pre teplejšie kužele sú jeho tabuľky „k dispozícii (na požiadanie)“. Staršia Ortonova tabuľka, ako ju pretláčajú výrobcovia pecí, uvádza pre veľký kužeľ 15 {{2608 °F; 1431 °C}} pri {{270 °F/h; 150 °C/h}} a pre kužeľ 16 a teplejšie sme žiadny zverejnený údaj nenašli. Nad kužeľom 14 stavajte kontrolné kužele{{en: witness cones}} a riaďte sa nimi a overte, či maximálna teplota, ktorú pre vašu pec uvádza výrobca, takú teplotu dosahuje.
 
 Veľké kužele sa od týchto údajov líšia len o niekoľko stupňov: pre veľký kužeľ 6 pri {{108 °F/h; 60 °C/h}} je to {{2228 °F; 1220 °C}}. Malé kužele, aké sa používajú vo vypínači Kiln-Sitter, sú uvedené len pre {{540 °F/h; 300 °C/h}}, takže tabuľka uvádza pre malý kužeľ 6 teplotu {{2291 °F; 1255 °C}}. To nie je teplota, pri ktorej Kiln-Sitter pec vypne. Úlohou kužeľa vo vypínači je zhodovať sa s kužeľom na doske a posledné slovo má kužeľ na doske.
 
@@ -298,6 +304,8 @@ Norma pozná dve veľkosti. Veľké kužele (大型コーン) sa „používajú
 
 Každý veľký kužeľ zasaďte do držiaka alebo do hrudky hliny, so sklonom k svojej ohybovej strane. Ako pri každom kuželi, výšku aj sklon dodržiavajte od výpalu k výpalu rovnaké, pretože rozdiel v ktoromkoľvek z nich mení, ako ďaleko sa kužeľ ohne. Tri kužele sady{{en: cone pack}} (pozri nižšie) postavte spolu hlboko v peci blízko stredu vsádzky, kde dostávajú rovnaké teplo ako výrobky, no tam, kde ich uvidíte cez kontrolný otvor; pred zatvorením pece overte, či vidíte všetky tri.
 
+Pokyny výrobcu ani predajcu k tomu, ako hlboko a pod akým uhlom kužele SK osadiť, sme nenašli. Najbližšie k tomu má laboratórna norma JIS R 2204, japonská skúška toho, koľko tepla žiaruvzdorný materiál vydrží: osádza každý kužeľ SK označenou stranou pod uhlom 80° k rovnému stojanu a s pätou zapustenou asi 4 mm doň. To je skúška pre žiaruvzdorné materiály, nie pravidlo pre výpal keramiky, a čítali sme ju v prepise normy, nie v norme samotnej.
+
 ### Vodiaci, cieľový a poistný kužeľ
 
 Kužele sa predávajú a stavajú po troch: vodiaci kužeľ, cieľový kužeľ a poistný kužeľ. Ako cieľový vezmite číslo SK, ktoré uvádza váš recept alebo hlina, ako vodiaci najbližší chladnejší kužeľ (o riadok vyššie v tabuľke) a ako poistný najbližší teplejší. Keď sa vodiaci kužeľ začne ohýbať, koniec je blízko; keď sa ohne poistný kužeľ, výpal zašiel príliš ďaleko.
@@ -366,6 +374,8 @@ Samostojné Ortonove kužele sa v Japonsku predávajú pod názvom 立つゼー�
 
 - [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (tabuľka SK, overené 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
 - [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (platná, znovu potvrdená 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
+- [JSA: JIS R 2204:1999, 耐火物及び耐火物原料の耐火度試験方法 (platná, znovu potvrdená 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+2204:1999)
+- [kikakurui.com: prepis JIS R 2204:1999, kde článok 5 a) určuje osadenie kužeľov (prečítané 2026-10-19)](https://kikakurui.com/r2/R2204-1999-01.html)
 - [Kyoto Municipal Institute of Industrial Technology and Culture: na čo si dať pozor pri prechode z kjótskych kužeľov na Ortonove](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
 
 :::
@@ -607,7 +617,7 @@ Informácie o vetraní miestnosti a o detektoroch oxidu uhoľnatého nájdete v 
 ### Keď pec vypaľuje
 
 - Do kontrolného otvoru sa pozerajte len cez zváračské okuliare s filtrom proti IR žiareniu, ochranný stupeň 3; slnečné okuliare nestačia. Skutt radí zátky zaskrutkovať na miesto, aby nevypadli.
-- Nenechávajte pec bez dozoru po očakávanom čase výpalu; vypínač Kiln-Sitter nie je poistka proti zlyhaniu.
+- Počas výpalu zostaňte nablízku a pec kontrolujte, predovšetkým okolo očakávaného času skončenia výpalu; vypínač Kiln-Sitter nie je vypínacie zariadenie bezpečné pri poruche. Vypaľujte len vtedy, keď bude doma dospelý, ktorý bude hore počas celého výpalu.
 - Nikdy nevypaľujte na ničom, čo horí, ani v jeho blízkosti, napríklad na drevenej podlahe alebo na koberci.
 - Dodržiavajte bezpečné vzdialenosti uvedené v návode na obsluhu. Publikované hodnoty sa pohybujú od 12 palcov (30 cm) do 3 stôp (91 cm); kde návod mlčí, najbezpečnejšou voľbou je 18 palcov (46 cm) od stien a 3 stopy (91 cm) od všetkého, čo horí.
 - Priestor okolo závažia vypínača Kiln-Sitter nechajte voľný, aby mohlo spadnúť.

@@ -6,6 +6,55 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Added
 
+- **Higher cones, for porcelain** (docs/adr/0021-recipe-firing.md, amended
+  2026-10-20). Orton cones have a temperature to cone 15 (1431 °C, Orton's older chart for large
+  cones at 150 °C an hour, the only Orton figure above 14 we found); cones 16 to 42 are taken
+  everywhere and shown with no figure, as Orton publishes none. The picker adds cone 21 and the
+  half cones 13½, 14½ and 15½. Orton's own current figures (self-supporting cones at 15, 60 and
+  150 °C an hour, large cones at 60 and 150, cone 022 to 14, from its 2016 chart and site) are
+  kept beside them, with their source and the date read. A new limits band, "Very high fire,
+  cone 12 and up" (1320 °C and hotter, SK 14 up): the published limits stop at cone 10, so no
+  set's figures are checked there and the panel says why; the other checks still run. The band
+  can be chosen by hand. The firing guide's cone chart goes to cone 14 and says what Orton
+  publishes past it. English only.
+- **A Digits setting, and digits that follow each country** (docs/i18n-plan.md, Digits; groundwork for
+  the Indian subcontinent and the Arabic-speaking countries). Settings offers digits as usual where you
+  are (the default), Western digits 0–9, or the language's own digits where it has them, each with a
+  sample number. As usual follows CLDR for each country: Arabic-Indic for Arabic in Egypt, Iraq, Jordan
+  and the Gulf but the UAE; 0–9 in the UAE and the Maghreb, and for Hindi, Tamil, Sinhala and Urdu in
+  Pakistan; Bengali's own in Bangladesh; Devanagari for Marathi and Nepali. The format locale always
+  names its digits and calendar (`ar-EG-u-ca-gregory-nu-arab`), so no browser's own data decides
+  them and the prerendered page and the browser agree. The number and date formats add those of India
+  (Hindi, English), Pakistan (Urdu, English), Bangladesh (Bengali), Egypt, the UAE, Morocco, Algeria,
+  Iraq and Jordan (Arabic), Morocco and Algeria (French), Sri Lanka (Sinhala, Tamil) and Nepal (Nepali). Typed
+  numbers may now use Indian digit groups (1,00,000 and 12,34,567.5), the Arabic percent sign (٪) and a
+  percent sign before or after (5 %, %5), and may carry the marks `Intl` writes to keep a number's
+  direction in Arabic text. The translations check reads all of these and asks translations to write
+  0–9. Arabic pages will be written for Egypt, Hindi and Tamil for India, Urdu for Pakistan and Bengali
+  for Bangladesh once those are regions; nothing a live language shows changes. Kept with the account
+  (or trial) like the other settings. English only for now.
+- **Groundwork for Arabic and Hindi** (not offered yet): Hindi joins Arabic as a known language (its pages exist,
+  unindexed), both with the standard notice, and the translation prompts know them: Modern Standard Arabic for every
+  Arab country, right to left, with six plural forms, and Hindi with आप and the potters' loanwords. Arabic's style
+  sheet and glossary (331 rows) are in `docs/translations/ar.md`, from an Egyptian supplier, an Iraqi glaze paper,
+  Algeria's Arabic Journal officiel and the Microsoft Arabic style guide, with the rows for a native potter marked.
+- **Ready for Arabic, Urdu, Hindi and Bengali** (docs/i18n-plan.md, "Right to left, as built"; no new
+  language is offered yet). Two pseudo-locales test it on every page: `/ar-XD/` writes each
+  message in Arabic letters, right to left, with all six of Arabic's plural forms and Arabic-Indic
+  digits, so the browser's own bidirectional rules run as they will for Arabic; `/hi-XE/` writes
+  them in Devanagari, stacked and marked above and below. On a right-to-left page, values with
+  Latin units read left to right as a whole ("1240 °C", not "C° 1240"), names of recipes,
+  materials, notes and apps are kept apart from the text around them, arrows point the way the
+  text reads, emails, codes, links and numbers are typed left to right, and a guide's web
+  addresses and formulas stay left to right. Bootstrap's sides are mirrored for the parts the app
+  uses (1.7 kB of stylesheet), the Stull chart stays left to right, and the blends grid mirrors
+  with its corners named where they are drawn. Fonts: the system's own for Arabic (Segoe UI, Noto
+  Naskh Arabic, Geeza Pro), Hindi and Bengali (Nirmala UI, Kohinoor, Noto Sans), in taller lines,
+  never spaced out or slanted; Urdu's Nastaliq is served with the app (Noto Nastaliq Urdu, OFL, cut
+  to Urdu's letters, 193 kB) and fetched by Urdu pages only. Emails in a right-to-left language
+  start each line with a right-to-left mark. The Linux browser tests' image adds four of Noto's
+  fonts (Naskh Arabic, Sans Arabic, Sans Devanagari, Sans Bengali). English only.
+
 - **Confirm before changes** (docs/adr/0025-confirm-before-changes.md). On Connected apps, an
   account can choose that changes from assistants, apps and access tokens wait for its approval:
   never (the default), only removals, or every change. It holds back an assistant that misbehaves
@@ -499,6 +548,14 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   prints, shared recipes, the account's and the trash's dates); numbers do not change, dates are still
   typed in the browser's Gregorian date fields and saved as they were, and emails stay Gregorian. Kept
   with the account (or trial) like the other settings.
+- **Three Japanese materials** in the standard library: Amakusa pottery stone (天草陶石), Fukushima
+  feldspar (福島長石) and Kamado feldspar (釜戸長石), each a typical analysis from one supplier in
+  Arita (佐賀県陶磁器原料) to check against your own supplier's, and each with what makes it differ:
+  Amakusa stone's grades by iron, Fukushima feldspar's grades and a research institute's sample, and
+  that Kamado feldspar is an aplite with much free quartz, not to be swapped for a feldspar weight for
+  weight. They are listed as sold in Japan (the library's regions gain JP), so the local-equivalents
+  guide offers their closest match elsewhere. Mikumo feldspar (Digitalfire's analysis only) and
+  natural ashes (no analysis found) are not added.
 - **Vietnam as a region** (in English until Vietnamese is translated), firing by temperature until
   you choose otherwise, with the US materials, prices in dong, and numbers and dates as vi-VN.
   - **Who to call:** 115 for an ambulance, with 113 (police) and 114 (fire). Official government
@@ -511,6 +568,29 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
     read in a legal database's copy of the regulation, as the government's own pages could not be
     read, and the page says that too.
   - **Shops:** none was found, and the page says so.
+- **India, Pakistan, Bangladesh, Egypt, the United Arab Emirates, Morocco and Algeria as regions**
+  (docs/south-asia-mena-plan.md), in English until their languages are translated; French pages
+  show Morocco's and Algeria's too. India fires by Orton cones, the others by temperature, until you
+  choose otherwise; all list the US materials, read °C and specific gravity, and price in their own
+  money (rupees, taka, pounds, dirhams, dinars). Arabic pages, not offered yet, are written for Egypt.
+  The guides give, each from an official page with its source and date, and leave out what could not
+  be checked:
+  - **Who to call:** India 112, and the National Poisons Information Centre at AIIMS (1800 116 117,
+    toll free, 24 hours, or its Delhi number); Pakistan Rescue 1122, run by each province, with 15 for
+    the police in Punjab; Bangladesh 999, with the health directorate's 24-hour call centre (16263) as
+    medical advice, not a poison line; Egypt 123 for an ambulance (with 122 and 180); the UAE 998 (with
+    999 and 997); Morocco 141, and its poison centre, CAPM, day and night, at the price of a local call,
+    on 0801 000 180 or 05 37 68 64 64, both linked; Algeria 14 for civil protection. Where no public
+    poison line could be confirmed, the health ministry is linked, except the UAE's and Algeria's, whose
+    sites could not be read. Abu Dhabi's poison service is not shown.
+  - **Silica:** no limit is shown for any of them. For India the page says each state sets its own
+    under the 2020 OSH Code, and links DGOSH; India's dust masks are FFP2 and FFP3 (IS 9473).
+    Bangladesh links its factories inspectorate.
+  - **Lead and cadmium:** Algeria's order of 16 January 2019, the EU directive's limits, with its rule
+    for a piece up to 50% over. India's IS 9806 is a voluntary standard, so it is not shown.
+  - **Shops:** two in India and two in Abu Dhabi; none was found in the others, and the page says so.
+  - A poison line's other number can now have its own link (Morocco's), kept on one line and read
+    left to right in any language. English only.
 - **Groundwork for East and Southeast Asia**, before any of its languages:
   - **Numbers and dates** can be written as in Japan, Korea, mainland China and Taiwan (Simplified and
     Traditional Chinese each keep their script in any region), Hong Kong, Singapore, Malaysia,
@@ -734,6 +814,97 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Changed
 
+- **A match says how near it comes, and keeps raw clay where its own check wants it**
+  (docs/adr/0012, "Amended: how near a match comes"). In a staging test an assistant asked to
+  replace Gerstley Borate read `match_from_materials`' score (a miss of 20.5) as a wide miss and
+  built a recipe by hand whose alumina came out 26% low; the tool's match was within 2% on alumina
+  and silica, and nearer on every oxide. Its score was the only measure it gave, and its 27% raw
+  clay drew its own "will probably crack" caution. Now a match's report has its closeness: each
+  oxide of the new unity formula against the old, as close, off or far, and a verdict (close, fair
+  or poor). The MCP tools that fit amounts (`match_from_materials`, `match_with_what_i_have`,
+  `suggest_substitutes`) answer it with each oxide's old and new value, difference and percent and a
+  sentence, and now also the caps that cost match (`capped`), which `allowMore` lifts. Match with
+  what I have and Suggest amounts hold raw clay to 20% of the batch (or the recipe's own share)
+  where that costs the match little, a calcined kaolin on hand taking up the rest, and keep at
+  least 10% (or what the recipe had) of the recipe's raw clay, so calcined kaolin does not take all
+  of it; where only raw clay can bring the alumina back, the chemistry comes first and the caution
+  says to swap part of it for calcined kaolin. On the website, Allow more lifts the hold. When
+  nothing offered supplies one of the recipe's fluxes (lithia with no lithium on hand), the other
+  fluxes make up its share, so silica comes out about 5% high rather than 26%. The clay caution no
+  longer repeats what the old recipe already had. Underneath, the fit takes caps on a share of the
+  batch, and an amount tried back at its start can no longer break a cap. English only.
+
+- **The Orton chart says what it is.** Glazecalc's Orton figures from cone 06 up were labelled
+  "large cones at 60 °C an hour" but are the large-cone column at 150 °C an hour of Orton's older
+  chart (as determined at the US National Bureau of Standards, reprinted by W P Dawson and
+  FireRight), the same chart Katz's cone 10 at 1305 °C comes from. The figures are unchanged, so
+  no band, check or note changes; the label says so, and cones 022 to 07 now take the same
+  column (600 to 984 °C). English only.
+- **The cone check does not judge past cone 10** (docs/adr/0022, amended 2026-10-20). Katz's rule
+  and Hesselberth & Roy's figures stop at cone 10, so a firing hotter than that (Orton 10½ up,
+  SK 13 up, above 1305 °C, or the new top band) gets "can't compare" rather than being held to
+  cone 10's figures. A range from within the figures to past them (cone 9–11) still gets a
+  "looks cooler" note, judged at its cool end.
+- **MCP: every cone, read as the recipe page reads it.** `check_limits`, `get_recipe` and
+  `blend_recipes` take Orton cones 022 to 42 and SK cones SK 022 to 20 (before: Orton 06 to 6
+  only, so "Cone 10 is not in Glazecalc's Orton chart"), and temperatures to 1600 °C. A cone is
+  checked in its band, not by a converted temperature (SK 8 is mid fire, as on the page, not
+  high fire by its JIS 1250 °C); from cone 12 up the answer has `limitsNote`.
+  `convert_cone_temperature` gives Orton's current figures by heating rate beside Glazecalc's,
+  says when a cone has no figure, and no longer claims SK cones to 42; `glazecalc://cones` has
+  both Orton charts. `create_recipe` and `update_recipe` take the band `top`.
+- **A searchable, grouped list for the language and the region, and grouped language lists** (for
+  45 languages and more, and the right-to-left ones to come). In Settings, the language and the
+  region are chosen from a combobox (the WAI-ARIA pattern, no new library) instead of a plain
+  `select`: type to narrow it, by a language's own name or its English name (`german`, `deu` or
+  `deutsch` finds Deutsch; `turkce` finds Türkçe; `日本` finds 日本語), arrow keys, Page Up and Page Down, Enter
+  to choose, Escape to close and put the choice back; the number of matches and "No language
+  matches" are said to a screen reader and shown. Each language is named in itself with its English
+  name beside it, and the current one is marked (a check mark, and `aria-selected`). Languages are
+  grouped by the part of the world they are mostly spoken in (English first, then East Asia, Europe,
+  Middle East and North Africa, South Asia, Southeast Asia); regions by continent, named in the
+  page's language with the English name beside it, which the search finds too. The guides' "Shops
+  in", "Rules in" and similar region lists are the same list. The footer's folded language list and
+  the about page's full list are grouped under the same headings and laid out in columns that fit
+  the window (two at 320 px). Names are set in `<bdi>` and the styles use logical properties, so
+  Arabic and Urdu will mirror correctly. A group is a line in `lib/regions/groups.js`, which a
+  server test requires for every language and region. What is saved is unchanged (the language's
+  code, the region's code). English only: the headings and "No language matches" are translated
+  with the next wave.
+- **Asia's region data, checked again** (2026-10-19, English only; docs/asia-plan.md, Phase C).
+  Every value keeps its source, check date and status, and no unconfirmed safety value is shown.
+  - **China:** China CDC's national poison hotline, 010-83132345, from China CDC's own page, which
+    tells the public to call it; no official page gives its hours or cost, and the page says so.
+    Lead and cadmium under GB 4806.4—2016, read in the issued standard on a Guangdong regulator's
+    site: six kinds of piece, each "at most", in force since 2017-04-19, cooking ware tested hot
+    (3.0 / 0.30 mg/L, not the 0.5 / 0.05 an earlier note gave from memory). Dust masks KN95 and
+    KN100 (GB 2626-2019), read secondhand.
+  - **Hong Kong:** the food-contact block now says there is no law with figures for ceramic ware
+    (the Centre for Food Safety, 2009; Cap. 132 and Cap. 456), with no table. One shop, Hearty
+    Ceramic (Tai Kok Tsui).
+  - **Taiwan:** the silica limit in force until 31 December 2026, 10 / (Q + 2) mg/m³ for respirable
+    dust with 10% or more crystalline silica, read in the law site's own table, is shown above the
+    2027 limit, each under its dates, until 2027.
+  - **Indonesia:** BPOM 11/2026 in force since 2026-06-30, with a year more for ware already on the
+    market.
+  - **Thailand:** two shops, Pottery Clay Thailand and Cerawan.
+  - **The Philippines:** the OSH Standards' binding silica formula, 10 / (Q + 2) mg/m³ for quartz and
+    half for cristobalite and tridymite, read in an archived copy of the Department of Labor and
+    Employment's own file, which the page says. Two shops in Quezon City, Tahanan Pottery and
+    Odangputik Pottery (clay and ready-made glazes).
+  - **Vietnam:** 113, 114 and 115 are read with their roles on official pages, so the caution that
+    they were not is gone (the `reported` status with it); calls are free, and while the numbers
+    merge into 113 (planned for 2027–2028) all three work. QCVN 12-4:2015/BYT read in the Official
+    Gazette, so verified; its note no longer says its test method is required. Dust masks FFP2 and
+    FFP3 (TCVN 13409:2021, the same as EN 149), read secondhand.
+  - **Japan:** #8000 is answered by nurses or doctors, and the prefectures' pages read say the
+    advice is free and the call is paid by the caller. The food note gives the 2025 revision's dates
+    and the transition to 2030, and that the 2008 limits did not change. The firing guide adds how
+    JIS R 2204, a laboratory standard for refractories, sets SK cones (marked face at 80°, foot about
+    4 mm deep), said to be a test, not a rule for pots.
+  - **Türkiye:** UZEM (114) is free, around the clock, for the public and health workers, from
+    official government pages.
+  - **South Korea:** no change; there is still no national public poison line.
 - **The privacy notice says what connecting an AI app means** (a new section, "Connecting an AI
   app", with the ADR 0024 notices): what is kept for each connected app (its name and address as
   it gives them, where it sends you back, what it may do, its dates, its codes and tokens only as
@@ -919,6 +1090,31 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 - **Sign-in keeps the page you were going to.** "Create a free account" and "Sign in" on the sign-in and
   sign-up pages carry `?next=` (this site's pages only) so an AI app's consent page is not lost; and a
   session that has gone stale sends you to sign-in with the page you were on, which you come back to.
+- **A sign-up keeps that page through the menu and the confirmation email.** The menu's "Sign in"
+  and "Create a free account" links carry the sign-in or sign-up page's `?next=` as well. A sign-up
+  sends it to the server, which puts it in the confirmation email's link after the token
+  (`/confirm-email#token=…&next=…`), without its language, and only when it is one of the app's
+  pages (checked as for a provider sign-in, `nextPage` in server/lib/pages.ts); the page checks it
+  again (`sameSitePath`). Once the address is confirmed, the page goes there: at once when signed
+  in, through the sign-in page otherwise. So an AI app's consent page, which needs a confirmed
+  email, is not lost on the way. A trial kept as an account, and a provider sign-up whose email
+  still needs confirming, do the same; the link sent again from the account page has none.
+- **Romanian emails write their counts as Romanian does:** "30 de zile" and "24 de ore", but "7
+  zile" and "1 zi". The mailer gives those emails the number and its noun together, chosen by
+  Romanian's plural forms; the texts had "{days} zile" and "{hours} ore", wrong from 20 on, and
+  "{days} de zile", wrong below 20.
+- **English made plain where round 5's translators found it unclear** (each is translated again in
+  the next wave): the privacy notice says access tokens and connections are kept until they expire
+  and then for 30 days more, not "up to" 30; Taiwan's emergency note says plainly what 112 does
+  when a mobile phone has no signal; the firing guide's kiln-watch line says to stay nearby and
+  check the kiln while it fires, and to fire only when an adult will be home and awake through the
+  whole firing, as the home-safety guide does; the recipe page's dust line says you must keep the
+  dust out of your lungs; the safe-mixing guide quotes the University of Utah on lead in the kiln
+  as its page now reads ("vaporizes at a relatively low temperature"; fired to stoneware
+  temperatures, "the lead will vaporize"), instead of "lower temperatures" lower than nothing
+  named; and Vietnam's silica note says how a measurement is compared with its limit.
+- **Indonesian says "catatan" for a record throughout:** the older server messages, the privacy
+  notice's Trash line and the Empty Trash question still said "item".
 
 - **The OAuth authorization server, after its security review** (docs/adr/0024, "Review fixes"):
   addresses under `/oauth/` answer only as written (`/oauth/REGISTER` or `/oauth/register/` no

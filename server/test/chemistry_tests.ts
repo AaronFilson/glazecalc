@@ -27,6 +27,7 @@ interface LibraryRecord {
   substitutes?: string[];
   replaces?: string[];
   hazards?: string;
+  notes?: string[];
   fluorine?: boolean;
   source?: { name?: string; url?: string; kind?: string };
   noChemistry?: boolean;
@@ -392,12 +393,36 @@ describe('glaze chemistry', () => {
         if (record.status)
           expect(record.status, record.name).to.be.oneOf(['current', 'scarce', 'discontinued', 'historical']);
         for (const region of record.region ?? [])
-          expect(region, record.name).to.be.oneOf(['US', 'UK', 'EU', 'CA', 'AU']);
+          expect(region, record.name).to.be.oneOf(['US', 'UK', 'EU', 'CA', 'AU', 'JP']);
         for (const name of [record.name, ...(record.aliases ?? [])]) {
           expect(seen.has(name.toLowerCase()), name).to.equal(false);
           seen.add(name.toLowerCase());
         }
       }
+    });
+
+    // Japan's feldspathic rocks (docs/asia-plan.md, Phase C item 6): one supplier's typical analyses,
+    // each saying so, with what makes it differ and a warning against swapping it one for one.
+    it("should give Japan's materials as one supplier's typical analyses, to check, with a warning against swapping", () => {
+      const japanese = materials.filter((record) => record.region?.includes('JP'));
+      expect(japanese.map((record) => record.name)).to.eql([
+        'Amakusa Pottery Stone (天草陶石)',
+        'Fukushima Feldspar (福島長石)',
+        'Kamado Feldspar (釜戸長石)'
+      ]);
+      for (const record of japanese) {
+        expect(record.region, record.name).to.eql(['JP']);
+        expect(record.source?.kind, record.name).to.equal('supplier');
+        expect(record.source?.name, record.name).to.contain('佐賀県陶磁器原料');
+        expect(record.notes?.[0], record.name).to.match(/^A typical analysis from one supplier in Arita: check it/);
+        expect(chemistry.materialWeights(record).warnings, record.name).to.eql([]);
+      }
+      const notes = (name: string) => japanese.find((record) => record.name.startsWith(name))!.notes![0]!;
+      expect(notes('Amakusa')).to.contain('graded by its iron').and.contain('not a feldspar');
+      expect(notes('Fukushima')).to.contain('72.1% SiO₂');
+      expect(notes('Kamado')).to.contain('aplite').and.contain('Do not swap it');
+      // Not added: Mikumo feldspar (only Digitalfire's analysis, of no stated origin) and natural ashes.
+      for (const record of all) expect(record.name, record.name).not.to.match(/Mikumo|三雲|土灰|柞灰|藁灰|松灰/);
     });
 
     it('should name a modern substitute for everything discontinued, scarce or historical', () => {
@@ -999,6 +1024,133 @@ describe('glaze chemistry', () => {
       );
       expect(zinc.missLifted).to.be.closeTo(lifted.miss, 1e-3);
       expect(zinc.missLifted).to.be.above(1);
+    });
+
+    // The staging case behind ADR 12's note on closeness: nepheline syenite and
+    // Gerstley Borate replaced from a shelf with Custer Spar and Frit 3134.
+    const GERSTLEY = molesOf([
+      ['Nepheline Syenite', 40],
+      ['Silica', 25],
+      ['Gerstley Borate', 15],
+      ['EPK Kaolin', 20]
+    ]);
+    const SHELF = () => [
+      offer('Custer Spar'),
+      own('Silica', 25),
+      offer('Whiting'),
+      { ...own('EPK Kaolin', 20), group: 'raw clay' },
+      offer('Ferro Frit 3134'),
+      offer('Talc')
+    ];
+    const share = (amounts: number[], i: number) => amounts[i] / amounts.reduce((sum, a) => sum + a, 0);
+
+    it('should keep a share of the batch to its cap, and say what lifting it would give', () => {
+      const lines = SHELF();
+      const free = chemistry.selectMaterials(lines, GERSTLEY);
+      // Custer Spar has less alumina than nepheline syenite: the free match takes it from more kaolin.
+      expect(share(free.amounts, 3)).to.be.above(0.25);
+      const held = chemistry.selectMaterials(lines, GERSTLEY, { shares: { 'raw clay': 0.2 } });
+      expect(share(held.amounts, 3)).to.be.at.most(0.2 + 1e-6);
+      const [clay] = held.capped;
+      expect(clay).to.include({ index: 3, group: 'raw clay' });
+      const total = held.amounts.reduce((sum, a) => sum + a, 0);
+      // In grams of this batch: the cap's 20%, and the free match's share.
+      expect(clay.most / total).to.be.closeTo(0.2, 1e-6);
+      expect(clay.wouldBe / total).to.be.closeTo(share(free.amounts, 3), 0.01);
+      expect(clay.missLifted).to.be.below(held.miss);
+      // A calcined kaolin, outside the cap, takes up the rest at little cost to the match.
+      const calcined = chemistry.selectMaterials([...lines, offer('Calcined Kaolin (theoretical)')], GERSTLEY, {
+        shares: { 'raw clay': 0.2 }
+      });
+      expect(share(calcined.amounts, 3)).to.be.at.most(0.2 + 1e-6);
+      expect(calcined.amounts[6]).to.be.above(3);
+      expect(calcined.miss).to.be.below(free.miss + 0.5);
+    });
+
+    it('should not put an amount back at its start where that breaks a shared cap', () => {
+      // The free match wants the clay at its start of 20 g; capped with the silica at 44 g, it comes
+      // to within 5% of its start, where an amount is tried back at its start.
+      const lines = [
+        { ...own('EPK Kaolin', 20), group: 'clay and silica' },
+        { ...own('Silica', 25), group: 'clay and silica' },
+        own('Custer Spar', 40),
+        own('Whiting', 15)
+      ];
+      const target = molesOf([
+        ['EPK Kaolin', 20],
+        ['Silica', 25],
+        ['Custer Spar', 40],
+        ['Whiting', 15]
+      ]);
+      // Unheld, everything is as it was.
+      expect(chemistry.fitAmounts(lines, target).amounts).to.deep.equal([20, 25, 40, 15]);
+      const { amounts } = chemistry.fitAmounts(lines, target, { groups: { 'clay and silica': 44 } });
+      expect(amounts[0] + amounts[1]).to.be.at.most(44 + 1e-6);
+      // A cap on a share of the batch holds too: the other lines take up what the clay cannot.
+      const shared = chemistry.fitAmounts(lines, target, { shares: { 'clay and silica': 0.44 } }).amounts;
+      expect(share(shared, 0) + share(shared, 1)).to.be.at.most(0.44 + 1e-6);
+    });
+
+    it('should make up a flux nothing offered supplies from the others, keeping the formula near', () => {
+      // Lithium carbonate's lithia, with no lithium on hand: a fifth of the fluxes.
+      const lithium = molesOf([
+        ['Lithium Carbonate', 4],
+        ['Custer Spar', 30],
+        ['Whiting', 16],
+        ['EPK Kaolin', 20],
+        ['Silica', 30]
+      ]);
+      const lines = [own('Custer Spar', 30), own('Whiting', 16), own('EPK Kaolin', 20), own('Silica', 30)];
+      const result = chemistry.selectMaterials(lines, lithium);
+      expect(result.unreachable).to.deep.equal(['Li2O']);
+      const { oxides } = chemistry.closeness(lithium, result.moles);
+      const row = (oxide: string) => oxides.find((o) => o.oxide === oxide)!;
+      expect(row('Li2O').verdict).to.equal('far');
+      // Silica and alumina per mole of the new fluxes stay within three times near; they came out
+      // 26% high (silica 4.73 for 3.76) when the other fluxes did not make up the lithia.
+      expect(row('SiO2').verdict).to.not.equal('far');
+      expect(row('Al2O3').verdict).to.not.equal('far');
+      expect(row('SiO2').now / row('SiO2').was).to.be.below(1.1);
+    });
+
+    it('should say how near a match comes, oxide by oxide in the unity formula, with a verdict', () => {
+      const old = molesOf([
+        ['Custer Spar', 40],
+        ['Whiting', 20],
+        ['EPK Kaolin', 20],
+        ['Silica', 20]
+      ]);
+      const same = chemistry.closeness(old, old);
+      expect(same.verdict).to.equal('close');
+      // Fluxes first, potash and soda together after them, then alumina, then silica.
+      const order = same.oxides.map((o) => o.oxide);
+      expect(order).to.deep.equal(['K2O', 'Na2O', 'KNaO', 'CaO', 'Al2O3', 'SiO2']);
+      for (const o of same.oxides) expect(o).to.include({ difference: 0, verdict: 'close' });
+      // A soda spar for the potash spar: potash and soda together close, apart off.
+      const soda = chemistry.closeness(
+        old,
+        molesOf([
+          ['Minspar 200', 41.1],
+          ['Whiting', 19.6],
+          ['EPK Kaolin', 18.9],
+          ['Silica', 20.5]
+        ])
+      );
+      expect(soda.verdict).to.equal('fair');
+      const verdicts = Object.fromEntries(soda.oxides.map((o) => [o.oxide, o.verdict]));
+      expect(verdicts).to.include({ K2O: 'off', Na2O: 'off', KNaO: 'close', CaO: 'close', Al2O3: 'close' });
+      // Half the alumina is far: a different glaze.
+      const thin = chemistry.closeness(
+        old,
+        molesOf([
+          ['Custer Spar', 40],
+          ['Whiting', 20],
+          ['EPK Kaolin', 5],
+          ['Silica', 30]
+        ])
+      );
+      expect(thin.verdict).to.equal('poor');
+      expect(thin.oxides.find((o) => o.oxide === 'Al2O3')!.verdict).to.equal('far');
     });
 
     describe('what it says of the materials', () => {

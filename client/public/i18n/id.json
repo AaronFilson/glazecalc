@@ -82,6 +82,31 @@
     "languages": "Bahasa",
     "language": "Bahasa:"
   },
+  "picker": {
+    "results": "{count, plural, other {# hasil}}",
+    "languages": {
+      "search": "Cari bahasa",
+      "showAll": "Tampilkan semua bahasa",
+      "noMatch": "Tidak ada bahasa yang cocok"
+    },
+    "regions": {
+      "search": "Cari negara dan wilayah",
+      "showAll": "Tampilkan semua negara dan wilayah",
+      "noMatch": "Tidak ada negara atau wilayah yang cocok"
+    },
+    "groups": {
+      "africa": "Afrika",
+      "americas": "Amerika",
+      "asia": "Asia",
+      "eastAsia": "Asia Timur",
+      "europe": "Eropa",
+      "middleEastNorthAfrica": "Timur Tengah dan Afrika Utara",
+      "oceania": "Oseania",
+      "southAsia": "Asia Selatan",
+      "southeastAsia": "Asia Tenggara",
+      "other": "Lainnya"
+    }
+  },
   "numbers": {
     "notANumber": "Masukkan angka, misalnya {example}.",
     "notANumberComma": "Masukkan angka, misalnya {example}, dengan koma untuk desimal.",

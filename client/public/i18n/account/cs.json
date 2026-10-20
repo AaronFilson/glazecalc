@@ -270,6 +270,22 @@
         "saved": "Uloženo: data se zobrazují v japonských érách."
       }
     },
+    "digits": {
+      "legend": "Číslice",
+      "help": "Číslice, kterými se zobrazují čísla. Některé jazyky mají vlastní, například arabština, bengálština a hindština, a které jsou obvyklé, závisí na tom, kde jste. Čísla můžete zadávat jedněmi i druhými.",
+      "auto": {
+        "label": "Jak je obvyklé tam, kde jste",
+        "saved": "Uloženo: číslice se zobrazují tak, jak je obvyklé tam, kde jste."
+      },
+      "western": {
+        "label": "Západní číslice, 0–9",
+        "saved": "Uloženo: čísla se zobrazují číslicemi 0–9."
+      },
+      "native": {
+        "label": "Vlastní číslice jazyka, pokud je má",
+        "saved": "Uloženo: čísla se zobrazují vlastními číslicemi jazyka, pokud je má."
+      }
+    },
     "decimalMark": {
       "legend": "Zadávání množství",
       "either": {

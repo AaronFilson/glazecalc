@@ -15,8 +15,18 @@ import { printAST } from '@formatjs/icu-messageformat-parser/printer.js';
 //          The page is Japanese to the browser, so it shows Japanese's fonts
 //          (Linux needs Noto CJK for them), lines broken where there are no
 //          spaces, and text shorter than the English.
+//   ar-XD  each English word in Arabic letters, on a right-to-left page with Arabic's
+//          plural rules (every plural given all six forms) and Arabic-Indic digits
+//          (lib/regions/languages.js): real right-to-left text, which the browser
+//          sets by its own rules, so a value not kept apart from the words around
+//          it ("1240 °C" read as "C° 1240"), a name or a layout not mirrored shows it.
+//   hi-XE  each English word in Devanagari, its letters stacked and marked above
+//          and below: Hindi's fonts and taller lines, so a box that clips its text
+//          or a line set too tight shows it.
 //
-// Placeholders, plurals and tags keep their ICU form; only the text changes.
+// Placeholders, plurals and tags keep their ICU form; only the text changes. In
+// ar-XD and hi-XE what a translation keeps in Latin stays so: acronyms (SK, LOI),
+// units (°C, g), formulas (SiO₂, K2O), names (Glazecalc) and web addresses.
 
 const ACCENTED: Record<string, string> = Object.fromEntries(
   [...'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'].map((letter, i) => [
@@ -54,6 +64,138 @@ function japaneseText(text: string): string {
     .replace(/(?<=[\u3000-\u30ff\u4e00-\u9fff])\s+|\s+(?=[\u3000-\u30ff\u4e00-\u9fff])/gu, '');
 }
 
+/** Units and names a translation keeps in Latin letters. */
+const KEPT_WORDS = new Set(['g', 'kg', 'lb', 'lbs', 'oz', 'ml', 'mm', 'cm', 'Glazecalc', 'Orton', 'Google', 'GitHub']);
+
+/**
+ * Whether a word stays in Latin letters: a unit, a name, an acronym (SK, LOI), part of a formula (SiO₂, K2O,
+ * °C) or of a standard's number (JIS R 8101).
+ */
+function keptLatin(word: string, before: string, after: string): boolean {
+  return (
+    KEPT_WORDS.has(word) ||
+    /^[A-Z]{2,}s?$/.test(word) ||
+    (/^[A-Z]$/.test(word) && /^ \d/.test(after)) ||
+    /[A-Z]/.test(word.slice(1)) ||
+    /[\d\u2080-\u2089°]/.test(before) ||
+    /[\d\u2080-\u2089]/.test(after.charAt(0))
+  );
+}
+
+/**
+ * Text with each word written anew, and its punctuation, but for web addresses and the Latin a
+ * translation keeps.
+ */
+function eachWord(text: string, write: (word: string) => string, punctuate: (text: string) => string): string {
+  return text
+    .split(/((?:https?:\/\/|www\.)\S+)/)
+    .map((part, i) =>
+      i % 2
+        ? part
+        : punctuate(
+            part.replace(/[A-Za-z]+(?:['’][A-Za-z]+)*/g, (word: string, at: number) =>
+              keptLatin(word, part[at - 1] ?? '', part.slice(at + word.length, at + word.length + 2))
+                ? word
+                : write(word)
+            )
+          )
+    )
+    .join('');
+}
+
+/** Arabic letters for English ones, the same each time. */
+const ARABIC: Record<string, string> = Object.fromEntries(
+  [...'abcdefghijklmnopqrstuvwxyz'].map((letter, i) => [
+    letter,
+    'ا ب ك د ي ف غ ه ي ج ك ل م ن و ب ق ر س ت و ف و كس ي ز'.split(' ')[i]!
+  ])
+);
+
+/** Text in Arabic letters, with Arabic's comma, semicolon and question mark. */
+function arabicText(text: string): string {
+  return eachWord(
+    text,
+    (word) => [...word.toLowerCase()].map((letter) => ARABIC[letter] ?? '').join(''),
+    (part) =>
+      part
+        .replace(/,(?=\s|$)/g, '،')
+        .replace(/;/g, '؛')
+        .replace(/\?/g, '؟')
+  );
+}
+
+/** Devanagari consonants for English ones, some stacked two high (ड्ड, ट्ठ, ग्ग). */
+const CONSONANTS: Record<string, string> = {
+  b: 'ब',
+  c: 'च',
+  d: 'ड्ड',
+  f: 'फ़',
+  g: 'ग्ग',
+  h: 'ह',
+  j: 'ज',
+  k: 'क्ष',
+  l: 'ल',
+  m: 'म',
+  n: 'न',
+  p: 'प',
+  q: 'क़',
+  r: 'र',
+  s: 'स',
+  t: 'ट्ठ',
+  v: 'व',
+  w: 'व',
+  x: 'क्स',
+  y: 'य',
+  z: 'ज़'
+};
+/** Each vowel on its own, and as the sign it takes after a consonant (ि and े over the line, ु under it). */
+const VOWELS: Record<string, [string, string]> = {
+  a: ['अ', 'ा'],
+  e: ['ए', 'े'],
+  i: ['इ', 'ि'],
+  o: ['ओ', 'ो'],
+  u: ['उ', 'ु']
+};
+
+/** One English word in Devanagari: a capital with र् over it, a last bare consonant with ृ under it, and ँ over its end. */
+function devanagariWord(word: string): string {
+  let written = '';
+  let bare = false;
+  for (const char of word) {
+    const letter = char.toLowerCase();
+    const vowel = VOWELS[letter];
+    if (vowel) {
+      written += bare ? vowel[1] : vowel[0];
+      bare = false;
+    } else if (CONSONANTS[letter]) {
+      written += (char === letter ? '' : 'र्') + CONSONANTS[letter];
+      bare = true;
+    }
+  }
+  return written + (bare ? 'ृ' : '') + 'ँ';
+}
+
+/** Text in Devanagari, with a danda (।) for a full stop. */
+function hindiText(text: string): string {
+  return eachWord(text, devanagariWord, (part) => part.replace(/(?<=[\u0900-\u097f])\.(?=\s|$)/gu, '।'));
+}
+
+/** Arabic's plural forms. A plural is given all six, each a copy of its "other", so every one is used. */
+const ARABIC_FORMS = ['zero', 'one', 'two', 'few', 'many', 'other'];
+
+function withArabicForms(elements: MessageFormatElement[]): void {
+  for (const element of elements) {
+    if (element.type === TYPE.tag) withArabicForms(element.children);
+    else if (element.type === TYPE.plural || element.type === TYPE.select) {
+      for (const option of Object.values(element.options)) withArabicForms(option.value);
+      const other = element.options['other'];
+      if (element.type === TYPE.plural && element.pluralType === 'cardinal' && other) {
+        for (const form of ARABIC_FORMS) element.options[form] ??= structuredClone(other);
+      }
+    }
+  }
+}
+
 function rewrite(elements: MessageFormatElement[], text: (literal: string) => string): void {
   for (const element of elements) {
     if (element.type === TYPE.literal) element.value = text(element.value);
@@ -75,6 +217,11 @@ export function pseudoMessage(message: string, code: string): string {
     rewrite(ast, japaneseText);
     ast.unshift(literal('「'));
     ast.push(literal('」'));
+  } else if (code === 'ar-XD') {
+    withArabicForms(ast);
+    rewrite(ast, arabicText);
+  } else if (code === 'hi-XE') {
+    rewrite(ast, hindiText);
   } else {
     rewrite(ast, (text) => [...text].map((c) => ACCENTED[c] ?? c).join(''));
     const padding = '·'.repeat(Math.max(1, Math.round(message.length / 3)));
@@ -84,10 +231,12 @@ export function pseudoMessage(message: string, code: string): string {
   return printAST(ast);
 }
 
-/** Plain text, such as a guide's, in a pseudo-locale: accented, set right to left, or in Japanese characters. */
+/** Plain text, such as a guide's, in a pseudo-locale: accented, set right to left, or in other letters. */
 export function pseudoText(text: string, code: string): string {
   if (code === 'ar-XB') return text.trim() ? RLO + text + PDF : text;
   if (code === 'ja-XC') return japaneseText(text);
+  if (code === 'ar-XD') return arabicText(text);
+  if (code === 'hi-XE') return hindiText(text);
   return [...text].map((c) => ACCENTED[c] ?? c).join('');
 }
 

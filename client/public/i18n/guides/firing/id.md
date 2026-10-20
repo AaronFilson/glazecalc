@@ -81,7 +81,7 @@ Tabel memberikan kerucut 6 berdiri sendiri sebagai {{2232 °F; 1222 °C}}, tetap
 
 ## Tabel kerucut {#cone-chart}
 
-Angka-angka ini berasal dari tabel kerucut Orton (©2001) untuk kerucut berdiri sendiri. Pilih kolom yang sesuai dengan seberapa cepat tungku Anda naik selama {{180 °F; 100 °C}} terakhir. Patokan Orton adalah kolom {{270 °F/h; 150 °C/h}} untuk pembakaran cepat, kolom {{108 °F/h; 60 °C/h}} untuk sedang, dan kolom {{27 °F/h; 15 °C/h}} untuk lambat. Untuk menghitung laju, bagi suhu yang dinaikkan dengan jumlah jam yang diperlukan: tungku yang naik {{900 °F; 500 °C}} dalam 3 jam memanas sekitar {{300 °F/h; 167 °C/h}}.
+Angka-angka ini berasal dari tabel kerucut Orton (©2001) untuk kerucut berdiri sendiri; kerucut 11 sampai 14 berasal dari tabel yang diterbitkan Orton sekarang, yang memberikan angka yang sama di bagian yang tumpang tindih, dan kerucut 13 dan 14 hanya dalam °C (°F-nya di sini hasil konversi). Pilih kolom yang sesuai dengan seberapa cepat tungku Anda naik selama {{180 °F; 100 °C}} terakhir. Patokan Orton adalah kolom {{270 °F/h; 150 °C/h}} untuk pembakaran cepat, kolom {{108 °F/h; 60 °C/h}} untuk sedang, dan kolom {{27 °F/h; 15 °C/h}} untuk lambat. Untuk menghitung laju, bagi suhu yang dinaikkan dengan jumlah jam yang diperlukan: tungku yang naik {{900 °F; 500 °C}} dalam 3 jam memanas sekitar {{300 °F/h; 167 °C/h}}.
 
 Table: Kerucut berdiri sendiri Orton: suhu saat setiap kerucut menekuk, menurut laju pemanasan selama {{180 °F; 100 °C}} terakhir
 Label: Tabel kerucut Orton
@@ -108,8 +108,14 @@ Label: Tabel kerucut Orton
 | 8       |         {{2212 °F; 1211 °C}} |          {{2280 °F; 1249 °C}} |          {{2320 °F; 1271 °C}} |
 | 9       |         {{2235 °F; 1224 °C}} |          {{2300 °F; 1260 °C}} |          {{2336 °F; 1280 °C}} |
 | 10      |         {{2284 °F; 1251 °C}} |          {{2345 °F; 1285 °C}} |          {{2381 °F; 1305 °C}} |
+| 11      |         {{2322 °F; 1272 °C}} |          {{2361 °F; 1294 °C}} |          {{2399 °F; 1315 °C}} |
+| 12      |         {{2345 °F; 1285 °C}} |          {{2383 °F; 1306 °C}} |          {{2419 °F; 1326 °C}} |
+| 13      |         {{2390 °F; 1310 °C}} |          {{2428 °F; 1331 °C}} |          {{2458 °F; 1348 °C}} |
+| 14      |         {{2464 °F; 1351 °C}} |          {{2489 °F; 1365 °C}} |          {{2523 °F; 1384 °C}} |
 
 Tanda hubung menandai angka yang tidak disalin di sini; lihat tabel lengkap Orton untuk itu.
+
+Orton membuat kerucut sampai nomor 42 untuk pekerjaan suhu tinggi, tetapi menerbitkan suhu hanya sampai kerucut 14; untuk kerucut yang lebih panas, tabelnya "tersedia (atas permintaan)". Tabel Orton yang lebih lama, seperti yang dicetak ulang oleh pembuat tungku, memberikan kerucut besar 15 sebagai {{2608 °F; 1431 °C}} pada {{270 °F/h; 150 °C/h}}, dan kami tidak menemukan angka terbitan untuk kerucut 16 atau lebih tinggi. Melewati kerucut 14, pasang kerucut saksi{{en: witness cone}} dan berpeganglah pada kerucut itu, dan periksa bahwa suhu maksimum yang dinyatakan pembuat tungku Anda mencapai panas setinggi itu.
 
 Kerucut besar terbaca dalam beberapa derajat dari angka-angka ini: kerucut besar 6 pada {{108 °F/h; 60 °C/h}} adalah {{2228 °F; 1220 °C}}. Kerucut kecil, jenis yang dipakai di Kiln-Sitter, hanya terdaftar pada {{540 °F/h; 300 °C/h}}, jadi tabel memberikan kerucut kecil 6 sebagai {{2291 °F; 1255 °C}}. Itu bukan suhu saat sitter mematikan tungku. Tugas kerucut sitter adalah menyamai kerucut rak, dan kerucut rak memiliki keputusan akhir.
 
@@ -298,6 +304,8 @@ Nomor berjalan dari SK 022, yang terdingin, naik sampai SK 20 di sini. Antara SK
 
 Pasang setiap kerucut besar pada plakat atau gumpalan tanah liat, condong ke arah sisi lengkungnya. Seperti kerucut mana pun, jaga tinggi dan kemiringan tetap sama dari pembakaran ke pembakaran, karena selisih pada salah satunya mengubah seberapa jauh kerucut menekuk. Pasang ketiga kerucut set (di bawah) bersama, jauh di dalam tungku dekat tengah muatan, tempat kerucut menerima panas yang diterima benda, namun dapat Anda lihat melalui lubang intip; sebelum menutup tungku, pastikan Anda dapat melihat ketiganya.
 
+Kami tidak menemukan petunjuk dari pembuat atau penjual tentang seberapa dalam atau dengan sudut berapa kerucut SK dipasang. Yang paling mendekati adalah sebuah standar laboratorium, JIS R 2204, uji Jepang tentang seberapa besar panas yang dapat ditahan bahan tahan api: standar ini memasang setiap kerucut SK dengan sisi bertandanya pada sudut 80° terhadap alas datar dan kakinya sekitar 4 mm masuk ke dalam alas itu. Itu uji untuk bahan tahan api, bukan aturan untuk membakar benda keramik, dan kami membacanya dalam transkripsi standar itu, bukan dalam standar itu sendiri.
+
 ### Kerucut pemandu, bakar, dan pengaman
 
 Kerucut dijual dan dipasang sebagai tiga: kerucut pemandu, kerucut bakar pada target, dan kerucut pengaman. Ambil kerucut bakar sebagai nomor SK yang disebut resep atau tanah liat Anda, kerucut pemandu sebagai kerucut berikutnya yang lebih dingin (satu baris ke atas pada tabel) dan kerucut pengaman sebagai yang berikutnya yang lebih panas. Ketika kerucut pemandu mulai menekuk, akhir sudah dekat; ketika kerucut pengaman menekuk, pembakaran sudah terlalu jauh.
@@ -366,6 +374,8 @@ Kerucut berdiri sendiri Orton dijual di Jepang dengan nama tatsu zeegeru ("Seger
 
 - [Yuko Trading (Yuukou Shouji Kabushiki Kaisha): Hyoujun youtou ondo hyou (tabel SK, diperiksa 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
 - [JSA: JIS R 8101:1999, Taikado shiken you hyoujun koon (berlaku, dikonfirmasi ulang 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
+- [JSA: JIS R 2204:1999, Taikabutsu oyobi taikabutsu genryou no taikado shiken houhou (berlaku, dikonfirmasi ulang 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+2204:1999)
+- [kikakurui.com: transkripsi JIS R 2204:1999, tempat klausul 5 a) mengatur pemasangan kerucut (dibaca 2026-10-19)](https://kikakurui.com/r2/R2204-1999-01.html)
 - [Kyoto Municipal Institute of Industrial Technology and Culture: hal yang perlu diperhatikan saat beralih dari kerucut Kyoto ke kerucut Orton](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
 
 :::
@@ -607,7 +617,7 @@ Untuk ventilasi ruangan, dan untuk alarm karbon monoksida, lihat [Mencampur deng
 ### Saat tungku membakar
 
 - Lihat melalui lubang intip hanya dengan kacamata las shade 3 berperingkat IR; kacamata hitam tidak cukup. Skutt menyarankan memutar sumbat ke tempatnya agar tidak jatuh.
-- Jangan tinggalkan tungku tanpa pengawasan melewati waktu pembakaran yang diperkirakan; sitter bukan alat yang aman dari kegagalan.
+- Tetaplah berada di dekat tungku dan periksa tungku selama pembakaran, terutama menjelang waktu selesai yang diperkirakan; sitter bukan alat yang aman dari kegagalan. Bakarlah hanya saat ada orang dewasa di rumah dan terjaga selama seluruh pembakaran.
 - Jangan pernah membakar di atas atau di dekat apa pun yang dapat terbakar, seperti lantai kayu atau karpet.
 - Patuhi jarak aman dalam buku petunjuk Anda. Angka yang diterbitkan berkisar dari 12 inci (30 cm) sampai 3 kaki (91 cm); bila buku petunjuk tidak menyebutkan, 18 inci (46 cm) dari dinding dan 3 kaki (91 cm) dari apa pun yang dapat terbakar adalah pilihan yang paling aman.
 - Jaga ruang di sekitar bobot sitter tetap bebas agar dapat jatuh.

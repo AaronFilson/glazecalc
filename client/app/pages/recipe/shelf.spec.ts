@@ -66,6 +66,26 @@ const KAOLIN = material(
   13.96,
   { category: 'clay' }
 );
+const CALCINED = material(
+  'Calcined kaolin',
+  [
+    ['Al2O3', 1],
+    ['SiO2', 2]
+  ],
+  0,
+  { category: 'clay' }
+);
+const NEPHELINE = material(
+  'Nepheline',
+  [
+    ['Na2O', 0.75],
+    ['K2O', 0.25],
+    ['Al2O3', 1.11],
+    ['SiO2', 4.65]
+  ],
+  0,
+  { category: 'feldspar' }
+);
 const SILICA = material('Silica', [['SiO2', 1]], 0, { category: 'silica' });
 const TALC = material(
   'Talc',
@@ -120,5 +140,30 @@ describe('making a recipe from what is on hand', () => {
     const match = matchFromShelf(CELADON, shelf(CUSTER, MINSPAR, WHITING, KAOLIN, SILICA), { avoid: ['Custer'] });
     expect(match.materials.map((m) => m.name)).not.toContain('Custer');
     expect(() => matchFromShelf(CELADON, [])).toThrowError(/no materials on hand/);
+  });
+
+  it('holds raw clay to 20% where a calcined clay on hand can take up the rest, unless the potter allows more', () => {
+    // Custer has less alumina than nepheline syenite: the match takes it from more kaolin.
+    const glaze = recipe([
+      [NEPHELINE, '40'],
+      [SILICA, '25'],
+      [WHITING, '15'],
+      [KAOLIN, '20']
+    ]);
+    const amount = (match: ReturnType<typeof matchFromShelf>, name: string) =>
+      Number(match.materials.find((m) => m.name === name)?.amount ?? 0);
+    // Only raw clay brings the alumina back: the chemistry comes first, and the check says what to do.
+    const raw = matchFromShelf(glaze, shelf(CUSTER, SILICA, WHITING, KAOLIN));
+    expect(amount(raw, 'Kaolin')).toBeGreaterThan(21);
+    expect(raw.cautions.join(' ')).toMatch(/calcined kaolin/);
+    const held = matchFromShelf(glaze, shelf(CUSTER, SILICA, WHITING, KAOLIN, CALCINED));
+    expect(amount(held, 'Kaolin')).toBeLessThanOrEqual(20);
+    expect(amount(held, 'Calcined kaolin')).toBeGreaterThan(1);
+    expect(held.cautions.join(' ')).not.toMatch(/raw clay/);
+    const [was, now] = [unity(glaze), unity(held.materials)];
+    expect(now['Al2O3']).toBeCloseTo(was['Al2O3'], 1);
+    // Allow more, as the report's button does.
+    const more = matchFromShelf(glaze, shelf(CUSTER, SILICA, WHITING, KAOLIN, CALCINED), { uncapped: ['Kaolin'] });
+    expect(amount(more, 'Kaolin')).toBeGreaterThan(21);
   });
 });

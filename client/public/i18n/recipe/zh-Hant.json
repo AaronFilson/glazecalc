@@ -364,7 +364,7 @@
     "intro": "依各原料的紀錄給出；標準原料庫中的危害來自供應商的安全資料表。",
     "line": "<b>{names}：</b>{hazards}",
     "unknown": "{count, plural, other {沒有給出{list}的危害：請查看隨原料附帶的安全資料表。}}",
-    "safety": "乾的釉料原料會產生粉塵：不要讓粉塵進入您的肺部，即使是未被歸為有害的原料的粉塵也一樣。請見<mixing>安全調配與通風</mixing>；如果附近有兒童或寵物，請見<home>別讓家人中毒</home>。原料的安全資料表若有更多要求，請照做。"
+    "safety": "乾的釉料原料會產生粉塵，您必須避免粉塵進入肺部，即使是未被歸為有害的原料的粉塵也一樣。請見<mixing>安全調配與通風</mixing>；如果附近有兒童或寵物，請見<home>別讓家人中毒</home>。原料的安全資料表若有更多要求，請照做。"
   },
   "compare": {
     "heading": "比較兩個釉方",
@@ -533,7 +533,10 @@
     "suppliesShare": "{percent}% 的{oxide}",
     "suppliesLittle": "釉的一小部分",
     "changed": "{name} {from} → {to}",
-    "added": "{name} {amount}，新增"
+    "added": "{name} {amount}，新增",
+    "why": {
+      "rawClay": "生土在釉層乾燥時會收縮，用量多時可能在坯體上龜裂，並在窯中縮釉；其餘部分可以用鍛燒高嶺土補足"
+    }
   },
   "shelf": {
     "empty": "沒有現有的原料可用來調配。"
@@ -571,7 +574,8 @@
     "bands": {
       "low": "低溫燒成，Orton 06–02 號測溫錐",
       "mid": "中溫燒成，Orton 4–6 號測溫錐",
-      "high": "高溫燒成，Orton 9–11 號測溫錐"
+      "high": "高溫燒成，Orton 9–11 號測溫錐",
+      "top": "超高溫燒成，Orton 12 號以上測溫錐"
     },
     "shownFor": "沒有選擇燒成時，顯示的數值適用於：{band}。燒成會隨釉方儲存。",
     "cone": "這是該限值組對 Orton {cone} 號測溫錐的數值。",
@@ -591,6 +595,7 @@
     "notInSet": "這個限值組沒有{oxides}的範圍。",
     "checksOnly": "這個限值組只檢查{oxides}。",
     "notApply": "{name}沒有適用於這種燒成（{band}）的數值，所以不做檢查：用另一種燒成的數值會造成誤導。",
+    "topNote": "我們找到的已發表釉藥限值只到 Orton 10 號測溫錐，Glazecalc 讀取這些限值最遠只到 11 號，所以 12 號以上的燒成不會與限值比對。由您的試片決定。",
     "guidance": "這些只是參考，不是合格與否的判定：超出範圍的釉可以沒有問題，在範圍內的釉仍可能龜裂、溶出或出問題。請試燒。",
     "source": "來源：",
     "saveFailed": "無法把您選擇的限值組儲存到您的帳戶，所以仍在使用之前的限值組。",
@@ -628,7 +633,8 @@
       "ash": "Glazecalc 無法把這種釉藥的化學成分與它的燒成作比較：它含有灰，而灰的成分差異太大，這項檢查所用的已發表數據無法適用。",
       "noTemperature": "Glazecalc 無法把這種釉藥的化學成分與 {scale, select, band {{band, select, low {低溫燒成} mid {中溫燒成} other {高溫燒成}}} sk {SK {cone}} temperature {{cone} °C} other {Orton {cone} 號測溫錐}} 作比較：該錐號沒有實測溫度。",
       "between": "Glazecalc 無法把這種釉藥的化學成分與 {scale, select, band {{band, select, low {低溫燒成} mid {中溫燒成} other {高溫燒成}}} sk {SK {cone}} temperature {{cone} °C} other {Orton {cone} 號測溫錐}} 作比較：這項檢查所用的已發表數據針對低溫燒成，以及中溫和高溫燒成，不包括它們之間的錐號（01 到 3 號）。",
-      "belowChart": "Glazecalc 無法把這種釉藥的化學成分與 {scale, select, band {{band, select, low {低溫燒成} mid {中溫燒成} other {高溫燒成}}} sk {SK {cone}} temperature {{cone} °C} other {Orton {cone} 號測溫錐}} 作比較：Katz 的硼規則適用於 Orton 06 號到 10 號測溫錐，而該燒成的溫度更低。"
+      "belowChart": "Glazecalc 無法把這種釉藥的化學成分與 {scale, select, band {{band, select, low {低溫燒成} mid {中溫燒成} other {高溫燒成}}} sk {SK {cone}} temperature {{cone} °C} other {Orton {cone} 號測溫錐}} 作比較：Katz 的硼規則適用於 Orton 06 號到 10 號測溫錐，而該燒成的溫度更低。",
+      "aboveChart": "Glazecalc 無法把這種釉藥的化學成分與 {scale, select, band {{band, select, top {超高溫燒成} other {高溫燒成}}} sk {SK {cone}} temperature {{cone} °C} other {Orton {cone} 號測溫錐}} 作比較：Katz 的硼規則適用於 Orton 06 號到 10 號測溫錐，Hesselberth 與 Roy 的二氧化矽與氧化鋁數值只到 10 號，而該燒成的溫度更高。"
     }
   },
   "stull": {
@@ -979,7 +985,7 @@
     "approxTemperature": "≈ {temperature}（{basis}；近似值）",
     "approxCone": "≈ {cone}（{basis}；近似值）",
     "basis": {
-      "orton60": "每小時 60 °C 的 Orton 大型測溫錐",
+      "orton150": "Orton 較早的大型錐對照表，每小時 150 °C",
       "kyoto": "京都市立研究所以每小時 100 °C 測得",
       "stated": "照所給的值"
     },

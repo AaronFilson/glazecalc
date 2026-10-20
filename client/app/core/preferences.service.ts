@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable, Signal, WritableSignal, computed, inject, signal } from '@angular/core';
 import { firstValueFrom } from 'rxjs';
-import { CALENDARS, CURRENCIES, FORMAT_LOCALES, REGION_CODES } from '../../../lib/regions';
+import { CALENDARS, CURRENCIES, DIGIT_CHOICES, FORMAT_LOCALES, REGION_CODES } from '../../../lib/regions';
 import { LIVE_LANGUAGES } from '../../../lib/regions/languages';
 import { GramPrecision, WeightUnit } from '../shared/weights';
 import type { Palette, ThemeMode } from './theme';
@@ -40,6 +40,8 @@ export interface Preferences {
   currency: string;
   /** The calendar dates are shown in: the Gregorian, the Thai Buddhist era or Japan's eras (lib/regions CALENDARS). */
   calendar: Calendar;
+  /** The digits numbers are shown in: as usual where the potter is, 0–9, or the language's own (lib/regions DIGIT_CHOICES). */
+  digits: Digits;
 }
 
 /** Whether materials with lead may be added to recipes and suggested: off unless chosen. */
@@ -53,6 +55,8 @@ export type ConeSystem = 'orton' | 'temperature' | 'sk';
 export type Density = 'sg' | 'baume' | 'pint';
 /** Dates shown in the Gregorian calendar (the default), the Thai Buddhist era, or Japan's eras. */
 export type Calendar = (typeof CALENDARS)[number];
+/** Digits as usual where the potter is (the default), always 0–9, or the language's own script's where it has them. */
+export type Digits = (typeof DIGIT_CHOICES)[number];
 /** Hesselberth & Roy's stable glaze limits (the default), or the app's own. */
 export type LimitSetChoice = 'hesselberth-roy' | 'glazecalc';
 
@@ -76,7 +80,8 @@ const CHOICES: { [K in keyof Preferences]: ReadonlyArray<Preferences[K]> } = {
   // The ids of lib/recipe/limits.js LIMIT_SETS, its DEFAULT_LIMIT_SET first, written out to keep it from the first page.
   limitSet: ['hesselberth-roy', 'glazecalc'],
   currency: ['', ...CURRENCIES],
-  calendar: CALENDARS
+  calendar: CALENDARS,
+  digits: DIGIT_CHOICES
 };
 const NAMES = Object.keys(CHOICES) as Array<keyof Preferences>;
 
@@ -152,7 +157,8 @@ export class PreferencesService {
     recipeHelp: 0,
     limitSet: 0,
     currency: 0,
-    calendar: 0
+    calendar: 0,
+    digits: 0
   };
 
   /**
@@ -178,7 +184,8 @@ export class PreferencesService {
     recipeHelp: signal(readCopy('recipeHelp')),
     limitSet: signal(readCopy('limitSet')),
     currency: signal(readCopy('currency')),
-    calendar: signal(readCopy('calendar'))
+    calendar: signal(readCopy('calendar')),
+    digits: signal(readCopy('digits'))
   };
 
   /** Batch weights in grams, or in pounds and ounces. */
@@ -205,6 +212,7 @@ export class PreferencesService {
   readonly limitSet = this.shown('limitSet');
   readonly currency = this.shown('currency');
   readonly calendar = this.shown('calendar');
+  readonly digits = this.shown('digits');
 
   constructor() {
     // Signed out, or the session ended: the account's choices leave this browser, and the visitor's own come back.

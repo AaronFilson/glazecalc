@@ -100,6 +100,7 @@
   "limitSet-choices": "Kies hesselberth-roy of glazecalc.",
   "currency-choices": "Kies een van de valuta’s in de lijst, of laat het over aan uw regio.",
   "calendar-choices": "Datums kunnen worden getoond in de Gregoriaanse kalender (gregory), de Thaise boeddhistische jaartelling (buddhist) of de Japanse jaartelling (japanese).",
+  "digits-choices": "Cijfers kunnen worden getoond zoals gebruikelijk waar u bent (auto), als 0–9 (western) of in de eigen cijfers van de taal (native).",
   "shelf-invalid": "De voorraad is een lijst van maximaal {most} grondstoffen.",
   "shelf-full": "De voorraad kan ten hoogste {most} grondstoffen bevatten. Er is niets gewijzigd.",
   "shelf-material-unknown": "Die grondstof staat niet in uw grondstoffen of in de bibliotheek van Glazecalc.",

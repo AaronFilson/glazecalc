@@ -28,11 +28,16 @@
 //    (scripts/i18n-fingerprints.mjs); and what is still in English is
 //    counted, language by language.
 // 8. Korean is written in Hangul: hanja only where its glossary gives them.
+// 9. A translation writes its digits 0–9: a language's own (Arabic-Indic,
+//    Bengali, Devanagari) are shown from the reader's settings, never typed
+//    into a translation. The figures check (6) reads them all the same, with
+//    Indian digit groups (1,00,000) and the Arabic marks (٫ ٬ ٪).
 import { readFileSync, readdirSync, existsSync } from 'node:fs';
 import path from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { TYPE, parse } from '@formatjs/icu-messageformat-parser';
 import { Lexer } from 'marked';
+import numbers from '../lib/recipe/numbers.js';
 import { ENGLISH_ONLY_GUIDES, guideSegments, updateTranslations } from './i18n-fingerprints.mjs';
 import { sources } from './i18n-sources.mjs';
 
@@ -182,9 +187,27 @@ const UNIT_WORDS = {
   lt: [[/°([CF])\/val\.?(?![\p{L}\d])/gu, '°$1/h']]
 };
 
-/** Whether a language writes 1.5 with a point, as English does, rather than a comma. */
+/** Whether a language writes 1.5 with a point, as English does (or Arabic's ١٫٥), rather than a comma. */
 const decimalPoint = (language) =>
-  new Intl.NumberFormat(language).formatToParts(1.5).find((part) => part.type === 'decimal')?.value === '.';
+  ['.', '٫'].includes(
+    new Intl.NumberFormat(language).formatToParts(1.5).find((part) => part.type === 'decimal')?.value
+  );
+
+/**
+ * A text's numbers written with 0–9 and the marks of the language's own
+ * pattern: Arabic-Indic, Devanagari, Bengali and other digits as 0–9; the
+ * Arabic decimal and thousands marks (١٬٢٢٢٫٥) as a point and a comma, or a
+ * comma and a point where the language takes a decimal comma; the Arabic
+ * percent sign as %; and without the marks that keep a number's direction in
+ * Arabic text, which Intl writes around a sign or a percent and a copied
+ * number keeps.
+ */
+const plainNumbers = (text, english) =>
+  numbers
+    .plainDigits(text)
+    .replace(/٫/g, english ? '.' : ',')
+    .replace(/٬/g, english ? ',' : '.')
+    .replace(/٪/g, '%');
 
 /**
  * The numbers in a text, as English writes them, each with the unit after it:
@@ -197,12 +220,16 @@ const decimalPoint = (language) =>
  * Full-width forms are read as their plain ones (１０ｇ is 10 g, ℃ is °C),
  * Turkish %5 is 5 %, and a 12-hour time such as 午後8時 is kept whole, so it
  * shows as not in the English. Numbers written in words (十, 二十) are not
- * read, so they show as missing.
+ * read, so they show as missing. Indian digit groups are read as one number
+ * (Hindi's 1,00,000 is 100000, 12,34,567.5 is 1234567.5); so are any
+ * script's digits (١٢٢٢ is 1222, though checkDigits asks a translation for
+ * 0–9), the Arabic marks (١٫٥, ٥٪) and a number among the marks that keep
+ * its direction.
  */
 export function numbersIn(text, language) {
   const english = decimalPoint(language);
   const found = new Set();
-  text = plainForms(text).replace(TWELVE_HOUR, (time) => {
+  text = plainNumbers(plainForms(text), english).replace(TWELVE_HOUR, (time) => {
     found.add(time);
     return ' ';
   });
@@ -232,8 +259,9 @@ export function numbersIn(text, language) {
   text = text.replace(/(?<![\d.,])0(\d)(?=(?::|\.|[ \u00a0\u202f]?h[ \u00a0\u202f]?)\d{2}(?!\d))/g, '$1');
   // A time on the hour is its hour, however written: 8:00 and 8 h 00 are 8, as 8am and Turkish saat 8.00 are.
   text = text.replace(/(?<![\d.,:])(\d{1,2})(?::|[ \u00a0\u202f]?h[ \u00a0\u202f]?)00(?![\d:])/g, '$1');
+  // Indian groups first, where a decimal point leaves the comma to group: 12,34,567.5, not 12 and 34.
   const pattern = english
-    ? /\d+(?:,\d{3}(?!\d))*(?:\.\d+)?/g
+    ? /\d{1,2}(?:,\d{2})+,\d{3}(?!\d)(?:\.\d+)?|\d+(?:,\d{3}(?!\d))*(?:\.\d+)?/g
     : /\d+(?:[.\u00a0\u202f]\d{3}(?!\d))*(?:,\d+|\.\d{1,2}(?!\d))?/g;
   for (const match of text.matchAll(pattern)) {
     let number = match[0];
@@ -651,6 +679,43 @@ export function checkGuides(dir = path.join(I18N, 'guides'), englishOnly = ENGLI
   return problems;
 }
 
+/**
+ * Problems with the digits a translation writes: 0–9 only. A language whose
+ * own digits are shown (Arabic in Egypt ١٢٣, Bengali ১২৩, Marathi १२३) gets
+ * them from the reader's settings when numbers are formatted (lib/regions
+ * formatLocaleFor), so a translator writes 1222 °C as the English does; a
+ * number in other digits would stay in them whatever the reader chose.
+ */
+export function checkDigits(dir = I18N) {
+  const OTHER_DIGITS = /(?![0-9])\p{Nd}/gu;
+  const problems = [];
+  const check = (label, text) => {
+    const found = [...new Set(text.match(OTHER_DIGITS) ?? [])];
+    if (found.length) {
+      problems.push(
+        `${label}: writes digits as 0–9, not ${found.join(' ')}; the reader's settings show a language's own digits`
+      );
+    }
+  };
+  for (const [scope, languages] of Object.entries(messageFiles(dir))) {
+    for (const [language, file] of Object.entries(languages)) {
+      if (language === 'en') continue;
+      for (const [key, message] of Object.entries(flatten(readJson(file)))) {
+        check(`${scope || 'app'} ${language} ${key}`, message);
+      }
+    }
+  }
+  const guides = path.join(dir, 'guides');
+  if (existsSync(guides)) {
+    for (const guide of readdirSync(guides, { withFileTypes: true }).filter((entry) => entry.isDirectory())) {
+      for (const file of readdirSync(path.join(guides, guide.name)).filter((n) => n.endsWith('.md') && n !== 'en.md')) {
+        check(`guides/${guide.name}/${file}`, readFileSync(path.join(guides, guide.name, file), 'utf8'));
+      }
+    }
+  }
+  return problems;
+}
+
 /** Problems with the translations' fingerprints, and what each language still shows in English. */
 export function checkFingerprints(options) {
   const { changes, inEnglish } = updateTranslations({ ...options, write: false });
@@ -707,13 +772,16 @@ if (import.meta.url === pathToFileURL(process.argv[1] ?? '').href) {
   const only = process.argv.includes('--language') ? process.argv[process.argv.indexOf('--language') + 1] : null;
   const fingerprints = checkFingerprints();
   const problems = only
-    ? [...checkTranslations(), ...checkGuides(), ...checkHanja()].filter((problem) => aboutLanguage(problem, only))
+    ? [...checkTranslations(), ...checkGuides(), ...checkHanja(), ...checkDigits()].filter((problem) =>
+        aboutLanguage(problem, only)
+      )
     : [
         ...compareKeys(await keysInUse()),
         ...checkTranslations(),
         ...(await checkSources()),
         ...checkGuides(),
         ...checkHanja(),
+        ...checkDigits(),
         ...fingerprints.problems
       ];
   for (const [language, left] of Object.entries(fingerprints.inEnglish)) {

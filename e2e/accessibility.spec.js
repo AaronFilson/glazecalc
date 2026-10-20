@@ -75,8 +75,9 @@ const APP_PAGES = [
 test.describe('every palette, light and dark', () => {
   for (const palette of ['tenmoku', 'celadon', 'cobalt', 'oxblood', 'shino', 'ash']) {
     test(palette, async ({ page }) => {
-      // Four pages, each checked whole: more than the default 30 seconds on a busy machine.
-      test.setTimeout(60000);
+      // Four pages, each checked whole, and the account page keeps growing (pickers, settings):
+      // about 25 seconds a check on a busy Linux run.
+      test.setTimeout(120000);
       await signUpAndSignIn(page);
       for (const theme of ['light', 'dark']) {
         const res = await page.request.put(API + '/preferences', { data: { palette, theme } });
@@ -135,9 +136,10 @@ for (const colorScheme of ['light', 'dark']) {
     });
 
     // The recipe page in each of its states. It is the heaviest page to check (every
-    // standard material is listed), so it has its own test and more time.
+    // standard material is listed), so it has its own test and more time: about 45 seconds on a
+    // quiet Windows machine (as on master), twice that on a busy Linux run.
     test('the recipe page: a result, printing, comparing, problems and questions', async ({ page }) => {
-      test.setTimeout(90000);
+      test.setTimeout(180000);
       await signUpAndSignIn(page);
       // The calculator with a recipe worked out.
       await page.goto('/recipe');
@@ -170,8 +172,8 @@ for (const colorScheme of ['light', 'dark']) {
     });
 
     test('a trial', async ({ page }) => {
-      // Several pages or checks of a whole page: more than the default 30 seconds on a busy machine.
-      test.setTimeout(60000);
+      // Several pages or checks of a whole page, the recipe page among them: two minutes on a busy machine.
+      test.setTimeout(120000);
       await startTrial(page);
       await expect(page.locator('.trial-bar')).toBeVisible();
       await expectNoProblems(page, colorScheme + ' trial /recipe');

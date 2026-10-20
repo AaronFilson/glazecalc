@@ -364,7 +364,7 @@
     "intro": "Som hver råvares post angiver dem; standardbibliotekets stammer fra leverandørernes sikkerhedsdatablade.",
     "line": "<b>{names}:</b> {hazards}",
     "unknown": "{count, plural, one {Der er ikke angivet nogen farer for {list}: se sikkerhedsdatabladet, der følger med.} other {Der er ikke angivet nogen farer for {list}: se de sikkerhedsdatablade, der følger med.}}",
-    "safety": "Tørre glasurråvarer giver støv: hold det ude af lungerne, også støv fra råvarer, der ikke er klassificeret som farlige: se <mixing>Sikker blanding og ventilation</mixing>, og <home>Forgift ikke familien</home>, hvis der er børn eller kæledyr i nærheden. Hvor en råvares sikkerhedsdatablad siger mere, så følg det."
+    "safety": "Tørre glasurråvarer giver støv, og det skal holdes ude af lungerne, også støv fra råvarer, der ikke er klassificeret som farlige. Se <mixing>Sikker blanding og ventilation</mixing>, og hvis der er børn eller kæledyr i nærheden, også <home>Forgift ikke familien</home>. Hvor en råvares sikkerhedsdatablad siger mere, så følg det."
   },
   "compare": {
     "heading": "Sammenlign to opskrifter",
@@ -533,7 +533,10 @@
     "suppliesShare": "{percent} % af {oxide}",
     "suppliesLittle": "lidt af glasuren",
     "changed": "{name} {from} → {to}",
-    "added": "{name} {amount}, ny"
+    "added": "{name} {amount}, ny",
+    "why": {
+      "rawClay": "ukalcineret ler svinder, når glasuren tørrer, og meget af det kan få glasuren til at revne på emnet og kravle i ovnen; kalcineret kaolin kan udgøre resten"
+    }
   },
   "shelf": {
     "empty": "Der er ingen råvarer på lager at lave den af."
@@ -571,7 +574,8 @@
     "bands": {
       "low": "Lav temperatur, kegle 06–02",
       "mid": "Mellemtemperatur, kegle 4–6",
-      "high": "Høj temperatur, kegle 9–11"
+      "high": "Høj temperatur, kegle 9–11",
+      "top": "Meget høj temperatur, kegle 12 og derover"
     },
     "shownFor": "Når ingen brænding er valgt, gælder de viste tal for: {band}. Brændingen gemmes sammen med opskriften.",
     "cone": "Det er sættets tal for kegle {cone}.",
@@ -591,6 +595,7 @@
     "notInSet": "Intet interval i dette sæt for {oxides}.",
     "checksOnly": "Dette sæt kontrollerer kun {oxides}.",
     "notApply": "{name} har ingen tal for denne brænding ({band}), så der kontrolleres ikke: tal for en anden brænding ville vildlede.",
+    "topNote": "De offentliggjorte glasurgrænser, vi har fundet, stopper ved kegle 10, og Glazecalc læser dem ikke videre end til kegle 11, så en brænding fra kegle 12 og op kontrolleres ikke mod grænser. Prøvefliserne afgør det.",
     "guidance": "Det er retningslinjer og ikke en afgørelse af bestået eller ikke bestået: en glasur uden for dem kan være fin, og en inden for dem kan stadig krakelere, afgive metaller eller mislykkes. Test den.",
     "source": "Kilde:",
     "saveFailed": "Valget af grænsesæt kunne ikke gemmes i kontoen, så det tidligere grænsesæt er stadig det, der bruges.",
@@ -628,7 +633,8 @@
       "ash": "Glazecalc kan ikke sammenligne denne glasurs kemi med dens brænding: den indeholder aske, hvis sammensætning varierer for meget til de offentliggjorte tal, denne kontrol bruger.",
       "noTemperature": "Glazecalc kan ikke sammenligne denne glasurs kemi med {scale, select, band {{band, select, low {lav temperatur} mid {mellemtemperatur} other {høj temperatur}}} sk {SK {cone}} temperature {{cone} °C} other {kegle {cone}}}: der er ingen målt temperatur for den kegle.",
       "between": "Glazecalc kan ikke sammenligne denne glasurs kemi med {scale, select, band {{band, select, low {lav temperatur} mid {mellemtemperatur} other {høj temperatur}}} sk {SK {cone}} temperature {{cone} °C} other {kegle {cone}}}: de offentliggjorte tal, denne kontrol bruger, gælder lav temperatur samt mellem- og høj temperatur, ikke keglerne imellem (01 til 3).",
-      "belowChart": "Glazecalc kan ikke sammenligne denne glasurs kemi med {scale, select, band {{band, select, low {lav temperatur} mid {mellemtemperatur} other {høj temperatur}}} sk {SK {cone}} temperature {{cone} °C} other {kegle {cone}}}: Katz’ borregel gælder kegle 06 til kegle 10, og den brænding er køligere."
+      "belowChart": "Glazecalc kan ikke sammenligne denne glasurs kemi med {scale, select, band {{band, select, low {lav temperatur} mid {mellemtemperatur} other {høj temperatur}}} sk {SK {cone}} temperature {{cone} °C} other {kegle {cone}}}: Katz’ borregel gælder kegle 06 til kegle 10, og den brænding er køligere.",
+      "aboveChart": "Glazecalc kan ikke sammenligne denne glasurs kemi med {scale, select, band {{band, select, top {meget høj temperatur} other {høj temperatur}}} sk {SK {cone}} temperature {{cone} °C} other {kegle {cone}}}: Katz’ borregel gælder kegle 06 til kegle 10, Hesselberths og Roys tal for silica og aluminiumoxid stopper ved kegle 10, og den brænding er varmere."
     }
   },
   "stull": {
@@ -979,7 +985,7 @@
     "approxTemperature": "≈ {temperature} ({basis}; omtrentligt)",
     "approxCone": "≈ {cone} ({basis}; omtrentligt)",
     "basis": {
-      "orton60": "store Ortonkegler ved 60 °C pr. time",
+      "orton150": "Ortons ældre tabel for store kegler ved 150 °C pr. time",
       "kyoto": "målt ved 100 °C pr. time af Kyotos kommunale institut",
       "stated": "som angivet"
     },

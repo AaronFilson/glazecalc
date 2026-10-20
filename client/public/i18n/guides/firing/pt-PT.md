@@ -81,7 +81,7 @@ A tabela dá para um cone 6 autossuportado {{2232 °F; 1222 °C}}, mas só quand
 
 ## A tabela de cones {#cone-chart}
 
-Estes valores vêm da tabela de cones Orton (©2001) para cones autossuportados. Escolha a coluna que corresponde à rapidez com que o seu forno subiu nos últimos {{180 °F; 100 °C}}. A regra prática da Orton é a coluna {{270 °F/h; 150 °C/h}} para uma cozedura rápida, a coluna {{108 °F/h; 60 °C/h}} para uma média e a coluna {{27 °F/h; 15 °C/h}} para uma lenta. Para calcular uma velocidade, divida a subida de temperatura pelas horas que demorou: um forno que sobe {{900 °F; 500 °C}} em 3 horas aquece a cerca de {{300 °F/h; 167 °C/h}}.
+Estes valores vêm da tabela de cones Orton (©2001) para cones autossuportados; os cones 11 a 14 vêm das tabelas que a Orton publica hoje, que dão os mesmos valores onde se sobrepõem, e para os cones 13 e 14 só em °C (os seus °F foram aqui convertidos). Escolha a coluna que corresponde à rapidez com que o seu forno subiu nos últimos {{180 °F; 100 °C}}. A regra prática da Orton é a coluna {{270 °F/h; 150 °C/h}} para uma cozedura rápida, a coluna {{108 °F/h; 60 °C/h}} para uma média e a coluna {{27 °F/h; 15 °C/h}} para uma lenta. Para calcular uma velocidade, divida a subida de temperatura pelas horas que demorou: um forno que sobe {{900 °F; 500 °C}} em 3 horas aquece a cerca de {{300 °F/h; 167 °C/h}}.
 
 Table: Cones Orton autossuportados: a temperatura a que cada um dobra, por velocidade de aquecimento nos últimos {{180 °F; 100 °C}}
 Label: Tabela de cones Orton
@@ -108,8 +108,14 @@ Label: Tabela de cones Orton
 | 8    |        {{2212 °F; 1211 °C}} |         {{2280 °F; 1249 °C}} |           {{2320 °F; 1271 °C}} |
 | 9    |        {{2235 °F; 1224 °C}} |         {{2300 °F; 1260 °C}} |           {{2336 °F; 1280 °C}} |
 | 10   |        {{2284 °F; 1251 °C}} |         {{2345 °F; 1285 °C}} |           {{2381 °F; 1305 °C}} |
+| 11   |        {{2322 °F; 1272 °C}} |         {{2361 °F; 1294 °C}} |           {{2399 °F; 1315 °C}} |
+| 12   |        {{2345 °F; 1285 °C}} |         {{2383 °F; 1306 °C}} |           {{2419 °F; 1326 °C}} |
+| 13   |        {{2390 °F; 1310 °C}} |         {{2428 °F; 1331 °C}} |           {{2458 °F; 1348 °C}} |
+| 14   |        {{2464 °F; 1351 °C}} |         {{2489 °F; 1365 °C}} |           {{2523 °F; 1384 °C}} |
 
 Um traço indica um valor que não foi copiado para aqui; consulte-o na tabela completa da Orton.
+
+A Orton fabrica cones até ao 42 para trabalhos a alta temperatura, mas só publica temperaturas até ao cone 14; para cones mais quentes, as suas tabelas estão «disponíveis (a pedido)». Uma tabela Orton mais antiga, tal como os fabricantes de fornos a reimprimem, dá para um cone 15 grande {{2608 °F; 1431 °C}} a {{270 °F/h; 150 °C/h}}, e não encontrámos nenhum valor publicado para o cone 16 ou superiores. Acima do cone 14, coloque cones testemunho{{en: witness cones}} e guie-se por eles, e confirme que a temperatura máxima indicada pelo fabricante do seu forno chega a esse calor.
 
 Os cones grandes ficam a poucos graus destes valores: um cone 6 grande a {{108 °F/h; 60 °C/h}} dá {{2228 °F; 1220 °C}}. Os cones pequenos, os que se usam no kiln sitter, só aparecem na tabela a {{540 °F/h; 300 °C/h}}, por isso a tabela dá para um cone 6 pequeno {{2291 °F; 1255 °C}}. Essa não é a temperatura a que um kiln sitter desliga o forno. A função do cone do kiln sitter é acompanhar o cone da placa, e é o cone da placa que tem a última palavra.
 
@@ -298,6 +304,8 @@ Aqui, os números vão do SK 022, o mais frio, até ao SK 20. Entre o SK 015 e o
 
 Coloque cada cone grande numa placa de cones ou num pedaço de barro, inclinado para o lado da sua face de dobra. Como com qualquer cone, mantenha a altura e a inclinação iguais de cozedura para cozedura, porque uma diferença em qualquer delas muda o quanto o cone dobra. Coloque juntos os três cones do conjunto{{en: cone pack}} (ver abaixo), bem dentro do forno, perto do centro da carga, onde recebem o calor que as peças recebem, mas onde os consiga ver por um óculo; antes de fechar o forno, verifique se consegue ver os três.
 
+Não encontrámos instruções de nenhum fabricante ou vendedor sobre a que profundidade ou com que ângulo colocar os cones SK. O mais próximo é uma norma de laboratório, a JIS R 2204, o ensaio japonês de quanto calor um material refratário aguenta: coloca cada cone SK com a face marcada a 80° de uma base plana e o pé enterrado cerca de 4 mm nela. É um ensaio para refratários, não uma regra para cozer peças, e lemo-lo numa transcrição da norma, não na própria norma.
+
 ### Cone guia, cone de cozedura e cone de proteção
 
 Os cones vendem-se e colocam-se em grupos de três: um cone guia, um cone de cozedura no alvo e um cone de proteção. Tome como cone de cozedura o número SK que a sua receita ou o seu barro indica, como cone guia o cone imediatamente mais frio (uma linha acima na tabela) e como cone de proteção o imediatamente mais quente. Quando o cone guia começa a dobrar, o fim está perto; quando o cone de proteção dobra, a cozedura foi longe demais.
@@ -366,6 +374,8 @@ Os cones autossuportados Orton vendem-se no Japão com o nome 立つゼーゲル
 
 - [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (a tabela SK, consultada em 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
 - [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (em vigor, reconfirmada em 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
+- [JSA: JIS R 2204:1999, 耐火物及び耐火物原料の耐火度試験方法 (em vigor, reconfirmada em 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+2204:1999)
+- [kikakurui.com: uma transcrição da JIS R 2204:1999, cuja cláusula 5 a) define como colocar os cones (lida em 2026-10-19)](https://kikakurui.com/r2/R2204-1999-01.html)
 - [Kyoto Municipal Institute of Industrial Technology and Culture: pontos a ter em conta ao passar dos cones de Quioto para os cones Orton](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
 
 :::
@@ -607,7 +617,7 @@ Para a ventilação da sala e para os detetores de monóxido de carbono, veja [M
 ### Enquanto o forno está a cozer
 
 - Espreite por um óculo apenas com óculos de soldadura com proteção IV e escala 3; os óculos de sol não bastam. A Skutt aconselha a rodar os tampões ao colocá-los para que não caiam.
-- Não deixe o forno sem vigilância além do tempo de cozedura previsto; um sitter não é à prova de falhas.
+- Fique por perto e verifique o forno enquanto coze, sobretudo perto da hora prevista para terminar; um sitter não é à prova de falhas. Coza apenas quando houver um adulto em casa e acordado durante toda a cozedura.
 - Nunca coza sobre ou perto de nada que arda, como um soalho de madeira ou uma alcatifa.
 - Respeite as distâncias de segurança do seu manual. Os valores publicados vão de 12 polegadas (30 cm) a 3 pés (91 cm); onde o manual é omisso, 18 polegadas (46 cm) das paredes e 3 pés (91 cm) de qualquer coisa que arda é a escolha mais segura.
 - Mantenha livre o espaço à volta do peso do sitter para que possa cair.

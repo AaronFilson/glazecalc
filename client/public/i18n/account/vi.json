@@ -270,6 +270,22 @@
         "saved": "Đã lưu: ngày được hiển thị theo niên hiệu Nhật Bản."
       }
     },
+    "digits": {
+      "legend": "Chữ số",
+      "help": "Chữ số dùng để hiển thị số. Một số ngôn ngữ có chữ số riêng, như tiếng Ả Rập, tiếng Bengal và tiếng Hindi, và nơi bạn ở quyết định loại nào là thông dụng. Bạn có thể nhập số bằng loại nào cũng được.",
+      "auto": {
+        "label": "Theo cách thông dụng nơi bạn ở",
+        "saved": "Đã lưu: chữ số theo cách thông dụng nơi bạn ở."
+      },
+      "western": {
+        "label": "Chữ số phương Tây, 0–9",
+        "saved": "Đã lưu: số được hiển thị bằng các chữ số 0–9."
+      },
+      "native": {
+        "label": "Chữ số riêng của ngôn ngữ, nếu ngôn ngữ đó có",
+        "saved": "Đã lưu: số được hiển thị bằng chữ số riêng của ngôn ngữ, nếu ngôn ngữ đó có."
+      }
+    },
     "decimalMark": {
       "legend": "Nhập lượng",
       "either": {

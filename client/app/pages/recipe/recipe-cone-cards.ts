@@ -15,7 +15,7 @@ import {
   testedCones
 } from '../../../../lib/cones/firing';
 import { ConeResult, CONE_RESULTS, resultKey } from '../../../../lib/cones/results';
-import { LIMIT_SETS, limitRows } from '../../../../lib/recipe/limits';
+import { FiringBand, LIMIT_SETS, limitRows } from '../../../../lib/recipe/limits';
 import { errorMessage } from '../../core/error-message';
 import { FiringLinksService } from '../../core/firing-links.service';
 import { LocaleService } from '../../core/locale.service';
@@ -434,7 +434,7 @@ export class RecipeConeCards {
   private readonly cautions = computed(() => {
     const unity = this.unity();
     const set = LIMIT_SETS[this.preferences.limitSet()] ?? LIMIT_SETS['hesselberth-roy']!;
-    return (band: 'low' | 'mid' | 'high'): number | null => {
+    return (band: FiringBand): number | null => {
       if (!unity) return null;
       const rows = limitRows(unity, set, band);
       return rows ? rows.filter((row) => row.past).length : null;

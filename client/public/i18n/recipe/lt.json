@@ -364,7 +364,7 @@
     "intro": "Kaip nurodyta kiekvienos žaliavos įraše; standartinės bibliotekos pavojai paimti iš tiekėjų saugos duomenų lapų.",
     "line": "<b>{names}:</b> {hazards}",
     "unknown": "{count, plural, one {{list}: pavojų nenurodyta, žr. kartu pateikiamą saugos duomenų lapą.} few {{list}: pavojų nenurodyta, žr. kartu pateikiamus saugos duomenų lapus.} many {{list}: pavojų nenurodyta, žr. kartu pateikiamus saugos duomenų lapus.} other {{list}: pavojų nenurodyta, žr. kartu pateikiamus saugos duomenų lapus.}}",
-    "safety": "Sausos glazūros žaliavos sudaro dulkes: neleiskite joms patekti į plaučius, net ir žaliavų, kurios nepriskiriamos pavojingoms, dulkėms: žr. <mixing>Saugus maišymas ir vėdinimas</mixing> ir <home>Neapnuodykite savo šeimos</home>, jei šalia yra vaikų ar augintinių. Jei žaliavos saugos duomenų lape rašoma daugiau, laikykitės jo."
+    "safety": "Sausos glazūros žaliavos sudaro dulkes, ir jūs privalote neleisti joms patekti į plaučius, net ir žaliavų, kurios nepriskiriamos pavojingoms, dulkėms. Žr. <mixing>Saugus maišymas ir vėdinimas</mixing>, o jei šalia yra vaikų ar augintinių, – ir <home>Neapnuodykite savo šeimos</home>. Jei žaliavos saugos duomenų lape rašoma daugiau, laikykitės jo."
   },
   "compare": {
     "heading": "Palyginti du receptus",
@@ -533,7 +533,10 @@
     "suppliesShare": "{percent} % {oxide}",
     "suppliesLittle": "nedidelė glazūros dalis",
     "changed": "{name} {from} → {to}",
-    "added": "{name} {amount}, nauja"
+    "added": "{name} {amount}, nauja",
+    "why": {
+      "rawClay": "nedegtas molis džiūstant glazūrai traukiasi, o kai jo daug, glazūra gali suskeldėti ant dirbinio ir krosnyje susitraukti į salas; likusią dalį gali duoti kalcinuotas kaolinas"
+    }
   },
   "shelf": {
     "empty": "Nėra turimų žaliavų, iš kurių būtų galima sudaryti receptą."
@@ -571,7 +574,8 @@
     "bands": {
       "low": "Žemas degimas, piroskopai 06–02",
       "mid": "Vidutinis degimas, piroskopai 4–6",
-      "high": "Aukštas degimas, piroskopai 9–11"
+      "high": "Aukštas degimas, piroskopai 9–11",
+      "top": "Labai aukštas degimas, piroskopai 12 ir karštesni"
     },
     "shownFor": "Kai degimas nepasirinktas, rodomi skaičiai skirti: {band}. Degimas įrašomas su receptu.",
     "cone": "Tai rinkinio skaičiai piroskopui {cone}.",
@@ -591,6 +595,7 @@
     "notInSet": "Šiame rinkinyje nėra intervalo: {oxides}.",
     "checksOnly": "Šis rinkinys tikrina tik: {oxides}.",
     "notApply": "Ribų rinkinys {name} neturi skaičių šiam degimui ({band}), todėl netikrinama: kito degimo skaičiai klaidintų.",
+    "topNote": "Mūsų rastos paskelbtos glazūrų ribos baigiasi ties piroskopu 10, o Glazecalc jas taiko ne toliau kaip iki piroskopo 11, todėl degimas nuo piroskopo 12 ir karštesnis su ribomis netikrinamas. Sprendžia jūsų bandiniai.",
     "guidance": "Tai gairės, o ne „išlaikyta“ ar „neišlaikyta“: glazūra už jų ribų gali būti gera, o jų ribose esanti vis tiek gali trūkinėti, išskirti metalus ar sugesti. Išbandykite ją.",
     "source": "Šaltinis:",
     "saveFailed": "Jūsų ribų rinkinio pasirinkimo įrašyti į paskyrą nepavyko, todėl vis dar naudojamas ankstesnis ribų rinkinys.",
@@ -628,7 +633,8 @@
       "ash": "Glazecalc negali palyginti šios glazūros chemijos su jos degimu: joje yra pelenų, kurių sudėtis per daug kinta šiam tikrinimui naudojamiems paskelbtiems skaičiams.",
       "noTemperature": "Glazecalc negali palyginti šios glazūros chemijos su nurodytu degimu ({scale, select, band {{band, select, low {žemas degimas} mid {vidutinis degimas} other {aukštas degimas}}} sk {SK {cone}} temperature {{cone} °C} other {piroskopas {cone}}}): šiam piroskopui išmatuotos temperatūros nėra.",
       "between": "Glazecalc negali palyginti šios glazūros chemijos su nurodytu degimu ({scale, select, band {{band, select, low {žemas degimas} mid {vidutinis degimas} other {aukštas degimas}}} sk {SK {cone}} temperature {{cone} °C} other {piroskopas {cone}}}): šiam tikrinimui naudojami paskelbti skaičiai skirti žemam degimui ir vidutiniam bei aukštam degimui, o ne tarp jų esantiems piroskopams (nuo 01 iki 3).",
-      "belowChart": "Glazecalc negali palyginti šios glazūros chemijos su nurodytu degimu ({scale, select, band {{band, select, low {žemas degimas} mid {vidutinis degimas} other {aukštas degimas}}} sk {SK {cone}} temperature {{cone} °C} other {piroskopas {cone}}}): Katzo boro taisyklė skirta piroskopams nuo 06 iki 10, o šis degimas vėsesnis."
+      "belowChart": "Glazecalc negali palyginti šios glazūros chemijos su nurodytu degimu ({scale, select, band {{band, select, low {žemas degimas} mid {vidutinis degimas} other {aukštas degimas}}} sk {SK {cone}} temperature {{cone} °C} other {piroskopas {cone}}}): Katzo boro taisyklė skirta piroskopams nuo 06 iki 10, o šis degimas vėsesnis.",
+      "aboveChart": "Glazecalc negali palyginti šios glazūros chemijos su nurodytu degimu ({scale, select, band {{band, select, top {labai aukštas degimas} other {aukštas degimas}}} sk {SK {cone}} temperature {{cone} °C} other {piroskopas {cone}}}): Katzo boro taisyklė skirta piroskopams nuo 06 iki 10, Hesselbertho ir Roy silicio dioksido ir aliuminio oksido skaičiai baigiasi ties piroskopu 10, o šis degimas karštesnis."
     }
   },
   "stull": {
@@ -979,7 +985,7 @@
     "approxTemperature": "≈ {temperature} ({basis}; apytiksliai)",
     "approxCone": "≈ {cone} ({basis}; apytiksliai)",
     "basis": {
-      "orton60": "Ortono dideli piroskopai, 60 °C per valandą",
+      "orton150": "senesnė Ortono didelių piroskopų lentelė, 150 °C per valandą",
       "kyoto": "išmatuota 100 °C per valandą Kioto miesto institute",
       "stated": "kaip nurodyta"
     },

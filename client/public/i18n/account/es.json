@@ -270,6 +270,22 @@
         "saved": "Guardado: las fechas se muestran en eras japonesas."
       }
     },
+    "digits": {
+      "legend": "Dígitos",
+      "help": "Los dígitos con los que se muestran los números. Algunos idiomas tienen los suyos propios, como el árabe, el bengalí y el hindi, y el lugar donde está decide cuáles son los habituales. Puede escribir números con cualquiera de los dos.",
+      "auto": {
+        "label": "Como es habitual donde está",
+        "saved": "Guardado: dígitos como es habitual donde está."
+      },
+      "western": {
+        "label": "Dígitos occidentales, 0–9",
+        "saved": "Guardado: los números se muestran con los dígitos 0–9."
+      },
+      "native": {
+        "label": "Los dígitos propios del idioma, si los tiene",
+        "saved": "Guardado: los números se muestran con los dígitos propios del idioma, si los tiene."
+      }
+    },
     "decimalMark": {
       "legend": "Escritura de cantidades",
       "either": {

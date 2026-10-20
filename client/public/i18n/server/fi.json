@@ -100,6 +100,7 @@
   "limitSet-choices": "Valitse hesselberth-roy tai glazecalc.",
   "currency-choices": "Valitse jokin luettelon valuutoista tai jätä valinta alueen varaan.",
   "calendar-choices": "Päivämäärät voidaan näyttää gregoriaanisen kalenterin (gregory), thaimaalaisen buddhalaisen ajanlaskun (buddhist) tai japanilaisten aikakausien (japanese) mukaan.",
+  "digits-choices": "Numerot voidaan näyttää oman alueen tavan mukaan (auto), muodossa 0–9 (western) tai kielen omilla numeroilla (native).",
   "shelf-invalid": "Varasto on luettelo, jossa on enintään {most} raaka-ainetta.",
   "shelf-full": "Varastossa voi olla enintään {most} raaka-ainetta. Mitään ei muutettu.",
   "shelf-material-unknown": "Tätä raaka-ainetta ei ole omissa raaka-aineissa eikä Glazecalcin kirjastossa.",

@@ -81,7 +81,7 @@ La tabella dà per un cono 6 autoportante {{2232 °F; 1222 °C}}, ma solo se neg
 
 ## La tabella dei coni {#cone-chart}
 
-Questi valori vengono dalla tabella dei coni{{en: cone chart}} di Orton (©2001) per i coni autoportanti. Scegliere la colonna che corrisponde alla velocità con cui il forno è salito negli ultimi {{180 °F; 100 °C}}. La regola pratica di Orton è la colonna {{270 °F/h; 150 °C/h}} per una cottura veloce, la colonna {{108 °F/h; 60 °C/h}} per una media e la colonna {{27 °F/h; 15 °C/h}} per una lenta. Per calcolare una velocità, dividere i gradi saliti per le ore impiegate: un forno che sale di {{900 °F; 500 °C}} in 3 ore si riscalda a circa {{300 °F/h; 167 °C/h}}.
+Questi valori vengono dalla tabella dei coni{{en: cone chart}} di Orton (©2001) per i coni autoportanti; i coni da 11 a 14 vengono dalle tabelle che Orton pubblica oggi, che dove si sovrappongono danno gli stessi valori, e per i coni 13 e 14 solo in °C (qui i loro °F sono convertiti). Scegliere la colonna che corrisponde alla velocità con cui il forno è salito negli ultimi {{180 °F; 100 °C}}. La regola pratica di Orton è la colonna {{270 °F/h; 150 °C/h}} per una cottura veloce, la colonna {{108 °F/h; 60 °C/h}} per una media e la colonna {{27 °F/h; 15 °C/h}} per una lenta. Per calcolare una velocità, dividere i gradi saliti per le ore impiegate: un forno che sale di {{900 °F; 500 °C}} in 3 ore si riscalda a circa {{300 °F/h; 167 °C/h}}.
 
 Table: Coni autoportanti Orton: la temperatura alla quale si piega ciascuno, secondo la velocità di riscaldamento negli ultimi {{180 °F; 100 °C}}
 Label: Tabella dei coni Orton
@@ -108,8 +108,14 @@ Label: Tabella dei coni Orton
 | 8    |        {{2212 °F; 1211 °C}} |         {{2280 °F; 1249 °C}} |           {{2320 °F; 1271 °C}} |
 | 9    |        {{2235 °F; 1224 °C}} |         {{2300 °F; 1260 °C}} |           {{2336 °F; 1280 °C}} |
 | 10   |        {{2284 °F; 1251 °C}} |         {{2345 °F; 1285 °C}} |           {{2381 °F; 1305 °C}} |
+| 11   |        {{2322 °F; 1272 °C}} |         {{2361 °F; 1294 °C}} |           {{2399 °F; 1315 °C}} |
+| 12   |        {{2345 °F; 1285 °C}} |         {{2383 °F; 1306 °C}} |           {{2419 °F; 1326 °C}} |
+| 13   |        {{2390 °F; 1310 °C}} |         {{2428 °F; 1331 °C}} |           {{2458 °F; 1348 °C}} |
+| 14   |        {{2464 °F; 1351 °C}} |         {{2489 °F; 1365 °C}} |           {{2523 °F; 1384 °C}} |
 
 Un trattino indica un valore non riportato qui: si trova nella tabella completa di Orton.
+
+Orton produce coni fino al 42 per i lavori ad alta temperatura, ma pubblica temperature solo fino al cono 14; per i coni più caldi le sue tabelle sono «disponibili (su richiesta)». Una tabella Orton più vecchia, come la ristampano i produttori di forni, dà per un cono 15 grande {{2608 °F; 1431 °C}} a {{270 °F/h; 150 °C/h}}, e non abbiamo trovato nessun valore pubblicato per il cono 16 o superiori. Oltre il cono 14, mettere coni testimone{{en: witness cones}} e regolarsi su di essi, e verificare che la temperatura massima dichiarata dal produttore del forno raggiunga quel calore.
 
 I coni grandi si discostano di pochi gradi da questi valori: un cono 6 grande a {{108 °F/h; 60 °C/h}} si piega a {{2228 °F; 1220 °C}}. I coni piccoli, quelli usati nel kiln sitter, sono indicati solo a {{540 °F/h; 300 °C/h}}, perciò la tabella dà per un cono 6 piccolo {{2291 °F; 1255 °C}}. Non è la temperatura alla quale il kiln sitter spegne il forno. Il compito del cono del kiln sitter è corrispondere al cono sulla piastra, ed è il cono sulla piastra ad avere l’ultima parola.
 
@@ -298,6 +304,8 @@ Qui i numeri vanno da SK 022, il più freddo, fino a SK 20. Tra SK 015 e SK 6 i 
 
 Fissare ogni cono grande in un supporto per coni o in un blocchetto di argilla, inclinato verso la sua faccia di piegatura. Come per ogni cono, mantenere la stessa altezza e la stessa inclinazione da una cottura all’altra, perché una differenza nell’una o nell’altra cambia quanto si piega. Posizionare insieme i tre coni della terna di coni{{en: cone pack}} (più sotto), ben dentro il forno, vicino al centro dell’infornata, dove ricevono il calore che ricevono i pezzi, ma dove si possono comunque vedere da uno spioncino; prima di chiudere il forno, controllare di vederli tutti e tre.
 
+Non abbiamo trovato istruzioni di produttori o rivenditori su quanto in profondità o con quale angolo posizionare i coni SK. Il riferimento più vicino è una norma di laboratorio, la JIS R 2204, la prova giapponese di quanto calore sopporta un materiale refrattario: posiziona ogni cono SK con la faccia marcata a 80° rispetto a una base piana e il piede infisso per circa 4 mm. È una prova per i refrattari, non una regola per cuocere i pezzi, e l’abbiamo letta in una trascrizione della norma, non nella norma stessa.
+
 ### Cono guida, cono di cottura e cono di guardia
 
 I coni si vendono e si posizionano a tre a tre: un cono guida, un cono di cottura all’obiettivo e un cono di guardia. Come cono di cottura si prende il numero SK indicato dalla ricetta o dall’argilla, come cono guida il cono immediatamente più freddo (una riga più in alto nella tabella) e come cono di guardia quello immediatamente più caldo. Quando il cono guida comincia a piegarsi, la fine è vicina; quando si piega il cono di guardia, la cottura è andata troppo oltre.
@@ -366,6 +374,8 @@ I coni Orton autoportanti sono venduti in Giappone con il nome 立つゼーゲ�
 
 - [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (la tabella SK, verificata il 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
 - [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (in vigore, riconfermata il 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
+- [JSA: JIS R 2204:1999, 耐火物及び耐火物原料の耐火度試験方法 (in vigore, riconfermata il 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+2204:1999)
+- [kikakurui.com: una trascrizione della JIS R 2204:1999, in cui la clausola 5 a) stabilisce come posizionare i coni (letta il 2026-10-19)](https://kikakurui.com/r2/R2204-1999-01.html)
 - [Kyoto Municipal Institute of Industrial Technology and Culture: indicazioni per il passaggio dai coni di Kyoto ai coni Orton](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
 
 :::
@@ -607,7 +617,7 @@ Per la ventilazione del locale e per i rilevatori di monossido di carbonio, vede
 ### Mentre il forno cuoce
 
 - Guardare dallo spioncino solo con occhiali da saldatura con filtro IR di grado 3; gli occhiali da sole non bastano. Skutt consiglia di avvitare i tappi in sede perché non cadano.
-- Non lasciare il forno incustodito oltre il tempo di cottura previsto; un kiln sitter non è una sicurezza infallibile.
+- Restare nelle vicinanze e controllare il forno durante la cottura, soprattutto verso l’ora prevista di fine; un kiln sitter non è una sicurezza infallibile. Cuocere solo quando un adulto sarà in casa e sveglio per tutta la cottura.
 - Non cuocere mai su o vicino a materiali combustibili, come un pavimento in legno o la moquette.
 - Rispettare le distanze di sicurezza del manuale. I valori pubblicati vanno da 12 pollici (30 cm) a 3 piedi (91 cm); dove il manuale non dice nulla, 18 pollici (46 cm) dalle pareti e 3 piedi (91 cm) da qualsiasi materiale combustibile sono la scelta più sicura.
 - Tenere libero lo spazio intorno al peso del kiln sitter, perché possa cadere.

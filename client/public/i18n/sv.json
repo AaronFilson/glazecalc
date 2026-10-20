@@ -82,6 +82,31 @@
     "languages": "Språk",
     "language": "Språk:"
   },
+  "picker": {
+    "results": "{count, plural, one {# träff} other {# träffar}}",
+    "languages": {
+      "search": "Sök språk",
+      "showAll": "Visa alla språk",
+      "noMatch": "Inga språk hittades"
+    },
+    "regions": {
+      "search": "Sök länder och regioner",
+      "showAll": "Visa alla länder och regioner",
+      "noMatch": "Inga länder eller regioner hittades"
+    },
+    "groups": {
+      "africa": "Afrika",
+      "americas": "Amerika",
+      "asia": "Asien",
+      "eastAsia": "Östasien",
+      "europe": "Europa",
+      "middleEastNorthAfrica": "Mellanöstern och Nordafrika",
+      "oceania": "Oceanien",
+      "southAsia": "Sydasien",
+      "southeastAsia": "Sydostasien",
+      "other": "Övrigt"
+    }
+  },
   "numbers": {
     "notANumber": "Ange ett tal, till exempel {example}.",
     "notANumberComma": "Ange ett tal, till exempel {example}, med komma som decimaltecken.",

@@ -52,6 +52,7 @@
     "emergency": "Ārkārtas situācija: bezsamaņa, nav elpošanas, krampju lēkme",
     "poisonAdvice": "{who, select, children {Konsultācijas saindēšanās gadījumā: {name} (tikai bērniem)} other {Konsultācijas saindēšanās gadījumā: {name}}}",
     "or": "vai {number}",
+    "orCall": "vai <link>{number}</link>",
     "online": "Tiešsaistē: <link>{name}</link>.",
     "poisonAdviceNone": "Konsultācijas saindēšanās gadījumā",
     "noLine": "Mēs nevarējām pārliecināties, ka šeit darbojas publisks saindēšanās informācijas tālrunis. Zvaniet savam ārstam vai, ja tas ir steidzami, uz ārkārtas palīdzības numuru.",
@@ -61,8 +62,7 @@
     "vet": "Zvaniet savam veterinārārstam.",
     "checkedOn": "Pārbaudīts vietnēs:",
     "choosePrompt": "Izvēlieties valsti, lai redzētu, kur tur zvanīt.",
-    "ministry": "Veselības ministrijas lapa: <link>{name}</link>.",
-    "reported": "Oficiālajās valdības lapās ir minēti 113, 114 un 115, taču nav norādīts, kam katrs paredzēts; parādītās funkcijas atbilst apkārtrakstam 22/2014/TT-BTTTT, kā to min sekundāras lapas."
+    "ministry": "Veselības ministrijas lapa: <link>{name}</link>."
   },
   "density": {
     "sg": "rel. blīvums {value}",
@@ -112,6 +112,10 @@
     "bandFromTo": "Putekļi ar {from}% līdz {to}% brīvā silīcija dioksīda (SiO₂)",
     "bandOverTo": "Putekļi ar vairāk nekā {from}% un līdz {to}% brīvā silīcija dioksīda",
     "bandAbove": "Putekļi ar vairāk nekā {from}% brīvā silīcija dioksīda",
+    "untilDate": "Spēkā līdz: {date}",
+    "fromDate": "Spēkā no: {date}",
+    "beforeFormula": "Ieelpojamo putekļu robežvērtība, kur Q ir kristāliskā silīcija dioksīda saturs tajos, %",
+    "beforeAll": "Ja putekļi sastāv tikai no kristāliskā silīcija dioksīda",
     "recommended": "Ieteikums: {abbr}",
     "value": "{value} mg/m³",
     "kind": {
@@ -122,6 +126,7 @@
     },
     "setBy": "Nosaka: <link>{law}</link>.",
     "from": "Tā ir spēkā no {date}.",
+    "beforeSetBy": "Līdz tam robežvērtību nosaka: <link>{law}</link>.",
     "lowerThanEu": "Zemāka par ES saistošo robežvērtību {value} mg/m³.",
     "sameAsEu": "Tāda pati kā ES saistošā robežvērtība.",
     "recommendedBy": "{abbr} ({by}) iesaka šo vērtību dokumentā <link>{title}</link>. Tā nav noteikta likumā.",
@@ -184,7 +189,13 @@
       "vnMedium": "Dziļi izstrādājumi ēdiena turēšanai, no 1100 mL līdz mazāk nekā 3000 mL",
       "vnStorage": "Dziļi izstrādājumi ēdiena turēšanai, 3000 mL vai vairāk",
       "vnCooking": "Dziļi izstrādājumi ēdiena gatavošanai",
-      "vnCups": "Tases un mazas bļodas"
+      "vnCups": "Tases un mazas bļodas",
+      "cnFlat": "Plakani trauki, dziļums ne vairāk kā 25 mm",
+      "cnSmall": "Mazi dobi trauki, mazāk par 1,1 L, izņemot tases",
+      "cnLarge": "Lieli dobi trauki, no 1,1 L līdz mazāk par 3 L",
+      "cnStorage": "Uzglabāšanas trauki, 3 L vai vairāk",
+      "cnCups": "Tases ūdenim vai dzērieniem",
+      "cnCooking": "Ēdiena gatavošanas piederumi, ēdiena sildīšanai"
     },
     "judged": {
       "average": "6 izstrādājumu vidējais",
@@ -198,6 +209,8 @@
     "atMost": "Izstrādājums atbilst prasībām, ja tas izdala ne vairāk par robežvērtību: likumā teikts “ne vairāk kā”.",
     "ppm": "ppm šeit nozīmē miligramus uz litru pārbaudes šķīduma (mg/L).",
     "unknown": "Noteikumus valstī {region} vēl neesam noskaidrojuši.",
+    "none": "{region}: nav likuma, kas noteiktu robežvērtības svinam un kadmijam, ko apdedzināts izstrādājums drīkst izdalīt (pārbaudīts: {date}).",
+    "noneSource": "Avots: <link>{law}</link>.",
     "choosePrompt": "Izvēlieties valsti, lai redzētu tās noteikumus."
   },
   "equivalents": {

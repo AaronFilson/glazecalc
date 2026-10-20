@@ -14,6 +14,7 @@ import { formatLocale } from '../../shared/format';
 import { FiringLog } from './firing-log';
 import { FiringPage } from './firing-page';
 import { PreferencesService } from '../../core/preferences.service';
+import { PAGE_LANGUAGE } from '../../i18n/language';
 
 describe('FiringPage', () => {
   beforeEach(() => {
@@ -109,6 +110,19 @@ describe('FiringPage', () => {
     await fixture.whenStable();
     expect(text(fixture, '.firing-table tr')).toContain('ConeTime');
     expect(page['log']().rows).toEqual([['', '1:00']]);
+  });
+
+  it('moves a field left or right as the table is drawn, mirrored on a right-to-left page', async () => {
+    const buttons = (fixture: { nativeElement: HTMLElement }) =>
+      [...fixture.nativeElement.querySelectorAll('.included-buttons button')].map((b) => b.textContent!.trim());
+    const ltr = await create([], [], true);
+    expect(buttons(ltr.fixture).slice(0, 2)).toEqual(['Move field left', 'Move field right']);
+    ltr.fixture.destroy();
+    // On a mirrored page the first column is on the right: moving a field earlier moves it right.
+    TestBed.resetTestingModule();
+    TestBed.configureTestingModule({ providers: [...testProviders(), { provide: PAGE_LANGUAGE, useValue: 'ar-XD' }] });
+    const rtl = await create([], [], true);
+    expect(buttons(rtl.fixture).slice(0, 2)).toEqual(['Move field right', 'Move field left']);
   });
 
   it('offers only the fields not added yet, moving on to the next after each', async () => {

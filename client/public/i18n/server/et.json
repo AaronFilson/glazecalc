@@ -100,6 +100,7 @@
   "limitSet-choices": "Valige hesselberth-roy või glazecalc.",
   "currency-choices": "Valige loendist üks valuutadest või jätke see oma piirkonna otsustada.",
   "calendar-choices": "Kuupäevi saab näidata Gregoriuse kalendri (gregory), Tai budistliku ajaarvamise (buddhist) või Jaapani ajastute (japanese) järgi.",
+  "digits-choices": "Numbreid saab näidata nagu teie piirkonnas tavaks (auto), kujul 0–9 (western) või keele omade numbritega (native).",
   "shelf-invalid": "Varu on loend, kuhu mahub kuni {most} toorainet.",
   "shelf-full": "Varusse mahub kuni {most} toorainet. Midagi ei muudetud.",
   "shelf-material-unknown": "Seda toorainet ei ole teie toorainete ega Glazecalci teegi hulgas.",

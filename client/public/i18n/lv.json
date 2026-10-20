@@ -82,6 +82,31 @@
     "languages": "Valodas",
     "language": "Valoda:"
   },
+  "picker": {
+    "results": "{count, plural, zero {# atbilstību} one {# atbilstība} other {# atbilstības}}",
+    "languages": {
+      "search": "Meklēt valodas",
+      "showAll": "Rādīt visas valodas",
+      "noMatch": "Nav atbilstošas valodas"
+    },
+    "regions": {
+      "search": "Meklēt valstis un reģionus",
+      "showAll": "Rādīt visas valstis un reģionus",
+      "noMatch": "Nav atbilstošas valsts vai reģiona"
+    },
+    "groups": {
+      "africa": "Āfrika",
+      "americas": "Amerika",
+      "asia": "Āzija",
+      "eastAsia": "Austrumāzija",
+      "europe": "Eiropa",
+      "middleEastNorthAfrica": "Tuvie Austrumi un Ziemeļāfrika",
+      "oceania": "Okeānija",
+      "southAsia": "Dienvidāzija",
+      "southeastAsia": "Dienvidaustrumāzija",
+      "other": "Citi"
+    }
+  },
   "numbers": {
     "notANumber": "Ievadiet skaitli, piemēram, {example}.",
     "notANumberComma": "Ievadiet skaitli, piemēram, {example}, decimāldaļu atdalot ar komatu.",

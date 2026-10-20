@@ -52,6 +52,7 @@
     "emergency": "Un’emergenza: perdita di coscienza, respiro assente, una crisi convulsiva",
     "poisonAdvice": "{who, select, children {Consulenza antiveleni: {name} (solo bambini)} other {Consulenza antiveleni: {name}}}",
     "or": "oppure {number}",
+    "orCall": "oppure <link>{number}</link>",
     "online": "Online: <link>{name}</link>.",
     "poisonAdviceNone": "Consulenza antiveleni",
     "noLine": "Non abbiamo potuto confermare un numero antiveleni pubblico in questo paese. Chiamare il proprio medico, oppure il numero di emergenza se è urgente.",
@@ -61,8 +62,7 @@
     "vet": "Chiamare il proprio veterinario.",
     "checkedOn": "Verificati su:",
     "choosePrompt": "Scegliere il paese per vedere chi chiamare.",
-    "ministry": "La pagina del ministero della salute: <link>{name}</link>.",
-    "reported": "Le pagine ufficiali del governo elencano 113, 114 e 115, ma non a che cosa serve ciascun numero; i ruoli mostrati seguono la circolare 22/2014/TT-BTTTT, come la citano pagine secondarie."
+    "ministry": "La pagina del ministero della salute: <link>{name}</link>."
   },
   "density": {
     "sg": "peso specifico {value}",
@@ -112,6 +112,10 @@
     "bandFromTo": "Polvere con dal {from}% al {to}% di silice libera (SiO₂)",
     "bandOverTo": "Polvere con più del {from}% e fino al {to}% di silice libera",
     "bandAbove": "Polvere con più del {from}% di silice libera",
+    "untilDate": "Fino al {date}",
+    "fromDate": "Dal {date}",
+    "beforeFormula": "Limite per la polvere respirabile, dove Q è la silice cristallina che contiene, in %",
+    "beforeAll": "Per una polvere composta solo di silice cristallina",
     "recommended": "Raccomandato da {abbr}",
     "value": "{value} mg/m³",
     "kind": {
@@ -122,6 +126,7 @@
     },
     "setBy": "Fissato da: <link>{law}</link>.",
     "from": "Si applica dal {date}.",
+    "beforeSetBy": "Fino ad allora il limite è fissato da <link>{law}</link>.",
     "lowerThanEu": "Inferiore al limite vincolante dell’UE di {value} mg/m³.",
     "sameAsEu": "Uguale al limite vincolante dell’UE.",
     "recommendedBy": "{abbr} ({by}) raccomanda questo valore nel documento <link>{title}</link>. Non è un obbligo di legge.",
@@ -184,7 +189,13 @@
       "vnMedium": "Oggetti profondi per contenere alimenti, da 1100 mL a meno di 3000 mL",
       "vnStorage": "Oggetti profondi per contenere alimenti, 3000 mL o più",
       "vnCooking": "Oggetti profondi per cucinare",
-      "vnCups": "Tazze e ciotole piccole"
+      "vnCups": "Tazze e ciotole piccole",
+      "cnFlat": "Oggetti piani, con profondità non superiore a 25 mm",
+      "cnSmall": "Oggetti cavi piccoli, meno di 1,1 L, escluse le tazze",
+      "cnLarge": "Oggetti cavi grandi, da 1,1 L a meno di 3 L",
+      "cnStorage": "Contenitori per conservare, da 3 L in su",
+      "cnCups": "Tazze, per acqua o bevande",
+      "cnCooking": "Recipienti da cottura, per scaldare i cibi"
     },
     "judged": {
       "average": "media di 6 pezzi",
@@ -198,6 +209,8 @@
     "atMost": "Un oggetto supera la prova se non cede più del limite: la legge dice «al massimo».",
     "ppm": "Qui ppm indica milligrammi per litro della soluzione di prova (mg/L).",
     "unknown": "Non abbiamo ancora confermato le norme in questo paese ({region}).",
+    "none": "Non c’è alcuna legge che fissi limiti per il piombo e il cadmio che un pezzo cotto può cedere: {region} (dati verificati in data {date}).",
+    "noneSource": "Fonte: <link>{law}</link>.",
     "choosePrompt": "Scegliere il paese per vederne le norme."
   },
   "equivalents": {

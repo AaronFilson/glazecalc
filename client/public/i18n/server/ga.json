@@ -100,6 +100,7 @@
   "limitSet-choices": "Roghnaigh hesselberth-roy nó glazecalc.",
   "currency-choices": "Roghnaigh ceann de na hairgeadraí sa liosta, nó fág faoi do réigiún é.",
   "calendar-choices": "Is féidir dátaí a thaispeáint san fhéilire Gréagórach (gregory), i ré Bhúdaíoch na Téalainne (buddhist) nó i réanna Seapánacha (japanese).",
+  "digits-choices": "Is féidir digití a thaispeáint mar is gnách san áit a bhfuil tú (auto), mar 0–9 (western) nó i ndigití na teanga féin (native).",
   "shelf-invalid": "Is liosta é an stoc ina bhfuil suas le {most} ábhar.",
   "shelf-full": "Ní féidir níos mó ná {most} ábhar a bheith sa stoc. Níor athraíodh aon rud.",
   "shelf-material-unknown": "Níl an t-ábhar sin i d’ábhair ná i leabharlann Glazecalc.",

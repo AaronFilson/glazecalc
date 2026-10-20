@@ -364,7 +364,7 @@
     "intro": "Kā norādīts katras izejvielas ierakstā; standarta bibliotēkas dati ir no piegādātāju drošības datu lapām.",
     "line": "<b>{names}:</b> {hazards}",
     "unknown": "{count, plural, zero {Šīm izejvielām nav norādīta bīstamība: {list}. Skatiet tām līdzi piegādātās drošības datu lapas.} one {Izejvielai {list} nav norādīta bīstamība: skatiet tai līdzi piegādāto drošības datu lapu.} other {Šīm izejvielām nav norādīta bīstamība: {list}. Skatiet tām līdzi piegādātās drošības datu lapas.}}",
-    "safety": "Sausas glazūras izejvielas rada putekļus: neļaujiet tiem nonākt plaušās, arī putekļiem no izejvielām, kas nav klasificētas kā bīstamas. Skatiet ceļvedi <mixing>Droša jaukšana un ventilācija</mixing>, kā arī ceļvedi <home>Nesaindējiet savu ģimeni</home>, ja apkārt ir bērni vai mājdzīvnieki. Ja izejvielas drošības datu lapā ir teikts vairāk, ievērojiet to."
+    "safety": "Sausas glazūras izejvielas rada putekļus, un jums ir jānovērš to nonākšana plaušās, arī tad, ja putekļi ir no izejvielām, kas nav klasificētas kā bīstamas. Skatiet ceļvedi <mixing>Droša jaukšana un ventilācija</mixing>. Ja apkārt ir bērni vai mājdzīvnieki, skatiet arī ceļvedi <home>Nesaindējiet savu ģimeni</home>. Ja izejvielas drošības datu lapā ir teikts vairāk, ievērojiet to."
   },
   "compare": {
     "heading": "Divu recepšu salīdzināšana",
@@ -533,7 +533,10 @@
     "suppliesShare": "{oxide} – {percent}%",
     "suppliesLittle": "neliela daļa glazūras",
     "changed": "{name} {from} → {to}",
-    "added": "{name} {amount}, jauna"
+    "added": "{name} {amount}, jauna",
+    "why": {
+      "rawClay": "neapdedzināts māls glazūrai žūstot saraujas, un, ja tā ir daudz, glazūra var saplaisāt uz izstrādājuma un krāsnī savilkties; pārējo daļu var nodrošināt kalcinēts kaolīns"
+    }
   },
   "shelf": {
     "empty": "Nav krājumu, no kuriem sastādīt recepti."
@@ -571,7 +574,8 @@
     "bands": {
       "low": "Zema apdedzināšana, konusi 06–02",
       "mid": "Vidēja apdedzināšana, konusi 4–6",
-      "high": "Augsta apdedzināšana, konusi 9–11"
+      "high": "Augsta apdedzināšana, konusi 9–11",
+      "top": "Ļoti augsta apdedzināšana, sākot ar konusu 12"
     },
     "shownFor": "Ja apdedzināšana nav izvēlēta, redzamie skaitļi attiecas uz: {band}. Apdedzināšana tiek saglabāta kopā ar recepti.",
     "cone": "Šie ir kopas skaitļi konusam {cone}.",
@@ -591,6 +595,7 @@
     "notInSet": "Šajā kopā nav diapazona: {oxides}.",
     "checksOnly": "Šī kopa pārbauda tikai: {oxides}.",
     "notApply": "Kopai {name} nav skaitļu šai apdedzināšanai ({band}), tāpēc tā netiek pārbaudīta: skaitļi citai apdedzināšanai maldinātu.",
+    "topNote": "Publicētās glazūru robežvērtības, ko atradām, beidzas pie konusa 10, un Glazecalc tās izmanto ne tālāk kā līdz konusam 11, tāpēc apdedzināšanu, sākot ar konusu 12, ar robežvērtībām nesalīdzina. Izšķirošās ir jūsu provju plāksnītes.",
     "guidance": "Tās ir vadlīnijas, nevis “izturēts” vai “neizturēts”: glazūra ārpus tām var būt laba, bet glazūra tajās var tomēr plaisāt (matplaisas), izdalīt metālus vai bojāties. Pārbaudiet to.",
     "source": "Avots:",
     "saveFailed": "Neizdevās saglabāt jūsu robežvērtību kopas izvēli kontā, tāpēc joprojām tiek izmantota iepriekšējā kopa.",
@@ -628,7 +633,8 @@
       "ash": "Glazecalc nevar salīdzināt šīs glazūras ķīmiju ar tās apdedzināšanu: tajā ir pelni, kuru sastāvs ir pārāk mainīgs šajā pārbaudē izmantotajiem publicētajiem skaitļiem.",
       "noTemperature": "Glazecalc nevar salīdzināt šīs glazūras ķīmiju ar šo apdedzināšanu ({scale, select, band {{band, select, low {zemas temperatūras apdedzināšana} mid {vidējas temperatūras apdedzināšana} other {augstas temperatūras apdedzināšana}}} sk {SK {cone}} temperature {{cone} °C} other {konuss {cone}}}): šim konusam nav izmērītas temperatūras.",
       "between": "Glazecalc nevar salīdzināt šīs glazūras ķīmiju ar šo apdedzināšanu ({scale, select, band {{band, select, low {zemas temperatūras apdedzināšana} mid {vidējas temperatūras apdedzināšana} other {augstas temperatūras apdedzināšana}}} sk {SK {cone}} temperature {{cone} °C} other {konuss {cone}}}): šajā pārbaudē izmantotie publicētie skaitļi ir zemas temperatūras un vidējas un augstas temperatūras apdedzināšanai, nevis konusiem starp tiem (no 01 līdz 3).",
-      "belowChart": "Glazecalc nevar salīdzināt šīs glazūras ķīmiju ar šo apdedzināšanu ({scale, select, band {{band, select, low {zemas temperatūras apdedzināšana} mid {vidējas temperatūras apdedzināšana} other {augstas temperatūras apdedzināšana}}} sk {SK {cone}} temperature {{cone} °C} other {konuss {cone}}}): Kaca (Katz) bora likums attiecas uz konusiem no 06 līdz 10, un šī apdedzināšana ir vēsāka."
+      "belowChart": "Glazecalc nevar salīdzināt šīs glazūras ķīmiju ar šo apdedzināšanu ({scale, select, band {{band, select, low {zemas temperatūras apdedzināšana} mid {vidējas temperatūras apdedzināšana} other {augstas temperatūras apdedzināšana}}} sk {SK {cone}} temperature {{cone} °C} other {konuss {cone}}}): Kaca (Katz) bora likums attiecas uz konusiem no 06 līdz 10, un šī apdedzināšana ir vēsāka.",
+      "aboveChart": "Glazecalc nevar salīdzināt šīs glazūras ķīmiju ar šo apdedzināšanu ({scale, select, band {{band, select, top {ļoti augstas temperatūras apdedzināšana} other {augstas temperatūras apdedzināšana}}} sk {SK {cone}} temperature {{cone} °C} other {konuss {cone}}}): Kaca (Katz) bora likums attiecas uz konusiem no 06 līdz 10, Heselberta un Roja silīcija dioksīda un alumīnija oksīda skaitļi beidzas pie konusa 10, un šī apdedzināšana ir karstāka."
     }
   },
   "stull": {
@@ -979,7 +985,7 @@
     "approxTemperature": "≈ {temperature} ({basis}; aptuveni)",
     "approxCone": "≈ {cone} ({basis}; aptuveni)",
     "basis": {
-      "orton60": "Ortona lielie konusi 60 °C stundā",
+      "orton150": "Ortona vecākā lielo konusu tabula, 150 °C stundā",
       "kyoto": "izmērīts 100 °C stundā Kioto pilsētas institūtā",
       "stated": "kā norādīts"
     },

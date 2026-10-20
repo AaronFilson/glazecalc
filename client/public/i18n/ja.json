@@ -82,6 +82,31 @@
     "languages": "言語",
     "language": "言語:"
   },
+  "picker": {
+    "results": "{count, plural, other {#件が該当}}",
+    "languages": {
+      "search": "言語を検索",
+      "showAll": "すべての言語を表示",
+      "noMatch": "該当する言語がありません"
+    },
+    "regions": {
+      "search": "国と地域を検索",
+      "showAll": "すべての国と地域を表示",
+      "noMatch": "該当する国や地域がありません"
+    },
+    "groups": {
+      "africa": "アフリカ",
+      "americas": "南北アメリカ",
+      "asia": "アジア",
+      "eastAsia": "東アジア",
+      "europe": "ヨーロッパ",
+      "middleEastNorthAfrica": "中東・北アフリカ",
+      "oceania": "オセアニア",
+      "southAsia": "南アジア",
+      "southeastAsia": "東南アジア",
+      "other": "その他"
+    }
+  },
   "numbers": {
     "notANumber": "{example} のように数値を入力してください。",
     "notANumberComma": "{example} のように、小数点にカンマを使って数値を入力してください。",

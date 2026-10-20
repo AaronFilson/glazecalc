@@ -270,6 +270,22 @@
         "saved": "Tallennettu: päivämäärät näytetään japanilaisten aikakausien mukaan."
       }
     },
+    "digits": {
+      "legend": "Numerot",
+      "help": "Numerot, joilla luvut näytetään. Joillakin kielillä on omat numeronsa, esimerkiksi arabialla, bengalilla ja hindillä, ja oma alue ratkaisee, mitkä ovat tavallisia. Lukuja voi kirjoittaa kummillakin.",
+      "auto": {
+        "label": "Oman alueen tavan mukaan",
+        "saved": "Tallennettu: numerot oman alueen tavan mukaan."
+      },
+      "western": {
+        "label": "Länsimaiset numerot, 0–9",
+        "saved": "Tallennettu: luvut näytetään numeroilla 0–9."
+      },
+      "native": {
+        "label": "Kielen omat numerot, jos kielellä on niitä",
+        "saved": "Tallennettu: luvut näytetään kielen omilla numeroilla, jos kielellä on niitä."
+      }
+    },
     "decimalMark": {
       "legend": "Määrien kirjoittaminen",
       "either": {

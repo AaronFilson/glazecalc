@@ -52,6 +52,7 @@
     "emergency": "Hädaolukord: teadvuseta, ei hinga, krambihoog",
     "poisonAdvice": "{who, select, children {Mürgistusteave: {name} (ainult lastele)} other {Mürgistusteave: {name}}}",
     "or": "või {number}",
+    "orCall": "või <link>{number}</link>",
     "online": "Veebis: <link>{name}</link>.",
     "poisonAdviceNone": "Mürgistusteave",
     "noLine": "Avalikku mürgistusteabeliini ei õnnestunud siin kinnitada. Helistage oma arstile või kiireloomulisel juhul hädaabinumbrile.",
@@ -61,8 +62,7 @@
     "vet": "Helistage oma loomaarstile.",
     "checkedOn": "Kontrollitud:",
     "choosePrompt": "Valige oma riik, et näha, kellele seal helistada.",
-    "ministry": "Tervishoiuministeeriumi leht: <link>{name}</link>.",
-    "reported": "Ametlikud valitsuse lehed loetlevad numbrid 113, 114 ja 115, kuid mitte seda, milleks igaüks on; näidatud rollid järgivad ringkirja 22/2014/TT-BTTTT, nagu teisesed lehed seda tsiteerivad."
+    "ministry": "Tervishoiuministeeriumi leht: <link>{name}</link>."
   },
   "density": {
     "sg": "suhteline tihedus {value}",
@@ -112,6 +112,10 @@
     "bandFromTo": "Tolm, mille vaba ränidioksiidi (SiO₂) sisaldus on {from}% kuni {to}%",
     "bandOverTo": "Tolm, mille vaba ränidioksiidi sisaldus on üle {from}% ja kuni {to}%",
     "bandAbove": "Tolm, mille vaba ränidioksiidi sisaldus on üle {from}%",
+    "untilDate": "Kuni kuupäevani {date}",
+    "fromDate": "Alates kuupäevast {date}",
+    "beforeFormula": "Respireeritava tolmu piirnorm, kus Q on kristallilise ränidioksiidi sisaldus selles, %",
+    "beforeAll": "Tolmule, mis on täielikult kristalliline ränidioksiid",
     "recommended": "Soovitab {abbr}",
     "value": "{value} mg/m³",
     "kind": {
@@ -122,6 +126,7 @@
     },
     "setBy": "Kehtestatud: <link>{law}</link>.",
     "from": "See kehtib alates {date}.",
+    "beforeSetBy": "Seni kehtestab piirnormi <link>{law}</link>.",
     "lowerThanEu": "Madalam kui EL-i siduv piirnorm {value} mg/m³.",
     "sameAsEu": "Sama mis EL-i siduv piirnorm.",
     "recommendedBy": "Seda väärtust soovitab {abbr} ({by}) dokumendis <link>{title}</link>. See ei ole seadus.",
@@ -184,7 +189,13 @@
       "vnMedium": "Sügavad esemed toidu hoidmiseks, 1100 mL kuni alla 3000 mL",
       "vnStorage": "Sügavad esemed toidu hoidmiseks, 3000 mL või rohkem",
       "vnCooking": "Sügavad esemed toidu valmistamiseks",
-      "vnCups": "Tassid ja väikesed kausid"
+      "vnCups": "Tassid ja väikesed kausid",
+      "cnFlat": "Lamedad nõud, sügavus 25 mm või vähem",
+      "cnSmall": "Väikesed sügavad nõud, alla 1,1 L, v.a tassid",
+      "cnLarge": "Suured sügavad nõud, 1,1 L kuni alla 3 L",
+      "cnStorage": "Hoiuanumad, 3 L või rohkem",
+      "cnCups": "Tassid vee või jookide jaoks",
+      "cnCooking": "Toiduvalmistamisnõud toidu kuumutamiseks"
     },
     "judged": {
       "average": "6 eseme keskmine",
@@ -198,6 +209,8 @@
     "atMost": "Ese läbib katse, kui sellest ei eraldu rohkem kui piirnorm: seaduses on „kõige rohkem“.",
     "ppm": "ppm tähendab siin milligrammi liitri katselahuse kohta (mg/L).",
     "unknown": "Reegleid ei ole veel kinnitatud (riik: {region}).",
+    "none": "{region}: ei ole seadust, mis kehtestaks piirnormid pliile ja kaadmiumile, mida põletatud ese võib eraldada (kontrollitud: {date}).",
+    "noneSource": "Allikas: <link>{law}</link>.",
     "choosePrompt": "Valige oma riik, et näha selle reegleid."
   },
   "equivalents": {

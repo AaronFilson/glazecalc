@@ -52,6 +52,7 @@
     "emergency": "Een noodgeval: bewusteloos, ademt niet, stuiptrekkingen",
     "poisonAdvice": "{who, select, children {Advies bij vergiftiging: {name} (alleen voor kinderen)} other {Advies bij vergiftiging: {name}}}",
     "or": "of {number}",
+    "orCall": "of <link>{number}</link>",
     "online": "Online: <link>{name}</link>.",
     "poisonAdviceNone": "Advies bij vergiftiging",
     "noLine": "We konden hier geen openbare hulplijn voor vergiftigingen bevestigen. Bel uw huisarts, of het noodnummer als het dringend is.",
@@ -61,8 +62,7 @@
     "vet": "Bel uw dierenarts.",
     "checkedOn": "Gecontroleerd aan de hand van:",
     "choosePrompt": "Kies uw land om te zien wie u daar kunt bellen.",
-    "ministry": "De pagina van het ministerie van Volksgezondheid: <link>{name}</link>.",
-    "reported": "Officiële overheidspagina’s noemen 113, 114 en 115, maar niet waarvoor elk nummer dient; de getoonde functies volgen Circulaire 22/2014/TT-BTTTT, zoals secundaire pagina’s die weergeven."
+    "ministry": "De pagina van het ministerie van Volksgezondheid: <link>{name}</link>."
   },
   "density": {
     "sg": "soortelijk gewicht {value}",
@@ -112,6 +112,10 @@
     "bandFromTo": "Stof met {from}% tot {to}% vrij silica (SiO₂)",
     "bandOverTo": "Stof met meer dan {from}% en tot {to}% vrij silica",
     "bandAbove": "Stof met meer dan {from}% vrij silica",
+    "untilDate": "Tot {date}",
+    "fromDate": "Vanaf {date}",
+    "beforeFormula": "Grenswaarde voor respirabel stof, waarbij Q het gehalte aan kristallijn silica erin is, in %",
+    "beforeAll": "Voor stof dat volledig uit kristallijn silica bestaat",
     "recommended": "Aanbevolen door {abbr}",
     "value": "{value} mg/m³",
     "kind": {
@@ -122,6 +126,7 @@
     },
     "setBy": "Vastgelegd in <link>{law}</link>.",
     "from": "Het geldt vanaf {date}.",
+    "beforeSetBy": "Tot dan is de grenswaarde vastgelegd in <link>{law}</link>.",
     "lowerThanEu": "Lager dan de bindende EU-grenswaarde van {value} mg/m³.",
     "sameAsEu": "Gelijk aan de bindende EU-grenswaarde.",
     "recommendedBy": "{abbr} ({by}) beveelt deze waarde aan in <link>{title}</link>. Het is geen wet.",
@@ -184,7 +189,13 @@
       "vnMedium": "Diepe voorwerpen om eten in te bewaren, van 1100 mL tot minder dan 3000 mL",
       "vnStorage": "Diepe voorwerpen om eten in te bewaren, 3000 mL of meer",
       "vnCooking": "Diepe voorwerpen om in te koken",
-      "vnCups": "Kopjes en kleine kommen"
+      "vnCups": "Kopjes en kleine kommen",
+      "cnFlat": "Platte voorwerpen, 25 mm diep of minder",
+      "cnSmall": "Kleine holle voorwerpen, minder dan 1,1 L, behalve kopjes",
+      "cnLarge": "Grote holle voorwerpen, van 1,1 L tot minder dan 3 L",
+      "cnStorage": "Voorraadpotten, 3 L of meer",
+      "cnCups": "Kopjes, voor water of dranken",
+      "cnCooking": "Kookgerei, om voedsel te verhitten"
     },
     "judged": {
       "average": "gemiddelde van 6 stuks",
@@ -198,6 +209,8 @@
     "atMost": "Een voorwerp voldoet als het niet meer afgeeft dan de grenswaarde: de wet zegt “ten hoogste”.",
     "ppm": "ppm betekent hier milligram per liter van de proefoplossing (mg/L).",
     "unknown": "{region}: we hebben de regels daar nog niet bevestigd.",
+    "none": "{region}: er is geen wet die grenswaarden vastlegt voor het lood en cadmium dat een gebakken stuk mag afgeven (gecontroleerd op {date}).",
+    "noneSource": "Bron: <link>{law}</link>.",
     "choosePrompt": "Kies uw land om de regels daar te zien."
   },
   "equivalents": {

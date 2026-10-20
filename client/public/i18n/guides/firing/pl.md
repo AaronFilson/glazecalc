@@ -81,7 +81,7 @@ Tabela podaje dla samonośnego stożka 6 temperaturę {{2232 °F; 1222 °C}}, al
 
 ## Tabela stożków {#cone-chart}
 
-Te dane pochodzą z tabeli stożków Ortona (©2001) dla stożków samonośnych. Należy wybrać kolumnę odpowiadającą temu, jak szybko rosła temperatura w piecu w ostatnich {{180 °F; 100 °C}}. Praktyczna zasada Ortona: kolumna {{270 °F/h; 150 °C/h}} dla szybkiego wypału, kolumna {{108 °F/h; 60 °C/h}} dla średniego i kolumna {{27 °F/h; 15 °C/h}} dla wolnego. Aby obliczyć szybkość grzania, należy podzielić wzrost temperatury przez liczbę godzin, które zajął: piec, w którym temperatura wzrasta o {{900 °F; 500 °C}} w 3 godziny, grzeje w tempie około {{300 °F/h; 167 °C/h}}.
+Te dane pochodzą z tabeli stożków Ortona (©2001) dla stożków samonośnych; stożki od 11 do 14 pochodzą z tabel, które Orton publikuje obecnie i które tam, gdzie się pokrywają, podają te same wartości, przy czym dla stożków 13 i 14 tylko w °C (ich wartości w °F przeliczono tutaj). Należy wybrać kolumnę odpowiadającą temu, jak szybko rosła temperatura w piecu w ostatnich {{180 °F; 100 °C}}. Praktyczna zasada Ortona: kolumna {{270 °F/h; 150 °C/h}} dla szybkiego wypału, kolumna {{108 °F/h; 60 °C/h}} dla średniego i kolumna {{27 °F/h; 15 °C/h}} dla wolnego. Aby obliczyć szybkość grzania, należy podzielić wzrost temperatury przez liczbę godzin, które zajął: piec, w którym temperatura wzrasta o {{900 °F; 500 °C}} w 3 godziny, grzeje w tempie około {{300 °F/h; 167 °C/h}}.
 
 Table: Stożki samonośne Ortona: temperatura, w której zgina się każdy z nich, według szybkości grzania w ostatnich {{180 °F; 100 °C}}
 Label: Tabela stożków Ortona
@@ -108,8 +108,14 @@ Label: Tabela stożków Ortona
 | 8      |        {{2212 °F; 1211 °C}} |           {{2280 °F; 1249 °C}} |           {{2320 °F; 1271 °C}} |
 | 9      |        {{2235 °F; 1224 °C}} |           {{2300 °F; 1260 °C}} |           {{2336 °F; 1280 °C}} |
 | 10     |        {{2284 °F; 1251 °C}} |           {{2345 °F; 1285 °C}} |           {{2381 °F; 1305 °C}} |
+| 11     |        {{2322 °F; 1272 °C}} |           {{2361 °F; 1294 °C}} |           {{2399 °F; 1315 °C}} |
+| 12     |        {{2345 °F; 1285 °C}} |           {{2383 °F; 1306 °C}} |           {{2419 °F; 1326 °C}} |
+| 13     |        {{2390 °F; 1310 °C}} |           {{2428 °F; 1331 °C}} |           {{2458 °F; 1348 °C}} |
+| 14     |        {{2464 °F; 1351 °C}} |           {{2489 °F; 1365 °C}} |           {{2523 °F; 1384 °C}} |
 
 Kreska oznacza wartość, której tu nie przepisano; można ją znaleźć w pełnej tabeli Ortona.
+
+Orton produkuje stożki do numeru 42 do pracy w wysokich temperaturach, ale publikuje temperatury tylko do stożka 14; dla gorętszych stożków jego tabele są „dostępne (na życzenie)”. Starsza tabela Ortona, przedrukowywana przez producentów pieców, podaje dla dużego stożka 15 {{2608 °F; 1431 °C}} przy {{270 °F/h; 150 °C/h}}, a dla stożka 16 i gorętszych nie znaleźliśmy żadnej opublikowanej wartości. Powyżej stożka 14 należy ustawić stożki kontrolne i kierować się nimi oraz sprawdzić, czy maksymalna temperatura pieca podana przez producenta sięga tak wysoko.
 
 Duże stożki zginają się w temperaturach różniących się od podanych najwyżej o kilka stopni: duży stożek 6 przy {{108 °F/h; 60 °C/h}} to {{2228 °F; 1220 °C}}. Małe stożki, czyli te używane w wyłączniku stożkowym{{en: kiln sitter}}, podano tylko dla {{540 °F/h; 300 °C/h}}, więc tabela podaje dla małego stożka 6 temperaturę {{2291 °F; 1255 °C}}. Nie jest to temperatura, w której wyłącznik wyłącza piec. Zadaniem stożka w wyłączniku jest dorównać stożkowi na płycie, a ostatnie słowo należy do stożka na płycie.
 
@@ -298,6 +304,8 @@ Numery biegną od SK 022, najchłodniejszego, do SK 20 w tej tabeli. Między SK 
 
 Każdy duży stożek należy osadzić w podstawce lub w placku z gliny, pochylony w stronę ściany zginania. Jak przy każdym stożku, wysokość i pochylenie należy zachować takie same w każdym wypale, bo różnica w jednym lub drugim zmienia to, jak bardzo stożek się zegnie. Trzy stożki zestawu{{en: cone pack}} (niżej) należy ustawić razem, głęboko w piecu, blisko środka wsadu, gdzie otrzymują to samo ciepło co wyroby, a jednak tam, gdzie widać je przez wziernik; przed zamknięciem pieca należy sprawdzić, czy widać wszystkie trzy.
 
+Nie znaleźliśmy instrukcji producenta ani sprzedawcy, jak głęboko i pod jakim kątem osadzać stożki SK. Najbliższa jest norma laboratoryjna JIS R 2204, japońskie badanie tego, ile ciepła wytrzymuje materiał ogniotrwały: każdy stożek SK ustawia się w niej oznaczoną ścianą pod kątem 80° do płaskiej podstawki, ze stopą zagłębioną w niej na około 4 mm. To badanie materiałów ogniotrwałych, a nie zasada wypalania naczyń, a przeczytaliśmy tę normę w jej transkrypcji, nie w samej normie.
+
 ### Stożek ostrzegawczy, docelowy i zabezpieczający
 
 Stożki sprzedaje się i ustawia po trzy: stożek ostrzegawczy, stożek docelowy i stożek zabezpieczający. Jako stożek docelowy należy wziąć numer SK, który podaje receptura lub glina, jako stożek ostrzegawczy następny chłodniejszy stożek (jeden wiersz wyżej w tabeli), a jako stożek zabezpieczający następny gorętszy. Gdy stożek ostrzegawczy zaczyna się zginać, koniec jest blisko; gdy zegnie się stożek zabezpieczający, wypał poszedł za daleko.
@@ -366,6 +374,8 @@ Samonośne stożki Ortona są sprzedawane w Japonii pod nazwą 立つゼーゲ�
 
 - [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (tabela stożków SK, sprawdzono 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
 - [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (obowiązuje, ponownie zatwierdzona 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
+- [JSA: JIS R 2204:1999, 耐火物及び耐火物原料の耐火度試験方法 (obowiązuje, ponownie zatwierdzona 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+2204:1999)
+- [kikakurui.com: transkrypcja JIS R 2204:1999, w której punkt 5 a) określa ustawienie stożków (odczytano 2026-10-19)](https://kikakurui.com/r2/R2204-1999-01.html)
 - [Kyoto Municipal Institute of Industrial Technology and Culture: na co zwrócić uwagę, przechodząc ze stożków z Kioto na stożki Ortona](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
 
 :::
@@ -607,7 +617,7 @@ Informacje o wentylacji pomieszczenia i o czujnikach czadu: zob. [Bezpieczne roz
 ### Podczas wypału
 
 - Przez wziernik wolno patrzeć wyłącznie w okularach spawalniczych z filtrem podczerwieni (IR), stopień ochrony 3; okulary przeciwsłoneczne nie wystarczą. Skutt radzi wkręcać zatyczki na miejsce, aby nie wypadały.
-- Nie zostawiać pieca bez nadzoru po upływie spodziewanego czasu wypału; wyłącznik stożkowy nie jest zabezpieczeniem niezawodnym.
+- Zostać w pobliżu i sprawdzać piec podczas wypału, zwłaszcza w pobliżu spodziewanego czasu zakończenia; wyłącznik stożkowy nie jest zabezpieczeniem niezawodnym. Wypalać tylko wtedy, gdy w domu będzie osoba dorosła, która nie śpi przez cały czas wypału.
 - Nigdy nie wypalać na ani w pobliżu czegokolwiek, co się pali, np. drewnianej podłogi lub dywanu.
 - Zachować odstępy podane w instrukcji. Publikowane wartości wahają się od 12 cali (30 cm) do 3 stóp (91 cm); gdy instrukcja milczy, najbezpieczniejszym wyborem jest 18 cali (46 cm) od ścian i 3 stopy (91 cm) od wszystkiego, co się pali.
 - Przestrzeń wokół ciężarka wyłącznika stożkowego zostawić wolną, aby mógł opaść.

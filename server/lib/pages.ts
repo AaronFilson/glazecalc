@@ -86,6 +86,35 @@ export const isPage = (pathname: string): boolean => {
   return APP_PAGES.includes(page) || isIdPage(page);
 };
 
+/** Pages that make no sense to come back to once signed in: those go to the home page. */
+const NOT_AFTER = ['/', '/signin', '/signup', '/forgot', '/reset', '/confirm-email'];
+
+/**
+ * The page to go to once signed in, with its language (/de/recipe): one of the
+ * app's own pages (isPage), never another site; /home when it is none. Its
+ * query and section are left off.
+ */
+export const nextPage = (value: unknown): string => {
+  if (typeof value !== 'string' || value.length > 200 || !value.startsWith('/') || /^[/\\]{2}/.test(value)) {
+    return '/home';
+  }
+  const path = value.split(/[?#]/)[0]!;
+  if (!isPage(path)) return '/home';
+  const prefix = languages.languagePrefix(languages.languageOfPath(path));
+  return NOT_AFTER.includes(languages.pagePath(path)) ? prefix + '/home' : path;
+};
+
+/**
+ * The page a new account's confirmation link goes on to once the address is
+ * confirmed (lib/email_links.ts): a page of the app, as nextPage takes it,
+ * without its language (/connect/abc for /de/connect/abc), as the app's
+ * router writes it; null for none, or for the home page, where the app goes anyway.
+ */
+export const returnPage = (value: unknown): string | null => {
+  const page = languages.pagePath(nextPage(value));
+  return page === '/home' ? null : page;
+};
+
 /**
  * Whether an address is a page of the app that is neither public nor private:
  * signing in and the pages once signed in (/recipe, /de/account). Anyone may

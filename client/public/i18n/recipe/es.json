@@ -364,7 +364,7 @@
     "intro": "Los que da el registro de cada material; los de la lista estándar proceden de las fichas de datos de seguridad de los proveedores.",
     "line": "<b>{names}:</b> {hazards}",
     "unknown": "{count, plural, one {No se indican peligros para {list}: consulte la ficha de datos de seguridad que lo acompaña.} many {No se indican peligros para {list}: consulte las fichas de datos de seguridad que los acompañan.} other {No se indican peligros para {list}: consulte las fichas de datos de seguridad que los acompañan.}}",
-    "safety": "Los materiales secos para esmaltes producen polvo: manténgalo fuera de sus pulmones, incluso el de los materiales no clasificados como peligrosos. Vea <mixing>Preparación segura y ventilación</mixing>, y <home>No envenene a su familia</home> si hay niños o animales de compañía cerca. Si la ficha de datos de seguridad de un material dice más, sígala."
+    "safety": "Los materiales secos para esmaltes producen polvo, y debe mantenerlo fuera de sus pulmones, incluso el de los materiales no clasificados como peligrosos. Vea <mixing>Preparación segura y ventilación</mixing> y, si hay niños o animales de compañía cerca, también <home>No envenene a su familia</home>. Si la ficha de datos de seguridad de un material dice más, sígala."
   },
   "compare": {
     "heading": "Comparar dos recetas",
@@ -533,7 +533,10 @@
     "suppliesShare": "{oxide, select, alúmina {el {percent} % de la alúmina} sílice {el {percent} % de la sílice} other {el {percent} % del {oxide}}}",
     "suppliesLittle": "una pequeña parte del esmalte",
     "changed": "{name} {from} → {to}",
-    "added": "{name} {amount}, nuevo"
+    "added": "{name} {amount}, nuevo",
+    "why": {
+      "rawClay": "la arcilla cruda encoge al secarse el esmalte, y con mucha el esmalte puede agrietarse sobre la pieza y recogerse en el horno; el caolín calcinado puede aportar el resto"
+    }
   },
   "shelf": {
     "empty": "No hay materiales disponibles con los que rehacer."
@@ -571,7 +574,8 @@
     "bands": {
       "low": "Baja temperatura, cono 06–02",
       "mid": "Media temperatura, cono 4–6",
-      "high": "Alta temperatura, cono 9–11"
+      "high": "Alta temperatura, cono 9–11",
+      "top": "Muy alta temperatura, desde cono 12"
     },
     "shownFor": "Si no se ha elegido ninguna cocción, las cifras mostradas son para: {band}. La cocción se guarda con la receta.",
     "cone": "Estas son las cifras del conjunto para cono {cone}.",
@@ -591,6 +595,7 @@
     "notInSet": "Este conjunto no tiene intervalo para {oxides}.",
     "checksOnly": "Este conjunto solo comprueba {oxides}.",
     "notApply": "{name} no tiene cifras para esta cocción ({band}), así que no se comprueba: las cifras de otra cocción confundirían.",
+    "topNote": "Los límites publicados para esmaltes que hemos encontrado llegan hasta el cono 10, y Glazecalc no los lee más allá del cono 11, así que una cocción desde el cono 12 no se comprueba con límites. Sus probetas deciden.",
     "guidance": "Son orientaciones, no un aprobado o un suspenso: un esmalte fuera de ellas puede estar bien, y uno dentro puede aun así cuartearse, ceder metales o fallar. Pruébelo.",
     "source": "Fuente:",
     "saveFailed": "No se ha podido guardar en su cuenta su elección de conjunto de límites, así que sigue en uso el conjunto anterior.",
@@ -628,7 +633,8 @@
       "ash": "Glazecalc no puede comparar la química de este esmalte con su cocción: tiene ceniza, cuya composición varía demasiado para las cifras publicadas que usa esta comprobación.",
       "noTemperature": "Glazecalc no puede comparar la química de este esmalte con {scale, select, band {{band, select, low {la baja temperatura} mid {la media temperatura} other {la alta temperatura}}} sk {SK {cone}} temperature {{cone} °C} other {cono {cone}}}: no hay una temperatura medida para ese cono.",
       "between": "Glazecalc no puede comparar la química de este esmalte con {scale, select, band {{band, select, low {la baja temperatura} mid {la media temperatura} other {la alta temperatura}}} sk {SK {cone}} temperature {{cone} °C} other {cono {cone}}}: las cifras publicadas que usa esta comprobación son para la baja temperatura y para la media y la alta, no para los conos intermedios (de 01 a 3).",
-      "belowChart": "Glazecalc no puede comparar la química de este esmalte con {scale, select, band {{band, select, low {la baja temperatura} mid {la media temperatura} other {la alta temperatura}}} sk {SK {cone}} temperature {{cone} °C} other {cono {cone}}}: la regla del boro de Katz va de cono 06 a cono 10, y esa cocción es más fría."
+      "belowChart": "Glazecalc no puede comparar la química de este esmalte con {scale, select, band {{band, select, low {la baja temperatura} mid {la media temperatura} other {la alta temperatura}}} sk {SK {cone}} temperature {{cone} °C} other {cono {cone}}}: la regla del boro de Katz va de cono 06 a cono 10, y esa cocción es más fría.",
+      "aboveChart": "Glazecalc no puede comparar la química de este esmalte con {scale, select, band {{band, select, top {la muy alta temperatura} other {la alta temperatura}}} sk {SK {cone}} temperature {{cone} °C} other {cono {cone}}}: la regla del boro de Katz va de cono 06 a cono 10, las cifras de sílice y alúmina de Hesselberth y Roy llegan hasta el cono 10, y esa cocción es más caliente."
     }
   },
   "stull": {
@@ -979,7 +985,7 @@
     "approxTemperature": "≈ {temperature} ({basis}; aproximado)",
     "approxCone": "≈ {cone} ({basis}; aproximado)",
     "basis": {
-      "orton60": "conos Orton grandes a 60 °C por hora",
+      "orton150": "la tabla más antigua de Orton para conos grandes, a 150 °C por hora",
       "kyoto": "medido a 100 °C por hora por el instituto municipal de Kioto",
       "stated": "tal como se indica"
     },

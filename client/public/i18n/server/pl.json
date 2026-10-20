@@ -100,6 +100,7 @@
   "limitSet-choices": "Należy wybrać hesselberth-roy lub glazecalc.",
   "currency-choices": "Należy wybrać jedną z walut z listy albo pozostawić wybór według regionu.",
   "calendar-choices": "Daty mogą być wyświetlane w kalendarzu gregoriańskim (gregory), tajskiej erze buddyjskiej (buddhist) lub japońskich erach (japanese).",
+  "digits-choices": "Cyfry mogą być wyświetlane zgodnie z miejscowym zwyczajem (auto), jako 0–9 (western) lub jako własne cyfry języka (native).",
   "shelf-invalid": "Lista posiadanych surowców może mieć najwyżej {most} pozycji.",
   "shelf-full": "Lista posiadanych surowców może mieć najwyżej {most} pozycji. Nic nie zostało zmienione.",
   "shelf-material-unknown": "Tego surowca nie ma wśród surowców użytkownika ani w bibliotece Glazecalc.",

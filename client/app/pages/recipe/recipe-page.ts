@@ -960,6 +960,11 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
     return total && amountOf(amount) ? upTo((amountOf(amount) / total) * 100, 1) + '%' : '';
   }
 
+  /** The whole batch's share, 100%, in the reader's digits as the other shares are. */
+  protected totalShare(): string {
+    return this.total() ? upTo(100, 0) + '%' : '';
+  }
+
   protected formatTotal(): string {
     return upTo(this.total(), 3);
   }
@@ -1399,7 +1404,8 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
       allowLead: !this.leadOff(),
       tries: run.tries,
       avoid: run.avoid,
-      additives: this.additiveLines()
+      additives: this.additiveLines(),
+      uncapped: run.uncapped
     });
     const swapped = listOf(swaps.map((s) => translate('recipe.page.became', { from: s.from, to: s.to })));
     const parts = [
@@ -1635,7 +1641,11 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
   }
 
   private applyShelf(run: Run, compare = true): void {
-    const match = matchFromShelf(this.lines(), run.tries, { avoid: run.avoid, additives: this.additiveLines() });
+    const match = matchFromShelf(this.lines(), run.tries, {
+      avoid: run.avoid,
+      additives: this.additiveLines(),
+      uncapped: run.uncapped
+    });
     const parts = [
       translate('recipe.page.shelfNote'),
       this.changedNote(match.changes),

@@ -81,7 +81,7 @@ Tabel annab isetoetuva koonuse 6 temperatuuriks {{2232 °F; 1222 °C}}, kuid ain
 
 ## Koonuste tabel {#cone-chart}
 
-Need andmed on Ortoni koonuste tabelist (©2001) isetoetuvate koonuste kohta. Valige veerg, mis vastab sellele, kui kiiresti teie ahi viimase {{180 °F; 100 °C}} jooksul tõusis. Ortoni rusikareegel on kiire põletuse jaoks veerg {{270 °F/h; 150 °C/h}}, keskmise jaoks veerg {{108 °F/h; 60 °C/h}} ja aeglase jaoks veerg {{27 °F/h; 15 °C/h}}. Kiiruse arvutamiseks jagage temperatuuri tõus selleks kulunud tundidega: ahi, mille temperatuur tõuseb 3 tunniga {{900 °F; 500 °C}} võrra, kuumeneb umbes kiirusega {{300 °F/h; 167 °C/h}}.
+Need andmed on Ortoni koonuste tabelist (©2001) isetoetuvate koonuste kohta; koonused 11 kuni 14 on Ortoni praegu avaldatavatest tabelitest, mis annavad kattuvas osas samad arvud, koonuste 13 ja 14 kohta aga ainult °C-des (nende °F on siin teisendatud). Valige veerg, mis vastab sellele, kui kiiresti teie ahi viimase {{180 °F; 100 °C}} jooksul tõusis. Ortoni rusikareegel on kiire põletuse jaoks veerg {{270 °F/h; 150 °C/h}}, keskmise jaoks veerg {{108 °F/h; 60 °C/h}} ja aeglase jaoks veerg {{27 °F/h; 15 °C/h}}. Kiiruse arvutamiseks jagage temperatuuri tõus selleks kulunud tundidega: ahi, mille temperatuur tõuseb 3 tunniga {{900 °F; 500 °C}} võrra, kuumeneb umbes kiirusega {{300 °F/h; 167 °C/h}}.
 
 Table: Ortoni isetoetuvad koonused: temperatuur, mille juures iga koonus paindub, kuumutuskiiruse järgi viimase {{180 °F; 100 °C}} jooksul
 Label: Ortoni koonuste tabel
@@ -108,8 +108,14 @@ Label: Ortoni koonuste tabel
 | 8      |          {{2212 °F; 1211 °C}} |            {{2280 °F; 1249 °C}} |          {{2320 °F; 1271 °C}} |
 | 9      |          {{2235 °F; 1224 °C}} |            {{2300 °F; 1260 °C}} |          {{2336 °F; 1280 °C}} |
 | 10     |          {{2284 °F; 1251 °C}} |            {{2345 °F; 1285 °C}} |          {{2381 °F; 1305 °C}} |
+| 11     |          {{2322 °F; 1272 °C}} |            {{2361 °F; 1294 °C}} |          {{2399 °F; 1315 °C}} |
+| 12     |          {{2345 °F; 1285 °C}} |            {{2383 °F; 1306 °C}} |          {{2419 °F; 1326 °C}} |
+| 13     |          {{2390 °F; 1310 °C}} |            {{2428 °F; 1331 °C}} |          {{2458 °F; 1348 °C}} |
+| 14     |          {{2464 °F; 1351 °C}} |            {{2489 °F; 1365 °C}} |          {{2523 °F; 1384 °C}} |
 
 Kriips tähistab arvu, mida siia ei kopeeritud; selle leiate Ortoni täielikust tabelist.
+
+Orton valmistab kõrgtemperatuursete tööde jaoks koonuseid kuni koonuseni 42, kuid avaldab temperatuure ainult kuni koonuseni 14; kuumemate koonuste tabelid on Ortoni sõnul „saadaval (nõudmisel)“. Ortoni vanem tabel, nagu ahjutootjad seda kordustrükis avaldavad, annab suure koonuse 15 temperatuuriks {{2608 °F; 1431 °C}} kiirusel {{270 °F/h; 150 °C/h}}, ja koonuse 16 ega kuumemate koonuste kohta avaldatud arvu ei leitud. Koonusest 14 kuumemal põletusel pange kontrollkoonused ja lähtuge neist ning kontrollige, et teie ahju tootja esitatud maksimaalne temperatuur ulatub nii kõrgele.
 
 Suurte koonuste näidud erinevad neist arvudest vaid mõne kraadi võrra: suur koonus 6 paindub kiirusel {{108 °F/h; 60 °C/h}} temperatuuril {{2228 °F; 1220 °C}}. Väikesed koonused, mida kasutatakse Kiln-Sitteris, on tabelis ainult kiirusel {{540 °F/h; 300 °C/h}}, seega annab tabel väikese koonuse 6 temperatuuriks {{2291 °F; 1255 °C}}. See ei ole temperatuur, mille juures Kiln-Sitter ahju välja lülitab. Kiln-Sitteri koonuse ülesanne on vastata ahjuplaadil olevale koonusele ja viimane sõna on ahjuplaadi koonusel.
 
@@ -298,6 +304,8 @@ Numbrid algavad siin kõige jahedamast koonusest SK 022 ja lõpevad koonusega SK
 
 Pange iga suur koonus koonusealusesse või savitükki, kaldu oma paindekülje poole. Nagu iga koonuse puhul, hoidke kõrgus ja kalle põletusest põletusse samad, sest erinevus kummaski muudab seda, kui kaugele koonus paindub. Pange komplekti{{en: cone pack}} kolm koonust (vt allpool) koos sügavale ahju, ahjutäie keskosa lähedale, kus need saavad sama kuumust, mida saavad esemed, kuid kus neid on siiski vaateavast näha; enne ahju sulgemist kontrollige, et näete kõiki kolme.
 
+Valmistaja ega müüja juhiseid selle kohta, kui sügavale või millise nurga all SK-koonuseid panna, ei leitud. Kõige lähedasem on laboristandard JIS R 2204, Jaapani katse selle kohta, kui palju kuumust tulekindel materjal talub: see paneb iga SK-koonuse nii, et selle märgistatud külg on tasase aluse suhtes 80° nurga all ja jalg umbes 4 mm aluse sees. See on tulekindlate materjalide katse, mitte keraamikaesemete põletamise reegel, ja see on loetud standardi ärakirjast, mitte standardist endast.
+
 ### Hoiatus-, siht- ja valvekoonus
 
 Koonuseid müüakse ja pannakse kolmekaupa: hoiatuskoonus, sihtkoonus sihttemperatuuri jaoks ja valvekoonus. Võtke sihtkoonuseks SK-number, mille teie retsept või savi nimetab, hoiatuskoonuseks ühe numbri võrra jahedam koonus (tabelis üks rida ülevalpool) ja valvekoonuseks ühe numbri võrra kuumem koonus. Kui hoiatuskoonus hakkab painduma, on lõpp lähedal; kui valvekoonus paindub, on põletus läinud liiga kaugele.
@@ -366,6 +374,8 @@ Ortoni isetoetuvaid koonuseid müüakse Jaapanis nime all 立つゼーゲル (�
 
 - [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (SK-tabel, kontrollitud 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
 - [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (kehtiv, uuesti kinnitatud 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
+- [JSA: JIS R 2204:1999, 耐火物及び耐火物原料の耐火度試験方法 (kehtiv, uuesti kinnitatud 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+2204:1999)
+- [kikakurui.com: standardi JIS R 2204:1999 ärakiri, mille punkt 5 a) määrab koonuste paigutuse (loetud 2026-10-19)](https://kikakurui.com/r2/R2204-1999-01.html)
 - [Kyoto Municipal Institute of Industrial Technology and Culture: mida arvestada üleminekul Kyoto koonustelt Ortoni koonustele](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
 
 :::
@@ -607,7 +617,7 @@ Ruumi ventileerimise ja vinguandurite kohta vaadake juhendeid [Ohutu segamine ja
 ### Kui ahi põletab
 
 - Vaadake läbi vaateava ainult IR-kaitsega keevitusprillidega, tumedusaste 3; päikeseprillidest ei piisa. Skutt soovitab korgid kohale keerata, et need välja ei kukuks.
-- Ärge jätke ahju järelevalveta kauemaks kui selle eeldatav põletusaeg; Kiln-Sitter ei ole rikkekindel väljalülitusseade.
+- Olge ahju lähedal ja kontrollige seda põletuse ajal, eriti selle eeldatava lõpuaja lähedal; Kiln-Sitter ei ole rikkekindel väljalülitusseade. Põletage ainult siis, kui täiskasvanu on kodus ja kogu põletuse ajal ärkvel.
 - Ärge kunagi põletage millegi süttiva peal ega lähedal, nagu puitpõrand või vaip.
 - Järgige oma ahju kasutusjuhendis antud ohutuid vahekaugusi. Avaldatud väärtused jäävad vahemikku 12 tolli (30 cm) kuni 3 jalga (91 cm); kui kasutusjuhend selle kohta midagi ei ütle, on kõige ohutum valik 18 tolli (46 cm) seintest ja 3 jalga (91 cm) kõigest, mis võib süttida.
 - Hoidke Kiln-Sitteri raskuse ümbrus vaba, et see saaks kukkuda.

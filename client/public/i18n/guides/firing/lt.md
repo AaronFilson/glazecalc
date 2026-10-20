@@ -81,7 +81,7 @@ Lentelėje savaime stovinčio piroskopo 6 temperatūra nurodyta {{2232 °F; 1222
 
 ## Piroskopų lentelė {#cone-chart}
 
-Šie skaičiai paimti iš Ortono savaime stovinčių piroskopų{{en: cones}} lentelės (©2001). Pasirinkite stulpelį, atitinkantį, kaip greitai jūsų krosnis kaito per paskutinius {{180 °F; 100 °C}}. Pagal apytikslę Ortono taisyklę greitam degimui tinka {{270 °F/h; 150 °C/h}} stulpelis, vidutiniam – {{108 °F/h; 60 °C/h}}, o lėtam – {{27 °F/h; 15 °C/h}}. Spartai apskaičiuoti padalykite pakilusius laipsnius iš tam prireikusių valandų: krosnis, kurios temperatūra per 3 valandas pakyla {{900 °F; 500 °C}}, kaista maždaug {{300 °F/h; 167 °C/h}} sparta.
+Šie skaičiai paimti iš Ortono savaime stovinčių piroskopų{{en: cones}} lentelės (©2001); piroskopų 11–14 skaičiai paimti iš dabar Ortono skelbiamų lentelių, kuriose ten, kur jos sutampa, pateikiami tie patys skaičiai, o piroskopams 13 ir 14 – tik °C (jų °F čia perskaičiuoti). Pasirinkite stulpelį, atitinkantį, kaip greitai jūsų krosnis kaito per paskutinius {{180 °F; 100 °C}}. Pagal apytikslę Ortono taisyklę greitam degimui tinka {{270 °F/h; 150 °C/h}} stulpelis, vidutiniam – {{108 °F/h; 60 °C/h}}, o lėtam – {{27 °F/h; 15 °C/h}}. Spartai apskaičiuoti padalykite pakilusius laipsnius iš tam prireikusių valandų: krosnis, kurios temperatūra per 3 valandas pakyla {{900 °F; 500 °C}}, kaista maždaug {{300 °F/h; 167 °C/h}} sparta.
 
 Table: Ortono savaime stovintys piroskopai: temperatūra, kurioje kiekvienas sulinksta, pagal kaitinimo spartą per paskutinius {{180 °F; 100 °C}}
 Label: Ortono piroskopų lentelė
@@ -108,8 +108,14 @@ Label: Ortono piroskopų lentelė
 | 8          |        {{2212 °F; 1211 °C}} |                {{2280 °F; 1249 °C}} |            {{2320 °F; 1271 °C}} |
 | 9          |        {{2235 °F; 1224 °C}} |                {{2300 °F; 1260 °C}} |            {{2336 °F; 1280 °C}} |
 | 10         |        {{2284 °F; 1251 °C}} |                {{2345 °F; 1285 °C}} |            {{2381 °F; 1305 °C}} |
+| 11         |        {{2322 °F; 1272 °C}} |                {{2361 °F; 1294 °C}} |            {{2399 °F; 1315 °C}} |
+| 12         |        {{2345 °F; 1285 °C}} |                {{2383 °F; 1306 °C}} |            {{2419 °F; 1326 °C}} |
+| 13         |        {{2390 °F; 1310 °C}} |                {{2428 °F; 1331 °C}} |            {{2458 °F; 1348 °C}} |
+| 14         |        {{2464 °F; 1351 °C}} |                {{2489 °F; 1365 °C}} |            {{2523 °F; 1384 °C}} |
 
 Brūkšnys žymi čia nenukopijuotą skaičių; jo ieškokite visoje Ortono lentelėje.
+
+Ortonas aukštos temperatūros darbams gamina piroskopus iki 42, bet temperatūras skelbia tik iki piroskopo 14; karštesnių piroskopų lentelės „gaunamos (paprašius)“. Senesnė Ortono lentelė, kurią perspausdina krosnių gamintojai, nurodo didelio piroskopo 15 temperatūrą {{2608 °F; 1431 °C}} esant {{270 °F/h; 150 °C/h}} spartai, o piroskopo 16 ir karštesnių paskelbtų skaičių neradome. Degdami karščiau nei iki piroskopo 14, statykite kontrolinius piroskopus ir vadovaukitės jais, taip pat patikrinkite, ar gamintojo nurodyta didžiausia jūsų krosnies temperatūra siekia tokį karštį.
 
 Didelių piroskopų temperatūros nuo šių skaičių skiriasi vos keliais laipsniais: didelis piroskopas 6, esant {{108 °F/h; 60 °C/h}} spartai, sulinksta ties {{2228 °F; 1220 °C}}. Mažieji piroskopai, kokie naudojami išjungiklyje Kiln-Sitter{{en: kiln sitter}}, pateikiami tik {{540 °F/h; 300 °C/h}} spartai, todėl lentelėje mažojo piroskopo 6 temperatūra nurodyta {{2291 °F; 1255 °C}}. Tai nėra temperatūra, kurioje išjungiklis išjungia krosnį. Išjungiklio piroskopo paskirtis – atitikti piroskopą ant plokštės, o paskutinis žodis priklauso piroskopui ant plokštės.
 
@@ -298,6 +304,8 @@ Standarte yra du dydžiai. Dideli piroskopai (大型コーン) „daugiausia nau
 
 Kiekvieną didelį piroskopą įstatykite į stovelį arba molio paplotėlį, pakreiptą į jo linkimo pusę. Kaip ir bet kurio piroskopo, aukštį ir pasvirimą kiekvieną kartą degdami išlaikykite vienodus, nes bet kurio iš jų skirtumas pakeičia, kiek piroskopas sulinksta. Tris rinkinio{{en: cone pack}} piroskopus (apie juos – toliau) statykite kartu, giliai krosnyje, arčiau įkrovos vidurio, kur jie gauna tiek pat šilumos kaip dirbiniai, tačiau kur juos matote pro stebėjimo angą; prieš uždarydami krosnį patikrinkite, ar matote visus tris.
 
+Neradome gamintojo ar pardavėjo nurodymų, kaip giliai ar kokiu kampu statyti SK piroskopus. Artimiausias dalykas – laboratorinis standartas JIS R 2204, Japonijos bandymas, kiek karščio atlaiko ugniai atspari medžiaga: jame kiekvienas SK piroskopas statomas taip, kad jo pažymėtas šonas būtų 80° kampu į plokščią pagrindą, o jo pėda būtų įleista į pagrindą apie 4 mm. Tai ugniai atsparių medžiagų bandymas, o ne keramikos dirbinių degimo taisyklė, ir jį skaitėme standarto nuorašoje, o ne pačiame standarte.
+
 ### Orientacinis, degimo ir apsauginis piroskopai
 
 Piroskopai parduodami ir statomi po tris: orientacinis piroskopas, degimo piroskopas, atitinkantis tikslą, ir apsauginis piroskopas. Degimo piroskopu imkite tą SK numerį, kurį nurodo jūsų receptas ar molis, orientaciniu – artimiausią vėsesnį piroskopą (viena eilute aukščiau lentelėje), o apsauginiu – artimiausią karštesnį. Kai orientacinis piroskopas pradeda linkti, pabaiga arti; kai sulinksta apsauginis piroskopas, degimas nuėjo per toli.
@@ -366,6 +374,8 @@ Ortono savaime stovintys piroskopai Japonijoje parduodami pavadinimu 立つゼ�
 
 - [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (SK piroskopų lentelė, patikrinta 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
 - [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (galioja, pakartotinai patvirtintas 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
+- [JSA: JIS R 2204:1999, 耐火物及び耐火物原料の耐火度試験方法 (galioja, pakartotinai patvirtintas 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+2204:1999)
+- [kikakurui.com: JIS R 2204:1999 nuorašas, kurio 5 a) punktas nustato, kaip statyti piroskopus (skaityta 2026-10-19)](https://kikakurui.com/r2/R2204-1999-01.html)
 - [Kioto miesto pramonės technologijų ir kultūros institutas: į ką atkreipti dėmesį pereinant nuo Kioto piroskopų prie Ortono piroskopų](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
 
 :::
@@ -607,7 +617,7 @@ Apie patalpos vėdinimą ir smalkių detektorius skaitykite vadovuose [Saugus ma
 ### Kai krosnis įjungta
 
 - Pro stebėjimo angą žiūrėkite tik pro IR spinduliuotę sulaikančius tamsumo laipsnio 3 suvirintojo akinius; akinių nuo saulės nepakanka. Skutt pataria kamščius įsukti į vietą, kad jie neiškristų.
-- Nepalikite krosnies be priežiūros ilgiau nei numatoma degimo trukmė; išjungiklis Kiln-Sitter{{en: kiln sitter}} negarantuoja, kad įvykus gedimui krosnis išsijungs.
+- Būkite netoliese ir degimo metu tikrinkite krosnį, ypač artėjant numatytam degimo pabaigos laikui; išjungiklis Kiln-Sitter{{en: kiln sitter}} negarantuoja, kad įvykus gedimui krosnis išsijungs. Degkite tik tada, kai per visą degimą namie bus ir budės suaugęs žmogus.
 - Niekada neįjunkite krosnies ant to, kas gali užsidegti, ar šalia to, pavyzdžiui, ant medinių grindų ar kilimo.
 - Laikykitės naudojimo instrukcijoje nurodytų atstumų. Skelbiami skaičiai svyruoja nuo 12 colių (30 cm) iki 3 pėdų (91 cm); jei naudojimo instrukcijoje to nenurodyta, saugiausia laikytis 18 colių (46 cm) atstumo nuo sienų ir 3 pėdų (91 cm) nuo visko, kas gali užsidegti.
 - Vietą aplink išjungiklio svarelį laikykite laisvą, kad jis galėtų nukristi.

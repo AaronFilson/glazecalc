@@ -82,6 +82,31 @@
     "languages": "Diller",
     "language": "Dil:"
   },
+  "picker": {
+    "results": "{count, plural, one {# eşleşme} other {# eşleşme}}",
+    "languages": {
+      "search": "Dil ara",
+      "showAll": "Tüm dilleri göster",
+      "noMatch": "Eşleşen dil yok"
+    },
+    "regions": {
+      "search": "Ülke ve bölge ara",
+      "showAll": "Tüm ülke ve bölgeleri göster",
+      "noMatch": "Eşleşen ülke veya bölge yok"
+    },
+    "groups": {
+      "africa": "Afrika",
+      "americas": "Amerika kıtası",
+      "asia": "Asya",
+      "eastAsia": "Doğu Asya",
+      "europe": "Avrupa",
+      "middleEastNorthAfrica": "Orta Doğu ve Kuzey Afrika",
+      "oceania": "Okyanusya",
+      "southAsia": "Güney Asya",
+      "southeastAsia": "Güneydoğu Asya",
+      "other": "Diğer"
+    }
+  },
   "numbers": {
     "notANumber": "{example} gibi bir sayı girin.",
     "notANumberComma": "Ondalık için virgül kullanarak {example} gibi bir sayı girin.",

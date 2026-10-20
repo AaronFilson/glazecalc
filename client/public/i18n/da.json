@@ -82,6 +82,31 @@
     "languages": "Sprog",
     "language": "Sprog:"
   },
+  "picker": {
+    "results": "{count, plural, one {# resultat} other {# resultater}}",
+    "languages": {
+      "search": "Søg efter sprog",
+      "showAll": "Vis alle sprog",
+      "noMatch": "Ingen sprog passer"
+    },
+    "regions": {
+      "search": "Søg efter lande og regioner",
+      "showAll": "Vis alle lande og regioner",
+      "noMatch": "Ingen lande eller regioner passer"
+    },
+    "groups": {
+      "africa": "Afrika",
+      "americas": "Amerika",
+      "asia": "Asien",
+      "eastAsia": "Østasien",
+      "europe": "Europa",
+      "middleEastNorthAfrica": "Mellemøsten og Nordafrika",
+      "oceania": "Oceanien",
+      "southAsia": "Sydasien",
+      "southeastAsia": "Sydøstasien",
+      "other": "Andre"
+    }
+  },
   "numbers": {
     "notANumber": "Angiv et tal, fx {example}.",
     "notANumberComma": "Angiv et tal, fx {example}, med komma som decimaltegn.",

@@ -3,6 +3,7 @@ import { translate } from '@jsverse/transloco';
 import * as numbers from '../../../lib/recipe/numbers';
 import { temperatureText } from '../../../lib/recipe/temperature';
 import type { DecimalMark } from '../core/preferences.service';
+import { ltr } from './bidi';
 
 // Numbers, dates and temperatures as the reader writes them (docs/i18n-plan.md):
 // 1234,5 in German, 1 234,5 in French, 1,234.5 in US English. The locale and
@@ -134,7 +135,10 @@ export function formatDate(
 export const formatTime = (date: Date): string =>
   new Intl.DateTimeFormat(formatLocale(), { hour: 'numeric', minute: '2-digit' }).format(date);
 
-/** A temperature in the reader's scale, from °C: "1240 °C" or "2264 °F", with a no-break space. */
+/**
+ * A temperature in the reader's scale, from °C: "1240 °C" or "2264 °F", with a no-break space; left to
+ * right as a whole on a right-to-left page (shared/bidi.ts).
+ */
 export function formatTemperature(celsius: number, scale: 'C' | 'F'): string {
-  return temperatureText(celsius, scale, (value) => upTo(value, 0));
+  return ltr(temperatureText(celsius, scale, (value) => upTo(value, 0)));
 }

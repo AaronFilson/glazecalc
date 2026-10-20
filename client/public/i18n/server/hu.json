@@ -100,6 +100,7 @@
   "limitSet-choices": "Válasszon: hesselberth-roy vagy glazecalc.",
   "currency-choices": "Válasszon a listában szereplő pénznemek közül, vagy bízza a régiójára.",
   "calendar-choices": "A dátumok megjeleníthetők a Gergely-naptár (gregory), a thai buddhista időszámítás (buddhist) vagy a japán korszakok (japanese) szerint.",
+  "digits-choices": "A számjegyek megjelenhetnek a régióban szokásos módon (auto), 0–9 formában (western) vagy a nyelv saját számjegyeivel (native).",
   "shelf-invalid": "A készlet legfeljebb {most} nyersanyagból álló lista.",
   "shelf-full": "A készletben legfeljebb {most} nyersanyag lehet. Semmi sem módosult.",
   "shelf-material-unknown": "Ez a nyersanyag nincs sem az Ön nyersanyagai, sem a Glazecalc könyvtára között.",

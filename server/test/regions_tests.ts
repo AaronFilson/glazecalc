@@ -1,10 +1,13 @@
 import crypto from 'node:crypto';
 import fs from 'node:fs';
 import regions from '../../lib/regions/index.js';
+import groups from '../../lib/regions/groups.js';
+import languages from '../../lib/regions/languages.js';
 import food from '../../lib/regions/food.js';
 import suppliers from '../../lib/regions/suppliers.js';
 import workplace from '../../lib/regions/workplace.js';
 import safety from '../../lib/regions/safety.js';
+import numbers from '../../lib/recipe/numbers.js';
 import type { SafetyLine } from '../../lib/regions/safety.js';
 import { expect } from './support/app.ts';
 
@@ -30,9 +33,9 @@ describe('regions', () => {
     }
     // Ireland's shops sell the UK's materials, so it lists the UK's, though it is in the EU.
     expect(regions.regionFor('IE')).to.include({ eu: true, cones: 'orton', library: 'UK' });
-    expect(regions.formatLocaleFor('en', 'DE', 'auto')).to.equal('en-DE');
-    expect(regions.formatLocaleFor('pt', '', 'auto')).to.equal('pt-PT');
-    expect(regions.formatLocaleFor('en', 'DE', 'en-GB')).to.equal('en-GB');
+    expect(regions.formatLocaleFor('en', 'DE', 'auto')).to.equal('en-DE-u-ca-gregory-nu-latn');
+    expect(regions.formatLocaleFor('pt', '', 'auto')).to.equal('pt-PT-u-ca-gregory-nu-latn');
+    expect(regions.formatLocaleFor('en', 'DE', 'en-GB')).to.equal('en-GB-u-ca-gregory-nu-latn');
   });
 
   it('should price in each region’s own currency, which the runtime can write', () => {
@@ -62,20 +65,31 @@ describe('regions', () => {
 
   it("keeps the language's script in its format, and drops its own region for the reader's", () => {
     // Traditional Chinese read in Ireland is written as Traditional, not as zh-IE (Simplified).
-    expect(regions.formatLocaleFor('zh-Hant', 'IE', 'auto')).to.equal('zh-Hant-IE');
-    expect(regions.formatLocaleFor('zh-Hans', 'NL', 'auto')).to.equal('zh-Hans-NL');
-    expect(regions.formatLocaleFor('zh-Hant', '', 'auto')).to.equal('zh-Hant');
-    expect(regions.formatLocaleFor('zh-Hant-TW', 'DE', 'auto')).to.equal('zh-Hant-DE');
+    expect(regions.formatLocaleFor('zh-Hant', 'IE', 'auto')).to.equal('zh-Hant-IE-u-ca-gregory-nu-latn');
+    expect(regions.formatLocaleFor('zh-Hans', 'NL', 'auto')).to.equal('zh-Hans-NL-u-ca-gregory-nu-latn');
+    expect(regions.formatLocaleFor('zh-Hant', '', 'auto')).to.equal('zh-Hant-u-ca-gregory-nu-latn');
+    expect(regions.formatLocaleFor('zh-Hant-TW', 'DE', 'auto')).to.equal('zh-Hant-DE-u-ca-gregory-nu-latn');
     // Portuguese stays European; a pseudo-locale is English.
-    expect(regions.formatLocaleFor('pt-PT', 'FR', 'auto')).to.equal('pt-FR');
-    expect(regions.formatLocaleFor('pt-PT', '', 'auto')).to.equal('pt-PT');
-    expect(regions.formatLocaleFor('en-XA', 'DE', 'auto')).to.equal('en-DE');
-    expect(regions.formatLocaleFor('ar-XB', '', 'auto')).to.equal('en');
-    expect(regions.formatLocaleFor('', '', 'auto')).to.equal('en');
+    expect(regions.formatLocaleFor('pt-PT', 'FR', 'auto')).to.equal('pt-FR-u-ca-gregory-nu-latn');
+    expect(regions.formatLocaleFor('pt-PT', '', 'auto')).to.equal('pt-PT-u-ca-gregory-nu-latn');
+    expect(regions.formatLocaleFor('en-XA', 'DE', 'auto')).to.equal('en-DE-u-ca-gregory-nu-latn');
+    expect(regions.formatLocaleFor('ar-XB', '', 'auto')).to.equal('en-u-ca-gregory-nu-latn');
+    expect(regions.formatLocaleFor('', '', 'auto')).to.equal('en-u-ca-gregory-nu-latn');
     // Traditional and Simplified write the same date differently.
     const date = new Date(2026, 9, 12);
     const written = (locale: string) => new Intl.DateTimeFormat(locale, { dateStyle: 'full' }).format(date);
     expect(written(regions.formatLocaleFor('zh-Hant', 'IE', 'auto'))).not.to.equal(written('zh-IE'));
+  });
+
+  it('writes the pseudo-Arabic in Arabic-Indic digits, whatever the browser takes bare Arabic to mean', () => {
+    expect(regions.formatLocaleFor('ar-XD', '', 'auto')).to.equal('ar-u-ca-gregory-nu-arab');
+    // The Digits setting's 0-9 still wins over the language's own.
+    expect(regions.formatLocaleFor('ar-XD', '', 'auto', 'gregory', 'western')).to.equal('ar-u-ca-gregory-nu-latn');
+    expect(regions.formatLocaleFor('ar-XD', 'DE', 'auto', 'japanese')).to.equal('ar-DE-u-ca-japanese-nu-arab');
+    expect(new Intl.NumberFormat(regions.formatLocaleFor('ar-XD', '', 'auto')).format(1240.5)).to.equal('١٬٢٤٠٫٥');
+    // A format chosen in Settings is the reader's own; the pseudo-Hindi keeps Hindi's 0-9.
+    expect(regions.formatLocaleFor('ar-XD', '', 'en-GB')).to.equal('en-GB-u-ca-gregory-nu-latn');
+    expect(regions.formatLocaleFor('hi-XE', '', 'auto')).to.equal('hi-u-ca-gregory-nu-latn');
   });
 
   it('writes Thai dates in the Gregorian calendar, Western digits, until the Calendar setting exists', () => {
@@ -89,11 +103,11 @@ describe('regions', () => {
       expect(year(locale), locale).to.match(/2026/);
       expect(new Intl.NumberFormat(locale).format(1234.5), locale).to.equal('1,234.5');
     }
-    // Other languages are as they were, and an explicit calendar is kept.
-    expect(regions.formatLocaleFor('id', '', 'auto')).to.equal('id');
-    expect(regions.formatLocaleFor('vi', 'DE', 'auto')).to.equal('vi-DE');
-    expect(regions.formatLocaleFor('en', 'DE', 'auto')).to.equal('en-DE');
-    expect(regions.formatLocaleFor('th', '', 'th-TH-u-ca-buddhist')).to.equal('th-TH-u-ca-buddhist');
+    // Every locale names the Gregorian calendar and its digits, and an explicit calendar is kept.
+    expect(regions.formatLocaleFor('id', '', 'auto')).to.equal('id-u-ca-gregory-nu-latn');
+    expect(regions.formatLocaleFor('vi', 'DE', 'auto')).to.equal('vi-DE-u-ca-gregory-nu-latn');
+    expect(regions.formatLocaleFor('en', 'DE', 'auto')).to.equal('en-DE-u-ca-gregory-nu-latn');
+    expect(regions.formatLocaleFor('th', '', 'th-TH-u-ca-buddhist')).to.equal('th-TH-u-ca-buddhist-nu-latn');
   });
 
   it('offers only formats the runtime knows, each once', () => {
@@ -120,27 +134,34 @@ describe('regions', () => {
 
   it('should show only verified lines, each with its source and checked within the last year', () => {
     const yearAgo = Date.now() - 366 * 24 * 60 * 60 * 1000;
-    // Emergency numbers shown though no official page was found, by the owner's decision (2026-10-17).
-    const REPORTED = ['VN'];
     for (const region of regions.REGIONS) {
       const shown = safety.shownFor(region.code)!;
-      for (const line of shown.emergency) {
-        expect(line.status, line.name).to.equal(REPORTED.includes(region.code) ? 'reported' : 'verified');
-      }
       for (const line of [...shown.emergency, ...shown.poison, ...shown.animals, ...shown.advice]) {
-        if (!shown.emergency.includes(line)) expect(line.status, line.name).to.equal('verified');
+        expect(line.status, line.name).to.equal('verified');
         expect(line.source, line.name).to.match(/^https:\/\//);
         expect(Date.parse(line.checked), line.name + ': check this number again').to.be.above(yearAgo);
       }
-      for (const line of all(region.code).filter((l) => l.status !== 'verified')) {
-        expect([...shown.poison, ...shown.animals].map((l) => l.name)).not.to.include(line.name);
+      for (const line of all(region.code)) {
+        // Vietnam's numbers were "reported" (listed without their roles) until 2026-10-19: no status is
+        // shown with a caution any more, and every line is verified or not shown.
+        expect(['verified', 'extract', 'unverified'], line.name).to.include(line.status);
+        if (line.status !== 'verified') {
+          expect([...shown.emergency, ...shown.poison, ...shown.animals, ...shown.advice]).not.to.include(line);
+        }
       }
     }
   });
 
   it("should dial what it shows: each link's digits match the number as written", () => {
+    // A line's other number is checked the same way where it has its own link (Morocco's poison centre's).
+    const numbers = (code: string) =>
+      all(code).flatMap((l) => [
+        { name: l.name, number: l.number, tel: l.tel },
+        ...(l.also && l.alsoTel ? [{ name: l.name, number: l.also, tel: l.alsoTel }] : [])
+      ]);
+    expect(numbers('MA').map((l) => l.tel)).to.include('+212537686464');
     for (const region of regions.REGIONS) {
-      for (const line of all(region.code).filter((l) => l.number)) {
+      for (const line of numbers(region.code).filter((l) => l.number)) {
         const written = line.number.replace(/\D/g, '');
         // A short number with # (Japan's #8000) is written %23 in its link.
         const dialled = decodeURIComponent(line.tel).replace(/\D/g, '');
@@ -165,7 +186,7 @@ describe('region facts', () => {
     fs.readFileSync(new URL('../../client/public/i18n/guides/en.json', import.meta.url), 'utf8')
   );
   const HTTP_ONLY = ['丸二陶料', '太麟化工原料有限公司', 'Sam Mui Kuang Pottery'];
-  const NO_SHOP_FOUND = ['MY', 'CN', 'HK', 'ID', 'TH', 'PH', 'VN'];
+  const NO_SHOP_FOUND = ['MY', 'CN', 'ID', 'VN', 'PK', 'BD', 'EG', 'MA', 'DZ'];
   const checkedLately = (fact: { checked: string; source?: string; url?: string }, label: string) => {
     expect(fact.source ?? fact.url, label).to.match(/^https:\/\//);
     expect(Date.parse(fact.checked), label + ': check this again').to.be.above(yearAgo);
@@ -183,9 +204,31 @@ describe('region facts', () => {
       if (region.eu) expect(silica.quartz, region.name).to.be.at.most(workplace.EU_SILICA.quartz);
       if (silica.cristobalite) expect(silica.cristobalite, region.name).to.be.below(silica.quartz);
       if (facts!.agency) checkedLately(facts!.agency, region.name + ' agency');
+      if (facts!.respirators) checkedLately(facts!.respirators, region.name + ' masks');
+      // A limit that applies until a later one does: verified, checked lately, and ending the day before.
+      if (silica.before) {
+        expect(silica.from, region.name).to.match(/^\d{4}-\d{2}-\d{2}$/);
+        checkedLately(silica.before, region.name + ' earlier limit');
+        expect(silica.before.status, region.name).to.equal('verified');
+        const dayAfter = new Date(Date.parse(silica.before.until) + 24 * 60 * 60 * 1000).toISOString().slice(0, 10);
+        expect(dayAfter, region.name).to.equal(silica.from);
+      }
     }
     // An agency whose own page could not be read is left out.
     expect(workplace.workplaceFor('PT')!.agency).to.equal(null);
+  });
+
+  it('leaves out an earlier limit that could not be confirmed, and keeps the later one', () => {
+    const before = workplace.WORKPLACE['TW']!.silica!.before as { status: string };
+    before.status = 'secondary';
+    try {
+      expect(workplace.workplaceFor('TW')!.silica!.before).to.include({ status: 'secondary' });
+      before.status = 'unverified';
+      expect(workplace.workplaceFor('TW')!.silica).to.include({ quartz: 0.1, from: '2027-01-01' });
+      expect(workplace.workplaceFor('TW')!.silica!.before).to.equal(undefined);
+    } finally {
+      before.status = 'verified';
+    }
   });
 
   it("should give every member state food-contact rules, its own or the EU's, in the law's units", () => {
@@ -195,6 +238,12 @@ describe('region facts', () => {
       if (region.eu) expect(found, region.name).not.to.equal(null);
       if (!found) continue;
       checkedLately(found.rules, region.name);
+      // A region with no law that gives figures says so, from an official page, with no limits.
+      if (found.rules.none) {
+        expect(found.rules.limits, region.name).to.eql([]);
+        expect(found.rules.status, region.name).to.equal('verified');
+        expect(found.rules.note, region.name).to.be.a('string');
+      } else expect(found.rules.limits.length, region.name).to.be.above(0);
       for (const limit of found.rules.limits) {
         expect(guides.food.category, region.name).to.have.property(limit.category);
         expect(units, region.name).to.include(limit.unit);
@@ -265,7 +314,7 @@ describe('Japan', () => {
       library: 'US',
       currency: 'JPY'
     });
-    expect(regions.formatLocaleFor('en', 'JP', 'auto')).to.equal('en-JP');
+    expect(regions.formatLocaleFor('en', 'JP', 'auto')).to.equal('en-JP-u-ca-gregory-nu-latn');
   });
 
   it("gives 119, the poison centre's two public lines (acute cases only) and #8000 for children", () => {
@@ -283,6 +332,9 @@ describe('Japan', () => {
     }
     expect(shown.advice).to.have.length(1);
     expect(shown.advice[0]).to.include({ number: '#8000', tel: '%238000', who: 'children' });
+    // Who answers (MHLW) and what it costs, as the prefectures' pages read say it.
+    expect(shown.advice[0]!.note).to.contain('from nurses or doctors');
+    expect(shown.advice[0]!.note).to.contain("The prefectures' pages we read say the advice is free");
     // The professionals' lines are not shown.
     const numbers = JSON.stringify(safety.SAFETY['JP']);
     for (const professional of ['072-726-9923', '029-851-9999']) expect(numbers).not.to.contain(professional);
@@ -328,10 +380,15 @@ describe('Japan', () => {
     ]);
     // The law does not say whether pieces are judged each or on average.
     for (const limit of rules.limits) expect(limit.judged).to.equal(undefined);
-    // No other region says "at most".
-    for (const code of Object.keys(food.FOOD).filter((code) => code !== 'JP')) {
+    // Only Japan's 以下 and China's ≤ say "at most".
+    for (const code of Object.keys(food.FOOD).filter((code) => code !== 'JP' && code !== 'CN')) {
       expect(food.FOOD[code]!.atMost, code).to.equal(undefined);
     }
+    // The 2025 revision kept the 2008 limits, so no in-force date reads as if they were new; the note
+    // says when the revision applies, and the transition to 2030.
+    expect(rules.inForce).to.equal(undefined);
+    expect(rules.note).to.contain('These limits date from 2008.');
+    expect(rules.note).to.contain('1 June 2026').and.contain('1 June 2030').and.contain('Consumer Affairs Agency');
   });
 
   it("names three shops checked on their own sites, and no shop's town that was not read there", () => {
@@ -368,22 +425,28 @@ describe('Türkiye', () => {
       library: 'EU',
       currency: 'TRY'
     });
-    expect(regions.formatLocaleFor('en', 'TR', 'auto')).to.equal('en-TR');
+    expect(regions.formatLocaleFor('en', 'TR', 'auto')).to.equal('en-TR-u-ca-gregory-nu-latn');
   });
 
-  it('gives 112 for every emergency service and UZEM on 114, around the clock, with no claim on cost', () => {
+  it('gives 112 for every emergency service and UZEM on 114, around the clock, free and for the public', () => {
     const shown = safety.shownFor('TR')!;
     expect(shown.emergency).to.have.length(1);
     expect(shown.emergency[0]).to.include({ number: '112', tel: '112', source: 'https://www.112.gov.tr/hakkimizda' });
     expect(shown.emergency[0]!.note).to.equal('One number for ambulance, fire, police, gendarmerie and coast guard.');
     expect(shown.poison).to.have.length(1);
     const uzem = shown.poison[0]!;
-    expect(uzem).to.include({ number: '114', tel: '114', who: 'public', hours: '24 hours, every day' });
+    // Free and for the public, read on official government pages on 2026-10-19 (the ministry's own did not answer).
+    expect(uzem).to.include({
+      number: '114',
+      tel: '114',
+      who: 'public',
+      hours: '24 hours, every day, free',
+      checked: '2026-10-19'
+    });
     expect(uzem.name).to.contain('UZEM');
-    // Neither the cost nor a limit on who may call was read on an official page.
+    expect(uzem.source).to.match(/^https:\/\/www\.[a-z]+\.gov\.tr\//);
+    expect(uzem.note).to.equal('For the public and for health workers.');
     expect(uzem.fee).to.equal(undefined);
-    expect(uzem.note).to.equal(undefined);
-    expect(JSON.stringify(safety.SAFETY['TR'])).not.to.match(/free|ücretsiz/i);
     expect(shown.animals).to.eql([]);
     expect(shown.advice).to.eql([]);
     expect(safety.ministryFor('TR')).to.include({ name: 'Sağlık Bakanlığı', url: 'https://www.saglik.gov.tr/' });
@@ -392,7 +455,8 @@ describe('Türkiye', () => {
   it("gives the binding limit as the law's formula, 10 / (Q + 2), with half for cristobalite", () => {
     const facts = workplace.workplaceFor('TR')!;
     const silica = facts.silica!;
-    expect(silica).to.include({ kind: 'binding', status: 'verified', checked: '2026-10-14' });
+    // Read again on 2026-10-19: no revision of the dust regulation is published.
+    expect(silica).to.include({ kind: 'binding', status: 'verified', checked: '2026-10-19' });
     expect(silica.law).to.contain('Tozla Mücadele Yönetmeliği');
     expect(silica.source).to.equal('https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=18989&MevzuatTur=7&MevzuatTertip=5');
     expect(silica.formula).to.eql({ numerator: 10, factor: 1, offset: 2, places: 0 });
@@ -407,8 +471,8 @@ describe('Türkiye', () => {
     expect(facts.eu).to.equal(false);
     expect(facts.agency).to.include({ abbr: 'ÇSGB İSGGM', url: 'https://csgb.gov.tr/' });
     expect(facts.agency!.silicaUrl).to.equal(undefined);
-    // The FFP classes were read only in a secondary source.
-    expect(facts.respirators).to.include({ status: 'secondary' });
+    // TS EN 149+A1 is in force (TSE's listing), but the FFP classes were read only in a secondary source.
+    expect(facts.respirators).to.include({ status: 'secondary', checked: '2026-10-19' });
     expect(facts.respirators!.everyday).to.eql(['FFP2']);
     expect(facts.respirators!.higher).to.eql(['FFP3']);
     expect(Date.parse(facts.respirators!.checked)).to.be.above(yearAgo);
@@ -480,7 +544,9 @@ describe('regions before Turkey', () => {
     ]);
     data.push(['EU', food.FOOD['EU'], workplace.EU_SILICA]);
     const hash = crypto.createHash('sha256').update(JSON.stringify(data)).digest('hex');
-    expect(hash).to.equal('df23d236269ce851da85a5781ef1b5922bd13a44a13a57f9f48b68c3b976222f');
+    // Changed once on purpose: the verification pass of 2026-10-19 changed Japan's #8000 note (who answers,
+    // what it costs), its food note (the 2025 revision's dates) and JSOH's check date; nothing else here.
+    expect(hash).to.equal('f6f6dcdea2cad5e8dfbfaa3865aea8f80bd5465ef06a087fcb9e7abea03a6150');
   });
 });
 
@@ -502,7 +568,9 @@ describe('regions before Korea', () => {
     ]);
     data.push(['EU', food.FOOD['EU'], workplace.EU_SILICA]);
     const hash = crypto.createHash('sha256').update(JSON.stringify(data)).digest('hex');
-    expect(hash).to.equal('97d37de28e230f212ec7e1042eab5e727d1e090f6b8309a4c30ae2d421354fa0');
+    // Changed once on purpose (2026-10-19): Japan's, as above, and Türkiye's UZEM (free, for the public),
+    // its silica and mask check dates.
+    expect(hash).to.equal('6e08ef4ca5228633c811d5ff9a29e0656ccc8396ac2173f9c464ebcc92c66bb2');
   });
 });
 
@@ -525,8 +593,10 @@ describe('regions before China', () => {
     ]);
     data.push(['EU', food.FOOD['EU'], workplace.EU_SILICA]);
     const hash = crypto.createHash('sha256').update(JSON.stringify(data)).digest('hex');
-    // Changed once on purpose: Taiwan's 119 note now says when to dial 112 (2026-10-16).
-    expect(hash).to.equal('febe2efd7c2270fe3f4a3bbee8e9f5dcaf58f149289d8f40b572dcc363d9a121');
+    // Changed once on purpose: Taiwan's 119 note now says when to dial 112 (2026-10-16). Again on
+    // 2026-10-19: Japan's and Türkiye's, as above, and Taiwan's silica limit until 2027 (before).
+    // Again on 2026-10-20: Taiwan's 112 note says plainly what 112 does when a mobile has no signal.
+    expect(hash).to.equal('f0949b6b3e0b10dec5056af83dbb7d1857ea0953899336072d9b9aca0c5279c8');
   });
 });
 
@@ -550,7 +620,62 @@ describe('regions before Vietnam', () => {
     data.push(['EU', food.FOOD['EU'], workplace.EU_SILICA]);
     const hash = crypto.createHash('sha256').update(JSON.stringify(data)).digest('hex');
     // Changed once on purpose: Indonesia's note says 118 reaches an ambulance only in some cities (2026-10-17).
-    expect(hash).to.equal('3be139b8dee54347792b02d227c5b695386a3644be018fea134f66c8854bb147');
+    // Again on 2026-10-19, the verification pass: as above, and China's poison line, masks and food rules,
+    // Hong Kong's food rules (none) and shop, Indonesia's in-force date, Thailand's and the Philippines'
+    // shops, and the Philippines' silica limit. Again on 2026-10-20: Taiwan's 112 note.
+    expect(hash).to.equal('890ce072179d317b8c8d15cbff30f12ffe2e3238b7faa5818259f6a5cf04425e');
+  });
+});
+
+// The same, with Vietnam, after the verification pass of 2026-10-19 (docs/asia-plan.md, Phase C).
+describe('regions after the verification pass of 2026-10-19', () => {
+  it('keep their data exactly', () => {
+    const codes = [
+      'US', 'GB', 'AU', 'NZ', 'AT', 'BE', 'BG', 'HR', 'CY', 'CZ', 'DK', 'EE', 'FI', 'FR', 'DE', 'GR',
+      'HU', 'IE', 'IT', 'LV', 'LT', 'LU', 'MT', 'NL', 'PL', 'PT', 'RO', 'SK', 'SI', 'ES', 'SE', 'JP', 'TR',
+      'KR', 'TW', 'SG', 'MY', 'CN', 'HK', 'ID', 'TH', 'PH', 'VN'
+    ]; // prettier-ignore
+    // Every region before the subcontinent's and the Arab world's (checked below, with theirs).
+    const data: unknown[] = codes.map((code) => [
+      code,
+      asSnapshotted(code),
+      safety.SAFETY[code],
+      safety.MINISTRIES[code] ?? null,
+      workplace.WORKPLACE[code] ?? null,
+      food.FOOD[code] ?? null,
+      suppliers.SUPPLIERS[code] ?? null
+    ]);
+    data.push(['EU', food.FOOD['EU'], workplace.EU_SILICA]);
+    const hash = crypto.createHash('sha256').update(JSON.stringify(data)).digest('hex');
+    // Changed on purpose on 2026-10-20: Taiwan's 112 note, and Vietnam's silica note reworded.
+    expect(hash).to.equal('51953f47255b994f4303527c34134ce8378999ab5de09d975e15e064f4693185');
+  });
+});
+
+// The Indian subcontinent's and the Arab world's first regions (docs/south-asia-mena-plan.md), frozen as
+// added, with their currencies. Every region is in one snapshot or another, so a region added later
+// gets one of its own.
+const SOUTH_ASIA_MENA = ['IN', 'PK', 'BD', 'EG', 'AE', 'MA', 'DZ'];
+
+describe('the subcontinent and the Arab world, as added', () => {
+  it('keep their data exactly', () => {
+    const data: unknown[] = SOUTH_ASIA_MENA.map((code) => [
+      code,
+      regions.regionFor(code),
+      safety.SAFETY[code],
+      safety.MINISTRIES[code] ?? null,
+      workplace.WORKPLACE[code] ?? null,
+      food.FOOD[code] ?? null,
+      suppliers.SUPPLIERS[code] ?? null
+    ]);
+    const hash = crypto.createHash('sha256').update(JSON.stringify(data)).digest('hex');
+    expect(hash).to.equal('380ed7d9f40175a5cb1e5ebaa0fed0706f60858392745e153951a48382c526fe');
+  });
+
+  it('are, with the earlier snapshots, every region', () => {
+    const earlier = regions.REGION_CODES.slice(0, regions.REGION_CODES.indexOf('VN') + 1);
+    expect(earlier).to.have.length(43);
+    expect([...earlier, ...SOUTH_ASIA_MENA]).to.eql([...regions.REGION_CODES]);
   });
 });
 
@@ -568,7 +693,7 @@ describe('South Korea', () => {
       library: 'US',
       currency: 'KRW'
     });
-    expect(regions.formatLocaleFor('en', 'KR', 'auto')).to.equal('en-KR');
+    expect(regions.formatLocaleFor('en', 'KR', 'auto')).to.equal('en-KR-u-ca-gregory-nu-latn');
   });
 
   it('gives 119, no poison line (none national was found), and 119 for medical advice', () => {
@@ -630,7 +755,7 @@ describe('Taiwan', () => {
       library: 'US'
     });
     expect(regions.regionFor('TW')!.languages).to.eql(['zh-Hant']);
-    expect(regions.formatLocaleFor('en', 'TW', 'auto')).to.equal('en-TW');
+    expect(regions.formatLocaleFor('en', 'TW', 'auto')).to.equal('en-TW-u-ca-gregory-nu-latn');
   });
 
   it("gives 119 and the Taipei Veterans General Hospital's poison centre, around the clock and free", () => {
@@ -642,14 +767,26 @@ describe('Taiwan', () => {
     expect(safety.ministryFor('TW')).to.include({ name: '衛生福利部' });
   });
 
-  it('gives the 2027 limit with its start date, and not the earlier formula read only secondhand', () => {
+  it('gives the 2027 limit with its start date, and the earlier formula until then, read in the law site’s own table', () => {
     const silica = workplace.workplaceFor('TW')!.silica!;
     expect(silica).to.include({ quartz: 0.1, kind: 'binding', status: 'verified', from: '2027-01-01' });
+    expect(silica.checked).to.equal('2026-10-19');
     expect(silica.formula).to.equal(undefined);
     expect(silica.cristobalite).to.equal(undefined);
-    expect(silica.note).to.contain('Until 31 December 2026');
-    expect(silica.note).to.contain('not shown here');
-    expect(JSON.stringify(silica)).not.to.match(/SiO2 \+ 2|\(Q \+ 2\)/);
+    // The table in force until 2026-12-31 (the 2018 text), read in the 2025 amendment's comparison table.
+    expect(silica.before).to.eql({
+      quartz: 0.098,
+      formula: { numerator: 10, factor: 1, offset: 2, places: 0 },
+      until: '2026-12-31',
+      law: '勞工作業場所容許暴露標準，附表二（2018年3月14日修正），第一種粉塵',
+      source: 'https://law.moj.gov.tw/LawClass/LawGetFile.ashx?FileId=0000387834&lan=C&type=1&date=20250411',
+      status: 'verified',
+      checked: '2026-10-19'
+    });
+    const { numerator, factor, offset } = silica.before!.formula!;
+    expect(silica.before!.quartz).to.be.closeTo(numerator / (factor * 100 + offset!), 0.0005);
+    expect(silica.note).to.match(/^Until 31 December 2026 the limit is for the whole respirable dust/);
+    expect(silica.note).not.to.contain('not shown');
     // Every start date is a day; a limit that starts later says what applies until then.
     for (const [code, entry] of Object.entries(workplace.WORKPLACE)) {
       if (!entry.silica?.from) continue;
@@ -688,7 +825,7 @@ describe('Singapore', () => {
   it('stays in English, fires by temperature, and lists the US library', () => {
     expect(regions.regionFor('SG')).to.include({ temperature: 'C', cones: 'temperature', library: 'US' });
     expect(regions.regionFor('SG')!.languages[0]).to.equal('en');
-    expect(regions.formatLocaleFor('en', 'SG', 'auto')).to.equal('en-SG');
+    expect(regions.formatLocaleFor('en', 'SG', 'auto')).to.equal('en-SG-u-ca-gregory-nu-latn');
   });
 
   it('gives 995, no poison line (none is on an official page), and the health ministry', () => {
@@ -735,7 +872,7 @@ describe('Malaysia', () => {
   it('stays in English, fires by temperature, and lists the US library', () => {
     expect(regions.regionFor('MY')).to.include({ temperature: 'C', cones: 'temperature', library: 'US' });
     expect(regions.regionFor('MY')!.languages).to.eql(['ms', 'en']);
-    expect(regions.formatLocaleFor('en', 'MY', 'auto')).to.equal('en-MY');
+    expect(regions.formatLocaleFor('en', 'MY', 'auto')).to.equal('en-MY-u-ca-gregory-nu-latn');
   });
 
   it('gives 999, and the National Poison Centre with its hours, not 24 hours, and no claim on cost', () => {
@@ -788,14 +925,25 @@ describe('China', () => {
       library: 'US'
     });
     expect(regions.regionFor('CN')!.languages).to.eql(['zh-Hans']);
-    expect(regions.formatLocaleFor('zh-Hans', 'CN', 'auto')).to.equal('zh-Hans-CN');
+    expect(regions.formatLocaleFor('zh-Hans', 'CN', 'auto')).to.equal('zh-Hans-CN-u-ca-gregory-nu-latn');
   });
 
-  it('gives 120, and neither the poison line whose hours and callers no page states nor an unread ministry', () => {
+  it("gives 120 and China CDC's poison line, saying plainly that no official page gives its hours or cost", () => {
     const shown = safety.shownFor('CN')!;
     expect(shown.emergency.map((line) => line.number)).to.eql(['120']);
-    expect(shown.poison).to.eql([]);
-    expect(JSON.stringify(safety.SAFETY['CN'])).not.to.contain('8313');
+    expect(shown.poison.map((line) => [line.number, line.tel])).to.eql([['010-83132345', '+861083132345']]);
+    const line = shown.poison[0]!;
+    // China CDC's own article gives the number with its area code and tells the public to call it.
+    expect(line).to.include({
+      who: 'public',
+      status: 'verified',
+      checked: '2026-10-19',
+      source: 'https://www.chinacdc.cn/jkkp/zyjk/zdzs/202508/t20250826_309858.html'
+    });
+    expect(line.hours).to.equal(undefined);
+    expect(line.fee).to.equal(undefined);
+    expect(line.note).to.contain('No official page gives its hours or its cost');
+    expect(line.note).to.contain('call 120');
     expect(safety.ministryFor('CN')).to.equal(null);
   });
 
@@ -818,11 +966,32 @@ describe('China', () => {
       expect(bands.at(-1)!.value, code).to.equal(entry.silica!.quartz);
     }
     expect(facts.agency).to.equal(null);
-    expect(facts.respirators).to.equal(null);
+    // KN95 is named on an official page, KN100 only in a secondary summary of GB 2626-2019.
+    expect(facts.respirators).to.include({ status: 'secondary', checked: '2026-10-19' });
+    expect([facts.respirators!.everyday, facts.respirators!.higher]).to.eql([['KN95'], ['KN100']]);
+    expect(facts.respirators!.note).to.contain('GB 2626-2019');
   });
 
-  it('gives no food-contact rules and no shop, since neither could be confirmed', () => {
-    expect(food.foodRulesFor('CN')).to.equal(null);
+  it("gives GB 4806.4—2016's six kinds of piece, at most, with cooking ware's hot test and figures", () => {
+    const { rules, own } = food.foodRulesFor('CN')!;
+    expect(own).to.equal(true);
+    expect(rules).to.include({ status: 'verified', checked: '2026-10-19', inForce: '2017-04-19', atMost: true });
+    expect(rules.law).to.contain('GB 4806.4—2016');
+    expect(rules.source).to.match(/^https:\/\/www\.anan\.gov\.cn\//);
+    expect(rules.limits.map((l) => [l.category, l.lead, l.cadmium, l.unit])).to.eql([
+      ['cnFlat', 0.8, 0.07, 'mg/dm²'],
+      ['cnSmall', 2, 0.3, 'mg/L'],
+      ['cnLarge', 1, 0.25, 'mg/L'],
+      ['cnStorage', 0.5, 0.25, 'mg/L'],
+      ['cnCups', 0.5, 0.25, 'mg/L'],
+      // Not the 0.5 / 0.05 of an earlier note from memory: the standard's own table says 3.0 / 0.30.
+      ['cnCooking', 3, 0.3, 'mg/L']
+    ]);
+    for (const limit of rules.limits) expect(limit.judged).to.equal(undefined);
+    expect(rules.note).to.contain('98 °C').and.contain('Guangdong');
+  });
+
+  it('lists no shop, since none was found on its own site', () => {
     expect(suppliers.shopsFor('CN')).to.eql({ shops: [], nearby: [] });
   });
 });
@@ -831,8 +1000,8 @@ describe('Hong Kong', () => {
   it("reads Traditional Chinese and English, formats as Hong Kong's, and comes after Taiwan", () => {
     expect(regions.regionFor('HK')).to.include({ temperature: 'C', cones: 'temperature', library: 'US' });
     expect(regions.regionFor('HK')!.languages).to.eql(['zh-Hant', 'en']);
-    expect(regions.formatLocaleFor('zh-Hant', 'HK', 'auto')).to.equal('zh-Hant-HK');
-    expect(regions.formatLocaleFor('en', 'HK', 'auto')).to.equal('en-HK');
+    expect(regions.formatLocaleFor('zh-Hant', 'HK', 'auto')).to.equal('zh-Hant-HK-u-ca-gregory-nu-latn');
+    expect(regions.formatLocaleFor('en', 'HK', 'auto')).to.equal('en-HK-u-ca-gregory-nu-latn');
     // Traditional Chinese pages are prerendered for the first region listing it first: Taiwan.
     expect(regions.REGION_CODES.indexOf('TW')).to.be.below(regions.REGION_CODES.indexOf('HK'));
   });
@@ -850,8 +1019,33 @@ describe('Hong Kong', () => {
     expect(facts.agency).to.include({ silicaUrl: 'https://www.labour.gov.hk/eng/public/oh/silicosis.pdf' });
   });
 
-  it('gives no food-contact rules, since none of its own were found', () => {
-    expect(food.foodRulesFor('HK')).to.equal(null);
+  it('says there is no law with figures for ceramic ware, from the Centre for Food Safety, with no limits', () => {
+    const { rules, own, eu } = food.foodRulesFor('HK')!;
+    expect([own, eu]).to.eql([true, false]);
+    expect(rules).to.include({
+      none: true,
+      status: 'verified',
+      checked: '2026-10-19',
+      source: 'https://www.cfs.gov.hk/english/food_leg/files/Guidelines_Tray_liner.pdf'
+    });
+    expect(rules.limits).to.eql([]);
+    expect(rules.law).to.contain('Centre for Food Safety');
+    expect(rules.note).to.contain('Cap. 132').and.contain('Cap. 456').and.contain('2009');
+    // Only Hong Kong says there is no law.
+    for (const code of Object.keys(food.FOOD).filter((code) => code !== 'HK')) {
+      expect(food.FOOD[code]!.none, code).to.equal(undefined);
+    }
+  });
+
+  it('names Hearty Ceramic, checked on its own site, with its town and packs', () => {
+    const { shops, nearby } = suppliers.shopsFor('HK')!;
+    expect(shops.map((shop) => [shop.name, shop.place])).to.eql([
+      ['Hearty Ceramic (Hearty Arts International Limited)', 'Tai Kok Tsui (Kowloon)']
+    ]);
+    expect(shops[0]!.packs).to.eql({ unit: 'kilogram', sizes: [1, 5, 10] });
+    expect(shops[0]!.checked).to.equal('2026-10-19');
+    expect(JSON.stringify(suppliers.SUPPLIERS['HK'])).not.to.contain('Paton');
+    expect(nearby).to.eql([]);
   });
 });
 
@@ -859,7 +1053,7 @@ describe('Indonesia', () => {
   it('fires by temperature and lists the US library', () => {
     expect(regions.regionFor('ID')).to.include({ temperature: 'C', cones: 'temperature', library: 'US' });
     expect(regions.regionFor('ID')!.languages).to.eql(['id']);
-    expect(regions.formatLocaleFor('id', 'ID', 'auto')).to.equal('id-ID');
+    expect(regions.formatLocaleFor('id', 'ID', 'auto')).to.equal('id-ID-u-ca-gregory-nu-latn');
   });
 
   it('gives 119, no poison line, and the health ministry', () => {
@@ -877,15 +1071,20 @@ describe('Indonesia', () => {
     expect(facts.agency).to.include({ abbr: 'Kemnaker' });
   });
 
-  it("gives BPOM 11/2026's limits, the same for both hollow sizes, with no in-force date not read", () => {
+  it("gives BPOM 11/2026's limits, the same for both hollow sizes, in force from its promulgation, with a year for ware on the market", () => {
     const { rules } = food.foodRulesFor('ID')!;
     expect(rules.limits.map((l) => [l.category, l.lead, l.cadmium, l.unit])).to.eql([
       ['idFlat', 0.8, 0.07, 'mg/dm²'],
       ['idSmall', 0.5, 0.25, 'mg/L'],
       ['idLarge', 0.5, 0.25, 'mg/L']
     ]);
-    expect(rules.inForce).to.equal(undefined);
+    expect(rules).to.include({ inForce: '2026-06-30', checked: '2026-10-19' });
     expect(rules.note).to.contain('third');
+    expect(rules.note).to.contain('Ware already on the market has until 30 June 2027 to comply.');
+  });
+
+  it('keeps HALOBPOM out, since no official page gives it as a poison line today', () => {
+    expect(JSON.stringify(safety.SAFETY['ID'])).not.to.match(/1500.?533|HALO/i);
   });
 });
 
@@ -893,7 +1092,7 @@ describe('Thailand', () => {
   it('fires by temperature and lists the US library', () => {
     expect(regions.regionFor('TH')).to.include({ temperature: 'C', cones: 'temperature', library: 'US' });
     expect(regions.regionFor('TH')!.languages).to.eql(['th']);
-    expect(regions.formatLocaleFor('th', 'TH', 'auto')).to.equal('th-TH-u-ca-gregory');
+    expect(regions.formatLocaleFor('th', 'TH', 'auto')).to.equal('th-TH-u-ca-gregory-nu-latn');
   });
 
   it('gives 1669 and the Ramathibodi Poison Center, 1367, around the clock, with no claim on cost', () => {
@@ -921,13 +1120,27 @@ describe('Thailand', () => {
       ['thCooking', 5, 0.5, 'mg/L']
     ]);
   });
+
+  it('names two shops checked on their own sites, Cerawan at its full address', () => {
+    const { shops, nearby } = suppliers.shopsFor('TH')!;
+    expect(shops.map((shop) => [shop.name, shop.place])).to.eql([
+      ['Pottery Clay Thailand', undefined],
+      ['Cerawan (เซล่าวัล ซัพพลาย)', 'Krathum Baen (Samut Sakhon)']
+    ]);
+    // The short address without the Thai words answers 404.
+    expect(shops[1]!.url).to.equal('https://www.cerawan.com/14360596/เคมีภัณฑ์-chemical-วัตถุดิบในงานเคลือบและทดลอง');
+    expect(shops[1]!.packs).to.equal(undefined);
+    expect(shops[1]!.note).to.equal('Priced by the kilogram.');
+    for (const shop of shops) expect(shop.checked).to.equal('2026-10-19');
+    expect(nearby).to.eql([]);
+  });
 });
 
 describe('Philippines', () => {
   it('stays in English, fires by temperature, and lists the US library', () => {
     expect(regions.regionFor('PH')).to.include({ temperature: 'C', cones: 'temperature', library: 'US' });
     expect(regions.regionFor('PH')!.languages).to.eql(['fil', 'en']);
-    expect(regions.formatLocaleFor('en', 'PH', 'auto')).to.equal('en-PH');
+    expect(regions.formatLocaleFor('en', 'PH', 'auto')).to.equal('en-PH-u-ca-gregory-nu-latn');
   });
 
   it('gives 911 and the National Poison Management and Control Center, 24 hours and free', () => {
@@ -937,10 +1150,35 @@ describe('Philippines', () => {
     expect(shown.poison[0]).to.include({ who: 'public', hours: '24 hours, every day, free' });
   });
 
-  it('gives no silica limit, food-contact rules or shop, since none could be read', () => {
-    expect(workplace.workplaceFor('PH')).to.eql({ silica: null, agency: null, respirators: null, eu: false });
+  it("gives the OSH Standards' silica formula, 10 / (Q + 2), half for cristobalite, read in an archived copy of DOLE's own file", () => {
+    const facts = workplace.workplaceFor('PH')!;
+    const silica = facts.silica!;
+    expect(silica).to.include({ kind: 'binding', status: 'verified', checked: '2026-10-19', cristobalite: 0.049 });
+    expect(silica.law).to.contain('Rule 1070, Table 8a');
+    expect(silica.source).to.match(/^https:\/\/web\.archive\.org\/web\/\d+\/https:\/\/www\.dole\.gov\.ph\//);
+    expect(silica.formula).to.eql({ numerator: 10, factor: 1, offset: 2, places: 0 });
+    expect(silica.quartz).to.be.closeTo(10 / 102, 0.0005);
+    expect(silica.cristobalite).to.be.closeTo(silica.quartz / 2, 0.0005);
+    expect(silica.note).to.contain("Internet Archive's copy").and.contain('48 hours');
+    // DOLE's and the OSHC's own pages could not be read: no agency, and no mask classes were read.
+    expect(facts.agency).to.equal(null);
+    expect(facts.respirators).to.equal(null);
+  });
+
+  it('gives no food-contact rules, since none was found', () => {
     expect(food.foodRulesFor('PH')).to.equal(null);
-    expect(suppliers.shopsFor('PH')).to.eql({ shops: [], nearby: [] });
+  });
+
+  it('names a shop for raw materials and one for clay and ready-made glazes, both in Quezon City', () => {
+    const { shops } = suppliers.shopsFor('PH')!;
+    expect(shops.map((shop) => [shop.name, shop.place])).to.eql([
+      ['Tahanan Pottery', 'Quezon City'],
+      ['Odangputik Pottery', 'Quezon City']
+    ]);
+    expect(shops[0]!.packs).to.eql({ unit: 'kilogram', sizes: [0.25, 0.5, 1] });
+    expect(shops[1]!.sells).to.eql(['clays', 'glazes']);
+    // The same words as Singapore's shop for clay and glazes, so its translations serve both.
+    expect(shops[1]!.note).to.equal(suppliers.SUPPLIERS['SG']!.shops[1]!.note);
   });
 });
 
@@ -954,30 +1192,43 @@ describe('Vietnam', () => {
       currency: 'VND'
     });
     expect(regions.regionFor('VN')!.languages).to.eql(['vi']);
-    expect(regions.formatLocaleFor('en', 'VN', 'auto')).to.equal('en-VN');
-    expect(regions.formatLocaleFor('vi', 'VN', 'auto')).to.equal('vi-VN');
+    expect(regions.formatLocaleFor('en', 'VN', 'auto')).to.equal('en-VN-u-ca-gregory-nu-latn');
+    expect(regions.formatLocaleFor('vi', 'VN', 'auto')).to.equal('vi-VN-u-ca-gregory-nu-latn');
   });
 
-  it('gives 115, with 113 and 114 in its note, marked as reported: no official page lists them', () => {
+  it('gives 115, verified with its role on an official page, with 113, 114 and the merger into 113 in its note', () => {
     const shown = safety.shownFor('VN')!;
-    expect(shown.emergency.map((line) => [line.number, line.status])).to.eql([['115', 'reported']]);
-    expect(shown.emergency[0]!.note).to.include('113').and.include('114');
+    expect(shown.emergency.map((line) => [line.number, line.status])).to.eql([['115', 'verified']]);
+    const line = shown.emergency[0]!;
+    // Điện Biên's provincial police give each number's role, and that the calls are free.
+    expect(line.source).to.match(/^https:\/\/congan\.dienbien\.gov\.vn\//);
+    expect(line.checked).to.equal('2026-10-19');
+    expect(line.note).to.include('For the police, call 113; for a fire or a rescue, 114.');
+    expect(line.note).to.include('the call is free');
+    expect(line.note).to.include('merged into 113').and.include('2027–2028').and.include('all three still work');
     expect(shown.poison).to.eql([]);
     expect(safety.ministryFor('VN')).to.equal(null);
   });
 
-  it("gives QCVN 02:2019/BYT's 0.1 for free silica in respirable dust, read in a legal database's copy", () => {
+  it("gives QCVN 02:2019/BYT's 0.1 for free silica in respirable dust, still from a legal database's copy, and FFP masks", () => {
     const facts = workplace.workplaceFor('VN')!;
-    expect(facts.silica).to.include({ quartz: 0.1, kind: 'binding', status: 'secondary', checked: '2026-10-17' });
+    expect(facts.silica).to.include({ quartz: 0.1, kind: 'binding', status: 'secondary', checked: '2026-10-19' });
     expect(facts.silica!.law).to.include('QCVN 02:2019/BYT');
     expect(facts.agency).to.equal(null);
-    expect(facts.respirators).to.equal(null);
+    // TCVN 13409:2021 is EN 149 word for word; its text was not read.
+    expect(facts.respirators).to.include({ status: 'secondary', checked: '2026-10-19' });
+    expect([facts.respirators!.everyday, facts.respirators!.higher]).to.eql([['FFP2'], ['FFP3']]);
+    expect(facts.respirators!.note).to.contain('TCVN 13409:2021');
   });
 
-  it("gives QCVN 12-4:2015/BYT's limits for ceramic ware, in force since 2016-05-01", () => {
+  it("gives QCVN 12-4:2015/BYT's limits for ceramic ware, read in the Official Gazette, in force since 2016-05-01", () => {
     const rules = food.foodRulesFor('VN')!;
     expect(rules.own).to.equal(true);
-    expect(rules.rules).to.include({ status: 'secondary', inForce: '2016-05-01' });
+    expect(rules.rules).to.include({ status: 'verified', inForce: '2016-05-01', checked: '2026-10-19' });
+    expect(rules.rules.source).to.match(/^https:\/\/congbaocdn\.chinhphu\.vn\//);
+    // The regulation's test methods are not mandatory: the note does not say "the test is".
+    expect(rules.rules.note).to.contain('allows others of the same accuracy');
+    expect(rules.rules.note).not.to.match(/The test is|legal database/);
     expect(rules.rules.limits.map((l) => [l.category, l.lead, l.cadmium, l.unit])).to.eql([
       ['vnFlat', 0.8, 0.07, 'mg/dm²'],
       ['vnSmall', 2, 0.5, 'mg/L'],
@@ -993,6 +1244,212 @@ describe('Vietnam', () => {
   });
 });
 
+// The Indian subcontinent and the Arab world, in English first (docs/south-asia-mena-plan.md), from
+// scratch/round6/research/in-pk-bd.md and eg-ae-ma-dz.md, with the owner's and the lead's decisions of
+// 2026-10-20.
+describe('the subcontinent and the Arab world', () => {
+  const NONE = { silica: null, agency: null, respirators: null, eu: false };
+
+  it('fire by temperature but India, by Orton cones, in °C, with the US library and their own currencies', () => {
+    const expected: Array<[string, string, string[], string, string]> = [
+      ['IN', 'India', ['hi', 'en'], 'orton', 'INR'],
+      ['PK', 'Pakistan', ['ur', 'en'], 'temperature', 'PKR'],
+      ['BD', 'Bangladesh', ['bn'], 'temperature', 'BDT'],
+      ['EG', 'Egypt', ['ar'], 'temperature', 'EGP'],
+      ['AE', 'United Arab Emirates', ['ar', 'en'], 'temperature', 'AED'],
+      ['MA', 'Morocco', ['ar', 'fr'], 'temperature', 'MAD'],
+      ['DZ', 'Algeria', ['ar', 'fr'], 'temperature', 'DZD']
+    ];
+    for (const [code, name, languages, cones, currency] of expected) {
+      expect(regions.regionFor(code), code).to.eql({
+        code,
+        name,
+        languages,
+        eu: false,
+        temperature: 'C',
+        cones,
+        density: 'sg',
+        library: 'US',
+        currency
+      });
+      expect(regions.CURRENCIES, code).to.include(currency);
+      expect(regions.formatLocaleFor('en', code, 'auto'), code).to.match(new RegExp('^en-' + code));
+    }
+  });
+
+  it('leave the region each live language is written for as it was: Arabic, not live, is written for Egypt', () => {
+    const first = (language: string) => regions.REGIONS.find((r) => r.languages[0] === language)?.code;
+    expect(first('fr')).to.equal('FR');
+    expect(first('en')).to.equal('US');
+    expect(first('ar')).to.equal('EG');
+    expect([first('hi'), first('ur'), first('bn')]).to.eql(['IN', 'PK', 'BD']);
+  });
+
+  it('show no unverified entry: every line, ministry and fact shown was read, and the leads are not shown', () => {
+    for (const code of SOUTH_ASIA_MENA) {
+      const shown = safety.shownFor(code)!;
+      for (const line of [...shown.emergency, ...shown.poison, ...shown.advice, ...shown.animals]) {
+        expect(line.status, code + ' ' + line.name).to.equal('verified');
+        expect(line.checked, code + ' ' + line.name).to.match(/^2026-10-(19|20)$/);
+      }
+      const ministry = safety.ministryFor(code);
+      if (ministry) expect(ministry.status, code).to.equal('verified');
+      const facts = workplace.workplaceFor(code)!;
+      for (const fact of [facts.silica, facts.agency, facts.respirators, facts.noLimit].filter((f) => !!f)) {
+        expect(['verified', 'secondary'], code).to.include(fact!.status);
+      }
+      // No silica limit is shown for any of them: none was read in a law (Egypt's only in a paper).
+      expect(facts.silica, code).to.equal(null);
+      expect(workplace.WORKPLACE[code]!.silica, code).to.equal(undefined);
+      const rules = food.foodRulesFor(code);
+      if (rules) expect(rules.rules.status, code).to.equal('verified');
+    }
+    // The UAE's federal ministry and Algeria's were read only in the Internet Archive: not linked.
+    expect(safety.MINISTRIES['AE']!.status).to.equal('unverified');
+    expect(safety.ministryFor('AE')).to.equal(null);
+    expect(safety.ministryFor('DZ')).to.equal(null);
+  });
+
+  it('India: 112, and the National Poisons Information Centre, toll free around the clock, for the public', () => {
+    const shown = safety.shownFor('IN')!;
+    expect(shown.emergency.map((line) => [line.number, line.tel])).to.eql([['112', '112']]);
+    expect(shown.emergency[0]!.note).to.include('police, fire and ambulance');
+    expect(shown.poison).to.have.length(1);
+    expect(shown.poison[0]).to.include({
+      number: '1800 116 117',
+      tel: '1800116117',
+      who: 'public',
+      hours: '24 hours, every day, toll free',
+      also: '011 2658 9391',
+      alsoTel: '+911126589391',
+      source: 'https://aiims.edu/index.php/en/npic_intro'
+    });
+    expect(safety.ministryFor('IN')).to.include({ name: 'Ministry of Health and Family Welfare' });
+  });
+
+  it('India: no silica limit, since each state sets its own; DGOSH, and IS 9473 masks from a scan', () => {
+    const facts = workplace.workplaceFor('IN')!;
+    expect(facts.silica).to.equal(null);
+    expect(facts.noLimit).to.include({ status: 'secondary', checked: '2026-10-19' });
+    expect(facts.noLimit!.note).to.include('each state sets the limits').and.include('no national limit');
+    expect(facts.noLimit!.law).to.include('section 88');
+    expect(facts.agency).to.include({ name: 'Directorate General Occupational Safety and Health', abbr: 'DGOSH' });
+    expect(facts.respirators).to.include({ status: 'secondary' });
+    expect([facts.respirators!.everyday, facts.respirators!.higher]).to.eql([['FFP2'], ['FFP3']]);
+    expect(facts.respirators!.note).to.include('IS 9473:2002');
+    // The note is translated, as its English; a region with a limit never shows one.
+    expect(workplace.texts()).to.include(facts.noLimit!.note);
+    expect(workplace.workplaceFor('VN')).not.to.have.property('noLimit');
+  });
+
+  it('India: no food-contact rules (IS 9806 is a voluntary standard), and two shops checked on their own sites', () => {
+    expect(food.foodRulesFor('IN')).to.equal(null);
+    expect(food.FOOD['IN']).to.equal(undefined);
+    const { shops } = suppliers.shopsFor('IN')!;
+    expect(shops.map((shop) => [shop.name, shop.place])).to.eql([
+      ['Bhoomi Pottery', undefined],
+      ['Clay Station', 'Bangalore']
+    ]);
+  });
+
+  it("Pakistan: Rescue 1122, each province's own, and 15 for the police in Punjab only; no poison line", () => {
+    const shown = safety.shownFor('PK')!;
+    expect(shown.emergency.map((line) => line.number)).to.eql(['1122']);
+    expect(shown.emergency[0]!.source).to.match(/^https:\/\/www\.rescue\.gov\.pk\//);
+    expect(shown.emergency[0]!.note).to.include('Each province runs its own').and.include('In Punjab, call 15');
+    expect([shown.poison, shown.advice]).to.eql([[], []]);
+    expect(safety.ministryFor('PK')).to.include({ url: 'https://www.nhsrc.gov.pk/' });
+    expect(workplace.workplaceFor('PK')).to.eql(NONE);
+    expect(food.foodRulesFor('PK')).to.equal(null);
+    expect(suppliers.shopsFor('PK')).to.eql({ shops: [], nearby: [] });
+  });
+
+  it("Bangladesh: 999, its roles said to be from the ITU's list; 16263 as medical advice, not a poison line", () => {
+    const shown = safety.shownFor('BD')!;
+    expect(shown.emergency.map((line) => line.number)).to.eql(['999']);
+    expect(shown.emergency[0]!.note).to.include('ITU').and.include('102');
+    expect(shown.poison).to.eql([]);
+    expect(shown.advice.map((line) => [line.number, line.who])).to.eql([['16263', 'public']]);
+    expect(shown.advice[0]!.note).to.include('It is not a poison line');
+    expect(safety.ministryFor('BD')).to.include({ url: 'https://mohfw.gov.bd/' });
+    expect(workplace.workplaceFor('BD')).to.include({ silica: null, respirators: null });
+    expect(workplace.workplaceFor('BD')!.agency).to.include({ abbr: 'DIFE', url: 'https://dife.gov.bd/' });
+    expect(food.foodRulesFor('BD')).to.equal(null);
+    expect(suppliers.shopsFor('BD')).to.eql({ shops: [], nearby: [] });
+  });
+
+  it('Egypt: 123 for an ambulance, with 122 and 180, and not 112 or 911; no poison line, the ministry', () => {
+    const shown = safety.shownFor('EG')!;
+    expect(shown.emergency.map((line) => line.number)).to.eql(['123']);
+    expect(shown.emergency[0]!.note).to.include('122').and.include('180');
+    expect(JSON.stringify(safety.SAFETY['EG'])).not.to.match(/\b(112|911)\b/);
+    expect(shown.poison).to.eql([]);
+    expect(safety.ministryFor('EG')).to.include({ url: 'https://www.mohp.gov.eg/' });
+    expect(workplace.workplaceFor('EG')).to.eql(NONE);
+    expect(food.foodRulesFor('EG')).to.equal(null);
+    expect(suppliers.shopsFor('EG')).to.eql({ shops: [], nearby: [] });
+  });
+
+  it("the UAE: 998, and not Abu Dhabi's poison line; no ministry read; two shops in Abu Dhabi", () => {
+    const shown = safety.shownFor('AE')!;
+    expect(shown.emergency.map((line) => line.number)).to.eql(['998']);
+    expect(shown.emergency[0]!.note).to.include('999').and.include('997');
+    expect(shown.poison).to.eql([]);
+    expect(JSON.stringify(safety.SAFETY['AE'])).not.to.include('800');
+    expect(workplace.workplaceFor('AE')).to.eql(NONE);
+    expect(food.foodRulesFor('AE')).to.equal(null);
+    const { shops } = suppliers.shopsFor('AE')!;
+    expect(shops.map((shop) => [shop.name, shop.place])).to.eql([
+      ['Art Central Pottery', 'Abu Dhabi'],
+      ['Abu Dhabi Pottery', 'Abu Dhabi']
+    ]);
+    expect(shops[1]!.note).to.include('no raw glaze materials seen');
+  });
+
+  it("Morocco: 141, and the poison centre's two numbers, around the clock, at the price of a local call", () => {
+    const shown = safety.shownFor('MA')!;
+    expect(shown.emergency.map((line) => line.number)).to.eql(['141']);
+    expect(shown.poison).to.have.length(1);
+    const capm = shown.poison[0]!;
+    // The 0801 number is linked as dialled in Morocco; the Rabat number in its international form.
+    expect(capm).to.include({
+      number: '0801 000 180',
+      tel: '0801000180',
+      also: '05 37 68 64 64',
+      alsoTel: '+212537686464',
+      who: 'public',
+      hours: '24 hours, every day'
+    });
+    expect(capm.fee).to.include('local call');
+    // capm.ma is no longer the centre's domain.
+    expect(capm.source).to.match(/^https:\/\/www\.capm-sante\.ma\//);
+    expect(JSON.stringify(safety.SAFETY['MA'])).not.to.match(/\/\/(www\.)?capm\.ma/);
+    expect(workplace.workplaceFor('MA')).to.eql(NONE);
+    expect(food.foodRulesFor('MA')).to.equal(null);
+    expect(suppliers.shopsFor('MA')).to.eql({ shops: [], nearby: [] });
+  });
+
+  it("Algeria: 14 for civil protection, no poison line, and the 2019 order's limits with its rule for a piece up to 50% over", () => {
+    const shown = safety.shownFor('DZ')!;
+    expect(shown.emergency.map((line) => line.number)).to.eql(['14']);
+    expect(shown.emergency[0]!.note).to.match(/^Civil protection/);
+    expect(shown.poison).to.eql([]);
+    expect(workplace.workplaceFor('DZ')).to.eql(NONE);
+    const found = food.foodRulesFor('DZ')!;
+    expect(found.own).to.equal(true);
+    expect(found.rules).to.include({ status: 'verified', inForce: '2019-06-06', checked: '2026-10-20' });
+    expect(found.rules.law).to.include('16 janvier 2019').and.include('JO n° 36');
+    expect(found.rules.source).to.match(/^https:\/\/www\.joradp\.dz\//);
+    expect(found.rules.limits.map((l) => [l.category, l.lead, l.cadmium, l.unit])).to.eql([
+      ['flat', 0.8, 0.07, 'mg/dm²'],
+      ['fillable', 4, 0.3, 'mg/L'],
+      ['cooking', 1.5, 0.1, 'mg/L']
+    ]);
+    expect(found.rules.note).to.include('50%').and.include('at least three');
+    expect(suppliers.shopsFor('DZ')).to.eql({ shops: [], nearby: [] });
+  });
+});
+
 // The Calendar setting (docs/asia-plan.md, Phase E item 1): Gregorian by default everywhere, the Thai
 // Buddhist era or Japan's eras when chosen; numbers are written the same either way.
 describe('calendars', () => {
@@ -1003,27 +1460,27 @@ describe('calendars', () => {
     expect(regions.CALENDARS).to.eql(['gregory', 'buddhist', 'japanese']);
   });
 
-  it('write dates in the Gregorian calendar by default, Thai too, and leave other locales as they were', () => {
-    expect(regions.formatLocaleFor('en', 'US', 'auto')).to.equal('en-US');
-    expect(regions.formatLocaleFor('en', 'US', 'auto', 'gregory')).to.equal('en-US');
-    expect(regions.formatLocaleFor('ja', 'JP', 'auto', 'gregory')).to.equal('ja-JP');
-    expect(regions.formatLocaleFor('th', 'TH', 'auto', 'gregory')).to.equal('th-TH-u-ca-gregory');
+  it('write dates in the Gregorian calendar by default, Thai too, and name it in every locale', () => {
+    expect(regions.formatLocaleFor('en', 'US', 'auto')).to.equal('en-US-u-ca-gregory-nu-latn');
+    expect(regions.formatLocaleFor('en', 'US', 'auto', 'gregory')).to.equal('en-US-u-ca-gregory-nu-latn');
+    expect(regions.formatLocaleFor('ja', 'JP', 'auto', 'gregory')).to.equal('ja-JP-u-ca-gregory-nu-latn');
+    expect(regions.formatLocaleFor('th', 'TH', 'auto', 'gregory')).to.equal('th-TH-u-ca-gregory-nu-latn');
     expect(shown(regions.formatLocaleFor('th', 'TH', 'auto'))).to.include('2026');
     // Not a calendar offered: the Gregorian.
-    expect(regions.formatLocaleFor('en', 'US', 'auto', 'islamic')).to.equal('en-US');
+    expect(regions.formatLocaleFor('en', 'US', 'auto', 'islamic')).to.equal('en-US-u-ca-gregory-nu-latn');
   });
 
   it('write the Thai Buddhist era when chosen, in any language', () => {
     const thai = regions.formatLocaleFor('th', 'TH', 'auto', 'buddhist');
-    expect(thai).to.equal('th-TH-u-ca-buddhist');
+    expect(thai).to.equal('th-TH-u-ca-buddhist-nu-latn');
     expect(shown(thai)).to.include('2569').and.not.include('2026');
     expect(shown(regions.formatLocaleFor('en', 'TH', 'auto', 'buddhist'))).to.include('2569');
-    expect(regions.formatLocaleFor('en', null, 'th-TH', 'buddhist')).to.equal('th-TH-u-ca-buddhist');
+    expect(regions.formatLocaleFor('en', null, 'th-TH', 'buddhist')).to.equal('th-TH-u-ca-buddhist-nu-latn');
   });
 
   it('write Japanese eras when chosen, in any language', () => {
     const japanese = regions.formatLocaleFor('ja', 'JP', 'auto', 'japanese');
-    expect(japanese).to.equal('ja-JP-u-ca-japanese');
+    expect(japanese).to.equal('ja-JP-u-ca-japanese-nu-latn');
     expect(shown(japanese)).to.equal('令和8年10月17日');
     expect(shown(regions.formatLocaleFor('en', 'US', 'auto', 'japanese'))).to.include('Reiwa');
   });
@@ -1033,6 +1490,163 @@ describe('calendars', () => {
       expect(new Intl.NumberFormat(regions.formatLocaleFor('de', 'DE', 'auto', calendar)).format(12345.6)).to.equal(
         '12.345,6'
       );
+    }
+  });
+
+  // The language and region pickers list by group (client/app/shared/picker.ts). A language or region added
+  // without its line in lib/regions/groups.js would fall into "Other", which is for the pseudo-locales.
+  it('should put every language and every region in a group of the pickers', () => {
+    for (const language of languages.LANGUAGES.filter((l: { pseudo?: boolean }) => !l.pseudo)) {
+      const group = groups.languageGroup(language.code);
+      expect(group === '' || (groups.LANGUAGE_GROUPS.includes(group) && group !== 'other'), language.code).to.equal(
+        true
+      );
+    }
+    for (const region of regions.REGIONS) {
+      const group = groups.regionGroup(region.code);
+      expect(groups.REGION_GROUPS.includes(group) && group !== 'other', region.code).to.equal(true);
+    }
+    // English is the only language listed apart; the pseudo-locales are in "Other", which is last.
+    expect(Object.entries(groups.LANGUAGE_GROUP_OF).filter(([, group]) => group === '')).to.deep.equal([['en', '']]);
+    expect(groups.languageGroup('en-XA')).to.equal('other');
+    expect(groups.LANGUAGE_GROUPS.at(-1)).to.equal('other');
+    expect(groups.REGION_GROUPS.at(-1)).to.equal('other');
+    // Every group named is one the pickers list, and each is named once.
+    for (const group of Object.values(groups.LANGUAGE_GROUP_OF)) {
+      expect(group === '' || groups.LANGUAGE_GROUPS.includes(group), group).to.equal(true);
+    }
+    for (const group of Object.values(groups.REGION_GROUP_OF)) expect(groups.REGION_GROUPS, group).to.include(group);
+    expect(new Set(groups.LANGUAGE_GROUPS).size).to.equal(groups.LANGUAGE_GROUPS.length);
+    expect(new Set(groups.REGION_GROUPS).size).to.equal(groups.REGION_GROUPS.length);
+  });
+});
+
+// The Digits setting (docs/i18n-plan.md, Digits): each country's usual digits, as CLDR has them, named in the
+// format locale so that no browser's own CLDR decides them; 0–9, or the language's own, when chosen.
+describe('digits', () => {
+  const sample = (locale: string) => new Intl.NumberFormat(locale).format(1234.5);
+  const system = (locale: string) => new Intl.NumberFormat(locale).resolvedOptions().numberingSystem;
+
+  it('offer the usual digits first, then 0–9 and the language’s own', () => {
+    expect(regions.DIGIT_CHOICES).to.eql(['auto', 'western', 'native']);
+  });
+
+  it('follow each country, and give 0–9 or the language’s own digits when chosen', () => {
+    // The format chosen, then its digits as usual, as 0–9 and as the language's own.
+    const pairs: [string, string, string, string][] = [
+      ['ar-EG', 'arab', 'latn', 'arab'],
+      ['ar-IQ', 'arab', 'latn', 'arab'],
+      ['ar-JO', 'arab', 'latn', 'arab'],
+      ['ar-AE', 'latn', 'latn', 'arab'],
+      ['ar-MA', 'latn', 'latn', 'arab'],
+      ['ar-DZ', 'latn', 'latn', 'arab'],
+      ['ar-TN', 'latn', 'latn', 'arab'],
+      ['bn-BD', 'beng', 'latn', 'beng'],
+      ['mr-IN', 'deva', 'latn', 'deva'],
+      ['ne-NP', 'deva', 'latn', 'deva'],
+      ['hi-IN', 'latn', 'latn', 'deva'],
+      ['en-IN', 'latn', 'latn', 'latn'],
+      ['ur-PK', 'latn', 'latn', 'arabext'],
+      ['ur-IN', 'arabext', 'latn', 'arabext'],
+      ['en-PK', 'latn', 'latn', 'latn'],
+      ['fr-MA', 'latn', 'latn', 'latn'],
+      ['fr-DZ', 'latn', 'latn', 'latn'],
+      ['si-LK', 'latn', 'latn', 'latn'],
+      ['ta-LK', 'latn', 'latn', 'tamldec'],
+      ['th-TH', 'latn', 'latn', 'thai'],
+      ['ja-JP', 'latn', 'latn', 'latn'],
+      ['de-DE', 'latn', 'latn', 'latn']
+    ];
+    for (const [format, ...systems] of pairs) {
+      regions.DIGIT_CHOICES.forEach((digits, i) => {
+        const locale = regions.formatLocaleFor('en', '', format, 'gregory', digits);
+        expect(locale, format + ' ' + digits).to.equal(`${format}-u-ca-gregory-nu-${systems[i]}`);
+        expect(system(locale), locale).to.equal(systems[i]);
+        expect(regions.numberingSystemFor(format, digits), locale).to.equal(systems[i]);
+      });
+    }
+    // As shown: Arabic-Indic in Egypt, 0–9 in Morocco, Indian groups in Bengali digits.
+    expect(sample(regions.formatLocaleFor('en', '', 'ar-EG'))).to.equal('١٬٢٣٤٫٥');
+    expect(sample(regions.formatLocaleFor('en', '', 'ar-EG', null, 'western'))).to.equal('1,234.5');
+    expect(sample(regions.formatLocaleFor('en', '', 'ar-MA'))).to.equal('1.234,5');
+    expect(sample(regions.formatLocaleFor('en', '', 'ar-MA', null, 'native'))).to.equal('١٬٢٣٤٫٥');
+    expect(new Intl.NumberFormat(regions.formatLocaleFor('en', '', 'bn-BD')).format(1234567.5)).to.equal('১২,৩৪,৫৬৭.৫');
+    expect(new Intl.NumberFormat(regions.formatLocaleFor('en', '', 'hi-IN')).format(1234567.5)).to.equal('12,34,567.5');
+    // Not a choice offered: as usual. A calendar chosen keeps the digits.
+    expect(regions.formatLocaleFor('en', '', 'ar-EG', 'gregory', 'roman')).to.equal('ar-EG-u-ca-gregory-nu-arab');
+    expect(regions.formatLocaleFor('th', 'TH', 'auto', 'buddhist', 'native')).to.equal('th-TH-u-ca-buddhist-nu-thai');
+    // A locale that names its own digits keeps them, unless others are chosen.
+    expect(regions.formatLocaleFor('en', '', 'ar-EG-u-nu-latn')).to.equal('ar-EG-u-ca-gregory-nu-latn');
+    expect(regions.formatLocaleFor('en', '', 'ar-EG-u-nu-latn', null, 'native')).to.equal('ar-EG-u-ca-gregory-nu-arab');
+  });
+
+  it('pin what CLDR gives every language Glazecalc offers or plans, in every country', () => {
+    const planned = ['ar', 'hi', 'ur', 'bn', 'ta', 'te', 'mr', 'gu', 'pa', 'ne', 'si', 'kn', 'ml'];
+    const offered = languages.LANGUAGES.map((language) => languages.baseLanguage(language.code));
+    const names = new Intl.DisplayNames(['en'], { type: 'region' });
+    const countries = [];
+    for (let a = 65; a <= 90; a++) {
+      for (let b = 65; b <= 90; b++) {
+        const code = String.fromCharCode(a, b);
+        if (names.of(code) !== code) countries.push(code);
+      }
+    }
+    expect(countries.length).to.be.above(240);
+    for (const language of new Set([...planned, ...offered])) {
+      for (const locale of [language, ...countries.map((code) => language + '-' + code)]) {
+        expect(regions.numberingSystemFor(locale), locale).to.equal(system(locale));
+      }
+    }
+  });
+
+  it('change nothing for the languages and formats offered: the same numbers, percents and dates', () => {
+    const day = new Date(2026, 9, 17);
+    const numbersIn = (locale: string) =>
+      new Intl.NumberFormat(locale, { useGrouping: 'min2' } as Intl.NumberFormatOptions).format(-1234567.5) +
+      ' ' +
+      new Intl.NumberFormat(locale, { style: 'percent' }).format(0.05);
+    const dateIn = (locale: string) => new Intl.DateTimeFormat(locale, { dateStyle: 'medium' }).format(day);
+    // As formatLocaleFor wrote them before it named the digits: a calendar named only where it was not the
+    // Gregorian, and for Thai.
+    const before = (locale: string, calendar: string) => {
+      const tag = new Intl.Locale(locale);
+      return calendar !== 'gregory' || tag.language === 'th' ? tag.baseName + '-u-ca-' + calendar : tag.baseName;
+    };
+    // Each live language in each region and in none, and each format chosen (which stands for the language).
+    const asked = [
+      ...languages.LIVE_LANGUAGES.flatMap((language) =>
+        ['', ...regions.REGION_CODES].map((region) => [language, region, 'auto'])
+      ),
+      ...regions.FORMAT_LOCALES.map((format) => ['en', '', format])
+    ];
+    expect(asked.length).to.be.above(1400);
+    for (const [language, region, format] of asked) {
+      for (const calendar of regions.CALENDARS) {
+        const locale = regions.formatLocaleFor(language!, region, format, calendar);
+        // Named, so the browser's own data never decides the calendar or the digits.
+        const tag = new Intl.Locale(locale);
+        expect([tag.calendar, tag.numberingSystem], locale).to.eql([calendar, regions.numberingSystemFor(locale)]);
+        if (calendar === 'gregory') expect(numbersIn(locale), locale).to.equal(numbersIn(before(locale, calendar)));
+        expect(dateIn(locale), locale).to.equal(dateIn(before(locale, calendar)));
+      }
+    }
+  }).timeout(30000);
+
+  it('read back every number it writes, in every format and digits', () => {
+    for (const format of regions.FORMAT_LOCALES) {
+      for (const digits of regions.DIGIT_CHOICES) {
+        const locale = regions.formatLocaleFor('en', '', format, 'gregory', digits);
+        for (const value of [-3, 0.125, 12.5, 1234.5, 100000, 1234567.5]) {
+          const shown = new Intl.NumberFormat(locale, {
+            maximumFractionDigits: 3,
+            useGrouping: 'min2'
+          } as Intl.NumberFormatOptions).format(value);
+          expect(numbers.parseNumber(shown, 'either', locale), locale + ' ' + shown).to.equal(value);
+        }
+        // A percentage reads as its number: 5 %, %5 and ٥٪ are 5.
+        const percent = new Intl.NumberFormat(locale, { style: 'percent' }).format(0.05);
+        expect(numbers.parseNumber(percent, 'either', locale), locale + ' ' + percent).to.equal(5);
+      }
     }
   });
 });

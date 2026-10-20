@@ -81,7 +81,7 @@ Tabulka uvádí pro samostojnou žároměrku 6 teplotu {{2232 °F; 1222 °C}}, a
 
 ## Tabulka žároměrek {#cone-chart}
 
-Tyto údaje pocházejí z Ortonovy tabulky žároměrek (©2001) pro samostojné žároměrky{{en: cones}}. Vyberte sloupec, který odpovídá tomu, jak rychle teplota ve vaší peci stoupala během posledních {{180 °F; 100 °C}}. Podle Ortonova orientačního pravidla platí pro rychlý výpal sloupec {{270 °F/h; 150 °C/h}}, pro střední sloupec {{108 °F/h; 60 °C/h}} a pro pomalý sloupec {{27 °F/h; 15 °C/h}}. Rychlost spočítáte tak, že nárůst teploty vydělíte počtem hodin, které trval: pec, ve které teplota za 3 hodiny stoupne o {{900 °F; 500 °C}}, se ohřívá rychlostí asi {{300 °F/h; 167 °C/h}}.
+Tyto údaje pocházejí z Ortonovy tabulky žároměrek (©2001) pro samostojné žároměrky{{en: cones}}; žároměrky 11 až 14 jsou z tabulek, které Orton vydává dnes a které tam, kde se překrývají, uvádějí stejné údaje, žároměrky 13 a 14 však jen ve °C (jejich hodnoty ve °F jsou zde přepočtené). Vyberte sloupec, který odpovídá tomu, jak rychle teplota ve vaší peci stoupala během posledních {{180 °F; 100 °C}}. Podle Ortonova orientačního pravidla platí pro rychlý výpal sloupec {{270 °F/h; 150 °C/h}}, pro střední sloupec {{108 °F/h; 60 °C/h}} a pro pomalý sloupec {{27 °F/h; 15 °C/h}}. Rychlost spočítáte tak, že nárůst teploty vydělíte počtem hodin, které trval: pec, ve které teplota za 3 hodiny stoupne o {{900 °F; 500 °C}}, se ohřívá rychlostí asi {{300 °F/h; 167 °C/h}}.
 
 Table: Ortonovy samostojné žároměrky: teplota, při které se každá ohne, podle rychlosti ohřevu během posledních {{180 °F; 100 °C}}
 Label: Tabulka Ortonových žároměrek
@@ -108,8 +108,14 @@ Label: Tabulka Ortonových žároměrek
 | 8         |         {{2212 °F; 1211 °C}} |           {{2280 °F; 1249 °C}} |           {{2320 °F; 1271 °C}} |
 | 9         |         {{2235 °F; 1224 °C}} |           {{2300 °F; 1260 °C}} |           {{2336 °F; 1280 °C}} |
 | 10        |         {{2284 °F; 1251 °C}} |           {{2345 °F; 1285 °C}} |           {{2381 °F; 1305 °C}} |
+| 11        |         {{2322 °F; 1272 °C}} |           {{2361 °F; 1294 °C}} |           {{2399 °F; 1315 °C}} |
+| 12        |         {{2345 °F; 1285 °C}} |           {{2383 °F; 1306 °C}} |           {{2419 °F; 1326 °C}} |
+| 13        |         {{2390 °F; 1310 °C}} |           {{2428 °F; 1331 °C}} |           {{2458 °F; 1348 °C}} |
+| 14        |         {{2464 °F; 1351 °C}} |           {{2489 °F; 1365 °C}} |           {{2523 °F; 1384 °C}} |
 
 Pomlčka označuje údaj, který sem nebyl převzat; najdete ho v úplné Ortonově tabulce.
+
+Orton vyrábí žároměrky až do čísla 42 pro práci za vysokých teplot, ale teploty zveřejňuje jen do žároměrky 14; pro teplejší žároměrky jsou jeho tabulky „k dispozici (na vyžádání)“. Starší Ortonova tabulka, jak ji přetiskují výrobci pecí, uvádí pro velkou žároměrku 15 {{2608 °F; 1431 °C}} při {{270 °F/h; 150 °C/h}} a pro žároměrku 16 a vyšší jsme žádný zveřejněný údaj nenašli. Nad žároměrkou 14 stavějte kontrolní žároměrky{{en: witness cones}} a řiďte se jimi a ověřte, že maximální teplota, kterou pro vaši pec uvádí výrobce, takové teploty dosahuje.
 
 Velké žároměrky se od těchto údajů liší jen o několik stupňů: velká žároměrka 6 při {{108 °F/h; 60 °C/h}} odpovídá {{2228 °F; 1220 °C}}. Malé žároměrky, jaké se používají ve vypínači Kiln-Sitter{{en: kiln sitter}}, jsou uvedeny jen pro {{540 °F/h; 300 °C/h}}, takže tabulka udává pro malou žároměrku 6 teplotu {{2291 °F; 1255 °C}}. To není teplota, při které vypínač pec vypne. Úkolem žároměrky ve vypínači je odpovídat žároměrce na plátě, a rozhodující slovo má žároměrka na plátě.
 
@@ -298,6 +304,8 @@ Norma zná dvě velikosti. Velké žároměrky (大型コーン) se „používa
 
 Každou velkou žároměrku zasaďte do držáku nebo do placky z hlíny, se sklonem ke své ohybové straně. Jako u každé žároměrky držte výšku i sklon od výpalu k výpalu stejné, protože rozdíl v kterémkoli z nich mění, jak daleko se ohne. Tři žároměrky sady{{en: cone pack}} (viz níže) postavte vedle sebe hluboko do pece blízko středu vsázky, kde dostávají stejné teplo jako výrobky, a přitom tam, kde je uvidíte průzorem; než pec zavřete, ověřte, že vidíte všechny tři.
 
+Pokyny výrobce ani prodejce k tomu, jak hluboko a pod jakým úhlem žároměrky SK stavět, jsme nenašli. Nejblíže tomu je laboratorní norma JIS R 2204, japonská zkouška toho, kolik tepla žáruvzdorný materiál vydrží: staví každou žároměrku SK označenou stranou pod úhlem 80° k rovnému stojánku a s patou zapuštěnou asi 4 mm do něj. To je zkouška pro žáruvzdorné materiály, ne pravidlo pro výpal keramiky, a četli jsme ji v přepisu normy, ne v normě samotné.
+
 ### Signální, cílová a pojistná žároměrka
 
 Žároměrky se prodávají a stavějí po třech: signální žároměrka, cílová žároměrka a pojistná žároměrka. Jako cílovou vezměte číslo SK, které uvádí váš recept nebo hlína, jako signální nejbližší chladnější žároměrku (o řádek výš v tabulce) a jako pojistnou nejbližší teplejší. Když se signální žároměrka začne ohýbat, konec se blíží; když se ohne pojistná žároměrka, výpal zašel příliš daleko.
@@ -366,6 +374,8 @@ Samostojné Ortonovy žároměrky se v Japonsku prodávají pod názvem 立つ�
 
 - [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (tabulka SK, ověřeno 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
 - [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (platná, znovu potvrzena 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
+- [JSA: JIS R 2204:1999, 耐火物及び耐火物原料の耐火度試験方法 (platná, znovu potvrzena 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+2204:1999)
+- [kikakurui.com: přepis JIS R 2204:1999, kde článek 5 a) stanoví stavění žároměrek (přečteno 2026-10-19)](https://kikakurui.com/r2/R2204-1999-01.html)
 - [Kyoto Municipal Institute of Industrial Technology and Culture: na co dát pozor při přechodu z kjótských žároměrek na Ortonovy](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
 
 :::
@@ -607,7 +617,7 @@ Informace o větrání místnosti a o detektorech oxidu uhelnatého najdete v n�
 ### Když pec vypaluje
 
 - Do průzoru se dívejte jen přes svářečské brýle s ochranou proti IR, stupeň ochrany 3; sluneční brýle nestačí. Skutt radí zátky zašroubovat na místo, aby nevypadly.
-- Nenechávejte pec bez dozoru po očekávané době výpalu; vypínač Kiln-Sitter není pojistka proti selhání.
+- Během výpalu zůstaňte poblíž a pec kontrolujte, především kolem očekávané doby ukončení výpalu; vypínač Kiln-Sitter není vypínací zařízení bezpečné při poruše. Vypalujte jen tehdy, když bude doma dospělý, který bude vzhůru po celou dobu výpalu.
 - Nikdy nevypalujte na ničem, co hoří, ani poblíž toho, například na dřevěné podlaze nebo na koberci.
 - Dodržujte bezpečné vzdálenosti uvedené v návodu k obsluze. Publikované hodnoty se pohybují od 12 palců (30 cm) do 3 stop (91 cm); kde návod mlčí, nejbezpečnější volbou je 18 palců (46 cm) od stěn a 3 stopy (91 cm) od všeho, co hoří.
 - Prostor kolem závaží vypínače Kiln-Sitter nechte volný, aby mohlo spadnout.

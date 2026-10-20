@@ -81,7 +81,7 @@ De tabel geeft een zelfstaande kegel 6 als {{2232 °F; 1222 °C}}, maar alleen a
 
 ## De kegeltabel {#cone-chart}
 
-Deze waarden komen uit de kegeltabel van Orton (©2001) voor zelfstaande kegels{{en: cones}}. Kies de kolom die past bij hoe snel uw oven over de laatste {{180 °F; 100 °C}} is gestegen. De vuistregel van Orton is de kolom {{270 °F/h; 150 °C/h}} voor een snelle stook, de kolom {{108 °F/h; 60 °C/h}} voor een gemiddelde en de kolom {{27 °F/h; 15 °C/h}} voor een langzame. Om een stooksnelheid uit te rekenen, deelt u de temperatuurstijging door het aantal uren dat die duurde: een oven die in 3 uur {{900 °F; 500 °C}} stijgt, warmt op met ongeveer {{300 °F/h; 167 °C/h}}.
+Deze waarden komen uit de kegeltabel van Orton (©2001) voor zelfstaande kegels{{en: cones}}; kegel 11 tot en met 14 komen uit de tabellen die Orton nu publiceert, die waar ze overlappen dezelfde waarden geven, en voor kegel 13 en 14 alleen in °C (hun °F is hier omgerekend). Kies de kolom die past bij hoe snel uw oven over de laatste {{180 °F; 100 °C}} is gestegen. De vuistregel van Orton is de kolom {{270 °F/h; 150 °C/h}} voor een snelle stook, de kolom {{108 °F/h; 60 °C/h}} voor een gemiddelde en de kolom {{27 °F/h; 15 °C/h}} voor een langzame. Om een stooksnelheid uit te rekenen, deelt u de temperatuurstijging door het aantal uren dat die duurde: een oven die in 3 uur {{900 °F; 500 °C}} stijgt, warmt op met ongeveer {{300 °F/h; 167 °C/h}}.
 
 Table: Zelfstaande Ortonkegels: de temperatuur waarbij elke kegel ombuigt, per stooksnelheid over de laatste {{180 °F; 100 °C}}
 Label: Kegeltabel van Orton
@@ -108,8 +108,14 @@ Label: Kegeltabel van Orton
 | 8     |           {{2212 °F; 1211 °C}} |             {{2280 °F; 1249 °C}} |         {{2320 °F; 1271 °C}} |
 | 9     |           {{2235 °F; 1224 °C}} |             {{2300 °F; 1260 °C}} |         {{2336 °F; 1280 °C}} |
 | 10    |           {{2284 °F; 1251 °C}} |             {{2345 °F; 1285 °C}} |         {{2381 °F; 1305 °C}} |
+| 11    |           {{2322 °F; 1272 °C}} |             {{2361 °F; 1294 °C}} |         {{2399 °F; 1315 °C}} |
+| 12    |           {{2345 °F; 1285 °C}} |             {{2383 °F; 1306 °C}} |         {{2419 °F; 1326 °C}} |
+| 13    |           {{2390 °F; 1310 °C}} |             {{2428 °F; 1331 °C}} |         {{2458 °F; 1348 °C}} |
+| 14    |           {{2464 °F; 1351 °C}} |             {{2489 °F; 1365 °C}} |         {{2523 °F; 1384 °C}} |
 
 Een streepje staat voor een waarde die hier niet is overgenomen; zie daarvoor de volledige tabel van Orton.
+
+Orton maakt kegels tot en met 42 voor werk bij hoge temperaturen, maar publiceert alleen temperaturen tot en met kegel 14; voor hetere kegels zijn de tabellen “beschikbaar (op aanvraag)”. Een oudere tabel van Orton, zoals ovenfabrikanten die herdrukken, geeft voor een grote kegel 15 {{2608 °F; 1431 °C}} bij {{270 °F/h; 150 °C/h}}, en we vonden geen gepubliceerde waarde voor kegel 16 of heter. Voorbij kegel 14: zet controlekegels en ga daarop af, en controleer of de maximumtemperatuur die de fabrikant voor uw oven opgeeft die hitte haalt.
 
 Grote kegels zitten op een paar graden na op deze waarden: een grote kegel 6 bij {{108 °F/h; 60 °C/h}} is {{2228 °F; 1220 °C}}. Kleine kegels, de soort die in een kiln sitter gaat, staan alleen bij {{540 °F/h; 300 °C/h}} in de tabel, dus de tabel geeft voor een kleine kegel 6 {{2291 °F; 1255 °C}}. Dat is niet de temperatuur waarbij een kiln sitter de oven uitschakelt. De kegel in de kiln sitter is er om gelijk op te lopen met de kegel op de ovenplaat, en de kegel op de ovenplaat heeft het laatste woord.
 
@@ -298,6 +304,8 @@ De nummers lopen hier van SK 022, de koelste, op tot SK 20. Tussen SK 015 en SK 
 
 Zet elke grote kegel in een kegelhouder of een klompje klei, hellend naar zijn buigzijde. Houd, zoals bij elke kegel, de hoogte en de helling van stook tot stook gelijk, want een verschil in een van beide verandert hoe ver hij buigt. Zet de drie kegels van het kegeldrietal{{en: cone pack}} (hieronder) samen diep in de oven, bij het midden van de lading, waar ze de warmte krijgen die het werk krijgt, maar waar u ze toch door een kijkgat kunt zien; controleer voordat u de oven sluit of u alle drie kunt zien.
 
+We vonden geen aanwijzingen van een fabrikant of verkoper over hoe diep of onder welke hoek SK-kegels moeten worden gezet. Het dichtst daarbij komt een laboratoriumnorm, JIS R 2204, de Japanse test van hoeveel hitte een vuurvast materiaal verdraagt: die zet elke SK-kegel met het gemerkte vlak onder 80° ten opzichte van een vlakke standaard, met zijn voet ongeveer 4 mm daarin. Dat is een test voor vuurvaste materialen, geen regel voor het stoken van potten, en we lazen hem in een afschrift van de norm, niet in de norm zelf.
+
 ### Waarschuwingskegel, doelkegel en veiligheidskegel
 
 Kegels worden per drie verkocht en geplaatst: een waarschuwingskegel, een doelkegel op het doel, en een veiligheidskegel. Neem als doelkegel het SK-nummer dat uw recept of klei noemt, als waarschuwingskegel de eerstvolgende koelere kegel (één rij hoger in de tabel) en als veiligheidskegel de eerstvolgende hetere. Als de waarschuwingskegel begint te buigen, is het einde nabij; als de veiligheidskegel buigt, is de stook te ver gegaan.
@@ -366,6 +374,8 @@ Zelfstaande Ortonkegels worden in Japan verkocht onder de naam 立つゼーゲ�
 
 - [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (de SK-tabel, gecontroleerd op 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
 - [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (van kracht, herbevestigd op 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
+- [JSA: JIS R 2204:1999, 耐火物及び耐火物原料の耐火度試験方法 (van kracht, herbevestigd op 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+2204:1999)
+- [kikakurui.com: een afschrift van JIS R 2204:1999, waarin artikel 5 a) de plaatsing van de kegels regelt (gelezen op 2026-10-19)](https://kikakurui.com/r2/R2204-1999-01.html)
 - [Kyoto Municipal Institute of Industrial Technology and Culture: aandachtspunten bij de overstap van Kyoto-kegels op Ortonkegels](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
 
 :::
@@ -607,7 +617,7 @@ Voor het ventileren van de ruimte, en voor koolmonoxidemelders, zie [Veilig meng
 ### Terwijl de oven stookt
 
 - Kijk alleen door een kijkgat met een lasbril met IR-filter van beschermingsniveau 3; een zonnebril is niet genoeg. Skutt adviseert de stoppen er met een draai in te zetten, zodat ze er niet uit vallen.
-- Laat de oven niet langer dan de verwachte stooktijd onbeheerd; een kiln sitter is geen waterdichte beveiliging.
+- Blijf in de buurt en controleer de oven tijdens het stoken, vooral rond de verwachte eindtijd; een kiln sitter is geen waterdichte beveiliging. Stook alleen als er een volwassene thuis en wakker is tijdens de hele stook.
 - Stook nooit op of vlak bij iets wat kan branden, zoals een houten vloer of tapijt.
 - Houd de veiligheidsafstanden uit uw handleiding aan. Gepubliceerde cijfers lopen uiteen van 12 inch (30 cm) tot 3 voet (91 cm); waar de handleiding zwijgt, is 18 inch (46 cm) van muren en 3 voet (91 cm) van alles wat kan branden de veiligste keuze.
 - Houd de ruimte rond het gewicht van de kiln sitter vrij, zodat het kan vallen.

@@ -116,6 +116,33 @@ describe('RecipeLimits cone check', () => {
     expect(raku.line()!.textContent).toContain('it is for a raku firing');
   });
 
+  it('checks a porcelain range to cone 14 at high fire, and says the limits stop before cone 12', async () => {
+    const { fixture, line } = await create(glaze(0, 4.5, 0.5), { scale: 'orton', low: '10', high: '14' });
+    const root = fixture.nativeElement as HTMLElement;
+    expect(root.querySelector('#limit-firing-text')?.textContent).toBe(
+      "From the recipe's firing: High fire, cone 9–11 and Very high fire, cone 12 and up"
+    );
+    const bands = [...root.querySelectorAll<HTMLElement>('.limits-band')];
+    expect(bands.map((band) => band.dataset['band'])).toEqual(['high', 'top']);
+    expect(bands[0]!.querySelector('table')).not.toBeNull();
+    expect(bands[1]!.querySelector('table')).toBeNull();
+    expect(bands[1]!.textContent).toContain('has no figures for this firing (Very high fire, cone 12 and up)');
+    expect(bands[1]!.querySelector('.limits-top')?.textContent).toContain('stop at cone 10');
+    // The cone check does not reach past cone 10.
+    expect(line()!.textContent).toContain("can't compare this glaze's chemistry with cone 14");
+    expect(line()!.textContent).toContain('cone 06 to cone 10');
+  });
+
+  it('offers the top band in the picker, which checks nothing and says why', async () => {
+    const { fixture, line } = await create(glaze(0, 4.5, 0.5), null, 'top');
+    const root = fixture.nativeElement as HTMLElement;
+    const options = [...root.querySelectorAll<HTMLOptionElement>('#limit-firing option')].map((o) => o.value);
+    expect(options).toEqual(['', 'low', 'mid', 'high', 'top']);
+    expect(root.querySelector('table.limits-table')).toBeNull();
+    expect(root.querySelector('.limits-top')).not.toBeNull();
+    expect(line()!.textContent).toContain('with very high fire');
+  });
+
   it('says it again in the language chosen', async () => {
     const { fixture, line } = await create(glaze(0.2, 3.4, 0.35), { scale: 'orton', low: '6' });
     const transloco = TestBed.inject(TranslocoService);

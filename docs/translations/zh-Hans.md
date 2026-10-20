@@ -106,7 +106,7 @@ These settle the questions this sheet marks as the owner's; they win over anythi
 - **Address:** 您.
 - **Silica dust:** 硅尘 everywhere, also where the law's own row name is 矽尘 (the check rejects 矽); the source link carries the law's wording.
 - **Seger formula:** 塞格式.
-- **GB 4806.4:** name the edition the English names; the edition in force is checked before the CN region data is added, not by the translator.
+- **GB 4806.4:** name the edition the English names; the edition in force is checked before the CN region data is added, not by the translator. _Checked 2026-10-19:_ GB 4806.4—2016 is in force (the issued text was read); no 2023 edition is published.
 - **Passkey:** 通行密钥. **Recovery code:** 恢复码.
 
 ## 1. Style sheet
@@ -354,7 +354,9 @@ them. Where the English names no standard, add none (no GB number, no GBZ number
 - **Food contact (GB 4806.4)**: 《食品安全国家标准 陶瓷制品》; "lead and cadmium release" → **铅、镉迁移量** (the labs also write 溶出量);
   kinds of piece 扁平制品 (flatware), 空心制品 (hollowware), 小空心制品, 大空心制品, 口缘 (rim) (labs' summaries; the table was not
   read). Labs also name a GB 4806.4—2023 《食品接触用陶瓷材料及制品》: **owner**: confirm which edition is in force before the CN
-  region data is written.
+  region data is written. _Read 2026-10-19 in the 2016 standard itself (definitions 2.1–2.7 and 表1), for the `cn*` kinds of
+  piece:_ 扁平制品, 贮存罐, 空心制品, 大空心制品, 小空心制品（杯类除外）, 杯类, 烹饪器皿; 2016 is the edition in force, and no 2023
+  edition is published (a revision is only approved).
 - **GHS (GB 30000 series, GB/T 16483)**: 象形图 (pictogram), 信号词 **危险** and **警告**, 危险说明 (hazard statement), 防范说明;
   **化学品安全技术说明书**（SDS）. Chinese H-statements as Chinese SDSs print them: H301 吞咽会中毒, H302 吞咽有害, H350 可能致癌,
   H360 可能对生育能力或胎儿造成伤害, H372 长期或反复接触会对器官造成损害 (Usage: Chinese SDSs, not re-read today). Codes kept.

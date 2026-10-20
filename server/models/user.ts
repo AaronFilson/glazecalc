@@ -38,6 +38,9 @@ export type TokenLifetime = `${number}d`;
  *                  (lib/regions currencyFor); prices are never converted
  *   calendar       the calendar dates are shown in: the Gregorian, the Thai Buddhist era or Japan's eras
  *                  (lib/regions CALENDARS); dates are typed and saved in the Gregorian
+ *   digits         the digits numbers are shown in: as usual where the potter is ('auto': Arabic-Indic in
+ *                  Egypt, 0–9 in Morocco), 0–9, or the language's own (lib/regions DIGIT_CHOICES); typed
+ *                  numbers may use any, and are saved with 0–9
  */
 export const PREFERENCES = {
   weightUnit: ['g', 'lb'],
@@ -60,7 +63,8 @@ export const PREFERENCES = {
     ...Object.keys(limits.LIMIT_SETS).filter((id) => id !== limits.DEFAULT_LIMIT_SET)
   ],
   currency: ['', ...regions.CURRENCIES],
-  calendar: regions.CALENDARS
+  calendar: regions.CALENDARS,
+  digits: regions.DIGIT_CHOICES
 } as const;
 export type Preferences = { -readonly [K in keyof typeof PREFERENCES]: (typeof PREFERENCES)[K][number] };
 
@@ -330,7 +334,8 @@ const userSchema = new mongoose.Schema<UserFields, UserModel, UserMethods>({
     recipeHelp: { type: String, enum: PREFERENCES.recipeHelp },
     limitSet: { type: String, enum: PREFERENCES.limitSet },
     currency: { type: String, enum: PREFERENCES.currency },
-    calendar: { type: String, enum: PREFERENCES.calendar }
+    calendar: { type: String, enum: PREFERENCES.calendar },
+    digits: { type: String, enum: PREFERENCES.digits }
   },
   shelf: { type: [String], default: undefined },
   shelfPrevious: { type: [String], default: undefined },

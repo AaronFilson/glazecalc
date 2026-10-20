@@ -67,6 +67,7 @@ export type RecipeMessageCode =
   | 'checks.smallAmount'
   | 'pool.changed'
   | 'pool.added'
+  | 'pool.why.rawClay'
   | 'lead.why.rawCalcium'
   | 'lead.why.lowExpansion'
   | 'lead.why.boronFrit'
@@ -102,7 +103,8 @@ export type RecipeMessageCode =
   | 'coneFit.skip.ash'
   | 'coneFit.skip.noTemperature'
   | 'coneFit.skip.between'
-  | 'coneFit.skip.belowChart';
+  | 'coneFit.skip.belowChart'
+  | 'coneFit.skip.aboveChart';
 
 export const CODES: ReadonlyArray<RecipeMessageCode>;
 

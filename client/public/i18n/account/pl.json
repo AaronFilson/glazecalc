@@ -270,6 +270,22 @@
         "saved": "Zapisano: daty są wyświetlane w japońskich erach."
       }
     },
+    "digits": {
+      "legend": "Cyfry",
+      "help": "Cyfry, którymi zapisywane są liczby. Niektóre języki mają własne cyfry, na przykład arabski, bengalski i hindi, a od miejsca zależy, które są zwykle używane. Liczby można wpisywać zarówno jednymi, jak i drugimi.",
+      "auto": {
+        "label": "Zgodnie z miejscowym zwyczajem",
+        "saved": "Zapisano: cyfry zgodnie z miejscowym zwyczajem."
+      },
+      "western": {
+        "label": "Cyfry zachodnie, 0–9",
+        "saved": "Zapisano: liczby są wyświetlane cyframi 0–9."
+      },
+      "native": {
+        "label": "Własne cyfry języka, jeśli je ma",
+        "saved": "Zapisano: liczby są wyświetlane własnymi cyframi języka, jeśli je ma."
+      }
+    },
     "decimalMark": {
       "legend": "Wpisywanie ilości",
       "either": {

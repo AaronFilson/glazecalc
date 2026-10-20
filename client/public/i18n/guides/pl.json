@@ -52,6 +52,7 @@
     "emergency": "Nagły wypadek: utrata przytomności, brak oddechu, napad drgawek",
     "poisonAdvice": "{who, select, children {Porada w razie zatrucia: {name} (tylko dla dzieci)} other {Porada w razie zatrucia: {name}}}",
     "or": "lub {number}",
+    "orCall": "lub <link>{number}</link>",
     "online": "W internecie: <link>{name}</link>.",
     "poisonAdviceNone": "Porada w razie zatrucia",
     "noLine": "Nie udało nam się potwierdzić, że działa tu publiczna linia informacji o zatruciach. Należy zadzwonić do lekarza, a jeśli sprawa jest pilna – na numer alarmowy.",
@@ -61,8 +62,7 @@
     "vet": "Należy zadzwonić do weterynarza.",
     "checkedOn": "Sprawdzono na stronach:",
     "choosePrompt": "Wystarczy wybrać kraj, aby zobaczyć, gdzie tam dzwonić.",
-    "ministry": "Strona ministerstwa zdrowia: <link>{name}</link>.",
-    "reported": "Oficjalne strony rządowe podają numery 113, 114 i 115, ale nie wyjaśniają, do czego służy każdy z nich; pokazane role wynikają z okólnika 22/2014/TT-BTTTT, tak jak cytują go strony drugorzędne."
+    "ministry": "Strona ministerstwa zdrowia: <link>{name}</link>."
   },
   "density": {
     "sg": "SG {value}",
@@ -112,6 +112,10 @@
     "bandFromTo": "Pył zawierający od {from} % do {to} % wolnej krzemionki (SiO₂)",
     "bandOverTo": "Pył zawierający więcej niż {from} % i do {to} % wolnej krzemionki",
     "bandAbove": "Pył zawierający więcej niż {from} % wolnej krzemionki",
+    "untilDate": "Do {date}",
+    "fromDate": "Od {date}",
+    "beforeFormula": "Limit dla pyłu respirabilnego, gdzie Q to zawartość krzemionki krystalicznej w pyle, w %",
+    "beforeAll": "Dla pyłu składającego się wyłącznie z krzemionki krystalicznej",
     "recommended": "Wartość zalecana przez {abbr}",
     "value": "{value} mg/m³",
     "kind": {
@@ -122,6 +126,7 @@
     },
     "setBy": "Wartość ustala <link>{law}</link>.",
     "from": "Obowiązuje od {date}.",
+    "beforeSetBy": "Do tego czasu limit ustala <link>{law}</link>.",
     "lowerThanEu": "To mniej niż wiążący limit UE wynoszący {value} mg/m³.",
     "sameAsEu": "To tyle samo co wiążący limit UE.",
     "recommendedBy": "{abbr} ({by}) zaleca tę wartość w dokumencie <link>{title}</link>. Nie ma ona mocy prawnej.",
@@ -184,7 +189,13 @@
       "vnMedium": "Głębokie wyroby do przechowywania żywności, od 1100 mL do mniej niż 3000 mL",
       "vnStorage": "Głębokie wyroby do przechowywania żywności, 3000 mL lub więcej",
       "vnCooking": "Głębokie wyroby do gotowania",
-      "vnCups": "Filiżanki i małe miski"
+      "vnCups": "Filiżanki i małe miski",
+      "cnFlat": "Naczynia płaskie, o głębokości 25 mm lub mniejszej",
+      "cnSmall": "Małe naczynia głębokie, poniżej 1,1 L, inne niż kubki",
+      "cnLarge": "Duże naczynia głębokie, od 1,1 L do mniej niż 3 L",
+      "cnStorage": "Słoje do przechowywania, 3 L lub więcej",
+      "cnCups": "Kubki do wody lub napojów",
+      "cnCooking": "Naczynia do gotowania, do podgrzewania żywności"
     },
     "judged": {
       "average": "średnia z 6 sztuk",
@@ -198,6 +209,8 @@
     "atMost": "Wyrób spełnia wymagania, jeśli uwalnia nie więcej, niż wynosi limit: przepisy mówią „co najwyżej”.",
     "ppm": "ppm oznacza tu miligramy na litr roztworu badawczego (mg/L).",
     "unknown": "Nie potwierdziliśmy jeszcze przepisów obowiązujących w kraju: {region}.",
+    "none": "{region}: żaden przepis nie ustala limitów ołowiu i kadmu, które może uwolnić wypalony wyrób (sprawdzono {date}).",
+    "noneSource": "Źródło: <link>{law}</link>.",
     "choosePrompt": "Wystarczy wybrać kraj, aby zobaczyć obowiązujące w nim przepisy."
   },
   "equivalents": {

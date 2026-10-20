@@ -8,6 +8,7 @@ import { LocaleService } from '../../core/locale.service';
 import { PreferencesService } from '../../core/preferences.service';
 import { PAGE_LANGUAGE } from '../../i18n/language';
 import { pseudoText } from '../../i18n/pseudo';
+import { isolated, ltr, withLatinIsolated } from '../../shared/bidi';
 import { fixed, upTo } from '../../shared/format';
 import { PageHeader } from '../../shared/page-header';
 import { StructuredData, article, pageAddress } from '../../shared/structured-data';
@@ -119,20 +120,27 @@ export class GuideView implements InlineContext {
   /** Links to a section of this page, as the contents' are. */
   protected readonly sectionLinks = new SectionLinks();
 
-  /** Text as the page shows it: as written, or accented in a pseudo-locale. */
+  /**
+   * Text as the page shows it: as written, or accented in a pseudo-locale; its web addresses and formulas
+   * kept left to right on a right-to-left page (shared/bidi.ts).
+   */
   show(text: string): string {
-    return this.pseudo ? pseudoText(text, this.language) : text;
+    return withLatinIsolated(this.pseudo ? pseudoText(text, this.language) : text);
   }
 
-  /** A temperature in the reader's scale, the other after it: "1,222 °C (2,232 °F)". */
+  /** A temperature in the reader's scale, the other after it: "1,222 °C (2,232 °F)", left to right in Arabic. */
   temperature(part: Extract<Inline, { kind: 'temperature' }>): string {
     const [first, second] =
       this.locale.temperature() === 'F' ? [part.fahrenheit, part.celsius] : [part.celsius, part.fahrenheit];
-    return `${this.reading(first)} (${this.reading(second)})`;
+    return ltr(`${this.reading(first)} (${this.reading(second)})`);
   }
 
   /** A glaze's density as the reader measures it: "SG 1.45", "45 °Bé (SG 1.45)" or "29 oz per imperial pint (SG 1.45)". */
   density(part: Extract<Inline, { kind: 'density' }>): string {
+    return isolated(this.densityText(part));
+  }
+
+  private densityText(part: Extract<Inline, { kind: 'density' }>): string {
     const range = (write: (sg: number) => string) => write(part.from) + (part.to === null ? '' : '–' + write(part.to));
     const sg = translate('guides.density.sg', { value: range((value) => fixed(value, 2)) });
     switch (this.locale.density()) {

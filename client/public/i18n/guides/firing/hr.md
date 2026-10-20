@@ -81,7 +81,7 @@ Tablica za samostojeći stožac 6 daje {{2232 °F; 1222 °C}}, ali samo kad se u
 
 ## Tablica stožaca {#cone-chart}
 
-Ovi su podaci iz Ortonove tablice stožaca (©2001) za samostojeće stošce{{en: cones}}. Odaberite stupac koji odgovara brzini kojom se vaša peć zagrijavala u posljednjih {{180 °F; 100 °C}}. Ortonovo je okvirno pravilo: stupac {{270 °F/h; 150 °C/h}} za brzo pečenje, stupac {{108 °F/h; 60 °C/h}} za srednje i stupac {{27 °F/h; 15 °C/h}} za sporo. Brzinu izračunate tako da porast temperature podijelite s brojem sati koliko je trajao: peć kojoj temperatura u 3 sata poraste za {{900 °F; 500 °C}} zagrijava se brzinom od oko {{300 °F/h; 167 °C/h}}.
+Ovi su podaci iz Ortonove tablice stožaca (©2001) za samostojeće stošce{{en: cones}}; stošci od 11 do 14 iz tablica su koje Orton objavljuje danas, a koje daju iste podatke ondje gdje se preklapaju, dok stošce 13 i 14 navode samo u °C (njihove su vrijednosti u °F ovdje preračunate). Odaberite stupac koji odgovara brzini kojom se vaša peć zagrijavala u posljednjih {{180 °F; 100 °C}}. Ortonovo je okvirno pravilo: stupac {{270 °F/h; 150 °C/h}} za brzo pečenje, stupac {{108 °F/h; 60 °C/h}} za srednje i stupac {{27 °F/h; 15 °C/h}} za sporo. Brzinu izračunate tako da porast temperature podijelite s brojem sati koliko je trajao: peć kojoj temperatura u 3 sata poraste za {{900 °F; 500 °C}} zagrijava se brzinom od oko {{300 °F/h; 167 °C/h}}.
 
 Table: Ortonovi samostojeći stošci: temperatura pri kojoj se svaki savije, prema brzini zagrijavanja u posljednjih {{180 °F; 100 °C}}
 Label: Ortonova tablica stožaca
@@ -108,8 +108,14 @@ Label: Ortonova tablica stožaca
 | 8      |        {{2212 °F; 1211 °C}} |           {{2280 °F; 1249 °C}} |         {{2320 °F; 1271 °C}} |
 | 9      |        {{2235 °F; 1224 °C}} |           {{2300 °F; 1260 °C}} |         {{2336 °F; 1280 °C}} |
 | 10     |        {{2284 °F; 1251 °C}} |           {{2345 °F; 1285 °C}} |         {{2381 °F; 1305 °C}} |
+| 11     |        {{2322 °F; 1272 °C}} |           {{2361 °F; 1294 °C}} |         {{2399 °F; 1315 °C}} |
+| 12     |        {{2345 °F; 1285 °C}} |           {{2383 °F; 1306 °C}} |         {{2419 °F; 1326 °C}} |
+| 13     |        {{2390 °F; 1310 °C}} |           {{2428 °F; 1331 °C}} |         {{2458 °F; 1348 °C}} |
+| 14     |        {{2464 °F; 1351 °C}} |           {{2489 °F; 1365 °C}} |         {{2523 °F; 1384 °C}} |
 
 Crtica označava podatak koji ovdje nije prepisan; pogledajte ga u Ortonovoj cjelovitoj tablici.
+
+Orton izrađuje stošce do broja 42 za rad na visokim temperaturama, ali temperature objavljuje samo do stošca 14; za toplije stošce njegove su tablice „dostupne (na zahtjev)”. Starija Ortonova tablica, kako je pretiskuju proizvođači peći, za veliki stožac 15 daje {{2608 °F; 1431 °C}} pri {{270 °F/h; 150 °C/h}}, a za stožac 16 i toplije nismo pronašli nijedan objavljeni podatak. Za stošce toplije od stošca 14 postavite kontrolne stošce{{en: witness cones}} i ravnajte se prema njima te provjerite doseže li najviša temperatura koju proizvođač navodi za vašu peć tu razinu.
 
 Veliki stošci odstupaju od ovih podataka tek nekoliko stupnjeva: veliki stožac 6 pri {{108 °F/h; 60 °C/h}} savije se na {{2228 °F; 1220 °C}}. Mali stošci, oni koji se stavljaju u Kiln-Sitter, navedeni su samo za {{540 °F/h; 300 °C/h}}, pa tablica za mali stožac 6 daje {{2291 °F; 1255 °C}}. To nije temperatura pri kojoj Kiln-Sitter isključi peć. Zadaća je stošca u Kiln-Sitteru da se poklopi sa stošcem na ploči, a posljednju riječ ima stožac na ploči.
 
@@ -298,6 +304,8 @@ Brojevi ovdje idu od SK 022, najhladnijeg, do SK 20. Između SK 015 i SK 6 otisn
 
 Svaki veliki stožac postavite u držač za stošce ili u grudicu gline, nagnut prema svojoj strani savijanja. Kao i kod svakog stošca, visinu i nagib držite jednakima od pečenja do pečenja, jer razlika u bilo čemu od toga mijenja koliko se savije. Tri stošca iz skupa (niže) postavite zajedno, duboko u peć blizu sredine punjenja, gdje primaju toplinu koju primaju predmeti, a ipak ondje gdje ih možete vidjeti kroz kontrolni otvor; prije nego što zatvorite peć, provjerite vidite li sva tri.
 
+Nismo pronašli upute proizvođača ni prodavača o tome koliko duboko i pod kojim kutom postaviti stošce SK. Najbliže tome je laboratorijska norma JIS R 2204, japansko ispitivanje koliko topline vatrostalni materijal podnosi: ona svaki stožac SK postavlja označenom stranom pod kutom od 80° prema ravnom postolju, s donjim krajem utisnutim oko 4 mm u njega. To je ispitivanje za vatrostalne materijale, a ne pravilo za pečenje keramike, i pročitali smo ga u prijepisu norme, a ne u samoj normi.
+
 ### Vodeći, ciljni i zaštitni stožac
 
 Stošci se prodaju i postavljaju po tri: vodeći stožac, ciljni stožac na željenom stupnju i zaštitni stožac. Za ciljni stožac uzmite broj SK koji navodi vaš recept ili glina, za vodeći sljedeći hladniji stožac (jedan red više u tablici), a za zaštitni sljedeći topliji. Kad se vodeći stožac počne savijati, kraj je blizu; kad se savije zaštitni stožac, pečenje je otišlo predaleko.
@@ -366,6 +374,8 @@ Ortonovi samostojeći stošci prodaju se u Japanu pod imenom 立つゼーゲル 
 
 - [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (tablica stožaca SK, provjereno 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
 - [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (na snazi, ponovno potvrđena 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
+- [JSA: JIS R 2204:1999, 耐火物及び耐火物原料の耐火度試験方法 (na snazi, ponovno potvrđena 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+2204:1999)
+- [kikakurui.com: prijepis norme JIS R 2204:1999, u kojoj točka 5 a) određuje postavljanje stožaca (pročitano 2026-10-19)](https://kikakurui.com/r2/R2204-1999-01.html)
 - [Kyoto Municipal Institute of Industrial Technology and Culture: na što paziti pri prelasku s kyotskih stožaca na Ortonove stošce](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
 
 :::
@@ -607,7 +617,7 @@ Za ventilaciju prostorije i detektore ugljikova monoksida pogledajte vodiče [Si
 ### Dok peć peče
 
 - Kroz kontrolni otvor gledajte samo kroz naočale za zavarivanje s IC zaštitom i stupnjem zatamnjenja 3; sunčane naočale nisu dovoljne. Skutt savjetuje da čepove na mjesto umetnete uvrtanjem kako ne bi ispali.
-- Ne ostavljajte peć bez nadzora dulje od očekivanog trajanja pečenja; Kiln-Sitter nije uređaj koji jamči sigurno isključivanje.
+- Tijekom pečenja ostanite u blizini i provjeravajte peć, prije svega oko očekivanog završetka pečenja; Kiln-Sitter nije uređaj za isključivanje siguran u slučaju kvara. Pecite samo kad će kod kuće biti odrasla osoba koja će biti budna tijekom cijelog pečenja.
 - Nikad ne pecite na zapaljivoj podlozi ni blizu zapaljivih stvari, poput drvenog poda ili tepiha.
 - Poštujte sigurnosne razmake iz uputa za peć. Objavljene vrijednosti kreću se od 12 inča (30 cm) do 3 stope (91 cm); ako upute o tome ništa ne kažu, najsigurniji je izbor 18 inča (46 cm) od zidova i 3 stope (91 cm) od svega zapaljivog.
 - Prostor oko utega Kiln-Sittera neka bude slobodan kako bi uteg mogao pasti.

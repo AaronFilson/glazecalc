@@ -1,7 +1,9 @@
 import { Type } from '@angular/core';
 import { TestBed } from '@angular/core/testing';
+import { regionFor } from '../../../../lib/regions';
 import { NOW } from '../../core/clock';
 import { PreferencesService } from '../../core/preferences.service';
+import { choosePicked, pickerField } from '../../testing/picker';
 import { testProviders } from '../../testing/test-providers';
 import { FoodLimits } from './food-limits';
 import { PoisonLines } from './poison-lines';
@@ -22,10 +24,7 @@ const create = async (component: Type<unknown>, region: string) => {
       [...row.children].map((cell) => (cell.textContent ?? '').replace(/\s+/g, ' ').trim())
     );
   const choose = async (code: string) => {
-    const select = element.querySelector('select') as HTMLSelectElement;
-    select.value = code;
-    select.dispatchEvent(new Event('change'));
-    await fixture.whenStable();
+    await choosePicked(fixture, pickerField(element), regionFor(code)!.name);
   };
   return { element, text, rows, choose };
 };
@@ -34,6 +33,8 @@ beforeEach(() => {
   localStorage.clear();
   TestBed.configureTestingModule({ providers: testProviders() });
 });
+// The region chosen here is kept in this browser's storage: none is left for the next file's tests.
+afterEach(() => localStorage.clear());
 
 describe('ShopList', () => {
   it("lists shops in the reader's country, linked, with what they sell and the packs seen", async () => {
@@ -304,16 +305,35 @@ describe('Taiwan', () => {
     expect(element.textContent).toContain('24 hours, every day, free');
   });
 
-  it('gives the 2027 limit with the day it applies from, and what applies until then', async () => {
+  it('gives the limit that applies until 2027 and the 2027 limit, each under its dates, with both laws linked', async () => {
     TestBed.overrideProvider(NOW, { useValue: () => new Date(2026, 11, 31, 23, 59) });
     const { element, rows } = await create(SilicaLimit, 'TW');
-    expect(rows()).toEqual([['Quartz and cristobalite', '0.1 mg/m³']]);
+    expect(rows()).toEqual([
+      ['Until December 31, 2026'],
+      ['Limit for respirable dust, where Q is the crystalline silica in it, in %', '10 / (Q + 2) mg/m³'],
+      ['For dust that is all crystalline silica', '0.098 mg/m³'],
+      ['From January 1, 2027'],
+      ['Quartz and cristobalite', '0.1 mg/m³']
+    ]);
+    // The dates head their rows for each period.
+    expect([...element.querySelectorAll('th[scope="colgroup"]')].map((th) => th.getAttribute('colspan'))).toEqual([
+      '2',
+      '2'
+    ]);
     const paragraphs = paragraphsOf(element);
     expect(paragraphs[0]).toContain('A binding limit.');
     expect(paragraphs[0]).toContain('It applies from January 1, 2027.');
-    expect(paragraphs[0]).toContain('Until 31 December 2026 an earlier table applies');
+    expect(paragraphs[0]).toContain(
+      'Until then, the limit is set by 勞工作業場所容許暴露標準，附表二（2018年3月14日修正），第一種粉塵.'
+    );
+    expect(paragraphs[0]).toContain('Until 31 December 2026 the limit is for the whole respirable dust');
     expect(paragraphs[1]).toContain('Dust masks here are sold by class: D2 for glaze dust, or D3 for more protection');
     expect(paragraphs[2]).toContain('勞動部職業安全衛生署');
+    const links = [...element.querySelectorAll('a')].map((a) => a.getAttribute('href'));
+    expect(links).toContain(
+      'https://law.moj.gov.tw/LawClass/LawGetFile.ashx?FileId=0000387834&lan=C&type=1&date=20250411'
+    );
+    expect(links).toContain('https://law.moj.gov.tw/LawClass/LawAll.aspx?PCODE=N0060004');
   });
 
   it('once the 2027 limit is in force, says neither when it applies from nor what applied before', async () => {
@@ -323,7 +343,11 @@ describe('Taiwan', () => {
     const paragraph = paragraphsOf(element)[0];
     expect(paragraph).toContain('A binding limit.');
     expect(paragraph).not.toContain('It applies from');
-    expect(paragraph).not.toContain('Until 31 December 2026');
+    expect(paragraph).not.toContain('Until');
+    expect(element.textContent).not.toContain('Q + 2');
+    expect([...element.querySelectorAll('a')].map((a) => a.getAttribute('href'))).not.toContain(
+      'https://law.moj.gov.tw/LawClass/LawGetFile.ashx?FileId=0000387834&lan=C&type=1&date=20250411'
+    );
   });
 
   it('gives the limits in ppm and µg/cm², and says what ppm means', async () => {
@@ -394,14 +418,16 @@ describe('Malaysia', () => {
 });
 
 describe('China', () => {
-  it('gives 120 with the fire and police numbers, and no poison line, since none could be confirmed', async () => {
-    const { element } = await create(PoisonLines, 'CN');
+  it("gives 120 with the fire and police numbers, and China CDC's poison line, saying its hours are not given", async () => {
+    const { element, rows } = await create(PoisonLines, 'CN');
     const calls = [...element.querySelectorAll('a[href^="tel:"]')].map((a) => a.getAttribute('href'));
-    expect(calls).toEqual(['tel:120']);
+    expect(calls).toEqual(['tel:120', 'tel:+861083132345']);
     const text = (element.textContent ?? '').replace(/\s+/g, ' ');
     expect(text).toContain('For a fire, call 119; for the police, 110.');
-    expect(text).toContain('We could not confirm a public poison line here.');
-    expect(text).not.toContain('83132345');
+    expect(rows()[1]![0]).toBe('Poison advice: National poison information hotline, China CDC (全国中毒咨询热线)');
+    expect(rows()[1]![1]).toBe('010-83132345');
+    expect(rows()[1]![2]).toContain('No official page gives its hours or its cost; in an emergency, call 120.');
+    expect(text).not.toContain('We could not confirm a public poison line here.');
   });
 
   it('gives the limit for each band of free silica, as GBZ 2.1 draws them, with no quartz row', async () => {
@@ -417,13 +443,31 @@ describe('China', () => {
     expect(paragraphs[0]).toContain(
       'not only the silica in it. Any dust with 10% free silica or more is held to them.'
     );
-    expect(element.textContent).not.toContain('Dust masks here are sold by class');
+    expect(paragraphs[1]).toContain(
+      'Dust masks here are sold by class: KN95 for glaze dust, or KN100 for more protection'
+    );
+    expect(paragraphs[1]).toContain('GB 2626-2019');
   });
 
-  it('says the food-contact rules and shops are not yet confirmed', async () => {
-    expect((await create(FoodLimits, 'CN')).element.textContent).toContain(
-      'We have not yet confirmed the rules in China.'
-    );
+  it("gives GB 4806.4—2016's six kinds of piece, at most, and says why cooking ware's limits are higher", async () => {
+    const { element, rows } = await create(FoodLimits, 'CN');
+    expect(rows()).toEqual([
+      ['Flat ware, 25 mm deep or less', '0.8 mg/dm²', '0.07 mg/dm²'],
+      ['Small hollow ware, under 1.1 L, other than cups', '2 mg/L', '0.3 mg/L'],
+      ['Large hollow ware, from 1.1 L to under 3 L', '1 mg/L', '0.25 mg/L'],
+      ['Storage jars, 3 L or more', '0.5 mg/L', '0.25 mg/L'],
+      ['Cups, for water or drinks', '0.5 mg/L', '0.25 mg/L'],
+      ['Cooking ware, for heating food', '3 mg/L', '0.3 mg/L']
+    ]);
+    const paragraph = paragraphsOf(element)[0];
+    expect(paragraph).toContain('Set by GB 4806.4—2016《食品安全国家标准 陶瓷制品》，表1.');
+    expect(paragraph).toContain('In force from April 19, 2017.');
+    expect(paragraph).toContain('A piece passes if it releases no more than the limit');
+    expect(paragraph).toContain('Cooking ware is tested hot, two hours in 4% acetic acid at 98 °C');
+    expect(paragraph).toContain('Guangdong provincial regulator');
+  });
+
+  it('says no shop was found', async () => {
     expect((await create(ShopList, 'CN')).element.textContent).toContain(
       'We found no shop selling raw glaze materials in China.'
     );
@@ -452,10 +496,30 @@ describe('Hong Kong', () => {
     expect(element.querySelector('a[href="https://www.labour.gov.hk/eng/public/oh/silicosis.pdf"]')).not.toBeNull();
   });
 
-  it('says the food-contact rules are not yet confirmed', async () => {
-    expect((await create(FoodLimits, 'HK')).element.textContent).toContain(
-      'We have not yet confirmed the rules in Hong Kong SAR China.'
+  it('says there is no law with figures for ceramic ware, with no table, and links the Centre for Food Safety', async () => {
+    const { element } = await create(FoodLimits, 'HK');
+    expect(element.querySelector('table')).toBeNull();
+    const paragraph = paragraphsOf(element)[0];
+    expect(paragraph).toContain(
+      'There is no law in Hong Kong SAR China that sets limits for the lead and cadmium a fired piece may release (checked 19 October 2026).'
     );
+    expect(paragraph).toContain(
+      'Source: Centre for Food Safety, Guidelines on the Use of Disposable Tray Liners (December 2009).'
+    );
+    expect(paragraph).toContain('Consumer Goods Safety Ordinance (Cap. 456)');
+    expect(paragraph).not.toContain('not yet confirmed');
+    expect(
+      element.querySelector('a[href="https://www.cfs.gov.hk/english/food_leg/files/Guidelines_Tray_liner.pdf"]')
+    ).not.toBeNull();
+    expect(element.querySelector('.region-sources')?.textContent).toContain('cfs.gov.hk');
+  });
+
+  it('lists Hearty Ceramic, with its town and packs', async () => {
+    const { rows } = await create(ShopList, 'HK');
+    expect(rows().map((row) => row[0])).toEqual([
+      'Hearty Ceramic (Hearty Arts International Limited)' + 'Tai Kok Tsui (Kowloon)'
+    ]);
+    expect(rows()[0]![2]).toBe('1 kg, 5 kg and 10 kg');
   });
 });
 
@@ -482,7 +546,8 @@ describe('Indonesia', () => {
       ['Pieces more than 25 mm deep inside, 1100 mL or more', '0,5 mg/L', '0,25 mg/L']
     ]);
     expect(paragraphsOf(element)[0]).toContain('the third result is held to the limit');
-    expect(paragraphsOf(element)[0]).not.toContain('In force from');
+    expect(paragraphsOf(element)[0]).toContain('In force from 30 June 2026.');
+    expect(paragraphsOf(element)[0]).toContain('Ware already on the market has until 30 June 2027 to comply.');
   });
 });
 
@@ -516,6 +581,15 @@ describe('Thailand', () => {
     ]);
     expect(paragraphsOf(element)[0]).toContain("the shallow pieces' too");
   });
+
+  it('lists two shops by their own names, and a note on prices by the kilogram', async () => {
+    const { rows } = await create(ShopList, 'TH');
+    expect(rows().map((row) => row[0])).toEqual([
+      'Pottery Clay Thailand',
+      'Cerawan (เซล่าวัล ซัพพลาย)' + 'Krathum Baen (Samut Sakhon)'
+    ]);
+    expect(rows()[1]![3]).toContain('Priced by the kilogram.');
+  });
 });
 
 describe('Philippines', () => {
@@ -526,30 +600,55 @@ describe('Philippines', () => {
     expect(element.textContent).toContain('24 hours, every day, free');
   });
 
-  it('says the silica limit is not yet confirmed', async () => {
-    expect((await create(SilicaLimit, 'PH')).element.textContent).toContain(
-      'We have not yet confirmed the limit in Philippines.'
+  it("gives the OSH Standards' formula for quartz, half for cristobalite, and says it was read in an archived copy", async () => {
+    const { element, rows } = await create(SilicaLimit, 'PH');
+    expect(rows()).toEqual([
+      ['Limit for respirable quartz, where Q is the silica (SiO₂) in the dust, in %', '10 / (Q + 2) mg/m³'],
+      ['Quartz, for dust that is all quartz', '0.098 mg/m³'],
+      ['Cristobalite, for dust that is all cristobalite', '0.049 mg/m³']
+    ]);
+    const paragraph = paragraphsOf(element)[0];
+    expect(paragraph).toContain('A binding limit.');
+    expect(paragraph).toContain(
+      'Set by Occupational Safety and Health Standards (as amended, 1989), Rule 1070, Table 8a.'
     );
+    expect(paragraph).toContain(
+      "Read in the Internet Archive's copy of the Department of Labor and Employment's own file"
+    );
+    expect(element.textContent).not.toContain('not yet confirmed');
+  });
+
+  it('lists a shop for raw materials and one for clay and ready-made glazes', async () => {
+    const { rows } = await create(ShopList, 'PH');
+    expect(rows().map((row) => row[0])).toEqual([
+      'Tahanan Pottery' + 'Quezon City',
+      'Odangputik Pottery' + 'Quezon City'
+    ]);
+    expect(rows()[1]![3]).toContain('Ready-made glazes and clay; no raw materials seen.');
   });
 });
 
 describe('Vietnam', () => {
-  it('gives 115, with 113 and 114, and says plainly that official pages give no roles', async () => {
+  it('gives 115, with 113 and 114 and the merger into 113, and no caution, since their roles are on official pages', async () => {
     const { element, rows } = await create(PoisonLines, 'VN');
     const calls = [...element.querySelectorAll('a[href^="tel:"]')].map((a) => a.getAttribute('href'));
     expect(calls).toEqual(['tel:115']);
-    expect(rows()[0]![2]).toContain('For the police, call 113; for a fire, 114.');
-    expect(element.querySelector('.reported')?.textContent).toContain(
-      'Official government pages list 113, 114 and 115'
-    );
+    expect(rows()[0]![2]).toContain('For the police, call 113; for a fire or a rescue, 114.');
+    expect(rows()[0]![2]).toContain('until then, all three still work');
+    expect(element.textContent).not.toContain('Official government pages list');
+    expect(element.querySelector('.region-sources')?.textContent).toContain('congan.dienbien.gov.vn');
     expect(element.textContent).toContain('We could not confirm a public poison line here.');
   });
 
-  it("gives QCVN 02:2019/BYT's limit for free silica in respirable dust", async () => {
+  it("gives QCVN 02:2019/BYT's limit for free silica in respirable dust, and the FFP mask classes", async () => {
     const { element, rows } = await create(SilicaLimit, 'VN');
     expect(rows()[0]![1]).toContain('0.1');
     expect(element.textContent).toContain('QCVN 02:2019/BYT');
     expect(element.textContent).toContain('0.3 mg/m³');
+    expect(paragraphsOf(element)[1]).toContain(
+      'Dust masks here are sold by class: FFP2 for glaze dust, or FFP3 for more protection'
+    );
+    expect(paragraphsOf(element)[1]).toContain('TCVN 13409:2021');
   });
 
   it("gives QCVN 12-4:2015/BYT's six kinds of piece", async () => {
@@ -562,12 +661,169 @@ describe('Vietnam', () => {
       'Deep pieces for cooking',
       'Cups and small bowls'
     ]);
-    expect(element.textContent).toContain('TCVN 7146-1:2002');
+    // The regulation names its test method but does not make it mandatory.
+    expect(element.textContent).toContain('names a test method (TCVN 7146-1:2002');
+    expect(element.textContent).toContain('allows others of the same accuracy');
   });
 
   it('lists no shop, and says so', async () => {
     const { element } = await create(ShopList, 'VN');
     expect(element.textContent).toContain('We found no shop selling raw glaze materials in Vietnam.');
     expect(element.querySelector('table')).toBeNull();
+  });
+});
+
+/** The tel: links a block shows, in order. */
+const callsIn = (element: HTMLElement) =>
+  [...element.querySelectorAll('a[href^="tel:"]')].map((a) => a.getAttribute('href'));
+
+describe('India', () => {
+  it('gives 112, and the poison centre with its Delhi number linked as dialled from anywhere', async () => {
+    const { element } = await create(PoisonLines, 'IN');
+    expect(callsIn(element)).toEqual(['tel:112', 'tel:1800116117', 'tel:+911126589391']);
+    // The other number stays on one line, as one run of digits.
+    const other = element.querySelector('a[href="tel:+911126589391"]')!;
+    expect(other.textContent).toBe('011\u00a02658\u00a09391');
+    expect((other.parentElement?.textContent ?? '').replace(/\s+/g, ' ')).toBe('or 011 2658 9391');
+    const text = (element.textContent ?? '').replace(/\s+/g, ' ');
+    expect(text).toContain('One number for police, fire and ambulance');
+    expect(text).toContain('24 hours, every day, toll free');
+    expect(text).toContain('It advises the public as well as health workers.');
+  });
+
+  it('says no limit is confirmed, that each state sets its own, and links DGOSH, with the IS 9473 classes', async () => {
+    const { element } = await create(SilicaLimit, 'IN');
+    expect(element.querySelector('table')).toBeNull();
+    const paragraphs = paragraphsOf(element);
+    expect(paragraphs[0]).toBe('We have not yet confirmed the limit in India.');
+    expect(paragraphs[1]).toBe(
+      'We found no national limit: under the Occupational Safety, Health and Working Conditions Code, 2020, each state sets the limits for its own factories.'
+    );
+    expect(paragraphs[2]).toContain('Dust masks here are sold by class: FFP2 for glaze dust, or FFP3');
+    expect(paragraphs[2]).toContain('IS 9473:2002');
+    expect(element.querySelector('a[href="https://dgfasli.gov.in/en/"]')?.textContent).toBe(
+      'Directorate General Occupational Safety and Health (DGOSH)'
+    );
+    // The Code's text is among the sources, with the date it was read.
+    expect(element.querySelector('.region-sources')?.textContent).toContain('prsindia.org');
+  });
+
+  it('gives no food-contact rules, since only a voluntary standard was found, and lists two shops', async () => {
+    const food = await create(FoodLimits, 'IN');
+    expect(food.element.textContent).toContain('We have not yet confirmed the rules in India.');
+    expect(food.element.querySelector('table')).toBeNull();
+    const shops = await create(ShopList, 'IN');
+    expect(shops.rows().map((row) => row[0])).toEqual(['Bhoomi Pottery', 'Clay Station' + 'Bangalore']);
+  });
+});
+
+describe('Pakistan and Bangladesh', () => {
+  it("gives Rescue 1122 with Punjab's police number, no poison line, and the health ministry", async () => {
+    const { element, rows } = await create(PoisonLines, 'PK');
+    expect(callsIn(element)).toEqual(['tel:1122']);
+    expect(rows()[0]![2]).toContain('Each province runs its own Rescue 1122 service');
+    expect(rows()[0]![2]).toContain('In Punjab, call 15 for the police.');
+    expect(element.textContent).toContain('We could not confirm a public poison line here.');
+    expect(element.querySelector('a[href="https://www.nhsrc.gov.pk/"]')).not.toBeNull();
+  });
+
+  it("gives 999, and the health directorate's call centre as medical advice, not as a poison line", async () => {
+    const { element, rows } = await create(PoisonLines, 'BD');
+    expect(callsIn(element)).toEqual(['tel:999', 'tel:16263']);
+    expect(rows()[0]![2]).toContain('as the government');
+    expect(rows()[1]![0]).toBe('Poison advice');
+    expect(rows()[1]![2]).toContain('We could not confirm a public poison line here.');
+    expect(rows()[2]![0]).toBe('Medical advice: Health Call Centre (হেলথ কল সেন্টার)');
+    expect(rows()[2]![2]).toContain('It is not a poison line');
+    expect(element.querySelector('a[href="https://mohfw.gov.bd/"]')?.textContent).toBe(
+      'স্বাস্থ্য ও পরিবার কল্যাণ মন্ত্রণালয়'
+    );
+  });
+
+  it('say no limit is confirmed; Bangladesh links its inspection department', async () => {
+    const pakistan = await create(SilicaLimit, 'PK');
+    expect(paragraphsOf(pakistan.element)).toEqual(['We have not yet confirmed the limit in Pakistan.']);
+    const bangladesh = await create(SilicaLimit, 'BD');
+    expect(paragraphsOf(bangladesh.element)[0]).toBe('We have not yet confirmed the limit in Bangladesh.');
+    expect(bangladesh.element.querySelector('a[href="https://dife.gov.bd/"]')?.textContent).toContain('(DIFE)');
+  });
+});
+
+describe('Egypt and the UAE', () => {
+  it('gives 123 for an ambulance with the police and fire numbers, and the health ministry', async () => {
+    const { element, rows } = await create(PoisonLines, 'EG');
+    expect(callsIn(element)).toEqual(['tel:123']);
+    expect(rows()[0]![2]).toBe(
+      'Ambulance; the call and the ambulance are free. For the police, call 122; for a fire, 180.'
+    );
+    expect(element.querySelector('a[href="https://www.mohp.gov.eg/"]')?.textContent).toBe('وزارة الصحة والسكان');
+  });
+
+  it("gives 998, no poison line and no ministry, since the federal ministry's site could not be read", async () => {
+    const { element } = await create(PoisonLines, 'AE');
+    expect(callsIn(element)).toEqual(['tel:998']);
+    expect(element.textContent).toContain('We could not confirm a public poison line here.');
+    expect(element.textContent).not.toContain("The health ministry's page");
+    expect(element.textContent).not.toContain('800');
+  });
+
+  it('lists two shops in Abu Dhabi, one with a note that it sells no raw glaze materials', async () => {
+    const { rows } = await create(ShopList, 'AE');
+    expect(rows().map((row) => row[0])).toEqual([
+      'Art Central Pottery' + 'Abu Dhabi',
+      'Abu Dhabi Pottery' + 'Abu Dhabi'
+    ]);
+    expect(rows()[1]![3]).toContain('no raw glaze materials seen');
+  });
+});
+
+describe('Morocco and Algeria', () => {
+  it("gives 141, and the poison centre's 0801 number and its Rabat number, each linked", async () => {
+    const { element, rows } = await create(PoisonLines, 'MA');
+    expect(callsIn(element)).toEqual(['tel:141', 'tel:0801000180', 'tel:+212537686464']);
+    expect(rows()[1]![0]).toContain('Centre Anti Poison et de Pharmacovigilance du Maroc, CAPM');
+    expect(rows()[1]![2]).toBe(
+      '24 hours, every day. A doctor judges how serious the poisoning is and gives first-aid advice. The call costs the same as a local call; the advice is free.'
+    );
+  });
+
+  it('gives 14 for civil protection, and no poison line or ministry', async () => {
+    const { element, rows } = await create(PoisonLines, 'DZ');
+    expect(callsIn(element)).toEqual(['tel:14']);
+    expect(rows()[0]![2]).toMatch(/^Civil protection \(Protection civile\); also 1021\./);
+    expect(element.textContent).not.toContain("The health ministry's page");
+  });
+
+  it("gives the 2019 order's three kinds of piece, and its rule for a piece up to 50% over", async () => {
+    const { element, rows } = await create(FoodLimits, 'DZ');
+    expect(rows().map((row) => row[0])).toEqual([
+      'Pieces that cannot be filled, or no deeper than 25 mm',
+      'Other pieces that can be filled',
+      'Cooking ware of any size, and packaging and storage vessels over 3 L'
+    ]);
+    const text = (element.textContent ?? '').replace(/\s+/g, ' ');
+    // English as Algeria writes it is English's own date format, as for Taiwan.
+    expect(text).toContain('In force from June 6, 2019.');
+    expect(text).toContain('at least three more pieces of the same shape, size, decoration and glaze');
+    expect(element.querySelector('a[href="https://www.joradp.dz/FTP/JO-FRANCAIS/2019/F2019036.pdf"]')).not.toBeNull();
+  });
+
+  it('say no silica limit is confirmed and no shop was found', async () => {
+    for (const [code, name] of [
+      ['MA', 'Morocco'],
+      ['DZ', 'Algeria'],
+      ['EG', 'Egypt'],
+      ['AE', 'United Arab Emirates']
+    ]) {
+      const silica = await create(SilicaLimit, code!);
+      expect(paragraphsOf(silica.element), code).toEqual([`We have not yet confirmed the limit in ${name}.`]);
+    }
+    for (const [code, name] of [
+      ['MA', 'Morocco'],
+      ['DZ', 'Algeria']
+    ]) {
+      const shops = await create(ShopList, code!);
+      expect(shops.element.textContent, code).toContain(`We found no shop selling raw glaze materials in ${name}.`);
+    }
   });
 });

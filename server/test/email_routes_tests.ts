@@ -32,6 +32,73 @@ describe('confirming an address at sign-up', () => {
     expect((await verify(token)).body.unverified).to.eql(undefined);
   });
 
+  describe('coming back to the page the sign-up was for (next)', () => {
+    const CONNECT = '/connect/aB3_dE5-gH7iJ9kL1mN';
+    /** The link a sign-up with this next is emailed, after the address. */
+    const linkFor = async (next: unknown): Promise<string> => {
+      const address = uniqueEmail('next');
+      expect(await api().post('/signup').send({ email: address, password: 'password123', next })).to.have.status(200);
+      const [sent] = await mail.waitFor(address, 1);
+      return /https:\/\/glazecalc\.test\S*\/confirm-email#\S+/.exec(sent!.text)![0];
+    };
+
+    it("puts a page of the app after the link's token, without its language, and the token still works", async () => {
+      const link = await linkFor(CONNECT);
+      expect(link).to.match(
+        /^https:\/\/glazecalc\.test\/confirm-email#token=[\w-]+&next=%2Fconnect%2FaB3_dE5-gH7iJ9kL1mN$/
+      );
+      const token = new URLSearchParams(new URL(link).hash.slice(1)).get('token')!;
+      expect(await confirm(token)).to.have.status(200);
+      expect(await linkFor('/de/recipe')).to.match(/#token=[\w-]+&next=%2Frecipe$/);
+      // Its query and section are left off.
+      expect(await linkFor('/recipe?id=1#saved')).to.match(/&next=%2Frecipe$/);
+    });
+
+    it('leaves out anything that is not a page of the app: another site, the sign-in pages, home, junk', async () => {
+      for (const next of [
+        '//evil.example/x',
+        'https://evil.example/',
+        '/\\evil.example',
+        '/\\/evil.example',
+        'javascript:alert(1)',
+        '/%2F%2Fevil.example',
+        '/connect/aB3_dE5-gH7iJ9kL1mN/../../x',
+        '/recipe\n\nOpen https://evil.example to confirm',
+        '/signin',
+        '/fr/signup',
+        '/',
+        '/home',
+        '/nowhere',
+        'x'.repeat(300),
+        { $ne: null },
+        ['/recipe'],
+        42
+      ]) {
+        const link = await linkFor(next);
+        expect(link, String(next)).to.match(/^https:\/\/glazecalc\.test\/confirm-email#token=[\w-]+$/);
+      }
+    });
+
+    it('puts it in the link a trial kept as an account is emailed too', async () => {
+      const trial = await api().post('/guest');
+      const address = uniqueEmail('kept');
+      const res = await api()
+        .post('/guest/claim')
+        .set(auth(sessionToken(trial)!))
+        .send({ email: address, password: 'password123', next: CONNECT });
+      expect(res).to.have.status(200);
+      const [sent] = await mail.waitFor(address, 1);
+      expect(sent!.text).to.include('#token=').and.include('&next=%2Fconnect%2FaB3_dE5-gH7iJ9kL1mN');
+    });
+
+    it('sends the link asked for again from the account page with no page to come back to', async () => {
+      const { address, token } = await newAccount();
+      expect(await api().post('/email/resend').set(auth(token))).to.have.status(200);
+      const [, again] = await mail.waitFor(address, 2);
+      expect(again!.text).to.match(/confirm-email#token=[\w-]+\n/);
+    });
+  });
+
   it('counts accounts from before as verified', async () => {
     const { token } = await makeUser();
     expect((await verify(token)).body.unverified).to.eql(undefined);

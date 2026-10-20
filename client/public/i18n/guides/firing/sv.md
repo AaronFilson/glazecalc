@@ -81,7 +81,7 @@ Diagrammet anger en självstående kägla 6 som {{2232 °F; 1222 °C}}, men bara
 
 ## Kägeltabellen {#cone-chart}
 
-Siffrorna kommer från Ortons kägeltabell (©2001) för självstående käglor{{en: cones}}. Välj den kolumn som motsvarar hur snabbt ugnen steg under de sista {{180 °F; 100 °C}}. Ortons tumregel är kolumnen {{270 °F/h; 150 °C/h}} för en snabb bränning, kolumnen {{108 °F/h; 60 °C/h}} för en medelsnabb och kolumnen {{27 °F/h; 15 °C/h}} för en långsam. Räkna ut stigningen genom att dela temperaturökningen med antalet timmar den tog: en ugn som stiger {{900 °F; 500 °C}} på 3 timmar har en stigning på ungefär {{300 °F/h; 167 °C/h}}.
+Siffrorna kommer från Ortons kägeltabell (©2001) för självstående käglor{{en: cones}}; käglorna 11 till 14 kommer från de tabeller som Orton ger ut i dag, som anger samma värden där de överlappar, och för kägla 13 och 14 bara i °C (deras °F är här omräknade). Välj den kolumn som motsvarar hur snabbt ugnen steg under de sista {{180 °F; 100 °C}}. Ortons tumregel är kolumnen {{270 °F/h; 150 °C/h}} för en snabb bränning, kolumnen {{108 °F/h; 60 °C/h}} för en medelsnabb och kolumnen {{27 °F/h; 15 °C/h}} för en långsam. Räkna ut stigningen genom att dela temperaturökningen med antalet timmar den tog: en ugn som stiger {{900 °F; 500 °C}} på 3 timmar har en stigning på ungefär {{300 °F/h; 167 °C/h}}.
 
 Table: Ortons självstående käglor: temperaturen där varje kägla böjer sig, efter stigning under de sista {{180 °F; 100 °C}}
 Label: Ortons kägeltabell
@@ -108,8 +108,14 @@ Label: Ortons kägeltabell
 | 8     |          {{2212 °F; 1211 °C}} |         {{2280 °F; 1249 °C}} |          {{2320 °F; 1271 °C}} |
 | 9     |          {{2235 °F; 1224 °C}} |         {{2300 °F; 1260 °C}} |          {{2336 °F; 1280 °C}} |
 | 10    |          {{2284 °F; 1251 °C}} |         {{2345 °F; 1285 °C}} |          {{2381 °F; 1305 °C}} |
+| 11    |          {{2322 °F; 1272 °C}} |         {{2361 °F; 1294 °C}} |          {{2399 °F; 1315 °C}} |
+| 12    |          {{2345 °F; 1285 °C}} |         {{2383 °F; 1306 °C}} |          {{2419 °F; 1326 °C}} |
+| 13    |          {{2390 °F; 1310 °C}} |         {{2428 °F; 1331 °C}} |          {{2458 °F; 1348 °C}} |
+| 14    |          {{2464 °F; 1351 °C}} |         {{2489 °F; 1365 °C}} |          {{2523 °F; 1384 °C}} |
 
 Ett streck betyder att värdet inte har tagits med här; det finns i Ortons fullständiga tabell.
+
+Orton tillverkar käglor upp till 42 för högtemperaturarbete, men publicerar temperaturer bara upp till kägla 14; för varmare käglor är tabellerna ”tillgängliga (på begäran)”. En äldre Ortontabell, så som ugnstillverkare trycker om den, anger {{2608 °F; 1431 °C}} för en stor kägla 15 vid {{270 °F/h; 150 °C/h}}, och vi har inte hittat något publicerat värde för kägla 16 eller varmare. För bränningar varmare än kägla 14: sätt kontrollkäglor och gå efter dem, och kontrollera att den högsta temperatur som tillverkaren anger för ugnen når upp till den värmen.
 
 Stora käglor ligger inom några få grader från de här värdena: en stor kägla 6 vid {{108 °F/h; 60 °C/h}} böjer sig vid {{2228 °F; 1220 °C}}. Små käglor, den sort som används i en Kiln-Sitter, anges bara för {{540 °F/h; 300 °C/h}}, så tabellen anger {{2291 °F; 1255 °C}} för en liten kägla 6. Det är inte den temperatur där Kiln-Sitter-brytaren stänger av ugnen. Kiln-Sitter-käglans uppgift är att stämma med käglan på ugnsplattan, och det är käglan på ugnsplattan som har sista ordet.
 
@@ -298,6 +304,8 @@ Numren går här från SK 022, den kallaste, upp till SK 20. Mellan SK 015 och S
 
 Sätt varje stor kägla i en kägelhållare eller en klump lera, lutad mot sin böjsida. Som med alla käglor: håll höjden och lutningen likadana från bränning till bränning, eftersom en skillnad i någon av dem ändrar hur långt käglan böjer sig. Ställ de tre käglorna i kägelsatsen{{en: cone pack}} (nedan) tillsammans, djupt inne i ugnen nära mitten av ugnsfyllningen, där de får samma värme som godset men ändå syns genom ett titthål; kontrollera innan ugnen stängs att alla tre syns.
 
+Vi har inte hittat några anvisningar från tillverkare eller säljare om hur djupt eller i vilken vinkel SK-käglor ska sättas. Det närmaste är en laboratoriestandard, JIS R 2204, Japans provning av hur mycket värme ett eldfast material tål: den sätter varje SK-kägla med den märkta sidan i 80° mot ett plant underlag och med foten cirka 4 mm ner i det. Det är en provning för eldfasta material, inte en regel för att bränna keramik, och vi har läst den i en avskrift av standarden, inte i själva standarden.
+
 ### Förvarningskägla, målkägla och vaktkägla
 
 Käglor säljs och sätts tre och tre: en förvarningskägla, en målkägla vid målet och en vaktkägla. Ta som målkägla det SK-nummer som receptet eller leran anger, som förvarningskägla den närmast kallare käglan (en rad upp i tabellen) och som vaktkägla den närmast varmare. När förvarningskäglan börjar böja sig är slutet nära; när vaktkäglan böjer sig har bränningen gått för långt.
@@ -366,6 +374,8 @@ Självstående Ortonkäglor säljs i Japan under namnet 立つゼーゲル (”s
 
 - [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (SK-tabellen, kontrollerad 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
 - [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (gällande, bekräftad på nytt 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
+- [JSA: JIS R 2204:1999, 耐火物及び耐火物原料の耐火度試験方法 (gällande, bekräftad på nytt 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+2204:1999)
+- [kikakurui.com: en avskrift av JIS R 2204:1999, där punkt 5 a) anger hur käglorna sätts (läst 2026-10-19)](https://kikakurui.com/r2/R2204-1999-01.html)
 - [Kyoto Municipal Institute of Industrial Technology and Culture: att tänka på vid övergången från Kyotokäglor till Ortonkäglor](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
 
 :::
@@ -607,7 +617,7 @@ För ventilation av rummet, och för kolmonoxidlarm, se [Säker blandning och ve
 ### Medan ugnen bränner
 
 - Titta genom ett titthål bara med svetsglasögon med IR-skydd i skyddsgrad 3; solglasögon räcker inte. Skutt rekommenderar att proppen vrids på plats så att den inte faller ut.
-- Lämna inte ugnen utan uppsikt utöver den väntade bränningstiden; en Kiln-Sitter är inget felsäkert skydd.
+- Stanna i närheten och kontrollera ugnen medan den bränner, framför allt nära den väntade sluttiden; en Kiln-Sitter är inget felsäkert skydd. Bränn bara när en vuxen är hemma och vaken under hela bränningen.
 - Bränn aldrig på eller nära något brännbart, som ett trägolv eller en matta.
 - Håll de avstånd som anges i manualen. Publicerade siffror varierar från 12 tum (30 cm) till 3 fot (91 cm); där manualen är tyst är 18 tum (46 cm) från väggar och 3 fot (91 cm) från allt brännbart det säkraste valet.
 - Håll utrymmet runt Kiln-Sitterns vikt fritt så att den kan falla.

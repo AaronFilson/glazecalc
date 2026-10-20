@@ -364,7 +364,7 @@
     "intro": "Nii, nagu iga tooraine kirje need annab; standardse teegi ohud pärinevad tarnijate ohutuskaartidelt.",
     "line": "<b>{names}:</b> {hazards}",
     "unknown": "{count, plural, one {Ohte pole antud: {list}. Vaadake sellega kaasas olevat ohutuskaarti.} other {Ohte pole antud: {list}. Vaadake nendega kaasas olevaid ohutuskaarte.}}",
-    "safety": "Kuivad glasuuri toorained tekitavad tolmu: ärge laske seda kopsudesse, ka mitte nende toorainete tolmu, mida ei ole ohtlikuks liigitatud: vt <mixing>Ohutu segamine ja ventilatsioon</mixing> ja <home>Ärge mürgitage oma peret</home>, kui läheduses on lapsi või lemmikloomi. Kui tooraine ohutuskaardil on rohkem kirjas, järgige seda."
+    "safety": "Kuivad glasuuri toorained tekitavad tolmu ja seda peate hoidma oma kopsudest eemal, ka nende toorainete tolmu, mida ei ole ohtlikuks liigitatud. Vaadake juhendit <mixing>Ohutu segamine ja ventilatsioon</mixing>. Kui läheduses on lapsi või lemmikloomi, vaadake ka juhendit <home>Ärge mürgitage oma peret</home>. Kui tooraine ohutuskaardil on rohkem kirjas, järgige seda."
   },
   "compare": {
     "heading": "Kahe retsepti võrdlemine",
@@ -533,7 +533,10 @@
     "suppliesShare": "{oxide} ({percent}%)",
     "suppliesLittle": "väike osa glasuurist",
     "changed": "{name} {from} → {to}",
-    "added": "{name} {amount}, uus"
+    "added": "{name} {amount}, uus",
+    "why": {
+      "rawClay": "kaltsineerimata savi kahaneb glasuuri kuivamisel ja suur kogus seda võib panna glasuuri esemel pragunema ja ahjus kokku tõmbuma; ülejäänu võib anda kaltsineeritud kaoliin"
+    }
   },
   "shelf": {
     "empty": "Teil pole varus tooraineid, millest retsepti koostada."
@@ -571,7 +574,8 @@
     "bands": {
       "low": "Madalkuumus, koonused 06–02",
       "mid": "Keskkuumus, koonused 4–6",
-      "high": "Kõrgkuumus, koonused 9–11"
+      "high": "Kõrgkuumus, koonused 9–11",
+      "top": "Väga kõrge kuumus, koonused 12 ja kuumemad"
     },
     "shownFor": "Kui põletust pole valitud, on näidatud arvud mõeldud: {band}. Põletus salvestatakse koos retseptiga.",
     "cone": "Need on komplekti arvud koonusele {cone}.",
@@ -591,6 +595,7 @@
     "notInSet": "Selles komplektis pole vahemikku: {oxides}.",
     "checksOnly": "See komplekt kontrollib ainult: {oxides}.",
     "notApply": "Komplektil {name} pole arve selle põletuse ({band}) jaoks, seega seda ei kontrollita: teise põletuse arvud eksitaksid.",
+    "topNote": "Leitud avaldatud glasuuri piirväärtused lõpevad koonusega 10 ja Glazecalc kasutab neid mitte kaugemale kui koonuseni 11, seega ei kontrollita põletust koonusest 12 alates piirväärtuste järgi. Otsustavad teie proovitükid.",
     "guidance": "Need on juhisväärtused, mitte hinnang „läbis“ või „ei läbinud“: nende piiridest väljas olev glasuur võib olla korras ja nende piires olev võib siiski juuspraguneda, metalle eraldada või ebaõnnestuda. Katsetage seda.",
     "source": "Allikas:",
     "saveFailed": "Piirväärtuste komplekti valikut ei saanud teie kontole salvestada, seega kasutusel on endiselt varasem komplekt.",
@@ -628,7 +633,8 @@
       "ash": "Glazecalc ei saa selle glasuuri keemiat selle põletusega võrrelda: selles on tuhka, mille koostis varieerub liiga palju selle kontrolli jaoks kasutatud avaldatud arvude jaoks.",
       "noTemperature": "Glazecalc ei saa selle glasuuri keemiat võrrelda põletusega ({scale, select, band {{band, select, low {madalkuumus} mid {keskkuumus} other {kõrgkuumus}}} sk {SK {cone}} temperature {{cone} °C} other {koonus {cone}}}): selle koonuse jaoks ei ole mõõdetud temperatuuri.",
       "between": "Glazecalc ei saa selle glasuuri keemiat võrrelda põletusega ({scale, select, band {{band, select, low {madalkuumus} mid {keskkuumus} other {kõrgkuumus}}} sk {SK {cone}} temperature {{cone} °C} other {koonus {cone}}}): selle kontrolli jaoks kasutatud avaldatud arvud on madalkuumuse ning kesk- ja kõrgkuumuse kohta, mitte nende vahele jäävate koonuste (01 kuni 3) kohta.",
-      "belowChart": "Glazecalc ei saa selle glasuuri keemiat võrrelda põletusega ({scale, select, band {{band, select, low {madalkuumus} mid {keskkuumus} other {kõrgkuumus}}} sk {SK {cone}} temperature {{cone} °C} other {koonus {cone}}}): Katzi booriregel on koonuste 06 kuni 10 jaoks ja see põletus on jahedam."
+      "belowChart": "Glazecalc ei saa selle glasuuri keemiat võrrelda põletusega ({scale, select, band {{band, select, low {madalkuumus} mid {keskkuumus} other {kõrgkuumus}}} sk {SK {cone}} temperature {{cone} °C} other {koonus {cone}}}): Katzi booriregel on koonuste 06 kuni 10 jaoks ja see põletus on jahedam.",
+      "aboveChart": "Glazecalc ei saa selle glasuuri keemiat võrrelda põletusega ({scale, select, band {{band, select, top {väga kõrge kuumus} other {kõrgkuumus}}} sk {SK {cone}} temperature {{cone} °C} other {koonus {cone}}}): Katzi booriregel on koonuste 06 kuni 10 jaoks, Hesselberthi ja Roy ränidioksiidi ja alumiiniumoksiidi arvud lõpevad koonusega 10 ja see põletus on kuumem."
     }
   },
   "stull": {
@@ -979,7 +985,7 @@
     "approxTemperature": "≈ {temperature} ({basis}; ligikaudne)",
     "approxCone": "≈ {cone} ({basis}; ligikaudne)",
     "basis": {
-      "orton60": "Ortoni suured koonused kiirusel 60 °C tunnis",
+      "orton150": "Ortoni vanem suurte koonuste tabel kiirusel 150 °C tunnis",
       "kyoto": "mõõdetud kiirusel 100 °C tunnis Kyoto linna instituudis",
       "stated": "nagu antud"
     },

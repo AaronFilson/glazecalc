@@ -270,6 +270,22 @@
         "saved": "Spremljeno: datumi se prikazuju u japanskim erama."
       }
     },
+    "digits": {
+      "legend": "Znamenke",
+      "help": "Znamenke kojima se prikazuju brojevi. Neki jezici imaju svoje, primjerice arapski, bengalski i hindski, a o tome gdje se nalazite ovisi koje su uobičajene. Brojeve možete upisivati i jednima i drugima.",
+      "auto": {
+        "label": "Kako je uobičajeno ondje gdje ste",
+        "saved": "Spremljeno: znamenke se prikazuju kako je uobičajeno ondje gdje ste."
+      },
+      "western": {
+        "label": "Zapadne znamenke, 0–9",
+        "saved": "Spremljeno: brojevi se prikazuju znamenkama 0–9."
+      },
+      "native": {
+        "label": "Vlastite znamenke jezika, ako ih ima",
+        "saved": "Spremljeno: brojevi se prikazuju vlastitim znamenkama jezika, ako ih ima."
+      }
+    },
     "decimalMark": {
       "legend": "Unos količina",
       "either": {

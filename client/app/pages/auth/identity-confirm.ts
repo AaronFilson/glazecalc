@@ -122,6 +122,7 @@ export const passkeyNameCheck =
                 #factor
                 [id]="idPrefix() + '-code'"
                 type="text"
+                dir="ltr"
                 name="code"
                 class="form-control code-input"
                 inputmode="numeric"
@@ -140,6 +141,7 @@ export const passkeyNameCheck =
                 #factor
                 [id]="idPrefix() + '-recovery'"
                 type="text"
+                dir="ltr"
                 name="recoveryCode"
                 class="form-control code-input"
                 autocomplete="off"
@@ -203,8 +205,7 @@ export const passkeyNameCheck =
     fieldset {
       border: 0;
       padding: 0;
-      margin-left: 0;
-      margin-right: 0;
+      margin-inline: 0;
     }
     .other-ways {
       list-style: none;

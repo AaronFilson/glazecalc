@@ -100,6 +100,7 @@
   "limitSet-choices": "Wählen Sie hesselberth-roy oder glazecalc.",
   "currency-choices": "Wählen Sie eine der Währungen aus der Liste oder überlassen Sie es Ihrer Region.",
   "calendar-choices": "Datumsangaben können im gregorianischen Kalender (gregory), in der thailändischen buddhistischen Ära (buddhist) oder in japanischen Ären (japanese) angezeigt werden.",
+  "digits-choices": "Ziffern können wie an Ihrem Standort üblich (auto), als 0–9 (western) oder in den eigenen Ziffern der Sprache (native) angezeigt werden.",
   "shelf-invalid": "Der Vorrat ist eine Liste mit bis zu {most} Rohstoffen.",
   "shelf-full": "Der Vorrat kann höchstens {most} Rohstoffe enthalten. Es wurde nichts geändert.",
   "shelf-material-unknown": "Dieser Rohstoff ist weder in Ihren Rohstoffen noch in der Bibliothek von Glazecalc.",

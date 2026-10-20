@@ -36,7 +36,8 @@ const CATEGORIES = [
   'suspender',
   'other'
 ];
-const REGIONS = ['US', 'UK', 'EU', 'CA', 'AU'];
+// The library's regions, and countries whose own materials are sold mostly there (Canada's, Japan's).
+const REGIONS = ['US', 'UK', 'EU', 'CA', 'AU', 'JP'];
 const STATUSES = ['current', 'scarce', 'discontinued', 'historical'];
 const SOURCE_KINDS = ['manufacturer', 'supplier', 'sds', 'digitalfire', 'glazy', 'book', 'theoretical'];
 // The order of a record's fields, as in the data files.
