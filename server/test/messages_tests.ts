@@ -81,6 +81,53 @@ describe('account emails', () => {
     expect(changed!.text).to.include('/pt-PT/forgot');
   });
 
+  it('should write a Romanian count as Romanian does: 1 zi, 2 to 19 zile, and de from 20 on', async () => {
+    const { counted } = await import('../lib/account_mail.ts');
+    const days = [1, 2, 7, 19, 20, 30, 90, 100, 101, 119, 120].map((n) => counted('ro', 'days', n));
+    expect(days).to.eql([
+      '1 zi',
+      '2 zile',
+      '7 zile',
+      '19 zile',
+      '20 de zile',
+      '30 de zile',
+      '90 de zile',
+      '100 de zile',
+      '101 zile',
+      '119 zile',
+      '120 de zile'
+    ]);
+    expect([1, 2, 24].map((n) => counted('ro', 'hours', n))).to.eql(['1 oră', '2 ore', '24 de ore']);
+    // Every other language writes its own unit after the bare number.
+    expect(counted('en', 'days', 30)).to.equal(30);
+    expect(counted('de', 'hours', 24)).to.equal(24);
+  });
+
+  it('should fill the Romanian emails with whole counts, and the English with numbers', async () => {
+    const accountMail = await import('../lib/account_mail.ts');
+    const mail = await import('./support/mail.ts');
+    const address = 'romana-' + Date.now() + '@test.com';
+    await accountMail.sendDeleted(address, 'ro');
+    await accountMail.sendVerify(address, 'abc123', 24, 'ro');
+    await accountMail.sendConfirmChange(address, 'abc123', 2, 'ro');
+    const connection = { name: 'App', loopback: false, selfDescribed: false, createdAt: new Date() };
+    await accountMail.sendConnectionMade(address, { ...connection, writeDays: 90 }, 'ro');
+    await accountMail.sendConnectionMade(address, { ...connection, writeDays: 7 }, 'ro');
+    const [deleted, verify, change, ninety, seven] = await mail.waitFor(address, 5);
+    expect(deleted!.text).to.include('în cel mult 30 de zile.');
+    expect(verify!.text).to.include('în următoarele 24 de ore:');
+    expect(change!.text).to.include('în următoarele 2 ore:');
+    expect(ninety!.text).to.include('timp de 90 de zile,');
+    expect(seven!.text).to.include('timp de 7 zile,');
+
+    const english = 'english-' + Date.now() + '@test.com';
+    await accountMail.sendDeleted(english);
+    await accountMail.sendVerify(english, 'abc123', 24, 'xx');
+    const [gone, link] = await mail.waitFor(english, 2);
+    expect(gone!.text).to.include('within 30 days.');
+    expect(link!.text).to.include('within 24 hours:');
+  });
+
   it('should keep emails in the order they were sent, even within a millisecond', async () => {
     const mailer = await import('../lib/mailer.ts');
     const mail = await import('./support/mail.ts');

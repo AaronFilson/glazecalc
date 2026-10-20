@@ -1045,6 +1045,31 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 - **Sign-in keeps the page you were going to.** "Create a free account" and "Sign in" on the sign-in and
   sign-up pages carry `?next=` (this site's pages only) so an AI app's consent page is not lost; and a
   session that has gone stale sends you to sign-in with the page you were on, which you come back to.
+- **A sign-up keeps that page through the menu and the confirmation email.** The menu's "Sign in"
+  and "Create a free account" links carry the sign-in or sign-up page's `?next=` as well. A sign-up
+  sends it to the server, which puts it in the confirmation email's link after the token
+  (`/confirm-email#token=…&next=…`), without its language, and only when it is one of the app's
+  pages (checked as for a provider sign-in, `nextPage` in server/lib/pages.ts); the page checks it
+  again (`sameSitePath`). Once the address is confirmed, the page goes there: at once when signed
+  in, through the sign-in page otherwise. So an AI app's consent page, which needs a confirmed
+  email, is not lost on the way. A trial kept as an account, and a provider sign-up whose email
+  still needs confirming, do the same; the link sent again from the account page has none.
+- **Romanian emails write their counts as Romanian does:** "30 de zile" and "24 de ore", but "7
+  zile" and "1 zi". The mailer gives those emails the number and its noun together, chosen by
+  Romanian's plural forms; the texts had "{days} zile" and "{hours} ore", wrong from 20 on, and
+  "{days} de zile", wrong below 20.
+- **English made plain where round 5's translators found it unclear** (each is translated again in
+  the next wave): the privacy notice says access tokens and connections are kept until they expire
+  and then for 30 days more, not "up to" 30; Taiwan's emergency note says plainly what 112 does
+  when a mobile phone has no signal; the firing guide's kiln-watch line says to stay nearby and
+  check the kiln while it fires, and to fire only when an adult will be home and awake through the
+  whole firing, as the home-safety guide does; the recipe page's dust line says you must keep the
+  dust out of your lungs; the safe-mixing guide quotes the University of Utah on lead in the kiln
+  as its page now reads ("vaporizes at a relatively low temperature"; fired to stoneware
+  temperatures, "the lead will vaporize"), instead of "lower temperatures" lower than nothing
+  named; and Vietnam's silica note says how a measurement is compared with its limit.
+- **Indonesian says "catatan" for a record throughout:** the older server messages, the privacy
+  notice's Trash line and the Empty Trash question still said "item".
 
 - **The OAuth authorization server, after its security review** (docs/adr/0024, "Review fixes"):
   addresses under `/oauth/` answer only as written (`/oauth/REGISTER` or `/oauth/register/` no

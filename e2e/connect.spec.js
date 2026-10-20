@@ -1,6 +1,6 @@
 const crypto = require('crypto');
 const { test, expect } = require('@playwright/test');
-const { confirmedAccount, startTrial } = require('./helpers');
+const { confirmedAccount, startTrial, uniqueEmail } = require('./helpers');
 const { nextEmail, sentTo } = require('./mail');
 
 // An AI app connecting with OAuth (docs/adr/0024-authorization-server.md), the
@@ -198,4 +198,29 @@ test('a signed-out visitor who opens a consent page keeps it through "Create an 
   // And back again, still carrying it.
   await page.locator('#main').getByRole('link', { name: 'Sign in', exact: true }).click();
   await expect(page).toHaveURL(/\/signin\?next=%2Fconnect%2FaB3_dE5-gH7iJ9kL1mN$/);
+});
+
+test('a visitor who makes an account on the way to a consent page comes back to it from the menu and the confirmation email', async ({
+  page
+}) => {
+  const consent = /\/connect\/aB3_dE5-gH7iJ9kL1mN$/;
+  const email = uniqueEmail('connect-signup');
+  await page.goto('/connect/aB3_dE5-gH7iJ9kL1mN');
+  await expect(page).toHaveURL(/\/signin\?next=%2Fconnect%2FaB3_dE5-gH7iJ9kL1mN$/);
+  // The menu's link keeps the page too.
+  await page.locator('.nav-account').getByRole('link', { name: 'Create a free account' }).click();
+  await expect(page).toHaveURL(/\/signup\?next=%2Fconnect%2FaB3_dE5-gH7iJ9kL1mN$/);
+  await page.locator('#email').fill(email);
+  await page.locator('#password').fill('password123');
+  await page.locator('#confirmation').fill('password123');
+  await page.getByRole('button', { name: 'Create account' }).click();
+  await expect(page).toHaveURL(consent);
+
+  // The link in the email carries the page after its token, and goes there once the address is confirmed.
+  const link = /(https?:\/\/\S+\/confirm-email#\S+)/.exec((await nextEmail(email)).text)[1];
+  expect(link).toMatch(/#token=[\w-]+&next=%2Fconnect%2FaB3_dE5-gH7iJ9kL1mN$/);
+  await page.goto(link);
+  await expect(page).toHaveURL(/\/confirm-email$/);
+  await page.getByRole('button', { name: 'Confirm' }).click();
+  await expect(page).toHaveURL(consent);
 });

@@ -182,4 +182,68 @@ describe('ConfirmEmailPage', () => {
     expect(replaceState).not.toHaveBeenCalled();
     expect(text(fixture, '.help-text')).toContain('this one is incomplete');
   });
+
+  describe('going on to the page the sign-up was for (&next=)', () => {
+    const CONNECT = '/connect/aB3_dE5-gH7iJ9kL1mN';
+    const open = async (next: string, session: boolean) => {
+      localStorage.clear();
+      if (session) localStorage.setItem('session', 'account');
+      const replaceState = vi.fn();
+      TestBed.configureTestingModule({
+        providers: [
+          ...testProviders(),
+          {
+            provide: ActivatedRoute,
+            useValue: { snapshot: { fragment: 'token=tok123&next=' + encodeURIComponent(next) } }
+          },
+          { provide: Location, useValue: { replaceState } }
+        ]
+      });
+      const fixture = TestBed.createComponent(ConfirmEmailPage);
+      await fixture.whenStable();
+      const navigate = vi.spyOn(TestBed.inject(Router), 'navigateByUrl').mockResolvedValue(true);
+      const page = fixture.componentInstance as unknown as Page;
+      const confirming = page['confirm']();
+      const req = httpMock().expectOne(API + '/email/confirm');
+      expect(req.request.body).toEqual({ token: 'tok123' });
+      req.flush({ code: 'email-verified', msg: 'Your email is confirmed.' });
+      if (session) {
+        await settle();
+        answer('/verify', { msg: 'User verified', id: 'u1', email: 'a@b.com' });
+      }
+      await confirming;
+      await settle(fixture);
+      return { fixture, navigate, replaceState };
+    };
+    const signInLink = (fixture: { nativeElement: HTMLElement }) =>
+      fixture.nativeElement.querySelector('.done-text + p a')?.getAttribute('href');
+
+    it('goes there once confirmed, signed in, with the token and the page out of the address bar', async () => {
+      const { navigate, replaceState } = await open(CONNECT, true);
+      expect(replaceState).toHaveBeenCalledWith('/confirm-email');
+      expect(navigate).toHaveBeenCalledWith(CONNECT);
+    });
+
+    it('goes there through the sign-in page when not signed in on this browser', async () => {
+      const { fixture, navigate } = await open(CONNECT, false);
+      expect(navigate).not.toHaveBeenCalled();
+      expect(signInLink(fixture)).toBe('/signin?next=' + encodeURIComponent(CONNECT));
+    });
+
+    for (const bad of [
+      '//evil.example/x',
+      '/\\evil.example',
+      'https://evil.example/',
+      'javascript:alert(1)',
+      '/signin'
+    ]) {
+      it(`goes nowhere else for ${bad}`, async () => {
+        const signedIn = await open(bad, true);
+        expect(signedIn.navigate).not.toHaveBeenCalled();
+        TestBed.resetTestingModule();
+        const signedOut = await open(bad, false);
+        expect(signInLink(signedOut.fixture)).toBe('/signin');
+      });
+    }
+  });
 });

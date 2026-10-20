@@ -577,7 +577,8 @@ describe('regions before China', () => {
     const hash = crypto.createHash('sha256').update(JSON.stringify(data)).digest('hex');
     // Changed once on purpose: Taiwan's 119 note now says when to dial 112 (2026-10-16). Again on
     // 2026-10-19: Japan's and Türkiye's, as above, and Taiwan's silica limit until 2027 (before).
-    expect(hash).to.equal('4b5dbc4f7be966b81f3096ad52e5e833e1751c2dbebf8830dda619091fada4f3');
+    // Again on 2026-10-20: Taiwan's 112 note says plainly what 112 does when a mobile has no signal.
+    expect(hash).to.equal('f0949b6b3e0b10dec5056af83dbb7d1857ea0953899336072d9b9aca0c5279c8');
   });
 });
 
@@ -603,8 +604,8 @@ describe('regions before Vietnam', () => {
     // Changed once on purpose: Indonesia's note says 118 reaches an ambulance only in some cities (2026-10-17).
     // Again on 2026-10-19, the verification pass: as above, and China's poison line, masks and food rules,
     // Hong Kong's food rules (none) and shop, Indonesia's in-force date, Thailand's and the Philippines'
-    // shops, and the Philippines' silica limit.
-    expect(hash).to.equal('121b8af460e9be3dbbd581986a74f6290a1918aa67cd312cb2240947dee5b649');
+    // shops, and the Philippines' silica limit. Again on 2026-10-20: Taiwan's 112 note.
+    expect(hash).to.equal('890ce072179d317b8c8d15cbff30f12ffe2e3238b7faa5818259f6a5cf04425e');
   });
 });
 
@@ -629,7 +630,8 @@ describe('regions after the verification pass of 2026-10-19', () => {
     ]);
     data.push(['EU', food.FOOD['EU'], workplace.EU_SILICA]);
     const hash = crypto.createHash('sha256').update(JSON.stringify(data)).digest('hex');
-    expect(hash).to.equal('fa1c82218e6cd9375597e108530370fdab7d06f5919f5f952f8d571ea25336a9');
+    // Changed on purpose on 2026-10-20: Taiwan's 112 note, and Vietnam's silica note reworded.
+    expect(hash).to.equal('51953f47255b994f4303527c34134ce8378999ab5de09d975e15e064f4693185');
   });
 });
 
