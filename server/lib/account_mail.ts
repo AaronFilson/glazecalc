@@ -806,7 +806,7 @@ export const DELETED: Record<string, Email> = {
     text:
       'Contul Glazecalc {account} a fost șters, împreună cu tot ce era salvat în el: rețete, materii prime, arderi, notițe și setări. Acțiunea nu poate fi anulată.\n' +
       '\n' +
-      'Copiile din copiile de siguranță ale site-ului sunt șterse pe măsură ce acestea expiră, în cel mult {days} zile.\n' +
+      'Copiile din copiile de siguranță ale site-ului sunt șterse pe măsură ce acestea expiră, în cel mult {days}.\n' +
       '\n' +
       'Puteți crea un cont nou oricând.\n' +
       '\n' +
@@ -980,6 +980,32 @@ const inLanguage = (emails: Record<string, Email>, language?: string): Email =>
 const fill = (text: string, values: Record<string, string | number>): string =>
   text.replace(/\{(\w+)\}/g, (_, name: string) => String(values[name]));
 
+/** The language an email goes out in: the account's, where the email has it, or English. */
+const writtenIn = (emails: Record<string, unknown>, language?: string): string =>
+  language && emails[language] ? language : 'en';
+
+/**
+ * A count with its unit, for the languages whose emails take the two as one
+ * value, as the number decides the words around it: Romanian has 1 zi, 2 to
+ * 19 zile, and puts "de" before the noun from 20 on (20 de zile, 101 zile,
+ * 120 de zile), as its plural forms one, few and other say. Those emails
+ * write {days} where the others write "{days} days".
+ */
+const COUNTED: Record<string, Record<'days' | 'hours', Partial<Record<Intl.LDMLPluralRule, string>>>> = {
+  ro: {
+    days: { one: '# zi', few: '# zile', other: '# de zile' },
+    hours: { one: '# oră', few: '# ore', other: '# de ore' }
+  }
+};
+
+/** A number of days or hours for an email in a language: the whole phrase where COUNTED has it, else the number. */
+export const counted = (language: string, unit: 'days' | 'hours', count: number): string | number => {
+  const forms = COUNTED[language]?.[unit];
+  if (!forms) return count;
+  const form = forms[new Intl.PluralRules(language).select(count)] ?? forms.other!;
+  return form.replace('#', String(count));
+};
+
 /** A page of the app in the account's language: /de/forgot for German. */
 const pageIn = (language: string | undefined, page: string): string =>
   mailer.appUrl() + languages.languagePrefix(language ?? 'en') + page;
@@ -1014,7 +1040,11 @@ export const sendDeleted = (to: string, language?: string): Promise<void> => {
   return mailer.send({
     to,
     subject: email.subject,
-    text: fill(email.text, { account: to, days: BACKUP_DAYS, app: mailer.appUrl() })
+    text: fill(email.text, {
+      account: to,
+      days: counted(writtenIn(DELETED, language), 'days', BACKUP_DAYS),
+      app: mailer.appUrl()
+    })
   });
 };
 
@@ -1261,7 +1291,7 @@ export const VERIFY: Record<string, Email> = {
     text:
       'Cineva (sperăm că dumneavoastră) a creat un cont Glazecalc cu adresa {account}.\n' +
       '\n' +
-      'Pentru a confirma că această adresă este a dumneavoastră, deschideți acest link în următoarele {hours} ore:\n' +
+      'Pentru a confirma că această adresă este a dumneavoastră, deschideți acest link în următoarele {hours}:\n' +
       '\n' +
       '{link}\n' +
       '\n' +
@@ -1684,7 +1714,7 @@ export const CONFIRM_CHANGE: Record<string, Email> = {
     text:
       'Cineva (sperăm că dumneavoastră) a cerut să folosească {account} ca adresă de e-mail a contului său Glazecalc.\n' +
       '\n' +
-      'Pentru a face schimbarea, deschideți acest link în următoarele {hours} ore:\n' +
+      'Pentru a face schimbarea, deschideți acest link în următoarele {hours}:\n' +
       '\n' +
       '{link}\n' +
       '\n' +
@@ -2186,7 +2216,7 @@ export const sendVerify = (to: string, token: string, hours: number, language?: 
     text: fill(email.text, {
       account: to,
       link: pageIn(language, '/confirm-email#token=' + token),
-      hours,
+      hours: counted(writtenIn(VERIFY, language), 'hours', hours),
       app: mailer.appUrl()
     })
   });
@@ -2200,7 +2230,7 @@ export const sendConfirmChange = (to: string, token: string, hours: number, lang
     text: fill(email.text, {
       account: to,
       link: pageIn(language, '/confirm-email#token=' + token),
-      hours,
+      hours: counted(writtenIn(CONFIRM_CHANGE, language), 'hours', hours),
       app: mailer.appUrl()
     })
   });
@@ -7224,7 +7254,7 @@ export const CONNECTION_MADE: Record<string, ConnectionEmail> = {
       'Poate citi rețetele, caietul, materiile prime, stocul și setările salvate în cont. Nu poate modifica nimic.\n\n',
     write:
       '\n' +
-      'Poate citi rețetele, caietul, materiile prime, stocul și setările salvate în cont și, timp de {days} de zile, le poate și modifica: poate crea și modifica înregistrări și le poate muta în coșul de reciclare. Fiecare modificare păstrează o versiune a înregistrării așa cum era, deci o puteți anula pe site.\n\n',
+      'Poate citi rețetele, caietul, materiile prime, stocul și setările salvate în cont și, timp de {days}, le poate și modifica: poate crea și modifica înregistrări și le poate muta în coșul de reciclare. Fiecare modificare păstrează o versiune a înregistrării așa cum era, deci o puteți anula pe site.\n\n',
     closing:
       'Dacă ați fost dumneavoastră, nu mai aveți nimic de făcut. Puteți vedea ce face și o puteți revoca la {page}\n\n' +
       'Dacă nu, revocați-o acolo și resetați imediat parola la {forgot}\n\n' +
@@ -7409,14 +7439,14 @@ const mailTime = (date: Date): string => date.toISOString().slice(11, 16);
 
 export const sendConnectionMade = (to: string, connection: ConnectionMade, language?: string): Promise<void> => {
   const email = (language && CONNECTION_MADE[language]) || CONNECTION_MADE['en']!;
-  // The date in the email's own language: English where the email falls back to it.
-  const dateLanguage = language && CONNECTION_MADE[language] ? language : 'en';
+  // The date and the days in the email's own language: English where the email falls back to it.
+  const dateLanguage = writtenIn(CONNECTION_MADE, language);
   const values = {
     account: to,
     name: tokenNameForMail(connection.name),
     date: mailDate(connection.createdAt, dateLanguage),
     time: mailTime(connection.createdAt),
-    days: connection.writeDays ?? 0,
+    days: counted(dateLanguage, 'days', connection.writeDays ?? 0),
     page: pageIn(language, '/account/apps'),
     forgot: pageIn(language, '/forgot'),
     app: mailer.appUrl()
