@@ -136,6 +136,24 @@ describe('Shared recipe tools', () => {
     const lines = [{ material: KAOLIN, amount: '10' }];
     const checks = recipe.pastLimits({ lines, unity, old: unity, celsius: 1222 }).map((c) => c.check);
     expect(checks).not.to.include('alkali');
+    // Nor as much raw clay as it had (to rounding, or a little more); more than that is news.
+    const clay = (amount: number, oldClay: number) =>
+      recipe
+        .pastLimits({
+          lines: [
+            { material: KAOLIN, amount: String(amount) },
+            { material: SILICA, amount: String(100 - amount) }
+          ],
+          unity,
+          old: unity,
+          oldClay,
+          celsius: 1222
+        })
+        .map((c) => c.check);
+    expect(clay(20.1, 20)).not.to.include('clay-high');
+    expect(clay(30, 28)).not.to.include('clay-high');
+    expect(clay(27, 20)).to.include('clay-high');
+    expect(clay(21, 15)).to.include('clay-high');
   });
 
   it('keeps the figures the checks warn at as data', () => {

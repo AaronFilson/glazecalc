@@ -29,5 +29,9 @@ export function sizeNotes(
   lines: Array<{ material: MaterialRecord; amount: string | number | undefined }>,
   low?: boolean
 ): Caution[];
+/** Whether a material is raw (not calcined) clay. */
+export function isRawClay(material: { category?: string; name: string }): boolean;
+/** Whether raw clay at this percent of the batch is past the caution, and news against the old recipe's. */
+export function rawClayHigh(clay: number, clayWas?: number): boolean;
 /** Raw (not calcined) clay as a percent of the batch. */
 export function rawClayPercent(lines: Array<{ category?: string; name: string; amount?: string | number }>): number;

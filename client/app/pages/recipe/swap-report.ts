@@ -16,7 +16,7 @@ export interface Run {
   tries: TryMaterial[];
   /** Names to leave out. */
   avoid: string[];
-  /** Replace lead: names whose suggested cap the potter lifted. */
+  /** Names whose suggested cap the potter lifted: Replace lead's, and raw clay held to 20%. */
   uncapped: string[];
   cone: string;
   mode: LeadMode;

@@ -533,7 +533,10 @@
     "suppliesShare": "{percent}% of the {oxide}",
     "suppliesLittle": "a little of the glaze",
     "changed": "{name} {from} → {to}",
-    "added": "{name} {amount}, new"
+    "added": "{name} {amount}, new",
+    "why": {
+      "rawClay": "raw clay shrinks as the glaze dries, and much of it can crack on the pot and crawl in the kiln; calcined kaolin can make up the rest"
+    }
   },
   "shelf": {
     "empty": "There are no materials on hand to match with."

@@ -74,6 +74,7 @@ const KEYS: Record<RecipeMessageCode, string> = {
   'checks.smallAmount': marker('recipe.checks.smallAmount'),
   'pool.changed': marker('recipe.pool.changed'),
   'pool.added': marker('recipe.pool.added'),
+  'pool.why.rawClay': marker('recipe.pool.why.rawClay'),
   'lead.why.rawCalcium': marker('recipe.lead.why.rawCalcium'),
   'lead.why.lowExpansion': marker('recipe.lead.why.lowExpansion'),
   'lead.why.boronFrit': marker('recipe.lead.why.boronFrit'),

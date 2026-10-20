@@ -49,10 +49,17 @@ export function planSuggestion<M extends MaterialRecord>(
   options?: { allowLead?: boolean }
 ): Plan;
 
+/** The suggested recipe; raw clay is held as Match with what I have holds it, but for clays named in `uncapped`. */
 export function suggestAmounts<M extends MaterialRecord>(
   lines: M[],
   find: (name: string) => M | undefined,
   bringIn: M[],
   region: string,
-  options?: { allowLead?: boolean; tries?: TryMaterial<M>[]; avoid?: string[]; additives?: AdditiveRecord[] }
+  options?: {
+    allowLead?: boolean;
+    tries?: TryMaterial<M>[];
+    avoid?: string[];
+    additives?: AdditiveRecord[];
+    uncapped?: string[];
+  }
 ): Suggestion<M>;
