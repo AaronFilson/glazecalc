@@ -6,6 +6,7 @@ import { filter, firstValueFrom } from 'rxjs';
 import type { MockInstance } from 'vitest';
 import { App } from '../app';
 import { AuthService } from '../core/auth.service';
+import { LIVE_LANGUAGES } from '../../../lib/regions/languages';
 import { OFFERED_LANGUAGES } from '../i18n/language';
 import {
   answer,
@@ -107,9 +108,36 @@ describe('static pages', () => {
     expect(nav).not.toBeNull();
     expect(fixture.nativeElement.querySelector('#about-languages-heading')).not.toBeNull();
     const links = [...nav.querySelectorAll('li a')] as HTMLAnchorElement[];
-    expect(links.map((a) => a.getAttribute('href'))).toEqual(['/about', '/de/about', '/fr/about']);
-    expect(links.map((a) => a.getAttribute('lang'))).toEqual(['en', 'de', 'fr']);
-    expect(links.map((a) => a.textContent)).toEqual(['English', 'Deutsch', 'Français']);
+    // English first, then Europe's by English name (French before German).
+    expect(links.map((a) => a.getAttribute('href'))).toEqual(['/about', '/fr/about', '/de/about']);
+    expect(links.map((a) => a.getAttribute('lang'))).toEqual(['en', 'fr', 'de']);
+    expect(links.map((a) => a.getAttribute('hreflang'))).toEqual(['en', 'fr', 'de']);
+    expect(links.map((a) => a.textContent)).toEqual(['English', 'Français', 'Deutsch']);
+    expect(links[0]!.getAttribute('aria-current')).toBe('page');
+    expect(links[1]!.hasAttribute('aria-current')).toBe(false);
+  });
+
+  it('keeps the whole list on the about page at 45 languages and more, grouped by the part of the world, each group named', async () => {
+    // The live languages and the ones planned: Arabic, Hindi, Urdu, Bengali and the Indic wave.
+    const many = [...LIVE_LANGUAGES, 'ar', 'hi', 'ur', 'bn', 'ta', 'te', 'mr', 'gu', 'pa', 'ne', 'si', 'kn', 'ml'];
+    expect(many.length).toBeGreaterThan(44);
+    TestBed.overrideProvider(OFFERED_LANGUAGES, { useValue: many });
+    const { fixture } = await create(AboutPage);
+    const nav = fixture.nativeElement.querySelector('nav[aria-labelledby="about-languages-heading"]') as HTMLElement;
+    expect(nav.querySelectorAll('li a')).toHaveLength(many.length);
+    const names = [...nav.querySelectorAll('.language-group-name')].map((p) => p.textContent);
+    expect(names).toEqual(['East Asia', 'Europe', 'Middle East and North Africa', 'South Asia', 'Southeast Asia']);
+    // Each list is named by its heading, for a screen reader; English's has none.
+    const lists = [...nav.querySelectorAll('ul')];
+    expect(
+      lists.map(
+        (ul) =>
+          ul.getAttribute('aria-labelledby') &&
+          document.getElementById(ul.getAttribute('aria-labelledby')!)?.textContent
+      )
+    ).toEqual([null, 'East Asia', 'Europe', 'Middle East and North Africa', 'South Asia', 'Southeast Asia']);
+    // No heading level is added to the page's outline (a heading after the h2 would be one more to skip).
+    expect(nav.querySelectorAll('h1, h2, h3, h4, h5, h6')).toHaveLength(0);
   });
 
   it('leaves the language list off the about page while only English is offered', async () => {
