@@ -100,6 +100,7 @@
   "limitSet-choices": "Chọn hesselberth-roy hoặc glazecalc.",
   "currency-choices": "Chọn một trong các loại tiền tệ trong danh sách, hoặc để theo khu vực của bạn.",
   "calendar-choices": "Ngày có thể được hiển thị theo dương lịch Gregory (gregory), Phật lịch Thái (buddhist) hoặc niên hiệu Nhật Bản (japanese).",
+  "digits-choices": "Chữ số có thể được hiển thị theo cách thông dụng nơi bạn ở (auto), dưới dạng 0–9 (western) hoặc bằng chữ số riêng của ngôn ngữ (native).",
   "shelf-invalid": "Danh sách nguyên liệu tôi có là danh sách tối đa {most} nguyên liệu.",
   "shelf-full": "Danh sách nguyên liệu tôi có chứa được tối đa {most} nguyên liệu. Không có gì được thay đổi.",
   "shelf-material-unknown": "Nguyên liệu đó không có trong các nguyên liệu của bạn hay thư viện Glazecalc.",

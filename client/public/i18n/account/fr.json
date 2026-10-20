@@ -270,6 +270,22 @@
         "saved": "Enregistré : les dates sont affichées selon les ères japonaises."
       }
     },
+    "digits": {
+      "legend": "Chiffres",
+      "help": "Les chiffres avec lesquels les nombres s’affichent. Certaines langues ont les leurs, comme l’arabe, le bengali et le hindi, et l’endroit où vous êtes détermine lesquels sont habituels. Vous pouvez saisir les nombres avec les uns ou les autres.",
+      "auto": {
+        "label": "Selon l’usage là où vous êtes",
+        "saved": "Enregistré : chiffres selon l’usage là où vous êtes."
+      },
+      "western": {
+        "label": "Chiffres occidentaux, 0–9",
+        "saved": "Enregistré : les nombres s’affichent avec les chiffres 0–9."
+      },
+      "native": {
+        "label": "Les chiffres propres à la langue, quand elle en a",
+        "saved": "Enregistré : les nombres s’affichent avec les chiffres propres à la langue, quand elle en a."
+      }
+    },
     "decimalMark": {
       "legend": "Saisie des quantités",
       "either": {

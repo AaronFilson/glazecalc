@@ -52,6 +52,7 @@
     "emergency": "Hitan slučaj: gubitak svijesti, prestanak disanja, napadaj grčeva",
     "poisonAdvice": "{who, select, children {Savjeti pri otrovanju: {name} (samo za djecu)} other {Savjeti pri otrovanju: {name}}}",
     "or": "ili {number}",
+    "orCall": "ili <link>{number}</link>",
     "online": "Na internetu: <link>{name}</link>.",
     "poisonAdviceNone": "Savjeti pri otrovanju",
     "noLine": "Za ovu zemlju nismo mogli potvrditi javnu telefonsku liniju za otrovanja. Nazovite svog liječnika ili, ako je hitno, broj za hitne slučajeve.",
@@ -111,6 +112,10 @@
     "bandFromTo": "Prašina s {from} % do {to} % slobodnog silicijeva dioksida (SiO₂)",
     "bandOverTo": "Prašina s više od {from} % i do {to} % slobodnog silicijeva dioksida",
     "bandAbove": "Prašina s više od {from} % slobodnog silicijeva dioksida",
+    "untilDate": "Do {date}",
+    "fromDate": "Od {date}",
+    "beforeFormula": "Granična vrijednost za respirabilnu prašinu, gdje je Q udio kristalnog silicijeva dioksida u njoj, u %",
+    "beforeAll": "Za prašinu koja se sastoji samo od kristalnog silicijeva dioksida",
     "recommended": "Preporučuje {abbr}",
     "value": "{value} mg/m³",
     "kind": {
@@ -121,6 +126,7 @@
     },
     "setBy": "Utvrđeno propisom: <link>{law}</link>.",
     "from": "Primjenjuje se od {date}.",
+    "beforeSetBy": "Do tada je granična vrijednost utvrđena propisom: <link>{law}</link>.",
     "lowerThanEu": "Niža od obvezujuće granične vrijednosti EU-a od {value} mg/m³.",
     "sameAsEu": "Jednaka obvezujućoj graničnoj vrijednosti EU-a.",
     "recommendedBy": "{abbr} ({by}) preporučuje ovu vrijednost u dokumentu <link>{title}</link>. To nije zakon.",
@@ -183,7 +189,13 @@
       "vnMedium": "Duboki proizvodi za držanje hrane, od 1100 mL do manje od 3000 mL",
       "vnStorage": "Duboki proizvodi za držanje hrane, 3000 mL ili više",
       "vnCooking": "Duboki proizvodi za kuhanje",
-      "vnCups": "Šalice i male zdjele"
+      "vnCups": "Šalice i male zdjele",
+      "cnFlat": "Plitko posuđe, dubine 25 mm ili manje",
+      "cnSmall": "Malo duboko posuđe, manje od 1,1 L, osim šalica",
+      "cnLarge": "Veliko duboko posuđe, od 1,1 L do manje od 3 L",
+      "cnStorage": "Posude za čuvanje, 3 L ili više",
+      "cnCups": "Šalice, za vodu ili pića",
+      "cnCooking": "Posuđe za kuhanje, za zagrijavanje hrane"
     },
     "judged": {
       "average": "prosjek 6 komada",
@@ -197,6 +209,8 @@
     "atMost": "Proizvod zadovoljava ako ne otpušta više od granične vrijednosti: propis kaže „najviše”.",
     "ppm": "ppm ovdje znači miligrame po litri ispitne otopine (mg/L).",
     "unknown": "Propise u ovoj zemlji ({region}) još nismo potvrdili.",
+    "none": "{region}: nema zakona koji utvrđuje granične vrijednosti za olovo i kadmij koje pečeni predmet smije otpustiti (provjereno {date}).",
+    "noneSource": "Izvor: <link>{law}</link>.",
     "choosePrompt": "Odaberite svoju zemlju da biste vidjeli njezine propise."
   },
   "equivalents": {

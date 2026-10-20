@@ -270,6 +270,22 @@
         "saved": "Gemt: datoer vises i japanske æraer."
       }
     },
+    "digits": {
+      "legend": "Cifre",
+      "help": "De cifre, tal vises med. Nogle sprog har deres egne, fx arabisk, bengali og hindi, og hvor du er, afgør, hvilke der er de sædvanlige. Tal kan indtastes med begge slags.",
+      "auto": {
+        "label": "Som det er sædvanligt, hvor du er",
+        "saved": "Gemt: cifre som sædvanligt, hvor du er."
+      },
+      "western": {
+        "label": "Vestlige cifre, 0–9",
+        "saved": "Gemt: tal vises med cifrene 0–9."
+      },
+      "native": {
+        "label": "Sprogets egne cifre, hvor det har dem",
+        "saved": "Gemt: tal vises med sprogets egne cifre, hvor det har dem."
+      }
+    },
     "decimalMark": {
       "legend": "Indtastning af mængder",
       "either": {

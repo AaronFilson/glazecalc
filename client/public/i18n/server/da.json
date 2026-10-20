@@ -100,6 +100,7 @@
   "limitSet-choices": "Vælg hesselberth-roy eller glazecalc.",
   "currency-choices": "Vælg en af valutaerne på listen, eller lad det være op til regionen.",
   "calendar-choices": "Datoer kan vises i den gregorianske kalender (gregory), den thailandske buddhistiske æra (buddhist) eller japanske æraer (japanese).",
+  "digits-choices": "Cifre kan vises som sædvanligt, hvor du er (auto), som 0–9 (western) eller med sprogets egne cifre (native).",
   "shelf-invalid": "Lageret er en liste med op til {most} råvarer.",
   "shelf-full": "Lageret kan højst rumme {most} råvarer. Intet blev ændret.",
   "shelf-material-unknown": "Den råvare findes ikke i dine råvarer eller i Glazecalcs bibliotek.",

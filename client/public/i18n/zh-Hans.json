@@ -82,6 +82,31 @@
     "languages": "语言",
     "language": "语言："
   },
+  "picker": {
+    "results": "{count, plural, other {# 个结果}}",
+    "languages": {
+      "search": "搜索语言",
+      "showAll": "显示所有语言",
+      "noMatch": "没有匹配的语言"
+    },
+    "regions": {
+      "search": "搜索国家和地区",
+      "showAll": "显示所有国家和地区",
+      "noMatch": "没有匹配的国家或地区"
+    },
+    "groups": {
+      "africa": "非洲",
+      "americas": "美洲",
+      "asia": "亚洲",
+      "eastAsia": "东亚",
+      "europe": "欧洲",
+      "middleEastNorthAfrica": "中东和北非",
+      "oceania": "大洋洲",
+      "southAsia": "南亚",
+      "southeastAsia": "东南亚",
+      "other": "其他"
+    }
+  },
   "numbers": {
     "notANumber": "请输入数字，例如 {example}。",
     "notANumberComma": "请输入数字，例如 {example}，小数点用逗号。",

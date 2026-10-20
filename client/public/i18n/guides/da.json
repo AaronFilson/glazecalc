@@ -52,6 +52,7 @@
     "emergency": "Et nødstilfælde: bevidstløs, trækker ikke vejret, krampeanfald",
     "poisonAdvice": "{who, select, children {Giftrådgivning: {name} (kun for børn)} other {Giftrådgivning: {name}}}",
     "or": "eller {number}",
+    "orCall": "eller <link>{number}</link>",
     "online": "Online: <link>{name}</link>.",
     "poisonAdviceNone": "Giftrådgivning",
     "noLine": "Vi kunne ikke bekræfte en offentlig giftlinje her. Ring til egen læge, eller til alarmnummeret, hvis det haster.",
@@ -111,6 +112,10 @@
     "bandFromTo": "Støv med {from} % til {to} % fri silica (SiO₂)",
     "bandOverTo": "Støv med mere end {from} % og op til {to} % fri silica",
     "bandAbove": "Støv med mere end {from} % fri silica",
+    "untilDate": "Indtil {date}",
+    "fromDate": "Fra {date}",
+    "beforeFormula": "Grænseværdi for respirabelt støv, hvor Q er den krystallinske silica i det, i %",
+    "beforeAll": "For støv, der udelukkende er krystallinsk silica",
     "recommended": "Anbefalet af {abbr}",
     "value": "{value} mg/m³",
     "kind": {
@@ -121,6 +126,7 @@
     },
     "setBy": "Fastsat i <link>{law}</link>.",
     "from": "Den gælder fra {date}.",
+    "beforeSetBy": "Indtil da er grænseværdien fastsat i <link>{law}</link>.",
     "lowerThanEu": "Lavere end EU’s bindende grænseværdi på {value} mg/m³.",
     "sameAsEu": "Den samme som EU’s bindende grænseværdi.",
     "recommendedBy": "{abbr} ({by}) anbefaler denne værdi i <link>{title}</link>. Den er ikke fastsat ved lov.",
@@ -183,7 +189,13 @@
       "vnMedium": "Dybe genstande til opbevaring af mad, fra 1100 mL til under 3000 mL",
       "vnStorage": "Dybe genstande til opbevaring af mad, 3000 mL eller mere",
       "vnCooking": "Dybe genstande til madlavning",
-      "vnCups": "Kopper og små skåle"
+      "vnCups": "Kopper og små skåle",
+      "cnFlat": "Fladvarer, 25 mm dybe eller mindre",
+      "cnSmall": "Små hulvarer under 1,1 L, bortset fra kopper",
+      "cnLarge": "Store hulvarer fra 1,1 L til under 3 L",
+      "cnStorage": "Opbevaringskrukker, 3 L eller mere",
+      "cnCups": "Kopper, til vand eller drikkevarer",
+      "cnCooking": "Koge- og stegeredskaber, til opvarmning af mad"
     },
     "judged": {
       "average": "gennemsnit af 6 genstande",
@@ -197,6 +209,8 @@
     "atMost": "En genstand består, hvis den ikke afgiver mere end grænseværdien: Loven siger »højst«.",
     "ppm": "ppm betyder her milligram pr. liter af prøveopløsningen (mg/L).",
     "unknown": "Vi har endnu ikke bekræftet reglerne i {region}.",
+    "none": "Der er ingen lov i {region}, der fastsætter grænseværdier for, hvor meget bly og cadmium et brændt emne må afgive (kontrolleret den {date}).",
+    "noneSource": "Kilde: <link>{law}</link>.",
     "choosePrompt": "Vælg land for at se reglerne der."
   },
   "equivalents": {

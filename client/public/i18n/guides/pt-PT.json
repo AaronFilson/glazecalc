@@ -52,6 +52,7 @@
     "emergency": "Uma emergência: inconsciência, ausência de respiração, uma convulsão",
     "poisonAdvice": "{who, select, children {Informação antivenenos: {name} (apenas para crianças)} other {Informação antivenenos: {name}}}",
     "or": "ou {number}",
+    "orCall": "ou <link>{number}</link>",
     "online": "Online: <link>{name}</link>.",
     "poisonAdviceNone": "Informação antivenenos",
     "noLine": "Não conseguimos confirmar a existência de uma linha antivenenos pública aqui. Ligue para o seu médico ou, se for urgente, para o número de emergência.",
@@ -111,6 +112,10 @@
     "bandFromTo": "Poeira com {from}% a {to}% de sílica livre (SiO₂)",
     "bandOverTo": "Poeira com mais de {from}% e até {to}% de sílica livre",
     "bandAbove": "Poeira com mais de {from}% de sílica livre",
+    "untilDate": "Até {date}",
+    "fromDate": "A partir de {date}",
+    "beforeFormula": "Valor-limite para a poeira respirável, em que Q é a sílica cristalina que contém, em %",
+    "beforeAll": "Para poeira que é só sílica cristalina",
     "recommended": "Recomendado por {abbr}",
     "value": "{value} mg/m³",
     "kind": {
@@ -121,6 +126,7 @@
     },
     "setBy": "Fixado por <link>{law}</link>.",
     "from": "Aplica-se a partir de {date}.",
+    "beforeSetBy": "Até lá, o valor-limite é fixado por <link>{law}</link>.",
     "lowerThanEu": "Inferior ao valor-limite vinculativo da UE, de {value} mg/m³.",
     "sameAsEu": "Igual ao valor-limite vinculativo da UE.",
     "recommendedBy": "{abbr} ({by}) recomenda este valor no seu <link>{title}</link>. Não é lei.",
@@ -183,7 +189,13 @@
       "vnMedium": "Peças fundas para conter alimentos, de 1100 mL a menos de 3000 mL",
       "vnStorage": "Peças fundas para conter alimentos, com 3000 mL ou mais",
       "vnCooking": "Peças fundas para cozinhar",
-      "vnCups": "Chávenas e taças pequenas"
+      "vnCups": "Chávenas e taças pequenas",
+      "cnFlat": "Peças planas, com 25 mm de profundidade ou menos",
+      "cnSmall": "Peças ocas pequenas, com menos de 1,1 L, exceto chávenas",
+      "cnLarge": "Peças ocas grandes, de 1,1 L a menos de 3 L",
+      "cnStorage": "Recipientes de armazenamento, com 3 L ou mais",
+      "cnCups": "Chávenas, para água ou bebidas",
+      "cnCooking": "Utensílios para cozinhar, para aquecer alimentos"
     },
     "judged": {
       "average": "média de 6 peças",
@@ -197,6 +209,8 @@
     "atMost": "Uma peça é aprovada se não libertar mais do que o limite: a lei diz «no máximo».",
     "ppm": "Aqui, ppm são miligramas por litro da solução de ensaio (mg/L).",
     "unknown": "{region}: ainda não confirmámos as regras.",
+    "none": "{region}: não há nenhuma lei que fixe limites para o chumbo e o cádmio que uma peça cozida pode libertar (verificado em {date}).",
+    "noneSource": "Fonte: <link>{law}</link>.",
     "choosePrompt": "Escolha o seu país para ver as respetivas regras."
   },
   "equivalents": {

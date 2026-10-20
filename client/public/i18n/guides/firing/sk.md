@@ -79,47 +79,47 @@ Tabuľka uvádza pre samostojný kužeľ 6 teplotu {{2232 °F; 1222 °C}}, ale l
 
 :::
 
-## The cone chart {#cone-chart lang=en}
+## Tabuľka kužeľov {#cone-chart}
 
-These figures are from Orton's cone chart (©2001) for self-supporting cones; cones 11 to 14 are from the charts Orton publishes now, which give the same figures where they overlap, and cones 13 and 14 only in °C (their °F here is converted). Choose the column that matches how fast your kiln climbed over the last {{180 °F; 100 °C}}. Orton's rule of thumb is the {{270 °F/h; 150 °C/h}} column for a fast firing, the {{108 °F/h; 60 °C/h}} column for a medium one and the {{27 °F/h; 15 °C/h}} column for a slow one. To work out a rate, divide the temperature climbed by the hours it took: a kiln that climbs {{900 °F; 500 °C}} in 3 hours is heating at about {{300 °F/h; 167 °C/h}}.
+Tieto údaje sú z Ortonovej tabuľky kužeľov (©2001) pre samostojné kužele{{en: cones}}; kužele 11 až 14 sú z tabuliek, ktoré Orton vydáva dnes a ktoré tam, kde sa prekrývajú, uvádzajú rovnaké údaje, kužele 13 a 14 však len v °C (ich hodnoty v °F sú tu prepočítané). Vyberte stĺpec, ktorý zodpovedá tomu, ako rýchlo teplota vo vašej peci stúpala počas posledných {{180 °F; 100 °C}}. Podľa Ortonovho orientačného pravidla platí stĺpec {{270 °F/h; 150 °C/h}} pre rýchly výpal, stĺpec {{108 °F/h; 60 °C/h}} pre stredný a stĺpec {{27 °F/h; 15 °C/h}} pre pomalý. Rýchlosť vypočítate tak, že nárast teploty vydelíte počtom hodín, ktoré trval: pec, ktorej teplota stúpne o {{900 °F; 500 °C}} za 3 hodiny, sa ohrieva rýchlosťou asi {{300 °F/h; 167 °C/h}}.
 
-Table: Orton self-supporting cones: the temperature at which each bends, by heating rate over the last {{180 °F; 100 °C}}
-Label: Orton cone chart
+Table: Ortonove samostojné kužele: teplota, pri ktorej sa každý ohne, podľa rýchlosti ohrevu počas posledných {{180 °F; 100 °C}}
+Label: Tabuľka Ortonových kužeľov
 
-| Cone | Slow, {{27 °F/h; 15 °C/h}} | Medium, {{108 °F/h; 60 °C/h}} | Fast, {{270 °F/h; 150 °C/h}} |
-| ---- | -------------------------: | ----------------------------: | ---------------------------: |
-| 022  |                          – |           {{1087 °F; 586 °C}} |          {{1094 °F; 590 °C}} |
-| 018  |                          – |           {{1319 °F; 715 °C}} |          {{1353 °F; 734 °C}} |
-| 015  |                          – |           {{1456 °F; 791 °C}} |          {{1504 °F; 818 °C}} |
-| 010  |        {{1636 °F; 891 °C}} |           {{1657 °F; 903 °C}} |          {{1679 °F; 915 °C}} |
-| 08   |        {{1692 °F; 922 °C}} |           {{1728 °F; 942 °C}} |          {{1753 °F; 956 °C}} |
-| 07   |                          – |           {{1789 °F; 976 °C}} |          {{1809 °F; 987 °C}} |
-| 06   |        {{1798 °F; 981 °C}} |           {{1828 °F; 998 °C}} |         {{1855 °F; 1013 °C}} |
-| 05   |       {{1870 °F; 1021 °C}} |          {{1888 °F; 1031 °C}} |         {{1911 °F; 1044 °C}} |
-| 04   |       {{1915 °F; 1046 °C}} |          {{1945 °F; 1063 °C}} |         {{1971 °F; 1077 °C}} |
-| 03   |       {{1960 °F; 1071 °C}} |          {{1987 °F; 1086 °C}} |         {{2019 °F; 1104 °C}} |
-| 02   |                          – |          {{2016 °F; 1102 °C}} |         {{2052 °F; 1122 °C}} |
-| 01   |       {{1999 °F; 1093 °C}} |          {{2046 °F; 1119 °C}} |         {{2080 °F; 1138 °C}} |
-| 1    |       {{2028 °F; 1109 °C}} |          {{2079 °F; 1137 °C}} |         {{2109 °F; 1154 °C}} |
-| 4    |       {{2086 °F; 1141 °C}} |          {{2124 °F; 1162 °C}} |         {{2161 °F; 1183 °C}} |
-| 5    |       {{2118 °F; 1159 °C}} |          {{2167 °F; 1186 °C}} |         {{2205 °F; 1207 °C}} |
-| 6    |       {{2165 °F; 1185 °C}} |          {{2232 °F; 1222 °C}} |         {{2269 °F; 1243 °C}} |
-| 7    |       {{2194 °F; 1201 °C}} |          {{2262 °F; 1239 °C}} |         {{2295 °F; 1257 °C}} |
-| 8    |       {{2212 °F; 1211 °C}} |          {{2280 °F; 1249 °C}} |         {{2320 °F; 1271 °C}} |
-| 9    |       {{2235 °F; 1224 °C}} |          {{2300 °F; 1260 °C}} |         {{2336 °F; 1280 °C}} |
-| 10   |       {{2284 °F; 1251 °C}} |          {{2345 °F; 1285 °C}} |         {{2381 °F; 1305 °C}} |
-| 11   |       {{2322 °F; 1272 °C}} |          {{2361 °F; 1294 °C}} |         {{2399 °F; 1315 °C}} |
-| 12   |       {{2345 °F; 1285 °C}} |          {{2383 °F; 1306 °C}} |         {{2419 °F; 1326 °C}} |
-| 13   |       {{2390 °F; 1310 °C}} |          {{2428 °F; 1331 °C}} |         {{2458 °F; 1348 °C}} |
-| 14   |       {{2464 °F; 1351 °C}} |          {{2489 °F; 1365 °C}} |         {{2523 °F; 1384 °C}} |
+| Kužeľ | Pomalý, {{27 °F/h; 15 °C/h}} | Stredný, {{108 °F/h; 60 °C/h}} | Rýchly, {{270 °F/h; 150 °C/h}} |
+| ----- | ---------------------------: | -----------------------------: | -----------------------------: |
+| 022   |                            – |            {{1087 °F; 586 °C}} |            {{1094 °F; 590 °C}} |
+| 018   |                            – |            {{1319 °F; 715 °C}} |            {{1353 °F; 734 °C}} |
+| 015   |                            – |            {{1456 °F; 791 °C}} |            {{1504 °F; 818 °C}} |
+| 010   |          {{1636 °F; 891 °C}} |            {{1657 °F; 903 °C}} |            {{1679 °F; 915 °C}} |
+| 08    |          {{1692 °F; 922 °C}} |            {{1728 °F; 942 °C}} |            {{1753 °F; 956 °C}} |
+| 07    |                            – |            {{1789 °F; 976 °C}} |            {{1809 °F; 987 °C}} |
+| 06    |          {{1798 °F; 981 °C}} |            {{1828 °F; 998 °C}} |           {{1855 °F; 1013 °C}} |
+| 05    |         {{1870 °F; 1021 °C}} |           {{1888 °F; 1031 °C}} |           {{1911 °F; 1044 °C}} |
+| 04    |         {{1915 °F; 1046 °C}} |           {{1945 °F; 1063 °C}} |           {{1971 °F; 1077 °C}} |
+| 03    |         {{1960 °F; 1071 °C}} |           {{1987 °F; 1086 °C}} |           {{2019 °F; 1104 °C}} |
+| 02    |                            – |           {{2016 °F; 1102 °C}} |           {{2052 °F; 1122 °C}} |
+| 01    |         {{1999 °F; 1093 °C}} |           {{2046 °F; 1119 °C}} |           {{2080 °F; 1138 °C}} |
+| 1     |         {{2028 °F; 1109 °C}} |           {{2079 °F; 1137 °C}} |           {{2109 °F; 1154 °C}} |
+| 4     |         {{2086 °F; 1141 °C}} |           {{2124 °F; 1162 °C}} |           {{2161 °F; 1183 °C}} |
+| 5     |         {{2118 °F; 1159 °C}} |           {{2167 °F; 1186 °C}} |           {{2205 °F; 1207 °C}} |
+| 6     |         {{2165 °F; 1185 °C}} |           {{2232 °F; 1222 °C}} |           {{2269 °F; 1243 °C}} |
+| 7     |         {{2194 °F; 1201 °C}} |           {{2262 °F; 1239 °C}} |           {{2295 °F; 1257 °C}} |
+| 8     |         {{2212 °F; 1211 °C}} |           {{2280 °F; 1249 °C}} |           {{2320 °F; 1271 °C}} |
+| 9     |         {{2235 °F; 1224 °C}} |           {{2300 °F; 1260 °C}} |           {{2336 °F; 1280 °C}} |
+| 10    |         {{2284 °F; 1251 °C}} |           {{2345 °F; 1285 °C}} |           {{2381 °F; 1305 °C}} |
+| 11    |         {{2322 °F; 1272 °C}} |           {{2361 °F; 1294 °C}} |           {{2399 °F; 1315 °C}} |
+| 12    |         {{2345 °F; 1285 °C}} |           {{2383 °F; 1306 °C}} |           {{2419 °F; 1326 °C}} |
+| 13    |         {{2390 °F; 1310 °C}} |           {{2428 °F; 1331 °C}} |           {{2458 °F; 1348 °C}} |
+| 14    |         {{2464 °F; 1351 °C}} |           {{2489 °F; 1365 °C}} |           {{2523 °F; 1384 °C}} |
 
-A dash marks a figure not copied here; see Orton's full chart for it.
+Pomlčka označuje údaj, ktorý sem nebol prevzatý; nájdete ho v úplnej tabuľke firmy Orton.
 
-Orton makes cones up to 42 for high-temperature work, but publishes temperatures only up to cone 14; for hotter cones its charts are "available (by request)". An older Orton chart, as kiln makers reprint it, gives a large cone 15 as {{2608 °F; 1431 °C}} at {{270 °F/h; 150 °C/h}}, and we found no published figure for cone 16 or above. Past cone 14, set witness cones and go by them, and check that your kiln is rated for that heat.
+Orton vyrába kužele až po číslo 42 na prácu pri vysokých teplotách, ale teploty zverejňuje len po kužeľ 14; pre teplejšie kužele sú jeho tabuľky „k dispozícii (na požiadanie)“. Staršia Ortonova tabuľka, ako ju pretláčajú výrobcovia pecí, uvádza pre veľký kužeľ 15 {{2608 °F; 1431 °C}} pri {{270 °F/h; 150 °C/h}} a pre kužeľ 16 a teplejšie sme žiadny zverejnený údaj nenašli. Nad kužeľom 14 stavajte kontrolné kužele{{en: witness cones}} a riaďte sa nimi a overte, či maximálna teplota, ktorú pre vašu pec uvádza výrobca, takú teplotu dosahuje.
 
-Large cones read within a few degrees of these figures: a large cone 6 at {{108 °F/h; 60 °C/h}} is {{2228 °F; 1220 °C}}. Small cones, the kind used in a kiln sitter, are listed only at {{540 °F/h; 300 °C/h}}, so the chart gives a small cone 6 as {{2291 °F; 1255 °C}}. That is not the temperature at which a sitter turns the kiln off. The sitter cone's job is to match the shelf cone, and the shelf cone has the final say.
+Veľké kužele sa od týchto údajov líšia len o niekoľko stupňov: pre veľký kužeľ 6 pri {{108 °F/h; 60 °C/h}} je to {{2228 °F; 1220 °C}}. Malé kužele, aké sa používajú vo vypínači Kiln-Sitter, sú uvedené len pre {{540 °F/h; 300 °C/h}}, takže tabuľka uvádza pre malý kužeľ 6 teplotu {{2291 °F; 1255 °C}}. To nie je teplota, pri ktorej Kiln-Sitter pec vypne. Úlohou kužeľa vo vypínači je zhodovať sa s kužeľom na doske a posledné slovo má kužeľ na doske.
 
-Two cautions. Orton's 2019 booklet gives cone 06 at the fast rate as {{1875 °F; 1024 °C}}, but the chart and Orton's FAQ both give {{1855 °F; 1013 °C}}, used here. And the large-cone table at the back of the Dawson kiln sitter manual has copying errors (cone 5 hotter than cone 6), so do not use it.
+Dve upozornenia. Ortonova brožúra z roku 2019 uvádza pre kužeľ 06 pri rýchlom ohreve {{1875 °F; 1024 °C}}, ale tabuľka aj Ortonove často kladené otázky (FAQ) uvádzajú {{1855 °F; 1013 °C}}, čo používame tu. A tabuľka veľkých kužeľov na konci návodu na obsluhu vypínača Kiln-Sitter od firmy Dawson má chyby z prepisu (kužeľ 5 je v nej teplejší ako kužeľ 6), preto ju nepoužívajte.
 
 :::temperature
 
@@ -287,96 +287,96 @@ Label: Úprava ďalšieho výpalu
 
 :::sk
 
-## Firing to SK cones {#sk-cones lang=en}
+## Výpal podľa kužeľov SK {#sk-cones}
 
-SK cones are the pyrometric cones made to Japan's standard, JIS R 8101, and sold in Japan by dealers such as Yuko Trading (有恒商事). Like any cone, an SK cone measures heatwork, not temperature alone: it softens and bends over when the ware has had enough heat, and you read how far it bent. Witness cones, reading how far a cone has bent, and holds work for it as for any cone. This section names each cone's system, and never turns an SK number into another system's number: the numbers of different cone series are not interchangeable.
+Kužele SK sú pyrometrické kužele vyrobené podľa japonskej normy JIS R 8101, ktoré v Japonsku predávajú obchodníci, ako je Yuko Trading (有恒商事). Ako každý kužeľ, aj kužeľ SK meria tepelnú prácu{{en: heatwork}}, nie len teplotu: zmäkne a ohne sa, keď výrobky dostali dosť tepla, a vy odčítate, ako ďaleko sa ohol. Kontrolné kužele{{en: witness cone}}, odčítanie toho, ako ďaleko sa kužeľ ohol, a výdrže{{en: hold}} pri ňom fungujú rovnako ako pri každom kuželi. Táto časť pri každom kuželi uvádza jeho systém a nikdy neprevádza číslo SK na číslo iného systému: čísla rôznych radov kužeľov nie sú zameniteľné.
 
 > [!NOTE]
-> Always write "SK" before the number. Many older Japanese recipes say only "SK 8" or "SK 9" without saying whose cone. Kyoto cones and SK cones to JIS carry the same numbers but bend at different temperatures (see Kyoto cones, below).
+> Pred číslo vždy píšte „SK“. Mnohé staršie japonské recepty uvádzajú len „SK 8“ alebo „SK 9“ a nehovoria, čí kužeľ to je. Kjótske kužele a kužele SK podľa JIS majú rovnaké čísla, ale ohýbajú sa pri rôznych teplotách (pozri Kjótske kužele nižšie).
 
-### The large cones
+### Veľké kužele
 
-The standard has two sizes. Large cones (大型コーン) are "mainly used for measuring the degree of firing" (焼度測定), which is what a potter wants. Small cones (SK 26 to SK 42, at the top of the range) are "mainly used for refractoriness tests" and are not covered here. The table below gives the large cones from SK 022 to SK 20.
+Norma pozná dve veľkosti. Veľké kužele (大型コーン) sa „používajú hlavne na meranie stupňa výpalu“ (焼度測定), a to je to, čo keramikár potrebuje. Malé kužele (SK 26 až SK 42, na hornom konci radu) sa „používajú hlavne na skúšky žiaruvzdornosti“ a tu sa nimi nezaoberáme. Tabuľka nižšie uvádza veľké kužele od SK 022 po SK 20.
 
-The numbers run from SK 022, the coolest, up to SK 20 here. Between SK 015 and SK 6 the printed numbers carry an "a" (SK 015a, SK 6a); write it as printed.
+Čísla tu idú od SK 022, najchladnejšieho, po SK 20. Medzi SK 015 a SK 6 majú vytlačené čísla písmeno „a“ (SK 015a, SK 6a); píšte ich tak, ako sú vytlačené.
 
-### Setting large cones
+### Osadenie veľkých kužeľov
 
-Set each large cone in a plaque or a pat of clay, leaning toward its bending face. As with any cone, keep the height and the lean the same from firing to firing, because a difference in either changes how far it bends. Set the three cones of the pack (below) together, deep in the kiln near the middle of the load, where they get the heat the ware gets, yet where you can see them through a peephole; before you close the kiln, check that you can see all three.
+Každý veľký kužeľ zasaďte do držiaka alebo do hrudky hliny, so sklonom k svojej ohybovej strane. Ako pri každom kuželi, výšku aj sklon dodržiavajte od výpalu k výpalu rovnaké, pretože rozdiel v ktoromkoľvek z nich mení, ako ďaleko sa kužeľ ohne. Tri kužele sady{{en: cone pack}} (pozri nižšie) postavte spolu hlboko v peci blízko stredu vsádzky, kde dostávajú rovnaké teplo ako výrobky, no tam, kde ich uvidíte cez kontrolný otvor; pred zatvorením pece overte, či vidíte všetky tri.
 
-We found no maker's or seller's instructions for how deep or at what angle to set SK cones. The nearest is a laboratory standard, JIS R 2204, Japan's test of how much heat a refractory material stands: it sets each SK cone with its marked face at 80° to a flat stand and its foot about 4 mm into it. That is a test for refractories, not a rule for firing pots, and we read it in a transcription of the standard, not in the standard itself.
+Pokyny výrobcu ani predajcu k tomu, ako hlboko a pod akým uhlom kužele SK osadiť, sme nenašli. Najbližšie k tomu má laboratórna norma JIS R 2204, japonská skúška toho, koľko tepla žiaruvzdorný materiál vydrží: osádza každý kužeľ SK označenou stranou pod uhlom 80° k rovnému stojanu a s pätou zapustenou asi 4 mm doň. To je skúška pre žiaruvzdorné materiály, nie pravidlo pre výpal keramiky, a čítali sme ju v prepise normy, nie v norme samotnej.
 
-### Guide, firing and guard cones
+### Vodiaci, cieľový a poistný kužeľ
 
-Cones are sold and set as three: a guide cone, a firing cone at the target, and a guard cone. Take the firing cone as the SK number your recipe or clay names, the guide cone as the next cooler cone (one row up in the table) and the guard cone as the next hotter one. When the guide cone starts to bend, the end is near; when the guard cone bends, the firing has gone too far.
+Kužele sa predávajú a stavajú po troch: vodiaci kužeľ, cieľový kužeľ a poistný kužeľ. Ako cieľový vezmite číslo SK, ktoré uvádza váš recept alebo hlina, ako vodiaci najbližší chladnejší kužeľ (o riadok vyššie v tabuľke) a ako poistný najbližší teplejší. Keď sa vodiaci kužeľ začne ohýbať, koniec je blízko; keď sa ohne poistný kužeľ, výpal zašiel príliš ďaleko.
 
-### The SK chart
+### Tabuľka kužeľov SK
 
-Table: SK large cones (JIS R 8101): the nominal (JIS) temperature of each
-Label: SK chart
+Table: Veľké kužele SK (JIS R 8101): menovitá teplota (JIS) každého z nich
+Label: Tabuľka kužeľov SK
 
-| Cone    | Nominal (JIS) temperature |
-| ------- | ------------------------: |
-| SK 022  |       {{1112 °F; 600 °C}} |
-| SK 021  |       {{1202 °F; 650 °C}} |
-| SK 020  |       {{1238 °F; 670 °C}} |
-| SK 019  |       {{1274 °F; 690 °C}} |
-| SK 018  |       {{1310 °F; 710 °C}} |
-| SK 017  |       {{1346 °F; 730 °C}} |
-| SK 016  |       {{1382 °F; 750 °C}} |
-| SK 015a |       {{1454 °F; 790 °C}} |
-| SK 014a |       {{1499 °F; 815 °C}} |
-| SK 013a |       {{1535 °F; 835 °C}} |
-| SK 012a |       {{1571 °F; 855 °C}} |
-| SK 011a |       {{1616 °F; 880 °C}} |
-| SK 010a |       {{1652 °F; 900 °C}} |
-| SK 09a  |       {{1688 °F; 920 °C}} |
-| SK 08a  |       {{1724 °F; 940 °C}} |
-| SK 07a  |       {{1760 °F; 960 °C}} |
-| SK 06a  |       {{1796 °F; 980 °C}} |
-| SK 05a  |      {{1832 °F; 1000 °C}} |
-| SK 04a  |      {{1868 °F; 1020 °C}} |
-| SK 03a  |      {{1904 °F; 1040 °C}} |
-| SK 02a  |      {{1940 °F; 1060 °C}} |
-| SK 01a  |      {{1976 °F; 1080 °C}} |
-| SK 1a   |      {{2012 °F; 1100 °C}} |
-| SK 2a   |      {{2048 °F; 1120 °C}} |
-| SK 3a   |      {{2084 °F; 1140 °C}} |
-| SK 4a   |      {{2120 °F; 1160 °C}} |
-| SK 5a   |      {{2156 °F; 1180 °C}} |
-| SK 6a   |      {{2192 °F; 1200 °C}} |
-| SK 7    |      {{2246 °F; 1230 °C}} |
-| SK 8    |      {{2282 °F; 1250 °C}} |
-| SK 9    |      {{2336 °F; 1280 °C}} |
-| SK 10   |      {{2372 °F; 1300 °C}} |
-| SK 11   |      {{2408 °F; 1320 °C}} |
-| SK 12   |      {{2462 °F; 1350 °C}} |
-| SK 13   |      {{2516 °F; 1380 °C}} |
-| SK 14   |      {{2570 °F; 1410 °C}} |
-| SK 15   |      {{2615 °F; 1435 °C}} |
-| SK 16   |      {{2660 °F; 1460 °C}} |
-| SK 17   |      {{2696 °F; 1480 °C}} |
-| SK 18   |      {{2732 °F; 1500 °C}} |
-| SK 19   |      {{2768 °F; 1520 °C}} |
-| SK 20   |      {{2786 °F; 1530 °C}} |
+| Kužeľ   | Menovitá teplota (JIS) |
+| ------- | ---------------------: |
+| SK 022  |    {{1112 °F; 600 °C}} |
+| SK 021  |    {{1202 °F; 650 °C}} |
+| SK 020  |    {{1238 °F; 670 °C}} |
+| SK 019  |    {{1274 °F; 690 °C}} |
+| SK 018  |    {{1310 °F; 710 °C}} |
+| SK 017  |    {{1346 °F; 730 °C}} |
+| SK 016  |    {{1382 °F; 750 °C}} |
+| SK 015a |    {{1454 °F; 790 °C}} |
+| SK 014a |    {{1499 °F; 815 °C}} |
+| SK 013a |    {{1535 °F; 835 °C}} |
+| SK 012a |    {{1571 °F; 855 °C}} |
+| SK 011a |    {{1616 °F; 880 °C}} |
+| SK 010a |    {{1652 °F; 900 °C}} |
+| SK 09a  |    {{1688 °F; 920 °C}} |
+| SK 08a  |    {{1724 °F; 940 °C}} |
+| SK 07a  |    {{1760 °F; 960 °C}} |
+| SK 06a  |    {{1796 °F; 980 °C}} |
+| SK 05a  |   {{1832 °F; 1000 °C}} |
+| SK 04a  |   {{1868 °F; 1020 °C}} |
+| SK 03a  |   {{1904 °F; 1040 °C}} |
+| SK 02a  |   {{1940 °F; 1060 °C}} |
+| SK 01a  |   {{1976 °F; 1080 °C}} |
+| SK 1a   |   {{2012 °F; 1100 °C}} |
+| SK 2a   |   {{2048 °F; 1120 °C}} |
+| SK 3a   |   {{2084 °F; 1140 °C}} |
+| SK 4a   |   {{2120 °F; 1160 °C}} |
+| SK 5a   |   {{2156 °F; 1180 °C}} |
+| SK 6a   |   {{2192 °F; 1200 °C}} |
+| SK 7    |   {{2246 °F; 1230 °C}} |
+| SK 8    |   {{2282 °F; 1250 °C}} |
+| SK 9    |   {{2336 °F; 1280 °C}} |
+| SK 10   |   {{2372 °F; 1300 °C}} |
+| SK 11   |   {{2408 °F; 1320 °C}} |
+| SK 12   |   {{2462 °F; 1350 °C}} |
+| SK 13   |   {{2516 °F; 1380 °C}} |
+| SK 14   |   {{2570 °F; 1410 °C}} |
+| SK 15   |   {{2615 °F; 1435 °C}} |
+| SK 16   |   {{2660 °F; 1460 °C}} |
+| SK 17   |   {{2696 °F; 1480 °C}} |
+| SK 18   |   {{2732 °F; 1500 °C}} |
+| SK 19   |   {{2768 °F; 1520 °C}} |
+| SK 20   |   {{2786 °F; 1530 °C}} |
 
-Every figure is nominal (JIS): the temperature the standard gives for the cone, as printed in Yuko Trading's table. The table does not print a heating rate. The standard gives reference temperatures. At a potter's rate of about 100 °C/h, Kyoto's municipal institute measured its own Kyoto cones bending 47–79 °C cooler than the JIS figure for the same number; we found no such measurements for SK cones to JIS. Set a witness cone and compare.
+Každý údaj je menovitý (JIS): teplota, ktorú pre kužeľ udáva norma, ako je vytlačená v tabuľke firmy Yuko Trading. Tabuľka neuvádza rýchlosť ohrevu. Norma udáva referenčné teploty. Pri rýchlosti bežnej u keramikárov, asi 100 °C/h, kjótsky mestský inštitút nameral, že sa jeho vlastné kjótske kužele ohýbajú o 47–79 °C nižšie, ako je údaj JIS pre rovnaké číslo; pre kužele SK podľa JIS sme také merania nenašli. Postavte kontrolný kužeľ a porovnajte.
 
-### Kyoto cones
+### Kjótske kužele
 
-Kyoto cones (京都ゼーゲル), made by Kyoto's municipal institute, are no longer made: news reports say the institute ended production at the close of fiscal 2009. They carry the same numbers as SK cones to JIS but bend cooler: a Kyoto cone bends at about the temperature of the SK cone to JIS two or three numbers lower. A recipe from Kyoto that says "SK 8" may mean a Kyoto cone. The institute has published advice for potters moving from Kyoto cones to Orton cones, and substitutes Orton cone 10 for its own Kyoto SK 12. That is the institute's choice from its own measurements: it bent Kyoto cones and Orton cones in the same kiln at 100 °C/h, and Kyoto SK 12 (1290 °C) bent where Orton 10 (1290 °C) did. In the same table Kyoto SK 8 (1198 °C) bent near Orton 5 (1207 °C), and Kyoto SK 10 (1232 °C) where Orton 7 (1232 °C) did. Glazecalc uses this table, not the Orton chart at 60 °C/h, when it shows an SK cone beside an Orton cone, and says each match is approximate.
+Kjótske kužele (京都ゼーゲル), ktoré vyrábal kjótsky mestský inštitút, sa už nevyrábajú: podľa správ v tlači inštitút ukončil výrobu na konci fiškálneho roka 2009. Majú rovnaké čísla ako kužele SK podľa JIS, ale ohýbajú sa pri nižšej teplote: kjótsky kužeľ sa ohne približne pri teplote kužeľa SK podľa JIS o dve alebo tri čísla nižšieho. Recept z Kjóta, ktorý uvádza „SK 8“, môže myslieť kjótsky kužeľ. Inštitút zverejnil rady pre keramikárov, ktorí prechádzajú z kjótskych kužeľov na Ortonove, a namiesto svojho kjótskeho SK 12 používa Ortonov kužeľ 10. Je to voľba inštitútu podľa jeho vlastných meraní: ohýbal kjótske a Ortonove kužele v tej istej peci pri 100 °C/h a kjótsky SK 12 (1290 °C) sa ohol tam, kde Ortonov 10 (1290 °C). V tej istej tabuľke sa kjótsky SK 8 (1198 °C) ohol blízko Ortonovho 5 (1207 °C) a kjótsky SK 10 (1232 °C) tam, kde Ortonov 7 (1232 °C). Glazecalc používa túto tabuľku, nie Ortonovu tabuľku pri 60 °C/h, keď ukazuje kužeľ SK vedľa Ortonovho kužeľa, a uvádza, že každá zhoda je približná.
 
-### Orton cones sold in Japan
+### Ortonove kužele predávané v Japonsku
 
-Orton self-supporting cones are sold in Japan under the name 立つゼーゲル ("standing Seger"), because they need no plaque or stand. They are Orton cones, with Orton's numbers and Orton's chart (above): fire to one only by its Orton number, and keep SK and Orton cones in separate packs, never in the same one.
+Samostojné Ortonove kužele sa v Japonsku predávajú pod názvom 立つゼーゲル („stojaci Seger“), pretože nepotrebujú držiak ani stojan. Sú to Ortonove kužele s Ortonovými číslami a Ortonovou tabuľkou (pozri vyššie): vypaľujte na ne len podľa ich Ortonovho čísla a kužele SK a Ortonove kužele majte v oddelených sadách, nikdy nie v jednej.
 
-### Sources for SK cones
+### Zdroje ku kužeľom SK
 
-- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (the SK table, checked 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
-- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (in force, reconfirmed 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
-- [JSA: JIS R 2204:1999, 耐火物及び耐火物原料の耐火度試験方法 (in force, reconfirmed 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+2204:1999)
-- [kikakurui.com: a transcription of JIS R 2204:1999, where clause 5 a) sets the cones (read 2026-10-19)](https://kikakurui.com/r2/R2204-1999-01.html)
-- [Kyoto Municipal Institute of Industrial Technology and Culture: points to note when moving from Kyoto cones to Orton cones](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
+- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (tabuľka SK, overené 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
+- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (platná, znovu potvrdená 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
+- [JSA: JIS R 2204:1999, 耐火物及び耐火物原料の耐火度試験方法 (platná, znovu potvrdená 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+2204:1999)
+- [kikakurui.com: prepis JIS R 2204:1999, kde článok 5 a) určuje osadenie kužeľov (prečítané 2026-10-19)](https://kikakurui.com/r2/R2204-1999-01.html)
+- [Kyoto Municipal Institute of Industrial Technology and Culture: na čo si dať pozor pri prechode z kjótskych kužeľov na Ortonove](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
 
 :::
 
@@ -606,22 +606,22 @@ Ak Kiln-Sitter vypne skôr, ako sa kužele na doske ohnú, nabudúce dajte do vy
 
 **Pyrometer** je teplomer, ktorý ukazuje teplotu nameranú **termočlánkom**, teplotnou sondou zavedenou cez stenu pece. Ukazuje, ako rýchlo teplota v peci stúpa, takže môžete vybrať správny stĺpec tabuľky kužeľov. Meria však pri stene, nie pri výrobkoch, a jeho údaje sa časom posúvajú. L&L uvádza, že termočlánok typu K sa po opakovaných výpaloch na kužeľ 6 môže mýliť o viac ako {{25 °F; 14 °C}}, „čo je rozdiel väčší ako celý kužeľ“, zatiaľ čo samostojný kužeľ sa líši najviac o {{4 °F; 2 °C}}. Podľa firmy Orton treba pyrometre z času na čas znova kalibrovať a kontrolujú sa práve kužeľmi.
 
-## Venting, peeking and safety {#venting lang=en}
+## Odsávanie, nahliadanie a bezpečnosť {#venting}
 
-### Venting
+### Odsávanie
 
-Early in a firing, clay and glaze give off water vapor and fumes, including carbon monoxide, and glazes can give off toxic fumes later in the firing too. L&L calls venting them "essential". With no vent system, that means the lid propped and the peepholes open in the early stages, as in the procedures above; slowing the heating during this time also helps the carbon burn out. In a kiln without a vent, Dawson, who made the sitter, also says to leave the top peephole open for the whole firing: the venting "will reduce deterioration of the kiln's metal parts and increase the life of the tube assembly". A **downdraft vent** (a powered vent fitted to the kiln) changes this. It does the venting, so Orton says the lid and peepholes stay closed for the whole firing except to check the cones, and L&L says to leave the vent on and plug the peepholes.
+Na začiatku výpalu hlina a glazúra uvoľňujú vodnú paru a splodiny, vrátane oxidu uhoľnatého, a glazúry môžu uvoľňovať toxické splodiny aj neskôr počas výpalu. L&L nazýva ich odvádzanie „zásadným“. Bez odsávania to znamená pootvorené veko a otvorené kontrolné otvory v raných fázach, ako je uvedené v postupoch vyššie; pomalší ohrev v tomto čase tiež pomáha vyhorieť uhlíku. V peci bez odsávania Dawson, ktorý vyrobil vypínač Kiln-Sitter{{en: kiln sitter}}, tiež hovorí, aby horný kontrolný otvor zostal otvorený počas celého výpalu: odvetrávanie „zníži opotrebovanie kovových častí pece a predĺži životnosť zostavy trubice“. **Spodné odsávanie** (odsávanie s pohonom namontované na pec) to mení. Odvetrávanie zabezpečuje samo, preto Orton hovorí, že veko a kontrolné otvory zostávajú počas celého výpalu zatvorené, okrem kontroly kužeľov, a L&L hovorí, aby sa odsávanie nechalo zapnuté a kontrolné otvory sa zazátkovali.
 
-For venting the room, and for carbon monoxide alarms, see [Safe mixing and ventilation](/guides/safe-mixing) and [Don't poison your family](/guides/home-safety).
+Informácie o vetraní miestnosti a o detektoroch oxidu uhoľnatého nájdete v návodoch [Bezpečné miešanie a vetranie](/guides/safe-mixing) a [Neotrávte svoju rodinu](/guides/home-safety).
 
-### While the kiln is firing
+### Keď pec vypaľuje
 
-- Look through a peephole only with IR-rated shade 3 welding glasses; sunglasses are not enough. Skutt advises twisting the plugs into place so they do not fall out.
-- Stay nearby and check the kiln while it fires, above all near its expected finishing time; a sitter is not a fail-safe. Fire only when an adult will be home and awake through the whole firing.
-- Never fire on or near anything that burns, such as a wood floor or carpet.
-- Keep the clearances in your manual. Published figures range from 12 in (30 cm) to 3 ft (91 cm); where the manual is silent, 18 in (46 cm) from walls and 3 ft (91 cm) from anything that burns is the safest choice.
-- Keep the space around the sitter's weight clear so it can drop.
-- When the firing ends, turn the switches off and turn off the breaker as well.
+- Do kontrolného otvoru sa pozerajte len cez zváračské okuliare s filtrom proti IR žiareniu, ochranný stupeň 3; slnečné okuliare nestačia. Skutt radí zátky zaskrutkovať na miesto, aby nevypadli.
+- Počas výpalu zostaňte nablízku a pec kontrolujte, predovšetkým okolo očakávaného času skončenia výpalu; vypínač Kiln-Sitter nie je vypínacie zariadenie bezpečné pri poruche. Vypaľujte len vtedy, keď bude doma dospelý, ktorý bude hore počas celého výpalu.
+- Nikdy nevypaľujte na ničom, čo horí, ani v jeho blízkosti, napríklad na drevenej podlahe alebo na koberci.
+- Dodržiavajte bezpečné vzdialenosti uvedené v návode na obsluhu. Publikované hodnoty sa pohybujú od 12 palcov (30 cm) do 3 stôp (91 cm); kde návod mlčí, najbezpečnejšou voľbou je 18 palcov (46 cm) od stien a 3 stopy (91 cm) od všetkého, čo horí.
+- Priestor okolo závažia vypínača Kiln-Sitter nechajte voľný, aby mohlo spadnúť.
+- Po skončení výpalu vypnite prepínače a vypnite aj istič.
 
 ## Chladnutie a vykladanie {#cooling}
 

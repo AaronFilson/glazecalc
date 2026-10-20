@@ -270,6 +270,22 @@
         "saved": "Saglabāts: datumi tiek rādīti Japānas ērās."
       }
     },
+    "digits": {
+      "legend": "Cipari",
+      "help": "Cipari, kādos tiek rādīti skaitļi. Dažām valodām ir savi cipari, piemēram, arābu, bengāļu un hindi valodai, un to, kuri ir ierasti, nosaka jūsu atrašanās vieta. Skaitļus varat ievadīt ar jebkuriem no tiem.",
+      "auto": {
+        "label": "Kā ierasts jūsu atrašanās vietā",
+        "saved": "Saglabāts: cipari kā ierasts jūsu atrašanās vietā."
+      },
+      "western": {
+        "label": "Rietumu cipari, 0–9",
+        "saved": "Saglabāts: skaitļi tiek rādīti ar cipariem 0–9."
+      },
+      "native": {
+        "label": "Valodas pašas cipari, ja tādi ir",
+        "saved": "Saglabāts: skaitļi tiek rādīti valodas pašas ciparos, ja tādi ir."
+      }
+    },
     "decimalMark": {
       "legend": "Daudzumu ievade",
       "either": {

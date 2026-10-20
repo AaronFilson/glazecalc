@@ -52,6 +52,7 @@
     "emergency": "紧急情况：失去知觉、没有呼吸、抽搐",
     "poisonAdvice": "{who, select, children {中毒咨询：{name}（仅限儿童）} other {中毒咨询：{name}}}",
     "or": "或 {number}",
+    "orCall": "或 <link>{number}</link>",
     "online": "在线：<link>{name}</link>。",
     "poisonAdviceNone": "中毒咨询",
     "noLine": "我们无法确认这里有面向公众的中毒咨询热线。请致电您的医生，情况紧急时拨打急救电话。",
@@ -111,6 +112,10 @@
     "bandFromTo": "游离二氧化硅（SiO₂）含量为 {from}%～{to}% 的粉尘",
     "bandOverTo": "游离二氧化硅含量高于 {from}% 且不超过 {to}% 的粉尘",
     "bandAbove": "游离二氧化硅含量高于 {from}% 的粉尘",
+    "untilDate": "截至{date}",
+    "fromDate": "自{date}起",
+    "beforeFormula": "呼吸性粉尘的限值，其中 Q 为粉尘中结晶型二氧化硅的含量，单位为 %",
+    "beforeAll": "粉尘全部为结晶型二氧化硅时",
     "recommended": "{abbr} 推荐值",
     "value": "{value} mg/m³",
     "kind": {
@@ -121,6 +126,7 @@
     },
     "setBy": "由<link>{law}</link>规定。",
     "from": "自{date}起适用。",
+    "beforeSetBy": "在此之前，限值由<link>{law}</link>规定。",
     "lowerThanEu": "低于欧盟具有法律约束力的限值 {value} mg/m³。",
     "sameAsEu": "与欧盟具有法律约束力的限值相同。",
     "recommendedBy": "{abbr}（{by}）在其<link>{title}</link>中推荐此值。它不是法律规定。",
@@ -183,7 +189,13 @@
       "vnMedium": "盛放食物的深型器物，容量 1100 mL 至不足 3000 mL",
       "vnStorage": "盛放食物的深型器物，容量 3000 mL 及以上",
       "vnCooking": "烹煮用的深型器物",
-      "vnCups": "杯子和小碗"
+      "vnCups": "杯子和小碗",
+      "cnFlat": "扁平制品，深度不超过 25 mm",
+      "cnSmall": "小空心制品，容量小于 1.1 L，杯类除外",
+      "cnLarge": "大空心制品，容量 1.1 L 及以上、小于 3 L",
+      "cnStorage": "贮存罐，容量 3 L 及以上",
+      "cnCups": "杯类，用于盛水或饮料",
+      "cnCooking": "烹饪器皿，用于加热食物"
     },
     "judged": {
       "average": "6 件的平均值",
@@ -197,6 +209,8 @@
     "atMost": "溶出量不超过限值即为合格：法规写的是“不超过”。",
     "ppm": "这里的 ppm 指每升检测溶液中的毫克数（mg/L）。",
     "unknown": "我们还没有确认{region}的规定。",
+    "none": "{region}没有法律规定烧成后的器物可溶出的铅和镉的限值（核实于{date}）。",
+    "noneSource": "来源：<link>{law}</link>。",
     "choosePrompt": "选择您所在的国家，查看其规定。"
   },
   "equivalents": {

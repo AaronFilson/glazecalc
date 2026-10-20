@@ -79,47 +79,47 @@ A tabela dá para um cone 6 autossuportado {{2232 °F; 1222 °C}}, mas só quand
 
 :::
 
-## The cone chart {#cone-chart lang=en}
+## A tabela de cones {#cone-chart}
 
-These figures are from Orton's cone chart (©2001) for self-supporting cones; cones 11 to 14 are from the charts Orton publishes now, which give the same figures where they overlap, and cones 13 and 14 only in °C (their °F here is converted). Choose the column that matches how fast your kiln climbed over the last {{180 °F; 100 °C}}. Orton's rule of thumb is the {{270 °F/h; 150 °C/h}} column for a fast firing, the {{108 °F/h; 60 °C/h}} column for a medium one and the {{27 °F/h; 15 °C/h}} column for a slow one. To work out a rate, divide the temperature climbed by the hours it took: a kiln that climbs {{900 °F; 500 °C}} in 3 hours is heating at about {{300 °F/h; 167 °C/h}}.
+Estes valores vêm da tabela de cones Orton (©2001) para cones autossuportados; os cones 11 a 14 vêm das tabelas que a Orton publica hoje, que dão os mesmos valores onde se sobrepõem, e para os cones 13 e 14 só em °C (os seus °F foram aqui convertidos). Escolha a coluna que corresponde à rapidez com que o seu forno subiu nos últimos {{180 °F; 100 °C}}. A regra prática da Orton é a coluna {{270 °F/h; 150 °C/h}} para uma cozedura rápida, a coluna {{108 °F/h; 60 °C/h}} para uma média e a coluna {{27 °F/h; 15 °C/h}} para uma lenta. Para calcular uma velocidade, divida a subida de temperatura pelas horas que demorou: um forno que sobe {{900 °F; 500 °C}} em 3 horas aquece a cerca de {{300 °F/h; 167 °C/h}}.
 
-Table: Orton self-supporting cones: the temperature at which each bends, by heating rate over the last {{180 °F; 100 °C}}
-Label: Orton cone chart
+Table: Cones Orton autossuportados: a temperatura a que cada um dobra, por velocidade de aquecimento nos últimos {{180 °F; 100 °C}}
+Label: Tabela de cones Orton
 
-| Cone | Slow, {{27 °F/h; 15 °C/h}} | Medium, {{108 °F/h; 60 °C/h}} | Fast, {{270 °F/h; 150 °C/h}} |
-| ---- | -------------------------: | ----------------------------: | ---------------------------: |
-| 022  |                          – |           {{1087 °F; 586 °C}} |          {{1094 °F; 590 °C}} |
-| 018  |                          – |           {{1319 °F; 715 °C}} |          {{1353 °F; 734 °C}} |
-| 015  |                          – |           {{1456 °F; 791 °C}} |          {{1504 °F; 818 °C}} |
-| 010  |        {{1636 °F; 891 °C}} |           {{1657 °F; 903 °C}} |          {{1679 °F; 915 °C}} |
-| 08   |        {{1692 °F; 922 °C}} |           {{1728 °F; 942 °C}} |          {{1753 °F; 956 °C}} |
-| 07   |                          – |           {{1789 °F; 976 °C}} |          {{1809 °F; 987 °C}} |
-| 06   |        {{1798 °F; 981 °C}} |           {{1828 °F; 998 °C}} |         {{1855 °F; 1013 °C}} |
-| 05   |       {{1870 °F; 1021 °C}} |          {{1888 °F; 1031 °C}} |         {{1911 °F; 1044 °C}} |
-| 04   |       {{1915 °F; 1046 °C}} |          {{1945 °F; 1063 °C}} |         {{1971 °F; 1077 °C}} |
-| 03   |       {{1960 °F; 1071 °C}} |          {{1987 °F; 1086 °C}} |         {{2019 °F; 1104 °C}} |
-| 02   |                          – |          {{2016 °F; 1102 °C}} |         {{2052 °F; 1122 °C}} |
-| 01   |       {{1999 °F; 1093 °C}} |          {{2046 °F; 1119 °C}} |         {{2080 °F; 1138 °C}} |
-| 1    |       {{2028 °F; 1109 °C}} |          {{2079 °F; 1137 °C}} |         {{2109 °F; 1154 °C}} |
-| 4    |       {{2086 °F; 1141 °C}} |          {{2124 °F; 1162 °C}} |         {{2161 °F; 1183 °C}} |
-| 5    |       {{2118 °F; 1159 °C}} |          {{2167 °F; 1186 °C}} |         {{2205 °F; 1207 °C}} |
-| 6    |       {{2165 °F; 1185 °C}} |          {{2232 °F; 1222 °C}} |         {{2269 °F; 1243 °C}} |
-| 7    |       {{2194 °F; 1201 °C}} |          {{2262 °F; 1239 °C}} |         {{2295 °F; 1257 °C}} |
-| 8    |       {{2212 °F; 1211 °C}} |          {{2280 °F; 1249 °C}} |         {{2320 °F; 1271 °C}} |
-| 9    |       {{2235 °F; 1224 °C}} |          {{2300 °F; 1260 °C}} |         {{2336 °F; 1280 °C}} |
-| 10   |       {{2284 °F; 1251 °C}} |          {{2345 °F; 1285 °C}} |         {{2381 °F; 1305 °C}} |
-| 11   |       {{2322 °F; 1272 °C}} |          {{2361 °F; 1294 °C}} |         {{2399 °F; 1315 °C}} |
-| 12   |       {{2345 °F; 1285 °C}} |          {{2383 °F; 1306 °C}} |         {{2419 °F; 1326 °C}} |
-| 13   |       {{2390 °F; 1310 °C}} |          {{2428 °F; 1331 °C}} |         {{2458 °F; 1348 °C}} |
-| 14   |       {{2464 °F; 1351 °C}} |          {{2489 °F; 1365 °C}} |         {{2523 °F; 1384 °C}} |
+| Cone | Lenta, {{27 °F/h; 15 °C/h}} | Média, {{108 °F/h; 60 °C/h}} | Rápida, {{270 °F/h; 150 °C/h}} |
+| ---- | --------------------------: | ---------------------------: | -----------------------------: |
+| 022  |                           – |          {{1087 °F; 586 °C}} |            {{1094 °F; 590 °C}} |
+| 018  |                           – |          {{1319 °F; 715 °C}} |            {{1353 °F; 734 °C}} |
+| 015  |                           – |          {{1456 °F; 791 °C}} |            {{1504 °F; 818 °C}} |
+| 010  |         {{1636 °F; 891 °C}} |          {{1657 °F; 903 °C}} |            {{1679 °F; 915 °C}} |
+| 08   |         {{1692 °F; 922 °C}} |          {{1728 °F; 942 °C}} |            {{1753 °F; 956 °C}} |
+| 07   |                           – |          {{1789 °F; 976 °C}} |            {{1809 °F; 987 °C}} |
+| 06   |         {{1798 °F; 981 °C}} |          {{1828 °F; 998 °C}} |           {{1855 °F; 1013 °C}} |
+| 05   |        {{1870 °F; 1021 °C}} |         {{1888 °F; 1031 °C}} |           {{1911 °F; 1044 °C}} |
+| 04   |        {{1915 °F; 1046 °C}} |         {{1945 °F; 1063 °C}} |           {{1971 °F; 1077 °C}} |
+| 03   |        {{1960 °F; 1071 °C}} |         {{1987 °F; 1086 °C}} |           {{2019 °F; 1104 °C}} |
+| 02   |                           – |         {{2016 °F; 1102 °C}} |           {{2052 °F; 1122 °C}} |
+| 01   |        {{1999 °F; 1093 °C}} |         {{2046 °F; 1119 °C}} |           {{2080 °F; 1138 °C}} |
+| 1    |        {{2028 °F; 1109 °C}} |         {{2079 °F; 1137 °C}} |           {{2109 °F; 1154 °C}} |
+| 4    |        {{2086 °F; 1141 °C}} |         {{2124 °F; 1162 °C}} |           {{2161 °F; 1183 °C}} |
+| 5    |        {{2118 °F; 1159 °C}} |         {{2167 °F; 1186 °C}} |           {{2205 °F; 1207 °C}} |
+| 6    |        {{2165 °F; 1185 °C}} |         {{2232 °F; 1222 °C}} |           {{2269 °F; 1243 °C}} |
+| 7    |        {{2194 °F; 1201 °C}} |         {{2262 °F; 1239 °C}} |           {{2295 °F; 1257 °C}} |
+| 8    |        {{2212 °F; 1211 °C}} |         {{2280 °F; 1249 °C}} |           {{2320 °F; 1271 °C}} |
+| 9    |        {{2235 °F; 1224 °C}} |         {{2300 °F; 1260 °C}} |           {{2336 °F; 1280 °C}} |
+| 10   |        {{2284 °F; 1251 °C}} |         {{2345 °F; 1285 °C}} |           {{2381 °F; 1305 °C}} |
+| 11   |        {{2322 °F; 1272 °C}} |         {{2361 °F; 1294 °C}} |           {{2399 °F; 1315 °C}} |
+| 12   |        {{2345 °F; 1285 °C}} |         {{2383 °F; 1306 °C}} |           {{2419 °F; 1326 °C}} |
+| 13   |        {{2390 °F; 1310 °C}} |         {{2428 °F; 1331 °C}} |           {{2458 °F; 1348 °C}} |
+| 14   |        {{2464 °F; 1351 °C}} |         {{2489 °F; 1365 °C}} |           {{2523 °F; 1384 °C}} |
 
-A dash marks a figure not copied here; see Orton's full chart for it.
+Um traço indica um valor que não foi copiado para aqui; consulte-o na tabela completa da Orton.
 
-Orton makes cones up to 42 for high-temperature work, but publishes temperatures only up to cone 14; for hotter cones its charts are "available (by request)". An older Orton chart, as kiln makers reprint it, gives a large cone 15 as {{2608 °F; 1431 °C}} at {{270 °F/h; 150 °C/h}}, and we found no published figure for cone 16 or above. Past cone 14, set witness cones and go by them, and check that your kiln is rated for that heat.
+A Orton fabrica cones até ao 42 para trabalhos a alta temperatura, mas só publica temperaturas até ao cone 14; para cones mais quentes, as suas tabelas estão «disponíveis (a pedido)». Uma tabela Orton mais antiga, tal como os fabricantes de fornos a reimprimem, dá para um cone 15 grande {{2608 °F; 1431 °C}} a {{270 °F/h; 150 °C/h}}, e não encontrámos nenhum valor publicado para o cone 16 ou superiores. Acima do cone 14, coloque cones testemunho{{en: witness cones}} e guie-se por eles, e confirme que a temperatura máxima indicada pelo fabricante do seu forno chega a esse calor.
 
-Large cones read within a few degrees of these figures: a large cone 6 at {{108 °F/h; 60 °C/h}} is {{2228 °F; 1220 °C}}. Small cones, the kind used in a kiln sitter, are listed only at {{540 °F/h; 300 °C/h}}, so the chart gives a small cone 6 as {{2291 °F; 1255 °C}}. That is not the temperature at which a sitter turns the kiln off. The sitter cone's job is to match the shelf cone, and the shelf cone has the final say.
+Os cones grandes ficam a poucos graus destes valores: um cone 6 grande a {{108 °F/h; 60 °C/h}} dá {{2228 °F; 1220 °C}}. Os cones pequenos, os que se usam no kiln sitter, só aparecem na tabela a {{540 °F/h; 300 °C/h}}, por isso a tabela dá para um cone 6 pequeno {{2291 °F; 1255 °C}}. Essa não é a temperatura a que um kiln sitter desliga o forno. A função do cone do kiln sitter é acompanhar o cone da placa, e é o cone da placa que tem a última palavra.
 
-Two cautions. Orton's 2019 booklet gives cone 06 at the fast rate as {{1875 °F; 1024 °C}}, but the chart and Orton's FAQ both give {{1855 °F; 1013 °C}}, used here. And the large-cone table at the back of the Dawson kiln sitter manual has copying errors (cone 5 hotter than cone 6), so do not use it.
+Dois avisos. A brochura de 2019 da Orton dá para o cone 06 à velocidade rápida {{1875 °F; 1024 °C}}, mas a tabela e as perguntas frequentes (FAQ) da Orton dão ambas {{1855 °F; 1013 °C}}, o valor usado aqui. E a tabela de cones grandes no fim do manual do kiln sitter da Dawson tem erros de cópia (o cone 5 mais quente do que o cone 6), por isso não a use.
 
 :::temperature
 
@@ -287,35 +287,35 @@ Uma **correção do cone** (offset) é uma regulação do controlador que sobe o
 
 :::sk
 
-## Firing to SK cones {#sk-cones lang=en}
+## Cozer com cones SK {#sk-cones}
 
-SK cones are the pyrometric cones made to Japan's standard, JIS R 8101, and sold in Japan by dealers such as Yuko Trading (有恒商事). Like any cone, an SK cone measures heatwork, not temperature alone: it softens and bends over when the ware has had enough heat, and you read how far it bent. Witness cones, reading how far a cone has bent, and holds work for it as for any cone. This section names each cone's system, and never turns an SK number into another system's number: the numbers of different cone series are not interchangeable.
+Os cones SK são os cones pirométricos fabricados segundo a norma japonesa JIS R 8101 e vendidos no Japão por revendedores como a Yuko Trading (有恒商事). Como qualquer cone, um cone SK mede o trabalho térmico{{en: heatwork}}, e não apenas a temperatura: amolece e dobra quando as peças receberam calor suficiente, e depois lê-se quanto dobrou. Os cones testemunho{{en: witness cones}}, a leitura de quanto um cone dobrou e os patamares{{en: holds}} funcionam com ele como com qualquer cone. Esta secção indica o sistema de cada cone e nunca converte um número SK no número de outro sistema: os números das diferentes séries de cones não são intercambiáveis.
 
 > [!NOTE]
-> Always write "SK" before the number. Many older Japanese recipes say only "SK 8" or "SK 9" without saying whose cone. Kyoto cones and SK cones to JIS carry the same numbers but bend at different temperatures (see Kyoto cones, below).
+> Escreva sempre «SK» antes do número. Muitas receitas japonesas antigas dizem apenas «SK 8» ou «SK 9», sem dizer de que cone se trata. Os cones de Quioto e os cones SK segundo a JIS têm os mesmos números, mas dobram a temperaturas diferentes (ver «Cones de Quioto», mais abaixo).
 
-### The large cones
+### Os cones grandes
 
-The standard has two sizes. Large cones (大型コーン) are "mainly used for measuring the degree of firing" (焼度測定), which is what a potter wants. Small cones (SK 26 to SK 42, at the top of the range) are "mainly used for refractoriness tests" and are not covered here. The table below gives the large cones from SK 022 to SK 20.
+A norma tem dois tamanhos. Os cones grandes (大型コーン) são «usados principalmente para medir o grau de cozedura» (焼度測定), que é o que interessa a um ceramista. Os cones pequenos (do SK 26 ao SK 42, no topo da gama) são «usados principalmente para ensaios de refratariedade» e não são tratados aqui. A tabela abaixo dá os cones grandes do SK 022 ao SK 20.
 
-The numbers run from SK 022, the coolest, up to SK 20 here. Between SK 015 and SK 6 the printed numbers carry an "a" (SK 015a, SK 6a); write it as printed.
+Aqui, os números vão do SK 022, o mais frio, até ao SK 20. Entre o SK 015 e o SK 6, os números impressos têm um «a» (SK 015a, SK 6a); escreva-o tal como vem impresso.
 
-### Setting large cones
+### Colocar os cones grandes
 
-Set each large cone in a plaque or a pat of clay, leaning toward its bending face. As with any cone, keep the height and the lean the same from firing to firing, because a difference in either changes how far it bends. Set the three cones of the pack (below) together, deep in the kiln near the middle of the load, where they get the heat the ware gets, yet where you can see them through a peephole; before you close the kiln, check that you can see all three.
+Coloque cada cone grande numa placa de cones ou num pedaço de barro, inclinado para o lado da sua face de dobra. Como com qualquer cone, mantenha a altura e a inclinação iguais de cozedura para cozedura, porque uma diferença em qualquer delas muda o quanto o cone dobra. Coloque juntos os três cones do conjunto{{en: cone pack}} (ver abaixo), bem dentro do forno, perto do centro da carga, onde recebem o calor que as peças recebem, mas onde os consiga ver por um óculo; antes de fechar o forno, verifique se consegue ver os três.
 
-We found no maker's or seller's instructions for how deep or at what angle to set SK cones. The nearest is a laboratory standard, JIS R 2204, Japan's test of how much heat a refractory material stands: it sets each SK cone with its marked face at 80° to a flat stand and its foot about 4 mm into it. That is a test for refractories, not a rule for firing pots, and we read it in a transcription of the standard, not in the standard itself.
+Não encontrámos instruções de nenhum fabricante ou vendedor sobre a que profundidade ou com que ângulo colocar os cones SK. O mais próximo é uma norma de laboratório, a JIS R 2204, o ensaio japonês de quanto calor um material refratário aguenta: coloca cada cone SK com a face marcada a 80° de uma base plana e o pé enterrado cerca de 4 mm nela. É um ensaio para refratários, não uma regra para cozer peças, e lemo-lo numa transcrição da norma, não na própria norma.
 
-### Guide, firing and guard cones
+### Cone guia, cone de cozedura e cone de proteção
 
-Cones are sold and set as three: a guide cone, a firing cone at the target, and a guard cone. Take the firing cone as the SK number your recipe or clay names, the guide cone as the next cooler cone (one row up in the table) and the guard cone as the next hotter one. When the guide cone starts to bend, the end is near; when the guard cone bends, the firing has gone too far.
+Os cones vendem-se e colocam-se em grupos de três: um cone guia, um cone de cozedura no alvo e um cone de proteção. Tome como cone de cozedura o número SK que a sua receita ou o seu barro indica, como cone guia o cone imediatamente mais frio (uma linha acima na tabela) e como cone de proteção o imediatamente mais quente. Quando o cone guia começa a dobrar, o fim está perto; quando o cone de proteção dobra, a cozedura foi longe demais.
 
-### The SK chart
+### A tabela SK
 
-Table: SK large cones (JIS R 8101): the nominal (JIS) temperature of each
-Label: SK chart
+Table: Cones SK grandes (JIS R 8101): a temperatura nominal (JIS) de cada um
+Label: Tabela SK
 
-| Cone    | Nominal (JIS) temperature |
+| Cone    | Temperatura nominal (JIS) |
 | ------- | ------------------------: |
 | SK 022  |       {{1112 °F; 600 °C}} |
 | SK 021  |       {{1202 °F; 650 °C}} |
@@ -360,23 +360,23 @@ Label: SK chart
 | SK 19   |      {{2768 °F; 1520 °C}} |
 | SK 20   |      {{2786 °F; 1530 °C}} |
 
-Every figure is nominal (JIS): the temperature the standard gives for the cone, as printed in Yuko Trading's table. The table does not print a heating rate. The standard gives reference temperatures. At a potter's rate of about 100 °C/h, Kyoto's municipal institute measured its own Kyoto cones bending 47–79 °C cooler than the JIS figure for the same number; we found no such measurements for SK cones to JIS. Set a witness cone and compare.
+Todos os valores são nominais (JIS): a temperatura que a norma dá para o cone, tal como impressa na tabela da Yuko Trading. A tabela não indica uma velocidade de aquecimento. A norma dá temperaturas de referência. A uma velocidade habitual para um ceramista, de cerca de 100 °C/h, o instituto municipal de Quioto mediu os seus próprios cones de Quioto a dobrar 47–79 °C abaixo do valor JIS para o mesmo número; não encontrámos medições deste tipo para os cones SK segundo a JIS. Coloque um cone testemunho e compare.
 
-### Kyoto cones
+### Cones de Quioto
 
-Kyoto cones (京都ゼーゲル), made by Kyoto's municipal institute, are no longer made: news reports say the institute ended production at the close of fiscal 2009. They carry the same numbers as SK cones to JIS but bend cooler: a Kyoto cone bends at about the temperature of the SK cone to JIS two or three numbers lower. A recipe from Kyoto that says "SK 8" may mean a Kyoto cone. The institute has published advice for potters moving from Kyoto cones to Orton cones, and substitutes Orton cone 10 for its own Kyoto SK 12. That is the institute's choice from its own measurements: it bent Kyoto cones and Orton cones in the same kiln at 100 °C/h, and Kyoto SK 12 (1290 °C) bent where Orton 10 (1290 °C) did. In the same table Kyoto SK 8 (1198 °C) bent near Orton 5 (1207 °C), and Kyoto SK 10 (1232 °C) where Orton 7 (1232 °C) did. Glazecalc uses this table, not the Orton chart at 60 °C/h, when it shows an SK cone beside an Orton cone, and says each match is approximate.
+Os cones de Quioto (京都ゼーゲル), feitos pelo instituto municipal de Quioto, já não são fabricados: segundo notícias da imprensa, o instituto terminou a produção no fim do ano fiscal de 2009. Têm os mesmos números que os cones SK segundo a JIS, mas dobram mais frios: um cone de Quioto dobra a cerca da temperatura do cone SK segundo a JIS dois ou três números abaixo. Uma receita de Quioto que diga «SK 8» pode referir-se a um cone de Quioto. O instituto publicou conselhos para os ceramistas que passam dos cones de Quioto para os cones Orton, e substitui o seu próprio SK 12 de Quioto pelo cone Orton 10. É uma escolha do instituto, feita a partir das suas próprias medições: cozeu cones de Quioto e cones Orton no mesmo forno a 100 °C/h, e o SK 12 de Quioto (1290 °C) dobrou onde dobrou o cone Orton 10 (1290 °C). Na mesma tabela, o SK 8 de Quioto (1198 °C) dobrou perto do cone Orton 5 (1207 °C), e o SK 10 de Quioto (1232 °C) onde dobrou o cone Orton 7 (1232 °C). O Glazecalc usa esta tabela, e não a tabela da Orton a 60 °C/h, quando mostra um cone SK ao lado de um cone Orton, e indica que cada correspondência é aproximada.
 
-### Orton cones sold in Japan
+### Cones Orton vendidos no Japão
 
-Orton self-supporting cones are sold in Japan under the name 立つゼーゲル ("standing Seger"), because they need no plaque or stand. They are Orton cones, with Orton's numbers and Orton's chart (above): fire to one only by its Orton number, and keep SK and Orton cones in separate packs, never in the same one.
+Os cones autossuportados Orton vendem-se no Japão com o nome 立つゼーゲル («Seger de pé»), porque não precisam de placa nem de suporte. São cones Orton, com os números e a tabela da Orton (acima): coza com eles apenas pelo número Orton, e mantenha os cones SK e os cones Orton em conjuntos separados, nunca no mesmo.
 
-### Sources for SK cones
+### Fontes sobre os cones SK
 
-- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (the SK table, checked 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
-- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (in force, reconfirmed 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
-- [JSA: JIS R 2204:1999, 耐火物及び耐火物原料の耐火度試験方法 (in force, reconfirmed 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+2204:1999)
-- [kikakurui.com: a transcription of JIS R 2204:1999, where clause 5 a) sets the cones (read 2026-10-19)](https://kikakurui.com/r2/R2204-1999-01.html)
-- [Kyoto Municipal Institute of Industrial Technology and Culture: points to note when moving from Kyoto cones to Orton cones](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
+- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (a tabela SK, consultada em 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
+- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (em vigor, reconfirmada em 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
+- [JSA: JIS R 2204:1999, 耐火物及び耐火物原料の耐火度試験方法 (em vigor, reconfirmada em 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+2204:1999)
+- [kikakurui.com: uma transcrição da JIS R 2204:1999, cuja cláusula 5 a) define como colocar os cones (lida em 2026-10-19)](https://kikakurui.com/r2/R2204-1999-01.html)
+- [Kyoto Municipal Institute of Industrial Technology and Culture: pontos a ter em conta ao passar dos cones de Quioto para os cones Orton](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
 
 :::
 
@@ -606,22 +606,22 @@ Se o kiln sitter disparar antes de os cones da placa dobrarem, use um cone mais 
 
 Um **pirómetro** é um medidor de temperatura que lê um **termopar**, uma sonda de calor que atravessa a parede do forno. Mostra a rapidez com que o forno está a subir, para que possa escolher a coluna certa da tabela de cones. Mas lê junto à parede, não nas peças, e a leitura desvia-se com o tempo. A L&L nota que um termopar tipo K pode ficar errado em mais de {{25 °F; 14 °C}} depois de repetidas cozeduras ao cone 6, «uma diferença maior do que um cone inteiro», enquanto um cone autossuportado varia no máximo {{4 °F; 2 °C}}. A Orton diz que os pirómetros precisam de ser recalibrados de vez em quando, e que os cones são a forma de os verificar.
 
-## Venting, peeking and safety {#venting lang=en}
+## Ventilação, espreitar e segurança {#venting}
 
-### Venting
+### Ventilação
 
-Early in a firing, clay and glaze give off water vapor and fumes, including carbon monoxide, and glazes can give off toxic fumes later in the firing too. L&L calls venting them "essential". With no vent system, that means the lid propped and the peepholes open in the early stages, as in the procedures above; slowing the heating during this time also helps the carbon burn out. In a kiln without a vent, Dawson, who made the sitter, also says to leave the top peephole open for the whole firing: the venting "will reduce deterioration of the kiln's metal parts and increase the life of the tube assembly". A **downdraft vent** (a powered vent fitted to the kiln) changes this. It does the venting, so Orton says the lid and peepholes stay closed for the whole firing except to check the cones, and L&L says to leave the vent on and plug the peepholes.
+No início de uma cozedura, a argila e o vidrado{{en: glaze}} libertam vapor de água e fumos, incluindo monóxido de carbono, e os vidrados também podem libertar fumos tóxicos mais tarde na cozedura. A L&L diz que ventilá-los é «essencial». Sem sistema de exaustão, isso significa ter a tampa entreaberta e os óculos de observação abertos nas fases iniciais, como nos procedimentos acima; abrandar o aquecimento durante este período também ajuda a queimar o carbono. Num forno sem exaustão, a Dawson, que fabricou o sitter, diz também para deixar aberto o óculo de cima durante toda a cozedura: a ventilação «reduzirá a deterioração das peças metálicas do forno e aumentará a vida útil do conjunto do tubo». Um **exaustor por baixo do forno (downdraft)**{{en: downdraft vent}} (um exaustor motorizado montado no forno) muda isto. Faz a ventilação, pelo que a Orton diz que a tampa e os óculos ficam fechados durante toda a cozedura, exceto para verificar os cones, e a L&L diz para deixar o exaustor ligado e tapar os óculos.
 
-For venting the room, and for carbon monoxide alarms, see [Safe mixing and ventilation](/guides/safe-mixing) and [Don't poison your family](/guides/home-safety).
+Para a ventilação da sala e para os detetores de monóxido de carbono, veja [Mistura segura e ventilação](/guides/safe-mixing) e [Não envenene a sua família](/guides/home-safety).
 
-### While the kiln is firing
+### Enquanto o forno está a cozer
 
-- Look through a peephole only with IR-rated shade 3 welding glasses; sunglasses are not enough. Skutt advises twisting the plugs into place so they do not fall out.
-- Stay nearby and check the kiln while it fires, above all near its expected finishing time; a sitter is not a fail-safe. Fire only when an adult will be home and awake through the whole firing.
-- Never fire on or near anything that burns, such as a wood floor or carpet.
-- Keep the clearances in your manual. Published figures range from 12 in (30 cm) to 3 ft (91 cm); where the manual is silent, 18 in (46 cm) from walls and 3 ft (91 cm) from anything that burns is the safest choice.
-- Keep the space around the sitter's weight clear so it can drop.
-- When the firing ends, turn the switches off and turn off the breaker as well.
+- Espreite por um óculo apenas com óculos de soldadura com proteção IV e escala 3; os óculos de sol não bastam. A Skutt aconselha a rodar os tampões ao colocá-los para que não caiam.
+- Fique por perto e verifique o forno enquanto coze, sobretudo perto da hora prevista para terminar; um sitter não é à prova de falhas. Coza apenas quando houver um adulto em casa e acordado durante toda a cozedura.
+- Nunca coza sobre ou perto de nada que arda, como um soalho de madeira ou uma alcatifa.
+- Respeite as distâncias de segurança do seu manual. Os valores publicados vão de 12 polegadas (30 cm) a 3 pés (91 cm); onde o manual é omisso, 18 polegadas (46 cm) das paredes e 3 pés (91 cm) de qualquer coisa que arda é a escolha mais segura.
+- Mantenha livre o espaço à volta do peso do sitter para que possa cair.
+- Quando a cozedura terminar, desligue os interruptores e desligue também o disjuntor.
 
 ## Arrefecimento e desenforna {#cooling}
 

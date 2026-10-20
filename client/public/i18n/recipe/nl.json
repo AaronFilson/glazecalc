@@ -363,7 +363,8 @@
     "heading": "Gevaren",
     "intro": "Zoals het record van elke grondstof ze geeft; die van de standaardbibliotheek komen uit de veiligheidsinformatiebladen van de leveranciers.",
     "line": "<b>{names}:</b> {hazards}",
-    "unknown": "{count, plural, one {Voor {list} zijn geen gevaren opgegeven: zie het veiligheidsinformatieblad dat erbij hoort.} other {Voor {list} zijn geen gevaren opgegeven: zie de veiligheidsinformatiebladen die erbij horen.}}"
+    "unknown": "{count, plural, one {Voor {list} zijn geen gevaren opgegeven: zie het veiligheidsinformatieblad dat erbij hoort.} other {Voor {list} zijn geen gevaren opgegeven: zie de veiligheidsinformatiebladen die erbij horen.}}",
+    "safety": "Droge glazuurgrondstoffen geven stof, en dat moet u uit uw longen houden, ook stof van grondstoffen die niet als gevaarlijk zijn ingedeeld. Zie <mixing>Veilig mengen en ventileren</mixing> en, als er kinderen of huisdieren in de buurt zijn, ook <home>Vergiftig uw gezin niet</home>. Als het veiligheidsinformatieblad van een grondstof meer zegt, volgt u dat."
   },
   "compare": {
     "heading": "Twee recepten vergelijken",
@@ -532,7 +533,10 @@
     "suppliesShare": "{percent}% van het {oxide}",
     "suppliesLittle": "een klein deel van het glazuur",
     "changed": "{name} {from} → {to}",
-    "added": "{name} {amount}, nieuw"
+    "added": "{name} {amount}, nieuw",
+    "why": {
+      "rawClay": "ongecalcineerde klei krimpt terwijl het glazuur droogt, en veel ervan kan het glazuur op het werkstuk doen scheuren en in de oven doen samentrekken; gecalcineerd kaolien kan de rest leveren"
+    }
   },
   "shelf": {
     "empty": "Er zijn geen grondstoffen in voorraad om mee te maken."
@@ -570,7 +574,8 @@
     "bands": {
       "low": "Lage temperatuur, kegel 06–02",
       "mid": "Middentemperatuur, kegel 4–6",
-      "high": "Hoge temperatuur, kegel 9–11"
+      "high": "Hoge temperatuur, kegel 9–11",
+      "top": "Zeer hoge temperatuur, kegel 12 en heter"
     },
     "shownFor": "Als er geen stook is gekozen, gelden de getoonde cijfers voor: {band}. De stook wordt bij het recept bewaard.",
     "cone": "Dit zijn de cijfers van de set voor kegel {cone}.",
@@ -590,6 +595,7 @@
     "notInSet": "Deze set heeft geen bereik voor {oxides}.",
     "checksOnly": "Deze set controleert alleen {oxides}.",
     "notApply": "{name} heeft geen cijfers voor deze stook ({band}), dus er wordt niet gecontroleerd: cijfers voor een andere stook zouden misleiden.",
+    "topNote": "De gepubliceerde glazuurlimieten die we vonden, stoppen bij kegel 10, en Glazecalc leest ze niet verder dan kegel 11, dus een stook vanaf kegel 12 wordt niet aan limieten getoetst. Uw proefplaatjes beslissen.",
     "guidance": "Dit zijn richtlijnen, geen test die een glazuur haalt of niet haalt: een glazuur buiten deze grenzen kan goed zijn, en een glazuur erbinnen kan toch haarscheuren krijgen, metalen afgeven of mislukken. Test het.",
     "source": "Bron:",
     "saveFailed": "Uw keuze van limietenset kon niet in uw account worden opgeslagen, dus de eerdere limietenset blijft in gebruik.",
@@ -627,7 +633,8 @@
       "ash": "Glazecalc kan de chemie van dit glazuur niet met de stook vergelijken: er zit as in, waarvan de samenstelling te veel verschilt voor de gepubliceerde cijfers die deze controle gebruikt.",
       "noTemperature": "Glazecalc kan de chemie van dit glazuur niet vergelijken met {scale, select, band {{band, select, low {lage temperatuur} mid {middentemperatuur} other {hoge temperatuur}}} sk {SK {cone}} temperature {{cone} °C} other {kegel {cone}}}: voor die kegel is er geen gemeten temperatuur.",
       "between": "Glazecalc kan de chemie van dit glazuur niet vergelijken met {scale, select, band {{band, select, low {lage temperatuur} mid {middentemperatuur} other {hoge temperatuur}}} sk {SK {cone}} temperature {{cone} °C} other {kegel {cone}}}: de gepubliceerde cijfers die deze controle gebruikt gelden voor lage temperatuur en voor midden- en hoge temperatuur, niet voor de kegels ertussen (01 tot 3).",
-      "belowChart": "Glazecalc kan de chemie van dit glazuur niet vergelijken met {scale, select, band {{band, select, low {lage temperatuur} mid {middentemperatuur} other {hoge temperatuur}}} sk {SK {cone}} temperature {{cone} °C} other {kegel {cone}}}: de boorregel van Katz geldt voor kegel 06 tot kegel 10, en die stook is koeler."
+      "belowChart": "Glazecalc kan de chemie van dit glazuur niet vergelijken met {scale, select, band {{band, select, low {lage temperatuur} mid {middentemperatuur} other {hoge temperatuur}}} sk {SK {cone}} temperature {{cone} °C} other {kegel {cone}}}: de boorregel van Katz geldt voor kegel 06 tot kegel 10, en die stook is koeler.",
+      "aboveChart": "Glazecalc kan de chemie van dit glazuur niet vergelijken met {scale, select, band {{band, select, top {zeer hoge temperatuur} other {hoge temperatuur}}} sk {SK {cone}} temperature {{cone} °C} other {kegel {cone}}}: de boorregel van Katz geldt voor kegel 06 tot kegel 10, de cijfers van Hesselberth en Roy voor siliciumoxide en aluminiumoxide stoppen bij kegel 10, en die stook is heter."
     }
   },
   "stull": {
@@ -978,6 +985,7 @@
     "approxTemperature": "≈ {temperature} ({basis}; bij benadering)",
     "approxCone": "≈ {cone} ({basis}; bij benadering)",
     "basis": {
+      "orton150": "de oudere tabel van Orton voor grote kegels bij 150 °C per uur",
       "kyoto": "gemeten bij 100 °C per uur door het gemeentelijk instituut van Kyoto",
       "stated": "zoals opgegeven"
     },

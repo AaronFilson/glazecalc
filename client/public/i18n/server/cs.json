@@ -100,6 +100,7 @@
   "limitSet-choices": "Vyberte hesselberth-roy nebo glazecalc.",
   "currency-choices": "Vyberte jednu z měn v seznamu nebo nechte výběr podle svého regionu.",
   "calendar-choices": "Data lze zobrazit v gregoriánském kalendáři (gregory), v thajském buddhistickém letopočtu (buddhist) nebo v japonských érách (japanese).",
+  "digits-choices": "Číslice lze zobrazovat tak, jak je obvyklé tam, kde jste (auto), jako 0–9 (western), nebo vlastními číslicemi jazyka (native).",
   "shelf-invalid": "Zásoba je seznam surovin, nejvýše: {most}.",
   "shelf-full": "Zásoba může obsahovat nejvýše {most} surovin. Nic se nezměnilo.",
   "shelf-material-unknown": "Tato surovina není mezi vašimi surovinami ani v knihovně Glazecalc.",

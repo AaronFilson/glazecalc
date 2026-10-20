@@ -82,6 +82,31 @@
     "languages": "Keeled",
     "language": "Keel:"
   },
+  "picker": {
+    "results": "{count, plural, one {# vaste} other {# vastet}}",
+    "languages": {
+      "search": "Otsi keeli",
+      "showAll": "Kuva kõik keeled",
+      "noMatch": "Sobivat keelt ei leitud"
+    },
+    "regions": {
+      "search": "Otsi riike ja piirkondi",
+      "showAll": "Kuva kõik riigid ja piirkonnad",
+      "noMatch": "Sobivat riiki ega piirkonda ei leitud"
+    },
+    "groups": {
+      "africa": "Aafrika",
+      "americas": "Ameerika",
+      "asia": "Aasia",
+      "eastAsia": "Ida-Aasia",
+      "europe": "Euroopa",
+      "middleEastNorthAfrica": "Lähis-Ida ja Põhja-Aafrika",
+      "oceania": "Okeaania",
+      "southAsia": "Lõuna-Aasia",
+      "southeastAsia": "Kagu-Aasia",
+      "other": "Muud"
+    }
+  },
   "numbers": {
     "notANumber": "Sisestage arv, näiteks {example}.",
     "notANumberComma": "Sisestage arv kümnendkomaga, näiteks {example}.",

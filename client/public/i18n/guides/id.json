@@ -52,6 +52,7 @@
     "emergency": "Keadaan darurat: tidak sadar, tidak bernapas, kejang",
     "poisonAdvice": "{who, select, children {Saran keracunan: {name} (hanya anak)} other {Saran keracunan: {name}}}",
     "or": "atau {number}",
+    "orCall": "atau <link>{number}</link>",
     "online": "Daring: <link>{name}</link>.",
     "poisonAdviceNone": "Saran keracunan",
     "noLine": "Kami tidak dapat memastikan adanya saluran informasi keracunan publik di sini. Hubungi dokter Anda, atau nomor darurat jika mendesak.",
@@ -111,6 +112,10 @@
     "bandFromTo": "Debu dengan silika bebas (SiO₂) {from}% sampai {to}%",
     "bandOverTo": "Debu dengan silika bebas lebih dari {from}% dan paling banyak {to}%",
     "bandAbove": "Debu dengan silika bebas lebih dari {from}%",
+    "untilDate": "Sampai {date}",
+    "fromDate": "Mulai {date}",
+    "beforeFormula": "Batas untuk debu respirabel, dengan Q adalah silika kristalin di dalamnya, dalam %",
+    "beforeAll": "Untuk debu yang seluruhnya silika kristalin",
     "recommended": "Direkomendasikan oleh {abbr}",
     "value": "{value} mg/m³",
     "kind": {
@@ -121,6 +126,7 @@
     },
     "setBy": "Ditetapkan oleh <link>{law}</link>.",
     "from": "Berlaku mulai {date}.",
+    "beforeSetBy": "Sampai saat itu, batasnya ditetapkan oleh <link>{law}</link>.",
     "lowerThanEu": "Lebih rendah daripada batas mengikat UE sebesar {value} mg/m³.",
     "sameAsEu": "Sama dengan batas mengikat UE.",
     "recommendedBy": "{abbr} ({by}) merekomendasikan nilai ini dalam <link>{title}</link>. Ini bukan hukum.",
@@ -183,7 +189,13 @@
       "vnMedium": "Benda dalam untuk menampung makanan, dari 1100 mL sampai di bawah 3000 mL",
       "vnStorage": "Benda dalam untuk menampung makanan, 3000 mL atau lebih",
       "vnCooking": "Benda dalam untuk memasak",
-      "vnCups": "Cangkir dan mangkuk kecil"
+      "vnCups": "Cangkir dan mangkuk kecil",
+      "cnFlat": "Wadah datar, kedalaman 25 mm atau kurang",
+      "cnSmall": "Wadah cekung kecil, di bawah 1,1 L, selain cangkir",
+      "cnLarge": "Wadah cekung besar, dari 1,1 L sampai kurang dari 3 L",
+      "cnStorage": "Stoples penyimpanan, 3 L atau lebih",
+      "cnCups": "Cangkir, untuk air atau minuman",
+      "cnCooking": "Peralatan memasak, untuk memanaskan makanan"
     },
     "judged": {
       "average": "rata-rata 6 benda",
@@ -197,6 +209,8 @@
     "atMost": "Benda dinyatakan lulus jika pelepasannya tidak melebihi batas: hukum menyebutnya “paling banyak”.",
     "ppm": "ppm di sini adalah miligram per liter larutan uji (mg/L).",
     "unknown": "Kami belum memastikan aturan di {region}.",
+    "none": "Tidak ada hukum di {region} yang menetapkan batas untuk timbal dan kadmium yang boleh dilepaskan oleh benda yang sudah dibakar (diperiksa {date}).",
+    "noneSource": "Sumber: <link>{law}</link>.",
     "choosePrompt": "Pilih negara Anda untuk melihat aturannya."
   },
   "equivalents": {

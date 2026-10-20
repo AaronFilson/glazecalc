@@ -79,47 +79,47 @@ It-tabella tagħti {{2232 °F; 1222 °C}} għal kon 6 li joqgħod waħdu, imma b
 
 :::
 
-## The cone chart {#cone-chart lang=en}
+## It-tabella tal-koni {#cone-chart}
 
-These figures are from Orton's cone chart (©2001) for self-supporting cones; cones 11 to 14 are from the charts Orton publishes now, which give the same figures where they overlap, and cones 13 and 14 only in °C (their °F here is converted). Choose the column that matches how fast your kiln climbed over the last {{180 °F; 100 °C}}. Orton's rule of thumb is the {{270 °F/h; 150 °C/h}} column for a fast firing, the {{108 °F/h; 60 °C/h}} column for a medium one and the {{27 °F/h; 15 °C/h}} column for a slow one. To work out a rate, divide the temperature climbed by the hours it took: a kiln that climbs {{900 °F; 500 °C}} in 3 hours is heating at about {{300 °F/h; 167 °C/h}}.
+Dawn iċ-ċifri huma mit-tabella tal-koni{{en: cone}} ta’ Orton (©2001) għal koni li joqogħdu weħidhom; il-koni 11 sa 14 huma mit-tabelli li Orton jippubblika llum, li jagħtu l-istess ċifri fejn jikkoinċidu, u jagħtu l-koni 13 u 14 biss f’°C (il-°F tagħhom hawn huwa kkonvertit). Agħżel il-kolonna li taqbel ma’ kemm tela’ malajr il-forn tiegħek matul l-aħħar {{180 °F; 100 °C}}. Ir-regola prattika ta’ Orton hija l-kolonna ta’ {{270 °F/h; 150 °C/h}} għal ħamja mgħaġġla, il-kolonna ta’ {{108 °F/h; 60 °C/h}} għal waħda medja u l-kolonna ta’ {{27 °F/h; 15 °C/h}} għal waħda bil-mod. Biex tikkalkula r-rata, aqsam il-gradi li tela’ l-forn bis-sigħat li ħa: forn li jitla’ {{900 °F; 500 °C}} f’3 sigħat qed jisħon b’rata ta’ madwar {{300 °F/h; 167 °C/h}}.
 
-Table: Orton self-supporting cones: the temperature at which each bends, by heating rate over the last {{180 °F; 100 °C}}
-Label: Orton cone chart
+Table: Koni Orton li joqogħdu weħidhom: it-temperatura li fiha jitgħawweġ kull wieħed, skont ir-rata tat-tisħin matul l-aħħar {{180 °F; 100 °C}}
+Label: It-tabella tal-koni ta’ Orton
 
-| Cone | Slow, {{27 °F/h; 15 °C/h}} | Medium, {{108 °F/h; 60 °C/h}} | Fast, {{270 °F/h; 150 °C/h}} |
-| ---- | -------------------------: | ----------------------------: | ---------------------------: |
-| 022  |                          – |           {{1087 °F; 586 °C}} |          {{1094 °F; 590 °C}} |
-| 018  |                          – |           {{1319 °F; 715 °C}} |          {{1353 °F; 734 °C}} |
-| 015  |                          – |           {{1456 °F; 791 °C}} |          {{1504 °F; 818 °C}} |
-| 010  |        {{1636 °F; 891 °C}} |           {{1657 °F; 903 °C}} |          {{1679 °F; 915 °C}} |
-| 08   |        {{1692 °F; 922 °C}} |           {{1728 °F; 942 °C}} |          {{1753 °F; 956 °C}} |
-| 07   |                          – |           {{1789 °F; 976 °C}} |          {{1809 °F; 987 °C}} |
-| 06   |        {{1798 °F; 981 °C}} |           {{1828 °F; 998 °C}} |         {{1855 °F; 1013 °C}} |
-| 05   |       {{1870 °F; 1021 °C}} |          {{1888 °F; 1031 °C}} |         {{1911 °F; 1044 °C}} |
-| 04   |       {{1915 °F; 1046 °C}} |          {{1945 °F; 1063 °C}} |         {{1971 °F; 1077 °C}} |
-| 03   |       {{1960 °F; 1071 °C}} |          {{1987 °F; 1086 °C}} |         {{2019 °F; 1104 °C}} |
-| 02   |                          – |          {{2016 °F; 1102 °C}} |         {{2052 °F; 1122 °C}} |
-| 01   |       {{1999 °F; 1093 °C}} |          {{2046 °F; 1119 °C}} |         {{2080 °F; 1138 °C}} |
-| 1    |       {{2028 °F; 1109 °C}} |          {{2079 °F; 1137 °C}} |         {{2109 °F; 1154 °C}} |
-| 4    |       {{2086 °F; 1141 °C}} |          {{2124 °F; 1162 °C}} |         {{2161 °F; 1183 °C}} |
-| 5    |       {{2118 °F; 1159 °C}} |          {{2167 °F; 1186 °C}} |         {{2205 °F; 1207 °C}} |
-| 6    |       {{2165 °F; 1185 °C}} |          {{2232 °F; 1222 °C}} |         {{2269 °F; 1243 °C}} |
-| 7    |       {{2194 °F; 1201 °C}} |          {{2262 °F; 1239 °C}} |         {{2295 °F; 1257 °C}} |
-| 8    |       {{2212 °F; 1211 °C}} |          {{2280 °F; 1249 °C}} |         {{2320 °F; 1271 °C}} |
-| 9    |       {{2235 °F; 1224 °C}} |          {{2300 °F; 1260 °C}} |         {{2336 °F; 1280 °C}} |
-| 10   |       {{2284 °F; 1251 °C}} |          {{2345 °F; 1285 °C}} |         {{2381 °F; 1305 °C}} |
-| 11   |       {{2322 °F; 1272 °C}} |          {{2361 °F; 1294 °C}} |         {{2399 °F; 1315 °C}} |
-| 12   |       {{2345 °F; 1285 °C}} |          {{2383 °F; 1306 °C}} |         {{2419 °F; 1326 °C}} |
-| 13   |       {{2390 °F; 1310 °C}} |          {{2428 °F; 1331 °C}} |         {{2458 °F; 1348 °C}} |
-| 14   |       {{2464 °F; 1351 °C}} |          {{2489 °F; 1365 °C}} |         {{2523 °F; 1384 °C}} |
+| Kon | Bil-mod, {{27 °F/h; 15 °C/h}} | Medja, {{108 °F/h; 60 °C/h}} | Malajr, {{270 °F/h; 150 °C/h}} |
+| --- | ----------------------------: | ---------------------------: | -----------------------------: |
+| 022 |                             – |          {{1087 °F; 586 °C}} |            {{1094 °F; 590 °C}} |
+| 018 |                             – |          {{1319 °F; 715 °C}} |            {{1353 °F; 734 °C}} |
+| 015 |                             – |          {{1456 °F; 791 °C}} |            {{1504 °F; 818 °C}} |
+| 010 |           {{1636 °F; 891 °C}} |          {{1657 °F; 903 °C}} |            {{1679 °F; 915 °C}} |
+| 08  |           {{1692 °F; 922 °C}} |          {{1728 °F; 942 °C}} |            {{1753 °F; 956 °C}} |
+| 07  |                             – |          {{1789 °F; 976 °C}} |            {{1809 °F; 987 °C}} |
+| 06  |           {{1798 °F; 981 °C}} |          {{1828 °F; 998 °C}} |           {{1855 °F; 1013 °C}} |
+| 05  |          {{1870 °F; 1021 °C}} |         {{1888 °F; 1031 °C}} |           {{1911 °F; 1044 °C}} |
+| 04  |          {{1915 °F; 1046 °C}} |         {{1945 °F; 1063 °C}} |           {{1971 °F; 1077 °C}} |
+| 03  |          {{1960 °F; 1071 °C}} |         {{1987 °F; 1086 °C}} |           {{2019 °F; 1104 °C}} |
+| 02  |                             – |         {{2016 °F; 1102 °C}} |           {{2052 °F; 1122 °C}} |
+| 01  |          {{1999 °F; 1093 °C}} |         {{2046 °F; 1119 °C}} |           {{2080 °F; 1138 °C}} |
+| 1   |          {{2028 °F; 1109 °C}} |         {{2079 °F; 1137 °C}} |           {{2109 °F; 1154 °C}} |
+| 4   |          {{2086 °F; 1141 °C}} |         {{2124 °F; 1162 °C}} |           {{2161 °F; 1183 °C}} |
+| 5   |          {{2118 °F; 1159 °C}} |         {{2167 °F; 1186 °C}} |           {{2205 °F; 1207 °C}} |
+| 6   |          {{2165 °F; 1185 °C}} |         {{2232 °F; 1222 °C}} |           {{2269 °F; 1243 °C}} |
+| 7   |          {{2194 °F; 1201 °C}} |         {{2262 °F; 1239 °C}} |           {{2295 °F; 1257 °C}} |
+| 8   |          {{2212 °F; 1211 °C}} |         {{2280 °F; 1249 °C}} |           {{2320 °F; 1271 °C}} |
+| 9   |          {{2235 °F; 1224 °C}} |         {{2300 °F; 1260 °C}} |           {{2336 °F; 1280 °C}} |
+| 10  |          {{2284 °F; 1251 °C}} |         {{2345 °F; 1285 °C}} |           {{2381 °F; 1305 °C}} |
+| 11  |          {{2322 °F; 1272 °C}} |         {{2361 °F; 1294 °C}} |           {{2399 °F; 1315 °C}} |
+| 12  |          {{2345 °F; 1285 °C}} |         {{2383 °F; 1306 °C}} |           {{2419 °F; 1326 °C}} |
+| 13  |          {{2390 °F; 1310 °C}} |         {{2428 °F; 1331 °C}} |           {{2458 °F; 1348 °C}} |
+| 14  |          {{2464 °F; 1351 °C}} |         {{2489 °F; 1365 °C}} |           {{2523 °F; 1384 °C}} |
 
-A dash marks a figure not copied here; see Orton's full chart for it.
+Fejn hemm “–”, iċ-ċifra ma ġietx ikkupjata hawn; sibha fit-tabella sħiħa ta’ Orton.
 
-Orton makes cones up to 42 for high-temperature work, but publishes temperatures only up to cone 14; for hotter cones its charts are "available (by request)". An older Orton chart, as kiln makers reprint it, gives a large cone 15 as {{2608 °F; 1431 °C}} at {{270 °F/h; 150 °C/h}}, and we found no published figure for cone 16 or above. Past cone 14, set witness cones and go by them, and check that your kiln is rated for that heat.
+Orton jagħmel koni sa numru 42 għal xogħol f’temperaturi għoljin, iżda jippubblika t-temperaturi biss sal-kon 14; għal koni aktar sħan, it-tabelli tiegħu huma “disponibbli (fuq talba)”. Tabella eqdem ta’ Orton, kif jistampawha mill-ġdid il-manifatturi tal-fran, tagħti kon kbir 15 bħala {{2608 °F; 1431 °C}} b’{{270 °F/h; 150 °C/h}}, u ma sibna l-ebda ċifra ppubblikata għall-kon 16 jew koni aktar sħan. Lil hinn mill-kon 14, qiegħed koni xhieda u mexxi skonthom, u ċċekkja li t-temperatura massima li jagħti l-manifattur tal-forn tiegħek tilħaq dik is-sħana.
 
-Large cones read within a few degrees of these figures: a large cone 6 at {{108 °F/h; 60 °C/h}} is {{2228 °F; 1220 °C}}. Small cones, the kind used in a kiln sitter, are listed only at {{540 °F/h; 300 °C/h}}, so the chart gives a small cone 6 as {{2291 °F; 1255 °C}}. That is not the temperature at which a sitter turns the kiln off. The sitter cone's job is to match the shelf cone, and the shelf cone has the final say.
+Il-koni l-kbar jaqraw ftit gradi biss ’il bogħod minn dawn iċ-ċifri: kon 6 kbir b’rata ta’ {{108 °F/h; 60 °C/h}} jitgħawweġ f’{{2228 °F; 1220 °C}}. Il-koni ż-żgħar, it-tip li jintuża fis-sitter, huma mniżżlin biss b’rata ta’ {{540 °F/h; 300 °C/h}}, għalhekk it-tabella tagħti {{2291 °F; 1255 °C}} għal kon 6 żgħir. Din mhix it-temperatura li fiha s-sitter jitfi l-forn. Ix-xogħol tal-kon tas-sitter huwa li jaqbel mal-kon fuq ix-xkaffa, u l-kon fuq ix-xkaffa għandu l-aħħar kelma.
 
-Two cautions. Orton's 2019 booklet gives cone 06 at the fast rate as {{1875 °F; 1024 °C}}, but the chart and Orton's FAQ both give {{1855 °F; 1013 °C}}, used here. And the large-cone table at the back of the Dawson kiln sitter manual has copying errors (cone 5 hotter than cone 6), so do not use it.
+Żewġ twissijiet. Il-ktejjeb ta’ Orton tal-2019 jagħti {{1875 °F; 1024 °C}} għall-kon 06 bir-rata mgħaġġla, imma t-tabella u l-mistoqsijiet frekwenti (FAQ) ta’ Orton it-tnejn jagħtu {{1855 °F; 1013 °C}}, iċ-ċifra li nużaw hawn. U t-tabella tal-koni kbar fl-aħħar tal-manwal tas-sitter ta’ Dawson fiha żbalji tal-ikkupjar (il-kon 5 aktar sħun mill-kon 6), għalhekk tużahiex.
 
 :::temperature
 
@@ -287,96 +287,96 @@ L-**aġġustament tal-kon** huwa ssettjar tal-kontrollur li jgħolli jew ibaxxi 
 
 :::sk
 
-## Firing to SK cones {#sk-cones lang=en}
+## Il-ħami bil-koni SK {#sk-cones}
 
-SK cones are the pyrometric cones made to Japan's standard, JIS R 8101, and sold in Japan by dealers such as Yuko Trading (有恒商事). Like any cone, an SK cone measures heatwork, not temperature alone: it softens and bends over when the ware has had enough heat, and you read how far it bent. Witness cones, reading how far a cone has bent, and holds work for it as for any cone. This section names each cone's system, and never turns an SK number into another system's number: the numbers of different cone series are not interchangeable.
+Il-koni SK huma l-koni pirometriċi magħmulin skont l-istandard tal-Ġappun, JIS R 8101, u mibjugħin fil-Ġappun minn negozjanti bħal Yuko Trading (有恒商事). Bħal kull kon{{en: cone}}, kon SK ikejjel ix-xogħol tas-sħana{{en: heatwork}}, mhux it-temperatura biss: jirtab u jitgħawweġ meta l-oġġetti jkunu ħadu biżżejjed sħana, u int taqra kemm tgħawweġ. Il-koni xhieda{{en: witness cone}}, il-qari ta’ kemm tgħawweġ kon, u ż-żamma f’temperatura{{en: hold}} jaħdmu għalih bħal għal kull kon ieħor. Din it-taqsima ssemmi s-sistema ta’ kull kon, u qatt ma tibdel numru SK f’numru ta’ sistema oħra: in-numri ta’ serje differenti ta’ koni ma jistgħux jinbidlu ma’ xulxin.
 
 > [!NOTE]
-> Always write "SK" before the number. Many older Japanese recipes say only "SK 8" or "SK 9" without saying whose cone. Kyoto cones and SK cones to JIS carry the same numbers but bend at different temperatures (see Kyoto cones, below).
+> Dejjem ikteb “SK” qabel in-numru. Ħafna riċetti Ġappuniżi antiki jgħidu biss “SK 8” jew “SK 9”, mingħajr ma jgħidu ta’ min hu l-kon. Il-koni ta’ Kyoto u l-koni SK skont il-JIS għandhom l-istess numri, iżda jitgħawġu f’temperaturi differenti (ara l-koni ta’ Kyoto, hawn taħt).
 
-### The large cones
+### Il-koni l-kbar
 
-The standard has two sizes. Large cones (大型コーン) are "mainly used for measuring the degree of firing" (焼度測定), which is what a potter wants. Small cones (SK 26 to SK 42, at the top of the range) are "mainly used for refractoriness tests" and are not covered here. The table below gives the large cones from SK 022 to SK 20.
+L-istandard għandu żewġ daqsijiet. Il-koni l-kbar (大型コーン) “jintużaw l-aktar biex jitkejjel il-grad tal-ħami” (焼度測定), u dan hu li jrid fuħħari. Il-koni ż-żgħar (minn SK 26 sa SK 42, fil-quċċata tal-firxa) “jintużaw l-aktar għat-testijiet tar-reżistenza għas-sħana”, u mhumiex koperti hawn. It-tabella hawn taħt tagħti l-koni l-kbar minn SK 022 sa SK 20.
 
-The numbers run from SK 022, the coolest, up to SK 20 here. Between SK 015 and SK 6 the printed numbers carry an "a" (SK 015a, SK 6a); write it as printed.
+Hawn in-numri jibdew minn SK 022, l-aktar kiesaħ, u jaslu sa SK 20. Minn SK 015 sa SK 6 in-numri stampati għandhom “a” (SK 015a, SK 6a); iktibhom kif inhuma stampati.
 
-### Setting large cones
+### Kif tqiegħed il-koni l-kbar
 
-Set each large cone in a plaque or a pat of clay, leaning toward its bending face. As with any cone, keep the height and the lean the same from firing to firing, because a difference in either changes how far it bends. Set the three cones of the pack (below) together, deep in the kiln near the middle of the load, where they get the heat the ware gets, yet where you can see them through a peephole; before you close the kiln, check that you can see all three.
+Qiegħed kull kon kbir f’bażi tal-koni jew f’ftit tafal, inklinat lejn il-wiċċ tat-tgħawwiġ tiegħu. Bħal ma tagħmel ma’ kull kon, żomm l-għoli u l-inklinazzjoni l-istess minn ħamja għal oħra, għax differenza f’xi waħda minnhom tibdel kemm jitgħawweġ. Qiegħed it-tliet koni tas-sett{{en: cone pack}} (ara hawn taħt) flimkien, fil-fond tal-forn, qrib in-nofs ta’ dak li hemm fil-forn, fejn jieħdu s-sħana li jieħdu l-oġġetti, iżda fejn tista’ tarahom minn toqba tal-ħarsa; qabel ma tagħlaq il-forn, iċċekkja li tista’ tara t-tlieta.
 
-We found no maker's or seller's instructions for how deep or at what angle to set SK cones. The nearest is a laboratory standard, JIS R 2204, Japan's test of how much heat a refractory material stands: it sets each SK cone with its marked face at 80° to a flat stand and its foot about 4 mm into it. That is a test for refractories, not a rule for firing pots, and we read it in a transcription of the standard, not in the standard itself.
+Ma sibna l-ebda struzzjonijiet minn manifattur jew bejjiegħ dwar kemm fil-fond jew b’liema angolu għandhom jitqiegħdu l-koni SK. L-eqreb ħaġa hija standard tal-laboratorju, JIS R 2204, it-test Ġappuniż ta’ kemm sħana jiflaħ materjal refrattarju: dan iqiegħed kull kon SK bil-wiċċ immarkat tiegħu f’80° ma’ bażi ċatta u bis-sieq tiegħu madwar 4 mm ġo fiha. Dak huwa test għall-materjali refrattarji, mhux regola għall-ħami tal-fuħħar, u qrajnieh f’traskrizzjoni tal-istandard, mhux fl-istandard innifsu.
 
-### Guide, firing and guard cones
+### Il-kon ta’ twissija, il-kon tal-mira u l-kon ta’ kontroll
 
-Cones are sold and set as three: a guide cone, a firing cone at the target, and a guard cone. Take the firing cone as the SK number your recipe or clay names, the guide cone as the next cooler cone (one row up in the table) and the guard cone as the next hotter one. When the guide cone starts to bend, the end is near; when the guard cone bends, the firing has gone too far.
+Il-koni jinbiegħu u jitqiegħdu fi tlieta: kon ta’ twissija, kon tal-mira fil-mira, u kon ta’ kontroll. Ħu bħala kon tal-mira n-numru SK li ssemmi r-riċetta jew it-tafal tiegħek, bħala kon ta’ twissija l-kon li jmiss aktar kiesaħ (ringiela waħda ’l fuq fit-tabella), u bħala kon ta’ kontroll dak li jmiss aktar sħun. Meta l-kon ta’ twissija jibda jitgħawweġ, it-tmiem ikun qrib; meta jitgħawweġ il-kon ta’ kontroll, il-ħamja tkun marret iżżejjed.
 
-### The SK chart
+### It-tabella SK
 
-Table: SK large cones (JIS R 8101): the nominal (JIS) temperature of each
-Label: SK chart
+Table: Il-koni SK il-kbar (JIS R 8101): it-temperatura nominali (JIS) ta’ kull wieħed
+Label: Tabella SK
 
-| Cone    | Nominal (JIS) temperature |
-| ------- | ------------------------: |
-| SK 022  |       {{1112 °F; 600 °C}} |
-| SK 021  |       {{1202 °F; 650 °C}} |
-| SK 020  |       {{1238 °F; 670 °C}} |
-| SK 019  |       {{1274 °F; 690 °C}} |
-| SK 018  |       {{1310 °F; 710 °C}} |
-| SK 017  |       {{1346 °F; 730 °C}} |
-| SK 016  |       {{1382 °F; 750 °C}} |
-| SK 015a |       {{1454 °F; 790 °C}} |
-| SK 014a |       {{1499 °F; 815 °C}} |
-| SK 013a |       {{1535 °F; 835 °C}} |
-| SK 012a |       {{1571 °F; 855 °C}} |
-| SK 011a |       {{1616 °F; 880 °C}} |
-| SK 010a |       {{1652 °F; 900 °C}} |
-| SK 09a  |       {{1688 °F; 920 °C}} |
-| SK 08a  |       {{1724 °F; 940 °C}} |
-| SK 07a  |       {{1760 °F; 960 °C}} |
-| SK 06a  |       {{1796 °F; 980 °C}} |
-| SK 05a  |      {{1832 °F; 1000 °C}} |
-| SK 04a  |      {{1868 °F; 1020 °C}} |
-| SK 03a  |      {{1904 °F; 1040 °C}} |
-| SK 02a  |      {{1940 °F; 1060 °C}} |
-| SK 01a  |      {{1976 °F; 1080 °C}} |
-| SK 1a   |      {{2012 °F; 1100 °C}} |
-| SK 2a   |      {{2048 °F; 1120 °C}} |
-| SK 3a   |      {{2084 °F; 1140 °C}} |
-| SK 4a   |      {{2120 °F; 1160 °C}} |
-| SK 5a   |      {{2156 °F; 1180 °C}} |
-| SK 6a   |      {{2192 °F; 1200 °C}} |
-| SK 7    |      {{2246 °F; 1230 °C}} |
-| SK 8    |      {{2282 °F; 1250 °C}} |
-| SK 9    |      {{2336 °F; 1280 °C}} |
-| SK 10   |      {{2372 °F; 1300 °C}} |
-| SK 11   |      {{2408 °F; 1320 °C}} |
-| SK 12   |      {{2462 °F; 1350 °C}} |
-| SK 13   |      {{2516 °F; 1380 °C}} |
-| SK 14   |      {{2570 °F; 1410 °C}} |
-| SK 15   |      {{2615 °F; 1435 °C}} |
-| SK 16   |      {{2660 °F; 1460 °C}} |
-| SK 17   |      {{2696 °F; 1480 °C}} |
-| SK 18   |      {{2732 °F; 1500 °C}} |
-| SK 19   |      {{2768 °F; 1520 °C}} |
-| SK 20   |      {{2786 °F; 1530 °C}} |
+| Kon     | Temperatura nominali (JIS) |
+| ------- | -------------------------: |
+| SK 022  |        {{1112 °F; 600 °C}} |
+| SK 021  |        {{1202 °F; 650 °C}} |
+| SK 020  |        {{1238 °F; 670 °C}} |
+| SK 019  |        {{1274 °F; 690 °C}} |
+| SK 018  |        {{1310 °F; 710 °C}} |
+| SK 017  |        {{1346 °F; 730 °C}} |
+| SK 016  |        {{1382 °F; 750 °C}} |
+| SK 015a |        {{1454 °F; 790 °C}} |
+| SK 014a |        {{1499 °F; 815 °C}} |
+| SK 013a |        {{1535 °F; 835 °C}} |
+| SK 012a |        {{1571 °F; 855 °C}} |
+| SK 011a |        {{1616 °F; 880 °C}} |
+| SK 010a |        {{1652 °F; 900 °C}} |
+| SK 09a  |        {{1688 °F; 920 °C}} |
+| SK 08a  |        {{1724 °F; 940 °C}} |
+| SK 07a  |        {{1760 °F; 960 °C}} |
+| SK 06a  |        {{1796 °F; 980 °C}} |
+| SK 05a  |       {{1832 °F; 1000 °C}} |
+| SK 04a  |       {{1868 °F; 1020 °C}} |
+| SK 03a  |       {{1904 °F; 1040 °C}} |
+| SK 02a  |       {{1940 °F; 1060 °C}} |
+| SK 01a  |       {{1976 °F; 1080 °C}} |
+| SK 1a   |       {{2012 °F; 1100 °C}} |
+| SK 2a   |       {{2048 °F; 1120 °C}} |
+| SK 3a   |       {{2084 °F; 1140 °C}} |
+| SK 4a   |       {{2120 °F; 1160 °C}} |
+| SK 5a   |       {{2156 °F; 1180 °C}} |
+| SK 6a   |       {{2192 °F; 1200 °C}} |
+| SK 7    |       {{2246 °F; 1230 °C}} |
+| SK 8    |       {{2282 °F; 1250 °C}} |
+| SK 9    |       {{2336 °F; 1280 °C}} |
+| SK 10   |       {{2372 °F; 1300 °C}} |
+| SK 11   |       {{2408 °F; 1320 °C}} |
+| SK 12   |       {{2462 °F; 1350 °C}} |
+| SK 13   |       {{2516 °F; 1380 °C}} |
+| SK 14   |       {{2570 °F; 1410 °C}} |
+| SK 15   |       {{2615 °F; 1435 °C}} |
+| SK 16   |       {{2660 °F; 1460 °C}} |
+| SK 17   |       {{2696 °F; 1480 °C}} |
+| SK 18   |       {{2732 °F; 1500 °C}} |
+| SK 19   |       {{2768 °F; 1520 °C}} |
+| SK 20   |       {{2786 °F; 1530 °C}} |
 
-Every figure is nominal (JIS): the temperature the standard gives for the cone, as printed in Yuko Trading's table. The table does not print a heating rate. The standard gives reference temperatures. At a potter's rate of about 100 °C/h, Kyoto's municipal institute measured its own Kyoto cones bending 47–79 °C cooler than the JIS figure for the same number; we found no such measurements for SK cones to JIS. Set a witness cone and compare.
+Kull figura hija nominali (JIS): it-temperatura li l-istandard jagħti għall-kon, kif stampata fit-tabella ta’ Yuko Trading. It-tabella ma tagħtix rata tat-tisħin. L-istandard jagħti temperaturi ta’ referenza. B’rata ta’ fuħħari ta’ madwar 100 °C/h, l-istitut muniċipali ta’ Kyoto kejjel il-koni ta’ Kyoto tiegħu stess jitgħawġu f’temperatura 47–79 °C aktar baxxa mill-figura tal-JIS għall-istess numru; ma sibna l-ebda kejl bħal dan għall-koni SK skont il-JIS. Qiegħed kon xhud u qabbel.
 
-### Kyoto cones
+### Il-koni ta’ Kyoto
 
-Kyoto cones (京都ゼーゲル), made by Kyoto's municipal institute, are no longer made: news reports say the institute ended production at the close of fiscal 2009. They carry the same numbers as SK cones to JIS but bend cooler: a Kyoto cone bends at about the temperature of the SK cone to JIS two or three numbers lower. A recipe from Kyoto that says "SK 8" may mean a Kyoto cone. The institute has published advice for potters moving from Kyoto cones to Orton cones, and substitutes Orton cone 10 for its own Kyoto SK 12. That is the institute's choice from its own measurements: it bent Kyoto cones and Orton cones in the same kiln at 100 °C/h, and Kyoto SK 12 (1290 °C) bent where Orton 10 (1290 °C) did. In the same table Kyoto SK 8 (1198 °C) bent near Orton 5 (1207 °C), and Kyoto SK 10 (1232 °C) where Orton 7 (1232 °C) did. Glazecalc uses this table, not the Orton chart at 60 °C/h, when it shows an SK cone beside an Orton cone, and says each match is approximate.
+Il-koni ta’ Kyoto (京都ゼーゲル), magħmulin mill-istitut muniċipali ta’ Kyoto, m’għadhomx isiru: rapporti tal-aħbarijiet jgħidu li l-istitut waqqaf il-produzzjoni fl-aħħar tas-sena fiskali 2009. Għandhom l-istess numri tal-koni SK skont il-JIS, iżda jitgħawġu f’temperatura aktar baxxa: kon ta’ Kyoto jitgħawweġ madwar it-temperatura tal-kon SK skont il-JIS li hu żewġ jew tliet numri aktar kiesaħ. Riċetta minn Kyoto li tgħid “SK 8” tista’ tfisser kon ta’ Kyoto. L-istitut ippubblika pariri għall-fuħħarin li qed jgħaddu mill-koni ta’ Kyoto għall-koni Orton, u juża l-kon Orton 10 minflok il-Kyoto SK 12 tiegħu stess. Dik hija l-għażla tal-istitut mill-kejl tiegħu stess: għawweġ koni ta’ Kyoto u koni Orton fl-istess forn b’100 °C/h, u l-Kyoto SK 12 (1290 °C) tgħawweġ fejn tgħawweġ l-Orton 10 (1290 °C). Fl-istess tabella l-Kyoto SK 8 (1198 °C) tgħawweġ qrib l-Orton 5 (1207 °C), u l-Kyoto SK 10 (1232 °C) fejn tgħawweġ l-Orton 7 (1232 °C). Glazecalc juża din it-tabella, mhux it-tabella ta’ Orton b’60 °C/h, meta juri kon SK ħdejn kon Orton, u jgħid li kull qbil huwa approssimat.
 
-### Orton cones sold in Japan
+### Il-koni Orton mibjugħin fil-Ġappun
 
-Orton self-supporting cones are sold in Japan under the name 立つゼーゲル ("standing Seger"), because they need no plaque or stand. They are Orton cones, with Orton's numbers and Orton's chart (above): fire to one only by its Orton number, and keep SK and Orton cones in separate packs, never in the same one.
+Il-koni Orton li joqogħdu weħidhom jinbiegħu fil-Ġappun bl-isem 立つゼーゲル (“Seger wieqaf”), għax ma jridux bażi tal-koni jew stand. Huma koni Orton, bin-numri ta’ Orton u t-tabella ta’ Orton (hawn fuq): aħmi sa wieħed minnhom biss skont in-numru Orton tiegħu, u żomm il-koni SK u l-koni Orton f’settijiet separati, qatt fl-istess sett.
 
-### Sources for SK cones
+### Sorsi għall-koni SK
 
-- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (the SK table, checked 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
-- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (in force, reconfirmed 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
-- [JSA: JIS R 2204:1999, 耐火物及び耐火物原料の耐火度試験方法 (in force, reconfirmed 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+2204:1999)
-- [kikakurui.com: a transcription of JIS R 2204:1999, where clause 5 a) sets the cones (read 2026-10-19)](https://kikakurui.com/r2/R2204-1999-01.html)
-- [Kyoto Municipal Institute of Industrial Technology and Culture: points to note when moving from Kyoto cones to Orton cones](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
+- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (it-tabella SK, iċċekkjata 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
+- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (fis-seħħ, ikkonfermat mill-ġdid 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
+- [JSA: JIS R 2204:1999, 耐火物及び耐火物原料の耐火度試験方法 (fis-seħħ, ikkonfermat mill-ġdid 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+2204:1999)
+- [kikakurui.com: traskrizzjoni ta’ JIS R 2204:1999, fejn il-klawżola 5 a) tistabbilixxi l-koni (moqri 2026-10-19)](https://kikakurui.com/r2/R2204-1999-01.html)
+- [Istitut Muniċipali ta’ Kyoto għat-Teknoloġija Industrijali u l-Kultura: x’għandek toqgħod attent għalih meta tgħaddi mill-koni ta’ Kyoto għall-koni Orton](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
 
 :::
 
@@ -606,22 +606,22 @@ Jekk is-sitter jiskatta qabel ma jinżlu l-koni tax-xkaffa, il-ħamja ta’ wara
 
 **Pirometru** huwa strument li juri t-temperatura kif taqraha **termokoppja**, sonda tas-sħana li tgħaddi mill-ħajt tal-forn. Juri kemm qed jitla’ malajr il-forn, biex tkun tista’ tagħżel il-kolonna t-tajba tat-tabella tal-koni. Imma jaqra qrib il-ħajt, mhux fejn hemm l-oġġetti, u l-qari tiegħu jinbidel maż-żmien. L&L jinnota li termokoppja tat-tip K tista’ tiżbalja b’aktar minn {{25 °F; 14 °C}} wara ħamjiet ripetuti sal-kon 6, “differenza akbar minn kon sħiħ”, filwaqt li kon li joqgħod waħdu ma jvarjax b’aktar minn {{4 °F; 2 °C}}. Orton jgħid li l-pirometri għandhom bżonn jiġu kkalibrati mill-ġdid minn żmien għal żmien, u l-koni huma l-mod kif tiċċekkjahom.
 
-## Venting, peeking and safety {#venting lang=en}
+## Il-ventilazzjoni, il-ħarsa ġol-forn u s-sigurtà {#venting}
 
-### Venting
+### Il-ventilazzjoni
 
-Early in a firing, clay and glaze give off water vapor and fumes, including carbon monoxide, and glazes can give off toxic fumes later in the firing too. L&L calls venting them "essential". With no vent system, that means the lid propped and the peepholes open in the early stages, as in the procedures above; slowing the heating during this time also helps the carbon burn out. In a kiln without a vent, Dawson, who made the sitter, also says to leave the top peephole open for the whole firing: the venting "will reduce deterioration of the kiln's metal parts and increase the life of the tube assembly". A **downdraft vent** (a powered vent fitted to the kiln) changes this. It does the venting, so Orton says the lid and peepholes stay closed for the whole firing except to check the cones, and L&L says to leave the vent on and plug the peepholes.
+Fil-bidu tal-ħamja, it-tafal u l-glejż{{en: glaze}} joħorġu fwar tal-ilma u dħaħen, fosthom monossidu tal-karbonju, u l-glejżijiet jistgħu joħorġu dħaħen tossiċi anke aktar tard fil-ħamja. L&L jgħid li huwa “essenzjali” li dawn joħorġu mill-forn. Mingħajr sistema ta’ estrattur, dan ifisser l-għatu miftuħ ftit u t-toqob tal-ħarsa miftuħin fl-ewwel stadji, bħal fil-proċeduri ta’ hawn fuq; jekk tnaqqas ir-rata tat-tisħin f’dan iż-żmien, tgħin ukoll biex il-karbonju jinħaraq kollu. F’forn mingħajr estrattur, Dawson, li għamel is-sitter, jgħid ukoll li tħalli t-toqba tal-ħarsa ta’ fuq miftuħa għall-ħamja kollha: il-ventilazzjoni “tnaqqas id-deterjorament tal-partijiet tal-metall tal-forn u żżid il-ħajja tal-assemblaġġ tat-tubu”. **Estrattur minn taħt il-forn** (estrattur bil-mutur imwaħħal mal-forn) ibiddel dan. Huwa jagħmel il-ventilazzjoni, għalhekk Orton jgħid li l-għatu u t-toqob tal-ħarsa jibqgħu magħluqin għall-ħamja kollha, ħlief biex tiċċekkja l-koni{{en: cones}}, u L&L jgħid li tħalli l-estrattur mixgħul u ttappan it-toqob tal-ħarsa.
 
-For venting the room, and for carbon monoxide alarms, see [Safe mixing and ventilation](/guides/safe-mixing) and [Don't poison your family](/guides/home-safety).
+Għall-ventilazzjoni tal-kamra, u għall-allarmi tal-monossidu tal-karbonju, ara l-gwidi [Taħlit sikur u ventilazzjoni](/guides/safe-mixing) u [Tavvelenax lill-familja tiegħek](/guides/home-safety).
 
-### While the kiln is firing
+### Waqt li l-forn qed jaħmi
 
-- Look through a peephole only with IR-rated shade 3 welding glasses; sunglasses are not enough. Skutt advises twisting the plugs into place so they do not fall out.
-- Stay nearby and check the kiln while it fires, above all near its expected finishing time; a sitter is not a fail-safe. Fire only when an adult will be home and awake through the whole firing.
-- Never fire on or near anything that burns, such as a wood floor or carpet.
-- Keep the clearances in your manual. Published figures range from 12 in (30 cm) to 3 ft (91 cm); where the manual is silent, 18 in (46 cm) from walls and 3 ft (91 cm) from anything that burns is the safest choice.
-- Keep the space around the sitter's weight clear so it can drop.
-- When the firing ends, turn the switches off and turn off the breaker as well.
+- Biex tħares minn toqba tal-ħarsa, uża biss nuċċali tal-iwweldjar kontra l-IR, bi grad ta’ dlam 3; in-nuċċali tax-xemx mhumiex biżżejjed. Skutt jagħti parir li ddawwar it-tappijiet f’posthom biex ma jaqgħux.
+- Ibqa’ qrib u ċċekkja l-forn waqt li jkun qed jaħmi, speċjalment qrib il-ħin mistenni li tispiċċa l-ħamja; sitter mhuwiex apparat li jitfi l-forn b’mod żgur f’każ ta’ ħsara. Aħmi biss meta se jkun hemm adult fid-dar u mqajjem matul il-ħami kollu.
+- Qatt ma taħmi fuq jew qrib xi ħaġa li taqbad, bħal art tal-injam jew tapit.
+- Żomm id-distanzi ta’ sigurtà li hemm fil-manwal tiegħek. Iċ-ċifri ppubblikati jvarjaw minn 12-il pulzier (30 cm) sa 3 piedi (91 cm); fejn il-manwal ma jgħid xejn, 18-il pulzier (46 cm) mill-ħitan u 3 piedi (91 cm) minn kull ħaġa li taqbad huma l-għażla l-aktar sikura.
+- Żomm l-ispazju madwar il-piż tas-sitter ħieles, biex il-piż ikun jista’ jaqa’.
+- Meta tispiċċa l-ħamja, itfi s-swiċċijiet u tfi wkoll l-interruttur taċ-ċirkwit.
 
 ## It-tkessiħ u t-tbattil tal-forn {#cooling}
 

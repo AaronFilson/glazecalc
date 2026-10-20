@@ -270,6 +270,22 @@
         "saved": "Opgeslagen: datums worden getoond in de Japanse jaartelling."
       }
     },
+    "digits": {
+      "legend": "Cijfers",
+      "help": "De cijfers waarin getallen worden getoond. Sommige talen hebben eigen cijfers, zoals Arabisch, Bengaals en Hindi, en waar u bent, bepaalt welke gebruikelijk zijn. U kunt getallen met beide invoeren.",
+      "auto": {
+        "label": "Zoals gebruikelijk waar u bent",
+        "saved": "Opgeslagen: cijfers zoals gebruikelijk waar u bent."
+      },
+      "western": {
+        "label": "Westerse cijfers, 0–9",
+        "saved": "Opgeslagen: getallen worden getoond met de cijfers 0–9."
+      },
+      "native": {
+        "label": "De eigen cijfers van de taal, als die ze heeft",
+        "saved": "Opgeslagen: getallen worden getoond in de eigen cijfers van de taal, als die ze heeft."
+      }
+    },
     "decimalMark": {
       "legend": "Hoeveelheden invoeren",
       "either": {

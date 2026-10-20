@@ -270,6 +270,22 @@
         "saved": "Guardado: as datas são mostradas em eras japonesas."
       }
     },
+    "digits": {
+      "legend": "Algarismos",
+      "help": "Os algarismos em que os números são mostrados. Alguns idiomas têm os seus próprios, como o árabe, o bengali e o hindi, e o local onde está decide quais são os habituais. Pode escrever números com uns ou com outros.",
+      "auto": {
+        "label": "Como é habitual onde está",
+        "saved": "Guardado: algarismos como é habitual onde está."
+      },
+      "western": {
+        "label": "Algarismos ocidentais, 0–9",
+        "saved": "Guardado: os números são mostrados com os algarismos 0–9."
+      },
+      "native": {
+        "label": "Os algarismos próprios do idioma, quando os tem",
+        "saved": "Guardado: os números são mostrados com os algarismos próprios do idioma, quando os tem."
+      }
+    },
     "decimalMark": {
       "legend": "Introdução de quantidades",
       "either": {

@@ -52,6 +52,7 @@
     "emergency": "Nödsituation: medvetslös, andas inte, krampanfall",
     "poisonAdvice": "{who, select, children {Råd vid förgiftning: {name} (endast för barn)} other {Råd vid förgiftning: {name}}}",
     "or": "eller {number}",
+    "orCall": "eller <link>{number}</link>",
     "online": "På nätet: <link>{name}</link>.",
     "poisonAdviceNone": "Råd vid förgiftning",
     "noLine": "Vi kunde inte bekräfta någon allmän telefonlinje för giftinformation här. Ring din läkare, eller larmnumret om det är brådskande.",
@@ -111,6 +112,10 @@
     "bandFromTo": "Damm med {from} % till {to} % fri kiseldioxid (SiO₂)",
     "bandOverTo": "Damm med mer än {from} % och upp till {to} % fri kiseldioxid",
     "bandAbove": "Damm med mer än {from} % fri kiseldioxid",
+    "untilDate": "Till {date}",
+    "fromDate": "Från {date}",
+    "beforeFormula": "Gränsvärde för respirabelt damm, där Q är den kristallina kiseldioxiden i det, i %",
+    "beforeAll": "För damm som helt består av kristallin kiseldioxid",
     "recommended": "Rekommenderat av {abbr}",
     "value": "{value} mg/m³",
     "kind": {
@@ -121,6 +126,7 @@
     },
     "setBy": "Fastställt i <link>{law}</link>.",
     "from": "Den gäller från {date}.",
+    "beforeSetBy": "Fram till dess fastställs gränsvärdet i <link>{law}</link>.",
     "lowerThanEu": "Lägre än EU:s bindande gränsvärde på {value} mg/m³.",
     "sameAsEu": "Samma som EU:s bindande gränsvärde.",
     "recommendedBy": "{abbr} ({by}) rekommenderar detta värde i <link>{title}</link>. Det är inte lag.",
@@ -183,7 +189,13 @@
       "vnMedium": "Djupa föremål för förvaring av mat, från 1100 mL till under 3000 mL",
       "vnStorage": "Djupa föremål för förvaring av mat, 3000 mL eller mer",
       "vnCooking": "Djupa föremål för matlagning",
-      "vnCups": "Koppar och små skålar"
+      "vnCups": "Koppar och små skålar",
+      "cnFlat": "Flata föremål, 25 mm djupa eller mindre",
+      "cnSmall": "Små föremål som kan fyllas, under 1,1 L, utom koppar",
+      "cnLarge": "Stora föremål som kan fyllas, från 1,1 L till under 3 L",
+      "cnStorage": "Förvaringsburkar, 3 L eller mer",
+      "cnCups": "Koppar, för vatten eller drycker",
+      "cnCooking": "Kokkärl, för att värma mat"
     },
     "judged": {
       "average": "medelvärde av 6 föremål",
@@ -197,6 +209,8 @@
     "atMost": "Ett föremål godkänns om det inte löser ut mer än gränsvärdet: lagen säger ”högst”.",
     "ppm": "ppm betyder här milligram per liter av provlösningen (mg/L).",
     "unknown": "Vi har ännu inte bekräftat reglerna i {region}.",
+    "none": "Det finns ingen lag i {region} som fastställer gränsvärden för hur mycket bly och kadmium som får lösas ut från ett bränt föremål (kontrollerat den {date}).",
+    "noneSource": "Källa: <link>{law}</link>.",
     "choosePrompt": "Välj land för att se reglerna där."
   },
   "equivalents": {

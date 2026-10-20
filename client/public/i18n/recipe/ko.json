@@ -363,7 +363,8 @@
     "heading": "유해성",
     "intro": "각 원료의 기록에 있는 그대로입니다. 표준 라이브러리의 내용은 공급업체의 물질안전보건자료에서 가져옵니다.",
     "line": "<b>{names}:</b> {hazards}",
-    "unknown": "{count, plural, other {{list}의 유해성은 나와 있지 않습니다. 원료와 함께 오는 물질안전보건자료를 확인하세요.}}"
+    "unknown": "{count, plural, other {{list}의 유해성은 나와 있지 않습니다. 원료와 함께 오는 물질안전보건자료를 확인하세요.}}",
+    "safety": "마른 유약 원료는 분진을 만들며, 이 분진이 폐에 들어가지 않게 해야 합니다. 유해성으로 분류되지 않은 원료의 분진도 마찬가지입니다. <mixing>안전한 유약 배합과 환기</mixing>를 보세요. 아이나 반려동물이 가까이 있다면 <home>가족을 중독에서 지키세요</home>도 보세요. 원료의 물질안전보건자료에 더 많은 내용이 있으면 그것을 따르세요."
   },
   "compare": {
     "heading": "두 레시피 비교",
@@ -532,7 +533,10 @@
     "suppliesShare": "{oxide}의 {percent}%",
     "suppliesLittle": "소량의 유약 성분",
     "changed": "{name} {from} → {to}",
-    "added": "{name} {amount}, 신규"
+    "added": "{name} {amount}, 신규",
+    "why": {
+      "rawClay": "생점토는 유약이 마르면서 수축하고, 많이 넣으면 기물 위에서 갈라지고 가마에서 유약 말림이 생길 수 있습니다. 나머지는 하소 고령토로 채울 수 있습니다"
+    }
   },
   "shelf": {
     "empty": "맞추기에 쓸 가진 원료가 없습니다."
@@ -570,7 +574,8 @@
     "bands": {
       "low": "저화도, 오튼 콘 06~02",
       "mid": "중화도, 오튼 콘 4~6",
-      "high": "고화도, 오튼 콘 9~11"
+      "high": "고화도, 오튼 콘 9~11",
+      "top": "초고화도, 오튼 콘 12 이상"
     },
     "shownFor": "소성을 선택하지 않으면 {band}에 대한 수치를 보여 줍니다. 소성은 레시피와 함께 저장됩니다.",
     "cone": "오튼 콘 {cone}에 대한 이 세트의 수치입니다.",
@@ -590,6 +595,7 @@
     "notInSet": "이 세트에는 {oxides}의 범위가 없습니다.",
     "checksOnly": "이 세트는 {oxides}만 확인합니다.",
     "notApply": "{name}에는 이 소성({band})에 대한 수치가 없으므로 확인하지 않습니다. 다른 소성의 수치는 오해를 부르기 때문입니다.",
+    "topNote": "찾은 공개 유약 한도는 오튼 콘 10까지만 있고, Glazecalc는 이 한도를 오튼 콘 11까지만 적용하므로 오튼 콘 12 이상의 소성은 한도와 비교하지 않습니다. 판단은 시편이 합니다.",
     "guidance": "이것은 참고 기준이며 합격이나 불합격이 아닙니다. 범위를 벗어난 유약도 괜찮을 수 있고, 범위 안에 있는 유약도 빙렬이 생기거나 용출되거나 불량이 될 수 있습니다. 시험하세요.",
     "source": "출처:",
     "saveFailed": "한도 세트 선택을 계정에 저장하지 못했으므로 이전 한도 세트를 계속 쓰고 있습니다.",
@@ -627,7 +633,8 @@
       "ash": "Glazecalc는 이 유약의 화학 조성을 소성과 비교할 수 없습니다. 이 유약에는 재가 들어 있는데, 재의 조성은 이 검사가 쓰는 공개된 수치로 다루기에는 너무 다양합니다.",
       "noTemperature": "Glazecalc는 이 유약의 화학 조성을 {scale, select, band {{band, select, low {저화도} mid {중화도} other {고화도}}} sk {SK {cone}} temperature {{cone} °C} other {오튼 콘 {cone}}} 소성과 비교할 수 없습니다. 그 콘에 대해 측정된 온도가 없습니다.",
       "between": "Glazecalc는 이 유약의 화학 조성을 {scale, select, band {{band, select, low {저화도} mid {중화도} other {고화도}}} sk {SK {cone}} temperature {{cone} °C} other {오튼 콘 {cone}}} 소성과 비교할 수 없습니다. 이 검사가 쓰는 공개된 수치는 저화도와, 중화도 및 고화도에 대한 것이며 그 사이의 콘(01~3)은 다루지 않습니다.",
-      "belowChart": "Glazecalc는 이 유약의 화학 조성을 {scale, select, band {{band, select, low {저화도} mid {중화도} other {고화도}}} sk {SK {cone}} temperature {{cone} °C} other {오튼 콘 {cone}}} 소성과 비교할 수 없습니다. Katz의 붕소 규칙은 오튼 콘 06~콘 10에 대한 것인데, 그 소성은 그보다 낮은 온도입니다."
+      "belowChart": "Glazecalc는 이 유약의 화학 조성을 {scale, select, band {{band, select, low {저화도} mid {중화도} other {고화도}}} sk {SK {cone}} temperature {{cone} °C} other {오튼 콘 {cone}}} 소성과 비교할 수 없습니다. Katz의 붕소 규칙은 오튼 콘 06~콘 10에 대한 것인데, 그 소성은 그보다 낮은 온도입니다.",
+      "aboveChart": "Glazecalc는 이 유약의 화학 조성을 {scale, select, band {{band, select, top {초고화도} other {고화도}}} sk {SK {cone}} temperature {{cone} °C} other {오튼 콘 {cone}}} 소성과 비교할 수 없습니다. Katz의 붕소 규칙은 오튼 콘 06~콘 10에 대한 것이고 Hesselberth & Roy의 실리카와 알루미나 수치는 콘 10에서 끝나는데, 그 소성은 그보다 고온입니다."
     }
   },
   "stull": {
@@ -978,6 +985,7 @@
     "approxTemperature": "≈ {temperature}({basis}, 근삿값)",
     "approxCone": "≈ {cone}({basis}, 근삿값)",
     "basis": {
+      "orton150": "Orton의 예전 라지 콘 온도표, 시간당 150 °C 기준",
       "kyoto": "교토시 시립 연구소가 시간당 100 °C로 측정",
       "stated": "입력된 그대로"
     },

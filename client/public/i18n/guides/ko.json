@@ -52,6 +52,7 @@
     "emergency": "응급 상황: 의식이 없거나, 숨을 쉬지 않거나, 발작을 일으킨 경우",
     "poisonAdvice": "{who, select, children {중독 상담: {name}(어린이 전용)} other {중독 상담: {name}}}",
     "or": "또는 {number}",
+    "orCall": "또는 <link>{number}</link>",
     "online": "온라인: <link>{name}</link>.",
     "poisonAdviceNone": "중독 상담",
     "noLine": "이 나라에서는 일반인이 이용할 수 있는 중독 상담 전화를 확인하지 못했습니다. 의사에게 전화하거나, 급한 경우에는 긴급 전화번호로 전화하세요.",
@@ -111,6 +112,10 @@
     "bandFromTo": "유리규산(SiO₂)이 {from}%에서 {to}%인 분진",
     "bandOverTo": "유리규산이 {from}% 초과 {to}% 이하인 분진",
     "bandAbove": "유리규산이 {from}% 초과인 분진",
+    "untilDate": "{date}까지",
+    "fromDate": "{date}부터",
+    "beforeFormula": "호흡성 분진의 기준(Q는 분진 중 결정형 유리규산의 함량, %)",
+    "beforeAll": "분진이 모두 결정형 유리규산인 경우",
     "recommended": "권고: {abbr}",
     "value": "{value} mg/m³",
     "kind": {
@@ -121,6 +126,7 @@
     },
     "setBy": "근거: <link>{law}</link>.",
     "from": "{date}부터 적용됩니다.",
+    "beforeSetBy": "그때까지 기준은 <link>{law}</link>에 따릅니다.",
     "lowerThanEu": "EU의 법적 구속력이 있는 기준인 {value} mg/m³보다 낮습니다.",
     "sameAsEu": "EU의 법적 구속력이 있는 기준과 같습니다.",
     "recommendedBy": "이 값은 {abbr}({by})의 <link>{title}</link>에 나오는 권고값입니다. 법으로 정한 값이 아닙니다.",
@@ -183,7 +189,13 @@
       "vnMedium": "음식을 담는 깊은 기물, 1100 mL 이상 3000 mL 미만",
       "vnStorage": "음식을 담는 깊은 기물, 3000 mL 이상",
       "vnCooking": "조리용 깊은 기물",
-      "vnCups": "컵과 작은 그릇"
+      "vnCups": "컵과 작은 그릇",
+      "cnFlat": "납작한 그릇(깊이 25 mm 이하)",
+      "cnSmall": "작은 오목한 그릇(1.1 L 미만, 컵 제외)",
+      "cnLarge": "큰 오목한 그릇(1.1 L 이상 3 L 미만)",
+      "cnStorage": "저장용 단지(3 L 이상)",
+      "cnCups": "컵(물이나 음료용)",
+      "cnCooking": "가열조리용 기구(식품을 가열하는 것)"
     },
     "judged": {
       "average": "6개의 평균",
@@ -197,6 +209,8 @@
     "atMost": "용출량이 기준 이하이면 적합합니다. 법령의 표현은 “이하”입니다.",
     "ppm": "여기서 ppm은 시험 용액 리터당 밀리그램(mg/L)입니다.",
     "unknown": "{region}의 규정은 아직 확인하지 않았습니다.",
+    "none": "{region}에는 소성한 기물에서 용출되어도 되는 납과 카드뮴의 기준을 정한 법령이 없습니다(확인일: {date}).",
+    "noneSource": "출처: <link>{law}</link>.",
     "choosePrompt": "나라를 선택하면 그 나라의 규정이 표시됩니다."
   },
   "equivalents": {

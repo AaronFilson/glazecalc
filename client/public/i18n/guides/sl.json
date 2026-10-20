@@ -52,6 +52,7 @@
     "emergency": "Nujni primer: nezavest, zastoj dihanja, napad krčev",
     "poisonAdvice": "{who, select, children {Svetovanje pri zastrupitvah: {name} (samo za otroke)} other {Svetovanje pri zastrupitvah: {name}}}",
     "or": "ali {number}",
+    "orCall": "ali <link>{number}</link>",
     "online": "Na spletu: <link>{name}</link>.",
     "poisonAdviceNone": "Svetovanje pri zastrupitvah",
     "noLine": "Javne linije za zastrupitve tu nismo mogli potrditi. Pokličite svojega zdravnika ali, če je nujno, številko za nujne primere.",
@@ -111,6 +112,10 @@
     "bandFromTo": "Prah z {from} % do {to} % prostega kremena (SiO₂)",
     "bandOverTo": "Prah z več kot {from} % in do {to} % prostega kremena",
     "bandAbove": "Prah z več kot {from} % prostega kremena",
+    "untilDate": "Konec veljavnosti: {date}",
+    "fromDate": "Začetek veljavnosti: {date}",
+    "beforeFormula": "Mejna vrednost za respirabilni prah, kjer je Q delež kristalnega kremena v njem, v %",
+    "beforeAll": "Za prah, ki je ves iz kristalnega kremena",
     "recommended": "Priporoča {abbr}",
     "value": "{value} mg/m³",
     "kind": {
@@ -121,6 +126,7 @@
     },
     "setBy": "Določa jo <link>{law}</link>.",
     "from": "Velja od {date}.",
+    "beforeSetBy": "Do takrat mejno vrednost določa <link>{law}</link>.",
     "lowerThanEu": "Nižja od zavezujoče mejne vrednosti EU, ki znaša {value} mg/m³.",
     "sameAsEu": "Enaka zavezujoči mejni vrednosti EU.",
     "recommendedBy": "To vrednost priporoča {abbr} ({by}) v dokumentu <link>{title}</link>. Ni zakonsko predpisana.",
@@ -183,7 +189,13 @@
       "vnMedium": "Globoki izdelki za shranjevanje hrane, od 1100 mL do pod 3000 mL",
       "vnStorage": "Globoki izdelki za shranjevanje hrane, 3000 mL ali več",
       "vnCooking": "Globoki izdelki za kuhanje",
-      "vnCups": "Skodelice in majhne sklede"
+      "vnCups": "Skodelice in majhne sklede",
+      "cnFlat": "Ploska posoda, globoka največ 25 mm",
+      "cnSmall": "Majhna votla posoda pod 1,1 L, razen skodelic",
+      "cnLarge": "Velika votla posoda od 1,1 L do manj kot 3 L",
+      "cnStorage": "Posode za shranjevanje, 3 L ali več",
+      "cnCups": "Skodelice za vodo ali pijače",
+      "cnCooking": "Posoda za kuhanje, za segrevanje hrane"
     },
     "judged": {
       "average": "povprečje 6 kosov",
@@ -197,6 +209,8 @@
     "atMost": "Izdelek ustreza, če ne sprosti več od mejne vrednosti: zakon pravi »največ«.",
     "ppm": "ppm tu pomeni miligrame na liter preskusne raztopine (mg/L).",
     "unknown": "Pravil v državi {region} še nismo potrdili.",
+    "none": "{region}: ni zakona, ki bi določal mejne vrednosti za svinec in kadmij, ki ju sme žgan izdelek sprostiti (preverjeno: {date}).",
+    "noneSource": "Vir: <link>{law}</link>.",
     "choosePrompt": "Izberite državo, da vidite njena pravila."
   },
   "equivalents": {

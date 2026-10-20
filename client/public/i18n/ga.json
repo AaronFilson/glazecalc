@@ -82,6 +82,31 @@
     "languages": "Teangacha",
     "language": "Teanga:"
   },
+  "picker": {
+    "results": "{count, plural, one {# mheaitseáil} two {# mheaitseáil} few {# mheaitseáil} many {# meaitseáil} other {# meaitseáil}}",
+    "languages": {
+      "search": "Cuardaigh teangacha",
+      "showAll": "Taispeáin gach teanga",
+      "noMatch": "Níl aon teanga ag teacht leis seo"
+    },
+    "regions": {
+      "search": "Cuardaigh tíortha agus réigiúin",
+      "showAll": "Taispeáin gach tír agus réigiún",
+      "noMatch": "Níl aon tír ná réigiún ag teacht leis seo"
+    },
+    "groups": {
+      "africa": "An Afraic",
+      "americas": "Na Meiriceánna",
+      "asia": "An Áise",
+      "eastAsia": "Oirthear na hÁise",
+      "europe": "An Eoraip",
+      "middleEastNorthAfrica": "An Meánoirthear agus an Afraic Thuaidh",
+      "oceania": "An Aigéine",
+      "southAsia": "An Áise Theas",
+      "southeastAsia": "Oirdheisceart na hÁise",
+      "other": "Eile"
+    }
+  },
   "numbers": {
     "notANumber": "Cuir isteach uimhir, mar shampla {example}.",
     "notANumberComma": "Cuir isteach uimhir, mar shampla {example}, le camóg do dheachúlacha.",

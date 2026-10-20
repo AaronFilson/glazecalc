@@ -270,6 +270,22 @@
         "saved": "Salvestatud: kuupäevi näidatakse Jaapani ajastute järgi."
       }
     },
+    "digits": {
+      "legend": "Numbrid",
+      "help": "Numbrid, millega arve näidatakse. Mõnel keelel on oma numbrid, näiteks araabia, bengali ja hindi keelel, ning teie piirkond määrab, millised on tavapärased. Arve saate sisestada kummagagi.",
+      "auto": {
+        "label": "Nagu teie piirkonnas tavaks",
+        "saved": "Salvestatud: numbrid nagu teie piirkonnas tavaks."
+      },
+      "western": {
+        "label": "Lääne numbrid, 0–9",
+        "saved": "Salvestatud: arve näidatakse numbritega 0–9."
+      },
+      "native": {
+        "label": "Keele omad numbrid, kui keelel need on",
+        "saved": "Salvestatud: arve näidatakse keele omade numbritega, kui keelel need on."
+      }
+    },
     "decimalMark": {
       "legend": "Koguste sisestamine",
       "either": {

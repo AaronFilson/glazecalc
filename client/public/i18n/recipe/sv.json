@@ -363,7 +363,8 @@
     "heading": "Faror",
     "intro": "Som varje råvaras post anger dem; standardbibliotekets kommer från leverantörernas säkerhetsdatablad.",
     "line": "<b>{names}:</b> {hazards}",
-    "unknown": "{count, plural, one {Inga faror anges för {list}: se säkerhetsdatabladet som följer med.} other {Inga faror anges för {list}: se säkerhetsdatabladen som följer med.}}"
+    "unknown": "{count, plural, one {Inga faror anges för {list}: se säkerhetsdatabladet som följer med.} other {Inga faror anges för {list}: se säkerhetsdatabladen som följer med.}}",
+    "safety": "Torra glasyrråvaror ger damm, och det måste hållas borta från lungorna, även damm från råvaror som inte är klassificerade som farliga. Se <mixing>Säker blandning och ventilation</mixing> och, om det finns barn eller husdjur i närheten, även <home>Förgifta inte familjen</home>. Där en råvaras säkerhetsdatablad säger mer, följ det."
   },
   "compare": {
     "heading": "Jämför två recept",
@@ -532,7 +533,10 @@
     "suppliesShare": "{percent} % av mängden {oxide}",
     "suppliesLittle": "en liten del av glasyren",
     "changed": "{name} {from} → {to}",
-    "added": "{name} {amount}, ny"
+    "added": "{name} {amount}, ny",
+    "why": {
+      "rawClay": "okalcinerad lera krymper när glasyren torkar, och mycket av den kan få glasyren att spricka på godset och krypa i ugnen; kalcinerad kaolin kan stå för resten"
+    }
   },
   "shelf": {
     "empty": "Det finns inga råvaror i förrådet att matcha med."
@@ -570,7 +574,8 @@
     "bands": {
       "low": "Låg temperatur, kägla 06–02",
       "mid": "Mellantemperatur, kägla 4–6",
-      "high": "Hög temperatur, kägla 9–11"
+      "high": "Hög temperatur, kägla 9–11",
+      "top": "Mycket hög temperatur, från kägla 12"
     },
     "shownFor": "När ingen bränning är vald gäller de visade siffrorna: {band}. Bränningen sparas med receptet.",
     "cone": "Det här är uppsättningens siffror för kägla {cone}.",
@@ -590,6 +595,7 @@
     "notInSet": "Inget intervall i den här uppsättningen för {oxides}.",
     "checksOnly": "Den här uppsättningen kontrollerar bara {oxides}.",
     "notApply": "{name} har inga siffror för den här bränningen ({band}), så ingen kontroll görs: siffror för en annan bränning skulle vilseleda.",
+    "topNote": "De publicerade glasyrgränser vi har hittat slutar vid kägla 10, och Glazecalc läser dem inte längre än till kägla 11, så en bränning till kägla 12 eller varmare kontrolleras inte mot gränser. Provbitarna avgör.",
     "guidance": "Det här är riktlinjer, inget betyg i form av godkänt eller underkänt: en glasyr utanför dem kan vara bra, och en inom dem kan ändå krackelera, lösa ut metaller eller misslyckas. Prova den.",
     "source": "Källa:",
     "saveFailed": "Valet av gränsuppsättning kunde inte sparas i kontot, så den tidigare gränsuppsättningen används fortfarande.",
@@ -627,7 +633,8 @@
       "ash": "Glazecalc kan inte jämföra den här glasyrens kemi med dess bränning: den innehåller aska, vars sammansättning varierar för mycket för de publicerade siffrorna som den här kontrollen använder.",
       "noTemperature": "Glazecalc kan inte jämföra den här glasyrens kemi med {scale, select, band {{band, select, low {låg temperatur} mid {mellantemperatur} other {hög temperatur}}} sk {SK {cone}} temperature {{cone} °C} other {kägla {cone}}}: det finns ingen uppmätt temperatur för den käglan.",
       "between": "Glazecalc kan inte jämföra den här glasyrens kemi med {scale, select, band {{band, select, low {låg temperatur} mid {mellantemperatur} other {hög temperatur}}} sk {SK {cone}} temperature {{cone} °C} other {kägla {cone}}}: de publicerade siffrorna som den här kontrollen använder gäller låg temperatur och mellan- och hög temperatur, inte käglorna däremellan (01 till 3).",
-      "belowChart": "Glazecalc kan inte jämföra den här glasyrens kemi med {scale, select, band {{band, select, low {låg temperatur} mid {mellantemperatur} other {hög temperatur}}} sk {SK {cone}} temperature {{cone} °C} other {kägla {cone}}}: Katz boregel gäller kägla 06 till kägla 10, och den bränningen är svalare."
+      "belowChart": "Glazecalc kan inte jämföra den här glasyrens kemi med {scale, select, band {{band, select, low {låg temperatur} mid {mellantemperatur} other {hög temperatur}}} sk {SK {cone}} temperature {{cone} °C} other {kägla {cone}}}: Katz boregel gäller kägla 06 till kägla 10, och den bränningen är svalare.",
+      "aboveChart": "Glazecalc kan inte jämföra den här glasyrens kemi med {scale, select, band {{band, select, top {mycket hög temperatur} other {hög temperatur}}} sk {SK {cone}} temperature {{cone} °C} other {kägla {cone}}}: Katz boregel gäller kägla 06 till kägla 10, Hesselberths och Roys siffror för kiseldioxid och aluminiumoxid slutar vid kägla 10, och den bränningen är varmare."
     }
   },
   "stull": {
@@ -978,6 +985,7 @@
     "approxTemperature": "≈ {temperature} ({basis}; ungefärligt)",
     "approxCone": "≈ {cone} ({basis}; ungefärligt)",
     "basis": {
+      "orton150": "Ortons äldre tabell för stora käglor vid 150 °C i timmen",
       "kyoto": "uppmätt vid 100 °C i timmen av Kyotos kommunala institut",
       "stated": "som angivet"
     },

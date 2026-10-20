@@ -363,7 +363,8 @@
     "heading": "Perikli",
     "intro": "Kif jagħtuhom ir-rekords ta’ kull materjal; dawk tal-librerija standard ġejjin mill-iskedi ta’ data ta’ sigurtà tal-fornituri.",
     "line": "<b>{names}:</b> {hazards}",
-    "unknown": "{count, plural, one {L-ebda periklu mhu mogħti għal {list}: ara l-iskeda ta’ data ta’ sigurtà li ġġib miegħu.} two {L-ebda periklu mhu mogħti għal {list}: ara l-iskedi ta’ data ta’ sigurtà li jiġu magħhom.} few {L-ebda periklu mhu mogħti għal {list}: ara l-iskedi ta’ data ta’ sigurtà li jiġu magħhom.} many {L-ebda periklu mhu mogħti għal {list}: ara l-iskedi ta’ data ta’ sigurtà li jiġu magħhom.} other {L-ebda periklu mhu mogħti għal {list}: ara l-iskedi ta’ data ta’ sigurtà li jiġu magħhom.}}"
+    "unknown": "{count, plural, one {L-ebda periklu mhu mogħti għal {list}: ara l-iskeda ta’ data ta’ sigurtà li ġġib miegħu.} two {L-ebda periklu mhu mogħti għal {list}: ara l-iskedi ta’ data ta’ sigurtà li jiġu magħhom.} few {L-ebda periklu mhu mogħti għal {list}: ara l-iskedi ta’ data ta’ sigurtà li jiġu magħhom.} many {L-ebda periklu mhu mogħti għal {list}: ara l-iskedi ta’ data ta’ sigurtà li jiġu magħhom.} other {L-ebda periklu mhu mogħti għal {list}: ara l-iskedi ta’ data ta’ sigurtà li jiġu magħhom.}}",
+    "safety": "Il-materjali nexfin tal-glejż jagħmlu trab, u trid iżżomm it-trab ’il bogħod mill-pulmuni tiegħek, anke t-trab minn materjali li mhumiex ikklassifikati bħala perikolużi. Ara l-gwida <mixing>Taħlit sikur u ventilazzjoni</mixing>, u jekk hemm tfal jew annimali domestiċi madwar, ara wkoll il-gwida <home>Tavvelenax lill-familja tiegħek</home>. Fejn is-skeda ta’ data ta’ sigurtà ta’ materjal tgħid aktar, segwiha."
   },
   "compare": {
     "heading": "Qabbel żewġ riċetti",
@@ -532,7 +533,10 @@
     "suppliesShare": "{percent}% ta’ {oxide}",
     "suppliesLittle": "ftit mill-glejż",
     "changed": "{name} {from} → {to}",
-    "added": "{name} {amount}, ġdid"
+    "added": "{name} {amount}, ġdid",
+    "why": {
+      "rawClay": "it-tafal mhux moħmi jiċkien hekk kif jinxef il-glejż, u meta jkun hemm ħafna minnu jista’ jixxaqqaq fuq il-biċċa u jinġabar fil-forn; il-kawlina kkalċinata tista’ tieħu post il-bqija"
+    }
   },
   "shelf": {
     "empty": "M’hemm l-ebda materjal fil-ħażna biex tagħmel ir-riċetta bih."
@@ -570,7 +574,8 @@
     "bands": {
       "low": "Ħami baxx, kon 06–02",
       "mid": "Ħami medju, kon 4–6",
-      "high": "Ħami għoli, kon 9–11"
+      "high": "Ħami għoli, kon 9–11",
+      "top": "Ħami għoli ħafna, mill-kon 12 u koni aktar sħan"
     },
     "shownFor": "Meta ma jkun magħżul l-ebda ħami, il-figuri murija huma għal: {band}. Il-ħami jinżamm mar-riċetta.",
     "cone": "Dawn huma l-figuri tas-sett għall-kon {cone}.",
@@ -590,6 +595,7 @@
     "notInSet": "M’hemm l-ebda firxa f’dan is-sett għal {oxides}.",
     "checksOnly": "Dan is-sett jiċċekkja {oxides} biss.",
     "notApply": "Is-sett {name} m’għandux figuri għal dan il-ħami ({band}), għalhekk ma jiġix ikkontrollat: figuri għal ħami ieħor iwasslu għal konklużjonijiet żbaljati.",
+    "topNote": "Il-limiti ppubblikati għall-glejż li sibna jieqfu fil-kon 10, u Glazecalc ma jaqrahomx lil hinn mill-kon 11, għalhekk ħamja mill-kon 12 u koni aktar sħan ma tiġix iċċekkjata mal-limiti. Il-madum tal-prova tiegħek jiddeċiedi.",
     "guidance": "Dawn huma linji gwida, mhux ‘għadda’ jew ‘falla’: glejż barra minnhom jista’ jkun tajjeb, u wieħed ġewwa minnhom xorta jista’ jagħmel ix-xegħir, jirrilaxxa metalli jew jfalli. Ittestjah.",
     "source": "Sors:",
     "saveFailed": "L-għażla tiegħek tas-sett ta’ limiti ma setgħetx tiġi ssejvjata mal-kont tiegħek, għalhekk is-sett ta’ qabel għadu dak li qed jintuża.",
@@ -627,7 +633,8 @@
       "ash": "Glazecalc ma jistax iqabbel il-kimika ta’ dan il-glejż mal-ħami tiegħu: fih rimda, li l-kompożizzjoni tagħha tvarja wisq għall-figuri ppubblikati li juża dan il-kontroll.",
       "noTemperature": "Glazecalc ma jistax iqabbel il-kimika ta’ dan il-glejż ma’ dan il-ħami ({scale, select, band {{band, select, low {ħami baxx} mid {ħami medju} other {ħami għoli}}} sk {SK {cone}} temperature {{cone} °C} other {kon {cone}}}): m’hemm l-ebda temperatura mkejla għal dak il-kon.",
       "between": "Glazecalc ma jistax iqabbel il-kimika ta’ dan il-glejż ma’ dan il-ħami ({scale, select, band {{band, select, low {ħami baxx} mid {ħami medju} other {ħami għoli}}} sk {SK {cone}} temperature {{cone} °C} other {kon {cone}}}): il-figuri ppubblikati li juża dan il-kontroll huma għal ħami baxx u għal ħami medju u għoli, mhux għall-koni bejniethom (01 sa 3).",
-      "belowChart": "Glazecalc ma jistax iqabbel il-kimika ta’ dan il-glejż ma’ dan il-ħami ({scale, select, band {{band, select, low {ħami baxx} mid {ħami medju} other {ħami għoli}}} sk {SK {cone}} temperature {{cone} °C} other {kon {cone}}}): ir-regola tal-boron ta’ Katz hija għall-kon 06 sal-kon 10, u dak il-ħami huwa aktar kiesaħ."
+      "belowChart": "Glazecalc ma jistax iqabbel il-kimika ta’ dan il-glejż ma’ dan il-ħami ({scale, select, band {{band, select, low {ħami baxx} mid {ħami medju} other {ħami għoli}}} sk {SK {cone}} temperature {{cone} °C} other {kon {cone}}}): ir-regola tal-boron ta’ Katz hija għall-kon 06 sal-kon 10, u dak il-ħami huwa aktar kiesaħ.",
+      "aboveChart": "Glazecalc ma jistax iqabbel il-kimika ta’ dan il-glejż ma’ dan il-ħami ({scale, select, band {{band, select, top {ħami għoli ħafna} other {ħami għoli}}} sk {SK {cone}} temperature {{cone} °C} other {kon {cone}}}): ir-regola tal-boron ta’ Katz hija għall-kon 06 sal-kon 10, il-figuri tas-silika u tal-alumina ta’ Hesselberth & Roy jieqfu fil-kon 10, u dak il-ħami huwa aktar sħun."
     }
   },
   "stull": {
@@ -978,6 +985,7 @@
     "approxTemperature": "≈ {temperature} ({basis}; approssimat)",
     "approxCone": "≈ {cone} ({basis}; approssimat)",
     "basis": {
+      "orton150": "tabella eqdem ta’ Orton għall-koni l-kbar, b’150 °C fis-siegħa",
       "kyoto": "imkejjel b’100 °C fis-siegħa mill-istitut muniċipali ta’ Kyoto",
       "stated": "kif mogħti"
     },

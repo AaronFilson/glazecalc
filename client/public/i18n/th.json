@@ -82,6 +82,31 @@
     "languages": "ภาษา",
     "language": "ภาษา:"
   },
+  "picker": {
+    "results": "{count, plural, other {ตรงกัน # รายการ}}",
+    "languages": {
+      "search": "ค้นหาภาษา",
+      "showAll": "แสดงทุกภาษา",
+      "noMatch": "ไม่มีภาษาที่ตรงกัน"
+    },
+    "regions": {
+      "search": "ค้นหาประเทศและภูมิภาค",
+      "showAll": "แสดงทุกประเทศและภูมิภาค",
+      "noMatch": "ไม่มีประเทศหรือภูมิภาคที่ตรงกัน"
+    },
+    "groups": {
+      "africa": "แอฟริกา",
+      "americas": "ทวีปอเมริกา",
+      "asia": "เอเชีย",
+      "eastAsia": "เอเชียตะวันออก",
+      "europe": "ยุโรป",
+      "middleEastNorthAfrica": "ตะวันออกกลางและแอฟริกาเหนือ",
+      "oceania": "โอเชียเนีย",
+      "southAsia": "เอเชียใต้",
+      "southeastAsia": "เอเชียตะวันออกเฉียงใต้",
+      "other": "อื่น"
+    }
+  },
   "numbers": {
     "notANumber": "กรอกตัวเลข เช่น {example}",
     "notANumberComma": "กรอกตัวเลข เช่น {example} โดยใช้จุลภาคเป็นเครื่องหมายทศนิยม",

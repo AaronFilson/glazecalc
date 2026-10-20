@@ -100,6 +100,7 @@
   "limitSet-choices": "hesselberth-roy veya glazecalc seçin.",
   "currency-choices": "Listedeki para birimlerinden birini seçin veya bölgenize bırakın.",
   "calendar-choices": "Tarihler Miladi takvimde (gregory), Tayland Budist takviminde (buddhist) veya Japon dönemleriyle (japanese) gösterilebilir.",
+  "digits-choices": "Rakamlar bulunduğunuz yerde olağan olduğu gibi (auto), 0–9 olarak (western) veya dilin kendi rakamlarıyla (native) gösterilebilir.",
   "shelf-invalid": "Raf, en fazla {most} hammaddelik bir listedir.",
   "shelf-full": "Elinizdeki hammaddeler en fazla {most} hammadde olabilir. Hiçbir şey değiştirilmedi.",
   "shelf-material-unknown": "Bu hammadde ne sizin hammaddelerinizde ne de Glazecalc kitaplığında var.",

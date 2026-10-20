@@ -79,47 +79,47 @@ Tugann an tábla {{2232 °F; 1222 °C}} do chón 6 féintacaithe, ach amháin nu
 
 :::
 
-## The cone chart {#cone-chart lang=en}
+## An tábla cón {#cone-chart}
 
-These figures are from Orton's cone chart (©2001) for self-supporting cones; cones 11 to 14 are from the charts Orton publishes now, which give the same figures where they overlap, and cones 13 and 14 only in °C (their °F here is converted). Choose the column that matches how fast your kiln climbed over the last {{180 °F; 100 °C}}. Orton's rule of thumb is the {{270 °F/h; 150 °C/h}} column for a fast firing, the {{108 °F/h; 60 °C/h}} column for a medium one and the {{27 °F/h; 15 °C/h}} column for a slow one. To work out a rate, divide the temperature climbed by the hours it took: a kiln that climbs {{900 °F; 500 °C}} in 3 hours is heating at about {{300 °F/h; 167 °C/h}}.
+Is ó thábla cón{{en: cone}} Orton (©2001) do chóin fhéintacaithe na figiúirí seo; is ó na táblaí a fhoilsíonn Orton anois a thagann cóin 11 go 14: tugann siad na figiúirí céanna san áit a bhforluíonn siad, agus ní thugann siad cóin 13 agus 14 ach i °C (is tiontú é an °F anseo dóibh). Roghnaigh an colún atá ag teacht le luas ardaithe d’áithe thar an {{180 °F; 100 °C}} deiridh. Is é riail ordóige Orton: an colún {{270 °F/h; 150 °C/h}} do bhácáil thapa, an colún {{108 °F/h; 60 °C/h}} do bhácáil mheánach agus an colún {{27 °F/h; 15 °C/h}} do bhácáil mhall. Chun ráta a oibriú amach, roinn an méid a d’ardaigh an teocht ar líon na n-uaireanta a thóg sé: tá áith a ardaíonn {{900 °F; 500 °C}} i gceann 3 huaire an chloig ag téamh ag thart ar {{300 °F/h; 167 °C/h}}.
 
-Table: Orton self-supporting cones: the temperature at which each bends, by heating rate over the last {{180 °F; 100 °C}}
-Label: Orton cone chart
+Table: Cóin fhéintacaithe Orton: an teocht a lúbann gach ceann aici, de réir an ráta téimh thar an {{180 °F; 100 °C}} deiridh
+Label: Tábla cón Orton
 
-| Cone | Slow, {{27 °F/h; 15 °C/h}} | Medium, {{108 °F/h; 60 °C/h}} | Fast, {{270 °F/h; 150 °C/h}} |
-| ---- | -------------------------: | ----------------------------: | ---------------------------: |
-| 022  |                          – |           {{1087 °F; 586 °C}} |          {{1094 °F; 590 °C}} |
-| 018  |                          – |           {{1319 °F; 715 °C}} |          {{1353 °F; 734 °C}} |
-| 015  |                          – |           {{1456 °F; 791 °C}} |          {{1504 °F; 818 °C}} |
-| 010  |        {{1636 °F; 891 °C}} |           {{1657 °F; 903 °C}} |          {{1679 °F; 915 °C}} |
-| 08   |        {{1692 °F; 922 °C}} |           {{1728 °F; 942 °C}} |          {{1753 °F; 956 °C}} |
-| 07   |                          – |           {{1789 °F; 976 °C}} |          {{1809 °F; 987 °C}} |
-| 06   |        {{1798 °F; 981 °C}} |           {{1828 °F; 998 °C}} |         {{1855 °F; 1013 °C}} |
-| 05   |       {{1870 °F; 1021 °C}} |          {{1888 °F; 1031 °C}} |         {{1911 °F; 1044 °C}} |
-| 04   |       {{1915 °F; 1046 °C}} |          {{1945 °F; 1063 °C}} |         {{1971 °F; 1077 °C}} |
-| 03   |       {{1960 °F; 1071 °C}} |          {{1987 °F; 1086 °C}} |         {{2019 °F; 1104 °C}} |
-| 02   |                          – |          {{2016 °F; 1102 °C}} |         {{2052 °F; 1122 °C}} |
-| 01   |       {{1999 °F; 1093 °C}} |          {{2046 °F; 1119 °C}} |         {{2080 °F; 1138 °C}} |
-| 1    |       {{2028 °F; 1109 °C}} |          {{2079 °F; 1137 °C}} |         {{2109 °F; 1154 °C}} |
-| 4    |       {{2086 °F; 1141 °C}} |          {{2124 °F; 1162 °C}} |         {{2161 °F; 1183 °C}} |
-| 5    |       {{2118 °F; 1159 °C}} |          {{2167 °F; 1186 °C}} |         {{2205 °F; 1207 °C}} |
-| 6    |       {{2165 °F; 1185 °C}} |          {{2232 °F; 1222 °C}} |         {{2269 °F; 1243 °C}} |
-| 7    |       {{2194 °F; 1201 °C}} |          {{2262 °F; 1239 °C}} |         {{2295 °F; 1257 °C}} |
-| 8    |       {{2212 °F; 1211 °C}} |          {{2280 °F; 1249 °C}} |         {{2320 °F; 1271 °C}} |
-| 9    |       {{2235 °F; 1224 °C}} |          {{2300 °F; 1260 °C}} |         {{2336 °F; 1280 °C}} |
-| 10   |       {{2284 °F; 1251 °C}} |          {{2345 °F; 1285 °C}} |         {{2381 °F; 1305 °C}} |
-| 11   |       {{2322 °F; 1272 °C}} |          {{2361 °F; 1294 °C}} |         {{2399 °F; 1315 °C}} |
-| 12   |       {{2345 °F; 1285 °C}} |          {{2383 °F; 1306 °C}} |         {{2419 °F; 1326 °C}} |
-| 13   |       {{2390 °F; 1310 °C}} |          {{2428 °F; 1331 °C}} |         {{2458 °F; 1348 °C}} |
-| 14   |       {{2464 °F; 1351 °C}} |          {{2489 °F; 1365 °C}} |         {{2523 °F; 1384 °C}} |
+| Cón | Mall, {{27 °F/h; 15 °C/h}} | Meánach, {{108 °F/h; 60 °C/h}} | Tapa, {{270 °F/h; 150 °C/h}} |
+| --- | -------------------------: | -----------------------------: | ---------------------------: |
+| 022 |                          – |            {{1087 °F; 586 °C}} |          {{1094 °F; 590 °C}} |
+| 018 |                          – |            {{1319 °F; 715 °C}} |          {{1353 °F; 734 °C}} |
+| 015 |                          – |            {{1456 °F; 791 °C}} |          {{1504 °F; 818 °C}} |
+| 010 |        {{1636 °F; 891 °C}} |            {{1657 °F; 903 °C}} |          {{1679 °F; 915 °C}} |
+| 08  |        {{1692 °F; 922 °C}} |            {{1728 °F; 942 °C}} |          {{1753 °F; 956 °C}} |
+| 07  |                          – |            {{1789 °F; 976 °C}} |          {{1809 °F; 987 °C}} |
+| 06  |        {{1798 °F; 981 °C}} |            {{1828 °F; 998 °C}} |         {{1855 °F; 1013 °C}} |
+| 05  |       {{1870 °F; 1021 °C}} |           {{1888 °F; 1031 °C}} |         {{1911 °F; 1044 °C}} |
+| 04  |       {{1915 °F; 1046 °C}} |           {{1945 °F; 1063 °C}} |         {{1971 °F; 1077 °C}} |
+| 03  |       {{1960 °F; 1071 °C}} |           {{1987 °F; 1086 °C}} |         {{2019 °F; 1104 °C}} |
+| 02  |                          – |           {{2016 °F; 1102 °C}} |         {{2052 °F; 1122 °C}} |
+| 01  |       {{1999 °F; 1093 °C}} |           {{2046 °F; 1119 °C}} |         {{2080 °F; 1138 °C}} |
+| 1   |       {{2028 °F; 1109 °C}} |           {{2079 °F; 1137 °C}} |         {{2109 °F; 1154 °C}} |
+| 4   |       {{2086 °F; 1141 °C}} |           {{2124 °F; 1162 °C}} |         {{2161 °F; 1183 °C}} |
+| 5   |       {{2118 °F; 1159 °C}} |           {{2167 °F; 1186 °C}} |         {{2205 °F; 1207 °C}} |
+| 6   |       {{2165 °F; 1185 °C}} |           {{2232 °F; 1222 °C}} |         {{2269 °F; 1243 °C}} |
+| 7   |       {{2194 °F; 1201 °C}} |           {{2262 °F; 1239 °C}} |         {{2295 °F; 1257 °C}} |
+| 8   |       {{2212 °F; 1211 °C}} |           {{2280 °F; 1249 °C}} |         {{2320 °F; 1271 °C}} |
+| 9   |       {{2235 °F; 1224 °C}} |           {{2300 °F; 1260 °C}} |         {{2336 °F; 1280 °C}} |
+| 10  |       {{2284 °F; 1251 °C}} |           {{2345 °F; 1285 °C}} |         {{2381 °F; 1305 °C}} |
+| 11  |       {{2322 °F; 1272 °C}} |           {{2361 °F; 1294 °C}} |         {{2399 °F; 1315 °C}} |
+| 12  |       {{2345 °F; 1285 °C}} |           {{2383 °F; 1306 °C}} |         {{2419 °F; 1326 °C}} |
+| 13  |       {{2390 °F; 1310 °C}} |           {{2428 °F; 1331 °C}} |         {{2458 °F; 1348 °C}} |
+| 14  |       {{2464 °F; 1351 °C}} |           {{2489 °F; 1365 °C}} |         {{2523 °F; 1384 °C}} |
 
-A dash marks a figure not copied here; see Orton's full chart for it.
+Léiríonn dais figiúr nár cóipeáladh anseo; féach tábla iomlán Orton chun é a fháil.
 
-Orton makes cones up to 42 for high-temperature work, but publishes temperatures only up to cone 14; for hotter cones its charts are "available (by request)". An older Orton chart, as kiln makers reprint it, gives a large cone 15 as {{2608 °F; 1431 °C}} at {{270 °F/h; 150 °C/h}}, and we found no published figure for cone 16 or above. Past cone 14, set witness cones and go by them, and check that your kiln is rated for that heat.
+Déanann Orton cóin suas go 42 le haghaidh oibre ardteochta, ach ní fhoilsíonn sé teochtaí ach suas go cón 14; maidir le cóin níos teo, tá a tháblaí “ar fáil (ach iad a iarraidh)”. Tugann tábla níos sine de chuid Orton, mar a athchlónn déantóirí áitheanna é, {{2608 °F; 1431 °C}} do chón mór 15 ag {{270 °F/h; 150 °C/h}}, agus níor aimsíomar aon fhigiúr foilsithe do chón 16 ná do chón níos teo. Thar chón 14, cuir cóin fhianaise isteach agus lean iad, agus seiceáil go sroicheann an teocht uasta a luann déantóir d’áithe an teas sin.
 
-Large cones read within a few degrees of these figures: a large cone 6 at {{108 °F/h; 60 °C/h}} is {{2228 °F; 1220 °C}}. Small cones, the kind used in a kiln sitter, are listed only at {{540 °F/h; 300 °C/h}}, so the chart gives a small cone 6 as {{2291 °F; 1255 °C}}. That is not the temperature at which a sitter turns the kiln off. The sitter cone's job is to match the shelf cone, and the shelf cone has the final say.
+Bíonn cóin mhóra laistigh de chúpla céim de na figiúirí seo: lúbann cón mór 6 ag {{2228 °F; 1220 °C}} nuair a ardaíonn an teocht ag {{108 °F/h; 60 °C/h}}. Ní thugtar cóin bheaga, an cineál a úsáidtear i Kiln-Sitter, ach ag {{540 °F/h; 300 °C/h}}, agus mar sin tugann an tábla {{2291 °F; 1255 °C}} do chón beag 6. Ní hí sin an teocht a mhúchann Kiln-Sitter an áith aici. Is é an fheidhm atá ag cón an Kiln-Sitter ná teacht le cón na seilfe, agus is ag cón na seilfe atá an focal deiridh.
 
-Two cautions. Orton's 2019 booklet gives cone 06 at the fast rate as {{1875 °F; 1024 °C}}, but the chart and Orton's FAQ both give {{1855 °F; 1013 °C}}, used here. And the large-cone table at the back of the Dawson kiln sitter manual has copying errors (cone 5 hotter than cone 6), so do not use it.
+Dhá rabhadh. Tugann leabhrán Orton ó 2019 {{1875 °F; 1024 °C}} do chón 06 ag an ráta tapa, ach tugann an tábla agus Ceisteanna Coitianta Orton araon {{1855 °F; 1013 °C}}, agus is é sin a úsáidtear anseo. Agus tá earráidí cóipeála sa tábla cón mór ag deireadh lámhleabhar Kiln-Sitter Dawson (cón 5 níos teo ná cón 6), mar sin ná húsáid é.
 
 :::temperature
 
@@ -287,96 +287,96 @@ Is éard is **ceartú cóin** ann ná socrú rialaitheora a ardaíonn nó a ísl
 
 :::sk
 
-## Firing to SK cones {#sk-cones lang=en}
+## Bácáil go cóin SK {#sk-cones}
 
-SK cones are the pyrometric cones made to Japan's standard, JIS R 8101, and sold in Japan by dealers such as Yuko Trading (有恒商事). Like any cone, an SK cone measures heatwork, not temperature alone: it softens and bends over when the ware has had enough heat, and you read how far it bent. Witness cones, reading how far a cone has bent, and holds work for it as for any cone. This section names each cone's system, and never turns an SK number into another system's number: the numbers of different cone series are not interchangeable.
+Is éard is cóin SK ann ná na cóin phiriméadracha a dhéantar de réir chaighdeán na Seapáine, JIS R 8101, agus a dhíolann déileálaithe sa tSeapáin, mar shampla Yuko Trading (有恒商事). Cosúil le haon chón{{en: cone}}, tomhaiseann cón SK obair teasa{{en: heatwork}}, ní teocht amháin: bogann sé agus lúbann sé anonn nuair a bhíonn a ndóthain teasa faighte ag na píosaí, agus léann tú cé chomh fada a lúb sé. Oibríonn cóin fhianaise{{en: witness cone}}, léamh cé chomh fada a lúb cón, agus coinneáil{{en: hold}} dó mar a oibríonn siad d’aon chón. Ainmníonn an chuid seo córas gach cóin, agus ní iompaíonn sí uimhir SK ina huimhir de chóras eile riamh: ní féidir uimhreacha sraitheanna éagsúla cón a mhalartú.
 
 > [!NOTE]
-> Always write "SK" before the number. Many older Japanese recipes say only "SK 8" or "SK 9" without saying whose cone. Kyoto cones and SK cones to JIS carry the same numbers but bend at different temperatures (see Kyoto cones, below).
+> Scríobh “SK” roimh an uimhir i gcónaí. Ní deir go leor seanoideas Seapánach ach “SK 8” nó “SK 9”, gan a rá cé leis an cón. Tá na huimhreacha céanna ar chóin Kyoto agus ar chóin SK de réir JIS, ach lúbann siad ag teochtaí difriúla (féach Cóin Kyoto, thíos).
 
-### The large cones
+### Na cóin mhóra
 
-The standard has two sizes. Large cones (大型コーン) are "mainly used for measuring the degree of firing" (焼度測定), which is what a potter wants. Small cones (SK 26 to SK 42, at the top of the range) are "mainly used for refractoriness tests" and are not covered here. The table below gives the large cones from SK 022 to SK 20.
+Tá dhá mhéid sa chaighdeán. Úsáidtear cóin mhóra (大型コーン) “go príomha chun méid na bácála a thomhas” (焼度測定), agus sin a theastaíonn ó photadóir. Úsáidtear cóin bheaga (SK 26 go SK 42, ag barr an raoin) “go príomha le haghaidh tástálacha teasfhulangachta”, agus ní phléitear anseo iad. Tugann an tábla thíos na cóin mhóra ó SK 022 go SK 20.
 
-The numbers run from SK 022, the coolest, up to SK 20 here. Between SK 015 and SK 6 the printed numbers carry an "a" (SK 015a, SK 6a); write it as printed.
+Anseo téann na huimhreacha ó SK 022, an ceann is fuaire, go SK 20. Idir SK 015 agus SK 6 tá “a” ar na huimhreacha clóite (SK 015a, SK 6a); scríobh iad mar atá siad clóite.
 
-### Setting large cones
+### Cóin mhóra a shuíomh
 
-Set each large cone in a plaque or a pat of clay, leaning toward its bending face. As with any cone, keep the height and the lean the same from firing to firing, because a difference in either changes how far it bends. Set the three cones of the pack (below) together, deep in the kiln near the middle of the load, where they get the heat the ware gets, yet where you can see them through a peephole; before you close the kiln, check that you can see all three.
+Cuir gach cón mór i bplaic nó i gcnap cré, claonta i dtreo a thaoibh lúbtha. Mar is amhlaidh le haon chón, coinnigh an airde agus an claonadh mar an gcéanna ó bhácáil go bácáil, mar athraíonn difríocht i gceachtar acu cé chomh fada a lúbann sé. Cuir trí chón an phaca{{en: cone pack}} (thíos) le chéile, i bhfad isteach san áith gar do lár an lochta, áit a bhfaigheann siad an teas a fhaigheann na píosaí, ach áit ar féidir leat iad a fheiceáil trí pholl faire; sula ndúnann tú an áith, seiceáil gur féidir leat na trí cinn a fheiceáil.
 
-We found no maker's or seller's instructions for how deep or at what angle to set SK cones. The nearest is a laboratory standard, JIS R 2204, Japan's test of how much heat a refractory material stands: it sets each SK cone with its marked face at 80° to a flat stand and its foot about 4 mm into it. That is a test for refractories, not a rule for firing pots, and we read it in a transcription of the standard, not in the standard itself.
+Níor aimsíomar aon treoracha ó dhéantóir ná ó dhíoltóir faoi cé chomh domhain ná cén uillinn ar cheart cóin SK a shuíomh. Is é an rud is gaire dó sin caighdeán saotharlainne, JIS R 2204, tástáil na Seapáine ar an méid teasa a sheasann ábhar teasfhulangach: suíonn sé gach cón SK agus a aghaidh mharcáilte ag 80° le seastán cothrom agus a bhun thart ar 4 mm isteach ann. Is tástáil é sin d’ábhair theasfhulangacha, ní riail do photaí a bhácáil, agus léamar é i dtras-scríbhinn den chaighdeán, ní sa chaighdeán féin.
 
-### Guide, firing and guard cones
+### Cón treorach, cón bácála agus cón cosanta
 
-Cones are sold and set as three: a guide cone, a firing cone at the target, and a guard cone. Take the firing cone as the SK number your recipe or clay names, the guide cone as the next cooler cone (one row up in the table) and the guard cone as the next hotter one. When the guide cone starts to bend, the end is near; when the guard cone bends, the firing has gone too far.
+Díoltar agus cuirtear cóin ina dtrí cinn: cón treorach, cón bácála ag an sprioc, agus cón cosanta. Glac mar chón bácála an uimhir SK a ainmníonn d’oideas nó do chré, mar chón treorach an chéad chón eile atá níos fuaire (an ró díreach os a chionn sa tábla), agus mar chón cosanta an chéad cheann eile atá níos teo. Nuair a thosaíonn an cón treorach ag lúbadh, tá an deireadh gar; nuair a lúbann an cón cosanta, tá an bhácáil imithe rófhada.
 
-### The SK chart
+### Cairt SK
 
-Table: SK large cones (JIS R 8101): the nominal (JIS) temperature of each
-Label: SK chart
+Table: Cóin mhóra SK (JIS R 8101): teocht ainmniúil (JIS) gach cóin
+Label: Cairt SK
 
-| Cone    | Nominal (JIS) temperature |
-| ------- | ------------------------: |
-| SK 022  |       {{1112 °F; 600 °C}} |
-| SK 021  |       {{1202 °F; 650 °C}} |
-| SK 020  |       {{1238 °F; 670 °C}} |
-| SK 019  |       {{1274 °F; 690 °C}} |
-| SK 018  |       {{1310 °F; 710 °C}} |
-| SK 017  |       {{1346 °F; 730 °C}} |
-| SK 016  |       {{1382 °F; 750 °C}} |
-| SK 015a |       {{1454 °F; 790 °C}} |
-| SK 014a |       {{1499 °F; 815 °C}} |
-| SK 013a |       {{1535 °F; 835 °C}} |
-| SK 012a |       {{1571 °F; 855 °C}} |
-| SK 011a |       {{1616 °F; 880 °C}} |
-| SK 010a |       {{1652 °F; 900 °C}} |
-| SK 09a  |       {{1688 °F; 920 °C}} |
-| SK 08a  |       {{1724 °F; 940 °C}} |
-| SK 07a  |       {{1760 °F; 960 °C}} |
-| SK 06a  |       {{1796 °F; 980 °C}} |
-| SK 05a  |      {{1832 °F; 1000 °C}} |
-| SK 04a  |      {{1868 °F; 1020 °C}} |
-| SK 03a  |      {{1904 °F; 1040 °C}} |
-| SK 02a  |      {{1940 °F; 1060 °C}} |
-| SK 01a  |      {{1976 °F; 1080 °C}} |
-| SK 1a   |      {{2012 °F; 1100 °C}} |
-| SK 2a   |      {{2048 °F; 1120 °C}} |
-| SK 3a   |      {{2084 °F; 1140 °C}} |
-| SK 4a   |      {{2120 °F; 1160 °C}} |
-| SK 5a   |      {{2156 °F; 1180 °C}} |
-| SK 6a   |      {{2192 °F; 1200 °C}} |
-| SK 7    |      {{2246 °F; 1230 °C}} |
-| SK 8    |      {{2282 °F; 1250 °C}} |
-| SK 9    |      {{2336 °F; 1280 °C}} |
-| SK 10   |      {{2372 °F; 1300 °C}} |
-| SK 11   |      {{2408 °F; 1320 °C}} |
-| SK 12   |      {{2462 °F; 1350 °C}} |
-| SK 13   |      {{2516 °F; 1380 °C}} |
-| SK 14   |      {{2570 °F; 1410 °C}} |
-| SK 15   |      {{2615 °F; 1435 °C}} |
-| SK 16   |      {{2660 °F; 1460 °C}} |
-| SK 17   |      {{2696 °F; 1480 °C}} |
-| SK 18   |      {{2732 °F; 1500 °C}} |
-| SK 19   |      {{2768 °F; 1520 °C}} |
-| SK 20   |      {{2786 °F; 1530 °C}} |
+| Cón     | Teocht ainmniúil (JIS) |
+| ------- | ---------------------: |
+| SK 022  |    {{1112 °F; 600 °C}} |
+| SK 021  |    {{1202 °F; 650 °C}} |
+| SK 020  |    {{1238 °F; 670 °C}} |
+| SK 019  |    {{1274 °F; 690 °C}} |
+| SK 018  |    {{1310 °F; 710 °C}} |
+| SK 017  |    {{1346 °F; 730 °C}} |
+| SK 016  |    {{1382 °F; 750 °C}} |
+| SK 015a |    {{1454 °F; 790 °C}} |
+| SK 014a |    {{1499 °F; 815 °C}} |
+| SK 013a |    {{1535 °F; 835 °C}} |
+| SK 012a |    {{1571 °F; 855 °C}} |
+| SK 011a |    {{1616 °F; 880 °C}} |
+| SK 010a |    {{1652 °F; 900 °C}} |
+| SK 09a  |    {{1688 °F; 920 °C}} |
+| SK 08a  |    {{1724 °F; 940 °C}} |
+| SK 07a  |    {{1760 °F; 960 °C}} |
+| SK 06a  |    {{1796 °F; 980 °C}} |
+| SK 05a  |   {{1832 °F; 1000 °C}} |
+| SK 04a  |   {{1868 °F; 1020 °C}} |
+| SK 03a  |   {{1904 °F; 1040 °C}} |
+| SK 02a  |   {{1940 °F; 1060 °C}} |
+| SK 01a  |   {{1976 °F; 1080 °C}} |
+| SK 1a   |   {{2012 °F; 1100 °C}} |
+| SK 2a   |   {{2048 °F; 1120 °C}} |
+| SK 3a   |   {{2084 °F; 1140 °C}} |
+| SK 4a   |   {{2120 °F; 1160 °C}} |
+| SK 5a   |   {{2156 °F; 1180 °C}} |
+| SK 6a   |   {{2192 °F; 1200 °C}} |
+| SK 7    |   {{2246 °F; 1230 °C}} |
+| SK 8    |   {{2282 °F; 1250 °C}} |
+| SK 9    |   {{2336 °F; 1280 °C}} |
+| SK 10   |   {{2372 °F; 1300 °C}} |
+| SK 11   |   {{2408 °F; 1320 °C}} |
+| SK 12   |   {{2462 °F; 1350 °C}} |
+| SK 13   |   {{2516 °F; 1380 °C}} |
+| SK 14   |   {{2570 °F; 1410 °C}} |
+| SK 15   |   {{2615 °F; 1435 °C}} |
+| SK 16   |   {{2660 °F; 1460 °C}} |
+| SK 17   |   {{2696 °F; 1480 °C}} |
+| SK 18   |   {{2732 °F; 1500 °C}} |
+| SK 19   |   {{2768 °F; 1520 °C}} |
+| SK 20   |   {{2786 °F; 1530 °C}} |
 
-Every figure is nominal (JIS): the temperature the standard gives for the cone, as printed in Yuko Trading's table. The table does not print a heating rate. The standard gives reference temperatures. At a potter's rate of about 100 °C/h, Kyoto's municipal institute measured its own Kyoto cones bending 47–79 °C cooler than the JIS figure for the same number; we found no such measurements for SK cones to JIS. Set a witness cone and compare.
+Is ainmniúil (JIS) gach figiúr: an teocht a thugann an caighdeán don chón, mar atá clóite i dtábla Yuko Trading. Ní thugann an tábla ráta téimh. Tugann an caighdeán teochtaí tagartha. Ag ráta téimh potadóra de thart ar 100 °C/h, thomhais institiúid bhardasach Kyoto a cóin Kyoto féin ag lúbadh 47–79 °C níos fuaire ná figiúr JIS na huimhreach céanna; níor aimsíomar a leithéid de thomhais do chóin SK de réir JIS. Cuir cón fianaise isteach agus déan comparáid.
 
-### Kyoto cones
+### Cóin Kyoto
 
-Kyoto cones (京都ゼーゲル), made by Kyoto's municipal institute, are no longer made: news reports say the institute ended production at the close of fiscal 2009. They carry the same numbers as SK cones to JIS but bend cooler: a Kyoto cone bends at about the temperature of the SK cone to JIS two or three numbers lower. A recipe from Kyoto that says "SK 8" may mean a Kyoto cone. The institute has published advice for potters moving from Kyoto cones to Orton cones, and substitutes Orton cone 10 for its own Kyoto SK 12. That is the institute's choice from its own measurements: it bent Kyoto cones and Orton cones in the same kiln at 100 °C/h, and Kyoto SK 12 (1290 °C) bent where Orton 10 (1290 °C) did. In the same table Kyoto SK 8 (1198 °C) bent near Orton 5 (1207 °C), and Kyoto SK 10 (1232 °C) where Orton 7 (1232 °C) did. Glazecalc uses this table, not the Orton chart at 60 °C/h, when it shows an SK cone beside an Orton cone, and says each match is approximate.
+Rinne institiúid bhardasach Kyoto cóin Kyoto (京都ゼーゲル), ach ní dhéantar a thuilleadh iad: deir tuairiscí nuachta gur stop an institiúid á ndéanamh ag deireadh bhliain fhioscach 2009. Tá na huimhreacha céanna orthu agus atá ar chóin SK de réir JIS, ach lúbann siad níos fuaire: lúbann cón Kyoto ag thart ar theocht an chóin SK de réir JIS atá dhá nó trí huimhir níos fuaire. D’fhéadfadh cón Kyoto a bheith i gceist le hoideas ó Kyoto a deir “SK 8”. D’fhoilsigh an institiúid comhairle do photadóirí atá ag aistriú ó chóin Kyoto go cóin Orton, agus cuireann sí cón Orton 10 in áit a cóin Kyoto SK 12 féin. Is é sin rogha na hinstitiúide óna tomhais féin: lúb sí cóin Kyoto agus cóin Orton san áith chéanna ag 100 °C/h, agus lúb Kyoto SK 12 (1290 °C) nuair a lúb Orton 10 (1290 °C). Sa tábla céanna lúb Kyoto SK 8 (1198 °C) gar do Orton 5 (1207 °C), agus Kyoto SK 10 (1232 °C) nuair a lúb Orton 7 (1232 °C). Úsáideann Glazecalc an tábla seo, ní cairt Orton ag 60 °C/h, nuair a thaispeánann sé cón SK in aice le cón Orton, agus deir sé nach bhfuil i ngach meaitseáil ach neastachán.
 
-### Orton cones sold in Japan
+### Cóin Orton a dhíoltar sa tSeapáin
 
-Orton self-supporting cones are sold in Japan under the name 立つゼーゲル ("standing Seger"), because they need no plaque or stand. They are Orton cones, with Orton's numbers and Orton's chart (above): fire to one only by its Orton number, and keep SK and Orton cones in separate packs, never in the same one.
+Díoltar cóin fhéintacaithe Orton sa tSeapáin faoin ainm 立つゼーゲル (“Seger ina sheasamh”), mar nach bhfuil plaic ná seastán ag teastáil uathu. Is cóin Orton iad, le huimhreacha Orton agus cairt Orton (thuas): bácáil go ceann acu de réir a uimhreach Orton amháin, agus coinnigh cóin SK agus cóin Orton i bpacaí ar leith, agus ná cuir riamh sa phaca céanna iad.
 
-### Sources for SK cones
+### Foinsí do chóin SK
 
-- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (the SK table, checked 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
-- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (in force, reconfirmed 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
-- [JSA: JIS R 2204:1999, 耐火物及び耐火物原料の耐火度試験方法 (in force, reconfirmed 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+2204:1999)
-- [kikakurui.com: a transcription of JIS R 2204:1999, where clause 5 a) sets the cones (read 2026-10-19)](https://kikakurui.com/r2/R2204-1999-01.html)
-- [Kyoto Municipal Institute of Industrial Technology and Culture: points to note when moving from Kyoto cones to Orton cones](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
+- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (an tábla SK, seiceáilte 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
+- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (i bhfeidhm, athdhearbhaithe 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
+- [JSA: JIS R 2204:1999, 耐火物及び耐火物原料の耐火度試験方法 (i bhfeidhm, athdhearbhaithe 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+2204:1999)
+- [kikakurui.com: tras-scríbhinn de JIS R 2204:1999, ina socraíonn clásal 5 a) na cóin (léite 2026-10-19)](https://kikakurui.com/r2/R2204-1999-01.html)
+- [Institiúid Bhardasach Teicneolaíochta Tionscail agus Cultúir Kyoto: pointí le tabhairt faoi deara agus tú ag aistriú ó chóin Kyoto go cóin Orton](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
 
 :::
 
@@ -606,22 +606,22 @@ Má mhúchann an Kiln-Sitter an áith sula mbíonn cóin na seilfe lúbtha, téi
 
 Is éard is **piriméadar** ann ná tomhsaire teochta a fhaigheann a léamh ó **theirmeachúpla**, tóireadóir teasa trí bhalla na háithe. Taispeánann sé cé chomh tapa is atá an áith ag ardú, ionas gur féidir leat an colún ceart den tábla cón a roghnú. Ach léann sé in aice leis an mballa, ní ag na píosaí, agus imíonn a léamh ó cheart le himeacht ama. Tugann L&L faoi deara go bhféadfadh earráid níos mó ná {{25 °F; 14 °C}} a bheith i dteirmeachúpla de chineál K tar éis bácálacha go cón 6 arís agus arís eile, “difríocht níos mó ná cón iomlán”, agus nach n-athraíonn cón féintacaithe níos mó ná {{4 °F; 2 °C}}. Deir Orton gur gá piriméadair a athchalabrú ó am go ham, agus gur le cóin a sheiceálann tú iad.
 
-## Venting, peeking and safety {#venting lang=en}
+## Aeráil, féachaint isteach agus sábháilteacht {#venting}
 
-### Venting
+### Aeráil
 
-Early in a firing, clay and glaze give off water vapor and fumes, including carbon monoxide, and glazes can give off toxic fumes later in the firing too. L&L calls venting them "essential". With no vent system, that means the lid propped and the peepholes open in the early stages, as in the procedures above; slowing the heating during this time also helps the carbon burn out. In a kiln without a vent, Dawson, who made the sitter, also says to leave the top peephole open for the whole firing: the venting "will reduce deterioration of the kiln's metal parts and increase the life of the tube assembly". A **downdraft vent** (a powered vent fitted to the kiln) changes this. It does the venting, so Orton says the lid and peepholes stay closed for the whole firing except to check the cones, and L&L says to leave the vent on and plug the peepholes.
+Go luath sa bhácáil, scaoileann cré agus glónra{{en: glaze}} gal uisce agus múch, aonocsaíd charbóin san áireamh, agus féadann glónraí múch thocsaineach a scaoileadh níos déanaí sa bhácáil freisin. Deir L&L go bhfuil sé “riachtanach” iad a aeráil amach. Gan chóras aerála, ciallaíonn sé sin an clúdach ardaithe ar thaca agus na poill faire ar oscailt sna céimeanna tosaigh, mar atá sna nósanna imeachta thuas; cabhraíonn moilliú an téimh le linn na tréimhse seo leis an gcarbón a dhó amach freisin. In áith gan gaothaire, deir Dawson, a rinne an Kiln-Sitter, freisin an poll faire uachtair a fhágáil ar oscailt don bhácáil ar fad: “laghdóidh an aeráil meathlú páirteanna miotail na háithe agus méadóidh sí saolré chóimeáil an fheadáin”. Athraíonn **gaothaire íochtarach** (gaothaire cumhachtaithe atá feistithe ar an áith) é seo. Déanann sé an aeráil, mar sin deir Orton go bhfanann an clúdach agus na poill faire dúnta don bhácáil ar fad, ach amháin chun na cóin{{en: cones}} a sheiceáil, agus deir L&L an gaothaire a fhágáil ar siúl agus na poill faire a dhúnadh le dalláin.
 
-For venting the room, and for carbon monoxide alarms, see [Safe mixing and ventilation](/guides/safe-mixing) and [Don't poison your family](/guides/home-safety).
+Maidir leis an seomra a aeráil, agus le haláraim aonocsaíde carbóin, féach na treoirleabhair [Meascadh sábháilte agus aeráil](/guides/safe-mixing) agus [Ná nimhigh do theaghlach](/guides/home-safety).
 
-### While the kiln is firing
+### Le linn don áith a bheith ag bácáil
 
-- Look through a peephole only with IR-rated shade 3 welding glasses; sunglasses are not enough. Skutt advises twisting the plugs into place so they do not fall out.
-- Stay nearby and check the kiln while it fires, above all near its expected finishing time; a sitter is not a fail-safe. Fire only when an adult will be home and awake through the whole firing.
-- Never fire on or near anything that burns, such as a wood floor or carpet.
-- Keep the clearances in your manual. Published figures range from 12 in (30 cm) to 3 ft (91 cm); where the manual is silent, 18 in (46 cm) from walls and 3 ft (91 cm) from anything that burns is the safest choice.
-- Keep the space around the sitter's weight clear so it can drop.
-- When the firing ends, turn the switches off and turn off the breaker as well.
+- Ná féach trí pholl faire ach le spéaclaí táthúcháin scáth 3 atá rátáilte do IR; ní leor spéaclaí gréine. Molann Skutt na dalláin a chasadh isteach ina n-áit ionas nach dtitfidh siad amach.
+- Fan in aice láimhe agus seiceáil an áith agus í ag bácáil, go háirithe gar don am críochnaithe a bhfuiltear ag súil leis; ní cosaint shlánchinnte é Kiln-Sitter. Ná bácáil ach nuair a bheidh duine fásta sa bhaile agus ina dhúiseacht tríd an mbácáil ar fad.
+- Ná bácáil riamh ar aon rud indóite ná in aice leis, mar shampla urlár adhmaid nó cairpéad.
+- Coinnigh an glanspás a thugann do lámhleabhar. Téann na figiúirí foilsithe ó 12 orlach (30 cm) go 3 troithe (91 cm); mura ndeir an lámhleabhar tada, is é 18 n-orlach (46 cm) ó bhallaí agus 3 troithe (91 cm) ó aon rud indóite an rogha is sábháilte.
+- Coinnigh an spás timpeall ar mheáchan an Kiln-Sitter glan, ionas gur féidir leis titim.
+- Nuair a chríochnaíonn an bhácáil, múch na lasca agus cas as an scoradán ciorcaid freisin.
 
 ## Fuarú agus folmhú {#cooling}
 

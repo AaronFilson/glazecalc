@@ -82,6 +82,31 @@
     "languages": "Езици",
     "language": "Език:"
   },
+  "picker": {
+    "results": "{count, plural, one {# съвпадение} other {# съвпадения}}",
+    "languages": {
+      "search": "Търсене на езици",
+      "showAll": "Покажи всички езици",
+      "noMatch": "Няма съвпадащ език"
+    },
+    "regions": {
+      "search": "Търсене на държави и региони",
+      "showAll": "Покажи всички държави и региони",
+      "noMatch": "Няма съвпадаща държава или регион"
+    },
+    "groups": {
+      "africa": "Африка",
+      "americas": "Америка",
+      "asia": "Азия",
+      "eastAsia": "Източна Азия",
+      "europe": "Европа",
+      "middleEastNorthAfrica": "Близкият изток и Северна Африка",
+      "oceania": "Океания",
+      "southAsia": "Южна Азия",
+      "southeastAsia": "Югоизточна Азия",
+      "other": "Други"
+    }
+  },
   "numbers": {
     "notANumber": "Въведете число, например {example}.",
     "notANumberComma": "Въведете число, например {example}, със запетая за десетичен знак.",

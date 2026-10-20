@@ -82,6 +82,31 @@
     "languages": "Idiomas",
     "language": "Idioma:"
   },
+  "picker": {
+    "results": "{count, plural, one {# resultado} many {# de resultados} other {# resultados}}",
+    "languages": {
+      "search": "Pesquisar idiomas",
+      "showAll": "Mostrar todos os idiomas",
+      "noMatch": "Nenhum idioma corresponde"
+    },
+    "regions": {
+      "search": "Pesquisar países e regiões",
+      "showAll": "Mostrar todos os países e regiões",
+      "noMatch": "Nenhum país ou região corresponde"
+    },
+    "groups": {
+      "africa": "África",
+      "americas": "Américas",
+      "asia": "Ásia",
+      "eastAsia": "Ásia Oriental",
+      "europe": "Europa",
+      "middleEastNorthAfrica": "Médio Oriente e Norte de África",
+      "oceania": "Oceânia",
+      "southAsia": "Sul da Ásia",
+      "southeastAsia": "Sudeste Asiático",
+      "other": "Outros"
+    }
+  },
   "numbers": {
     "notANumber": "Introduza um número, por exemplo {example}.",
     "notANumberComma": "Introduza um número, por exemplo {example}, com vírgula para as décimas.",

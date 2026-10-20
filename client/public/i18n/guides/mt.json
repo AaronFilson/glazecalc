@@ -52,6 +52,7 @@
     "emergency": "Emerġenza: telf mis-sensi, waqfien tan-nifs, aċċessjoni",
     "poisonAdvice": "{who, select, children {Pariri dwar l-avvelenament: {name} (għat-tfal biss)} other {Pariri dwar l-avvelenament: {name}}}",
     "or": "jew {number}",
+    "orCall": "jew <link>{number}</link>",
     "online": "Fuq l-internet: <link>{name}</link>.",
     "poisonAdviceNone": "Pariri dwar l-avvelenament",
     "noLine": "Ma stajniex nikkonfermaw linja pubblika tal-veleni hawn. Ċempel lit-tabib tiegħek, jew lin-numru tal-emerġenza jekk il-każ huwa urġenti.",
@@ -111,6 +112,10 @@
     "bandFromTo": "Trab b’{from}% sa {to}% silika ħielsa (SiO₂)",
     "bandOverTo": "Trab b’aktar minn {from}% u sa {to}% silika ħielsa",
     "bandAbove": "Trab b’aktar minn {from}% silika ħielsa",
+    "untilDate": "Fis-seħħ sa: {date}",
+    "fromDate": "Fis-seħħ minn: {date}",
+    "beforeFormula": "Limitu għat-trab respirabbli, fejn Q hija s-silika kristallina fih, f’%",
+    "beforeAll": "Għal trab li huwa kollu silika kristallina",
     "recommended": "Rakkomandat minn {abbr}",
     "value": "{value} mg/m³",
     "kind": {
@@ -121,6 +126,7 @@
     },
     "setBy": "Stabbilit minn <link>{law}</link>.",
     "from": "Japplika mill-{date}.",
+    "beforeSetBy": "Sa dakinhar, il-limitu huwa stabbilit minn <link>{law}</link>.",
     "lowerThanEu": "Aktar baxx mil-limitu vinkolanti tal-UE ta’ {value} mg/m³.",
     "sameAsEu": "L-istess bħal-limitu vinkolanti tal-UE.",
     "recommendedBy": "Dan il-valur huwa rakkomandat minn {abbr} ({by}) f’<link>{title}</link>. Mhuwiex liġi.",
@@ -183,7 +189,13 @@
       "vnMedium": "Biċċiet fondi għaż-żamma tal-ikel, minn 1100 mL sa inqas minn 3000 mL",
       "vnStorage": "Biċċiet fondi għaż-żamma tal-ikel, 3000 mL jew aktar",
       "vnCooking": "Biċċiet fondi għat-tisjir",
-      "vnCups": "Tazzi u skutelli żgħar"
+      "vnCups": "Tazzi u skutelli żgħar",
+      "cnFlat": "Oġġetti ċatti, mhux iktar fondi minn 25 mm",
+      "cnSmall": "Oġġetti fondi żgħar, inqas minn 1.1 L, minbarra tazzi",
+      "cnLarge": "Oġġetti fondi kbar, minn 1.1 L sa inqas minn 3 L",
+      "cnStorage": "Vażetti tal-ħażna, 3 L jew aktar",
+      "cnCups": "Tazzi, għall-ilma jew għax-xorb",
+      "cnCooking": "Oġġetti tat-tisjir, biex jisħnu l-ikel"
     },
     "judged": {
       "average": "medja ta’ 6 biċċiet",
@@ -197,6 +209,8 @@
     "atMost": "Oġġett jgħaddi jekk ma jirrilaxxax aktar mil-limitu: il-liġi tgħid “mhux aktar minn”.",
     "ppm": "Hawnhekk ppm tfisser milligrammi għal kull litru tas-soluzzjoni tat-test (mg/L).",
     "unknown": "Għadna ma kkonfermajniex ir-regoli ({region}).",
+    "none": "{region}: m’hemm l-ebda liġi li tistabbilixxi limiti għaċ-ċomb u għall-kadmju li biċċa moħmija tista’ tirrilaxxa (iċċekkjat: {date}).",
+    "noneSource": "Sors: <link>{law}</link>.",
     "choosePrompt": "Agħżel il-pajjiż tiegħek biex tara r-regoli tiegħu."
   },
   "equivalents": {

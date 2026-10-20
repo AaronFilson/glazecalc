@@ -363,7 +363,8 @@
     "heading": "Zagrożenia",
     "intro": "Zgodnie z kartą każdego surowca; zagrożenia surowców z biblioteki standardowej pochodzą z kart charakterystyki dostawców.",
     "line": "<b>{names}:</b> {hazards}",
-    "unknown": "{count, plural, one {Nie podano zagrożeń dla: {list}. Należy zajrzeć do karty charakterystyki dołączonej do tego surowca.} few {Nie podano zagrożeń dla: {list}. Należy zajrzeć do kart charakterystyki dołączonych do tych surowców.} many {Nie podano zagrożeń dla: {list}. Należy zajrzeć do kart charakterystyki dołączonych do tych surowców.} other {Nie podano zagrożeń dla: {list}. Należy zajrzeć do kart charakterystyki dołączonych do tych surowców.}}"
+    "unknown": "{count, plural, one {Nie podano zagrożeń dla: {list}. Należy zajrzeć do karty charakterystyki dołączonej do tego surowca.} few {Nie podano zagrożeń dla: {list}. Należy zajrzeć do kart charakterystyki dołączonych do tych surowców.} many {Nie podano zagrożeń dla: {list}. Należy zajrzeć do kart charakterystyki dołączonych do tych surowców.} other {Nie podano zagrożeń dla: {list}. Należy zajrzeć do kart charakterystyki dołączonych do tych surowców.}}",
+    "safety": "Suche surowce do szkliw wytwarzają pył i nie wolno dopuszczać, by trafiał do płuc, także gdy pochodzi z surowców niesklasyfikowanych jako niebezpieczne. Zob. <mixing>Bezpieczne rozrabianie szkliw i wentylacja</mixing>, a jeśli w pobliżu są dzieci lub zwierzęta, także <home>Jak nie otruć własnej rodziny</home>. Jeśli karta charakterystyki surowca podaje więcej, należy postępować według niej."
   },
   "compare": {
     "heading": "Porównaj dwie receptury",
@@ -532,7 +533,10 @@
     "suppliesShare": "{oxide} w {percent} %",
     "suppliesLittle": "niewielka część szkliwa",
     "changed": "{name} {from} → {to}",
-    "added": "{name} {amount}, nowy"
+    "added": "{name} {amount}, nowy",
+    "why": {
+      "rawClay": "surowa glina kurczy się, gdy szkliwo schnie, a przy jej dużej ilości szkliwo może popękać na naczyniu i zbiec się w piecu; resztę może uzupełnić kaolin kalcynowany"
+    }
   },
   "shelf": {
     "empty": "Brak posiadanych surowców do dopasowania."
@@ -570,7 +574,8 @@
     "bands": {
       "low": "Niski wypał, stożek 06–02",
       "mid": "Średni wypał, stożek 4–6",
-      "high": "Wysoki wypał, stożek 9–11"
+      "high": "Wysoki wypał, stożek 9–11",
+      "top": "Bardzo wysoki wypał, od stożka 12 wzwyż"
     },
     "shownFor": "Gdy nie wybrano wypału, pokazane wartości dotyczą: {band}. Wypał zapisuje się razem z recepturą.",
     "cone": "To wartości zestawu dla stożka {cone}.",
@@ -590,6 +595,7 @@
     "notInSet": "Ten zestaw nie ma zakresu dla: {oxides}.",
     "checksOnly": "Ten zestaw sprawdza tylko: {oxides}.",
     "notApply": "Zestaw {name} nie ma wartości dla tego wypału ({band}), więc go nie sprawdzono: wartości dla innego wypału wprowadzałyby w błąd.",
+    "topNote": "Opublikowane limity dla szkliw, które znaleźliśmy, kończą się na stożku 10, a Glazecalc odczytuje je nie dalej niż do stożka 11, więc wypału od stożka 12 wzwyż nie porównuje się z limitami. Rozstrzygają płytki testowe.",
     "guidance": "To wytyczne, a nie ocena „zalicza lub nie zalicza”: szkliwo spoza nich może być dobre, a to mieszczące się w nich może mimo to pękać włoskowato, uwalniać metale lub zawieść. Należy je przetestować.",
     "source": "Źródło:",
     "saveFailed": "Nie udało się zapisać wyboru zestawu limitów na koncie, więc nadal obowiązuje poprzedni zestaw.",
@@ -627,7 +633,8 @@
       "ash": "Glazecalc nie może porównać chemii tego szkliwa z jego wypałem: zawiera popiół, którego skład zbyt się zmienia dla opublikowanych wartości używanych w tej kontroli.",
       "noTemperature": "Glazecalc nie może porównać chemii tego szkliwa {scale, select, band {{band, select, low {z niskim wypałem} mid {ze średnim wypałem} other {z wysokim wypałem}}} sk {z SK {cone}} temperature {z {cone} °C} other {ze stożkiem {cone}}}: dla tego stożka nie ma zmierzonej temperatury.",
       "between": "Glazecalc nie może porównać chemii tego szkliwa {scale, select, band {{band, select, low {z niskim wypałem} mid {ze średnim wypałem} other {z wysokim wypałem}}} sk {z SK {cone}} temperature {z {cone} °C} other {ze stożkiem {cone}}}: opublikowane wartości używane w tej kontroli dotyczą niskiego wypału oraz średniego i wysokiego wypału, a nie stożków pośrednich (od 01 do 3).",
-      "belowChart": "Glazecalc nie może porównać chemii tego szkliwa {scale, select, band {{band, select, low {z niskim wypałem} mid {ze średnim wypałem} other {z wysokim wypałem}}} sk {z SK {cone}} temperature {z {cone} °C} other {ze stożkiem {cone}}}: reguła boru Katza dotyczy stożków od 06 do 10, a ten wypał jest chłodniejszy."
+      "belowChart": "Glazecalc nie może porównać chemii tego szkliwa {scale, select, band {{band, select, low {z niskim wypałem} mid {ze średnim wypałem} other {z wysokim wypałem}}} sk {z SK {cone}} temperature {z {cone} °C} other {ze stożkiem {cone}}}: reguła boru Katza dotyczy stożków od 06 do 10, a ten wypał jest chłodniejszy.",
+      "aboveChart": "Glazecalc nie może porównać chemii tego szkliwa {scale, select, band {{band, select, top {z bardzo wysokim wypałem} other {z wysokim wypałem}}} sk {z SK {cone}} temperature {z {cone} °C} other {ze stożkiem {cone}}}: reguła boru Katza dotyczy stożków od 06 do 10, wartości Hesselbertha i Roya dla krzemionki i tlenku glinu kończą się na stożku 10, a ten wypał jest gorętszy."
     }
   },
   "stull": {
@@ -978,6 +985,7 @@
     "approxTemperature": "≈ {temperature} ({basis}; przybliżone)",
     "approxCone": "≈ {cone} ({basis}; przybliżone)",
     "basis": {
+      "orton150": "starsza tabela Ortona dla dużych stożków przy 150 °C na godzinę",
       "kyoto": "zmierzone przy 100 °C na godzinę przez miejski instytut w Kioto",
       "stated": "jak podano"
     },

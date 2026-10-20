@@ -363,7 +363,8 @@
     "heading": "Opasnosti",
     "intro": "Kako ih navodi zapis svake sirovine; opasnosti standardne biblioteke potječu iz sigurnosno-tehničkih listova dobavljača.",
     "line": "<b>{names}:</b> {hazards}",
-    "unknown": "{count, plural, one {Za {list} nisu navedene opasnosti: pogledajte sigurnosno-tehnički list koji dolazi uz tu sirovinu.} few {Za {list} nisu navedene opasnosti: pogledajte sigurnosno-tehničke listove koji dolaze uz te sirovine.} other {Za {list} nisu navedene opasnosti: pogledajte sigurnosno-tehničke listove koji dolaze uz te sirovine.}}"
+    "unknown": "{count, plural, one {Za {list} nisu navedene opasnosti: pogledajte sigurnosno-tehnički list koji dolazi uz tu sirovinu.} few {Za {list} nisu navedene opasnosti: pogledajte sigurnosno-tehničke listove koji dolaze uz te sirovine.} other {Za {list} nisu navedene opasnosti: pogledajte sigurnosno-tehničke listove koji dolaze uz te sirovine.}}",
+    "safety": "Suhe sirovine za glazure stvaraju prašinu i morate spriječiti da dospije u vaša pluća, čak i prašina od sirovina koje nisu razvrstane kao opasne. Pogledajte <mixing>Sigurno miješanje i ventilacija</mixing>, a ako su u blizini djeca ili kućni ljubimci, i <home>Ne otrujte svoju obitelj</home>. Gdje sigurnosno-tehnički list sirovine kaže više, slijedite ga."
   },
   "compare": {
     "heading": "Usporedi dva recepta",
@@ -532,7 +533,10 @@
     "suppliesShare": "{oxide} ({percent} % ukupne količine)",
     "suppliesLittle": "mali dio glazure",
     "changed": "{name} {from} → {to}",
-    "added": "{name} {amount}, nova sirovina"
+    "added": "{name} {amount}, nova sirovina",
+    "why": {
+      "rawClay": "nekalcinirana glina skuplja se dok se glazura suši, a kad je ima mnogo, glazura se može raspucati na predmetu i povući u peći; ostatak može biti kalcinirani kaolin"
+    }
   },
   "shelf": {
     "empty": "Nema sirovina pri ruci za slaganje."
@@ -570,7 +574,8 @@
     "bands": {
       "low": "Nisko pečenje, stožac 06 – 02",
       "mid": "Srednje pečenje, stožac 4 – 6",
-      "high": "Visoko pečenje, stožac 9 – 11"
+      "high": "Visoko pečenje, stožac 9 – 11",
+      "top": "Vrlo visoko pečenje, stožac 12 i topliji"
     },
     "shownFor": "Kad pečenje nije odabrano, prikazane su vrijednosti za: {band}. Pečenje se sprema uz recept.",
     "cone": "Ovo su vrijednosti skupa za stožac {cone}.",
@@ -590,6 +595,7 @@
     "notInSet": "Ovaj skup nema raspon za {oxides}.",
     "checksOnly": "Ovaj skup provjerava samo {oxides}.",
     "notApply": "{name} nema vrijednosti za ovo pečenje ({band}), pa se ne provjerava: vrijednosti za drugo pečenje bile bi zavaravajuće.",
+    "topNote": "Objavljene granice za glazure koje smo pronašli završavaju na stošcu 10, a Glazecalc ih primjenjuje najdalje do stošca 11, pa se pečenje na stošcu 12 i toplijim stošcima ne provjerava prema granicama. Odlučuju vaše probne pločice.",
     "guidance": "Ovo su smjernice, a ne „prošlo” ili „palo”: glazura izvan njih može biti u redu, a ona unutar njih ipak može popucati, otpuštati metale ili zakazati. Isprobajte je.",
     "source": "Izvor:",
     "saveFailed": "Ne možemo spremiti vaš odabir skupa granica na vaš račun, pa se i dalje koristi prethodni skup.",
@@ -627,7 +633,8 @@
       "ash": "Glazecalc ne može usporediti kemiju ove glazure s njezinim pečenjem: sadrži pepeo, čiji je sastav previše promjenjiv za objavljene vrijednosti koje ova provjera koristi.",
       "noTemperature": "Glazecalc ne može usporediti kemiju ove glazure {scale, select, band {{band, select, low {s niskim pečenjem} mid {sa srednjim pečenjem} other {s visokim pečenjem}}} sk {sa SK {cone}} temperature {s {cone} °C} other {sa stošcem {cone}}}: za taj stožac nema izmjerene temperature.",
       "between": "Glazecalc ne može usporediti kemiju ove glazure {scale, select, band {{band, select, low {s niskim pečenjem} mid {sa srednjim pečenjem} other {s visokim pečenjem}}} sk {sa SK {cone}} temperature {s {cone} °C} other {sa stošcem {cone}}}: objavljene vrijednosti koje ova provjera koristi vrijede za nisko te za srednje i visoko pečenje, a ne za stošce između njih (01 do 3).",
-      "belowChart": "Glazecalc ne može usporediti kemiju ove glazure {scale, select, band {{band, select, low {s niskim pečenjem} mid {sa srednjim pečenjem} other {s visokim pečenjem}}} sk {sa SK {cone}} temperature {s {cone} °C} other {sa stošcem {cone}}}: Katzovo pravilo za bor vrijedi za stožac 06 do stožac 10, a to je pečenje hladnije."
+      "belowChart": "Glazecalc ne može usporediti kemiju ove glazure {scale, select, band {{band, select, low {s niskim pečenjem} mid {sa srednjim pečenjem} other {s visokim pečenjem}}} sk {sa SK {cone}} temperature {s {cone} °C} other {sa stošcem {cone}}}: Katzovo pravilo za bor vrijedi za stožac 06 do stožac 10, a to je pečenje hladnije.",
+      "aboveChart": "Glazecalc ne može usporediti kemiju ove glazure {scale, select, band {{band, select, top {s vrlo visokim pečenjem} other {s visokim pečenjem}}} sk {sa SK {cone}} temperature {s {cone} °C} other {sa stošcem {cone}}}: Katzovo pravilo za bor vrijedi za stožac 06 do stožac 10, vrijednosti Hesselbertha i Roya za silicijev dioksid i glinicu završavaju na stošcu 10, a to je pečenje toplije."
     }
   },
   "stull": {
@@ -978,6 +985,7 @@
     "approxTemperature": "≈ {temperature} ({basis}; približno)",
     "approxCone": "≈ {cone} ({basis}; približno)",
     "basis": {
+      "orton150": "starija Ortonova tablica za velike stošce pri 150 °C na sat",
       "kyoto": "izmjereno pri 100 °C na sat u gradskom institutu u Kyotu",
       "stated": "kako je navedeno"
     },

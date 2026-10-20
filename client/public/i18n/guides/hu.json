@@ -52,6 +52,7 @@
     "emergency": "Vészhelyzet: eszméletlen, nem lélegzik, görcsroham",
     "poisonAdvice": "{who, select, children {Mérgezési tanácsadás: {name} (csak gyermekeknek)} other {Mérgezési tanácsadás: {name}}}",
     "or": "vagy {number}",
+    "orCall": "vagy <link>{number}</link>",
     "online": "Online: <link>{name}</link>.",
     "poisonAdviceNone": "Mérgezési tanácsadás",
     "noLine": "Ebben az országban nem tudtunk megerősíteni nyilvános toxikológiai tájékoztató vonalat. Hívja az orvosát, sürgős esetben pedig a segélyhívó számot.",
@@ -111,6 +112,10 @@
     "bandFromTo": "{from}% és {to}% közötti szabad szilícium-dioxid-tartalmú (SiO₂) por",
     "bandOverTo": "Több mint {from}% és legfeljebb {to}% szabad szilícium-dioxid-tartalmú por",
     "bandAbove": "Több mint {from}% szabad szilícium-dioxid-tartalmú por",
+    "untilDate": "{date} napig",
+    "fromDate": "{date} naptól",
+    "beforeFormula": "A respirábilis por határértéke, ahol Q a por kristályos szilícium-dioxid-tartalma, %-ban",
+    "beforeAll": "Teljes egészében kristályos szilícium-dioxidból álló porra",
     "recommended": "Ajánlja: {abbr}",
     "value": "{value} mg/m³",
     "kind": {
@@ -121,6 +126,7 @@
     },
     "setBy": "Megállapítja: <link>{law}</link>.",
     "from": "{date} naptól érvényes.",
+    "beforeSetBy": "Addig a határértéket a(z) <link>{law}</link> határozza meg.",
     "lowerThanEu": "Alacsonyabb az EU kötelező határértékénél ({value} mg/m³).",
     "sameAsEu": "Megegyezik az EU kötelező határértékével.",
     "recommendedBy": "A(z) {abbr} ({by}) ezt az értéket ajánlja a(z) <link>{title}</link> című kiadványában. Nem jogszabály.",
@@ -183,7 +189,13 @@
       "vnMedium": "Öblös tárgyak élelmiszer tárolására, 1100 mL-től 3000 mL alatt",
       "vnStorage": "Öblös tárgyak élelmiszer tárolására, 3000 mL vagy több",
       "vnCooking": "Öblös tárgyak főzésre",
-      "vnCups": "Csészék és kis tálak"
+      "vnCups": "Csészék és kis tálak",
+      "cnFlat": "Laposáru, legfeljebb 25 mm mély",
+      "cnSmall": "Kis öblösáru, 1,1 L alatt, a csészék kivételével",
+      "cnLarge": "Nagy öblösáru, legalább 1,1 L, de 3 L alatt",
+      "cnStorage": "Tárolóedények, legalább 3 L",
+      "cnCups": "Csészék vízhez vagy italokhoz",
+      "cnCooking": "Főzőedények, ételek melegítésére"
     },
     "judged": {
       "average": "6 darab átlaga",
@@ -197,6 +209,8 @@
     "atMost": "Egy darab akkor felel meg, ha nem oldódik ki belőle több a határértéknél: a jogszabály szövege „legfeljebb”.",
     "ppm": "A ppm itt a vizsgálati oldat egy literére jutó milligrammot jelenti (mg/L).",
     "unknown": "{region}: a szabályokat még nem erősítettük meg.",
+    "none": "{region}: nincs olyan jogszabály, amely határértéket szabna arra, mennyi ólom és kadmium oldódhat ki egy kiégetett darabból (ellenőrizve: {date}).",
+    "noneSource": "Forrás: <link>{law}</link>.",
     "choosePrompt": "Válassza ki az országát, hogy lássa az ottani szabályokat."
   },
   "equivalents": {

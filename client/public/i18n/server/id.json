@@ -100,6 +100,7 @@
   "limitSet-choices": "Pilih hesselberth-roy atau glazecalc.",
   "currency-choices": "Pilih salah satu mata uang dalam daftar, atau serahkan pada wilayah Anda.",
   "calendar-choices": "Tanggal dapat ditampilkan dalam kalender Masehi (gregory), tarikh Buddha Thailand (buddhist), atau era Jepang (japanese).",
+  "digits-choices": "Digit dapat ditampilkan seperti yang lazim di tempat Anda (auto), sebagai 0–9 (western), atau dalam digit milik bahasa itu sendiri (native).",
   "shelf-invalid": "Daftar bahan yang Anda punya berisi paling banyak {most} bahan.",
   "shelf-full": "Daftar bahan yang Anda punya dapat berisi paling banyak {most} bahan. Tidak ada yang diubah.",
   "shelf-material-unknown": "Bahan itu tidak ada di bahan Anda atau di pustaka Glazecalc.",

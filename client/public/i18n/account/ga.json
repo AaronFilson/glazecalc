@@ -270,6 +270,22 @@
         "saved": "Sábháilte: taispeántar dátaí i réanna Seapánacha."
       }
     },
+    "digits": {
+      "legend": "Digití",
+      "help": "Na digití ina dtaispeántar uimhreacha. Tá a gcuid digití féin ag roinnt teangacha, mar shampla Araibis, Beangáilis agus Hiondúis, agus is í an áit a bhfuil tú a chinneann cé acu is gnách. Is féidir leat uimhreacha a chlóscríobh le ceachtar acu.",
+      "auto": {
+        "label": "Mar is gnách san áit a bhfuil tú",
+        "saved": "Sábháilte: digití mar is gnách san áit a bhfuil tú."
+      },
+      "western": {
+        "label": "Digití an Iarthair, 0–9",
+        "saved": "Sábháilte: taispeántar uimhreacha leis na digití 0–9."
+      },
+      "native": {
+        "label": "Digití na teanga féin, má tá siad aici",
+        "saved": "Sábháilte: taispeántar uimhreacha i ndigití na teanga féin, má tá siad aici."
+      }
+    },
     "decimalMark": {
       "legend": "Méideanna a chlóscríobh",
       "either": {

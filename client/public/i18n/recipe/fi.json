@@ -363,7 +363,8 @@
     "heading": "Vaarat",
     "intro": "Sellaisina kuin kunkin raaka-aineen tietue ne antaa; vakiokirjaston vaarat ovat peräisin toimittajien käyttöturvallisuustiedotteista.",
     "line": "<b>{names}:</b> {hazards}",
-    "unknown": "{count, plural, one {Kohteelle {list} ei ole annettu vaaroja: katso sen mukana tuleva käyttöturvallisuustiedote.} other {Kohteille {list} ei ole annettu vaaroja: katso niiden mukana tulevat käyttöturvallisuustiedotteet.}}"
+    "unknown": "{count, plural, one {Kohteelle {list} ei ole annettu vaaroja: katso sen mukana tuleva käyttöturvallisuustiedote.} other {Kohteille {list} ei ole annettu vaaroja: katso niiden mukana tulevat käyttöturvallisuustiedotteet.}}",
+    "safety": "Kuivista lasiteraaka-aineista syntyy pölyä, ja se on pidettävä poissa keuhkoista, myös sellaisten raaka-aineiden pöly, joita ei ole luokiteltu vaarallisiksi. Katso <mixing>Turvallinen sekoittaminen ja ilmanvaihto</mixing>. Jos lähellä on lapsia tai lemmikkejä, katso myös <home>Älä myrkytä perhettäsi</home>. Jos raaka-aineen käyttöturvallisuustiedote sanoo enemmän, noudata sitä."
   },
   "compare": {
     "heading": "Vertaa kahta reseptiä",
@@ -532,7 +533,10 @@
     "suppliesShare": "{oxide} ({percent} % koko määrästä)",
     "suppliesLittle": "pieni osa lasitteesta",
     "changed": "{name} {from} → {to}",
-    "added": "{name} {amount}, uusi"
+    "added": "{name} {amount}, uusi",
+    "why": {
+      "rawClay": "kalsinoimaton savi kutistuu lasitteen kuivuessa, ja suuri määrä sitä voi saada lasitteen halkeilemaan esineen pinnalla ja kuroutumaan uunissa; loput voi korvata kalsinoidulla kaoliinilla"
+    }
   },
   "shelf": {
     "empty": "Varastossa ei ole raaka-aineita, joista reseptiä voisi tehdä."
@@ -570,7 +574,8 @@
     "bands": {
       "low": "Matalapoltto, keilat 06–02",
       "mid": "Keskipoltto, keilat 4–6",
-      "high": "Korkeapoltto, keilat 9–11"
+      "high": "Korkeapoltto, keilat 9–11",
+      "top": "Erittäin korkea poltto, keilat 12 ja kuumemmat"
     },
     "shownFor": "Kun polttoa ei ole valittu, näytetyt arvot koskevat: {band}. Poltto tallentuu reseptin mukana.",
     "cone": "Nämä ovat sarjan arvot keilalle {cone}.",
@@ -590,6 +595,7 @@
     "notInSet": "Tässä sarjassa ei ole vaihteluväliä: {oxides}.",
     "checksOnly": "Tämä sarja tarkistaa vain: {oxides}.",
     "notApply": "Sarjalla {name} ei ole arvoja tälle polttotavalle ({band}), joten sitä ei tarkisteta: toisen polton arvot johtaisivat harhaan.",
+    "topNote": "Löytämämme julkaistut lasitteen raja-arvot päättyvät keilaan 10, ja Glazecalc soveltaa niitä enintään keilaan 11 asti, joten polttoa keilasta 12 alkaen ei tarkisteta raja-arvoja vasten. Omat koepalat ratkaisevat.",
     "guidance": "Nämä ovat ohjearvoja, eivät hyväksytty/hylätty-arvio: lasite niiden ulkopuolella voi olla hyvä, ja sellainen niiden sisällä voi silti säröillä, siitä voi liueta metalleja tai se voi pettää. Testaa se.",
     "source": "Lähde:",
     "saveFailed": "Raja-arvosarjan valintaa ei voitu tallentaa tilille, joten aiempi sarja on yhä käytössä.",
@@ -627,7 +633,8 @@
       "ash": "Glazecalc ei voi verrata lasitteen kemiaa sen polttoon: siinä on tuhkaa, jonka koostumus vaihtelee liikaa tässä tarkistuksessa käytettyjen julkaistujen arvojen kannalta.",
       "noTemperature": "Glazecalc ei voi verrata lasitteen kemiaa tähän polttoon ({scale, select, band {{band, select, low {matalapoltto} mid {keskipoltto} other {korkeapoltto}}} sk {SK {cone}} temperature {{cone} °C} other {keila {cone}}}): kyseiselle keilalle ei ole mitattua lämpötilaa.",
       "between": "Glazecalc ei voi verrata lasitteen kemiaa tähän polttoon ({scale, select, band {{band, select, low {matalapoltto} mid {keskipoltto} other {korkeapoltto}}} sk {SK {cone}} temperature {{cone} °C} other {keila {cone}}}): tässä tarkistuksessa käytetyt julkaistut arvot koskevat matalapolttoa sekä keski- ja korkeapolttoa, eivät niiden välisiä keiloja (01–3).",
-      "belowChart": "Glazecalc ei voi verrata lasitteen kemiaa tähän polttoon ({scale, select, band {{band, select, low {matalapoltto} mid {keskipoltto} other {korkeapoltto}}} sk {SK {cone}} temperature {{cone} °C} other {keila {cone}}}): Katzin boorisääntö koskee keiloja 06–10, ja tämä poltto on viileämpi."
+      "belowChart": "Glazecalc ei voi verrata lasitteen kemiaa tähän polttoon ({scale, select, band {{band, select, low {matalapoltto} mid {keskipoltto} other {korkeapoltto}}} sk {SK {cone}} temperature {{cone} °C} other {keila {cone}}}): Katzin boorisääntö koskee keiloja 06–10, ja tämä poltto on viileämpi.",
+      "aboveChart": "Glazecalc ei voi verrata lasitteen kemiaa tähän polttoon ({scale, select, band {{band, select, top {erittäin korkea poltto} other {korkeapoltto}}} sk {SK {cone}} temperature {{cone} °C} other {keila {cone}}}): Katzin boorisääntö koskee keiloja 06–10, Hesselberthin ja Royn piidioksidi- ja alumiinioksidiarvot päättyvät keilaan 10, ja tämä poltto on kuumempi."
     }
   },
   "stull": {
@@ -978,6 +985,7 @@
     "approxTemperature": "≈ {temperature} ({basis}; likimääräinen)",
     "approxCone": "≈ {cone} ({basis}; likimääräinen)",
     "basis": {
+      "orton150": "Ortonin vanhempi isojen keilojen taulukko nopeudella 150 °C tunnissa",
       "kyoto": "mitattu nopeudella 100 °C tunnissa Kioton kaupungin tutkimuslaitoksessa",
       "stated": "annetun mukaan"
     },

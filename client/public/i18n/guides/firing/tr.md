@@ -79,47 +79,47 @@ Tablo, kendiliğinden ayaklı 6 numaralı piramidi {{2232 °F; 1222 °C}} olarak
 
 :::
 
-## The cone chart {#cone-chart lang=en}
+## Piramit tablosu {#cone-chart}
 
-These figures are from Orton's cone chart (©2001) for self-supporting cones; cones 11 to 14 are from the charts Orton publishes now, which give the same figures where they overlap, and cones 13 and 14 only in °C (their °F here is converted). Choose the column that matches how fast your kiln climbed over the last {{180 °F; 100 °C}}. Orton's rule of thumb is the {{270 °F/h; 150 °C/h}} column for a fast firing, the {{108 °F/h; 60 °C/h}} column for a medium one and the {{27 °F/h; 15 °C/h}} column for a slow one. To work out a rate, divide the temperature climbed by the hours it took: a kiln that climbs {{900 °F; 500 °C}} in 3 hours is heating at about {{300 °F/h; 167 °C/h}}.
+Bu değerler, Orton’un kendiliğinden ayaklı piramitler{{en: cones}} için piramit tablosundan (©2001) alınmıştır; 11–14 numaralı piramitler ise Orton’un bugün yayımladığı tablolardan alınmıştır: bu tablolar örtüştükleri yerde aynı değerleri verir ve 13 ile 14 numaralı piramitleri yalnızca °C olarak verir (buradaki °F değerleri dönüştürülmüştür). Fırınınızın son {{180 °F; 100 °C}} aralığında ne kadar hızlı ısındığına uyan sütunu seçin. Orton’un pratik kuralı şudur: hızlı bir pişirim için {{270 °F/h; 150 °C/h}} sütunu, orta hızda bir pişirim için {{108 °F/h; 60 °C/h}} sütunu ve yavaş bir pişirim için {{27 °F/h; 15 °C/h}} sütunu. Bir hızı hesaplamak için çıkılan sıcaklığı, bunun sürdüğü saate bölün: 3 saatte {{900 °F; 500 °C}} çıkan bir fırın yaklaşık {{300 °F/h; 167 °C/h}} hızla ısınıyordur.
 
-Table: Orton self-supporting cones: the temperature at which each bends, by heating rate over the last {{180 °F; 100 °C}}
-Label: Orton cone chart
+Table: Orton kendiliğinden ayaklı piramitleri: son {{180 °F; 100 °C}} aralığındaki ısıtma hızına göre her birinin eğildiği sıcaklık
+Label: Orton piramit tablosu
 
-| Cone | Slow, {{27 °F/h; 15 °C/h}} | Medium, {{108 °F/h; 60 °C/h}} | Fast, {{270 °F/h; 150 °C/h}} |
-| ---- | -------------------------: | ----------------------------: | ---------------------------: |
-| 022  |                          – |           {{1087 °F; 586 °C}} |          {{1094 °F; 590 °C}} |
-| 018  |                          – |           {{1319 °F; 715 °C}} |          {{1353 °F; 734 °C}} |
-| 015  |                          – |           {{1456 °F; 791 °C}} |          {{1504 °F; 818 °C}} |
-| 010  |        {{1636 °F; 891 °C}} |           {{1657 °F; 903 °C}} |          {{1679 °F; 915 °C}} |
-| 08   |        {{1692 °F; 922 °C}} |           {{1728 °F; 942 °C}} |          {{1753 °F; 956 °C}} |
-| 07   |                          – |           {{1789 °F; 976 °C}} |          {{1809 °F; 987 °C}} |
-| 06   |        {{1798 °F; 981 °C}} |           {{1828 °F; 998 °C}} |         {{1855 °F; 1013 °C}} |
-| 05   |       {{1870 °F; 1021 °C}} |          {{1888 °F; 1031 °C}} |         {{1911 °F; 1044 °C}} |
-| 04   |       {{1915 °F; 1046 °C}} |          {{1945 °F; 1063 °C}} |         {{1971 °F; 1077 °C}} |
-| 03   |       {{1960 °F; 1071 °C}} |          {{1987 °F; 1086 °C}} |         {{2019 °F; 1104 °C}} |
-| 02   |                          – |          {{2016 °F; 1102 °C}} |         {{2052 °F; 1122 °C}} |
-| 01   |       {{1999 °F; 1093 °C}} |          {{2046 °F; 1119 °C}} |         {{2080 °F; 1138 °C}} |
-| 1    |       {{2028 °F; 1109 °C}} |          {{2079 °F; 1137 °C}} |         {{2109 °F; 1154 °C}} |
-| 4    |       {{2086 °F; 1141 °C}} |          {{2124 °F; 1162 °C}} |         {{2161 °F; 1183 °C}} |
-| 5    |       {{2118 °F; 1159 °C}} |          {{2167 °F; 1186 °C}} |         {{2205 °F; 1207 °C}} |
-| 6    |       {{2165 °F; 1185 °C}} |          {{2232 °F; 1222 °C}} |         {{2269 °F; 1243 °C}} |
-| 7    |       {{2194 °F; 1201 °C}} |          {{2262 °F; 1239 °C}} |         {{2295 °F; 1257 °C}} |
-| 8    |       {{2212 °F; 1211 °C}} |          {{2280 °F; 1249 °C}} |         {{2320 °F; 1271 °C}} |
-| 9    |       {{2235 °F; 1224 °C}} |          {{2300 °F; 1260 °C}} |         {{2336 °F; 1280 °C}} |
-| 10   |       {{2284 °F; 1251 °C}} |          {{2345 °F; 1285 °C}} |         {{2381 °F; 1305 °C}} |
-| 11   |       {{2322 °F; 1272 °C}} |          {{2361 °F; 1294 °C}} |         {{2399 °F; 1315 °C}} |
-| 12   |       {{2345 °F; 1285 °C}} |          {{2383 °F; 1306 °C}} |         {{2419 °F; 1326 °C}} |
-| 13   |       {{2390 °F; 1310 °C}} |          {{2428 °F; 1331 °C}} |         {{2458 °F; 1348 °C}} |
-| 14   |       {{2464 °F; 1351 °C}} |          {{2489 °F; 1365 °C}} |         {{2523 °F; 1384 °C}} |
+| Piramit | Yavaş, {{27 °F/h; 15 °C/h}} | Orta, {{108 °F/h; 60 °C/h}} | Hızlı, {{270 °F/h; 150 °C/h}} |
+| ------- | --------------------------: | --------------------------: | ----------------------------: |
+| 022     |                           – |         {{1087 °F; 586 °C}} |           {{1094 °F; 590 °C}} |
+| 018     |                           – |         {{1319 °F; 715 °C}} |           {{1353 °F; 734 °C}} |
+| 015     |                           – |         {{1456 °F; 791 °C}} |           {{1504 °F; 818 °C}} |
+| 010     |         {{1636 °F; 891 °C}} |         {{1657 °F; 903 °C}} |           {{1679 °F; 915 °C}} |
+| 08      |         {{1692 °F; 922 °C}} |         {{1728 °F; 942 °C}} |           {{1753 °F; 956 °C}} |
+| 07      |                           – |         {{1789 °F; 976 °C}} |           {{1809 °F; 987 °C}} |
+| 06      |         {{1798 °F; 981 °C}} |         {{1828 °F; 998 °C}} |          {{1855 °F; 1013 °C}} |
+| 05      |        {{1870 °F; 1021 °C}} |        {{1888 °F; 1031 °C}} |          {{1911 °F; 1044 °C}} |
+| 04      |        {{1915 °F; 1046 °C}} |        {{1945 °F; 1063 °C}} |          {{1971 °F; 1077 °C}} |
+| 03      |        {{1960 °F; 1071 °C}} |        {{1987 °F; 1086 °C}} |          {{2019 °F; 1104 °C}} |
+| 02      |                           – |        {{2016 °F; 1102 °C}} |          {{2052 °F; 1122 °C}} |
+| 01      |        {{1999 °F; 1093 °C}} |        {{2046 °F; 1119 °C}} |          {{2080 °F; 1138 °C}} |
+| 1       |        {{2028 °F; 1109 °C}} |        {{2079 °F; 1137 °C}} |          {{2109 °F; 1154 °C}} |
+| 4       |        {{2086 °F; 1141 °C}} |        {{2124 °F; 1162 °C}} |          {{2161 °F; 1183 °C}} |
+| 5       |        {{2118 °F; 1159 °C}} |        {{2167 °F; 1186 °C}} |          {{2205 °F; 1207 °C}} |
+| 6       |        {{2165 °F; 1185 °C}} |        {{2232 °F; 1222 °C}} |          {{2269 °F; 1243 °C}} |
+| 7       |        {{2194 °F; 1201 °C}} |        {{2262 °F; 1239 °C}} |          {{2295 °F; 1257 °C}} |
+| 8       |        {{2212 °F; 1211 °C}} |        {{2280 °F; 1249 °C}} |          {{2320 °F; 1271 °C}} |
+| 9       |        {{2235 °F; 1224 °C}} |        {{2300 °F; 1260 °C}} |          {{2336 °F; 1280 °C}} |
+| 10      |        {{2284 °F; 1251 °C}} |        {{2345 °F; 1285 °C}} |          {{2381 °F; 1305 °C}} |
+| 11      |        {{2322 °F; 1272 °C}} |        {{2361 °F; 1294 °C}} |          {{2399 °F; 1315 °C}} |
+| 12      |        {{2345 °F; 1285 °C}} |        {{2383 °F; 1306 °C}} |          {{2419 °F; 1326 °C}} |
+| 13      |        {{2390 °F; 1310 °C}} |        {{2428 °F; 1331 °C}} |          {{2458 °F; 1348 °C}} |
+| 14      |        {{2464 °F; 1351 °C}} |        {{2489 °F; 1365 °C}} |          {{2523 °F; 1384 °C}} |
 
-A dash marks a figure not copied here; see Orton's full chart for it.
+Tire işareti, burada aktarılmayan bir değeri gösterir; o değer için Orton’un tam tablosuna bakın.
 
-Orton makes cones up to 42 for high-temperature work, but publishes temperatures only up to cone 14; for hotter cones its charts are "available (by request)". An older Orton chart, as kiln makers reprint it, gives a large cone 15 as {{2608 °F; 1431 °C}} at {{270 °F/h; 150 °C/h}}, and we found no published figure for cone 16 or above. Past cone 14, set witness cones and go by them, and check that your kiln is rated for that heat.
+Orton yüksek sıcaklık işleri için 42 numaraya kadar piramit üretir, ancak sıcaklıkları yalnızca 14 numaralı piramide kadar yayımlar; daha sıcak piramitler için tabloları “(istek üzerine) temin edilebilir”. Fırın üreticilerinin yeniden bastığı daha eski bir Orton tablosu, büyük 15 numaralı piramidi {{270 °F/h; 150 °C/h}} hızda {{2608 °F; 1431 °C}} olarak verir; 16 numaralı veya daha sıcak piramitler için yayımlanmış bir değer bulamadık. 14 numaralı piramidin ötesinde gözlem piramitleri yerleştirin ve onlara göre hareket edin; fırınınızın üreticisinin belirttiği en yüksek sıcaklığın o dereceye ulaştığını da kontrol edin.
 
-Large cones read within a few degrees of these figures: a large cone 6 at {{108 °F/h; 60 °C/h}} is {{2228 °F; 1220 °C}}. Small cones, the kind used in a kiln sitter, are listed only at {{540 °F/h; 300 °C/h}}, so the chart gives a small cone 6 as {{2291 °F; 1255 °C}}. That is not the temperature at which a sitter turns the kiln off. The sitter cone's job is to match the shelf cone, and the shelf cone has the final say.
+Büyük piramitlerin değerleri bunlardan yalnızca birkaç derece farklıdır: {{108 °F/h; 60 °C/h}} hızda büyük bir 6 numaralı piramit {{2228 °F; 1220 °C}} sıcaklıkta eğilir. Kiln sitter’da kullanılan türden küçük piramitler yalnızca {{540 °F/h; 300 °C/h}} hız için listelenir; bu yüzden tablo küçük bir 6 numaralı piramidi {{2291 °F; 1255 °C}} olarak verir. Bu, kiln sitter’ın fırını kapattığı sıcaklık değildir. Kiln sitter piramidinin işi raftaki piramide uymaktır ve son sözü raftaki piramit söyler.
 
-Two cautions. Orton's 2019 booklet gives cone 06 at the fast rate as {{1875 °F; 1024 °C}}, but the chart and Orton's FAQ both give {{1855 °F; 1013 °C}}, used here. And the large-cone table at the back of the Dawson kiln sitter manual has copying errors (cone 5 hotter than cone 6), so do not use it.
+İki uyarı. Orton’un 2019 tarihli kitapçığı 06 numaralı piramidi hızlı hızda {{1875 °F; 1024 °C}} olarak verir, ama tablo da Orton’un SSS sayfası da burada kullanılan {{1855 °F; 1013 °C}} değerini verir. Ayrıca Dawson kiln sitter kullanım kılavuzunun sonundaki büyük piramit tablosunda aktarma hataları vardır (5 numaralı piramit 6 numaralıdan daha sıcak görünür); bu yüzden o tabloyu kullanmayın.
 
 :::temperature
 
@@ -287,96 +287,96 @@ Label: Bir sonraki pişirimin ayarlanması
 
 :::sk
 
-## Firing to SK cones {#sk-cones lang=en}
+## SK piramitleriyle pişirim {#sk-cones}
 
-SK cones are the pyrometric cones made to Japan's standard, JIS R 8101, and sold in Japan by dealers such as Yuko Trading (有恒商事). Like any cone, an SK cone measures heatwork, not temperature alone: it softens and bends over when the ware has had enough heat, and you read how far it bent. Witness cones, reading how far a cone has bent, and holds work for it as for any cone. This section names each cone's system, and never turns an SK number into another system's number: the numbers of different cone series are not interchangeable.
+SK piramitleri, Japonya’nın standardı JIS R 8101’e göre üretilen ve Japonya’da Yuko Trading (有恒商事) gibi bayilerin sattığı pirometrik piramitlerdir. Her piramit gibi SK piramidi de yalnızca sıcaklığı değil, ısı işini{{en: heatwork}} ölçer: ürün yeterince ısı aldığında yumuşayıp eğilir ve siz ne kadar eğildiğini okursunuz. Gözlem piramitleri{{en: witness cones}}, bir piramidin ne kadar eğildiğini okumak ve bekletmeler, her piramitte olduğu gibi onun için de işe yarar. Bu bölüm her piramidin sistemini adıyla belirtir ve bir SK numarasını asla başka bir sistemin numarasına çevirmez: farklı piramit serilerinin numaraları birbirinin yerine kullanılamaz.
 
 > [!NOTE]
-> Always write "SK" before the number. Many older Japanese recipes say only "SK 8" or "SK 9" without saying whose cone. Kyoto cones and SK cones to JIS carry the same numbers but bend at different temperatures (see Kyoto cones, below).
+> Numaranın önüne her zaman “SK” yazın. Birçok eski Japon reçetesi yalnızca “SK 8” ya da “SK 9” der, kimin piramidi olduğunu söylemez. Kyoto piramitleri ve JIS’e uygun SK piramitleri aynı numaraları taşır ama farklı sıcaklıklarda eğilir (aşağıda Kyoto piramitleri bölümüne bakın).
 
-### The large cones
+### Büyük piramitler
 
-The standard has two sizes. Large cones (大型コーン) are "mainly used for measuring the degree of firing" (焼度測定), which is what a potter wants. Small cones (SK 26 to SK 42, at the top of the range) are "mainly used for refractoriness tests" and are not covered here. The table below gives the large cones from SK 022 to SK 20.
+Standartta iki boy vardır. Büyük piramitler (大型コーン) “esas olarak pişme derecesini ölçmek için kullanılır” (焼度測定); seramikçinin istediği de budur. Küçük piramitler (aralığın üst ucunda, SK 26’dan SK 42’ye kadar) “esas olarak refrakterlik testleri için kullanılır” ve burada ele alınmaz. Aşağıdaki tablo SK 022’den SK 20’ye kadar büyük piramitleri verir.
 
-The numbers run from SK 022, the coolest, up to SK 20 here. Between SK 015 and SK 6 the printed numbers carry an "a" (SK 015a, SK 6a); write it as printed.
+Numaralar burada en soğuğu olan SK 022’den SK 20’ye kadar gider. SK 015 ile SK 6 arasındaki basılı numaralar bir “a” taşır (SK 015a, SK 6a); bunu basıldığı gibi yazın.
 
-### Setting large cones
+### Büyük piramitlerin yerleştirilmesi
 
-Set each large cone in a plaque or a pat of clay, leaning toward its bending face. As with any cone, keep the height and the lean the same from firing to firing, because a difference in either changes how far it bends. Set the three cones of the pack (below) together, deep in the kiln near the middle of the load, where they get the heat the ware gets, yet where you can see them through a peephole; before you close the kiln, check that you can see all three.
+Her büyük piramidi bir altlığa ya da bir parça çamura, eğilme yüzüne doğru eğik olarak yerleştirin. Her piramitte olduğu gibi yüksekliği ve eğimi pişirimden pişirime aynı tutun, çünkü ikisinden birindeki fark piramidin ne kadar eğileceğini değiştirir. Grubun (aşağıda) üç piramidini birlikte, fırının derinliklerine, yükün ortasına yakın bir yere yerleştirin: orada ürünün aldığı ısıyı alırlar, yine de onları bir gözetleme deliğinden görebilirsiniz; fırını kapatmadan önce üçünü de görebildiğinizi kontrol edin.
 
-We found no maker's or seller's instructions for how deep or at what angle to set SK cones. The nearest is a laboratory standard, JIS R 2204, Japan's test of how much heat a refractory material stands: it sets each SK cone with its marked face at 80° to a flat stand and its foot about 4 mm into it. That is a test for refractories, not a rule for firing pots, and we read it in a transcription of the standard, not in the standard itself.
+SK piramitlerinin ne kadar derine veya hangi açıyla yerleştirileceğine dair bir üretici ya da satıcı talimatı bulamadık. En yakını, bir refrakter malzemenin ne kadar ısıya dayandığını ölçen Japon testi olan JIS R 2204 laboratuvar standardıdır: bu standart her SK piramidini, işaretli yüzü düz bir altlığa 80° açı yapacak ve ayağı altlığa yaklaşık 4 mm gömülecek şekilde yerleştirir. Bu, refrakterler için bir testtir, seramik pişirimi için bir kural değildir; ayrıca biz bunu standardın kendisinden değil, standardın bir aktarımından okuduk.
 
-### Guide, firing and guard cones
+### Kılavuz, hedef ve koruma piramitleri
 
-Cones are sold and set as three: a guide cone, a firing cone at the target, and a guard cone. Take the firing cone as the SK number your recipe or clay names, the guide cone as the next cooler cone (one row up in the table) and the guard cone as the next hotter one. When the guide cone starts to bend, the end is near; when the guard cone bends, the firing has gone too far.
+Piramitler üçlü olarak satılır ve yerleştirilir: bir kılavuz piramit, hedefi gösteren bir hedef piramit ve bir koruma piramidi. Hedef piramit olarak reçetenizin ya da çamurunuzun belirttiği SK numarasını alın; kılavuz piramit olarak bir sonraki daha soğuk piramidi (tabloda bir satır yukarıdakini), koruma piramidi olarak da bir sonraki daha sıcak piramidi alın. Kılavuz piramit eğilmeye başladığında son yaklaşmıştır; koruma piramidi eğildiğinde pişirim fazla ileri gitmiştir.
 
-### The SK chart
+### SK tablosu
 
-Table: SK large cones (JIS R 8101): the nominal (JIS) temperature of each
-Label: SK chart
+Table: SK büyük piramitleri (JIS R 8101): her birinin nominal (JIS) sıcaklığı
+Label: SK tablosu
 
-| Cone    | Nominal (JIS) temperature |
-| ------- | ------------------------: |
-| SK 022  |       {{1112 °F; 600 °C}} |
-| SK 021  |       {{1202 °F; 650 °C}} |
-| SK 020  |       {{1238 °F; 670 °C}} |
-| SK 019  |       {{1274 °F; 690 °C}} |
-| SK 018  |       {{1310 °F; 710 °C}} |
-| SK 017  |       {{1346 °F; 730 °C}} |
-| SK 016  |       {{1382 °F; 750 °C}} |
-| SK 015a |       {{1454 °F; 790 °C}} |
-| SK 014a |       {{1499 °F; 815 °C}} |
-| SK 013a |       {{1535 °F; 835 °C}} |
-| SK 012a |       {{1571 °F; 855 °C}} |
-| SK 011a |       {{1616 °F; 880 °C}} |
-| SK 010a |       {{1652 °F; 900 °C}} |
-| SK 09a  |       {{1688 °F; 920 °C}} |
-| SK 08a  |       {{1724 °F; 940 °C}} |
-| SK 07a  |       {{1760 °F; 960 °C}} |
-| SK 06a  |       {{1796 °F; 980 °C}} |
-| SK 05a  |      {{1832 °F; 1000 °C}} |
-| SK 04a  |      {{1868 °F; 1020 °C}} |
-| SK 03a  |      {{1904 °F; 1040 °C}} |
-| SK 02a  |      {{1940 °F; 1060 °C}} |
-| SK 01a  |      {{1976 °F; 1080 °C}} |
-| SK 1a   |      {{2012 °F; 1100 °C}} |
-| SK 2a   |      {{2048 °F; 1120 °C}} |
-| SK 3a   |      {{2084 °F; 1140 °C}} |
-| SK 4a   |      {{2120 °F; 1160 °C}} |
-| SK 5a   |      {{2156 °F; 1180 °C}} |
-| SK 6a   |      {{2192 °F; 1200 °C}} |
-| SK 7    |      {{2246 °F; 1230 °C}} |
-| SK 8    |      {{2282 °F; 1250 °C}} |
-| SK 9    |      {{2336 °F; 1280 °C}} |
-| SK 10   |      {{2372 °F; 1300 °C}} |
-| SK 11   |      {{2408 °F; 1320 °C}} |
-| SK 12   |      {{2462 °F; 1350 °C}} |
-| SK 13   |      {{2516 °F; 1380 °C}} |
-| SK 14   |      {{2570 °F; 1410 °C}} |
-| SK 15   |      {{2615 °F; 1435 °C}} |
-| SK 16   |      {{2660 °F; 1460 °C}} |
-| SK 17   |      {{2696 °F; 1480 °C}} |
-| SK 18   |      {{2732 °F; 1500 °C}} |
-| SK 19   |      {{2768 °F; 1520 °C}} |
-| SK 20   |      {{2786 °F; 1530 °C}} |
+| Piramit | Nominal (JIS) sıcaklık |
+| ------- | ---------------------: |
+| SK 022  |    {{1112 °F; 600 °C}} |
+| SK 021  |    {{1202 °F; 650 °C}} |
+| SK 020  |    {{1238 °F; 670 °C}} |
+| SK 019  |    {{1274 °F; 690 °C}} |
+| SK 018  |    {{1310 °F; 710 °C}} |
+| SK 017  |    {{1346 °F; 730 °C}} |
+| SK 016  |    {{1382 °F; 750 °C}} |
+| SK 015a |    {{1454 °F; 790 °C}} |
+| SK 014a |    {{1499 °F; 815 °C}} |
+| SK 013a |    {{1535 °F; 835 °C}} |
+| SK 012a |    {{1571 °F; 855 °C}} |
+| SK 011a |    {{1616 °F; 880 °C}} |
+| SK 010a |    {{1652 °F; 900 °C}} |
+| SK 09a  |    {{1688 °F; 920 °C}} |
+| SK 08a  |    {{1724 °F; 940 °C}} |
+| SK 07a  |    {{1760 °F; 960 °C}} |
+| SK 06a  |    {{1796 °F; 980 °C}} |
+| SK 05a  |   {{1832 °F; 1000 °C}} |
+| SK 04a  |   {{1868 °F; 1020 °C}} |
+| SK 03a  |   {{1904 °F; 1040 °C}} |
+| SK 02a  |   {{1940 °F; 1060 °C}} |
+| SK 01a  |   {{1976 °F; 1080 °C}} |
+| SK 1a   |   {{2012 °F; 1100 °C}} |
+| SK 2a   |   {{2048 °F; 1120 °C}} |
+| SK 3a   |   {{2084 °F; 1140 °C}} |
+| SK 4a   |   {{2120 °F; 1160 °C}} |
+| SK 5a   |   {{2156 °F; 1180 °C}} |
+| SK 6a   |   {{2192 °F; 1200 °C}} |
+| SK 7    |   {{2246 °F; 1230 °C}} |
+| SK 8    |   {{2282 °F; 1250 °C}} |
+| SK 9    |   {{2336 °F; 1280 °C}} |
+| SK 10   |   {{2372 °F; 1300 °C}} |
+| SK 11   |   {{2408 °F; 1320 °C}} |
+| SK 12   |   {{2462 °F; 1350 °C}} |
+| SK 13   |   {{2516 °F; 1380 °C}} |
+| SK 14   |   {{2570 °F; 1410 °C}} |
+| SK 15   |   {{2615 °F; 1435 °C}} |
+| SK 16   |   {{2660 °F; 1460 °C}} |
+| SK 17   |   {{2696 °F; 1480 °C}} |
+| SK 18   |   {{2732 °F; 1500 °C}} |
+| SK 19   |   {{2768 °F; 1520 °C}} |
+| SK 20   |   {{2786 °F; 1530 °C}} |
 
-Every figure is nominal (JIS): the temperature the standard gives for the cone, as printed in Yuko Trading's table. The table does not print a heating rate. The standard gives reference temperatures. At a potter's rate of about 100 °C/h, Kyoto's municipal institute measured its own Kyoto cones bending 47–79 °C cooler than the JIS figure for the same number; we found no such measurements for SK cones to JIS. Set a witness cone and compare.
+Her değer nominaldir (JIS): standardın piramit için verdiği, Yuko Trading’in tablosunda basıldığı biçimiyle sıcaklık. Tabloda bir ısıtma hızı yazmaz. Standart referans sıcaklıklar verir. Seramikçilerin kullandığı yaklaşık 100 °C/h hızda Kyoto’nun belediye enstitüsü, kendi Kyoto piramitlerinin aynı numaranın JIS değerinden 47–79 °C daha düşük sıcaklıkta eğildiğini ölçmüştür; JIS’e uygun SK piramitleri için böyle ölçümler bulamadık. Bir gözlem piramidi koyun ve karşılaştırın.
 
-### Kyoto cones
+### Kyoto piramitleri
 
-Kyoto cones (京都ゼーゲル), made by Kyoto's municipal institute, are no longer made: news reports say the institute ended production at the close of fiscal 2009. They carry the same numbers as SK cones to JIS but bend cooler: a Kyoto cone bends at about the temperature of the SK cone to JIS two or three numbers lower. A recipe from Kyoto that says "SK 8" may mean a Kyoto cone. The institute has published advice for potters moving from Kyoto cones to Orton cones, and substitutes Orton cone 10 for its own Kyoto SK 12. That is the institute's choice from its own measurements: it bent Kyoto cones and Orton cones in the same kiln at 100 °C/h, and Kyoto SK 12 (1290 °C) bent where Orton 10 (1290 °C) did. In the same table Kyoto SK 8 (1198 °C) bent near Orton 5 (1207 °C), and Kyoto SK 10 (1232 °C) where Orton 7 (1232 °C) did. Glazecalc uses this table, not the Orton chart at 60 °C/h, when it shows an SK cone beside an Orton cone, and says each match is approximate.
+Kyoto’nun belediye enstitüsünün ürettiği Kyoto piramitleri (京都ゼーゲル) artık üretilmiyor: haberlere göre enstitü üretimi 2009 mali yılının sonunda durdurdu. JIS’e uygun SK piramitleriyle aynı numaraları taşırlar ama daha soğuk eğilirler: bir Kyoto piramidi, iki veya üç numara aşağıdaki JIS’e uygun SK piramidinin sıcaklığı civarında eğilir. Kyoto’dan gelen ve “SK 8” diyen bir reçete bir Kyoto piramidini kastediyor olabilir. Enstitü, Kyoto piramitlerinden Orton piramitlerine geçen seramikçiler için tavsiyeler yayımlamıştır ve kendi Kyoto SK 12’sinin yerine 10 numaralı Orton piramidini kullanır. Bu, enstitünün kendi ölçümlerine dayanan kendi tercihidir: enstitü Kyoto piramitlerini ve Orton piramitlerini aynı fırında 100 °C/h hızda eğdi ve Kyoto SK 12 (1290 °C), Orton 10’un (1290 °C) eğildiği yerde eğildi. Aynı tabloda Kyoto SK 8 (1198 °C) Orton 5’e (1207 °C) yakın, Kyoto SK 10 (1232 °C) ise Orton 7’nin (1232 °C) eğildiği yerde eğildi. Glazecalc, bir SK piramidini bir Orton piramidinin yanında gösterirken 60 °C/h hızdaki Orton tablosunu değil bu tabloyu kullanır ve her eşleşmenin yaklaşık olduğunu belirtir.
 
-### Orton cones sold in Japan
+### Japonya’da satılan Orton piramitleri
 
-Orton self-supporting cones are sold in Japan under the name 立つゼーゲル ("standing Seger"), because they need no plaque or stand. They are Orton cones, with Orton's numbers and Orton's chart (above): fire to one only by its Orton number, and keep SK and Orton cones in separate packs, never in the same one.
+Orton’un kendiliğinden ayaklı piramitleri, altlık ya da sehpa gerektirmedikleri için Japonya’da 立つゼーゲル (“ayakta duran Seger”) adıyla satılır. Bunlar Orton piramitleridir; Orton’un numaralarını taşır ve Orton’un tablosuna (yukarıda) göre eğilirler: böyle bir piramitle yalnızca Orton numarasına göre pişirin ve SK ile Orton piramitlerini asla aynı grupta değil, ayrı gruplarda tutun.
 
-### Sources for SK cones
+### SK piramitleri için kaynaklar
 
-- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (the SK table, checked 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
-- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (in force, reconfirmed 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
-- [JSA: JIS R 2204:1999, 耐火物及び耐火物原料の耐火度試験方法 (in force, reconfirmed 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+2204:1999)
-- [kikakurui.com: a transcription of JIS R 2204:1999, where clause 5 a) sets the cones (read 2026-10-19)](https://kikakurui.com/r2/R2204-1999-01.html)
-- [Kyoto Municipal Institute of Industrial Technology and Culture: points to note when moving from Kyoto cones to Orton cones](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
+- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (SK tablosu, 14 Ekim 2026’da kontrol edildi)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
+- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (yürürlükte, 20 Ekim 2023’te yeniden onaylandı)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
+- [JSA: JIS R 2204:1999, 耐火物及び耐火物原料の耐火度試験方法 (yürürlükte, 20 Ekim 2023’te yeniden onaylandı)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+2204:1999)
+- [kikakurui.com: JIS R 2204:1999’un bir aktarımı; piramitlerin yerleştirilmesi 5 a) maddesinde (19 Ekim 2026’da okundu)](https://kikakurui.com/r2/R2204-1999-01.html)
+- [Kyoto Municipal Institute of Industrial Technology and Culture: Kyoto piramitlerinden Orton piramitlerine geçerken dikkat edilecek noktalar](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
 
 :::
 
@@ -606,22 +606,22 @@ Kiln sitter, raftaki piramitler yatmadan devreyi keserse, L&L’nin önerdiği g
 
 **Pirometre**, fırın duvarından geçen bir ısı sondası olan **termokupldan** okunan bir sıcaklık göstergesidir. Fırının ne kadar hızlı çıktığını gösterir, böylece piramit tablosunun doğru sütununu seçebilirsiniz. Ama ürünün yanını değil, duvarın yakınını okur ve zamanla kayar. L&L, tekrarlanan 6 numaralı piramit pişirimlerinden sonra K tipi bir termokuplun {{25 °F; 14 °C}} değerinden fazla sapabileceğini, bunun “tam bir piramitten daha büyük bir fark” olduğunu, kendiliğinden ayaklı bir piramidin ise en fazla {{4 °F; 2 °C}} değiştiğini belirtir. Orton, pirometrelerin zaman zaman yeniden kalibre edilmesi gerektiğini ve bunları kontrol etmenin yolunun piramitler olduğunu söyler.
 
-## Venting, peeking and safety {#venting lang=en}
+## Havalandırma, içeri bakma ve güvenlik {#venting}
 
-### Venting
+### Havalandırma
 
-Early in a firing, clay and glaze give off water vapor and fumes, including carbon monoxide, and glazes can give off toxic fumes later in the firing too. L&L calls venting them "essential". With no vent system, that means the lid propped and the peepholes open in the early stages, as in the procedures above; slowing the heating during this time also helps the carbon burn out. In a kiln without a vent, Dawson, who made the sitter, also says to leave the top peephole open for the whole firing: the venting "will reduce deterioration of the kiln's metal parts and increase the life of the tube assembly". A **downdraft vent** (a powered vent fitted to the kiln) changes this. It does the venting, so Orton says the lid and peepholes stay closed for the whole firing except to check the cones, and L&L says to leave the vent on and plug the peepholes.
+Pişirimin başında çamur ve sır{{en: glaze}}, karbon monoksit de dahil olmak üzere su buharı, gaz ve duman çıkarır; sırlar pişirimin ilerleyen aşamalarında da zehirli gaz ve duman çıkarabilir. L&L bunların dışarı atılmasını “vazgeçilmez” olarak nitelendirir. Havalandırma sistemi yoksa bu, yukarıdaki yöntemlerde olduğu gibi ilk aşamalarda kapağın aralık, gözetleme deliklerinin açık olması demektir; bu süre içinde ısıtmayı yavaşlatmak karbonun yanıp gitmesine de yardımcı olur. Havalandırması olmayan bir fırında, kiln sitter’ı üreten Dawson da üst gözetleme deliğinin pişirim boyunca açık bırakılmasını söyler: havalandırma “fırının metal parçalarındaki yıpranmayı azaltır ve tüp düzeneğinin ömrünü uzatır”. **Alttan emişli bir aspiratör** (fırına takılan motorlu bir aspiratör) bunu değiştirir. Havalandırmayı o yaptığı için Orton, piramitleri{{en: cones}} kontrol etmek dışında kapağın ve gözetleme deliklerinin pişirim boyunca kapalı kalacağını söyler; L&L de aspiratörün açık bırakılmasını ve gözetleme deliklerinin tıkanmasını söyler.
 
-For venting the room, and for carbon monoxide alarms, see [Safe mixing and ventilation](/guides/safe-mixing) and [Don't poison your family](/guides/home-safety).
+Odanın havalandırılması ve karbon monoksit dedektörleri için [Güvenli karıştırma ve havalandırma](/guides/safe-mixing) ve [Ailenizi zehirlemeyin](/guides/home-safety) rehberlerine bakın.
 
-### While the kiln is firing
+### Fırın pişirirken
 
-- Look through a peephole only with IR-rated shade 3 welding glasses; sunglasses are not enough. Skutt advises twisting the plugs into place so they do not fall out.
-- Stay nearby and check the kiln while it fires, above all near its expected finishing time; a sitter is not a fail-safe. Fire only when an adult will be home and awake through the whole firing.
-- Never fire on or near anything that burns, such as a wood floor or carpet.
-- Keep the clearances in your manual. Published figures range from 12 in (30 cm) to 3 ft (91 cm); where the manual is silent, 18 in (46 cm) from walls and 3 ft (91 cm) from anything that burns is the safest choice.
-- Keep the space around the sitter's weight clear so it can drop.
-- When the firing ends, turn the switches off and turn off the breaker as well.
+- Gözetleme deliğinden yalnızca IR korumalı, koyuluk derecesi 3 olan kaynak gözlüğüyle bakın; güneş gözlüğü yeterli değildir. Skutt, düşmesinler diye tıpaları çevirerek yerlerine oturtmanızı önerir.
+- Pişirim sürerken, özellikle beklenen bitiş saatine yakın, fırının yakınında kalın ve fırını kontrol edin; kiln sitter arızaya karşı güvenli bir düzenek değildir. Pişirimi yalnızca tüm pişirim boyunca evde ve uyanık bir yetişkin olacağı zamanlarda yapın.
+- Asla ahşap zemin ya da halı gibi yanabilecek bir şeyin üzerinde ya da yakınında pişirim yapmayın.
+- Kullanım kılavuzunuzdaki güvenlik mesafelerine uyun. Yayımlanmış değerler 12 inç (30 cm) ile 3 fit (91 cm) arasında değişir; kılavuz bir şey söylemiyorsa duvarlardan 18 inç (46 cm) ve yanabilecek her şeyden 3 fit (91 cm) uzaklık en güvenli seçimdir.
+- Kiln sitter ağırlığının düşebilmesi için çevresindeki boşluğu açık tutun.
+- Pişirim bittiğinde anahtarları kapatın, sigortayı da kapatın.
 
 ## Soğutma ve fırının boşaltılması {#cooling}
 

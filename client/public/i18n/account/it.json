@@ -270,6 +270,22 @@
         "saved": "Salvato: le date sono mostrate nelle ere giapponesi."
       }
     },
+    "digits": {
+      "legend": "Cifre",
+      "help": "Le cifre con cui sono mostrati i numeri. Alcune lingue hanno le proprie, come l’arabo, il bengalese e l’hindi, e il luogo in cui si trova decide quali sono abituali. I numeri si possono digitare con le une o con le altre.",
+      "auto": {
+        "label": "Come d’uso dove si trova",
+        "saved": "Salvato: cifre come d’uso dove si trova."
+      },
+      "western": {
+        "label": "Cifre occidentali, 0–9",
+        "saved": "Salvato: i numeri sono mostrati con le cifre 0–9."
+      },
+      "native": {
+        "label": "Le cifre proprie della lingua, se ne ha",
+        "saved": "Salvato: i numeri sono mostrati con le cifre proprie della lingua, se ne ha."
+      }
+    },
     "decimalMark": {
       "legend": "Inserimento delle quantità",
       "either": {

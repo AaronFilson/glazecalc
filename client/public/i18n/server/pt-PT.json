@@ -100,6 +100,7 @@
   "limitSet-choices": "Escolha hesselberth-roy ou glazecalc.",
   "currency-choices": "Escolha uma das moedas da lista, ou deixe que seja a da sua região.",
   "calendar-choices": "As datas podem ser mostradas no calendário gregoriano (gregory), na era budista tailandesa (buddhist) ou em eras japonesas (japanese).",
+  "digits-choices": "Os algarismos podem ser mostrados como é habitual onde está (auto), como 0–9 (western) ou com os algarismos próprios do idioma (native).",
   "shelf-invalid": "A prateleira é uma lista de até {most} matérias-primas.",
   "shelf-full": "A prateleira pode ter no máximo {most} matérias-primas. Nada foi alterado.",
   "shelf-material-unknown": "Essa matéria-prima não está nas suas matérias-primas nem na biblioteca do Glazecalc.",

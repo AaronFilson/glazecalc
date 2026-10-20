@@ -52,6 +52,7 @@
     "emergency": "Una emergencia: alguien está inconsciente, no respira o tiene una convulsión",
     "poisonAdvice": "{who, select, children {Información toxicológica: {name} (solo para niños)} other {Información toxicológica: {name}}}",
     "or": "o {number}",
+    "orCall": "o <link>{number}</link>",
     "online": "En internet: <link>{name}</link>.",
     "poisonAdviceNone": "Información toxicológica",
     "noLine": "No hemos podido confirmar que aquí haya una línea pública de información toxicológica. Llame a su médico, o al número de emergencias si es urgente.",
@@ -111,6 +112,10 @@
     "bandFromTo": "Polvo con entre un {from} % y un {to} % de sílice libre (SiO₂)",
     "bandOverTo": "Polvo con más del {from} % y hasta el {to} % de sílice libre",
     "bandAbove": "Polvo con más del {from} % de sílice libre",
+    "untilDate": "Hasta el {date}",
+    "fromDate": "Desde el {date}",
+    "beforeFormula": "Límite para el polvo respirable, donde Q es la sílice cristalina que contiene, en %",
+    "beforeAll": "Para un polvo que es todo sílice cristalina",
     "recommended": "Recomendado por {abbr}",
     "value": "{value} mg/m³",
     "kind": {
@@ -121,6 +126,7 @@
     },
     "setBy": "Norma que lo fija: <link>{law}</link>.",
     "from": "Se aplica desde el {date}.",
+    "beforeSetBy": "Hasta entonces, el límite lo fija <link>{law}</link>.",
     "lowerThanEu": "Más bajo que el límite vinculante de la UE, de {value} mg/m³.",
     "sameAsEu": "Igual al límite vinculante de la UE.",
     "recommendedBy": "{abbr} ({by}) recomienda este valor en su <link>{title}</link>. No es ley.",
@@ -183,7 +189,13 @@
       "vnMedium": "Piezas hondas para contener alimentos, de 1100 mL a menos de 3000 mL",
       "vnStorage": "Piezas hondas para contener alimentos, de 3000 mL o más",
       "vnCooking": "Piezas hondas para cocinar",
-      "vnCups": "Tazas y cuencos pequeños"
+      "vnCups": "Tazas y cuencos pequeños",
+      "cnFlat": "Piezas planas, de 25 mm de profundidad o menos",
+      "cnSmall": "Piezas huecas pequeñas, de menos de 1,1 L, salvo tazas",
+      "cnLarge": "Piezas huecas grandes, de 1,1 L a menos de 3 L",
+      "cnStorage": "Recipientes para almacenar, de 3 L o más",
+      "cnCups": "Tazas, para agua o bebidas",
+      "cnCooking": "Recipientes para cocinar, para calentar alimentos"
     },
     "judged": {
       "average": "media de 6 piezas",
@@ -197,6 +209,8 @@
     "atMost": "Una pieza cumple si no libera más que el límite: la ley dice «como máximo».",
     "ppm": "Aquí, ppm son miligramos por litro de la solución de ensayo (mg/L).",
     "unknown": "Aún no hemos confirmado las normas en {region}.",
+    "none": "No hay ninguna ley en {region} que fije límites para el plomo y el cadmio que puede liberar una pieza cocida (comprobado el {date}).",
+    "noneSource": "Fuente: <link>{law}</link>.",
     "choosePrompt": "Elija su país para ver las normas que se aplican allí."
   },
   "equivalents": {

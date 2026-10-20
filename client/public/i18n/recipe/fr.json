@@ -363,7 +363,8 @@
     "heading": "Dangers",
     "intro": "Tels que les donne l’enregistrement de chaque matière ; ceux de la bibliothèque standard viennent des fiches de données de sécurité des fournisseurs.",
     "line": "<b>{names} :</b> {hazards}",
-    "unknown": "{count, plural, one {Aucun danger n’est indiqué pour {list} : consultez la fiche de données de sécurité qui l’accompagne.} many {Aucun danger n’est indiqué pour {list} : consultez les fiches de données de sécurité qui les accompagnent.} other {Aucun danger n’est indiqué pour {list} : consultez les fiches de données de sécurité qui les accompagnent.}}"
+    "unknown": "{count, plural, one {Aucun danger n’est indiqué pour {list} : consultez la fiche de données de sécurité qui l’accompagne.} many {Aucun danger n’est indiqué pour {list} : consultez les fiches de données de sécurité qui les accompagnent.} other {Aucun danger n’est indiqué pour {list} : consultez les fiches de données de sécurité qui les accompagnent.}}",
+    "safety": "Les matières d’émail sèches produisent de la poussière, et vous devez la garder hors de vos poumons, même celle des matières non classées dangereuses. Voir <mixing>Préparation en sécurité et ventilation</mixing> et, si des enfants ou des animaux de compagnie sont présents, <home>N’empoisonnez pas votre famille</home>. Quand la fiche de données de sécurité d’une matière en dit plus, suivez-la."
   },
   "compare": {
     "heading": "Comparer deux recettes",
@@ -532,7 +533,10 @@
     "suppliesShare": "{percent} % de l’apport en {oxide}",
     "suppliesLittle": "une petite part de l’émail",
     "changed": "{name} {from} → {to}",
-    "added": "{name} {amount} (ajout)"
+    "added": "{name} {amount} (ajout)",
+    "why": {
+      "rawClay": "l’argile crue entraîne un retrait quand l’émail sèche, et en grande quantité l’émail peut se fendiller sur la pièce et se rétracter au four ; le kaolin calciné peut apporter le reste"
+    }
   },
   "shelf": {
     "empty": "Aucune matière disponible avec laquelle adapter la recette."
@@ -570,7 +574,8 @@
     "bands": {
       "low": "Basse température, cône 06–02",
       "mid": "Moyenne température, cône 4–6",
-      "high": "Haute température, cône 9–11"
+      "high": "Haute température, cône 9–11",
+      "top": "Très haute température, cône 12 et au-delà"
     },
     "shownFor": "Sans cuisson choisie, les chiffres affichés valent pour : {band}. La cuisson est enregistrée avec la recette.",
     "cone": "Ce sont les chiffres du jeu pour le cône {cone}.",
@@ -590,6 +595,7 @@
     "notInSet": "Pas de plage dans ce jeu pour {oxides}.",
     "checksOnly": "Ce jeu ne vérifie que {oxides}.",
     "notApply": "{name} n’a pas de chiffres pour cette cuisson ({band}) : elle n’est donc pas vérifiée, car des chiffres d’une autre cuisson seraient trompeurs.",
+    "topNote": "Les limites publiées pour les émaux que nous avons trouvées s’arrêtent au cône 10, et Glazecalc ne les lit pas au-delà du cône 11 : une cuisson à partir du cône 12 n’est donc pas vérifiée par rapport à des limites. Vos tessons d’essai décident.",
     "guidance": "Ce sont des repères, pas un verdict de réussite ou d’échec : un émail en dehors peut être très bien, et un émail dedans peut quand même tressaillir, relarguer ou rater. Testez-le.",
     "source": "Source :",
     "saveFailed": "Impossible d’enregistrer dans votre compte votre choix de jeu de limites : le jeu précédent reste donc celui qui est utilisé.",
@@ -627,7 +633,8 @@
       "ash": "Glazecalc ne peut pas comparer la chimie de cet émail à sa cuisson : il contient de la cendre, dont la composition varie trop pour les chiffres publiés que cette vérification utilise.",
       "noTemperature": "Glazecalc ne peut pas comparer la chimie de cet émail {scale, select, band {{band, select, low {à la basse température} mid {à la moyenne température} other {à la haute température}}} sk {à SK {cone}} temperature {à {cone} °C} other {au cône {cone}}} : il n’existe pas de température mesurée pour ce cône.",
       "between": "Glazecalc ne peut pas comparer la chimie de cet émail {scale, select, band {{band, select, low {à la basse température} mid {à la moyenne température} other {à la haute température}}} sk {à SK {cone}} temperature {à {cone} °C} other {au cône {cone}}} : les chiffres publiés que cette vérification utilise valent pour la basse température et pour la moyenne et la haute température, pas pour les cônes entre les deux (01 à 3).",
-      "belowChart": "Glazecalc ne peut pas comparer la chimie de cet émail {scale, select, band {{band, select, low {à la basse température} mid {à la moyenne température} other {à la haute température}}} sk {à SK {cone}} temperature {à {cone} °C} other {au cône {cone}}} : la règle du bore de Katz vaut du cône 06 au cône 10, et cette cuisson est moins chaude."
+      "belowChart": "Glazecalc ne peut pas comparer la chimie de cet émail {scale, select, band {{band, select, low {à la basse température} mid {à la moyenne température} other {à la haute température}}} sk {à SK {cone}} temperature {à {cone} °C} other {au cône {cone}}} : la règle du bore de Katz vaut du cône 06 au cône 10, et cette cuisson est moins chaude.",
+      "aboveChart": "Glazecalc ne peut pas comparer la chimie de cet émail {scale, select, band {{band, select, top {à la très haute température} other {à la haute température}}} sk {à SK {cone}} temperature {à {cone} °C} other {au cône {cone}}} : la règle du bore de Katz vaut du cône 06 au cône 10, les chiffres de silice et d’alumine de Hesselberth & Roy s’arrêtent au cône 10, et cette cuisson est plus chaude."
     }
   },
   "stull": {
@@ -978,6 +985,7 @@
     "approxTemperature": "≈ {temperature} ({basis} ; approximatif)",
     "approxCone": "≈ {cone} ({basis} ; approximatif)",
     "basis": {
+      "orton150": "le tableau plus ancien d’Orton pour les grands cônes, à 150 °C par heure",
       "kyoto": "mesuré à 100 °C par heure par l’institut municipal de Kyoto",
       "stated": "tel qu’indiqué"
     },

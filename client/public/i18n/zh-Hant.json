@@ -82,6 +82,31 @@
     "languages": "語言",
     "language": "語言："
   },
+  "picker": {
+    "results": "{count, plural, other {# 筆結果}}",
+    "languages": {
+      "search": "搜尋語言",
+      "showAll": "顯示所有語言",
+      "noMatch": "沒有符合的語言"
+    },
+    "regions": {
+      "search": "搜尋國家和地區",
+      "showAll": "顯示所有國家和地區",
+      "noMatch": "沒有符合的國家或地區"
+    },
+    "groups": {
+      "africa": "非洲",
+      "americas": "美洲",
+      "asia": "亞洲",
+      "eastAsia": "東亞",
+      "europe": "歐洲",
+      "middleEastNorthAfrica": "中東與北非",
+      "oceania": "大洋洲",
+      "southAsia": "南亞",
+      "southeastAsia": "東南亞",
+      "other": "其他"
+    }
+  },
   "numbers": {
     "notANumber": "請輸入數字，例如 {example}。",
     "notANumberComma": "請輸入數字，例如 {example}，小數點用逗號。",

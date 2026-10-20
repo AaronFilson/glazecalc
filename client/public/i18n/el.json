@@ -82,6 +82,31 @@
     "languages": "Γλώσσες",
     "language": "Γλώσσα:"
   },
+  "picker": {
+    "results": "{count, plural, one {# αποτέλεσμα} other {# αποτελέσματα}}",
+    "languages": {
+      "search": "Αναζήτηση γλωσσών",
+      "showAll": "Εμφάνιση όλων των γλωσσών",
+      "noMatch": "Δεν βρέθηκε γλώσσα"
+    },
+    "regions": {
+      "search": "Αναζήτηση χωρών και περιοχών",
+      "showAll": "Εμφάνιση όλων των χωρών και περιοχών",
+      "noMatch": "Δεν βρέθηκε χώρα ή περιοχή"
+    },
+    "groups": {
+      "africa": "Αφρική",
+      "americas": "Αμερική",
+      "asia": "Ασία",
+      "eastAsia": "Ανατολική Ασία",
+      "europe": "Ευρώπη",
+      "middleEastNorthAfrica": "Μέση Ανατολή και Βόρεια Αφρική",
+      "oceania": "Ωκεανία",
+      "southAsia": "Νότια Ασία",
+      "southeastAsia": "Νοτιοανατολική Ασία",
+      "other": "Λοιπά"
+    }
+  },
   "numbers": {
     "notANumber": "Εισαγάγετε έναν αριθμό, όπως {example}.",
     "notANumberComma": "Εισαγάγετε έναν αριθμό, όπως {example}, με κόμμα για τα δεκαδικά.",

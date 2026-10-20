@@ -52,6 +52,7 @@
     "emergency": "Hätätilanne: tajuton, ei hengitä, kouristuskohtaus",
     "poisonAdvice": "{who, select, children {Myrkytysneuvonta: {name} (vain lapsille)} other {Myrkytysneuvonta: {name}}}",
     "or": "tai {number}",
+    "orCall": "tai <link>{number}</link>",
     "online": "Verkossa: <link>{name}</link>.",
     "poisonAdviceNone": "Myrkytysneuvonta",
     "noLine": "Julkista myrkytysneuvonnan puhelinpalvelua ei voitu vahvistaa tässä maassa. Soita omalle lääkärille tai kiireellisessä tilanteessa hätänumeroon.",
@@ -111,6 +112,10 @@
     "bandFromTo": "Pöly, jonka vapaan piidioksidin (SiO₂) pitoisuus on {from}–{to} %",
     "bandOverTo": "Pöly, jonka vapaan piidioksidin pitoisuus on yli {from} % ja enintään {to} %",
     "bandAbove": "Pöly, jonka vapaan piidioksidin pitoisuus on yli {from} %",
+    "untilDate": "{date} asti",
+    "fromDate": "{date} alkaen",
+    "beforeFormula": "Hengitettävän pölyn raja-arvo, kun Q on sen sisältämän kiteisen piidioksidin osuus, %",
+    "beforeAll": "Pölylle, joka on kokonaan kiteistä piidioksidia",
     "recommended": "Suositus ({abbr})",
     "value": "{value} mg/m³",
     "kind": {
@@ -121,6 +126,7 @@
     },
     "setBy": "Säädös: <link>{law}</link>.",
     "from": "Se on voimassa {date} alkaen.",
+    "beforeSetBy": "Siihen asti raja-arvon määrää <link>{law}</link>.",
     "lowerThanEu": "Alempi kuin EU:n sitova raja-arvo {value} mg/m³.",
     "sameAsEu": "Sama kuin EU:n sitova raja-arvo.",
     "recommendedBy": "{abbr} ({by}) suosittelee tätä arvoa julkaisussaan <link>{title}</link>. Arvo ei ole laissa säädetty.",
@@ -183,7 +189,13 @@
       "vnMedium": "Syvät esineet ruoan säilytykseen, 1100 mL:sta alle 3000 mL:aan",
       "vnStorage": "Syvät esineet ruoan säilytykseen, vähintään 3000 mL",
       "vnCooking": "Syvät esineet ruoan kypsentämiseen",
-      "vnCups": "Kupit ja pienet kulhot"
+      "vnCups": "Kupit ja pienet kulhot",
+      "cnFlat": "Matalat astiat, syvyys enintään 25 mm",
+      "cnSmall": "Pienet syvät astiat, alle 1,1 L, muut kuin kupit",
+      "cnLarge": "Suuret syvät astiat, vähintään 1,1 L ja alle 3 L",
+      "cnStorage": "Säilytysastiat, vähintään 3 L",
+      "cnCups": "Kupit vettä tai juomia varten",
+      "cnCooking": "Keittoastiat ruoan kuumentamiseen"
     },
     "judged": {
       "average": "6 esineen keskiarvo",
@@ -197,6 +209,8 @@
     "atMost": "Esine läpäisee testin, jos siitä siirtyy enintään raja-arvon verran: laissa sanotaan ”enintään”.",
     "ppm": "ppm tarkoittaa tässä milligrammaa litrassa koeliuosta (mg/L).",
     "unknown": "Maan {region} sääntöjä ei ole vielä vahvistettu.",
+    "none": "{region}: ei ole lakia, joka asettaisi raja-arvot lyijylle ja kadmiumille, joita poltetusta esineestä saa siirtyä (tarkistettu {date}).",
+    "noneSource": "Lähde: <link>{law}</link>.",
     "choosePrompt": "Valitse maa, niin sivulla näkyvät sen säännöt."
   },
   "equivalents": {

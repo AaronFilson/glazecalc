@@ -363,7 +363,8 @@
     "heading": "Pericoli",
     "intro": "Come li indica la scheda di ogni materiale; quelli dell’elenco standard provengono dalle schede di dati di sicurezza dei fornitori.",
     "line": "<b>{names}:</b> {hazards}",
-    "unknown": "{count, plural, one {Non sono indicati pericoli per {list}: vedere la scheda di dati di sicurezza che lo accompagna.} many {Non sono indicati pericoli per {list}: vedere le schede di dati di sicurezza che li accompagnano.} other {Non sono indicati pericoli per {list}: vedere le schede di dati di sicurezza che li accompagnano.}}"
+    "unknown": "{count, plural, one {Non sono indicati pericoli per {list}: vedere la scheda di dati di sicurezza che lo accompagna.} many {Non sono indicati pericoli per {list}: vedere le schede di dati di sicurezza che li accompagnano.} other {Non sono indicati pericoli per {list}: vedere le schede di dati di sicurezza che li accompagnano.}}",
+    "safety": "I materiali per smalti, asciutti, producono polvere, e bisogna tenerla fuori dai polmoni, anche quella dei materiali non classificati come pericolosi. Vedere <mixing>Miscelazione sicura e ventilazione</mixing> e, se in casa ci sono bambini o animali domestici, anche <home>Non avvelenare la propria famiglia</home>. Dove la scheda di dati di sicurezza di un materiale dice di più, seguirla."
   },
   "compare": {
     "heading": "Confronta due ricette",
@@ -532,7 +533,10 @@
     "suppliesShare": "{oxide} ({percent}% del totale)",
     "suppliesLittle": "una piccola parte dello smalto",
     "changed": "{name} {from} → {to}",
-    "added": "{name} {amount}, nuovo"
+    "added": "{name} {amount}, nuovo",
+    "why": {
+      "rawClay": "l’argilla cruda si contrae mentre lo smalto asciuga, e se è molta lo smalto può screpolarsi sul pezzo e ritirarsi nel forno; il caolino calcinato può fornire il resto"
+    }
   },
   "shelf": {
     "empty": "Non ci sono materiali disponibili con cui adattare la ricetta."
@@ -570,7 +574,8 @@
     "bands": {
       "low": "Bassa temperatura, cono 06–02",
       "mid": "Media temperatura, cono 4–6",
-      "high": "Alta temperatura, cono 9–11"
+      "high": "Alta temperatura, cono 9–11",
+      "top": "Altissima temperatura, cono 12 e oltre"
     },
     "shownFor": "Senza una cottura scelta, i valori mostrati sono per: {band}. La cottura viene salvata con la ricetta.",
     "cone": "Questi sono i valori della serie per il cono {cone}.",
@@ -590,6 +595,7 @@
     "notInSet": "Nessun intervallo in questa serie per {oxides}.",
     "checksOnly": "Questa serie controlla solo {oxides}.",
     "notApply": "{name} non ha valori per questa cottura ({band}), quindi non viene controllata: valori per un’altra cottura sarebbero fuorvianti.",
+    "topNote": "I limiti pubblicati per gli smalti che abbiamo trovato si fermano al cono 10, e Glazecalc non li legge oltre il cono 11, quindi una cottura dal cono 12 in su non viene confrontata con dei limiti. Sono i provini a decidere.",
     "guidance": "Sono indicazioni, non un esito positivo o negativo: uno smalto fuori da questi limiti può andare bene, e uno entro i limiti può comunque cavillare, cedere metalli o fallire. Provarlo.",
     "source": "Fonte:",
     "saveFailed": "Impossibile salvare nel Suo account la scelta della serie di limiti, quindi resta in uso la serie precedente.",
@@ -627,7 +633,8 @@
       "ash": "Glazecalc non può confrontare la chimica di questo smalto con la sua cottura: contiene cenere, la cui composizione varia troppo per i valori pubblicati usati da questo controllo.",
       "noTemperature": "Glazecalc non può confrontare la chimica di questo smalto con {scale, select, band {{band, select, low {la bassa temperatura} mid {la media temperatura} other {l’alta temperatura}}} sk {SK {cone}} temperature {{cone} °C} other {il cono {cone}}}: non esiste una temperatura misurata per quel cono.",
       "between": "Glazecalc non può confrontare la chimica di questo smalto con {scale, select, band {{band, select, low {la bassa temperatura} mid {la media temperatura} other {l’alta temperatura}}} sk {SK {cone}} temperature {{cone} °C} other {il cono {cone}}}: i valori pubblicati usati da questo controllo sono per la bassa temperatura e per la media e alta temperatura, non per i coni intermedi (da 01 a 3).",
-      "belowChart": "Glazecalc non può confrontare la chimica di questo smalto con {scale, select, band {{band, select, low {la bassa temperatura} mid {la media temperatura} other {l’alta temperatura}}} sk {SK {cone}} temperature {{cone} °C} other {il cono {cone}}}: la regola del boro di Katz vale dal cono 06 al cono 10, e quella cottura è meno calda."
+      "belowChart": "Glazecalc non può confrontare la chimica di questo smalto con {scale, select, band {{band, select, low {la bassa temperatura} mid {la media temperatura} other {l’alta temperatura}}} sk {SK {cone}} temperature {{cone} °C} other {il cono {cone}}}: la regola del boro di Katz vale dal cono 06 al cono 10, e quella cottura è meno calda.",
+      "aboveChart": "Glazecalc non può confrontare la chimica di questo smalto con {scale, select, band {{band, select, top {l’altissima temperatura} other {l’alta temperatura}}} sk {SK {cone}} temperature {{cone} °C} other {il cono {cone}}}: la regola del boro di Katz vale dal cono 06 al cono 10, i valori di silice e allumina di Hesselberth & Roy si fermano al cono 10, e quella cottura è più calda."
     }
   },
   "stull": {
@@ -978,6 +985,7 @@
     "approxTemperature": "≈ {temperature} ({basis}; approssimativo)",
     "approxCone": "≈ {cone} ({basis}; approssimativo)",
     "basis": {
+      "orton150": "la tabella Orton più vecchia per i coni grandi, a 150 °C all’ora",
       "kyoto": "misurato a 100 °C all’ora dall’istituto municipale di Kyoto",
       "stated": "come indicato"
     },

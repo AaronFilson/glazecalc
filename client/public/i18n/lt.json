@@ -82,6 +82,31 @@
     "languages": "Kalbos",
     "language": "Kalba:"
   },
+  "picker": {
+    "results": "{count, plural, one {# atitikmuo} few {# atitikmenys} many {# atitikmens} other {# atitikmenų}}",
+    "languages": {
+      "search": "Ieškoti kalbų",
+      "showAll": "Rodyti visas kalbas",
+      "noMatch": "Atitinkančios kalbos nėra"
+    },
+    "regions": {
+      "search": "Ieškoti šalių ir regionų",
+      "showAll": "Rodyti visas šalis ir regionus",
+      "noMatch": "Atitinkančios šalies ar regiono nėra"
+    },
+    "groups": {
+      "africa": "Afrika",
+      "americas": "Amerika",
+      "asia": "Azija",
+      "eastAsia": "Rytų Azija",
+      "europe": "Europa",
+      "middleEastNorthAfrica": "Artimieji Rytai ir Šiaurės Afrika",
+      "oceania": "Okeanija",
+      "southAsia": "Pietų Azija",
+      "southeastAsia": "Pietryčių Azija",
+      "other": "Kita"
+    }
+  },
   "numbers": {
     "notANumber": "Įveskite skaičių, pvz., {example}.",
     "notANumberComma": "Įveskite skaičių su dešimtainiu kableliu, pvz., {example}.",

@@ -100,6 +100,7 @@
   "limitSet-choices": "Pasirinkite hesselberth-roy arba glazecalc.",
   "currency-choices": "Pasirinkite vieną iš sąraše esančių valiutų arba palikite pagal savo regioną.",
   "calendar-choices": "Datos gali būti rodomos pagal Grigaliaus kalendorių (gregory), Tailando budistų erą (buddhist) arba Japonijos eras (japanese).",
+  "digits-choices": "Skaitmenys gali būti rodomi kaip įprasta jūsų regione (auto), 0–9 (western) arba kalbos savais skaitmenimis (native).",
   "shelf-invalid": "Turimų žaliavų gali būti ne daugiau kaip {most}.",
   "shelf-full": "Turimų žaliavų gali būti ne daugiau kaip {most}. Niekas nepakeista.",
   "shelf-material-unknown": "Tokios žaliavos nėra nei jūsų žaliavose, nei Glazecalc bibliotekoje.",

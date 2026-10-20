@@ -363,7 +363,8 @@
     "heading": "Guaiseacha",
     "intro": "Mar a thugann taifead gach ábhair iad; tagann iad siúd sa leabharlann chaighdeánach ó bhileoga sonraí sábháilteachta na soláthraithe.",
     "line": "<b>{names}:</b> {hazards}",
-    "unknown": "{count, plural, one {Níor tugadh aon ghuaiseacha don ábhar seo: {list}. Féach ar an mbileog sonraí sábháilteachta a thagann leis.} two {Níor tugadh aon ghuaiseacha do na hábhair seo: {list}. Féach ar na bileoga sonraí sábháilteachta a thagann leo.} few {Níor tugadh aon ghuaiseacha do na hábhair seo: {list}. Féach ar na bileoga sonraí sábháilteachta a thagann leo.} many {Níor tugadh aon ghuaiseacha do na hábhair seo: {list}. Féach ar na bileoga sonraí sábháilteachta a thagann leo.} other {Níor tugadh aon ghuaiseacha do na hábhair seo: {list}. Féach ar na bileoga sonraí sábháilteachta a thagann leo.}}"
+    "unknown": "{count, plural, one {Níor tugadh aon ghuaiseacha don ábhar seo: {list}. Féach ar an mbileog sonraí sábháilteachta a thagann leis.} two {Níor tugadh aon ghuaiseacha do na hábhair seo: {list}. Féach ar na bileoga sonraí sábháilteachta a thagann leo.} few {Níor tugadh aon ghuaiseacha do na hábhair seo: {list}. Féach ar na bileoga sonraí sábháilteachta a thagann leo.} many {Níor tugadh aon ghuaiseacha do na hábhair seo: {list}. Féach ar na bileoga sonraí sábháilteachta a thagann leo.} other {Níor tugadh aon ghuaiseacha do na hábhair seo: {list}. Féach ar na bileoga sonraí sábháilteachta a thagann leo.}}",
+    "safety": "Cruthaíonn ábhair ghlónra thirim deannach, agus ní mór duit é a choinneáil amach as do scamhóga, fiú deannach ó ábhair nach bhfuil aicmithe mar ghuaiseach. Féach an treoirleabhar <mixing>Meascadh sábháilte agus aeráil</mixing>, agus má tá páistí nó peataí thart, féach an treoirleabhar <home>Ná nimhigh do theaghlach</home> freisin. Nuair a deir bileog sonraí sábháilteachta ábhair níos mó, lean í."
   },
   "compare": {
     "heading": "Dhá oideas a chur i gcomparáid",
@@ -532,7 +533,10 @@
     "suppliesShare": "{oxide} ({percent}% den iomlán)",
     "suppliesLittle": "beagán den ghlónra",
     "changed": "{name} {from} → {to}",
-    "added": "{name} {amount}, nua"
+    "added": "{name} {amount}, nua",
+    "why": {
+      "rawClay": "crapann cré neamhbhácáilte de réir mar a thriomaíonn an glónra, agus is féidir le mórán di scoilteadh ar an bpota agus snámh san áith; is féidir le caoilín cailcínithe an chuid eile a sholáthar"
+    }
   },
   "shelf": {
     "empty": "Níl aon ábhair sa stoc le meaitseáil leo."
@@ -570,7 +574,8 @@
     "bands": {
       "low": "Ísealbhácáil, cón 06–02",
       "mid": "Meánbhácáil, cón 4–6",
-      "high": "Ardbhácáil, cón 9–11"
+      "high": "Ardbhácáil, cón 9–11",
+      "top": "Bácáil an-ard, cón 12 agus níos teo"
     },
     "shownFor": "Nuair nach roghnaítear aon bhácáil, is do na cinn seo atá na figiúirí a thaispeántar: {band}. Sábháiltear an bhácáil leis an oideas.",
     "cone": "Seo figiúirí na sraithe do chón {cone}.",
@@ -590,6 +595,7 @@
     "notInSet": "Níl aon raon sa tsraith seo le haghaidh {oxides}.",
     "checksOnly": "Ní sheiceálann an tsraith seo ach {oxides}.",
     "notApply": "Níl aon fhigiúirí ag {name} don bhácáil seo ({band}), mar sin ní sheiceáiltear é: chuirfeadh figiúirí do bhácáil eile an léitheoir amú.",
+    "topNote": "Stopann na teorainneacha glónra foilsithe a d’aimsíomar ag cón 10, agus ní léann Glazecalc iad níos faide ná cón 11, mar sin ní sheiceáiltear bácáil ó chón 12 agus níos teo in aghaidh teorainneacha. Is iad do thíleanna tástála a chinneann.",
     "guidance": "Treoirlínte iad seo, ní pas ná teip: d’fhéadfadh glónra atá lasmuigh díobh a bheith go maith, agus d’fhéadfadh ceann atá laistigh díobh snáithlíonrú, láisteadh nó teip fós. Déan tástáil air.",
     "source": "Foinse:",
     "saveFailed": "Níorbh fhéidir do rogha sraithe teorainneacha a shábháil le do chuntas, mar sin is í an tsraith teorainneacha a bhí ann roimhe an ceann atá in úsáid fós.",
@@ -627,7 +633,8 @@
       "ash": "Ní féidir le Glazecalc ceimic an ghlónra seo a chur i gcomparáid lena bhácáil: tá luaith ann, a bhfuil a comhdhéanamh ró-athraitheach do na figiúirí foilsithe a úsáideann an seiceáil seo.",
       "noTemperature": "Ní féidir le Glazecalc ceimic an ghlónra seo a chur i gcomparáid leis an mbácáil seo ({scale, select, band {{band, select, low {ísealbhácáil} mid {meánbhácáil} other {ardbhácáil}}} sk {SK {cone}} temperature {{cone} °C} other {cón {cone}}}): níl aon teocht tomhaiste ann don chón sin.",
       "between": "Ní féidir le Glazecalc ceimic an ghlónra seo a chur i gcomparáid leis an mbácáil seo ({scale, select, band {{band, select, low {ísealbhácáil} mid {meánbhácáil} other {ardbhácáil}}} sk {SK {cone}} temperature {{cone} °C} other {cón {cone}}}): is don ísealbhácáil agus don mheánbhácáil agus don ardbhácáil atá na figiúirí foilsithe a úsáideann an seiceáil seo, ní do na cóin eatarthu (01 go 3).",
-      "belowChart": "Ní féidir le Glazecalc ceimic an ghlónra seo a chur i gcomparáid leis an mbácáil seo ({scale, select, band {{band, select, low {ísealbhácáil} mid {meánbhácáil} other {ardbhácáil}}} sk {SK {cone}} temperature {{cone} °C} other {cón {cone}}}): is do chón 06 go cón 10 atá riail bhóróin Katz, agus tá an bhácáil sin níos fuaire."
+      "belowChart": "Ní féidir le Glazecalc ceimic an ghlónra seo a chur i gcomparáid leis an mbácáil seo ({scale, select, band {{band, select, low {ísealbhácáil} mid {meánbhácáil} other {ardbhácáil}}} sk {SK {cone}} temperature {{cone} °C} other {cón {cone}}}): is do chón 06 go cón 10 atá riail bhóróin Katz, agus tá an bhácáil sin níos fuaire.",
+      "aboveChart": "Ní féidir le Glazecalc ceimic an ghlónra seo a chur i gcomparáid leis an mbácáil seo ({scale, select, band {{band, select, top {bácáil an-ard} other {ardbhácáil}}} sk {SK {cone}} temperature {{cone} °C} other {cón {cone}}}): is do chón 06 go cón 10 atá riail bhóróin Katz, stopann figiúirí silice agus alúmana Hesselberth & Roy ag cón 10, agus tá an bhácáil sin níos teo."
     }
   },
   "stull": {
@@ -978,6 +985,7 @@
     "approxTemperature": "≈ {temperature} ({basis}; garbh-mheastachán)",
     "approxCone": "≈ {cone} ({basis}; garbh-mheastachán)",
     "basis": {
+      "orton150": "tábla níos sine de chuid Orton do chóin mhóra, ag 150 °C san uair",
       "kyoto": "tomhaiste ag 100 °C san uair ag institiúid chathrach Kyoto",
       "stated": "mar a tugadh é"
     },

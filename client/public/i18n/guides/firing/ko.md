@@ -79,47 +79,47 @@ Label: 콘의 종류
 
 :::
 
-## The cone chart {#cone-chart lang=en}
+## 콘 온도표 {#cone-chart}
 
-These figures are from Orton's cone chart (©2001) for self-supporting cones; cones 11 to 14 are from the charts Orton publishes now, which give the same figures where they overlap, and cones 13 and 14 only in °C (their °F here is converted). Choose the column that matches how fast your kiln climbed over the last {{180 °F; 100 °C}}. Orton's rule of thumb is the {{270 °F/h; 150 °C/h}} column for a fast firing, the {{108 °F/h; 60 °C/h}} column for a medium one and the {{27 °F/h; 15 °C/h}} column for a slow one. To work out a rate, divide the temperature climbed by the hours it took: a kiln that climbs {{900 °F; 500 °C}} in 3 hours is heating at about {{300 °F/h; 167 °C/h}}.
+이 수치는 셀프 서포트 콘에 대한 Orton의 콘 온도표(©2001)에서 가져왔습니다. 오튼 콘 11~14는 Orton이 현재 발표하는 온도표에서 가져왔으며, 이 온도표는 겹치는 콘에서 같은 수치를 제시하고 콘 13과 14는 °C로만 제시합니다(여기의 °F는 환산한 값입니다). 가마가 마지막 {{180 °F; 100 °C}} 구간을 얼마나 빠르게 올랐는지에 맞는 열을 고르세요. Orton의 경험칙은 빠른 소성에는 {{270 °F/h; 150 °C/h}} 열, 보통 소성에는 {{108 °F/h; 60 °C/h}} 열, 느린 소성에는 {{27 °F/h; 15 °C/h}} 열입니다. 승온 속도를 구하려면 올라간 온도를 걸린 시간으로 나눕니다. {{900 °F; 500 °C}}를 3시간에 올리는 가마는 약 {{300 °F/h; 167 °C/h}}로 가열하는 것입니다.
 
-Table: Orton self-supporting cones: the temperature at which each bends, by heating rate over the last {{180 °F; 100 °C}}
-Label: Orton cone chart
+Table: Orton 셀프 서포트 콘: 마지막 {{180 °F; 100 °C}} 구간의 승온 속도에 따라 각 콘이 휘는 온도
+Label: Orton 콘 온도표
 
-| Cone | Slow, {{27 °F/h; 15 °C/h}} | Medium, {{108 °F/h; 60 °C/h}} | Fast, {{270 °F/h; 150 °C/h}} |
-| ---- | -------------------------: | ----------------------------: | ---------------------------: |
-| 022  |                          – |           {{1087 °F; 586 °C}} |          {{1094 °F; 590 °C}} |
-| 018  |                          – |           {{1319 °F; 715 °C}} |          {{1353 °F; 734 °C}} |
-| 015  |                          – |           {{1456 °F; 791 °C}} |          {{1504 °F; 818 °C}} |
-| 010  |        {{1636 °F; 891 °C}} |           {{1657 °F; 903 °C}} |          {{1679 °F; 915 °C}} |
-| 08   |        {{1692 °F; 922 °C}} |           {{1728 °F; 942 °C}} |          {{1753 °F; 956 °C}} |
-| 07   |                          – |           {{1789 °F; 976 °C}} |          {{1809 °F; 987 °C}} |
-| 06   |        {{1798 °F; 981 °C}} |           {{1828 °F; 998 °C}} |         {{1855 °F; 1013 °C}} |
-| 05   |       {{1870 °F; 1021 °C}} |          {{1888 °F; 1031 °C}} |         {{1911 °F; 1044 °C}} |
-| 04   |       {{1915 °F; 1046 °C}} |          {{1945 °F; 1063 °C}} |         {{1971 °F; 1077 °C}} |
-| 03   |       {{1960 °F; 1071 °C}} |          {{1987 °F; 1086 °C}} |         {{2019 °F; 1104 °C}} |
-| 02   |                          – |          {{2016 °F; 1102 °C}} |         {{2052 °F; 1122 °C}} |
-| 01   |       {{1999 °F; 1093 °C}} |          {{2046 °F; 1119 °C}} |         {{2080 °F; 1138 °C}} |
-| 1    |       {{2028 °F; 1109 °C}} |          {{2079 °F; 1137 °C}} |         {{2109 °F; 1154 °C}} |
-| 4    |       {{2086 °F; 1141 °C}} |          {{2124 °F; 1162 °C}} |         {{2161 °F; 1183 °C}} |
-| 5    |       {{2118 °F; 1159 °C}} |          {{2167 °F; 1186 °C}} |         {{2205 °F; 1207 °C}} |
-| 6    |       {{2165 °F; 1185 °C}} |          {{2232 °F; 1222 °C}} |         {{2269 °F; 1243 °C}} |
-| 7    |       {{2194 °F; 1201 °C}} |          {{2262 °F; 1239 °C}} |         {{2295 °F; 1257 °C}} |
-| 8    |       {{2212 °F; 1211 °C}} |          {{2280 °F; 1249 °C}} |         {{2320 °F; 1271 °C}} |
-| 9    |       {{2235 °F; 1224 °C}} |          {{2300 °F; 1260 °C}} |         {{2336 °F; 1280 °C}} |
-| 10   |       {{2284 °F; 1251 °C}} |          {{2345 °F; 1285 °C}} |         {{2381 °F; 1305 °C}} |
-| 11   |       {{2322 °F; 1272 °C}} |          {{2361 °F; 1294 °C}} |         {{2399 °F; 1315 °C}} |
-| 12   |       {{2345 °F; 1285 °C}} |          {{2383 °F; 1306 °C}} |         {{2419 °F; 1326 °C}} |
-| 13   |       {{2390 °F; 1310 °C}} |          {{2428 °F; 1331 °C}} |         {{2458 °F; 1348 °C}} |
-| 14   |       {{2464 °F; 1351 °C}} |          {{2489 °F; 1365 °C}} |         {{2523 °F; 1384 °C}} |
+| 오튼 콘 | 느림, {{27 °F/h; 15 °C/h}} | 보통, {{108 °F/h; 60 °C/h}} | 빠름, {{270 °F/h; 150 °C/h}} |
+| ------- | -------------------------: | --------------------------: | ---------------------------: |
+| 022     |                          – |         {{1087 °F; 586 °C}} |          {{1094 °F; 590 °C}} |
+| 018     |                          – |         {{1319 °F; 715 °C}} |          {{1353 °F; 734 °C}} |
+| 015     |                          – |         {{1456 °F; 791 °C}} |          {{1504 °F; 818 °C}} |
+| 010     |        {{1636 °F; 891 °C}} |         {{1657 °F; 903 °C}} |          {{1679 °F; 915 °C}} |
+| 08      |        {{1692 °F; 922 °C}} |         {{1728 °F; 942 °C}} |          {{1753 °F; 956 °C}} |
+| 07      |                          – |         {{1789 °F; 976 °C}} |          {{1809 °F; 987 °C}} |
+| 06      |        {{1798 °F; 981 °C}} |         {{1828 °F; 998 °C}} |         {{1855 °F; 1013 °C}} |
+| 05      |       {{1870 °F; 1021 °C}} |        {{1888 °F; 1031 °C}} |         {{1911 °F; 1044 °C}} |
+| 04      |       {{1915 °F; 1046 °C}} |        {{1945 °F; 1063 °C}} |         {{1971 °F; 1077 °C}} |
+| 03      |       {{1960 °F; 1071 °C}} |        {{1987 °F; 1086 °C}} |         {{2019 °F; 1104 °C}} |
+| 02      |                          – |        {{2016 °F; 1102 °C}} |         {{2052 °F; 1122 °C}} |
+| 01      |       {{1999 °F; 1093 °C}} |        {{2046 °F; 1119 °C}} |         {{2080 °F; 1138 °C}} |
+| 1       |       {{2028 °F; 1109 °C}} |        {{2079 °F; 1137 °C}} |         {{2109 °F; 1154 °C}} |
+| 4       |       {{2086 °F; 1141 °C}} |        {{2124 °F; 1162 °C}} |         {{2161 °F; 1183 °C}} |
+| 5       |       {{2118 °F; 1159 °C}} |        {{2167 °F; 1186 °C}} |         {{2205 °F; 1207 °C}} |
+| 6       |       {{2165 °F; 1185 °C}} |        {{2232 °F; 1222 °C}} |         {{2269 °F; 1243 °C}} |
+| 7       |       {{2194 °F; 1201 °C}} |        {{2262 °F; 1239 °C}} |         {{2295 °F; 1257 °C}} |
+| 8       |       {{2212 °F; 1211 °C}} |        {{2280 °F; 1249 °C}} |         {{2320 °F; 1271 °C}} |
+| 9       |       {{2235 °F; 1224 °C}} |        {{2300 °F; 1260 °C}} |         {{2336 °F; 1280 °C}} |
+| 10      |       {{2284 °F; 1251 °C}} |        {{2345 °F; 1285 °C}} |         {{2381 °F; 1305 °C}} |
+| 11      |       {{2322 °F; 1272 °C}} |        {{2361 °F; 1294 °C}} |         {{2399 °F; 1315 °C}} |
+| 12      |       {{2345 °F; 1285 °C}} |        {{2383 °F; 1306 °C}} |         {{2419 °F; 1326 °C}} |
+| 13      |       {{2390 °F; 1310 °C}} |        {{2428 °F; 1331 °C}} |         {{2458 °F; 1348 °C}} |
+| 14      |       {{2464 °F; 1351 °C}} |        {{2489 °F; 1365 °C}} |         {{2523 °F; 1384 °C}} |
 
-A dash marks a figure not copied here; see Orton's full chart for it.
+–로 표시한 칸은 여기에 옮겨 적지 않은 값입니다. 그 값은 Orton의 전체 온도표를 보세요.
 
-Orton makes cones up to 42 for high-temperature work, but publishes temperatures only up to cone 14; for hotter cones its charts are "available (by request)". An older Orton chart, as kiln makers reprint it, gives a large cone 15 as {{2608 °F; 1431 °C}} at {{270 °F/h; 150 °C/h}}, and we found no published figure for cone 16 or above. Past cone 14, set witness cones and go by them, and check that your kiln is rated for that heat.
+Orton은 고온 작업용으로 오튼 콘 42까지 만들지만, 온도는 오튼 콘 14까지만 발표합니다. 그보다 고온의 콘에 대한 온도표는 “(요청 시) 제공”된다고 합니다. 가마 제조사들이 다시 싣는 Orton의 예전 온도표는 {{270 °F/h; 150 °C/h}}에서 라지 콘 15를 {{2608 °F; 1431 °C}}로 제시하며, 콘 16 이상에 대해 발표된 수치는 찾지 못했습니다. 콘 14를 넘으면 확인용 콘{{en: witness cone}}을 놓고 그 콘에 따라 판단하세요. 또한 가마 제조사가 밝힌 최고 온도가 그만한 열에 이르는지 확인하세요.
 
-Large cones read within a few degrees of these figures: a large cone 6 at {{108 °F/h; 60 °C/h}} is {{2228 °F; 1220 °C}}. Small cones, the kind used in a kiln sitter, are listed only at {{540 °F/h; 300 °C/h}}, so the chart gives a small cone 6 as {{2291 °F; 1255 °C}}. That is not the temperature at which a sitter turns the kiln off. The sitter cone's job is to match the shelf cone, and the shelf cone has the final say.
+라지 콘은 이 수치와 몇 도 이내로 읽힙니다. {{108 °F/h; 60 °C/h}}에서 라지 콘 6은 {{2228 °F; 1220 °C}}입니다. 킬른 시터에 쓰는 스몰 콘은 {{540 °F/h; 300 °C/h}}에서만 나와 있으므로, 온도표는 스몰 콘 6을 {{2291 °F; 1255 °C}}로 제시합니다. 이것은 킬른 시터가 가마를 끄는 온도가 아닙니다. 킬른 시터 콘의 역할은 내화판 위의 콘과 맞추는 것이며, 최종 판단은 내화판 위의 콘이 합니다.
 
-Two cautions. Orton's 2019 booklet gives cone 06 at the fast rate as {{1875 °F; 1024 °C}}, but the chart and Orton's FAQ both give {{1855 °F; 1013 °C}}, used here. And the large-cone table at the back of the Dawson kiln sitter manual has copying errors (cone 5 hotter than cone 6), so do not use it.
+주의할 점이 두 가지 있습니다. Orton의 2019년 소책자는 빠른 승온 속도에서 오튼 콘 06을 {{1875 °F; 1024 °C}}로 제시하지만, 온도표와 Orton의 FAQ는 둘 다 {{1855 °F; 1013 °C}}로 제시하며, 여기서는 이 값을 썼습니다. 그리고 Dawson 킬른 시터 사용 설명서 뒷부분의 라지 콘 표에는 옮겨 적은 오류(콘 5가 콘 6보다 고온으로 적혀 있음)가 있으므로 쓰지 마세요.
 
 :::temperature
 
@@ -287,96 +287,96 @@ Label: 다음 소성 조정
 
 :::sk
 
-## Firing to SK cones {#sk-cones lang=en}
+## SK 콘 기준 소성 {#sk-cones}
 
-SK cones are the pyrometric cones made to Japan's standard, JIS R 8101, and sold in Japan by dealers such as Yuko Trading (有恒商事). Like any cone, an SK cone measures heatwork, not temperature alone: it softens and bends over when the ware has had enough heat, and you read how far it bent. Witness cones, reading how far a cone has bent, and holds work for it as for any cone. This section names each cone's system, and never turns an SK number into another system's number: the numbers of different cone series are not interchangeable.
+SK 콘은 일본 규격 JIS R 8101에 따라 만든 파이로메트릭 콘으로, 일본에서는 Yuko Trading(유코 상사) 같은 판매점이 팝니다. 다른 콘과 마찬가지로 SK 콘은 온도만이 아니라 소성 정도{{en: heatwork}}를 잽니다. 기물이 열을 충분히 받으면 부드러워져 휘어 쓰러지고, 얼마나 휘었는지 읽습니다. 확인용 콘{{en: witness cone}}, 콘이 얼마나 휘었는지 읽는 방법, 유지도 다른 콘과 똑같이 적용됩니다. 이 부분은 콘마다 어느 계열인지 밝히며, SK 번호를 다른 계열의 번호로 바꾸어 말하지 않습니다. 계열이 다른 콘의 번호는 서로 바꿔 쓸 수 없기 때문입니다.
 
 > [!NOTE]
-> Always write "SK" before the number. Many older Japanese recipes say only "SK 8" or "SK 9" without saying whose cone. Kyoto cones and SK cones to JIS carry the same numbers but bend at different temperatures (see Kyoto cones, below).
+> 번호 앞에는 항상 “SK”를 쓰세요. 오래된 일본 레시피 중에는 누구의 콘인지 밝히지 않고 “SK 8”이나 “SK 9”라고만 쓴 것이 많습니다. 교토 콘과 JIS에 따른 SK 콘은 번호가 같지만 휘는 온도가 다릅니다(아래의 “교토 콘” 참조).
 
-### The large cones
+### 대형 콘
 
-The standard has two sizes. Large cones (大型コーン) are "mainly used for measuring the degree of firing" (焼度測定), which is what a potter wants. Small cones (SK 26 to SK 42, at the top of the range) are "mainly used for refractoriness tests" and are not covered here. The table below gives the large cones from SK 022 to SK 20.
+규격에는 크기가 두 가지 있습니다. 대형 콘은 “주로 소성 정도 측정에 쓰이며”, 도예가에게 필요한 것이 바로 이것입니다. 소형 콘(범위 맨 위의 SK 26~SK 42)은 “주로 내화도 시험에 쓰이며” 여기서는 다루지 않습니다. 아래 표는 SK 022부터 SK 20까지의 대형 콘을 제시합니다.
 
-The numbers run from SK 022, the coolest, up to SK 20 here. Between SK 015 and SK 6 the printed numbers carry an "a" (SK 015a, SK 6a); write it as printed.
+번호는 여기서는 가장 저온인 SK 022부터 SK 20까지입니다. SK 015와 SK 6 사이에서는 인쇄된 번호에 “a”가 붙습니다(SK 015a, SK 6a). 인쇄된 대로 쓰세요.
 
-### Setting large cones
+### 대형 콘 놓기
 
-Set each large cone in a plaque or a pat of clay, leaning toward its bending face. As with any cone, keep the height and the lean the same from firing to firing, because a difference in either changes how far it bends. Set the three cones of the pack (below) together, deep in the kiln near the middle of the load, where they get the heat the ware gets, yet where you can see them through a peephole; before you close the kiln, check that you can see all three.
+대형 콘은 콘 받침대나 점토 덩이에 꽂아, 휘는 면 쪽으로 기울여 놓습니다. 다른 콘과 마찬가지로 높이와 기울기를 소성할 때마다 같게 하세요. 둘 중 어느 쪽이든 달라지면 휘는 정도가 달라지기 때문입니다. 콘 세트(아래)의 콘 세 개를 함께, 재임한 기물의 가운데 근처에서 가마 안쪽 깊숙이 놓으세요. 기물이 받는 열을 받으면서도 불구멍으로 보이는 곳입니다. 가마를 닫기 전에 콘 세 개가 모두 보이는지 확인하세요.
 
-We found no maker's or seller's instructions for how deep or at what angle to set SK cones. The nearest is a laboratory standard, JIS R 2204, Japan's test of how much heat a refractory material stands: it sets each SK cone with its marked face at 80° to a flat stand and its foot about 4 mm into it. That is a test for refractories, not a rule for firing pots, and we read it in a transcription of the standard, not in the standard itself.
+SK 콘을 얼마나 깊이, 어떤 각도로 놓는지에 대한 제조사나 판매점의 안내는 찾지 못했습니다. 가장 가까운 것은 실험실 규격인 JIS R 2204로, 내화 재료가 얼마나 높은 열을 견디는지 보는 일본의 시험입니다. 이 규격은 각 SK 콘을, 표시된 면이 평평한 받침과 80°를 이루고 밑부분이 받침에 약 4 mm 묻히도록 놓습니다. 이것은 내화물 시험이지 도자기를 소성하는 규칙이 아니며, 규격 자체가 아니라 규격을 옮겨 적은 자료에서 읽은 것입니다.
 
-### Guide, firing and guard cones
+### 가이드 콘, 소성 콘, 가드 콘
 
-Cones are sold and set as three: a guide cone, a firing cone at the target, and a guard cone. Take the firing cone as the SK number your recipe or clay names, the guide cone as the next cooler cone (one row up in the table) and the guard cone as the next hotter one. When the guide cone starts to bend, the end is near; when the guard cone bends, the firing has gone too far.
+콘은 세 개를 한 조로 팔고 놓습니다. 가이드 콘, 목표에 맞춘 소성 콘, 가드 콘입니다. 소성 콘은 레시피나 점토가 알려 주는 SK 번호로 하고, 가이드 콘은 바로 위(저온 쪽)의 콘, 가드 콘은 바로 아래(고온 쪽)의 콘으로 하세요. 가이드 콘이 휘기 시작하면 끝이 가까운 것이고, 가드 콘이 휘면 소성이 지나친 것입니다.
 
-### The SK chart
+### SK 콘 온도표
 
-Table: SK large cones (JIS R 8101): the nominal (JIS) temperature of each
-Label: SK chart
+Table: SK 대형 콘(JIS R 8101): 각 콘의 공칭(JIS) 온도
+Label: SK 콘 온도표
 
-| Cone    | Nominal (JIS) temperature |
-| ------- | ------------------------: |
-| SK 022  |       {{1112 °F; 600 °C}} |
-| SK 021  |       {{1202 °F; 650 °C}} |
-| SK 020  |       {{1238 °F; 670 °C}} |
-| SK 019  |       {{1274 °F; 690 °C}} |
-| SK 018  |       {{1310 °F; 710 °C}} |
-| SK 017  |       {{1346 °F; 730 °C}} |
-| SK 016  |       {{1382 °F; 750 °C}} |
-| SK 015a |       {{1454 °F; 790 °C}} |
-| SK 014a |       {{1499 °F; 815 °C}} |
-| SK 013a |       {{1535 °F; 835 °C}} |
-| SK 012a |       {{1571 °F; 855 °C}} |
-| SK 011a |       {{1616 °F; 880 °C}} |
-| SK 010a |       {{1652 °F; 900 °C}} |
-| SK 09a  |       {{1688 °F; 920 °C}} |
-| SK 08a  |       {{1724 °F; 940 °C}} |
-| SK 07a  |       {{1760 °F; 960 °C}} |
-| SK 06a  |       {{1796 °F; 980 °C}} |
-| SK 05a  |      {{1832 °F; 1000 °C}} |
-| SK 04a  |      {{1868 °F; 1020 °C}} |
-| SK 03a  |      {{1904 °F; 1040 °C}} |
-| SK 02a  |      {{1940 °F; 1060 °C}} |
-| SK 01a  |      {{1976 °F; 1080 °C}} |
-| SK 1a   |      {{2012 °F; 1100 °C}} |
-| SK 2a   |      {{2048 °F; 1120 °C}} |
-| SK 3a   |      {{2084 °F; 1140 °C}} |
-| SK 4a   |      {{2120 °F; 1160 °C}} |
-| SK 5a   |      {{2156 °F; 1180 °C}} |
-| SK 6a   |      {{2192 °F; 1200 °C}} |
-| SK 7    |      {{2246 °F; 1230 °C}} |
-| SK 8    |      {{2282 °F; 1250 °C}} |
-| SK 9    |      {{2336 °F; 1280 °C}} |
-| SK 10   |      {{2372 °F; 1300 °C}} |
-| SK 11   |      {{2408 °F; 1320 °C}} |
-| SK 12   |      {{2462 °F; 1350 °C}} |
-| SK 13   |      {{2516 °F; 1380 °C}} |
-| SK 14   |      {{2570 °F; 1410 °C}} |
-| SK 15   |      {{2615 °F; 1435 °C}} |
-| SK 16   |      {{2660 °F; 1460 °C}} |
-| SK 17   |      {{2696 °F; 1480 °C}} |
-| SK 18   |      {{2732 °F; 1500 °C}} |
-| SK 19   |      {{2768 °F; 1520 °C}} |
-| SK 20   |      {{2786 °F; 1530 °C}} |
+| 콘      |       공칭(JIS) 온도 |
+| ------- | -------------------: |
+| SK 022  |  {{1112 °F; 600 °C}} |
+| SK 021  |  {{1202 °F; 650 °C}} |
+| SK 020  |  {{1238 °F; 670 °C}} |
+| SK 019  |  {{1274 °F; 690 °C}} |
+| SK 018  |  {{1310 °F; 710 °C}} |
+| SK 017  |  {{1346 °F; 730 °C}} |
+| SK 016  |  {{1382 °F; 750 °C}} |
+| SK 015a |  {{1454 °F; 790 °C}} |
+| SK 014a |  {{1499 °F; 815 °C}} |
+| SK 013a |  {{1535 °F; 835 °C}} |
+| SK 012a |  {{1571 °F; 855 °C}} |
+| SK 011a |  {{1616 °F; 880 °C}} |
+| SK 010a |  {{1652 °F; 900 °C}} |
+| SK 09a  |  {{1688 °F; 920 °C}} |
+| SK 08a  |  {{1724 °F; 940 °C}} |
+| SK 07a  |  {{1760 °F; 960 °C}} |
+| SK 06a  |  {{1796 °F; 980 °C}} |
+| SK 05a  | {{1832 °F; 1000 °C}} |
+| SK 04a  | {{1868 °F; 1020 °C}} |
+| SK 03a  | {{1904 °F; 1040 °C}} |
+| SK 02a  | {{1940 °F; 1060 °C}} |
+| SK 01a  | {{1976 °F; 1080 °C}} |
+| SK 1a   | {{2012 °F; 1100 °C}} |
+| SK 2a   | {{2048 °F; 1120 °C}} |
+| SK 3a   | {{2084 °F; 1140 °C}} |
+| SK 4a   | {{2120 °F; 1160 °C}} |
+| SK 5a   | {{2156 °F; 1180 °C}} |
+| SK 6a   | {{2192 °F; 1200 °C}} |
+| SK 7    | {{2246 °F; 1230 °C}} |
+| SK 8    | {{2282 °F; 1250 °C}} |
+| SK 9    | {{2336 °F; 1280 °C}} |
+| SK 10   | {{2372 °F; 1300 °C}} |
+| SK 11   | {{2408 °F; 1320 °C}} |
+| SK 12   | {{2462 °F; 1350 °C}} |
+| SK 13   | {{2516 °F; 1380 °C}} |
+| SK 14   | {{2570 °F; 1410 °C}} |
+| SK 15   | {{2615 °F; 1435 °C}} |
+| SK 16   | {{2660 °F; 1460 °C}} |
+| SK 17   | {{2696 °F; 1480 °C}} |
+| SK 18   | {{2732 °F; 1500 °C}} |
+| SK 19   | {{2768 °F; 1520 °C}} |
+| SK 20   | {{2786 °F; 1530 °C}} |
 
-Every figure is nominal (JIS): the temperature the standard gives for the cone, as printed in Yuko Trading's table. The table does not print a heating rate. The standard gives reference temperatures. At a potter's rate of about 100 °C/h, Kyoto's municipal institute measured its own Kyoto cones bending 47–79 °C cooler than the JIS figure for the same number; we found no such measurements for SK cones to JIS. Set a witness cone and compare.
+모든 수치는 공칭(JIS)입니다. Yuko Trading의 표에 인쇄된 대로, 규격이 그 콘에 대해 제시하는 온도입니다. 이 표에는 승온 속도가 인쇄되어 있지 않습니다. 규격은 기준 온도를 제시합니다. 교토시의 공업 연구 기관은 도예가의 속도인 약 100 °C/h에서 자체 교토 콘이 같은 번호의 JIS 수치보다 47~79 °C 저온에서 휘는 것을 측정했습니다. JIS에 따른 SK 콘에 대해서는 그런 측정을 찾지 못했습니다. 확인용 콘을 놓고 비교해 보세요.
 
-### Kyoto cones
+### 교토 콘
 
-Kyoto cones (京都ゼーゲル), made by Kyoto's municipal institute, are no longer made: news reports say the institute ended production at the close of fiscal 2009. They carry the same numbers as SK cones to JIS but bend cooler: a Kyoto cone bends at about the temperature of the SK cone to JIS two or three numbers lower. A recipe from Kyoto that says "SK 8" may mean a Kyoto cone. The institute has published advice for potters moving from Kyoto cones to Orton cones, and substitutes Orton cone 10 for its own Kyoto SK 12. That is the institute's choice from its own measurements: it bent Kyoto cones and Orton cones in the same kiln at 100 °C/h, and Kyoto SK 12 (1290 °C) bent where Orton 10 (1290 °C) did. In the same table Kyoto SK 8 (1198 °C) bent near Orton 5 (1207 °C), and Kyoto SK 10 (1232 °C) where Orton 7 (1232 °C) did. Glazecalc uses this table, not the Orton chart at 60 °C/h, when it shows an SK cone beside an Orton cone, and says each match is approximate.
+교토 콘(교토 제게르)은 교토시의 공업 연구 기관이 만들었지만 더 이상 생산되지 않습니다. 보도에 따르면 이 기관은 2009 회계연도 말에 생산을 마쳤습니다. JIS에 따른 SK 콘과 번호는 같지만 더 저온에서 휩니다. 교토 콘은 JIS에 따른 SK 콘 중 두세 단계 저온의 번호와 비슷한 온도에서 휩니다. 교토에서 온 레시피의 “SK 8”은 교토 콘을 뜻할 수 있습니다. 이 기관은 교토 콘에서 오튼 콘으로 바꾸는 도예가를 위한 안내를 발표했으며, 자체 교토 콘 SK 12 대신 오튼 콘 10을 쓰도록 합니다. 이는 이 기관이 자체 측정한 결과에 따른 선택입니다. 이 기관은 교토 콘과 오튼 콘을 같은 가마에서 100 °C/h로 휘게 했고, 교토 SK 12(1290 °C)는 오튼 10(1290 °C)이 휜 곳에서 휘었습니다. 같은 표에서 교토 SK 8(1198 °C)은 오튼 5(1207 °C) 가까이에서, 교토 SK 10(1232 °C)은 오튼 7(1232 °C)이 휜 곳에서 휘었습니다. Glazecalc는 SK 콘을 오튼 콘 옆에 보여 줄 때 60 °C/h 기준의 오튼 온도표가 아니라 이 표를 쓰며, 각 대응이 근삿값이라고 밝힙니다.
 
-### Orton cones sold in Japan
+### 일본에서 파는 오튼 콘
 
-Orton self-supporting cones are sold in Japan under the name 立つゼーゲル ("standing Seger"), because they need no plaque or stand. They are Orton cones, with Orton's numbers and Orton's chart (above): fire to one only by its Orton number, and keep SK and Orton cones in separate packs, never in the same one.
+일본에서는 Orton 셀프 서포트 콘을 “서 있는 제게르”라는 이름으로 팝니다. 콘 받침대나 스탠드가 필요 없기 때문입니다. 이 콘은 오튼 콘이며, 번호도 온도표(위)도 Orton의 것입니다. 오튼 번호로만 소성을 정하고, SK 콘과 오튼 콘은 서로 다른 콘 세트에 두며 같은 콘 세트에는 절대 함께 넣지 마세요.
 
-### Sources for SK cones
+### SK 콘 출처
 
-- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (the SK table, checked 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
-- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (in force, reconfirmed 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
-- [JSA: JIS R 2204:1999, 耐火物及び耐火物原料の耐火度試験方法 (in force, reconfirmed 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+2204:1999)
-- [kikakurui.com: a transcription of JIS R 2204:1999, where clause 5 a) sets the cones (read 2026-10-19)](https://kikakurui.com/r2/R2204-1999-01.html)
-- [Kyoto Municipal Institute of Industrial Technology and Culture: points to note when moving from Kyoto cones to Orton cones](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
+- [Yuko Trading (Yūkō Shōji Kabushikigaisha): Hyōjun yōtō ondo hyō (SK 표, 2026년 10월 14일 확인)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
+- [JSA: JIS R 8101:1999, Taikado shiken'yō hyōjun kōn (현행, 2023년 10월 20일 재확인)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
+- [JSA: JIS R 2204:1999, Taikabutsu oyobi taikabutsu genryō no taikado shiken hōhō (현행, 2023년 10월 20일 재확인)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+2204:1999)
+- [kikakurui.com: JIS R 2204:1999를 옮겨 적은 자료, 콘 놓는 법은 5 a)항(2026년 10월 19일 읽음)](https://kikakurui.com/r2/R2204-1999-01.html)
+- [Kyoto Municipal Institute of Industrial Technology and Culture: 교토 콘에서 오튼 콘으로 바꿀 때 유의할 점](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
 
 :::
 
@@ -606,22 +606,22 @@ Label: 수동 가마의 출발점
 
 **온도계**(파이로미터)는 가마 벽을 지나는 열 센서인 **열전대**에서 값을 읽는 온도 표시기입니다. 가마가 얼마나 빠르게 오르는지 보여 주므로 콘 온도표에서 알맞은 열을 고를 수 있습니다. 하지만 기물이 아니라 벽 근처의 값을 읽고, 값이 틀어지기도 합니다. L&L은 K형 열전대가 오튼 콘 6 소성을 거듭하면 {{25 °F; 14 °C}}를 초과해 틀어질 수 있으며 이는 “콘 한 개를 넘는 차이”인 반면, 셀프 서포트 콘의 편차는 {{4 °F; 2 °C}} 이하라고 말합니다. Orton은 온도계를 가끔 다시 보정해야 하며, 이를 확인하는 방법이 콘이라고 말합니다.
 
-## Venting, peeking and safety {#venting lang=en}
+## 배기, 들여다보기, 안전 {#venting}
 
-### Venting
+### 배기
 
-Early in a firing, clay and glaze give off water vapor and fumes, including carbon monoxide, and glazes can give off toxic fumes later in the firing too. L&L calls venting them "essential". With no vent system, that means the lid propped and the peepholes open in the early stages, as in the procedures above; slowing the heating during this time also helps the carbon burn out. In a kiln without a vent, Dawson, who made the sitter, also says to leave the top peephole open for the whole firing: the venting "will reduce deterioration of the kiln's metal parts and increase the life of the tube assembly". A **downdraft vent** (a powered vent fitted to the kiln) changes this. It does the venting, so Orton says the lid and peepholes stay closed for the whole firing except to check the cones, and L&L says to leave the vent on and plug the peepholes.
+소성 초기에 점토와 유약에서 수증기와 가스가 나오며, 여기에는 일산화탄소도 들어 있습니다. 소성 후반에도 유약에서 유독 가스가 나올 수 있습니다. L&L은 이를 배기하는 것이 “필수”라고 말합니다. 배기 장치가 없으면 초반에는 위의 순서처럼 뚜껑을 살짝 열고 불구멍을 열어 두라는 뜻이며, 이 동안 가열을 늦추면 탄소가 타서 빠지는 데도 도움이 됩니다. 배기 장치가 없는 가마에서는 킬른 시터를 만든 Dawson도 소성 내내 위쪽 불구멍을 열어 두라고 합니다. 배기하면 “가마 금속 부품의 열화가 줄고 튜브 어셈블리의 수명이 늘어난다”는 이유입니다. **하향식 배기 장치**(가마에 다는 동력식 배기 장치)는 이 상황을 바꿉니다. 배기를 장치가 맡으므로, Orton은 콘을 확인할 때를 빼고는 소성 내내 뚜껑과 불구멍을 닫아 두라고 하고, L&L은 배기 장치를 켜 둔 채 불구멍을 막으라고 합니다.
 
-For venting the room, and for carbon monoxide alarms, see [Safe mixing and ventilation](/guides/safe-mixing) and [Don't poison your family](/guides/home-safety).
+실내 환기와 일산화탄소 경보기는 《[안전한 유약 배합과 환기](/guides/safe-mixing)》와 《[가족을 중독에서 지키세요](/guides/home-safety)》를 보세요.
 
-### While the kiln is firing
+### 가마가 소성 중일 때
 
-- Look through a peephole only with IR-rated shade 3 welding glasses; sunglasses are not enough. Skutt advises twisting the plugs into place so they do not fall out.
-- Stay nearby and check the kiln while it fires, above all near its expected finishing time; a sitter is not a fail-safe. Fire only when an adult will be home and awake through the whole firing.
-- Never fire on or near anything that burns, such as a wood floor or carpet.
-- Keep the clearances in your manual. Published figures range from 12 in (30 cm) to 3 ft (91 cm); where the manual is silent, 18 in (46 cm) from walls and 3 ft (91 cm) from anything that burns is the safest choice.
-- Keep the space around the sitter's weight clear so it can drop.
-- When the firing ends, turn the switches off and turn off the breaker as well.
+- 불구멍은 적외선을 막는 차광도 3 용접용 보안경을 쓰고서만 들여다보세요. 선글라스로는 충분하지 않습니다. Skutt는 마개가 빠지지 않도록 돌려서 끼우라고 조언합니다.
+- 소성하는 동안, 특히 예상 종료 시각 무렵에는 가까이에 머물면서 가마를 확인하세요. 킬른 시터는 고장이 나도 안전하게 전원을 차단하는 장치가 아닙니다. 소성하는 내내 어른이 집에 있고 깨어 있을 때만 소성하세요.
+- 나무 바닥이나 카펫처럼 불에 타는 것 위나 근처에서는 절대 소성하지 마세요.
+- 사용 설명서에 나온 이격 거리를 지키세요. 공개된 수치는 12인치(30 cm)에서 3피트(91 cm)까지 다양합니다. 사용 설명서에 없다면 벽에서 18인치(46 cm), 불에 타는 것에서 3피트(91 cm) 떨어뜨리는 것이 가장 안전한 선택입니다.
+- 웨이트가 떨어질 수 있도록 킬른 시터의 웨이트 주변 공간을 비워 두세요.
+- 소성이 끝나면 스위치를 끄고 차단기도 내리세요.
 
 ## 냉각과 내임 {#cooling}
 

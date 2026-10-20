@@ -270,6 +270,22 @@
         "saved": "Gespeichert: Datumsangaben werden in japanischen Ären angezeigt."
       }
     },
+    "digits": {
+      "legend": "Ziffern",
+      "help": "Die Ziffern, in denen Zahlen angezeigt werden. Manche Sprachen haben eigene, etwa Arabisch, Bengalisch und Hindi, und Ihr Standort entscheidet, welche üblich sind. Sie können Zahlen mit beiden eingeben.",
+      "auto": {
+        "label": "Wie an Ihrem Standort üblich",
+        "saved": "Gespeichert: Ziffern wie an Ihrem Standort üblich."
+      },
+      "western": {
+        "label": "Westliche Ziffern, 0–9",
+        "saved": "Gespeichert: Zahlen werden mit den Ziffern 0–9 angezeigt."
+      },
+      "native": {
+        "label": "Die eigenen Ziffern der Sprache, sofern sie welche hat",
+        "saved": "Gespeichert: Zahlen werden in den eigenen Ziffern der Sprache angezeigt, sofern sie welche hat."
+      }
+    },
     "decimalMark": {
       "legend": "Eingabe von Mengen",
       "either": {
