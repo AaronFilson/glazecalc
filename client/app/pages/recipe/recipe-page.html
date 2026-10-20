@@ -79,6 +79,7 @@
     <nav class="recipe-tools" [attr.aria-label]="t('recipe.page.toolsLabel')">
       <a routerLink="/import">{{ t('recipe.page.pasteIn') }}</a>
       <a routerLink="/blends">{{ t('recipe.page.blends') }}</a>
+      <a routerLink="/solve">{{ t('recipe.page.solve') }}</a>
     </nav>
 
     <!-- A potter's collection, first: each name opens it in the editor below; the rest is under More. -->
@@ -772,6 +773,9 @@
                 <h4 id="shelf-heading" tabindex="-1">{{ t('recipe.page.shelfHeading') }}</h4>
                 <gc-own-limits-note />
                 <p>{{ t('recipe.page.shelfIntro') }}</p>
+                <p class="small">
+                  <gc-rich [text]="t('recipe.page.shelfSolve')" [links]="{ solve: '/solve' }" />
+                </p>
                 @defer (when shelfLoaded(); prefetch on immediate) {
                   @if (shelfLoaded()) {
                     <div class="recipe-swap-buttons">

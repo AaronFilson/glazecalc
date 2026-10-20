@@ -180,6 +180,7 @@
     "pasteIn": "Paste in recipes",
     "blends": "Blends for test tiles",
     "solve": "Solve for a target",
+    "handedOpened": "Opened \"{title}\" as a new recipe, not saved yet.",
     "shelfSolve": "Have a unity formula or analysis to aim for instead? <solve>Solve for a target</solve>.",
     "blend": "Blend",
     "blendName": "Make a blend from {title}",
@@ -593,6 +594,11 @@
       "close": "Close",
       "off": "Off",
       "far": "Far"
+    },
+    "overall": {
+      "close": "close",
+      "fair": "fair",
+      "poor": "poor"
     },
     "knao": "KNaO (potash and soda together)",
     "scaledNote": "The target's fluxes added up to {sum}; it was scaled to 1.",

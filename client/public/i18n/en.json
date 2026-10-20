@@ -21,6 +21,7 @@
     "recipe": "Recipes - Glazecalc",
     "import": "Paste in recipes - Glazecalc",
     "blends": "Blends for test tiles - Glazecalc",
+    "solve": "Solve for a target - Glazecalc",
     "material": "Materials - Glazecalc",
     "additive": "Additives - Glazecalc",
     "firingLogs": "Firing logs - Glazecalc",
