@@ -6,7 +6,9 @@
     "glazingBasics": "Mázazás az alapoktól - Glazecalc",
     "makingAGlaze": "Mázkészítés - Glazecalc",
     "safeMixing": "Biztonságos keverés és szellőzés - Glazecalc",
+    "homeSafety": "Mázbiztonság otthon: gyerekek, háziállatok és a kemence - Glazecalc",
     "firing": "Égetés egyszerű kemencében - Glazecalc",
+    "learnWithJohnBritt": "Tanuljon John Britt ingyenes mázkurzusával - Glazecalc",
     "about": "Névjegy - Glazecalc",
     "privacy": "Adatvédelem - Glazecalc",
     "terms": "Felhasználási feltételek - Glazecalc",
@@ -25,9 +27,12 @@
     "notes": "Jegyzetek - Glazecalc",
     "trash": "Lomtár - Glazecalc",
     "account": "Fiókja és beállításai - Glazecalc",
+    "apps": "Csatlakoztatott alkalmazások - Glazecalc",
+    "connect": "Alkalmazás csatlakoztatása - Glazecalc",
     "notFound": "Az oldal nem található - Glazecalc",
     "shared": "Megosztott recept - Glazecalc",
-    "assistants": "A Glazecalc használata az MI-asszisztensből - Glazecalc"
+    "assistants": "A Glazecalc használata az MI-asszisztensből - Glazecalc",
+    "confirm": "Módosítás jóváhagyása - Glazecalc"
   },
   "nav": {
     "skip": "Ugrás a tartalomhoz",
@@ -90,6 +95,7 @@
     "safeMixing": "Hogyan tartsa távol a mázport a tüdejétől és a kemence füstjét otthonától: biztonságos szokások, légzésvédők, takarítás, szellőzés, kockázatos nyersanyagok.",
     "homeSafety": "Teendők, ha gyermek vagy háziállat máznyersanyagot nyel le; a nyersanyagok, a por, a kemence és a kézműves edények biztonságos kezelése a család körül.",
     "firing": "Elektromos kemence égetése: a gúlák kiválasztása, elhelyezése és leolvasása, közzétett égetési programok zsengéléshez és mázas égetéshez, gúlatáblázattal.",
+    "learnWithJohnBritt": "Kísérő John Britt ingyenes online mázkurzusához: videói egységenként, a Glazecalc olvasnivaló útmutatóival és a kalkulátorban kipróbálható feladatokkal.",
     "advice": "A Glazecalc gyakorlati tanácsai a keveréshez, a mázazáshoz és az égetéshez, mellettük saját tanácsaival. Ingyenes fazekasoknak és keramikusoknak.",
     "about": "A Glazecalc ingyenes, nyílt forráskódú mázkémiai kalkulátor és műhelyfüzet. Nézze meg, hogyan számítja ki a Seger-képletet (UMF), és hogyan épül fel.",
     "privacy": "Hogyan kezeli a Glazecalc az adatait: nincs reklám, nincs analitika, nincs követés, és semmit nem ad el. Mit őriz meg, miért, és hogyan élhet a jogaival.",

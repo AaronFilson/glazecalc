@@ -566,6 +566,7 @@
       "hesselberth-roy": "John Hesselberth 和 Ron Roy 为功能性炻器和瓷器的稳定釉推荐的限值，适用于 Orton 测温锥 6 号和 10 号。他们只用一份很短的原料清单，所以这个限值集没有钡或锂的范围，Orton 测温锥 10 号时也没有锌的范围。",
       "glazecalc": "应用在替换原料时会发出提醒的数值：硼、氧化铝、氧化钠和氧化钾，以及低温烧成时的氧化镁。"
     },
+    "firing": "限值适用的烧成",
     "firingUnknown": "未选择",
     "bands": {
       "low": "低温烧成，Orton 测温锥 06～02 号",
@@ -595,6 +596,8 @@
     "saveFailed": "无法把您选择的限值集保存到您的账户，所以仍在使用之前的限值集。",
     "ownLimits": "这些建议使用 Glazecalc 自己的限值，而不是{name}。",
     "firingFromBlock": "来自配方的烧成（{bands}）",
+    "firingFromBlockText": "按配方的烧成：{bands}",
+    "chooseAnother": "另选",
     "bothBands": "配方的烧成跨越{bands}，所以两端都会并排检查：同一种釉在两端的表现很少相同。",
     "fromFiring": "这些数值针对配方的烧成：{band}。要检查其他烧成，请在上方选择。"
   },
@@ -800,6 +803,18 @@
     "saveHelp": "在上面的图中勾选要保留的试片。每一片都保存为一个以百分比表示的配方。",
     "nameLabel": "保存的试片的名称",
     "defaultName": "{titles}混配",
+    "chemistry": {
+      "heading": "每片试片的化学",
+      "help": "根据配方算出，仅供参考。烧成后的试片会告诉您实际情况。",
+      "firing": "注意事项和测温锥匹配按配方 {letter} 的烧成判断。",
+      "tile": "试片",
+      "cautions": "注意事项",
+      "coneFit": "测温锥匹配",
+      "fits": "未见偏离",
+      "cooler": "看起来偏低温",
+      "hotter": "看起来偏高温",
+      "skipped": "未判断"
+    },
     "chooseAll": "选择所有试片",
     "chooseNone": "全部不选",
     "save": "{count, plural, =0 {保存所选的试片} other {保存 # 片试片}}",
@@ -889,6 +904,8 @@
   },
   "firing": {
     "heading": "烧成",
+    "summary": "烧成：{what}",
+    "summaryNone": "烧成：未设置",
     "whatIsCone": "锥号是什么意思？",
     "scale": "体系",
     "scales": {

@@ -566,6 +566,7 @@
       "hesselberth-roy": "Johno Hesselbertho ir Rono Roy rekomenduojamos stabilių glazūrų ribos funkcinėms akmens masės ir porceliano gaminiams, esant piroskopams 6 ir 10. Jie apsiriboja trumpu žaliavų sąrašu, todėl rinkinyje nėra bario ar ličio intervalo, taip pat cinko intervalo esant piroskopui 10.",
       "glazecalc": "Skaičiai, prie kurių programa įspėja, kai keičia žaliavas: boras, aliuminio oksidas, natris ir kalis, o žemoje temperatūroje – magnis."
     },
+    "firing": "Ribos degimui",
     "firingUnknown": "Nepasirinkta",
     "bands": {
       "low": "Žemas degimas, piroskopai 06–02",
@@ -595,6 +596,8 @@
     "saveFailed": "Jūsų ribų rinkinio pasirinkimo įrašyti į paskyrą nepavyko, todėl vis dar naudojamas ankstesnis ribų rinkinys.",
     "ownLimits": "Šie pasiūlymai naudoja Glazecalc savąsias ribas, o ne ribų rinkinį {name}.",
     "firingFromBlock": "Pagal recepto degimą ({bands})",
+    "firingFromBlockText": "Pagal recepto degimą: {bands}",
+    "chooseAnother": "Pasirinkti kitą",
     "bothBands": "Recepto degimas apima {bands}, todėl kiekvienas tikrinamas greta: glazūra retai elgiasi vienodai abiejuose galuose.",
     "fromFiring": "Skaičiai skirti recepto degimui: {band}. Norėdami patikrinti kitą, aukščiau pasirinkite degimą."
   },
@@ -800,6 +803,18 @@
     "saveHelp": "Pažymėkite bandinius, kuriuos norite pasilikti, aukščiau esančiame brėžinyje. Kiekvienas įrašomas kaip receptas procentais.",
     "nameLabel": "Įrašomų bandinių pavadinimas",
     "defaultName": "{titles} mišinys",
+    "chemistry": {
+      "heading": "Chemija kiekvienam bandiniui",
+      "help": "Apskaičiuota pagal receptus, kaip orientyras. Kas iš tikrųjų nutinka, parodo išdegti bandiniai.",
+      "firing": "Įspėjimai ir atitiktis piroskopui atitinka recepto {letter} degimą.",
+      "tile": "Bandinys",
+      "cautions": "Įspėjimai",
+      "coneFit": "Atitiktis piroskopui",
+      "fits": "Niekas neprieštarauja",
+      "cooler": "Atrodo vėsesnė",
+      "hotter": "Atrodo karštesnė",
+      "skipped": "Nevertinta"
+    },
     "chooseAll": "Pasirinkti visus bandinius",
     "chooseNone": "Nepasirinkti nė vieno",
     "save": "{count, plural, =0 {Įrašyti pasirinktus bandinius} one {Įrašyti # bandinį} few {Įrašyti # bandinius} many {Įrašyti # bandinio} other {Įrašyti # bandinių}}",
@@ -889,6 +904,8 @@
   },
   "firing": {
     "heading": "Degimas",
+    "summary": "Degimas: {what}",
+    "summaryNone": "Degimas: nenustatytas",
     "whatIsCone": "Ką reiškia piroskopas?",
     "scale": "Skalė",
     "scales": {

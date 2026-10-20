@@ -566,6 +566,7 @@
       "hesselberth-roy": "Các giới hạn được John Hesselberth và Ron Roy khuyến nghị cho men ổn định trên đồ gốm sành và sứ dùng để đựng thực phẩm, ở côn 6 và côn 10. Họ giữ một danh sách nguyên liệu ngắn, nên bộ này không có khoảng cho bari hay liti, cũng như cho kẽm ở côn 10.",
       "glazecalc": "Các số liệu mà ứng dụng cảnh báo khi hoán đổi nguyên liệu: bo, alumina, natri và kali, và magie oxit ở nhiệt độ thấp."
     },
+    "firing": "Giới hạn cho",
     "firingUnknown": "Chưa chọn",
     "bands": {
       "low": "Nhiệt độ thấp, côn 06–02",
@@ -595,6 +596,8 @@
     "saveFailed": "Không thể lưu lựa chọn bộ giới hạn của bạn vào tài khoản, nên bộ giới hạn trước đó vẫn đang được dùng.",
     "ownLimits": "Các gợi ý này dùng các giới hạn riêng của Glazecalc, không phải {name}.",
     "firingFromBlock": "Theo lần nung của công thức ({bands})",
+    "firingFromBlockText": "Theo mức nung của công thức men: {bands}",
+    "chooseAnother": "Chọn mức khác",
     "bothBands": "Lần nung của công thức trải dài {bands}, nên mỗi khoảng được kiểm tra, đặt cạnh nhau: một loại men hiếm khi cư xử giống nhau ở cả hai đầu.",
     "fromFiring": "Các số liệu dành cho lần nung của công thức: {band}. Hãy chọn một lần nung ở trên để kiểm tra lần nung khác."
   },
@@ -800,6 +803,18 @@
     "saveHelp": "Đánh dấu các viên bạn muốn giữ, trong hình vẽ ở trên. Mỗi viên được lưu thành một công thức men theo phần trăm.",
     "nameLabel": "Tên cho các viên đã lưu",
     "defaultName": "Pha trộn {titles}",
+    "chemistry": {
+      "heading": "Hóa học của từng viên mẫu thử",
+      "help": "Tính từ các công thức men, để tham khảo. Các viên mẫu thử đã nung cho bạn biết điều gì thực sự xảy ra.",
+      "firing": "Cảnh báo và độ hợp côn theo mức nung của công thức men {letter}.",
+      "tile": "Mẫu thử",
+      "cautions": "Cảnh báo",
+      "coneFit": "Độ hợp côn",
+      "fits": "Không có dấu hiệu lệch",
+      "cooler": "Có vẻ nguội hơn",
+      "hotter": "Có vẻ nóng hơn",
+      "skipped": "Không đánh giá"
+    },
     "chooseAll": "Chọn mọi viên",
     "chooseNone": "Không chọn viên nào",
     "save": "{count, plural, =0 {Lưu các viên đã chọn} other {Lưu # viên}}",
@@ -889,6 +904,8 @@
   },
   "firing": {
     "heading": "Nung",
+    "summary": "Nung: {what}",
+    "summaryNone": "Nung: chưa đặt",
     "whatIsCone": "Côn nghĩa là gì?",
     "scale": "Thang",
     "scales": {

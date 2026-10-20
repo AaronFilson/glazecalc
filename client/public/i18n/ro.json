@@ -6,7 +6,9 @@
     "glazingBasics": "Bazele glazurării – Glazecalc",
     "makingAGlaze": "Cum se prepară o glazură – Glazecalc",
     "safeMixing": "Prepararea în siguranță și ventilația – Glazecalc",
+    "homeSafety": "Siguranța glazurilor acasă: copii, animale de companie și cuptorul – Glazecalc",
     "firing": "Arderea într-un cuptor simplu – Glazecalc",
+    "learnWithJohnBritt": "Învățați cu cursul gratuit de glazuri al lui John Britt – Glazecalc",
     "about": "Despre aplicație – Glazecalc",
     "privacy": "Confidențialitate – Glazecalc",
     "terms": "Condiții de utilizare – Glazecalc",
@@ -25,9 +27,12 @@
     "notes": "Notițe – Glazecalc",
     "trash": "Coșul de reciclare – Glazecalc",
     "account": "Contul și setările – Glazecalc",
+    "apps": "Aplicații conectate – Glazecalc",
+    "connect": "Conectați o aplicație – Glazecalc",
     "notFound": "Pagina nu a fost găsită – Glazecalc",
     "shared": "Rețetă partajată - Glazecalc",
-    "assistants": "Folosiți Glazecalc din asistentul dumneavoastră AI - Glazecalc"
+    "assistants": "Folosiți Glazecalc din asistentul dumneavoastră AI - Glazecalc",
+    "confirm": "Aprobați o modificare – Glazecalc"
   },
   "nav": {
     "skip": "Treceți la conținut",
@@ -90,6 +95,7 @@
     "safeMixing": "Cum feriți plămânii de praful de glazură și casa de gazele cuptorului: obiceiuri sigure, măști respiratorii, curățare, ventilație și materii prime riscante.",
     "homeSafety": "Ce faceți dacă un copil sau un animal înghite o materie primă de glazură și cum feriți familia de riscuri: materii prime, praf, cuptor, piese făcute de mână.",
     "firing": "Cum ardeți într-un cuptor electric: alegerea, așezarea și citirea conurilor, programe publicate pentru arderea biscuit și de glazură, cu tabelul conurilor.",
+    "learnWithJohnBritt": "Însoțitor pentru cursul online gratuit de glazuri al lui John Britt: videoclipurile lui, lecție cu lecție, cu ghiduri Glazecalc și exerciții în calculator.",
     "advice": "Sfaturi practice despre prepararea glazurilor ceramice, glazurare și ardere, de la Glazecalc, plus propriile sfaturi. Gratuit, pentru olari și ceramiști.",
     "about": "Glazecalc: calculator și caiet gratuite, open source, pentru chimia glazurilor ceramice. Aflați cum calculează formula Seger (UMF) și cum este construit.",
     "privacy": "Cum tratează Glazecalc datele: fără reclame, instrumente de analiză sau urmărire, și nimic nu se vinde. Ce se păstrează, de ce și cum vă exercitați drepturile.",

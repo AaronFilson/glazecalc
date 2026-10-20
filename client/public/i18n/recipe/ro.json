@@ -566,6 +566,7 @@
       "hesselberth-roy": "Limitele recomandate de John Hesselberth și Ron Roy pentru glazuri stabile pe gresie și porțelan funcționale, la conul 6 și conul 10. Se limitează la o listă scurtă de materii prime, așa că setul nu are interval pentru bariu sau litiu, nici pentru zinc la conul 10.",
       "glazecalc": "Cifrele la care aplicația avertizează când schimbă materii prime: bor, alumină, sodă și potasă, și magnezie la temperatură joasă."
     },
+    "firing": "Limite pentru",
     "firingUnknown": "Nealeasă",
     "bands": {
       "low": "Temperatură joasă, conul 06–02",
@@ -595,6 +596,8 @@
     "saveFailed": "Alegerea setului de limite nu a putut fi salvată în contul dumneavoastră, așa că rămâne în uz setul de dinainte.",
     "ownLimits": "Aceste sugestii folosesc limitele proprii ale Glazecalc, nu cele ale {name}.",
     "firingFromBlock": "Din arderea rețetei ({bands})",
+    "firingFromBlockText": "Din arderea rețetei: {bands}",
+    "chooseAnother": "Alegeți alta",
     "bothBands": "Arderea rețetei acoperă {bands}, așa că fiecare este verificată, una lângă alta: o glazură rareori se comportă la fel la ambele capete.",
     "fromFiring": "Cifrele sunt pentru arderea rețetei: {band}. Alegeți mai sus o ardere pentru a verifica alta."
   },
@@ -800,6 +803,18 @@
     "saveHelp": "Bifați plăcuțele pe care vreți să le păstrați, în desenul de mai sus. Fiecare se salvează ca o rețetă în procente.",
     "nameLabel": "Numele plăcuțelor salvate",
     "defaultName": "Amestec {titles}",
+    "chemistry": {
+      "heading": "Chimia fiecărei plăcuțe",
+      "help": "Calculată din rețete, orientativ. Plăcuțele arse arată ce se întâmplă de fapt.",
+      "firing": "Avertismentele și potrivirea cu conul urmează arderea rețetei {letter}.",
+      "tile": "Plăcuța",
+      "cautions": "Avertismente",
+      "coneFit": "Potrivirea cu conul",
+      "fits": "Nimic împotrivă",
+      "cooler": "Pare de temperatură mai joasă",
+      "hotter": "Pare de temperatură mai înaltă",
+      "skipped": "Neevaluat"
+    },
     "chooseAll": "Alegeți toate plăcuțele",
     "chooseNone": "Nu alegeți niciuna",
     "save": "{count, plural, =0 {Salvați plăcuțele alese} one {Salvați # plăcuță} few {Salvați # plăcuțe} other {Salvați # de plăcuțe}}",
@@ -889,6 +904,8 @@
   },
   "firing": {
     "heading": "Ardere",
+    "summary": "Ardere: {what}",
+    "summaryNone": "Ardere: nesetată",
     "whatIsCone": "Ce înseamnă conul?",
     "scale": "Scara",
     "scales": {

@@ -27,13 +27,19 @@
       "text": "Prašina, zaštitne maske, čišćenje, sirovine koje traže najviše opreza i odzračivanje peći."
     },
     "homeSafety": {
+      "title": "Sigurnost glazura kod kuće: djeca, kućni ljubimci i peć",
       "text": "Keramika kod kuće uz djecu i kućne ljubimce: čuvanje, prašina, peć i što učiniti ako se nešto proguta."
     },
     "firing": {
       "title": "Pečenje u jednostavnoj peći",
       "text": "Stošci, Kiln-Sitter i ručne sklopke, s programima za biskvitno i glazurno pečenje."
+    },
+    "learnWithJohnBritt": {
+      "title": "Učite uz besplatni tečaj glazura Johna Britta",
+      "text": "Njegov besplatni videotečaj na YouTubeu, cjelinu po cjelinu, uz naše vodiče za čitanje i vježbe u Glazecalcu. Na engleskom."
     }
   },
+  "more": "Još vodiča",
   "contents": "Na ovoj stranici",
   "poison": {
     "numbersFor": "Brojevi za",

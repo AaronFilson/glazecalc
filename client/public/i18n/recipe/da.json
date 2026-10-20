@@ -566,6 +566,7 @@
       "hesselberth-roy": "John Hesselberths og Ron Roys anbefalede grænser for stabile glasurer på funktionelt stentøj og porcelæn, ved kegle 6 og kegle 10. De holder sig til en kort liste af råvarer, så sættet har intet interval for barium eller lithium, og ikke for zink ved kegle 10.",
       "glazecalc": "De tal, som appen advarer ved, når den bytter råvarer: bor, aluminiumoxid, natrium og kalium, og magnesiumoxid ved lav temperatur."
     },
+    "firing": "Grænser for",
     "firingUnknown": "Ikke valgt",
     "bands": {
       "low": "Lav temperatur, kegle 06–02",
@@ -595,6 +596,8 @@
     "saveFailed": "Valget af grænsesæt kunne ikke gemmes i kontoen, så det tidligere grænsesæt er stadig det, der bruges.",
     "ownLimits": "Disse forslag bruger Glazecalcs egne grænser, ikke {name}.",
     "firingFromBlock": "Fra opskriftens brænding ({bands})",
+    "firingFromBlockText": "Fra opskriftens brænding: {bands}",
+    "chooseAnother": "Vælg en anden",
     "bothBands": "Opskriftens brænding omfatter {bands}, så hver kontrolleres, side om side: en glasur opfører sig sjældent ens i begge ender.",
     "fromFiring": "Tallene gælder opskriftens brænding: {band}. Vælg en brænding ovenfor for at kontrollere en anden."
   },
@@ -800,6 +803,18 @@
     "saveHelp": "Sæt kryds ved de brikker, der skal beholdes, i tegningen ovenfor. Hver gemmes som en opskrift i procent.",
     "nameLabel": "Navn til de gemte brikker",
     "defaultName": "Blanding af {titles}",
+    "chemistry": {
+      "heading": "Kemi pr. brik",
+      "help": "Regnet ud fra opskrifterne, som en vejledning. De brændte brikker viser, hvad der virkelig sker.",
+      "firing": "Advarsler og keglepasning følger brændingen for opskrift {letter}.",
+      "tile": "Brik",
+      "cautions": "Advarsler",
+      "coneFit": "Keglepasning",
+      "fits": "Intet taler imod",
+      "cooler": "Ligner køligere brænding",
+      "hotter": "Ligner varmere brænding",
+      "skipped": "Ikke vurderet"
+    },
     "chooseAll": "Vælg alle brikker",
     "chooseNone": "Vælg ingen",
     "save": "{count, plural, =0 {Gem de valgte brikker} one {Gem # brik} other {Gem # brikker}}",
@@ -889,6 +904,8 @@
   },
   "firing": {
     "heading": "Brænding",
+    "summary": "Brænding: {what}",
+    "summaryNone": "Brænding: ikke angivet",
     "whatIsCone": "Hvad betyder kegle?",
     "scale": "Skala",
     "scales": {

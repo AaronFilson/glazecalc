@@ -27,13 +27,19 @@
       "text": "Deannach, maisc análaitheora, glanadh, na hábhair is mó a éilíonn cúram, agus an áith a aeráil."
     },
     "homeSafety": {
+      "title": "Sábháilteacht glónra sa bhaile: páistí, peataí agus an áith",
       "text": "Potaireacht sa bhaile le páistí agus peataí: stóráil, deannach, an áith, agus cad atá le déanamh má shlogtar rud éigin."
     },
     "firing": {
       "title": "Bácáil in áith shimplí",
       "text": "Cóin, an Kiln-Sitter agus lasca láimhe, le cláir bhácála don bhrioscbhácáil agus don bhácáil glónra."
+    },
+    "learnWithJohnBritt": {
+      "title": "Foghlaim le cúrsa glónra saor in aisce John Britt",
+      "text": "A chúrsa físeán saor in aisce ar YouTube, aonad ar aonad, lenár dtreoirleabhair le léamh agus cleachtaí le triail in Glazecalc. As Béarla."
     }
   },
+  "more": "Tuilleadh treoirleabhar",
   "contents": "Ar an leathanach seo",
   "poison": {
     "numbersFor": "Uimhreacha sa tír:",

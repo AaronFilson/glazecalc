@@ -27,13 +27,19 @@
       "text": "It-trab, ir-respiraturi, it-tindif, il-materjali li jeħtieġu l-akbar attenzjoni, u l-ventilazzjoni tal-forn."
     },
     "homeSafety": {
+      "title": "Is-sigurtà tal-glejż id-dar: it-tfal, l-annimali u l-forn",
       "text": "Iċ-ċeramika d-dar mat-tfal u l-annimali domestiċi: il-ħażna, it-trab, il-forn, u x’tagħmel jekk tinbela’ xi ħaġa."
     },
     "firing": {
       "title": "Il-ħami f’forn sempliċi",
       "text": "Il-koni, is-sitters u s-swiċċijiet li tħaddem bl-idejn, bi programmi għall-ħamjiet tal-bisque u tal-glejż."
+    },
+    "learnWithJohnBritt": {
+      "title": "Tgħallem mal-kors b’xejn tal-glejż ta’ John Britt",
+      "text": "Il-kors bil-vidjows b’xejn tiegħu fuq YouTube, unità b’unità, bil-gwidi tagħna x’taqra u eżerċizzji x’tipprova f’Glazecalc. Bl-Ingliż."
     }
   },
+  "more": "Aktar gwidi",
   "contents": "F’din il-paġna",
   "poison": {
     "numbersFor": "Numri:",

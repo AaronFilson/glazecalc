@@ -566,6 +566,7 @@
       "hesselberth-roy": "Preporučene granice Johna Hesselbertha i Rona Roya za stabilne glazure na funkcionalnoj kamenini i porculanu, na stošcu 6 i stošcu 10. Drže se kratkog popisa sirovina, pa skup nema raspon za barij ni litij, niti za cink na stošcu 10.",
       "glazecalc": "Vrijednosti pri kojima aplikacija upozorava kad zamjenjuje sirovine: bor, glinica, natrij i kalij te magnezij pri niskom pečenju."
     },
+    "firing": "Granice za",
     "firingUnknown": "Nije odabrano",
     "bands": {
       "low": "Nisko pečenje, stožac 06 – 02",
@@ -595,6 +596,8 @@
     "saveFailed": "Ne možemo spremiti vaš odabir skupa granica na vaš račun, pa se i dalje koristi prethodni skup.",
     "ownLimits": "Ovi prijedlozi koriste Glazecalcove vlastite granice, a ne skup {name}.",
     "firingFromBlock": "Iz pečenja recepta ({bands})",
+    "firingFromBlockText": "Iz pečenja recepta: {bands}",
+    "chooseAnother": "Odaberi drugo",
     "bothBands": "Pečenje recepta obuhvaća {bands}, pa se svaki raspon provjerava zasebno, jedan uz drugi: glazura se rijetko jednako ponaša na oba kraja.",
     "fromFiring": "Podaci se odnose na pečenje recepta: {band}. Odaberite pečenje iznad da biste provjerili drugo."
   },
@@ -800,6 +803,18 @@
     "saveHelp": "Označite pločice koje želite zadržati, na crtežu iznad. Svaka se sprema kao recept u postocima.",
     "nameLabel": "Naziv za spremljene pločice",
     "defaultName": "Mješavina {titles}",
+    "chemistry": {
+      "heading": "Kemija po pločici",
+      "help": "Izračunato iz recepata, kao smjernica. Pečene pločice pokazuju što se stvarno događa.",
+      "firing": "Upozorenja i podudaranje sa stošcem prate pečenje recepta {letter}.",
+      "tile": "Pločica",
+      "cautions": "Upozorenja",
+      "coneFit": "Podudaranje sa stošcem",
+      "fits": "Ništa ne govori protiv",
+      "cooler": "Izgleda hladnije",
+      "hotter": "Izgleda toplije",
+      "skipped": "Nije procijenjeno"
+    },
     "chooseAll": "Odaberi sve pločice",
     "chooseNone": "Poništi odabir",
     "save": "{count, plural, =0 {Spremi odabrane pločice} one {Spremi # pločicu} few {Spremi # pločice} other {Spremi # pločica}}",
@@ -889,6 +904,8 @@
   },
   "firing": {
     "heading": "Pečenje",
+    "summary": "Pečenje: {what}",
+    "summaryNone": "Pečenje: nije postavljeno",
     "whatIsCone": "Što znači stožac?",
     "scale": "Ljestvica",
     "scales": {

@@ -27,13 +27,19 @@
       "text": "Poeiras, máscaras de proteção respiratória, limpeza, as matérias-primas que exigem mais cuidado e a ventilação do forno."
     },
     "homeSafety": {
+      "title": "Segurança dos vidrados em casa: crianças, animais e o forno",
       "text": "Cerâmica em casa com crianças e animais de estimação: arrumação, poeiras, o forno e o que fazer se alguma coisa for engolida."
     },
     "firing": {
       "title": "Cozer num forno simples",
       "text": "Cones, kiln sitters e reguladores manuais, com curvas de cozedura para chacota e para vidrado."
+    },
+    "learnWithJohnBritt": {
+      "title": "Aprender com o curso gratuito de vidrados de John Britt",
+      "text": "O curso gratuito em vídeo dele no YouTube, unidade a unidade, com os nossos guias para ler e exercícios para fazer no Glazecalc. Em inglês."
     }
   },
+  "more": "Mais guias",
   "contents": "Nesta página",
   "poison": {
     "numbersFor": "Números para",

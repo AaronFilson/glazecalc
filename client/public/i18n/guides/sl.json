@@ -27,13 +27,19 @@
       "text": "Prah, zaščitne dihalne maske, čiščenje, surovine, ki zahtevajo največ previdnosti, in odzračevanje peči."
     },
     "homeSafety": {
+      "title": "Varnost pri glaziranju doma: otroci, hišni ljubljenčki in peč",
       "text": "Lončarstvo doma z otroki in hišnimi ljubljenčki: shranjevanje, prah, peč in kaj storiti, če kdo kaj pogoltne."
     },
     "firing": {
       "title": "Žganje v preprosti peči",
       "text": "Stožci, stikala Kiln-Sitter in ročna stikala ter programi za biskvitno in glazurno žganje."
+    },
+    "learnWithJohnBritt": {
+      "title": "Učite se z brezplačnim tečajem glazur Johna Britta",
+      "text": "Njegov brezplačni video tečaj na YouTubu, po enotah, z našimi vodniki za branje in vajami, ki jih preizkusite v Glazecalc. V angleščini."
     }
   },
+  "more": "Več vodnikov",
   "contents": "Na tej strani",
   "poison": {
     "numbersFor": "Številke za državo",

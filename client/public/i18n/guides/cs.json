@@ -27,13 +27,19 @@
       "text": "Prach, respirátory, úklid, suroviny, které vyžadují největší opatrnost, a větrání pece."
     },
     "homeSafety": {
+      "title": "Bezpečnost glazur doma: děti, domácí zvířata a pec",
       "text": "Keramika doma s dětmi a domácími zvířaty: skladování, prach, pec a co dělat, když dojde ke spolknutí."
     },
     "firing": {
       "title": "Výpal v jednoduché peci",
       "text": "Žároměrky, vypínače Kiln-Sitter a ruční přepínače, s vypalovacími křivkami pro přežah a glazurový výpal."
+    },
+    "learnWithJohnBritt": {
+      "title": "Učte se s bezplatným kurzem glazur Johna Britta",
+      "text": "Jeho bezplatný videokurz na YouTube, lekci po lekci, s našimi návody ke čtení a cvičeními v Glazecalc. V angličtině."
     }
   },
+  "more": "Další návody",
   "contents": "Na této stránce",
   "poison": {
     "numbersFor": "Telefonní čísla v zemi",

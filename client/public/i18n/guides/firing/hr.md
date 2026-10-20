@@ -281,33 +281,33 @@ Label: Prilagodba sljedećeg pečenja
 
 :::sk
 
-## Firing to SK cones {#sk-cones lang=en}
+## Pečenje na stošce SK {#sk-cones}
 
-SK cones are the pyrometric cones made to Japan's standard, JIS R 8101, and sold in Japan by dealers such as Yuko Trading (有恒商事). Like any cone, an SK cone measures heatwork, not temperature alone: it softens and bends over when the ware has had enough heat, and you read how far it bent. Witness cones, reading how far a cone has bent, and holds work for it as for any cone. This section names each cone's system, and never turns an SK number into another system's number: the numbers of different cone series are not interchangeable.
+Stošci SK pirometrijski su stošci izrađeni prema japanskoj normi JIS R 8101, a u Japanu ih prodaju trgovci kao što je Yuko Trading (有恒商事). Kao i svaki stožac, stožac SK mjeri toplinski učinak{{en: heatwork}}, a ne samo temperaturu: omekša i savije se kad predmeti prime dovoljno topline, a vi očitate koliko se savio. Kontrolni stošci{{en: witness cone}}, očitavanje koliko se stožac savio i zadržavanje{{en: hold}} vrijede za njega kao i za svaki stožac. Ovaj odjeljak za svaki stožac navodi njegov sustav i nikad ne pretvara broj SK u broj drugog sustava: brojevi različitih nizova stožaca nisu međusobno zamjenjivi.
 
 > [!NOTE]
-> Always write "SK" before the number. Many older Japanese recipes say only "SK 8" or "SK 9" without saying whose cone. Kyoto cones and SK cones to JIS carry the same numbers but bend at different temperatures (see Kyoto cones, below).
+> Uvijek pišite „SK” ispred broja. Mnogi stariji japanski recepti kažu samo „SK 8” ili „SK 9”, bez navođenja čiji je stožac. Kyotski stošci i stošci SK prema JIS-u nose iste brojeve, ali se savijaju pri različitim temperaturama (pogledajte odjeljak Kyotski stošci, niže).
 
-### The large cones
+### Veliki stošci
 
-The standard has two sizes. Large cones (大型コーン) are "mainly used for measuring the degree of firing" (焼度測定), which is what a potter wants. Small cones (SK 26 to SK 42, at the top of the range) are "mainly used for refractoriness tests" and are not covered here. The table below gives the large cones from SK 022 to SK 20.
+Norma ima dvije veličine. Veliki stošci (大型コーン) „uglavnom se koriste za mjerenje stupnja pečenja” (焼度測定), a to je ono što keramičaru treba. Mali stošci (od SK 26 do SK 42, na vrhu raspona) „uglavnom se koriste za ispitivanje vatrostalnosti” i ovdje nisu obuhvaćeni. Tablica niže daje velike stošce od SK 022 do SK 20.
 
-The numbers run from SK 022, the coolest, up to SK 20 here. Between SK 015 and SK 6 the printed numbers carry an "a" (SK 015a, SK 6a); write it as printed.
+Brojevi ovdje idu od SK 022, najhladnijeg, do SK 20. Između SK 015 i SK 6 otisnuti brojevi nose „a” (SK 015a, SK 6a); pišite ga kako je otisnut.
 
-### Setting large cones
+### Postavljanje velikih stožaca
 
-Set each large cone in a plaque or a pat of clay, leaning toward its bending face. As with any cone, keep the height and the lean the same from firing to firing, because a difference in either changes how far it bends. Set the three cones of the pack (below) together, deep in the kiln near the middle of the load, where they get the heat the ware gets, yet where you can see them through a peephole; before you close the kiln, check that you can see all three.
+Svaki veliki stožac postavite u držač za stošce ili u grudicu gline, nagnut prema svojoj strani savijanja. Kao i kod svakog stošca, visinu i nagib držite jednakima od pečenja do pečenja, jer razlika u bilo čemu od toga mijenja koliko se savije. Tri stošca iz skupa (niže) postavite zajedno, duboko u peć blizu sredine punjenja, gdje primaju toplinu koju primaju predmeti, a ipak ondje gdje ih možete vidjeti kroz kontrolni otvor; prije nego što zatvorite peć, provjerite vidite li sva tri.
 
-### Guide, firing and guard cones
+### Vodeći, ciljni i zaštitni stožac
 
-Cones are sold and set as three: a guide cone, a firing cone at the target, and a guard cone. Take the firing cone as the SK number your recipe or clay names, the guide cone as the next cooler cone (one row up in the table) and the guard cone as the next hotter one. When the guide cone starts to bend, the end is near; when the guard cone bends, the firing has gone too far.
+Stošci se prodaju i postavljaju po tri: vodeći stožac, ciljni stožac na željenom stupnju i zaštitni stožac. Za ciljni stožac uzmite broj SK koji navodi vaš recept ili glina, za vodeći sljedeći hladniji stožac (jedan red više u tablici), a za zaštitni sljedeći topliji. Kad se vodeći stožac počne savijati, kraj je blizu; kad se savije zaštitni stožac, pečenje je otišlo predaleko.
 
-### The SK chart
+### Tablica stožaca SK
 
-Table: SK large cones (JIS R 8101): the nominal (JIS) temperature of each
-Label: SK chart
+Table: Veliki stošci SK (JIS R 8101): nazivna temperatura (JIS) svakog od njih
+Label: Tablica stožaca SK
 
-| Cone    | Nominal (JIS) temperature |
+| Stožac  | Nazivna temperatura (JIS) |
 | ------- | ------------------------: |
 | SK 022  |       {{1112 °F; 600 °C}} |
 | SK 021  |       {{1202 °F; 650 °C}} |
@@ -352,21 +352,21 @@ Label: SK chart
 | SK 19   |      {{2768 °F; 1520 °C}} |
 | SK 20   |      {{2786 °F; 1530 °C}} |
 
-Every figure is nominal (JIS): the temperature the standard gives for the cone, as printed in Yuko Trading's table. The table does not print a heating rate. The standard gives reference temperatures. At a potter's rate of about 100 °C/h, Kyoto's municipal institute measured its own Kyoto cones bending 47–79 °C cooler than the JIS figure for the same number; we found no such measurements for SK cones to JIS. Set a witness cone and compare.
+Svaka je vrijednost nazivna (JIS): temperatura koju norma daje za stožac, kako je otisnuta u tablici tvrtke Yuko Trading. Tablica ne navodi brzinu zagrijavanja. Norma daje referentne temperature. Pri brzini uobičajenoj u keramičkoj radionici, oko 100 °C/h, kyotski gradski institut izmjerio je da se njegovi vlastiti kyotski stošci savijaju 47–79 °C hladnije od vrijednosti JIS za isti broj; takva mjerenja za stošce SK prema JIS-u nismo pronašli. Postavite kontrolni stožac i usporedite.
 
-### Kyoto cones
+### Kyotski stošci
 
-Kyoto cones (京都ゼーゲル), made by Kyoto's municipal institute, are no longer made: news reports say the institute ended production at the close of fiscal 2009. They carry the same numbers as SK cones to JIS but bend cooler: a Kyoto cone bends at about the temperature of the SK cone to JIS two or three numbers lower. A recipe from Kyoto that says "SK 8" may mean a Kyoto cone. The institute has published advice for potters moving from Kyoto cones to Orton cones, and substitutes Orton cone 10 for its own Kyoto SK 12. That is the institute's choice from its own measurements: it bent Kyoto cones and Orton cones in the same kiln at 100 °C/h, and Kyoto SK 12 (1290 °C) bent where Orton 10 (1290 °C) did. In the same table Kyoto SK 8 (1198 °C) bent near Orton 5 (1207 °C), and Kyoto SK 10 (1232 °C) where Orton 7 (1232 °C) did. Glazecalc uses this table, not the Orton chart at 60 °C/h, when it shows an SK cone beside an Orton cone, and says each match is approximate.
+Kyotski stošci (京都ゼーゲル), koje je izrađivao kyotski gradski institut, više se ne izrađuju: prema novinskim izvješćima institut je proizvodnju obustavio krajem poslovne godine 2009. Nose iste brojeve kao stošci SK prema JIS-u, ali se savijaju hladnije: kyotski se stožac savije pri otprilike temperaturi stošca SK prema JIS-u koji je dva ili tri broja hladniji. Recept iz Kyota koji kaže „SK 8” možda misli na kyotski stožac. Institut je objavio savjete za keramičare koji s kyotskih stožaca prelaze na Ortonove stošce, a umjesto svojeg kyotskog SK 12 uzima Ortonov stožac 10. To je izbor instituta na temelju vlastitih mjerenja: savijao je kyotske i Ortonove stošce u istoj peći pri 100 °C/h, a kyotski SK 12 (1290 °C) savio se ondje gdje i Ortonov 10 (1290 °C). U istoj se tablici kyotski SK 8 (1198 °C) savio blizu Ortonova 5 (1207 °C), a kyotski SK 10 (1232 °C) ondje gdje i Ortonov 7 (1232 °C). Glazecalc se koristi tom tablicom, a ne Ortonovom tablicom pri 60 °C/h, kad prikazuje stožac SK uz Ortonov stožac, i navodi da je svako podudaranje približno.
 
-### Orton cones sold in Japan
+### Ortonovi stošci koji se prodaju u Japanu
 
-Orton self-supporting cones are sold in Japan under the name 立つゼーゲル ("standing Seger"), because they need no plaque or stand. They are Orton cones, with Orton's numbers and Orton's chart (above): fire to one only by its Orton number, and keep SK and Orton cones in separate packs, never in the same one.
+Ortonovi samostojeći stošci prodaju se u Japanu pod imenom 立つゼーゲル („stojeći Seger”), jer im ne treba ni držač ni postolje. To su Ortonovi stošci, s Ortonovim brojevima i Ortonovom tablicom (gore): na takav stožac pecite samo prema njegovu Ortonovu broju, a stošce SK i Ortonove stošce držite u odvojenim skupovima, nikad u istom.
 
-### Sources for SK cones
+### Izvori za stošce SK
 
-- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (the SK table, checked 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
-- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (in force, reconfirmed 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
-- [Kyoto Municipal Institute of Industrial Technology and Culture: points to note when moving from Kyoto cones to Orton cones](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
+- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (tablica stožaca SK, provjereno 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
+- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (na snazi, ponovno potvrđena 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
+- [Kyoto Municipal Institute of Industrial Technology and Culture: na što paziti pri prelasku s kyotskih stožaca na Ortonove stošce](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
 
 :::
 

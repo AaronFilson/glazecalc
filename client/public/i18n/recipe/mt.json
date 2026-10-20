@@ -566,6 +566,7 @@
       "hesselberth-roy": "Il-limiti rakkomandati minn John Hesselberth u Ron Roy għal glejżijiet stabbli fuq stoneware u porċellana għall-użu, fil-kon 6 u l-kon 10. Jibqgħu mal-lista qasira ta’ materjali, għalhekk is-sett m’għandu l-ebda firxa għall-barju jew il-litju, u lanqas għaż-żingu fil-kon 10.",
       "glazecalc": "Il-figuri li fihom l-app twissi meta tibdel materjali: boron, alumina, sodju u potassju, u manjeżja fil-ħami baxx."
     },
+    "firing": "Limiti għal",
     "firingUnknown": "Mhux magħżul",
     "bands": {
       "low": "Ħami baxx, kon 06–02",
@@ -595,6 +596,8 @@
     "saveFailed": "L-għażla tiegħek tas-sett ta’ limiti ma setgħetx tiġi ssejvjata mal-kont tiegħek, għalhekk is-sett ta’ qabel għadu dak li qed jintuża.",
     "ownLimits": "Dawn is-suġġerimenti jużaw il-limiti ta’ Glazecalc stess, mhux dawk ta’ {name}.",
     "firingFromBlock": "Mill-ħami tar-riċetta ({bands})",
+    "firingFromBlockText": "Mill-ħami tar-riċetta: {bands}",
+    "chooseAnother": "Agħżel ieħor",
     "bothBands": "Il-ħami tar-riċetta jkopri {bands}, għalhekk jiġi kkontrollat kull wieħed, ġenb ma’ ġenb: glejż rari jġib ruħu bl-istess mod fiż-żewġ truf.",
     "fromFiring": "Il-figuri huma għall-ħami tar-riċetta: {band}. Agħżel ħami ’l fuq biex tiċċekkja ieħor."
   },
@@ -800,6 +803,18 @@
     "saveHelp": "Immarka l-madum li trid iżżomm, fid-disinn hawn fuq. Kull wieħed jinżamm bħala riċetta f’perċentwal.",
     "nameLabel": "Isem għall-madum issejvjat",
     "defaultName": "Taħlita ta’ {titles}",
+    "chemistry": {
+      "heading": "Il-kimika ta’ kull madum",
+      "help": "Maħduma mir-riċetti, bħala gwida. Il-madum maħmi jgħidlek x’jiġri tassew.",
+      "firing": "It-twissijiet u l-qbil mal-kon isegwu l-ħami tar-riċetta {letter}.",
+      "tile": "Madum",
+      "cautions": "Twissijiet",
+      "coneFit": "Qbil mal-kon",
+      "fits": "Xejn kontrih",
+      "cooler": "Jidher għal ħami aktar kiesaħ",
+      "hotter": "Jidher għal ħami aktar sħun",
+      "skipped": "Mhux evalwat"
+    },
     "chooseAll": "Agħżel il-madum kollu",
     "chooseNone": "Ma tagħżel l-ebda wieħed",
     "save": "{count, plural, =0 {Issejvja l-madum magħżul} one {Issejvja # maduma} two {Issejvja # madmiet} few {Issejvja # madmiet} many {Issejvja #-il maduma} other {Issejvja # maduma}}",
@@ -889,6 +904,8 @@
   },
   "firing": {
     "heading": "Ħami",
+    "summary": "Ħami: {what}",
+    "summaryNone": "Ħami: mhux issettjat",
     "whatIsCone": "X’inhu kon?",
     "scale": "Skala",
     "scales": {

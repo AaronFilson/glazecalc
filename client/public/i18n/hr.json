@@ -6,7 +6,9 @@
     "glazingBasics": "Glaziranje od samih osnova – Glazecalc",
     "makingAGlaze": "Kako napraviti glazuru – Glazecalc",
     "safeMixing": "Sigurno miješanje i ventilacija – Glazecalc",
+    "homeSafety": "Sigurnost glazura kod kuće: djeca, kućni ljubimci i peć – Glazecalc",
     "firing": "Pečenje u jednostavnoj peći – Glazecalc",
+    "learnWithJohnBritt": "Učite uz besplatni tečaj glazura Johna Britta – Glazecalc",
     "about": "O aplikaciji – Glazecalc",
     "privacy": "Privatnost – Glazecalc",
     "terms": "Uvjeti korištenja – Glazecalc",
@@ -25,9 +27,12 @@
     "notes": "Bilješke – Glazecalc",
     "trash": "Koš za smeće – Glazecalc",
     "account": "Vaš račun i postavke – Glazecalc",
+    "apps": "Povezane aplikacije – Glazecalc",
+    "connect": "Povezivanje aplikacije – Glazecalc",
     "notFound": "Stranica nije pronađena – Glazecalc",
     "shared": "Podijeljeni recept – Glazecalc",
-    "assistants": "Koristite Glazecalc iz svojeg AI asistenta – Glazecalc"
+    "assistants": "Koristite Glazecalc iz svojeg AI asistenta – Glazecalc",
+    "confirm": "Odobravanje promjene – Glazecalc"
   },
   "nav": {
     "skip": "Preskoči na sadržaj",
@@ -90,6 +95,7 @@
     "safeMixing": "Kako spriječiti da prašina glazure dospije u vaša pluća, a plinovi iz peći u vaš dom: sigurne navike, zaštitne maske, čišćenje, ventilacija i rizične sirovine.",
     "homeSafety": "Što učiniti ako dijete ili kućni ljubimac proguta sirovinu za glazuru i kako sirovine, prašinu, peć i ručno izrađene predmete učiniti sigurnima za obitelj.",
     "firing": "Kako peći u električnoj peći: kako odabrati, postaviti i očitati stošce i slijediti objavljene programe biskvitnog i glazurnog pečenja, s tablicom stožaca.",
+    "learnWithJohnBritt": "Pratitelj besplatnog internetskog tečaja glazura Johna Britta: njegovi videozapisi cjelinu po cjelinu, uz vodiče Glazecalca i vježbe u kalkulatoru.",
     "advice": "Praktični savjeti aplikacije Glazecalc o miješanju glazura, glaziranju i pečenju, uz vaše vlastite savjete. Besplatno za lončare i sve koji se bave keramikom.",
     "about": "Glazecalc je besplatan kalkulator kemije glazura za keramiku i bilježnica, otvorenog koda. Pogledajte kako izračunava Segerovu formulu (UMF) i kako je izrađen.",
     "privacy": "Kako Glazecalc postupa s vašim podacima: bez oglasa, analitike i praćenja, a ništa se ne prodaje. Što se čuva, zašto i kako ostvariti svoja prava.",

@@ -6,7 +6,9 @@
     "glazingBasics": "Glazování od základů – Glazecalc",
     "makingAGlaze": "Jak připravit glazuru – Glazecalc",
     "safeMixing": "Bezpečné míchání a větrání – Glazecalc",
+    "homeSafety": "Bezpečnost glazur doma: děti, domácí zvířata a pec – Glazecalc",
     "firing": "Výpal v jednoduché peci – Glazecalc",
+    "learnWithJohnBritt": "Učte se s bezplatným kurzem glazur Johna Britta – Glazecalc",
     "about": "O aplikaci – Glazecalc",
     "privacy": "Ochrana soukromí – Glazecalc",
     "terms": "Podmínky používání – Glazecalc",
@@ -25,9 +27,12 @@
     "notes": "Poznámky – Glazecalc",
     "trash": "Koš – Glazecalc",
     "account": "Váš účet a nastavení – Glazecalc",
+    "apps": "Připojené aplikace – Glazecalc",
+    "connect": "Připojení aplikace – Glazecalc",
     "notFound": "Stránka nenalezena – Glazecalc",
     "shared": "Sdílený recept - Glazecalc",
-    "assistants": "Glazecalc ve vašem AI asistentovi - Glazecalc"
+    "assistants": "Glazecalc ve vašem AI asistentovi - Glazecalc",
+    "confirm": "Schválení změny – Glazecalc"
   },
   "nav": {
     "skip": "Přejít na obsah",
@@ -90,6 +95,7 @@
     "safeMixing": "Jak udržet prach z glazur mimo plíce a výpary z pece mimo domov: bezpečné návyky, respirátory, úklid, větrání a rizikové suroviny.",
     "homeSafety": "Co dělat, když dítě nebo domácí zvíře spolkne surovinu na glazuru, a jak zajistit, aby suroviny, prach, pec i ručně vyrobené nádobí byly pro rodinu bezpečné.",
     "firing": "Výpal v elektrické peci: výběr, umístění a odečítání žároměrek a zveřejněné vypalovací křivky pro přežah a glazurový výpal, s tabulkou žároměrek.",
+    "learnWithJohnBritt": "Průvodce k bezplatnému online kurzu glazur Johna Britta: jeho videa lekci po lekci, s návody Glazecalc ke čtení a cvičeními v kalkulačce.",
     "advice": "Praktické tipy k míchání, glazování a výpalu od aplikace Glazecalc a k tomu vaše vlastní rady. Zdarma pro hrnčíře a keramiky.",
     "about": "Glazecalc je bezplatná open-source kalkulačka chemie glazur a zápisník receptů. Podívejte se, jak počítá Segerův vzorec (UMF) a jak je postavená.",
     "privacy": "Jak Glazecalc nakládá s vašimi daty: žádné reklamy, analytika ani sledování a nic se neprodává. Co se uchovává, proč a jak uplatnit svá práva.",

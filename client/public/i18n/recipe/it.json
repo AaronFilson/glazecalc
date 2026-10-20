@@ -566,6 +566,7 @@
       "hesselberth-roy": "I limiti raccomandati da John Hesselberth e Ron Roy per smalti stabili su gres e porcellana d’uso, al cono 6 e al cono 10. Si limitano a un breve elenco di materiali, quindi la serie non ha un intervallo per bario o litio, né per lo zinco al cono 10.",
       "glazecalc": "I valori a cui l’app avvisa quando sostituisce i materiali: boro, allumina, sodio e potassio, e magnesia a bassa temperatura."
     },
+    "firing": "Limiti per",
     "firingUnknown": "Non scelta",
     "bands": {
       "low": "Bassa temperatura, cono 06–02",
@@ -595,6 +596,8 @@
     "saveFailed": "Impossibile salvare nel Suo account la scelta della serie di limiti, quindi resta in uso la serie precedente.",
     "ownLimits": "Questi suggerimenti usano i limiti propri di Glazecalc, non {name}.",
     "firingFromBlock": "Dalla cottura della ricetta ({bands})",
+    "firingFromBlockText": "Dalla cottura della ricetta: {bands}",
+    "chooseAnother": "Scegline un’altra",
     "bothBands": "La cottura della ricetta copre {bands}, quindi ogni intervallo è controllato, affiancato agli altri: uno smalto raramente si comporta allo stesso modo alle due estremità.",
     "fromFiring": "I valori sono per la cottura della ricetta: {band}. Scegliere sopra una cottura per controllarne un’altra."
   },
@@ -800,6 +803,18 @@
     "saveHelp": "Spuntare nel disegno qui sopra i provini da conservare. Ognuno viene salvato come ricetta in percentuale.",
     "nameLabel": "Nome dei provini salvati",
     "defaultName": "Miscela {titles}",
+    "chemistry": {
+      "heading": "Chimica per provino",
+      "help": "Calcolata dalle ricette, come guida. Sono i provini cotti a dirLe che cosa succede davvero.",
+      "firing": "Le avvertenze e l’adeguatezza al cono seguono la cottura della ricetta {letter}.",
+      "tile": "Provino",
+      "cautions": "Avvertenze",
+      "coneFit": "Adeguatezza al cono",
+      "fits": "Nulla in contrario",
+      "cooler": "Assomiglia a una cottura più bassa",
+      "hotter": "Assomiglia a una cottura più alta",
+      "skipped": "Non valutato"
+    },
     "chooseAll": "Scegli tutti i provini",
     "chooseNone": "Non sceglierne nessuno",
     "save": "{count, plural, =0 {Salva i provini scelti} one {Salva # provino} many {Salva # di provini} other {Salva # provini}}",
@@ -889,6 +904,8 @@
   },
   "firing": {
     "heading": "Cottura",
+    "summary": "Cottura: {what}",
+    "summaryNone": "Cottura: non indicata",
     "whatIsCone": "Che cosa significa cono?",
     "scale": "Scala",
     "scales": {

@@ -6,7 +6,9 @@
     "glazingBasics": "Lasittamisen perusteet – Glazecalc",
     "makingAGlaze": "Lasitteen valmistaminen – Glazecalc",
     "safeMixing": "Turvallinen sekoittaminen ja ilmanvaihto – Glazecalc",
+    "homeSafety": "Lasiteturvallisuus kotona: lapset, lemmikit ja uuni – Glazecalc",
     "firing": "Polttaminen yksinkertaisessa keramiikkauunissa – Glazecalc",
+    "learnWithJohnBritt": "Opi John Brittin ilmaisella lasitekurssilla – Glazecalc",
     "about": "Tietoja – Glazecalc",
     "privacy": "Tietosuoja – Glazecalc",
     "terms": "Käyttöehdot – Glazecalc",
@@ -25,9 +27,12 @@
     "notes": "Muistiinpanot – Glazecalc",
     "trash": "Roskakori – Glazecalc",
     "account": "Tili ja asetukset – Glazecalc",
+    "apps": "Yhdistetyt sovellukset – Glazecalc",
+    "connect": "Sovelluksen yhdistäminen – Glazecalc",
     "notFound": "Sivua ei löydy – Glazecalc",
     "shared": "Jaettu resepti – Glazecalc",
-    "assistants": "Glazecalcin käyttäminen tekoälyavustajasta – Glazecalc"
+    "assistants": "Glazecalcin käyttäminen tekoälyavustajasta – Glazecalc",
+    "confirm": "Muutoksen hyväksyminen – Glazecalc"
   },
   "nav": {
     "skip": "Siirry sisältöön",
@@ -90,6 +95,7 @@
     "safeMixing": "Lasitepöly pois keuhkoista ja uunin savukaasut pois kodista: turvalliset tavat, hengityksensuojaimet, siivous, ilmanvaihto ja varovaisuutta vaativat aineet.",
     "homeSafety": "Mitä tehdä, jos lapsi tai lemmikki nielee lasiteraaka-ainetta, ja miten raaka-aineet, pöly, uuni ja käsintehdyt esineet pidetään perheelle turvallisina.",
     "firing": "Miten sähköuunilla poltetaan: keilojen valinta, asettaminen ja lukeminen sekä julkaistut polttokäyrät raakapolttoon ja lasituspolttoon. Mukana keilataulukko.",
+    "learnWithJohnBritt": "Kumppani John Brittin ilmaiselle verkkolasitekurssille: hänen videonsa jakso jaksolta, Glazecalcin oppaat luettaviksi ja harjoitukset laskimessa.",
     "advice": "Käytännön vinkkejä lasitteen sekoittamiseen, lasittamiseen ja polttamiseen Glazecalcilta sekä omat neuvot. Ilmainen keraamikoille ja savenvalajille.",
     "about": "Glazecalc on ilmainen, avoimen lähdekoodin lasitekemian laskin ja muistikirja. Katso, miten se laskee Segerin kaavan (UMF) ja miten se on rakennettu.",
     "privacy": "Miten Glazecalc käsittelee tietoja: ei mainoksia, ei analytiikkaa eikä seurantaa, eikä mitään myydä. Mitä säilytetään, miksi ja miten oikeuksia käytetään.",

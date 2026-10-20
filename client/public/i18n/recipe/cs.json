@@ -566,6 +566,7 @@
       "hesselberth-roy": "Doporučené limity Johna Hesselbertha a Rona Roye pro stabilní glazury na užitkové kamenině a porcelánu, pro žároměrku 6 a žároměrku 10. Drží se krátkého seznamu surovin, takže sada nemá rozsah pro baryum ani lithium, ani pro zinek u žároměrky 10.",
       "glazecalc": "Hodnoty, u kterých aplikace varuje při záměně surovin: bor, oxid hlinitý, soda a potaš a u nízkého výpalu oxid hořečnatý."
     },
+    "firing": "Limity pro",
     "firingUnknown": "Nezvoleno",
     "bands": {
       "low": "Nízký výpal, žároměrka 06–02",
@@ -595,6 +596,8 @@
     "saveFailed": "Vaši volbu sady limitů se nepodařilo uložit do účtu, takže stále platí dřívější sada.",
     "ownLimits": "Tyto návrhy používají vlastní limity Glazecalc, ne {name}.",
     "firingFromBlock": "Podle výpalu receptu ({bands})",
+    "firingFromBlockText": "Z výpalu receptu: {bands}",
+    "chooseAnother": "Zvolit jiný",
     "bothBands": "Výpal receptu zahrnuje {bands}, proto se každé pásmo kontroluje zvlášť, vedle sebe: glazura se na obou koncích chová stejně jen zřídka.",
     "fromFiring": "Hodnoty platí pro výpal receptu: {band}. Chcete-li zkontrolovat jiný, vyberte jiný výpal výše."
   },
@@ -800,6 +803,18 @@
     "saveHelp": "Na obrázku výše zaškrtněte střípky, které chcete zachovat. Každý se uloží jako recept v procentech.",
     "nameLabel": "Název uložených střípků",
     "defaultName": "Směs: {titles}",
+    "chemistry": {
+      "heading": "Chemie každého střípku",
+      "help": "Vypočteno z receptů, jako vodítko. Co se doopravdy stane, ukážou vypálené střípky.",
+      "firing": "Upozornění a shoda se žároměrkou se řídí výpalem receptu {letter}.",
+      "tile": "Střípek",
+      "cautions": "Upozornění",
+      "coneFit": "Shoda se žároměrkou",
+      "fits": "Nic proti",
+      "cooler": "Vypadá chladněji",
+      "hotter": "Vypadá tepleji",
+      "skipped": "Neposouzeno"
+    },
     "chooseAll": "Vybrat všechny střípky",
     "chooseNone": "Nevybrat žádný",
     "save": "{count, plural, =0 {Uložit vybrané střípky} one {Uložit # střípek} few {Uložit # střípky} many {Uložit # střípku} other {Uložit # střípků}}",
@@ -889,6 +904,8 @@
   },
   "firing": {
     "heading": "Výpal",
+    "summary": "Výpal: {what}",
+    "summaryNone": "Výpal: nenastaven",
     "whatIsCone": "Co znamená žároměrka?",
     "scale": "Stupnice",
     "scales": {

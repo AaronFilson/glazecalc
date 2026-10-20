@@ -6,7 +6,9 @@
     "glazingBasics": "从基本原理学施釉 - Glazecalc",
     "makingAGlaze": "如何调配釉料 - Glazecalc",
     "safeMixing": "安全配料与通风 - Glazecalc",
+    "homeSafety": "家中釉料安全：儿童、宠物和窑 - Glazecalc",
     "firing": "简易窑炉烧成 - Glazecalc",
+    "learnWithJohnBritt": "跟着 John Britt 的免费釉料课程学习 - Glazecalc",
     "about": "关于 - Glazecalc",
     "privacy": "隐私 - Glazecalc",
     "terms": "使用条款 - Glazecalc",
@@ -25,9 +27,12 @@
     "notes": "笔记 - Glazecalc",
     "trash": "回收站 - Glazecalc",
     "account": "账户与设置 - Glazecalc",
+    "apps": "已连接的应用 - Glazecalc",
+    "connect": "连接应用 - Glazecalc",
     "notFound": "页面不存在 - Glazecalc",
     "shared": "分享的配方 - Glazecalc",
-    "assistants": "在 AI 助手中使用 Glazecalc - Glazecalc"
+    "assistants": "在 AI 助手中使用 Glazecalc - Glazecalc",
+    "confirm": "批准更改 - Glazecalc"
   },
   "nav": {
     "skip": "跳到正文",
@@ -90,6 +95,7 @@
     "safeMixing": "如何让釉料粉尘远离肺部、烧窑废气远离住所：安全习惯、防颗粒物呼吸器、清洁、通风和有风险的原料。",
     "homeSafety": "孩子或宠物吞下釉料原料时怎么办，以及如何让原料、粉尘、窑和手工制作的器物在家人身边保持安全。",
     "firing": "如何烧电窑：选择、摆放和读取测温锥，并参照已公布的素烧和釉烧烧成曲线，附测温锥对照表。",
+    "learnWithJohnBritt": "John Britt 免费在线 Glaze Course 的配套指南：按单元列出他的视频，配上可读的 Glazecalc 指南和可在计算器中尝试的练习。",
     "advice": "关于调配、施釉和烧成的实用建议，来自 Glazecalc，另有您自己添加的建议。对陶艺人和陶瓷艺术家免费。",
     "about": "Glazecalc 是一款免费开源的釉料化学计算器和笔记本。了解它如何算出釉式，以及它是如何构建的。",
     "privacy": "Glazecalc 如何处理您的数据：没有广告，没有分析，没有追踪，也不出售任何数据。保存哪些数据，为什么保存，以及如何行使您的权利。",

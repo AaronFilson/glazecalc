@@ -281,92 +281,92 @@ Label: Kito degimo pataisymai
 
 :::sk
 
-## Firing to SK cones {#sk-cones lang=en}
+## Degimas pagal SK piroskopus {#sk-cones}
 
-SK cones are the pyrometric cones made to Japan's standard, JIS R 8101, and sold in Japan by dealers such as Yuko Trading (有恒商事). Like any cone, an SK cone measures heatwork, not temperature alone: it softens and bends over when the ware has had enough heat, and you read how far it bent. Witness cones, reading how far a cone has bent, and holds work for it as for any cone. This section names each cone's system, and never turns an SK number into another system's number: the numbers of different cone series are not interchangeable.
+SK piroskopai – tai pirometriniai kūgiai, pagaminti pagal Japonijos standartą JIS R 8101; Japonijoje juos parduoda tokie prekiautojai kaip Yuko Trading (有恒商事). Kaip ir bet kuris piroskopas{{en: cone}}, SK piroskopas matuoja šilumos poveikį{{en: heatwork}}, o ne vien temperatūrą: jis suminkštėja ir sulinksta, kai dirbiniai gauna pakankamai šilumos, o jūs įvertinate, kiek jis sulinko. Kontroliniai piroskopai{{en: witness cone}}, sulinkimo vertinimas ir išlaikymai{{en: hold}} jam tinka taip pat kaip bet kuriam piroskopui. Šiame skyriuje prie kiekvieno piroskopo nurodoma jo sistema, ir SK numeris niekada nepaverčiamas kitos sistemos numeriu: skirtingų piroskopų serijų numeriai nėra tarpusavyje keičiami.
 
 > [!NOTE]
-> Always write "SK" before the number. Many older Japanese recipes say only "SK 8" or "SK 9" without saying whose cone. Kyoto cones and SK cones to JIS carry the same numbers but bend at different temperatures (see Kyoto cones, below).
+> Prieš numerį visada rašykite „SK“. Daugelyje senesnių japoniškų receptų parašyta tik „SK 8“ arba „SK 9“, nenurodant, kieno tai piroskopas. Kioto piroskopai ir SK piroskopai pagal JIS turi tuos pačius numerius, bet sulinksta skirtingoje temperatūroje (žr. „Kioto piroskopai“ toliau).
 
-### The large cones
+### Dideli piroskopai
 
-The standard has two sizes. Large cones (大型コーン) are "mainly used for measuring the degree of firing" (焼度測定), which is what a potter wants. Small cones (SK 26 to SK 42, at the top of the range) are "mainly used for refractoriness tests" and are not covered here. The table below gives the large cones from SK 022 to SK 20.
+Standarte yra du dydžiai. Dideli piroskopai (大型コーン) „daugiausia naudojami išdegimo laipsniui matuoti“ (焼度測定), o to ir reikia keramikui. Mažieji piroskopai (nuo SK 26 iki SK 42, intervalo viršuje) „daugiausia naudojami ugniai atsparumo bandymams“, ir čia jie neaptariami. Toliau pateiktoje lentelėje nurodyti dideli piroskopai nuo SK 022 iki SK 20.
 
-The numbers run from SK 022, the coolest, up to SK 20 here. Between SK 015 and SK 6 the printed numbers carry an "a" (SK 015a, SK 6a); write it as printed.
+Čia numeriai eina nuo SK 022, vėsiausio, iki SK 20. Nuo SK 015 iki SK 6 išspausdinti numeriai turi raidę „a“ (SK 015a, SK 6a); rašykite juos taip, kaip išspausdinta.
 
-### Setting large cones
+### Didelių piroskopų statymas
 
-Set each large cone in a plaque or a pat of clay, leaning toward its bending face. As with any cone, keep the height and the lean the same from firing to firing, because a difference in either changes how far it bends. Set the three cones of the pack (below) together, deep in the kiln near the middle of the load, where they get the heat the ware gets, yet where you can see them through a peephole; before you close the kiln, check that you can see all three.
+Kiekvieną didelį piroskopą įstatykite į stovelį arba molio paplotėlį, pakreiptą į jo linkimo pusę. Kaip ir bet kurio piroskopo, aukštį ir pasvirimą kiekvieną kartą degdami išlaikykite vienodus, nes bet kurio iš jų skirtumas pakeičia, kiek piroskopas sulinksta. Tris rinkinio{{en: cone pack}} piroskopus (apie juos – toliau) statykite kartu, giliai krosnyje, arčiau įkrovos vidurio, kur jie gauna tiek pat šilumos kaip dirbiniai, tačiau kur juos matote pro stebėjimo angą; prieš uždarydami krosnį patikrinkite, ar matote visus tris.
 
-### Guide, firing and guard cones
+### Orientacinis, degimo ir apsauginis piroskopai
 
-Cones are sold and set as three: a guide cone, a firing cone at the target, and a guard cone. Take the firing cone as the SK number your recipe or clay names, the guide cone as the next cooler cone (one row up in the table) and the guard cone as the next hotter one. When the guide cone starts to bend, the end is near; when the guard cone bends, the firing has gone too far.
+Piroskopai parduodami ir statomi po tris: orientacinis piroskopas, degimo piroskopas, atitinkantis tikslą, ir apsauginis piroskopas. Degimo piroskopu imkite tą SK numerį, kurį nurodo jūsų receptas ar molis, orientaciniu – artimiausią vėsesnį piroskopą (viena eilute aukščiau lentelėje), o apsauginiu – artimiausią karštesnį. Kai orientacinis piroskopas pradeda linkti, pabaiga arti; kai sulinksta apsauginis piroskopas, degimas nuėjo per toli.
 
-### The SK chart
+### SK piroskopų lentelė
 
-Table: SK large cones (JIS R 8101): the nominal (JIS) temperature of each
-Label: SK chart
+Table: Dideli SK piroskopai (JIS R 8101): kiekvieno nominalioji (JIS) temperatūra
+Label: SK piroskopų lentelė
 
-| Cone    | Nominal (JIS) temperature |
-| ------- | ------------------------: |
-| SK 022  |       {{1112 °F; 600 °C}} |
-| SK 021  |       {{1202 °F; 650 °C}} |
-| SK 020  |       {{1238 °F; 670 °C}} |
-| SK 019  |       {{1274 °F; 690 °C}} |
-| SK 018  |       {{1310 °F; 710 °C}} |
-| SK 017  |       {{1346 °F; 730 °C}} |
-| SK 016  |       {{1382 °F; 750 °C}} |
-| SK 015a |       {{1454 °F; 790 °C}} |
-| SK 014a |       {{1499 °F; 815 °C}} |
-| SK 013a |       {{1535 °F; 835 °C}} |
-| SK 012a |       {{1571 °F; 855 °C}} |
-| SK 011a |       {{1616 °F; 880 °C}} |
-| SK 010a |       {{1652 °F; 900 °C}} |
-| SK 09a  |       {{1688 °F; 920 °C}} |
-| SK 08a  |       {{1724 °F; 940 °C}} |
-| SK 07a  |       {{1760 °F; 960 °C}} |
-| SK 06a  |       {{1796 °F; 980 °C}} |
-| SK 05a  |      {{1832 °F; 1000 °C}} |
-| SK 04a  |      {{1868 °F; 1020 °C}} |
-| SK 03a  |      {{1904 °F; 1040 °C}} |
-| SK 02a  |      {{1940 °F; 1060 °C}} |
-| SK 01a  |      {{1976 °F; 1080 °C}} |
-| SK 1a   |      {{2012 °F; 1100 °C}} |
-| SK 2a   |      {{2048 °F; 1120 °C}} |
-| SK 3a   |      {{2084 °F; 1140 °C}} |
-| SK 4a   |      {{2120 °F; 1160 °C}} |
-| SK 5a   |      {{2156 °F; 1180 °C}} |
-| SK 6a   |      {{2192 °F; 1200 °C}} |
-| SK 7    |      {{2246 °F; 1230 °C}} |
-| SK 8    |      {{2282 °F; 1250 °C}} |
-| SK 9    |      {{2336 °F; 1280 °C}} |
-| SK 10   |      {{2372 °F; 1300 °C}} |
-| SK 11   |      {{2408 °F; 1320 °C}} |
-| SK 12   |      {{2462 °F; 1350 °C}} |
-| SK 13   |      {{2516 °F; 1380 °C}} |
-| SK 14   |      {{2570 °F; 1410 °C}} |
-| SK 15   |      {{2615 °F; 1435 °C}} |
-| SK 16   |      {{2660 °F; 1460 °C}} |
-| SK 17   |      {{2696 °F; 1480 °C}} |
-| SK 18   |      {{2732 °F; 1500 °C}} |
-| SK 19   |      {{2768 °F; 1520 °C}} |
-| SK 20   |      {{2786 °F; 1530 °C}} |
+| Piroskopas | Nominalioji (JIS) temperatūra |
+| ---------- | ----------------------------: |
+| SK 022     |           {{1112 °F; 600 °C}} |
+| SK 021     |           {{1202 °F; 650 °C}} |
+| SK 020     |           {{1238 °F; 670 °C}} |
+| SK 019     |           {{1274 °F; 690 °C}} |
+| SK 018     |           {{1310 °F; 710 °C}} |
+| SK 017     |           {{1346 °F; 730 °C}} |
+| SK 016     |           {{1382 °F; 750 °C}} |
+| SK 015a    |           {{1454 °F; 790 °C}} |
+| SK 014a    |           {{1499 °F; 815 °C}} |
+| SK 013a    |           {{1535 °F; 835 °C}} |
+| SK 012a    |           {{1571 °F; 855 °C}} |
+| SK 011a    |           {{1616 °F; 880 °C}} |
+| SK 010a    |           {{1652 °F; 900 °C}} |
+| SK 09a     |           {{1688 °F; 920 °C}} |
+| SK 08a     |           {{1724 °F; 940 °C}} |
+| SK 07a     |           {{1760 °F; 960 °C}} |
+| SK 06a     |           {{1796 °F; 980 °C}} |
+| SK 05a     |          {{1832 °F; 1000 °C}} |
+| SK 04a     |          {{1868 °F; 1020 °C}} |
+| SK 03a     |          {{1904 °F; 1040 °C}} |
+| SK 02a     |          {{1940 °F; 1060 °C}} |
+| SK 01a     |          {{1976 °F; 1080 °C}} |
+| SK 1a      |          {{2012 °F; 1100 °C}} |
+| SK 2a      |          {{2048 °F; 1120 °C}} |
+| SK 3a      |          {{2084 °F; 1140 °C}} |
+| SK 4a      |          {{2120 °F; 1160 °C}} |
+| SK 5a      |          {{2156 °F; 1180 °C}} |
+| SK 6a      |          {{2192 °F; 1200 °C}} |
+| SK 7       |          {{2246 °F; 1230 °C}} |
+| SK 8       |          {{2282 °F; 1250 °C}} |
+| SK 9       |          {{2336 °F; 1280 °C}} |
+| SK 10      |          {{2372 °F; 1300 °C}} |
+| SK 11      |          {{2408 °F; 1320 °C}} |
+| SK 12      |          {{2462 °F; 1350 °C}} |
+| SK 13      |          {{2516 °F; 1380 °C}} |
+| SK 14      |          {{2570 °F; 1410 °C}} |
+| SK 15      |          {{2615 °F; 1435 °C}} |
+| SK 16      |          {{2660 °F; 1460 °C}} |
+| SK 17      |          {{2696 °F; 1480 °C}} |
+| SK 18      |          {{2732 °F; 1500 °C}} |
+| SK 19      |          {{2768 °F; 1520 °C}} |
+| SK 20      |          {{2786 °F; 1530 °C}} |
 
-Every figure is nominal (JIS): the temperature the standard gives for the cone, as printed in Yuko Trading's table. The table does not print a heating rate. The standard gives reference temperatures. At a potter's rate of about 100 °C/h, Kyoto's municipal institute measured its own Kyoto cones bending 47–79 °C cooler than the JIS figure for the same number; we found no such measurements for SK cones to JIS. Set a witness cone and compare.
+Visi skaičiai yra nominalieji (JIS): temperatūra, kurią standartas nurodo piroskopui, kaip išspausdinta Yuko Trading lentelėje. Lentelėje kaitinimo sparta nenurodyta. Standartas pateikia atskaitos temperatūras. Esant keramikams įprastai maždaug 100 °C/val. spartai, Kioto miesto institutas išmatavo, kad jo paties Kioto piroskopai sulinksta 47–79 °C žemesnėje temperatūroje, nei JIS nurodo tam pačiam numeriui; tokių SK piroskopų pagal JIS matavimų neradome. Pastatykite kontrolinį piroskopą ir palyginkite.
 
-### Kyoto cones
+### Kioto piroskopai
 
-Kyoto cones (京都ゼーゲル), made by Kyoto's municipal institute, are no longer made: news reports say the institute ended production at the close of fiscal 2009. They carry the same numbers as SK cones to JIS but bend cooler: a Kyoto cone bends at about the temperature of the SK cone to JIS two or three numbers lower. A recipe from Kyoto that says "SK 8" may mean a Kyoto cone. The institute has published advice for potters moving from Kyoto cones to Orton cones, and substitutes Orton cone 10 for its own Kyoto SK 12. That is the institute's choice from its own measurements: it bent Kyoto cones and Orton cones in the same kiln at 100 °C/h, and Kyoto SK 12 (1290 °C) bent where Orton 10 (1290 °C) did. In the same table Kyoto SK 8 (1198 °C) bent near Orton 5 (1207 °C), and Kyoto SK 10 (1232 °C) where Orton 7 (1232 °C) did. Glazecalc uses this table, not the Orton chart at 60 °C/h, when it shows an SK cone beside an Orton cone, and says each match is approximate.
+Kioto piroskopai (京都ゼーゲル), kuriuos gamino Kioto miesto institutas, nebegaminami: žiniasklaidos pranešimais, institutas jų gamybą nutraukė 2009 finansinių metų pabaigoje. Jie turi tuos pačius numerius kaip SK piroskopai pagal JIS, bet sulinksta žemesnėje temperatūroje: Kioto piroskopas sulinksta maždaug tokioje temperatūroje kaip dviem ar trimis numeriais vėsesnis SK piroskopas pagal JIS. Kioto receptas, kuriame parašyta „SK 8“, gali turėti omenyje Kioto piroskopą. Institutas yra paskelbęs patarimų keramikams, pereinantiems nuo Kioto piroskopų prie Ortono piroskopų, ir vietoj savo Kioto SK 12 naudoja Ortono piroskopą 10. Tai paties instituto pasirinkimas pagal jo matavimus: jis lenkė Kioto ir Ortono piroskopus toje pačioje krosnyje esant 100 °C/val. spartai, ir Kioto SK 12 (1290 °C) sulinko ten pat, kur Ortono 10 (1290 °C). Toje pačioje lentelėje Kioto SK 8 (1198 °C) sulinko netoli Ortono 5 (1207 °C), o Kioto SK 10 (1232 °C) – ten pat, kur Ortono 7 (1232 °C). Glazecalc naudoja šią lentelę, o ne Ortono lentelę esant 60 °C/val. spartai, kai rodo SK piroskopą šalia Ortono piroskopo, ir nurodo, kad kiekvienas atitikmuo yra apytikslis.
 
-### Orton cones sold in Japan
+### Japonijoje parduodami Ortono piroskopai
 
-Orton self-supporting cones are sold in Japan under the name 立つゼーゲル ("standing Seger"), because they need no plaque or stand. They are Orton cones, with Orton's numbers and Orton's chart (above): fire to one only by its Orton number, and keep SK and Orton cones in separate packs, never in the same one.
+Ortono savaime stovintys piroskopai Japonijoje parduodami pavadinimu 立つゼーゲル („stovintis Segeris“), nes jiems nereikia nei stovelio, nei laikiklio. Tai Ortono piroskopai, su Ortono numeriais ir Ortono lentele (aukščiau): degdami iki tokio piroskopo vadovaukitės tik jo Ortono numeriu, o SK ir Ortono piroskopus statykite atskiruose rinkiniuose, niekada ne tame pačiame.
 
-### Sources for SK cones
+### SK piroskopų šaltiniai
 
-- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (the SK table, checked 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
-- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (in force, reconfirmed 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
-- [Kyoto Municipal Institute of Industrial Technology and Culture: points to note when moving from Kyoto cones to Orton cones](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
+- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (SK piroskopų lentelė, patikrinta 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
+- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (galioja, pakartotinai patvirtintas 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
+- [Kioto miesto pramonės technologijų ir kultūros institutas: į ką atkreipti dėmesį pereinant nuo Kioto piroskopų prie Ortono piroskopų](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
 
 :::
 

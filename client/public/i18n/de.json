@@ -6,7 +6,9 @@
     "glazingBasics": "Glasieren von Grund auf - Glazecalc",
     "makingAGlaze": "Eine Glasur ansetzen - Glazecalc",
     "safeMixing": "Sicheres Anmischen und Lüften - Glazecalc",
+    "homeSafety": "Glasursicherheit zu Hause: Kinder, Haustiere und der Ofen - Glazecalc",
     "firing": "Brennen mit einem einfachen Ofen - Glazecalc",
+    "learnWithJohnBritt": "Lernen mit John Britts kostenlosem Glasurkurs - Glazecalc",
     "about": "Über Glazecalc",
     "privacy": "Datenschutz - Glazecalc",
     "terms": "Nutzungsbedingungen - Glazecalc",
@@ -25,9 +27,12 @@
     "notes": "Notizen - Glazecalc",
     "trash": "Papierkorb - Glazecalc",
     "account": "Ihr Konto und Ihre Einstellungen - Glazecalc",
+    "apps": "Verbundene Apps - Glazecalc",
+    "connect": "Eine App verbinden - Glazecalc",
     "notFound": "Seite nicht gefunden - Glazecalc",
     "shared": "Geteiltes Rezept - Glazecalc",
-    "assistants": "Glazecalc mit Ihrem KI-Assistenten nutzen - Glazecalc"
+    "assistants": "Glazecalc mit Ihrem KI-Assistenten nutzen - Glazecalc",
+    "confirm": "Eine Änderung genehmigen - Glazecalc"
   },
   "nav": {
     "skip": "Zum Inhalt springen",
@@ -90,6 +95,7 @@
     "safeMixing": "Wie Sie Glasurstaub aus Ihrer Lunge und Brenngase aus dem Haus fernhalten: sichere Gewohnheiten, Atemschutzmasken, Reinigung, Lüftung und riskante Rohstoffe.",
     "homeSafety": "Was tun, wenn ein Kind oder Haustier einen Glasurrohstoff verschluckt, und wie Rohstoffe, Staub, Ofen und handgemachte Keramik für Ihre Familie sicher bleiben.",
     "firing": "Wie Sie einen Elektroofen brennen: Kegel wählen, aufstellen und ablesen und veröffentlichten Brennkurven für Schrüh- und Glasurbrand folgen, mit Kegeltabelle.",
+    "learnWithJohnBritt": "Begleiter zu John Britts kostenlosem Online-Glasurkurs: seine Videos Einheit für Einheit, mit Anleitungen von Glazecalc und Übungen im Glasurrechner.",
     "advice": "Praktische Tipps von Glazecalc zum Anmischen, Glasieren und Brennen, dazu Ihre eigenen Tipps. Kostenlos für Töpferei und Keramik.",
     "about": "Glazecalc ist ein kostenloser Open-Source-Rechner für Glasurchemie, mit Notizbuch. Sehen Sie, wie er die Segerformel (UMF) berechnet und wie er aufgebaut ist.",
     "privacy": "Wie Glazecalc mit Ihren Daten umgeht: keine Werbung, keine Analyse, kein Tracking, kein Verkauf. Was gespeichert wird, warum und wie Sie Ihre Rechte nutzen.",

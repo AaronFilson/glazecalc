@@ -6,7 +6,9 @@
     "glazingBasics": "基礎から学ぶ釉薬 - Glazecalc",
     "makingAGlaze": "釉薬の作り方 - Glazecalc",
     "safeMixing": "安全な調合と換気 - Glazecalc",
+    "homeSafety": "家庭での釉薬の安全: 子ども、ペット、窯 - Glazecalc",
     "firing": "基本の窯焚き - Glazecalc",
+    "learnWithJohnBritt": "John Britt の無料の釉薬講座で学ぶ - Glazecalc",
     "about": "このサイトについて - Glazecalc",
     "privacy": "プライバシー - Glazecalc",
     "terms": "利用規約 - Glazecalc",
@@ -25,9 +27,12 @@
     "notes": "メモ - Glazecalc",
     "trash": "ごみ箱 - Glazecalc",
     "account": "アカウントと設定 - Glazecalc",
+    "apps": "連携したアプリ - Glazecalc",
+    "connect": "アプリの連携 - Glazecalc",
     "notFound": "ページが見つかりません - Glazecalc",
     "shared": "共有された調合 - Glazecalc",
-    "assistants": "AI アシスタントから Glazecalc を使う - Glazecalc"
+    "assistants": "AI アシスタントから Glazecalc を使う - Glazecalc",
+    "confirm": "変更の承認 - Glazecalc"
   },
   "nav": {
     "skip": "本文へスキップ",
@@ -90,6 +95,7 @@
     "safeMixing": "釉薬の粉じんを肺に入れず、窯の煙を家に入れないために：安全な習慣、防じんマスク、掃除、換気、危険な原料。",
     "homeSafety": "子どもやペットが釉薬の原料を飲み込んだときにすべきこと、そして原料、粉じん、窯、手づくりの器を家族のそばで安全に保つ方法。",
     "firing": "電気窯の焚き方：コーンの選び方、置き方、読み方と、公開されている素焼き・本焼きの焼成スケジュールに沿った焼成。コーンの温度表つき。",
+    "learnWithJohnBritt": "John Britt の無料オンライン釉薬講座（Glaze Course）の手引きです。講座の動画をユニットごとに、読む Glazecalc のガイドと計算機で試す演習とともに紹介します。",
     "advice": "陶芸の釉薬の調合、施釉、焼成に役立つ実用的なヒントを Glazecalc から。あなた自身のアドバイスも加えられます。陶芸家のために無料です。",
     "about": "Glazecalc は、無料のオープンソースの釉薬化学計算ツール兼ノートです。ゼーゲル式（UMF）をどのように求めるか、どのように作られているかを紹介します。",
     "privacy": "Glazecalc でのデータの扱い：広告、アクセス解析、トラッキングは一切なく、何も販売しません。何を保管するか、その理由、権利の行使方法。",

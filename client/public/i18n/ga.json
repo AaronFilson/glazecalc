@@ -6,7 +6,9 @@
     "glazingBasics": "Glónrú ó bhunphrionsabail - Glazecalc",
     "makingAGlaze": "Conas glónra a dhéanamh - Glazecalc",
     "safeMixing": "Meascadh sábháilte agus aeráil - Glazecalc",
+    "homeSafety": "Sábháilteacht glónra sa bhaile: páistí, peataí agus an áith - Glazecalc",
     "firing": "Bácáil in áith shimplí - Glazecalc",
+    "learnWithJohnBritt": "Foghlaim le cúrsa glónra saor in aisce John Britt - Glazecalc",
     "about": "Faoin aip - Glazecalc",
     "privacy": "Príobháideachas - Glazecalc",
     "terms": "Téarmaí úsáide - Glazecalc",
@@ -25,9 +27,12 @@
     "notes": "Nótaí - Glazecalc",
     "trash": "Bruscar - Glazecalc",
     "account": "Do chuntas agus do shocruithe - Glazecalc",
+    "apps": "Aipeanna ceangailte - Glazecalc",
+    "connect": "Aip a cheangal - Glazecalc",
     "notFound": "Gan aimsiú - Glazecalc",
     "shared": "Oideas comhroinnte - Glazecalc",
-    "assistants": "Glazecalc a úsáid ó do chúntóir AI - Glazecalc"
+    "assistants": "Glazecalc a úsáid ó do chúntóir AI - Glazecalc",
+    "confirm": "Athrú a fhaomhadh - Glazecalc"
   },
   "nav": {
     "skip": "Léim go dtí an phríomhchuid",
@@ -90,6 +95,7 @@
     "safeMixing": "Deannach glónra a choinneáil as do scamhóga agus múch na háithe as do theach: nósanna sábháilte, maisc análaitheora, glanadh, aeráil agus ábhair chontúirteacha.",
     "homeSafety": "Cad atá le déanamh má shlogann leanbh nó peata ábhar glónra, agus ábhair, deannach, an áith agus earraí lámhdhéanta a choinneáil sábháilte do do theaghlach.",
     "firing": "Bácáil in áith leictreach: cóin a roghnú, a shuíomh agus a léamh, agus cláir bhácála foilsithe don bhrioscbhácáil agus don bhácáil glónra, le tábla cón.",
+    "learnWithJohnBritt": "Compánach do Chúrsa Glónra saor in aisce John Britt ar líne: a fhíseáin aonad ar aonad, le treoirleabhair Glazecalc agus cleachtaí san áireamhán.",
     "advice": "Leideanna praiticiúla faoi mheascadh, ghlónrú agus bhácáil, ón aip Glazecalc, agus do chomhairle féin. Saor in aisce do photadóirí agus do cheirmeoirí.",
     "about": "Áireamhán ceimice glónra agus leabhar nótaí saor in aisce, foinse oscailte, is ea Glazecalc. Féach mar a ríomhann sé foirmle Seger (UMF) agus conas a tógadh é.",
     "privacy": "Conas a láimhseálann Glazecalc do shonraí: gan fógraí, gan anailísíocht, gan rianú, ní dhíoltar faic. Cad a choinnítear, cén fáth agus conas do chearta a úsáid.",

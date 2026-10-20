@@ -6,7 +6,9 @@
     "glazingBasics": "Glasuurimise alused – Glazecalc",
     "makingAGlaze": "Glasuuri valmistamine – Glazecalc",
     "safeMixing": "Ohutu segamine ja ventilatsioon – Glazecalc",
+    "homeSafety": "Glasuuriohutus kodus: lapsed, lemmikloomad ja keraamikaahi – Glazecalc",
     "firing": "Põletamine lihtsas keraamikaahjus – Glazecalc",
+    "learnWithJohnBritt": "Õppige John Britti tasuta glasuurikursusega – Glazecalc",
     "about": "Teave – Glazecalc",
     "privacy": "Privaatsus – Glazecalc",
     "terms": "Kasutustingimused – Glazecalc",
@@ -25,9 +27,12 @@
     "notes": "Märkmed – Glazecalc",
     "trash": "Prügikast – Glazecalc",
     "account": "Konto ja sätted – Glazecalc",
+    "apps": "Ühendatud rakendused – Glazecalc",
+    "connect": "Rakenduse ühendamine – Glazecalc",
     "notFound": "Lehte ei leitud – Glazecalc",
     "shared": "Jagatud retsept – Glazecalc",
-    "assistants": "Glazecalci kasutamine tehisintellekti assistendiga – Glazecalc"
+    "assistants": "Glazecalci kasutamine tehisintellekti assistendiga – Glazecalc",
+    "confirm": "Muudatuse heakskiitmine – Glazecalc"
   },
   "nav": {
     "skip": "Liigu sisu juurde",
@@ -90,6 +95,7 @@
     "safeMixing": "Kuidas hoida glasuuritolm oma kopsudest ja ahjuaurud oma kodust eemal: ohutud harjumused, respiraatorid, koristamine, ventilatsioon ja riskantsed toorained.",
     "homeSafety": "Mida teha, kui laps või lemmikloom neelab glasuuri tooraine alla, ja kuidas hoida toorained, tolm, ahi ja käsitsi valmistatud nõud pere läheduses ohutuna.",
     "firing": "Kuidas põletada elektriahjus: koonuste valimine, paigutamine ja lugemine ning avaldatud eel- ja glasuuripõletuse programmide järgimine. Koos koonuste tabeliga.",
+    "learnWithJohnBritt": "Kaaslane John Britti tasuta veebipõhisele glasuurikursusele: tema videod osade kaupa, Glazecalci juhendid lugemiseks ja harjutused kalkulaatoris.",
     "advice": "Praktilised nõuanded keraamika glasuuride segamise, glasuurimise ja põletamise kohta Glazecalcilt, lisaks teie enda nõuanded. Tasuta keraamikutele.",
     "about": "Glazecalc on tasuta avatud lähtekoodiga glasuurikeemia kalkulaator ja märkmik. Vaadake, kuidas see arvutab Segeri valemi (UMF) ja kuidas see on üles ehitatud.",
     "privacy": "Kuidas Glazecalc teie andmeid käsitleb: reklaame, analüütikat ega jälgimist pole ja midagi ei müüda. Mida säilitatakse, miks ja kuidas oma õigusi kasutada.",

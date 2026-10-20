@@ -566,6 +566,7 @@
       "hesselberth-roy": "Los límites que John Hesselberth y Ron Roy recomiendan para esmaltes estables en gres y porcelana funcionales, a cono 6 y cono 10. Se limitan a una lista corta de materiales, así que el conjunto no tiene intervalo para el bario ni el litio, ni para el zinc a cono 10.",
       "glazecalc": "Las cifras a las que la aplicación avisa cuando cambia materiales: boro, alúmina, sosa y potasa, y magnesia a baja temperatura."
     },
+    "firing": "Límites para",
     "firingUnknown": "Sin elegir",
     "bands": {
       "low": "Baja temperatura, cono 06–02",
@@ -595,6 +596,8 @@
     "saveFailed": "No se ha podido guardar en su cuenta su elección de conjunto de límites, así que sigue en uso el conjunto anterior.",
     "ownLimits": "Estas sugerencias usan los límites propios de Glazecalc, no los de {name}.",
     "firingFromBlock": "De la cocción de la receta ({bands})",
+    "firingFromBlockText": "De la cocción de la receta: {bands}",
+    "chooseAnother": "Elegir otra",
     "bothBands": "La cocción de la receta abarca {bands}, así que se comprueba cada una, una al lado de la otra: un esmalte rara vez se comporta igual en los dos extremos.",
     "fromFiring": "Las cifras son para la cocción de la receta: {band}. Elija arriba una cocción para comprobar otra."
   },
@@ -800,6 +803,18 @@
     "saveHelp": "Marque las probetas que quiere conservar, en el dibujo de arriba. Cada una se guarda como una receta en porcentaje.",
     "nameLabel": "Nombre de las probetas guardadas",
     "defaultName": "Mezcla de {titles}",
+    "chemistry": {
+      "heading": "Química de cada probeta",
+      "help": "Calculada a partir de las recetas, como orientación. Las probetas cocidas le dicen lo que pasa de verdad.",
+      "firing": "Los avisos y el ajuste al cono siguen la cocción de la receta {letter}.",
+      "tile": "Probeta",
+      "cautions": "Avisos",
+      "coneFit": "Ajuste al cono",
+      "fits": "Nada en contra",
+      "cooler": "Parece de menos temperatura",
+      "hotter": "Parece de más temperatura",
+      "skipped": "Sin valorar"
+    },
     "chooseAll": "Elegir todas las probetas",
     "chooseNone": "No elegir ninguna",
     "save": "{count, plural, =0 {Guardar las probetas elegidas} one {Guardar # probeta} many {Guardar # probetas} other {Guardar # probetas}}",
@@ -889,6 +904,8 @@
   },
   "firing": {
     "heading": "Cocción",
+    "summary": "Cocción: {what}",
+    "summaryNone": "Cocción: sin indicar",
     "whatIsCone": "¿Qué significa cono?",
     "scale": "Escala",
     "scales": {

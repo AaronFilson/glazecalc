@@ -566,6 +566,7 @@
       "hesselberth-roy": "Priporočene meje Johna Hesselbertha in Rona Roya za stabilne glazure na uporabni kamenini in porcelanu, pri stožcu 6 in stožcu 10. Omejijo se na kratek seznam surovin, zato skupina nima razpona za barij ali litij, niti za cink pri stožcu 10.",
       "glazecalc": "Vrednosti, pri katerih aplikacija opozori, ko zamenja surovine: bor, glinica, natrij in kalij ter magnezij pri nizkem žganju."
     },
+    "firing": "Meje za žganje",
     "firingUnknown": "Ni izbrano",
     "bands": {
       "low": "Nizko žganje, stožec 06–02",
@@ -595,6 +596,8 @@
     "saveFailed": "Vaše izbire skupine mej ni bilo mogoče shraniti v vaš račun, zato je še vedno v uporabi prejšnja skupina mej.",
     "ownLimits": "Ti predlogi uporabljajo lastne meje Glazecalc, ne skupine mej {name}.",
     "firingFromBlock": "Po žganju recepta ({bands})",
+    "firingFromBlockText": "Po žganju recepta: {bands}",
+    "chooseAnother": "Izberi drugo",
     "bothBands": "Žganje recepta zajema {bands}, zato se vsako preveri posebej, drugo ob drugem: glazura se redko obnaša enako na obeh koncih.",
     "fromFiring": "Številke veljajo za žganje recepta: {band}. Zgoraj izberite žganje, če želite preveriti drugo."
   },
@@ -800,6 +803,18 @@
     "saveHelp": "Označite ploščice, ki jih želite obdržati, na zgornji risbi. Vsaka se shrani kot recept v odstotkih.",
     "nameLabel": "Ime za shranjene ploščice",
     "defaultName": "Testna serija {titles}",
+    "chemistry": {
+      "heading": "Kemija po ploščicah",
+      "help": "Izračunano iz receptov, kot vodilo. Kaj se zares zgodi, pokažejo žgane ploščice.",
+      "firing": "Opozorila in ujemanje s stožcem sledijo žganju recepta {letter}.",
+      "tile": "Ploščica",
+      "cautions": "Opozorila",
+      "coneFit": "Ujemanje s stožcem",
+      "fits": "Nič ne govori proti",
+      "cooler": "Videti hladnejša",
+      "hotter": "Videti vročejša",
+      "skipped": "Ni ocenjeno"
+    },
     "chooseAll": "Izberi vse ploščice",
     "chooseNone": "Ne izberi nobene",
     "save": "{count, plural, =0 {Shrani izbrane ploščice} one {Shrani # ploščico} two {Shrani # ploščici} few {Shrani # ploščice} other {Shrani # ploščic}}",
@@ -889,6 +904,8 @@
   },
   "firing": {
     "heading": "Žganje",
+    "summary": "Žganje: {what}",
+    "summaryNone": "Žganje: ni nastavljeno",
     "whatIsCone": "Kaj pomeni stožec?",
     "scale": "Lestvica",
     "scales": {

@@ -281,92 +281,92 @@ Ein **Kegel-Offset** ist eine Einstellung der Steuerung, die ihre Temperatur fü
 
 :::sk
 
-## Firing to SK cones {#sk-cones lang=en}
+## Brennen nach SK-Kegeln {#sk-cones}
 
-SK cones are the pyrometric cones made to Japan's standard, JIS R 8101, and sold in Japan by dealers such as Yuko Trading (有恒商事). Like any cone, an SK cone measures heatwork, not temperature alone: it softens and bends over when the ware has had enough heat, and you read how far it bent. Witness cones, reading how far a cone has bent, and holds work for it as for any cone. This section names each cone's system, and never turns an SK number into another system's number: the numbers of different cone series are not interchangeable.
+SK-Kegel sind die pyrometrischen Kegel nach der japanischen Norm JIS R 8101; in Japan verkaufen sie Händler wie Yuko Trading (有恒商事). Wie jeder Kegel{{en: cone}} misst ein SK-Kegel die Wärmearbeit{{en: heatwork}}, nicht die Temperatur allein: Er wird weich und biegt sich um, wenn die Ware genug Hitze bekommen hat, und Sie lesen ab, wie weit er sich gebogen hat. Messkegel{{en: witness cone}}, das Ablesen, wie weit sich ein Kegel gebogen hat, und Haltezeiten{{en: hold}} funktionieren bei ihm wie bei jedem Kegel. Dieser Abschnitt nennt bei jedem Kegel sein System und macht aus einer SK-Nummer nie die Nummer eines anderen Systems: Die Nummern verschiedener Kegelreihen sind nicht austauschbar.
 
 > [!NOTE]
-> Always write "SK" before the number. Many older Japanese recipes say only "SK 8" or "SK 9" without saying whose cone. Kyoto cones and SK cones to JIS carry the same numbers but bend at different temperatures (see Kyoto cones, below).
+> Schreiben Sie immer „SK“ vor die Nummer. Viele ältere japanische Rezepte sagen nur „SK 8“ oder „SK 9“, ohne zu sagen, wessen Kegel gemeint ist. Kyoto-Kegel und SK-Kegel nach JIS tragen dieselben Nummern, biegen sich aber bei verschiedenen Temperaturen (siehe Kyoto-Kegel, unten).
 
-### The large cones
+### Die großen Kegel
 
-The standard has two sizes. Large cones (大型コーン) are "mainly used for measuring the degree of firing" (焼度測定), which is what a potter wants. Small cones (SK 26 to SK 42, at the top of the range) are "mainly used for refractoriness tests" and are not covered here. The table below gives the large cones from SK 022 to SK 20.
+Die Norm kennt zwei Größen. Große Kegel (大型コーン) dienen „hauptsächlich zur Messung des Brenngrads“ (焼度測定), und genau das braucht man in der Töpferei. Kleine Kegel (SK 26 bis SK 42, am oberen Ende der Reihe) dienen „hauptsächlich zur Prüfung der Feuerfestigkeit“ und werden hier nicht behandelt. Die Tabelle unten nennt die großen Kegel von SK 022 bis SK 20.
 
-The numbers run from SK 022, the coolest, up to SK 20 here. Between SK 015 and SK 6 the printed numbers carry an "a" (SK 015a, SK 6a); write it as printed.
+Die Nummern reichen hier von SK 022, dem kühlsten, bis SK 20. Zwischen SK 015 und SK 6 tragen die gedruckten Nummern ein „a“ (SK 015a, SK 6a); schreiben Sie es so, wie es gedruckt ist.
 
-### Setting large cones
+### Große Kegel aufstellen
 
-Set each large cone in a plaque or a pat of clay, leaning toward its bending face. As with any cone, keep the height and the lean the same from firing to firing, because a difference in either changes how far it bends. Set the three cones of the pack (below) together, deep in the kiln near the middle of the load, where they get the heat the ware gets, yet where you can see them through a peephole; before you close the kiln, check that you can see all three.
+Stecken Sie jeden großen Kegel in eine Unterlegplatte oder einen Tonklumpen, zu seiner Biegeseite hin geneigt. Halten Sie wie bei jedem Kegel Höhe und Neigung von Brand zu Brand gleich, denn ein Unterschied in einem von beiden ändert, wie weit er sich biegt. Stellen Sie die drei Kegel des Kegelsatzes{{en: cone pack}} (unten) zusammen auf, tief im Ofen nahe der Mitte des Besatzes, wo sie die Hitze bekommen, die die Ware bekommt, und wo Sie sie dennoch durch ein Schauloch sehen können; prüfen Sie, bevor Sie den Ofen schließen, dass Sie alle drei sehen.
 
-### Guide, firing and guard cones
+### Führungs-, Haupt- und Wachkegel
 
-Cones are sold and set as three: a guide cone, a firing cone at the target, and a guard cone. Take the firing cone as the SK number your recipe or clay names, the guide cone as the next cooler cone (one row up in the table) and the guard cone as the next hotter one. When the guide cone starts to bend, the end is near; when the guard cone bends, the firing has gone too far.
+Kegel werden zu dritt verkauft und aufgestellt: ein Führungskegel, ein Hauptkegel beim Ziel und ein Wachkegel. Nehmen Sie als Hauptkegel die SK-Nummer, die Ihr Rezept oder Ihr Ton nennt, als Führungskegel den nächstkühleren Kegel (eine Zeile höher in der Tabelle) und als Wachkegel den nächstheißeren. Wenn sich der Führungskegel zu biegen beginnt, ist das Ende nahe; wenn sich der Wachkegel biegt, ist der Brand zu weit gegangen.
 
-### The SK chart
+### Die SK-Tabelle
 
-Table: SK large cones (JIS R 8101): the nominal (JIS) temperature of each
-Label: SK chart
+Table: Große SK-Kegel (JIS R 8101): die Nenntemperatur (JIS) jedes Kegels
+Label: SK-Tabelle
 
-| Cone    | Nominal (JIS) temperature |
-| ------- | ------------------------: |
-| SK 022  |       {{1112 °F; 600 °C}} |
-| SK 021  |       {{1202 °F; 650 °C}} |
-| SK 020  |       {{1238 °F; 670 °C}} |
-| SK 019  |       {{1274 °F; 690 °C}} |
-| SK 018  |       {{1310 °F; 710 °C}} |
-| SK 017  |       {{1346 °F; 730 °C}} |
-| SK 016  |       {{1382 °F; 750 °C}} |
-| SK 015a |       {{1454 °F; 790 °C}} |
-| SK 014a |       {{1499 °F; 815 °C}} |
-| SK 013a |       {{1535 °F; 835 °C}} |
-| SK 012a |       {{1571 °F; 855 °C}} |
-| SK 011a |       {{1616 °F; 880 °C}} |
-| SK 010a |       {{1652 °F; 900 °C}} |
-| SK 09a  |       {{1688 °F; 920 °C}} |
-| SK 08a  |       {{1724 °F; 940 °C}} |
-| SK 07a  |       {{1760 °F; 960 °C}} |
-| SK 06a  |       {{1796 °F; 980 °C}} |
-| SK 05a  |      {{1832 °F; 1000 °C}} |
-| SK 04a  |      {{1868 °F; 1020 °C}} |
-| SK 03a  |      {{1904 °F; 1040 °C}} |
-| SK 02a  |      {{1940 °F; 1060 °C}} |
-| SK 01a  |      {{1976 °F; 1080 °C}} |
-| SK 1a   |      {{2012 °F; 1100 °C}} |
-| SK 2a   |      {{2048 °F; 1120 °C}} |
-| SK 3a   |      {{2084 °F; 1140 °C}} |
-| SK 4a   |      {{2120 °F; 1160 °C}} |
-| SK 5a   |      {{2156 °F; 1180 °C}} |
-| SK 6a   |      {{2192 °F; 1200 °C}} |
-| SK 7    |      {{2246 °F; 1230 °C}} |
-| SK 8    |      {{2282 °F; 1250 °C}} |
-| SK 9    |      {{2336 °F; 1280 °C}} |
-| SK 10   |      {{2372 °F; 1300 °C}} |
-| SK 11   |      {{2408 °F; 1320 °C}} |
-| SK 12   |      {{2462 °F; 1350 °C}} |
-| SK 13   |      {{2516 °F; 1380 °C}} |
-| SK 14   |      {{2570 °F; 1410 °C}} |
-| SK 15   |      {{2615 °F; 1435 °C}} |
-| SK 16   |      {{2660 °F; 1460 °C}} |
-| SK 17   |      {{2696 °F; 1480 °C}} |
-| SK 18   |      {{2732 °F; 1500 °C}} |
-| SK 19   |      {{2768 °F; 1520 °C}} |
-| SK 20   |      {{2786 °F; 1530 °C}} |
+| Kegel   | Nenntemperatur (JIS) |
+| ------- | -------------------: |
+| SK 022  |  {{1112 °F; 600 °C}} |
+| SK 021  |  {{1202 °F; 650 °C}} |
+| SK 020  |  {{1238 °F; 670 °C}} |
+| SK 019  |  {{1274 °F; 690 °C}} |
+| SK 018  |  {{1310 °F; 710 °C}} |
+| SK 017  |  {{1346 °F; 730 °C}} |
+| SK 016  |  {{1382 °F; 750 °C}} |
+| SK 015a |  {{1454 °F; 790 °C}} |
+| SK 014a |  {{1499 °F; 815 °C}} |
+| SK 013a |  {{1535 °F; 835 °C}} |
+| SK 012a |  {{1571 °F; 855 °C}} |
+| SK 011a |  {{1616 °F; 880 °C}} |
+| SK 010a |  {{1652 °F; 900 °C}} |
+| SK 09a  |  {{1688 °F; 920 °C}} |
+| SK 08a  |  {{1724 °F; 940 °C}} |
+| SK 07a  |  {{1760 °F; 960 °C}} |
+| SK 06a  |  {{1796 °F; 980 °C}} |
+| SK 05a  | {{1832 °F; 1000 °C}} |
+| SK 04a  | {{1868 °F; 1020 °C}} |
+| SK 03a  | {{1904 °F; 1040 °C}} |
+| SK 02a  | {{1940 °F; 1060 °C}} |
+| SK 01a  | {{1976 °F; 1080 °C}} |
+| SK 1a   | {{2012 °F; 1100 °C}} |
+| SK 2a   | {{2048 °F; 1120 °C}} |
+| SK 3a   | {{2084 °F; 1140 °C}} |
+| SK 4a   | {{2120 °F; 1160 °C}} |
+| SK 5a   | {{2156 °F; 1180 °C}} |
+| SK 6a   | {{2192 °F; 1200 °C}} |
+| SK 7    | {{2246 °F; 1230 °C}} |
+| SK 8    | {{2282 °F; 1250 °C}} |
+| SK 9    | {{2336 °F; 1280 °C}} |
+| SK 10   | {{2372 °F; 1300 °C}} |
+| SK 11   | {{2408 °F; 1320 °C}} |
+| SK 12   | {{2462 °F; 1350 °C}} |
+| SK 13   | {{2516 °F; 1380 °C}} |
+| SK 14   | {{2570 °F; 1410 °C}} |
+| SK 15   | {{2615 °F; 1435 °C}} |
+| SK 16   | {{2660 °F; 1460 °C}} |
+| SK 17   | {{2696 °F; 1480 °C}} |
+| SK 18   | {{2732 °F; 1500 °C}} |
+| SK 19   | {{2768 °F; 1520 °C}} |
+| SK 20   | {{2786 °F; 1530 °C}} |
 
-Every figure is nominal (JIS): the temperature the standard gives for the cone, as printed in Yuko Trading's table. The table does not print a heating rate. The standard gives reference temperatures. At a potter's rate of about 100 °C/h, Kyoto's municipal institute measured its own Kyoto cones bending 47–79 °C cooler than the JIS figure for the same number; we found no such measurements for SK cones to JIS. Set a witness cone and compare.
+Jeder Wert ist ein Nennwert (JIS): die Temperatur, die die Norm für den Kegel angibt, wie sie in der Tabelle von Yuko Trading gedruckt ist. Die Tabelle nennt keine Heizrate. Die Norm gibt Bezugstemperaturen an. Bei einer in der Töpferei üblichen Heizrate von etwa 100 °C/h hat Kyotos städtisches Institut gemessen, dass sich seine eigenen Kyoto-Kegel 47–79 °C kühler biegen als der JIS-Wert für dieselbe Nummer; für SK-Kegel nach JIS haben wir keine solchen Messungen gefunden. Stellen Sie einen Messkegel auf und vergleichen Sie.
 
-### Kyoto cones
+### Kyoto-Kegel
 
-Kyoto cones (京都ゼーゲル), made by Kyoto's municipal institute, are no longer made: news reports say the institute ended production at the close of fiscal 2009. They carry the same numbers as SK cones to JIS but bend cooler: a Kyoto cone bends at about the temperature of the SK cone to JIS two or three numbers lower. A recipe from Kyoto that says "SK 8" may mean a Kyoto cone. The institute has published advice for potters moving from Kyoto cones to Orton cones, and substitutes Orton cone 10 for its own Kyoto SK 12. That is the institute's choice from its own measurements: it bent Kyoto cones and Orton cones in the same kiln at 100 °C/h, and Kyoto SK 12 (1290 °C) bent where Orton 10 (1290 °C) did. In the same table Kyoto SK 8 (1198 °C) bent near Orton 5 (1207 °C), and Kyoto SK 10 (1232 °C) where Orton 7 (1232 °C) did. Glazecalc uses this table, not the Orton chart at 60 °C/h, when it shows an SK cone beside an Orton cone, and says each match is approximate.
+Kyoto-Kegel (京都ゼーゲル), hergestellt von Kyotos städtischem Institut, werden nicht mehr hergestellt: Laut Presseberichten hat das Institut die Herstellung zum Ende des Geschäftsjahres 2009 eingestellt. Sie tragen dieselben Nummern wie SK-Kegel nach JIS, biegen sich aber kühler: Ein Kyoto-Kegel biegt sich bei etwa der Temperatur des SK-Kegels nach JIS, dessen Nummer zwei oder drei niedriger ist. Ein Rezept aus Kyoto, das „SK 8“ sagt, kann einen Kyoto-Kegel meinen. Das Institut hat Hinweise für Töpferinnen und Töpfer veröffentlicht, die von Kyoto-Kegeln zu Ortonkegeln wechseln, und ersetzt seinen eigenen Kyoto-Kegel SK 12 durch Ortonkegel 10. Das ist die Wahl des Instituts aufgrund seiner eigenen Messungen: Es hat Kyoto-Kegel und Ortonkegel im selben Ofen bei 100 °C/h gebrannt, und Kyoto-SK 12 (1290 °C) bog sich dort, wo sich Ortonkegel 10 (1290 °C) bog. In derselben Tabelle bog sich Kyoto-SK 8 (1198 °C) nahe bei Ortonkegel 5 (1207 °C) und Kyoto-SK 10 (1232 °C) dort, wo sich Ortonkegel 7 (1232 °C) bog. Glazecalc verwendet diese Tabelle, nicht Ortons Tabelle bei 60 °C/h, wenn es einen SK-Kegel neben einem Ortonkegel zeigt, und gibt jede Entsprechung als ungefähr an.
 
-### Orton cones sold in Japan
+### In Japan verkaufte Ortonkegel
 
-Orton self-supporting cones are sold in Japan under the name 立つゼーゲル ("standing Seger"), because they need no plaque or stand. They are Orton cones, with Orton's numbers and Orton's chart (above): fire to one only by its Orton number, and keep SK and Orton cones in separate packs, never in the same one.
+Selbststehende Ortonkegel werden in Japan unter dem Namen 立つゼーゲル („stehender Seger“) verkauft, weil sie weder Unterlegplatte noch Halter brauchen. Es sind Ortonkegel, mit Ortons Nummern und Ortons Tabelle (oben): Brennen Sie auf einen solchen Kegel nur nach seiner Orton-Nummer, und halten Sie SK- und Ortonkegel in getrennten Kegelsätzen, nie im selben.
 
-### Sources for SK cones
+### Quellen zu SK-Kegeln
 
-- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (the SK table, checked 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
-- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (in force, reconfirmed 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
-- [Kyoto Municipal Institute of Industrial Technology and Culture: points to note when moving from Kyoto cones to Orton cones](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
+- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (die SK-Tabelle, geprüft am 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
+- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (in Kraft, bestätigt am 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
+- [Kyoto Municipal Institute of Industrial Technology and Culture: Hinweise zum Wechsel von Kyoto-Kegeln zu Ortonkegeln](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
 
 :::
 

@@ -6,7 +6,9 @@
     "glazingBasics": "기초부터 배우는 유약 - Glazecalc",
     "makingAGlaze": "유약 만드는 법 - Glazecalc",
     "safeMixing": "안전한 유약 배합과 환기 - Glazecalc",
+    "homeSafety": "집에서의 유약 안전: 아이, 반려동물, 가마 - Glazecalc",
     "firing": "기본 가마 소성 - Glazecalc",
+    "learnWithJohnBritt": "John Britt의 무료 유약 강좌로 배우기 - Glazecalc",
     "about": "소개 - Glazecalc",
     "privacy": "개인정보 - Glazecalc",
     "terms": "이용약관 - Glazecalc",
@@ -25,9 +27,12 @@
     "notes": "메모 - Glazecalc",
     "trash": "휴지통 - Glazecalc",
     "account": "계정과 설정 - Glazecalc",
+    "apps": "연결된 앱 - Glazecalc",
+    "connect": "앱 연결 - Glazecalc",
     "notFound": "찾을 수 없음 - Glazecalc",
     "shared": "공유된 레시피 - Glazecalc",
-    "assistants": "AI 어시스턴트에서 Glazecalc 사용하기 - Glazecalc"
+    "assistants": "AI 어시스턴트에서 Glazecalc 사용하기 - Glazecalc",
+    "confirm": "변경 승인 - Glazecalc"
   },
   "nav": {
     "skip": "본문으로 건너뛰기",
@@ -90,6 +95,7 @@
     "safeMixing": "유약 분진이 폐에 들어가지 않게, 가마에서 나오는 가스가 집 안에 들어오지 않게 하는 법: 안전한 습관, 방진마스크, 청소, 환기, 위험한 원료.",
     "homeSafety": "아이나 반려동물이 유약 원료를 삼켰을 때 할 일과, 원료, 분진, 가마, 수제 기물을 가족 곁에서 안전하게 다루는 법을 설명합니다.",
     "firing": "전기가마를 소성하는 법: 콘을 고르고 놓고 읽는 법, 초벌과 재벌의 공개된 소성 스케줄, 콘 온도표를 담았습니다.",
+    "learnWithJohnBritt": "John Britt의 무료 온라인 Glaze Course와 함께 보는 안내서: 그의 영상을 단원별로, 읽을 Glazecalc 가이드와 계산기에서 해 볼 연습과 함께 소개합니다.",
     "advice": "Glazecalc 앱이 알려 드리는 배합, 시유, 소성에 관한 실용적인 조언과 직접 적은 조언을 볼 수 있습니다. 도예가를 위한 무료 서비스입니다.",
     "about": "Glazecalc 앱은 무료 오픈 소스 유약 화학 계산기이자 노트입니다. 제게르식을 계산하는 방법과 만들어진 방식을 소개합니다.",
     "privacy": "Glazecalc 앱이 데이터를 다루는 방법: 광고, 분석, 추적이 없고 판매하지 않습니다. 보관하는 정보와 이유, 권리를 행사하는 방법을 안내합니다.",

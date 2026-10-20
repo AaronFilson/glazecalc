@@ -6,7 +6,9 @@
     "glazingBasics": "El esmaltado desde sus fundamentos - Glazecalc",
     "makingAGlaze": "Cómo preparar un esmalte - Glazecalc",
     "safeMixing": "Preparación segura y ventilación - Glazecalc",
+    "homeSafety": "Seguridad con los esmaltes en casa: niños, mascotas y el horno - Glazecalc",
     "firing": "La cocción en un horno sencillo - Glazecalc",
+    "learnWithJohnBritt": "Aprenda con el curso gratuito de esmaltes de John Britt - Glazecalc",
     "about": "Acerca de - Glazecalc",
     "privacy": "Privacidad - Glazecalc",
     "terms": "Condiciones de uso - Glazecalc",
@@ -25,9 +27,12 @@
     "notes": "Notas - Glazecalc",
     "trash": "Papelera - Glazecalc",
     "account": "Su cuenta y ajustes - Glazecalc",
+    "apps": "Aplicaciones conectadas - Glazecalc",
+    "connect": "Conectar una aplicación - Glazecalc",
     "notFound": "Página no encontrada - Glazecalc",
     "shared": "Receta compartida - Glazecalc",
-    "assistants": "Usar Glazecalc desde su asistente de IA - Glazecalc"
+    "assistants": "Usar Glazecalc desde su asistente de IA - Glazecalc",
+    "confirm": "Aprobar un cambio - Glazecalc"
   },
   "nav": {
     "skip": "Ir al contenido",
@@ -90,6 +95,7 @@
     "safeMixing": "Cómo alejar el polvo de esmalte de sus pulmones y los humos del horno de su casa: hábitos seguros, mascarillas, limpieza, ventilación y materiales de riesgo.",
     "homeSafety": "Qué hacer si un niño o una mascota traga un material de esmalte, y cómo tener los materiales, el polvo, el horno y las piezas caseras seguros para su familia.",
     "firing": "Cómo cocer en un horno eléctrico: elegir, colocar y leer los conos, y seguir curvas publicadas para bizcocho y esmalte, con una tabla de conos.",
+    "learnWithJohnBritt": "Complemento del curso gratuito de esmaltes de John Britt: sus vídeos unidad a unidad, con guías de Glazecalc y ejercicios para probar en la calculadora.",
     "advice": "Consejos prácticos para preparar, aplicar y cocer esmaltes cerámicos, de Glazecalc, y los consejos que usted añada. Gratuito para alfareros y ceramistas.",
     "about": "Glazecalc: calculadora y cuaderno de química de esmaltes cerámicos, gratuitos y de código abierto. Vea cómo calcula la fórmula Seger (UMF) y cómo está hecho.",
     "privacy": "Cómo trata Glazecalc sus datos: sin anuncios, sin analítica y sin seguimiento, y nada se vende. Qué se conserva, por qué y cómo ejercer sus derechos.",
