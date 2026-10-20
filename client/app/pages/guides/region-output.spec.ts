@@ -39,6 +39,9 @@ const html = async (component: Type<unknown>, region: string): Promise<string> =
     .replace(/<gc-region-select>[\s\S]*?<\/gc-region-select>/g, '');
 };
 
+// The region chosen here is kept in this browser's storage: none is left for the next file's tests.
+afterEach(() => localStorage.clear());
+
 describe('region blocks before Turkey', () => {
   beforeEach(() => {
     localStorage.clear();

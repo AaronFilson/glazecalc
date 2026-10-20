@@ -130,11 +130,13 @@ describe('SettingsSection', () => {
     expect(options[0]).toBe('Not chosen');
     expect(options).toContain('Germany');
     expect(options).toContain('United States');
-    // By continent, each with its heading.
+    // By continent, each with its heading: Africa's since Egypt, Morocco and Algeria are regions.
     const headings = [...fixture.nativeElement.querySelectorAll('[role="group"] > [role="presentation"]')].map(
       (h: HTMLElement) => h.textContent?.trim()
     );
-    expect(headings).toEqual(['Americas', 'Asia', 'Europe', 'Oceania']);
+    expect(headings).toEqual(['Africa', 'Americas', 'Asia', 'Europe', 'Oceania']);
+    expect(options).toContain('India');
+    expect(options).toContain('Algeria');
     await choosePicked(fixture, region, 'Germany');
     const req = httpMock().expectOne(API + '/preferences');
     expect(req.request.body).toEqual({ region: 'DE' });

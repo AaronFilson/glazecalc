@@ -114,7 +114,8 @@ for (const [where, viewport] of Object.entries({
       await expect(field).toHaveValue('Not chosen');
       await field.click();
       const list = page.getByRole('listbox', { name: 'Where you work' });
-      await expect(list.locator('.picker-heading')).toHaveText(['Americas', 'Asia', 'Europe', 'Oceania']);
+      // Africa's since Egypt, Morocco and Algeria are regions.
+      await expect(list.locator('.picker-heading')).toHaveText(['Africa', 'Americas', 'Asia', 'Europe', 'Oceania']);
       await expect(list.getByRole('option').first()).toHaveText('Not chosen');
       await insideWindow(page, list);
       await accessible(page, 'the open list of regions');

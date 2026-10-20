@@ -33,6 +33,8 @@ beforeEach(() => {
   localStorage.clear();
   TestBed.configureTestingModule({ providers: testProviders() });
 });
+// The region chosen here is kept in this browser's storage: none is left for the next file's tests.
+afterEach(() => localStorage.clear());
 
 describe('ShopList', () => {
   it("lists shops in the reader's country, linked, with what they sell and the packs seen", async () => {
