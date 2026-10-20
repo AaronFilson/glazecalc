@@ -525,8 +525,9 @@ describe('regions before China', () => {
     ]);
     data.push(['EU', food.FOOD['EU'], workplace.EU_SILICA]);
     const hash = crypto.createHash('sha256').update(JSON.stringify(data)).digest('hex');
-    // Changed once on purpose: Taiwan's 119 note now says when to dial 112 (2026-10-16).
-    expect(hash).to.equal('febe2efd7c2270fe3f4a3bbee8e9f5dcaf58f149289d8f40b572dcc363d9a121');
+    // Changed on purpose: Taiwan's 119 note now says when to dial 112 (2026-10-16), and says
+    // plainly what 112 does when a mobile has no signal (2026-10-20).
+    expect(hash).to.equal('015ebbf8346d0a0c81f386822a7134f35ef205f8b8bcb2d3d7bb23b2be7f07a3');
   });
 });
 
@@ -549,8 +550,9 @@ describe('regions before Vietnam', () => {
     ]);
     data.push(['EU', food.FOOD['EU'], workplace.EU_SILICA]);
     const hash = crypto.createHash('sha256').update(JSON.stringify(data)).digest('hex');
-    // Changed once on purpose: Indonesia's note says 118 reaches an ambulance only in some cities (2026-10-17).
-    expect(hash).to.equal('3be139b8dee54347792b02d227c5b695386a3644be018fea134f66c8854bb147');
+    // Changed on purpose: Indonesia's note says 118 reaches an ambulance only in some cities (2026-10-17);
+    // Taiwan's 112 note says plainly what 112 does (2026-10-20).
+    expect(hash).to.equal('b01d7c8ef0a6223d850dbb1e581d83788378dad10225fd76d8b9114801a8942b');
   });
 });
 

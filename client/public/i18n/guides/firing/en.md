@@ -607,7 +607,7 @@ For venting the room, and for carbon monoxide alarms, see [Safe mixing and venti
 ### While the kiln is firing
 
 - Look through a peephole only with IR-rated shade 3 welding glasses; sunglasses are not enough. Skutt advises twisting the plugs into place so they do not fall out.
-- Do not leave the kiln unattended beyond its expected firing time; a sitter is not a fail-safe.
+- Stay nearby and check the kiln while it fires, above all near its expected finishing time; a sitter is not a fail-safe. Fire only when an adult will be home and awake through the whole firing.
 - Never fire on or near anything that burns, such as a wood floor or carpet.
 - Keep the clearances in your manual. Published figures range from 12 in (30 cm) to 3 ft (91 cm); where the manual is silent, 18 in (46 cm) from walls and 3 ft (91 cm) from anything that burns is the safest choice.
 - Keep the space around the sitter's weight clear so it can drop.
