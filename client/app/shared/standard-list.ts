@@ -98,14 +98,18 @@ const FIRST_SHOWN = 25;
           @for (record of listed(); track record._id ?? record.name) {
             <tr [class.not-current]="record.status && record.status !== 'current'">
               <td class="standard-name">
-                {{ record.name }}
+                <bdi>{{ record.name }}</bdi
+                >&ngsp;
                 @if (statusText(record); as status) {
                   <span class="status-badge">{{ status }}</span>
                 }
                 <!-- What it is, its formula, what is like it and where the figures come from: on demand. -->
                 <details class="standard-detail">
                   <summary>
-                    {{ t('standard.details') }}<span class="visually-hidden">: {{ record.name }}</span>
+                    {{ t('standard.details')
+                    }}<span class="visually-hidden"
+                      >: <bdi>{{ record.name }}</bdi></span
+                    >
                   </summary>
                   <p class="standard-notes">{{ standardText(record, firstOf(record.notes)) }}</p>
                   @if (record.rawformula) {
@@ -138,7 +142,9 @@ const FIRST_SHOWN = 25;
                     <p>
                       {{ t('standard.source') }}
                       @if (source.url) {
-                        <a [href]="source.url" target="_blank" rel="noopener">{{ source.name }}</a>
+                        <a [href]="source.url" target="_blank" rel="noopener"
+                          ><bdi>{{ source.name }}</bdi></a
+                        >
                       } @else {
                         {{ source.name }}
                       }

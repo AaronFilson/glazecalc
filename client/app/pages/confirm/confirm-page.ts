@@ -8,6 +8,7 @@ import { API_BASE } from '../../core/api-base';
 import { AuthService } from '../../core/auth.service';
 import { errorMessage } from '../../core/error-message';
 import { said, type Said } from '../../core/tokens.service';
+import { forwardArrow } from '../../shared/bidi';
 import { DatePipe } from '../../shared/format-pipes';
 import { PageHeader } from '../../shared/page-header';
 
@@ -93,7 +94,7 @@ export const SHORT_TEXT = 300;
               @if (f.before !== undefined) {
                 <dd class="before">
                   <span class="visually-hidden">{{ t('account.confirm.now') }}</span>
-                  <span class="value" [class.empty]="!f.before">{{ shown(c.id, f.field, 'before', f.before) }}</span>
+                  <bdi class="value" [class.empty]="!f.before">{{ shown(c.id, f.field, 'before', f.before) }}</bdi>
                   @if (isLong(f.before)) {
                     <button
                       type="button"
@@ -109,10 +110,10 @@ export const SHORT_TEXT = 300;
               }
               <dd class="after">
                 @if (f.before !== undefined) {
-                  <span aria-hidden="true">→ </span>
+                  <span aria-hidden="true">{{ arrow }} </span>
                 }
                 <span class="visually-hidden">{{ t('account.confirm.after') }}</span>
-                <span class="value" [class.empty]="!f.after">{{ shown(c.id, f.field, 'after', f.after) }}</span>
+                <bdi class="value" [class.empty]="!f.after">{{ shown(c.id, f.field, 'after', f.after) }}</bdi>
                 @if (isLong(f.after)) {
                   <button type="button" class="btn btn-link btn-sm show-all" (click)="toggle(c.id, f.field, 'after')">
                     {{ isOpen(c.id, f.field, 'after') ? t('account.confirm.showLess') : t('account.confirm.showAll') }}
@@ -305,7 +306,7 @@ export const SHORT_TEXT = 300;
       margin-top: 1.5rem;
     }
     .others-list {
-      padding-left: 1.25rem;
+      padding-inline-start: 1.25rem;
     }
     .other-summary {
       margin-bottom: 0.25rem;
@@ -318,6 +319,8 @@ export class ConfirmPage implements OnInit {
   private readonly auth = inject(AuthService);
   private readonly route = inject(ActivatedRoute);
   private readonly injector = inject(Injector);
+  /** Between what a field is now and what it would be: pointing the way the page reads. */
+  protected readonly arrow = forwardArrow();
 
   protected readonly state = signal<'loading' | 'signed-out' | 'missing' | 'failed' | 'shown' | 'decided' | 'answered'>(
     'loading'

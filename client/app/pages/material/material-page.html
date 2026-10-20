@@ -22,7 +22,9 @@
             @for (mat of sortedMyMaterials(); track mat._id) {
               <tr>
                 <td>
-                  <b>{{ mat.name }}</b>
+                  <b
+                    ><bdi>{{ mat.name }}</bdi></b
+                  >
                   <div>
                     <gc-remove-button
                       [name]="removal.nameOf(mat)"

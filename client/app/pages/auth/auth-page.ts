@@ -83,6 +83,7 @@ import { SecondStep } from './second-step';
               <input
                 id="email"
                 type="email"
+                dir="ltr"
                 name="email"
                 class="form-control"
                 required

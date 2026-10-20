@@ -118,7 +118,8 @@ interface Detail {
                 <div class="connection-head">
                   <div class="connection-name">
                     <h3 class="h5 connection-title">
-                      {{ row.name }}
+                      <bdi>{{ row.name }}</bdi
+                      >&ngsp;
                       @if (row.selfDescribed) {
                         <span class="badge-self">{{ t('account.apps.selfDescribed') }}</span>
                       }
@@ -236,7 +237,9 @@ interface Detail {
                           @for (entry of d.moved; track entry._id) {
                             <li>
                               <span class="moved-what">
-                                <strong>{{ entry.title || t('notebook.trash.untitled') }}</strong>
+                                <strong
+                                  ><bdi>{{ entry.title || t('notebook.trash.untitled') }}</bdi></strong
+                                >
                                 <span class="small muted">
                                   {{ t(kindOf(entry.fromCollection)) }} ·
                                   {{ t('notebook.trash.goesOn', { date: (entry.expiresAt | gcDate) }) }}
@@ -275,7 +278,9 @@ interface Detail {
                             <li>
                               <span class="small muted">{{ line.at | gcDate: 'medium' }}</span>
                               {{ t(ACTIONS[line.action].line) }}
-                              <strong>{{ line.title || t('notebook.trash.untitled') }}</strong>
+                              <strong
+                                ><bdi>{{ line.title || t('notebook.trash.untitled') }}</bdi></strong
+                              >
                               <span class="small muted">({{ t(kindOf(line.fromCollection)) }})</span>
                             </li>
                           }
@@ -386,8 +391,8 @@ interface Detail {
     }
     .connection-details {
       margin-top: 0.75rem;
-      padding-left: 0.75rem;
-      border-left: 3px solid var(--gc-border);
+      padding-inline-start: 0.75rem;
+      border-inline-start: 3px solid var(--gc-border);
     }
     .moved-list > li {
       display: flex;

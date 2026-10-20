@@ -893,6 +893,18 @@ main .form-control.is-invalid {
   margin-top: 0.25rem;
 }
 
+// Right to left (shared/bidi.ts; Bootstrap's sides in client/bootstrap.scss). What a potter types, a name or
+// a note, and code take the direction of their own first letter, as dir="auto" does: an English recipe name
+// on an Arabic page reads left to right, and an Arabic one on its right. A field kept left to right (an
+// email, a code, a number) still shows a placeholder in the page's language from the right.
+:where([dir='rtl'])
+  :is(input:not([type]), input[type='text'], input[type='search'], textarea, code, kbd, samp):not([dir]) {
+  unicode-bidi: plaintext;
+}
+:where([dir='rtl']) :is(input, textarea)[dir='ltr']:placeholder-shown {
+  direction: rtl;
+}
+
 /*************** Recipe page **************/
 
 .help-reopen {

@@ -75,6 +75,7 @@ export const totpCheck =
               #first
               id="second-code"
               type="text"
+              dir="ltr"
               name="code"
               class="form-control code-input"
               inputmode="numeric"
@@ -102,6 +103,7 @@ export const totpCheck =
               #first
               id="second-recovery"
               type="text"
+              dir="ltr"
               name="recoveryCode"
               class="form-control code-input"
               autocomplete="off"

@@ -1,13 +1,15 @@
-import { DatePipe } from '../../shared/format-pipes';
+import { DatePipe, IsolatedPipe } from '../../shared/format-pipes';
 import { Component, OnInit, computed, inject, linkedSignal, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterLink } from '@angular/router';
 import { TranslocoDirective, translate } from '@jsverse/transloco';
+import { marker } from '@jsverse/transloco-keys-manager/marker';
 import { ApiResourceFactory } from '../../core/api-resource.service';
 import { errorMessage } from '../../core/error-message';
 import { FiringLinksService } from '../../core/firing-links.service';
 import { LocaleService } from '../../core/locale.service';
 import { Firing, Recipe } from '../../core/models';
+import { sideAsSeen } from '../../shared/bidi';
 import { Busy } from '../../shared/busy';
 import { FORM_GRID_STYLES } from '../../shared/chemistry-form';
 import { FieldCheck, FieldChecks, required } from '../../shared/field-checks';
@@ -20,7 +22,17 @@ import { FiringLog } from './firing-log';
 
 @Component({
   selector: 'gc-firing-page',
-  imports: [DatePipe, FieldCheck, FormsModule, NoticesList, PageHeader, RemoveButton, RouterLink, TranslocoDirective],
+  imports: [
+    DatePipe,
+    FieldCheck,
+    FormsModule,
+    IsolatedPipe,
+    NoticesList,
+    PageHeader,
+    RemoveButton,
+    RouterLink,
+    TranslocoDirective
+  ],
   templateUrl: './firing-page.html',
   // Labels above their fields, as on the recipe and account pages.
   styles: [
@@ -113,6 +125,9 @@ export class FiringPage implements OnInit {
 
   /** A column as the reader reads it; the log keeps its English name. */
   protected readonly fieldLabel = firingFieldLabel;
+  /** Moving a field earlier or later in the log's columns: to the left and right, or the other way on a mirrored page. */
+  protected readonly moveEarlier = sideAsSeen(marker('notebook.firing.moveLeft'));
+  protected readonly moveLater = sideAsSeen(marker('notebook.firing.moveRight'));
   protected readonly firstOf = firstOf;
   protected readonly notices = new Notices();
   protected readonly saving = new Busy();

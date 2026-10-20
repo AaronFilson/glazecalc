@@ -239,14 +239,18 @@
                   <em>{{ t('recipe.page.savedMaterials') }}</em>
                   <ol>
                     @for (part of rec.materials; track $index) {
-                      <li>{{ part.name }} : {{ part.amount | gcPlain }}</li>
+                      <li>
+                        <bdi>{{ part.name }}</bdi> : {{ part.amount | gcPlain }}
+                      </li>
                     }
                   </ol>
                   @if (rec.additives?.length) {
                     <em>{{ t('recipe.page.savedAdditives') }}</em>
                     <ol>
                       @for (add of rec.additives; track $index) {
-                        <li>{{ add.name }} : {{ additiveAmount(add) }}</li>
+                        <li>
+                          <bdi>{{ add.name }}</bdi> : {{ additiveAmount(add) }}
+                        </li>
                       }
                     </ol>
                   }
@@ -421,7 +425,7 @@
                     <span class="recipe-weight">{{ weight }}</span>
                   }
                 </td>
-                <td class="recipe-share">{{ total() ? '100%' : '' }}</td>
+                <td class="recipe-share">{{ totalShare() }}</td>
                 <td></td>
               </tr>
             </tfoot>
@@ -544,7 +548,8 @@
                             (change)="chooseBringIn(short.oxide, choice.name)"
                           />
                           <label class="form-check-label" [for]="'bring-' + short.oxide + '-' + $index">
-                            {{ choice.name }}
+                            <bdi>{{ choice.name }}</bdi
+                            >&ngsp;
                             <span class="muted">{{
                               t('recipe.page.choicePercent', {
                                 percent: (choice.percent | gcFixed: 0),
@@ -695,7 +700,8 @@
                         (change)="chooseLeadBase(choice.name)"
                       />
                       <label class="form-check-label" [for]="'lead-base-' + $index">
-                        {{ choice.name }}
+                        <bdi>{{ choice.name }}</bdi
+                        >&ngsp;
                         <span class="muted">{{
                           t('recipe.page.fritBoron', { boron: (choice.boron | gcFixed: 0) })
                         }}</span>
@@ -1023,7 +1029,9 @@
           <h3 class="unity-additives-heading">{{ t('recipe.page.unityAdditivesHeading') }}</h3>
           <ul class="unity-additives">
             @for (additive of additiveLines(); track $index) {
-              <li>{{ additive.name }} : {{ additiveAmount(additive) }}</li>
+              <li>
+                <bdi>{{ additive.name }}</bdi> : {{ additiveAmount(additive) }}
+              </li>
             }
           </ul>
           <p class="small muted">

@@ -1,4 +1,5 @@
 import { Pipe, PipeTransform } from '@angular/core';
+import { isolated } from './bidi';
 import { fixed, formatDate, formatPlain } from './format';
 
 // Templates' way to shared/format.ts, in place of Angular's number and date
@@ -18,6 +19,17 @@ export class FixedPipe implements PipeTransform {
 export class PlainPipe implements PipeTransform {
   transform(value: string | number | null | undefined): string {
     return formatPlain(value);
+  }
+}
+
+/**
+ * Text of its own direction (a name) kept apart from the text around it on a right-to-left page, where a
+ * <bdi> cannot go: {{ recipe.title | gcIsolated }} in an <option> (shared/bidi.ts). As it is otherwise.
+ */
+@Pipe({ name: 'gcIsolated' })
+export class IsolatedPipe implements PipeTransform {
+  transform(value: string | null | undefined): string {
+    return isolated(value ?? '');
   }
 }
 

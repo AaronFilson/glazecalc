@@ -53,7 +53,9 @@ const OTHER_KIND = marker('notebook.trash.kinds.other');
           @for (entry of entries(); track entry._id) {
             <li>
               <div class="trash-what">
-                <h3 class="h5">{{ nameOf(entry) }}</h3>
+                <h3 class="h5">
+                  <bdi>{{ nameOf(entry) }}</bdi>
+                </h3>
                 <p class="small muted">
                   {{ t(kindOf(entry)) }} · {{ t('notebook.trash.removedOn', { date: (entry.trashedAt | gcDate) }) }} ·
                   {{ t('notebook.trash.goesOn', { date: (entry.expiresAt | gcDate) }) }}

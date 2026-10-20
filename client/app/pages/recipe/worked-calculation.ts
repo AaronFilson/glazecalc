@@ -76,7 +76,9 @@ export function workedResult(
                 <tbody>
                   @for (material of working.materials; track $index) {
                     <tr>
-                      <th scope="row">{{ material.name }}</th>
+                      <th scope="row">
+                        <bdi>{{ material.name }}</bdi>
+                      </th>
                       <td class="num">{{ upTo(material.grams, 3) }}</td>
                     </tr>
                   }

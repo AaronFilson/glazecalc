@@ -2,7 +2,8 @@ import { Injectable, isDevMode } from '@angular/core';
 import { TranslocoTranspiler, TranspileParams } from '@jsverse/transloco';
 import { MessageFormatElement, TYPE } from '@formatjs/icu-messageformat-parser';
 import { IntlMessageFormat } from 'intl-messageformat';
-import { textLanguage } from '../../../lib/regions/languages';
+import { languageFor, textLanguage } from '../../../lib/regions/languages';
+import { isolateUnits, isolateValues, mirrorArrows } from '../shared/bidi';
 import { formatLocale } from '../shared/format';
 
 /**
@@ -37,10 +38,16 @@ export function tagNames(elements: readonly MessageFormatElement[], names = new 
  *
  * Tags are kept, marked as TAG_OPEN says, for gc-rich (i18n/rich-text.ts) to
  * turn into links and emphasis: a message is never HTML.
+ *
+ * On a right-to-left page (shared/bidi.ts) a message's arrows point the way it
+ * reads, each value with letters in it (a name) is kept apart from the sentence,
+ * as <bdi> keeps it, and each value with a Latin unit ("1240 °C") reads left to
+ * right, whether the message or a value wrote it.
  */
 @Injectable()
 export class IcuTranspiler implements TranslocoTranspiler {
   private language = 'en';
+  private rightToLeft = false;
   private readonly compiled = new Map<
     string,
     { format: IntlMessageFormat; tags: Record<string, (chunks: unknown[]) => string> }
@@ -57,15 +64,18 @@ export class IcuTranspiler implements TranslocoTranspiler {
 
   onLangChanged(lang: string): void {
     this.language = textLanguage(lang);
+    this.rightToLeft = languageFor(lang)?.dir === 'rtl';
     this.compiled.clear();
   }
 
   transpile({ value, params, key }: TranspileParams): unknown {
+    if (typeof value !== 'string') return value;
     // Plain text needs no formatting, unless it has an apostrophe: ICU writes one as two (d''Azur).
-    if (typeof value !== 'string' || !/[{<']/.test(value)) return value;
+    if (!/[{<']/.test(value)) return this.rightToLeft ? isolateUnits(mirrorArrows(value)) : value;
     try {
-      const { format, tags } = this.compile(value);
-      return format.format({ ...tags, ...params }) as string;
+      const { format, tags } = this.compile(this.rightToLeft ? mirrorArrows(value) : value);
+      if (!this.rightToLeft) return format.format({ ...tags, ...params }) as string;
+      return isolateUnits(format.format({ ...tags, ...isolateValues(params ?? {}) }) as string);
     } catch (error) {
       // A message that does not fit its values is a mistake to fix, not to show.
       if (isDevMode()) throw new Error(`The message ${key} could not be written: ${(error as Error).message}`);

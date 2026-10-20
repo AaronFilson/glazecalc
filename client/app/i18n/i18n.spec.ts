@@ -299,6 +299,9 @@ describe('translations', () => {
       expect(pseudoMessage('Fire it, then look? SK 8, 1240 °C, {amount} g of K2O in Glazecalc.', 'ar-XD')).toBe(
         'فيري يت، تهين لووك؟ SK 8، 1240 °C، {amount} g وف K2O ين Glazecalc.'
       );
+      expect(pseudoMessage('Fire to SK cones (JIS R 8101), cone 6.', 'ar-XD')).toBe(
+        'فيري تو SK كونيس (JIS R 8101)، كوني 6.'
+      );
       const plural = pseudoMessage('{count, plural, one {# material} other {# materials}} in <b>{name}</b>', 'ar-XD');
       for (const form of ['zero', 'one', 'two', 'few', 'many', 'other']) expect(plural).toContain(`${form}{# `);
       const transpiler = new IcuTranspiler();

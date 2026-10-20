@@ -23,7 +23,7 @@ let nextId = 0;
         <ul class="try-list" [attr.aria-label]="t('recipe.tryMaterials.list', { list: list(), count: tries().length })">
           @for (tried of tries(); track tried.material.name; let i = $index) {
             <li>
-              <span class="try-name">{{ tried.material.name }}</span>
+              <bdi class="try-name">{{ tried.material.name }}</bdi>
               <span class="form-check form-check-inline">
                 <input
                   class="form-check-input"

@@ -67,14 +67,18 @@ function japaneseText(text: string): string {
 /** Units and names a translation keeps in Latin letters. */
 const KEPT_WORDS = new Set(['g', 'kg', 'lb', 'lbs', 'oz', 'ml', 'mm', 'cm', 'Glazecalc', 'Orton', 'Google', 'GitHub']);
 
-/** Whether a word stays in Latin letters: a unit, a name, an acronym (SK, LOI) or part of a formula (SiO₂, K2O, °C). */
+/**
+ * Whether a word stays in Latin letters: a unit, a name, an acronym (SK, LOI), part of a formula (SiO₂, K2O,
+ * °C) or of a standard's number (JIS R 8101).
+ */
 function keptLatin(word: string, before: string, after: string): boolean {
   return (
     KEPT_WORDS.has(word) ||
     /^[A-Z]{2,}s?$/.test(word) ||
+    (/^[A-Z]$/.test(word) && /^ \d/.test(after)) ||
     /[A-Z]/.test(word.slice(1)) ||
     /[\d\u2080-\u2089°]/.test(before) ||
-    /[\d\u2080-\u2089]/.test(after)
+    /[\d\u2080-\u2089]/.test(after.charAt(0))
   );
 }
 
@@ -90,7 +94,9 @@ function eachWord(text: string, write: (word: string) => string, punctuate: (tex
         ? part
         : punctuate(
             part.replace(/[A-Za-z]+(?:['’][A-Za-z]+)*/g, (word: string, at: number) =>
-              keptLatin(word, part[at - 1] ?? '', part[at + word.length] ?? '') ? word : write(word)
+              keptLatin(word, part[at - 1] ?? '', part.slice(at + word.length, at + word.length + 2))
+                ? word
+                : write(word)
             )
           )
     )
