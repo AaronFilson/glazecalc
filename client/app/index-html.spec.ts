@@ -55,8 +55,8 @@ describe('the script in index.html', () => {
     const stays = (page: Page) => expect(run(page).replaced).toEqual([]);
     stays({ at: '/guides' });
     stays({ stored: { language: 'en' }, at: '/guides' });
-    // Not offered yet, or not a language.
-    stays({ stored: { language: 'ar' }, at: '/guides' });
+    // Not offered (a pseudo-locale for testing), or not a language.
+    stays({ stored: { language: 'en-XA' }, at: '/guides' });
     stays({ stored: { language: 'xx' }, at: '/guides' });
     // Already in a language's pages, whichever.
     stays({ stored: { language: 'de' }, at: '/fr/guides' });

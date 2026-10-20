@@ -1,14 +1,10 @@
-const path = require('path');
 const { test, expect } = require('@playwright/test');
+const ar = require('../client/public/i18n/ar.json');
 
 // Pages in other languages (docs/adr/0013-translations.md): the language from
 // the URL, the page's lang and direction, links that stay in the language,
-// and a right-to-left page with its layout mirrored. Arabic is not offered
-// yet, so its messages come from a test file here.
-
-const arabic = async (page) => {
-  await page.route('**/i18n/ar.json', (route) => route.fulfill({ path: path.join(__dirname, 'fixtures', 'ar.json') }));
-};
+// and a right-to-left page with its layout mirrored, in Arabic as it is offered
+// (its own messages, read from its file so a reworded translation doesn't break the test).
 
 test('English stays at the plain paths, left to right', async ({ page }) => {
   await page.goto('/guides');
@@ -22,29 +18,27 @@ test('English stays at the plain paths, left to right', async ({ page }) => {
 });
 
 test('a right-to-left page mirrors its layout, and its links stay in the language', async ({ page }) => {
-  await arabic(page);
   await page.setViewportSize({ width: 1280, height: 800 });
   await page.goto('/ar/guides');
   const html = page.locator('html');
   await expect(html).toHaveAttribute('lang', 'ar');
   await expect(html).toHaveAttribute('dir', 'rtl');
-  await expect(page).toHaveTitle('أدلة - Glazecalc');
+  await expect(page).toHaveTitle(ar.titles.guides);
 
-  const nav = page.getByRole('navigation', { name: 'القائمة الرئيسية' });
-  await expect(nav.getByRole('link', { name: 'حول' })).toHaveAttribute('href', '/ar/about');
-  // A message not yet translated shows the English.
-  await expect(page.getByRole('link', { name: 'تسجيل الدخول' }).first()).toBeVisible();
+  const nav = page.getByRole('navigation', { name: ar.nav.main, exact: true });
+  await expect(nav.getByRole('link', { name: ar.nav.about, exact: true })).toHaveAttribute('href', '/ar/about');
+  await expect(page.getByRole('link', { name: ar.nav.signIn }).first()).toBeVisible();
 
   // Mirrored: the name of the app is on the right and the account links on the left.
   const brand = await nav.getByRole('link', { name: 'Glazecalc' }).boundingBox();
-  const create = await nav.getByRole('link', { name: 'أنشئ حسابًا مجانيًا' }).boundingBox();
+  const create = await nav.getByRole('link', { name: ar.nav.createAccount }).boundingBox();
   expect(brand.x).toBeGreaterThan(640);
   expect(create.x).toBeLessThan(640);
 
   // Following a link keeps the language, without a new page load.
-  await nav.getByRole('link', { name: 'حول' }).click();
+  await nav.getByRole('link', { name: ar.nav.about, exact: true }).click();
   await expect(page).toHaveURL(/\/ar\/about$/);
-  await expect(page).toHaveTitle('حول - Glazecalc');
+  await expect(page).toHaveTitle(ar.titles.about);
   await expect(html).toHaveAttribute('dir', 'rtl');
 });
 

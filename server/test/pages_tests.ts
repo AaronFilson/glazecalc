@@ -143,23 +143,21 @@ describe('pages in each language', () => {
     expect(languages.canonicalLanguagePath('/zh-hans/recipe')).to.equal('/zh-Hans/recipe');
   });
 
-  it('knows Arabic and Hindi, before their translation is done, without offering them or giving them the plainer notice', () => {
+  it('offers Arabic, right to left, and Hindi, with the standard notice rather than the plainer one', () => {
     for (const [code, name, english, dir] of [
       ['ar', 'العربية', 'Arabic', 'rtl'],
       ['hi', 'हिन्दी', 'Hindi', 'ltr']
     ]) {
       const language = languages.languageFor(code);
-      expect(language).to.include({ name, english, dir, live: false });
+      expect(language).to.include({ name, english, dir, live: true });
       expect(language).not.to.have.property('plainNotice');
       expect(language).not.to.have.property('base');
-      expect(languages.LIVE_LANGUAGES).not.to.include(code);
+      expect(languages.LIVE_LANGUAGES).to.include(code);
       const html = pageHtml(HTML, `/${code}/guides`, SITE);
       expect(html).to.include(`<html lang="${code}" dir="${dir}">`);
-      expect(html).to.include('<meta name="robots" content="noindex" />');
-      expect(html).not.to.include(`hreflang="${code}"`);
-      expect(html).not.to.include('og:locale');
-      expect(sitemap(SITE)).not.to.include(`/${code}/`);
-      expect(prerenderedKey(`/${code}/guides`)).to.equal(null);
+      expect(html).not.to.include('<meta name="robots" content="noindex" />');
+      expect(html).to.include(`hreflang="${code}"`);
+      expect(sitemap(SITE)).to.include(`/${code}/`);
     }
     expect(languages.languageOfPath('/hi/recipe')).to.equal('hi');
     expect(languages.canonicalLanguagePath('/HI/recipe')).to.equal('/hi/recipe');
@@ -548,8 +546,8 @@ describe('pages in each language', () => {
     const arabic = await site().get('/ar/guides');
     expect(arabic).to.have.status(200);
     expect(arabic.text).to.include('<html lang="ar" dir="rtl">');
-    expect(arabic.text).to.include('<meta name="robots" content="noindex" />');
-    expect(arabic.headers['cache-control']).to.equal('no-cache');
+    expect(arabic.text).not.to.include('<meta name="robots" content="noindex" />');
+    expect(arabic.headers['content-language']).to.equal('ar');
   });
 });
 
