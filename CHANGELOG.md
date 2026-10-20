@@ -6,6 +6,13 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Added
 
+- **Arabic and Hindi** (docs/translations/ar.md, hi.md): the app, the emails and all five guides, live at
+  `/ar/…` (right to left) and `/hi/…`. Arabic is Modern Standard Arabic for the Arab countries, its terms chosen from Arabic
+  ceramics sources (Egyptian, Iraqi, Sudanese and Libyan university papers, suppliers, Oman's GHS guide), with all six
+  plural forms and impersonal instructions; Hindi uses आप, the potters' loanwords with the formal term in brackets, and
+  the Latin full stop (the owner's choice). Each was translated, reviewed in six groups, made consistent across its files
+  and back-translated blind (the safety guides and every warning); a native potter's check of the terms marked in the
+  style sheets is still welcome. The README counts 34 languages.
 - **Higher cones, for porcelain** (docs/adr/0021-recipe-firing.md, amended
   2026-10-20). Orton cones have a temperature to cone 15 (1431 °C, Orton's older chart for large
   cones at 150 °C an hour, the only Orton figure above 14 we found); cones 16 to 42 are taken
