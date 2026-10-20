@@ -1,5 +1,6 @@
 import { signal } from '@angular/core';
 import { TestBed } from '@angular/core/testing';
+import { REGIONS } from '../../../lib/regions';
 import { PAGE_LANGUAGE } from '../i18n/language';
 import { fixed, formatDate, formatLocale, listLocale, listOf, typedDecimalMark } from '../shared/format';
 import { chosenRegion } from '../shared/library-info';
@@ -260,7 +261,7 @@ describe('LocaleService during the first render', () => {
 
 describe('prerenderRegion', () => {
   it('names the country a language is mainly written in', () => {
-    expect(['de', 'fr', 'el', 'nl', 'pt-PT', 'ga', 'sv'].map(prerenderRegion)).toEqual([
+    expect(['de', 'fr', 'el', 'nl', 'pt-PT', 'ga', 'sv'].map((language) => prerenderRegion(language))).toEqual([
       'DE',
       'FR',
       'GR',
@@ -274,11 +275,48 @@ describe('prerenderRegion', () => {
   it('finds a language listed with its script, as the region data lists it', () => {
     // Taiwan comes before Hong Kong, the other region whose first language is Traditional Chinese; China is
     // the one whose first language is Simplified.
-    expect(['zh-Hant', 'zh-Hans', 'ko', 'ja', 'ja-XC'].map(prerenderRegion)).toEqual(['TW', 'CN', 'KR', 'JP', 'JP']);
-    expect(['th', 'id', 'vi'].map(prerenderRegion)).toEqual(['TH', 'ID', 'VN']);
+    expect(['zh-Hant', 'zh-Hans', 'ko', 'ja', 'ja-XC'].map((language) => prerenderRegion(language))).toEqual([
+      'TW',
+      'CN',
+      'KR',
+      'JP',
+      'JP'
+    ]);
+    expect(['th', 'id', 'vi'].map((language) => prerenderRegion(language))).toEqual(['TH', 'ID', 'VN']);
   });
 
   it('names none for English, a pseudo-locale, or a language no region lists', () => {
-    expect(['en', 'en-XA', 'ar', 'ar-XB'].map(prerenderRegion)).toEqual(['', '', '', '']);
+    expect(['en', 'en-XA', 'ar', 'ar-XB'].map((language) => prerenderRegion(language))).toEqual(['', '', '', '']);
+  });
+
+  it('writes Arabic for Egypt, Hindi and Tamil for India, Urdu for Pakistan and Bengali for Bangladesh', () => {
+    // The regions as they may be once South Asia and the Arabic-speaking countries are added: Singapore and Brunei
+    // list Tamil and Bengali first, or before India and Bangladesh do.
+    const planned = [
+      ...REGIONS,
+      { code: 'BN', languages: ['ms', 'bn'] },
+      { code: 'AE', languages: ['ar', 'en'] },
+      { code: 'IN', languages: ['hi', 'en', 'bn', 'ta', 'ur'] },
+      { code: 'PK', languages: ['ur', 'en'] },
+      { code: 'BD', languages: ['bn'] },
+      { code: 'EG', languages: ['ar'] }
+    ];
+    expect(['ar', 'hi', 'ur', 'bn', 'ta'].map((language) => prerenderRegion(language, planned))).toEqual([
+      'EG',
+      'IN',
+      'PK',
+      'BD',
+      'IN'
+    ]);
+    // Until its country is a region, none: not Singapore for Tamil, nor another country's.
+    expect(['ar', 'hi', 'ur', 'bn', 'ta'].map((language) => prerenderRegion(language))).toEqual(['', '', '', '', '']);
+    // What the live languages are written for stays as it was.
+    expect(['de', 'el', 'zh-Hant', 'ja', 'th'].map((language) => prerenderRegion(language, planned))).toEqual([
+      'DE',
+      'GR',
+      'TW',
+      'JP',
+      'TH'
+    ]);
   });
 });
