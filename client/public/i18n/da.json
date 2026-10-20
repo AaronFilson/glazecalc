@@ -6,8 +6,9 @@
     "glazingBasics": "Glasering fra grunden - Glazecalc",
     "makingAGlaze": "Sådan laver man en glasur - Glazecalc",
     "safeMixing": "Sikker blanding og ventilation - Glazecalc",
-    "homeSafety": "Forgift ikke familien - Glazecalc",
+    "homeSafety": "Glasursikkerhed derhjemme: børn, kæledyr og ovnen - Glazecalc",
     "firing": "Brænding i en enkel ovn - Glazecalc",
+    "learnWithJohnBritt": "Lær med John Britts gratis glasurkursus - Glazecalc",
     "about": "Om Glazecalc",
     "privacy": "Privatlivspolitik - Glazecalc",
     "terms": "Brugsvilkår - Glazecalc",
@@ -26,9 +27,12 @@
     "notes": "Noter - Glazecalc",
     "trash": "Papirkurv - Glazecalc",
     "account": "Konto og indstillinger - Glazecalc",
+    "apps": "Tilsluttede apps - Glazecalc",
+    "connect": "Tilslut en app - Glazecalc",
     "notFound": "Siden blev ikke fundet - Glazecalc",
     "shared": "Delt opskrift - Glazecalc",
-    "assistants": "Brug Glazecalc fra en AI-assistent - Glazecalc"
+    "assistants": "Brug Glazecalc fra en AI-assistent - Glazecalc",
+    "confirm": "Godkend en ændring - Glazecalc"
   },
   "nav": {
     "skip": "Spring til indholdet",
@@ -91,6 +95,7 @@
     "safeMixing": "Sådan holdes glasurstøv ude af lungerne og røggas fra ovnen ude af hjemmet: sikre vaner, åndedrætsværn, rengøring, ventilation og risikable råvarer.",
     "homeSafety": "Hvad der skal gøres, hvis et barn eller et kæledyr sluger en råvare til glasur, og hvordan råvarer, støv, ovn og håndlavet keramik holdes sikre for familien.",
     "firing": "Sådan brændes en elektrisk ovn: Vælg, sæt og aflæs kegler, og følg offentliggjorte brændekurver til forglødning og glasurbrænding. Med kegletabel.",
+    "learnWithJohnBritt": "Ledsager til John Britts gratis onlinekursus i glasur: hans videoer enhed for enhed, med Glazecalcs vejledninger og øvelser at prøve i beregneren.",
     "advice": "Praktiske råd om blanding, glasering og brænding fra Glazecalc samt dine egne råd. Gratis for keramikere og pottemagere.",
     "about": "Glazecalc er en gratis open source-beregner og notesbog til glasurkemi. Se, hvordan den beregner en Seger-formel (UMF), og hvordan den er bygget.",
     "privacy": "Sådan håndterer Glazecalc dine data: ingen reklamer, webanalyse eller sporing, og intet sælges. Hvad der gemmes, hvorfor, og hvordan du bruger dine rettigheder.",

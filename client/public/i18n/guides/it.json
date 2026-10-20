@@ -27,14 +27,19 @@
       "text": "Polveri, maschere filtranti, pulizia, i materiali che richiedono più attenzione e l’aerazione del forno."
     },
     "homeSafety": {
-      "title": "Non avvelenare la propria famiglia",
+      "title": "Sicurezza degli smalti in casa: bambini, animali e forno",
       "text": "La ceramica in casa con bambini e animali domestici: conservazione, polveri, il forno e cosa fare se qualcosa viene ingerito."
     },
     "firing": {
       "title": "Cuocere in un forno semplice",
       "text": "Coni, kiln sitter e commutatori manuali, con le curve di cottura per la biscottatura e la cottura dello smalto."
+    },
+    "learnWithJohnBritt": {
+      "title": "Imparare con il corso gratuito sugli smalti di John Britt",
+      "text": "Il suo corso gratuito in video su YouTube, unità per unità, con le nostre guide da leggere ed esercizi da provare in Glazecalc. In inglese."
     }
   },
+  "more": "Altre guide",
   "contents": "In questa pagina",
   "poison": {
     "numbersFor": "Numeri per",

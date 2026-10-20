@@ -76,7 +76,6 @@
     "removeField": "Feld entfernen",
     "addRow": "Zeile zur Brandtabelle hinzufügen",
     "addRowWhy": "Fügen Sie zuerst ein Feld hinzu.",
-    "tableEmpty": "Fügen Sie oben ein Feld hinzu und dann Zeilen.",
     "recordHeading": "Den Brand erfassen",
     "rowActions": "Zeilenaktionen",
     "cell": "{field}, Zeile {row}",

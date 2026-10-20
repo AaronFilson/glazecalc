@@ -27,14 +27,19 @@
       "text": "Damm, andningsskydd, städning, de råvaror som kräver mest försiktighet och hur ugnen ventileras."
     },
     "homeSafety": {
-      "title": "Förgifta inte familjen",
+      "title": "Glasyrsäkerhet hemma: barn, husdjur och keramikugnen",
       "text": "Keramik hemma med barn och husdjur: förvaring, damm, ugnen och vad man gör om något har svalts."
     },
     "firing": {
       "title": "Bränna i en enkel keramikugn",
       "text": "Käglor, Kiln-Sitter och manuella vred, med brännprogram för skröjbränning och glasyrbränning."
+    },
+    "learnWithJohnBritt": {
+      "title": "Lär dig med John Britts kostnadsfria glasyrkurs",
+      "text": "Hans kostnadsfria videokurs på YouTube, del för del, med våra guider att läsa och övningar att prova i Glazecalc. På engelska."
     }
   },
+  "more": "Fler guider",
   "contents": "På den här sidan",
   "poison": {
     "numbersFor": "Nummer för",

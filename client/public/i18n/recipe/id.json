@@ -566,7 +566,7 @@
       "hesselberth-roy": "Batas yang direkomendasikan John Hesselberth dan Ron Roy untuk glasir stabil pada stoneware dan porselen fungsional, pada kerucut 6 dan kerucut 10. Batas ini memakai daftar bahan yang pendek, sehingga set ini tidak memiliki rentang untuk barium atau litium, atau untuk seng pada kerucut 10.",
       "glazecalc": "Angka yang menjadi dasar peringatan aplikasi saat menukar bahan: boron, alumina, natrium dan kalium, dan magnesia pada suhu rendah."
     },
-    "firing": "Pembakaran",
+    "firing": "Batas untuk",
     "firingUnknown": "Belum dipilih",
     "bands": {
       "low": "Suhu rendah, kerucut 06–02",
@@ -596,6 +596,8 @@
     "saveFailed": "Pilihan set batas Anda tidak dapat disimpan ke akun Anda, sehingga set batas sebelumnya masih yang dipakai.",
     "ownLimits": "Saran ini memakai batas Glazecalc sendiri, bukan {name}.",
     "firingFromBlock": "Dari pembakaran resep ({bands})",
+    "firingFromBlockText": "Dari pembakaran resep: {bands}",
+    "chooseAnother": "Pilih yang lain",
     "bothBands": "Pembakaran resep mencakup {bands}, sehingga masing-masing diperiksa berdampingan: glasir jarang berperilaku sama di kedua ujung.",
     "fromFiring": "Angka-angka ini untuk pembakaran resep: {band}. Pilih pembakaran di atas untuk memeriksa yang lain."
   },
@@ -801,6 +803,18 @@
     "saveHelp": "Centang ubin yang ingin Anda simpan, pada gambar di atas. Masing-masing disimpan sebagai resep dalam persen.",
     "nameLabel": "Nama untuk ubin yang disimpan",
     "defaultName": "Campuran {titles}",
+    "chemistry": {
+      "heading": "Kimia per ubin",
+      "help": "Dihitung dari resep, sebagai panduan. Ubin yang sudah dibakar menunjukkan apa yang sebenarnya terjadi.",
+      "firing": "Peringatan dan kecocokan kerucut mengikuti pembakaran resep {letter}.",
+      "tile": "Ubin",
+      "cautions": "Peringatan",
+      "coneFit": "Kecocokan kerucut",
+      "fits": "Tidak ada tanda menyimpang",
+      "cooler": "Tampak lebih dingin",
+      "hotter": "Tampak lebih panas",
+      "skipped": "Tidak dinilai"
+    },
     "chooseAll": "Pilih semua ubin",
     "chooseNone": "Kosongkan pilihan",
     "save": "{count, plural, =0 {Simpan ubin yang dipilih} other {Simpan # ubin}}",
@@ -890,6 +904,8 @@
   },
   "firing": {
     "heading": "Pembakaran",
+    "summary": "Pembakaran: {what}",
+    "summaryNone": "Pembakaran: belum diatur",
     "whatIsCone": "Apa arti kerucut?",
     "scale": "Skala",
     "scales": {

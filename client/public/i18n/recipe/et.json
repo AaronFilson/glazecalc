@@ -566,7 +566,7 @@
       "hesselberth-roy": "John Hesselberthi ja Ron Roy soovitatud piirväärtused stabiilsetele glasuuridele funktsionaalsel kivikeraamikal ja portselanil, koonustel 6 ja 10. Need püsivad lühikese tooraineloendi juures, seega pole komplektis vahemikku baariumile ega liitiumile, ega tsingile koonusel 10.",
       "glazecalc": "Arvud, mille juures rakendus hoiatab toorainete vahetamisel: boor, alumiiniumoksiid, naatrium ja kaalium ning madalkuumusel magneesiumoksiid."
     },
-    "firing": "Põletus",
+    "firing": "Piirväärtused põletusele",
     "firingUnknown": "Pole valitud",
     "bands": {
       "low": "Madalkuumus, koonused 06–02",
@@ -596,6 +596,8 @@
     "saveFailed": "Piirväärtuste komplekti valikut ei saanud teie kontole salvestada, seega kasutusel on endiselt varasem komplekt.",
     "ownLimits": "Need soovitused kasutavad Glazecalci enda piirväärtusi, mitte komplekti {name}.",
     "firingFromBlock": "Retsepti põletuse järgi ({bands})",
+    "firingFromBlockText": "Retsepti põletuse järgi: {bands}",
+    "chooseAnother": "Vali muu",
     "bothBands": "Retsepti põletus hõlmab vahemikku {bands}, seega kontrollitakse igaüht kõrvuti: glasuur käitub harva mõlemas otsas ühtmoodi.",
     "fromFiring": "Arvud on retsepti põletuse kohta: {band}. Teise kontrollimiseks valige ülal põletus."
   },
@@ -801,6 +803,18 @@
     "saveHelp": "Märkige ülaltoodud joonisel proovitükid, mida soovite alles jätta. Iga salvestatakse retseptina protsentides.",
     "nameLabel": "Salvestatud proovitükkide nimi",
     "defaultName": "{titles} katsesegu",
+    "chemistry": {
+      "heading": "Keemia proovitüki kaupa",
+      "help": "Arvutatud retseptide põhjal, juhiseks. Mis tegelikult juhtub, näitavad põletatud proovitükid.",
+      "firing": "Hoiatused ja sobivus koonusega järgivad retsepti {letter} põletust.",
+      "tile": "Proovitükk",
+      "cautions": "Hoiatused",
+      "coneFit": "Sobivus koonusega",
+      "fits": "Midagi ei räägi vastu",
+      "cooler": "Paistab jahedam",
+      "hotter": "Paistab kuumem",
+      "skipped": "Hindamata"
+    },
     "chooseAll": "Vali kõik proovitükid",
     "chooseNone": "Ära vali ühtegi",
     "save": "{count, plural, =0 {Salvesta valitud proovitükid} one {Salvesta # proovitükk} other {Salvesta # proovitükki}}",
@@ -890,6 +904,8 @@
   },
   "firing": {
     "heading": "Põletus",
+    "summary": "Põletus: {what}",
+    "summaryNone": "Põletus: määramata",
     "whatIsCone": "Mida koonus tähendab?",
     "scale": "Skaala",
     "scales": {

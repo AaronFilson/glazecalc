@@ -76,7 +76,6 @@
     "removeField": "Neħħi l-qasam",
     "addRow": "Żid ringiela mat-tabella tal-ħami",
     "addRowWhy": "Żid qasam l-ewwel.",
-    "tableEmpty": "Żid qasam hawn fuq, imbagħad ringieli.",
     "recordHeading": "Irreġistra l-ħamja",
     "rowActions": "Azzjonijiet tar-ringiela",
     "cell": "{field}, ringiela {row}",

@@ -5251,8 +5251,7 @@ export const PROVIDER_NAMES: Record<string, string> = { google: 'Google', github
  * A reset means someone else may have had the password, so it stops the
  * account's access tokens and connected apps (docs/adr/0017-mcp-server.md), its
  * links to Google, GitHub and Microsoft (docs/adr/0015-provider-sign-in.md) and its share
- * links (docs/adr/0020-share-links.md). English only so far: the next
- * translation wave adds the others, and until then every language gets it.
+ * links (docs/adr/0020-share-links.md). In every language the site offers.
  */
 export interface ResetStoppedEmail {
   subject: string;
@@ -5838,9 +5837,8 @@ export const noticeProvider = (
   }
 };
 
-// Access tokens (docs/integrations-plan.md, item 28). English only so far: the
-// next translation wave adds the others, and until then every language gets
-// the English. A token's name is the person's own text, kept to one plain line.
+// Access tokens (docs/integrations-plan.md, item 28), in every language the
+// site offers. A token's name is the person's own text, kept to one plain line.
 
 /** A new personal access token: {account}, {name}, {date} it expires, {page}, {forgot} and {app}. */
 export const TOKEN_MADE: Record<string, Email> = {
@@ -6135,8 +6133,7 @@ export const TOKEN_MADE: Record<string, Email> = {
 
 /**
  * A new personal access token that can change records (data:write): as
- * TOKEN_MADE, with the same values, saying so. English only so far: the next
- * translation wave adds the others.
+ * TOKEN_MADE, with the same values, saying so.
  */
 export const TOKEN_MADE_WRITE: Record<string, Email> = {
   en: {
@@ -6732,8 +6729,7 @@ export const sendTokenExpiring = (
 ): Promise<void> => sendTokenMail(TOKEN_EXPIRING, to, token, language);
 
 // The notice for each new connection of an AI app (docs/adr/0024-authorization-server.md),
-// sent from the consent API when the person says yes. English only so far: the
-// next wave translates it, and fingerprints it in the tests.
+// sent from the consent API when the person says yes.
 
 /** The parts of the connection notice, put together as the connection is. */
 export interface ConnectionEmail {
@@ -6776,6 +6772,618 @@ export const CONNECTION_MADE: Record<string, ConnectionEmail> = {
       'If this was you, there is nothing else to do. You can see what it does and revoke it at {page}\n\n' +
       'If not, revoke it there and reset your password right away at {forgot}\n' +
       '\n-- \nGlazecalc, {app}\n'
+  },
+  bg: {
+    subject: 'С профила Ви в Glazecalc беше свързано приложение',
+    opening: 'С профила {account} в Glazecalc беше свързано приложение на {date} в {time} (UTC).\n\n',
+    named: 'Приложението: „{name}“\n',
+    checked: 'Адресът му, проверен от Glazecalc: {host}\n',
+    selfDescribed: 'То се е регистрирало самостоятелно, затова името му е само това, което казва за себе си.\n',
+    answerAt: 'Получава отговора на: {host}\n',
+    loopback: 'Получава отговора на компютъра, от който е свързано ({host}).\n',
+    read:
+      '\n' +
+      'Може да чете рецептите, бележника, суровините, запаса от суровини и настройките, запазени в профила. Не може да променя нищо.\n\n',
+    write:
+      '\n' +
+      'Може да чете рецептите, бележника, суровините, запаса от суровини и настройките, запазени в профила, а в продължение на {days} дни може и да ги променя: да създава и променя записи и да ги премества в Кошчето. При всяка промяна се пази версия на записа такъв, какъвто е бил, за да можете да я отмените в уебсайта.\n\n',
+    closing:
+      'Ако това сте били Вие, не е нужно да правите нищо друго. Можете да видите какво прави и да го отмените на {page}\n\n' +
+      'Ако не, отменете го там и нулирайте паролата си веднага на {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  cs: {
+    subject: 'K Vašemu účtu Glazecalc byla připojena aplikace',
+    opening: 'K účtu Glazecalc {account} byla {date} v {time} (UTC) připojena aplikace.\n\n',
+    named: 'Aplikace: „{name}“\n',
+    checked: 'Její adresa, ověřená službou Glazecalc: {host}\n',
+    selfDescribed: 'Zaregistrovala se sama, takže její název je jen to, co o sobě sama tvrdí.\n',
+    answerAt: 'Odpověď přijímá na: {host}\n',
+    loopback: 'Odpověď přijímá na počítači, ze kterého byla připojena ({host}).\n',
+    read: '\n' + 'Může číst recepty, zápisník, suroviny, zásobu a nastavení uložené v účtu. Nemůže nic měnit.\n\n',
+    write:
+      '\n' +
+      'Může číst recepty, zápisník, suroviny, zásobu a nastavení uložené v účtu a po dobu {days} dnů je může také měnit: vytvářet a měnit záznamy a přesouvat je do koše. Každá změna zachová verzi záznamu tak, jak byl, takže ji můžete na webu vrátit zpět.\n\n',
+    closing:
+      'Pokud jste to byli Vy, nemusíte už nic dělat. Co dělá, můžete vidět a zneplatnit ji na {page}\n\n' +
+      'Pokud ne, zneplatněte ji tam a ihned si obnovte heslo zde: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  da: {
+    subject: 'En app er blevet tilsluttet din Glazecalc-konto',
+    opening: 'En app blev tilsluttet Glazecalc-kontoen {account} den {date} kl. {time} (UTC).\n\n',
+    named: 'Appen: »{name}«\n',
+    checked: 'Dens adresse, kontrolleret af Glazecalc: {host}\n',
+    selfDescribed: 'Den har registreret sig selv, så dens navn er kun, hvad den siger om sig selv.\n',
+    answerAt: 'Den modtager svaret på: {host}\n',
+    loopback: 'Den modtager svaret på den computer, den blev tilsluttet fra ({host}).\n',
+    read:
+      '\n' +
+      'Den kan læse opskrifterne, notesbogen, råvarerne, lageret og indstillingerne, der er gemt i kontoen. Den kan ikke ændre noget.\n\n',
+    write:
+      '\n' +
+      'Den kan læse opskrifterne, notesbogen, råvarerne, lageret og indstillingerne, der er gemt i kontoen, og i {days} dage kan den også ændre dem: oprette og ændre poster og flytte dem til papirkurven. Hver ændring bevarer en version af posten, som den var, så du kan fortryde den på webstedet.\n\n',
+    closing:
+      'Hvis det var dig, er der ikke mere at gøre. Du kan se, hvad den gør, og tilbagekalde den på {page}\n\n' +
+      'Hvis ikke, så tilbagekald den dér, og nulstil adgangskoden med det samme på {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  de: {
+    subject: 'Eine App wurde mit Ihrem Glazecalc-Konto verbunden',
+    opening: 'Am {date} um {time} Uhr (UTC) wurde eine App mit dem Glazecalc-Konto {account} verbunden.\n\n',
+    named: 'Die App: „{name}“\n',
+    checked: 'Ihre Adresse, von Glazecalc geprüft: {host}\n',
+    selfDescribed: 'Sie hat sich selbst registriert, ihr Name ist also nur das, was sie über sich selbst sagt.\n',
+    answerAt: 'Sie empfängt die Antwort unter: {host}\n',
+    loopback: 'Sie empfängt die Antwort auf dem Computer, von dem aus sie verbunden wurde ({host}).\n',
+    read:
+      '\n' +
+      'Sie kann die Rezepte, das Notizbuch, die Rohstoffe, den Vorrat und die Einstellungen lesen, die im Konto gespeichert sind. Sie kann nichts ändern.\n\n',
+    write:
+      '\n' +
+      'Sie kann die Rezepte, das Notizbuch, die Rohstoffe, den Vorrat und die Einstellungen lesen, die im Konto gespeichert sind, und {days} Tage lang kann sie sie auch ändern: Datensätze erstellen und ändern und sie in den Papierkorb legen. Jede Änderung bewahrt eine Fassung des Datensatzes, wie er war, sodass Sie sie auf der Website rückgängig machen können.\n\n',
+    closing:
+      'Wenn Sie das waren, müssen Sie nichts weiter tun. Unter {page} können Sie sehen, was sie tut, und sie widerrufen.\n\n' +
+      'Wenn nicht, widerrufen Sie sie dort und setzen Sie Ihr Passwort sofort hier zurück: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  el: {
+    subject: 'Μια εφαρμογή συνδέθηκε με τον λογαριασμό σας στο Glazecalc',
+    opening: 'Μια εφαρμογή συνδέθηκε με τον λογαριασμό {account} στο Glazecalc στις {date}, ώρα {time} (UTC).\n\n',
+    named: 'Η εφαρμογή: «{name}»\n',
+    checked: 'Η διεύθυνσή της, ελεγμένη από το Glazecalc: {host}\n',
+    selfDescribed: 'Καταχωρίστηκε μόνη της, οπότε το όνομά της είναι μόνο αυτό που λέει η ίδια για τον εαυτό της.\n',
+    answerAt: 'Λαμβάνει την απάντηση στο: {host}\n',
+    loopback: 'Λαμβάνει την απάντηση στον υπολογιστή από τον οποίο συνδέθηκε ({host}).\n',
+    read:
+      '\n' +
+      'Μπορεί να διαβάζει τις συνταγές, το σημειωματάριο, τα υλικά, το απόθεμα και τις ρυθμίσεις που είναι αποθηκευμένα στον λογαριασμό. Δεν μπορεί να αλλάξει τίποτα.\n\n',
+    write:
+      '\n' +
+      'Μπορεί να διαβάζει τις συνταγές, το σημειωματάριο, τα υλικά, το απόθεμα και τις ρυθμίσεις που είναι αποθηκευμένα στον λογαριασμό, και για {days} ημέρες μπορεί επίσης να τα αλλάζει: να δημιουργεί και να αλλάζει εγγραφές και να τις μεταφέρει στον Κάδο απορριμμάτων. Κάθε αλλαγή κρατά μια έκδοση της εγγραφής όπως ήταν, ώστε να μπορείτε να την αναιρέσετε στον ιστότοπο.\n\n',
+    closing:
+      'Αν το κάνατε εσείς, δεν χρειάζεται να κάνετε τίποτα άλλο. Μπορείτε να δείτε τι κάνει και να την ανακαλέσετε στο {page}\n\n' +
+      'Αν όχι, ανακαλέστε την εκεί και επαναφέρετε αμέσως τον κωδικό πρόσβασής σας εδώ: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  es: {
+    subject: 'Se ha conectado una aplicación a su cuenta de Glazecalc',
+    opening: 'Se ha conectado una aplicación a la cuenta de Glazecalc {account} el {date} a las {time} (UTC).\n\n',
+    named: 'La aplicación: «{name}»\n',
+    checked: 'Su dirección, comprobada por Glazecalc: {host}\n',
+    selfDescribed: 'Se registró ella misma, así que su nombre es solo lo que dice de sí misma.\n',
+    answerAt: 'Recibe la respuesta en: {host}\n',
+    loopback: 'Recibe la respuesta en el ordenador desde el que se conectó ({host}).\n',
+    read:
+      '\n' +
+      'Puede leer las recetas, el cuaderno, los materiales, los materiales disponibles y los ajustes guardados en la cuenta. No puede cambiar nada.\n\n',
+    write:
+      '\n' +
+      'Puede leer las recetas, el cuaderno, los materiales, los materiales disponibles y los ajustes guardados en la cuenta, y durante {days} días también puede cambiarlos: crear y cambiar registros, y moverlos a la papelera. Cada cambio conserva una versión del registro tal como estaba, para que pueda deshacerlo en el sitio web.\n\n',
+    closing:
+      'Si ha sido usted, no tiene que hacer nada más. Puede ver lo que hace y revocarla en {page}\n\n' +
+      'Si no, revóquela allí y restablezca su contraseña de inmediato en {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  et: {
+    subject: 'Teie Glazecalci kontoga ühendati rakendus',
+    opening: 'Glazecalci kontoga {account} ühendati rakendus {date} kell {time} (UTC).\n\n',
+    named: 'Rakendus: „{name}“\n',
+    checked: 'Selle aadress, mille Glazecalc kontrollis: {host}\n',
+    selfDescribed: 'See registreeris end ise, seega on selle nimi ainult see, mida see enda kohta ütleb.\n',
+    answerAt: 'See saab vastuse aadressil: {host}\n',
+    loopback: 'See saab vastuse arvutis, millest see ühendati ({host}).\n',
+    read:
+      '\n' +
+      'See saab lugeda kontole salvestatud retsepte, märkmikku, tooraineid, varu ja sätteid. See ei saa midagi muuta.\n\n',
+    write:
+      '\n' +
+      'See saab lugeda kontole salvestatud retsepte, märkmikku, tooraineid, varu ja sätteid ning {days} päeva jooksul saab see neid ka muuta: teha ja muuta kirjeid ning viia neid prügikasti. Iga muudatus säilitab kirje versiooni sellisena, nagu see oli, nii et saate selle veebisaidil tagasi võtta.\n\n',
+    closing:
+      'Kui see olite teie, ei pea te midagi muud tegema. Mida see teeb, saate näha ja selle tühistada aadressil {page}\n\n' +
+      'Kui mitte, tühistage see seal ja lähtestage parool kohe siin: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  fi: {
+    subject: 'Glazecalc-tiliin yhdistettiin sovellus',
+    opening: 'Glazecalc-tiliin {account} yhdistettiin sovellus {date} kello {time} (UTC).\n\n',
+    named: 'Sovellus: ”{name}”\n',
+    checked: 'Sen osoite, Glazecalcin tarkistama: {host}\n',
+    selfDescribed: 'Se rekisteröi itse itsensä, joten sen nimi on vain se, mitä se kertoo itsestään.\n',
+    answerAt: 'Se vastaanottaa vastauksen osoitteessa: {host}\n',
+    loopback: 'Se vastaanottaa vastauksen tietokoneella, jolta se yhdistettiin ({host}).\n',
+    read:
+      '\n' +
+      'Se voi lukea tilille tallennettuja reseptejä, muistikirjaa, raaka-aineita, varastoa ja asetuksia. Se ei voi muuttaa mitään.\n\n',
+    write:
+      '\n' +
+      'Se voi lukea tilille tallennettuja reseptejä, muistikirjaa, raaka-aineita, varastoa ja asetuksia, ja {days} päivän ajan se voi myös muuttaa niitä: tehdä ja muuttaa tietueita ja siirtää niitä roskakoriin. Jokainen muutos säilyttää version tietueesta sellaisena kuin se oli, joten sen voi kumota verkkosivustolla.\n\n',
+    closing:
+      'Jos tämän teki tilin omistaja itse, muuta ei tarvitse tehdä. Sen toimet voi nähdä ja sen voi peruuttaa osoitteessa {page}\n\n' +
+      'Muussa tapauksessa peruuta se siellä ja palauta salasana heti osoitteessa {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  fr: {
+    subject: 'Une application a été connectée à votre compte Glazecalc',
+    opening: 'Une application a été connectée au compte Glazecalc {account} le {date} à {time} (UTC).\n\n',
+    named: 'L’application : « {name} »\n',
+    checked: 'Son adresse, vérifiée par Glazecalc : {host}\n',
+    selfDescribed: 'Elle s’est inscrite elle-même : son nom n’est donc que ce qu’elle dit d’elle-même.\n',
+    answerAt: 'Elle reçoit la réponse à : {host}\n',
+    loopback: 'Elle reçoit la réponse sur l’ordinateur depuis lequel elle a été connectée ({host}).\n',
+    read:
+      '\n' +
+      'Elle peut lire les recettes, le carnet, les matières, le stock et les paramètres enregistrés dans le compte. Elle ne peut rien modifier.\n\n',
+    write:
+      '\n' +
+      'Elle peut lire les recettes, le carnet, les matières, le stock et les paramètres enregistrés dans le compte, et pendant {days} jours elle peut aussi les modifier : créer et modifier des enregistrements, et les mettre à la corbeille. Chaque modification conserve une version de l’enregistrement tel qu’il était : vous pouvez donc l’annuler sur le site.\n\n',
+    closing:
+      'Si c’est vous, il n’y a rien d’autre à faire. Vous pouvez voir ce qu’elle fait et la révoquer sur {page}\n\n' +
+      'Sinon, révoquez-la là et réinitialisez votre mot de passe tout de suite sur {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  ga: {
+    subject: 'Ceanglaíodh aip le do chuntas Glazecalc',
+    opening: 'Ceanglaíodh aip leis an gcuntas Glazecalc {account} ar {date} ag {time} (UTC).\n\n',
+    named: 'An aip: “{name}”\n',
+    checked: 'A seoladh, seiceáilte ag Glazecalc: {host}\n',
+    selfDescribed: 'Chláraigh sí í féin, mar sin níl ina hainm ach an méid a deir sí fúithi féin.\n',
+    answerAt: 'Faigheann sí an freagra ag: {host}\n',
+    loopback: 'Faigheann sí an freagra ar an ríomhaire ónar ceanglaíodh í ({host}).\n',
+    read:
+      '\n' +
+      'Is féidir léi na hoidis, an leabhar nótaí, na hábhair, an stoc agus na socruithe atá sábháilte sa chuntas a léamh. Ní féidir léi aon rud a athrú.\n\n',
+    write:
+      '\n' +
+      'Is féidir léi na hoidis, an leabhar nótaí, na hábhair, an stoc agus na socruithe atá sábháilte sa chuntas a léamh, agus ar feadh {days} lá is féidir léi iad a athrú freisin: taifid a dhéanamh agus a athrú, agus iad a bhogadh go dtí an bruscar. Coinníonn gach athrú leagan den taifead mar a bhí, ionas gur féidir leat é a chealú ar an suíomh gréasáin.\n\n',
+    closing:
+      'Más tusa a rinne é, níl aon rud eile le déanamh. Is féidir leat a fheiceáil cad a dhéanann sí agus í a chúlghairm ag {page}\n\n' +
+      'Mura tusa, cúlghair ansin í agus athshocraigh do phasfhocal láithreach ag {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  hr: {
+    subject: 'S vašim računom Glazecalc povezana je aplikacija',
+    opening: 'S računom Glazecalc {account} povezana je aplikacija {date} u {time} (UTC).\n\n',
+    named: 'Aplikacija: „{name}”\n',
+    checked: 'Njezina adresa, koju je provjerio Glazecalc: {host}\n',
+    selfDescribed: 'Registrirala se sama, pa je njezin naziv samo ono što sama o sebi kaže.\n',
+    answerAt: 'Odgovor prima na: {host}\n',
+    loopback: 'Odgovor prima na računalu s kojeg je povezana ({host}).\n',
+    read:
+      '\n' +
+      'Može čitati recepte, bilježnicu, sirovine, zalihu i postavke spremljene u računu. Ne može ništa mijenjati.\n\n',
+    write:
+      '\n' +
+      'Može čitati recepte, bilježnicu, sirovine, zalihu i postavke spremljene u računu, a tijekom {days} dana može ih i mijenjati: izrađivati i mijenjati zapise te ih premještati u Koš za smeće. Svaka promjena čuva verziju zapisa onakvu kakav je bio, pa je možete poništiti na web-stranici.\n\n',
+    closing:
+      'Ako ste to bili vi, ne morate ništa drugo učiniti. Što radi možete vidjeti i opozvati je na adresi {page}\n\n' +
+      'Ako niste, ondje je opozovite i odmah ponovno postavite lozinku ovdje: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  hu: {
+    subject: 'Egy alkalmazást csatlakoztattak a Glazecalc-fiókjához',
+    opening: 'A(z) {account} Glazecalc-fiókhoz egy alkalmazást csatlakoztattak ekkor: {date}, {time} (UTC).\n\n',
+    named: 'Az alkalmazás: „{name}”\n',
+    checked: 'A címe, amelyet a Glazecalc ellenőrzött: {host}\n',
+    selfDescribed: 'Saját magát regisztrálta, így a neve csak az, amit saját magáról állít.\n',
+    answerAt: 'Itt kapja meg a választ: {host}\n',
+    loopback: 'Azon a számítógépen kapja meg a választ, amelyről csatlakoztatták ({host}).\n',
+    read:
+      '\n' +
+      'Olvashatja a fiókban mentett recepteket, műhelyfüzetet, nyersanyagokat, készletet és beállításokat. Semmit sem módosíthat.\n\n',
+    write:
+      '\n' +
+      'Olvashatja a fiókban mentett recepteket, műhelyfüzetet, nyersanyagokat, készletet és beállításokat, és {days} napig módosíthatja is őket: bejegyzéseket hozhat létre és módosíthat, és a Lomtárba helyezheti őket. Minden módosítás megőrzi a bejegyzés egy változatát olyannak, amilyen volt, így a weboldalon visszavonhatja.\n\n',
+    closing:
+      'Ha Ön volt az, nincs további teendője. Itt láthatja, mit tesz, és itt vonhatja vissza: {page}\n\n' +
+      'Ha nem, vonja vissza ott, és azonnal állítsa vissza a jelszavát itt: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  id: {
+    subject: 'Sebuah aplikasi terhubung ke akun Glazecalc Anda',
+    opening: 'Sebuah aplikasi terhubung ke akun Glazecalc {account} pada {date} pukul {time} (UTC).\n\n',
+    named: 'Aplikasi: "{name}"\n',
+    checked: 'Alamatnya, diperiksa oleh Glazecalc: {host}\n',
+    selfDescribed:
+      'Aplikasi ini mendaftarkan dirinya sendiri, jadi namanya hanyalah apa yang dikatakannya tentang dirinya.\n',
+    answerAt: 'Aplikasi ini menerima jawaban di: {host}\n',
+    loopback: 'Aplikasi ini menerima jawaban di komputer tempat aplikasi itu dihubungkan ({host}).\n',
+    read:
+      '\n' +
+      'Aplikasi ini dapat membaca resep, buku catatan, bahan, daftar bahan yang dipunya, dan pengaturan yang tersimpan di akun. Aplikasi ini tidak dapat mengubah apa pun.\n\n',
+    write:
+      '\n' +
+      'Aplikasi ini dapat membaca resep, buku catatan, bahan, daftar bahan yang dipunya, dan pengaturan yang tersimpan di akun, dan selama {days} hari aplikasi ini juga dapat mengubahnya: membuat dan mengubah catatan, dan memindahkannya ke Sampah. Setiap perubahan menyimpan versi catatan seperti sebelumnya, jadi Anda dapat mengurungkannya di situs web.\n\n',
+    closing:
+      'Jika ini Anda, tidak ada lagi yang perlu dilakukan. Anda dapat melihat apa yang dilakukannya dan mencabutnya di {page}\n\n' +
+      'Jika bukan, cabut aplikasi itu di sana dan segera setel ulang kata sandi Anda di {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  it: {
+    subject: 'Un’app è stata collegata al Suo account Glazecalc',
+    opening: 'Un’app è stata collegata all’account Glazecalc {account} il {date} alle {time} (UTC).\n\n',
+    named: 'L’app: «{name}»\n',
+    checked: 'Il suo indirizzo, verificato da Glazecalc: {host}\n',
+    selfDescribed: 'Si è registrata da sola, quindi il suo nome è solo ciò che dice di sé.\n',
+    answerAt: 'Riceve la risposta a: {host}\n',
+    loopback: 'Riceve la risposta sul computer da cui è stata collegata ({host}).\n',
+    read:
+      '\n' +
+      'Può leggere le ricette, il quaderno, i materiali, lo scaffale e le impostazioni salvati nell’account. Non può modificare nulla.\n\n',
+    write:
+      '\n' +
+      'Può leggere le ricette, il quaderno, i materiali, lo scaffale e le impostazioni salvati nell’account, e per {days} giorni può anche modificarli: creare e modificare elementi, e spostarli nel cestino. Ogni modifica conserva una versione dell’elemento com’era, così Lei può annullarla nel sito.\n\n',
+    closing:
+      'Se l’ha fatto Lei, non c’è altro da fare. Può vedere che cosa fa e revocarla all’indirizzo {page}\n\n' +
+      'Altrimenti, la revochi lì e reimposti subito la password all’indirizzo {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  ja: {
+    subject: 'Glazecalc のアカウントにアプリが連携されました',
+    opening: '{date} {time}（UTC）に、Glazecalc のアカウント {account} にアプリが連携されました。\n\n',
+    named: 'アプリ: 「{name}」\n',
+    checked: 'アプリのアドレス（Glazecalc が確認済み）: {host}\n',
+    selfDescribed: 'このアプリは自分で登録したため、名前はアプリが自分で名乗っているものにすぎません。\n',
+    answerAt: '回答の受け取り先: {host}\n',
+    loopback: '回答は、連携の操作をしたコンピューター上で受け取ります（{host}）。\n',
+    read:
+      '\n' + 'アカウントに保存された調合、工房ノート、原料、手持ちの原料、設定を読み取れます。何も変更できません。\n\n',
+    write:
+      '\n' +
+      'アカウントに保存された調合、工房ノート、原料、手持ちの原料、設定を読み取れ、{days}日間はそれらを変更することもできます。記録の作成と変更、ごみ箱への移動ができます。変更ごとに元の記録のバージョンが保管されるので、ウェブサイト上で元に戻せます。\n\n',
+    closing:
+      'ご本人による操作であれば、ほかに必要な操作はありません。アプリが行うことの確認と失効は {page} でできます。\n\n' +
+      'そうでない場合は、そこでアプリを失効させ、すぐに次のページでパスワードを再設定してください: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  ko: {
+    subject: 'Glazecalc 계정에 앱이 연결되었습니다',
+    opening: '{date} {time}(UTC)에 Glazecalc 계정 {account}에 앱이 연결되었습니다.\n\n',
+    named: '앱: “{name}”\n',
+    checked: 'Glazecalc가 확인한 앱 주소: {host}\n',
+    selfDescribed: '앱이 스스로 등록했으므로, 이 이름은 앱이 자기에 대해 말하는 것일 뿐입니다.\n',
+    answerAt: '응답을 받는 곳: {host}\n',
+    loopback: '앱을 연결한 컴퓨터({host})에서 응답을 받습니다.\n',
+    read:
+      '\n' +
+      '이 앱은 계정에 저장된 레시피, 작업 노트, 원료, 가진 원료, 설정을 읽을 수 있습니다. 아무것도 바꿀 수 없습니다.\n\n',
+    write:
+      '\n' +
+      '이 앱은 계정에 저장된 레시피, 작업 노트, 원료, 가진 원료, 설정을 읽을 수 있으며, {days}일 동안 이것들을 바꿀 수도 있습니다: 기록을 만들고 바꾸고 휴지통으로 옮길 수 있습니다. 변경마다 이전 기록의 버전이 보관되므로 웹사이트에서 되돌릴 수 있습니다.\n\n',
+    closing:
+      '본인이 한 일이라면 따로 할 일은 없습니다. {page}에서 앱이 하는 일을 보고 폐기할 수 있습니다.\n\n' +
+      '그렇지 않다면 그곳에서 앱을 폐기하고 바로 비밀번호를 재설정하세요: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  lt: {
+    subject: 'Prie jūsų Glazecalc paskyros prijungta programa',
+    opening: 'Prie Glazecalc paskyros {account} {date} {time} (UTC) prijungta programa.\n\n',
+    named: 'Programa: „{name}“\n',
+    checked: 'Jos adresas, patikrintas Glazecalc: {host}\n',
+    selfDescribed: 'Ji užsiregistravo pati, todėl jos pavadinimas yra tik tai, ką ji pati apie save sako.\n',
+    answerAt: 'Atsakymą ji gauna adresu: {host}\n',
+    loopback: 'Atsakymą ji gauna kompiuteryje, iš kurio buvo prijungta ({host}).\n',
+    read:
+      '\n' +
+      'Ji gali skaityti paskyroje įrašytus receptus, sąsiuvinį, žaliavas, turimas žaliavas ir nustatymus. Ji negali nieko pakeisti.\n\n',
+    write:
+      '\n' +
+      'Ji gali skaityti paskyroje įrašytus receptus, sąsiuvinį, žaliavas, turimas žaliavas ir nustatymus, o {days} d. ji gali juos ir keisti: kurti ir keisti įrašus bei perkelti juos į šiukšlinę. Kiekvienas pakeitimas išsaugo įrašo versiją tokią, kokia ji buvo, todėl pakeitimą galite anuliuoti svetainėje.\n\n',
+    closing:
+      'Jei tai buvote jūs, daugiau nieko daryti nereikia. Ką ji daro, galite matyti ir ją atšaukti adresu {page}\n\n' +
+      'Jei ne, atšaukite ją ten ir nedelsdami atkurkite slaptažodį čia: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  lv: {
+    subject: 'Jūsu Glazecalc kontam pievienota lietotne',
+    opening: 'Lietotnes Glazecalc kontam {account} {date} plkst. {time} (UTC) tika pievienota lietotne.\n\n',
+    named: 'Lietotne: “{name}”\n',
+    checked: 'Tās adrese, ko pārbaudījis Glazecalc: {host}\n',
+    selfDescribed: 'Lietotne reģistrējās pati, tāpēc tās nosaukums ir tikai tas, ko tā pati par sevi saka.\n',
+    answerAt: 'Atbildi tā saņem šeit: {host}\n',
+    loopback: 'Atbildi tā saņem datorā, no kura tā tika pievienota ({host}).\n',
+    read:
+      '\n' +
+      'Tā var lasīt kontā saglabātās receptes, burtnīcu, izejvielas, krājumus un iestatījumus. Tā nevar neko mainīt.\n\n',
+    write:
+      '\n' +
+      'Tā var lasīt kontā saglabātās receptes, burtnīcu, izejvielas, krājumus un iestatījumus, un {days} dienas tā var tos arī mainīt: izveidot un mainīt ierakstus un pārvietot tos uz atkritni. Katras izmaiņas saglabā ieraksta versiju tādu, kāds tas bija, lai Jūs tās varētu atsaukt tīmekļa vietnē.\n\n',
+    closing:
+      'Ja to izdarījāt Jūs, nekas cits nav jādara. To, ko tā dara, varat apskatīt un to anulēt adresē {page}\n\n' +
+      'Ja ne, anulējiet to tur un nekavējoties atiestatiet paroli šeit: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  mt: {
+    subject: 'Ġiet konnessa app mal-kont tiegħek ta’ Glazecalc',
+    opening: 'Ġiet konnessa app mal-kont {account} ta’ Glazecalc fil-{date} fil-{time} (UTC).\n\n',
+    named: 'L-app: “{name}”\n',
+    checked: 'L-indirizz tagħha, iċċekkjat minn Glazecalc: {host}\n',
+    selfDescribed: 'Irreġistrat lilha nfisha, għalhekk isimha huwa biss dak li tgħid hi dwarha nfisha.\n',
+    answerAt: 'Tirċievi t-tweġiba f’: {host}\n',
+    loopback: 'Tirċievi t-tweġiba fuq il-kompjuter li minnu ġiet konnessa ({host}).\n',
+    read:
+      '\n' +
+      'Tista’ taqra r-riċetti, il-pitazz, il-materjali, il-materjali li għandek u s-settings issejvjati fil-kont. Ma tista’ tibdel xejn.\n\n',
+    write:
+      '\n' +
+      'Tista’ taqra r-riċetti, il-pitazz, il-materjali, il-materjali li għandek u s-settings issejvjati fil-kont, u għal {days} jum tista’ wkoll tibdilhom: toħloq u tibdel rekords, u tressaqhom lejn il-barmil. Kull bidla żżomm verżjoni tar-rekord kif kien, biex tkun tista’ terġa’ lura minnha fuq is-sit web.\n\n',
+    closing:
+      'Jekk kont int, m’hemmx għalfejn tagħmel xejn aktar. Tista’ tara x’tagħmel u tirrevokaha hawn: {page}\n\n' +
+      'Jekk le, irrevokaha hemm u rrisettja l-password tiegħek minnufih hawn: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  nl: {
+    subject: 'Er is een app aan uw Glazecalc-account gekoppeld',
+    opening: 'Er is op {date} om {time} (UTC) een app gekoppeld aan het Glazecalc-account {account}.\n\n',
+    named: 'De app: “{name}”\n',
+    checked: 'Het adres ervan, gecontroleerd door Glazecalc: {host}\n',
+    selfDescribed: 'De app heeft zichzelf geregistreerd, dus de naam is alleen wat ze over zichzelf zegt.\n',
+    answerAt: 'Ze ontvangt het antwoord op: {host}\n',
+    loopback: 'Ze ontvangt het antwoord op de computer van waaruit ze is gekoppeld ({host}).\n',
+    read:
+      '\n' +
+      'Ze kan de recepten, het notitieboek, de grondstoffen, de voorraad en de instellingen lezen die in het account zijn opgeslagen. Ze kan niets wijzigen.\n\n',
+    write:
+      '\n' +
+      'Ze kan de recepten, het notitieboek, de grondstoffen, de voorraad en de instellingen lezen die in het account zijn opgeslagen, en {days} dagen lang kan ze die ook wijzigen: records maken en wijzigen, en ze naar de prullenbak verplaatsen. Elke wijziging bewaart een versie van het record zoals het was, zodat u haar op de website ongedaan kunt maken.\n\n',
+    closing:
+      'Was u dit zelf, dan hoeft u verder niets te doen. U kunt zien wat ze doet en haar intrekken via {page}\n\n' +
+      'Zo niet, trek haar daar dan in en stel uw wachtwoord meteen opnieuw in via {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  pl: {
+    subject: 'Z kontem Glazecalc połączono aplikację',
+    opening: 'Z kontem Glazecalc {account} połączono aplikację {date} o {time} (UTC).\n\n',
+    named: 'Aplikacja: „{name}”\n',
+    checked: 'Jej adres, sprawdzony przez Glazecalc: {host}\n',
+    selfDescribed: 'Zarejestrowała się sama, więc jej nazwa to tylko to, co sama o sobie mówi.\n',
+    answerAt: 'Odbiera odpowiedź pod adresem: {host}\n',
+    loopback: 'Odbiera odpowiedź na komputerze, z którego została połączona ({host}).\n',
+    read:
+      '\n' +
+      'Może odczytywać receptury, notatnik, surowce, listę posiadanych surowców i ustawienia zapisane na koncie. Nie może niczego zmienić.\n\n',
+    write:
+      '\n' +
+      'Może odczytywać receptury, notatnik, surowce, listę posiadanych surowców i ustawienia zapisane na koncie, a przez {days} dni może też je zmieniać: tworzyć i zmieniać zapisy oraz przenosić je do kosza. Każda zmiana zachowuje wersję zapisu sprzed zmiany, więc można ją cofnąć na stronie internetowej.\n\n',
+    closing:
+      'Jeśli zrobił to właściciel konta, nie trzeba nic więcej robić. Można zobaczyć, co robi, i unieważnić ją na stronie {page}\n\n' +
+      'Jeśli nie, należy ją tam unieważnić i od razu zresetować hasło na stronie {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  'pt-PT': {
+    subject: 'Foi ligada uma aplicação à sua conta Glazecalc',
+    opening: 'Foi ligada uma aplicação à conta Glazecalc {account} em {date} às {time} (UTC).\n\n',
+    named: 'A aplicação: «{name}»\n',
+    checked: 'O seu endereço, verificado pelo Glazecalc: {host}\n',
+    selfDescribed: 'Registou-se a si própria, por isso o seu nome é apenas o que ela diz de si mesma.\n',
+    answerAt: 'Recebe a resposta em: {host}\n',
+    loopback: 'Recebe a resposta no computador a partir do qual foi ligada ({host}).\n',
+    read:
+      '\n' +
+      'Pode ler as receitas, o caderno, as matérias-primas, a prateleira e as definições guardados na conta. Não pode alterar nada.\n\n',
+    write:
+      '\n' +
+      'Pode ler as receitas, o caderno, as matérias-primas, a prateleira e as definições guardados na conta, e durante {days} dias também os pode alterar: criar e alterar registos, e movê-los para o Lixo. Cada alteração guarda uma versão do registo tal como estava, por isso pode anulá-la no site.\n\n',
+    closing:
+      'Se foi você, não precisa de fazer mais nada. Pode ver o que ela faz e revogá-la em {page}\n\n' +
+      'Caso contrário, revogue-a aí e reponha já a sua palavra-passe em {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  ro: {
+    subject: 'O aplicație a fost conectată la contul dumneavoastră Glazecalc',
+    opening: 'O aplicație a fost conectată la contul Glazecalc {account} pe {date}, la ora {time} (UTC).\n\n',
+    named: 'Aplicația: „{name}”\n',
+    checked: 'Adresa ei, verificată de Glazecalc: {host}\n',
+    selfDescribed: 'S-a înregistrat singură, așa că numele ei este doar ce spune ea despre sine.\n',
+    answerAt: 'Primește răspunsul la: {host}\n',
+    loopback: 'Primește răspunsul pe computerul de pe care a fost conectată ({host}).\n',
+    read:
+      '\n' +
+      'Poate citi rețetele, caietul, materiile prime, stocul și setările salvate în cont. Nu poate modifica nimic.\n\n',
+    write:
+      '\n' +
+      'Poate citi rețetele, caietul, materiile prime, stocul și setările salvate în cont și, timp de {days} de zile, le poate și modifica: poate crea și modifica înregistrări și le poate muta în coșul de reciclare. Fiecare modificare păstrează o versiune a înregistrării așa cum era, deci o puteți anula pe site.\n\n',
+    closing:
+      'Dacă ați fost dumneavoastră, nu mai aveți nimic de făcut. Puteți vedea ce face și o puteți revoca la {page}\n\n' +
+      'Dacă nu, revocați-o acolo și resetați imediat parola la {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  sk: {
+    subject: 'K Vášmu účtu Glazecalc bola pripojená aplikácia',
+    opening: 'K účtu Glazecalc {account} bola {date} o {time} (UTC) pripojená aplikácia.\n\n',
+    named: 'Aplikácia: „{name}“\n',
+    checked: 'Jej adresa, overená službou Glazecalc: {host}\n',
+    selfDescribed: 'Zaregistrovala sa sama, takže jej názov je len to, čo o sebe sama tvrdí.\n',
+    answerAt: 'Odpoveď prijíma na: {host}\n',
+    loopback: 'Odpoveď prijíma na počítači, z ktorého bola pripojená ({host}).\n',
+    read: '\n' + 'Môže čítať recepty, zápisník, suroviny, zásobu a nastavenia uložené v účte. Nemôže nič meniť.\n\n',
+    write:
+      '\n' +
+      'Môže čítať recepty, zápisník, suroviny, zásobu a nastavenia uložené v účte a počas {days} dní ich môže aj meniť: vytvárať a meniť záznamy a presúvať ich do Koša. Každá zmena zachová verziu záznamu tak, ako bol, takže ju môžete na webe vrátiť späť.\n\n',
+    closing:
+      'Ak ste to boli Vy, nemusíte už nič robiť. Čo robí, môžete vidieť a zneplatniť ju na {page}\n\n' +
+      'Ak nie, zneplatnite ju tam a ihneď si obnovte heslo tu: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  sl: {
+    subject: 'Z Vašim računom Glazecalc je bila povezana aplikacija',
+    opening: 'Z računom Glazecalc {account} je bila {date} ob {time} (UTC) povezana aplikacija.\n\n',
+    named: 'Aplikacija: »{name}«\n',
+    checked: 'Njen naslov, ki ga je preveril Glazecalc: {host}\n',
+    selfDescribed: 'Registrirala se je sama, zato je njeno ime samo to, kar pravi o sebi.\n',
+    answerAt: 'Odgovor prejme na: {host}\n',
+    loopback: 'Odgovor prejme na računalniku, s katerega je bila povezana ({host}).\n',
+    read:
+      '\n' +
+      'Bere lahko recepte, beležnico, surovine, zalogo in nastavitve, shranjene v računu. Ne more spremeniti ničesar.\n\n',
+    write:
+      '\n' +
+      'Bere lahko recepte, beležnico, surovine, zalogo in nastavitve, shranjene v računu, {days} dni pa jih lahko tudi spreminja: ustvarja in spreminja zapise ter jih premika v koš. Vsaka sprememba ohrani različico zapisa, kakršen je bil, zato jo lahko razveljavite na spletni strani.\n\n',
+    closing:
+      'Če ste bili to Vi, Vam ni treba storiti ničesar več. Kaj počne, lahko vidite in jo prekličete na {page}\n\n' +
+      'Če ne, jo tam prekličite in takoj ponastavite geslo tukaj: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  sv: {
+    subject: 'En app har anslutits till ditt Glazecalc-konto',
+    opening: 'En app anslöts till Glazecalc-kontot {account} den {date} kl. {time} (UTC).\n\n',
+    named: 'Appen: ”{name}”\n',
+    checked: 'Dess adress, kontrollerad av Glazecalc: {host}\n',
+    selfDescribed: 'Den har registrerat sig själv, så dess namn är bara vad den säger om sig själv.\n',
+    answerAt: 'Den tar emot svaret på: {host}\n',
+    loopback: 'Den tar emot svaret på datorn som den anslöts från ({host}).\n',
+    read:
+      '\n' +
+      'Den kan läsa recepten, anteckningsboken, råvarorna, förrådet och inställningarna som sparats i kontot. Den kan inte ändra något.\n\n',
+    write:
+      '\n' +
+      'Den kan läsa recepten, anteckningsboken, råvarorna, förrådet och inställningarna som sparats i kontot, och i {days} dagar kan den också ändra dem: skapa och ändra poster och flytta dem till papperskorgen. Varje ändring behåller en version av posten som den var, så att du kan ångra den på webbplatsen.\n\n',
+    closing:
+      'Om det var du behöver du inte göra något mer. Du kan se vad den gör och återkalla den på {page}\n\n' +
+      'Om inte, återkalla den där och återställ lösenordet direkt på {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  th: {
+    subject: 'มีแอปเชื่อมต่อกับบัญชี Glazecalc ของคุณ',
+    opening: 'มีแอปเชื่อมต่อกับบัญชี Glazecalc {account} เมื่อ {date} เวลา {time} (UTC)\n\n',
+    named: 'แอป: “{name}”\n',
+    checked: 'ที่อยู่ของแอป ตรวจสอบโดย Glazecalc: {host}\n',
+    selfDescribed: 'แอปนี้ลงทะเบียนตัวเอง ชื่อจึงเป็นเพียงสิ่งที่แอปบอกเกี่ยวกับตัวเอง\n',
+    answerAt: 'แอปรับคำตอบที่: {host}\n',
+    loopback: 'แอปรับคำตอบบนคอมพิวเตอร์ที่ใช้เชื่อมต่อ ({host})\n',
+    read:
+      '\n' +
+      'แอปอ่านสูตรเคลือบ สมุดบันทึก วัตถุดิบ วัตถุดิบที่มี และการตั้งค่าที่บันทึกไว้ในบัญชีได้ แอปเปลี่ยนแปลงสิ่งใดไม่ได้\n\n',
+    write:
+      '\n' +
+      'แอปอ่านสูตรเคลือบ สมุดบันทึก วัตถุดิบ วัตถุดิบที่มี และการตั้งค่าที่บันทึกไว้ในบัญชีได้ และเป็นเวลา {days} วันยังเปลี่ยนแปลงสิ่งเหล่านี้ได้ด้วย: สร้างและเปลี่ยนแปลงบันทึก และย้ายบันทึกไปที่ถังขยะ ทุกการเปลี่ยนแปลงจะเก็บบันทึกฉบับที่เป็นอยู่ก่อนไว้ คุณจึงเลิกทำได้บนเว็บไซต์\n\n',
+    closing:
+      'หากเป็นคุณ ไม่ต้องทำอะไรเพิ่ม คุณดูสิ่งที่แอปทำและเพิกถอนแอปได้ที่ {page}\n\n' +
+      'หากไม่ใช่ ให้เพิกถอนแอปที่นั่นและรีเซ็ตรหัสผ่านทันทีที่ {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  tr: {
+    subject: 'Glazecalc hesabınıza bir uygulama bağlandı',
+    opening: 'Glazecalc hesabı {account} için bir uygulama bağlandı. Tarih: {date}, saat {time} (UTC).\n\n',
+    named: 'Uygulama: “{name}”\n',
+    checked: 'Glazecalc tarafından doğrulanan adresi: {host}\n',
+    selfDescribed: 'Kendini kendisi kaydetti; bu yüzden adı yalnızca kendisi hakkında söylediğidir.\n',
+    answerAt: 'Yanıtı aldığı yer: {host}\n',
+    loopback: 'Yanıtı, bağlandığı bilgisayarda alır ({host}).\n',
+    read:
+      '\n' +
+      'Hesapta kayıtlı reçeteleri, atölye defterini, hammaddeleri, eldeki hammaddeleri ve ayarları okuyabilir. Hiçbir şeyi değiştiremez.\n\n',
+    write:
+      '\n' +
+      'Hesapta kayıtlı reçeteleri, atölye defterini, hammaddeleri, eldeki hammaddeleri ve ayarları okuyabilir ve {days} gün boyunca bunları değiştirebilir de: kayıt oluşturabilir, değiştirebilir ve Çöp kutusuna taşıyabilir. Her değişiklik kaydın önceki hâlinin bir sürümünü saklar, böylece web sitesinde geri alabilirsiniz.\n\n',
+    closing:
+      'Bu sizseniz başka bir şey yapmanız gerekmez. Ne yaptığını görebilir ve onu şu adreste iptal edebilirsiniz: {page}\n\n' +
+      'Değilseniz onu orada iptal edin ve parolanızı hemen şu adresten sıfırlayın: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  vi: {
+    subject: 'Một ứng dụng đã được kết nối với tài khoản Glazecalc của bạn',
+    opening: 'Một ứng dụng đã được kết nối với tài khoản Glazecalc {account} vào {date} lúc {time} (UTC).\n\n',
+    named: 'Ứng dụng: “{name}”\n',
+    checked: 'Địa chỉ của nó, đã được Glazecalc kiểm tra: {host}\n',
+    selfDescribed: 'Nó tự đăng ký, nên tên của nó chỉ là những gì nó tự nói về mình.\n',
+    answerAt: 'Nó nhận câu trả lời tại: {host}\n',
+    loopback: 'Nó nhận câu trả lời trên máy tính đã dùng để kết nối nó ({host}).\n',
+    read:
+      '\n' +
+      'Nó có thể đọc các công thức men, sổ tay, nguyên liệu, nguyên liệu tôi có và cài đặt đã lưu trong tài khoản. Nó không thể thay đổi gì.\n\n',
+    write:
+      '\n' +
+      'Nó có thể đọc các công thức men, sổ tay, nguyên liệu, nguyên liệu tôi có và cài đặt đã lưu trong tài khoản, và trong {days} ngày nó cũng có thể thay đổi chúng: tạo và thay đổi bản ghi, và chuyển chúng vào Thùng rác. Mỗi thay đổi giữ lại một phiên bản của bản ghi như trước đó, nên bạn có thể hoàn tác trên trang web.\n\n',
+    closing:
+      'Nếu đó là bạn, không cần làm gì thêm. Bạn có thể xem những gì nó làm và thu hồi nó tại {page}\n\n' +
+      'Nếu không, hãy thu hồi nó ở đó và đặt lại mật khẩu của bạn ngay tại {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  'zh-Hans': {
+    subject: '有应用连接到了您的 Glazecalc 账户',
+    opening: '{date} {time}（UTC），有一个应用连接到了 Glazecalc 账户 {account}。\n\n',
+    named: '应用：“{name}”\n',
+    checked: '它的地址，已由 Glazecalc 核实：{host}\n',
+    selfDescribed: '它是自行注册的，所以它的名称只是它对自己的说法。\n',
+    answerAt: '它在此接收答复：{host}\n',
+    loopback: '它在连接它的那台电脑（{host}）上接收答复。\n',
+    read: '\n' + '它可以读取该账户中保存的配方、笔记本、原料、手头的原料和设置。它不能更改任何内容。\n\n',
+    write:
+      '\n' +
+      '它可以读取该账户中保存的配方、笔记本、原料、手头的原料和设置，并且在 {days} 天内还可以更改它们：创建和更改记录，并把记录移入回收站。每次更改都会保留记录原来的一个版本，所以您可以在网站上撤销。\n\n',
+    closing:
+      '如果是您本人操作，无需再做任何事。您可以在 {page} 查看它做了什么并吊销它\n\n' +
+      '如果不是，请在那里吊销它，并立即在此重置密码：{forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  'zh-Hant': {
+    subject: '有應用程式連接到了您的 Glazecalc 帳戶',
+    opening: '{date} {time}（UTC），有一個應用程式連接到了 Glazecalc 帳戶 {account}。\n\n',
+    named: '應用程式：「{name}」\n',
+    checked: '它的位址，已由 Glazecalc 查核：{host}\n',
+    selfDescribed: '它是自行註冊的，所以它的名稱只是它對自己的說法。\n',
+    answerAt: '它在此接收回覆：{host}\n',
+    loopback: '它在連接它的那台電腦（{host}）上接收回覆。\n',
+    read: '\n' + '它可以讀取該帳戶中儲存的釉方、筆記本、原料、現有原料和設定。它無法變更任何內容。\n\n',
+    write:
+      '\n' +
+      '它可以讀取該帳戶中儲存的釉方、筆記本、原料、現有原料和設定，並且在 {days} 天內還可以變更它們：建立和變更紀錄，並把紀錄移到垃圾桶。每次變更都會保留紀錄原來的一個版本，所以您可以在網站上復原。\n\n',
+    closing:
+      '如果這是您本人的操作，就不需要再做任何事。您可以在 {page} 查看它做了什麼並撤銷它。\n\n' +
+      '如果不是，請在那裡撤銷它，並立即到 {forgot} 重設密碼\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
   }
 };
 
@@ -6829,26 +7437,457 @@ export const sendConnectionMade = (to: string, connection: ConnectionMade, langu
 /**
  * Sent when the account asks less before changes from apps and access tokens
  * are made (docs/adr/0025-confirm-before-changes.md): {account}, {choice},
- * {page}, {forgot} and {app}. English only so far: the next translation wave
- * adds the others.
+ * {page}, {forgot} and {app}.
  */
 export const CONFIRM_LOOSENED: Record<string, Email> = {
   en: {
     subject: 'Glazecalc now asks less before apps change your records',
     text:
-      'The Glazecalc account {account} was just set to ask for approval {choice}.\n\n' +
+      'Confirm before changes, on the Glazecalc account {account}, was just set to: {choice}.\n\n' +
       'If this was you, there is nothing else to do. You can see and change it on Connected apps at {page}\n\n' +
       'If not, set it back there, revoke any app or token you do not know, and reset your password right away at {forgot}\n' +
       '\n-- \nGlazecalc, {app}\n'
+  },
+  bg: {
+    subject: 'Glazecalc вече пита по-малко, преди приложения да променят записите Ви',
+    text:
+      'Настройката „Потвърждение преди промени“ на профила {account} в Glazecalc току-що беше променена на: {choice}.\n\n' +
+      'Ако това сте били Вие, не е нужно да правите нищо друго. Можете да видите и промените настройката в „Свързани приложения“ на {page}\n\n' +
+      'Ако не, върнете я там, отменете всяко приложение или токен, които не познавате, и нулирайте паролата си веднага на {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  cs: {
+    subject: 'Glazecalc se teď méně ptá, než aplikace změní Vaše záznamy',
+    text:
+      'Nastavení Potvrzení před změnami u účtu Glazecalc {account} bylo právě změněno na: {choice}.\n\n' +
+      'Pokud jste to byli Vy, nemusíte už nic dělat. Nastavení můžete vidět a změnit na stránce Připojené aplikace: {page}\n\n' +
+      'Pokud ne, nastavte ho tam zpět, zneplatněte každou aplikaci nebo token, které neznáte, a ihned si obnovte heslo zde: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  da: {
+    subject: 'Glazecalc spørger nu mindre, før apps ændrer dine poster',
+    text:
+      'Glazecalc-kontoen {account} er netop blevet indstillet til at bede om godkendelse: {choice}.\n\n' +
+      'Hvis det var dig, er der ikke mere at gøre. Du kan se og ændre den under Tilsluttede apps på {page}\n\n' +
+      'Hvis ikke, så sæt den tilbage dér, tilbagekald enhver app eller ethvert adgangstoken, du ikke kender, og nulstil adgangskoden med det samme på {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  de: {
+    subject: 'Glazecalc fragt jetzt seltener, bevor Apps Ihre Datensätze ändern',
+    text:
+      'Das Glazecalc-Konto {account} wurde gerade so eingestellt, dass es {choice}.\n\n' +
+      'Wenn Sie das waren, müssen Sie nichts weiter tun. Sie können es unter „Verbundene Apps“ ansehen und ändern: {page}\n\n' +
+      'Wenn nicht, stellen Sie es dort zurück, widerrufen Sie jede App und jedes Token, die Sie nicht kennen, und setzen Sie Ihr Passwort sofort hier zurück: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  el: {
+    subject: 'Το Glazecalc ρωτά πλέον λιγότερο πριν αλλάξουν εφαρμογές τις εγγραφές σας',
+    text:
+      'Η επιβεβαίωση πριν από αλλαγές για τον λογαριασμό {account} στο Glazecalc μόλις ρυθμίστηκε σε: {choice}.\n\n' +
+      'Αν το κάνατε εσείς, δεν χρειάζεται να κάνετε τίποτα άλλο. Μπορείτε να τη δείτε και να την αλλάξετε στις Συνδεδεμένες εφαρμογές εδώ: {page}\n\n' +
+      'Αν όχι, επαναφέρετέ την εκεί, ανακαλέστε κάθε εφαρμογή ή διακριτικό που δεν αναγνωρίζετε και επαναφέρετε αμέσως τον κωδικό πρόσβασής σας εδώ: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  es: {
+    subject: 'Glazecalc ahora pregunta menos antes de que las aplicaciones cambien sus registros',
+    text:
+      'La cuenta de Glazecalc {account} se acaba de configurar para que {choice}.\n\n' +
+      'Si ha sido usted, no tiene que hacer nada más. Puede verlo y cambiarlo en Aplicaciones conectadas, en {page}\n\n' +
+      'Si no, vuelva a cambiarlo allí, revoque cualquier aplicación o token que no conozca y restablezca su contraseña de inmediato en {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  et: {
+    subject: 'Glazecalc küsib nüüd vähem, enne kui rakendused teie kirjeid muudavad',
+    text:
+      'Glazecalci konto {account} seati just küsima heakskiitu {choice}.\n\n' +
+      'Kui see olite teie, ei pea te midagi muud tegema. Seda saate näha ja muuta lehel Ühendatud rakendused aadressil {page}\n\n' +
+      'Kui mitte, muutke see seal tagasi, tühistage kõik rakendused ja load, mida te ei tunne, ja lähtestage parool kohe siin: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  fi: {
+    subject: 'Glazecalc kysyy nyt vähemmän ennen kuin sovellukset muuttavat tietueita',
+    text:
+      'Glazecalc-tili {account} asetettiin juuri pyytämään hyväksyntää {choice}.\n\n' +
+      'Jos tämän teki tilin omistaja itse, muuta ei tarvitse tehdä. Asetuksen voi nähdä ja muuttaa Yhdistetyt sovellukset -sivulla osoitteessa {page}\n\n' +
+      'Muussa tapauksessa palauta asetus siellä, peruuta kaikki tuntemattomat sovellukset ja tunnukset ja palauta salasana heti osoitteessa {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  fr: {
+    subject: 'Glazecalc demande désormais moins avant que des applications modifient vos enregistrements',
+    text:
+      'Le compte Glazecalc {account} vient d’être réglé pour {choice}.\n\n' +
+      'Si c’est vous, il n’y a rien d’autre à faire. Vous pouvez voir et changer ce réglage dans Applications connectées, sur {page}\n\n' +
+      'Sinon, rétablissez-le là, révoquez toute application ou tout jeton que vous ne connaissez pas, et réinitialisez votre mot de passe tout de suite sur {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  ga: {
+    subject: 'Fiafraíonn Glazecalc níos lú anois sula n-athraíonn aipeanna do thaifid',
+    text:
+      'Socraíodh an cuntas Glazecalc {account} anois díreach chun faomhadh a iarraidh mar seo: {choice}.\n\n' +
+      'Más tusa a rinne é, níl aon rud eile le déanamh. Is féidir leat é a fheiceáil agus a athrú ar ‘Aipeanna ceangailte’ ag {page}\n\n' +
+      'Mura tusa, athraigh ar ais ansin é, cúlghair aon aip nó comhartha nach n-aithníonn tú, agus athshocraigh do phasfhocal láithreach ag {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  hr: {
+    subject: 'Glazecalc sada manje pita prije nego što aplikacije promijene vaše zapise',
+    text:
+      'Postavka „Potvrda prije promjena” za račun Glazecalc {account} upravo je promijenjena u: {choice}.\n\n' +
+      'Ako ste to bili vi, ne morate ništa drugo učiniti. Postavku možete vidjeti i promijeniti na stranici Povezane aplikacije na adresi {page}\n\n' +
+      'Ako niste, ondje je vratite, opozovite svaku aplikaciju ili token koje ne poznajete i odmah ponovno postavite lozinku ovdje: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  hu: {
+    subject: 'A Glazecalc mostantól kevesebbet kérdez, mielőtt az alkalmazások módosítják a bejegyzéseit',
+    text:
+      'A(z) {account} Glazecalc-fiók az imént úgy lett beállítva, hogy jóváhagyást kérjen: {choice}.\n\n' +
+      'Ha Ön volt az, nincs további teendője. A Csatlakoztatott alkalmazások oldalon láthatja és módosíthatja: {page}\n\n' +
+      'Ha nem, állítsa vissza ott, vonjon vissza minden alkalmazást vagy tokent, amelyet nem ismer, és azonnal állítsa vissza a jelszavát itt: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  id: {
+    subject: 'Glazecalc sekarang lebih jarang bertanya sebelum aplikasi mengubah catatan Anda',
+    text:
+      'Akun Glazecalc {account} baru saja diatur untuk meminta persetujuan {choice}.\n\n' +
+      'Jika ini Anda, tidak ada lagi yang perlu dilakukan. Anda dapat melihat dan mengubahnya di Aplikasi terhubung di {page}\n\n' +
+      'Jika bukan, kembalikan pengaturannya di sana, cabut aplikasi atau token apa pun yang tidak Anda kenal, dan segera setel ulang kata sandi Anda di {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  it: {
+    subject: 'Glazecalc ora chiede meno prima che le app modifichino i Suoi dati',
+    text:
+      'L’account Glazecalc {account} è stato appena impostato per {choice}.\n\n' +
+      'Se l’ha fatto Lei, non c’è altro da fare. Può vederlo e cambiarlo in App collegate all’indirizzo {page}\n\n' +
+      'Altrimenti, lo reimposti lì, revochi ogni app o token che non conosce e reimposti subito la password all’indirizzo {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  ja: {
+    subject: 'Glazecalc で、アプリが記録を変更する前の確認が少なくなりました',
+    text:
+      'Glazecalc のアカウント {account} で、承認を求める設定が先ほど次のように変更されました: {choice}。\n\n' +
+      'ご本人による操作であれば、ほかに必要な操作はありません。設定は [連携したアプリ] の {page} で確認と変更ができます。\n\n' +
+      'そうでない場合は、そこで設定を元に戻し、心当たりのないアプリやトークンを失効させ、すぐに次のページでパスワードを再設定してください: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  ko: {
+    subject: '이제 Glazecalc는 앱이 기록을 바꾸기 전에 덜 묻습니다',
+    text:
+      'Glazecalc 계정 {account}의 승인 요청 설정이 방금 다음과 같이 바뀌었습니다: {choice}.\n\n' +
+      '본인이 한 일이라면 따로 할 일은 없습니다. {page}의 [연결된 앱]에서 설정을 확인하고 바꿀 수 있습니다.\n\n' +
+      '그렇지 않다면 그곳에서 설정을 되돌리고, 모르는 앱이나 토큰을 폐기하고, 바로 비밀번호를 재설정하세요: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  lt: {
+    subject: 'Glazecalc dabar mažiau klausia, prieš programoms keičiant jūsų įrašus',
+    text:
+      'Glazecalc paskyrai {account} ką tik nustatyta prašyti patvirtinimo {choice}.\n\n' +
+      'Jei tai buvote jūs, daugiau nieko daryti nereikia. Tai matyti ir pakeisti galite puslapyje Prijungtos programos adresu {page}\n\n' +
+      'Jei ne, grąžinkite ankstesnį nustatymą ten, atšaukite visas nepažįstamas programas ir žetonus ir nedelsdami atkurkite slaptažodį čia: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  lv: {
+    subject: 'Glazecalc tagad mazāk jautā, pirms lietotnes maina Jūsu ierakstus',
+    text:
+      'Lietotnes Glazecalc kontam {account} tikko iestatīts prasīt apstiprinājumu šādi: {choice}.\n\n' +
+      'Ja to izdarījāt Jūs, nekas cits nav jādara. To varat apskatīt un mainīt lapā Pievienotās lietotnes adresē {page}\n\n' +
+      'Ja ne, iestatiet to tur atpakaļ, anulējiet visas lietotnes vai marķierus, ko nepazīstat, un nekavējoties atiestatiet paroli šeit: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  mt: {
+    subject: 'Glazecalc issa jistaqsi inqas qabel ma l-apps jibdlu r-rekords tiegħek',
+    text:
+      'Il-kont {account} ta’ Glazecalc għadu kif ġie ssettjat biex jitlob l-approvazzjoni hekk: {choice}.\n\n' +
+      'Jekk kont int, m’hemmx għalfejn tagħmel xejn aktar. Tista’ tara u tibdel dan fuq Apps konnessi hawn: {page}\n\n' +
+      'Jekk le, erġa’ ssettjah kif kien hemm, irrevoka kwalunkwe app jew token li ma tagħrafx, u rrisettja l-password tiegħek minnufih hawn: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  nl: {
+    subject: 'Glazecalc vraagt nu minder voordat apps uw records wijzigen',
+    text:
+      'Het Glazecalc-account {account} vraagt sinds zojuist om goedkeuring: {choice}.\n\n' +
+      'Was u dit zelf, dan hoeft u verder niets te doen. U kunt het bekijken en wijzigen op Gekoppelde apps via {page}\n\n' +
+      'Zo niet, zet het daar dan terug, trek elke app of elk token in dat u niet kent, en stel uw wachtwoord meteen opnieuw in via {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  pl: {
+    subject: 'Glazecalc pyta teraz rzadziej, zanim aplikacje zmienią zapisy',
+    text:
+      'Konto Glazecalc {account} zostało właśnie ustawione tak, by pytać o zatwierdzenie: {choice}.\n\n' +
+      'Jeśli zrobił to właściciel konta, nie trzeba nic więcej robić. Można to zobaczyć i zmienić na stronie Połączone aplikacje: {page}\n\n' +
+      'Jeśli nie, należy tam przywrócić poprzednie ustawienie, unieważnić każdą nieznaną aplikację lub token i od razu zresetować hasło na stronie {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  'pt-PT': {
+    subject: 'O Glazecalc agora pergunta menos antes de as aplicações alterarem os seus registos',
+    text:
+      'A conta Glazecalc {account} acabou de ser configurada para {choice}.\n\n' +
+      'Se foi você, não precisa de fazer mais nada. Pode ver e alterar isto em Aplicações ligadas, em {page}\n\n' +
+      'Caso contrário, reponha a definição aí, revogue qualquer aplicação ou token que não conheça e reponha já a sua palavra-passe em {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  ro: {
+    subject: 'Glazecalc întreabă acum mai puțin înainte ca aplicațiile să vă modifice înregistrările',
+    text:
+      'Setarea contului Glazecalc {account} tocmai a fost schimbată. Aprobarea se cere acum: {choice}.\n\n' +
+      'Dacă ați fost dumneavoastră, nu mai aveți nimic de făcut. Puteți vedea și schimba setarea în Aplicații conectate, la {page}\n\n' +
+      'Dacă nu, readuceți-o acolo la cum era, revocați orice aplicație sau token pe care nu îl cunoașteți și resetați imediat parola la {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  sk: {
+    subject: 'Glazecalc sa teraz menej pýta, skôr ako aplikácie zmenia Vaše záznamy',
+    text:
+      'Nastavenie Potvrdenie pred zmenami pri účte Glazecalc {account} bolo práve zmenené na: {choice}.\n\n' +
+      'Ak ste to boli Vy, nemusíte už nič robiť. Nastavenie môžete vidieť a zmeniť na stránke Pripojené aplikácie: {page}\n\n' +
+      'Ak nie, nastavte ho tam späť, zneplatnite každú aplikáciu alebo token, ktoré nepoznáte, a ihneď si obnovte heslo tu: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  sl: {
+    subject: 'Glazecalc zdaj manj sprašuje, preden aplikacije spremenijo Vaše zapise',
+    text:
+      'Račun Glazecalc {account} je bil pravkar nastavljen tako, da zahteva odobritev {choice}.\n\n' +
+      'Če ste bili to Vi, Vam ni treba storiti ničesar več. To lahko vidite in spremenite na strani Povezane aplikacije na {page}\n\n' +
+      'Če ne, nastavitev tam vrnite, prekličite vse aplikacije in žetone, ki jih ne poznate, in takoj ponastavite geslo tukaj: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  sv: {
+    subject: 'Glazecalc frågar nu mindre innan appar ändrar dina poster',
+    text:
+      '”Bekräfta före ändringar” för Glazecalc-kontot {account} har just ställts in på: {choice}.\n\n' +
+      'Om det var du behöver du inte göra något mer. Du kan se och ändra den under Anslutna appar på {page}\n\n' +
+      'Om inte, ställ tillbaka den där, återkalla alla appar och åtkomsttoken som du inte känner igen, och återställ lösenordet direkt på {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  th: {
+    subject: 'ตอนนี้ Glazecalc ถามน้อยลงก่อนที่แอปจะเปลี่ยนแปลงบันทึกของคุณ',
+    text:
+      'บัญชี Glazecalc {account} เพิ่งถูกตั้งค่าให้ขอการอนุมัติดังนี้: {choice}\n\n' +
+      'หากเป็นคุณ ไม่ต้องทำอะไรเพิ่ม คุณดูและเปลี่ยนการตั้งค่านี้ได้ที่ แอปที่เชื่อมต่อ ที่ {page}\n\n' +
+      'หากไม่ใช่ ให้ตั้งค่ากลับที่นั่น เพิกถอนแอปหรือโทเค็นใดก็ตามที่คุณไม่รู้จัก และรีเซ็ตรหัสผ่านทันทีที่ {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  tr: {
+    subject: 'Glazecalc artık uygulamalar kayıtlarınızı değiştirmeden önce daha az soruyor',
+    text:
+      'Glazecalc hesabı {account} için onay isteme ayarı az önce şöyle değiştirildi: {choice}.\n\n' +
+      'Bu sizseniz başka bir şey yapmanız gerekmez. Bunu Bağlı uygulamalar sayfasında şu adreste görebilir ve değiştirebilirsiniz: {page}\n\n' +
+      'Değilseniz ayarı orada geri alın, tanımadığınız her uygulamayı veya belirteci iptal edin ve parolanızı hemen şu adresten sıfırlayın: {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  vi: {
+    subject: 'Glazecalc giờ hỏi ít hơn trước khi ứng dụng thay đổi các bản ghi của bạn',
+    text:
+      'Tài khoản Glazecalc {account} vừa được đặt để yêu cầu chấp thuận {choice}.\n\n' +
+      'Nếu đó là bạn, không cần làm gì thêm. Bạn có thể xem và thay đổi cài đặt này tại Ứng dụng được kết nối ở {page}\n\n' +
+      'Nếu không, hãy đặt lại như cũ ở đó, thu hồi mọi ứng dụng hoặc mã thông báo bạn không biết, và đặt lại mật khẩu của bạn ngay tại {forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  'zh-Hans': {
+    subject: '现在 Glazecalc 在应用更改您的记录前询问得更少了',
+    text:
+      'Glazecalc 账户 {account} 刚刚被设置为如下方式请求批准：{choice}。\n\n' +
+      '如果是您本人操作，无需再做任何事。您可以在 {page} 的“已连接的应用”中查看和更改这项设置\n\n' +
+      '如果不是，请在那里改回原来的设置，吊销任何您不认识的应用或令牌，并立即在此重置密码：{forgot}\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
+  },
+  'zh-Hant': {
+    subject: '現在 Glazecalc 在應用程式變更您的紀錄前詢問得較少',
+    text:
+      'Glazecalc 帳戶 {account} 剛剛被設定為以下列方式要求核准：{choice}。\n\n' +
+      '如果這是您本人的操作，就不需要再做任何事。您可以在 {page} 的「已連接的應用程式」查看和變更這項設定。\n\n' +
+      '如果不是，請在那裡改回原來的設定，撤銷任何您不認識的應用程式或權杖，並立即到 {forgot} 重設密碼\n\n' +
+      '-- \n' +
+      'Glazecalc, {app}\n'
   }
 };
 
 /** How CONFIRM_LOOSENED names each choice it can be loosened to. */
 export const CONFIRM_CHOICES: Record<string, Record<'off' | 'removals', string>> = {
   en: {
-    off: 'never: changes from apps and access tokens are made at once',
+    off: 'never ask. Changes from apps and access tokens are made at once',
     removals:
-      'only before a removal: moving a record to the Trash, or taking a material off the materials on hand. Other changes from apps and access tokens are made at once'
+      'ask before removals only: moving a record to the Trash, or taking a material off the materials on hand. Other changes from apps and access tokens are made at once'
+  },
+  bg: {
+    off: 'никога – промените от приложения и токени за достъп се правят веднага',
+    removals:
+      'само преди премахване – преместване на запис в Кошчето или премахване на суровина от наличните суровини. Другите промени от приложения и токени за достъп се правят веднага'
+  },
+  cs: {
+    off: 'nikdy se neptat. Změny z aplikací a přístupových tokenů se provádějí okamžitě',
+    removals:
+      'ptát se jen před odebráním: přesunutím záznamu do koše nebo odebráním suroviny ze surovin v zásobě. Ostatní změny z aplikací a přístupových tokenů se provádějí okamžitě'
+  },
+  da: {
+    off: 'aldrig; ændringer fra apps og adgangstokens foretages med det samme',
+    removals:
+      'kun før en fjernelse (at flytte en post til papirkurven eller fjerne en råvare fra råvarerne på lager); andre ændringer fra apps og adgangstokens foretages med det samme'
+  },
+  de: {
+    off: 'nie um Genehmigung fragt (Änderungen von Apps und Zugriffstoken werden sofort vorgenommen)',
+    removals:
+      'nur vor dem Entfernen um Genehmigung fragt, also bevor ein Datensatz in den Papierkorb gelegt oder ein Rohstoff aus dem Vorrat genommen wird (andere Änderungen von Apps und Zugriffstoken werden sofort vorgenommen)'
+  },
+  el: {
+    off: 'ποτέ – οι αλλαγές από εφαρμογές και διακριτικά πρόσβασης γίνονται αμέσως',
+    removals:
+      'μόνο πριν από μια κατάργηση – τη μεταφορά μιας εγγραφής στον Κάδο απορριμμάτων ή την αφαίρεση ενός υλικού από τα υλικά που έχετε. Οι άλλες αλλαγές από εφαρμογές και διακριτικά πρόσβασης γίνονται αμέσως'
+  },
+  es: {
+    off: 'no pida aprobación nunca: los cambios de aplicaciones y tokens de acceso se hacen al instante',
+    removals:
+      'pida aprobación solo antes de quitar algo: mover un registro a la papelera o quitar un material de los materiales disponibles. Los demás cambios de aplicaciones y tokens de acceso se hacen al instante'
+  },
+  et: {
+    off: 'mitte kunagi: rakenduste ja juurdepääsulubade muudatused tehakse kohe',
+    removals:
+      'ainult enne eemaldamist: kirje viimist prügikasti või tooraine eemaldamist toorainete varust. Muud rakenduste ja juurdepääsulubade muudatused tehakse kohe'
+  },
+  fi: {
+    off: 'ei koskaan: sovellusten ja käyttöoikeustunnusten muutokset tehdään heti',
+    removals:
+      'vain ennen poistoa: tietueen siirtämistä roskakoriin tai raaka-aineen poistamista varastosta. Muut sovellusten ja käyttöoikeustunnusten muutokset tehdään heti'
+  },
+  fr: {
+    off: 'ne jamais demander d’approbation (les modifications des applications et des jetons d’accès sont faites tout de suite)',
+    removals:
+      'ne demander d’approbation qu’avant un retrait, c’est-à-dire avant de mettre un enregistrement à la corbeille ou de retirer une matière des matières disponibles (les autres modifications des applications et des jetons d’accès sont faites tout de suite)'
+  },
+  ga: {
+    off: 'riamh: déantar athruithe ó aipeanna agus ó chomharthaí rochtana láithreach',
+    removals:
+      'roimh bhaint amháin: taifead a bhogadh go dtí an bruscar, nó ábhar a bhaint den stoc. Déantar athruithe eile ó aipeanna agus ó chomharthaí rochtana láithreach'
+  },
+  hr: {
+    off: 'nikad – promjene iz aplikacija i pristupnih tokena izvršavaju se odmah',
+    removals:
+      'samo prije uklanjanja – premještanja zapisa u Koš za smeće ili uklanjanja sirovine iz zalihe. Ostale promjene iz aplikacija i pristupnih tokena izvršavaju se odmah'
+  },
+  hu: {
+    off: 'soha: az alkalmazások és a hozzáférési tokenek módosításai azonnal megtörténnek',
+    removals:
+      'csak eltávolítás előtt: egy bejegyzés Lomtárba helyezésekor vagy egy nyersanyag eltávolításakor a meglévő nyersanyagok közül. Az alkalmazások és a hozzáférési tokenek egyéb módosításai azonnal megtörténnek'
+  },
+  id: {
+    off: 'tidak pernah: perubahan dari aplikasi dan token akses langsung dibuat',
+    removals:
+      'hanya sebelum penghapusan: memindahkan catatan ke Sampah, atau mengeluarkan bahan dari bahan yang dipunya. Perubahan lain dari aplikasi dan token akses langsung dibuat'
+  },
+  it: {
+    off: 'non chiedere mai l’approvazione (le modifiche da app e token di accesso vengono fatte subito)',
+    removals:
+      'chiedere l’approvazione solo prima di una rimozione, cioè prima di spostare un elemento nel cestino o di togliere un materiale dai materiali disponibili (le altre modifiche da app e token di accesso vengono fatte subito)'
+  },
+  ja: {
+    off: '「確認しない」（アプリとアクセストークンからの変更はすぐに行われます）',
+    removals:
+      '「削除の前に確認する」（記録をごみ箱に移すとき、または手持ちの原料から原料を外すときだけ確認します。アプリとアクセストークンからのほかの変更はすぐに行われます）'
+  },
+  ko: {
+    off: '묻지 않음: 앱과 액세스 토큰의 변경은 즉시 이루어집니다',
+    removals:
+      '삭제 전에만 묻기: 기록을 휴지통으로 옮기거나 가진 원료에서 원료를 뺄 때만 묻습니다. 앱과 액세스 토큰의 다른 변경은 즉시 이루어집니다'
+  },
+  lt: {
+    off: 'niekada: programų ir prieigos žetonų pakeitimai atliekami iš karto',
+    removals:
+      'tik prieš šalinimą: įrašo perkėlimą į šiukšlinę arba žaliavos pašalinimą iš turimų žaliavų. Kiti programų ir prieigos žetonų pakeitimai atliekami iš karto'
+  },
+  lv: {
+    off: 'nekad: izmaiņas no lietotnēm un piekļuves marķieriem tiek veiktas uzreiz',
+    removals:
+      'tikai pirms noņemšanas: ieraksta pārvietošanas uz atkritni vai izejvielas noņemšanas no krājumiem. Citas izmaiņas no lietotnēm un piekļuves marķieriem tiek veiktas uzreiz'
+  },
+  mt: {
+    off: 'qatt: il-bidliet mill-apps u mit-tokens tal-aċċess isiru minnufih',
+    removals:
+      'biss qabel tneħħija: meta rekord jitressaq lejn il-barmil, jew meta materjal jitneħħa mill-materjali li għandek. Bidliet oħra mill-apps u mit-tokens tal-aċċess isiru minnufih'
+  },
+  nl: {
+    off: 'nooit; wijzigingen van apps en toegangstokens worden meteen aangebracht',
+    removals:
+      'alleen vóór een verwijdering (een record naar de prullenbak verplaatsen, of een grondstof van de grondstoffen in voorraad halen); andere wijzigingen van apps en toegangstokens worden meteen aangebracht'
+  },
+  pl: {
+    off: 'nigdy; zmiany od aplikacji i tokenów dostępu są wprowadzane od razu',
+    removals:
+      'tylko przed usunięciem (przeniesieniem zapisu do kosza lub zdjęciem surowca z listy posiadanych surowców); inne zmiany od aplikacji i tokenów dostępu są wprowadzane od razu'
+  },
+  'pt-PT': {
+    off: 'nunca pedir aprovação (as alterações de aplicações e tokens de acesso são feitas de imediato)',
+    removals:
+      'pedir aprovação só antes de uma remoção, ou seja, antes de mover um registo para o Lixo ou de retirar uma matéria-prima das matérias-primas disponíveis (as outras alterações de aplicações e tokens de acesso são feitas de imediato)'
+  },
+  ro: {
+    off: 'niciodată; modificările venite de la aplicații și tokenuri de acces se fac imediat',
+    removals:
+      'numai înainte de o eliminare (mutarea unei înregistrări în coșul de reciclare sau scoaterea unei materii prime din materiile prime în stoc); celelalte modificări venite de la aplicații și tokenuri de acces se fac imediat'
+  },
+  sk: {
+    off: 'nikdy – zmeny z aplikácií a prístupových tokenov sa vykonávajú okamžite',
+    removals:
+      'len pred odstránením – presunutím záznamu do Koša alebo odobratím suroviny zo surovín v zásobe. Ostatné zmeny z aplikácií a prístupových tokenov sa vykonávajú okamžite'
+  },
+  sl: {
+    off: 'nikoli: spremembe aplikacij in dostopnih žetonov se izvedejo takoj',
+    removals:
+      'samo pred odstranitvijo: premikom zapisa v koš ali odstranitvijo surovine iz zaloge. Druge spremembe aplikacij in dostopnih žetonov se izvedejo takoj'
+  },
+  sv: {
+    off: 'Fråga aldrig. Ändringar från appar och åtkomsttoken görs direkt',
+    removals:
+      'Fråga bara före borttagningar: att flytta en post till papperskorgen eller ta bort en råvara från råvarorna i förrådet. Andra ändringar från appar och åtkomsttoken görs direkt'
+  },
+  th: {
+    off: 'ไม่ต้องถามเลย: การเปลี่ยนแปลงจากแอปและโทเค็นการเข้าถึงจะเกิดขึ้นทันที',
+    removals:
+      'เฉพาะก่อนการนำออก: การย้ายบันทึกไปที่ถังขยะ หรือการนำวัตถุดิบออกจากวัตถุดิบที่มี การเปลี่ยนแปลงอื่นจากแอปและโทเค็นการเข้าถึงจะเกิดขึ้นทันที'
+  },
+  tr: {
+    off: 'hiçbir zaman: uygulamalardan ve erişim belirteçlerinden gelen değişiklikler hemen yapılır',
+    removals:
+      'yalnızca bir kaldırmadan önce: bir kaydı Çöp kutusuna taşımak veya bir hammaddeyi elinizdeki hammaddelerden çıkarmak. Uygulamalardan ve erişim belirteçlerinden gelen diğer değişiklikler hemen yapılır'
+  },
+  vi: {
+    off: 'không bao giờ: các thay đổi từ ứng dụng và mã thông báo truy cập được thực hiện ngay',
+    removals:
+      'chỉ trước khi gỡ bỏ: chuyển một bản ghi vào Thùng rác, hoặc bỏ một nguyên liệu khỏi nguyên liệu tôi có. Các thay đổi khác từ ứng dụng và mã thông báo truy cập được thực hiện ngay'
+  },
+  'zh-Hans': {
+    off: '从不询问：来自应用和访问令牌的更改立即生效',
+    removals: '仅在移除前询问：把记录移入回收站，或从手头的原料中去掉一种原料。来自应用和访问令牌的其他更改立即生效'
+  },
+  'zh-Hant': {
+    off: '永不詢問：來自應用程式和存取權杖的變更會立即生效',
+    removals: '僅在移除前詢問：把紀錄移到垃圾桶，或從現有原料中拿掉一種原料。來自應用程式和存取權杖的其他變更會立即生效'
   }
 };
 

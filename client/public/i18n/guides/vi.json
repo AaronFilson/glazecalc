@@ -27,14 +27,19 @@
       "text": "Bụi, khẩu trang lọc bụi đạt chuẩn, vệ sinh, những nguyên liệu cần cẩn trọng nhất, và thông gió cho lò nung."
     },
     "homeSafety": {
-      "title": "Không gây ngộ độc cho gia đình bạn",
+      "title": "An toàn men gốm tại nhà: trẻ em, thú cưng và lò nung",
       "text": "Làm gốm tại nhà với trẻ em và thú cưng: cất giữ, bụi, lò nung, và phải làm gì nếu có thứ bị nuốt phải."
     },
     "firing": {
       "title": "Nung một lò gốm cơ bản",
       "text": "Côn, Kiln-Sitter và công tắc thủ công, kèm các đường cong nung cho nung mộc và nung men."
+    },
+    "learnWithJohnBritt": {
+      "title": "Học với khóa học men miễn phí của John Britt",
+      "text": "Khóa học video miễn phí của ông trên YouTube, theo từng bài, kèm cẩm nang của chúng tôi để đọc và bài tập để thử trong Glazecalc. Bằng tiếng Anh."
     }
   },
+  "more": "Thêm cẩm nang",
   "contents": "Trong trang này",
   "poison": {
     "numbersFor": "Số điện thoại cho",

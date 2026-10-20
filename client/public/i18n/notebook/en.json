@@ -76,7 +76,6 @@
     "removeField": "Remove the field",
     "addRow": "Add a row to the firing table",
     "addRowWhy": "Add a field first.",
-    "tableEmpty": "Add a field above, then add rows.",
     "recordHeading": "Record the firing",
     "rowActions": "Row actions",
     "cell": "{field} row {row}",

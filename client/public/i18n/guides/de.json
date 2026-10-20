@@ -27,14 +27,19 @@
       "text": "Staub, Atemschutzmasken, Reinigung, die Rohstoffe, die am meisten Vorsicht verlangen, und das Entlüften des Ofens."
     },
     "homeSafety": {
-      "title": "Vergiften Sie Ihre Familie nicht",
+      "title": "Glasursicherheit zu Hause: Kinder, Haustiere und der Ofen",
       "text": "Töpfern zu Hause mit Kindern und Haustieren: Aufbewahrung, Staub, der Ofen und was zu tun ist, wenn etwas verschluckt wurde."
     },
     "firing": {
       "title": "Brennen mit einem einfachen Ofen",
       "text": "Kegel, Kiln-Sitter und Handschaltung, mit Brennkurven für den Schrühbrand und den Glasurbrand."
+    },
+    "learnWithJohnBritt": {
+      "title": "Lernen mit John Britts kostenlosem Glasurkurs",
+      "text": "Sein kostenloser Videokurs auf YouTube, Einheit für Einheit, mit unseren Anleitungen zum Lesen und Übungen zum Ausprobieren in Glazecalc. Auf Englisch."
     }
   },
+  "more": "Weitere Anleitungen",
   "contents": "Auf dieser Seite",
   "poison": {
     "numbersFor": "Nummern für",

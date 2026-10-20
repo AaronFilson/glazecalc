@@ -76,7 +76,6 @@
     "removeField": "Odstrani polje",
     "addRow": "Dodaj vrstico v preglednico žganja",
     "addRowWhy": "Najprej dodajte polje.",
-    "tableEmpty": "Zgoraj dodajte polje, nato vrstice.",
     "recordHeading": "Zabeleži žganje",
     "rowActions": "Dejanja za vrstico",
     "cell": "{field}, vrstica {row}",

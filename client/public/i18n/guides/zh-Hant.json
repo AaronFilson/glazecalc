@@ -27,14 +27,19 @@
       "text": "粉塵、呼吸防護具、清潔、最需要小心的原料，以及窯的排氣。"
     },
     "homeSafety": {
-      "title": "別讓家人中毒",
+      "title": "居家釉藥安全：兒童、寵物與窯",
       "text": "在有兒童和寵物的家中做陶：保存、粉塵、窯，以及誤吞東西時該怎麼辦。"
     },
     "firing": {
       "title": "基本燒窯",
       "text": "測溫錐、自動斷電器（Kiln-Sitter）與手動開關，以及素燒與釉燒的燒成曲線。"
+    },
+    "learnWithJohnBritt": {
+      "title": "跟著 John Britt 的免費釉藥課程學習",
+      "text": "他在 YouTube 上的免費影片課程，依單元排列，搭配可閱讀的指南和可在 Glazecalc 中嘗試的練習。課程為英語。"
     }
   },
+  "more": "更多指南",
   "contents": "本頁內容",
   "poison": {
     "numbersFor": "查看電話號碼的國家：",

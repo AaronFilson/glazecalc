@@ -566,7 +566,7 @@
       "hesselberth-roy": "Teorainneacha molta John Hesselberth agus Ron Roy do ghlónraí cobhsaí ar earraí cruachré agus poirceallán úsáide, ag cón 6 agus cón 10. Cloíonn siad le liosta gearr ábhar, mar sin níl aon raon sa tsraith do bhairiam ná do litiam, ná do shinc ag cón 10.",
       "glazecalc": "Na figiúirí a dtugann an aip rabhadh nuair a shroichtear iad agus ábhair á malartú: bórón, alúmana, sóid agus potais, agus maignéis ag ísealbhácáil."
     },
-    "firing": "Bácáil",
+    "firing": "Teorainneacha le haghaidh",
     "firingUnknown": "Gan roghnú",
     "bands": {
       "low": "Ísealbhácáil, cón 06–02",
@@ -596,6 +596,8 @@
     "saveFailed": "Níorbh fhéidir do rogha sraithe teorainneacha a shábháil le do chuntas, mar sin is í an tsraith teorainneacha a bhí ann roimhe an ceann atá in úsáid fós.",
     "ownLimits": "Úsáideann na moltaí seo teorainneacha Glazecalc féin, ní {name}.",
     "firingFromBlock": "Ó bhácáil an oidis ({bands})",
+    "firingFromBlockText": "Ó bhácáil an oidis: {bands}",
+    "chooseAnother": "Roghnaigh ceann eile",
     "bothBands": "Clúdaíonn bácáil an oidis {bands}, mar sin seiceáiltear gach ceann acu, taobh le taobh: is annamh a iompraíonn glónra ar an gcuma chéanna ag an dá cheann.",
     "fromFiring": "Is do bhácáil an oidis na figiúirí: {band}. Roghnaigh bácáil thuas chun ceann eile a sheiceáil."
   },
@@ -801,6 +803,18 @@
     "saveHelp": "Ticeáil na tíleanna ba mhaith leat a choinneáil, sa léaráid thuas. Sábháiltear gach ceann mar oideas i gcéatadán.",
     "nameLabel": "Ainm do na tíleanna sábháilte",
     "defaultName": "Cumasc {titles}",
+    "chemistry": {
+      "heading": "Ceimic gach tíle",
+      "help": "Oibrithe amach ó na hoidis, mar threoir. Insíonn na tíleanna bácáilte duit cad a tharlaíonn i ndáiríre.",
+      "firing": "Leanann na rabhaidh agus an oiriúint don chón bácáil oideas {letter}.",
+      "tile": "Tíl",
+      "cautions": "Rabhaidh",
+      "coneFit": "Oiriúint don chón",
+      "fits": "Faic ina choinne",
+      "cooler": "Cosúil le bácáil níos fuaire",
+      "hotter": "Cosúil le bácáil níos teo",
+      "skipped": "Gan mheas"
+    },
     "chooseAll": "Roghnaigh gach tíl",
     "chooseNone": "Ná roghnaigh ceann ar bith",
     "save": "{count, plural, =0 {Sábháil na tíleanna a roghnaíodh} one {Sábháil # tíl} two {Sábháil # thíl} few {Sábháil # thíl} many {Sábháil # dtíl} other {Sábháil # tíl}}",
@@ -890,6 +904,8 @@
   },
   "firing": {
     "heading": "Bácáil",
+    "summary": "Bácáil: {what}",
+    "summaryNone": "Bácáil: gan socrú",
     "whatIsCone": "Cad is cón ann?",
     "scale": "Scála",
     "scales": {

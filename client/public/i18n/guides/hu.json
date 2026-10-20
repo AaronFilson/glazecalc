@@ -27,14 +27,19 @@
       "text": "Por, légzésvédők, takarítás, a legtöbb óvatosságot kívánó nyersanyagok és a kemence szellőztetése."
     },
     "homeSafety": {
-      "title": "Ne mérgezze meg a családját",
+      "title": "Mázbiztonság otthon: gyerekek, háziállatok és a kemence",
       "text": "Fazekasság otthon, gyerekek és háziállatok mellett: tárolás, por, a kemence, és mi a teendő, ha valaki lenyel valamit."
     },
     "firing": {
       "title": "Égetés egyszerű kemencében",
       "text": "Gúlák, gúlás lekapcsolók (Kiln-Sitter) és kézi kapcsolók, égetési programokkal a zsengéléshez és a mázas égetéshez."
+    },
+    "learnWithJohnBritt": {
+      "title": "Tanuljon John Britt ingyenes mázkurzusával",
+      "text": "Ingyenes videókurzusa a YouTube-on, egységenként, útmutatóinkkal olvasnivalónak és a Glazecalcban kipróbálható feladatokkal. Angol nyelven."
     }
   },
+  "more": "További útmutatók",
   "contents": "Ezen az oldalon",
   "poison": {
     "numbersFor": "Telefonszámok itt:",

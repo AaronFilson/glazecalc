@@ -6,8 +6,9 @@
     "glazingBasics": "Glazūravimas nuo pagrindų – Glazecalc",
     "makingAGlaze": "Kaip pasigaminti glazūrą – Glazecalc",
     "safeMixing": "Saugus maišymas ir vėdinimas – Glazecalc",
-    "homeSafety": "Neapnuodykite savo šeimos – Glazecalc",
+    "homeSafety": "Glazūrų sauga namuose: vaikai, augintiniai ir krosnis – Glazecalc",
     "firing": "Degimas paprastoje krosnyje – Glazecalc",
+    "learnWithJohnBritt": "Mokykitės su nemokamu Johno Britto glazūrų kursu – Glazecalc",
     "about": "Apie programą – Glazecalc",
     "privacy": "Privatumas – Glazecalc",
     "terms": "Naudojimo sąlygos – Glazecalc",
@@ -26,9 +27,12 @@
     "notes": "Užrašai – Glazecalc",
     "trash": "Šiukšlinė – Glazecalc",
     "account": "Jūsų paskyra ir nustatymai – Glazecalc",
+    "apps": "Prijungtos programos – Glazecalc",
+    "connect": "Programos prijungimas – Glazecalc",
     "notFound": "Puslapis nerastas – Glazecalc",
     "shared": "Bendrinamas receptas – Glazecalc",
-    "assistants": "Glazecalc naudojimas su dirbtinio intelekto asistentu – Glazecalc"
+    "assistants": "Glazecalc naudojimas su dirbtinio intelekto asistentu – Glazecalc",
+    "confirm": "Pakeitimo patvirtinimas – Glazecalc"
   },
   "nav": {
     "skip": "Pereiti prie turinio",
@@ -91,6 +95,7 @@
     "safeMixing": "Kaip neįkvėpti glazūrų dulkių ir neįsileisti krosnies dūmų ir garų į namus: saugūs įpročiai, respiratoriai, valymas, vėdinimas ir rizikingos žaliavos.",
     "homeSafety": "Ką daryti, jei vaikas ar augintinis prarijo glazūros žaliavos, ir kaip žaliavas, dulkes, krosnį ir rankų darbo dirbinius padaryti saugius jūsų šeimai.",
     "firing": "Kaip degti elektrinėje krosnyje: pasirinkti, pastatyti ir vertinti piroskopus, laikytis paskelbtų biskvitinio ir glazūros degimo programų. Su piroskopų lentele.",
+    "learnWithJohnBritt": "Palydovas nemokamam Johno Britto internetiniam glazūrų kursui: jo vaizdo įrašai skyrius po skyriaus, Glazecalc vadovai ir pratimai skaičiuoklėje.",
     "advice": "Praktiniai Glazecalc patarimai apie keramikos glazūrų maišymą, glazūravimą ir degimą, taip pat jūsų pačių patarimai. Nemokamai keramikams.",
     "about": "Glazecalc – nemokama atvirojo kodo keramikos glazūrų chemijos skaičiuoklė ir sąsiuvinis. Sužinokite, kaip ji apskaičiuoja Segerio formulę (UMF) ir kaip sukurta.",
     "privacy": "Kaip Glazecalc tvarko jūsų duomenis: jokių reklamų, analitikos ir sekimo, niekas neparduodama. Kas saugoma, kodėl ir kaip pasinaudoti savo teisėmis.",

@@ -76,7 +76,6 @@
     "removeField": "Eliminați câmpul",
     "addRow": "Adăugați un rând în tabelul arderii",
     "addRowWhy": "Adăugați mai întâi un câmp.",
-    "tableEmpty": "Adăugați un câmp mai sus, apoi rânduri.",
     "recordHeading": "Înregistrați arderea",
     "rowActions": "Acțiuni pentru rând",
     "cell": "{field}, rândul {row}",

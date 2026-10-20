@@ -76,7 +76,6 @@
     "removeField": "Hapus kolom",
     "addRow": "Tambahkan baris ke tabel pembakaran",
     "addRowWhy": "Tambahkan kolom dulu.",
-    "tableEmpty": "Tambahkan kolom di atas, lalu tambahkan baris.",
     "recordHeading": "Catat pembakaran",
     "rowActions": "Tindakan baris",
     "cell": "{field} baris {row}",

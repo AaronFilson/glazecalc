@@ -27,14 +27,19 @@
       "text": "Putekļi, respiratori, uzkopšana, izejvielas, kurām vajadzīga vislielākā piesardzība, un krāsns vēdināšana."
     },
     "homeSafety": {
-      "title": "Nesaindējiet savu ģimeni",
+      "title": "Glazūru drošība mājās: bērni, mājdzīvnieki un krāsns",
       "text": "Keramika mājās, kur ir bērni un mājdzīvnieki: uzglabāšana, putekļi, krāsns un ko darīt, ja kaut kas ir norīts."
     },
     "firing": {
       "title": "Apdedzināšana vienkāršā krāsnī",
       "text": "Konusi, Kiln-Sitter un manuālie slēdži, kā arī biskvīta un glazūras apdedzināšanas programmas."
+    },
+    "learnWithJohnBritt": {
+      "title": "Mācieties ar Džona Brita (John Britt) bezmaksas glazūru kursu",
+      "text": "Viņa bezmaksas video kurss pakalpojumā YouTube pa nodaļām ar mūsu ceļvežiem lasīšanai un vingrinājumiem, ko izmēģināt Glazecalc. Angļu valodā."
     }
   },
+  "more": "Citi ceļveži",
   "contents": "Šajā lapā",
   "poison": {
     "numbersFor": "Tālruņa numuri:",

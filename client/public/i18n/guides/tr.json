@@ -27,14 +27,19 @@
       "text": "Toz, solunum koruyucu maskeler, temizlik, en çok özen isteyen hammaddeler ve fırının havalandırılması."
     },
     "homeSafety": {
-      "title": "Ailenizi zehirlemeyin",
+      "title": "Evde sır güvenliği: çocuklar, evcil hayvanlar ve fırın",
       "text": "Çocuklar ve evcil hayvanlarla evde seramik: saklama, toz, fırın ve bir şey yutulursa ne yapılacağı."
     },
     "firing": {
       "title": "Basit bir fırında pişirim",
       "text": "Piramitler, kiln sitter düzenekleri ve elle kumanda anahtarları; bisküvi ve sırlı pişirim programlarıyla birlikte."
+    },
+    "learnWithJohnBritt": {
+      "title": "John Britt’in ücretsiz sır kursuyla öğrenin",
+      "text": "YouTube’daki ücretsiz video kursu, ünite ünite; okunacak rehberlerimiz ve Glazecalc’te denenecek alıştırmalarla. İngilizce."
     }
   },
+  "more": "Diğer rehberler",
   "contents": "Bu sayfada",
   "poison": {
     "numbersFor": "Numaraların gösterileceği ülke:",

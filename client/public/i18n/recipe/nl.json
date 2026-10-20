@@ -566,7 +566,7 @@
       "hesselberth-roy": "De aanbevolen limieten van John Hesselberth en Ron Roy voor stabiele glazuren op functioneel steengoed en porselein, bij kegel 6 en kegel 10. Ze houden zich aan een korte lijst grondstoffen, dus de set heeft geen bereik voor barium of lithium, en bij kegel 10 ook niet voor zink.",
       "glazecalc": "De cijfers waarbij de app waarschuwt als hij grondstoffen vervangt: boor, aluminiumoxide, natrium en kalium, en bij lage temperatuur magnesiumoxide."
     },
-    "firing": "Stook",
+    "firing": "Limieten voor",
     "firingUnknown": "Niet gekozen",
     "bands": {
       "low": "Lage temperatuur, kegel 06–02",
@@ -596,6 +596,8 @@
     "saveFailed": "Uw keuze van limietenset kon niet in uw account worden opgeslagen, dus de eerdere limietenset blijft in gebruik.",
     "ownLimits": "Deze suggesties gebruiken de eigen limieten van Glazecalc, niet die van {name}.",
     "firingFromBlock": "Uit de stook van het recept ({bands})",
+    "firingFromBlockText": "Uit de stook van het recept: {bands}",
+    "chooseAnother": "Een andere kiezen",
     "bothBands": "De stook van het recept beslaat {bands}, dus elk wordt gecontroleerd, naast elkaar: een glazuur gedraagt zich zelden aan beide uiteinden hetzelfde.",
     "fromFiring": "De cijfers gelden voor de stook van het recept: {band}. Kies hierboven een stook om een andere te controleren."
   },
@@ -801,6 +803,18 @@
     "saveHelp": "Vink de plaatjes aan die u wilt bewaren, in de tekening hierboven. Elk wordt als recept in procenten opgeslagen.",
     "nameLabel": "Naam voor de opgeslagen plaatjes",
     "defaultName": "Menging van {titles}",
+    "chemistry": {
+      "heading": "Chemie per plaatje",
+      "help": "Berekend uit de recepten, als richtlijn. De gestookte plaatjes laten zien wat er echt gebeurt.",
+      "firing": "Waarschuwingen en kegelpassing volgen de stook van recept {letter}.",
+      "tile": "Plaatje",
+      "cautions": "Waarschuwingen",
+      "coneFit": "Kegelpassing",
+      "fits": "Niets op tegen",
+      "cooler": "Lijkt koeler",
+      "hotter": "Lijkt heter",
+      "skipped": "Niet beoordeeld"
+    },
     "chooseAll": "Elk plaatje kiezen",
     "chooseNone": "Geen kiezen",
     "save": "{count, plural, =0 {De gekozen plaatjes opslaan} one {# plaatje opslaan} other {# plaatjes opslaan}}",
@@ -890,6 +904,8 @@
   },
   "firing": {
     "heading": "Stook",
+    "summary": "Stook: {what}",
+    "summaryNone": "Stook: niet ingesteld",
     "whatIsCone": "Wat betekent kegel?",
     "scale": "Schaal",
     "scales": {

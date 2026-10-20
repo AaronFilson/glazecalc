@@ -27,14 +27,19 @@
       "text": "Pył, półmaski filtrujące, sprzątanie, surowce wymagające największej ostrożności i wietrzenie pieca."
     },
     "homeSafety": {
-      "title": "Jak nie otruć własnej rodziny",
+      "title": "Bezpieczeństwo szkliw w domu: dzieci, zwierzęta i piec",
       "text": "Ceramika w domu, w którym są dzieci i zwierzęta: przechowywanie, pył, piec i co robić, gdy coś zostanie połknięte."
     },
     "firing": {
       "title": "Wypał w prostym piecu",
       "text": "Stożki, wyłączniki stożkowe Kiln-Sitter i ręczne regulatory mocy, z programami wypału biskwitowego i wypału szkliwa."
+    },
+    "learnWithJohnBritt": {
+      "title": "Nauka z bezpłatnym kursem szkliw Johna Britta",
+      "text": "Jego bezpłatny kurs wideo na YouTube, lekcja po lekcji, z naszymi poradnikami do przeczytania i ćwiczeniami do wypróbowania w Glazecalc. Po angielsku."
     }
   },
+  "more": "Więcej poradników",
   "contents": "Na tej stronie",
   "poison": {
     "numbersFor": "Numery dla kraju",

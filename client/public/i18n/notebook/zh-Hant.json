@@ -76,7 +76,6 @@
     "removeField": "移除欄位",
     "addRow": "在燒窯表格中新增一列",
     "addRowWhy": "請先新增欄位。",
-    "tableEmpty": "請先在上方新增欄位，再新增列。",
     "recordHeading": "記錄這次燒窯",
     "rowActions": "列操作",
     "cell": "{field}，第 {row} 列",

@@ -6,8 +6,9 @@
     "glazingBasics": "Glazēšana no pašiem pamatiem – Glazecalc",
     "makingAGlaze": "Kā sagatavot glazūru – Glazecalc",
     "safeMixing": "Droša jaukšana un ventilācija – Glazecalc",
-    "homeSafety": "Nesaindējiet savu ģimeni – Glazecalc",
+    "homeSafety": "Glazūru drošība mājās: bērni, mājdzīvnieki un krāsns – Glazecalc",
     "firing": "Apdedzināšana vienkāršā krāsnī – Glazecalc",
+    "learnWithJohnBritt": "Mācieties ar Džona Brita (John Britt) bezmaksas glazūru kursu – Glazecalc",
     "about": "Par lietotni – Glazecalc",
     "privacy": "Privātums – Glazecalc",
     "terms": "Lietošanas noteikumi – Glazecalc",
@@ -26,9 +27,12 @@
     "notes": "Piezīmes – Glazecalc",
     "trash": "Atkritne – Glazecalc",
     "account": "Jūsu konts un iestatījumi – Glazecalc",
+    "apps": "Pievienotās lietotnes – Glazecalc",
+    "connect": "Lietotnes pievienošana – Glazecalc",
     "notFound": "Lapa nav atrasta – Glazecalc",
     "shared": "Kopīgota recepte – Glazecalc",
-    "assistants": "Glazecalc lietošana ar mākslīgā intelekta asistentu – Glazecalc"
+    "assistants": "Glazecalc lietošana ar mākslīgā intelekta asistentu – Glazecalc",
+    "confirm": "Izmaiņu apstiprināšana – Glazecalc"
   },
   "nav": {
     "skip": "Pāriet uz saturu",
@@ -91,6 +95,7 @@
     "safeMixing": "Kā pasargāt plaušas no glazūras putekļiem un māju no krāsns izplūdes gāzēm: droši paradumi, respiratori, uzkopšana, ventilācija un riskantas izejvielas.",
     "homeSafety": "Ko darīt, ja bērns vai mājdzīvnieks norij glazūras izejvielu, un kā panākt, lai izejvielas, putekļi, krāsns un pašdarināti trauki ģimenei nekaitētu.",
     "firing": "Kā apdedzināt elektriskajā krāsnī: konusu izvēle, novietošana un nolasīšana, publicētas biskvīta un glazūras apdedzināšanas programmas un konusu tabula.",
+    "learnWithJohnBritt": "Pavadonis Džona Brita (John Britt) bezmaksas tiešsaistes glazūru kursam: viņa video pa nodaļām ar Glazecalc ceļvežiem un vingrinājumiem kalkulatorā.",
     "advice": "Praktiski padomi par keramikas glazūru jaukšanu, glazēšanu un apdedzināšanu no lietotnes Glazecalc, kā arī jūsu pašu padomi. Bez maksas keramiķiem.",
     "about": "Glazecalc ir bezmaksas keramikas glazūru ķīmijas kalkulators un burtnīca ar atvērtu pirmkodu. Uzziniet, kā tas aprēķina Zēgera formulu (UMF) un kā tas veidots.",
     "privacy": "Kā lietotne Glazecalc apstrādā jūsu datus: bez reklāmām, analītikas un izsekošanas, un nekas netiek pārdots. Ko glabājam, kāpēc un kā izmantot savas tiesības.",

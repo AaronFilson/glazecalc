@@ -76,7 +76,6 @@
     "removeField": "Ukloni polje",
     "addRow": "Dodaj redak u tablicu pečenja",
     "addRowWhy": "Najprije dodajte polje.",
-    "tableEmpty": "Dodajte polje iznad, a zatim retke.",
     "recordHeading": "Zabilježi pečenje",
     "rowActions": "Radnje s retkom",
     "cell": "{field}, redak {row}",

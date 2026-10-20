@@ -566,7 +566,7 @@
       "hesselberth-roy": "Les limites recommandées par John Hesselberth et Ron Roy pour des émaux stables sur du grès et de la porcelaine utilitaires, au cône 6 et au cône 10. Elles s’en tiennent à une courte liste de matières : le jeu n’a donc pas de plage pour le baryum ou le lithium, ni pour le zinc au cône 10.",
       "glazecalc": "Les chiffres à partir desquels l’application prévient quand elle remplace des matières : bore, alumine, soude et potasse, et magnésie à basse température."
     },
-    "firing": "Cuisson",
+    "firing": "Limites pour",
     "firingUnknown": "Non choisie",
     "bands": {
       "low": "Basse température, cône 06–02",
@@ -596,6 +596,8 @@
     "saveFailed": "Impossible d’enregistrer dans votre compte votre choix de jeu de limites : le jeu précédent reste donc celui qui est utilisé.",
     "ownLimits": "Ces suggestions utilisent les limites propres à Glazecalc, et non {name}.",
     "firingFromBlock": "D’après la cuisson de la recette ({bands})",
+    "firingFromBlockText": "D’après la cuisson de la recette : {bands}",
+    "chooseAnother": "En choisir une autre",
     "bothBands": "La cuisson de la recette couvre {bands} : chaque plage est donc vérifiée, côte à côte, car un émail se comporte rarement de la même façon aux deux extrémités.",
     "fromFiring": "Les valeurs correspondent à la cuisson de la recette : {band}. Choisissez une cuisson ci-dessus pour en vérifier une autre."
   },
@@ -801,6 +803,18 @@
     "saveHelp": "Cochez, dans le schéma ci-dessus, les tessons que vous voulez garder. Chacun est enregistré comme une recette en pourcentages.",
     "nameLabel": "Nom des tessons enregistrés",
     "defaultName": "Mélange {titles}",
+    "chemistry": {
+      "heading": "Chimie par tesson",
+      "help": "Calculée d’après les recettes, comme repère. Ce sont les tessons cuits qui vous disent ce qui se passe vraiment.",
+      "firing": "Les mises en garde et l’accord avec le cône suivent la cuisson de la recette {letter}.",
+      "tile": "Tesson",
+      "cautions": "Mises en garde",
+      "coneFit": "Accord avec le cône",
+      "fits": "Rien ne s’y oppose",
+      "cooler": "Ressemble à une cuisson plus basse",
+      "hotter": "Ressemble à une cuisson plus haute",
+      "skipped": "Non évalué"
+    },
     "chooseAll": "Choisir tous les tessons",
     "chooseNone": "N’en choisir aucun",
     "save": "{count, plural, =0 {Enregistrer les tessons choisis} one {Enregistrer # tesson} many {Enregistrer # de tessons} other {Enregistrer # tessons}}",
@@ -890,6 +904,8 @@
   },
   "firing": {
     "heading": "Cuisson",
+    "summary": "Cuisson : {what}",
+    "summaryNone": "Cuisson : non indiquée",
     "whatIsCone": "Que signifie « cône » ?",
     "scale": "Échelle",
     "scales": {

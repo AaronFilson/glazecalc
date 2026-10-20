@@ -76,7 +76,6 @@
     "removeField": "ลบช่อง",
     "addRow": "เพิ่มแถวในตารางการเผา",
     "addRowWhy": "เพิ่มช่องก่อน",
-    "tableEmpty": "เพิ่มช่องด้านบน แล้วเพิ่มแถว",
     "recordHeading": "บันทึกการเผา",
     "rowActions": "การดำเนินการกับแถว",
     "cell": "{field} แถว {row}",

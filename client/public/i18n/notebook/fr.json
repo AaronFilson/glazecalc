@@ -76,7 +76,6 @@
     "removeField": "Retirer le champ",
     "addRow": "Ajouter une ligne au tableau de cuisson",
     "addRowWhy": "Ajoutez d’abord un champ.",
-    "tableEmpty": "Ajoutez un champ ci-dessus, puis des lignes.",
     "recordHeading": "Enregistrer la cuisson",
     "rowActions": "Actions sur la ligne",
     "cell": "{field}, ligne {row}",

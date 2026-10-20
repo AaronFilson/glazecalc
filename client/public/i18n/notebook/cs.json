@@ -76,7 +76,6 @@
     "removeField": "Odebrat pole",
     "addRow": "Přidat řádek do tabulky výpalu",
     "addRowWhy": "Nejprve přidejte pole.",
-    "tableEmpty": "Přidejte výše pole a potom řádky.",
     "recordHeading": "Zaznamenat výpal",
     "rowActions": "Akce s řádkem",
     "cell": "{field}, řádek {row}",

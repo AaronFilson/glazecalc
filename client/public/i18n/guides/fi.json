@@ -27,14 +27,19 @@
       "text": "Pöly, hengityksensuojaimet, siivous, eniten varovaisuutta vaativat raaka-aineet ja uunin tuulettaminen."
     },
     "homeSafety": {
-      "title": "Älä myrkytä perhettäsi",
+      "title": "Lasiteturvallisuus kotona: lapset, lemmikit ja uuni",
       "text": "Keramiikka kotona lasten ja lemmikkien kanssa: säilytys, pöly, uuni ja mitä tehdä, jos jotain on nielty."
     },
     "firing": {
       "title": "Polttaminen yksinkertaisessa keramiikkauunissa",
       "text": "Keilat, Kiln-Sitter-keilakatkaisimet ja käsisäätöiset kytkimet sekä polttokäyrät raakapolttoon ja lasituspolttoon."
+    },
+    "learnWithJohnBritt": {
+      "title": "Opi John Brittin ilmaisella lasitekurssilla",
+      "text": "Hänen ilmainen videokurssinsa YouTubessa jakso jaksolta, Glazecalcin oppaat luettaviksi ja harjoitukset kokeiltaviksi Glazecalcissa. Englanniksi."
     }
   },
+  "more": "Lisää oppaita",
   "contents": "Tällä sivulla",
   "poison": {
     "numbersFor": "Numerot maassa:",

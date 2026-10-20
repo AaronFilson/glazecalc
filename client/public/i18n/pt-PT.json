@@ -6,8 +6,9 @@
     "glazingBasics": "Vidrados desde os princípios básicos - Glazecalc",
     "makingAGlaze": "Como fazer um vidrado - Glazecalc",
     "safeMixing": "Mistura segura e ventilação - Glazecalc",
-    "homeSafety": "Não envenene a sua família - Glazecalc",
+    "homeSafety": "Segurança dos vidrados em casa: crianças, animais e o forno - Glazecalc",
     "firing": "Cozer num forno simples - Glazecalc",
+    "learnWithJohnBritt": "Aprender com o curso gratuito de vidrados de John Britt - Glazecalc",
     "about": "Sobre - Glazecalc",
     "privacy": "Privacidade - Glazecalc",
     "terms": "Termos de utilização - Glazecalc",
@@ -26,9 +27,12 @@
     "notes": "Notas - Glazecalc",
     "trash": "Lixo - Glazecalc",
     "account": "A sua conta e definições - Glazecalc",
+    "apps": "Aplicações ligadas - Glazecalc",
+    "connect": "Ligar uma aplicação - Glazecalc",
     "notFound": "Página não encontrada - Glazecalc",
     "shared": "Receita partilhada - Glazecalc",
-    "assistants": "Usar o Glazecalc a partir do seu assistente de IA - Glazecalc"
+    "assistants": "Usar o Glazecalc a partir do seu assistente de IA - Glazecalc",
+    "confirm": "Aprovar uma alteração - Glazecalc"
   },
   "nav": {
     "skip": "Saltar para o conteúdo",
@@ -91,6 +95,7 @@
     "safeMixing": "Como manter o pó dos vidrados fora dos pulmões e os fumos do forno fora de casa: hábitos seguros, máscaras, limpeza, ventilação e matérias-primas de risco.",
     "homeSafety": "O que fazer se uma criança ou um animal engolir matéria-prima de vidrado, e como manter seguros em casa as matérias-primas, o pó, o forno e as peças artesanais.",
     "firing": "Como cozer num forno elétrico: escolher, colocar e ler cones, e seguir curvas de cozedura publicadas para chacota e vidrado, com uma tabela de cones.",
+    "learnWithJohnBritt": "Um complemento ao curso online gratuito de vidrados de John Britt: os vídeos unidade a unidade, com guias do Glazecalc e exercícios na calculadora.",
     "advice": "Conselhos práticos para misturar, vidrar e cozer, do Glazecalc, e também os seus próprios conselhos. Gratuito, para ceramistas.",
     "about": "Calculadora de química de vidrados cerâmicos e caderno, gratuitos e de código aberto. Veja como o Glazecalc calcula a fórmula de Seger (UMF) e como é feito.",
     "privacy": "Como o Glazecalc trata os dados: sem anúncios, análises de utilização nem rastreio, e nada é vendido. O que é guardado, porquê e como exercer os seus direitos.",

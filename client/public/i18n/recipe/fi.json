@@ -566,7 +566,7 @@
       "hesselberth-roy": "John Hesselberthin ja Ron Royn suosittelemat raja-arvot vakaille lasitteille käyttökivitavaralle ja posliinille keiloilla 6 ja 10. Ne pitäytyvät lyhyessä raaka-aineluettelossa, joten sarjassa ei ole vaihteluväliä bariumille tai litiumille eikä sinkille keilalla 10.",
       "glazecalc": "Arvot, joista sovellus varoittaa raaka-aineita vaihdettaessa: boori, alumiinioksidi, natrium ja kalium sekä magnesiumoksidi matalassa poltossa."
     },
-    "firing": "Poltto",
+    "firing": "Rajat poltolle",
     "firingUnknown": "Ei valittu",
     "bands": {
       "low": "Matalapoltto, keilat 06–02",
@@ -596,6 +596,8 @@
     "saveFailed": "Raja-arvosarjan valintaa ei voitu tallentaa tilille, joten aiempi sarja on yhä käytössä.",
     "ownLimits": "Nämä ehdotukset käyttävät Glazecalcin omia raja-arvoja, eivät sarjaa {name}.",
     "firingFromBlock": "Reseptin polton mukaan ({bands})",
+    "firingFromBlockText": "Reseptin poltosta: {bands}",
+    "chooseAnother": "Valitse toinen",
     "bothBands": "Reseptin poltto kattaa alueen {bands}, joten jokainen tarkistetaan rinnakkain: lasite harvoin käyttäytyy samoin molemmissa ääripäissä.",
     "fromFiring": "Luvut koskevat reseptin polttoa: {band}. Valitse yllä poltto, jos haluat tarkistaa toisen."
   },
@@ -801,6 +803,18 @@
     "saveHelp": "Rastita säilytettävät koepalat yllä olevasta piirroksesta. Jokainen tallennetaan prosenttireseptinä.",
     "nameLabel": "Tallennettujen koepalojen nimi",
     "defaultName": "{titles} seos",
+    "chemistry": {
+      "heading": "Kemia koepaloittain",
+      "help": "Laskettu resepteistä suuntaa antavaksi. Poltetut koepalat kertovat, mitä todella tapahtuu.",
+      "firing": "Varoitukset ja sopivuus keilaan seuraavat reseptin {letter} polttoa.",
+      "tile": "Koepala",
+      "cautions": "Varoitukset",
+      "coneFit": "Sopivuus keilaan",
+      "fits": "Ei mitään sitä vastaan",
+      "cooler": "Näyttää viileämmältä",
+      "hotter": "Näyttää kuumemmalta",
+      "skipped": "Ei arvioitu"
+    },
     "chooseAll": "Valitse kaikki koepalat",
     "chooseNone": "Älä valitse yhtään",
     "save": "{count, plural, =0 {Tallenna valitut koepalat} one {Tallenna # koepala} other {Tallenna # koepalaa}}",
@@ -890,6 +904,8 @@
   },
   "firing": {
     "heading": "Poltto",
+    "summary": "Poltto: {what}",
+    "summaryNone": "Poltto: ei asetettu",
     "whatIsCone": "Mitä keila tarkoittaa?",
     "scale": "Asteikko",
     "scales": {

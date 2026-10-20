@@ -566,7 +566,7 @@
       "hesselberth-roy": "John Hesselberths och Ron Roys rekommenderade gränser för stabila glasyrer på funktionellt stengods och porslin, vid kägla 6 och kägla 10. De håller sig till en kort lista råvaror, så uppsättningen har inget intervall för barium eller litium, och inte för zink vid kägla 10.",
       "glazecalc": "Siffrorna som appen varnar vid när den byter råvaror: bor, aluminiumoxid, natrium och kalium, och magnesiumoxid vid låg temperatur."
     },
-    "firing": "Bränning",
+    "firing": "Gränser för",
     "firingUnknown": "Inte vald",
     "bands": {
       "low": "Låg temperatur, kägla 06–02",
@@ -596,6 +596,8 @@
     "saveFailed": "Valet av gränsuppsättning kunde inte sparas i kontot, så den tidigare gränsuppsättningen används fortfarande.",
     "ownLimits": "De här förslagen använder Glazecalcs egna gränser, inte {name}.",
     "firingFromBlock": "Från receptets bränning ({bands})",
+    "firingFromBlockText": "Från receptets bränning: {bands}",
+    "chooseAnother": "Välj en annan",
     "bothBands": "Receptets bränning omfattar {bands}, så var och en kontrolleras, sida vid sida: en glasyr beter sig sällan likadant i båda ändar.",
     "fromFiring": "Siffrorna gäller receptets bränning: {band}. Välj en bränning ovan för att kontrollera en annan."
   },
@@ -801,6 +803,18 @@
     "saveHelp": "Kryssa i de provbitar som ska behållas, i teckningen ovan. Var och en sparas som ett recept i procent.",
     "nameLabel": "Namn för de sparade provbitarna",
     "defaultName": "Blandning av {titles}",
+    "chemistry": {
+      "heading": "Kemi per provbit",
+      "help": "Uträknad från recepten, som vägledning. De brända provbitarna visar vad som verkligen händer.",
+      "firing": "Varningar och kägelpassning följer bränningen för recept {letter}.",
+      "tile": "Provbit",
+      "cautions": "Varningar",
+      "coneFit": "Kägelpassning",
+      "fits": "Inget talar emot",
+      "cooler": "Ser ut som lägre bränning",
+      "hotter": "Ser ut som högre bränning",
+      "skipped": "Inte bedömd"
+    },
     "chooseAll": "Välj alla provbitar",
     "chooseNone": "Välj inga",
     "save": "{count, plural, =0 {Spara de valda provbitarna} one {Spara # provbit} other {Spara # provbitar}}",
@@ -890,6 +904,8 @@
   },
   "firing": {
     "heading": "Bränning",
+    "summary": "Bränning: {what}",
+    "summaryNone": "Bränning: inte angiven",
     "whatIsCone": "Vad betyder kägla?",
     "scale": "Skala",
     "scales": {
