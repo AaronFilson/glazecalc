@@ -1,5 +1,6 @@
+import { DOCUMENT } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
-import { Component, computed, inject, signal } from '@angular/core';
+import { Component, DestroyRef, InjectionToken, computed, inject, signal } from '@angular/core';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { TranslocoDirective, translate } from '@jsverse/transloco';
 import { firstValueFrom } from 'rxjs';
@@ -38,6 +39,18 @@ export interface ConnectRequest {
 }
 
 /**
+ * How long the page must have been in front, without a break, before Allow
+ * takes a click. A click meant for something else comes sooner: the second
+ * half of a double-click on another site that brings this page forward under
+ * the pointer (DoubleClickjacking), or the click that brings its window to the
+ * front. Browsers hold their own permission prompts back the same way.
+ */
+export const ALLOW_AFTER_MS = new InjectionToken<number>('ALLOW_AFTER_MS', {
+  providedIn: 'root',
+  factory: () => 1000
+});
+
+/**
  * The consent page (docs/adr/0024-authorization-server.md): an AI app asked to
  * connect to the account, and the authorization server sent the browser here
  * by way of /api/connect/:uid. It says plainly who is asking and where the
@@ -47,7 +60,8 @@ export interface ConnectRequest {
  * app's. Reading is what it gets; changing records is a separate box, never
  * ticked for the person. Allow and Don't allow send the answer, and the
  * browser goes where the answer says (back to the app). Nothing here is
- * focused or chosen for the person.
+ * focused or chosen for the person, and Allow takes a click only once the page
+ * has been in front for a moment (ALLOW_AFTER_MS).
  *
  * A visitor who is not signed in signs in first and comes back
  * (signInThenBackGuard); a trial or an unconfirmed email gets the API's
@@ -166,7 +180,12 @@ export interface ConnectRequest {
         </p>
 
         <div class="answer">
-          <button type="button" class="btn btn-primary" [attr.aria-disabled]="busy() || null" (click)="decide('allow')">
+          <button
+            type="button"
+            class="btn btn-primary"
+            [attr.aria-disabled]="busy() || !ready() || null"
+            (click)="decide('allow')"
+          >
             {{ t('account.connect.allow') }}
           </button>
           <button
@@ -254,6 +273,8 @@ export class ConnectPage {
   private readonly http = inject(HttpClient);
   private readonly apiBase = inject(API_BASE);
   private readonly openPage = inject(OPEN_PAGE);
+  private readonly document = inject(DOCUMENT);
+  private readonly allowAfter = inject(ALLOW_AFTER_MS);
   private readonly uid = String(inject(ActivatedRoute).snapshot.paramMap.get('uid') ?? '');
 
   /** What the app asked, once loaded. */
@@ -267,10 +288,26 @@ export class ConnectPage {
   protected readonly busy = signal(false);
   /** Answered: the browser is on its way back to the app. */
   protected readonly answered = signal(false);
+  /** Allow takes a click: the page has been in front for ALLOW_AFTER_MS since it was shown, or last came back. */
+  protected readonly ready = signal(false);
+  private readyTimer: ReturnType<typeof setTimeout> | undefined;
   private readonly address = computed(() => this.apiBase + '/connect/' + encodeURIComponent(this.uid));
 
   constructor() {
     void this.load();
+    // Allow waits again whenever the window comes to the front or the tab is shown, and while either is away.
+    const view = this.document.defaultView;
+    const restart = () => this.restartWait();
+    const stop = () => this.stopWait();
+    view?.addEventListener('focus', restart);
+    view?.addEventListener('blur', stop);
+    this.document.addEventListener('visibilitychange', restart);
+    inject(DestroyRef).onDestroy(() => {
+      view?.removeEventListener('focus', restart);
+      view?.removeEventListener('blur', stop);
+      this.document.removeEventListener('visibilitychange', restart);
+      stop();
+    });
   }
 
   private async load(): Promise<void> {
@@ -278,14 +315,27 @@ export class ConnectPage {
       this.request.set(
         await firstValueFrom(this.http.get<ConnectRequest>(this.address(), { headers: { accept: 'application/json' } }))
       );
+      this.restartWait();
     } catch (err) {
       this.refusal.set(errorMessage(err, translate('account.connect.loadFailed')));
     }
   }
 
+  /** Starts Allow's wait again from now: once there is a request to answer, and never while the page is hidden. */
+  private restartWait(): void {
+    this.stopWait();
+    if (!this.request() || this.document.visibilityState === 'hidden') return;
+    this.readyTimer = setTimeout(() => this.ready.set(true), this.allowAfter);
+  }
+
+  private stopWait(): void {
+    clearTimeout(this.readyTimer);
+    this.ready.set(false);
+  }
+
   protected async decide(decision: 'allow' | 'deny'): Promise<void> {
     const request = this.request();
-    if (this.busy() || !request) return;
+    if (this.busy() || !request || (decision === 'allow' && !this.ready())) return;
     this.busy.set(true);
     this.failed.set(null);
     try {

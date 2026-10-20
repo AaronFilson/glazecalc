@@ -99,7 +99,10 @@ test('connects an app read only, which reads, is asked to step up to change, and
       frame === page.mainFrame() && (frame.url().startsWith(REDIRECT) || frame.url().startsWith('chrome-error:'))
   });
   const callback = page.waitForRequest((req) => req.url().startsWith(REDIRECT + '?'));
-  await page.getByRole('button', { name: 'Allow', exact: true }).click();
+  // Allow takes a click once the page has been in front a moment (a click meant for something else comes sooner).
+  const allow = page.getByRole('button', { name: 'Allow', exact: true });
+  await expect(allow).not.toHaveAttribute('aria-disabled', 'true');
+  await allow.click();
   const answer = new URL((await callback).url());
   await landed;
   expect(answer.searchParams.get('code')).toBeTruthy();

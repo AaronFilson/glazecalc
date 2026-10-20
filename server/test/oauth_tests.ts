@@ -397,6 +397,61 @@ describe('OAuth: the authorization server', function () {
       expect((await register({ redirect_uris: ['com.example.app:/oauth'] })).status).to.equal(201);
     });
 
+    it('refuses answers sent to this site, on registering and for an app registered before', async () => {
+      for (const uri of [SITE + '/cb', 'https://www.glazecalc.test/cb', 'https://GLAZECALC.TEST./signin?next=/']) {
+        const res = await register({ redirect_uris: ['https://app.example/cb', uri] });
+        expect(res.status, uri).to.equal(400);
+        const body = (await res.json()) as { error: string; error_description: string };
+        expect(body.error, uri).to.equal('invalid_redirect_uri');
+        expect(body.error_description, uri).to.equal("redirect_uris must be the app's own addresses, not this site's");
+      }
+      // An app kept from before the check: its details are checked again when read, so it cannot start.
+      const clientId = await registered({ redirect_uris: ['https://app.example/cb'] });
+      const key = recordKey('Client', clientId);
+      const payload = JSON.parse((await OAuthRecord.findById(key).lean())!.payload) as Record<string, unknown>;
+      await OAuthRecord.updateOne(
+        { _id: key },
+        { $set: { payload: JSON.stringify({ ...payload, redirect_uris: [SITE + '/cb'] }) } }
+      );
+      const started = await authorize(clientId, { redirect: SITE + '/cb' });
+      expect(started.res.status).to.equal(400);
+      expect(started.uid).to.equal('');
+      expect(await started.res.text()).to.include('not this site');
+    });
+
+    it('counts a staging site, the hosts under it and those above it as its own, and no lookalike', () => {
+      const base = {
+        token_endpoint_auth_method: 'none',
+        grant_types: ['authorization_code'],
+        response_types: ['code']
+      } as const;
+      /** Why the check refuses a redirect, or '' when it takes it. */
+      const refusal = (uri: string): string => {
+        try {
+          checkClientMetadata({ ...base, client_id: 'x', redirect_uris: [uri] });
+          return '';
+        } catch (err) {
+          return String((err as { error_description?: unknown }).error_description);
+        }
+      };
+      process.env.SITE_URL = 'https://staging.glazecalc.test';
+      try {
+        for (const uri of [
+          'https://glazecalc.test/cb',
+          'https://staging.glazecalc.test/cb',
+          'https://a.staging.glazecalc.test/'
+        ]) {
+          expect(refusal(uri), uri).to.equal("redirect_uris must be the app's own addresses, not this site's");
+        }
+        expect(refusal('https://glazecalc.test.example/cb')).to.equal('');
+        expect(refusal('https://notglazecalc.test/cb')).to.equal('');
+        // The person's own computer is never this site, even in development on localhost.
+        expect(refusal('http://localhost:7777/cb')).to.equal('');
+      } finally {
+        delete process.env.SITE_URL;
+      }
+    });
+
     it(`allows 10 an hour from one address, and counts everyone's together for the day`, async () => {
       const address = '203.0.113.' + Math.floor(Math.random() * 200 + 20);
       const all = 'oauth-register-all';

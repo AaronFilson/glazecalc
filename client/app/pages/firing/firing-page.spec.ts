@@ -18,8 +18,10 @@ import { PAGE_LANGUAGE } from '../../i18n/language';
 
 describe('FiringPage', () => {
   beforeEach(() => {
-    // Dates in English, whatever locale a test in another file left behind.
+    // Dates in English and no settings stored, whatever a test in another file left behind
+    // (the guides' tests leave °C, which would start a log in Celsius).
     formatLocale.set('en');
+    localStorage.clear();
     TestBed.configureTestingModule({ providers: testProviders() });
   });
   afterEach(() => httpMock().verify());

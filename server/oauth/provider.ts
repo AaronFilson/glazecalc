@@ -129,6 +129,18 @@ const NEVER_SCHEMES = new Set([
   'view-source:'
 ]);
 
+/**
+ * Whether a host is this site's own, one under it or one above it
+ * (glazecalcapp.com and www.glazecalcapp.com; glazecalcapp.com from staging):
+ * no app is given its answer there, where the consent page would show the
+ * site's own name as the place the answer goes.
+ */
+const isOwnHost = (hostname: string): boolean => {
+  const own = site.rpId();
+  const host = hostname.replace(/\.+$/, '');
+  return host === own || host.endsWith('.' + own) || own.endsWith('.' + host);
+};
+
 /** Whether a redirect URI goes back to the person's own computer (an app running there). */
 export const isLoopback = (uri: string): boolean => {
   const url = URL.parse(uri);
@@ -153,10 +165,10 @@ const refuse = (description: string): never => {
 /**
  * What any app must be, however it named itself (CIMD or DCR), checked
  * whenever its details are read: public (no secret), the code and refresh
- * grants only, a short name, and redirect URIs that are https, an app's own
- * scheme, or http back to the person's own computer. An app whose redirects
- * are all of the last two is a native app (loopback ports may then vary,
- * RFC 8252). Sync, as oidc-provider asks.
+ * grants only, a short name, and redirect URIs that are https (never to this
+ * site), an app's own scheme, or http back to the person's own computer. An
+ * app whose redirects are all of the last two is a native app (loopback ports
+ * may then vary, RFC 8252). Sync, as oidc-provider asks.
  */
 export const checkClientMetadata = (metadata: ClientMetadata): void => {
   if (metadata.token_endpoint_auth_method !== 'none') refuse('only public clients (token_endpoint_auth_method none)');
@@ -185,6 +197,9 @@ export const checkClientMetadata = (metadata: ClientMetadata): void => {
       isLoopback(uri as string) ||
       isAppScheme(uri as string);
     if (!ok) refuse('redirect_uris must be https, an app scheme, or http to 127.0.0.1, [::1] or localhost');
+    if (url!.protocol === 'https:' && isOwnHost(url!.hostname)) {
+      refuse("redirect_uris must be the app's own addresses, not this site's");
+    }
   }
   if (
     metadata.application_type !== 'native' &&

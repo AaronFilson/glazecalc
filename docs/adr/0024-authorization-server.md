@@ -62,7 +62,7 @@ assistant's grant must be a Glazecalc connection the person can see and revoke w
   `dcr_`; no registration access token; an app nobody connects goes after 7 days, one connected
   30 days after its last use. Both pass the same check of their metadata (`checkClientMetadata`):
   public, the code and refresh grants and the code response only, a name of at most 60 characters,
-  1 to 10 redirect URIs that are https (not to loopback), an app's own scheme (cursor://, com.example.app:; never javascript:, data:, file: and the like), or
+  1 to 10 redirect URIs that are https (not to loopback, nor to this site: see An outside report), an app's own scheme (cursor://, com.example.app:; never javascript:, data:, file: and the like), or
   http to `127.0.0.1`, `[::1]` or `localhost`; no `jwks`, `jwks_uri`, `sector_identifier_uri`,
   `request_uris` or `initiate_login_uri`. An app whose redirects are all loopback or its own scheme
   is a native app, so its loopback port may change (RFC 8252). Names shown are cleaned of control,
@@ -190,6 +190,36 @@ with a test that failed before:
   `-Proto`; the `/api/connect` routes call oidc-provider directly, and now get the site's own host
   and scheme first, as `/oauth/` does (`asTheSiteForConnect`).
 
+## An outside report
+
+A security researcher wrote on 2026-10-20 that `/oauth/register` lets anyone register a public app
+with an https redirect of their choosing, which could then ask people to connect it (consent
+phishing). Open registration is this decision: it is how the chat apps and other MCP clients
+connect, and an initial access token, a hand review or a list of allowed redirects would shut them
+out. CIMD was already offered beside it. What stands between a registered app and anyone's records
+is the consent page, on the website, signed in, each time. Checking the report found two ways
+round that page, both closed, each with a test that failed before:
+
+- **This site as the place the answer goes.** An app could register `https://glazecalcapp.com/...`
+  (or `www.`, or the production site from staging), and the page would then say the answer goes to
+  glazecalcapp.com. `checkClientMetadata` now refuses https redirects to the site's host, to any
+  host under it and to any above it; an app registered before is refused too, as its details are
+  checked whenever they are read.
+- **A click meant for something else.** Allow took a click as soon as it was shown, so a site that
+  asks for a double-click and brings the consent page forward under the pointer between its two
+  halves (DoubleClickjacking) could have the second land on Allow. Allow now takes a click only
+  once the page has been in front, without a break, for a second (`ALLOW_AFTER_MS`): the wait
+  starts when the page is shown and again whenever its window comes to the front or its tab is
+  shown, and Allow waits while either is away. Don't allow is never held back. Framing was already
+  refused (`frame-ancestors 'none'`, `X-Frame-Options: DENY`).
+
+Unchanged: a self-registered app's name is only its own word, marked "self-described", with where
+the answer goes beneath it; the notice email for each connection; read-only unless ticked; revoking
+on Connected apps. Once the chat apps have been tried on staging, registering could be kept for
+apps that answer on the person's own computer or through an app's own scheme, which cannot be used
+from afar, with every app on the web naming itself by its address (CIMD), whose host the page shows
+checked.
+
 ## Consequences
 
 - Assistants that connect only with OAuth can use a person's records, and the person sees and
@@ -200,7 +230,8 @@ with a test that failed before:
   `interactions.ts`); an app's own scheme is shown whole with a warning, since
   `evilapp://claude.ai/cb` goes to whichever app opens `evilapp:`; a loopback answer and a CIMD
   app answering on another host than its own are warned about too. "Also let it change my records"
-  is never ticked for the person, and neither button is focused. A visitor not signed in signs in
+  is never ticked for the person, and neither button is focused; Allow takes a click only once the
+  page has been in front for a second (An outside report). A visitor not signed in signs in
   and comes back (`?next=`, this site's paths only). Each yes emails the account a notice naming
   the app, its host and whether it may change records (`sendConnectionMade`).
 - oidc-provider's CIMD support is experimental (draft 02): a new draft may change it, so it is
