@@ -512,7 +512,8 @@ and Bengali; units in Latin, left to right; Noto Nastaliq Urdu served for Urdu p
   Noto Sans Bengali), never synthesized italics, never letter-spacing; lines 1.75 high for Devanagari and Bengali, and
   headings 1.45 (Arabic headings 1.4). Urdu is Nastaliq, which few devices have: Noto Nastaliq Urdu 3.007 is served,
   cut to Urdu's letters (193 kB, weights 400–700), named only in Urdu's font list so no other page fetches it, not
-  preloaded, in lines 1.9 high. The CSP's `font-src 'self'` covers it. The Linux test image installs `fonts-noto-core`.
+  preloaded, in lines 1.9 high. The CSP's `font-src 'self'` covers it. The Linux test image installs `fonts-noto-core` and keeps only its Arabic, Devanagari and Bengali fonts: with all of them,
+  Chromium's search through every font for each sign Lora lacks made the accessibility checks run out of time.
 - **Still to do with the languages themselves:** pinned digits and calendars for each region (Phase A1), the
   any-script parser for lakh grouping and Arabic separators (A2, A3), and `/ar/`, `/hi/`, `/ur/` and `/bn/` pages
   prerendered for their regions.

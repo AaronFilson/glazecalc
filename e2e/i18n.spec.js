@@ -133,7 +133,7 @@ test('Arabic and Hindi draw their letters in the system font, Hindi in taller li
   await page.goto('/ar-XD/guides/firing');
   await expect(page.locator('h1')).toHaveText(/^[\u0600-\u06ff\s]+$/);
   await page.evaluate(() => globalThis.document.fonts.ready);
-  // Noto Naskh Arabic on Linux (fonts-noto-core, scripts/test-e2e-linux.Dockerfile), and so in CI; Segoe UI on Windows.
+  // Noto Naskh Arabic on Linux (scripts/test-e2e-linux.Dockerfile), and so in CI; Segoe UI on Windows.
   const arabic = process.platform === 'linux' ? /^Noto Naskh Arabic$/ : /^Segoe UI/;
   expect(await fontsOf(page, 'h1')).toContainEqual(expect.stringMatching(arabic));
   // No slanted Arabic, which its fonts do not draw.

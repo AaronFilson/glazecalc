@@ -20,8 +20,8 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   Naskh Arabic, Geeza Pro), Hindi and Bengali (Nirmala UI, Kohinoor, Noto Sans), in taller lines,
   never spaced out or slanted; Urdu's Nastaliq is served with the app (Noto Nastaliq Urdu, OFL, cut
   to Urdu's letters, 193 kB) and fetched by Urdu pages only. Emails in a right-to-left language
-  start each line with a right-to-left mark. The Linux browser tests' image adds Noto's core fonts
-  (Arabic, Devanagari, Bengali). English only.
+  start each line with a right-to-left mark. The Linux browser tests' image adds four of Noto's
+  fonts (Naskh Arabic, Sans Arabic, Sans Devanagari, Sans Bengali). English only.
 
 - **Confirm before changes** (docs/adr/0025-confirm-before-changes.md). On Connected apps, an
   account can choose that changes from assistants, apps and access tokens wait for its approval:
