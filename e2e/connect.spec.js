@@ -143,7 +143,12 @@ test('connects an app read only, which reads, is asked to step up to change, and
   await expect(row).toContainText('Sends you back to: 127.0.0.1:7777');
   await expect(row).toContainText('Read only');
   await row.getByRole('button', { name: 'Revoke Kiln Helper' }).click();
+  // The button hides behind the question at once, so wait for the server's answer to the revoke itself.
+  const revoked = page.waitForResponse(
+    (res) => res.url().includes('/api/connections/') && res.request().method() === 'DELETE'
+  );
   await row.getByRole('button', { name: 'Yes, revoke' }).click();
+  expect((await revoked).ok()).toBe(true);
   await expect(row.getByRole('button', { name: /^Revoke/ })).toHaveCount(0);
 
   const after = await mcp(request, tokens.access_token, 'tools/call', { name: 'list_recipes', arguments: {} });

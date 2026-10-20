@@ -152,9 +152,11 @@ test.describe('a potter in Taiwan', () => {
 
     await page.goto('/guides/safe-mixing');
     const silica = page.locator('gc-silica-limit');
-    await expect(silica.locator('tbody td')).toHaveText(['0.1 mg/m³']);
+    // The table in force until the end of 2026 (the formula and its value for pure quartz), then 2027's limit.
+    await expect(silica.locator('tbody td')).toHaveText(['10 / (Q + 2) mg/m³', '0.098 mg/m³', '0.1 mg/m³']);
     await expect(silica).toContainText('It applies from January 1, 2027.');
-    await expect(silica).toContainText('Until 31 December 2026 an earlier table applies');
+    await expect(silica).toContainText('Until then, the limit is set by');
+    await expect(silica).toContainText('Until 31 December 2026 the limit is for the whole respirable dust');
     await accessible(page);
 
     await page.goto('/guides/glazing-basics');
