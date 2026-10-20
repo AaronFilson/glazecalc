@@ -1,5 +1,7 @@
 import { TestBed } from '@angular/core/testing';
+import { regionFor } from '../../../../lib/regions';
 import { PreferencesService } from '../../core/preferences.service';
+import { choosePicked, pickerField } from '../../testing/picker';
 import { testProviders } from '../../testing/test-providers';
 import { PoisonLines, joinNotes } from './poison-lines';
 
@@ -15,10 +17,7 @@ describe('PoisonLines', () => {
     await fixture.whenStable();
     const element = fixture.nativeElement as HTMLElement;
     const choose = async (code: string) => {
-      const select = element.querySelector('select') as HTMLSelectElement;
-      select.value = code;
-      select.dispatchEvent(new Event('change'));
-      await fixture.whenStable();
+      await choosePicked(fixture, pickerField(element), regionFor(code)!.name);
     };
     const calls = () => [...element.querySelectorAll('a[href^="tel:"]')].map((a) => a.getAttribute('href'));
     return { element, choose, calls };

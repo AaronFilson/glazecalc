@@ -1,9 +1,12 @@
 import { Component, computed, inject, input, signal } from '@angular/core';
+import { translate } from '@jsverse/transloco';
 import { REGIONS } from '../../../../lib/regions';
 import { textLanguage } from '../../../../lib/regions/languages';
 import { LocaleService } from '../../core/locale.service';
 import { PAGE_LANGUAGE } from '../../i18n/language';
 import { formatDate, listLocale } from '../../shared/format';
+import { Picker } from '../../shared/picker';
+import { regionItems } from '../../shared/region-items';
 
 let nextId = 0;
 
@@ -12,8 +15,8 @@ let nextId = 0;
  * limit, the food-contact rules, shops): the reader's region from Settings, or
  * the browser's, until another is chosen here to look at. Settings are not
  * changed. Countries are named in the page's language by the browser
- * (Intl.DisplayNames), in its alphabetical order. Made where a component's
- * fields are (it injects).
+ * (Intl.DisplayNames), in its alphabetical order, listed by continent. Made
+ * where a component's fields are (it injects).
  */
 export class RegionChoice {
   private readonly locale = inject(LocaleService);
@@ -24,6 +27,8 @@ export class RegionChoice {
   readonly regions = REGIONS.map((r) => ({ code: r.code, name: this.names.of(r.code) ?? r.name })).sort((a, b) =>
     a.name.localeCompare(b.name, this.language)
   );
+  /** The countries as the list shows them: by continent, with their English names beside them. */
+  readonly items = regionItems(this.regions, inject(PAGE_LANGUAGE));
   /** A country chosen here, to look at. */
   readonly chosen = signal('');
   readonly region = computed(() => this.chosen() || this.locale.region());
@@ -38,16 +43,19 @@ export class RegionChoice {
 /** The list a RegionChoice is changed with, under its label. */
 @Component({
   selector: 'gc-region-select',
+  imports: [Picker],
   template: `<div class="region-select">
     <label class="form-label" [for]="id">{{ label() }}</label>
-    <select class="form-select" [id]="id" (change)="choice().chosen.set($any($event.target).value)">
-      @if (!choice().region()) {
-        <option value="" selected>{{ prompt() }}</option>
-      }
-      @for (r of choice().regions; track r.code) {
-        <option [value]="r.code" [selected]="r.code === choice().region()">{{ r.name }}</option>
-      }
-    </select>
+    <gc-picker
+      [inputId]="id"
+      [label]="label()"
+      [items]="choice().items"
+      [value]="choice().region()"
+      [placeholder]="prompt()"
+      [showAll]="showAll"
+      [noMatch]="noMatch"
+      (chosen)="choice().chosen.set($event)"
+    />
   </div>`,
   styles: `
     .region-select {
@@ -56,9 +64,10 @@ export class RegionChoice {
       align-items: center;
       gap: 0.5rem;
       margin-bottom: 0.5rem;
-      select {
-        width: auto;
-        max-width: 100%;
+      gc-picker {
+        flex: 1 1 16rem;
+        max-width: 24rem;
+        min-width: 0;
       }
     }
   `
@@ -69,6 +78,8 @@ export class RegionSelect {
   /** The first option, while no country is known. */
   readonly prompt = input.required<string>();
   protected readonly id = 'region-' + nextId++;
+  protected readonly showAll = translate('picker.regions.showAll');
+  protected readonly noMatch = translate('picker.regions.noMatch');
 }
 
 /** The earliest of the days facts were checked on, as the reader writes a date: "8 October 2026". */
