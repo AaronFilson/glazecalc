@@ -576,12 +576,13 @@ is NIJZ. Slovenia has no public poisons line (the region data says so): the advi
 ### 2.9 Where the potter works
 
 Terms of the region parts of the guides (shops, the silica limit, food-contact rules, materials sold nearby). Names of
-shops, laws and agencies stay as they are written there. A label before a list of countries cannot take a preposition
-that needs a case (the country follows in the nominative), so it names the country as a noun: »Trgovine v državi«.
+shops, laws and agencies stay as they are written there. A label before a list of places cannot take a preposition
+that needs a case (the place follows in the nominative), so it ends in a colon: »Trgovine:«. Hong Kong and other places in the list are not countries, so never call {region} a country (»v državi
+{region}«): »Trgovine: {region}«, »{region}: trgovin še nismo iskali.«
 
 | English                                                               | Slovenian                                                                              | Where                                         |
 | --------------------------------------------------------------------- | -------------------------------------------------------------------------------------- | --------------------------------------------- |
-| Shops in (the label before a list of countries)                       | Trgovine v državi                                                                      | guides: shops.shopsIn                         |
+| Shops in (the label before a list of countries)                       | Trgovine:                                                                              | guides: shops.shopsIn                         |
 | raw glaze materials (what a shop sells)                               | surovine za glazure                                                                    | guides: shops.what.materials                  |
 | ready-made glazes                                                     | pripravljene glazure                                                                   | guides: shops.what.glazes                     |
 | Packs seen                                                            | Najdena pakiranja                                                                      | guides: shops.packs                           |
@@ -600,7 +601,7 @@ that needs a case (the country follows in the nominative), so it names the count
 | Small hollowware, under 1.1 L, other than cups and mugs (US)          | Majhna votla posoda pod 1,1 L, razen skodelic in lončkov                               | guides: food.category.smallHollow             |
 | Large hollowware, 1.1 L or more, other than pitchers (US)             | Velika votla posoda od 1,1 L naprej, razen vrčev                                       | guides: food.category.largeHollow             |
 | average of 6 pieces / any one of 6                                    | povprečje 6 kosov / vsak od 6 kosov                                                    | guides: food.judged.average, food.judged.each |
-| Buying in (the label before a list of countries)                      | Nakup v državi                                                                         | guides: equivalents.buyingIn                  |
+| Buying in (the label before a list of countries)                      | Kje kupujete:                                                                          | guides: equivalents.buyingIn                  |
 | differs by {grams} g per 100 g                                        | razlika {grams} g na 100 g                                                             | guides: equivalents.apart                     |
 | Directive 84/500/EEC (its official name)                              | Direktiva Sveta 84/500/EGS (kakor je bila spremenjena z Direktivo Komisije 2005/31/ES) | regions: the directive                        |
 | Latvia's law gives this limit for the inhalable fraction of the dust. | Latvijski predpisi določajo to mejno vrednost za inhalabilno frakcijo prahu.           | regions: Latvia                               |

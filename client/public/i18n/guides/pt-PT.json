@@ -73,7 +73,7 @@
     "shopsIn": "Lojas em",
     "label": "Lojas: {region}",
     "caption": "{region}: algumas lojas que vendem matérias-primas para vidrados (verificadas em {date})",
-    "nearbyCaption": "{region}: lojas noutros países que dizem fazer entregas nesse país (verificadas em {date})",
+    "nearbyCaption": "{region}: lojas de outros locais que dizem fazer entregas para esse destino (verificadas em {date})",
     "shop": "Loja",
     "sells": "Vende",
     "packs": "Embalagens encontradas",

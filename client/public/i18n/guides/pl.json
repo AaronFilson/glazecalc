@@ -42,7 +42,7 @@
   "more": "Więcej poradników",
   "contents": "Na tej stronie",
   "poison": {
-    "numbersFor": "Numery dla kraju",
+    "numbersFor": "Numery telefonów:",
     "choose": "Wybierz kraj",
     "label": "Gdzie dzwonić: {region}",
     "caption": "Gdzie dzwonić: {region} (numery sprawdzone {date})",
@@ -70,10 +70,10 @@
     "pint": "{value} oz na pintę imperialną ({sg})"
   },
   "shops": {
-    "shopsIn": "Sklepy w kraju",
+    "shopsIn": "Sklepy:",
     "label": "Sklepy: {region}",
     "caption": "Wybrane sklepy z surowcami do szkliw: {region} (sprawdzono {date})",
-    "nearbyCaption": "Sklepy w innych krajach, które podają, że wysyłają do kraju: {region} (sprawdzono {date})",
+    "nearbyCaption": "Sklepy w innych miejscach, które podają, że wysyłają także tutaj: {region} (sprawdzono {date})",
     "shop": "Sklep",
     "sells": "W ofercie",
     "packs": "Zauważone opakowania",
@@ -87,12 +87,12 @@
       "glazes": "gotowe szkliwa",
       "kilns": "piece"
     },
-    "none": "Nie znaleźliśmy sklepu z surowcami do szkliw w kraju: {region}.",
-    "unknown": "Nie szukaliśmy jeszcze sklepów w kraju: {region}.",
+    "none": "{region}: nie znaleźliśmy sklepu z surowcami do szkliw.",
+    "unknown": "{region}: nie szukaliśmy jeszcze sklepów.",
     "choosePrompt": "Wystarczy wybrać kraj, aby zobaczyć tamtejsze sklepy."
   },
   "silica": {
-    "limitIn": "Limit w kraju",
+    "limitIn": "Limit:",
     "label": "Limit dla krzemionki: {region}",
     "caption": "Limit dla respirabilnej krzemionki krystalicznej w miejscu pracy: {region} (średnia z 8 godzin, sprawdzono {date})",
     "captionControl": "Miernik dla respirabilnej krzemionki krystalicznej w powietrzu miejsca pracy: {region} (sprawdzono {date})",
@@ -131,14 +131,14 @@
     "sameAsEu": "To tyle samo co wiążący limit UE.",
     "recommendedBy": "{abbr} ({by}) zaleca tę wartość w dokumencie <link>{title}</link>. Nie ma ona mocy prawnej.",
     "respirators": "Półmaski przeciwpyłowe są tu sprzedawane według klas: {everyday} do pyłu szkliw lub {higher} dla lepszej ochrony (<link>oficjalne klasy</link>).",
-    "unknown": "Nie udało nam się potwierdzić limitu ustalonego w kraju: {region}. Wiążący limit UE wynoszący {value} mg/m³ obowiązuje w każdym państwie członkowskim.",
-    "noData": "Nie potwierdziliśmy jeszcze limitu obowiązującego w kraju: {region}.",
+    "unknown": "{region}: nie udało nam się potwierdzić limitu krajowego. Wiążący limit UE wynoszący {value} mg/m³ obowiązuje w każdym państwie członkowskim.",
+    "noData": "{region}: nie potwierdziliśmy jeszcze obowiązującego limitu.",
     "agency": "Krajowa instytucja ds. bezpieczeństwa i higieny pracy: <link>{name}</link>.",
     "agencySilica": "Jej <link>strona o krzemionce</link>.",
     "choosePrompt": "Wystarczy wybrać kraj, aby zobaczyć obowiązujący w nim limit."
   },
   "food": {
-    "rulesIn": "Przepisy w kraju",
+    "rulesIn": "Przepisy:",
     "label": "Limity dla wyrobów ceramicznych: {region}",
     "caption": "Ile wypalony wyrób może uwolnić w badaniu przewidzianym w przepisach: {region} (sprawdzono {date})",
     "article": "Rodzaj wyrobu",
@@ -208,13 +208,13 @@
     "inForce": "Obowiązują od {date}.",
     "atMost": "Wyrób spełnia wymagania, jeśli uwalnia nie więcej, niż wynosi limit: przepisy mówią „co najwyżej”.",
     "ppm": "ppm oznacza tu miligramy na litr roztworu badawczego (mg/L).",
-    "unknown": "Nie potwierdziliśmy jeszcze przepisów obowiązujących w kraju: {region}.",
+    "unknown": "{region}: nie potwierdziliśmy jeszcze obowiązujących przepisów.",
     "none": "{region}: żaden przepis nie ustala limitów ołowiu i kadmu, które może uwolnić wypalony wyrób (sprawdzono {date}).",
     "noneSource": "Źródło: <link>{law}</link>.",
     "choosePrompt": "Wystarczy wybrać kraj, aby zobaczyć obowiązujące w nim przepisy."
   },
   "equivalents": {
-    "buyingIn": "Zakupy w kraju",
+    "buyingIn": "Miejsce zakupu:",
     "label": "{library, select, US {Odpowiedniki sprzedawane w USA} UK {Odpowiedniki sprzedawane w Wielkiej Brytanii} EU {Odpowiedniki sprzedawane w UE} other {Odpowiedniki sprzedawane w Australii i Nowej Zelandii}}",
     "caption": "{library, select, US {Surowce niesprzedawane w USA, każdy z najbliższym odpowiednikiem sprzedawanym na miejscu} UK {Surowce niesprzedawane w Wielkiej Brytanii, każdy z najbliższym odpowiednikiem sprzedawanym na miejscu} EU {Surowce niesprzedawane w UE, każdy z najbliższym odpowiednikiem sprzedawanym na miejscu} other {Surowce niesprzedawane w Australii i Nowej Zelandii, każdy z najbliższym odpowiednikiem sprzedawanym na miejscu}}",
     "material": "W recepturze",

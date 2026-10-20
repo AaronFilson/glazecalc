@@ -42,7 +42,7 @@
   "more": "다른 가이드",
   "contents": "이 페이지의 내용",
   "poison": {
-    "numbersFor": "연락처를 볼 나라:",
+    "numbersFor": "연락처를 볼 국가/지역:",
     "choose": "나라 선택",
     "label": "{region}에서 연락할 곳",
     "caption": "{region}에서 연락할 곳(전화번호 확인일: {date})",
@@ -55,7 +55,7 @@
     "orCall": "또는 <link>{number}</link>",
     "online": "온라인: <link>{name}</link>.",
     "poisonAdviceNone": "중독 상담",
-    "noLine": "이 나라에서는 일반인이 이용할 수 있는 중독 상담 전화를 확인하지 못했습니다. 의사에게 전화하거나, 급한 경우에는 긴급 전화번호로 전화하세요.",
+    "noLine": "이곳에서는 일반인이 이용할 수 있는 중독 상담 전화를 확인하지 못했습니다. 의사에게 전화하거나, 급한 경우에는 긴급 전화번호로 전화하세요.",
     "medicalAdvice": "의료 상담: {name}",
     "animals": "동물: {name}",
     "animalsNone": "동물",
@@ -70,10 +70,10 @@
     "pint": "영국 파인트당 {value} oz ({sg})"
   },
   "shops": {
-    "shopsIn": "판매처가 있는 나라:",
+    "shopsIn": "판매처가 있는 국가/지역:",
     "label": "{region}의 판매처",
     "caption": "{region}에서 유약 원료를 파는 판매처 일부(확인일: {date})",
-    "nearbyCaption": "{region}까지 배송한다고 밝힌 다른 나라의 판매처(확인일: {date})",
+    "nearbyCaption": "{region}까지 배송한다고 밝힌 다른 지역의 판매처(확인일: {date})",
     "shop": "판매처",
     "sells": "판매 품목",
     "packs": "확인한 포장 단위",
@@ -92,7 +92,7 @@
     "choosePrompt": "나라를 선택하면 그 나라의 판매처가 표시됩니다."
   },
   "silica": {
-    "limitIn": "기준을 볼 나라:",
+    "limitIn": "기준을 볼 국가/지역:",
     "label": "{region}의 실리카 기준",
     "caption": "{region}의 호흡성 결정형 유리규산 작업장 노출 기준, 8시간 평균(확인일: {date})",
     "captionControl": "{region}에서 작업장 공기 중 호흡성 결정형 유리규산을 판단하는 기준(확인일: {date})",
@@ -130,7 +130,7 @@
     "lowerThanEu": "EU의 법적 구속력이 있는 기준인 {value} mg/m³보다 낮습니다.",
     "sameAsEu": "EU의 법적 구속력이 있는 기준과 같습니다.",
     "recommendedBy": "이 값은 {abbr}({by})의 <link>{title}</link>에 나오는 권고값입니다. 법으로 정한 값이 아닙니다.",
-    "respirators": "이 나라의 방진마스크는 등급별로 판매됩니다. 유약 분진용은 {everyday}, 더 높은 보호용은 {higher}입니다(<link>공식 등급</link>).",
+    "respirators": "이곳에서는 방진마스크가 등급별로 판매됩니다. 유약 분진용은 {everyday}, 더 높은 보호용은 {higher}입니다(<link>공식 등급</link>).",
     "unknown": "{region}의 국가 기준은 확인하지 못했습니다. EU의 법적 구속력이 있는 기준 {value} mg/m³는 모든 회원국에 적용됩니다.",
     "noData": "{region}의 기준은 아직 확인하지 않았습니다.",
     "agency": "국가 산업안전보건 기관: <link>{name}</link>",
@@ -138,7 +138,7 @@
     "choosePrompt": "나라를 선택하면 그 나라의 기준이 표시됩니다."
   },
   "food": {
-    "rulesIn": "규정을 볼 나라:",
+    "rulesIn": "규정을 볼 국가/지역:",
     "label": "{region}의 도자기 기준",
     "caption": "{region}의 법정 시험에서 소성한 기물로부터 용출되어도 되는 양(확인일: {date})",
     "article": "기물의 종류",
@@ -203,7 +203,7 @@
       "averageOf": "{count}개의 평균",
       "eachOf": "{count}개 중 어느 것이든"
     },
-    "euRules": "이 나라에는 EU의 규정이 적용됩니다.",
+    "euRules": "이곳에는 EU의 규정이 적용됩니다.",
     "law": "근거: <link>{law}</link>.",
     "inForce": "{date}부터 시행됩니다.",
     "atMost": "용출량이 기준 이하이면 적합합니다. 법령의 표현은 “이하”입니다.",
@@ -214,7 +214,7 @@
     "choosePrompt": "나라를 선택하면 그 나라의 규정이 표시됩니다."
   },
   "equivalents": {
-    "buyingIn": "구매하는 나라:",
+    "buyingIn": "구매하는 국가/지역:",
     "label": "{library, select, US {미국에서 파는 대체 원료} UK {영국에서 파는 대체 원료} EU {EU에서 파는 대체 원료} other {호주와 뉴질랜드에서 파는 대체 원료}}",
     "caption": "{library, select, US {미국에서 팔지 않는 원료와, 각각 미국에서 파는 가장 가까운 원료} UK {영국에서 팔지 않는 원료와, 각각 영국에서 파는 가장 가까운 원료} EU {EU에서 팔지 않는 원료와, 각각 EU에서 파는 가장 가까운 원료} other {호주와 뉴질랜드에서 팔지 않는 원료와, 각각 그곳에서 파는 가장 가까운 원료}}",
     "material": "레시피의 원료",

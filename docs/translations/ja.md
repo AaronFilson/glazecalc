@@ -352,8 +352,8 @@ As the law writes it, never paraphrased: the words below are fixed, and the regi
   "should not" → 「…するべきではありません」. "must be tested" → 「試験を受ける必要があります」 (the test is done, not passed); never
   「合格しなければなりません」. "some" (some fine quartz) → 「ある程度」「いくらか」, never 「少し」「少量」. "may" → 「…ことがあります」「…おそれがあります」
   (hazards, as the GHS statements write おそれ).
-- **Placeholders** take particles directly, with no space: 「{region}では」「{name}を」「{count}件」. {region} is a country name from the
-  browser (日本, ドイツ), so write each sentence so it reads with any country: 「{region}の規則」, not 「{region}国の」. A trade
+- **Placeholders** take particles directly, with no space: 「{region}では」「{name}を」「{count}件」. {region} is a country or region name from
+  the browser (日本, ドイツ, 中華人民共和国香港特別行政区), so write each sentence so it reads with any of them (never 「この国」): 「{region}の規則」, not 「{region}国の」. A trade
   name before a particle takes a space (Latin): 「Ferro 3134 を」; a placeholder holding a Latin name does too in effect, but the
   message cannot know: write 「{name} を」 with the space where the value is usually Latin (material names), and no space where it is
   Japanese (region names).
@@ -691,7 +691,7 @@ best choice with no Japanese source.
 
 | English                                                                       | Japanese                                                                                                                                     | Where                                                     |
 | ----------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
-| Shops in (the label before a list of countries)                               | 販売店のある国:                                                                                                                              | guides: shops.shopsIn                                     |
+| Shops in (the label before a list of countries)                               | 販売店のある国・地域:                                                                                                                        | guides: shops.shopsIn                                     |
 | raw glaze materials (what a shop sells)                                       | 釉薬原料                                                                                                                                     | guides: shops.what.materials                              |
 | ready-made glazes                                                             | 調合済みの釉薬                                                                                                                               | guides: shops.what.glazes                                 |
 | Packs seen                                                                    | 確認した容量                                                                                                                                 | guides: shops.packs                                       |
@@ -715,7 +715,7 @@ best choice with no Japanese source.
 | Large hollowware, 1.1 L or more, other than pitchers (US)                     | 大型の深物（1.1 L以上、ピッチャーを除く）                                                                                                    | guides: food.category.largeHollow                         |
 | average of 6 pieces / any one of 6                                            | 6個の平均 / 6個のいずれも                                                                                                                    | guides: food.judged.average, food.judged.each             |
 | A piece passes if it releases no more than the limit: the law says “at most”. | 溶出量が限度値以下であれば適合です。法令の表記は「以下」です。                                                                               | guides: food.atMost                                       |
-| Buying in (the label before a list of countries)                              | 購入する国:                                                                                                                                  | guides: equivalents.buyingIn                              |
+| Buying in (the label before a list of countries)                              | 購入する国・地域:                                                                                                                            | guides: equivalents.buyingIn                              |
 | differs by {grams} g per 100 g                                                | 100 g あたり {grams} g の差                                                                                                                  | guides: equivalents.apart                                 |
 | Directive 84/500/EEC (its official name)                                      | EU 指令 84/500/EEC（2005/31/EC により改正）                                                                                                  | regions: the directive (no official Japanese text)        |
 | Dust masks in Japan pass a national test (国家検定). …                        | 日本の防じんマスクは国家検定に合格したものです。DS は使い捨て式、RS は取替え式で、区分2は試験粒子の95.0%以上、区分3は99.9%以上を捕集します。 | regions: Japan's masks                                    |

@@ -42,7 +42,7 @@
   "more": "Daugiau vadovų",
   "contents": "Šiame puslapyje",
   "poison": {
-    "numbersFor": "Numeriai šioje šalyje:",
+    "numbersFor": "Numeriai:",
     "choose": "Pasirinkite šalį",
     "label": "Kur skambinti: {region}",
     "caption": "Kur skambinti: {region} (numeriai patikrinti {date})",
@@ -55,7 +55,7 @@
     "orCall": "arba <link>{number}</link>",
     "online": "Internete: <link>{name}</link>.",
     "poisonAdviceNone": "Konsultacija dėl apsinuodijimo",
-    "noLine": "Nepavyko patvirtinti, kad šioje šalyje veikia vieša apsinuodijimų informacijos linija. Skambinkite savo gydytojui arba, jei skubu, pagalbos numeriu.",
+    "noLine": "Nepavyko patvirtinti, kad čia veikia vieša apsinuodijimų informacijos linija. Skambinkite savo gydytojui arba, jei skubu, pagalbos numeriu.",
     "medicalAdvice": "Medicininė konsultacija: {name}",
     "animals": "Gyvūnai: {name}",
     "animalsNone": "Gyvūnai",
@@ -70,10 +70,10 @@
     "pint": "{value} oz imperinėje pintoje ({sg})"
   },
   "shops": {
-    "shopsIn": "Parduotuvės šioje šalyje:",
+    "shopsIn": "Parduotuvės:",
     "label": "Parduotuvės: {region}",
     "caption": "Kai kurios glazūrų žaliavomis prekiaujančios parduotuvės: {region} (patikrinta {date})",
-    "nearbyCaption": "Kitų šalių parduotuvės, kurios nurodo, kad pristato į šią šalį: {region} (patikrinta {date})",
+    "nearbyCaption": "Kitur esančios parduotuvės, kurios nurodo, kad pristato ir čia: {region} (patikrinta {date})",
     "shop": "Parduotuvė",
     "sells": "Asortimentas",
     "packs": "Matytos pakuotės",
@@ -92,7 +92,7 @@
     "choosePrompt": "Pasirinkite šalį, kad pamatytumėte jos parduotuves."
   },
   "silica": {
-    "limitIn": "Ribinė vertė šioje šalyje:",
+    "limitIn": "Ribinė vertė:",
     "label": "Silicio dioksido ribinė vertė: {region}",
     "caption": "Įkvepiamojo kristalinio silicio dioksido dulkių (alveolinė frakcija) ribinė vertė darbo vietoje, 8 valandų vidurkis: {region} (patikrinta {date})",
     "captionControl": "Įkvepiamojo kristalinio silicio dioksido dulkių vertinimo matas darbo zonos ore: {region} (patikrinta {date})",
@@ -138,7 +138,7 @@
     "choosePrompt": "Pasirinkite šalį, kad pamatytumėte jos ribinę vertę."
   },
   "food": {
-    "rulesIn": "Taisyklės šioje šalyje:",
+    "rulesIn": "Taisyklės:",
     "label": "Keramikos gaminių ribos ({region})",
     "caption": "Kiek išdegtas gaminys gali išskirti per teisės aktuose nustatytą bandymą: {region} (patikrinta {date})",
     "article": "Gaminio rūšis",
@@ -214,7 +214,7 @@
     "choosePrompt": "Pasirinkite šalį, kad pamatytumėte jos taisykles."
   },
   "equivalents": {
-    "buyingIn": "Pirkimo šalis:",
+    "buyingIn": "Pirkimo vieta:",
     "label": "{library, select, US {Atitikmenys, parduodami JAV} UK {Atitikmenys, parduodami Jungtinėje Karalystėje} EU {Atitikmenys, parduodami ES} other {Atitikmenys, parduodami Australijoje ir Naujojoje Zelandijoje}}",
     "caption": "{library, select, US {Žaliavos, neparduodamos JAV, su artimiausia ten parduodama žaliava} UK {Žaliavos, neparduodamos Jungtinėje Karalystėje, su artimiausia ten parduodama žaliava} EU {Žaliavos, neparduodamos ES, su artimiausia ten parduodama žaliava} other {Žaliavos, neparduodamos Australijoje ir Naujojoje Zelandijoje, su artimiausia ten parduodama žaliava}}",
     "material": "Recepte",

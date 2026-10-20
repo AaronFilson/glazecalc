@@ -393,9 +393,10 @@ kaadmiumi võimalikku eraldumist keraamilistest esemetest“).
   themselves stay as printed.
 - **Placeholders and trade names cannot be declined.** A placeholder takes no ending, and a trade name ending in figures
   or a silent letter reads badly with one, so put a generic noun in the needed case beside it: „toorainega {name}“,
-  „retseptis {name}“, „fritti Ferro 3134“, „toorainet Gerstley Borate“, „ahjus Skutt KilnMaster“. {region} is a country
-  name in the nominative, as the browser gives it („Läti“, „Ühendkuningriik“): put it after a dash or a colon, or after
-  a generic noun: „Mürgistusabi – {region}“, „Poed: {region}“, „Kellele helistada (riik: {region})“; never „{region}-s“.
+  „retseptis {name}“, „fritti Ferro 3134“, „toorainet Gerstley Borate“, „ahjus Skutt KilnMaster“. {region} is a place
+  name in the nominative, as the browser gives it („Läti“, „Ühendkuningriik“, „Hongkongi erihalduspiirkond“): put it
+  after a dash or a colon: „Mürgistusabi – {region}“, „Poed: {region}“, „Kellele helistada: {region}“,
+  „{region}: poode ei ole veel otsitud.“; never „{region}-s“, and never „riik: {region}“ or „riiki {region}“ (Hong Kong and other places in the list are not countries, so never call {region} a country).
   „Glazecalc“ itself is declined (see section 3).
 - **Units after numbers**: „80 mesh“ stays as it is and is not declined; let the noun take the case: „läbi 80 mesh
   sõela“, „80 mesh sõelaga“ (sieve openings „0,18 mm“).

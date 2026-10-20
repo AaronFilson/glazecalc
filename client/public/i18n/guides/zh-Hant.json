@@ -42,7 +42,7 @@
   "more": "更多指南",
   "contents": "本頁內容",
   "poison": {
-    "numbersFor": "查看電話號碼的國家：",
+    "numbersFor": "查看電話號碼的國家/地區：",
     "choose": "選擇您的國家",
     "label": "{region}的求助電話",
     "caption": "{region}的求助電話（號碼確認日期：{date}）",
@@ -70,7 +70,7 @@
     "pint": "每英制品脫 {value} oz（{sg}）"
   },
   "shops": {
-    "shopsIn": "商店所在國家：",
+    "shopsIn": "商店所在國家/地區：",
     "label": "{region}的商店",
     "caption": "{region}販售釉藥原料的部分商店（確認日期：{date}）",
     "nearbyCaption": "其他地區表示可配送到{region}的商店（確認日期：{date}）",
@@ -92,7 +92,7 @@
     "choosePrompt": "選擇您的國家，即可查看當地的商店。"
   },
   "silica": {
-    "limitIn": "查看限值的國家：",
+    "limitIn": "查看限值的國家/地區：",
     "label": "{region}的二氧化矽限值",
     "caption": "{region}工作場所的可呼吸性結晶型游離二氧化矽容許濃度，8 小時平均（確認日期：{date}）",
     "captionControl": "{region}評估作業場所空氣中可呼吸性結晶型游離二氧化矽的基準（確認日期：{date}）",
@@ -138,7 +138,7 @@
     "choosePrompt": "選擇您的國家，即可查看當地的限值。"
   },
   "food": {
-    "rulesIn": "查看法規的國家：",
+    "rulesIn": "查看法規的國家/地區：",
     "label": "{region}的陶瓷器限值",
     "caption": "在{region}的法定試驗中，燒成器物容許溶出的量（確認日期：{date}）",
     "article": "器物種類",
@@ -214,7 +214,7 @@
     "choosePrompt": "選擇您的國家，即可查看當地的規定。"
   },
   "equivalents": {
-    "buyingIn": "購買國家：",
+    "buyingIn": "購買國家/地區：",
     "label": "{library, select, US {在美國販售的對應原料} UK {在英國販售的對應原料} EU {在歐盟販售的對應原料} other {在澳洲與紐西蘭販售的對應原料}}",
     "caption": "{library, select, US {美國沒有販售的原料，以及各自在當地販售的最接近原料} UK {英國沒有販售的原料，以及各自在當地販售的最接近原料} EU {歐盟沒有販售的原料，以及各自在當地販售的最接近原料} other {澳洲與紐西蘭沒有販售的原料，以及各自在當地販售的最接近原料}}",
     "material": "釉方中的原料",

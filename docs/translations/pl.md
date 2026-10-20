@@ -498,7 +498,7 @@ the reviewed translation uses them. Names of shops, laws and agencies stay as th
 
 | English                                                               | Polski                                                                         | Where                                         |
 | --------------------------------------------------------------------- | ------------------------------------------------------------------------------ | --------------------------------------------- |
-| Shops in (the label before a list of countries)                       | Sklepy w kraju                                                                 | guides: shops.shopsIn                         |
+| Shops in (the label before a list of countries)                       | Sklepy: (never „w kraju“: Hong Kong is not a country)                          | guides: shops.shopsIn                         |
 | raw glaze materials (what a shop sells)                               | surowce do szkliw                                                              | guides: shops.what.materials                  |
 | ready-made glazes                                                     | gotowe szkliwa                                                                 | guides: shops.what.glazes                     |
 | Packs seen                                                            | Zauważone opakowania                                                           | guides: shops.packs                           |
@@ -517,7 +517,7 @@ the reviewed translation uses them. Names of shops, laws and agencies stay as th
 | Small hollowware, under 1.1 L, other than cups and mugs (US)          | Małe naczynia głębokie, poniżej 1,1 L, inne niż filiżanki i kubki              | guides: food.category.smallHollow             |
 | Large hollowware, 1.1 L or more, other than pitchers (US)             | Duże naczynia głębokie, 1,1 L lub więcej, inne niż dzbanki                     | guides: food.category.largeHollow             |
 | average of 6 pieces / any one of 6                                    | średnia z 6 sztuk / każda z 6 sztuk                                            | guides: food.judged.average, food.judged.each |
-| Buying in (the label before a list of countries)                      | Zakupy w kraju                                                                 | guides: equivalents.buyingIn                  |
+| Buying in (the label before a list of countries)                      | Miejsce zakupu:                                                                | guides: equivalents.buyingIn                  |
 | differs by {grams} g per 100 g                                        | różni się o {grams} g na 100 g                                                 | guides: equivalents.apart                     |
 | Directive 84/500/EEC (its official name)                              | dyrektywa 84/500/EWG (zmieniona dyrektywą 2005/31/WE)                          | regions: the directive                        |
 | Latvia's law gives this limit for the inhalable fraction of the dust. | Prawo łotewskie podaje ten limit dla frakcji wdychalnej pyłu.                  | regions: Latvia                               |

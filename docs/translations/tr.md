@@ -149,7 +149,8 @@ Turkish attaches case and possessive endings to the word. Three rules:
   instead and leave the figure bare: “1222 °C sıcaklığa kadar”, “6 numaralı piramide”.
 - **A placeholder never takes a suffix** (MS: "Content of the placeholder is unknown, therefore no suffixes are
   allowed"): {region}, {name}, {count}, {library}, {value} could end in any vowel. Put a generic noun beside the
-  placeholder and give it the suffix: "in {region}" → “{region} ülkesinde” or “bulunduğunuz ülkede ({region})”; "to
+  placeholder and give it the suffix: "in {region}" → a label with a colon, “Mağazalar: {region}”, “{region}: mağazalara henüz bakmadık.” (never
+  “{region} ülkesinde”: Hong Kong and other places in the list are not countries, so never call {region} a country); "to
   {name}" → “{name} adlı reçeteye”; "{count} materials" → “{count} hammadde”; "from {library}" → “{library}
   kütüphanesinden”. A trade name works the same way where its reading is unsure: “Ferro 3134 fritine”.
 
@@ -741,13 +742,13 @@ one ("may damage fertility; may damage the unborn child"), join the two wordings
 ### 2.9 Where the potter works
 
 Terms of the region parts of the guides (shops, the silica limit, food-contact rules, materials sold nearby). Names of
-shops, laws and agencies stay as they are written there. {region} never takes a suffix: a noun beside it does
-(“{region} ülkesinde”).
+shops, laws and agencies stay as they are written there. {region} never takes a suffix, and is never called a country
+(Hong Kong is not one): it follows a colon (“Mağazalar: {region}”).
 
 | English                                                                       | Turkish                                                                                                 | Where                                                                                |
 | ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
-| Shops in (the label before a list of countries)                               | Mağazaların bulunduğu ülkeler:                                                                          | guides: shops.shopsIn                                                                |
-| Shops in {region}                                                             | {region} ülkesindeki mağazalar                                                                          | guides: shops.label (no suffix on {region})                                          |
+| Shops in (the label before a list of countries)                               | Mağazaların bulunduğu yer:                                                                              | guides: shops.shopsIn                                                                |
+| Shops in {region}                                                             | Mağazalar: {region}                                                                                     | guides: shops.label (no suffix on {region})                                          |
 | raw glaze materials (what a shop sells)                                       | sır hammaddeleri                                                                                        | guides: shops.what.materials                                                         |
 | ready-made glazes                                                             | hazır sırlar                                                                                            | guides: shops.what.glazes                                                            |
 | Packs seen                                                                    | Görülen ambalajlar                                                                                      | guides: shops.packs                                                                  |
@@ -774,7 +775,7 @@ shops, laws and agencies stay as they are written there. {region} never takes a 
 | average of 6 pieces / any one of 6                                            | 6 parçanın ortalaması / 6 parçadan herhangi biri                                                        | guides: food.judged.average, food.judged.each                                        |
 | A piece passes if it releases no more than the limit: the law says “at most”. | Bir parça, sınır değerden fazlasını salmıyorsa testi geçer: yasa “en fazla” der.                        | guides: food.atMost                                                                  |
 | The EU’s rules apply here.                                                    | Burada AB kuralları uygulanır.                                                                          | guides: food.euRules (not shown for Türkiye, which has its own Tebliğ)               |
-| Buying in (the label before a list of countries)                              | Satın alınan ülke:                                                                                      | guides: equivalents.buyingIn                                                         |
+| Buying in (the label before a list of countries)                              | Satın alınan yer:                                                                                       | guides: equivalents.buyingIn                                                         |
 | differs by {grams} g per 100 g                                                | 100 g’da {grams} g fark var                                                                             | guides: equivalents.apart                                                            |
 | Directive 84/500/EEC (its official name)                                      | 84/500/EEC sayılı Konsey Direktifi                                                                      | regions: the directive (as the Tebliğ names it)                                      |
 | Türkiye has not adopted the EU’s binding limit (Directive (EU) 2017/2398).    | Türkiye, AB’nin bağlayıcı sınır değerini ((AB) 2017/2398 sayılı Direktif) benimsememiştir.              | regions: Türkiye’s silica note                                                       |

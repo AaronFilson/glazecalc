@@ -55,7 +55,7 @@
     "orCall": "vagy <link>{number}</link>",
     "online": "Online: <link>{name}</link>.",
     "poisonAdviceNone": "Mérgezési tanácsadás",
-    "noLine": "Ebben az országban nem tudtunk megerősíteni nyilvános toxikológiai tájékoztató vonalat. Hívja az orvosát, sürgős esetben pedig a segélyhívó számot.",
+    "noLine": "Itt nem tudtunk megerősíteni nyilvános toxikológiai tájékoztató vonalat. Hívja az orvosát, sürgős esetben pedig a segélyhívó számot.",
     "medicalAdvice": "Orvosi tanácsadás: {name}",
     "animals": "Állatok: {name}",
     "animalsNone": "Állatok",
@@ -73,7 +73,7 @@
     "shopsIn": "Boltok itt:",
     "label": "Boltok – {region}",
     "caption": "Néhány máznyersanyagot árusító bolt – {region} (ellenőrizve: {date})",
-    "nearbyCaption": "Máshol működő boltok, amelyek saját közlésük szerint ebbe az országba szállítanak: {region} (ellenőrizve: {date})",
+    "nearbyCaption": "Máshol működő boltok, amelyek saját közlésük szerint ide is szállítanak: {region} (ellenőrizve: {date})",
     "shop": "Bolt",
     "sells": "Kínálat",
     "packs": "Látott kiszerelések",
@@ -88,7 +88,7 @@
       "kilns": "kemencék"
     },
     "none": "{region}: nem találtunk máznyersanyagot árusító boltot.",
-    "unknown": "{region}: ebben az országban még nem kerestünk boltokat.",
+    "unknown": "{region}: még nem kerestünk boltokat.",
     "choosePrompt": "Válassza ki az országát, hogy lássa az ottani boltokat."
   },
   "silica": {

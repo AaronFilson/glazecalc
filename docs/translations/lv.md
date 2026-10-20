@@ -373,8 +373,9 @@ aizsardzības prasības saskarē ar ķīmiskajām vielām darba vietās”, the 
 - **biskvīts** is bisque in pottery and also sponge cake and biscuits (Tēzaurs); **konuss** is also the geometric cone;
   **gredzens** also a finger ring. Context settles them; the app's sense is always the pottery one.
 - **Placeholders and trade names cannot be inflected.** Put a common noun in the needed case before them: “izejviela
-  {name}”, “receptē {name}”, “izejvielai {name}”, “frite Ferro 3134”, “ar friti Ferro 3134”, “valstī {region}”,
-  “lietotnē Glazecalc” (MS 4.1.15, 4.1.17). Where no noun fits, a label with a colon: “Veikali: {region}”.
+  {name}”, “receptē {name}”, “izejvielai {name}”, “frite Ferro 3134”, “ar friti Ferro 3134”,
+  “lietotnē Glazecalc” (MS 4.1.15, 4.1.17). {region} takes a label with a colon: “Veikali: {region}”, “{region}: veikalus
+  vēl neesam meklējuši.”; never “valstī {region}” (Hong Kong and other places in the list are not countries, so never call {region} a country).
 - **mesh**: Latvian sieves are sold in mesh (Ceramics.lv: “1100 atveres/cm², kas aptuveni atbilst 80 mesh”). Keep “80
   mesh”, indeclinable.
 - **Numbers as words**: see Numbers. A number in the English stays a number.
@@ -810,7 +811,7 @@ before them end in a colon.
 | Small hollowware, under 1.1 L, other than cups and mugs (US)          | Mazi dobi trauki, mazāk par 1,1 L, izņemot tases un krūzes                          | guides: food.category.smallHollow                            |
 | Large hollowware, 1.1 L or more, other than pitchers (US)             | Lieli dobi trauki, 1,1 L vai vairāk, izņemot krūkas                                 | guides: food.category.largeHollow                            |
 | average of 6 pieces / any one of 6                                    | 6 izstrādājumu vidējais / katrs no 6                                                | guides: food.judged.average, food.judged.each                |
-| Buying in (the label before a list of countries)                      | Iegādes valstis:                                                                    | guides: equivalents.buyingIn                                 |
+| Buying in (the label before a list of countries)                      | Iegādes vieta:                                                                      | guides: equivalents.buyingIn                                 |
 | differs by {grams} g per 100 g                                        | atšķiras par {grams} g uz 100 g                                                     | guides: equivalents.apart                                    |
 | Directive 84/500/EEC (its official name)                              | Padomes Direktīva 84/500/EEK (grozīta ar Komisijas Direktīvu 2005/31/EK)            | regions: the directive                                       |
 | Latvia's law gives this limit for the inhalable fraction of the dust. | Latvijas tiesību akti šo robežvērtību nosaka putekļu ieelpojamajai frakcijai.       | regions: Latvia                                              |

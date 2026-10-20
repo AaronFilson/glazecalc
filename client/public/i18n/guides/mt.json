@@ -73,7 +73,7 @@
     "shopsIn": "Ħwienet:",
     "label": "Ħwienet: {region}",
     "caption": "Xi ħwienet li jbigħu materji primi għall-glejż: {region} (iċċekkjat: {date})",
-    "nearbyCaption": "Ħwienet f’pajjiżi oħra li jgħidu li jwasslu f’dan il-pajjiż: {region} (iċċekkjat: {date})",
+    "nearbyCaption": "Ħwienet f’postijiet oħra li jgħidu li jwasslu wkoll hawn: {region} (iċċekkjat: {date})",
     "shop": "Ħanut",
     "sells": "Ibigħ",
     "packs": "Daqsijiet tal-pakketti li rajna",
@@ -88,7 +88,7 @@
       "kilns": "fran"
     },
     "none": "Ma sibna l-ebda ħanut li jbigħ materji primi għall-glejż ({region}).",
-    "unknown": "Għadna ma fittixniex ħwienet f’dan il-pajjiż ({region}).",
+    "unknown": "Għadna ma fittixniex ħwienet ({region}).",
     "choosePrompt": "Agħżel il-pajjiż tiegħek biex tara l-ħwienet hemmhekk."
   },
   "silica": {

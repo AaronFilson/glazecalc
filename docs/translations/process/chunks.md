@@ -36,7 +36,7 @@ In each path, `<code>` is your language's code. Paths are under {REPO}.
   text), the limits on lead and cadmium a glazed piece may release (`food`: safety text; the kinds of piece in
   `food.category` follow your language's official text of Directive 84/500/EEC where it names them) and the closest
   materials sold where the potter buys (`equivalents`, whose `{library}` select takes a code: keep its branches).
-  `{region}` is a country's name in the page's language: write each sentence so it reads with any country.
+  `{region}` is a country's or region's name in the page's language (Hong Kong is a region, not a country): write each sentence so it reads with any of them, and never call {region} a country.
 - `client/public/i18n/server/en.json` → `client/public/i18n/server/<code>.json` (63): the server's messages, shown as
   plain text (no tags). The `…-choices` messages answer a setting saved with a value not on its list.
 - `client/public/i18n/chemistry/en.json` → `client/public/i18n/chemistry/<code>.json` (21): the calculation's errors
