@@ -92,6 +92,49 @@ describe('account emails', () => {
     expect(sent.map((message) => message.subject)).to.eql(subjects);
   });
 
+  it('should set an email in a right-to-left language right to left, line by line, and others as they are', async () => {
+    const accountMail = await import('../lib/account_mail.ts');
+    const mail = await import('./support/mail.ts');
+    const RLM = String.fromCharCode(0x200f);
+    // Arabic is not translated yet: a test translation, as e2e/fixtures/ar.json is for the pages.
+    accountMail.RESET['ar'] = {
+      subject: 'إعادة تعيين كلمة مرور Glazecalc',
+      text:
+        '{account}: طلب أحدهم إعادة تعيين كلمة المرور لحساب Glazecalc هذا.\n\n' +
+        'افتح هذا الرابط خلال {minutes} دقيقة:\n\n' +
+        '{link}\n' +
+        '\n-- \nGlazecalc, {app}\n'
+    };
+    try {
+      const address = 'arabic-' + Date.now() + '@test.com';
+      await accountMail.sendReset(address, 'abc123', 30, 'ar');
+      await accountMail.sendReset(address, 'abc123', 30, 'de');
+      // An account in Arabic whose email has no translation yet gets the English, left to right.
+      await accountMail.sendChanged(address, 'ar');
+      const [arabic, german, english] = await mail.waitFor(address, 3);
+      expect(arabic!.subject).to.equal(RLM + 'إعادة تعيين كلمة مرور Glazecalc');
+      const lines = arabic!.text.split('\n');
+      // Each line of text starts right to left, even one that starts with an address or a link.
+      for (const line of lines.filter((line) => line.trim() && line !== '-- ')) {
+        expect(line.startsWith(RLM), line).to.equal(true);
+      }
+      expect(lines[0]).to.equal(RLM + address + ': طلب أحدهم إعادة تعيين كلمة المرور لحساب Glazecalc هذا.');
+      expect(lines).to.include(RLM + 'https://glazecalc.test/ar/reset#token=abc123');
+      // The signature's line stays as mail programs know it, and empty lines stay empty.
+      expect(arabic!.text.endsWith('\n\n-- \n' + RLM + 'Glazecalc, https://glazecalc.test\n')).to.equal(true);
+      expect(mail.tokenIn(arabic!)).to.equal('abc123');
+      for (const ltr of [german!, english!]) {
+        expect(ltr.subject + ltr.text).not.to.include(RLM);
+      }
+      expect(english!.subject).to.equal('Your Glazecalc password was changed');
+    } finally {
+      delete accountMail.RESET['ar'];
+    }
+    expect(accountMail.inDirection({ to: 'a@b.c', subject: 'S', text: 'x\n\ny\n-- \nz\n' }, 'ar-XD').text).to.equal(
+      RLM + 'x\n\n' + RLM + 'y\n-- \n' + RLM + 'z\n'
+    );
+  });
+
   it('should give every translation the values and signature of the English', async () => {
     const { RESET, CHANGED, DELETED } = await import('../lib/account_mail.ts');
     const values = (text: string) => [...text.matchAll(/\{(\w+)\}/g)].map((match) => match[1]).sort();

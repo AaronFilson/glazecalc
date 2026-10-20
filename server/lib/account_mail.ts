@@ -976,6 +976,29 @@ export const BACKUP_DAYS = 30;
 const inLanguage = (emails: Record<string, Email>, language?: string): Email =>
   (language && emails[language]) || emails['en']!;
 
+/** The language an email goes in: the account's, where the emails are translated into it, or English. */
+const writtenIn = (emails: Record<string, unknown>, language?: string): string =>
+  language && emails[language] ? language : 'en';
+
+/** The right-to-left mark: an invisible letter that reads right to left. */
+const RLM = '\u200f';
+
+/**
+ * A plain-text email as it goes in its language. In a right-to-left one (Arabic, Urdu) the subject and each
+ * paragraph, each line of text, start with a right-to-left mark, so a mail program sets them right to left
+ * even where a line starts with an address, a name or a link (docs/i18n-plan.md, "Right to left"); the
+ * signature's "-- " line stays as it is, so mail programs still know it. Any other language's as it is.
+ */
+export const inDirection = (message: mailer.Message, language: string): mailer.Message => {
+  if (languages.languageFor(language)?.dir !== 'rtl') return message;
+  const marked = (line: string) => (line.trim() && line !== '-- ' ? RLM + line : line);
+  return { ...message, subject: RLM + message.subject, text: message.text.split('\n').map(marked).join('\n') };
+};
+
+/** Sends an email written in a language, as that language's direction needs (inDirection). */
+const sendIn = (language: string, message: mailer.Message): Promise<void> =>
+  mailer.send(inDirection(message, language));
+
 /** An email's text with its values in. */
 const fill = (text: string, values: Record<string, string | number>): string =>
   text.replace(/\{(\w+)\}/g, (_, name: string) => String(values[name]));
@@ -986,7 +1009,7 @@ const pageIn = (language: string | undefined, page: string): string =>
 
 export const sendReset = (to: string, token: string, minutes: number, language?: string): Promise<void> => {
   const email = inLanguage(RESET, language);
-  return mailer.send({
+  return sendIn(writtenIn(RESET, language), {
     to,
     subject: email.subject,
     // The token is after the #, so it stays in the browser: it never reaches
@@ -1002,7 +1025,7 @@ export const sendReset = (to: string, token: string, minutes: number, language?:
 
 export const sendChanged = (to: string, language?: string): Promise<void> => {
   const email = inLanguage(CHANGED, language);
-  return mailer.send({
+  return sendIn(writtenIn(CHANGED, language), {
     to,
     subject: email.subject,
     text: fill(email.text, { account: to, forgot: pageIn(language, '/forgot'), app: mailer.appUrl() })
@@ -1011,7 +1034,7 @@ export const sendChanged = (to: string, language?: string): Promise<void> => {
 
 export const sendDeleted = (to: string, language?: string): Promise<void> => {
   const email = inLanguage(DELETED, language);
-  return mailer.send({
+  return sendIn(writtenIn(DELETED, language), {
     to,
     subject: email.subject,
     text: fill(email.text, { account: to, days: BACKUP_DAYS, app: mailer.appUrl() })
@@ -2179,7 +2202,7 @@ export const CHANGE_NOTICE: Record<string, Email> = {
 /** Whole hours a link works for, as the emails say. */
 export const sendVerify = (to: string, token: string, hours: number, language?: string): Promise<void> => {
   const email = inLanguage(VERIFY, language);
-  return mailer.send({
+  return sendIn(writtenIn(VERIFY, language), {
     to,
     subject: email.subject,
     // After the #, like a reset link's token, so it stays in the browser.
@@ -2194,7 +2217,7 @@ export const sendVerify = (to: string, token: string, hours: number, language?: 
 
 export const sendConfirmChange = (to: string, token: string, hours: number, language?: string): Promise<void> => {
   const email = inLanguage(CONFIRM_CHANGE, language);
-  return mailer.send({
+  return sendIn(writtenIn(CONFIRM_CHANGE, language), {
     to,
     subject: email.subject,
     text: fill(email.text, {
@@ -2208,7 +2231,7 @@ export const sendConfirmChange = (to: string, token: string, hours: number, lang
 
 export const sendChangeNotice = (to: string, language?: string): Promise<void> => {
   const email = inLanguage(CHANGE_NOTICE, language);
-  return mailer.send({
+  return sendIn(writtenIn(CHANGE_NOTICE, language), {
     to,
     subject: email.subject,
     text: fill(email.text, { account: to, forgot: pageIn(language, '/forgot'), app: mailer.appUrl() })
@@ -4580,7 +4603,7 @@ export const methodIn = (method: MfaMethod, language?: string): string => {
 
 const sendMfaChange = (emails: Record<string, Email>, to: string, method: MfaMethod, language?: string) => {
   const email = inLanguage(emails, language);
-  return mailer.send({
+  return sendIn(writtenIn(emails, language), {
     to,
     subject: email.subject,
     text: fill(email.text, {
@@ -4600,7 +4623,7 @@ export const sendMfaRemoved = (to: string, method: MfaMethod, language?: string)
 
 export const sendRecoveryUsed = (to: string, left: number, language?: string): Promise<void> => {
   const email = inLanguage(RECOVERY_USED, language);
-  return mailer.send({
+  return sendIn(writtenIn(RECOVERY_USED, language), {
     to,
     subject: email.subject,
     text: fill(email.text, {
@@ -4615,7 +4638,7 @@ export const sendRecoveryUsed = (to: string, left: number, language?: string): P
 
 export const sendRecoveryNew = (to: string, language?: string): Promise<void> => {
   const email = inLanguage(RECOVERY_NEW, language);
-  return mailer.send({
+  return sendIn(writtenIn(RECOVERY_NEW, language), {
     to,
     subject: email.subject,
     text: fill(email.text, { account: to, forgot: pageIn(language, '/forgot'), app: mailer.appUrl() })
@@ -4624,7 +4647,7 @@ export const sendRecoveryNew = (to: string, language?: string): Promise<void> =>
 
 export const sendMfaOff = (to: string, language?: string): Promise<void> => {
   const email = inLanguage(MFA_OFF, language);
-  return mailer.send({
+  return sendIn(writtenIn(MFA_OFF, language), {
     to,
     subject: email.subject,
     text: fill(email.text, { account: to, forgot: pageIn(language, '/forgot'), app: mailer.appUrl() })
@@ -4633,7 +4656,7 @@ export const sendMfaOff = (to: string, language?: string): Promise<void> => {
 
 export const sendSecondStepUnfinished = (to: string, language?: string): Promise<void> => {
   const email = inLanguage(SECOND_STEP_UNFINISHED, language);
-  return mailer.send({
+  return sendIn(writtenIn(SECOND_STEP_UNFINISHED, language), {
     to,
     subject: email.subject,
     text: fill(email.text, { account: to, forgot: pageIn(language, '/forgot'), app: mailer.appUrl() })
@@ -4649,7 +4672,7 @@ export const sendMfaClearNotice = (to: string, offDate: Date, language?: string)
   const email = inLanguage(MFA_CLEAR_NOTICE, language);
   // The date in the email's own language: English where the email falls back to it.
   const dateLanguage = language && MFA_CLEAR_NOTICE[language] ? language : 'en';
-  return mailer.send({
+  return sendIn(writtenIn(MFA_CLEAR_NOTICE, language), {
     to,
     subject: email.subject,
     text: fill(email.text, {
@@ -5789,7 +5812,7 @@ export const sendResetDone = (to: string, stopped: ResetStopped, language?: stri
     stopped.providers.length ? email.providers : '',
     stopped.shareLinks ? email.shareLinks : ''
   ].join('');
-  return mailer.send({
+  return sendIn(writtenIn(RESET_STOPPED, language), {
     to,
     subject: email.subject,
     text: fill(email.opening + email.stopped + lines + email.closing, values)
@@ -5798,7 +5821,7 @@ export const sendResetDone = (to: string, stopped: ResetStopped, language?: stri
 
 const sendProviderChange = (emails: Record<string, Email>, to: string, provider: string, language?: string) => {
   const email = inLanguage(emails, language);
-  return mailer.send({
+  return sendIn(writtenIn(emails, language), {
     to,
     subject: email.subject,
     text: fill(email.text, {
@@ -6700,7 +6723,7 @@ const sendTokenMail = (
   const email = inLanguage(emails, language);
   // The date in the email's own language: English where the email falls back to it.
   const dateLanguage = language && emails[language] ? language : 'en';
-  return mailer.send({
+  return sendIn(writtenIn(emails, language), {
     to,
     subject: email.subject,
     text: fill(email.text, {
@@ -7431,7 +7454,7 @@ export const sendConnectionMade = (to: string, connection: ConnectionMade, langu
     fill(connection.writeDays ? email.write : email.read, values),
     fill(email.closing, values)
   ];
-  return mailer.send({ to, subject: email.subject, text: parts.join('') });
+  return sendIn(writtenIn(CONNECTION_MADE, language), { to, subject: email.subject, text: parts.join('') });
 };
 
 /**
@@ -7898,7 +7921,7 @@ export const sendConfirmLoosened = (
 ): Promise<void> => {
   const email = inLanguage(CONFIRM_LOOSENED, language);
   const choices = (language && CONFIRM_LOOSENED[language] && CONFIRM_CHOICES[language]) || CONFIRM_CHOICES['en']!;
-  return mailer.send({
+  return sendIn(writtenIn(CONFIRM_LOOSENED, language), {
     to,
     subject: email.subject,
     text: fill(email.text, {
