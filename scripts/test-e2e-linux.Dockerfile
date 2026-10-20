@@ -14,7 +14,9 @@ RUN ln -sf ../lib/node_modules/npm/bin/npm-cli.js /usr/local/bin/npm \
 # Japanese, Chinese and Korean (Noto Sans and Serif CJK) and a Thai serif
 # (Laksaman), which client/styles.scss names, so those pages and the pseudo-locale
 # ja-XC show their letters and not empty boxes. The image has only a Japanese
-# sans (IPAGothic) and a Thai sans (Loma).
+# sans (IPAGothic) and a Thai sans (Loma). Noto's core fonts for Arabic (Noto
+# Naskh Arabic), Devanagari and Bengali, likewise, for the pseudo-locales ar-XD
+# and hi-XE and the languages to come.
 RUN apt-get update \
-  && apt-get install -y --no-install-recommends fonts-noto-cjk fonts-tlwg-laksaman-otf \
+  && apt-get install -y --no-install-recommends fonts-noto-cjk fonts-tlwg-laksaman-otf fonts-noto-core \
   && rm -rf /var/lib/apt/lists/*
