@@ -173,8 +173,7 @@ works).
     git clone https://github.com/AaronFilson/glazecalc.git
     cd glazecalc
     npm install
-    mkdir db
-    mongod --dbpath ./db              # in a second terminal; leave it running
+    npm run db                        # MongoDB on ./db, in a second terminal; leave it running
     npm run seed                      # standard materials, additives and advice
     npm run dev                       # then open http://localhost:3000
 

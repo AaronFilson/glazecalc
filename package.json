@@ -8,6 +8,7 @@
     "build": "node scripts/advice-i18n.mjs && ng build && node scripts/prerender.mjs",
     "watch": "node scripts/advice-i18n.mjs && ng build --watch --configuration development",
     "dev": "node scripts/run.mjs dev",
+    "db": "node --env-file-if-exists=.env scripts/db.mjs",
     "prestart": "npm run build",
     "start": "node --env-file-if-exists=.env server/main.ts",
     "lint": "eslint .",
