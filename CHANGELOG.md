@@ -6,6 +6,23 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Added
 
+- **Ready for Arabic, Urdu, Hindi and Bengali** (docs/i18n-plan.md, "Right to left"; no new
+  language is offered yet). Two pseudo-locales test it on every page: `/ar-XD/` writes each
+  message in Arabic letters, right to left, with all six of Arabic's plural forms and Arabic-Indic
+  digits, so the browser's own bidirectional rules run as they will for Arabic; `/hi-XE/` writes
+  them in Devanagari, stacked and marked above and below. On a right-to-left page, values with
+  Latin units read left to right as a whole ("1240 °C", not "C° 1240"), names of recipes,
+  materials, notes and apps are kept apart from the text around them, arrows point the way the
+  text reads, emails, codes, links and numbers are typed left to right, and a guide's web
+  addresses and formulas stay left to right. Bootstrap's sides are mirrored for the parts the app
+  uses (1.7 kB of stylesheet), the Stull chart stays left to right, and the blends grid mirrors
+  with its corners named where they are drawn. Fonts: the system's own for Arabic (Segoe UI, Noto
+  Naskh Arabic, Geeza Pro), Hindi and Bengali (Nirmala UI, Kohinoor, Noto Sans), in taller lines,
+  never spaced out or slanted; Urdu's Nastaliq is served with the app (Noto Nastaliq Urdu, OFL, cut
+  to Urdu's letters, 193 kB) and fetched by Urdu pages only. Emails in a right-to-left language
+  start each line with a right-to-left mark. The Linux browser tests' image adds Noto's core fonts
+  (Arabic, Devanagari, Bengali). English only.
+
 - **Confirm before changes** (docs/adr/0025-confirm-before-changes.md). On Connected apps, an
   account can choose that changes from assistants, apps and access tokens wait for its approval:
   never (the default), only removals, or every change. It holds back an assistant that misbehaves

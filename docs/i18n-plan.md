@@ -471,6 +471,52 @@ What the EU work should do now so this is cheap later: the right-to-left groundw
 `intl-messageformat` for plurals, BCP 47 tags with room for scripts, and the region list as data rather than a fixed
 set of EU countries.
 
+### Right to left, as built (Indian subcontinent and Arabic plan, Phase A)
+
+Ready before any right-to-left language is offered (owner decisions of 2026-10-20: Arabic and Hindi first, then Urdu
+and Bengali; units in Latin, left to right; Noto Nastaliq Urdu served for Urdu pages only).
+
+- **Testing it.** `/ar-XD/` is the right-to-left pseudo-locale with real Arabic letters, all six of Arabic's plural
+  forms and Arabic-Indic digits (`ar-u-nu-arab`), so the browser's own bidirectional rules run as they will for Arabic.
+  `/ar-XB/` only reverses Latin text, which hides those bugs. `/hi-XE/` writes Devanagari, stacked and marked above and
+  below, for Hindi's fonts and line heights. Both keep in Latin what a translation keeps: acronyms (SK, LOI), units,
+  formulas, names and web addresses. The browser tests run every page in both at a phone's width
+  (`e2e/languages.spec.js`, `e2e/pseudo.spec.js`) and at 320 px with the accessibility checks (`e2e/rtl.spec.js`).
+- **Bootstrap.** The app compiles only the parts of Bootstrap it uses, with physical sides. `client/bootstrap.scss`
+  mirrors those it uses under `:where([dir='rtl'])`, at the specificity of the rules they mirror, so the app's own
+  styles still win; input and button groups round their corners by start and end. 1.7 kB, against about 75 kB for a
+  second whole build. A new Bootstrap part with left or right in it needs its mirror there.
+- **The app's own styles** use logical properties only (`margin-inline-start`, `inset-inline-start`,
+  `text-align: start`); check a new one with `/ar-XD/`.
+- **Values and names in text** (`client/app/shared/bidi.ts`). On a right-to-left page, a value with a Latin unit is a
+  left-to-right isolate (U+2066…2069) as a whole: temperatures, weights and rates from `shared/format.ts` and
+  `shared/weights.ts`, and in every message the transpiler writes, "1240 °C", "5–10 g", "SK 6a" and "per °C",
+  whoever wrote them. A message's values with letters in them (a name, a cone) are first-strong isolates, as `<bdi>`;
+  numbers are left to take the sentence's direction. In templates, names of recipes, materials, notes, logs, apps,
+  tokens and passkeys sit in `<bdi>`; in an `<option>`, where `<bdi>` cannot go, `| gcIsolated`. A `<bdi>` next to
+  other inline content needs `&ngsp;` where a space was, as Angular drops whitespace between elements.
+- **Arrows.** Translations keep → as the English has it; on a right-to-left page the transpiler writes ← (the
+  direction the text reads). Values are left alone. An arrow in a template uses `forwardArrow()`.
+- **Fields.** Emails, one-time codes, recovery codes, tokens, share links and every number box (`gcNumber`) are
+  `dir="ltr"`; a placeholder in them still reads from the right. Names and notes being typed, and code, take the
+  direction of their own first letter (`unicode-bidi: plaintext`); notes and advice shown take their own (`dir="auto"`).
+- **Pictures with a direction.** The Stull chart stays left to right (silica grows to the right). The blends grid
+  mirrors, so a corner's name is the side where it is drawn (`sideAsSeen`), as are the firing log's Move left and right.
+- **Guides.** Web addresses and formulas in a guide's text are left-to-right isolates; temperatures and densities as
+  the values above; code takes its own direction.
+- **Emails.** Plain text has no `dir`: an email written in a right-to-left language starts its subject and every line
+  with a right-to-left mark (U+200F), the signature's `-- ` line apart (`server/lib/account_mail.ts`, `inDirection`).
+  There are no HTML emails.
+- **Fonts** (`client/styles.scss`, `$gc-script-fonts`). The system's own for Arabic (Segoe UI, Noto Naskh Arabic,
+  Geeza Pro), Hindi (Nirmala UI, Kohinoor Devanagari, Noto Sans Devanagari) and Bengali (Nirmala UI, Kohinoor Bangla,
+  Noto Sans Bengali), never synthesized italics, never letter-spacing; lines 1.75 high for Devanagari and Bengali, and
+  headings 1.45 (Arabic headings 1.4). Urdu is Nastaliq, which few devices have: Noto Nastaliq Urdu 3.007 is served,
+  cut to Urdu's letters (193 kB, weights 400–700), named only in Urdu's font list so no other page fetches it, not
+  preloaded, in lines 1.9 high. The CSP's `font-src 'self'` covers it. The Linux test image installs `fonts-noto-core`.
+- **Still to do with the languages themselves:** pinned digits and calendars for each region (Phase A1), the
+  any-script parser for lakh grouping and Arabic separators (A2, A3), and `/ar/`, `/hi/`, `/ur/` and `/bn/` pages
+  prerendered for their regions.
+
 ## What stays the same
 
 - English is the source and the fallback.
