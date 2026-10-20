@@ -118,6 +118,7 @@ describe('signedInGuard and visitorsOnlyGuard', () => {
       'material',
       'notes',
       'recipe',
+      'solve',
       'trash'
     ]);
   });
