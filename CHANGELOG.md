@@ -814,6 +814,14 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Changed
 
+- **Assistants ask you to sign in when they need your records** (docs/adr/0024, "Amended: sign-in
+  when a tool needs it"). Without a token, the MCP endpoint now lists the tools that read and change
+  your own records too, with the same titles and hints; calling one answers HTTP 401 with the
+  challenge that sends the app to Glazecalc's sign-in and consent page (`data:read`, and
+  `data:write` too for a tool that changes records, still unticked on the page). Claude starts
+  sign-in only on such a 401, so before this a Claude custom connector never offered to connect.
+  The public tools still need nothing. Server instructions say so. The directory submissions are
+  prepared in `docs/integrations/directories.md`.
 - **A match says how near it comes, and keeps raw clay where its own check wants it**
   (docs/adr/0012, "Amended: how near a match comes"). In a staging test an assistant asked to
   replace Gerstley Borate read `match_from_materials`' score (a miss of 20.5) as a wide miss and

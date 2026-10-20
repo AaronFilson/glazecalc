@@ -2,19 +2,23 @@
 // each request, as the SDK's stateless serving makes one, with the public tools,
 // the guides (a tool and resources), the cone charts and materials as resources,
 // and the prompts always, and a person's own tools, to read and to change their
-// records, only when the request carried a working token (server/mcp/auth.ts
-// puts who it is in authInfo.extra; each tool that changes anything checks
-// that the token allows it, and waits for the person's approval when the
-// account asks for it, tools/account_write.ts).
+// records, working only when the request carried a working token
+// (server/mcp/auth.ts puts who it is in authInfo.extra; each tool that changes
+// anything checks that the token allows it, and waits for the person's
+// approval when the account asks for it, tools/account_write.ts). Without a
+// token those are listed all the same, so that an app knows they exist and,
+// when one is called, asks the person to sign in (auth.ts signIn answers such
+// a call 401 before the SDK: lazy authentication, docs/adr/0024).
 import { McpServer, type McpRequestContext, type RegisteredTool } from '@modelcontextprotocol/server';
-import type { Caller } from './common.ts';
+import { type Caller, fail } from './common.ts';
 import { registerPrompts } from './prompts.ts';
 import { requestStateCodec } from './request_state.ts';
-import { registerAccountTools } from './tools/account.ts';
+import { ACCOUNT_TOOLS, registerAccountTools } from './tools/account.ts';
 import { registerWriteTools, WRITE_TOOLS } from './tools/account_write.ts';
 import { registerBlendTools } from './tools/blends.ts';
 import { registerGuides } from './tools/guides.ts';
 import { registerPublicTools } from './tools/public.ts';
+import { signInChallenge } from './urls.ts';
 
 export const SERVER_INFO = {
   name: 'glazecalc',
@@ -35,7 +39,7 @@ const INSTRUCTIONS =
   'section in full (glazecalc://guides/<language>/<guide>[/<section>]), a material (glazecalc://materials/<name>) ' +
   'and the cone charts (glazecalc://cones). With a personal access token, or once the person has connected ' +
   'this app to their account, the tools whose names say "my" or list_recipes read the person\'s own saved ' +
-  'records. create_recipe, update_recipe, add_notebook_entry, add_my_material, update_my_material, add_to_shelf, ' +
+  'records; without either, calling one of them asks the person to sign in to Glazecalc. create_recipe, update_recipe, add_notebook_entry, add_my_material, update_my_material, add_to_shelf, ' +
   'remove_from_shelf, undo_shelf_change and move_to_trash change them, and only when the person allowed changes; otherwise they ' +
   'are refused and change nothing. Change only what the person asked for, and tell them what you changed: each ' +
   'change keeps the record as it was, so they can undo it on the website, and move_to_trash puts a record in ' +
@@ -57,19 +61,6 @@ export const callerOf = (ctx: McpRequestContext): Caller => {
     ...(typeof extra.clientId === 'string' && { clientId: extra.clientId })
   };
 };
-
-/** The tools that read the person's own records (tools/account.ts). */
-const ACCOUNT_TOOLS = new Set([
-  'list_recipes',
-  'get_recipe',
-  'list_my_materials',
-  'get_shelf',
-  'match_with_what_i_have',
-  'list_firings',
-  'get_firing',
-  'list_notes',
-  'get_my_settings'
-]);
 
 /**
  * How each tool may be called, as OpenAI's Apps SDK reads it from the tool's
@@ -94,6 +85,35 @@ const withSecuritySchemes = (server: McpServer): void => {
   };
 };
 
+/**
+ * Without a token: the person's own tools, listed as they are with one (the
+ * same names, descriptions, schemas and annotations, registered by the same
+ * code for a caller that may do everything), so an app sees them and, calling
+ * one, is asked to sign in. auth.ts signIn answers such a call 401 before the
+ * SDK; the handler here, which never reaches a record, is only the fallback,
+ * with the challenge where ChatGPT looks for it in a tool's result.
+ */
+const registerSignInTools = (server: McpServer): void => {
+  const listing: Caller = {
+    key: 'listing',
+    userId: 'listing',
+    tokenId: 'listing',
+    scopes: ['data:read', 'data:write']
+  };
+  const standIns = new Proxy(server, {
+    get: (target, key, receiver) =>
+      key === 'registerTool'
+        ? (name: string, config: unknown) =>
+            (target.registerTool as (...args: unknown[]) => RegisteredTool)(name, config, () => ({
+              ...fail('Sign in to Glazecalc to use this tool: it reads or changes your own records.'),
+              _meta: { 'mcp/www_authenticate': [signInChallenge(WRITE_TOOLS.has(name))] }
+            }))
+        : Reflect.get(target, key, receiver)
+  });
+  registerAccountTools(standIns, listing);
+  registerWriteTools(standIns, listing);
+};
+
 export const makeServer = (ctx: McpRequestContext): McpServer => {
   const caller = callerOf(ctx);
   const server = new McpServer(SERVER_INFO, {
@@ -112,7 +132,11 @@ export const makeServer = (ctx: McpRequestContext): McpServer => {
   registerBlendTools(server);
   registerGuides(server);
   registerPrompts(server);
-  registerAccountTools(server, caller);
-  registerWriteTools(server, caller);
+  if (caller.userId) {
+    registerAccountTools(server, caller);
+    registerWriteTools(server, caller);
+  } else {
+    registerSignInTools(server);
+  }
   return server;
 };

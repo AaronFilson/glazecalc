@@ -231,6 +231,9 @@ apps connected with OAuth tokens for this endpoint alone. What changes here:
   the Trash; every tool carries `_meta.securitySchemes` for ChatGPT.
 - "OAuth clients cannot write yet" and "the chat apps get only the public tools until Phase 4",
   above, no longer hold once the consent page ships.
+- "Without a token the list has only the public tools", above, no longer holds (2026-10-20, ADR 24
+  "Amended: sign-in when a tool needs it"): every tool is listed, and a call to one of the
+  person's own with no token is answered 401 so the app asks the person to sign in.
 
 ## Amended: confirm before changes
 

@@ -16,7 +16,7 @@ import { ipKeyGenerator } from 'express-rate-limit';
 import * as log from '../lib/log.ts';
 import * as limits from '../lib/rate_limit.ts';
 import * as site from '../lib/site.ts';
-import { mcpAuth, resourceMetadata, rpcError, stepUp } from './auth.ts';
+import { mcpAuth, resourceMetadata, rpcError, signIn, stepUp } from './auth.ts';
 import { makeServer } from './server.ts';
 
 /** The largest request body taken: far more than 40 recipe lines need. */
@@ -165,6 +165,7 @@ mcpRouter.post(
   limits.mcpDay,
   express.json({ limit: MOST_BODY }),
   refuseBatches,
+  signIn,
   stepUp,
   async (req, res) => {
     const caller = req.mcpCaller!;
