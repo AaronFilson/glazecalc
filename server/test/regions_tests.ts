@@ -78,6 +78,15 @@ describe('regions', () => {
     expect(written(regions.formatLocaleFor('zh-Hant', 'IE', 'auto'))).not.to.equal(written('zh-IE'));
   });
 
+  it('writes the pseudo-Arabic in Arabic-Indic digits, whatever the browser takes bare Arabic to mean', () => {
+    expect(regions.formatLocaleFor('ar-XD', '', 'auto')).to.equal('ar-u-nu-arab');
+    expect(regions.formatLocaleFor('ar-XD', 'DE', 'auto', 'japanese')).to.equal('ar-DE-u-ca-japanese-nu-arab');
+    expect(new Intl.NumberFormat(regions.formatLocaleFor('ar-XD', '', 'auto')).format(1240.5)).to.equal('١٬٢٤٠٫٥');
+    // A format chosen in Settings is the reader's own; the pseudo-Hindi keeps Hindi's 0-9.
+    expect(regions.formatLocaleFor('ar-XD', '', 'en-GB')).to.equal('en-GB');
+    expect(regions.formatLocaleFor('hi-XE', '', 'auto')).to.equal('hi');
+  });
+
   it('writes Thai dates in the Gregorian calendar, Western digits, until the Calendar setting exists', () => {
     const date = new Date(2026, 9, 16);
     const year = (locale: string) => new Intl.DateTimeFormat(locale, { year: 'numeric' }).format(date);
