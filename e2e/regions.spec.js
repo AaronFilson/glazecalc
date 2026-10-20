@@ -151,9 +151,10 @@ test.describe('a potter in Taiwan', () => {
 
     await page.goto('/guides/safe-mixing');
     const silica = page.locator('gc-silica-limit');
-    await expect(silica.locator('tbody td')).toHaveText(['0.1 mg/m³']);
+    // The limit until 2027 (verified on 2026-10-19), then the 2027 one, each under its dates.
+    await expect(silica.locator('tbody td')).toHaveText(['10 / (Q + 2) mg/m³', '0.098 mg/m³', '0.1 mg/m³']);
     await expect(silica).toContainText('It applies from January 1, 2027.');
-    await expect(silica).toContainText('Until 31 December 2026 an earlier table applies');
+    await expect(silica).toContainText('Until 31 December 2026 the limit is for the whole respirable dust');
     await accessible(page);
 
     await page.goto('/guides/glazing-basics');
@@ -163,6 +164,101 @@ test.describe('a potter in Taiwan', () => {
     // Korea's, chosen to look at: no national poison line, and its five kinds of piece.
     await food.getByLabel('Rules in', { exact: true }).selectOption('KR');
     await expect(food.locator('tbody tr')).toHaveCount(5);
+    const overflow = await page.evaluate(() => globalThis.document.documentElement.scrollWidth - globalThis.innerWidth);
+    expect(overflow).toBeLessThanOrEqual(0);
+    await accessible(page);
+  });
+});
+
+test.describe('a potter in India', () => {
+  test.beforeEach(async ({ page }) => {
+    await page.addInitScript(() => globalThis.localStorage.setItem('preferredRegion', 'IN'));
+  });
+
+  test('is shown the poison centre, that each state sets the silica limit, and two shops, at phone width', async ({
+    page
+  }) => {
+    // Several pages or checks of a whole page: more than the default 30 seconds on a busy machine.
+    test.setTimeout(60000);
+    await page.setViewportSize({ width: 375, height: 800 });
+    await page.goto('/guides/home-safety');
+    const lines = page.locator('gc-poison-lines');
+    await expect(lines.locator('a[href="tel:112"]')).toBeVisible();
+    await expect(lines.locator('a[href="tel:1800116117"]')).toHaveText('1800 116 117');
+    await expect(lines.locator('a[href="tel:+911126589391"]')).toHaveText(/^011\s2658\s9391$/);
+    await expect(lines).toContainText('24 hours, every day, toll free');
+    await accessible(page);
+
+    await page.goto('/guides/safe-mixing');
+    const silica = page.locator('gc-silica-limit');
+    await expect(silica.locator('table')).toHaveCount(0);
+    await expect(silica).toContainText('We have not yet confirmed the limit in India.');
+    await expect(silica).toContainText('each state sets the limits for its own factories');
+    await expect(
+      silica.getByRole('link', { name: /Directorate General Occupational Safety and Health/ })
+    ).toBeVisible();
+    await accessible(page);
+
+    await page.goto('/guides/making-a-glaze');
+    const shops = page.locator('gc-shops');
+    await expect(shops.getByRole('link', { name: 'Bhoomi Pottery' })).toHaveAttribute(
+      'href',
+      /^https:\/\/in\.bhoomi\.com\//
+    );
+    // Nothing on the page is wider than the phone.
+    const overflow = await page.evaluate(() => globalThis.document.documentElement.scrollWidth - globalThis.innerWidth);
+    expect(overflow).toBeLessThanOrEqual(0);
+    await accessible(page);
+  });
+});
+
+test.describe('a potter in Morocco', () => {
+  test.beforeEach(async ({ page }) => {
+    await page.addInitScript(() => globalThis.localStorage.setItem('preferredRegion', 'MA'));
+  });
+
+  test("is shown the poison centre's two numbers at phone width, and on French pages too", async ({ page }) => {
+    // Several pages or checks of a whole page: more than the default 30 seconds on a busy machine.
+    test.setTimeout(60000);
+    await page.setViewportSize({ width: 375, height: 800 });
+    await page.goto('/guides/home-safety');
+    const lines = page.locator('gc-poison-lines');
+    await expect(lines.locator('a[href="tel:141"]')).toBeVisible();
+    await expect(lines.locator('a[href="tel:0801000180"]')).toHaveText('0801 000 180');
+    await expect(lines.locator('a[href="tel:+212537686464"]')).toHaveText(/^05\s37\s68\s64\s64$/);
+    await expect(lines).toContainText('The call costs the same as a local call');
+    const overflow = await page.evaluate(() => globalThis.document.documentElement.scrollWidth - globalThis.innerWidth);
+    expect(overflow).toBeLessThanOrEqual(0);
+    await accessible(page);
+
+    // Morocco lists French: a French page shows its numbers, their notes in English until translated.
+    await page.goto('/fr/guides/home-safety');
+    await expect(page.locator('gc-poison-lines a[href="tel:0801000180"]')).toBeVisible();
+  });
+});
+
+test.describe('a potter in Algeria', () => {
+  test.beforeEach(async ({ page }) => {
+    await page.addInitScript(() => globalThis.localStorage.setItem('preferredRegion', 'DZ'));
+  });
+
+  test("is shown 14, and the 2019 order's ceramic limits with its rule for a piece up to 50% over, at phone width", async ({
+    page
+  }) => {
+    // Several pages or checks of a whole page: more than the default 30 seconds on a busy machine.
+    test.setTimeout(60000);
+    await page.setViewportSize({ width: 375, height: 800 });
+    await page.goto('/guides/home-safety');
+    const lines = page.locator('gc-poison-lines');
+    await expect(lines.locator('a[href="tel:14"]')).toBeVisible();
+    await expect(lines).toContainText('Civil protection (Protection civile)');
+    await accessible(page);
+
+    await page.goto('/guides/glazing-basics');
+    const food = page.locator('gc-food-limits');
+    await expect(food.locator('tbody tr')).toHaveCount(3);
+    await expect(food).toContainText('16 janvier 2019');
+    await expect(food).toContainText('at least three more pieces of the same shape');
     const overflow = await page.evaluate(() => globalThis.document.documentElement.scrollWidth - globalThis.innerWidth);
     expect(overflow).toBeLessThanOrEqual(0);
     await accessible(page);
