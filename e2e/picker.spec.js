@@ -132,7 +132,8 @@ for (const [where, viewport] of Object.entries({
       await expect(field).toHaveAttribute('aria-expanded', 'true');
       const before = await field.getAttribute('aria-activedescendant');
       await field.press('ArrowDown');
-      expect(await field.getAttribute('aria-activedescendant')).not.toBe(before);
+      // Asked until the page has drawn the key's move: read at once, it can still be the one before.
+      await expect(field).not.toHaveAttribute('aria-activedescendant', before);
       // Escape closes it and leaves the choice as it was; the page itself (no menu here) is not touched.
       await field.press('Escape');
       await expect(field).toHaveAttribute('aria-expanded', 'false');
