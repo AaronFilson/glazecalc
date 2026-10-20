@@ -19,7 +19,7 @@ import { registerPublicTools } from './tools/public.ts';
 export const SERVER_INFO = {
   name: 'glazecalc',
   title: 'Glazecalc',
-  version: '1.1.0',
+  version: '1.2.0',
   websiteUrl: 'https://glazecalcapp.com'
 } as const;
 
