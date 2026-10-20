@@ -1,6 +1,6 @@
 import { NgTemplateOutlet } from '@angular/common';
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
-import { Component, OnInit, afterNextRender, inject, Injector, signal } from '@angular/core';
+import { Component, OnInit, afterNextRender, computed, inject, Injector, signal } from '@angular/core';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { TranslocoDirective, translate } from '@jsverse/transloco';
 import { firstValueFrom } from 'rxjs';
@@ -110,7 +110,7 @@ export const SHORT_TEXT = 300;
               }
               <dd class="after">
                 @if (f.before !== undefined) {
-                  <span aria-hidden="true">{{ arrow }} </span>
+                  <span aria-hidden="true">{{ arrow() }} </span>
                 }
                 <span class="visually-hidden">{{ t('account.confirm.after') }}</span>
                 <bdi class="value" [class.empty]="!f.after">{{ shown(c.id, f.field, 'after', f.after) }}</bdi>
@@ -320,7 +320,7 @@ export class ConfirmPage implements OnInit {
   private readonly route = inject(ActivatedRoute);
   private readonly injector = inject(Injector);
   /** Between what a field is now and what it would be: pointing the way the page reads. */
-  protected readonly arrow = forwardArrow();
+  protected readonly arrow = computed(forwardArrow);
 
   protected readonly state = signal<'loading' | 'signed-out' | 'missing' | 'failed' | 'shown' | 'decided' | 'answered'>(
     'loading'

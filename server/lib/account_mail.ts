@@ -986,7 +986,7 @@ const RLM = '\u200f';
 /**
  * A plain-text email as it goes in its language. In a right-to-left one (Arabic, Urdu) the subject and each
  * paragraph, each line of text, start with a right-to-left mark, so a mail program sets them right to left
- * even where a line starts with an address, a name or a link (docs/i18n-plan.md, "Right to left"); the
+ * even where a line starts with an address, a name or a link (docs/i18n-plan.md, "Right to left, as built"); the
  * signature's "-- " line stays as it is, so mail programs still know it. Any other language's as it is.
  */
 export const inDirection = (message: mailer.Message, language: string): mailer.Message => {

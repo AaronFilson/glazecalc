@@ -6,7 +6,7 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Added
 
-- **Ready for Arabic, Urdu, Hindi and Bengali** (docs/i18n-plan.md, "Right to left"; no new
+- **Ready for Arabic, Urdu, Hindi and Bengali** (docs/i18n-plan.md, "Right to left, as built"; no new
   language is offered yet). Two pseudo-locales test it on every page: `/ar-XD/` writes each
   message in Arabic letters, right to left, with all six of Arabic's plural forms and Arabic-Indic
   digits, so the browser's own bidirectional rules run as they will for Arabic; `/hi-XE/` writes

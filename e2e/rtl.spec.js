@@ -3,7 +3,7 @@ const { default: AxeBuilder } = require('@axe-core/playwright');
 const standardData = require('../data');
 const { API, signUpAndSignIn } = require('./helpers');
 
-// The right-to-left layout (docs/i18n-plan.md, "Right to left"), on the pseudo-locale ar-XD: real Arabic
+// The right-to-left layout (docs/i18n-plan.md, "Right to left, as built"), on the pseudo-locale ar-XD: real Arabic
 // letters on a mirrored page, so the browser's own bidirectional rules run as they will for Arabic, with
 // Arabic-Indic digits. Values with Latin units read left to right, names are kept apart from the text around
 // them (client/app/shared/bidi.ts), and Bootstrap's sides are mirrored (client/bootstrap.scss). The

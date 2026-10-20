@@ -1,6 +1,6 @@
 import { signal } from '@angular/core';
 
-// Text that runs the other way inside a sentence (docs/i18n-plan.md, "Right to left"). On a right-to-left
+// Text that runs the other way inside a sentence (docs/i18n-plan.md, "Right to left, as built"). On a right-to-left
 // page (Arabic, Urdu, the pseudo-locales ar-XB and ar-XD) the browser orders each run of letters by its
 // own direction, so a value written left to right comes apart inside an Arabic sentence: "1240 °C" reads
 // "C° 1240", and a name's closing bracket jumps to its start. Kept apart as an isolate, each reads as it is

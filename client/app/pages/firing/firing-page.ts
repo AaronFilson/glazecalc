@@ -126,8 +126,8 @@ export class FiringPage implements OnInit {
   /** A column as the reader reads it; the log keeps its English name. */
   protected readonly fieldLabel = firingFieldLabel;
   /** Moving a field earlier or later in the log's columns: to the left and right, or the other way on a mirrored page. */
-  protected readonly moveEarlier = sideAsSeen(marker('notebook.firing.moveLeft'));
-  protected readonly moveLater = sideAsSeen(marker('notebook.firing.moveRight'));
+  protected readonly moveEarlier = computed(() => sideAsSeen(marker('notebook.firing.moveLeft')));
+  protected readonly moveLater = computed(() => sideAsSeen(marker('notebook.firing.moveRight')));
   protected readonly firstOf = firstOf;
   protected readonly notices = new Notices();
   protected readonly saving = new Busy();

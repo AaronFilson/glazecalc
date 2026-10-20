@@ -68,7 +68,7 @@
                 (click)="moveField($index, -1)"
                 [disabled]="$first"
               >
-                {{ t(moveEarlier) }}
+                {{ t(moveEarlier()) }}
               </button>
               <button
                 type="button"
@@ -76,7 +76,7 @@
                 (click)="moveField($index, 1)"
                 [disabled]="$last"
               >
-                {{ t(moveLater) }}
+                {{ t(moveLater()) }}
               </button>
               <button type="button" class="btn btn-light border btn-sm" (click)="removeField($index)">
                 {{ t('notebook.firing.removeField') }}

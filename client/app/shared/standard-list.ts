@@ -146,7 +146,7 @@ const FIRST_SHOWN = 25;
                           ><bdi>{{ source.name }}</bdi></a
                         >
                       } @else {
-                        {{ source.name }}
+                        <bdi>{{ source.name }}</bdi>
                       }
                       @if (source.date) {
                         ({{ source.date }})
