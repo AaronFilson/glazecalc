@@ -2,7 +2,7 @@
 // data, and (once the build prerenders them, docs/seo-plan.md) its content before
 // any script runs, adopted in place by the app.
 const { test, expect } = require('@playwright/test');
-const { signUpAndSignIn } = require('./helpers');
+const { choosePicked, signUpAndSignIn } = require('./helpers');
 
 const FIRING_DESCRIPTION =
   'How to fire an electric kiln: choose, place and read cones, and follow published schedules for bisque and glaze firings, with a cone chart.';
@@ -180,7 +180,7 @@ test.describe('after the script has run', () => {
   test('a reader who chose °F sees °F first in a guide, after the page has loaded', async ({ page }) => {
     await signUpAndSignIn(page);
     await page.goto('/account');
-    await page.locator('#region').selectOption('US');
+    await choosePicked(page.locator('#region'), 'United States');
     await expect(page.locator('.settings-status')).toHaveText('Saved: United States.');
     await page.goto('/guides/firing');
     await expect(page.locator('h1')).toBeVisible();

@@ -32,6 +32,7 @@ import { formatDate } from './shared/format';
 import { errorMessage } from './core/error-message';
 import { RichText } from './i18n/rich-text';
 import { OFFERED_LANGUAGES, OPEN_PAGE, PAGE_LANGUAGE, languageName, pathIn } from './i18n/language';
+import { LanguageLinks } from './i18n/language-links';
 import { ownLanguagePage } from './i18n/own-language';
 import { TranslationNotice } from './i18n/translation-notice';
 import { PreferencesService } from './core/preferences.service';
@@ -53,6 +54,7 @@ const APP_PAGES = [
   // Escape closes the phone menu, as the Menu button does.
   host: { '(keydown.escape)': 'closeMenu()' },
   imports: [
+    LanguageLinks,
     NgTemplateOutlet,
     RichText,
     RouterLink,
@@ -240,16 +242,13 @@ const APP_PAGES = [
               <span [attr.lang]="pageLanguage" translate="no">{{ languageName(pageLanguage) }}</span>
             </summary>
             <nav class="footer-languages" [attr.aria-label]="t('footer.languages')">
-              @for (code of languages; track code) {
-                <a
-                  [href]="pageIn(code)"
-                  [attr.lang]="code"
-                  translate="no"
-                  [attr.aria-current]="code === pageLanguage ? 'true' : null"
-                  (click)="chooseLanguage($event, code)"
-                  >{{ languageName(code) }}</a
-                >
-              }
+              <gc-language-links
+                [languages]="languages"
+                [href]="pageInFn"
+                [current]="pageLanguage"
+                [ariaCurrent]="'true'"
+                (picked)="chooseLanguage($event.event, $event.code)"
+              />
             </nav>
           </details>
         }
@@ -368,6 +367,9 @@ export class App implements OnInit {
       { injector: this.injector }
     );
   }
+
+  /** Where the links to this page in another language go. */
+  protected readonly pageInFn = (code: string): string => this.pageIn(code);
 
   /** This page in another language. */
   protected pageIn(code: string): string {

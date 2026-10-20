@@ -6,6 +6,7 @@ import { App } from '../app';
 import { firstValueFrom } from 'rxjs';
 import { API, httpMock, settle, testProviders } from '../testing/test-providers';
 import { FileLoader } from './loader';
+import { LIVE_LANGUAGES } from '../../../lib/regions/languages';
 import { OFFERED_LANGUAGES, OPEN_PAGE, PAGE_LANGUAGE } from './language';
 import { ownLanguagePage } from './own-language';
 import { RichText } from './rich-text';
@@ -161,6 +162,34 @@ describe('the footer’s languages', () => {
     links[1]!.addEventListener('click', (event) => event.preventDefault());
     links[1]!.click();
     expect(localStorage.getItem('language')).toBe('en-XA');
+  });
+
+  it('are grouped by the part of the world they are spoken in, each language once, in its own name', async () => {
+    const nav = (await footer(['en', 'tr', 'de', 'ja', 'fr', 'th']))!;
+    const groups = [...nav.querySelectorAll('.language-group')].map((group) => [
+      group.querySelector('.language-group-name')?.textContent ?? null,
+      [...group.querySelectorAll('a')].map((a) => a.textContent)
+    ]);
+    expect(groups).toEqual([
+      [null, ['English']],
+      ['East Asia', ['日本語']],
+      ['Europe', ['Français', 'Deutsch']],
+      ['Middle East and North Africa', ['Türkçe']],
+      ['Southeast Asia', ['ภาษาไทย']]
+    ]);
+    // Each name is set apart from the text around it, so it reads in its own direction.
+    expect(nav.querySelector('a[lang="ja"] bdi')?.textContent).toBe('日本語');
+  });
+
+  it('keeps every language in reach at 45 and more, in the footer’s one folded line', async () => {
+    const many = [...LIVE_LANGUAGES, 'ar', 'hi', 'ur', 'bn', 'ta', 'te', 'mr', 'gu', 'pa', 'ne', 'si', 'kn', 'ml'];
+    const nav = (await footer(many))!;
+    expect(nav.querySelectorAll('a')).toHaveLength(many.length);
+    // Closed until asked for: one line on every page, however many languages.
+    expect((nav.closest('details') as HTMLDetailsElement).open).toBe(false);
+    expect(nav.getAttribute('aria-label')).toBe('Languages');
+    const current = [...nav.querySelectorAll('a')].filter((a) => a.hasAttribute('aria-current'));
+    expect(current.map((a) => a.getAttribute('lang'))).toEqual(['en']);
   });
 
   it('for an account, open the page once the account has the language, so the new page keeps it', async () => {

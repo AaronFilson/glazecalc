@@ -1,7 +1,7 @@
 // Where the potter works, and numbers typed and read their way (docs/i18n-plan.md).
 const { test, expect } = require('@playwright/test');
 const { default: AxeBuilder } = require('@axe-core/playwright');
-const { API, addStandardMaterial, signUpAndSignIn } = require('./helpers');
+const { API, addStandardMaterial, choosePicked, signUpAndSignIn } = require('./helpers');
 
 const WCAG = ['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'wcag22aa'];
 const amount = (page, name) => page.getByRole('textbox', { name: 'Amount of ' + name, exact: true });
@@ -13,7 +13,7 @@ test.beforeEach(async ({ page }) => {
 test('a potter in Germany types 12,5; the recipe is saved plainly and reads 12.5 in US English', async ({ page }) => {
   // Where they work sets the defaults: German numbers, °C, firing by temperature.
   await page.goto('/account');
-  await page.locator('#region').selectOption('DE');
+  await choosePicked(page.locator('#region'), 'Germany');
   await expect(page.locator('.settings-status')).toHaveText('Saved: Germany.');
   await expect(page.locator('#temperature-C')).toBeChecked();
   await expect(page.locator('#cones-temperature')).toBeChecked();
@@ -40,7 +40,7 @@ test('a potter in Germany types 12,5; the recipe is saved plainly and reads 12.5
 
   // The same account, now in the United States.
   await page.goto('/account');
-  await page.locator('#region').selectOption('US');
+  await choosePicked(page.locator('#region'), 'United States');
   await expect(page.locator('.settings-status')).toHaveText('Saved: United States.');
   await expect(page.locator('#temperature-F')).toBeChecked();
   await page.goto('/recipe');
@@ -52,7 +52,7 @@ test('a potter in Germany types 12,5; the recipe is saved plainly and reads 12.5
 
 test('the decimal mark can differ from the region: a point, typed by a potter in France', async ({ page }) => {
   await page.goto('/account');
-  await page.locator('#region').selectOption('FR');
+  await choosePicked(page.locator('#region'), 'France');
   await expect(page.locator('.settings-status')).toHaveText('Saved: France.');
   await page.locator('#decimal-mark-point').check();
   await expect(page.locator('.settings-status')).toHaveText('Saved: amounts are typed with a point for decimals.');

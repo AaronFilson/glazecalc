@@ -9,6 +9,9 @@ import { Preferences, PreferencesService } from '../../core/preferences.service'
 import { PricesService } from '../../core/prices.service';
 import { PALETTES } from '../../core/theme';
 import { OFFERED_LANGUAGES, OPEN_PAGE, PAGE_LANGUAGE, languageName, pathIn } from '../../i18n/language';
+import { languageItems } from '../../i18n/language-groups';
+import { Picker, PickerItem } from '../../shared/picker';
+import { regionItems } from '../../shared/region-items';
 
 // The words of a setting and its choices are read each time they are shown,
 // so they are in the page's language and none is translated as the app loads.
@@ -23,10 +26,20 @@ interface Choice {
   readonly saved: string;
 }
 
+/** What a searchable list needs besides its choices (shared/picker.ts). */
+interface PickerOptions {
+  readonly items: readonly PickerItem[];
+  readonly placeholder: string;
+  readonly showAll: string;
+  readonly noMatch: string;
+}
+
 interface Setting {
   name: keyof Preferences;
-  /** A list to choose from, for long lists; radio buttons otherwise. */
-  kind?: 'select';
+  /** A list to choose from, for long lists, or a searchable list for the longest; radio buttons otherwise. */
+  kind?: 'select' | 'picker';
+  /** The searchable list's words and groups, for 'picker'. */
+  picker?: PickerOptions;
   /** The start of each radio button's id: weight-unit-g. */
   id: string;
   readonly legend: string;
@@ -52,7 +65,11 @@ const choice = (value: string, label: string, saved: string, example?: string | 
 });
 
 /** A setting whose legend and help are messages, by their keys. */
-const setting = (legend: string, help: string, fields: Pick<Setting, 'name' | 'kind' | 'id' | 'choices'>): Setting => ({
+const setting = (
+  legend: string,
+  help: string,
+  fields: Pick<Setting, 'name' | 'kind' | 'id' | 'choices' | 'picker'>
+): Setting => ({
   ...fields,
   get legend() {
     return translate(legend);
@@ -90,7 +107,13 @@ function settingsIn(pageLanguage: string, offered: readonly string[]): Setting[]
     {
       name: 'language',
       id: 'language',
-      kind: 'select',
+      kind: 'picker',
+      picker: {
+        items: languageItems(offered),
+        placeholder: translate('picker.languages.search'),
+        showAll: translate('picker.languages.showAll'),
+        noMatch: translate('picker.languages.noMatch')
+      },
       choices: offered.map((code) => ({
         value: code,
         label: languageName(code),
@@ -155,7 +178,16 @@ function settingsIn(pageLanguage: string, offered: readonly string[]): Setting[]
     setting(marker('account.settings.region.legend'), marker('account.settings.region.help'), {
       name: 'region',
       id: 'region',
-      kind: 'select',
+      kind: 'picker',
+      picker: {
+        items: [
+          { value: '', label: translate('account.settings.region.none.label'), group: '' },
+          ...regionItems(regions, pageLanguage)
+        ],
+        placeholder: translate('picker.regions.search'),
+        showAll: translate('picker.regions.showAll'),
+        noMatch: translate('picker.regions.noMatch')
+      },
       choices: [
         choice('', marker('account.settings.region.none.label'), marker('account.settings.region.none.saved')),
         ...regions
@@ -367,13 +399,28 @@ function settingsIn(pageLanguage: string, offered: readonly string[]): Setting[]
 /** The account's settings, on the account page. A trial has them too. */
 @Component({
   selector: 'gc-settings',
-  imports: [TranslocoDirective],
+  imports: [Picker, TranslocoDirective],
   template: `<ng-container *transloco="let t">
     <section class="auth-text settings" aria-labelledby="settings-heading">
       <h2 id="settings-heading" tabindex="-1">{{ t('account.settings.heading') }}</h2>
       <p class="muted">{{ t('account.settings.intro') }}</p>
       @for (setting of settings; track setting.name) {
-        @if (setting.kind === 'select') {
+        @if (setting.kind === 'picker') {
+          <div class="settings-group">
+            <label class="form-label" [for]="setting.id">{{ setting.legend }}</label>
+            <gc-picker
+              [inputId]="setting.id"
+              [label]="setting.legend"
+              [items]="setting.picker!.items"
+              [value]="current(setting)"
+              [placeholder]="setting.picker!.placeholder"
+              [showAll]="setting.picker!.showAll"
+              [noMatch]="setting.picker!.noMatch"
+              (chosen)="chooseValue(setting, $event)"
+            />
+            <div class="form-text">{{ setting.help }}</div>
+          </div>
+        } @else if (setting.kind === 'select') {
           <div class="settings-group">
             <label class="form-label" [for]="setting.id">{{ setting.legend }}</label>
             <select class="form-select" [id]="setting.id" (change)="chooseValue(setting, $any($event.target).value)">
@@ -435,6 +482,10 @@ function settingsIn(pageLanguage: string, offered: readonly string[]): Setting[]
   styles: `
     .settings-group + .settings-group {
       margin-top: 1rem;
+    }
+    /* The lists to search are not stretched across a wide window. */
+    gc-picker {
+      max-width: 30rem;
     }
     .settings-confirm {
       border-inline-start: 3px solid var(--gc-danger-text);
