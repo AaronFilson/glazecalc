@@ -23,7 +23,13 @@ import { silicaAluminaRatio, unityColumnOf } from './unity-formula';
       <div class="numbers-columns">
         <section aria-labelledby="analysis-heading">
           <h3 id="analysis-heading">{{ t('recipe.numbers.analysisHeading') }}</h3>
-          <div class="table-responsive">
+          <!-- It scrolls on its own where it is wider than a phone (longer words, taller letters): by keyboard too. -->
+          <div
+            class="table-responsive"
+            tabindex="0"
+            role="region"
+            [attr.aria-label]="counted() ? t('recipe.numbers.captionCounted') : t('recipe.numbers.caption')"
+          >
             <table class="table table-sm numbers-table">
               <caption>
                 {{

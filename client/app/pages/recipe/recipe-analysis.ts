@@ -3,6 +3,7 @@ import { MaterialInput, RecipeLine, calculateUMF, materialWeights } from '../../
 import type { ChemistryError } from '../../../../lib/chemistry';
 import { chemistryText } from '../../i18n/coded';
 import { Additive, Recipe, RecipeAnalysis, RecipeMaterial } from '../../core/models';
+import { ltr } from '../../shared/bidi';
 import { formatPlain } from '../../shared/format';
 import { amountOf, totalOf, unitOf } from './rebase';
 
@@ -124,7 +125,7 @@ export function additiveAmount(additive: Additive): string {
   const unit = unitOf(additive);
   const shown = formatPlain(amount);
   if (unit === 'percent') return shown + '%';
-  if (unit === 'grams') return shown + ' g';
+  if (unit === 'grams') return ltr(shown + ' g');
   // The number decides the plural: 1 part, 1,5 parts (but 1,5 part in French).
   return translate('recipe.analysis.parts', { amount: shown, count: amountOf(amount) });
 }

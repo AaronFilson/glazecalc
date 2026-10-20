@@ -960,6 +960,11 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
     return total && amountOf(amount) ? upTo((amountOf(amount) / total) * 100, 1) + '%' : '';
   }
 
+  /** The whole batch's share, 100%, in the reader's digits as the other shares are. */
+  protected totalShare(): string {
+    return this.total() ? upTo(100, 0) + '%' : '';
+  }
+
   protected formatTotal(): string {
     return upTo(this.total(), 3);
   }

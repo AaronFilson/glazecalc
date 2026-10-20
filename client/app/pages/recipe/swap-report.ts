@@ -111,7 +111,8 @@ const list = (names: string[]): string => listOf(names);
           <ul class="swap-uses">
             @for (help of report.couldHelp; track help.name) {
               <li>
-                {{ help.name }}
+                <bdi>{{ help.name }}</bdi
+                >&ngsp;
                 <button
                   type="button"
                   class="btn btn-link btn-sm swap-action"

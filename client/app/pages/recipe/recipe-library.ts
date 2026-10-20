@@ -95,7 +95,8 @@ let nextId = 0;
             @if (inRecipe().has(key(item))) {
               <span class="library-item in-recipe">
                 <span
-                  >{{ item.name }}
+                  ><bdi>{{ item.name }}</bdi
+                  >&ngsp;
                   @if (statusText(item); as status) {
                     <span class="library-status">{{ status }}</span>
                   }
@@ -114,7 +115,8 @@ let nextId = 0;
                 (click)="choose(item)"
               >
                 <span
-                  >{{ item.name }}
+                  ><bdi>{{ item.name }}</bdi
+                  >&ngsp;
                   @if (statusText(item); as status) {
                     <span class="library-status">{{ status }}</span>
                   }

@@ -68,7 +68,7 @@
                 (click)="moveField($index, -1)"
                 [disabled]="$first"
               >
-                {{ t('notebook.firing.moveLeft') }}
+                {{ t(moveEarlier()) }}
               </button>
               <button
                 type="button"
@@ -76,7 +76,7 @@
                 (click)="moveField($index, 1)"
                 [disabled]="$last"
               >
-                {{ t('notebook.firing.moveRight') }}
+                {{ t(moveLater()) }}
               </button>
               <button type="button" class="btn btn-light border btn-sm" (click)="removeField($index)">
                 {{ t('notebook.firing.removeField') }}
@@ -153,7 +153,9 @@
       <ul class="stored-firings">
         @for (fr of myFirings(); track fr._id) {
           <li class="stored-firing">
-            <h3 class="h5">{{ fr.title }}</h3>
+            <h3 class="h5">
+              <bdi>{{ fr.title }}</bdi>
+            </h3>
             <p class="muted">
               {{
                 fr.kiln
@@ -213,7 +215,7 @@
                   }}</label>
                   <select [id]="'fired-pick-' + fr._id" class="form-select form-select-sm" #pick>
                     @for (rec of notFiredIn(fr); track rec._id) {
-                      <option [value]="rec._id">{{ rec.title }}</option>
+                      <option [value]="rec._id">{{ rec.title | gcIsolated }}</option>
                     }
                   </select>
                   <button

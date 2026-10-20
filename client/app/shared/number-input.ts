@@ -8,12 +8,13 @@ import { forTyping, formatLocale, toPlain, typedDecimalMark } from './format';
  * box has the focus it shows what was typed; on leaving it, the number is
  * written back as it was read, so the reader sees how it was understood.
  * Text that is not a number passes through as typed, for the field's check.
+ * Left to right on a right-to-left page too, as numbers are written.
  *
  *   <input type="text" inputmode="decimal" [gcNumber]="line.amount" (gcNumberChange)="setAmount(i, $event)" />
  */
 @Directive({
   selector: 'input[gcNumber]',
-  host: { '(input)': 'typed($event)', '(compositionend)': 'typed()', '(blur)': 'echo()' }
+  host: { dir: 'ltr', '(input)': 'typed($event)', '(compositionend)': 'typed()', '(blur)': 'echo()' }
 })
 export class NumberInput {
   /** The saved value: a plain number as text, or text that is not one. */

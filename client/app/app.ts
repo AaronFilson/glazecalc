@@ -123,7 +123,7 @@ const APP_PAGES = [
                 <span class="account-text">
                   <span class="account-label">{{ auth.shownTrial() ? t('nav.trialAccount') : t('nav.account') }}</span>
                   @if (auth.shownTrial() ? null : auth.shownName(); as email) {
-                    <span class="account-email" translate="no">{{ email }}</span>
+                    <bdi class="account-email" translate="no">{{ email }}</bdi>
                   }
                 </span>
               </a>

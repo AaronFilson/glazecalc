@@ -130,7 +130,8 @@ export function statusText(row: LimitRow): string {
             <span class="cone-fit-sources">
               {{ t('recipe.coneFit.sources') }}
               @for (source of fit.sources; track source.id; let last = $last) {
-                <a [href]="source.url" target="_blank" rel="noopener" translate="no">{{ source.title }}</a
+                <a [href]="source.url" target="_blank" rel="noopener" translate="no"
+                  ><bdi>{{ source.title }}</bdi></a
                 >{{ last ? '' : ';' }}
               }
             </span>
@@ -200,7 +201,13 @@ export function statusText(row: LimitRow): string {
               @if (view.cone) {
                 <p class="limits-note">{{ t('recipe.limits.cone', { cone: view.cone }) }}</p>
               }
-              <div class="table-responsive">
+              <!-- It scrolls on its own where it is wider than a phone (longer words, taller letters): by keyboard too. -->
+              <div
+                class="table-responsive"
+                tabindex="0"
+                role="region"
+                [attr.aria-label]="t('recipe.limits.caption', { name: t(setNames[set().id]) })"
+              >
                 <table class="table table-sm limits-table">
                   <caption>
                     {{
@@ -244,7 +251,9 @@ export function statusText(row: LimitRow): string {
       <p class="limits-note">
         {{ t('recipe.limits.source') }}
         @if (set().source.url; as url) {
-          <a [href]="url" target="_blank" rel="noopener" translate="no">{{ set().source.title }}</a>
+          <a [href]="url" target="_blank" rel="noopener" translate="no"
+            ><bdi>{{ set().source.title }}</bdi></a
+          >
         } @else {
           <span translate="no">{{ set().source.title }}</span>
         }

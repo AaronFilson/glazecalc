@@ -75,6 +75,7 @@ const nameCheck =
             id="new-token"
             class="form-control new-token"
             type="text"
+            dir="ltr"
             readonly
             [value]="token"
             (focus)="selectAll($event)"

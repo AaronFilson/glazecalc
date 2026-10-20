@@ -20,7 +20,7 @@
             @for (add of myAdditives(); track add._id) {
               <tr>
                 <td>
-                  {{ add.name }}
+                  <bdi>{{ add.name }}</bdi>
                   <div>
                     <gc-remove-button
                       [name]="removal.nameOf(add)"

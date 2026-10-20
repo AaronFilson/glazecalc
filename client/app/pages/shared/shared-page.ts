@@ -157,7 +157,8 @@ type View = 'recipe' | 'worked';
                 @for (line of printed.materials; track $index) {
                   <tr>
                     <th scope="row">
-                      {{ line.name }}
+                      <bdi>{{ line.name }}</bdi
+                      >&ngsp;
                       @if (line.formula) {
                         <span class="shared-formula" translate="no">{{ line.formula }}</span>
                       }
@@ -197,7 +198,9 @@ type View = 'recipe' | 'worked';
                 <tbody>
                   @for (line of printed.additives; track $index) {
                     <tr>
-                      <th scope="row">{{ line.name }}</th>
+                      <th scope="row">
+                        <bdi>{{ line.name }}</bdi>
+                      </th>
                       <td class="num">{{ line.amount }}</td>
                     </tr>
                   }

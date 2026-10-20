@@ -20,7 +20,7 @@ import { IcuTranspiler } from './icu-transpiler';
 import { baseHrefFor, languageOfPath, pathIn } from './language';
 import { MissingKey } from './missing';
 import { scopeTranslations } from './provide-i18n';
-import { pseudoMessage, pseudoTranslation } from './pseudo';
+import { pseudoMessage, pseudoText, pseudoTranslation } from './pseudo';
 import { RichText, richNodes } from './rich-text';
 
 // The trial behind docs/adr/0013-translations.md: Transloco with FormatJS's
@@ -291,6 +291,41 @@ describe('translations', () => {
       // The tag's markers are not letters.
       expect(one).toMatch(/^「1[^\sA-Za-z]+b[^\sA-Za-z]*Custer[^\sA-Za-z]*b[^\sA-Za-z]*」$/);
       expect(one).toContain('1' + materials);
+    });
+
+    it('writes every message in Arabic letters, with all six of Arabic plural forms', () => {
+      expect(pseudoMessage('Save recipe', 'ar-XD')).toBe('سافي ريكيبي');
+      // Arabic's comma and question mark; what a translation keeps in Latin stays so.
+      expect(pseudoMessage('Fire it, then look? SK 8, 1240 °C, {amount} g of K2O in Glazecalc.', 'ar-XD')).toBe(
+        'فيري يت، تهين لووك؟ SK 8، 1240 °C، {amount} g وف K2O ين Glazecalc.'
+      );
+      expect(pseudoMessage('Fire to SK cones (JIS R 8101), cone 6.', 'ar-XD')).toBe(
+        'فيري تو SK كونيس (JIS R 8101)، كوني 6.'
+      );
+      const plural = pseudoMessage('{count, plural, one {# material} other {# materials}} in <b>{name}</b>', 'ar-XD');
+      for (const form of ['zero', 'one', 'two', 'few', 'many', 'other']) expect(plural).toContain(`${form}{# `);
+      const transpiler = new IcuTranspiler();
+      transpiler.onLangChanged('ar-XD');
+      for (const count of [0, 1, 2, 3, 11, 100]) {
+        const text = transpiler.transpile({
+          value: plural,
+          params: { count, name: 'Custer' },
+          translation: {},
+          key: 'x'
+        });
+        expect(text).toMatch(/^\S+ ماتيريال(س)? ين \S*Custer\S*$/);
+      }
+    });
+
+    it('writes every message in Devanagari, stacked and marked above and below, with a danda for a full stop', () => {
+      const save = pseudoMessage('Save recipe.', 'hi-XE');
+      expect(save).toBe('र्सावेँ रेचिपेँ।');
+      expect(pseudoMessage('Batch', 'hi-XE')).toBe('र्बाट्ठचहृँ');
+      expect(pseudoMessage('LOI of SiO2 in {unit}', 'hi-XE')).toBe('LOI ओफ़ृँ SiO2 इनृँ {unit}');
+      // Web addresses stay as they are, in a guide's text too.
+      expect(pseudoText('See https://example.com/a-b or www.glazy.org.', 'hi-XE')).toBe(
+        'र्सेएँ https://example.com/a-b ओरृँ www.glazy.org.'
+      );
     });
   });
 });

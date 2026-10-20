@@ -104,12 +104,22 @@
 // installed (Linux, and the browser tests), then each system's own. Not served:
 // a CJK font is megabytes (the report on East and Southeast Asia, "Fonts").
 // :lang(zh-Hans) is also zh-Hans-CN, and :lang(ja) the pseudo-locale ja-XC.
+//
+// Arabic, Urdu, Hindi and Bengali: the system's own font first, which every current device has (Windows'
+// Segoe UI and Nirmala UI, Android's and Linux's Noto, Apple's Geeza Pro and Kohinoor), so nothing is fetched.
+// Urdu is the exception: it is written in Nastaliq, which few devices have, so Noto Nastaliq Urdu comes with
+// the app (below), named only here, so no other language's page fetches it. :lang(ar) is also the
+// pseudo-locales ar-XB and ar-XD, and :lang(hi) hi-XE.
 $gc-script-fonts: (
   'ja': "'Noto Serif JP', 'Noto Serif CJK JP', 'Yu Mincho', YuMincho, 'Hiragino Mincho ProN'",
   'zh-Hans': "'Noto Serif SC', 'Noto Serif CJK SC', 'Songti SC', STSong",
   'zh-Hant': "'Noto Serif TC', 'Noto Serif CJK TC', 'Songti TC'",
   'ko': "'Noto Serif KR', 'Noto Serif CJK KR', AppleMyungjo",
-  'th': "'Noto Serif Thai', 'Leelawadee UI', Thonburi, Laksaman"
+  'th': "'Noto Serif Thai', 'Leelawadee UI', Thonburi, Laksaman",
+  'ar': "'Segoe UI', 'Noto Naskh Arabic', 'Geeza Pro', 'Noto Sans Arabic', Tahoma",
+  'ur': "'Noto Nastaliq Served', 'Noto Nastaliq Urdu', 'Urdu Typesetting', 'Segoe UI', 'Noto Naskh Arabic', 'Geeza Pro'",
+  'hi': "'Nirmala UI', 'Kohinoor Devanagari', 'Noto Sans Devanagari', Mangal",
+  'bn': "'Nirmala UI', 'Kohinoor Bangla', 'Noto Sans Bengali', Vrinda"
 );
 $gc-script-langs: ();
 @each $lang, $fonts in $gc-script-fonts {
@@ -145,6 +155,41 @@ $gc-script-langs: ();
 // Thai's vowels and tone marks stack above and below the letters.
 :lang(th):is(h1, h2, h3, h4) {
   line-height: 1.4;
+}
+// So do Arabic's vowel marks, and Devanagari's and Bengali's letters hang from a line with marks above it and
+// below: their lines are taller. Nastaliq slopes down each word, and its lines are the tallest of all.
+:lang(ar):is(h1, h2, h3, h4) {
+  line-height: 1.4;
+}
+body:is(:lang(hi), :lang(bn)) {
+  line-height: 1.75;
+}
+:is(:lang(hi), :lang(bn)):is(h1, h2, h3, h4) {
+  line-height: 1.45;
+}
+body:lang(ur),
+:lang(ur):is(.form-control, .form-select, .btn) {
+  line-height: 1.9;
+}
+:lang(ur):is(h1, h2, h3, h4) {
+  line-height: 1.7;
+}
+
+// Urdu's Nastaliq, served with the app: Noto Nastaliq Urdu 3.007 (OFL: client/fonts/noto-nastaliq-urdu-OFL.txt,
+// THIRD-PARTY-NOTICES.md), weights 400 to 700, cut to Urdu's letters (U+0600-06FF and a few signs): 193 kB of
+// the 239 kB file. Named only in Urdu's font list ($gc-script-fonts), so only an Urdu page fetches it, and
+// not preloaded (scripts/prerender.mjs, TEXT_FONTS). Made with fontTools 4.25 from
+// @fontsource-variable/noto-nastaliq-urdu 5.3.0; make it again when that changes:
+//   pyftsubset noto-nastaliq-urdu-arabic-wght-normal.woff2
+//     --unicodes="U+0600-06FF,U+200C-200E,U+2010-2011,U+FD3E-FD3F,U+FDF2,U+FDFA-FDFD" --flavor=woff2
+//     --layout-features='*' --output-file=client/fonts/noto-nastaliq-urdu-wght-normal.woff2
+@font-face {
+  font-family: 'Noto Nastaliq Served';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400 700;
+  src: url('./fonts/noto-nastaliq-urdu-wght-normal.woff2') format('woff2-variations');
+  unicode-range: U+0600-06FF, U+200C-200E, U+2010-2011, U+FD3E-FD3F, U+FDF2, U+FDFA-FDFD;
 }
 
 @mixin dark-tokens {
@@ -846,6 +891,18 @@ main .form-control.is-invalid {
   font-size: 0.875rem;
   font-weight: 600;
   margin-top: 0.25rem;
+}
+
+// Right to left (shared/bidi.ts; Bootstrap's sides in client/bootstrap.scss). What a potter types, a name or
+// a note, and code take the direction of their own first letter, as dir="auto" does: an English recipe name
+// on an Arabic page reads left to right, and an Arabic one on its right. A field kept left to right (an
+// email, a code, a number) still shows a placeholder in the page's language from the right.
+:where([dir='rtl'])
+  :is(input:not([type]), input[type='text'], input[type='search'], textarea, code, kbd, samp):not([dir]) {
+  unicode-bidi: plaintext;
+}
+:where([dir='rtl']) :is(input, textarea)[dir='ltr']:placeholder-shown {
+  direction: rtl;
 }
 
 /*************** Recipe page **************/

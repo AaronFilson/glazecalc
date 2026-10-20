@@ -170,7 +170,9 @@ type Confirming = 'password' | 'email' | 'delete';
             <ul>
               @for (token of tokens.working(); track token.id) {
                 <li>
-                  {{ token.name }} <span class="token-hint">{{ t('account.tokens.hint', { hint: token.hint }) }}</span>
+                  <bdi>{{ token.name }}</bdi
+                  >&ngsp;
+                  <span class="token-hint">{{ t('account.tokens.hint', { hint: token.hint }) }}</span>
                 </li>
               }
             </ul>
@@ -205,6 +207,7 @@ type Confirming = 'password' | 'email' | 'delete';
             <input
               id="new-email"
               type="email"
+              dir="ltr"
               name="newEmail"
               class="form-control"
               required

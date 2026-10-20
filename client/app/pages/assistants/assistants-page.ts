@@ -123,7 +123,7 @@ const TOKEN = 'YOUR_TOKEN';
          breaking inside a string, with a Copy button that copies it exactly. -->
     <ng-template #setup let-id="id" let-code="code" let-name="name">
       <div class="setup-block">
-        <pre class="setup" tabindex="0" [id]="'setup-' + id"><code>{{ code }}</code></pre>
+        <pre class="setup" tabindex="0" dir="ltr" [id]="'setup-' + id"><code>{{ code }}</code></pre>
         <div class="setup-copy">
           <button type="button" class="btn btn-light border btn-sm" [attr.aria-label]="name" (click)="copy(id, code)">
             {{ t('site.assistants.copy') }}

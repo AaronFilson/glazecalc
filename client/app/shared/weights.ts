@@ -1,3 +1,4 @@
+import { ltr } from './bidi';
 import { plainNumber, upTo } from './format';
 
 /** How batch weights are shown: grams, or pounds and ounces (the account's setting). */
@@ -15,9 +16,13 @@ const trim = (value: number, places: number): string => upTo(value, places);
 /**
  * A weight as a scale reads it: "4938.2 g" (2 decimals under 10 g, for small
  * colorant amounts), or in full, "4938.23517 g"; or "2 lb 3.5 oz", "3.5 oz",
- * "0.25 oz" (ounces to 0.1, or 0.01 under an ounce). Trailing zeros are dropped.
+ * "0.25 oz" (ounces to 0.1, or 0.01 under an ounce). Trailing zeros are dropped. Left to right as a whole
+ * on a right-to-left page (shared/bidi.ts).
  */
-export function formatWeight(grams: number, unit: WeightUnit, precision: GramPrecision = 'single'): string {
+export const formatWeight = (grams: number, unit: WeightUnit, precision: GramPrecision = 'single'): string =>
+  ltr(weightText(grams, unit, precision));
+
+function weightText(grams: number, unit: WeightUnit, precision: GramPrecision): string {
   if (!(grams > 0)) return unit === 'lb' ? '0 oz' : '0 g';
   if (unit === 'g') return trim(grams, precision === 'full' ? 5 : grams < 10 ? 2 : 1) + ' g';
   const ounces = grams / GRAMS_PER_OUNCE;
