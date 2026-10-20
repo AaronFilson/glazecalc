@@ -9,8 +9,8 @@ import type { McpServer } from '@modelcontextprotocol/server';
 import chemistry from '../../../lib/chemistry/index.js';
 import recipe from '../../../lib/recipe/index.js';
 import {
-  celsiusOf,
   firingArg,
+  firingOf,
   guarded,
   languageArg,
   languageOf,
@@ -21,7 +21,7 @@ import {
   type Line,
   type RecipeLine
 } from '../common.ts';
-import { analysisOf, checksOf, coneFitOut, firingBlockOf } from './public.ts';
+import { analysisOf, checksOf, coneFitOut, TOP_NOTE } from './public.ts';
 
 const READ_ONLY = { readOnlyHint: true, destructiveHint: false, idempotentHint: true, openWorldHint: false } as const;
 
@@ -108,8 +108,8 @@ export const registerBlendTools = (server: McpServer): void => {
             `No limit set ${limitSet}. Choose one of: ${Object.keys(recipe.LIMIT_SETS).join(', ')}.`
           );
         }
-        const celsius = celsiusOf(firing);
-        const block = firingBlockOf(firing);
+        const at = firingOf(firing);
+        const { celsius, block } = at;
         let limits: { id: string; band: unknown } | undefined;
 
         const tiles = blend.tiles.map((tile) => {
@@ -127,7 +127,7 @@ export const registerBlendTools = (server: McpServer): void => {
           }));
           try {
             const { result } = analysisOf(lines, lang);
-            const checks = checksOf(lines, celsius, limitSet, lang);
+            const checks = checksOf(lines, at, limitSet, lang);
             limits ??= { id: checks.limitSet.id, band: checks.bandUsed };
             const fit = coneFitOut(
               recipe.coneFit(checks.unityFormula, block, { materials: lines.map((line) => line.name) }),
@@ -183,6 +183,7 @@ export const registerBlendTools = (server: McpServer): void => {
           steps: count,
           tileCount: tiles.length,
           ...(limits && { limitSet: limits.id, limitBand: limits.band }),
+          ...(limits?.band === 'top' && { limitsNote: TOP_NOTE }),
           ...(celsius !== undefined && { celsius }),
           tiles,
           ...(differences && { differences }),

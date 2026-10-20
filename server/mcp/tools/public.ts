@@ -9,17 +9,18 @@ import * as z from 'zod';
 import type { McpServer } from '@modelcontextprotocol/server';
 import chemistry from '../../../lib/chemistry/index.js';
 import cones from '../../../lib/cones/index.js';
-import type { FiringBlock } from '../../../lib/cones/firing.js';
+import firingLib from '../../../lib/cones/firing.js';
+import type { Band, FiringBlock } from '../../../lib/cones/firing.js';
 import recipe from '../../../lib/recipe/index.js';
 import type { ConeFit, MaterialRecord, TryMaterial } from '../../../lib/recipe/index.js';
 import {
   type Caller,
   cautionOut,
-  celsiusOf,
-  coneCelsius,
+  coneOf,
   countFit,
   firingArg,
   type Firing,
+  firingOf,
   guarded,
   languageArg,
   languageOf,
@@ -105,17 +106,14 @@ export const analysisOf = (lines: RecipeLine[], language: string) => {
 };
 
 /** A firing asked about as a firing block, for the cone check: a cone of its chart, or a temperature. */
-export const firingBlockOf = (firing: Firing): FiringBlock | null => {
-  if (!firing) return null;
-  if (firing.celsius !== undefined || firing.fahrenheit !== undefined) {
-    return { scale: 'temperature', low: String(celsiusOf(firing)) };
-  }
-  if (!firing.cone) return null;
-  const chart = firing.chart ?? 'orton';
-  const list = chart === 'sk' ? cones.SK.cones : chemistry.CONES;
-  const found = list.find((c) => c.cone.toLowerCase() === firing.cone!.trim().toLowerCase());
-  return found ? { scale: chart, low: found.cone } : null;
-};
+export const firingBlockOf = (firing: Firing): FiringBlock | null => firingOf(firing).block;
+
+/**
+ * What the tools say when the limits are not checked because the firing is
+ * past every set's figures (the 'top' band: cone 12 up, about 1320 °C).
+ */
+export const TOP_NOTE =
+  'No limit set has figures for a firing from cone 12 up (about 1320 °C): the published glaze limits Glazecalc found (Hesselberth & Roy, the UK traditional limits, Green & Cooper) stop at cone 10, and Glazecalc reads them no further than cone 11. So only the checks that do not depend on the firing are made here; test tiles decide.';
 
 /**
  * Whether the chemistry fits the firing (lib/recipe/cone-fit.js), as the tools answer it: the
@@ -148,14 +146,20 @@ const limitSetOf = (id: string | undefined) => {
   return set;
 };
 
-/** The cautions for a recipe against a limit set: what the app shows beside a recipe. */
+/**
+ * The cautions for a recipe against a limit set: what the app shows beside a
+ * recipe. The firing is a temperature, or a cone's band (and its temperature
+ * where Glazecalc has one), as firingOf reads it; the band wins.
+ */
 export const checksOf = (
   lines: RecipeLine[],
-  celsius: number | undefined,
+  firing: { celsius?: number; band?: Band },
   limitSetId: string | undefined,
   language: string
 ) => {
   const set = limitSetOf(limitSetId);
+  const { celsius } = firing;
+  const band = firing.band !== undefined ? recipe.bandIn(set, firing.band) : recipe.bandOf(set, celsius);
   const { result, out } = analysisOf(lines, language);
   const checkLines = lines.map((line) => ({ material: line, amount: line.amount }));
   const cautions = [
@@ -163,18 +167,68 @@ export const checksOf = (
       lines: checkLines,
       unity: result.umf,
       celsius,
+      band: firing.band,
       expansion: { was: null, now: result.expansion },
       limitSet: set
     }),
-    ...recipe.sizeNotes(checkLines, celsius !== undefined && celsius < recipe.FIRING.lowFireBelow)
+    ...recipe.sizeNotes(checkLines, band === 'low')
   ];
   return {
     limitSet: { id: set.id, name: set.name, source: set.source },
-    band: recipe.bandOf(set, celsius) ?? null,
-    bandUsed: recipe.bandOf(set, celsius) ?? set.whenUnknown,
+    band: band ?? null,
+    bandUsed: band ?? set.whenUnknown,
     ...(celsius !== undefined && { celsius }),
+    ...(band === 'top' && { limitsNote: TOP_NOTE }),
     unityFormula: out.unityFormula,
     cautions: cautions.map((caution) => cautionOut(caution, language))
+  };
+};
+
+/** What the cone answers say of every figure. */
+const CONES_NOTE =
+  'Cones measure heat work, not temperature alone: the figures are for the heating rate each chart states. Set a witness cone.';
+const SK_BASIS = `the nominal figure of ${cones.SK.standard}, the standard's reference temperature, not a measured bend`;
+
+/**
+ * A cone and its temperature, as convert_cone_temperature answers: for Orton,
+ * Glazecalc's figure (Orton's older chart, ORTON.chart; null from cone 16 up,
+ * where no chart we found has one) and Orton's own current figures beside it
+ * where it publishes them; for SK, the JIS nominal figure.
+ */
+export const coneAnswer = (cone: string, chart: 'orton' | 'sk') => {
+  if (chart === 'sk') {
+    const found = cones.SK.cones.find((c) => c.cone === cone)!;
+    return {
+      cone,
+      chart,
+      celsius: found.celsius,
+      fahrenheit: Math.round(recipe.fahrenheit(found.celsius)),
+      basis: SK_BASIS,
+      note: cones.SK.note
+    };
+  }
+  const at = firingLib.approxCelsius('orton', cone);
+  const published = cones.ORTON.published.cones.find((c) => c.cone === cone);
+  return {
+    cone,
+    chart,
+    celsius: at?.celsius ?? null,
+    fahrenheit: at ? Math.round(recipe.fahrenheit(at.celsius)) : null,
+    basis: at
+      ? cones.ORTON.chart.basis + (cone.endsWith('.5') ? ', a half cone put halfway between its neighbours' : '')
+      : null,
+    ...(published && {
+      ortonCurrent: {
+        ratesAre: '°C an hour over the last 100 °C of the firing',
+        selfSupporting: published.selfSupporting,
+        ...(published.large && { large: published.large }),
+        ...(published.largeDiffers && { largeDiffers: true }),
+        source: cones.ORTON.published.source
+      }
+    }),
+    note: at
+      ? CONES_NOTE
+      : `Orton makes cone ${firingLib.coneLabel(cone)} but publishes no temperature for it, and no Orton chart we found has one; Glazecalc's chart stops at cone 15. Set witness cones, or give the temperature you fire to.`
   };
 };
 
@@ -259,7 +313,7 @@ export const registerPublicTools = (server: McpServer, caller: Caller): void => 
     {
       title: 'Check a recipe against limits',
       description:
-        "Checks a glaze recipe for what is past a recommended limit for its firing (too much boron or alkali, too little alumina, too little or too much clay, rising expansion...) and says what the fired glaze will likely do, as the Glazecalc app does. With a firing, coneFit says whether the chemistry looks like that firing's, by Katz's boron rule and Hesselberth & Roy's silica and alumina whatever limit set is chosen: verdict 'cooler' or 'hotter' only when boron and silica or alumina agree on another band; 'fits' (nothing points away, not a pass); 'skipped' where the published figures do not reach (lead, lithium, much soda and potash or zinc, raku, cones 01 to 3...). Cone 6 against cone 10 is told apart only roughly (strength 'soft'). These are cautions and guides from published figures, not a test and not a guarantee of food safety.",
+        "Checks a glaze recipe for what is past a recommended limit for its firing (too much boron or alkali, too little alumina, too little or too much clay, rising expansion...) and says what the fired glaze will likely do, as the Glazecalc app does. A cone is checked in the band the recipe page gives it (low cone 06-02, mid 1-7, high 8-11); from cone 12 up (band 'top') no published limits reach, so the band's limits are not checked and limitsNote says so. With a firing, coneFit says whether the chemistry looks like that firing's, by Katz's boron rule and Hesselberth & Roy's silica and alumina whatever limit set is chosen: verdict 'cooler' or 'hotter' only when boron and silica or alumina agree on another band; 'fits' (nothing points away, not a pass); 'skipped' where the published figures do not reach (lead, lithium, much soda and potash or zinc, raku, cones 01 to 3, cooler than cone 06 or hotter than cone 10...). Cone 6 against cone 10 is told apart only roughly (strength 'soft'). These are cautions and guides from published figures, not a test and not a guarantee of food safety.",
       inputSchema: z.object({
         lines: linesArg,
         firing: firingArg,
@@ -268,7 +322,7 @@ export const registerPublicTools = (server: McpServer, caller: Caller): void => 
           .max(40)
           .optional()
           .describe(
-            'The limits to check against: "glazecalc" or "hesselberth-roy" (Hesselberth & Roy, cone 6 and 10 only, no low-fire figures). Left out: the limit set saved in the account’s settings when the token may read preferences (the recipe page’s own, "hesselberth-roy" until changed), else "glazecalc".'
+            'The limits to check against: "glazecalc" or "hesselberth-roy" (Hesselberth & Roy, cone 6 and 10 only, no low-fire figures). Neither has figures from cone 12 up. Left out: the limit set saved in the account’s settings when the token may read preferences (the recipe page’s own, "hesselberth-roy" until changed), else "glazecalc".'
           ),
         language: languageArg
       }),
@@ -283,9 +337,10 @@ export const registerPublicTools = (server: McpServer, caller: Caller): void => 
           !limitSet && caller.userId && allows(caller.scopes ?? [], 'preferences:read')
             ? (await settingsOf(caller.userId))('limitSet')
             : undefined;
-        const checks = checksOf(resolved, celsiusOf(firing), limitSet ?? own, lang);
+        const at = firingOf(firing);
+        const checks = checksOf(resolved, at, limitSet ?? own, lang);
         const fit = coneFitOut(
-          recipe.coneFit(checks.unityFormula, firingBlockOf(firing), { materials: resolved.map((line) => line.name) }),
+          recipe.coneFit(checks.unityFormula, at.block, { materials: resolved.map((line) => line.name) }),
           lang
         );
         return ok({ ...checks, ...(fit && { coneFit: fit }) });
@@ -298,9 +353,9 @@ export const registerPublicTools = (server: McpServer, caller: Caller): void => 
     {
       title: 'Cones and temperatures',
       description:
-        'Converts between a pyrometric cone and its temperature (Orton large cones at 60 °C an hour, cones 06 to 6; SK cones, JIS R 8101, 022 to 42), and between °C and °F. Give a cone, or a temperature to find the nearest cones.',
+        "Converts between a pyrometric cone and its temperature, and between °C and °F. Orton cones run 022 to 42: Glazecalc's figure, from 022 to 15, is Orton's older chart for large cones at 150 °C an hour, and Orton's current figures (self-supporting cones at 15, 60 and 150 °C an hour, large cones at 60 and 150, cone 022 to 14) come beside it; Orton publishes no figure above cone 14, so cones from 16 up have none. SK cones (JIS R 8101, SK 022 to SK 20) by the standard's nominal figures. Give a cone, or a temperature to find the nearest cones.",
       inputSchema: z.object({
-        cone: z.string().max(5).optional(),
+        cone: z.string().max(10).optional(),
         chart: z.enum(['orton', 'sk']).optional(),
         celsius: z.number().min(-50).max(2000).optional(),
         fahrenheit: z.number().min(-60).max(3600).optional()
@@ -309,10 +364,7 @@ export const registerPublicTools = (server: McpServer, caller: Caller): void => 
     },
     async ({ cone, chart, celsius, fahrenheit }) =>
       guarded(() => {
-        if (cone) {
-          const c = coneCelsius(cone, chart);
-          return ok({ cone, chart: chart ?? 'orton', celsius: c, fahrenheit: Math.round(recipe.fahrenheit(c)) });
-        }
+        if (cone) return ok(coneAnswer(coneOf(cone, chart ?? 'orton'), chart ?? 'orton'));
         const c = celsius ?? (fahrenheit !== undefined ? recipe.celsius(fahrenheit) : undefined);
         if (c === undefined) throw new ToolProblem('Give a cone, or a temperature in celsius or fahrenheit.');
         const nearest = (list: ReadonlyArray<{ cone: string; celsius: number }>) =>
@@ -323,9 +375,11 @@ export const registerPublicTools = (server: McpServer, caller: Caller): void => 
         return ok({
           celsius: rounded(c, 1),
           fahrenheit: rounded(recipe.fahrenheit(c), 1),
-          nearestOrton: nearest(chemistry.CONES),
+          nearestOrton: nearest(cones.ORTON.chart.cones),
+          ortonBasis: cones.ORTON.chart.basis,
           nearestSk: nearest(cones.SK.cones),
-          note: 'Cones measure heat work, not temperature alone: the figures are for the heating rate each chart states.'
+          skBasis: SK_BASIS,
+          note: CONES_NOTE
         });
       })
   );

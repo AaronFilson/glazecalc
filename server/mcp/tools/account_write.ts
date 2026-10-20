@@ -147,9 +147,9 @@ const idArg = z.string().min(1).max(40);
 const titleArg = z.string().trim().min(1).max(200);
 const notesArg = z.string().max(10000);
 const bandArg = z
-  .enum(['low', 'mid', 'high'])
+  .enum(['low', 'mid', 'high', 'top'])
   .describe(
-    'The firing band its limits are checked in: low (cone 06-02), mid (cone 4-6) or high (cone 9-11), as the recipe page chooses it.'
+    'The firing band its limits are checked in: low (cone 06-02), mid (cone 4-6), high (cone 9-11) or top (cone 12 up, where no limit set has figures, so none are checked), as the recipe page chooses it.'
   );
 const analysisArg = z
   .record(z.string().min(1).max(20), z.number().min(0).max(100))
