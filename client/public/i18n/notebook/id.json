@@ -142,7 +142,7 @@
     "restoreFailed": "\"{name}\" tidak dapat dikembalikan. Silakan coba lagi.",
     "deleted": "\"{name}\" dihapus secara permanen.",
     "empty": "Kosongkan Sampah",
-    "emptyQuestion": "Hapus secara permanen {count, plural, other {semua # item}} di Sampah? Tindakan ini tidak dapat dibatalkan.",
+    "emptyQuestion": "Hapus secara permanen {count, plural, other {semua # catatan}} di Sampah? Tindakan ini tidak dapat dibatalkan.",
     "emptyYes": "Ya, kosongkan",
     "emptying": "Mengosongkan...",
     "emptied": "Sampah kosong.",
