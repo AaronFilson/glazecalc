@@ -150,6 +150,8 @@ export const MESSAGES = {
   'currency-choices': 'Choose one of the currencies in the list, or leave it to your region.',
   'calendar-choices':
     'Dates can be shown in the Gregorian calendar (gregory), the Thai Buddhist era (buddhist) or Japanese eras (japanese).',
+  'digits-choices':
+    "Digits can be shown as usual where you are (auto), as 0–9 (western) or in the language's own digits (native).",
   'shelf-invalid': (p: Params) => 'The shelf is a list of up to ' + p.most + ' materials.',
   'shelf-full': (p: Params) => 'The shelf can hold at most ' + p.most + ' materials. Nothing was changed.',
   'shelf-material-unknown': 'That material is not in your materials or the Glazecalc library.',

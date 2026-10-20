@@ -80,7 +80,8 @@ describe('user API', () => {
       recipeHelp: 'auto',
       limitSet: 'hesselberth-roy',
       currency: '',
-      calendar: 'gregory'
+      calendar: 'gregory',
+      digits: 'auto'
     };
 
     it('start in grams to a tenth, and change one at a time', async () => {
@@ -136,6 +137,20 @@ describe('user API', () => {
         'Dates can be shown in the Gregorian calendar (gregory), the Thai Buddhist era (buddhist) or Japanese eras (japanese).'
       );
       expect((await put(token, { calendar: 'gregory' })).body.calendar).to.equal('gregory');
+    });
+
+    it('keep the digits numbers are shown in: as usual where the potter is until others are chosen', async () => {
+      expect((await put(token, { digits: 'western' })).body.digits).to.equal('western');
+      expect((await User.findById(user._id))?.preferences?.digits).to.equal('western');
+      expect((await put(token, { digits: 'native' })).body.digits).to.equal('native');
+      // Only the choices offered: not a numbering system's own name.
+      const refused = await put(token, { digits: 'arab' });
+      expect(refused).to.have.status(400);
+      expect(refused.body.msg).to.equal(
+        "Digits can be shown as usual where you are (auto), as 0–9 (western) or in the language's own digits (native)."
+      );
+      expect((await User.findById(user._id))?.preferences?.digits).to.equal('native');
+      expect((await put(token, { digits: 'auto' })).body.digits).to.equal('auto');
     });
 
     it('keep where the potter works and how numbers, temperatures and firing are shown', async () => {

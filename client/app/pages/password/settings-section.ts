@@ -64,13 +64,13 @@ const setting = (legend: string, help: string, fields: Pick<Setting, 'name' | 'k
 
 // A sample for each number and date format: 12345.6 and 8 October 2026.
 const SAMPLE_DATE = new Date(2026, 9, 8);
-const sampleOf = (locale: string): string =>
+const sampleNumber = (locale: string): string =>
   new Intl.NumberFormat(locale, {
     maximumFractionDigits: 1,
     useGrouping: 'min2'
-  } as unknown as Intl.NumberFormatOptions).format(12345.6) +
-  ' · ' +
-  new Intl.DateTimeFormat(locale, { dateStyle: 'short' }).format(SAMPLE_DATE);
+  } as unknown as Intl.NumberFormatOptions).format(12345.6);
+const sampleOf = (locale: string): string =>
+  sampleNumber(locale) + ' · ' + new Intl.DateTimeFormat(locale, { dateStyle: 'short' }).format(SAMPLE_DATE);
 
 /**
  * The settings, with the names of regions and of languages in the page's
@@ -209,6 +209,21 @@ function settingsIn(pageLanguage: string, offered: readonly string[]): Setting[]
           marker('account.settings.calendar.japanese.label'),
           marker('account.settings.calendar.japanese.saved')
         )
+      ]
+    }),
+    // The digits numbers are shown in; each choice's example is a number as it would be shown now
+    // (settings-section exampleOf): ١٢٬٣٤٥٫٦ for Arabic in Egypt as usual, 12,345.6 in 0–9.
+    setting(marker('account.settings.digits.legend'), marker('account.settings.digits.help'), {
+      name: 'digits',
+      id: 'digits',
+      choices: [
+        choice('auto', marker('account.settings.digits.auto.label'), marker('account.settings.digits.auto.saved')),
+        choice(
+          'western',
+          marker('account.settings.digits.western.label'),
+          marker('account.settings.digits.western.saved')
+        ),
+        choice('native', marker('account.settings.digits.native.label'), marker('account.settings.digits.native.saved'))
       ]
     }),
     setting(marker('account.settings.decimalMark.legend'), marker('account.settings.decimalMark.help'), {
@@ -493,15 +508,17 @@ export class SettingsSection implements OnInit {
 
   /**
    * A choice's example; for "as my language and region", how numbers and dates are written now; for a
-   * calendar, the sample date as it would be shown in it.
+   * calendar, the sample date as it would be shown in it; for digits, the sample number in them.
    */
   protected exampleOf(setting: Setting, choice: Choice): string {
+    const { language, region } = this.locale;
     if (setting.name === 'calendar') {
       const locale = formatLocaleFor(
-        this.locale.language(),
-        this.locale.region(),
+        language(),
+        region(),
         this.preferences.format(),
-        choice.value
+        choice.value,
+        this.preferences.digits()
       );
       try {
         return new Intl.DateTimeFormat(locale, { dateStyle: 'long' }).format(SAMPLE_DATE);
@@ -509,12 +526,27 @@ export class SettingsSection implements OnInit {
         return '';
       }
     }
+    if (setting.name === 'digits') {
+      const locale = formatLocaleFor(
+        language(),
+        region(),
+        this.preferences.format(),
+        this.preferences.calendar(),
+        choice.value
+      );
+      try {
+        return sampleNumber(locale);
+      } catch {
+        return '';
+      }
+    }
     if (setting.name === 'format') {
-      // The date in the calendar chosen now, so Thai shows Gregorian by default and Buddhist when chosen.
+      // The date in the calendar and the digits chosen now, so Thai shows Gregorian by default and Buddhist when
+      // chosen, and Arabic in Egypt shows its own digits unless 0–9 are chosen.
       const locale =
         choice.value === 'auto'
           ? this.locale.locale()
-          : formatLocaleFor(this.locale.language(), this.locale.region(), choice.value, this.preferences.calendar());
+          : formatLocaleFor(language(), region(), choice.value, this.preferences.calendar(), this.preferences.digits());
       try {
         return sampleOf(locale);
       } catch {

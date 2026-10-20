@@ -66,6 +66,32 @@ describe('LocaleService', () => {
     expect(formatDate('2026-10-17', { dateStyle: 'long' })).toBe('October 17, 2026');
   });
 
+  it('shows numbers in the digits usual where the potter is, 0–9 or the language’s own when chosen', () => {
+    const preferences = TestBed.inject(PreferencesService);
+    preferences.remember('format', 'ar-EG');
+    TestBed.inject(LocaleService);
+    TestBed.tick();
+    // Arabic in Egypt writes Arabic-Indic digits, and names them, whatever the browser's own data says.
+    expect(formatLocale()).toBe('ar-EG-u-ca-gregory-nu-arab');
+    expect(fixed(12345.5, 1)).toBe('١٢٬٣٤٥٫٥');
+    preferences.remember('digits', 'western');
+    TestBed.tick();
+    expect([formatLocale(), fixed(12345.5, 1)]).toEqual(['ar-EG-u-ca-gregory-nu-latn', '12,345.5']);
+    // Hindi in India writes 0–9 as usual, in Indian groups; Devanagari when the language's own are chosen.
+    preferences.remember('format', 'hi-IN');
+    preferences.remember('digits', 'native');
+    TestBed.tick();
+    expect([formatLocale(), fixed(1234567.5, 1)]).toEqual(['hi-IN-u-ca-gregory-nu-deva', '१२,३४,५६७.५']);
+    preferences.remember('digits', 'auto');
+    TestBed.tick();
+    expect(fixed(1234567.5, 1)).toBe('12,34,567.5');
+    // A language with no digits of its own keeps 0–9.
+    preferences.remember('format', 'en-IN');
+    preferences.remember('digits', 'native');
+    TestBed.tick();
+    expect(formatLocale()).toBe('en-IN-u-ca-gregory-nu-latn');
+  });
+
   it("takes a region from the browser's language, for defaults only", () => {
     expect(browserRegion(['de-AT', 'en'])).toBe('AT');
     expect(browserRegion(['en', 'fr-FR'])).toBe('FR');
@@ -214,6 +240,15 @@ describe('LocaleService during the first render', () => {
       'F',
       'de-US-u-ca-gregory-nu-latn'
     ]);
+  });
+
+  it('writes the usual digits until the first render is done, then the ones chosen on this browser', () => {
+    localStorage.setItem('digits', 'native');
+    const { state, locale } = firstRender('th');
+    expect(locale.locale()).toBe('th-TH-u-ca-gregory-nu-latn');
+    state.set(false);
+    TestBed.tick();
+    expect([locale.locale(), fixed(12.5, 1)]).toEqual(['th-US-u-ca-gregory-nu-thai', '๑๒.๕']);
   });
 
   it('does not read the browser’s languages', () => {
