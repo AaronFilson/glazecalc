@@ -234,6 +234,50 @@ describe('Shared recipe tools', () => {
     expect(recipe.unityFor(recipe.GLAZECALC_LIMITS, 'high')).to.equal(recipe.GLAZECALC_LIMITS.unity.mid);
   });
 
+  it('has no figures from cone 12 up (1320 °C), in either set: published limits stop at cone 10', () => {
+    expect(recipe.FIRING_BANDS).to.eql(['low', 'mid', 'high', 'top']);
+    for (const set of [recipe.HESSELBERTH_ROY_LIMITS, recipe.GLAZECALC_LIMITS]) {
+      expect(recipe.bandOf(set, 1319), set.id).to.not.equal('top');
+      expect(recipe.bandOf(set, 1320), set.id).to.equal('top');
+      expect(recipe.bandOf(set, 1450), set.id).to.equal('top');
+      expect(recipe.unityFor(set, 'top'), set.id).to.equal(null);
+      expect(recipe.limitRows({ SiO2: 6, Al2O3: 0.8 }, set, 'top'), set.id).to.equal(null);
+      expect(set.unity, set.id).to.not.have.property('top');
+    }
+    // A band the set names is read as itself; the app's own set reads high fire as its mid fire.
+    expect(recipe.bandIn(recipe.HESSELBERTH_ROY_LIMITS, 'high')).to.equal('high');
+    expect(recipe.bandIn(recipe.GLAZECALC_LIMITS, 'high')).to.equal('mid');
+    expect(recipe.bandIn(recipe.GLAZECALC_LIMITS, 'top')).to.equal('top');
+  });
+
+  it('checks a cone by its band where it is given, and nothing by range in the top band', () => {
+    const lines = [{ material: KAOLIN, amount: '10' }];
+    // Too much alkali and boron, too little alumina, for any firing's figures.
+    const unity = { K2O: 0.4, Na2O: 0.2, CaO: 0.4, Al2O3: 0.1, B2O3: 0.6, SiO2: 3 };
+    const checks = (input: Partial<Parameters<typeof recipe.pastLimits>[0]>) =>
+      recipe.pastLimits({ lines, unity, ...input }).map((c) => c.check);
+    const ranged = ['boron-high', 'alumina-low', 'alkali'];
+    for (const limitSet of [recipe.HESSELBERTH_ROY_LIMITS, recipe.GLAZECALC_LIMITS]) {
+      expect(checks({ band: 'high', limitSet }), limitSet.id).to.include.members(['alkali', 'alumina-low']);
+      expect(
+        checks({ band: 'top', limitSet }).filter((c) => ranged.includes(c)),
+        limitSet.id
+      ).to.eql([]);
+      expect(
+        checks({ celsius: 1400, limitSet }).filter((c) => ranged.includes(c)),
+        limitSet.id
+      ).to.eql([]);
+      // What does not hang on the firing is still checked: the clay.
+      expect(checks({ band: 'top', limitSet }), limitSet.id).to.include('clay-high');
+    }
+    // The band wins over a temperature: SK 8 is mid fire though JIS says 1250 °C.
+    expect(checks({ band: 'mid', celsius: 1250, limitSet: recipe.HESSELBERTH_ROY_LIMITS })).to.include('boron-high');
+    // A low band with no temperature skips Katz's "too little boron", which needs one.
+    const lean = { ...unity, B2O3: 0 };
+    expect(recipe.pastLimits({ lines, unity: lean, band: 'low' }).map((c) => c.check)).to.not.include('boron-short');
+    expect(recipe.pastLimits({ lines, unity: lean, celsius: 1060 }).map((c) => c.check)).to.include('boron-short');
+  });
+
   it('gives a row per limit, with the sums added up and the side a value is past', () => {
     const unity = { K2O: 0.2, Na2O: 0.15, CaO: 0.65, Al2O3: 0.3, B2O3: 0.1, SiO2: 3.2 };
     const rows = recipe.limitRows(unity, recipe.HESSELBERTH_ROY_LIMITS, 'mid')!;

@@ -146,6 +146,25 @@ describe('firing in words', () => {
     expect(firingLine({ scale: 'orton', low: '5.5' }, orton)).toBe('Tested at cone 5½');
     expect(firingWords(null, orton)).toBeNull();
   });
+
+  it("converts Orton cones to cone 15 by Orton's older chart at 150 °C an hour, and says so; none from 16 up", () => {
+    const celsius = { cones: 'orton' as const, temperature: 'C' as const };
+    const fourteen = firingWords({ scale: 'orton', low: '14' }, celsius)!;
+    expect(fourteen.conversion).toMatch(
+      /^≈ 1366\s°C \(Orton's older chart for large cones at 150 °C an hour; approximate\)$/
+    );
+    expect(firingWords({ scale: 'orton', low: '15' }, celsius)!.conversion).toMatch(/1431\s°C/);
+    expect(firingWords({ scale: 'orton', low: '13', high: '15' }, celsius)!.conversion).toMatch(/1346\s°C–1431\s°C/);
+    // No figure for cone 16, so no half of a range either.
+    expect(firingWords({ scale: 'orton', low: '16' }, celsius)!.conversion).toBe('');
+    expect(firingWords({ scale: 'orton', low: '14', high: '16' }, celsius)!.conversion).toBe('');
+    // Shown as written: 14½.
+    expect(firingLine({ scale: 'orton', low: '14.5' }, celsius)).toBe('Tested at cone 14½');
+    // An SK reader is told the nearest SK cone only within Kyoto's table: none for cone 14.
+    expect(firingWords({ scale: 'orton', low: '14' }, { cones: 'sk', temperature: 'C' })!.conversion).not.toContain(
+      'SK'
+    );
+  });
 });
 
 describe('RecipeLimits band names', () => {
