@@ -40,7 +40,7 @@ const CONFIRM_CHOICES: ReadonlyArray<{ choice: ConfirmChanges; label: string; hi
   {
     choice: 'removals',
     label: marker('account.apps.confirm.removals'),
-    hint: marker('account.apps.confirm.removalsHint')
+    hint: marker('account.apps.confirm.removalsHintSite')
   },
   { choice: 'all', label: marker('account.apps.confirm.all'), hint: marker('account.apps.confirm.allHint') }
 ];

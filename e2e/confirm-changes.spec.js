@@ -61,9 +61,11 @@ test('a removal waits for approval on its own page, and a decline changes nothin
   const kept = await request.get(API + '/recipe/getAll', { headers: auth });
   expect((await kept.json()).map((r) => r.title)).toContain('Tenmoku');
 
-  // Opened again once decided: nothing waits there.
+  // Opened again once decided, after the script has read what came of it: the page still says.
+  const polled = await request.get(API + '/pending-changes/' + second.pendingId, { headers: auth });
+  expect((await polled.json()).status).toBe('declined');
   await page.goto(new URL(second.url).pathname);
-  await expect(page.locator('.missing')).toContainText('There is no change waiting at this address.');
+  await expect(page.locator('.decided')).toContainText('Nothing was changed: the person did not approve this change.');
 });
 
 test('approves all from one app, and a token made exempt is never asked', async ({ page, request }) => {
@@ -85,8 +87,14 @@ test('approves all from one app, and a token made exempt is never asked', async 
     asked.push(await res.json());
   }
   await page.goto(new URL(asked[0].url).pathname);
-  await page.getByRole('button', { name: 'Also approve the 2 other changes waiting from Notebook helper' }).click();
-  await expect(page.locator('.answer')).toContainText('2 changes were made.');
+  // Every change the button covers is shown, each with what it sets.
+  await expect(page.locator('#others-heading')).toHaveText('2 more changes are waiting from Notebook helper');
+  await expect(page.locator('.other-summary')).toHaveText([
+    'Save a new notebook entry “Two”.',
+    'Save a new notebook entry “Three”.'
+  ]);
+  await page.getByRole('button', { name: 'Approve all 3 changes from Notebook helper' }).click();
+  await expect(page.locator('.answer')).toContainText('3 changes were made.');
   const notes = await request.get(API + '/notes/getAll', { headers: auth });
   expect((await notes.json()).map((n) => n.title).sort()).toEqual(['One', 'Three', 'Two']);
 
