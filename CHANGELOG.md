@@ -8,17 +8,26 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 - **Confirm before changes** (docs/adr/0025-confirm-before-changes.md). On Connected apps, an
   account can choose that changes from assistants, apps and access tokens wait for its approval:
-  never (the default), only removals, or every change. A waiting change has its own page,
-  `/confirm/<id>`, where the person approves or declines it signed in (or approves every change
-  waiting from the same app); no token can approve one, and it is made once, after the token, its
-  permission and the record are checked again. An assistant whose client supports the 2026-07-28
-  multi-round-trip requests is asked through the client (the website's page in URL mode, or, for a
-  removal, the client's own yes/no form); any other is told to ask the person to approve it at the
-  link. A script on the REST routes gets `202` with the change's id and link, and asks
-  `GET /api/pending-changes/:id` for what came of it. A personal token can be made with "Changes
-  from this token need no confirmation". Asking less sends the owner an email; a change waits 30
-  minutes at most, and what it would do is removed once it is decided. `get_my_settings` shows the
-  choice. English only.
+  never (the default), only removals, or every change. It holds back an assistant that misbehaves
+  or was led astray by what it read; a token's holder is trusted as the person chose. A waiting
+  change has its own page, `/confirm/<id>`, the only place it is approved: signed in, on the
+  website. The page shows each field the change sets as it is now and would be (long text cut
+  short, with "Show all"); for a removal, what the record was called before this app changed it
+  and how long ago; an app that registered itself marked "self-described"; every other change
+  waiting from the same app, with "Approve all" and "Decline all" covering exactly those shown;
+  and, once decided, what came of it. No token can approve one, and it is made once, after the
+  token, its permission and the record are checked again. An assistant whose client supports URL
+  elicitation (MCP 2026-07-28) is asked to open the page; any other, including one that offers
+  only a form of its own, is told to ask the person to approve it at the link, and a retry never
+  makes the change itself. A script on the REST routes gets `202` with the change's id and link,
+  and asks `GET /api/pending-changes/:id` for what came of it. Every route a token can change
+  records through asks, the recipe's firing links included (taking one off is a removal); a test
+  checks every such route and every write tool. At most 5 changes wait from one token or app and
+  20 per account; asking counts against the limits on changes; revoking a token or app ends its
+  waiting changes; a confirmed removal counts once against its token's removals. A personal token
+  can be made with "Changes from this token need no confirmation". Asking less sends the owner an
+  email; a change waits 30 minutes at most, and what it would do is removed once it is decided.
+  `get_my_settings` shows the choice. English only.
 - **The consent page for AI apps, and a notice for each connection** (docs/adr/0024-authorization-server.md).
   An app such as Claude or ChatGPT that asks to connect sends the person to `/connect/<id>`, after
   signing in if needed (the sign-in page now takes `?next=`, this site's pages only). It shows the
