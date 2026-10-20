@@ -182,8 +182,60 @@ export const checksOf = (
 const recipeOut = (materials: MaterialRecord[]) =>
   materials.map((material) => ({ material: material.name, amount: Number(material.amount ?? 0) }));
 
-/** What each material in a match or suggestion does. */
-const reportOut = (report: ReturnType<typeof recipe.explain>) => ({
+type Report = ReturnType<typeof recipe.explain>;
+
+/** More than this above the best the materials could do, and the match could come nearer (as the app says it). */
+const COULD_BE_NEARER = 0.5;
+
+/** How near the fit tries to bring each oxide (lib/chemistry/fit.js), as the closeness sentences say it. */
+const NEAR = '0.02, or 5% of a large amount such as silica (0.06 for soda and potash apart)';
+
+/** Formulas as a list: "Na2O, K2O and B2O3". */
+const listed = (names: string[]): string =>
+  names.length > 1 ? names.slice(0, -1).join(', ') + ' and ' + names[names.length - 1] : (names[0] ?? '');
+const isAre = (names: string[]): string => (names.length === 1 ? 'is' : 'are');
+
+/**
+ * How near a match or suggestion comes, said plainly enough to judge it by:
+ * each oxide of the new unity formula against the old (lib/chemistry/
+ * closeness.js), a verdict, and a sentence (in English, as the tools' notes
+ * are). Shown only the solver's score, an assistant could not tell a near
+ * match from a poor one.
+ */
+const closenessOut = (report: Report) => {
+  const found = report.closeness;
+  if (!found) return undefined;
+  const named = (verdict: string) => found.oxides.filter((o) => o.verdict === verdict).map((o) => o.oxide);
+  const [off, far] = [named('off'), named('far')];
+  const said = [
+    found.verdict === 'close'
+      ? `Close: every oxide of the new unity formula is within ${NEAR} of the old recipe's.`
+      : found.verdict === 'fair'
+        ? `Fair: near the old recipe's unity formula, but ${listed(off)} ${isAre(off)} off by more than ${NEAR}, though by less than three times that.`
+        : `Poor: ${listed(far)} ${isAre(far)} off by more than three times ${NEAR}, so expect a different glaze.` +
+          (off.length ? ` ${listed(off)} ${isAre(off)} off by less.` : ''),
+    report.unreachable.length ? `Nothing given supplies ${listed(report.unreachable)}.` : '',
+    report.miss - report.best < COULD_BE_NEARER
+      ? 'These materials cannot come much nearer.'
+      : 'These materials could come nearer: see couldHelp and capped.'
+  ];
+  return {
+    verdict: found.verdict,
+    summary: said.filter(Boolean).join(' '),
+    oxides: found.oxides.map((o) => ({
+      oxide: o.oxide,
+      old: rounded(o.was),
+      new: rounded(o.now),
+      difference: rounded(o.difference),
+      ...(o.was > 0 && { percent: Math.round((100 * o.difference) / o.was) }),
+      verdict: o.verdict
+    }))
+  };
+};
+
+/** What each material in a match or suggestion does, and how near it comes. */
+const reportOut = (report: Report, language: string) => ({
+  closeness: closenessOut(report),
   uses: report.uses.map((use) => ({
     material: use.name,
     amount: rounded(use.amount.value, use.amount.places),
@@ -191,10 +243,34 @@ const reportOut = (report: ReturnType<typeof recipe.explain>) => ({
     needed: use.needed
   })),
   couldHelp: report.couldHelp.map((c) => ({ material: c.name, helps: rounded(c.helps, 3) })),
+  // Caps that cost match, as percents of the batch: allowMore lifts one.
+  capped: report.capped.map((c) => ({
+    materials: c.members,
+    most: rounded(c.most, 1),
+    wouldBe: rounded(c.wouldBe, 1),
+    ...(c.why && { why: recipeText(c.why, language) })
+  })),
   unreachable: report.unreachable,
   miss: rounded(report.miss, 4),
   best: rounded(report.best, 4)
 });
+
+/** Library names to lift a cap from, as the library has them; a ToolProblem names any not in it. */
+const allowedMore = (names: string[] | undefined): string[] => {
+  const unknown = (names ?? []).filter((name) => !findMaterial(name));
+  if (unknown.length)
+    throw new ToolProblem(`Not in the library: ${unknown.join(', ')}. Use search_materials to find the names.`);
+  return (names ?? []).map((name) => findMaterial(name)!.name);
+};
+
+/** Materials whose suggested cap to lift. */
+export const allowMoreArg = z
+  .array(z.string().min(1).max(200))
+  .max(20)
+  .optional()
+  .describe(
+    "Materials whose suggested cap to lift, as report.capped names them: raw clay is held to 20% of the batch (or the recipe's own share) where that costs the match little."
+  );
 
 export const registerPublicTools = (server: McpServer, caller: Caller): void => {
   server.registerTool(
@@ -335,19 +411,21 @@ export const registerPublicTools = (server: McpServer, caller: Caller): void => 
     {
       title: 'Substitutes for old materials',
       description:
-        'Finds the discontinued or scarce materials in a recipe and the modern ones that replace them, then suggests amounts that keep the unity formula as near as the materials allow, as the Glazecalc app does. Test any suggestion before using it.',
+        'Finds the discontinued or scarce materials in a recipe and the modern ones that replace them, then suggests amounts that keep the unity formula as near as the materials allow, as the Glazecalc app does. report.closeness says how near the new unity formula comes to the old, oxide by oxide, as match_from_materials does. Test any suggestion before using it.',
       inputSchema: z.object({
         lines: linesArg,
         region: regionArg,
         allowLead: z.boolean().optional().describe('Whether materials with lead may be suggested. Off by default.'),
+        allowMore: allowMoreArg,
         language: languageArg
       }),
       annotations: READ_ONLY
     },
-    async ({ lines, region, allowLead, language }) => {
+    async ({ lines, region, allowLead, allowMore, language }) => {
       const lang = languageOf(language);
       return guarded(() => {
         const resolved = resolveLines(lines);
+        const uncapped = allowedMore(allowMore);
         const options = { allowLead: allowLead ?? false };
         const plan = recipe.planSuggestion<MaterialRecord>(
           resolved,
@@ -364,13 +442,10 @@ export const registerPublicTools = (server: McpServer, caller: Caller): void => 
           .filter((material): material is LibraryRecord => Boolean(material))
           // One material can be the best choice for two oxides: it comes in once.
           .filter((material, i, all) => all.findIndex((other) => other.name === material.name) === i);
-        const suggestion = recipe.suggestAmounts<MaterialRecord>(
-          resolved,
-          findMaterial,
-          bringIn,
-          region ?? '',
-          options
-        );
+        const suggestion = recipe.suggestAmounts<MaterialRecord>(resolved, findMaterial, bringIn, region ?? '', {
+          ...options,
+          uncapped
+        });
         return ok({
           swaps: plan.swaps,
           shortfalls: plan.shortfalls.map((s) => ({
@@ -383,7 +458,7 @@ export const registerPublicTools = (server: McpServer, caller: Caller): void => 
           changes: suggestion.changes.map((change) => recipeText(change, lang)),
           unused: suggestion.unused,
           stillShort: suggestion.stillShort,
-          report: reportOut(suggestion.report),
+          report: reportOut(suggestion.report, lang),
           cautions: suggestion.cautions.map((caution) => cautionOut(caution, lang))
         });
       }, lang);
@@ -395,7 +470,10 @@ export const registerPublicTools = (server: McpServer, caller: Caller): void => 
     {
       title: 'Remake a recipe from given materials',
       description:
-        'Remakes a glaze recipe from only the materials listed in "have", keeping its unity formula as near as they allow, as Match with what I have does in the Glazecalc app. Test any suggestion before using it.',
+        'Remakes a glaze recipe from only the materials listed in "have", keeping its unity formula as near as they allow, as Match with what I have does in the Glazecalc app. ' +
+        "report.closeness says how near the new unity formula comes to the old, oxide by oxide: close (within 0.02, or 5% of a large amount such as silica's), off, or far (more than three times that), with a verdict (close, fair or poor) and a summary. " +
+        "report.miss and report.best are the solver's own scores, for comparing runs. Raw clay is held to 20% of the batch where that costs the match little (report.capped and allowMore say more). " +
+        'Test any suggestion before using it.',
       inputSchema: z.object({
         lines: linesArg,
         have: z
@@ -408,11 +486,12 @@ export const registerPublicTools = (server: McpServer, caller: Caller): void => 
           .max(20)
           .optional()
           .describe('Materials on hand that must stay in.'),
+        allowMore: allowMoreArg,
         language: languageArg
       }),
       annotations: READ_ONLY
     },
-    async ({ lines, have, mustUse, language }) => {
+    async ({ lines, have, mustUse, allowMore, language }) => {
       const lang = languageOf(language);
       return guarded(() => {
         const resolved = resolveLines(lines);
@@ -424,8 +503,9 @@ export const registerPublicTools = (server: McpServer, caller: Caller): void => 
           const material = findMaterial(name)!;
           return { material, must: must.has(material.name) };
         });
+        const uncapped = allowedMore(allowMore);
         countFit(caller);
-        const match = recipe.matchFromShelf(resolved, shelf);
+        const match = recipe.matchFromShelf(resolved, shelf, { uncapped });
         return ok(matchOut(match, lang));
       }, lang);
     }
@@ -436,6 +516,6 @@ export const registerPublicTools = (server: McpServer, caller: Caller): void => 
 export const matchOut = (match: ReturnType<typeof recipe.matchFromShelf>, language: string) => ({
   recipe: recipeOut(match.materials),
   changes: match.changes.map((change) => recipeText(change, language)),
-  report: reportOut(match.report),
+  report: reportOut(match.report, language),
   cautions: match.cautions.map((caution) => cautionOut(caution, language))
 });

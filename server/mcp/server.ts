@@ -27,7 +27,9 @@ const INSTRUCTIONS =
   'Glazecalc works out ceramic glaze chemistry. Use search_materials to find material names, then analyze_recipe, ' +
   'check_limits, suggest_substitutes or match_from_materials with recipe lines; blend_recipes works out the test ' +
   'tiles of a line or triaxial blend between recipes, or compares two. Amounts can be in any unit the lines ' +
-  'share. The limit checks are cautions from published limits, not proof that a glaze is food safe: say so, and ' +
+  'share. The tools that fit amounts say how near the new recipe comes to the old, oxide by oxide ' +
+  '(report.closeness): judge a match by that, not by its miss, which is the solver’s own score. ' +
+  'The limit checks are cautions from published limits, not proof that a glaze is food safe: say so, and ' +
   'advise a test firing and, for food surfaces, a leach test. search_guides finds what the guides say about glaze ' +
   'defects, safety and firing, in the person’s language, with addresses to cite; resources/read gives a guide or ' +
   'section in full (glazecalc://guides/<language>/<guide>[/<section>]), a material (glazecalc://materials/<name>) ' +
