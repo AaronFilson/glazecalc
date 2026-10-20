@@ -606,22 +606,22 @@ Dacă Kiln-Sitter se declanșează înainte să se culce conurile de pe placă, 
 
 Un **pirometru** este un indicator de temperatură care citește un **termocuplu**, o sondă de temperatură trecută prin peretele cuptorului. Arată cât de repede urcă cuptorul, ca să puteți alege coloana potrivită din tabelul conurilor. Dar citește lângă perete, nu la nivelul pieselor, și se decalibrează în timp. L&L observă că un termocuplu de tip K poate greși cu peste {{25 °F; 14 °C}} după arderi repetate la conul 6, „o diferență mai mare decât un con întreg”, în timp ce un con autoportant variază cu cel mult {{4 °F; 2 °C}}. Orton spune că pirometrele trebuie recalibrate din când în când, iar conurile sunt mijlocul prin care le verificați.
 
-## Ventilarea, privitul și siguranța {#venting}
+## Venting, peeking and safety {#venting lang=en}
 
-### Ventilarea
+### Venting
 
-La începutul unei arderi, argila și glazura{{en: glaze}} degajă vapori de apă și fum, inclusiv monoxid de carbon, iar glazurile pot degaja fum toxic și mai târziu în timpul arderii. L&L spune că evacuarea lor este „esențială”. Fără un sistem de evacuare, asta înseamnă capacul ridicat puțin și vizoarele deschise în primele etape, ca în procedurile de mai sus; încetinirea încălzirii în acest timp ajută și la arderea carbonului. Într-un cuptor fără evacuare, Dawson, care a făcut sitterul, spune de asemenea să lăsați vizorul de sus deschis pe toată durata arderii: ventilarea „va reduce deteriorarea pieselor metalice ale cuptorului și va crește durata de viață a ansamblului tubului”. O **evacuare prin partea de jos**{{en: downdraft vent}} (o evacuare cu motor montată pe cuptor) schimbă acest lucru. Ea face ventilarea, așa că Orton spune că capacul și vizoarele rămân închise pe toată durata arderii, cu excepția verificării conurilor, iar L&L spune să lăsați evacuarea pornită și să astupați vizoarele.
+Early in a firing, clay and glaze give off water vapor and fumes, including carbon monoxide, and glazes can give off toxic fumes later in the firing too. L&L calls venting them "essential". With no vent system, that means the lid propped and the peepholes open in the early stages, as in the procedures above; slowing the heating during this time also helps the carbon burn out. In a kiln without a vent, Dawson, who made the sitter, also says to leave the top peephole open for the whole firing: the venting "will reduce deterioration of the kiln's metal parts and increase the life of the tube assembly". A **downdraft vent** (a powered vent fitted to the kiln) changes this. It does the venting, so Orton says the lid and peepholes stay closed for the whole firing except to check the cones, and L&L says to leave the vent on and plug the peepholes.
 
-Pentru ventilarea încăperii și pentru detectoarele de monoxid de carbon, vedeți [Prepararea în siguranță și ventilația](/guides/safe-mixing) și [Nu vă otrăviți familia](/guides/home-safety).
+For venting the room, and for carbon monoxide alarms, see [Safe mixing and ventilation](/guides/safe-mixing) and [Don't poison your family](/guides/home-safety).
 
-### În timp ce cuptorul arde
+### While the kiln is firing
 
-- Priviți printr-un vizor numai cu ochelari de sudură cu filtru IR, grad de protecție 3; ochelarii de soare nu sunt suficienți. Skutt recomandă să răsuciți dopurile când le puneți, ca să nu cadă.
-- Nu lăsați cuptorul nesupravegheat peste timpul de ardere așteptat; un sitter nu este un sistem infailibil.
-- Nu folosiți niciodată cuptorul pe sau lângă ceva combustibil, cum ar fi o podea de lemn sau un covor.
-- Respectați distanțele de siguranță din manualul dumneavoastră. Cifrele publicate variază de la 12 țoli (30 cm) la 3 picioare (91 cm); unde manualul tace, 18 țoli (46 cm) de pereți și 3 picioare (91 cm) de orice material combustibil este alegerea cea mai sigură.
-- Țineți liber spațiul din jurul greutății sitterului, ca să poată cădea.
-- Când arderea se termină, opriți comutatoarele și opriți și disjunctorul.
+- Look through a peephole only with IR-rated shade 3 welding glasses; sunglasses are not enough. Skutt advises twisting the plugs into place so they do not fall out.
+- Stay nearby and check the kiln while it fires, above all near its expected finishing time; a sitter is not a fail-safe. Fire only when an adult will be home and awake through the whole firing.
+- Never fire on or near anything that burns, such as a wood floor or carpet.
+- Keep the clearances in your manual. Published figures range from 12 in (30 cm) to 3 ft (91 cm); where the manual is silent, 18 in (46 cm) from walls and 3 ft (91 cm) from anything that burns is the safest choice.
+- Keep the space around the sitter's weight clear so it can drop.
+- When the firing ends, turn the switches off and turn off the breaker as well.
 
 ## Răcirea și descărcarea {#cooling}
 

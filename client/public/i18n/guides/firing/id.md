@@ -606,22 +606,22 @@ Jika sitter terpicu sebelum kerucut rak rebah, naik satu kerucut lebih panas di 
 
 **Pirometer** adalah pengukur suhu yang dibaca dari **termokopel**, probe panas menembus dinding tungku. Pirometer menunjukkan seberapa cepat tungku naik, sehingga Anda dapat memilih kolom yang tepat pada tabel kerucut. Tetapi ia membaca di dekat dinding, bukan di benda, dan ia menyimpang. L&L mencatat bahwa termokopel tipe K dapat meleset lebih dari {{25 °F; 14 °C}} setelah pembakaran kerucut 6 berulang, "selisih lebih besar daripada satu kerucut penuh", sedangkan kerucut berdiri sendiri bervariasi tidak lebih dari {{4 °F; 2 °C}}. Orton menyatakan pirometer perlu dikalibrasi ulang dari waktu ke waktu, dan kerucut adalah cara Anda memeriksanya.
 
-## Ventilasi, mengintip, dan keselamatan {#venting}
+## Venting, peeking and safety {#venting lang=en}
 
-### Ventilasi
+### Venting
 
-Pada awal pembakaran, tanah liat dan glasir melepaskan uap air dan asap, termasuk karbon monoksida, dan glasir juga dapat melepaskan asap beracun pada tahap selanjutnya. L&L menyebut membuangnya "esensial". Tanpa sistem ventilasi, itu berarti tutup disangga dan lubang intip terbuka pada tahap awal, seperti pada prosedur di atas; memperlambat pemanasan selama waktu ini juga membantu karbon terbakar habis. Pada tungku tanpa ventilasi, Dawson, pembuat sitter, juga menyatakan untuk membiarkan lubang intip atas terbuka selama seluruh pembakaran: ventilasi itu "akan mengurangi kerusakan bagian logam tungku dan memperpanjang usia rakitan tabung". **Ventilasi arah bawah** (ventilasi bertenaga yang dipasang pada tungku) mengubah ini. Ventilasi ini melakukan pembuangan asap, jadi Orton menyatakan tutup dan lubang intip tetap tertutup selama seluruh pembakaran kecuali untuk memeriksa kerucut, dan L&L menyatakan untuk membiarkan ventilasi menyala dan menyumbat lubang intip.
+Early in a firing, clay and glaze give off water vapor and fumes, including carbon monoxide, and glazes can give off toxic fumes later in the firing too. L&L calls venting them "essential". With no vent system, that means the lid propped and the peepholes open in the early stages, as in the procedures above; slowing the heating during this time also helps the carbon burn out. In a kiln without a vent, Dawson, who made the sitter, also says to leave the top peephole open for the whole firing: the venting "will reduce deterioration of the kiln's metal parts and increase the life of the tube assembly". A **downdraft vent** (a powered vent fitted to the kiln) changes this. It does the venting, so Orton says the lid and peepholes stay closed for the whole firing except to check the cones, and L&L says to leave the vent on and plug the peepholes.
 
-Untuk ventilasi ruangan, dan untuk alarm karbon monoksida, lihat [Mencampur dengan aman dan ventilasi](/guides/safe-mixing) dan [Jangan meracuni keluarga Anda](/guides/home-safety).
+For venting the room, and for carbon monoxide alarms, see [Safe mixing and ventilation](/guides/safe-mixing) and [Don't poison your family](/guides/home-safety).
 
-### Saat tungku membakar
+### While the kiln is firing
 
-- Lihat melalui lubang intip hanya dengan kacamata las shade 3 berperingkat IR; kacamata hitam tidak cukup. Skutt menyarankan memutar sumbat ke tempatnya agar tidak jatuh.
-- Jangan tinggalkan tungku tanpa pengawasan melewati waktu pembakaran yang diperkirakan; sitter bukan alat yang aman dari kegagalan.
-- Jangan pernah membakar di atas atau di dekat apa pun yang dapat terbakar, seperti lantai kayu atau karpet.
-- Patuhi jarak aman dalam buku petunjuk Anda. Angka yang diterbitkan berkisar dari 12 inci (30 cm) sampai 3 kaki (91 cm); bila buku petunjuk tidak menyebutkan, 18 inci (46 cm) dari dinding dan 3 kaki (91 cm) dari apa pun yang dapat terbakar adalah pilihan yang paling aman.
-- Jaga ruang di sekitar bobot sitter tetap bebas agar dapat jatuh.
-- Ketika pembakaran berakhir, matikan sakelar dan matikan pemutus sirkuit juga.
+- Look through a peephole only with IR-rated shade 3 welding glasses; sunglasses are not enough. Skutt advises twisting the plugs into place so they do not fall out.
+- Stay nearby and check the kiln while it fires, above all near its expected finishing time; a sitter is not a fail-safe. Fire only when an adult will be home and awake through the whole firing.
+- Never fire on or near anything that burns, such as a wood floor or carpet.
+- Keep the clearances in your manual. Published figures range from 12 in (30 cm) to 3 ft (91 cm); where the manual is silent, 18 in (46 cm) from walls and 3 ft (91 cm) from anything that burns is the safest choice.
+- Keep the space around the sitter's weight clear so it can drop.
+- When the firing ends, turn the switches off and turn off the breaker as well.
 
 ## Pendinginan dan pembongkaran {#cooling}
 

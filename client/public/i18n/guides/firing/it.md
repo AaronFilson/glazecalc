@@ -606,22 +606,22 @@ Se il kiln sitter scatta prima che i coni sulla piastra si siano piegati, la vol
 
 Il **pirometro** è un indicatore di temperatura collegato a una **termocoppia**, una sonda di temperatura che attraversa la parete del forno. Mostra quanto in fretta sale il forno, così si può scegliere la colonna giusta della tabella dei coni. Ma misura vicino alla parete, non dove sono i pezzi, e con il tempo la sua lettura perde precisione. L&L nota che una termocoppia di tipo K può sbagliare di oltre {{25 °F; 14 °C}} dopo ripetute cotture a cono 6, «una differenza superiore a un cono intero», mentre un cono autoportante varia di non più di {{4 °F; 2 °C}}. Orton dice che i pirometri vanno ricalibrati di tanto in tanto, e che i coni servono a controllarli.
 
-## Ventilazione, spioncino e sicurezza {#venting}
+## Venting, peeking and safety {#venting lang=en}
 
-### Ventilazione
+### Venting
 
-All’inizio della cottura, argilla e smalto{{en: glaze}} rilasciano vapore acqueo e fumi, tra cui monossido di carbonio, e gli smalti possono rilasciare fumi tossici anche più avanti nella cottura. L&L definisce «essenziale» eliminarli. Senza un sistema di aspirazione, questo significa il coperchio sollevato e gli spioncini aperti nelle prime fasi, come nelle procedure qui sopra; rallentare il riscaldamento in questa fase aiuta anche a bruciare il carbonio. In un forno senza aspiratore, Dawson, che ha prodotto il kiln sitter, dice anche di lasciare aperto lo spioncino in alto per tutta la cottura: la ventilazione «ridurrà il deterioramento delle parti metalliche del forno e aumenterà la vita del gruppo del tubo». Un **aspiratore sotto il forno** (un’aspirazione motorizzata montata sul forno) cambia le cose. Provvede lui alla ventilazione, perciò Orton dice che il coperchio e gli spioncini restano chiusi per tutta la cottura, tranne che per controllare i coni, e L&L dice di lasciare acceso l’aspiratore e di tappare gli spioncini.
+Early in a firing, clay and glaze give off water vapor and fumes, including carbon monoxide, and glazes can give off toxic fumes later in the firing too. L&L calls venting them "essential". With no vent system, that means the lid propped and the peepholes open in the early stages, as in the procedures above; slowing the heating during this time also helps the carbon burn out. In a kiln without a vent, Dawson, who made the sitter, also says to leave the top peephole open for the whole firing: the venting "will reduce deterioration of the kiln's metal parts and increase the life of the tube assembly". A **downdraft vent** (a powered vent fitted to the kiln) changes this. It does the venting, so Orton says the lid and peepholes stay closed for the whole firing except to check the cones, and L&L says to leave the vent on and plug the peepholes.
 
-Per la ventilazione del locale e per i rilevatori di monossido di carbonio, vedere [Miscelazione sicura e ventilazione](/guides/safe-mixing) e [Non avvelenare la propria famiglia](/guides/home-safety).
+For venting the room, and for carbon monoxide alarms, see [Safe mixing and ventilation](/guides/safe-mixing) and [Don't poison your family](/guides/home-safety).
 
-### Mentre il forno cuoce
+### While the kiln is firing
 
-- Guardare dallo spioncino solo con occhiali da saldatura con filtro IR di grado 3; gli occhiali da sole non bastano. Skutt consiglia di avvitare i tappi in sede perché non cadano.
-- Non lasciare il forno incustodito oltre il tempo di cottura previsto; un kiln sitter non è una sicurezza infallibile.
-- Non cuocere mai su o vicino a materiali combustibili, come un pavimento in legno o la moquette.
-- Rispettare le distanze di sicurezza del manuale. I valori pubblicati vanno da 12 pollici (30 cm) a 3 piedi (91 cm); dove il manuale non dice nulla, 18 pollici (46 cm) dalle pareti e 3 piedi (91 cm) da qualsiasi materiale combustibile sono la scelta più sicura.
-- Tenere libero lo spazio intorno al peso del kiln sitter, perché possa cadere.
-- Quando la cottura finisce, spegnere gli interruttori e spegnere anche l’interruttore automatico.
+- Look through a peephole only with IR-rated shade 3 welding glasses; sunglasses are not enough. Skutt advises twisting the plugs into place so they do not fall out.
+- Stay nearby and check the kiln while it fires, above all near its expected finishing time; a sitter is not a fail-safe. Fire only when an adult will be home and awake through the whole firing.
+- Never fire on or near anything that burns, such as a wood floor or carpet.
+- Keep the clearances in your manual. Published figures range from 12 in (30 cm) to 3 ft (91 cm); where the manual is silent, 18 in (46 cm) from walls and 3 ft (91 cm) from anything that burns is the safest choice.
+- Keep the space around the sitter's weight clear so it can drop.
+- When the firing ends, turn the switches off and turn off the breaker as well.
 
 ## Raffreddamento e scarico {#cooling}
 

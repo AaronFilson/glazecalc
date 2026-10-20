@@ -606,22 +606,22 @@ Kui Kiln-Sitter rakendub enne, kui ahjuplaadi koonused on maas, pange järgmisel
 
 **Püromeeter** on temperatuurinäidik, mis saab näidu **termopaarilt**, läbi ahju seina ulatuvalt kuumusandurilt. See näitab, kui kiiresti ahi tõuseb, nii et saate valida koonuste tabelist õige veeru. Kuid see mõõdab seina lähedal, mitte esemete juures, ja selle näit triivib. L&L märgib, et K-tüüpi termopaari näit võib pärast korduvaid koonuse 6 põletusi erineda rohkem kui {{25 °F; 14 °C}}, „erinevus, mis on suurem kui terve koonus“, samas kui isetoetuva koonuse kõikumine ei ületa {{4 °F; 2 °C}}. Orton ütleb, et püromeetreid tuleb aeg-ajalt uuesti kalibreerida, ja koonused on see, millega neid kontrollida.
 
-## Ventilatsioon, sissevaatamine ja ohutus {#venting}
+## Venting, peeking and safety {#venting lang=en}
 
-### Ventilatsioon
+### Venting
 
-Põletuse alguses eraldavad savi ja glasuur veeauru ja ahjuaure, sealhulgas vingugaasi (süsinikmonooksiidi), ja glasuurid võivad mürgiseid aure eraldada ka põletuse hilisemas osas. L&L nimetab nende väljajuhtimist „hädavajalikuks“. Ilma väljatõmbesüsteemita tähendab see, et algetappides on kaas praokil ja vaateavad lahti, nagu ülaltoodud toimingutes; kuumutamise aeglustamine sel ajal aitab ka süsinikul välja põleda. Väljatõmbeta ahjus ütleb ka Dawson, Kiln-Sitteri{{en: kiln sitter}} valmistaja, et ülemine vaateava jäetagu kogu põletuse ajaks lahti: ventileerimine „vähendab ahju metallosade kulumist ja pikendab toru koostu eluiga“. **Põhja kaudu imev väljatõmbeseade** (ahju külge paigaldatud mootoriga väljatõmme) muudab selle. See ventileerib ise, seega jäävad Ortoni sõnul kaas ja vaateavad kogu põletuse ajaks suletuks, välja arvatud koonuste kontrollimiseks, ja L&L ütleb, et väljatõmme jäetagu sisse ja vaateavad topitagu kinni.
+Early in a firing, clay and glaze give off water vapor and fumes, including carbon monoxide, and glazes can give off toxic fumes later in the firing too. L&L calls venting them "essential". With no vent system, that means the lid propped and the peepholes open in the early stages, as in the procedures above; slowing the heating during this time also helps the carbon burn out. In a kiln without a vent, Dawson, who made the sitter, also says to leave the top peephole open for the whole firing: the venting "will reduce deterioration of the kiln's metal parts and increase the life of the tube assembly". A **downdraft vent** (a powered vent fitted to the kiln) changes this. It does the venting, so Orton says the lid and peepholes stay closed for the whole firing except to check the cones, and L&L says to leave the vent on and plug the peepholes.
 
-Ruumi ventileerimise ja vinguandurite kohta vaadake juhendeid [Ohutu segamine ja ventilatsioon](/guides/safe-mixing) ja [Ärge mürgitage oma peret](/guides/home-safety).
+For venting the room, and for carbon monoxide alarms, see [Safe mixing and ventilation](/guides/safe-mixing) and [Don't poison your family](/guides/home-safety).
 
-### Kui ahi põletab
+### While the kiln is firing
 
-- Vaadake läbi vaateava ainult IR-kaitsega keevitusprillidega, tumedusaste 3; päikeseprillidest ei piisa. Skutt soovitab korgid kohale keerata, et need välja ei kukuks.
-- Ärge jätke ahju järelevalveta kauemaks kui selle eeldatav põletusaeg; Kiln-Sitter ei ole rikkekindel väljalülitusseade.
-- Ärge kunagi põletage millegi süttiva peal ega lähedal, nagu puitpõrand või vaip.
-- Järgige oma ahju kasutusjuhendis antud ohutuid vahekaugusi. Avaldatud väärtused jäävad vahemikku 12 tolli (30 cm) kuni 3 jalga (91 cm); kui kasutusjuhend selle kohta midagi ei ütle, on kõige ohutum valik 18 tolli (46 cm) seintest ja 3 jalga (91 cm) kõigest, mis võib süttida.
-- Hoidke Kiln-Sitteri raskuse ümbrus vaba, et see saaks kukkuda.
-- Kui põletus lõpeb, lülitage lülitid välja ja lülitage välja ka kaitselüliti.
+- Look through a peephole only with IR-rated shade 3 welding glasses; sunglasses are not enough. Skutt advises twisting the plugs into place so they do not fall out.
+- Stay nearby and check the kiln while it fires, above all near its expected finishing time; a sitter is not a fail-safe. Fire only when an adult will be home and awake through the whole firing.
+- Never fire on or near anything that burns, such as a wood floor or carpet.
+- Keep the clearances in your manual. Published figures range from 12 in (30 cm) to 3 ft (91 cm); where the manual is silent, 18 in (46 cm) from walls and 3 ft (91 cm) from anything that burns is the safest choice.
+- Keep the space around the sitter's weight clear so it can drop.
+- When the firing ends, turn the switches off and turn off the breaker as well.
 
 ## Jahutamine ja ahju tühjendamine {#cooling}
 

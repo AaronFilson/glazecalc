@@ -606,22 +606,22 @@ Ja Kiln-Sitter nostrādā, pirms konusi uz plaukta ir noliekušies, nākamreiz, 
 
 **Pirometrs** ir temperatūras mērītājs, kas rāda **termopāra** – caur krāsns sienu ievadīta temperatūras sensora – rādījumu. Tas rāda, cik ātri krāsns sildās, tāpēc varat izvēlēties pareizo konusu tabulas kolonnu. Taču tas mēra pie sienas, nevis pie izstrādājumiem, un tā rādījumi laika gaitā nobīdās. L&L norāda, ka K tipa termopāris pēc atkārtotām apdedzināšanām līdz konusam 6 var kļūdīties par vairāk nekā {{25 °F; 14 °C}}, “atšķirība, kas lielāka par veselu konusu”, bet pašstāvoša konusa svārstības nepārsniedz {{4 °F; 2 °C}}. Orton raksta, ka pirometri laiku pa laikam ir jākalibrē no jauna un ka tos pārbauda ar konusiem.
 
-## Vēdināšana, ieskatīšanās un drošība {#venting}
+## Venting, peeking and safety {#venting lang=en}
 
-### Vēdināšana
+### Venting
 
-Apdedzināšanas sākumā māls un glazūra{{en: glaze}} izdala ūdens tvaiku, kā arī izplūdes gāzes un tvaikus, tostarp oglekļa monoksīdu (tvana gāzi), un glazūras toksiskas gāzes un tvaikus var izdalīt arī vēlāk apdedzināšanas gaitā. L&L to izvadīšanu sauc par “būtisku”. Ja nosūces sistēmas nav, tas nozīmē, ka sākuma posmos vāks ir pavērts un skatlodziņi atvērti, kā iepriekš aprakstītajās procedūrās; sildīšanas palēnināšana šajā laikā arī palīdz izdegt ogleklim. Ja krāsnij nav nosūces, Dawson, kas izgatavojis Kiln-Sitter, arī norāda visu apdedzināšanu atstāt atvērtu augšējo skatlodziņu: nosūce “samazinās krāsns metāla daļu bojāšanos un pagarinās caurulītes mezgla kalpošanas laiku”. **Nosūcējs no krāsns apakšas** (pie krāsns piestiprināts nosūcējs ar motoru) to maina. Tas pats veic nosūkšanu, tāpēc, pēc Ortona teiktā, vāks un skatlodziņi visu apdedzināšanu paliek aizvērti, izņemot brīžus, kad pārbauda konusus, un L&L norāda atstāt nosūcēju ieslēgtu un skatlodziņus aizbāzt.
+Early in a firing, clay and glaze give off water vapor and fumes, including carbon monoxide, and glazes can give off toxic fumes later in the firing too. L&L calls venting them "essential". With no vent system, that means the lid propped and the peepholes open in the early stages, as in the procedures above; slowing the heating during this time also helps the carbon burn out. In a kiln without a vent, Dawson, who made the sitter, also says to leave the top peephole open for the whole firing: the venting "will reduce deterioration of the kiln's metal parts and increase the life of the tube assembly". A **downdraft vent** (a powered vent fitted to the kiln) changes this. It does the venting, so Orton says the lid and peepholes stay closed for the whole firing except to check the cones, and L&L says to leave the vent on and plug the peepholes.
 
-Par telpas vēdināšanu un tvana gāzes detektoriem skatiet ceļvežus [Droša jaukšana un ventilācija](/guides/safe-mixing) un [Nesaindējiet savu ģimeni](/guides/home-safety).
+For venting the room, and for carbon monoxide alarms, see [Safe mixing and ventilation](/guides/safe-mixing) and [Don't poison your family](/guides/home-safety).
 
-### Krāsns darbības laikā
+### While the kiln is firing
 
-- Caur skatlodziņu skatieties tikai ar metināšanas aizsargbrillēm ar aizsardzību pret infrasarkano (IS) starojumu un tumšuma pakāpi 3; saulesbrilles nav pietiekamas. Skutt iesaka aizbāžņus ievietot ar pagriezienu, lai tie neizkristu.
-- Neatstājiet krāsni bez uzraudzības ilgāk par paredzamo apdedzināšanas laiku; Kiln-Sitter nav drošības atslēdzējs, kas izslēgtu krāsni arī bojājuma gadījumā.
-- Nekad neapdedziniet uz kaut kā degoša vai tā tuvumā, piemēram, uz koka grīdas vai paklāja.
-- Ievērojiet lietošanas instrukcijā norādītos drošības attālumus. Publicētie skaitļi ir no 12 collām (30 cm) līdz 3 pēdām (91 cm); ja instrukcijā nekas nav teikts, drošākā izvēle ir 18 collu (46 cm) attālums no sienām un 3 pēdu (91 cm) attālums no visa, kas var degt.
-- Turiet brīvu vietu ap Kiln-Sitter atsvaru, lai tas varētu nokrist.
-- Kad apdedzināšana beigusies, izslēdziet slēdžus un arī automātslēdzi.
+- Look through a peephole only with IR-rated shade 3 welding glasses; sunglasses are not enough. Skutt advises twisting the plugs into place so they do not fall out.
+- Stay nearby and check the kiln while it fires, above all near its expected finishing time; a sitter is not a fail-safe. Fire only when an adult will be home and awake through the whole firing.
+- Never fire on or near anything that burns, such as a wood floor or carpet.
+- Keep the clearances in your manual. Published figures range from 12 in (30 cm) to 3 ft (91 cm); where the manual is silent, 18 in (46 cm) from walls and 3 ft (91 cm) from anything that burns is the safest choice.
+- Keep the space around the sitter's weight clear so it can drop.
+- When the firing ends, turn the switches off and turn off the breaker as well.
 
 ## Dzesēšana un izkraušana {#cooling}
 

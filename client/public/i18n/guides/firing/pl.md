@@ -606,22 +606,22 @@ Jeśli wyłącznik zadziała, zanim stożki na płycie się zegną, następnym r
 
 **Pirometr** to wskaźnik temperatury odczytujący wskazania **termopary**, czyli czujnika temperatury wprowadzonego przez ścianę pieca. Pokazuje, jak szybko rośnie temperatura w piecu, dzięki czemu można wybrać właściwą kolumnę tabeli stożków. Mierzy jednak przy ścianie, a nie przy wyrobach, a jego wskazania z czasem się przesuwają. L&L zauważa, że po wielokrotnych wypałach na stożek 6 termopara typu K może się mylić o ponad {{25 °F; 14 °C}}, co daje „różnicę większą niż cały stożek”, podczas gdy stożek samonośny różni się najwyżej o {{4 °F; 2 °C}}. Orton pisze, że pirometry trzeba od czasu do czasu ponownie kalibrować, a sprawdza się je właśnie stożkami.
 
-## Odprowadzanie oparów, zaglądanie do pieca i bezpieczeństwo {#venting}
+## Venting, peeking and safety {#venting lang=en}
 
-### Odprowadzanie oparów
+### Venting
 
-Na początku wypału z gliny i szkliwa uwalnia się para wodna i opary, w tym tlenek węgla (czad), a szkliwa mogą wydzielać toksyczne opary także później w trakcie wypału. L&L nazywa ich odprowadzanie „niezbędnym”. Bez układu wyciągowego oznacza to uchyloną pokrywę i otwarte wzierniki na wczesnym etapie, jak w opisanych wyżej procedurach; wolniejsze nagrzewanie w tym czasie pomaga też wypalić się węglowi. W piecu bez wyciągu Dawson, producent wyłącznika stożkowego{{en: kiln sitter}}, zaleca też, by górny wziernik pozostawał otwarty przez cały wypał: odprowadzanie oparów „zmniejszy zużycie metalowych części pieca i wydłuży żywotność zespołu rurki”. **Wyciąg dolny** (wyciąg z napędem, zamontowany w piecu) zmienia tę zasadę. Sam odprowadza opary, więc według Ortona pokrywa i wzierniki pozostają zamknięte przez cały wypał, z wyjątkiem sprawdzania stożków, a według L&L należy zostawić wyciąg włączony i zatkać wzierniki.
+Early in a firing, clay and glaze give off water vapor and fumes, including carbon monoxide, and glazes can give off toxic fumes later in the firing too. L&L calls venting them "essential". With no vent system, that means the lid propped and the peepholes open in the early stages, as in the procedures above; slowing the heating during this time also helps the carbon burn out. In a kiln without a vent, Dawson, who made the sitter, also says to leave the top peephole open for the whole firing: the venting "will reduce deterioration of the kiln's metal parts and increase the life of the tube assembly". A **downdraft vent** (a powered vent fitted to the kiln) changes this. It does the venting, so Orton says the lid and peepholes stay closed for the whole firing except to check the cones, and L&L says to leave the vent on and plug the peepholes.
 
-Informacje o wentylacji pomieszczenia i o czujnikach czadu: zob. [Bezpieczne rozrabianie szkliw i wentylacja](/guides/safe-mixing) oraz [Jak nie otruć własnej rodziny](/guides/home-safety).
+For venting the room, and for carbon monoxide alarms, see [Safe mixing and ventilation](/guides/safe-mixing) and [Don't poison your family](/guides/home-safety).
 
-### Podczas wypału
+### While the kiln is firing
 
-- Przez wziernik wolno patrzeć wyłącznie w okularach spawalniczych z filtrem podczerwieni (IR), stopień ochrony 3; okulary przeciwsłoneczne nie wystarczą. Skutt radzi wkręcać zatyczki na miejsce, aby nie wypadały.
-- Nie zostawiać pieca bez nadzoru po upływie spodziewanego czasu wypału; wyłącznik stożkowy nie jest zabezpieczeniem niezawodnym.
-- Nigdy nie wypalać na ani w pobliżu czegokolwiek, co się pali, np. drewnianej podłogi lub dywanu.
-- Zachować odstępy podane w instrukcji. Publikowane wartości wahają się od 12 cali (30 cm) do 3 stóp (91 cm); gdy instrukcja milczy, najbezpieczniejszym wyborem jest 18 cali (46 cm) od ścian i 3 stopy (91 cm) od wszystkiego, co się pali.
-- Przestrzeń wokół ciężarka wyłącznika stożkowego zostawić wolną, aby mógł opaść.
-- Po zakończeniu wypału wyłączyć przełączniki i wyłączyć także bezpiecznik.
+- Look through a peephole only with IR-rated shade 3 welding glasses; sunglasses are not enough. Skutt advises twisting the plugs into place so they do not fall out.
+- Stay nearby and check the kiln while it fires, above all near its expected finishing time; a sitter is not a fail-safe. Fire only when an adult will be home and awake through the whole firing.
+- Never fire on or near anything that burns, such as a wood floor or carpet.
+- Keep the clearances in your manual. Published figures range from 12 in (30 cm) to 3 ft (91 cm); where the manual is silent, 18 in (46 cm) from walls and 3 ft (91 cm) from anything that burns is the safest choice.
+- Keep the space around the sitter's weight clear so it can drop.
+- When the firing ends, turn the switches off and turn off the breaker as well.
 
 ## Chłodzenie i rozładunek {#cooling}
 

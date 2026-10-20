@@ -606,22 +606,22 @@ Label: จุดเริ่มต้นสำหรับเตาเผาแ�
 
 **ไพโรมิเตอร์**คือเกจอุณหภูมิที่อ่านจาก**เทอร์โมคัปเปิล** ซึ่งเป็นโพรบความร้อนผ่านผนังเตาเผา แสดงว่าเตาเผาเพิ่มอุณหภูมิเร็วเพียงใด คุณจึงเลือกคอลัมน์ที่ถูกต้องของตารางโคนได้ แต่อ่านใกล้ผนัง ไม่ใช่ที่ชิ้นงาน และคลาดเคลื่อนได้ L&L ระบุว่าเทอร์โมคัปเปิลชนิด K อาจคลาดเคลื่อนมากกว่า {{25 °F; 14 °C}} หลังการเผาโคน 6 ซ้ำหลายครั้ง “ความต่างที่มากกว่าหนึ่งเบอร์โคนเต็ม” ขณะที่โคนตั้งเองได้ต่างกันไม่เกิน {{4 °F; 2 °C}} Orton ระบุว่าไพโรมิเตอร์ต้องปรับเทียบใหม่เป็นครั้งคราว และโคนคือวิธีตรวจสอบ
 
-## การระบายอากาศ การแอบดู และความปลอดภัย {#venting}
+## Venting, peeking and safety {#venting lang=en}
 
-### การระบายอากาศ
+### Venting
 
-ในช่วงต้นของการเผา ดินและเคลือบปล่อยไอน้ำและควัน รวมถึงคาร์บอนมอนอกไซด์ และเคลือบอาจปล่อยควันพิษในช่วงหลังของการเผาด้วย L&L เรียกการระบายควันเหล่านั้นว่า “จำเป็น” เมื่อไม่มีระบบระบายอากาศ หมายความว่าต้องค้ำฝาให้แง้มไว้และเปิดช่องดูไฟในช่วงแรก ตามขั้นตอนข้างต้น การชะลอการให้ความร้อนในช่วงนี้ช่วยให้คาร์บอนไหม้ออกด้วย ในเตาเผาที่ไม่มีระบบระบายอากาศ Dawson ผู้ผลิต Kiln-Sitter ยังระบุให้เปิดช่องดูไฟด้านบนไว้ตลอดการเผา: การระบายอากาศ “จะลดการเสื่อมสภาพของชิ้นส่วนโลหะของเตาเผาและเพิ่มอายุของชุดหลอด” (ชุดหลอดของ Kiln-Sitter) **ระบบระบายอากาศแบบดูดลง** (ระบบระบายอากาศที่ใช้พัดลมซึ่งติดตั้งกับเตาเผา) เปลี่ยนเรื่องนี้ ระบบนี้ทำหน้าที่ระบายอากาศ Orton จึงระบุว่าฝาและช่องดูไฟปิดไว้ตลอดการเผา ยกเว้นเพื่อตรวจโคน และ L&L ระบุให้เปิดระบบระบายอากาศไว้และอุดช่องดูไฟ
+Early in a firing, clay and glaze give off water vapor and fumes, including carbon monoxide, and glazes can give off toxic fumes later in the firing too. L&L calls venting them "essential". With no vent system, that means the lid propped and the peepholes open in the early stages, as in the procedures above; slowing the heating during this time also helps the carbon burn out. In a kiln without a vent, Dawson, who made the sitter, also says to leave the top peephole open for the whole firing: the venting "will reduce deterioration of the kiln's metal parts and increase the life of the tube assembly". A **downdraft vent** (a powered vent fitted to the kiln) changes this. It does the venting, so Orton says the lid and peepholes stay closed for the whole firing except to check the cones, and L&L says to leave the vent on and plug the peepholes.
 
-สำหรับการระบายอากาศในห้องและเครื่องตรวจจับคาร์บอนมอนอกไซด์ ดู [การผสมอย่างปลอดภัยและการระบายอากาศ](/guides/safe-mixing) และ [อย่าให้ครอบครัวได้รับพิษ](/guides/home-safety)
+For venting the room, and for carbon monoxide alarms, see [Safe mixing and ventilation](/guides/safe-mixing) and [Don't poison your family](/guides/home-safety).
 
-### ขณะที่เตาเผากำลังเผา
+### While the kiln is firing
 
-- มองผ่านช่องดูไฟเฉพาะเมื่อสวมแว่นเชื่อมเฉดสี 3 ที่กันอินฟราเรด; แว่นกันแดดไม่พอ Skutt แนะนำให้บิดจุกอุดช่องดูไฟเข้าที่เพื่อไม่ให้หลุด
-- ห้ามปล่อยเตาเผาโดยไม่มีคนดูแลเกินเวลาเผาที่คาดไว้; Kiln-Sitter ไม่ใช่อุปกรณ์ตัดไฟที่รับประกันความปลอดภัย (fail-safe)
-- ห้ามเผาบนหรือใกล้สิ่งที่ติดไฟได้โดยเด็ดขาด เช่น พื้นไม้หรือพรม
-- รักษาระยะห่างตามคู่มือการใช้งานของคุณ ตัวเลขที่เผยแพร่อยู่ระหว่าง 12 นิ้ว (30 cm) ถึง 3 ฟุต (91 cm) เมื่อคู่มือการใช้งานไม่ได้ระบุ 18 นิ้ว (46 cm) จากผนังและ 3 ฟุต (91 cm) จากสิ่งที่ติดไฟได้เป็นทางเลือกที่ปลอดภัยที่สุด
-- เว้นพื้นที่รอบตุ้มน้ำหนักของ Kiln-Sitter ให้โล่งเพื่อให้ตกได้
-- เมื่อการเผาสิ้นสุด ให้ปิดสวิตช์และปิดเบรกเกอร์ด้วย
+- Look through a peephole only with IR-rated shade 3 welding glasses; sunglasses are not enough. Skutt advises twisting the plugs into place so they do not fall out.
+- Stay nearby and check the kiln while it fires, above all near its expected finishing time; a sitter is not a fail-safe. Fire only when an adult will be home and awake through the whole firing.
+- Never fire on or near anything that burns, such as a wood floor or carpet.
+- Keep the clearances in your manual. Published figures range from 12 in (30 cm) to 3 ft (91 cm); where the manual is silent, 18 in (46 cm) from walls and 3 ft (91 cm) from anything that burns is the safest choice.
+- Keep the space around the sitter's weight clear so it can drop.
+- When the firing ends, turn the switches off and turn off the breaker as well.
 
 ## การทำให้เย็นและการนำชิ้นงานออก {#cooling}
 

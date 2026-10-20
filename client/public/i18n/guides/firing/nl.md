@@ -606,22 +606,22 @@ Schakelt de kiln sitter uit voordat de kegels op de ovenplaat om zijn, neem dan 
 
 Een **pyrometer** is een temperatuurmeter die zijn waarde krijgt van een **thermokoppel**, een warmtevoeler door de ovenwand. Hij laat zien hoe snel de oven stijgt, zodat u de juiste kolom van de kegeltabel kunt kiezen. Maar hij meet bij de wand, niet bij het werk, en hij verloopt. L&L merkt op dat een thermokoppel van type K na herhaalde stoken tot kegel 6 meer dan {{25 °F; 14 °C}} kan afwijken, “een verschil groter dan een hele kegel”, terwijl een zelfstaande kegel niet meer dan {{4 °F; 2 °C}} varieert. Orton zegt dat pyrometers af en toe opnieuw moeten worden gekalibreerd, en met kegels controleert u ze.
 
-## Ontluchten, kijken en veiligheid {#venting}
+## Venting, peeking and safety {#venting lang=en}
 
-### Ontluchten
+### Venting
 
-Vroeg in een stook geven klei en glazuur{{en: glaze}} waterdamp en dampen af, waaronder koolmonoxide, en glazuren kunnen later in de stook ook giftige dampen afgeven. L&L noemt het afvoeren ervan “essentieel”. Zonder afzuigsysteem betekent dat: het deksel op een kier en de kijkgaten open in de eerste fasen, zoals in de werkwijzen hierboven; ook langzamer opwarmen in die tijd helpt de koolstof uit te branden. In een oven zonder afzuiging zegt ook Dawson, die de kiln sitter maakte, het bovenste kijkgat de hele stook open te laten: de ontluchting “vermindert het verslechteren van de metalen onderdelen van de oven en verlengt de levensduur van de buis”. Een **onderafzuiging**{{en: downdraft vent}} (een aangedreven afzuiging die op de oven is gemonteerd) verandert dit. Zij verzorgt de ontluchting, dus volgens Orton blijven het deksel en de kijkgaten de hele stook dicht, behalve om de kegels te controleren, en volgens L&L laat u de afzuiging aan en stopt u de kijkgaten dicht.
+Early in a firing, clay and glaze give off water vapor and fumes, including carbon monoxide, and glazes can give off toxic fumes later in the firing too. L&L calls venting them "essential". With no vent system, that means the lid propped and the peepholes open in the early stages, as in the procedures above; slowing the heating during this time also helps the carbon burn out. In a kiln without a vent, Dawson, who made the sitter, also says to leave the top peephole open for the whole firing: the venting "will reduce deterioration of the kiln's metal parts and increase the life of the tube assembly". A **downdraft vent** (a powered vent fitted to the kiln) changes this. It does the venting, so Orton says the lid and peepholes stay closed for the whole firing except to check the cones, and L&L says to leave the vent on and plug the peepholes.
 
-Voor het ventileren van de ruimte, en voor koolmonoxidemelders, zie [Veilig mengen en ventileren](/guides/safe-mixing) en [Vergiftig uw gezin niet](/guides/home-safety).
+For venting the room, and for carbon monoxide alarms, see [Safe mixing and ventilation](/guides/safe-mixing) and [Don't poison your family](/guides/home-safety).
 
-### Terwijl de oven stookt
+### While the kiln is firing
 
-- Kijk alleen door een kijkgat met een lasbril met IR-filter van beschermingsniveau 3; een zonnebril is niet genoeg. Skutt adviseert de stoppen er met een draai in te zetten, zodat ze er niet uit vallen.
-- Laat de oven niet langer dan de verwachte stooktijd onbeheerd; een kiln sitter is geen waterdichte beveiliging.
-- Stook nooit op of vlak bij iets wat kan branden, zoals een houten vloer of tapijt.
-- Houd de veiligheidsafstanden uit uw handleiding aan. Gepubliceerde cijfers lopen uiteen van 12 inch (30 cm) tot 3 voet (91 cm); waar de handleiding zwijgt, is 18 inch (46 cm) van muren en 3 voet (91 cm) van alles wat kan branden de veiligste keuze.
-- Houd de ruimte rond het gewicht van de kiln sitter vrij, zodat het kan vallen.
-- Zet aan het einde van de stook de schakelaars uit en schakel ook de zekering uit.
+- Look through a peephole only with IR-rated shade 3 welding glasses; sunglasses are not enough. Skutt advises twisting the plugs into place so they do not fall out.
+- Stay nearby and check the kiln while it fires, above all near its expected finishing time; a sitter is not a fail-safe. Fire only when an adult will be home and awake through the whole firing.
+- Never fire on or near anything that burns, such as a wood floor or carpet.
+- Keep the clearances in your manual. Published figures range from 12 in (30 cm) to 3 ft (91 cm); where the manual is silent, 18 in (46 cm) from walls and 3 ft (91 cm) from anything that burns is the safest choice.
+- Keep the space around the sitter's weight clear so it can drop.
+- When the firing ends, turn the switches off and turn off the breaker as well.
 
 ## Afkoelen en de oven leeghalen {#cooling}
 

@@ -606,22 +606,22 @@ Slår Kiln-Sitteren fra, før keglerne på ovnpladen er bøjet ned, så gå én 
 
 Et **pyrometer** er en temperaturmåler, der aflæser et **termoelement**, en varmeføler gennem ovnvæggen. Det viser, hvor hurtigt ovnen stiger, så den rigtige kolonne i kegletabellen kan vælges. Men det måler nær væggen, ikke ved emnerne, og det driver med tiden. L&L bemærker, at et termoelement af type K kan vise mere end {{25 °F; 14 °C}} forkert efter gentagne brændinger til kegle 6, »en forskel, der er større end en hel kegle«, mens en selvstående kegle højst varierer med {{4 °F; 2 °C}}. Ifølge Orton skal pyrometre kalibreres igen fra tid til anden, og det er med kegler, de tjekkes.
 
-## Udsugning, kig og sikkerhed {#venting}
+## Venting, peeking and safety {#venting lang=en}
 
-### Udsugning
+### Venting
 
-Tidligt i en brænding afgiver ler og glasur{{en: glaze}} vanddamp og dampe, herunder kulilte, og glasurer kan også afgive giftige dampe senere i brændingen. L&L kalder det »afgørende« at lede dem væk. Uden et udsugningssystem betyder det låget på klem og kighullerne åbne i de tidlige trin, som i fremgangsmåderne ovenfor; at opvarme langsommere i den tid hjælper også kulstoffet med at brænde ud. I en ovn uden udsugning siger Dawson, som lavede Kiln-Sitteren, også, at det øverste kighul skal stå åbent under hele brændingen: udluftningen »vil mindske slid på ovnens metaldele og forlænge rørenhedens levetid«. En **bundudsugning**{{en: downdraft vent}} (en motordrevet udsugning, der monteres på ovnen) ændrer det. Den klarer udsugningen, så ifølge Orton bliver låget og kighullerne lukket under hele brændingen, undtagen for at kontrollere keglerne, og L&L siger, at udsugningen skal være tændt, og kighullerne proppes.
+Early in a firing, clay and glaze give off water vapor and fumes, including carbon monoxide, and glazes can give off toxic fumes later in the firing too. L&L calls venting them "essential". With no vent system, that means the lid propped and the peepholes open in the early stages, as in the procedures above; slowing the heating during this time also helps the carbon burn out. In a kiln without a vent, Dawson, who made the sitter, also says to leave the top peephole open for the whole firing: the venting "will reduce deterioration of the kiln's metal parts and increase the life of the tube assembly". A **downdraft vent** (a powered vent fitted to the kiln) changes this. It does the venting, so Orton says the lid and peepholes stay closed for the whole firing except to check the cones, and L&L says to leave the vent on and plug the peepholes.
 
-Om ventilation af rummet og om kuliltealarmer, se [Sikker blanding og ventilation](/guides/safe-mixing) og [Forgift ikke familien](/guides/home-safety).
+For venting the room, and for carbon monoxide alarms, see [Safe mixing and ventilation](/guides/safe-mixing) and [Don't poison your family](/guides/home-safety).
 
-### Mens ovnen brænder
+### While the kiln is firing
 
-- Kig kun gennem et kighul med svejsebriller med IR-filter i beskyttelsestrin 3; solbriller er ikke nok. Skutt anbefaler at dreje propperne på plads, så de ikke falder ud.
-- Lad ikke ovnen være uden opsyn ud over den forventede brændingstid; en Kiln-Sitter er ingen fejlsikring.
-- Brænd aldrig på eller i nærheden af noget, der kan brænde, som et trægulv eller et tæppe.
-- Hold afstandene fra manualen. Offentliggjorte tal spænder fra 12 tommer (30 cm) til 3 fod (91 cm); hvor manualen tier, er 18 tommer (46 cm) fra vægge og 3 fod (91 cm) fra alt, der kan brænde, det sikreste valg.
-- Hold pladsen omkring Kiln-Sitterens lod fri, så det kan falde.
-- Når brændingen er slut, så slå kontakterne fra, og slå også sikringen fra.
+- Look through a peephole only with IR-rated shade 3 welding glasses; sunglasses are not enough. Skutt advises twisting the plugs into place so they do not fall out.
+- Stay nearby and check the kiln while it fires, above all near its expected finishing time; a sitter is not a fail-safe. Fire only when an adult will be home and awake through the whole firing.
+- Never fire on or near anything that burns, such as a wood floor or carpet.
+- Keep the clearances in your manual. Published figures range from 12 in (30 cm) to 3 ft (91 cm); where the manual is silent, 18 in (46 cm) from walls and 3 ft (91 cm) from anything that burns is the safest choice.
+- Keep the space around the sitter's weight clear so it can drop.
+- When the firing ends, turn the switches off and turn off the breaker as well.
 
 ## Afkøling og tømning {#cooling}
 

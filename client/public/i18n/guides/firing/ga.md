@@ -606,22 +606,22 @@ Má mhúchann an Kiln-Sitter an áith sula mbíonn cóin na seilfe lúbtha, téi
 
 Is éard is **piriméadar** ann ná tomhsaire teochta a fhaigheann a léamh ó **theirmeachúpla**, tóireadóir teasa trí bhalla na háithe. Taispeánann sé cé chomh tapa is atá an áith ag ardú, ionas gur féidir leat an colún ceart den tábla cón a roghnú. Ach léann sé in aice leis an mballa, ní ag na píosaí, agus imíonn a léamh ó cheart le himeacht ama. Tugann L&L faoi deara go bhféadfadh earráid níos mó ná {{25 °F; 14 °C}} a bheith i dteirmeachúpla de chineál K tar éis bácálacha go cón 6 arís agus arís eile, “difríocht níos mó ná cón iomlán”, agus nach n-athraíonn cón féintacaithe níos mó ná {{4 °F; 2 °C}}. Deir Orton gur gá piriméadair a athchalabrú ó am go ham, agus gur le cóin a sheiceálann tú iad.
 
-## Aeráil, féachaint isteach agus sábháilteacht {#venting}
+## Venting, peeking and safety {#venting lang=en}
 
-### Aeráil
+### Venting
 
-Go luath sa bhácáil, scaoileann cré agus glónra{{en: glaze}} gal uisce agus múch, aonocsaíd charbóin san áireamh, agus féadann glónraí múch thocsaineach a scaoileadh níos déanaí sa bhácáil freisin. Deir L&L go bhfuil sé “riachtanach” iad a aeráil amach. Gan chóras aerála, ciallaíonn sé sin an clúdach ardaithe ar thaca agus na poill faire ar oscailt sna céimeanna tosaigh, mar atá sna nósanna imeachta thuas; cabhraíonn moilliú an téimh le linn na tréimhse seo leis an gcarbón a dhó amach freisin. In áith gan gaothaire, deir Dawson, a rinne an Kiln-Sitter, freisin an poll faire uachtair a fhágáil ar oscailt don bhácáil ar fad: “laghdóidh an aeráil meathlú páirteanna miotail na háithe agus méadóidh sí saolré chóimeáil an fheadáin”. Athraíonn **gaothaire íochtarach** (gaothaire cumhachtaithe atá feistithe ar an áith) é seo. Déanann sé an aeráil, mar sin deir Orton go bhfanann an clúdach agus na poill faire dúnta don bhácáil ar fad, ach amháin chun na cóin{{en: cones}} a sheiceáil, agus deir L&L an gaothaire a fhágáil ar siúl agus na poill faire a dhúnadh le dalláin.
+Early in a firing, clay and glaze give off water vapor and fumes, including carbon monoxide, and glazes can give off toxic fumes later in the firing too. L&L calls venting them "essential". With no vent system, that means the lid propped and the peepholes open in the early stages, as in the procedures above; slowing the heating during this time also helps the carbon burn out. In a kiln without a vent, Dawson, who made the sitter, also says to leave the top peephole open for the whole firing: the venting "will reduce deterioration of the kiln's metal parts and increase the life of the tube assembly". A **downdraft vent** (a powered vent fitted to the kiln) changes this. It does the venting, so Orton says the lid and peepholes stay closed for the whole firing except to check the cones, and L&L says to leave the vent on and plug the peepholes.
 
-Maidir leis an seomra a aeráil, agus le haláraim aonocsaíde carbóin, féach na treoirleabhair [Meascadh sábháilte agus aeráil](/guides/safe-mixing) agus [Ná nimhigh do theaghlach](/guides/home-safety).
+For venting the room, and for carbon monoxide alarms, see [Safe mixing and ventilation](/guides/safe-mixing) and [Don't poison your family](/guides/home-safety).
 
-### Le linn don áith a bheith ag bácáil
+### While the kiln is firing
 
-- Ná féach trí pholl faire ach le spéaclaí táthúcháin scáth 3 atá rátáilte do IR; ní leor spéaclaí gréine. Molann Skutt na dalláin a chasadh isteach ina n-áit ionas nach dtitfidh siad amach.
-- Ná fág an áith gan aire thar an am bácála a bhfuiltear ag súil leis; ní cosaint shlánchinnte é Kiln-Sitter.
-- Ná bácáil riamh ar aon rud indóite ná in aice leis, mar shampla urlár adhmaid nó cairpéad.
-- Coinnigh an glanspás a thugann do lámhleabhar. Téann na figiúirí foilsithe ó 12 orlach (30 cm) go 3 troithe (91 cm); mura ndeir an lámhleabhar tada, is é 18 n-orlach (46 cm) ó bhallaí agus 3 troithe (91 cm) ó aon rud indóite an rogha is sábháilte.
-- Coinnigh an spás timpeall ar mheáchan an Kiln-Sitter glan, ionas gur féidir leis titim.
-- Nuair a chríochnaíonn an bhácáil, múch na lasca agus cas as an scoradán ciorcaid freisin.
+- Look through a peephole only with IR-rated shade 3 welding glasses; sunglasses are not enough. Skutt advises twisting the plugs into place so they do not fall out.
+- Stay nearby and check the kiln while it fires, above all near its expected finishing time; a sitter is not a fail-safe. Fire only when an adult will be home and awake through the whole firing.
+- Never fire on or near anything that burns, such as a wood floor or carpet.
+- Keep the clearances in your manual. Published figures range from 12 in (30 cm) to 3 ft (91 cm); where the manual is silent, 18 in (46 cm) from walls and 3 ft (91 cm) from anything that burns is the safest choice.
+- Keep the space around the sitter's weight clear so it can drop.
+- When the firing ends, turn the switches off and turn off the breaker as well.
 
 ## Fuarú agus folmhú {#cooling}
 

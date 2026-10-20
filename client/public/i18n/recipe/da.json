@@ -363,8 +363,7 @@
     "heading": "Farer",
     "intro": "Som hver råvares post angiver dem; standardbibliotekets stammer fra leverandørernes sikkerhedsdatablade.",
     "line": "<b>{names}:</b> {hazards}",
-    "unknown": "{count, plural, one {Der er ikke angivet nogen farer for {list}: se sikkerhedsdatabladet, der følger med.} other {Der er ikke angivet nogen farer for {list}: se de sikkerhedsdatablade, der følger med.}}",
-    "safety": "Tørre glasurråvarer giver støv: hold det ude af lungerne, også støv fra råvarer, der ikke er klassificeret som farlige: se <mixing>Sikker blanding og ventilation</mixing>, og <home>Forgift ikke familien</home>, hvis der er børn eller kæledyr i nærheden. Hvor en råvares sikkerhedsdatablad siger mere, så følg det."
+    "unknown": "{count, plural, one {Der er ikke angivet nogen farer for {list}: se sikkerhedsdatabladet, der følger med.} other {Der er ikke angivet nogen farer for {list}: se de sikkerhedsdatablade, der følger med.}}"
   },
   "compare": {
     "heading": "Sammenlign to opskrifter",

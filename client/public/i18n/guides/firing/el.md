@@ -606,22 +606,22 @@ Label: Σημείο εκκίνησης, χωρίς ελεγκτή
 
 Το **πυρόμετρο** είναι ένα όργανο μέτρησης θερμοκρασίας που διαβάζει ένα **θερμοστοιχείο**, έναν αισθητήρα θερμότητας που περνά μέσα από το τοίχωμα του καμινιού. Δείχνει πόσο γρήγορα ανεβαίνει το καμίνι, ώστε να διαλέξετε τη σωστή στήλη του πίνακα κώνων. Μετρά όμως κοντά στο τοίχωμα, όχι στα κομμάτια, και με τον καιρό αποκλίνει. Η L&L σημειώνει ότι ένα θερμοστοιχείο τύπου K μπορεί να αποκλίνει πάνω από {{25 °F; 14 °C}} μετά από επανειλημμένα ψησίματα στον κώνο 6, «διαφορά μεγαλύτερη από έναν ολόκληρο κώνο», ενώ ένας αυτοστηριζόμενος κώνος δεν διαφέρει πάνω από {{4 °F; 2 °C}}. Η Orton λέει ότι τα πυρόμετρα χρειάζονται επαναβαθμονόμηση πού και πού, και ότι με τους κώνους τα ελέγχετε.
 
-## Εξαερισμός, παρατήρηση και ασφάλεια {#venting}
+## Venting, peeking and safety {#venting lang=en}
 
-### Εξαερισμός
+### Venting
 
-Στην αρχή του ψησίματος, ο πηλός και το υάλωμα{{en: glaze}} βγάζουν υδρατμούς και αναθυμιάσεις, μεταξύ αυτών και μονοξείδιο του άνθρακα, και τα υαλώματα μπορεί να βγάλουν τοξικές αναθυμιάσεις και αργότερα στο ψήσιμο. Η L&L χαρακτηρίζει τον εξαερισμό τους «απαραίτητο». Χωρίς σύστημα εξαερισμού, αυτό σημαίνει καπάκι μισάνοιχτο και οπές παρατήρησης ανοιχτές στα πρώτα στάδια, όπως στις διαδικασίες παραπάνω. Αν η θέρμανση γίνεται πιο αργά σε αυτό το διάστημα, βοηθά επίσης να καεί ο άνθρακας. Σε καμίνι χωρίς εξαερισμό, ο Dawson, που κατασκεύασε το Kiln-Sitter, λέει επίσης να μένει ανοιχτή η πάνω οπή παρατήρησης σε όλο το ψήσιμο: ο εξαερισμός «θα μειώσει τη φθορά των μεταλλικών μερών του καμινιού και θα αυξήσει τη διάρκεια ζωής της διάταξης του σωλήνα». Ο **εξαερισμός από τη βάση του καμινιού** (ένα ηλεκτρικό σύστημα εξαερισμού τοποθετημένο στο καμίνι) το αλλάζει αυτό. Αναλαμβάνει τον εξαερισμό, για αυτό η Orton λέει ότι το καπάκι και οι οπές παρατήρησης μένουν κλειστά σε όλο το ψήσιμο, εκτός από τις στιγμές που ελέγχετε τους κώνους{{en: cones}}, και η L&L λέει να αφήνετε τον εξαερισμό αναμμένο και να φράζετε τις οπές παρατήρησης.
+Early in a firing, clay and glaze give off water vapor and fumes, including carbon monoxide, and glazes can give off toxic fumes later in the firing too. L&L calls venting them "essential". With no vent system, that means the lid propped and the peepholes open in the early stages, as in the procedures above; slowing the heating during this time also helps the carbon burn out. In a kiln without a vent, Dawson, who made the sitter, also says to leave the top peephole open for the whole firing: the venting "will reduce deterioration of the kiln's metal parts and increase the life of the tube assembly". A **downdraft vent** (a powered vent fitted to the kiln) changes this. It does the venting, so Orton says the lid and peepholes stay closed for the whole firing except to check the cones, and L&L says to leave the vent on and plug the peepholes.
 
-Για τον εξαερισμό του χώρου, και για τους ανιχνευτές μονοξειδίου του άνθρακα, δείτε τους οδηγούς [Ασφαλής ανάμειξη και εξαερισμός](/guides/safe-mixing) και [Μη δηλητηριάσετε την οικογένειά σας](/guides/home-safety).
+For venting the room, and for carbon monoxide alarms, see [Safe mixing and ventilation](/guides/safe-mixing) and [Don't poison your family](/guides/home-safety).
 
-### Όσο ψήνει το καμίνι
+### While the kiln is firing
 
-- Κοιτάτε από οπή παρατήρησης μόνο με γυαλιά συγκόλλησης με βαθμό σκίασης 3 και φίλτρο υπερύθρων. Τα γυαλιά ηλίου δεν αρκούν. Η Skutt συμβουλεύει να βάζετε τις τάπες στη θέση τους στρίβοντάς τες, ώστε να μην πέφτουν.
-- Μην αφήνετε το καμίνι χωρίς επίβλεψη πέρα από τον αναμενόμενο χρόνο ψησίματος. Το Kiln-Sitter δεν είναι διάταξη ασφαλής σε περίπτωση βλάβης.
-- Μην ψήνετε ποτέ πάνω ή κοντά σε ό,τι μπορεί να καεί, όπως ξύλινο πάτωμα ή χαλί.
-- Τηρήστε τις αποστάσεις ασφαλείας του εγχειριδίου σας. Οι δημοσιευμένες τιμές κυμαίνονται από 12 ίντσες (30 cm) έως 3 πόδια (91 cm). Όπου το εγχειρίδιο δεν λέει τίποτα, η ασφαλέστερη επιλογή είναι 18 ίντσες (46 cm) από τους τοίχους και 3 πόδια (91 cm) από ό,τι μπορεί να καεί.
-- Κρατήστε ελεύθερο τον χώρο γύρω από το βαρίδι του Kiln-Sitter, ώστε να μπορεί να πέσει.
-- Όταν τελειώσει το ψήσιμο, κλείστε τους διακόπτες και κατεβάστε και την ασφάλεια.
+- Look through a peephole only with IR-rated shade 3 welding glasses; sunglasses are not enough. Skutt advises twisting the plugs into place so they do not fall out.
+- Stay nearby and check the kiln while it fires, above all near its expected finishing time; a sitter is not a fail-safe. Fire only when an adult will be home and awake through the whole firing.
+- Never fire on or near anything that burns, such as a wood floor or carpet.
+- Keep the clearances in your manual. Published figures range from 12 in (30 cm) to 3 ft (91 cm); where the manual is silent, 18 in (46 cm) from walls and 3 ft (91 cm) from anything that burns is the safest choice.
+- Keep the space around the sitter's weight clear so it can drop.
+- When the firing ends, turn the switches off and turn off the breaker as well.
 
 ## Κρύωμα και ξεφόρτωμα {#cooling}
 

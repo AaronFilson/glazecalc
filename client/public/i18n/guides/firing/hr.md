@@ -606,22 +606,22 @@ Ako Kiln-Sitter isključi peć prije nego što stošci na ploči polegnu, sljede
 
 **Pirometar** je mjerač temperature koji očitava **termoelement**, toplinsku sondu kroz stijenku peći. Pokazuje koliko se brzo peć zagrijava, pa možete odabrati pravi stupac tablice stožaca. No mjeri blizu stijenke, a ne kod predmeta, i s vremenom počne odstupati. L&L napominje da termoelement tipa K nakon ponovljenih pečenja na stožac 6 može odstupati za više od {{25 °F; 14 °C}}, „razlika veća od cijelog stošca”, dok samostojeći stožac odstupa najviše {{4 °F; 2 °C}}. Orton kaže da pirometre treba povremeno ponovno umjeriti, a stošci su način da ih provjerite.
 
-## Odzračivanje, gledanje u peć i sigurnost {#venting}
+## Venting, peeking and safety {#venting lang=en}
 
-### Odzračivanje
+### Venting
 
-Na početku pečenja glina i glazura{{en: glaze}} ispuštaju vodenu paru i plinove, uključujući ugljikov monoksid, a glazure mogu i kasnije tijekom pečenja ispuštati otrovne plinove i pare. L&L kaže da je njihovo odzračivanje „nužno”. Bez sustava za odsis to znači odškrinut poklopac i otvorene kontrolne otvore u ranim fazama, kao u gore navedenim postupcima; usporavanje zagrijavanja u tom razdoblju također pomaže da ugljik izgori. U peći bez odsisa Dawson, koji je izradio Kiln-Sitter, također kaže da gornji kontrolni otvor treba ostati otvoren tijekom cijelog pečenja: odzračivanje „smanjit će propadanje metalnih dijelova peći i produljiti vijek trajanja cijevnog sklopa”. **Donji odsis** (odsis s ventilatorom ugrađenim na peć) to mijenja. On obavlja odzračivanje, pa Orton kaže da poklopac i kontrolni otvori ostaju zatvoreni tijekom cijelog pečenja, osim kad provjeravate stošce{{en: cones}}, a L&L kaže da odsis treba ostati uključen, a kontrolni otvori začepljeni.
+Early in a firing, clay and glaze give off water vapor and fumes, including carbon monoxide, and glazes can give off toxic fumes later in the firing too. L&L calls venting them "essential". With no vent system, that means the lid propped and the peepholes open in the early stages, as in the procedures above; slowing the heating during this time also helps the carbon burn out. In a kiln without a vent, Dawson, who made the sitter, also says to leave the top peephole open for the whole firing: the venting "will reduce deterioration of the kiln's metal parts and increase the life of the tube assembly". A **downdraft vent** (a powered vent fitted to the kiln) changes this. It does the venting, so Orton says the lid and peepholes stay closed for the whole firing except to check the cones, and L&L says to leave the vent on and plug the peepholes.
 
-Za ventilaciju prostorije i detektore ugljikova monoksida pogledajte vodiče [Sigurno miješanje i ventilacija](/guides/safe-mixing) i [Ne otrujte svoju obitelj](/guides/home-safety).
+For venting the room, and for carbon monoxide alarms, see [Safe mixing and ventilation](/guides/safe-mixing) and [Don't poison your family](/guides/home-safety).
 
-### Dok peć peče
+### While the kiln is firing
 
-- Kroz kontrolni otvor gledajte samo kroz naočale za zavarivanje s IC zaštitom i stupnjem zatamnjenja 3; sunčane naočale nisu dovoljne. Skutt savjetuje da čepove na mjesto umetnete uvrtanjem kako ne bi ispali.
-- Ne ostavljajte peć bez nadzora dulje od očekivanog trajanja pečenja; Kiln-Sitter nije uređaj koji jamči sigurno isključivanje.
-- Nikad ne pecite na zapaljivoj podlozi ni blizu zapaljivih stvari, poput drvenog poda ili tepiha.
-- Poštujte sigurnosne razmake iz uputa za peć. Objavljene vrijednosti kreću se od 12 inča (30 cm) do 3 stope (91 cm); ako upute o tome ništa ne kažu, najsigurniji je izbor 18 inča (46 cm) od zidova i 3 stope (91 cm) od svega zapaljivog.
-- Prostor oko utega Kiln-Sittera neka bude slobodan kako bi uteg mogao pasti.
-- Kad pečenje završi, isključite sklopke, a isključite i automatski osigurač.
+- Look through a peephole only with IR-rated shade 3 welding glasses; sunglasses are not enough. Skutt advises twisting the plugs into place so they do not fall out.
+- Stay nearby and check the kiln while it fires, above all near its expected finishing time; a sitter is not a fail-safe. Fire only when an adult will be home and awake through the whole firing.
+- Never fire on or near anything that burns, such as a wood floor or carpet.
+- Keep the clearances in your manual. Published figures range from 12 in (30 cm) to 3 ft (91 cm); where the manual is silent, 18 in (46 cm) from walls and 3 ft (91 cm) from anything that burns is the safest choice.
+- Keep the space around the sitter's weight clear so it can drop.
+- When the firing ends, turn the switches off and turn off the breaker as well.
 
 ## Hlađenje i pražnjenje peći {#cooling}
 

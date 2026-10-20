@@ -363,8 +363,7 @@
     "heading": "Perikli",
     "intro": "Kif jagħtuhom ir-rekords ta’ kull materjal; dawk tal-librerija standard ġejjin mill-iskedi ta’ data ta’ sigurtà tal-fornituri.",
     "line": "<b>{names}:</b> {hazards}",
-    "unknown": "{count, plural, one {L-ebda periklu mhu mogħti għal {list}: ara l-iskeda ta’ data ta’ sigurtà li ġġib miegħu.} two {L-ebda periklu mhu mogħti għal {list}: ara l-iskedi ta’ data ta’ sigurtà li jiġu magħhom.} few {L-ebda periklu mhu mogħti għal {list}: ara l-iskedi ta’ data ta’ sigurtà li jiġu magħhom.} many {L-ebda periklu mhu mogħti għal {list}: ara l-iskedi ta’ data ta’ sigurtà li jiġu magħhom.} other {L-ebda periklu mhu mogħti għal {list}: ara l-iskedi ta’ data ta’ sigurtà li jiġu magħhom.}}",
-    "safety": "Il-materjali tal-glejż niexfa jagħmlu trab: żomm it-trab ’il bogħod mill-pulmuni tiegħek, anke t-trab minn materjali li mhumiex ikklassifikati bħala perikolużi: ara l-gwida <mixing>Taħlit sikur u ventilazzjoni</mixing>, u l-gwida <home>Tavvelenax lill-familja tiegħek</home> jekk hemm tfal jew annimali domestiċi madwar. Fejn is-skeda ta’ data ta’ sigurtà ta’ materjal tgħid aktar, segwiha."
+    "unknown": "{count, plural, one {L-ebda periklu mhu mogħti għal {list}: ara l-iskeda ta’ data ta’ sigurtà li ġġib miegħu.} two {L-ebda periklu mhu mogħti għal {list}: ara l-iskedi ta’ data ta’ sigurtà li jiġu magħhom.} few {L-ebda periklu mhu mogħti għal {list}: ara l-iskedi ta’ data ta’ sigurtà li jiġu magħhom.} many {L-ebda periklu mhu mogħti għal {list}: ara l-iskedi ta’ data ta’ sigurtà li jiġu magħhom.} other {L-ebda periklu mhu mogħti għal {list}: ara l-iskedi ta’ data ta’ sigurtà li jiġu magħhom.}}"
   },
   "compare": {
     "heading": "Qabbel żewġ riċetti",

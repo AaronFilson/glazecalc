@@ -606,22 +606,22 @@ Jei išjungiklis suveikia anksčiau, nei nulinksta piroskopai ant plokščių, k
 
 **Pirometras** – tai temperatūros matuoklis, kurio rodmenys gaunami iš **termoporos** – pro krosnies sienelę įvesto temperatūros jutiklio. Jis rodo, kaip greitai kaista krosnis, todėl galite pasirinkti tinkamą piroskopų lentelės stulpelį. Tačiau jis matuoja prie sienelės, o ne ties dirbiniais, ir jo rodmenys laikui bėgant nukrypsta. L&L pažymi, kad po pakartotinių degimų iki piroskopo 6 K tipo termopora gali klysti daugiau nei {{25 °F; 14 °C}}, „daugiau nei visas piroskopo numeris“, o savaime stovinčio piroskopo nuokrypis ne didesnis kaip {{4 °F; 2 °C}}. Ortonas sako, kad pirometrus reikia kartkartėmis iš naujo kalibruoti, o patikrinti juos galima piroskopais.
 
-## Vėdinimas, stebėjimas ir sauga {#venting}
+## Venting, peeking and safety {#venting lang=en}
 
-### Vėdinimas
+### Venting
 
-Degimo pradžioje iš molio ir glazūros{{en: glaze}} išsiskiria vandens garai ir dūmai, įskaitant anglies monoksidą (smalkes), o glazūros toksiškų dūmų gali išskirti ir vėliau degimo metu. L&L jų šalinimą vadina „būtinu“. Jei ištraukiamosios ventiliacijos sistemos nėra, tai reiškia, kad pirmuosiuose etapuose dangtis pravertas, o stebėjimo angos atidarytos, kaip aukščiau aprašytose procedūrose; šiuo metu sulėtinus kaitinimą, be to, lengviau išdega anglis. Jei krosnis neturi ištraukimo sistemos, Dawsonas, sukūręs išjungiklį Kiln-Sitter, taip pat nurodo visą degimą laikyti atidarytą viršutinę stebėjimo angą: ventiliavimas „sumažins krosnies metalinių dalių nusidėvėjimą ir pailgins vamzdelio mazgo tarnavimo laiką“. **Ištraukiamoji ventiliacija per krosnies dugną** (prie krosnies primontuotas elektrinis ištraukiklis) tai pakeičia. Ji pati atlieka ventiliavimą, todėl, pasak Ortono, dangtis ir stebėjimo angos visą degimą lieka uždaryti, išskyrus piroskopų{{en: cones}} patikrinimą, o L&L nurodo palikti ištraukiklį įjungtą ir stebėjimo angas užkimšti.
+Early in a firing, clay and glaze give off water vapor and fumes, including carbon monoxide, and glazes can give off toxic fumes later in the firing too. L&L calls venting them "essential". With no vent system, that means the lid propped and the peepholes open in the early stages, as in the procedures above; slowing the heating during this time also helps the carbon burn out. In a kiln without a vent, Dawson, who made the sitter, also says to leave the top peephole open for the whole firing: the venting "will reduce deterioration of the kiln's metal parts and increase the life of the tube assembly". A **downdraft vent** (a powered vent fitted to the kiln) changes this. It does the venting, so Orton says the lid and peepholes stay closed for the whole firing except to check the cones, and L&L says to leave the vent on and plug the peepholes.
 
-Apie patalpos vėdinimą ir smalkių detektorius skaitykite vadovuose [Saugus maišymas ir vėdinimas](/guides/safe-mixing) ir [Neapnuodykite savo šeimos](/guides/home-safety).
+For venting the room, and for carbon monoxide alarms, see [Safe mixing and ventilation](/guides/safe-mixing) and [Don't poison your family](/guides/home-safety).
 
-### Kai krosnis įjungta
+### While the kiln is firing
 
-- Pro stebėjimo angą žiūrėkite tik pro IR spinduliuotę sulaikančius tamsumo laipsnio 3 suvirintojo akinius; akinių nuo saulės nepakanka. Skutt pataria kamščius įsukti į vietą, kad jie neiškristų.
-- Nepalikite krosnies be priežiūros ilgiau nei numatoma degimo trukmė; išjungiklis Kiln-Sitter{{en: kiln sitter}} negarantuoja, kad įvykus gedimui krosnis išsijungs.
-- Niekada neįjunkite krosnies ant to, kas gali užsidegti, ar šalia to, pavyzdžiui, ant medinių grindų ar kilimo.
-- Laikykitės naudojimo instrukcijoje nurodytų atstumų. Skelbiami skaičiai svyruoja nuo 12 colių (30 cm) iki 3 pėdų (91 cm); jei naudojimo instrukcijoje to nenurodyta, saugiausia laikytis 18 colių (46 cm) atstumo nuo sienų ir 3 pėdų (91 cm) nuo visko, kas gali užsidegti.
-- Vietą aplink išjungiklio svarelį laikykite laisvą, kad jis galėtų nukristi.
-- Degimui pasibaigus, išjunkite jungiklius ir taip pat automatinį saugiklį.
+- Look through a peephole only with IR-rated shade 3 welding glasses; sunglasses are not enough. Skutt advises twisting the plugs into place so they do not fall out.
+- Stay nearby and check the kiln while it fires, above all near its expected finishing time; a sitter is not a fail-safe. Fire only when an adult will be home and awake through the whole firing.
+- Never fire on or near anything that burns, such as a wood floor or carpet.
+- Keep the clearances in your manual. Published figures range from 12 in (30 cm) to 3 ft (91 cm); where the manual is silent, 18 in (46 cm) from walls and 3 ft (91 cm) from anything that burns is the safest choice.
+- Keep the space around the sitter's weight clear so it can drop.
+- When the firing ends, turn the switches off and turn off the breaker as well.
 
 ## Aušinimas ir iškrovimas {#cooling}
 

@@ -606,22 +606,22 @@ Label: 手動窯的起點
 
 **高溫計**{{en: pyrometer}}是用**熱電偶**讀取溫度的溫度表，熱電偶是穿過窯壁的測溫探針。高溫計能顯示窯升溫多快，讓您選對測溫錐對照表的欄位。但高溫計讀的是窯壁附近，不是作品，而且會漂移。L&L 指出，K 型熱電偶在重複燒幾次 6 號錐之後，可能偏差超過 {{25 °F; 14 °C}}，「這個差距大於整整一個錐號」，而自立式測溫錐的變化不超過 {{4 °F; 2 °C}}。Orton 說，高溫計需要不時重新校正，而測溫錐就是檢查高溫計的方法。
 
-## 排氣、觀火與安全 {#venting}
+## Venting, peeking and safety {#venting lang=en}
 
-### 排氣
+### Venting
 
-燒窯初期，黏土與釉藥會釋放水蒸氣和煙氣，包括一氧化碳，釉藥在燒窯後段也可能釋放有毒煙氣。L&L 稱將這些排出是「必要的」。沒有排氣系統時，這表示在初期階段要撐開窯蓋、打開觀火孔，如上述操作方式；這段期間放慢升溫，也有助於碳燒除。在沒有排氣裝置的窯中，製造自動斷電器的 Dawson 另外說，整個燒窯過程都要讓最上面的觀火孔保持開啟：這樣排氣「會減少窯的金屬零件劣化，並延長套管組件的使用壽命」。**下抽式排氣裝置**（裝在窯上的動力排氣裝置）會改變這個做法。排氣由這個裝置負責，所以 Orton 說除了檢查測溫錐之外，整個燒窯過程窯蓋和觀火孔都保持關閉，而 L&L 說要讓排氣裝置持續運轉，並把觀火孔塞住。
+Early in a firing, clay and glaze give off water vapor and fumes, including carbon monoxide, and glazes can give off toxic fumes later in the firing too. L&L calls venting them "essential". With no vent system, that means the lid propped and the peepholes open in the early stages, as in the procedures above; slowing the heating during this time also helps the carbon burn out. In a kiln without a vent, Dawson, who made the sitter, also says to leave the top peephole open for the whole firing: the venting "will reduce deterioration of the kiln's metal parts and increase the life of the tube assembly". A **downdraft vent** (a powered vent fitted to the kiln) changes this. It does the venting, so Orton says the lid and peepholes stay closed for the whole firing except to check the cones, and L&L says to leave the vent on and plug the peepholes.
 
-房間的通風與一氧化碳警報器，請見[安全調配與通風](/guides/safe-mixing)和[別讓家人中毒](/guides/home-safety)。
+For venting the room, and for carbon monoxide alarms, see [Safe mixing and ventilation](/guides/safe-mixing) and [Don't poison your family](/guides/home-safety).
 
-### 燒窯期間
+### While the kiln is firing
 
-- 只能戴可阻擋紅外線（IR）、遮光號數 3 的焊接護目鏡看觀火孔；太陽眼鏡不夠。Skutt 建議把塞子旋入定位，這樣才不會掉出來。
-- 請勿讓窯在超過預期燒窯時間後無人看管；自動斷電器不是故障安全裝置。
-- 切勿在會燃燒的東西上方或附近燒窯，例如木地板或地毯。
-- 請遵守使用說明書上的安全距離。已發表的數字從 12 英寸（30 cm）到 3 英尺（91 cm）都有；如果使用說明書沒有寫，距牆 18 英寸（46 cm）、距任何會燃燒的東西 3 英尺（91 cm），是最安全的選擇。
-- 自動斷電器配重周圍的空間要保持淨空，讓配重能夠落下。
-- 燒窯結束時，關掉開關，也要關掉斷路器。
+- Look through a peephole only with IR-rated shade 3 welding glasses; sunglasses are not enough. Skutt advises twisting the plugs into place so they do not fall out.
+- Stay nearby and check the kiln while it fires, above all near its expected finishing time; a sitter is not a fail-safe. Fire only when an adult will be home and awake through the whole firing.
+- Never fire on or near anything that burns, such as a wood floor or carpet.
+- Keep the clearances in your manual. Published figures range from 12 in (30 cm) to 3 ft (91 cm); where the manual is silent, 18 in (46 cm) from walls and 3 ft (91 cm) from anything that burns is the safest choice.
+- Keep the space around the sitter's weight clear so it can drop.
+- When the firing ends, turn the switches off and turn off the breaker as well.
 
 ## 冷卻與出窯 {#cooling}
 

@@ -606,22 +606,22 @@ Kiln sitter, raftaki piramitler yatmadan devreyi keserse, L&L’nin önerdiği g
 
 **Pirometre**, fırın duvarından geçen bir ısı sondası olan **termokupldan** okunan bir sıcaklık göstergesidir. Fırının ne kadar hızlı çıktığını gösterir, böylece piramit tablosunun doğru sütununu seçebilirsiniz. Ama ürünün yanını değil, duvarın yakınını okur ve zamanla kayar. L&L, tekrarlanan 6 numaralı piramit pişirimlerinden sonra K tipi bir termokuplun {{25 °F; 14 °C}} değerinden fazla sapabileceğini, bunun “tam bir piramitten daha büyük bir fark” olduğunu, kendiliğinden ayaklı bir piramidin ise en fazla {{4 °F; 2 °C}} değiştiğini belirtir. Orton, pirometrelerin zaman zaman yeniden kalibre edilmesi gerektiğini ve bunları kontrol etmenin yolunun piramitler olduğunu söyler.
 
-## Havalandırma, içeri bakma ve güvenlik {#venting}
+## Venting, peeking and safety {#venting lang=en}
 
-### Havalandırma
+### Venting
 
-Pişirimin başında çamur ve sır{{en: glaze}}, karbon monoksit de dahil olmak üzere su buharı, gaz ve duman çıkarır; sırlar pişirimin ilerleyen aşamalarında da zehirli gaz ve duman çıkarabilir. L&L bunların dışarı atılmasını “vazgeçilmez” olarak nitelendirir. Havalandırma sistemi yoksa bu, yukarıdaki yöntemlerde olduğu gibi ilk aşamalarda kapağın aralık, gözetleme deliklerinin açık olması demektir; bu süre içinde ısıtmayı yavaşlatmak karbonun yanıp gitmesine de yardımcı olur. Havalandırması olmayan bir fırında, kiln sitter’ı üreten Dawson da üst gözetleme deliğinin pişirim boyunca açık bırakılmasını söyler: havalandırma “fırının metal parçalarındaki yıpranmayı azaltır ve tüp düzeneğinin ömrünü uzatır”. **Alttan emişli bir aspiratör** (fırına takılan motorlu bir aspiratör) bunu değiştirir. Havalandırmayı o yaptığı için Orton, piramitleri{{en: cones}} kontrol etmek dışında kapağın ve gözetleme deliklerinin pişirim boyunca kapalı kalacağını söyler; L&L de aspiratörün açık bırakılmasını ve gözetleme deliklerinin tıkanmasını söyler.
+Early in a firing, clay and glaze give off water vapor and fumes, including carbon monoxide, and glazes can give off toxic fumes later in the firing too. L&L calls venting them "essential". With no vent system, that means the lid propped and the peepholes open in the early stages, as in the procedures above; slowing the heating during this time also helps the carbon burn out. In a kiln without a vent, Dawson, who made the sitter, also says to leave the top peephole open for the whole firing: the venting "will reduce deterioration of the kiln's metal parts and increase the life of the tube assembly". A **downdraft vent** (a powered vent fitted to the kiln) changes this. It does the venting, so Orton says the lid and peepholes stay closed for the whole firing except to check the cones, and L&L says to leave the vent on and plug the peepholes.
 
-Odanın havalandırılması ve karbon monoksit dedektörleri için [Güvenli karıştırma ve havalandırma](/guides/safe-mixing) ve [Ailenizi zehirlemeyin](/guides/home-safety) rehberlerine bakın.
+For venting the room, and for carbon monoxide alarms, see [Safe mixing and ventilation](/guides/safe-mixing) and [Don't poison your family](/guides/home-safety).
 
-### Fırın pişirirken
+### While the kiln is firing
 
-- Gözetleme deliğinden yalnızca IR korumalı, koyuluk derecesi 3 olan kaynak gözlüğüyle bakın; güneş gözlüğü yeterli değildir. Skutt, düşmesinler diye tıpaları çevirerek yerlerine oturtmanızı önerir.
-- Fırını beklenen pişirim süresinin ötesinde gözetimsiz bırakmayın; kiln sitter arızaya karşı güvenli bir düzenek değildir.
-- Asla ahşap zemin ya da halı gibi yanabilecek bir şeyin üzerinde ya da yakınında pişirim yapmayın.
-- Kullanım kılavuzunuzdaki güvenlik mesafelerine uyun. Yayımlanmış değerler 12 inç (30 cm) ile 3 fit (91 cm) arasında değişir; kılavuz bir şey söylemiyorsa duvarlardan 18 inç (46 cm) ve yanabilecek her şeyden 3 fit (91 cm) uzaklık en güvenli seçimdir.
-- Kiln sitter ağırlığının düşebilmesi için çevresindeki boşluğu açık tutun.
-- Pişirim bittiğinde anahtarları kapatın, sigortayı da kapatın.
+- Look through a peephole only with IR-rated shade 3 welding glasses; sunglasses are not enough. Skutt advises twisting the plugs into place so they do not fall out.
+- Stay nearby and check the kiln while it fires, above all near its expected finishing time; a sitter is not a fail-safe. Fire only when an adult will be home and awake through the whole firing.
+- Never fire on or near anything that burns, such as a wood floor or carpet.
+- Keep the clearances in your manual. Published figures range from 12 in (30 cm) to 3 ft (91 cm); where the manual is silent, 18 in (46 cm) from walls and 3 ft (91 cm) from anything that burns is the safest choice.
+- Keep the space around the sitter's weight clear so it can drop.
+- When the firing ends, turn the switches off and turn off the breaker as well.
 
 ## Soğutma ve fırının boşaltılması {#cooling}
 

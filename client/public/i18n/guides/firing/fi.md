@@ -606,22 +606,22 @@ Jos katkaisin laukeaa ennen kuin uunilevyn keilat ovat taipuneet, käytä katkai
 
 **Lämpömittari** (pyrometri) näyttää lämpötilan, jonka se lukee **termoelementistä**, uunin seinän läpi menevästä lämpöanturista. Se näyttää, kuinka nopeasti uunin lämpötila nousee, joten sen avulla voi valita keilataulukosta oikean sarakkeen. Se kuitenkin mittaa seinän lähellä eikä esineiden kohdalla, ja sen lukema muuttuu ajan myötä. L&L huomauttaa, että K-tyypin termoelementin lukema voi heittää yli {{25 °F; 14 °C}} toistuvien keilan 6 polttojen jälkeen, ”ero, joka on suurempi kuin kokonainen keila”, kun taas itsestään seisovan keilan vaihtelu on enintään {{4 °F; 2 °C}}. Ortonin mukaan lämpömittarit on kalibroitava aika ajoin uudelleen, ja keiloilla ne tarkistetaan.
 
-## Tuuletus, kurkistaminen ja turvallisuus {#venting}
+## Venting, peeking and safety {#venting lang=en}
 
-### Tuuletus
+### Venting
 
-Polton alussa savesta ja lasitteesta{{en: glaze}} vapautuu vesihöyryä ja savukaasuja, myös häkää (hiilimonoksidia), ja lasitteista voi vapautua myrkyllisiä savukaasuja myöhemminkin poltossa. L&L pitää niiden poistamista ”välttämättömänä”. Jos uunissa ei ole imujärjestelmää, tämä tarkoittaa, että alkuvaiheissa kansi on raollaan ja tirkistysaukot auki, kuten edellä esitetyissä menettelyissä; lämmityksen hidastaminen tänä aikana auttaa myös hiiltä palamaan pois. Jos uunissa ei ole savukaasuimuria, myös Kiln-Sitter-katkaisimen{{en: kiln sitter}} valmistaja Dawson sanoo, että ylin tirkistysaukko jätetään auki koko polton ajaksi: tuuletus ”vähentää uunin metalliosien rappeutumista ja pidentää putkikokoonpanon käyttöikää”. **Uunin pohjasta imevä savukaasuimuri** (uuniin asennettu moottoroitu imuri) muuttaa tämän. Se hoitaa tuuletuksen, joten Ortonin mukaan kansi ja tirkistysaukot pysyvät kiinni koko polton ajan, paitsi keiloja tarkistettaessa, ja L&L sanoo, että imuri jätetään päälle ja tirkistysaukot tukitaan.
+Early in a firing, clay and glaze give off water vapor and fumes, including carbon monoxide, and glazes can give off toxic fumes later in the firing too. L&L calls venting them "essential". With no vent system, that means the lid propped and the peepholes open in the early stages, as in the procedures above; slowing the heating during this time also helps the carbon burn out. In a kiln without a vent, Dawson, who made the sitter, also says to leave the top peephole open for the whole firing: the venting "will reduce deterioration of the kiln's metal parts and increase the life of the tube assembly". A **downdraft vent** (a powered vent fitted to the kiln) changes this. It does the venting, so Orton says the lid and peepholes stay closed for the whole firing except to check the cones, and L&L says to leave the vent on and plug the peepholes.
 
-Huoneen tuuletuksesta ja häkävaroittimista kerrotaan oppaissa [Turvallinen sekoittaminen ja ilmanvaihto](/guides/safe-mixing) ja [Älä myrkytä perhettäsi](/guides/home-safety).
+For venting the room, and for carbon monoxide alarms, see [Safe mixing and ventilation](/guides/safe-mixing) and [Don't poison your family](/guides/home-safety).
 
-### Uunin ollessa päällä
+### While the kiln is firing
 
-- Katso tirkistysaukosta vain IR-suojatuilla hitsauslaseilla, tummuusaste 3; aurinkolasit eivät riitä. Skutt neuvoo kiertämään tulpat paikoilleen, jotta ne eivät putoa.
-- Älä jätä uunia valvomatta odotetun polttoajan jälkeen; Kiln-Sitter ei ole vikaturvallinen varmistus.
-- Älä koskaan käytä uunia palavan materiaalin, kuten puulattian tai maton, päällä tai lähellä.
-- Noudata käyttöohjeen suojaetäisyyksiä. Julkaistut luvut vaihtelevat 12 tuumasta (30 cm) 3 jalkaan (91 cm); jos käyttöohje ei kerro, turvallisin valinta on 18 tuumaa (46 cm) seinistä ja 3 jalkaa (91 cm) kaikesta palavasta.
-- Pidä Kiln-Sitterin painon ympäristö vapaana, jotta paino pääsee putoamaan.
-- Kun poltto päättyy, käännä kytkimet pois päältä ja käännä myös uunin ryhmän automaattisulake pois päältä rakennuksen sähkökeskuksesta.
+- Look through a peephole only with IR-rated shade 3 welding glasses; sunglasses are not enough. Skutt advises twisting the plugs into place so they do not fall out.
+- Stay nearby and check the kiln while it fires, above all near its expected finishing time; a sitter is not a fail-safe. Fire only when an adult will be home and awake through the whole firing.
+- Never fire on or near anything that burns, such as a wood floor or carpet.
+- Keep the clearances in your manual. Published figures range from 12 in (30 cm) to 3 ft (91 cm); where the manual is silent, 18 in (46 cm) from walls and 3 ft (91 cm) from anything that burns is the safest choice.
+- Keep the space around the sitter's weight clear so it can drop.
+- When the firing ends, turn the switches off and turn off the breaker as well.
 
 ## Jäähdytys ja uunin purkaminen {#cooling}
 

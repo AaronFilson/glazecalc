@@ -606,22 +606,22 @@ Nếu Kiln-Sitter kích hoạt trước khi các côn kệ đổ xuống, lần 
 
 **Hỏa kế**{{en: pyrometer}} là một đồng hồ đo nhiệt độ được đọc từ một **cặp nhiệt điện**, một đầu dò nhiệt xuyên qua thành lò. Nó cho thấy lò đang tăng nhanh thế nào, để bạn chọn đúng cột của bảng côn. Nhưng nó đọc gần thành lò, không phải ở sản phẩm, và nó bị trôi. L&L ghi chú rằng một cặp nhiệt điện loại K có thể lệch hơn {{25 °F; 14 °C}} sau nhiều lần nung côn 6, “một chênh lệch lớn hơn một côn đầy đủ”, trong khi một côn tự đứng biến thiên không quá {{4 °F; 2 °C}}. Orton nói hỏa kế cần được hiệu chuẩn lại theo thời gian, và côn là cách bạn kiểm tra chúng.
 
-## Thông gió, quan sát và an toàn {#venting}
+## Venting, peeking and safety {#venting lang=en}
 
-### Thông gió
+### Venting
 
-Ở đầu lần nung, đất sét và men thải hơi nước và khói, gồm cacbon monoxit, và men có thể thải khói độc cả về sau trong lần nung. L&L gọi việc thông gió chúng là “thiết yếu”. Khi không có hệ thống thông gió, điều đó có nghĩa là kê nắp hở và mở các lỗ quan sát ở các giai đoạn đầu, như trong các quy trình ở trên; làm chậm việc nung nóng trong thời gian này cũng giúp cacbon cháy hết. Trong lò không có quạt thông gió, Dawson, người làm ra Kiln-Sitter, cũng nói hãy để lỗ quan sát trên cùng mở suốt lần nung: việc thông gió “sẽ giảm sự hư hại của các bộ phận kim loại của lò và tăng tuổi thọ của cụm ống”. Một **quạt thông gió hút xuống**{{en: downdraft vent}} (một quạt thông gió có động cơ gắn vào lò) thay đổi điều này. Nó làm việc thông gió, nên Orton nói nắp và các lỗ quan sát vẫn đóng suốt lần nung trừ khi kiểm tra các côn, và L&L nói hãy để quạt thông gió bật và bịt các lỗ quan sát.
+Early in a firing, clay and glaze give off water vapor and fumes, including carbon monoxide, and glazes can give off toxic fumes later in the firing too. L&L calls venting them "essential". With no vent system, that means the lid propped and the peepholes open in the early stages, as in the procedures above; slowing the heating during this time also helps the carbon burn out. In a kiln without a vent, Dawson, who made the sitter, also says to leave the top peephole open for the whole firing: the venting "will reduce deterioration of the kiln's metal parts and increase the life of the tube assembly". A **downdraft vent** (a powered vent fitted to the kiln) changes this. It does the venting, so Orton says the lid and peepholes stay closed for the whole firing except to check the cones, and L&L says to leave the vent on and plug the peepholes.
 
-Về việc thông gió cho căn phòng, và về cảnh báo cacbon monoxit, xem [Pha trộn an toàn và thông gió](/guides/safe-mixing) và [Không gây ngộ độc cho gia đình bạn](/guides/home-safety).
+For venting the room, and for carbon monoxide alarms, see [Safe mixing and ventilation](/guides/safe-mixing) and [Don't poison your family](/guides/home-safety).
 
-### Trong khi lò đang nung
+### While the kiln is firing
 
-- Chỉ nhìn qua lỗ quan sát bằng kính hàn độ tối 3 chống hồng ngoại; kính râm là không đủ. Skutt khuyên vặn các nút vào đúng chỗ để chúng không rơi ra.
-- Không để lò không người trông quá thời gian nung dự kiến; Kiln-Sitter không phải là thiết bị ngắt an toàn.
-- Tuyệt đối không nung trên hoặc gần bất cứ thứ gì cháy được, như sàn gỗ hay thảm.
-- Giữ khoảng cách an toàn trong hướng dẫn sử dụng của bạn. Các số liệu đã công bố dao động từ 12 inch (30 cm) đến 3 foot (91 cm); khi hướng dẫn sử dụng không nêu, 18 inch (46 cm) từ tường và 3 foot (91 cm) từ bất cứ thứ gì cháy được là lựa chọn an toàn nhất.
-- Giữ khoảng trống quanh quả cân của Kiln-Sitter thông thoáng để nó có thể rơi.
-- Khi lần nung kết thúc, hãy tắt các công tắc và cũng tắt cầu dao.
+- Look through a peephole only with IR-rated shade 3 welding glasses; sunglasses are not enough. Skutt advises twisting the plugs into place so they do not fall out.
+- Stay nearby and check the kiln while it fires, above all near its expected finishing time; a sitter is not a fail-safe. Fire only when an adult will be home and awake through the whole firing.
+- Never fire on or near anything that burns, such as a wood floor or carpet.
+- Keep the clearances in your manual. Published figures range from 12 in (30 cm) to 3 ft (91 cm); where the manual is silent, 18 in (46 cm) from walls and 3 ft (91 cm) from anything that burns is the safest choice.
+- Keep the space around the sitter's weight clear so it can drop.
+- When the firing ends, turn the switches off and turn off the breaker as well.
 
 ## Làm nguội và dỡ lò {#cooling}
 

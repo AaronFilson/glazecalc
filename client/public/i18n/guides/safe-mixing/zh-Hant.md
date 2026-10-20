@@ -151,66 +151,66 @@ HSE 警告，噴釉「可能產生含有 RCS 的霧氣」（RCS：可呼吸性�
 > [!WARNING]
 > 如果沒有抽氣的噴釉台，請勿噴釉。請改用刷釉或浸釉：HSE 指出，刷釉和浸釉是減少空氣中二氧化矽的方法。
 
-## 窯的排氣 {#kiln}
+## Venting the kiln {#kiln lang=en}
 
-### 燒窯時會釋放什麼
+### What a firing gives off
 
-每次燒窯都會釋放煙氣，即使只是單純的黏土也一樣。會釋放水和二氧化碳，以及有機物燃燒產生的「少量一氧化碳」；Dave Finkelnburg 在 Ceramics Monthly 撰文，稱一氧化碳的潛在危險是「最迫切的危害」。**一氧化碳**（CO）是一種讓身體缺氧的氣體，會造成疲倦、頭痛和頭暈。球狀黏土{{en: ball clay}}和炻器{{en: stoneware}}黏土中的硫，使素燒時出現臭雞蛋味，而含硫的煙氣會灼痛眼睛、鼻子和肺部。
+Every firing releases fumes, even with plain clay. Water and carbon dioxide come off, with "a little carbon monoxide" from burning organic matter, and Dave Finkelnburg, writing in Ceramics Monthly, calls the potential for carbon monoxide "the most immediate hazard". **Carbon monoxide** (CO) is a gas that starves the body of oxygen, causing fatigue, headache and dizziness. Sulfur in ball and stoneware clays gives bisque firings their rotten-egg smell, and sulfur fumes burn the eyes, nose and lungs.
 
-釉藥原料會帶來更多。有些金屬氧化物會形成燻煙，「特別是銅、鋅、錳」，可能引起**金屬燻煙熱**，一種會發冷、發燒的疾病。鉛「在較低溫度下就會汽化」，而螢石、冰晶石和鋰雲母會釋放氟化合物。沒有人發表過業餘窯的測量數據，因此我們建議每次燒窯都要排氣。
+Glaze materials add more. Some metal oxides form fumes, "notably copper, zinc, manganese", which can cause **metal fume fever**, an illness with chills and fever. Lead is "especially hazardous", the University of Utah says, because it "vaporizes at a relatively low temperature": fired to stoneware temperatures, "the lead will vaporize". Fluorspar, cryolite and lepidolite give off fluorine compounds. No one has published measurements from hobby kilns, so we suggest venting every firing.
 
-### 下抽式排氣裝置
+### Downdraft vents
 
-**下抽式排氣裝置**是裝在窯上的小型風扇裝置。排氣裝置從燒成室抽出少量空氣，用室內空氣稀釋後經由管道排到室外，在煙氣進入室內之前就把煙氣收集起來。窯製造商 Skutt 表示，所有窯製造商都建議安裝。
+A **downdraft vent** is a small fan unit fitted to the kiln. It draws a little air out of the firing chamber, dilutes it with room air and ducts it outdoors, catching fumes before they reach the room. Kiln maker Skutt says all kiln makers recommend one.
 
-- **需要補充空氣**。Skutt 的 EnviroVent 2 每分鐘將 140 立方英尺（約 4 m³）的空氣排到室外，同樣多的空氣必須補充回來。
-- **只排除「有害煙氣，不排除熱」**（Skutt），而且應獨立於建築物的暖氣和空調運作。
-- **用管道排到室外**，遠離窗戶、門和進氣口。Finkelnburg 建議使用離心式風扇（鼠籠式），而不是螺旋槳式風扇。
-- 有些地方法規要求安裝窯用排氣裝置，請查閱您當地的規定。
+- **It needs make-up air.** Skutt's EnviroVent 2 sends 140 cubic feet (about 4 m³) of air outdoors each minute, and as much must come back in.
+- **It removes "hazardous fumes only, not heat"** (Skutt), and should run independently of the building's heating and cooling.
+- **Duct it outdoors,** away from windows, doors and air intakes. Finkelnburg recommends a squirrel-cage (centrifugal) fan, not a propeller fan.
+- Some local codes require a kiln vent, so check yours.
 
-**排氣罩**（窯上方的罩子）是另一種選擇。排氣罩會把逸出的煙氣連同大量室內空氣一起抽走，但不會從窯內抽氣，而且同樣需要補充空氣。
+A **hood vent** (a canopy over the kiln) is the alternative. It pulls in fumes that escape along with a lot of room air, but draws nothing from inside the kiln, and it also needs make-up air.
 
-### 窯要放在哪裡
+### Where to put the kiln
 
-- 我們建議放在車庫、棚屋或專門放窯的房間，而不是居住空間，而且要像 Skutt 建議的那樣，能關起來不讓兒童和寵物進入。
-- **安全距離**。各資料來源說法不同：Skutt 規定與任何牆壁或**可燃**物（任何會燃燒的東西）至少相距 18 英寸（46 cm），而康乃狄克州的保險機構 CIRMA 建議與任何可燃物相距 3 英尺（0.9 m）。請依照您的窯的使用說明書；若沒有說明書，請與牆壁保持 18 英寸、與任何會燃燒的東西保持 3 英尺的距離。
-- **地板**。請使用不可燃的地板，例如混凝土或磁磚，切勿使用木頭、地毯或塑膠地板。木材、紙張和溶劑要遠離窯。
-- **電力**。CIRMA 建議使用專用迴路、不使用延長線或突波保護器、兩次燒窯之間拔掉插頭，並在 25 英尺（7.6 m）範圍內放置滅火器。
-- **室溫**。Skutt 說要讓房間的溫度低於 {{38 °C; 100 °F}}，否則溫度控制器可能會讓窯停機。由於排氣裝置不會排除熱，小房間可能還需要一台風扇。不要讓灑水頭和熱感應器正好位於窯的正上方。
-- **一氧化碳警報器**。我們沒有找到要求電窯安裝警報器的規定，但有機物燃燒會產生 CO，因此在窯房及相鄰的房間裝設警報器，是合理又便宜的做法（見[別讓家人中毒](/guides/home-safety)）。
+- We suggest a garage, shed or room set aside for the kiln rather than a living space, and one you can close off from children and pets, as Skutt advises.
+- **Clearances.** Sources differ: Skutt specifies at least 18 in (46 cm) from any wall or **combustible** material (anything that can burn), while CIRMA, a Connecticut insurer, suggests 3 ft (0.9 m) from anything combustible. Follow your kiln's manual; without one, keep 18 in from walls and 3 ft from anything that can burn.
+- **Floor.** Use a non-combustible floor such as concrete or ceramic tile, never wood, carpet or vinyl. Keep lumber, paper and solvents away from the kiln.
+- **Electrics.** CIRMA recommends a dedicated circuit, no extension cords or surge protectors, unplugging between firings, and a fire extinguisher within 25 ft (7.6 m).
+- **Room heat.** Skutt says to keep the room below {{38 °C; 100 °F}}, or the controller may shut the kiln off. As the vent removes no heat, a small room may need a fan as well. Keep sprinkler heads and heat sensors from sitting directly above the kiln.
+- **Carbon monoxide alarm.** We found no rule requiring one for an electric kiln, but burning organics make CO, so an alarm in the kiln room and the rooms next to it is a sensible, cheap step (see [Don't poison your family](/guides/home-safety)).
 
-樂燒會產生大量煙霧和 CO；猶他大學建議在室外進行，遠離進氣口和窗戶。關於燒窯本身，請參閱[基本燒窯](/guides/firing)。
+Raku makes large amounts of smoke and CO; Utah advises doing it outdoors, away from air intakes and windows. For firing itself, see [Firing a basic kiln](/guides/firing).
 
-## 最需要小心的原料 {#materials}
+## Materials that need most care {#materials lang=en}
 
-大多數釉藥原料，包括二氧化矽、黏土、長石和熔塊，主要是粉塵的危害，用上述的習慣就能控制。另有較少數的原料本身就有毒，會經由吸入、吞入或皮膚接觸造成危害。Digitalfire 還指出，色料一般比生的氧化物安全得多，而且「任何原料都可能做出會溶出有毒金屬的不平衡釉藥」：能否安全盛裝食物，取決於整個釉方，而不是單一成分。
+Most glaze materials, including silica, clays, feldspars and frits, are mainly a dust hazard, which the habits above control. A shorter list is toxic in its own right, by breathing, swallowing or skin contact. Digitalfire adds that stains are generally much safer than raw oxides, and that "unbalanced glazes that release toxic metals can be made from any materials": food safety depends on the whole recipe, not on one ingredient.
 
-**IARC 分類**是一種致癌性分類：第 1 類表示「對人類具致癌性」，第 2A 類表示「對人類很可能具致癌性」，第 2B 類表示「對人類可能具致癌性」，第 3 類表示「尚無法就其對人類的致癌性分類」，意思是證據太少，無法判斷是否致癌。
+An **IARC group** is a cancer classification: Group 1 means "carcinogenic to humans", Group 2A "probably carcinogenic to humans", Group 2B "possibly carcinogenic to humans", and Group 3 "not classifiable as to its carcinogenicity to humans", which means too little evidence to judge either way.
 
-Table: 需要特別小心的釉藥原料
-Label: 最需要小心的原料
+Table: Glaze materials that need extra care
+Label: Materials that need most care
 
-| 原料                       | 危害                                                                                                                                                                   | 預防措施                                                                                                |
-| -------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
-| 鉛化合物與含鉛熔塊         | 「吸入或吞入時毒性極高」；在窯中會在比大多數釉藥原料更低的溫度下汽化。                                                                                                 | 避免使用；Digitalfire 說只限專家使用。任何未標示「無鉛」（lead-free 或 leadless）的釉藥，都要假定含鉛。 |
-| 碳酸鋇                     | 不溶於水，但會溶於胃酸；會影響心臟和肌肉（心律不整、低血鉀）。                                                                                                         | 在釉方允許時改用含鋇熔塊或鍶；呼吸防護具；容器貼上標籤。                                                |
-| 二氧化錳                   | 粉塵或燻煙可能引起**錳中毒**，一種類似帕金森氏症的神經系統疾病，通常在暴露 1 至 3 年後發生。燻煙可能引起金屬燻煙熱。                                                   | 改用低比例的黑色色料；讓窯排氣。                                                                        |
-| 重鉻酸鉀與氧化鉻           | 六價鉻（如重鉻酸鹽中的鉻）屬 IARC 第 1 類。此分類不包括三價鉻（如氧化鉻中的鉻）。                                                                                      | 避免使用重鉻酸鹽。我們視氧化鉻的危害低得多，但仍要減少其粉塵。                                          |
-| 鈷                         | 可溶性鈷(II)鹽：IARC 2A 類；氧化鈷(II)：2B 類；黑色的 Co₃O₄：第 3 類。碳酸鈷在歐盟被分類為吸入可能致癌、可能損害生育能力、懷疑會造成遺傳性缺陷（H350i、H360F、H341）。 | 減少粉塵；用色料做黑色。                                                                                |
-| 鎳化合物                   | 列於猶他大學的已知或很可能的人類致癌物中。                                                                                                                             | 用色料，而不是高比例的鎳。                                                                              |
-| 鎘與硒（生原料或色料中的） | 鎘化合物列於猶他大學的已知或很可能的人類致癌物中。                                                                                                                     | 「只限專家」（Digitalfire）；請閱讀任何色料的安全資料表（SDS）。                                        |
-| 銻與釩                     | 三價銻（如三氧化二銻中的銻）屬 IARC 2A 類；釩「吸入時毒性極高」。                                                                                                      | 釩只限專家使用；減少銻的粉塵。                                                                          |
-| 銅與鋅                     | 窯中的燻煙可能引起金屬燻煙熱；未煅燒的氧化鋅「一般不被視為有害」。                                                                                                     | 讓窯排氣。                                                                                              |
-| 碳酸鋰                     | 「吸入時毒性極高」。一個歐盟專家委員會認定其可能損害生育能力、胎兒及哺乳中的孩子；我們查證時，尚未確認已正式通過。                                                     | 手套和呼吸防護具；遠離兒童。我們建議懷孕和哺乳期間格外小心。                                            |
-| 硼砂與硼酸                 | 在歐盟被分類為「可能對生育能力造成傷害；可能對胎兒造成傷害」。                                                                                                         | 手套；盡可能從熔塊取得硼。                                                                              |
-| 碳酸鈉、碳酸鉀、鹼性長石   | 會刺激皮膚。                                                                                                                                                           | 手套。                                                                                                  |
-| 螢石、冰晶石、鋰雲母       | 燒成時會釋放含氟氣體；螢石也會刺激皮膚。                                                                                                                               | 讓窯排氣至室外；手套。                                                                                  |
-| 滑石                       | 自 2024年7月起屬 IARC 2A 類；受石棉汙染的滑石視同石棉，屬第 1 類。                                                                                                     | 使用片狀（非纖維狀）、不含石棉的滑石；查看其安全資料表。                                                |
+| Material                               | Hazard                                                                                                                                                                                                                                       | Precaution                                                                                                  |
+| -------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| Lead compounds and lead frits          | "Highly toxic by inhalation or ingestion"; fired to stoneware temperatures, the lead vaporizes.                                                                                                                                              | Avoid; Digitalfire says experts only. Assume any glaze not labeled "lead-free" or "leadless" contains lead. |
+| Barium carbonate                       | Insoluble in water but dissolves in stomach acid; affects the heart and muscles (irregular heartbeat, low potassium).                                                                                                                        | A barium frit or strontium where the recipe allows; respirator; labeled container.                          |
+| Manganese dioxide                      | Dust or fume can cause **manganism**, a nervous-system illness like Parkinson's disease, usually after 1 to 3 years of exposure. Fume can cause metal fume fever.                                                                            | Black stains at low percentages instead; vent the kiln.                                                     |
+| Potassium dichromate and chrome oxide  | Chromium(VI), as in dichromate, is IARC Group 1. That listing does not cover chromium(III), as in chrome oxide.                                                                                                                              | Avoid dichromate. We treat chrome oxide as far less hazardous, but keep its dust down.                      |
+| Cobalt                                 | Soluble cobalt(II) salts IARC 2A; cobalt(II) oxide 2B; black Co₃O₄ Group 3. Cobalt carbonate is classified in the EU as may cause cancer if breathed in, may damage fertility and suspected of causing genetic defects (H350i, H360F, H341). | Keep dust down; stains for blacks.                                                                          |
+| Nickel compounds                       | Among the University of Utah's known or probable human carcinogens.                                                                                                                                                                          | Stains rather than high percentages.                                                                        |
+| Cadmium and selenium, raw or in stains | Cadmium compounds are among Utah's known or probable human carcinogens.                                                                                                                                                                      | "Only by experts" (Digitalfire); read any stain's SDS.                                                      |
+| Antimony and vanadium                  | Trivalent antimony (as in antimony trioxide) IARC 2A; vanadium "highly toxic by inhalation".                                                                                                                                                 | Vanadium for experts only; keep antimony dust down.                                                         |
+| Copper and zinc                        | Kiln fume can cause metal fume fever; raw zinc oxide is "generally not considered hazardous".                                                                                                                                                | Vent the kiln.                                                                                              |
+| Lithium carbonate                      | "Highly toxic by inhalation". An EU expert committee concluded it may harm fertility, the unborn child and breast-fed children; formal adoption was not confirmed when we checked.                                                           | Gloves and respirator; keep from children. We suggest extra care in pregnancy and while breastfeeding.      |
+| Borax and boric acid                   | Classified in the EU as "may damage fertility; may damage the unborn child".                                                                                                                                                                 | Gloves; boron from a frit where you can.                                                                    |
+| Soda ash, potash, alkaline feldspars   | Skin irritants.                                                                                                                                                                                                                              | Gloves.                                                                                                     |
+| Fluorspar, cryolite, lepidolite        | Release fluorine gases in firing; fluorspar also irritates skin.                                                                                                                                                                             | Vent the kiln outdoors; gloves.                                                                             |
+| Talc                                   | IARC 2A since July 2024; talc contaminated with asbestos counts as asbestos, Group 1.                                                                                                                                                        | Platy (not fibrous), asbestos-free talc; check its SDS.                                                     |
 
-硼砂、硼酸、碳酸鈉和碳酸鉀可溶於水，因此我們認為這些原料最可能經由破損的皮膚吸收，或經由沒洗的手被吞入。
+Borax, boric acid, soda ash and potash dissolve in water, so we treat them as the likeliest to be absorbed through broken skin or swallowed from unwashed hands.
 
 > [!NOTE]
-> 如果釉方要用未熔塊化的碳酸鋇、大量的錳，或任何含鉛、含鎘的原料，請找改用熔塊或色料的版本。Glazecalc 可以比較原釉方與替換後的化學組成；接著請測試新的釉藥。
+> If a recipe calls for raw barium carbonate, a lot of manganese, or any lead or cadmium material, look for a version that uses a frit or a stain instead. Glazecalc can compare the chemistry of the original and the swap; then test the new glaze.
 
 ## 手套、皮膚與眼睛 {#gloves-and-eyes}
 

@@ -363,8 +363,7 @@
     "heading": "Vaarat",
     "intro": "Sellaisina kuin kunkin raaka-aineen tietue ne antaa; vakiokirjaston vaarat ovat peräisin toimittajien käyttöturvallisuustiedotteista.",
     "line": "<b>{names}:</b> {hazards}",
-    "unknown": "{count, plural, one {Kohteelle {list} ei ole annettu vaaroja: katso sen mukana tuleva käyttöturvallisuustiedote.} other {Kohteille {list} ei ole annettu vaaroja: katso niiden mukana tulevat käyttöturvallisuustiedotteet.}}",
-    "safety": "Kuivista lasiteraaka-aineista syntyy pölyä: älä päästä sitä keuhkoihisi, ei edes sellaisten raaka-aineiden pölyä, joita ei ole luokiteltu vaarallisiksi: katso <mixing>Turvallinen sekoittaminen ja ilmanvaihto</mixing> ja <home>Älä myrkytä perhettäsi</home>, jos lähellä on lapsia tai lemmikkejä. Jos raaka-aineen käyttöturvallisuustiedote sanoo enemmän, noudata sitä."
+    "unknown": "{count, plural, one {Kohteelle {list} ei ole annettu vaaroja: katso sen mukana tuleva käyttöturvallisuustiedote.} other {Kohteille {list} ei ole annettu vaaroja: katso niiden mukana tulevat käyttöturvallisuustiedotteet.}}"
   },
   "compare": {
     "heading": "Vertaa kahta reseptiä",
