@@ -6,6 +6,22 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Added
 
+- **A Digits setting, and digits that follow each country** (docs/i18n-plan.md, Digits; groundwork for
+  the Indian subcontinent and the Arabic-speaking countries). Settings offers digits as usual where you
+  are (the default), Western digits 0–9, or the language's own digits where it has them, each with a
+  sample number. As usual follows CLDR for each country: Arabic-Indic for Arabic in Egypt, Iraq, Jordan
+  and the Gulf but the UAE; 0–9 in the UAE and the Maghreb, and for Hindi, Tamil, Sinhala and Urdu in
+  Pakistan; Bengali's own in Bangladesh; Devanagari for Marathi and Nepali. The format locale always
+  names its digits and calendar (`ar-EG-u-ca-gregory-nu-arab`), so no browser's own data decides
+  them and the prerendered page and the browser agree. The number and date formats add those of India
+  (Hindi, English), Pakistan (Urdu, English), Bangladesh (Bengali), Egypt, the UAE, Morocco, Algeria,
+  Iraq and Jordan (Arabic), Morocco and Algeria (French), Sri Lanka (Sinhala, Tamil) and Nepal (Nepali). Typed
+  numbers may now use Indian digit groups (1,00,000 and 12,34,567.5), the Arabic percent sign (٪) and a
+  percent sign before or after (5 %, %5), and may carry the marks `Intl` writes to keep a number's
+  direction in Arabic text. The translations check reads all of these and asks translations to write
+  0–9. Arabic pages will be written for Egypt, Hindi and Tamil for India, Urdu for Pakistan and Bengali
+  for Bangladesh once those are regions; nothing a live language shows changes. Kept with the account
+  (or trial) like the other settings. English only for now.
 - **Confirm before changes** (docs/adr/0025-confirm-before-changes.md). On Connected apps, an
   account can choose that changes from assistants, apps and access tokens wait for its approval:
   never (the default), only removals, or every change. It holds back an assistant that misbehaves
