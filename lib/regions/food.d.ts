@@ -25,9 +25,15 @@ export interface FoodRules {
   source: string;
   /** YYYY-MM-DD */
   inForce?: string;
+  /** Empty where the region has no law with figures (none). */
   limits: FoodLimit[];
-  /** Where the law says a piece passes at the limit itself (Japan's 以下: at most). */
+  /** Where the law says a piece passes at the limit itself (Japan's 以下, China's ≤: at most). */
   atMost?: boolean;
+  /**
+   * Where an official page says the region has no law with figures for ceramic ware (Hong Kong's):
+   * law and source are then that page, and the guide says so in place of a table.
+   */
+  none?: boolean;
   status: Status;
   checked: string;
   note?: string;

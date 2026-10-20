@@ -46,7 +46,42 @@ const KIND: Record<Limit['kind'], string> = {
                 })
               }}
             </caption>
+            <!-- A limit not yet in force (Taiwan's): the one that applies until then first, each under its dates. -->
+            @if (earlier(); as before) {
+              <tbody>
+                <tr>
+                  <th scope="colgroup" colspan="2" class="silica-period">
+                    {{ t('guides.silica.untilDate', { date: date(before.until) }) }}
+                  </th>
+                </tr>
+                @if (before.formula; as formula) {
+                  <tr>
+                    <th scope="row">{{ t('guides.silica.beforeFormula') }}</th>
+                    <td class="num">
+                      {{
+                        t(formulaKey(formula), {
+                          numerator: fixedNumber(formula.numerator, formula.places ?? 1),
+                          factor: number(formula.factor),
+                          offset: number(formula.offset ?? 1)
+                        })
+                      }}
+                    </td>
+                  </tr>
+                }
+                <tr>
+                  <th scope="row">{{ t('guides.silica.beforeAll') }}</th>
+                  <td class="num">{{ t('guides.silica.value', { value: number(before.quartz) }) }}</td>
+                </tr>
+              </tbody>
+            }
             <tbody>
+              @if (earlier() && silica.from) {
+                <tr>
+                  <th scope="colgroup" colspan="2" class="silica-period">
+                    {{ t('guides.silica.fromDate', { date: date(silica.from) }) }}
+                  </th>
+                </tr>
+              }
               @if (silica.formula; as formula) {
                 <tr>
                   <th scope="row">{{ t(formulaRow(silica)) }}</th>
@@ -104,6 +139,9 @@ const KIND: Record<Limit['kind'], string> = {
           <gc-rich [text]="t('guides.silica.setBy', { law: silica.law })" [links]="{ link: silica.source }" />
           @if (silica.from && !inForce(silica.from)) {
             {{ t('guides.silica.from', { date: date(silica.from) }) }}
+          }
+          @if (earlier(); as before) {
+            <gc-rich [text]="t('guides.silica.beforeSetBy', { law: before.law })" [links]="{ link: before.source }" />
           }
           @if (facts.eu && comparison(); as comparison) {
             {{ t(comparison, { value: number(eu.quartz) }) }}
@@ -165,7 +203,13 @@ const KIND: Record<Limit['kind'], string> = {
     } @else {
       <p>{{ t('guides.silica.choosePrompt') }}</p>
     }
-  </ng-container>`
+  </ng-container>`,
+  styles: `
+    .silica-period {
+      text-align: start;
+      padding-top: 0.75rem;
+    }
+  `
 })
 export class SilicaLimit {
   protected readonly choice = new RegionChoice();
@@ -176,11 +220,18 @@ export class SilicaLimit {
   protected readonly kind = KIND;
   private readonly now = inject(NOW);
 
+  /** The limit that applies until a new one starts (Taiwan's), while the new one is not yet in force. */
+  protected readonly earlier = computed(() => {
+    const silica = this.facts()?.silica;
+    return silica?.before && silica.from && !this.inForce(silica.from) ? silica.before : null;
+  });
+
   protected readonly checked = computed(() => {
     const facts = this.facts();
     return earliest(
       [
         facts?.silica?.checked,
+        this.earlier()?.checked,
         facts?.silica?.recommended?.checked,
         facts?.respirators?.checked,
         facts?.agency?.checked
@@ -191,6 +242,7 @@ export class SilicaLimit {
     const facts = this.facts();
     return [
       facts?.silica?.source,
+      this.earlier()?.source,
       facts?.silica?.recommended?.source,
       facts?.respirators?.source,
       facts?.agency?.url
