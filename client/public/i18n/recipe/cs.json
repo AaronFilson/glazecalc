@@ -979,7 +979,6 @@
     "approxTemperature": "≈ {temperature} ({basis}; přibližně)",
     "approxCone": "≈ {cone} ({basis}; přibližně)",
     "basis": {
-      "orton60": "velké žároměrky Orton při 60 °C za hodinu",
       "kyoto": "změřeno při 100 °C za hodinu městským ústavem v Kjótu",
       "stated": "jak je uvedeno"
     },

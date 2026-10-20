@@ -7,7 +7,6 @@ import food from '../../lib/regions/food.js';
 import suppliers from '../../lib/regions/suppliers.js';
 import workplace from '../../lib/regions/workplace.js';
 import safety from '../../lib/regions/safety.js';
-import languages from '../../lib/regions/languages.js';
 import numbers from '../../lib/recipe/numbers.js';
 import type { SafetyLine } from '../../lib/regions/safety.js';
 import { expect } from './support/app.ts';

@@ -979,7 +979,6 @@
     "approxTemperature": "≈ {temperature} ({basis}; aptuveni)",
     "approxCone": "≈ {cone} ({basis}; aptuveni)",
     "basis": {
-      "orton60": "Ortona lielie konusi 60 °C stundā",
       "kyoto": "izmērīts 100 °C stundā Kioto pilsētas institūtā",
       "stated": "kā norādīts"
     },

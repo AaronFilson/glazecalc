@@ -61,8 +61,7 @@
     "vet": "Nazovite svog veterinara.",
     "checkedOn": "Provjereno na:",
     "choosePrompt": "Odaberite svoju zemlju da biste vidjeli koga ondje nazvati.",
-    "ministry": "Stranica ministarstva zdravstva: <link>{name}</link>.",
-    "reported": "Službene vladine stranice navode brojeve 113, 114 i 115, ali ne i čemu koji služi; prikazane uloge slijede okružnicu Circular 22/2014/TT-BTTTT, kako je citiraju sekundarne stranice."
+    "ministry": "Stranica ministarstva zdravstva: <link>{name}</link>."
   },
   "density": {
     "sg": "rel. gustoća {value}",

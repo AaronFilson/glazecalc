@@ -79,41 +79,47 @@ Keilataulukko antaa itsestään seisovalle keilalle 6 lämpötilan {{2232 °F; 1
 
 :::
 
-## Keilataulukko {#cone-chart}
+## The cone chart {#cone-chart lang=en}
 
-Nämä luvut ovat Ortonin keilataulukosta (©2001) itsestään seisoville keiloille{{en: cones}}. Valitse sarake sen mukaan, kuinka nopeasti uunin lämpötila nousi polton viimeiset {{180 °F; 100 °C}}. Ortonin nyrkkisääntö on sarake {{270 °F/h; 150 °C/h}} nopealle poltolle, sarake {{108 °F/h; 60 °C/h}} keskinopealle ja sarake {{27 °F/h; 15 °C/h}} hitaalle. Nousunopeus lasketaan jakamalla lämpötilan nousu siihen kuluneilla tunneilla: uuni, jonka lämpötila nousee 3 tunnissa {{900 °F; 500 °C}}, lämpenee noin nopeudella {{300 °F/h; 167 °C/h}}.
+These figures are from Orton's cone chart (©2001) for self-supporting cones; cones 11 to 14 are from the charts Orton publishes now, which give the same figures where they overlap, and cones 13 and 14 only in °C (their °F here is converted). Choose the column that matches how fast your kiln climbed over the last {{180 °F; 100 °C}}. Orton's rule of thumb is the {{270 °F/h; 150 °C/h}} column for a fast firing, the {{108 °F/h; 60 °C/h}} column for a medium one and the {{27 °F/h; 15 °C/h}} column for a slow one. To work out a rate, divide the temperature climbed by the hours it took: a kiln that climbs {{900 °F; 500 °C}} in 3 hours is heating at about {{300 °F/h; 167 °C/h}}.
 
-Table: Ortonin itsestään seisovat keilat: lämpötila, jossa kukin taipuu, polton viimeisten {{180 °F; 100 °C}} nousunopeuden mukaan
-Label: Ortonin keilataulukko
+Table: Orton self-supporting cones: the temperature at which each bends, by heating rate over the last {{180 °F; 100 °C}}
+Label: Orton cone chart
 
-| Keila | Hidas, {{27 °F/h; 15 °C/h}} | Keskinopea, {{108 °F/h; 60 °C/h}} | Nopea, {{270 °F/h; 150 °C/h}} |
-| ----- | --------------------------: | --------------------------------: | ----------------------------: |
-| 022   |                           – |               {{1087 °F; 586 °C}} |           {{1094 °F; 590 °C}} |
-| 018   |                           – |               {{1319 °F; 715 °C}} |           {{1353 °F; 734 °C}} |
-| 015   |                           – |               {{1456 °F; 791 °C}} |           {{1504 °F; 818 °C}} |
-| 010   |         {{1636 °F; 891 °C}} |               {{1657 °F; 903 °C}} |           {{1679 °F; 915 °C}} |
-| 08    |         {{1692 °F; 922 °C}} |               {{1728 °F; 942 °C}} |           {{1753 °F; 956 °C}} |
-| 07    |                           – |               {{1789 °F; 976 °C}} |           {{1809 °F; 987 °C}} |
-| 06    |         {{1798 °F; 981 °C}} |               {{1828 °F; 998 °C}} |          {{1855 °F; 1013 °C}} |
-| 05    |        {{1870 °F; 1021 °C}} |              {{1888 °F; 1031 °C}} |          {{1911 °F; 1044 °C}} |
-| 04    |        {{1915 °F; 1046 °C}} |              {{1945 °F; 1063 °C}} |          {{1971 °F; 1077 °C}} |
-| 03    |        {{1960 °F; 1071 °C}} |              {{1987 °F; 1086 °C}} |          {{2019 °F; 1104 °C}} |
-| 02    |                           – |              {{2016 °F; 1102 °C}} |          {{2052 °F; 1122 °C}} |
-| 01    |        {{1999 °F; 1093 °C}} |              {{2046 °F; 1119 °C}} |          {{2080 °F; 1138 °C}} |
-| 1     |        {{2028 °F; 1109 °C}} |              {{2079 °F; 1137 °C}} |          {{2109 °F; 1154 °C}} |
-| 4     |        {{2086 °F; 1141 °C}} |              {{2124 °F; 1162 °C}} |          {{2161 °F; 1183 °C}} |
-| 5     |        {{2118 °F; 1159 °C}} |              {{2167 °F; 1186 °C}} |          {{2205 °F; 1207 °C}} |
-| 6     |        {{2165 °F; 1185 °C}} |              {{2232 °F; 1222 °C}} |          {{2269 °F; 1243 °C}} |
-| 7     |        {{2194 °F; 1201 °C}} |              {{2262 °F; 1239 °C}} |          {{2295 °F; 1257 °C}} |
-| 8     |        {{2212 °F; 1211 °C}} |              {{2280 °F; 1249 °C}} |          {{2320 °F; 1271 °C}} |
-| 9     |        {{2235 °F; 1224 °C}} |              {{2300 °F; 1260 °C}} |          {{2336 °F; 1280 °C}} |
-| 10    |        {{2284 °F; 1251 °C}} |              {{2345 °F; 1285 °C}} |          {{2381 °F; 1305 °C}} |
+| Cone | Slow, {{27 °F/h; 15 °C/h}} | Medium, {{108 °F/h; 60 °C/h}} | Fast, {{270 °F/h; 150 °C/h}} |
+| ---- | -------------------------: | ----------------------------: | ---------------------------: |
+| 022  |                          – |           {{1087 °F; 586 °C}} |          {{1094 °F; 590 °C}} |
+| 018  |                          – |           {{1319 °F; 715 °C}} |          {{1353 °F; 734 °C}} |
+| 015  |                          – |           {{1456 °F; 791 °C}} |          {{1504 °F; 818 °C}} |
+| 010  |        {{1636 °F; 891 °C}} |           {{1657 °F; 903 °C}} |          {{1679 °F; 915 °C}} |
+| 08   |        {{1692 °F; 922 °C}} |           {{1728 °F; 942 °C}} |          {{1753 °F; 956 °C}} |
+| 07   |                          – |           {{1789 °F; 976 °C}} |          {{1809 °F; 987 °C}} |
+| 06   |        {{1798 °F; 981 °C}} |           {{1828 °F; 998 °C}} |         {{1855 °F; 1013 °C}} |
+| 05   |       {{1870 °F; 1021 °C}} |          {{1888 °F; 1031 °C}} |         {{1911 °F; 1044 °C}} |
+| 04   |       {{1915 °F; 1046 °C}} |          {{1945 °F; 1063 °C}} |         {{1971 °F; 1077 °C}} |
+| 03   |       {{1960 °F; 1071 °C}} |          {{1987 °F; 1086 °C}} |         {{2019 °F; 1104 °C}} |
+| 02   |                          – |          {{2016 °F; 1102 °C}} |         {{2052 °F; 1122 °C}} |
+| 01   |       {{1999 °F; 1093 °C}} |          {{2046 °F; 1119 °C}} |         {{2080 °F; 1138 °C}} |
+| 1    |       {{2028 °F; 1109 °C}} |          {{2079 °F; 1137 °C}} |         {{2109 °F; 1154 °C}} |
+| 4    |       {{2086 °F; 1141 °C}} |          {{2124 °F; 1162 °C}} |         {{2161 °F; 1183 °C}} |
+| 5    |       {{2118 °F; 1159 °C}} |          {{2167 °F; 1186 °C}} |         {{2205 °F; 1207 °C}} |
+| 6    |       {{2165 °F; 1185 °C}} |          {{2232 °F; 1222 °C}} |         {{2269 °F; 1243 °C}} |
+| 7    |       {{2194 °F; 1201 °C}} |          {{2262 °F; 1239 °C}} |         {{2295 °F; 1257 °C}} |
+| 8    |       {{2212 °F; 1211 °C}} |          {{2280 °F; 1249 °C}} |         {{2320 °F; 1271 °C}} |
+| 9    |       {{2235 °F; 1224 °C}} |          {{2300 °F; 1260 °C}} |         {{2336 °F; 1280 °C}} |
+| 10   |       {{2284 °F; 1251 °C}} |          {{2345 °F; 1285 °C}} |         {{2381 °F; 1305 °C}} |
+| 11   |       {{2322 °F; 1272 °C}} |          {{2361 °F; 1294 °C}} |         {{2399 °F; 1315 °C}} |
+| 12   |       {{2345 °F; 1285 °C}} |          {{2383 °F; 1306 °C}} |         {{2419 °F; 1326 °C}} |
+| 13   |       {{2390 °F; 1310 °C}} |          {{2428 °F; 1331 °C}} |         {{2458 °F; 1348 °C}} |
+| 14   |       {{2464 °F; 1351 °C}} |          {{2489 °F; 1365 °C}} |         {{2523 °F; 1384 °C}} |
 
-Viiva tarkoittaa lukua, jota ei ole kopioitu tähän; se löytyy Ortonin koko keilataulukosta.
+A dash marks a figure not copied here; see Orton's full chart for it.
 
-Isojen keilojen lukemat poikkeavat näistä luvuista enintään muutaman asteen: iso keila 6 taipuu nousunopeudella {{108 °F/h; 60 °C/h}} lämpötilassa {{2228 °F; 1220 °C}}. Pienet keilat, joita käytetään Kiln-Sitter-katkaisimessa{{en: kiln sitter}}, on taulukoitu vain nopeudelle {{540 °F/h; 300 °C/h}}, joten taulukko antaa pienelle keilalle 6 lämpötilan {{2291 °F; 1255 °C}}. Se ei ole lämpötila, jossa katkaisin sammuttaa uunin. Katkaisimen keilan tehtävä on vastata uunilevyn keilaa, ja uunilevyn keila ratkaisee lopullisesti.
+Orton makes cones up to 42 for high-temperature work, but publishes temperatures only up to cone 14; for hotter cones its charts are "available (by request)". An older Orton chart, as kiln makers reprint it, gives a large cone 15 as {{2608 °F; 1431 °C}} at {{270 °F/h; 150 °C/h}}, and we found no published figure for cone 16 or above. Past cone 14, set witness cones and go by them, and check that your kiln is rated for that heat.
 
-Kaksi varoitusta. Ortonin vuoden 2019 vihkonen antaa keilalle 06 nopealla nousulla lämpötilan {{1875 °F; 1024 °C}}, mutta keilataulukko ja Ortonin UKK-sivu antavat molemmat lämpötilan {{1855 °F; 1013 °C}}, jota tässä käytetään. Lisäksi Dawsonin Kiln-Sitter-käyttöohjeen lopussa olevassa isojen keilojen taulukossa on kopiointivirheitä (keila 5 kuumempi kuin keila 6), joten älä käytä sitä.
+Large cones read within a few degrees of these figures: a large cone 6 at {{108 °F/h; 60 °C/h}} is {{2228 °F; 1220 °C}}. Small cones, the kind used in a kiln sitter, are listed only at {{540 °F/h; 300 °C/h}}, so the chart gives a small cone 6 as {{2291 °F; 1255 °C}}. That is not the temperature at which a sitter turns the kiln off. The sitter cone's job is to match the shelf cone, and the shelf cone has the final say.
+
+Two cautions. Orton's 2019 booklet gives cone 06 at the fast rate as {{1875 °F; 1024 °C}}, but the chart and Orton's FAQ both give {{1855 °F; 1013 °C}}, used here. And the large-cone table at the back of the Dawson kiln sitter manual has copying errors (cone 5 hotter than cone 6), so do not use it.
 
 :::temperature
 
@@ -281,92 +287,96 @@ Label: Seuraavan polton säätäminen
 
 :::sk
 
-## Poltto SK-keiloihin {#sk-cones}
+## Firing to SK cones {#sk-cones lang=en}
 
-SK-keilat ovat Japanin standardin JIS R 8101 mukaan valmistettuja pyrometrisiä keiloja, ja Japanissa niitä myyvät esimerkiksi Yuko Tradingin (有恒商事) kaltaiset jälleenmyyjät. Kuten mikä tahansa keila, SK-keila mittaa lämpötyötä{{en: heatwork}}, ei pelkkää lämpötilaa: se pehmenee ja taipuu, kun esineet ovat saaneet tarpeeksi lämpöä, ja siitä katsotaan, kuinka pitkälle se taipui. Tarkkailukeilat{{en: witness cone}}, keilan taipuman lukeminen ja haudutus toimivat sen kanssa samoin kuin minkä tahansa keilan kanssa. Tässä osiossa jokaisen keilan järjestelmä mainitaan nimeltä, eikä SK-numeroa koskaan muuteta toisen järjestelmän numeroksi: eri keilajärjestelmien numerot eivät ole keskenään vaihdettavissa.
+SK cones are the pyrometric cones made to Japan's standard, JIS R 8101, and sold in Japan by dealers such as Yuko Trading (有恒商事). Like any cone, an SK cone measures heatwork, not temperature alone: it softens and bends over when the ware has had enough heat, and you read how far it bent. Witness cones, reading how far a cone has bent, and holds work for it as for any cone. This section names each cone's system, and never turns an SK number into another system's number: the numbers of different cone series are not interchangeable.
 
 > [!NOTE]
-> Kirjoita numeron eteen aina ”SK”. Monissa vanhemmissa japanilaisissa resepteissä lukee vain ”SK 8” tai ”SK 9” kertomatta, kenen keilasta on kyse. Kioton keiloissa ja JIS-standardin mukaisissa SK-keiloissa on samat numerot, mutta ne taipuvat eri lämpötiloissa (katso alempaa Kioton keilat).
+> Always write "SK" before the number. Many older Japanese recipes say only "SK 8" or "SK 9" without saying whose cone. Kyoto cones and SK cones to JIS carry the same numbers but bend at different temperatures (see Kyoto cones, below).
 
-### Isot keilat
+### The large cones
 
-Standardissa on kaksi kokoa. Isoja keiloja (大型コーン) käytetään ”pääasiassa polttoasteen mittaamiseen” (焼度測定), ja juuri sitä keraamikko tarvitsee. Pieniä keiloja (SK 26–SK 42, asteikon yläpäässä) käytetään ”pääasiassa tulenkestävyyskokeisiin”, eikä niitä käsitellä tässä. Alla olevassa taulukossa ovat isot keilat väliltä SK 022–SK 20.
+The standard has two sizes. Large cones (大型コーン) are "mainly used for measuring the degree of firing" (焼度測定), which is what a potter wants. Small cones (SK 26 to SK 42, at the top of the range) are "mainly used for refractoriness tests" and are not covered here. The table below gives the large cones from SK 022 to SK 20.
 
-Numerot alkavat tässä viileimmästä keilasta SK 022 ja päättyvät keilaan SK 20. Välillä SK 015–SK 6 painetuissa numeroissa on ”a” (SK 015a, SK 6a); kirjoita se niin kuin se on painettu.
+The numbers run from SK 022, the coolest, up to SK 20 here. Between SK 015 and SK 6 the printed numbers carry an "a" (SK 015a, SK 6a); write it as printed.
 
-### Isojen keilojen asettaminen
+### Setting large cones
 
-Aseta jokainen iso keila keilapidikkeeseen tai savipetiin kallelleen kohti taipumispuoltaan. Kuten minkä tahansa keilan kohdalla, pidä korkeus ja kallistus samoina poltosta toiseen, koska ero kummassa tahansa muuttaa sitä, kuinka pitkälle keila taipuu. Aseta keilasarjan{{en: cone pack}} kolme keilaa (katso alempaa) yhdessä syvälle uuniin, lähelle uunillisen keskikohtaa, jossa ne saavat saman lämmön kuin esineet, mutta kuitenkin tirkistysaukosta näkyviin; varmista ennen uunin sulkemista, että näet kaikki kolme.
+Set each large cone in a plaque or a pat of clay, leaning toward its bending face. As with any cone, keep the height and the lean the same from firing to firing, because a difference in either changes how far it bends. Set the three cones of the pack (below) together, deep in the kiln near the middle of the load, where they get the heat the ware gets, yet where you can see them through a peephole; before you close the kiln, check that you can see all three.
 
-### Ennakko-, tavoite- ja varmistuskeila
+We found no maker's or seller's instructions for how deep or at what angle to set SK cones. The nearest is a laboratory standard, JIS R 2204, Japan's test of how much heat a refractory material stands: it sets each SK cone with its marked face at 80° to a flat stand and its foot about 4 mm into it. That is a test for refractories, not a rule for firing pots, and we read it in a transcription of the standard, not in the standard itself.
 
-Keiloja myydään ja asetetaan kolmen sarjoina: ennakkokeila, tavoitekeila tavoitelämpötilaan ja varmistuskeila. Valitse tavoitekeilaksi se SK-numero, jonka resepti tai savi ilmoittaa, ennakkokeilaksi yhtä numeroa viileämpi keila (taulukossa yhtä riviä ylempänä) ja varmistuskeilaksi yhtä numeroa kuumempi. Kun ennakkokeila alkaa taipua, loppu on lähellä; kun varmistuskeila taipuu, poltto on mennyt liian pitkälle.
+### Guide, firing and guard cones
 
-### SK-taulukko
+Cones are sold and set as three: a guide cone, a firing cone at the target, and a guard cone. Take the firing cone as the SK number your recipe or clay names, the guide cone as the next cooler cone (one row up in the table) and the guard cone as the next hotter one. When the guide cone starts to bend, the end is near; when the guard cone bends, the firing has gone too far.
 
-Table: Isot SK-keilat (JIS R 8101): kunkin keilan nimellinen (JIS) lämpötila
-Label: SK-taulukko
+### The SK chart
 
-| Keila   | Nimellinen (JIS) lämpötila |
-| ------- | -------------------------: |
-| SK 022  |        {{1112 °F; 600 °C}} |
-| SK 021  |        {{1202 °F; 650 °C}} |
-| SK 020  |        {{1238 °F; 670 °C}} |
-| SK 019  |        {{1274 °F; 690 °C}} |
-| SK 018  |        {{1310 °F; 710 °C}} |
-| SK 017  |        {{1346 °F; 730 °C}} |
-| SK 016  |        {{1382 °F; 750 °C}} |
-| SK 015a |        {{1454 °F; 790 °C}} |
-| SK 014a |        {{1499 °F; 815 °C}} |
-| SK 013a |        {{1535 °F; 835 °C}} |
-| SK 012a |        {{1571 °F; 855 °C}} |
-| SK 011a |        {{1616 °F; 880 °C}} |
-| SK 010a |        {{1652 °F; 900 °C}} |
-| SK 09a  |        {{1688 °F; 920 °C}} |
-| SK 08a  |        {{1724 °F; 940 °C}} |
-| SK 07a  |        {{1760 °F; 960 °C}} |
-| SK 06a  |        {{1796 °F; 980 °C}} |
-| SK 05a  |       {{1832 °F; 1000 °C}} |
-| SK 04a  |       {{1868 °F; 1020 °C}} |
-| SK 03a  |       {{1904 °F; 1040 °C}} |
-| SK 02a  |       {{1940 °F; 1060 °C}} |
-| SK 01a  |       {{1976 °F; 1080 °C}} |
-| SK 1a   |       {{2012 °F; 1100 °C}} |
-| SK 2a   |       {{2048 °F; 1120 °C}} |
-| SK 3a   |       {{2084 °F; 1140 °C}} |
-| SK 4a   |       {{2120 °F; 1160 °C}} |
-| SK 5a   |       {{2156 °F; 1180 °C}} |
-| SK 6a   |       {{2192 °F; 1200 °C}} |
-| SK 7    |       {{2246 °F; 1230 °C}} |
-| SK 8    |       {{2282 °F; 1250 °C}} |
-| SK 9    |       {{2336 °F; 1280 °C}} |
-| SK 10   |       {{2372 °F; 1300 °C}} |
-| SK 11   |       {{2408 °F; 1320 °C}} |
-| SK 12   |       {{2462 °F; 1350 °C}} |
-| SK 13   |       {{2516 °F; 1380 °C}} |
-| SK 14   |       {{2570 °F; 1410 °C}} |
-| SK 15   |       {{2615 °F; 1435 °C}} |
-| SK 16   |       {{2660 °F; 1460 °C}} |
-| SK 17   |       {{2696 °F; 1480 °C}} |
-| SK 18   |       {{2732 °F; 1500 °C}} |
-| SK 19   |       {{2768 °F; 1520 °C}} |
-| SK 20   |       {{2786 °F; 1530 °C}} |
+Table: SK large cones (JIS R 8101): the nominal (JIS) temperature of each
+Label: SK chart
 
-Jokainen luku on nimellinen (JIS): lämpötila, jonka standardi antaa keilalle, sellaisena kuin se on painettu Yuko Tradingin taulukkoon. Taulukossa ei ole nousunopeutta. Standardi antaa vertailulämpötiloja. Keraamikon tavallisella, noin 100 °C/h nousunopeudella Kioton kaupungin tutkimuslaitos mittasi omien Kioton keilojensa taipuvan 47–79 °C alemmassa lämpötilassa kuin saman numeron JIS-lämpötila; JIS-standardin mukaisista SK-keiloista emme löytäneet vastaavia mittauksia. Aseta tarkkailukeila ja vertaa.
+| Cone    | Nominal (JIS) temperature |
+| ------- | ------------------------: |
+| SK 022  |       {{1112 °F; 600 °C}} |
+| SK 021  |       {{1202 °F; 650 °C}} |
+| SK 020  |       {{1238 °F; 670 °C}} |
+| SK 019  |       {{1274 °F; 690 °C}} |
+| SK 018  |       {{1310 °F; 710 °C}} |
+| SK 017  |       {{1346 °F; 730 °C}} |
+| SK 016  |       {{1382 °F; 750 °C}} |
+| SK 015a |       {{1454 °F; 790 °C}} |
+| SK 014a |       {{1499 °F; 815 °C}} |
+| SK 013a |       {{1535 °F; 835 °C}} |
+| SK 012a |       {{1571 °F; 855 °C}} |
+| SK 011a |       {{1616 °F; 880 °C}} |
+| SK 010a |       {{1652 °F; 900 °C}} |
+| SK 09a  |       {{1688 °F; 920 °C}} |
+| SK 08a  |       {{1724 °F; 940 °C}} |
+| SK 07a  |       {{1760 °F; 960 °C}} |
+| SK 06a  |       {{1796 °F; 980 °C}} |
+| SK 05a  |      {{1832 °F; 1000 °C}} |
+| SK 04a  |      {{1868 °F; 1020 °C}} |
+| SK 03a  |      {{1904 °F; 1040 °C}} |
+| SK 02a  |      {{1940 °F; 1060 °C}} |
+| SK 01a  |      {{1976 °F; 1080 °C}} |
+| SK 1a   |      {{2012 °F; 1100 °C}} |
+| SK 2a   |      {{2048 °F; 1120 °C}} |
+| SK 3a   |      {{2084 °F; 1140 °C}} |
+| SK 4a   |      {{2120 °F; 1160 °C}} |
+| SK 5a   |      {{2156 °F; 1180 °C}} |
+| SK 6a   |      {{2192 °F; 1200 °C}} |
+| SK 7    |      {{2246 °F; 1230 °C}} |
+| SK 8    |      {{2282 °F; 1250 °C}} |
+| SK 9    |      {{2336 °F; 1280 °C}} |
+| SK 10   |      {{2372 °F; 1300 °C}} |
+| SK 11   |      {{2408 °F; 1320 °C}} |
+| SK 12   |      {{2462 °F; 1350 °C}} |
+| SK 13   |      {{2516 °F; 1380 °C}} |
+| SK 14   |      {{2570 °F; 1410 °C}} |
+| SK 15   |      {{2615 °F; 1435 °C}} |
+| SK 16   |      {{2660 °F; 1460 °C}} |
+| SK 17   |      {{2696 °F; 1480 °C}} |
+| SK 18   |      {{2732 °F; 1500 °C}} |
+| SK 19   |      {{2768 °F; 1520 °C}} |
+| SK 20   |      {{2786 °F; 1530 °C}} |
 
-### Kioton keilat
+Every figure is nominal (JIS): the temperature the standard gives for the cone, as printed in Yuko Trading's table. The table does not print a heating rate. The standard gives reference temperatures. At a potter's rate of about 100 °C/h, Kyoto's municipal institute measured its own Kyoto cones bending 47–79 °C cooler than the JIS figure for the same number; we found no such measurements for SK cones to JIS. Set a witness cone and compare.
 
-Kioton keiloja (京都ゼーゲル), joita Kioton kaupungin tutkimuslaitos valmisti, ei enää valmisteta: uutisten mukaan laitos lopetti valmistuksen tilikauden 2009 päättyessä. Niissä on samat numerot kuin JIS-standardin mukaisissa SK-keiloissa, mutta ne taipuvat alemmassa lämpötilassa: Kioton keila taipuu suunnilleen sen JIS-standardin mukaisen SK-keilan lämpötilassa, jonka numero on kahta tai kolmea numeroa alempi. Kiotolainen resepti, jossa lukee ”SK 8”, voi tarkoittaa Kioton keilaa. Laitos on julkaissut ohjeita keraamikoille, jotka siirtyvät Kioton keiloista Orton-keiloihin, ja korvaa oman Kioton SK 12 -keilansa Orton-keilalla 10. Se on laitoksen oma valinta sen omien mittausten perusteella: laitos taivutti Kioton keiloja ja Orton-keiloja samassa uunissa nopeudella 100 °C/h, ja Kioton SK 12 (1290 °C) taipui samaan aikaan kuin Orton-keila 10 (1290 °C). Samassa taulukossa Kioton SK 8 (1198 °C) taipui lähes samaan aikaan kuin Orton-keila 5 (1207 °C) ja Kioton SK 10 (1232 °C) samaan aikaan kuin Orton-keila 7 (1232 °C). Glazecalc käyttää tätä taulukkoa, ei Ortonin taulukkoa nopeudella 60 °C/h, kun se näyttää SK-keilan Orton-keilan rinnalla, ja kertoo, että jokainen vastaavuus on likimääräinen.
+### Kyoto cones
 
-### Japanissa myytävät Orton-keilat
+Kyoto cones (京都ゼーゲル), made by Kyoto's municipal institute, are no longer made: news reports say the institute ended production at the close of fiscal 2009. They carry the same numbers as SK cones to JIS but bend cooler: a Kyoto cone bends at about the temperature of the SK cone to JIS two or three numbers lower. A recipe from Kyoto that says "SK 8" may mean a Kyoto cone. The institute has published advice for potters moving from Kyoto cones to Orton cones, and substitutes Orton cone 10 for its own Kyoto SK 12. That is the institute's choice from its own measurements: it bent Kyoto cones and Orton cones in the same kiln at 100 °C/h, and Kyoto SK 12 (1290 °C) bent where Orton 10 (1290 °C) did. In the same table Kyoto SK 8 (1198 °C) bent near Orton 5 (1207 °C), and Kyoto SK 10 (1232 °C) where Orton 7 (1232 °C) did. Glazecalc uses this table, not the Orton chart at 60 °C/h, when it shows an SK cone beside an Orton cone, and says each match is approximate.
 
-Ortonin itsestään seisovia keiloja myydään Japanissa nimellä 立つゼーゲル (”seisova Seger”), koska ne eivät tarvitse keilapidikettä tai telinettä. Ne ovat Orton-keiloja, joilla on Ortonin numerot ja Ortonin taulukko (yllä): polta sellaiseen keilaan vain sen Orton-numeron mukaan, ja pidä SK- ja Orton-keilat eri keilasarjoissa, ei koskaan samassa.
+### Orton cones sold in Japan
 
-### SK-keilojen lähteet
+Orton self-supporting cones are sold in Japan under the name 立つゼーゲル ("standing Seger"), because they need no plaque or stand. They are Orton cones, with Orton's numbers and Orton's chart (above): fire to one only by its Orton number, and keep SK and Orton cones in separate packs, never in the same one.
 
-- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (SK-taulukko, tarkistettu 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
-- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (voimassa, vahvistettu uudelleen 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
-- [Kyoto Municipal Institute of Industrial Technology and Culture: huomioitavaa siirryttäessä Kioton keiloista Orton-keiloihin](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
+### Sources for SK cones
+
+- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (the SK table, checked 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
+- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (in force, reconfirmed 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
+- [JSA: JIS R 2204:1999, 耐火物及び耐火物原料の耐火度試験方法 (in force, reconfirmed 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+2204:1999)
+- [kikakurui.com: a transcription of JIS R 2204:1999, where clause 5 a) sets the cones (read 2026-10-19)](https://kikakurui.com/r2/R2204-1999-01.html)
+- [Kyoto Municipal Institute of Industrial Technology and Culture: points to note when moving from Kyoto cones to Orton cones](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
 
 :::
 

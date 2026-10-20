@@ -979,7 +979,6 @@
     "approxTemperature": "≈ {temperature} ({basis}; približne)",
     "approxCone": "≈ {cone} ({basis}; približne)",
     "basis": {
-      "orton60": "veľké kužele Orton pri 60 °C za hodinu",
       "kyoto": "zmerané pri 100 °C za hodinu mestským ústavom v Kjóte",
       "stated": "ako je uvedené"
     },

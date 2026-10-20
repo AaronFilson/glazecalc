@@ -79,41 +79,47 @@ Label: ชนิดของโคน
 
 :::
 
-## ตารางโคน {#cone-chart}
+## The cone chart {#cone-chart lang=en}
 
-ตัวเลขเหล่านี้มาจากตารางโคนของ Orton (©2001) สำหรับโคนตั้งเองได้ เลือกคอลัมน์ที่ตรงกับความเร็วที่เตาเผาของคุณเพิ่มอุณหภูมิใน {{180 °F; 100 °C}} สุดท้าย หลักปฏิบัติของ Orton คือคอลัมน์ {{270 °F/h; 150 °C/h}} สำหรับการเผาเร็ว คอลัมน์ {{108 °F/h; 60 °C/h}} สำหรับการเผาปานกลาง และคอลัมน์ {{27 °F/h; 15 °C/h}} สำหรับการเผาช้า หากต้องการคำนวณอัตรา ให้หารอุณหภูมิที่เพิ่มด้วยจำนวนชั่วโมงที่ใช้: เตาเผาที่เพิ่ม {{900 °F; 500 °C}} ใน 3 ชั่วโมงกำลังให้ความร้อนที่ประมาณ {{300 °F/h; 167 °C/h}}
+These figures are from Orton's cone chart (©2001) for self-supporting cones; cones 11 to 14 are from the charts Orton publishes now, which give the same figures where they overlap, and cones 13 and 14 only in °C (their °F here is converted). Choose the column that matches how fast your kiln climbed over the last {{180 °F; 100 °C}}. Orton's rule of thumb is the {{270 °F/h; 150 °C/h}} column for a fast firing, the {{108 °F/h; 60 °C/h}} column for a medium one and the {{27 °F/h; 15 °C/h}} column for a slow one. To work out a rate, divide the temperature climbed by the hours it took: a kiln that climbs {{900 °F; 500 °C}} in 3 hours is heating at about {{300 °F/h; 167 °C/h}}.
 
-Table: โคนตั้งเองได้ของ Orton: อุณหภูมิที่โคนแต่ละอันโค้ง ตามอัตราการเพิ่มอุณหภูมิใน {{180 °F; 100 °C}} สุดท้าย
-Label: ตารางโคน Orton
+Table: Orton self-supporting cones: the temperature at which each bends, by heating rate over the last {{180 °F; 100 °C}}
+Label: Orton cone chart
 
-| โคน | ช้า {{27 °F/h; 15 °C/h}} | ปานกลาง {{108 °F/h; 60 °C/h}} | เร็ว {{270 °F/h; 150 °C/h}} |
-| --- | -----------------------: | ----------------------------: | --------------------------: |
-| 022 |                        – |           {{1087 °F; 586 °C}} |         {{1094 °F; 590 °C}} |
-| 018 |                        – |           {{1319 °F; 715 °C}} |         {{1353 °F; 734 °C}} |
-| 015 |                        – |           {{1456 °F; 791 °C}} |         {{1504 °F; 818 °C}} |
-| 010 |      {{1636 °F; 891 °C}} |           {{1657 °F; 903 °C}} |         {{1679 °F; 915 °C}} |
-| 08  |      {{1692 °F; 922 °C}} |           {{1728 °F; 942 °C}} |         {{1753 °F; 956 °C}} |
-| 07  |                        – |           {{1789 °F; 976 °C}} |         {{1809 °F; 987 °C}} |
-| 06  |      {{1798 °F; 981 °C}} |           {{1828 °F; 998 °C}} |        {{1855 °F; 1013 °C}} |
-| 05  |     {{1870 °F; 1021 °C}} |          {{1888 °F; 1031 °C}} |        {{1911 °F; 1044 °C}} |
-| 04  |     {{1915 °F; 1046 °C}} |          {{1945 °F; 1063 °C}} |        {{1971 °F; 1077 °C}} |
-| 03  |     {{1960 °F; 1071 °C}} |          {{1987 °F; 1086 °C}} |        {{2019 °F; 1104 °C}} |
-| 02  |                        – |          {{2016 °F; 1102 °C}} |        {{2052 °F; 1122 °C}} |
-| 01  |     {{1999 °F; 1093 °C}} |          {{2046 °F; 1119 °C}} |        {{2080 °F; 1138 °C}} |
-| 1   |     {{2028 °F; 1109 °C}} |          {{2079 °F; 1137 °C}} |        {{2109 °F; 1154 °C}} |
-| 4   |     {{2086 °F; 1141 °C}} |          {{2124 °F; 1162 °C}} |        {{2161 °F; 1183 °C}} |
-| 5   |     {{2118 °F; 1159 °C}} |          {{2167 °F; 1186 °C}} |        {{2205 °F; 1207 °C}} |
-| 6   |     {{2165 °F; 1185 °C}} |          {{2232 °F; 1222 °C}} |        {{2269 °F; 1243 °C}} |
-| 7   |     {{2194 °F; 1201 °C}} |          {{2262 °F; 1239 °C}} |        {{2295 °F; 1257 °C}} |
-| 8   |     {{2212 °F; 1211 °C}} |          {{2280 °F; 1249 °C}} |        {{2320 °F; 1271 °C}} |
-| 9   |     {{2235 °F; 1224 °C}} |          {{2300 °F; 1260 °C}} |        {{2336 °F; 1280 °C}} |
-| 10  |     {{2284 °F; 1251 °C}} |          {{2345 °F; 1285 °C}} |        {{2381 °F; 1305 °C}} |
+| Cone | Slow, {{27 °F/h; 15 °C/h}} | Medium, {{108 °F/h; 60 °C/h}} | Fast, {{270 °F/h; 150 °C/h}} |
+| ---- | -------------------------: | ----------------------------: | ---------------------------: |
+| 022  |                          – |           {{1087 °F; 586 °C}} |          {{1094 °F; 590 °C}} |
+| 018  |                          – |           {{1319 °F; 715 °C}} |          {{1353 °F; 734 °C}} |
+| 015  |                          – |           {{1456 °F; 791 °C}} |          {{1504 °F; 818 °C}} |
+| 010  |        {{1636 °F; 891 °C}} |           {{1657 °F; 903 °C}} |          {{1679 °F; 915 °C}} |
+| 08   |        {{1692 °F; 922 °C}} |           {{1728 °F; 942 °C}} |          {{1753 °F; 956 °C}} |
+| 07   |                          – |           {{1789 °F; 976 °C}} |          {{1809 °F; 987 °C}} |
+| 06   |        {{1798 °F; 981 °C}} |           {{1828 °F; 998 °C}} |         {{1855 °F; 1013 °C}} |
+| 05   |       {{1870 °F; 1021 °C}} |          {{1888 °F; 1031 °C}} |         {{1911 °F; 1044 °C}} |
+| 04   |       {{1915 °F; 1046 °C}} |          {{1945 °F; 1063 °C}} |         {{1971 °F; 1077 °C}} |
+| 03   |       {{1960 °F; 1071 °C}} |          {{1987 °F; 1086 °C}} |         {{2019 °F; 1104 °C}} |
+| 02   |                          – |          {{2016 °F; 1102 °C}} |         {{2052 °F; 1122 °C}} |
+| 01   |       {{1999 °F; 1093 °C}} |          {{2046 °F; 1119 °C}} |         {{2080 °F; 1138 °C}} |
+| 1    |       {{2028 °F; 1109 °C}} |          {{2079 °F; 1137 °C}} |         {{2109 °F; 1154 °C}} |
+| 4    |       {{2086 °F; 1141 °C}} |          {{2124 °F; 1162 °C}} |         {{2161 °F; 1183 °C}} |
+| 5    |       {{2118 °F; 1159 °C}} |          {{2167 °F; 1186 °C}} |         {{2205 °F; 1207 °C}} |
+| 6    |       {{2165 °F; 1185 °C}} |          {{2232 °F; 1222 °C}} |         {{2269 °F; 1243 °C}} |
+| 7    |       {{2194 °F; 1201 °C}} |          {{2262 °F; 1239 °C}} |         {{2295 °F; 1257 °C}} |
+| 8    |       {{2212 °F; 1211 °C}} |          {{2280 °F; 1249 °C}} |         {{2320 °F; 1271 °C}} |
+| 9    |       {{2235 °F; 1224 °C}} |          {{2300 °F; 1260 °C}} |         {{2336 °F; 1280 °C}} |
+| 10   |       {{2284 °F; 1251 °C}} |          {{2345 °F; 1285 °C}} |         {{2381 °F; 1305 °C}} |
+| 11   |       {{2322 °F; 1272 °C}} |          {{2361 °F; 1294 °C}} |         {{2399 °F; 1315 °C}} |
+| 12   |       {{2345 °F; 1285 °C}} |          {{2383 °F; 1306 °C}} |         {{2419 °F; 1326 °C}} |
+| 13   |       {{2390 °F; 1310 °C}} |          {{2428 °F; 1331 °C}} |         {{2458 °F; 1348 °C}} |
+| 14   |       {{2464 °F; 1351 °C}} |          {{2489 °F; 1365 °C}} |         {{2523 °F; 1384 °C}} |
 
-เครื่องหมายขีดหมายถึงตัวเลขที่ไม่ได้คัดลอกมาไว้ที่นี่ ดูตัวเลขได้ในตารางฉบับเต็มของ Orton
+A dash marks a figure not copied here; see Orton's full chart for it.
 
-โคนใหญ่อ่านค่าได้ใกล้เคียงตัวเลขเหล่านี้ภายในไม่กี่องศา: โคนใหญ่ 6 ที่ {{108 °F/h; 60 °C/h}} คือ {{2228 °F; 1220 °C}} โคนเล็ก ซึ่งเป็นชนิดที่ใช้ใน Kiln-Sitter ระบุไว้เฉพาะที่ {{540 °F/h; 300 °C/h}} ตารางจึงให้โคนเล็ก 6 ที่ {{2291 °F; 1255 °C}} นั่นไม่ใช่อุณหภูมิที่ Kiln-Sitter ปิดเตาเผา หน้าที่ของโคน Kiln-Sitter คือให้ตรงกับโคนบนแผ่นรองเผา และโคนบนแผ่นรองเผามีคำตัดสินสุดท้าย
+Orton makes cones up to 42 for high-temperature work, but publishes temperatures only up to cone 14; for hotter cones its charts are "available (by request)". An older Orton chart, as kiln makers reprint it, gives a large cone 15 as {{2608 °F; 1431 °C}} at {{270 °F/h; 150 °C/h}}, and we found no published figure for cone 16 or above. Past cone 14, set witness cones and go by them, and check that your kiln is rated for that heat.
 
-ข้อควรระวังสองข้อ เอกสารเล่มเล็กปี ค.ศ. 2019 ของ Orton ให้โคน 06 ที่อัตราเร็วเป็น {{1875 °F; 1024 °C}} แต่ตารางและคำถามที่พบบ่อยของ Orton ให้ {{1855 °F; 1013 °C}} ทั้งคู่ ซึ่งใช้ที่นี่ และตารางโคนใหญ่ท้ายคู่มือการใช้งาน Kiln-Sitter ของ Dawson มีข้อผิดพลาดจากการคัดลอก (โคน 5 ร้อนกว่าโคน 6) จึงห้ามใช้
+Large cones read within a few degrees of these figures: a large cone 6 at {{108 °F/h; 60 °C/h}} is {{2228 °F; 1220 °C}}. Small cones, the kind used in a kiln sitter, are listed only at {{540 °F/h; 300 °C/h}}, so the chart gives a small cone 6 as {{2291 °F; 1255 °C}}. That is not the temperature at which a sitter turns the kiln off. The sitter cone's job is to match the shelf cone, and the shelf cone has the final say.
+
+Two cautions. Orton's 2019 booklet gives cone 06 at the fast rate as {{1875 °F; 1024 °C}}, but the chart and Orton's FAQ both give {{1855 °F; 1013 °C}}, used here. And the large-cone table at the back of the Dawson kiln sitter manual has copying errors (cone 5 hotter than cone 6), so do not use it.
 
 :::temperature
 
@@ -281,92 +287,96 @@ Label: การปรับการเผารอบถัดไป
 
 :::sk
 
-## การเผาตามโคน SK {#sk-cones}
+## Firing to SK cones {#sk-cones lang=en}
 
-โคน SK คือโคนไพโรเมทริกที่ทำตามมาตรฐานของญี่ปุ่น JIS R 8101 และจำหน่ายในญี่ปุ่นโดยผู้ค้าอย่าง Yuko Trading เช่นเดียวกับโคนทั่วไป โคน SK วัดฮีตเวิร์ก ไม่ใช่อุณหภูมิเพียงอย่างเดียว: โคนอ่อนตัวและโค้งลงเมื่อชิ้นงานได้รับความร้อนเพียงพอ และคุณอ่านว่าโค้งไปเท่าใด โคนอ้างอิง การอ่านว่าโคนโค้งไปเท่าใด และการคงอุณหภูมิใช้ได้กับโคน SK เช่นเดียวกับโคนทั่วไป ส่วนนี้ระบุชื่อชุดของโคนแต่ละอัน และไม่เคยเปลี่ยนเบอร์ SK เป็นเบอร์ของชุดอื่น: เบอร์ของโคนต่างชุดใช้แทนกันไม่ได้
+SK cones are the pyrometric cones made to Japan's standard, JIS R 8101, and sold in Japan by dealers such as Yuko Trading (有恒商事). Like any cone, an SK cone measures heatwork, not temperature alone: it softens and bends over when the ware has had enough heat, and you read how far it bent. Witness cones, reading how far a cone has bent, and holds work for it as for any cone. This section names each cone's system, and never turns an SK number into another system's number: the numbers of different cone series are not interchangeable.
 
 > [!NOTE]
-> เขียน “SK” ก่อนเบอร์เสมอ สูตรเคลือบญี่ปุ่นรุ่นเก่าหลายสูตรเขียนเพียง “SK 8” หรือ “SK 9” โดยไม่บอกว่าเป็นโคนของใคร โคนเกียวโตและโคน SK ตาม JIS มีเบอร์เดียวกันแต่โค้งที่อุณหภูมิต่างกัน (ดูโคนเกียวโต ด้านล่าง)
+> Always write "SK" before the number. Many older Japanese recipes say only "SK 8" or "SK 9" without saying whose cone. Kyoto cones and SK cones to JIS carry the same numbers but bend at different temperatures (see Kyoto cones, below).
 
-### โคนใหญ่
+### The large cones
 
-มาตรฐานมีสองขนาด โคนใหญ่ (โคนขนาดใหญ่, oogata kon) “ใช้เป็นหลักในการวัดระดับการเผา” (การวัดระดับการเผา, shoudo sokutei) ซึ่งเป็นสิ่งที่ช่างปั้นต้องการ โคนเล็ก (SK 26 ถึง SK 42 ที่ปลายบนของช่วง) “ใช้เป็นหลักในการทดสอบความทนไฟ” และไม่ครอบคลุมที่นี่ ตารางด้านล่างให้โคนใหญ่ตั้งแต่ SK 022 ถึง SK 20
+The standard has two sizes. Large cones (大型コーン) are "mainly used for measuring the degree of firing" (焼度測定), which is what a potter wants. Small cones (SK 26 to SK 42, at the top of the range) are "mainly used for refractoriness tests" and are not covered here. The table below gives the large cones from SK 022 to SK 20.
 
-เบอร์เรียงจาก SK 022 ซึ่งเย็นที่สุด ขึ้นไปถึง SK 20 ที่นี่ ระหว่าง SK 015 และ SK 6 เบอร์ที่พิมพ์มี “a” (SK 015a, SK 6a) เขียนตามที่พิมพ์
+The numbers run from SK 022, the coolest, up to SK 20 here. Between SK 015 and SK 6 the printed numbers carry an "a" (SK 015a, SK 6a); write it as printed.
 
-### การตั้งโคนใหญ่
+### Setting large cones
 
-ตั้งโคนใหญ่แต่ละอันในแผ่นฐานโคนหรือก้อนดินรองโคน เอียงไปทางด้านที่โค้ง เช่นเดียวกับโคนทั่วไป ให้ความสูงและความเอียงเท่ากันทุกการเผา เพราะความต่างในอย่างใดอย่างหนึ่งเปลี่ยนว่าโคนโค้งไปเท่าใด ตั้งโคนสามอันของชุด (ด้านล่าง) ด้วยกัน ลึกในเตาเผาใกล้ตรงกลางของชิ้นงานที่บรรจุ ที่ที่ได้รับความร้อนเท่าที่ชิ้นงานได้รับ แต่ยังมองเห็นได้ผ่านช่องดูไฟ ก่อนปิดเตาเผา ตรวจว่าเห็นโคนทั้งสามอัน
+Set each large cone in a plaque or a pat of clay, leaning toward its bending face. As with any cone, keep the height and the lean the same from firing to firing, because a difference in either changes how far it bends. Set the three cones of the pack (below) together, deep in the kiln near the middle of the load, where they get the heat the ware gets, yet where you can see them through a peephole; before you close the kiln, check that you can see all three.
 
-### โคนนำ โคนเผา และโคนเฝ้า
+We found no maker's or seller's instructions for how deep or at what angle to set SK cones. The nearest is a laboratory standard, JIS R 2204, Japan's test of how much heat a refractory material stands: it sets each SK cone with its marked face at 80° to a flat stand and its foot about 4 mm into it. That is a test for refractories, not a rule for firing pots, and we read it in a transcription of the standard, not in the standard itself.
 
-โคนจำหน่ายและตั้งเป็นสามอัน: โคนนำ โคนเผาที่เป็นเป้าหมาย และโคนเฝ้า ใช้โคนเผาเป็นเบอร์ SK ที่สูตรเคลือบหรือดินของคุณระบุ โคนนำเป็นโคนที่เย็นกว่าถัดไป (หนึ่งแถวขึ้นไปในตาราง) และโคนเฝ้าเป็นโคนที่ร้อนกว่าถัดไป เมื่อโคนนำเริ่มโค้ง ใกล้ถึงจุดสิ้นสุด เมื่อโคนเฝ้าโค้ง การเผาไปไกลเกินไป
+### Guide, firing and guard cones
 
-### ตาราง SK
+Cones are sold and set as three: a guide cone, a firing cone at the target, and a guard cone. Take the firing cone as the SK number your recipe or clay names, the guide cone as the next cooler cone (one row up in the table) and the guard cone as the next hotter one. When the guide cone starts to bend, the end is near; when the guard cone bends, the firing has gone too far.
 
-Table: โคนใหญ่ SK (JIS R 8101): อุณหภูมิตามชื่อ (JIS) ของแต่ละอัน
-Label: ตาราง SK
+### The SK chart
 
-| โคน     | อุณหภูมิตามชื่อ (JIS) |
-| ------- | --------------------: |
-| SK 022  |   {{1112 °F; 600 °C}} |
-| SK 021  |   {{1202 °F; 650 °C}} |
-| SK 020  |   {{1238 °F; 670 °C}} |
-| SK 019  |   {{1274 °F; 690 °C}} |
-| SK 018  |   {{1310 °F; 710 °C}} |
-| SK 017  |   {{1346 °F; 730 °C}} |
-| SK 016  |   {{1382 °F; 750 °C}} |
-| SK 015a |   {{1454 °F; 790 °C}} |
-| SK 014a |   {{1499 °F; 815 °C}} |
-| SK 013a |   {{1535 °F; 835 °C}} |
-| SK 012a |   {{1571 °F; 855 °C}} |
-| SK 011a |   {{1616 °F; 880 °C}} |
-| SK 010a |   {{1652 °F; 900 °C}} |
-| SK 09a  |   {{1688 °F; 920 °C}} |
-| SK 08a  |   {{1724 °F; 940 °C}} |
-| SK 07a  |   {{1760 °F; 960 °C}} |
-| SK 06a  |   {{1796 °F; 980 °C}} |
-| SK 05a  |  {{1832 °F; 1000 °C}} |
-| SK 04a  |  {{1868 °F; 1020 °C}} |
-| SK 03a  |  {{1904 °F; 1040 °C}} |
-| SK 02a  |  {{1940 °F; 1060 °C}} |
-| SK 01a  |  {{1976 °F; 1080 °C}} |
-| SK 1a   |  {{2012 °F; 1100 °C}} |
-| SK 2a   |  {{2048 °F; 1120 °C}} |
-| SK 3a   |  {{2084 °F; 1140 °C}} |
-| SK 4a   |  {{2120 °F; 1160 °C}} |
-| SK 5a   |  {{2156 °F; 1180 °C}} |
-| SK 6a   |  {{2192 °F; 1200 °C}} |
-| SK 7    |  {{2246 °F; 1230 °C}} |
-| SK 8    |  {{2282 °F; 1250 °C}} |
-| SK 9    |  {{2336 °F; 1280 °C}} |
-| SK 10   |  {{2372 °F; 1300 °C}} |
-| SK 11   |  {{2408 °F; 1320 °C}} |
-| SK 12   |  {{2462 °F; 1350 °C}} |
-| SK 13   |  {{2516 °F; 1380 °C}} |
-| SK 14   |  {{2570 °F; 1410 °C}} |
-| SK 15   |  {{2615 °F; 1435 °C}} |
-| SK 16   |  {{2660 °F; 1460 °C}} |
-| SK 17   |  {{2696 °F; 1480 °C}} |
-| SK 18   |  {{2732 °F; 1500 °C}} |
-| SK 19   |  {{2768 °F; 1520 °C}} |
-| SK 20   |  {{2786 °F; 1530 °C}} |
+Table: SK large cones (JIS R 8101): the nominal (JIS) temperature of each
+Label: SK chart
 
-ทุกตัวเลขเป็นค่าตามชื่อ (JIS): อุณหภูมิที่มาตรฐานให้สำหรับโคน ตามที่พิมพ์ในตารางของ Yuko Trading ตารางไม่ได้พิมพ์อัตราการเพิ่มอุณหภูมิ มาตรฐานให้อุณหภูมิอ้างอิง ที่อัตราของช่างปั้นประมาณ 100 °C/h สถาบันเทศบาลของเกียวโตวัดโคนเกียวโตของตนเองว่าโค้งเย็นกว่าตัวเลข JIS สำหรับเบอร์เดียวกัน 47–79 °C เราไม่พบการวัดเช่นนั้นสำหรับโคน SK ตาม JIS ตั้งโคนอ้างอิงและเปรียบเทียบ
+| Cone    | Nominal (JIS) temperature |
+| ------- | ------------------------: |
+| SK 022  |       {{1112 °F; 600 °C}} |
+| SK 021  |       {{1202 °F; 650 °C}} |
+| SK 020  |       {{1238 °F; 670 °C}} |
+| SK 019  |       {{1274 °F; 690 °C}} |
+| SK 018  |       {{1310 °F; 710 °C}} |
+| SK 017  |       {{1346 °F; 730 °C}} |
+| SK 016  |       {{1382 °F; 750 °C}} |
+| SK 015a |       {{1454 °F; 790 °C}} |
+| SK 014a |       {{1499 °F; 815 °C}} |
+| SK 013a |       {{1535 °F; 835 °C}} |
+| SK 012a |       {{1571 °F; 855 °C}} |
+| SK 011a |       {{1616 °F; 880 °C}} |
+| SK 010a |       {{1652 °F; 900 °C}} |
+| SK 09a  |       {{1688 °F; 920 °C}} |
+| SK 08a  |       {{1724 °F; 940 °C}} |
+| SK 07a  |       {{1760 °F; 960 °C}} |
+| SK 06a  |       {{1796 °F; 980 °C}} |
+| SK 05a  |      {{1832 °F; 1000 °C}} |
+| SK 04a  |      {{1868 °F; 1020 °C}} |
+| SK 03a  |      {{1904 °F; 1040 °C}} |
+| SK 02a  |      {{1940 °F; 1060 °C}} |
+| SK 01a  |      {{1976 °F; 1080 °C}} |
+| SK 1a   |      {{2012 °F; 1100 °C}} |
+| SK 2a   |      {{2048 °F; 1120 °C}} |
+| SK 3a   |      {{2084 °F; 1140 °C}} |
+| SK 4a   |      {{2120 °F; 1160 °C}} |
+| SK 5a   |      {{2156 °F; 1180 °C}} |
+| SK 6a   |      {{2192 °F; 1200 °C}} |
+| SK 7    |      {{2246 °F; 1230 °C}} |
+| SK 8    |      {{2282 °F; 1250 °C}} |
+| SK 9    |      {{2336 °F; 1280 °C}} |
+| SK 10   |      {{2372 °F; 1300 °C}} |
+| SK 11   |      {{2408 °F; 1320 °C}} |
+| SK 12   |      {{2462 °F; 1350 °C}} |
+| SK 13   |      {{2516 °F; 1380 °C}} |
+| SK 14   |      {{2570 °F; 1410 °C}} |
+| SK 15   |      {{2615 °F; 1435 °C}} |
+| SK 16   |      {{2660 °F; 1460 °C}} |
+| SK 17   |      {{2696 °F; 1480 °C}} |
+| SK 18   |      {{2732 °F; 1500 °C}} |
+| SK 19   |      {{2768 °F; 1520 °C}} |
+| SK 20   |      {{2786 °F; 1530 °C}} |
 
-### โคนเกียวโต
+Every figure is nominal (JIS): the temperature the standard gives for the cone, as printed in Yuko Trading's table. The table does not print a heating rate. The standard gives reference temperatures. At a potter's rate of about 100 °C/h, Kyoto's municipal institute measured its own Kyoto cones bending 47–79 °C cooler than the JIS figure for the same number; we found no such measurements for SK cones to JIS. Set a witness cone and compare.
 
-โคนเกียวโต (Kyoto zeegeru) ผลิตโดยสถาบันเทศบาลของเกียวโต เลิกผลิตแล้ว: ข่าวรายงานว่าสถาบันยุติการผลิตเมื่อสิ้นปีงบประมาณ 2009 มีเบอร์เดียวกับโคน SK ตาม JIS แต่โค้งเย็นกว่า: โคนเกียวโตโค้งที่อุณหภูมิประมาณเท่ากับโคน SK ตาม JIS ที่เย็นกว่าสองหรือสามเบอร์ สูตรเคลือบจากเกียวโตที่ระบุ “SK 8” อาจหมายถึงโคนเกียวโต สถาบันเผยแพร่คำแนะนำสำหรับช่างปั้นที่เปลี่ยนจากโคนเกียวโตเป็นโคน Orton และใช้โคน Orton 10 แทน Kyoto SK 12 ของตน นั่นเป็นทางเลือกของสถาบันจากการวัดของตนเอง: สถาบันเผาโคนเกียวโตและโคน Orton ในเตาเดียวกันที่ 100 °C/h และ Kyoto SK 12 (1290 °C) โค้งที่จุดเดียวกับ Orton 10 (1290 °C) ในตารางเดียวกัน Kyoto SK 8 (1198 °C) โค้งใกล้กับ Orton 5 (1207 °C) และ Kyoto SK 10 (1232 °C) โค้งที่จุดเดียวกับ Orton 7 (1232 °C) Glazecalc ใช้ตารางนี้ ไม่ใช่ตารางของ Orton ที่ 60 °C/h เมื่อแสดงโคน SK คู่กับโคน Orton และระบุว่าการจับคู่แต่ละคู่เป็นค่าโดยประมาณ
+### Kyoto cones
 
-### โคน Orton ที่จำหน่ายในญี่ปุ่น
+Kyoto cones (京都ゼーゲル), made by Kyoto's municipal institute, are no longer made: news reports say the institute ended production at the close of fiscal 2009. They carry the same numbers as SK cones to JIS but bend cooler: a Kyoto cone bends at about the temperature of the SK cone to JIS two or three numbers lower. A recipe from Kyoto that says "SK 8" may mean a Kyoto cone. The institute has published advice for potters moving from Kyoto cones to Orton cones, and substitutes Orton cone 10 for its own Kyoto SK 12. That is the institute's choice from its own measurements: it bent Kyoto cones and Orton cones in the same kiln at 100 °C/h, and Kyoto SK 12 (1290 °C) bent where Orton 10 (1290 °C) did. In the same table Kyoto SK 8 (1198 °C) bent near Orton 5 (1207 °C), and Kyoto SK 10 (1232 °C) where Orton 7 (1232 °C) did. Glazecalc uses this table, not the Orton chart at 60 °C/h, when it shows an SK cone beside an Orton cone, and says each match is approximate.
 
-โคนตั้งเองได้ของ Orton จำหน่ายในญี่ปุ่นภายใต้ชื่อ tatsu zeegeru (“เซเกอร์ตั้ง”) เพราะไม่ต้องใช้แผ่นฐานโคนหรือขาตั้ง เป็นโคน Orton ที่มีเบอร์ของ Orton และตารางของ Orton (ด้านบน): เผาตามโคนเหล่านี้โดยใช้เบอร์ Orton เท่านั้น และเก็บโคน SK กับโคน Orton ในชุดแยกกัน ไม่ใส่ในชุดเดียวกัน
+### Orton cones sold in Japan
 
-### แหล่งข้อมูลสำหรับโคน SK
+Orton self-supporting cones are sold in Japan under the name 立つゼーゲル ("standing Seger"), because they need no plaque or stand. They are Orton cones, with Orton's numbers and Orton's chart (above): fire to one only by its Orton number, and keep SK and Orton cones in separate packs, never in the same one.
 
-- [Yuko Trading: Hyoujun youtou ondo hyou (ตาราง SK ตรวจเมื่อ 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
-- [JSA: JIS R 8101:1999 Taikadoshiken-you hyoujun kon (มาตรฐานสำหรับโคนทดสอบความทนไฟ มีผลบังคับใช้ ยืนยันอีกครั้งเมื่อ 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
-- [Kyoto Municipal Institute of Industrial Technology and Culture: ข้อควรทราบเมื่อเปลี่ยนจากโคนเกียวโตเป็นโคน Orton](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
+### Sources for SK cones
+
+- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (the SK table, checked 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
+- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (in force, reconfirmed 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
+- [JSA: JIS R 2204:1999, 耐火物及び耐火物原料の耐火度試験方法 (in force, reconfirmed 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+2204:1999)
+- [kikakurui.com: a transcription of JIS R 2204:1999, where clause 5 a) sets the cones (read 2026-10-19)](https://kikakurui.com/r2/R2204-1999-01.html)
+- [Kyoto Municipal Institute of Industrial Technology and Culture: points to note when moving from Kyoto cones to Orton cones](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
 
 :::
 

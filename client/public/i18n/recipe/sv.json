@@ -979,7 +979,6 @@
     "approxTemperature": "≈ {temperature} ({basis}; ungefärligt)",
     "approxCone": "≈ {cone} ({basis}; ungefärligt)",
     "basis": {
-      "orton60": "stora Ortonkäglor vid 60 °C i timmen",
       "kyoto": "uppmätt vid 100 °C i timmen av Kyotos kommunala institut",
       "stated": "som angivet"
     },

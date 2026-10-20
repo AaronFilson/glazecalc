@@ -61,8 +61,7 @@
     "vet": "Hívja az állatorvosát.",
     "checkedOn": "Ellenőrizve itt:",
     "choosePrompt": "Válassza ki az országát, hogy lássa, kit hívjon ott.",
-    "ministry": "Az egészségügyi minisztérium oldala: <link>{name}</link>.",
-    "reported": "A hivatalos kormányzati oldalak a 113, 114 és 115 számot sorolják fel, de nem azt, hogy melyik mire való; a megjelenített szerepek a 22/2014/TT-BTTTT körlevelet követik, ahogy azt másodlagos oldalak idézik."
+    "ministry": "Az egészségügyi minisztérium oldala: <link>{name}</link>."
   },
   "density": {
     "sg": "fajsúly {value}",

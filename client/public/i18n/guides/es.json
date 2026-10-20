@@ -61,8 +61,7 @@
     "vet": "Llame a su veterinario.",
     "checkedOn": "Comprobado en:",
     "choosePrompt": "Elija su país para ver a quién llamar allí.",
-    "ministry": "La página del ministerio de sanidad: <link>{name}</link>.",
-    "reported": "Las páginas oficiales del gobierno enumeran 113, 114 y 115, pero no para qué sirve cada número; las funciones que se muestran siguen la Circular 22/2014/TT-BTTTT, tal como la citan páginas secundarias."
+    "ministry": "La página del ministerio de sanidad: <link>{name}</link>."
   },
   "density": {
     "sg": "densidad {value}",

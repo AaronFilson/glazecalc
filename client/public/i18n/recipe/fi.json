@@ -979,7 +979,6 @@
     "approxTemperature": "≈ {temperature} ({basis}; likimääräinen)",
     "approxCone": "≈ {cone} ({basis}; likimääräinen)",
     "basis": {
-      "orton60": "Ortonin suuret keilat nopeudella 60 °C tunnissa",
       "kyoto": "mitattu nopeudella 100 °C tunnissa Kioton kaupungin tutkimuslaitoksessa",
       "stated": "annetun mukaan"
     },

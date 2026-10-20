@@ -979,7 +979,6 @@
     "approxTemperature": "≈ {temperature} ({basis}; approssimat)",
     "approxCone": "≈ {cone} ({basis}; approssimat)",
     "basis": {
-      "orton60": "koni kbar ta’ Orton b’60 °C fis-siegħa",
       "kyoto": "imkejjel b’100 °C fis-siegħa mill-istitut muniċipali ta’ Kyoto",
       "stated": "kif mogħti"
     },

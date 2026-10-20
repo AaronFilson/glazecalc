@@ -61,8 +61,7 @@
     "vet": "Ligue para o seu veterinário.",
     "checkedOn": "Verificado em:",
     "choosePrompt": "Escolha o seu país para ver a quem ligar.",
-    "ministry": "A página do Ministério da Saúde: <link>{name}</link>.",
-    "reported": "As páginas oficiais do governo indicam 113, 114 e 115, mas não para que serve cada número; as funções mostradas seguem a Circular 22/2014/TT-BTTTT, tal como a citam páginas secundárias."
+    "ministry": "A página do Ministério da Saúde: <link>{name}</link>."
   },
   "density": {
     "sg": "SG {value}",

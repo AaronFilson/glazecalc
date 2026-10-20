@@ -61,8 +61,7 @@
     "vet": "Ring til dyrlægen.",
     "checkedOn": "Kontrolleret på:",
     "choosePrompt": "Vælg land for at se, hvem man ringer til der.",
-    "ministry": "Sundhedsministeriets side: <link>{name}</link>.",
-    "reported": "Officielle regeringssider angiver 113, 114 og 115, men ikke hvad hvert nummer er til; de viste roller følger cirkulære 22/2014/TT-BTTTT, som sekundære sider citerer det."
+    "ministry": "Sundhedsministeriets side: <link>{name}</link>."
   },
   "density": {
     "sg": "massefylde {value}",

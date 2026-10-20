@@ -61,8 +61,7 @@
     "vet": "Rufen Sie Ihre Tierarztpraxis an.",
     "checkedOn": "Geprüft anhand von:",
     "choosePrompt": "Wählen Sie Ihr Land, um zu sehen, wen Sie dort anrufen.",
-    "ministry": "Die Seite des Gesundheitsministeriums: <link>{name}</link>.",
-    "reported": "Offizielle Regierungsseiten nennen 113, 114 und 115, aber nicht, wofür jede Nummer gilt; die angezeigten Aufgaben folgen dem Rundschreiben 22/2014/TT-BTTTT, wie Sekundärseiten es wiedergeben."
+    "ministry": "Die Seite des Gesundheitsministeriums: <link>{name}</link>."
   },
   "density": {
     "sg": "spez. Gewicht {value}",

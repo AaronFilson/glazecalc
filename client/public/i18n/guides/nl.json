@@ -61,8 +61,7 @@
     "vet": "Bel uw dierenarts.",
     "checkedOn": "Gecontroleerd aan de hand van:",
     "choosePrompt": "Kies uw land om te zien wie u daar kunt bellen.",
-    "ministry": "De pagina van het ministerie van Volksgezondheid: <link>{name}</link>.",
-    "reported": "Officiële overheidspagina’s noemen 113, 114 en 115, maar niet waarvoor elk nummer dient; de getoonde functies volgen Circulaire 22/2014/TT-BTTTT, zoals secundaire pagina’s die weergeven."
+    "ministry": "De pagina van het ministerie van Volksgezondheid: <link>{name}</link>."
   },
   "density": {
     "sg": "soortelijk gewicht {value}",

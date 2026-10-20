@@ -61,8 +61,7 @@
     "vet": "Należy zadzwonić do weterynarza.",
     "checkedOn": "Sprawdzono na stronach:",
     "choosePrompt": "Wystarczy wybrać kraj, aby zobaczyć, gdzie tam dzwonić.",
-    "ministry": "Strona ministerstwa zdrowia: <link>{name}</link>.",
-    "reported": "Oficjalne strony rządowe podają numery 113, 114 i 115, ale nie wyjaśniają, do czego służy każdy z nich; pokazane role wynikają z okólnika 22/2014/TT-BTTTT, tak jak cytują go strony drugorzędne."
+    "ministry": "Strona ministerstwa zdrowia: <link>{name}</link>."
   },
   "density": {
     "sg": "SG {value}",

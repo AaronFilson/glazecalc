@@ -979,7 +979,6 @@
     "approxTemperature": "≈ {temperature} ({basis}; apytiksliai)",
     "approxCone": "≈ {cone} ({basis}; apytiksliai)",
     "basis": {
-      "orton60": "Ortono dideli piroskopai, 60 °C per valandą",
       "kyoto": "išmatuota 100 °C per valandą Kioto miesto institute",
       "stated": "kaip nurodyta"
     },

@@ -61,8 +61,7 @@
     "vet": "Zavolajte veterinárovi.",
     "checkedOn": "Overené na stránkach:",
     "choosePrompt": "Vyberte krajinu, aby ste videli, kam tam volať.",
-    "ministry": "Stránka ministerstva zdravotníctva: <link>{name}</link>.",
-    "reported": "Oficiálne vládne stránky uvádzajú čísla 113, 114 a 115, ale nie, na čo každé slúži; zobrazené úlohy vychádzajú z obežníka Circular 22/2014/TT-BTTTT, ako ho citujú druhotné stránky."
+    "ministry": "Stránka ministerstva zdravotníctva: <link>{name}</link>."
   },
   "density": {
     "sg": "hustota {value}",

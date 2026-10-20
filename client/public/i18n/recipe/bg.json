@@ -979,7 +979,6 @@
     "approxTemperature": "≈ {temperature} ({basis}; приблизително)",
     "approxCone": "≈ {cone} ({basis}; приблизително)",
     "basis": {
-      "orton60": "големи конуси Orton при 60 °C на час",
       "kyoto": "измерено при 100 °C на час от общинския институт в Киото",
       "stated": "както е посочено"
     },

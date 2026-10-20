@@ -61,8 +61,7 @@
     "vet": "Ċempel lill-veterinarju tiegħek.",
     "checkedOn": "Iċċekkjat:",
     "choosePrompt": "Agħżel il-pajjiż tiegħek biex tara lil min iċċempel hemmhekk.",
-    "ministry": "Il-paġna tal-ministeru tas-saħħa: <link>{name}</link>.",
-    "reported": "Il-paġni uffiċjali tal-gvern jelenkaw 113, 114 u 115, imma ma jgħidux għal xiex hu kull wieħed; ir-rwoli murija jsegwu ċ-Ċirkolari 22/2014/TT-BTTTT, kif tiġi kkwotata fil-paġni sekondarji."
+    "ministry": "Il-paġna tal-ministeru tas-saħħa: <link>{name}</link>."
   },
   "density": {
     "sg": "gravità speċifika {value}",

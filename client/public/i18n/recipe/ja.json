@@ -979,7 +979,6 @@
     "approxTemperature": "≈ {temperature}（{basis}。概算）",
     "approxCone": "≈ {cone}（{basis}。概算）",
     "basis": {
-      "orton60": "オルトンの大型コーン、一時間あたり 60 °C",
       "kyoto": "京都市の公設試験機関が一時間あたり 100 °C で測定",
       "stated": "入力されたとおり"
     },

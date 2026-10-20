@@ -979,7 +979,6 @@
     "approxTemperature": "≈ {temperature} ({basis}; โดยประมาณ)",
     "approxCone": "≈ {cone} ({basis}; โดยประมาณ)",
     "basis": {
-      "orton60": "โคน Orton ขนาดใหญ่ที่ 60 °C ต่อชั่วโมง",
       "kyoto": "วัดที่ 100 °C ต่อชั่วโมงโดยสถาบันของเทศบาลนครเกียวโต",
       "stated": "ตามที่ให้ไว้"
     },

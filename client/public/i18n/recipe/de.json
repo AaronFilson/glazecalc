@@ -979,7 +979,6 @@
     "approxTemperature": "≈ {temperature} ({basis}; ungefähr)",
     "approxCone": "≈ {cone} ({basis}; ungefähr)",
     "basis": {
-      "orton60": "große Ortonkegel bei 60 °C pro Stunde",
       "kyoto": "gemessen bei 100 °C pro Stunde vom städtischen Institut in Kyoto",
       "stated": "wie angegeben"
     },

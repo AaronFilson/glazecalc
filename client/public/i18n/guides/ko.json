@@ -61,8 +61,7 @@
     "vet": "다니는 동물병원에 전화하세요.",
     "checkedOn": "확인한 페이지:",
     "choosePrompt": "나라를 선택하면 그 나라에서 연락할 곳이 표시됩니다.",
-    "ministry": "보건부 페이지: <link>{name}</link>.",
-    "reported": "정부 공식 페이지에는 113, 114, 115가 나와 있지만 각각 무엇을 위한 번호인지는 적혀 있지 않습니다. 표시한 역할은 이차 자료에 인용된 Circular 22/2014/TT-BTTTT를 따른 것입니다."
+    "ministry": "보건부 페이지: <link>{name}</link>."
   },
   "density": {
     "sg": "비중 {value}",

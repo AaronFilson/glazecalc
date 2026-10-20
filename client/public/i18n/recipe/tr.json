@@ -979,7 +979,6 @@
     "approxTemperature": "≈ {temperature} ({basis}; yaklaşık)",
     "approxCone": "≈ {cone} ({basis}; yaklaşık)",
     "basis": {
-      "orton60": "Orton büyük piramitleri, saatte 60 °C hızla",
       "kyoto": "Kyoto belediye enstitüsü tarafından saatte 100 °C hızla ölçüldü",
       "stated": "verildiği gibi"
     },

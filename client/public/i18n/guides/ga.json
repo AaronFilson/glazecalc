@@ -61,8 +61,7 @@
     "vet": "Glaoigh ar do thréidlia.",
     "checkedOn": "Seiceáilte:",
     "choosePrompt": "Roghnaigh do thír chun a fheiceáil cé air a nglaofar ansin.",
-    "ministry": "Leathanach na haireachta sláinte: <link>{name}</link>.",
-    "reported": "Liostaíonn leathanaigh oifigiúla an rialtais 113, 114 agus 115, ach ní deir siad cad chuige a bhfuil gach ceann acu; leanann na róil a thaispeántar Imlitir 22/2014/TT-BTTTT, mar a luaitear í ar leathanaigh thánaisteacha."
+    "ministry": "Leathanach na haireachta sláinte: <link>{name}</link>."
   },
   "density": {
     "sg": "sainmheáchan {value}",

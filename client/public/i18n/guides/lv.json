@@ -61,8 +61,7 @@
     "vet": "Zvaniet savam veterinārārstam.",
     "checkedOn": "Pārbaudīts vietnēs:",
     "choosePrompt": "Izvēlieties valsti, lai redzētu, kur tur zvanīt.",
-    "ministry": "Veselības ministrijas lapa: <link>{name}</link>.",
-    "reported": "Oficiālajās valdības lapās ir minēti 113, 114 un 115, taču nav norādīts, kam katrs paredzēts; parādītās funkcijas atbilst apkārtrakstam 22/2014/TT-BTTTT, kā to min sekundāras lapas."
+    "ministry": "Veselības ministrijas lapa: <link>{name}</link>."
   },
   "density": {
     "sg": "rel. blīvums {value}",

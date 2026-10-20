@@ -61,8 +61,7 @@
     "vet": "Soita eläinlääkärille.",
     "checkedOn": "Tarkistettu sivuilta:",
     "choosePrompt": "Valitse maa, niin sivulla näkyy, minne siellä soitetaan.",
-    "ministry": "Terveysministeriön sivu: <link>{name}</link>.",
-    "reported": "Viralliset viranomaissivut luettelevat numerot 113, 114 ja 115, mutta eivät sitä, mihin kukin on tarkoitettu; näytetyt tehtävät noudattavat kiertokirjettä 22/2014/TT-BTTTT sellaisena kuin toissijaiset sivut sen esittävät."
+    "ministry": "Terveysministeriön sivu: <link>{name}</link>."
   },
   "density": {
     "sg": "ominaispaino {value}",

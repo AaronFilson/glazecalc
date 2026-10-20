@@ -979,7 +979,6 @@
     "approxTemperature": "≈ {temperature} ({basis}; približno)",
     "approxCone": "≈ {cone} ({basis}; približno)",
     "basis": {
-      "orton60": "Ortonovi veliki stožci pri 60 °C na uro",
       "kyoto": "izmerjeno pri 100 °C na uro v mestnem inštitutu v Kjotu",
       "stated": "kot navedeno"
     },
