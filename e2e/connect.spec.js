@@ -90,10 +90,16 @@ test('connects an app read only, which reads, is asked to step up to change, and
 
   // Read only.
   const mailsBefore = sentTo(email).length;
-  // The browser takes the answer to the app's listener on this computer (none here: the request is enough).
+  // The browser takes the answer to the app's listener on this computer, played here by page.route, so
+  // the page has finished arriving there before the test opens another (an unanswered address would
+  // end in an error page that can interrupt the next navigation).
+  await page.route(REDIRECT + '?**', (route) =>
+    route.fulfill({ status: 200, contentType: 'text/html', body: '<!doctype html><title>Kiln Helper</title>' })
+  );
   const callback = page.waitForRequest((req) => req.url().startsWith(REDIRECT + '?'));
   await page.getByRole('button', { name: 'Allow', exact: true }).click();
   const answer = new URL((await callback).url());
+  await page.waitForURL(REDIRECT + '?**');
   expect(answer.searchParams.get('code')).toBeTruthy();
   expect(answer.searchParams.get('state')).toBe(state);
 
