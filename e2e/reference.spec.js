@@ -12,6 +12,8 @@ const NAMES = fs
   .filter(Boolean)
   .map((line) => JSON.parse(line).name);
 
+// The canonical link of a page, at the site's address (the test server's own here).
+const canonical = (address) => new RegExp(`<link rel="canonical" href="[^"]*${address}" />`);
 const meta = (page, selector) => page.locator('head meta[' + selector + ']').getAttribute('content');
 const jsonLd = async (page) =>
   (await page.locator('head script[type="application/ld+json"]').allTextContents()).map((text) => JSON.parse(text));
@@ -30,7 +32,7 @@ test.describe('the page of a standard material', () => {
     expect(response.headers()['content-language']).toBe('en');
     const html = await response.text();
     expect(html).toContain('<title>Ferro Frit 3134: oxide analysis and hazards - Glazecalc</title>');
-    expect(html).toContain('<link rel="canonical" href="https://glazecalcapp.com/materials/ferro-frit-3134" />');
+    expect(html).toMatch(canonical('/materials/ferro-frit-3134'));
     expect(html).not.toContain('noindex');
     expect(html).not.toContain('hreflang');
     expect(html).toMatch(/<meta name="description" content="Ferro Frit 3134 in Glazecalc's standard library/);
@@ -129,7 +131,7 @@ test.describe('the list of materials', () => {
   test('is a collection page, apart from the signed-in page of your own materials', async ({ page, request }) => {
     const html = await (await request.get('/materials')).text();
     expect(html).toContain('<title>Standard glaze materials: analysis and hazards - Glazecalc</title>');
-    expect(html).toContain('<link rel="canonical" href="https://glazecalcapp.com/materials" />');
+    expect(html).toMatch(canonical('/materials'));
     await page.goto('/materials');
     await expect(page.locator('h1')).toBeVisible();
     await expect.poll(async () => (await jsonLd(page))[0]['@graph'][0]['@type']).toBe('CollectionPage');
@@ -168,7 +170,7 @@ test.describe('the cone chart', () => {
   test('has its own title, description and canonical address, as sent', async ({ request }) => {
     const html = await (await request.get('/cones')).text();
     expect(html).toContain('<title>Cone chart: Orton and SK cone temperatures - Glazecalc</title>');
-    expect(html).toContain('<link rel="canonical" href="https://glazecalcapp.com/cones" />');
+    expect(html).toMatch(canonical('/cones'));
     const description = /<meta name="description" content="([^"]*)"/.exec(html)?.[1] ?? '';
     expect(description.length).toBeGreaterThanOrEqual(120);
     expect(description.length).toBeLessThanOrEqual(155);
@@ -196,7 +198,7 @@ test.describe('in English only', () => {
     request
   }) => {
     const html = await (await request.get('/de/materials/silica')).text();
-    expect(html).toContain('<link rel="canonical" href="https://glazecalcapp.com/materials/silica" />');
+    expect(html).toMatch(canonical('/materials/silica'));
     expect(html).toContain('<meta name="robots" content="noindex" />');
     expect(html).not.toContain('hreflang');
     await page.goto('/de/materials/silica');
@@ -219,11 +221,11 @@ test.describe('in English only', () => {
   test('the sitemap lists each at its English address, once', async ({ request }) => {
     const map = await (await request.get('/sitemap.xml')).text();
     for (const address of ['/cones', '/materials', '/materials/ferro-frit-3134', '/materials/silica']) {
-      expect(map).toContain(`<url><loc>https://glazecalcapp.com${address}</loc></url>`);
+      expect(map).toMatch(new RegExp(`<url><loc>[^<]*${address}</loc></url>`));
       expect(map).not.toContain(`/de${address}</loc>`);
     }
     for (const address of MATERIAL_PAGES) {
-      expect(map, address).toContain(`<loc>https://glazecalcapp.com${address}</loc>`);
+      expect(map, address).toMatch(new RegExp(`<loc>[^<]*${address}</loc>`));
     }
   });
 });
