@@ -734,6 +734,26 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Changed
 
+- **A match says how near it comes, and keeps raw clay where its own check wants it**
+  (docs/adr/0012, "Amended: how near a match comes"). In a staging test an assistant asked to
+  replace Gerstley Borate read `match_from_materials`' score (a miss of 20.5) as a wide miss and
+  built a recipe by hand whose alumina came out 26% low; the tool's match was within 2% on alumina
+  and silica, and nearer on every oxide. Its score was the only measure it gave, and its 27% raw
+  clay drew its own "will probably crack" caution. Now a match's report has its closeness: each
+  oxide of the new unity formula against the old, as close, off or far, and a verdict (close, fair
+  or poor). The MCP tools that fit amounts (`match_from_materials`, `match_with_what_i_have`,
+  `suggest_substitutes`) answer it with each oxide's old and new value, difference and percent and a
+  sentence, and now also the caps that cost match (`capped`), which `allowMore` lifts. Match with
+  what I have and Suggest amounts hold raw clay to 20% of the batch (or the recipe's own share)
+  where that costs the match little, a calcined kaolin on hand taking up the rest, and keep at
+  least 10% (or what the recipe had) of the recipe's raw clay, so calcined kaolin does not take all
+  of it; where only raw clay can bring the alumina back, the chemistry comes first and the caution
+  says to swap part of it for calcined kaolin. On the website, Allow more lifts the hold. When
+  nothing offered supplies one of the recipe's fluxes (lithia with no lithium on hand), the other
+  fluxes make up its share, so silica comes out about 5% high rather than 26%. The clay caution no
+  longer repeats what the old recipe already had. Underneath, the fit takes caps on a share of the
+  batch, and an amount tried back at its start can no longer break a cap. English only.
+
 - **The privacy notice says what connecting an AI app means** (a new section, "Connecting an AI
   app", with the ADR 0024 notices): what is kept for each connected app (its name and address as
   it gives them, where it sends you back, what it may do, its dates, its codes and tokens only as
