@@ -364,7 +364,7 @@
     "intro": "Los que da el registro de cada material; los de la lista estándar proceden de las fichas de datos de seguridad de los proveedores.",
     "line": "<b>{names}:</b> {hazards}",
     "unknown": "{count, plural, one {No se indican peligros para {list}: consulte la ficha de datos de seguridad que lo acompaña.} many {No se indican peligros para {list}: consulte las fichas de datos de seguridad que los acompañan.} other {No se indican peligros para {list}: consulte las fichas de datos de seguridad que los acompañan.}}",
-    "safety": "Los materiales secos para esmaltes producen polvo, y debe mantenerlo fuera de sus pulmones, incluso el de los materiales no clasificados como peligrosos. Vea <mixing>Preparación segura y ventilación</mixing> y, si hay niños o animales de compañía cerca, también <home>No envenene a su familia</home>. Si la ficha de datos de seguridad de un material dice más, sígala."
+    "safety": "Los materiales secos para esmaltes producen polvo, y debe mantenerlo fuera de sus pulmones, incluso el de los materiales no clasificados como peligrosos. Vea <mixing>Preparación segura y ventilación</mixing>. Si hay niños o animales de compañía cerca, vea también <home>No envenene a su familia</home>. Si la ficha de datos de seguridad de un material dice más, sígala."
   },
   "compare": {
     "heading": "Comparar dos recetas",

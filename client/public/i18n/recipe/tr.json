@@ -364,7 +364,7 @@
     "intro": "Her hammaddenin kaydında verildiği gibi; standart kütüphanedekiler tedarikçilerin güvenlik bilgi formlarından gelir.",
     "line": "<b>{names}:</b> {hazards}",
     "unknown": "{count, plural, one {{list} için tehlike verilmemiş: yanında gelen güvenlik bilgi formuna bakın.} other {{list} için tehlike verilmemiş: yanlarında gelen güvenlik bilgi formlarına bakın.}}",
-    "safety": "Kuru sır hammaddeleri toz çıkarır ve bu tozu ciğerlerinizden uzak tutmalısınız; tehlikeli olarak sınıflandırılmayan hammaddelerin tozu da dahil. <mixing>Güvenli karıştırma ve havalandırma</mixing> rehberine bakın; çocuklar veya evcil hayvanlar çevredeyse <home>Ailenizi zehirlemeyin</home> rehberine de bakın. Bir hammaddenin güvenlik bilgi formu daha fazlasını söylüyorsa, ona uyun."
+    "safety": "Kuru sır hammaddeleri toz çıkarır ve bu tozu ciğerlerinizden uzak tutmalısınız; tehlikeli olarak sınıflandırılmayan hammaddelerin tozu da dahil. <mixing>Güvenli karıştırma ve havalandırma</mixing> rehberine bakın. Çocuklar veya evcil hayvanlar çevredeyse <home>Ailenizi zehirlemeyin</home> rehberine de bakın. Bir hammaddenin güvenlik bilgi formu daha fazlasını söylüyorsa, ona uyun."
   },
   "compare": {
     "heading": "İki reçeteyi karşılaştır",
