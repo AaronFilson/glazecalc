@@ -27,14 +27,19 @@
       "text": "Praful, măștile de protecție respiratorie, curățenia, materiile prime care cer cea mai mare grijă și aerisirea cuptorului."
     },
     "homeSafety": {
-      "title": "Nu vă otrăviți familia",
+      "title": "Siguranța glazurilor acasă: copii, animale de companie și cuptorul",
       "text": "Ceramica acasă, cu copii și animale de companie: depozitarea, praful, cuptorul și ce faceți dacă cineva înghite ceva."
     },
     "firing": {
       "title": "Arderea într-un cuptor simplu",
       "text": "Conurile, dispozitivele Kiln-Sitter și comutatoarele manuale, cu programe de ardere pentru biscuit și pentru glazură."
+    },
+    "learnWithJohnBritt": {
+      "title": "Învățați cu cursul gratuit de glazuri al lui John Britt",
+      "text": "Cursul lui video gratuit de pe YouTube, lecție cu lecție, cu ghidurile noastre de citit și exerciții de încercat în Glazecalc. În limba engleză."
     }
   },
+  "more": "Mai multe ghiduri",
   "contents": "Pe această pagină",
   "poison": {
     "numbersFor": "Numere pentru",

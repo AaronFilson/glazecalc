@@ -2,13 +2,15 @@
 // item 21): ready-made requests that lead the assistant through Glazecalc's
 // tools for four common jobs. Diagnosing a glaze fault, making a recipe
 // lead-free, replacing discontinued materials, and explaining a recipe to a
-// new potter. Each says which tools to use and what to be careful about; the
-// fault diagnosis carries the guides' section on glaze defects with it. The
-// requests are in English, as the tools' descriptions are, and ask for the
-// answer in the person's language.
+// new potter; and a lesson from the companion to John Britt's free glaze
+// course. Each says which tools to use and what to be careful about; the fault
+// diagnosis carries the guides' section on glaze defects with it, and a lesson
+// the guide sections its unit points to. The requests are in English, as the
+// tools' descriptions are, and ask for the answer in the person's language.
 import * as z from 'zod';
 import { completable, type McpServer } from '@modelcontextprotocol/server';
-import { readGuide, sectionMarkdown, sectionUri } from './guides.ts';
+import { COURSE_GUIDE, courseUnits, findUnit } from './course.ts';
+import { type Guide, type GuideSection, readGuide, sectionMarkdown, sectionUri } from './guides.ts';
 
 /** The faults the diagnosis offers by name; any other is taken as written. */
 export const FAULTS = [
@@ -52,6 +54,30 @@ const SAFETY =
   'The limit checks are cautions from published limits, not proof that a glaze is safe: never call a glaze food safe, and advise a test firing on a test tile and, for surfaces that touch food or drink, a leach test by a laboratory.';
 
 const user = (text: string) => ({ role: 'user' as const, content: { type: 'text' as const, text } });
+
+/** A guide's section, attached to a request as an embedded resource. */
+const attached = (guide: Guide, section: GuideSection) => ({
+  role: 'user' as const,
+  content: {
+    type: 'resource' as const,
+    resource: {
+      uri: sectionUri(guide.asked, guide.id, section.id),
+      mimeType: 'text/markdown',
+      text: sectionMarkdown(guide, section)
+    }
+  }
+});
+
+/** A section of a guide in a language (English where it is not translated), or null. */
+const sectionIn = (id: string, section: string, language: string | undefined) => {
+  const guide = readGuide(id, language);
+  const found = guide?.sections.find((s) => s.id === section);
+  return guide && found ? attached(guide, found) : null;
+};
+
+/** One blank line at most between parts. */
+const lines = (parts: string[]): string =>
+  parts.filter((line, i, all) => line !== '' || (i > 0 && all[i - 1] !== '')).join('\n');
 
 export const registerPrompts = (server: McpServer): void => {
   server.registerPrompt(
@@ -235,5 +261,87 @@ export const registerPrompts = (server: McpServer): void => {
         )
       ]
     })
+  );
+  server.registerPrompt(
+    'glaze_course_lesson',
+    {
+      title: "A lesson from John Britt's free glaze course",
+      description:
+        "Sets up one unit of Glazecalc's companion to John Britt's free online Glaze Course on YouTube: links to his videos by his titles, with credit, the Glazecalc guide sections to read (attached), and hands-on exercises with Glazecalc's tools, with your own recipe if you give one.",
+      argsSchema: z.object({
+        unit: completable(
+          z
+            .string()
+            .min(1)
+            .max(60)
+            .describe('The unit, by its name ("unity-formula", "blending", "firing") or its number (1 to 12).'),
+          (value) => {
+            const typed = (value ?? '').toLowerCase();
+            return courseUnits()
+              .map((unit) => unit.id)
+              .filter((id) => id.startsWith(typed));
+          }
+        ),
+        recipe: recipeArg.optional(),
+        cone: coneArg,
+        language: languageArg
+      })
+    },
+    ({ unit: asked, recipe, cone, language }) => {
+      const unit = findUnit(asked);
+      if (!unit) {
+        const names = courseUnits()
+          .map((u) => u.id)
+          .join(', ');
+        throw new Error(`No unit "${asked}" in the course. The units are: ${names}.`);
+      }
+      const course = sectionIn(COURSE_GUIDE, unit.id, language);
+      const reads = unit.reads.map((read) => sectionIn(read.guide, read.section, language));
+      // Lab work: the safe mixing guide's habits come first, whatever the unit lists.
+      const safety =
+        unit.lab && !unit.reads.some((read) => read.guide === 'safe-mixing' && read.section === 'habits')
+          ? sectionIn('safe-mixing', 'habits', language)
+          : null;
+      return {
+        description: `Unit ${unit.number}: ${unit.title}`,
+        messages: [
+          user(
+            lines([
+              `I am following John Britt's free online Glaze Course on YouTube, with Glazecalc's companion to it. Help me with unit ${unit.number}: ${unit.title}.`,
+              '',
+              "His videos for this unit (John Britt's own, free on YouTube, in English):",
+              ...unit.videos.map((video) => `- ${video.title}: ${video.url}`),
+              '',
+              'The Glazecalc guide sections to read (attached):',
+              ...unit.reads.map((read) => `- ${read.title} (${read.guide}#${read.section})`),
+              '',
+              "The companion's exercises:",
+              ...unit.exercises.map((exercise, i) => `${i + 1}. ${exercise}`),
+              '',
+              recipe ? 'My recipe:' : '',
+              recipe ?? '',
+              recipe ? firingLine(cone) : cone ? `I fire to ${cone}.` : '',
+              '',
+              'Please:',
+              unit.lab
+                ? '1. This unit is lab work. Before anything else, point me to the safe mixing guide (the attached section on habits, and search_guides for more): dust, a fitted respirator, wet cleaning.'
+                : '1. Say in a sentence what this unit covers, from its title and the attached guide sections.',
+              '2. List his videos with their links and titles, credit John Britt (johnbrittpottery.com), and tell me to watch them on YouTube. Do not retell, summarise or quote what he says in them: you have not seen them, and they are his. Glazecalc is not connected with him.',
+              '3. Explain the ideas I need from the attached Glazecalc guide sections, in plain words, and cite them by their addresses.',
+              '4. Lead me through the exercises one at a time, using the tools they name (analyze_recipe, check_limits, suggest_substitutes, match_from_materials, get_material, convert_cone_temperature, search_guides, blend_recipes)' +
+                (recipe ? ', with my recipe where it fits: find each material with search_materials first.' : '.'),
+              '5. End with what to test on a tile next, and what to write down.',
+              '',
+              SAFETY +
+                answerIn(language) +
+                (language && !/^en(-|$)/i.test(language)
+                  ? ' His videos are in English: say so, and give their titles as he wrote them.'
+                  : '')
+            ])
+          ),
+          ...[course, safety, ...reads].filter((message) => message !== null)
+        ]
+      };
+    }
   );
 };

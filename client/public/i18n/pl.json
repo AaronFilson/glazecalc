@@ -6,8 +6,9 @@
     "glazingBasics": "Szkliwienie od podstaw - Glazecalc",
     "makingAGlaze": "Jak przygotować szkliwo - Glazecalc",
     "safeMixing": "Bezpieczne rozrabianie szkliw i wentylacja - Glazecalc",
-    "homeSafety": "Jak nie otruć własnej rodziny - Glazecalc",
+    "homeSafety": "Bezpieczeństwo szkliw w domu: dzieci, zwierzęta i piec - Glazecalc",
     "firing": "Wypał w prostym piecu - Glazecalc",
+    "learnWithJohnBritt": "Nauka z bezpłatnym kursem szkliw Johna Britta - Glazecalc",
     "about": "O aplikacji - Glazecalc",
     "privacy": "Prywatność - Glazecalc",
     "terms": "Warunki korzystania - Glazecalc",
@@ -26,9 +27,12 @@
     "notes": "Notatki - Glazecalc",
     "trash": "Kosz - Glazecalc",
     "account": "Konto i ustawienia - Glazecalc",
+    "apps": "Połączone aplikacje - Glazecalc",
+    "connect": "Połączenie aplikacji - Glazecalc",
     "notFound": "Nie znaleziono strony - Glazecalc",
     "shared": "Udostępniona receptura - Glazecalc",
-    "assistants": "Korzystanie z Glazecalc w asystencie AI - Glazecalc"
+    "assistants": "Korzystanie z Glazecalc w asystencie AI - Glazecalc",
+    "confirm": "Zatwierdzenie zmiany - Glazecalc"
   },
   "nav": {
     "skip": "Przejdź do treści",
@@ -91,6 +95,7 @@
     "safeMixing": "Jak chronić płuca przed pyłem szkliw, a dom przed gazami i oparami z wypału: bezpieczne nawyki, półmaski, sprzątanie, wentylacja i ryzykowne surowce.",
     "homeSafety": "Co robić, gdy dziecko lub zwierzę połknie surowiec do szkliw, i jak sprawić, by surowce, pył, piec i ręcznie robione wyroby były bezpieczne dla rodziny.",
     "firing": "Jak wypalać w piecu elektrycznym: dobierać, ustawiać i odczytywać stożki oraz stosować opublikowane programy wypału biskwitowego i szkliwa. Z tabelą stożków.",
+    "learnWithJohnBritt": "Przewodnik do bezpłatnego kursu szkliw online Johna Britta: jego filmy lekcja po lekcji, z poradnikami Glazecalc i ćwiczeniami w kalkulatorze.",
     "advice": "Praktyczne porady o rozrabianiu szkliw ceramicznych, szkliwieniu i wypale od Glazecalc oraz własne porady. Bezpłatnie dla garncarzy i ceramików.",
     "about": "Glazecalc to bezpłatny kalkulator chemii szkliw ceramicznych i notatnik open source. Jak oblicza wzór Segera (UMF) i jak jest zbudowany.",
     "privacy": "Jak Glazecalc postępuje z danymi: bez reklam, analityki i śledzenia, nic nie jest sprzedawane. Co jest przechowywane, dlaczego i jak skorzystać z praw.",

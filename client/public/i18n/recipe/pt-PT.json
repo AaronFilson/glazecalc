@@ -566,7 +566,7 @@
       "hesselberth-roy": "Os limites que John Hesselberth e Ron Roy recomendam para vidrados estáveis em grés e porcelana funcionais, a cone 6 e cone 10. Restringem-se a uma lista curta de matérias-primas, por isso o conjunto não tem intervalo para o bário nem o lítio, nem para o zinco a cone 10.",
       "glazecalc": "Os valores a que a aplicação avisa quando troca matérias-primas: boro, alumina, sódio e potássio, e magnésia a baixa temperatura."
     },
-    "firing": "Cozedura",
+    "firing": "Limites para",
     "firingUnknown": "Não escolhida",
     "bands": {
       "low": "Baixa temperatura, cone 06–02",
@@ -596,6 +596,8 @@
     "saveFailed": "A sua escolha do conjunto de limites não pôde ser guardada na sua conta, por isso o conjunto anterior continua em uso.",
     "ownLimits": "Estas sugestões usam os limites do próprio Glazecalc, não os de {name}.",
     "firingFromBlock": "Da cozedura da receita ({bands})",
+    "firingFromBlockText": "Da cozedura da receita: {bands}",
+    "chooseAnother": "Escolher outra",
     "bothBands": "A cozedura da receita abrange {bands}, por isso cada uma é verificada, lado a lado: um vidrado raramente se comporta da mesma forma nos dois extremos.",
     "fromFiring": "Os valores são para a cozedura da receita: {band}. Escolha acima uma cozedura para verificar outra."
   },
@@ -801,6 +803,18 @@
     "saveHelp": "Assinale as peças que quer manter, no desenho acima. Cada uma é guardada como uma receita em percentagem.",
     "nameLabel": "Nome das peças guardadas",
     "defaultName": "Mistura de {titles}",
+    "chemistry": {
+      "heading": "Química por peça",
+      "help": "Calculada a partir das receitas, como orientação. As peças cozidas dizem-lhe o que acontece realmente.",
+      "firing": "Os avisos e o ajuste ao cone seguem a cozedura da receita {letter}.",
+      "tile": "Peça",
+      "cautions": "Avisos",
+      "coneFit": "Ajuste ao cone",
+      "fits": "Nada contra",
+      "cooler": "Parece-se com uma cozedura mais baixa",
+      "hotter": "Parece-se com uma cozedura mais alta",
+      "skipped": "Não avaliado"
+    },
     "chooseAll": "Escolher todas as peças",
     "chooseNone": "Não escolher nenhuma",
     "save": "{count, plural, =0 {Guardar as peças escolhidas} one {Guardar # peça} many {Guardar # peças} other {Guardar # peças}}",
@@ -890,6 +904,8 @@
   },
   "firing": {
     "heading": "Cozedura",
+    "summary": "Cozedura: {what}",
+    "summaryNone": "Cozedura: não indicada",
     "whatIsCone": "O que significa cone?",
     "scale": "Escala",
     "scales": {

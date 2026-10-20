@@ -6,8 +6,9 @@
     "glazingBasics": "Mengglasir dari prinsip dasar - Glazecalc",
     "makingAGlaze": "Cara membuat glasir - Glazecalc",
     "safeMixing": "Mencampur dengan aman dan ventilasi - Glazecalc",
-    "homeSafety": "Jangan meracuni keluarga Anda - Glazecalc",
+    "homeSafety": "Keamanan glasir di rumah: anak, hewan peliharaan, dan tungku - Glazecalc",
     "firing": "Membakar di tungku sederhana - Glazecalc",
+    "learnWithJohnBritt": "Belajar dengan kursus glasir gratis John Britt - Glazecalc",
     "about": "Tentang - Glazecalc",
     "privacy": "Privasi - Glazecalc",
     "terms": "Syarat Penggunaan - Glazecalc",
@@ -26,9 +27,12 @@
     "notes": "Catatan - Glazecalc",
     "trash": "Sampah - Glazecalc",
     "account": "Akun dan pengaturan Anda - Glazecalc",
+    "apps": "Aplikasi terhubung - Glazecalc",
+    "connect": "Hubungkan aplikasi - Glazecalc",
     "notFound": "Tidak ditemukan - Glazecalc",
     "shared": "Resep yang dibagikan - Glazecalc",
-    "assistants": "Pakai Glazecalc dari asisten AI Anda - Glazecalc"
+    "assistants": "Pakai Glazecalc dari asisten AI Anda - Glazecalc",
+    "confirm": "Setujui perubahan - Glazecalc"
   },
   "nav": {
     "skip": "Langsung ke konten",
@@ -91,6 +95,7 @@
     "safeMixing": "Cara menjauhkan debu glasir dari paru-paru dan asap tungku dari rumah Anda: kebiasaan aman, respirator, pembersihan, ventilasi, dan bahan yang berisiko.",
     "homeSafety": "Yang harus dilakukan jika anak atau hewan peliharaan menelan bahan glasir, dan cara menjaga bahan, debu, tungku, dan keramik buatan tangan aman bagi keluarga.",
     "firing": "Cara membakar tungku listrik: memilih, memasang, dan membaca kerucut, dan mengikuti jadwal terbitan untuk pembakaran biskuit dan glasir, dengan tabel kerucut.",
+    "learnWithJohnBritt": "Pendamping Glaze Course daring gratis John Britt: videonya unit demi unit, dengan panduan Glazecalc untuk dibaca dan latihan untuk dicoba di kalkulator.",
     "advice": "Tips praktis tentang mencampur, mengglasir, dan membakar dari Glazecalc, ditambah saran Anda sendiri. Gratis untuk pembuat keramik.",
     "about": "Glazecalc adalah kalkulator dan buku catatan kimia glasir yang gratis dan bersumber terbuka. Lihat cara menghitung formula Seger dan cara aplikasi ini dibangun.",
     "privacy": "Cara Glazecalc menangani data Anda: tanpa iklan, analitik, atau pelacakan, dan tidak ada yang dijual. Apa yang disimpan, mengapa, dan cara memakai hak Anda.",

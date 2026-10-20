@@ -76,7 +76,6 @@
     "removeField": "Alanı kaldır",
     "addRow": "Pişirim tablosuna satır ekle",
     "addRowWhy": "Önce bir alan ekleyin.",
-    "tableEmpty": "Yukarıya bir alan ekleyin, sonra satırlar ekleyin.",
     "recordHeading": "Pişirimi kaydet",
     "rowActions": "Satır işlemleri",
     "cell": "{field}, satır {row}",

@@ -76,7 +76,6 @@
     "removeField": "Poista kenttä",
     "addRow": "Lisää rivi polttotaulukkoon",
     "addRowWhy": "Lisää ensin kenttä.",
-    "tableEmpty": "Lisää kenttä yllä ja sitten rivejä.",
     "recordHeading": "Kirjaa poltto",
     "rowActions": "Rivin toiminnot",
     "cell": "{field}, rivi {row}",

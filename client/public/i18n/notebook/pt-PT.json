@@ -76,7 +76,6 @@
     "removeField": "Remover o campo",
     "addRow": "Adicionar uma linha à tabela da cozedura",
     "addRowWhy": "Adicione primeiro um campo.",
-    "tableEmpty": "Adicione um campo acima e depois linhas.",
     "recordHeading": "Registar a cozedura",
     "rowActions": "Ações da linha",
     "cell": "{field}, linha {row}",

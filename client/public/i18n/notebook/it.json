@@ -76,7 +76,6 @@
     "removeField": "Rimuovi il campo",
     "addRow": "Aggiungi una riga alla tabella di cottura",
     "addRowWhy": "Aggiunga prima un campo.",
-    "tableEmpty": "Aggiunga un campo qui sopra, poi delle righe.",
     "recordHeading": "Registra la cottura",
     "rowActions": "Azioni sulla riga",
     "cell": "{field}, riga {row}",

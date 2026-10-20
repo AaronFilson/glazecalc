@@ -6,8 +6,9 @@
     "glazingBasics": "Glazing from first principles - Glazecalc",
     "makingAGlaze": "How to make a glaze - Glazecalc",
     "safeMixing": "Safe mixing and ventilation - Glazecalc",
-    "homeSafety": "Don't poison your family - Glazecalc",
+    "homeSafety": "Glaze safety at home: children, pets and the kiln - Glazecalc",
     "firing": "Firing a basic kiln - Glazecalc",
+    "learnWithJohnBritt": "Learn with John Britt's free glaze course - Glazecalc",
     "about": "About - Glazecalc",
     "privacy": "Privacy - Glazecalc",
     "terms": "Terms of use - Glazecalc",
@@ -26,9 +27,12 @@
     "notes": "Notes - Glazecalc",
     "trash": "Trash - Glazecalc",
     "account": "Your account and settings - Glazecalc",
+    "apps": "Connected apps - Glazecalc",
+    "connect": "Connect an app - Glazecalc",
     "notFound": "Not found - Glazecalc",
     "shared": "Shared recipe - Glazecalc",
-    "assistants": "Use Glazecalc from your AI assistant - Glazecalc"
+    "assistants": "Use Glazecalc from your AI assistant - Glazecalc",
+    "confirm": "Approve a change - Glazecalc"
   },
   "nav": {
     "skip": "Skip to content",
@@ -91,6 +95,7 @@
     "safeMixing": "How to keep glaze dust out of your lungs and kiln fumes out of your home: safe habits, respirators, cleaning, ventilation and risky materials.",
     "homeSafety": "What to do if a child or pet swallows a glaze material, and how to keep materials, dust, the kiln and handmade ware safe around your family.",
     "firing": "How to fire an electric kiln: choose, place and read cones, and follow published schedules for bisque and glaze firings, with a cone chart.",
+    "learnWithJohnBritt": "A companion to John Britt's free online Glaze Course: his videos unit by unit, with Glazecalc's guides to read and exercises to try in the calculator.",
     "advice": "Practical tips on mixing, glazing and firing, from Glazecalc, plus any advice of your own. Free for potters and ceramicists.",
     "about": "Glazecalc is a free, open-source glaze chemistry calculator and notebook. See how it works out a unity formula and how it is built.",
     "privacy": "How Glazecalc handles your data: no ads, no analytics and no tracking, and nothing is sold. What is kept, why, and how to use your rights.",

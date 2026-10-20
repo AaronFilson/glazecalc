@@ -40,6 +40,11 @@ test('a range with the cones tested, both bands of the limits, the liner note, a
   // The limits check both bands, side by side.
   await expect(page.locator('.limits-band')).toHaveCount(2);
   await expect(page.locator('.limits-both')).toContainText('Mid fire, cone 4–6 and High fire, cone 9–11');
+  // The band is text, from the firing block; "Choose another" brings the picker.
+  await expect(page.locator('#limit-firing')).toHaveCount(0);
+  await expect(page.locator('#limit-firing-text')).toContainText("From the recipe's firing: Mid fire, cone 4–6");
+  await page.getByRole('button', { name: 'Choose another' }).click();
+  await expect(page.getByLabel('Limits for')).toBeFocused();
   await expect(page.locator('#limit-firing option').first()).toContainText("From the recipe's firing");
 
   await page.getByLabel('For a food surface (a liner)').check();
@@ -184,4 +189,35 @@ test('a linked log shows on the result card for its cone and atmosphere, beside 
     { cone: '10', atmosphere: 'reduction', summary: 'Pale green, crackle where thick' }
   ]);
   expect(saved[0].firings[0]).toMatchObject({ cone: '10', atmosphere: 'reduction' });
+});
+
+test('on a phone the firing part folds under a summary once set, and nothing runs off the screen', async ({ page }) => {
+  await signUpAndSignIn(page);
+  await page.setViewportSize({ width: 320, height: 800 });
+  await startRecipe(page, 'Phone firing');
+  const summary = page.locator('#firing-fold > summary');
+  // Empty: open, so the first thing to do is there to do.
+  await expect(summary).toHaveText('Firing: not set');
+  await expect(page.locator('#firing-low')).toBeVisible();
+  await page.locator('#firing-low').selectOption('6');
+  await page.locator('#firing-atmosphere-oxidation').check();
+  await expect(summary).toHaveText('Firing: cone 6, oxidation');
+  await page.getByRole('button', { name: 'Save', exact: true }).click();
+  await expect(page.locator('.saved-recipe', { hasText: 'Phone firing' })).toBeVisible();
+
+  // Opened from the saved list on a phone, it is closed to its summary line.
+  await page.reload();
+  await page.getByRole('button', { name: 'Open Phone firing' }).click();
+  await expect(summary).toHaveText('Firing: cone 6, oxidation');
+  await expect(page.locator('#firing-low')).toBeHidden();
+  const overflow = () =>
+    page.evaluate(
+      () => globalThis.document.documentElement.scrollWidth - globalThis.document.documentElement.clientWidth
+    );
+  expect(await overflow()).toBe(0);
+  await summary.click();
+  await expect(page.locator('#firing-low')).toBeVisible();
+  expect(await overflow()).toBe(0);
+  // The limits band reads from the firing, as text.
+  await expect(page.locator('#limit-firing-text')).toContainText("From the recipe's firing: Mid fire");
 });

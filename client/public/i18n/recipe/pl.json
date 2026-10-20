@@ -566,7 +566,7 @@
       "hesselberth-roy": "Zalecane przez Johna Hesselbertha i Rona Roya limity dla trwałych szkliw na użytkowej kamionce i porcelanie, dla stożka 6 i stożka 10. Ograniczają się do krótkiej listy surowców, więc zestaw nie ma zakresu dla baru ani litu, ani dla cynku przy stożku 10.",
       "glazecalc": "Wartości, przy których aplikacja ostrzega podczas zamiany surowców: bor, tlenek glinu, sód i potas oraz magnez przy niskim wypale."
     },
-    "firing": "Wypał",
+    "firing": "Limity dla",
     "firingUnknown": "Nie wybrano",
     "bands": {
       "low": "Niski wypał, stożek 06–02",
@@ -596,6 +596,8 @@
     "saveFailed": "Nie udało się zapisać wyboru zestawu limitów na koncie, więc nadal obowiązuje poprzedni zestaw.",
     "ownLimits": "Te propozycje korzystają z własnych limitów Glazecalc, a nie z zestawu {name}.",
     "firingFromBlock": "Z wypału receptury ({bands})",
+    "firingFromBlockText": "Z wypału receptury: {bands}",
+    "chooseAnother": "Wybierz inny",
     "bothBands": "Wypał receptury obejmuje {bands}, więc każdy z nich jest sprawdzany, obok siebie: szkliwo rzadko zachowuje się tak samo na obu końcach.",
     "fromFiring": "Wartości dotyczą wypału receptury: {band}. Aby sprawdzić inny, należy wybrać wypał powyżej."
   },
@@ -801,6 +803,18 @@
     "saveHelp": "Na rysunku powyżej należy zaznaczyć płytki, które mają zostać zachowane. Każda jest zapisywana jako receptura w procentach.",
     "nameLabel": "Nazwa zapisanych płytek",
     "defaultName": "Mieszanka: {titles}",
+    "chemistry": {
+      "heading": "Chemia każdej płytki",
+      "help": "Obliczona z receptur, orientacyjnie. To wypalone płytki pokazują, co naprawdę się dzieje.",
+      "firing": "Ostrzeżenia i dopasowanie do stożka dotyczą wypału receptury {letter}.",
+      "tile": "Płytka",
+      "cautions": "Ostrzeżenia",
+      "coneFit": "Dopasowanie do stożka",
+      "fits": "Nic nie przemawia przeciw",
+      "cooler": "Wygląda na niższy",
+      "hotter": "Wygląda na wyższy",
+      "skipped": "Nie oceniono"
+    },
     "chooseAll": "Wybierz wszystkie płytki",
     "chooseNone": "Nie wybieraj żadnej",
     "save": "{count, plural, =0 {Zapisz wybrane płytki} one {Zapisz # płytkę} few {Zapisz # płytki} many {Zapisz # płytek} other {Zapisz # płytki}}",
@@ -890,6 +904,8 @@
   },
   "firing": {
     "heading": "Wypał",
+    "summary": "Wypał: {what}",
+    "summaryNone": "Wypał: nie ustawiono",
     "whatIsCone": "Co oznacza stożek?",
     "scale": "Skala",
     "scales": {

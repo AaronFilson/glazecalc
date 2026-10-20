@@ -2,7 +2,7 @@ import { Routes } from '@angular/router';
 import { provideTranslocoScope } from '@jsverse/transloco';
 import { marker } from '@jsverse/transloco-keys-manager/marker';
 import { askBeforeLeaving } from './core/leave.guard';
-import { signedInGuard, visitorsOnlyGuard } from './core/signed-in.guard';
+import { signInThenBackGuard, signedInGuard, visitorsOnlyGuard } from './core/signed-in.guard';
 import { scopeTranslations } from './i18n/provide-i18n';
 import { guideText } from './pages/guides/guide-text';
 
@@ -76,6 +76,15 @@ export const routes: Routes = [
     title: marker('titles.firing'),
     providers: [provideTranslocoScope('guides')],
     data: { description: marker('meta.firing'), guide: 'firing' },
+    resolve: { messages: scopeTranslations, text: guideText },
+    loadComponent: () => import('./pages/guides/guide-page').then((m) => m.GuidePage)
+  },
+  {
+    // In English only (lib/pages.js, ENGLISH_ONLY_PAGES): every language shows the English.
+    path: 'guides/learn-with-john-britt',
+    title: marker('titles.learnWithJohnBritt'),
+    providers: [provideTranslocoScope('guides')],
+    data: { description: marker('meta.learnWithJohnBritt'), guide: 'learn-with-john-britt', englishOnly: true },
     resolve: { messages: scopeTranslations, text: guideText },
     loadComponent: () => import('./pages/guides/guide-page').then((m) => m.GuidePage)
   },
@@ -233,6 +242,33 @@ export const routes: Routes = [
     providers: [provideTranslocoScope('notebook')],
     resolve: { messages: scopeTranslations },
     loadComponent: () => import('./pages/trash/trash-page').then((m) => m.TrashPage)
+  },
+  {
+    path: 'account/apps',
+    title: marker('titles.apps'),
+    canActivate: [signedInGuard],
+    providers: [provideTranslocoScope('account', 'notebook')],
+    resolve: { messages: scopeTranslations },
+    loadComponent: () => import('./pages/connections/connections-page').then((m) => m.ConnectionsPage)
+  },
+  {
+    // An AI app asking to connect (docs/adr/0024-authorization-server.md): signed in first, then back here.
+    path: 'connect/:uid',
+    title: marker('titles.connect'),
+    canActivate: [signInThenBackGuard],
+    providers: [provideTranslocoScope('account')],
+    resolve: { messages: scopeTranslations },
+    loadComponent: () => import('./pages/connect/connect-page').then((m) => m.ConnectPage)
+  },
+  {
+    // A change an app asks to make, waiting for the person's approval (docs/adr/0025): signed in first,
+    // then back here.
+    path: 'confirm/:id',
+    title: marker('titles.confirm'),
+    canActivate: [signInThenBackGuard],
+    providers: [provideTranslocoScope('account')],
+    resolve: { messages: scopeTranslations },
+    loadComponent: () => import('./pages/confirm/confirm-page').then((m) => m.ConfirmPage)
   },
   {
     path: 'account',

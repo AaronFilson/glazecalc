@@ -30,6 +30,11 @@ export const GUIDES = [
     path: '/guides/firing',
     title: marker('guides.list.firing.title'),
     text: marker('guides.list.firing.text')
+  },
+  {
+    path: '/guides/learn-with-john-britt',
+    title: marker('guides.list.learnWithJohnBritt.title'),
+    text: marker('guides.list.learnWithJohnBritt.text')
   }
 ] as const;
 

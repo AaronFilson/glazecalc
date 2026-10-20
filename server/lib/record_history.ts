@@ -18,9 +18,15 @@ type By = 'session' | 'pat' | 'oauth';
 const DAY = 24 * 60 * 60 * 1000;
 
 /** Who is making the change: the web session, or the kind of access token. */
-export const byOf = (req: Request): By => {
+export const byOf = (req: Pick<Request, 'access'>): By => {
   const via = req.access?.via;
   return via === 'pat' || via === 'oauth' ? via : 'session';
+};
+
+/** The id of the access token (or OAuth grant) making the change, or undefined for the web session. */
+export const tokenIdOf = (req: Pick<Request, 'access'>): string | undefined => {
+  const access = req.access;
+  return access && access.via !== 'session' ? access.tokenId : undefined;
 };
 
 /** What a record is called, cut short: its title, or its name. Never a note's text. */
@@ -48,6 +54,7 @@ export const moveToTrash = async (
   user: UserDocument,
   id: string,
   by: By,
+  tokenId?: string,
   now = new Date()
 ): Promise<{ record: Row; trashId: string } | typeof TRASH_FULL | null> => {
   const ownedBy = String(user._id);
@@ -63,7 +70,8 @@ export const moveToTrash = async (
     record,
     title: titleOf(record),
     trashedAt: now,
-    by
+    by,
+    ...(tokenId && { tokenId })
   });
   // Counted again with this entry in, so tokens trashing at the same moment cannot go past the limit.
   if (byToken && (await Trash.countDocuments({ ownedBy })) > most) {
@@ -176,10 +184,22 @@ export const saveVersion = async (
   kind: string,
   before: Row,
   by: By,
-  { now = new Date(), replacing }: { now?: Date; replacing?: Types.ObjectId } = {}
+  {
+    now = new Date(),
+    replacing,
+    tokenId
+  }: { now?: Date; replacing?: Types.ObjectId; tokenId?: string | Types.ObjectId } = {}
 ): Promise<void> => {
   const ownedBy = String(before.ownedBy);
-  await RecordVersion.create({ ownedBy, fromCollection: kind, recordId: before._id, record: before, savedAt: now, by });
+  await RecordVersion.create({
+    ownedBy,
+    fromCollection: kind,
+    recordId: before._id,
+    record: before,
+    savedAt: now,
+    by,
+    ...(tokenId && by !== 'session' && { tokenId })
+  });
   if (replacing) await RecordVersion.deleteOne({ _id: replacing });
   const versions = await RecordVersion.find({ ownedBy, recordId: before._id })
     .sort({ savedAt: -1, _id: -1 })
@@ -253,7 +273,7 @@ export const logActivityBy = async (
 
 /** Writes what an access token did to the activity log (logActivityBy); nothing for the web session. */
 export const logActivity = async (
-  req: Request,
+  req: Pick<Request, 'access' | 'user'>,
   action: ActivityAction,
   kind: string,
   record: Record<string, unknown> & { _id?: Types.ObjectId | string }

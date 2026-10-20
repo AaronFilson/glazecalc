@@ -77,6 +77,15 @@ test('pastes two recipes, checks them, saves them, and blends them into test til
   await expect(page.locator('.blend-tile')).toHaveCount(66);
   expect(await scrollsSideways(page)).toBe(false);
 
+  // The chemistry table: closed until opened, then scrolling in its own box, not the page.
+  const chemistry = page.locator('.blend-chemistry');
+  await expect(chemistry.locator('.blend-chemistry-table')).toHaveCount(0);
+  await chemistry.getByText('Chemistry per tile').click();
+  await expect(chemistry.locator('tbody tr')).toHaveCount(66);
+  expect(await scrollsSideways(page)).toBe(false);
+  await expect(chemistry.locator('.blend-chemistry-scroll')).toHaveCSS('overflow-x', 'auto');
+  await chemistry.getByText('Chemistry per tile').click();
+
   // Paper: the drawing and the list, without the controls.
   await page.emulateMedia({ media: 'print' });
   await expect(page.locator('.blend-list-panel')).toBeVisible();

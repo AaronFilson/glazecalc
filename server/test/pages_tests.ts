@@ -3,7 +3,13 @@ import http from 'node:http';
 import path from 'node:path';
 import {
   APP_PAGES,
+  ENGLISH_ONLY_PAGES,
+  ID_PAGES,
   PUBLIC_PAGES,
+  isAppOnlyPage,
+  isEnglishOnlyPage,
+  isPage,
+  isPrivatePage,
   looksLikeFile,
   ogLocale,
   pageHtml,
@@ -331,7 +337,32 @@ describe('pages in each language', () => {
       'utf8'
     );
     const pages = [...routes.matchAll(/^\s*path: '([^']*)'/gm)].map((m) => '/' + m[1]).filter((page) => page !== '/**');
-    expect([...APP_PAGES].sort()).to.eql(pages.sort());
+    // A page with an id in its address (/connect/:uid) is one of ID_PAGES.
+    expect([...APP_PAGES].sort()).to.eql(pages.filter((page) => !page.includes(':')).sort());
+    expect(Object.keys(ID_PAGES).sort()).to.eql(pages.filter((page) => page.includes(':')).sort());
+  });
+
+  it('knows the consent page by its id, as a private page in any language', () => {
+    const uid = 'aB3_dE5-gH7iJ9kL1mN';
+    for (const address of ['/connect/' + uid, '/de/connect/' + uid]) {
+      expect(isPage(address), address).to.equal(true);
+      expect(isPrivatePage(address), address).to.equal(true);
+      expect(isAppOnlyPage(address), address).to.equal(false);
+      const html = pageHtml(HTML, address, SITE, {}, ['en', 'de']);
+      expect(html, address).to.include('<meta name="robots" content="noindex, nofollow" />');
+      expect(html, address).to.include('<meta name="referrer" content="no-referrer" />');
+      expect(html, address).not.to.include('rel="canonical"');
+    }
+    for (const address of [
+      '/connect',
+      '/connect/',
+      '/connect/short',
+      '/connect/' + uid + '/more',
+      '/connect/a.b' + uid
+    ]) {
+      expect(isPage(address), address).to.equal(false);
+    }
+    expect(prerenderedKey('/connect/' + uid)).to.equal(null);
   });
 
   it('tells a file from a page in one pass, even on a long path of dots', () => {
@@ -352,8 +383,41 @@ describe('pages in each language', () => {
     expect(two).to.include(
       '<url><loc>https://glazecalcapp.com/de/guides</loc><xhtml:link rel="alternate" hreflang="en" href="https://glazecalcapp.com/guides"/><xhtml:link rel="alternate" hreflang="de" href="https://glazecalcapp.com/de/guides"/></url>'
     );
-    // Each public page once in each of the two languages.
-    expect(two.match(/<url>/g)).to.have.length(PUBLIC_PAGES.length * 2);
+    // Each public page once in each of the two languages, and a page in English only once.
+    expect(two.match(/<url>/g)).to.have.length((PUBLIC_PAGES.length - ENGLISH_ONLY_PAGES.length) * 2 + 1);
+  });
+
+  it('gives the guide in English only one address for search engines: the English, alone in the sitemap', () => {
+    const page = '/guides/learn-with-john-britt';
+    expect(ENGLISH_ONLY_PAGES).to.eql([page]);
+    expect(PUBLIC_PAGES).to.include(page);
+    expect(isEnglishOnlyPage('/de/guides/learn-with-john-britt')).to.equal(true);
+    expect(isEnglishOnlyPage('/de/guides/firing')).to.equal(false);
+    const live = ['en', 'de', 'ja'];
+    const canonical = '<link rel="canonical" href="https://glazecalcapp.com/guides/learn-with-john-britt" />';
+
+    const english = pageHtml(HTML, page, SITE, {}, live);
+    expect(english).to.include(canonical);
+    expect(english).not.to.include('noindex');
+    expect(english).not.to.include('hreflang');
+    expect(english).to.include('<meta property="og:locale" content="en_US" />');
+    expect(english).not.to.include('og:locale:alternate');
+
+    for (const code of ['de', 'ja', 'ar']) {
+      const copy = pageHtml(HTML, `/${code}${page}`, SITE, {}, live);
+      expect(copy, code).to.include(`<html lang="${code}"`);
+      expect(copy, code).to.include(canonical);
+      expect(copy, code).to.include('<meta name="robots" content="noindex" />');
+      expect(copy, code).not.to.include('hreflang');
+      expect(copy, code).not.to.include('og:locale');
+    }
+    // Still prerendered in each language offered, for a quick first paint.
+    expect(prerenderedKey('/de' + page, live)).to.equal('de/guides/learn-with-john-britt.html');
+
+    const map = sitemap(SITE, live);
+    expect(map).to.include('<url><loc>https://glazecalcapp.com/guides/learn-with-john-britt</loc></url>');
+    expect(map).not.to.include('/de/guides/learn-with-john-britt');
+    expect(map).not.to.match(/hreflang="[^"]*" href="[^"]*learn-with-john-britt"/);
   });
 
   it('serves the sitemap, and sends /en/ addresses to the plain English ones', async () => {

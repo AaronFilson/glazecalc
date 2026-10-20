@@ -62,7 +62,7 @@ const EMPHASIS: Record<string, 'b' | 'strong' | 'em' | 'code' | 'bdi'> = {
         } @else {
           @switch (kind(node.name)) {
             @case ('route') {
-              <a [routerLink]="path(node.name)" [fragment]="fragment(node.name)"
+              <a [routerLink]="path(node.name)" [queryParams]="query(node.name)" [fragment]="fragment(node.name)"
                 ><ng-container *ngTemplateOutlet="list; context: { $implicit: node.children }"
               /></a>
             }
@@ -131,7 +131,13 @@ export class RichText {
   }
 
   protected path(name: string): string {
-    return String(this.links()[name]).split('#')[0]!;
+    return String(this.links()[name]).split('#')[0]!.split('?')[0]!;
+  }
+
+  /** The query after a ?, as the router takes it: '/signup?next=%2Fa' gives { next: '/a' }. */
+  protected query(name: string): Record<string, string> | undefined {
+    const query = String(this.links()[name]).split('#')[0]!.split('?')[1];
+    return query === undefined ? undefined : Object.fromEntries(new URLSearchParams(query));
   }
 
   protected fragment(name: string): string | undefined {

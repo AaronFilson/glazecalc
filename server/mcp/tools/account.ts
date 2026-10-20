@@ -21,7 +21,7 @@ import Material from '../../models/material.ts';
 import Note from '../../models/note.ts';
 import Recipe from '../../models/recipe.ts';
 import Trash from '../../models/trash.ts';
-import User, { PREFERENCES } from '../../models/user.ts';
+import User from '../../models/user.ts';
 import {
   type Caller,
   countFit,
@@ -37,6 +37,8 @@ import {
   type RecipeLine
 } from '../common.ts';
 import { findById, findMaterial, nameKey, oxidesOf } from '../library.ts';
+import { confirmSettingOf } from '../../lib/pending_changes.ts';
+import { settingsOf } from '../settings.ts';
 import { analysisOf, checksOf, coneFitOut, firingBlockOf, matchOut } from './public.ts';
 
 const READ_ONLY = { readOnlyHint: true, destructiveHint: false, idempotentHint: true, openWorldHint: false } as const;
@@ -69,7 +71,7 @@ const coneFilterArgs = {
     .max(6)
     .optional()
     .describe(
-      'Only recipes whose stated firing includes this cone ("6", "06", "5.5", SK "6a"), or for scale "temperature" this °C. A range matches any cone inside it; recipes tested at it come first. Recipes stated in another scale match approximately: Orton and SK by measured equivalents only (SK 8, 10 and 12), a temperature when the cone bends within 15 °C of it (Orton at 60 °C an hour).'
+      'Only recipes whose stated firing includes this cone ("6", "06", "5.5", SK "6a"), or for scale "temperature" this °C. A range matches any cone inside it; recipes tested at it come first. Recipes stated in another scale match approximately: Orton and SK by the Kyoto institute’s same-kiln table (SK 7 to 14 against Orton 4 to 12; other cones match their own scale only), a temperature when the cone bends within 15 °C of it (Orton at 60 °C an hour).'
     ),
   scale: z
     .enum(['orton', 'sk', 'temperature'])
@@ -83,14 +85,6 @@ const coneFilterArgs = {
     .enum(['wood', 'soda', 'salt', 'raku', 'pit'])
     .optional()
     .describe('Only recipes stated for this firing process.')
-};
-
-/** The account's saved settings, with each one's default where none is saved. */
-const settingsOf = async (userId: string) => {
-  const user = await User.findById(userId, { preferences: 1 });
-  const saved = (user?.preferences ?? {}) as Record<string, unknown>;
-  return <K extends keyof typeof PREFERENCES>(name: K) =>
-    (saved[name] ?? PREFERENCES[name][0]) as (typeof PREFERENCES)[K][number];
 };
 
 /** A pattern matching text that contains the query, in any case; special characters taken literally. */
@@ -495,7 +489,7 @@ export const registerAccountTools = (server: McpServer, caller: Caller): void =>
       {
         title: 'My settings',
         description:
-          'Your Glazecalc settings that matter when talking about glazes: region, temperature scale, cones, language, weight unit, whether lead may be suggested, the limit set recipes are checked against, and the currency your prices are in (never the prices).',
+          'Your Glazecalc settings that matter when talking about glazes: region, temperature scale, cones, language, weight unit, whether lead may be suggested, the limit set recipes are checked against, the currency your prices are in (never the prices), and whether changes made by assistants wait for your approval on the website (confirmChanges: off, removals or all; it can be changed only there).',
         inputSchema: z.object({}),
         annotations: READ_ONLY
       },
@@ -511,7 +505,9 @@ export const registerAccountTools = (server: McpServer, caller: Caller): void =>
             lead: pick('lead'),
             limitSet: pick('limitSet'),
             // '' follows the region (lib/regions currencyFor).
-            currency: pick('currency')
+            currency: pick('currency'),
+            // Read only: set on Connected apps with the web session (docs/adr/0025). Failing closed, as the tools do.
+            confirmChanges: await confirmSettingOf(userId)
           });
         })
     );

@@ -2,16 +2,14 @@ import { FixedPipe } from '../../shared/format-pipes';
 import { Component, computed, input } from '@angular/core';
 import { TranslocoDirective, translate } from '@jsverse/transloco';
 import { marker } from '@jsverse/transloco-keys-manager/marker';
-import { OXIDE_GROUPS, formatFormula } from '../../../../lib/chemistry';
+import { formatFormula } from '../../../../lib/chemistry';
+import { silicaAluminaRatio, unityColumnOf } from '../../../../lib/recipe/compare';
 import { RecipeAnalysis } from '../../core/models';
 
 export interface UnityColumn {
   title: string;
   oxides: Array<{ label: string; value: number }>;
 }
-
-const STABILIZERS = ['Al2O3', 'B2O3'];
-const GLASS_FORMERS = ['SiO2'];
 
 const UNITY_TITLE_KEYS = [
   marker('unity.fluxes'),
@@ -29,11 +27,7 @@ export const UNITY_TITLES: readonly string[] = Object.defineProperties(
 );
 
 /** Which of the UNITY_TITLES an oxide goes under. */
-export function unityColumnOf(oxide: string): number {
-  const group = OXIDE_GROUPS[oxide];
-  if (group === 'R2O' || group === 'RO') return 0;
-  return STABILIZERS.includes(oxide) ? 1 : GLASS_FORMERS.includes(oxide) ? 2 : 3;
-}
+export { unityColumnOf };
 
 /**
  * Splits a unity formula into the columns potters read: fluxes (which sum to
@@ -49,11 +43,7 @@ export function unityColumns(uList: Record<string, number>): UnityColumn[] {
 }
 
 /** The silica to alumina ratio, from the saved value or from the unity formula. */
-export function silicaAluminaRatio(analysis: RecipeAnalysis): number | null {
-  if (typeof analysis.siAlRatio === 'number') return analysis.siAlRatio;
-  const { SiO2, Al2O3 } = analysis.uList;
-  return Al2O3 > 0 ? (SiO2 ?? 0) / Al2O3 : null;
-}
+export { silicaAluminaRatio };
 
 @Component({
   selector: 'gc-unity-formula',

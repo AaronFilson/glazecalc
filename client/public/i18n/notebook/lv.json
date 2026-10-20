@@ -76,7 +76,6 @@
     "removeField": "Noņemt lauku",
     "addRow": "Pievienot rindu apdedzināšanas tabulai",
     "addRowWhy": "Vispirms pievienojiet lauku.",
-    "tableEmpty": "Pievienojiet lauku augstāk, pēc tam rindas.",
     "recordHeading": "Ierakstīt apdedzināšanu",
     "rowActions": "Darbības ar rindu",
     "cell": "{field}, rinda {row}",

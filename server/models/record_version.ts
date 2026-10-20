@@ -32,6 +32,8 @@ const recordVersionSchema = new mongoose.Schema(
     savedAt: { type: Date, required: true, default: () => new Date() },
     /** Who made the change: the web session, a personal token or an OAuth client. */
     by: { type: String, enum: ['session', 'pat', 'oauth'], default: 'session' },
+    /** The access token or connected app that made it, for a change not made on the website: the approval page tells the person what that app changed. */
+    tokenId: mongoose.Schema.Types.ObjectId,
     /** While the record is in the Trash: when its Trash entry goes, and these with it. */
     expiresAt: Date
   },

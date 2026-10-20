@@ -566,7 +566,7 @@
       "hesselberth-roy": "Džona Heselberta (John Hesselberth) un Rona Roja (Ron Roy) ieteiktās robežvērtības stabilām glazūrām uz funkcionālas akmens masas un porcelāna izstrādājumiem konusiem 6 un 10. Tās aprobežojas ar īsu izejvielu sarakstu, tāpēc kopā nav diapazona bārijam vai litijam, kā arī cinkam konusam 10.",
       "glazecalc": "Skaitļi, pie kuriem lietotne brīdina, aizstājot izejvielas: bors, alumīnija oksīds, nātrijs un kālijs, kā arī magnijs zemā apdedzināšanā."
     },
-    "firing": "Apdedzināšana",
+    "firing": "Robežas apdedzināšanai",
     "firingUnknown": "Nav izvēlēta",
     "bands": {
       "low": "Zema apdedzināšana, konusi 06–02",
@@ -596,6 +596,8 @@
     "saveFailed": "Neizdevās saglabāt jūsu robežvērtību kopas izvēli kontā, tāpēc joprojām tiek izmantota iepriekšējā kopa.",
     "ownLimits": "Šie ieteikumi izmanto lietotnes Glazecalc paša robežvērtības, nevis kopu {name}.",
     "firingFromBlock": "No receptes apdedzināšanas ({bands})",
+    "firingFromBlockText": "No receptes apdedzināšanas: {bands}",
+    "chooseAnother": "Izvēlēties citu",
     "bothBands": "Receptes apdedzināšana aptver {bands}, tāpēc katra tiek pārbaudīta atsevišķi, blakus citai: glazūra reti uzvedas vienādi abos galos.",
     "fromFiring": "Skaitļi attiecas uz receptes apdedzināšanu: {band}. Lai pārbaudītu citu, augstāk izvēlieties apdedzināšanu."
   },
@@ -801,6 +803,18 @@
     "saveHelp": "Atzīmējiet proves, ko vēlaties paturēt, iepriekš redzamajā zīmējumā. Katra tiek saglabāta kā recepte procentos.",
     "nameLabel": "Saglabājamo provju nosaukums",
     "defaultName": "Maisījums {titles}",
+    "chemistry": {
+      "heading": "Ķīmija katrai provei",
+      "help": "Aprēķināta no receptēm, kā orientieris. Kas notiek patiesībā, parāda apdedzinātās proves.",
+      "firing": "Brīdinājumi un atbilstība konusam seko receptes {letter} apdedzināšanai.",
+      "tile": "Prove",
+      "cautions": "Brīdinājumi",
+      "coneFit": "Atbilstība konusam",
+      "fits": "Nekas neliecina pret",
+      "cooler": "Šķiet vēsākai apdedzināšanai",
+      "hotter": "Šķiet karstākai apdedzināšanai",
+      "skipped": "Nav vērtēts"
+    },
     "chooseAll": "Izvēlēties visas proves",
     "chooseNone": "Neizvēlēties nevienu",
     "save": "{count, plural, =0 {Saglabāt izvēlētās proves} zero {Saglabāt # proves} one {Saglabāt # provi} other {Saglabāt # proves}}",
@@ -890,6 +904,8 @@
   },
   "firing": {
     "heading": "Apdedzināšana",
+    "summary": "Apdedzināšana: {what}",
+    "summaryNone": "Apdedzināšana: nav iestatīta",
     "whatIsCone": "Ko nozīmē konuss?",
     "scale": "Skala",
     "scales": {

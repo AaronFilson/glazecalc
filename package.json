@@ -8,6 +8,7 @@
     "build": "node scripts/advice-i18n.mjs && ng build && node scripts/prerender.mjs",
     "watch": "node scripts/advice-i18n.mjs && ng build --watch --configuration development",
     "dev": "node scripts/run.mjs dev",
+    "db": "node --env-file-if-exists=.env scripts/db.mjs",
     "prestart": "npm run build",
     "start": "node --env-file-if-exists=.env server/main.ts",
     "lint": "eslint .",
@@ -65,6 +66,7 @@
     "jsonwebtoken": "9.0.3",
     "mongoose": "9.11.1",
     "nodemailer": "10.1.0",
+    "oidc-provider": "9.12.2",
     "qrcode-generator": "2.0.4",
     "zod": "4.6.5"
   },
@@ -96,6 +98,7 @@
     "@types/mocha": "10.0.10",
     "@types/node": "24.19.2",
     "@types/nodemailer": "8.0.2",
+    "@types/oidc-provider": "9.12.1",
     "@vitest/coverage-v8": "5.0.3",
     "angular-eslint": "22.5.0",
     "bootstrap": "5.3.8",

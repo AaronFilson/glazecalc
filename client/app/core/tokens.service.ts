@@ -18,6 +18,8 @@ export interface TokenRow {
   revokedAt?: string;
   revokedWhy?: string;
   working: boolean;
+  /** Its changes never wait for approval (docs/adr/0025). */
+  noConfirm?: boolean;
 }
 
 /** GET /api/tokens: the account's tokens and the choices for a new one. */
@@ -31,13 +33,13 @@ export interface TokenList {
   scopes: string[];
 }
 
-interface Said {
+export interface Said {
   code?: string;
   msg: string;
   params?: Record<string, string | number>;
 }
 
-const said = (res: Said): string => (res.code && codedMessage('server', res.code, res.params)) || res.msg;
+export const said = (res: Said): string => (res.code && codedMessage('server', res.code, res.params)) || res.msg;
 
 /**
  * The account's personal access tokens (docs/integrations-plan.md, items 26
@@ -65,24 +67,20 @@ export class TokensService {
     name: string,
     days: number,
     proof: IdentityProof,
-    scope: 'data:read' | 'data:write' = 'data:read'
+    scope: 'data:read' | 'data:write' = 'data:read',
+    noConfirm = false
   ): Promise<{ token: string; message: string }> {
     const res = await firstValueFrom(
       this.http.post<Said & { token: string; row: TokenRow }>(this.apiBase + '/tokens', {
         name,
         days,
         scope,
+        ...(noConfirm && { noConfirm: true }),
         ...proof
       })
     );
     this.list.update((list) => (list ? { ...list, tokens: [res.row, ...list.tokens] } : list));
     return { token: res.token, message: said(res) };
-  }
-
-  async revoke(id: string): Promise<string> {
-    const res = await firstValueFrom(this.http.delete<Said>(this.apiBase + '/tokens/' + encodeURIComponent(id)));
-    await this.load().catch(() => undefined);
-    return said(res);
   }
 
   /** Revokes every token (and connected app) still working. */

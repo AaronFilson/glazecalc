@@ -38,6 +38,8 @@ import {
   type LibraryRecord
 } from '../library.ts';
 import { chemistryText, recipeText } from '../words.ts';
+import { allows } from '../../lib/scopes.ts';
+import { settingsOf } from '../settings.ts';
 
 /** Whether the tool only reads and changes nothing anywhere: true for every tool here. */
 const READ_ONLY = { readOnlyHint: true, destructiveHint: false, idempotentHint: true, openWorldHint: false } as const;
@@ -266,7 +268,7 @@ export const registerPublicTools = (server: McpServer, caller: Caller): void => 
           .max(40)
           .optional()
           .describe(
-            'The limits to check against: "glazecalc" (the default here) or "hesselberth-roy" (Hesselberth & Roy, cone 6 and 10 only, no low-fire figures; the recipe page’s default).'
+            'The limits to check against: "glazecalc" or "hesselberth-roy" (Hesselberth & Roy, cone 6 and 10 only, no low-fire figures). Left out: the limit set saved in the account’s settings when the token may read preferences (the recipe page’s own, "hesselberth-roy" until changed), else "glazecalc".'
           ),
         language: languageArg
       }),
@@ -274,9 +276,14 @@ export const registerPublicTools = (server: McpServer, caller: Caller): void => 
     },
     async ({ lines, firing, limitSet, language }) => {
       const lang = languageOf(language);
-      return guarded(() => {
+      return guarded(async () => {
         const resolved = resolveLines(lines);
-        const checks = checksOf(resolved, celsiusOf(firing), limitSet, lang);
+        // An account's own limit set, when it may be read and none was asked for.
+        const own =
+          !limitSet && caller.userId && allows(caller.scopes ?? [], 'preferences:read')
+            ? (await settingsOf(caller.userId))('limitSet')
+            : undefined;
+        const checks = checksOf(resolved, celsiusOf(firing), limitSet ?? own, lang);
         const fit = coneFitOut(
           recipe.coneFit(checks.unityFormula, firingBlockOf(firing), { materials: resolved.map((line) => line.name) }),
           lang

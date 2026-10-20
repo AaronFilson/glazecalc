@@ -14,6 +14,7 @@ import {
   urlFor,
   withFontPreloads
 } from '../../scripts/prerender.mjs';
+import pages from '../../lib/pages.js';
 import { adviceFiles, adviceKeys } from '../../scripts/advice-i18n.mjs';
 import { readPrerendered } from '../lib/prerendered.ts';
 import { expect } from './support/app.ts';
@@ -50,6 +51,19 @@ describe('prerender checks', () => {
     // Random text, which compresses as little as any: a page that carries more than it shows.
     const large = page(`<p>${crypto.randomBytes(MAX_GZIPPED).toString('base64')}</p>`);
     expect(pageProblems(large, '/guides')).to.eql(['it is over 100 kB gzipped']);
+  });
+
+  it('fails a guide that does not link every other guide, so a search engine can follow them', () => {
+    const guides = pages.PUBLIC_PAGES.filter((p) => p.startsWith('/guides/'));
+    const links = (list: string[]) => page(list.map((p) => `<a href="${p}">x</a>`).join(''));
+    const [first, ...others] = guides;
+    expect(pageProblems(links(others), first!)).to.eql([]);
+    // In another language the links carry its prefix.
+    expect(pageProblems(links(others.map((p) => '/de' + p)), first!)).to.eql([]);
+    expect(pageProblems(links(others.slice(1)), first!)).to.eql([`it does not link the guide ${others[0]}`]);
+    // Text that only names the address is no link; the list of the guides is not a guide.
+    expect(pageProblems(page(`<p>${others[0]}"</p>`), first!)).to.have.length(others.length);
+    expect(pageProblems(links([]), '/guides')).to.eql([]);
   });
 
   it('accepts a page with its text, the policy <meta> and the placeholder', () => {

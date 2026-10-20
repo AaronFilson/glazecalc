@@ -27,14 +27,19 @@
       "text": "Støv, åndedrætsværn, rengøring, de råvarer, der kræver mest omtanke, og udluftning fra ovnen."
     },
     "homeSafety": {
-      "title": "Forgift ikke familien",
+      "title": "Glasursikkerhed derhjemme: børn, kæledyr og ovnen",
       "text": "Keramik derhjemme med børn og kæledyr: opbevaring, støv, ovnen og hvad der skal gøres, hvis noget er blevet slugt."
     },
     "firing": {
       "title": "Brænding i en enkel ovn",
       "text": "Kegler, Kiln-Sitter og manuelle kontakter, med brændekurver til forglødning og glasurbrænding."
+    },
+    "learnWithJohnBritt": {
+      "title": "Lær med John Britts gratis glasurkursus",
+      "text": "Hans gratis videokursus på YouTube, enhed for enhed, med vores vejledninger at læse og øvelser at prøve i Glazecalc. På engelsk."
     }
   },
+  "more": "Flere vejledninger",
   "contents": "På denne side",
   "poison": {
     "numbersFor": "Numre for",

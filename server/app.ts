@@ -17,11 +17,16 @@ import mfaRoutes from './routes/mfa_routes.ts';
 import oauthRoutes, { microsoftAssociation } from './routes/oauth_routes.ts';
 import emailRoutes from './routes/email_routes.ts';
 import passwordRoutes from './routes/password_routes.ts';
+import connectionRoutes from './routes/connection_routes.ts';
 import tokenRoutes from './routes/token_routes.ts';
 import records from './routes/records.ts';
 import { privateHeaders, sharedRouter, shareRouter } from './routes/share_routes.ts';
+import shelfRoutes from './routes/shelf_routes.ts';
+import pendingChangeRoutes from './routes/pending_change_routes.ts';
 import userRoutes from './routes/user_routes.ts';
 import mcpRouter, { metadataRouter } from './mcp/index.ts';
+import connectRouter from './oauth/interactions.ts';
+import { asTheSiteForConnect, authorizationServerMetadata, oauthServer } from './oauth/provider.ts';
 import { say } from './lib/messages.ts';
 import * as site from './lib/site.ts';
 import {
@@ -98,9 +103,14 @@ api.get('/health', (req, res) => {
 });
 
 // /additives, /advice, /firing, /materials, /notes, /recipe and /trash: the
-// only routes an access token can reach, each route asking for its permission
+// only routes an access token can reach (with /shelf, below), each route asking for its permission
 // (server/lib/require_scope.ts).
 for (const [name, router] of Object.entries(records)) api.use('/' + name, router);
+// And /shelf: reading it and changing one material at a time (routes/shelf_routes.ts); its PUT is the session's.
+api.use('/shelf', shelfRoutes);
+// Changes waiting for the person's approval (docs/adr/0025): the token that asked may read what came of
+// one; approving and declining are the web session's alone (routes/pending_change_routes.ts).
+api.use('/pending-changes', pendingChangeRoutes);
 // Nothing below takes an access token: the account, the password, signing in
 // and out, two-step sign-in, the export (default deny, docs/integrations-plan.md
 // item 5). A route that should take one goes above, behind requireScope.
@@ -114,6 +124,11 @@ api.use('/password', passwordRoutes);
 api.use('/email', emailRoutes);
 // The account's own access tokens: made, listed and revoked with the web session only.
 api.use('/tokens', tokenRoutes);
+// Answering an AI assistant that asks to connect (docs/adr/0024-authorization-server.md), with the web session only,
+// as the site's own host and scheme for the authorization server, whatever X-Forwarded-Host or -Proto said.
+api.use('/connect', asTheSiteForConnect, connectRouter);
+// Connected apps: the personal tokens and OAuth connections, what each did, and the Trash it filled; session only.
+api.use('/connections', connectionRoutes);
 // Two-step sign-in: the account's factors (docs/mfa-plan.md).
 api.use('/mfa', mfaRoutes);
 // Signing in with Google, GitHub or Microsoft (docs/adr/0015-provider-sign-in.md, 0023).
@@ -128,6 +143,12 @@ app.use('/api', api);
 // its own checks and limits, and its metadata for clients (RFC 9728).
 app.use('/mcp', mcpRouter);
 app.use('/.well-known', metadataRouter);
+// The authorization server for AI assistants (docs/adr/0024-authorization-server.md): everything
+// under /oauth/, and its metadata (RFC 8414) where clients look for it from the issuer, the site.
+app.use(oauthServer);
+app.get('/.well-known/oauth-authorization-server', (req, res) => {
+  res.set('Cache-Control', 'public, max-age=3600').json(authorizationServerMetadata());
+});
 // Microsoft's publisher domain file, written from MICROSOFT_CLIENT_ID (docs/adr/0023-microsoft-sign-in.md).
 app.get('/.well-known/microsoft-identity-association.json', microsoftAssociation);
 

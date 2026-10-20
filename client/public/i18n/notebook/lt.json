@@ -76,7 +76,6 @@
     "removeField": "Pašalinti lauką",
     "addRow": "Pridėti eilutę į degimo lentelę",
     "addRowWhy": "Pirmiausia pridėkite lauką.",
-    "tableEmpty": "Pridėkite lauką aukščiau, tada eilutes.",
     "recordHeading": "Įrašyti degimą",
     "rowActions": "Eilutės veiksmai",
     "cell": "{field}, eilutė {row}",

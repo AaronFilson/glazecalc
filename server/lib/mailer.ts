@@ -38,8 +38,24 @@ export const labelled = (subject: string): string => {
   return label ? '[' + label + '] ' + subject : subject;
 };
 
+/** Sends in progress, so a test can wait for the mail a request started and did not wait for. */
+const inFlight = new Set<Promise<void>>();
+
+/** Resolves once every send now in progress has finished, failed or not. */
+export const idle = async (): Promise<void> => {
+  while (inFlight.size) await Promise.allSettled([...inFlight]);
+};
+
 /** Sends a plain-text email. Resolves once the message has been handed over. */
-export const send = async ({ to, subject, text }: Message): Promise<void> => {
+export const send = (message: Message): Promise<void> => {
+  const sending = deliver(message);
+  inFlight.add(sending);
+  const done = () => inFlight.delete(sending);
+  sending.then(done, done);
+  return sending;
+};
+
+const deliver = async ({ to, subject, text }: Message): Promise<void> => {
   // Trials' placeholder addresses can never receive mail; a bounce would only
   // hurt the site's standing with its mail service.
   if (isGuestAddress(to)) throw new Error('Not sending email to a trial account');

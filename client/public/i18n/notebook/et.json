@@ -76,7 +76,6 @@
     "removeField": "Eemalda väli",
     "addRow": "Lisa põletustabelisse rida",
     "addRowWhy": "Lisage kõigepealt väli.",
-    "tableEmpty": "Lisage ülal väli ja seejärel read.",
     "recordHeading": "Salvestage põletus",
     "rowActions": "Rea toimingud",
     "cell": "{field}, rida {row}",

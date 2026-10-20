@@ -1,6 +1,13 @@
 import { FiringLog } from './firing-log';
 
 describe('FiringLog', () => {
+  it('starts with Time, the temperature in the scale given, and Cone', () => {
+    expect(FiringLog.starter('F').fields).toEqual(['Time', 'Temperature F', 'Cone']);
+    expect(FiringLog.starter('C').fields).toEqual(['Time', 'Temperature C', 'Cone']);
+    expect(FiringLog.starter('C').pristine).toBe(true);
+    expect(new FiringLog().fields).toEqual([]);
+  });
+
   const logWith = (fields: string[], rows: string[][]) => Object.assign(new FiringLog(), { fields, rows });
 
   it('adds empty rows with one cell per field', () => {

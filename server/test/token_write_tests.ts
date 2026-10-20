@@ -334,3 +334,100 @@ describe('record versions: the account’s limit', () => {
     expect(undone.body.record.title).to.equal('T1');
   });
 });
+
+describe('access tokens that write: the shelf', () => {
+  let user: UserDocument;
+  let session: string;
+  let write: string;
+  let ownedBy: string;
+  const shelf = (as: string) => api().get('/shelf').set('Authorization', bearer(as));
+  const post = (as: string, path: string, body: object = {}) =>
+    api()
+      .post('/shelf/' + path)
+      .set('Authorization', bearer(as))
+      .send(body);
+
+  beforeEach(async () => {
+    ({ user, token: session } = await makeUser());
+    ownedBy = String(user._id);
+    write = await makeToken(user, { scopes: ['data:write'] });
+  });
+
+  it('reads with a read token, and adds, removes and undoes one material with a write token', async () => {
+    const read = await makeToken(user, { scopes: ['data:read'] });
+    expect((await shelf(read)).body).to.eql({ shelf: [] });
+    const added = await post(write, 'add', { key: 'name:Silica' });
+    expect(added.body).to.eql({ shelf: ['name:Silica'], changed: true });
+    await post(write, 'add', { name: 'Whiting' });
+    expect((await User.findById(user._id))!.shelfPrevious).to.eql(['name:Silica']);
+    expect((await post(write, 'remove', { key: 'name:Silica' })).body.shelf).to.have.length(1);
+    const undone = await post(write, 'undo');
+    expect(undone.body.shelf).to.have.length(2);
+    expect((await shelf(read)).body.shelf).to.have.length(2);
+    // One step, then nothing to undo.
+    expect(await post(write, 'undo')).to.have.status(409);
+  });
+
+  it('refuses a read-only token on add, remove and undo, changing nothing and logging nothing', async () => {
+    const read = await makeToken(user, { scopes: ['data:read'] });
+    await post(session, 'add', { key: 'name:Silica' });
+    for (const [path, body] of [
+      ['add', { key: 'name:Whiting' }],
+      ['remove', { key: 'name:Silica' }],
+      ['undo', {}]
+    ] as const) {
+      const res = await post(read, path, body);
+      expect(res, path).to.have.status(403);
+      expect(res.headers['www-authenticate']).to.include('insufficient_scope').and.include('scope="data:write"');
+    }
+    expect((await shelf(session)).body).to.eql({ shelf: ['name:Silica'] });
+    expect(await Activity.countDocuments({ ownedBy })).to.equal(0);
+  });
+
+  it('writes what a token changed to the activity log, and what the website changed to nothing', async () => {
+    await post(write, 'add', { name: 'Whiting' });
+    await post(write, 'remove', { name: 'Whiting' });
+    await post(write, 'undo');
+    // Back on the shelf by Undo, so these change nothing, and nothing is logged.
+    expect(await post(write, 'add', { name: 'Whiting' })).to.have.status(200);
+    expect(await post(write, 'add', { name: 'Whiting' })).to.have.status(200);
+    expect(await post(write, 'remove', { key: 'name:Nothing' })).to.have.status(200);
+    await post(session, 'add', { key: 'name:Silica' });
+    await post(session, 'undo');
+    const lines = await Activity.find({ ownedBy }).sort({ at: 1, _id: 1 }).lean();
+    expect(lines.map((l) => [l.action, l.fromCollection, l.title, l.via])).to.eql([
+      ['change', 'shelf', 'Whiting', 'pat'],
+      ['change', 'shelf', 'Whiting', 'pat'],
+      ['undo', 'shelf', 'Shelf', 'pat']
+    ]);
+  });
+
+  it('counts its changes against the limits on changes made with tokens, but not reads', async function () {
+    this.timeout(30000);
+    process.env.RATE_LIMITS = 'on';
+    try {
+      for (let i = 0; i < TOKEN_WRITE_LIMITS.minute; i++) {
+        expect(await post(write, 'add', { key: 'name:M' + i })).to.have.status(200);
+      }
+      const over = await post(write, 'add', { key: 'name:Over' });
+      expect(over).to.have.status(429);
+      expect(over.body.code).to.equal('too-many-changes');
+      expect(await post(write, 'remove', { key: 'name:M1' })).to.have.status(429);
+      expect(await post(write, 'undo')).to.have.status(429);
+      // Reads go on, and so does the website.
+      expect(await shelf(write)).to.have.status(200);
+      expect(await post(session, 'add', { key: 'name:Website' })).to.have.status(200);
+    } finally {
+      process.env.RATE_LIMITS = 'off';
+    }
+  });
+
+  it('never touches another account’s shelf', async () => {
+    const other = await makeUser();
+    await post(other.token, 'add', { key: 'name:Silica' });
+    await post(write, 'add', { key: 'name:Whiting' });
+    expect((await shelf(other.token)).body).to.eql({ shelf: ['name:Silica'] });
+    expect((await post(write, 'remove', { key: 'name:Silica' })).body.changed).to.equal(false);
+    expect((await shelf(other.token)).body).to.eql({ shelf: ['name:Silica'] });
+  });
+});

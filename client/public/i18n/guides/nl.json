@@ -27,14 +27,19 @@
       "text": "Stof, adembescherming, schoonmaken, de grondstoffen die de meeste zorg vragen, en de afzuiging van de oven."
     },
     "homeSafety": {
-      "title": "Vergiftig uw gezin niet",
+      "title": "Veilig glazuren thuis: kinderen, huisdieren en de oven",
       "text": "Pottenbakken thuis, met kinderen en huisdieren: opbergen, stof, de oven, en wat u doet als er iets is ingeslikt."
     },
     "firing": {
       "title": "Een eenvoudige oven stoken",
       "text": "Kegels, kiln sitters en handbediende schakelaars, met stookschema’s voor de biscuitstook en de glazuurstook."
+    },
+    "learnWithJohnBritt": {
+      "title": "Leren met de gratis glazuurcursus van John Britt",
+      "text": "Zijn gratis videocursus op YouTube, les voor les, met onze gidsen om te lezen en oefeningen om in Glazecalc te doen. In het Engels."
     }
   },
+  "more": "Meer gidsen",
   "contents": "Op deze pagina",
   "poison": {
     "numbersFor": "Nummers voor",

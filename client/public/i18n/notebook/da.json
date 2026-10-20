@@ -76,7 +76,6 @@
     "removeField": "Fjern feltet",
     "addRow": "Tilføj en række til brændingstabellen",
     "addRowWhy": "Tilføj først et felt.",
-    "tableEmpty": "Tilføj et felt ovenfor, og tilføj derefter rækker.",
     "recordHeading": "Registrér brændingen",
     "rowActions": "Handlinger for rækken",
     "cell": "{field}, række {row}",

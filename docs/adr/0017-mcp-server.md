@@ -3,7 +3,8 @@
 Accepted, 2026-10-16; the guides, resources, prompts, conformance check and registry listing added 2026-10-17. Phases 2 and 3 of [the integrations plan](../integrations-plan.md): the public
 tools, and read-only personal access tokens. The plan's decisions 3, 4, 5, 6 and 9 are the owner's,
 all as recommended. Amended 2026-10-19: personal tokens can also change records, and the MCP
-endpoint has write tools (see [Amended: tokens that write](#amended-tokens-that-write)).
+endpoint has write tools (see [Amended: tokens that write](#amended-tokens-that-write)); and apps
+connected with OAuth reach it too (see [Amended: OAuth](#amended-oauth)).
 
 ## Context
 
@@ -34,7 +35,10 @@ an assistant to act for one person that is not their web session.
   short event streams 2025-era clients may get; the Content-Security-Policy is unchanged.
 - **Public tools need no account** (`server/mcp/tools/public.ts`): `search_materials`,
   `get_material`, `analyze_recipe`, `check_limits`, `convert_cone_temperature`,
-  `suggest_substitutes` and `match_from_materials`. Each runs the app's own code on the standard
+  `suggest_substitutes` and `match_from_materials`, and (`server/mcp/tools/blends.ts`)
+  `blend_recipes`: the test tiles of a line or triaxial blend between two or three recipes, each
+  with its recipe, key unity formula figures, expansion, limit cautions and, with a firing, its
+  cone fit, or a comparison of two recipes. A calculation, not a test result. Each runs the app's own code on the standard
   library (`data/`), takes at most 40 recipe lines, answers with structured data and the same as
   JSON text, and words its cautions in the language asked for, from the app's recipe messages
   (`server/mcp/words.ts`); a language not offered gets English. All are marked read-only. The
@@ -62,6 +66,10 @@ an assistant to act for one person that is not their web session.
   as an embedded resource in the caller's language), `make_lead_free`, `replace_discontinued` and
   `explain_recipe`. Each is a request in English that names the tools to use in order, repeats that
   the limit checks are not proof of food safety, and asks for the answer in the language given.
+  A fifth, `glaze_course_lesson` (2026-10), sets up a unit of the companion to John Britt's free
+  glaze course: his videos linked by title with credit and a request never to retell them, the
+  unit's guide sections attached (the safe mixing habits first for lab units), and its exercises,
+  all read from the English-only guide by `server/mcp/course.ts`.
 - **Checked from outside in CI** (`npm run test:mcp`, `scripts/mcp-conformance.mjs`): the official
   conformance suite, `@modelcontextprotocol/conformance` 0.2.0-alpha.12, runs exactly what the
   2026-07-28 and 2025-11-25 revisions require against a server of its own, and the MCP Inspector
@@ -170,10 +178,11 @@ authorization server: personal tokens only, no OAuth client.
   `data:write` a script creates, changes, undoes and moves to the Trash every kind of record, and
   puts records back from it, as the website does. Every change keeps a version and an activity
   line; a removal is refused when the Trash is full rather than pushing anything out of it.
-- **Eight MCP write tools** (`server/mcp/tools/account_write.ts`): `create_recipe` (the server
+- **Nine MCP write tools** (`server/mcp/tools/account_write.ts`): `create_recipe` (the server
   works out the unity formula and saves it as the recipe page does), `update_recipe`,
   `add_notebook_entry`, `add_my_material`, `update_my_material`, `add_to_shelf`,
-  `remove_from_shelf` and `move_to_trash` (to the Trash only). They are listed for every token, so
+  `remove_from_shelf`, `undo_shelf_change` (puts back the shelf as it was before its last change,
+  one step) and `move_to_trash` (to the Trash only). They are listed for every token, so
   an assistant holding a read-only one can say why nothing changed; each checks the token's scopes
   itself and refuses in words otherwise. They do what the record routes do for a change, and the
   server's instructions no longer say the tools never change anything.
@@ -202,3 +211,34 @@ authorization server: personal tokens only, no OAuth client.
 - **OAuth clients** cannot write yet: nothing issues OAuth tokens, and the MCP endpoint takes only
   personal ones. The record routes judge any token by its scopes alone (decision 3), so when the
   authorization server comes, its consent screen decides whether a client may hold `data:write`.
+
+## Amended: OAuth
+
+2026-10-19, [ADR 24](0024-authorization-server.md): Glazecalc's own authorization server gives
+apps connected with OAuth tokens for this endpoint alone. What changes here:
+
+- The Protected Resource Metadata names the authorization server (`authorization_servers`: the
+  site) and lists only `data:read` in `scopes_supported`.
+- `server/mcp/auth.ts` takes an OAuth access token whose audience is this endpoint and whose
+  connection (its row in `access_tokens`) still works, checked on every request as personal tokens
+  are; `req.mcpCaller.via` is `oauth` and its `tokenId` the connection's row, so the limits and the
+  activity log are the connection's. Every route under `/api` still refuses such a token.
+- An app that may only read, calling a tool that changes records, gets HTTP 403
+  `insufficient_scope` with `scope="data:read data:write"` before the SDK sees the call, and is
+  asked to come back through the consent page (step-up). Personal tokens keep the refusal in words.
+- Changes are recorded with the real `via` (`pat` or `oauth`) in the activity log, the versions and
+  the Trash; every tool carries `_meta.securitySchemes` for ChatGPT.
+- "OAuth clients cannot write yet" and "the chat apps get only the public tools until Phase 4",
+  above, no longer hold once the consent page ships.
+
+## Amended: confirm before changes
+
+2026-10-19, [ADR 25](0025-confirm-before-changes.md), to the prompt-injection sections above
+("What the assistant is given is data" and "Prompt injection, revisited"): asking the person before
+a change is built. An account can choose that changes from assistants and access tokens wait for
+its approval: removals only, or every change (off by default). A waiting change is made only when
+the person approves it on the website, signed in, or (for a removal, by the owner's choice) answers
+yes in the client's own form; no token can approve one, the state handed to the client is signed
+and bound to the one change, and a change runs once, after everything is checked again. Words
+planted in a note can still lead an assistant to ask for a change, but no longer to make one
+unseen, when the setting is on. A form's yes is weaker than the website's (ADR 25, Consequences).

@@ -32,7 +32,10 @@ Per language, in order:
 4. **Make consistent** across the language's files: one prompt per language, written by hand from the reviews'
    reports (examples: `wave3-consistency-<code>.md`, `wave2-sl-consistency.md`).
 5. **Back-translate blind** the safety text: `node make-bt-prompts.js ga` (runs `bt-extract.js`) →
-   `bt/<code>-{safe-mixing,home-safety,warnings}.md`, from `backtranslate-prompt.md`.
+   `bt/<code>-{safe-mixing,home-safety,warnings}.md`, from `backtranslate-prompt.md`. One blind back-translator per
+   language: a fresh agent that did not translate or review that language, covering all of its back-translation
+   files (give it the three prompts, not one agent per file). A group checker (one agent over several languages)
+   is blind only for its first language: after that it has read the earlier languages' English, so it is not blind.
 6. **Go live** one language at a time: `node go-live.mjs --dry ga`, then without `--dry`. It sets `live: true`, adds
    the password emails, fills the density example and writes fingerprints, without touching languages still in
    progress. If the English changed during the wave and every translation was brought into line, name the changed

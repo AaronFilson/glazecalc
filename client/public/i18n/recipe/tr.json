@@ -566,7 +566,7 @@
       "hesselberth-roy": "John Hesselberth ve Ron Roy’un, işlevsel stoneware ve porselen üzerindeki kararlı sırlar için önerdiği sınırlar, 6 ve 10 numaralı piramitlerde. Kısa bir hammadde listesine bağlı kalırlar; bu yüzden sette baryum veya lityum için, ayrıca 10 numaralı piramitte çinko için aralık yoktur.",
       "glazecalc": "Uygulamanın hammaddeleri değiştirirken uyardığı değerler: bor, alümina, sodyum ve potasyum, düşük ısıda magnezya."
     },
-    "firing": "Pişirim",
+    "firing": "Sınırların geçerli olduğu pişirim",
     "firingUnknown": "Seçilmedi",
     "bands": {
       "low": "Düşük ısı, 06–02 numaralı piramit",
@@ -596,6 +596,8 @@
     "saveFailed": "Sınır seti seçiminiz hesabınıza kaydedilemedi; bu yüzden önceki sınır seti kullanımda kalıyor.",
     "ownLimits": "Bu öneriler, {name} değil, Glazecalc’in kendi sınırlarını kullanır.",
     "firingFromBlock": "Reçetenin pişiriminden ({bands})",
+    "firingFromBlockText": "Reçetenin pişiriminden: {bands}",
+    "chooseAnother": "Başkasını seç",
     "bothBands": "Reçetenin pişirimi şunları kapsar: {bands}. Bu yüzden her biri yan yana kontrol edilir: bir sır, iki ucunda nadiren aynı davranır.",
     "fromFiring": "Değerler reçetenin pişirimi içindir: {band}. Başka birini kontrol etmek için yukarıdan bir pişirim seçin."
   },
@@ -801,6 +803,18 @@
     "saveHelp": "Saklamak istediğiniz karoları yukarıdaki çizimde işaretleyin. Her biri yüzde cinsinden bir reçete olarak kaydedilir.",
     "nameLabel": "Kaydedilen karoların adı",
     "defaultName": "{titles} karışımı",
+    "chemistry": {
+      "heading": "Karo başına kimya",
+      "help": "Reçetelerden, bir yol gösterici olarak hesaplanmıştır. Gerçekte ne olduğunu pişmiş karolar söyler.",
+      "firing": "Uyarılar ve piramit uyumu {letter} reçetesinin pişirimine göredir.",
+      "tile": "Karo",
+      "cautions": "Uyarılar",
+      "coneFit": "Piramit uyumu",
+      "fits": "Aksine bir şey yok",
+      "cooler": "Daha soğuk pişirime uygun görünüyor",
+      "hotter": "Daha sıcak pişirime uygun görünüyor",
+      "skipped": "Değerlendirilmedi"
+    },
     "chooseAll": "Tüm karoları seç",
     "chooseNone": "Hiçbirini seçme",
     "save": "{count, plural, =0 {Seçilen karoları kaydet} one {# karoyu kaydet} other {# karoyu kaydet}}",
@@ -890,6 +904,8 @@
   },
   "firing": {
     "heading": "Pişirim",
+    "summary": "Pişirim: {what}",
+    "summaryNone": "Pişirim: belirtilmedi",
     "whatIsCone": "Piramit ne demek?",
     "scale": "Ölçek",
     "scales": {

@@ -91,9 +91,10 @@ test('a reset signs out the other devices', async ({ browser, request }) => {
     true
   );
 
-  // The laptop's next request is refused, so it is signed out and sent to sign in.
+  // The laptop's next request is refused, so it is signed out and sent to sign in,
+  // to come back to the page it was opening.
   await laptop.locator('.nav-links').getByRole('link', { name: 'Recipes' }).click();
-  await expect(laptop).toHaveURL(/\/signin$/);
+  await expect(laptop).toHaveURL(/\/signin\?next=%2Frecipe$/);
   await expect(header(laptop)).toHaveCount(0);
   await laptop.close();
 });

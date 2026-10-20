@@ -45,20 +45,23 @@ materials, colorants, firing logs and notes together in one private notebook.
 - **Paste in recipes** from a website, a spreadsheet or your notes: see how each line was read
   and which material it was taken for before anything is saved.
 - **Blends for test tiles:** two, three or four of your recipes blended into numbered tiles,
-  with what to weigh for each.
+  with what to weigh for each and the chemistry of each tile.
 - **Cost per batch** from the prices you pay, kept private with your account in one currency,
   and a **mix ticket** to print for the glaze room, with the batch number, the target SG and the
   materials' hazards (prices left off unless you choose).
 - **Share a recipe** with a read-only link that anyone can open without an account, with its
   unity formula and **how it is worked out**, step by step; stop sharing at any time.
-- **Sign in with Google or GitHub,** or with a password, two-step sign-in or a passkey.
-- **Use it from your AI assistant:** Claude, GitHub Copilot, Cursor, Gemini and others can use
-  the calculations through the Model Context Protocol (MCP) server at `/mcp`, and read your own
-  recipes with a read-only access token you make, and revoke, on your account page; the
+- **Sign in with Google, GitHub or Microsoft,** or with a password, two-step sign-in or a passkey.
+- **Use it from your AI assistant:** Claude, ChatGPT, GitHub Copilot, Cursor, Gemini and others
+  can use the calculations through the Model Context Protocol (MCP) server at `/mcp`, and your own
+  records once you connect them: apps sign in to Glazecalc's own OAuth server and you say yes
+  (read only unless you also allow changes), or you make an access token for them. **Connected
+  apps** shows what each one did, puts back what it moved to the Trash and revokes it; the
   Assistants page says how to connect one.
 - **Guides for new potters,** sourced: glazing from first principles with a glossary, how to make
   a glaze, safe mixing and ventilation, pottery at home with children and pets, and firing a
-  basic kiln with cones, kiln sitters and manual switches.
+  basic kiln with cones, kiln sitters and manual switches; and, in English, a companion to John
+  Britt's free online Glaze Course that links his videos unit by unit with exercises to try.
 - **Lead off unless you choose it,** and old lead glazes rebuilt without it: Replace lead keeps
   the glaze's silica and alumina and gives lead's work to boron and other fluxes, on a lead-free
   base frit sold in your region with up to four other materials chosen for it, or keeps the
@@ -170,8 +173,7 @@ works).
     git clone https://github.com/AaronFilson/glazecalc.git
     cd glazecalc
     npm install
-    mkdir db
-    mongod --dbpath ./db              # in a second terminal; leave it running
+    npm run db                        # MongoDB on ./db, in a second terminal; leave it running
     npm run seed                      # standard materials, additives and advice
     npm run dev                       # then open http://localhost:3000
 

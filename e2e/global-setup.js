@@ -18,7 +18,10 @@ module.exports = async () => {
   try {
     await mongoose.connect(uri, { serverSelectionTimeoutMS: 5000 });
   } catch (e) {
-    throw new Error('Could not reach MongoDB at ' + uri + '. Start mongod before running the e2e tests.', { cause: e });
+    throw new Error(
+      'Could not reach MongoDB at ' + uri + '. Start MongoDB (npm run db) before running the e2e tests.',
+      { cause: e }
+    );
   }
   // Empties each collection rather than dropping the database: Playwright starts
   // the server before this runs, and the indexes it built (the unique email

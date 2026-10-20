@@ -6,8 +6,9 @@
     "glazingBasics": "Sırlamanın temel ilkeleri - Glazecalc",
     "makingAGlaze": "Sır nasıl hazırlanır - Glazecalc",
     "safeMixing": "Güvenli karıştırma ve havalandırma - Glazecalc",
-    "homeSafety": "Ailenizi zehirlemeyin - Glazecalc",
+    "homeSafety": "Evde sır güvenliği: çocuklar, evcil hayvanlar ve fırın - Glazecalc",
     "firing": "Basit bir fırında pişirim - Glazecalc",
+    "learnWithJohnBritt": "John Britt’in ücretsiz sır kursuyla öğrenin - Glazecalc",
     "about": "Hakkında - Glazecalc",
     "privacy": "Gizlilik - Glazecalc",
     "terms": "Kullanım koşulları - Glazecalc",
@@ -26,9 +27,12 @@
     "notes": "Notlar - Glazecalc",
     "trash": "Çöp kutusu - Glazecalc",
     "account": "Hesabınız ve ayarlarınız - Glazecalc",
+    "apps": "Bağlı uygulamalar - Glazecalc",
+    "connect": "Uygulama bağlama - Glazecalc",
     "notFound": "Bulunamadı - Glazecalc",
     "shared": "Paylaşılan reçete - Glazecalc",
-    "assistants": "Glazecalc’i yapay zekâ asistanınızla kullanma - Glazecalc"
+    "assistants": "Glazecalc’i yapay zekâ asistanınızla kullanma - Glazecalc",
+    "confirm": "Değişikliği onaylama - Glazecalc"
   },
   "nav": {
     "skip": "İçeriğe geç",
@@ -91,6 +95,7 @@
     "safeMixing": "Seramik sır tozu ciğerlerinize, fırın dumanı evinize girmesin: güvenli alışkanlıklar, solunum koruyucu maske, temizlik, havalandırma, riskli hammaddeler.",
     "homeSafety": "Çocuk veya evcil hayvan bir seramik sırı hammaddesini yutarsa ne yapmalı; hammaddeler, toz, fırın ve el yapımı ürünler aile çevresinde nasıl güvende tutulur.",
     "firing": "Elektrikli seramik fırınında pişirim: piramitleri seçin, yerleştirin, okuyun; bisküvi ve sırlı pişirim için yayımlanmış programları izleyin. Piramit tablosuyla.",
+    "learnWithJohnBritt": "John Britt’in ücretsiz çevrim içi Glaze Course’una eşlik eder: videoları ünite ünite, Glazecalc rehberleri ve hesaplayıcıda denenecek alıştırmalarla.",
     "advice": "Seramik sırı karıştırma, sırlama ve pişirim üzerine Glazecalc’tan pratik ipuçları ve kendi tavsiyeleriniz. Seramikçiler ve seramik sanatçıları için ücretsiz.",
     "about": "Glazecalc, ücretsiz ve açık kaynaklı bir seramik sır kimyası hesaplayıcısı ve defteridir. Seger formülünü (UMF) nasıl hesapladığını ve nasıl yapıldığını görün.",
     "privacy": "Glazecalc verilerinizi nasıl işler: reklam yok, analiz yok, izleme yok ve hiçbir şey satılmaz. Neler saklanır, neden ve haklarınızı nasıl kullanırsınız.",

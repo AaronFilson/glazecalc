@@ -35,6 +35,11 @@ const trashSchema = new mongoose.Schema(
     trashedAt: Date,
     /** Who moved it: the web session, a personal token or an OAuth client. */
     by: { type: String, enum: ['session', 'pat', 'oauth'] },
+    /**
+     * Which access token or OAuth grant moved it (the AccessToken row), so Connected apps can list what
+     * one app moved. Older entries have none: the activity log's trash lines name it (by recordId).
+     */
+    tokenId: mongoose.Schema.Types.ObjectId,
     // Entries from before: see above.
     content: { type: [mongoose.Schema.Types.Mixed], default: undefined },
     date: String
@@ -43,6 +48,7 @@ const trashSchema = new mongoose.Schema(
 );
 
 trashSchema.index({ ownedBy: 1, trashedAt: -1 });
+trashSchema.index({ ownedBy: 1, tokenId: 1 }, { sparse: true });
 // MongoDB removes an entry TRASH_DAYS after it was trashed.
 trashSchema.index({ trashedAt: 1 }, { expireAfterSeconds: TRASH_DAYS * 24 * 60 * 60 });
 

@@ -2,3 +2,7 @@
 export function pagesToCheck(): string[];
 /** What is wrong with the home page's headers, for production or staging (by its host name). */
 export function headerProblems(headers: Headers | Record<string, string>, url: string): string[];
+/** The videos a guide links (YouTube watch addresses): each title and address, in order, once. */
+export function videosIn(markdown: string): Array<{ title: string; url: string }>;
+/** Where YouTube says whether a video is there to watch (oEmbed). */
+export function oembedFor(url: string): string;

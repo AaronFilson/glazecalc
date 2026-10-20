@@ -76,8 +76,6 @@ test('a firing log shows its date in the calendar chosen in Settings; the date t
   await page.goto('/firing');
   await page.locator('#firing-title').fill('Bisque');
   await page.locator('#firing-date').fill('2026-10-03');
-  await page.locator('#fieldselect').selectOption('Cone');
-  await page.getByRole('button', { name: 'Add the field' }).click();
   await page.getByRole('button', { name: 'Add a row to the firing table' }).click();
   await page.getByLabel('Cone row 1').fill('04');
   await page.getByRole('button', { name: 'Save' }).click();

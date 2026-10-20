@@ -1,6 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import { headerProblems, pagesToCheck } from '../../scripts/live-check.mjs';
+import { headerProblems, oembedFor, pagesToCheck, videosIn } from '../../scripts/live-check.mjs';
 import { expect } from './support/app.ts';
 
 // The checks of a deployed site (scripts/live-check.mjs): the headers it asks
@@ -53,5 +53,40 @@ describe('the live checks', () => {
     const list = pagesToCheck();
     expect(list).to.include.members(['/', '/de/', '/guides/firing', '/signup']);
     expect(new Set(list).size).to.equal(list.length);
+  });
+
+  it("can check John Britt's videos the course companion links, by YouTube's oEmbed, when asked", () => {
+    const guide = fs.readFileSync(
+      path.join(
+        import.meta.dirname,
+        '..',
+        '..',
+        'client',
+        'public',
+        'i18n',
+        'guides',
+        'learn-with-john-britt',
+        'en.md'
+      ),
+      'utf8'
+    );
+    const videos = videosIn(guide);
+    expect(videos).to.have.length(49);
+    expect(videos[0]).to.eql({
+      title: 'Description of UMF (Unity Molecular Formula) Structure (Free Online Glaze Class Pt. 1 )',
+      url: 'https://www.youtube.com/watch?v=YNWdd6R6a4Q'
+    });
+    expect(videosIn('[a](https://www.youtube.com/watch?v=x1) [b](https://www.youtube.com/watch?v=x1)')).to.have.length(
+      1
+    );
+    expect(oembedFor('https://www.youtube.com/watch?v=_r1pAjX_RQU')).to.equal(
+      'https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D_r1pAjX_RQU'
+    );
+    // Never part of the checks after a deploy.
+    const workflow = fs.readFileSync(
+      path.join(import.meta.dirname, '..', '..', '.github', 'workflows', 'live-checks.yml'),
+      'utf8'
+    );
+    expect(workflow).not.to.include('--videos');
   });
 });

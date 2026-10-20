@@ -566,7 +566,7 @@
       "hesselberth-roy": "Die empfohlenen Grenzwerte von John Hesselberth und Ron Roy für stabile Glasuren auf Gebrauchssteinzeug und Porzellan bei Kegel 6 und Kegel 10. Sie beschränken sich auf eine kurze Liste von Rohstoffen, deshalb hat die Tabelle keinen Bereich für Barium oder Lithium und bei Kegel 10 auch keinen für Zink.",
       "glazecalc": "Die Werte, bei denen die App warnt, wenn sie Rohstoffe austauscht: Bor, Tonerde, Natrium und Kalium sowie Magnesium im niedrigen Brennbereich."
     },
-    "firing": "Brand",
+    "firing": "Grenzwerte für",
     "firingUnknown": "Nicht gewählt",
     "bands": {
       "low": "Niedriger Brennbereich, Kegel 06–02",
@@ -596,6 +596,8 @@
     "saveFailed": "Ihre Wahl der Grenzwerttabelle konnte nicht in Ihrem Konto gespeichert werden, deshalb gilt weiterhin die vorherige Grenzwerttabelle.",
     "ownLimits": "Diese Vorschläge verwenden die eigenen Grenzwerte von Glazecalc, nicht {name}.",
     "firingFromBlock": "Aus dem Brand des Rezepts ({bands})",
+    "firingFromBlockText": "Aus dem Brand des Rezepts: {bands}",
+    "chooseAnother": "Anderen wählen",
     "bothBands": "Der Brand des Rezepts erstreckt sich über {bands}, daher wird jeder Bereich geprüft, nebeneinander: Eine Glasur verhält sich selten an beiden Enden gleich.",
     "fromFiring": "Die Werte gelten für den Brand des Rezepts: {band}. Wählen Sie oben einen Brand, um einen anderen zu prüfen."
   },
@@ -801,6 +803,18 @@
     "saveHelp": "Haken Sie in der Zeichnung oben die Plättchen an, die Sie behalten möchten. Jedes wird als Rezept in Prozent gespeichert.",
     "nameLabel": "Name für die gespeicherten Plättchen",
     "defaultName": "Mischreihe {titles}",
+    "chemistry": {
+      "heading": "Chemie je Plättchen",
+      "help": "Aus den Rezepten berechnet, als Richtwert. Was wirklich geschieht, zeigen Ihnen die gebrannten Plättchen.",
+      "firing": "Warnhinweise und Kegelpassung richten sich nach dem Brand von Rezept {letter}.",
+      "tile": "Plättchen",
+      "cautions": "Warnhinweise",
+      "coneFit": "Kegelpassung",
+      "fits": "Nichts spricht dagegen",
+      "cooler": "Wirkt kühler",
+      "hotter": "Wirkt heißer",
+      "skipped": "Nicht beurteilt"
+    },
     "chooseAll": "Alle Plättchen wählen",
     "chooseNone": "Keines wählen",
     "save": "{count, plural, =0 {Gewählte Plättchen speichern} one {# Plättchen speichern} other {# Plättchen speichern}}",
@@ -890,6 +904,8 @@
   },
   "firing": {
     "heading": "Brand",
+    "summary": "Brand: {what}",
+    "summaryNone": "Brand: nicht angegeben",
     "whatIsCone": "Was bedeutet Kegel?",
     "scale": "Skala",
     "scales": {

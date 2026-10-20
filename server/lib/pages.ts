@@ -6,13 +6,15 @@
 // and preview text in the language with its og:locale, and noindex for a
 // language not offered yet or a page with nothing to find in a search
 // (isAppOnlyPage). hreflang is the code in the address, script and
-// all (zh-Hans), which Google reads.
+// all (zh-Hans), which Google reads. A page in English only (ENGLISH_ONLY_PAGES) has one
+// address for search engines, the English: every language's copy names it as
+// canonical, the others are noindex, and none has hreflang.
 import languages from '../../lib/regions/languages.js';
 import type { Language } from '../../lib/regions/languages.js';
-import { PUBLIC_PAGES, prerenderedFile } from '../../lib/pages.js';
+import { ENGLISH_ONLY_PAGES, PUBLIC_PAGES, prerenderedFile } from '../../lib/pages.js';
 import { labelShown } from './site.ts';
 
-export { PUBLIC_PAGES };
+export { ENGLISH_ONLY_PAGES, PUBLIC_PAGES };
 
 /**
  * Pages that anyone can open but no search engine may index, nor any Referer
@@ -22,13 +24,41 @@ export { PUBLIC_PAGES };
  */
 export const PRIVATE_PAGES = ['/shared'];
 
-/** Whether an address is one of PRIVATE_PAGES, in any language: /de/shared is. */
-export const isPrivatePage = (pathname: string): boolean => PRIVATE_PAGES.includes(languages.pagePath(pathname));
+/**
+ * Pages whose address carries an id, as the client's routes write them: the
+ * consent page an AI app sends the person to (/connect/<uid>,
+ * docs/adr/0024-authorization-server.md), with the id oidc-provider gives an
+ * interaction. Each is private as well (PRIVATE_PAGES' headers): never
+ * indexed, cached or named in a Referer.
+ */
+export const ID_PAGES: Record<string, RegExp> = {
+  '/connect/:uid': /^\/connect\/[A-Za-z0-9_-]{16,64}$/,
+  // A change waiting for the person's approval (docs/adr/0025): 128 random bits, base64url.
+  '/confirm/:id': /^\/confirm\/[A-Za-z0-9_-]{22}$/
+};
+
+/** Whether a page, without its language, is one of ID_PAGES. */
+const isIdPage = (page: string): boolean => Object.values(ID_PAGES).some((pattern) => pattern.test(page));
+
+/**
+ * Whether an address is a public page written in English only (ENGLISH_ONLY_PAGES),
+ * in any language: /de/guides/learn-with-john-britt is. Its one address for
+ * search engines is the English; the other languages' copies are noindex, with
+ * no hreflang, and only the English is in the sitemap.
+ */
+export const isEnglishOnlyPage = (pathname: string): boolean =>
+  ENGLISH_ONLY_PAGES.includes(languages.pagePath(pathname));
+
+/** Whether an address is one of PRIVATE_PAGES or ID_PAGES, in any language: /de/shared is. */
+export const isPrivatePage = (pathname: string): boolean => {
+  const page = languages.pagePath(pathname);
+  return PRIVATE_PAGES.includes(page) || isIdPage(page);
+};
 
 /**
  * Every page of the app (client/app/app.routes.ts): the public ones, and those
  * for signing in and once signed in. Any other address is the app's
- * not-found page.
+ * not-found page. ID_PAGES are pages too (isPage).
  */
 export const APP_PAGES = [
   ...PUBLIC_PAGES,
@@ -46,11 +76,15 @@ export const APP_PAGES = [
   '/notes',
   '/trash',
   '/account',
+  '/account/apps',
   ...PRIVATE_PAGES
 ];
 
 /** Whether an address is one of the app's pages, in a language it knows: /de/recipe is, /xx/recipe is not. */
-export const isPage = (pathname: string): boolean => APP_PAGES.includes(languages.pagePath(pathname));
+export const isPage = (pathname: string): boolean => {
+  const page = languages.pagePath(pathname);
+  return APP_PAGES.includes(page) || isIdPage(page);
+};
 
 /**
  * Whether an address is a page of the app that is neither public nor private:
@@ -173,7 +207,12 @@ export function pageHtml(
     head.push('<meta name="robots" content="noindex, nofollow" />');
     head.push('<meta name="referrer" content="no-referrer" />');
   }
-  if (listed) {
+  const englishOnly = listed && isEnglishOnlyPage(pathname);
+  if (englishOnly) {
+    // One page, in English, at one address: each language's copy points to it and stays out of the index.
+    head.push(`<link rel="canonical" href="${attribute(addressIn(site, 'en', page))}" />`);
+    if (code !== 'en' || !live.includes(code)) head.push('<meta name="robots" content="noindex" />');
+  } else if (listed) {
     head.push(`<link rel="canonical" href="${attribute(here)}" />`);
     if (!live.includes(code)) {
       head.push('<meta name="robots" content="noindex" />');
@@ -185,7 +224,9 @@ export function pageHtml(
     }
   }
   // Link previews read these; og:locale:alternate lists the other languages offered.
-  if (listed && live.includes(code)) {
+  if (englishOnly && code === 'en' && live.includes(code)) {
+    head.push(`<meta property="og:locale" content="${ogLocale(code)}" />`);
+  } else if (listed && !englishOnly && live.includes(code)) {
     head.push(`<meta property="og:locale" content="${ogLocale(code)}" />`);
     for (const other of live.filter((l) => l !== code)) {
       head.push(`<meta property="og:locale:alternate" content="${ogLocale(other)}" />`);
@@ -209,21 +250,26 @@ export function pageHtml(
   return out;
 }
 
-/** The sitemap: each public page in each language offered, with its other languages beside it. */
+/**
+ * The sitemap: each public page in each language offered, with its other
+ * languages beside it; a page in English only, at its English address alone.
+ */
 export function sitemap(site: string, live: readonly string[] = languages.LIVE_LANGUAGES): string {
   const entries = PUBLIC_PAGES.flatMap((page) =>
-    live.map((code) => {
-      const others =
-        live.length > 1
-          ? live
-              .map(
-                (other) =>
-                  `<xhtml:link rel="alternate" hreflang="${other}" href="${attribute(addressIn(site, other, page))}"/>`
-              )
-              .join('')
-          : '';
-      return `  <url><loc>${attribute(addressIn(site, code, page))}</loc>${others}</url>`;
-    })
+    ENGLISH_ONLY_PAGES.includes(page)
+      ? [`  <url><loc>${attribute(addressIn(site, 'en', page))}</loc></url>`]
+      : live.map((code) => {
+          const others =
+            live.length > 1
+              ? live
+                  .map(
+                    (other) =>
+                      `<xhtml:link rel="alternate" hreflang="${other}" href="${attribute(addressIn(site, other, page))}"/>`
+                  )
+                  .join('')
+              : '';
+          return `  <url><loc>${attribute(addressIn(site, code, page))}</loc>${others}</url>`;
+        })
   );
   return [
     '<?xml version="1.0" encoding="UTF-8"?>',

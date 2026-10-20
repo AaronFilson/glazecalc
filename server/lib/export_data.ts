@@ -91,10 +91,25 @@ const activityOf = async (userId: Id): Promise<Row[]> =>
 /** The account's access tokens and connected apps, in names and dates only: never a token's hash. */
 const accessTokensOf = async (userId: Id): Promise<Row[]> =>
   (await AccessToken.find({ userId }).sort({ createdAt: 1, _id: 1 }).lean()).map(
-    ({ kind, name, clientId, hint, scopes, createdAt, expiresAt, lastUsedAt, revokedAt, revokedWhy }) => ({
+    ({
+      kind,
+      name,
+      clientId,
+      clientHost,
+      redirectHost,
+      hint,
+      scopes,
+      createdAt,
+      expiresAt,
+      lastUsedAt,
+      revokedAt,
+      revokedWhy
+    }) => ({
       kind,
       name,
       ...(clientId && { clientId }),
+      ...(clientHost && { clientHost }),
+      ...(redirectHost && { redirectHost }),
       ...(hint && { endsWith: hint }),
       scopes,
       createdAt,
@@ -124,6 +139,7 @@ export const exportAccount = async (userId: Id, now = new Date()): Promise<Row |
     role: 1,
     preferences: 1,
     shelf: 1,
+    shelfPrevious: 1,
     prices: 1,
     guest: 1,
     expiresAt: 1,
@@ -155,6 +171,8 @@ export const exportAccount = async (userId: Id, now = new Date()): Promise<Row |
     },
     preferences: user.preferences ?? {},
     shelf: user.shelf ?? [],
+    // The list before the last change, which Undo puts back; absent when there is none.
+    ...(user.shelfPrevious && { shelfPrevious: user.shelfPrevious }),
     // Per kilogram, in the account's currency (preferences.currency, or the region's when '').
     prices: (user.prices ?? []).map(({ key, perKg }) => ({ key, perKg })),
     signIn: signInOf(user),

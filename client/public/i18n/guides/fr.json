@@ -27,14 +27,19 @@
       "text": "Poussières, masques de protection respiratoire, nettoyage, les matières qui demandent le plus de précautions, et l’évacuation des fumées du four."
     },
     "homeSafety": {
-      "title": "N’empoisonnez pas votre famille",
+      "title": "Sécurité des émaux à la maison : enfants, animaux et four",
       "text": "La céramique à la maison avec des enfants et des animaux : rangement, poussière, le four, et que faire si quelque chose a été avalé."
     },
     "firing": {
       "title": "Cuire dans un four simple",
       "text": "Cônes, Kiln-Sitter et commandes manuelles, avec des courbes pour la cuisson de biscuit et la cuisson d’émail."
+    },
+    "learnWithJohnBritt": {
+      "title": "Apprendre avec le cours d’émaux gratuit de John Britt",
+      "text": "Son cours vidéo gratuit sur YouTube, unité par unité, avec nos guides à lire et des exercices à faire dans Glazecalc. En anglais."
     }
   },
+  "more": "Plus de guides",
   "contents": "Sur cette page",
   "poison": {
     "numbersFor": "Numéros pour",

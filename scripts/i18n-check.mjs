@@ -22,7 +22,8 @@
 //    same numbers, with their units, and the same links, numbers written the
 //    language's way (1,5 for 1.5 in German). A changed temperature, limit or
 //    phone number cannot ship. Each section of a guide keeps the English's
-//    structure too: its headings, tables, lists and callouts.
+//    structure too: its headings, tables, lists and callouts. A guide in
+//    English only (ENGLISH_ONLY_PAGES in lib/pages.js) has no other copy.
 // 7. Each translation is in step with the English it was made from
 //    (scripts/i18n-fingerprints.mjs); and what is still in English is
 //    counted, language by language.
@@ -32,7 +33,7 @@ import path from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { TYPE, parse } from '@formatjs/icu-messageformat-parser';
 import { Lexer } from 'marked';
-import { guideSegments, updateTranslations } from './i18n-fingerprints.mjs';
+import { ENGLISH_ONLY_GUIDES, guideSegments, updateTranslations } from './i18n-fingerprints.mjs';
 import { sources } from './i18n-sources.mjs';
 
 const ROOT = path.resolve(import.meta.dirname, '..');
@@ -597,12 +598,19 @@ export function compareSegment(label, language, english, translated) {
   ];
 }
 
-/** Problems with the translated guides, each against its English. */
-export function checkGuides(dir = path.join(I18N, 'guides')) {
+/** Problems with the translated guides, each against its English; a guide in English only has no translation. */
+export function checkGuides(dir = path.join(I18N, 'guides'), englishOnly = ENGLISH_ONLY_GUIDES) {
   const problems = [];
   if (!existsSync(dir)) return problems;
   for (const guide of readdirSync(dir, { withFileTypes: true }).filter((entry) => entry.isDirectory())) {
     const folder = path.join(dir, guide.name);
+    if (englishOnly.includes(guide.name)) {
+      for (const file of readdirSync(folder).filter((name) => name.endsWith('.md') && name !== 'en.md'))
+        problems.push(
+          `guides/${guide.name}/${file}: this guide is in English only (lib/pages.js), so it has no copies`
+        );
+      continue;
+    }
     const englishText = readFileSync(path.join(folder, 'en.md'), 'utf8');
     const english = guideMarks(englishText);
     for (const file of readdirSync(folder).filter((name) => name.endsWith('.md') && name !== 'en.md')) {

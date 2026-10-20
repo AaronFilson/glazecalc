@@ -27,14 +27,19 @@
       "text": "Dulkės, respiratoriai, valymas, žaliavos, su kuriomis reikia elgtis atsargiausiai, ir krosnies vėdinimas."
     },
     "homeSafety": {
-      "title": "Neapnuodykite savo šeimos",
+      "title": "Glazūrų sauga namuose: vaikai, augintiniai ir krosnis",
       "text": "Keramika namuose, kur yra vaikų ir gyvūnų: laikymas, dulkės, krosnis ir ką daryti, jei kas nors buvo praryta."
     },
     "firing": {
       "title": "Degimas paprastoje krosnyje",
       "text": "Piroskopai, Kiln-Sitter išjungikliai ir rankiniai galios reguliatoriai, su biskvitinio ir glazūros degimo programomis."
+    },
+    "learnWithJohnBritt": {
+      "title": "Mokykitės su nemokamu Johno Britto glazūrų kursu",
+      "text": "Jo nemokamas vaizdo kursas „YouTube“ skyrius po skyriaus, su mūsų vadovais skaitymui ir pratimais, kuriuos galima išbandyti Glazecalc. Anglų kalba."
     }
   },
+  "more": "Daugiau vadovų",
   "contents": "Šiame puslapyje",
   "poison": {
     "numbersFor": "Numeriai šioje šalyje:",

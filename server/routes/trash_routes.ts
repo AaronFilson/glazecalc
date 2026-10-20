@@ -10,39 +10,27 @@
 //   DELETE /api/trash/empty        deletes everything in it for good
 //
 // An access token can look and put back (trash:read, trash:write); deleting
-// for good is only done signed in on the website.
+// for good is only done signed in on the website. When the account asks to
+// confirm every change (docs/adr/0025-confirm-before-changes.md), a token's
+// put back waits for the person's approval and is answered 202
+// (server/lib/rest_changes.ts); 'trash.restore' runs the same code.
 import express from 'express';
 import mongoose from 'mongoose';
-import { OWNED_KINDS } from '../lib/account_data.ts';
 import { pullFiringLinks } from '../lib/firing_links.ts';
-import { giveBack, makeRoom, type RecordModel } from '../lib/guest_limits.ts';
 import jwtAuth, { userOf } from '../lib/jwt_auth.ts';
 import { say } from '../lib/messages.ts';
-import { isDuplicateKey } from '../lib/mongo_errors.ts';
-import { keepVersions, logActivity } from '../lib/record_history.ts';
+import { logActivity } from '../lib/record_history.ts';
 import requireScope from '../lib/require_scope.ts';
-import { stopSharing } from '../lib/share_links.ts';
+import { confirmFirst, inputOf, named, registerOp, send, type Op } from '../lib/rest_changes.ts';
+import { CURRENT, LABELS, putBackEntry } from '../lib/trash_restore.ts';
 import RecordVersion from '../models/record_version.ts';
 import Trash, { TRASH_DAYS } from '../models/trash.ts';
 
 const trashRouter = express.Router();
 export default trashRouter;
 
-/** The kinds of record that can be put back, with the label the messages name each by (server/lib/messages.ts). */
-const LABELS: Record<string, string> = {
-  additives: 'additive',
-  advice: 'advice',
-  firing: 'firing',
-  materials: 'material',
-  notes: 'note',
-  recipes: 'recipe'
-};
-const modelFor = (kind: string): RecordModel | undefined => (LABELS[kind] ? OWNED_KINDS[kind] : undefined);
-
 const DAY = 24 * 60 * 60 * 1000;
 const NOT_FOUND = say('record-not-found', { label: 'trash' });
-// Entries from before the Trash was used have no recordId (models/trash.ts).
-const CURRENT = { recordId: { $exists: true } };
 
 const validId = (id: unknown): id is string => mongoose.isValidObjectId(id);
 
@@ -65,49 +53,40 @@ trashRouter.get('/getAll', requireScope('trash:read'), async (req, res) => {
   );
 });
 
-trashRouter.post('/restore/:id', requireScope('trash:write'), async (req, res) => {
-  if (!validId(req.params.id)) return res.status(400).json(say('invalid-id'));
-  const user = userOf(req);
-  const ownedBy = String(user._id);
-  const entry = await Trash.findOne({ _id: req.params.id, ownedBy, ...CURRENT })
-    .select({ fromCollection: 1 })
-    .lean();
-  const Model = entry && modelFor(entry.fromCollection);
-  if (!entry || !Model) return res.status(404).json(NOT_FOUND);
-  const label = LABELS[entry.fromCollection];
-  // The record counts against the account's (or trial's) limit again.
-  const refusal = await makeRoom(user, Model, label);
-  if (refusal) return res.status(403).json(refusal);
-  const putBack = async (): Promise<boolean> => {
-    // Taken out of the Trash in one step, so two requests at once cannot both put it back.
-    const taken = await Trash.findOneAndDelete({ _id: entry._id, ownedBy }).lean();
-    if (!taken?.recordId || !taken.record) return false;
-    const record = { ...(taken.record as Record<string, unknown>), _id: taken.recordId, ownedBy };
-    try {
-      // A recipe never comes back shared, whether or not its link was stopped when it went (or one was made
-      // since); taken away before it is back, so there is no moment it is both.
-      if (entry.fromCollection === 'recipes') await stopSharing(taken.recordId, ownedBy);
-      await Model.collection.insertOne(record);
-    } catch (err) {
-      // It goes back in the Trash as it was, whatever went wrong, so it is never lost.
-      await Trash.collection.insertOne(taken);
-      // A record with that _id is in the list already (409): the entry stays, to delete or keep.
-      if (isDuplicateKey(err)) return false;
-      throw err;
+const restore: Op = async (who, { params }) => {
+  if (!validId(params.id)) return { status: 400, body: say('invalid-id') };
+  const result = await putBackEntry(who.user, params.id);
+  if (result.status === 'missing') return { status: 404, body: NOT_FOUND };
+  if (result.status === 'refused') return { status: 403, body: result.refusal };
+  if (result.status === 'conflict') return { status: 409, body: say('trash-restored-already') };
+  await logActivity(who, 'restore', result.fromCollection, result.record);
+  return {
+    status: 200,
+    body: {
+      ...say('trash-restored', { label: LABELS[result.fromCollection] }),
+      fromCollection: result.fromCollection,
+      record: result.record
     }
-    await keepVersions(ownedBy, taken.recordId);
-    await logActivity(req, 'restore', entry.fromCollection, record);
-    res.status(200).json({ ...say('trash-restored', { label }), fromCollection: entry.fromCollection, record });
-    return true;
   };
-  let done = false;
-  try {
-    done = await putBack();
-  } finally {
-    if (!done && user.guest) await giveBack(user._id, Model);
+};
+registerOp('trash.restore', restore);
+
+const askToRestore = confirmFirst('trash.restore', {
+  removal: false,
+  describe: async (req, who) => {
+    if (!validId(req.params.id)) return null;
+    const entry = await Trash.findOne({ _id: req.params.id, ownedBy: String(who.user._id), ...CURRENT })
+      .select({ fromCollection: 1, title: 1 })
+      .lean();
+    if (!entry) return null;
+    return {
+      summary: { code: 'pending-restore', params: named(LABELS[entry.fromCollection] ?? 'other', entry.title ?? '') }
+    };
   }
-  if (!done) res.status(409).json(say('trash-restored-already'));
-  return undefined;
+});
+
+trashRouter.post('/restore/:id', requireScope('trash:write'), askToRestore, async (req, res) => {
+  send(res, await restore({ user: userOf(req), access: req.access }, inputOf(req)));
 });
 
 trashRouter.delete('/delete/:id', jwtAuth, async (req, res) => {

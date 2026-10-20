@@ -6,6 +6,96 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Added
 
+- **Confirm before changes** (docs/adr/0025-confirm-before-changes.md). On Connected apps, an
+  account can choose that changes from assistants, apps and access tokens wait for its approval:
+  never (the default), only removals, or every change. It holds back an assistant that misbehaves
+  or was led astray by what it read; a token's holder is trusted as the person chose. A waiting
+  change has its own page, `/confirm/<id>`, the only place it is approved: signed in, on the
+  website. The page shows each field the change sets as it is now and would be (long text cut
+  short, with "Show all"); for a removal, what the record was called before this app changed it
+  and how long ago; an app that registered itself marked "self-described"; every other change
+  waiting from the same app, with "Approve all" and "Decline all" covering exactly those shown;
+  and, once decided, what came of it. No token can approve one, and it is made once, after the
+  token, its permission and the record are checked again. An assistant whose client supports URL
+  elicitation (MCP 2026-07-28) is asked to open the page; any other, including one that offers
+  only a form of its own, is told to ask the person to approve it at the link, and a retry never
+  makes the change itself. A script on the REST routes gets `202` with the change's id and link,
+  and asks `GET /api/pending-changes/:id` for what came of it. Every route a token can change
+  records through asks, the recipe's firing links included (taking one off is a removal); a test
+  checks every such route and every write tool. At most 5 changes wait from one token or app and
+  20 per account; asking counts against the limits on changes; revoking a token or app ends its
+  waiting changes; a confirmed removal counts once against its token's removals. A personal token
+  can be made with "Changes from this token need no confirmation". Asking less sends the owner an
+  email; a change waits 30 minutes at most, and what it would do is removed once it is decided.
+  `get_my_settings` shows the choice. English only.
+- **The consent page for AI apps, and a notice for each connection** (docs/adr/0024-authorization-server.md).
+  An app such as Claude or ChatGPT that asks to connect sends the person to `/connect/<id>`, after
+  signing in if needed (the sign-in page now takes `?next=`, this site's pages only). It shows the
+  app's name, marked "self-described" when the app registered itself; its checked address; where
+  the answer goes, with a warning when that is the person's own computer, an app's own link scheme
+  (shown whole: `evilapp://claude.ai/cb` is not claude.ai), or another host than the app's; what
+  it can read; and "Also let it change my records", never ticked for the person. Trials and
+  unconfirmed emails are told why they cannot connect. Each new connection emails the account,
+  naming the app, its host and whether it can change records, with a link to Connected apps,
+  which now marks self-described apps. The `/assistants` page explains the two ways to connect.
+  The consent API reports a redirect's host for http and https only. English only for now.
+- **The shelf over REST, with one Undo.** A token that can change records may add or remove one
+  material at a time (`POST /api/shelf/add` and `/remove`, by `key` or `name`) and put back the
+  shelf as it was before the last change (`POST /api/shelf/undo`, one step); `GET /api/shelf`
+  takes a token that can read the shelf. The website's own changes, and an assistant's
+  `add_to_shelf` and `remove_from_shelf`, keep the earlier list for that Undo too; a new MCP tool,
+  `undo_shelf_change`, puts it back. A token's shelf changes are written to the activity log, and
+  the earlier list goes with the account's export and deletion. The website has no Undo button
+  for it yet. English only.
+- **Blend tiles for assistants and a chemistry table on the Blends page.** A new public MCP tool,
+  `blend_recipes`, works out the tiles of a line blend between two recipes (2 to 11 steps) or a
+  triaxial blend between three (2 to 6 rows): each tile's shares, its recipe in percent, its key
+  unity formula figures, silica to alumina, expansion, the names of its limit cautions and, with a
+  firing, its cone fit. With two recipes and two steps it compares them oxide by oxide. It says it
+  is a calculation, not a test result. On the Blends page, a closed "Chemistry per tile" table
+  shows silica to alumina, boron, expansion, the number of cautions and, when a recipe has a
+  firing, the cone fit. The comparison of two unity formulas moved to `lib/recipe/compare.js`, so
+  the app and the server share it. English only for now.
+- **An OAuth authorization server for AI assistants** (docs/adr/0024-authorization-server.md), the
+  server side: apps such as Claude and ChatGPT will connect to a person's records by asking on the
+  website, once the consent page ships. oidc-provider 9.12.2 under `/oauth/`, with its metadata at
+  `/.well-known/oauth-authorization-server`; the code flow with PKCE (S256) only, refresh tokens
+  that rotate (a second use ends the connection), `iss` in every answer, and tokens for the MCP
+  endpoint alone, opaque and for an hour. Apps name themselves by an https address (CIMD, fetched
+  only from the public internet, under limits) or register themselves (limited, and gone after 7
+  days unused). A connection reads; it may change records only when the app asks and the person
+  ticks it, and an app that may only read is asked to step up (403 `insufficient_scope`). Each
+  connection is a row beside the access tokens: read-only ones last 60 days from their last use,
+  ones that change records 90 days; revoking one, a password reset or "Sign out everywhere" stops
+  all its tokens at once. The consent API is `/api/connect/:uid`; the page, the notice email and the
+  privacy notice follow.
+- **Connected apps** (`/account/apps`, docs/integrations-plan.md items 3 and 27): one page lists
+  the account's access tokens and OAuth connections with what each may do (read only, or read and
+  change), when it was made and last used, when it stops working, and how many records it made,
+  changed, moved to the Trash, put back or undid in the last 90 days. A row opens out to show its
+  recent activity (50 lines a page) and the Trash entries it moved, each with Put back, and Put all
+  back, which skips any record whose place is already taken. Revoke and Revoke all ask for a
+  confirming click; Revoke uses the same revoking as the account page. Making a token stays on the
+  account page, whose list of tokens moved here and left a link. `GET /api/connections`,
+  `GET /api/connections/:id/activity`, `GET /api/connections/:id/trash`,
+  `POST /api/connections/:id/restore-all`, `DELETE /api/connections/:id` and `DELETE
+/api/connections`: the web session only, every query the account's own. A Trash entry now
+  records which token moved it (`tokenId`, from the REST routes and the `move_to_trash` tool);
+  older entries are matched through the activity log. The privacy notice says the activity also
+  shows on Connected apps. English only for now.
+- **A companion to John Britt's free glaze course** (/guides/learn-with-john-britt): a sixth
+  guide, in English only, with one section for each of 12 units of his free online Glaze Course on
+  YouTube. Each unit links his videos by the titles he gave them (never copied, retold or
+  embedded), credits him, his site and his two glaze books, says Glazecalc is not connected with
+  him, and adds the Glazecalc guide sections to read and one to three exercises on the recipe page,
+  Blends, the specific gravity calculator, firing logs and the MCP tools; the lab units send the
+  reader to the safe mixing guide first. Every language shows the English with the "not
+  translated" notice; search engines get the English address only (canonical, noindex on the other
+  languages' copies, no hreflang, the English alone in the sitemap), and the translation checks
+  expect no copies (`ENGLISH_ONLY_PAGES` in lib/pages.js). The MCP prompt `glaze_course_lesson`
+  (unit completed from the units' names; recipe, cone and language optional) reads the units from
+  the same guide (server/mcp/course.ts) and attaches the unit and its guide sections.
+  `node scripts/live-check.mjs --videos` checks by hand that the videos are still on YouTube.
 - **Chemistry against the stated cone** (docs/adr/0022-chemistry-against-the-stated-cone.md): one
   line at the top of the recipe page's limits panel says whether the glaze's chemistry fits its
   firing, the recipe's stated cone or the band chosen in the panel. It gives a note only when boron
@@ -56,8 +146,8 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   fired it to (the tested cone shows first); Orton 022 to 13, half cones and 14 to 42; atmosphere (oxidation, reduction,
   neutral) and process (wood, soda, salt, raku, pit); for a temperature, the rate over the last hour and the hold; a
   schedule note and a witness cone. Conversions into your own scale are shown beside it, marked approximate, using
-  Kyoto's measured SK bends only (SK 8, 10 and 12; other SK cones show no temperature or Orton cone, never the JIS
-  figures). The limits panel takes its band from the firing and shows both
+  Kyoto's measured SK bends only (SK 8 and 10 as temperatures; other SK cones show no temperature, never the JIS
+  figures); SK and Orton are matched by Kyoto's same-kiln table (see Changed). The limits panel takes its band from the firing and shows both
   bands side by side for a range across them (cone 6–10); the band picker still overrides. A **food surface** flag brings
   a note that food safety depends on firing to the tested cone (test a range at its low end). **Firing logs** link to
   recipes both ways, each with a result note, and can fill in the tested cones. **Duplicate for another cone**, cone and
@@ -644,6 +734,43 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Changed
 
+- **The privacy notice says what connecting an AI app means** (a new section, "Connecting an AI
+  app", with the ADR 0024 notices): what is kept for each connected app (its name and address as
+  it gives them, where it sends you back, what it may do, its dates, its codes and tokens only as
+  hashes, what it did), that Glazecalc's server fetches an app's details from the app's own
+  address and keeps them 1 to 24 hours in memory, how long each part lasts (60 days from the last
+  renewal for an app that reads, 90 days from the yes for one that may change records, 7 or 30
+  days for an app that registered itself), how to end a connection, and that the app answers for
+  what it does with your records under its own privacy policy. It also names the shelf's list
+  before its last change, kept for one Undo. The terms of use add that connecting an app is your
+  choice and that you answer for what an app you allow does in your account. The record of
+  processing (docs/processing-record.md) has a new activity, Connected AI apps, and names AI apps
+  as separate controllers, with no new processor. English only for now.
+- **MCP `check_limits` follows the account's own limit set.** Called with a personal access token
+  that may read preferences and no `limitSet`, it checks against the limit set saved in the
+  account's settings (the recipe page's own, Hesselberth & Roy's until changed), as `get_recipe`
+  does; with no token, or a `limitSet` given, nothing changes ("glazecalc" is still the default
+  without an account). Its description says so.
+- **SK and Orton cones are matched by Kyoto's same-kiln table** (docs/adr/0021-recipe-firing.md, amended): the
+  conversion beside a recipe's cone, and an assistant's search across the two scales, now use the Kyoto municipal
+  institute's own Orton column, bent in the same kiln at the same rate as its SK cones, instead of Orton's chart at a
+  different heating rate. Orton 4 is now SK 7 (was SK 8) and Orton 6 is SK 9 (was SK 10); SK 7, 9, 11, 13 and 14 and
+  Orton 8, 11 and 12 now have a match. The firing guide's Kyoto cones paragraph says so (English; the other
+  languages follow with the next translation round).
+- **Guides end with "More guides"**, links to the other guides with their summaries, drawn into the prerendered page so
+  search engines follow them. The home safety guide keeps its heading, "Don't poison your family"; its page title,
+  search description and link in the guides list now read "Glaze safety at home: children, pets and the kiln"
+  (English; the other languages follow with the next translation round).
+
+- **The recipe page's firing, less repeated and shorter on a phone.** When the firing block has a
+  cone, the limits panel says "From the recipe's firing: Mid fire" as text, with "Choose another"
+  to bring back the picker (now labelled "Limits for"); the cone check line is unchanged. The firing
+  block and linked firings fold under a "Firing: cone 6, oxidation" summary ("Firing: not set"
+  when empty): open when empty and on wide screens, closed on a phone once a firing is set.
+- **A new firing log starts with Time, Temperature (°F or °C as you read temperatures) and Cone**,
+  each removable; logs already saved are unchanged. The duplicate "Add a field above" line is gone.
+- The settings labels for how you fire read "Orton cones", "SK cones, JIS R 8101" and "Temperature,
+  as a kiln controller's program". English only for now.
 - **One limit on what an account keeps.** An account keeps up to 100,000 records of every kind
   together (recipes, materials, notes, firing logs and the rest), in place of 2,000 of each kind;
   `ACCOUNT_MAX_RECORDS` still sets another. Trials keep their own limits.
@@ -789,6 +916,21 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Fixed
 
+- **Sign-in keeps the page you were going to.** "Create a free account" and "Sign in" on the sign-in and
+  sign-up pages carry `?next=` (this site's pages only) so an AI app's consent page is not lost; and a
+  session that has gone stale sends you to sign-in with the page you were on, which you come back to.
+
+- **The OAuth authorization server, after its security review** (docs/adr/0024, "Review fixes"):
+  addresses under `/oauth/` answer only as written (`/oauth/REGISTER` or `/oauth/register/` no
+  longer slip past the registration limits); fetches of apps' documents (CIMD) are limited per
+  address and per host as well as for everyone, and an app someone has connected keeps working
+  from a copy of its document kept with the connection, whatever else is fetched; refused
+  registrations no longer count towards everyone's day; the guard blocks IPv4-compatible and SIIT
+  IPv6 addresses; and the consent API hands the authorization server the site's own host and scheme.
+- **A test of the sign-in notice email no longer fails now and then under load.** The app sends
+  such a notice after its reply, so a busy machine could be slow to write it; the mail helper for
+  tests now waits for sends in progress (`mailer.idle`) and for up to 10 s, and the test timeout is
+  15 s. Test-only; the app sends the same mail.
 - **nginx's logs are rotated and deleted after 14 days, as the privacy notice says.** Debian's cloud
   image has no logrotate, and the instance was set up without it, so nothing was ever rotated:
   `setup-instance.sh` now installs it, and a deploy installs it on an instance that lacks it.

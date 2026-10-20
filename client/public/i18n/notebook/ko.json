@@ -76,7 +76,6 @@
     "removeField": "항목 삭제",
     "addRow": "소성 표에 행 추가",
     "addRowWhy": "먼저 항목을 추가하세요.",
-    "tableEmpty": "위에서 항목을 추가한 다음 행을 추가하세요.",
     "recordHeading": "소성 기록하기",
     "rowActions": "행 작업",
     "cell": "{field} {row}행",

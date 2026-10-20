@@ -6,8 +6,9 @@
     "glazingBasics": "Glasering från grunden - Glazecalc",
     "makingAGlaze": "Blanda en glasyr - Glazecalc",
     "safeMixing": "Säker blandning och ventilation - Glazecalc",
-    "homeSafety": "Förgifta inte familjen - Glazecalc",
+    "homeSafety": "Glasyrsäkerhet hemma: barn, husdjur och keramikugnen - Glazecalc",
     "firing": "Bränna i en enkel keramikugn - Glazecalc",
+    "learnWithJohnBritt": "Lär dig med John Britts kostnadsfria glasyrkurs - Glazecalc",
     "about": "Om Glazecalc",
     "privacy": "Integritet - Glazecalc",
     "terms": "Användarvillkor - Glazecalc",
@@ -26,9 +27,12 @@
     "notes": "Anteckningar - Glazecalc",
     "trash": "Papperskorgen - Glazecalc",
     "account": "Konto och inställningar - Glazecalc",
+    "apps": "Anslutna appar - Glazecalc",
+    "connect": "Anslut en app - Glazecalc",
     "notFound": "Sidan hittades inte - Glazecalc",
     "shared": "Delat recept - Glazecalc",
-    "assistants": "Använd Glazecalc från en AI-assistent - Glazecalc"
+    "assistants": "Använd Glazecalc från en AI-assistent - Glazecalc",
+    "confirm": "Godkänn en ändring - Glazecalc"
   },
   "nav": {
     "skip": "Hoppa till innehållet",
@@ -91,6 +95,7 @@
     "safeMixing": "Håll glasyrdamm borta från lungorna och ugnsgaser borta från hemmet: säkra vanor, andningsskydd, städning, ventilation och riskabla råvaror.",
     "homeSafety": "Vad som ska göras om ett barn eller ett husdjur sväljer en glasyrråvara, och hur råvaror, damm, ugnen och handgjort gods hålls säkra runt familjen.",
     "firing": "Bränna en elugn: välja, placera och läsa av käglor och följa publicerade brännprogram för skröjbränning och glasyrbränning, med en kägeltabell.",
+    "learnWithJohnBritt": "Följeslagare till John Britts kostnadsfria glasyrkurs på nätet: hans videor del för del, med Glazecalcs guider att läsa och övningar i kalkylatorn.",
     "advice": "Praktiska tips om att blanda, glasera och bränna, från Glazecalc, plus egna råd. Gratis för keramiker och krukmakare.",
     "about": "Glazecalc är en gratis kalkylator och anteckningsbok för glasyrkemi, med öppen källkod. Se hur den räknar fram Segerformeln (UMF) och hur den är byggd.",
     "privacy": "Så hanterar Glazecalc dina uppgifter: inga annonser, ingen analys eller spårning, och inget säljs. Vad som sparas, varför och hur du använder dina rättigheter.",

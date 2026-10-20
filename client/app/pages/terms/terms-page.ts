@@ -106,6 +106,7 @@ export class TermsPage {
   protected readonly use = marker([
     'site.terms.useOwn',
     'site.terms.useAccount',
+    'site.terms.useApps',
     'site.terms.useContent',
     'site.terms.useLaw'
   ]);

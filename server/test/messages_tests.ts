@@ -14,7 +14,17 @@ describe('messages', () => {
       wait: 'hour',
       provider: 'google',
       choices: '7, 30, 90, 365',
-      count: 2
+      count: 2,
+      skipped: 1,
+      kind: 'recipe',
+      title: 'Celadon',
+      named: 'yes',
+      fields: 'title, notes',
+      names: 'Silica, Whiting',
+      made: 2,
+      notMade: 1,
+      log: 'Cone 6 glaze',
+      logNamed: 'yes'
     };
     for (const code of Object.keys(MESSAGES) as MessageCode[]) {
       const text = textOf(code, params);
@@ -143,6 +153,24 @@ describe('account emails', () => {
     const english = [m.MFA_ADDED, m.MFA_REMOVED, m.RECOVERY_USED, m.RECOVERY_NEW, m.METHODS].map((e) => e['en']);
     expect(fingerprint(JSON.stringify(english))).to.equal('g444iu');
     expect(fingerprint(JSON.stringify([m.MFA_OFF['en'], m.MFA_CLEAR_NOTICE['en']]))).to.equal('18fasis');
+  });
+
+  it('should give the connected app notice its values, signature and English', async () => {
+    const { CONNECTION_MADE } = await import('../lib/account_mail.ts');
+    const { fingerprint } = await import('../../scripts/i18n-fingerprints.mjs');
+    const email = CONNECTION_MADE['en']!;
+    const values = (text: string) => [...new Set([...text.matchAll(/\{(\w+)\}/g)].map((match) => match[1]))].sort();
+    expect(values(email.opening)).to.eql(['account', 'date', 'time']);
+    expect(values(email.named)).to.eql(['name']);
+    for (const part of [email.checked, email.answerAt, email.loopback]) expect(values(part)).to.eql(['host']);
+    expect(values(email.selfDescribed)).to.eql([]);
+    expect(values(email.read)).to.eql([]);
+    expect(values(email.write)).to.eql(['days']);
+    expect(values(email.closing)).to.eql(['app', 'forgot', 'page']);
+    expect(email.closing).to.match(/\n-- \nGlazecalc, \{app\}\n$/);
+    expect(email.subject).to.include('Glazecalc');
+    // English only so far: the next wave translates it, and fingerprints it here.
+    expect(fingerprint(JSON.stringify(email))).to.equal('165ly6s');
   });
 
   it('should give the unfinished second step notice its values and signature', async () => {

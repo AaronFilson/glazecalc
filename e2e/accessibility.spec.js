@@ -97,8 +97,9 @@ for (const colorScheme of ['light', 'dark']) {
     test.use({ colorScheme });
 
     test('the public pages', async ({ page }) => {
-      // Sixteen pages, the guides long ones, each checked whole: more than the default 30 seconds on a busy machine.
-      test.setTimeout(90000);
+      // Every public page, the guides long ones, each checked whole: about ten seconds a page on a busy
+      // machine, so the time grows with the list.
+      test.setTimeout(10000 * (PUBLIC_PAGES.length + 2));
       for (const path of PUBLIC_PAGES) {
         await page.goto(path);
         await expect(page.locator('h1')).toBeVisible();

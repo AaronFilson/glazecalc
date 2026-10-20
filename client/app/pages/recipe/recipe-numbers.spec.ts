@@ -111,7 +111,16 @@ describe('RecipeNumbers', () => {
     expect(bands).toEqual(['mid', 'high']);
     expect(root.querySelectorAll('.limits-table')).toHaveLength(2);
     expect(text(fixture, '.limits-both')).toContain('spans Mid fire, cone 4–6 and High fire, cone 9–11');
+    // The band is shown as text, with a link that opens the picker.
+    expect(root.querySelector('#limit-firing')).toBeNull();
+    expect(text(fixture, '#limit-firing-text')).toBe(
+      "From the recipe's firing: Mid fire, cone 4–6 and High fire, cone 9–11"
+    );
+    (root.querySelector('#limit-firing-choose') as HTMLButtonElement).click();
+    await fixture.whenStable();
+    expect(text(fixture, 'label[for=limit-firing]')).toBe('Limits for');
     expect(text(fixture, '#limit-firing option')).toContain("From the recipe's firing");
+    expect(root.querySelector('#limit-firing-text')).toBeNull();
     // Cone 6 by its cone 6 figures, cone 10 by its cone 10 ones.
     expect(rows(root, '.limits-band[data-band=mid]')).toContainEqual(['Al₂O₃', '0.30', '0.25–0.40', 'within']);
     expect(rows(root, '.limits-band[data-band=high]')).toContainEqual(['Al₂O₃', '0.30', '0.30–0.60', 'within']);

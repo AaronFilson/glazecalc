@@ -15,7 +15,8 @@ export interface GuideText {
 /**
  * Loads a guide's Markdown before its page opens (the route's data names it):
  * the page's language's, or the English where there is none yet. A pseudo-locale
- * reads the English, and the page shows it pseudo-translated.
+ * reads the English, and the page shows it pseudo-translated. A guide written
+ * in English only (data: { englishOnly: true }) is read in English at once.
  */
 export const guideText: ResolveFn<GuideText> = (route) => {
   const http = inject(HttpClient);
@@ -23,6 +24,8 @@ export const guideText: ResolveFn<GuideText> = (route) => {
   const file = (code: string) => http.get(`/i18n/guides/${route.data['guide']}/${code}.md`, { responseType: 'text' });
   const english = file('en').pipe(map((text) => ({ text, language: null })));
   if (language === 'en' || languageFor(language)?.pseudo) return english;
+  // A guide in English only has no copy to look for: the English, with the notice.
+  if (route.data['englishOnly']) return file('en').pipe(map((text) => ({ text, language: 'en' })));
   return file(language).pipe(
     map((text) => ({ text, language: null })),
     catchError(() => file('en').pipe(map((text) => ({ text, language: 'en' }))))

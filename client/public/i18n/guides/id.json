@@ -27,14 +27,19 @@
       "text": "Debu, respirator, pembersihan, bahan yang memerlukan kehati-hatian paling besar, dan ventilasi tungku."
     },
     "homeSafety": {
-      "title": "Jangan meracuni keluarga Anda",
+      "title": "Keamanan glasir di rumah: anak, hewan peliharaan, dan tungku",
       "text": "Membuat keramik di rumah bersama anak dan hewan peliharaan: penyimpanan, debu, tungku, dan apa yang harus dilakukan jika ada yang tertelan."
     },
     "firing": {
       "title": "Membakar di tungku sederhana",
       "text": "Kerucut, Kiln-Sitter, dan sakelar manual, dengan jadwal untuk pembakaran biskuit dan pembakaran glasir."
+    },
+    "learnWithJohnBritt": {
+      "title": "Belajar dengan kursus glasir gratis John Britt",
+      "text": "Kursus videonya yang gratis di YouTube, unit demi unit, dengan panduan kami untuk dibaca dan latihan untuk dicoba di Glazecalc. Dalam bahasa Inggris."
     }
   },
+  "more": "Panduan lainnya",
   "contents": "Di halaman ini",
   "poison": {
     "numbersFor": "Nomor untuk",

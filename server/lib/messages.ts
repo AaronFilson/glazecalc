@@ -18,6 +18,9 @@ const ONE =
   'additive {additive} advice {advice} firing {firing} material {material} note {note} recipe {recipe} trash {trash} other {record}';
 /** A sign-in provider (server/lib/oauth.ts), by its id: brand names, kept as they are. */
 const PROVIDER = '{provider, select, google {Google} github {GitHub} microsoft {Microsoft} other {the provider}}';
+/** A kind of record in a change waiting for approval, by its label. */
+const KIND =
+  '{kind, select, additive {additive} advice {piece of advice} firing {firing log} material {material} note {notebook entry} recipe {recipe} other {record}}';
 const MANY =
   'additive {additives} advice {pieces of advice} firing {firing logs} material {materials} note {notes} recipe {recipes} trash {items in the trash} other {records}';
 
@@ -148,6 +151,9 @@ export const MESSAGES = {
   'calendar-choices':
     'Dates can be shown in the Gregorian calendar (gregory), the Thai Buddhist era (buddhist) or Japanese eras (japanese).',
   'shelf-invalid': (p: Params) => 'The shelf is a list of up to ' + p.most + ' materials.',
+  'shelf-full': (p: Params) => 'The shelf can hold at most ' + p.most + ' materials. Nothing was changed.',
+  'shelf-material-unknown': 'That material is not in your materials or the Glazecalc library.',
+  'shelf-nothing-to-undo': 'There is no change to the shelf to undo.',
   'prices-invalid': (p: Params) =>
     'Prices are a list of up to ' + p.most + ' materials, each with a price per kilogram of 0 or more.',
 
@@ -194,6 +200,57 @@ export const MESSAGES = {
   'tokens-revoked':
     '{count, plural, =0 {No access tokens were working.} one {# access token was revoked.} other {# access tokens were revoked.}}',
   'token-not-found': 'No access token with that id.',
+  // Connecting an AI assistant (the consent page, server/oauth/interactions.ts).
+  'connect-not-found':
+    'This request to connect an app has ended or was already answered. Please start again in the app.',
+  'connect-trial': 'A trial cannot connect apps. Please create a free account first.',
+  'connect-needs-confirmed-email': 'Please confirm your email before connecting an app.',
+  'connect-decision': 'Please choose whether to allow the app.',
+
+  // Connected apps (server/routes/connection_routes.ts).
+  'connection-restored':
+    '{count, plural, =0 {Nothing was put back.} one {# record was put back from the Trash.} other {# records were put back from the Trash.}}',
+  'connection-restored-skipped':
+    '{count, plural, =0 {Nothing was put back.} one {# record was put back from the Trash.} other {# records were put back from the Trash.}} {skipped, plural, one {# was left in the Trash, because a record with the same id is already in its list.} other {# were left in the Trash, because records with the same ids are already in their lists.}}',
+
+  // Confirm before changes (server/lib/pending_changes.ts, docs/adr/0025-confirm-before-changes.md).
+  'confirm-setting-invalid':
+    'Please choose when changes from apps need your approval: never, only removals, or every change.',
+  'confirm-setting-saved': 'Saved. Changes from apps and access tokens now follow this choice.',
+  'confirmation-needed':
+    'Nothing changed yet. This account asks to approve changes made with access tokens: the person can approve this one on the Glazecalc website, at the address given, within {minutes, plural, one {# minute} other {# minutes}}, and it is made then. GET /api/pending-changes/ and its pendingId, with this token, says what came of it.',
+  'pending-too-many':
+    'Nothing was changed: {most} changes are already waiting for approval on this account. The person can approve or decline those first.',
+  'pending-too-many-app':
+    'Nothing was changed: {most} changes from this app or access token are already waiting for approval. The person can approve or decline those first.',
+  'pending-not-found':
+    'There is no change waiting at this address. It may have been decided already, or waited too long.',
+  'pending-waiting': 'This change is waiting for the person to approve it.',
+  'pending-declined': 'Nothing was changed: the person did not approve this change.',
+  'pending-token-gone':
+    'Nothing was changed: the app or access token that asked for it was revoked or has expired, or no longer allows it.',
+  'pending-conflict':
+    'Nothing was changed: what it would change was changed after it was asked for. Ask again if it is still wanted.',
+  'pending-failed': 'Nothing was changed: Glazecalc could not make this change because of a problem on its side.',
+  'pending-made': 'Done: the change was made.',
+  'pending-approved-all':
+    '{made, plural, =0 {No changes were made.} one {# change was made.} other {# changes were made.}}{notMade, plural, =0 {} one { # could not be made.} other { # could not be made.}}',
+  'pending-declined-all':
+    '{count, plural, =0 {No changes were waiting.} one {# change was declined: nothing was changed.} other {# changes were declined: nothing was changed.}}',
+  'pending-create': `Save a new ${KIND}{named, select, yes { “{title}”} other {}}.`,
+  'pending-change': `Change the ${KIND}{named, select, yes { “{title}”} other {}}: {fields}.`,
+  'pending-undo': `Undo the last change to the ${KIND}{named, select, yes { “{title}”} other {}}.`,
+  'pending-trash': `Move the ${KIND}{named, select, yes { “{title}”} other {}} to the Trash.`,
+  'pending-restore': `Put the ${KIND}{named, select, yes { “{title}”} other {}} back from the Trash.`,
+  'pending-shelf-add': 'Mark as on hand: {names}.',
+  'pending-shelf-remove': 'Take off the materials on hand: {names}.',
+  'pending-shelf-undo': 'Put the materials on hand back as they were before their last change.',
+  'pending-firing-link':
+    'Link the firing log{logNamed, select, yes { “{log}”} other {}} to the recipe{named, select, yes { “{title}”} other {}}.',
+  'pending-firing-change':
+    'Change the firing log{logNamed, select, yes { “{log}”} other {}} linked to the recipe{named, select, yes { “{title}”} other {}}: {fields}.',
+  'pending-firing-unlink':
+    'Take the firing log{logNamed, select, yes { “{log}”} other {}} off the recipe{named, select, yes { “{title}”} other {}}.',
 
   // Requests in general.
   'not-found': 'Not found',
@@ -215,7 +272,9 @@ export const MESSAGES = {
     'This access token has moved too many records to the Trash in the last hour. Please try again later.',
   'too-many-changes':
     'Too many changes were made to this account with access tokens. Please wait a while and try again; changes on the website still work.',
-  'too-many-mcp': 'Too many requests to the Glazecalc tools for AI assistants. ' + WAIT
+  'too-many-mcp': 'Too many requests to the Glazecalc tools for AI assistants. ' + WAIT,
+  'too-many-oauth': 'Too many requests to connect apps from this address. ' + WAIT,
+  'too-many-registrations': 'Too many apps registered themselves. Please try again later.'
 } satisfies Record<string, Text>;
 
 export type MessageCode = keyof typeof MESSAGES;

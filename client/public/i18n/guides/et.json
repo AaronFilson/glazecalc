@@ -27,14 +27,19 @@
       "text": "Tolm, respiraatorid, koristamine, kõige rohkem ettevaatust nõudvad toorained ja ahju aurude väljajuhtimine."
     },
     "homeSafety": {
-      "title": "Ärge mürgitage oma peret",
+      "title": "Glasuuriohutus kodus: lapsed, lemmikloomad ja keraamikaahi",
       "text": "Keraamika kodus laste ja lemmikloomadega: hoiustamine, tolm, ahi ja mida teha, kui midagi on alla neelatud."
     },
     "firing": {
       "title": "Põletamine lihtsas keraamikaahjus",
       "text": "Koonused, Kiln-Sitterid ja käsilülitid ning põletusprogrammid eel- ja glasuuripõletuseks."
+    },
+    "learnWithJohnBritt": {
+      "title": "Õppige John Britti tasuta glasuurikursusega",
+      "text": "Tema tasuta videokursus YouTube’is osade kaupa, koos Glazecalci juhenditega lugemiseks ja harjutustega Glazecalcis proovimiseks. Inglise keeles."
     }
   },
+  "more": "Rohkem juhendeid",
   "contents": "Sellel lehel",
   "poison": {
     "numbersFor": "Numbrid riigis:",

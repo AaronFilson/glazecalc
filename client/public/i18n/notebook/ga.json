@@ -76,7 +76,6 @@
     "removeField": "Bain an réimse",
     "addRow": "Cuir ró le tábla na bácála",
     "addRowWhy": "Cuir réimse leis ar dtús.",
-    "tableEmpty": "Cuir réimse leis thuas, agus ansin sraitheanna.",
     "recordHeading": "Taifead an bhácáil",
     "rowActions": "Gníomhartha an ró",
     "cell": "{field}, ró {row}",

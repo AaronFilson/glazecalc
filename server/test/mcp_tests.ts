@@ -6,7 +6,7 @@ import standardData from '../../data/index.js';
 import recipe from '../../lib/recipe/index.js';
 import { MOST_LINES, resetFits, FITS_PER_MINUTE, guarded, ToolProblem, UNEXPECTED } from '../mcp/common.ts';
 import { countTokenDelete, MCP_LIMITS, TOKEN_DELETES_PER_HOUR, TOKEN_WRITE_LIMITS } from '../lib/rate_limit.ts';
-import { READ_ONLY_TOKEN, TOO_MANY_CHANGES } from '../mcp/tools/account_write.ts';
+import { READ_ONLY_TOKEN, TOO_MANY_CHANGES, WRITE_TOOLS as STEP_UP_TOOLS } from '../mcp/tools/account_write.ts';
 import Activity from '../models/activity.ts';
 import Note from '../models/note.ts';
 import RecordVersion from '../models/record_version.ts';
@@ -128,6 +128,7 @@ const bearer = (token: string) => ({ authorization: 'Bearer ' + token });
 
 const PUBLIC_TOOLS = [
   'analyze_recipe',
+  'blend_recipes',
   'check_limits',
   'convert_cone_temperature',
   'get_material',
@@ -154,6 +155,7 @@ const WRITE_TOOLS = [
   'create_recipe',
   'move_to_trash',
   'remove_from_shelf',
+  'undo_shelf_change',
   'update_my_material',
   'update_recipe'
 ];
@@ -281,8 +283,10 @@ describe('MCP: the endpoint', () => {
       expect(res.status, path).to.equal(200);
       expect(await res.json()).to.deep.include({
         resource: 'https://glazecalc.test/mcp',
+        authorization_servers: ['https://glazecalc.test'],
         bearer_methods_supported: ['header'],
-        scopes_supported: ['data:read', 'data:write']
+        // Only data:read: changing records is asked for by stepping up (docs/adr/0024).
+        scopes_supported: ['data:read']
       });
     }
   });
@@ -372,6 +376,31 @@ describe('MCP: the public tools', () => {
     expect(badCone.content[0]!.text).to.include('06, 05');
     const badSet = await call('check_limits', { lines, limitSet: 'nope' });
     expect(badSet.isError).to.equal(true);
+  });
+
+  it('check_limits follows the account’s own limit set for a token that may read preferences, unless one is asked for', async () => {
+    const lines = [
+      { material: 'Custer Spar', amount: 70 },
+      { material: 'Whiting', amount: 10 },
+      { material: 'Silica', amount: 20 }
+    ];
+    const { user } = await makeUser();
+    const headers = bearer(await makeToken(user));
+    // Nothing saved: the account's default, the recipe page's (hesselberth-roy).
+    expect((await data('check_limits', { lines, firing: { cone: '6' } }, headers)).limitSet.id).to.equal(
+      'hesselberth-roy'
+    );
+    await User.updateOne({ _id: user._id }, { $set: { 'preferences.limitSet': 'glazecalc' } });
+    expect((await data('check_limits', { lines, firing: { cone: '6' } }, headers)).limitSet.id).to.equal('glazecalc');
+    await User.updateOne({ _id: user._id }, { $set: { 'preferences.limitSet': 'hesselberth-roy' } });
+    expect((await data('check_limits', { lines, firing: { cone: '6' } }, headers)).limitSet.id).to.equal(
+      'hesselberth-roy'
+    );
+    // An argument wins.
+    const asked = await data('check_limits', { lines, firing: { cone: '6' }, limitSet: 'glazecalc' }, headers);
+    expect(asked.limitSet.id).to.equal('glazecalc');
+    // No token, or a token that may not read preferences: the tool's own default.
+    expect((await data('check_limits', { lines, firing: { cone: '6' } })).limitSet.id).to.equal('glazecalc');
   });
 
   it('check_limits says whether the chemistry fits the firing given, with its figures and sources', async () => {
@@ -466,6 +495,120 @@ describe('MCP: the public tools', () => {
     for (const line of result.recipe) if (line.amount > 0) expect(allowed).to.include(line.material);
     const unknown = await call('match_from_materials', { lines: LINES, have: ['Moon dust'] });
     expect(unknown.isError).to.equal(true);
+  });
+});
+
+describe('MCP: blend_recipes', () => {
+  const GLOSSY = [
+    { material: 'Custer Spar', amount: 40 },
+    { material: 'Whiting', amount: 20 },
+    { material: 'EPK', amount: 15 },
+    { material: 'Silica', amount: 25 }
+  ];
+  const MATTE = [
+    { material: 'Custer Spar', amount: 30 },
+    { material: 'Dolomite', amount: 25 },
+    { material: 'EPK', amount: 25 },
+    { material: 'Silica', amount: 20 }
+  ];
+  const BORON = [
+    { material: 'Ferro Frit 3134', amount: 50 },
+    { material: 'EPK', amount: 20 },
+    { material: 'Silica', amount: 30 }
+  ];
+  const sum = (values: number[]) => values.reduce((a, b) => a + b, 0);
+
+  it('a line blend gives each tile its shares, percent recipe and chemistry, and says it is no test', async () => {
+    const result = await data('blend_recipes', { a: GLOSSY, b: MATTE, steps: 5 });
+    expect(result).to.include({ kind: 'line', steps: 5, tileCount: 5 });
+    expect(result.tiles).to.have.length(5);
+    expect(result.note).to.include('not a test result');
+    for (const tile of result.tiles) {
+      expect(sum(Object.values(tile.shares)), 'shares').to.be.closeTo(1, 1e-3);
+      expect(sum(tile.recipe.map((line: { percent: number }) => line.percent)), 'percent').to.be.closeTo(100, 0.1);
+      expect(tile.unity.SiO2).to.be.greaterThan(0);
+      expect(tile.cautions).to.be.an('array');
+      expect(tile).to.not.have.property('coneFit');
+    }
+    expect(result.tiles[0].shares).to.eql({ A: 1, B: 0 });
+    expect(result.tiles[4].shares).to.eql({ A: 0, B: 1 });
+    // The first tile is recipe A, whose chemistry analyze_recipe gives.
+    const a = await data('analyze_recipe', { lines: GLOSSY });
+    expect(result.tiles[0].unity.SiO2).to.equal(a.unityFormula.SiO2);
+    expect(result.tiles[0].silicaToAlumina).to.equal(a.silicaToAlumina);
+    expect(result.tiles[0].expansion).to.equal(a.expansion);
+    expect(result).to.not.have.property('differences');
+  });
+
+  it('a triaxial blend of n rows has n(n+1)/2 tiles with three shares each', async () => {
+    const result = await data('blend_recipes', { a: GLOSSY, b: MATTE, c: BORON, steps: 4 });
+    expect(result).to.include({ kind: 'triaxial', tileCount: 10 });
+    for (const tile of result.tiles) {
+      expect(Object.keys(tile.shares)).to.eql(['A', 'B', 'C']);
+      expect(sum(Object.values(tile.shares)), 'shares').to.be.closeTo(1, 1e-3);
+    }
+    expect(result.tiles[0].shares).to.eql({ A: 1, B: 0, C: 0 });
+    expect(result.tiles.at(-1).shares).to.eql({ A: 0, B: 0, C: 1 });
+    // Boron comes only from corner C, so it rises down the triangle.
+    expect(result.tiles[0].unity.B2O3).to.equal(0);
+    expect(result.tiles.at(-1).unity.B2O3).to.be.greaterThan(0);
+  });
+
+  it('takes a firing: a coneFit verdict on every tile, and the limit set chosen', async () => {
+    const result = await data('blend_recipes', {
+      a: GLOSSY,
+      b: BORON,
+      steps: 3,
+      firing: { cone: '6' },
+      limitSet: 'hesselberth-roy'
+    });
+    expect(result).to.include({ limitSet: 'hesselberth-roy', celsius: 1222 });
+    for (const tile of result.tiles) expect(tile.coneFit, 'tile ' + tile.number).to.be.a('string');
+    const other = await data('blend_recipes', { a: GLOSSY, b: BORON, steps: 3, firing: { cone: '6' } });
+    expect(other.limitSet).to.equal('glazecalc');
+    const bad = await call('blend_recipes', { a: GLOSSY, b: BORON, limitSet: 'nonsense' });
+    expect(bad.isError).to.equal(true);
+  });
+
+  it('names the cautions a tile has against the limits, as check_limits does', async () => {
+    const lean = [
+      { material: 'Custer Spar', amount: 85 },
+      { material: 'Whiting', amount: 15 }
+    ];
+    const result = await data('blend_recipes', { a: GLOSSY, b: lean, steps: 3, firing: { cone: '6' } });
+    const names = result.tiles.flatMap((tile: { cautions: string[] }) => tile.cautions);
+    expect(names.length).to.be.greaterThan(0);
+    const checked = await data('check_limits', { lines: lean, firing: { cone: '6' } });
+    const expected = [...new Set(checked.cautions.map((c: { check: string }) => c.check))];
+    expect(result.tiles[2].cautions).to.have.members(expected as string[]);
+  });
+
+  it('with two recipes and two steps it compares them, with the differences oxide by oxide', async () => {
+    const result = await data('blend_recipes', { a: GLOSSY, b: MATTE, steps: 2 });
+    expect(result.tileCount).to.equal(2);
+    const mg = result.differences.find((d: { what: string }) => d.what === 'MgO');
+    expect(mg.a).to.be.lessThan(0.01);
+    expect(mg.change).to.be.greaterThan(0.1);
+    for (const d of result.differences) expect(d.change).to.not.equal(0);
+    expect(result.differences.map((d: { what: string }) => d.what)).to.include('silicaToAlumina');
+  });
+
+  it('refuses bad input with words: unknown material, steps out of range, no amounts, no flux', async () => {
+    const moon = await call('blend_recipes', { a: GLOSSY, b: [{ material: 'Moon dust', amount: 1 }] });
+    expect(moon.isError).to.equal(true);
+    expect((await call('blend_recipes', { a: GLOSSY, b: MATTE, steps: 12 })).isError).to.equal(true);
+    expect((await call('blend_recipes', { a: GLOSSY, b: MATTE, steps: 1 })).isError).to.equal(true);
+    const triangle = await call('blend_recipes', { a: GLOSSY, b: MATTE, c: BORON, steps: 7 });
+    expect(triangle.isError).to.equal(true);
+    expect(triangle.content[0].text).to.include('at most 6');
+    const none = await call('blend_recipes', { a: GLOSSY, b: [{ material: 'Silica', amount: 0 }] });
+    expect(none.isError).to.equal(true);
+    expect(none.content[0].text).to.include('Recipe B');
+    const noFlux = await call('blend_recipes', { a: GLOSSY, b: [{ material: 'Silica', amount: 10 }] });
+    expect(noFlux.isError).to.equal(true);
+    expect(noFlux.content[0].text).to.include('Recipe B');
+    expect((await call('blend_recipes', { a: GLOSSY })).isError).to.equal(true);
+    expect((await call('blend_recipes', { a: GLOSSY, b: MATTE, firing: { cone: '99' } })).isError).to.equal(true);
   });
 });
 
@@ -566,6 +709,7 @@ describe('MCP: the guides, resources and prompts', () => {
       'glazecalc://guides/en/firing',
       'glazecalc://guides/en/glazing-basics',
       'glazecalc://guides/en/home-safety',
+      'glazecalc://guides/en/learn-with-john-britt',
       'glazecalc://guides/en/making-a-glaze',
       'glazecalc://guides/en/safe-mixing'
     ]);
@@ -625,15 +769,17 @@ describe('MCP: the guides, resources and prompts', () => {
     }
   });
 
-  it('offers four prompts, each naming the tools to use', async () => {
+  it('offers five prompts, each naming the tools to use', async () => {
     const { prompts } = await result('prompts/list');
     expect(prompts.map((p: Json) => p.name).sort()).to.eql([
       'diagnose_glaze_fault',
       'explain_recipe',
+      'glaze_course_lesson',
       'make_lead_free',
       'replace_discontinued'
     ]);
-    for (const prompt of prompts) {
+    // A lesson needs a unit; the recipe is the learner's own, if they have one.
+    for (const prompt of prompts.filter((p: Json) => p.name !== 'glaze_course_lesson')) {
       expect(prompt.description, prompt.name).to.have.length.above(40);
       expect(
         prompt.arguments.find((a: Json) => a.name === 'recipe'),
@@ -682,6 +828,65 @@ describe('MCP: the guides, resources and prompts', () => {
     expect((await rpc('prompts/get', { name: 'explain_recipe', arguments: {} })).body!.error).to.have.property('code');
   });
 
+  it("sets up a lesson from John Britt's course: his videos linked and credited, the guide sections attached", async () => {
+    const lesson = await result('prompts/get', {
+      name: 'glaze_course_lesson',
+      arguments: {
+        unit: 'blending',
+        recipe: 'Custer Spar 40, Silica 30, Whiting 20, EPK 10',
+        cone: '6',
+        language: 'de'
+      }
+    });
+    expect(lesson.description).to.equal('Unit 5: Blending and testing methods');
+    const [ask, ...attached] = lesson.messages;
+    const text: string = ask.content.text;
+    for (const part of [
+      'John Britt',
+      'johnbrittpottery.com',
+      'Understanding the Triaxial Blend (Free Online Glaze Course Part 9 Practical lab work): https://www.youtube.com/watch?v=PMwi9K6_fOk',
+      'Do not retell, summarise or quote',
+      'not connected with him',
+      'lab work',
+      'safe mixing guide',
+      'blend_recipes',
+      'Custer Spar 40',
+      'fired to 6',
+      'language: "de"',
+      'His videos are in English',
+      'leach test'
+    ]) {
+      expect(text).to.include(part);
+    }
+    // Twelve of his videos for this unit, and no embedding.
+    expect(text.match(/https:\/\/www\.youtube\.com\/watch\?v=/g)).to.have.length(12);
+    expect(text).not.to.match(/embed|iframe/i);
+    // The unit itself, the safe mixing habits first, then the sections it points to, in the language asked.
+    expect(attached.map((m: Json) => m.content.resource.uri)).to.eql([
+      'glazecalc://guides/de/learn-with-john-britt/blending',
+      'glazecalc://guides/de/safe-mixing/habits',
+      'glazecalc://guides/de/making-a-glaze/testing',
+      'glazecalc://guides/de/making-a-glaze/weighing'
+    ]);
+    for (const message of attached) expect(message.content.resource.mimeType).to.equal('text/markdown');
+
+    // By number, with no recipe; a unit that is not lab work starts with what it covers.
+    const first = await result('prompts/get', { name: 'glaze_course_lesson', arguments: { unit: '1' } });
+    expect(first.description).to.equal('Unit 1: The unity formula');
+    expect(first.messages[0].content.text).not.to.include('lab work');
+    expect(first.messages[0].content.text).not.to.include('My recipe');
+    expect(first.messages[0].content.text).not.to.include('His videos are in English: say so');
+    expect(first.messages.slice(1).map((m: Json) => m.content.resource.uri)).to.eql([
+      'glazecalc://guides/en/learn-with-john-britt/unity-formula',
+      'glazecalc://guides/en/glazing-basics/unity-formula',
+      'glazecalc://guides/en/glazing-basics/what-a-glaze-is'
+    ]);
+
+    const missing = await rpc('prompts/get', { name: 'glaze_course_lesson', arguments: { unit: 'pottery' } });
+    expect(missing.body!.error).to.have.property('code');
+    expect(JSON.stringify(missing.body!.error)).to.include('unity-formula');
+  });
+
   it('completes a fault, a guide and a language', async () => {
     const complete = async (ref: object, argument: object) =>
       ((await result('completion/complete', { ref, argument })).completion as Json).values;
@@ -690,6 +895,12 @@ describe('MCP: the guides, resources and prompts', () => {
       ['crawling', 'crazing']
     );
     expect(await complete(guides, { name: 'guide', value: 'f' })).to.eql(['firing']);
+    expect(await complete({ type: 'ref/prompt', name: 'glaze_course_lesson' }, { name: 'unit', value: 'b' })).to.eql([
+      'blending'
+    ]);
+    expect(
+      await complete({ type: 'ref/prompt', name: 'glaze_course_lesson' }, { name: 'unit', value: '' })
+    ).to.have.length(12);
     expect(await complete(guides, { name: 'language', value: 'zh' })).to.have.members(['zh-Hans', 'zh-Hant']);
   });
 });
@@ -701,6 +912,10 @@ describe('MCP: personal access tokens', () => {
     // The write tools too, so an assistant with a read-only token can say why it changes nothing.
     expect(await toolNames(bearer(token))).to.eql([...PUBLIC_TOOLS, ...ACCOUNT_TOOLS, ...WRITE_TOOLS].sort());
     expect((await AccessToken.findOne({ hash: hashToken(token) }))!.lastUsedAt).to.be.an.instanceOf(Date);
+  });
+
+  it('asks a read-only connected app to step up for every tool that changes records, and only those', () => {
+    expect([...STEP_UP_TOOLS].sort()).to.eql(WRITE_TOOLS);
   });
 
   it('answers a list tool that fails with the same plain refusal as the others, never the error', async () => {
@@ -1067,7 +1282,10 @@ describe('MCP: the write tools', () => {
       clientInfo: { name: 't', version: '1' }
     });
     const instructions = (init.body!.result as { instructions: string }).instructions;
-    expect(instructions).to.include('move_to_trash').and.include('read-only token').and.not.include('never change');
+    expect(instructions)
+      .to.include('move_to_trash')
+      .and.include('only when the person allowed changes')
+      .and.not.include('never change');
   });
 
   it('refuse a read-only token, changing nothing', async () => {
@@ -1086,6 +1304,7 @@ describe('MCP: the write tools', () => {
       ['update_my_material', { id, name: 'x' }],
       ['add_to_shelf', { materials: ['Silica'] }],
       ['remove_from_shelf', { materials: ['Silica'] }],
+      ['undo_shelf_change', {}],
       ['move_to_trash', { kind: 'recipe', id }]
     ];
     for (const [name, args] of calls) {
@@ -1253,6 +1472,37 @@ describe('MCP: the write tools', () => {
     expect((await User.findById(mine.user._id))!.shelf).to.have.length(2);
   });
 
+  it('keep the shelf as it was before a change, undo_shelf_change puts it back once, and each change is logged', async () => {
+    const nothing = await call('undo_shelf_change', {}, headers);
+    expect(nothing.isError).to.equal(true);
+    expect(nothing.content[0]!.text).to.include('no change to the shelf');
+    await data('add_to_shelf', { materials: ['Whiting'] }, headers);
+    const first = (await User.findById(mine.user._id))!.shelf!;
+    await data('add_to_shelf', { materials: ['Silica', 'EPK'] }, headers);
+    const shelf = (await User.findById(mine.user._id))!.shelf!;
+    expect(shelf).to.have.length(3);
+    // The new materials come after the earlier one, which Undo keeps.
+    expect(shelf[0]).to.equal(first[0]);
+    expect((await User.findById(mine.user._id))!.shelfPrevious).to.eql(first);
+    // Twice is once, and a change that changes nothing keeps the earlier list for Undo.
+    await data('add_to_shelf', { materials: ['Whiting'] }, headers);
+    expect((await User.findById(mine.user._id))!.shelfPrevious).to.eql(first);
+    const removed = await data('remove_from_shelf', { materials: ['Silica'] }, headers);
+    expect(removed.undo).to.include('undo_shelf_change');
+    expect((await User.findById(mine.user._id))!.shelfPrevious).to.eql(shelf);
+    const undone = await data('undo_shelf_change', {}, headers);
+    expect(undone).to.eql({ restored: true, materialsOnShelf: 3 });
+    expect((await User.findById(mine.user._id))!.shelf).to.eql(shelf);
+    expect((await call('undo_shelf_change', {}, headers)).isError).to.equal(true);
+    const lines = await Activity.find({ ownedBy, fromCollection: 'shelf' }).sort({ at: 1, _id: 1 }).lean();
+    expect(lines.map((l) => [l.action, l.title, l.via])).to.eql([
+      ['change', 'Whiting', 'pat'],
+      ['change', 'Silica, EPK Kaolin', 'pat'],
+      ['change', 'Silica', 'pat'],
+      ['undo', 'Shelf', 'pat']
+    ]);
+  });
+
   it('move_to_trash moves the account’s own record to the Trash, never deleting it', async () => {
     const { id } = await data('create_recipe', { title: 'Satin', lines: LINES }, headers);
     const shared = await api()
@@ -1263,6 +1513,9 @@ describe('MCP: the write tools', () => {
     expect(await Recipe.countDocuments({ _id: id })).to.equal(0);
     const entry = (await Trash.findOne({ ownedBy, recordId: id }).lean())!;
     expect(entry).to.include({ fromCollection: 'recipes', by: 'pat' });
+    // Marked with the token that moved it, as the activity line is, so Connected apps can list it.
+    const line = (await Activity.findOne({ ownedBy, action: 'trash', recordId: id }).lean())!;
+    expect(String(entry.tokenId)).to.equal(String(line.tokenId));
     // Its share link stopped.
     expect(shared).to.have.status(200);
     expect(await ShareLink.countDocuments({ recipeId: id })).to.equal(0);

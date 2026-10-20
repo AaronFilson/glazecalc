@@ -1,6 +1,7 @@
 // Reads the emails the server wrote with MAIL_TRANSPORT=file (see env.ts).
 import fs from 'node:fs';
 import path from 'node:path';
+import * as mailer from '../../lib/mailer.ts';
 
 export interface SentMail {
   from: string;
@@ -23,10 +24,16 @@ const all = (): SentMail[] => {
 /** Emails sent to an address so far. */
 export const to = (address: string): SentMail[] => all().filter((m) => m.to === address);
 
-/** Waits for the count of emails to an address to reach `count`, then returns them. */
-export const waitFor = async (address: string, count: number, ms = 3000): Promise<SentMail[]> => {
+/**
+ * Waits for the count of emails to an address to reach `count`, then returns them.
+ * The app sends a notice after its reply, so under load the file can come late: this
+ * first lets every send already started finish (mailer.idle), then polls for one still
+ * to start. It returns as soon as the mail is there; `ms` only bounds a mail that never comes.
+ */
+export const waitFor = async (address: string, count: number, ms = 10000): Promise<SentMail[]> => {
   const end = Date.now() + ms;
   for (;;) {
+    await mailer.idle();
     const found = to(address);
     if (found.length >= count || Date.now() > end) return found;
     await new Promise((resolve) => setTimeout(resolve, 25));

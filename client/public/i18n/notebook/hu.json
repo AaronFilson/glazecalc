@@ -76,7 +76,6 @@
     "removeField": "Mező eltávolítása",
     "addRow": "Sor hozzáadása az égetési táblázathoz",
     "addRowWhy": "Előbb adjon hozzá egy mezőt.",
-    "tableEmpty": "Adjon hozzá fent egy mezőt, majd sorokat.",
     "recordHeading": "Az égetés rögzítése",
     "rowActions": "Sorműveletek",
     "cell": "{field}, {row}. sor",

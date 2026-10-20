@@ -566,7 +566,7 @@
       "hesselberth-roy": "Odporúčané limity Johna Hesselbertha a Rona Roya pre stabilné glazúry na úžitkovej kamenine a porceláne, pre kužeľ 6 a kužeľ 10. Držia sa krátkeho zoznamu surovín, takže sada nemá rozsah pre bárium ani lítium, ani pre zinok pri kuželi 10.",
       "glazecalc": "Hodnoty, pri ktorých aplikácia varuje pri výmene surovín: bór, oxid hlinitý, sóda a potaš a pri nízkom výpale oxid horečnatý."
     },
-    "firing": "Výpal",
+    "firing": "Limity pre",
     "firingUnknown": "Nezvolené",
     "bands": {
       "low": "Nízky výpal, kužeľ 06 – 02",
@@ -596,6 +596,8 @@
     "saveFailed": "Vašu voľbu sady limitov sa nepodarilo uložiť do účtu, takže stále platí skoršia sada.",
     "ownLimits": "Tieto návrhy používajú vlastné limity Glazecalc, nie {name}.",
     "firingFromBlock": "Podľa výpalu receptu ({bands})",
+    "firingFromBlockText": "Z výpalu receptu: {bands}",
+    "chooseAnother": "Zvoliť iný",
     "bothBands": "Výpal receptu zahŕňa {bands}, preto sa každé pásmo kontroluje zvlášť, vedľa seba: glazúra sa na oboch koncoch správa rovnako len zriedka.",
     "fromFiring": "Hodnoty platia pre výpal receptu: {band}. Ak chcete skontrolovať iný, vyberte iný výpal vyššie."
   },
@@ -801,6 +803,18 @@
     "saveHelp": "Na obrázku vyššie zaškrtnite doštičky, ktoré chcete zachovať. Každá sa uloží ako recept v percentách.",
     "nameLabel": "Názov uložených doštičiek",
     "defaultName": "Zmes: {titles}",
+    "chemistry": {
+      "heading": "Chémia každej doštičky",
+      "help": "Vypočítané z receptov, ako orientácia. Čo sa naozaj stane, ukážu vypálené doštičky.",
+      "firing": "Upozornenia a zhoda s kužeľom sa riadia výpalom receptu {letter}.",
+      "tile": "Doštička",
+      "cautions": "Upozornenia",
+      "coneFit": "Zhoda s kužeľom",
+      "fits": "Nič proti",
+      "cooler": "Vyzerá chladnejšie",
+      "hotter": "Vyzerá teplejšie",
+      "skipped": "Neposúdené"
+    },
     "chooseAll": "Vybrať všetky doštičky",
     "chooseNone": "Nevybrať žiadnu",
     "save": "{count, plural, =0 {Uložiť vybrané doštičky} one {Uložiť # doštičku} few {Uložiť # doštičky} many {Uložiť # doštičky} other {Uložiť # doštičiek}}",
@@ -890,6 +904,8 @@
   },
   "firing": {
     "heading": "Výpal",
+    "summary": "Výpal: {what}",
+    "summaryNone": "Výpal: nenastavený",
     "whatIsCone": "Čo znamená kužeľ?",
     "scale": "Stupnica",
     "scales": {
