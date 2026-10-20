@@ -604,6 +604,7 @@ const LANGUAGES = {
       translate: [
         "Style sheet and glossary: docs/translations/hi.md. Every term as it gives it; where a row says Native check, use the row's choice and list the sentence in your flags for the reviewer.",
         "आप and its verb forms; the potters' loanwords first, with CSTT's term in brackets only where the style sheet says; the reader's gender never guessed, as the style sheet says.",
+        'A sentence ends with the Latin full stop "." (no space before it), never the danda "।": the owner\'s choice.',
         "Numbers: the digits 0 to 9 only, never Devanagari digits (०१२), लाख or करोड़; 1.5 with a point and the English's figures as it writes them; 5% and units as the English writes them (10 g, 1222 °C). A number the English writes as a word stays a word (दो परतें), since a digit would be a figure the English lacks. Dates 14 अक्टूबर 2026; times on the 24-hour clock (20:00), never सुबह, शाम or रात with a 12-hour figure.",
         'Plural forms: `one` and `other` in every plural message, `one` reading right for 0 as well as 1; keep `=0` where the English has it.',
         'Cones: Orton cones are Orton wherever the English says Orton; SK cones are SK with the number as printed; Seger only where the English says Seger; the Seger formula (UMF) is never a cone. Never give an SK number for an Orton number or the reverse, nor say they are equal. "One number hotter/cooler" as the style sheet gives it, never higher or lower.',
@@ -615,7 +616,8 @@ const LANGUAGES = {
         'Hindi: "at most", "no more than" and "up to" use the law\'s words for at most (अधिकतम, से अधिक नहीं) and never "less than" or "under" (से कम); "at least" (कम से कम) never "more than". A slip here moves a legal limit. Check every one in the food-contact, silica and safety text.',
         'Hindi: the digits 0 to 9 only, never Devanagari digits, लाख or करोड़; units and figures as the English writes them; a number the English writes as a word stays a word; times on the 24-hour clock; `one` and `other` in every plural message, `one` reading right for 0.',
         "Hindi: आप throughout; the potters' loanwords and CSTT's bracketed terms as the style sheet gives them; no guess at the reader's gender; SK cones written \"SK\" as printed, Orton cones named Orton, no SK number given for an Orton number or the reverse; specific gravity as the style sheet's relative-density word with the English's figure.",
-        'Hindi: should, must and may kept apart; no emphasis the English lacks; no should turned into must and no may dropped.'
+        'Hindi: should, must and may kept apart; no emphasis the English lacks; no should turned into must and no may dropped.',
+        'Hindi: every sentence ends with the Latin full stop ".", never the danda "।" (the owner\'s choice).'
       ],
       backtranslate: [
         'अधिकतम and से अधिक नहीं mean "at most" (the limit itself passes); से कम means "less than" (it does not). Translate each back exactly as it reads: a limit that moved from one to the other is a difference in meaning.',

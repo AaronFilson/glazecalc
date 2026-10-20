@@ -115,10 +115,9 @@ source.**
 
 These are the questions this sheet cannot settle from sources; each has a recommendation, used below until answered.
 
-- **The full stop or the danda:** sentences end in the Latin full stop **"."**, as Microsoft's Hindi style guide requires
-  (4.1.12) and Google's Hindi help pages write, in the interface and the guides alike. The danda **"।"** is the standard of
-  print, NCERT, the Gazette and the Hindi Wikipedia; if the owner prefers it, it replaces every sentence-ending "." in the
-  Hindi files at once (never one file in one style and one in the other). Recommended: ".".
+- **The full stop or the danda (decided):** sentences end in the Latin full stop **"."**, as Microsoft's Hindi style guide
+  requires (4.1.12) and Google's Hindi help pages write, in the interface and the guides alike: the owner's choice,
+  2026-10-20. The danda **"।"** (the standard of print, NCERT, the Gazette and the Hindi Wikipedia) is never used.
 - **The four tiers** (above): loanwords for craft words, the bag's names for materials, NCERT's Hindi for chemistry, plain
   Hindi for safety. Recommended.
 - **Kiln:** **किल्न**, with (भट्ठी) at its first use in each guide section. In everyday Hindi भट्टी is a cooking stove or a
@@ -206,8 +205,7 @@ name, a trademark (Kiln-Sitter, Zircopax), a company or brand (Google, Skutt), a
 ### Punctuation
 
 - **The full stop "."** ends a sentence (MS 4.1.12; Google), with no space before it and one after: "ग्लेज़ बह जाता है." A
-  heading, a button and a list item that is not a sentence end with nothing. See "Choices": the danda "।" is the
-  alternative, used everywhere or nowhere.
+  heading, a button and a list item that is not a sentence end with nothing. Never the danda "।" (the owner's choice).
 - **Comma, question mark, colon, semicolon, exclamation mark** as in English, no space before them. No "!" in the app's own
   voice.
 - **Quotation marks:** “ ” for quotations and for a word quoted (“बोरॉन ब्लू”), ‘ ’ inside them. **UI names in running
