@@ -4,7 +4,7 @@ The regions of the plan for the subcontinent and Arabic (round 6, 2026-10-20), a
 method of docs/asia-plan.md, Phase C: every entry has its source, its check date and a status, no unverified
 safety value is shown, and what could not be read is left out and said to be unconfirmed. Languages come later
 (Arabic and Hindi first, then Urdu and Bengali); the groundwork (digits, right to left, fonts, the grouped
-pickers) is on its own branches.
+pickers, whose region list gains an Africa group with these regions) is on its own branches.
 
 **Done 2026-10-20** (branch r6-regions-c1, English only): India, Pakistan, Bangladesh, Egypt, the United Arab
 Emirates, Morocco and Algeria. Saudi Arabia is not added (the owner's decision). Iraq, Jordan, Tunisia, Sri Lanka
@@ -17,8 +17,10 @@ and Nepal are later (C3).
   by temperature, with cones one tap away.
 - Languages, the most used first: India `hi`, `en`; Pakistan `ur`, `en`; Bangladesh `bn`; Egypt `ar`; the
   UAE `ar`, `en`; Morocco and Algeria `ar`, `fr`. None of `hi`, `ur`, `bn` or `ar` is live yet, so no live
-  language's pages change: French pages are still written for France, and English for no region. Arabic
-  pages, once live, are written for Egypt, the first region listing Arabic.
+  language's pages change: French pages are still written for France, and English for no region. Once
+  live, Arabic pages are written for Egypt, Hindi and Tamil for India, Urdu for Pakistan and Bengali for
+  Bangladesh (`COUNTRY_OF` in client/app/core/first-render.ts, which waited for these regions). Egypt's digits
+  are Arabic-Indic in Arabic and 0–9 in English (`DIGITS` in lib/regions).
 - India's silica: none shown; the page says no national limit was found, each state sets its own, and
   links DGOSH. India's food contact: none shown (IS 9806 is voluntary).
 - Pakistan: Rescue 1122 as one entry, its note saying each province runs its own (read for Punjab; Khyber
@@ -56,7 +58,8 @@ lib/regions: verified (the law's own text or an official page, an archive's copy
   Punjab; any silica limit, agency, mask standard, food rule or shop.
 - **BD:** a poison centre (none found); 999's roles on an official page; the ambulance's charge.
 - **EG:** Ain Shams's Clinical Toxicology Center (no hours, or that it advises the public by phone); 112 and
-  911; Decree 211/2003's annex and ES 6528/2008; ES 7809-2's values.
+  911; Decree 211/2003's annex and ES 6528/2008; ES 7809-2's values; "Clay Supply" in Fustat, Cairo (a lead from
+  the Arabic glossary work), whose own site could not be found (claysupply.com is a parked page).
 - **AE:** Abu Dhabi's Poison and Drug Information Service, 800-424 (the owner's decision: one emirate's, and
   its page now says it serves health professionals); the federal ministry's site.
 - **MA:** whether 0801 000 180 answers from abroad (so the other number is linked in its international form);
