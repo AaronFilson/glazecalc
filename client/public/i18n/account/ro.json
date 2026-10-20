@@ -302,17 +302,14 @@
     "cones": {
       "legend": "Ardere",
       "orton": {
-        "label": "La conuri Orton",
         "example": "conul 04, conul 6",
         "saved": "S-a salvat: arderea la conuri Orton."
       },
       "sk": {
-        "label": "La conuri SK, JIS R 8101",
         "example": "SK 4a, SK 8",
         "saved": "S-a salvat: arderea la conuri SK."
       },
       "temperature": {
-        "label": "După temperatură, ca în programul unui controler de cuptor",
         "saved": "S-a salvat: arderea după temperatură."
       },
       "help": "Până când alegeți, aceasta urmează regiunea: conuri Orton în Statele Unite, Regatul Unit, Irlanda, Australia și Noua Zeelandă, conuri SK în Japonia, temperatura în restul Europei."
@@ -462,8 +459,6 @@
     "heading": "Tokenuri de acces",
     "intro": "Un token de acces permite propriului dumneavoastră asistent AI sau script să citească rețetele, materiile prime, notițele și jurnalele de ardere din contul dumneavoastră și, dacă alegeți, să le modifice. Fiecare token încetează să funcționeze în ziua pe care o alegeți sau imediat ce îl revocați.",
     "howTo": "Cum conectați un asistent AI",
-    "listLabel": "Tokenurile dumneavoastră de acces",
-    "none": "Nu aveți niciun token de acces.",
     "hint": "se termină cu {hint}",
     "readOnly": "Doar citire",
     "readWrite": "Citire și modificare",
@@ -490,7 +485,6 @@
     "resend": "Trimiteți din nou linkul de confirmare",
     "scopeNote": "Tokenul poate citi înregistrările dumneavoastră, dar nu le poate schimba.",
     "scope": "Ce poate face",
-    "scopeWriteNote": "Tokenul poate și să salveze înregistrări noi, să le modifice și să le mute în coșul de reciclare. Fiecare modificare păstrează înregistrarea așa cum era, deci o puteți anula, iar ce a făcut tokenul se află în „Descărcați datele mele”. Alegeți aceasta numai pentru un asistent sau un script în care aveți încredere să vă modifice înregistrările.",
     "confirmStep": "Ca să creați tokenul, confirmați că sunteți dumneavoastră.",
     "create": "Creați tokenul",
     "failed": "Eroare: tokenul nu a putut fi creat. Încercați din nou.",

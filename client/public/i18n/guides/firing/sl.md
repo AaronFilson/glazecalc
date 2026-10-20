@@ -281,33 +281,33 @@ Label: Popravki naslednjega žganja
 
 :::sk
 
-## Žganje po stožcih SK {#sk-cones}
+## Firing to SK cones {#sk-cones lang=en}
 
-Stožci SK so pirometrični stožci, izdelani po japonskem standardu JIS R 8101, na Japonskem pa jih prodajajo trgovci, kot je Yuko Trading (有恒商事). Kot vsak stožec tudi stožec SK meri toplotno delo{{en: heatwork}}, ne le temperaturo: zmehča se in upogne, ko izdelki dobijo dovolj toplote, vi pa odčitate, kako daleč se je upognil. Kontrolni stožci{{en: witness cone}}, odčitavanje, kako daleč se je stožec upognil, in zadržanja{{en: hold}} delujejo zanj enako kot za vsak stožec. Ta razdelek pri vsakem stožcu navede njegov sistem in številke SK nikoli ne pretvori v številko drugega sistema: številke različnih serij stožcev niso medsebojno zamenljive.
+SK cones are the pyrometric cones made to Japan's standard, JIS R 8101, and sold in Japan by dealers such as Yuko Trading (有恒商事). Like any cone, an SK cone measures heatwork, not temperature alone: it softens and bends over when the ware has had enough heat, and you read how far it bent. Witness cones, reading how far a cone has bent, and holds work for it as for any cone. This section names each cone's system, and never turns an SK number into another system's number: the numbers of different cone series are not interchangeable.
 
 > [!NOTE]
-> Pred številko vedno pišite »SK«. Veliko starejših japonskih receptov pravi samo »SK 8« ali »SK 9«, ne da bi povedali, čigav stožec je mišljen. Kjotski stožci in stožci SK po JIS imajo enake številke, vendar se upognejo pri različnih temperaturah (glejte spodaj razdelek Kjotski stožci).
+> Always write "SK" before the number. Many older Japanese recipes say only "SK 8" or "SK 9" without saying whose cone. Kyoto cones and SK cones to JIS carry the same numbers but bend at different temperatures (see Kyoto cones, below).
 
-### Veliki stožci
+### The large cones
 
-Standard ima dve velikosti. Veliki stožci (大型コーン) se »uporabljajo predvsem za merjenje stopnje žganja« (焼度測定), kar keramik potrebuje. Mali stožci (od SK 26 do SK 42, na vrhu razpona) se »uporabljajo predvsem za preskuse ognjevzdržnosti« in tu niso zajeti. Spodnja preglednica navaja velike stožce od SK 022 do SK 20.
+The standard has two sizes. Large cones (大型コーン) are "mainly used for measuring the degree of firing" (焼度測定), which is what a potter wants. Small cones (SK 26 to SK 42, at the top of the range) are "mainly used for refractoriness tests" and are not covered here. The table below gives the large cones from SK 022 to SK 20.
 
-Številke tu tečejo od SK 022, najhladnejšega, do SK 20. Med SK 015 in SK 6 imajo natisnjene številke »a« (SK 015a, SK 6a); pišite ga tako, kot je natisnjen.
+The numbers run from SK 022, the coolest, up to SK 20 here. Between SK 015 and SK 6 the printed numbers carry an "a" (SK 015a, SK 6a); write it as printed.
 
-### Postavitev velikih stožcev
+### Setting large cones
 
-Vsak velik stožec postavite v podstavek ali v kepico gline, nagnjen proti svoji upogibni strani. Kot pri vsakem stožcu ohranjajte višino in naklon od žganja do žganja enaka, saj razlika v enem ali drugem spremeni, kako daleč se stožec upogne. Tri stožce niza (spodaj) postavite skupaj, globoko v peč blizu sredine vsebine peči, kjer dobijo toploto, ki jo dobijo izdelki, a vendar tja, kjer jih vidite skozi opazovalno odprtino; preden zaprete peč, preverite, ali vidite vse tri.
+Set each large cone in a plaque or a pat of clay, leaning toward its bending face. As with any cone, keep the height and the lean the same from firing to firing, because a difference in either changes how far it bends. Set the three cones of the pack (below) together, deep in the kiln near the middle of the load, where they get the heat the ware gets, yet where you can see them through a peephole; before you close the kiln, check that you can see all three.
 
-### Vodilni, ciljni in varovalni stožec
+### Guide, firing and guard cones
 
-Stožci se prodajajo in postavljajo po trije: vodilni stožec, ciljni stožec pri želeni stopnji in varovalni stožec. Za ciljni stožec vzemite številko SK, ki jo navaja vaš recept ali glina, za vodilnega naslednji hladnejši stožec (ena vrstica višje v preglednici), za varovalnega pa naslednji vročejši. Ko se vodilni stožec začne upogibati, je konec blizu; ko se upogne varovalni stožec, je žganje šlo predaleč.
+Cones are sold and set as three: a guide cone, a firing cone at the target, and a guard cone. Take the firing cone as the SK number your recipe or clay names, the guide cone as the next cooler cone (one row up in the table) and the guard cone as the next hotter one. When the guide cone starts to bend, the end is near; when the guard cone bends, the firing has gone too far.
 
-### Preglednica stožcev SK
+### The SK chart
 
-Table: Veliki stožci SK (JIS R 8101): nazivna temperatura (JIS) vsakega
-Label: Preglednica stožcev SK
+Table: SK large cones (JIS R 8101): the nominal (JIS) temperature of each
+Label: SK chart
 
-| Stožec  | Nazivna temperatura (JIS) |
+| Cone    | Nominal (JIS) temperature |
 | ------- | ------------------------: |
 | SK 022  |       {{1112 °F; 600 °C}} |
 | SK 021  |       {{1202 °F; 650 °C}} |
@@ -352,21 +352,21 @@ Label: Preglednica stožcev SK
 | SK 19   |      {{2768 °F; 1520 °C}} |
 | SK 20   |      {{2786 °F; 1530 °C}} |
 
-Vsaka vrednost je nazivna (JIS): temperatura, ki jo standard navaja za stožec, kot je natisnjena v preglednici podjetja Yuko Trading. Preglednica ne navaja hitrosti segrevanja. Standard navaja referenčne temperature. Pri hitrosti, običajni v keramični delavnici, okoli 100 °C/h, je kjotski mestni inštitut izmeril, da se njegovi lastni kjotski stožci upognejo 47–79 °C hladneje od vrednosti JIS za isto številko; takih meritev za stožce SK po JIS nismo našli. Postavite kontrolni stožec in primerjajte.
+Every figure is nominal (JIS): the temperature the standard gives for the cone, as printed in Yuko Trading's table. The table does not print a heating rate. The standard gives reference temperatures. At a potter's rate of about 100 °C/h, Kyoto's municipal institute measured its own Kyoto cones bending 47–79 °C cooler than the JIS figure for the same number; we found no such measurements for SK cones to JIS. Set a witness cone and compare.
 
-### Kjotski stožci
+### Kyoto cones
 
-Kjotskih stožcev (京都ゼーゲル), ki jih je izdeloval kjotski mestni inštitut, ne izdelujejo več: po poročanju medijev je inštitut proizvodnjo ustavil ob koncu poslovnega leta 2009. Imajo enake številke kot stožci SK po JIS, vendar se upognejo hladneje: kjotski stožec se upogne pri približno temperaturi stožca SK po JIS, ki je za dve ali tri številke hladnejši. Recept iz Kjota, ki pravi »SK 8«, morda misli na kjotski stožec. Inštitut je objavil nasvete za keramike, ki s kjotskih stožcev prehajajo na Ortonove stožce, in namesto svojega kjotskega SK 12 uporablja Ortonov stožec 10; to je izbira inštituta na podlagi njegovih lastnih meritev pri 100 °C/h in ne velja za noben drug stožec.
+Kyoto cones (京都ゼーゲル), made by Kyoto's municipal institute, are no longer made: news reports say the institute ended production at the close of fiscal 2009. They carry the same numbers as SK cones to JIS but bend cooler: a Kyoto cone bends at about the temperature of the SK cone to JIS two or three numbers lower. A recipe from Kyoto that says "SK 8" may mean a Kyoto cone. The institute has published advice for potters moving from Kyoto cones to Orton cones, and substitutes Orton cone 10 for its own Kyoto SK 12. That is the institute's choice from its own measurements: it bent Kyoto cones and Orton cones in the same kiln at 100 °C/h, and Kyoto SK 12 (1290 °C) bent where Orton 10 (1290 °C) did. In the same table Kyoto SK 8 (1198 °C) bent near Orton 5 (1207 °C), and Kyoto SK 10 (1232 °C) where Orton 7 (1232 °C) did. Glazecalc uses this table, not the Orton chart at 60 °C/h, when it shows an SK cone beside an Orton cone, and says each match is approximate.
 
-### Ortonovi stožci, ki se prodajajo na Japonskem
+### Orton cones sold in Japan
 
-Ortonovi samostoječi stožci se na Japonskem prodajajo pod imenom 立つゼーゲル (»stoječi Seger«), ker ne potrebujejo ne podstavka ne stojala. So Ortonovi stožci, z Ortonovimi številkami in Ortonovo preglednico (zgoraj): do takega stožca žgite samo po njegovi Ortonovi številki, stožce SK in Ortonove stožce pa imejte v ločenih nizih, nikoli v istem.
+Orton self-supporting cones are sold in Japan under the name 立つゼーゲル ("standing Seger"), because they need no plaque or stand. They are Orton cones, with Orton's numbers and Orton's chart (above): fire to one only by its Orton number, and keep SK and Orton cones in separate packs, never in the same one.
 
-### Viri za stožce SK
+### Sources for SK cones
 
-- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (preglednica stožcev SK, preverjeno 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
-- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (veljaven, ponovno potrjen 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
-- [Kyoto Municipal Institute of Industrial Technology and Culture: na kaj paziti pri prehodu s kjotskih stožcev na Ortonove stožce](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
+- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (the SK table, checked 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
+- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (in force, reconfirmed 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
+- [Kyoto Municipal Institute of Industrial Technology and Culture: points to note when moving from Kyoto cones to Orton cones](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
 
 :::
 

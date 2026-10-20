@@ -302,17 +302,14 @@
     "cones": {
       "legend": "Pečenje",
       "orton": {
-        "label": "Na Ortonove stošce",
         "example": "stožac 04, stožac 6",
         "saved": "Spremljeno: pečenje na Ortonove stošce."
       },
       "sk": {
-        "label": "Na stošce SK, JIS R 8101",
         "example": "SK 4a, SK 8",
         "saved": "Spremljeno: pečenje na stošce SK."
       },
       "temperature": {
-        "label": "Po temperaturi, kao u programu regulatora peći",
         "saved": "Spremljeno: pečenje po temperaturi."
       },
       "help": "Dok ne odaberete, ovo prati vašu regiju: Ortonovi stošci u SAD-u, Ujedinjenom Kraljevstvu, Irskoj, Australiji i na Novom Zelandu, stošci SK u Japanu, temperatura u ostatku Europe."
@@ -462,8 +459,6 @@
     "heading": "Pristupni tokeni",
     "intro": "Pristupni token omogućuje vašem AI asistentu ili skripti da čita recepte, sirovine, bilješke i zapisnike pečenja na vašem računu i, ako tako odaberete, da ih mijenja. Svaki token prestaje raditi na dan koji odaberete ili čim ga opozovete.",
     "howTo": "Kako povezati AI asistenta",
-    "listLabel": "Vaši pristupni tokeni",
-    "none": "Nemate pristupnih tokena.",
     "hint": "završava na {hint}",
     "readOnly": "Samo za čitanje",
     "readWrite": "Čitanje i mijenjanje",
@@ -490,7 +485,6 @@
     "resend": "Ponovno pošalji poveznicu za potvrdu",
     "scopeNote": "Token može čitati vaše zapise, ali ih ne može mijenjati.",
     "scope": "Što smije raditi",
-    "scopeWriteNote": "Token može i spremati nove zapise, mijenjati ih i premještati u Koš za smeće. Svaka promjena čuva zapis onakvim kakav je bio, pa je možete poništiti, a što je token učinio, nalazi se u funkciji Preuzimanje mojih podataka. Odaberite to samo za asistenta ili skriptu kojima vjerujete dovoljno da im dopustite mijenjati vaše zapise.",
     "confirmStep": "Da biste izradili token, potvrdite da ste to vi.",
     "create": "Izradi token",
     "failed": "Pogreška: ne možemo izraditi token. Pokušajte ponovno.",

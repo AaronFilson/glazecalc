@@ -76,7 +76,6 @@
     "removeField": "移除字段",
     "addRow": "在烧窑表中添加一行",
     "addRowWhy": "先添加一个字段。",
-    "tableEmpty": "先在上方添加字段，然后添加行。",
     "recordHeading": "记录烧窑",
     "rowActions": "行操作",
     "cell": "{field}，第 {row} 行",

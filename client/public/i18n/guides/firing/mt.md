@@ -281,92 +281,92 @@ L-**aġġustament tal-kon** huwa ssettjar tal-kontrollur li jgħolli jew ibaxxi 
 
 :::sk
 
-## Il-ħami bil-koni SK {#sk-cones}
+## Firing to SK cones {#sk-cones lang=en}
 
-Il-koni SK huma l-koni pirometriċi magħmulin skont l-istandard tal-Ġappun, JIS R 8101, u mibjugħin fil-Ġappun minn negozjanti bħal Yuko Trading (有恒商事). Bħal kull kon{{en: cone}}, kon SK ikejjel ix-xogħol tas-sħana{{en: heatwork}}, mhux it-temperatura biss: jirtab u jitgħawweġ meta l-oġġetti jkunu ħadu biżżejjed sħana, u int taqra kemm tgħawweġ. Il-koni xhieda{{en: witness cone}}, il-qari ta’ kemm tgħawweġ kon, u ż-żamma f’temperatura{{en: hold}} jaħdmu għalih bħal għal kull kon ieħor. Din it-taqsima ssemmi s-sistema ta’ kull kon, u qatt ma tibdel numru SK f’numru ta’ sistema oħra: in-numri ta’ serje differenti ta’ koni ma jistgħux jinbidlu ma’ xulxin.
+SK cones are the pyrometric cones made to Japan's standard, JIS R 8101, and sold in Japan by dealers such as Yuko Trading (有恒商事). Like any cone, an SK cone measures heatwork, not temperature alone: it softens and bends over when the ware has had enough heat, and you read how far it bent. Witness cones, reading how far a cone has bent, and holds work for it as for any cone. This section names each cone's system, and never turns an SK number into another system's number: the numbers of different cone series are not interchangeable.
 
 > [!NOTE]
-> Dejjem ikteb “SK” qabel in-numru. Ħafna riċetti Ġappuniżi antiki jgħidu biss “SK 8” jew “SK 9”, mingħajr ma jgħidu ta’ min hu l-kon. Il-koni ta’ Kyoto u l-koni SK skont il-JIS għandhom l-istess numri, iżda jitgħawġu f’temperaturi differenti (ara l-koni ta’ Kyoto, hawn taħt).
+> Always write "SK" before the number. Many older Japanese recipes say only "SK 8" or "SK 9" without saying whose cone. Kyoto cones and SK cones to JIS carry the same numbers but bend at different temperatures (see Kyoto cones, below).
 
-### Il-koni l-kbar
+### The large cones
 
-L-istandard għandu żewġ daqsijiet. Il-koni l-kbar (大型コーン) “jintużaw l-aktar biex jitkejjel il-grad tal-ħami” (焼度測定), u dan hu li jrid fuħħari. Il-koni ż-żgħar (minn SK 26 sa SK 42, fil-quċċata tal-firxa) “jintużaw l-aktar għat-testijiet tar-reżistenza għas-sħana”, u mhumiex koperti hawn. It-tabella hawn taħt tagħti l-koni l-kbar minn SK 022 sa SK 20.
+The standard has two sizes. Large cones (大型コーン) are "mainly used for measuring the degree of firing" (焼度測定), which is what a potter wants. Small cones (SK 26 to SK 42, at the top of the range) are "mainly used for refractoriness tests" and are not covered here. The table below gives the large cones from SK 022 to SK 20.
 
-Hawn in-numri jibdew minn SK 022, l-aktar kiesaħ, u jaslu sa SK 20. Minn SK 015 sa SK 6 in-numri stampati għandhom “a” (SK 015a, SK 6a); iktibhom kif inhuma stampati.
+The numbers run from SK 022, the coolest, up to SK 20 here. Between SK 015 and SK 6 the printed numbers carry an "a" (SK 015a, SK 6a); write it as printed.
 
-### Kif tqiegħed il-koni l-kbar
+### Setting large cones
 
-Qiegħed kull kon kbir f’bażi tal-koni jew f’ftit tafal, inklinat lejn il-wiċċ tat-tgħawwiġ tiegħu. Bħal ma tagħmel ma’ kull kon, żomm l-għoli u l-inklinazzjoni l-istess minn ħamja għal oħra, għax differenza f’xi waħda minnhom tibdel kemm jitgħawweġ. Qiegħed it-tliet koni tas-sett{{en: cone pack}} (ara hawn taħt) flimkien, fil-fond tal-forn, qrib in-nofs ta’ dak li hemm fil-forn, fejn jieħdu s-sħana li jieħdu l-oġġetti, iżda fejn tista’ tarahom minn toqba tal-ħarsa; qabel ma tagħlaq il-forn, iċċekkja li tista’ tara t-tlieta.
+Set each large cone in a plaque or a pat of clay, leaning toward its bending face. As with any cone, keep the height and the lean the same from firing to firing, because a difference in either changes how far it bends. Set the three cones of the pack (below) together, deep in the kiln near the middle of the load, where they get the heat the ware gets, yet where you can see them through a peephole; before you close the kiln, check that you can see all three.
 
-### Il-kon ta’ twissija, il-kon tal-mira u l-kon ta’ kontroll
+### Guide, firing and guard cones
 
-Il-koni jinbiegħu u jitqiegħdu fi tlieta: kon ta’ twissija, kon tal-mira fil-mira, u kon ta’ kontroll. Ħu bħala kon tal-mira n-numru SK li ssemmi r-riċetta jew it-tafal tiegħek, bħala kon ta’ twissija l-kon li jmiss aktar kiesaħ (ringiela waħda ’l fuq fit-tabella), u bħala kon ta’ kontroll dak li jmiss aktar sħun. Meta l-kon ta’ twissija jibda jitgħawweġ, it-tmiem ikun qrib; meta jitgħawweġ il-kon ta’ kontroll, il-ħamja tkun marret iżżejjed.
+Cones are sold and set as three: a guide cone, a firing cone at the target, and a guard cone. Take the firing cone as the SK number your recipe or clay names, the guide cone as the next cooler cone (one row up in the table) and the guard cone as the next hotter one. When the guide cone starts to bend, the end is near; when the guard cone bends, the firing has gone too far.
 
-### It-tabella SK
+### The SK chart
 
-Table: Il-koni SK il-kbar (JIS R 8101): it-temperatura nominali (JIS) ta’ kull wieħed
-Label: Tabella SK
+Table: SK large cones (JIS R 8101): the nominal (JIS) temperature of each
+Label: SK chart
 
-| Kon     | Temperatura nominali (JIS) |
-| ------- | -------------------------: |
-| SK 022  |        {{1112 °F; 600 °C}} |
-| SK 021  |        {{1202 °F; 650 °C}} |
-| SK 020  |        {{1238 °F; 670 °C}} |
-| SK 019  |        {{1274 °F; 690 °C}} |
-| SK 018  |        {{1310 °F; 710 °C}} |
-| SK 017  |        {{1346 °F; 730 °C}} |
-| SK 016  |        {{1382 °F; 750 °C}} |
-| SK 015a |        {{1454 °F; 790 °C}} |
-| SK 014a |        {{1499 °F; 815 °C}} |
-| SK 013a |        {{1535 °F; 835 °C}} |
-| SK 012a |        {{1571 °F; 855 °C}} |
-| SK 011a |        {{1616 °F; 880 °C}} |
-| SK 010a |        {{1652 °F; 900 °C}} |
-| SK 09a  |        {{1688 °F; 920 °C}} |
-| SK 08a  |        {{1724 °F; 940 °C}} |
-| SK 07a  |        {{1760 °F; 960 °C}} |
-| SK 06a  |        {{1796 °F; 980 °C}} |
-| SK 05a  |       {{1832 °F; 1000 °C}} |
-| SK 04a  |       {{1868 °F; 1020 °C}} |
-| SK 03a  |       {{1904 °F; 1040 °C}} |
-| SK 02a  |       {{1940 °F; 1060 °C}} |
-| SK 01a  |       {{1976 °F; 1080 °C}} |
-| SK 1a   |       {{2012 °F; 1100 °C}} |
-| SK 2a   |       {{2048 °F; 1120 °C}} |
-| SK 3a   |       {{2084 °F; 1140 °C}} |
-| SK 4a   |       {{2120 °F; 1160 °C}} |
-| SK 5a   |       {{2156 °F; 1180 °C}} |
-| SK 6a   |       {{2192 °F; 1200 °C}} |
-| SK 7    |       {{2246 °F; 1230 °C}} |
-| SK 8    |       {{2282 °F; 1250 °C}} |
-| SK 9    |       {{2336 °F; 1280 °C}} |
-| SK 10   |       {{2372 °F; 1300 °C}} |
-| SK 11   |       {{2408 °F; 1320 °C}} |
-| SK 12   |       {{2462 °F; 1350 °C}} |
-| SK 13   |       {{2516 °F; 1380 °C}} |
-| SK 14   |       {{2570 °F; 1410 °C}} |
-| SK 15   |       {{2615 °F; 1435 °C}} |
-| SK 16   |       {{2660 °F; 1460 °C}} |
-| SK 17   |       {{2696 °F; 1480 °C}} |
-| SK 18   |       {{2732 °F; 1500 °C}} |
-| SK 19   |       {{2768 °F; 1520 °C}} |
-| SK 20   |       {{2786 °F; 1530 °C}} |
+| Cone    | Nominal (JIS) temperature |
+| ------- | ------------------------: |
+| SK 022  |       {{1112 °F; 600 °C}} |
+| SK 021  |       {{1202 °F; 650 °C}} |
+| SK 020  |       {{1238 °F; 670 °C}} |
+| SK 019  |       {{1274 °F; 690 °C}} |
+| SK 018  |       {{1310 °F; 710 °C}} |
+| SK 017  |       {{1346 °F; 730 °C}} |
+| SK 016  |       {{1382 °F; 750 °C}} |
+| SK 015a |       {{1454 °F; 790 °C}} |
+| SK 014a |       {{1499 °F; 815 °C}} |
+| SK 013a |       {{1535 °F; 835 °C}} |
+| SK 012a |       {{1571 °F; 855 °C}} |
+| SK 011a |       {{1616 °F; 880 °C}} |
+| SK 010a |       {{1652 °F; 900 °C}} |
+| SK 09a  |       {{1688 °F; 920 °C}} |
+| SK 08a  |       {{1724 °F; 940 °C}} |
+| SK 07a  |       {{1760 °F; 960 °C}} |
+| SK 06a  |       {{1796 °F; 980 °C}} |
+| SK 05a  |      {{1832 °F; 1000 °C}} |
+| SK 04a  |      {{1868 °F; 1020 °C}} |
+| SK 03a  |      {{1904 °F; 1040 °C}} |
+| SK 02a  |      {{1940 °F; 1060 °C}} |
+| SK 01a  |      {{1976 °F; 1080 °C}} |
+| SK 1a   |      {{2012 °F; 1100 °C}} |
+| SK 2a   |      {{2048 °F; 1120 °C}} |
+| SK 3a   |      {{2084 °F; 1140 °C}} |
+| SK 4a   |      {{2120 °F; 1160 °C}} |
+| SK 5a   |      {{2156 °F; 1180 °C}} |
+| SK 6a   |      {{2192 °F; 1200 °C}} |
+| SK 7    |      {{2246 °F; 1230 °C}} |
+| SK 8    |      {{2282 °F; 1250 °C}} |
+| SK 9    |      {{2336 °F; 1280 °C}} |
+| SK 10   |      {{2372 °F; 1300 °C}} |
+| SK 11   |      {{2408 °F; 1320 °C}} |
+| SK 12   |      {{2462 °F; 1350 °C}} |
+| SK 13   |      {{2516 °F; 1380 °C}} |
+| SK 14   |      {{2570 °F; 1410 °C}} |
+| SK 15   |      {{2615 °F; 1435 °C}} |
+| SK 16   |      {{2660 °F; 1460 °C}} |
+| SK 17   |      {{2696 °F; 1480 °C}} |
+| SK 18   |      {{2732 °F; 1500 °C}} |
+| SK 19   |      {{2768 °F; 1520 °C}} |
+| SK 20   |      {{2786 °F; 1530 °C}} |
 
-Kull figura hija nominali (JIS): it-temperatura li l-istandard jagħti għall-kon, kif stampata fit-tabella ta’ Yuko Trading. It-tabella ma tagħtix rata tat-tisħin. L-istandard jagħti temperaturi ta’ referenza. B’rata ta’ fuħħari ta’ madwar 100 °C/h, l-istitut muniċipali ta’ Kyoto kejjel il-koni ta’ Kyoto tiegħu stess jitgħawġu f’temperatura 47–79 °C aktar baxxa mill-figura tal-JIS għall-istess numru; ma sibna l-ebda kejl bħal dan għall-koni SK skont il-JIS. Qiegħed kon xhud u qabbel.
+Every figure is nominal (JIS): the temperature the standard gives for the cone, as printed in Yuko Trading's table. The table does not print a heating rate. The standard gives reference temperatures. At a potter's rate of about 100 °C/h, Kyoto's municipal institute measured its own Kyoto cones bending 47–79 °C cooler than the JIS figure for the same number; we found no such measurements for SK cones to JIS. Set a witness cone and compare.
 
-### Il-koni ta’ Kyoto
+### Kyoto cones
 
-Il-koni ta’ Kyoto (京都ゼーゲル), magħmulin mill-istitut muniċipali ta’ Kyoto, m’għadhomx isiru: rapporti tal-aħbarijiet jgħidu li l-istitut waqqaf il-produzzjoni fl-aħħar tas-sena fiskali 2009. Għandhom l-istess numri tal-koni SK skont il-JIS, iżda jitgħawġu f’temperatura aktar baxxa: kon ta’ Kyoto jitgħawweġ madwar it-temperatura tal-kon SK skont il-JIS li hu żewġ jew tliet numri aktar kiesaħ. Riċetta minn Kyoto li tgħid “SK 8” tista’ tfisser kon ta’ Kyoto. L-istitut ippubblika pariri għall-fuħħarin li qed jgħaddu mill-koni ta’ Kyoto għall-koni Orton, u juża l-kon Orton 10 minflok il-Kyoto SK 12 tiegħu stess; dik hija l-għażla tal-istitut mill-kejl tiegħu stess b’100 °C/h, u ma tapplika għall-ebda kon ieħor.
+Kyoto cones (京都ゼーゲル), made by Kyoto's municipal institute, are no longer made: news reports say the institute ended production at the close of fiscal 2009. They carry the same numbers as SK cones to JIS but bend cooler: a Kyoto cone bends at about the temperature of the SK cone to JIS two or three numbers lower. A recipe from Kyoto that says "SK 8" may mean a Kyoto cone. The institute has published advice for potters moving from Kyoto cones to Orton cones, and substitutes Orton cone 10 for its own Kyoto SK 12. That is the institute's choice from its own measurements: it bent Kyoto cones and Orton cones in the same kiln at 100 °C/h, and Kyoto SK 12 (1290 °C) bent where Orton 10 (1290 °C) did. In the same table Kyoto SK 8 (1198 °C) bent near Orton 5 (1207 °C), and Kyoto SK 10 (1232 °C) where Orton 7 (1232 °C) did. Glazecalc uses this table, not the Orton chart at 60 °C/h, when it shows an SK cone beside an Orton cone, and says each match is approximate.
 
-### Il-koni Orton mibjugħin fil-Ġappun
+### Orton cones sold in Japan
 
-Il-koni Orton li joqogħdu weħidhom jinbiegħu fil-Ġappun bl-isem 立つゼーゲル (“Seger wieqaf”), għax ma jridux bażi tal-koni jew stand. Huma koni Orton, bin-numri ta’ Orton u t-tabella ta’ Orton (hawn fuq): aħmi sa wieħed minnhom biss skont in-numru Orton tiegħu, u żomm il-koni SK u l-koni Orton f’settijiet separati, qatt fl-istess sett.
+Orton self-supporting cones are sold in Japan under the name 立つゼーゲル ("standing Seger"), because they need no plaque or stand. They are Orton cones, with Orton's numbers and Orton's chart (above): fire to one only by its Orton number, and keep SK and Orton cones in separate packs, never in the same one.
 
-### Sorsi għall-koni SK
+### Sources for SK cones
 
-- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (it-tabella SK, iċċekkjata 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
-- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (fis-seħħ, ikkonfermat mill-ġdid 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
-- [Istitut Muniċipali ta’ Kyoto għat-Teknoloġija Industrijali u l-Kultura: x’għandek toqgħod attent għalih meta tgħaddi mill-koni ta’ Kyoto għall-koni Orton](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
+- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (the SK table, checked 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
+- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (in force, reconfirmed 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
+- [Kyoto Municipal Institute of Industrial Technology and Culture: points to note when moving from Kyoto cones to Orton cones](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
 
 :::
 

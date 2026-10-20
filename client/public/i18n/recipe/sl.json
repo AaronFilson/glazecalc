@@ -566,7 +566,6 @@
       "hesselberth-roy": "Priporočene meje Johna Hesselbertha in Rona Roya za stabilne glazure na uporabni kamenini in porcelanu, pri stožcu 6 in stožcu 10. Omejijo se na kratek seznam surovin, zato skupina nima razpona za barij ali litij, niti za cink pri stožcu 10.",
       "glazecalc": "Vrednosti, pri katerih aplikacija opozori, ko zamenja surovine: bor, glinica, natrij in kalij ter magnezij pri nizkem žganju."
     },
-    "firing": "Žganje",
     "firingUnknown": "Ni izbrano",
     "bands": {
       "low": "Nizko žganje, stožec 06–02",

@@ -302,17 +302,14 @@
     "cones": {
       "legend": "Apdedzināšana",
       "orton": {
-        "label": "Pēc Ortona konusiem",
         "example": "konuss 04, konuss 6",
         "saved": "Saglabāts: apdedzināšana pēc Ortona konusiem."
       },
       "sk": {
-        "label": "Pēc SK konusiem, JIS R 8101",
         "example": "SK 4a, SK 8",
         "saved": "Saglabāts: apdedzināšana pēc SK konusiem."
       },
       "temperature": {
-        "label": "Pēc temperatūras, kā krāsns kontroliera programmā",
         "saved": "Saglabāts: apdedzināšana pēc temperatūras."
       },
       "help": "Kamēr neizvēlaties, tas atbilst jūsu reģionam: ASV, Apvienotajā Karalistē, Īrijā, Austrālijā un Jaunzēlandē – Ortona konusi, Japānā – SK konusi, pārējā Eiropā – temperatūra."
@@ -462,8 +459,6 @@
     "heading": "Piekļuves marķieri",
     "intro": "Piekļuves marķieris ļauj jūsu pašu mākslīgā intelekta asistentam vai skriptam lasīt jūsu kontā esošās receptes, izejvielas, piezīmes un apdedzināšanas žurnālus un, ja izvēlaties, tos mainīt. Katrs marķieris pārstāj darboties jūsu izvēlētajā dienā vai uzreiz, kad to anulējat.",
     "howTo": "Kā pievienot mākslīgā intelekta asistentu",
-    "listLabel": "Jūsu piekļuves marķieri",
-    "none": "Jums nav piekļuves marķieru.",
     "hint": "beidzas ar {hint}",
     "readOnly": "Tikai lasīšana",
     "readWrite": "Lasīt un mainīt",
@@ -490,7 +485,6 @@
     "resend": "Nosūtīt apstiprinājuma saiti vēlreiz",
     "scopeNote": "Marķieris var lasīt jūsu ierakstus, bet nevar tos mainīt.",
     "scope": "Ko tas var darīt",
-    "scopeWriteNote": "Marķieris var arī saglabāt jaunus ierakstus, mainīt tos un pārvietot uz atkritni. Katra izmaiņa saglabā ierakstu tādu, kāds tas bija, tāpēc to var atsaukt, un tas, ko marķieris darīja, ir sadaļā Manu datu lejupielāde. Izvēlieties to tikai asistentam vai skriptam, kam uzticaties mainīt jūsu ierakstus.",
     "confirmStep": "Lai izveidotu marķieri, apstipriniet, ka tas esat jūs.",
     "create": "Izveidot marķieri",
     "failed": "Kļūda: neizdevās izveidot marķieri. Mēģiniet vēlreiz.",

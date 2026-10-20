@@ -532,14 +532,14 @@ export class ConnectionsPage implements OnInit {
     await this.run(async () => {
       this.notices.success(await this.service.revoke(row.id), 'apps');
       this.asking.set(null);
-    }, 'account.apps.revokeFailed');
+    }, translate('account.apps.revokeFailed'));
   }
 
   protected async revokeAll(): Promise<void> {
     await this.run(async () => {
       this.notices.success(await this.service.revokeAll(), 'apps');
       this.asking.set(null);
-    }, 'account.apps.revokeFailed');
+    }, translate('account.apps.revokeFailed'));
   }
 
   protected async putBack(row: ConnectionRow, entry: MovedEntry): Promise<void> {
@@ -560,14 +560,14 @@ export class ConnectionsPage implements OnInit {
         );
       }
       await this.refresh(row.id);
-    }, 'account.apps.restoreFailed');
+    }, translate('account.apps.restoreFailed'));
   }
 
   protected async putAllBack(row: ConnectionRow): Promise<void> {
     await this.run(async () => {
       this.notices.success(await this.service.putAllBack(row.id), 'apps');
       await this.refresh(row.id);
-    }, 'account.apps.restoreFailed');
+    }, translate('account.apps.restoreFailed'));
   }
 
   /** Reads the list again, and the open row's activity and Trash. */
@@ -582,7 +582,7 @@ export class ConnectionsPage implements OnInit {
     try {
       await action();
     } catch (err) {
-      this.notices.error(errorMessage(err, translate(failed)));
+      this.notices.error(errorMessage(err, failed));
     } finally {
       this.busy.set(false);
     }

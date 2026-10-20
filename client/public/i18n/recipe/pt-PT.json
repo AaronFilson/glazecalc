@@ -566,7 +566,6 @@
       "hesselberth-roy": "Os limites que John Hesselberth e Ron Roy recomendam para vidrados estáveis em grés e porcelana funcionais, a cone 6 e cone 10. Restringem-se a uma lista curta de matérias-primas, por isso o conjunto não tem intervalo para o bário nem o lítio, nem para o zinco a cone 10.",
       "glazecalc": "Os valores a que a aplicação avisa quando troca matérias-primas: boro, alumina, sódio e potássio, e magnésia a baixa temperatura."
     },
-    "firing": "Cozedura",
     "firingUnknown": "Não escolhida",
     "bands": {
       "low": "Baixa temperatura, cone 06–02",

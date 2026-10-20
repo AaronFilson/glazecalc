@@ -566,7 +566,6 @@
       "hesselberth-roy": "Los límites que John Hesselberth y Ron Roy recomiendan para esmaltes estables en gres y porcelana funcionales, a cono 6 y cono 10. Se limitan a una lista corta de materiales, así que el conjunto no tiene intervalo para el bario ni el litio, ni para el zinc a cono 10.",
       "glazecalc": "Las cifras a las que la aplicación avisa cuando cambia materiales: boro, alúmina, sosa y potasa, y magnesia a baja temperatura."
     },
-    "firing": "Cocción",
     "firingUnknown": "Sin elegir",
     "bands": {
       "low": "Baja temperatura, cono 06–02",

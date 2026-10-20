@@ -302,17 +302,14 @@
     "cones": {
       "legend": "Bränning",
       "orton": {
-        "label": "Efter Ortonkäglor",
         "example": "kägla 04, kägla 6",
         "saved": "Sparat: bränning efter Ortonkäglor."
       },
       "sk": {
-        "label": "Efter SK-käglor, JIS R 8101",
         "example": "SK 4a, SK 8",
         "saved": "Sparat: bränning efter SK-käglor."
       },
       "temperature": {
-        "label": "Efter temperatur, som i automatikens program",
         "saved": "Sparat: bränning efter temperatur."
       },
       "help": "Tills ett val görs följer detta regionen: Ortonkäglor i USA, Storbritannien, Irland, Australien och Nya Zeeland, SK-käglor i Japan och temperatur i resten av Europa."
@@ -462,8 +459,6 @@
     "heading": "Åtkomsttoken",
     "intro": "Med en åtkomsttoken kan din egen AI-assistent eller ditt eget skript läsa recepten, råvarorna, anteckningarna och brännloggarna i ditt konto och, om du väljer det, ändra dem. Varje åtkomsttoken slutar fungera den dag du väljer, eller så fort du återkallar den.",
     "howTo": "Koppla en AI-assistent",
-    "listLabel": "Åtkomsttoken i kontot",
-    "none": "Det finns inga åtkomsttoken.",
     "hint": "slutar på {hint}",
     "readOnly": "Endast läsning",
     "readWrite": "Läsa och ändra",
@@ -490,7 +485,6 @@
     "resend": "Skicka bekräftelselänken igen",
     "scopeNote": "Åtkomsttoken kan läsa kontots uppgifter men inte ändra dem.",
     "scope": "Vad den kan göra",
-    "scopeWriteNote": "Åtkomsttoken kan också spara nya poster, ändra dem och flytta dem till papperskorgen. Varje ändring behåller posten som den var, så att du kan ångra den, och vad åtkomsttoken har gjort finns i Ladda ner kontots uppgifter. Välj det här bara för en assistent eller ett skript som du litar på när det gäller att ändra dina poster.",
     "confirmStep": "Bekräfta att det är du för att skapa åtkomsttoken.",
     "create": "Skapa åtkomsttoken",
     "failed": "Fel: åtkomsttoken kunde inte skapas. Försök igen.",

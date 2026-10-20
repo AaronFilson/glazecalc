@@ -76,7 +76,6 @@
     "removeField": "Ta bort fältet",
     "addRow": "Lägg till en rad i bränningstabellen",
     "addRowWhy": "Lägg till ett fält först.",
-    "tableEmpty": "Lägg till ett fält ovan och sedan rader.",
     "recordHeading": "Registrera bränningen",
     "rowActions": "Åtgärder för raden",
     "cell": "{field}, rad {row}",

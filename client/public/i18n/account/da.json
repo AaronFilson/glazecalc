@@ -302,17 +302,14 @@
     "cones": {
       "legend": "Brænding",
       "orton": {
-        "label": "Efter Ortonkegler",
         "example": "kegle 04, kegle 6",
         "saved": "Gemt: brænding efter Ortonkegler."
       },
       "sk": {
-        "label": "Efter SK-kegler, JIS R 8101",
         "example": "SK 4a, SK 8",
         "saved": "Gemt: brænding efter SK-kegler."
       },
       "temperature": {
-        "label": "Efter temperatur, som i en ovnstyrings program",
         "saved": "Gemt: brænding efter temperatur."
       },
       "help": "Indtil der er truffet et valg, følger indstillingen regionen: Ortonkegler i USA, Storbritannien, Irland, Australien og New Zealand, SK-kegler i Japan og temperatur i resten af Europa."
@@ -462,8 +459,6 @@
     "heading": "Adgangstokens",
     "intro": "Et adgangstoken lader din egen AI-assistent eller dit eget script læse opskrifterne, råvarerne, noterne og brændingsjournalerne på din konto og, hvis du vælger det, ændre dem. Hvert adgangstoken holder op med at virke den dag, du vælger, eller så snart du tilbagekalder det.",
     "howTo": "Sådan tilsluttes en AI-assistent",
-    "listLabel": "Kontoens adgangstokens",
-    "none": "Der er ingen adgangstokens.",
     "hint": "slutter på {hint}",
     "readOnly": "Kun læsning",
     "readWrite": "Læse og ændre",
@@ -490,7 +485,6 @@
     "resend": "Send bekræftelseslinket igen",
     "scopeNote": "Adgangstokenet kan læse kontoens data, men ikke ændre dem.",
     "scope": "Hvad det kan",
-    "scopeWriteNote": "Adgangstokenet kan også gemme nye poster, ændre dem og flytte dem til papirkurven. Hver ændring bevarer posten, som den var, så du kan fortryde den, og hvad adgangstokenet har gjort, står i Download mine data. Vælg kun dette til en assistent eller et script, du stoler på til at ændre dine poster.",
     "confirmStep": "Bekræft, at det er dig, for at oprette adgangstokenet.",
     "create": "Opret adgangstokenet",
     "failed": "Fejl: adgangstokenet kunne ikke oprettes. Prøv igen.",

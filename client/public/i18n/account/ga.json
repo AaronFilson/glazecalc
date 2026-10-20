@@ -302,17 +302,14 @@
     "cones": {
       "legend": "Bácáil",
       "orton": {
-        "label": "Go cóin Orton",
         "example": "cón 04, cón 6",
         "saved": "Sábháilte: bácáil go cóin Orton."
       },
       "sk": {
-        "label": "Go cóin SK, JIS R 8101",
         "example": "SK 4a, SK 8",
         "saved": "Sábháilte: bácáil go cóin SK."
       },
       "temperature": {
-        "label": "De réir teochta, mar a bheadh i gclár rialaitheora áithe",
         "saved": "Sábháilte: bácáil de réir teochta."
       },
       "help": "Go dtí go roghnaíonn tú, leanann sé seo do réigiún: cóin Orton i Stáit Aontaithe Mheiriceá, sa Ríocht Aontaithe, in Éirinn, san Astráil agus sa Nua-Shéalainn, cóin SK sa tSeapáin, agus teocht sa chuid eile den Eoraip."
@@ -462,8 +459,6 @@
     "heading": "Comharthaí rochtana",
     "intro": "Ligeann comhartha rochtana do do chúntóir AI féin nó do do script féin na hoidis, na hábhair, na nótaí agus na taifid bhácála i do chuntas a léamh, agus, má roghnaíonn tú, iad a athrú. Stopann gach comhartha ag obair ar an lá a roghnaíonn tú, nó chomh luath agus a chúlghairfidh tú é.",
     "howTo": "Conas cúntóir AI a cheangal",
-    "listLabel": "Do chomharthaí rochtana",
-    "none": "Níl aon chomhartha rochtana agat.",
     "hint": "ag críochnú le {hint}",
     "readOnly": "Léamh amháin",
     "readWrite": "Léamh agus athrú",
@@ -490,7 +485,6 @@
     "resend": "Seol an nasc deimhnithe arís",
     "scopeNote": "Is féidir leis an gcomhartha do thaifid a léamh ach ní féidir leis iad a athrú.",
     "scope": "An méid is féidir leis a dhéanamh",
-    "scopeWriteNote": "Is féidir leis an gcomhartha taifid nua a shábháil freisin, iad a athrú agus iad a bhogadh go dtí an bruscar. Coinníonn gach athrú an taifead mar a bhí sé, mar sin is féidir leat é a chealú, agus tá an méid a rinne an comhartha le fáil in ‘Mo shonraí a íoslódáil’. Ná roghnaigh é seo ach do chúntóir nó do script ar a bhfuil muinín agat do thaifid a athrú.",
     "confirmStep": "Chun an comhartha a dhéanamh, deimhnigh gur tú atá ann.",
     "create": "Déan an comhartha",
     "failed": "Earráid: níorbh fhéidir an comhartha a dhéanamh. Bain triail eile as.",

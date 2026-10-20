@@ -566,7 +566,6 @@
       "hesselberth-roy": "Preporučene granice Johna Hesselbertha i Rona Roya za stabilne glazure na funkcionalnoj kamenini i porculanu, na stošcu 6 i stošcu 10. Drže se kratkog popisa sirovina, pa skup nema raspon za barij ni litij, niti za cink na stošcu 10.",
       "glazecalc": "Vrijednosti pri kojima aplikacija upozorava kad zamjenjuje sirovine: bor, glinica, natrij i kalij te magnezij pri niskom pečenju."
     },
-    "firing": "Pečenje",
     "firingUnknown": "Nije odabrano",
     "bands": {
       "low": "Nisko pečenje, stožac 06 – 02",

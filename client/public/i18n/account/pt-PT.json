@@ -302,17 +302,14 @@
     "cones": {
       "legend": "Cozedura",
       "orton": {
-        "label": "Por cones Orton",
         "example": "cone 04, cone 6",
         "saved": "Guardado: cozedura por cones Orton."
       },
       "sk": {
-        "label": "Por cones SK, JIS R 8101",
         "example": "SK 4a, SK 8",
         "saved": "Guardado: cozedura por cones SK."
       },
       "temperature": {
-        "label": "Por temperatura, como no programa de um controlador",
         "saved": "Guardado: cozedura por temperatura."
       },
       "help": "Enquanto não escolher, isto segue a sua região: cones Orton nos EUA, no Reino Unido, na Irlanda, na Austrália e na Nova Zelândia, cones SK no Japão e temperatura no resto da Europa."
@@ -462,8 +459,6 @@
     "heading": "Tokens de acesso",
     "intro": "Um token de acesso permite que o seu próprio assistente de IA ou script leia as receitas, as matérias-primas, as notas e os registos de cozedura da sua conta e, se escolher, os altere. Cada token deixa de funcionar no dia que escolher, ou assim que o revogar.",
     "howTo": "Como ligar um assistente de IA",
-    "listLabel": "Os seus tokens de acesso",
-    "none": "Não tem nenhum token de acesso.",
     "hint": "termina em {hint}",
     "readOnly": "Só de leitura",
     "readWrite": "Leitura e alteração",
@@ -490,7 +485,6 @@
     "resend": "Enviar de novo a ligação de confirmação",
     "scopeNote": "O token pode ler os seus registos, mas não os alterar.",
     "scope": "O que pode fazer",
-    "scopeWriteNote": "O token também pode guardar novos registos, alterá-los e movê-los para o Lixo. Cada alteração guarda o registo como estava, por isso pode anulá-la, e o que o token fez está em Transferir os meus dados. Escolha isto apenas para um assistente ou script em que confie para alterar os seus registos.",
     "confirmStep": "Para criar o token, confirme a sua identidade.",
     "create": "Criar o token",
     "failed": "Erro: não foi possível criar o token. Tente novamente.",

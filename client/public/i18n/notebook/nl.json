@@ -76,7 +76,6 @@
     "removeField": "Veld verwijderen",
     "addRow": "Rij aan de stooktabel toevoegen",
     "addRowWhy": "Voeg eerst een veld toe.",
-    "tableEmpty": "Voeg hierboven een veld toe en daarna rijen.",
     "recordHeading": "De stook vastleggen",
     "rowActions": "Acties voor de rij",
     "cell": "{field}, rij {row}",

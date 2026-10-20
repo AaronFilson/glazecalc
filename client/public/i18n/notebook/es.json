@@ -76,7 +76,6 @@
     "removeField": "Quitar el campo",
     "addRow": "Añadir una fila a la tabla de cocción",
     "addRowWhy": "Añada primero un campo.",
-    "tableEmpty": "Añada un campo arriba y luego filas.",
     "recordHeading": "Registrar la cocción",
     "rowActions": "Acciones de la fila",
     "cell": "{field}, fila {row}",

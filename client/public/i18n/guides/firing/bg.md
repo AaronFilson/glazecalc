@@ -281,92 +281,92 @@ Label: Корекции за следващото изпичане
 
 :::sk
 
-## Изпичане по конуси SK {#sk-cones}
+## Firing to SK cones {#sk-cones lang=en}
 
-Конусите SK са пирометричните конуси, произведени по японския стандарт JIS R 8101, които в Япония се продават от търговци като Yuko Trading (有恒商事). Като всеки конус, конусът SK измерва топлинното въздействие{{en: heatwork}}, а не само температурата: той омеква и се огъва, когато изделията са получили достатъчно топлина, и по него се отчита колко се е огънал. Контролните конуси{{en: witness cone}}, отчитането на това колко се е огънал конусът, и задържането{{en: hold}} действат при него както при всеки друг конус. Този раздел посочва системата на всеки конус и никога не превръща номер SK в номер от друга система: номерата на различните серии конуси не са взаимозаменяеми.
+SK cones are the pyrometric cones made to Japan's standard, JIS R 8101, and sold in Japan by dealers such as Yuko Trading (有恒商事). Like any cone, an SK cone measures heatwork, not temperature alone: it softens and bends over when the ware has had enough heat, and you read how far it bent. Witness cones, reading how far a cone has bent, and holds work for it as for any cone. This section names each cone's system, and never turns an SK number into another system's number: the numbers of different cone series are not interchangeable.
 
 > [!NOTE]
-> Винаги пишете „SK“ пред номера. Много по-стари японски рецепти казват само „SK 8“ или „SK 9“, без да уточняват чий е конусът. Конусите от Киото и конусите SK по JIS имат едни и същи номера, но се огъват при различни температури (вижте „Конуси от Киото“ по-долу).
+> Always write "SK" before the number. Many older Japanese recipes say only "SK 8" or "SK 9" without saying whose cone. Kyoto cones and SK cones to JIS carry the same numbers but bend at different temperatures (see Kyoto cones, below).
 
-### Големите конуси
+### The large cones
 
-Стандартът има два размера. Големите конуси (大型コーン) се използват „главно за измерване на степента на изпичане“ (焼度測定) – точно това, което търси керамикът. Малките конуси (от SK 26 до SK 42, в горния край на обхвата) се използват „главно за изпитвания на огнеупорност“ и не са разгледани тук. Таблицата по-долу дава големите конуси от SK 022 до SK 20.
+The standard has two sizes. Large cones (大型コーン) are "mainly used for measuring the degree of firing" (焼度測定), which is what a potter wants. Small cones (SK 26 to SK 42, at the top of the range) are "mainly used for refractoriness tests" and are not covered here. The table below gives the large cones from SK 022 to SK 20.
 
-Номерата тук вървят от SK 022, най-хладния, до SK 20. Между SK 015 и SK 6 отпечатаните номера имат буквата „a“ (SK 015a, SK 6a); пишете я така, както е отпечатана.
+The numbers run from SK 022, the coolest, up to SK 20 here. Between SK 015 and SK 6 the printed numbers carry an "a" (SK 015a, SK 6a); write it as printed.
 
-### Поставяне на големите конуси
+### Setting large cones
 
-Поставете всеки голям конус в държач или в питка от глина, наклонен към страната си на огъване. Както при всеки конус, запазвайте височината и наклона еднакви от изпичане на изпичане, защото разлика в което и да е от двете променя колко се огъва конусът. Поставете трите конуса от комплекта (вижте по-долу) заедно, дълбоко в пещта, близо до средата на заредените изделия, където получават същата топлина като изделията, но където можете да ги видите през наблюдателен отвор; преди да затворите пещта, проверете дали виждате и трите.
+Set each large cone in a plaque or a pat of clay, leaning toward its bending face. As with any cone, keep the height and the lean the same from firing to firing, because a difference in either changes how far it bends. Set the three cones of the pack (below) together, deep in the kiln near the middle of the load, where they get the heat the ware gets, yet where you can see them through a peephole; before you close the kiln, check that you can see all three.
 
-### Водещ, основен и предпазен конус
+### Guide, firing and guard cones
 
-Конусите се продават и поставят по три: водещ конус, основен конус, който е целта, и предпазен конус. За основен конус вземете номера SK, който посочва рецептата или глината Ви, за водещ – следващия по-хладен конус (един ред по-горе в таблицата), а за предпазен – следващия по-горещ. Когато водещият конус започне да се огъва, краят наближава; когато предпазният конус се огъне, изпичането е отишло твърде далеч.
+Cones are sold and set as three: a guide cone, a firing cone at the target, and a guard cone. Take the firing cone as the SK number your recipe or clay names, the guide cone as the next cooler cone (one row up in the table) and the guard cone as the next hotter one. When the guide cone starts to bend, the end is near; when the guard cone bends, the firing has gone too far.
 
-### Таблица на конусите SK
+### The SK chart
 
-Table: Големи конуси SK (JIS R 8101): номиналната температура (JIS) на всеки
-Label: Таблица на конусите SK
+Table: SK large cones (JIS R 8101): the nominal (JIS) temperature of each
+Label: SK chart
 
-| Конус   | Номинална температура (JIS) |
-| ------- | --------------------------: |
-| SK 022  |         {{1112 °F; 600 °C}} |
-| SK 021  |         {{1202 °F; 650 °C}} |
-| SK 020  |         {{1238 °F; 670 °C}} |
-| SK 019  |         {{1274 °F; 690 °C}} |
-| SK 018  |         {{1310 °F; 710 °C}} |
-| SK 017  |         {{1346 °F; 730 °C}} |
-| SK 016  |         {{1382 °F; 750 °C}} |
-| SK 015a |         {{1454 °F; 790 °C}} |
-| SK 014a |         {{1499 °F; 815 °C}} |
-| SK 013a |         {{1535 °F; 835 °C}} |
-| SK 012a |         {{1571 °F; 855 °C}} |
-| SK 011a |         {{1616 °F; 880 °C}} |
-| SK 010a |         {{1652 °F; 900 °C}} |
-| SK 09a  |         {{1688 °F; 920 °C}} |
-| SK 08a  |         {{1724 °F; 940 °C}} |
-| SK 07a  |         {{1760 °F; 960 °C}} |
-| SK 06a  |         {{1796 °F; 980 °C}} |
-| SK 05a  |        {{1832 °F; 1000 °C}} |
-| SK 04a  |        {{1868 °F; 1020 °C}} |
-| SK 03a  |        {{1904 °F; 1040 °C}} |
-| SK 02a  |        {{1940 °F; 1060 °C}} |
-| SK 01a  |        {{1976 °F; 1080 °C}} |
-| SK 1a   |        {{2012 °F; 1100 °C}} |
-| SK 2a   |        {{2048 °F; 1120 °C}} |
-| SK 3a   |        {{2084 °F; 1140 °C}} |
-| SK 4a   |        {{2120 °F; 1160 °C}} |
-| SK 5a   |        {{2156 °F; 1180 °C}} |
-| SK 6a   |        {{2192 °F; 1200 °C}} |
-| SK 7    |        {{2246 °F; 1230 °C}} |
-| SK 8    |        {{2282 °F; 1250 °C}} |
-| SK 9    |        {{2336 °F; 1280 °C}} |
-| SK 10   |        {{2372 °F; 1300 °C}} |
-| SK 11   |        {{2408 °F; 1320 °C}} |
-| SK 12   |        {{2462 °F; 1350 °C}} |
-| SK 13   |        {{2516 °F; 1380 °C}} |
-| SK 14   |        {{2570 °F; 1410 °C}} |
-| SK 15   |        {{2615 °F; 1435 °C}} |
-| SK 16   |        {{2660 °F; 1460 °C}} |
-| SK 17   |        {{2696 °F; 1480 °C}} |
-| SK 18   |        {{2732 °F; 1500 °C}} |
-| SK 19   |        {{2768 °F; 1520 °C}} |
-| SK 20   |        {{2786 °F; 1530 °C}} |
+| Cone    | Nominal (JIS) temperature |
+| ------- | ------------------------: |
+| SK 022  |       {{1112 °F; 600 °C}} |
+| SK 021  |       {{1202 °F; 650 °C}} |
+| SK 020  |       {{1238 °F; 670 °C}} |
+| SK 019  |       {{1274 °F; 690 °C}} |
+| SK 018  |       {{1310 °F; 710 °C}} |
+| SK 017  |       {{1346 °F; 730 °C}} |
+| SK 016  |       {{1382 °F; 750 °C}} |
+| SK 015a |       {{1454 °F; 790 °C}} |
+| SK 014a |       {{1499 °F; 815 °C}} |
+| SK 013a |       {{1535 °F; 835 °C}} |
+| SK 012a |       {{1571 °F; 855 °C}} |
+| SK 011a |       {{1616 °F; 880 °C}} |
+| SK 010a |       {{1652 °F; 900 °C}} |
+| SK 09a  |       {{1688 °F; 920 °C}} |
+| SK 08a  |       {{1724 °F; 940 °C}} |
+| SK 07a  |       {{1760 °F; 960 °C}} |
+| SK 06a  |       {{1796 °F; 980 °C}} |
+| SK 05a  |      {{1832 °F; 1000 °C}} |
+| SK 04a  |      {{1868 °F; 1020 °C}} |
+| SK 03a  |      {{1904 °F; 1040 °C}} |
+| SK 02a  |      {{1940 °F; 1060 °C}} |
+| SK 01a  |      {{1976 °F; 1080 °C}} |
+| SK 1a   |      {{2012 °F; 1100 °C}} |
+| SK 2a   |      {{2048 °F; 1120 °C}} |
+| SK 3a   |      {{2084 °F; 1140 °C}} |
+| SK 4a   |      {{2120 °F; 1160 °C}} |
+| SK 5a   |      {{2156 °F; 1180 °C}} |
+| SK 6a   |      {{2192 °F; 1200 °C}} |
+| SK 7    |      {{2246 °F; 1230 °C}} |
+| SK 8    |      {{2282 °F; 1250 °C}} |
+| SK 9    |      {{2336 °F; 1280 °C}} |
+| SK 10   |      {{2372 °F; 1300 °C}} |
+| SK 11   |      {{2408 °F; 1320 °C}} |
+| SK 12   |      {{2462 °F; 1350 °C}} |
+| SK 13   |      {{2516 °F; 1380 °C}} |
+| SK 14   |      {{2570 °F; 1410 °C}} |
+| SK 15   |      {{2615 °F; 1435 °C}} |
+| SK 16   |      {{2660 °F; 1460 °C}} |
+| SK 17   |      {{2696 °F; 1480 °C}} |
+| SK 18   |      {{2732 °F; 1500 °C}} |
+| SK 19   |      {{2768 °F; 1520 °C}} |
+| SK 20   |      {{2786 °F; 1530 °C}} |
 
-Всяка стойност е номинална (JIS): температурата, която стандартът дава за конуса, както е отпечатана в таблицата на Yuko Trading. Таблицата не посочва скорост на нагряване. Стандартът дава референтни температури. При обичайна за керамиците скорост от около 100 °C/h общинският институт в Киото е измерил, че собствените му конуси от Киото се огъват при температура с 47–79 °C по-ниска от стойността по JIS за същия номер; за конусите SK по JIS не открихме такива измервания. Поставете контролен конус и сравнете.
+Every figure is nominal (JIS): the temperature the standard gives for the cone, as printed in Yuko Trading's table. The table does not print a heating rate. The standard gives reference temperatures. At a potter's rate of about 100 °C/h, Kyoto's municipal institute measured its own Kyoto cones bending 47–79 °C cooler than the JIS figure for the same number; we found no such measurements for SK cones to JIS. Set a witness cone and compare.
 
-### Конуси от Киото
+### Kyoto cones
 
-Конусите от Киото (京都ゼーゲル), произвеждани от общинския институт в Киото, вече не се произвеждат: според съобщения в новините институтът е спрял производството в края на финансовата 2009 година. Те имат същите номера като конусите SK по JIS, но се огъват при по-ниска температура: конусът от Киото се огъва при приблизително температурата на конуса SK по JIS с два или три номера по-хладен. Рецепта от Киото, в която пише „SK 8“, може да има предвид конус от Киото. Институтът е публикувал съвети за керамиците, които преминават от конуси от Киото към конуси Orton, и използва конус Orton 10 вместо собствения си конус от Киото SK 12; това е изборът на института въз основа на собствените му измервания при 100 °C/h и не се отнася за никой друг конус.
+Kyoto cones (京都ゼーゲル), made by Kyoto's municipal institute, are no longer made: news reports say the institute ended production at the close of fiscal 2009. They carry the same numbers as SK cones to JIS but bend cooler: a Kyoto cone bends at about the temperature of the SK cone to JIS two or three numbers lower. A recipe from Kyoto that says "SK 8" may mean a Kyoto cone. The institute has published advice for potters moving from Kyoto cones to Orton cones, and substitutes Orton cone 10 for its own Kyoto SK 12. That is the institute's choice from its own measurements: it bent Kyoto cones and Orton cones in the same kiln at 100 °C/h, and Kyoto SK 12 (1290 °C) bent where Orton 10 (1290 °C) did. In the same table Kyoto SK 8 (1198 °C) bent near Orton 5 (1207 °C), and Kyoto SK 10 (1232 °C) where Orton 7 (1232 °C) did. Glazecalc uses this table, not the Orton chart at 60 °C/h, when it shows an SK cone beside an Orton cone, and says each match is approximate.
 
-### Конуси Orton, продавани в Япония
+### Orton cones sold in Japan
 
-Самостоящите конуси Orton се продават в Япония под името 立つゼーゲル („стоящ Зегер“), защото не им трябва държач или поставка. Те са конуси Orton, с номерата на Orton и таблицата на Orton (по-горе): изпичайте до такъв конус само по номера му Orton и дръжте конусите SK и Orton в отделни комплекти, никога в един и същ.
+Orton self-supporting cones are sold in Japan under the name 立つゼーゲル ("standing Seger"), because they need no plaque or stand. They are Orton cones, with Orton's numbers and Orton's chart (above): fire to one only by its Orton number, and keep SK and Orton cones in separate packs, never in the same one.
 
-### Източници за конусите SK
+### Sources for SK cones
 
-- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (таблицата на конусите SK, проверено на 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
-- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (в сила, потвърден отново на 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
-- [Kyoto Municipal Institute of Industrial Technology and Culture: на какво да обърнете внимание при преминаване от конуси от Киото към конуси Orton](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
+- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (the SK table, checked 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
+- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (in force, reconfirmed 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
+- [Kyoto Municipal Institute of Industrial Technology and Culture: points to note when moving from Kyoto cones to Orton cones](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
 
 :::
 

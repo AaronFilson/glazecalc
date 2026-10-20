@@ -302,17 +302,14 @@
     "cones": {
       "legend": "Pişirim",
       "orton": {
-        "label": "Orton piramitlerine göre",
         "example": "Piramit 04, Piramit 6",
         "saved": "Kaydedildi: Orton piramitlerine göre pişirim."
       },
       "sk": {
-        "label": "JIS R 8101 SK piramitlerine göre",
         "example": "SK 4a, SK 8",
         "saved": "Kaydedildi: SK piramitlerine göre pişirim."
       },
       "temperature": {
-        "label": "Sıcaklığa göre, kontrol ünitesinin programındaki gibi",
         "saved": "Kaydedildi: sıcaklığa göre pişirim."
       },
       "help": "Siz seçene kadar bu, bölgenize göre belirlenir: ABD, Birleşik Krallık, İrlanda, Avustralya ve Yeni Zelanda’da Orton piramitleri, Japonya’da SK piramitleri, Avrupa’nın geri kalanında sıcaklık."
@@ -462,8 +459,6 @@
     "heading": "Erişim belirteçleri",
     "intro": "Erişim belirteci, kendi yapay zekâ asistanınızın veya betiğinizin hesabınızdaki reçeteleri, hammaddeleri, notları ve pişirim kayıtlarını okumasını ve, isterseniz, değiştirmesini sağlar. Her belirteç, seçtiğiniz günde ya da iptal ettiğiniz anda çalışmayı bırakır.",
     "howTo": "Yapay zekâ asistanı nasıl bağlanır",
-    "listLabel": "Erişim belirteçleriniz",
-    "none": "Hiç erişim belirteciniz yok.",
     "hint": "{hint} ile bitiyor",
     "readOnly": "Salt okunur",
     "readWrite": "Okuma ve değiştirme",
@@ -490,7 +485,6 @@
     "resend": "Onay bağlantısını yeniden gönder",
     "scopeNote": "Belirteç kayıtlarınızı okuyabilir ama değiştiremez.",
     "scope": "Neler yapabilir",
-    "scopeWriteNote": "Belirteç ayrıca yeni kayıtlar kaydedebilir, kayıtları değiştirebilir ve çöp kutusuna taşıyabilir. Her değişiklik kaydı eski haliyle saklar; böylece geri alabilirsiniz, ve belirtecin yaptıkları Verilerimi indir bölümündedir. Bunu yalnızca kayıtlarınızı değiştirmesine güvendiğiniz bir asistan veya betik için seçin.",
     "confirmStep": "Belirteci oluşturmak için bunun siz olduğunuzu onaylayın.",
     "create": "Belirteci oluştur",
     "failed": "Hata: belirteç oluşturulamadı. Lütfen yeniden deneyin.",

@@ -566,7 +566,6 @@
       "hesselberth-roy": "Doporučené limity Johna Hesselbertha a Rona Roye pro stabilní glazury na užitkové kamenině a porcelánu, pro žároměrku 6 a žároměrku 10. Drží se krátkého seznamu surovin, takže sada nemá rozsah pro baryum ani lithium, ani pro zinek u žároměrky 10.",
       "glazecalc": "Hodnoty, u kterých aplikace varuje při záměně surovin: bor, oxid hlinitý, soda a potaš a u nízkého výpalu oxid hořečnatý."
     },
-    "firing": "Výpal",
     "firingUnknown": "Nezvoleno",
     "bands": {
       "low": "Nízký výpal, žároměrka 06–02",

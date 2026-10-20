@@ -302,17 +302,14 @@
     "cones": {
       "legend": "Stoken",
       "orton": {
-        "label": "Volgens Ortonkegels",
         "example": "kegel 04, kegel 6",
         "saved": "Opgeslagen: stoken volgens Ortonkegels."
       },
       "sk": {
-        "label": "Volgens SK-kegels, JIS R 8101",
         "example": "SK 4a, SK 8",
         "saved": "Opgeslagen: stoken volgens SK-kegels."
       },
       "temperature": {
-        "label": "Volgens temperatuur, zoals in het programma van een ovenregelaar",
         "saved": "Opgeslagen: stoken volgens temperatuur."
       },
       "help": "Zolang u niet kiest, volgt dit uw regio: Ortonkegels in de VS, het Verenigd Koninkrijk, Ierland, Australië en Nieuw-Zeeland, SK-kegels in Japan, temperatuur in de rest van Europa."
@@ -462,8 +459,6 @@
     "heading": "Toegangstokens",
     "intro": "Met een toegangstoken kan uw eigen AI-assistent of script de recepten, grondstoffen, notities en stookverslagen in uw account lezen en, als u dat wilt, wijzigen. Elk token werkt niet meer op de dag die u kiest, of zodra u het intrekt.",
     "howTo": "Een AI-assistent verbinden",
-    "listLabel": "Uw toegangstokens",
-    "none": "U hebt geen toegangstokens.",
     "hint": "eindigt op {hint}",
     "readOnly": "Alleen lezen",
     "readWrite": "Lezen en wijzigen",
@@ -490,7 +485,6 @@
     "resend": "De bevestigingslink opnieuw sturen",
     "scopeNote": "Het token kan uw gegevens lezen, maar niet wijzigen.",
     "scope": "Wat het kan",
-    "scopeWriteNote": "Het token kan ook nieuwe records opslaan, ze wijzigen en ze naar de prullenbak verplaatsen. Elke wijziging bewaart het record zoals het was, zodat u die ongedaan kunt maken, en wat het token heeft gedaan staat in Mijn gegevens downloaden. Kies dit alleen voor een assistent of script dat u genoeg vertrouwt om uw records te wijzigen.",
     "confirmStep": "Bevestig dat u het bent om het token te maken.",
     "create": "Het token maken",
     "failed": "Fout: het token kon niet worden gemaakt. Probeer het opnieuw.",

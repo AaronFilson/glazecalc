@@ -566,7 +566,6 @@
       "hesselberth-roy": "John Hesselberth 和 Ron Roy 為功能性炻器與瓷器的穩定釉所建議的限值，適用於 Orton 6 號和 10 號測溫錐。他們只用一份很短的原料清單，所以這個限值組沒有鋇或鋰的範圍，Orton 10 號測溫錐時也沒有鋅的範圍。",
       "glazecalc": "應用程式在替換原料時會發出提醒的數值：硼、氧化鋁、氧化鈉和氧化鉀，以及低溫燒成時的氧化鎂。"
     },
-    "firing": "燒成",
     "firingUnknown": "未選擇",
     "bands": {
       "low": "低溫燒成，Orton 06–02 號測溫錐",

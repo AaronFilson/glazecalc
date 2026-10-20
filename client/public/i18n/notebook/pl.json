@@ -76,7 +76,6 @@
     "removeField": "Usuń pole",
     "addRow": "Dodaj wiersz do tabeli wypału",
     "addRowWhy": "Najpierw należy dodać pole.",
-    "tableEmpty": "Należy dodać pole powyżej, a potem wiersze.",
     "recordHeading": "Zapisz wypał",
     "rowActions": "Działania na wierszu",
     "cell": "{field}, wiersz {row}",

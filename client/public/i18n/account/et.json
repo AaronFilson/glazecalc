@@ -302,17 +302,14 @@
     "cones": {
       "legend": "Põletus",
       "orton": {
-        "label": "Ortoni koonuste järgi",
         "example": "koonus 04, koonus 6",
         "saved": "Salvestatud: põletus Ortoni koonuste järgi."
       },
       "sk": {
-        "label": "SK-koonuste järgi, JIS R 8101",
         "example": "SK 4a, SK 8",
         "saved": "Salvestatud: põletus SK-koonuste järgi."
       },
       "temperature": {
-        "label": "Temperatuuri järgi, nagu ahju kontrolleri programmis",
         "saved": "Salvestatud: põletus temperatuuri järgi."
       },
       "help": "Kuni te pole valinud, järgib see teie piirkonda: Ameerika Ühendriikides, Ühendkuningriigis, Iirimaal, Austraalias ja Uus-Meremaal Ortoni koonused, Jaapanis SK-koonused, mujal Euroopas temperatuur."
@@ -462,8 +459,6 @@
     "heading": "Juurdepääsuload",
     "intro": "Juurdepääsuluba lubab teie enda tehisintellekti assistendil või skriptil lugeda teie konto retsepte, tooraineid, märkmeid ja põletuspäevikuid ning, kui nii valite, neid ka muuta. Iga luba lakkab töötamast teie valitud päeval või kohe, kui selle tühistate.",
     "howTo": "Tehisintellekti assistendi ühendamine",
-    "listLabel": "Teie juurdepääsuload",
-    "none": "Teil pole juurdepääsulube.",
     "hint": "lõpeb {hint}",
     "readOnly": "Ainult lugemine",
     "readWrite": "Lugemine ja muutmine",
@@ -490,7 +485,6 @@
     "resend": "Saada kinnituslink uuesti",
     "scopeNote": "Luba saab lugeda teie kirjeid, kuid mitte neid muuta.",
     "scope": "Mida see saab teha",
-    "scopeWriteNote": "Luba saab ka salvestada uusi kirjeid, neid muuta ja viia need prügikasti. Iga muudatus säilitab kirje sellisena, nagu see oli, nii et saate selle tagasi võtta, ja mida luba tegi, on jaotises „Minu andmete allalaadimine“. Valige see ainult assistendi või skripti jaoks, keda usaldate teie kirjeid muutma.",
     "confirmStep": "Loa tegemiseks kinnitage, et see olete teie.",
     "create": "Tee luba",
     "failed": "Viga: luba ei saanud teha. Proovige uuesti.",

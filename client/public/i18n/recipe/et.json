@@ -566,7 +566,6 @@
       "hesselberth-roy": "John Hesselberthi ja Ron Roy soovitatud piirväärtused stabiilsetele glasuuridele funktsionaalsel kivikeraamikal ja portselanil, koonustel 6 ja 10. Need püsivad lühikese tooraineloendi juures, seega pole komplektis vahemikku baariumile ega liitiumile, ega tsingile koonusel 10.",
       "glazecalc": "Arvud, mille juures rakendus hoiatab toorainete vahetamisel: boor, alumiiniumoksiid, naatrium ja kaalium ning madalkuumusel magneesiumoksiid."
     },
-    "firing": "Põletus",
     "firingUnknown": "Pole valitud",
     "bands": {
       "low": "Madalkuumus, koonused 06–02",

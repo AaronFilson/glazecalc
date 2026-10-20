@@ -302,17 +302,14 @@
     "cones": {
       "legend": "Výpal",
       "orton": {
-        "label": "Podľa Ortonových kužeľov",
         "example": "kužeľ 04, kužeľ 6",
         "saved": "Uložené: výpal podľa Ortonových kužeľov."
       },
       "sk": {
-        "label": "Podľa kužeľov SK, JIS R 8101",
         "example": "SK 4a, SK 8",
         "saved": "Uložené: výpal podľa kužeľov SK."
       },
       "temperature": {
-        "label": "Podľa teploty, ako v programe regulátora pece",
         "saved": "Uložené: výpal podľa teploty."
       },
       "help": "Kým si nevyberiete, riadi sa to vaším regiónom: Ortonove kužele v USA, Spojenom kráľovstve, Írsku, Austrálii a na Novom Zélande, kužele SK v Japonsku, teplota vo zvyšku Európy."
@@ -462,8 +459,6 @@
     "heading": "Prístupové tokeny",
     "intro": "Prístupový token umožní vášmu vlastnému AI asistentovi alebo skriptu čítať recepty, suroviny, poznámky a záznamy výpalov vo vašom účte a, ak to zvolíte, aj ich meniť. Každý token prestane fungovať v deň, ktorý zvolíte, alebo hneď po zneplatnení.",
     "howTo": "Ako pripojiť AI asistenta",
-    "listLabel": "Vaše prístupové tokeny",
-    "none": "Nemáte žiadne prístupové tokeny.",
     "hint": "končí na {hint}",
     "readOnly": "Len na čítanie",
     "readWrite": "Čítať a meniť",
@@ -490,7 +485,6 @@
     "resend": "Poslať potvrdzovací odkaz znova",
     "scopeNote": "Token môže vaše záznamy čítať, ale nie meniť.",
     "scope": "Čo smie robiť",
-    "scopeWriteNote": "Token môže tiež ukladať nové záznamy, meniť ich a presúvať ich do Koša. Každá zmena zachová záznam tak, ako bol, takže ju môžete vrátiť späť, a čo token urobil, nájdete vo funkcii Stiahnutie mojich údajov. Zvoľte to len pre asistenta alebo skript, ktorému dôverujete natoľko, že mu dovolíte meniť vaše záznamy.",
     "confirmStep": "Ak chcete token vytvoriť, potvrďte, že ste to vy.",
     "create": "Vytvoriť token",
     "failed": "Chyba: token sa nepodarilo vytvoriť. Skúste to, prosím, znova.",

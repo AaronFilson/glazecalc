@@ -76,7 +76,6 @@
     "removeField": "Odstrániť pole",
     "addRow": "Pridať riadok do tabuľky výpalu",
     "addRowWhy": "Najprv pridajte pole.",
-    "tableEmpty": "Pridajte vyššie pole a potom riadky.",
     "recordHeading": "Zaznamenať výpal",
     "rowActions": "Akcie s riadkom",
     "cell": "{field}, riadok {row}",

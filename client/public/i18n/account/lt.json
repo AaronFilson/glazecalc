@@ -302,17 +302,14 @@
     "cones": {
       "legend": "Degimas",
       "orton": {
-        "label": "Pagal Ortono piroskopus",
         "example": "piroskopas 04, piroskopas 6",
         "saved": "Įrašyta: degimas pagal Ortono piroskopus."
       },
       "sk": {
-        "label": "Pagal SK piroskopus, JIS R 8101",
         "example": "SK 4a, SK 8",
         "saved": "Įrašyta: degimas pagal SK piroskopus."
       },
       "temperature": {
-        "label": "Pagal temperatūrą, kaip krosnies valdiklio programoje",
         "saved": "Įrašyta: degimas pagal temperatūrą."
       },
       "help": "Kol nepasirinksite, tai nustatoma pagal regioną: JAV, Jungtinėje Karalystėje, Airijoje, Australijoje ir Naujojoje Zelandijoje – Ortono piroskopai, Japonijoje – SK piroskopai, likusioje Europoje – temperatūra."
@@ -462,8 +459,6 @@
     "heading": "Prieigos žetonai",
     "intro": "Prieigos žetonas leidžia jūsų dirbtinio intelekto asistentui ar scenarijui skaityti jūsų paskyroje esančius receptus, žaliavas, užrašus ir degimo žurnalus ir, jei pasirinksite, juos keisti. Kiekvienas žetonas nustoja veikti jūsų pasirinktą dieną arba iš karto, kai jį atšaukiate.",
     "howTo": "Kaip prijungti dirbtinio intelekto asistentą",
-    "listLabel": "Jūsų prieigos žetonai",
-    "none": "Neturite prieigos žetonų.",
     "hint": "baigiasi {hint}",
     "readOnly": "Tik skaitymas",
     "readWrite": "Skaitymas ir keitimas",
@@ -490,7 +485,6 @@
     "resend": "Siųsti patvirtinimo nuorodą dar kartą",
     "scopeNote": "Žetonas gali skaityti jūsų įrašus, bet jų keisti negali.",
     "scope": "Ką jis gali daryti",
-    "scopeWriteNote": "Žetonas taip pat gali įrašyti naujus įrašus, juos keisti ir perkelti į šiukšlinę. Kiekvienas pakeitimas išsaugo įrašą tokį, koks jis buvo prieš tai, todėl pakeitimą galite anuliuoti, o ką žetonas padarė, matyti skiltyje Mano duomenų atsisiuntimas. Pasirinkite tai tik asistentui ar scenarijui, kuriuo pasitikite tiek, kad leistumėte jam keisti savo įrašus.",
     "confirmStep": "Norėdami sukurti žetoną, patvirtinkite, kad tai jūs.",
     "create": "Sukurti žetoną",
     "failed": "Klaida: žetono sukurti nepavyko. Bandykite dar kartą.",

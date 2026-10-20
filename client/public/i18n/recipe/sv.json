@@ -566,7 +566,6 @@
       "hesselberth-roy": "John Hesselberths och Ron Roys rekommenderade gränser för stabila glasyrer på funktionellt stengods och porslin, vid kägla 6 och kägla 10. De håller sig till en kort lista råvaror, så uppsättningen har inget intervall för barium eller litium, och inte för zink vid kägla 10.",
       "glazecalc": "Siffrorna som appen varnar vid när den byter råvaror: bor, aluminiumoxid, natrium och kalium, och magnesiumoxid vid låg temperatur."
     },
-    "firing": "Bränning",
     "firingUnknown": "Inte vald",
     "bands": {
       "low": "Låg temperatur, kägla 06–02",

@@ -302,17 +302,14 @@
     "cones": {
       "legend": "Ħami",
       "orton": {
-        "label": "Bil-koni Orton",
         "example": "kon 04, kon 6",
         "saved": "Issejvjat: ħami bil-koni Orton."
       },
       "sk": {
-        "label": "Bil-koni SK, JIS R 8101",
         "example": "SK 4a, SK 8",
         "saved": "Issejvjat: ħami bil-koni SK."
       },
       "temperature": {
-        "label": "Bit-temperatura, bħal programm ta’ kontrollur tal-forn",
         "saved": "Issejvjat: ħami bit-temperatura."
       },
       "help": "Sakemm tagħżel, dan isegwi r-reġjun tiegħek: koni Orton fl-Istati Uniti, fir-Renju Unit, fl-Irlanda, fl-Awstralja u f’New Zealand, koni SK fil-Ġappun, u t-temperatura fil-bqija tal-Ewropa."
@@ -462,8 +459,6 @@
     "heading": "Tokens tal-aċċess",
     "intro": "Token tal-aċċess iħalli lill-assistent tal-IA tiegħek stess jew lill-iscript tiegħek jaqra r-riċetti, il-materjali, in-noti u r-reġistri tal-ħami tal-kont tiegħek u, jekk tagħżel hekk, jibdilhom. Kull token jieqaf jaħdem fil-jum li tagħżel, jew hekk kif tirrevokah.",
     "howTo": "Kif tgħaqqad assistent tal-IA",
-    "listLabel": "It-tokens tal-aċċess tiegħek",
-    "none": "M’għandek l-ebda token tal-aċċess.",
     "hint": "jispiċċa b’{hint}",
     "readOnly": "Għall-qari biss",
     "readWrite": "Għall-qari u l-bdil",
@@ -490,7 +485,6 @@
     "resend": "Ibgħat il-link tal-konferma mill-ġdid",
     "scopeNote": "It-token jista’ jaqra r-rekords tiegħek imma ma jistax jibdilhom.",
     "scope": "X’jista’ jagħmel",
-    "scopeWriteNote": "It-token jista’ wkoll isejvja rekords ġodda, jibdilhom u jgħaddihom għall-barmil. Kull bidla żżomm ir-rekord kif kien, għalhekk tkun tista’ terġa’ lura minnha, u dak li għamel it-token jinsab f’Niżżel id-data tiegħi. Agħżel dan biss għal assistent jew script li tafdah biex jibdel ir-rekords tiegħek.",
     "confirmStep": "Biex toħloq it-token, ikkonferma l-identità tiegħek.",
     "create": "Oħloq it-token",
     "failed": "Żball: ma rnexxilniex noħolqu t-token. Erġa’ pprova.",

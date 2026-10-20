@@ -76,7 +76,6 @@
     "removeField": "Xóa cột",
     "addRow": "Thêm một hàng vào bảng nung",
     "addRowWhy": "Hãy thêm một cột trước.",
-    "tableEmpty": "Hãy thêm một cột ở trên, rồi thêm hàng.",
     "recordHeading": "Ghi lại lần nung",
     "rowActions": "Thao tác với hàng",
     "cell": "{field}, hàng {row}",

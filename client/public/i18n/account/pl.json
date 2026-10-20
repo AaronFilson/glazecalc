@@ -302,17 +302,14 @@
     "cones": {
       "legend": "Wypał",
       "orton": {
-        "label": "Według stożków Ortona",
         "example": "stożek 04, stożek 6",
         "saved": "Zapisano: wypał według stożków Ortona."
       },
       "sk": {
-        "label": "Według stożków SK, JIS R 8101",
         "example": "SK 4a, SK 8",
         "saved": "Zapisano: wypał według stożków SK."
       },
       "temperature": {
-        "label": "Według temperatury, jak w programie sterownika pieca",
         "saved": "Zapisano: wypał według temperatury."
       },
       "help": "Do czasu wyboru zależy od regionu: stożki Ortona w Stanach Zjednoczonych, Wielkiej Brytanii, Irlandii, Australii i Nowej Zelandii, stożki SK w Japonii, temperatura w pozostałych krajach Europy."
@@ -462,8 +459,6 @@
     "heading": "Tokeny dostępu",
     "intro": "Token dostępu pozwala własnemu asystentowi AI lub skryptowi odczytywać receptury, surowce, notatki i dzienniki wypałów z konta, a jeśli użytkownik tak wybierze, także je zmieniać. Każdy token przestaje działać w wybranym dniu albo od razu po unieważnieniu.",
     "howTo": "Jak połączyć asystenta AI",
-    "listLabel": "Tokeny dostępu",
-    "none": "Brak tokenów dostępu.",
     "hint": "kończy się na {hint}",
     "readOnly": "Tylko do odczytu",
     "readWrite": "Odczyt i zmiany",
@@ -490,7 +485,6 @@
     "resend": "Wyślij link potwierdzający ponownie",
     "scopeNote": "Token może odczytywać zapisy, ale ich nie zmienia.",
     "scope": "Co może robić",
-    "scopeWriteNote": "Token może też dodawać nowe zapisy, zmieniać je i przenosić do kosza. Każda zmiana zachowuje zapis w dotychczasowej postaci, więc można ją cofnąć, a to, co zrobił token, jest w Pobieraniu moich danych. Tę opcję należy wybrać tylko dla asystenta lub skryptu, któremu można powierzyć zmienianie zapisów.",
     "confirmStep": "Aby utworzyć token, należy potwierdzić tożsamość.",
     "create": "Utwórz token",
     "failed": "Błąd: nie udało się utworzyć tokenu. Proszę spróbować ponownie.",

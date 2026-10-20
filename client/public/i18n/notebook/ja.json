@@ -76,7 +76,6 @@
     "removeField": "項目を削除",
     "addRow": "焼成の表に行を追加",
     "addRowWhy": "先に項目を追加してください。",
-    "tableEmpty": "上で項目を追加してから、行を追加してください。",
     "recordHeading": "焼成を記録",
     "rowActions": "行の操作",
     "cell": "{field}、{row}行目",

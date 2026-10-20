@@ -302,17 +302,14 @@
     "cones": {
       "legend": "Égetés",
       "orton": {
-        "label": "Orton-gúlák szerint",
         "example": "04-es gúla, 6-os gúla",
         "saved": "Mentve: égetés Orton-gúlák szerint."
       },
       "sk": {
-        "label": "SK-gúlák szerint, JIS R 8101",
         "example": "SK 4a, SK 8",
         "saved": "Mentve: égetés SK-gúlák szerint."
       },
       "temperature": {
-        "label": "Hőmérséklet szerint, mint egy kemencevezérlő programjában",
         "saved": "Mentve: égetés hőmérséklet szerint."
       },
       "help": "Amíg nem választ, ez a régióját követi: Orton-gúlák az Egyesült Államokban, az Egyesült Királyságban, Írországban, Ausztráliában és Új-Zélandon, SK-gúlák Japánban, hőmérséklet Európa többi részén."
@@ -462,8 +459,6 @@
     "heading": "Hozzáférési tokenek",
     "intro": "A hozzáférési token lehetővé teszi, hogy a saját MI-asszisztense vagy szkriptje elolvassa a fiókjában lévő recepteket, nyersanyagokat, jegyzeteket és égetési naplókat, és ha úgy dönt, módosítsa is őket. Minden token az Ön által választott napon leáll, vagy amint visszavonja.",
     "howTo": "Hogyan kapcsolhat össze egy MI-asszisztenst",
-    "listLabel": "Hozzáférési tokenjei",
-    "none": "Nincs hozzáférési tokenje.",
     "hint": "vége: {hint}",
     "readOnly": "Csak olvasható",
     "readWrite": "Olvasás és módosítás",
@@ -490,7 +485,6 @@
     "resend": "A megerősítő link újraküldése",
     "scopeNote": "A token elolvashatja a bejegyzéseit, de nem módosíthatja őket.",
     "scope": "Mit tehet",
-    "scopeWriteNote": "A token új bejegyzéseket is menthet, módosíthatja őket, és a Lomtárba helyezheti őket. Minden módosítás megőrzi a bejegyzést olyannak, amilyen volt, így visszavonhatja, és hogy mit tett a token, az az „Adataim letöltése” alatt található. Csak olyan asszisztenshez vagy szkripthez válassza ezt, amelyre rábízná a bejegyzései módosítását.",
     "confirmStep": "A token létrehozásához erősítse meg, hogy Ön az.",
     "create": "Token létrehozása",
     "failed": "Hiba: nem sikerült létrehozni a tokent. Kérjük, próbálja újra.",

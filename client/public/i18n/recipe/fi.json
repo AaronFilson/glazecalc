@@ -566,7 +566,6 @@
       "hesselberth-roy": "John Hesselberthin ja Ron Royn suosittelemat raja-arvot vakaille lasitteille käyttökivitavaralle ja posliinille keiloilla 6 ja 10. Ne pitäytyvät lyhyessä raaka-aineluettelossa, joten sarjassa ei ole vaihteluväliä bariumille tai litiumille eikä sinkille keilalla 10.",
       "glazecalc": "Arvot, joista sovellus varoittaa raaka-aineita vaihdettaessa: boori, alumiinioksidi, natrium ja kalium sekä magnesiumoksidi matalassa poltossa."
     },
-    "firing": "Poltto",
     "firingUnknown": "Ei valittu",
     "bands": {
       "low": "Matalapoltto, keilat 06–02",

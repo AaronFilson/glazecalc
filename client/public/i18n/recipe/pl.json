@@ -566,7 +566,6 @@
       "hesselberth-roy": "Zalecane przez Johna Hesselbertha i Rona Roya limity dla trwałych szkliw na użytkowej kamionce i porcelanie, dla stożka 6 i stożka 10. Ograniczają się do krótkiej listy surowców, więc zestaw nie ma zakresu dla baru ani litu, ani dla cynku przy stożku 10.",
       "glazecalc": "Wartości, przy których aplikacja ostrzega podczas zamiany surowców: bor, tlenek glinu, sód i potas oraz magnez przy niskim wypale."
     },
-    "firing": "Wypał",
     "firingUnknown": "Nie wybrano",
     "bands": {
       "low": "Niski wypał, stożek 06–02",

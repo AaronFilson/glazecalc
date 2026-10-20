@@ -302,17 +302,14 @@
     "cones": {
       "legend": "Pembakaran",
       "orton": {
-        "label": "Ke kerucut Orton",
         "example": "kerucut 04, kerucut 6",
         "saved": "Tersimpan: pembakaran ke kerucut Orton."
       },
       "sk": {
-        "label": "Ke kerucut SK, JIS R 8101",
         "example": "SK 4a, SK 8",
         "saved": "Tersimpan: pembakaran ke kerucut SK."
       },
       "temperature": {
-        "label": "Menurut suhu, seperti program pengendali tungku",
         "saved": "Tersimpan: pembakaran menurut suhu."
       },
       "help": "Sampai Anda memilih, ini mengikuti wilayah Anda: kerucut Orton di AS, Inggris Raya, Irlandia, Australia, dan Selandia Baru, kerucut SK di Jepang, suhu di Eropa lainnya."
@@ -461,8 +458,6 @@
     "heading": "Token akses",
     "intro": "Token akses memungkinkan asisten AI atau skrip Anda sendiri membaca resep, bahan, catatan, dan catatan pembakaran di akun Anda, dan, jika Anda memilih, mengubahnya. Setiap token berhenti berfungsi pada hari yang Anda pilih, atau segera setelah Anda mencabutnya.",
     "howTo": "Cara menghubungkan asisten AI",
-    "listLabel": "Token akses Anda",
-    "none": "Anda tidak punya token akses.",
     "hint": "berakhiran {hint}",
     "readOnly": "Hanya baca",
     "readWrite": "Baca dan ubah",
@@ -489,7 +484,6 @@
     "resend": "Kirim tautan konfirmasi lagi",
     "scopeNote": "Token dapat membaca data Anda tetapi tidak mengubahnya.",
     "scope": "Yang dapat dilakukannya",
-    "scopeWriteNote": "Token ini juga dapat menyimpan catatan baru, mengubahnya, dan memindahkannya ke Sampah. Setiap perubahan menyimpan catatan seperti sebelumnya, jadi Anda dapat mengurungkannya, dan apa yang dilakukan token ada di Unduh data saya. Pilih ini hanya untuk asisten atau skrip yang Anda percayai untuk mengubah catatan Anda.",
     "confirmStep": "Untuk membuat token, konfirmasi bahwa ini Anda.",
     "create": "Buat token",
     "failed": "Kesalahan: token tidak dapat dibuat. Silakan coba lagi.",

@@ -566,7 +566,6 @@
       "hesselberth-roy": "Odporúčané limity Johna Hesselbertha a Rona Roya pre stabilné glazúry na úžitkovej kamenine a porceláne, pre kužeľ 6 a kužeľ 10. Držia sa krátkeho zoznamu surovín, takže sada nemá rozsah pre bárium ani lítium, ani pre zinok pri kuželi 10.",
       "glazecalc": "Hodnoty, pri ktorých aplikácia varuje pri výmene surovín: bór, oxid hlinitý, sóda a potaš a pri nízkom výpale oxid horečnatý."
     },
-    "firing": "Výpal",
     "firingUnknown": "Nezvolené",
     "bands": {
       "low": "Nízky výpal, kužeľ 06 – 02",

@@ -302,17 +302,14 @@
     "cones": {
       "legend": "Brennen",
       "orton": {
-        "label": "Nach Ortonkegeln",
         "example": "Kegel 04, Kegel 6",
         "saved": "Gespeichert: Brennen nach Ortonkegeln."
       },
       "sk": {
-        "label": "Nach SK-Kegeln, JIS R 8101",
         "example": "SK 4a, SK 8",
         "saved": "Gespeichert: Brennen nach SK-Kegeln."
       },
       "temperature": {
-        "label": "Nach Temperatur, wie im Programm einer Ofensteuerung",
         "saved": "Gespeichert: Brennen nach Temperatur."
       },
       "help": "Solange Sie nichts wählen, richtet sich dies nach Ihrer Region: Ortonkegel in den USA, im Vereinigten Königreich, in Irland, Australien und Neuseeland, SK-Kegel in Japan, Temperatur im übrigen Europa."
@@ -462,8 +459,6 @@
     "heading": "Zugriffstoken",
     "intro": "Mit einem Zugriffstoken kann Ihr eigener KI-Assistent oder Ihr eigenes Skript die Rezepte, Rohstoffe, Notizen und Brennprotokolle in Ihrem Konto lesen und, wenn Sie das wählen, ändern. Jedes Token hört an dem Tag auf zu funktionieren, den Sie wählen, oder sobald Sie es widerrufen.",
     "howTo": "So verbinden Sie einen KI-Assistenten",
-    "listLabel": "Ihre Zugriffstoken",
-    "none": "Sie haben keine Zugriffstoken.",
     "hint": "endet auf {hint}",
     "readOnly": "Nur Lesen",
     "readWrite": "Lesen und Ändern",
@@ -490,7 +485,6 @@
     "resend": "Bestätigungslink erneut senden",
     "scopeNote": "Das Token kann Ihre Datensätze lesen, aber nicht ändern.",
     "scope": "Was es kann",
-    "scopeWriteNote": "Das Token kann auch neue Datensätze speichern, sie ändern und in den Papierkorb legen. Jede Änderung bewahrt den Datensatz, wie er war, sodass Sie sie rückgängig machen können, und was das Token getan hat, steht unter „Meine Daten herunterladen“. Wählen Sie dies nur für einen Assistenten oder ein Skript, dem Sie zutrauen, Ihre Datensätze zu ändern.",
     "confirmStep": "Bestätigen Sie, dass Sie es sind, um das Token zu erstellen.",
     "create": "Token erstellen",
     "failed": "Fehler: Das Token konnte nicht erstellt werden. Bitte versuchen Sie es erneut.",

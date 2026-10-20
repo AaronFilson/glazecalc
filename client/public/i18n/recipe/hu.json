@@ -566,7 +566,6 @@
       "hesselberth-roy": "John Hesselberth és Ron Roy ajánlott határértékei stabil mázakhoz használati kőagyagon és porcelánon, 6-os és 10-es gúlánál. Kis számú nyersanyagnál maradnak, ezért a készletben nincs tartomány a báriumra vagy a lítiumra, és a cinkre sem a 10-es gúlánál.",
       "glazecalc": "Azok az értékek, amelyeknél az alkalmazás figyelmeztet a nyersanyagok cseréjekor: bór, timföld, nátrium-oxid és kálium-oxid, valamint alacsony tüzű égetésnél a magnézium-oxid."
     },
-    "firing": "Égetés",
     "firingUnknown": "Nincs kiválasztva",
     "bands": {
       "low": "Alacsony tüzű, 06–02-es gúla",

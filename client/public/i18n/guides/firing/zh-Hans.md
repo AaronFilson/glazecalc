@@ -281,92 +281,92 @@ Label: 调整下一次烧成
 
 :::sk
 
-## 按 SK 测温锥烧成 {#sk-cones}
+## Firing to SK cones {#sk-cones lang=en}
 
-SK 测温锥是按日本标准 JIS R 8101 制造的测温锥，在日本由 Yuko Trading（有恒商事）等经销商销售。和任何测温锥一样，SK 测温锥测量的是热功，不只是温度：器物受到足够的热后，它会软化并弯倒，您读取它弯了多少。证据锥、读取测温锥弯了多少，以及保温，对它的作用与对任何测温锥一样。本节写明每支锥属于哪个系统，绝不把 SK 锥号换成其他系统的锥号：不同测温锥系列的号码不可互换。
+SK cones are the pyrometric cones made to Japan's standard, JIS R 8101, and sold in Japan by dealers such as Yuko Trading (有恒商事). Like any cone, an SK cone measures heatwork, not temperature alone: it softens and bends over when the ware has had enough heat, and you read how far it bent. Witness cones, reading how far a cone has bent, and holds work for it as for any cone. This section names each cone's system, and never turns an SK number into another system's number: the numbers of different cone series are not interchangeable.
 
 > [!NOTE]
-> 数字前始终写上“SK”。许多较早的日本配方只写“SK 8”或“SK 9”，没有说明是哪一家的测温锥。京都测温锥和按 JIS 制造的 SK 测温锥锥号相同，但弯倒的温度不同（见下文“京都测温锥”）。
+> Always write "SK" before the number. Many older Japanese recipes say only "SK 8" or "SK 9" without saying whose cone. Kyoto cones and SK cones to JIS carry the same numbers but bend at different temperatures (see Kyoto cones, below).
 
-### 大号测温锥
+### The large cones
 
-标准有两种尺寸。大号测温锥（大型コーン）“主要用于测量烧成程度”（焼度測定），这正是陶艺人想要的。小号测温锥（SK 26 到 SK 42，位于范围的最高端）“主要用于耐火度试验”，此处不涉及。下表给出从 SK 022 到 SK 20 的大号测温锥。
+The standard has two sizes. Large cones (大型コーン) are "mainly used for measuring the degree of firing" (焼度測定), which is what a potter wants. Small cones (SK 26 to SK 42, at the top of the range) are "mainly used for refractoriness tests" and are not covered here. The table below gives the large cones from SK 022 to SK 20.
 
-这里的锥号从最冷的 SK 022 到 SK 20。SK 015 到 SK 6 之间，印出的号码带有“a”（SK 015a、SK 6a）；按印出的写。
+The numbers run from SK 022, the coolest, up to SK 20 here. Between SK 015 and SK 6 the printed numbers carry an "a" (SK 015a, SK 6a); write it as printed.
 
-### 摆放大号测温锥
+### Setting large cones
 
-把每支大号测温锥插在锥座或一团黏土中，朝弯倒面倾斜。和任何测温锥一样，每次烧成要保持相同的高度和倾斜，因为两者中任何一个不同，都会改变它弯倒的程度。把一组的三支锥（见下文）放在一起，放在窑内深处、靠近装窑中部，使它们受到器物受到的热，同时又能从观火孔看到；关窑之前，确认三支都能看到。
+Set each large cone in a plaque or a pat of clay, leaning toward its bending face. As with any cone, keep the height and the lean the same from firing to firing, because a difference in either changes how far it bends. Set the three cones of the pack (below) together, deep in the kiln near the middle of the load, where they get the heat the ware gets, yet where you can see them through a peephole; before you close the kiln, check that you can see all three.
 
-### 导锥、烧制锥和后备锥
+### Guide, firing and guard cones
 
-测温锥按三支一组出售和摆放：导锥、位于目标的烧制锥和后备锥。烧制锥取配方或黏土所标明的 SK 号，导锥取下一支更冷的锥（表中向上一行），后备锥取下一支更热的锥。导锥开始弯时，快烧完了；后备锥弯了，说明烧得过头了。
+Cones are sold and set as three: a guide cone, a firing cone at the target, and a guard cone. Take the firing cone as the SK number your recipe or clay names, the guide cone as the next cooler cone (one row up in the table) and the guard cone as the next hotter one. When the guide cone starts to bend, the end is near; when the guard cone bends, the firing has gone too far.
 
-### SK 温度对照表
+### The SK chart
 
-Table: SK 大号测温锥（JIS R 8101）：各支的标称（JIS）温度
-Label: SK 对照表
+Table: SK large cones (JIS R 8101): the nominal (JIS) temperature of each
+Label: SK chart
 
-| 测温锥  |      标称（JIS）温度 |
-| ------- | -------------------: |
-| SK 022  |  {{1112 °F; 600 °C}} |
-| SK 021  |  {{1202 °F; 650 °C}} |
-| SK 020  |  {{1238 °F; 670 °C}} |
-| SK 019  |  {{1274 °F; 690 °C}} |
-| SK 018  |  {{1310 °F; 710 °C}} |
-| SK 017  |  {{1346 °F; 730 °C}} |
-| SK 016  |  {{1382 °F; 750 °C}} |
-| SK 015a |  {{1454 °F; 790 °C}} |
-| SK 014a |  {{1499 °F; 815 °C}} |
-| SK 013a |  {{1535 °F; 835 °C}} |
-| SK 012a |  {{1571 °F; 855 °C}} |
-| SK 011a |  {{1616 °F; 880 °C}} |
-| SK 010a |  {{1652 °F; 900 °C}} |
-| SK 09a  |  {{1688 °F; 920 °C}} |
-| SK 08a  |  {{1724 °F; 940 °C}} |
-| SK 07a  |  {{1760 °F; 960 °C}} |
-| SK 06a  |  {{1796 °F; 980 °C}} |
-| SK 05a  | {{1832 °F; 1000 °C}} |
-| SK 04a  | {{1868 °F; 1020 °C}} |
-| SK 03a  | {{1904 °F; 1040 °C}} |
-| SK 02a  | {{1940 °F; 1060 °C}} |
-| SK 01a  | {{1976 °F; 1080 °C}} |
-| SK 1a   | {{2012 °F; 1100 °C}} |
-| SK 2a   | {{2048 °F; 1120 °C}} |
-| SK 3a   | {{2084 °F; 1140 °C}} |
-| SK 4a   | {{2120 °F; 1160 °C}} |
-| SK 5a   | {{2156 °F; 1180 °C}} |
-| SK 6a   | {{2192 °F; 1200 °C}} |
-| SK 7    | {{2246 °F; 1230 °C}} |
-| SK 8    | {{2282 °F; 1250 °C}} |
-| SK 9    | {{2336 °F; 1280 °C}} |
-| SK 10   | {{2372 °F; 1300 °C}} |
-| SK 11   | {{2408 °F; 1320 °C}} |
-| SK 12   | {{2462 °F; 1350 °C}} |
-| SK 13   | {{2516 °F; 1380 °C}} |
-| SK 14   | {{2570 °F; 1410 °C}} |
-| SK 15   | {{2615 °F; 1435 °C}} |
-| SK 16   | {{2660 °F; 1460 °C}} |
-| SK 17   | {{2696 °F; 1480 °C}} |
-| SK 18   | {{2732 °F; 1500 °C}} |
-| SK 19   | {{2768 °F; 1520 °C}} |
-| SK 20   | {{2786 °F; 1530 °C}} |
+| Cone    | Nominal (JIS) temperature |
+| ------- | ------------------------: |
+| SK 022  |       {{1112 °F; 600 °C}} |
+| SK 021  |       {{1202 °F; 650 °C}} |
+| SK 020  |       {{1238 °F; 670 °C}} |
+| SK 019  |       {{1274 °F; 690 °C}} |
+| SK 018  |       {{1310 °F; 710 °C}} |
+| SK 017  |       {{1346 °F; 730 °C}} |
+| SK 016  |       {{1382 °F; 750 °C}} |
+| SK 015a |       {{1454 °F; 790 °C}} |
+| SK 014a |       {{1499 °F; 815 °C}} |
+| SK 013a |       {{1535 °F; 835 °C}} |
+| SK 012a |       {{1571 °F; 855 °C}} |
+| SK 011a |       {{1616 °F; 880 °C}} |
+| SK 010a |       {{1652 °F; 900 °C}} |
+| SK 09a  |       {{1688 °F; 920 °C}} |
+| SK 08a  |       {{1724 °F; 940 °C}} |
+| SK 07a  |       {{1760 °F; 960 °C}} |
+| SK 06a  |       {{1796 °F; 980 °C}} |
+| SK 05a  |      {{1832 °F; 1000 °C}} |
+| SK 04a  |      {{1868 °F; 1020 °C}} |
+| SK 03a  |      {{1904 °F; 1040 °C}} |
+| SK 02a  |      {{1940 °F; 1060 °C}} |
+| SK 01a  |      {{1976 °F; 1080 °C}} |
+| SK 1a   |      {{2012 °F; 1100 °C}} |
+| SK 2a   |      {{2048 °F; 1120 °C}} |
+| SK 3a   |      {{2084 °F; 1140 °C}} |
+| SK 4a   |      {{2120 °F; 1160 °C}} |
+| SK 5a   |      {{2156 °F; 1180 °C}} |
+| SK 6a   |      {{2192 °F; 1200 °C}} |
+| SK 7    |      {{2246 °F; 1230 °C}} |
+| SK 8    |      {{2282 °F; 1250 °C}} |
+| SK 9    |      {{2336 °F; 1280 °C}} |
+| SK 10   |      {{2372 °F; 1300 °C}} |
+| SK 11   |      {{2408 °F; 1320 °C}} |
+| SK 12   |      {{2462 °F; 1350 °C}} |
+| SK 13   |      {{2516 °F; 1380 °C}} |
+| SK 14   |      {{2570 °F; 1410 °C}} |
+| SK 15   |      {{2615 °F; 1435 °C}} |
+| SK 16   |      {{2660 °F; 1460 °C}} |
+| SK 17   |      {{2696 °F; 1480 °C}} |
+| SK 18   |      {{2732 °F; 1500 °C}} |
+| SK 19   |      {{2768 °F; 1520 °C}} |
+| SK 20   |      {{2786 °F; 1530 °C}} |
 
-所有数据均为标称值（JIS）：即标准为该测温锥给出的温度，如 Yuko Trading 的表所印。该表没有印出升温速率。标准给出的是参考温度。以陶艺人约 100 °C/h 的升温速率，京都市产业技术研究所测得其京都测温锥的弯倒温度比同号的 JIS 数据低 47～79 °C；我们没有找到按 JIS 制造的 SK 测温锥的此类测量。放一支证据锥来比较。
+Every figure is nominal (JIS): the temperature the standard gives for the cone, as printed in Yuko Trading's table. The table does not print a heating rate. The standard gives reference temperatures. At a potter's rate of about 100 °C/h, Kyoto's municipal institute measured its own Kyoto cones bending 47–79 °C cooler than the JIS figure for the same number; we found no such measurements for SK cones to JIS. Set a witness cone and compare.
 
-### 京都测温锥
+### Kyoto cones
 
-京都测温锥（京都ゼーゲル）由京都市的研究所制造，已不再生产：新闻报道说，研究所在 2009 财年末停止了生产。它们的锥号与按 JIS 制造的 SK 测温锥相同，但弯倒时更冷：京都测温锥在与低两三号的 JIS SK 测温锥相近的温度弯倒。出自京都、写着“SK 8”的配方，可能指的是京都测温锥。研究所发布了给从京都测温锥改用 Orton 测温锥的陶艺人的建议，并用 Orton 测温锥 10 号替代其自己的京都测温锥 SK 12；那是研究所根据自己在 100 °C/h 下的测量作出的选择，不适用于其他任何测温锥。
+Kyoto cones (京都ゼーゲル), made by Kyoto's municipal institute, are no longer made: news reports say the institute ended production at the close of fiscal 2009. They carry the same numbers as SK cones to JIS but bend cooler: a Kyoto cone bends at about the temperature of the SK cone to JIS two or three numbers lower. A recipe from Kyoto that says "SK 8" may mean a Kyoto cone. The institute has published advice for potters moving from Kyoto cones to Orton cones, and substitutes Orton cone 10 for its own Kyoto SK 12. That is the institute's choice from its own measurements: it bent Kyoto cones and Orton cones in the same kiln at 100 °C/h, and Kyoto SK 12 (1290 °C) bent where Orton 10 (1290 °C) did. In the same table Kyoto SK 8 (1198 °C) bent near Orton 5 (1207 °C), and Kyoto SK 10 (1232 °C) where Orton 7 (1232 °C) did. Glazecalc uses this table, not the Orton chart at 60 °C/h, when it shows an SK cone beside an Orton cone, and says each match is approximate.
 
-### 日本销售的 Orton 测温锥
+### Orton cones sold in Japan
 
-Orton 带底座的测温锥在日本以“立つゼーゲル”（“站立的塞格锥”）的名称销售，因为它们不需要锥座或支架。它们是 Orton 测温锥，用 Orton 的锥号和 Orton 的对照表（见上文）：要烧到其中一支，只能按它的 Orton 锥号；SK 测温锥和 Orton 测温锥要分放在不同的组里，切勿放在同一组。
+Orton self-supporting cones are sold in Japan under the name 立つゼーゲル ("standing Seger"), because they need no plaque or stand. They are Orton cones, with Orton's numbers and Orton's chart (above): fire to one only by its Orton number, and keep SK and Orton cones in separate packs, never in the same one.
 
-### SK 测温锥的来源
+### Sources for SK cones
 
-- [Yuko Trading（有恒商事株式会社）：標準溶倒温度表（SK 表，2026年10月14日查阅）](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
-- [JSA：JIS R 8101:1999，耐火度試験用標準コーン（现行有效，2023年10月20日再次确认）](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
-- [京都市产业技术研究所：从京都测温锥改用 Orton 测温锥的注意事项](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
+- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (the SK table, checked 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
+- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (in force, reconfirmed 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
+- [Kyoto Municipal Institute of Industrial Technology and Culture: points to note when moving from Kyoto cones to Orton cones](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
 
 :::
 

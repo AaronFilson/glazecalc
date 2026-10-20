@@ -302,17 +302,14 @@
     "cones": {
       "legend": "Cocción",
       "orton": {
-        "label": "Por conos Orton",
         "example": "cono 04, cono 6",
         "saved": "Guardado: cocción por conos Orton."
       },
       "sk": {
-        "label": "Por conos SK, JIS R 8101",
         "example": "SK 4a, SK 8",
         "saved": "Guardado: cocción por conos SK."
       },
       "temperature": {
-        "label": "Por temperatura, como el programa de un programador de horno",
         "saved": "Guardado: cocción por temperatura."
       },
       "help": "Mientras no elija, sigue a su región: conos Orton en EE. UU., el Reino Unido, Irlanda, Australia y Nueva Zelanda, conos SK en Japón, y temperatura en el resto de Europa."
@@ -462,8 +459,6 @@
     "heading": "Tokens de acceso",
     "intro": "Un token de acceso permite a su propio asistente de IA o script leer las recetas, los materiales, las notas y los registros de cocción de su cuenta y, si usted lo elige, cambiarlos. Cada token deja de funcionar el día que elija, o en cuanto lo revoque.",
     "howTo": "Cómo conectar un asistente de IA",
-    "listLabel": "Sus tokens de acceso",
-    "none": "No tiene ningún token de acceso.",
     "hint": "termina en {hint}",
     "readOnly": "Solo lectura",
     "readWrite": "Lectura y modificación",
@@ -490,7 +485,6 @@
     "resend": "Enviar de nuevo el enlace de confirmación",
     "scopeNote": "El token puede leer sus registros, pero no cambiarlos.",
     "scope": "Qué puede hacer",
-    "scopeWriteNote": "El token también puede guardar registros nuevos, cambiarlos y moverlos a la papelera. Cada cambio conserva el registro como era, así que puede deshacerlo, y lo que hizo el token está en Descargar mis datos. Elija esta opción solo para un asistente o un script en el que confíe para cambiar sus registros.",
     "confirmStep": "Para crear el token, confirme que es usted.",
     "create": "Crear el token",
     "failed": "Error: no se ha podido crear el token. Inténtelo de nuevo.",

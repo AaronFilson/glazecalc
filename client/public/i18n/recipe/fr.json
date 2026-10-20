@@ -566,7 +566,6 @@
       "hesselberth-roy": "Les limites recommandées par John Hesselberth et Ron Roy pour des émaux stables sur du grès et de la porcelaine utilitaires, au cône 6 et au cône 10. Elles s’en tiennent à une courte liste de matières : le jeu n’a donc pas de plage pour le baryum ou le lithium, ni pour le zinc au cône 10.",
       "glazecalc": "Les chiffres à partir desquels l’application prévient quand elle remplace des matières : bore, alumine, soude et potasse, et magnésie à basse température."
     },
-    "firing": "Cuisson",
     "firingUnknown": "Non choisie",
     "bands": {
       "low": "Basse température, cône 06–02",

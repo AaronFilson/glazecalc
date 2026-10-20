@@ -302,17 +302,14 @@
     "cones": {
       "legend": "Žganje",
       "orton": {
-        "label": "Po Ortonovih stožcih",
         "example": "stožec 04, stožec 6",
         "saved": "Shranjeno: žganje po Ortonovih stožcih."
       },
       "sk": {
-        "label": "Po stožcih SK, JIS R 8101",
         "example": "SK 4a, SK 8",
         "saved": "Shranjeno: žganje po stožcih SK."
       },
       "temperature": {
-        "label": "Po temperaturi, kot v programu krmilnika peči",
         "saved": "Shranjeno: žganje po temperaturi."
       },
       "help": "Dokler ne izberete, to sledi vaši regiji: Ortonovi stožci v ZDA, Združenem kraljestvu, na Irskem, v Avstraliji in na Novi Zelandiji, stožci SK na Japonskem, temperatura v preostali Evropi."
@@ -462,8 +459,6 @@
     "heading": "Dostopni žetoni",
     "intro": "Dostopni žeton omogoča vašemu pomočniku z umetno inteligenco ali skriptu, da bere recepte, surovine, zapiske in dnevnike žganja v vašem računu in, če tako izberete, tudi spreminja. Vsak žeton preneha delovati na dan, ki ga izberete, ali takoj, ko ga prekličete.",
     "howTo": "Kako povezati pomočnika z umetno inteligenco",
-    "listLabel": "Vaši dostopni žetoni",
-    "none": "Nimate dostopnih žetonov.",
     "hint": "konča se na {hint}",
     "readOnly": "Samo branje",
     "readWrite": "Branje in spreminjanje",
@@ -490,7 +485,6 @@
     "resend": "Znova pošlji potrditveno povezavo",
     "scopeNote": "Žeton lahko bere vaše zapise, ne more pa jih spreminjati.",
     "scope": "Kaj lahko počne",
-    "scopeWriteNote": "Žeton lahko tudi shranjuje nove zapise, jih spreminja in premika v koš. Vsaka sprememba ohrani zapis, kakršen je bil, zato jo lahko razveljavite, kaj je žeton naredil, pa je v razdelku Prenos mojih podatkov. To izberite samo za pomočnika ali skript, ki mu zaupate, da bo spreminjal vaše zapise.",
     "confirmStep": "Za ustvarjanje žetona potrdite, da ste to vi.",
     "create": "Ustvari žeton",
     "failed": "Napaka: žetona ni bilo mogoče ustvariti. Poskusite znova.",

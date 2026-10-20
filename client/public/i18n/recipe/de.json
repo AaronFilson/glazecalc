@@ -566,7 +566,6 @@
       "hesselberth-roy": "Die empfohlenen Grenzwerte von John Hesselberth und Ron Roy für stabile Glasuren auf Gebrauchssteinzeug und Porzellan bei Kegel 6 und Kegel 10. Sie beschränken sich auf eine kurze Liste von Rohstoffen, deshalb hat die Tabelle keinen Bereich für Barium oder Lithium und bei Kegel 10 auch keinen für Zink.",
       "glazecalc": "Die Werte, bei denen die App warnt, wenn sie Rohstoffe austauscht: Bor, Tonerde, Natrium und Kalium sowie Magnesium im niedrigen Brennbereich."
     },
-    "firing": "Brand",
     "firingUnknown": "Nicht gewählt",
     "bands": {
       "low": "Niedriger Brennbereich, Kegel 06–02",

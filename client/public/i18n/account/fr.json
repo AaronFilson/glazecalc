@@ -302,17 +302,14 @@
     "cones": {
       "legend": "Cuisson",
       "orton": {
-        "label": "En cônes Orton",
         "example": "cône 04, cône 6",
         "saved": "Enregistré : cuisson en cônes Orton."
       },
       "sk": {
-        "label": "En cônes SK, JIS R 8101",
         "example": "SK 4a, SK 8",
         "saved": "Enregistré : cuisson en cônes SK."
       },
       "temperature": {
-        "label": "Par température, comme sur le programmateur du four",
         "saved": "Enregistré : cuisson par température."
       },
       "help": "Tant que vous n’avez pas choisi, ce réglage suit votre région : cônes Orton aux États-Unis, au Royaume-Uni, en Irlande, en Australie et en Nouvelle-Zélande, cônes SK au Japon, température dans le reste de l’Europe."
@@ -462,8 +459,6 @@
     "heading": "Jetons d’accès",
     "intro": "Un jeton d’accès permet à votre propre assistant IA ou à votre propre script de lire les recettes, matières, notes et relevés de cuisson de votre compte et, si vous le choisissez, de les modifier. Chaque jeton cesse de fonctionner le jour que vous choisissez, ou dès que vous le révoquez.",
     "howTo": "Comment connecter un assistant IA",
-    "listLabel": "Vos jetons d’accès",
-    "none": "Vous n’avez aucun jeton d’accès.",
     "hint": "se termine par {hint}",
     "readOnly": "Lecture seule",
     "readWrite": "Lecture et modification",
@@ -490,7 +485,6 @@
     "resend": "Renvoyer le lien de confirmation",
     "scopeNote": "Le jeton peut lire vos enregistrements, mais pas les modifier.",
     "scope": "Ce qu’il peut faire",
-    "scopeWriteNote": "Le jeton peut aussi créer de nouveaux enregistrements, les modifier et les mettre à la corbeille. Chaque modification garde l’enregistrement tel qu’il était : vous pouvez donc l’annuler, et ce que le jeton a fait figure dans Télécharger mes données. Choisissez cette option seulement pour un assistant ou un script à qui vous faites confiance pour modifier vos enregistrements.",
     "confirmStep": "Pour créer le jeton, confirmez que c’est bien vous.",
     "create": "Créer le jeton",
     "failed": "Erreur : impossible de créer le jeton. Veuillez réessayer.",
