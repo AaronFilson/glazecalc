@@ -9,7 +9,7 @@ const { nextEmail, sentTo } = require('./mail');
 // page, allows reading only, the app swaps its code for tokens, reads through
 // /mcp and is asked to step up when it tries to change something; then the
 // person revokes it on Connected apps and the token stops working. The app's
-// own computer (the loopback redirect) is played by page.route.
+// own computer (the loopback redirect) has no listener: the browser's request is enough.
 
 const REDIRECT = 'http://127.0.0.1:7777/callback';
 
@@ -90,16 +90,18 @@ test('connects an app read only, which reads, is asked to step up to change, and
 
   // Read only.
   const mailsBefore = sentTo(email).length;
-  // The browser takes the answer to the app's listener on this computer, played here by page.route, so
-  // the page has finished arriving there before the test opens another (an unanswered address would
-  // end in an error page that can interrupt the next navigation).
-  await page.route(REDIRECT + '?**', (route) =>
-    route.fulfill({ status: 200, contentType: 'text/html', body: '<!doctype html><title>Kiln Helper</title>' })
-  );
+  // The browser takes the answer to the app's listener on this computer. Nothing listens there, so
+  // that navigation ends on the browser's error page; the test waits for it to land, or it can
+  // interrupt the next page the test opens. (page.route cannot play the listener: Playwright does not
+  // route a request the browser reaches through a server's redirect.)
+  const landed = page.waitForEvent('framenavigated', {
+    predicate: (frame) =>
+      frame === page.mainFrame() && (frame.url().startsWith(REDIRECT) || frame.url().startsWith('chrome-error:'))
+  });
   const callback = page.waitForRequest((req) => req.url().startsWith(REDIRECT + '?'));
   await page.getByRole('button', { name: 'Allow', exact: true }).click();
   const answer = new URL((await callback).url());
-  await page.waitForURL(REDIRECT + '?**');
+  await landed;
   expect(answer.searchParams.get('code')).toBeTruthy();
   expect(answer.searchParams.get('state')).toBe(state);
 
