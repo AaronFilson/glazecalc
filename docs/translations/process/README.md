@@ -137,5 +137,8 @@ first (ग्लेज़, फ्रिट) with CSTT's term in brackets where i
 glossary rests on the Indian shops, Hindi potters' usage, CSTT, NCERT's Hindi chemistry and BIS's Hindi titles. Both
 write the digits 0 to 9 only, never Arabic-Indic or Devanagari digits: the app writes each region's own digits and
 grouping (Arabic-Indic for Egypt, 0 to 9 for the UAE and the Maghreb, the Indian grouping 12,34,567) when it formats a
-number, and the numbers check reads 0 to 9. The style sheets are docs/translations/ar.md and hi.md. Neither goes live
+number, and the numbers check reads 0 to 9. The style sheets are docs/translations/ar.md (written 2026-10-20: 331 rows,
+its "Choices for the owner and a native potter" first, then the gender-neutral forms, the six plural forms with a table
+per counted noun, the month names by region, and the law's words from Algeria's Arabic Journal officiel) and hi.md (to
+come). Neither goes live
 before the groundwork for right-to-left pages, digits, fonts and the numbers check (Phase A) and the regions (Phase C).
