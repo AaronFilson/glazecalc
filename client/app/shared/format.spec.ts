@@ -60,6 +60,21 @@ describe('numbers, dates and temperatures as the reader writes them', () => {
     expect(read('-3,5')).toBe(-3.5);
   });
 
+  it('reads Indian digit groups, and numbers as Intl writes them in Arabic, Bengali and Hindi', () => {
+    const read = (text: string, locale = 'en-US') => parseNumber(text, 'either', locale);
+    expect([read('1,00,000'), read('12,34,567.5'), read('१,००,०००')]).toEqual([100000, 1234567.5, 100000]);
+    // What the app writes, read back as typed: Arabic-Indic in Egypt, Bengali in Bangladesh, 0–9 in India.
+    for (const locale of ['ar-EG-u-nu-arab', 'bn-BD-u-nu-beng', 'hi-IN-u-nu-latn', 'hi-IN-u-nu-deva']) {
+      formatLocale.set(locale);
+      expect(read(fixed(1234567.5, 1), locale), locale).toBe(1234567.5);
+      expect(read(fixed(-3, 0), locale), locale).toBe(-3);
+      expect(read(percent(5), locale), locale).toBe(5);
+    }
+    formatLocale.set('ar-EG-u-nu-arab');
+    expect([fixed(1234.5, 1), percent(5).startsWith('٥٪')]).toEqual(['١٬٢٣٤٫٥', true]);
+    expect(toPlain('١٢٫٥', 'either', 'ar-EG-u-nu-arab')).toBe('12.5');
+  });
+
   it('follows the decimal-mark setting when it is not "either"', () => {
     expect([parseNumber('12,5', 'comma', 'en-US'), parseNumber('12.5', 'comma', 'en-US')]).toEqual([12.5, null]);
     expect([parseNumber('12.5', 'point', 'de-DE'), parseNumber('12,5', 'point', 'de-DE')]).toEqual([12.5, null]);
