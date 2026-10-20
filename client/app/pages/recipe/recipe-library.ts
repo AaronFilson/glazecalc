@@ -61,12 +61,12 @@ let nextId = 0;
           </button>
         </div>
       </div>
-      <label class="visually-hidden" [for]="filterId">{{
+      <label class="visually-hidden" [for]="filterId()">{{
         t('recipe.library.filterLabel', { tab: tab(), noun: noun() })
       }}</label>
       <div class="library-tools">
         <input
-          [id]="filterId"
+          [id]="filterId()"
           type="search"
           class="form-control form-control-sm library-filter"
           [placeholder]="t('standard.filter')"
@@ -75,11 +75,11 @@ let nextId = 0;
           (input)="filter.set($any($event.target).value)"
         />
         @if (tab() === 'standard') {
-          <label class="visually-hidden" [for]="filterId + '-region'">{{
+          <label class="visually-hidden" [for]="filterId() + '-region'">{{
             t('recipe.library.soldIn', { noun: noun() })
           }}</label>
           <select
-            [id]="filterId + '-region'"
+            [id]="filterId() + '-region'"
             class="form-select form-select-sm library-region"
             (change)="setRegion($any($event.target).value)"
           >
@@ -170,7 +170,10 @@ export class RecipeLibrary<T extends LibraryItem = LibraryItem> {
   readonly pick = output<T>();
   readonly retry = output<void>();
 
-  protected readonly filterId = 'library-filter-' + nextId++;
+  /** The filter field's id, for a page that sends the focus there (Enter in an amount); one is made up otherwise. */
+  readonly filterFieldId = input<string | null>(null);
+  private readonly madeUpId = 'library-filter-' + nextId++;
+  protected readonly filterId = computed(() => this.filterFieldId() ?? this.madeUpId);
   protected readonly filter = signal('');
   protected readonly regions = REGIONS;
   /** The standard list is narrowed to the region chosen last; general records show everywhere. */

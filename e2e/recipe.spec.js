@@ -378,6 +378,38 @@ test('asks for an amount for every material', async ({ page }) => {
   await expect(amount(page, 'Whiting')).not.toHaveAttribute('aria-invalid');
 });
 
+test('Enter in an amount goes back to the list to add the next material from, by keyboard alone', async ({ page }) => {
+  const library = page.locator('.library', { hasText: 'Add materials' });
+  await library.getByRole('button', { name: /^Standard/ }).click();
+  const search = library.getByRole('searchbox');
+  await search.fill('Whiting');
+  await library.getByRole('button', { name: 'Add Whiting', exact: true }).click();
+  await expect(amount(page, 'Whiting')).toBeFocused();
+  // Nothing typed yet: Enter stays, and says what is missing.
+  await page.keyboard.press('Enter');
+  await expectFieldProblem(page, 'material-amount-0', 'Enter an amount (0 is fine).');
+  await expect(amount(page, 'Whiting')).toBeFocused();
+  await page.keyboard.type('20');
+  await page.keyboard.press('Enter');
+  await expect(search).toBeFocused();
+  await expect(amount(page, 'Whiting')).not.toHaveAttribute('aria-invalid');
+  // The next one is found and added without the mouse.
+  await page.keyboard.type('Silica');
+  // Past the region list to the first name found.
+  await page.keyboard.press('Tab');
+  await expect(library.getByRole('combobox')).toBeFocused();
+  await page.keyboard.press('Tab');
+  await expect(library.locator('.library-list button').first()).toBeFocused();
+  await page.keyboard.press('Enter');
+  await expect(page.locator('#material-amount-1')).toBeFocused();
+  await page.keyboard.type('30');
+  await page.keyboard.press('Enter');
+  await expect(search).toBeFocused();
+  await expect(page.locator('.recipe-total')).toHaveText('50');
+  // Enter saved nothing.
+  await expect(saved(page)).toHaveCount(0);
+});
+
 test('the instructions open for a new account, can be hidden, stay hidden, and come back', async ({ page }) => {
   const heading = page.getByRole('heading', { name: 'How to use the recipe calculator' });
   await expect(heading).toBeVisible();

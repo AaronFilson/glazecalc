@@ -394,6 +394,7 @@
                       [attr.aria-label]="t('recipe.page.amountOf', { name: line.name })"
                       [gcNumber]="line.amount"
                       (gcNumberChange)="setAmount($index, $event)"
+                      (keydown.enter)="amountEntered($event, 'material', $index)"
                       [gcField]="checks"
                       [gcFieldName]="'material-amount-' + $index"
                     />
@@ -862,6 +863,7 @@
         <gc-recipe-library
           [heading]="t('recipe.page.addMaterials')"
           noun="materials"
+          filterFieldId="materials-filter"
           [mine]="myMaterials()"
           [standard]="standardMaterials()"
           [standardFailed]="standardMaterialsFailed()"
@@ -901,6 +903,7 @@
                         [attr.aria-label]="t('recipe.page.amountOf', { name: line.name })"
                         [gcNumber]="line.amount"
                         (gcNumberChange)="setAdditiveAmount($index, $event)"
+                        (keydown.enter)="amountEntered($event, 'additive', $index)"
                         [gcField]="checks"
                         [gcFieldName]="'additive-amount-' + $index"
                       />
@@ -946,6 +949,7 @@
         <gc-recipe-library
           [heading]="t('recipe.page.addAdditives')"
           noun="additives"
+          filterFieldId="additives-filter"
           mineLink="/additive"
           [mine]="myAdditives()"
           [standard]="standardAdditives()"

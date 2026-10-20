@@ -62,6 +62,17 @@ export class FieldChecks {
     this.mark(field, this.checks()[field]?.() ?? '');
   }
 
+  /**
+   * Checks the field the focus is in, as Enter in it does, and says its problem to screen readers (the focus
+   * stays, so the mark alone would not be read). True when there is none.
+   */
+  confirm(field: string): boolean {
+    this.check(field);
+    const problem = this.problem(field);
+    if (problem) announce(problem);
+    return !problem;
+  }
+
   /** Checks a field again if it is marked, as it changes. */
   recheck(field: string): void {
     if (this.problem(field)) this.check(field);
