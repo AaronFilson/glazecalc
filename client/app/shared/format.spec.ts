@@ -71,7 +71,7 @@ describe('numbers, dates and temperatures as the reader writes them', () => {
       expect(read(percent(5), locale), locale).toBe(5);
     }
     formatLocale.set('ar-EG-u-nu-arab');
-    expect([fixed(1234.5, 1), percent(5).startsWith('٥٪')]).toEqual(['١٬٢٣٤٫٥', true]);
+    expect([fixed(12345.5, 1), percent(5).startsWith('٥٪')]).toEqual(['١٢٬٣٤٥٫٥', true]);
     expect(toPlain('١٢٫٥', 'either', 'ar-EG-u-nu-arab')).toBe('12.5');
   });
 
