@@ -72,7 +72,9 @@ describe('LocaleService', () => {
     expect(browserRegion(['en', 'ja-JP'])).toBe('JP');
     expect(browserRegion(['en', 'ko-KR'])).toBe('KR');
     expect(browserRegion(['en', 'th-TH'])).toBe('TH');
-    expect(browserRegion(['en', 'ar-EG'])).toBe('');
+    expect(browserRegion(['en', 'ar-EG'])).toBe('EG');
+    // Saudi Arabia is not a region (the owner's decision, 2026-10-20).
+    expect(browserRegion(['en', 'ar-SA'])).toBe('');
     expect(browserRegion(['tr-TR', 'en'])).toBe('TR');
     expect(browserRegion(['not a tag'])).toBe('');
   });
@@ -239,6 +241,13 @@ describe('prerenderRegion', () => {
   });
 
   it('names none for English, a pseudo-locale, or a language no region lists', () => {
-    expect(['en', 'en-XA', 'ar', 'ar-XB'].map(prerenderRegion)).toEqual(['', '', '', '']);
+    // Arabic is listed by Egypt now (below); its pseudo-locale is English.
+    expect(['en', 'en-XA', 'ar-XB', 'xx'].map((language) => prerenderRegion(language))).toEqual(['', '', '', '']);
+  });
+
+  it('writes the subcontinent’s languages and Arabic for the country planned, and French still for France', () => {
+    // Egypt is the first of the Arabic-speaking regions; Morocco and Algeria list French after Arabic.
+    expect(['ar', 'hi', 'ur', 'bn'].map((language) => prerenderRegion(language))).toEqual(['EG', 'IN', 'PK', 'BD']);
+    expect(['fr', 'en'].map((language) => prerenderRegion(language))).toEqual(['FR', '']);
   });
 });

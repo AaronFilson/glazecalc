@@ -19,6 +19,8 @@ export interface SafetyLine {
   area?: string;
   /** Another number for the same line. */
   also?: string;
+  /** The tel: link for also, where it is linked (Morocco's poison centre's second number). */
+  alsoTel?: string;
   online?: { name: string; url: string };
 }
 

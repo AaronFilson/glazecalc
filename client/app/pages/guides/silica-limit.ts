@@ -168,8 +168,12 @@ const KIND: Record<Limit['kind'], string> = {
       } @else if (facts.eu) {
         <p>{{ t('guides.silica.unknown', { region: regionName(), value: number(eu.quartz) }) }}</p>
       } @else {
-        <!-- Outside the EU, with other facts but no limit read (the Philippines): no EU limit to fall back on. -->
+        <!-- Outside the EU, with other facts but no limit read (Pakistan): no EU limit to fall back on. -->
         <p>{{ t('guides.silica.noData', { region: regionName() }) }}</p>
+        <!-- Where there is no national limit, what was found instead (India's: each state sets its own). -->
+        @if (facts.noLimit; as noLimit) {
+          <p>{{ words(noLimit.note) }}</p>
+        }
       }
       @if (facts.respirators; as respirators) {
         <p>
@@ -231,6 +235,7 @@ export class SilicaLimit {
     return earliest(
       [
         facts?.silica?.checked,
+        facts?.noLimit?.checked,
         this.earlier()?.checked,
         facts?.silica?.recommended?.checked,
         facts?.respirators?.checked,
@@ -242,6 +247,7 @@ export class SilicaLimit {
     const facts = this.facts();
     return [
       facts?.silica?.source,
+      facts?.noLimit?.source,
       this.earlier()?.source,
       facts?.silica?.recommended?.source,
       facts?.respirators?.source,

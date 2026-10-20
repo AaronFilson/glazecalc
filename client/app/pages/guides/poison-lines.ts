@@ -67,8 +67,15 @@ import { RegionChoice, RegionSelect, SourceLinks, earliest } from './region-sele
                   </th>
                   <td class="num">
                     <a class="phone" dir="ltr" [href]="'tel:' + line.tel">{{ line.number }}</a>
-                    @if (line.also) {
+                    @if (line.also && !line.alsoTel) {
                       <br />{{ t('guides.poison.or', { number: line.also }) }}
+                    }
+                    <!-- Another number with its own link (Morocco's poison centre's, which answers from abroad). -->
+                    @if (line.also && line.alsoTel) {
+                      <br /><gc-rich
+                        [text]="t('guides.poison.orCall', { number: unbroken(line.also) })"
+                        [links]="{ link: 'tel:' + line.alsoTel }"
+                      />
                     }
                   </td>
                   <td>
@@ -154,6 +161,14 @@ export class PoisonLines {
   protected readonly checked = computed(() => earliest(this.lines().map((line) => line.checked)));
   /** The pages the numbers were checked on. */
   protected readonly sources = computed(() => this.lines().map((line) => line.source));
+
+  /**
+   * A number written with no-break spaces, so it stays on one line and, as one run of digits, reads
+   * left to right in a right-to-left page too.
+   */
+  protected unbroken(number: string): string {
+    return number.replace(/ /g, '\u00a0');
+  }
 
   /** Words from the data, translated where there is a translation of exactly them. */
   protected words(text: string | undefined): string {

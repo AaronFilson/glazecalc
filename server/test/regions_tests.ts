@@ -139,8 +139,15 @@ describe('regions', () => {
   });
 
   it("should dial what it shows: each link's digits match the number as written", () => {
+    // A line's other number is checked the same way where it has its own link (Morocco's poison centre's).
+    const numbers = (code: string) =>
+      all(code).flatMap((l) => [
+        { name: l.name, number: l.number, tel: l.tel },
+        ...(l.also && l.alsoTel ? [{ name: l.name, number: l.also, tel: l.alsoTel }] : [])
+      ]);
+    expect(numbers('MA').map((l) => l.tel)).to.include('+212537686464');
     for (const region of regions.REGIONS) {
-      for (const line of all(region.code).filter((l) => l.number)) {
+      for (const line of numbers(region.code).filter((l) => l.number)) {
         const written = line.number.replace(/\D/g, '');
         // A short number with # (Japan's #8000) is written %23 in its link.
         const dialled = decodeURIComponent(line.tel).replace(/\D/g, '');
@@ -165,7 +172,7 @@ describe('region facts', () => {
     fs.readFileSync(new URL('../../client/public/i18n/guides/en.json', import.meta.url), 'utf8')
   );
   const HTTP_ONLY = ['丸二陶料', '太麟化工原料有限公司', 'Sam Mui Kuang Pottery'];
-  const NO_SHOP_FOUND = ['MY', 'CN', 'ID', 'VN'];
+  const NO_SHOP_FOUND = ['MY', 'CN', 'ID', 'VN', 'PK', 'BD', 'EG', 'MA', 'DZ'];
   const checkedLately = (fact: { checked: string; source?: string; url?: string }, label: string) => {
     expect(fact.source ?? fact.url, label).to.match(/^https:\/\//);
     expect(Date.parse(fact.checked), label + ': check this again').to.be.above(yearAgo);
@@ -613,8 +620,7 @@ describe('regions after the verification pass of 2026-10-19', () => {
       'HU', 'IE', 'IT', 'LV', 'LT', 'LU', 'MT', 'NL', 'PL', 'PT', 'RO', 'SK', 'SI', 'ES', 'SE', 'JP', 'TR',
       'KR', 'TW', 'SG', 'MY', 'CN', 'HK', 'ID', 'TH', 'PH', 'VN'
     ]; // prettier-ignore
-    // Every region is here, so a region added later gets a snapshot of its own.
-    expect([...codes].sort()).to.eql([...regions.REGION_CODES].sort());
+    // Every region before the subcontinent's and the Arab world's (checked below, with theirs).
     const data: unknown[] = codes.map((code) => [
       code,
       asSnapshotted(code),
@@ -627,6 +633,33 @@ describe('regions after the verification pass of 2026-10-19', () => {
     data.push(['EU', food.FOOD['EU'], workplace.EU_SILICA]);
     const hash = crypto.createHash('sha256').update(JSON.stringify(data)).digest('hex');
     expect(hash).to.equal('fa1c82218e6cd9375597e108530370fdab7d06f5919f5f952f8d571ea25336a9');
+  });
+});
+
+// The Indian subcontinent's and the Arab world's first regions (docs/south-asia-mena-plan.md), frozen as
+// added, with their currencies. Every region is in one snapshot or another, so a region added later
+// gets one of its own.
+const SOUTH_ASIA_MENA = ['IN', 'PK', 'BD', 'EG', 'AE', 'MA', 'DZ'];
+
+describe('the subcontinent and the Arab world, as added', () => {
+  it('keep their data exactly', () => {
+    const data: unknown[] = SOUTH_ASIA_MENA.map((code) => [
+      code,
+      regions.regionFor(code),
+      safety.SAFETY[code],
+      safety.MINISTRIES[code] ?? null,
+      workplace.WORKPLACE[code] ?? null,
+      food.FOOD[code] ?? null,
+      suppliers.SUPPLIERS[code] ?? null
+    ]);
+    const hash = crypto.createHash('sha256').update(JSON.stringify(data)).digest('hex');
+    expect(hash).to.equal('380ed7d9f40175a5cb1e5ebaa0fed0706f60858392745e153951a48382c526fe');
+  });
+
+  it('are, with the earlier snapshots, every region', () => {
+    const earlier = regions.REGION_CODES.slice(0, regions.REGION_CODES.indexOf('VN') + 1);
+    expect(earlier).to.have.length(43);
+    expect([...earlier, ...SOUTH_ASIA_MENA]).to.eql([...regions.REGION_CODES]);
   });
 });
 
@@ -1192,6 +1225,212 @@ describe('Vietnam', () => {
 
   it('lists no shop, since none was found', () => {
     expect(suppliers.shopsFor('VN')).to.eql({ shops: [], nearby: [] });
+  });
+});
+
+// The Indian subcontinent and the Arab world, in English first (docs/south-asia-mena-plan.md), from
+// scratch/round6/research/in-pk-bd.md and eg-ae-ma-dz.md, with the owner's and the lead's decisions of
+// 2026-10-20.
+describe('the subcontinent and the Arab world', () => {
+  const NONE = { silica: null, agency: null, respirators: null, eu: false };
+
+  it('fire by temperature but India, by Orton cones, in °C, with the US library and their own currencies', () => {
+    const expected: Array<[string, string, string[], string, string]> = [
+      ['IN', 'India', ['hi', 'en'], 'orton', 'INR'],
+      ['PK', 'Pakistan', ['ur', 'en'], 'temperature', 'PKR'],
+      ['BD', 'Bangladesh', ['bn'], 'temperature', 'BDT'],
+      ['EG', 'Egypt', ['ar'], 'temperature', 'EGP'],
+      ['AE', 'United Arab Emirates', ['ar', 'en'], 'temperature', 'AED'],
+      ['MA', 'Morocco', ['ar', 'fr'], 'temperature', 'MAD'],
+      ['DZ', 'Algeria', ['ar', 'fr'], 'temperature', 'DZD']
+    ];
+    for (const [code, name, languages, cones, currency] of expected) {
+      expect(regions.regionFor(code), code).to.eql({
+        code,
+        name,
+        languages,
+        eu: false,
+        temperature: 'C',
+        cones,
+        density: 'sg',
+        library: 'US',
+        currency
+      });
+      expect(regions.CURRENCIES, code).to.include(currency);
+      expect(regions.formatLocaleFor('en', code, 'auto'), code).to.match(new RegExp('^en-' + code));
+    }
+  });
+
+  it('leave the region each live language is written for as it was: Arabic, not live, is written for Egypt', () => {
+    const first = (language: string) => regions.REGIONS.find((r) => r.languages[0] === language)?.code;
+    expect(first('fr')).to.equal('FR');
+    expect(first('en')).to.equal('US');
+    expect(first('ar')).to.equal('EG');
+    expect([first('hi'), first('ur'), first('bn')]).to.eql(['IN', 'PK', 'BD']);
+  });
+
+  it('show no unverified entry: every line, ministry and fact shown was read, and the leads are not shown', () => {
+    for (const code of SOUTH_ASIA_MENA) {
+      const shown = safety.shownFor(code)!;
+      for (const line of [...shown.emergency, ...shown.poison, ...shown.advice, ...shown.animals]) {
+        expect(line.status, code + ' ' + line.name).to.equal('verified');
+        expect(line.checked, code + ' ' + line.name).to.match(/^2026-10-(19|20)$/);
+      }
+      const ministry = safety.ministryFor(code);
+      if (ministry) expect(ministry.status, code).to.equal('verified');
+      const facts = workplace.workplaceFor(code)!;
+      for (const fact of [facts.silica, facts.agency, facts.respirators, facts.noLimit].filter((f) => !!f)) {
+        expect(['verified', 'secondary'], code).to.include(fact!.status);
+      }
+      // No silica limit is shown for any of them: none was read in a law (Egypt's only in a paper).
+      expect(facts.silica, code).to.equal(null);
+      expect(workplace.WORKPLACE[code]!.silica, code).to.equal(undefined);
+      const rules = food.foodRulesFor(code);
+      if (rules) expect(rules.rules.status, code).to.equal('verified');
+    }
+    // The UAE's federal ministry and Algeria's were read only in the Internet Archive: not linked.
+    expect(safety.MINISTRIES['AE']!.status).to.equal('unverified');
+    expect(safety.ministryFor('AE')).to.equal(null);
+    expect(safety.ministryFor('DZ')).to.equal(null);
+  });
+
+  it('India: 112, and the National Poisons Information Centre, toll free around the clock, for the public', () => {
+    const shown = safety.shownFor('IN')!;
+    expect(shown.emergency.map((line) => [line.number, line.tel])).to.eql([['112', '112']]);
+    expect(shown.emergency[0]!.note).to.include('police, fire and ambulance');
+    expect(shown.poison).to.have.length(1);
+    expect(shown.poison[0]).to.include({
+      number: '1800 116 117',
+      tel: '1800116117',
+      who: 'public',
+      hours: '24 hours, every day, toll free',
+      also: '011 2658 9391',
+      alsoTel: '+911126589391',
+      source: 'https://aiims.edu/index.php/en/npic_intro'
+    });
+    expect(safety.ministryFor('IN')).to.include({ name: 'Ministry of Health and Family Welfare' });
+  });
+
+  it('India: no silica limit, since each state sets its own; DGOSH, and IS 9473 masks from a scan', () => {
+    const facts = workplace.workplaceFor('IN')!;
+    expect(facts.silica).to.equal(null);
+    expect(facts.noLimit).to.include({ status: 'secondary', checked: '2026-10-19' });
+    expect(facts.noLimit!.note).to.include('each state sets the limits').and.include('no national limit');
+    expect(facts.noLimit!.law).to.include('section 88');
+    expect(facts.agency).to.include({ name: 'Directorate General Occupational Safety and Health', abbr: 'DGOSH' });
+    expect(facts.respirators).to.include({ status: 'secondary' });
+    expect([facts.respirators!.everyday, facts.respirators!.higher]).to.eql([['FFP2'], ['FFP3']]);
+    expect(facts.respirators!.note).to.include('IS 9473:2002');
+    // The note is translated, as its English; a region with a limit never shows one.
+    expect(workplace.texts()).to.include(facts.noLimit!.note);
+    expect(workplace.workplaceFor('VN')).not.to.have.property('noLimit');
+  });
+
+  it('India: no food-contact rules (IS 9806 is a voluntary standard), and two shops checked on their own sites', () => {
+    expect(food.foodRulesFor('IN')).to.equal(null);
+    expect(food.FOOD['IN']).to.equal(undefined);
+    const { shops } = suppliers.shopsFor('IN')!;
+    expect(shops.map((shop) => [shop.name, shop.place])).to.eql([
+      ['Bhoomi Pottery', undefined],
+      ['Clay Station', 'Bangalore']
+    ]);
+  });
+
+  it("Pakistan: Rescue 1122, each province's own, and 15 for the police in Punjab only; no poison line", () => {
+    const shown = safety.shownFor('PK')!;
+    expect(shown.emergency.map((line) => line.number)).to.eql(['1122']);
+    expect(shown.emergency[0]!.source).to.match(/^https:\/\/www\.rescue\.gov\.pk\//);
+    expect(shown.emergency[0]!.note).to.include('Each province runs its own').and.include('In Punjab, call 15');
+    expect([shown.poison, shown.advice]).to.eql([[], []]);
+    expect(safety.ministryFor('PK')).to.include({ url: 'https://www.nhsrc.gov.pk/' });
+    expect(workplace.workplaceFor('PK')).to.eql(NONE);
+    expect(food.foodRulesFor('PK')).to.equal(null);
+    expect(suppliers.shopsFor('PK')).to.eql({ shops: [], nearby: [] });
+  });
+
+  it("Bangladesh: 999, its roles said to be from the ITU's list; 16263 as medical advice, not a poison line", () => {
+    const shown = safety.shownFor('BD')!;
+    expect(shown.emergency.map((line) => line.number)).to.eql(['999']);
+    expect(shown.emergency[0]!.note).to.include('ITU').and.include('102');
+    expect(shown.poison).to.eql([]);
+    expect(shown.advice.map((line) => [line.number, line.who])).to.eql([['16263', 'public']]);
+    expect(shown.advice[0]!.note).to.include('It is not a poison line');
+    expect(safety.ministryFor('BD')).to.include({ url: 'https://mohfw.gov.bd/' });
+    expect(workplace.workplaceFor('BD')).to.include({ silica: null, respirators: null });
+    expect(workplace.workplaceFor('BD')!.agency).to.include({ abbr: 'DIFE', url: 'https://dife.gov.bd/' });
+    expect(food.foodRulesFor('BD')).to.equal(null);
+    expect(suppliers.shopsFor('BD')).to.eql({ shops: [], nearby: [] });
+  });
+
+  it('Egypt: 123 for an ambulance, with 122 and 180, and not 112 or 911; no poison line, the ministry', () => {
+    const shown = safety.shownFor('EG')!;
+    expect(shown.emergency.map((line) => line.number)).to.eql(['123']);
+    expect(shown.emergency[0]!.note).to.include('122').and.include('180');
+    expect(JSON.stringify(safety.SAFETY['EG'])).not.to.match(/\b(112|911)\b/);
+    expect(shown.poison).to.eql([]);
+    expect(safety.ministryFor('EG')).to.include({ url: 'https://www.mohp.gov.eg/' });
+    expect(workplace.workplaceFor('EG')).to.eql(NONE);
+    expect(food.foodRulesFor('EG')).to.equal(null);
+    expect(suppliers.shopsFor('EG')).to.eql({ shops: [], nearby: [] });
+  });
+
+  it("the UAE: 998, and not Abu Dhabi's poison line; no ministry read; two shops in Abu Dhabi", () => {
+    const shown = safety.shownFor('AE')!;
+    expect(shown.emergency.map((line) => line.number)).to.eql(['998']);
+    expect(shown.emergency[0]!.note).to.include('999').and.include('997');
+    expect(shown.poison).to.eql([]);
+    expect(JSON.stringify(safety.SAFETY['AE'])).not.to.include('800');
+    expect(workplace.workplaceFor('AE')).to.eql(NONE);
+    expect(food.foodRulesFor('AE')).to.equal(null);
+    const { shops } = suppliers.shopsFor('AE')!;
+    expect(shops.map((shop) => [shop.name, shop.place])).to.eql([
+      ['Art Central Pottery', 'Abu Dhabi'],
+      ['Abu Dhabi Pottery', 'Abu Dhabi']
+    ]);
+    expect(shops[1]!.note).to.include('no raw glaze materials seen');
+  });
+
+  it("Morocco: 141, and the poison centre's two numbers, around the clock, at the price of a local call", () => {
+    const shown = safety.shownFor('MA')!;
+    expect(shown.emergency.map((line) => line.number)).to.eql(['141']);
+    expect(shown.poison).to.have.length(1);
+    const capm = shown.poison[0]!;
+    // The 0801 number is linked as dialled in Morocco; the Rabat number in its international form.
+    expect(capm).to.include({
+      number: '0801 000 180',
+      tel: '0801000180',
+      also: '05 37 68 64 64',
+      alsoTel: '+212537686464',
+      who: 'public',
+      hours: '24 hours, every day'
+    });
+    expect(capm.fee).to.include('local call');
+    // capm.ma is no longer the centre's domain.
+    expect(capm.source).to.match(/^https:\/\/www\.capm-sante\.ma\//);
+    expect(JSON.stringify(safety.SAFETY['MA'])).not.to.match(/\/\/(www\.)?capm\.ma/);
+    expect(workplace.workplaceFor('MA')).to.eql(NONE);
+    expect(food.foodRulesFor('MA')).to.equal(null);
+    expect(suppliers.shopsFor('MA')).to.eql({ shops: [], nearby: [] });
+  });
+
+  it("Algeria: 14 for civil protection, no poison line, and the 2019 order's limits with its rule for a piece up to 50% over", () => {
+    const shown = safety.shownFor('DZ')!;
+    expect(shown.emergency.map((line) => line.number)).to.eql(['14']);
+    expect(shown.emergency[0]!.note).to.match(/^Civil protection/);
+    expect(shown.poison).to.eql([]);
+    expect(workplace.workplaceFor('DZ')).to.eql(NONE);
+    const found = food.foodRulesFor('DZ')!;
+    expect(found.own).to.equal(true);
+    expect(found.rules).to.include({ status: 'verified', inForce: '2019-06-06', checked: '2026-10-20' });
+    expect(found.rules.law).to.include('16 janvier 2019').and.include('JO n° 36');
+    expect(found.rules.source).to.match(/^https:\/\/www\.joradp\.dz\//);
+    expect(found.rules.limits.map((l) => [l.category, l.lead, l.cadmium, l.unit])).to.eql([
+      ['flat', 0.8, 0.07, 'mg/dm²'],
+      ['fillable', 4, 0.3, 'mg/L'],
+      ['cooking', 1.5, 0.1, 'mg/L']
+    ]);
+    expect(found.rules.note).to.include('50%').and.include('at least three');
+    expect(suppliers.shopsFor('DZ')).to.eql({ shops: [], nearby: [] });
   });
 });
 
