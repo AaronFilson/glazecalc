@@ -1,7 +1,7 @@
 // Where the potter works, and numbers typed and read their way (docs/i18n-plan.md).
 const { test, expect } = require('@playwright/test');
 const { default: AxeBuilder } = require('@axe-core/playwright');
-const { API, addStandardMaterial, signUpAndSignIn } = require('./helpers');
+const { API, addStandardMaterial, choosePicked, signUpAndSignIn } = require('./helpers');
 
 const WCAG = ['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'wcag22aa'];
 const amount = (page, name) => page.getByRole('textbox', { name: 'Amount of ' + name, exact: true });
@@ -13,7 +13,7 @@ test.beforeEach(async ({ page }) => {
 test('a potter in Germany types 12,5; the recipe is saved plainly and reads 12.5 in US English', async ({ page }) => {
   // Where they work sets the defaults: German numbers, °C, firing by temperature.
   await page.goto('/account');
-  await page.locator('#region').selectOption('DE');
+  await choosePicked(page.locator('#region'), 'Germany');
   await expect(page.locator('.settings-status')).toHaveText('Saved: Germany.');
   await expect(page.locator('#temperature-C')).toBeChecked();
   await expect(page.locator('#cones-temperature')).toBeChecked();
@@ -40,7 +40,7 @@ test('a potter in Germany types 12,5; the recipe is saved plainly and reads 12.5
 
   // The same account, now in the United States.
   await page.goto('/account');
-  await page.locator('#region').selectOption('US');
+  await choosePicked(page.locator('#region'), 'United States');
   await expect(page.locator('.settings-status')).toHaveText('Saved: United States.');
   await expect(page.locator('#temperature-F')).toBeChecked();
   await page.goto('/recipe');
@@ -52,7 +52,7 @@ test('a potter in Germany types 12,5; the recipe is saved plainly and reads 12.5
 
 test('the decimal mark can differ from the region: a point, typed by a potter in France', async ({ page }) => {
   await page.goto('/account');
-  await page.locator('#region').selectOption('FR');
+  await choosePicked(page.locator('#region'), 'France');
   await expect(page.locator('.settings-status')).toHaveText('Saved: France.');
   await page.locator('#decimal-mark-point').check();
   await expect(page.locator('.settings-status')).toHaveText('Saved: amounts are typed with a point for decimals.');
@@ -102,4 +102,42 @@ test('a firing log shows its date in the calendar chosen in Settings; the date t
   expect(preferences.calendar).toBe('japanese');
   const firings = await (await page.request.get(API + '/firing/getAll')).json();
   expect(firings.find((firing) => firing.title === 'Bisque').date).toMatch(/^2026-10-03/);
+});
+
+test('numbers show in the digits usual where the format is, or 0–9 when chosen; digits typed in any script save as 0–9', async ({
+  page
+}) => {
+  // Arabic as Egypt writes it: Arabic-Indic digits, as usual there.
+  await page.goto('/account');
+  await page.locator('#format').selectOption('ar-EG');
+  await expect(page.locator('.settings-status')).toHaveText('Saved: numbers and dates as in Arabic (Egypt).');
+  await expect(page.locator('#digits-auto')).toBeChecked();
+  await expect(page.locator('label[for="digits-auto"]')).toContainText('١٢٬٣٤٥٫٦');
+  await expect(page.locator('label[for="digits-western"]')).toContainText('12,345.6');
+
+  await page.goto('/recipe');
+  await page.locator('#recipe-name').fill('Digits');
+  await addStandardMaterial(page, 'Whiting', '20');
+  // Typed in Arabic-Indic digits with the Arabic decimal mark; written back as read.
+  await addStandardMaterial(page, 'Silica', '١٢٫٥');
+  await amount(page, 'Silica').press('Tab');
+  await expect(amount(page, 'Silica')).toHaveValue('12.5');
+  await expect(page.locator('.unity-panel')).toContainText('CaO : ١٫٠٠٠');
+  await page.getByRole('button', { name: 'Save', exact: true }).click();
+  await expect(page.locator('.recipe-status')).toContainText('Saved at');
+  const recipes = await (await page.request.get(API + '/recipe/getAll')).json();
+  expect(recipes.find((recipe) => recipe.title === 'Digits').materials.map((m) => m.amount)).toEqual(['20', '12.5']);
+
+  // 0–9, chosen in Settings, whatever the format.
+  await page.goto('/account');
+  await page.locator('#digits-western').check();
+  await expect(page.locator('.settings-status')).toHaveText('Saved: numbers are shown with the digits 0–9.');
+  await page.goto('/recipe');
+  await page
+    .locator('.saved-recipes .saved-recipe', { hasText: 'Digits' })
+    .getByRole('button', { name: 'Open' })
+    .click();
+  await expect(page.locator('.unity-panel')).toContainText('CaO : 1.000');
+  const preferences = await (await page.request.get(API + '/preferences')).json();
+  expect(preferences.digits).toBe('western');
 });

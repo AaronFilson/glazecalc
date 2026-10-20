@@ -61,8 +61,7 @@
     "vet": "Veterinerinizi arayın.",
     "checkedOn": "Kontrol tarihi:",
     "choosePrompt": "Orada kimin aranacağını görmek için ülkenizi seçin.",
-    "ministry": "Sağlık bakanlığının sayfası: <link>{name}</link>.",
-    "reported": "Resmî hükûmet sayfaları 113, 114 ve 115’i listeler, ancak her birinin ne için olduğunu belirtmez; gösterilen görevler, ikincil sayfaların aktardığı biçimde 22/2014/TT-BTTTT sayılı Genelge’yi izler."
+    "ministry": "Sağlık bakanlığının sayfası: <link>{name}</link>."
   },
   "density": {
     "sg": "özgül ağırlık {value}",

@@ -61,8 +61,7 @@
     "vet": "Pokličite veterinarja.",
     "checkedOn": "Preverjeno na:",
     "choosePrompt": "Izberite državo, da vidite, koga poklicati tam.",
-    "ministry": "Stran ministrstva za zdravje: <link>{name}</link>.",
-    "reported": "Uradne vladne strani navajajo številke 113, 114 in 115, ne pa tudi, čemu je katera namenjena; prikazane vloge sledijo okrožnici 22/2014/TT-BTTTT, kot jo navajajo sekundarne strani."
+    "ministry": "Stran ministrstva za zdravje: <link>{name}</link>."
   },
   "density": {
     "sg": "rel. gostota {value}",

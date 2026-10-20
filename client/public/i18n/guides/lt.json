@@ -61,8 +61,7 @@
     "vet": "Skambinkite savo veterinarui.",
     "checkedOn": "Patikrinta:",
     "choosePrompt": "Pasirinkite šalį, kad pamatytumėte, kur ten skambinti.",
-    "ministry": "Sveikatos apsaugos ministerijos puslapis: <link>{name}</link>.",
-    "reported": "Oficialūs vyriausybės puslapiai nurodo 113, 114 ir 115, bet ne tai, kam skirtas kiekvienas; parodytos paskirtys atitinka aplinkraštį 22/2014/TT-BTTTT, kaip jį cituoja antriniai puslapiai."
+    "ministry": "Sveikatos apsaugos ministerijos puslapis: <link>{name}</link>."
   },
   "density": {
     "sg": "santykinis tankis {value}",

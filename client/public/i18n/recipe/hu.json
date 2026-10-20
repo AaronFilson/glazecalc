@@ -979,7 +979,6 @@
     "approxTemperature": "≈ {temperature} ({basis}; közelítő)",
     "approxCone": "≈ {cone} ({basis}; közelítő)",
     "basis": {
-      "orton60": "Orton nagy gúlák 60 °C/óra sebességnél",
       "kyoto": "a kiotói városi intézet mérte 100 °C/óra sebességnél",
       "stated": "megadott szerint"
     },

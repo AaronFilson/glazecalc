@@ -979,7 +979,6 @@
     "approxTemperature": "≈ {temperature} ({basis}; garbh-mheastachán)",
     "approxCone": "≈ {cone} ({basis}; garbh-mheastachán)",
     "basis": {
-      "orton60": "cóin mhóra Orton ag 60 °C san uair",
       "kyoto": "tomhaiste ag 100 °C san uair ag institiúid chathrach Kyoto",
       "stated": "mar a tugadh é"
     },

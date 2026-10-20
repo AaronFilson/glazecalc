@@ -979,7 +979,6 @@
     "approxTemperature": "≈ {temperature} ({basis}; aproximado)",
     "approxCone": "≈ {cone} ({basis}; aproximado)",
     "basis": {
-      "orton60": "cones Orton grandes a 60 °C por hora",
       "kyoto": "medido a 100 °C por hora pelo instituto municipal de Quioto",
       "stated": "tal como indicado"
     },

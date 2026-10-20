@@ -3,7 +3,8 @@
 export type ConeScale = 'orton' | 'sk' | 'temperature';
 export type Atmosphere = 'oxidation' | 'reduction' | 'neutral';
 export type FiringProcess = 'wood' | 'soda' | 'salt' | 'raku' | 'pit';
-export type Band = 'low' | 'mid' | 'high';
+/** A limits band: cone 06–02, 1–7, 8–11, and 12 up, where no limit set has figures (lib/recipe/limits.js). */
+export type Band = 'low' | 'mid' | 'high' | 'top';
 
 /**
  * A recipe's firing as stated: the cone exactly as entered with its scale
@@ -50,7 +51,8 @@ export function cleanFiring(block: FiringBlock | null | undefined): FiringBlock 
 export function isStated(block: FiringBlock | null | undefined): boolean;
 export function coneLabel(cone: string | undefined): string;
 
-export type ApproxBasis = 'orton-60' | 'kyoto' | 'stated';
+/** What a conversion rests on: Orton's older chart at 150 °C an hour, Kyoto's measured bends, or the figure as given. */
+export type ApproxBasis = 'orton-150' | 'kyoto' | 'stated';
 export function approxCelsius(scale: ConeScale, cone: string): { celsius: number; basis: ApproxBasis } | null;
 export function approxCone(
   scale: ConeScale,

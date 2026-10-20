@@ -979,7 +979,6 @@
     "approxTemperature": "≈ {temperature} ({basis}; ligikaudne)",
     "approxCone": "≈ {cone} ({basis}; ligikaudne)",
     "basis": {
-      "orton60": "Ortoni suured koonused kiirusel 60 °C tunnis",
       "kyoto": "mõõdetud kiirusel 100 °C tunnis Kyoto linna instituudis",
       "stated": "nagu antud"
     },

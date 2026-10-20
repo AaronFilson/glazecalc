@@ -82,6 +82,31 @@
     "languages": "Languages",
     "language": "Language:"
   },
+  "picker": {
+    "results": "{count, plural, one {# match} other {# matches}}",
+    "languages": {
+      "search": "Search languages",
+      "showAll": "Show all languages",
+      "noMatch": "No language matches"
+    },
+    "regions": {
+      "search": "Search countries and regions",
+      "showAll": "Show all countries and regions",
+      "noMatch": "No country or region matches"
+    },
+    "groups": {
+      "africa": "Africa",
+      "americas": "Americas",
+      "asia": "Asia",
+      "eastAsia": "East Asia",
+      "europe": "Europe",
+      "middleEastNorthAfrica": "Middle East and North Africa",
+      "oceania": "Oceania",
+      "southAsia": "South Asia",
+      "southeastAsia": "Southeast Asia",
+      "other": "Other"
+    }
+  },
   "numbers": {
     "notANumber": "Enter a number, such as {example}.",
     "notANumberComma": "Enter a number, such as {example}, with a comma for decimals.",

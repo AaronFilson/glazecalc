@@ -3,7 +3,7 @@
   "name": "com.glazecalcapp/glazecalc",
   "title": "Glazecalc",
   "description": "Ceramic glaze chemistry: unity formulas, limit checks, substitutes, cones and potters' guides.",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "websiteUrl": "https://glazecalcapp.com/assistants",
   "repository": {
     "url": "https://github.com/AaronFilson/glazecalc",
@@ -16,7 +16,7 @@
       "headers": [
         {
           "name": "Authorization",
-          "description": "Only for your own saved records: \"Bearer \" and a personal access token made on your Glazecalc account page, read only or read and change. The public tools need none.",
+          "description": "Only for your own saved records, and only if your app does not connect through Glazecalc sign-in: \"Bearer \" and a personal access token made on your Glazecalc account page, read only or read and change. The public tools need none.",
           "isRequired": false,
           "isSecret": true
         }

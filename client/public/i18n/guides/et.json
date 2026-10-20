@@ -61,8 +61,7 @@
     "vet": "Helistage oma loomaarstile.",
     "checkedOn": "Kontrollitud:",
     "choosePrompt": "Valige oma riik, et näha, kellele seal helistada.",
-    "ministry": "Tervishoiuministeeriumi leht: <link>{name}</link>.",
-    "reported": "Ametlikud valitsuse lehed loetlevad numbrid 113, 114 ja 115, kuid mitte seda, milleks igaüks on; näidatud rollid järgivad ringkirja 22/2014/TT-BTTTT, nagu teisesed lehed seda tsiteerivad."
+    "ministry": "Tervishoiuministeeriumi leht: <link>{name}</link>."
   },
   "density": {
     "sg": "suhteline tihedus {value}",

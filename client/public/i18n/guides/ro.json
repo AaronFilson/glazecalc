@@ -61,8 +61,7 @@
     "vet": "Sunați medicul veterinar.",
     "checkedOn": "Data verificării:",
     "choosePrompt": "Alegeți țara pentru a vedea pe cine puteți suna acolo.",
-    "ministry": "Pagina ministerului sănătății: <link>{name}</link>.",
-    "reported": "Paginile oficiale ale guvernului enumeră numerele 113, 114 și 115, dar nu spun la ce servește fiecare; rolurile afișate urmează Circulara 22/2014/TT-BTTTT, așa cum o citează paginile secundare."
+    "ministry": "Pagina ministerului sănătății: <link>{name}</link>."
   },
   "density": {
     "sg": "greutate specifică {value}",

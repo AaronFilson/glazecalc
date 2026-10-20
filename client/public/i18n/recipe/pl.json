@@ -979,7 +979,6 @@
     "approxTemperature": "≈ {temperature} ({basis}; przybliżone)",
     "approxCone": "≈ {cone} ({basis}; przybliżone)",
     "basis": {
-      "orton60": "duże stożki Ortona przy 60 °C na godzinę",
       "kyoto": "zmierzone przy 100 °C na godzinę przez miejski instytut w Kioto",
       "stated": "jak podano"
     },

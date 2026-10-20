@@ -41,6 +41,8 @@ export interface Extras {
   tries?: TryMaterial[];
   avoid?: string[];
   additives?: Additive[];
+  /** Raw clays the potter allowed more of. */
+  uncapped?: string[];
 }
 
 /**

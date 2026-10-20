@@ -61,8 +61,7 @@
     "vet": "Appelez votre vétérinaire.",
     "checkedOn": "Vérifié sur :",
     "choosePrompt": "Choisissez votre pays pour voir qui appeler.",
-    "ministry": "La page du ministère de la Santé : <link>{name}</link>.",
-    "reported": "Les pages officielles du gouvernement indiquent 113, 114 et 115, mais pas à quoi sert chaque numéro ; les rôles affichés suivent la circulaire 22/2014/TT-BTTTT, telle que la citent des pages secondaires."
+    "ministry": "La page du ministère de la Santé : <link>{name}</link>."
   },
   "density": {
     "sg": "SG {value}",

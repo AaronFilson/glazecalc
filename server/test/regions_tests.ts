@@ -1,10 +1,13 @@
 import crypto from 'node:crypto';
 import fs from 'node:fs';
 import regions from '../../lib/regions/index.js';
+import groups from '../../lib/regions/groups.js';
+import languages from '../../lib/regions/languages.js';
 import food from '../../lib/regions/food.js';
 import suppliers from '../../lib/regions/suppliers.js';
 import workplace from '../../lib/regions/workplace.js';
 import safety from '../../lib/regions/safety.js';
+import numbers from '../../lib/recipe/numbers.js';
 import type { SafetyLine } from '../../lib/regions/safety.js';
 import { expect } from './support/app.ts';
 
@@ -30,9 +33,9 @@ describe('regions', () => {
     }
     // Ireland's shops sell the UK's materials, so it lists the UK's, though it is in the EU.
     expect(regions.regionFor('IE')).to.include({ eu: true, cones: 'orton', library: 'UK' });
-    expect(regions.formatLocaleFor('en', 'DE', 'auto')).to.equal('en-DE');
-    expect(regions.formatLocaleFor('pt', '', 'auto')).to.equal('pt-PT');
-    expect(regions.formatLocaleFor('en', 'DE', 'en-GB')).to.equal('en-GB');
+    expect(regions.formatLocaleFor('en', 'DE', 'auto')).to.equal('en-DE-u-ca-gregory-nu-latn');
+    expect(regions.formatLocaleFor('pt', '', 'auto')).to.equal('pt-PT-u-ca-gregory-nu-latn');
+    expect(regions.formatLocaleFor('en', 'DE', 'en-GB')).to.equal('en-GB-u-ca-gregory-nu-latn');
   });
 
   it('should price in each region’s own currency, which the runtime can write', () => {
@@ -62,16 +65,16 @@ describe('regions', () => {
 
   it("keeps the language's script in its format, and drops its own region for the reader's", () => {
     // Traditional Chinese read in Ireland is written as Traditional, not as zh-IE (Simplified).
-    expect(regions.formatLocaleFor('zh-Hant', 'IE', 'auto')).to.equal('zh-Hant-IE');
-    expect(regions.formatLocaleFor('zh-Hans', 'NL', 'auto')).to.equal('zh-Hans-NL');
-    expect(regions.formatLocaleFor('zh-Hant', '', 'auto')).to.equal('zh-Hant');
-    expect(regions.formatLocaleFor('zh-Hant-TW', 'DE', 'auto')).to.equal('zh-Hant-DE');
+    expect(regions.formatLocaleFor('zh-Hant', 'IE', 'auto')).to.equal('zh-Hant-IE-u-ca-gregory-nu-latn');
+    expect(regions.formatLocaleFor('zh-Hans', 'NL', 'auto')).to.equal('zh-Hans-NL-u-ca-gregory-nu-latn');
+    expect(regions.formatLocaleFor('zh-Hant', '', 'auto')).to.equal('zh-Hant-u-ca-gregory-nu-latn');
+    expect(regions.formatLocaleFor('zh-Hant-TW', 'DE', 'auto')).to.equal('zh-Hant-DE-u-ca-gregory-nu-latn');
     // Portuguese stays European; a pseudo-locale is English.
-    expect(regions.formatLocaleFor('pt-PT', 'FR', 'auto')).to.equal('pt-FR');
-    expect(regions.formatLocaleFor('pt-PT', '', 'auto')).to.equal('pt-PT');
-    expect(regions.formatLocaleFor('en-XA', 'DE', 'auto')).to.equal('en-DE');
-    expect(regions.formatLocaleFor('ar-XB', '', 'auto')).to.equal('en');
-    expect(regions.formatLocaleFor('', '', 'auto')).to.equal('en');
+    expect(regions.formatLocaleFor('pt-PT', 'FR', 'auto')).to.equal('pt-FR-u-ca-gregory-nu-latn');
+    expect(regions.formatLocaleFor('pt-PT', '', 'auto')).to.equal('pt-PT-u-ca-gregory-nu-latn');
+    expect(regions.formatLocaleFor('en-XA', 'DE', 'auto')).to.equal('en-DE-u-ca-gregory-nu-latn');
+    expect(regions.formatLocaleFor('ar-XB', '', 'auto')).to.equal('en-u-ca-gregory-nu-latn');
+    expect(regions.formatLocaleFor('', '', 'auto')).to.equal('en-u-ca-gregory-nu-latn');
     // Traditional and Simplified write the same date differently.
     const date = new Date(2026, 9, 12);
     const written = (locale: string) => new Intl.DateTimeFormat(locale, { dateStyle: 'full' }).format(date);
@@ -89,11 +92,11 @@ describe('regions', () => {
       expect(year(locale), locale).to.match(/2026/);
       expect(new Intl.NumberFormat(locale).format(1234.5), locale).to.equal('1,234.5');
     }
-    // Other languages are as they were, and an explicit calendar is kept.
-    expect(regions.formatLocaleFor('id', '', 'auto')).to.equal('id');
-    expect(regions.formatLocaleFor('vi', 'DE', 'auto')).to.equal('vi-DE');
-    expect(regions.formatLocaleFor('en', 'DE', 'auto')).to.equal('en-DE');
-    expect(regions.formatLocaleFor('th', '', 'th-TH-u-ca-buddhist')).to.equal('th-TH-u-ca-buddhist');
+    // Every locale names the Gregorian calendar and its digits, and an explicit calendar is kept.
+    expect(regions.formatLocaleFor('id', '', 'auto')).to.equal('id-u-ca-gregory-nu-latn');
+    expect(regions.formatLocaleFor('vi', 'DE', 'auto')).to.equal('vi-DE-u-ca-gregory-nu-latn');
+    expect(regions.formatLocaleFor('en', 'DE', 'auto')).to.equal('en-DE-u-ca-gregory-nu-latn');
+    expect(regions.formatLocaleFor('th', '', 'th-TH-u-ca-buddhist')).to.equal('th-TH-u-ca-buddhist-nu-latn');
   });
 
   it('offers only formats the runtime knows, each once', () => {
@@ -300,7 +303,7 @@ describe('Japan', () => {
       library: 'US',
       currency: 'JPY'
     });
-    expect(regions.formatLocaleFor('en', 'JP', 'auto')).to.equal('en-JP');
+    expect(regions.formatLocaleFor('en', 'JP', 'auto')).to.equal('en-JP-u-ca-gregory-nu-latn');
   });
 
   it("gives 119, the poison centre's two public lines (acute cases only) and #8000 for children", () => {
@@ -411,7 +414,7 @@ describe('Türkiye', () => {
       library: 'EU',
       currency: 'TRY'
     });
-    expect(regions.formatLocaleFor('en', 'TR', 'auto')).to.equal('en-TR');
+    expect(regions.formatLocaleFor('en', 'TR', 'auto')).to.equal('en-TR-u-ca-gregory-nu-latn');
   });
 
   it('gives 112 for every emergency service and UZEM on 114, around the clock, free and for the public', () => {
@@ -677,7 +680,7 @@ describe('South Korea', () => {
       library: 'US',
       currency: 'KRW'
     });
-    expect(regions.formatLocaleFor('en', 'KR', 'auto')).to.equal('en-KR');
+    expect(regions.formatLocaleFor('en', 'KR', 'auto')).to.equal('en-KR-u-ca-gregory-nu-latn');
   });
 
   it('gives 119, no poison line (none national was found), and 119 for medical advice', () => {
@@ -739,7 +742,7 @@ describe('Taiwan', () => {
       library: 'US'
     });
     expect(regions.regionFor('TW')!.languages).to.eql(['zh-Hant']);
-    expect(regions.formatLocaleFor('en', 'TW', 'auto')).to.equal('en-TW');
+    expect(regions.formatLocaleFor('en', 'TW', 'auto')).to.equal('en-TW-u-ca-gregory-nu-latn');
   });
 
   it("gives 119 and the Taipei Veterans General Hospital's poison centre, around the clock and free", () => {
@@ -809,7 +812,7 @@ describe('Singapore', () => {
   it('stays in English, fires by temperature, and lists the US library', () => {
     expect(regions.regionFor('SG')).to.include({ temperature: 'C', cones: 'temperature', library: 'US' });
     expect(regions.regionFor('SG')!.languages[0]).to.equal('en');
-    expect(regions.formatLocaleFor('en', 'SG', 'auto')).to.equal('en-SG');
+    expect(regions.formatLocaleFor('en', 'SG', 'auto')).to.equal('en-SG-u-ca-gregory-nu-latn');
   });
 
   it('gives 995, no poison line (none is on an official page), and the health ministry', () => {
@@ -856,7 +859,7 @@ describe('Malaysia', () => {
   it('stays in English, fires by temperature, and lists the US library', () => {
     expect(regions.regionFor('MY')).to.include({ temperature: 'C', cones: 'temperature', library: 'US' });
     expect(regions.regionFor('MY')!.languages).to.eql(['ms', 'en']);
-    expect(regions.formatLocaleFor('en', 'MY', 'auto')).to.equal('en-MY');
+    expect(regions.formatLocaleFor('en', 'MY', 'auto')).to.equal('en-MY-u-ca-gregory-nu-latn');
   });
 
   it('gives 999, and the National Poison Centre with its hours, not 24 hours, and no claim on cost', () => {
@@ -909,7 +912,7 @@ describe('China', () => {
       library: 'US'
     });
     expect(regions.regionFor('CN')!.languages).to.eql(['zh-Hans']);
-    expect(regions.formatLocaleFor('zh-Hans', 'CN', 'auto')).to.equal('zh-Hans-CN');
+    expect(regions.formatLocaleFor('zh-Hans', 'CN', 'auto')).to.equal('zh-Hans-CN-u-ca-gregory-nu-latn');
   });
 
   it("gives 120 and China CDC's poison line, saying plainly that no official page gives its hours or cost", () => {
@@ -984,8 +987,8 @@ describe('Hong Kong', () => {
   it("reads Traditional Chinese and English, formats as Hong Kong's, and comes after Taiwan", () => {
     expect(regions.regionFor('HK')).to.include({ temperature: 'C', cones: 'temperature', library: 'US' });
     expect(regions.regionFor('HK')!.languages).to.eql(['zh-Hant', 'en']);
-    expect(regions.formatLocaleFor('zh-Hant', 'HK', 'auto')).to.equal('zh-Hant-HK');
-    expect(regions.formatLocaleFor('en', 'HK', 'auto')).to.equal('en-HK');
+    expect(regions.formatLocaleFor('zh-Hant', 'HK', 'auto')).to.equal('zh-Hant-HK-u-ca-gregory-nu-latn');
+    expect(regions.formatLocaleFor('en', 'HK', 'auto')).to.equal('en-HK-u-ca-gregory-nu-latn');
     // Traditional Chinese pages are prerendered for the first region listing it first: Taiwan.
     expect(regions.REGION_CODES.indexOf('TW')).to.be.below(regions.REGION_CODES.indexOf('HK'));
   });
@@ -1037,7 +1040,7 @@ describe('Indonesia', () => {
   it('fires by temperature and lists the US library', () => {
     expect(regions.regionFor('ID')).to.include({ temperature: 'C', cones: 'temperature', library: 'US' });
     expect(regions.regionFor('ID')!.languages).to.eql(['id']);
-    expect(regions.formatLocaleFor('id', 'ID', 'auto')).to.equal('id-ID');
+    expect(regions.formatLocaleFor('id', 'ID', 'auto')).to.equal('id-ID-u-ca-gregory-nu-latn');
   });
 
   it('gives 119, no poison line, and the health ministry', () => {
@@ -1076,7 +1079,7 @@ describe('Thailand', () => {
   it('fires by temperature and lists the US library', () => {
     expect(regions.regionFor('TH')).to.include({ temperature: 'C', cones: 'temperature', library: 'US' });
     expect(regions.regionFor('TH')!.languages).to.eql(['th']);
-    expect(regions.formatLocaleFor('th', 'TH', 'auto')).to.equal('th-TH-u-ca-gregory');
+    expect(regions.formatLocaleFor('th', 'TH', 'auto')).to.equal('th-TH-u-ca-gregory-nu-latn');
   });
 
   it('gives 1669 and the Ramathibodi Poison Center, 1367, around the clock, with no claim on cost', () => {
@@ -1124,7 +1127,7 @@ describe('Philippines', () => {
   it('stays in English, fires by temperature, and lists the US library', () => {
     expect(regions.regionFor('PH')).to.include({ temperature: 'C', cones: 'temperature', library: 'US' });
     expect(regions.regionFor('PH')!.languages).to.eql(['fil', 'en']);
-    expect(regions.formatLocaleFor('en', 'PH', 'auto')).to.equal('en-PH');
+    expect(regions.formatLocaleFor('en', 'PH', 'auto')).to.equal('en-PH-u-ca-gregory-nu-latn');
   });
 
   it('gives 911 and the National Poison Management and Control Center, 24 hours and free', () => {
@@ -1176,8 +1179,8 @@ describe('Vietnam', () => {
       currency: 'VND'
     });
     expect(regions.regionFor('VN')!.languages).to.eql(['vi']);
-    expect(regions.formatLocaleFor('en', 'VN', 'auto')).to.equal('en-VN');
-    expect(regions.formatLocaleFor('vi', 'VN', 'auto')).to.equal('vi-VN');
+    expect(regions.formatLocaleFor('en', 'VN', 'auto')).to.equal('en-VN-u-ca-gregory-nu-latn');
+    expect(regions.formatLocaleFor('vi', 'VN', 'auto')).to.equal('vi-VN-u-ca-gregory-nu-latn');
   });
 
   it('gives 115, verified with its role on an official page, with 113, 114 and the merger into 113 in its note', () => {
@@ -1444,27 +1447,27 @@ describe('calendars', () => {
     expect(regions.CALENDARS).to.eql(['gregory', 'buddhist', 'japanese']);
   });
 
-  it('write dates in the Gregorian calendar by default, Thai too, and leave other locales as they were', () => {
-    expect(regions.formatLocaleFor('en', 'US', 'auto')).to.equal('en-US');
-    expect(regions.formatLocaleFor('en', 'US', 'auto', 'gregory')).to.equal('en-US');
-    expect(regions.formatLocaleFor('ja', 'JP', 'auto', 'gregory')).to.equal('ja-JP');
-    expect(regions.formatLocaleFor('th', 'TH', 'auto', 'gregory')).to.equal('th-TH-u-ca-gregory');
+  it('write dates in the Gregorian calendar by default, Thai too, and name it in every locale', () => {
+    expect(regions.formatLocaleFor('en', 'US', 'auto')).to.equal('en-US-u-ca-gregory-nu-latn');
+    expect(regions.formatLocaleFor('en', 'US', 'auto', 'gregory')).to.equal('en-US-u-ca-gregory-nu-latn');
+    expect(regions.formatLocaleFor('ja', 'JP', 'auto', 'gregory')).to.equal('ja-JP-u-ca-gregory-nu-latn');
+    expect(regions.formatLocaleFor('th', 'TH', 'auto', 'gregory')).to.equal('th-TH-u-ca-gregory-nu-latn');
     expect(shown(regions.formatLocaleFor('th', 'TH', 'auto'))).to.include('2026');
     // Not a calendar offered: the Gregorian.
-    expect(regions.formatLocaleFor('en', 'US', 'auto', 'islamic')).to.equal('en-US');
+    expect(regions.formatLocaleFor('en', 'US', 'auto', 'islamic')).to.equal('en-US-u-ca-gregory-nu-latn');
   });
 
   it('write the Thai Buddhist era when chosen, in any language', () => {
     const thai = regions.formatLocaleFor('th', 'TH', 'auto', 'buddhist');
-    expect(thai).to.equal('th-TH-u-ca-buddhist');
+    expect(thai).to.equal('th-TH-u-ca-buddhist-nu-latn');
     expect(shown(thai)).to.include('2569').and.not.include('2026');
     expect(shown(regions.formatLocaleFor('en', 'TH', 'auto', 'buddhist'))).to.include('2569');
-    expect(regions.formatLocaleFor('en', null, 'th-TH', 'buddhist')).to.equal('th-TH-u-ca-buddhist');
+    expect(regions.formatLocaleFor('en', null, 'th-TH', 'buddhist')).to.equal('th-TH-u-ca-buddhist-nu-latn');
   });
 
   it('write Japanese eras when chosen, in any language', () => {
     const japanese = regions.formatLocaleFor('ja', 'JP', 'auto', 'japanese');
-    expect(japanese).to.equal('ja-JP-u-ca-japanese');
+    expect(japanese).to.equal('ja-JP-u-ca-japanese-nu-latn');
     expect(shown(japanese)).to.equal('令和8年10月17日');
     expect(shown(regions.formatLocaleFor('en', 'US', 'auto', 'japanese'))).to.include('Reiwa');
   });
@@ -1474,6 +1477,163 @@ describe('calendars', () => {
       expect(new Intl.NumberFormat(regions.formatLocaleFor('de', 'DE', 'auto', calendar)).format(12345.6)).to.equal(
         '12.345,6'
       );
+    }
+  });
+
+  // The language and region pickers list by group (client/app/shared/picker.ts). A language or region added
+  // without its line in lib/regions/groups.js would fall into "Other", which is for the pseudo-locales.
+  it('should put every language and every region in a group of the pickers', () => {
+    for (const language of languages.LANGUAGES.filter((l: { pseudo?: boolean }) => !l.pseudo)) {
+      const group = groups.languageGroup(language.code);
+      expect(group === '' || (groups.LANGUAGE_GROUPS.includes(group) && group !== 'other'), language.code).to.equal(
+        true
+      );
+    }
+    for (const region of regions.REGIONS) {
+      const group = groups.regionGroup(region.code);
+      expect(groups.REGION_GROUPS.includes(group) && group !== 'other', region.code).to.equal(true);
+    }
+    // English is the only language listed apart; the pseudo-locales are in "Other", which is last.
+    expect(Object.entries(groups.LANGUAGE_GROUP_OF).filter(([, group]) => group === '')).to.deep.equal([['en', '']]);
+    expect(groups.languageGroup('en-XA')).to.equal('other');
+    expect(groups.LANGUAGE_GROUPS.at(-1)).to.equal('other');
+    expect(groups.REGION_GROUPS.at(-1)).to.equal('other');
+    // Every group named is one the pickers list, and each is named once.
+    for (const group of Object.values(groups.LANGUAGE_GROUP_OF)) {
+      expect(group === '' || groups.LANGUAGE_GROUPS.includes(group), group).to.equal(true);
+    }
+    for (const group of Object.values(groups.REGION_GROUP_OF)) expect(groups.REGION_GROUPS, group).to.include(group);
+    expect(new Set(groups.LANGUAGE_GROUPS).size).to.equal(groups.LANGUAGE_GROUPS.length);
+    expect(new Set(groups.REGION_GROUPS).size).to.equal(groups.REGION_GROUPS.length);
+  });
+});
+
+// The Digits setting (docs/i18n-plan.md, Digits): each country's usual digits, as CLDR has them, named in the
+// format locale so that no browser's own CLDR decides them; 0–9, or the language's own, when chosen.
+describe('digits', () => {
+  const sample = (locale: string) => new Intl.NumberFormat(locale).format(1234.5);
+  const system = (locale: string) => new Intl.NumberFormat(locale).resolvedOptions().numberingSystem;
+
+  it('offer the usual digits first, then 0–9 and the language’s own', () => {
+    expect(regions.DIGIT_CHOICES).to.eql(['auto', 'western', 'native']);
+  });
+
+  it('follow each country, and give 0–9 or the language’s own digits when chosen', () => {
+    // The format chosen, then its digits as usual, as 0–9 and as the language's own.
+    const pairs: [string, string, string, string][] = [
+      ['ar-EG', 'arab', 'latn', 'arab'],
+      ['ar-IQ', 'arab', 'latn', 'arab'],
+      ['ar-JO', 'arab', 'latn', 'arab'],
+      ['ar-AE', 'latn', 'latn', 'arab'],
+      ['ar-MA', 'latn', 'latn', 'arab'],
+      ['ar-DZ', 'latn', 'latn', 'arab'],
+      ['ar-TN', 'latn', 'latn', 'arab'],
+      ['bn-BD', 'beng', 'latn', 'beng'],
+      ['mr-IN', 'deva', 'latn', 'deva'],
+      ['ne-NP', 'deva', 'latn', 'deva'],
+      ['hi-IN', 'latn', 'latn', 'deva'],
+      ['en-IN', 'latn', 'latn', 'latn'],
+      ['ur-PK', 'latn', 'latn', 'arabext'],
+      ['ur-IN', 'arabext', 'latn', 'arabext'],
+      ['en-PK', 'latn', 'latn', 'latn'],
+      ['fr-MA', 'latn', 'latn', 'latn'],
+      ['fr-DZ', 'latn', 'latn', 'latn'],
+      ['si-LK', 'latn', 'latn', 'latn'],
+      ['ta-LK', 'latn', 'latn', 'tamldec'],
+      ['th-TH', 'latn', 'latn', 'thai'],
+      ['ja-JP', 'latn', 'latn', 'latn'],
+      ['de-DE', 'latn', 'latn', 'latn']
+    ];
+    for (const [format, ...systems] of pairs) {
+      regions.DIGIT_CHOICES.forEach((digits, i) => {
+        const locale = regions.formatLocaleFor('en', '', format, 'gregory', digits);
+        expect(locale, format + ' ' + digits).to.equal(`${format}-u-ca-gregory-nu-${systems[i]}`);
+        expect(system(locale), locale).to.equal(systems[i]);
+        expect(regions.numberingSystemFor(format, digits), locale).to.equal(systems[i]);
+      });
+    }
+    // As shown: Arabic-Indic in Egypt, 0–9 in Morocco, Indian groups in Bengali digits.
+    expect(sample(regions.formatLocaleFor('en', '', 'ar-EG'))).to.equal('١٬٢٣٤٫٥');
+    expect(sample(regions.formatLocaleFor('en', '', 'ar-EG', null, 'western'))).to.equal('1,234.5');
+    expect(sample(regions.formatLocaleFor('en', '', 'ar-MA'))).to.equal('1.234,5');
+    expect(sample(regions.formatLocaleFor('en', '', 'ar-MA', null, 'native'))).to.equal('١٬٢٣٤٫٥');
+    expect(new Intl.NumberFormat(regions.formatLocaleFor('en', '', 'bn-BD')).format(1234567.5)).to.equal('১২,৩৪,৫৬৭.৫');
+    expect(new Intl.NumberFormat(regions.formatLocaleFor('en', '', 'hi-IN')).format(1234567.5)).to.equal('12,34,567.5');
+    // Not a choice offered: as usual. A calendar chosen keeps the digits.
+    expect(regions.formatLocaleFor('en', '', 'ar-EG', 'gregory', 'roman')).to.equal('ar-EG-u-ca-gregory-nu-arab');
+    expect(regions.formatLocaleFor('th', 'TH', 'auto', 'buddhist', 'native')).to.equal('th-TH-u-ca-buddhist-nu-thai');
+    // A locale that names its own digits keeps them, unless others are chosen.
+    expect(regions.formatLocaleFor('en', '', 'ar-EG-u-nu-latn')).to.equal('ar-EG-u-ca-gregory-nu-latn');
+    expect(regions.formatLocaleFor('en', '', 'ar-EG-u-nu-latn', null, 'native')).to.equal('ar-EG-u-ca-gregory-nu-arab');
+  });
+
+  it('pin what CLDR gives every language Glazecalc offers or plans, in every country', () => {
+    const planned = ['ar', 'hi', 'ur', 'bn', 'ta', 'te', 'mr', 'gu', 'pa', 'ne', 'si', 'kn', 'ml'];
+    const offered = languages.LANGUAGES.map((language) => languages.baseLanguage(language.code));
+    const names = new Intl.DisplayNames(['en'], { type: 'region' });
+    const countries = [];
+    for (let a = 65; a <= 90; a++) {
+      for (let b = 65; b <= 90; b++) {
+        const code = String.fromCharCode(a, b);
+        if (names.of(code) !== code) countries.push(code);
+      }
+    }
+    expect(countries.length).to.be.above(240);
+    for (const language of new Set([...planned, ...offered])) {
+      for (const locale of [language, ...countries.map((code) => language + '-' + code)]) {
+        expect(regions.numberingSystemFor(locale), locale).to.equal(system(locale));
+      }
+    }
+  });
+
+  it('change nothing for the languages and formats offered: the same numbers, percents and dates', () => {
+    const day = new Date(2026, 9, 17);
+    const numbersIn = (locale: string) =>
+      new Intl.NumberFormat(locale, { useGrouping: 'min2' } as Intl.NumberFormatOptions).format(-1234567.5) +
+      ' ' +
+      new Intl.NumberFormat(locale, { style: 'percent' }).format(0.05);
+    const dateIn = (locale: string) => new Intl.DateTimeFormat(locale, { dateStyle: 'medium' }).format(day);
+    // As formatLocaleFor wrote them before it named the digits: a calendar named only where it was not the
+    // Gregorian, and for Thai.
+    const before = (locale: string, calendar: string) => {
+      const tag = new Intl.Locale(locale);
+      return calendar !== 'gregory' || tag.language === 'th' ? tag.baseName + '-u-ca-' + calendar : tag.baseName;
+    };
+    // Each live language in each region and in none, and each format chosen (which stands for the language).
+    const asked = [
+      ...languages.LIVE_LANGUAGES.flatMap((language) =>
+        ['', ...regions.REGION_CODES].map((region) => [language, region, 'auto'])
+      ),
+      ...regions.FORMAT_LOCALES.map((format) => ['en', '', format])
+    ];
+    expect(asked.length).to.be.above(1400);
+    for (const [language, region, format] of asked) {
+      for (const calendar of regions.CALENDARS) {
+        const locale = regions.formatLocaleFor(language!, region, format, calendar);
+        // Named, so the browser's own data never decides the calendar or the digits.
+        const tag = new Intl.Locale(locale);
+        expect([tag.calendar, tag.numberingSystem], locale).to.eql([calendar, regions.numberingSystemFor(locale)]);
+        if (calendar === 'gregory') expect(numbersIn(locale), locale).to.equal(numbersIn(before(locale, calendar)));
+        expect(dateIn(locale), locale).to.equal(dateIn(before(locale, calendar)));
+      }
+    }
+  }).timeout(30000);
+
+  it('read back every number it writes, in every format and digits', () => {
+    for (const format of regions.FORMAT_LOCALES) {
+      for (const digits of regions.DIGIT_CHOICES) {
+        const locale = regions.formatLocaleFor('en', '', format, 'gregory', digits);
+        for (const value of [-3, 0.125, 12.5, 1234.5, 100000, 1234567.5]) {
+          const shown = new Intl.NumberFormat(locale, {
+            maximumFractionDigits: 3,
+            useGrouping: 'min2'
+          } as Intl.NumberFormatOptions).format(value);
+          expect(numbers.parseNumber(shown, 'either', locale), locale + ' ' + shown).to.equal(value);
+        }
+        // A percentage reads as its number: 5 %, %5 and ٥٪ are 5.
+        const percent = new Intl.NumberFormat(locale, { style: 'percent' }).format(0.05);
+        expect(numbers.parseNumber(percent, 'either', locale), locale + ' ' + percent).to.equal(5);
+      }
     }
   });
 });

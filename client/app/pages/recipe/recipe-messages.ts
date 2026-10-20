@@ -74,6 +74,7 @@ const KEYS: Record<RecipeMessageCode, string> = {
   'checks.smallAmount': marker('recipe.checks.smallAmount'),
   'pool.changed': marker('recipe.pool.changed'),
   'pool.added': marker('recipe.pool.added'),
+  'pool.why.rawClay': marker('recipe.pool.why.rawClay'),
   'lead.why.rawCalcium': marker('recipe.lead.why.rawCalcium'),
   'lead.why.lowExpansion': marker('recipe.lead.why.lowExpansion'),
   'lead.why.boronFrit': marker('recipe.lead.why.boronFrit'),
@@ -109,7 +110,8 @@ const KEYS: Record<RecipeMessageCode, string> = {
   'coneFit.skip.ash': marker('recipe.coneFit.skip.ash'),
   'coneFit.skip.noTemperature': marker('recipe.coneFit.skip.noTemperature'),
   'coneFit.skip.between': marker('recipe.coneFit.skip.between'),
-  'coneFit.skip.belowChart': marker('recipe.coneFit.skip.belowChart')
+  'coneFit.skip.belowChart': marker('recipe.coneFit.skip.belowChart'),
+  'coneFit.skip.aboveChart': marker('recipe.coneFit.skip.aboveChart')
 };
 
 /** A figure as the reader writes numbers: 0,30 or 0.30. */

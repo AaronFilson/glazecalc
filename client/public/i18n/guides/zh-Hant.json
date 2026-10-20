@@ -61,8 +61,7 @@
     "vet": "請打給您的獸醫。",
     "checkedOn": "查核來源：",
     "choosePrompt": "選擇您的國家，即可查看當地的求助電話。",
-    "ministry": "衛生主管機關的網頁：<link>{name}</link>。",
-    "reported": "政府官方頁面列出了 113、114 和 115，但沒有說明各自的用途；這裡顯示的職責依據 Circular 22/2014/TT-BTTTT，來自轉引該文件的次級頁面。"
+    "ministry": "衛生主管機關的網頁：<link>{name}</link>。"
   },
   "density": {
     "sg": "比重 {value}",

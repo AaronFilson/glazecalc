@@ -43,7 +43,8 @@ const SET_NOTES: Record<string, string> = {
 const BAND_NAMES: Record<FiringBand, string> = {
   low: marker('recipe.limits.bands.low'),
   mid: marker('recipe.limits.bands.mid'),
-  high: marker('recipe.limits.bands.high')
+  high: marker('recipe.limits.bands.high'),
+  top: marker('recipe.limits.bands.top')
 };
 const STATUS: Record<string, string> = {
   within: marker('recipe.limits.within'),
@@ -232,6 +233,9 @@ export function statusText(row: LimitRow): string {
               }
             } @else {
               <p>{{ t('recipe.limits.notApply', { name: t(setNames[set().id]), band: t(bandNames[view.band]) }) }}</p>
+              @if (view.band === 'top') {
+                <p class="limits-note limits-top">{{ t('recipe.limits.topNote') }}</p>
+              }
             }
           </div>
         }

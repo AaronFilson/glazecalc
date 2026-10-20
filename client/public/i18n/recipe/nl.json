@@ -979,7 +979,6 @@
     "approxTemperature": "≈ {temperature} ({basis}; bij benadering)",
     "approxCone": "≈ {cone} ({basis}; bij benadering)",
     "basis": {
-      "orton60": "grote Ortonkegels bij 60 °C per uur",
       "kyoto": "gemeten bij 100 °C per uur door het gemeentelijk instituut van Kyoto",
       "stated": "zoals opgegeven"
     },

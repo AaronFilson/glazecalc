@@ -1,4 +1,5 @@
 import { TestBed } from '@angular/core/testing';
+import { choosePicked, pickerField, pickerOptions } from '../../testing/picker';
 import { API, answer, httpMock, settle, testProviders, text } from '../../testing/test-providers';
 import { OFFERED_LANGUAGES, OPEN_PAGE, PAGE_LANGUAGE } from '../../i18n/language';
 import { SettingsSection } from './settings-section';
@@ -120,20 +121,28 @@ describe('SettingsSection', () => {
 
   it('asks where the potter works, from a list, and saves it', async () => {
     const { fixture } = await create();
-    const region = fixture.nativeElement.querySelector('#region') as HTMLSelectElement;
-    const options = [...region.options].map((o) => o.textContent?.trim());
+    const region = fixture.nativeElement.querySelector('#region') as HTMLInputElement;
+    expect(region.id).toBe('region');
+    expect(region.value).toBe('Not chosen');
+    region.click();
+    await fixture.whenStable();
+    const options = pickerOptions(fixture.nativeElement);
     expect(options[0]).toBe('Not chosen');
     expect(options).toContain('Germany');
     expect(options).toContain('United States');
-    region.value = 'DE';
-    region.dispatchEvent(new Event('change'));
-    await fixture.whenStable();
+    // By continent, each with its heading.
+    const headings = [...fixture.nativeElement.querySelectorAll('[role="group"] > [role="presentation"]')].map(
+      (h: HTMLElement) => h.textContent?.trim()
+    );
+    expect(headings).toEqual(['Americas', 'Asia', 'Europe', 'Oceania']);
+    await choosePicked(fixture, region, 'Germany');
     const req = httpMock().expectOne(API + '/preferences');
     expect(req.request.body).toEqual({ region: 'DE' });
     req.flush({ region: 'DE' });
     await settle(fixture);
     expect(text(fixture, '.settings-status')).toBe('Saved: Germany.');
     expect(localStorage.getItem('preferredRegion')).toBe('DE');
+    expect(region.value).toBe('Germany');
     // Germany fires by temperature, in °C, until the potter chooses otherwise.
     const checked = (name: string) =>
       (fixture.nativeElement.querySelector('input[name="' + name + '"]:checked') as HTMLInputElement | null)?.value;
@@ -170,6 +179,34 @@ describe('SettingsSection', () => {
     req.flush({ calendar: 'buddhist' });
     await settle(fixture);
     expect(thai(fixture)).toMatch(/· 8\/10\/69\)$/);
+  });
+
+  it('offers digits as usual, 0–9 or the language’s own, each with an example, and saves the choice', async () => {
+    const fixture = TestBed.createComponent(SettingsSection);
+    await fixture.whenStable();
+    answer('/preferences', { format: 'ar-EG' });
+    await settle(fixture);
+    const egypt = () =>
+      (fixture.nativeElement.querySelector('#format option[value="ar-EG"]') as HTMLOptionElement).textContent
+        ?.replace(/\s+/g, ' ')
+        .trim();
+    // Arabic in Egypt writes Arabic-Indic digits as usual.
+    expect((fixture.nativeElement.querySelector('#digits-auto') as HTMLInputElement).checked).toBe(true);
+    expect(text(fixture, 'label[for="digits-auto"]')).toBe('As usual where you are (١٢٬٣٤٥٫٦)');
+    expect(text(fixture, 'label[for="digits-western"]')).toBe('Western digits, 0–9 (12,345.6)');
+    expect(text(fixture, 'label[for="digits-native"]')).toBe("The language's own digits, where it has them (١٢٬٣٤٥٫٦)");
+    expect(egypt()).toContain('١٢٬٣٤٥٫٦');
+    (fixture.nativeElement.querySelector('#digits-western') as HTMLInputElement).click();
+    await fixture.whenStable();
+    const req = httpMock().expectOne(API + '/preferences');
+    expect(req.request.method).toBe('PUT');
+    expect(req.request.body).toEqual({ digits: 'western' });
+    req.flush({ digits: 'western' });
+    await settle(fixture);
+    expect(text(fixture, '.settings-status')).toBe('Saved: numbers are shown with the digits 0–9.');
+    expect(localStorage.getItem('digits')).toBe('western');
+    // The formats' examples follow the choice.
+    expect(egypt()).toContain('12,345.6');
   });
 
   it('says when the choice could not be saved, and shows the one still in place', async () => {
@@ -269,12 +306,14 @@ describe('SettingsSection', () => {
 
     it('chooses a language, saves it, and opens this page in it', async () => {
       const { fixture } = await create();
-      const select = fixture.nativeElement.querySelector('#language') as HTMLSelectElement;
-      expect([...select.options].map((option) => option.textContent?.trim())).toEqual(['English', 'Ëñĝļîšĥ (pseudo)']);
-      expect(select.value).toBe('en-XA');
-      select.value = 'en';
-      select.dispatchEvent(new Event('change'));
+      const field = pickerField(fixture.nativeElement);
+      expect(field.id).toBe('language');
+      expect(field.value).toBe('Ëñĝļîšĥ (pseudo)');
+      field.click();
       await fixture.whenStable();
+      // Each in its own name, with the English name beside it; English first, then the groups.
+      expect(pickerOptions(fixture.nativeElement)).toEqual(['English', 'Ëñĝļîšĥ (pseudo) Pseudo-English']);
+      await choosePicked(fixture, field, 'English');
       const req = httpMock().expectOne(API + '/preferences');
       expect(req.request.body).toEqual({ language: 'en' });
       req.flush({ language: 'en' });

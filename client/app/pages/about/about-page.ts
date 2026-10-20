@@ -1,13 +1,14 @@
 import { Component, inject } from '@angular/core';
 import { TranslocoDirective } from '@jsverse/transloco';
-import { OFFERED_LANGUAGES, PAGE_LANGUAGE, languageName, pathIn } from '../../i18n/language';
+import { OFFERED_LANGUAGES, PAGE_LANGUAGE, pathIn } from '../../i18n/language';
+import { LanguageLinks } from '../../i18n/language-links';
 import { RichText } from '../../i18n/rich-text';
 import { PageHeader } from '../../shared/page-header';
 
 /** What Glazecalc is, how its numbers are worked out, and how it is built. */
 @Component({
   selector: 'gc-about-page',
-  imports: [PageHeader, RichText, TranslocoDirective],
+  imports: [LanguageLinks, PageHeader, RichText, TranslocoDirective],
   template: `<ng-container *transloco="let t">
     <gc-page-header [title]="t('site.about.title')" [lead]="t('site.about.lead')" />
 
@@ -58,48 +59,23 @@ import { PageHeader } from '../../shared/page-header';
       </p>
     </section>
 
-    <!-- Every live language, each in its own name and linked to this page in it, as the footer's chooser is. -->
+    <!-- Every live language, each in its own name and linked to this page in it, as the footer's chooser is,
+         grouped by the part of the world they are spoken in. -->
     @if (languages.length > 1) {
       <section class="panel" aria-labelledby="about-languages-heading">
         <h2 id="about-languages-heading">{{ t('site.about.languagesHeading') }}</h2>
         <p>{{ t('site.about.languages') }}</p>
         <nav aria-labelledby="about-languages-heading">
-          <ul class="about-languages">
-            @for (code of languages; track code) {
-              <li>
-                <a
-                  [href]="aboutIn(code)"
-                  [attr.lang]="code"
-                  [attr.hreflang]="code"
-                  translate="no"
-                  [attr.aria-current]="code === pageLanguage ? 'page' : null"
-                  >{{ languageName(code) }}</a
-                >
-              </li>
-            }
-          </ul>
+          <gc-language-links [languages]="languages" [href]="aboutIn" [current]="pageLanguage" [hreflang]="true" />
         </nav>
       </section>
     }
-  </ng-container>`,
-  styles: `
-    .about-languages {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem 1.5rem;
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-  `
+  </ng-container>`
 })
 export class AboutPage {
   protected readonly languages = inject(OFFERED_LANGUAGES);
   protected readonly pageLanguage = inject(PAGE_LANGUAGE);
-  protected readonly languageName = languageName;
 
   /** This page in a language: /about, /de/about. */
-  protected aboutIn(code: string): string {
-    return pathIn(code, '/about');
-  }
+  protected readonly aboutIn = (code: string): string => pathIn(code, '/about');
 }

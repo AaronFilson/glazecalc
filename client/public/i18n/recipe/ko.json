@@ -979,7 +979,6 @@
     "approxTemperature": "≈ {temperature}({basis}, 근삿값)",
     "approxCone": "≈ {cone}({basis}, 근삿값)",
     "basis": {
-      "orton60": "시간당 60 °C로 가열한 오튼 대형 콘",
       "kyoto": "교토시 시립 연구소가 시간당 100 °C로 측정",
       "stated": "입력된 그대로"
     },

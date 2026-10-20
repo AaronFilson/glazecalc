@@ -79,41 +79,47 @@ Preglednica za samostoječi stožec 6 navaja {{2232 °F; 1222 °C}}, vendar le, 
 
 :::
 
-## Preglednica stožcev {#cone-chart}
+## The cone chart {#cone-chart lang=en}
 
-Te vrednosti so iz Ortonove preglednice stožcev (©2001) za samostoječe stožce{{en: cones}}. Izberite stolpec, ki ustreza temu, kako hitro je temperatura v vaši peči naraščala v zadnjih {{180 °F; 100 °C}}. Po Ortonovem pravilu velja za hitro žganje stolpec {{270 °F/h; 150 °C/h}}, za srednje hitro stolpec {{108 °F/h; 60 °C/h}} in za počasno stolpec {{27 °F/h; 15 °C/h}}. Hitrost izračunate tako, da dvig temperature delite s številom ur, ki jih je potreboval: peč, v kateri se temperatura v 3 urah dvigne za {{900 °F; 500 °C}}, se segreva s hitrostjo približno {{300 °F/h; 167 °C/h}}.
+These figures are from Orton's cone chart (©2001) for self-supporting cones; cones 11 to 14 are from the charts Orton publishes now, which give the same figures where they overlap, and cones 13 and 14 only in °C (their °F here is converted). Choose the column that matches how fast your kiln climbed over the last {{180 °F; 100 °C}}. Orton's rule of thumb is the {{270 °F/h; 150 °C/h}} column for a fast firing, the {{108 °F/h; 60 °C/h}} column for a medium one and the {{27 °F/h; 15 °C/h}} column for a slow one. To work out a rate, divide the temperature climbed by the hours it took: a kiln that climbs {{900 °F; 500 °C}} in 3 hours is heating at about {{300 °F/h; 167 °C/h}}.
 
-Table: Ortonovi samostoječi stožci: temperatura, pri kateri se upogne posamezni stožec, glede na hitrost segrevanja v zadnjih {{180 °F; 100 °C}}
-Label: Preglednica Ortonovih stožcev
+Table: Orton self-supporting cones: the temperature at which each bends, by heating rate over the last {{180 °F; 100 °C}}
+Label: Orton cone chart
 
-| Stožec | Počasi, {{27 °F/h; 15 °C/h}} | Srednje, {{108 °F/h; 60 °C/h}} | Hitro, {{270 °F/h; 150 °C/h}} |
-| ------ | ---------------------------: | -----------------------------: | ----------------------------: |
-| 022    |                            – |            {{1087 °F; 586 °C}} |           {{1094 °F; 590 °C}} |
-| 018    |                            – |            {{1319 °F; 715 °C}} |           {{1353 °F; 734 °C}} |
-| 015    |                            – |            {{1456 °F; 791 °C}} |           {{1504 °F; 818 °C}} |
-| 010    |          {{1636 °F; 891 °C}} |            {{1657 °F; 903 °C}} |           {{1679 °F; 915 °C}} |
-| 08     |          {{1692 °F; 922 °C}} |            {{1728 °F; 942 °C}} |           {{1753 °F; 956 °C}} |
-| 07     |                            – |            {{1789 °F; 976 °C}} |           {{1809 °F; 987 °C}} |
-| 06     |          {{1798 °F; 981 °C}} |            {{1828 °F; 998 °C}} |          {{1855 °F; 1013 °C}} |
-| 05     |         {{1870 °F; 1021 °C}} |           {{1888 °F; 1031 °C}} |          {{1911 °F; 1044 °C}} |
-| 04     |         {{1915 °F; 1046 °C}} |           {{1945 °F; 1063 °C}} |          {{1971 °F; 1077 °C}} |
-| 03     |         {{1960 °F; 1071 °C}} |           {{1987 °F; 1086 °C}} |          {{2019 °F; 1104 °C}} |
-| 02     |                            – |           {{2016 °F; 1102 °C}} |          {{2052 °F; 1122 °C}} |
-| 01     |         {{1999 °F; 1093 °C}} |           {{2046 °F; 1119 °C}} |          {{2080 °F; 1138 °C}} |
-| 1      |         {{2028 °F; 1109 °C}} |           {{2079 °F; 1137 °C}} |          {{2109 °F; 1154 °C}} |
-| 4      |         {{2086 °F; 1141 °C}} |           {{2124 °F; 1162 °C}} |          {{2161 °F; 1183 °C}} |
-| 5      |         {{2118 °F; 1159 °C}} |           {{2167 °F; 1186 °C}} |          {{2205 °F; 1207 °C}} |
-| 6      |         {{2165 °F; 1185 °C}} |           {{2232 °F; 1222 °C}} |          {{2269 °F; 1243 °C}} |
-| 7      |         {{2194 °F; 1201 °C}} |           {{2262 °F; 1239 °C}} |          {{2295 °F; 1257 °C}} |
-| 8      |         {{2212 °F; 1211 °C}} |           {{2280 °F; 1249 °C}} |          {{2320 °F; 1271 °C}} |
-| 9      |         {{2235 °F; 1224 °C}} |           {{2300 °F; 1260 °C}} |          {{2336 °F; 1280 °C}} |
-| 10     |         {{2284 °F; 1251 °C}} |           {{2345 °F; 1285 °C}} |          {{2381 °F; 1305 °C}} |
+| Cone | Slow, {{27 °F/h; 15 °C/h}} | Medium, {{108 °F/h; 60 °C/h}} | Fast, {{270 °F/h; 150 °C/h}} |
+| ---- | -------------------------: | ----------------------------: | ---------------------------: |
+| 022  |                          – |           {{1087 °F; 586 °C}} |          {{1094 °F; 590 °C}} |
+| 018  |                          – |           {{1319 °F; 715 °C}} |          {{1353 °F; 734 °C}} |
+| 015  |                          – |           {{1456 °F; 791 °C}} |          {{1504 °F; 818 °C}} |
+| 010  |        {{1636 °F; 891 °C}} |           {{1657 °F; 903 °C}} |          {{1679 °F; 915 °C}} |
+| 08   |        {{1692 °F; 922 °C}} |           {{1728 °F; 942 °C}} |          {{1753 °F; 956 °C}} |
+| 07   |                          – |           {{1789 °F; 976 °C}} |          {{1809 °F; 987 °C}} |
+| 06   |        {{1798 °F; 981 °C}} |           {{1828 °F; 998 °C}} |         {{1855 °F; 1013 °C}} |
+| 05   |       {{1870 °F; 1021 °C}} |          {{1888 °F; 1031 °C}} |         {{1911 °F; 1044 °C}} |
+| 04   |       {{1915 °F; 1046 °C}} |          {{1945 °F; 1063 °C}} |         {{1971 °F; 1077 °C}} |
+| 03   |       {{1960 °F; 1071 °C}} |          {{1987 °F; 1086 °C}} |         {{2019 °F; 1104 °C}} |
+| 02   |                          – |          {{2016 °F; 1102 °C}} |         {{2052 °F; 1122 °C}} |
+| 01   |       {{1999 °F; 1093 °C}} |          {{2046 °F; 1119 °C}} |         {{2080 °F; 1138 °C}} |
+| 1    |       {{2028 °F; 1109 °C}} |          {{2079 °F; 1137 °C}} |         {{2109 °F; 1154 °C}} |
+| 4    |       {{2086 °F; 1141 °C}} |          {{2124 °F; 1162 °C}} |         {{2161 °F; 1183 °C}} |
+| 5    |       {{2118 °F; 1159 °C}} |          {{2167 °F; 1186 °C}} |         {{2205 °F; 1207 °C}} |
+| 6    |       {{2165 °F; 1185 °C}} |          {{2232 °F; 1222 °C}} |         {{2269 °F; 1243 °C}} |
+| 7    |       {{2194 °F; 1201 °C}} |          {{2262 °F; 1239 °C}} |         {{2295 °F; 1257 °C}} |
+| 8    |       {{2212 °F; 1211 °C}} |          {{2280 °F; 1249 °C}} |         {{2320 °F; 1271 °C}} |
+| 9    |       {{2235 °F; 1224 °C}} |          {{2300 °F; 1260 °C}} |         {{2336 °F; 1280 °C}} |
+| 10   |       {{2284 °F; 1251 °C}} |          {{2345 °F; 1285 °C}} |         {{2381 °F; 1305 °C}} |
+| 11   |       {{2322 °F; 1272 °C}} |          {{2361 °F; 1294 °C}} |         {{2399 °F; 1315 °C}} |
+| 12   |       {{2345 °F; 1285 °C}} |          {{2383 °F; 1306 °C}} |         {{2419 °F; 1326 °C}} |
+| 13   |       {{2390 °F; 1310 °C}} |          {{2428 °F; 1331 °C}} |         {{2458 °F; 1348 °C}} |
+| 14   |       {{2464 °F; 1351 °C}} |          {{2489 °F; 1365 °C}} |         {{2523 °F; 1384 °C}} |
 
-Pomišljaj pomeni vrednost, ki je tu nismo prepisali; najdete jo v Ortonovi celotni preglednici.
+A dash marks a figure not copied here; see Orton's full chart for it.
 
-Veliki stožci se od teh vrednosti razlikujejo le za nekaj stopinj: veliki stožec 6 pri {{108 °F/h; 60 °C/h}} ima {{2228 °F; 1220 °C}}. Mali stožci, kakršni se uporabljajo v Kiln-Sitterju, so navedeni samo pri {{540 °F/h; 300 °C/h}}, zato preglednica za mali stožec 6 navaja {{2291 °F; 1255 °C}}. To ni temperatura, pri kateri Kiln-Sitter izklopi peč. Naloga stožca v Kiln-Sitterju je, da se ujema s stožcem na plošči, zadnjo besedo pa ima stožec na plošči.
+Orton makes cones up to 42 for high-temperature work, but publishes temperatures only up to cone 14; for hotter cones its charts are "available (by request)". An older Orton chart, as kiln makers reprint it, gives a large cone 15 as {{2608 °F; 1431 °C}} at {{270 °F/h; 150 °C/h}}, and we found no published figure for cone 16 or above. Past cone 14, set witness cones and go by them, and check that your kiln is rated for that heat.
 
-Dve opozorili. Ortonova knjižica iz leta 2019 za stožec 06 pri hitrem segrevanju navaja {{1875 °F; 1024 °C}}, tako preglednica kot Ortonova pogosta vprašanja (FAQ) pa navajajo {{1855 °F; 1013 °C}}, kar uporabljamo tu. Poleg tega ima preglednica za velike stožce na koncu Dawsonovih navodil za Kiln-Sitter napake pri prepisu (stožec 5 je v njej vročejši od stožca 6), zato je ne uporabljajte.
+Large cones read within a few degrees of these figures: a large cone 6 at {{108 °F/h; 60 °C/h}} is {{2228 °F; 1220 °C}}. Small cones, the kind used in a kiln sitter, are listed only at {{540 °F/h; 300 °C/h}}, so the chart gives a small cone 6 as {{2291 °F; 1255 °C}}. That is not the temperature at which a sitter turns the kiln off. The sitter cone's job is to match the shelf cone, and the shelf cone has the final say.
+
+Two cautions. Orton's 2019 booklet gives cone 06 at the fast rate as {{1875 °F; 1024 °C}}, but the chart and Orton's FAQ both give {{1855 °F; 1013 °C}}, used here. And the large-cone table at the back of the Dawson kiln sitter manual has copying errors (cone 5 hotter than cone 6), so do not use it.
 
 :::temperature
 
@@ -281,33 +287,35 @@ Label: Popravki naslednjega žganja
 
 :::sk
 
-## Žganje po stožcih SK {#sk-cones}
+## Firing to SK cones {#sk-cones lang=en}
 
-Stožci SK so pirometrični stožci, izdelani po japonskem standardu JIS R 8101, na Japonskem pa jih prodajajo trgovci, kot je Yuko Trading (有恒商事). Kot vsak stožec tudi stožec SK meri toplotno delo{{en: heatwork}}, ne le temperaturo: zmehča se in upogne, ko izdelki dobijo dovolj toplote, vi pa odčitate, kako daleč se je upognil. Kontrolni stožci{{en: witness cone}}, odčitavanje, kako daleč se je stožec upognil, in zadržanja{{en: hold}} delujejo zanj enako kot za vsak stožec. Ta razdelek pri vsakem stožcu navede njegov sistem in številke SK nikoli ne pretvori v številko drugega sistema: številke različnih serij stožcev niso medsebojno zamenljive.
+SK cones are the pyrometric cones made to Japan's standard, JIS R 8101, and sold in Japan by dealers such as Yuko Trading (有恒商事). Like any cone, an SK cone measures heatwork, not temperature alone: it softens and bends over when the ware has had enough heat, and you read how far it bent. Witness cones, reading how far a cone has bent, and holds work for it as for any cone. This section names each cone's system, and never turns an SK number into another system's number: the numbers of different cone series are not interchangeable.
 
 > [!NOTE]
-> Pred številko vedno pišite »SK«. Veliko starejših japonskih receptov pravi samo »SK 8« ali »SK 9«, ne da bi povedali, čigav stožec je mišljen. Kjotski stožci in stožci SK po JIS imajo enake številke, vendar se upognejo pri različnih temperaturah (glejte spodaj razdelek Kjotski stožci).
+> Always write "SK" before the number. Many older Japanese recipes say only "SK 8" or "SK 9" without saying whose cone. Kyoto cones and SK cones to JIS carry the same numbers but bend at different temperatures (see Kyoto cones, below).
 
-### Veliki stožci
+### The large cones
 
-Standard ima dve velikosti. Veliki stožci (大型コーン) se »uporabljajo predvsem za merjenje stopnje žganja« (焼度測定), kar keramik potrebuje. Mali stožci (od SK 26 do SK 42, na vrhu razpona) se »uporabljajo predvsem za preskuse ognjevzdržnosti« in tu niso zajeti. Spodnja preglednica navaja velike stožce od SK 022 do SK 20.
+The standard has two sizes. Large cones (大型コーン) are "mainly used for measuring the degree of firing" (焼度測定), which is what a potter wants. Small cones (SK 26 to SK 42, at the top of the range) are "mainly used for refractoriness tests" and are not covered here. The table below gives the large cones from SK 022 to SK 20.
 
-Številke tu tečejo od SK 022, najhladnejšega, do SK 20. Med SK 015 in SK 6 imajo natisnjene številke »a« (SK 015a, SK 6a); pišite ga tako, kot je natisnjen.
+The numbers run from SK 022, the coolest, up to SK 20 here. Between SK 015 and SK 6 the printed numbers carry an "a" (SK 015a, SK 6a); write it as printed.
 
-### Postavitev velikih stožcev
+### Setting large cones
 
-Vsak velik stožec postavite v podstavek ali v kepico gline, nagnjen proti svoji upogibni strani. Kot pri vsakem stožcu ohranjajte višino in naklon od žganja do žganja enaka, saj razlika v enem ali drugem spremeni, kako daleč se stožec upogne. Tri stožce niza (spodaj) postavite skupaj, globoko v peč blizu sredine vsebine peči, kjer dobijo toploto, ki jo dobijo izdelki, a vendar tja, kjer jih vidite skozi opazovalno odprtino; preden zaprete peč, preverite, ali vidite vse tri.
+Set each large cone in a plaque or a pat of clay, leaning toward its bending face. As with any cone, keep the height and the lean the same from firing to firing, because a difference in either changes how far it bends. Set the three cones of the pack (below) together, deep in the kiln near the middle of the load, where they get the heat the ware gets, yet where you can see them through a peephole; before you close the kiln, check that you can see all three.
 
-### Vodilni, ciljni in varovalni stožec
+We found no maker's or seller's instructions for how deep or at what angle to set SK cones. The nearest is a laboratory standard, JIS R 2204, Japan's test of how much heat a refractory material stands: it sets each SK cone with its marked face at 80° to a flat stand and its foot about 4 mm into it. That is a test for refractories, not a rule for firing pots, and we read it in a transcription of the standard, not in the standard itself.
 
-Stožci se prodajajo in postavljajo po trije: vodilni stožec, ciljni stožec pri želeni stopnji in varovalni stožec. Za ciljni stožec vzemite številko SK, ki jo navaja vaš recept ali glina, za vodilnega naslednji hladnejši stožec (ena vrstica višje v preglednici), za varovalnega pa naslednji vročejši. Ko se vodilni stožec začne upogibati, je konec blizu; ko se upogne varovalni stožec, je žganje šlo predaleč.
+### Guide, firing and guard cones
 
-### Preglednica stožcev SK
+Cones are sold and set as three: a guide cone, a firing cone at the target, and a guard cone. Take the firing cone as the SK number your recipe or clay names, the guide cone as the next cooler cone (one row up in the table) and the guard cone as the next hotter one. When the guide cone starts to bend, the end is near; when the guard cone bends, the firing has gone too far.
 
-Table: Veliki stožci SK (JIS R 8101): nazivna temperatura (JIS) vsakega
-Label: Preglednica stožcev SK
+### The SK chart
 
-| Stožec  | Nazivna temperatura (JIS) |
+Table: SK large cones (JIS R 8101): the nominal (JIS) temperature of each
+Label: SK chart
+
+| Cone    | Nominal (JIS) temperature |
 | ------- | ------------------------: |
 | SK 022  |       {{1112 °F; 600 °C}} |
 | SK 021  |       {{1202 °F; 650 °C}} |
@@ -352,21 +360,23 @@ Label: Preglednica stožcev SK
 | SK 19   |      {{2768 °F; 1520 °C}} |
 | SK 20   |      {{2786 °F; 1530 °C}} |
 
-Vsaka vrednost je nazivna (JIS): temperatura, ki jo standard navaja za stožec, kot je natisnjena v preglednici podjetja Yuko Trading. Preglednica ne navaja hitrosti segrevanja. Standard navaja referenčne temperature. Pri hitrosti, običajni v keramični delavnici, okoli 100 °C/h, je kjotski mestni inštitut izmeril, da se njegovi lastni kjotski stožci upognejo 47–79 °C hladneje od vrednosti JIS za isto številko; takih meritev za stožce SK po JIS nismo našli. Postavite kontrolni stožec in primerjajte.
+Every figure is nominal (JIS): the temperature the standard gives for the cone, as printed in Yuko Trading's table. The table does not print a heating rate. The standard gives reference temperatures. At a potter's rate of about 100 °C/h, Kyoto's municipal institute measured its own Kyoto cones bending 47–79 °C cooler than the JIS figure for the same number; we found no such measurements for SK cones to JIS. Set a witness cone and compare.
 
-### Kjotski stožci
+### Kyoto cones
 
-Kjotskih stožcev (京都ゼーゲル), ki jih je izdeloval kjotski mestni inštitut, ne izdelujejo več: po poročanju medijev je inštitut proizvodnjo ustavil ob koncu poslovnega leta 2009. Imajo enake številke kot stožci SK po JIS, vendar se upognejo hladneje: kjotski stožec se upogne pri približno temperaturi stožca SK po JIS, ki je za dve ali tri številke hladnejši. Recept iz Kjota, ki pravi »SK 8«, morda misli na kjotski stožec. Inštitut je objavil nasvete za keramike, ki s kjotskih stožcev prehajajo na Ortonove stožce, in namesto svojega kjotskega SK 12 uporablja Ortonov stožec 10. To je izbira inštituta na podlagi njegovih lastnih meritev: kjotske in Ortonove stožce je upogibal v isti peči pri 100 °C/h in kjotski SK 12 (1290 °C) se je upognil tam, kjer Ortonov 10 (1290 °C). V isti tabeli se je kjotski SK 8 (1198 °C) upognil blizu Ortonovega 5 (1207 °C), kjotski SK 10 (1232 °C) pa tam, kjer Ortonov 7 (1232 °C). Glazecalc uporablja to tabelo, ne Ortonove tabele pri 60 °C/h, ko prikaže stožec SK ob Ortonovem stožcu, in pove, da je vsako ujemanje približno.
+Kyoto cones (京都ゼーゲル), made by Kyoto's municipal institute, are no longer made: news reports say the institute ended production at the close of fiscal 2009. They carry the same numbers as SK cones to JIS but bend cooler: a Kyoto cone bends at about the temperature of the SK cone to JIS two or three numbers lower. A recipe from Kyoto that says "SK 8" may mean a Kyoto cone. The institute has published advice for potters moving from Kyoto cones to Orton cones, and substitutes Orton cone 10 for its own Kyoto SK 12. That is the institute's choice from its own measurements: it bent Kyoto cones and Orton cones in the same kiln at 100 °C/h, and Kyoto SK 12 (1290 °C) bent where Orton 10 (1290 °C) did. In the same table Kyoto SK 8 (1198 °C) bent near Orton 5 (1207 °C), and Kyoto SK 10 (1232 °C) where Orton 7 (1232 °C) did. Glazecalc uses this table, not the Orton chart at 60 °C/h, when it shows an SK cone beside an Orton cone, and says each match is approximate.
 
-### Ortonovi stožci, ki se prodajajo na Japonskem
+### Orton cones sold in Japan
 
-Ortonovi samostoječi stožci se na Japonskem prodajajo pod imenom 立つゼーゲル (»stoječi Seger«), ker ne potrebujejo ne podstavka ne stojala. So Ortonovi stožci, z Ortonovimi številkami in Ortonovo preglednico (zgoraj): do takega stožca žgite samo po njegovi Ortonovi številki, stožce SK in Ortonove stožce pa imejte v ločenih nizih, nikoli v istem.
+Orton self-supporting cones are sold in Japan under the name 立つゼーゲル ("standing Seger"), because they need no plaque or stand. They are Orton cones, with Orton's numbers and Orton's chart (above): fire to one only by its Orton number, and keep SK and Orton cones in separate packs, never in the same one.
 
-### Viri za stožce SK
+### Sources for SK cones
 
-- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (preglednica stožcev SK, preverjeno 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
-- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (veljaven, ponovno potrjen 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
-- [Kyoto Municipal Institute of Industrial Technology and Culture: na kaj paziti pri prehodu s kjotskih stožcev na Ortonove stožce](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
+- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (the SK table, checked 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
+- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (in force, reconfirmed 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
+- [JSA: JIS R 2204:1999, 耐火物及び耐火物原料の耐火度試験方法 (in force, reconfirmed 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+2204:1999)
+- [kikakurui.com: a transcription of JIS R 2204:1999, where clause 5 a) sets the cones (read 2026-10-19)](https://kikakurui.com/r2/R2204-1999-01.html)
+- [Kyoto Municipal Institute of Industrial Technology and Culture: points to note when moving from Kyoto cones to Orton cones](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
 
 :::
 

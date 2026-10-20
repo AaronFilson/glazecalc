@@ -979,7 +979,6 @@
     "approxTemperature": "≈ {temperature} ({basis}; omtrentligt)",
     "approxCone": "≈ {cone} ({basis}; omtrentligt)",
     "basis": {
-      "orton60": "store Ortonkegler ved 60 °C pr. time",
       "kyoto": "målt ved 100 °C pr. time af Kyotos kommunale institut",
       "stated": "som angivet"
     },

@@ -979,7 +979,6 @@
     "approxTemperature": "≈ {temperature} ({basis}; perkiraan)",
     "approxCone": "≈ {cone} ({basis}; perkiraan)",
     "basis": {
-      "orton60": "kerucut besar Orton pada 60 °C per jam",
       "kyoto": "diukur pada 100 °C per jam oleh lembaga kota Kyoto",
       "stated": "sesuai isian"
     },

@@ -979,7 +979,6 @@
     "approxTemperature": "≈ {temperature} ({basis}; gần đúng)",
     "approxCone": "≈ {cone} ({basis}; gần đúng)",
     "basis": {
-      "orton60": "côn Orton lớn ở 60 °C mỗi giờ",
       "kyoto": "đo ở 100 °C mỗi giờ bởi viện nghiên cứu của thành phố Kyoto",
       "stated": "như đã nêu"
     },

@@ -979,7 +979,6 @@
     "approxTemperature": "≈ {temperature} ({basis}; aproximativ)",
     "approxCone": "≈ {cone} ({basis}; aproximativ)",
     "basis": {
-      "orton60": "conuri Orton mari la 60 °C pe oră",
       "kyoto": "măsurat la 100 °C pe oră de institutul municipal din Kyoto",
       "stated": "așa cum a fost indicat"
     },

@@ -79,41 +79,47 @@ Diagrammet anger en självstående kägla 6 som {{2232 °F; 1222 °C}}, men bara
 
 :::
 
-## Kägeltabellen {#cone-chart}
+## The cone chart {#cone-chart lang=en}
 
-Siffrorna kommer från Ortons kägeltabell (©2001) för självstående käglor{{en: cones}}. Välj den kolumn som motsvarar hur snabbt ugnen steg under de sista {{180 °F; 100 °C}}. Ortons tumregel är kolumnen {{270 °F/h; 150 °C/h}} för en snabb bränning, kolumnen {{108 °F/h; 60 °C/h}} för en medelsnabb och kolumnen {{27 °F/h; 15 °C/h}} för en långsam. Räkna ut stigningen genom att dela temperaturökningen med antalet timmar den tog: en ugn som stiger {{900 °F; 500 °C}} på 3 timmar har en stigning på ungefär {{300 °F/h; 167 °C/h}}.
+These figures are from Orton's cone chart (©2001) for self-supporting cones; cones 11 to 14 are from the charts Orton publishes now, which give the same figures where they overlap, and cones 13 and 14 only in °C (their °F here is converted). Choose the column that matches how fast your kiln climbed over the last {{180 °F; 100 °C}}. Orton's rule of thumb is the {{270 °F/h; 150 °C/h}} column for a fast firing, the {{108 °F/h; 60 °C/h}} column for a medium one and the {{27 °F/h; 15 °C/h}} column for a slow one. To work out a rate, divide the temperature climbed by the hours it took: a kiln that climbs {{900 °F; 500 °C}} in 3 hours is heating at about {{300 °F/h; 167 °C/h}}.
 
-Table: Ortons självstående käglor: temperaturen där varje kägla böjer sig, efter stigning under de sista {{180 °F; 100 °C}}
-Label: Ortons kägeltabell
+Table: Orton self-supporting cones: the temperature at which each bends, by heating rate over the last {{180 °F; 100 °C}}
+Label: Orton cone chart
 
-| Kägla | Långsam, {{27 °F/h; 15 °C/h}} | Medel, {{108 °F/h; 60 °C/h}} | Snabb, {{270 °F/h; 150 °C/h}} |
-| ----- | ----------------------------: | ---------------------------: | ----------------------------: |
-| 022   |                             – |          {{1087 °F; 586 °C}} |           {{1094 °F; 590 °C}} |
-| 018   |                             – |          {{1319 °F; 715 °C}} |           {{1353 °F; 734 °C}} |
-| 015   |                             – |          {{1456 °F; 791 °C}} |           {{1504 °F; 818 °C}} |
-| 010   |           {{1636 °F; 891 °C}} |          {{1657 °F; 903 °C}} |           {{1679 °F; 915 °C}} |
-| 08    |           {{1692 °F; 922 °C}} |          {{1728 °F; 942 °C}} |           {{1753 °F; 956 °C}} |
-| 07    |                             – |          {{1789 °F; 976 °C}} |           {{1809 °F; 987 °C}} |
-| 06    |           {{1798 °F; 981 °C}} |          {{1828 °F; 998 °C}} |          {{1855 °F; 1013 °C}} |
-| 05    |          {{1870 °F; 1021 °C}} |         {{1888 °F; 1031 °C}} |          {{1911 °F; 1044 °C}} |
-| 04    |          {{1915 °F; 1046 °C}} |         {{1945 °F; 1063 °C}} |          {{1971 °F; 1077 °C}} |
-| 03    |          {{1960 °F; 1071 °C}} |         {{1987 °F; 1086 °C}} |          {{2019 °F; 1104 °C}} |
-| 02    |                             – |         {{2016 °F; 1102 °C}} |          {{2052 °F; 1122 °C}} |
-| 01    |          {{1999 °F; 1093 °C}} |         {{2046 °F; 1119 °C}} |          {{2080 °F; 1138 °C}} |
-| 1     |          {{2028 °F; 1109 °C}} |         {{2079 °F; 1137 °C}} |          {{2109 °F; 1154 °C}} |
-| 4     |          {{2086 °F; 1141 °C}} |         {{2124 °F; 1162 °C}} |          {{2161 °F; 1183 °C}} |
-| 5     |          {{2118 °F; 1159 °C}} |         {{2167 °F; 1186 °C}} |          {{2205 °F; 1207 °C}} |
-| 6     |          {{2165 °F; 1185 °C}} |         {{2232 °F; 1222 °C}} |          {{2269 °F; 1243 °C}} |
-| 7     |          {{2194 °F; 1201 °C}} |         {{2262 °F; 1239 °C}} |          {{2295 °F; 1257 °C}} |
-| 8     |          {{2212 °F; 1211 °C}} |         {{2280 °F; 1249 °C}} |          {{2320 °F; 1271 °C}} |
-| 9     |          {{2235 °F; 1224 °C}} |         {{2300 °F; 1260 °C}} |          {{2336 °F; 1280 °C}} |
-| 10    |          {{2284 °F; 1251 °C}} |         {{2345 °F; 1285 °C}} |          {{2381 °F; 1305 °C}} |
+| Cone | Slow, {{27 °F/h; 15 °C/h}} | Medium, {{108 °F/h; 60 °C/h}} | Fast, {{270 °F/h; 150 °C/h}} |
+| ---- | -------------------------: | ----------------------------: | ---------------------------: |
+| 022  |                          – |           {{1087 °F; 586 °C}} |          {{1094 °F; 590 °C}} |
+| 018  |                          – |           {{1319 °F; 715 °C}} |          {{1353 °F; 734 °C}} |
+| 015  |                          – |           {{1456 °F; 791 °C}} |          {{1504 °F; 818 °C}} |
+| 010  |        {{1636 °F; 891 °C}} |           {{1657 °F; 903 °C}} |          {{1679 °F; 915 °C}} |
+| 08   |        {{1692 °F; 922 °C}} |           {{1728 °F; 942 °C}} |          {{1753 °F; 956 °C}} |
+| 07   |                          – |           {{1789 °F; 976 °C}} |          {{1809 °F; 987 °C}} |
+| 06   |        {{1798 °F; 981 °C}} |           {{1828 °F; 998 °C}} |         {{1855 °F; 1013 °C}} |
+| 05   |       {{1870 °F; 1021 °C}} |          {{1888 °F; 1031 °C}} |         {{1911 °F; 1044 °C}} |
+| 04   |       {{1915 °F; 1046 °C}} |          {{1945 °F; 1063 °C}} |         {{1971 °F; 1077 °C}} |
+| 03   |       {{1960 °F; 1071 °C}} |          {{1987 °F; 1086 °C}} |         {{2019 °F; 1104 °C}} |
+| 02   |                          – |          {{2016 °F; 1102 °C}} |         {{2052 °F; 1122 °C}} |
+| 01   |       {{1999 °F; 1093 °C}} |          {{2046 °F; 1119 °C}} |         {{2080 °F; 1138 °C}} |
+| 1    |       {{2028 °F; 1109 °C}} |          {{2079 °F; 1137 °C}} |         {{2109 °F; 1154 °C}} |
+| 4    |       {{2086 °F; 1141 °C}} |          {{2124 °F; 1162 °C}} |         {{2161 °F; 1183 °C}} |
+| 5    |       {{2118 °F; 1159 °C}} |          {{2167 °F; 1186 °C}} |         {{2205 °F; 1207 °C}} |
+| 6    |       {{2165 °F; 1185 °C}} |          {{2232 °F; 1222 °C}} |         {{2269 °F; 1243 °C}} |
+| 7    |       {{2194 °F; 1201 °C}} |          {{2262 °F; 1239 °C}} |         {{2295 °F; 1257 °C}} |
+| 8    |       {{2212 °F; 1211 °C}} |          {{2280 °F; 1249 °C}} |         {{2320 °F; 1271 °C}} |
+| 9    |       {{2235 °F; 1224 °C}} |          {{2300 °F; 1260 °C}} |         {{2336 °F; 1280 °C}} |
+| 10   |       {{2284 °F; 1251 °C}} |          {{2345 °F; 1285 °C}} |         {{2381 °F; 1305 °C}} |
+| 11   |       {{2322 °F; 1272 °C}} |          {{2361 °F; 1294 °C}} |         {{2399 °F; 1315 °C}} |
+| 12   |       {{2345 °F; 1285 °C}} |          {{2383 °F; 1306 °C}} |         {{2419 °F; 1326 °C}} |
+| 13   |       {{2390 °F; 1310 °C}} |          {{2428 °F; 1331 °C}} |         {{2458 °F; 1348 °C}} |
+| 14   |       {{2464 °F; 1351 °C}} |          {{2489 °F; 1365 °C}} |         {{2523 °F; 1384 °C}} |
 
-Ett streck betyder att värdet inte har tagits med här; det finns i Ortons fullständiga tabell.
+A dash marks a figure not copied here; see Orton's full chart for it.
 
-Stora käglor ligger inom några få grader från de här värdena: en stor kägla 6 vid {{108 °F/h; 60 °C/h}} böjer sig vid {{2228 °F; 1220 °C}}. Små käglor, den sort som används i en Kiln-Sitter, anges bara för {{540 °F/h; 300 °C/h}}, så tabellen anger {{2291 °F; 1255 °C}} för en liten kägla 6. Det är inte den temperatur där Kiln-Sitter-brytaren stänger av ugnen. Kiln-Sitter-käglans uppgift är att stämma med käglan på ugnsplattan, och det är käglan på ugnsplattan som har sista ordet.
+Orton makes cones up to 42 for high-temperature work, but publishes temperatures only up to cone 14; for hotter cones its charts are "available (by request)". An older Orton chart, as kiln makers reprint it, gives a large cone 15 as {{2608 °F; 1431 °C}} at {{270 °F/h; 150 °C/h}}, and we found no published figure for cone 16 or above. Past cone 14, set witness cones and go by them, and check that your kiln is rated for that heat.
 
-Två varningar. Ortons broschyr från 2019 anger {{1875 °F; 1024 °C}} för kägla 06 vid snabb stigning, men tabellen och Ortons FAQ anger båda {{1855 °F; 1013 °C}}, som används här. Och tabellen för stora käglor längst bak i Dawsons bruksanvisning för Kiln-Sitter har avskrivningsfel (kägla 5 varmare än kägla 6), så använd den inte.
+Large cones read within a few degrees of these figures: a large cone 6 at {{108 °F/h; 60 °C/h}} is {{2228 °F; 1220 °C}}. Small cones, the kind used in a kiln sitter, are listed only at {{540 °F/h; 300 °C/h}}, so the chart gives a small cone 6 as {{2291 °F; 1255 °C}}. That is not the temperature at which a sitter turns the kiln off. The sitter cone's job is to match the shelf cone, and the shelf cone has the final say.
+
+Two cautions. Orton's 2019 booklet gives cone 06 at the fast rate as {{1875 °F; 1024 °C}}, but the chart and Orton's FAQ both give {{1855 °F; 1013 °C}}, used here. And the large-cone table at the back of the Dawson kiln sitter manual has copying errors (cone 5 hotter than cone 6), so do not use it.
 
 :::temperature
 
@@ -281,33 +287,35 @@ En **kägeloffset** är en inställning i automatiken som flyttar dess temperatu
 
 :::sk
 
-## Bränning efter SK-käglor {#sk-cones}
+## Firing to SK cones {#sk-cones lang=en}
 
-SK-käglor är de pyrometriska käglor{{en: pyrometric cone}} som tillverkas enligt Japans standard, JIS R 8101, och säljs i Japan av återförsäljare som Yuko Trading (有恒商事). Som alla käglor mäter en SK-kägla värmearbete{{en: heatwork}}, inte bara temperatur: den mjuknar och böjer sig när godset har fått tillräckligt med värme, och man läser av hur långt den har böjt sig. Kontrollkäglor{{en: witness cone}}, avläsningen av hur långt en kägla har böjt sig och hålltider fungerar för den som för alla käglor. Det här avsnittet anger varje käglas system och gör aldrig om ett SK-nummer till ett nummer i ett annat system: numren i olika kägelserier är inte utbytbara.
+SK cones are the pyrometric cones made to Japan's standard, JIS R 8101, and sold in Japan by dealers such as Yuko Trading (有恒商事). Like any cone, an SK cone measures heatwork, not temperature alone: it softens and bends over when the ware has had enough heat, and you read how far it bent. Witness cones, reading how far a cone has bent, and holds work for it as for any cone. This section names each cone's system, and never turns an SK number into another system's number: the numbers of different cone series are not interchangeable.
 
 > [!NOTE]
-> Skriv alltid ”SK” före numret. Många äldre japanska recept säger bara ”SK 8” eller ”SK 9” utan att säga vems kägla det gäller. Kyotokäglor och SK-käglor enligt JIS har samma nummer men böjer sig vid olika temperaturer (se Kyotokäglor nedan).
+> Always write "SK" before the number. Many older Japanese recipes say only "SK 8" or "SK 9" without saying whose cone. Kyoto cones and SK cones to JIS carry the same numbers but bend at different temperatures (see Kyoto cones, below).
 
-### De stora käglorna
+### The large cones
 
-Standarden har två storlekar. Stora käglor (大型コーン) används ”främst för att mäta bränningsgraden” (焼度測定), och det är vad en keramiker vill ha. Små käglor (SK 26 till SK 42, högst upp i serien) används ”främst för provning av eldfasthet” och tas inte upp här. Tabellen nedan visar de stora käglorna från SK 022 till SK 20.
+The standard has two sizes. Large cones (大型コーン) are "mainly used for measuring the degree of firing" (焼度測定), which is what a potter wants. Small cones (SK 26 to SK 42, at the top of the range) are "mainly used for refractoriness tests" and are not covered here. The table below gives the large cones from SK 022 to SK 20.
 
-Numren går här från SK 022, den kallaste, upp till SK 20. Mellan SK 015 och SK 6 har de tryckta numren ett ”a” (SK 015a, SK 6a); skriv det så som det är tryckt.
+The numbers run from SK 022, the coolest, up to SK 20 here. Between SK 015 and SK 6 the printed numbers carry an "a" (SK 015a, SK 6a); write it as printed.
 
-### Att sätta stora käglor
+### Setting large cones
 
-Sätt varje stor kägla i en kägelhållare eller en klump lera, lutad mot sin böjsida. Som med alla käglor: håll höjden och lutningen likadana från bränning till bränning, eftersom en skillnad i någon av dem ändrar hur långt käglan böjer sig. Ställ de tre käglorna i kägelsatsen{{en: cone pack}} (nedan) tillsammans, djupt inne i ugnen nära mitten av ugnsfyllningen, där de får samma värme som godset men ändå syns genom ett titthål; kontrollera innan ugnen stängs att alla tre syns.
+Set each large cone in a plaque or a pat of clay, leaning toward its bending face. As with any cone, keep the height and the lean the same from firing to firing, because a difference in either changes how far it bends. Set the three cones of the pack (below) together, deep in the kiln near the middle of the load, where they get the heat the ware gets, yet where you can see them through a peephole; before you close the kiln, check that you can see all three.
 
-### Förvarningskägla, målkägla och vaktkägla
+We found no maker's or seller's instructions for how deep or at what angle to set SK cones. The nearest is a laboratory standard, JIS R 2204, Japan's test of how much heat a refractory material stands: it sets each SK cone with its marked face at 80° to a flat stand and its foot about 4 mm into it. That is a test for refractories, not a rule for firing pots, and we read it in a transcription of the standard, not in the standard itself.
 
-Käglor säljs och sätts tre och tre: en förvarningskägla, en målkägla vid målet och en vaktkägla. Ta som målkägla det SK-nummer som receptet eller leran anger, som förvarningskägla den närmast kallare käglan (en rad upp i tabellen) och som vaktkägla den närmast varmare. När förvarningskäglan börjar böja sig är slutet nära; när vaktkäglan böjer sig har bränningen gått för långt.
+### Guide, firing and guard cones
 
-### SK-tabellen
+Cones are sold and set as three: a guide cone, a firing cone at the target, and a guard cone. Take the firing cone as the SK number your recipe or clay names, the guide cone as the next cooler cone (one row up in the table) and the guard cone as the next hotter one. When the guide cone starts to bend, the end is near; when the guard cone bends, the firing has gone too far.
 
-Table: Stora SK-käglor (JIS R 8101): varje käglas nominella temperatur (JIS)
-Label: SK-tabell
+### The SK chart
 
-| Kägla   | Nominell temperatur (JIS) |
+Table: SK large cones (JIS R 8101): the nominal (JIS) temperature of each
+Label: SK chart
+
+| Cone    | Nominal (JIS) temperature |
 | ------- | ------------------------: |
 | SK 022  |       {{1112 °F; 600 °C}} |
 | SK 021  |       {{1202 °F; 650 °C}} |
@@ -352,21 +360,23 @@ Label: SK-tabell
 | SK 19   |      {{2768 °F; 1520 °C}} |
 | SK 20   |      {{2786 °F; 1530 °C}} |
 
-Alla värden är nominella (JIS): den temperatur som standarden anger för käglan, så som den är tryckt i Yuko Tradings tabell. Tabellen anger ingen uppvärmningshastighet. Standarden ger referenstemperaturer. Vid en hastighet som keramiker brukar använda, omkring 100 °C/h, mätte Kyotos kommunala institut att dess egna Kyotokäglor böjde sig vid en temperatur 47–79 °C lägre än JIS-värdet för samma nummer; vi har inte hittat några sådana mätningar för SK-käglor enligt JIS. Sätt en kontrollkägla och jämför.
+Every figure is nominal (JIS): the temperature the standard gives for the cone, as printed in Yuko Trading's table. The table does not print a heating rate. The standard gives reference temperatures. At a potter's rate of about 100 °C/h, Kyoto's municipal institute measured its own Kyoto cones bending 47–79 °C cooler than the JIS figure for the same number; we found no such measurements for SK cones to JIS. Set a witness cone and compare.
 
-### Kyotokäglor
+### Kyoto cones
 
-Kyotokäglor (京都ゼーゲル), som Kyotos kommunala institut gjorde, tillverkas inte längre: enligt nyhetsrapporter slutade institutet tillverka dem vid slutet av räkenskapsåret 2009. De har samma nummer som SK-käglor enligt JIS men böjer sig kallare: en Kyotokägla böjer sig vid ungefär samma temperatur som den SK-kägla enligt JIS som ligger två eller tre nummer lägre. Ett recept från Kyoto som säger ”SK 8” kan avse en Kyotokägla. Institutet har publicerat råd till keramiker som går över från Kyotokäglor till Ortonkäglor, och ersätter sin egen Kyotokägla SK 12 med Ortonkägla 10. Det är institutets val utifrån dess egna mätningar: det böjde Kyotokäglor och Ortonkäglor i samma ugn vid 100 °C/h, och Kyoto SK 12 (1290 °C) böjde sig där Orton 10 (1290 °C) gjorde det. I samma tabell böjde sig Kyoto SK 8 (1198 °C) nära Orton 5 (1207 °C), och Kyoto SK 10 (1232 °C) där Orton 7 (1232 °C) gjorde det. Glazecalc använder den här tabellen, inte Ortons tabell vid 60 °C/h, när det visar en SK-kägla bredvid en Ortonkägla, och anger att varje motsvarighet är ungefärlig.
+Kyoto cones (京都ゼーゲル), made by Kyoto's municipal institute, are no longer made: news reports say the institute ended production at the close of fiscal 2009. They carry the same numbers as SK cones to JIS but bend cooler: a Kyoto cone bends at about the temperature of the SK cone to JIS two or three numbers lower. A recipe from Kyoto that says "SK 8" may mean a Kyoto cone. The institute has published advice for potters moving from Kyoto cones to Orton cones, and substitutes Orton cone 10 for its own Kyoto SK 12. That is the institute's choice from its own measurements: it bent Kyoto cones and Orton cones in the same kiln at 100 °C/h, and Kyoto SK 12 (1290 °C) bent where Orton 10 (1290 °C) did. In the same table Kyoto SK 8 (1198 °C) bent near Orton 5 (1207 °C), and Kyoto SK 10 (1232 °C) where Orton 7 (1232 °C) did. Glazecalc uses this table, not the Orton chart at 60 °C/h, when it shows an SK cone beside an Orton cone, and says each match is approximate.
 
-### Ortonkäglor som säljs i Japan
+### Orton cones sold in Japan
 
-Självstående Ortonkäglor säljs i Japan under namnet 立つゼーゲル (”stående Seger”), eftersom de inte behöver någon kägelhållare eller fot. De är Ortonkäglor, med Ortons nummer och Ortons tabell (ovan): bränn till en sådan kägla bara efter dess Ortonnummer, och håll SK-käglor och Ortonkäglor i separata kägelsatser, aldrig i samma.
+Orton self-supporting cones are sold in Japan under the name 立つゼーゲル ("standing Seger"), because they need no plaque or stand. They are Orton cones, with Orton's numbers and Orton's chart (above): fire to one only by its Orton number, and keep SK and Orton cones in separate packs, never in the same one.
 
-### Källor om SK-käglor
+### Sources for SK cones
 
-- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (SK-tabellen, kontrollerad 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
-- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (gällande, bekräftad på nytt 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
-- [Kyoto Municipal Institute of Industrial Technology and Culture: att tänka på vid övergången från Kyotokäglor till Ortonkäglor](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
+- [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (the SK table, checked 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
+- [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (in force, reconfirmed 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
+- [JSA: JIS R 2204:1999, 耐火物及び耐火物原料の耐火度試験方法 (in force, reconfirmed 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+2204:1999)
+- [kikakurui.com: a transcription of JIS R 2204:1999, where clause 5 a) sets the cones (read 2026-10-19)](https://kikakurui.com/r2/R2204-1999-01.html)
+- [Kyoto Municipal Institute of Industrial Technology and Culture: points to note when moving from Kyoto cones to Orton cones](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
 
 :::
 

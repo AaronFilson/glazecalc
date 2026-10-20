@@ -61,8 +61,7 @@
     "vet": "请致电您的兽医。",
     "checkedOn": "核实来源：",
     "choosePrompt": "选择您所在的国家，查看当地应拨打的电话。",
-    "ministry": "卫生部门的页面：<link>{name}</link>。",
-    "reported": "政府官方页面列出了 113、114 和 115，但没有说明各自的用途；这里显示的职能依据 Circular 22/2014/TT-BTTTT，来自转引该文件的次级页面。"
+    "ministry": "卫生部门的页面：<link>{name}</link>。"
   },
   "density": {
     "sg": "比重 {value}",

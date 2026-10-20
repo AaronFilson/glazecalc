@@ -61,8 +61,7 @@
     "vet": "Ring veterinären.",
     "checkedOn": "Kontrollerat på:",
     "choosePrompt": "Välj land för att se vem man ringer där.",
-    "ministry": "Hälsoministeriets sida: <link>{name}</link>.",
-    "reported": "Officiella myndighetssidor listar 113, 114 och 115 men inte vad vart och ett är till för; rollerna som visas följer cirkulär 22/2014/TT-BTTTT, så som sekundära sidor citerar den."
+    "ministry": "Hälsoministeriets sida: <link>{name}</link>."
   },
   "density": {
     "sg": "specifik vikt {value}",

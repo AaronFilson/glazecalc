@@ -61,8 +61,7 @@
     "vet": "Hubungi dokter hewan Anda.",
     "checkedOn": "Diperiksa pada:",
     "choosePrompt": "Pilih negara Anda untuk melihat siapa yang dihubungi di sana.",
-    "ministry": "Halaman kementerian kesehatan: <link>{name}</link>.",
-    "reported": "Laman resmi pemerintah mencantumkan 113, 114, dan 115, tetapi tidak menyebutkan kegunaan masing-masing; peran yang ditampilkan mengikuti Circular 22/2014/TT-BTTTT, seperti dikutip laman sekunder."
+    "ministry": "Halaman kementerian kesehatan: <link>{name}</link>."
   },
   "density": {
     "sg": "berat jenis {value}",

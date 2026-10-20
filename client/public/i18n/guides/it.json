@@ -61,8 +61,7 @@
     "vet": "Chiamare il proprio veterinario.",
     "checkedOn": "Verificati su:",
     "choosePrompt": "Scegliere il paese per vedere chi chiamare.",
-    "ministry": "La pagina del ministero della salute: <link>{name}</link>.",
-    "reported": "Le pagine ufficiali del governo elencano 113, 114 e 115, ma non a che cosa serve ciascun numero; i ruoli mostrati seguono la circolare 22/2014/TT-BTTTT, come la citano pagine secondarie."
+    "ministry": "La pagina del ministero della salute: <link>{name}</link>."
   },
   "density": {
     "sg": "peso specifico {value}",

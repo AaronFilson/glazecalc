@@ -6,6 +6,33 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Added
 
+- **Higher cones, for porcelain** (docs/adr/0021-recipe-firing.md, amended
+  2026-10-20). Orton cones have a temperature to cone 15 (1431 °C, Orton's older chart for large
+  cones at 150 °C an hour, the only Orton figure above 14 we found); cones 16 to 42 are taken
+  everywhere and shown with no figure, as Orton publishes none. The picker adds cone 21 and the
+  half cones 13½, 14½ and 15½. Orton's own current figures (self-supporting cones at 15, 60 and
+  150 °C an hour, large cones at 60 and 150, cone 022 to 14, from its 2016 chart and site) are
+  kept beside them, with their source and the date read. A new limits band, "Very high fire,
+  cone 12 and up" (1320 °C and hotter, SK 14 up): the published limits stop at cone 10, so no
+  set's figures are checked there and the panel says why; the other checks still run. The band
+  can be chosen by hand. The firing guide's cone chart goes to cone 14 and says what Orton
+  publishes past it. English only.
+- **A Digits setting, and digits that follow each country** (docs/i18n-plan.md, Digits; groundwork for
+  the Indian subcontinent and the Arabic-speaking countries). Settings offers digits as usual where you
+  are (the default), Western digits 0–9, or the language's own digits where it has them, each with a
+  sample number. As usual follows CLDR for each country: Arabic-Indic for Arabic in Egypt, Iraq, Jordan
+  and the Gulf but the UAE; 0–9 in the UAE and the Maghreb, and for Hindi, Tamil, Sinhala and Urdu in
+  Pakistan; Bengali's own in Bangladesh; Devanagari for Marathi and Nepali. The format locale always
+  names its digits and calendar (`ar-EG-u-ca-gregory-nu-arab`), so no browser's own data decides
+  them and the prerendered page and the browser agree. The number and date formats add those of India
+  (Hindi, English), Pakistan (Urdu, English), Bangladesh (Bengali), Egypt, the UAE, Morocco, Algeria,
+  Iraq and Jordan (Arabic), Morocco and Algeria (French), Sri Lanka (Sinhala, Tamil) and Nepal (Nepali). Typed
+  numbers may now use Indian digit groups (1,00,000 and 12,34,567.5), the Arabic percent sign (٪) and a
+  percent sign before or after (5 %, %5), and may carry the marks `Intl` writes to keep a number's
+  direction in Arabic text. The translations check reads all of these and asks translations to write
+  0–9. Arabic pages will be written for Egypt, Hindi and Tamil for India, Urdu for Pakistan and Bengali
+  for Bangladesh once those are regions; nothing a live language shows changes. Kept with the account
+  (or trial) like the other settings. English only for now.
 - **Confirm before changes** (docs/adr/0025-confirm-before-changes.md). On Connected apps, an
   account can choose that changes from assistants, apps and access tokens wait for its approval:
   never (the default), only removals, or every change. It holds back an assistant that misbehaves
@@ -765,6 +792,63 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Changed
 
+- **A match says how near it comes, and keeps raw clay where its own check wants it**
+  (docs/adr/0012, "Amended: how near a match comes"). In a staging test an assistant asked to
+  replace Gerstley Borate read `match_from_materials`' score (a miss of 20.5) as a wide miss and
+  built a recipe by hand whose alumina came out 26% low; the tool's match was within 2% on alumina
+  and silica, and nearer on every oxide. Its score was the only measure it gave, and its 27% raw
+  clay drew its own "will probably crack" caution. Now a match's report has its closeness: each
+  oxide of the new unity formula against the old, as close, off or far, and a verdict (close, fair
+  or poor). The MCP tools that fit amounts (`match_from_materials`, `match_with_what_i_have`,
+  `suggest_substitutes`) answer it with each oxide's old and new value, difference and percent and a
+  sentence, and now also the caps that cost match (`capped`), which `allowMore` lifts. Match with
+  what I have and Suggest amounts hold raw clay to 20% of the batch (or the recipe's own share)
+  where that costs the match little, a calcined kaolin on hand taking up the rest, and keep at
+  least 10% (or what the recipe had) of the recipe's raw clay, so calcined kaolin does not take all
+  of it; where only raw clay can bring the alumina back, the chemistry comes first and the caution
+  says to swap part of it for calcined kaolin. On the website, Allow more lifts the hold. When
+  nothing offered supplies one of the recipe's fluxes (lithia with no lithium on hand), the other
+  fluxes make up its share, so silica comes out about 5% high rather than 26%. The clay caution no
+  longer repeats what the old recipe already had. Underneath, the fit takes caps on a share of the
+  batch, and an amount tried back at its start can no longer break a cap. English only.
+
+- **The Orton chart says what it is.** Glazecalc's Orton figures from cone 06 up were labelled
+  "large cones at 60 °C an hour" but are the large-cone column at 150 °C an hour of Orton's older
+  chart (as determined at the US National Bureau of Standards, reprinted by W P Dawson and
+  FireRight), the same chart Katz's cone 10 at 1305 °C comes from. The figures are unchanged, so
+  no band, check or note changes; the label says so, and cones 022 to 07 now take the same
+  column (600 to 984 °C). English only.
+- **The cone check does not judge past cone 10** (docs/adr/0022, amended 2026-10-20). Katz's rule
+  and Hesselberth & Roy's figures stop at cone 10, so a firing hotter than that (Orton 10½ up,
+  SK 13 up, above 1305 °C, or the new top band) gets "can't compare" rather than being held to
+  cone 10's figures. A range from within the figures to past them (cone 9–11) still gets a
+  "looks cooler" note, judged at its cool end.
+- **MCP: every cone, read as the recipe page reads it.** `check_limits`, `get_recipe` and
+  `blend_recipes` take Orton cones 022 to 42 and SK cones SK 022 to 20 (before: Orton 06 to 6
+  only, so "Cone 10 is not in Glazecalc's Orton chart"), and temperatures to 1600 °C. A cone is
+  checked in its band, not by a converted temperature (SK 8 is mid fire, as on the page, not
+  high fire by its JIS 1250 °C); from cone 12 up the answer has `limitsNote`.
+  `convert_cone_temperature` gives Orton's current figures by heating rate beside Glazecalc's,
+  says when a cone has no figure, and no longer claims SK cones to 42; `glazecalc://cones` has
+  both Orton charts. `create_recipe` and `update_recipe` take the band `top`.
+- **A searchable, grouped list for the language and the region, and grouped language lists** (for
+  45 languages and more, and the right-to-left ones to come). In Settings, the language and the
+  region are chosen from a combobox (the WAI-ARIA pattern, no new library) instead of a plain
+  `select`: type to narrow it, by a language's own name or its English name (`german`, `deu` or
+  `deutsch` finds Deutsch; `turkce` finds Türkçe; `日本` finds 日本語), arrow keys, Page Up and Page Down, Enter
+  to choose, Escape to close and put the choice back; the number of matches and "No language
+  matches" are said to a screen reader and shown. Each language is named in itself with its English
+  name beside it, and the current one is marked (a check mark, and `aria-selected`). Languages are
+  grouped by the part of the world they are mostly spoken in (English first, then East Asia, Europe,
+  Middle East and North Africa, South Asia, Southeast Asia); regions by continent, named in the
+  page's language with the English name beside it, which the search finds too. The guides' "Shops
+  in", "Rules in" and similar region lists are the same list. The footer's folded language list and
+  the about page's full list are grouped under the same headings and laid out in columns that fit
+  the window (two at 320 px). Names are set in `<bdi>` and the styles use logical properties, so
+  Arabic and Urdu will mirror correctly. A group is a line in `lib/regions/groups.js`, which a
+  server test requires for every language and region. What is saved is unchanged (the language's
+  code, the region's code). English only: the headings and "No language matches" are translated
+  with the next wave.
 - **Asia's region data, checked again** (2026-10-19, English only; docs/asia-plan.md, Phase C).
   Every value keeps its source, check date and status, and no unconfirmed safety value is shown.
   - **China:** China CDC's national poison hotline, 010-83132345, from China CDC's own page, which

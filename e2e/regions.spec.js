@@ -3,6 +3,7 @@
 // each from lib/regions, for the region in Settings or another chosen to look at.
 const { test, expect } = require('@playwright/test');
 const { default: AxeBuilder } = require('@axe-core/playwright');
+const { choosePicked } = require('./helpers');
 
 const WCAG = ['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'wcag22aa'];
 
@@ -25,7 +26,7 @@ test('a potter in Germany is shown shops there, and what is sold there closest t
     /^https:\/\/shop\.carl-jaeger\.de\//
   );
   // Another country's, to look at; Settings are not changed.
-  await shops.getByLabel('Shops in', { exact: true }).selectOption('LU');
+  await choosePicked(shops.getByRole('combobox', { name: 'Shops in', exact: true }), 'Luxembourg');
   await expect(shops).toContainText('We found no shop selling raw glaze materials in Luxembourg.');
   await expect(shops.locator('caption')).toContainText('Shops elsewhere that say they deliver to Luxembourg');
 
@@ -54,7 +55,7 @@ test("the silica limit and the food-contact rules are Germany's, and another cou
   await expect(food.getByRole('link', { name: /Bedarfsgegenständeverordnung/ })).toBeVisible();
   await expect(food.locator('tbody tr').first()).toContainText('0,8 mg/dm²');
   // The Netherlands' limits since 2026 are far lower.
-  await food.getByLabel('Rules in', { exact: true }).selectOption('NL');
+  await choosePicked(food.getByRole('combobox', { name: 'Rules in', exact: true }), 'Netherlands');
   await expect(food.locator('tbody tr').first()).toContainText('6 µg/dm²');
   await expect(food).toContainText('In force from 29 May 2026.');
   await accessible(page);
@@ -151,9 +152,10 @@ test.describe('a potter in Taiwan', () => {
 
     await page.goto('/guides/safe-mixing');
     const silica = page.locator('gc-silica-limit');
-    // The limit until 2027 (verified on 2026-10-19), then the 2027 one, each under its dates.
+    // The table in force until the end of 2026 (the formula and its value for pure quartz), then 2027's limit.
     await expect(silica.locator('tbody td')).toHaveText(['10 / (Q + 2) mg/m³', '0.098 mg/m³', '0.1 mg/m³']);
     await expect(silica).toContainText('It applies from January 1, 2027.');
+    await expect(silica).toContainText('Until then, the limit is set by');
     await expect(silica).toContainText('Until 31 December 2026 the limit is for the whole respirable dust');
     await accessible(page);
 
@@ -162,7 +164,7 @@ test.describe('a potter in Taiwan', () => {
     await expect(food.locator('tbody tr')).toHaveCount(3);
     await expect(food).toContainText('ppm here is milligrams per litre');
     // Korea's, chosen to look at: no national poison line, and its five kinds of piece.
-    await food.getByLabel('Rules in', { exact: true }).selectOption('KR');
+    await choosePicked(food.getByRole('combobox', { name: 'Rules in', exact: true }), 'South Korea');
     await expect(food.locator('tbody tr')).toHaveCount(5);
     const overflow = await page.evaluate(() => globalThis.document.documentElement.scrollWidth - globalThis.innerWidth);
     expect(overflow).toBeLessThanOrEqual(0);
@@ -281,7 +283,7 @@ test.describe('a potter in Malaysia', () => {
     const shops = page.locator('gc-shops');
     await expect(shops).toContainText('We found no shop selling raw glaze materials in Malaysia.');
     // Singapore's, chosen to look at.
-    await shops.getByLabel('Shops in', { exact: true }).selectOption('SG');
+    await choosePicked(shops.getByRole('combobox', { name: 'Shops in', exact: true }), 'Singapore');
     await expect(shops.getByRole('link', { name: 'Sam Mui Kuang Pottery' })).toHaveAttribute(
       'href',
       'http://smkpottery.com/'

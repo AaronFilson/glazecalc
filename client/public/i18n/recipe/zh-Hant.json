@@ -979,7 +979,6 @@
     "approxTemperature": "≈ {temperature}（{basis}；近似值）",
     "approxCone": "≈ {cone}（{basis}；近似值）",
     "basis": {
-      "orton60": "每小時 60 °C 的 Orton 大型測溫錐",
       "kyoto": "京都市立研究所以每小時 100 °C 測得",
       "stated": "照所給的值"
     },

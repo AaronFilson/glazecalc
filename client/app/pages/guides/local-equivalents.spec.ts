@@ -1,5 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 import { PreferencesService } from '../../core/preferences.service';
+import { choosePicked, pickerField } from '../../testing/picker';
 import { answer, httpMock, settle, testProviders } from '../../testing/test-providers';
 import { LocalEquivalents } from './local-equivalents';
 
@@ -84,10 +85,7 @@ describe('LocalEquivalents', () => {
     expect(rows().find((row) => row[0] === 'Natronfeldspat LF 90')?.[2]).toBe(
       'Nothing within 15 g per 100 g: compare by chemistry.'
     );
-    const select = element.querySelector('select') as HTMLSelectElement;
-    select.value = 'GB';
-    select.dispatchEvent(new Event('change'));
-    await fixture.whenStable();
+    await choosePicked(fixture, pickerField(element), 'United Kingdom');
     expect(element.querySelector('caption')?.textContent).toContain('Materials not sold in the UK');
   });
 
