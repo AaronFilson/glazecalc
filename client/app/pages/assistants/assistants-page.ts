@@ -25,6 +25,7 @@ const TOKEN = 'YOUR_TOKEN';
     <section class="panel">
       <h2>{{ t('site.assistants.whatHeading') }}</h2>
       <p>{{ t('site.assistants.what') }}</p>
+      <p>{{ t('site.assistants.solve') }}</p>
       <p><gc-rich [text]="t('site.assistants.mine')" [links]="{ account: '/account' }" /></p>
       <p>{{ t('site.assistants.caution') }}</p>
     </section>
