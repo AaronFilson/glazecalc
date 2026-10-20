@@ -1,6 +1,8 @@
 import crypto from 'node:crypto';
 import fs from 'node:fs';
 import regions from '../../lib/regions/index.js';
+import groups from '../../lib/regions/groups.js';
+import languages from '../../lib/regions/languages.js';
 import food from '../../lib/regions/food.js';
 import suppliers from '../../lib/regions/suppliers.js';
 import workplace from '../../lib/regions/workplace.js';
@@ -1034,5 +1036,32 @@ describe('calendars', () => {
         '12.345,6'
       );
     }
+  });
+
+  // The language and region pickers list by group (client/app/shared/picker.ts). A language or region added
+  // without its line in lib/regions/groups.js would fall into "Other", which is for the pseudo-locales.
+  it('should put every language and every region in a group of the pickers', () => {
+    for (const language of languages.LANGUAGES.filter((l: { pseudo?: boolean }) => !l.pseudo)) {
+      const group = groups.languageGroup(language.code);
+      expect(group === '' || (groups.LANGUAGE_GROUPS.includes(group) && group !== 'other'), language.code).to.equal(
+        true
+      );
+    }
+    for (const region of regions.REGIONS) {
+      const group = groups.regionGroup(region.code);
+      expect(groups.REGION_GROUPS.includes(group) && group !== 'other', region.code).to.equal(true);
+    }
+    // English is the only language listed apart; the pseudo-locales are in "Other", which is last.
+    expect(Object.entries(groups.LANGUAGE_GROUP_OF).filter(([, group]) => group === '')).to.deep.equal([['en', '']]);
+    expect(groups.languageGroup('en-XA')).to.equal('other');
+    expect(groups.LANGUAGE_GROUPS.at(-1)).to.equal('other');
+    expect(groups.REGION_GROUPS.at(-1)).to.equal('other');
+    // Every group named is one the pickers list, and each is named once.
+    for (const group of Object.values(groups.LANGUAGE_GROUP_OF)) {
+      expect(group === '' || groups.LANGUAGE_GROUPS.includes(group), group).to.equal(true);
+    }
+    for (const group of Object.values(groups.REGION_GROUP_OF)) expect(groups.REGION_GROUPS, group).to.include(group);
+    expect(new Set(groups.LANGUAGE_GROUPS).size).to.equal(groups.LANGUAGE_GROUPS.length);
+    expect(new Set(groups.REGION_GROUPS).size).to.equal(groups.REGION_GROUPS.length);
   });
 });
