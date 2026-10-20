@@ -18,6 +18,8 @@ import { Additive, Recipe, RecipeMaterial } from '../../core/models';
 import { PreferencesService } from '../../core/preferences.service';
 import { Busy } from '../../shared/busy';
 import { localDate } from '../../shared/dates';
+import { sideAsSeen } from '../../shared/bidi';
+import { IsolatedPipe } from '../../shared/format-pipes';
 import { fixed, percent } from '../../shared/format';
 import { Notices, NoticesList } from '../../shared/notices';
 import { NumberInput } from '../../shared/number-input';
@@ -100,7 +102,7 @@ interface TileRecipe {
  */
 @Component({
   selector: 'gc-blends-page',
-  imports: [FormsModule, NoticesList, NumberInput, PageHeader, RouterLink, TranslocoDirective],
+  imports: [FormsModule, IsolatedPipe, NoticesList, NumberInput, PageHeader, RouterLink, TranslocoDirective],
   template: `<ng-container *transloco="let t">
     <gc-page-header [title]="t('recipe.blends.title')" [lead]="t('recipe.blends.lead')" />
     <p class="no-print">
@@ -153,7 +155,7 @@ interface TileRecipe {
           @for (place of kindInfo().corners; track place; let c = $index) {
             <div class="blend-corner">
               <label class="form-label" [for]="'blend-corner-' + c">{{
-                t('recipe.blends.cornerLabel', { letter: letters[c], place: t(place) })
+                t('recipe.blends.cornerLabel', { letter: letters[c], place: t(sideAsSeen(place)) })
               }}</label>
               <select
                 class="form-select"
@@ -163,7 +165,7 @@ interface TileRecipe {
               >
                 <option value="">{{ t('recipe.blends.chooseRecipe') }}</option>
                 @for (rec of myRecipes(); track rec._id) {
-                  <option [value]="rec._id">{{ rec.title }}</option>
+                  <option [value]="rec._id">{{ rec.title | gcIsolated }}</option>
                 }
               </select>
             </div>
@@ -534,6 +536,8 @@ export class BlendsPage implements OnInit {
   protected readonly saving = new Busy();
   protected readonly kinds = KINDS;
   protected readonly letters = LETTERS;
+  /** A corner's place as drawn: the grid is mirrored on a right-to-left page, so its left is on the right. */
+  protected readonly sideAsSeen = sideAsSeen;
   protected readonly empty: ReadonlySet<number> = new Set();
 
   protected readonly myRecipes = signal<Recipe[]>([]);

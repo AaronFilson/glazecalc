@@ -100,6 +100,7 @@
   "limitSet-choices": "Choisissez hesselberth-roy ou glazecalc.",
   "currency-choices": "Choisissez l’une des devises de la liste, ou laissez la devise suivre votre région.",
   "calendar-choices": "Les dates peuvent être affichées dans le calendrier grégorien (gregory), selon l’ère bouddhique thaïlandaise (buddhist) ou selon les ères japonaises (japanese).",
+  "digits-choices": "Les chiffres peuvent s’afficher selon l’usage là où vous êtes (auto), en 0–9 (western) ou avec les chiffres propres à la langue (native).",
   "shelf-invalid": "Le stock est une liste de {most} matières au plus.",
   "shelf-full": "Le stock peut contenir {most} matières au plus. Rien n’a été modifié.",
   "shelf-material-unknown": "Cette matière n’est ni dans vos matières ni dans la bibliothèque de Glazecalc.",

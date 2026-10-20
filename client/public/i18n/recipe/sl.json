@@ -364,7 +364,7 @@
     "intro": "Kot jih navaja zapis vsake surovine; pri standardni knjižnici izhajajo iz varnostnih listov dobaviteljev.",
     "line": "<b>{names}:</b> {hazards}",
     "unknown": "{count, plural, one {Za {list} ni navedenih nevarnosti: glejte varnostni list, ki ga dobite zraven.} two {Za {list} ni navedenih nevarnosti: glejte varnostna lista, ki ju dobite zraven.} few {Za {list} ni navedenih nevarnosti: glejte varnostne liste, ki jih dobite zraven.} other {Za {list} ni navedenih nevarnosti: glejte varnostne liste, ki jih dobite zraven.}}",
-    "safety": "Suhe surovine za glazure ustvarjajo prah: ne spuščajte ga v pljuča, tudi prahu surovin, ki niso razvrščene kot nevarne: glejte <mixing>Varno mešanje in prezračevanje</mixing> in <home>Ne zastrupite svoje družine</home>, če so v bližini otroci ali hišni ljubljenčki. Kjer varnostni list surovine navaja več, ravnajte po njem."
+    "safety": "Suhe surovine za glazure ustvarjajo prah in tega prahu ne smete spustiti v pljuča, tudi prahu surovin, ki niso razvrščene kot nevarne. Glejte <mixing>Varno mešanje in prezračevanje</mixing>. Če so v bližini otroci ali hišni ljubljenčki, glejte tudi <home>Ne zastrupite svoje družine</home>. Kjer varnostni list surovine navaja več, ravnajte po njem."
   },
   "compare": {
     "heading": "Primerjaj dva recepta",
@@ -533,7 +533,10 @@
     "suppliesShare": "{oxide} ({percent} % celote)",
     "suppliesLittle": "majhen del glazure",
     "changed": "{name} {from} → {to}",
-    "added": "{name} {amount}, nova"
+    "added": "{name} {amount}, nova",
+    "why": {
+      "rawClay": "surova glina se med sušenjem glazure krči, pri velikem deležu pa lahko glazura na izdelku razpoka in se v peči skrči; preostanek lahko nadomesti kalcinirani kaolin"
+    }
   },
   "shelf": {
     "empty": "Ni surovin na zalogi, iz katerih bi lahko sestavili recept."
@@ -571,7 +574,8 @@
     "bands": {
       "low": "Nizko žganje, stožec 06–02",
       "mid": "Srednje žganje, stožec 4–6",
-      "high": "Visoko žganje, stožec 9–11"
+      "high": "Visoko žganje, stožec 9–11",
+      "top": "Zelo visoko žganje, stožec 12 in vročejši"
     },
     "shownFor": "Ker žganje ni izbrano, so prikazane vrednosti za: {band}. Žganje se shrani z receptom.",
     "cone": "To so vrednosti skupine za stožec {cone}.",
@@ -591,6 +595,7 @@
     "notInSet": "Za {oxides} v tej skupini ni razpona.",
     "checksOnly": "Ta skupina preverja samo {oxides}.",
     "notApply": "Skupina {name} nima vrednosti za to žganje ({band}), zato ni preverjena: vrednosti za drugo žganje bi zavajale.",
+    "topNote": "Objavljene meje za glazure, ki smo jih našli, se končajo pri stožcu 10, Glazecalc pa jih upošteva največ do stožca 11, zato žganja pri stožcu 12 in vročejših ne preverja glede na meje. Odločijo vaše testne ploščice.",
     "guidance": "To so smernice, ne ocena »uspešno« ali »neuspešno«: glazura zunaj njih je lahko v redu, tista znotraj njih pa lahko vseeno dobi lasaste razpoke, sprošča kovine ali odpove. Preizkusite jo.",
     "source": "Vir:",
     "saveFailed": "Vaše izbire skupine mej ni bilo mogoče shraniti v vaš račun, zato je še vedno v uporabi prejšnja skupina mej.",
@@ -628,7 +633,8 @@
       "ash": "Glazecalc ne more primerjati kemije te glazure z njenim žganjem: vsebuje pepel, katerega sestava je preveč spremenljiva za objavljene vrednosti, uporabljene pri tem preverjanju.",
       "noTemperature": "Glazecalc ne more primerjati kemije te glazure z navedenim žganjem ({scale, select, band {{band, select, low {nizkotemperaturno žganje} mid {srednjetemperaturno žganje} other {visokotemperaturno žganje}}} sk {SK {cone}} temperature {{cone} °C} other {stožec {cone}}}): za ta stožec ni izmerjene temperature.",
       "between": "Glazecalc ne more primerjati kemije te glazure z navedenim žganjem ({scale, select, band {{band, select, low {nizkotemperaturno žganje} mid {srednjetemperaturno žganje} other {visokotemperaturno žganje}}} sk {SK {cone}} temperature {{cone} °C} other {stožec {cone}}}): objavljene vrednosti, uporabljene pri tem preverjanju, so za nizkotemperaturno ter srednje- in visokotemperaturno žganje, ne za stožce vmes (od 01 do 3).",
-      "belowChart": "Glazecalc ne more primerjati kemije te glazure z navedenim žganjem ({scale, select, band {{band, select, low {nizkotemperaturno žganje} mid {srednjetemperaturno žganje} other {visokotemperaturno žganje}}} sk {SK {cone}} temperature {{cone} °C} other {stožec {cone}}}): Katzovo pravilo za bor velja za stožce od 06 do 10, to žganje pa je hladnejše."
+      "belowChart": "Glazecalc ne more primerjati kemije te glazure z navedenim žganjem ({scale, select, band {{band, select, low {nizkotemperaturno žganje} mid {srednjetemperaturno žganje} other {visokotemperaturno žganje}}} sk {SK {cone}} temperature {{cone} °C} other {stožec {cone}}}): Katzovo pravilo za bor velja za stožce od 06 do 10, to žganje pa je hladnejše.",
+      "aboveChart": "Glazecalc ne more primerjati kemije te glazure z navedenim žganjem ({scale, select, band {{band, select, top {zelo visokotemperaturno žganje} other {visokotemperaturno žganje}}} sk {SK {cone}} temperature {{cone} °C} other {stožec {cone}}}): Katzovo pravilo za bor velja za stožce od 06 do 10, vrednosti Hesselbertha in Roya za kremenico in glinico se končajo pri stožcu 10, to žganje pa je vročejše."
     }
   },
   "stull": {
@@ -979,7 +985,7 @@
     "approxTemperature": "≈ {temperature} ({basis}; približno)",
     "approxCone": "≈ {cone} ({basis}; približno)",
     "basis": {
-      "orton60": "Ortonovi veliki stožci pri 60 °C na uro",
+      "orton150": "Ortonova starejša preglednica za velike stožce pri 150 °C na uro",
       "kyoto": "izmerjeno pri 100 °C na uro v mestnem inštitutu v Kjotu",
       "stated": "kot navedeno"
     },

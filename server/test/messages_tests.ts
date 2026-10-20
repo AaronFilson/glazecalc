@@ -81,6 +81,53 @@ describe('account emails', () => {
     expect(changed!.text).to.include('/pt-PT/forgot');
   });
 
+  it('should write a Romanian count as Romanian does: 1 zi, 2 to 19 zile, and de from 20 on', async () => {
+    const { counted } = await import('../lib/account_mail.ts');
+    const days = [1, 2, 7, 19, 20, 30, 90, 100, 101, 119, 120].map((n) => counted('ro', 'days', n));
+    expect(days).to.eql([
+      '1 zi',
+      '2 zile',
+      '7 zile',
+      '19 zile',
+      '20 de zile',
+      '30 de zile',
+      '90 de zile',
+      '100 de zile',
+      '101 zile',
+      '119 zile',
+      '120 de zile'
+    ]);
+    expect([1, 2, 24].map((n) => counted('ro', 'hours', n))).to.eql(['1 oră', '2 ore', '24 de ore']);
+    // Every other language writes its own unit after the bare number.
+    expect(counted('en', 'days', 30)).to.equal(30);
+    expect(counted('de', 'hours', 24)).to.equal(24);
+  });
+
+  it('should fill the Romanian emails with whole counts, and the English with numbers', async () => {
+    const accountMail = await import('../lib/account_mail.ts');
+    const mail = await import('./support/mail.ts');
+    const address = 'romana-' + Date.now() + '@test.com';
+    await accountMail.sendDeleted(address, 'ro');
+    await accountMail.sendVerify(address, 'abc123', 24, 'ro');
+    await accountMail.sendConfirmChange(address, 'abc123', 2, 'ro');
+    const connection = { name: 'App', loopback: false, selfDescribed: false, createdAt: new Date() };
+    await accountMail.sendConnectionMade(address, { ...connection, writeDays: 90 }, 'ro');
+    await accountMail.sendConnectionMade(address, { ...connection, writeDays: 7 }, 'ro');
+    const [deleted, verify, change, ninety, seven] = await mail.waitFor(address, 5);
+    expect(deleted!.text).to.include('în cel mult 30 de zile.');
+    expect(verify!.text).to.include('în următoarele 24 de ore:');
+    expect(change!.text).to.include('în următoarele 2 ore:');
+    expect(ninety!.text).to.include('timp de 90 de zile,');
+    expect(seven!.text).to.include('timp de 7 zile,');
+
+    const english = 'english-' + Date.now() + '@test.com';
+    await accountMail.sendDeleted(english);
+    await accountMail.sendVerify(english, 'abc123', 24, 'xx');
+    const [gone, link] = await mail.waitFor(english, 2);
+    expect(gone!.text).to.include('within 30 days.');
+    expect(link!.text).to.include('within 24 hours:');
+  });
+
   it('should keep emails in the order they were sent, even within a millisecond', async () => {
     const mailer = await import('../lib/mailer.ts');
     const mail = await import('./support/mail.ts');
@@ -90,6 +137,49 @@ describe('account emails', () => {
     await Promise.all(subjects.map((subject) => mailer.send({ to: address, subject, text: '' })));
     const sent = await mail.waitFor(address, subjects.length);
     expect(sent.map((message) => message.subject)).to.eql(subjects);
+  });
+
+  it('should set an email in a right-to-left language right to left, line by line, and others as they are', async () => {
+    const accountMail = await import('../lib/account_mail.ts');
+    const mail = await import('./support/mail.ts');
+    const RLM = String.fromCharCode(0x200f);
+    // Arabic is not translated yet: a test translation, as e2e/fixtures/ar.json is for the pages.
+    accountMail.RESET['ar'] = {
+      subject: 'إعادة تعيين كلمة مرور Glazecalc',
+      text:
+        '{account}: طلب أحدهم إعادة تعيين كلمة المرور لحساب Glazecalc هذا.\n\n' +
+        'افتح هذا الرابط خلال {minutes} دقيقة:\n\n' +
+        '{link}\n' +
+        '\n-- \nGlazecalc, {app}\n'
+    };
+    try {
+      const address = 'arabic-' + Date.now() + '@test.com';
+      await accountMail.sendReset(address, 'abc123', 30, 'ar');
+      await accountMail.sendReset(address, 'abc123', 30, 'de');
+      // An account in Arabic whose email has no translation yet gets the English, left to right.
+      await accountMail.sendChanged(address, 'ar');
+      const [arabic, german, english] = await mail.waitFor(address, 3);
+      expect(arabic!.subject).to.equal(RLM + 'إعادة تعيين كلمة مرور Glazecalc');
+      const lines = arabic!.text.split('\n');
+      // Each line of text starts right to left, even one that starts with an address or a link.
+      for (const line of lines.filter((line) => line.trim() && line !== '-- ')) {
+        expect(line.startsWith(RLM), line).to.equal(true);
+      }
+      expect(lines[0]).to.equal(RLM + address + ': طلب أحدهم إعادة تعيين كلمة المرور لحساب Glazecalc هذا.');
+      expect(lines).to.include(RLM + 'https://glazecalc.test/ar/reset#token=abc123');
+      // The signature's line stays as mail programs know it, and empty lines stay empty.
+      expect(arabic!.text.endsWith('\n\n-- \n' + RLM + 'Glazecalc, https://glazecalc.test\n')).to.equal(true);
+      expect(mail.tokenIn(arabic!)).to.equal('abc123');
+      for (const ltr of [german!, english!]) {
+        expect(ltr.subject + ltr.text).not.to.include(RLM);
+      }
+      expect(english!.subject).to.equal('Your Glazecalc password was changed');
+    } finally {
+      delete accountMail.RESET['ar'];
+    }
+    expect(accountMail.inDirection({ to: 'a@b.c', subject: 'S', text: 'x\n\ny\n-- \nz\n' }, 'ar-XD').text).to.equal(
+      RLM + 'x\n\n' + RLM + 'y\n-- \n' + RLM + 'z\n'
+    );
   });
 
   it('should give every translation the values and signature of the English', async () => {

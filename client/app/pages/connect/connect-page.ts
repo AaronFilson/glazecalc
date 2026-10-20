@@ -88,7 +88,12 @@ export const ALLOW_AFTER_MS = new InjectionToken<number>('ALLOW_AFTER_MS', {
       <section class="panel connect" aria-labelledby="connect-app">
         <p class="small muted">{{ t('account.connect.asking') }}</p>
         <h2 id="connect-app" class="app-name">
-          {{ r.client.name || t('account.connect.noName') }}
+          @if (r.client.name) {
+            <bdi>{{ r.client.name }}</bdi
+            >&ngsp;
+          } @else {
+            {{ t('account.connect.noName') }}
+          }
           @if (r.client.selfDescribed) {
             <span class="badge-self">{{ t('account.connect.selfDescribed') }}</span>
           }
@@ -104,7 +109,7 @@ export const ALLOW_AFTER_MS = new InjectionToken<number>('ALLOW_AFTER_MS', {
           @if (r.client.host) {
             <dt>{{ t('account.connect.appAddress') }}</dt>
             <dd>
-              <strong class="host">{{ r.client.host }}</strong>
+              <strong class="host" dir="ltr">{{ r.client.host }}</strong>
               <span class="small muted"> {{ t('account.connect.checked') }}</span>
             </dd>
           }
@@ -112,12 +117,17 @@ export const ALLOW_AFTER_MS = new InjectionToken<number>('ALLOW_AFTER_MS', {
           <dd>
             @if (r.redirect.loopback) {
               <strong>{{ t('account.connect.ownComputer') }}</strong>
-              <span class="host"> ({{ r.redirect.host }})</span>
+              <span class="host">
+                (<bdi dir="ltr">{{ r.redirect.host }}</bdi
+                >)</span
+              >
             } @else if (r.redirect.app) {
               <strong>{{ t('account.connect.appOnDevice', { scheme: r.redirect.scheme }) }}</strong>
-              <span class="host address"> {{ r.redirect.app }}</span>
+              <span class="host address">
+                &ngsp;<bdi dir="ltr">{{ r.redirect.app }}</bdi></span
+              >
             } @else {
-              <strong class="host">{{ r.redirect.host }}</strong>
+              <strong class="host" dir="ltr">{{ r.redirect.host }}</strong>
             }
           </dd>
         </dl>

@@ -143,6 +143,52 @@ describe('AuthPage', () => {
     });
   });
 
+  describe('a sign-up gives the page it was for to the confirmation email (next)', () => {
+    const signUpWith = async (next: string | null) => {
+      TestBed.configureTestingModule({
+        providers: [
+          ...testProviders(),
+          {
+            provide: ActivatedRoute,
+            useValue: {
+              data: of({ mode: 'signup' }),
+              snapshot: { queryParamMap: convertToParamMap(next === null ? {} : { next }) }
+            }
+          }
+        ]
+      });
+      localStorage.clear();
+      const fixture = TestBed.createComponent(AuthPage);
+      await fixture.whenStable();
+      const page = fixture.componentInstance as unknown as Record<string, any>;
+      const navigate = vi.spyOn(TestBed.inject(Router), 'navigateByUrl').mockResolvedValue(true);
+      page['email'].set('a@b.com');
+      page['password'].set('password123');
+      page['confirmation'].set('password123');
+      const submitting = page['submit']();
+      const req = httpMock().expectOne(API + '/signup');
+      const body = req.request.body;
+      req.flush({ email: 'a@b.com' });
+      await submitting;
+      return { body, navigate };
+    };
+
+    it('sends a page of this site, and goes there', async () => {
+      const next = '/connect/aB3_dE5-gH7iJ9kL1mN';
+      const { body, navigate } = await signUpWith(next);
+      expect(body).toEqual({ email: 'a@b.com', password: 'password123', next });
+      expect(navigate).toHaveBeenCalledWith(next);
+    });
+
+    it('sends none without one, or for one that is not a page of this site', async () => {
+      expect((await signUpWith(null)).body).toEqual({ email: 'a@b.com', password: 'password123' });
+      for (const bad of ['//evil.example/x', '/\\evil.example', 'https://evil.example/', '/signin']) {
+        TestBed.resetTestingModule();
+        expect((await signUpWith(bad)).body, bad).toEqual({ email: 'a@b.com', password: 'password123' });
+      }
+    });
+  });
+
   it('has the keep-me-signed-in box unticked, and sends its choice', async () => {
     const { fixture, page } = await create('signin');
     const box = fixture.nativeElement.querySelector('#keep') as HTMLInputElement;

@@ -52,6 +52,7 @@
     "emergency": "緊急情況：失去意識、沒有呼吸、抽搐",
     "poisonAdvice": "{who, select, children {中毒諮詢：{name}（僅限兒童）} other {中毒諮詢：{name}}}",
     "or": "或 {number}",
+    "orCall": "或 <link>{number}</link>",
     "online": "線上：<link>{name}</link>。",
     "poisonAdviceNone": "中毒諮詢",
     "noLine": "我們無法確認這裡有公開的中毒諮詢專線。請打給您的醫師；情況緊急時，請撥打緊急電話。",
@@ -61,8 +62,7 @@
     "vet": "請打給您的獸醫。",
     "checkedOn": "查核來源：",
     "choosePrompt": "選擇您的國家，即可查看當地的求助電話。",
-    "ministry": "衛生主管機關的網頁：<link>{name}</link>。",
-    "reported": "政府官方頁面列出了 113、114 和 115，但沒有說明各自的用途；這裡顯示的職責依據 Circular 22/2014/TT-BTTTT，來自轉引該文件的次級頁面。"
+    "ministry": "衛生主管機關的網頁：<link>{name}</link>。"
   },
   "density": {
     "sg": "比重 {value}",
@@ -112,6 +112,10 @@
     "bandFromTo": "游離二氧化矽（SiO₂）含量為 {from}% 至 {to}% 的粉塵",
     "bandOverTo": "游離二氧化矽含量高於 {from}% 且不超過 {to}% 的粉塵",
     "bandAbove": "游離二氧化矽含量高於 {from}% 的粉塵",
+    "untilDate": "至{date}止",
+    "fromDate": "自{date}起",
+    "beforeFormula": "可呼吸性粉塵的限值（Q 為粉塵中結晶型游離二氧化矽的含量，%）",
+    "beforeAll": "粉塵全部為結晶型游離二氧化矽時",
     "recommended": "{abbr} 建議值",
     "value": "{value} mg/m³",
     "kind": {
@@ -122,6 +126,7 @@
     },
     "setBy": "法源：<link>{law}</link>。",
     "from": "自{date}起適用。",
+    "beforeSetBy": "在此之前，限值的法源為<link>{law}</link>。",
     "lowerThanEu": "低於歐盟具法律約束力的限值 {value} mg/m³。",
     "sameAsEu": "與歐盟具法律約束力的限值相同。",
     "recommendedBy": "{abbr}（{by}）在其 <link>{title}</link> 中建議此數值。此數值不是法律規定。",
@@ -184,7 +189,13 @@
       "vnMedium": "盛放食物的深型器物，容量 1100 mL 以上、未滿 3000 mL",
       "vnStorage": "盛放食物的深型器物，容量 3000 mL 以上",
       "vnCooking": "烹煮用的深型器物",
-      "vnCups": "杯子和小碗"
+      "vnCups": "杯子和小碗",
+      "cnFlat": "扁平器（深度 25 mm 以下）",
+      "cnSmall": "小型深器（容量未滿 1.1 L，杯類除外）",
+      "cnLarge": "大型深器（容量 1.1 L 以上、未滿 3 L）",
+      "cnStorage": "貯存罐（容量 3 L 以上）",
+      "cnCups": "杯類（用於盛水或飲料）",
+      "cnCooking": "烹調器具（用於加熱食物）"
     },
     "judged": {
       "average": "6 件的平均值",
@@ -198,6 +209,8 @@
     "atMost": "溶出量在限值以下即為合格：法規寫的是「以下」。",
     "ppm": "此處的 ppm 指每公升試驗溶液中的毫克數（mg/L）。",
     "unknown": "我們尚未確認{region}的規定。",
+    "none": "{region}沒有法律規定燒成後的器物可溶出的鉛與鎘的限值（確認日期：{date}）。",
+    "noneSource": "來源：<link>{law}</link>。",
     "choosePrompt": "選擇您的國家，即可查看當地的規定。"
   },
   "equivalents": {

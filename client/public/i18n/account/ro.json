@@ -270,6 +270,22 @@
         "saved": "S-a salvat: datele sunt afișate în erele japoneze."
       }
     },
+    "digits": {
+      "legend": "Cifre",
+      "help": "Cifrele în care sunt afișate numerele. Unele limbi au cifre proprii, cum ar fi araba, bengaleza și hindi, iar locul în care vă aflați determină care sunt cele obișnuite. Puteți introduce numere cu oricare dintre ele.",
+      "auto": {
+        "label": "Ca de obicei acolo unde vă aflați",
+        "saved": "S-a salvat: cifrele obișnuite acolo unde vă aflați."
+      },
+      "western": {
+        "label": "Cifre occidentale, 0–9",
+        "saved": "S-a salvat: numerele sunt afișate cu cifrele 0–9."
+      },
+      "native": {
+        "label": "Cifrele proprii ale limbii, acolo unde le are",
+        "saved": "S-a salvat: numerele sunt afișate cu cifrele proprii ale limbii, acolo unde le are."
+      }
+    },
     "decimalMark": {
       "legend": "Introducerea cantităților",
       "either": {

@@ -299,7 +299,9 @@ const UNITS: ReadonlyArray<{ value: WeightUnit; label: string }> = [
     @let weights = printed.weights;
     <article class="print-sheet" aria-labelledby="print-title">
       <header class="print-sheet-header">
-        <h2 id="print-title" translate="no">{{ title() }}</h2>
+        <h2 id="print-title" translate="no">
+          <bdi>{{ title() }}</bdi>
+        </h2>
         @if (recipe().date) {
           <p class="print-meta">{{ recipe().date | gcDate }}</p>
         }
@@ -391,7 +393,8 @@ const UNITS: ReadonlyArray<{ value: WeightUnit; label: string }> = [
               @for (line of printed.materials; track $index) {
                 <tr>
                   <th scope="row">
-                    {{ line.name }}
+                    <bdi>{{ line.name }}</bdi
+                    >&ngsp;
                     @if (line.formula) {
                       <span class="print-formula" translate="no">{{ line.formula }}</span>
                     }
@@ -443,7 +446,9 @@ const UNITS: ReadonlyArray<{ value: WeightUnit; label: string }> = [
               <tbody>
                 @for (line of printed.additives; track $index) {
                   <tr>
-                    <th scope="row">{{ line.name }}</th>
+                    <th scope="row">
+                      <bdi>{{ line.name }}</bdi>
+                    </th>
                     <td class="num">{{ line.amount }}</td>
                     @if (weights) {
                       <td class="num">{{ line.weigh }}</td>
@@ -527,7 +532,9 @@ const UNITS: ReadonlyArray<{ value: WeightUnit; label: string }> = [
               @for (line of printed.materials; track $index) {
                 <tr>
                   <td class="tick"><span class="tick-box"></span></td>
-                  <th scope="row">{{ line.name }}</th>
+                  <th scope="row">
+                    <bdi>{{ line.name }}</bdi>
+                  </th>
                   <td class="num">{{ weights ? line.weigh : line.amount }}</td>
                   @if (weights) {
                     <td class="num">{{ line.runningTotal }}</td>
@@ -543,7 +550,9 @@ const UNITS: ReadonlyArray<{ value: WeightUnit; label: string }> = [
                 @for (line of printed.additives; track $index) {
                   <tr>
                     <td class="tick"><span class="tick-box"></span></td>
-                    <th scope="row">{{ line.name }}</th>
+                    <th scope="row">
+                      <bdi>{{ line.name }}</bdi>
+                    </th>
                     <td class="num">{{ weights ? line.weigh : line.amount }}</td>
                     @if (weights) {
                       <td class="num">{{ line.runningTotal }}</td>

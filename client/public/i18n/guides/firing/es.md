@@ -81,7 +81,7 @@ La tabla da para un cono 6 con pie {{2232 °F; 1222 °C}}, pero solo cuando los 
 
 ## Tabla de conos {#cone-chart}
 
-Estas cifras proceden de la tabla de conos{{en: cone chart}} de Orton (©2001) para conos con pie. Elija la columna que corresponda a la velocidad a la que subió su horno durante los últimos {{180 °F; 100 °C}}. La regla práctica de Orton es la columna de {{270 °F/h; 150 °C/h}} para una cocción rápida, la de {{108 °F/h; 60 °C/h}} para una media y la de {{27 °F/h; 15 °C/h}} para una lenta. Para calcular una velocidad, divida los grados que ha subido entre las horas que ha tardado: un horno que sube {{900 °F; 500 °C}} en 3 horas calienta a unos {{300 °F/h; 167 °C/h}}.
+Estas cifras proceden de la tabla de conos{{en: cone chart}} de Orton (©2001) para conos con pie; los conos 11 a 14 proceden de las tablas que Orton publica hoy, que dan las mismas cifras donde coinciden, y para los conos 13 y 14 solo en °C (sus °F se han convertido aquí). Elija la columna que corresponda a la velocidad a la que subió su horno durante los últimos {{180 °F; 100 °C}}. La regla práctica de Orton es la columna de {{270 °F/h; 150 °C/h}} para una cocción rápida, la de {{108 °F/h; 60 °C/h}} para una media y la de {{27 °F/h; 15 °C/h}} para una lenta. Para calcular una velocidad, divida los grados que ha subido entre las horas que ha tardado: un horno que sube {{900 °F; 500 °C}} en 3 horas calienta a unos {{300 °F/h; 167 °C/h}}.
 
 Table: Conos Orton con pie: la temperatura a la que se dobla cada uno, según la velocidad de subida durante los últimos {{180 °F; 100 °C}}
 Label: Tabla de conos Orton
@@ -108,8 +108,14 @@ Label: Tabla de conos Orton
 | 8    |        {{2212 °F; 1211 °C}} |         {{2280 °F; 1249 °C}} |           {{2320 °F; 1271 °C}} |
 | 9    |        {{2235 °F; 1224 °C}} |         {{2300 °F; 1260 °C}} |           {{2336 °F; 1280 °C}} |
 | 10   |        {{2284 °F; 1251 °C}} |         {{2345 °F; 1285 °C}} |           {{2381 °F; 1305 °C}} |
+| 11   |        {{2322 °F; 1272 °C}} |         {{2361 °F; 1294 °C}} |           {{2399 °F; 1315 °C}} |
+| 12   |        {{2345 °F; 1285 °C}} |         {{2383 °F; 1306 °C}} |           {{2419 °F; 1326 °C}} |
+| 13   |        {{2390 °F; 1310 °C}} |         {{2428 °F; 1331 °C}} |           {{2458 °F; 1348 °C}} |
+| 14   |        {{2464 °F; 1351 °C}} |         {{2489 °F; 1365 °C}} |           {{2523 °F; 1384 °C}} |
 
 Un guion indica una cifra que no se ha copiado aquí; consulte la tabla completa de Orton.
+
+Orton fabrica conos hasta el 42 para trabajos a alta temperatura, pero solo publica temperaturas hasta el cono 14; para conos más calientes, sus tablas están «disponibles (bajo petición)». Una tabla más antigua de Orton, tal como la reimprimen los fabricantes de hornos, da para un cono 15 grande {{2608 °F; 1431 °C}} a {{270 °F/h; 150 °C/h}}, y no hemos encontrado ninguna cifra publicada para el cono 16 o superiores. Por encima del cono 14, ponga conos testigo{{en: witness cones}} y guíese por ellos, y compruebe que la temperatura máxima que indica el fabricante de su horno alcanza ese calor.
 
 Los conos grandes se doblan a pocos grados de estas cifras: un cono 6 grande a {{108 °F/h; 60 °C/h}} corresponde a {{2228 °F; 1220 °C}}. Los conos pequeños, los que se usan en un kiln sitter, solo figuran a {{540 °F/h; 300 °C/h}}, así que la tabla da para un cono 6 pequeño {{2291 °F; 1255 °C}}. Esa no es la temperatura a la que un kiln sitter apaga el horno. La función del cono del kiln sitter es coincidir con el cono de la placa, y el cono de la placa tiene la última palabra.
 
@@ -298,6 +304,8 @@ Aquí los números van del SK 022, el más frío, al SK 20. Entre el SK 015 y el
 
 Coloque cada cono grande en un soporte para conos o en una pella de arcilla, inclinado hacia su cara de doblado. Como con cualquier cono, mantenga la altura y la inclinación iguales de una cocción a otra, porque una diferencia en cualquiera de las dos cambia cuánto se dobla. Coloque juntos los tres conos del trío{{en: cone pack}} (más abajo), bien dentro del horno, cerca del centro de la carga, donde reciben el calor que reciben las piezas, pero donde pueda verlos por una mirilla; antes de cerrar el horno, compruebe que ve los tres.
 
+No hemos encontrado instrucciones de ningún fabricante ni vendedor sobre a qué profundidad o con qué ángulo colocar los conos SK. Lo más parecido es una norma de laboratorio, JIS R 2204, el ensayo japonés de cuánto calor resiste un material refractario: coloca cada cono SK con su cara marcada a 80° de una base plana y con el pie hundido unos 4 mm en ella. Es un ensayo para refractarios, no una regla para cocer piezas, y lo hemos leído en una transcripción de la norma, no en la norma misma.
+
 ### Conos de aviso, de cocción y de control
 
 Los conos se venden y se colocan de tres en tres: un cono de aviso, un cono de cocción en el objetivo y un cono de control. Tome como cono de cocción el número SK que indique su receta o su pasta, como cono de aviso el cono inmediatamente más frío (una fila más arriba en la tabla) y como cono de control el inmediatamente más caliente. Cuando el cono de aviso empieza a doblarse, el final está cerca; cuando se dobla el cono de control, la cocción se ha pasado.
@@ -366,6 +374,8 @@ Los conos Orton con pie se venden en Japón con el nombre 立つゼーゲル («
 
 - [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (la tabla SK, consultada el 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
 - [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (en vigor, confirmada de nuevo el 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
+- [JSA: JIS R 2204:1999, 耐火物及び耐火物原料の耐火度試験方法 (en vigor, confirmada de nuevo el 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+2204:1999)
+- [kikakurui.com: una transcripción de JIS R 2204:1999, cuyo apartado 5 a) indica cómo colocar los conos (leída el 2026-10-19)](https://kikakurui.com/r2/R2204-1999-01.html)
 - [Kyoto Municipal Institute of Industrial Technology and Culture: puntos que tener en cuenta al pasar de los conos de Kioto a los conos Orton](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
 
 :::
@@ -607,7 +617,7 @@ Para la ventilación de la sala y para los detectores de monóxido de carbono, v
 ### Mientras el horno está cociendo
 
 - Mire por una mirilla solo con gafas de soldadura con filtro de infrarrojo y grado de protección 3; las gafas de sol no bastan. Skutt aconseja girar los tapones al colocarlos para que no se caigan.
-- No deje el horno sin vigilancia más allá del tiempo de cocción previsto; un kiln sitter no es un sistema a prueba de fallos.
+- Permanezca cerca y revise el horno mientras cuece, sobre todo cerca de la hora prevista de finalización; un kiln sitter no es un sistema a prueba de fallos. Cueza solo cuando vaya a haber un adulto en casa y despierto durante toda la cocción.
 - No cueza nunca encima ni cerca de nada que arda, como un suelo de madera o una moqueta.
 - Respete las distancias de seguridad de su manual. Las cifras publicadas van de 12 pulgadas (30 cm) a 3 pies (91 cm); donde el manual no dice nada, lo más seguro es 18 pulgadas (46 cm) de las paredes y 3 pies (91 cm) de cualquier cosa que arda.
 - Mantenga libre el espacio alrededor del contrapeso del kiln sitter para que pueda caer.

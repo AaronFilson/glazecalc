@@ -127,6 +127,7 @@ test('the sign-in lives in a cookie that scripts on the page cannot read', async
     'cones',
     'decimalMark',
     'density',
+    'digits',
     'englishTerms',
     'format',
     'gramPrecision',

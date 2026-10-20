@@ -93,20 +93,20 @@ One build serves every language, and the translations load as JSON per language 
 Language and region are the two main choices; the rest default from them and can be changed. Today's weight and gram
 settings stay.
 
-| Setting                  | Choices                                                       | Default                                                               | Why it is separate                                                                                                                                                                                                                 |
-| ------------------------ | ------------------------------------------------------------- | --------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Language                 | 24 EU languages                                               | From the URL, else the browser, else English                          | The words on the page.                                                                                                                                                                                                             |
-| Region                   | Each EU country, plus US, UK, Ireland, Australia, New Zealand | Asked once; none until chosen                                         | Poison lines, safety rules, suppliers and the material library follow the country. German is official in four member states.                                                                                                       |
-| Number and date format   | "As my language and region" or a named format, with examples  | Language plus region (de with AT gives de-AT)                         | A potter may read German but want French dates, or English numbers.                                                                                                                                                                |
-| Decimal mark when typing | Either (comma or point), comma, point                         | Either                                                                | Settles "1,250": with "either", the format decides. Covers English typing with German text in France.                                                                                                                              |
-| Temperature              | °C, °F                                                        | °F in the US, °C elsewhere                                            | Guides and firing logs show one, with the other in brackets.                                                                                                                                                                       |
-| Cones                    | Orton, Seger, temperature only                                | Orton in the US, UK, Australia and New Zealand; asked elsewhere       | The guides explain the chosen system and leave out the other. Seger and Orton numbers differ by 44–52 °C at 05 and 04.                                                                                                             |
-| Glaze density            | Specific gravity, Baumé, pint weight                          | Baumé in Italy, pint weight nowhere by default, else specific gravity | Italians measure in Baumé; older UK books use pint weight.                                                                                                                                                                         |
-| Weights, gram precision  | As now                                                        | As now                                                                | Already in Settings.                                                                                                                                                                                                               |
-| Show English terms       | On, off                                                       | Off                                                                   | Puts the English term in brackets after key words ("Fritte (frit)"), for potters who also read English sources such as Digitalfire.                                                                                                |
-| Translation notice       | Shown, hidden                                                 | Shown                                                                 | The notice can be closed; it stays in the safety guides.                                                                                                                                                                           |
-| Digits                   | As the language, or 0–9                                       | As the language                                                       | Arabic, Persian, Bengali, Marathi and Nepali write their own digits by default (١٢٣, ১২৩, १२३); many potters there use 0–9 for technical work. Added with those languages.                                                         |
-| Calendar                 | Gregorian, the Thai Buddhist era or Japanese eras             | Gregorian                                                             | Thai dates default to the Buddhist year (2569) in Intl, so Thai names the Gregorian unless chosen. Firing logs and dates follow this; typed dates and emails stay Gregorian. Built 2026-10-17 (docs/asia-plan.md, Phase E item 1). |
+| Setting                  | Choices                                                                      | Default                                                               | Why it is separate                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| ------------------------ | ---------------------------------------------------------------------------- | --------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Language                 | 24 EU languages                                                              | From the URL, else the browser, else English                          | The words on the page.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| Region                   | Each EU country, plus US, UK, Ireland, Australia, New Zealand                | Asked once; none until chosen                                         | Poison lines, safety rules, suppliers and the material library follow the country. German is official in four member states.                                                                                                                                                                                                                                                                                                                                                                                          |
+| Number and date format   | "As my language and region" or a named format, with examples                 | Language plus region (de with AT gives de-AT)                         | A potter may read German but want French dates, or English numbers.                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| Decimal mark when typing | Either (comma or point), comma, point                                        | Either                                                                | Settles "1,250": with "either", the format decides. Covers English typing with German text in France.                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Temperature              | °C, °F                                                                       | °F in the US, °C elsewhere                                            | Guides and firing logs show one, with the other in brackets.                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| Cones                    | Orton, Seger, temperature only                                               | Orton in the US, UK, Australia and New Zealand; asked elsewhere       | The guides explain the chosen system and leave out the other. Seger and Orton numbers differ by 44–52 °C at 05 and 04.                                                                                                                                                                                                                                                                                                                                                                                                |
+| Glaze density            | Specific gravity, Baumé, pint weight                                         | Baumé in Italy, pint weight nowhere by default, else specific gravity | Italians measure in Baumé; older UK books use pint weight.                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| Weights, gram precision  | As now                                                                       | As now                                                                | Already in Settings.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Show English terms       | On, off                                                                      | Off                                                                   | Puts the English term in brackets after key words ("Fritte (frit)"), for potters who also read English sources such as Digitalfire.                                                                                                                                                                                                                                                                                                                                                                                   |
+| Translation notice       | Shown, hidden                                                                | Shown                                                                 | The notice can be closed; it stays in the safety guides.                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| Digits                   | As usual where you are, Western 0–9, or the language's own where it has them | As usual where you are: each country's, as CLDR has them              | Owner decision 2026-10-20: digits follow each country. Arabic-Indic for Arabic in Egypt, Iraq, Jordan and the Gulf but the UAE; 0–9 in the UAE and the Maghreb, and for Hindi, Tamil, Sinhala and Urdu in Pakistan; Bengali's own in Bangladesh; Devanagari for Marathi and Nepali (`lib/regions` DIGITS, CLDR 48). The format locale names them (`ar-EG-u-ca-gregory-nu-arab`), so no browser's own data decides. Translations write 0–9 (`npm run check:i18n`); typed numbers may use any digits. Built 2026-10-20. |
+| Calendar                 | Gregorian, the Thai Buddhist era or Japanese eras                            | Gregorian                                                             | Thai dates default to the Buddhist year (2569) in Intl, so Thai names the Gregorian unless chosen. Firing logs and dates follow this; typed dates and emails stay Gregorian. Built 2026-10-17 (docs/asia-plan.md, Phase E item 1).                                                                                                                                                                                                                                                                                    |
 
 Everything is stored with the account (like the theme and lead today), with a copy in the browser so the first paint
 is right. Visitors keep theirs in the browser only.
@@ -179,7 +179,8 @@ first.
     - Bootstrap's right-to-left stylesheet is checked on one page.
 11. **A parser and formatter for every script.** The typed-amount parser accepts any Unicode decimal digit and the
     Arabic separators (٫ ٬), not only 0–9, comma and point. Formatting already comes from `Intl`, which handles Indian
-    grouping (12,34,567.5) and native digits.
+    grouping (12,34,567.5) and native digits. Since 2026-10-20 the parser reads Indian grouping (1,00,000), the Arabic
+    percent sign (٪) and the marks `Intl` writes to keep a number's direction in Arabic text.
 
 ## Phase 2: the translation machinery (about 2 weeks)
 
@@ -461,15 +462,67 @@ The EU plan is built so that later regions add languages and data, not a new app
   Hausa follow as languages.
 - **Region data.** Many countries have no poison centre, and the data model already handles that: the emergency
   number, and a link to the health ministry. Emergency numbers vary (India 112, China 120 for an ambulance), so they
-  are always data.
+  are always data. India, Pakistan, Bangladesh, Egypt, the UAE, Morocco and Algeria are regions since 2026-10-20, in
+  English (docs/south-asia-mena-plan.md); Morocco and Algeria list French, so French pages show their data already.
 - **Reaching people.** Baidu does not use hreflang, and GitHub is unreliable from mainland China, so the correction
   link there also needs a route that works in China, such as an email address.
 - **The language picker.** At 60–80 languages it becomes a searchable list grouped by region, each language in its own
   name, never flags.
+  Built in round 6 (`client/app/shared/picker.ts`, an editable combobox with a listbox): the languages are grouped by
+  the part of the world they are mostly spoken in and the regions by continent (`lib/regions/groups.js`: a new
+  language or region needs a line there, which a server test requires), each found by its own name, its English name or
+  its code, accents ignored. The footer's and the about page's lists stay links, in the same groups and in columns.
 
 What the EU work should do now so this is cheap later: the right-to-left groundwork and the any-script parser (Phase 1),
 `intl-messageformat` for plurals, BCP 47 tags with room for scripts, and the region list as data rather than a fixed
 set of EU countries.
+
+### Right to left, as built (Indian subcontinent and Arabic plan, Phase A)
+
+Ready before any right-to-left language is offered (owner decisions of 2026-10-20: Arabic and Hindi first, then Urdu
+and Bengali; units in Latin, left to right; Noto Nastaliq Urdu served for Urdu pages only).
+
+- **Testing it.** `/ar-XD/` is the right-to-left pseudo-locale with real Arabic letters, all six of Arabic's plural
+  forms and Arabic-Indic digits (`ar-u-nu-arab`), so the browser's own bidirectional rules run as they will for Arabic.
+  `/ar-XB/` only reverses Latin text, which hides those bugs. `/hi-XE/` writes Devanagari, stacked and marked above and
+  below, for Hindi's fonts and line heights. Both keep in Latin what a translation keeps: acronyms (SK, LOI), units,
+  formulas, names and web addresses. The browser tests run every page in both at a phone's width
+  (`e2e/languages.spec.js`, `e2e/pseudo.spec.js`) and at 320 px with the accessibility checks (`e2e/rtl.spec.js`).
+- **Bootstrap.** The app compiles only the parts of Bootstrap it uses, with physical sides. `client/bootstrap.scss`
+  mirrors those it uses under `:where([dir='rtl'])`, at the specificity of the rules they mirror, so the app's own
+  styles still win; input and button groups round their corners by start and end. 1.7 kB, against about 75 kB for a
+  second whole build. A new Bootstrap part with left or right in it needs its mirror there.
+- **The app's own styles** use logical properties only (`margin-inline-start`, `inset-inline-start`,
+  `text-align: start`); check a new one with `/ar-XD/`.
+- **Values and names in text** (`client/app/shared/bidi.ts`). On a right-to-left page, a value with a Latin unit is a
+  left-to-right isolate (U+2066…2069) as a whole: temperatures, weights and rates from `shared/format.ts` and
+  `shared/weights.ts`, and in every message the transpiler writes, "1240 °C", "5–10 g", "SK 6a" and "per °C",
+  whoever wrote them. A message's values with letters in them (a name, a cone) are first-strong isolates, as `<bdi>`;
+  numbers are left to take the sentence's direction. In templates, names of recipes, materials, notes, logs, apps,
+  tokens and passkeys sit in `<bdi>`; in an `<option>`, where `<bdi>` cannot go, `| gcIsolated`. A `<bdi>` next to
+  other inline content needs `&ngsp;` where a space was, as Angular drops whitespace between elements.
+- **Arrows.** Translations keep → as the English has it; on a right-to-left page the transpiler writes ← (the
+  direction the text reads). Values are left alone. An arrow in a template uses `forwardArrow()`.
+- **Fields.** Emails, one-time codes, recovery codes, tokens, share links and every number box (`gcNumber`) are
+  `dir="ltr"`; a placeholder in them still reads from the right. Names and notes being typed, and code, take the
+  direction of their own first letter (`unicode-bidi: plaintext`); notes and advice shown take their own (`dir="auto"`).
+- **Pictures with a direction.** The Stull chart stays left to right (silica grows to the right). The blends grid
+  mirrors, so a corner's name is the side where it is drawn (`sideAsSeen`), as are the firing log's Move left and right.
+- **Guides.** Web addresses and formulas in a guide's text are left-to-right isolates; temperatures and densities as
+  the values above; code takes its own direction.
+- **Emails.** Plain text has no `dir`: an email written in a right-to-left language starts its subject and every line
+  with a right-to-left mark (U+200F), the signature's `-- ` line apart (`server/lib/account_mail.ts`, `inDirection`).
+  There are no HTML emails.
+- **Fonts** (`client/styles.scss`, `$gc-script-fonts`). The system's own for Arabic (Segoe UI, Noto Naskh Arabic,
+  Geeza Pro), Hindi (Nirmala UI, Kohinoor Devanagari, Noto Sans Devanagari) and Bengali (Nirmala UI, Kohinoor Bangla,
+  Noto Sans Bengali), never synthesized italics, never letter-spacing; lines 1.75 high for Devanagari and Bengali, and
+  headings 1.45 (Arabic headings 1.4). Urdu is Nastaliq, which few devices have: Noto Nastaliq Urdu 3.007 is served,
+  cut to Urdu's letters (193 kB, weights 400–700), named only in Urdu's font list so no other page fetches it, not
+  preloaded, in lines 1.9 high. The CSP's `font-src 'self'` covers it. The Linux test image installs `fonts-noto-core` and keeps only its Arabic, Devanagari and Bengali fonts: with all of them,
+  Chromium's search through every font for each sign Lora lacks made the accessibility checks run out of time.
+- **Still to do with the languages themselves:** pinned digits and calendars for each region (Phase A1), the
+  any-script parser for lakh grouping and Arabic separators (A2, A3), and `/ar/`, `/hi/`, `/ur/` and `/bn/` pages
+  prerendered for their regions.
 
 ## What stays the same
 

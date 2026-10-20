@@ -82,6 +82,31 @@
     "languages": "Języki",
     "language": "Język:"
   },
+  "picker": {
+    "results": "{count, plural, one {# wynik} few {# wyniki} many {# wyników} other {# wyniku}}",
+    "languages": {
+      "search": "Szukaj języka",
+      "showAll": "Pokaż wszystkie języki",
+      "noMatch": "Brak pasujących języków"
+    },
+    "regions": {
+      "search": "Szukaj kraju lub regionu",
+      "showAll": "Pokaż wszystkie kraje i regiony",
+      "noMatch": "Brak pasujących krajów i regionów"
+    },
+    "groups": {
+      "africa": "Afryka",
+      "americas": "Ameryka",
+      "asia": "Azja",
+      "eastAsia": "Azja Wschodnia",
+      "europe": "Europa",
+      "middleEastNorthAfrica": "Bliski Wschód i Afryka Północna",
+      "oceania": "Oceania",
+      "southAsia": "Azja Południowa",
+      "southeastAsia": "Azja Południowo-Wschodnia",
+      "other": "Inne"
+    }
+  },
   "numbers": {
     "notANumber": "Należy wpisać liczbę, np. {example}.",
     "notANumberComma": "Należy wpisać liczbę, np. {example}, z przecinkiem jako separatorem dziesiętnym.",

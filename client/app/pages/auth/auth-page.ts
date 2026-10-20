@@ -83,6 +83,7 @@ import { SecondStep } from './second-step';
               <input
                 id="email"
                 type="email"
+                dir="ltr"
                 name="email"
                 class="form-control"
                 required
@@ -341,7 +342,13 @@ export class AuthPage {
     let failed = false;
     try {
       if (this.signup()) {
-        await this.auth.signUp(this.email(), this.password(), this.keep());
+        // The confirmation email's link comes back to the page to go on to as well.
+        await this.auth.signUp(
+          this.email(),
+          this.password(),
+          this.keep(),
+          this.next === '/home' ? undefined : this.next
+        );
       } else {
         const result = await this.auth.signIn(this.email(), this.password(), this.keep());
         if (!result.done) {

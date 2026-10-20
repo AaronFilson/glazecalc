@@ -100,6 +100,7 @@
   "limitSet-choices": "Elija hesselberth-roy o glazecalc.",
   "currency-choices": "Elija una de las monedas de la lista, o déjelo a su región.",
   "calendar-choices": "Las fechas pueden mostrarse en el calendario gregoriano (gregory), en la era budista tailandesa (buddhist) o en eras japonesas (japanese).",
+  "digits-choices": "Los dígitos pueden mostrarse como es habitual donde está (auto), como 0–9 (western) o con los dígitos propios del idioma (native).",
   "shelf-invalid": "La lista de materiales disponibles admite hasta {most} materiales.",
   "shelf-full": "La lista de materiales disponibles admite como máximo {most} materiales. No se ha cambiado nada.",
   "shelf-material-unknown": "Ese material no está en sus materiales ni en la biblioteca de Glazecalc.",

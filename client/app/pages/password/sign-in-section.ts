@@ -151,6 +151,7 @@ export const groupedKey = (secret: string): string => secret.match(/.{1,4}/g)?.j
                   <input
                     id="totp-code"
                     type="text"
+                    dir="ltr"
                     name="totpCode"
                     class="form-control code-input"
                     inputmode="numeric"
@@ -251,7 +252,7 @@ export const groupedKey = (secret: string): string => secret.match(/.{1,4}/g)?.j
                       </div>
                     </form>
                   } @else {
-                    <span class="passkey-name">{{ passkey.name }}</span>
+                    <bdi class="passkey-name">{{ passkey.name }}</bdi>
                     <span class="form-text d-block">
                       {{ t('account.mfa.added', { date: (passkey.addedAt | gcDate) }) }}
                       {{
@@ -267,7 +268,10 @@ export const groupedKey = (secret: string): string => secret.match(/.{1,4}/g)?.j
                         [id]="'mfa-rename-' + passkey.id"
                         (click)="startRename(passkey)"
                       >
-                        {{ t('account.mfa.rename') }}<span class="visually-hidden"> {{ passkey.name }}</span>
+                        {{ t('account.mfa.rename')
+                        }}<span class="visually-hidden">
+                          &ngsp;<bdi>{{ passkey.name }}</bdi></span
+                        >
                       </button>
                       <button
                         type="button"
@@ -275,7 +279,10 @@ export const groupedKey = (secret: string): string => secret.match(/.{1,4}/g)?.j
                         [id]="'mfa-remove-' + passkey.id"
                         (click)="open({ kind: 'remove-passkey', passkey }, 'mfa-remove-' + passkey.id)"
                       >
-                        {{ t('account.mfa.remove') }}<span class="visually-hidden"> {{ passkey.name }}</span>
+                        {{ t('account.mfa.remove')
+                        }}<span class="visually-hidden">
+                          &ngsp;<bdi>{{ passkey.name }}</bdi></span
+                        >
                       </button>
                     </span>
                     @if (removing() === passkey.id) {
@@ -388,7 +395,7 @@ export const groupedKey = (secret: string): string => secret.match(/.{1,4}/g)?.j
 
     <ng-template #totpKey let-secret>
       <span class="d-block" id="totp-key-label">{{ t('account.mfa.key') }}</span>
-      <code class="totp-key" aria-labelledby="totp-key-label">{{ grouped(secret) }}</code>
+      <code class="totp-key" dir="ltr" aria-labelledby="totp-key-label">{{ grouped(secret) }}</code>
       <button type="button" class="btn btn-light border btn-sm copy-key" (click)="copy(secret)">
         {{ t('account.mfa.copyKey') }}
       </button>
@@ -428,7 +435,8 @@ export const groupedKey = (secret: string): string => secret.match(/.{1,4}/g)?.j
       font-size: 1.1rem;
       letter-spacing: 0.05em;
       word-spacing: 0.3em;
-      margin: 0.25rem 0.5rem 0.5rem 0;
+      margin-block: 0.25rem 0.5rem;
+      margin-inline: 0 0.5rem;
       color: inherit;
     }
     /* Three times a small button's height: on a phone, the step's one big action. */

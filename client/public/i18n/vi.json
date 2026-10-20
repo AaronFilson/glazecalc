@@ -82,6 +82,31 @@
     "languages": "Ngôn ngữ",
     "language": "Ngôn ngữ:"
   },
+  "picker": {
+    "results": "{count, plural, other {# kết quả}}",
+    "languages": {
+      "search": "Tìm ngôn ngữ",
+      "showAll": "Hiện tất cả ngôn ngữ",
+      "noMatch": "Không có ngôn ngữ nào khớp"
+    },
+    "regions": {
+      "search": "Tìm quốc gia và khu vực",
+      "showAll": "Hiện tất cả quốc gia và khu vực",
+      "noMatch": "Không có quốc gia hoặc khu vực nào khớp"
+    },
+    "groups": {
+      "africa": "Châu Phi",
+      "americas": "Châu Mỹ",
+      "asia": "Châu Á",
+      "eastAsia": "Đông Á",
+      "europe": "Châu Âu",
+      "middleEastNorthAfrica": "Trung Đông và Bắc Phi",
+      "oceania": "Châu Đại Dương",
+      "southAsia": "Nam Á",
+      "southeastAsia": "Đông Nam Á",
+      "other": "Khác"
+    }
+  },
   "numbers": {
     "notANumber": "Nhập một số, chẳng hạn {example}.",
     "notANumberComma": "Nhập một số, chẳng hạn {example}, dùng dấu phẩy cho phần thập phân.",

@@ -137,7 +137,9 @@ const COUNTING: ReadonlyArray<{ value: Counting; label: string }> = [
       <div class="compare-recipes">
         @for (side of recipesShown(); track side.name) {
           <section class="compare-recipe" [attr.aria-labelledby]="'compare-recipe-' + side.name">
-            <h3 [id]="'compare-recipe-' + side.name" translate="no">{{ titleOf(side.recipe) }}</h3>
+            <h3 [id]="'compare-recipe-' + side.name" translate="no">
+              <bdi>{{ titleOf(side.recipe) }}</bdi>
+            </h3>
             <table class="compare-materials">
               <caption class="visually-hidden">
                 {{
@@ -154,7 +156,9 @@ const COUNTING: ReadonlyArray<{ value: Counting; label: string }> = [
               <tbody>
                 @for (material of side.recipe.materials; track $index) {
                   <tr>
-                    <th scope="row">{{ material.name }}</th>
+                    <th scope="row">
+                      <bdi>{{ material.name }}</bdi>
+                    </th>
                     <td class="num">{{ material.amount | gcPlain }}</td>
                     <td class="num">{{ share(side.recipe, material.amount) }}</td>
                   </tr>

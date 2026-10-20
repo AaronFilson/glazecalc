@@ -9,6 +9,9 @@ import { Preferences, PreferencesService } from '../../core/preferences.service'
 import { PricesService } from '../../core/prices.service';
 import { PALETTES } from '../../core/theme';
 import { OFFERED_LANGUAGES, OPEN_PAGE, PAGE_LANGUAGE, languageName, pathIn } from '../../i18n/language';
+import { languageItems } from '../../i18n/language-groups';
+import { Picker, PickerItem } from '../../shared/picker';
+import { regionItems } from '../../shared/region-items';
 
 // The words of a setting and its choices are read each time they are shown,
 // so they are in the page's language and none is translated as the app loads.
@@ -23,10 +26,20 @@ interface Choice {
   readonly saved: string;
 }
 
+/** What a searchable list needs besides its choices (shared/picker.ts). */
+interface PickerOptions {
+  readonly items: readonly PickerItem[];
+  readonly placeholder: string;
+  readonly showAll: string;
+  readonly noMatch: string;
+}
+
 interface Setting {
   name: keyof Preferences;
-  /** A list to choose from, for long lists; radio buttons otherwise. */
-  kind?: 'select';
+  /** A list to choose from, for long lists, or a searchable list for the longest; radio buttons otherwise. */
+  kind?: 'select' | 'picker';
+  /** The searchable list's words and groups, for 'picker'. */
+  picker?: PickerOptions;
   /** The start of each radio button's id: weight-unit-g. */
   id: string;
   readonly legend: string;
@@ -52,7 +65,11 @@ const choice = (value: string, label: string, saved: string, example?: string | 
 });
 
 /** A setting whose legend and help are messages, by their keys. */
-const setting = (legend: string, help: string, fields: Pick<Setting, 'name' | 'kind' | 'id' | 'choices'>): Setting => ({
+const setting = (
+  legend: string,
+  help: string,
+  fields: Pick<Setting, 'name' | 'kind' | 'id' | 'choices' | 'picker'>
+): Setting => ({
   ...fields,
   get legend() {
     return translate(legend);
@@ -64,13 +81,13 @@ const setting = (legend: string, help: string, fields: Pick<Setting, 'name' | 'k
 
 // A sample for each number and date format: 12345.6 and 8 October 2026.
 const SAMPLE_DATE = new Date(2026, 9, 8);
-const sampleOf = (locale: string): string =>
+const sampleNumber = (locale: string): string =>
   new Intl.NumberFormat(locale, {
     maximumFractionDigits: 1,
     useGrouping: 'min2'
-  } as unknown as Intl.NumberFormatOptions).format(12345.6) +
-  ' · ' +
-  new Intl.DateTimeFormat(locale, { dateStyle: 'short' }).format(SAMPLE_DATE);
+  } as unknown as Intl.NumberFormatOptions).format(12345.6);
+const sampleOf = (locale: string): string =>
+  sampleNumber(locale) + ' · ' + new Intl.DateTimeFormat(locale, { dateStyle: 'short' }).format(SAMPLE_DATE);
 
 /**
  * The settings, with the names of regions and of languages in the page's
@@ -90,7 +107,13 @@ function settingsIn(pageLanguage: string, offered: readonly string[]): Setting[]
     {
       name: 'language',
       id: 'language',
-      kind: 'select',
+      kind: 'picker',
+      picker: {
+        items: languageItems(offered),
+        placeholder: translate('picker.languages.search'),
+        showAll: translate('picker.languages.showAll'),
+        noMatch: translate('picker.languages.noMatch')
+      },
       choices: offered.map((code) => ({
         value: code,
         label: languageName(code),
@@ -155,7 +178,16 @@ function settingsIn(pageLanguage: string, offered: readonly string[]): Setting[]
     setting(marker('account.settings.region.legend'), marker('account.settings.region.help'), {
       name: 'region',
       id: 'region',
-      kind: 'select',
+      kind: 'picker',
+      picker: {
+        items: [
+          { value: '', label: translate('account.settings.region.none.label'), group: '' },
+          ...regionItems(regions, pageLanguage)
+        ],
+        placeholder: translate('picker.regions.search'),
+        showAll: translate('picker.regions.showAll'),
+        noMatch: translate('picker.regions.noMatch')
+      },
       choices: [
         choice('', marker('account.settings.region.none.label'), marker('account.settings.region.none.saved')),
         ...regions
@@ -209,6 +241,21 @@ function settingsIn(pageLanguage: string, offered: readonly string[]): Setting[]
           marker('account.settings.calendar.japanese.label'),
           marker('account.settings.calendar.japanese.saved')
         )
+      ]
+    }),
+    // The digits numbers are shown in; each choice's example is a number as it would be shown now
+    // (settings-section exampleOf): ١٢٬٣٤٥٫٦ for Arabic in Egypt as usual, 12,345.6 in 0–9.
+    setting(marker('account.settings.digits.legend'), marker('account.settings.digits.help'), {
+      name: 'digits',
+      id: 'digits',
+      choices: [
+        choice('auto', marker('account.settings.digits.auto.label'), marker('account.settings.digits.auto.saved')),
+        choice(
+          'western',
+          marker('account.settings.digits.western.label'),
+          marker('account.settings.digits.western.saved')
+        ),
+        choice('native', marker('account.settings.digits.native.label'), marker('account.settings.digits.native.saved'))
       ]
     }),
     setting(marker('account.settings.decimalMark.legend'), marker('account.settings.decimalMark.help'), {
@@ -367,13 +414,28 @@ function settingsIn(pageLanguage: string, offered: readonly string[]): Setting[]
 /** The account's settings, on the account page. A trial has them too. */
 @Component({
   selector: 'gc-settings',
-  imports: [TranslocoDirective],
+  imports: [Picker, TranslocoDirective],
   template: `<ng-container *transloco="let t">
     <section class="auth-text settings" aria-labelledby="settings-heading">
       <h2 id="settings-heading" tabindex="-1">{{ t('account.settings.heading') }}</h2>
       <p class="muted">{{ t('account.settings.intro') }}</p>
       @for (setting of settings; track setting.name) {
-        @if (setting.kind === 'select') {
+        @if (setting.kind === 'picker') {
+          <div class="settings-group">
+            <label class="form-label" [for]="setting.id">{{ setting.legend }}</label>
+            <gc-picker
+              [inputId]="setting.id"
+              [label]="setting.legend"
+              [items]="setting.picker!.items"
+              [value]="current(setting)"
+              [placeholder]="setting.picker!.placeholder"
+              [showAll]="setting.picker!.showAll"
+              [noMatch]="setting.picker!.noMatch"
+              (chosen)="chooseValue(setting, $event)"
+            />
+            <div class="form-text">{{ setting.help }}</div>
+          </div>
+        } @else if (setting.kind === 'select') {
           <div class="settings-group">
             <label class="form-label" [for]="setting.id">{{ setting.legend }}</label>
             <select class="form-select" [id]="setting.id" (change)="chooseValue(setting, $any($event.target).value)">
@@ -436,6 +498,10 @@ function settingsIn(pageLanguage: string, offered: readonly string[]): Setting[]
     .settings-group + .settings-group {
       margin-top: 1rem;
     }
+    /* The lists to search are not stretched across a wide window. */
+    gc-picker {
+      max-width: 30rem;
+    }
     .settings-confirm {
       border-inline-start: 3px solid var(--gc-danger-text);
       margin-top: 0.5rem;
@@ -493,15 +559,17 @@ export class SettingsSection implements OnInit {
 
   /**
    * A choice's example; for "as my language and region", how numbers and dates are written now; for a
-   * calendar, the sample date as it would be shown in it.
+   * calendar, the sample date as it would be shown in it; for digits, the sample number in them.
    */
   protected exampleOf(setting: Setting, choice: Choice): string {
+    const { language, region } = this.locale;
     if (setting.name === 'calendar') {
       const locale = formatLocaleFor(
-        this.locale.language(),
-        this.locale.region(),
+        language(),
+        region(),
         this.preferences.format(),
-        choice.value
+        choice.value,
+        this.preferences.digits()
       );
       try {
         return new Intl.DateTimeFormat(locale, { dateStyle: 'long' }).format(SAMPLE_DATE);
@@ -509,12 +577,27 @@ export class SettingsSection implements OnInit {
         return '';
       }
     }
+    if (setting.name === 'digits') {
+      const locale = formatLocaleFor(
+        language(),
+        region(),
+        this.preferences.format(),
+        this.preferences.calendar(),
+        choice.value
+      );
+      try {
+        return sampleNumber(locale);
+      } catch {
+        return '';
+      }
+    }
     if (setting.name === 'format') {
-      // The date in the calendar chosen now, so Thai shows Gregorian by default and Buddhist when chosen.
+      // The date in the calendar and the digits chosen now, so Thai shows Gregorian by default and Buddhist when
+      // chosen, and Arabic in Egypt shows its own digits unless 0–9 are chosen.
       const locale =
         choice.value === 'auto'
           ? this.locale.locale()
-          : formatLocaleFor(this.locale.language(), this.locale.region(), choice.value, this.preferences.calendar());
+          : formatLocaleFor(language(), region(), choice.value, this.preferences.calendar(), this.preferences.digits());
       try {
         return sampleOf(locale);
       } catch {

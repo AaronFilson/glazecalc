@@ -18,6 +18,22 @@
 @import 'bootstrap/scss/mixins';
 @import 'bootstrap/scss/utilities';
 
+// Joined fields and buttons (input groups, button groups) square the corners where they meet by the start
+// and end of the line, not left and right, so they keep their outer corners round on a right-to-left page
+// too (below). A left-to-right page draws the same corners as before.
+@mixin border-start-radius($radius: $border-radius) {
+  @if $enable-rounded {
+    border-start-start-radius: valid-radius($radius);
+    border-end-start-radius: valid-radius($radius);
+  }
+}
+@mixin border-end-radius($radius: $border-radius) {
+  @if $enable-rounded {
+    border-start-end-radius: valid-radius($radius);
+    border-end-end-radius: valid-radius($radius);
+  }
+}
+
 // Layout and components
 @import 'bootstrap/scss/root';
 @import 'bootstrap/scss/reboot';
@@ -29,6 +45,93 @@
 
 // Helpers
 @import 'bootstrap/scss/helpers';
+
+// Right to left (Arabic, Urdu; docs/i18n-plan.md): the sides the parts above write as left and right, mirrored
+// as Bootstrap's own right-to-left build writes them, for the parts in use only (a second whole build would
+// add some 75 kB). :where() keeps each rule as specific as the one it mirrors, so the app's own styles still
+// win over it as they do over Bootstrap's; a left-to-right page is as before.
+:where([dir='rtl']) {
+  // Lists indent at the start of the line, as the browser's own rule (padding-inline-start) does.
+  ol,
+  ul {
+    padding-left: 0;
+    padding-right: 2rem;
+  }
+  dd {
+    margin-right: 0;
+  }
+  caption {
+    text-align: right;
+  }
+  legend {
+    float: right;
+  }
+  legend + * {
+    clear: right;
+  }
+
+  // A select's arrow on the left, with the room for it.
+  .form-select {
+    padding-right: $form-select-padding-x;
+    padding-left: $form-select-indicator-padding;
+    background-position: left $form-select-padding-x center;
+  }
+  .form-select[multiple],
+  .form-select[size]:not([size='1']) {
+    padding-left: $form-select-padding-x;
+  }
+  .form-select-sm {
+    padding-right: $form-select-padding-x-sm;
+  }
+
+  // A checkbox or radio button on the right, before its label.
+  .form-check {
+    padding-left: 0;
+    padding-right: $form-check-padding-start;
+  }
+  .form-check .form-check-input {
+    float: right;
+    margin-left: 0;
+    margin-right: $form-check-padding-start * -1;
+  }
+  .form-check-inline {
+    margin-right: 0;
+    margin-left: $form-check-inline-margin-end;
+  }
+
+  // A field marked wrong (shared/field-checks.ts): its sign on the left.
+  .form-control.is-invalid {
+    padding-right: $input-padding-x;
+    padding-left: $input-height-inner;
+    background-position: left $input-height-inner-quarter center;
+  }
+  textarea.form-control.is-invalid {
+    padding-left: $input-height-inner;
+    background-position: top $input-height-inner-quarter left $input-height-inner-quarter;
+  }
+  .form-select.is-invalid:not([multiple]):not([size]),
+  .form-select.is-invalid:not([multiple])[size='1'] {
+    padding-right: $form-select-padding-x;
+    padding-left: $form-select-feedback-icon-padding-end;
+    background-position:
+      left $form-select-padding-x center,
+      center left $form-select-indicator-padding;
+  }
+
+  // Joined fields and buttons overlap their borders on the other side.
+  .input-group
+    > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(
+      .invalid-feedback
+    ) {
+    margin-left: 0;
+    margin-right: calc(-1 * #{$input-border-width});
+  }
+  .btn-group > :not(.btn-check:first-child) + .btn,
+  .btn-group > .btn-group:not(:first-child) {
+    margin-left: 0;
+    margin-right: calc(-1 * #{$btn-border-width});
+  }
+}
 
 // The utilities in use, as Bootstrap's utilities API writes them (last, !important and in the order of the full file).
 // The full API would add about 70 kB for these thirteen.

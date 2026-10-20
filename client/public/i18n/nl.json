@@ -82,6 +82,31 @@
     "languages": "Talen",
     "language": "Taal:"
   },
+  "picker": {
+    "results": "{count, plural, one {# resultaat} other {# resultaten}}",
+    "languages": {
+      "search": "Talen zoeken",
+      "showAll": "Alle talen tonen",
+      "noMatch": "Geen taal gevonden"
+    },
+    "regions": {
+      "search": "Landen en regio’s zoeken",
+      "showAll": "Alle landen en regio’s tonen",
+      "noMatch": "Geen land of regio gevonden"
+    },
+    "groups": {
+      "africa": "Afrika",
+      "americas": "Amerika",
+      "asia": "Azië",
+      "eastAsia": "Oost-Azië",
+      "europe": "Europa",
+      "middleEastNorthAfrica": "Midden-Oosten en Noord-Afrika",
+      "oceania": "Oceanië",
+      "southAsia": "Zuid-Azië",
+      "southeastAsia": "Zuidoost-Azië",
+      "other": "Overig"
+    }
+  },
   "numbers": {
     "notANumber": "Voer een getal in, bijvoorbeeld {example}.",
     "notANumberComma": "Voer een getal in, bijvoorbeeld {example}, met een komma als decimaalteken.",

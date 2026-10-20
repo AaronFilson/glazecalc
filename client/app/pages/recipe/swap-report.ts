@@ -16,7 +16,7 @@ export interface Run {
   tries: TryMaterial[];
   /** Names to leave out. */
   avoid: string[];
-  /** Replace lead: names whose suggested cap the potter lifted. */
+  /** Names whose suggested cap the potter lifted: Replace lead's, and raw clay held to 20%. */
   uncapped: string[];
   cone: string;
   mode: LeadMode;
@@ -111,7 +111,8 @@ const list = (names: string[]): string => listOf(names);
           <ul class="swap-uses">
             @for (help of report.couldHelp; track help.name) {
               <li>
-                {{ help.name }}
+                <bdi>{{ help.name }}</bdi
+                >&ngsp;
                 <button
                   type="button"
                   class="btn btn-link btn-sm swap-action"

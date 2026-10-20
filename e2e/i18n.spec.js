@@ -117,6 +117,76 @@ test('a Japanese page draws its text in a Japanese font, and an English one in L
   await expect(page.locator('html')).toHaveCSS('line-break', 'auto');
 });
 
+/** The font files a page asked for while it was open. */
+const fontFiles = (page) => {
+  const files = [];
+  page.on('request', (request) => {
+    if (request.resourceType() === 'font') files.push(request.url());
+  });
+  return files;
+};
+
+test('Arabic and Hindi draw their letters in the system font, Hindi in taller lines, and none is spaced out', async ({
+  page
+}) => {
+  const files = fontFiles(page);
+  await page.goto('/ar-XD/guides/firing');
+  await expect(page.locator('h1')).toHaveText(/^[\u0600-\u06ff\s]+$/);
+  await page.evaluate(() => globalThis.document.fonts.ready);
+  // Noto Naskh Arabic on Linux (scripts/test-e2e-linux.Dockerfile), and so in CI; Segoe UI on Windows.
+  const arabic = process.platform === 'linux' ? /^Noto Naskh Arabic$/ : /^Segoe UI/;
+  expect(await fontsOf(page, 'h1')).toContainEqual(expect.stringMatching(arabic));
+  // No slanted Arabic, which its fonts do not draw.
+  await expect(page.locator('html')).toHaveCSS('font-synthesis', 'none');
+
+  await page.goto('/hi-XE/guides/firing');
+  await expect(page.locator('h1')).toHaveText(/[\u0900-\u097f]/);
+  await page.evaluate(() => globalThis.document.fonts.ready);
+  const devanagari = process.platform === 'linux' ? /^Noto Sans Devanagari$/ : /^Nirmala UI/;
+  expect(await fontsOf(page, 'h1')).toContainEqual(expect.stringMatching(devanagari));
+  // 17 px text in lines 1.75 high, and headings 1.45, for the marks above and below the letters.
+  await expect(page.locator('body')).toHaveCSS('line-height', '29.75px');
+  const heading = await page.locator('h1').evaluate((h1) => {
+    const style = globalThis.getComputedStyle(h1);
+    return parseFloat(style.lineHeight) / parseFloat(style.fontSize);
+  });
+  expect(heading).toBeCloseTo(1.45, 2);
+
+  // The landing page's line over its title is spaced out in English only.
+  for (const code of ['ar-XD', 'hi-XE']) {
+    await page.goto('/' + code + '/');
+    await expect(page.locator('.eyebrow')).toHaveCSS('letter-spacing', 'normal');
+  }
+  // Urdu's Nastaliq is served for Urdu alone.
+  expect(files.filter((file) => /nastaliq/i.test(file))).toEqual([]);
+});
+
+test("an Urdu page fetches the app's Nastaliq font and sets its text in it, in lines 1.9 high", async ({ page }) => {
+  const files = fontFiles(page);
+  await page.goto('/about');
+  await expect(page.locator('h1')).toBeVisible();
+  // There is no Urdu page yet: the page becomes one, with a line of Urdu.
+  await page.evaluate(() => {
+    const html = globalThis.document.documentElement;
+    html.lang = 'ur';
+    html.dir = 'rtl';
+    const line = globalThis.document.createElement('p');
+    line.id = 'urdu';
+    line.textContent = 'گلیز کا نسخہ، بھٹی اور حفاظت';
+    globalThis.document.querySelector('main').prepend(line);
+  });
+  await expect.poll(() => files.filter((file) => /noto-nastaliq-urdu-wght-normal/.test(file)).length).toBe(1);
+  await page.evaluate(() => globalThis.document.fonts.ready);
+  const cdp = await page.context().newCDPSession(page);
+  await cdp.send('DOM.enable');
+  await cdp.send('CSS.enable');
+  const { root } = await cdp.send('DOM.getDocument');
+  const { nodeId } = await cdp.send('DOM.querySelector', { nodeId: root.nodeId, selector: '#urdu' });
+  const { fonts } = await cdp.send('CSS.getPlatformFontsForNode', { nodeId });
+  expect(fonts).toContainEqual(expect.objectContaining({ familyName: 'Noto Nastaliq Urdu', isCustomFont: true }));
+  await expect(page.locator('body')).toHaveCSS('line-height', '32.3px');
+});
+
 test('the pseudo-locale accents every message, which shows any left unmarked', async ({ page }) => {
   await page.goto('/en-XA/about');
   await expect(page.locator('html')).toHaveAttribute('lang', 'en-XA');

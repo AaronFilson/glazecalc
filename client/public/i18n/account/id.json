@@ -270,6 +270,22 @@
         "saved": "Tersimpan: tanggal ditampilkan dalam era Jepang."
       }
     },
+    "digits": {
+      "legend": "Digit",
+      "help": "Digit yang dipakai untuk menampilkan angka. Beberapa bahasa memiliki digitnya sendiri, seperti Arab, Bengali, dan Hindi, dan tempat Anda berada menentukan mana yang lazim. Anda dapat mengetik angka dengan salah satu dari keduanya.",
+      "auto": {
+        "label": "Seperti yang lazim di tempat Anda",
+        "saved": "Tersimpan: digit seperti yang lazim di tempat Anda."
+      },
+      "western": {
+        "label": "Digit Barat, 0–9",
+        "saved": "Tersimpan: angka ditampilkan dengan digit 0–9."
+      },
+      "native": {
+        "label": "Digit milik bahasa itu sendiri, jika bahasa itu memilikinya",
+        "saved": "Tersimpan: angka ditampilkan dengan digit milik bahasa itu sendiri, jika bahasa itu memilikinya."
+      }
+    },
     "decimalMark": {
       "legend": "Mengetik jumlah",
       "either": {

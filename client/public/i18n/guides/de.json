@@ -52,6 +52,7 @@
     "emergency": "Ein Notfall: bewusstlos, atmet nicht, ein Krampfanfall",
     "poisonAdvice": "{who, select, children {Giftberatung: {name} (nur für Kinder)} other {Giftberatung: {name}}}",
     "or": "oder {number}",
+    "orCall": "oder <link>{number}</link>",
     "online": "Online: <link>{name}</link>.",
     "poisonAdviceNone": "Giftberatung",
     "noLine": "Wir konnten hier keinen öffentlichen Giftnotruf bestätigen. Rufen Sie Ihre Arztpraxis an oder, wenn es dringend ist, die Notrufnummer.",
@@ -61,8 +62,7 @@
     "vet": "Rufen Sie Ihre Tierarztpraxis an.",
     "checkedOn": "Geprüft anhand von:",
     "choosePrompt": "Wählen Sie Ihr Land, um zu sehen, wen Sie dort anrufen.",
-    "ministry": "Die Seite des Gesundheitsministeriums: <link>{name}</link>.",
-    "reported": "Offizielle Regierungsseiten nennen 113, 114 und 115, aber nicht, wofür jede Nummer gilt; die angezeigten Aufgaben folgen dem Rundschreiben 22/2014/TT-BTTTT, wie Sekundärseiten es wiedergeben."
+    "ministry": "Die Seite des Gesundheitsministeriums: <link>{name}</link>."
   },
   "density": {
     "sg": "spez. Gewicht {value}",
@@ -112,6 +112,10 @@
     "bandFromTo": "Staub mit {from} % bis {to} % freiem Quarz (SiO₂)",
     "bandOverTo": "Staub mit mehr als {from} % und bis zu {to} % freiem Quarz",
     "bandAbove": "Staub mit mehr als {from} % freiem Quarz",
+    "untilDate": "Bis {date}",
+    "fromDate": "Ab {date}",
+    "beforeFormula": "Grenzwert für alveolengängigen Staub, wobei Q der Gehalt an kristallinem Siliciumdioxid darin in % ist",
+    "beforeAll": "Für Staub, der ganz aus kristallinem Siliciumdioxid besteht",
     "recommended": "Empfohlen von {abbr}",
     "value": "{value} mg/m³",
     "kind": {
@@ -122,6 +126,7 @@
     },
     "setBy": "Festgelegt in: <link>{law}</link>.",
     "from": "Sie gilt ab {date}.",
+    "beforeSetBy": "Bis dahin legt <link>{law}</link> den Grenzwert fest.",
     "lowerThanEu": "Niedriger als der verbindliche Grenzwert der EU von {value} mg/m³.",
     "sameAsEu": "Derselbe Wert wie der verbindliche Grenzwert der EU.",
     "recommendedBy": "{abbr} ({by}) empfiehlt diesen Wert in der Veröffentlichung <link>{title}</link>. Er ist nicht gesetzlich verbindlich.",
@@ -184,7 +189,13 @@
       "vnMedium": "Tiefe Gegenstände zur Aufnahme von Speisen, von 1100 mL bis unter 3000 mL",
       "vnStorage": "Tiefe Gegenstände zur Aufnahme von Speisen, 3000 mL oder mehr",
       "vnCooking": "Tiefe Gegenstände zum Garen",
-      "vnCups": "Tassen und kleine Schalen"
+      "vnCups": "Tassen und kleine Schalen",
+      "cnFlat": "Flachware mit höchstens 25 mm Tiefe",
+      "cnSmall": "Kleine Hohlware unter 1,1 L, außer Tassen",
+      "cnLarge": "Große Hohlware, von 1,1 L bis unter 3 L",
+      "cnStorage": "Vorratsgefäße, 3 L oder mehr",
+      "cnCups": "Tassen, für Wasser oder Getränke",
+      "cnCooking": "Kochgeschirr zum Erhitzen von Speisen"
     },
     "judged": {
       "average": "Mittelwert aus 6 Stücken",
@@ -198,6 +209,8 @@
     "atMost": "Ein Gegenstand besteht die Prüfung, wenn er nicht mehr als den Grenzwert abgibt: Das Gesetz sagt „höchstens“.",
     "ppm": "ppm bedeutet hier Milligramm pro Liter der Prüflösung (mg/L).",
     "unknown": "{region}: Die dortigen Vorschriften haben wir noch nicht bestätigt.",
+    "none": "{region}: Es gibt kein Gesetz, das Grenzwerte dafür festlegt, wie viel Blei und Cadmium ein gebranntes Stück abgeben darf (geprüft am {date}).",
+    "noneSource": "Quelle: <link>{law}</link>.",
     "choosePrompt": "Wählen Sie Ihr Land, um die dortigen Vorschriften zu sehen."
   },
   "equivalents": {

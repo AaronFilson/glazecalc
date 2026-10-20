@@ -82,6 +82,31 @@
     "languages": "Jeziki",
     "language": "Jezik:"
   },
+  "picker": {
+    "results": "{count, plural, one {# zadetek} two {# zadetka} few {# zadetki} other {# zadetkov}}",
+    "languages": {
+      "search": "Išči jezike",
+      "showAll": "Pokaži vse jezike",
+      "noMatch": "Noben jezik se ne ujema"
+    },
+    "regions": {
+      "search": "Išči države in regije",
+      "showAll": "Pokaži vse države in regije",
+      "noMatch": "Nobena država ali regija se ne ujema"
+    },
+    "groups": {
+      "africa": "Afrika",
+      "americas": "Amerika",
+      "asia": "Azija",
+      "eastAsia": "Vzhodna Azija",
+      "europe": "Evropa",
+      "middleEastNorthAfrica": "Bližnji vzhod in Severna Afrika",
+      "oceania": "Oceanija",
+      "southAsia": "Južna Azija",
+      "southeastAsia": "Jugovzhodna Azija",
+      "other": "Drugo"
+    }
+  },
   "numbers": {
     "notANumber": "Vnesite število, na primer {example}.",
     "notANumberComma": "Vnesite število z decimalno vejico, na primer {example}.",

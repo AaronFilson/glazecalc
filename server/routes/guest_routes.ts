@@ -1,8 +1,9 @@
 // Trying the app without an account ("Try it now").
 //
 //   POST /api/guest                          starts a trial: { guest, name, expiresAt }
-//   POST /api/guest/claim  { email, password }  (signed in as the trial) turns it
-//                                            into a real account, keeping its records
+//   POST /api/guest/claim  { email, password, next? }  (signed in as the trial) turns it
+//                                            into a real account, keeping its records; next
+//                                            as for /api/signup (auth_routes.ts)
 //
 // Both sign the browser in with the session cookie (server/lib/session.ts).
 //
@@ -76,7 +77,7 @@ guestRouter.post('/', limits.guest, async (req, res) => {
 guestRouter.post('/claim', limits.signUp, jwtAuth, express.json(), async (req, res) => {
   const trial = userOf(req);
   if (!trial.guest) return res.status(403).json(say('not-a-trial'));
-  const body = (req.body ?? {}) as { email?: unknown; password?: unknown };
+  const body = (req.body ?? {}) as { email?: unknown; password?: unknown; next?: unknown };
   const address = email.normalize(body.email);
   if (!email.isValid(address)) return res.status(400).json(say('email-required', undefined, { field: 'email' }));
   const problem = password.problem(body.password);
@@ -103,7 +104,7 @@ guestRouter.post('/claim', limits.signUp, jwtAuth, express.json(), async (req, r
     if (!user) return res.status(403).json(say('not-a-trial'));
     session.start(res, user, 7, session.wantsKept(req));
     res.status(200).json({ email: user.email });
-    emailLinks.sendVerification(user);
+    emailLinks.sendVerification(user, body.next);
     return undefined;
   } catch (err) {
     // The unique index catches a sign-up for the same email racing this one.

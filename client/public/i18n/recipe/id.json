@@ -364,7 +364,7 @@
     "intro": "Sebagaimana diberikan catatan setiap bahan; milik pustaka standar berasal dari lembar data keselamatan pemasok.",
     "line": "<b>{names}:</b> {hazards}",
     "unknown": "{count, plural, other {Tidak ada bahaya yang diberikan untuk {list}: lihat lembar data keselamatan yang menyertainya.}}",
-    "safety": "Bahan glasir kering menghasilkan debu: jauhkan debu itu dari paru-paru Anda, bahkan debu dari bahan yang tidak digolongkan berbahaya: lihat <mixing>Mencampur dengan aman dan ventilasi</mixing>, dan <home>Jangan meracuni keluarga Anda</home> jika ada anak atau hewan peliharaan di sekitar. Jika lembar data keselamatan sebuah bahan menyatakan lebih banyak, ikuti lembar itu."
+    "safety": "Bahan glasir kering menghasilkan debu, dan Anda harus menjauhkan debu itu dari paru-paru Anda, bahkan debu dari bahan yang tidak digolongkan berbahaya. Lihat <mixing>Mencampur dengan aman dan ventilasi</mixing>. Jika ada anak atau hewan peliharaan di sekitar, lihat juga <home>Jangan meracuni keluarga Anda</home>. Jika lembar data keselamatan sebuah bahan menyatakan lebih banyak, ikuti lembar itu."
   },
   "compare": {
     "heading": "Bandingkan dua resep",
@@ -533,7 +533,10 @@
     "suppliesShare": "{percent}% dari {oxide}",
     "suppliesLittle": "sedikit dari glasir",
     "changed": "{name} {from} → {to}",
-    "added": "{name} {amount}, baru"
+    "added": "{name} {amount}, baru",
+    "why": {
+      "rawClay": "tanah liat mentah menyusut saat glasir mengering, dan dalam jumlah banyak tanah liat itu dapat retak pada benda dan menggumpal di tungku; kaolin terkalsinasi dapat melengkapi sisanya"
+    }
   },
   "shelf": {
     "empty": "Tidak ada bahan yang Anda punya untuk dicocokkan."
@@ -571,7 +574,8 @@
     "bands": {
       "low": "Suhu rendah, kerucut 06–02",
       "mid": "Suhu menengah, kerucut 4–6",
-      "high": "Suhu tinggi, kerucut 9–11"
+      "high": "Suhu tinggi, kerucut 9–11",
+      "top": "Suhu sangat tinggi, kerucut 12 ke atas"
     },
     "shownFor": "Jika pembakaran belum dipilih, angka yang ditampilkan adalah untuk: {band}. Pembakaran disimpan bersama resep.",
     "cone": "Ini adalah angka set untuk kerucut {cone}.",
@@ -591,6 +595,7 @@
     "notInSet": "Tidak ada rentang dalam set ini untuk {oxides}.",
     "checksOnly": "Set ini hanya memeriksa {oxides}.",
     "notApply": "{name} tidak memiliki angka untuk pembakaran ini ({band}), jadi tidak diperiksa: angka untuk pembakaran lain akan menyesatkan.",
+    "topNote": "Batas glasir terbitan yang kami temukan berhenti pada kerucut 10, dan Glazecalc membacanya tidak lebih jauh dari kerucut 11, jadi pembakaran dari kerucut 12 ke atas tidak diperiksa terhadap batas. Ubin uji Anda yang menentukan.",
     "guidance": "Ini pedoman, bukan lulus atau gagal: glasir di luarnya dapat baik-baik saja, dan yang di dalamnya masih dapat retak halus, mengalami pelindian, atau gagal. Ujilah.",
     "source": "Sumber:",
     "saveFailed": "Pilihan set batas Anda tidak dapat disimpan ke akun Anda, sehingga set batas sebelumnya masih yang dipakai.",
@@ -628,7 +633,8 @@
       "ash": "Glazecalc tidak dapat membandingkan kimia glasir ini dengan pembakarannya: glasir ini mengandung abu, yang susunannya terlalu beragam untuk angka terbitan yang dipakai pemeriksaan ini.",
       "noTemperature": "Glazecalc tidak dapat membandingkan kimia glasir ini dengan {scale, select, band {{band, select, low {suhu rendah} mid {suhu menengah} other {suhu tinggi}}} sk {SK {cone}} temperature {{cone} °C} other {kerucut {cone}}}: tidak ada suhu terukur untuk kerucut itu.",
       "between": "Glazecalc tidak dapat membandingkan kimia glasir ini dengan {scale, select, band {{band, select, low {suhu rendah} mid {suhu menengah} other {suhu tinggi}}} sk {SK {cone}} temperature {{cone} °C} other {kerucut {cone}}}: angka terbitan yang dipakai pemeriksaan ini untuk suhu rendah serta untuk suhu menengah dan tinggi, bukan kerucut di antaranya (01 sampai 3).",
-      "belowChart": "Glazecalc tidak dapat membandingkan kimia glasir ini dengan {scale, select, band {{band, select, low {suhu rendah} mid {suhu menengah} other {suhu tinggi}}} sk {SK {cone}} temperature {{cone} °C} other {kerucut {cone}}}: aturan boron Katz untuk kerucut 06 sampai kerucut 10, dan pembakaran itu lebih dingin."
+      "belowChart": "Glazecalc tidak dapat membandingkan kimia glasir ini dengan {scale, select, band {{band, select, low {suhu rendah} mid {suhu menengah} other {suhu tinggi}}} sk {SK {cone}} temperature {{cone} °C} other {kerucut {cone}}}: aturan boron Katz untuk kerucut 06 sampai kerucut 10, dan pembakaran itu lebih dingin.",
+      "aboveChart": "Glazecalc tidak dapat membandingkan kimia glasir ini dengan {scale, select, band {{band, select, top {suhu sangat tinggi} other {suhu tinggi}}} sk {SK {cone}} temperature {{cone} °C} other {kerucut {cone}}}: aturan boron Katz untuk kerucut 06 sampai kerucut 10, angka silika dan alumina Hesselberth & Roy berhenti pada kerucut 10, dan pembakaran itu lebih panas."
     }
   },
   "stull": {
@@ -979,7 +985,7 @@
     "approxTemperature": "≈ {temperature} ({basis}; perkiraan)",
     "approxCone": "≈ {cone} ({basis}; perkiraan)",
     "basis": {
-      "orton60": "kerucut besar Orton pada 60 °C per jam",
+      "orton150": "tabel Orton yang lebih lama untuk kerucut besar pada 150 °C per jam",
       "kyoto": "diukur pada 100 °C per jam oleh lembaga kota Kyoto",
       "stated": "sesuai isian"
     },

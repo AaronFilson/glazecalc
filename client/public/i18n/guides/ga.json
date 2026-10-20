@@ -52,6 +52,7 @@
     "emergency": "Éigeandáil: gan aithne, gan anáil, taom",
     "poisonAdvice": "{who, select, children {Comhairle faoi nimh: {name} (do pháistí amháin)} other {Comhairle faoi nimh: {name}}}",
     "or": "nó {number}",
+    "orCall": "nó <link>{number}</link>",
     "online": "Ar líne: <link>{name}</link>.",
     "poisonAdviceNone": "Comhairle faoi nimh",
     "noLine": "Níorbh fhéidir linn líne phoiblí chomhairle faoi nimh a dheimhniú anseo. Glaoigh ar do dhochtúir, nó ar an uimhir éigeandála más práinneach é.",
@@ -61,8 +62,7 @@
     "vet": "Glaoigh ar do thréidlia.",
     "checkedOn": "Seiceáilte:",
     "choosePrompt": "Roghnaigh do thír chun a fheiceáil cé air a nglaofar ansin.",
-    "ministry": "Leathanach na haireachta sláinte: <link>{name}</link>.",
-    "reported": "Liostaíonn leathanaigh oifigiúla an rialtais 113, 114 agus 115, ach ní deir siad cad chuige a bhfuil gach ceann acu; leanann na róil a thaispeántar Imlitir 22/2014/TT-BTTTT, mar a luaitear í ar leathanaigh thánaisteacha."
+    "ministry": "Leathanach na haireachta sláinte: <link>{name}</link>."
   },
   "density": {
     "sg": "sainmheáchan {value}",
@@ -112,6 +112,10 @@
     "bandFromTo": "Deannach ina bhfuil {from}% go {to}% saorshilice (SiO₂)",
     "bandOverTo": "Deannach ina bhfuil níos mó ná {from}% agus suas le {to}% saorshilice",
     "bandAbove": "Deannach ina bhfuil níos mó ná {from}% saorshilice",
+    "untilDate": "Go dtí {date}",
+    "fromDate": "Ó {date} ar aghaidh",
+    "beforeFormula": "Teorainn do dheannach inanálaithe, áit arb é Q an tsilice chriostalta atá ann, i %",
+    "beforeAll": "Do dheannach atá ina shilice chriostalta ar fad",
     "recommended": "Molta ag {abbr}",
     "value": "{value} mg/m³",
     "kind": {
@@ -122,6 +126,7 @@
     },
     "setBy": "Leagtha síos sa dlí seo: <link>{law}</link>.",
     "from": "Baineann sé le {date} ar aghaidh.",
+    "beforeSetBy": "Go dtí sin, leagtar an teorainn síos sa dlí seo: <link>{law}</link>.",
     "lowerThanEu": "Níos ísle ná teorainnluach ceangailteach an Aontais Eorpaigh, {value} mg/m³.",
     "sameAsEu": "Is ionann é agus teorainnluach ceangailteach an Aontais Eorpaigh.",
     "recommendedBy": "Molann {abbr} ({by}) an luach seo sa doiciméad <link>{title}</link>. Ní dlí é.",
@@ -184,7 +189,13 @@
       "vnMedium": "Píosaí doimhne chun bia a choinneáil, ó 1100 mL go dtí faoi bhun 3000 mL",
       "vnStorage": "Píosaí doimhne chun bia a choinneáil, 3000 mL nó níos mó",
       "vnCooking": "Píosaí doimhne chun bia a chócaráil",
-      "vnCups": "Cupáin agus babhlaí beaga"
+      "vnCups": "Cupáin agus babhlaí beaga",
+      "cnFlat": "Earraí cothroma, 25 mm ar doimhne nó níos lú",
+      "cnSmall": "Earraí tolla beaga, faoi 1.1 L, seachas cupáin",
+      "cnLarge": "Earraí tolla móra, ó 1.1 L go dtí faoi bhun 3 L",
+      "cnStorage": "Prócaí stórála, 3 L nó níos mó",
+      "cnCups": "Cupáin, d’uisce nó do dheochanna",
+      "cnCooking": "Gréithe cócaireachta, chun bia a théamh"
     },
     "judged": {
       "average": "meán 6 phíosa",
@@ -198,6 +209,8 @@
     "atMost": "Éiríonn le píosa sa tástáil mura scaoileann sé níos mó ná an teorainn: deir an dlí “ar a mhéad”.",
     "ppm": "Ciallaíonn ppm anseo milleagraim in aghaidh an lítir den tuaslagán tástála (mg/L).",
     "unknown": "Níor dheimhníomar na rialacha fós sa tír seo: {region}.",
+    "none": "{region}: níl aon dlí ann a leagann síos teorainneacha don luaidhe agus don chaidmiam a fhéadfaidh píosa bácáilte a scaoileadh (seiceáilte {date}).",
+    "noneSource": "Foinse: <link>{law}</link>.",
     "choosePrompt": "Roghnaigh do thír chun a rialacha a fheiceáil."
   },
   "equivalents": {

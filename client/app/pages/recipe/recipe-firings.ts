@@ -8,7 +8,7 @@ import { errorMessage } from '../../core/error-message';
 import { FiringLinksService } from '../../core/firing-links.service';
 import { Firing, FiringLink } from '../../core/models';
 import { LocaleService } from '../../core/locale.service';
-import { DatePipe } from '../../shared/format-pipes';
+import { DatePipe, IsolatedPipe } from '../../shared/format-pipes';
 import { formatLocale, listOf, typedDecimalMark } from '../../shared/format';
 import { coneText } from './firing-text';
 
@@ -28,7 +28,7 @@ const RESULT_MAX = 500;
 
 @Component({
   selector: 'gc-recipe-firings',
-  imports: [DatePipe, RouterLink, TranslocoDirective],
+  imports: [DatePipe, IsolatedPipe, RouterLink, TranslocoDirective],
   template: `<ng-container *transloco="let t">
     <section class="recipe-firings" aria-labelledby="firings-heading">
       <h3 id="firings-heading">{{ t('recipe.firings.heading') }}</h3>
@@ -83,7 +83,7 @@ const RESULT_MAX = 500;
           <label for="firing-link-choice" class="visually-hidden">{{ t('recipe.firings.choose') }}</label>
           <select id="firing-link-choice" class="form-select form-select-sm" #choice>
             @for (log of unlinked(); track log._id) {
-              <option [value]="log._id">{{ log.title }}{{ log.date ? ' · ' + log.date : '' }}</option>
+              <option [value]="log._id">{{ log.title | gcIsolated }}{{ log.date ? ' · ' + log.date : '' }}</option>
             }
           </select>
           <button id="firing-link" type="button" class="btn btn-light border btn-sm" (click)="link(choice.value)">

@@ -58,7 +58,8 @@ export const STORED: ReadonlyArray<{ names: string[]; kind: string; key: string 
       'recipeHelp',
       'limitSet',
       'currency',
-      'calendar'
+      'calendar',
+      'digits'
     ],
     kind: marker('site.privacy.storageLocal'),
     key: 'settings'

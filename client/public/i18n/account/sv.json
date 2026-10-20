@@ -270,6 +270,22 @@
         "saved": "Sparat: datum visas i japanska eror."
       }
     },
+    "digits": {
+      "legend": "Siffror",
+      "help": "Siffrorna som tal visas med. Vissa språk har egna, till exempel arabiska, bengali och hindi, och platsen avgör vilka som är vanliga. Tal kan skrivas in med båda.",
+      "auto": {
+        "label": "Efter lokal praxis",
+        "saved": "Sparat: siffror efter lokal praxis."
+      },
+      "western": {
+        "label": "Västerländska siffror, 0–9",
+        "saved": "Sparat: tal visas med siffrorna 0–9."
+      },
+      "native": {
+        "label": "Språkets egna siffror, där det har sådana",
+        "saved": "Sparat: tal visas med språkets egna siffror, där det har sådana."
+      }
+    },
     "decimalMark": {
       "legend": "Inmatning av mängder",
       "either": {

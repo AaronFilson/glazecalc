@@ -82,6 +82,31 @@
     "languages": "Nyelvek",
     "language": "Nyelv:"
   },
+  "picker": {
+    "results": "{count, plural, one {# találat} other {# találat}}",
+    "languages": {
+      "search": "Nyelvek keresése",
+      "showAll": "Az összes nyelv megjelenítése",
+      "noMatch": "Nincs egyező nyelv"
+    },
+    "regions": {
+      "search": "Országok és régiók keresése",
+      "showAll": "Az összes ország és régió megjelenítése",
+      "noMatch": "Nincs egyező ország vagy régió"
+    },
+    "groups": {
+      "africa": "Afrika",
+      "americas": "Amerika",
+      "asia": "Ázsia",
+      "eastAsia": "Kelet-Ázsia",
+      "europe": "Európa",
+      "middleEastNorthAfrica": "Közel-Kelet és Észak-Afrika",
+      "oceania": "Óceánia",
+      "southAsia": "Dél-Ázsia",
+      "southeastAsia": "Délkelet-Ázsia",
+      "other": "Egyéb"
+    }
+  },
   "numbers": {
     "notANumber": "Adjon meg egy számot, például {example}.",
     "notANumberComma": "Adjon meg egy számot, például {example}, tizedesvesszővel.",

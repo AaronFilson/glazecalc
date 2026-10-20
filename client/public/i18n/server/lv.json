@@ -100,6 +100,7 @@
   "limitSet-choices": "Izvēlieties hesselberth-roy vai glazecalc.",
   "currency-choices": "Izvēlieties vienu no valūtām sarakstā vai atstājiet atkarībā no sava reģiona.",
   "calendar-choices": "Datumus var rādīt Gregora kalendārā (gregory), Taizemes budistu ērā (buddhist) vai Japānas ērās (japanese).",
+  "digits-choices": "Ciparus var rādīt kā ierasts jūsu atrašanās vietā (auto), kā 0–9 (western) vai valodas pašas ciparos (native).",
   "shelf-invalid": "Krājumi ir izejvielu saraksts (ne vairāk kā {most}).",
   "shelf-full": "Krājumos var būt ne vairāk kā {most} izejvielas. Nekas netika mainīts.",
   "shelf-material-unknown": "Šīs izejvielas nav ne jūsu izejvielās, ne Glazecalc bibliotēkā.",

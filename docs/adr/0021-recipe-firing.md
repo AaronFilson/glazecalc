@@ -47,7 +47,9 @@ panel. Recipes so far say their firing only in the notes, if at all.
   ticks use the ordinal. The picker offers Orton 022–13 first, then half cones (1½–12½), then 14–42
   (rare in pottery, last but there); SK offers its chart.
 - **Conversions are display only, labelled approximate, and say what they rest on.** Orton cones
-  to °C by Orton's large-cone chart at 60 °C an hour (022–14; none above 14; a half cone halfway).
+  to °C by Orton's large-cone chart at 60 °C an hour (022–14; none above 14; a half cone halfway;
+  the amendment of 2026-10-20 found these figures are the older chart's at 150 °C an hour, and
+  takes the chart to cone 15).
   SK to °C **only** by Kyoto's measured bends for SK 8 and 10 (1198 °C and 1232 °C, at 100 °C an
   hour), labelled approximate; every other SK cone shows no temperature at all (owner's decision,
   review 2026-10-17); Kyoto measured SK 7 to 14 in the same table (see Context), but only these two
@@ -162,6 +164,66 @@ panel. Recipes so far say their firing only in the notes, if at all.
   No photos yet. The card has a place for a one-line "cone fit" note (chemistry against the
   cone), filled by later work.
 
+- **Higher cones (amended 2026-10-20; owner's decision, round 6: "go higher, some people need
+  cone 14–16 for porcelain").** A staging test found the MCP tools knew Orton cones 06 to 6 only
+  (they read the lead-replacement chart in `lib/chemistry/lead.js`). Everything now takes every
+  Orton cone to 42 and every SK large cone to SK 20, and says plainly where no figure or limit
+  reaches.
+  - **What Orton publishes** (read 2026-10-19). Orton's own chart, "Temperature Equivalents for
+    Orton Pyrometric Cones (°C), Cone Numbers 022-14" (©2016, on ortonceramic.com), gives
+    self-supporting cones at 15, 60 and 150 °C an hour and large cones at 60 and 150, over the
+    last 100 °C. The chart on Orton's site today stops at cone 12 with the same figures, and its
+    pages for each cone give 13 and 14 as the 2016 chart does. Cone 14: self-supporting 1351,
+    1365 and 1384 °C; large 1388 °C at 60 °C an hour and 1366 °C at 150 (large 13 and 14 are
+    marked "different compositions and different temperature equivalents", and 14 is printed
+    hotter at the slower rate). Orton sells large cones 15 to 21, 23 and 26 to 42, self-supporting
+    ones to 32 (with 13½, 14½ and 15½) and PCE cones for refractories, but publishes no temperature for
+    any cone above 14: those charts are "available (by request)". So cones 15 and 16 exist as
+    large and self-supporting cones; only one figure for them was found, below.
+  - **What Glazecalc's figures are.** The chart this record called "large cones at 60 °C an hour"
+    is, from cone 06 to 14, the large-cone column at **150 °C an hour** of Orton's older chart
+    "as determined at the National Bureau of Standards", as kiln makers reprint it (W P Dawson
+    Inc ©2000, hosted by L&L Kiln; FireRight Controls ©1994; the two agree figure for figure),
+    and from 022 to 07 Orton's current self-supporting column at 60 °C an hour. Katz's cone 10,
+    1305 °C (ADR 0022), is the older chart's figure. The figures from cone 06 up are kept, so no
+    band, check or cone note changes; the label now says what they are ("Orton's older chart for
+    large cones at 150 °C an hour"), cones 022 to 07 take the same column (600 to 984 °C, all low
+    fire), and the column goes on to **cone 15, 1431 °C**, the only figure above 14 any Orton
+    chart we found prints (at 150 °C an hour, large cones only). Cones from 16 up, and 15½, have no
+    figure anywhere: they are shown with none and convert to nothing. Orton's current figures
+    sit beside them as data (`ORTON.published` in `lib/cones/index.js`, given by the MCP cone
+    tool and `glazecalc://cones`); they differ from the older column by up to 19 °C at 150 °C an
+    hour. Both are frozen in `server/test/cones_tests.ts`.
+  - **The picker** adds cone 21 (Orton sells it) and the half cones 13½, 14½ and 15½ (Orton sells
+    them self-supporting); 14½ is shown halfway between 14 and 15, as every half cone is.
+  - **A fourth band, `top`: cone 12 and up, 1320 °C and hotter, SK 14 and up.** The published
+    limits we found stop at cone 10: Hesselberth & Roy's cone 10 column, and the UK traditional
+    (cone 8–10) and Green & Cooper (cone 10) sets as Digitalfire gives them; we found none for
+    hard-paste porcelain at cone 12–16. Glazecalc reads cone 6's figures one cone past it (to
+    cone 7) and cone 10's one cone past it, to cone 11, which the band's name already said
+    ("High fire, cone 9–11"). Past that, checking a cone 14 glaze against cone 10 figures would be
+    extrapolation dressed as a finding, so both limit sets have no figures in the `top` band and
+    the panel says so ("has no figures for this firing ... figures for another firing would
+    mislead", and that the published limits stop at cone 10). The checks that do not hang on the
+    firing (clay, expansion, small amounts, materials) still run. SK 13 is near Orton 11 and SK 14
+    near Orton 12 by Kyoto's columns, so SK 14 up is `top`. The band can be chosen by hand too;
+    `recipe.firing` and the MCP `create_recipe` and `update_recipe` band take `top`.
+  - **The MCP tools read a cone as the recipe page does.** `check_limits`, `get_recipe` and
+    `blend_recipes` take an Orton cone 022–42 (a half cone as "5.5" or "5½") or an SK cone
+    SK 022–20, and a temperature to 1600 °C (2912 °F), as a recipe's firing does. A cone is checked
+    in its band (`coneBand`), not by a temperature converted from it: before, SK 8 was checked by
+    its JIS 1250 °C as high fire by Hesselberth & Roy's set, though the recipe page has it as mid
+    fire. Its temperature is given only where Glazecalc shows one (Orton's chart to 15, Kyoto's
+    SK 8 and 10). In the `top` band the answer carries `limitsNote`. `convert_cone_temperature` gives Glazecalc's figure, Orton's
+    current figures beside it where Orton publishes them, and for a cone with none says so instead
+    of failing; it no longer claims SK cones to 42 (the large cones end at SK 20; SK 26 to 42 are
+    the small cones for refractories, 2種).
+  - **Open for the owner.** Orton's current chart is the primary source; the older chart is
+    reprinted, not hosted by Orton. Moving to Orton's current self-supporting column at 60 °C an
+    hour (the one the guides use) would change mid-fire figures (cone 10 1305 → 1285 °C, cone 8
+    1263 → 1249 °C) and so which band cones 1, 2 and 8 fall in under today's edges, and Katz's
+    cone 10 anchor: a decision of its own, not made here.
+
 ## Consequences
 
 - A glaze's firing can be searched, filtered (the saved list and `list_recipes` match a cone
@@ -169,7 +231,9 @@ panel. Recipes so far say their firing only in the notes, if at all.
   without reading the notes.
 - The band edges and SK table are judgements, documented here and tested; changing them changes
   which limits a recipe is checked against, never the stored cone.
-- The Orton chart above 14 and SK cones other than 8, 10 and 12 have no measured cross-scale
-  equivalent: the page shows nothing rather than a guess or a nominal figure.
+- The Orton chart above 15 (14 before 2026-10-20) and SK cones other than 8, 10 and 12 have no
+  measured cross-scale equivalent: the page shows nothing rather than a guess or a nominal figure.
+- From cone 12 up no limits are checked by band, in any set, until a published limit set for
+  those firings is found and added.
 - Not done yet: chemistry-against-cone warnings ("stated cone 6, fluxes look like cone 10") and test
   plans (the report's phases 2 and 3); result cards are done (above), without photos.

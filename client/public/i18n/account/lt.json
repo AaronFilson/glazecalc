@@ -270,6 +270,22 @@
         "saved": "Įrašyta: datos rodomos pagal Japonijos eras."
       }
     },
+    "digits": {
+      "legend": "Skaitmenys",
+      "help": "Skaitmenys, kuriais rodomi skaičiai. Kai kurios kalbos turi savo skaitmenis, pavyzdžiui, arabų, bengalų ir hindi, o tai, kurie iš jų įprasti, lemia jūsų regionas. Skaičius galite įvesti bet kuriais.",
+      "auto": {
+        "label": "Kaip įprasta jūsų regione",
+        "saved": "Įrašyta: skaitmenys, kaip įprasta jūsų regione."
+      },
+      "western": {
+        "label": "Vakarietiški skaitmenys, 0–9",
+        "saved": "Įrašyta: skaičiai rodomi skaitmenimis 0–9."
+      },
+      "native": {
+        "label": "Kalbos savi skaitmenys, jei kalba jų turi",
+        "saved": "Įrašyta: skaičiai rodomi kalbos savais skaitmenimis, jei kalba jų turi."
+      }
+    },
     "decimalMark": {
       "legend": "Kiekių įvedimas",
       "either": {

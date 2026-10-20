@@ -100,6 +100,7 @@
   "limitSet-choices": "Alegeți hesselberth-roy sau glazecalc.",
   "currency-choices": "Alegeți una dintre monedele din listă sau lăsați să se aleagă după regiunea dumneavoastră.",
   "calendar-choices": "Datele pot fi afișate în calendarul gregorian (gregory), în era budistă thailandeză (buddhist) sau în erele japoneze (japanese).",
+  "digits-choices": "Cifrele pot fi afișate ca de obicei acolo unde vă aflați (auto), ca 0–9 (western) sau cu cifrele proprii ale limbii (native).",
   "shelf-invalid": "Stocul este o listă de cel mult {most, plural, one {# materie primă} few {# materii prime} other {# de materii prime}}.",
   "shelf-full": "Stocul poate cuprinde cel mult {most, plural, one {# materie primă} few {# materii prime} other {# de materii prime}}. Nu s-a modificat nimic.",
   "shelf-material-unknown": "Această materie primă nu se află printre materiile dumneavoastră prime sau în biblioteca Glazecalc.",

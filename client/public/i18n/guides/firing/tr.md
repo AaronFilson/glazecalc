@@ -81,7 +81,7 @@ Tablo, kendiliğinden ayaklı 6 numaralı piramidi {{2232 °F; 1222 °C}} olarak
 
 ## Piramit tablosu {#cone-chart}
 
-Bu değerler, Orton’un kendiliğinden ayaklı piramitler{{en: cones}} için piramit tablosundan (©2001) alınmıştır. Fırınınızın son {{180 °F; 100 °C}} aralığında ne kadar hızlı ısındığına uyan sütunu seçin. Orton’un pratik kuralı şudur: hızlı bir pişirim için {{270 °F/h; 150 °C/h}} sütunu, orta hızda bir pişirim için {{108 °F/h; 60 °C/h}} sütunu ve yavaş bir pişirim için {{27 °F/h; 15 °C/h}} sütunu. Bir hızı hesaplamak için çıkılan sıcaklığı, bunun sürdüğü saate bölün: 3 saatte {{900 °F; 500 °C}} çıkan bir fırın yaklaşık {{300 °F/h; 167 °C/h}} hızla ısınıyordur.
+Bu değerler, Orton’un kendiliğinden ayaklı piramitler{{en: cones}} için piramit tablosundan (©2001) alınmıştır; 11–14 numaralı piramitler ise Orton’un bugün yayımladığı tablolardan alınmıştır: bu tablolar örtüştükleri yerde aynı değerleri verir ve 13 ile 14 numaralı piramitleri yalnızca °C olarak verir (buradaki °F değerleri dönüştürülmüştür). Fırınınızın son {{180 °F; 100 °C}} aralığında ne kadar hızlı ısındığına uyan sütunu seçin. Orton’un pratik kuralı şudur: hızlı bir pişirim için {{270 °F/h; 150 °C/h}} sütunu, orta hızda bir pişirim için {{108 °F/h; 60 °C/h}} sütunu ve yavaş bir pişirim için {{27 °F/h; 15 °C/h}} sütunu. Bir hızı hesaplamak için çıkılan sıcaklığı, bunun sürdüğü saate bölün: 3 saatte {{900 °F; 500 °C}} çıkan bir fırın yaklaşık {{300 °F/h; 167 °C/h}} hızla ısınıyordur.
 
 Table: Orton kendiliğinden ayaklı piramitleri: son {{180 °F; 100 °C}} aralığındaki ısıtma hızına göre her birinin eğildiği sıcaklık
 Label: Orton piramit tablosu
@@ -108,8 +108,14 @@ Label: Orton piramit tablosu
 | 8       |        {{2212 °F; 1211 °C}} |        {{2280 °F; 1249 °C}} |          {{2320 °F; 1271 °C}} |
 | 9       |        {{2235 °F; 1224 °C}} |        {{2300 °F; 1260 °C}} |          {{2336 °F; 1280 °C}} |
 | 10      |        {{2284 °F; 1251 °C}} |        {{2345 °F; 1285 °C}} |          {{2381 °F; 1305 °C}} |
+| 11      |        {{2322 °F; 1272 °C}} |        {{2361 °F; 1294 °C}} |          {{2399 °F; 1315 °C}} |
+| 12      |        {{2345 °F; 1285 °C}} |        {{2383 °F; 1306 °C}} |          {{2419 °F; 1326 °C}} |
+| 13      |        {{2390 °F; 1310 °C}} |        {{2428 °F; 1331 °C}} |          {{2458 °F; 1348 °C}} |
+| 14      |        {{2464 °F; 1351 °C}} |        {{2489 °F; 1365 °C}} |          {{2523 °F; 1384 °C}} |
 
 Tire işareti, burada aktarılmayan bir değeri gösterir; o değer için Orton’un tam tablosuna bakın.
+
+Orton yüksek sıcaklık işleri için 42 numaraya kadar piramit üretir, ancak sıcaklıkları yalnızca 14 numaralı piramide kadar yayımlar; daha sıcak piramitler için tabloları “(istek üzerine) temin edilebilir”. Fırın üreticilerinin yeniden bastığı daha eski bir Orton tablosu, büyük 15 numaralı piramidi {{270 °F/h; 150 °C/h}} hızda {{2608 °F; 1431 °C}} olarak verir; 16 numaralı veya daha sıcak piramitler için yayımlanmış bir değer bulamadık. 14 numaralı piramidin ötesinde gözlem piramitleri yerleştirin ve onlara göre hareket edin; fırınınızın üreticisinin belirttiği en yüksek sıcaklığın o dereceye ulaştığını da kontrol edin.
 
 Büyük piramitlerin değerleri bunlardan yalnızca birkaç derece farklıdır: {{108 °F/h; 60 °C/h}} hızda büyük bir 6 numaralı piramit {{2228 °F; 1220 °C}} sıcaklıkta eğilir. Kiln sitter’da kullanılan türden küçük piramitler yalnızca {{540 °F/h; 300 °C/h}} hız için listelenir; bu yüzden tablo küçük bir 6 numaralı piramidi {{2291 °F; 1255 °C}} olarak verir. Bu, kiln sitter’ın fırını kapattığı sıcaklık değildir. Kiln sitter piramidinin işi raftaki piramide uymaktır ve son sözü raftaki piramit söyler.
 
@@ -298,6 +304,8 @@ Numaralar burada en soğuğu olan SK 022’den SK 20’ye kadar gider. SK 015 il
 
 Her büyük piramidi bir altlığa ya da bir parça çamura, eğilme yüzüne doğru eğik olarak yerleştirin. Her piramitte olduğu gibi yüksekliği ve eğimi pişirimden pişirime aynı tutun, çünkü ikisinden birindeki fark piramidin ne kadar eğileceğini değiştirir. Grubun (aşağıda) üç piramidini birlikte, fırının derinliklerine, yükün ortasına yakın bir yere yerleştirin: orada ürünün aldığı ısıyı alırlar, yine de onları bir gözetleme deliğinden görebilirsiniz; fırını kapatmadan önce üçünü de görebildiğinizi kontrol edin.
 
+SK piramitlerinin ne kadar derine veya hangi açıyla yerleştirileceğine dair bir üretici ya da satıcı talimatı bulamadık. En yakını, bir refrakter malzemenin ne kadar ısıya dayandığını ölçen Japon testi olan JIS R 2204 laboratuvar standardıdır: bu standart her SK piramidini, işaretli yüzü düz bir altlığa 80° açı yapacak ve ayağı altlığa yaklaşık 4 mm gömülecek şekilde yerleştirir. Bu, refrakterler için bir testtir, seramik pişirimi için bir kural değildir; ayrıca biz bunu standardın kendisinden değil, standardın bir aktarımından okuduk.
+
 ### Kılavuz, hedef ve koruma piramitleri
 
 Piramitler üçlü olarak satılır ve yerleştirilir: bir kılavuz piramit, hedefi gösteren bir hedef piramit ve bir koruma piramidi. Hedef piramit olarak reçetenizin ya da çamurunuzun belirttiği SK numarasını alın; kılavuz piramit olarak bir sonraki daha soğuk piramidi (tabloda bir satır yukarıdakini), koruma piramidi olarak da bir sonraki daha sıcak piramidi alın. Kılavuz piramit eğilmeye başladığında son yaklaşmıştır; koruma piramidi eğildiğinde pişirim fazla ileri gitmiştir.
@@ -366,6 +374,8 @@ Orton’un kendiliğinden ayaklı piramitleri, altlık ya da sehpa gerektirmedik
 
 - [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (SK tablosu, 14 Ekim 2026’da kontrol edildi)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
 - [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (yürürlükte, 20 Ekim 2023’te yeniden onaylandı)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
+- [JSA: JIS R 2204:1999, 耐火物及び耐火物原料の耐火度試験方法 (yürürlükte, 20 Ekim 2023’te yeniden onaylandı)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+2204:1999)
+- [kikakurui.com: JIS R 2204:1999’un bir aktarımı; piramitlerin yerleştirilmesi 5 a) maddesinde (19 Ekim 2026’da okundu)](https://kikakurui.com/r2/R2204-1999-01.html)
 - [Kyoto Municipal Institute of Industrial Technology and Culture: Kyoto piramitlerinden Orton piramitlerine geçerken dikkat edilecek noktalar](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
 
 :::
@@ -607,7 +617,7 @@ Odanın havalandırılması ve karbon monoksit dedektörleri için [Güvenli kar
 ### Fırın pişirirken
 
 - Gözetleme deliğinden yalnızca IR korumalı, koyuluk derecesi 3 olan kaynak gözlüğüyle bakın; güneş gözlüğü yeterli değildir. Skutt, düşmesinler diye tıpaları çevirerek yerlerine oturtmanızı önerir.
-- Fırını beklenen pişirim süresinin ötesinde gözetimsiz bırakmayın; kiln sitter arızaya karşı güvenli bir düzenek değildir.
+- Pişirim sürerken, özellikle beklenen bitiş saatine yakın, fırının yakınında kalın ve fırını kontrol edin; kiln sitter arızaya karşı güvenli bir düzenek değildir. Pişirimi yalnızca tüm pişirim boyunca evde ve uyanık bir yetişkin olacağı zamanlarda yapın.
 - Asla ahşap zemin ya da halı gibi yanabilecek bir şeyin üzerinde ya da yakınında pişirim yapmayın.
 - Kullanım kılavuzunuzdaki güvenlik mesafelerine uyun. Yayımlanmış değerler 12 inç (30 cm) ile 3 fit (91 cm) arasında değişir; kılavuz bir şey söylemiyorsa duvarlardan 18 inç (46 cm) ve yanabilecek her şeyden 3 fit (91 cm) uzaklık en güvenli seçimdir.
 - Kiln sitter ağırlığının düşebilmesi için çevresindeki boşluğu açık tutun.

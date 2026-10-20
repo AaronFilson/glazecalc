@@ -81,7 +81,7 @@ Tabulā pašstāvošam konusam 6 norādīts {{2232 °F; 1222 °C}}, bet tikai ta
 
 ## Konusu tabula {#cone-chart}
 
-Šie skaitļi ņemti no Ortona pašstāvošo konusu{{en: cones}} tabulas (©2001). Izvēlieties kolonnu, kas atbilst tam, cik ātri jūsu krāsns temperatūra kāpa pēdējo {{180 °F; 100 °C}} laikā. Orton iesaka vienkāršu likumu: ātrai apdedzināšanai kolonna {{270 °F/h; 150 °C/h}}, vidējai – {{108 °F/h; 60 °C/h}}, lēnai – {{27 °F/h; 15 °C/h}}. Lai aprēķinātu ātrumu, daliet temperatūras pieaugumu ar stundām, kas tam bija vajadzīgas: krāsns, kuras temperatūra 3 stundās kāpj par {{900 °F; 500 °C}}, sildās ar ātrumu apmēram {{300 °F/h; 167 °C/h}}.
+Šie skaitļi ņemti no Ortona pašstāvošo konusu{{en: cones}} tabulas (©2001); konusi no 11 līdz 14 ņemti no tabulām, ko Orton publicē tagad: tur, kur tās pārklājas, tajās ir tie paši skaitļi, un konusi 13 un 14 tajās doti tikai °C (to °F vērtības šeit ir pārrēķinātas). Izvēlieties kolonnu, kas atbilst tam, cik ātri jūsu krāsns temperatūra kāpa pēdējo {{180 °F; 100 °C}} laikā. Orton iesaka vienkāršu likumu: ātrai apdedzināšanai kolonna {{270 °F/h; 150 °C/h}}, vidējai – {{108 °F/h; 60 °C/h}}, lēnai – {{27 °F/h; 15 °C/h}}. Lai aprēķinātu ātrumu, daliet temperatūras pieaugumu ar stundām, kas tam bija vajadzīgas: krāsns, kuras temperatūra 3 stundās kāpj par {{900 °F; 500 °C}}, sildās ar ātrumu apmēram {{300 °F/h; 167 °C/h}}.
 
 Table: Ortona pašstāvošie konusi: temperatūra, kurā katrs saliecas, atkarībā no sildīšanas ātruma pēdējo {{180 °F; 100 °C}} laikā
 Label: Ortona konusu tabula
@@ -108,8 +108,14 @@ Label: Ortona konusu tabula
 | 8      |       {{2212 °F; 1211 °C}} |          {{2280 °F; 1249 °C}} |         {{2320 °F; 1271 °C}} |
 | 9      |       {{2235 °F; 1224 °C}} |          {{2300 °F; 1260 °C}} |         {{2336 °F; 1280 °C}} |
 | 10     |       {{2284 °F; 1251 °C}} |          {{2345 °F; 1285 °C}} |         {{2381 °F; 1305 °C}} |
+| 11     |       {{2322 °F; 1272 °C}} |          {{2361 °F; 1294 °C}} |         {{2399 °F; 1315 °C}} |
+| 12     |       {{2345 °F; 1285 °C}} |          {{2383 °F; 1306 °C}} |         {{2419 °F; 1326 °C}} |
+| 13     |       {{2390 °F; 1310 °C}} |          {{2428 °F; 1331 °C}} |         {{2458 °F; 1348 °C}} |
+| 14     |       {{2464 °F; 1351 °C}} |          {{2489 °F; 1365 °C}} |         {{2523 °F; 1384 °C}} |
 
 Domuzīme nozīmē, ka skaitlis šeit nav pārrakstīts; to atradīsiet pilnajā Ortona konusu tabulā.
+
+Orton ražo konusus līdz numuram 42 augstas temperatūras darbiem, bet temperatūras publicē tikai līdz konusam 14; karstākiem konusiem tā tabulas ir “pieejamas (pēc pieprasījuma)”. Vecākā Ortona tabulā, ko pārpublicē krāšņu ražotāji, lielajam konusam 15, sildot ar ātrumu {{270 °F/h; 150 °C/h}}, norādīts {{2608 °F; 1431 °C}}, un publicētu skaitli konusam 16 vai karstākiem neatradām. Ja apdedzināt karstāk par konusu 14, novietojiet kontrolkonusus un vadieties pēc tiem, kā arī pārbaudiet, vai ražotāja norādītā jūsu krāsns maksimālā temperatūra sasniedz tādu karstumu.
 
 Lielie konusi no šiem skaitļiem atšķiras tikai par dažiem grādiem: lielais konuss 6, sildot ar ātrumu {{108 °F/h; 60 °C/h}}, saliecas {{2228 °F; 1220 °C}} temperatūrā. Mazie konusi, ko liek Kiln-Sitter slēdzī, tabulā doti tikai ātrumam {{540 °F/h; 300 °C/h}}, tāpēc mazajam konusam 6 tajā norādīts {{2291 °F; 1255 °C}}. Tā nav temperatūra, kurā Kiln-Sitter izslēdz krāsni. Kiln-Sitter konusa uzdevums ir atbilst konusam uz plaukta, un galavārds pieder konusam uz plaukta.
 
@@ -298,6 +304,8 @@ Numuri šeit iet no SK 022, vēsākā, līdz SK 20. No SK 015 līdz SK 6 uzdruk�
 
 Iespraudiet katru lielo konusu plāksnītē vai māla pikā, sasvērtu uz tā liekšanās pusi. Tāpat kā ar jebkuru konusu, saglabājiet augstumu un slīpumu vienādu no apdedzināšanas uz apdedzināšanu, jo atšķirība jebkurā no tiem maina to, cik tālu konuss saliecas. Novietojiet trīs komplekta{{en: cone pack}} konusus (sk. tālāk) kopā, dziļi krāsnī tuvāk krāsns satura vidum, kur tie saņem to pašu siltumu, ko izstrādājumi, tomēr kur tos var redzēt caur skatlodziņu; pirms krāsns aizvēršanas pārbaudiet, vai redzat visus trīs.
 
+Neatradām ražotāja vai pārdevēja norādījumus par to, cik dziļi vai kādā leņķī novietot SK konusus. Tuvākais ir laboratorijas standarts JIS R 2204 – Japānas tests, kas nosaka, cik lielu karstumu iztur ugunsizturīgs materiāls: tajā katru SK konusu novieto ar marķēto skaldni 80° leņķī pret līdzenu pamatni un ar pamatu apmēram 4 mm dziļi tajā. Tas ir ugunsizturīgo materiālu tests, nevis noteikums keramikas apdedzināšanai, un mēs to izlasījām standarta pārrakstījumā, nevis pašā standartā.
+
 ### Brīdinājuma, mērķa un drošības konuss
 
 Konusus pārdod un novieto pa trim: brīdinājuma konuss, mērķa konuss, kas atbilst mērķim, un drošības konuss. Par mērķa konusu ņemiet SK numuru, ko nosauc jūsu recepte vai māls, par brīdinājuma konusu – nākamo vēsāko konusu (vienu rindu augstāk tabulā), bet par drošības konusu – nākamo karstāko. Kad brīdinājuma konuss sāk liekties, beigas ir tuvu; kad saliecas drošības konuss, apdedzināšana ir aizgājusi par tālu.
@@ -366,6 +374,8 @@ Ortona pašstāvošos konusus Japānā pārdod ar nosaukumu 立つゼーゲル (
 
 - [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (SK konusu tabula, pārbaudīts 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
 - [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (spēkā, atkārtoti apstiprināts 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
+- [JSA: JIS R 2204:1999, 耐火物及び耐火物原料の耐火度試験方法 (spēkā, atkārtoti apstiprināts 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+2204:1999)
+- [kikakurui.com: JIS R 2204:1999 pārrakstījums, kurā konusu novietošanu nosaka 5. punkta a) apakšpunkts (lasīts 2026-10-19)](https://kikakurui.com/r2/R2204-1999-01.html)
 - [Kioto pašvaldības Rūpniecības tehnoloģiju un kultūras institūts: kam pievērst uzmanību, pārejot no Kioto konusiem uz Ortona konusiem](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
 
 :::
@@ -607,7 +617,7 @@ Par telpas vēdināšanu un tvana gāzes detektoriem skatiet ceļvežus [Droša 
 ### Krāsns darbības laikā
 
 - Caur skatlodziņu skatieties tikai ar metināšanas aizsargbrillēm ar aizsardzību pret infrasarkano (IS) starojumu un tumšuma pakāpi 3; saulesbrilles nav pietiekamas. Skutt iesaka aizbāžņus ievietot ar pagriezienu, lai tie neizkristu.
-- Neatstājiet krāsni bez uzraudzības ilgāk par paredzamo apdedzināšanas laiku; Kiln-Sitter nav drošības atslēdzējs, kas izslēgtu krāsni arī bojājuma gadījumā.
+- Uzturieties tuvumā un pārbaudiet krāsni apdedzināšanas laikā, īpaši tuvu paredzamajam beigu laikam; Kiln-Sitter nav drošības atslēdzējs, kas izslēgtu krāsni arī bojājuma gadījumā. Apdedziniet tikai tad, kad mājās būs kāds pieaugušais, kas būs nomodā visu apdedzināšanas laiku.
 - Nekad neapdedziniet uz kaut kā degoša vai tā tuvumā, piemēram, uz koka grīdas vai paklāja.
 - Ievērojiet lietošanas instrukcijā norādītos drošības attālumus. Publicētie skaitļi ir no 12 collām (30 cm) līdz 3 pēdām (91 cm); ja instrukcijā nekas nav teikts, drošākā izvēle ir 18 collu (46 cm) attālums no sienām un 3 pēdu (91 cm) attālums no visa, kas var degt.
 - Turiet brīvu vietu ap Kiln-Sitter atsvaru, lai tas varētu nokrist.

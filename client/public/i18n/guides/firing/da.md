@@ -81,7 +81,7 @@ Skemaet angiver en selvstående kegle 6 som {{2232 °F; 1222 °C}}, men kun når
 
 ## Kegletabellen {#cone-chart}
 
-Tallene er fra Ortons kegletabel (©2001) for selvstående kegler{{en: cones}}. Vælg den kolonne, der passer til, hvor hurtigt ovnen steg i de sidste {{180 °F; 100 °C}}. Ortons tommelfingerregel er kolonnen {{270 °F/h; 150 °C/h}} for en hurtig brænding, kolonnen {{108 °F/h; 60 °C/h}} for en middel og kolonnen {{27 °F/h; 15 °C/h}} for en langsom. Opvarmningshastigheden findes ved at dividere temperaturstigningen med det antal timer, den tog: En ovn, der stiger {{900 °F; 500 °C}} på 3 timer, varmer op med ca. {{300 °F/h; 167 °C/h}}.
+Tallene er fra Ortons kegletabel (©2001) for selvstående kegler{{en: cones}}; kegle 11 til 14 er fra de tabeller, Orton udgiver nu, som giver de samme tal, hvor de overlapper, og kegle 13 og 14 kun i °C (deres °F er her omregnet). Vælg den kolonne, der passer til, hvor hurtigt ovnen steg i de sidste {{180 °F; 100 °C}}. Ortons tommelfingerregel er kolonnen {{270 °F/h; 150 °C/h}} for en hurtig brænding, kolonnen {{108 °F/h; 60 °C/h}} for en middel og kolonnen {{27 °F/h; 15 °C/h}} for en langsom. Opvarmningshastigheden findes ved at dividere temperaturstigningen med det antal timer, den tog: En ovn, der stiger {{900 °F; 500 °C}} på 3 timer, varmer op med ca. {{300 °F/h; 167 °C/h}}.
 
 Table: Ortons selvstående kegler: den temperatur, hver kegle bøjer ved, efter opvarmningshastighed i de sidste {{180 °F; 100 °C}}
 Label: Ortons kegletabel
@@ -108,8 +108,14 @@ Label: Ortons kegletabel
 | 8     |          {{2212 °F; 1211 °C}} |          {{2280 °F; 1249 °C}} |           {{2320 °F; 1271 °C}} |
 | 9     |          {{2235 °F; 1224 °C}} |          {{2300 °F; 1260 °C}} |           {{2336 °F; 1280 °C}} |
 | 10    |          {{2284 °F; 1251 °C}} |          {{2345 °F; 1285 °C}} |           {{2381 °F; 1305 °C}} |
+| 11    |          {{2322 °F; 1272 °C}} |          {{2361 °F; 1294 °C}} |           {{2399 °F; 1315 °C}} |
+| 12    |          {{2345 °F; 1285 °C}} |          {{2383 °F; 1306 °C}} |           {{2419 °F; 1326 °C}} |
+| 13    |          {{2390 °F; 1310 °C}} |          {{2428 °F; 1331 °C}} |           {{2458 °F; 1348 °C}} |
+| 14    |          {{2464 °F; 1351 °C}} |          {{2489 °F; 1365 °C}} |           {{2523 °F; 1384 °C}} |
 
 En tankestreg står for et tal, der ikke er gengivet her; det findes i Ortons fulde tabel.
+
+Orton laver kegler op til 42 til højtemperaturarbejde, men offentliggør kun temperaturer op til kegle 14; for varmere kegler er tabellerne »tilgængelige (efter anmodning)«. En ældre Orton-tabel, sådan som ovnproducenter genoptrykker den, angiver en stor kegle 15 til {{2608 °F; 1431 °C}} ved {{270 °F/h; 150 °C/h}}, og vi har ikke fundet noget offentliggjort tal for kegle 16 eller derover. Over kegle 14: Sæt kontrolkegler, gå efter dem, og kontrollér, at producentens oplyste maksimumtemperatur for ovnen når så højt.
 
 Store kegler ligger inden for få grader af disse tal: En stor kegle 6 ved {{108 °F/h; 60 °C/h}} bøjer ved {{2228 °F; 1220 °C}}. Små kegler, den slags, der bruges i en Kiln-Sitter, er kun opgivet ved {{540 °F/h; 300 °C/h}}, så tabellen angiver en lille kegle 6 til {{2291 °F; 1255 °C}}. Det er ikke den temperatur, Kiln-Sitteren slukker ovnen ved. Keglen i Kiln-Sitteren har til opgave at svare til keglen på ovnpladen, og keglen på ovnpladen har det sidste ord.
 
@@ -298,6 +304,8 @@ Numrene går her fra SK 022, den koldeste, op til SK 20. Mellem SK 015 og SK 6 h
 
 Sæt hver stor kegle i en keglestander eller en klump ler, så den hælder mod sin bøjeside. Hold, som med enhver kegle, højden og hældningen ens fra brænding til brænding, fordi en forskel i den ene eller den anden ændrer, hvor langt den bøjer. Sæt de tre kegler i keglesættet{{en: cone pack}} (nedenfor) sammen, dybt inde i ovnen nær midten af ovnfyldet, hvor de får den varme, emnerne får, men hvor de stadig kan ses gennem et kighul; kontrollér, før ovnen lukkes, at alle tre kan ses.
 
+Vi har ikke fundet nogen anvisninger fra producenter eller forhandlere om, hvor dybt eller i hvilken vinkel SK-kegler skal sættes. Det nærmeste er en laboratoriestandard, JIS R 2204, Japans prøvning af, hvor meget varme et ildfast materiale tåler: Den sætter hver SK-kegle med den mærkede side i 80° mod en plan fod, som keglen står ca. 4 mm nede i. Det er en prøvning for ildfaste materialer, ikke en regel for brænding af keramik, og vi har læst den i en afskrift af standarden, ikke i selve standarden.
+
 ### Advarselskegle, målkegle og sikkerhedskegle
 
 Kegler sælges og sættes tre ad gangen: en advarselskegle, en målkegle ved målet og en sikkerhedskegle. Tag som målkegle det SK-nummer, som opskriften eller leret angiver, som advarselskegle den nærmeste køligere kegle (en række op i tabellen) og som sikkerhedskegle den nærmeste varmere. Når advarselskeglen begynder at bøje, er slutningen nær; når sikkerhedskeglen bøjer, er brændingen gået for langt.
@@ -366,6 +374,8 @@ Selvstående Ortonkegler sælges i Japan under navnet 立つゼーゲル (»stå
 
 - [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (SK-tabellen, tjekket 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
 - [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (gældende, bekræftet igen 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
+- [JSA: JIS R 2204:1999, 耐火物及び耐火物原料の耐火度試験方法 (gældende, bekræftet igen 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+2204:1999)
+- [kikakurui.com: en afskrift af JIS R 2204:1999, hvor punkt 5 a) fastlægger, hvordan keglerne sættes (læst 2026-10-19)](https://kikakurui.com/r2/R2204-1999-01.html)
 - [Kyoto Municipal Institute of Industrial Technology and Culture: hvad man skal være opmærksom på ved skiftet fra Kyoto-kegler til Ortonkegler](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
 
 :::
@@ -607,7 +617,7 @@ Om ventilation af rummet og om kuliltealarmer, se [Sikker blanding og ventilatio
 ### Mens ovnen brænder
 
 - Kig kun gennem et kighul med svejsebriller med IR-filter i beskyttelsestrin 3; solbriller er ikke nok. Skutt anbefaler at dreje propperne på plads, så de ikke falder ud.
-- Lad ikke ovnen være uden opsyn ud over den forventede brændingstid; en Kiln-Sitter er ingen fejlsikring.
+- Bliv i nærheden, og kontrollér ovnen, mens den brænder, især omkring det forventede sluttidspunkt; en Kiln-Sitter er ingen fejlsikring. Brænd kun, når en voksen er hjemme og vågen under hele brændingen.
 - Brænd aldrig på eller i nærheden af noget, der kan brænde, som et trægulv eller et tæppe.
 - Hold afstandene fra manualen. Offentliggjorte tal spænder fra 12 tommer (30 cm) til 3 fod (91 cm); hvor manualen tier, er 18 tommer (46 cm) fra vægge og 3 fod (91 cm) fra alt, der kan brænde, det sikreste valg.
 - Hold pladsen omkring Kiln-Sitterens lod fri, så det kan falde.

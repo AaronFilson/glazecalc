@@ -52,6 +52,7 @@
     "emergency": "Une urgence : perte de connaissance, absence de respiration, crise convulsive",
     "poisonAdvice": "{who, select, children {Intoxication : {name} (enfants uniquement)} other {Intoxication : {name}}}",
     "or": "ou {number}",
+    "orCall": "ou <link>{number}</link>",
     "online": "En ligne : <link>{name}</link>.",
     "poisonAdviceNone": "Intoxication",
     "noLine": "Nous n’avons pas pu confirmer l’existence d’une ligne antipoison publique ici. Appelez votre médecin, ou le numéro d’urgence si c’est urgent.",
@@ -61,8 +62,7 @@
     "vet": "Appelez votre vétérinaire.",
     "checkedOn": "Vérifié sur :",
     "choosePrompt": "Choisissez votre pays pour voir qui appeler.",
-    "ministry": "La page du ministère de la Santé : <link>{name}</link>.",
-    "reported": "Les pages officielles du gouvernement indiquent 113, 114 et 115, mais pas à quoi sert chaque numéro ; les rôles affichés suivent la circulaire 22/2014/TT-BTTTT, telle que la citent des pages secondaires."
+    "ministry": "La page du ministère de la Santé : <link>{name}</link>."
   },
   "density": {
     "sg": "SG {value}",
@@ -112,6 +112,10 @@
     "bandFromTo": "Poussière contenant de {from} % à {to} % de silice libre (SiO₂)",
     "bandOverTo": "Poussière contenant plus de {from} % et jusqu’à {to} % de silice libre",
     "bandAbove": "Poussière contenant plus de {from} % de silice libre",
+    "untilDate": "Jusqu’au {date}",
+    "fromDate": "À partir du {date}",
+    "beforeFormula": "Valeur limite pour la poussière alvéolaire, où Q est la teneur en silice cristalline de cette poussière, en %",
+    "beforeAll": "Pour des poussières entièrement composées de silice cristalline",
     "recommended": "Valeur recommandée par {abbr}",
     "value": "{value} mg/m³",
     "kind": {
@@ -122,6 +126,7 @@
     },
     "setBy": "Valeur fixée par <link>{law}</link>.",
     "from": "Elle s’applique à partir du {date}.",
+    "beforeSetBy": "Jusque-là, la valeur limite est fixée par <link>{law}</link>.",
     "lowerThanEu": "Inférieure à la valeur limite contraignante de l’UE, qui est de {value} mg/m³.",
     "sameAsEu": "Identique à la valeur limite contraignante de l’UE.",
     "recommendedBy": "{abbr} ({by}) recommande cette valeur dans <link>{title}</link>. Elle n’a pas force de loi.",
@@ -184,7 +189,13 @@
       "vnMedium": "Objets creux pour contenir des aliments, de 1100 mL à moins de 3000 mL",
       "vnStorage": "Objets creux pour contenir des aliments, 3000 mL ou plus",
       "vnCooking": "Objets creux pour la cuisson",
-      "vnCups": "Tasses et petits bols"
+      "vnCups": "Tasses et petits bols",
+      "cnFlat": "Objets plats, de 25 mm de profondeur au plus",
+      "cnSmall": "Petits objets creux, moins de 1,1 L, autres que les tasses",
+      "cnLarge": "Grands objets creux, de 1,1 L à moins de 3 L",
+      "cnStorage": "Récipients de conservation, 3 L ou plus",
+      "cnCups": "Tasses, pour l’eau ou les boissons",
+      "cnCooking": "Ustensiles de cuisson, pour chauffer des aliments"
     },
     "judged": {
       "average": "moyenne de 6 pièces",
@@ -198,6 +209,8 @@
     "atMost": "Un objet est conforme s’il ne libère pas plus que la limite : la loi dit « au plus ».",
     "ppm": "Ici, ppm désigne des milligrammes par litre de solution d’essai (mg/L).",
     "unknown": "Nous n’avons pas encore confirmé les règles de ce pays ({region}).",
+    "none": "{region} : aucune loi ne fixe de limites pour le plomb et le cadmium qu’une pièce cuite peut libérer (vérifié le {date}).",
+    "noneSource": "Source : <link>{law}</link>.",
     "choosePrompt": "Choisissez votre pays pour voir ses règles."
   },
   "equivalents": {

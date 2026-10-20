@@ -81,7 +81,7 @@ It-tabella tagħti {{2232 °F; 1222 °C}} għal kon 6 li joqgħod waħdu, imma b
 
 ## It-tabella tal-koni {#cone-chart}
 
-Dawn iċ-ċifri huma mit-tabella tal-koni{{en: cone}} ta’ Orton (©2001) għal koni li joqogħdu weħidhom. Agħżel il-kolonna li taqbel ma’ kemm tela’ malajr il-forn tiegħek matul l-aħħar {{180 °F; 100 °C}}. Ir-regola prattika ta’ Orton hija l-kolonna ta’ {{270 °F/h; 150 °C/h}} għal ħamja mgħaġġla, il-kolonna ta’ {{108 °F/h; 60 °C/h}} għal waħda medja u l-kolonna ta’ {{27 °F/h; 15 °C/h}} għal waħda bil-mod. Biex tikkalkula r-rata, aqsam il-gradi li tela’ l-forn bis-sigħat li ħa: forn li jitla’ {{900 °F; 500 °C}} f’3 sigħat qed jisħon b’rata ta’ madwar {{300 °F/h; 167 °C/h}}.
+Dawn iċ-ċifri huma mit-tabella tal-koni{{en: cone}} ta’ Orton (©2001) għal koni li joqogħdu weħidhom; il-koni 11 sa 14 huma mit-tabelli li Orton jippubblika llum, li jagħtu l-istess ċifri fejn jikkoinċidu, u jagħtu l-koni 13 u 14 biss f’°C (il-°F tagħhom hawn huwa kkonvertit). Agħżel il-kolonna li taqbel ma’ kemm tela’ malajr il-forn tiegħek matul l-aħħar {{180 °F; 100 °C}}. Ir-regola prattika ta’ Orton hija l-kolonna ta’ {{270 °F/h; 150 °C/h}} għal ħamja mgħaġġla, il-kolonna ta’ {{108 °F/h; 60 °C/h}} għal waħda medja u l-kolonna ta’ {{27 °F/h; 15 °C/h}} għal waħda bil-mod. Biex tikkalkula r-rata, aqsam il-gradi li tela’ l-forn bis-sigħat li ħa: forn li jitla’ {{900 °F; 500 °C}} f’3 sigħat qed jisħon b’rata ta’ madwar {{300 °F/h; 167 °C/h}}.
 
 Table: Koni Orton li joqogħdu weħidhom: it-temperatura li fiha jitgħawweġ kull wieħed, skont ir-rata tat-tisħin matul l-aħħar {{180 °F; 100 °C}}
 Label: It-tabella tal-koni ta’ Orton
@@ -108,8 +108,14 @@ Label: It-tabella tal-koni ta’ Orton
 | 8   |          {{2212 °F; 1211 °C}} |         {{2280 °F; 1249 °C}} |           {{2320 °F; 1271 °C}} |
 | 9   |          {{2235 °F; 1224 °C}} |         {{2300 °F; 1260 °C}} |           {{2336 °F; 1280 °C}} |
 | 10  |          {{2284 °F; 1251 °C}} |         {{2345 °F; 1285 °C}} |           {{2381 °F; 1305 °C}} |
+| 11  |          {{2322 °F; 1272 °C}} |         {{2361 °F; 1294 °C}} |           {{2399 °F; 1315 °C}} |
+| 12  |          {{2345 °F; 1285 °C}} |         {{2383 °F; 1306 °C}} |           {{2419 °F; 1326 °C}} |
+| 13  |          {{2390 °F; 1310 °C}} |         {{2428 °F; 1331 °C}} |           {{2458 °F; 1348 °C}} |
+| 14  |          {{2464 °F; 1351 °C}} |         {{2489 °F; 1365 °C}} |           {{2523 °F; 1384 °C}} |
 
 Fejn hemm “–”, iċ-ċifra ma ġietx ikkupjata hawn; sibha fit-tabella sħiħa ta’ Orton.
+
+Orton jagħmel koni sa numru 42 għal xogħol f’temperaturi għoljin, iżda jippubblika t-temperaturi biss sal-kon 14; għal koni aktar sħan, it-tabelli tiegħu huma “disponibbli (fuq talba)”. Tabella eqdem ta’ Orton, kif jistampawha mill-ġdid il-manifatturi tal-fran, tagħti kon kbir 15 bħala {{2608 °F; 1431 °C}} b’{{270 °F/h; 150 °C/h}}, u ma sibna l-ebda ċifra ppubblikata għall-kon 16 jew koni aktar sħan. Lil hinn mill-kon 14, qiegħed koni xhieda u mexxi skonthom, u ċċekkja li t-temperatura massima li jagħti l-manifattur tal-forn tiegħek tilħaq dik is-sħana.
 
 Il-koni l-kbar jaqraw ftit gradi biss ’il bogħod minn dawn iċ-ċifri: kon 6 kbir b’rata ta’ {{108 °F/h; 60 °C/h}} jitgħawweġ f’{{2228 °F; 1220 °C}}. Il-koni ż-żgħar, it-tip li jintuża fis-sitter, huma mniżżlin biss b’rata ta’ {{540 °F/h; 300 °C/h}}, għalhekk it-tabella tagħti {{2291 °F; 1255 °C}} għal kon 6 żgħir. Din mhix it-temperatura li fiha s-sitter jitfi l-forn. Ix-xogħol tal-kon tas-sitter huwa li jaqbel mal-kon fuq ix-xkaffa, u l-kon fuq ix-xkaffa għandu l-aħħar kelma.
 
@@ -298,6 +304,8 @@ Hawn in-numri jibdew minn SK 022, l-aktar kiesaħ, u jaslu sa SK 20. Minn SK 015
 
 Qiegħed kull kon kbir f’bażi tal-koni jew f’ftit tafal, inklinat lejn il-wiċċ tat-tgħawwiġ tiegħu. Bħal ma tagħmel ma’ kull kon, żomm l-għoli u l-inklinazzjoni l-istess minn ħamja għal oħra, għax differenza f’xi waħda minnhom tibdel kemm jitgħawweġ. Qiegħed it-tliet koni tas-sett{{en: cone pack}} (ara hawn taħt) flimkien, fil-fond tal-forn, qrib in-nofs ta’ dak li hemm fil-forn, fejn jieħdu s-sħana li jieħdu l-oġġetti, iżda fejn tista’ tarahom minn toqba tal-ħarsa; qabel ma tagħlaq il-forn, iċċekkja li tista’ tara t-tlieta.
 
+Ma sibna l-ebda struzzjonijiet minn manifattur jew bejjiegħ dwar kemm fil-fond jew b’liema angolu għandhom jitqiegħdu l-koni SK. L-eqreb ħaġa hija standard tal-laboratorju, JIS R 2204, it-test Ġappuniż ta’ kemm sħana jiflaħ materjal refrattarju: dan iqiegħed kull kon SK bil-wiċċ immarkat tiegħu f’80° ma’ bażi ċatta u bis-sieq tiegħu madwar 4 mm ġo fiha. Dak huwa test għall-materjali refrattarji, mhux regola għall-ħami tal-fuħħar, u qrajnieh f’traskrizzjoni tal-istandard, mhux fl-istandard innifsu.
+
 ### Il-kon ta’ twissija, il-kon tal-mira u l-kon ta’ kontroll
 
 Il-koni jinbiegħu u jitqiegħdu fi tlieta: kon ta’ twissija, kon tal-mira fil-mira, u kon ta’ kontroll. Ħu bħala kon tal-mira n-numru SK li ssemmi r-riċetta jew it-tafal tiegħek, bħala kon ta’ twissija l-kon li jmiss aktar kiesaħ (ringiela waħda ’l fuq fit-tabella), u bħala kon ta’ kontroll dak li jmiss aktar sħun. Meta l-kon ta’ twissija jibda jitgħawweġ, it-tmiem ikun qrib; meta jitgħawweġ il-kon ta’ kontroll, il-ħamja tkun marret iżżejjed.
@@ -366,6 +374,8 @@ Il-koni Orton li joqogħdu weħidhom jinbiegħu fil-Ġappun bl-isem 立つゼー
 
 - [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (it-tabella SK, iċċekkjata 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
 - [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (fis-seħħ, ikkonfermat mill-ġdid 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
+- [JSA: JIS R 2204:1999, 耐火物及び耐火物原料の耐火度試験方法 (fis-seħħ, ikkonfermat mill-ġdid 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+2204:1999)
+- [kikakurui.com: traskrizzjoni ta’ JIS R 2204:1999, fejn il-klawżola 5 a) tistabbilixxi l-koni (moqri 2026-10-19)](https://kikakurui.com/r2/R2204-1999-01.html)
 - [Istitut Muniċipali ta’ Kyoto għat-Teknoloġija Industrijali u l-Kultura: x’għandek toqgħod attent għalih meta tgħaddi mill-koni ta’ Kyoto għall-koni Orton](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
 
 :::
@@ -607,7 +617,7 @@ Għall-ventilazzjoni tal-kamra, u għall-allarmi tal-monossidu tal-karbonju, ara
 ### Waqt li l-forn qed jaħmi
 
 - Biex tħares minn toqba tal-ħarsa, uża biss nuċċali tal-iwweldjar kontra l-IR, bi grad ta’ dlam 3; in-nuċċali tax-xemx mhumiex biżżejjed. Skutt jagħti parir li ddawwar it-tappijiet f’posthom biex ma jaqgħux.
-- Tħallix il-forn mingħajr sorveljanza għal aktar mill-ħin mistenni tal-ħamja; sitter mhuwiex apparat li jitfi l-forn b’mod żgur f’każ ta’ ħsara.
+- Ibqa’ qrib u ċċekkja l-forn waqt li jkun qed jaħmi, speċjalment qrib il-ħin mistenni li tispiċċa l-ħamja; sitter mhuwiex apparat li jitfi l-forn b’mod żgur f’każ ta’ ħsara. Aħmi biss meta se jkun hemm adult fid-dar u mqajjem matul il-ħami kollu.
 - Qatt ma taħmi fuq jew qrib xi ħaġa li taqbad, bħal art tal-injam jew tapit.
 - Żomm id-distanzi ta’ sigurtà li hemm fil-manwal tiegħek. Iċ-ċifri ppubblikati jvarjaw minn 12-il pulzier (30 cm) sa 3 piedi (91 cm); fejn il-manwal ma jgħid xejn, 18-il pulzier (46 cm) mill-ħitan u 3 piedi (91 cm) minn kull ħaġa li taqbad huma l-għażla l-aktar sikura.
 - Żomm l-ispazju madwar il-piż tas-sitter ħieles, biex il-piż ikun jista’ jaqa’.

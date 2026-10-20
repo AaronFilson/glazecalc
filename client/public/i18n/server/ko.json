@@ -100,6 +100,7 @@
   "limitSet-choices": "hesselberth-roy 또는 glazecalc 중에서 선택하세요.",
   "currency-choices": "목록의 통화 중에서 선택하거나, 지역에 맡기세요.",
   "calendar-choices": "날짜는 그레고리력(gregory), 태국 불기(buddhist), 일본 연호(japanese)로 표시할 수 있습니다.",
+  "digits-choices": "숫자는 있는 곳에서 흔히 쓰는 숫자(auto), 0–9(western), 언어 고유의 숫자(native)로 표시할 수 있습니다.",
   "shelf-invalid": "가진 원료 목록에는 원료를 {most}가지까지 넣을 수 있습니다.",
   "shelf-full": "가진 원료 목록에는 원료를 최대 {most}가지까지 넣을 수 있습니다. 아무것도 바뀌지 않았습니다.",
   "shelf-material-unknown": "그 원료는 내 원료에도 Glazecalc 라이브러리에도 없습니다.",

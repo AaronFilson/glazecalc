@@ -100,6 +100,7 @@
   "limitSet-choices": "Izberite hesselberth-roy ali glazecalc.",
   "currency-choices": "Izberite eno od valut na seznamu ali pustite, da jo določi vaša regija.",
   "calendar-choices": "Datume je mogoče prikazati po gregorijanskem koledarju (gregory), tajskem budističnem štetju (buddhist) ali japonskih obdobjih (japanese).",
+  "digits-choices": "Števke so lahko prikazane, kot je običajno v vaši regiji (auto), kot 0–9 (western) ali z lastnimi števkami jezika (native).",
   "shelf-invalid": "Zaloga je seznam z največ {most} surovinami.",
   "shelf-full": "Zaloga ima lahko največ {most} surovin. Nič ni bilo spremenjeno.",
   "shelf-material-unknown": "Te surovine ni med vašimi surovinami niti v knjižnici Glazecalc.",

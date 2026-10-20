@@ -12,6 +12,7 @@ import {
   testedCones
 } from '../../../../lib/cones/firing';
 import type { ConeSystem, TemperatureScale } from '../../core/preferences.service';
+import { isolated, ltr } from '../../shared/bidi';
 import { formatTemperature, listOf, upTo } from '../../shared/format';
 
 // A recipe's firing block in words (docs/adr/0021-recipe-firing.md): the
@@ -38,7 +39,7 @@ export const ATMOSPHERE_NAMES: Record<string, string> = {
 };
 
 const BASIS: Record<ApproxBasis, string> = {
-  'orton-60': marker('recipe.firing.basis.orton60'),
+  'orton-150': marker('recipe.firing.basis.orton150'),
   kyoto: marker('recipe.firing.basis.kyoto'),
   stated: marker('recipe.firing.basis.stated')
 };
@@ -47,11 +48,11 @@ const SPAN = { orton: marker('recipe.firing.span.orton'), sk: marker('recipe.fir
 const CLAIMED = marker('recipe.firing.claimedRange');
 const UNTESTED = marker('recipe.firing.rangeUntested');
 
-/** One cone in its own scale: "cone 06", "cone 5½", "SK 6a", "1240 °C". */
+/** One cone in its own scale: "cone 06", "cone 5½", "SK 6a", "1240 °C"; kept apart in right-to-left text (shared/bidi.ts). */
 export function coneText(scale: ConeScale, cone: string, reader: Reader): string {
   if (scale === 'temperature') return formatTemperature(Number(cone), reader.temperature);
-  if (scale === 'sk') return translate('recipe.firing.one.sk', { cone: coneLabel(cone) });
-  return translate('recipe.firing.one.orton', { cone: coneLabel(cone) });
+  if (scale === 'sk') return isolated(translate('recipe.firing.one.sk', { cone: coneLabel(cone) }));
+  return isolated(translate('recipe.firing.one.orton', { cone: coneLabel(cone) }));
 }
 
 /** A range in its own scale: "cone 6–10", "SK 8–10", "1220 °C to 1260 °C"; one cone when there is no high one. */
@@ -77,7 +78,7 @@ export function atmosphereText(block: FiringBlock): string {
 
 /** A temperature difference in the reader's scale: 60 °C is 108 °F. */
 const rateText = (perHour: number, scale: TemperatureScale): string =>
-  upTo(scale === 'F' ? (perHour * 9) / 5 : perHour, 0) + ' °' + scale;
+  ltr(upTo(scale === 'F' ? (perHour * 9) / 5 : perHour, 0) + ' °' + scale);
 
 /** The schedule: rate over the last hour, the hold, the note, a witness cone. */
 export function scheduleText(block: FiringBlock, reader: Reader): string {

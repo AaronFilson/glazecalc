@@ -81,7 +81,7 @@ Tabelul dă pentru un con 6 autoportant {{2232 °F; 1222 °C}}, dar numai dacă 
 
 ## Tabelul conurilor {#cone-chart}
 
-Aceste valori provin din tabelul conurilor Orton (©2001) pentru conuri{{en: cones}} autoportante. Alegeți coloana care corespunde vitezei cu care a urcat cuptorul în ultimele {{180 °F; 100 °C}}. Regula practică de la Orton: coloana {{270 °F/h; 150 °C/h}} pentru o ardere rapidă, coloana {{108 °F/h; 60 °C/h}} pentru una medie și coloana {{27 °F/h; 15 °C/h}} pentru una lentă. Ca să calculați rata, împărțiți câte grade a urcat cuptorul la numărul de ore în care le-a urcat: un cuptor care urcă cu {{900 °F; 500 °C}} în 3 ore se încălzește cu aproximativ {{300 °F/h; 167 °C/h}}.
+Aceste valori provin din tabelul conurilor Orton (©2001) pentru conuri{{en: cones}} autoportante; conurile de la 11 la 14 provin din tabelele pe care Orton le publică acum, care dau aceleași valori acolo unde se suprapun, iar pentru conurile 13 și 14 doar în °C (valorile lor în °F sunt convertite aici). Alegeți coloana care corespunde vitezei cu care a urcat cuptorul în ultimele {{180 °F; 100 °C}}. Regula practică de la Orton: coloana {{270 °F/h; 150 °C/h}} pentru o ardere rapidă, coloana {{108 °F/h; 60 °C/h}} pentru una medie și coloana {{27 °F/h; 15 °C/h}} pentru una lentă. Ca să calculați rata, împărțiți câte grade a urcat cuptorul la numărul de ore în care le-a urcat: un cuptor care urcă cu {{900 °F; 500 °C}} în 3 ore se încălzește cu aproximativ {{300 °F/h; 167 °C/h}}.
 
 Table: Conuri Orton autoportante: temperatura la care se îndoaie fiecare, după rata de încălzire în ultimele {{180 °F; 100 °C}}
 Label: Tabelul conurilor Orton
@@ -108,8 +108,14 @@ Label: Tabelul conurilor Orton
 | 8   |        {{2212 °F; 1211 °C}} |         {{2280 °F; 1249 °C}} |           {{2320 °F; 1271 °C}} |
 | 9   |        {{2235 °F; 1224 °C}} |         {{2300 °F; 1260 °C}} |           {{2336 °F; 1280 °C}} |
 | 10  |        {{2284 °F; 1251 °C}} |         {{2345 °F; 1285 °C}} |           {{2381 °F; 1305 °C}} |
+| 11  |        {{2322 °F; 1272 °C}} |         {{2361 °F; 1294 °C}} |           {{2399 °F; 1315 °C}} |
+| 12  |        {{2345 °F; 1285 °C}} |         {{2383 °F; 1306 °C}} |           {{2419 °F; 1326 °C}} |
+| 13  |        {{2390 °F; 1310 °C}} |         {{2428 °F; 1331 °C}} |           {{2458 °F; 1348 °C}} |
+| 14  |        {{2464 °F; 1351 °C}} |         {{2489 °F; 1365 °C}} |           {{2523 °F; 1384 °C}} |
 
 O liniuță marchează o valoare care nu a fost preluată aici; o găsiți în tabelul complet de la Orton.
+
+Orton fabrică conuri până la 42 pentru lucrul la temperaturi înalte, dar publică temperaturi doar până la conul 14; pentru conurile mai fierbinți, tabelele sale sunt „disponibile (la cerere)”. Un tabel Orton mai vechi, așa cum îl retipăresc producătorii de cuptoare, dă pentru un con mare 15 {{2608 °F; 1431 °C}} la {{270 °F/h; 150 °C/h}}, iar pentru conul 16 sau mai fierbinte nu am găsit nicio valoare publicată. Pentru o ardere mai fierbinte decât conul 14, așezați conuri martor, ghidați-vă după ele și verificați că temperatura maximă declarată de producătorul cuptorului ajunge atât de sus.
 
 Conurile mari diferă de aceste valori cu doar câteva grade: un con mare 6 la {{108 °F/h; 60 °C/h}} se îndoaie la {{2228 °F; 1220 °C}}. Conurile mici, cele folosite în Kiln-Sitter, sunt date doar pentru {{540 °F/h; 300 °C/h}}, așa că tabelul dă pentru un con mic 6 {{2291 °F; 1255 °C}}. Aceasta nu este temperatura la care Kiln-Sitter oprește cuptorul. Rolul conului din Kiln-Sitter este să corespundă conului de pe placă, iar conul de pe placă are ultimul cuvânt.
 
@@ -298,6 +304,8 @@ Aici numerele merg de la SK 022, cel mai rece, până la SK 20. Între SK 015 ș
 
 Fixați fiecare con mare într-un suport de conuri sau într-o turtă de argilă, înclinat spre fața de îndoire. Ca la orice con, păstrați aceeași înălțime și aceeași înclinare de la o ardere la alta, pentru că o diferență la oricare dintre ele schimbă cât de mult se îndoaie conul. Așezați împreună cele trei conuri ale setului{{en: cone pack}} (vedeți mai jos), adânc în cuptor, aproape de centrul încărcăturii, unde primesc aceeași căldură ca piesele, dar unde le puteți vedea prin vizor; înainte să închideți cuptorul, verificați că le vedeți pe toate trei.
 
+Nu am găsit instrucțiuni de la producători sau vânzători despre cât de adânc sau la ce unghi să așezați conurile SK. Cel mai apropiat lucru este un standard de laborator, JIS R 2204, testul japonez pentru câtă căldură rezistă un material refractar: el așază fiecare con SK cu fața marcată la 80° față de un suport plat și cu baza înfiptă circa 4 mm în el. Acesta este un test pentru materiale refractare, nu o regulă pentru arderea vaselor, iar noi l-am citit într-o transcriere a standardului, nu în standardul însuși.
+
 ### Conul de ghidaj, conul țintă și conul de control
 
 Conurile se vând și se așază câte trei: un con de ghidaj, un con țintă la temperatura dorită și un con de control. Luați drept con țintă numărul SK pe care îl indică rețeta sau argila, drept con de ghidaj conul imediat mai rece (un rând mai sus în tabel) și drept con de control conul imediat mai fierbinte. Când conul de ghidaj începe să se îndoaie, finalul este aproape; când se îndoaie conul de control, arderea a mers prea departe.
@@ -366,6 +374,8 @@ Conurile Orton autoportante se vând în Japonia sub numele 立つゼーゲル (
 
 - [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (tabelul SK, verificat la 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
 - [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (în vigoare, reconfirmat la 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
+- [JSA: JIS R 2204:1999, 耐火物及び耐火物原料の耐火度試験方法 (în vigoare, reconfirmat la 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+2204:1999)
+- [kikakurui.com: o transcriere a JIS R 2204:1999, în care punctul 5 a) stabilește așezarea conurilor (citit la 2026-10-19)](https://kikakurui.com/r2/R2204-1999-01.html)
 - [Kyoto Municipal Institute of Industrial Technology and Culture: ce trebuie avut în vedere la trecerea de la conurile Kyoto la conurile Orton](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
 
 :::
@@ -607,7 +617,7 @@ Pentru ventilarea încăperii și pentru detectoarele de monoxid de carbon, vede
 ### În timp ce cuptorul arde
 
 - Priviți printr-un vizor numai cu ochelari de sudură cu filtru IR, grad de protecție 3; ochelarii de soare nu sunt suficienți. Skutt recomandă să răsuciți dopurile când le puneți, ca să nu cadă.
-- Nu lăsați cuptorul nesupravegheat peste timpul de ardere așteptat; un sitter nu este un sistem infailibil.
+- Rămâneți în apropiere și verificați cuptorul în timpul arderii, mai ales în apropierea momentului în care se așteaptă să se termine; un sitter nu este un sistem infailibil. Ardeți doar când un adult va fi acasă și treaz pe tot parcursul arderii.
 - Nu folosiți niciodată cuptorul pe sau lângă ceva combustibil, cum ar fi o podea de lemn sau un covor.
 - Respectați distanțele de siguranță din manualul dumneavoastră. Cifrele publicate variază de la 12 țoli (30 cm) la 3 picioare (91 cm); unde manualul tace, 18 țoli (46 cm) de pereți și 3 picioare (91 cm) de orice material combustibil este alegerea cea mai sigură.
 - Țineți liber spațiul din jurul greutății sitterului, ca să poată cădea.

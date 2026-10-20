@@ -26,6 +26,7 @@ import { Notices, NoticesList } from '../../shared/notices';
             <input
               id="email"
               type="email"
+              dir="ltr"
               name="email"
               required
               autocomplete="username"

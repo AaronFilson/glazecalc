@@ -3,7 +3,8 @@
 // limit on the tools that fit amounts (docs/integrations-plan.md, item 23).
 import * as z from 'zod';
 import chemistry from '../../lib/chemistry/index.js';
-import cones from '../../lib/cones/index.js';
+import firingLib from '../../lib/cones/firing.js';
+import type { Band, FiringBlock } from '../../lib/cones/firing.js';
 import recipe from '../../lib/recipe/index.js';
 import type { Caution, MaterialRecord } from '../../lib/recipe/index.js';
 import * as log from '../lib/log.ts';
@@ -66,22 +67,33 @@ export const linesArg = z
   .max(MOST_LINES)
   .describe(`The recipe's base materials (not colorants), at most ${MOST_LINES} lines.`);
 
+/** The highest firing temperature a tool takes, as a recipe's firing does (FIRING_LIMITS in lib/cones/firing.js). */
+const MOST_CELSIUS = firingLib.FIRING_LIMITS.celsius.max;
+
 export const firingArg = z
   .object({
     cone: z
       .string()
-      .max(5)
+      .max(10)
       .optional()
-      .describe('An Orton cone from 06 to 6 ("06", "04", "6"), or an SK cone with chart "sk".'),
+      .describe(
+        'An Orton cone from 022 to 42 ("06", "6", "10", "14", a half cone as "5.5"), or with chart "sk" an SK cone (JIS R 8101) from SK 022 to SK 20 ("6a", "8", "14").'
+      ),
     chart: z
       .enum(['orton', 'sk'])
       .optional()
       .describe('Which cones the cone is: Orton (the default) or SK (JIS R 8101).'),
-    celsius: z.number().min(500).max(1500).optional(),
-    fahrenheit: z.number().min(900).max(2750).optional()
+    celsius: z.number().min(500).max(MOST_CELSIUS).optional(),
+    fahrenheit: z
+      .number()
+      .min(900)
+      .max(Math.round(recipe.fahrenheit(MOST_CELSIUS)))
+      .optional()
   })
   .optional()
-  .describe('The firing, as a cone or a temperature. Leave it out when it is not known.');
+  .describe(
+    'The firing, as a cone or a temperature. Leave it out when it is not known. From cone 12 up (about 1320 °C) no published glaze limits reach, so the limits are not checked there; the cone check judges cone 06 to 10 only.'
+  );
 export type Firing = z.infer<typeof firingArg>;
 
 /** A tool's answer: the data, and the same as JSON text for clients that read only text. */
@@ -103,26 +115,55 @@ export class ToolProblem extends Error {}
  */
 export class ScopeProblem extends ToolProblem {}
 
-/** The Orton or SK cone's temperature in °C, or a ToolProblem naming the cones known. */
-export const coneCelsius = (cone: string, chart: 'orton' | 'sk' = 'orton'): number => {
-  const list = chart === 'sk' ? cones.SK.cones : chemistry.CONES;
-  const wanted = cone.trim().toLowerCase();
-  const found = list.find((c) => c.cone.toLowerCase() === wanted);
-  if (!found) {
-    throw new ToolProblem(
-      `Cone ${cone} is not in Glazecalc's ${chart === 'sk' ? 'SK' : 'Orton'} chart. Known cones: ${list.map((c) => c.cone).join(', ')}. You can give the temperature instead.`
-    );
-  }
-  return found.celsius;
+/**
+ * A cone as Glazecalc writes it in its chart ("5½" as "5.5", SK "6" as "6a"),
+ * or a ToolProblem saying which cones there are.
+ */
+export const coneOf = (cone: string, chart: 'orton' | 'sk' = 'orton'): string => {
+  const typed = cone
+    .trim()
+    .toLowerCase()
+    .replace(/^(?:sk|cone)\s*/, '')
+    .replace(/\s*½$/, '.5');
+  const found = chart === 'sk' ? firingLib.skCone(typed) : typed;
+  if (found && firingLib.isCone(chart, found)) return found;
+  throw new ToolProblem(
+    chart === 'sk'
+      ? `SK ${cone} is not in Glazecalc's SK chart: JIS R 8101 large cones, SK 022 to SK 20 (022 … 016, 015a … 01a, 1a … 6a, then 7 … 20). You can give the temperature instead.`
+      : `Cone ${cone} is not an Orton cone: Orton's run 022 … 01, then 1 … 42, with half cones from 1.5 to 15.5 written as "5.5". You can give the temperature instead.`
+  );
 };
 
-/** A firing's temperature in °C, or undefined when none was given. */
-export const celsiusOf = (firing: Firing): number | undefined => {
-  if (!firing) return undefined;
-  if (firing.celsius !== undefined) return firing.celsius;
-  if (firing.fahrenheit !== undefined) return Math.round(recipe.celsius(firing.fahrenheit));
-  if (firing.cone) return coneCelsius(firing.cone, firing.chart);
-  return undefined;
+/**
+ * A firing asked about, as the recipe page reads a recipe's (lib/cones/firing.js):
+ * a temperature as given, or a cone with the band its glaze is checked in
+ * (coneBand: by the cone, not by a figure, so SK 8 is mid fire as on the page)
+ * and its approximate temperature where Glazecalc has one (Orton's older chart
+ * to cone 15; Kyoto's measured SK 8 and 10). The block is what the cone check
+ * judges. Nothing when no firing was given.
+ */
+export const firingOf = (
+  firing: Firing
+): { block: FiringBlock | null; celsius: number | undefined; band: Band | undefined } => {
+  const none = { block: null, celsius: undefined, band: undefined };
+  if (!firing) return none;
+  if (firing.celsius !== undefined || firing.fahrenheit !== undefined) {
+    const celsius = firing.celsius ?? Math.round(recipe.celsius(firing.fahrenheit!));
+    const low = String(Math.round(celsius));
+    return {
+      block: firingLib.isCone('temperature', low) ? { scale: 'temperature', low } : null,
+      celsius,
+      band: undefined
+    };
+  }
+  if (!firing.cone) return none;
+  const scale = firing.chart ?? 'orton';
+  const cone = coneOf(firing.cone, scale);
+  return {
+    block: { scale, low: cone },
+    celsius: firingLib.approxCelsius(scale, cone)?.celsius,
+    band: firingLib.coneBand(scale, cone)
+  };
 };
 
 /** A material and its amount, as the recipe tools read a line. */

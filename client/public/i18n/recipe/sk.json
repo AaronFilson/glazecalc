@@ -364,7 +364,7 @@
     "intro": "Tak, ako ich uvádza záznam každej suroviny; riziká štandardnej knižnice pochádzajú z kariet bezpečnostných údajov dodávateľov.",
     "line": "<b>{names}:</b> {hazards}",
     "unknown": "{count, plural, one {Pre {list} nie sú uvedené žiadne riziká: pozrite kartu bezpečnostných údajov, ktorá je k nej priložená.} few {Pre {list} nie sú uvedené žiadne riziká: pozrite karty bezpečnostných údajov, ktoré sú k nim priložené.} many {Pre {list} nie sú uvedené žiadne riziká: pozrite karty bezpečnostných údajov, ktoré sú k nim priložené.} other {Pre {list} nie sú uvedené žiadne riziká: pozrite karty bezpečnostných údajov, ktoré sú k nim priložené.}}",
-    "safety": "Suché suroviny na glazúry vytvárajú prach: nepúšťajte ho do pľúc, a to ani prach zo surovín, ktoré nie sú klasifikované ako nebezpečné: pozrite <mixing>Bezpečné miešanie a vetranie</mixing> a <home>Neotrávte svoju rodinu</home>, ak sú nablízku deti alebo domáce zvieratá. Ak karta bezpečnostných údajov suroviny uvádza viac, riaďte sa ňou."
+    "safety": "Suché suroviny na glazúry vytvárajú prach a ten musíte udržať mimo svojich pľúc, a to aj prach zo surovín, ktoré nie sú klasifikované ako nebezpečné. Pozrite <mixing>Bezpečné miešanie a vetranie</mixing>. Ak sú nablízku deti alebo domáce zvieratá, pozrite aj <home>Neotrávte svoju rodinu</home>. Ak karta bezpečnostných údajov suroviny uvádza viac, riaďte sa ňou."
   },
   "compare": {
     "heading": "Porovnať dva recepty",
@@ -533,7 +533,10 @@
     "suppliesShare": "{oxide} na {percent} %",
     "suppliesLittle": "malá časť glazúry",
     "changed": "{name} {from} → {to}",
-    "added": "{name} {amount}, nová"
+    "added": "{name} {amount}, nová",
+    "why": {
+      "rawClay": "nekalcinovaný íl sa pri schnutí glazúry zmršťuje a pri jeho veľkom množstve môže glazúra na výrobku popraskať a v peci sa stiahnuť; zvyšok môže tvoriť kalcinovaný kaolín"
+    }
   },
   "shelf": {
     "empty": "Nemáte žiadne suroviny v zásobe, z ktorých by sa dalo zostavovať."
@@ -571,7 +574,8 @@
     "bands": {
       "low": "Nízky výpal, kužeľ 06 – 02",
       "mid": "Stredný výpal, kužeľ 4 – 6",
-      "high": "Vysoký výpal, kužeľ 9 – 11"
+      "high": "Vysoký výpal, kužeľ 9 – 11",
+      "top": "Veľmi vysoký výpal, kužeľ 12 a teplejší"
     },
     "shownFor": "Keď nie je zvolený výpal, zobrazené hodnoty platia pre: {band}. Výpal sa ukladá s receptom.",
     "cone": "Toto sú hodnoty sady pre kužeľ {cone}.",
@@ -591,6 +595,7 @@
     "notInSet": "Táto sada nemá rozsah pre: {oxides}.",
     "checksOnly": "Táto sada kontroluje len: {oxides}.",
     "notApply": "Sada {name} nemá hodnoty pre tento výpal ({band}), preto sa nekontroluje: hodnoty pre iný výpal by zavádzali.",
+    "topNote": "Publikované limity pre glazúry, ktoré sme našli, končia pri kuželi 10 a Glazecalc ich používa najďalej po kužeľ 11, takže výpal na kužeľ 12 a teplejší sa s limitmi neporovnáva. Rozhodnú vaše skúšobné doštičky.",
     "guidance": "Sú to usmernenia, nie hodnotenie „vyhovel, alebo nevyhovel“: glazúra mimo nich môže byť v poriadku a glazúra v nich môže napriek tomu trhlinkovať, uvoľňovať kovy alebo zlyhať. Vyskúšajte ju.",
     "source": "Zdroj:",
     "saveFailed": "Vašu voľbu sady limitov sa nepodarilo uložiť do účtu, takže stále platí skoršia sada.",
@@ -628,7 +633,8 @@
       "ash": "Glazecalc nemôže porovnať chemické zloženie tejto glazúry s jej výpalom: obsahuje popol, ktorého zloženie sa príliš líši, než aby sa dalo použiť s publikovanými údajmi tejto kontroly.",
       "noTemperature": "Glazecalc nemôže porovnať chemické zloženie tejto glazúry s {scale, select, band {{band, select, low {nízkym výpalom} mid {stredným výpalom} other {vysokým výpalom}}} sk {SK {cone}} temperature {{cone} °C} other {kužeľom {cone}}}: pre tento kužeľ neexistuje nameraná teplota.",
       "between": "Glazecalc nemôže porovnať chemické zloženie tejto glazúry s {scale, select, band {{band, select, low {nízkym výpalom} mid {stredným výpalom} other {vysokým výpalom}}} sk {SK {cone}} temperature {{cone} °C} other {kužeľom {cone}}}: publikované údaje použité touto kontrolou platia pre nízky výpal a pre stredný a vysoký výpal, nie pre kužele medzi nimi (01 až 3).",
-      "belowChart": "Glazecalc nemôže porovnať chemické zloženie tejto glazúry s {scale, select, band {{band, select, low {nízkym výpalom} mid {stredným výpalom} other {vysokým výpalom}}} sk {SK {cone}} temperature {{cone} °C} other {kužeľom {cone}}}: Katzovo pravidlo pre bór platí pre kužele 06 až 10 a tento výpal je chladnejší."
+      "belowChart": "Glazecalc nemôže porovnať chemické zloženie tejto glazúry s {scale, select, band {{band, select, low {nízkym výpalom} mid {stredným výpalom} other {vysokým výpalom}}} sk {SK {cone}} temperature {{cone} °C} other {kužeľom {cone}}}: Katzovo pravidlo pre bór platí pre kužele 06 až 10 a tento výpal je chladnejší.",
+      "aboveChart": "Glazecalc nemôže porovnať chemické zloženie tejto glazúry s {scale, select, band {{band, select, top {veľmi vysokým výpalom} other {vysokým výpalom}}} sk {SK {cone}} temperature {{cone} °C} other {kužeľom {cone}}}: Katzovo pravidlo pre bór platí pre kužele 06 až 10, údaje Hesselbertha a Roya pre oxid kremičitý a oxid hlinitý končia pri kuželi 10 a tento výpal je teplejší."
     }
   },
   "stull": {
@@ -979,7 +985,7 @@
     "approxTemperature": "≈ {temperature} ({basis}; približne)",
     "approxCone": "≈ {cone} ({basis}; približne)",
     "basis": {
-      "orton60": "veľké kužele Orton pri 60 °C za hodinu",
+      "orton150": "staršia Ortonova tabuľka pre veľké kužele pri 150 °C za hodinu",
       "kyoto": "zmerané pri 100 °C za hodinu mestským ústavom v Kjóte",
       "stated": "ako je uvedené"
     },

@@ -82,6 +82,31 @@
     "languages": "Jazyky",
     "language": "Jazyk:"
   },
+  "picker": {
+    "results": "{count, plural, one {# zhoda} few {# zhody} many {# zhody} other {# zhôd}}",
+    "languages": {
+      "search": "Hľadať jazyky",
+      "showAll": "Zobraziť všetky jazyky",
+      "noMatch": "Žiadny jazyk nezodpovedá"
+    },
+    "regions": {
+      "search": "Hľadať krajiny a regióny",
+      "showAll": "Zobraziť všetky krajiny a regióny",
+      "noMatch": "Žiadna krajina ani región nezodpovedá"
+    },
+    "groups": {
+      "africa": "Afrika",
+      "americas": "Amerika",
+      "asia": "Ázia",
+      "eastAsia": "Východná Ázia",
+      "europe": "Európa",
+      "middleEastNorthAfrica": "Blízky východ a severná Afrika",
+      "oceania": "Oceánia",
+      "southAsia": "Južná Ázia",
+      "southeastAsia": "Juhovýchodná Ázia",
+      "other": "Ostatné"
+    }
+  },
   "numbers": {
     "notANumber": "Zadajte číslo, napríklad {example}.",
     "notANumberComma": "Zadajte číslo, napríklad {example}, s desatinnou čiarkou.",

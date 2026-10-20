@@ -82,6 +82,31 @@
     "languages": "Jezici",
     "language": "Jezik:"
   },
+  "picker": {
+    "results": "{count, plural, one {# podudaranje} few {# podudaranja} other {# podudaranja}}",
+    "languages": {
+      "search": "Pretraži jezike",
+      "showAll": "Prikaži sve jezike",
+      "noMatch": "Nijedan jezik ne odgovara"
+    },
+    "regions": {
+      "search": "Pretraži zemlje i regije",
+      "showAll": "Prikaži sve zemlje i regije",
+      "noMatch": "Nijedna zemlja ni regija ne odgovara"
+    },
+    "groups": {
+      "africa": "Afrika",
+      "americas": "Amerika",
+      "asia": "Azija",
+      "eastAsia": "Istočna Azija",
+      "europe": "Europa",
+      "middleEastNorthAfrica": "Bliski istok i sjeverna Afrika",
+      "oceania": "Oceanija",
+      "southAsia": "Južna Azija",
+      "southeastAsia": "Jugoistočna Azija",
+      "other": "Ostalo"
+    }
+  },
   "numbers": {
     "notANumber": "Unesite broj, na primjer {example}.",
     "notANumberComma": "Unesite broj s decimalnim zarezom, na primjer {example}.",

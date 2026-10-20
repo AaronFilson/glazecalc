@@ -28,12 +28,21 @@ export function regionFor(code: string | undefined | null): Region | undefined;
 /** The calendars dates may be shown in, as Intl names them; the first, the Gregorian, is the default. */
 export const CALENDARS: ReadonlyArray<'gregory' | 'buddhist' | 'japanese'>;
 /**
+ * The digits numbers may be shown in: as usual where the reader is (the default), 0–9, or the language's own
+ * script's digits where it has them.
+ */
+export const DIGIT_CHOICES: ReadonlyArray<'auto' | 'western' | 'native'>;
+/**
  * The locale for numbers and dates, from the page's language, the region, the format chosen ('auto' or a
- * locale) and the calendar chosen (Gregorian when not given).
+ * locale), the calendar chosen (Gregorian when not given) and the digits chosen ('auto' when not given). It
+ * always names its calendar and digits: en-US-u-ca-gregory-nu-latn.
  */
 export function formatLocaleFor(
   language: string,
   regionCode: string | undefined | null,
   format?: string | null,
-  calendar?: string | null
+  calendar?: string | null,
+  digits?: string | null
 ): string;
+/** The numbering system a locale's numbers are shown in by the digits chosen, as Intl names it: latn, arab, deva. */
+export function numberingSystemFor(locale: string | Intl.Locale, digits?: string | null): string;

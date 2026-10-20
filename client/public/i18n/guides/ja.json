@@ -52,6 +52,7 @@
     "emergency": "緊急時: 意識がない、呼吸をしていない、けいれんを起こしている",
     "poisonAdvice": "{who, select, children {中毒の相談: {name}（子どものみ）} other {中毒の相談: {name}}}",
     "or": "または {number}",
+    "orCall": "または <link>{number}</link>",
     "online": "オンライン: <link>{name}</link>。",
     "poisonAdviceNone": "中毒の相談",
     "noLine": "この国では、一般向けの中毒相談窓口を確認できませんでした。かかりつけの医師に、急を要する場合は救急番号に電話してください。",
@@ -61,8 +62,7 @@
     "vet": "かかりつけの獣医に電話してください。",
     "checkedOn": "確認した出典:",
     "choosePrompt": "国を選ぶと、その国の連絡先が表示されます。",
-    "ministry": "保健省のページ: <link>{name}</link>。",
-    "reported": "政府の公式ページには 113、114、115 が載っていますが、それぞれの用途は書かれていません。表示している役割は、二次的なページが引用する通達 22/2014/TT-BTTTT に従っています。"
+    "ministry": "保健省のページ: <link>{name}</link>。"
   },
   "density": {
     "sg": "比重 {value}",
@@ -112,6 +112,10 @@
     "bandFromTo": "遊離けい酸（SiO₂）が {from}% から {to}% の粉じん",
     "bandOverTo": "遊離けい酸が {from}% を超え {to}% 以下の粉じん",
     "bandAbove": "遊離けい酸が {from}% を超える粉じん",
+    "untilDate": "{date}まで",
+    "fromDate": "{date}から",
+    "beforeFormula": "吸入性粉じんの限度値（Q は粉じん中の結晶質シリカの含有率（%））",
+    "beforeAll": "粉じんがすべて結晶質シリカである場合",
     "recommended": "{abbr} の勧告値",
     "value": "{value} mg/m³",
     "kind": {
@@ -122,6 +126,7 @@
     },
     "setBy": "<link>{law}</link>で定められています。",
     "from": "{date}から適用されます。",
+    "beforeSetBy": "それまでは、限度値は<link>{law}</link>で定められています。",
     "lowerThanEu": "EU の法的拘束力のある限度値 {value} mg/m³ より低い値です。",
     "sameAsEu": "EU の法的拘束力のある限度値と同じです。",
     "recommendedBy": "{abbr}（{by}）は、<link>{title}</link>でこの値を勧告しています。法令ではありません。",
@@ -184,7 +189,13 @@
       "vnMedium": "食べ物を入れる深い器、1100 mL以上3000 mL未満",
       "vnStorage": "食べ物を入れる深い器、3000 mL以上",
       "vnCooking": "調理用の深い器",
-      "vnCups": "カップと小さな鉢"
+      "vnCups": "カップと小さな鉢",
+      "cnFlat": "平物（深さ25 mm以下）",
+      "cnSmall": "小型の深物（1.1 L未満、カップを除く）",
+      "cnLarge": "大型の深物（1.1 L以上3 L未満）",
+      "cnStorage": "貯蔵容器（3 L以上）",
+      "cnCups": "カップ（水や飲み物用）",
+      "cnCooking": "加熱調理用器具（食品を加熱するもの）"
     },
     "judged": {
       "average": "6個の平均",
@@ -198,6 +209,8 @@
     "atMost": "溶出量が限度値以下であれば適合です。法令の表記は「以下」です。",
     "ppm": "ここでの ppm は、試験液のリットルあたりのミリグラム (mg/L) を表します。",
     "unknown": "{region}の規則はまだ確認していません。",
+    "none": "{region}には、焼成した器から溶出してよい鉛とカドミウムの限度値を定める法令はありません（確認日: {date}）。",
+    "noneSource": "出典: <link>{law}</link>。",
     "choosePrompt": "国を選ぶと、その国の規則が表示されます。"
   },
   "equivalents": {

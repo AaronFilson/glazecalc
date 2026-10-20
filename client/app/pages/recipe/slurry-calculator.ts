@@ -5,6 +5,7 @@ import { marker } from '@jsverse/transloco-keys-manager/marker';
 import * as slurry from '../../../../lib/recipe/slurry';
 import { LocaleService } from '../../core/locale.service';
 import { Density, PreferencesService } from '../../core/preferences.service';
+import { isolated, ltr } from '../../shared/bidi';
 import { fixed, plainNumber, upTo } from '../../shared/format';
 import { NumberInput } from '../../shared/number-input';
 import { GRAMS_PER_POUND, formatWeight } from '../../shared/weights';
@@ -341,12 +342,12 @@ export class SlurryCalculator {
   /** Kilograms as the account weighs: 8.33 kg or 640 g, or 18 lb 6.1 oz. */
   private weight(kg: number): string {
     if (this.pounds()) return formatWeight(kg * 1000, 'lb', this.preferences.gramPrecision());
-    return kg >= 1 ? upTo(kg, 2) + ' kg' : upTo(kg * 1000, 0) + ' g';
+    return ltr(kg >= 1 ? upTo(kg, 2) + ' kg' : upTo(kg * 1000, 0) + ' g');
   }
 
   /** Litres in the unit chosen: 12.5 L, 3.3 US gal. */
   private volumeText(litres: number): string {
     const unit = VOLUME_UNITS.find((u) => u.value === this.volumeUnit())!;
-    return translate(unit.amount, { amount: upTo(litres / LITRES_IN[unit.value], 2) });
+    return isolated(translate(unit.amount, { amount: upTo(litres / LITRES_IN[unit.value], 2) }));
   }
 }

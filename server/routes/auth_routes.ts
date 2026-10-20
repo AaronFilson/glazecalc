@@ -1,7 +1,8 @@
 // Creating an account, signing in and out. Signing in sets the session cookie
 // (server/lib/session.ts).
 //
-//   POST /api/signup   { email, password }            { email }
+//   POST /api/signup   { email, password, next? }     { email }; next, a page of the app,
+//                      is where the confirmation link goes on to (lib/email_links.ts)
 //   GET  /api/signin   Authorization: Basic email:pw  { email, kept }
 //                      or, with two-step sign-in on, no session and
 //                      { code: 'second-step', methods, pending, expiresAt, passkeyOptions? }
@@ -53,7 +54,7 @@ export default authRouter;
 // not tell anyone which emails have accounts.
 
 authRouter.post('/signup', limits.signUp, express.json(), async (req, res) => {
-  const body = (req.body ?? {}) as { email?: unknown; password?: unknown };
+  const body = (req.body ?? {}) as { email?: unknown; password?: unknown; next?: unknown };
   const address = email.normalize(body.email);
   if (!email.isValid(address)) return res.status(400).json(say('email-required', undefined, { field: 'email' }));
   const problem = password.problem(body.password);
@@ -71,7 +72,8 @@ authRouter.post('/signup', limits.signUp, express.json(), async (req, res) => {
     });
     session.start(res, user, 7, session.wantsKept(req));
     res.status(200).json({ email: user.email });
-    emailLinks.sendVerification(user);
+    // The link comes back to the page the sign-up was for (next), when it is one of the app's.
+    emailLinks.sendVerification(user, body.next);
     return undefined;
   } catch (err) {
     // The unique index catches two sign-ups for one email racing each other.

@@ -134,4 +134,9 @@ A quotation keeps its temperatures as the source wrote them, not as `{{…}}`.
 - `/en-XA/` shows any page with every message accented and lengthened: text left unmarked stays
   plain, and a layout that cannot take longer words shows it. `/ar-XB/` shows it right to left.
   `/ja-XC/` shows it in Japanese characters with no spaces, in Japanese's fonts: a line that
-  cannot break without a space, or a font a page lacks, shows it.
+  cannot break without a space, or a font a page lacks, shows it. `/ar-XD/` shows it in Arabic
+  letters, right to left by the browser's own rules, with Arabic's six plural forms and
+  Arabic-Indic digits: a value or name that comes apart in Arabic text shows it. `/hi-XE/` shows
+  it in Devanagari, for Hindi's fonts and taller lines.
+- A right-to-left translation keeps → in a message as the English has it: the app writes ← on a
+  right-to-left page (docs/i18n-plan.md, "Right to left, as built"). Units stay in Latin (°C, g).

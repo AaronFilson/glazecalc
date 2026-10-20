@@ -56,6 +56,14 @@ const addColorant = async (page, name, amount) => {
   await page.getByRole('textbox', { name: 'Amount of ' + name, exact: true }).fill(String(amount));
 };
 
+// Chooses in a searchable list (client/app/shared/picker.ts) as a person does: opens it, types the name, and
+// presses Enter on the first that matches. `field` is the list's text field.
+const choosePicked = async (field, name) => {
+  await field.click();
+  await field.fill(name);
+  await field.press('Enter');
+};
+
 // A field marked wrong (client/app/shared/field-checks.ts): aria-invalid, and
 // the message under it is the field's description, so a screen reader says it.
 const expectFieldProblem = async (page, id, message) => {
@@ -237,6 +245,7 @@ module.exports = {
   appReady,
   base32Decode,
   basicAuth,
+  choosePicked,
   confirmedAccount,
   createPasskey,
   expectFieldProblem,

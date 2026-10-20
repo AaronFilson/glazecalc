@@ -142,6 +142,8 @@ let charts = 0;
     }
     /* The text is in the drawing's units, so it shrinks with it: on a phone, where the chart is
        about 300px wide (a little under its 320 units), it is drawn larger so it reads at about 10px. */
+    /* A chart reads left to right in every language: silica grows to the right, and the alumina axis's
+       figures end at its left edge (text-anchor end), not inside the plot, on a right-to-left page too. */
     svg {
       display: block;
       width: 100%;
@@ -149,6 +151,7 @@ let charts = 0;
       height: auto;
       font-size: 11px;
       color: var(--gc-text);
+      direction: ltr;
     }
     text {
       fill: currentColor;

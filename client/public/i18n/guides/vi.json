@@ -52,6 +52,7 @@
     "emergency": "Khẩn cấp: bất tỉnh, ngừng thở, co giật",
     "poisonAdvice": "{who, select, children {Tư vấn về chất độc: {name} (chỉ dành cho trẻ em)} other {Tư vấn về chất độc: {name}}}",
     "or": "hoặc {number}",
+    "orCall": "hoặc <link>{number}</link>",
     "online": "Trực tuyến: <link>{name}</link>.",
     "poisonAdviceNone": "Tư vấn về chất độc",
     "noLine": "Chúng tôi chưa xác nhận được đường dây chống độc công cộng ở đây. Hãy gọi bác sĩ của bạn, hoặc gọi số khẩn cấp nếu việc gấp.",
@@ -61,8 +62,7 @@
     "vet": "Hãy gọi bác sĩ thú y của bạn.",
     "checkedOn": "Đã kiểm tra vào:",
     "choosePrompt": "Chọn quốc gia của bạn để xem gọi ai tại đó.",
-    "ministry": "Trang của bộ y tế: <link>{name}</link>.",
-    "reported": "Các trang chính thức của chính phủ liệt kê 113, 114 và 115 nhưng không nói mỗi số dùng để làm gì; các vai trò được hiển thị theo Circular 22/2014/TT-BTTTT, như các trang thứ cấp trích dẫn."
+    "ministry": "Trang của bộ y tế: <link>{name}</link>."
   },
   "density": {
     "sg": "tỷ trọng {value}",
@@ -112,6 +112,10 @@
     "bandFromTo": "Bụi có từ {from}% đến {to}% silica tự do (SiO₂)",
     "bandOverTo": "Bụi có trên {from}% và tối đa {to}% silica tự do",
     "bandAbove": "Bụi có trên {from}% silica tự do",
+    "untilDate": "Đến {date}",
+    "fromDate": "Từ {date}",
+    "beforeFormula": "Giới hạn cho bụi hô hấp, trong đó Q là silica tinh thể trong bụi, tính bằng %",
+    "beforeAll": "Với bụi toàn là silica tinh thể",
     "recommended": "Khuyến nghị bởi {abbr}",
     "value": "{value} mg/m³",
     "kind": {
@@ -122,6 +126,7 @@
     },
     "setBy": "Do <link>{law}</link> quy định.",
     "from": "Áp dụng từ {date}.",
+    "beforeSetBy": "Đến lúc đó, giới hạn do <link>{law}</link> quy định.",
     "lowerThanEu": "Thấp hơn giới hạn ràng buộc của EU là {value} mg/m³.",
     "sameAsEu": "Giống giới hạn ràng buộc của EU.",
     "recommendedBy": "{abbr} ({by}) khuyến nghị giá trị này trong <link>{title}</link>. Đây không phải luật.",
@@ -184,7 +189,13 @@
       "vnMedium": "Sản phẩm sâu để đựng thực phẩm, từ 1100 mL đến dưới 3000 mL",
       "vnStorage": "Sản phẩm sâu để đựng thực phẩm, từ 3000 mL trở lên",
       "vnCooking": "Sản phẩm sâu để nấu thực phẩm",
-      "vnCups": "Cốc và bát nhỏ"
+      "vnCups": "Cốc và bát nhỏ",
+      "cnFlat": "Đồ phẳng, sâu không quá 25 mm",
+      "cnSmall": "Đồ lòng sâu nhỏ, dưới 1,1 L, trừ cốc",
+      "cnLarge": "Đồ lòng sâu lớn, từ 1,1 L đến dưới 3 L",
+      "cnStorage": "Hũ lưu trữ, từ 3 L trở lên",
+      "cnCups": "Cốc, để đựng nước hoặc đồ uống",
+      "cnCooking": "Dụng cụ nấu, để đun nóng thực phẩm"
     },
     "judged": {
       "average": "trung bình của 6 sản phẩm",
@@ -198,6 +209,8 @@
     "atMost": "Sản phẩm đạt nếu lượng thôi nhiễm không vượt quá giới hạn: luật viết “tối đa”.",
     "ppm": "ppm ở đây là miligam trên lít dung dịch thử (mg/L).",
     "unknown": "Chúng tôi chưa xác nhận các quy định tại {region}.",
+    "none": "Không có luật nào tại {region} đặt giới hạn cho lượng chì và cadimi mà một sản phẩm đã nung được phép thôi ra (đã kiểm tra {date}).",
+    "noneSource": "Nguồn: <link>{law}</link>.",
     "choosePrompt": "Chọn quốc gia của bạn để xem các quy định của quốc gia đó."
   },
   "equivalents": {

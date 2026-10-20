@@ -101,6 +101,49 @@ describe('Shared recipe tools', () => {
     expect(recipe.forTyping('12.5', 'either', 'de')).to.equal('12,5');
   });
 
+  it('reads Indian digit groups, native digits, the Arabic marks and the marks that keep a direction', () => {
+    // The marks Intl writes around a sign or a percent in Arabic: the Arabic letter mark, and left-to-right marks.
+    const ALM = String.fromCodePoint(0x61c);
+    const LRM = String.fromCodePoint(0x200e);
+    const RLM = String.fromCodePoint(0x200f);
+    const isolated = (text: string) => String.fromCodePoint(0x2066) + text + String.fromCodePoint(0x2069);
+    // A lakh, and Indian groups with a decimal point (en-IN, hi-IN, bn-BD).
+    expect(recipe.parseNumber('1,00,000')).to.equal(100000);
+    expect(recipe.parseNumber('12,34,567.5')).to.equal(1234567.5);
+    expect(recipe.parseNumber('1,23,45,67,890')).to.equal(1234567890);
+    expect(recipe.parseNumber('1,00,000', 'point')).to.equal(100000);
+    // Arabic-Indic digits with the Arabic thousands and decimal marks (ar-EG), and Extended ones (ur-IN).
+    expect(recipe.parseNumber('١٬٢٣٤٫٥')).to.equal(1234.5);
+    expect(recipe.parseNumber('۱٬۲۳۴٫۵')).to.equal(1234.5);
+    // Bengali and Devanagari digits in Indian groups.
+    expect(recipe.parseNumber('১২,৩৪,৫৬৭.৫')).to.equal(1234567.5);
+    expect(recipe.parseNumber('१,००,०००')).to.equal(100000);
+    // A sign or a percent among the marks that keep its direction, as Intl writes them.
+    expect(recipe.parseNumber(ALM + '-3')).to.equal(-3);
+    expect(recipe.parseNumber(ALM + '-٣')).to.equal(-3);
+    expect(recipe.parseNumber(LRM + '-' + LRM + '۳')).to.equal(-3);
+    expect(recipe.parseNumber(RLM + '12.5' + RLM)).to.equal(12.5);
+    expect(recipe.parseNumber(isolated('12,5'))).to.equal(12.5);
+    // A percentage reads as its number, the sign before or after it.
+    expect(recipe.parseNumber('٥٪')).to.equal(5);
+    expect(recipe.parseNumber('٥٪' + ALM)).to.equal(5);
+    expect(recipe.parseNumber('5' + LRM + '%' + LRM)).to.equal(5);
+    expect(recipe.parseNumber('%5')).to.equal(5);
+    expect(recipe.parseNumber('-%5')).to.equal(-5);
+    expect(recipe.parseNumber('7 %', 'either', 'fr')).to.equal(7);
+    // Not numbers: groups of two below the thousands, a sign alone, two signs, a sign inside.
+    for (const text of ['12,5,3', '1,000,00', '1,00,00', '12,34,567,5', '1.00.000', '%', '٪', '5%%', '5%5', '%-5']) {
+      expect(recipe.parseNumber(text), text).to.equal(null);
+    }
+    // One separator is still a decimal, or a thousand as the locale reads it, and Arabic's marks read as English's.
+    expect(recipe.parseNumber('1,00')).to.equal(1);
+    expect(recipe.parseNumber('1,250', 'either', 'ar-EG-u-nu-arab')).to.equal(1250);
+    expect(recipe.parseNumber('1,250', 'either', 'ar-MA')).to.equal(1.25);
+    expect(recipe.separators('ar-EG-u-nu-arab')).to.eql({ decimal: '.', group: ',' });
+    expect(recipe.forTyping('12.5', 'either', 'ar-EG-u-nu-arab')).to.equal('12.5');
+    expect(recipe.plainDigits(LRM + '-' + LRM + '۳ ١٢٫٥ १२')).to.equal('-3 12٫5 12');
+  });
+
   it('converts and writes temperatures in either scale', () => {
     expect(recipe.inScale(1240, 'F')).to.equal(2264);
     expect(recipe.temperatureText(1222, 'C')).to.equal('1222 °C');
@@ -136,6 +179,24 @@ describe('Shared recipe tools', () => {
     const lines = [{ material: KAOLIN, amount: '10' }];
     const checks = recipe.pastLimits({ lines, unity, old: unity, celsius: 1222 }).map((c) => c.check);
     expect(checks).not.to.include('alkali');
+    // Nor as much raw clay as it had (to rounding, or a little more); more than that is news.
+    const clay = (amount: number, oldClay: number) =>
+      recipe
+        .pastLimits({
+          lines: [
+            { material: KAOLIN, amount: String(amount) },
+            { material: SILICA, amount: String(100 - amount) }
+          ],
+          unity,
+          old: unity,
+          oldClay,
+          celsius: 1222
+        })
+        .map((c) => c.check);
+    expect(clay(20.1, 20)).not.to.include('clay-high');
+    expect(clay(30, 28)).not.to.include('clay-high');
+    expect(clay(27, 20)).to.include('clay-high');
+    expect(clay(21, 15)).to.include('clay-high');
   });
 
   it('keeps the figures the checks warn at as data', () => {
@@ -232,6 +293,50 @@ describe('Shared recipe tools', () => {
     expect(recipe.limitRows({ SiO2: 3 }, hr, 'low')).to.equal(null);
     // The app's own set has no high band: cone 10 reads its mid fire figures.
     expect(recipe.unityFor(recipe.GLAZECALC_LIMITS, 'high')).to.equal(recipe.GLAZECALC_LIMITS.unity.mid);
+  });
+
+  it('has no figures from cone 12 up (1320 °C), in either set: published limits stop at cone 10', () => {
+    expect(recipe.FIRING_BANDS).to.eql(['low', 'mid', 'high', 'top']);
+    for (const set of [recipe.HESSELBERTH_ROY_LIMITS, recipe.GLAZECALC_LIMITS]) {
+      expect(recipe.bandOf(set, 1319), set.id).to.not.equal('top');
+      expect(recipe.bandOf(set, 1320), set.id).to.equal('top');
+      expect(recipe.bandOf(set, 1450), set.id).to.equal('top');
+      expect(recipe.unityFor(set, 'top'), set.id).to.equal(null);
+      expect(recipe.limitRows({ SiO2: 6, Al2O3: 0.8 }, set, 'top'), set.id).to.equal(null);
+      expect(set.unity, set.id).to.not.have.property('top');
+    }
+    // A band the set names is read as itself; the app's own set reads high fire as its mid fire.
+    expect(recipe.bandIn(recipe.HESSELBERTH_ROY_LIMITS, 'high')).to.equal('high');
+    expect(recipe.bandIn(recipe.GLAZECALC_LIMITS, 'high')).to.equal('mid');
+    expect(recipe.bandIn(recipe.GLAZECALC_LIMITS, 'top')).to.equal('top');
+  });
+
+  it('checks a cone by its band where it is given, and nothing by range in the top band', () => {
+    const lines = [{ material: KAOLIN, amount: '10' }];
+    // Too much alkali and boron, too little alumina, for any firing's figures.
+    const unity = { K2O: 0.4, Na2O: 0.2, CaO: 0.4, Al2O3: 0.1, B2O3: 0.6, SiO2: 3 };
+    const checks = (input: Partial<Parameters<typeof recipe.pastLimits>[0]>) =>
+      recipe.pastLimits({ lines, unity, ...input }).map((c) => c.check);
+    const ranged = ['boron-high', 'alumina-low', 'alkali'];
+    for (const limitSet of [recipe.HESSELBERTH_ROY_LIMITS, recipe.GLAZECALC_LIMITS]) {
+      expect(checks({ band: 'high', limitSet }), limitSet.id).to.include.members(['alkali', 'alumina-low']);
+      expect(
+        checks({ band: 'top', limitSet }).filter((c) => ranged.includes(c)),
+        limitSet.id
+      ).to.eql([]);
+      expect(
+        checks({ celsius: 1400, limitSet }).filter((c) => ranged.includes(c)),
+        limitSet.id
+      ).to.eql([]);
+      // What does not hang on the firing is still checked: the clay.
+      expect(checks({ band: 'top', limitSet }), limitSet.id).to.include('clay-high');
+    }
+    // The band wins over a temperature: SK 8 is mid fire though JIS says 1250 °C.
+    expect(checks({ band: 'mid', celsius: 1250, limitSet: recipe.HESSELBERTH_ROY_LIMITS })).to.include('boron-high');
+    // A low band with no temperature skips Katz's "too little boron", which needs one.
+    const lean = { ...unity, B2O3: 0 };
+    expect(recipe.pastLimits({ lines, unity: lean, band: 'low' }).map((c) => c.check)).to.not.include('boron-short');
+    expect(recipe.pastLimits({ lines, unity: lean, celsius: 1060 }).map((c) => c.check)).to.include('boron-short');
   });
 
   it('gives a row per limit, with the sums added up and the side a value is past', () => {

@@ -100,6 +100,7 @@
   "limitSet-choices": "Odaberite hesselberth-roy ili glazecalc.",
   "currency-choices": "Odaberite jednu od valuta s popisa ili prepustite odabir svojoj regiji.",
   "calendar-choices": "Datumi se mogu prikazivati u gregorijanskom kalendaru (gregory), tajlandskoj budističkoj eri (buddhist) ili japanskim erama (japanese).",
+  "digits-choices": "Znamenke se mogu prikazivati kako je uobičajeno ondje gdje ste (auto), kao 0–9 (western) ili vlastitim znamenkama jezika (native).",
   "shelf-invalid": "Zaliha je popis sirovina (najviše {most}).",
   "shelf-full": "Najveći broj sirovina u zalihi je {most}. Ništa nije promijenjeno.",
   "shelf-material-unknown": "Te sirovine nema među vašim sirovinama ni u knjižnici Glazecalca.",

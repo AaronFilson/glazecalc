@@ -9,8 +9,8 @@
 //   glazecalc://cones                                the Orton and SK cone charts, as JSON
 import * as z from 'zod';
 import { type McpServer, ResourceNotFoundError, ResourceTemplate } from '@modelcontextprotocol/server';
-import chemistry from '../../../lib/chemistry/index.js';
 import cones from '../../../lib/cones/index.js';
+import firingLib from '../../../lib/cones/firing.js';
 import recipe from '../../../lib/recipe/index.js';
 import languages from '../../../lib/regions/languages.js';
 import { guarded, languageArg, ok } from '../common.ts';
@@ -36,15 +36,38 @@ const AN_HOUR = { ttlMs: 60 * 60 * 1000, cacheScope: 'public' } as const;
 
 const one = (value: string | string[] | undefined): string => (Array.isArray(value) ? (value[0] ?? '') : (value ?? ''));
 
+/** The Orton cones the recipe picker offers with no figure in any chart: 16 up, and 15½. */
+const ortonWithoutFigure = () =>
+  firingLib
+    .coneChoices('orton')
+    .flatMap((group) => group.cones)
+    .filter((cone) => !firingLib.approxCelsius('orton', cone))
+    .sort((a, b) => firingLib.compareCones('orton', a, b));
+
 /** The cone charts as data: what convert_cone_temperature reads. */
 export const coneCharts = () => ({
   orton: {
-    name: 'Orton large cones, heated at 60 °C (108 °F) an hour over the last 100 °C',
-    cones: chemistry.CONES.map((c) => ({
+    name: cones.ORTON.chart.basis + ', over the last 100 °C',
+    title: cones.ORTON.chart.title,
+    source: cones.ORTON.chart.source,
+    reprintedBy: cones.ORTON.chart.reprintedBy,
+    checked: cones.ORTON.chart.checked,
+    note: cones.ORTON.chart.note,
+    cones: cones.ORTON.chart.cones.map((c) => ({
       cone: c.cone,
       celsius: c.celsius,
       fahrenheit: Math.round(recipe.fahrenheit(c.celsius))
-    }))
+    })),
+    conesWithoutFigure: ortonWithoutFigure()
+  },
+  ortonCurrent: {
+    name: "Orton's current figures, °C, by heating rate over the last 100 °C (°C an hour)",
+    title: cones.ORTON.published.title,
+    source: cones.ORTON.published.source,
+    current: cones.ORTON.published.current,
+    checked: cones.ORTON.published.checked,
+    note: cones.ORTON.published.note,
+    cones: cones.ORTON.published.cones
   },
   sk: {
     name: 'SK cones (' + cones.SK.standard + '), ' + cones.SK.basis,
@@ -203,7 +226,8 @@ export const registerGuides = (server: McpServer): void => {
     'glazecalc://cones',
     {
       title: 'Cone charts',
-      description: 'The Orton (06 to 6) and SK (JIS R 8101) cone charts Glazecalc uses, in °C and °F, as JSON.',
+      description:
+        "The cone charts Glazecalc uses, as JSON: Orton cones 022 to 15 (Orton's older chart for large cones at 150 °C an hour, in °C and °F), Orton's own current figures for cone 022 to 14 beside them, and SK cones (JIS R 8101, SK 022 to 20, nominal). Orton publishes no figure above cone 14.",
       mimeType: 'application/json',
       cacheHint: AN_HOUR
     },

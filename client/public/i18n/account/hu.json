@@ -270,6 +270,22 @@
         "saved": "Mentve: a dátumok japán korszakok szerint jelennek meg."
       }
     },
+    "digits": {
+      "legend": "Számjegyek",
+      "help": "A számjegyek, amelyekkel a számok megjelennek. Egyes nyelveknek saját számjegyeik vannak, például az arabnak, a bengálinak és a hindinek, és a régiója dönti el, melyek a szokásosak. A számokat mindkettővel beírhatja.",
+      "auto": {
+        "label": "A régiójában szokásos módon",
+        "saved": "Mentve: számjegyek a régiójában szokásos módon."
+      },
+      "western": {
+        "label": "Nyugati számjegyek, 0–9",
+        "saved": "Mentve: a számok a 0–9 számjegyekkel jelennek meg."
+      },
+      "native": {
+        "label": "A nyelv saját számjegyei, ha vannak neki",
+        "saved": "Mentve: a számok a nyelv saját számjegyeivel jelennek meg, ha vannak neki."
+      }
+    },
     "decimalMark": {
       "legend": "Mennyiségek beírása",
       "either": {

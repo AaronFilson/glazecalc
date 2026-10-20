@@ -6,7 +6,7 @@ interface TwoLevels {
 }
 
 /** Firing bands, in °C. */
-export const FIRING: Readonly<{ lowFireBelow: number; zincMeltsFrom: number }>;
+export const FIRING: Readonly<{ lowFireBelow: number; topFrom: number; zincMeltsFrom: number }>;
 
 /** The figures the checks warn at (limits.js). */
 export const CHECK_LIMITS: Readonly<{
@@ -33,8 +33,8 @@ export const CHECK_LIMITS: Readonly<{
   scaleReads: number;
 }>;
 
-/** A firing band: cone 06-02, cone 4-6, or cone 9-11. */
-export type FiringBand = 'low' | 'mid' | 'high';
+/** A firing band: cone 06-02, cone 4-6, cone 9-11, or cone 12 up ('top', where no limit set has figures). */
+export type FiringBand = 'low' | 'mid' | 'high' | 'top';
 
 export const FIRING_BANDS: ReadonlyArray<FiringBand>;
 
@@ -81,6 +81,8 @@ export const LIMIT_SETS: Readonly<Record<string, LimitSet>>;
 export const DEFAULT_LIMIT_SET: string;
 /** The band of a set a firing falls in; undefined when the firing is not known. */
 export function bandOf(set: LimitSet, celsius: number | undefined): FiringBand | undefined;
+/** The band of a set a firing band is read as: itself where the set names it, else its nearest (the cooler of two). */
+export function bandIn(set: LimitSet, band: FiringBand): FiringBand;
 /** A set's ranges for a band (its nearest, if it does not name it), or null where it does not apply. */
 export function unityFor(set: LimitSet, band: FiringBand): Readonly<Record<string, UnityRange>> | null;
 

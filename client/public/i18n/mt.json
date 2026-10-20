@@ -82,6 +82,31 @@
     "languages": "Lingwi",
     "language": "Lingwa:"
   },
+  "picker": {
+    "results": "{count, plural, one {# riżultat} two {# riżultati} few {# riżultati} many {#-il riżultat} other {# riżultat}}",
+    "languages": {
+      "search": "Fittex il-lingwi",
+      "showAll": "Uri l-lingwi kollha",
+      "noMatch": "L-ebda lingwa ma taqbel"
+    },
+    "regions": {
+      "search": "Fittex il-pajjiżi u r-reġjuni",
+      "showAll": "Uri l-pajjiżi u r-reġjuni kollha",
+      "noMatch": "L-ebda pajjiż jew reġjun ma jaqbel"
+    },
+    "groups": {
+      "africa": "L-Afrika",
+      "americas": "L-Ameriki",
+      "asia": "L-Asja",
+      "eastAsia": "L-Asja tal-Lvant",
+      "europe": "L-Ewropa",
+      "middleEastNorthAfrica": "Il-Lvant Nofsani u l-Afrika ta’ Fuq",
+      "oceania": "L-Oċeanja",
+      "southAsia": "L-Asja tan-Nofsinhar",
+      "southeastAsia": "Ix-Xlokk tal-Asja",
+      "other": "Oħrajn"
+    }
+  },
   "numbers": {
     "notANumber": "Daħħal numru, bħal {example}.",
     "notANumberComma": "Daħħal numru, bħal {example}, b’virgola għad-deċimali.",

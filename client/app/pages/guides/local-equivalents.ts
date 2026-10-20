@@ -66,7 +66,7 @@ const SHOWN = 2;
                 @for (row of group.rows; track row.record.name) {
                   <tr>
                     <th scope="row">
-                      <span translate="no">{{ row.record.name }}</span>
+                      <bdi translate="no">{{ row.record.name }}</bdi>
                       @if (row.status) {
                         <span class="muted"> ({{ row.status }})</span>
                       }
@@ -74,7 +74,7 @@ const SHOWN = 2;
                     <td>{{ row.soldIn }}</td>
                     <td>
                       @for (near of row.near; track near.record.name) {
-                        <span translate="no">{{ near.record.name }}</span>
+                        <bdi translate="no">{{ near.record.name }}</bdi>
                         <span class="muted"> ({{ t('guides.equivalents.apart', { grams: grams(near.grams) }) }})</span>
                         @if (!$last) {
                           <br />

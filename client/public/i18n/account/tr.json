@@ -270,6 +270,22 @@
         "saved": "Kaydedildi: tarihler Japon dönemleriyle gösterilir."
       }
     },
+    "digits": {
+      "legend": "Rakamlar",
+      "help": "Sayıların gösterildiği rakamlar. Arapça, Bengalce ve Hintçe gibi bazı dillerin kendi rakamları vardır; hangilerinin olağan olduğunu bulunduğunuz yer belirler. Sayıları ikisiyle de yazabilirsiniz.",
+      "auto": {
+        "label": "Bulunduğunuz yerde olağan olduğu gibi",
+        "saved": "Kaydedildi: rakamlar bulunduğunuz yerde olağan olduğu gibi."
+      },
+      "western": {
+        "label": "Batı rakamları, 0–9",
+        "saved": "Kaydedildi: sayılar 0–9 rakamlarıyla gösterilir."
+      },
+      "native": {
+        "label": "Dilin kendi rakamları, varsa",
+        "saved": "Kaydedildi: sayılar, varsa dilin kendi rakamlarıyla gösterilir."
+      }
+    },
     "decimalMark": {
       "legend": "Miktarların yazılması",
       "either": {

@@ -19,6 +19,7 @@ import { errorMessage } from '../../core/error-message';
 import { Additive, AdditiveUnit, Material, Recipe } from '../../core/models';
 import { Busy } from '../../shared/busy';
 import { localDate } from '../../shared/dates';
+import { IsolatedPipe } from '../../shared/format-pipes';
 import { formatLocale, notANumber, parseNumber, typedDecimalMark, upTo } from '../../shared/format';
 import { Notices, NoticesList } from '../../shared/notices';
 import { NumberInput } from '../../shared/number-input';
@@ -89,7 +90,7 @@ const HOW_NOTES: Partial<Record<MatchHow, string>> = {
  */
 @Component({
   selector: 'gc-import-page',
-  imports: [FormsModule, NoticesList, NumberInput, PageHeader, RouterLink, TranslocoDirective],
+  imports: [FormsModule, IsolatedPipe, NoticesList, NumberInput, PageHeader, RouterLink, TranslocoDirective],
   template: `<ng-container *transloco="let t">
     <gc-page-header [title]="t('recipe.import.title')" [lead]="t('recipe.import.lead')" />
     <p class="no-print">
@@ -222,7 +223,7 @@ const HOW_NOTES: Partial<Record<MatchHow, string>> = {
                           @if (line.candidates.length) {
                             <optgroup [label]="t('recipe.import.closest')">
                               @for (key of line.candidates; track key) {
-                                <option [value]="key">{{ nameOf(key) }}</option>
+                                <option [value]="key">{{ nameOf(key) | gcIsolated }}</option>
                               }
                             </optgroup>
                           }
@@ -230,7 +231,7 @@ const HOW_NOTES: Partial<Record<MatchHow, string>> = {
                             @if (group.choices.length) {
                               <optgroup [label]="t(group.label)">
                                 @for (choice of group.choices; track choice.key) {
-                                  <option [value]="choice.key">{{ choice.record.name }}</option>
+                                  <option [value]="choice.key">{{ choice.record.name | gcIsolated }}</option>
                                 }
                               </optgroup>
                             }

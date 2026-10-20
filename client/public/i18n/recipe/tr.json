@@ -364,7 +364,7 @@
     "intro": "Her hammaddenin kaydında verildiği gibi; standart kütüphanedekiler tedarikçilerin güvenlik bilgi formlarından gelir.",
     "line": "<b>{names}:</b> {hazards}",
     "unknown": "{count, plural, one {{list} için tehlike verilmemiş: yanında gelen güvenlik bilgi formuna bakın.} other {{list} için tehlike verilmemiş: yanlarında gelen güvenlik bilgi formlarına bakın.}}",
-    "safety": "Kuru sır hammaddeleri toz çıkarır: tozu ciğerlerinizden uzak tutun; tehlikeli olarak sınıflandırılmayan hammaddelerin tozu da dahil. <mixing>Güvenli karıştırma ve havalandırma</mixing> rehberine bakın; çocuklar veya evcil hayvanlar çevredeyse <home>Ailenizi zehirlemeyin</home> rehberine de bakın. Bir hammaddenin güvenlik bilgi formu daha fazlasını söylüyorsa, ona uyun."
+    "safety": "Kuru sır hammaddeleri toz çıkarır ve bu tozu ciğerlerinizden uzak tutmalısınız; tehlikeli olarak sınıflandırılmayan hammaddelerin tozu da dahil. <mixing>Güvenli karıştırma ve havalandırma</mixing> rehberine bakın; çocuklar veya evcil hayvanlar çevredeyse <home>Ailenizi zehirlemeyin</home> rehberine de bakın. Bir hammaddenin güvenlik bilgi formu daha fazlasını söylüyorsa, ona uyun."
   },
   "compare": {
     "heading": "İki reçeteyi karşılaştır",
@@ -533,7 +533,10 @@
     "suppliesShare": "{oxide} miktarının %{percent} kadarı",
     "suppliesLittle": "sırrın küçük bir kısmı",
     "changed": "{name} {from} → {to}",
-    "added": "{name} {amount}, yeni"
+    "added": "{name} {amount}, yeni",
+    "why": {
+      "rawClay": "ham kil sır kururken çeker ve çok miktarda olduğunda parçanın üzerinde çatlayıp fırında toplanabilir; geri kalanı kalsine kaolenle karşılanabilir"
+    }
   },
   "shelf": {
     "empty": "Eşleştirmek için elde hammadde yok."
@@ -571,7 +574,8 @@
     "bands": {
       "low": "Düşük ısı, 06–02 numaralı piramit",
       "mid": "Orta ısı, 4–6 numaralı piramit",
-      "high": "Yüksek ısı, 9–11 numaralı piramit"
+      "high": "Yüksek ısı, 9–11 numaralı piramit",
+      "top": "Çok yüksek ısı, 12 numaralı ve daha sıcak piramitler"
     },
     "shownFor": "Pişirim seçilmediğinde gösterilen değerler şunun içindir: {band}. Pişirim reçeteyle birlikte kaydedilir.",
     "cone": "Bunlar, setin {cone} numaralı piramit için değerleridir.",
@@ -591,6 +595,7 @@
     "notInSet": "Bu sette {oxides} için aralık yok.",
     "checksOnly": "Bu set yalnızca şunları kontrol eder: {oxides}.",
     "notApply": "{name} adlı sette bu pişirim ({band}) için değer yok; bu yüzden kontrol edilmedi: başka bir pişirimin değerleri yanıltır.",
+    "topNote": "Bulduğumuz yayımlanmış sır sınırları 10 numaralı piramitte biter ve Glazecalc bunları 11 numaralı piramitten öteye uygulamaz; bu yüzden 12 numaralı ve daha sıcak piramitlere yapılan bir pişirim sınırlarla karşılaştırılmaz. Kararı test karolarınız verir.",
     "guidance": "Bunlar yol göstericidir; geçti ya da kaldı demek değildir: sınırların dışındaki bir sır iyi olabilir, sınırların içindeki bir sır ise yine de sır çatlağı yapabilir, metal salabilir veya başarısız olabilir. Test edin.",
     "source": "Kaynak:",
     "saveFailed": "Sınır seti seçiminiz hesabınıza kaydedilemedi; bu yüzden önceki sınır seti kullanımda kalıyor.",
@@ -628,7 +633,8 @@
       "ash": "Glazecalc bu sırrın kimyasını pişirimiyle karşılaştıramaz: içinde kül var ve külün bileşimi bu kontrolün kullandığı yayımlanmış değerler için fazla değişken.",
       "noTemperature": "Glazecalc bu sırrın kimyasını bu pişirimle ({scale, select, band {{band, select, low {düşük ısı} mid {orta ısı} other {yüksek ısı}}} sk {SK {cone}} temperature {{cone} °C} other {{cone} numaralı piramit}}) karşılaştıramaz: o piramit için ölçülmüş bir sıcaklık yok.",
       "between": "Glazecalc bu sırrın kimyasını bu pişirimle ({scale, select, band {{band, select, low {düşük ısı} mid {orta ısı} other {yüksek ısı}}} sk {SK {cone}} temperature {{cone} °C} other {{cone} numaralı piramit}}) karşılaştıramaz: bu kontrolün kullandığı yayımlanmış değerler düşük ısı ile orta ve yüksek ısı içindir; aradaki piramitler (01 ile 3) için değildir.",
-      "belowChart": "Glazecalc bu sırrın kimyasını bu pişirimle ({scale, select, band {{band, select, low {düşük ısı} mid {orta ısı} other {yüksek ısı}}} sk {SK {cone}} temperature {{cone} °C} other {{cone} numaralı piramit}}) karşılaştıramaz: Katz’ın bor kuralı 06 ile 10 numaralı piramitler içindir ve bu pişirim daha soğuktur."
+      "belowChart": "Glazecalc bu sırrın kimyasını bu pişirimle ({scale, select, band {{band, select, low {düşük ısı} mid {orta ısı} other {yüksek ısı}}} sk {SK {cone}} temperature {{cone} °C} other {{cone} numaralı piramit}}) karşılaştıramaz: Katz’ın bor kuralı 06 ile 10 numaralı piramitler içindir ve bu pişirim daha soğuktur.",
+      "aboveChart": "Glazecalc bu sırrın kimyasını bu pişirimle ({scale, select, band {{band, select, top {çok yüksek ısı} other {yüksek ısı}}} sk {SK {cone}} temperature {{cone} °C} other {{cone} numaralı piramit}}) karşılaştıramaz: Katz’ın bor kuralı 06 ile 10 numaralı piramitler içindir, Hesselberth & Roy’un silis ve alümina değerleri 10 numaralı piramitte biter ve bu pişirim daha sıcaktır."
     }
   },
   "stull": {
@@ -979,7 +985,7 @@
     "approxTemperature": "≈ {temperature} ({basis}; yaklaşık)",
     "approxCone": "≈ {cone} ({basis}; yaklaşık)",
     "basis": {
-      "orton60": "Orton büyük piramitleri, saatte 60 °C hızla",
+      "orton150": "Orton’un büyük piramitler için daha eski tablosu, saatte 150 °C hızla",
       "kyoto": "Kyoto belediye enstitüsü tarafından saatte 100 °C hızla ölçüldü",
       "stated": "verildiği gibi"
     },

@@ -4,6 +4,7 @@ import { tmpdir } from 'node:os';
 import path from 'node:path';
 import { readFileSync } from 'node:fs';
 import {
+  checkDigits,
   checkGuides,
   checkTranslations,
   compareKeys,
@@ -191,6 +192,55 @@ describe('message checks', () => {
       expect(compareMessage('tr', 'k', english, '{count, plural, other {# malzeme}}')).to.eql([
         'k: tr needs the plural forms one for {count}'
       ]);
+    });
+  });
+
+  describe('in Hindi, Arabic and Urdu', () => {
+    const english =
+      'Fire to 1222 °C, add 100,000 g of frit (1,234,567.5 g in all), keep the stain at 1.5% or less, and open the kiln after 8pm.';
+    const figures = ['1.5 %', '100000 g', '1222 °C', '1234567.5 g', '20'];
+    const sentences: [string, string][] = [
+      // Indian digit groups: a lakh, and 12,34,567.5.
+      [
+        'hi',
+        '1222 °C तक पकाएँ, 1,00,000 g फ्रिट डालें (कुल 12,34,567.5 g), रंग 1.5% या उससे कम रखें, और 20 बजे के बाद भट्ठी खोलें।'
+      ],
+      [
+        'ar',
+        'اِحرق حتى 1222 °C، وأضف 100,000 g من الفريت (1,234,567.5 g في المجموع)، وأبقِ الصبغة عند 1.5% أو أقل، وافتح الفرن بعد الساعة 20.'
+      ],
+      [
+        'ur',
+        '1222 °C تک پکائیں، 1,00,000 g فرٹ ڈالیں (کل 12,34,567.5 g)، رنگ 1.5% یا کم رکھیں، اور 20 بجے کے بعد بھٹی کھولیں۔'
+      ]
+    ];
+
+    it('reads their numbers, Indian digit groups too, as the English’s', () => {
+      expect(numbersIn(english, 'en')).to.eql(figures);
+      for (const [language, sentence] of sentences) {
+        expect(numbersIn(sentence, language), language).to.eql(figures);
+        expect(compareMessage(language, 'k', english, sentence), language).to.eql([]);
+      }
+      // A lakh changed by a digit is a different number.
+      expect(compareMessage('hi', 'k', english, sentences[0]![1].replace('1,00,000', '1,00,001'))).to.eql([
+        'k: its numbers differ from the English; missing 100000 g; not in the English 100001 g'
+      ]);
+    });
+
+    it('reads native digits, the Arabic marks and the marks that keep a direction, as Intl writes them', () => {
+      const ALM = String.fromCodePoint(0x61c);
+      const LRM = String.fromCodePoint(0x200e);
+      // Arabic-Indic digits with the Arabic decimal, thousands and percent signs (ar-EG).
+      const native =
+        'اِحرق حتى ١٢٢٢ °C، وأضف ١٠٠٬٠٠٠ g من الفريت (١٬٢٣٤٬٥٦٧٫٥ g في المجموع)، وأبقِ الصبغة عند ١٫٥٪ أو أقل، وافتح الفرن بعد الساعة ٢٠.';
+      expect(numbersIn(native, 'ar')).to.eql(figures);
+      expect(numbersIn('৫,০০,০০০ g', 'bn')).to.eql(['500000 g']);
+      expect(numbersIn('१२२२ °C', 'mr')).to.eql(['1222 °C']);
+      // As Intl writes 5% and -3 in Arabic, in the UAE and in Egypt.
+      expect(numbersIn('5' + LRM + '%' + LRM, 'ar')).to.eql(['5 %']);
+      expect(numbersIn('٥٪' + ALM + ' ' + ALM + '-٣', 'ar')).to.eql(['3', '5 %']);
+      // A decimal-comma language reads the Arabic decimal mark as its comma.
+      expect(numbersIn('١٫٥ g', 'fr')).to.eql(['1.5 g']);
     });
   });
 
@@ -424,6 +474,27 @@ describe('message checks', () => {
         'app de nav.gone: no such message in English',
         'recipe fr save: placeholders none, but the English has name'
       ]);
+    });
+
+    it('finds a translation that writes digits other than 0–9, in a message or a guide', () => {
+      const digits = mkdtempSync(path.join(tmpdir(), 'i18n-digits-'));
+      try {
+        mkdirSync(path.join(digits, 'guides', 'firing'), { recursive: true });
+        writeFileSync(path.join(digits, 'en.json'), JSON.stringify({ fire: 'Fire to 1222 °C.', kiln: 'Kiln' }));
+        writeFileSync(path.join(digits, 'ar.json'), JSON.stringify({ fire: 'اِحرق حتى ١٢٢٢ °C.', kiln: 'الفرن' }));
+        writeFileSync(path.join(digits, 'hi.json'), JSON.stringify({ fire: '1222 °C तक पकाएँ।', kiln: 'भट्ठी' }));
+        writeFileSync(path.join(digits, 'guides', 'firing', 'en.md'), 'Fire to cone 6.\n');
+        writeFileSync(path.join(digits, 'guides', 'firing', 'bn.md'), 'কোন ৬ পর্যন্ত পোড়ান।\n');
+        writeFileSync(path.join(digits, 'guides', 'firing', 'ur.md'), 'کون 6 تک پکائیں۔\n');
+        expect(checkDigits(digits)).to.eql([
+          "app ar fire: writes digits as 0–9, not ١ ٢; the reader's settings show a language's own digits",
+          "guides/firing/bn.md: writes digits as 0–9, not ৬; the reader's settings show a language's own digits"
+        ]);
+      } finally {
+        rmSync(digits, { recursive: true, force: true });
+      }
+      // The app's own translations write 0–9.
+      expect(checkDigits()).to.eql([]);
     });
 
     it('compares the keys the app uses with the English', () => {

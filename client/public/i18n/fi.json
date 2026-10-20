@@ -82,6 +82,31 @@
     "languages": "Kielet",
     "language": "Kieli:"
   },
+  "picker": {
+    "results": "{count, plural, one {# osuma} other {# osumaa}}",
+    "languages": {
+      "search": "Hae kieliä",
+      "showAll": "Näytä kaikki kielet",
+      "noMatch": "Ei vastaavaa kieltä"
+    },
+    "regions": {
+      "search": "Hae maita ja alueita",
+      "showAll": "Näytä kaikki maat ja alueet",
+      "noMatch": "Ei vastaavaa maata tai aluetta"
+    },
+    "groups": {
+      "africa": "Afrikka",
+      "americas": "Amerikka",
+      "asia": "Aasia",
+      "eastAsia": "Itä-Aasia",
+      "europe": "Eurooppa",
+      "middleEastNorthAfrica": "Lähi-itä ja Pohjois-Afrikka",
+      "oceania": "Oseania",
+      "southAsia": "Etelä-Aasia",
+      "southeastAsia": "Kaakkois-Aasia",
+      "other": "Muut"
+    }
+  },
   "numbers": {
     "notANumber": "Anna luku, esimerkiksi {example}.",
     "notANumberComma": "Anna luku desimaalipilkulla, esimerkiksi {example}.",

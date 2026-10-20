@@ -81,7 +81,7 @@ Die Kegeltabelle gibt für einen selbststehenden Kegel 6 {{2232 °F; 1222 °C}} 
 
 ## Die Kegeltabelle {#cone-chart}
 
-Diese Werte stammen aus Ortons Kegeltabelle (©2001) für selbststehende Kegel{{en: cones}}. Wählen Sie die Spalte, die dazu passt, wie schnell Ihr Ofen in den letzten {{180 °F; 100 °C}} gestiegen ist. Ortons Faustregel: die Spalte {{270 °F/h; 150 °C/h}} für einen schnellen Brand, die Spalte {{108 °F/h; 60 °C/h}} für einen mittleren und die Spalte {{27 °F/h; 15 °C/h}} für einen langsamen. Um eine Heizrate zu berechnen, teilen Sie den Temperaturanstieg durch die Stunden, die er gedauert hat: Ein Ofen, der in 3 Stunden um {{900 °F; 500 °C}} steigt, heizt mit etwa {{300 °F/h; 167 °C/h}}.
+Diese Werte stammen aus Ortons Kegeltabelle (©2001) für selbststehende Kegel{{en: cones}}; die Kegel 11 bis 14 stammen aus den Tabellen, die Orton heute veröffentlicht. Diese nennen dort, wo sich beide überschneiden, dieselben Werte und für die Kegel 13 und 14 nur °C (ihre °F-Werte sind hier umgerechnet). Wählen Sie die Spalte, die dazu passt, wie schnell Ihr Ofen in den letzten {{180 °F; 100 °C}} gestiegen ist. Ortons Faustregel: die Spalte {{270 °F/h; 150 °C/h}} für einen schnellen Brand, die Spalte {{108 °F/h; 60 °C/h}} für einen mittleren und die Spalte {{27 °F/h; 15 °C/h}} für einen langsamen. Um eine Heizrate zu berechnen, teilen Sie den Temperaturanstieg durch die Stunden, die er gedauert hat: Ein Ofen, der in 3 Stunden um {{900 °F; 500 °C}} steigt, heizt mit etwa {{300 °F/h; 167 °C/h}}.
 
 Table: Selbststehende Ortonkegel: die Temperatur, bei der sich jeder umbiegt, nach Heizrate in den letzten {{180 °F; 100 °C}}
 Label: Orton-Kegeltabelle
@@ -108,8 +108,14 @@ Label: Orton-Kegeltabelle
 | 8     |          {{2212 °F; 1211 °C}} |          {{2280 °F; 1249 °C}} |            {{2320 °F; 1271 °C}} |
 | 9     |          {{2235 °F; 1224 °C}} |          {{2300 °F; 1260 °C}} |            {{2336 °F; 1280 °C}} |
 | 10    |          {{2284 °F; 1251 °C}} |          {{2345 °F; 1285 °C}} |            {{2381 °F; 1305 °C}} |
+| 11    |          {{2322 °F; 1272 °C}} |          {{2361 °F; 1294 °C}} |            {{2399 °F; 1315 °C}} |
+| 12    |          {{2345 °F; 1285 °C}} |          {{2383 °F; 1306 °C}} |            {{2419 °F; 1326 °C}} |
+| 13    |          {{2390 °F; 1310 °C}} |          {{2428 °F; 1331 °C}} |            {{2458 °F; 1348 °C}} |
+| 14    |          {{2464 °F; 1351 °C}} |          {{2489 °F; 1365 °C}} |            {{2523 °F; 1384 °C}} |
 
 Ein Strich steht für einen Wert, der hier nicht übernommen wurde; Sie finden ihn in Ortons vollständiger Tabelle.
+
+Orton stellt Kegel bis 42 für Hochtemperaturanwendungen her, veröffentlicht Temperaturen aber nur bis Kegel 14; für heißere Kegel sind seine Tabellen „auf Anfrage erhältlich“. Eine ältere Orton-Tabelle, wie Ofenhersteller sie nachdrucken, gibt für einen Normalkegel 15 bei {{270 °F/h; 150 °C/h}} den Wert {{2608 °F; 1431 °C}} an, und für Kegel 16 oder höher haben wir keinen veröffentlichten Wert gefunden. Setzen Sie über Kegel 14 hinaus Messkegel{{en: witness cones}} und richten Sie sich nach ihnen, und prüfen Sie, ob die vom Hersteller angegebene Höchsttemperatur Ihres Ofens diese Hitze erreicht.
 
 Normalkegel weichen nur um wenige Grad von diesen Werten ab: Ein Normalkegel 6 bei {{108 °F/h; 60 °C/h}} liegt bei {{2228 °F; 1220 °C}}. Kleine Kegel, wie sie im Kiln-Sitter verwendet werden, sind nur für {{540 °F/h; 300 °C/h}} aufgeführt; deshalb nennt die Tabelle für einen kleinen Kegel 6 {{2291 °F; 1255 °C}}. Das ist nicht die Temperatur, bei der ein Kiln-Sitter den Ofen abschaltet. Der Kegel im Kiln-Sitter soll mit dem Kegel auf der Ofenplatte übereinstimmen, und der Kegel auf der Ofenplatte hat das letzte Wort.
 
@@ -298,6 +304,8 @@ Die Nummern reichen hier von SK 022, dem kühlsten, bis SK 20. Zwischen SK 015 u
 
 Stecken Sie jeden großen Kegel in eine Unterlegplatte oder einen Tonklumpen, zu seiner Biegeseite hin geneigt. Halten Sie wie bei jedem Kegel Höhe und Neigung von Brand zu Brand gleich, denn ein Unterschied in einem von beiden ändert, wie weit er sich biegt. Stellen Sie die drei Kegel des Kegelsatzes{{en: cone pack}} (unten) zusammen auf, tief im Ofen nahe der Mitte des Besatzes, wo sie die Hitze bekommen, die die Ware bekommt, und wo Sie sie dennoch durch ein Schauloch sehen können; prüfen Sie, bevor Sie den Ofen schließen, dass Sie alle drei sehen.
 
+Anleitungen eines Herstellers oder Händlers dazu, wie tief oder in welchem Winkel SK-Kegel einzusetzen sind, haben wir nicht gefunden. Am nächsten kommt eine Labornorm, JIS R 2204, Japans Prüfung, wie viel Hitze ein feuerfester Werkstoff aushält: Sie setzt jeden SK-Kegel mit seiner beschrifteten Fläche im Winkel von 80° zu einer ebenen Unterlage und mit seinem Fuß etwa 4 mm tief darin ein. Das ist eine Prüfung für feuerfeste Werkstoffe, keine Regel für das Brennen von Keramik, und wir haben sie in einer Abschrift der Norm gelesen, nicht in der Norm selbst.
+
 ### Führungs-, Haupt- und Wachkegel
 
 Kegel werden zu dritt verkauft und aufgestellt: ein Führungskegel, ein Hauptkegel beim Ziel und ein Wachkegel. Nehmen Sie als Hauptkegel die SK-Nummer, die Ihr Rezept oder Ihr Ton nennt, als Führungskegel den nächstkühleren Kegel (eine Zeile höher in der Tabelle) und als Wachkegel den nächstheißeren. Wenn sich der Führungskegel zu biegen beginnt, ist das Ende nahe; wenn sich der Wachkegel biegt, ist der Brand zu weit gegangen.
@@ -366,6 +374,8 @@ Selbststehende Ortonkegel werden in Japan unter dem Namen 立つゼーゲル (�
 
 - [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (die SK-Tabelle, geprüft am 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
 - [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (in Kraft, bestätigt am 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
+- [JSA: JIS R 2204:1999, 耐火物及び耐火物原料の耐火度試験方法 (in Kraft, bestätigt am 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+2204:1999)
+- [kikakurui.com: eine Abschrift von JIS R 2204:1999, deren Abschnitt 5 a) das Einsetzen der Kegel regelt (gelesen am 2026-10-19)](https://kikakurui.com/r2/R2204-1999-01.html)
 - [Kyoto Municipal Institute of Industrial Technology and Culture: Hinweise zum Wechsel von Kyoto-Kegeln zu Ortonkegeln](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
 
 :::
@@ -607,7 +617,7 @@ Zum Lüften des Raums und zu Kohlenmonoxid-Meldern lesen Sie [Sicheres Anmischen
 ### Während der Ofen brennt
 
 - Schauen Sie nur mit einer Schweißerschutzbrille mit IR-Schutzfilter der Schutzstufe 3 durch ein Schauloch; Sonnenbrillen genügen nicht. Skutt rät, die Stopfen hineinzudrehen, damit sie nicht herausfallen.
-- Lassen Sie den Ofen nicht über die erwartete Brenndauer hinaus unbeaufsichtigt; ein Kiln-Sitter ist keine ausfallsichere Abschaltung.
+- Bleiben Sie in der Nähe und sehen Sie während des Brennens nach dem Ofen, vor allem um die erwartete Endzeit herum; ein Kiln-Sitter ist keine ausfallsichere Abschaltung. Brennen Sie nur, wenn eine erwachsene Person den ganzen Brand über zu Hause und wach ist.
 - Brennen Sie nie auf oder in der Nähe von etwas Brennbarem, etwa einem Holzfußboden oder Teppich.
 - Halten Sie die Sicherheitsabstände aus Ihrer Anleitung ein. Veröffentlichte Werte reichen von 12 Zoll (30 cm) bis 3 Fuß (91 cm); wo die Anleitung schweigt, sind 18 Zoll (46 cm) von Wänden und 3 Fuß (91 cm) von allem Brennbaren die sicherste Wahl.
 - Halten Sie den Raum um das Gewicht des Kiln-Sitters frei, damit es fallen kann.

@@ -52,6 +52,7 @@
     "emergency": "Skubus atvejis: žmogus be sąmonės, nekvėpuoja, ištiko traukuliai",
     "poisonAdvice": "{who, select, children {Konsultacija dėl apsinuodijimo: {name} (tik dėl vaikų)} other {Konsultacija dėl apsinuodijimo: {name}}}",
     "or": "arba {number}",
+    "orCall": "arba <link>{number}</link>",
     "online": "Internete: <link>{name}</link>.",
     "poisonAdviceNone": "Konsultacija dėl apsinuodijimo",
     "noLine": "Nepavyko patvirtinti, kad šioje šalyje veikia vieša apsinuodijimų informacijos linija. Skambinkite savo gydytojui arba, jei skubu, pagalbos numeriu.",
@@ -61,8 +62,7 @@
     "vet": "Skambinkite savo veterinarui.",
     "checkedOn": "Patikrinta:",
     "choosePrompt": "Pasirinkite šalį, kad pamatytumėte, kur ten skambinti.",
-    "ministry": "Sveikatos apsaugos ministerijos puslapis: <link>{name}</link>.",
-    "reported": "Oficialūs vyriausybės puslapiai nurodo 113, 114 ir 115, bet ne tai, kam skirtas kiekvienas; parodytos paskirtys atitinka aplinkraštį 22/2014/TT-BTTTT, kaip jį cituoja antriniai puslapiai."
+    "ministry": "Sveikatos apsaugos ministerijos puslapis: <link>{name}</link>."
   },
   "density": {
     "sg": "santykinis tankis {value}",
@@ -112,6 +112,10 @@
     "bandFromTo": "Dulkės, kuriose yra nuo {from} % iki {to} % laisvojo silicio dioksido (SiO₂)",
     "bandOverTo": "Dulkės, kuriose yra daugiau nei {from} % ir iki {to} % laisvojo silicio dioksido",
     "bandAbove": "Dulkės, kuriose yra daugiau nei {from} % laisvojo silicio dioksido",
+    "untilDate": "Iki {date}",
+    "fromDate": "Nuo {date}",
+    "beforeFormula": "Įkvepiamųjų (alveolinės frakcijos) dulkių ribinė vertė, kai Q – jose esančio kristalinio silicio dioksido kiekis, %",
+    "beforeAll": "Dulkėms, kurias sudaro vien kristalinis silicio dioksidas",
     "recommended": "Rekomenduoja {abbr}",
     "value": "{value} mg/m³",
     "kind": {
@@ -122,6 +126,7 @@
     },
     "setBy": "Nustatyta: <link>{law}</link>.",
     "from": "Taikoma nuo {date}.",
+    "beforeSetBy": "Iki tol ribinę vertę nustato <link>{law}</link>.",
     "lowerThanEu": "Mažesnė už privalomą ES ribinę vertę – {value} mg/m³.",
     "sameAsEu": "Tokia pati kaip privaloma ES ribinė vertė.",
     "recommendedBy": "{abbr} ({by}) šią vertę rekomenduoja savo dokumente <link>{title}</link>. Teisės aktuose ji nenustatyta.",
@@ -184,7 +189,13 @@
       "vnMedium": "Gilūs dirbiniai maistui laikyti, nuo 1100 mL iki mažesnių nei 3000 mL",
       "vnStorage": "Gilūs dirbiniai maistui laikyti, 3000 mL ar didesni",
       "vnCooking": "Gilūs dirbiniai maistui gaminti",
-      "vnCups": "Puodeliai ir nedideli dubenėliai"
+      "vnCups": "Puodeliai ir nedideli dubenėliai",
+      "cnFlat": "Plokšti indai, ne gilesni kaip 25 mm",
+      "cnSmall": "Maži gilūs indai, mažesni nei 1,1 L, išskyrus puodelius",
+      "cnLarge": "Dideli gilūs indai, nuo 1,1 L iki mažiau nei 3 L",
+      "cnStorage": "Laikymo indai, 3 L ar didesni",
+      "cnCups": "Puodeliai vandeniui ar gėrimams",
+      "cnCooking": "Indai maistui gaminti, skirti maistui kaitinti"
     },
     "judged": {
       "average": "6 gaminių vidurkis",
@@ -198,6 +209,8 @@
     "atMost": "Gaminys tinkamas, jei išskiria ne daugiau, nei leidžia ribinė vertė: teisės akte parašyta „ne daugiau kaip“.",
     "ppm": "ppm čia reiškia miligramus litre bandomojo tirpalo (mg/L).",
     "unknown": "Taisyklių dar nepatvirtinome ({region}).",
+    "none": "{region}: nėra teisės akto, kuris nustatytų ribines vertes švinui ir kadmiui, kuriuos gali išskirti išdegtas gaminys (patikrinta {date}).",
+    "noneSource": "Šaltinis: <link>{law}</link>.",
     "choosePrompt": "Pasirinkite šalį, kad pamatytumėte jos taisykles."
   },
   "equivalents": {

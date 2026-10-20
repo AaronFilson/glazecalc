@@ -1,5 +1,7 @@
 import { TestBed } from '@angular/core/testing';
+import { regionFor } from '../../../../lib/regions';
 import { PreferencesService } from '../../core/preferences.service';
+import { choosePicked, pickerField } from '../../testing/picker';
 import { testProviders } from '../../testing/test-providers';
 import { PoisonLines, joinNotes } from './poison-lines';
 
@@ -15,10 +17,7 @@ describe('PoisonLines', () => {
     await fixture.whenStable();
     const element = fixture.nativeElement as HTMLElement;
     const choose = async (code: string) => {
-      const select = element.querySelector('select') as HTMLSelectElement;
-      select.value = code;
-      select.dispatchEvent(new Event('change'));
-      await fixture.whenStable();
+      await choosePicked(fixture, pickerField(element), regionFor(code)!.name);
     };
     const calls = () => [...element.querySelectorAll('a[href^="tel:"]')].map((a) => a.getAttribute('href'));
     return { element, choose, calls };
@@ -64,14 +63,14 @@ describe('PoisonLines', () => {
     expect(text).toContain('Call your vet.');
   });
 
-  it("gives Türkiye's 112 and UZEM on 114, around the clock, with no claim on cost", async () => {
+  it("gives Türkiye's 112 and UZEM on 114, around the clock, free, for the public and health workers", async () => {
     const { element, calls } = await create('TR');
     expect(calls()).toEqual(['tel:112', 'tel:114']);
     const text = (element.textContent ?? '').replace(/\s+/g, ' ');
     expect(text).toContain('One number for ambulance, fire, police, gendarmerie and coast guard.');
     expect(text).toContain('Poison advice: National Poison Information Centre (Ulusal Zehir Danışma Merkezi, UZEM)');
-    expect(text).toContain('24 hours, every day');
-    expect(text).not.toContain('free');
+    // Free and for the public on official government pages read on 2026-10-19.
+    expect(text).toContain('24 hours, every day, free. For the public and for health workers.');
   });
 
   it("closes each note as the page's language does, never twice", () => {

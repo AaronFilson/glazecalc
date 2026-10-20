@@ -69,7 +69,7 @@ import * as log from '../lib/log.ts';
 import { MESSAGES, say, type MessageCode } from '../lib/messages.ts';
 import { isDuplicateKey } from '../lib/mongo_errors.ts';
 import * as oauth from '../lib/oauth.ts';
-import { isPage } from '../lib/pages.ts';
+import { nextPage } from '../lib/pages.ts';
 import * as password from '../lib/password.ts';
 import * as limits from '../lib/rate_limit.ts';
 import * as secondStep from '../lib/second_step.ts';
@@ -79,23 +79,6 @@ import User, { factorMethods, mfaOn, type UserDocument } from '../models/user.ts
 
 const oauthRouter = express.Router();
 export default oauthRouter;
-
-/** Pages that make no sense to come back to once signed in: those go to the home page. */
-const NOT_AFTER = ['/', '/signin', '/signup', '/forgot', '/reset', '/confirm-email'];
-
-/**
- * The page to go to once signed in, with its language (/de/recipe): one of the
- * app's own pages (isPage), never another site; /home when it is none.
- */
-export const nextPage = (value: unknown): string => {
-  if (typeof value !== 'string' || value.length > 200 || !value.startsWith('/') || /^[/\\]{2}/.test(value)) {
-    return '/home';
-  }
-  const path = value.split(/[?#]/)[0]!;
-  if (!isPage(path)) return '/home';
-  const prefix = languages.languagePrefix(languages.languageOfPath(path));
-  return NOT_AFTER.includes(languages.pagePath(path)) ? prefix + '/home' : path;
-};
 
 /** The same page in the same language: /de/recipe and '/account' give /de/account. */
 const inLanguageOf = (next: string, page: string): string =>
@@ -405,7 +388,8 @@ oauthRouter.post('/finish', limits.oauth, async (req, res) => {
         if (isDuplicateKey(err)) return res.status(409).json(say('provider-expired'));
         throw err;
       }
-      if (unconfirmed) emailLinks.sendVerification(user);
+      // The confirmation link comes back to the page the sign-in was for, as the sign-in does.
+      if (unconfirmed) emailLinks.sendVerification(user, next);
       return signedIn(res, user, login.trialId, login.keep, next);
     }
     case 'link-needed':

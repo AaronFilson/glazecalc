@@ -81,7 +81,7 @@ Preglednica za samostoječi stožec 6 navaja {{2232 °F; 1222 °C}}, vendar le, 
 
 ## Preglednica stožcev {#cone-chart}
 
-Te vrednosti so iz Ortonove preglednice stožcev (©2001) za samostoječe stožce{{en: cones}}. Izberite stolpec, ki ustreza temu, kako hitro je temperatura v vaši peči naraščala v zadnjih {{180 °F; 100 °C}}. Po Ortonovem pravilu velja za hitro žganje stolpec {{270 °F/h; 150 °C/h}}, za srednje hitro stolpec {{108 °F/h; 60 °C/h}} in za počasno stolpec {{27 °F/h; 15 °C/h}}. Hitrost izračunate tako, da dvig temperature delite s številom ur, ki jih je potreboval: peč, v kateri se temperatura v 3 urah dvigne za {{900 °F; 500 °C}}, se segreva s hitrostjo približno {{300 °F/h; 167 °C/h}}.
+Te vrednosti so iz Ortonove preglednice stožcev (©2001) za samostoječe stožce{{en: cones}}; stožci od 11 do 14 so iz preglednic, ki jih Orton objavlja zdaj in ki tam, kjer se prekrivajo, navajajo enake vrednosti, stožca 13 in 14 pa samo v °C (njune vrednosti v °F so tu preračunane). Izberite stolpec, ki ustreza temu, kako hitro je temperatura v vaši peči naraščala v zadnjih {{180 °F; 100 °C}}. Po Ortonovem pravilu velja za hitro žganje stolpec {{270 °F/h; 150 °C/h}}, za srednje hitro stolpec {{108 °F/h; 60 °C/h}} in za počasno stolpec {{27 °F/h; 15 °C/h}}. Hitrost izračunate tako, da dvig temperature delite s številom ur, ki jih je potreboval: peč, v kateri se temperatura v 3 urah dvigne za {{900 °F; 500 °C}}, se segreva s hitrostjo približno {{300 °F/h; 167 °C/h}}.
 
 Table: Ortonovi samostoječi stožci: temperatura, pri kateri se upogne posamezni stožec, glede na hitrost segrevanja v zadnjih {{180 °F; 100 °C}}
 Label: Preglednica Ortonovih stožcev
@@ -108,8 +108,14 @@ Label: Preglednica Ortonovih stožcev
 | 8      |         {{2212 °F; 1211 °C}} |           {{2280 °F; 1249 °C}} |          {{2320 °F; 1271 °C}} |
 | 9      |         {{2235 °F; 1224 °C}} |           {{2300 °F; 1260 °C}} |          {{2336 °F; 1280 °C}} |
 | 10     |         {{2284 °F; 1251 °C}} |           {{2345 °F; 1285 °C}} |          {{2381 °F; 1305 °C}} |
+| 11     |         {{2322 °F; 1272 °C}} |           {{2361 °F; 1294 °C}} |          {{2399 °F; 1315 °C}} |
+| 12     |         {{2345 °F; 1285 °C}} |           {{2383 °F; 1306 °C}} |          {{2419 °F; 1326 °C}} |
+| 13     |         {{2390 °F; 1310 °C}} |           {{2428 °F; 1331 °C}} |          {{2458 °F; 1348 °C}} |
+| 14     |         {{2464 °F; 1351 °C}} |           {{2489 °F; 1365 °C}} |          {{2523 °F; 1384 °C}} |
 
 Pomišljaj pomeni vrednost, ki je tu nismo prepisali; najdete jo v Ortonovi celotni preglednici.
+
+Orton izdeluje stožce do 42 za visokotemperaturna dela, temperature pa objavlja le do stožca 14; preglednice za vročejše stožce so »na voljo (na zahtevo)«. Starejša Ortonova preglednica, kot jo ponatiskujejo proizvajalci peči, za velik stožec 15 navaja {{2608 °F; 1431 °C}} pri {{270 °F/h; 150 °C/h}}, za stožec 16 ali vročejše pa objavljene vrednosti nismo našli. Za stožce, vročejše od stožca 14, postavite kontrolne stožce in se ravnajte po njih ter preverite, ali najvišja temperatura, ki jo za vašo peč navaja proizvajalec, doseže tako vročino.
 
 Veliki stožci se od teh vrednosti razlikujejo le za nekaj stopinj: veliki stožec 6 pri {{108 °F/h; 60 °C/h}} ima {{2228 °F; 1220 °C}}. Mali stožci, kakršni se uporabljajo v Kiln-Sitterju, so navedeni samo pri {{540 °F/h; 300 °C/h}}, zato preglednica za mali stožec 6 navaja {{2291 °F; 1255 °C}}. To ni temperatura, pri kateri Kiln-Sitter izklopi peč. Naloga stožca v Kiln-Sitterju je, da se ujema s stožcem na plošči, zadnjo besedo pa ima stožec na plošči.
 
@@ -298,6 +304,8 @@ Standard ima dve velikosti. Veliki stožci (大型コーン) se »uporabljajo pr
 
 Vsak velik stožec postavite v podstavek ali v kepico gline, nagnjen proti svoji upogibni strani. Kot pri vsakem stožcu ohranjajte višino in naklon od žganja do žganja enaka, saj razlika v enem ali drugem spremeni, kako daleč se stožec upogne. Tri stožce niza (spodaj) postavite skupaj, globoko v peč blizu sredine vsebine peči, kjer dobijo toploto, ki jo dobijo izdelki, a vendar tja, kjer jih vidite skozi opazovalno odprtino; preden zaprete peč, preverite, ali vidite vse tri.
 
+Navodil proizvajalca ali prodajalca o tem, kako globoko ali pod kakšnim kotom postaviti stožce SK, nismo našli. Najbližje je laboratorijski standard JIS R 2204, japonski preskus, koliko toplote prenese ognjevzdržni material: vsak stožec SK postavi tako, da je njegova označena stran pod kotom 80° glede na ravno podlago, njegova noga pa približno 4 mm v njej. To je preskus za ognjevzdržne materiale, ne pravilo za žganje keramike, in prebrali smo ga v prepisu standarda, ne v samem standardu.
+
 ### Vodilni, ciljni in varovalni stožec
 
 Stožci se prodajajo in postavljajo po trije: vodilni stožec, ciljni stožec pri želeni stopnji in varovalni stožec. Za ciljni stožec vzemite številko SK, ki jo navaja vaš recept ali glina, za vodilnega naslednji hladnejši stožec (ena vrstica višje v preglednici), za varovalnega pa naslednji vročejši. Ko se vodilni stožec začne upogibati, je konec blizu; ko se upogne varovalni stožec, je žganje šlo predaleč.
@@ -366,6 +374,8 @@ Ortonovi samostoječi stožci se na Japonskem prodajajo pod imenom 立つゼー�
 
 - [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (preglednica stožcev SK, preverjeno 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
 - [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (veljaven, ponovno potrjen 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
+- [JSA: JIS R 2204:1999, 耐火物及び耐火物原料の耐火度試験方法 (veljaven, ponovno potrjen 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+2204:1999)
+- [kikakurui.com: prepis standarda JIS R 2204:1999, katerega točka 5 a) določa postavitev stožcev (prebrano 2026-10-19)](https://kikakurui.com/r2/R2204-1999-01.html)
 - [Kyoto Municipal Institute of Industrial Technology and Culture: na kaj paziti pri prehodu s kjotskih stožcev na Ortonove stožce](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
 
 :::
@@ -607,7 +617,7 @@ O prezračevanju prostora in o detektorjih ogljikovega monoksida si preberite vo
 ### Ko peč žge
 
 - V opazovalno odprtino glejte samo z varilskimi očali zaščitne stopnje 3 z zaščito pred IR; sončna očala niso dovolj. Skutt svetuje, da čepe v odprtine vstavite z obračanjem, da ne izpadejo.
-- Peči ne puščajte brez nadzora dlje od predvidenega časa žganja; Kiln-Sitter ni varnostni izklop, ki bi deloval tudi ob okvari.
+- Ostanite v bližini in med žganjem preverjajte peč, predvsem blizu predvidenega konca žganja; Kiln-Sitter ni varnostni izklop, ki bi deloval tudi ob okvari. Žgite samo, kadar bo doma odrasla oseba, ki bo budna med celotnim žganjem.
 - Nikoli ne žgite na čem, kar gori, ali blizu tega, na primer na lesenem podu ali preprogi.
 - Upoštevajte varne razdalje iz navodil za uporabo. Objavljene vrednosti segajo od 12 palcev (30 cm) do 3 čevljev (91 cm); kjer navodila o tem molčijo, je najvarnejša izbira 18 palcev (46 cm) od sten in 3 čevlji (91 cm) od vsega, kar gori.
 - Prostor okrog uteži Kiln-Sitterja naj bo prost, da utež lahko pade.

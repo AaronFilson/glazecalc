@@ -28,10 +28,12 @@ import {
 } from '@angular/router';
 import { AuthService } from './core/auth.service';
 import { LocaleService } from './core/locale.service';
+import { sameSitePath } from './core/signed-in.guard';
 import { formatDate } from './shared/format';
 import { errorMessage } from './core/error-message';
 import { RichText } from './i18n/rich-text';
 import { OFFERED_LANGUAGES, OPEN_PAGE, PAGE_LANGUAGE, languageName, pathIn } from './i18n/language';
+import { LanguageLinks } from './i18n/language-links';
 import { ownLanguagePage } from './i18n/own-language';
 import { TranslationNotice } from './i18n/translation-notice';
 import { PreferencesService } from './core/preferences.service';
@@ -53,6 +55,7 @@ const APP_PAGES = [
   // Escape closes the phone menu, as the Menu button does.
   host: { '(keydown.escape)': 'closeMenu()' },
   imports: [
+    LanguageLinks,
     NgTemplateOutlet,
     RichText,
     RouterLink,
@@ -73,7 +76,7 @@ const APP_PAGES = [
         <!-- On a phone the menu is folded away; returning visitors sign in without opening it. -->
         @if (!auth.shownSession()) {
           @if (!auth.secondStepPending()) {
-            <a routerLink="/signin" class="nav-quick-signin">{{ t('nav.signIn') }}</a>
+            <a routerLink="/signin" [queryParams]="nextParams()" class="nav-quick-signin">{{ t('nav.signIn') }}</a>
           }
         } @else {
           <!-- And a signed-in reader sees that they are, and has their account a tap away. -->
@@ -120,7 +123,7 @@ const APP_PAGES = [
                 <span class="account-text">
                   <span class="account-label">{{ auth.shownTrial() ? t('nav.trialAccount') : t('nav.account') }}</span>
                   @if (auth.shownTrial() ? null : auth.shownName(); as email) {
-                    <span class="account-email" translate="no">{{ email }}</span>
+                    <bdi class="account-email" translate="no">{{ email }}</bdi>
                   }
                 </span>
               </a>
@@ -148,8 +151,10 @@ const APP_PAGES = [
             <!-- Not while a sign-in waits for its second step: they would start it again. -->
             @if (!auth.secondStepPending()) {
               <div class="nav-account">
-                <a routerLink="/signin">{{ t('nav.signIn') }}</a>
-                <a routerLink="/signup" class="btn btn-primary btn-sm">{{ t('nav.createAccount') }}</a>
+                <a routerLink="/signin" [queryParams]="nextParams()">{{ t('nav.signIn') }}</a>
+                <a routerLink="/signup" [queryParams]="nextParams()" class="btn btn-primary btn-sm">{{
+                  t('nav.createAccount')
+                }}</a>
               </div>
             }
           }
@@ -240,16 +245,13 @@ const APP_PAGES = [
               <span [attr.lang]="pageLanguage" translate="no">{{ languageName(pageLanguage) }}</span>
             </summary>
             <nav class="footer-languages" [attr.aria-label]="t('footer.languages')">
-              @for (code of languages; track code) {
-                <a
-                  [href]="pageIn(code)"
-                  [attr.lang]="code"
-                  translate="no"
-                  [attr.aria-current]="code === pageLanguage ? 'true' : null"
-                  (click)="chooseLanguage($event, code)"
-                  >{{ languageName(code) }}</a
-                >
-              }
+              <gc-language-links
+                [languages]="languages"
+                [href]="pageInFn"
+                [current]="pageLanguage"
+                [ariaCurrent]="'true'"
+                (picked)="chooseLanguage($event.event, $event.code)"
+              />
             </nav>
           </details>
         }
@@ -291,6 +293,13 @@ export class App implements OnInit {
     if (this.menu().nativeElement.contains(this.document.activeElement)) this.toggle().nativeElement.focus();
   }
   protected readonly ready = signal(false);
+  /**
+   * The page a sign-in is for, from this address's ?next= (the sign-in and
+   * sign-up pages have one when a page sent the visitor there, auth-page.ts):
+   * the menu's Sign in and Create account links keep it, so the visitor still
+   * comes back to that page, whichever they choose. A page of this site only.
+   */
+  protected readonly nextParams = signal<{ next: string } | null>(null);
   protected readonly confirmingDiscard = signal(false);
   protected readonly discarding = signal(false);
   protected readonly discardError = signal('');
@@ -342,6 +351,8 @@ export class App implements OnInit {
       if (!(event instanceof NavigationEnd)) return;
       this.menuOpen.set(false);
       this.ready.set(true);
+      const next = sameSitePath(this.router.parseUrl(event.urlAfterRedirects).queryParamMap.get('next'));
+      this.nextParams.set(next ? { next } : null);
       const path = event.urlAfterRedirects.split(/[?#]/)[0]!;
       if (shown !== null && path !== shown) this.showNewPage(trigger === 'popstate');
       shown = path;
@@ -368,6 +379,9 @@ export class App implements OnInit {
       { injector: this.injector }
     );
   }
+
+  /** Where the links to this page in another language go. */
+  protected readonly pageInFn = (code: string): string => this.pageIn(code);
 
   /** This page in another language. */
   protected pageIn(code: string): string {

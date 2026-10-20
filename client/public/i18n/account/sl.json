@@ -270,6 +270,22 @@
         "saved": "Shranjeno: datumi so prikazani po japonskih obdobjih."
       }
     },
+    "digits": {
+      "legend": "Števke",
+      "help": "Števke, s katerimi so prikazane številke. Nekateri jeziki imajo svoje, na primer arabščina, bengalščina in hindijščina. Katere so običajne, določa vaša regija. Številke lahko vnašate s katerimi koli.",
+      "auto": {
+        "label": "Kot je običajno v vaši regiji",
+        "saved": "Shranjeno: števke, kot je običajno v vaši regiji."
+      },
+      "western": {
+        "label": "Zahodne števke, 0–9",
+        "saved": "Shranjeno: številke so prikazane s števkami 0–9."
+      },
+      "native": {
+        "label": "Lastne števke jezika, če jih ima",
+        "saved": "Shranjeno: številke so prikazane z lastnimi števkami jezika, če jih ima."
+      }
+    },
     "decimalMark": {
       "legend": "Vnos količin",
       "either": {

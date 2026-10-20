@@ -1,6 +1,8 @@
 import { DestroyRef, Injectable, computed, effect, inject, signal } from '@angular/core';
 import { REGION_CODES, currencyFor, formatLocaleFor, regionFor } from '../../../lib/regions';
+import { languageFor } from '../../../lib/regions/languages';
 import { PAGE_LANGUAGE } from '../i18n/language';
+import { pageDirection } from '../shared/bidi';
 import { formatLocale, listLocale, typedDecimalMark } from '../shared/format';
 import { followRegion, readRegion } from '../shared/library-info';
 import { FIRST_RENDER, prerenderRegion } from './first-render';
@@ -41,9 +43,18 @@ export class LocaleService {
     this.firstRender() ? prerenderRegion(this.language()) : this.preferences.region() || browserRegion()
   );
   readonly regionInfo = computed(() => regionFor(this.region()));
-  /** The locale numbers and dates are written in, its dates in the calendar chosen (Gregorian by default). */
+  /**
+   * The locale numbers and dates are written in, its dates in the calendar chosen (Gregorian by default) and its
+   * numbers in the digits chosen (as usual where the potter is, by default).
+   */
   readonly locale = computed(() =>
-    formatLocaleFor(this.language(), this.region(), this.preferences.format(), this.preferences.calendar())
+    formatLocaleFor(
+      this.language(),
+      this.region(),
+      this.preferences.format(),
+      this.preferences.calendar(),
+      this.preferences.digits()
+    )
   );
   /** The locale lists in a sentence are joined in: its language, as the region writes it, whatever the format chosen. */
   readonly listLocale = computed(() => formatLocaleFor(this.language(), this.region(), 'auto'));
@@ -63,6 +74,8 @@ export class LocaleService {
     formatLocale.set(this.locale());
     listLocale.set(this.listLocale());
     typedDecimalMark.set(this.preferences.decimalMark());
+    // The page's direction is its language's, for the life of the page (shared/bidi.ts).
+    pageDirection.set(languageFor(this.language())?.dir ?? 'ltr');
     effect(() => formatLocale.set(this.locale()));
     effect(() => listLocale.set(this.listLocale()));
     effect(() => typedDecimalMark.set(this.preferences.decimalMark()));
@@ -72,6 +85,7 @@ export class LocaleService {
       formatLocale.set('en');
       listLocale.set('en');
       typedDecimalMark.set('either');
+      pageDirection.set('ltr');
     });
     // The library lists what is sold where the potter works, once a region is chosen. This follows
     // the setting for the visit; only a choice made in the library itself is kept on the browser.

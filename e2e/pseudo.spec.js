@@ -2,13 +2,16 @@ const { test, expect } = require('@playwright/test');
 const { signUpAndSignIn } = require('./helpers');
 
 // Every page in the pseudo-locales (docs/translating.md): each message is
-// accented in en-XA, and in Japanese characters in ja-XC, so interface text
-// that is neither was never marked for translation. Names, numbers, units and
-// formulas are not messages.
+// accented in en-XA, and in Japanese characters in ja-XC, Arabic letters in
+// ar-XD and Devanagari in hi-XE, so interface text that is none of them was
+// never marked for translation. Names, numbers, units and formulas are not
+// messages.
 
 const PSEUDO = {
   'en-XA': /[åƀçðéƒĝĥîĵķļɱñöþǫŕšţûṽŵẋýžÅƁÇÐÉƑĜĤÎĴĶĻṀÑÖÞǪŔŠŢÛṼŴẊÝŽ]/,
-  'ja-XC': /[\u3040-\u30ff\u4e00-\u9fff]/
+  'ja-XC': /[\u3040-\u30ff\u4e00-\u9fff]/,
+  'ar-XD': /[\u0600-\u06ff]/,
+  'hi-XE': /[\u0900-\u097f]/
 };
 
 /** Interface text on the page that is not in the pseudo-locale: headings, labels, buttons, column heads, the menu. */

@@ -52,6 +52,7 @@
     "emergency": "Tísňová situace: bezvědomí, zástava dechu, záchvat křečí",
     "poisonAdvice": "{who, select, children {Poradenství při otravách: {name} (jen pro děti)} other {Poradenství při otravách: {name}}}",
     "or": "nebo {number}",
+    "orCall": "nebo <link>{number}</link>",
     "online": "Na internetu: <link>{name}</link>.",
     "poisonAdviceNone": "Poradenství při otravách",
     "noLine": "Veřejnou toxikologickou linku se nám v této zemi nepodařilo ověřit. Zavolejte svému lékaři, nebo, je-li to naléhavé, na tísňovou linku.",
@@ -61,8 +62,7 @@
     "vet": "Zavolejte svému veterináři.",
     "checkedOn": "Ověřeno na stránkách:",
     "choosePrompt": "Vyberte svou zemi a zobrazí se, kam tam volat.",
-    "ministry": "Stránka ministerstva zdravotnictví: <link>{name}</link>.",
-    "reported": "Oficiální vládní stránky uvádějí čísla 113, 114 a 115, ale ne, k čemu každé slouží; zobrazené role vycházejí z oběžníku Circular 22/2014/TT-BTTTT, jak jej citují druhotné stránky."
+    "ministry": "Stránka ministerstva zdravotnictví: <link>{name}</link>."
   },
   "density": {
     "sg": "měrná hmotnost {value}",
@@ -112,6 +112,10 @@
     "bandFromTo": "Prach s {from} % až {to} % volného oxidu křemičitého (SiO₂)",
     "bandOverTo": "Prach s více než {from} % a nejvýše {to} % volného oxidu křemičitého",
     "bandAbove": "Prach s více než {from} % volného oxidu křemičitého",
+    "untilDate": "Do {date}",
+    "fromDate": "Od {date}",
+    "beforeFormula": "Limit pro respirabilní prach, kde Q je obsah krystalického oxidu křemičitého v něm v %",
+    "beforeAll": "Pro prach, který je celý z krystalického oxidu křemičitého",
     "recommended": "Doporučuje {abbr}",
     "value": "{value} mg/m³",
     "kind": {
@@ -122,6 +126,7 @@
     },
     "setBy": "Tento limit stanoví <link>{law}</link>.",
     "from": "Platí od {date}.",
+    "beforeSetBy": "Do té doby limit stanoví <link>{law}</link>.",
     "lowerThanEu": "Je nižší než závazný limit EU ve výši {value} mg/m³.",
     "sameAsEu": "Je stejný jako závazný limit EU.",
     "recommendedBy": "{abbr} ({by}) tuto hodnotu doporučuje v dokumentu <link>{title}</link>. Není to zákon.",
@@ -184,7 +189,13 @@
       "vnMedium": "Hluboké předměty na potraviny, od 1100 mL do méně než 3000 mL",
       "vnStorage": "Hluboké předměty na potraviny, 3000 mL a více",
       "vnCooking": "Hluboké předměty k vaření",
-      "vnCups": "Šálky a malé misky"
+      "vnCups": "Šálky a malé misky",
+      "cnFlat": "Ploché nádobí, hloubka 25 mm nebo méně",
+      "cnSmall": "Malé duté nádobí pod 1,1 L, kromě šálků",
+      "cnLarge": "Velké duté nádobí od 1,1 L do méně než 3 L",
+      "cnStorage": "Zásobní nádoby, 3 L a více",
+      "cnCups": "Šálky na vodu nebo nápoje",
+      "cnCooking": "Nádobí na vaření, k ohřevu jídla"
     },
     "judged": {
       "average": "průměr ze 6 kusů",
@@ -198,6 +209,8 @@
     "atMost": "Kus vyhoví, pokud neuvolní víc, než je limit: zákon říká „nejvýše“.",
     "ppm": "ppm zde znamená miligramy na litr zkušebního roztoku (mg/L).",
     "unknown": "Pravidla v zemi {region} jsme zatím neověřili.",
+    "none": "{region}: neexistuje zákon, který by stanovil limity pro olovo a kadmium, které smí vypálený kus uvolnit (ověřeno {date}).",
+    "noneSource": "Zdroj: <link>{law}</link>.",
     "choosePrompt": "Vyberte svou zemi a zobrazí se její pravidla."
   },
   "equivalents": {

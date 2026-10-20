@@ -220,12 +220,15 @@ export class AuthService {
   /**
    * Creates an account. During a trial, the trial becomes the account and keeps its work.
    * `keep`: stay signed in for 7 days rather than until the browser closes.
+   * `next`: the page the sign-up was for (a page of this site), which the
+   * emailed confirmation link goes on to once the address is confirmed.
    */
-  async signUp(email: string, password: string, keep = false): Promise<void> {
+  async signUp(email: string, password: string, keep = false, next?: string): Promise<void> {
     const claiming = !!this.trial();
     const path = claiming ? '/guest/claim' : '/signup';
+    const body = { email, password, ...(next && { next }) };
     const res = await firstValueFrom(
-      this.http.post<EmailResponse>(this.apiBase + path, { email, password }, { headers: keepHeader(keep) })
+      this.http.post<EmailResponse>(this.apiBase + path, body, { headers: keepHeader(keep) })
     );
     this.signedInAs(res.email);
     this.unverified.set(true);

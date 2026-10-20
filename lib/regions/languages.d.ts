@@ -12,6 +12,8 @@ export interface Language {
   base?: string;
   /** Made in the browser from the English, for tests. */
   pseudo?: boolean;
+  /** The digits numbers are written in, where the language pins them: Intl's numbering system ('arab'). */
+  digits?: string;
   /** AI translates it less well than most: its notice says so plainly, and a line of it stays on every page. */
   plainNotice?: boolean;
 }

@@ -1,7 +1,7 @@
 // Types for lib/recipe/checks.js (see index.d.ts).
 
 import type { AdditiveRecord, MaterialRecord } from './library';
-import type { LimitSet } from './limits';
+import type { FiringBand, LimitSet } from './limits';
 import type { Caution } from './messages';
 
 export interface CheckInput {
@@ -13,6 +13,8 @@ export interface CheckInput {
   old?: Record<string, number>;
   /** The firing temperature, when it is known. */
   celsius?: number;
+  /** The firing's band, when it is known by its cone (coneBand): it wins over the band of `celsius`. */
+  band?: FiringBand;
   additives?: AdditiveRecord[];
   /** The old recipe's raw clay, as a percent of its batch. */
   oldClay?: number;
@@ -29,5 +31,9 @@ export function sizeNotes(
   lines: Array<{ material: MaterialRecord; amount: string | number | undefined }>,
   low?: boolean
 ): Caution[];
+/** Whether a material is raw (not calcined) clay. */
+export function isRawClay(material: { category?: string; name: string }): boolean;
+/** Whether raw clay at this percent of the batch is past the caution, and news against the old recipe's. */
+export function rawClayHigh(clay: number, clayWas?: number): boolean;
 /** Raw (not calcined) clay as a percent of the batch. */
 export function rawClayPercent(lines: Array<{ category?: string; name: string; amount?: string | number }>): number;

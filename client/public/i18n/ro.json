@@ -82,6 +82,31 @@
     "languages": "Limbi",
     "language": "Limba:"
   },
+  "picker": {
+    "results": "{count, plural, one {# rezultat} few {# rezultate} other {# de rezultate}}",
+    "languages": {
+      "search": "Căutați o limbă",
+      "showAll": "Afișați toate limbile",
+      "noMatch": "Nicio limbă nu se potrivește"
+    },
+    "regions": {
+      "search": "Căutați o țară sau o regiune",
+      "showAll": "Afișați toate țările și regiunile",
+      "noMatch": "Nicio țară sau regiune nu se potrivește"
+    },
+    "groups": {
+      "africa": "Africa",
+      "americas": "Americile",
+      "asia": "Asia",
+      "eastAsia": "Asia de Est",
+      "europe": "Europa",
+      "middleEastNorthAfrica": "Orientul Mijlociu și Africa de Nord",
+      "oceania": "Oceania",
+      "southAsia": "Asia de Sud",
+      "southeastAsia": "Asia de Sud-Est",
+      "other": "Altele"
+    }
+  },
   "numbers": {
     "notANumber": "Introduceți un număr, de exemplu {example}.",
     "notANumberComma": "Introduceți un număr, de exemplu {example}, cu virgulă pentru zecimale.",

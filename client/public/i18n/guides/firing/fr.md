@@ -81,7 +81,7 @@ Le tableau donne {{2232 °F; 1222 °C}} pour un cône 6 autoportant, mais seule
 
 ## Le tableau des cônes {#cone-chart}
 
-Ces chiffres viennent du tableau des cônes{{en: cone chart}} d’Orton (©2001) pour les cônes autoportants. Choisissez la colonne qui correspond à la vitesse de montée de votre four sur les derniers {{180 °F; 100 °C}}. La règle empirique d’Orton : la colonne {{270 °F/h; 150 °C/h}} pour une cuisson rapide, la colonne {{108 °F/h; 60 °C/h}} pour une cuisson moyenne et la colonne {{27 °F/h; 15 °C/h}} pour une cuisson lente. Pour calculer une vitesse, divisez la hausse de température par le nombre d’heures nécessaires : un four qui monte de {{900 °F; 500 °C}} en 3 heures chauffe à environ {{300 °F/h; 167 °C/h}}.
+Ces chiffres viennent du tableau des cônes{{en: cone chart}} d’Orton (©2001) pour les cônes autoportants ; les cônes 11 à 14 viennent des tableaux qu’Orton publie aujourd’hui, qui donnent les mêmes chiffres là où ils se recoupent, et pour les cônes 13 et 14 seulement en °C (leurs °F sont ici convertis). Choisissez la colonne qui correspond à la vitesse de montée de votre four sur les derniers {{180 °F; 100 °C}}. La règle empirique d’Orton : la colonne {{270 °F/h; 150 °C/h}} pour une cuisson rapide, la colonne {{108 °F/h; 60 °C/h}} pour une cuisson moyenne et la colonne {{27 °F/h; 15 °C/h}} pour une cuisson lente. Pour calculer une vitesse, divisez la hausse de température par le nombre d’heures nécessaires : un four qui monte de {{900 °F; 500 °C}} en 3 heures chauffe à environ {{300 °F/h; 167 °C/h}}.
 
 Table: Cônes autoportants Orton : la température à laquelle chacun se courbe, selon la vitesse de montée sur les derniers {{180 °F; 100 °C}}
 Label: Tableau des cônes Orton
@@ -108,8 +108,14 @@ Label: Tableau des cônes Orton
 | 8    |        {{2212 °F; 1211 °C}} |           {{2280 °F; 1249 °C}} |           {{2320 °F; 1271 °C}} |
 | 9    |        {{2235 °F; 1224 °C}} |           {{2300 °F; 1260 °C}} |           {{2336 °F; 1280 °C}} |
 | 10   |        {{2284 °F; 1251 °C}} |           {{2345 °F; 1285 °C}} |           {{2381 °F; 1305 °C}} |
+| 11   |        {{2322 °F; 1272 °C}} |           {{2361 °F; 1294 °C}} |           {{2399 °F; 1315 °C}} |
+| 12   |        {{2345 °F; 1285 °C}} |           {{2383 °F; 1306 °C}} |           {{2419 °F; 1326 °C}} |
+| 13   |        {{2390 °F; 1310 °C}} |           {{2428 °F; 1331 °C}} |           {{2458 °F; 1348 °C}} |
+| 14   |        {{2464 °F; 1351 °C}} |           {{2489 °F; 1365 °C}} |           {{2523 °F; 1384 °C}} |
 
 Un tiret marque un chiffre non repris ici ; voir le tableau complet d’Orton.
+
+Orton fabrique des cônes jusqu’au 42 pour les travaux à haute température, mais ne publie de températures que jusqu’au cône 14 ; pour les cônes plus chauds, ses tableaux sont « disponibles (sur demande) ». Un tableau Orton plus ancien, tel que le réimpriment des fabricants de fours, donne {{2608 °F; 1431 °C}} pour un grand cône 15 à {{270 °F/h; 150 °C/h}}, et nous n’avons trouvé aucun chiffre publié pour le cône 16 ou au-delà. Au-delà du cône 14, posez des cônes témoins{{en: witness cones}} et fiez-vous à eux, et vérifiez que la température maximale indiquée par le fabricant de votre four atteint une telle chaleur.
 
 Les grands cônes se courbent à quelques degrés près aux mêmes températures : un grand cône 6 à {{108 °F/h; 60 °C/h}} se courbe à {{2228 °F; 1220 °C}}. Les petits cônes, ceux qu’on utilise dans un Kiln-Sitter, ne sont donnés que pour {{540 °F/h; 300 °C/h}} : le tableau indique donc {{2291 °F; 1255 °C}} pour un petit cône 6. Ce n’est pas la température à laquelle un Kiln-Sitter coupe le four. Le rôle du cône du Kiln-Sitter est de concorder avec le cône posé sur la plaque, et c’est le cône sur la plaque qui a le dernier mot.
 
@@ -298,6 +304,8 @@ Les numéros vont ici de SK 022, le moins chaud, jusqu’à SK 20. Entre SK 015 
 
 Plantez chaque grand cône dans un support ou une motte d’argile, incliné du côté de sa face de courbure. Comme pour tout cône, gardez la même hauteur et la même inclinaison d’une cuisson à l’autre, car une différence de l’une ou de l’autre change la courbure. Placez les trois cônes du jeu de cônes{{en: cone pack}} (ci-dessous) ensemble, bien à l’intérieur du four, près du centre de la charge, là où ils reçoivent la chaleur que reçoivent les pièces, mais où vous pouvez quand même les voir par un regard ; avant de fermer le four, vérifiez que vous voyez bien les trois.
 
+Nous n’avons trouvé aucune instruction de fabricant ou de vendeur sur la profondeur ou l’angle auxquels placer les cônes SK. Le plus proche est une norme de laboratoire, JIS R 2204, l’essai japonais de la chaleur que supporte un matériau réfractaire : elle place chaque cône SK avec sa face marquée à 80° d’un support plat et son pied enfoncé d’environ 4 mm dans ce support. C’est un essai pour les réfractaires, pas une règle pour cuire des pièces, et nous l’avons lue dans une transcription de la norme, pas dans la norme elle-même.
+
 ### Cône guide, cône cible et cône de garde
 
 Les cônes se vendent et se placent par trois : un cône guide, un cône cible au numéro visé et un cône de garde. Prenez comme cône cible le numéro SK que donne votre recette ou votre terre, comme cône guide le cône immédiatement moins chaud (une ligne plus haut dans le tableau) et comme cône de garde le cône immédiatement plus chaud. Quand le cône guide commence à se courber, la fin approche ; quand le cône de garde se courbe, la cuisson est allée trop loin.
@@ -366,6 +374,8 @@ Les cônes Orton autoportants sont vendus au Japon sous le nom 立つゼーゲ�
 
 - [Yuko Trading (有恒商事株式会社) : 標準溶倒温度表 (le tableau SK, vérifié le 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
 - [JSA : JIS R 8101:1999, 耐火度試験用標準コーン (en vigueur, reconfirmée le 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
+- [JSA : JIS R 2204:1999, 耐火物及び耐火物原料の耐火度試験方法 (en vigueur, reconfirmée le 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+2204:1999)
+- [kikakurui.com : une transcription de JIS R 2204:1999, dont la clause 5 a) fixe la pose des cônes (lue le 2026-10-19)](https://kikakurui.com/r2/R2204-1999-01.html)
 - [Kyoto Municipal Institute of Industrial Technology and Culture : points à vérifier pour passer des cônes de Kyoto aux cônes Orton](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
 
 :::
@@ -607,7 +617,7 @@ Pour la ventilation de la pièce et pour les détecteurs de monoxyde de carbone,
 ### Pendant la cuisson
 
 - Ne regardez par un regard qu’avec des lunettes de soudage anti-IR de teinte 3 ; des lunettes de soleil ne suffisent pas. Skutt conseille de visser les bouchons en place pour qu’ils ne tombent pas.
-- Ne laissez pas le four sans surveillance au-delà de la durée de cuisson prévue ; un Kiln-Sitter n’est pas une sécurité infaillible.
+- Restez à proximité et vérifiez le four pendant la cuisson, surtout à l’approche de l’heure de fin prévue ; un Kiln-Sitter n’est pas une sécurité infaillible. Ne lancez une cuisson que si un adulte est à la maison et éveillé pendant toute la cuisson.
 - Ne cuisez jamais sur ou près de quoi que ce soit de combustible, comme un plancher en bois ou de la moquette.
 - Respectez les distances de sécurité de votre notice. Les valeurs publiées vont de 12 pouces (30 cm) à 3 pieds (91 cm) ; quand la notice est muette, 18 pouces (46 cm) des murs et 3 pieds (91 cm) de tout ce qui est combustible sont le choix le plus sûr.
 - Gardez dégagé l’espace autour du contrepoids du Kiln-Sitter pour qu’il puisse tomber.

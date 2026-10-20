@@ -81,7 +81,7 @@ A táblázat szerint az önálló 6-os gúla {{2232 °F; 1222 °C}} hőmérsékl
 
 ## A gúlatáblázat {#cone-chart}
 
-Ezek az adatok az Orton önálló gúlákra{{en: cones}} vonatkozó gúlatáblázatából (©2001) származnak. Azt az oszlopot válassza, amelyik annak felel meg, milyen gyorsan emelkedett a kemencéje hőmérséklete az utolsó {{180 °F; 100 °C}} emelkedés során. Az Orton ökölszabálya: gyors égetéshez a {{270 °F/h; 150 °C/h}} oszlop, közepeshez a {{108 °F/h; 60 °C/h}} oszlop, lassúhoz a {{27 °F/h; 15 °C/h}} oszlop. A felfűtési sebesség kiszámításához ossza el a hőmérséklet-emelkedést az eltelt órák számával: az a kemence, amelynek hőmérséklete 3 óra alatt {{900 °F; 500 °C}} értékkel emelkedik, körülbelül {{300 °F/h; 167 °C/h}} sebességgel fűt.
+Ezek az adatok az Orton önálló gúlákra{{en: cones}} vonatkozó gúlatáblázatából (©2001) származnak; a 11–14-es gúlák adatai az Orton jelenleg közzétett táblázataiból valók, amelyek az átfedő részen ugyanazokat az értékeket adják, a 13-as és a 14-es gúlát pedig csak °C-ban közlik (ezek °F-értékét itt átszámítottuk). Azt az oszlopot válassza, amelyik annak felel meg, milyen gyorsan emelkedett a kemencéje hőmérséklete az utolsó {{180 °F; 100 °C}} emelkedés során. Az Orton ökölszabálya: gyors égetéshez a {{270 °F/h; 150 °C/h}} oszlop, közepeshez a {{108 °F/h; 60 °C/h}} oszlop, lassúhoz a {{27 °F/h; 15 °C/h}} oszlop. A felfűtési sebesség kiszámításához ossza el a hőmérséklet-emelkedést az eltelt órák számával: az a kemence, amelynek hőmérséklete 3 óra alatt {{900 °F; 500 °C}} értékkel emelkedik, körülbelül {{300 °F/h; 167 °C/h}} sebességgel fűt.
 
 Table: Önálló Orton-gúlák: az egyes gúlák hajlási hőmérséklete az utolsó {{180 °F; 100 °C}} emelkedés felfűtési sebessége szerint
 Label: Orton-gúlatáblázat
@@ -108,8 +108,14 @@ Label: Orton-gúlatáblázat
 | 8    |        {{2212 °F; 1211 °C}} |           {{2280 °F; 1249 °C}} |          {{2320 °F; 1271 °C}} |
 | 9    |        {{2235 °F; 1224 °C}} |           {{2300 °F; 1260 °C}} |          {{2336 °F; 1280 °C}} |
 | 10   |        {{2284 °F; 1251 °C}} |           {{2345 °F; 1285 °C}} |          {{2381 °F; 1305 °C}} |
+| 11   |        {{2322 °F; 1272 °C}} |           {{2361 °F; 1294 °C}} |          {{2399 °F; 1315 °C}} |
+| 12   |        {{2345 °F; 1285 °C}} |           {{2383 °F; 1306 °C}} |          {{2419 °F; 1326 °C}} |
+| 13   |        {{2390 °F; 1310 °C}} |           {{2428 °F; 1331 °C}} |          {{2458 °F; 1348 °C}} |
+| 14   |        {{2464 °F; 1351 °C}} |           {{2489 °F; 1365 °C}} |          {{2523 °F; 1384 °C}} |
 
 A gondolatjel olyan adatot jelöl, amelyet ide nem vettünk át; ezt az Orton teljes táblázatában találja.
+
+Az Orton magas hőmérsékletű munkákhoz egészen a 42-es gúláig gyárt gúlákat, de hőmérsékletet csak a 14-es gúláig tesz közzé; a magasabb hőfokú gúlák táblázatai „elérhetők (kérésre)”. Az Orton egy régebbi táblázata, ahogy a kemencegyártók újraközlik, a nagy 15-ös gúlára {{2608 °F; 1431 °C}} értéket ad {{270 °F/h; 150 °C/h}} sebességnél, a 16-os és magasabb hőfokú gúlákra pedig nem találtunk közzétett adatot. A 14-es gúlán túl állítson fel ellenőrző gúlákat, és azok alapján döntsön, továbbá ellenőrizze, hogy a kemencéje gyártó által megadott legmagasabb üzemi hőmérséklete eléri-e ezt a hőfokot.
 
 A nagy gúlák néhány fokon belül ugyanezeket az értékeket mutatják: egy nagy 6-os gúla {{108 °F/h; 60 °C/h}} sebességnél {{2228 °F; 1220 °C}} hőmérsékleten hajlik meg. A kis gúlák, amilyeneket a Kiln-Sitterben használnak, csak {{540 °F/h; 300 °C/h}} sebességre szerepelnek a táblázatban, ezért a táblázat a kis 6-os gúlára {{2291 °F; 1255 °C}} értéket ad. Ez nem az a hőmérséklet, amelyen a Kiln-Sitter lekapcsolja a kemencét. A Kiln-Sitterben lévő gúla dolga az, hogy egyezzen az égetőlapon álló gúlával, és a végső szó az égetőlapon álló gúláé.
 
@@ -298,6 +304,8 @@ A számok itt SK 022-től, a legalacsonyabb hőfokútól SK 20-ig tartanak. SK 0
 
 Minden nagy gúlát gúlatartóba vagy agyaglepénybe állítson, a hajlási oldala felé döntve. Mint minden gúlánál, a magasságot és a dőlést égetésről égetésre tartsa azonosan, mert bármelyik eltérése megváltoztatja, mennyire hajlik meg a gúla. A gúlasor{{en: cone pack}} három gúláját (lásd alább) együtt állítsa fel, mélyen a kemencében, a rakat közepe táján, ahol ugyanazt a hőt kapják, amit az áru, mégis ott, ahol a kémlelőnyíláson át láthatók; mielőtt lezárja a kemencét, ellenőrizze, hogy mindhárom gúlát látja.
 
+Nem találtunk gyártói vagy forgalmazói útmutatást arra, milyen mélyre vagy milyen szögben kell az SK-gúlákat beállítani. A legközelebbi egy laboratóriumi szabvány, a JIS R 2204, Japán vizsgálata arról, mennyi hőt bír ki egy tűzálló anyag: ez minden SK-gúlát úgy állít be, hogy a jelölt oldala 80°-os szöget zárjon be egy sík alátéttel, a talpa pedig körülbelül 4 mm mélyen legyen benne. Ez tűzálló anyagok vizsgálata, nem a fazekasáru égetésének szabálya, és a szabvány egy átiratában olvastuk, nem magában a szabványban.
+
 ### Előjelző gúla, célgúla és őrgúla
 
 A gúlákat hármasával árusítják és állítják fel: egy előjelző gúla, egy célgúla a célhőfokra, és egy őrgúla. Célgúlának azt az SK-számot vegye, amelyet a receptje vagy az agyaga megad, előjelző gúlának az eggyel alacsonyabb hőfokú gúlát (a táblázatban egy sorral feljebb), őrgúlának pedig az eggyel magasabb hőfokút. Ha az előjelző gúla hajlani kezd, közel a vég; ha az őrgúla meghajlik, az égetés túl messzire ment.
@@ -366,6 +374,8 @@ Az önálló Orton-gúlákat Japánban 立つゼーゲル („álló Seger”) n
 
 - [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (az SK-táblázat, ellenőrizve: 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
 - [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (hatályos, megerősítve: 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
+- [JSA: JIS R 2204:1999, 耐火物及び耐火物原料の耐火度試験方法 (hatályos, megerősítve: 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+2204:1999)
+- [kikakurui.com: a JIS R 2204:1999 átirata, amelynek 5 a) pontja a gúlák beállítását írja elő (olvasva: 2026-10-19)](https://kikakurui.com/r2/R2204-1999-01.html)
 - [Kyoto Municipal Institute of Industrial Technology and Culture: tudnivalók a kiotói gúlákról Orton-gúlákra való áttéréshez](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
 
 :::
@@ -607,7 +617,7 @@ A helyiség szellőztetéséről és a szén-monoxid-érzékelőkről a [Biztons
 ### Amíg a kemence éget
 
 - Csak IR-szűrős, 3-as védőfokozatú hegesztőszemüvegben nézzen be a kémlelőnyíláson; a napszemüveg nem elég. A Skutt azt tanácsolja, hogy a dugókat csavarva illessze a helyükre, hogy ne essenek ki.
-- Ne hagyja a kemencét felügyelet nélkül a várható égetési időn túl; a Kiln-Sitter nem hibabiztos.
+- Maradjon a közelben, és égetés közben ellenőrizze a kemencét, különösen a várható befejezési idő közelében; a Kiln-Sitter nem hibabiztos. Csak akkor égessen, ha egy felnőtt otthon lesz, és az egész égetés alatt ébren lesz.
 - Soha ne égessen éghető dolgon vagy annak közelében, amilyen például a fapadló vagy a szőnyeg.
 - Tartsa be a kezelési útmutatóban megadott védőtávolságokat. A közzétett értékek 12 hüvelyktől (30 cm) 3 lábig (91 cm) terjednek; ha a kezelési útmutató nem ír róla, a legbiztonságosabb a falaktól 18 hüvelyk (46 cm), minden éghető dologtól 3 láb (91 cm).
 - A Kiln-Sitter súlya körül hagyja szabadon a helyet, hogy a súly le tudjon esni.

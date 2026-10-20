@@ -364,7 +364,7 @@
     "intro": "Conforme o registo de cada matéria-prima os indica; os da lista padrão vêm das fichas de dados de segurança dos fornecedores.",
     "line": "<b>{names}:</b> {hazards}",
     "unknown": "{count, plural, one {Não são indicados perigos para {list}: consulte a ficha de dados de segurança que o acompanha.} many {Não são indicados perigos para {list}: consulte as fichas de dados de segurança que os acompanham.} other {Não são indicados perigos para {list}: consulte as fichas de dados de segurança que os acompanham.}}",
-    "safety": "As matérias-primas secas para vidrados produzem poeira: mantenha-a fora dos pulmões, mesmo a das matérias-primas não classificadas como perigosas. Veja <mixing>Mistura segura e ventilação</mixing>, e <home>Não envenene a sua família</home> se houver crianças ou animais de estimação por perto. Quando a ficha de dados de segurança de uma matéria-prima disser mais, siga-a."
+    "safety": "As matérias-primas secas para vidrados produzem poeira, e tem de a manter fora dos pulmões, mesmo a das matérias-primas não classificadas como perigosas. Veja <mixing>Mistura segura e ventilação</mixing> e, se houver crianças ou animais de estimação por perto, também <home>Não envenene a sua família</home>. Quando a ficha de dados de segurança de uma matéria-prima disser mais, siga-a."
   },
   "compare": {
     "heading": "Comparar duas receitas",
@@ -533,7 +533,10 @@
     "suppliesShare": "{oxide, select, alumina {{percent}% da alumina} sílica {{percent}% da sílica} other {{percent}% do {oxide}}}",
     "suppliesLittle": "uma pequena parte do vidrado",
     "changed": "{name} {from} → {to}",
-    "added": "{name} {amount}, nova"
+    "added": "{name} {amount}, nova",
+    "why": {
+      "rawClay": "a argila crua retrai quando o vidrado seca, e com muita o vidrado pode fissurar na peça e recolher no forno; o caulino calcinado pode fornecer o resto"
+    }
   },
   "shelf": {
     "empty": "Não há matérias-primas disponíveis com que refazer."
@@ -571,7 +574,8 @@
     "bands": {
       "low": "Baixa temperatura, cone 06–02",
       "mid": "Média temperatura, cone 4–6",
-      "high": "Alta temperatura, cone 9–11"
+      "high": "Alta temperatura, cone 9–11",
+      "top": "Temperatura muito alta, cone 12 e acima"
     },
     "shownFor": "Sem uma cozedura escolhida, os valores mostrados são para: {band}. A cozedura fica guardada com a receita.",
     "cone": "Estes são os valores do conjunto para o cone {cone}.",
@@ -591,6 +595,7 @@
     "notInSet": "Este conjunto não tem intervalo para {oxides}.",
     "checksOnly": "Este conjunto só verifica {oxides}.",
     "notApply": "{name} não tem valores para esta cozedura ({band}), por isso não é verificado: valores de outra cozedura induziriam em erro.",
+    "topNote": "Os limites publicados para vidrados que encontrámos acabam no cone 10, e o Glazecalc não os lê além do cone 11, por isso uma cozedura a partir do cone 12 não é verificada face a limites. As suas peças de teste decidem.",
     "guidance": "São orientações, não uma aprovação ou uma reprovação: um vidrado fora delas pode estar bem, e um dentro delas pode na mesma fendilhar, libertar metais ou falhar. Teste-o.",
     "source": "Fonte:",
     "saveFailed": "A sua escolha do conjunto de limites não pôde ser guardada na sua conta, por isso o conjunto anterior continua em uso.",
@@ -628,7 +633,8 @@
       "ash": "O Glazecalc não consegue comparar a química deste vidrado com a sua cozedura: tem cinza, cuja composição varia demasiado para os valores publicados usados por esta verificação.",
       "noTemperature": "O Glazecalc não consegue comparar a química deste vidrado com {scale, select, band {{band, select, low {a baixa temperatura} mid {a média temperatura} other {a alta temperatura}}} sk {SK {cone}} temperature {{cone} °C} other {o cone {cone}}}: não há temperatura medida para esse cone.",
       "between": "O Glazecalc não consegue comparar a química deste vidrado com {scale, select, band {{band, select, low {a baixa temperatura} mid {a média temperatura} other {a alta temperatura}}} sk {SK {cone}} temperature {{cone} °C} other {o cone {cone}}}: os valores publicados usados por esta verificação são para a baixa temperatura e para a média e a alta, não para os cones intermédios (01 a 3).",
-      "belowChart": "O Glazecalc não consegue comparar a química deste vidrado com {scale, select, band {{band, select, low {a baixa temperatura} mid {a média temperatura} other {a alta temperatura}}} sk {SK {cone}} temperature {{cone} °C} other {o cone {cone}}}: a regra do boro de Katz vai do cone 06 ao cone 10, e essa cozedura é mais fria."
+      "belowChart": "O Glazecalc não consegue comparar a química deste vidrado com {scale, select, band {{band, select, low {a baixa temperatura} mid {a média temperatura} other {a alta temperatura}}} sk {SK {cone}} temperature {{cone} °C} other {o cone {cone}}}: a regra do boro de Katz vai do cone 06 ao cone 10, e essa cozedura é mais fria.",
+      "aboveChart": "O Glazecalc não consegue comparar a química deste vidrado com {scale, select, band {{band, select, top {a temperatura muito alta} other {a alta temperatura}}} sk {SK {cone}} temperature {{cone} °C} other {o cone {cone}}}: a regra do boro de Katz vai do cone 06 ao cone 10, os valores de sílica e alumina de Hesselberth e Roy acabam no cone 10, e essa cozedura é mais quente."
     }
   },
   "stull": {
@@ -979,7 +985,7 @@
     "approxTemperature": "≈ {temperature} ({basis}; aproximado)",
     "approxCone": "≈ {cone} ({basis}; aproximado)",
     "basis": {
-      "orton60": "cones Orton grandes a 60 °C por hora",
+      "orton150": "a tabela mais antiga da Orton para cones grandes, a 150 °C por hora",
       "kyoto": "medido a 100 °C por hora pelo instituto municipal de Quioto",
       "stated": "tal como indicado"
     },

@@ -81,7 +81,7 @@ Bảng nêu côn tự đứng 6 là {{2232 °F; 1222 °C}}, nhưng chỉ khi {{1
 
 ## Bảng côn {#cone-chart}
 
-Các số liệu này lấy từ bảng côn của Orton (©2001) cho côn tự đứng. Hãy chọn cột khớp với tốc độ lò của bạn tăng trong {{180 °F; 100 °C}} cuối. Quy tắc ngón tay cái của Orton là cột {{270 °F/h; 150 °C/h}} cho nung nhanh, cột {{108 °F/h; 60 °C/h}} cho nung vừa và cột {{27 °F/h; 15 °C/h}} cho nung chậm. Để tính một tốc độ, hãy chia nhiệt độ đã tăng cho số giờ đã mất: một lò tăng {{900 °F; 500 °C}} trong 3 giờ đang nung nóng ở khoảng {{300 °F/h; 167 °C/h}}.
+Các số liệu này lấy từ bảng côn của Orton (©2001) cho côn tự đứng; côn 11 đến 14 lấy từ các bảng mà Orton công bố hiện nay, vốn cho cùng số liệu ở phần trùng nhau, và chỉ cho côn 13 và 14 bằng °C (°F của chúng ở đây là quy đổi). Hãy chọn cột khớp với tốc độ lò của bạn tăng trong {{180 °F; 100 °C}} cuối. Quy tắc ngón tay cái của Orton là cột {{270 °F/h; 150 °C/h}} cho nung nhanh, cột {{108 °F/h; 60 °C/h}} cho nung vừa và cột {{27 °F/h; 15 °C/h}} cho nung chậm. Để tính một tốc độ, hãy chia nhiệt độ đã tăng cho số giờ đã mất: một lò tăng {{900 °F; 500 °C}} trong 3 giờ đang nung nóng ở khoảng {{300 °F/h; 167 °C/h}}.
 
 Table: Côn tự đứng của Orton: nhiệt độ mà mỗi côn cong, theo tốc độ nâng nhiệt trong {{180 °F; 100 °C}} cuối
 Label: Bảng côn Orton
@@ -108,12 +108,18 @@ Label: Bảng côn Orton
 | 8   |       {{2212 °F; 1211 °C}} |       {{2280 °F; 1249 °C}} |          {{2320 °F; 1271 °C}} |
 | 9   |       {{2235 °F; 1224 °C}} |       {{2300 °F; 1260 °C}} |          {{2336 °F; 1280 °C}} |
 | 10  |       {{2284 °F; 1251 °C}} |       {{2345 °F; 1285 °C}} |          {{2381 °F; 1305 °C}} |
+| 11  |       {{2322 °F; 1272 °C}} |       {{2361 °F; 1294 °C}} |          {{2399 °F; 1315 °C}} |
+| 12  |       {{2345 °F; 1285 °C}} |       {{2383 °F; 1306 °C}} |          {{2419 °F; 1326 °C}} |
+| 13  |       {{2390 °F; 1310 °C}} |       {{2428 °F; 1331 °C}} |          {{2458 °F; 1348 °C}} |
+| 14  |       {{2464 °F; 1351 °C}} |       {{2489 °F; 1365 °C}} |          {{2523 °F; 1384 °C}} |
 
 Dấu gạch ngang đánh dấu một số liệu không được chép ở đây; hãy xem bảng đầy đủ của Orton để biết số liệu đó.
 
+Orton làm côn đến số 42 cho công việc nhiệt độ cao, nhưng chỉ công bố nhiệt độ đến côn 14; với các côn nóng hơn, bảng của hãng “có sẵn (theo yêu cầu)”. Một bảng cũ hơn của Orton, như các hãng làm lò in lại, nêu côn lớn 15 là {{2608 °F; 1431 °C}} ở {{270 °F/h; 150 °C/h}}, và chúng tôi không tìm thấy số liệu nào đã công bố cho côn 16 trở lên. Quá côn 14, hãy đặt côn chứng{{en: witness cone}} và dựa theo chúng, và kiểm tra rằng nhiệt độ tối đa mà nhà sản xuất lò của bạn công bố đạt tới mức nhiệt đó.
+
 Côn lớn đọc trong vòng vài độ so với các số liệu này: một côn lớn 6 ở {{108 °F/h; 60 °C/h}} là {{2228 °F; 1220 °C}}. Côn nhỏ, loại dùng trong Kiln-Sitter, chỉ được liệt kê ở {{540 °F/h; 300 °C/h}}, nên bảng nêu một côn nhỏ 6 là {{2291 °F; 1255 °C}}. Đó không phải là nhiệt độ mà Kiln-Sitter tắt lò. Việc của côn Kiln-Sitter là khớp với côn trên kệ, và côn trên kệ có tiếng nói cuối cùng.
 
-Hai lưu ý. Tập sách nhỏ năm 2019 của Orton nêu côn 06 ở tốc độ nhanh là {{1875 °F; 1024 °C}}, nhưng bảng côn và phần hỏi đáp của Orton đều nêu {{1855 °F; 1013 °C}}, được dùng ở đây. Và bảng côn lớn ở cuối hướng dẫn sử dụng Kiln-Sitter của Dawson có lỗi sao chép (côn 5 nóng hơn côn 6), nên không dùng nó.
+Hai lưu ý. Tập sách nhỏ năm 2019 của Orton nêu côn 06 ở tốc độ nhanh là {{1875 °F; 1024 °C}}, nhưng bảng côn và phần hỏi đáp của Orton đều nêu {{1855 °F; 1013 °C}}, được dùng ở đây. Và bảng côn lớn ở cuối hướng dẫn sử dụng Kiln-Sitter của Dawson có lỗi sao chép (côn 5 nóng hơn côn 6): không dùng bảng đó.
 
 :::temperature
 
@@ -298,6 +304,8 @@ Các số chạy từ SK 022, nguội nhất, đến SK 20 ở đây. Giữa SK 
 
 Đặt mỗi côn lớn trong một tấm côn hoặc một viên đất, nghiêng về phía mặt cong của nó. Như với mọi côn, hãy giữ chiều cao và độ nghiêng giống nhau từ lần nung này sang lần nung khác, vì khác biệt ở một trong hai làm thay đổi mức độ nó cong. Đặt ba côn của bộ côn (bên dưới) cùng nhau, sâu trong lò gần giữa mẻ xếp, nơi chúng nhận nhiệt mà sản phẩm nhận, nhưng bạn nhìn thấy được chúng qua lỗ quan sát; trước khi đóng lò, hãy kiểm tra rằng bạn thấy được cả ba.
 
+Chúng tôi không tìm thấy hướng dẫn nào của nhà sản xuất hay người bán về việc đặt côn SK sâu bao nhiêu hoặc ở góc nào. Gần nhất là một tiêu chuẩn phòng thí nghiệm, JIS R 2204, phép thử của Nhật Bản về mức nhiệt mà một vật liệu chịu lửa chịu được: tiêu chuẩn này đặt mỗi côn SK với mặt có đánh dấu nghiêng 80° so với một đế phẳng và chân côn cắm vào đế khoảng 4 mm. Đó là phép thử cho vật liệu chịu lửa, không phải quy tắc để nung đồ gốm, và chúng tôi đọc nó trong một bản chép lại của tiêu chuẩn, không phải trong chính tiêu chuẩn.
+
 ### Côn dẫn, côn nung và côn bảo vệ
 
 Côn được bán và đặt theo bộ ba: một côn dẫn, một côn nung ở mục tiêu, và một côn bảo vệ. Lấy côn nung là số SK mà công thức men hoặc đất của bạn nêu, côn dẫn là côn nguội hơn kế tiếp (một hàng lên trên trong bảng) và côn bảo vệ là côn nóng hơn kế tiếp. Khi côn dẫn bắt đầu cong, sắp kết thúc; khi côn bảo vệ cong, lần nung đã đi quá xa.
@@ -366,6 +374,8 @@ Côn tự đứng của Orton được bán ở Nhật với tên Seger đứng 
 
 - [Yuko Trading: hyoujun youtou ondo hyou (bảng SK, đã kiểm tra 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
 - [JSA: JIS R 8101:1999, taikado shiken you hyoujun koun (đang có hiệu lực, xác nhận lại 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
+- [JSA: JIS R 2204:1999, taikabutsu oyobi taikabutsu genryou no taikado shiken houhou (đang có hiệu lực, xác nhận lại 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+2204:1999)
+- [kikakurui.com: bản chép lại JIS R 2204:1999, trong đó điều 5 a) quy định cách đặt côn (đã đọc 2026-10-19)](https://kikakurui.com/r2/R2204-1999-01.html)
 - [Kyoto Municipal Institute of Industrial Technology and Culture: những điểm cần lưu ý khi chuyển từ côn Kyoto sang côn Orton](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
 
 :::
@@ -607,7 +617,7 @@ Về việc thông gió cho căn phòng, và về cảnh báo cacbon monoxit, xe
 ### Trong khi lò đang nung
 
 - Chỉ nhìn qua lỗ quan sát bằng kính hàn độ tối 3 chống hồng ngoại; kính râm là không đủ. Skutt khuyên vặn các nút vào đúng chỗ để chúng không rơi ra.
-- Không để lò không người trông quá thời gian nung dự kiến; Kiln-Sitter không phải là thiết bị ngắt an toàn.
+- Ở gần và kiểm tra lò trong khi nung, nhất là gần thời điểm dự kiến kết thúc; Kiln-Sitter không phải là thiết bị ngắt an toàn. Chỉ nung khi có một người lớn ở nhà và tỉnh táo suốt lần nung.
 - Tuyệt đối không nung trên hoặc gần bất cứ thứ gì cháy được, như sàn gỗ hay thảm.
 - Giữ khoảng cách an toàn trong hướng dẫn sử dụng của bạn. Các số liệu đã công bố dao động từ 12 inch (30 cm) đến 3 foot (91 cm); khi hướng dẫn sử dụng không nêu, 18 inch (46 cm) từ tường và 3 foot (91 cm) từ bất cứ thứ gì cháy được là lựa chọn an toàn nhất.
 - Giữ khoảng trống quanh quả cân của Kiln-Sitter thông thoáng để nó có thể rơi.

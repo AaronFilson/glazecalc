@@ -81,7 +81,7 @@ The chart gives a self-supporting cone 6 as {{2232 °F; 1222 °C}}, but only whe
 
 ## The cone chart {#cone-chart}
 
-These figures are from Orton's cone chart (©2001) for self-supporting cones. Choose the column that matches how fast your kiln climbed over the last {{180 °F; 100 °C}}. Orton's rule of thumb is the {{270 °F/h; 150 °C/h}} column for a fast firing, the {{108 °F/h; 60 °C/h}} column for a medium one and the {{27 °F/h; 15 °C/h}} column for a slow one. To work out a rate, divide the temperature climbed by the hours it took: a kiln that climbs {{900 °F; 500 °C}} in 3 hours is heating at about {{300 °F/h; 167 °C/h}}.
+These figures are from Orton's cone chart (©2001) for self-supporting cones; cones 11 to 14 are from the charts Orton publishes now, which give the same figures where they overlap, and cones 13 and 14 only in °C (their °F here is converted). Choose the column that matches how fast your kiln climbed over the last {{180 °F; 100 °C}}. Orton's rule of thumb is the {{270 °F/h; 150 °C/h}} column for a fast firing, the {{108 °F/h; 60 °C/h}} column for a medium one and the {{27 °F/h; 15 °C/h}} column for a slow one. To work out a rate, divide the temperature climbed by the hours it took: a kiln that climbs {{900 °F; 500 °C}} in 3 hours is heating at about {{300 °F/h; 167 °C/h}}.
 
 Table: Orton self-supporting cones: the temperature at which each bends, by heating rate over the last {{180 °F; 100 °C}}
 Label: Orton cone chart
@@ -108,8 +108,14 @@ Label: Orton cone chart
 | 8    |       {{2212 °F; 1211 °C}} |          {{2280 °F; 1249 °C}} |         {{2320 °F; 1271 °C}} |
 | 9    |       {{2235 °F; 1224 °C}} |          {{2300 °F; 1260 °C}} |         {{2336 °F; 1280 °C}} |
 | 10   |       {{2284 °F; 1251 °C}} |          {{2345 °F; 1285 °C}} |         {{2381 °F; 1305 °C}} |
+| 11   |       {{2322 °F; 1272 °C}} |          {{2361 °F; 1294 °C}} |         {{2399 °F; 1315 °C}} |
+| 12   |       {{2345 °F; 1285 °C}} |          {{2383 °F; 1306 °C}} |         {{2419 °F; 1326 °C}} |
+| 13   |       {{2390 °F; 1310 °C}} |          {{2428 °F; 1331 °C}} |         {{2458 °F; 1348 °C}} |
+| 14   |       {{2464 °F; 1351 °C}} |          {{2489 °F; 1365 °C}} |         {{2523 °F; 1384 °C}} |
 
 A dash marks a figure not copied here; see Orton's full chart for it.
+
+Orton makes cones up to 42 for high-temperature work, but publishes temperatures only up to cone 14; for hotter cones its charts are "available (by request)". An older Orton chart, as kiln makers reprint it, gives a large cone 15 as {{2608 °F; 1431 °C}} at {{270 °F/h; 150 °C/h}}, and we found no published figure for cone 16 or above. Past cone 14, set witness cones and go by them, and check that your kiln is rated for that heat.
 
 Large cones read within a few degrees of these figures: a large cone 6 at {{108 °F/h; 60 °C/h}} is {{2228 °F; 1220 °C}}. Small cones, the kind used in a kiln sitter, are listed only at {{540 °F/h; 300 °C/h}}, so the chart gives a small cone 6 as {{2291 °F; 1255 °C}}. That is not the temperature at which a sitter turns the kiln off. The sitter cone's job is to match the shelf cone, and the shelf cone has the final say.
 
@@ -298,6 +304,8 @@ The numbers run from SK 022, the coolest, up to SK 20 here. Between SK 015 and S
 
 Set each large cone in a plaque or a pat of clay, leaning toward its bending face. As with any cone, keep the height and the lean the same from firing to firing, because a difference in either changes how far it bends. Set the three cones of the pack (below) together, deep in the kiln near the middle of the load, where they get the heat the ware gets, yet where you can see them through a peephole; before you close the kiln, check that you can see all three.
 
+We found no maker's or seller's instructions for how deep or at what angle to set SK cones. The nearest is a laboratory standard, JIS R 2204, Japan's test of how much heat a refractory material stands: it sets each SK cone with its marked face at 80° to a flat stand and its foot about 4 mm into it. That is a test for refractories, not a rule for firing pots, and we read it in a transcription of the standard, not in the standard itself.
+
 ### Guide, firing and guard cones
 
 Cones are sold and set as three: a guide cone, a firing cone at the target, and a guard cone. Take the firing cone as the SK number your recipe or clay names, the guide cone as the next cooler cone (one row up in the table) and the guard cone as the next hotter one. When the guide cone starts to bend, the end is near; when the guard cone bends, the firing has gone too far.
@@ -366,6 +374,8 @@ Orton self-supporting cones are sold in Japan under the name 立つゼーゲル 
 
 - [Yuko Trading (有恒商事株式会社): 標準溶倒温度表 (the SK table, checked 2026-10-14)](http://www.yukotrading.co.jp/pdf/segercone_table.pdf)
 - [JSA: JIS R 8101:1999, 耐火度試験用標準コーン (in force, reconfirmed 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+8101:1999)
+- [JSA: JIS R 2204:1999, 耐火物及び耐火物原料の耐火度試験方法 (in force, reconfirmed 2023-10-20)](https://webdesk.jsa.or.jp/books/W11M0090/index/?bunsyo_id=JIS+R+2204:1999)
+- [kikakurui.com: a transcription of JIS R 2204:1999, where clause 5 a) sets the cones (read 2026-10-19)](https://kikakurui.com/r2/R2204-1999-01.html)
 - [Kyoto Municipal Institute of Industrial Technology and Culture: points to note when moving from Kyoto cones to Orton cones](https://tc-kyoto.or.jp/app/uploads/2025/07/OrtonCorn.pdf)
 
 :::
@@ -607,7 +617,7 @@ For venting the room, and for carbon monoxide alarms, see [Safe mixing and venti
 ### While the kiln is firing
 
 - Look through a peephole only with IR-rated shade 3 welding glasses; sunglasses are not enough. Skutt advises twisting the plugs into place so they do not fall out.
-- Do not leave the kiln unattended beyond its expected firing time; a sitter is not a fail-safe.
+- Stay nearby and check the kiln while it fires, above all near its expected finishing time; a sitter is not a fail-safe. Fire only when an adult will be home and awake through the whole firing.
 - Never fire on or near anything that burns, such as a wood floor or carpet.
 - Keep the clearances in your manual. Published figures range from 12 in (30 cm) to 3 ft (91 cm); where the manual is silent, 18 in (46 cm) from walls and 3 ft (91 cm) from anything that burns is the safest choice.
 - Keep the space around the sitter's weight clear so it can drop.

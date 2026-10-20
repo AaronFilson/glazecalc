@@ -100,6 +100,7 @@
   "limitSet-choices": "请选择 hesselberth-roy 或 glazecalc。",
   "currency-choices": "请选择列表中的一种币种，或不选，让它跟随您所在的地区。",
   "calendar-choices": "日期可以按公历（gregory）、泰国佛历（buddhist）或日本年号（japanese）显示。",
+  "digits-choices": "数字可以按您所在地的习惯显示（auto），用 0–9 显示（western），或用语言本身的数字显示（native）。",
   "shelf-invalid": "手头原料列表最多 {most} 种。",
   "shelf-full": "手头的原料最多只能有 {most} 种。没有更改任何内容。",
   "shelf-material-unknown": "这种原料不在您的原料或 Glazecalc 原料库中。",

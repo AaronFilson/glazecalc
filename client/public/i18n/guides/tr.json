@@ -52,6 +52,7 @@
     "emergency": "Acil durum: bilinci kapalı, nefes almıyor, nöbet geçiriyor",
     "poisonAdvice": "{who, select, children {Zehir danışma hattı: {name} (yalnızca çocuklar için)} other {Zehir danışma hattı: {name}}}",
     "or": "veya {number}",
+    "orCall": "veya <link>{number}</link>",
     "online": "Çevrimiçi: <link>{name}</link>.",
     "poisonAdviceNone": "Zehir danışma hattı",
     "noLine": "Burada herkese açık bir zehir danışma hattı olduğunu doğrulayamadık. Doktorunuzu veya acilse acil çağrı numarasını arayın.",
@@ -61,8 +62,7 @@
     "vet": "Veterinerinizi arayın.",
     "checkedOn": "Kontrol tarihi:",
     "choosePrompt": "Orada kimin aranacağını görmek için ülkenizi seçin.",
-    "ministry": "Sağlık bakanlığının sayfası: <link>{name}</link>.",
-    "reported": "Resmî hükûmet sayfaları 113, 114 ve 115’i listeler, ancak her birinin ne için olduğunu belirtmez; gösterilen görevler, ikincil sayfaların aktardığı biçimde 22/2014/TT-BTTTT sayılı Genelge’yi izler."
+    "ministry": "Sağlık bakanlığının sayfası: <link>{name}</link>."
   },
   "density": {
     "sg": "özgül ağırlık {value}",
@@ -112,6 +112,10 @@
     "bandFromTo": "Serbest silis (SiO₂) oranı %{from}–{to} olan toz",
     "bandOverTo": "Serbest silis oranı %{from} değerinden fazla ve en fazla %{to} olan toz",
     "bandAbove": "Serbest silis oranı %{from} değerinden fazla olan toz",
+    "untilDate": "{date} tarihine kadar",
+    "fromDate": "{date} tarihinden itibaren",
+    "beforeFormula": "Solunabilir toz için sınır değer; Q, tozdaki kristal silika yüzdesidir",
+    "beforeAll": "Tamamı kristal silika olan toz için",
     "recommended": "{abbr} tarafından önerilir",
     "value": "{value} mg/m³",
     "kind": {
@@ -122,6 +126,7 @@
     },
     "setBy": "Belirleyen: <link>{law}</link>.",
     "from": "{date} tarihinden itibaren geçerlidir.",
+    "beforeSetBy": "O tarihe kadar sınır değeri belirleyen: <link>{law}</link>.",
     "lowerThanEu": "AB’nin {value} mg/m³ olan bağlayıcı sınır değerinden düşüktür.",
     "sameAsEu": "AB’nin bağlayıcı sınır değeriyle aynıdır.",
     "recommendedBy": "{abbr} ({by}), bu değeri <link>{title}</link> adlı yayınında önerir. Bu bir yasa değildir.",
@@ -184,7 +189,13 @@
       "vnMedium": "Yiyecek tutmak için derin parçalar, 1100 mL ile 3000 mL’den az arası",
       "vnStorage": "Yiyecek tutmak için derin parçalar, 3000 mL veya daha fazla",
       "vnCooking": "Yiyecek pişirmek için derin parçalar",
-      "vnCups": "Fincanlar ve küçük kâseler"
+      "vnCups": "Fincanlar ve küçük kâseler",
+      "cnFlat": "Düz kaplar, derinliği en fazla 25 mm",
+      "cnSmall": "Küçük çukur kaplar, 1,1 L’den az, fincanlar dışında",
+      "cnLarge": "Büyük çukur kaplar, 1,1 L ve üzeri, 3 L’den az",
+      "cnStorage": "Saklama kavanozları, 3 L veya daha fazla",
+      "cnCups": "Fincanlar, su veya içecek için",
+      "cnCooking": "Yiyecek ısıtmak için pişirme kapları"
     },
     "judged": {
       "average": "6 parçanın ortalaması",
@@ -198,6 +209,8 @@
     "atMost": "Bir parça, sınır değerden fazlasını salmıyorsa testi geçer: yasa “en fazla” der.",
     "ppm": "Burada ppm, deney çözeltisinin litresindeki miligram anlamına gelir (mg/L).",
     "unknown": "{region} ülkesindeki kuralları henüz doğrulamadık.",
+    "none": "{region}: pişmiş bir parçanın salabileceği kurşun ve kadmiyum için sınır değer koyan bir yasa yoktur (kontrol tarihi: {date}).",
+    "noneSource": "Kaynak: <link>{law}</link>.",
     "choosePrompt": "Kuralları görmek için ülkenizi seçin."
   },
   "equivalents": {
