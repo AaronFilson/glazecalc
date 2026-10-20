@@ -2,7 +2,7 @@ import { TestBed } from '@angular/core/testing';
 import { ActivatedRoute, convertToParamMap } from '@angular/router';
 import { OPEN_PAGE } from '../../i18n/language';
 import { API, httpMock, settle, skippedHeadings, testProviders, text } from '../../testing/test-providers';
-import { ConnectPage, type ConnectRequest } from './connect-page';
+import { ALLOW_AFTER_MS, ConnectPage, type ConnectRequest } from './connect-page';
 
 const UID = 'aB3_dE5-gH7iJ9kL1mN';
 const ADDRESS = API + '/connect/' + UID;
@@ -27,16 +27,20 @@ const CIMD: ConnectRequest = {
   expiresAt: '2026-10-19T12:15:00Z'
 };
 
+const wait = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
+
 describe('ConnectPage', () => {
   let opened: string[];
 
-  const create = async (shown: ConnectRequest | { status: number; body: object }) => {
+  /** The page with what the API says; Allow takes a click allowAfter ms after it is shown (none, unless a test says). */
+  const create = async (shown: ConnectRequest | { status: number; body: object }, allowAfter = 0) => {
     opened = [];
     TestBed.configureTestingModule({
       providers: [
         ...testProviders(),
         { provide: ActivatedRoute, useValue: { snapshot: { paramMap: convertToParamMap({ uid: UID }) } } },
-        { provide: OPEN_PAGE, useValue: (address: string) => opened.push(address) }
+        { provide: OPEN_PAGE, useValue: (address: string) => opened.push(address) },
+        { provide: ALLOW_AFTER_MS, useValue: allowAfter }
       ]
     });
     const fixture = TestBed.createComponent(ConnectPage);
@@ -46,6 +50,7 @@ describe('ConnectPage', () => {
     expect(req.request.headers.get('accept')).toBe('application/json');
     if ('status' in shown) req.flush(shown.body, { status: shown.status, statusText: 'Refused' });
     else req.flush(shown);
+    await settle(fixture);
     await settle(fixture);
     const root: HTMLElement = fixture.nativeElement;
     const button = (name: string) =>
@@ -96,6 +101,63 @@ describe('ConnectPage', () => {
     await settle(fixture);
     expect(opened).toEqual(['https://glazecalc.test/oauth/authorize/resume']);
     expect(text(fixture)).toContain('Sending your answer to the app');
+  });
+
+  it('holds Allow back until the page has been in front a moment, and again each time it comes back', async () => {
+    const { fixture, button } = await create(LOOPBACK, 40);
+    const allow = () => button('Allow')!;
+    // Just shown: a click meant for something else, such as the second half of a double-click, does nothing.
+    expect(allow().getAttribute('aria-disabled')).toBe('true');
+    allow().click();
+    httpMock().expectNone(ADDRESS);
+    await wait(80);
+    await settle(fixture);
+    expect(allow().hasAttribute('aria-disabled')).toBe(false);
+    // The window goes behind another, then comes back to the front: Allow waits again from then.
+    window.dispatchEvent(new Event('blur'));
+    await settle(fixture);
+    expect(allow().getAttribute('aria-disabled')).toBe('true');
+    window.dispatchEvent(new Event('focus'));
+    await settle(fixture);
+    allow().click();
+    httpMock().expectNone(ADDRESS);
+    await wait(80);
+    await settle(fixture);
+    allow().click();
+    const post = httpMock().expectOne(ADDRESS);
+    expect(post.request.body).toEqual({ decision: 'allow', write: false });
+    post.flush({ redirectTo: 'https://glazecalc.test/oauth/authorize/resume' });
+    await settle(fixture);
+    expect(opened).toEqual(['https://glazecalc.test/oauth/authorize/resume']);
+  });
+
+  it('never counts while the tab is hidden', async () => {
+    const { fixture, button } = await create(LOOPBACK, 40);
+    const hidden = vi.spyOn(document, 'visibilityState', 'get').mockReturnValue('hidden');
+    try {
+      document.dispatchEvent(new Event('visibilitychange'));
+      await wait(80);
+      await settle(fixture);
+      expect(button('Allow')!.getAttribute('aria-disabled')).toBe('true');
+    } finally {
+      hidden.mockRestore();
+    }
+    document.dispatchEvent(new Event('visibilitychange'));
+    await wait(80);
+    await settle(fixture);
+    expect(button('Allow')!.hasAttribute('aria-disabled')).toBe(false);
+  });
+
+  it('takes Don’t allow at once', async () => {
+    const { fixture, button } = await create(LOOPBACK, 60_000);
+    expect(button('Allow')!.getAttribute('aria-disabled')).toBe('true');
+    expect(button('Don’t allow')!.hasAttribute('aria-disabled')).toBe(false);
+    button('Don’t allow')!.click();
+    const post = httpMock().expectOne(ADDRESS);
+    expect(post.request.body).toEqual({ decision: 'deny', write: false });
+    post.flush({ redirectTo: 'https://glazecalc.test/oauth/authorize/resume' });
+    await settle(fixture);
+    expect(opened.length).toBe(1);
   });
 
   it('sends write only when the person ticks it', async () => {

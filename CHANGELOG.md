@@ -916,6 +916,11 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Fixed
 
+- **Two ways round the consent page for AI apps closed** (docs/adr/0024-authorization-server.md, "An
+  outside report"). An app may no longer send its answer to this site's own addresses, where the page
+  would have named glazecalcapp.com as the place the answer goes. And Allow takes a click only once the
+  page has been in front for a second, so a click meant for something else (the second half of a
+  double-click on another site that brings the page forward) cannot land on it.
 - **Sign-in keeps the page you were going to.** "Create a free account" and "Sign in" on the sign-in and
   sign-up pages carry `?next=` (this site's pages only) so an AI app's consent page is not lost; and a
   session that has gone stale sends you to sign-in with the page you were on, which you come back to.
