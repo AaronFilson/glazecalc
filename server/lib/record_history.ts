@@ -184,10 +184,22 @@ export const saveVersion = async (
   kind: string,
   before: Row,
   by: By,
-  { now = new Date(), replacing }: { now?: Date; replacing?: Types.ObjectId } = {}
+  {
+    now = new Date(),
+    replacing,
+    tokenId
+  }: { now?: Date; replacing?: Types.ObjectId; tokenId?: string | Types.ObjectId } = {}
 ): Promise<void> => {
   const ownedBy = String(before.ownedBy);
-  await RecordVersion.create({ ownedBy, fromCollection: kind, recordId: before._id, record: before, savedAt: now, by });
+  await RecordVersion.create({
+    ownedBy,
+    fromCollection: kind,
+    recordId: before._id,
+    record: before,
+    savedAt: now,
+    by,
+    ...(tokenId && by !== 'session' && { tokenId })
+  });
   if (replacing) await RecordVersion.deleteOne({ _id: replacing });
   const versions = await RecordVersion.find({ ownedBy, recordId: before._id })
     .sort({ savedAt: -1, _id: -1 })

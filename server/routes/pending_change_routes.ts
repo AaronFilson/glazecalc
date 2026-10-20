@@ -2,13 +2,20 @@
 // server/lib/pending_changes.ts).
 //
 //   GET  /api/pending-changes/:id              with the web session: the change, as its page
-//                                              (/confirm/:id) shows it, if it is the account's;
-//                                              with the token that asked: { status, msg, outcome? },
-//                                              what came of it once decided (then it is forgotten)
+//                                              (/confirm/:id) shows it, if it is the account's: its
+//                                              summary, each field it sets as it is now and would be,
+//                                              what the app did to the record lately, and every other
+//                                              change waiting from the same app; or, once decided,
+//                                              what came of it. With the token that asked:
+//                                              { status, msg, outcome? }. Reading it changes nothing:
+//                                              both can read what came of it until its time is up
 //   POST /api/pending-changes/:id/approve      the person approves it: it is made, once
 //   POST /api/pending-changes/:id/decline      the person says no: nothing is changed
-//   POST /api/pending-changes/approve-all?tokenId=<id>
-//                                              approves everything one app or token is waiting on
+//   POST /api/pending-changes/approve-all?tokenId=<id>   { ids }
+//   POST /api/pending-changes/decline-all?tokenId=<id>   { ids }
+//                                              approves, or declines, the changes the page showed
+//                                              (ids) that still wait from one app or token: never
+//                                              one that came after the page was opened
 //
 // Approving and declining take the web session only: a token is refused (403)
 // before anything is read, so an app, or an assistant led astray by what it
@@ -27,10 +34,14 @@ import {
   approve,
   approveAll,
   decline,
+  declineAll,
+  detailsOf,
   findForUser,
+  MOST_WAITING,
+  othersWaiting,
   outcomeForToken,
-  waitingFrom,
-  type Outcome
+  type Outcome,
+  type Pending
 } from '../lib/pending_changes.ts';
 import { accessTokenIn, checkAccessToken, invalidToken } from '../lib/token_auth.ts';
 import AccessToken from '../models/access_token.ts';
@@ -93,36 +104,76 @@ pendingChangeRouter.get('/:id', async (req, res, next) => {
   return jwtAuth(req, res, next);
 });
 
-// The web session: the change as its page shows it. Never its arguments.
+/** A change as its page shows it: the server's words, the fields it sets, what the app did lately. Never its arguments. */
+const viewOf = async (change: Pending) => ({
+  id: change._id,
+  status: change.status,
+  summary: say(change.summary.code as MessageCode, change.summary.params),
+  removal: change.removal,
+  createdAt: change.createdAt,
+  expiresAt: change.expiresAt,
+  ...(await detailsOf(change))
+});
+
+// The web session: the change as its page shows it, and the others waiting from the same app.
 pendingChangeRouter.get('/:id', notGuest, async (req, res) => {
   const user = userOf(req);
   const change = await findForUser(req.params.id, user._id);
   if (!change) return res.status(404).json(NOT_FOUND);
-  const waiting = change.status === 'pending' ? await waitingFrom(user._id, change.tokenId) : 0;
+  const pending = change.status === 'pending';
+  const token = await AccessToken.findOne(
+    { _id: change.tokenId, userId: user._id },
+    { kind: 1, clientSource: 1 }
+  ).lean();
+  const others = pending ? await othersWaiting(user._id, change.tokenId, change._id) : [];
   return res.status(200).json({
-    id: change._id,
-    status: change.status,
-    summary: say(change.summary.code as MessageCode, change.summary.params),
-    removal: change.removal,
+    ...(await viewOf(change)),
     client: change.client,
     via: change.via,
+    // An app that registered itself: its name is only what it says about itself (as on Connected apps).
+    selfDescribed: token?.kind === 'oauth' && token.clientSource !== 'cimd',
     tokenId: String(change.tokenId),
-    createdAt: change.createdAt,
-    expiresAt: change.expiresAt,
-    // Others from the same app, for "Approve all from this app".
-    othersWaiting: Math.max(0, waiting - 1)
+    // Once decided, what came of it, in words.
+    ...(!pending && { result: say(codeFor({ status: change.status, reply: change.outcome })) }),
+    // Every other change waiting from the same app, for "Approve all" and "Decline all" to name exactly.
+    others: await Promise.all(others.map(viewOf))
   });
 });
 
-pendingChangeRouter.post('/approve-all', jwtAuth, notGuest, async (req, res) => {
+/** The token or app, and the changes the page showed, that approve-all and decline-all are for; null after answering 400 or 404. */
+const shownChanges = async (req: Request, res: Response): Promise<{ tokenId: string; ids: string[] } | null> => {
   const tokenId = req.query.tokenId;
-  if (typeof tokenId !== 'string' || !mongoose.isObjectIdOrHexString(tokenId)) {
-    return res.status(400).json(say('invalid-id'));
+  const ids = (req.body as { ids?: unknown } | undefined)?.ids;
+  if (
+    typeof tokenId !== 'string' ||
+    !mongoose.isObjectIdOrHexString(tokenId) ||
+    !Array.isArray(ids) ||
+    !ids.length ||
+    ids.length > MOST_WAITING ||
+    !ids.every((id) => typeof id === 'string' && id.length <= 64)
+  ) {
+    res.status(400).json(say('invalid-id'));
+    return null;
   }
-  const user = userOf(req);
-  if (!(await AccessToken.exists({ _id: tokenId, userId: user._id }))) return res.status(404).json(NOT_FOUND);
-  const { made, notMade } = await approveAll(user._id, tokenId);
-  return res.status(200).json({ ...say('pending-approved-all', { made, notMade }), made, notMade });
+  if (!(await AccessToken.exists({ _id: tokenId, userId: userOf(req)._id }))) {
+    res.status(404).json(NOT_FOUND);
+    return null;
+  }
+  return { tokenId, ids: ids as string[] };
+};
+
+pendingChangeRouter.post('/approve-all', jwtAuth, notGuest, express.json(), async (req, res) => {
+  const shown = await shownChanges(req, res);
+  if (!shown) return;
+  const { made, notMade } = await approveAll(userOf(req)._id, shown.tokenId, shown.ids);
+  res.status(200).json({ ...say('pending-approved-all', { made, notMade }), made, notMade });
+});
+
+pendingChangeRouter.post('/decline-all', jwtAuth, notGuest, express.json(), async (req, res) => {
+  const shown = await shownChanges(req, res);
+  if (!shown) return;
+  const declined = await declineAll(userOf(req)._id, shown.tokenId, shown.ids);
+  res.status(200).json({ ...say('pending-declined-all', { count: declined }), declined });
 });
 
 pendingChangeRouter.post('/:id/approve', jwtAuth, notGuest, async (req, res) => {

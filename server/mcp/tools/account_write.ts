@@ -24,22 +24,22 @@
 // Confirm before changes (docs/adr/0025-confirm-before-changes.md): when the
 // account asks to approve every change, or removals (move_to_trash and
 // remove_from_shelf), a change waits (server/lib/pending_changes.ts) and
-// nothing is changed until the person says yes:
+// nothing is changed until the person approves it on the Glazecalc website,
+// signed in (owner decision, 2026-10-19: what this guards against is an
+// assistant that misbehaves, so the assistant's own client never approves):
 //   1. a client that declares URL elicitation (2026-07-28) is asked to open
-//      the change's page on the website, where the person approves it signed in;
-//   2. a client that declares form elicitation asks the person itself, with
-//      the server's own words for the change, and a yes makes it;
-//   3. any other client (all 2025 ones) is told, as a refusal, to ask the
-//      person to approve it at the page's address: it is made when they do.
-// For 'removals' the client's own question comes first, for 'all' the
-// website's. The state handed to the client is signed (../request_state.ts)
-// and must name this account, token, tool and these exact arguments; the
-// change itself is made once, by the same code (makeWork) the tool runs when
-// nothing waits.
+//      the change's page on the website;
+//   2. any other client (all 2025 ones, and one that offers only a form of
+//      its own) is told, as a refusal, to ask the person to approve it at the
+//      page's address: it is made when they do.
+// The state handed to the client is signed (../request_state.ts) and must name
+// this account, token, tool and these exact arguments. A retry carrying it
+// never makes the change itself: it reads the setting again and asks the
+// website what the person decided. The change itself is made once, by the
+// same code (makeWork) the tool runs when nothing waits.
 import * as z from 'zod';
 import mongoose from 'mongoose';
 import {
-  acceptedContent,
   CLIENT_CAPABILITIES_META_KEY,
   inputRequired,
   PROTOCOL_VERSION_META_KEY,
@@ -53,17 +53,19 @@ import type { MaterialRecord } from '../../../lib/recipe/index.js';
 import { makeRoom, type RecordModel } from '../../lib/guest_limits.ts';
 import { textOf, type MessageCode } from '../../lib/messages.ts';
 import {
-  approveForToken,
   askToConfirm,
   confirmationFor,
   confirmUrl,
   decline,
   digestOf,
+  fieldChanges,
   findForUser,
   outcomeForToken,
+  registerPreview,
   registerRunner,
   TooManyWaiting,
   MOST_WAITING,
+  MOST_WAITING_PER_TOKEN,
   type BaseRef,
   type Outcome,
   type Summary
@@ -134,16 +136,11 @@ export const OTHER_CHANGE = 'Nothing was changed: that approval was for another 
 /** What a retry says when its change is no longer waiting (decided already, or waited too long). */
 export const NOT_WAITING =
   'Nothing more was changed: this change is no longer waiting. It was decided already, or waited too long.';
-/** What a change says when too many are waiting already. */
+/** What a change says when too many are waiting already, on the account or from this token or app. */
 export const TOO_MANY_WAITING = textOf('pending-too-many', { most: MOST_WAITING });
+export const TOO_MANY_WAITING_HERE = textOf('pending-too-many-app', { most: MOST_WAITING_PER_TOKEN });
 /** How many times a client is asked again while the person has not decided on the website. */
 export const MOST_ROUNDS = 8;
-/**
- * Whether a yes in the client's own form counts as the person's approval
- * (owner decision, 2026-10-19). Anyone holding the token can send that yes,
- * so it is weaker than the website's (docs/adr/0025); false leaves the website alone.
- */
-export const FORM_CONFIRMS = true;
 
 const NEEDS = 'Needs an access token that can read and change your records.';
 const idArg = z.string().min(1).max(40);
@@ -443,7 +440,7 @@ const makeWork = ({ userId, tokenId, scopes, actor }: Who) => {
         }
         throw new ToolProblem(`No recipe with id ${id} in your account.`);
       }
-      await saveVersion('recipes', before, actor.via);
+      await saveVersion('recipes', before, actor.via, { tokenId });
       await logActivityBy(actor, userId, 'change', 'recipes', { ...before, ...changes });
       return ok({
         id: String(before._id),
@@ -528,7 +525,7 @@ const makeWork = ({ userId, tokenId, scopes, actor }: Who) => {
         { runValidators: true, returnDocument: 'before', lean: true }
       );
       if (!before) throw new ToolProblem(`No material with id ${id} in your account.`);
-      await saveVersion('materials', before, actor.via);
+      await saveVersion('materials', before, actor.via, { tokenId });
       await logActivityBy(actor, userId, 'change', 'materials', { ...before, ...changes });
       return ok({
         id: String(before._id),
@@ -637,6 +634,53 @@ export const WRITE_TOOLS: ReadonlySet<string> = new Set<WriteTool>([
 /** The tools that remove something: what the setting 'removals' asks about. */
 export const REMOVAL_TOOLS: readonly WriteTool[] = ['move_to_trash', 'remove_from_shelf'];
 
+// What a waiting change sets, field by field, for its page (server/lib/pending_changes.ts detailsOf):
+// the record's fields as they are now and as the tool would set them.
+const notesOf = (notes: unknown) => (notes === undefined ? undefined : [notes]);
+registerPreview('mcp', 'create_recipe', (given) => {
+  const args = given as Partial<CreateRecipeArgs>;
+  return fieldChanges(
+    {
+      title: args.title,
+      materials: args.lines,
+      additives: args.colorants,
+      notes: notesOf(args.notes),
+      firing: args.firing,
+      foodSurface: args.foodSurface
+    },
+    null
+  );
+});
+registerPreview('mcp', 'update_recipe', (given, current) => {
+  const args = given as Partial<UpdateRecipeArgs>;
+  return fieldChanges(
+    {
+      title: args.title,
+      materials: args.lines,
+      notes: notesOf(args.notes),
+      firing: args.firing,
+      foodSurface: args.foodSurface
+    },
+    current ?? {}
+  );
+});
+registerPreview('mcp', 'add_notebook_entry', (given) => {
+  const args = given as Partial<NotebookArgs>;
+  return fieldChanges({ title: args.title, content: args.content }, null);
+});
+registerPreview('mcp', 'add_my_material', (given) => {
+  const args = given as Partial<AddMaterialArgs>;
+  return fieldChanges({ name: args.name, analysis: args.analysis, loi: args.loi, notes: notesOf(args.notes) }, null);
+});
+registerPreview('mcp', 'update_my_material', (given, current) => {
+  const args = given as Partial<UpdateMaterialArgs>;
+  return fieldChanges(
+    { name: args.name, analysis: args.analysis, loi: args.loi, notes: notesOf(args.notes) },
+    // Its oxides as the Materials page keeps them, by the name the tool gives them.
+    current ? { ...current, analysis: current.fields } : {}
+  );
+});
+
 // A confirmed change is made by the same work, as its token, checked again (server/lib/pending_changes.ts).
 registerRunner('mcp', async (ctx, change) => {
   const work = makeWork({
@@ -719,20 +763,20 @@ const describe = async (
 const question = (summary: Summary, client: string): string =>
   `${textOf(summary.code as MessageCode, summary.params)} Asked by "${client}" with an access token to your Glazecalc account.`;
 
-/** How the client said it can ask the person (2026-07-28 requests only): open a page, and a form of its own. */
-const clientCanAsk = (ctx: ServerContext): { url: boolean; form: boolean } => {
+/**
+ * Whether the client said it can open a page for the person (URL elicitation,
+ * 2026-07-28 requests only). A form of its own is never used: the person
+ * approves on the website.
+ */
+const clientOpensPages = (ctx: ServerContext): boolean => {
   const envelope = ctx.mcpReq.envelope as Record<string, unknown> | undefined;
-  if (!envelope || typeof envelope[PROTOCOL_VERSION_META_KEY] !== 'string') return { url: false, form: false };
+  if (!envelope || typeof envelope[PROTOCOL_VERSION_META_KEY] !== 'string') return false;
   const capabilities = envelope[CLIENT_CAPABILITIES_META_KEY] as { elicitation?: unknown } | undefined;
   const elicitation = capabilities?.elicitation;
-  if (!elicitation || typeof elicitation !== 'object') return { url: false, form: false };
-  const modes = elicitation as Record<string, unknown>;
-  // A bare elicitation: {} means a form, as before modes were named (the SDK reads it so too).
-  return { url: modes.url !== undefined, form: modes.form !== undefined || modes.url === undefined };
+  return Boolean(
+    elicitation && typeof elicitation === 'object' && (elicitation as { url?: unknown }).url !== undefined
+  );
 };
-
-/** The schema of the form's one answer. */
-const APPROVE_SCHEMA = z.object({ approve: z.boolean() });
 
 /** What came of a decided change, as the tool's answer. */
 const answerOf = (outcome: Outcome): CallToolResult => {
@@ -756,47 +800,38 @@ export const registerWriteTools = (server: McpServer, caller: Caller): void => {
   const actor: TokenActor = { via, tokenId, name: client };
   const work = makeWork({ userId, tokenId, scopes, actor });
 
-  /** Asks the client to have the person open the change's page, or answer its own form; or says where to approve. */
+  /** Asks the client to have the person open the change's page on the website, or says where to approve it. */
   const ask = async (
-    state: Omit<ConfirmState, 'mode' | 'round'>,
+    state: Omit<ConfirmState, 'round'>,
     summary: Summary,
     url: string,
-    setting: 'removals' | 'all',
     ctx: ServerContext,
     round = 1
   ): Promise<ToolAnswer> => {
-    const can = clientCanAsk(ctx);
-    const order: Array<'url' | 'form'> = setting === 'all' ? ['url', 'form'] : ['form', 'url'];
-    const mode = order.find((way) => can[way] && (way === 'url' || FORM_CONFIRMS));
-    if (!mode) return fail(approveAt(url));
-    const requestState = await requestStateCodec.mint({ ...state, mode, round });
-    const words = question(summary, client);
+    if (!clientOpensPages(ctx)) return fail(approveAt(url));
+    const requestState = await requestStateCodec.mint({ ...state, round });
     return inputRequired({
       inputRequests: {
-        confirm:
-          mode === 'url'
-            ? inputRequired.elicitUrl({ message: `${words} Approve or decline it on the Glazecalc website.`, url })
-            : inputRequired.elicit({
-                message: words,
-                requestedSchema: {
-                  type: 'object',
-                  properties: {
-                    approve: {
-                      type: 'boolean',
-                      title: 'Make this change',
-                      description: 'Yes makes the change now; no changes nothing.'
-                    }
-                  },
-                  required: ['approve']
-                }
-              })
+        confirm: inputRequired.elicitUrl({
+          message: `${question(summary, client)} Approve or decline it on the Glazecalc website.`,
+          url
+        })
       },
       requestState
     });
   };
 
-  /** A retry carrying the state handed out while asking: the person's answer, or whether the website has one yet. */
-  const retry = async (tool: WriteTool, args: unknown, state: unknown, ctx: ServerContext): Promise<ToolAnswer> => {
+  /**
+   * A retry carrying the state handed out while asking. It never makes the
+   * change: only the person's approval on the website does. It reads the
+   * setting again (the state says nothing about it) and what the website has.
+   */
+  const retry = async (
+    tool: WriteTool,
+    args: Record<string, unknown>,
+    state: unknown,
+    ctx: ServerContext
+  ): Promise<ToolAnswer> => {
     if (
       !isConfirmState(state) ||
       state.userId !== userId ||
@@ -807,21 +842,15 @@ export const registerWriteTools = (server: McpServer, caller: Caller): void => {
       throw new ToolProblem(OTHER_CHANGE);
     }
     const mine = { userId, tokenId };
-    if (state.mode === 'form') {
-      const answer = acceptedContent(ctx.mcpReq.inputResponses, 'confirm', APPROVE_SCHEMA);
-      if (answer?.approve !== true) {
-        await decline(state.pendingId, mine);
-        await outcomeForToken(state.pendingId, tokenId);
-        return fail(textOf('pending-declined'));
-      }
-      const outcome = await approveForToken(state.pendingId, userId, tokenId);
-      if (!outcome) throw new ToolProblem(NOT_WAITING);
-      return answerOf(outcome);
-    }
-    // The website: a client that would not open the page says no for the person.
+    // A client that would not open the page says no for the person; its answer never says yes.
     const response = ctx.mcpReq.inputResponses?.confirm as { action?: unknown } | undefined;
     if (response && (response.action === 'decline' || response.action === 'cancel')) {
       await decline(state.pendingId, mine);
+    }
+    // The person stopped asking for this kind of change meanwhile: it is withdrawn, and made as any
+    // call would be made now. Withdrawn in one step, so an approval at the same moment makes it once.
+    if (!(await confirmationFor(userId, tokenId, REMOVAL_TOOLS.includes(tool)))) {
+      if (await decline(state.pendingId, mine)) return (work[tool] as (args: unknown) => Promise<CallToolResult>)(args);
     }
     const outcome = await outcomeForToken(state.pendingId, tokenId);
     if (!outcome) throw new ToolProblem(NOT_WAITING);
@@ -832,7 +861,7 @@ export const registerWriteTools = (server: McpServer, caller: Caller): void => {
       const waiting = await findForUser(state.pendingId, userId);
       const { pendingId, argsDigest } = state;
       const same = { pendingId, userId, tokenId, tool, argsDigest };
-      return ask(same, waiting?.summary ?? { code: 'pending-waiting', params: {} }, url, 'all', ctx, state.round + 1);
+      return ask(same, waiting?.summary ?? { code: 'pending-waiting', params: {} }, url, ctx, state.round + 1);
     }
     return answerOf(outcome);
   };
@@ -857,6 +886,9 @@ export const registerWriteTools = (server: McpServer, caller: Caller): void => {
     const described = await describe(tool, args, userId);
     // No such record: the tool refuses, changing nothing, as it would anyway.
     if (!described) return run(args);
+    // Asking counts against the account's limits on changes made with tokens, as the REST routes count it,
+    // so an assistant that asks without end is stopped as one that changes without end would be.
+    if (!(await countTokenWrite(userId))) throw new ToolProblem(TOO_MANY_CHANGES);
     let waiting;
     try {
       waiting = await askToConfirm({
@@ -873,14 +905,15 @@ export const registerWriteTools = (server: McpServer, caller: Caller): void => {
         base: described.base ?? null
       });
     } catch (err) {
-      if (err instanceof TooManyWaiting) throw new ToolProblem(TOO_MANY_WAITING);
+      if (err instanceof TooManyWaiting) {
+        throw new ToolProblem(err.which === 'token' ? TOO_MANY_WAITING_HERE : TOO_MANY_WAITING);
+      }
       throw err;
     }
     return ask(
       { pendingId: waiting.id, userId, tokenId, tool, argsDigest: digestOf('mcp', tool, args) },
       described.summary,
       waiting.url,
-      setting,
       ctx
     );
   };

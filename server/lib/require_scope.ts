@@ -10,9 +10,15 @@ import { tokenDay, tokenMinute, tokenWriteDay, tokenWriteMinute } from './rate_l
 import { allows, scopeFor, type Permission } from './scopes.ts';
 import { accessTokenIn, checkAccessToken, insufficientScope, invalidToken, touchToken } from './token_auth.ts';
 
-export const requireScope =
-  (permission: Permission) =>
-  async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+/** The permission each handler requireScope made asks for, for the test that every route changing records asks to confirm. */
+const permissions = new WeakMap<object, Permission>();
+
+/** The permission a route's handler asks for, if requireScope made it. */
+export const permissionOf = (handler: unknown): Permission | undefined =>
+  typeof handler === 'function' ? permissions.get(handler) : undefined;
+
+export const requireScope = (permission: Permission): RequestHandler => {
+  const check = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     const token = accessTokenIn(req);
     if (token === null) return jwtAuth(req, res, next);
     const found = await checkAccessToken(req, token);
@@ -42,5 +48,8 @@ export const requireScope =
     };
     run(0)();
   };
+  permissions.set(check, permission);
+  return check;
+};
 
 export default requireScope;

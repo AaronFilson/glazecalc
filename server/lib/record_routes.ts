@@ -43,7 +43,17 @@ import { say } from './messages.ts';
 import * as limits from './rate_limit.ts';
 import { byOf, logActivity, moveToTrash, saveVersion, titleOf, tokenIdOf, TRASH_FULL } from './record_history.ts';
 import requireScope from './require_scope.ts';
-import { confirmFirst, inputOf, named, registerOp, send, type Describe, type Op } from './rest_changes.ts';
+import { fieldChanges, registerPreview } from './pending_changes.ts';
+import {
+  confirmFirst,
+  inputOf,
+  named,
+  registerOp,
+  send,
+  type Describe,
+  type Op,
+  type OpInput
+} from './rest_changes.ts';
 import type { Area } from './scopes.ts';
 
 export interface RecordRoutesOptions {
@@ -126,7 +136,7 @@ export default function recordRoutes(
         { runValidators: true, returnDocument: 'before', lean: true }
       );
       if (!before) return { status: 404, body: notFound };
-      await saveVersion(area, before, byOf(who));
+      await saveVersion(area, before, byOf(who), { tokenId: tokenIdOf(who) });
       await logActivity(who, 'change', area, { ...before, ...changes });
       return { status: 200, body: say('record-updated', { label }) };
     } catch (err) {
@@ -170,7 +180,7 @@ export default function recordRoutes(
     // In the Trash, or gone: the version stays, for when it is put back.
     if (!before) return { status: 404, body: notFound };
     // What the undo replaced is kept in place of the version it put back, so the undo can be undone.
-    await saveVersion(area, before, byOf(who), { replacing: version._id });
+    await saveVersion(area, before, byOf(who), { replacing: version._id, tokenId: tokenIdOf(who) });
     const restored = (await Model.findOne(filter).lean()) ?? { ...replacement, _id: before._id };
     await logActivity(who, 'undo', area, restored);
     return { status: 200, body: { ...say('record-undone', { label }), record: restored } };
@@ -184,6 +194,13 @@ export default function recordRoutes(
   registerOp(area + '.change', change);
   registerOp(area + '.delete', remove, { trashes: true });
   registerOp(area + '.undo', undo);
+  // What a waiting create or change sets, field by field, for its page.
+  registerPreview('rest', area + '.create', (args) =>
+    fieldChanges(pick(recordIn((args as OpInput).body, wrapper.create) ?? {}, fields), null)
+  );
+  registerPreview('rest', area + '.change', (args, current) =>
+    fieldChanges(pick(recordIn((args as OpInput).body, wrapper.change) ?? {}, fields), current)
+  );
 
   /** The title of one of the account's records of this kind ('' for none), or null when there is no such record. */
   const titleIn = async (id: unknown, userId: unknown): Promise<string | null> => {
@@ -240,7 +257,8 @@ export default function recordRoutes(
     send(res, await change(whoIs(req), inputOf(req)));
   });
 
-  router.delete('/delete/:id', writing, limits.tokenDeletes, asking.remove, async (req, res) => {
+  // A removal that waits is counted against its token's removals when it is made (rest_changes.ts), not now.
+  router.delete('/delete/:id', writing, asking.remove, limits.tokenDeletes, async (req, res) => {
     send(res, await remove(whoIs(req), inputOf(req)));
   });
 

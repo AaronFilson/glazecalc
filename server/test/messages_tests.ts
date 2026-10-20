@@ -22,7 +22,9 @@ describe('messages', () => {
       fields: 'title, notes',
       names: 'Silica, Whiting',
       made: 2,
-      notMade: 1
+      notMade: 1,
+      log: 'Cone 6 glaze',
+      logNamed: 'yes'
     };
     for (const code of Object.keys(MESSAGES) as MessageCode[]) {
       const text = textOf(code, params);

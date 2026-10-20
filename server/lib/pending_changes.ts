@@ -11,28 +11,44 @@
 // been asked: the token or grant still works and still allows it, and the
 // record or shelf it changes is as it was when it was asked for (`base`).
 // The limits on changes are counted by the runner, as the tool or route
-// counts them. Only the person approves, with their own web session
-// (server/routes/pending_change_routes.ts); the token that asked can only
-// read what came of it.
+// counts them. Only the person approves, on the website, with their own web
+// session (server/routes/pending_change_routes.ts); the token that asked can
+// only read what came of it. What this guards against is an assistant that
+// misbehaves or was led astray by what it read, not a stolen token: whoever
+// holds a token is trusted as far as the person chose when they made it.
+//
+// A runaway assistant cannot fill the queue: at most MOST_WAITING_PER_TOKEN
+// wait from one token or app, and MOST_WAITING from all of the account's
+// (revoked or expired ones not counted); the check comes after the row is
+// written, so two asks at once can never both slip under it.
 //
 // When the setting cannot be read, the change waits (fail closed).
 import crypto from 'node:crypto';
-import type { Types } from 'mongoose';
+import mongoose, { type Types } from 'mongoose';
 import languages from '../../lib/regions/languages.js';
 import AccessToken from '../models/access_token.ts';
-import PendingChange, { FINAL_STATUSES, PENDING_MINUTES, type PendingStatus } from '../models/pending_change.ts';
+import PendingChange, { PENDING_MINUTES, type PendingStatus } from '../models/pending_change.ts';
+import RecordVersion, { VERSIONS_KEPT } from '../models/record_version.ts';
 import User, { CONFIRM_CHANGES, type ConfirmChanges, type UserDocument } from '../models/user.ts';
 import { OWNED_KINDS } from './account_data.ts';
 import * as log from './log.ts';
-import type { TokenActor } from './record_history.ts';
+import { titleOf, type TokenActor } from './record_history.ts';
 import { allows, isScope, type Permission, type Scope } from './scopes.ts';
 import * as site from './site.ts';
 
 /** At most this many changes wait for one account at once; more are refused, changing nothing. */
 export const MOST_WAITING = 20;
+/** And at most this many from one token or app, so one runaway assistant cannot fill the account's queue. */
+export const MOST_WAITING_PER_TOKEN = 5;
 
-/** Thrown by askToConfirm when MOST_WAITING changes are waiting already. */
-export class TooManyWaiting extends Error {}
+/** Thrown by askToConfirm when too many changes are waiting already: from this token or app, or on the account. */
+export class TooManyWaiting extends Error {
+  readonly which: 'token' | 'account';
+  constructor(which: 'token' | 'account') {
+    super('Too many changes waiting: ' + which);
+    this.which = which;
+  }
+}
 
 /** What a change is, as its page and an assistant's question say it: a message code (server/lib/messages.ts) and its values. */
 export interface Summary {
@@ -181,19 +197,40 @@ export interface Ask {
 }
 
 /**
+ * Whether the account has more changes waiting than it may: from this token
+ * or app (MOST_WAITING_PER_TOKEN), or in all (MOST_WAITING). Changes from a
+ * token or app that was revoked or has expired are not counted.
+ */
+const overTheLimit = async (userId: string, tokenId: string, now: Date): Promise<'token' | 'account' | null> => {
+  const waiting = await PendingChange.find(
+    { userId, status: 'pending', expiresAt: { $gt: now } },
+    { tokenId: 1 }
+  ).lean();
+  const tokenIds = [...new Set(waiting.map((row) => String(row.tokenId)))];
+  const working = new Set(
+    (
+      await AccessToken.find(
+        { _id: { $in: tokenIds }, userId, revokedAt: null, expiresAt: { $gt: now } },
+        { _id: 1 }
+      ).lean()
+    ).map((row) => String(row._id))
+  );
+  const counted = waiting.filter((row) => working.has(String(row.tokenId)));
+  if (counted.filter((row) => String(row.tokenId) === tokenId).length > MOST_WAITING_PER_TOKEN) return 'token';
+  return counted.length > MOST_WAITING ? 'account' : null;
+};
+
+/**
  * Keeps a change to wait for the person, and resolves with its id and the
- * address of its page. TooManyWaiting when MOST_WAITING are waiting already.
+ * address of its page. TooManyWaiting when too many are waiting already: the
+ * change is written first and counted with the others, and taken back when it
+ * is one too many, so asks that come at the same moment never pass the limits
+ * together (at worst both are refused).
  */
 export const askToConfirm = async (
   ask: Ask,
   now = new Date()
 ): Promise<{ id: string; url: string; expiresAt: Date }> => {
-  const waiting = await PendingChange.countDocuments({
-    userId: ask.userId,
-    status: 'pending',
-    expiresAt: { $gt: now }
-  });
-  if (waiting >= MOST_WAITING) throw new TooManyWaiting();
   const id = crypto.randomBytes(16).toString('base64url');
   const expiresAt = new Date(now.getTime() + PENDING_MINUTES * 60 * 1000);
   const base = ask.base ? { ...ask.base, version: await versionOf(ask.userId, ask.base) } : undefined;
@@ -214,6 +251,11 @@ export const askToConfirm = async (
     createdAt: now,
     expiresAt
   });
+  const over = await overTheLimit(ask.userId, ask.tokenId, now);
+  if (over) {
+    await PendingChange.deleteOne({ _id: id });
+    throw new TooManyWaiting(over);
+  }
   const user = await User.findById(ask.userId, { 'preferences.language': 1 }).lean();
   return { id, url: confirmUrl(id, user?.preferences?.language), expiresAt };
 };
@@ -311,23 +353,6 @@ export const approve = async (
   return change ? run(change, now) : null;
 };
 
-/**
- * An assistant's client asked the person, who said yes (form elicitation,
- * docs/adr/0025): made once, for the token that asked, and then forgotten.
- */
-export const approveForToken = async (
-  id: string,
-  userId: string,
-  tokenId: string,
-  now = new Date()
-): Promise<Outcome | null> => {
-  const change = await take(id, { userId, tokenId }, now);
-  if (!change) return null;
-  const outcome = await run(change, now);
-  await PendingChange.deleteOne({ _id: id });
-  return outcome;
-};
-
 /** The person says no: nothing is changed, and the arguments go. false when it is not waiting. */
 export const decline = async (id: string, filter: Record<string, unknown>, now = new Date()): Promise<boolean> => {
   const done = await PendingChange.updateOne(
@@ -337,16 +362,25 @@ export const decline = async (id: string, filter: Record<string, unknown>, now =
   return done.modifiedCount === 1;
 };
 
-/** Approves every change one token or grant is waiting on, oldest first; resolves with how many were made and how many not. */
-export const approveAll = async (
-  userId: string | Types.ObjectId,
-  tokenId: string,
-  now = new Date()
-): Promise<{ made: number; notMade: number }> => {
-  const waiting = await PendingChange.find({ userId, tokenId, status: 'pending', ...live(now) })
+/**
+ * The changes, of those the person was shown (`ids`), that still wait from
+ * one token or app, oldest first. Only these are approved or declined
+ * together: never one that came after the page was opened.
+ */
+const waitingAmong = async (userId: string | Types.ObjectId, tokenId: string, ids: string[], now: Date) =>
+  PendingChange.find({ _id: { $in: ids }, userId, tokenId, status: 'pending', ...live(now) })
     .sort({ createdAt: 1, _id: 1 })
     .select({ _id: 1 })
     .lean();
+
+/** Approves the changes shown to the person (`ids`) that one token or app is waiting on, oldest first; resolves with how many were made and how many not. */
+export const approveAll = async (
+  userId: string | Types.ObjectId,
+  tokenId: string,
+  ids: string[],
+  now = new Date()
+): Promise<{ made: number; notMade: number }> => {
+  const waiting = await waitingAmong(userId, tokenId, ids, now);
   let made = 0;
   let notMade = 0;
   for (const { _id } of waiting) {
@@ -358,14 +392,36 @@ export const approveAll = async (
   return { made, notMade };
 };
 
-/** How many changes one token or grant is waiting on. */
-export const waitingFrom = (userId: string | Types.ObjectId, tokenId: Types.ObjectId | string, now = new Date()) =>
-  PendingChange.countDocuments({ userId, tokenId, status: 'pending', ...live(now) });
+/** Declines the changes shown to the person (`ids`) that one token or app is waiting on; resolves with how many. */
+export const declineAll = async (
+  userId: string | Types.ObjectId,
+  tokenId: string,
+  ids: string[],
+  now = new Date()
+): Promise<number> => {
+  let declined = 0;
+  for (const { _id } of await waitingAmong(userId, tokenId, ids, now)) {
+    if (await decline(_id, { userId, tokenId }, now)) declined++;
+  }
+  return declined;
+};
+
+/** The other changes one token or app is waiting on, oldest first, for the page to show them all. */
+export const othersWaiting = async (
+  userId: string | Types.ObjectId,
+  tokenId: Types.ObjectId | string,
+  except: string,
+  now = new Date()
+) =>
+  (await PendingChange.find({ userId, tokenId, status: 'pending', _id: { $ne: except }, ...live(now) })
+    .sort({ createdAt: 1, _id: 1 })
+    .lean()) as Pending[];
 
 /**
  * For the token that asked: whether its change still waits, or what came of
- * it. A decided change is forgotten once its token has read this (used).
- * null when there is no such change for this token.
+ * it. Reading it changes nothing, so the person's page still shows what came
+ * of it too, until its time is up. null when there is no such change for this
+ * token.
  */
 export const outcomeForToken = async (
   id: unknown,
@@ -375,7 +431,140 @@ export const outcomeForToken = async (
   if (typeof id !== 'string' || id.length > 64) return null;
   const change = (await PendingChange.findOne({ _id: id, tokenId, ...live(now) }).lean()) as Pending | null;
   if (!change) return null;
-  if (!FINAL_STATUSES.includes(change.status)) return { status: change.status, expiresAt: change.expiresAt };
-  await PendingChange.deleteOne({ _id: id, status: change.status });
+  if (change.status === 'pending' || change.status === 'running') {
+    return { status: change.status, expiresAt: change.expiresAt };
+  }
   return { status: change.status, reply: change.outcome ?? undefined, expiresAt: change.expiresAt };
+};
+
+// What the approval page shows of a change, built here for the signed-in
+// owner alone (never for the token that asked): each field it sets, as it is
+// now and as it would be, and, for a removal, what this app changed in the
+// record before (its versions, record_history.ts saveVersion).
+
+/** One field a change sets: as it is now (absent for a new record) and as it would be, as text. */
+export interface FieldChange {
+  field: string;
+  before?: string;
+  after: string;
+}
+
+/** Turns a waiting change's arguments into the fields it sets, given the record as it is now (null for a new one). */
+export type Preview = (args: unknown, current: Record<string, unknown> | null) => FieldChange[];
+
+const previews = new Map<string, Preview>();
+
+/** The fields a kind of change sets, for its page: registered by the tools and routes, by source and action. */
+export const registerPreview = (source: Pending['source'], action: string, preview: Preview): void => {
+  previews.set(source + ':' + action, preview);
+};
+
+/** At most this many characters of one value are sent; the page shows fewer, with a way to see these. */
+export const VALUE_LONGEST = 20000;
+
+/**
+ * A field's value as text for the page: a list of materials or oxides as one
+ * line each ("Silica 30"), a note's paragraphs one after another, anything
+ * else as JSON.
+ */
+export const asText = (value: unknown): string => {
+  const text = (() => {
+    if (value === undefined || value === null) return '';
+    if (typeof value === 'string') return value;
+    if (typeof value === 'number' || typeof value === 'boolean') return String(value);
+    if (Array.isArray(value)) {
+      return value
+        .map((item) => {
+          if (item && typeof item === 'object' && !Array.isArray(item)) {
+            const row = item as Record<string, unknown>;
+            const name = row.name ?? row.material;
+            if (typeof name === 'string') {
+              return [name, row.amount, row.unit].filter((part) => part !== undefined && part !== '').join(' ');
+            }
+          }
+          return asText(item);
+        })
+        .join('\n');
+    }
+    if (typeof value === 'object') {
+      const entries = Object.entries(value as Record<string, unknown>);
+      if (entries.every(([, v]) => typeof v === 'number' || typeof v === 'string')) {
+        return entries.map(([k, v]) => k + ' ' + String(v)).join('\n');
+      }
+    }
+    return JSON.stringify(value) ?? '';
+  })();
+  return text.length > VALUE_LONGEST ? text.slice(0, VALUE_LONGEST) + '…' : text;
+};
+
+/** The fields given, each as it is in the record now and as it would be; those that would not change are left out. */
+export const fieldChanges = (given: Record<string, unknown>, current: Record<string, unknown> | null): FieldChange[] =>
+  Object.entries(given)
+    .filter(([, value]) => value !== undefined)
+    .map(([field, value]) => ({
+      field,
+      ...(current && { before: asText(current[field]) }),
+      after: asText(value)
+    }))
+    .filter((change) => change.before !== change.after);
+
+/** What this app did to the record before: what it was called before, and how long ago it last changed it. */
+export interface History {
+  /** Its title before this app's latest run of changes, when that was another. */
+  titleBefore?: string;
+  minutesAgo: number;
+}
+
+/**
+ * Whether the token or app that asked changed this record lately: the newest
+ * versions it saved, one after another, say what it was before them.
+ */
+const historyOf = async (
+  change: Pending,
+  current: Record<string, unknown> | null,
+  now: Date
+): Promise<History | null> => {
+  if (change.base?.kind !== 'record') return null;
+  const versions = await RecordVersion.find({
+    ownedBy: String(change.userId),
+    fromCollection: change.base.area,
+    recordId: change.base.id
+  })
+    .sort({ savedAt: -1, _id: -1 })
+    .limit(VERSIONS_KEPT)
+    .select({ savedAt: 1, tokenId: 1, 'record.title': 1, 'record.name': 1 })
+    .lean();
+  const run: typeof versions = [];
+  for (const version of versions) {
+    if (String(version.tokenId) !== String(change.tokenId)) break;
+    run.push(version);
+  }
+  if (!run.length) return null;
+  const titleBefore = titleOf((run[run.length - 1]!.record ?? {}) as Record<string, unknown>) ?? '';
+  const titleNow = current ? (titleOf(current) ?? '') : '';
+  return {
+    ...(titleBefore !== titleNow && { titleBefore }),
+    minutesAgo: Math.max(0, Math.floor((now.getTime() - run[0]!.savedAt.getTime()) / 60000))
+  };
+};
+
+/** What the page shows of a change besides its summary: the fields it sets, and for a removal what this app did before. */
+export const detailsOf = async (
+  change: Pending,
+  now = new Date()
+): Promise<{ changes: FieldChange[]; history: History | null }> => {
+  let current: Record<string, unknown> | null = null;
+  if (change.base?.kind === 'record' && mongoose.isValidObjectId(change.base.id)) {
+    const Model = OWNED_KINDS[change.base.area];
+    current = Model
+      ? ((await Model.findOne({ _id: change.base.id, ownedBy: String(change.userId) }).lean()) as Record<
+          string,
+          unknown
+        > | null)
+      : null;
+  }
+  const preview = previews.get(change.source + ':' + change.action);
+  const changes = change.status === 'pending' && preview && change.args != null ? preview(change.args, current) : [];
+  const history = change.removal ? await historyOf(change, current, now) : null;
+  return { changes, history };
 };

@@ -7,7 +7,9 @@
 // expired requestState"); the tool then checks that the state is for this
 // account, this token, this tool and these exact arguments
 // (tools/account_write.ts). It is signed, not secret: it names only the
-// waiting change and who asked.
+// waiting change and who asked. It says nothing about whether the change
+// needs approving or how: a retry reads the setting again, and only the
+// person's approval on the website makes the change.
 import crypto from 'node:crypto';
 import { createRequestStateCodec } from '@modelcontextprotocol/server';
 import appSecret from '../lib/app_secret.ts';
@@ -22,8 +24,6 @@ export interface ConfirmState {
   tool: string;
   /** pending_changes.ts digestOf the tool and its arguments. */
   argsDigest: string;
-  /** How the person is being asked: on the website (url) or by the client (form). */
-  mode: 'url' | 'form';
   /** Which round of asking this is: the client retries until the change is decided, or MAX_ROUNDS. */
   round: number;
 }
@@ -39,7 +39,6 @@ export const isConfirmState = (value: unknown): value is ConfirmState => {
   const state = value as Record<string, unknown>;
   return (
     ['pendingId', 'userId', 'tokenId', 'tool', 'argsDigest'].every((name) => typeof state[name] === 'string') &&
-    (state.mode === 'url' || state.mode === 'form') &&
     typeof state.round === 'number'
   );
 };

@@ -1,6 +1,7 @@
 import mongoose, { type InferSchemaType, type Types } from 'mongoose';
 import { SCOPES } from '../lib/scopes.ts';
 import { deleteGrantRecords } from '../oauth/adapter.ts';
+import { endWaitingOf } from './pending_change.ts';
 
 // Access to an account that Glazecalc gave out, other than the web session
 // (docs/integrations-plan.md, item 4): a personal access token (kind 'pat')
@@ -139,6 +140,8 @@ export const revokeAll = async (
       { $set: { revokedAt: now, revokedWhy: why } }
     )
   ).modifiedCount;
+  // Their changes waiting for approval end too (docs/adr/0025).
+  await endWaitingOf({ userId }, now);
   const grants = await AccessToken.find({ userId, kind: 'oauth', grantId: { $type: 'string' } }, { grantId: 1 }).lean();
   await deleteGrantRecords(grants.map((row) => row.grantId!));
   return count;
@@ -163,6 +166,7 @@ export const revokeOne = async (
   if (!row.revokedAt) {
     await AccessToken.updateOne({ _id: row._id, revokedAt: null }, { $set: { revokedAt: now, revokedWhy: why } });
   }
+  await endWaitingOf({ userId, tokenId: row._id }, now);
   // A connected app's grant goes with it (server/oauth/), so every access and refresh token it holds stops at once.
   if (row.kind === 'oauth' && row.grantId) await deleteGrantRecords([row.grantId]);
   return true;

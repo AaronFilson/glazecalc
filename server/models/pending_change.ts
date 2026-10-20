@@ -3,23 +3,25 @@ import mongoose, { type InferSchemaType } from 'mongoose';
 // A change an access token or a connected app asked to make while the account
 // asks to confirm changes (User.confirmChanges; docs/adr/0025-confirm-before-changes.md).
 // Nothing is changed until the person approves it on the website, signed in
-// as the same account (server/routes/pending_change_routes.ts), or, for an
-// assistant whose client can ask the person itself, answers yes there
-// (server/mcp/tools/account_write.ts). server/lib/pending_changes.ts runs it.
+// as the same account (server/routes/pending_change_routes.ts): never through
+// the app or assistant that asked. server/lib/pending_changes.ts runs it.
 //
 // Its _id is 128 random bits (base64url), the address of its page
 // (/confirm/<id>), and opens nothing by itself: the page and every route need
 // the account's own web session, or the token that asked. It waits
 // PENDING_MINUTES; MongoDB removes it after that (every query also checks
 // expiresAt, as the TTL monitor runs only once a minute). Once it is decided,
-// `args` (which can hold a note's text) is removed at once, and the row itself
-// once the token that asked has read what came of it.
+// `args` (which can hold a note's text) is removed at once; what came of it
+// stays, for the token that asked and for the person's page alike, until the
+// row's time is up. Revoking the token or app that asked ends its waiting
+// changes at once (endWaitingOf).
 //
 //   pending   waiting for the person
 //   running   approved, being made (the one step from pending, so it runs once)
 //   done      made: `outcome` is what the tool or route answered
 //   failed    approved but refused when it was made (the token was revoked,
-//             a limit, the record is gone): `outcome` says why
+//             a limit, the record is gone), or ended because the token or
+//             app that asked was revoked while it waited: `outcome` says why
 //   conflict  approved, but the record or shelf changed since it was asked
 //             for, so nothing was changed
 //   declined  the person said no
@@ -84,3 +86,20 @@ export type PendingChangeFields = InferSchemaType<typeof pendingChangeSchema>;
 
 const PendingChange = mongoose.model('PendingChange', pendingChangeSchema);
 export default PendingChange;
+
+/**
+ * Ends the waiting changes of tokens or apps that were just revoked: nothing
+ * is changed, the arguments go, and the person's page and the token see why
+ * (pending-token-gone). Called by every way of revoking
+ * (models/access_token.ts revokeOne and revokeAll, oauth/revoke.ts), so a
+ * revoked app's requests no longer fill the account's queue.
+ */
+export const endWaitingOf = async (
+  filter: Record<string, unknown> & { via?: 'pat' | 'oauth' },
+  now = new Date()
+): Promise<void> => {
+  await PendingChange.updateMany({ ...filter, status: 'pending' } as mongoose.QueryFilter<PendingChangeFields>, {
+    $set: { status: 'failed', decidedAt: now, outcome: { code: 'pending-token-gone' } },
+    $unset: { args: 1 }
+  });
+};

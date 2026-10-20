@@ -9,6 +9,7 @@
 // use; these are for code that has the grant rather than the row.
 import type { Types } from 'mongoose';
 import AccessToken, { type RevokedWhy } from '../models/access_token.ts';
+import { endWaitingOf } from '../models/pending_change.ts';
 import { deleteGrantRecords } from './adapter.ts';
 
 /** Revokes the connection of this grant, and deletes the grant with every token it gave out. */
@@ -18,6 +19,8 @@ export const revokeGrant = async (grantId: string, why: RevokedWhy = 'person', n
     { kind: 'oauth', grantId, revokedAt: null },
     { $set: { revokedAt: now, revokedWhy: why } }
   );
+  const rows = await AccessToken.find({ kind: 'oauth', grantId }, { _id: 1 }).lean();
+  if (rows.length) await endWaitingOf({ tokenId: { $in: rows.map((row) => row._id) } }, now);
   await deleteGrantRecords([grantId]);
 };
 
@@ -33,6 +36,7 @@ export const revokeAllGrants = async (
       { $set: { revokedAt: now, revokedWhy: why } }
     )
   ).modifiedCount;
+  await endWaitingOf({ userId, via: 'oauth' }, now);
   const grants = await AccessToken.find({ userId, kind: 'oauth', grantId: { $type: 'string' } }, { grantId: 1 }).lean();
   await deleteGrantRecords(grants.map((row) => row.grantId!));
   return count;
@@ -54,5 +58,6 @@ export const replaceEarlierGrants = async (
     { _id: { $in: earlier.map((row) => row._id) }, revokedAt: null },
     { $set: { revokedAt: now, revokedWhy: 'replaced' } }
   );
+  await endWaitingOf({ userId, tokenId: { $in: earlier.map((row) => row._id) } }, now);
   await deleteGrantRecords(earlier.map((row) => row.grantId).filter((id): id is string => typeof id === 'string'));
 };

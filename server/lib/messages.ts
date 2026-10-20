@@ -221,6 +221,8 @@ export const MESSAGES = {
     'Nothing changed yet. This account asks to approve changes made with access tokens: the person can approve this one on the Glazecalc website, at the address given, within {minutes, plural, one {# minute} other {# minutes}}, and it is made then. GET /api/pending-changes/ and its pendingId, with this token, says what came of it.',
   'pending-too-many':
     'Nothing was changed: {most} changes are already waiting for approval on this account. The person can approve or decline those first.',
+  'pending-too-many-app':
+    'Nothing was changed: {most} changes from this app or access token are already waiting for approval. The person can approve or decline those first.',
   'pending-not-found':
     'There is no change waiting at this address. It may have been decided already, or waited too long.',
   'pending-waiting': 'This change is waiting for the person to approve it.',
@@ -233,6 +235,8 @@ export const MESSAGES = {
   'pending-made': 'Done: the change was made.',
   'pending-approved-all':
     '{made, plural, =0 {No changes were made.} one {# change was made.} other {# changes were made.}}{notMade, plural, =0 {} one { # could not be made.} other { # could not be made.}}',
+  'pending-declined-all':
+    '{count, plural, =0 {No changes were waiting.} one {# change was declined: nothing was changed.} other {# changes were declined: nothing was changed.}}',
   'pending-create': `Save a new ${KIND}{named, select, yes { “{title}”} other {}}.`,
   'pending-change': `Change the ${KIND}{named, select, yes { “{title}”} other {}}: {fields}.`,
   'pending-undo': `Undo the last change to the ${KIND}{named, select, yes { “{title}”} other {}}.`,
@@ -241,6 +245,12 @@ export const MESSAGES = {
   'pending-shelf-add': 'Mark as on hand: {names}.',
   'pending-shelf-remove': 'Take off the materials on hand: {names}.',
   'pending-shelf-undo': 'Put the materials on hand back as they were before their last change.',
+  'pending-firing-link':
+    'Link the firing log{logNamed, select, yes { “{log}”} other {}} to the recipe{named, select, yes { “{title}”} other {}}.',
+  'pending-firing-change':
+    'Change the firing log{logNamed, select, yes { “{log}”} other {}} linked to the recipe{named, select, yes { “{title}”} other {}}: {fields}.',
+  'pending-firing-unlink':
+    'Take the firing log{logNamed, select, yes { “{log}”} other {}} off the recipe{named, select, yes { “{title}”} other {}}.',
 
   // Requests in general.
   'not-found': 'Not found',
