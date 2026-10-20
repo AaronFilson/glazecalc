@@ -419,6 +419,53 @@ describe('App', () => {
     expect(fixture.nativeElement.querySelector('.nav-quick-signin')).toBeNull();
   });
 
+  describe("the menu's Sign in and Create account links keep the page a sign-in is for (?next=)", () => {
+    @Component({ template: '<h1>Page</h1>' })
+    class Page {}
+    const CONNECT = '/connect/aB3_dE5-gH7iJ9kL1mN';
+    const linksAt = async (url: string) => {
+      TestBed.resetTestingModule();
+      TestBed.configureTestingModule({
+        providers: [...testProviders(), provideRouter([{ path: '**', component: Page }])]
+      });
+      const { fixture } = await create(App);
+      await TestBed.inject(Router).navigateByUrl(url);
+      await settle(fixture);
+      const href = (selector: string) =>
+        (fixture.nativeElement.querySelector(selector) as HTMLAnchorElement | null)?.getAttribute('href');
+      return {
+        signIn: href('.nav-account a:not(.btn)'),
+        signUp: href('.nav-account a.btn'),
+        quick: href('.nav-quick-signin')
+      };
+    };
+
+    it('carries a page of this site from the sign-in or sign-up page to both', async () => {
+      const carried = '?next=' + encodeURIComponent(CONNECT);
+      for (const page of ['/signin', '/signup']) {
+        expect(await linksAt(page + carried)).toEqual({
+          signIn: '/signin' + carried,
+          signUp: '/signup' + carried,
+          quick: '/signin' + carried
+        });
+      }
+    });
+
+    it('carries nothing where there is no ?next=, or it is not a page of this site', async () => {
+      const plain = { signIn: '/signin', signUp: '/signup', quick: '/signin' };
+      expect(await linksAt('/guides')).toEqual(plain);
+      for (const bad of [
+        '//evil.example/x',
+        '/\\evil.example',
+        'https://evil.example/',
+        'javascript:alert(1)',
+        '/signup'
+      ]) {
+        expect(await linksAt('/signin?next=' + encodeURIComponent(bad)), bad).toEqual(plain);
+      }
+    });
+  });
+
   it('opens and closes the phone menu', async () => {
     const { fixture, page } = await create(App);
     const toggle = fixture.nativeElement.querySelector('.nav-toggle') as HTMLButtonElement;

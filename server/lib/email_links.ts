@@ -5,6 +5,7 @@ import EmailToken, { cancelEmailLinks } from '../models/email_token.ts';
 import type { UserDocument } from '../models/user.ts';
 import * as accountMail from './account_mail.ts';
 import * as log from './log.ts';
+import { returnPage } from './pages.ts';
 
 /** How long a link works. */
 export const LINK_HOURS = 24;
@@ -36,9 +37,15 @@ export async function makeLink(user: UserDocument, kind: 'verify' | 'change', ad
   return token;
 }
 
-/** Emails a new account the link that confirms its address. Mail never delays or fails the request that asked. */
-export const sendVerification = (user: UserDocument): void => {
+/**
+ * Emails a new account the link that confirms its address. Mail never delays
+ * or fails the request that asked. `next`, as the sign-up sent it: the page
+ * the link goes on to once the address is confirmed, when it is one of the
+ * app's pages (returnPage); anything else is left out.
+ */
+export const sendVerification = (user: UserDocument, next?: unknown): void => {
+  const back = returnPage(next);
   makeLink(user, 'verify', user.email)
-    .then((token) => accountMail.sendVerify(user.email, token, LINK_HOURS, user.preferences?.language))
+    .then((token) => accountMail.sendVerify(user.email, token, LINK_HOURS, user.preferences?.language, back))
     .catch((err: unknown) => log.error('Could not send the email confirmation', { code: log.codeOf(err) }));
 };

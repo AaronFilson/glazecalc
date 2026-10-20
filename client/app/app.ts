@@ -28,6 +28,7 @@ import {
 } from '@angular/router';
 import { AuthService } from './core/auth.service';
 import { LocaleService } from './core/locale.service';
+import { sameSitePath } from './core/signed-in.guard';
 import { formatDate } from './shared/format';
 import { errorMessage } from './core/error-message';
 import { RichText } from './i18n/rich-text';
@@ -73,7 +74,7 @@ const APP_PAGES = [
         <!-- On a phone the menu is folded away; returning visitors sign in without opening it. -->
         @if (!auth.shownSession()) {
           @if (!auth.secondStepPending()) {
-            <a routerLink="/signin" class="nav-quick-signin">{{ t('nav.signIn') }}</a>
+            <a routerLink="/signin" [queryParams]="nextParams()" class="nav-quick-signin">{{ t('nav.signIn') }}</a>
           }
         } @else {
           <!-- And a signed-in reader sees that they are, and has their account a tap away. -->
@@ -148,8 +149,10 @@ const APP_PAGES = [
             <!-- Not while a sign-in waits for its second step: they would start it again. -->
             @if (!auth.secondStepPending()) {
               <div class="nav-account">
-                <a routerLink="/signin">{{ t('nav.signIn') }}</a>
-                <a routerLink="/signup" class="btn btn-primary btn-sm">{{ t('nav.createAccount') }}</a>
+                <a routerLink="/signin" [queryParams]="nextParams()">{{ t('nav.signIn') }}</a>
+                <a routerLink="/signup" [queryParams]="nextParams()" class="btn btn-primary btn-sm">{{
+                  t('nav.createAccount')
+                }}</a>
               </div>
             }
           }
@@ -291,6 +294,13 @@ export class App implements OnInit {
     if (this.menu().nativeElement.contains(this.document.activeElement)) this.toggle().nativeElement.focus();
   }
   protected readonly ready = signal(false);
+  /**
+   * The page a sign-in is for, from this address's ?next= (the sign-in and
+   * sign-up pages have one when a page sent the visitor there, auth-page.ts):
+   * the menu's Sign in and Create account links keep it, so the visitor still
+   * comes back to that page, whichever they choose. A page of this site only.
+   */
+  protected readonly nextParams = signal<{ next: string } | null>(null);
   protected readonly confirmingDiscard = signal(false);
   protected readonly discarding = signal(false);
   protected readonly discardError = signal('');
@@ -342,6 +352,8 @@ export class App implements OnInit {
       if (!(event instanceof NavigationEnd)) return;
       this.menuOpen.set(false);
       this.ready.set(true);
+      const next = sameSitePath(this.router.parseUrl(event.urlAfterRedirects).queryParamMap.get('next'));
+      this.nextParams.set(next ? { next } : null);
       const path = event.urlAfterRedirects.split(/[?#]/)[0]!;
       if (shown !== null && path !== shown) this.showNewPage(trigger === 'popstate');
       shown = path;

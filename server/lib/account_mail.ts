@@ -2206,16 +2206,27 @@ export const CHANGE_NOTICE: Record<string, Email> = {
   }
 };
 
-/** Whole hours a link works for, as the emails say. */
-export const sendVerify = (to: string, token: string, hours: number, language?: string): Promise<void> => {
+/**
+ * Whole hours a link works for, as the emails say. `next`: the page to go on
+ * to once the address is confirmed, a page of the app already checked
+ * (pages.ts, returnPage), such as the consent page of an app that was asking
+ * to connect when the account was made.
+ */
+export const sendVerify = (
+  to: string,
+  token: string,
+  hours: number,
+  language?: string,
+  next?: string | null
+): Promise<void> => {
   const email = inLanguage(VERIFY, language);
   return mailer.send({
     to,
     subject: email.subject,
-    // After the #, like a reset link's token, so it stays in the browser.
+    // After the #, like a reset link's token, so it stays in the browser; the page to go on to too.
     text: fill(email.text, {
       account: to,
-      link: pageIn(language, '/confirm-email#token=' + token),
+      link: pageIn(language, '/confirm-email#token=' + token + (next ? '&next=' + encodeURIComponent(next) : '')),
       hours: counted(writtenIn(VERIFY, language), 'hours', hours),
       app: mailer.appUrl()
     })
