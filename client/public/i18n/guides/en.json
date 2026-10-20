@@ -52,6 +52,7 @@
     "emergency": "An emergency: unconscious, not breathing, a seizure",
     "poisonAdvice": "{who, select, children {Poison advice: {name} (children only)} other {Poison advice: {name}}}",
     "or": "or {number}",
+    "orCall": "or <link>{number}</link>",
     "online": "Online: <link>{name}</link>.",
     "poisonAdviceNone": "Poison advice",
     "noLine": "We could not confirm a public poison line here. Call your doctor, or the emergency number if it is urgent.",

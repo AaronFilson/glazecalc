@@ -99,7 +99,9 @@ describe('LocaleService', () => {
     expect(browserRegion(['en', 'ja-JP'])).toBe('JP');
     expect(browserRegion(['en', 'ko-KR'])).toBe('KR');
     expect(browserRegion(['en', 'th-TH'])).toBe('TH');
-    expect(browserRegion(['en', 'ar-EG'])).toBe('');
+    expect(browserRegion(['en', 'ar-EG'])).toBe('EG');
+    // Saudi Arabia is not a region (the owner's decision, 2026-10-20).
+    expect(browserRegion(['en', 'ar-SA'])).toBe('');
     expect(browserRegion(['tr-TR', 'en'])).toBe('TR');
     expect(browserRegion(['not a tag'])).toBe('');
   });
@@ -286,7 +288,8 @@ describe('prerenderRegion', () => {
   });
 
   it('names none for English, a pseudo-locale, or a language no region lists', () => {
-    expect(['en', 'en-XA', 'ar', 'ar-XB'].map((language) => prerenderRegion(language))).toEqual(['', '', '', '']);
+    // Arabic is Egypt's now (below); its pseudo-locale is English.
+    expect(['en', 'en-XA', 'ar-XB', 'xx'].map((language) => prerenderRegion(language))).toEqual(['', '', '', '']);
   });
 
   it('writes Arabic for Egypt, Hindi and Tamil for India, Urdu for Pakistan and Bengali for Bangladesh', () => {
@@ -308,15 +311,20 @@ describe('prerenderRegion', () => {
       'BD',
       'IN'
     ]);
-    // Until its country is a region, none: not Singapore for Tamil, nor another country's.
-    expect(['ar', 'hi', 'ur', 'bn', 'ta'].map((language) => prerenderRegion(language))).toEqual(['', '', '', '', '']);
-    // What the live languages are written for stays as it was.
-    expect(['de', 'el', 'zh-Hant', 'ja', 'th'].map((language) => prerenderRegion(language, planned))).toEqual([
-      'DE',
-      'GR',
-      'TW',
-      'JP',
-      'TH'
+    // Now that they are regions (docs/south-asia-mena-plan.md), Glazecalc's own regions give the same: not
+    // Singapore for Tamil, nor Morocco or Algeria for French, which they list after Arabic.
+    expect(['ar', 'hi', 'ur', 'bn', 'ta'].map((language) => prerenderRegion(language))).toEqual([
+      'EG',
+      'IN',
+      'PK',
+      'BD',
+      'IN'
     ]);
+    // What the live languages are written for stays as it was.
+    for (const regions of [planned, REGIONS]) {
+      expect(
+        ['de', 'el', 'zh-Hant', 'ja', 'th', 'fr', 'en'].map((language) => prerenderRegion(language, regions))
+      ).toEqual(['DE', 'GR', 'TW', 'JP', 'TH', 'FR', '']);
+    }
   });
 });

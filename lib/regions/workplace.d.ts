@@ -126,18 +126,37 @@ export interface Agency {
   checked: string;
 }
 
+/**
+ * What was found where a region has no national limit (India's: each state sets its own), with the
+ * law that says so: shown under the line that no limit is confirmed, and only where no limit is shown.
+ */
+export interface NoLimit {
+  note: string;
+  /** The instrument that says so, as it is named there. */
+  law: string;
+  source: string;
+  status: Status;
+  checked: string;
+}
+
 export interface Workplace {
   silica?: SilicaLimit;
   agency?: Agency;
   respirators?: Respirators;
+  noLimit?: NoLimit;
 }
 
 export const WORKPLACE: Readonly<Record<string, Workplace>>;
 /** The EU's binding limit (Directive (EU) 2017/2398), which member states may undercut. */
 export const EU_SILICA: SilicaLimit;
 /** A region's facts that may be shown (verified, or from a named secondary source); null for a region with none. */
-export function workplaceFor(
-  code: string
-): { silica: SilicaLimit | null; agency: Agency | null; respirators: Respirators | null; eu: boolean } | null;
+export function workplaceFor(code: string): {
+  silica: SilicaLimit | null;
+  agency: Agency | null;
+  respirators: Respirators | null;
+  eu: boolean;
+  /** Given only where no limit is shown and the region's data has one that may be. */
+  noLimit?: NoLimit;
+} | null;
 /** Every piece of text shown, once, for translators. */
 export function texts(): string[];

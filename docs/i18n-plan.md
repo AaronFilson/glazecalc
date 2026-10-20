@@ -462,7 +462,8 @@ The EU plan is built so that later regions add languages and data, not a new app
   Hausa follow as languages.
 - **Region data.** Many countries have no poison centre, and the data model already handles that: the emergency
   number, and a link to the health ministry. Emergency numbers vary (India 112, China 120 for an ambulance), so they
-  are always data.
+  are always data. India, Pakistan, Bangladesh, Egypt, the UAE, Morocco and Algeria are regions since 2026-10-20, in
+  English (docs/south-asia-mena-plan.md); Morocco and Algeria list French, so French pages show their data already.
 - **Reaching people.** Baidu does not use hreflang, and GitHub is unreliable from mainland China, so the correction
   link there also needs a route that works in China, such as an email address.
 - **The language picker.** At 60–80 languages it becomes a searchable list grouped by region, each language in its own

@@ -39,6 +39,9 @@ const html = async (component: Type<unknown>, region: string): Promise<string> =
     .replace(/<gc-region-select>[\s\S]*?<\/gc-region-select>/g, '');
 };
 
+// The region chosen here is kept in this browser's storage: none is left for the next file's tests.
+afterEach(() => localStorage.clear());
+
 describe('region blocks before Turkey', () => {
   beforeEach(() => {
     localStorage.clear();
@@ -123,5 +126,24 @@ describe('region blocks after the verification pass of 2026-10-19', () => {
     it(`says exactly what it said for Vietnam: ${name}`, async () => {
       expect(await html(component, 'VN')).toMatchSnapshot();
     });
+  }
+});
+
+// The Indian subcontinent's and the Arab world's first regions, frozen as added (docs/south-asia-mena-plan.md),
+// on the same fixed day.
+describe('region blocks for the subcontinent and the Arab world, as added', () => {
+  beforeEach(() => {
+    localStorage.clear();
+    TestBed.configureTestingModule({
+      providers: [...testProviders(), { provide: NOW, useValue: () => new Date('2026-10-16T12:00:00Z') }]
+    });
+  });
+
+  for (const [name, component] of BLOCKS) {
+    it(`says exactly what it said for India, Pakistan, Bangladesh, Egypt, the UAE, Morocco and Algeria: ${name}`, async () => {
+      const all: Record<string, string> = {};
+      for (const region of ['IN', 'PK', 'BD', 'EG', 'AE', 'MA', 'DZ']) all[region] = await html(component, region);
+      expect(all).toMatchSnapshot();
+    }, 15_000);
   }
 });

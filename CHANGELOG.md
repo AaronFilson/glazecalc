@@ -568,6 +568,29 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
     read in a legal database's copy of the regulation, as the government's own pages could not be
     read, and the page says that too.
   - **Shops:** none was found, and the page says so.
+- **India, Pakistan, Bangladesh, Egypt, the United Arab Emirates, Morocco and Algeria as regions**
+  (docs/south-asia-mena-plan.md), in English until their languages are translated; French pages
+  show Morocco's and Algeria's too. India fires by Orton cones, the others by temperature, until you
+  choose otherwise; all list the US materials, read °C and specific gravity, and price in their own
+  money (rupees, taka, pounds, dirhams, dinars). Arabic pages, not offered yet, are written for Egypt.
+  The guides give, each from an official page with its source and date, and leave out what could not
+  be checked:
+  - **Who to call:** India 112, and the National Poisons Information Centre at AIIMS (1800 116 117,
+    toll free, 24 hours, or its Delhi number); Pakistan Rescue 1122, run by each province, with 15 for
+    the police in Punjab; Bangladesh 999, with the health directorate's 24-hour call centre (16263) as
+    medical advice, not a poison line; Egypt 123 for an ambulance (with 122 and 180); the UAE 998 (with
+    999 and 997); Morocco 141, and its poison centre, CAPM, day and night, at the price of a local call,
+    on 0801 000 180 or 05 37 68 64 64, both linked; Algeria 14 for civil protection. Where no public
+    poison line could be confirmed, the health ministry is linked, except the UAE's and Algeria's, whose
+    sites could not be read. Abu Dhabi's poison service is not shown.
+  - **Silica:** no limit is shown for any of them. For India the page says each state sets its own
+    under the 2020 OSH Code, and links DGOSH; India's dust masks are FFP2 and FFP3 (IS 9473).
+    Bangladesh links its factories inspectorate.
+  - **Lead and cadmium:** Algeria's order of 16 January 2019, the EU directive's limits, with its rule
+    for a piece up to 50% over. India's IS 9806 is a voluntary standard, so it is not shown.
+  - **Shops:** two in India and two in Abu Dhabi; none was found in the others, and the page says so.
+  - A poison line's other number can now have its own link (Morocco's), kept on one line and read
+    left to right in any language. English only.
 - **Groundwork for East and Southeast Asia**, before any of its languages:
   - **Numbers and dates** can be written as in Japan, Korea, mainland China and Taiwan (Simplified and
     Traditional Chinese each keep their script in any region), Hong Kong, Singapore, Malaysia,
