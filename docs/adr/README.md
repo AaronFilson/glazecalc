@@ -29,6 +29,7 @@ Each one is written once; a later change gets a new record that replaces the old
 | [0023](0023-microsoft-sign-in.md)                 | Sign in with Microsoft: tenant and subject, its email never trusted     | 2026-10-19 |
 | [0024](0024-authorization-server.md)              | AI assistants connect with Glazecalc's own OAuth authorization server   | 2026-10-19 |
 | [0025](0025-confirm-before-changes.md)            | Confirm before changes: a change from an app waits for the person's yes | 2026-10-19 |
+| [0026](0026-target-and-solve.md)                  | Target & Solve: a recipe for a typed target, on the matching engine     | 2026-10-20 |
 
 0018 is kept for the in-app assistant's privacy notice, in
-[the integrations plan](../integrations-plan.md). The next new record takes 0026.
+[the integrations plan](../integrations-plan.md). The next new record takes 0027.
