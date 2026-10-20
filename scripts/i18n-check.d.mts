@@ -46,3 +46,5 @@ export function checkGuides(dir?: string, englishOnly?: readonly string[]): stri
 export function checkSources(dir?: string): Promise<string[]>;
 /** Problems with Korean's script: hanja in its messages or guides that its glossary does not give. */
 export function checkHanja(options?: { dir?: string; glossary?: string }): string[];
+/** Problems with the digits translations write: 0–9 only, in messages and guides. */
+export function checkDigits(dir?: string): string[];
