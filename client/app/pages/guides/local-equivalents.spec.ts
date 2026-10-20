@@ -28,11 +28,12 @@ describe('LocalEquivalents', () => {
   });
   afterEach(() => httpMock().verify());
 
-  const create = async (region: string) => {
+  const create = async (region: string, more: object[] = []) => {
     TestBed.inject(PreferencesService).remember('region', region);
     const fixture = TestBed.createComponent(LocalEquivalents);
     await fixture.whenStable();
     answer('/materials/getStandard', [
+      ...more,
       feldspar('Custer Spar', ['US'], 10, 3, { status: 'discontinued', statusSince: '2023' }),
       feldspar('Kalifeldspat (Bodmer 537)', ['EU'], 10.5, 2.8),
       feldspar('Feldspath potassique FP325 (Ceradel)', ['EU'], 9, 3.5),
@@ -86,5 +87,16 @@ describe('LocalEquivalents', () => {
     );
     await choosePicked(fixture, pickerField(element), 'United Kingdom');
     expect(element.querySelector('caption')?.textContent).toContain('Materials not sold in the UK');
+  });
+
+  // Japan's materials (region JP) are not a library of their own: they are named by the country.
+  it('names a country that is not a library region by its own name, as Japan for its feldspars', async () => {
+    const { rows } = await create('US', [
+      feldspar('Fukushima Feldspar (福島長石)', ['JP'], 10.8, 3.8),
+      feldspar('Mahavir Potash Feldspar', ['US'], 10.5, 3.5)
+    ]);
+    const fukushima = rows().find((row) => row[0] === 'Fukushima Feldspar (福島長石)')!;
+    expect(fukushima[1]).toBe('Japan');
+    expect(fukushima[2]).toMatch(/^Mahavir Potash Feldspar \(differs by/);
   });
 });

@@ -124,20 +124,20 @@ describe('regions', () => {
 
   it('should show only verified lines, each with its source and checked within the last year', () => {
     const yearAgo = Date.now() - 366 * 24 * 60 * 60 * 1000;
-    // Emergency numbers shown though no official page was found, by the owner's decision (2026-10-17).
-    const REPORTED = ['VN'];
     for (const region of regions.REGIONS) {
       const shown = safety.shownFor(region.code)!;
-      for (const line of shown.emergency) {
-        expect(line.status, line.name).to.equal(REPORTED.includes(region.code) ? 'reported' : 'verified');
-      }
       for (const line of [...shown.emergency, ...shown.poison, ...shown.animals, ...shown.advice]) {
-        if (!shown.emergency.includes(line)) expect(line.status, line.name).to.equal('verified');
+        expect(line.status, line.name).to.equal('verified');
         expect(line.source, line.name).to.match(/^https:\/\//);
         expect(Date.parse(line.checked), line.name + ': check this number again').to.be.above(yearAgo);
       }
-      for (const line of all(region.code).filter((l) => l.status !== 'verified')) {
-        expect([...shown.poison, ...shown.animals].map((l) => l.name)).not.to.include(line.name);
+      for (const line of all(region.code)) {
+        // Vietnam's numbers were "reported" (listed without their roles) until 2026-10-19: no status is
+        // shown with a caution any more, and every line is verified or not shown.
+        expect(['verified', 'extract', 'unverified'], line.name).to.include(line.status);
+        if (line.status !== 'verified') {
+          expect([...shown.emergency, ...shown.poison, ...shown.animals, ...shown.advice]).not.to.include(line);
+        }
       }
     }
   });
@@ -169,7 +169,7 @@ describe('region facts', () => {
     fs.readFileSync(new URL('../../client/public/i18n/guides/en.json', import.meta.url), 'utf8')
   );
   const HTTP_ONLY = ['丸二陶料', '太麟化工原料有限公司', 'Sam Mui Kuang Pottery'];
-  const NO_SHOP_FOUND = ['MY', 'CN', 'HK', 'ID', 'TH', 'PH', 'VN'];
+  const NO_SHOP_FOUND = ['MY', 'CN', 'ID', 'VN'];
   const checkedLately = (fact: { checked: string; source?: string; url?: string }, label: string) => {
     expect(fact.source ?? fact.url, label).to.match(/^https:\/\//);
     expect(Date.parse(fact.checked), label + ': check this again').to.be.above(yearAgo);
@@ -187,9 +187,31 @@ describe('region facts', () => {
       if (region.eu) expect(silica.quartz, region.name).to.be.at.most(workplace.EU_SILICA.quartz);
       if (silica.cristobalite) expect(silica.cristobalite, region.name).to.be.below(silica.quartz);
       if (facts!.agency) checkedLately(facts!.agency, region.name + ' agency');
+      if (facts!.respirators) checkedLately(facts!.respirators, region.name + ' masks');
+      // A limit that applies until a later one does: verified, checked lately, and ending the day before.
+      if (silica.before) {
+        expect(silica.from, region.name).to.match(/^\d{4}-\d{2}-\d{2}$/);
+        checkedLately(silica.before, region.name + ' earlier limit');
+        expect(silica.before.status, region.name).to.equal('verified');
+        const dayAfter = new Date(Date.parse(silica.before.until) + 24 * 60 * 60 * 1000).toISOString().slice(0, 10);
+        expect(dayAfter, region.name).to.equal(silica.from);
+      }
     }
     // An agency whose own page could not be read is left out.
     expect(workplace.workplaceFor('PT')!.agency).to.equal(null);
+  });
+
+  it('leaves out an earlier limit that could not be confirmed, and keeps the later one', () => {
+    const before = workplace.WORKPLACE['TW']!.silica!.before as { status: string };
+    before.status = 'secondary';
+    try {
+      expect(workplace.workplaceFor('TW')!.silica!.before).to.include({ status: 'secondary' });
+      before.status = 'unverified';
+      expect(workplace.workplaceFor('TW')!.silica).to.include({ quartz: 0.1, from: '2027-01-01' });
+      expect(workplace.workplaceFor('TW')!.silica!.before).to.equal(undefined);
+    } finally {
+      before.status = 'verified';
+    }
   });
 
   it("should give every member state food-contact rules, its own or the EU's, in the law's units", () => {
@@ -199,6 +221,12 @@ describe('region facts', () => {
       if (region.eu) expect(found, region.name).not.to.equal(null);
       if (!found) continue;
       checkedLately(found.rules, region.name);
+      // A region with no law that gives figures says so, from an official page, with no limits.
+      if (found.rules.none) {
+        expect(found.rules.limits, region.name).to.eql([]);
+        expect(found.rules.status, region.name).to.equal('verified');
+        expect(found.rules.note, region.name).to.be.a('string');
+      } else expect(found.rules.limits.length, region.name).to.be.above(0);
       for (const limit of found.rules.limits) {
         expect(guides.food.category, region.name).to.have.property(limit.category);
         expect(units, region.name).to.include(limit.unit);
@@ -287,6 +315,9 @@ describe('Japan', () => {
     }
     expect(shown.advice).to.have.length(1);
     expect(shown.advice[0]).to.include({ number: '#8000', tel: '%238000', who: 'children' });
+    // Who answers (MHLW) and what it costs, as the prefectures' pages read say it.
+    expect(shown.advice[0]!.note).to.contain('from nurses or doctors');
+    expect(shown.advice[0]!.note).to.contain("The prefectures' pages we read say the advice is free");
     // The professionals' lines are not shown.
     const numbers = JSON.stringify(safety.SAFETY['JP']);
     for (const professional of ['072-726-9923', '029-851-9999']) expect(numbers).not.to.contain(professional);
@@ -332,10 +363,15 @@ describe('Japan', () => {
     ]);
     // The law does not say whether pieces are judged each or on average.
     for (const limit of rules.limits) expect(limit.judged).to.equal(undefined);
-    // No other region says "at most".
-    for (const code of Object.keys(food.FOOD).filter((code) => code !== 'JP')) {
+    // Only Japan's 以下 and China's ≤ say "at most".
+    for (const code of Object.keys(food.FOOD).filter((code) => code !== 'JP' && code !== 'CN')) {
       expect(food.FOOD[code]!.atMost, code).to.equal(undefined);
     }
+    // The 2025 revision kept the 2008 limits, so no in-force date reads as if they were new; the note
+    // says when the revision applies, and the transition to 2030.
+    expect(rules.inForce).to.equal(undefined);
+    expect(rules.note).to.contain('These limits date from 2008.');
+    expect(rules.note).to.contain('1 June 2026').and.contain('1 June 2030').and.contain('Consumer Affairs Agency');
   });
 
   it("names three shops checked on their own sites, and no shop's town that was not read there", () => {
@@ -375,19 +411,25 @@ describe('Türkiye', () => {
     expect(regions.formatLocaleFor('en', 'TR', 'auto')).to.equal('en-TR-u-ca-gregory-nu-latn');
   });
 
-  it('gives 112 for every emergency service and UZEM on 114, around the clock, with no claim on cost', () => {
+  it('gives 112 for every emergency service and UZEM on 114, around the clock, free and for the public', () => {
     const shown = safety.shownFor('TR')!;
     expect(shown.emergency).to.have.length(1);
     expect(shown.emergency[0]).to.include({ number: '112', tel: '112', source: 'https://www.112.gov.tr/hakkimizda' });
     expect(shown.emergency[0]!.note).to.equal('One number for ambulance, fire, police, gendarmerie and coast guard.');
     expect(shown.poison).to.have.length(1);
     const uzem = shown.poison[0]!;
-    expect(uzem).to.include({ number: '114', tel: '114', who: 'public', hours: '24 hours, every day' });
+    // Free and for the public, read on official government pages on 2026-10-19 (the ministry's own did not answer).
+    expect(uzem).to.include({
+      number: '114',
+      tel: '114',
+      who: 'public',
+      hours: '24 hours, every day, free',
+      checked: '2026-10-19'
+    });
     expect(uzem.name).to.contain('UZEM');
-    // Neither the cost nor a limit on who may call was read on an official page.
+    expect(uzem.source).to.match(/^https:\/\/www\.[a-z]+\.gov\.tr\//);
+    expect(uzem.note).to.equal('For the public and for health workers.');
     expect(uzem.fee).to.equal(undefined);
-    expect(uzem.note).to.equal(undefined);
-    expect(JSON.stringify(safety.SAFETY['TR'])).not.to.match(/free|ücretsiz/i);
     expect(shown.animals).to.eql([]);
     expect(shown.advice).to.eql([]);
     expect(safety.ministryFor('TR')).to.include({ name: 'Sağlık Bakanlığı', url: 'https://www.saglik.gov.tr/' });
@@ -396,7 +438,8 @@ describe('Türkiye', () => {
   it("gives the binding limit as the law's formula, 10 / (Q + 2), with half for cristobalite", () => {
     const facts = workplace.workplaceFor('TR')!;
     const silica = facts.silica!;
-    expect(silica).to.include({ kind: 'binding', status: 'verified', checked: '2026-10-14' });
+    // Read again on 2026-10-19: no revision of the dust regulation is published.
+    expect(silica).to.include({ kind: 'binding', status: 'verified', checked: '2026-10-19' });
     expect(silica.law).to.contain('Tozla Mücadele Yönetmeliği');
     expect(silica.source).to.equal('https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=18989&MevzuatTur=7&MevzuatTertip=5');
     expect(silica.formula).to.eql({ numerator: 10, factor: 1, offset: 2, places: 0 });
@@ -411,8 +454,8 @@ describe('Türkiye', () => {
     expect(facts.eu).to.equal(false);
     expect(facts.agency).to.include({ abbr: 'ÇSGB İSGGM', url: 'https://csgb.gov.tr/' });
     expect(facts.agency!.silicaUrl).to.equal(undefined);
-    // The FFP classes were read only in a secondary source.
-    expect(facts.respirators).to.include({ status: 'secondary' });
+    // TS EN 149+A1 is in force (TSE's listing), but the FFP classes were read only in a secondary source.
+    expect(facts.respirators).to.include({ status: 'secondary', checked: '2026-10-19' });
     expect(facts.respirators!.everyday).to.eql(['FFP2']);
     expect(facts.respirators!.higher).to.eql(['FFP3']);
     expect(Date.parse(facts.respirators!.checked)).to.be.above(yearAgo);
@@ -484,7 +527,9 @@ describe('regions before Turkey', () => {
     ]);
     data.push(['EU', food.FOOD['EU'], workplace.EU_SILICA]);
     const hash = crypto.createHash('sha256').update(JSON.stringify(data)).digest('hex');
-    expect(hash).to.equal('df23d236269ce851da85a5781ef1b5922bd13a44a13a57f9f48b68c3b976222f');
+    // Changed once on purpose: the verification pass of 2026-10-19 changed Japan's #8000 note (who answers,
+    // what it costs), its food note (the 2025 revision's dates) and JSOH's check date; nothing else here.
+    expect(hash).to.equal('f6f6dcdea2cad5e8dfbfaa3865aea8f80bd5465ef06a087fcb9e7abea03a6150');
   });
 });
 
@@ -506,7 +551,9 @@ describe('regions before Korea', () => {
     ]);
     data.push(['EU', food.FOOD['EU'], workplace.EU_SILICA]);
     const hash = crypto.createHash('sha256').update(JSON.stringify(data)).digest('hex');
-    expect(hash).to.equal('97d37de28e230f212ec7e1042eab5e727d1e090f6b8309a4c30ae2d421354fa0');
+    // Changed once on purpose (2026-10-19): Japan's, as above, and Türkiye's UZEM (free, for the public),
+    // its silica and mask check dates.
+    expect(hash).to.equal('6e08ef4ca5228633c811d5ff9a29e0656ccc8396ac2173f9c464ebcc92c66bb2');
   });
 });
 
@@ -529,8 +576,9 @@ describe('regions before China', () => {
     ]);
     data.push(['EU', food.FOOD['EU'], workplace.EU_SILICA]);
     const hash = crypto.createHash('sha256').update(JSON.stringify(data)).digest('hex');
-    // Changed once on purpose: Taiwan's 119 note now says when to dial 112 (2026-10-16).
-    expect(hash).to.equal('febe2efd7c2270fe3f4a3bbee8e9f5dcaf58f149289d8f40b572dcc363d9a121');
+    // Changed once on purpose: Taiwan's 119 note now says when to dial 112 (2026-10-16). Again on
+    // 2026-10-19: Japan's and Türkiye's, as above, and Taiwan's silica limit until 2027 (before).
+    expect(hash).to.equal('4b5dbc4f7be966b81f3096ad52e5e833e1751c2dbebf8830dda619091fada4f3');
   });
 });
 
@@ -554,7 +602,35 @@ describe('regions before Vietnam', () => {
     data.push(['EU', food.FOOD['EU'], workplace.EU_SILICA]);
     const hash = crypto.createHash('sha256').update(JSON.stringify(data)).digest('hex');
     // Changed once on purpose: Indonesia's note says 118 reaches an ambulance only in some cities (2026-10-17).
-    expect(hash).to.equal('3be139b8dee54347792b02d227c5b695386a3644be018fea134f66c8854bb147');
+    // Again on 2026-10-19, the verification pass: as above, and China's poison line, masks and food rules,
+    // Hong Kong's food rules (none) and shop, Indonesia's in-force date, Thailand's and the Philippines'
+    // shops, and the Philippines' silica limit.
+    expect(hash).to.equal('121b8af460e9be3dbbd581986a74f6290a1918aa67cd312cb2240947dee5b649');
+  });
+});
+
+// The same, with Vietnam, after the verification pass of 2026-10-19 (docs/asia-plan.md, Phase C).
+describe('regions after the verification pass of 2026-10-19', () => {
+  it('keep their data exactly', () => {
+    const codes = [
+      'US', 'GB', 'AU', 'NZ', 'AT', 'BE', 'BG', 'HR', 'CY', 'CZ', 'DK', 'EE', 'FI', 'FR', 'DE', 'GR',
+      'HU', 'IE', 'IT', 'LV', 'LT', 'LU', 'MT', 'NL', 'PL', 'PT', 'RO', 'SK', 'SI', 'ES', 'SE', 'JP', 'TR',
+      'KR', 'TW', 'SG', 'MY', 'CN', 'HK', 'ID', 'TH', 'PH', 'VN'
+    ]; // prettier-ignore
+    // Every region is here, so a region added later gets a snapshot of its own.
+    expect([...codes].sort()).to.eql([...regions.REGION_CODES].sort());
+    const data: unknown[] = codes.map((code) => [
+      code,
+      asSnapshotted(code),
+      safety.SAFETY[code],
+      safety.MINISTRIES[code] ?? null,
+      workplace.WORKPLACE[code] ?? null,
+      food.FOOD[code] ?? null,
+      suppliers.SUPPLIERS[code] ?? null
+    ]);
+    data.push(['EU', food.FOOD['EU'], workplace.EU_SILICA]);
+    const hash = crypto.createHash('sha256').update(JSON.stringify(data)).digest('hex');
+    expect(hash).to.equal('fa1c82218e6cd9375597e108530370fdab7d06f5919f5f952f8d571ea25336a9');
   });
 });
 
@@ -646,14 +722,26 @@ describe('Taiwan', () => {
     expect(safety.ministryFor('TW')).to.include({ name: '衛生福利部' });
   });
 
-  it('gives the 2027 limit with its start date, and not the earlier formula read only secondhand', () => {
+  it('gives the 2027 limit with its start date, and the earlier formula until then, read in the law site’s own table', () => {
     const silica = workplace.workplaceFor('TW')!.silica!;
     expect(silica).to.include({ quartz: 0.1, kind: 'binding', status: 'verified', from: '2027-01-01' });
+    expect(silica.checked).to.equal('2026-10-19');
     expect(silica.formula).to.equal(undefined);
     expect(silica.cristobalite).to.equal(undefined);
-    expect(silica.note).to.contain('Until 31 December 2026');
-    expect(silica.note).to.contain('not shown here');
-    expect(JSON.stringify(silica)).not.to.match(/SiO2 \+ 2|\(Q \+ 2\)/);
+    // The table in force until 2026-12-31 (the 2018 text), read in the 2025 amendment's comparison table.
+    expect(silica.before).to.eql({
+      quartz: 0.098,
+      formula: { numerator: 10, factor: 1, offset: 2, places: 0 },
+      until: '2026-12-31',
+      law: '勞工作業場所容許暴露標準，附表二（2018年3月14日修正），第一種粉塵',
+      source: 'https://law.moj.gov.tw/LawClass/LawGetFile.ashx?FileId=0000387834&lan=C&type=1&date=20250411',
+      status: 'verified',
+      checked: '2026-10-19'
+    });
+    const { numerator, factor, offset } = silica.before!.formula!;
+    expect(silica.before!.quartz).to.be.closeTo(numerator / (factor * 100 + offset!), 0.0005);
+    expect(silica.note).to.match(/^Until 31 December 2026 the limit is for the whole respirable dust/);
+    expect(silica.note).not.to.contain('not shown');
     // Every start date is a day; a limit that starts later says what applies until then.
     for (const [code, entry] of Object.entries(workplace.WORKPLACE)) {
       if (!entry.silica?.from) continue;
@@ -795,11 +883,22 @@ describe('China', () => {
     expect(regions.formatLocaleFor('zh-Hans', 'CN', 'auto')).to.equal('zh-Hans-CN-u-ca-gregory-nu-latn');
   });
 
-  it('gives 120, and neither the poison line whose hours and callers no page states nor an unread ministry', () => {
+  it("gives 120 and China CDC's poison line, saying plainly that no official page gives its hours or cost", () => {
     const shown = safety.shownFor('CN')!;
     expect(shown.emergency.map((line) => line.number)).to.eql(['120']);
-    expect(shown.poison).to.eql([]);
-    expect(JSON.stringify(safety.SAFETY['CN'])).not.to.contain('8313');
+    expect(shown.poison.map((line) => [line.number, line.tel])).to.eql([['010-83132345', '+861083132345']]);
+    const line = shown.poison[0]!;
+    // China CDC's own article gives the number with its area code and tells the public to call it.
+    expect(line).to.include({
+      who: 'public',
+      status: 'verified',
+      checked: '2026-10-19',
+      source: 'https://www.chinacdc.cn/jkkp/zyjk/zdzs/202508/t20250826_309858.html'
+    });
+    expect(line.hours).to.equal(undefined);
+    expect(line.fee).to.equal(undefined);
+    expect(line.note).to.contain('No official page gives its hours or its cost');
+    expect(line.note).to.contain('call 120');
     expect(safety.ministryFor('CN')).to.equal(null);
   });
 
@@ -822,11 +921,32 @@ describe('China', () => {
       expect(bands.at(-1)!.value, code).to.equal(entry.silica!.quartz);
     }
     expect(facts.agency).to.equal(null);
-    expect(facts.respirators).to.equal(null);
+    // KN95 is named on an official page, KN100 only in a secondary summary of GB 2626-2019.
+    expect(facts.respirators).to.include({ status: 'secondary', checked: '2026-10-19' });
+    expect([facts.respirators!.everyday, facts.respirators!.higher]).to.eql([['KN95'], ['KN100']]);
+    expect(facts.respirators!.note).to.contain('GB 2626-2019');
   });
 
-  it('gives no food-contact rules and no shop, since neither could be confirmed', () => {
-    expect(food.foodRulesFor('CN')).to.equal(null);
+  it("gives GB 4806.4—2016's six kinds of piece, at most, with cooking ware's hot test and figures", () => {
+    const { rules, own } = food.foodRulesFor('CN')!;
+    expect(own).to.equal(true);
+    expect(rules).to.include({ status: 'verified', checked: '2026-10-19', inForce: '2017-04-19', atMost: true });
+    expect(rules.law).to.contain('GB 4806.4—2016');
+    expect(rules.source).to.match(/^https:\/\/www\.anan\.gov\.cn\//);
+    expect(rules.limits.map((l) => [l.category, l.lead, l.cadmium, l.unit])).to.eql([
+      ['cnFlat', 0.8, 0.07, 'mg/dm²'],
+      ['cnSmall', 2, 0.3, 'mg/L'],
+      ['cnLarge', 1, 0.25, 'mg/L'],
+      ['cnStorage', 0.5, 0.25, 'mg/L'],
+      ['cnCups', 0.5, 0.25, 'mg/L'],
+      // Not the 0.5 / 0.05 of an earlier note from memory: the standard's own table says 3.0 / 0.30.
+      ['cnCooking', 3, 0.3, 'mg/L']
+    ]);
+    for (const limit of rules.limits) expect(limit.judged).to.equal(undefined);
+    expect(rules.note).to.contain('98 °C').and.contain('Guangdong');
+  });
+
+  it('lists no shop, since none was found on its own site', () => {
     expect(suppliers.shopsFor('CN')).to.eql({ shops: [], nearby: [] });
   });
 });
@@ -854,8 +974,33 @@ describe('Hong Kong', () => {
     expect(facts.agency).to.include({ silicaUrl: 'https://www.labour.gov.hk/eng/public/oh/silicosis.pdf' });
   });
 
-  it('gives no food-contact rules, since none of its own were found', () => {
-    expect(food.foodRulesFor('HK')).to.equal(null);
+  it('says there is no law with figures for ceramic ware, from the Centre for Food Safety, with no limits', () => {
+    const { rules, own, eu } = food.foodRulesFor('HK')!;
+    expect([own, eu]).to.eql([true, false]);
+    expect(rules).to.include({
+      none: true,
+      status: 'verified',
+      checked: '2026-10-19',
+      source: 'https://www.cfs.gov.hk/english/food_leg/files/Guidelines_Tray_liner.pdf'
+    });
+    expect(rules.limits).to.eql([]);
+    expect(rules.law).to.contain('Centre for Food Safety');
+    expect(rules.note).to.contain('Cap. 132').and.contain('Cap. 456').and.contain('2009');
+    // Only Hong Kong says there is no law.
+    for (const code of Object.keys(food.FOOD).filter((code) => code !== 'HK')) {
+      expect(food.FOOD[code]!.none, code).to.equal(undefined);
+    }
+  });
+
+  it('names Hearty Ceramic, checked on its own site, with its town and packs', () => {
+    const { shops, nearby } = suppliers.shopsFor('HK')!;
+    expect(shops.map((shop) => [shop.name, shop.place])).to.eql([
+      ['Hearty Ceramic (Hearty Arts International Limited)', 'Tai Kok Tsui (Kowloon)']
+    ]);
+    expect(shops[0]!.packs).to.eql({ unit: 'kilogram', sizes: [1, 5, 10] });
+    expect(shops[0]!.checked).to.equal('2026-10-19');
+    expect(JSON.stringify(suppliers.SUPPLIERS['HK'])).not.to.contain('Paton');
+    expect(nearby).to.eql([]);
   });
 });
 
@@ -881,15 +1026,20 @@ describe('Indonesia', () => {
     expect(facts.agency).to.include({ abbr: 'Kemnaker' });
   });
 
-  it("gives BPOM 11/2026's limits, the same for both hollow sizes, with no in-force date not read", () => {
+  it("gives BPOM 11/2026's limits, the same for both hollow sizes, in force from its promulgation, with a year for ware on the market", () => {
     const { rules } = food.foodRulesFor('ID')!;
     expect(rules.limits.map((l) => [l.category, l.lead, l.cadmium, l.unit])).to.eql([
       ['idFlat', 0.8, 0.07, 'mg/dm²'],
       ['idSmall', 0.5, 0.25, 'mg/L'],
       ['idLarge', 0.5, 0.25, 'mg/L']
     ]);
-    expect(rules.inForce).to.equal(undefined);
+    expect(rules).to.include({ inForce: '2026-06-30', checked: '2026-10-19' });
     expect(rules.note).to.contain('third');
+    expect(rules.note).to.contain('Ware already on the market has until 30 June 2027 to comply.');
+  });
+
+  it('keeps HALOBPOM out, since no official page gives it as a poison line today', () => {
+    expect(JSON.stringify(safety.SAFETY['ID'])).not.to.match(/1500.?533|HALO/i);
   });
 });
 
@@ -925,6 +1075,20 @@ describe('Thailand', () => {
       ['thCooking', 5, 0.5, 'mg/L']
     ]);
   });
+
+  it('names two shops checked on their own sites, Cerawan at its full address', () => {
+    const { shops, nearby } = suppliers.shopsFor('TH')!;
+    expect(shops.map((shop) => [shop.name, shop.place])).to.eql([
+      ['Pottery Clay Thailand', undefined],
+      ['Cerawan (เซล่าวัล ซัพพลาย)', 'Krathum Baen (Samut Sakhon)']
+    ]);
+    // The short address without the Thai words answers 404.
+    expect(shops[1]!.url).to.equal('https://www.cerawan.com/14360596/เคมีภัณฑ์-chemical-วัตถุดิบในงานเคลือบและทดลอง');
+    expect(shops[1]!.packs).to.equal(undefined);
+    expect(shops[1]!.note).to.equal('Priced by the kilogram.');
+    for (const shop of shops) expect(shop.checked).to.equal('2026-10-19');
+    expect(nearby).to.eql([]);
+  });
 });
 
 describe('Philippines', () => {
@@ -941,10 +1105,35 @@ describe('Philippines', () => {
     expect(shown.poison[0]).to.include({ who: 'public', hours: '24 hours, every day, free' });
   });
 
-  it('gives no silica limit, food-contact rules or shop, since none could be read', () => {
-    expect(workplace.workplaceFor('PH')).to.eql({ silica: null, agency: null, respirators: null, eu: false });
+  it("gives the OSH Standards' silica formula, 10 / (Q + 2), half for cristobalite, read in an archived copy of DOLE's own file", () => {
+    const facts = workplace.workplaceFor('PH')!;
+    const silica = facts.silica!;
+    expect(silica).to.include({ kind: 'binding', status: 'verified', checked: '2026-10-19', cristobalite: 0.049 });
+    expect(silica.law).to.contain('Rule 1070, Table 8a');
+    expect(silica.source).to.match(/^https:\/\/web\.archive\.org\/web\/\d+\/https:\/\/www\.dole\.gov\.ph\//);
+    expect(silica.formula).to.eql({ numerator: 10, factor: 1, offset: 2, places: 0 });
+    expect(silica.quartz).to.be.closeTo(10 / 102, 0.0005);
+    expect(silica.cristobalite).to.be.closeTo(silica.quartz / 2, 0.0005);
+    expect(silica.note).to.contain("Internet Archive's copy").and.contain('48 hours');
+    // DOLE's and the OSHC's own pages could not be read: no agency, and no mask classes were read.
+    expect(facts.agency).to.equal(null);
+    expect(facts.respirators).to.equal(null);
+  });
+
+  it('gives no food-contact rules, since none was found', () => {
     expect(food.foodRulesFor('PH')).to.equal(null);
-    expect(suppliers.shopsFor('PH')).to.eql({ shops: [], nearby: [] });
+  });
+
+  it('names a shop for raw materials and one for clay and ready-made glazes, both in Quezon City', () => {
+    const { shops } = suppliers.shopsFor('PH')!;
+    expect(shops.map((shop) => [shop.name, shop.place])).to.eql([
+      ['Tahanan Pottery', 'Quezon City'],
+      ['Odangputik Pottery', 'Quezon City']
+    ]);
+    expect(shops[0]!.packs).to.eql({ unit: 'kilogram', sizes: [0.25, 0.5, 1] });
+    expect(shops[1]!.sells).to.eql(['clays', 'glazes']);
+    // The same words as Singapore's shop for clay and glazes, so its translations serve both.
+    expect(shops[1]!.note).to.equal(suppliers.SUPPLIERS['SG']!.shops[1]!.note);
   });
 });
 
@@ -962,26 +1151,39 @@ describe('Vietnam', () => {
     expect(regions.formatLocaleFor('vi', 'VN', 'auto')).to.equal('vi-VN-u-ca-gregory-nu-latn');
   });
 
-  it('gives 115, with 113 and 114 in its note, marked as reported: no official page lists them', () => {
+  it('gives 115, verified with its role on an official page, with 113, 114 and the merger into 113 in its note', () => {
     const shown = safety.shownFor('VN')!;
-    expect(shown.emergency.map((line) => [line.number, line.status])).to.eql([['115', 'reported']]);
-    expect(shown.emergency[0]!.note).to.include('113').and.include('114');
+    expect(shown.emergency.map((line) => [line.number, line.status])).to.eql([['115', 'verified']]);
+    const line = shown.emergency[0]!;
+    // Điện Biên's provincial police give each number's role, and that the calls are free.
+    expect(line.source).to.match(/^https:\/\/congan\.dienbien\.gov\.vn\//);
+    expect(line.checked).to.equal('2026-10-19');
+    expect(line.note).to.include('For the police, call 113; for a fire or a rescue, 114.');
+    expect(line.note).to.include('the call is free');
+    expect(line.note).to.include('merged into 113').and.include('2027–2028').and.include('all three still work');
     expect(shown.poison).to.eql([]);
     expect(safety.ministryFor('VN')).to.equal(null);
   });
 
-  it("gives QCVN 02:2019/BYT's 0.1 for free silica in respirable dust, read in a legal database's copy", () => {
+  it("gives QCVN 02:2019/BYT's 0.1 for free silica in respirable dust, still from a legal database's copy, and FFP masks", () => {
     const facts = workplace.workplaceFor('VN')!;
-    expect(facts.silica).to.include({ quartz: 0.1, kind: 'binding', status: 'secondary', checked: '2026-10-17' });
+    expect(facts.silica).to.include({ quartz: 0.1, kind: 'binding', status: 'secondary', checked: '2026-10-19' });
     expect(facts.silica!.law).to.include('QCVN 02:2019/BYT');
     expect(facts.agency).to.equal(null);
-    expect(facts.respirators).to.equal(null);
+    // TCVN 13409:2021 is EN 149 word for word; its text was not read.
+    expect(facts.respirators).to.include({ status: 'secondary', checked: '2026-10-19' });
+    expect([facts.respirators!.everyday, facts.respirators!.higher]).to.eql([['FFP2'], ['FFP3']]);
+    expect(facts.respirators!.note).to.contain('TCVN 13409:2021');
   });
 
-  it("gives QCVN 12-4:2015/BYT's limits for ceramic ware, in force since 2016-05-01", () => {
+  it("gives QCVN 12-4:2015/BYT's limits for ceramic ware, read in the Official Gazette, in force since 2016-05-01", () => {
     const rules = food.foodRulesFor('VN')!;
     expect(rules.own).to.equal(true);
-    expect(rules.rules).to.include({ status: 'secondary', inForce: '2016-05-01' });
+    expect(rules.rules).to.include({ status: 'verified', inForce: '2016-05-01', checked: '2026-10-19' });
+    expect(rules.rules.source).to.match(/^https:\/\/congbaocdn\.chinhphu\.vn\//);
+    // The regulation's test methods are not mandatory: the note does not say "the test is".
+    expect(rules.rules.note).to.contain('allows others of the same accuracy');
+    expect(rules.rules.note).not.to.match(/The test is|legal database/);
     expect(rules.rules.limits.map((l) => [l.category, l.lead, l.cadmium, l.unit])).to.eql([
       ['vnFlat', 0.8, 0.07, 'mg/dm²'],
       ['vnSmall', 2, 0.5, 'mg/L'],

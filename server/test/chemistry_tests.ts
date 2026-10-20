@@ -27,6 +27,7 @@ interface LibraryRecord {
   substitutes?: string[];
   replaces?: string[];
   hazards?: string;
+  notes?: string[];
   fluorine?: boolean;
   source?: { name?: string; url?: string; kind?: string };
   noChemistry?: boolean;
@@ -392,12 +393,36 @@ describe('glaze chemistry', () => {
         if (record.status)
           expect(record.status, record.name).to.be.oneOf(['current', 'scarce', 'discontinued', 'historical']);
         for (const region of record.region ?? [])
-          expect(region, record.name).to.be.oneOf(['US', 'UK', 'EU', 'CA', 'AU']);
+          expect(region, record.name).to.be.oneOf(['US', 'UK', 'EU', 'CA', 'AU', 'JP']);
         for (const name of [record.name, ...(record.aliases ?? [])]) {
           expect(seen.has(name.toLowerCase()), name).to.equal(false);
           seen.add(name.toLowerCase());
         }
       }
+    });
+
+    // Japan's feldspathic rocks (docs/asia-plan.md, Phase C item 6): one supplier's typical analyses,
+    // each saying so, with what makes it differ and a warning against swapping it one for one.
+    it("should give Japan's materials as one supplier's typical analyses, to check, with a warning against swapping", () => {
+      const japanese = materials.filter((record) => record.region?.includes('JP'));
+      expect(japanese.map((record) => record.name)).to.eql([
+        'Amakusa Pottery Stone (天草陶石)',
+        'Fukushima Feldspar (福島長石)',
+        'Kamado Feldspar (釜戸長石)'
+      ]);
+      for (const record of japanese) {
+        expect(record.region, record.name).to.eql(['JP']);
+        expect(record.source?.kind, record.name).to.equal('supplier');
+        expect(record.source?.name, record.name).to.contain('佐賀県陶磁器原料');
+        expect(record.notes?.[0], record.name).to.match(/^A typical analysis from one supplier in Arita: check it/);
+        expect(chemistry.materialWeights(record).warnings, record.name).to.eql([]);
+      }
+      const notes = (name: string) => japanese.find((record) => record.name.startsWith(name))!.notes![0]!;
+      expect(notes('Amakusa')).to.contain('graded by its iron').and.contain('not a feldspar');
+      expect(notes('Fukushima')).to.contain('72.1% SiO₂');
+      expect(notes('Kamado')).to.contain('aplite').and.contain('Do not swap it');
+      // Not added: Mikumo feldspar (only Digitalfire's analysis, of no stated origin) and natural ashes.
+      for (const record of all) expect(record.name, record.name).not.to.match(/Mikumo|三雲|土灰|柞灰|藁灰|松灰/);
     });
 
     it('should name a modern substitute for everything discontinued, scarce or historical', () => {

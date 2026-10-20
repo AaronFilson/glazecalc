@@ -89,6 +89,10 @@ describe('region blocks before China', () => {
 });
 
 // China, Hong Kong, Indonesia, Thailand and the Philippines, frozen before Vietnam, on the same fixed day.
+// Updated on purpose once, with the earlier regions' above, by the verification pass of 2026-10-19
+// (docs/asia-plan.md): Japan's #8000 and food notes, Türkiye's UZEM, Taiwan's limit until 2027, China's
+// poison line, masks and food rules, Hong Kong's food rules (none) and shop, Indonesia's in-force date,
+// Thailand's and the Philippines' shops and the Philippines' silica limit.
 describe('region blocks before Vietnam', () => {
   beforeEach(() => {
     localStorage.clear();
@@ -103,5 +107,21 @@ describe('region blocks before Vietnam', () => {
       for (const region of ['CN', 'HK', 'ID', 'TH', 'PH']) all[region] = await html(component, region);
       expect(all).toMatchSnapshot();
     }, 15_000);
+  }
+});
+
+// Vietnam, frozen after the verification pass of 2026-10-19, on the same fixed day.
+describe('region blocks after the verification pass of 2026-10-19', () => {
+  beforeEach(() => {
+    localStorage.clear();
+    TestBed.configureTestingModule({
+      providers: [...testProviders(), { provide: NOW, useValue: () => new Date('2026-10-16T12:00:00Z') }]
+    });
+  });
+
+  for (const [name, component] of BLOCKS) {
+    it(`says exactly what it said for Vietnam: ${name}`, async () => {
+      expect(await html(component, 'VN')).toMatchSnapshot();
+    });
   }
 });

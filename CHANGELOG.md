@@ -526,6 +526,14 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   prints, shared recipes, the account's and the trash's dates); numbers do not change, dates are still
   typed in the browser's Gregorian date fields and saved as they were, and emails stay Gregorian. Kept
   with the account (or trial) like the other settings.
+- **Three Japanese materials** in the standard library: Amakusa pottery stone (天草陶石), Fukushima
+  feldspar (福島長石) and Kamado feldspar (釜戸長石), each a typical analysis from one supplier in
+  Arita (佐賀県陶磁器原料) to check against your own supplier's, and each with what makes it differ:
+  Amakusa stone's grades by iron, Fukushima feldspar's grades and a research institute's sample, and
+  that Kamado feldspar is an aplite with much free quartz, not to be swapped for a feldspar weight for
+  weight. They are listed as sold in Japan (the library's regions gain JP), so the local-equivalents
+  guide offers their closest match elsewhere. Mikumo feldspar (Digitalfire's analysis only) and
+  natural ashes (no analysis found) are not added.
 - **Vietnam as a region** (in English until Vietnamese is translated), firing by temperature until
   you choose otherwise, with the US materials, prices in dong, and numbers and dates as vi-VN.
   - **Who to call:** 115 for an ambulance, with 113 (police) and 114 (fire). Official government
@@ -818,6 +826,40 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   server test requires for every language and region. What is saved is unchanged (the language's
   code, the region's code). English only: the headings and "No language matches" are translated
   with the next wave.
+- **Asia's region data, checked again** (2026-10-19, English only; docs/asia-plan.md, Phase C).
+  Every value keeps its source, check date and status, and no unconfirmed safety value is shown.
+  - **China:** China CDC's national poison hotline, 010-83132345, from China CDC's own page, which
+    tells the public to call it; no official page gives its hours or cost, and the page says so.
+    Lead and cadmium under GB 4806.4—2016, read in the issued standard on a Guangdong regulator's
+    site: six kinds of piece, each "at most", in force since 2017-04-19, cooking ware tested hot
+    (3.0 / 0.30 mg/L, not the 0.5 / 0.05 an earlier note gave from memory). Dust masks KN95 and
+    KN100 (GB 2626-2019), read secondhand.
+  - **Hong Kong:** the food-contact block now says there is no law with figures for ceramic ware
+    (the Centre for Food Safety, 2009; Cap. 132 and Cap. 456), with no table. One shop, Hearty
+    Ceramic (Tai Kok Tsui).
+  - **Taiwan:** the silica limit in force until 31 December 2026, 10 / (Q + 2) mg/m³ for respirable
+    dust with 10% or more crystalline silica, read in the law site's own table, is shown above the
+    2027 limit, each under its dates, until 2027.
+  - **Indonesia:** BPOM 11/2026 in force since 2026-06-30, with a year more for ware already on the
+    market.
+  - **Thailand:** two shops, Pottery Clay Thailand and Cerawan.
+  - **The Philippines:** the OSH Standards' binding silica formula, 10 / (Q + 2) mg/m³ for quartz and
+    half for cristobalite and tridymite, read in an archived copy of the Department of Labor and
+    Employment's own file, which the page says. Two shops in Quezon City, Tahanan Pottery and
+    Odangputik Pottery (clay and ready-made glazes).
+  - **Vietnam:** 113, 114 and 115 are read with their roles on official pages, so the caution that
+    they were not is gone (the `reported` status with it); calls are free, and while the numbers
+    merge into 113 (planned for 2027–2028) all three work. QCVN 12-4:2015/BYT read in the Official
+    Gazette, so verified; its note no longer says its test method is required. Dust masks FFP2 and
+    FFP3 (TCVN 13409:2021, the same as EN 149), read secondhand.
+  - **Japan:** #8000 is answered by nurses or doctors, and the prefectures' pages read say the
+    advice is free and the call is paid by the caller. The food note gives the 2025 revision's dates
+    and the transition to 2030, and that the 2008 limits did not change. The firing guide adds how
+    JIS R 2204, a laboratory standard for refractories, sets SK cones (marked face at 80°, foot about
+    4 mm deep), said to be a test, not a rule for pots.
+  - **Türkiye:** UZEM (114) is free, around the clock, for the public and health workers, from
+    official government pages.
+  - **South Korea:** no change; there is still no national public poison line.
 - **The privacy notice says what connecting an AI app means** (a new section, "Connecting an AI
   app", with the ADR 0024 notices): what is kept for each connected app (its name and address as
   it gives them, where it sends you back, what it may do, its dates, its codes and tokens only as
