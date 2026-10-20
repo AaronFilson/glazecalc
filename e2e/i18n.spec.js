@@ -131,7 +131,7 @@ test('Arabic and Hindi draw their letters in the system font, Hindi in taller li
 }) => {
   const files = fontFiles(page);
   await page.goto('/ar-XD/guides/firing');
-  await expect(page.locator('h1')).toHaveText(/^[؀-ۿ\s]+$/);
+  await expect(page.locator('h1')).toHaveText(/^[\u0600-\u06ff\s]+$/);
   await page.evaluate(() => globalThis.document.fonts.ready);
   // Noto Naskh Arabic on Linux (fonts-noto-core, scripts/test-e2e-linux.Dockerfile), and so in CI; Segoe UI on Windows.
   const arabic = process.platform === 'linux' ? /^Noto Naskh Arabic$/ : /^Segoe UI/;
@@ -140,7 +140,7 @@ test('Arabic and Hindi draw their letters in the system font, Hindi in taller li
   await expect(page.locator('html')).toHaveCSS('font-synthesis', 'none');
 
   await page.goto('/hi-XE/guides/firing');
-  await expect(page.locator('h1')).toHaveText(/[ऀ-ॿ]/);
+  await expect(page.locator('h1')).toHaveText(/[\u0900-\u097f]/);
   await page.evaluate(() => globalThis.document.fonts.ready);
   const devanagari = process.platform === 'linux' ? /^Noto Sans Devanagari$/ : /^Nirmala UI/;
   expect(await fontsOf(page, 'h1')).toContainEqual(expect.stringMatching(devanagari));
