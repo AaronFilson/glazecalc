@@ -25,7 +25,17 @@ export const CONE_FIT_SOURCES: Readonly<Record<ConeFitSource, { title: string; u
 
 /** Why a glaze is not judged. */
 export type ConeFitSkip =
-  'lead' | 'lithium' | 'alkali' | 'zinc' | 'notGlaze' | 'process' | 'ash' | 'noTemperature' | 'between' | 'belowChart';
+  | 'lead'
+  | 'lithium'
+  | 'alkali'
+  | 'zinc'
+  | 'notGlaze'
+  | 'process'
+  | 'ash'
+  | 'noTemperature'
+  | 'between'
+  | 'belowChart'
+  | 'aboveChart';
 
 /** One of the two signals: an oxide's value against a figure, for a band, and where the figure is from. */
 export interface ConeFitSignal {
@@ -44,7 +54,8 @@ export interface ConeFit {
     bands: FiringBand[];
     ends: Array<{
       scale: ConeScale | 'band';
-      cone: string;
+      /** The cone; none for the 'top' band chosen by hand, which has no cone its figures are for. */
+      cone?: string;
       band?: FiringBand;
       celsius?: number;
       basis?: ApproxBasis;

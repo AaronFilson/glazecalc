@@ -2,6 +2,7 @@ import mongoose from 'mongoose';
 import firing from '../../lib/cones/firing.js';
 import type { FiringBlock } from '../../lib/cones/firing.js';
 import results from '../../lib/cones/results.js';
+import limits from '../../lib/recipe/limits.js';
 import slurry from '../../lib/recipe/slurry.js';
 
 /**
@@ -37,10 +38,11 @@ const recipeSchema = new mongoose.Schema({
   additives: [mongoose.Schema.Types.Mixed],
   computed: [mongoose.Schema.Types.Mixed],
   date: String,
-  // The band its limits are checked in, chosen by hand: cone 06-02, cone 4-6 or cone 9-11
-  // (lib/recipe/limits.js). It overrides the bands the firing block below gives; not saved until
-  // chosen; null clears it. Kept under its wave-2 name (docs/adr/0021-recipe-firing.md).
-  firing: { type: String, enum: ['low', 'mid', 'high'] },
+  // The band its limits are checked in, chosen by hand: cone 06-02, cone 4-6, cone 9-11, or cone 12
+  // up, where no limit set has figures (lib/recipe/limits.js FIRING_BANDS). It overrides the bands
+  // the firing block below gives; not saved until chosen; null clears it. Kept under its wave-2
+  // name (docs/adr/0021-recipe-firing.md).
+  firing: { type: String, enum: [...limits.FIRING_BANDS] },
   // The firing as the potter states it (lib/cones/firing.js): the cone scale, the low cone and an
   // optional high one, the cones tested, the atmosphere and process, and for a temperature the rate
   // and hold. The cone is kept as entered, never converted. None (or null) is "not stated".

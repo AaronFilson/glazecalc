@@ -6,6 +6,17 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Added
 
+- **Higher cones, for porcelain** (docs/adr/0021-recipe-firing.md, amended
+  2026-10-20). Orton cones have a temperature to cone 15 (1431 °C, Orton's older chart for large
+  cones at 150 °C an hour, the only Orton figure above 14 we found); cones 16 to 42 are taken
+  everywhere and shown with no figure, as Orton publishes none. The picker adds cone 21 and the
+  half cones 13½, 14½ and 15½. Orton's own current figures (self-supporting cones at 15, 60 and
+  150 °C an hour, large cones at 60 and 150, cone 022 to 14, from its 2016 chart and site) are
+  kept beside them, with their source and the date read. A new limits band, "Very high fire,
+  cone 12 and up" (1320 °C and hotter, SK 14 up): the published limits stop at cone 10, so no
+  set's figures are checked there and the panel says why; the other checks still run. The band
+  can be chosen by hand. The firing guide's cone chart goes to cone 14 and says what Orton
+  publishes past it. English only.
 - **Confirm before changes** (docs/adr/0025-confirm-before-changes.md). On Connected apps, an
   account can choose that changes from assistants, apps and access tokens wait for its approval:
   never (the default), only removals, or every change. It holds back an assistant that misbehaves
@@ -754,6 +765,25 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   longer repeats what the old recipe already had. Underneath, the fit takes caps on a share of the
   batch, and an amount tried back at its start can no longer break a cap. English only.
 
+- **The Orton chart says what it is.** Glazecalc's Orton figures from cone 06 up were labelled
+  "large cones at 60 °C an hour" but are the large-cone column at 150 °C an hour of Orton's older
+  chart (as determined at the US National Bureau of Standards, reprinted by W P Dawson and
+  FireRight), the same chart Katz's cone 10 at 1305 °C comes from. The figures are unchanged, so
+  no band, check or note changes; the label says so, and cones 022 to 07 now take the same
+  column (600 to 984 °C). English only.
+- **The cone check does not judge past cone 10** (docs/adr/0022, amended 2026-10-20). Katz's rule
+  and Hesselberth & Roy's figures stop at cone 10, so a firing hotter than that (Orton 10½ up,
+  SK 13 up, above 1305 °C, or the new top band) gets "can't compare" rather than being held to
+  cone 10's figures. A range from within the figures to past them (cone 9–11) still gets a
+  "looks cooler" note, judged at its cool end.
+- **MCP: every cone, read as the recipe page reads it.** `check_limits`, `get_recipe` and
+  `blend_recipes` take Orton cones 022 to 42 and SK cones SK 022 to 20 (before: Orton 06 to 6
+  only, so "Cone 10 is not in Glazecalc's Orton chart"), and temperatures to 1600 °C. A cone is
+  checked in its band, not by a converted temperature (SK 8 is mid fire, as on the page, not
+  high fire by its JIS 1250 °C); from cone 12 up the answer has `limitsNote`.
+  `convert_cone_temperature` gives Orton's current figures by heating rate beside Glazecalc's,
+  says when a cone has no figure, and no longer claims SK cones to 42; `glazecalc://cones` has
+  both Orton charts. `create_recipe` and `update_recipe` take the band `top`.
 - **The privacy notice says what connecting an AI app means** (a new section, "Connecting an AI
   app", with the ADR 0024 notices): what is kept for each connected app (its name and address as
   it gives them, where it sends you back, what it may do, its dates, its codes and tokens only as

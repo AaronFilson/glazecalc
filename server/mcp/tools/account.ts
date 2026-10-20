@@ -10,7 +10,7 @@ import * as z from 'zod';
 import mongoose from 'mongoose';
 import type { McpServer } from '@modelcontextprotocol/server';
 import firingLib from '../../../lib/cones/firing.js';
-import type { FiringBlock } from '../../../lib/cones/firing.js';
+import type { Band, FiringBlock } from '../../../lib/cones/firing.js';
 import results from '../../../lib/cones/results.js';
 import recipe from '../../../lib/recipe/index.js';
 import type { MaterialRecord, TryMaterial } from '../../../lib/recipe/index.js';
@@ -26,7 +26,7 @@ import {
   type Caller,
   countFit,
   firingArg,
-  celsiusOf,
+  firingOf,
   guarded,
   languageArg,
   languageOf,
@@ -39,7 +39,7 @@ import {
 import { findById, findMaterial, nameKey, oxidesOf } from '../library.ts';
 import { confirmSettingOf } from '../../lib/pending_changes.ts';
 import { settingsOf } from '../settings.ts';
-import { allowMoreArg, analysisOf, checksOf, coneFitOut, firingBlockOf, matchOut } from './public.ts';
+import { allowMoreArg, analysisOf, checksOf, coneFitOut, matchOut } from './public.ts';
 
 const READ_ONLY = { readOnlyHint: true, destructiveHint: false, idempotentHint: true, openWorldHint: false } as const;
 
@@ -50,12 +50,16 @@ const pageArgs = {
 const idArg = z.string().min(1).max(40).describe('The id from a list.');
 
 /**
- * A temperature within each firing band a recipe can be saved for, to check
- * it as that band: Orton cone 04, 6 and 10 on the 60 °C/h chart (ORTON_60 in
- * lib/cones/firing.js; the bands are in lib/recipe/limits.js).
+ * A temperature within each firing band a recipe can be saved for, for the
+ * checks that want one (too little boron at low fire, zinc below cone 03):
+ * Orton cone 04, 6 and 10 on the chart lib/cones/firing.js uses (Orton's older
+ * chart, large cones at 150 °C an hour; the bands are in lib/recipe/limits.js).
+ * The 'top' band, cone 12 up, has none: no limit set has figures there.
  */
-const BAND_CELSIUS = { low: 1060, mid: 1222, high: 1305 } as const;
-type FiringBand = keyof typeof BAND_CELSIUS;
+const BAND_CELSIUS: Readonly<Partial<Record<Band, number>>> = { low: 1060, mid: 1222, high: 1305 };
+const isBand = (value: unknown): value is Band => recipe.FIRING_BANDS.includes(value as Band);
+/** A band as the checks take it: the band, and its temperature where it has one. */
+const atBand = (band: Band) => ({ band, celsius: BAND_CELSIUS[band] });
 
 /** A recipe's firing block as an assistant is given it, or undefined when it states none. */
 const firingOut = (block: unknown) => {
@@ -71,7 +75,7 @@ const coneFilterArgs = {
     .max(6)
     .optional()
     .describe(
-      'Only recipes whose stated firing includes this cone ("6", "06", "5.5", SK "6a"), or for scale "temperature" this °C. A range matches any cone inside it; recipes tested at it come first. Recipes stated in another scale match approximately: Orton and SK by the Kyoto institute’s same-kiln table (SK 7 to 14 against Orton 4 to 12; other cones match their own scale only), a temperature when the cone bends within 15 °C of it (Orton at 60 °C an hour).'
+      'Only recipes whose stated firing includes this cone ("6", "06", "5.5", SK "6a"), or for scale "temperature" this °C. A range matches any cone inside it; recipes tested at it come first. Recipes stated in another scale match approximately: Orton and SK by the Kyoto institute’s same-kiln table (SK 7 to 14 against Orton 4 to 12; other cones match their own scale only), a temperature when the cone bends within 15 °C of it (Orton by its older chart for large cones at 150 °C an hour, which has figures to cone 15).'
     ),
   scale: z
     .enum(['orton', 'sk', 'temperature'])
@@ -213,7 +217,7 @@ export const registerAccountTools = (server: McpServer, caller: Caller): void =>
       {
         title: 'Get one of my recipes',
         description:
-          "One recipe from your account: its materials and amounts, colorants, notes, its stated firing (firedAt: the cone scale, the low and optional high cone of the claimed range, the cones actually tested, the atmospheres and processes, and for a temperature the rate and hold; each cone exactly as the potter gave it), whether it is for a food surface, the firing logs it went through with a result note each and, where known, the cone and atmosphere each was fired at, the potter’s summary of how it came out at each cone and atmosphere (coneResults; one outside the stated firing is kept), the firing band and target specific gravity saved with it, and its unity formula worked out afresh. It is checked against the limit set chosen in your settings: for the firing given here, or else the band chosen on the recipe, or else the bands its stated firing falls in (a range across two bands is checked at each). coneFit says, for the same firing, whether the chemistry looks like that firing's, as the recipe page's limits panel does: by Katz's boron rule and Hesselberth & Roy's silica and alumina whatever limit set is chosen, a note (verdict 'cooler' or 'hotter') only when boron and silica or alumina agree on another band, 'closer' when a range across bands looks nearer one end, 'fits' when nothing points away (not a pass), 'skipped' where the published figures do not reach. Cone 6 against cone 10 is told apart only roughly (strength 'soft'). A guide, not a test.",
+          "One recipe from your account: its materials and amounts, colorants, notes, its stated firing (firedAt: the cone scale, the low and optional high cone of the claimed range, the cones actually tested, the atmospheres and processes, and for a temperature the rate and hold; each cone exactly as the potter gave it), whether it is for a food surface, the firing logs it went through with a result note each and, where known, the cone and atmosphere each was fired at, the potter’s summary of how it came out at each cone and atmosphere (coneResults; one outside the stated firing is kept), the firing band and target specific gravity saved with it, and its unity formula worked out afresh. It is checked against the limit set chosen in your settings: for the firing given here, or else the band chosen on the recipe, or else the bands its stated firing falls in (a range across two bands is checked at each). A firing from cone 12 up is band 'top', where no limit set has figures: its limits are not checked, and limitsNote says so. coneFit says, for the same firing, whether the chemistry looks like that firing's, as the recipe page's limits panel does: by Katz's boron rule and Hesselberth & Roy's silica and alumina whatever limit set is chosen, a note (verdict 'cooler' or 'hotter') only when boron and silica or alumina agree on another band, 'closer' when a range across bands looks nearer one end, 'fits' when nothing points away (not a pass), 'skipped' where the published figures do not reach (among them firings cooler than cone 06 or hotter than cone 10). Cone 6 against cone 10 is told apart only roughly (strength 'soft'). A guide, not a test.",
         inputSchema: z.object({ id: idArg, firing: firingArg, language: languageArg }),
         annotations: READ_ONLY
       },
@@ -224,18 +228,19 @@ export const registerAccountTools = (server: McpServer, caller: Caller): void =>
           const lines = savedLines(found.materials as unknown[]);
           let analysis: Record<string, unknown> | null = null;
           let checks: Record<string, unknown> | null = null;
-          const band = Object.hasOwn(BAND_CELSIUS, found.firing ?? '') ? (found.firing as FiringBand) : undefined;
+          const band = isBand(found.firing) ? found.firing : undefined;
           const firedAt = firingOut(found.firedAt);
           const links = await liveLinks(userId, found.firings as Link[]);
           const coneResults = results.cleanConeResults(found.coneResults ?? []) ?? [];
           // The band chosen on the recipe wins; else the bands its stated firing falls in, coolest first.
-          const bands: FiringBand[] = band ? [band] : (firedAt?.bands ?? []);
+          const bands: Band[] = band ? [band] : (firedAt?.bands ?? []);
           let alsoChecks: Record<string, unknown> | undefined;
           let coneFit: ReturnType<typeof coneFitOut> = null;
           try {
             analysis = analysisOf(lines, lang).out;
             // The firing asked about, else the band chosen on the recipe, else the stated firing, as the page has it.
-            const against = firing ? firingBlockOf(firing) : (band ?? firedAt ?? null);
+            const asked = firing ? firingOf(firing) : null;
+            const against = asked ? asked.block : (band ?? firedAt ?? null);
             coneFit = coneFitOut(
               recipe.coneFit(analysis.unityFormula as Record<string, number>, against, {
                 processes: firedAt?.processes ?? [],
@@ -246,7 +251,7 @@ export const registerAccountTools = (server: McpServer, caller: Caller): void =>
             if (firing || bands.length) {
               const setting = await settingsOf(userId);
               // The recipe page's check: the account's limit set, for the firing asked about or the one saved.
-              checks = checksOf(lines, firing ? celsiusOf(firing) : BAND_CELSIUS[bands[0]!], setting('limitSet'), lang);
+              checks = checksOf(lines, asked ?? atBand(bands[0]!), setting('limitSet'), lang);
               if (!firing) {
                 delete checks.celsius;
                 checks.firingFrom = band ? 'recipe' : 'firedAt';
@@ -254,7 +259,7 @@ export const registerAccountTools = (server: McpServer, caller: Caller): void =>
                 if (bands.length > 1) {
                   alsoChecks = Object.fromEntries(
                     bands.slice(1).map((b) => {
-                      const more = checksOf(lines, BAND_CELSIUS[b], setting('limitSet'), lang);
+                      const more = checksOf(lines, atBand(b), setting('limitSet'), lang);
                       delete more.celsius;
                       return [b, more];
                     })

@@ -110,7 +110,8 @@ const KEYS: Record<RecipeMessageCode, string> = {
   'coneFit.skip.ash': marker('recipe.coneFit.skip.ash'),
   'coneFit.skip.noTemperature': marker('recipe.coneFit.skip.noTemperature'),
   'coneFit.skip.between': marker('recipe.coneFit.skip.between'),
-  'coneFit.skip.belowChart': marker('recipe.coneFit.skip.belowChart')
+  'coneFit.skip.belowChart': marker('recipe.coneFit.skip.belowChart'),
+  'coneFit.skip.aboveChart': marker('recipe.coneFit.skip.aboveChart')
 };
 
 /** A figure as the reader writes numbers: 0,30 or 0.30. */

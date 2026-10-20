@@ -142,7 +142,53 @@ describe('chemistry against the stated cone (lib/recipe/cone-fit.js)', () => {
     const sk6a = fit(glaze(0.2, 3.4, 0.35), { scale: 'sk', low: '6a' });
     expect([sk6a.verdict, sk6a.skipped]).to.eql(['skipped', 'noTemperature']);
     expect(text(sk6a)).to.contain('with SK 6a: there is no measured temperature');
-    expect(fit(glaze(0.2, 3.4, 0.35), orton('16')).skipped).to.equal('noTemperature');
+    // Past cone 10 the reason is that, with a figure or without.
+    expect(fit(glaze(0.2, 3.4, 0.35), orton('16')).skipped).to.equal('aboveChart');
+    expect(fit(glaze(0.2, 3.4, 0.35), { scale: 'sk', low: '15' }).skipped).to.equal('aboveChart');
+  });
+
+  it("does not judge a firing hotter than cone 10, where Katz's rule and Hesselberth & Roy's figures end", () => {
+    const plain = glaze(0, 4, 0.45);
+    for (const cone of ['10.5', '11', '12', '13', '14', '14.5', '15', '16', '20', '42']) {
+      const result = fit(plain, orton(cone));
+      expect([result.verdict, result.skipped], cone).to.eql(['skipped', 'aboveChart']);
+      expect(result.signals, cone).to.eql([]);
+    }
+    // Cone 10 itself is judged, at 1305 °C; a temperature a degree past it is not.
+    expect(fit(plain, orton('10')).verdict).to.equal('fits');
+    expect(fit(plain, { scale: 'temperature', low: '1305' }).verdict).to.equal('fits');
+    expect(fit(plain, { scale: 'temperature', low: '1306' }).skipped).to.equal('aboveChart');
+    // SK by Kyoto's columns: SK 12 stands for cone 10, SK 13 is near Orton 11.
+    expect(fit(plain, { scale: 'sk', low: '12' }).verdict).to.equal('fits');
+    expect(fit(plain, { scale: 'sk', low: '13' }).skipped).to.equal('aboveChart');
+    // The 'top' band chosen by hand (cone 12 up) has no cone to be read at.
+    const top = fit(plain, 'top');
+    expect([top.verdict, top.skipped]).to.eql(['skipped', 'aboveChart']);
+    expect(top.stated).to.deep.include({ bands: ['top'], chosen: 'top' });
+    expect(text(top)).to.contain('with very high fire: Katz');
+    // Said in words, with the cone and the figures' range.
+    const words = text(fit(plain, orton('14')));
+    expect(words).to.contain("can't compare this glaze's chemistry with cone 14");
+    expect(words).to.contain('cone 06 to cone 10');
+    expect(words).to.contain('that firing is hotter');
+    // The stated firing keeps its figure and band where it has one: cone 14 at 1366 °C, past every limit set.
+    expect(fit(plain, orton('14')).stated.ends[0]).to.include({ cone: '14', celsius: 1366, band: 'top' });
+    expect(fit(plain, orton('16')).stated.ends[0]).to.include({ cone: '16', band: 'top' });
+    expect(fit(plain, orton('16')).stated.ends[0]).not.to.have.property('celsius');
+  });
+
+  it('still notes a range from within the figures (cone 9–12) that looks cooler than its coolest cone, and judges nothing else', () => {
+    // A low-fire glaze stated 9–12 looks cooler than cone 9, and so than every cone of the range.
+    const low = fit(glaze(0.52, 2.3, 0.32), orton('9', '12'));
+    expect([low.verdict, low.looksLike]).to.eql(['cooler', 'low']);
+    expect(english(low.sentences[0]!)).to.contain('than one for cone 9');
+    expect(low.stated.bands).to.eql(['high', 'top']);
+    // Anything else is not judged: the cone 12 end is past the figures.
+    const plain = fit(glaze(0, 4, 0.45), orton('10', '11'));
+    expect([plain.verdict, plain.skipped]).to.eql(['skipped', 'aboveChart']);
+    expect(text(plain)).to.contain('with cone 11');
+    // Nor "closer": a range across bands to past cone 10 is not judged at its hot end.
+    expect(fit(glaze(0.1, 3.2, 0.3), orton('6', '12')).verdict).to.equal('skipped');
   });
 
   it('reads a temperature as stated', () => {

@@ -198,6 +198,18 @@ describe('RecipeConeCards', () => {
     expect(text(fixture, '.cone-card summary')).toContain('cone 7 · reduction');
   });
 
+  it('gives a cone 14 card its temperature and the top band, with no limit cautions to count there', async () => {
+    const { fixture } = await create({
+      block: { scale: 'orton', low: '14', tested: ['14'] },
+      unity: { CaO: 0.7, K2O: 0.3, Al2O3: 0.3, SiO2: 1.5 }
+    });
+    const summary = text(fixture, '.cone-card summary');
+    expect(summary).toContain('cone 14');
+    expect(summary).toMatch(/≈ (1366\s°C|2491\s°F)/);
+    expect(summary).toContain('Very high fire, cone 12 and up');
+    expect(summary).not.toMatch(/limit caution/);
+  });
+
   it('shows the cone-fit line in its slot when one is given', async () => {
     const { fixture } = await create({
       block: { scale: 'orton', low: '6' },

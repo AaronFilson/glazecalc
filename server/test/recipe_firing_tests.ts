@@ -2,6 +2,7 @@ import firing from '../../lib/cones/firing.js';
 import cones from '../../lib/cones/index.js';
 import results from '../../lib/cones/results.js';
 import paste from '../../lib/recipe/paste.js';
+import recipeLib from '../../lib/recipe/index.js';
 import { mergeTrial } from '../lib/account_data.ts';
 import Firing from '../models/firing.ts';
 import Recipe, { FIRING_LINKS } from '../models/recipe.ts';
@@ -68,19 +69,30 @@ describe('recipe firing (lib/cones/firing.js)', () => {
     expect(firing.firingProblem({ scale: 'orton', schedule: 'x'.repeat(301) })).to.equal('schedule');
   });
 
-  it('maps cones to the limits bands: 06 low, 6 mid, 8 to 13 high; SK by its own table', () => {
+  it('maps cones to the limits bands: 06 low, 6 mid, 8 to 11 high, 12 up top; SK by its own table', () => {
     expect(firing.coneBand('orton', '06')).to.equal('low');
     expect(firing.coneBand('orton', '02')).to.equal('low');
     expect(firing.coneBand('orton', '6')).to.equal('mid');
     expect(firing.coneBand('orton', '7')).to.equal('mid');
     expect(firing.coneBand('orton', '8')).to.equal('high');
-    expect(firing.coneBand('orton', '13')).to.equal('high');
-    expect(firing.coneBand('orton', '20')).to.equal('high');
+    expect(firing.coneBand('orton', '11')).to.equal('high');
+    // From cone 12 up no limit set has figures: the 'top' band, with a figure (to 15) or without.
+    for (const cone of ['11.5', '12', '13', '14', '14.5', '15', '15.5', '16', '20', '42']) {
+      expect(firing.coneBand('orton', cone), cone).to.equal('top');
+    }
     expect(firing.coneBand('sk', '8')).to.equal('mid');
     expect(firing.coneBand('sk', '10')).to.equal('mid');
     expect(firing.coneBand('sk', '12')).to.equal('high');
+    // SK 13 is near Orton 11 and SK 14 near Orton 12 by Kyoto's columns.
+    expect(firing.coneBand('sk', '13')).to.equal('high');
+    for (const cone of ['14', '15', '16', '20']) expect(firing.coneBand('sk', cone), 'SK ' + cone).to.equal('top');
     expect(firing.coneBand('sk', '4a')).to.equal('low');
     expect(firing.coneBand('temperature', '1280')).to.equal('high');
+    expect(firing.coneBand('temperature', '1319')).to.equal('high');
+    expect(firing.coneBand('temperature', '1320')).to.equal('top');
+    expect(firing.coneBand('temperature', '1500')).to.equal('top');
+    expect(firing.firingBands({ scale: 'orton', low: '10', high: '14' })).to.eql(['high', 'top']);
+    expect(firing.firingBands({ scale: 'orton', low: '6', high: '16' })).to.eql(['mid', 'high', 'top']);
     expect(firing.firingBands({ scale: 'orton', low: '6', high: '10' })).to.eql(['mid', 'high']);
     expect(firing.firingBands({ scale: 'orton', low: '04', high: '10' })).to.eql(['low', 'mid', 'high']);
     expect(firing.firingBands({ scale: 'orton', low: '5', high: '6' })).to.eql(['mid']);
@@ -88,7 +100,7 @@ describe('recipe firing (lib/cones/firing.js)', () => {
   });
 
   it('converts only approximately and says on what: Kyoto’s measured SK only, never the JIS nominal figure', () => {
-    expect(firing.approxCelsius('orton', '6')).to.eql({ celsius: 1222, basis: 'orton-60' });
+    expect(firing.approxCelsius('orton', '6')).to.eql({ celsius: 1222, basis: 'orton-150' });
     expect(firing.approxCelsius('sk', '10')).to.eql({ celsius: 1232, basis: 'kyoto' });
     expect(firing.approxCelsius('sk', '8')).to.eql({ celsius: 1198, basis: 'kyoto' });
     // Only Kyoto's measured cones get a temperature: the JIS figures of their neighbours
@@ -106,10 +118,73 @@ describe('recipe firing (lib/cones/firing.js)', () => {
     // No equivalent for an SK cone Kyoto did not measure, nor for the JIS figure of one it did.
     expect(firing.approxCone('sk', '6a', 'orton')).to.equal(null);
     expect(firing.approxCone('sk', '15', 'orton')).to.equal(null);
-    expect(firing.approxCone('temperature', '1222', 'orton')).to.eql({ cone: '6', basis: 'orton-60' });
+    expect(firing.approxCone('temperature', '1222', 'orton')).to.eql({ cone: '6', basis: 'orton-150' });
   });
 
-  it('matches SK and Orton by Kyoto’s same-kiln columns (100 °C an hour), not Orton’s 60 °C an hour chart', () => {
+  it("gives Orton cones a figure to cone 15, from the one chart (Orton's older chart, large cones at 150 °C an hour), and none from 16 up", () => {
+    // The chart's own figures, cone by cone, whole and half.
+    for (const { cone, celsius } of cones.ORTON.chart.cones) {
+      expect(firing.approxCelsius('orton', cone), cone).to.eql({ celsius, basis: 'orton-150' });
+    }
+    expect(firing.approxCelsius('orton', '10')).to.eql({ celsius: 1305, basis: 'orton-150' });
+    expect(firing.approxCelsius('orton', '14')).to.eql({ celsius: 1366, basis: 'orton-150' });
+    expect(firing.approxCelsius('orton', '15')).to.eql({ celsius: 1431, basis: 'orton-150' });
+    // A half cone halfway between its neighbours; 15½ has no upper neighbour with a figure.
+    expect(firing.approxCelsius('orton', '13.5')).to.eql({ celsius: 1356, basis: 'orton-150' });
+    expect(firing.approxCelsius('orton', '14.5')).to.eql({ celsius: 1399, basis: 'orton-150' });
+    for (const cone of ['15.5', '16', '17', '21', '31.5', '42'])
+      expect(firing.approxCelsius('orton', cone), cone).to.equal(null);
+    // In order, so no range is shown backwards: each figure at least the one before (011 and 010 are both 894 °C).
+    const figures = cones.ORTON.chart.cones.map((c) => c.celsius);
+    expect(figures).to.eql([...figures].sort((a, b) => a - b));
+    // A temperature finds the nearest cone in the chart, as far as cone 15 and a little past it.
+    expect(firing.approxCone('temperature', '1366', 'orton')).to.eql({ cone: '14', basis: 'orton-150' });
+    expect(firing.approxCone('temperature', '1440', 'orton')).to.eql({ cone: '15', basis: 'orton-150' });
+    expect(firing.approxCone('temperature', '1460', 'orton')).to.equal(null);
+    // A cone against a temperature firing, near cone 15 and past the chart.
+    expect(firing.matchesCone({ scale: 'temperature', low: '1430' }, 'orton', '15')).to.equal(true);
+    expect(firing.matchesCone({ scale: 'temperature', low: '1430' }, 'orton', '16')).to.equal(false);
+    expect(firing.matchesCone({ scale: 'orton', low: '14', high: '16' }, 'orton', '15')).to.equal(true);
+  });
+
+  it('offers the cones Orton makes up to 42: 15, 21, and the half cones to 15½, in order', () => {
+    const [usual, half, above] = firing.coneChoices('orton');
+    expect(usual!.cones.at(-1)).to.equal('13');
+    expect(half!.cones).to.include.members(['1.5', '12.5', '13.5', '14.5', '15.5']);
+    expect(above!.cones.slice(0, 5)).to.eql(['14', '15', '16', '17', '18']);
+    expect(above!.cones).to.include.members(['21', '23', '31.5', '32.5', '42']);
+    for (const cone of ['13.5', '14.5', '15', '15.5', '16', '21'])
+      expect(firing.isCone('orton', cone), cone).to.equal(true);
+    for (const cone of ['22', '24', '16.5', '43']) expect(firing.isCone('orton', cone), cone).to.equal(false);
+    const all = firing.coneChoices('orton').flatMap((group) => group.cones);
+    const sorted = [...all].sort((a, b) => firing.compareCones('orton', a, b));
+    expect(sorted.slice(sorted.indexOf('13'), sorted.indexOf('17') + 1)).to.eql([
+      '13',
+      '13.5',
+      '14',
+      '14.5',
+      '15',
+      '15.5',
+      '16',
+      '17'
+    ]);
+    // A range from 12 to 16 offers its whole cones as tested; a pasted cone 14 or 15½ is read.
+    expect(firing.conesBetween('orton', '12', '16')).to.eql(['12', '13', '14', '15', '16']);
+    expect(firing.readFiring('Cone 14 reduction')).to.include({ scale: 'orton', low: '14' });
+    expect(firing.readFiring('cone 15½')).to.include({ scale: 'orton', low: '15.5' });
+    expect(firing.readFiring('^14-16')).to.include({ scale: 'orton', low: '14', high: '16' });
+  });
+
+  it('keeps its band edges with the limit sets: 1150, 1250 and 1320 °C', () => {
+    expect(recipeLib.FIRING.topFrom).to.equal(1320);
+    const edges = recipeLib.HESSELBERTH_ROY_LIMITS.bands.map((b) => b.belowC);
+    expect(edges).to.eql([1150, 1250, 1320, undefined]);
+    // The edge falls between cone 11 and cone 12 of the chart, so 11 is high and 12 top.
+    expect(firing.approxCelsius('orton', '11')!.celsius).to.be.below(1320);
+    expect(firing.approxCelsius('orton', '12')!.celsius).to.be.at.least(1320);
+  });
+
+  it('matches SK and Orton by Kyoto’s same-kiln columns (100 °C an hour), not Orton’s chart at another rate', () => {
     // Kyoto SK 7 … 14: 1183 1198 1211 1232 1253 1290 1311 1331; its Orton 4 … 12: 1179 1207 1211 1232 1252 1271 1290 1301 1324.
     const sk = { 7: '4', 8: '5', 9: '6', 10: '7', 11: '8', 12: '10', 13: '11', 14: '12' };
     for (const [from, to] of Object.entries(sk)) {

@@ -140,7 +140,7 @@ export function bestFit(
   options?: FitOptions
 ): { amounts: number[]; miss: number };
 
-/** Orton large cones heated at 60 °C an hour: the temperature each bends at. */
+/** The cones a lead glaze is replaced for, 06 to 6: Orton's older chart, large cones at 150 °C an hour (lib/cones). */
 export const CONES: ReadonlyArray<{ cone: string; celsius: number }>;
 
 /** Katz's rule: at least 0.1 B2O3 in the unity formula for every 50 °C below cone 10 (1305 °C). */

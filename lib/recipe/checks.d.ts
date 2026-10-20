@@ -1,7 +1,7 @@
 // Types for lib/recipe/checks.js (see index.d.ts).
 
 import type { AdditiveRecord, MaterialRecord } from './library';
-import type { LimitSet } from './limits';
+import type { FiringBand, LimitSet } from './limits';
 import type { Caution } from './messages';
 
 export interface CheckInput {
@@ -13,6 +13,8 @@ export interface CheckInput {
   old?: Record<string, number>;
   /** The firing temperature, when it is known. */
   celsius?: number;
+  /** The firing's band, when it is known by its cone (coneBand): it wins over the band of `celsius`. */
+  band?: FiringBand;
   additives?: AdditiveRecord[];
   /** The old recipe's raw clay, as a percent of its batch. */
   oldClay?: number;

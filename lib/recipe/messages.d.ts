@@ -103,7 +103,8 @@ export type RecipeMessageCode =
   | 'coneFit.skip.ash'
   | 'coneFit.skip.noTemperature'
   | 'coneFit.skip.between'
-  | 'coneFit.skip.belowChart';
+  | 'coneFit.skip.belowChart'
+  | 'coneFit.skip.aboveChart';
 
 export const CODES: ReadonlyArray<RecipeMessageCode>;
 

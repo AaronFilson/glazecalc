@@ -371,11 +371,80 @@ describe('MCP: the public tools', () => {
     expect(lowFire.band).to.equal('low');
     expect(lowFire.cautions.map((c: { check: string }) => c.check)).to.include('alumina-low');
 
-    const badCone = await call('check_limits', { lines, firing: { cone: '10' } });
+    const badCone = await call('check_limits', { lines, firing: { cone: '43' } });
     expect(badCone.isError).to.equal(true);
-    expect(badCone.content[0]!.text).to.include('06, 05');
+    expect(badCone.content[0]!.text).to.include('1 … 42');
+    const badSk = await call('check_limits', { lines, firing: { cone: '26', chart: 'sk' } });
+    expect(badSk.isError).to.equal(true);
+    expect(badSk.content[0]!.text).to.include('SK 022 to SK 20');
     const badSet = await call('check_limits', { lines, limitSet: 'nope' });
     expect(badSet.isError).to.equal(true);
+  });
+
+  it('check_limits takes every Orton cone to 42 and SK to 20, in the band the recipe page gives it', async () => {
+    const lines = [
+      { material: 'Custer Spar', amount: 30 },
+      { material: 'Whiting', amount: 20 },
+      { material: 'EPK', amount: 25 },
+      { material: 'Silica', amount: 25 }
+    ];
+    // Cone 10 and 11, high fire: the staging test's "Cone 10 is not in Glazecalc's Orton chart" no more.
+    const ten = await data('check_limits', { lines, firing: { cone: '10' }, limitSet: 'hesselberth-roy' });
+    expect(ten).to.include({ band: 'high', celsius: 1305 });
+    expect(ten).to.not.have.property('limitsNote');
+    expect(ten.coneFit.verdict).to.not.equal('skipped');
+    const eleven = await data('check_limits', { lines, firing: { cone: '11' }, limitSet: 'hesselberth-roy' });
+    expect(eleven).to.include({ band: 'high', celsius: 1315 });
+    expect(eleven.coneFit).to.include({ verdict: 'skipped', skipped: 'aboveChart' });
+    // The app's own set reads cone 10 by its mid fire figures, as before.
+    expect((await data('check_limits', { lines, firing: { cone: '10' }, limitSet: 'glazecalc' })).band).to.equal('mid');
+    // Cone 12 up, 'top': no limit set has figures, so no range is checked and the answer says why.
+    for (const cone of ['12', '14', '14.5', '15', '16', '42']) {
+      for (const limitSet of ['hesselberth-roy', 'glazecalc']) {
+        const top = await data('check_limits', { lines, firing: { cone }, limitSet });
+        expect(top.band, `${cone} ${limitSet}`).to.equal('top');
+        expect(top.limitsNote).to.include('cone 12 up');
+        const ranged = ['boron-high', 'alumina-low', 'alkali', 'magnesia', 'boron-short'];
+        expect(top.cautions.map((c: { check: string }) => c.check).filter((c: string) => ranged.includes(c))).to.eql(
+          []
+        );
+        expect(top.coneFit).to.include({ verdict: 'skipped', skipped: 'aboveChart' });
+      }
+    }
+    // A cone's figure where the chart has one: 14 at 1366 °C, 15 at 1431 °C; none from 16 up.
+    expect((await data('check_limits', { lines, firing: { cone: '14' } })).celsius).to.equal(1366);
+    expect((await data('check_limits', { lines, firing: { cone: '15' } })).celsius).to.equal(1431);
+    expect(await data('check_limits', { lines, firing: { cone: '16' } })).to.not.have.property('celsius');
+    // "5½" is read as the half cone; "cone 6" as cone 6.
+    expect((await data('check_limits', { lines, firing: { cone: '5½' } })).celsius).to.equal(1209);
+    expect((await data('check_limits', { lines, firing: { cone: 'cone 6' } })).celsius).to.equal(1222);
+    // A temperature that hot is 'top' too, up to 1600 °C (2912 °F).
+    expect((await data('check_limits', { lines, firing: { celsius: 1450 } })).band).to.equal('top');
+    expect((await data('check_limits', { lines, firing: { fahrenheit: 2900 } })).band).to.equal('top');
+    expect((await call('check_limits', { lines, firing: { celsius: 1700 } })).isError).to.equal(true);
+  });
+
+  it('check_limits reads an SK cone in the band the recipe page gives it, not by its JIS figure', async () => {
+    const lines = [
+      { material: 'Custer Spar', amount: 30 },
+      { material: 'Whiting', amount: 20 },
+      { material: 'EPK', amount: 25 },
+      { material: 'Silica', amount: 25 }
+    ];
+    // SK 8 is 1250 °C by JIS, but bends near Orton 5 in Kyoto's kiln: mid fire, at Kyoto's 1198 °C.
+    const sk8 = await data('check_limits', { lines, firing: { cone: '8', chart: 'sk' }, limitSet: 'hesselberth-roy' });
+    expect(sk8).to.include({ band: 'mid', celsius: 1198 });
+    expect(sk8.coneFit.against.ends[0]).to.include({ scale: 'sk', cone: '8', band: 'mid' });
+    // SK 6 is the chart's SK 6a; SK 12 stands for Orton 10; SK 14 up is past every set's figures.
+    expect((await data('check_limits', { lines, firing: { cone: '6', chart: 'sk' } })).band).to.equal('mid');
+    expect(
+      (await data('check_limits', { lines, firing: { cone: '12', chart: 'sk' }, limitSet: 'hesselberth-roy' })).band
+    ).to.equal('high');
+    for (const cone of ['14', '15', '16', '20']) {
+      const sk = await data('check_limits', { lines, firing: { cone, chart: 'sk' } });
+      expect(sk.band, 'SK ' + cone).to.equal('top');
+      expect(sk.coneFit.skipped, 'SK ' + cone).to.equal('aboveChart');
+    }
   });
 
   it('check_limits follows the account’s own limit set for a token that may read preferences, unless one is asked for', async () => {
@@ -447,7 +516,12 @@ describe('MCP: the public tools', () => {
   });
 
   it('convert_cone_temperature reads the Orton and SK charts', async () => {
-    expect(await data('convert_cone_temperature', { cone: '6' })).to.include({ celsius: 1222, fahrenheit: 2232 });
+    const six = await data('convert_cone_temperature', { cone: '6' });
+    expect(six).to.include({ celsius: 1222, fahrenheit: 2232 });
+    expect(six.basis).to.equal("Orton's older chart, large cones at 150 °C an hour");
+    // Orton's current figures beside it, by heating rate.
+    expect(six.ortonCurrent.selfSupporting).to.eql({ 15: 1185, 60: 1222, 150: 1243 });
+    expect(six.ortonCurrent.large).to.eql({ 60: 1220, 150: 1241 });
     const sk = recipe.inScale(1230, 'F');
     expect(await data('convert_cone_temperature', { cone: '7', chart: 'sk' })).to.include({
       celsius: 1230,
@@ -458,6 +532,43 @@ describe('MCP: the public tools', () => {
     expect(near.fahrenheit).to.equal(1940);
     expect((await call('convert_cone_temperature', {})).isError).to.equal(true);
     expect((await call('convert_cone_temperature', { cone: '99' })).isError).to.equal(true);
+  });
+
+  it('convert_cone_temperature goes as high as the charts do: Orton to cone 15, SK to SK 20, and says so past them', async () => {
+    const fourteen = await data('convert_cone_temperature', { cone: '14' });
+    expect(fourteen).to.include({ cone: '14', chart: 'orton', celsius: 1366, fahrenheit: 2491 });
+    // Orton's own: self-supporting 1351, 1365, 1384; large 1388 at 60 °C an hour and 1366 at 150, made differently.
+    expect(fourteen.ortonCurrent).to.deep.include({
+      selfSupporting: { 15: 1351, 60: 1365, 150: 1384 },
+      large: { 60: 1388, 150: 1366 },
+      largeDiffers: true
+    });
+    const fifteen = await data('convert_cone_temperature', { cone: '15' });
+    expect(fifteen).to.include({ celsius: 1431, fahrenheit: 2608 });
+    // Orton publishes nothing for cone 15 today.
+    expect(fifteen).to.not.have.property('ortonCurrent');
+    const sixteen = await data('convert_cone_temperature', { cone: '16' });
+    expect(sixteen).to.include({ cone: '16', celsius: null, fahrenheit: null });
+    expect(sixteen.note).to.include('publishes no temperature');
+    const half = await data('convert_cone_temperature', { cone: '14½' });
+    expect(half).to.include({ cone: '14.5', celsius: 1399 });
+    expect(half.basis).to.include('halfway');
+    // A temperature finds cone 15 at the chart's top.
+    const hot = await data('convert_cone_temperature', { celsius: 1431 });
+    expect(hot.nearestOrton[0]).to.eql({ cone: '15', celsius: 1431 });
+    expect(hot.nearestSk[0]).to.eql({ cone: '15', celsius: 1435 });
+    // SK by the standard's nominal figures, to SK 20.
+    expect(await data('convert_cone_temperature', { cone: '16', chart: 'sk' })).to.include({ celsius: 1460 });
+    expect(await data('convert_cone_temperature', { cone: 'SK 20', chart: 'sk' })).to.include({
+      cone: '20',
+      celsius: 1530
+    });
+    expect((await call('convert_cone_temperature', { cone: '26', chart: 'sk' })).isError).to.equal(true);
+    expect((await call('convert_cone_temperature', { cone: '43' })).isError).to.equal(true);
+    const listed = ((await rpc('tools/list')).body!.result as { tools: Json[] }).tools;
+    const described = listed.find((t) => t.name === 'convert_cone_temperature')!.description as string;
+    expect(described).to.include('022 to 42').and.include('SK 022 to SK 20');
+    expect(described).to.not.include('06 to 6');
   });
 
   it('suggest_substitutes swaps old materials and suggests amounts', async () => {
@@ -642,6 +753,16 @@ describe('MCP: blend_recipes', () => {
     expect(other.limitSet).to.equal('glazecalc');
     const bad = await call('blend_recipes', { a: GLOSSY, b: BORON, limitSet: 'nonsense' });
     expect(bad.isError).to.equal(true);
+  });
+
+  it('blends for a porcelain firing past cone 11 with no band limits, and says why', async () => {
+    const result = await data('blend_recipes', { a: GLOSSY, b: MATTE, steps: 3, firing: { cone: '14' } });
+    expect(result).to.include({ limitBand: 'top', celsius: 1366 });
+    expect(result.limitsNote).to.include('cone 12 up');
+    for (const tile of result.tiles) expect(tile.coneFit, 'tile ' + tile.number).to.equal('skipped');
+    const sixteen = await data('blend_recipes', { a: GLOSSY, b: MATTE, steps: 2, firing: { cone: '16' } });
+    expect(sixteen.limitBand).to.equal('top');
+    expect(sixteen).to.not.have.property('celsius');
   });
 
   it('names the cautions a tile has against the limits, as check_limits does', async () => {
@@ -830,7 +951,14 @@ describe('MCP: the guides, resources and prompts', () => {
 
     const charts = JSON.parse((await read('glazecalc://cones')).text);
     expect(charts.orton.cones).to.deep.include({ cone: '6', celsius: 1222, fahrenheit: 2232 });
+    expect(charts.orton.cones.at(-1)).to.eql({ cone: '15', celsius: 1431, fahrenheit: 2608 });
+    expect(charts.orton.conesWithoutFigure).to.include.members(['15.5', '16', '21', '42']);
+    expect(charts.orton.conesWithoutFigure).to.not.include('15');
+    expect(charts.orton.source).to.include('dawson-cones.pdf');
+    expect(charts.ortonCurrent.cones.at(-1).cone).to.equal('14');
+    expect(charts.ortonCurrent.source).to.include('ortonceramic.com');
     expect(charts.sk.cones.length).to.be.above(30);
+    expect(charts.sk.cones.at(-1)).to.include({ cone: '20', celsius: 1530 });
 
     for (const uri of [
       'glazecalc://guides/en/nope',
@@ -1251,6 +1379,36 @@ describe('MCP: personal access tokens', () => {
           { _id: recipeId },
           { $unset: { firedAt: 1, foodSurface: 1, firings: 1, coneResults: 1 } }
         );
+      }
+    });
+
+    it('get_recipe checks a porcelain range to cone 14 at the high band and says the top one is past every set', async () => {
+      await Recipe.updateOne({ _id: recipeId }, { $set: { firedAt: { scale: 'orton', low: '10', high: '14' } } });
+      await User.updateOne({ _id: mine.user._id }, { $set: { 'preferences.limitSet': 'hesselberth-roy' } });
+      try {
+        const one = await data('get_recipe', { id: recipeId }, headers);
+        expect(one.firedAt.bands).to.eql(['high', 'top']);
+        expect(one.checks.band).to.equal('high');
+        expect(one.checks).to.not.have.property('limitsNote');
+        expect(one.checksAtOtherBands.top.band).to.equal('top');
+        expect(one.checksAtOtherBands.top.limitsNote).to.include('cone 12 up');
+        expect(one.coneFit.against.bands).to.eql(['high', 'top']);
+        const titles = (list: Json) => list.recipes.map((r: { title: string }) => r.title);
+        expect(titles(await data('list_recipes', { cone: '14' }, headers))).to.eql(['Satin white']);
+        expect(titles(await data('list_recipes', { cone: '15' }, headers))).to.eql([]);
+        expect(titles(await data('list_recipes', { cone: '1366', scale: 'temperature' }, headers))).to.eql([
+          'Satin white'
+        ]);
+        expect(titles(await data('list_recipes', { cone: '14', scale: 'sk' }, headers))).to.eql([]);
+        // The band chosen by hand may be 'top' too.
+        await Recipe.updateOne({ _id: recipeId }, { $set: { firing: 'top' } });
+        const chosen = await data('get_recipe', { id: recipeId }, headers);
+        expect(chosen.firing).to.equal('top');
+        expect(chosen.checks).to.include({ band: 'top', firingFrom: 'recipe' });
+        expect(chosen.coneFit).to.include({ verdict: 'skipped', skipped: 'aboveChart' });
+      } finally {
+        await Recipe.updateOne({ _id: recipeId }, { $unset: { firedAt: 1, firing: 1 } });
+        await User.updateOne({ _id: mine.user._id }, { $unset: { 'preferences.limitSet': 1 } });
       }
     });
 

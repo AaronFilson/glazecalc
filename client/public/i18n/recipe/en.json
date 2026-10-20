@@ -574,7 +574,8 @@
     "bands": {
       "low": "Low fire, cone 06–02",
       "mid": "Mid fire, cone 4–6",
-      "high": "High fire, cone 9–11"
+      "high": "High fire, cone 9–11",
+      "top": "Very high fire, cone 12 and up"
     },
     "shownFor": "With no firing chosen, the figures shown are for: {band}. The firing is saved with the recipe.",
     "cone": "These are the set's figures for cone {cone}.",
@@ -594,6 +595,7 @@
     "notInSet": "No range in this set for {oxides}.",
     "checksOnly": "This set checks only {oxides}.",
     "notApply": "{name} has no figures for this firing ({band}), so it is not checked: figures for another firing would mislead.",
+    "topNote": "The published glaze limits we found stop at cone 10, and Glazecalc reads them no further than cone 11, so a firing from cone 12 up is not checked against limits. Your test tiles decide.",
     "guidance": "These are guidelines, not a pass or a fail: a glaze outside them can be fine, and one inside them can still craze, leach or fail. Test it.",
     "source": "Source:",
     "saveFailed": "Your choice of limit set could not be saved to your account, so the limit set before is still the one in use.",
@@ -631,7 +633,8 @@
       "ash": "Glazecalc can't compare this glaze's chemistry with its firing: it has ash in it, whose make-up varies too much for the published figures this check uses.",
       "noTemperature": "Glazecalc can't compare this glaze's chemistry with {scale, select, band {{band, select, low {low fire} mid {mid fire} other {high fire}}} sk {SK {cone}} temperature {{cone} °C} other {cone {cone}}}: there is no measured temperature for that cone.",
       "between": "Glazecalc can't compare this glaze's chemistry with {scale, select, band {{band, select, low {low fire} mid {mid fire} other {high fire}}} sk {SK {cone}} temperature {{cone} °C} other {cone {cone}}}: the published figures this check uses are for low fire and for mid and high fire, not the cones between them (01 to 3).",
-      "belowChart": "Glazecalc can't compare this glaze's chemistry with {scale, select, band {{band, select, low {low fire} mid {mid fire} other {high fire}}} sk {SK {cone}} temperature {{cone} °C} other {cone {cone}}}: Katz's boron rule is for cone 06 to cone 10, and that firing is cooler."
+      "belowChart": "Glazecalc can't compare this glaze's chemistry with {scale, select, band {{band, select, low {low fire} mid {mid fire} other {high fire}}} sk {SK {cone}} temperature {{cone} °C} other {cone {cone}}}: Katz's boron rule is for cone 06 to cone 10, and that firing is cooler.",
+      "aboveChart": "Glazecalc can't compare this glaze's chemistry with {scale, select, band {{band, select, top {very high fire} other {high fire}}} sk {SK {cone}} temperature {{cone} °C} other {cone {cone}}}: Katz's boron rule is for cone 06 to cone 10, Hesselberth & Roy's silica and alumina figures stop at cone 10, and that firing is hotter."
     }
   },
   "stull": {
@@ -982,7 +985,7 @@
     "approxTemperature": "≈ {temperature} ({basis}; approximate)",
     "approxCone": "≈ {cone} ({basis}; approximate)",
     "basis": {
-      "orton60": "Orton large cones at 60 °C an hour",
+      "orton150": "Orton's older chart for large cones at 150 °C an hour",
       "kyoto": "measured at 100 °C an hour by Kyoto's municipal institute",
       "stated": "as given"
     },

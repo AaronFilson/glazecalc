@@ -38,7 +38,7 @@ export const ATMOSPHERE_NAMES: Record<string, string> = {
 };
 
 const BASIS: Record<ApproxBasis, string> = {
-  'orton-60': marker('recipe.firing.basis.orton60'),
+  'orton-150': marker('recipe.firing.basis.orton150'),
   kyoto: marker('recipe.firing.basis.kyoto'),
   stated: marker('recipe.firing.basis.stated')
 };
