@@ -75,8 +75,9 @@ const APP_PAGES = [
 test.describe('every palette, light and dark', () => {
   for (const palette of ['tenmoku', 'celadon', 'cobalt', 'oxblood', 'shino', 'ash']) {
     test(palette, async ({ page }) => {
-      // Four pages, each checked whole: more than the default 30 seconds on a busy machine.
-      test.setTimeout(60000);
+      // Four pages, each checked whole, and the account page keeps growing (pickers, settings):
+      // about 25 seconds a check on a busy Linux run.
+      test.setTimeout(120000);
       await signUpAndSignIn(page);
       for (const theme of ['light', 'dark']) {
         const res = await page.request.put(API + '/preferences', { data: { palette, theme } });
