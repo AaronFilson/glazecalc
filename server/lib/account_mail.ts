@@ -6836,7 +6836,7 @@ export const CONFIRM_LOOSENED: Record<string, Email> = {
   en: {
     subject: 'Glazecalc now asks less before apps change your records',
     text:
-      'The Glazecalc account {account} was just set to ask for approval {choice}.\n\n' +
+      'Confirm before changes, on the Glazecalc account {account}, was just set to: {choice}.\n\n' +
       'If this was you, there is nothing else to do. You can see and change it on Connected apps at {page}\n\n' +
       'If not, set it back there, revoke any app or token you do not know, and reset your password right away at {forgot}\n' +
       '\n-- \nGlazecalc, {app}\n'
@@ -6846,9 +6846,9 @@ export const CONFIRM_LOOSENED: Record<string, Email> = {
 /** How CONFIRM_LOOSENED names each choice it can be loosened to. */
 export const CONFIRM_CHOICES: Record<string, Record<'off' | 'removals', string>> = {
   en: {
-    off: 'never: changes from apps and access tokens are made at once',
+    off: 'never ask. Changes from apps and access tokens are made at once',
     removals:
-      'only before a removal: moving a record to the Trash, or taking a material off the materials on hand. Other changes from apps and access tokens are made at once'
+      'ask before removals only: moving a record to the Trash, or taking a material off the materials on hand. Other changes from apps and access tokens are made at once'
   }
 };
 

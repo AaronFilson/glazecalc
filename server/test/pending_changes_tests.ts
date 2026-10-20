@@ -140,10 +140,10 @@ describe('confirm before changes: the setting', () => {
     const sent = await waitFor(mine.email, 1);
     expect(sent).to.have.length(1);
     expect(sent[0]!.subject).to.equal('Glazecalc now asks less before apps change your records');
-    expect(sent[0]!.text).to.include('only before a removal');
+    expect(sent[0]!.text).to.include('ask before removals only');
     expect(sent[0]!.text).to.include('/account/apps');
     await setting(mine.token, 'off');
-    expect((await waitFor(mine.email, 2))[1]!.text).to.include('never: changes from apps');
+    expect((await waitFor(mine.email, 2))[1]!.text).to.include('never ask. Changes from apps');
   });
 
   it('fails closed: an account that cannot be read asks', async () => {
