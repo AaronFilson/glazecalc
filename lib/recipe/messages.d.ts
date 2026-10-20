@@ -67,6 +67,7 @@ export type RecipeMessageCode =
   | 'checks.smallAmount'
   | 'pool.changed'
   | 'pool.added'
+  | 'pool.why.rawClay'
   | 'lead.why.rawCalcium'
   | 'lead.why.lowExpansion'
   | 'lead.why.boronFrit'

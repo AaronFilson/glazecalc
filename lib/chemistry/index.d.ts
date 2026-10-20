@@ -115,12 +115,16 @@ export interface FitLine {
   group?: string;
 }
 
-/** How near the oxides should come, and shared caps (see lib/chemistry/fit.js). */
+/**
+ * How near the oxides should come, and shared caps (see lib/chemistry/fit.js):
+ * groups on an amount, shares on a share (0 to 1) of the batch.
+ */
 export interface FitOptions {
   near?: Record<string, number>;
   alkalis?: number;
   fluxTotal?: number;
   groups?: Record<string, number>;
+  shares?: Record<string, number>;
 }
 
 export function fitAmounts(
@@ -216,6 +220,28 @@ export function selectMaterials(
   target: Record<string, number>,
   options?: FitOptions & { closer?: boolean; extras?: number; keepOwn?: boolean }
 ): Selection;
+
+/** How near one oxide comes: 'close' within near, 'off' within three times near, 'far' past that. */
+export interface OxideCloseness {
+  /** An oxide, or KNaO for potash and soda together. */
+  oxide: string;
+  /** In the target's unity formula, and in the match's. */
+  was: number;
+  now: number;
+  difference: number;
+  /** How near the fit tries to bring it, in the unity formula. */
+  near: number;
+  verdict: 'close' | 'off' | 'far';
+}
+
+/** How near a match comes to its target, each in its own unity formula (see lib/chemistry/closeness.js). */
+export interface Closeness {
+  /** 'close' when every oxide is, 'poor' when any is far, 'fair' otherwise. */
+  verdict: 'close' | 'fair' | 'poor';
+  oxides: OxideCloseness[];
+}
+
+export function closeness(target: Record<string, number>, moles: Record<string, number>): Closeness;
 
 /** The chemistry's messages by code, in English (lib/chemistry/messages.js). */
 export const MESSAGES: Readonly<Record<string, string>>;

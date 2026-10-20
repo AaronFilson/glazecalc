@@ -1399,7 +1399,8 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
       allowLead: !this.leadOff(),
       tries: run.tries,
       avoid: run.avoid,
-      additives: this.additiveLines()
+      additives: this.additiveLines(),
+      uncapped: run.uncapped
     });
     const swapped = listOf(swaps.map((s) => translate('recipe.page.became', { from: s.from, to: s.to })));
     const parts = [
@@ -1635,7 +1636,11 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
   }
 
   private applyShelf(run: Run, compare = true): void {
-    const match = matchFromShelf(this.lines(), run.tries, { avoid: run.avoid, additives: this.additiveLines() });
+    const match = matchFromShelf(this.lines(), run.tries, {
+      avoid: run.avoid,
+      additives: this.additiveLines(),
+      uncapped: run.uncapped
+    });
     const parts = [
       translate('recipe.page.shelfNote'),
       this.changedNote(match.changes),

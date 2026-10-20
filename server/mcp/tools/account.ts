@@ -39,7 +39,7 @@ import {
 import { findById, findMaterial, nameKey, oxidesOf } from '../library.ts';
 import { confirmSettingOf } from '../../lib/pending_changes.ts';
 import { settingsOf } from '../settings.ts';
-import { analysisOf, checksOf, coneFitOut, firingBlockOf, matchOut } from './public.ts';
+import { allowMoreArg, analysisOf, checksOf, coneFitOut, firingBlockOf, matchOut } from './public.ts';
 
 const READ_ONLY = { readOnlyHint: true, destructiveHint: false, idempotentHint: true, openWorldHint: false } as const;
 
@@ -356,15 +356,16 @@ export const registerAccountTools = (server: McpServer, caller: Caller): void =>
         {
           title: 'Remake a recipe from what I have',
           description:
-            'Remakes one of your recipes, or a recipe you give, from only the materials on your shelf, keeping its unity formula as near as they allow (Match with what I have). Test any suggestion before using it.',
+            'Remakes one of your recipes, or a recipe you give, from only the materials on your shelf, keeping its unity formula as near as they allow (Match with what I have). report.closeness says how near the new unity formula comes to the old, oxide by oxide, as match_from_materials does. Test any suggestion before using it.',
           inputSchema: z.object({
             recipeId: z.string().max(40).optional().describe('One of your recipes, from list_recipes.'),
             lines: linesArg.optional().describe('Or a recipe given line by line.'),
+            allowMore: allowMoreArg,
             language: languageArg
           }),
           annotations: READ_ONLY
         },
-        async ({ recipeId, lines, language }) => {
+        async ({ recipeId, lines, allowMore, language }) => {
           const lang = languageOf(language);
           return guarded(async () => {
             let resolved: RecipeLine[];
@@ -375,7 +376,7 @@ export const registerAccountTools = (server: McpServer, caller: Caller): void =>
             const { materials } = await shelfOf();
             const shelf: TryMaterial[] = materials.map((material) => ({ material, must: false }));
             countFit(caller);
-            return ok(matchOut(recipe.matchFromShelf(resolved, shelf), lang));
+            return ok(matchOut(recipe.matchFromShelf(resolved, shelf, { uncapped: allowMore ?? [] }), lang));
           }, lang);
         }
       );

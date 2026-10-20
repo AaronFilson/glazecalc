@@ -35,7 +35,8 @@ an assistant to act for one person that is not their web session.
   short event streams 2025-era clients may get; the Content-Security-Policy is unchanged.
 - **Public tools need no account** (`server/mcp/tools/public.ts`): `search_materials`,
   `get_material`, `analyze_recipe`, `check_limits`, `convert_cone_temperature`,
-  `suggest_substitutes` and `match_from_materials`, and (`server/mcp/tools/blends.ts`)
+  `suggest_substitutes` and `match_from_materials` (which say how near they come, oxide by oxide:
+  [ADR 12](0012-choosing-materials.md#amended-how-near-a-match-comes)), and (`server/mcp/tools/blends.ts`)
   `blend_recipes`: the test tiles of a line or triaxial blend between two or three recipes, each
   with its recipe, key unity formula figures, expansion, limit cautions and, with a firing, its
   cone fit, or a comparison of two recipes. A calculation, not a test result. Each runs the app's own code on the standard

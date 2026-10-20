@@ -496,6 +496,80 @@ describe('MCP: the public tools', () => {
     const unknown = await call('match_from_materials', { lines: LINES, have: ['Moon dust'] });
     expect(unknown.isError).to.equal(true);
   });
+
+  // The staging session's recipe and shelf: an assistant read the solver's score as a wide miss.
+  const GERSTLEY = [
+    { material: 'Nepheline Syenite', amount: 40 },
+    { material: 'Silica', amount: 25 },
+    { material: 'Gerstley Borate', amount: 15 },
+    { material: 'EPK', amount: 20 }
+  ];
+  const ON_HAND = ['Custer Spar', 'Silica', 'Whiting', 'EPK', 'Ferro Frit 3134', 'Talc'];
+  type Row = { oxide: string; old: number; new: number; difference: number; percent?: number; verdict: string };
+
+  it('match_from_materials says how near the match comes, oxide by oxide, and in a sentence', async () => {
+    resetFits();
+    const { report, cautions } = await data('match_from_materials', { lines: GERSTLEY, have: ON_HAND });
+    expect(report.closeness.verdict).to.equal('fair');
+    expect(report.closeness.summary).to.match(/^Fair: near the old recipe's unity formula, but .* off by more than/);
+    expect(report.closeness.summary).to.include('These materials cannot come much nearer.');
+    const rows: Row[] = report.closeness.oxides;
+    const alumina = rows.find((row) => row.oxide === 'Al2O3')!;
+    expect(alumina).to.include({ old: 1.043, verdict: 'close' });
+    expect(alumina.new).to.be.closeTo(1.02, 0.01);
+    expect(alumina.percent).to.equal(-2);
+    expect(rows.map((row) => row.oxide)).to.include.members(['KNaO', 'B2O3', 'SiO2']);
+    // The clay it needs, and the check's fix for it.
+    expect(cautions.map((c: { check: string }) => c.check)).to.include('clay-high');
+    expect(report.capped).to.eql([]);
+    // Nothing given has lithia: said plainly.
+    const lithium = await data('match_from_materials', {
+      lines: [
+        { material: 'Lithium Carbonate', amount: 4 },
+        { material: 'Custer Spar', amount: 30 },
+        { material: 'Whiting', amount: 16 },
+        { material: 'EPK', amount: 20 },
+        { material: 'Silica', amount: 30 }
+      ],
+      have: ['Custer Spar', 'Whiting', 'EPK', 'Silica']
+    });
+    expect(lithium.report.closeness.verdict).to.equal('poor');
+    expect(lithium.report.closeness.summary).to.match(/^Poor: Li2O .* so expect a different glaze\./);
+    expect(lithium.report.closeness.summary).to.include('Nothing given supplies Li2O.');
+    // The server's instructions say to judge a match by it.
+    const init = await rpc('initialize', {
+      protocolVersion: PROTOCOL,
+      capabilities: {},
+      clientInfo: { name: 't', version: '1' }
+    });
+    expect((init.body!.result as { instructions: string }).instructions).to.include('(report.closeness)');
+  });
+
+  it('match_from_materials holds raw clay to 20% where that costs little, and allowMore lifts it', async () => {
+    resetFits();
+    const lines = [
+      { material: 'Nepheline Syenite', amount: 35 },
+      { material: 'Silica', amount: 25 },
+      { material: 'Whiting', amount: 10 },
+      { material: 'EPK', amount: 15 },
+      { material: 'Gerstley Borate', amount: 15 }
+    ];
+    const held = await data('match_from_materials', { lines, have: ON_HAND });
+    const [clay] = held.report.capped;
+    expect(clay).to.include({ most: 20 });
+    expect(clay.materials).to.eql(['EPK Kaolin']);
+    expect(clay.wouldBe).to.be.within(21, 23);
+    expect(clay.why).to.match(/^raw clay shrinks as the glaze dries/);
+    const epk = (result: Json): number =>
+      (result.recipe as Array<{ material: string; amount: number }>).find((line) => line.material === 'EPK Kaolin')!
+        .amount;
+    // By an alias, as the library knows it.
+    const more = await data('match_from_materials', { lines, have: ON_HAND, allowMore: ['EPK'] });
+    expect(more.report.capped).to.eql([]);
+    expect(epk(more)).to.be.above(epk(held));
+    const unknown = await call('match_from_materials', { lines, have: ON_HAND, allowMore: ['Moon dust'] });
+    expect(unknown.isError).to.equal(true);
+  });
 });
 
 describe('MCP: blend_recipes', () => {

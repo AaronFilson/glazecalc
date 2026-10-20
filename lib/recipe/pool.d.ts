@@ -1,6 +1,6 @@
 // Types for lib/recipe/pool.js (see index.d.ts).
 
-import type { Selection } from '../chemistry';
+import type { Closeness, FitOptions, SelectLine, Selection } from '../chemistry';
 import type { MaterialRecord } from './library';
 import type { Figure, RecipeMessage } from './messages';
 
@@ -39,13 +39,29 @@ export interface Report {
   /** How near the result comes: the miss, and the best the materials could do. */
   miss: number;
   best: number;
+  /** And oxide by oxide, in the unity formula, when the target was given. */
+  closeness?: Closeness;
 }
 
 export function placesFor(total: number): number;
+/**
+ * selectMaterials, raw clay held to 20% of the batch (or the old recipe's share) where that keeps the
+ * match about as near: the selection, and the lines it chose from (a held clay's naming the cap and why).
+ */
+export function selectHoldingClay<L extends SelectLine & { material: { name: string; category?: string } }>(
+  lines: L[],
+  target: Record<string, number>,
+  options?: FitOptions & { closer?: boolean; extras?: number; keepOwn?: boolean } & {
+    oldClay?: number;
+    batch?: number;
+    uncapped?: string[];
+  }
+): { selection: Selection; lines: Array<L & { group?: string; why?: RecipeMessage }> };
 export function explain(
   selection: Selection,
   lines: Array<{ material: { name: string }; fixed?: boolean; why?: RecipeMessage }>,
-  places: number
+  places: number,
+  target?: Record<string, number>
 ): Report;
 export function recipeFrom<M extends MaterialRecord>(
   selection: Selection,
