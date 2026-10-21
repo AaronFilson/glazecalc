@@ -2,8 +2,8 @@
 // item 21): ready-made requests that lead the assistant through Glazecalc's
 // tools for four common jobs. Diagnosing a glaze fault, making a recipe
 // lead-free, replacing discontinued materials, and explaining a recipe to a
-// new potter; and a lesson from the companion to John Britt's free glaze
-// course. Each says which tools to use and what to be careful about; the fault
+// new potter; and, for learning, what one material does in a glaze and a
+// lesson from the companion to John Britt's free glaze course. Each says which tools to use and what to be careful about; the fault
 // diagnosis carries the guides' section on glaze defects with it, and a lesson
 // the guide sections its unit points to. The requests are in English, as the
 // tools' descriptions are, and ask for the answer in the person's language.
@@ -11,6 +11,7 @@ import * as z from 'zod';
 import { completable, type McpServer } from '@modelcontextprotocol/server';
 import { COURSE_GUIDE, courseUnits, findUnit } from './course.ts';
 import { type Guide, type GuideSection, readGuide, sectionMarkdown, sectionUri } from './guides.ts';
+import { searchLibrary } from './library.ts';
 
 /** The faults the diagnosis offers by name; any other is taken as written. */
 export const FAULTS = [
@@ -328,9 +329,10 @@ export const registerPrompts = (server: McpServer): void => {
                 : '1. Say in a sentence what this unit covers, from its title and the attached guide sections.',
               '2. List his videos with their links and titles, credit John Britt (johnbrittpottery.com), and tell me to watch them on YouTube. Do not retell, summarise or quote what he says in them: you have not seen them, and they are his. Glazecalc is not connected with him.',
               '3. Explain the ideas I need from the attached Glazecalc guide sections, in plain words, and cite them by their addresses.',
-              '4. Lead me through the exercises one at a time, using the tools they name (analyze_recipe, check_limits, suggest_substitutes, match_from_materials, get_material, convert_cone_temperature, search_guides, blend_recipes)' +
+              '4. Lead me through the exercises one at a time, using the tools they name (analyze_recipe, check_limits, suggest_substitutes, match_from_materials, solve_target, get_material, convert_cone_temperature, search_guides, blend_recipes, vary_material, compare_recipes)' +
                 (recipe ? ', with my recipe where it fits: find each material with search_materials first.' : '.'),
               '5. End with what to test on a tile next, and what to write down.',
+              '6. If Glazecalc is connected to my account, offer to save what we made: a notebook entry (add_notebook_entry) with the series of tiles, their codes and amounts, or a recipe (create_recipe) for a tile I liked. Read back exactly what you will save, and save it only if I say yes. Do not say anything was saved until it was.',
               '',
               SAFETY +
                 answerIn(language) +
@@ -343,5 +345,52 @@ export const registerPrompts = (server: McpServer): void => {
         ]
       };
     }
+  );
+
+  server.registerPrompt(
+    'what_does_this_material_do',
+    {
+      title: 'What does this material do?',
+      description:
+        'Shows what one material does to a glaze: its analysis, then a range of it in a base recipe (more and more whiting, say), which oxides move and how the glaze walks across Stull’s chart. Give a base recipe, or the assistant asks for one.',
+      argsSchema: z.object({
+        material: completable(
+          z.string().min(1).max(200).describe('The material, such as "Whiting", "Ferro Frit 3134" or "Talc".'),
+          (value) => searchLibrary(value ?? '', { limit: 10 }).map((record) => record.name)
+        ),
+        recipe: recipeArg
+          .optional()
+          .describe('The base glaze to put it into, one material and amount per line. Without one the assistant asks.'),
+        cone: coneArg,
+        language: languageArg
+      })
+    },
+    ({ material, recipe, cone, language }) => ({
+      description: `What ${material} does`,
+      messages: [
+        user(
+          lines([
+            `Show me what ${material} does in a glaze.`,
+            '',
+            recipe ? 'My base recipe:' : '',
+            recipe ?? '',
+            recipe ? firingLine(cone) : cone ? `I fire to ${cone}.` : '',
+            '',
+            'Please:',
+            `1. Find ${material} with search_materials and read it with get_material: say in a sentence what it brings (flux, glass former, stabilizer, colorant, opacifier) and which oxides it carries.`,
+            recipe
+              ? '2. Use my base recipe as given: find each material with search_materials first.'
+              : '2. I have not given a base recipe. Ask me for one, or offer a plain one that I choose, before going on. Do not invent a recipe and present it as mine.',
+            `3. Run vary_material with the base, ${material} from 0 up to an amount that is sensible for it (a few steps; mode "add", or "replace" with the material it would replace if I say so), with my firing if I gave one.`,
+            '4. Explain the trend: which oxides of the unity formula rise or fall, what that does to melt, surface and expansion, and where the glaze moves on Stull’s chart (stull: region, crazed), in plain words.',
+            '5. Suggest the tiles worth making and firing to see it for myself, and what to write down. If Glazecalc is connected to my account, offer to save the series as a notebook entry (add_notebook_entry); read back what you will save and save it only if I say yes.',
+            '',
+            'The numbers are a calculation from published figures, not a test: the fired tiles decide. ' +
+              SAFETY +
+              answerIn(language)
+          ])
+        )
+      ]
+    })
   );
 };

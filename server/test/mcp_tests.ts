@@ -146,13 +146,15 @@ const PUBLIC_TOOLS = [
   'analyze_recipe',
   'blend_recipes',
   'check_limits',
+  'compare_recipes',
   'convert_cone_temperature',
   'get_material',
   'match_from_materials',
   'search_guides',
   'search_materials',
   'solve_target',
-  'suggest_substitutes'
+  'suggest_substitutes',
+  'vary_material'
 ];
 const ACCOUNT_TOOLS = [
   'get_firing',
@@ -1158,17 +1160,20 @@ describe('MCP: the guides, resources and prompts', () => {
     }
   });
 
-  it('offers five prompts, each naming the tools to use', async () => {
+  it('offers six prompts, each naming the tools to use', async () => {
     const { prompts } = await result('prompts/list');
     expect(prompts.map((p: Json) => p.name).sort()).to.eql([
       'diagnose_glaze_fault',
       'explain_recipe',
       'glaze_course_lesson',
       'make_lead_free',
-      'replace_discontinued'
+      'replace_discontinued',
+      'what_does_this_material_do'
     ]);
-    // A lesson needs a unit; the recipe is the learner's own, if they have one.
-    for (const prompt of prompts.filter((p: Json) => p.name !== 'glaze_course_lesson')) {
+    // A lesson needs a unit, and the material prompt a material; the recipe is the learner's own, if they have one.
+    for (const prompt of prompts.filter(
+      (p: Json) => p.name !== 'glaze_course_lesson' && p.name !== 'what_does_this_material_do'
+    )) {
       expect(prompt.description, prompt.name).to.have.length.above(40);
       expect(
         prompt.arguments.find((a: Json) => a.name === 'recipe'),

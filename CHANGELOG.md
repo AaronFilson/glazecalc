@@ -30,6 +30,20 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   app that registered itself. The browser tests run it with a stand-in app (`CIMD_TEST_BASE`, taken
   only with `NODE_ENV=test`; the server will not start with it and `NODE_ENV=production`). To try on
   staging first (docs/integrations/directories.md).
+- **The teaching companion, phase 2** (docs/adr/0017-mcp-server.md; MCP server 1.3.0). Two public,
+  read-only tools: `vary_material` (what one material does across a range, such as whiting 0 to 20 in
+  2 to 11 tiles, put on top of a base recipe or in place of another of its materials, with each tile's
+  unity formula, expansion, cautions and cone fit, and a trend of what moves) and `compare_recipes`
+  (two recipes side by side: chemistry, oxide-by-oxide differences, which materials are in one or both;
+  the same comparison `blend_recipes` makes with two steps). Recipe answers to assistants
+  (`analyze_recipe`, `check_limits`, the tiles) now say where the recipe sits on the Stull chart (`stull`:
+  silica, alumina, region, crazed); the chart itself is not shown in the assistant yet. A new prompt,
+  `what_does_this_material_do`, and `glaze_course_lesson` now uses the new tools and offers to save what
+  was made, through the existing write tools and the Confirm changes setting. The companion guide to
+  John Britt's free glaze course (English only) has exercises for the new tools, names his publisher as
+  Union Square & Co. (first published by Lark Books) and links the two books' publisher pages; his videos
+  are still only linked by his titles, never embedded or retold. Its count of 52 videos was last read on
+  2026-10-19.
 - **Arabic and Hindi** (docs/translations/ar.md, hi.md): the app, the emails and all five guides, live at
   `/ar/…` (right to left) and `/hi/…`. Arabic is Modern Standard Arabic for the Arab countries, its terms chosen from Arabic
   ceramics sources (Egyptian, Iraqi, Sudanese and Libyan university papers, suppliers, Oman's GHS guide), with all six

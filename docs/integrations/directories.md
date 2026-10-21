@@ -170,7 +170,7 @@ destructiveHint: false`, the five that replace or remove are `true`; this follow
    specification and OpenAI. Every write tool is `readOnlyHint: false`, so Claude still asks before
    each. If Anthropic's portal flags the four, setting them `true` is one line (`ADDS` in
    `server/mcp/tools/account_write.ts`) and stays within OpenAI's rule only as an over-cautious answer.
-9. **After round 6 deploys:** republish the MCP registry entry as 1.2.0 (plan.md), from master.
+9. **After round 6 deploys:** republish the MCP registry entry as 1.2.0 (plan.md), from master. The teaching companion (round 8) makes it 1.3.0: `vary_material`, `compare_recipes`, `stull` in the answers and one more prompt, so republish once, as 1.3.0, if both reach master before the registry is touched.
 
 ## The listings
 
@@ -220,7 +220,7 @@ Manifest values (O-sub field names):
 | Field                                       | Value                                                                                                                                                                                                                                                                                                                                                  |
 | ------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | `name`                                      | `glazecalc`                                                                                                                                                                                                                                                                                                                                            |
-| `version`                                   | `1.2.0` (as `server.json`)                                                                                                                                                                                                                                                                                                                             |
+| `version`                                   | `1.3.0` (as `server.json`)                                                                                                                                                                                                                                                                                                                             |
 | `description`                               | the Claude description above                                                                                                                                                                                                                                                                                                                           |
 | `interface.displayName` (≤ 30)              | Glazecalc                                                                                                                                                                                                                                                                                                                                              |
 | `interface.shortDescription` (≤ 30)         | Glaze chemistry for potters (27)                                                                                                                                                                                                                                                                                                                       |
@@ -241,7 +241,7 @@ Manifest values (O-sub field names):
 
 ### Example prompts and test cases
 
-For Anthropic's three or more examples (A-pol 3E) use 1–3; for OpenAI's five positive cases use 1–5.
+For Anthropic's three or more examples (A-pol 3E) use 1–3; for OpenAI's five positive cases use 1–5 (6 is the teaching companion's tool, `vary_material`; swap it for 5 if the reviewers' account is not ready).
 
 | #   | Prompt                                                                                                           | Tools                                            | Expected                                                                                                    |
 | --- | ---------------------------------------------------------------------------------------------------------------- | ------------------------------------------------ | ----------------------------------------------------------------------------------------------------------- |
@@ -250,6 +250,7 @@ For Anthropic's three or more examples (A-pol 3E) use 1–3; for OpenAI's five p
 | 3   | Is this cone 6 liner glaze within published limits? Custer Spar 25, Whiting 20, Frit 3134 10, EPK 20, Silica 25. | `check_limits`                                   | Cautions, if any, with the limit set; says the checks are not proof of food safety and advises a leach test |
 | 4   | My glaze crawled. What causes crawling and how do I fix it?                                                      | `search_guides`                                  | Causes and fixes from the guides, with links to glazecalcapp.com sections                                   |
 | 5   | (signed in as the reviewer account) Which of my glazes fire at cone 10 reduction?                                | `list_recipes`                                   | Sign-in prompt the first time; then the account's matching recipes                                          |
+| 6   | What does whiting do in my cone 6 base? Custer Spar 40, Silica 30, EPK 20, Whiting 10.                           | `vary_material`                                  | Tiles with whiting from 0 up; which oxides move, where the point walks on Stull's chart; says to test-fire  |
 
 Negative cases (OpenAI asks three):
 

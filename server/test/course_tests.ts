@@ -307,11 +307,31 @@ describe("the companion to John Britt's course", () => {
       'johnbrittpottery.com',
       'The Complete Guide to High-Fire Glazes',
       'The Complete Guide to Mid-Range Glazes',
-      'Lark Books',
+      'first published by Lark Books',
+      'Union Square & Co., part of Hachette Book Group',
       'not connected with him',
       '/guides/safe-mixing'
     ]) {
       expect(about).to.include(part);
+    }
+    expect(about).not.to.include('now part of Hachette');
+    const sources = readGuide(COURSE_GUIDE, 'en')!.sections.find((section) => section.id === 'sources')!.text;
+    expect(sources).to.include(
+      'https://www.hachettebookgroup.com/titles/john-britt/the-complete-guide-to-high-fire-glazes/'
+    );
+    expect(sources).to.include(
+      'https://www.hachettebookgroup.com/titles/john-britt/the-complete-guide-to-mid-range-glazes/'
+    );
+  });
+
+  it('lists his videos as links only: a Watch line is one link and nothing about what is in the video', () => {
+    const text = readFileSync(GUIDE_FILE, 'utf8');
+    const watches = [...text.matchAll(/^### Watch\n\n([\s\S]*?)\n\n### /gm)].map((match) => match[1]!);
+    expect(watches).to.have.length(12);
+    for (const watch of watches) {
+      for (const line of watch.split('\n')) {
+        expect(line, line).to.match(/^- \[[^\]]+\]\(https:\/\/www\.youtube\.com\/watch\?v=[\w-]+\)$/);
+      }
     }
   });
 });
