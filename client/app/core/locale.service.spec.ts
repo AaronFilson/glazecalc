@@ -338,21 +338,13 @@ describe('prerenderRegion', () => {
       'BD',
       'IN'
     ]);
-    // India's other languages are written for India (Nepali and Sinhala wait for Nepal and Sri Lanka, which are
-    // not regions yet), and Telugu and the rest of them with no region listing them yet.
+    // India's other languages are written for India, Telugu and the rest of them with no region listing them
+    // yet; Tamil stays India's though Sri Lanka lists it too. Nepali and Sinhala are written for Nepal and
+    // Sri Lanka, regions since round 8 (docs/south-asia-mena-plan.md, C3).
     expect(['ta', 'mr', 'kn', 'te', 'gu', 'ml', 'pa', 'or'].map((language) => prerenderRegion(language))).toEqual(
       Array(8).fill('IN')
     );
-    expect(['ne', 'si'].map((language) => prerenderRegion(language))).toEqual(['', '']);
-    expect(
-      ['ne', 'si'].map((language) =>
-        prerenderRegion(language, [
-          ...REGIONS,
-          { code: 'NP', languages: ['ne'] },
-          { code: 'LK', languages: ['si', 'ta'] }
-        ])
-      )
-    ).toEqual(['NP', 'LK']);
+    expect(['ne', 'si'].map((language) => prerenderRegion(language))).toEqual(['NP', 'LK']);
     // What the live languages are written for stays as it was.
     for (const regions of [planned, REGIONS]) {
       expect(
