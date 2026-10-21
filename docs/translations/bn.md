@@ -191,7 +191,8 @@ uses them, and the glossary below has their rows.
   **সেল্ফ-সাপোর্টিং শঙ্কু** (never স্বয়ংসমর্থ); witness cone **সাক্ষী শঙ্কু**.
 - **Switch settings** **বন্ধ / নিম্ন / মাঝারি / উচ্চ** (Off, Low, Medium, High); "switch settings" **সুইচের সেটিং**.
 - **Ramp** **তাপ বাড়ানো** for now (bn.json `firingFields.ramp` and the guides), with "{{en: ramp}}" at the guide's
-  first use; র‍্যাম্প needs a ZWJ, which the translations check does not accept yet. Revisit when it does.
+  first use. র‍্যাম্প is written র, ZWJ, ্, য (ra with ya-phala), and the translations check accepts that ZWJ (and no
+  other) since round 8's go-live; তাপ বাড়ানো stays, as the reviews settled it.
 - **Liner** **লাইনার গ্লেজ**; **triaxial / biaxial** **ট্রাইঅ্যাক্সিয়াল / বাইঅ্যাক্সিয়াল** (blend: ট্রাইঅ্যাক্সিয়াল
   ব্লেন্ড; never ত্রিমুখী).
 - **Pint weight** **পিন্ট ওজন**; **pint** **পিন্ট** (never পাইন্ট).
@@ -263,8 +264,8 @@ never in Latin letters, unless it is a trade name, a brand, a code or a unit.
   (অ্যালুমিনা, অ্যাকাউন্ট, সোডা অ্যাশ); ৎ (খণ্ড ত) where the standard writes it (মৃৎশিল্প). Bengali words of Sanskrit
   origin keep their spelling (চীন, শ্রেণি, ঘণ্টা).
 - **Conjuncts and joiners:** type conjuncts with the hasant (্); the য-ফলা after র (র‍্য, as in র‍্যাম্প, র‍্যাব) is
-  standard spelling with a ZWJ (U+200D), but the translations check does not accept the ZWJ yet, so the files avoid
-  such words for now (ramp is তাপ বাড়ানো). No other control characters (no U+200E, U+200F, U+2066–U+2069, U+2060).
+  standard spelling with a ZWJ (U+200D) between র and the hasant (U+09B0 U+200D U+09CD U+09AF), which the translations
+  check accepts (checkJoiners); a ZWJ anywhere else, and any ZWNJ, it refuses. Ramp stays তাপ বাড়ানো. No other control characters (no U+200E, U+200F, U+2066–U+2069, U+2060).
 - **Danda:** U+0964 (।), never U+09F7 (৷), which looks the same but is a currency numerator (MS's own guide mixes them),
   and never "|" (U+007C, Mozilla's picture of it). The translations check refuses U+09F7.
 - **Composed forms (NFC):** text as Unicode's composed form writes it: ো and ৌ as one character each (U+09CB, U+09CC), not
@@ -572,7 +573,7 @@ relied on.
 | cone chart, witness cone, cone pack                       | শঙ্কুর তালিকা; সাক্ষী শঙ্কু; শঙ্কুর সেট                                   | No source.                                                                                                                                                    |
 | heatwork                                                  | তাপকার্য (heatwork)                                                       | **show English**. No source.                                                                                                                                  |
 | heating rate, peak                                        | তাপ বাড়ার হার; সর্বোচ্চ তাপমাত্রা                                        | Usage.                                                                                                                                                        |
-| ramp, hold, soak                                          | তাপ বাড়ানো; হোল্ড (তাপমাত্রা ধরে রাখা); সোক                              | **show English**. No source. Ramp is তাপ বাড়ানো until the check accepts the ZWJ of র‍্যাম্প (round 8).                                                       |
+| ramp, hold, soak                                          | তাপ বাড়ানো; হোল্ড (তাপমাত্রা ধরে রাখা); সোক                              | **show English**. No source. Ramp is তাপ বাড়ানো, as round 8 settled (the check now accepts the ZWJ of র‍্যাম্প).                                             |
 | guide, firing, guard cone; self-supporting cone           | গাইড শঙ্কু; পোড়ানোর শঙ্কু; গার্ড শঙ্কু; সেল্ফ-সাপোর্টিং শঙ্কু            | Round 8. Never স্বয়ংসমর্থ.                                                                                                                                   |
 | switch settings (Off, Low, Medium, High)                  | সুইচের সেটিং (বন্ধ, নিম্ন, মাঝারি, উচ্চ)                                  | Round 8 (firing review).                                                                                                                                      |
 | schedule (program, segment)                               | পোড়ানোর প্রোগ্রাম (সেগমেন্ট)                                             | Usage.                                                                                                                                                        |
