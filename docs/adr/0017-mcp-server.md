@@ -88,7 +88,8 @@ an assistant to act for one person that is not their web session.
   unit's guide sections attached (the safe mixing habits first for lab units), and its exercises,
   all read from the English-only guide by `server/mcp/course.ts`; it now also names
   `vary_material`, `compare_recipes` and `solve_target`, and ends by offering to save what was made
-  (read back first, saved only on a yes). A sixth, `what_does_this_material_do` (2026-10), runs
+  (read back first, saved only on a yes): a notebook entry, `about` a recipe or firing log when it is
+  one's, a recipe, a firing log (`create_firing_log`) or a recipe's result in a firing (`link_firing`). A sixth, `what_does_this_material_do` (2026-10), runs
   `get_material` and `vary_material` on a base the person gives, or asks for one (it never invents
   one), and explains the trend and the Stull walk. John Britt is named and his episodes linked by his
   titles; nothing of what he says is copied, quoted or retold, and the course guide's tests check

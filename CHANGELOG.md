@@ -58,7 +58,9 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   cone and atmosphere, by the recipe routes' own code); `add_notebook_entry` takes `about`, a recipe, material
   or firing log the note is about. The firing log's columns now live in `lib/cones/firing-fields.js`, shared by
   the Firing page and the server. The skill goes in the ChatGPT directory package
-  (docs/integrations/directories.md).
+  (docs/integrations/directories.md). The course prompt `glaze_course_lesson` may save with them too: a
+  firing log of the test firing, a recipe's result in it, or a note `about` a recipe or firing log, each
+  read back first and saved only on a yes.
 - **Arabic and Hindi** (docs/translations/ar.md, hi.md): the app, the emails and all five guides, live at
   `/ar/…` (right to left) and `/hi/…`. Arabic is Modern Standard Arabic for the Arab countries, its terms chosen from Arabic
   ceramics sources (Egyptian, Iraqi, Sudanese and Libyan university papers, suppliers, Oman's GHS guide), with all six
