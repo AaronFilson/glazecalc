@@ -48,6 +48,12 @@ services:
   mongo:
     image: mongo:9.0@sha256:bac22ea7710d774103dcad3ec8ac13cba1eb378f488e3ce8a6b3a1adf2ba9dcc
     restart: unless-stopped
+    environment:
+      # MongoDB 8 and later stop at startup on Linux 6.19 through 7.0.13, which
+      # GitHub's ubuntu-24.04 runners have had since image 20261018 (SERVER-121912).
+      # Leaving rseq to glibc keeps tcmalloc off it, the workaround reported in
+      # docker-library/mongo#765. Drop it once the runners have 7.0.14 or later.
+      GLIBC_TUNABLES: glibc.pthread.rseq=1
     volumes:
       - mongo-data:/data/db
       # The image declares this too; naming it stops a new unnamed volume

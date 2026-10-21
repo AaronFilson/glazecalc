@@ -19,7 +19,9 @@ permissions:
 # Not 26.04 yet: its runners have Linux 7.0, and MongoDB 8 and later stop at
 # startup on kernels 6.19 through 7.0.13 (its production notes), so neither the
 # MongoDB service nor the one in the Docker job comes up. Move once the 26.04
-# runners have kernel 7.0.14 or later. Node 24 LTS only, matching package.json
+# runners have kernel 7.0.14 or later. The 24.04 runners moved to such a kernel
+# with image 20261018 too; MongoDB runs there with GLIBC_TUNABLES (compose.yaml
+# says why). Node 24 LTS only, matching package.json
 # "engines" and the Docker image.
 jobs:
   checks:
@@ -63,6 +65,9 @@ jobs:
     services:
       mongodb:
         image: mongo:9.0
+        # For Linux 6.19 through 7.0.13, as compose.yaml says.
+        env:
+          GLIBC_TUNABLES: glibc.pthread.rseq=1
         ports:
           - 27017:27017
 
@@ -261,6 +266,10 @@ jobs:
         with:
           # Nothing here pushes; the image's build cannot read a token from .git/config.
           persist-credentials: false
+
+      # Whether this runner has a kernel MongoDB needs compose.yaml's workaround for.
+      - name: Kernel
+        run: uname -r
 
       - name: Build
         run: docker compose build
