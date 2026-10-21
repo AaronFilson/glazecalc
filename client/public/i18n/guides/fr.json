@@ -27,7 +27,7 @@
       "text": "Poussières, masques de protection respiratoire, nettoyage, les matières qui demandent le plus de précautions, et l’évacuation des fumées du four."
     },
     "homeSafety": {
-      "title": "Sécurité des émaux à la maison : enfants, animaux et four",
+      "title": "N’empoisonnez pas votre famille",
       "text": "La céramique à la maison avec des enfants et des animaux : rangement, poussière, le four, et que faire si quelque chose a été avalé."
     },
     "firing": {
@@ -43,7 +43,7 @@
   "contents": "Sur cette page",
   "poison": {
     "numbersFor": "Numéros pour",
-    "choose": "Choisissez votre pays",
+    "choose": "Choisissez votre pays ou votre région",
     "label": "Qui appeler : {region}",
     "caption": "Qui appeler : {region} (numéros vérifiés le {date})",
     "for": "Situation",
@@ -61,7 +61,7 @@
     "animalsNone": "Animaux",
     "vet": "Appelez votre vétérinaire.",
     "checkedOn": "Vérifié sur :",
-    "choosePrompt": "Choisissez votre pays pour voir qui appeler.",
+    "choosePrompt": "Choisissez votre pays ou votre région pour voir qui appeler.",
     "ministry": "La page du ministère de la Santé : <link>{name}</link>."
   },
   "density": {
@@ -89,7 +89,7 @@
     },
     "none": "{region} : nous n’avons trouvé aucun magasin vendant des matières premières pour émaux.",
     "unknown": "{region} : nous n’avons pas encore cherché de magasins.",
-    "choosePrompt": "Choisissez votre pays pour voir les magasins qui s’y trouvent."
+    "choosePrompt": "Choisissez votre pays ou votre région pour voir les magasins qui s’y trouvent."
   },
   "silica": {
     "limitIn": "Valeur limite pour",
@@ -135,7 +135,7 @@
     "noData": "{region} : nous n’avons pas encore confirmé la valeur limite.",
     "agency": "L’organisme national chargé de la sécurité au travail : <link>{name}</link>.",
     "agencySilica": "Sa <link>page sur la silice</link>.",
-    "choosePrompt": "Choisissez votre pays pour voir sa valeur limite."
+    "choosePrompt": "Choisissez votre pays ou votre région pour voir sa valeur limite."
   },
   "food": {
     "rulesIn": "Règles pour",
@@ -211,7 +211,7 @@
     "unknown": "{region} : nous n’avons pas encore confirmé les règles.",
     "none": "{region} : aucune loi ne fixe de limites pour le plomb et le cadmium qu’une pièce cuite peut libérer (vérifié le {date}).",
     "noneSource": "Source : <link>{law}</link>.",
-    "choosePrompt": "Choisissez votre pays pour voir ses règles."
+    "choosePrompt": "Choisissez votre pays ou votre région pour voir ses règles."
   },
   "equivalents": {
     "buyingIn": "Lieu d’achat",
@@ -224,6 +224,6 @@
     "noneClose": "Aucune matière à 15 g d’écart ou moins pour 100 g : comparez d’après la chimie.",
     "loading": "Chargement de la bibliothèque…",
     "failed": "Impossible de charger la bibliothèque. Veuillez réessayer plus tard.",
-    "choosePrompt": "Choisissez votre pays pour voir ce qui s’y vend."
+    "choosePrompt": "Choisissez votre pays ou votre région pour voir ce qui s’y vend."
   }
 }

@@ -847,6 +847,9 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Changed
 
+- **"Choose your country or region"**: the guides' region list and the prompts under it ask for a country or region
+  (the owner's choice), as Hong Kong and Taiwan are among the places listed. In every language, in the words its
+  region list already uses ("countries and regions").
 - **Enter in a recipe amount goes back to the list to add from.** With an amount typed, Enter in a
   material's amount moves the focus to the materials list's filter, ready for the next one (an
   additive's amount to the additives' list). Before, Enter did nothing there, and it still sends no
@@ -989,9 +992,9 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   Orton 8, 11 and 12 now have a match. The firing guide's Kyoto cones paragraph says so (English; the other
   languages follow with the next translation round).
 - **Guides end with "More guides"**, links to the other guides with their summaries, drawn into the prerendered page so
-  search engines follow them. The home safety guide keeps its heading, "Don't poison your family"; its page title,
-  search description and link in the guides list now read "Glaze safety at home: children, pets and the kiln"
-  (English; the other languages follow with the next translation round).
+  search engines follow them. The home safety guide is called by its own title, "Don't poison your family", in the
+  guides list, the "More guides" block and its page title too (the owner's choice, in every language: each language's
+  own title for the guide).
 
 - **The recipe page's firing, less repeated and shorter on a phone.** When the firing block has a
   cone, the limits panel says "From the recipe's firing: Mid fire" as text, with "Choose another"
@@ -1147,6 +1150,15 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Fixed
 
+- **Hindi and French messages written for exactly one stay so**: their `one` plural form takes 0 as well as 1, so
+  the six messages whose English means a single thing ("your passkey", "your access token", "it") now give that text
+  for 1 only (`=1`), and a count of 0 reads as the plural. A server test keeps every such message so in each language
+  whose `one` takes 0.
+- **Vanadium oxide's H361fd reads as the GHS words it stands for**: "suspected of damaging fertility or the unborn
+  child", where the library said only "fertility and unborn child". Every language has its official wording: the
+  CLP's Annex III (H361) in the EU's languages (Estonian and Latvian keep H361fd's own two sentences, as their style
+  sheets ask), JIS Z 7253 in Japanese, Oman's 2024 GHS guide in Arabic, and the forms the national GHS texts and safety
+  data sheets use in the others.
 - **Two ways round the consent page for AI apps closed** (docs/adr/0024-authorization-server.md, "An
   outside report"). An app may no longer send its answer to this site's own addresses, where the page
   would have named glazecalcapp.com as the place the answer goes. And Allow takes a click only once the

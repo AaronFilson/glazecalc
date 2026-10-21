@@ -27,7 +27,7 @@
       "text": "Stof, adembescherming, schoonmaken, de grondstoffen die de meeste zorg vragen, en de afzuiging van de oven."
     },
     "homeSafety": {
-      "title": "Veilig glazuren thuis: kinderen, huisdieren en de oven",
+      "title": "Vergiftig uw gezin niet",
       "text": "Pottenbakken thuis, met kinderen en huisdieren: opbergen, stof, de oven, en wat u doet als er iets is ingeslikt."
     },
     "firing": {
@@ -43,7 +43,7 @@
   "contents": "Op deze pagina",
   "poison": {
     "numbersFor": "Nummers voor",
-    "choose": "Kies uw land",
+    "choose": "Kies uw land of regio",
     "label": "Wie u kunt bellen: {region}",
     "caption": "Wie u kunt bellen: {region} (nummers gecontroleerd op {date})",
     "for": "Waarvoor",
@@ -61,7 +61,7 @@
     "animalsNone": "Dieren",
     "vet": "Bel uw dierenarts.",
     "checkedOn": "Gecontroleerd aan de hand van:",
-    "choosePrompt": "Kies uw land om te zien wie u daar kunt bellen.",
+    "choosePrompt": "Kies uw land of regio om te zien wie u daar kunt bellen.",
     "ministry": "De pagina van het ministerie van Volksgezondheid: <link>{name}</link>."
   },
   "density": {
@@ -89,7 +89,7 @@
     },
     "none": "{region}: we hebben er geen leverancier gevonden die glazuurgrondstoffen verkoopt.",
     "unknown": "{region}: we hebben daar nog niet naar leveranciers gezocht.",
-    "choosePrompt": "Kies uw land om de leveranciers daar te zien."
+    "choosePrompt": "Kies uw land of regio om de leveranciers daar te zien."
   },
   "silica": {
     "limitIn": "Grenswaarde in",
@@ -135,7 +135,7 @@
     "noData": "{region}: we hebben de grenswaarde daar nog niet bevestigd.",
     "agency": "De nationale instantie voor veiligheid op het werk: <link>{name}</link>.",
     "agencySilica": "De <link>pagina over silica</link> van die instantie.",
-    "choosePrompt": "Kies uw land om de grenswaarde daar te zien."
+    "choosePrompt": "Kies uw land of regio om de grenswaarde daar te zien."
   },
   "food": {
     "rulesIn": "Regels in",
@@ -211,7 +211,7 @@
     "unknown": "{region}: we hebben de regels daar nog niet bevestigd.",
     "none": "{region}: er is geen wet die grenswaarden vastlegt voor het lood en cadmium dat een gebakken stuk mag afgeven (gecontroleerd op {date}).",
     "noneSource": "Bron: <link>{law}</link>.",
-    "choosePrompt": "Kies uw land om de regels daar te zien."
+    "choosePrompt": "Kies uw land of regio om de regels daar te zien."
   },
   "equivalents": {
     "buyingIn": "Inkopen in",
@@ -224,6 +224,6 @@
     "noneClose": "Niets binnen 15 g per 100 g: vergelijk op basis van de chemische samenstelling.",
     "loading": "De bibliotheek wordt geladen…",
     "failed": "De bibliotheek kon niet worden geladen. Probeer het later opnieuw.",
-    "choosePrompt": "Kies uw land om te zien wat daar verkrijgbaar is."
+    "choosePrompt": "Kies uw land of regio om te zien wat daar verkrijgbaar is."
   }
 }

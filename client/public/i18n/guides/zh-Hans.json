@@ -27,7 +27,7 @@
       "text": "粉尘、防颗粒物呼吸器、清洁、最需要小心的原料，以及给窑排风。"
     },
     "homeSafety": {
-      "title": "家中釉料安全：儿童、宠物和窑",
+      "title": "别让家人中毒",
       "text": "家中有儿童和宠物时做陶艺：储存、粉尘、窑，以及有东西被吞下时该怎么办。"
     },
     "firing": {
@@ -43,7 +43,7 @@
   "contents": "本页内容",
   "poison": {
     "numbersFor": "查看电话号码的国家/地区：",
-    "choose": "选择您所在的国家",
+    "choose": "选择您所在的国家或地区",
     "label": "在{region}应拨打的电话",
     "caption": "在{region}应拨打的电话（号码核实于{date}）",
     "for": "情况",
@@ -61,7 +61,7 @@
     "animalsNone": "动物",
     "vet": "请致电您的兽医。",
     "checkedOn": "核实来源：",
-    "choosePrompt": "选择您所在的国家，查看当地应拨打的电话。",
+    "choosePrompt": "选择您所在的国家或地区，查看当地应拨打的电话。",
     "ministry": "卫生部门的页面：<link>{name}</link>。"
   },
   "density": {
@@ -89,7 +89,7 @@
     },
     "none": "我们没有找到在{region}销售釉用原料的商店。",
     "unknown": "我们还没有查找{region}的商店。",
-    "choosePrompt": "选择您所在的国家，查看当地的商店。"
+    "choosePrompt": "选择您所在的国家或地区，查看当地的商店。"
   },
   "silica": {
     "limitIn": "查看限值的国家/地区：",
@@ -135,7 +135,7 @@
     "noData": "我们还没有确认{region}的限值。",
     "agency": "国家职业安全主管机构：<link>{name}</link>。",
     "agencySilica": "其<link>关于二氧化硅的页面</link>。",
-    "choosePrompt": "选择您所在的国家，查看其限值。"
+    "choosePrompt": "选择您所在的国家或地区，查看其限值。"
   },
   "food": {
     "rulesIn": "查看规定的国家/地区：",
@@ -211,7 +211,7 @@
     "unknown": "我们还没有确认{region}的规定。",
     "none": "{region}没有法律规定烧成后的器物可溶出的铅和镉的限值（核实于{date}）。",
     "noneSource": "来源：<link>{law}</link>。",
-    "choosePrompt": "选择您所在的国家，查看其规定。"
+    "choosePrompt": "选择您所在的国家或地区，查看其规定。"
   },
   "equivalents": {
     "buyingIn": "购买国家/地区：",
@@ -224,6 +224,6 @@
     "noneClose": "没有每 100 g 相差在 15 g 以内的原料：请按化学组成比较。",
     "loading": "正在加载原料库……",
     "failed": "无法加载原料库。请稍后再试。",
-    "choosePrompt": "选择您所在的国家，查看当地销售的原料。"
+    "choosePrompt": "选择您所在的国家或地区，查看当地销售的原料。"
   }
 }

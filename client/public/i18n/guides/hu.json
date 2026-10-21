@@ -27,7 +27,7 @@
       "text": "Por, légzésvédők, takarítás, a legtöbb óvatosságot kívánó nyersanyagok és a kemence szellőztetése."
     },
     "homeSafety": {
-      "title": "Mázbiztonság otthon: gyerekek, háziállatok és a kemence",
+      "title": "Ne mérgezze meg a családját",
       "text": "Fazekasság otthon, gyerekek és háziállatok mellett: tárolás, por, a kemence, és mi a teendő, ha valaki lenyel valamit."
     },
     "firing": {
@@ -43,7 +43,7 @@
   "contents": "Ezen az oldalon",
   "poison": {
     "numbersFor": "Telefonszámok itt:",
-    "choose": "Válassza ki az országát",
+    "choose": "Válassza ki az országát vagy régióját",
     "label": "Kit hívjon – {region}",
     "caption": "Kit hívjon – {region} (a számok ellenőrzése: {date})",
     "for": "Mire",
@@ -61,7 +61,7 @@
     "animalsNone": "Állatok",
     "vet": "Hívja az állatorvosát.",
     "checkedOn": "Ellenőrizve itt:",
-    "choosePrompt": "Válassza ki az országát, hogy lássa, kit hívjon ott.",
+    "choosePrompt": "Válassza ki az országát vagy régióját, hogy lássa, kit hívjon ott.",
     "ministry": "Az egészségügyi minisztérium oldala: <link>{name}</link>."
   },
   "density": {
@@ -89,7 +89,7 @@
     },
     "none": "{region}: nem találtunk máznyersanyagot árusító boltot.",
     "unknown": "{region}: még nem kerestünk boltokat.",
-    "choosePrompt": "Válassza ki az országát, hogy lássa az ottani boltokat."
+    "choosePrompt": "Válassza ki az országát vagy régióját, hogy lássa az ottani boltokat."
   },
   "silica": {
     "limitIn": "Határérték itt:",
@@ -135,7 +135,7 @@
     "noData": "{region}: a határértéket még nem erősítettük meg.",
     "agency": "A munkavédelemért felelős országos szerv: <link>{name}</link>.",
     "agencySilica": "A szerv <link>oldala a szilícium-dioxidról</link>.",
-    "choosePrompt": "Válassza ki az országát, hogy lássa az ottani határértéket."
+    "choosePrompt": "Válassza ki az országát vagy régióját, hogy lássa az ottani határértéket."
   },
   "food": {
     "rulesIn": "Szabályok itt:",
@@ -211,7 +211,7 @@
     "unknown": "{region}: a szabályokat még nem erősítettük meg.",
     "none": "{region}: nincs olyan jogszabály, amely határértéket szabna arra, mennyi ólom és kadmium oldódhat ki egy kiégetett darabból (ellenőrizve: {date}).",
     "noneSource": "Forrás: <link>{law}</link>.",
-    "choosePrompt": "Válassza ki az országát, hogy lássa az ottani szabályokat."
+    "choosePrompt": "Válassza ki az országát vagy régióját, hogy lássa az ottani szabályokat."
   },
   "equivalents": {
     "buyingIn": "Vásárlás itt:",
@@ -224,6 +224,6 @@
     "noneClose": "Nincs olyan, amely 100 g-onként legfeljebb 15 g-mal térne el: hasonlítsa össze a kémiai összetételt.",
     "loading": "A könyvtár betöltése…",
     "failed": "A könyvtárat nem sikerült betölteni. Próbálja újra később.",
-    "choosePrompt": "Válassza ki az országát, hogy lássa, mi kapható ott."
+    "choosePrompt": "Válassza ki az országát vagy régióját, hogy lássa, mi kapható ott."
   }
 }

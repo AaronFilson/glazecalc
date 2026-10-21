@@ -363,7 +363,7 @@
     "heading": "Dangers",
     "intro": "Tels que les donne l’enregistrement de chaque matière ; ceux de la bibliothèque standard viennent des fiches de données de sécurité des fournisseurs.",
     "line": "<b>{names} :</b> {hazards}",
-    "unknown": "{count, plural, one {Aucun danger n’est indiqué pour {list} : consultez la fiche de données de sécurité qui l’accompagne.} many {Aucun danger n’est indiqué pour {list} : consultez les fiches de données de sécurité qui les accompagnent.} other {Aucun danger n’est indiqué pour {list} : consultez les fiches de données de sécurité qui les accompagnent.}}",
+    "unknown": "{count, plural, =1 {Aucun danger n’est indiqué pour {list} : consultez la fiche de données de sécurité qui l’accompagne.} one {Aucun danger n’est indiqué pour {list} : consultez les fiches de données de sécurité qui les accompagnent.} many {Aucun danger n’est indiqué pour {list} : consultez les fiches de données de sécurité qui les accompagnent.} other {Aucun danger n’est indiqué pour {list} : consultez les fiches de données de sécurité qui les accompagnent.}}",
     "safety": "Les matières d’émail sèches produisent de la poussière, et vous devez la garder hors de vos poumons, même celle des matières non classées dangereuses. Voir <mixing>Préparation en sécurité et ventilation</mixing>. Si des enfants ou des animaux de compagnie sont présents, voir aussi <home>N’empoisonnez pas votre famille</home>. Quand la fiche de données de sécurité d’une matière en dit plus, suivez-la."
   },
   "compare": {
@@ -711,7 +711,7 @@
     "gettingLibrary": "Chargement des matières…",
     "previewHeading": "Vérifier ce qui a été lu",
     "tooLong": "{reason, select, lines {Il y a plus de {lines, number} lignes.} other {Il y a {chars, number} caractères ou plus.}} Rien n’a été lu. Collez moins de recettes à la fois.",
-    "ambiguous": "{count, plural, one {Un nombre de ce texte peut se lire de deux façons, par exemple « {example} » : {decimal, number} ou {group, number}. Choisissez comment le lire ; relire remplace les lignes ci-dessous.} many {Des nombres de ce texte peuvent se lire de deux façons, par exemple « {example} » : {decimal, number} ou {group, number}. Choisissez comment les lire ; relire remplace les lignes ci-dessous.} other {Des nombres de ce texte peuvent se lire de deux façons, par exemple « {example} » : {decimal, number} ou {group, number}. Choisissez comment les lire ; relire remplace les lignes ci-dessous.}}",
+    "ambiguous": "{count, plural, =1 {Un nombre de ce texte peut se lire de deux façons, par exemple « {example} » : {decimal, number} ou {group, number}. Choisissez comment le lire ; relire remplace les lignes ci-dessous.} one {Des nombres de ce texte peuvent se lire de deux façons, par exemple « {example} » : {decimal, number} ou {group, number}. Choisissez comment les lire ; relire remplace les lignes ci-dessous.} many {Des nombres de ce texte peuvent se lire de deux façons, par exemple « {example} » : {decimal, number} ou {group, number}. Choisissez comment les lire ; relire remplace les lignes ci-dessous.} other {Des nombres de ce texte peuvent se lire de deux façons, par exemple « {example} » : {decimal, number} ou {group, number}. Choisissez comment les lire ; relire remplace les lignes ci-dessous.}}",
     "readAsDecimal": "Lire {example} comme {value, number}",
     "readAsGroup": "Lire {example} comme {value, number}",
     "tooMany": "Seules les {max} premières recettes sont affichées. Collez le reste une fois celles-ci enregistrées.",

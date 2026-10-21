@@ -27,7 +27,7 @@
       "text": "Debu, respirator, pembersihan, bahan yang memerlukan kehati-hatian paling besar, dan ventilasi tungku."
     },
     "homeSafety": {
-      "title": "Keamanan glasir di rumah: anak, hewan peliharaan, dan tungku",
+      "title": "Jangan meracuni keluarga Anda",
       "text": "Membuat keramik di rumah bersama anak dan hewan peliharaan: penyimpanan, debu, tungku, dan apa yang harus dilakukan jika ada yang tertelan."
     },
     "firing": {
@@ -43,7 +43,7 @@
   "contents": "Di halaman ini",
   "poison": {
     "numbersFor": "Nomor untuk",
-    "choose": "Pilih negara Anda",
+    "choose": "Pilih negara atau wilayah Anda",
     "label": "Siapa yang dihubungi di {region}",
     "caption": "Siapa yang dihubungi di {region} (nomor diperiksa {date})",
     "for": "Untuk",
@@ -61,7 +61,7 @@
     "animalsNone": "Hewan",
     "vet": "Hubungi dokter hewan Anda.",
     "checkedOn": "Diperiksa pada:",
-    "choosePrompt": "Pilih negara Anda untuk melihat siapa yang dihubungi di sana.",
+    "choosePrompt": "Pilih negara atau wilayah Anda untuk melihat siapa yang dihubungi di sana.",
     "ministry": "Halaman kementerian kesehatan: <link>{name}</link>."
   },
   "density": {
@@ -89,7 +89,7 @@
     },
     "none": "Kami tidak menemukan toko yang menjual bahan baku glasir di {region}.",
     "unknown": "Kami belum mencari toko di {region}.",
-    "choosePrompt": "Pilih negara Anda untuk melihat toko di sana."
+    "choosePrompt": "Pilih negara atau wilayah Anda untuk melihat toko di sana."
   },
   "silica": {
     "limitIn": "Batas di",
@@ -135,7 +135,7 @@
     "noData": "Kami belum memastikan batas di {region}.",
     "agency": "Lembaga nasional keselamatan kerja: <link>{name}</link>.",
     "agencySilica": "<link>Halaman tentang silika</link> dari lembaga itu.",
-    "choosePrompt": "Pilih negara Anda untuk melihat batasnya."
+    "choosePrompt": "Pilih negara atau wilayah Anda untuk melihat batasnya."
   },
   "food": {
     "rulesIn": "Aturan di",
@@ -211,7 +211,7 @@
     "unknown": "Kami belum memastikan aturan di {region}.",
     "none": "Tidak ada hukum di {region} yang menetapkan batas untuk timbal dan kadmium yang boleh dilepaskan oleh benda yang sudah dibakar (diperiksa {date}).",
     "noneSource": "Sumber: <link>{law}</link>.",
-    "choosePrompt": "Pilih negara Anda untuk melihat aturannya."
+    "choosePrompt": "Pilih negara atau wilayah Anda untuk melihat aturannya."
   },
   "equivalents": {
     "buyingIn": "Membeli di",
@@ -224,6 +224,6 @@
     "noneClose": "Tidak ada dalam selisih 15 g per 100 g: bandingkan menurut kimianya.",
     "loading": "Memuat pustaka…",
     "failed": "Pustaka tidak dapat dimuat. Coba lagi nanti.",
-    "choosePrompt": "Pilih negara Anda untuk melihat apa yang dijual di sana."
+    "choosePrompt": "Pilih negara atau wilayah Anda untuk melihat apa yang dijual di sana."
   }
 }

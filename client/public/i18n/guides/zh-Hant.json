@@ -27,7 +27,7 @@
       "text": "粉塵、呼吸防護具、清潔、最需要小心的原料，以及窯的排氣。"
     },
     "homeSafety": {
-      "title": "居家釉藥安全：兒童、寵物與窯",
+      "title": "別讓家人中毒",
       "text": "在有兒童和寵物的家中做陶：保存、粉塵、窯，以及誤吞東西時該怎麼辦。"
     },
     "firing": {
@@ -43,7 +43,7 @@
   "contents": "本頁內容",
   "poison": {
     "numbersFor": "查看電話號碼的國家/地區：",
-    "choose": "選擇您的國家",
+    "choose": "選擇您的國家或地區",
     "label": "{region}的求助電話",
     "caption": "{region}的求助電話（號碼確認日期：{date}）",
     "for": "用途",
@@ -61,7 +61,7 @@
     "animalsNone": "動物",
     "vet": "請打給您的獸醫。",
     "checkedOn": "查核來源：",
-    "choosePrompt": "選擇您的國家，即可查看當地的求助電話。",
+    "choosePrompt": "選擇您的國家或地區，即可查看當地的求助電話。",
     "ministry": "衛生主管機關的網頁：<link>{name}</link>。"
   },
   "density": {
@@ -89,7 +89,7 @@
     },
     "none": "我們找不到在{region}販售釉藥原料的商店。",
     "unknown": "我們還沒有查找{region}的商店。",
-    "choosePrompt": "選擇您的國家，即可查看當地的商店。"
+    "choosePrompt": "選擇您的國家或地區，即可查看當地的商店。"
   },
   "silica": {
     "limitIn": "查看限值的國家/地區：",
@@ -135,7 +135,7 @@
     "noData": "我們尚未確認{region}的限值。",
     "agency": "國家職業安全衛生主管機關：<link>{name}</link>。",
     "agencySilica": "該機關的<link>二氧化矽專頁</link>。",
-    "choosePrompt": "選擇您的國家，即可查看當地的限值。"
+    "choosePrompt": "選擇您的國家或地區，即可查看當地的限值。"
   },
   "food": {
     "rulesIn": "查看法規的國家/地區：",
@@ -211,7 +211,7 @@
     "unknown": "我們尚未確認{region}的規定。",
     "none": "{region}沒有法律規定燒成後的器物可溶出的鉛與鎘的限值（確認日期：{date}）。",
     "noneSource": "來源：<link>{law}</link>。",
-    "choosePrompt": "選擇您的國家，即可查看當地的規定。"
+    "choosePrompt": "選擇您的國家或地區，即可查看當地的規定。"
   },
   "equivalents": {
     "buyingIn": "購買國家/地區：",
@@ -224,6 +224,6 @@
     "noneClose": "沒有每 100 g 相差 15 g 以內的原料：請比較化學組成。",
     "loading": "正在載入原料庫…",
     "failed": "無法載入原料庫。請稍後再試。",
-    "choosePrompt": "選擇您的國家，即可查看當地販售的原料。"
+    "choosePrompt": "選擇您的國家或地區，即可查看當地販售的原料。"
   }
 }

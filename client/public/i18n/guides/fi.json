@@ -27,7 +27,7 @@
       "text": "Pöly, hengityksensuojaimet, siivous, eniten varovaisuutta vaativat raaka-aineet ja uunin tuulettaminen."
     },
     "homeSafety": {
-      "title": "Lasiteturvallisuus kotona: lapset, lemmikit ja uuni",
+      "title": "Älä myrkytä perhettäsi",
       "text": "Keramiikka kotona lasten ja lemmikkien kanssa: säilytys, pöly, uuni ja mitä tehdä, jos jotain on nielty."
     },
     "firing": {
@@ -43,7 +43,7 @@
   "contents": "Tällä sivulla",
   "poison": {
     "numbersFor": "Numerot:",
-    "choose": "Valitse maa",
+    "choose": "Valitse maa tai alue",
     "label": "Minne soittaa: {region}",
     "caption": "Minne soittaa: {region} (numerot tarkistettu {date})",
     "for": "Tilanne",
@@ -61,7 +61,7 @@
     "animalsNone": "Eläimet",
     "vet": "Soita eläinlääkärille.",
     "checkedOn": "Tarkistettu sivuilta:",
-    "choosePrompt": "Valitse maa, niin sivulla näkyy, minne siellä soitetaan.",
+    "choosePrompt": "Valitse maa tai alue, niin sivulla näkyy, minne siellä soitetaan.",
     "ministry": "Terveysministeriön sivu: <link>{name}</link>."
   },
   "density": {
@@ -89,7 +89,7 @@
     },
     "none": "{region}: yhtään lasiteraaka-aineita myyvää kauppaa ei löytynyt.",
     "unknown": "{region}: kauppoja ei ole vielä etsitty.",
-    "choosePrompt": "Valitse maa, niin sivulla näkyvät sen kaupat."
+    "choosePrompt": "Valitse maa tai alue, niin sivulla näkyvät sen kaupat."
   },
   "silica": {
     "limitIn": "Raja-arvo:",
@@ -135,7 +135,7 @@
     "noData": "{region}: raja-arvoa ei ole vielä vahvistettu.",
     "agency": "Kansallinen työturvallisuudesta vastaava taho: <link>{name}</link>.",
     "agencySilica": "Sen <link>sivu piidioksidista</link>.",
-    "choosePrompt": "Valitse maa, niin sivulla näkyy sen raja-arvo."
+    "choosePrompt": "Valitse maa tai alue, niin sivulla näkyy sen raja-arvo."
   },
   "food": {
     "rulesIn": "Säännöt:",
@@ -211,7 +211,7 @@
     "unknown": "{region}: sääntöjä ei ole vielä vahvistettu.",
     "none": "{region}: ei ole lakia, joka asettaisi raja-arvot lyijylle ja kadmiumille, joita poltetusta esineestä saa siirtyä (tarkistettu {date}).",
     "noneSource": "Lähde: <link>{law}</link>.",
-    "choosePrompt": "Valitse maa, niin sivulla näkyvät sen säännöt."
+    "choosePrompt": "Valitse maa tai alue, niin sivulla näkyvät sen säännöt."
   },
   "equivalents": {
     "buyingIn": "Ostopaikka:",
@@ -224,6 +224,6 @@
     "noneClose": "Ei vastinetta, joka eroaisi enintään 15 g/100 g: vertaa kemiallista koostumusta.",
     "loading": "Ladataan kirjastoa…",
     "failed": "Kirjastoa ei voitu ladata. Yritä myöhemmin uudelleen.",
-    "choosePrompt": "Valitse maa, niin sivulla näkyy, mitä siellä myydään."
+    "choosePrompt": "Valitse maa tai alue, niin sivulla näkyy, mitä siellä myydään."
   }
 }

@@ -27,7 +27,7 @@
       "text": "Staub, Atemschutzmasken, Reinigung, die Rohstoffe, die am meisten Vorsicht verlangen, und das Entlüften des Ofens."
     },
     "homeSafety": {
-      "title": "Glasursicherheit zu Hause: Kinder, Haustiere und der Ofen",
+      "title": "Vergiften Sie Ihre Familie nicht",
       "text": "Töpfern zu Hause mit Kindern und Haustieren: Aufbewahrung, Staub, der Ofen und was zu tun ist, wenn etwas verschluckt wurde."
     },
     "firing": {
@@ -43,7 +43,7 @@
   "contents": "Auf dieser Seite",
   "poison": {
     "numbersFor": "Nummern für",
-    "choose": "Land auswählen",
+    "choose": "Land oder Region auswählen",
     "label": "Wen Sie anrufen: {region}",
     "caption": "Wen Sie anrufen: {region} (Nummern geprüft am {date})",
     "for": "Wofür",
@@ -61,7 +61,7 @@
     "animalsNone": "Tiere",
     "vet": "Rufen Sie Ihre Tierarztpraxis an.",
     "checkedOn": "Geprüft anhand von:",
-    "choosePrompt": "Wählen Sie Ihr Land, um zu sehen, wen Sie dort anrufen.",
+    "choosePrompt": "Wählen Sie Ihr Land oder Ihre Region, um zu sehen, wen Sie dort anrufen.",
     "ministry": "Die Seite des Gesundheitsministeriums: <link>{name}</link>."
   },
   "density": {
@@ -89,7 +89,7 @@
     },
     "none": "{region}: Wir haben dort keinen Händler gefunden, der Glasurrohstoffe verkauft.",
     "unknown": "{region}: Dort haben wir noch nicht nach Händlern gesucht.",
-    "choosePrompt": "Wählen Sie Ihr Land, um die Händler dort zu sehen."
+    "choosePrompt": "Wählen Sie Ihr Land oder Ihre Region, um die Händler dort zu sehen."
   },
   "silica": {
     "limitIn": "Grenzwert in",
@@ -135,7 +135,7 @@
     "noData": "{region}: Den dortigen Grenzwert haben wir noch nicht bestätigt.",
     "agency": "Die nationale Stelle für Arbeitsschutz: <link>{name}</link>.",
     "agencySilica": "Deren <link>Seite zu Quarzstaub</link>.",
-    "choosePrompt": "Wählen Sie Ihr Land, um den dortigen Grenzwert zu sehen."
+    "choosePrompt": "Wählen Sie Ihr Land oder Ihre Region, um den dortigen Grenzwert zu sehen."
   },
   "food": {
     "rulesIn": "Vorschriften in",
@@ -211,7 +211,7 @@
     "unknown": "{region}: Die dortigen Vorschriften haben wir noch nicht bestätigt.",
     "none": "{region}: Es gibt kein Gesetz, das Grenzwerte dafür festlegt, wie viel Blei und Cadmium ein gebranntes Stück abgeben darf (geprüft am {date}).",
     "noneSource": "Quelle: <link>{law}</link>.",
-    "choosePrompt": "Wählen Sie Ihr Land, um die dortigen Vorschriften zu sehen."
+    "choosePrompt": "Wählen Sie Ihr Land oder Ihre Region, um die dortigen Vorschriften zu sehen."
   },
   "equivalents": {
     "buyingIn": "Einkauf in",
@@ -224,6 +224,6 @@
     "noneClose": "Nichts innerhalb von 15 g je 100 g: Vergleichen Sie anhand der Chemie.",
     "loading": "Die Bibliothek wird geladen …",
     "failed": "Die Bibliothek konnte nicht geladen werden. Versuchen Sie es später erneut.",
-    "choosePrompt": "Wählen Sie Ihr Land, um zu sehen, was dort erhältlich ist."
+    "choosePrompt": "Wählen Sie Ihr Land oder Ihre Region, um zu sehen, was dort erhältlich ist."
   }
 }
