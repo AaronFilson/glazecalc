@@ -250,7 +250,7 @@ Předpisy v USA, EU, Velké Británii a Austrálii omezují množství olova a k
 
 **Mezní vzorce**{{en: limit formulas}} (Digitalfire dává přednost názvu **cílové vzorce**{{en: target formulas}}) udávají typická rozmezí Segerova vzorce pro stabilní glazury při dané žároměrce{{en: cone}}: cílové hodnoty Digitalfire pro žároměrku 6 uvádějí oxid hlinitý 0,285–0,64 a oxid křemičitý 2,4–4,7. Vedou vás ke správné chemii, ale nic nedokazují; Digitalfire se slovu „limit“ (mez) vyhýbá, protože to slovo naznačuje, že glazury v těchto rozmezích jsou „nějakým způsobem bezpečné“. Nástroje aplikace Glazecalc pro úpravu receptu upozorní, když nový recept překročí doporučenou mez, například při velkém množství boru u žároměrky 6, a uvedou, jak se glazura pravděpodobně zachová.
 
-Zákonné limity se v jednotlivých zemích liší. Tabulka ukazuje limity tam, kde žijete, v jednotkách daného předpisu; pro srovnání vyberte jinou zemi.
+Zákonné limity se v jednotlivých zemích liší. Tabulka ukazuje limity tam, kde žijete, v jednotkách daného předpisu; pro srovnání vyberte jinou zemi nebo region.
 
 ::food-limits
 

@@ -250,7 +250,7 @@ Lo **smalto interno**{{en: liner glaze}} è uno smalto stabile, di solito traspa
 
 Le **formule limite**{{en: limit formulas}} (Digitalfire preferisce **formule obiettivo**, _target formulas_) danno gli intervalli tipici della formula di Seger (UMF) per gli smalti stabili a un dato cono: i valori obiettivo di Digitalfire per il cono 6 mettono l’allumina a 0,285–0,64 e la silice a 2,4–4,7. Orientano verso una chimica corretta ma non provano nulla; Digitalfire evita la parola «limite» perché fa pensare che gli smalti entro gli intervalli «siano in qualche modo sicuri». Gli strumenti di Glazecalc per modificare una ricetta segnalano quando la nuova supera un limite consigliato, per esempio molto boro a cono 6, e che cosa probabilmente farà lo smalto.
 
-I limiti di legge cambiano da un paese all’altro. La tabella mostra quelli del proprio paese, nelle unità usate dalla norma stessa; scegliere un altro paese per fare un confronto.
+I limiti di legge cambiano da un paese all’altro. La tabella mostra quelli del proprio paese, nelle unità usate dalla norma stessa; scegliere un altro paese o un’altra area per fare un confronto.
 
 ::food-limits
 

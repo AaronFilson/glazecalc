@@ -250,7 +250,7 @@ Is éard is **glónra líneála**{{en: liner glaze}} ann glónra cobhsaí, glé 
 
 Tugann **foirmlí teorann**{{en: limit formulas}} (is fearr le Digitalfire **spriocfhoirmlí**{{en: target formulas}}) raonta tipiciúla foirmle Seger{{en: unity molecular formula}} do ghlónraí cobhsaí ag cón{{en: cone}} áirithe: cuireann spriocanna Digitalfire do chón 6 an t-alúmana ag 0.285–0.64 agus an tsilice{{en: silica}} ag 2.4–4.7. Treoraíonn siad i dtreo ceimice fónta thú ach ní chruthaíonn siad aon rud; seachnaíonn Digitalfire an focal “limit” (teorainn) mar go dtugann sé le tuiscint go bhfuil glónraí laistigh de na raonta “sábháilte ar bhealach éigin”. Insíonn uirlisí na haipe Glazecalc chun oideas a athrú duit nuair a théann an t-oideas nua thar theorainn mholta, mar shampla mórán bóróin ag cón 6, agus cad is dócha a dhéanfaidh an glónra.
 
-Ní hionann na teorainneacha dlíthiúla ó thír go tír. Taispeánann an tábla na teorainneacha san áit a bhfuil cónaí ort, in aonaid an dlí féin; roghnaigh tír eile chun comparáid a dhéanamh.
+Ní hionann na teorainneacha dlíthiúla ó thír go tír. Taispeánann an tábla na teorainneacha san áit a bhfuil cónaí ort, in aonaid an dlí féin; roghnaigh tír nó réigiún eile chun comparáid a dhéanamh.
 
 ::food-limits
 

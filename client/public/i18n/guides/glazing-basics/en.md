@@ -250,7 +250,7 @@ A **liner glaze** is a stable, usually clear or white glaze for surfaces that to
 
 **Limit formulas** (Digitalfire prefers **target formulas**) give typical unity-formula ranges for stable glazes at a cone: Digitalfire's cone 6 targets put alumina at 0.285–0.64 and silica at 2.4–4.7. They guide you toward sound chemistry but prove nothing; Digitalfire avoids the word "limit" because it suggests glazes inside the ranges "are somehow safe". Glazecalc's tools for changing a recipe say when the new one goes past a recommended limit, such as a lot of boron at cone 6, and what the glaze will likely do.
 
-The legal limits differ by country. The table shows those where you live, in the law's own units; choose another country to compare.
+The legal limits differ by country. The table shows those where you live, in the law's own units; choose another country or region to compare.
 
 ::food-limits
 

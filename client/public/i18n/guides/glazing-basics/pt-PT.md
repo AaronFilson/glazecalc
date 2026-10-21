@@ -250,7 +250,7 @@ Um **vidrado de interior**{{en: liner glaze}} é um vidrado estável, normalment
 
 As **fórmulas-limite**{{en: limit formulas}} (o Digitalfire prefere **fórmulas de referência**{{en: target formulas}}) dão gamas típicas da fórmula de Seger (UMF){{en: unity formula}} para vidrados estáveis num dado cone: os valores de referência do Digitalfire para o cone 6 põem a alumina em 0,285–0,64 e a sílica{{en: silica}} em 2,4–4,7. Orientam para uma química sólida, mas não provam nada; o Digitalfire evita a palavra «limite» porque sugere que os vidrados dentro das gamas «são de alguma forma seguros». As ferramentas do Glazecalc para alterar uma receita avisam quando a nova receita ultrapassa um limite recomendado, como muito boro no cone 6, e dizem o que o vidrado provavelmente fará.
 
-Os limites legais variam de país para país. A tabela mostra os do país onde vive, nas unidades da própria lei; escolha outro país para comparar.
+Os limites legais variam de país para país. A tabela mostra os do país onde vive, nas unidades da própria lei; escolha outro país ou região para comparar.
 
 ::food-limits
 

@@ -250,7 +250,7 @@ En **insidesglasyr**{{en: liner glaze}} är en stabil, oftast transparent eller 
 
 **Gränsformler**{{en: limit formulas}} (Digitalfire föredrar **målformler**{{en: target formulas}}) anger typiska intervall i Segerformeln för stabila glasyrer vid en viss kägla: Digitalfires målvärden för kägla 6 sätter aluminiumoxid till 0,285–0,64 och kiseldioxid till 2,4–4,7. De vägleder mot en sund kemi men bevisar ingenting; Digitalfire undviker ordet ”limit” (gräns) eftersom det antyder att glasyrer inom intervallen ”på något sätt är säkra”. Verktygen i Glazecalc för att ändra ett recept säger till när det nya receptet går över en rekommenderad gräns, till exempel mycket bor vid kägla 6, och vad glasyren troligen kommer att göra.
 
-De lagstadgade gränsvärdena skiljer sig mellan länder. Tabellen visar det egna landets gränsvärden, i de enheter som lagen själv använder; välj ett annat land för att jämföra.
+De lagstadgade gränsvärdena skiljer sig mellan länder. Tabellen visar det egna landets gränsvärden, i de enheter som lagen själv använder; välj ett annat land eller en annan region för att jämföra.
 
 ::food-limits
 

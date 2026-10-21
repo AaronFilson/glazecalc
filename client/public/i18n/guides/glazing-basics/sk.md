@@ -250,7 +250,7 @@ Predpisy v USA, EÚ, Spojenom kráľovstve a Austrálii obmedzujú množstvo olo
 
 **Hraničné vzorce**{{en: limit formulas}} (Digitalfire uprednostňuje názov **cieľové vzorce**{{en: target formulas}}) udávajú typické rozsahy Segerovho vzorca{{en: unity formula}} pre stabilné glazúry pri danom kuželi{{en: cone}}: v cieľových hodnotách Digitalfire pre kužeľ 6 je oxid hlinitý 0,285 – 0,64 a oxid kremičitý 2,4 – 4,7. Vedú vás k správnemu chemickému zloženiu, ale nič nedokazujú; Digitalfire sa slovu „limit“ vyhýba, pretože naznačuje, že glazúry v týchto rozsahoch sú „nejakým spôsobom bezpečné“. Nástroje aplikácie Glazecalc na úpravu receptu upozornia, keď nový recept prekročí odporúčanú hranicu, napríklad pri veľkom množstve bóru pri kuželi 6, a povedia, čo glazúra pravdepodobne urobí.
 
-Zákonné limity sa v jednotlivých krajinách líšia. Tabuľka ukazuje limity platné tam, kde žijete, v jednotkách daného predpisu; na porovnanie si vyberte inú krajinu.
+Zákonné limity sa v jednotlivých krajinách líšia. Tabuľka ukazuje limity platné tam, kde žijete, v jednotkách daného predpisu; na porovnanie si vyberte inú krajinu alebo región.
 
 ::food-limits
 

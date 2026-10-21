@@ -250,7 +250,7 @@ ASV, ES, Apvienotās Karalistes un Austrālijas noteikumi ierobežo svina un kad
 
 **Robežformulas**{{en: limit formulas}} (Digitalfire dod priekšroku nosaukumam **mērķa formulas**{{en: target formulas}}) norāda tipiskās Zēgera formulas{{en: unity formula}} robežas stabilām glazūrām konkrētam konusam{{en: cone}}: Digitalfire mērķa vērtības konusam 6 nosaka alumīnija oksīdu 0,285–0,64 un silīcija dioksīdu 2,4–4,7. Tās palīdz virzīties uz pareizu ķīmisko sastāvu, bet neko nepierāda; Digitalfire izvairās no vārda “limit” (robeža), jo tas liek domāt, ka glazūras šajās robežās “ir kaut kādā veidā drošas”. Lietotnes Glazecalc rīki receptes mainīšanai norāda, kad jaunā recepte pārsniedz ieteicamo robežu, piemēram, ja apdedzināšanai līdz konusam 6 tajā ir daudz bora, un kā glazūra, visticamāk, uzvedīsies.
 
-Likumā noteiktās robežvērtības dažādās valstīs atšķiras. Tabulā redzamas jūsu valsts robežvērtības likumā lietotajās mērvienībās; lai salīdzinātu, izvēlieties citu valsti.
+Likumā noteiktās robežvērtības dažādās valstīs atšķiras. Tabulā redzamas jūsu valsts robežvērtības likumā lietotajās mērvienībās; lai salīdzinātu, izvēlieties citu valsti vai reģionu.
 
 ::food-limits
 

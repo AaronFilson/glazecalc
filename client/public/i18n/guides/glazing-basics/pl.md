@@ -250,7 +250,7 @@ Przepisy w USA, UE, Wielkiej Brytanii i Australii ograniczają ilość ołowiu i
 
 **Wzory graniczne**{{en: limit formulas}} (Digitalfire woli określenie **wzory docelowe**{{en: target formulas}}) podają typowe zakresy wzoru Segera{{en: unity formula}} dla stabilnych szkliw na dany stożek{{en: cone}}: według wzorów docelowych Digitalfire dla stożka 6 tlenek glinu powinien wynosić 0,285–0,64, a krzemionka{{en: silica}} 2,4–4,7. Wskazują kierunek ku poprawnej chemii, ale niczego nie dowodzą; Digitalfire unika słowa „granica”, bo sugeruje ono, że szkliwa mieszczące się w tych zakresach „są w jakiś sposób bezpieczne”. Narzędzia aplikacji Glazecalc do zmiany receptury informują, gdy nowa receptura przekracza zalecaną granicę, np. zawiera dużo boru przy stożku 6, i co szkliwo prawdopodobnie zrobi.
 
-Limity prawne różnią się w zależności od kraju. Tabela pokazuje te obowiązujące w kraju zamieszkania, w jednostkach, w jakich podają je same przepisy; dla porównania można wybrać inny kraj.
+Limity prawne różnią się w zależności od kraju. Tabela pokazuje te obowiązujące w kraju zamieszkania, w jednostkach, w jakich podają je same przepisy; dla porównania można wybrać inny kraj lub region.
 
 ::food-limits
 
