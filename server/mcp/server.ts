@@ -16,6 +16,7 @@ import { requestStateCodec } from './request_state.ts';
 import { ACCOUNT_TOOLS, registerAccountTools } from './tools/account.ts';
 import { registerWriteTools, WRITE_TOOLS } from './tools/account_write.ts';
 import { registerBlendTools } from './tools/blends.ts';
+import { registerCompanionTools } from './tools/companion.ts';
 import { registerGuides } from './tools/guides.ts';
 import { registerPublicTools } from './tools/public.ts';
 import { signInChallenge } from './urls.ts';
@@ -23,7 +24,7 @@ import { signInChallenge } from './urls.ts';
 export const SERVER_INFO = {
   name: 'glazecalc',
   title: 'Glazecalc',
-  version: '1.2.0',
+  version: '1.3.0',
   websiteUrl: 'https://glazecalcapp.com'
 } as const;
 
@@ -31,7 +32,8 @@ const INSTRUCTIONS =
   'Glazecalc works out ceramic glaze chemistry. Use search_materials to find material names, then analyze_recipe, ' +
   'check_limits, suggest_substitutes or match_from_materials with recipe lines; solve_target makes a recipe ' +
   'for a target unity formula or oxide analysis from given materials; blend_recipes works out the test ' +
-  'tiles of a line or triaxial blend between recipes, or compares two. Amounts can be in any unit the lines ' +
+  'tiles of a line or triaxial blend between recipes, or compares two; vary_material shows what one material does ' +
+  'to a base recipe across a range of amounts, and compare_recipes sets two recipes side by side. Amounts can be in any unit the lines ' +
   'share. The tools that fit amounts say how near the new recipe comes to the old (or the target), oxide by oxide ' +
   '(report.closeness): judge a match by that, not by its miss, which is the solver’s own score. ' +
   'The limit checks are cautions from published limits, not proof that a glaze is food safe: say so, and ' +
@@ -131,6 +133,7 @@ export const makeServer = (ctx: McpRequestContext): McpServer => {
   withSecuritySchemes(server);
   registerPublicTools(server, caller);
   registerBlendTools(server);
+  registerCompanionTools(server);
   registerGuides(server);
   registerPrompts(server);
   if (caller.userId) {
