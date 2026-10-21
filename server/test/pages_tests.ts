@@ -189,6 +189,29 @@ describe('pages in each language', () => {
     expect(languages.canonicalLanguagePath('/UR/recipe')).to.equal('/ur/recipe');
   });
 
+  it('offers Tamil, Marathi and Kannada, written for India, with the standard notice', () => {
+    for (const [code, name, english] of [
+      ['ta', 'தமிழ்', 'Tamil'],
+      ['mr', 'मराठी', 'Marathi'],
+      ['kn', 'ಕನ್ನಡ', 'Kannada']
+    ]) {
+      const language = languages.languageFor(code);
+      expect(language).to.include({ name, english, dir: 'ltr', live: true });
+      expect(language).not.to.have.property('plainNotice');
+      expect(language).not.to.have.property('base');
+      // Their pages show figures as the reader's settings format numbers; the text itself stays 0–9.
+      expect(language).not.to.have.property('textDigits');
+      expect(languages.LIVE_LANGUAGES).to.include(code);
+      const html = pageHtml(HTML, `/${code}/guides`, SITE);
+      expect(html).to.include(`<html lang="${code}" dir="ltr">`);
+      expect(html).not.to.include('<meta name="robots" content="noindex" />');
+      expect(html).to.include(`hreflang="${code}"`);
+      expect(sitemap(SITE)).to.include(`/${code}/`);
+      expect(languages.languageOfPath(`/${code}/recipe`)).to.equal(code);
+    }
+    expect(languages.canonicalLanguagePath('/KN/recipe')).to.equal('/kn/recipe');
+  });
+
   it("puts the language's title and description in, written safely", () => {
     const html = pageHtml(
       HTML,

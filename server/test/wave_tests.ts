@@ -28,8 +28,8 @@ describe('the translation process’s languages', () => {
           .to.be.an('array')
           .with.length.above(0);
       }
-      // A language of the app's, not offered yet but known.
-      expect(languages.languageFor(code), code).to.be.an('object');
+      // A language the app offers.
+      expect(languages.languageFor(code), code).to.include({ live: true });
     }
   });
 
