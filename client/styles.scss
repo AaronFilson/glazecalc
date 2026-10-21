@@ -105,11 +105,16 @@
 // a CJK font is megabytes (the report on East and Southeast Asia, "Fonts").
 // :lang(zh-Hans) is also zh-Hans-CN, and :lang(ja) the pseudo-locale ja-XC.
 //
-// Arabic, Urdu, Hindi and Bengali: the system's own font first, which every current device has (Windows'
-// Segoe UI and Nirmala UI, Android's and Linux's Noto, Apple's Geeza Pro and Kohinoor), so nothing is fetched.
+// Arabic, Urdu, Hindi and Bengali, and India's other languages (Tamil, Marathi, Kannada; then Telugu,
+// Malayalam, Gujarati, Punjabi, Odia, and Nepali and Sinhala, which wait for their regions): the system's own
+// font first, which every current device has (Windows' Segoe UI and Nirmala UI, which has all ten Indian
+// scripts, Android's and Linux's Noto, Apple's Geeza Pro, Kohinoor and Sangam MN), so nothing is fetched.
 // Urdu is the exception: it is written in Nastaliq, which few devices have, so Noto Nastaliq Urdu comes with
 // the app (below), named only here, so no other language's page fetches it. :lang(ar) is also the
-// pseudo-locales ar-XB and ar-XD, and :lang(hi) hi-XE.
+// pseudo-locales ar-XB and ar-XD, :lang(hi) hi-XE, :lang(ta) ta-XF and :lang(kn) kn-XG. Marathi and Nepali
+// share Devanagari with Hindi: a font draws their own letter forms (ल, श, झ) when the page says lang="mr" or
+// "ne". The iPhone's fonts for Kannada, Gurmukhi, Odia and Sinhala are to be checked on a real device before
+// each goes live (scratch/round8/in-langs/plan.md, section 4); a web font cut to the script is the fallback.
 $gc-script-fonts: (
   'ja': "'Noto Serif JP', 'Noto Serif CJK JP', 'Yu Mincho', YuMincho, 'Hiragino Mincho ProN'",
   'zh-Hans': "'Noto Serif SC', 'Noto Serif CJK SC', 'Songti SC', STSong",
@@ -119,7 +124,17 @@ $gc-script-fonts: (
   'ar': "'Segoe UI', 'Noto Naskh Arabic', 'Geeza Pro', 'Noto Sans Arabic', Tahoma",
   'ur': "'Noto Nastaliq Served', 'Noto Nastaliq Urdu', 'Urdu Typesetting', 'Segoe UI', 'Noto Naskh Arabic', 'Geeza Pro'",
   'hi': "'Nirmala UI', 'Kohinoor Devanagari', 'Noto Sans Devanagari', Mangal",
-  'bn': "'Nirmala UI', 'Kohinoor Bangla', 'Noto Sans Bengali', Vrinda"
+  'bn': "'Nirmala UI', 'Kohinoor Bangla', 'Noto Sans Bengali', Vrinda",
+  'mr': "'Nirmala UI', 'Kohinoor Devanagari', 'Noto Sans Devanagari', Mangal",
+  'ne': "'Nirmala UI', 'Kohinoor Devanagari', 'Noto Sans Devanagari', Mangal",
+  'ta': "'Nirmala UI', 'Tamil Sangam MN', 'Noto Sans Tamil', Latha",
+  'te': "'Nirmala UI', 'Kohinoor Telugu', 'Telugu Sangam MN', 'Noto Sans Telugu', Gautami",
+  'kn': "'Nirmala UI', 'Kannada Sangam MN', 'Noto Sans Kannada', Tunga",
+  'ml': "'Nirmala UI', 'Malayalam Sangam MN', 'Noto Sans Malayalam', Kartika",
+  'gu': "'Nirmala UI', 'Kohinoor Gujarati', 'Gujarati Sangam MN', 'Noto Sans Gujarati', Shruti",
+  'pa': "'Nirmala UI', 'Mukta Mahee', 'Gurmukhi Sangam MN', 'Noto Sans Gurmukhi', Raavi",
+  'or': "'Nirmala UI', 'Oriya Sangam MN', 'Noto Sans Oriya', Kalinga",
+  'si': "'Nirmala UI', 'Sinhala Sangam MN', 'Noto Sans Sinhala', 'Iskoola Pota'"
 );
 $gc-script-langs: ();
 @each $lang, $fonts in $gc-script-fonts {
@@ -156,16 +171,49 @@ $gc-script-langs: ();
 :lang(th):is(h1, h2, h3, h4) {
   line-height: 1.4;
 }
-// So do Arabic's vowel marks, and Devanagari's and Bengali's letters hang from a line with marks above it and
-// below: their lines are taller. Nastaliq slopes down each word, and its lines are the tallest of all.
+// So do Arabic's vowel marks, and the letters of India's scripts, which hang from a line with marks above it
+// and below: their lines are taller, the more so the further the marks reach (Telugu, Kannada, Odia and
+// Sinhala stack letters below the line, Tamil has wide letters and vowel signs above and below, Devanagari,
+// Bengali and Gurmukhi hang from a headline). Per language, the text's line height and the headings': starting
+// values, to be set from each language's screenshot run (docs/i18n-plan.md, the layout gate). Nastaliq slopes
+// down each word, and its lines are the tallest of all.
 :lang(ar):is(h1, h2, h3, h4) {
   line-height: 1.4;
 }
-body:is(:lang(hi), :lang(bn)) {
-  line-height: 1.75;
+$gc-tall-scripts: (
+  'hi': 1.75 1.45,
+  'bn': 1.75 1.45,
+  'mr': 1.75 1.45,
+  'ne': 1.75 1.45,
+  'pa': 1.75 1.45,
+  'gu': 1.7 1.45,
+  'ta': 1.7 1.5,
+  'ml': 1.8 1.5,
+  'te': 1.85 1.5,
+  'kn': 1.85 1.5,
+  'or': 1.85 1.5,
+  'si': 1.85 1.5
+);
+// Tamil, Malayalam, Telugu, Kannada, Odia and Sinhala write long words, with no spaces inside them (agglutinated
+// endings, wide letters): a word wider than a phone breaks at a letter, and may shrink a column of a grid or a flex
+// row, instead of making the page scroll sideways. The pseudo-locales ta-XF and kn-XG test it at 320 px.
+:root:is(:lang(ta), :lang(ml), :lang(te), :lang(kn), :lang(or), :lang(si)) {
+  overflow-wrap: anywhere;
 }
-:is(:lang(hi), :lang(bn)):is(h1, h2, h3, h4) {
-  line-height: 1.45;
+@each $lang, $heights in $gc-tall-scripts {
+  body:lang(#{$lang}) {
+    line-height: list.nth($heights, 1);
+  }
+  :lang(#{$lang}):is(h1, h2, h3, h4) {
+    line-height: list.nth($heights, 2);
+  }
+  // Bootstrap gives a field and a button a line height of its own, 1.5, which clips the marks of the tallest
+  // scripts in a box of fixed height.
+  @if list.nth($heights, 1) >= 1.8 {
+    :lang(#{$lang}):is(.form-control, .form-select, .btn) {
+      line-height: 1.6;
+    }
+  }
 }
 body:lang(ur),
 :lang(ur):is(.form-control, .form-select, .btn) {

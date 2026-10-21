@@ -327,5 +327,47 @@ describe('translations', () => {
         'र्सेएँ https://example.com/a-b ओरृँ www.glazy.org.'
       );
     });
+
+    it('writes every message in Tamil or Kannada, from one table of letters per script, with the full stop kept', () => {
+      // A capital takes the script's capital mark, a bare last consonant its mark below, every word a mark over its end.
+      expect(pseudoMessage('Save recipe.', 'ta-XF')).toBe('ஸ்ரீஸாவெஃ ரெசிப்பெஃ.');
+      expect(pseudoMessage('Batch', 'ta-XF')).toBe('ஸ்ரீபாத்தசஹூஃ');
+      expect(pseudoMessage('Save recipe.', 'kn-XG')).toBe('ರ್ಸ್ಸಾವೆಂ ರೆಚಿಪ್ರೆಂ.');
+      // Latin that a translation keeps, and web and email addresses, stay as they are.
+      expect(pseudoMessage('Write to privacy@glazecalcapp.com or see the page', 'kn-XG')).toContain(
+        ' privacy@glazecalcapp.com '
+      );
+      expect(pseudoMessage('Fire to 1240 °C, {amount} g of K2O.', 'kn-XG')).toBe(
+        'ರ್ಫಿರೆಂ ತ್ತೊಂ 1240 °C, {amount} g ಒಫೃಂ K2O.'
+      );
+      expect(pseudoText('See https://example.com/a-b or www.glazy.org.', 'ta-XF')).toContain(
+        ' https://example.com/a-b '
+      );
+      // No letter of the English is left, and the word's letters are the script's alone.
+      const tamil = pseudoMessage('Glaze the whole batch with a brush', 'ta-XF');
+      const kannada = pseudoMessage('Glaze the whole batch with a brush', 'kn-XG');
+      expect(tamil).toMatch(/^[\u0b80-\u0bff ]+$/);
+      expect(kannada).toMatch(/^[\u0c80-\u0cff ]+$/);
+      // Devanagari's table still gives what it did.
+      expect(pseudoMessage('Batch', 'hi-XE')).toBe('र्बाट्ठचहृँ');
+    });
+
+    it("gives the pseudo-Kannada Kannada's plural rules, where one is for 0 as well as 1, and the pseudo-Tamil Tamil's", () => {
+      const message = pseudoMessage('{count, plural, one {# material} other {# materials}}', 'kn-XG');
+      const kannada = new IcuTranspiler();
+      kannada.onLangChanged('kn-XG');
+      const shown = (count: number) =>
+        kannada.transpile({ value: message, params: { count }, translation: {}, key: 'x' }) as string;
+      expect(shown(0)).toBe(shown(1).replace(/^1/, '0'));
+      expect(shown(2).slice(1)).not.toBe(shown(1).slice(1));
+      // Tamil, like English, takes 0 as "other".
+      const tamil = new IcuTranspiler();
+      tamil.onLangChanged('ta-XF');
+      const tamilMessage = pseudoMessage('{count, plural, one {# material} other {# materials}}', 'ta-XF');
+      const tamilShown = (count: number) =>
+        tamil.transpile({ value: tamilMessage, params: { count }, translation: {}, key: 'x' }) as string;
+      expect(tamilShown(0).slice(1)).toBe(tamilShown(2).slice(1));
+      expect(tamilShown(1).slice(1)).not.toBe(tamilShown(2).slice(1));
+    });
   });
 });

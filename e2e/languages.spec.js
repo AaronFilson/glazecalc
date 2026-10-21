@@ -5,12 +5,12 @@ const { signUpAndSignIn } = require('./helpers');
 // Every page in every language offered (docs/i18n-plan.md, the layout gate):
 // in the language, with the translation notice, and laid out at a phone's
 // width without scrolling sideways, however long the language's words. The
-// Japanese, Arabic and Hindi pseudo-locales too: Japanese's fonts, and lines
-// with no spaces to break at; real right-to-left text; Devanagari's taller
-// letters (client/app/i18n/pseudo.ts).
+// Japanese, Arabic, Hindi, Tamil and Kannada pseudo-locales too: Japanese's fonts, and lines
+// with no spaces to break at; real right-to-left text; Devanagari's, Tamil's and Kannada's
+// taller letters (client/app/i18n/pseudo.ts).
 
 const TRANSLATED = LIVE_LANGUAGES.filter((code) => code !== 'en');
-const PSEUDO = ['ja-XC', 'ar-XD', 'hi-XE'];
+const PSEUDO = ['ja-XC', 'ar-XD', 'hi-XE', 'ta-XF', 'kn-XG'];
 
 // The longest file, its tests apart from each other: they spread over the
 // workers instead of running one after another in one.

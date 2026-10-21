@@ -31,7 +31,15 @@
 // 9. A translation writes its digits 0–9: a language's own (Arabic-Indic,
 //    Bengali, Devanagari) are shown from the reader's settings, never typed
 //    into a translation. The figures check (6) reads them all the same, with
-//    Indian digit groups (1,00,000) and the Arabic marks (٫ ٬ ٪).
+//    Indian digit groups (1,00,000) and the Arabic marks (٫ ٬ ٪). Indian
+//    languages' 12-hour times (रात 8 बजे) are kept whole, so they show as
+//    not in the English.
+// 10. An Indian language is written in its own script and Latin (checkScripts);
+//    every translation is in Unicode form NFC (checkNormalization); a stray
+//    ZWJ or ZWNJ is a slip, but where the script needs one (checkJoiners).
+// 11. Where a language's `one` also takes 0 (Hindi, Kannada, French ...), an
+//    English plural whose `one` is for exactly one has an `=1` form in the
+//    translation (compareMessage).
 import { readFileSync, readdirSync, existsSync } from 'node:fs';
 import path from 'node:path';
 import { pathToFileURL } from 'node:url';
@@ -164,9 +172,45 @@ const TWELVE_HOUR = new RegExp(
     String.raw`(?:午前|午後|上午|下午|早上|晚上|凌晨|傍晚|中午|오전|오후)[ \u00a0]?\d{1,2}[ \u00a0]?(?:時|时|点|點|시)`,
     String.raw`\d{1,2}[ \u00a0]?giờ[ \u00a0](?:sáng|trưa|chiều|tối|đêm)`,
     String.raw`pukul[ \u00a0]\d{1,2}(?:[.:]\d{2})?[ \u00a0](?:pagi|siang|sore|malam)`
-  ].join('|'),
+  ]
+    .concat(indicTwelveHour())
+    .join('|'),
   'giu'
 );
+
+/**
+ * The Indian languages' 12-hour times, a part of the day before the hour and the word for o'clock after it, as
+ * their style sheets ask to be left out: रात 8 बजे (Hindi), रात्री 8 वाजता (Marathi), இரவு 8 மணிக்கு (Tamil),
+ * రాత్రి 8 గంటలకు (Telugu), ರಾತ್ರಿ 8 ಗಂಟೆಗೆ (Kannada), രാത്രി 8 മണിക്ക് (Malayalam), રાત્રે 8 વાગ્યે (Gujarati),
+ * ਰਾਤ 8 ਵਜੇ (Punjabi), ରାତି 8 ଟା (Odia), राति 8 बजे (Nepali), ප.ව. 8.00 (Sinhala). Hindi also puts the part of
+ * the day after the time (8 बजे रात) and may add को or के; Sinhala puts ප.ව. (afternoon) or පෙ.ව. (morning)
+ * before or after it. The 24-hour clock is 20:00. The patterns are NFC, as the translations are
+ * (checkNormalization).
+ */
+function indicTwelveHour() {
+  const hour = String.raw`[ \u00a0]?\d{1,2}(?:[:.]\d{2})?[ \u00a0]?`;
+  // [the parts of the day, the word for o'clock, a particle that may come between]
+  const clocks = [
+    ['रात|सुबह|सवेरे|शाम|दोपहर|भोर', 'बजे', String.raw`(?:[ \u00a0](?:को|के|में))?`],
+    ['रात्री|रात्र|रात|सकाळी|दुपारी|संध्याकाळी|सायंकाळी|पहाटे', 'वाज(?:ता|ले|ून)'],
+    ['காலை|மாலை|இரவு|பிற்பகல்|மதியம்|நள்ளிரவு|அதிகாலை', 'மணி(?:க்கு|யளவில்)?'],
+    ['రాత్రి|ఉదయం|సాయంత్రం|మధ్యాహ్నం|తెల్లవారుజామున', 'గంట(?:లకు|కు|ల)?'],
+    ['ರಾತ್ರಿ|ಬೆಳಿಗ್ಗೆ|ಬೆಳಗ್ಗೆ|ಸಂಜೆ|ಮಧ್ಯಾಹ್ನ|ಮಧ್ಯರಾತ್ರಿ', 'ಗಂಟೆ(?:ಗೆ|ಯ)?'],
+    ['രാത്രി|രാവിലെ|വൈകുന്നേരം|ഉച്ചയ്ക്ക്|ഉച്ച', 'മണി(?:ക്ക്|ക്കു)?'],
+    ['રાત્રે|રાતે|સવારે|સાંજે|બપોરે', '(?:વાગ્યે|વાગે)'],
+    ['ਰਾਤ|ਸਵੇਰ|ਸ਼ਾਮ|ਦੁਪਹਿਰ', 'ਵਜੇ', String.raw`(?:[ \u00a0](?:ਨੂੰ|ਦੇ))?`],
+    ['ରାତି|ସକାଳ|ସନ୍ଧ୍ୟା|ଅପରାହ୍ନ|ଦିନ', 'ଟା(?:ରେ)?'],
+    ['बेलुका|राति|बिहान|दिउँसो|साँझ', 'बजे']
+  ];
+  const patterns = clocks.map(([parts, o, particle = '']) => `(?:${parts})${particle}${hour}${o}`.normalize('NFC'));
+  patterns.push(
+    String.raw`\d{1,2}(?:[:.]\d{2})?[ \u00a0]?बजे[ \u00a0](?:रात|सुबह|शाम|दोपहर)`,
+    String.raw`(?:ප\.ව\.|පෙ\.ව\.)[ \u00a0]?\d{1,2}(?:[:.]\d{2})?`,
+    String.raw`\d{1,2}(?:[:.]\d{2})?[ \u00a0]?(?:ප\.ව\.|පෙ\.ව\.)`
+  );
+  return patterns;
+}
+
 /**
  * Thai, Indonesian and Turkish write 8 pm 20.00: the hour before น. (Thai)
  * or a time zone (WIB, WITA, WIT), or after pukul or jam (Indonesian) or saat
@@ -342,6 +386,56 @@ function compareFigures(label, language, english, translated) {
 }
 
 /**
+ * Each cardinal plural in a message, as { arg, forms, one } where `one` is whether its `one` branch shows the
+ * number (has a #) and `forms` are the branches' names.
+ */
+function cardinalPlurals(message) {
+  const found = [];
+  const shows = (elements) =>
+    elements.some((element) => element.type === TYPE.pound || (element.type === TYPE.tag && shows(element.children)));
+  const walk = (elements) => {
+    for (const element of elements) {
+      if (element.type === TYPE.tag) walk(element.children);
+      else if (element.type === TYPE.plural || element.type === TYPE.select) {
+        if (element.type === TYPE.plural && element.pluralType === 'cardinal') {
+          found.push({
+            arg: element.value,
+            forms: Object.keys(element.options),
+            one: element.options.one ? shows(element.options.one.value) : false
+          });
+        }
+        for (const option of Object.values(element.options)) walk(option.value);
+      }
+    }
+  };
+  walk(parse(message));
+  return found;
+}
+
+/** Whether a language's `one` form also takes 0 (Hindi, Bengali, Gujarati, Kannada, Punjabi, Sinhala, French). */
+const oneCoversZero = (language) => new Intl.PluralRules(language).select(0) === 'one';
+
+/**
+ * Where the English's `one` form is for exactly one ("this passkey", "it": no #, and no =0 form of its own), a
+ * language whose `one` also takes 0 would show it for 0. Its translation needs an `=1` form for that plural
+ * (the `one` form then reads right for 0, with its #).
+ */
+function exactOneProblems(key, language, english, translated) {
+  if (!oneCoversZero(language)) return [];
+  const exact = cardinalPlurals(english)
+    .filter((plural) => plural.forms.includes('one') && !plural.one && !plural.forms.includes('=0'))
+    .map((plural) => plural.arg);
+  if (!exact.length) return [];
+  const args = cardinalPlurals(translated)
+    .filter((plural) => exact.includes(plural.arg) && plural.forms.includes('one') && !plural.forms.includes('=1'))
+    .map((plural) => plural.arg);
+  return [...new Set(args)].map(
+    (arg) =>
+      `${key}: ${language}'s "one" also takes 0, so the English's one-only text for {${arg}} needs an =1 form (or the English an =0 form)`
+  );
+}
+
+/**
  * Problems with one translated message, against its English. rich: whether
  * the message is drawn by gc-rich, which can show a key term's English
  * (<en>frit</en>); the messages kept in code (server, chemistry, safety,
@@ -382,6 +476,7 @@ export function compareMessage(language, key, english, translated, { rich = true
     if (unknown.length)
       problems.push(`${key}: ${language} has no plural form ${unknown.join(', ')} for {${plural.arg}}`);
   }
+  problems.push(...exactOneProblems(key, language, english, translated));
   // A word the English itself writes with the cedilla is a name in another language (Turkish
   // Ulusal Zehir Danışma Merkezi) and stays as it is.
   const cedillaWords = (text) => text.match(/[\p{L}]*[şţŞŢ][\p{L}]*/gu) ?? [];
@@ -762,6 +857,160 @@ export function checkHanja({ dir = I18N, glossary = path.join(ROOT, 'docs', 'tra
   return problems;
 }
 
+/**
+ * Every translated message and the translated sections of every translated guide, as { label, language, text,
+ * english }: the texts the script, normalisation and joiner checks read, with the English they were made from
+ * (the message's, or the guide's whole). A guide section still in English ({#id lang=en}) is the English's and
+ * is left out.
+ */
+function* translatedTexts(dir = I18N) {
+  for (const [scope, languages] of Object.entries(messageFiles(dir))) {
+    const english = languages.en ? flatten(readJson(languages.en)) : {};
+    for (const [language, file] of Object.entries(languages)) {
+      if (language === 'en') continue;
+      for (const [key, text] of Object.entries(flatten(readJson(file)))) {
+        yield { label: `${scope || 'app'} ${language} ${key}`, language, text, english: english[key] ?? '' };
+      }
+    }
+  }
+  const guides = path.join(dir, 'guides');
+  if (!existsSync(guides)) return;
+  for (const guide of readdirSync(guides, { withFileTypes: true }).filter((entry) => entry.isDirectory())) {
+    const english = existsSync(path.join(guides, guide.name, 'en.md'))
+      ? readFileSync(path.join(guides, guide.name, 'en.md'), 'utf8')
+      : '';
+    for (const file of readdirSync(path.join(guides, guide.name)).filter((n) => n.endsWith('.md') && n !== 'en.md')) {
+      const translated = guideSegments(readFileSync(path.join(guides, guide.name, file), 'utf8')).filter(
+        (segment) => !segment.english
+      );
+      yield {
+        label: `guides/${guide.name}/${file}`,
+        language: path.basename(file, '.md'),
+        text: translated.map((segment) => segment.text).join('\n'),
+        english
+      };
+    }
+  }
+}
+
+/**
+ * The Indian languages and the Unicode script each is written in (Script_Extensions names), for the script and
+ * joiner checks. Every language of India's waves is here ahead of its translation (wave I1: Tamil, Marathi,
+ * Kannada; then Telugu, Malayalam, Gujarati, Punjabi, Odia, Nepali, Sinhala), with Hindi and Bengali.
+ */
+export const INDIC_SCRIPTS = {
+  hi: 'Deva',
+  mr: 'Deva',
+  ne: 'Deva',
+  bn: 'Beng',
+  ta: 'Taml',
+  te: 'Telu',
+  kn: 'Knda',
+  ml: 'Mlym',
+  gu: 'Gujr',
+  pa: 'Guru',
+  or: 'Orya',
+  si: 'Sinh'
+};
+
+/**
+ * Problems with the script an Indian language is written in: its letters and marks are its own script's, Latin
+ * (units, formulas, names, addresses) or common (digits, punctuation, spaces). That catches Bengali letters in
+ * Odia, Devanagari in Gurmukhi, Hindi pasted into Tamil, and the garbage a legacy-font copy leaves. A run of
+ * foreign letters that the English gives as a name (a foreign poison centre's, in its own script), or its
+ * glossary (docs/translations/<language>.md) gives, as a word it contrasts, is let through, as checkHanja
+ * lets through a hanja. Hindi, Marathi and Nepali share Devanagari, so a Hindi word in Marathi is
+ * for the style sheet and the reviewers.
+ */
+export function checkScripts({ dir = I18N, glossaries = path.join(ROOT, 'docs', 'translations') } = {}) {
+  const problems = [];
+  const glossary = new Map();
+  const glossaryOf = (language) => {
+    if (!glossary.has(language)) {
+      const file = path.join(glossaries, language + '.md');
+      glossary.set(language, existsSync(file) ? readFileSync(file, 'utf8') : '');
+    }
+    return glossary.get(language);
+  };
+  const foreign = new Map();
+  const foreignPattern = (script) => {
+    if (!foreign.has(script)) {
+      foreign.set(
+        script,
+        new RegExp(`(?:(?![\\p{scx=Latn}\\p{scx=${script}}\\p{scx=Zyyy}\\p{scx=Zinh}])[\\p{L}\\p{M}])+`, 'gu')
+      );
+    }
+    return foreign.get(script);
+  };
+  for (const { label, language, text, english } of translatedTexts(dir)) {
+    const script = INDIC_SCRIPTS[language];
+    if (!script) continue;
+    // A name the English itself gives in another script (a poison centre's, in Korean or Greek) stays as it is.
+    const runs = [...new Set(text.match(foreignPattern(script)) ?? [])].filter(
+      (run) => !english.includes(run) && !glossaryOf(language).includes(run)
+    );
+    if (runs.length) {
+      problems.push(
+        `${label}: ${language} is written in ${script} and Latin, not letters such as ${runs.slice(0, 5).join(' ')} (or give them in its glossary)`
+      );
+    }
+  }
+  return problems;
+}
+
+/**
+ * Problems with Unicode normalisation: every translation is in NFC, so that a letter has one form (a Gurmukhi,
+ * Odia or Devanagari letter with a nukta is the letter and the nukta, ਸ਼ as ਸ + ਼, not the precomposed U+0A36),
+ * and search, fingerprints and comparisons agree. Typing a letter another way, or copying one from a legacy
+ * font, is the usual slip.
+ */
+export function checkNormalization(dir = I18N) {
+  const problems = [];
+  for (const { label, text } of translatedTexts(dir)) {
+    if (text === text.normalize('NFC')) continue;
+    const words = [...new Set(text.split(/[\s]+/).filter((word) => word !== word.normalize('NFC')))];
+    const shown = words
+      .slice(0, 3)
+      .map(
+        (word) =>
+          `${word} (${[...word].map((c) => 'U+' + c.codePointAt(0).toString(16).toUpperCase().padStart(4, '0')).join(' ')})`
+      );
+    problems.push(`${label}: not in Unicode normalisation form NFC, as ${shown.join('; ')}`);
+  }
+  return problems;
+}
+
+/**
+ * Where a zero-width joiner (U+200D) or non-joiner (U+200C) may stand, by language. None in the languages not
+ * listed. Malayalam writes its chillu letters as single characters (U+0D7A to U+0D7F), never as a letter,
+ * virama and ZWJ, and a ZWNJ only after a virama (U+0D4D). Sinhala's conjuncts need a ZWJ after the virama
+ * (U+0DCA), as in ශ්\u200dරී, and no ZWNJ. In the others a joiner is a slip.
+ */
+const JOINER_AFTER = { ml: { '\u200c': '്' }, si: { '\u200d': '්' } };
+
+/** Problems with stray joiners in the Indian languages' translations. */
+export function checkJoiners(dir = I18N) {
+  const problems = [];
+  for (const { label, language, text } of translatedTexts(dir)) {
+    if (!INDIC_SCRIPTS[language] || language === 'bn') continue;
+    const allowed = JOINER_AFTER[language] ?? {};
+    const found = [...text.matchAll(/[\u200c\u200d]/g)].filter((match) => text[match.index - 1] !== allowed[match[0]]);
+    if (found.length) {
+      const names = [...new Set(found.map((match) => (match[0] === '\u200d' ? 'ZWJ (U+200D)' : 'ZWNJ (U+200C)')))];
+      problems.push(
+        `${label}: a stray ${names.join(' and ')} (${found.length}); ${language} takes ${
+          language === 'ml'
+            ? 'a ZWNJ only after a virama and no ZWJ, for its chillu letters are single characters'
+            : language === 'si'
+              ? 'a ZWJ only after a virama and no ZWNJ'
+              : 'none'
+        }`
+      );
+    }
+  }
+  return problems;
+}
+
 /** Whether a problem is with one language's translation, rather than the English or another language. */
 const aboutLanguage = (problem, language) =>
   problem.includes(` ${language} `) || problem.includes(`/${language}.md`) || problem.includes(`/${language}.json`);
@@ -772,9 +1021,15 @@ if (import.meta.url === pathToFileURL(process.argv[1] ?? '').href) {
   const only = process.argv.includes('--language') ? process.argv[process.argv.indexOf('--language') + 1] : null;
   const fingerprints = checkFingerprints();
   const problems = only
-    ? [...checkTranslations(), ...checkGuides(), ...checkHanja(), ...checkDigits()].filter((problem) =>
-        aboutLanguage(problem, only)
-      )
+    ? [
+        ...checkTranslations(),
+        ...checkGuides(),
+        ...checkHanja(),
+        ...checkDigits(),
+        ...checkScripts(),
+        ...checkNormalization(),
+        ...checkJoiners()
+      ].filter((problem) => aboutLanguage(problem, only))
     : [
         ...compareKeys(await keysInUse()),
         ...checkTranslations(),
@@ -782,6 +1037,9 @@ if (import.meta.url === pathToFileURL(process.argv[1] ?? '').href) {
         ...checkGuides(),
         ...checkHanja(),
         ...checkDigits(),
+        ...checkScripts(),
+        ...checkNormalization(),
+        ...checkJoiners(),
         ...fingerprints.problems
       ];
   for (const [language, left] of Object.entries(fingerprints.inEnglish)) {

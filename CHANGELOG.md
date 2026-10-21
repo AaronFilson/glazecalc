@@ -22,6 +22,15 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   the Latin full stop (the owner's choice). Each was translated, reviewed in six groups, made consistent across its files
   and back-translated blind (the safety guides and every warning); a native potter's check of the terms marked in the
   style sheets is still welcome. The README counts 34 languages.
+- **Groundwork for India's regional languages** (wave I1: Tamil, Marathi, Kannada; none is offered yet). `ta`, `mr` and
+  `kn` are known to the language list, the pickers' groups, India's region and the first render's country; their fonts
+  (Nirmala UI, Noto, Sangam MN: none served) and line heights are in `client/styles.scss`, with the Odia and Sinhala
+  entries ready for the later waves; the Linux test image keeps the Tamil and Kannada Noto fonts. Two pseudo-locales,
+  `/ta-XF/` (Tamil) and `/kn-XG/` (Kannada), made from one table of letters per script like `/hi-XE/`, are laid out at
+  phone width in the browser tests. The i18n check reads each Indian language's script, requires Unicode form NFC and no
+  stray ZWJ or ZWNJ, keeps their 12-hour times (रात 8 बजे) from passing as numbers, and asks for an `=1` form where a
+  language's `one` takes 0 as well as 1 (it found four Hindi and six French messages, now fixed). Style-sheet skeletons
+  for the glossary research: docs/translations/ta.md, mr.md, kn.md; wave.js has their entries.
 - **Target & Solve** (docs/adr/0026-target-and-solve.md). A new page, Solve for a target (`/solve`,
   linked from the recipe page and from Match with what I have): type a unity formula or an oxide
   analysis, or paste one from another app, and get a recipe in percent from the materials you have
