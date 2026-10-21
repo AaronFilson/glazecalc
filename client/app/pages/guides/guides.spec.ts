@@ -25,9 +25,6 @@ const PAGES: Array<[string, string]> = [
   ['Firing a basic kiln', firing]
 ];
 
-/** What the guides list and the more-guides block call the home safety guide. */
-const HOME_SAFETY_LINK = 'Glaze safety at home: children, pets and the kiln';
-
 /** The companion to John Britt's course, in English only. */
 const COURSE_TITLE = "Learn with John Britt's free glaze course";
 
@@ -60,9 +57,9 @@ describe('guides', () => {
     const page = fixture.nativeElement as HTMLElement;
     const cards = [...page.querySelector('.guide-cards')!.querySelectorAll('.guide-card')];
     expect(cards.map((a) => a.getAttribute('href'))).toEqual(GUIDES.map((guide) => guide.path));
-    // The list's link text carries the search words; the home safety guide's own heading stays friendly.
+    // Each card has its guide's own title.
     expect(cards.map((a) => a.querySelector('h2')?.textContent?.trim())).toEqual([
-      ...PAGES.map(([title]) => (title === "Don't poison your family" ? HOME_SAFETY_LINK : title)),
+      ...PAGES.map(([title]) => title),
       COURSE_TITLE
     ]);
   });
@@ -126,10 +123,10 @@ describe('guides', () => {
     }
   });
 
-  it("keeps the home safety guide's friendly heading but gives search the words in its title and meta", () => {
+  it("calls the home safety guide by its own title in the list and the page's title (the owner's choice)", () => {
     expect(readGuide(homeSafety).title).toBe("Don't poison your family");
-    expect(en.titles.homeSafety).toBe(`${HOME_SAFETY_LINK} - Glazecalc`);
-    expect(guideList.list.homeSafety.title).toBe(HOME_SAFETY_LINK);
+    expect(en.titles.homeSafety).toBe("Don't poison your family - Glazecalc");
+    expect(guideList.list.homeSafety.title).toBe("Don't poison your family");
   });
 
   afterEach(() => window.history.pushState({}, '', '/'));

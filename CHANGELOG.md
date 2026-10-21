@@ -989,9 +989,9 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   Orton 8, 11 and 12 now have a match. The firing guide's Kyoto cones paragraph says so (English; the other
   languages follow with the next translation round).
 - **Guides end with "More guides"**, links to the other guides with their summaries, drawn into the prerendered page so
-  search engines follow them. The home safety guide keeps its heading, "Don't poison your family"; its page title,
-  search description and link in the guides list now read "Glaze safety at home: children, pets and the kiln"
-  (English; the other languages follow with the next translation round).
+  search engines follow them. The home safety guide is called by its own title, "Don't poison your family", in the
+  guides list, the "More guides" block and its page title too (the owner's choice, in every language: each language's
+  own title for the guide).
 
 - **The recipe page's firing, less repeated and shorter on a phone.** When the firing block has a
   cone, the limits panel says "From the recipe's firing: Mid fire" as text, with "Choose another"
