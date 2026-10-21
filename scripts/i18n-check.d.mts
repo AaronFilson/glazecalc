@@ -48,3 +48,7 @@ export function checkSources(dir?: string): Promise<string[]>;
 export function checkHanja(options?: { dir?: string; glossary?: string }): string[];
 /** Problems with the digits translations write: 0–9 only, in messages and guides. */
 export function checkDigits(dir?: string): string[];
+/** Problems with Urdu: a sentence ends with ۔, Urdu's letters (not ي ى ك ه), no tatweel or direction marks, NFC. */
+export function checkUrdu(dir?: string): string[];
+/** Problems with Bengali: a sentence ends with the danda । (never "." or U+09F7), NFC. */
+export function checkBengali(dir?: string): string[];

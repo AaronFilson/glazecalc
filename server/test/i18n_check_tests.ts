@@ -4,9 +4,11 @@ import { tmpdir } from 'node:os';
 import path from 'node:path';
 import { readFileSync } from 'node:fs';
 import {
+  checkBengali,
   checkDigits,
   checkGuides,
   checkTranslations,
+  checkUrdu,
   compareKeys,
   compareMessage,
   compareSegment,
@@ -495,6 +497,63 @@ describe('message checks', () => {
       }
       // The app's own translations write 0–9.
       expect(checkDigits()).to.eql([]);
+    });
+
+    it('holds Urdu to ۔ and its own letters, and Bengali to the danda ।, both composed (NFC)', () => {
+      const marks = mkdtempSync(path.join(tmpdir(), 'i18n-marks-'));
+      try {
+        mkdirSync(path.join(marks, 'guides', 'firing'), { recursive: true });
+        const en = {
+          fire: 'Fire to 1222 °C.',
+          kiln: 'Kiln',
+          note: 'See the guide.',
+          list: 'Silica, etc.',
+          code: 'H361fd.'
+        };
+        writeFileSync(path.join(marks, 'en.json'), JSON.stringify(en));
+        writeFileSync(
+          path.join(marks, 'ur.json'),
+          JSON.stringify({
+            fire: 'بھٹی کو 1222 °C تک پکائیں۔',
+            kiln: 'بھٹی',
+            // A Latin stop after a unit, and the Arabic ي and ك an Arabic keyboard types.
+            note: 'گائیڈ دیکھیں 1222 °C.',
+            list: 'سلیکا يا كچھ۔',
+            code: 'H361fd۔'
+          })
+        );
+        writeFileSync(
+          path.join(marks, 'bn.json'),
+          JSON.stringify({
+            fire: 'চুল্লি 1222 °C পর্যন্ত গরম করুন।',
+            kiln: 'চুল্লি',
+            // A Latin stop, and the look-alike U+09F7.
+            note: 'গাইড দেখুন.',
+            list: 'সিলিকা ইত্যাদি৷',
+            // A figure's point, a numbered list's "1." and an address stay as they are.
+            code: '1. ধাপ: আপেক্ষিক গুরুত্ব 1.45, https://example.com/a.b দেখুন।'
+          })
+        );
+        writeFileSync(path.join(marks, 'guides', 'firing', 'en.md'), 'Fire to cone 6.\n');
+        // ো typed as ে and া apart is not NFC; a direction mark has no place in Urdu.
+        writeFileSync(path.join(marks, 'guides', 'firing', 'bn.md'), 'শঙ্কু 6 পর্যন্ত পোড়ান।\n');
+        writeFileSync(path.join(marks, 'guides', 'firing', 'ur.md'), 'مخروط 6 تک ‏پکائیں۔\n');
+        expect(checkUrdu(marks)).to.eql([
+          'app ur note: an Urdu sentence ends with ۔, not "." (گائیڈ دیکھیں 1222 °C.)',
+          'app ur list: Urdu takes ی ک ہ, not the Arabic ي ك',
+          'guides/firing/ur.md: no direction marks; the app sets the direction'
+        ]);
+        expect(checkBengali(marks)).to.eql([
+          'app bn note: a Bengali sentence ends with ।, not "." (গাইড দেখুন.)',
+          'app bn list: the danda is । (U+0964), not ৷ (U+09F7)',
+          "guides/firing/bn.md: not in Unicode's composed form (NFC)"
+        ]);
+      } finally {
+        rmSync(marks, { recursive: true, force: true });
+      }
+      // The app's own translations: none in Urdu or Bengali yet.
+      expect(checkUrdu()).to.eql([]);
+      expect(checkBengali()).to.eql([]);
     });
 
     it('compares the keys the app uses with the English', () => {

@@ -1,10 +1,11 @@
 import { Injectable, isDevMode } from '@angular/core';
 import { TranslocoTranspiler, TranspileParams } from '@jsverse/transloco';
-import { MessageFormatElement, TYPE } from '@formatjs/icu-messageformat-parser';
+import { MessageFormatElement, TYPE, parse } from '@formatjs/icu-messageformat-parser';
 import { IntlMessageFormat } from 'intl-messageformat';
 import { languageFor, textLanguage } from '../../../lib/regions/languages';
 import { isolateUnits, isolateValues, mirrorArrows } from '../shared/bidi';
 import { formatLocale } from '../shared/format';
+import { keepsWesternDigits, textDigitsFor, withTextDigits } from '../shared/text-digits';
 
 /**
  * A tag's edges in a written message, in characters no one types, so that
@@ -14,6 +15,17 @@ import { formatLocale } from '../shared/format';
 export const TAG_OPEN = '\uE000';
 export const TAG_CLOSE = '\uE002';
 export const TAG_END = '\uE001';
+
+/** A message's own words rewritten, its placeholders, plurals and tags kept. */
+function rewriteLiterals(elements: MessageFormatElement[], text: (literal: string) => string): void {
+  for (const element of elements) {
+    if (element.type === TYPE.literal) element.value = text(element.value);
+    else if (element.type === TYPE.tag) rewriteLiterals(element.children, text);
+    else if (element.type === TYPE.plural || element.type === TYPE.select) {
+      for (const option of Object.values(element.options)) rewriteLiterals(option.value, text);
+    }
+  }
+}
 
 /** The names of the tags in a message (<settings>Settings</settings>), anywhere in it. */
 export function tagNames(elements: readonly MessageFormatElement[], names = new Set<string>()): Set<string> {
@@ -43,10 +55,15 @@ export function tagNames(elements: readonly MessageFormatElement[], names = new 
  * reads, each value with letters in it (a name) is kept apart from the sentence,
  * as <bdi> keeps it, and each value with a Latin unit ("1240 °C") reads left to
  * right, whether the message or a value wrote it.
+ *
+ * On a Bengali page (shared/text-digits.ts) a message's own figures are shown in the digits its numbers are
+ * formatted in (১২২২ °C), unless the reader chose 0–9; its values are left as they are.
  */
 @Injectable()
 export class IcuTranspiler implements TranslocoTranspiler {
   private language = 'en';
+  private page = 'en';
+  private textDigits = false;
   private rightToLeft = false;
   private readonly compiled = new Map<
     string,
@@ -64,16 +81,22 @@ export class IcuTranspiler implements TranslocoTranspiler {
 
   onLangChanged(lang: string): void {
     this.language = textLanguage(lang);
+    this.page = lang;
+    this.textDigits = !!languageFor(lang)?.textDigits;
     this.rightToLeft = languageFor(lang)?.dir === 'rtl';
     this.compiled.clear();
   }
 
   transpile({ value, params, key }: TranspileParams): unknown {
     if (typeof value !== 'string') return value;
+    const digits = this.textDigits && !keepsWesternDigits(key) ? textDigitsFor(this.page) : null;
     // Plain text needs no formatting, unless it has an apostrophe: ICU writes one as two (d''Azur).
-    if (!/[{<']/.test(value)) return this.rightToLeft ? isolateUnits(mirrorArrows(value)) : value;
+    if (!/[{<']/.test(value)) {
+      const text = withTextDigits(value, digits);
+      return this.rightToLeft ? isolateUnits(mirrorArrows(text)) : text;
+    }
     try {
-      const { format, tags } = this.compile(this.rightToLeft ? mirrorArrows(value) : value);
+      const { format, tags } = this.compile(this.rightToLeft ? mirrorArrows(value) : value, digits);
       if (!this.rightToLeft) return format.format({ ...tags, ...params }) as string;
       return isolateUnits(format.format({ ...tags, ...isolateValues(params ?? {}) }) as string);
     } catch (error) {
@@ -83,10 +106,17 @@ export class IcuTranspiler implements TranslocoTranspiler {
     }
   }
 
-  private compile(message: string) {
-    let compiled = this.compiled.get(message);
+  /** A message ready to format, its own figures in a numbering system's digits where one is given. */
+  private compile(message: string, digits: string | null = null) {
+    const cacheKey = digits ? digits + '\u0000' + message : message;
+    let compiled = this.compiled.get(cacheKey);
     if (!compiled) {
-      const format = new IntlMessageFormat(message, this.language, undefined, { formatters: this.formatters });
+      let source: string | MessageFormatElement[] = message;
+      if (digits) {
+        source = parse(message);
+        rewriteLiterals(source, (text) => withTextDigits(text, digits));
+      }
+      const format = new IntlMessageFormat(source, this.language, undefined, { formatters: this.formatters });
       const tags = Object.fromEntries(
         [...tagNames(format.getAst())].map((name) => [
           name,
@@ -94,7 +124,7 @@ export class IcuTranspiler implements TranslocoTranspiler {
         ])
       );
       compiled = { format, tags };
-      this.compiled.set(message, compiled);
+      this.compiled.set(cacheKey, compiled);
     }
     return compiled;
   }

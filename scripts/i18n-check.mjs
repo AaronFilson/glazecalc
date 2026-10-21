@@ -32,6 +32,9 @@
 //    Bengali, Devanagari) are shown from the reader's settings, never typed
 //    into a translation. The figures check (6) reads them all the same, with
 //    Indian digit groups (1,00,000) and the Arabic marks (٫ ٬ ٪).
+// 10. Urdu ends its sentences with ۔ and writes Urdu's letters (ی ک ہ), not
+//    the Arabic ones; Bengali ends its sentences with the danda । (U+0964),
+//    never its look-alike ৷ (U+09F7); both in Unicode's composed form (NFC).
 import { readFileSync, readdirSync, existsSync } from 'node:fs';
 import path from 'node:path';
 import { pathToFileURL } from 'node:url';
@@ -716,6 +719,94 @@ export function checkDigits(dir = I18N) {
   return problems;
 }
 
+/**
+ * One language's translated texts, as [label, text]: each message, and each guide's sections that are
+ * translated (a section still in English, {#id lang=en}, is the English's).
+ */
+function translatedTexts(dir, language) {
+  const texts = [];
+  for (const [scope, languages] of Object.entries(messageFiles(dir))) {
+    if (!languages[language]) continue;
+    for (const [key, message] of Object.entries(flatten(readJson(languages[language])))) {
+      texts.push([`${scope || 'app'} ${language} ${key}`, message]);
+    }
+  }
+  const guides = path.join(dir, 'guides');
+  if (existsSync(guides)) {
+    for (const guide of readdirSync(guides, { withFileTypes: true }).filter((entry) => entry.isDirectory())) {
+      const file = path.join(guides, guide.name, `${language}.md`);
+      if (!existsSync(file)) continue;
+      const translated = guideSegments(readFileSync(file, 'utf8')).filter((segment) => !segment.english);
+      texts.push([`guides/${guide.name}/${language}.md`, translated.map((segment) => segment.text).join('\n')]);
+    }
+  }
+  return texts;
+}
+
+/**
+ * The Latin full stops that end a sentence written in a script (Urdu's Arabic letters, Bengali's): a "."
+ * after a word, a figure, a unit or a closing mark, at the end of the text or before a space, in a sentence
+ * with that script's letters in it. Not a figure's point (1.5), an address's dot (example.com/a.b), a
+ * numbered list's "1." (no letters before it on its line), an ellipsis, or an abbreviation the English keeps
+ * (e.g., etc., Ltd.).
+ */
+const SENTENCE_STOP = /(?<![.\s])\.(?=["'”’)\]*_]*(?:\s|$))/gu;
+const KEPT_ABBREVIATIONS = /(?:^|[\s(])(?:e\.g|i\.e|etc|Ltd|Inc|Co|Corp|No|vs|approx|Dr|St)$/u;
+function latinStops(text, letters) {
+  const found = [];
+  const prose = text.replace(/\]\([^)\s]*\)/g, ']').replace(/(?:https?:\/\/|www\.)\S+|\S+@\S+/g, ' ');
+  for (const match of prose.matchAll(SENTENCE_STOP)) {
+    const before = prose.slice(0, match.index);
+    const sentence = before.slice(
+      Math.max(before.lastIndexOf('\n'), ...['.', '!', '?', '۔', '।'].map((mark) => before.lastIndexOf(mark + ' '))) + 1
+    );
+    if (letters.test(sentence) && !KEPT_ABBREVIATIONS.test(before)) found.push(sentence.trim().slice(-24) + '.');
+  }
+  return found;
+}
+
+/** Bidi controls (LRM, RLM, ALM, the embeddings and the isolates): the app sets a text's direction itself. */
+const DIRECTION_CONTROLS = /[‎‏؜‪-‮⁦-⁩]/u;
+
+/**
+ * Problems with Urdu (docs/translations/ur.md): a sentence ends with ۔ (U+06D4), never a Latin "."; Urdu's
+ * own letters, never the Arabic ي ى ك ه that an Arabic keyboard types and Nastaliq draws wrongly (ی ک ہ:
+ * U+06CC, U+06A9, U+06C1); no tatweel or direction controls; Unicode's composed form (NFC).
+ */
+export function checkUrdu(dir = I18N) {
+  const ARABIC_LETTERS = /[كهىي]/gu;
+  const URDU = /[؀-ۿ]/u;
+  const problems = [];
+  for (const [label, text] of translatedTexts(dir, 'ur')) {
+    const stops = latinStops(text, URDU);
+    if (stops.length)
+      problems.push(`${label}: an Urdu sentence ends with ۔, not "." (${stops.slice(0, 2).join(' | ')})`);
+    const arabic = [...new Set(text.match(ARABIC_LETTERS) ?? [])];
+    if (arabic.length) problems.push(`${label}: Urdu takes ی ک ہ, not the Arabic ${arabic.join(' ')}`);
+    if (text.includes('ـ')) problems.push(`${label}: no tatweel (ـ) in Urdu`);
+    if (DIRECTION_CONTROLS.test(text)) problems.push(`${label}: no direction marks; the app sets the direction`);
+    if (text.normalize('NFC') !== text) problems.push(`${label}: not in Unicode's composed form (NFC)`);
+  }
+  return problems;
+}
+
+/**
+ * Problems with Bengali (docs/translations/bn.md): a sentence ends with the danda । (U+0964), never a Latin
+ * "." nor ৷ (U+09F7, a currency numerator that looks the same); Unicode's composed form (NFC).
+ */
+export function checkBengali(dir = I18N) {
+  const BENGALI = /[ঀ-৿]/u;
+  const problems = [];
+  for (const [label, text] of translatedTexts(dir, 'bn')) {
+    const stops = latinStops(text, BENGALI);
+    if (stops.length)
+      problems.push(`${label}: a Bengali sentence ends with ।, not "." (${stops.slice(0, 2).join(' | ')})`);
+    if (text.includes('৷')) problems.push(`${label}: the danda is । (U+0964), not ৷ (U+09F7)`);
+    if (text.normalize('NFC') !== text) problems.push(`${label}: not in Unicode's composed form (NFC)`);
+  }
+  return problems;
+}
+
 /** Problems with the translations' fingerprints, and what each language still shows in English. */
 export function checkFingerprints(options) {
   const { changes, inEnglish } = updateTranslations({ ...options, write: false });
@@ -772,9 +863,14 @@ if (import.meta.url === pathToFileURL(process.argv[1] ?? '').href) {
   const only = process.argv.includes('--language') ? process.argv[process.argv.indexOf('--language') + 1] : null;
   const fingerprints = checkFingerprints();
   const problems = only
-    ? [...checkTranslations(), ...checkGuides(), ...checkHanja(), ...checkDigits()].filter((problem) =>
-        aboutLanguage(problem, only)
-      )
+    ? [
+        ...checkTranslations(),
+        ...checkGuides(),
+        ...checkHanja(),
+        ...checkDigits(),
+        ...checkUrdu(),
+        ...checkBengali()
+      ].filter((problem) => aboutLanguage(problem, only))
     : [
         ...compareKeys(await keysInUse()),
         ...checkTranslations(),
@@ -782,6 +878,8 @@ if (import.meta.url === pathToFileURL(process.argv[1] ?? '').href) {
         ...checkGuides(),
         ...checkHanja(),
         ...checkDigits(),
+        ...checkUrdu(),
+        ...checkBengali(),
         ...fingerprints.problems
       ];
   for (const [language, left] of Object.entries(fingerprints.inEnglish)) {

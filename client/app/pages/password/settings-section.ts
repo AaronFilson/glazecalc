@@ -12,6 +12,7 @@ import { OFFERED_LANGUAGES, OPEN_PAGE, PAGE_LANGUAGE, languageName, pathIn } fro
 import { languageItems } from '../../i18n/language-groups';
 import { Picker, PickerItem } from '../../shared/picker';
 import { regionItems } from '../../shared/region-items';
+import { textDigitsFor, withTextDigits } from '../../shared/text-digits';
 
 // The words of a setting and its choices are read each time they are shown,
 // so they are in the page's language and none is translated as the app loads.
@@ -604,7 +605,10 @@ export class SettingsSection implements OnInit {
         return '';
       }
     }
-    return choice.example ?? '';
+    // Amounts are typed in 0–9 (or any digits), so the typing examples show 0–9; the others (1240 °C) are in the
+    // digits the page's figures are in (shared/text-digits.ts).
+    if (setting.name === 'decimalMark') return choice.example ?? '';
+    return withTextDigits(choice.example ?? '', textDigitsFor(language()));
   }
 
   protected chooseValue(setting: Setting, value: string): Promise<void> {

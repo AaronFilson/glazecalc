@@ -6,6 +6,12 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Added
 
+- **Groundwork for Urdu and Bengali** (not offered yet): both are known languages (their pages exist, unindexed), with
+  the standard notice, style sheets and glossaries (docs/translations/ur.md, bn.md) and translation prompts: Urdu for
+  Pakistan, right to left, ending sentences with ۔ and showing 0–9; Bengali for Bangladesh, ending sentences with the
+  danda ।. A Bengali page shows the figures of its text in Bengali digits, as it shows its numbers, so a page never mixes
+  the two; 0–9 where the reader chose them. The translations check holds Urdu to ۔ and its own letters (ی ک ہ) and
+  Bengali to the danda (never its look-alike ৷), both in Unicode's composed form.
 - **Arabic and Hindi** (docs/translations/ar.md, hi.md): the app, the emails and all five guides, live at
   `/ar/…` (right to left) and `/hi/…`. Arabic is Modern Standard Arabic for the Arab countries, its terms chosen from Arabic
   ceramics sources (Egyptian, Iraqi, Sudanese and Libyan university papers, suppliers, Oman's GHS guide), with all six
