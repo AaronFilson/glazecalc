@@ -1147,6 +1147,11 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Fixed
 
+- **Vanadium oxide's H361fd reads as the GHS words it stands for**: "suspected of damaging fertility or the unborn
+  child", where the library said only "fertility and unborn child". Every language has its official wording: the
+  CLP's Annex III (H361) in the EU's languages (Estonian and Latvian keep H361fd's own two sentences, as their style
+  sheets ask), JIS Z 7253 in Japanese, Oman's 2024 GHS guide in Arabic, and the forms the national GHS texts and safety
+  data sheets use in the others.
 - **Two ways round the consent page for AI apps closed** (docs/adr/0024-authorization-server.md, "An
   outside report"). An app may no longer send its answer to this site's own addresses, where the page
   would have named glazecalcapp.com as the place the answer goes. And Allow takes a click only once the
