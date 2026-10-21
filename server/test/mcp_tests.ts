@@ -1130,7 +1130,7 @@ describe('MCP: the guides, resources and prompts', () => {
     // Who to call is drawn for the reader's country on the site: the resource says so.
     const swallowed = await read('glazecalc://guides/en/home-safety/if-something-is-swallowed');
     expect(swallowed.text).to.include(
-      '(The guide on the website shows who to call for poison advice in your country: ' +
+      '(The guide on the website shows who to call for poison advice in your country or region: ' +
         site.siteUrl() +
         '/guides/home-safety#if-something-is-swallowed)'
     );

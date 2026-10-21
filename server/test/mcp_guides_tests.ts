@@ -45,7 +45,7 @@ describe('MCP: the guides, read', () => {
         'Mix to SG 1.43–1.45.',
         'A Fritte (frit) melts.',
         '',
-        '(The guide on the website shows who to call for poison advice in your country: https://example.test/guides/home-safety)'
+        '(The guide on the website shows who to call for poison advice in your country or region: https://example.test/guides/home-safety)'
       ].join('\n')
     );
   });

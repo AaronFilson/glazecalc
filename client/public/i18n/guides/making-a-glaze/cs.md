@@ -26,7 +26,7 @@ Připravit glazuru{{en: glaze}} znamená navážit podle receptu práškové **s
 
 ### Kde nakupovat
 
-Keramici nakupují u dodavatelů keramických potřeb, kteří prodávají hlínu, suroviny pro glazury{{en: glaze}} a nástroje. Tabulka ukazuje některé z nich pro vaši zemi, každý ověřený přímo na webu obchodu, a můžete zvolit jinou zemi a zobrazit její obchody. Sortiment se mění, proto si ho před objednávkou ověřte. Velcí producenti jako Sibelco a Imerys prodávají průmyslu; keramici kupují jejich suroviny přes obchody, jako jsou tyto. Odborný web o keramice Digitalfire vede adresář obchodů dodavatelů pro další místa.
+Keramici nakupují u dodavatelů keramických potřeb, kteří prodávají hlínu, suroviny pro glazury{{en: glaze}} a nástroje. Tabulka ukazuje některé z nich pro vaši zemi, každý ověřený přímo na webu obchodu, a můžete zvolit jinou zemi nebo region a zobrazit tamní obchody. Sortiment se mění, proto si ho před objednávkou ověřte. Velcí producenti jako Sibelco a Imerys prodávají průmyslu; keramici kupují jejich suroviny přes obchody, jako jsou tyto. Odborný web o keramice Digitalfire vede adresář obchodů dodavatelů pro další místa.
 
 ::shops
 

@@ -913,7 +913,11 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 - **"Choose your country or region"**: the guides' region list and the prompts under it ask for a country or region
   (the owner's choice), as Hong Kong and Taiwan are among the places listed. In every language, in the words its
-  region list already uses ("countries and regions").
+  region list already uses ("countries and regions"). So does the making-a-glaze guide's line on shops ("choose
+  another country or region"), in every language, and the MCP server's guide text, in English, says what the
+  website shows "in your country or region".
+- **The reference pages link the home safety guide by its title, "Don't poison your family"** (English; the
+  reference pages are not translated yet), where they said "Glaze safety at home".
 - **Limits that suit AI apps' shared addresses** (ADR 24, the same amendment). Claude's and ChatGPT's
   servers send everyone's requests from a few addresses, so limits are now keyed on what a request has
   proven. The token endpoint counts per address only what it refuses (300 in 15 minutes), per account

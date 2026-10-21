@@ -26,7 +26,7 @@ Napraviti glazuru{{en: glaze}} znači prema receptu odvagati **sirovine** u prah
 
 ### Gdje kupiti
 
-Lončari kupuju kod dobavljača za keramiku, koji prodaju glinu, sirovine za glazure{{en: glaze}} i alat. Tablica prikazuje neke od njih u vašoj zemlji, a svaki je provjeren na mrežnim stranicama same trgovine; možete odabrati i drugu zemlju i vidjeti njezine trgovine. Ponuda se mijenja, pa je provjerite prije narudžbe. Veliki proizvođači, poput tvrtki Sibelco i Imerys, prodaju industriji; lončari njihove sirovine kupuju preko ovakvih trgovina. Digitalfire, mrežno mjesto s referentnim podacima o keramici, vodi imenik trgovina dobavljača za druge krajeve.
+Lončari kupuju kod dobavljača za keramiku, koji prodaju glinu, sirovine za glazure{{en: glaze}} i alat. Tablica prikazuje neke od njih u vašoj zemlji, a svaki je provjeren na mrežnim stranicama same trgovine; možete odabrati i drugu zemlju ili regiju i vidjeti trgovine u njoj. Ponuda se mijenja, pa je provjerite prije narudžbe. Veliki proizvođači, poput tvrtki Sibelco i Imerys, prodaju industriji; lončari njihove sirovine kupuju preko ovakvih trgovina. Digitalfire, mrežno mjesto s referentnim podacima o keramici, vodi imenik trgovina dobavljača za druge krajeve.
 
 ::shops
 

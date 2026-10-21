@@ -26,7 +26,7 @@ Membuat glasir berarti menimbang **bahan baku** berbentuk bubuk (mineral giling,
 
 ### Tempat membeli
 
-Pembuat keramik membeli dari pemasok keramik, yang menjual tanah liat, bahan glasir, dan perkakas. Tabel menunjukkan beberapa untuk negara Anda, masing-masing diperiksa di situs toko itu sendiri, dan Anda dapat memilih negara lain untuk melihat tokonya. Stok berubah, jadi periksa sebelum memesan. Produsen besar seperti Sibelco dan Imerys menjual ke industri; pembuat keramik membeli bahannya lewat toko seperti ini. Situs acuan keramik Digitalfire menyimpan direktori toko pemasok untuk tempat lain.
+Pembuat keramik membeli dari pemasok keramik, yang menjual tanah liat, bahan glasir, dan perkakas. Tabel menunjukkan beberapa untuk negara Anda, masing-masing diperiksa di situs toko itu sendiri, dan Anda dapat memilih negara atau wilayah lain untuk melihat toko di sana. Stok berubah, jadi periksa sebelum memesan. Produsen besar seperti Sibelco dan Imerys menjual ke industri; pembuat keramik membeli bahannya lewat toko seperti ini. Situs acuan keramik Digitalfire menyimpan direktori toko pemasok untuk tempat lain.
 
 ::shops
 

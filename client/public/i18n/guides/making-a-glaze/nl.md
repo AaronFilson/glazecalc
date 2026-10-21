@@ -26,7 +26,7 @@ Een glazuur{{en: glaze}} aanmaken betekent: poedervormige **grondstoffen** (gema
 
 ### Waar u koopt
 
-Pottenbakkers kopen bij keramiekleveranciers, die klei, glazuurgrondstoffen en gereedschap verkopen. De tabel toont er enkele voor uw land, elk gecontroleerd op de eigen website van de winkel, en u kunt een ander land kiezen om de winkels daar te zien. Het assortiment verandert, dus controleer het voordat u bestelt. Grote producenten zoals Sibelco en Imerys verkopen aan de industrie; pottenbakkers kopen hun grondstoffen via winkels zoals deze. De keramische naslagsite Digitalfire houdt een lijst van leveranciers bij voor andere plaatsen.
+Pottenbakkers kopen bij keramiekleveranciers, die klei, glazuurgrondstoffen en gereedschap verkopen. De tabel toont er enkele voor uw land, elk gecontroleerd op de eigen website van de winkel, en u kunt een ander land of een andere regio kiezen om de winkels daar te zien. Het assortiment verandert, dus controleer het voordat u bestelt. Grote producenten zoals Sibelco en Imerys verkopen aan de industrie; pottenbakkers kopen hun grondstoffen via winkels zoals deze. De keramische naslagsite Digitalfire houdt een lijst van leveranciers bij voor andere plaatsen.
 
 ::shops
 

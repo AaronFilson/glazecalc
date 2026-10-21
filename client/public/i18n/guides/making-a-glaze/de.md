@@ -26,7 +26,7 @@ Eine Glasur{{en: glaze}} ansetzen heißt: pulverförmige **Rohstoffe** (gemahlen
 
 ### Bezugsquellen
 
-Wer töpfert, kauft bei Händlern für Keramikbedarf, die Ton, Glasurrohstoffe und Werkzeug verkaufen. Die Tabelle zeigt einige für Ihr Land, jeweils auf der eigenen Website des Händlers geprüft, und Sie können ein anderes Land wählen, um dessen Händler zu sehen. Das Angebot ändert sich; prüfen Sie es also, bevor Sie bestellen. Große Hersteller wie Sibelco und Imerys verkaufen an die Industrie; Töpferinnen und Töpfer kaufen deren Rohstoffe über Händler wie diese. Für andere Regionen führt die Keramik-Referenzseite Digitalfire ein Verzeichnis von Händlern.
+Wer töpfert, kauft bei Händlern für Keramikbedarf, die Ton, Glasurrohstoffe und Werkzeug verkaufen. Die Tabelle zeigt einige für Ihr Land, jeweils auf der eigenen Website des Händlers geprüft, und Sie können ein anderes Land oder eine andere Region wählen, um die Händler dort zu sehen. Das Angebot ändert sich; prüfen Sie es also, bevor Sie bestellen. Große Hersteller wie Sibelco und Imerys verkaufen an die Industrie; Töpferinnen und Töpfer kaufen deren Rohstoffe über Händler wie diese. Für andere Regionen führt die Keramik-Referenzseite Digitalfire ein Verzeichnis von Händlern.
 
 ::shops
 

@@ -26,7 +26,7 @@ A mázkészítés azt jelenti, hogy egy recept szerint porított **nyersanyagoka
 
 ### Hol vásároljon?
 
-A fazekasok kerámiai szaküzletekben vásárolnak, amelyek agyagot, máznyersanyagokat és eszközöket árulnak. A táblázat mutat néhányat az Ön országából, mindegyiket a bolt saját honlapján ellenőriztük, és ha másik országot választ, annak boltjait is megnézheti. A kínálat változik, ezért rendelés előtt ellenőrizze. Az olyan nagy gyártók, mint a Sibelco és az Imerys, az iparnak adnak el; a fazekasok az ő nyersanyagaikat ilyen boltokon keresztül veszik meg. Más helyek forgalmazóiról a Digitalfire kerámiai szakoldal vezet jegyzéket.
+A fazekasok kerámiai szaküzletekben vásárolnak, amelyek agyagot, máznyersanyagokat és eszközöket árulnak. A táblázat mutat néhányat az Ön országából, mindegyiket a bolt saját honlapján ellenőriztük, és ha másik országot vagy régiót választ, annak boltjait is megnézheti. A kínálat változik, ezért rendelés előtt ellenőrizze. Az olyan nagy gyártók, mint a Sibelco és az Imerys, az iparnak adnak el; a fazekasok az ő nyersanyagaikat ilyen boltokon keresztül veszik meg. Más helyek forgalmazóiról a Digitalfire kerámiai szakoldal vezet jegyzéket.
 
 ::shops
 

@@ -26,7 +26,7 @@ A prepara o glazură{{en: glaze}} înseamnă să cântăriți după o rețetă *
 
 ### De unde să cumpărați
 
-Ceramiștii cumpără de la furnizori de materiale ceramice, care vând argilă, materii prime pentru glazuri și unelte. Tabelul arată câțiva furnizori din țara dumneavoastră, fiecare verificat pe site-ul propriu al magazinului, și puteți alege altă țară pentru a-i vedea magazinele. Oferta se schimbă, așa că verificați înainte de a comanda. Producătorii mari, precum Sibelco și Imerys, vând industriei; ceramiștii își cumpără materiile prime prin magazine ca acestea. Digitalfire, site de referință pentru ceramică, ține un director al magazinelor furnizorilor din alte locuri.
+Ceramiștii cumpără de la furnizori de materiale ceramice, care vând argilă, materii prime pentru glazuri și unelte. Tabelul arată câțiva furnizori din țara dumneavoastră, fiecare verificat pe site-ul propriu al magazinului, și puteți alege altă țară sau regiune pentru a vedea magazinele de acolo. Oferta se schimbă, așa că verificați înainte de a comanda. Producătorii mari, precum Sibelco și Imerys, vând industriei; ceramiștii își cumpără materiile prime prin magazine ca acestea. Digitalfire, site de referință pentru ceramică, ține un director al magazinelor furnizorilor din alte locuri.
 
 ::shops
 

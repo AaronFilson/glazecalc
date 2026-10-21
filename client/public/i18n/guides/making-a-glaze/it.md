@@ -26,7 +26,7 @@ Preparare uno smalto{{en: glaze}} significa pesare secondo una ricetta le **mate
 
 ### Dove acquistare
 
-Chi fa ceramica acquista dai fornitori di materiali ceramici, che vendono argilla, materiali per smalti{{en: glaze}} e attrezzi. La tabella ne mostra alcuni per il proprio paese, ciascuno verificato sul sito del negozio stesso, e si può scegliere un altro paese per vederne i negozi. Gli assortimenti cambiano, quindi verificare prima di ordinare. I grandi produttori come Sibelco e Imerys vendono all’industria; chi fa ceramica acquista i loro materiali tramite negozi come questi. Digitalfire, un sito di riferimento sulla ceramica, tiene un elenco di negozi di fornitori per altri paesi.
+Chi fa ceramica acquista dai fornitori di materiali ceramici, che vendono argilla, materiali per smalti{{en: glaze}} e attrezzi. La tabella ne mostra alcuni per il proprio paese, ciascuno verificato sul sito del negozio stesso, e si può scegliere un altro paese o un’altra area per vederne i negozi. Gli assortimenti cambiano, quindi verificare prima di ordinare. I grandi produttori come Sibelco e Imerys vendono all’industria; chi fa ceramica acquista i loro materiali tramite negozi come questi. Digitalfire, un sito di riferimento sulla ceramica, tiene un elenco di negozi di fornitori per altri paesi.
 
 ::shops
 

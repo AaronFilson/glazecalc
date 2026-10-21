@@ -26,7 +26,7 @@ Preparar un esmalte{{en: glaze}} consiste en pesar **materias primas** en polvo 
 
 ### Dónde comprar
 
-Los ceramistas compran a proveedores de cerámica, que venden arcilla, materiales para esmaltes{{en: glaze materials}} y herramientas. La tabla muestra algunos de su país, cada uno comprobado en el sitio web de la propia tienda, y puede elegir otro país para ver las tiendas de allí. Las existencias cambian, así que compruébelo antes de hacer un pedido. Los grandes productores, como Sibelco e Imerys, venden a la industria; los ceramistas compran sus materiales a través de tiendas como estas. Para otros lugares, Digitalfire, un sitio de referencia sobre cerámica, mantiene un directorio de tiendas de proveedores.
+Los ceramistas compran a proveedores de cerámica, que venden arcilla, materiales para esmaltes{{en: glaze materials}} y herramientas. La tabla muestra algunos de su país, cada uno comprobado en el sitio web de la propia tienda, y puede elegir otro país o región para ver las tiendas de allí. Las existencias cambian, así que compruébelo antes de hacer un pedido. Los grandes productores, como Sibelco e Imerys, venden a la industria; los ceramistas compran sus materiales a través de tiendas como estas. Para otros lugares, Digitalfire, un sitio de referencia sobre cerámica, mantiene un directorio de tiendas de proveedores.
 
 ::shops
 

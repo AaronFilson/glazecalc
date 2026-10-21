@@ -57,7 +57,7 @@ test.describe('the page of a standard material', () => {
       'href',
       '/guides/safe-mixing'
     );
-    await expect(page.getByRole('link', { name: 'Glaze safety at home' })).toHaveAttribute(
+    await expect(page.getByRole('link', { name: "Don't poison your family" })).toHaveAttribute(
       'href',
       '/guides/home-safety'
     );
