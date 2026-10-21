@@ -8,6 +8,7 @@ import { AuthService } from '../../core/auth.service';
 import { routes } from '../../app.routes';
 import { askBeforeLeaving } from '../../core/leave.guard';
 import { Additive, Material, Recipe, RecipeMaterial } from '../../core/models';
+import { PendingRecipeService } from '../../core/pending-recipe.service';
 import { PreferencesService } from '../../core/preferences.service';
 import { answer, API, fieldProblem, httpMock, settle, testProviders, text } from '../../testing/test-providers';
 import { MOLAR_MASS } from '../../../../lib/chemistry';
@@ -122,6 +123,32 @@ describe('RecipePage', () => {
     if (!button) throw new Error('no button ' + label);
     button.click();
   };
+
+  it('opens a recipe handed over by Solve for a target as a new recipe, not saved yet, and links to it', async () => {
+    TestBed.inject(PendingRecipeService).put({
+      title: 'Solved for a target',
+      notes: 'Made by Solve for a target.',
+      materials: [
+        { ...WHITING, amount: '20.0' },
+        { ...SILICA, amount: '80.0' }
+      ],
+      firing: 'mid'
+    });
+    const { fixture, page } = await create();
+    expect(page['title']()).toBe('Solved for a target');
+    expect(page['notes']()).toBe('Made by Solve for a target.');
+    expect(page['lines']().map((line: Material) => line.name)).toEqual(['Whiting', 'Silica']);
+    expect(page['firing']()).toBe('mid');
+    expect(page['savedId']()).toBeNull();
+    expect(text(fixture, '.recipe-status')).toBe('Not saved yet');
+    // Taken once: the next visit starts empty.
+    expect(TestBed.inject(PendingRecipeService).take()).toBeNull();
+    const links = [...(fixture.nativeElement as HTMLElement).querySelectorAll('.recipe-tools a')];
+    expect(links.map((a) => [a.textContent?.trim(), a.getAttribute('href')])).toContainEqual([
+      'Solve for a target',
+      '/solve'
+    ]);
+  });
 
   it("lists the hazards of the recipe's materials from the library as it is now, and offers its cost", async () => {
     const fixture = TestBed.createComponent(RecipePage);

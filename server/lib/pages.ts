@@ -70,6 +70,7 @@ export const APP_PAGES = [
   '/recipe',
   '/import',
   '/blends',
+  '/solve',
   '/material',
   '/additive',
   '/firing',

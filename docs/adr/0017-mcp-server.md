@@ -36,7 +36,9 @@ an assistant to act for one person that is not their web session.
 - **Public tools need no account** (`server/mcp/tools/public.ts`): `search_materials`,
   `get_material`, `analyze_recipe`, `check_limits`, `convert_cone_temperature`,
   `suggest_substitutes` and `match_from_materials` (which say how near they come, oxide by oxide:
-  [ADR 12](0012-choosing-materials.md#amended-how-near-a-match-comes)), and (`server/mcp/tools/blends.ts`)
+  [ADR 12](0012-choosing-materials.md#amended-how-near-a-match-comes)), `solve_target` (a recipe for a
+  target unity formula or analysis from named materials, or the shelf for a caller that may read it:
+  [ADR 26](0026-target-and-solve.md)), and (`server/mcp/tools/blends.ts`)
   `blend_recipes`: the test tiles of a line or triaxial blend between two or three recipes, each
   with its recipe, key unity formula figures, expansion, limit cautions and, with a firing, its
   cone fit, or a comparison of two recipes. A calculation, not a test result. Each runs the app's own code on the standard
@@ -119,7 +121,7 @@ an assistant to act for one person that is not their web session.
   minute and 2,000 a day per address; with one, 300 and 20,000 per account (raised from 120 and
   5,000 on 2026-10-18, for assistants that work with subagents; a token can be revoked, an address
   cannot). The tools that fit amounts (`suggest_substitutes`, `match_from_materials`,
-  `match_with_what_i_have`) are also limited to 10 a minute per caller. A JSON-RPC batch is refused (400, `-32600`) before the SDK, so
+  `match_with_what_i_have`, `solve_target`) are also limited to 10 a minute per caller. A JSON-RPC batch is refused (400, `-32600`) before the SDK, so
   each request is one message: 2025-06-18 removed batches, and neither 2025-11-25 nor 2026-07-28
   has them (a 2025-03-26 client that batches is refused too). One address may keep at most 3
   subscription streams (`subscriptions/listen`) open, of the SDK's 1,024, and a stream ends when

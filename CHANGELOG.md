@@ -13,6 +13,15 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   the Latin full stop (the owner's choice). Each was translated, reviewed in six groups, made consistent across its files
   and back-translated blind (the safety guides and every warning); a native potter's check of the terms marked in the
   style sheets is still welcome. The README counts 34 languages.
+- **Target & Solve** (docs/adr/0026-target-and-solve.md). A new page, Solve for a target (`/solve`,
+  linked from the recipe page and from Match with what I have): type a unity formula or an oxide
+  analysis, or paste one from another app, and get a recipe in percent from the materials you have
+  on hand (or any you choose), with how near each oxide comes (close, off or far, and the whole
+  close, fair or poor), what each material does, the cautions the recipe page gives, the limits
+  panel and the hazards. "Open as a new recipe" puts it on the recipe page, not saved yet. It runs
+  on the same engine as Match with what I have (`solveTarget` in `lib/recipe/solve.js`). The MCP
+  server has it as `solve_target`, a public tool: the materials by name, or `onHand` for a caller
+  that may read the shelf. English only.
 - **Higher cones, for porcelain** (docs/adr/0021-recipe-firing.md, amended
   2026-10-20). Orton cones have a temperature to cone 15 (1431 °C, Orton's older chart for large
   cones at 150 °C an hour, the only Orton figure above 14 we found); cones 16 to 42 are taken

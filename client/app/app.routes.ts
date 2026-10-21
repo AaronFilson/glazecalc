@@ -204,6 +204,15 @@ export const routes: Routes = [
     loadComponent: () => import('./pages/blends/blends-page').then((m) => m.BlendsPage)
   },
   {
+    // Target & Solve (docs/adr/0026-target-and-solve.md): a recipe from a target unity formula or analysis.
+    path: 'solve',
+    title: marker('titles.solve'),
+    canActivate: [signedInGuard],
+    providers: [provideTranslocoScope('recipe', 'records')],
+    resolve: { messages: scopeTranslations },
+    loadComponent: () => import('./pages/solve/solve-page').then((m) => m.SolvePage)
+  },
+  {
     path: 'material',
     title: marker('titles.material'),
     canActivate: [signedInGuard],
