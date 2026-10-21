@@ -46,8 +46,12 @@ export const resourceMetadata = () => ({
 /** A JSON-RPC error body, as MCP clients read refusals. */
 export const rpcError = (code: number, message: string) => ({ jsonrpc: '2.0', error: { code, message }, id: null });
 
-/** 401 for an Authorization header that is not a working access token. */
-const refuse = (res: Response, error = 'invalid_token'): void => {
+/**
+ * 401 for an Authorization header that is not a working access token, with
+ * the challenge that sends an app to refresh or sign in again; also once an
+ * address is over its limit on such tokens (index.ts, limits.badTokenLimit).
+ */
+export const refuseToken = (res: Response, error = 'invalid_token'): void => {
   res
     .status(401)
     .set('WWW-Authenticate', challenge(error, 'The access token is not valid, has expired or was revoked'))
@@ -68,9 +72,9 @@ export const mcpAuth = async (req: Request, res: Response, next: NextFunction): 
   }
   const token = accessTokenIn(req);
   // Not Bearer, or a bearer that is no access token (a session's sign-in token above all).
-  if (token === null) return refuse(res, /^Bearer /i.test(header) ? 'invalid_token' : 'invalid_request');
+  if (token === null) return refuseToken(res, /^Bearer /i.test(header) ? 'invalid_token' : 'invalid_request');
   const found = await checkAccessToken(req, token);
-  if (!found) return refuse(res);
+  if (!found) return refuseToken(res);
   if (!allows(found.scopes, 'recipes:read')) {
     res
       .status(403)

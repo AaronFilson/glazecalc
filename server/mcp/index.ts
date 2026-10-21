@@ -12,12 +12,14 @@
 // and the request's cookies and Authorization header never reach the SDK.
 import express, { type NextFunction, type Request, type Response } from 'express';
 import { createMcpHandler, InMemoryServerEventBus } from '@modelcontextprotocol/server';
-import { ipKeyGenerator } from 'express-rate-limit';
 import * as log from '../lib/log.ts';
 import * as limits from '../lib/rate_limit.ts';
 import * as site from '../lib/site.ts';
-import { mcpAuth, resourceMetadata, rpcError, signIn, stepUp } from './auth.ts';
+import { mcpAuth, refuseToken, resourceMetadata, rpcError, signIn, stepUp } from './auth.ts';
 import { makeServer } from './server.ts';
+
+/** Access tokens that do not work, per address: over the limit still 401 with the challenge, never 429 (rate_limit.ts). */
+const badTokens = limits.badTokenLimit((_req, res) => refuseToken(res));
 
 /** The largest request body taken: far more than 40 recipe lines need. */
 export const MOST_BODY = '256kb';
@@ -52,9 +54,15 @@ const checkHostAndOrigin = (req: Request, res: Response, next: NextFunction): vo
     return;
   }
   // A browser always says where a request comes from; only the site itself may
-  // call from a page. Assistants and scripts send no Origin.
+  // call from a page. Assistants and scripts send no Origin. Compared as
+  // written, whole: "null" (a sandboxed frame, a file), a slash at the end,
+  // other letter cases and two Origin headers (which arrive joined) are all
+  // refused. Before the token check and the limits, so a refused request
+  // counts against nobody.
   const origin = req.headers.origin;
   if (origin && origin !== site.origin()) {
+    // The value, so the real-client test on staging can see whether an app sends one (docs/integrations/directories.md).
+    log.debug('MCP request from another origin refused', { origin: String(origin).slice(0, 200) });
     res.status(403).json(rpcError(-32000, 'Requests from other sites are not accepted.'));
     return;
   }
@@ -111,9 +119,12 @@ const send = async (answer: globalThis.Response, res: Response, signal: AbortSig
 
 /**
  * At most this many subscription streams (subscriptions/listen) open at once
- * from one address, so one cannot hold all the SDK's 1,024 for everyone else.
+ * for one caller (auth.ts caller.key: an account, whichever of its tokens, or
+ * an address without a token), so one cannot hold all the SDK's 1,024 for
+ * everyone else. Per account when signed in, since many people's apps share
+ * the few addresses of Claude's and ChatGPT's servers.
  */
-export const MOST_STREAMS_PER_ADDRESS = 3;
+export const MOST_STREAMS = 3;
 const openStreams = new Map<string, number>();
 
 /** How many subscription streams are open now (the tests). */
@@ -159,10 +170,11 @@ mcpRouter.post(
     }
     next();
   },
-  limits.accessTokens,
+  badTokens,
   mcpAuth,
   limits.mcpMinute,
   limits.mcpDay,
+  limits.mcpAnyoneAll,
   express.json({ limit: MOST_BODY }),
   refuseBatches,
   signIn,
@@ -170,21 +182,21 @@ mcpRouter.post(
   async (req, res) => {
     const caller = req.mcpCaller!;
     const listen = isListen(req.body);
-    const address = 'ip:' + ipKeyGenerator(req.ip ?? 'unknown');
+    const streamKey = caller.key;
     if (listen) {
-      const open = openStreams.get(address) ?? 0;
-      if (open >= MOST_STREAMS_PER_ADDRESS) {
+      const open = openStreams.get(streamKey) ?? 0;
+      if (open >= MOST_STREAMS) {
         res
           .status(429)
           .json(
             rpcError(
               -32000,
-              `Too many subscription streams are open from this address (at most ${MOST_STREAMS_PER_ADDRESS}). Close one and try again.`
+              `Too many subscription streams are open for you (at most ${MOST_STREAMS}). Close one and try again.`
             )
           );
         return;
       }
-      openStreams.set(address, open + 1);
+      openStreams.set(streamKey, open + 1);
     }
     const gone = new AbortController();
     const abort = () => gone.abort();
@@ -206,9 +218,9 @@ mcpRouter.post(
     } finally {
       res.off('close', abort);
       if (listen) {
-        const left = (openStreams.get(address) ?? 1) - 1;
-        if (left > 0) openStreams.set(address, left);
-        else openStreams.delete(address);
+        const left = (openStreams.get(streamKey) ?? 1) - 1;
+        if (left > 0) openStreams.set(streamKey, left);
+        else openStreams.delete(streamKey);
       }
     }
   }

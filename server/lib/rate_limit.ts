@@ -1,7 +1,7 @@
 import type { Request, Response } from 'express';
 import { MemoryStore, type Options, rateLimit } from 'express-rate-limit';
 import { type MessageCode, say } from './messages.ts';
-import { accessTokenIn, checkAccessToken } from './token_auth.ts';
+import { accessTokenIn, checkAccessToken, invalidToken } from './token_auth.ts';
 
 // Limits per client address, unless they say otherwise. In production nginx
 // passes the address in X-Forwarded-For, which server/app.ts trusts for exactly
@@ -108,18 +108,28 @@ export const passwordCheck = limiter(15, 10, 'too-many-attempts', {
  * only requests that carry one are counted, and only those refused with 401.
  * A token that works is checked first and never counted or held up, so
  * someone sending bad tokens from a shared address (a VPN exit, a school)
- * cannot stop the scripts of others there. Guessing tokens (a 2^256 search;
- * the checksum turns away made-up ones before the database is asked) stops
- * quickly: once over, every token that does not work gets 429.
+ * cannot stop the scripts of others there.
+ *
+ * Once over, a token that does not work is still answered 401 with its
+ * challenge (`refuse`), never 429. An app takes a 401 as "refresh, or sign in
+ * again", and a 429 as "wait": Claude's and ChatGPT's servers send every
+ * person's expired tokens from a few addresses, so a 429 there would keep
+ * everyone behind them from reconnecting. Guessing gains nothing either way
+ * (a 2^256 search; the checksum turns away made-up personal tokens before the
+ * database is asked).
  */
-export const accessTokens = limiter(15, 30, 'too-many-tokens', {
-  skip: async (req) => {
-    const token = accessTokenIn(req);
-    return !token || (await checkAccessToken(req, token)) !== null;
-  },
-  requestWasSuccessful: (_req, res) => res.statusCode !== 401,
-  skipSuccessfulRequests: true
-});
+export const badTokenLimit = (refuse: (req: Request, res: Response) => void) =>
+  limiter(15, 30, 'too-many-tokens', {
+    skip: async (req) => {
+      const token = accessTokenIn(req);
+      return !token || (await checkAccessToken(req, token)) !== null;
+    },
+    requestWasSuccessful: (_req, res) => res.statusCode !== 401,
+    skipSuccessfulRequests: true,
+    handler: (req, res) => refuse(req, res)
+  });
+/** The bad-token limit for the record routes (/api): 401 with RFC 6750's challenge, saying to wait. */
+export const accessTokens = badTokenLimit((_req, res) => invalidToken(res, 'too-many-tokens'));
 
 /**
  * Records moved to the Trash with an access token (DELETE /api/<kind>/delete/:id,
@@ -276,7 +286,12 @@ export const mfaChallenges = limiter(15, 30, 'too-many-attempts', {
 // The authorization server for AI assistants (server/oauth/, docs/adr/0024),
 // per address unless they say otherwise. Its refusals are OAuth's shape,
 // { error, error_description }, which the apps read.
-const oauthLimiter = (minutes: number, limit: number, code: MessageCode, more: Parameters<typeof limiter>[3] = {}) =>
+const oauthLimiter = (
+  minutes: number,
+  limit: Parameters<typeof limiter>[1],
+  code: MessageCode,
+  more: Parameters<typeof limiter>[3] = {}
+) =>
   limiter(minutes, limit, code, {
     handler: (_req, res) => {
       res.status(429).json({ error: 'too_many_requests', error_description: say(code).msg });
@@ -307,8 +322,60 @@ export const oauthRegisterAll = oauthLimiter(24 * 60, OAUTH_REGISTRATIONS_A_DAY,
  * address.
  */
 export const oauthAuthorize = limiter(15, 100, 'too-many-oauth');
-/** The token endpoint: an app refreshes about once an hour, so this is far above what many apps behind one address need. */
-export const oauthToken = oauthLimiter(15, 300, 'too-many-oauth');
+/**
+ * The token endpoint (POST /oauth/token). Every refresh of everyone's
+ * connection to Claude or ChatGPT comes from those apps' few servers, so a
+ * count of every request per address would soon stop them all. A code or
+ * refresh token that works proves its connection, so per address only what
+ * is refused is counted (a guesser's requests look like that), 300 in 15
+ * minutes; a 429 is not counted there, so one account over its own count
+ * (countTokenGrant, from server/oauth/provider.ts findAccount) uses up nothing
+ * of the others at its address. Everyone's requests together have a ceiling,
+ * so the server's work stays bounded whatever the addresses.
+ */
+export const OAUTH_TOKEN_LIMITS = { failures: 300, account: 100 } as const;
+/**
+ * The limits on everyone together (per minute for MCP without a token, per 15
+ * minutes at the token endpoint). Read at each request, so the tests can
+ * lower them; nothing else changes them.
+ */
+export const CEILINGS = { mcpAnyone: 3000, oauthToken: 20000 };
+export const oauthTokenFailures = oauthLimiter(15, OAUTH_TOKEN_LIMITS.failures, 'too-many-oauth', {
+  skipSuccessfulRequests: true,
+  requestWasSuccessful: (_req, res) => res.statusCode < 400 || res.statusCode === 429
+});
+export const oauthTokenAll = oauthLimiter(15, () => CEILINGS.oauthToken, 'too-many-oauth', {
+  keyGenerator: () => 'oauth-token-all'
+});
+
+// One account's codes and refresh tokens used at the token endpoint, in 15-minute windows.
+const tokenGrants = new Map<string, { start: number; count: number }>();
+const TOKEN_GRANT_WINDOW_MS = 15 * 60 * 1000;
+
+/**
+ * Counts one code or refresh token of an account used at the token endpoint;
+ * false once over OAUTH_TOKEN_LIMITS.account in 15 minutes. Each connection
+ * refreshes about once an hour, so this is far above what a person's apps
+ * need, and stops one connection's app from refreshing without end.
+ */
+export const countTokenGrant = (userId: string, now = Date.now()): boolean => {
+  if (process.env.RATE_LIMITS === 'off') return true;
+  const seen = tokenGrants.get(userId);
+  if (!seen || now - seen.start >= TOKEN_GRANT_WINDOW_MS) {
+    tokenGrants.set(userId, { start: now, count: 1 });
+    // Old windows go as new ones start, so the map stays small.
+    if (tokenGrants.size > 10000) {
+      for (const [key, value] of tokenGrants) if (now - value.start >= TOKEN_GRANT_WINDOW_MS) tokenGrants.delete(key);
+    }
+    return true;
+  }
+  if (seen.count >= OAUTH_TOKEN_LIMITS.account) return false;
+  seen.count++;
+  return true;
+};
+
+/** Forgets the accounts' token-endpoint counts (the tests). */
+export const resetTokenGrants = (): void => tokenGrants.clear();
 /** The rest of /oauth/ (revocation, its keys). */
 export const oauthOther = oauthLimiter(15, 100, 'too-many-oauth');
 /** The consent API (GET and POST /api/connect/:uid), per address. */
@@ -340,3 +407,13 @@ export const mcpDay = limiter(
   'too-many-mcp',
   { keyGenerator: (req) => mcpKey(req) + ':day' }
 );
+/**
+ * Every request without a token, from everyone together, a minute: a ceiling
+ * on the public tools' work whatever the addresses (many people's requests
+ * through Claude or ChatGPT come from a few of their servers' addresses, and
+ * a stranger may have many). Calls with a token are counted per account only.
+ */
+export const mcpAnyoneAll = limiter(1, () => CEILINGS.mcpAnyone, 'too-many-mcp', {
+  skip: (req) => withToken(req),
+  keyGenerator: () => 'mcp-anyone-all'
+});

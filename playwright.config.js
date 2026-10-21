@@ -21,6 +21,11 @@ process.env.E2E_MAIL_DIR = mailDir;
 // e2e/oauth.spec.js on this port: the server's provider endpoints point there.
 const oauthPort = process.env.E2E_OAUTH_PORT || String(Number(port) + 1000);
 process.env.E2E_OAUTH_PORT = oauthPort;
+// The apps named by their address (CIMD), served by e2e/connect.spec.js on
+// this port: the server fetches their documents and keys there, never from
+// the internet (server/oauth/cimd.ts, CIMD_TEST_BASE).
+const cimdPort = process.env.E2E_CIMD_PORT || String(Number(port) + 2000);
+process.env.E2E_CIMD_PORT = cimdPort;
 
 module.exports = defineConfig({
   testDir: './e2e',
@@ -71,7 +76,11 @@ module.exports = defineConfig({
       GITHUB_CLIENT_ID: 'github-client',
       GITHUB_CLIENT_SECRET: 'github-secret',
       MICROSOFT_CLIENT_ID: '00000000-1111-2222-3333-444444444444',
-      MICROSOFT_CLIENT_SECRET: 'microsoft-secret'
+      MICROSOFT_CLIENT_SECRET: 'microsoft-secret',
+      // Apps named by their address, from the tests' own stand-in (test use only); and ChatGPT's way of
+      // signing token requests on, so the browser tests run the whole of it (the server tests run it off too).
+      CIMD_TEST_BASE: 'http://127.0.0.1:' + cimdPort,
+      OAUTH_CIMD_AUTH: 'private_key_jwt'
     }
   }
 });

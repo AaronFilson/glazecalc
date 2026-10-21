@@ -224,27 +224,49 @@ export const cautionOut = (caution: Caution, language: string) => ({
 export { languageOf };
 
 // The tools that fit amounts (substitutions, matching the materials on hand)
-// work hardest: FITS_PER_MINUTE each minute for each caller, on top of the
-// request limits (server/lib/rate_limit.ts). Kept in memory, as those are.
+// work hardest: FITS_PER_MINUTE each minute for each caller (an account, or an
+// address without a token), on top of the request limits
+// (server/lib/rate_limit.ts); and FITS_ANYONE_ALL_PER_MINUTE for every caller
+// without a token together, so the server's work stays bounded however many
+// addresses ask. Kept in memory, as those are.
 export const FITS_PER_MINUTE = 10;
+export const FITS_ANYONE_ALL_PER_MINUTE = 200;
+const ANYONE_ALL = 'anyone-all';
 const fits = new Map<string, { start: number; count: number }>();
+
+/** Whether one more fit for this key would be over `limit`; counts it when not. */
+const overFits = (key: string, limit: number, now: number): boolean => {
+  const seen = fits.get(key);
+  if (!seen || now - seen.start >= 60 * 1000) {
+    fits.set(key, { start: now, count: 1 });
+    // Old windows go as new ones start, so the map stays small.
+    if (fits.size > 10000) for (const [old, value] of fits) if (now - value.start >= 60 * 1000) fits.delete(old);
+    return false;
+  }
+  if (seen.count >= limit) return true;
+  seen.count++;
+  return false;
+};
+
+const tooManyFits = (limit: number, forYou: boolean) =>
+  new ToolProblem(
+    forYou
+      ? `Too many substitutions or matches were worked out for you in the last minute (at most ${limit}). Please wait a minute and try again.`
+      : 'Too many substitutions or matches are being worked out for people without a Glazecalc account just now. Please wait a minute and try again, or connect your account.'
+  );
 
 /** Counts one fit for the caller; a ToolProblem once over the limit. */
 export const countFit = (caller: Caller, now = Date.now()): void => {
   if (process.env.RATE_LIMITS === 'off') return;
-  const seen = fits.get(caller.key);
-  if (!seen || now - seen.start >= 60 * 1000) {
-    fits.set(caller.key, { start: now, count: 1 });
-    // Old windows go as new ones start, so the map stays small.
-    if (fits.size > 10000) for (const [key, value] of fits) if (now - value.start >= 60 * 1000) fits.delete(key);
-    return;
+  if (!caller.userId) {
+    // The ceiling for everyone without a token first: a caller turned away there uses none of its own count.
+    const all = fits.get(ANYONE_ALL);
+    if (all && now - all.start < 60 * 1000 && all.count >= FITS_ANYONE_ALL_PER_MINUTE) {
+      throw tooManyFits(FITS_ANYONE_ALL_PER_MINUTE, false);
+    }
   }
-  if (seen.count >= FITS_PER_MINUTE) {
-    throw new ToolProblem(
-      `Too many substitutions or matches were worked out for you in the last minute (at most ${FITS_PER_MINUTE}). Please wait a minute and try again.`
-    );
-  }
-  seen.count++;
+  if (overFits(caller.key, FITS_PER_MINUTE, now)) throw tooManyFits(FITS_PER_MINUTE, true);
+  if (!caller.userId) overFits(ANYONE_ALL, Number.POSITIVE_INFINITY, now);
 };
 
 /** Forgets the fit counts (the tests). */

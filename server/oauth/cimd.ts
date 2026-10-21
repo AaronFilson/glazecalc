@@ -21,10 +21,36 @@
 //
 // oidc-provider checks the rest (the document's client_id is the address, no
 // secrets) and keeps a document for CACHE_SECONDS, from 1 to 24 hours.
+//
+// Apps that sign their token requests (private_key_jwt), as ChatGPT's
+// document says it does, only with OAUTH_CIMD_AUTH=private_key_jwt
+// (cimdAuthMode; docs/adr/0024, "Amended: ChatGPT's document"). Their public
+// keys (a JWKS) are fetched through the same guard, from an address on the
+// app's own site (checked in server/oauth/provider.ts checkClientMetadata),
+// with a budget of their own (JWKS_FETCH_LIMITS), kept at most 15 minutes
+// (JWKS_CACHE_SECONDS) so a key the app replaces stops working soon, and only
+// a set of 1 to 5 public signing keys is taken (checkJwks).
+import crypto from 'node:crypto';
 import dns from 'node:dns';
 import https from 'node:https';
 import net from 'node:net';
 import { ipKeyGenerator } from 'express-rate-limit';
+
+/**
+ * How apps named by their address may authenticate at the token endpoint
+ * (OAUTH_CIMD_AUTH), off by default:
+ *   off              only public apps (token_endpoint_auth_method none), as before;
+ *   public           an app whose document also lists none among its
+ *                    token_endpoint_auth_methods_supported (ChatGPT's) is
+ *                    taken as a public app, and nothing is fetched from its jwks_uri;
+ *   private_key_jwt  as public, and an app whose document asks for
+ *                    private_key_jwt signs every token request with its own key.
+ */
+export type CimdAuthMode = 'off' | 'public' | 'private_key_jwt';
+export const cimdAuthMode = (): CimdAuthMode => {
+  const mode = process.env.OAUTH_CIMD_AUTH;
+  return mode === 'public' || mode === 'private_key_jwt' ? mode : 'off';
+};
 
 export const FETCH_TIMEOUT_MS = 5000;
 export const MOST_BYTES = 5 * 1024;
@@ -170,11 +196,42 @@ const realNetwork: Network = {
     })
 };
 
-let network: Network = realNetwork;
+/**
+ * The browser tests' stand-in (CIMD_TEST_BASE, outside production only, and
+ * only an http address on 127.0.0.1): every name is taken as a public
+ * address, and each GET goes to <base>/<host><path> on the tests' own server,
+ * so the real server is tested whole with nothing fetched from the internet.
+ */
+const testNetwork = (base: string): Network => ({
+  lookup: async () => [{ address: '93.184.215.14', family: 4 }],
+  get: async ({ hostname, path }, signal) => {
+    const res = await fetch(base + '/' + hostname + path, { redirect: 'manual', ...(signal && { signal }) });
+    const body = Buffer.from(await res.arrayBuffer());
+    if (body.length > MOST_BYTES) throw new Error('response too large');
+    const headers: Record<string, string> = {};
+    res.headers.forEach((value, name) => {
+      headers[name] = value;
+    });
+    return { status: res.status, headers, body };
+  }
+});
 
-/** Puts a stand-in for the network in place (the tests), or the real one back with no argument. */
+/** CIMD_TEST_BASE when it may be used: outside production, and only as http://127.0.0.1:<port>; else null. */
+export const cimdTestBase = (): string | null => {
+  const base = process.env.CIMD_TEST_BASE;
+  return process.env.NODE_ENV !== 'production' && base && /^http:\/\/127\.0\.0\.1:\d{1,5}$/.test(base) ? base : null;
+};
+
+const defaultNetwork = (): Network => {
+  const base = cimdTestBase();
+  return base ? testNetwork(base) : realNetwork;
+};
+
+let network: Network = defaultNetwork();
+
+/** Puts a stand-in for the network in place (the tests), or the usual one back with no argument. */
 export const useNetwork = (replacement?: Network): void => {
-  network = replacement ?? realNetwork;
+  network = replacement ?? defaultNetwork();
 };
 
 // The fetches of the last minute, in memory as the other limits: by address, by host, and all of them.
@@ -216,21 +273,14 @@ export const countFetch = ({ address, host }: FetchFor, now = Date.now()): boole
   return true;
 };
 
-/** Forgets the fetches counted (the tests). */
+/** Forgets the fetches counted (the tests), and the key sets kept. */
 export const resetFetchCount = (): void => {
   fetchTimes = new Map();
+  keySets.clear();
 };
 
-/**
- * The fetch oidc-provider makes every outgoing request with (its `fetch`
- * setting): only a GET of an address allowedClientIdUrl takes, to a public
- * address, under the limits above. Rejects otherwise, which oidc-provider
- * answers as a client it cannot use.
- */
-export const guardedFetch = async (input: string | URL, init: RequestInit = {}): Promise<Response> => {
-  const url = String(input);
-  if ((init.method ?? 'GET').toUpperCase() !== 'GET') throw new Error('only GET');
-  if (!allowedClientIdUrl(url)) throw new Error('address not allowed');
+/** One GET of an allowed address, through the guard: resolved here, every address public, the checked one used. */
+const fetchRaw = async (url: string, init: RequestInit): Promise<RawAnswer> => {
   const target = new URL(url);
   const hostname = target.hostname;
   const signals = [AbortSignal.timeout(FETCH_TIMEOUT_MS), ...(init.signal ? [init.signal] : [])];
@@ -250,15 +300,163 @@ export const guardedFetch = async (input: string | URL, init: RequestInit = {}):
       throw new Error('not JSON');
     }
   }
+  return answer;
+};
+
+/** A Response for oidc-provider, with only the headers it reads. */
+const responseOf = (status: number, body: Buffer | null, headerValues: Record<string, string | undefined>) => {
   const headers = new Headers();
-  for (const name of ['content-type', 'cache-control', 'expires']) {
-    const value = answer.headers[name];
-    if (value) headers.set(name, value);
-  }
+  for (const [name, value] of Object.entries(headerValues)) if (value) headers.set(name, value);
   // A Response has no body for these statuses; the body is not wanted then anyway.
-  const empty = answer.status < 200 || answer.status === 204 || answer.status === 304 || answer.status >= 300;
-  return new Response(empty ? null : new Uint8Array(answer.body), {
-    status: answer.status < 200 || answer.status > 599 ? 502 : answer.status,
+  const empty = status < 200 || status === 204 || status === 304 || status >= 300;
+  return new Response(empty || !body ? null : new Uint8Array(body), {
+    status: status < 200 || status > 599 ? 502 : status,
     headers
   });
+};
+
+/**
+ * The fetch oidc-provider makes every outgoing request with (its `fetch`
+ * setting): only a GET of an address allowedClientIdUrl takes, to a public
+ * address, under the limits above. Rejects otherwise, which oidc-provider
+ * answers as a client it cannot use. With OAUTH_CIMD_AUTH=private_key_jwt, a
+ * fetch of an app's keys goes on to fetchKeySet.
+ */
+export const guardedFetch = async (input: string | URL, init: RequestInit = {}): Promise<Response> => {
+  const url = String(input);
+  if ((init.method ?? 'GET').toUpperCase() !== 'GET') throw new Error('only GET');
+  if (!allowedClientIdUrl(url)) throw new Error('address not allowed');
+  if (isKeySetFetch(init)) return fetchKeySet(url, init);
+  const answer = await fetchRaw(url, init);
+  return responseOf(answer.status, answer.body, {
+    'content-type': answer.headers['content-type'],
+    'cache-control': answer.headers['cache-control'],
+    expires: answer.headers['expires']
+  });
+};
+
+// An app's keys (private_key_jwt). oidc-provider fetches two things only: an
+// app's document, always with redirect: 'manual' (and client_documents.ts
+// asks the same), and the keys at the jwks_uri of an app whose document
+// passed checkClientMetadata, without. Sector identifiers and request objects
+// are refused or off. So with the mode on, a fetch without redirect: 'manual'
+// is a key set, and is held to the stricter rules here: were oidc-provider
+// ever to fetch a document another way, it would fail checkJwks and be
+// refused, never let through.
+
+/** The signing algorithms taken for an app's client assertions: asymmetric only, never HS* or none. */
+export const CLIENT_KEY_ALGS = ['RS256', 'PS256', 'ES256'] as const;
+/** Key-set fetches a minute: for one host, and for everyone together (the asker is the app's own server). */
+export const JWKS_FETCH_LIMITS = { host: 6, everyone: 60 } as const;
+/** How long a fetched key set is used: its max-age, held between a minute and 15 minutes. */
+export const JWKS_CACHE_SECONDS = { min: 60, max: 15 * 60 } as const;
+/** At most this many keys in an app's set. */
+export const MOST_KEYS = 5;
+/** At most this many key sets kept in memory. */
+const MOST_KEY_SETS = 200;
+
+const isKeySetFetch = (init: RequestInit): boolean =>
+  cimdAuthMode() === 'private_key_jwt' && init.redirect !== 'manual';
+
+/** Members of a private or symmetric key: never in a public key set. */
+const PRIVATE_MEMBERS = ['d', 'p', 'q', 'dp', 'dq', 'qi', 'oth', 'k'];
+
+/**
+ * Throws unless `value` is a set of 1 to MOST_KEYS public signing keys, each
+ * RSA of at least 2048 bits or EC on P-256, with `use` sig when given, an alg
+ * from CLIENT_KEY_ALGS fitting its type when given, and nothing private.
+ * One bad key refuses the whole set.
+ */
+export const checkJwks = (value: unknown): void => {
+  const keys = (value as { keys?: unknown } | null)?.keys;
+  if (!value || typeof value !== 'object' || !Array.isArray(keys)) throw new Error('not a key set');
+  if (!keys.length || keys.length > MOST_KEYS) throw new Error(`a key set must have 1 to ${MOST_KEYS} keys`);
+  for (const key of keys as unknown[]) {
+    if (!key || typeof key !== 'object' || Array.isArray(key)) throw new Error('a key is not an object');
+    const jwk = key as Record<string, unknown>;
+    if (PRIVATE_MEMBERS.some((member) => member in jwk)) throw new Error('a key set must hold public keys only');
+    if (jwk.use !== undefined && jwk.use !== 'sig') throw new Error('a key must be for signing');
+    if (jwk.kty !== 'RSA' && jwk.kty !== 'EC') throw new Error('a key must be RSA or EC');
+    if (jwk.alg !== undefined) {
+      const fits = jwk.kty === 'RSA' ? ['RS256', 'PS256'] : ['ES256'];
+      if (typeof jwk.alg !== 'string' || !fits.includes(jwk.alg)) throw new Error('a key has an algorithm not taken');
+    }
+    let details: crypto.AsymmetricKeyDetails | undefined;
+    try {
+      details = crypto.createPublicKey({ key: jwk as crypto.JsonWebKey, format: 'jwk' }).asymmetricKeyDetails;
+    } catch {
+      throw new Error('a key cannot be read');
+    }
+    if (jwk.kty === 'RSA' && !((details?.modulusLength ?? 0) >= 2048)) throw new Error('an RSA key is under 2048 bits');
+    if (jwk.kty === 'EC' && details?.namedCurve !== 'prime256v1') throw new Error('an EC key must be on P-256');
+  }
+};
+
+/** How long a key set may be used: its max-age (or Expires), held to JWKS_CACHE_SECONDS. */
+const keySetSeconds = (headers: Record<string, string>, now: number): number => {
+  let seconds: number | undefined;
+  const maxAge = /(?:^|,)\s*max-age\s*=\s*(\d+)/i.exec(headers['cache-control'] ?? '');
+  if (maxAge) seconds = Number(maxAge[1]);
+  else {
+    const expires = Date.parse(headers['expires'] ?? '');
+    if (!Number.isNaN(expires)) seconds = Math.floor((expires - now) / 1000);
+  }
+  return Math.max(JWKS_CACHE_SECONDS.min, Math.min(JWKS_CACHE_SECONDS.max, seconds ?? JWKS_CACHE_SECONDS.min));
+};
+
+// The key sets fetched, by address, until their time is up. oidc-provider
+// keeps keys with each app it has in memory, but makes a new one (and asks
+// again) whenever it reads an app afresh, so they are kept here too.
+const keySets = new Map<string, { body: Buffer; until: number }>();
+let clock = (): number => Date.now();
+
+/** Puts a stand-in clock in place for the key sets kept (the tests), or the real one back with no argument. */
+export const useKeySetClock = (replacement?: () => number): void => {
+  clock = replacement ?? (() => Date.now());
+};
+
+/** Counts one key-set fetch against JWKS_FETCH_LIMITS; false (and not counted) once over. */
+export const countKeySetFetch = (host: string, now = clock()): boolean => {
+  if (process.env.RATE_LIMITS === 'off') return true;
+  const keys = [
+    ['jwks-host:' + host.toLowerCase(), JWKS_FETCH_LIMITS.host],
+    ['jwks-everyone', JWKS_FETCH_LIMITS.everyone]
+  ] as const;
+  if (keys.some(([key, limit]) => recent(key, now).length >= limit)) return false;
+  for (const [key] of keys) fetchTimes.set(key, [...recent(key, now), now]);
+  return true;
+};
+
+const keySetResponse = (body: Buffer, seconds: number): Response =>
+  // max-age only, never Expires: oidc-provider takes the longest of the two (and a minute).
+  responseOf(200, body, { 'content-type': 'application/json', 'cache-control': `max-age=${seconds}` });
+
+/**
+ * An app's key set: the one kept, while its time lasts; otherwise fetched
+ * within JWKS_FETCH_LIMITS, checked (checkJwks) and kept for keySetSeconds.
+ * An answer that is not a key set is never kept, and is refused.
+ */
+const fetchKeySet = async (url: string, init: RequestInit): Promise<Response> => {
+  const now = clock();
+  const kept = keySets.get(url);
+  if (kept && kept.until > now) return keySetResponse(kept.body, Math.ceil((kept.until - now) / 1000));
+  if (!countKeySetFetch(new URL(url).host, now)) throw new Error('key set fetches over the limit');
+  const answer = await fetchRaw(url, init);
+  // Not kept, and no cache headers passed on: an error is never cached.
+  if (answer.status !== 200) return responseOf(answer.status, null, {});
+  let body: unknown;
+  try {
+    body = JSON.parse(answer.body.toString('utf8'));
+  } catch {
+    throw new Error('not JSON');
+  }
+  checkJwks(body);
+  const seconds = keySetSeconds(answer.headers, now);
+  keySets.delete(url);
+  keySets.set(url, { body: answer.body, until: now + seconds * 1000 });
+  for (const old of keySets.keys()) {
+    if (keySets.size <= MOST_KEY_SETS) break;
+    keySets.delete(old);
+  }
+  return keySetResponse(answer.body, seconds);
 };
