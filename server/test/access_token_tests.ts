@@ -311,7 +311,7 @@ describe('access tokens: routes', () => {
     expect(await AccessToken.countDocuments({ userId: user._id, revokedWhy: 'password-reset' })).to.equal(1);
   });
 
-  it('limits tokens that do not work per address, without counting or holding up ones that do', async () => {
+  it('limits tokens that do not work per address, still 401, without counting or holding up ones that do', async () => {
     process.env.RATE_LIMITS = 'on';
     try {
       const good = await makeToken(user);
@@ -324,18 +324,22 @@ describe('access tokens: routes', () => {
           .get('/recipe/getAll')
           .set('Authorization', bearer(mintToken('pat').token));
       }
-      expect(last).to.have.status(429);
+      // Over the limit: still 401 with the challenge (an app refreshes on 401, and waits on 429), saying to wait.
+      expect(last).to.have.status(401);
+      expect(last!.headers['www-authenticate']).to.include('error="invalid_token"');
       expect(last!.body.code).to.equal('too-many-tokens');
       // A token that works, from the same address, is still let in; one that is revoked is not.
       expect(await api().get('/recipe/getAll').set('Authorization', bearer(good))).to.have.status(200);
       const revoked = await makeToken(user, { revokedAt: new Date() });
-      expect(await api().get('/recipe/getAll').set('Authorization', bearer(revoked))).to.have.status(429);
-      // Nor is a made-up one checked against the database: still 429.
+      const refused = await api().get('/recipe/getAll').set('Authorization', bearer(revoked));
+      expect(refused).to.have.status(401);
+      expect(refused.body.code).to.equal('too-many-tokens');
+      // Nor a made-up one.
       expect(
         await api()
           .get('/recipe/getAll')
           .set('Authorization', bearer(mintToken('pat').token))
-      ).to.have.status(429);
+      ).to.have.status(401);
       // A request without a token is not held up.
       expect(await api().get('/recipe/getAll').set('Authorization', bearer(session))).to.have.status(200);
     } finally {

@@ -91,6 +91,25 @@ const rounded = (value: number, places = 3): number => Number(value.toFixed(plac
 const roundAll = (values: Record<string, number>, places = 3): Record<string, number> =>
   Object.fromEntries(Object.entries(values).map(([key, value]) => [key, rounded(value, places)]));
 
+/**
+ * Where a unity formula sits on Stull's chart (the recipe page's chart, lib/recipe/analysis.js): silica and
+ * alumina in moles, their ratio, the region (unfused, matte, semi-matte, bright, underfired; null off the chart,
+ * onChart false) and whether it is in the crazed area. Null without silica or alumina.
+ */
+export const stullOut = (unity: Record<string, number>) => {
+  const point = recipe.stullPoint(unity);
+  return (
+    point && {
+      silica: rounded(point.silica, 2),
+      alumina: rounded(point.alumina, 2),
+      ratio: rounded(point.ratio, 2),
+      region: point.region,
+      onChart: point.region !== null,
+      crazed: point.crazed
+    }
+  );
+};
+
 /** A recipe's unity formula and what goes with it, with the chemistry's warnings in the language. */
 export const analysisOf = (lines: RecipeLine[], language: string) => {
   const result = chemistry.calculateUMF(lines.map((line) => ({ material: line, amount: line.amount })));
@@ -98,6 +117,7 @@ export const analysisOf = (lines: RecipeLine[], language: string) => {
     result,
     out: {
       unityFormula: roundAll(result.umf),
+      stull: stullOut(result.umf),
       groups: roundAll(result.groups),
       silicaToAlumina: result.siAlRatio === null ? null : rounded(result.siAlRatio, 2),
       firedAnalysis: roundAll(result.analysis, 2),
@@ -377,7 +397,7 @@ export const registerPublicTools = (server: McpServer, caller: Caller): void => 
     {
       title: 'Unity formula of a recipe',
       description:
-        "Works out a glaze recipe's unity (Seger) formula, oxide groups, silica to alumina ratio, fired analysis, loss on ignition and calculated thermal expansion, as the Glazecalc app does.",
+        "Works out a glaze recipe's unity (Seger) formula, oxide groups, silica to alumina ratio, fired analysis, loss on ignition and calculated thermal expansion, as the Glazecalc app does. stull says where the recipe sits on Stull's chart (1912, as the recipe page draws it): silica and alumina in moles, the region (unfused, matte, semi-matte, bright or underfired) and whether it falls in the crazed area; a guide to the surface, not a promise.",
       inputSchema: z.object({ lines: linesArg, language: languageArg }),
       annotations: READ_ONLY
     },
@@ -392,7 +412,7 @@ export const registerPublicTools = (server: McpServer, caller: Caller): void => 
     {
       title: 'Check a recipe against limits',
       description:
-        "Checks a glaze recipe for what is past a recommended limit for its firing (too much boron or alkali, too little alumina, too little or too much clay, rising expansion...) and says what the fired glaze will likely do, as the Glazecalc app does. A cone is checked in the band the recipe page gives it (low cone 06-02, mid 1-7, high 8-11); from cone 12 up (band 'top') no published limits reach, so the band's limits are not checked and limitsNote says so. With a firing, coneFit says whether the chemistry looks like that firing's, by Katz's boron rule and Hesselberth & Roy's silica and alumina whatever limit set is chosen: verdict 'cooler' or 'hotter' only when boron and silica or alumina agree on another band; 'fits' (nothing points away, not a pass); 'skipped' where the published figures do not reach (lead, lithium, much soda and potash or zinc, raku, cones 01 to 3, cooler than cone 06 or hotter than cone 10...). Cone 6 against cone 10 is told apart only roughly (strength 'soft'). These are cautions and guides from published figures, not a test and not a guarantee of food safety.",
+        "Checks a glaze recipe for what is past a recommended limit for its firing (too much boron or alkali, too little alumina, too little or too much clay, rising expansion...) and says what the fired glaze will likely do, as the Glazecalc app does. A cone is checked in the band the recipe page gives it (low cone 06-02, mid 1-7, high 8-11); from cone 12 up (band 'top') no published limits reach, so the band's limits are not checked and limitsNote says so. With a firing, coneFit says whether the chemistry looks like that firing's, by Katz's boron rule and Hesselberth & Roy's silica and alumina whatever limit set is chosen: verdict 'cooler' or 'hotter' only when boron and silica or alumina agree on another band; 'fits' (nothing points away, not a pass); 'skipped' where the published figures do not reach (lead, lithium, much soda and potash or zinc, raku, cones 01 to 3, cooler than cone 06 or hotter than cone 10...). Cone 6 against cone 10 is told apart only roughly (strength 'soft'). stull says where the recipe sits on Stull's chart, as analyze_recipe gives it. These are cautions and guides from published figures, not a test and not a guarantee of food safety.",
       inputSchema: z.object({
         lines: linesArg,
         firing: firingArg,
@@ -422,7 +442,7 @@ export const registerPublicTools = (server: McpServer, caller: Caller): void => 
           recipe.coneFit(checks.unityFormula, at.block, { materials: resolved.map((line) => line.name) }),
           lang
         );
-        return ok({ ...checks, ...(fit && { coneFit: fit }) });
+        return ok({ ...checks, stull: analysisOf(resolved, lang).out.stull, ...(fit && { coneFit: fit }) });
       }, lang);
     }
   );

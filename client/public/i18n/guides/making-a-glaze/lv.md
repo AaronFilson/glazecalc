@@ -26,7 +26,7 @@ Sagatavot glazūru{{en: glaze}} nozīmē pēc receptes nosvērt pulverveida **iz
 
 ### Kur iegādāties
 
-Keramiķi iepērkas pie keramikas piegādātājiem, kas pārdod mālu, glazūru izejvielas un instrumentus. Tabulā parādīti daži no tiem jūsu valstī, katrs pārbaudīts veikala paša tīmekļa vietnē, un varat izvēlēties citu valsti, lai redzētu tās veikalus. Preču klāsts mainās, tāpēc pirms pasūtīšanas pārbaudiet. Lielie ražotāji, piemēram, Sibelco un Imerys, pārdod rūpniecībai, bet keramiķi to izejvielas pērk šādos veikalos. Keramikas uzziņu vietnē Digitalfire ir piegādātāju veikalu katalogs arī citām vietām.
+Keramiķi iepērkas pie keramikas piegādātājiem, kas pārdod mālu, glazūru izejvielas un instrumentus. Tabulā parādīti daži no tiem jūsu valstī, katrs pārbaudīts veikala paša tīmekļa vietnē, un varat izvēlēties citu valsti vai reģionu, lai redzētu tur esošos veikalus. Preču klāsts mainās, tāpēc pirms pasūtīšanas pārbaudiet. Lielie ražotāji, piemēram, Sibelco un Imerys, pārdod rūpniecībai, bet keramiķi to izejvielas pērk šādos veikalos. Keramikas uzziņu vietnē Digitalfire ir piegādātāju veikalu katalogs arī citām vietām.
 
 ::shops
 

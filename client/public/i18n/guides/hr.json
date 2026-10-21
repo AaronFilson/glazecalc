@@ -27,7 +27,7 @@
       "text": "Prašina, zaštitne maske, čišćenje, sirovine koje traže najviše opreza i odzračivanje peći."
     },
     "homeSafety": {
-      "title": "Sigurnost glazura kod kuće: djeca, kućni ljubimci i peć",
+      "title": "Ne otrujte svoju obitelj",
       "text": "Keramika kod kuće uz djecu i kućne ljubimce: čuvanje, prašina, peć i što učiniti ako se nešto proguta."
     },
     "firing": {
@@ -43,7 +43,7 @@
   "contents": "Na ovoj stranici",
   "poison": {
     "numbersFor": "Brojevi za",
-    "choose": "Odaberite svoju zemlju",
+    "choose": "Odaberite svoju zemlju ili regiju",
     "label": "Koga nazvati: {region}",
     "caption": "Koga nazvati: {region} (brojevi provjereni {date})",
     "for": "Za što",
@@ -61,7 +61,7 @@
     "animalsNone": "Životinje",
     "vet": "Nazovite svog veterinara.",
     "checkedOn": "Provjereno na:",
-    "choosePrompt": "Odaberite svoju zemlju da biste vidjeli koga ondje nazvati.",
+    "choosePrompt": "Odaberite svoju zemlju ili regiju da biste vidjeli koga ondje nazvati.",
     "ministry": "Stranica ministarstva zdravstva: <link>{name}</link>."
   },
   "density": {
@@ -89,7 +89,7 @@
     },
     "none": "{region}: nismo pronašli nijednu trgovinu koja prodaje sirovine za glazure.",
     "unknown": "{region}: trgovine još nismo tražili.",
-    "choosePrompt": "Odaberite svoju zemlju da biste vidjeli trgovine u njoj."
+    "choosePrompt": "Odaberite svoju zemlju ili regiju da biste vidjeli trgovine u njoj."
   },
   "silica": {
     "limitIn": "Granična vrijednost u",
@@ -135,7 +135,7 @@
     "noData": "{region}: graničnu vrijednost još nismo potvrdili.",
     "agency": "Nacionalno tijelo za zaštitu na radu: <link>{name}</link>.",
     "agencySilica": "Njegova <link>stranica o silicijevu dioksidu</link>.",
-    "choosePrompt": "Odaberite svoju zemlju da biste vidjeli njezinu graničnu vrijednost."
+    "choosePrompt": "Odaberite svoju zemlju ili regiju da biste vidjeli njezinu graničnu vrijednost."
   },
   "food": {
     "rulesIn": "Propisi u",
@@ -211,7 +211,7 @@
     "unknown": "{region}: propise još nismo potvrdili.",
     "none": "{region}: nema zakona koji utvrđuje granične vrijednosti za olovo i kadmij koje pečeni predmet smije otpustiti (provjereno {date}).",
     "noneSource": "Izvor: <link>{law}</link>.",
-    "choosePrompt": "Odaberite svoju zemlju da biste vidjeli njezine propise."
+    "choosePrompt": "Odaberite svoju zemlju ili regiju da biste vidjeli njezine propise."
   },
   "equivalents": {
     "buyingIn": "Kupnja u",
@@ -224,6 +224,6 @@
     "noneClose": "Ništa unutar 15 g na 100 g: usporedite po kemijskom sastavu.",
     "loading": "Učitavanje biblioteke…",
     "failed": "Biblioteku nije moguće učitati. Pokušajte ponovno kasnije.",
-    "choosePrompt": "Odaberite svoju zemlju da biste vidjeli što se ondje prodaje."
+    "choosePrompt": "Odaberite svoju zemlju ili regiju da biste vidjeli što se ondje prodaje."
   }
 }

@@ -30,6 +30,7 @@ Each one is written once; a later change gets a new record that replaces the old
 | [0024](0024-authorization-server.md)              | AI assistants connect with Glazecalc's own OAuth authorization server   | 2026-10-19 |
 | [0025](0025-confirm-before-changes.md)            | Confirm before changes: a change from an app waits for the person's yes | 2026-10-19 |
 | [0026](0026-target-and-solve.md)                  | Target & Solve: a recipe for a typed target, on the matching engine     | 2026-10-20 |
+| [0027](0027-dictation-skill.md)                   | Dictated studio notes: a skill in the potter's own AI                   | 2026-10-21 |
 
 0018 is kept for the in-app assistant's privacy notice, in
-[the integrations plan](../integrations-plan.md). The next new record takes 0027.
+[the integrations plan](../integrations-plan.md). The next new record takes 0028.

@@ -27,7 +27,7 @@
       "text": "Toz, solunum koruyucu maskeler, temizlik, en çok özen isteyen hammaddeler ve fırının havalandırılması."
     },
     "homeSafety": {
-      "title": "Evde sır güvenliği: çocuklar, evcil hayvanlar ve fırın",
+      "title": "Ailenizi zehirlemeyin",
       "text": "Çocuklar ve evcil hayvanlarla evde seramik: saklama, toz, fırın ve bir şey yutulursa ne yapılacağı."
     },
     "firing": {
@@ -43,7 +43,7 @@
   "contents": "Bu sayfada",
   "poison": {
     "numbersFor": "Numaraların gösterileceği yer:",
-    "choose": "Ülkenizi seçin",
+    "choose": "Ülkenizi veya bölgenizi seçin",
     "label": "Kim aranmalı: {region}",
     "caption": "Kim aranmalı: {region} (numaraların kontrol tarihi: {date})",
     "for": "Ne için",
@@ -61,7 +61,7 @@
     "animalsNone": "Hayvanlar",
     "vet": "Veterinerinizi arayın.",
     "checkedOn": "Kontrol tarihi:",
-    "choosePrompt": "Orada kimin aranacağını görmek için ülkenizi seçin.",
+    "choosePrompt": "Orada kimin aranacağını görmek için ülkenizi veya bölgenizi seçin.",
     "ministry": "Sağlık bakanlığının sayfası: <link>{name}</link>."
   },
   "density": {
@@ -89,7 +89,7 @@
     },
     "none": "{region}: sır hammaddesi satan bir mağaza bulamadık.",
     "unknown": "{region}: mağazalara henüz bakmadık.",
-    "choosePrompt": "Oradaki mağazaları görmek için ülkenizi seçin."
+    "choosePrompt": "Oradaki mağazaları görmek için ülkenizi veya bölgenizi seçin."
   },
   "silica": {
     "limitIn": "Sınır değerin gösterileceği yer:",
@@ -135,7 +135,7 @@
     "noData": "{region}: sınır değeri henüz doğrulamadık.",
     "agency": "İş güvenliğinden sorumlu ulusal kurum: <link>{name}</link>.",
     "agencySilica": "Kurumun <link>silika sayfası</link>.",
-    "choosePrompt": "Sınır değeri görmek için ülkenizi seçin."
+    "choosePrompt": "Sınır değeri görmek için ülkenizi veya bölgenizi seçin."
   },
   "food": {
     "rulesIn": "Kuralların gösterileceği yer:",
@@ -211,7 +211,7 @@
     "unknown": "{region}: kuralları henüz doğrulamadık.",
     "none": "{region}: pişmiş bir parçanın salabileceği kurşun ve kadmiyum için sınır değer koyan bir yasa yoktur (kontrol tarihi: {date}).",
     "noneSource": "Kaynak: <link>{law}</link>.",
-    "choosePrompt": "Kuralları görmek için ülkenizi seçin."
+    "choosePrompt": "Kuralları görmek için ülkenizi veya bölgenizi seçin."
   },
   "equivalents": {
     "buyingIn": "Satın alınan yer:",
@@ -224,6 +224,6 @@
     "noneClose": "100 g’da en fazla 15 g fark olan bir hammadde yok: kimyasal bileşime göre karşılaştırın.",
     "loading": "Kütüphane yükleniyor…",
     "failed": "Kütüphane yüklenemedi. Daha sonra yeniden deneyin.",
-    "choosePrompt": "Orada neyin satıldığını görmek için ülkenizi seçin."
+    "choosePrompt": "Orada neyin satıldığını görmek için ülkenizi veya bölgenizi seçin."
   }
 }

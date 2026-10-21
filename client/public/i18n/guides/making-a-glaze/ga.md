@@ -26,7 +26,7 @@ Nuair a dhéanann tú glónra{{en: glaze}}, meánn tú **amhábhair** i bhfoirm 
 
 ### Cá háit le ceannach
 
-Ceannaíonn potadóirí ó sholáthraithe ceirmeachta, a dhíolann cré, amhábhair ghlónra agus uirlisí. Taispeánann an tábla cuid acu do do thír féin, gach ceann seiceáilte ar shuíomh an tsiopa féin, agus is féidir leat tír eile a roghnú chun a siopaí a fheiceáil. Athraíonn a mbíonn ar díol, mar sin seiceáil sula n-ordaíonn tú. Díolann táirgeoirí móra ar nós Sibelco agus Imerys leis an tionscal; ceannaíonn potadóirí a gcuid ábhar trí shiopaí mar iad seo. Coinníonn Digitalfire, suíomh tagartha ceirmeachta, eolaire de shiopaí soláthraithe d’áiteanna eile.
+Ceannaíonn potadóirí ó sholáthraithe ceirmeachta, a dhíolann cré, amhábhair ghlónra agus uirlisí. Taispeánann an tábla cuid acu do do thír féin, gach ceann seiceáilte ar shuíomh an tsiopa féin, agus is féidir leat tír nó réigiún eile a roghnú chun siopaí ansin a fheiceáil. Athraíonn a mbíonn ar díol, mar sin seiceáil sula n-ordaíonn tú. Díolann táirgeoirí móra ar nós Sibelco agus Imerys leis an tionscal; ceannaíonn potadóirí a gcuid ábhar trí shiopaí mar iad seo. Coinníonn Digitalfire, suíomh tagartha ceirmeachta, eolaire de shiopaí soláthraithe d’áiteanna eile.
 
 ::shops
 

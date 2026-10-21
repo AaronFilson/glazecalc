@@ -12,6 +12,61 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   danda ।. A Bengali page shows the figures of its text in Bengali digits, as it shows its numbers, so a page never mixes
   the two; 0–9 where the reader chose them. The translations check holds Urdu to ۔ and its own letters (ی ک ہ) and
   Bengali to the danda (never its look-alike ৷), both in Unicode's composed form.
+- **Sri Lanka and Nepal** as regions, in English (docs/south-asia-mena-plan.md, C3): who to call (1990 Suwa
+  Seriya in Sri Lanka, 102 in Nepal, with the police and fire numbers from the ITU's list, said to be last
+  updated in 2012), each health ministry and body for safety at work, firing by temperature, prices in rupees.
+  No poison line, silica limit, food rule or shop was found for either, and the guides say so.
+- **India by state**: three state poison centres after the national one (CMC Vellore, for all India; JSS
+  Mysuru, for Karnataka; Karamsad, for the Charotar region of Gujarat), and, under the note that India has no
+  national silica limit, the limits Andhra Pradesh's and Rajasthan's new rules set, marked as read only in
+  others' copies and not confirmed; Rajasthan's respirable-dust limit is cut off in the copy read, and the
+  guide says so.
+- **ChatGPT's client metadata document, behind a setting** (docs/adr/0024-authorization-server.md,
+  "Amended: ChatGPT's document, private_key_jwt, shared addresses"). ChatGPT names itself by an
+  address whose document asks to sign its token requests (`private_key_jwt`) and also lists `none`; it
+  was refused as "only public clients". `OAUTH_CIMD_AUTH`, off by default (off, nothing changes):
+  `public` takes such a document as a public app and fetches nothing from its keys; `private_key_jwt`
+  also takes signed token requests from an app whose document asks for them, with its public keys
+  fetched only from its own site, under limits of their own (per asking address, per site and for
+  everyone; an app with a working connection outside them, its last good keys used for up to a day
+  if its site cannot be reached), kept at most 15 minutes, RSA of 2048 bits
+  or more or EC P-256 only; assertions RS256, PS256 or ES256, `iss` and `sub` the client_id, at most
+  5 minutes long, each used once
+  even by two requests at once, `aud` the issuer (or for now the token endpoint, logged). Never for an
+  app that registered itself. The browser tests run it with a stand-in app (`CIMD_TEST_BASE`, taken
+  only with `NODE_ENV=test`; the server will not start with it and `NODE_ENV=production`). To try on
+  staging first (docs/integrations/directories.md).
+- **The teaching companion, phase 2** (docs/adr/0017-mcp-server.md; MCP server 1.3.0). Two public,
+  read-only tools: `vary_material` (what one material does across a range, such as whiting 0 to 20 in
+  2 to 11 tiles, put on top of a base recipe or in place of another of its materials, with each tile's
+  unity formula, expansion, cautions and cone fit, and a trend of what moves) and `compare_recipes`
+  (two recipes side by side: chemistry, oxide-by-oxide differences, which materials are in one or both;
+  the same comparison `blend_recipes` makes with two steps). Recipe answers to assistants
+  (`analyze_recipe`, `check_limits`, the tiles) now say where the recipe sits on the Stull chart (`stull`:
+  silica, alumina, region, crazed); the chart itself is not shown in the assistant yet. A new prompt,
+  `what_does_this_material_do`, and `glaze_course_lesson` now uses the new tools and offers to save what
+  was made, through the existing write tools and the Confirm changes setting. The companion guide to
+  John Britt's free glaze course (English only) has exercises for the new tools, names his publisher as
+  Union Square & Co. (first published by Lark Books) and links the two books' publisher pages; his videos
+  are still only linked by his titles, never embedded or retold. Its count of 52 videos was last read on
+  2026-10-19.
+- **Dictate your studio notes** (docs/adr/0027-dictation-skill.md). An Agent Skill, `glazecalc-dictation`,
+  that a potter installs in their own AI app (Claude, Claude Code, ChatGPT where skills are offered): they talk
+  or type as they work, and the assistant turns it into recipes, firing logs, test tile results and notes,
+  reads each one back, and saves it through Glazecalc only after a clear yes, never inventing an amount and
+  never calling a change saved while it waits for approval. The skill is in `skills/glazecalc-dictation/`,
+  served as a ZIP at `/downloads/glazecalc-dictation.zip` (packed at build time by `scripts/build-skills.mjs`)
+  and linked from `/assistants` with how to install it (English for now; the page stays out of search). For
+  assistants without skills, the MCP server has it as the prompt `dictation` and the resource
+  `glazecalc://skills/glazecalc-dictation`. Three new MCP write tools, through the same permission, limits and
+  confirm-changes step as the others: `create_firing_log`, `add_firing_rows` (at most 500 rows, the log kept
+  as it was) and `link_firing` (a recipe's link to a firing log, with its result of at most 500 characters,
+  cone and atmosphere, by the recipe routes' own code); `add_notebook_entry` takes `about`, a recipe, material
+  or firing log the note is about. The firing log's columns now live in `lib/cones/firing-fields.js`, shared by
+  the Firing page and the server. The skill goes in the ChatGPT directory package
+  (docs/integrations/directories.md). The course prompt `glaze_course_lesson` may save with them too: a
+  firing log of the test firing, a recipe's result in it, or a note `about` a recipe or firing log, each
+  read back first and saved only on a yes.
 - **Arabic and Hindi** (docs/translations/ar.md, hi.md): the app, the emails and all five guides, live at
   `/ar/…` (right to left) and `/hi/…`. Arabic is Modern Standard Arabic for the Arab countries, its terms chosen from Arabic
   ceramics sources (Egyptian, Iraqi, Sudanese and Libyan university papers, suppliers, Oman's GHS guide), with all six
@@ -19,6 +74,15 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   the Latin full stop (the owner's choice). Each was translated, reviewed in six groups, made consistent across its files
   and back-translated blind (the safety guides and every warning); a native potter's check of the terms marked in the
   style sheets is still welcome. The README counts 34 languages.
+- **Groundwork for India's regional languages** (wave I1: Tamil, Marathi, Kannada; none is offered yet). `ta`, `mr` and
+  `kn` are known to the language list, the pickers' groups, India's region and the first render's country; their fonts
+  (Nirmala UI, Noto, Sangam MN: none served) and line heights are in `client/styles.scss`, with the Odia and Sinhala
+  entries ready for the later waves; the Linux test image keeps the Tamil and Kannada Noto fonts. Two pseudo-locales,
+  `/ta-XF/` (Tamil) and `/kn-XG/` (Kannada), made from one table of letters per script like `/hi-XE/`, are laid out at
+  phone width in the browser tests. The i18n check reads each Indian language's script, requires Unicode form NFC and no
+  stray ZWJ or ZWNJ, keeps their 12-hour times (रात 8 बजे) from passing as numbers, and asks for an `=1` form where a
+  language's `one` takes 0 as well as 1 (it found the Hindi and French messages fixed under Fixed below). Style-sheet skeletons
+  for the glossary research: docs/translations/ta.md, mr.md, kn.md; wave.js has their entries.
 - **Target & Solve** (docs/adr/0026-target-and-solve.md). A new page, Solve for a target (`/solve`,
   linked from the recipe page and from Match with what I have): type a unity formula or an oxide
   analysis, or paste one from another app, and get a recipe in percent from the materials you have
@@ -853,6 +917,29 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Changed
 
+- **"Choose your country or region"**: the guides' region list and the prompts under it ask for a country or region
+  (the owner's choice), as Hong Kong and Taiwan are among the places listed. In every language, in the words its
+  region list already uses ("countries and regions"). So does the making-a-glaze guide's line on shops ("choose
+  another country or region"), in every language, and the MCP server's guide text, in English, says what the
+  website shows "in your country or region".
+- **The reference pages link the home safety guide by its title, "Don't poison your family"** (English; the
+  reference pages are not translated yet), where they said "Glaze safety at home".
+- **Limits that suit AI apps' shared addresses** (ADR 24, the same amendment). Claude's and ChatGPT's
+  servers send everyone's requests from a few addresses, so limits are now keyed on what a request has
+  proven. The token endpoint counts per address only what it refuses (300 in 15 minutes), per account
+  its refreshes (100 in 15 minutes, a `429` that leaves the refresh token working; codes are not
+  counted, so none is lost to it, and a copied refresh token still ends its connection), and
+  everyone's refusals together (20,000 in 15 minutes); it counted every request per address (300).
+  Past a count on refusals, a request whose code or refresh token the server holds still goes
+  through, so a flood of junk from many addresses cannot stop a working connection. An IPv6 address
+  counts with its whole /48 (was /56) at the token endpoint, for MCP without a token, for apps
+  registering themselves and for app documents and keys fetched, so one cheap /48 counts once.
+  Subscription streams are 3 per account (were 3 per address, signed in or not). The MCP tools without
+  a token keep their limits per address, with ceilings for everyone without a token together: 3,000
+  requests and 200 substitutions or matches a minute. Registering (DCR) is otherwise unchanged.
+- **The Origin check on `/mcp` is tested to the letter**: `null`, a slash at the end, other letter
+  cases, a lookalike host, the port written out and two Origin headers are refused before any limit
+  counts, as before; a refusal is logged at debug level with the Origin, for the real-client test.
 - **Enter in a recipe amount goes back to the list to add from.** With an amount typed, Enter in a
   material's amount moves the focus to the materials list's filter, ready for the next one (an
   additive's amount to the additives' list). Before, Enter did nothing there, and it still sends no
@@ -995,9 +1082,9 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   Orton 8, 11 and 12 now have a match. The firing guide's Kyoto cones paragraph says so (English; the other
   languages follow with the next translation round).
 - **Guides end with "More guides"**, links to the other guides with their summaries, drawn into the prerendered page so
-  search engines follow them. The home safety guide keeps its heading, "Don't poison your family"; its page title,
-  search description and link in the guides list now read "Glaze safety at home: children, pets and the kiln"
-  (English; the other languages follow with the next translation round).
+  search engines follow them. The home safety guide is called by its own title, "Don't poison your family", in the
+  guides list, the "More guides" block and its page title too (the owner's choice, in every language: each language's
+  own title for the guide).
 
 - **The recipe page's firing, less repeated and shorter on a phone.** When the firing block has a
   cone, the limits panel says "From the recipe's firing: Mid fire" as text, with "Choose another"
@@ -1153,6 +1240,23 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Fixed
 
+- **Hindi and French messages written for exactly one stay so**: their `one` plural form takes 0 as well as 1, so
+  the six messages whose English means a single thing ("your passkey", "your access token", "it") now give that text
+  for 1 only (`=1`), and a count of 0 reads as the plural. A server test keeps every such message so in each language
+  whose `one` takes 0.
+- **Vanadium oxide's H361fd reads as the GHS words it stands for**: "suspected of damaging fertility or the unborn
+  child", where the library said only "fertility and unborn child". Every language has its official wording: the
+  CLP's Annex III (H361) in the EU's languages (Estonian and Latvian keep H361fd's own two sentences, as their style
+  sheets ask), JIS Z 7253 in Japanese, Oman's 2024 GHS guide in Arabic, and the forms the national GHS texts and safety
+  data sheets use in the others.
+- **The tests' fake sign-in provider (`OAUTH_TEST_BASE`) is taken only with `NODE_ENV=test`.** It
+  was taken whenever `NODE_ENV` was not `production`, so a stray setting on a server started another
+  way would have sent sign-in, and the ID tokens' keys, to another address. The server now will not
+  start with it set and `NODE_ENV=production`, and logs a warning when it is on.
+- **An access token that does not work is answered 401, even past its address's limit.** Past 30 in
+  15 minutes from one address the answer was `429`, which tells an app to wait, so an assistant
+  behind a shared address (Claude's, ChatGPT's) could not refresh or sign in again. It is now `401`
+  with the same `WWW-Authenticate` challenge (`/mcp`) or RFC 6750's (`/api`), the words saying to wait.
 - **Two ways round the consent page for AI apps closed** (docs/adr/0024-authorization-server.md, "An
   outside report"). An app may no longer send its answer to this site's own addresses, where the page
   would have named glazecalcapp.com as the place the answer goes. And Allow takes a click only once the

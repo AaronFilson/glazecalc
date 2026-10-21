@@ -86,13 +86,17 @@ const signInWith = async (provider: FakeProviderId, identity: FakeIdentity, opti
 };
 
 describe('signing in with Google, GitHub and Microsoft', () => {
+  const savedEnv = process.env.NODE_ENV;
   before(async () => {
     await fake.start();
-    Object.assign(process.env, FAKE_SETTINGS, { OAUTH_TEST_BASE: fake.base });
+    // The fake provider is taken only with NODE_ENV=test (oauth.testBase).
+    Object.assign(process.env, FAKE_SETTINGS, { OAUTH_TEST_BASE: fake.base, NODE_ENV: 'test' });
   });
 
   after(async () => {
     for (const name of [...Object.keys(FAKE_SETTINGS), 'OAUTH_TEST_BASE']) delete process.env[name];
+    if (savedEnv === undefined) delete process.env.NODE_ENV;
+    else process.env.NODE_ENV = savedEnv;
     oauth.forgetKeys();
     await fake.stop();
   });
@@ -966,6 +970,25 @@ describe('signing in with Google, GitHub and Microsoft', () => {
         expect(real.token).to.eql('https://login.microsoftonline.com/common/oauth2/v2.0/token');
         expect(real.jwks).to.eql('https://login.microsoftonline.com/common/discovery/v2.0/keys');
         expect(real.issuerTemplate).to.eql('https://login.microsoftonline.com/{tenantid}/v2.0');
+      } finally {
+        process.env.NODE_ENV = nodeEnv;
+      }
+    });
+
+    it('takes the fake provider only with NODE_ENV=test, and will not start with it in production', () => {
+      const nodeEnv = process.env.NODE_ENV;
+      try {
+        expect(oauth.testBase()).to.eql(fake.base);
+        expect(() => oauth.checkTestBase()).to.not.throw();
+        // Anything but test leaves the real providers: unset, development, production.
+        for (const env of [undefined, 'development', 'production', 'TEST']) {
+          if (env === undefined) delete process.env.NODE_ENV;
+          else process.env.NODE_ENV = env;
+          expect(oauth.testBase(), String(env)).to.eql(null);
+          expect(oauth.endpoints('google').token, String(env)).to.eql('https://oauth2.googleapis.com/token');
+        }
+        process.env.NODE_ENV = 'production';
+        expect(() => oauth.checkTestBase()).to.throw('OAUTH_TEST_BASE must not be set when NODE_ENV is production');
       } finally {
         process.env.NODE_ENV = nodeEnv;
       }

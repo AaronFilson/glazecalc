@@ -103,7 +103,12 @@ const checkAgain = async (
   let fresh: AdapterPayload | undefined;
   let seconds = RETRY_SECONDS;
   try {
-    const res = await guardedFetch(clientId, { method: 'GET', headers: { accept: 'application/json' } });
+    // redirect: 'manual', as oidc-provider fetches a document: never followed, and never taken for a key set (cimd.ts).
+    const res = await guardedFetch(clientId, {
+      method: 'GET',
+      headers: { accept: 'application/json' },
+      redirect: 'manual'
+    });
     if (res.status !== 200) throw new Error('answered ' + res.status);
     const document = (await res.json()) as unknown;
     if (!document || typeof document !== 'object' || Array.isArray(document)) throw new Error('not an object');

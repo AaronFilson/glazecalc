@@ -27,7 +27,7 @@
       "text": "Dust, respirators, cleaning, the materials that need most care, and venting the kiln."
     },
     "homeSafety": {
-      "title": "Glaze safety at home: children, pets and the kiln",
+      "title": "Don't poison your family",
       "text": "Pottery at home with children and pets: storage, dust, the kiln, and what to do if something is swallowed."
     },
     "firing": {
@@ -54,7 +54,7 @@
   "contents": "On this page",
   "poison": {
     "numbersFor": "Numbers for",
-    "choose": "Choose your country",
+    "choose": "Choose your country or region",
     "label": "Who to call in {region}",
     "caption": "Who to call in {region} (numbers checked {date})",
     "for": "For",
@@ -72,7 +72,7 @@
     "animalsNone": "Animals",
     "vet": "Call your vet.",
     "checkedOn": "Checked on:",
-    "choosePrompt": "Choose your country to see who to call there.",
+    "choosePrompt": "Choose your country or region to see who to call there.",
     "ministry": "The health ministry's page: <link>{name}</link>."
   },
   "density": {
@@ -100,7 +100,7 @@
     },
     "none": "We found no shop selling raw glaze materials in {region}.",
     "unknown": "We have not yet looked for shops in {region}.",
-    "choosePrompt": "Choose your country to see shops there."
+    "choosePrompt": "Choose your country or region to see shops there."
   },
   "silica": {
     "limitIn": "Limit in",
@@ -144,9 +144,16 @@
     "respirators": "Dust masks here are sold by class: {everyday} for glaze dust, or {higher} for more protection (<link>the official classes</link>).",
     "unknown": "We could not confirm the national limit in {region}. The EU's binding limit of {value} mg/m³ applies in every member state.",
     "noData": "We have not yet confirmed the limit in {region}.",
+    "statesLabel": "Limits set by states in {region}",
+    "statesCaption": "Limits some states have set for dust containing quartz, where Q is the quartz in the dust, in %. We read them only in copies published by others, so they are not confirmed (checked {date}).",
+    "state": "State",
+    "respirableDust": "Respirable dust",
+    "totalDust": "Total dust",
+    "cutOff": "Cut off in the copy we read",
+    "stateSetBy": "{area}: set by <link>{law}</link>.",
     "agency": "The national body for safety at work: <link>{name}</link>.",
     "agencySilica": "Its <link>page on silica</link>.",
-    "choosePrompt": "Choose your country to see its limit."
+    "choosePrompt": "Choose your country or region to see its limit."
   },
   "food": {
     "rulesIn": "Rules in",
@@ -222,7 +229,7 @@
     "unknown": "We have not yet confirmed the rules in {region}.",
     "none": "There is no law in {region} that sets limits for the lead and cadmium a fired piece may release (checked {date}).",
     "noneSource": "Source: <link>{law}</link>.",
-    "choosePrompt": "Choose your country to see its rules."
+    "choosePrompt": "Choose your country or region to see its rules."
   },
   "equivalents": {
     "buyingIn": "Buying in",
@@ -235,6 +242,6 @@
     "noneClose": "Nothing within 15 g per 100 g: compare by chemistry.",
     "loading": "Loading the library…",
     "failed": "The library could not be loaded. Try again later.",
-    "choosePrompt": "Choose your country to see what is sold there."
+    "choosePrompt": "Choose your country or region to see what is sold there."
   }
 }

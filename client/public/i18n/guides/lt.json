@@ -27,7 +27,7 @@
       "text": "Dulkės, respiratoriai, valymas, žaliavos, su kuriomis reikia elgtis atsargiausiai, ir krosnies vėdinimas."
     },
     "homeSafety": {
-      "title": "Glazūrų sauga namuose: vaikai, augintiniai ir krosnis",
+      "title": "Neapnuodykite savo šeimos",
       "text": "Keramika namuose, kur yra vaikų ir gyvūnų: laikymas, dulkės, krosnis ir ką daryti, jei kas nors buvo praryta."
     },
     "firing": {
@@ -43,7 +43,7 @@
   "contents": "Šiame puslapyje",
   "poison": {
     "numbersFor": "Numeriai:",
-    "choose": "Pasirinkite šalį",
+    "choose": "Pasirinkite šalį ar regioną",
     "label": "Kur skambinti: {region}",
     "caption": "Kur skambinti: {region} (numeriai patikrinti {date})",
     "for": "Kokiu atveju",
@@ -61,7 +61,7 @@
     "animalsNone": "Gyvūnai",
     "vet": "Skambinkite savo veterinarui.",
     "checkedOn": "Patikrinta:",
-    "choosePrompt": "Pasirinkite šalį, kad pamatytumėte, kur ten skambinti.",
+    "choosePrompt": "Pasirinkite šalį ar regioną, kad pamatytumėte, kur ten skambinti.",
     "ministry": "Sveikatos apsaugos ministerijos puslapis: <link>{name}</link>."
   },
   "density": {
@@ -89,7 +89,7 @@
     },
     "none": "Neradome parduotuvės, prekiaujančios glazūrų žaliavomis ({region}).",
     "unknown": "Parduotuvių dar neieškojome ({region}).",
-    "choosePrompt": "Pasirinkite šalį, kad pamatytumėte jos parduotuves."
+    "choosePrompt": "Pasirinkite šalį ar regioną, kad pamatytumėte ten esančias parduotuves."
   },
   "silica": {
     "limitIn": "Ribinė vertė:",
@@ -135,7 +135,7 @@
     "noData": "Ribinės vertės dar nepatvirtinome ({region}).",
     "agency": "Nacionalinė darbuotojų saugos ir sveikatos institucija: <link>{name}</link>.",
     "agencySilica": "Jos <link>puslapis apie silicio dioksidą</link>.",
-    "choosePrompt": "Pasirinkite šalį, kad pamatytumėte jos ribinę vertę."
+    "choosePrompt": "Pasirinkite šalį ar regioną, kad pamatytumėte ten galiojančią ribinę vertę."
   },
   "food": {
     "rulesIn": "Taisyklės:",
@@ -211,7 +211,7 @@
     "unknown": "Taisyklių dar nepatvirtinome ({region}).",
     "none": "{region}: nėra teisės akto, kuris nustatytų ribines vertes švinui ir kadmiui, kuriuos gali išskirti išdegtas gaminys (patikrinta {date}).",
     "noneSource": "Šaltinis: <link>{law}</link>.",
-    "choosePrompt": "Pasirinkite šalį, kad pamatytumėte jos taisykles."
+    "choosePrompt": "Pasirinkite šalį ar regioną, kad pamatytumėte ten galiojančias taisykles."
   },
   "equivalents": {
     "buyingIn": "Pirkimo vieta:",
@@ -224,6 +224,6 @@
     "noneClose": "Nėra nė vienos, kuri skirtųsi ne daugiau kaip 15 g/100 g: lyginkite pagal cheminę sudėtį.",
     "loading": "Įkeliama biblioteka…",
     "failed": "Bibliotekos įkelti nepavyko. Bandykite dar kartą vėliau.",
-    "choosePrompt": "Pasirinkite šalį, kad pamatytumėte, kas ten parduodama."
+    "choosePrompt": "Pasirinkite šalį ar regioną, kad pamatytumėte, kas ten parduodama."
   }
 }

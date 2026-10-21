@@ -28,6 +28,59 @@ const BRANCH =
   process.env.GLAZECALC_BRANCH ||
   execFileSync('git', ['rev-parse', '--abbrev-ref', 'HEAD'], { cwd: ROOT, encoding: 'utf8' }).trim();
 
+/**
+ * The notes of an Indian regional language (Tamil, Marathi, Kannada, then the later waves'), after Hindi's own:
+ * the owner's choices of 2026-10-21 (scratch/round8/plan.md) are the potters' English loanwords first with the
+ * textbook term in brackets, sentences ending in the Latin full stop, the digits 0 to 9, and CLDR's digits and
+ * grouping for the app. `p` gives what differs: the language and its script, the textbook board, the loanword and
+ * register wording, the spelling rules, the native digits, lakh words and 12-hour words the check rejects, the
+ * calendars never to use, the plural line, the endings after a placeholder, and the law's words for "at most".
+ */
+function indianNotes(p) {
+  const L = p.language;
+  return {
+    glossary: [
+      `Follow docs/translations/hi.md as the model for an Indian language, and th.md, vi.md, id.md, tr.md and ja.md as well as fi.md and hr.md: they are the models for a language outside the EU. Terms come first from the shops' and makers' names (printed on the bag, in English), then from what ${L}-speaking potters and courses say, then from ${p.board}. Say which source each row rests on, with its link; mark rows with no ${L} source "No source" and rows for a native potter **Native check**.`,
+      `The owner's choice (as for Hindi): the studio potters' English loanwords first, ${p.loanwords}. Give both in each such row, say where the bracketed term appears (at a term's first use in each guide section, as \`{{en: …}}\` is used, and never in a button or a short label), and give the gender or class each loanword takes in potters' usage where ${L} marks one.`,
+      `Register: ${p.register}. Give examples of a button, an error, a notice and a guide sentence. Keep "must", "should" and "may" (a hedge that must survive) apart, and say that "must be tested" means the test is done, not passed.`,
+      `Style sheet: name the subsection "EU law" "Law in India" (the ${L} texts of the Acts and BIS standards, and how the English's EU names are written); under "Capitalisation" say how ${p.script} treats capitals and how Latin words inside ${L} text are written. Add a subsection "Script and spelling": ${p.spelling}. No ZWJ or ZWNJ unless the script needs one (the check asks).`,
+      `Numbers: the digits 0 to 9 (the international form of Indian numerals), never ${p.digits}, which the numbers check does not read. The decimal point (1.5) and the English's figures as it writes them (12,500; 1222 °C ungrouped): the app groups numbers the Indian way (12,34,567.5) when it formats them, so the translations write only the English's figures, never ${p.lakh} for one. 5% with no space; units as the English's symbols (10 g, 1222 °C); inches and feet as the words with the metric figure in brackets as the English gives it. Where the English writes a number as a word (two coats), it stays a word, since a digit would be a figure the English lacks. Dates 14 <month> 2026 (the month named beside the year), Gregorian, never a ${p.calendars}. Times on the 24-hour clock (20:00), never ${p.twelve}, which the check would read as 8.`,
+      `Plural forms: ${p.plural}. Every plural message has the forms the check asks for, and \`=0\` stays where the English has it. Give each with a glaze word and the noun's plural, and how a loanword takes the plural.`,
+      `Endings after placeholders: ${p.suffix}.`,
+      `Cones: Orton cones are named Orton wherever the English says Orton (the trade name in Latin letters, beside the potters' word for a cone); SK cones are SK with the number as printed; Seger only where the English says Seger (the firing guide's older European cones), and the Seger formula (the unity molecular formula, UMF) never names a cone. Never give an SK number for an Orton number or the reverse, nor any equivalence. Give the wording for "one number hotter/cooler", never higher or lower.`,
+      `Specific gravity is the relative-density word with the English's figure (a ratio without units), never density in g/cm³ or a litre weight: say which word the sources use and which the app uses (\`guides.density.sg\`, with the figure after it). Baumé as the sources write it (°Bé).`,
+      `Law terms, with the English they translate: "at most", "no more than" and "up to" (${p.law}) never "less than" or "under"; "at least" never "more than"; confirm each from the ${L} texts of the Acts and standards, and keep them apart. Respirable dust, crystalline silica and silicosis in the words those texts use.`,
+      `Poison line: AIIMS's National Poisons Information Centre (1800 116 117, 24 hours, toll free) is verified (the region research): give its ${L} name from AIIMS's pages if it has one, and the words for a poison line.`,
+      `Two-step sign-in: add the table "2.10 Signing in" after the last one, with the words Google, Apple and Microsoft use on their own ${L} help pages (link each): two-step sign-in, authenticator app, setup key, QR code, passkey, recovery code, the code from the app, security key, sign in, sign out, account, password, trusted device. The English writes "two-step" as a word, so a digit 2 is a figure the English lacks.`,
+      `Pitfalls to settle: glaze vs enamel, varnish and paint; frit vs flux; kiln vs oven or furnace; bisque firing vs raw (unfired) ware; earthenware, terracotta, stoneware and porcelain (and "china clay", which may mean porcelain or kaolin: keep them apart); the material vs the oxide (silica vs silicon vs silicone); whiting (calcium carbonate) vs lime and chalk; boron vs borax vs boric acid; soda and potash as oxides vs soda ash and potassium carbonate; a respirator vs a ventilator vs ventilation; the app's guides vs a kiln's manual: two different words.`,
+      `No rule may ask for figures the English lacks: no ${p.digits}, no ${p.lakh}, no calendar years of the region's own, no added SK or Orton equivalents, no converted units, no IS numbers where the English has none. The numbers check rejects every one.`
+    ],
+    translate: [
+      `Style sheet and glossary: docs/translations/${p.code}.md. Every term as it gives it; where a row says Native check, use the row's choice and list the sentence in your flags for the reviewer.`,
+      `The potters' loanwords first, with the textbook term in brackets only where the style sheet says; the register the style sheet gives.`,
+      `A sentence ends with the Latin full stop "." (no space before it): the owner's choice, as for Hindi.`,
+      `Numbers: the digits 0 to 9 only, never ${p.digits} or ${p.lakh}; 1.5 with a point and the English's figures as it writes them; 5% and units as the English writes them (10 g, 1222 °C). A number the English writes as a word stays a word, since a digit would be a figure the English lacks. Dates 14 <month> 2026; times on the 24-hour clock (20:00), never ${p.twelve}.`,
+      `Plural forms: ${p.plural}; keep \`=0\` where the English has it.`,
+      `Cones: Orton cones are Orton wherever the English says Orton; SK cones are SK with the number as printed; Seger only where the English says Seger; the Seger formula (UMF) is never a cone. Never give an SK number for an Orton number or the reverse, nor say they are equal. "One number hotter/cooler" as the style sheet gives it, never higher or lower.`,
+      `Should, must and may as the style sheet gives them, kept apart; no emphasis word (always, never, absolutely, certainly) the English lacks; "must be tested" means the test is done, not passed.`,
+      `The food-contact text names Directive 84/500/EEC: it has no official ${L} text, so write the EU categories plainly, so that the 3 L still applies only to packaging and storage vessels.`,
+      `Japanese names in the guides and region notes (the firing guide's) are Hepburn romanization with the English gloss, never Japanese script.`
+    ],
+    review: [
+      `${L}: "at most", "no more than" and "up to" use the law's words for at most (${p.sounds}) and never "less than" or "under"; "at least" never "more than". A slip here moves a legal limit. Check every one in the food-contact, silica and safety text.`,
+      `${L}: the digits 0 to 9 only, never ${p.digits} or ${p.lakh}; units and figures as the English writes them; a number the English writes as a word stays a word; times on the 24-hour clock; the plural forms the style sheet gives.`,
+      `${L}: the potters' loanwords and the bracketed textbook terms as the style sheet gives them; SK cones written "SK" as printed, Orton cones named Orton, no SK number given for an Orton number or the reverse; specific gravity as the style sheet's relative-density word with the English's figure.`,
+      `${L}: should, must and may kept apart; no emphasis the English lacks; no should turned into must and no may dropped.`,
+      `${L}: every sentence ends with the Latin full stop "." (the owner's choice), and the script is ${p.script} and Latin only (the check rejects letters of another script and stray joiners).`
+    ],
+    backtranslate: [
+      `${p.sounds}: translate each back exactly as it reads. "At most" means the limit itself passes; "less than" means it does not. A limit that moved from one to the other is a difference in meaning.`,
+      `Words of emphasis and obligation are translated back as strongly as they read: one the English lacks is a difference in meaning. "Must", "should" and "may" are kept apart as the style sheet gives them.`,
+      `Names of services and bodies stay in ${L}: compare what they refer to.`
+    ]
+  };
+}
+
 // The languages still to translate. `country` is who reads it, as the prompts
 // say it; `region` the region code in lib/regions; `shops` and `termbank` what
 // the glossary's research starts from. Add the next wave's languages here.
@@ -717,6 +770,118 @@ const LANGUAGES = {
         'Names of services and bodies (999, DGHS, DIFE) stay in Bengali as written: compare what they refer to.'
       ]
     }
+  },
+  // India's regional languages (wave I1: Tamil, Marathi, Kannada; scratch/round8/in-langs/plan.md), modelled on
+  // Hindi's and written by indianNotes above. Each is for India's region (IN), fired by Orton cones; the later
+  // waves (Telugu, Malayalam, Gujarati, Punjabi, Odia; then Nepali and Sinhala, which wait for their regions)
+  // are one entry each, with the same notes.
+  ta: {
+    language: 'Tamil',
+    country: 'India (Tamil Nadu and Puducherry)',
+    region: 'IN',
+    shops:
+      "lib/regions lists Indian shops that sell in English (Bhoomi Pottery, Clay Station in Bengaluru, Sara in Chennai, whose glazes are labelled by cone): read their pages for the names on the bag; then look for Tamil pages of the studios of Puducherry, Auroville and Chennai, Tamil Nadu's terracotta potters and Tamil-medium craft courses, to see which words Tamil-speaking potters use. Sri Lankan Tamil vocabulary differs: the pages are written for India.",
+    termbank:
+      "the Tamil Nadu Textbook and Educational Services Corporation's Tamil-medium chemistry and physics texts, the state's Sorkuvai term corpus, the Tamil Virtual Academy's glossaries (tamilvu.org), the Commission for Scientific and Technical Terminology (CSTT, cstt.education.gov.in) and the Tamil Wikipedia",
+    kilns:
+      "Indian kiln makers' and dealers' catalogues and manuals for the electric and gas kilns sold to potters in India, the shops' kiln pages, and Tamil pottery courses' pages; they give the words for kiln parts, controllers and firing steps (bisque firing, glaze firing, oxidation, reduction) as Tamil-speaking potters say them.",
+    law: "Indian law in its Tamil texts (the Gazette of India, India Code, and the Official Languages Wing's Tamil versions of Union Acts where they exist): the Occupational Safety, Health and Working Conditions Code, 2020 (s.88 leaves exposure limits to each state) and the Factories Act, 1948 it replaced, the Tamil Nadu Factories Rules in Tamil where published (silica limits are set by the state), the Tamil titles of BIS's IS 9473 (filtering half masks) and IS 9806 (ceramic ware in contact with food), the GHS labels in Tamil where any; the bodies: the Ministry of Health and Family Welfare, AIIMS's National Poisons Information Centre (1800 116 117), 112 (ERSS), the Directorate General Factory Advice Service and Labour Institutes (DGFASLI), the Bureau of Indian Standards, each by its own Tamil name where its pages give one. Where the English names EU law (Directive 84/500/EEC, CLP), there is no official Tamil text: write what Indian official Tamil pages call it, or describe it plainly with the number kept;",
+    terms:
+      'the term banks and teaching texts of Tamil ({TERMBANK}); IATE has no Tamil. For software conventions (register, buttons, punctuation, loanword spelling, Grantha letters), the Microsoft Tamil style guide and the Tamil help pages of Google, Apple and Microsoft.',
+    notes: indianNotes({
+      language: 'Tamil',
+      code: 'ta',
+      script: 'Tamil',
+      board: "the Tamil Nadu textbooks' Tamil, the Sorkuvai corpus and the Tamil Virtual Academy",
+      loanwords:
+        "in Tamil letters as potters say them (கிளேஸ், ஃப்ரிட், கில்ன், பிஸ்க் and the like), with the textbook's pure-Tamil term in brackets where it differs (Tamil textbooks coin pure-Tamil words that studio potters do not use). The Grantha letters ஜ ஷ ஸ ஹ க்ஷ in loanwords: say which the sources write",
+      register:
+        'நீங்கள் with its verb forms, never நீ; buttons, menus and tabs as Tamil software writes them (from the Microsoft Tamil style guide, Google and Apple), headings as noun phrases',
+      spelling:
+        'Tamil letters as the Tamil Nadu government standard writes them, the pulli (்) and the vowel signs before, above and below a letter; Latin units, formulas and trade names kept as the English writes them; the full stop "." and the comma, question mark and colon as in English',
+      digits: 'Tamil digits (௧௨௩)',
+      lakh: 'இலட்சம் or கோடி',
+      twelve: 'காலை, மாலை or இரவு with a 12-hour figure (இரவு 8 மணிக்கு)',
+      calendars: 'Tamil-calendar or Saka year',
+      plural:
+        '`one` and `other` in CLDR; 0 is `other` (unlike Hindi, Kannada and Gujarati), so the `one` form is only for 1',
+      suffix:
+        'Tamil joins case endings to the word (-இல், -ஐ, -இன், -க்கு) and a placeholder takes none: say how to build a sentence around {name}, {region} and {count} so it reads with any value (a label form, or a word set apart)',
+      law: 'அதிகபட்சம் and மிகாமல்? for "at most"; குறைவாக? for "less than"; குறைந்தபட்சம்? for "at least"',
+      sounds: 'அதிகபட்சம், மிகாமல், குறைந்தபட்சம்'
+    })
+  },
+  mr: {
+    language: 'Marathi',
+    country: 'India (Maharashtra)',
+    region: 'IN',
+    shops:
+      "lib/regions lists Indian shops that sell in English (Bhoomi Pottery, Clay Station in Bengaluru, Sara in Chennai): read their pages for the names on the bag; then look for Marathi pages of the studios and classes of Mumbai and Pune (The Pottery Lab, Mumbai), Sir J.J. School of Art's ceramics department and Maharashtra's pottery villages and craft bodies, to see which words Marathi-speaking potters use.",
+    termbank:
+      "Maharashtra's Balbharati textbooks (ebalbharati.in: the Marathi-medium chemistry and physics), the Commission for Scientific and Technical Terminology (CSTT, cstt.education.gov.in), the Maharashtra Rajya Marathi Vishwakosh Nirmiti Mandal's glossaries, and the Marathi Wikipedia",
+    kilns:
+      "Indian kiln makers' and dealers' catalogues and manuals for the electric and gas kilns sold to potters in India, the shops' kiln pages, and the Marathi pottery courses' pages; they give the words for kiln parts, controllers and firing steps (bisque firing, glaze firing, oxidation, reduction) as Marathi-speaking potters say them.",
+    law: "Indian law in its Marathi texts (the Gazette of India, India Code, the Official Languages Wing's Marathi versions of Union Acts where they exist, and Maharashtra's own Marathi texts): the Occupational Safety, Health and Working Conditions Code, 2020 (s.88 leaves exposure limits to each state) and the Factories Act, 1948 it replaced, the Maharashtra Factories Rules in Marathi where published (silica limits are set by the state), the Marathi titles of BIS's IS 9473 (filtering half masks) and IS 9806 (ceramic ware in contact with food), the GHS labels in Marathi where any; the bodies: the Ministry of Health and Family Welfare, AIIMS's National Poisons Information Centre (1800 116 117), 112 (ERSS), DGFASLI, the Bureau of Indian Standards, each by its own Marathi name where its pages give one. Where the English names EU law (Directive 84/500/EEC, CLP), there is no official Marathi text: write what Indian official Marathi pages call it, or describe it plainly with the number kept;",
+    terms:
+      'the term banks and teaching texts of Marathi ({TERMBANK}); IATE has no Marathi. For software conventions (register, buttons, punctuation, loanword spelling), the Microsoft Marathi style guide and the Marathi help pages of Google, Apple and Microsoft. Marathi shares Devanagari with Hindi but not its words: its terms are never copied from docs/translations/hi.md (many Hindi and Marathi words look alike and differ in meaning).',
+    notes: indianNotes({
+      language: 'Marathi',
+      code: 'mr',
+      script: 'Devanagari',
+      board: "Balbharati's Marathi-medium textbooks and the Marathi Vishwakosh's glossaries",
+      loanwords:
+        'in Devanagari as Marathi-speaking potters say them (ग्लेझ, फ्रिट, किल्न, बिस्क and the like), with the Marathi technical term in brackets where it differs. Never copy a term from hi.md: say where the Marathi differs (Hindi ग्लेज़ is Marathi ग्लेझ: Marathi writes झ where Hindi has the nukta ज़)',
+      register:
+        'तुम्ही or आपण? (the Microsoft Marathi style guide settles which Marathi software uses with the reader), with its verb forms, never तू; buttons, menus and tabs as Marathi software writes them (जतन करा, मुद्रित करा?), headings as noun phrases',
+      spelling:
+        'Devanagari as Marathi writes it (the page is lang="mr", so fonts draw Marathi\'s own forms of ल and श): the anusvara and the chandrabindu as Marathi uses them, the nukta rarely, never Hindi spellings; Latin units, formulas and trade names kept as the English writes them; the Latin full stop "." (Marathi does not use the danda) and the comma, question mark and colon as in English',
+      digits:
+        'Devanagari digits (०१२; the app shows Marathi readers Devanagari digits by default when it formats a number, but a translation writes 0 to 9)',
+      lakh: 'लाख or कोटी',
+      twelve: 'सकाळी, दुपारी, संध्याकाळी or रात्री with a 12-hour figure (रात्री 8 वाजता)',
+      calendars: 'Shaka or Marathi-calendar year',
+      plural: '`one` and `other` in CLDR; 0 is `other` (unlike Hindi), so the `one` form is only for 1',
+      suffix:
+        'Marathi joins postpositions and case endings to the word (-मध्ये, -चा/ची/चे, -ला, -ने) and the possessive agrees with the noun that follows: say how to build a sentence around {name}, {region} and {count} so it reads with any value',
+      law: 'जास्तीत जास्त and पेक्षा जास्त नाही? for "at most"; पेक्षा कमी for "less than"; किमान? for "at least"',
+      sounds: 'जास्तीत जास्त, किमान, पेक्षा कमी'
+    })
+  },
+  kn: {
+    language: 'Kannada',
+    country: 'India (Karnataka)',
+    region: 'IN',
+    shops:
+      'lib/regions lists Indian shops that sell in English, one of them in Bengaluru (Clay Station: "CS Potash Feldspar (G-325)", "CS Whiting (G-200)", Orton cones): read its pages and Bhoomi Pottery\'s for the names on the bag; then look for Kannada pages of Bengaluru\'s studios, the old Kumbarapete potters\' quarter and Karnataka\'s craft bodies, to see which words Kannada-speaking potters use.',
+    termbank:
+      "the Karnataka Textbook Society's Kannada-medium science textbooks, the Kannada Development Authority's glossaries, the Commission for Scientific and Technical Terminology (CSTT, cstt.education.gov.in) and the Kannada Wikipedia",
+    kilns:
+      "Indian kiln makers' and dealers' catalogues and manuals for the electric and gas kilns sold to potters in India, the shops' kiln pages (Clay Station's Skutt kilns), and Kannada pottery courses' pages; they give the words for kiln parts, controllers and firing steps (bisque firing, glaze firing, oxidation, reduction) as Kannada-speaking potters say them.",
+    law: "Indian law in its Kannada texts (the Gazette of India, India Code, the Official Languages Wing's Kannada versions of Union Acts where they exist, and Karnataka's own Kannada texts): the Occupational Safety, Health and Working Conditions Code, 2020 (s.88 leaves exposure limits to each state) and the Factories Act, 1948 it replaced, the Karnataka Factories Rules in Kannada where published (silica limits are set by the state), the Kannada titles of BIS's IS 9473 (filtering half masks) and IS 9806 (ceramic ware in contact with food), the GHS labels in Kannada where any; the bodies: the Ministry of Health and Family Welfare, AIIMS's National Poisons Information Centre (1800 116 117), 112 (ERSS), DGFASLI, the Bureau of Indian Standards, each by its own Kannada name where its pages give one. Where the English names EU law (Directive 84/500/EEC, CLP), there is no official Kannada text: write what Indian official Kannada pages call it, or describe it plainly with the number kept;",
+    terms:
+      'the term banks and teaching texts of Kannada ({TERMBANK}); IATE has no Kannada. For software conventions (register, buttons, punctuation, loanword spelling), the Microsoft Kannada style guide and the Kannada help pages of Google, Apple and Microsoft.',
+    notes: indianNotes({
+      language: 'Kannada',
+      code: 'kn',
+      script: 'Kannada',
+      board: "the Karnataka Textbook Society's Kannada-medium texts and the Kannada Development Authority's glossaries",
+      loanwords:
+        'in Kannada letters as potters say them (ಗ್ಲೇಜ್, ಫ್ರಿಟ್, ಕಿಲ್ನ್, ಬಿಸ್ಕ್ and the like), with the Kannada technical term in brackets where it differs',
+      register:
+        'ನೀವು with its verb forms, never ನೀನು; buttons, menus and tabs as Kannada software writes them (from the Microsoft Kannada style guide, Google and Apple), headings as noun phrases',
+      spelling:
+        'Kannada letters as the Karnataka standard writes them, with the virama (್) and the stacked conjuncts; no ZWJ or ZWNJ; Latin units, formulas and trade names kept as the English writes them; the Latin full stop "." and the comma, question mark and colon as in English',
+      digits: 'Kannada digits (೧೨೩)',
+      lakh: 'ಲಕ್ಷ or ಕೋಟಿ',
+      twelve: 'ಬೆಳಿಗ್ಗೆ, ಮಧ್ಯಾಹ್ನ, ಸಂಜೆ or ರಾತ್ರಿ with a 12-hour figure (ರಾತ್ರಿ 8 ಗಂಟೆಗೆ)',
+      calendars: 'Shaka or Kannada-calendar year',
+      plural:
+        '`one` and `other` in CLDR, and **`one` covers 0 as well as 1** (like Hindi), so the `one` form must read right for 0 and keeps `#`. Where the English `one` has no `#` ("this passkey", "it"), give an `=1` form for exactly one and a `one` form with `#` (the check asks for it). CLDR formats Kannada numbers with Western grouping (1,234,567); the translations write only the English\'s figures',
+      suffix:
+        'Kannada joins case endings to the word (-ನಲ್ಲಿ, -ಅನ್ನು, -ಗೆ, -ನ) and a placeholder takes none: say how to build a sentence around {name}, {region} and {count} so it reads with any value (a label form, or a word set apart)',
+      law: 'ಗರಿಷ್ಠ and ಮೀರಬಾರದು? for "at most"; ಕಡಿಮೆ? for "less than"; ಕನಿಷ್ಠ? for "at least"',
+      sounds: 'ಗರಿಷ್ಠ, ಮೀರಬಾರದು, ಕನಿಷ್ಠ'
+    })
   }
 };
 

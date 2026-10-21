@@ -216,6 +216,8 @@ const unlink: Op = async (who, input) => {
 registerOp('recipes.firing-link', link);
 registerOp('recipes.firing-change', change);
 registerOp('recipes.firing-unlink', unlink);
+// The MCP tool link_firing runs the same two (server/mcp/tools/dictation_write.ts): one code path, one limit.
+export { link as linkFiring, change as changeFiringLink };
 
 /** The recipe a link change is made to, with its title and the log's, or null when there is no such recipe of the account's. */
 const about =

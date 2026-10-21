@@ -41,6 +41,21 @@ export interface MixedRecipe<M, A> {
   additives: Array<{ line: A; amount: number }>;
 }
 
+/** One tile of an ingredient blend: its amount of the material and its lines (amounts above nothing). */
+export interface VariedTile {
+  amount: number;
+  lines: Array<{ name: string; amount: number }>;
+}
+
+/** The tiles, or the first amount at which the material it replaces would go below nothing. */
+export function varyMaterial(
+  base: ReadonlyArray<{ name: string; amount: number }>,
+  material: string,
+  amounts: readonly number[],
+  mode: 'add' | 'replace',
+  instead?: string
+): { tiles: VariedTile[]; tooMuch?: undefined } | { tooMuch: number; tiles?: undefined };
+
 export function mixRecipes<M extends BlendLine, A extends BlendLine>(
   corners: ReadonlyArray<{ materials?: M[]; additives?: A[] }>,
   shares: readonly number[]

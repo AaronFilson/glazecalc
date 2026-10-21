@@ -26,7 +26,7 @@ Att blanda en glasyr{{en: glaze}} betyder att väga upp **råvaror** i pulverfor
 
 ### Var råvaror säljs
 
-Keramiker köper av keramikleverantörer, som säljer lera, glasyrråvaror och verktyg. Tabellen visar några i det egna landet, var och en kontrollerad på butikens egen webbplats, och det går att välja ett annat land för att se dess butiker. Sortimentet ändras, så kontrollera före beställning. Stora producenter som Sibelco och Imerys säljer till industrin; keramiker köper deras råvaror genom butiker som dessa. Digitalfire, en referenswebbplats om keramik, har en förteckning över leverantörers butiker på andra håll.
+Keramiker köper av keramikleverantörer, som säljer lera, glasyrråvaror och verktyg. Tabellen visar några i det egna landet, var och en kontrollerad på butikens egen webbplats, och det går att välja ett annat land eller en annan region för att se butikerna där. Sortimentet ändras, så kontrollera före beställning. Stora producenter som Sibelco och Imerys säljer till industrin; keramiker köper deras råvaror genom butiker som dessa. Digitalfire, en referenswebbplats om keramik, har en förteckning över leverantörers butiker på andra håll.
 
 ::shops
 

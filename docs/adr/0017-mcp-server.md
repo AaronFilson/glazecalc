@@ -41,7 +41,21 @@ an assistant to act for one person that is not their web session.
   [ADR 26](0026-target-and-solve.md)), and (`server/mcp/tools/blends.ts`)
   `blend_recipes`: the test tiles of a line or triaxial blend between two or three recipes, each
   with its recipe, key unity formula figures, expansion, limit cautions and, with a firing, its
-  cone fit, or a comparison of two recipes. A calculation, not a test result. Each runs the app's own code on the standard
+  cone fit, or a comparison of two recipes. A calculation, not a test result. The teaching
+  companion adds two beside it (`server/mcp/tools/companion.ts`, 2026-10, server 1.3.0):
+  `vary_material`, what one material does across a range (2 to 11 tiles from `from` to `to`, put
+  on top of the base, or in place of another material of it, with a `trend` of what moves and which
+  Stull regions the tiles cross; the math is `varyMaterial` in `lib/recipe/blends.js`), and
+  `compare_recipes`, two recipes side by side with the oxide-by-oxide differences and the
+  materials in one or both, the same comparison `blend_recipes` makes with two steps, sharing
+  its tile and difference code. Every recipe answer from these tools (`analyze_recipe`,
+  `check_limits`, the tiles) carries `stull`, the recipe's place on the Stull chart the recipe
+  page draws (`stullPoint`, `lib/recipe/analysis.js`): silica and alumina in moles, the region
+  and whether it is in the crazed area. The chart itself is not offered as a window in the
+  assistant: that would be an MCP App, held back until the directory listings are approved
+  (it needs screenshots there). A series of tiles is saved with the existing write tools
+  (`add_notebook_entry`, `create_recipe`), which ask the person to confirm when the account says
+  so ([ADR 25](0025-confirm-before-changes.md)); nothing new stores anything. Each runs the app's own code on the standard
   library (`data/`), takes at most 40 recipe lines, answers with structured data and the same as
   JSON text, and words its cautions in the language asked for, from the app's recipe messages
   (`server/mcp/words.ts`); a language not offered gets English. All are marked read-only. The
@@ -72,7 +86,15 @@ an assistant to act for one person that is not their web session.
   A fifth, `glaze_course_lesson` (2026-10), sets up a unit of the companion to John Britt's free
   glaze course: his videos linked by title with credit and a request never to retell them, the
   unit's guide sections attached (the safe mixing habits first for lab units), and its exercises,
-  all read from the English-only guide by `server/mcp/course.ts`.
+  all read from the English-only guide by `server/mcp/course.ts`; it now also names
+  `vary_material`, `compare_recipes` and `solve_target`, and ends by offering to save what was made
+  (read back first, saved only on a yes): a notebook entry, `about` a recipe or firing log when it is
+  one's, a recipe, a firing log (`create_firing_log`) or a recipe's result in a firing (`link_firing`). A sixth, `what_does_this_material_do` (2026-10), runs
+  `get_material` and `vary_material` on a base the person gives, or asks for one (it never invents
+  one), and explains the trend and the Stull walk. John Britt is named and his episodes linked by his
+  titles; nothing of what he says is copied, quoted or retold, and the course guide's tests check
+  that each Watch line is a bare link, that nothing is embedded, and that every tool or prompt an
+  exercise names exists.
 - **Checked from outside in CI** (`npm run test:mcp`, `scripts/mcp-conformance.mjs`): the official
   conformance suite, `@modelcontextprotocol/conformance` 0.2.0-alpha.12, runs exactly what the
   2026-07-28 and 2025-11-25 revisions require against a server of its own, and the MCP Inspector
@@ -248,3 +270,12 @@ yes in the client's own form; no token can approve one, the state handed to the 
 and bound to the one change, and a change runs once, after everything is checked again. Words
 planted in a note can still lead an assistant to ask for a change, but no longer to make one
 unseen, when the setting is on. A form's yes is weaker than the website's (ADR 25, Consequences).
+
+## Amended: dictated studio notes
+
+2026-10-21, [ADR 27](0027-dictation-skill.md): three more write tools, for the studio notes skill,
+through the same gate as the nine above (`server/mcp/tools/dictation_write.ts`):
+`create_firing_log`, `add_firing_rows` and `link_firing` (a recipe's link to a firing log and its
+result, by the recipe routes' own code); `add_notebook_entry` takes `about`, a record of the
+account's the note is about. A sixth prompt, `dictation`, and a resource,
+`glazecalc://skills/glazecalc-dictation`, carry the skill for clients that take no skills.

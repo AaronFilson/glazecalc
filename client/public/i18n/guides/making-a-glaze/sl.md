@@ -26,7 +26,7 @@ Pripraviti glazuro{{en: glaze}} pomeni po receptu stehtati **surovine** v prahu 
 
 ### Kje kupiti
 
-Lončarji kupujejo pri dobaviteljih keramičnih potrebščin, ki prodajajo glino, surovine za glazure{{en: glaze}} in orodje. Preglednica prikazuje nekatere v vaši državi, vsakega preverjenega na lastni spletni strani trgovine, izberete pa lahko tudi drugo državo in si ogledate njene trgovine. Ponudba se spreminja, zato jo pred naročilom preverite. Veliki proizvajalci, kot sta Sibelco in Imerys, prodajajo industriji; lončarji kupujejo njihove surovine prek trgovin, kot so te. Strokovno spletno mesto o keramiki Digitalfire vodi imenik trgovin dobaviteljev za druge kraje.
+Lončarji kupujejo pri dobaviteljih keramičnih potrebščin, ki prodajajo glino, surovine za glazure{{en: glaze}} in orodje. Preglednica prikazuje nekatere v vaši državi, vsakega preverjenega na lastni spletni strani trgovine, izberete pa lahko tudi drugo državo ali regijo in si ogledate tamkajšnje trgovine. Ponudba se spreminja, zato jo pred naročilom preverite. Veliki proizvajalci, kot sta Sibelco in Imerys, prodajajo industriji; lončarji kupujejo njihove surovine prek trgovin, kot so te. Strokovno spletno mesto o keramiki Digitalfire vodi imenik trgovin dobaviteljev za druge kraje.
 
 ::shops
 

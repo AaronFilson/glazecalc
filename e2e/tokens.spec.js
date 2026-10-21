@@ -181,6 +181,24 @@ test('shows how to connect an assistant, with this site’s address', async ({ p
   expect(await page.evaluate(() => globalThis.document.documentElement.scrollWidth - globalThis.innerWidth)).toBe(0);
 });
 
+test('offers the studio notes skill as a ZIP to download (docs/adr/0027-dictation-skill.md)', async ({ page }) => {
+  await page.goto('/assistants');
+  const section = page.locator('#dictation');
+  await expect(section.getByRole('heading', { level: 2, name: 'Dictate your studio notes' })).toBeVisible();
+  await expect(section.getByText('~/.claude/skills/')).toBeVisible();
+  const link = section.getByRole('link', { name: 'Download the skill (ZIP)' });
+  await expect(link).toHaveAttribute('href', '/downloads/glazecalc-dictation.zip');
+  // The build packed it (scripts/build-skills.mjs), and the server sends it as a ZIP.
+  const res = await page.request.get('/downloads/glazecalc-dictation.zip');
+  expect(res.status()).toBe(200);
+  expect(res.headers()['content-type']).toBe('application/zip');
+  const zip = await res.body();
+  expect(zip.subarray(0, 4).toString('latin1')).toBe('PK\u0003\u0004');
+  expect(zip.includes('glazecalc-dictation/SKILL.md')).toBe(true);
+  const [download] = await Promise.all([page.waitForEvent('download'), link.click()]);
+  expect(download.suggestedFilename()).toBe('glazecalc-dictation.zip');
+});
+
 test('is not offered to a trial', async ({ page }) => {
   await startTrial(page);
   await expect(page).toHaveURL(/\/recipe$/);

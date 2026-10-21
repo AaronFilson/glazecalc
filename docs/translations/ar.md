@@ -496,7 +496,9 @@ marked where they rest on less. Confirm each against the text when the region da
   hazard statements are the UN GHS's Arabic wording as Oman EA 2024 gives it, with the codes kept: H301 "Toxic if
   swallowed" → "سام إذا ابتُلع", H302 "Harmful if swallowed" → "ضار إذا ابتُلع", H350 "May cause cancer" → "قد يسبب
   السرطان", H372 → "يسبب تلفاً للأعضاء من خلال التعرض لفترات طويلة أو متكررة", H373 → "قد يسبب تلفاً للأعضاء من خلال
-  التعرض لفترات طويلة أو متكررة", H335 → "قد يسبب تهيج الجهاز التنفسي". H360FD is split into two sentences only where
+  التعرض لفترات طويلة أو متكررة", H335 → "قد يسبب تهيج الجهاز التنفسي", H361 "Suspected of damaging fertility or the
+  unborn child" → "يُشتبه في إتلاف الخصوبة أو الطفل الذي لم يولد بعد" (Oman EA 2024, table 28, read 21 October 2026;
+  the records' H361fd). H360FD is split into two sentences only where
   the English splits it: "May damage fertility. May damage the unborn child." → "قد يضر الخصوبة. قد يضر الجنين."
   (the safety guide writes the English's semicolon, "قد يضر الخصوبة؛ قد يضر الجنين"); where the English joins them,
   "may damage fertility or the unborn child" (the records), it stays Oman's H360, "قد يضر الخصوبة أو الجنين" (round 7;

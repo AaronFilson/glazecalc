@@ -485,8 +485,11 @@ and Bengali; units in Latin, left to right; Noto Nastaliq Urdu served for Urdu p
 - **Testing it.** `/ar-XD/` is the right-to-left pseudo-locale with real Arabic letters, all six of Arabic's plural
   forms and Arabic-Indic digits (`ar-u-nu-arab`), so the browser's own bidirectional rules run as they will for Arabic.
   `/ar-XB/` only reverses Latin text, which hides those bugs. `/hi-XE/` writes Devanagari, stacked and marked above and
-  below, for Hindi's fonts and line heights. Both keep in Latin what a translation keeps: acronyms (SK, LOI), units,
-  formulas, names and web addresses. The browser tests run every page in both at a phone's width
+  below, for Hindi's fonts and line heights; `/ta-XF/` and `/kn-XG/` do the same in Tamil (wide letters, vowel signs
+  before, above and below) and Kannada (letters stacked below the line, and `one` taking 0 as well as 1), from one table
+  of letters per script (`IndicScript` in `client/app/i18n/pseudo.ts`: another Indian script is one more table and a line
+  in `lib/regions/languages.js`). All keep in Latin what a translation keeps: acronyms (SK, LOI), units,
+  formulas, names and web addresses. The browser tests run every page in all of them at a phone's width
   (`e2e/languages.spec.js`, `e2e/pseudo.spec.js`) and at 320 px with the accessibility checks (`e2e/rtl.spec.js`).
 - **Bootstrap.** The app compiles only the parts of Bootstrap it uses, with physical sides. `client/bootstrap.scss`
   mirrors those it uses under `:where([dir='rtl'])`, at the specificity of the rules they mirror, so the app's own
@@ -518,8 +521,25 @@ and Bengali; units in Latin, left to right; Noto Nastaliq Urdu served for Urdu p
   Noto Sans Bengali), never synthesized italics, never letter-spacing; lines 1.75 high for Devanagari and Bengali, and
   headings 1.45 (Arabic headings 1.4). Urdu is Nastaliq, which few devices have: Noto Nastaliq Urdu 3.007 is served,
   cut to Urdu's letters (193 kB, weights 400–700), named only in Urdu's font list so no other page fetches it, not
-  preloaded, in lines 1.9 high. The CSP's `font-src 'self'` covers it. The Linux test image installs `fonts-noto-core` and keeps only its Arabic, Devanagari and Bengali fonts: with all of them,
-  Chromium's search through every font for each sign Lora lacks made the accessibility checks run out of time.
+  preloaded, in lines 1.9 high. The CSP's `font-src 'self'` covers it. The Linux test image installs `fonts-noto-core` and keeps only its Arabic, Devanagari, Bengali, Tamil and Kannada fonts (each wave of India's languages adds its
+  scripts): with all of them, Chromium's search through every font for each sign Lora lacks made the accessibility
+  checks run out of time.
+- **India's regional languages** (wave I1: Tamil, Marathi, Kannada; the later waves are table entries). Their font
+  stacks are in `$gc-script-fonts` ahead of their translations, all system fonts (Nirmala UI covers every Indian script
+  on Windows; Noto on Android and Linux; Kohinoor and Sangam MN on Apple), none served. Line heights are the SCSS map
+  `$gc-tall-scripts` (text, headings): 1.7 to 1.85 and 1.45 to 1.5, taller for the scripts that stack letters below the
+  line (Telugu, Kannada, Odia, Sinhala), and form fields and buttons 1.6 there; the values are starting points, to be
+  set from each language's screenshot run. `ta`, `mr` and `kn` are known but not live; `or` is grouped with South
+  Asia ahead of its entry. **To test on a real iPhone before each language goes live**: Apple lists Kannada Sangam MN
+  and Gurmukhi MN as downloads on iOS, and Tamil, Malayalam, Odia and Sinhala could not be confirmed, so the page may
+  be drawn in a font the stack does not name; a web font cut to the script is the fallback. Marathi and Nepali need
+  their own letter forms (ल, श, झ) checked in `/mr/` on Windows, Android and macOS.
+- **Checks on the Indian languages** (`scripts/i18n-check.mjs`): the script (a translation has its own script and
+  Latin only, `checkScripts`); Unicode form NFC for every translation (`checkNormalization`: a nukta letter is the
+  letter and the nukta); stray ZWJ and ZWNJ (`checkJoiners`: none, but Malayalam's ZWNJ after a virama, Sinhala's
+  ZWJ after a virama and Bengali's ZWJ between র and the virama, for ra with ya-phala); the 12-hour times of each Indian language (रात 8 बजे and the like) are kept whole so that the
+  figures check reports them; and where a language's `one` takes 0 as well as 1 (Hindi, Kannada, Gujarati, Punjabi,
+  Sinhala, French), an English plural whose `one` is for exactly one has an `=1` form in the translation.
 - **Still to do with the languages themselves:** pinned digits and calendars for each region (Phase A1), the
   any-script parser for lakh grouping and Arabic separators (A2, A3), and `/ar/`, `/hi/`, `/ur/` and `/bn/` pages
   prerendered for their regions.

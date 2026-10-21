@@ -10,10 +10,14 @@
 //     the whole connection. Nothing else: no implicit flow, no client
 //     credentials, no device flow, no OpenID Connect (no ID tokens, no
 //     userinfo), no DPoP, no pushed requests, no logout endpoint.
-//   - Public clients only (token_endpoint_auth_method none): an assistant
-//     cannot keep a secret. An app names itself by an https:// address
-//     (CIMD, server/oauth/cimd.ts), or registers itself (DCR), which is
-//     limited and expires (server/oauth/adapter.ts).
+//   - Public clients (token_endpoint_auth_method none): an assistant cannot
+//     keep a secret. An app names itself by an https:// address (CIMD,
+//     server/oauth/cimd.ts), or registers itself (DCR), which is limited and
+//     expires (server/oauth/adapter.ts). OAUTH_CIMD_AUTH (cimd.ts
+//     cimdAuthMode, off by default) also takes ChatGPT's document: as a public
+//     app (public), or signing its token requests with its own key
+//     (private_key_jwt; server/oauth/client_assertions.ts). Never a secret,
+//     and never for an app that registered itself.
 //   - Tokens for the MCP endpoint alone: the one resource (RFC 8707) is
 //     resourceUrl(), the default too, and anything else is invalid_target.
 //     Access tokens are opaque and last an hour.
@@ -27,7 +31,7 @@
 // findAccount below ask for a working row).
 import { AsyncLocalStorage } from 'node:async_hooks';
 import crypto from 'node:crypto';
-import type { NextFunction, Request, RequestHandler, Response } from 'express';
+import express, { type NextFunction, type Request, type RequestHandler, type Response } from 'express';
 import mongoose from 'mongoose';
 import Provider, { errors, type ClientMetadata, type Configuration, type KoaContextWithOIDC } from 'oidc-provider';
 import appSecret from '../lib/app_secret.ts';
@@ -44,13 +48,27 @@ import User from '../models/user.ts';
 import { issuerUrl, resourceUrl } from '../mcp/urls.ts';
 import {
   extendGrant,
+  grantSourceOnRecord,
   keepRegisteredClient,
   MongoAdapter,
   whenClientDocumentWanted,
   whenGrantEnded,
   whenReused
 } from './adapter.ts';
-import { allowedClientIdUrl, CACHE_SECONDS, countFetch, guardedFetch, MOST_BYTES } from './cimd.ts';
+import {
+  allowedClientIdUrl,
+  CACHE_SECONDS,
+  checkJwks,
+  cimdAuthMode,
+  CLIENT_KEY_ALGS,
+  countFetch,
+  guardedFetch,
+  markKeySetProven,
+  MOST_BYTES,
+  whoIsAsking,
+  type CimdAuthMode
+} from './cimd.ts';
+import { assertClientAssertion, CLOCK_TOLERANCE } from './client_assertions.ts';
 import { keepClientDocument, keptClientDocument } from './client_documents.ts';
 import { revokeGrant } from './revoke.ts';
 
@@ -162,6 +180,49 @@ const refuse = (description: string): never => {
   throw new errors.InvalidClientMetadata(description);
 };
 
+/** The token endpoint's answer once an account is over its own count (limits.countTokenGrant): 429, as OAuth writes it. */
+class TooManyTokenRequests extends errors.OIDCProviderError {
+  override error_description = 'Too many token requests for this account. Please wait a few minutes and try again.';
+
+  constructor() {
+    super(429, 'too_many_requests');
+  }
+}
+
+/**
+ * The keys of an app named by its address that signs its token requests
+ * (private_key_jwt): exactly one of a jwks_uri on the client_id's own site
+ * (https, port 443, a host name, the same origin, not the document itself;
+ * so an app's document can never aim the server's fetches at someone else)
+ * or a jwks of 1 to 5 public keys (cimd.ts checkJwks); and a signing alg, if
+ * named, from CLIENT_KEY_ALGS.
+ */
+const checkClientKeys = (metadata: ClientMetadata): void => {
+  const clientId = String(metadata.client_id);
+  const { jwks_uri: uri, jwks } = metadata;
+  if ((uri === undefined) === (jwks === undefined)) refuse('private_key_jwt needs one of jwks_uri and jwks');
+  if (uri !== undefined) {
+    if (
+      typeof uri !== 'string' ||
+      !allowedClientIdUrl(uri) ||
+      uri === clientId ||
+      new URL(uri).origin !== new URL(clientId).origin
+    ) {
+      refuse("jwks_uri must be an https address on the client_id's own site");
+    }
+  } else {
+    try {
+      checkJwks(jwks);
+    } catch (err) {
+      refuse('jwks: ' + (err instanceof Error ? err.message : 'not taken'));
+    }
+  }
+  const alg = metadata.token_endpoint_auth_signing_alg;
+  if (alg !== undefined && !(CLIENT_KEY_ALGS as readonly unknown[]).includes(alg)) {
+    refuse(`token_endpoint_auth_signing_alg must be one of ${CLIENT_KEY_ALGS.join(', ')}`);
+  }
+};
+
 /**
  * What any app must be, however it named itself (CIMD or DCR), checked
  * whenever its details are read: public (no secret), the code and refresh
@@ -169,15 +230,47 @@ const refuse = (description: string): never => {
  * site), an app's own scheme, or http back to the person's own computer. An
  * app whose redirects are all of the last two is a native app (loopback ports
  * may then vary, RFC 8252). Sync, as oidc-provider asks.
+ *
+ * With OAUTH_CIMD_AUTH (`mode`; cimd.ts cimdAuthMode), for an app named by its
+ * address only, never one that registered itself:
+ *   public: a document that asks for another method but also lists none in
+ *     token_endpoint_auth_methods_supported (ChatGPT's) is taken as a public
+ *     app: none, and its jwks_uri, jwks and signing alg dropped, so nothing is
+ *     fetched from them. Our metadata offers none, so none is what such an app
+ *     uses (OpenAI: the method is picked from what both sides list).
+ *   private_key_jwt: as public; and a document that asks for private_key_jwt
+ *     is taken as it says, with its keys (checkClientKeys). oidc-provider then
+ *     holds the app to that one method at the token and revocation endpoints.
+ * The plural list is read here and dropped: nothing else keeps it.
  */
-export const checkClientMetadata = (metadata: ClientMetadata): void => {
-  if (metadata.token_endpoint_auth_method !== 'none') refuse('only public clients (token_endpoint_auth_method none)');
+export const checkClientMetadata = (metadata: ClientMetadata, mode: CimdAuthMode = cimdAuthMode()): void => {
+  const offered = metadata.token_endpoint_auth_methods_supported as unknown;
+  delete metadata.token_endpoint_auth_methods_supported;
+  const named = mode !== 'off' && typeof metadata.client_id === 'string' && isCimdClient(metadata.client_id);
+  const signs = named && mode === 'private_key_jwt' && metadata.token_endpoint_auth_method === 'private_key_jwt';
+  if (signs) checkClientKeys(metadata);
+  else if (
+    named &&
+    metadata.token_endpoint_auth_method !== 'none' &&
+    Array.isArray(offered) &&
+    offered.every((method) => typeof method === 'string') &&
+    offered.includes('none')
+  ) {
+    metadata.token_endpoint_auth_method = 'none';
+    delete metadata.jwks_uri;
+    delete metadata.jwks;
+    delete metadata.token_endpoint_auth_signing_alg;
+  }
+  if (!signs && metadata.token_endpoint_auth_method !== 'none') {
+    refuse('only public clients (token_endpoint_auth_method none)');
+  }
   const grants = metadata.grant_types ?? [];
   if (!grants.every((grant) => grant === 'authorization_code' || grant === 'refresh_token')) {
     refuse('only the authorization_code and refresh_token grant types');
   }
   if (!(metadata.response_types ?? []).every((type) => type === 'code')) refuse('only the code response type');
-  for (const field of ['jwks', 'jwks_uri', 'sector_identifier_uri', 'request_uris', 'initiate_login_uri'] as const) {
+  const never = ['sector_identifier_uri', 'request_uris', 'initiate_login_uri'] as const;
+  for (const field of signs ? never : (['jwks', 'jwks_uri', ...never] as const)) {
     if (metadata[field] !== undefined) refuse(`${field} is not supported`);
   }
   const name = metadata.client_name;
@@ -261,7 +354,25 @@ const page = (title: string, text: string): string =>
 const escapeHtml = (text: string): string =>
   text.replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c] ?? c);
 
-const configuration = (): Configuration => ({
+/**
+ * What OAUTH_CIMD_AUTH changes in oidc-provider's settings; with it off,
+ * nothing (every setting as before). public lets checkClientMetadata see a
+ * document's token_endpoint_auth_methods_supported; private_key_jwt also
+ * takes signed token requests: the asymmetric algs only, the checks in
+ * client_assertions.ts, and keys of at most 5 kB.
+ */
+const modeSettings = (mode: CimdAuthMode): Partial<Configuration> => {
+  if (mode !== 'private_key_jwt') return {};
+  return {
+    clientAuthMethods: ['none', 'private_key_jwt'],
+    enabledJWA: { idTokenSigningAlgValues: ['ES256'], clientAuthSigningAlgValues: [...CLIENT_KEY_ALGS] },
+    clockTolerance: CLOCK_TOLERANCE,
+    assertJwtClientAuthClaimsAndHeader: assertClientAssertion,
+    fetchResponseBodyLimits: { 'client_id metadata document': MOST_BYTES, jwks_uri: MOST_BYTES }
+  };
+};
+
+const configuration = (mode: CimdAuthMode): Configuration => ({
   adapter: MongoAdapter,
   jwks: { keys: [processKey()] },
   clients: [],
@@ -336,6 +447,21 @@ const configuration = (): Configuration => ({
       if (!working(row) || String(row.userId) !== sub || row.clientId !== (token as { clientId?: string }).clientId) {
         return undefined;
       }
+      // At the token endpoint, once per request: the account's own count (limits.countTokenGrant) for a refresh
+      // token, asked for before oidc-provider uses it, so one refused for the count still works later. Not for a
+      // code: oidc-provider has used it up before it asks for the account, so a 429 would lose it (and each code
+      // needs the person's yes on the consent page anyway). Not for a refresh token already used either: its
+      // second use is found next and ends the connection (a copied token), which no count may hold up.
+      const { kind, consumed } = token as { kind?: string; consumed?: unknown };
+      if (
+        !rows.has(ctx) &&
+        kind === 'RefreshToken' &&
+        !consumed &&
+        routerPath(current.getStore()?.path ?? '') === ROUTES.token &&
+        !limits.countTokenGrant(sub)
+      ) {
+        throw new TooManyTokenRequests();
+      }
       rows.set(ctx, row);
     }
     return { accountId: sub, claims: () => ({ sub }) };
@@ -343,9 +469,10 @@ const configuration = (): Configuration => ({
   interactions: { url: (_ctx, interaction) => interactionPath(interaction.uid) },
   extraClientMetadata: {
     // Not used for itself: its check runs once for every client, with all its metadata (checkClientMetadata).
-    properties: ['software_id'],
+    // The plural list only when OAUTH_CIMD_AUTH is on: the check reads it, then drops it.
+    properties: mode === 'off' ? ['software_id'] : ['software_id', 'token_endpoint_auth_methods_supported'],
     validator: (_ctx, key, _value, metadata) => {
-      if (key === 'software_id') checkClientMetadata(metadata);
+      if (key === 'software_id') checkClientMetadata(metadata, mode);
     }
   },
   // A browser-based app may call the token endpoint from the origin of one of its https redirect URIs.
@@ -404,7 +531,8 @@ const configuration = (): Configuration => ({
       },
       cacheDuration: { min: CACHE_SECONDS.min, max: CACHE_SECONDS.max }
     }
-  } as Configuration['features']
+  } as Configuration['features'],
+  ...modeSettings(mode)
 });
 
 /**
@@ -415,25 +543,37 @@ const configuration = (): Configuration => ({
  */
 const current = new AsyncLocalStorage<{ path: string; address: string | undefined }>();
 
-let made: { issuer: string; provider: Provider; handler: ReturnType<Provider['callback']> } | undefined;
+let made:
+  { issuer: string; mode: CimdAuthMode; provider: Provider; handler: ReturnType<Provider['callback']> } | undefined;
 
-/** The authorization server for the site's address, made on first use (the tests set the address first). */
+/**
+ * The authorization server for the site's address and OAUTH_CIMD_AUTH, made on
+ * first use (the tests set the address first, and may change the mode).
+ */
 export const getProvider = (): Provider => serverFor().provider;
 
 const serverFor = () => {
   const issuer = issuerUrl();
-  if (made?.issuer === issuer) return made;
-  const provider = new Provider(issuer, configuration());
+  const mode = cimdAuthMode();
+  if (made?.issuer === issuer && made.mode === mode) return made;
+  const provider = new Provider(issuer, configuration(mode));
   // X-Forwarded-Proto is set to the site's own (handOver), never the client's.
   provider.proxy = true;
   // Koa's own logging is off; errors are logged here, without the request.
   provider.silent = true;
   provider.on('server_error', (_ctx, err) => log.error('OAuth server error', { err }));
-  made = { issuer, provider, handler: provider.callback() };
+  // A code or refresh token exchanged by an app that signs: its keys belong to an app with a working connection.
+  provider.on('grant.success', (ctx) => {
+    const client = ctx.oidc.client;
+    if (client?.tokenEndpointAuthMethod === 'private_key_jwt' && client.jwksUri) markKeySetProven(client.jwksUri);
+  });
+  made = { issuer, mode, provider, handler: provider.callback() };
   return made;
 };
 
 whenReused((grantId) => revokeGrant(grantId, 'reused'));
+// Key-set fetches are counted by the address of the token request that asked for them.
+whoIsAsking(() => current.getStore()?.address);
 // An app named by its address reads from the document kept with its working connections first.
 whenClientDocumentWanted((clientId) =>
   keptClientDocument(clientId, (metadata) => getProvider().Client.validate(metadata), current.getStore()?.address)
@@ -473,12 +613,50 @@ export const asTheSiteForConnect = (req: Request, _res: Response, next: NextFunc
   current.run({ path: req.path, address: req.ip }, next);
 };
 
+// The token endpoint's form, read here only when a limit on refusals is over
+// (grantOnRecord); oidc-provider then takes the form as read (req.body)
+// rather than reading the request again, and says once in the log that it
+// did ("already parsed request body detected"), which is expected here. Its
+// own limit on a form's size.
+const tokenForm = express.urlencoded({ extended: false, limit: '56kb' });
+const held = new WeakMap<Request, Promise<boolean>>();
+
+/**
+ * Whether a token request's code or refresh token is one the server holds
+ * (adapter.ts grantSourceOnRecord): such a request goes on even when the
+ * token endpoint's counts of refusals are over (rate_limit.ts), so a working
+ * connection is never turned away by them. Asked once per request.
+ */
+const grantOnRecord = (req: Request, res: Response): Promise<boolean> => {
+  let answer = held.get(req);
+  if (!answer) {
+    answer = (async () => {
+      await new Promise<void>((resolve, reject) => {
+        void tokenForm(req, res, (err?: unknown) => (err ? reject(err as Error) : resolve()));
+      });
+      const form = (req.body ?? {}) as Record<string, unknown>;
+      const kind =
+        form.grant_type === 'refresh_token'
+          ? 'RefreshToken'
+          : form.grant_type === 'authorization_code'
+            ? 'AuthorizationCode'
+            : undefined;
+      const value = kind === 'RefreshToken' ? form.refresh_token : form.code;
+      if (!kind || typeof value !== 'string' || !value || value.length > 512) return false;
+      return grantSourceOnRecord(kind, value);
+    })().catch(() => false);
+    held.set(req, answer);
+  }
+  return answer;
+};
+limits.whenGrantOnRecord(grantOnRecord);
+
 /** The authorization server's limits (server/lib/rate_limit.ts), by address and method. */
 const limitsFor = (req: Request): RequestHandler[] => {
   // As the router matches it, should a path other than offeredPath's ever get this far.
   const path = routerPath(req.path);
   if (path === ROUTES.registration) return [limits.oauthRegister, limits.oauthRegisterAll];
-  if (path === ROUTES.token) return [limits.oauthToken];
+  if (path === ROUTES.token) return [limits.oauthTokenFailures, limits.oauthTokenAll];
   if (path === ROUTES.authorization || path.startsWith(ROUTES.authorization + '/')) {
     return [limits.oauthAuthorize];
   }
@@ -519,9 +697,16 @@ export const oauthServer = (req: Request, res: Response, next: NextFunction): vo
   run(0)();
 };
 
-/** The authorization server's metadata (RFC 8414), at /.well-known/oauth-authorization-server. */
+/**
+ * The authorization server's metadata (RFC 8414), at
+ * /.well-known/oauth-authorization-server. With OAUTH_CIMD_AUTH=private_key_jwt
+ * it offers that method beside none (which Claude needs to pick a document,
+ * so it stays first), and the algs it takes.
+ */
 export const authorizationServerMetadata = () => {
   const provider = getProvider();
+  const signing = cimdAuthMode() === 'private_key_jwt';
+  const methods = signing ? ['none', 'private_key_jwt'] : ['none'];
   return {
     issuer: issuerUrl(),
     authorization_endpoint: provider.urlFor('authorization'),
@@ -532,8 +717,10 @@ export const authorizationServerMetadata = () => {
     response_modes_supported: ['query'],
     grant_types_supported: ['authorization_code', 'refresh_token'],
     code_challenge_methods_supported: ['S256'],
-    token_endpoint_auth_methods_supported: ['none'],
-    revocation_endpoint_auth_methods_supported: ['none'],
+    token_endpoint_auth_methods_supported: methods,
+    ...(signing && { token_endpoint_auth_signing_alg_values_supported: [...CLIENT_KEY_ALGS] }),
+    revocation_endpoint_auth_methods_supported: methods,
+    ...(signing && { revocation_endpoint_auth_signing_alg_values_supported: [...CLIENT_KEY_ALGS] }),
     scopes_supported: [...OAUTH_SCOPES],
     authorization_response_iss_parameter_supported: true,
     client_id_metadata_document_supported: true,

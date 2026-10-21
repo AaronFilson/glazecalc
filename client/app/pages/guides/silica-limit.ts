@@ -22,7 +22,8 @@ const KIND: Record<Limit['kind'], string> = {
  * (lib/regions/workplace.js): the value for quartz, and cristobalite where it
  * differs, what kind of limit it is and what sets it; in an EU member state,
  * how it compares with the EU's binding limit; and the national body for
- * safety at work, linked.
+ * safety at work, linked. Where a country has no national limit, what was
+ * found instead, with the limits some states have set (India's).
  */
 @Component({
   selector: 'gc-silica-limit',
@@ -173,6 +174,65 @@ const KIND: Record<Limit['kind'], string> = {
         <!-- Where there is no national limit, what was found instead (India's: each state sets its own). -->
         @if (facts.noLimit; as noLimit) {
           <p>{{ words(noLimit.note) }}</p>
+          <!-- The limits some states have set (India's), read only in others' copies: below the line, never as the country's. -->
+          @if (noLimit.states; as states) {
+            <div
+              class="guide-table-scroll"
+              tabindex="0"
+              role="region"
+              [attr.aria-label]="t('guides.silica.statesLabel', { region: regionName() })"
+            >
+              <table class="guide-table">
+                <caption>
+                  {{
+                    t('guides.silica.statesCaption', { date: statesChecked() })
+                  }}
+                </caption>
+                <thead>
+                  <tr>
+                    <th scope="col">{{ t('guides.silica.state') }}</th>
+                    <th scope="col">{{ t('guides.silica.respirableDust') }}</th>
+                    <th scope="col">{{ t('guides.silica.totalDust') }}</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  @for (state of states; track state.area) {
+                    <tr>
+                      <th scope="row">{{ state.area }}</th>
+                      @for (part of dustParts; track part) {
+                        <td class="num">
+                          @if (state[part]; as formula) {
+                            {{
+                              t(formulaKey(formula), {
+                                numerator: fixedNumber(formula.numerator, formula.places ?? 1),
+                                factor: number(formula.factor),
+                                offset: number(formula.offset ?? 1)
+                              })
+                            }}
+                          } @else if (state.clipped?.includes(part)) {
+                            {{ t('guides.silica.cutOff') }}
+                          } @else {
+                            -
+                          }
+                        </td>
+                      }
+                    </tr>
+                  }
+                </tbody>
+              </table>
+            </div>
+            @for (state of states; track state.area) {
+              <p>
+                <gc-rich
+                  [text]="t('guides.silica.stateSetBy', { area: state.area, law: state.law })"
+                  [links]="{ link: state.source }"
+                />
+                @if (state.note) {
+                  {{ words(state.note) }}
+                }
+              </p>
+            }
+          }
         }
       }
       @if (facts.respirators; as respirators) {
@@ -230,12 +290,21 @@ export class SilicaLimit {
     return silica?.before && silica.from && !this.inForce(silica.from) ? silica.before : null;
   });
 
+  /** A state's two formulas, in the table's order. */
+  protected readonly dustParts = ['respirable', 'total'] as const;
+
+  /** The day the states' limits were first read, of those shown. */
+  protected readonly statesChecked = computed(() =>
+    earliest((this.facts()?.noLimit?.states ?? []).map((state) => state.checked))
+  );
+
   protected readonly checked = computed(() => {
     const facts = this.facts();
     return earliest(
       [
         facts?.silica?.checked,
         facts?.noLimit?.checked,
+        ...(facts?.noLimit?.states ?? []).map((state) => state.checked),
         this.earlier()?.checked,
         facts?.silica?.recommended?.checked,
         facts?.respirators?.checked,
@@ -248,6 +317,7 @@ export class SilicaLimit {
     return [
       facts?.silica?.source,
       facts?.noLimit?.source,
+      ...(facts?.noLimit?.states ?? []).map((state) => state.source),
       this.earlier()?.source,
       facts?.silica?.recommended?.source,
       facts?.respirators?.source,

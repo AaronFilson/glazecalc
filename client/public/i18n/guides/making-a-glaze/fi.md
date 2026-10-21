@@ -26,7 +26,7 @@ Lasitteen{{en: glaze}} valmistaminen tarkoittaa, että jauhemaiset **raaka-ainee
 
 ### Ostopaikat
 
-Keraamikot tekevät ostoksensa keramiikkatarvikeliikkeissä, jotka myyvät savea, lasiteraaka-aineita ja työvälineitä. Taulukossa on joitakin oman maan kauppoja, kukin tarkistettu kaupan omilta sivuilta, ja valitsemalla toisen maan näkee sen kaupat. Valikoima muuttuu, joten tarkista ennen tilaamista. Suuret tuottajat, kuten Sibelco ja Imerys, myyvät teollisuudelle; keraamikot ostavat niiden raaka-aineet tällaisten kauppojen kautta. Keramiikan hakuteossivusto Digitalfire ylläpitää luetteloa muiden maiden tarvikeliikkeistä.
+Keraamikot tekevät ostoksensa keramiikkatarvikeliikkeissä, jotka myyvät savea, lasiteraaka-aineita ja työvälineitä. Taulukossa on joitakin oman maan kauppoja, kukin tarkistettu kaupan omilta sivuilta, ja valitsemalla toisen maan tai alueen näkee sen kaupat. Valikoima muuttuu, joten tarkista ennen tilaamista. Suuret tuottajat, kuten Sibelco ja Imerys, myyvät teollisuudelle; keraamikot ostavat niiden raaka-aineet tällaisten kauppojen kautta. Keramiikan hakuteossivusto Digitalfire ylläpitää luetteloa muiden maiden tarvikeliikkeistä.
 
 ::shops
 

@@ -147,12 +147,39 @@ test('Arabic and Hindi draw their letters in the system font, Hindi in taller li
   expect(heading).toBeCloseTo(1.45, 2);
 
   // The landing page's line over its title is spaced out in English only.
-  for (const code of ['ar-XD', 'hi-XE']) {
+  for (const code of ['ar-XD', 'hi-XE', 'ta-XF', 'kn-XG']) {
     await page.goto('/' + code + '/');
     await expect(page.locator('.eyebrow')).toHaveCSS('letter-spacing', 'normal');
   }
   // Urdu's Nastaliq is served for Urdu alone.
   expect(files.filter((file) => /nastaliq/i.test(file))).toEqual([]);
+});
+
+test("Tamil and Kannada draw their letters in the system's font, in lines as tall as the script's, and fetch no font", async ({
+  page
+}) => {
+  const files = fontFiles(page);
+  // [pseudo-locale, its Linux font, text line height at 17 px, heading line height]
+  for (const [code, linux, line, heading] of [
+    ['ta-XF', 'Noto Sans Tamil', '28.9px', 1.5],
+    ['kn-XG', 'Noto Sans Kannada', '31.45px', 1.5]
+  ]) {
+    await page.goto('/' + code + '/guides/firing');
+    await expect(page.locator('h1')).toHaveText(code === 'ta-XF' ? /[\u0b80-\u0bff]/ : /[\u0c80-\u0cff]/);
+    await page.evaluate(() => globalThis.document.fonts.ready);
+    // Noto on Linux (scripts/test-e2e-linux.Dockerfile, and so in CI); Nirmala UI on Windows.
+    const font = process.platform === 'linux' ? new RegExp(`^${linux}$`) : /^Nirmala UI/;
+    expect(await fontsOf(page, 'h1'), code).toContainEqual(expect.stringMatching(font));
+    await expect(page.locator('html')).toHaveCSS('font-synthesis', 'none');
+    await expect(page.locator('body')).toHaveCSS('line-height', line);
+    const ratio = await page.locator('h1').evaluate((h1) => {
+      const style = globalThis.getComputedStyle(h1);
+      return parseFloat(style.lineHeight) / parseFloat(style.fontSize);
+    });
+    expect(ratio, code).toBeCloseTo(heading, 2);
+  }
+  // Both are in the device's own fonts: nothing is downloaded for them.
+  expect(files.filter((file) => /noto-(sans|nastaliq)/i.test(file))).toEqual([]);
 });
 
 test("an Urdu page fetches the app's Nastaliq font and sets its text in it, in lines 1.9 high", async ({ page }) => {

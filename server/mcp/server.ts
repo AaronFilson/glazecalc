@@ -11,11 +11,13 @@
 // a call 401 before the SDK: lazy authentication, docs/adr/0024).
 import { McpServer, type McpRequestContext, type RegisteredTool } from '@modelcontextprotocol/server';
 import { type Caller, fail } from './common.ts';
+import { registerDictation } from './dictation.ts';
 import { registerPrompts } from './prompts.ts';
 import { requestStateCodec } from './request_state.ts';
 import { ACCOUNT_TOOLS, registerAccountTools } from './tools/account.ts';
 import { registerWriteTools, WRITE_TOOLS } from './tools/account_write.ts';
 import { registerBlendTools } from './tools/blends.ts';
+import { registerCompanionTools } from './tools/companion.ts';
 import { registerGuides } from './tools/guides.ts';
 import { registerPublicTools } from './tools/public.ts';
 import { signInChallenge } from './urls.ts';
@@ -23,7 +25,7 @@ import { signInChallenge } from './urls.ts';
 export const SERVER_INFO = {
   name: 'glazecalc',
   title: 'Glazecalc',
-  version: '1.2.0',
+  version: '1.3.0',
   websiteUrl: 'https://glazecalcapp.com'
 } as const;
 
@@ -31,7 +33,8 @@ const INSTRUCTIONS =
   'Glazecalc works out ceramic glaze chemistry. Use search_materials to find material names, then analyze_recipe, ' +
   'check_limits, suggest_substitutes or match_from_materials with recipe lines; solve_target makes a recipe ' +
   'for a target unity formula or oxide analysis from given materials; blend_recipes works out the test ' +
-  'tiles of a line or triaxial blend between recipes, or compares two. Amounts can be in any unit the lines ' +
+  'tiles of a line or triaxial blend between recipes, or compares two; vary_material shows what one material does ' +
+  'to a base recipe across a range of amounts, and compare_recipes sets two recipes side by side. Amounts can be in any unit the lines ' +
   'share. The tools that fit amounts say how near the new recipe comes to the old (or the target), oxide by oxide ' +
   '(report.closeness): judge a match by that, not by its miss, which is the solver’s own score. ' +
   'The limit checks are cautions from published limits, not proof that a glaze is food safe: say so, and ' +
@@ -41,13 +44,15 @@ const INSTRUCTIONS =
   'and the cone charts (glazecalc://cones). With a personal access token, or once the person has connected ' +
   'this app to their account, the tools whose names say "my" or list_recipes read the person\'s own saved ' +
   'records; without either, calling one of them asks the person to sign in to Glazecalc. create_recipe, update_recipe, add_notebook_entry, add_my_material, update_my_material, add_to_shelf, ' +
-  'remove_from_shelf, undo_shelf_change and move_to_trash change them, and only when the person allowed changes; otherwise they ' +
+  'remove_from_shelf, undo_shelf_change, move_to_trash, create_firing_log, add_firing_rows and link_firing change them, and only when the person allowed changes; otherwise they ' +
   'are refused and change nothing. Change only what the person asked for, and tell them what you changed: each ' +
   'change keeps the record as it was, so they can undo it on the website, and move_to_trash puts a record in ' +
   'the Trash for 30 days, never deleting it. The shelf keeps the list it had before its last change: ' +
   'undo_shelf_change puts it back, one step only. When the person has chosen to confirm changes, a change waits ' +
   'for their approval and nothing is changed until they give it: pass on the link Glazecalc gives, and never ' +
-  'say a change was made before it was.';
+  'say a change was made before it was. When the person dictates studio notes (a recipe, a firing log, test tile ' +
+  'results), the prompt dictation says how: read every record back and save only after a clear yes, and never fill ' +
+  'in an amount, temperature or result they did not give.';
 
 /** The caller authInfo carries, as server/mcp/index.ts sets it. */
 export const callerOf = (ctx: McpRequestContext): Caller => {
@@ -131,8 +136,10 @@ export const makeServer = (ctx: McpRequestContext): McpServer => {
   withSecuritySchemes(server);
   registerPublicTools(server, caller);
   registerBlendTools(server);
+  registerCompanionTools(server);
   registerGuides(server);
   registerPrompts(server);
+  registerDictation(server);
   if (caller.userId) {
     registerAccountTools(server, caller);
     registerWriteTools(server, caller);

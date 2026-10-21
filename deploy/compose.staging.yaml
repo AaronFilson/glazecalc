@@ -46,6 +46,9 @@ services:
       SITE_URL: https://staging.glazecalcapp.com
       SITE_LABEL: staging
       NOINDEX: '1'
+      # ChatGPT's client metadata document (server/oauth/cimd.ts cimdAuthMode; off when unset): public,
+      # then private_key_jwt, for the real-client test (docs/integrations/directories.md, "2. ChatGPT").
+      # OAUTH_CIMD_AUTH: public
     ports:
       - '127.0.0.1:3001:3000'
     # Its own network (default: the way out to the mail server, and the port

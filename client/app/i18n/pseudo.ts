@@ -23,10 +23,16 @@ import { printAST } from '@formatjs/icu-messageformat-parser/printer.js';
 //   hi-XE  each English word in Devanagari, its letters stacked and marked above
 //          and below: Hindi's fonts and taller lines, so a box that clips its text
 //          or a line set too tight shows it.
+//   ta-XF  the same in Tamil, whose letters are wide and whose vowel signs stand before,
+//          above and below them, and kn-XG in Kannada, whose letters stack below the
+//          line: the Indian scripts' fonts and lines. Each takes its language's plural
+//          rules (Kannada's `one` covers 0). Another Indian script is one table of
+//          letters (IndicScript below) and a line in lib/regions/languages.js.
 //
 // Placeholders, plurals and tags keep their ICU form; only the text changes. In
-// ar-XD and hi-XE what a translation keeps in Latin stays so: acronyms (SK, LOI),
-// units (°C, g), formulas (SiO₂, K2O), names (Glazecalc) and web addresses.
+// ar-XD and the Indic pseudo-locales what a translation keeps in Latin stays so:
+// acronyms (SK, LOI), units (°C, g), formulas (SiO₂, K2O), names (Glazecalc) and
+// web addresses.
 
 const ACCENTED: Record<string, string> = Object.fromEntries(
   [...'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'].map((letter, i) => [
@@ -83,12 +89,12 @@ function keptLatin(word: string, before: string, after: string): boolean {
 }
 
 /**
- * Text with each word written anew, and its punctuation, but for web addresses and the Latin a
+ * Text with each word written anew, and its punctuation, but for web and email addresses and the Latin a
  * translation keeps.
  */
 function eachWord(text: string, write: (word: string) => string, punctuate: (text: string) => string): string {
   return text
-    .split(/((?:https?:\/\/|www\.)\S+)/)
+    .split(/((?:https?:\/\/|www\.)\S+|[\w.+-]+@[\w-]+(?:\.[\w-]+)+)/)
     .map((part, i) =>
       i % 2
         ? part
@@ -124,8 +130,30 @@ function arabicText(text: string): string {
   );
 }
 
+/**
+ * One Indic script, for a pseudo-locale: the letters an English one is written with, so that each word is
+ * made of that script's own shapes, stacked and marked the way its fonts have most trouble with.
+ *   consonants  a consonant (with its virama, stacked two high, where the script does) for each English letter
+ *   vowels      each vowel on its own, and as the sign it takes after a consonant
+ *   capital     put before a capital's consonant (a letter with a virama, so it stands over or before it)
+ *   bareEnd     a mark after a word's last bare consonant (a sign below it)
+ *   end         a mark after each word (a sign above its end)
+ *   stop        what a full stop is written as, where the script has a sign of its own (Devanagari's danda)
+ *   letters     the script's Unicode block, for the full stop that follows a letter of it
+ * Telugu, Malayalam and the rest are one more table each here, and a line in lib/regions/languages.js.
+ */
+interface IndicScript {
+  consonants: Record<string, string>;
+  vowels: Record<string, [string, string]>;
+  capital: string;
+  bareEnd: string;
+  end: string;
+  stop?: string;
+  letters: string;
+}
+
 /** Devanagari consonants for English ones, some stacked two high (ड्ड, ट्ठ, ग्ग). */
-const CONSONANTS: Record<string, string> = {
+const DEVANAGARI_CONSONANTS: Record<string, string> = {
   b: 'ब',
   c: 'च',
   d: 'ड्ड',
@@ -149,7 +177,7 @@ const CONSONANTS: Record<string, string> = {
   z: 'ज़'
 };
 /** Each vowel on its own, and as the sign it takes after a consonant (ि and े over the line, ु under it). */
-const VOWELS: Record<string, [string, string]> = {
+const DEVANAGARI_VOWELS: Record<string, [string, string]> = {
   a: ['अ', 'ा'],
   e: ['ए', 'े'],
   i: ['इ', 'ि'],
@@ -157,27 +185,114 @@ const VOWELS: Record<string, [string, string]> = {
   u: ['उ', 'ु']
 };
 
-/** One English word in Devanagari: a capital with र् over it, a last bare consonant with ृ under it, and ँ over its end. */
-function devanagariWord(word: string): string {
+const DEVANAGARI: IndicScript = {
+  consonants: DEVANAGARI_CONSONANTS,
+  vowels: DEVANAGARI_VOWELS,
+  capital: 'र्',
+  bareEnd: 'ृ',
+  end: 'ँ',
+  stop: '।',
+  letters: '\u0900-\u097f'
+};
+
+/** Tamil: wide letters, a pulli (்) closing the first of a cluster, vowel signs before, above, below and round a letter. */
+const TAMIL: IndicScript = {
+  consonants: {
+    b: 'ப',
+    c: 'ச',
+    d: 'ட்ட',
+    f: 'ஃப',
+    g: 'க்க',
+    h: 'ஹ',
+    j: 'ஜ',
+    k: 'க்ஷ',
+    l: 'ல',
+    m: 'ம',
+    n: 'ந',
+    p: 'ப்ப',
+    q: 'க்',
+    r: 'ர',
+    s: 'ஸ',
+    t: 'த்த',
+    v: 'வ',
+    w: 'வ',
+    x: 'க்ஸ',
+    y: 'ய',
+    z: 'ழ'
+  },
+  // ெ stands before its letter, ொ round it, ி over it and ு under it.
+  vowels: { a: ['அ', 'ா'], e: ['எ', 'ெ'], i: ['இ', 'ி'], o: ['ஒ', 'ொ'], u: ['உ', 'ு'] },
+  capital: 'ஸ்ரீ',
+  bareEnd: 'ூ',
+  end: 'ஃ',
+  letters: '\u0b80-\u0bff'
+};
+
+/** Kannada: tall letters with others stacked below them (ದ್ದ, ಕ್ಷ), and signs below, above and beside. */
+const KANNADA: IndicScript = {
+  consonants: {
+    b: 'ಬ',
+    c: 'ಚ',
+    d: 'ದ್ದ',
+    f: 'ಫ',
+    g: 'ಗ್ಗ',
+    h: 'ಹ',
+    j: 'ಜ',
+    k: 'ಕ್ಷ',
+    l: 'ಲ',
+    m: 'ಮ',
+    n: 'ನ',
+    p: 'ಪ್ರ',
+    q: 'ಖ',
+    r: 'ರ',
+    s: 'ಸ್ಸ',
+    t: 'ತ್ತ',
+    v: 'ವ',
+    w: 'ವ',
+    x: 'ಕ್ಸ',
+    y: 'ಯ',
+    z: 'ಜ್ಞ'
+  },
+  vowels: { a: ['ಅ', 'ಾ'], e: ['ಎ', 'ೆ'], i: ['ಇ', 'ಿ'], o: ['ಒ', 'ೊ'], u: ['ಉ', 'ು'] },
+  capital: 'ರ್',
+  bareEnd: 'ೃ',
+  end: 'ಂ',
+  letters: '\u0c80-\u0cff'
+};
+
+/** The script each Indic pseudo-locale is written in. */
+const INDIC_SCRIPTS: Record<string, IndicScript> = { 'hi-XE': DEVANAGARI, 'ta-XF': TAMIL, 'kn-XG': KANNADA };
+
+/**
+ * One English word in an Indic script: a capital with the script's capital mark before it, a last bare consonant
+ * with its mark below, and a mark over the end (Devanagari: र् before a capital, ृ, ँ).
+ */
+function indicWord(script: IndicScript, word: string): string {
   let written = '';
   let bare = false;
   for (const char of word) {
     const letter = char.toLowerCase();
-    const vowel = VOWELS[letter];
+    const vowel = script.vowels[letter];
     if (vowel) {
       written += bare ? vowel[1] : vowel[0];
       bare = false;
-    } else if (CONSONANTS[letter]) {
-      written += (char === letter ? '' : 'र्') + CONSONANTS[letter];
+    } else if (script.consonants[letter]) {
+      written += (char === letter ? '' : script.capital) + script.consonants[letter];
       bare = true;
     }
   }
-  return written + (bare ? 'ृ' : '') + 'ँ';
+  return written + (bare ? script.bareEnd : '') + script.end;
 }
 
-/** Text in Devanagari, with a danda (।) for a full stop. */
-function hindiText(text: string): string {
-  return eachWord(text, devanagariWord, (part) => part.replace(/(?<=[\u0900-\u097f])\.(?=\s|$)/gu, '।'));
+/** Text in an Indic script, with the script's own sign for a full stop where it has one (Devanagari's danda, ।). */
+function indicText(text: string, code: string): string {
+  const script = INDIC_SCRIPTS[code]!;
+  const stop = script.stop;
+  return eachWord(
+    text,
+    (word) => indicWord(script, word),
+    (part) => (stop ? part.replace(new RegExp(`(?<=[${script.letters}])\\.(?=\\s|$)`, 'gu'), stop) : part)
+  );
 }
 
 /** Arabic's plural forms. A plural is given all six, each a copy of its "other", so every one is used. */
@@ -220,8 +335,8 @@ export function pseudoMessage(message: string, code: string): string {
   } else if (code === 'ar-XD') {
     withArabicForms(ast);
     rewrite(ast, arabicText);
-  } else if (code === 'hi-XE') {
-    rewrite(ast, hindiText);
+  } else if (Object.hasOwn(INDIC_SCRIPTS, code)) {
+    rewrite(ast, (text) => indicText(text, code));
   } else {
     rewrite(ast, (text) => [...text].map((c) => ACCENTED[c] ?? c).join(''));
     const padding = '·'.repeat(Math.max(1, Math.round(message.length / 3)));
@@ -236,7 +351,7 @@ export function pseudoText(text: string, code: string): string {
   if (code === 'ar-XB') return text.trim() ? RLO + text + PDF : text;
   if (code === 'ja-XC') return japaneseText(text);
   if (code === 'ar-XD') return arabicText(text);
-  if (code === 'hi-XE') return hindiText(text);
+  if (Object.hasOwn(INDIC_SCRIPTS, code)) return indicText(text, code);
   return [...text].map((c) => ACCENTED[c] ?? c).join('');
 }
 

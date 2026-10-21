@@ -27,7 +27,7 @@
       "text": "Prah, zaščitne dihalne maske, čiščenje, surovine, ki zahtevajo največ previdnosti, in odzračevanje peči."
     },
     "homeSafety": {
-      "title": "Varnost pri glaziranju doma: otroci, hišni ljubljenčki in peč",
+      "title": "Ne zastrupite svoje družine",
       "text": "Lončarstvo doma z otroki in hišnimi ljubljenčki: shranjevanje, prah, peč in kaj storiti, če kdo kaj pogoltne."
     },
     "firing": {
@@ -43,7 +43,7 @@
   "contents": "Na tej strani",
   "poison": {
     "numbersFor": "Telefonske številke:",
-    "choose": "Izberite državo",
+    "choose": "Izberite državo ali regijo",
     "label": "Koga poklicati: {region}",
     "caption": "Koga poklicati: {region} (številke preverjene: {date})",
     "for": "Namen",
@@ -61,7 +61,7 @@
     "animalsNone": "Živali",
     "vet": "Pokličite veterinarja.",
     "checkedOn": "Preverjeno na:",
-    "choosePrompt": "Izberite državo, da vidite, koga poklicati tam.",
+    "choosePrompt": "Izberite državo ali regijo, da vidite, koga poklicati tam.",
     "ministry": "Stran ministrstva za zdravje: <link>{name}</link>."
   },
   "density": {
@@ -89,7 +89,7 @@
     },
     "none": "{region}: nismo našli nobene trgovine s surovinami za glazure.",
     "unknown": "{region}: trgovin še nismo iskali.",
-    "choosePrompt": "Izberite državo, da vidite tamkajšnje trgovine."
+    "choosePrompt": "Izberite državo ali regijo, da vidite tamkajšnje trgovine."
   },
   "silica": {
     "limitIn": "Mejna vrednost:",
@@ -135,7 +135,7 @@
     "noData": "{region}: mejne vrednosti še nismo potrdili.",
     "agency": "Državni organ za varnost in zdravje pri delu: <link>{name}</link>.",
     "agencySilica": "Njegova <link>stran o kremenu</link>.",
-    "choosePrompt": "Izberite državo, da vidite njeno mejno vrednost."
+    "choosePrompt": "Izberite državo ali regijo, da vidite njeno mejno vrednost."
   },
   "food": {
     "rulesIn": "Pravila:",
@@ -211,7 +211,7 @@
     "unknown": "{region}: pravil še nismo potrdili.",
     "none": "{region}: ni zakona, ki bi določal mejne vrednosti za svinec in kadmij, ki ju sme žgan izdelek sprostiti (preverjeno: {date}).",
     "noneSource": "Vir: <link>{law}</link>.",
-    "choosePrompt": "Izberite državo, da vidite njena pravila."
+    "choosePrompt": "Izberite državo ali regijo, da vidite njena pravila."
   },
   "equivalents": {
     "buyingIn": "Kje kupujete:",
@@ -224,6 +224,6 @@
     "noneClose": "Nobena ni v okviru 15 g na 100 g: primerjajte kemijsko sestavo.",
     "loading": "Nalaganje knjižnice …",
     "failed": "Knjižnice ni bilo mogoče naložiti. Poskusite znova pozneje.",
-    "choosePrompt": "Izberite državo, da vidite, kaj se tam prodaja."
+    "choosePrompt": "Izberite državo ali regijo, da vidite, kaj se tam prodaja."
   }
 }
