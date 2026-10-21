@@ -1,7 +1,8 @@
 # বাংলা: style sheet and glossary
 
 Written by the round-8 terminology pass (2026-10-21), with the owner's decisions of 2026-10-21 applied (see "The
-owner's decisions and the native check" below). For translating Glazecalc into Bengali (`bn`), in standard written Bengali (প্রমিত
+owner's decisions and the native check" below), and brought up to date by the round-8 consistency pass after
+translation and review (see "Terms settled in review (round 8)"). For translating Glazecalc into Bengali (`bn`), in standard written Bengali (প্রমিত
 বাংলা) for potters in Bangladesh (region `BD`), the page Bengali is written for (`COUNTRY_OF`,
 docs/south-asia-mena-plan.md); West Bengal and the other Bengali readers of India read the same page. Read
 [README.md](README.md) first; [terms.md](terms.md) gives the meaning of every English term below. Every Bengali message and
@@ -170,6 +171,53 @@ marked **Native check**, and a translator lists each sentence that uses one in t
   (scripts/i18n-check.mjs, checkBengali) refuses U+09F7 anywhere and a Latin "." that ends a Bengali sentence.
 - **Poison line:** none in Bangladesh (region research): the text names 999 and DGHS's 16263 as health advice.
 
+## Terms settled in review (round 8)
+
+The translators and reviewers of round 8 (2026-10-21) and the consistency pass after them settled these; every bn file
+uses them, and the glossary below has their rows.
+
+- **Guide titles**, the same in each guide's front matter, in links to it, in `titles.*`, in the guides list
+  (guides/bn.json) and in recipe's `hazards.safety`: home-safety **আপনার পরিবারকে বিষ খাওয়াবেন না**; safe-mixing
+  **নিরাপদে মেশানো ও বায়ুচলাচল**; making-a-glaze **কীভাবে গ্লেজ তৈরি করবেন**; glazing-basics **মূল নীতি থেকে গ্লেজ
+  করা**; firing **একটি সাধারণ চুল্লি পোড়ানো**. A link's text is the title, never a made-up one ("পোড়ানোর গাইড").
+- **Source** (of information) **উৎস**, never সূত্র, which is a formula (সেগার সূত্র).
+- **Kiln** **চুল্লি**, with "(কিলন)" once per guide or message group (not again for "বৈদ্যুতিক চুল্লি" once it is
+  there); **firing** **পোড়ানো**; **cone** **শঙ্কু**, with "(Orton cone)" once per guide or message group.
+- **Kiln sitter**: **কিলন সিটার** for the device in general (the English "kiln sitter", lower case), and
+  "সিটার" after it; the brand **Kiln-Sitter** only where the English names Dawson's device or quotes a maker who does
+  ("Dawson Kiln-Sitter", "Kiln-Sitter-এর শঙ্কু", the manual's title). কিলন সিটার is the device's name, so it does not
+  break the kiln rule (চুল্লি with "(কিলন)" once).
+- **Guide, firing and guard cones** **গাইড শঙ্কু**, **পোড়ানোর শঙ্কু**, **গার্ড শঙ্কু**; self-supporting cone
+  **সেল্ফ-সাপোর্টিং শঙ্কু** (never স্বয়ংসমর্থ); witness cone **সাক্ষী শঙ্কু**.
+- **Switch settings** **বন্ধ / নিম্ন / মাঝারি / উচ্চ** (Off, Low, Medium, High); "switch settings" **সুইচের সেটিং**.
+- **Ramp** **তাপ বাড়ানো** for now (bn.json `firingFields.ramp` and the guides), with "{{en: ramp}}" at the guide's
+  first use; র‍্যাম্প needs a ZWJ, which the translations check does not accept yet. Revisit when it does.
+- **Liner** **লাইনার গ্লেজ**; **triaxial / biaxial** **ট্রাইঅ্যাক্সিয়াল / বাইঅ্যাক্সিয়াল** (blend: ট্রাইঅ্যাক্সিয়াল
+  ব্লেন্ড; never ত্রিমুখী).
+- **Pint weight** **পিন্ট ওজন**; **pint** **পিন্ট** (never পাইন্ট).
+- **Potter** **মৃৎশিল্পী** or **কুম্ভকার**, never কুমোর or কুমার.
+- **Iron** **লোহা** for the element in prose ("4% লোহাসহ"); the materials keep their bag names (লাল আয়রন
+  অক্সাইড).
+- **Colorant**: two words, by what the English means. **রঞ্জক উপাদান** for colorants in general, oxides and stains
+  alike: the app's "Colorants and additives" (রঞ্জক উপাদান ও সংযোজন), the library's category, and the guides'
+  general uses. **রং দেওয়ার অক্সাইড** only where the English means an oxide: glazing-basics' definition ("a metal oxide
+  or carbonate that colors a glaze"), "coloring oxides", and a record that calls one oxide "a colorant". A pigment is
+  **রঞ্জক** ("লাল আয়রন অক্সাইড রঞ্জক").
+- **Decline** (a change an app asks for) **প্রত্যাখ্যান করুন**; **data controller** **ডেটা নিয়ন্ত্রক**; **hard water**
+  **খর পানি**.
+- **Button names** in a guide or a help text are the labels exactly as recipe/bn.json and bn.json give them, in bold
+  or in quotation marks: **তুলনা করুন**, **পরিমাণ প্রস্তাব করুন ও তুলনা করুন**, **আধুনিক উপাদান চেষ্টা করুন ও তুলনা
+  করুন**, **আমার যা আছে তার সঙ্গে মেলান**, **সীসা বদলান**, **ব্যাচের মাপে আনুন**, **প্রিন্ট করুন**, **কপি হিসেবে
+  সংরক্ষণ করুন**.
+- **Japanese names** (grades, standards, makers, cone names): Hepburn romanization with the kanji in brackets at the
+  first use, as the English writes the kanji: "tokutō (特等)", "Fukushima chōseki (福島長石; …)", "Yuko Trading (Yūkō
+  Shōji, 有恒商事)", "Kyōto zēgeru, 京都ゼーゲル".
+- **GHS without a "may" the English lacks**: H302 **গিলে ফেললে ক্ষতিকর**, H332 **শ্বাসের সঙ্গে গ্রহণ করলে ক্ষতিকর**,
+  H301 **গিলে ফেললে বিষাক্ত**; "হতে পারে" only where the English says may ("may be harmful if swallowed").
+- **Nuisance dust** **বিরক্তিকর ধুলা** (records), kept: no better Bengali term was found; the occupational-health
+  sense (dust with no specific toxicity, still to be kept out of the lungs) is plain from its sentence. **Native
+  check**.
+
 ## 1. Style sheet
 
 ### Register
@@ -214,8 +262,9 @@ never in Latin letters, unless it is a trade name, a brand, a code or a unit.
   ঈ-কার (ী) (সিলিকা, রেসিপি, পোর্সেলিন, ডিভাইস), and ন, not ণ (কেওলিন); অ্যা (য-ফলা with আ-কার) for the English open a
   (অ্যালুমিনা, অ্যাকাউন্ট, সোডা অ্যাশ); ৎ (খণ্ড ত) where the standard writes it (মৃৎশিল্প). Bengali words of Sanskrit
   origin keep their spelling (চীন, শ্রেণি, ঘণ্টা).
-- **Conjuncts and joiners:** type conjuncts with the hasant (্); the র-ফলা after র needs ZWJ (U+200D) only in the few
-  words that need it (র‍্যাম্প for ramp). No other control characters (no U+200E, U+200F, U+2066–U+2069).
+- **Conjuncts and joiners:** type conjuncts with the hasant (্); the য-ফলা after র (র‍্য, as in র‍্যাম্প, র‍্যাব) is
+  standard spelling with a ZWJ (U+200D), but the translations check does not accept the ZWJ yet, so the files avoid
+  such words for now (ramp is তাপ বাড়ানো). No other control characters (no U+200E, U+200F, U+2066–U+2069, U+2060).
 - **Danda:** U+0964 (।), never U+09F7 (৷), which looks the same but is a currency numerator (MS's own guide mixes them),
   and never "|" (U+007C, Mozilla's picture of it). The translations check refuses U+09F7.
 - **Composed forms (NFC):** text as Unicode's composed form writes it: ো and ৌ as one character each (U+09CB, U+09CC), not
@@ -315,7 +364,7 @@ scaling is **এককে আনা** ("ফ্লাক্সগুলোর য
 
 Bengali verbs and pronouns do not mark gender (সে, তিনি, আপনি), so the reader's gender never needs a guess. Keep it so:
 no gendered nouns for the user or the potter where the English has none (কুমার is also a man's word: write **কুম্ভকার**
-or **মৃৎশিল্পী** for potters in general).
+or **মৃৎশিল্পী** for potters in general, never কুমোর or কুমার).
 
 ### The reader in the guides
 
@@ -324,18 +373,19 @@ English paragraph is one Bengali paragraph.
 
 ### The app's feature names
 
-| English                       | Bengali (button, label)        | In running text          |
-| ----------------------------- | ------------------------------ | ------------------------ |
-| Compare                       | তুলনা করুন                     | “তুলনা” সুবিধা           |
-| Suggest amounts (and compare) | পরিমাণ প্রস্তাব করুন (ও তুলনা) | “পরিমাণ প্রস্তাব” সুবিধা |
-| Match with what I have        | আমার যা আছে তার সঙ্গে মেলান    | “আমার যা আছে” সুবিধা     |
-| Replace lead                  | সীসা বদলান                     | “সীসা বদলান” সুবিধা      |
-| Settings                      | সেটিংস                         | সেটিংস                   |
-| Notebook                      | নোটবুক                         | স্টুডিওর নোটবুক          |
-| Library                       | উপাদানের লাইব্রেরি             | উপাদানের লাইব্রেরি       |
-| Standard                      | মানক                           | মানক উপাদান              |
-| My materials                  | আমার উপাদান                    | “আমার উপাদান” ট্যাব      |
-| Trial                         | ট্রায়াল                       | ট্রায়াল                 |
+| English                          | Bengali (button, label)                | In running text          |
+| -------------------------------- | -------------------------------------- | ------------------------ |
+| Compare                          | তুলনা করুন                             | “তুলনা” সুবিধা           |
+| Suggest amounts and compare      | পরিমাণ প্রস্তাব করুন ও তুলনা করুন      | “পরিমাণ প্রস্তাব” সুবিধা |
+| Try modern materials and compare | আধুনিক উপাদান চেষ্টা করুন ও তুলনা করুন | “আধুনিক উপাদান” সুবিধা   |
+| Match with what I have           | আমার যা আছে তার সঙ্গে মেলান            | “আমার যা আছে” সুবিধা     |
+| Replace lead                     | সীসা বদলান                             | “সীসা বদলান” সুবিধা      |
+| Settings                         | সেটিংস                                 | সেটিংস                   |
+| Notebook                         | নোটবুক                                 | স্টুডিওর নোটবুক          |
+| Library                          | উপাদানের লাইব্রেরি                     | উপাদানের লাইব্রেরি       |
+| Standard                         | মানক                                   | মানক উপাদান              |
+| My materials                     | আমার উপাদান                            | “আমার উপাদান” ট্যাব      |
+| Trial                            | ট্রায়াল                               | ট্রায়াল                 |
 
 ### Law in Bangladesh
 
@@ -349,7 +399,9 @@ read (connection refused), and no Bengali rule on silica, masks or lead in ceram
   সিলিকা"); silicosis **সিলিকোসিস**; the 8-hour average "8 ঘণ্টার গড়".
 - **GHS:** the Bengali Wikipedia's list (not an official text; **Native check**): signal words **বিপদ** (Danger) and
   **সতর্কতা** (Warning); **সংকেত শব্দ**, **প্রতীকচিহ্ন** (pictogram), **বিপত্তি-বিষয়ক বিবৃতি** (hazard statement),
-  **নিরাপত্তা তথ্যপত্র (SDS)**. H301 "গিলে ফেললে বিষক্রিয়া হতে পারে", H302 "গিলে ফেললে ক্ষতিকর হতে পারে", H350
+  **নিরাপত্তা তথ্যপত্র (SDS)**. H301 (see below), H302 **"গিলে ফেললে ক্ষতিকর"** and H332 **"শ্বাসের সঙ্গে গ্রহণ
+  করলে ক্ষতিকর"** (the list writes "… ক্ষতিকর হতে পারে", a "may" the UN's "Harmful if swallowed / inhaled" lacks, so
+  the app leaves it out; it writes হতে পারে only where the English says "may be harmful"), H350
   "ক্যান্সার সৃষ্টি করতে পারে", H360FD "প্রজনন ক্ষমতা ও ভ্রূণের ক্ষতি করতে পারে" (split into two sentences only where the
   English splits it: "প্রজনন ক্ষমতার ক্ষতি করতে পারে। ভ্রূণের ক্ষতি করতে পারে।"), H361fd "প্রজনন ক্ষমতা ও ভ্রূণের ক্ষতির
   সন্দেহ রয়েছে", H372, H373, H335 as the list gives them. Note: the list's H301 ("বিষক্রিয়া হতে পারে") weakens the UN's
@@ -453,7 +505,7 @@ relied on.
 | potash (K₂O), soda (Na₂O)                            | পটাশ (K₂O); সোডা (Na₂O)                                             | **show English**. Wikipedia ("পটাশ", "সোডা অ্যাশ").                                                                                                                                              |
 | lithium, calcium, magnesium, barium, strontium, zinc | লিথিয়াম, ক্যালসিয়াম, ম্যাগনেসিয়াম, বেরিয়াম, স্ট্রনশিয়াম, জিঙ্ক | Wikipedia (each).                                                                                                                                                                                |
 | lead (PbO)                                           | সীসা (PbO)                                                          | Wikipedia ("সীসা", "সীসা বিষক্রিয়া").                                                                                                                                                           |
-| iron (red, black iron oxide)                         | লোহা (লাল আয়রন অক্সাইড, কালো আয়রন অক্সাইড)                        | Usage; Wikipedia "লোহার অক্সাইড" (4).                                                                                                                                                            |
+| iron (red, black iron oxide)                         | লোহা (লাল আয়রন অক্সাইড, কালো আয়রন অক্সাইড)                        | Usage; Wikipedia "লোহার অক্সাইড" (4). লোহা for the element in prose; the bag names for the materials.                                                                                            |
 | titanium (TiO₂)                                      | টাইটানিয়াম (TiO₂)                                                  | Usage.                                                                                                                                                                                           |
 | raw materials                                        | কাঁচামাল                                                            | Banglapedia ("প্রধান কাঁচামাল").                                                                                                                                                                 |
 | feldspar                                             | ফেল্ডস্পার                                                          | **show English**. Tier 2. Wikipedia (its article; 48 hits).                                                                                                                                      |
@@ -472,7 +524,8 @@ relied on.
 | frit                                                 | ফ্রিট                                                               | **show English**. Tier 1. Wikipedia ("'ফ্রিট' হিসাবে উল্লেখ করা হয়", "সিরামিক পণ্য … ফ্রিট").                                                                                                   |
 | raw borates (borax, colemanite)                      | কাঁচা বোরেট (বোরাক্স, কোলম্যানাইট)                                  | Wikipedia ("বোরাক্স").                                                                                                                                                                           |
 | soda ash, bone ash, wood ash                         | সোডা অ্যাশ, হাড়ের ছাই, কাঠের ছাই                                   | Wikipedia ("সোডা অ্যাশ" 19, "হাড়ের ছাই" 5, "কাঠের ছাই" article).                                                                                                                                |
-| colorant                                             | রং দেওয়ার অক্সাইড                                                  | **show English**. DU Ceramic ("oxide colour", English). No source.                                                                                                                               |
+| colorant (in general: oxides and stains)             | রঞ্জক উপাদান                                                        | **show English**. Round 8: the app's "Colorants and additives", the library category, the guides' general uses. Pigment: রঞ্জক. No source.                                                       |
+| colorant (meaning an oxide), coloring oxide          | রং দেওয়ার অক্সাইড                                                  | **show English**. Only where the English means an oxide (glazing-basics' definition, "coloring oxides"). DU Ceramic ("oxide colour", English). No source.                                        |
 | stain                                                | সিরামিক স্টেইন                                                      | **show English**. Tier 1. No source.                                                                                                                                                             |
 | cobalt, copper, chrome, manganese, nickel            | কোবাল্ট, তামা, ক্রোম, ম্যাঙ্গানিজ, নিকেল                            | Wikipedia (each). Copper oxide কপার অক্সাইড in material names.                                                                                                                                   |
 | rutile, zircon, tin oxide                            | রুটাইল, জিরকন, টিন অক্সাইড                                          | Wikipedia ("রুটাইল", "জিরকন", "টিন অক্সাইড").                                                                                                                                                    |
@@ -519,7 +572,9 @@ relied on.
 | cone chart, witness cone, cone pack                       | শঙ্কুর তালিকা; সাক্ষী শঙ্কু; শঙ্কুর সেট                                   | No source.                                                                                                                                                    |
 | heatwork                                                  | তাপকার্য (heatwork)                                                       | **show English**. No source.                                                                                                                                  |
 | heating rate, peak                                        | তাপ বাড়ার হার; সর্বোচ্চ তাপমাত্রা                                        | Usage.                                                                                                                                                        |
-| ramp, hold, soak                                          | র‍্যাম্প; হোল্ড (তাপমাত্রা ধরে রাখা); সোক                                 | **show English**. No source.                                                                                                                                  |
+| ramp, hold, soak                                          | তাপ বাড়ানো; হোল্ড (তাপমাত্রা ধরে রাখা); সোক                              | **show English**. No source. Ramp is তাপ বাড়ানো until the check accepts the ZWJ of র‍্যাম্প (round 8).                                                       |
+| guide, firing, guard cone; self-supporting cone           | গাইড শঙ্কু; পোড়ানোর শঙ্কু; গার্ড শঙ্কু; সেল্ফ-সাপোর্টিং শঙ্কু            | Round 8. Never স্বয়ংসমর্থ.                                                                                                                                   |
+| switch settings (Off, Low, Medium, High)                  | সুইচের সেটিং (বন্ধ, নিম্ন, মাঝারি, উচ্চ)                                  | Round 8 (firing review).                                                                                                                                      |
 | schedule (program, segment)                               | পোড়ানোর প্রোগ্রাম (সেগমেন্ট)                                             | Usage.                                                                                                                                                        |
 | controller                                                | কন্ট্রোলার                                                                | Usage.                                                                                                                                                        |
 | pyrometer, thermocouple                                   | পাইরোমিটার; থার্মোকাপল                                                    | Wikipedia ("পাইরোমিটার" 1, "থার্মোকাপল" 10).                                                                                                                  |
@@ -532,7 +587,7 @@ relied on.
 | slow cooling, drop-and-hold                               | ধীরে ঠান্ডা করা; নামিয়ে ধরে রাখা                                         | No source.                                                                                                                                                    |
 | underfired, overfired                                     | কম পোড়া; বেশি পোড়া                                                      | Usage.                                                                                                                                                        |
 | kiln wash, stilt, cookie                                  | কিলন ওয়াশ; স্টিল্ট; সুরক্ষা চাকতি                                        | No source.                                                                                                                                                    |
-| Kiln-Sitter                                               | Kiln-Sitter                                                               | Brand.                                                                                                                                                        |
+| kiln sitter; Kiln-Sitter                                  | কিলন সিটার (then সিটার); Kiln-Sitter                                      | Round 8. কিলন সিটার for the device in general; the brand Kiln-Sitter only where the English names Dawson's device or quotes it.                               |
 | Seger cones, Staffordshire, Bullers rings, Holdcroft bars | সেগার শঙ্কু (Seger), Staffordshire শঙ্কু, Bullers রিং, Holdcroft বার      | Never converted to Orton numbers.                                                                                                                             |
 | Damper, Primary Air, Secondary Air, Burner                | ড্যাম্পার, প্রাথমিক বায়ু, মাধ্যমিক বায়ু, বার্নার                        | Firing-log fields.                                                                                                                                            |
 
@@ -573,6 +628,10 @@ relied on.
 | coat                                 | স্তর                                         | Usage.                                                                                                                          |
 | wax resist                           | মোমের প্রলেপ                                 | No source.                                                                                                                      |
 | test tile, line blend                | টেস্ট টাইল; লাইন ব্লেন্ড                     | **show English**. Tier 1. No source.                                                                                            |
+| triaxial, biaxial (blend)            | ট্রাইঅ্যাক্সিয়াল; বাইঅ্যাক্সিয়াল           | Round 8. Never ত্রিমুখী.                                                                                                        |
+| pint weight; pint                    | পিন্ট ওজন; পিন্ট                             | Round 8 (imperial pint: ইম্পেরিয়াল পিন্ট). Never পাইন্ট.                                                                       |
+| hard water                           | খর পানি                                      | Round 8 (basics review).                                                                                                        |
+| liner glaze                          | লাইনার গ্লেজ                                 | Round 8. Not ভেতরের প্রলেপ.                                                                                                     |
 
 ### 2.7 Health and safety
 
@@ -597,24 +656,30 @@ relied on.
 | leach test                                    | ধাতু নির্গমন পরীক্ষা                                        | **show English**. Native check.                                                   |
 | emergency number                              | জরুরি নম্বর (999)                                           | Region research ("৯৯৯ জরুরি সেবা").                                               |
 | manual (a kiln's)                             | নির্দেশিকা পুস্তিকা                                         | Not গাইড.                                                                         |
+| nuisance dust                                 | বিরক্তিকর ধুলা                                              | No better term found (round 8). Native check.                                     |
 
 ### 2.8 The app's own words
 
-| English                              | Bengali                                                  | Notes                         |
-| ------------------------------------ | -------------------------------------------------------- | ----------------------------- |
-| recipe (Recipes)                     | রেসিপি                                                   |                               |
-| material (Materials), My materials   | উপাদান; আমার উপাদান                                      |                               |
-| library                              | উপাদানের লাইব্রেরি                                       | Always with উপাদান.           |
-| additive, amount, Share              | সংযোজন; পরিমাণ; অংশ                                      |                               |
-| Batch size, Weigh, Running total     | ব্যাচের আকার; ওজন করুন; চলতি মোট                         |                               |
-| Unity formula (Unity)                | সেগার সূত্র (সেগার)                                      |                               |
-| Save, Print, Compare, Remove, Cancel | সংরক্ষণ করুন; প্রিন্ট করুন; তুলনা করুন; সরান; বাতিল করুন | Usage, in Google's করুন form. |
-| Trash, Put back                      | ট্র্যাশ; ফিরিয়ে আনুন                                    |                               |
-| guide (Guides)                       | গাইড                                                     | Not the kiln's manual.        |
-| Firing logs                          | পোড়ানোর রেকর্ড                                          |                               |
-| calculator                           | গ্লেজ ক্যালকুলেটর                                        |                               |
-| English terms                        | ইংরেজি পরিভাষা                                           |                               |
-| revoke, connected apps               | প্রত্যাহার করুন; সংযুক্ত অ্যাপ                           | Revoke ≠ Cancel.              |
+| English                              | Bengali                                                  | Notes                           |
+| ------------------------------------ | -------------------------------------------------------- | ------------------------------- |
+| recipe (Recipes)                     | রেসিপি                                                   |                                 |
+| material (Materials), My materials   | উপাদান; আমার উপাদান                                      |                                 |
+| library                              | উপাদানের লাইব্রেরি                                       | Always with উপাদান.             |
+| additive, amount, Share              | সংযোজন; পরিমাণ; অংশ                                      |                                 |
+| Batch size, Weigh, Running total     | ব্যাচের আকার; ওজন করুন; চলতি মোট                         |                                 |
+| Unity formula (Unity)                | সেগার সূত্র (সেগার)                                      |                                 |
+| Save, Print, Compare, Remove, Cancel | সংরক্ষণ করুন; প্রিন্ট করুন; তুলনা করুন; সরান; বাতিল করুন | Usage, in Google's করুন form.   |
+| Trash, Put back                      | ট্র্যাশ; ফিরিয়ে আনুন                                    |                                 |
+| guide (Guides)                       | গাইড                                                     | Not the kiln's manual.          |
+| Firing logs                          | পোড়ানোর রেকর্ড                                          |                                 |
+| calculator                           | গ্লেজ ক্যালকুলেটর                                        |                                 |
+| English terms                        | ইংরেজি পরিভাষা                                           |                                 |
+| revoke, connected apps               | প্রত্যাহার করুন; সংযুক্ত অ্যাপ                           | Revoke ≠ Cancel.                |
+| Decline (a change an app asks for)   | প্রত্যাখ্যান করুন                                        | Round 8.                        |
+| data controller                      | ডেটা নিয়ন্ত্রক                                          | Round 8 (privacy notice).       |
+| source (of information), Sources     | উৎস; উৎস                                                 | Round 8. Never সূত্র (formula). |
+| potter                               | মৃৎশিল্পী, কুম্ভকার                                      | Never কুমোর, কুমার.             |
+| Ramp (firing log field)              | তাপ বাড়ানো                                              | Round 8; see 2.4.               |
 
 ### 2.9 Signing in
 
@@ -635,5 +700,7 @@ relied on.
 
 As terms.md (formulas, cone numbers, mesh numbers, units, codes and standards, trade names, makers, sources, placeholders
 and tags), and for Bengali: 999 and 16263; Bangladeshi bodies by the Bengali names their pages give (কলকারখানা ও প্রতিষ্ঠান
-পরিদর্শন অধিদপ্তর, স্বাস্থ্য অধিদপ্তর); company names as published (Shinepukur, Monno); Japanese names in Hepburn
-romanization, never Japanese script.
+পরিদর্শন অধিদপ্তর, স্বাস্থ্য অধিদপ্তর); company names as published (Shinepukur, Monno); Japanese names (grades,
+standards, makers, cone names) in Hepburn romanization with the kanji in brackets at their first use, where the English
+writes the kanji ("tokutō (特等)", "Yuko Trading (Yūkō Shōji, 有恒商事)"), never the kanji alone; Chinese names keep the
+characters the English gives, beside the Bengali or English name.
