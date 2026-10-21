@@ -12,11 +12,15 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   was refused as "only public clients". `OAUTH_CIMD_AUTH`, off by default (off, nothing changes):
   `public` takes such a document as a public app and fetches nothing from its keys; `private_key_jwt`
   also takes signed token requests from an app whose document asks for them, with its public keys
-  fetched only from its own site, under limits of their own, kept at most 15 minutes, RSA of 2048 bits
-  or more or EC P-256 only; assertions RS256, PS256 or ES256, at most 5 minutes long, each used once
+  fetched only from its own site, under limits of their own (per asking address, per site and for
+  everyone; an app with a working connection outside them, its last good keys used for up to a day
+  if its site cannot be reached), kept at most 15 minutes, RSA of 2048 bits
+  or more or EC P-256 only; assertions RS256, PS256 or ES256, `iss` and `sub` the client_id, at most
+  5 minutes long, each used once
   even by two requests at once, `aud` the issuer (or for now the token endpoint, logged). Never for an
-  app that registered itself. The browser tests run it with a stand-in app (`CIMD_TEST_BASE`, test use
-  only). To try on staging first (docs/integrations/directories.md).
+  app that registered itself. The browser tests run it with a stand-in app (`CIMD_TEST_BASE`, taken
+  only with `NODE_ENV=test`; the server will not start with it and `NODE_ENV=production`). To try on
+  staging first (docs/integrations/directories.md).
 
 - **Arabic and Hindi** (docs/translations/ar.md, hi.md): the app, the emails and all five guides, live at
   `/ar/…` (right to left) and `/hi/…`. Arabic is Modern Standard Arabic for the Arab countries, its terms chosen from Arabic
@@ -862,11 +866,16 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 - **Limits that suit AI apps' shared addresses** (ADR 24, the same amendment). Claude's and ChatGPT's
   servers send everyone's requests from a few addresses, so limits are now keyed on what a request has
   proven. The token endpoint counts per address only what it refuses (300 in 15 minutes), per account
-  its codes and refreshes (100 in 15 minutes, a `429` that leaves the refresh token working), and
-  everyone's requests together (20,000 in 15 minutes); it counted every request per address (300).
+  its refreshes (100 in 15 minutes, a `429` that leaves the refresh token working; codes are not
+  counted, so none is lost to it, and a copied refresh token still ends its connection), and
+  everyone's refusals together (20,000 in 15 minutes); it counted every request per address (300).
+  Past a count on refusals, a request whose code or refresh token the server holds still goes
+  through, so a flood of junk from many addresses cannot stop a working connection. An IPv6 address
+  counts with its whole /48 (was /56) at the token endpoint, for MCP without a token, for apps
+  registering themselves and for app documents and keys fetched, so one cheap /48 counts once.
   Subscription streams are 3 per account (were 3 per address, signed in or not). The MCP tools without
-  a token keep their limits per address, with ceilings for everyone together: 3,000 requests and 200
-  substitutions or matches a minute. Registering (DCR) is unchanged.
+  a token keep their limits per address, with ceilings for everyone without a token together: 3,000
+  requests and 200 substitutions or matches a minute. Registering (DCR) is otherwise unchanged.
 - **The Origin check on `/mcp` is tested to the letter**: `null`, a slash at the end, other letter
   cases, a lookalike host, the port written out and two Origin headers are refused before any limit
   counts, as before; a refusal is logged at debug level with the Origin, for the real-client test.

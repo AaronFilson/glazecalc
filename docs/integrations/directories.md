@@ -128,12 +128,18 @@ calls it a "connector".
 2. **Limits for shared addresses: done, not behind a setting.** Claude's calls all come from
    `160.79.104.0/21` (A-auth) and ChatGPT's from OpenAI's own ranges. Owner's decision: no special
    treatment for those ranges; key limits on what a request proved. The token endpoint now counts per
-   address only refusals (300 in 15 minutes), per account its refreshes (100), and everyone's together
-   (20,000); a token that does not work is answered `401` with its challenge even past the bad-token
+   address only refusals (300 in 15 minutes), per account its refreshes (100), and everyone's refusals
+   together (20,000); past a count on refusals, a code or refresh token the server holds still goes
+   through, so no flood of junk from other addresses can stop a working connection (security review,
+   ADR 24 "Review fixes"). An IPv6 address counts with its whole /48 wherever everyone shares a ceiling.
+   A token that does not work is answered `401` with its challenge even past the bad-token
    limit (it was `429`, which stops an app refreshing or signing in again); subscription streams are 3
    per account. Without a token the per-address limits stay (60 a minute, 2,000 a day, 10 fits a
-   minute), with ceilings for everyone together (3,000 requests and 200 fits a minute). Watch the logs for
-   429s once listed: anonymous use through Claude or ChatGPT still shares their addresses' limits.
+   minute), with ceilings for everyone together (3,000 requests and 200 fits a minute) that never touch
+   calls with a token. Watch the logs for 429s once listed: anonymous use through Claude or ChatGPT
+   still shares their addresses' limits. With `private_key_jwt`, ChatGPT's keys, once it has a working
+   connection, are fetched outside strangers' budget and the last good set is used for up to a day if
+   chatgpt.com cannot be reached (log line "An app’s keys could not be fetched again").
 3. **The Origin check: kept.** `/mcp` refuses any `Origin` but the site's own (`server/mcp/index.ts`
    `checkHostAndOrigin`); assistants' servers send none. Anthropic lists "overly strict Origin-header
    validation" as a cause of failed connections (A-test), so the staging test notes any Origin seen:

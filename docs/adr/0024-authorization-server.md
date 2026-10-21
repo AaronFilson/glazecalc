@@ -273,7 +273,8 @@ before (`server/oauth/provider.ts` `modeSettings`, `checkClientMetadata`):
   - the keys only from an https address on the client_id's own site (same origin, port 443, a host
     name, not the document itself), or written in the document; fetched through the same guard as
     documents (public addresses only, pinned, no redirects, 5 s, 5 kB, JSON), with a budget of
-    their own (6 a minute for one host, 60 for everyone; `cimd.ts` `JWKS_FETCH_LIMITS`), kept at
+    their own (`cimd.ts` `JWKS_FETCH_LIMITS`; per asking address, per site and for everyone, and
+    kept apart for apps with working connections: "Review fixes" below), kept at
     most 15 minutes whatever their Cache-Control says (oidc-provider would take the longest it is
     given, so a year-long one would pin a replaced key for a year), and taken only as 1 to 5
     public signing keys, RSA of 2048 bits or more or EC on P-256 (`checkJwks`);
@@ -301,25 +302,67 @@ per-address limits kept for what is unproven and ceilings for everyone together.
 setting:
 
 - The token endpoint counts per address only what it refuses (300 in 15 minutes; a guesser's
-  requests look like that), each account's codes and refresh tokens (100 in 15 minutes; a 429
-  `too_many_requests` before the token is used, so it still works later), and everyone's requests
-  together (20,000 in 15 minutes).
+  requests look like that; an IPv6 address with its /48), each account's refresh tokens (100 in 15
+  minutes; a 429 `too_many_requests` before the token is used, so it still works later), and
+  everyone's refusals together (20,000 in 15 minutes). Past either count on refusals, a request
+  whose code or refresh token the server holds still goes on: see "Review fixes" below.
 - Access tokens that do not work are still counted per address, but once over the answer is
   `401` with the same `WWW-Authenticate` challenge (`/mcp`) or RFC 6750's (`/api`), never `429`:
   an app refreshes or signs in again on a 401 and waits on a 429, so the 429 kept everyone behind
   Claude's or ChatGPT's addresses from reconnecting.
 - Subscription streams: 3 for each account, or each address without a token (were 3 for each
   address, with a token or not).
-- Without a token: still 60 requests a minute and 2,000 a day per address, plus 3,000 a minute from
-  everyone together; fits still 10 a minute per caller, plus 200 a minute for everyone without a
-  token together.
-- Registering (DCR) stays 10 an hour per address and 500 a day in all; CIMD is the way for the
-  chat apps.
+- Without a token: still 60 requests a minute and 2,000 a day per address (an IPv6 one with its
+  /48), plus 3,000 a minute from everyone together; fits still 10 a minute per caller, plus 200 a
+  minute for everyone without a token together. These ceilings apply only to calls without a token,
+  so filling them stops the public tools, never a connected person's.
+- Registering (DCR) stays 10 an hour per address (an IPv6 one with its /48) and 500 a day in all;
+  CIMD is the way for the chat apps.
 
 **The Origin check** on `/mcp` is kept as it was (the site's own Origin, written exactly, or none);
 tests now cover `null`, a slash at the end, other letter cases, a lookalike host, the default port
 written out, two Origin headers, and that a refused request counts against no limit. Refusals are
 logged at debug level with the Origin, for the staging test. No CORS allow-list.
+
+### Review fixes (round 8 security review)
+
+From `scratch/round8/dir-gaps/review.md`, 2026-10-21:
+
+- **One cheap network could stop every app's refreshes.** The token endpoint's ceiling counted
+  every request from everyone, and the per-address count keyed an IPv6 address by its /56; a /48
+  (free from a tunnel broker) holds 256 of those, so one /48 could fill the ceiling in minutes and
+  every refresh, Claude's and ChatGPT's, got 429. Now the ceiling counts only refusals, and both
+  counts are of refusals with an IPv6 address keyed by its /48 (`rate_limit.ts` `NETWORK_BITS`).
+  Once either is over, the request's form is read and the code or refresh token looked up by its id
+  (one read; `adapter.ts` `grantSourceOnRecord`): one the server holds, used or not, goes on as
+  under the count (a used one reaches oidc-provider's reuse check, which ends its connection); the
+  rest get 429 before their app is looked up or its keys fetched. Filling the counts, from however
+  many addresses, turns away only requests that would have failed. The same /48 key is used for
+  MCP without a token (its ceilings already apply only to calls without a token), apps registering
+  themselves, and app documents and keys fetched.
+- **Strangers could use up the key-set budget and stop ChatGPT signing in** (with
+  `private_key_jwt`). Key-set fetches were counted per host and for everyone, never per asking
+  address: documents on many subdomains, with keys that say `max-age=0`, could take the whole
+  minute's budget with junk assertions. Now a key set becomes proven when a code or refresh token is
+  exchanged with it (oidc-provider's `grant.success`: a person said yes). A proven set is fetched
+  again outside the strangers' budget (at most once a minute each, 120 a minute for all of them),
+  and when that fetch fails or is over, the last good set is used, a minute at a time, for up to a
+  day after it was fetched. Sets not yet proven are counted per asking address (/48 for IPv6), per
+  site (the host's last two labels, so subdomains share one budget; no public suffix list, so names
+  like example.co.uk share co.uk's, which only slows new apps there) and for everyone; at most 200
+  of them are kept and they never push out a proven set (up to 1,000 of those). A restart forgets
+  the sets kept, as it does every count.
+- **A per-account 429 at the code exchange lost the code.** oidc-provider uses a code before it
+  asks for the account, so the account's count (`countTokenGrant`) is now asked only for refresh
+  tokens (asked before oidc-provider uses one); codes are not counted (each needs the person's yes).
+  A refresh token already used is not counted either, so its reuse is found and its connection
+  ended whatever the count.
+- **Client assertions:** `iss` and `sub` must both be the client_id (RFC 7523 section 3;
+  oidc-provider checks only `iss`).
+- **`CIMD_TEST_BASE`** turns the fetch guard off for the browser tests' stand-in. It is now taken
+  only with `NODE_ENV=test` (the Playwright server sets it), never merely "not production", and the
+  server will not start with it set and `NODE_ENV=production`; when it is on, a warning is logged at
+  start.
 
 ## Consequences
 
