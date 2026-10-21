@@ -10,7 +10,8 @@ const TOKEN = 'YOUR_TOKEN';
 /**
  * "Use Glazecalc from your AI assistant" (docs/integrations-plan.md, items 25
  * and 32): what the MCP tools do, the address, and how to add it to Claude
- * Code, VS Code, Cursor and Gemini CLI, with and without an access token. The
+ * Code, VS Code, Cursor and Gemini CLI, with and without an access token, and
+ * the studio notes skill to download (docs/adr/0027-dictation-skill.md). The
  * setups are code, the same in every language, so they are not messages.
  * Translated into every language, but not a public page: it is not
  * prerendered or in the sitemap, and search engines are told not to index it
@@ -114,6 +115,21 @@ const TOKEN = 'YOUR_TOKEN';
       <p>{{ t('site.assistants.apps') }}</p>
     </section>
 
+    <section class="panel" id="dictation">
+      <h2>{{ t('site.assistants.dictationHeading') }}</h2>
+      <p>{{ t('site.assistants.dictation') }}</p>
+      <p>{{ t('site.assistants.dictationNeeds') }}</p>
+      <p>
+        <a class="btn btn-primary" [href]="skillZip" download>{{ t('site.assistants.dictationDownload') }}</a>
+      </p>
+      <ul>
+        <li><gc-rich [text]="t('site.assistants.dictationClaude')" /></li>
+        <li><gc-rich [text]="t('site.assistants.dictationClaudeCode')" /></li>
+        <li><gc-rich [text]="t('site.assistants.dictationChatGpt')" /></li>
+      </ul>
+      <p>{{ t('site.assistants.dictationPrompt') }}</p>
+    </section>
+
     <section class="panel">
       <h2>{{ t('site.assistants.stopHeading') }}</h2>
       <p><gc-rich [text]="t('site.assistants.stop')" [links]="{ account: '/account' }" /></p>
@@ -171,6 +187,9 @@ export class AssistantsPage {
       this.said.set({ id, text: translate('site.assistants.copyByHand') });
     }
   }
+
+  /** The studio notes skill as a ZIP to install (scripts/build-skills.mjs puts it there at build time). */
+  protected readonly skillZip = '/downloads/glazecalc-dictation.zip';
 
   /** The endpoint on this site, as the person's assistant reaches it. */
   private readonly document = inject(DOCUMENT);

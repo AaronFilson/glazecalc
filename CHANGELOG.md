@@ -44,6 +44,21 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   Union Square & Co. (first published by Lark Books) and links the two books' publisher pages; his videos
   are still only linked by his titles, never embedded or retold. Its count of 52 videos was last read on
   2026-10-19.
+- **Dictate your studio notes** (docs/adr/0027-dictation-skill.md). An Agent Skill, `glazecalc-dictation`,
+  that a potter installs in their own AI app (Claude, Claude Code, ChatGPT where skills are offered): they talk
+  or type as they work, and the assistant turns it into recipes, firing logs, test tile results and notes,
+  reads each one back, and saves it through Glazecalc only after a clear yes, never inventing an amount and
+  never calling a change saved while it waits for approval. The skill is in `skills/glazecalc-dictation/`,
+  served as a ZIP at `/downloads/glazecalc-dictation.zip` (packed at build time by `scripts/build-skills.mjs`)
+  and linked from `/assistants` with how to install it (English for now; the page stays out of search). For
+  assistants without skills, the MCP server has it as the prompt `dictation` and the resource
+  `glazecalc://skills/glazecalc-dictation`. Three new MCP write tools, through the same permission, limits and
+  confirm-changes step as the others: `create_firing_log`, `add_firing_rows` (at most 500 rows, the log kept
+  as it was) and `link_firing` (a recipe's link to a firing log, with its result of at most 500 characters,
+  cone and atmosphere, by the recipe routes' own code); `add_notebook_entry` takes `about`, a recipe, material
+  or firing log the note is about. The firing log's columns now live in `lib/cones/firing-fields.js`, shared by
+  the Firing page and the server. The skill goes in the ChatGPT directory package
+  (docs/integrations/directories.md).
 - **Arabic and Hindi** (docs/translations/ar.md, hi.md): the app, the emails and all five guides, live at
   `/ar/…` (right to left) and `/hi/…`. Arabic is Modern Standard Arabic for the Arab countries, its terms chosen from Arabic
   ceramics sources (Egyptian, Iraqi, Sudanese and Libyan university papers, suppliers, Oman's GHS guide), with all six
