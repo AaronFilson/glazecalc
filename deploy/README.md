@@ -585,6 +585,13 @@ What keeps it apart from production:
 - **Never backed up**, never copied from production. Its data is for testing and can be emptied at
   any time.
 
+**Settings tried on staging first.** `OAUTH_CIMD_AUTH` (`public` or `private_key_jwt`; off when
+unset) takes ChatGPT's client metadata document (`.env.example`; ADR 24, "Amended: ChatGPT's
+document"). It is set under `environment:` in `compose.staging.yaml` (a commented line shows
+where), which `staging.sh` takes from the staged commit, and in `compose.prod.yaml` only once the
+real-client test passes ([docs/integrations/directories.md](../docs/integrations/directories.md),
+"2. ChatGPT").
+
 What does not keep it apart: `staging.sh` runs as root on the same instance, and takes its own
 scripts and staging's nginx site from the commit it stages. A branch's `deploy/` is trusted as
 much as running it by hand would be, so stage only branches whose `deploy/` changes you have read.

@@ -245,6 +245,82 @@ Glazecalc to use this tool", resource_metadata=..., scope="data:read"`, or
 - The server's instructions say that calling one of them without a connection asks the person to
   sign in.
 
+## Amended: ChatGPT's document, private_key_jwt, shared addresses
+
+2026-10-21, round 8 (plan: `scratch/round8/dir-gaps/plan.md`; owner's decisions in
+`scratch/round8/plan.md`). Sources, read 2026-10-21: the MCP authorization draft and its client
+registration and security pages (modelcontextprotocol.io/specification/draft/basic/authorization),
+draft-ietf-oauth-client-id-metadata-document-02, draft-ietf-oauth-rfc7523bis-11, OpenAI's Apps SDK
+auth page (developers.openai.com/apps-sdk/build/auth), ChatGPT's own document and keys
+(chatgpt.com/oauth/client.json, /oauth/jwks.json), and Anthropic's connector authentication page.
+
+**ChatGPT's document.** ChatGPT names itself by `https://chatgpt.com/oauth/client.json`, which asks
+for `private_key_jwt` (RS256), lists `["none", "private_key_jwt"]` in
+`token_endpoint_auth_methods_supported` and has a `jwks_uri` on chatgpt.com. Every app had to be
+public, so its consent step would have said "only public clients". Two answers are built, both
+behind one setting, **`OAUTH_CIMD_AUTH`, off by default**; off, every setting and check is as
+before (`server/oauth/provider.ts` `modeSettings`, `checkClientMetadata`):
+
+- **`public` (step A).** A document named by its address whose list includes `none` is taken as a
+  public app: `none`, with its `jwks_uri`, `jwks` and signing alg dropped, so nothing is fetched
+  from them. Our metadata offers only `none`, and OpenAI says ChatGPT picks from what both sides
+  list, so `none` is what it uses. Refresh tokens stay bearer and rotating, as Claude's.
+- **`private_key_jwt` (step B).** As public, and a document that asks for `private_key_jwt` is
+  taken as it says: every code exchange, refresh and revocation must carry a client assertion
+  signed with the app's key, so a stolen code or refresh token is useless without OpenAI's key.
+  The metadata then offers `["none", "private_key_jwt"]` (none first: Claude picks a document only
+  with none listed) and the algs RS256, PS256 and ES256. Safeguards:
+  - the keys only from an https address on the client_id's own site (same origin, port 443, a host
+    name, not the document itself), or written in the document; fetched through the same guard as
+    documents (public addresses only, pinned, no redirects, 5 s, 5 kB, JSON), with a budget of
+    their own (6 a minute for one host, 60 for everyone; `cimd.ts` `JWKS_FETCH_LIMITS`), kept at
+    most 15 minutes whatever their Cache-Control says (oidc-provider would take the longest it is
+    given, so a year-long one would pin a replaced key for a year), and taken only as 1 to 5
+    public signing keys, RSA of 2048 bits or more or EC on P-256 (`checkJwks`);
+  - the assertion (`server/oauth/client_assertions.ts`): asymmetric algs only, never `HS*` or
+    `none`; `typ` absent, `JWT` or `client-authentication+jwt`; `iat` required and at most 5
+    minutes old; `exp` at most 5 minutes ahead; `aud` one value, the issuer, or for now the token
+    endpoint's address (logged, until staging shows what ChatGPT sends; RFC 7523bis says issuer
+    only); used once, by an insert on a unique id (iss and jti), so two requests at the same moment
+    cannot both pass (oidc-provider's own check finds, then saves);
+  - one method per app, from its document: a signing app's code or refresh token without an
+    assertion is `invalid_client`, the grant untouched.
+  - Never for an app that registered itself (DCR): its keys would be only as trustworthy as an
+    anonymous registration, and its address one more a stranger chooses.
+
+  Migration: oidc-provider has one method per client_id, so connections made under `public` and
+  then refreshed under `private_key_jwt` depend on ChatGPT switching to signing. OpenAI does not
+  say whether it does; test the switch on staging, or turn `private_key_jwt` on before ChatGPT has
+  production users. Turning it off later changes the method back the same way.
+
+**Shared addresses.** Claude's servers call from `160.79.104.0/21` and ChatGPT's from OpenAI's own
+ranges, so per-address limits made for one person's computer would stop everyone using either app
+at once. The owner chose no special treatment for those ranges: limits are keyed on what a request
+has proven (an account, a token, a connection), never on a client_id anyone can type, with
+per-address limits kept for what is unproven and ceilings for everyone together. Not behind a
+setting:
+
+- The token endpoint counts per address only what it refuses (300 in 15 minutes; a guesser's
+  requests look like that), each account's codes and refresh tokens (100 in 15 minutes; a 429
+  `too_many_requests` before the token is used, so it still works later), and everyone's requests
+  together (20,000 in 15 minutes).
+- Access tokens that do not work are still counted per address, but once over the answer is
+  `401` with the same `WWW-Authenticate` challenge (`/mcp`) or RFC 6750's (`/api`), never `429`:
+  an app refreshes or signs in again on a 401 and waits on a 429, so the 429 kept everyone behind
+  Claude's or ChatGPT's addresses from reconnecting.
+- Subscription streams: 3 for each account, or each address without a token (were 3 for each
+  address, with a token or not).
+- Without a token: still 60 requests a minute and 2,000 a day per address, plus 3,000 a minute from
+  everyone together; fits still 10 a minute per caller, plus 200 a minute for everyone without a
+  token together.
+- Registering (DCR) stays 10 an hour per address and 500 a day in all; CIMD is the way for the
+  chat apps.
+
+**The Origin check** on `/mcp` is kept as it was (the site's own Origin, written exactly, or none);
+tests now cover `null`, a slash at the end, other letter cases, a lookalike host, the default port
+written out, two Origin headers, and that a refused request counts against no limit. Refusals are
+logged at debug level with the Origin, for the staging test. No CORS allow-list.
+
 ## Consequences
 
 - Assistants that connect only with OAuth can use a person's records, and the person sees and
