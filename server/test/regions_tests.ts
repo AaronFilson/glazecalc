@@ -90,6 +90,9 @@ describe('regions', () => {
     // A format chosen in Settings is the reader's own; the pseudo-Hindi keeps Hindi's 0-9.
     expect(regions.formatLocaleFor('ar-XD', '', 'en-GB')).to.equal('en-GB-u-ca-gregory-nu-latn');
     expect(regions.formatLocaleFor('hi-XE', '', 'auto')).to.equal('hi-u-ca-gregory-nu-latn');
+    // The pseudo-Tamil and pseudo-Kannada take their base's formats, and with a region, its grouping.
+    expect(regions.formatLocaleFor('ta-XF', '', 'auto')).to.equal('ta-u-ca-gregory-nu-latn');
+    expect(regions.formatLocaleFor('kn-XG', 'IN', 'auto')).to.equal('kn-IN-u-ca-gregory-nu-latn');
   });
 
   it('writes Thai dates in the Gregorian calendar, Western digits, until the Calendar setting exists', () => {
@@ -669,7 +672,8 @@ describe('the subcontinent and the Arab world, as added', () => {
       suppliers.SUPPLIERS[code] ?? null
     ]);
     const hash = crypto.createHash('sha256').update(JSON.stringify(data)).digest('hex');
-    expect(hash).to.equal('380ed7d9f40175a5cb1e5ebaa0fed0706f60858392745e153951a48382c526fe');
+    // Changed on purpose on 2026-10-21: India lists Tamil, Marathi and Kannada after Hindi and English.
+    expect(hash).to.equal('82307f9af7375a59ddf4e32e4e557d8827a5f107f4297e0780b231ce968b780d');
   });
 
   it('are, with the earlier snapshots, every region', () => {
@@ -1252,7 +1256,7 @@ describe('the subcontinent and the Arab world', () => {
 
   it('fire by temperature but India, by Orton cones, in °C, with the US library and their own currencies', () => {
     const expected: Array<[string, string, string[], string, string]> = [
-      ['IN', 'India', ['hi', 'en'], 'orton', 'INR'],
+      ['IN', 'India', ['hi', 'en', 'ta', 'mr', 'kn'], 'orton', 'INR'],
       ['PK', 'Pakistan', ['ur', 'en'], 'temperature', 'PKR'],
       ['BD', 'Bangladesh', ['bn'], 'temperature', 'BDT'],
       ['EG', 'Egypt', ['ar'], 'temperature', 'EGP'],
@@ -1521,6 +1525,45 @@ describe('calendars', () => {
   });
 });
 
+// India's regional languages, known ahead of their translations (wave I1: Tamil, Marathi, Kannada;
+// scratch/round8/in-langs/plan.md).
+describe("India's regional languages", () => {
+  it('are known, grouped with the subcontinent, written for India and not offered', () => {
+    for (const code of ['ta', 'mr', 'kn']) {
+      const language = languages.languageFor(code)!;
+      expect(language, code).to.include({ code, dir: 'ltr', live: false });
+      expect(groups.languageGroup(code), code).to.equal('south-asia');
+      expect(languages.LIVE_LANGUAGES, code).not.to.include(code);
+      expect(regions.regionFor('IN')!.languages, code).to.include(code);
+    }
+    // Hindi and English stay first: Hindi's pages are still written for India.
+    expect(regions.regionFor('IN')!.languages.slice(0, 2)).to.eql(['hi', 'en']);
+    expect(groups.languageGroup('or')).to.equal('south-asia');
+    expect(languages.languageFor('ta')).to.include({ name: 'தமிழ்', english: 'Tamil' });
+  });
+
+  it('have a pseudo-locale each for the two scripts that need taller lines, on their own language’s rules', () => {
+    expect(languages.languageFor('ta-XF')).to.include({ base: 'ta', pseudo: true, live: false });
+    expect(languages.languageFor('kn-XG')).to.include({ base: 'kn', pseudo: true, live: false });
+    expect(languages.textLanguage('kn-XG')).to.equal('kn');
+    expect(groups.languageGroup('kn-XG')).to.equal('other');
+  });
+
+  it('show 0–9 by default and Marathi in Devanagari, each script’s own digits when chosen', () => {
+    const number = (locale: string, digits?: string) =>
+      new Intl.NumberFormat(regions.formatLocaleFor('en', '', locale, 'gregory', digits)).format(1234567.5);
+    expect(number('ta-IN')).to.equal('12,34,567.5');
+    expect(number('mr-IN')).to.equal('१२,३४,५६७.५');
+    expect(number('mr-IN', 'western')).to.equal('12,34,567.5');
+    expect(number('ta-IN', 'native')).to.equal('௧௨,௩௪,௫௬௭.௫');
+    expect(number('kn-IN', 'native')).to.equal('೧,೨೩೪,೫೬೭.೫');
+    // CLDR 48 groups Kannada in threes, unlike every other Indian locale; pinned so a change of data is seen.
+    expect(number('kn-IN')).to.equal('1,234,567.5');
+    expect(regions.numberingSystemFor('or-IN', 'native')).to.equal('orya');
+    expect(regions.numberingSystemFor('si-LK', 'native')).to.equal('latn');
+  });
+});
+
 // The Digits setting (docs/i18n-plan.md, Digits): each country's usual digits, as CLDR has them, named in the
 // format locale so that no browser's own CLDR decides them; 0–9, or the language's own, when chosen.
 describe('digits', () => {
@@ -1553,6 +1596,17 @@ describe('digits', () => {
       ['fr-DZ', 'latn', 'latn', 'latn'],
       ['si-LK', 'latn', 'latn', 'latn'],
       ['ta-LK', 'latn', 'latn', 'tamldec'],
+      // India's regional languages: 0–9 as CLDR has them, Devanagari for Marathi (above), and each script's own
+      // under "native" (Odia's too, though Odia is not offered yet).
+      ['ta-IN', 'latn', 'latn', 'tamldec'],
+      ['kn-IN', 'latn', 'latn', 'knda'],
+      ['te-IN', 'latn', 'latn', 'telu'],
+      ['ml-IN', 'latn', 'latn', 'mlym'],
+      ['gu-IN', 'latn', 'latn', 'gujr'],
+      ['pa-IN', 'latn', 'latn', 'guru'],
+      // Punjabi in Pakistan is written in Shahmukhi: Extended Arabic-Indic digits, and its own under "native".
+      ['pa-PK', 'arabext', 'latn', 'arabext'],
+      ['or-IN', 'latn', 'latn', 'orya'],
       ['th-TH', 'latn', 'latn', 'thai'],
       ['ja-JP', 'latn', 'latn', 'latn'],
       ['de-DE', 'latn', 'latn', 'latn']
@@ -1581,7 +1635,7 @@ describe('digits', () => {
   });
 
   it('pin what CLDR gives every language Glazecalc offers or plans, in every country', () => {
-    const planned = ['ar', 'hi', 'ur', 'bn', 'ta', 'te', 'mr', 'gu', 'pa', 'ne', 'si', 'kn', 'ml'];
+    const planned = ['ar', 'hi', 'ur', 'bn', 'ta', 'te', 'mr', 'gu', 'pa', 'or', 'ne', 'si', 'kn', 'ml'];
     const offered = languages.LANGUAGES.map((language) => languages.baseLanguage(language.code));
     const names = new Intl.DisplayNames(['en'], { type: 'region' });
     const countries = [];

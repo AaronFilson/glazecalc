@@ -86,6 +86,24 @@ describe('LocaleService', () => {
     preferences.remember('digits', 'auto');
     TestBed.tick();
     expect(fixed(1234567.5, 1)).toBe('12,34,567.5');
+    // Marathi writes Devanagari as usual; Tamil and Kannada 0–9, and their own digits when chosen. Kannada's
+    // groups are CLDR's, in threes, unlike the other Indian languages' (pinned, so a change of data is seen).
+    preferences.remember('digits', 'auto');
+    preferences.remember('format', 'mr-IN');
+    TestBed.tick();
+    expect([formatLocale(), fixed(1234567.5, 1)]).toEqual(['mr-IN-u-ca-gregory-nu-deva', '१२,३४,५६७.५']);
+    preferences.remember('format', 'ta-IN');
+    TestBed.tick();
+    expect([formatLocale(), fixed(1234567.5, 1)]).toEqual(['ta-IN-u-ca-gregory-nu-latn', '12,34,567.5']);
+    preferences.remember('format', 'kn-IN');
+    TestBed.tick();
+    expect([formatLocale(), fixed(1234567.5, 1)]).toEqual(['kn-IN-u-ca-gregory-nu-latn', '1,234,567.5']);
+    preferences.remember('digits', 'native');
+    TestBed.tick();
+    expect(fixed(1234567.5, 1)).toBe('೧,೨೩೪,೫೬೭.೫');
+    preferences.remember('format', 'ta-IN');
+    TestBed.tick();
+    expect(fixed(1234567.5, 1)).toBe('௧௨,௩௪,௫௬௭.௫');
     // A language with no digits of its own keeps 0–9.
     preferences.remember('format', 'en-IN');
     preferences.remember('digits', 'native');
@@ -320,6 +338,21 @@ describe('prerenderRegion', () => {
       'BD',
       'IN'
     ]);
+    // India's other languages are written for India (Nepali and Sinhala wait for Nepal and Sri Lanka, which are
+    // not regions yet), and Telugu and the rest of them with no region listing them yet.
+    expect(['ta', 'mr', 'kn', 'te', 'gu', 'ml', 'pa', 'or'].map((language) => prerenderRegion(language))).toEqual(
+      Array(8).fill('IN')
+    );
+    expect(['ne', 'si'].map((language) => prerenderRegion(language))).toEqual(['', '']);
+    expect(
+      ['ne', 'si'].map((language) =>
+        prerenderRegion(language, [
+          ...REGIONS,
+          { code: 'NP', languages: ['ne'] },
+          { code: 'LK', languages: ['si', 'ta'] }
+        ])
+      )
+    ).toEqual(['NP', 'LK']);
     // What the live languages are written for stays as it was.
     for (const regions of [planned, REGIONS]) {
       expect(
