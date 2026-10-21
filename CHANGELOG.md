@@ -75,7 +75,7 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   `/ta-XF/` (Tamil) and `/kn-XG/` (Kannada), made from one table of letters per script like `/hi-XE/`, are laid out at
   phone width in the browser tests. The i18n check reads each Indian language's script, requires Unicode form NFC and no
   stray ZWJ or ZWNJ, keeps their 12-hour times (रात 8 बजे) from passing as numbers, and asks for an `=1` form where a
-  language's `one` takes 0 as well as 1 (it found four Hindi and six French messages, now fixed). Style-sheet skeletons
+  language's `one` takes 0 as well as 1 (it found the Hindi and French messages fixed under Fixed below). Style-sheet skeletons
   for the glossary research: docs/translations/ta.md, mr.md, kn.md; wave.js has their entries.
 - **Target & Solve** (docs/adr/0026-target-and-solve.md). A new page, Solve for a target (`/solve`,
   linked from the recipe page and from Match with what I have): type a unity formula or an oxide
