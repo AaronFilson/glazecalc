@@ -338,6 +338,53 @@ describe('Paste-in import: titles, notes, totals and additions', () => {
     }
   });
 
+  it('knows the headings the Arabic and South Asian languages use over a base and its additions', () => {
+    const recipes: Record<string, [string, string, string]> = {
+      ar: ['الخلطة', 'الملوِّنات والإضافات', 'أكاسيد'],
+      hi: ['बेस ग्लेज़', 'कलरेंट और एडिटिव', 'अतिरिक्त सामग्री'],
+      ur: ['بنیادی گلیز', 'رنگ دار آکسائیڈز اور اضافی مادے', 'اضافی مادہ'],
+      bn: ['মূল গ্লেজ', 'রঞ্জক উপাদান ও সংযোজন', 'সংযোজন'],
+      ta: ['பேஸ் கிளேஸ்', 'கலரன்ட்களும் சேர்க்கைப் பொருட்களும்', 'சேர்க்கை'],
+      mr: ['बेस ग्लेझ', 'कलरंट आणि ॲडिटिव्ह', 'भर'],
+      kn: ['ಬೇಸ್ ಗ್ಲೇಜ್', 'ಕಲರೆಂಟುಗಳು ಮತ್ತು ಆಡಿಟಿವುಗಳು', 'ಸೇರ್ಪಡೆ']
+    };
+    for (const [code, [base, addHeading, shortHeading]] of Object.entries(recipes)) {
+      for (const heading of [addHeading, shortHeading + ':', shortHeading + ' (%)']) {
+        const read = one(base + '\nCuster 50\nSilica 50\n' + heading + '\nRutile 4\nTin oxide 1');
+        expect(
+          read.lines.map((l) => [l.addition]),
+          code + ' ' + heading
+        ).to.eql([[false], [false], [true], [true]]);
+        expect(read.lines.map((l) => l.name)).to.eql(['Custer', 'Silica', 'Rutile', 'Tin oxide']);
+      }
+    }
+  });
+
+  it('reads an Urdu heading typed with Arabic letters, and an Arabic one with Urdu letters', () => {
+    for (const heading of ['اضافي مادہ', 'اضافى ماده', 'اضافی مادہ', 'اسٹين', 'رنگ دار آكسائيڈز', 'الإضافات']) {
+      expect(one('Custer 50\nSilica 50\n' + heading + '\nRutile 4').lines[2].addition, heading).to.equal(true);
+    }
+    expect(one('اضافہ\nRutile 4\nبنيادي گليز\nCuster 100').lines.map((l) => l.addition)).to.eql([true, false]);
+    expect(one('الإضافات\nRutile 4\nبنیادی گلیز\nCuster 100').lines.map((l) => l.addition)).to.eql([true, false]);
+  });
+
+  it('a base heading in the Arabic and South Asian languages starts the base again after additions', () => {
+    for (const [add, base] of [
+      ['الإضافات', 'الأساس'],
+      ['एडिटिव', 'सामग्री'],
+      ['اضافہ', 'بنیادی گلیز'],
+      ['সংযোজন', 'উপাদান'],
+      ['சேர்க்கை', 'ரெசிபி'],
+      ['ॲडिटिव्ह', 'साहित्य'],
+      ['ಆಡಿಟಿವ್', 'ಸಾಮಗ್ರಿ']
+    ]) {
+      expect(
+        one(add + '\nRutile 4\n' + base + '\nCuster 100').lines.map((l) => l.addition),
+        add
+      ).to.eql([true, false]);
+    }
+  });
+
   it('a blank line ends a section of additions, so the next lines are base, or a new recipe', () => {
     const read = recipe.parsePaste('Custer 50\nSilica 50\nColorants\nRutile 4\n\nCuster 40\nSilica 60');
     expect(read.map((r) => r.lines.map((l) => l.addition))).to.eql([
