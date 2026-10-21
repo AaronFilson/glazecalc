@@ -20,7 +20,7 @@
     "home": "तुमची स्टुडिओ नोटबुक - Glazecalc",
     "recipe": "रेसिपी - Glazecalc",
     "import": "रेसिपी पेस्ट करा - Glazecalc",
-    "blends": "टेस्ट टाइलसाठी ब्लेंड - Glazecalc",
+    "blends": "टेस्ट टाइल्ससाठी ब्लेंड - Glazecalc",
     "solve": "लक्ष्यासाठी हिशोब करा - Glazecalc",
     "material": "साहित्य - Glazecalc",
     "additive": "ॲडिटिव्ह - Glazecalc",
@@ -69,7 +69,7 @@
     "discardFailed": "ट्रायल काढून टाकता आली नाही. पुन्हा प्रयत्न करा."
   },
   "signedOut": {
-    "recipeLost": "तुमचे “{title}” मधील बदल जतन होण्यापूर्वीच तुम्ही साइन आउट झालात, म्हणून ते गमावले गेले."
+    "recipeLost": "“{title}” या रेसिपीमधील तुमचे बदल जतन होण्यापूर्वीच तुम्ही साइन आउट झालात, म्हणून ते गमावले गेले."
   },
   "footer": {
     "site": "साइट",
@@ -274,7 +274,7 @@
     "kind": "प्रकार",
     "allKinds": "सर्व प्रकार",
     "soldIn": "येथे विकले जाते",
-    "showing": "{noun, select, additives {{total, plural, one {# ॲडिटिव्हपैकी} other {# ॲडिटिव्हपैकी}}} other {{total, plural, one {# साहित्यापैकी} other {# साहित्यांपैकी}}}} {shown} दाखवत आहे",
+    "showing": "{noun, select, additives {{total, plural, one {# ॲडिटिव्हपैकी} other {# ॲडिटिव्हांपैकी}}} other {{total, plural, one {# साहित्यापैकी} other {# साहित्यांपैकी}}}} {shown} दाखवत आहे",
     "name": "नाव",
     "equivalentWeight": "समतुल्य भार",
     "firedWeight": "भाजल्यानंतरचे वजन",
@@ -307,7 +307,7 @@
     "amountNumber": "प्रमाण संख्या म्हणून लिहा, जसे की {example}."
   },
   "fieldChecks": {
-    "several": "{count, plural, one {# कॉलमकडे लक्ष द्यावे लागेल} other {# कॉलमकडे लक्ष द्यावे लागेल}}. पहिले: {first}",
+    "several": "{count, plural, one {# कॉलमकडे लक्ष द्यावे लागेल} other {# कॉलमांकडे लक्ष द्यावे लागेल}}. पहिला: {first}",
     "emailMissing": "तुमचा ईमेल पत्ता लिहा.",
     "emailFormat": "name@example.com सारखा ईमेल पत्ता लिहा.",
     "passwordMissing": "किमान 8 अक्षरांचा पासवर्ड निवडा.",
