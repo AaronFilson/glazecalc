@@ -135,10 +135,36 @@ one in the flags for the reviewer.
   **Native check.**
 - **Specific gravity:** **کثافت اضافی** (Urdu Wikipedia's title for specific gravity, "ایک نسبت …", water's is 1), never
   کثافت (density) alone. **Native check**: no ceramics source.
-- **The other Native check rows**, first of all: پکائی (firing) in the guides, the defect loanwords, دھاتوں کا اخراج
-  (leaching), the GHS sentences (no Urdu source at all), ریسپیریٹر, کاؤلن's spelling, سیگر فارمولا (UMF), and the law's
-  limit words (زیادہ سے زیادہ, سے کم).
+- **The other Native check rows**, first of all: پکائی (firing) in the guides, the defect loanwords (کریزنگ, کرالنگ, پن
+  ہول, شیورنگ and the rest), "سمٹ کر" for a crawling glaze (recipe checks `checks.clayHigh*`), the plural مخروطے against
+  the unchanged مخروط after a number or in the oblique (both are in the files), دھاتوں کا اخراج (leaching), the GHS
+  sentences (no Urdu source at all), ریسپیریٹر, کاؤلن's spelling, سیگر فارمولا (UMF), and the law's limit words (زیادہ سے
+  زیادہ, سے کم).
 - **Poison line:** none in Pakistan (region research): the text names Rescue 1122.
+
+## Terms settled in review (round 8)
+
+The reviews of 21 October 2026 (scratch/round8/tx/log.md in the main checkout) and the consistency pass after them
+settled these; every Urdu file uses them, and the glossary rows below agree.
+
+- **Guide titles** (front matter, links, `titles.*`, the guides list, the safety links): home-safety **اپنے گھر والوں کو
+  زہر نہ دیں**; safe-mixing **محفوظ طریقے سے ملانا اور ہوا کی آمد و رفت**; making-a-glaze **گلیز کیسے بنائیں**;
+  glazing-basics **گلیز کی بنیادی باتیں**; firing **ایک سادہ بھٹی کی پکائی**.
+- **Kiln** بھٹی, never کلن; **kiln wash** بھٹی واش; **kiln sitter** the brand **Kiln-Sitter**, short **سٹر** ("سٹر
+  (Kiln-Sitter)" at first use), never بھٹی سٹر; **firing** پکائی; **cone** مخروط with "(Orton cone)" once per text or
+  message group.
+- **Liner** لائنر گلیز (not اندر کا گلیز); **triaxial / biaxial** تین محوری / دو محوری (not سہ محوری); **pint weight**
+  پائنٹ وزن, the unit پائنٹ (not پنٹ); **concentrated** مرتکز (گاڑھا only for a stiff melt or slurry).
+- **Fumes** بخارات, **smoke** دھواں, never "دھواں اور بخارات" for fumes alone; metal fume fever میٹل فیوم فیور; **unborn
+  child** رحمِ مادر میں بچہ; **barium** بیریم in running text; **mopping** (wet) پونچھا, never پوچا.
+- **Sources** (of information, and the heading) ماخذ (pl. in running text ماخذوں: "ماخذوں میں اختلاف ہے"); ذریعہ /
+  ذرائع only for a source of an oxide ("بورون کا ذریعہ") or a means.
+- **Revoke** رسائی ختم کریں (Cancel stays منسوخ کریں); **region** (the app's setting, "your region", "by region") خطہ;
+  Stull's chart regions stay علاقے; **on / off** چالو / بند; the **Notes** page نوٹس.
+- **Button names** in running text exactly as recipe/ur.json and ur.json label them, in quotation marks “…”: “مقداریں
+  تجویز کریں اور موازنہ کریں”, “جدید مواد آزمائیں اور موازنہ کریں”, “میرے پاس موجود سے ملائیں”.
+- **Japanese grade names** in Hepburn with the kanji in brackets at first use, as the English gives them: tokutō
+  (特等), gokujō (極上), Fukushima chōseki (福島長石).
 
 ## 1. Style sheet
 
@@ -309,18 +335,19 @@ The -یں imperative for instructions; statements about the glaze, the kiln or t
 
 ### The app's feature names
 
-| English                       | Urdu (button, label)            | In running text               |
-| ----------------------------- | ------------------------------- | ----------------------------- |
-| Compare                       | موازنہ کریں                     | “موازنہ” کی سہولت             |
-| Suggest amounts (and compare) | مقداریں تجویز کریں (اور موازنہ) | “مقداریں تجویز کریں” کی سہولت |
-| Match with what I have        | میرے پاس موجود سے ملائیں        | “میرے پاس موجود سے ملائیں”    |
-| Replace lead                  | سیسہ بدلیں                      | “سیسہ بدلیں” کی سہولت         |
-| Settings                      | ترتیبات                         | ترتیبات                       |
-| Notebook                      | نوٹ بک                          | اسٹوڈیو کی نوٹ بک             |
-| Library                       | مواد کی لائبریری                | مواد کی لائبریری              |
-| Standard                      | معیاری                          | معیاری مواد                   |
-| My materials                  | میرا مواد                       | “میرا مواد” ٹیب               |
-| Trial                         | آزمائشی مدت                     | آزمائشی مدت                   |
+| English                          | Urdu (button, label)               | In running text                      |
+| -------------------------------- | ---------------------------------- | ------------------------------------ |
+| Compare                          | موازنہ کریں                        | “موازنہ” کی سہولت                    |
+| Suggest amounts and compare      | مقداریں تجویز کریں اور موازنہ کریں | “مقداریں تجویز کریں اور موازنہ کریں” |
+| Try modern materials and compare | جدید مواد آزمائیں اور موازنہ کریں  | “جدید مواد آزمائیں اور موازنہ کریں”  |
+| Match with what I have           | میرے پاس موجود سے ملائیں           | “میرے پاس موجود سے ملائیں”           |
+| Replace lead                     | سیسہ بدلیں                         | “سیسہ بدلیں” کی سہولت                |
+| Settings                         | ترتیبات                            | ترتیبات                              |
+| Notebook                         | نوٹ بک                             | اسٹوڈیو کی نوٹ بک                    |
+| Library                          | مواد کی لائبریری                   | مواد کی لائبریری                     |
+| Standard                         | معیاری                             | معیاری مواد                          |
+| My materials                     | میرا مواد                          | “میرا مواد” ٹیب                      |
+| Trial                            | آزمائشی مدت                        | آزمائشی مدت                          |
 
 ### Law in Pakistan
 
@@ -427,7 +454,7 @@ summary. Gender: m. or f. after the word where a verb must agree.
 | opaque, transparent, translucent, clear | غیر شفاف، شفاف، نیم شفاف، شفاف                                      | Urdu Wikipedia (hits for each). "شفاف گلیز" is a clear glaze.                                                                             |
 | stable, durable                         | پائیدار; مضبوط                                                      | Usage.                                                                                                                                    |
 | crystals, crystalline                   | قلمیں (بلور); بلوری                                                 | Chemistry glossary ("قلم / بلور", "غیر بلوری"). "قلمی" alone is also handwritten: write بلوری.                                            |
-| boron blue                              | ”بورون بلیو“ (boron blue)                                           | No source.                                                                                                                                |
+| boron blue                              | “بورون بلیو” (boron blue)                                           | No source.                                                                                                                                |
 | celadon, tenmoku                        | سیلاڈان; ٹینموکو                                                    | No source.                                                                                                                                |
 
 ### 2.2 Materials and oxides
@@ -467,6 +494,7 @@ summary. Gender: m. or f. after the word where a verb must agree.
 | suspender                                            | معلق رکھنے والا مادہ                            | No source.                                                                                                                                     |
 | refractory                                           | آگ سہنے والا (ریفریکٹری)                        | No source.                                                                                                                                     |
 | substitute                                           | متبادل                                          | Usage.                                                                                                                                         |
+| concentrated (a concentrated source of boron)        | مرتکز ("بورون کا مرتکز ذریعہ")                  | Usage. گاڑھا only for a stiff melt or a thick slurry. Settled in review.                                                                       |
 
 ### 2.3 Clay, ware and firing stages
 
@@ -518,8 +546,8 @@ summary. Gender: m. or f. after the word where a verb must agree.
 | atmosphere                                                | بھٹی کی فضا                                                             | Usage.                                                                                                                                                      |
 | slow cooling, drop-and-hold                               | آہستہ ٹھنڈا کرنا; گرا کر روکنا                                          | No source.                                                                                                                                                  |
 | underfired, overfired                                     | کم پکا ہوا; زیادہ پکا ہوا                                               | Usage.                                                                                                                                                      |
-| kiln wash, stilt, cookie                                  | کلن واش (بھٹی کا حفاظتی لیپ); اسٹلٹ; حفاظتی ٹکیہ                        | No source.                                                                                                                                                  |
-| Kiln-Sitter                                               | Kiln-Sitter                                                             | Brand.                                                                                                                                                      |
+| kiln wash, stilt, cookie                                  | بھٹی واش (حفاظتی لیپ); اسٹلٹ; حفاظتی ٹکیہ                               | No source. Never کلن واش (the kiln is بھٹی). Settled in review.                                                                                             |
+| kiln sitter (Kiln-Sitter)                                 | سٹر (Kiln-Sitter)                                                       | Brand: "سٹر (Kiln-Sitter)" at first use, then سٹر. Never بھٹی سٹر. Settled in review.                                                                       |
 | Seger cones, Staffordshire, Bullers rings, Holdcroft bars | سیگر مخروطے (Seger)، Staffordshire مخروطے، Bullers رنگز، Holdcroft بارز | Never converted to Orton numbers.                                                                                                                           |
 | Damper, Primary Air, Secondary Air, Burner                | ڈیمپر، بنیادی ہوا، ثانوی ہوا، برنر                                      | Firing-log fields.                                                                                                                                          |
 
@@ -560,30 +588,36 @@ summary. Gender: m. or f. after the word where a verb must agree.
 | coat                                 | تہہ (pl. تہیں)                       | Usage.                                                                                                                        |
 | wax resist                           | موم کی تہہ                           | No source.                                                                                                                    |
 | test tile, line blend                | ٹیسٹ ٹائل; لائن بلینڈ                | **show English**. Tier 1. No source.                                                                                          |
+| triaxial, biaxial (blend)            | تین محوری; دو محوری (بلینڈ)          | No source. Never سہ محوری. Settled in review.                                                                                 |
+| liner (liner glaze)                  | لائنر گلیز                           | **show English**. Tier 1. No source. Not اندر کا گلیز. Settled in review.                                                     |
+| pint weight                          | پائنٹ وزن (oz فی امپیریل پائنٹ)      | No source. One spelling, پائنٹ, never پنٹ. Settled in review.                                                                 |
 
 ### 2.7 Health and safety
 
-| English                                       | Urdu                                           | Notes                                                                                             |
-| --------------------------------------------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------- |
-| dust                                          | گرد (دھول)                                     | Urdu Wikipedia ("گرد و غبار", "دھول").                                                            |
-| respirable crystalline silica (RCS)           | سانس کے ذریعے اندر جانے والی بلوری سلیکا (RCS) | **show English**. No source. Native check.                                                        |
-| silicosis                                     | سلیکوسس                                        | Urdu Wikipedia (1 hit).                                                                           |
-| exposure limit                                | نمائش کی حد                                    | No source.                                                                                        |
-| respirator                                    | ریسپیریٹر (سانس کا حفاظتی ماسک)                | No source (0 hits). Native check. Not وینٹی لیٹر.                                                 |
-| N95, FFP2, FFP3, P2, P3                       | as written                                     | Never translated.                                                                                 |
-| PPE                                           | شخصی حفاظتی آلات                               | Urdu Wikipedia (its title).                                                                       |
-| HEPA vacuum, wet cleaning, dry sweeping       | HEPA ویکیوم; گیلی صفائی; خشک جھاڑو             | Usage.                                                                                            |
-| local exhaust ventilation (LEV)               | مقامی نکاسیٔ ہوا (LEV)                         | **show English**. No source.                                                                      |
-| fumes, carbon monoxide                        | دھواں اور بخارات; کاربن مونو آکسائیڈ (CO)      | Urdu Wikipedia ("کاربن مونو آکسائیڈ").                                                            |
-| safety data sheet (SDS)                       | سیفٹی ڈیٹا شیٹ (SDS)                           | No source.                                                                                        |
-| GHS, pictogram, signal word, hazard statement | GHS; خطرے کی علامت; انتباہی لفظ; خطرے کا بیان  | No source. Signal words خطرہ / انتباہ. Native check.                                              |
-| toxic, harmful                                | زہریلا; نقصان دہ                               | Urdu Wikipedia (hits for both). H301 "نگلنے پر زہریلا" is stronger than H302 "نگلنے پر نقصان دہ". |
-| carcinogenic (IARC Group 1)                   | کینسر پیدا کرنے والا (IARC گروپ 1)             | Urdu Wikipedia ("کینسر کا سبب").                                                                  |
-| swallow, breathe in                           | نگلنا; سانس کے ذریعے اندر لینا                 | Usage.                                                                                            |
-| lead-free, food safe                          | سیسے سے پاک; کھانے کے لیے محفوظ                | **show English**. Usage.                                                                          |
-| leach test                                    | دھاتوں کے اخراج کا ٹیسٹ                        | **show English**. Native check.                                                                   |
-| emergency number                              | ہنگامی نمبر (Rescue 1122)                      | Region research.                                                                                  |
-| manual (a kiln's)                             | ہدایت نامہ                                     | Not گائیڈ.                                                                                        |
+| English                                       | Urdu                                           | Notes                                                                                                 |
+| --------------------------------------------- | ---------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| dust                                          | گرد (دھول)                                     | Urdu Wikipedia ("گرد و غبار", "دھول").                                                                |
+| respirable crystalline silica (RCS)           | سانس کے ذریعے اندر جانے والی بلوری سلیکا (RCS) | **show English**. No source. Native check.                                                            |
+| silicosis                                     | سلیکوسس                                        | Urdu Wikipedia (1 hit).                                                                               |
+| exposure limit                                | نمائش کی حد                                    | No source.                                                                                            |
+| respirator                                    | ریسپیریٹر (سانس کا حفاظتی ماسک)                | No source (0 hits). Native check. Not وینٹی لیٹر.                                                     |
+| N95, FFP2, FFP3, P2, P3                       | as written                                     | Never translated.                                                                                     |
+| PPE                                           | شخصی حفاظتی آلات                               | Urdu Wikipedia (its title).                                                                           |
+| HEPA vacuum, wet cleaning, dry sweeping       | HEPA ویکیوم; گیلی صفائی; خشک جھاڑو             | Usage.                                                                                                |
+| local exhaust ventilation (LEV)               | مقامی نکاسیٔ ہوا (LEV)                         | **show English**. No source.                                                                          |
+| fumes, smoke, carbon monoxide                 | بخارات; دھواں; کاربن مونو آکسائیڈ (CO)         | Urdu Wikipedia ("کاربن مونو آکسائیڈ"). Fumes are بخارات alone, never "دھواں اور بخارات"; smoke دھواں. |
+| metal fume fever                              | میٹل فیوم فیور                                 | No source.                                                                                            |
+| unborn child                                  | رحمِ مادر میں بچہ                              | As the GHS sentences (H360D/FD). Native check.                                                        |
+| wet mopping                                   | گیلا پونچھا                                    | Usage. Never پوچا.                                                                                    |
+| safety data sheet (SDS)                       | سیفٹی ڈیٹا شیٹ (SDS)                           | No source.                                                                                            |
+| GHS, pictogram, signal word, hazard statement | GHS; خطرے کی علامت; انتباہی لفظ; خطرے کا بیان  | No source. Signal words خطرہ / انتباہ. Native check.                                                  |
+| toxic, harmful                                | زہریلا; نقصان دہ                               | Urdu Wikipedia (hits for both). H301 "نگلنے پر زہریلا" is stronger than H302 "نگلنے پر نقصان دہ".     |
+| carcinogenic (IARC Group 1)                   | کینسر پیدا کرنے والا (IARC گروپ 1)             | Urdu Wikipedia ("کینسر کا سبب").                                                                      |
+| swallow, breathe in                           | نگلنا; سانس کے ذریعے اندر لینا                 | Usage.                                                                                                |
+| lead-free, food safe                          | سیسے سے پاک; کھانے کے لیے محفوظ                | **show English**. Usage.                                                                              |
+| leach test                                    | دھاتوں کے اخراج کا ٹیسٹ                        | **show English**. Native check.                                                                       |
+| emergency number                              | ہنگامی نمبر (Rescue 1122)                      | Region research.                                                                                      |
+| manual (a kiln's)                             | ہدایت نامہ                                     | Not گائیڈ.                                                                                            |
 
 ### 2.8 The app's own words
 
@@ -602,7 +636,10 @@ summary. Gender: m. or f. after the word where a verb must agree.
 | calculator                                       | گلیز کیلکولیٹر                                         |                                                                  |
 | English terms (Show the English after key terms) | انگریزی اصطلاحات                                       |                                                                  |
 | sign in, sign out                                | سائن ان کریں; سائن آؤٹ کریں                            | Google.                                                          |
-| revoke, connected apps                           | منسوخ کریں (رسائی); منسلک ایپس                         | Revoke ≠ Cancel: write "رسائی ختم کریں" for revoke.              |
+| revoke, connected apps                           | رسائی ختم کریں; منسلک ایپس                             | Revoke ≠ Cancel (منسوخ کریں). Settled in review.                 |
+| region (the setting), on / off                   | خطہ; چالو / بند                                        | Stull's chart regions are علاقے. Settled in review.              |
+| Notes (the page)                                 | نوٹس                                                   | The Notebook is نوٹ بک. Settled in review.                       |
+| Sources (heading; sources of information)        | ماخذ (ماخذوں میں)                                      | ذریعہ / ذرائع only for an oxide's source or a means.             |
 
 ### 2.9 Signing in
 
@@ -623,4 +660,5 @@ summary. Gender: m. or f. after the word where a verb must agree.
 As terms.md (formulas, cone numbers, mesh numbers, units, codes and standards, trade names, makers, sources, placeholders
 and tags), and for Urdu: Rescue 1122 and 15 as numbers; Pakistani bodies keep their English names where no Urdu name was
 read (Ministry of National Health Services, Regulations and Coordination; PSQCA); Japanese names in Hepburn
-romanization, never Japanese script.
+romanization; where the English gives the kanji of a Japanese grade or trade name, they follow in brackets at its first
+use (tokutō (特等), Fukushima chōseki (福島長石)), as the review settled.
