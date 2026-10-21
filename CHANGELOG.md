@@ -6,6 +6,15 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Added
 
+- **Sri Lanka and Nepal** as regions, in English (docs/south-asia-mena-plan.md, C3): who to call (1990 Suwa
+  Seriya in Sri Lanka, 102 in Nepal, with the police and fire numbers from the ITU's list, said to be last
+  updated in 2012), each health ministry and body for safety at work, firing by temperature, prices in rupees.
+  No poison line, silica limit, food rule or shop was found for either, and the guides say so.
+- **India by state**: three state poison centres after the national one (CMC Vellore, for all India; JSS
+  Mysuru, for Karnataka; Karamsad, for the Charotar region of Gujarat), and, under the note that India has no
+  national silica limit, the limits Andhra Pradesh's and Rajasthan's new rules set, marked as read only in
+  others' copies and not confirmed; Rajasthan's respirable-dust limit is cut off in the copy read, and the
+  guide says so.
 - **Arabic and Hindi** (docs/translations/ar.md, hi.md): the app, the emails and all five guides, live at
   `/ar/…` (right to left) and `/hi/…`. Arabic is Modern Standard Arabic for the Arab countries, its terms chosen from Arabic
   ceramics sources (Egyptian, Iraqi, Sudanese and Libyan university papers, suppliers, Oman's GHS guide), with all six

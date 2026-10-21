@@ -680,7 +680,14 @@ const callsIn = (element: HTMLElement) =>
 describe('India', () => {
   it('gives 112, and the poison centre with its Delhi number linked as dialled from anywhere', async () => {
     const { element } = await create(PoisonLines, 'IN');
-    expect(callsIn(element)).toEqual(['tel:112', 'tel:1800116117', 'tel:+911126589391']);
+    expect(callsIn(element)).toEqual([
+      'tel:112',
+      'tel:1800116117',
+      'tel:+911126589391',
+      'tel:18004251213',
+      'tel:18004250207',
+      'tel:18002330232'
+    ]);
     // The other number stays on one line, as one run of digits.
     const other = element.querySelector('a[href="tel:+911126589391"]')!;
     expect(other.textContent).toBe('011\u00a02658\u00a09391');
@@ -691,21 +698,62 @@ describe('India', () => {
     expect(text).toContain('It advises the public as well as health workers.');
   });
 
+  it('gives the state centres after the national one, the regional ones with their areas', async () => {
+    const { rows } = await create(PoisonLines, 'IN');
+    const poison = rows().slice(1, 5);
+    expect(poison.map((row) => row[0])).toEqual([
+      'Poison advice: National Poisons Information Centre (NPIC), AIIMS New Delhi',
+      'Poison advice: Poisons Information Centre, Christian Medical College (CMC), Vellore',
+      'Poison advice: Poison Information Centre, JSS College of Pharmacy, Mysuru (Karnataka)',
+      'Poison advice: 24×7 Poison Information Centre, Pramukhswami Medical College and Shree Krishna Hospital, Karamsad (Charotar region, Gujarat)'
+    ]);
+    expect(poison[1]![2]).toContain('from anywhere in India');
+    expect(poison[2]![2]).toMatch(/^Monday to Friday 9:00 to 17:00, Saturday 9:00 to 13:00, free\. /);
+    expect(poison[3]![2]).toMatch(/^24 hours, every day, free\. For the public in the Charotar region/);
+  });
+
   it('says no limit is confirmed, that each state sets its own, and links DGOSH, with the IS 9473 classes', async () => {
     const { element } = await create(SilicaLimit, 'IN');
-    expect(element.querySelector('table')).toBeNull();
     const paragraphs = paragraphsOf(element);
     expect(paragraphs[0]).toBe('We have not yet confirmed the limit in India.');
     expect(paragraphs[1]).toBe(
       'We found no national limit: under the Occupational Safety, Health and Working Conditions Code, 2020, each state sets the limits for its own factories.'
     );
-    expect(paragraphs[2]).toContain('Dust masks here are sold by class: FFP2 for glaze dust, or FFP3');
-    expect(paragraphs[2]).toContain('IS 9473:2002');
+    expect(paragraphs[4]).toContain('Dust masks here are sold by class: FFP2 for glaze dust, or FFP3');
+    expect(paragraphs[4]).toContain('IS 9473:2002');
     expect(element.querySelector('a[href="https://dgfasli.gov.in/en/"]')?.textContent).toBe(
       'Directorate General Occupational Safety and Health (DGOSH)'
     );
     // The Code's text is among the sources, with the date it was read.
     expect(element.querySelector('.region-sources')?.textContent).toContain('prsindia.org');
+  });
+
+  it("gives Andhra Pradesh's and Rajasthan's limits below that, not confirmed, and only what Rajasthan's copy shows", async () => {
+    const { element, rows } = await create(SilicaLimit, 'IN');
+    const table = element.querySelector('table')!;
+    expect(table.querySelector('caption')?.textContent).toContain('We read them only in copies published by others');
+    expect(table.querySelector('caption')?.textContent).toContain('where Q is the quartz in the dust');
+    expect([...table.querySelectorAll('thead th')].map((th) => th.textContent?.trim())).toEqual([
+      'State',
+      'Respirable dust',
+      'Total dust'
+    ]);
+    expect(rows()).toEqual([
+      ['Andhra Pradesh', '10 / (Q + 2) mg/m³', '30 / (Q + 3) mg/m³'],
+      ['Rajasthan', 'Cut off in the copy we read', '30 / (Q + 3) mg/m³']
+    ]);
+    // The table comes after the line that no national limit was found.
+    const paragraphs = paragraphsOf(element);
+    expect(paragraphs[2]).toMatch(
+      /^Andhra Pradesh: set by Occupational Safety, Health and Working Conditions \(Andhra Pradesh\) Rules, 2026/
+    );
+    expect(paragraphs[2]).toContain('Lakshmikumaran & Sridharan');
+    expect(paragraphs[3]).toMatch(
+      /^Rajasthan: set by Rajasthan Occupational Safety, Health and Working Conditions Rules, 2026/
+    );
+    expect(paragraphs[3]).toContain('The limit for respirable dust is cut off at the edge of the page in that copy');
+    expect(element.querySelector('a[href^="https://www.sgcms.com/"]')?.textContent).toContain('rule 111');
+    expect(element.querySelector('.region-sources')?.textContent).toContain('employmentlaw.lkslaw.com');
   });
 
   it('gives no food-contact rules, since only a voluntary standard was found, and lists two shops', async () => {
@@ -714,6 +762,47 @@ describe('India', () => {
     expect(food.element.querySelector('table')).toBeNull();
     const shops = await create(ShopList, 'IN');
     expect(shops.rows().map((row) => row[0])).toEqual(['Bhoomi Pottery', 'Clay Station' + 'Bangalore']);
+  });
+});
+
+describe('Sri Lanka and Nepal', () => {
+  it("gives 1990 Suwa Seriya with the ITU's 119 and 110, no poison line, and the health ministry", async () => {
+    const { element, rows } = await create(PoisonLines, 'LK');
+    expect(callsIn(element)).toEqual(['tel:1990']);
+    expect(rows()[0]![2]).toBe(
+      'Suwa Seriya ambulance: free, around the clock, across the island. For the police, call 119; for a fire, 110. Those two numbers are from an ITU list last updated in 2012.'
+    );
+    expect(element.textContent).toContain('We could not confirm a public poison line here.');
+    expect(element.querySelector('a[href="https://www.health.gov.lk/"]')?.textContent).toBe(
+      'Ministry of Health and Mass Media'
+    );
+  });
+
+  it("gives 102 with the ITU's 100 and 101, no poison line, and the health ministry", async () => {
+    const { element, rows } = await create(PoisonLines, 'NP');
+    expect(callsIn(element)).toEqual(['tel:102']);
+    expect(rows()[0]![2]).toContain('For the police, call 100; for a fire, 101.');
+    expect(rows()[0]![2]).toContain('last updated in 2012');
+    expect(element.textContent).toContain('We could not confirm a public poison line here.');
+    expect(element.querySelector('a[href="https://mohp.gov.np/"]')?.textContent).toBe(
+      'स्वास्थ्य तथा खाद्य स्वच्छता मन्त्रालय'
+    );
+  });
+
+  it('say no silica limit or food rules are confirmed and no shop was found, and link the bodies for safety at work', async () => {
+    for (const [code, name, agency] of [
+      ['LK', 'Sri Lanka', 'https://www.niosh.gov.lk/'],
+      ['NP', 'Nepal', 'https://dol.gov.np/']
+    ] as const) {
+      const silica = await create(SilicaLimit, code);
+      expect(silica.element.querySelector('table'), code).toBeNull();
+      expect(paragraphsOf(silica.element)[0], code).toBe(`We have not yet confirmed the limit in ${name}.`);
+      expect(silica.element.querySelector(`a[href="${agency}"]`), code).not.toBeNull();
+      const food = await create(FoodLimits, code);
+      expect(food.element.textContent, code).toContain(`We have not yet confirmed the rules in ${name}.`);
+      const shops = await create(ShopList, code);
+      expect(shops.element.textContent, code).toContain(`We found no shop selling raw glaze materials in ${name}.`);
+    }
   });
 });
 
