@@ -82,7 +82,7 @@
     "@angular/platform-server": "22.2.3",
     "@angular/router": "22.2.3",
     "@angular/ssr": "22.2.3",
-    "@axe-core/playwright": "4.14.0",
+    "@axe-core/playwright": "4.13.0",
     "@eslint/js": "10.0.1",
     "@fontsource-variable/lora": "5.3.0",
     "@fontsource-variable/noto-serif": "5.3.0",
