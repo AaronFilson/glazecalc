@@ -54,7 +54,8 @@ trap cleanup EXIT
 trap 'cleanup; exit 130' INT
 trap 'cleanup; exit 143' TERM
 docker network create "$RUN" >/dev/null
-docker run -d --name "$RUN-mongo" --network "$RUN" mongo:9.0 >/dev/null
+# GLIBC_TUNABLES: for Linux 6.19 through 7.0.13, as compose.yaml says.
+docker run -d --name "$RUN-mongo" --network "$RUN" -e GLIBC_TUNABLES=glibc.pthread.rseq=1 mongo:9.0 >/dev/null
 
 # The tests run in a container named for this run, so cleanup can stop it.
 # --init gives it an init process that passes Ctrl-C (SIGINT) on to npm and

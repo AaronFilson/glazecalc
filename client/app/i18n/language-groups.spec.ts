@@ -20,14 +20,16 @@ describe('the languages in groups', () => {
       'picker.groups.eastAsia',
       'picker.groups.europe',
       'picker.groups.middleEastNorthAfrica',
+      'picker.groups.southAsia',
       'picker.groups.southeastAsia'
     ]);
     expect(sections[0]!.codes).toEqual(['en']);
     // Korean, Japanese and the Chinese: by their English names, not by script or code.
     expect(sections[1]!.codes).toEqual(['ja', 'ko', 'zh-Hans', 'zh-Hant']);
     expect(sections[2]!.codes.slice(0, 4)).toEqual(['bg', 'hr', 'cs', 'da']);
-    expect(sections[3]!.codes).toEqual(['tr']);
-    expect(sections[4]!.codes).toEqual(['id', 'th', 'vi']);
+    expect(sections[3]!.codes).toEqual(['ar', 'tr']);
+    expect(sections[4]!.codes).toEqual(['hi']);
+    expect(sections[5]!.codes).toEqual(['id', 'th', 'vi']);
   });
 
   it('lists every language offered once, and a group only where there is a language in it', () => {

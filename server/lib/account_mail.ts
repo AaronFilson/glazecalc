@@ -334,6 +334,26 @@ export const RESET: Record<string, Email> = {
       'Liên kết chỉ dùng được một lần. Nếu bạn không yêu cầu việc này, hãy bỏ qua email này; mật khẩu của bạn vẫn như cũ.\n\n' +
       '-- \n' +
       'Glazecalc, {app}\n'
+  },
+  ar: {
+    subject: 'إعادة تعيين كلمة مرور Glazecalc',
+    text:
+      'طلب شخص ما (نأمل أن يكون صاحب الحساب) إعادة تعيين كلمة المرور لحساب Glazecalc {account}.\n\n' +
+      'لاختيار كلمة مرور جديدة، يُفتح هذا الرابط خلال {minutes} دقيقة:\n\n' +
+      '{link}\n\n' +
+      'يعمل الرابط مرة واحدة. وإذا لم يكن هذا الطلب منك، فيُرجى تجاهل هذه الرسالة؛ وتبقى كلمة مرورك كما هي.\n' +
+      '\n' +
+      '-- \nGlazecalc, {app}\n'
+  },
+  hi: {
+    subject: 'अपना Glazecalc पासवर्ड रीसेट करें',
+    text:
+      'किसी ने (उम्मीद है, आपने ही) Glazecalc खाते {account} का पासवर्ड रीसेट करने को कहा.\n\n' +
+      'नया पासवर्ड चुनने के लिए, इस लिंक को {minutes} मिनट के भीतर खोलें:\n\n' +
+      '{link}\n\n' +
+      'लिंक सिर्फ़ एक बार काम करता है. अगर आपने यह नहीं माँगा था, तो इस ईमेल को अनदेखा करें; आपका पासवर्ड वैसा ही रहेगा.\n' +
+      '\n' +
+      '-- \nGlazecalc, {app}\n'
   }
 };
 
@@ -593,6 +613,22 @@ export const CHANGED: Record<string, Email> = {
       'Nếu đó là bạn, không cần làm gì thêm. Nếu không, hãy đặt lại mật khẩu của bạn ngay tại {forgot}\n\n' +
       '-- \n' +
       'Glazecalc, {app}\n'
+  },
+  ar: {
+    subject: 'تم تغيير كلمة مرورك في Glazecalc',
+    text:
+      'تم للتو تغيير كلمة المرور لحساب Glazecalc {account}، وسُجِّل خروج كل جهاز كان مسجَّل الدخول.\n\n' +
+      'إذا كان هذا منك، فلا حاجة إلى فعل أي شيء آخر. وإن لم يكن، فيُرجى إعادة تعيين كلمة مرورك فوراً على {forgot}\n' +
+      '\n' +
+      '-- \nGlazecalc, {app}\n'
+  },
+  hi: {
+    subject: 'आपका Glazecalc पासवर्ड बदल दिया गया',
+    text:
+      'Glazecalc खाते {account} का पासवर्ड अभी-अभी बदला गया है, और जो भी डिवाइस साइन इन थे, वे सब साइन आउट कर दिए गए हैं.\n\n' +
+      'अगर यह आपने किया था, तो और कुछ करने की ज़रूरत नहीं है. अगर नहीं, तो अपना पासवर्ड तुरंत यहाँ रीसेट करें: {forgot}\n' +
+      '\n' +
+      '-- \nGlazecalc, {app}\n'
   }
 };
 
