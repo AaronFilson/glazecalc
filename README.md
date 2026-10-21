@@ -75,7 +75,7 @@ materials, colorants, firing logs and notes together in one private notebook.
   sell glaze materials, the closest materials sold there to those a recipe names, the workplace
   limit for silica dust and the food-contact limits for glazed ware (for 36: no official limit
   was found for New Zealand), each checked on an official or the shop's own page.
-- **Translated into 34 languages:** an official language of every country of the EU (Bulgarian, Croatian, Czech, Danish, Dutch, English, Estonian, Finnish, French, German, Greek, Hungarian, Irish, Italian, Latvian, Lithuanian, Maltese, Polish, Portuguese, Romanian, Slovak, Slovenian, Spanish, and Swedish), Japanese, Turkish, Traditional Chinese, Korean, Simplified Chinese, Thai, Vietnamese, Indonesian, Arabic (right to left) and Hindi, each at its own addresses (`/de/recipe`).
+- **Translated into 36 languages:** an official language of every country of the EU (Bulgarian, Croatian, Czech, Danish, Dutch, English, Estonian, Finnish, French, German, Greek, Hungarian, Irish, Italian, Latvian, Lithuanian, Maltese, Polish, Portuguese, Romanian, Slovak, Slovenian, Spanish, and Swedish), Japanese, Turkish, Traditional Chinese, Korean, Simplified Chinese, Thai, Vietnamese, Indonesian, Arabic and Urdu (right to left), Hindi and Bengali, each at its own addresses (`/de/recipe`).
 
   Translated by AI with a glossary per language from suppliers' catalogues, reviewed, and the safety text checked by translating it back; every translated page says so and links to a form to suggest a better wording.
 
