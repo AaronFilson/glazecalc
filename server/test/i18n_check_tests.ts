@@ -674,7 +674,7 @@ describe('message checks', () => {
       } finally {
         rmSync(marks, { recursive: true, force: true });
       }
-      // The app's own translations: none in Urdu or Bengali yet.
+      // The app's own Urdu and Bengali pass.
       expect(checkUrdu()).to.eql([]);
       expect(checkBengali()).to.eql([]);
     });
