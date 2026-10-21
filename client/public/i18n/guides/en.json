@@ -144,6 +144,13 @@
     "respirators": "Dust masks here are sold by class: {everyday} for glaze dust, or {higher} for more protection (<link>the official classes</link>).",
     "unknown": "We could not confirm the national limit in {region}. The EU's binding limit of {value} mg/m³ applies in every member state.",
     "noData": "We have not yet confirmed the limit in {region}.",
+    "statesLabel": "Limits set by states in {region}",
+    "statesCaption": "Limits some states have set for dust containing quartz, where Q is the quartz in the dust, in %. We read them only in copies published by others, so they are not confirmed (checked {date}).",
+    "state": "State",
+    "respirableDust": "Respirable dust",
+    "totalDust": "Total dust",
+    "cutOff": "Cut off in the copy we read",
+    "stateSetBy": "{area}: set by <link>{law}</link>.",
     "agency": "The national body for safety at work: <link>{name}</link>.",
     "agencySilica": "Its <link>page on silica</link>.",
     "choosePrompt": "Choose your country or region to see its limit."

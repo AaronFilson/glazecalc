@@ -186,7 +186,7 @@ describe('region facts', () => {
     fs.readFileSync(new URL('../../client/public/i18n/guides/en.json', import.meta.url), 'utf8')
   );
   const HTTP_ONLY = ['丸二陶料', '太麟化工原料有限公司', 'Sam Mui Kuang Pottery'];
-  const NO_SHOP_FOUND = ['MY', 'CN', 'ID', 'VN', 'PK', 'BD', 'EG', 'MA', 'DZ'];
+  const NO_SHOP_FOUND = ['MY', 'CN', 'ID', 'VN', 'PK', 'BD', 'EG', 'MA', 'DZ', 'LK', 'NP'];
   const checkedLately = (fact: { checked: string; source?: string; url?: string }, label: string) => {
     expect(fact.source ?? fact.url, label).to.match(/^https:\/\//);
     expect(Date.parse(fact.checked), label + ': check this again').to.be.above(yearAgo);
@@ -669,13 +669,34 @@ describe('the subcontinent and the Arab world, as added', () => {
       suppliers.SUPPLIERS[code] ?? null
     ]);
     const hash = crypto.createHash('sha256').update(JSON.stringify(data)).digest('hex');
-    expect(hash).to.equal('380ed7d9f40175a5cb1e5ebaa0fed0706f60858392745e153951a48382c526fe');
+    // Changed on purpose on 2026-10-21 (scratch/round8/india-data/report.md): India's state poison centres
+    // (CMC Vellore, JSS Mysuru, Karamsad) and the states' silica limits under its no-limit note.
+    expect(hash).to.equal('ab4432cb7c50167e38ed6d53c6e9823231f6fc6980e2a06b75abdd91b4f370b7');
+  });
+});
+
+// Sri Lanka and Nepal (docs/south-asia-mena-plan.md, C3), frozen as added on 2026-10-21.
+const SOUTH_ASIA_C3 = ['LK', 'NP'];
+
+describe('Sri Lanka and Nepal, as added', () => {
+  it('keep their data exactly', () => {
+    const data: unknown[] = SOUTH_ASIA_C3.map((code) => [
+      code,
+      regions.regionFor(code),
+      safety.SAFETY[code],
+      safety.MINISTRIES[code] ?? null,
+      workplace.WORKPLACE[code] ?? null,
+      food.FOOD[code] ?? null,
+      suppliers.SUPPLIERS[code] ?? null
+    ]);
+    const hash = crypto.createHash('sha256').update(JSON.stringify(data)).digest('hex');
+    expect(hash).to.equal('d031d86c7163df32fff04626cfc9c7ea047ebfc746bdc78ca82f94a087ac0aa8');
   });
 
   it('are, with the earlier snapshots, every region', () => {
     const earlier = regions.REGION_CODES.slice(0, regions.REGION_CODES.indexOf('VN') + 1);
     expect(earlier).to.have.length(43);
-    expect([...earlier, ...SOUTH_ASIA_MENA]).to.eql([...regions.REGION_CODES]);
+    expect([...earlier, ...SOUTH_ASIA_MENA, ...SOUTH_ASIA_C3]).to.eql([...regions.REGION_CODES]);
   });
 });
 
@@ -1290,7 +1311,8 @@ describe('the subcontinent and the Arab world', () => {
       const shown = safety.shownFor(code)!;
       for (const line of [...shown.emergency, ...shown.poison, ...shown.advice, ...shown.animals]) {
         expect(line.status, code + ' ' + line.name).to.equal('verified');
-        expect(line.checked, code + ' ' + line.name).to.match(/^2026-10-(19|20)$/);
+        // India's state centres were read on 2026-10-21.
+        expect(line.checked, code + ' ' + line.name).to.match(/^2026-10-(19|20|21)$/);
       }
       const ministry = safety.ministryFor(code);
       if (ministry) expect(ministry.status, code).to.equal('verified');
@@ -1314,7 +1336,7 @@ describe('the subcontinent and the Arab world', () => {
     const shown = safety.shownFor('IN')!;
     expect(shown.emergency.map((line) => [line.number, line.tel])).to.eql([['112', '112']]);
     expect(shown.emergency[0]!.note).to.include('police, fire and ambulance');
-    expect(shown.poison).to.have.length(1);
+    expect(shown.poison).to.have.length(4);
     expect(shown.poison[0]).to.include({
       number: '1800 116 117',
       tel: '1800116117',
@@ -1325,6 +1347,33 @@ describe('the subcontinent and the Arab world', () => {
       source: 'https://aiims.edu/index.php/en/npic_intro'
     });
     expect(safety.ministryFor('IN')).to.include({ name: 'Ministry of Health and Family Welfare' });
+  });
+
+  it("India: the state centres after NPIC, CMC Vellore's for all India, JSS Mysuru's and Karamsad's with their areas", () => {
+    const [, cmc, jss, karamsad] = safety.shownFor('IN')!.poison;
+    expect(cmc).to.include({
+      number: '1800 425 1213',
+      tel: '18004251213',
+      who: 'public',
+      hours: '24 hours, every day, toll free',
+      status: 'verified',
+      checked: '2026-10-21'
+    });
+    expect(cmc!.name).to.include('Vellore');
+    expect(cmc!.area).to.equal(undefined);
+    expect(jss).to.include({ number: '1800 425 0207', tel: '18004250207', area: 'Karnataka', checked: '2026-10-21' });
+    expect(jss!.hours).to.equal('Monday to Friday 9:00 to 17:00, Saturday 9:00 to 13:00, free');
+    expect(karamsad).to.include({
+      number: '1800 233 0232',
+      tel: '18002330232',
+      area: 'Charotar region, Gujarat',
+      hours: '24 hours, every day, free',
+      checked: '2026-10-21'
+    });
+    // The leads not shown: Hinduja (doctors only), R. G. Kar (an undated list), Chennai's 1054 (a 2011 trial).
+    expect(JSON.stringify(safety.SAFETY['IN'])).not.to.match(/1800 345 0033|2446 4600|\b1054\b/);
+    // The areas are translated, as the rest of a line's words.
+    expect(safety.texts()).to.include.members(['Karnataka', 'Charotar region, Gujarat']);
   });
 
   it('India: no silica limit, since each state sets its own; DGOSH, and IS 9473 masks from a scan', () => {
@@ -1340,6 +1389,43 @@ describe('the subcontinent and the Arab world', () => {
     // The note is translated, as its English; a region with a limit never shows one.
     expect(workplace.texts()).to.include(facts.noLimit!.note);
     expect(workplace.workplaceFor('VN')).not.to.have.property('noLimit');
+  });
+
+  it("India: Andhra Pradesh's and Rajasthan's limits under the no-limit note, secondary, Rajasthan's respirable cell said to be cut off", () => {
+    const states = workplace.workplaceFor('IN')!.noLimit!.states!;
+    expect(states.map((state) => state.area)).to.eql(['Andhra Pradesh', 'Rajasthan']);
+    const [ap, rajasthan] = states;
+    expect(ap).to.include({ status: 'secondary', checked: '2026-10-21' });
+    expect(ap!.law).to.include('rule 136').and.include('G.O.Rt.No.146').and.include('No. 432');
+    expect(ap!.respirable).to.eql({ numerator: 10, factor: 1, offset: 2, places: 0 });
+    expect(ap!.total).to.eql({ numerator: 30, factor: 1, offset: 3, places: 0 });
+    expect(ap!.clipped).to.equal(undefined);
+    expect(ap!.note).to.include('Lakshmikumaran & Sridharan');
+    expect(rajasthan).to.include({ status: 'secondary', checked: '2026-10-21' });
+    expect(rajasthan!.law).to.include('rule 111').and.include('S.O.23');
+    // Only what can be read: no respirable formula, and the note says why.
+    expect(rajasthan!.respirable).to.equal(undefined);
+    expect(rajasthan!.clipped).to.eql(['respirable']);
+    expect(rajasthan!.total).to.eql({ numerator: 30, factor: 1, offset: 3, places: 0 });
+    expect(rajasthan!.note).to.include('cut off').and.include('sgcms.com');
+    for (const state of states) expect(workplace.texts(), state.area).to.include(state.note);
+    // The national note stays: there is no national limit.
+    expect(workplace.workplaceFor('IN')!.silica).to.equal(null);
+  });
+
+  it('shows only the states whose limits may be shown, and none when no state may', () => {
+    const states = workplace.WORKPLACE['IN']!.noLimit!.states!;
+    const was = states.map((state) => state.status);
+    try {
+      states[1]!.status = 'unverified';
+      expect(workplace.workplaceFor('IN')!.noLimit!.states!.map((state) => state.area)).to.eql(['Andhra Pradesh']);
+      expect(workplace.texts()).not.to.include(states[1]!.note);
+      states[0]!.status = 'extract';
+      expect(workplace.workplaceFor('IN')!.noLimit).not.to.have.property('states');
+      expect(workplace.workplaceFor('IN')!.noLimit!.note).to.include('each state sets the limits');
+    } finally {
+      states.forEach((state, i) => (state.status = was[i]!));
+    }
   });
 
   it('India: no food-contact rules (IS 9806 is a voluntary standard), and two shops checked on their own sites', () => {
@@ -1447,6 +1533,81 @@ describe('the subcontinent and the Arab world', () => {
     ]);
     expect(found.rules.note).to.include('50%').and.include('at least three');
     expect(suppliers.shopsFor('DZ')).to.eql({ shops: [], nearby: [] });
+  });
+});
+
+// Sri Lanka and Nepal (docs/south-asia-mena-plan.md, C3), in English first, from
+// scratch/round8/india-data/report.md with the owner's decisions of 2026-10-21.
+describe('Sri Lanka and Nepal', () => {
+  it('fire by temperature, in °C, with the US library and their own currencies, in Asia', () => {
+    for (const [code, name, languages, currency] of [
+      ['LK', 'Sri Lanka', ['si', 'ta', 'en'], 'LKR'],
+      ['NP', 'Nepal', ['ne', 'en'], 'NPR']
+    ] as Array<[string, string, string[], string]>) {
+      expect(regions.regionFor(code), code).to.eql({
+        code,
+        name,
+        languages,
+        eu: false,
+        temperature: 'C',
+        cones: 'temperature',
+        density: 'sg',
+        library: 'US',
+        currency
+      });
+      expect(regions.CURRENCIES, code).to.include(currency);
+      expect(groups.regionGroup(code), code).to.equal('asia');
+    }
+    // Sinhala, Tamil and Nepali are in the language list's South Asia group, ahead of their translations.
+    for (const language of ['si', 'ta', 'ne']) expect(groups.languageGroup(language)).to.equal('south-asia');
+  });
+
+  it('leave the region each live language is written for as it was: Tamil for India, English for none', () => {
+    const first = (language: string) => regions.REGIONS.find((r) => r.languages[0] === language)?.code;
+    expect(first('en')).to.equal('US');
+    expect(first('si')).to.equal('LK');
+    expect(first('ne')).to.equal('NP');
+  });
+
+  it("Sri Lanka: 1990 Suwa Seriya, with 119 and 110 from the ITU's list of 2012; no poison line; the ministry and NIOSH", () => {
+    const shown = safety.shownFor('LK')!;
+    expect(shown.emergency.map((line) => [line.number, line.tel, line.status, line.checked])).to.eql([
+      ['1990', '1990', 'verified', '2026-10-21']
+    ]);
+    expect(shown.emergency[0]!.source).to.equal('https://1990.lk/');
+    expect(shown.emergency[0]!.note).to.include('119').and.include('110').and.include('last updated in 2012');
+    expect([shown.poison, shown.advice, shown.animals]).to.eql([[], [], []]);
+    // The poison centres known only from news, or with no hours, are not shown.
+    expect(JSON.stringify(safety.SAFETY['LK'])).not.to.match(/2886143|2676193|2958337/);
+    expect(safety.ministryFor('LK')).to.include({
+      name: 'Ministry of Health and Mass Media',
+      url: 'https://www.health.gov.lk/'
+    });
+    const facts = workplace.workplaceFor('LK')!;
+    expect(facts).to.include({ silica: null, respirators: null, eu: false });
+    expect(facts).not.to.have.property('noLimit');
+    expect(facts.agency).to.include({ abbr: 'NIOSH', url: 'https://www.niosh.gov.lk/', status: 'verified' });
+    expect(facts.agency!.silicaUrl).to.equal(undefined);
+    expect(food.foodRulesFor('LK')).to.equal(null);
+    expect(suppliers.shopsFor('LK')).to.eql({ shops: [], nearby: [] });
+  });
+
+  it("Nepal: 102, with 100 and 101, from the ITU's list of 2012; no poison line; the ministry and the labour department", () => {
+    const shown = safety.shownFor('NP')!;
+    expect(shown.emergency.map((line) => [line.number, line.tel, line.status, line.checked])).to.eql([
+      ['102', '102', 'verified', '2026-10-21']
+    ]);
+    expect(shown.emergency[0]!.source).to.match(/^https:\/\/www\.itu\.int\/.*country=173/);
+    expect(shown.emergency[0]!.note).to.include('100').and.include('101').and.include('last updated in 2012');
+    expect([shown.poison, shown.advice, shown.animals]).to.eql([[], [], []]);
+    expect(JSON.stringify(safety.SAFETY['NP'])).not.to.match(/4502011|1115/);
+    expect(safety.ministryFor('NP')).to.include({ url: 'https://mohp.gov.np/' });
+    const facts = workplace.workplaceFor('NP')!;
+    expect(facts).to.include({ silica: null, respirators: null });
+    expect(facts.agency).to.include({ url: 'https://dol.gov.np/', status: 'verified' });
+    expect(facts.agency!.name).to.include('Department of Labour and Occupational Safety');
+    expect(food.foodRulesFor('NP')).to.equal(null);
+    expect(suppliers.shopsFor('NP')).to.eql({ shops: [], nearby: [] });
   });
 });
 

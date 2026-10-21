@@ -189,13 +189,28 @@ test.describe('a potter in India', () => {
     await expect(lines.locator('a[href="tel:1800116117"]')).toHaveText('1800 116 117');
     await expect(lines.locator('a[href="tel:+911126589391"]')).toHaveText(/^011\s2658\s9391$/);
     await expect(lines).toContainText('24 hours, every day, toll free');
+    // The state centres, after the national one: Vellore's for all India, the others with their areas.
+    await expect(lines.locator('a[href="tel:18004251213"]')).toHaveText('1800 425 1213');
+    await expect(lines.locator('a[href="tel:18004250207"]')).toHaveText('1800 425 0207');
+    await expect(lines.locator('a[href="tel:18002330232"]')).toHaveText('1800 233 0232');
+    await expect(lines).toContainText('(Karnataka)');
+    await expect(lines).toContainText('(Charotar region, Gujarat)');
     await accessible(page);
 
     await page.goto('/guides/safe-mixing');
     const silica = page.locator('gc-silica-limit');
-    await expect(silica.locator('table')).toHaveCount(0);
     await expect(silica).toContainText('We have not yet confirmed the limit in India.');
     await expect(silica).toContainText('each state sets the limits for its own factories');
+    // Two states' limits below that, said not to be confirmed; Rajasthan's respirable cell as cut off.
+    await expect(silica.locator('caption')).toContainText('so they are not confirmed');
+    await expect(silica.locator('tbody th')).toHaveText(['Andhra Pradesh', 'Rajasthan']);
+    await expect(silica.locator('tbody td')).toHaveText([
+      '10 / (Q + 2) mg/m³',
+      '30 / (Q + 3) mg/m³',
+      'Cut off in the copy we read',
+      '30 / (Q + 3) mg/m³'
+    ]);
+    await expect(silica.getByRole('link', { name: /rule 111/ })).toBeVisible();
     await expect(
       silica.getByRole('link', { name: /Directorate General Occupational Safety and Health/ })
     ).toBeVisible();
@@ -213,6 +228,47 @@ test.describe('a potter in India', () => {
     await accessible(page);
   });
 });
+
+for (const [code, name, emergency, agency] of [
+  ['LK', 'Sri Lanka', '1990', 'National Institute of Occupational Safety and Health'],
+  ['NP', 'Nepal', '102', 'Department of Labour and Occupational Safety']
+]) {
+  test.describe(`a potter in ${name}`, () => {
+    test.beforeEach(async ({ page }) => {
+      await page.addInitScript((region) => globalThis.localStorage.setItem('preferredRegion', region), code);
+    });
+
+    test(`is shown ${emergency}, no poison line, no limit or rules confirmed and no shop, at phone width`, async ({
+      page
+    }) => {
+      // Several pages or checks of a whole page: more than the default 30 seconds on a busy machine.
+      test.setTimeout(60000);
+      await page.setViewportSize({ width: 375, height: 800 });
+      await page.goto('/guides/home-safety');
+      const lines = page.locator('gc-poison-lines');
+      await expect(lines.locator(`a[href="tel:${emergency}"]`)).toHaveText(emergency);
+      await expect(lines).toContainText('last updated in 2012');
+      await expect(lines).toContainText('We could not confirm a public poison line here.');
+      await accessible(page);
+
+      await page.goto('/guides/safe-mixing');
+      const silica = page.locator('gc-silica-limit');
+      await expect(silica).toContainText(`We have not yet confirmed the limit in ${name}.`);
+      await expect(silica.getByRole('link', { name: new RegExp(agency) })).toBeVisible();
+      await accessible(page);
+
+      await page.goto('/guides/glazing-basics');
+      await expect(page.locator('gc-food-limits')).toContainText(`We have not yet confirmed the rules in ${name}.`);
+      await page.goto('/guides/making-a-glaze');
+      await expect(page.locator('gc-shops')).toContainText(`We found no shop selling raw glaze materials in ${name}.`);
+      const overflow = await page.evaluate(
+        () => globalThis.document.documentElement.scrollWidth - globalThis.innerWidth
+      );
+      expect(overflow).toBeLessThanOrEqual(0);
+      await accessible(page);
+    });
+  });
+}
 
 test.describe('a potter in Morocco', () => {
   test.beforeEach(async ({ page }) => {

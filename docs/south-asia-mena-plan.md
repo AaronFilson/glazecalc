@@ -7,8 +7,11 @@ safety value is shown, and what could not be read is left out and said to be unc
 pickers, whose region list gains an Africa group with these regions) is on its own branches.
 
 **Done 2026-10-20** (branch r6-regions-c1, English only): India, Pakistan, Bangladesh, Egypt, the United Arab
-Emirates, Morocco and Algeria. Saudi Arabia is not added (the owner's decision). Iraq, Jordan, Tunisia, Sri Lanka
-and Nepal are later (C3).
+Emirates, Morocco and Algeria. Saudi Arabia is not added (the owner's decision). Iraq, Jordan and Tunisia are
+later (C3).
+
+**Done 2026-10-21** (branch r8-regions, English only): Sri Lanka and Nepal (C3, below), and India by state:
+three state poison centres and two states' silica limits (below).
 
 ## The owner's and the lead's decisions applied
 
@@ -67,6 +70,58 @@ lib/regions: verified (the law's own text or an official page, an archive's copy
 - **DZ:** the Centre National de Toxicologie's free number (ordered by Decree 25-237, not published); whether
   14 sends an ambulance; the health ministry's site.
 
+## India by state (2026-10-21)
+
+From scratch/round8/india-data/report.md (every page read 2026-10-21; gazette copies and their text in
+scratch/round8/india-data/dl/), with the owner's decisions of 2026-10-21. There is no state picker: the state
+data sits in India's own entries.
+
+- **Poison lines**, after NPIC, all verified on the centre's own page: the Poisons Information Centre at CMC
+  Vellore, 1800 425 1213, 24 hours, toll free, for the public, from anywhere in India (no area); JSS College of
+  Pharmacy, Mysuru, 1800 425 0207, Monday to Friday 9 to 5 and Saturday 9 to 1, free (area Karnataka); and the
+  24×7 centre at Pramukhswami Medical College, Karamsad, 1800 233 0232, around the clock, free, for the public in
+  the Charotar region (area Charotar region, Gujarat).
+- **Silica**: the national note stays (no national limit; under the OSH Code, s.88, each state sets its own).
+  Under it, a table of the limits two states' new rules set, both secondary, each read only in a private firm's
+  copy of the state gazette, which the note names (`noLimit.states`):
+
+  | State          | Rules                                                                              | Respirable dust | Total dust   | Copy read                    |
+  | -------------- | ---------------------------------------------------------------------------------- | --------------- | ------------ | ---------------------------- |
+  | Andhra Pradesh | OSH (A.P.) Rules 2026, rule 136, G.O.Rt.No.146, A.P. Gazette No. 432 of 2026-08-07 | 10 / (Q + 2)    | 30 / (Q + 3) | Lakshmikumaran & Sridharan's |
+  | Rajasthan      | Rajasthan OSH Rules 2026, rule 111, S.O.23, Rajasthan Gazette of 2026-06-30        | cut off (said)  | 30 / (Q + 3) | sgcms.com's                  |
+
+  Q is the quartz in the dust, in %; cristobalite and tridymite are half. Rajasthan's respirable-dust cell is
+  cut off at the edge of its gazette page (p. 602) in the copy read, so the table says so rather than give a
+  value.
+
+## Sri Lanka and Nepal (C3, 2026-10-21)
+
+From the same report. English pages first: `si`, `ta` (for Sri Lanka) and `ne` are not live, so no live
+language's pages change (Tamil pages are still written for India). Both in the region list's Asia group.
+
+| Region                                               | Who to call                                                                                                                                                                                                                                              | Silica and masks                                                                | Food contact | Shops      |
+| ---------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- | ------------ | ---------- |
+| `LK`, `['si', 'ta', 'en']`, temperature, sg, US, LKR | 1990 Suwa Seriya ambulance, free, 24/7, island-wide (1990.lk; verified); 119 police and 110 fire in the note (ITU E.129, last updated 2012-04-03, said in the note; verified by the owner's decision); no poison line; ministry health.gov.lk (verified) | none found; NIOSH, niosh.gov.lk (its name only; no silica page)                 | none found   | none found |
+| `NP`, `['ne', 'en']`, temperature, sg, US, NPR       | 102 ambulance and medical (ITU E.129, 2012, said in the note; verified by the owner's decision); 100 police, 101 fire in the note; no poison line; ministry mohp.gov.np (verified)                                                                       | none found; Department of Labour and Occupational Safety, dol.gov.np (verified) | none found   | none found |
+
+## Not shown, and why (2026-10-21)
+
+- **IN, silica by state:** Gujarat (no limit in its final OSH rules of 2025; a draft amendment of 2025-12-13
+  only); Tamil Nadu (its Factories Rules point to the repealed Act's schedule); Uttar Pradesh (rules notified,
+  text not found); Maharashtra, Karnataka, Kerala, Telangana, Odisha, Delhi, Punjab and West Bengal (old rules
+  or drafts, not read). Rajasthan's respirable-dust formula (cut off in the copy read).
+- **IN, poison lines:** Amrita, Kochi (no 24-hour number named among five); Hinduja, Mumbai (doctors only, 7 am
+  to 7 pm); R. G. Kar, Kolkata (an undated list); Chennai's 1054 (a 2011 trial); ICMR-NIOH, AIIMS Bhopal, KMC
+  Manipal, NIPER (no number). JSS's emergency mobile number (not asked for; the toll-free line is shown).
+- **IN, shops:** Kartik Pottery & Supplies (Pune), Prajapati Studio (Delhi), Ganguli Ceramics (Kolkata): listings
+  only, no own site with raw materials; 20 Microns and Bansi sell by the tonne.
+- **LK:** the National Poisons Information Centre at the National Hospital (numbers only in news of 2014 and
+  2016; none on the hospital's site); KidsTox (no hours or who may call); any silica limit, mask standard (a
+  ministry tender's N95/FFP2 is a purchase spec), food rule or shop.
+- **NP:** Tribhuvan University Teaching Hospital's poison centre (news only, near closing in 2024); the 1115
+  health hotline (news only); any silica limit (DoLOS mentions exposure limit values but none were found), food
+  rule, mask standard or shop.
+
 ## Model changes
 
 - A poison line's other number may have its own link (`alsoTel`): Morocco's and India's. The guide writes it
@@ -75,6 +130,11 @@ lib/regions: verified (the law's own text or an official page, an archive's copy
 - A region with no national silica limit may say what was found instead (`noLimit`: note, law, source,
   status, check date), shown under "We have not yet confirmed the limit", never in place of a limit, and its
   source listed with the others: India's.
+- `noLimit.states` (2026-10-21): the limits some states set where the country has none (India's), each with
+  its area, rules, source, status and check date, a `respirable` and a `total` formula (the `Formula` type) and
+  `clipped` for a value cut off in the copy read, said so and never guessed. Shown as a table under the
+  no-limit note, each state's rules linked below it, and only states whose status may be shown. Revisit (a
+  state picker) if more states publish limits that differ.
 - Nothing else: Bangladesh's call centre uses the existing medical-advice row, and the languages not yet known
   (`hi`, `ur`, `bn`) are listed by their regions as Malay and Tamil are by Singapore's.
 
@@ -89,3 +149,6 @@ lib/regions: verified (the law's own text or an official page, an archive's copy
   for Egypt, India, Pakistan and Bangladesh.
 - `e2e/regions.spec.js`: India, Morocco (and a French page) and Algeria at phone width, with nothing wider
   than the phone and no accessibility violations.
+- 2026-10-21: India's snapshot updated on purpose (the state centres and limits); Sri Lanka and Nepal frozen in
+  snapshots of their own (`regions_tests.ts`, `region-output.spec.ts`) and checked in `region-blocks.spec.ts`
+  and at phone width in `e2e/regions.spec.js`; `e2e/picker.spec.js` finds both under Asia.
