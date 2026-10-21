@@ -2137,6 +2137,21 @@ describe('MCP: limits', () => {
     );
   });
 
+  it('counts an IPv6 address without a token with its whole /48, so its /56s share one count', async function () {
+    this.timeout(30000);
+    process.env.RATE_LIMITS = 'on';
+    // A /48 of its own for this test (2001:db8:4c::/48), one /56 after another inside it.
+    const statuses: number[] = [];
+    for (let i = 0; i <= MCP_LIMITS.minute.anyone; i++) {
+      const address = `2001:db8:4c:${(i * 256).toString(16)}::1`;
+      statuses.push((await rpc('ping', {}, { 'x-forwarded-for': address })).status);
+    }
+    expect(statuses.slice(0, -1).every((status) => status === 200)).to.equal(true);
+    expect(statuses.at(-1)).to.equal(429);
+    // Another /48 has its own.
+    expect((await rpc('ping', {}, { 'x-forwarded-for': '2001:db8:4d::1' })).status).to.equal(200);
+  });
+
   it('answers tokens that do not work 401 with the challenge, never 429, however many come from one address', async function () {
     this.timeout(30000);
     const { user } = await makeUser();

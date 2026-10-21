@@ -5,6 +5,8 @@
 // against the app's keys, exp, nbf, jti, iss (the client_id) and an aud it
 // knows; these run after, as its assertJwtClientAuthClaimsAndHeader:
 //
+//   - iss and sub both the client_id (RFC 7523 section 3), so an assertion
+//     the app's key signed for something else is not taken as one for us;
 //   - typ: none, JWT or client-authentication+jwt (draft-ietf-oauth-rfc7523bis),
 //     so no other kind of token (an access token, a DPoP proof) passes as one;
 //   - a short life: iat given, not in the future, at most ASSERTION_SECONDS
@@ -44,9 +46,12 @@ const refuse = (why: string): never => {
 export const checkAssertion = (
   claims: Json,
   header: Json,
-  { issuer, tokenEndpoint }: { issuer: string; tokenEndpoint: string },
+  { issuer, tokenEndpoint, clientId }: { issuer: string; tokenEndpoint: string; clientId: string },
   now = Math.floor(Date.now() / 1000)
 ): 'issuer' | 'token endpoint' => {
+  // RFC 7523 section 3: iss and sub are both the client_id (oidc-provider checks only iss).
+  if (claims.iss !== clientId) refuse('client assertion iss must be the client_id');
+  if (claims.sub !== clientId) refuse('client assertion sub must be the client_id');
   const typ = header.typ;
   if (typ !== undefined) {
     const type = typeof typ === 'string' ? typ.toLowerCase().replace(/^application\//, '') : '';
@@ -97,7 +102,8 @@ export const assertClientAssertion = async (
 ): Promise<void> => {
   const audience = checkAssertion(claims, header, {
     issuer: ctx.oidc.issuer,
-    tokenEndpoint: ctx.oidc.urlFor('token')
+    tokenEndpoint: ctx.oidc.urlFor('token'),
+    clientId: client.clientId
   });
   if (audience === 'token endpoint') {
     log.info('A client assertion named the token endpoint as its audience', { client: client.clientId });

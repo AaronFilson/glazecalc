@@ -58,6 +58,8 @@ module.exports = defineConfig({
     timeout: process.env.CI ? 600000 : 300000,
     reuseExistingServer: false,
     env: {
+      // The stand-ins below that turn a guard off (CIMD_TEST_BASE) are taken only with NODE_ENV=test.
+      NODE_ENV: 'test',
       PORT: port,
       MONGODB_URI: mongoUri,
       APP_SECRET: 'e2e-test-secret',

@@ -19,7 +19,7 @@
 // read gets the tool's own refusal in words instead (tools/account_write.ts):
 // a person makes a new token on the website, not through a consent page.
 import type { NextFunction, Request, Response } from 'express';
-import { ipKeyGenerator } from 'express-rate-limit';
+import { networkKey } from '../lib/rate_limit.ts';
 import { allows } from '../lib/scopes.ts';
 import * as site from '../lib/site.ts';
 import { accessTokenIn, checkAccessToken, touchToken } from '../lib/token_auth.ts';
@@ -67,7 +67,8 @@ export const refuseToken = (res: Response, error = 'invalid_token'): void => {
 export const mcpAuth = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
   const header = req.headers.authorization;
   if (!header) {
-    req.mcpCaller = { key: 'ip:' + ipKeyGenerator(req.ip ?? 'unknown') };
+    // An IPv6 address with its whole /48, so one cheap /48 counts once against the ceilings on everyone without a token.
+    req.mcpCaller = { key: 'ip:' + networkKey(req.ip) };
     return next();
   }
   const token = accessTokenIn(req);

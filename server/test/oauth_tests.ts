@@ -288,7 +288,7 @@ describe('OAuth: the authorization server', function () {
         );
         expect(refused.status).to.equal(400);
         expect((await limits.oauthRegisterAll.getKey(all))?.totalHits ?? 0).to.equal(0);
-        // Ten from one /64, then its neighbours in the same /56 are refused too.
+        // Ten from one /64, then its neighbours in the same /56, and in the same /48, are refused too.
         const network = '2001:db8:' + Math.floor(Math.random() * 0xfff).toString(16) + ':';
         for (let i = 0; i < 10; i++) {
           const res = await register({}, { 'x-forwarded-for': network + '100::' + (i + 1) });
@@ -296,6 +296,7 @@ describe('OAuth: the authorization server', function () {
         }
         expect((await register({}, { 'x-forwarded-for': network + '100::99' })).status).to.equal(429);
         expect((await register({}, { 'x-forwarded-for': network + '1ff::1' })).status).to.equal(429);
+        expect((await register({}, { 'x-forwarded-for': network + 'ff00::1' })).status).to.equal(429);
         expect((await limits.oauthRegisterAll.getKey(all))?.totalHits).to.equal(10);
       } finally {
         process.env.RATE_LIMITS = 'off';

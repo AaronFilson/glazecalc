@@ -5,10 +5,10 @@
 // addresses of Claude's and ChatGPT's servers.
 import crypto from 'node:crypto';
 import { errors, type ClientMetadata } from 'oidc-provider';
-import { ipKeyGenerator } from 'express-rate-limit';
 import {
   CEILINGS,
   countTokenGrant,
+  networkKey,
   OAUTH_TOKEN_LIMITS,
   oauthTokenAll,
   oauthTokenFailures,
@@ -18,12 +18,17 @@ import AccessToken from '../models/access_token.ts';
 import { OAuthRecord, recordKey } from '../oauth/adapter.ts';
 import {
   checkJwks,
+  checkTestBase,
   cimdTestBase,
   countKeySetFetch,
   guardedFetch,
   JWKS_CACHE_SECONDS,
   JWKS_FETCH_LIMITS,
+  JWKS_STALE_SECONDS,
+  markKeySetProven,
+  MOST_KEY_SETS,
   resetFetchCount,
+  siteOf,
   useKeySetClock,
   useNetwork,
   type Network,
@@ -37,6 +42,7 @@ import {
   authorize,
   connect,
   person,
+  REDIRECT,
   refresh,
   register,
   request,
@@ -237,14 +243,25 @@ describe('OAuth: ChatGPT’s document and signed token requests (OAUTH_CIMD_AUTH
       expect([...new Set(calls)]).to.eql([HOST + new URL(url).pathname]);
     });
 
-    it('takes the browser tests’ stand-in address only outside production, and only on this machine', () => {
+    it('takes the browser tests’ stand-in address only with NODE_ENV=test, and only on this machine', () => {
       const saved = { base: process.env.CIMD_TEST_BASE, env: process.env.NODE_ENV };
       try {
         process.env.CIMD_TEST_BASE = 'http://127.0.0.1:5100';
+        process.env.NODE_ENV = 'test';
         expect(cimdTestBase()).to.equal('http://127.0.0.1:5100');
+        expect(() => checkTestBase()).to.not.throw();
+        // Anything but test leaves the guard on: unset, development, production.
+        for (const env of [undefined, 'development', 'production', 'TEST']) {
+          if (env === undefined) delete process.env.NODE_ENV;
+          else process.env.NODE_ENV = env;
+          expect(cimdTestBase(), String(env)).to.equal(null);
+        }
+        // With production the server will not start at all.
         process.env.NODE_ENV = 'production';
-        expect(cimdTestBase()).to.equal(null);
-        delete process.env.NODE_ENV;
+        expect(() => checkTestBase()).to.throw('CIMD_TEST_BASE must not be set when NODE_ENV is production');
+        delete process.env.CIMD_TEST_BASE;
+        expect(() => checkTestBase()).to.not.throw();
+        process.env.NODE_ENV = 'test';
         for (const base of [
           'http://10.0.0.1:80',
           'http://localhost:5100',
@@ -428,6 +445,8 @@ describe('OAuth: ChatGPT’s document and signed token requests (OAUTH_CIMD_AUTH
         ),
         'ES256, not the document’s alg': assertion(url, ec),
         'another iss': claims({ iss: 'https://app.example/clients/other.json' }),
+        'another sub': claims({ sub: 'https://app.example/clients/other.json' }),
+        'no sub': claims({ sub: undefined }),
         'no jti': claims({ jti: undefined }),
         'no exp': claims({ exp: undefined }),
         'no iat': claims({ iat: undefined }),
@@ -642,26 +661,170 @@ describe('OAuth: ChatGPT’s document and signed token requests (OAUTH_CIMD_AUTH
       }
     });
 
-    it(`fetches keys at most ${JWKS_FETCH_LIMITS.host} times a minute for one site, then refuses without fetching`, async () => {
+    it(`fetches new keys at most ${JWKS_FETCH_LIMITS.site} times a minute for one site, its subdomains together`, async () => {
       process.env.RATE_LIMITS = 'on';
       try {
         const { url, jwksUri } = app({ keys: [rsa.jwk] });
         const { session } = await person();
         const code = await codeFor(url, session);
         resetFetchCount();
-        for (let i = 0; i < JWKS_FETCH_LIMITS.host; i++) expect(countKeySetFetch(HOST)).to.equal(true);
+        // Other names under the same site, each asked for from an address of its own.
+        for (let i = 0; i < JWKS_FETCH_LIMITS.site; i++) {
+          expect(countKeySetFetch({ host: `a${i}.${HOST}`, address: `203.0.113.${i + 1}` })).to.equal(true);
+        }
         calls = [];
         const res = await exchange(url, code, signed(assertion(url, rsa)));
         expect(res.status).to.equal(401);
         expect(calls.filter((call) => call.endsWith(new URL(jwksUri).pathname))).to.eql([]);
-        // Another site has its own; and everyone's together have a ceiling.
-        expect(countKeySetFetch('other.example')).to.equal(true);
-        resetFetchCount();
-        for (let i = 0; i < JWKS_FETCH_LIMITS.everyone; i++) countKeySetFetch(`h${i}.example`);
-        expect(countKeySetFetch('last.example')).to.equal(false);
-        expect(countKeySetFetch('last.example', Date.now() + 61 * 1000)).to.equal(true);
+        // Another site has its own.
+        expect(countKeySetFetch({ host: 'other.example', address: '203.0.113.99' })).to.equal(true);
+        expect(siteOf('A1.Evil.Example.')).to.equal('evil.example');
       } finally {
         process.env.RATE_LIMITS = 'off';
+        resetFetchCount();
+      }
+    });
+
+    it('counts new keys fetched by the asking address (an IPv6 one with its /48) and for everyone', () => {
+      process.env.RATE_LIMITS = 'on';
+      try {
+        resetFetchCount();
+        // One /48, a /56 and a site after another inside it.
+        for (let i = 0; i < JWKS_FETCH_LIMITS.address; i++) {
+          const address = `2001:db8:7:${(i * 256).toString(16)}::1`;
+          expect(countKeySetFetch({ host: `s${i}.example`, address })).to.equal(true);
+        }
+        expect(countKeySetFetch({ host: 'last.example', address: '2001:db8:7:ff00::1' })).to.equal(false);
+        expect(countKeySetFetch({ host: 'last.example', address: '2001:db8:8::1' })).to.equal(true);
+        resetFetchCount();
+        for (let i = 0; i < JWKS_FETCH_LIMITS.everyone; i++) {
+          countKeySetFetch({ host: `h${i}.example`, address: `198.51.100.${i + 1}` });
+        }
+        expect(countKeySetFetch({ host: 'last.example', address: '192.0.2.1' })).to.equal(false);
+        // Proven keys have a count of their own; and the next minute starts again.
+        expect(countKeySetFetch({ host: 'last.example', proven: true })).to.equal(true);
+        expect(countKeySetFetch({ host: 'last.example', address: '192.0.2.1' }, Date.now() + 61 * 1000)).to.equal(true);
+      } finally {
+        process.env.RATE_LIMITS = 'off';
+        resetFetchCount();
+      }
+    });
+
+    /**
+     * A new authorization server, as when oidc-provider reads an app afresh: its
+     * copy of the app's keys is gone, so it asks for them again (the ones kept here stay).
+     */
+    const newServer = () => {
+      setMode('public');
+      getProvider();
+      setMode('private_key_jwt');
+    };
+
+    /** Whether a promise rejects. */
+    const rejects = async (promise: Promise<unknown>): Promise<boolean> => {
+      try {
+        await promise;
+        return false;
+      } catch {
+        return true;
+      }
+    };
+
+    it('keeps using an app’s last good keys once it has a working connection, for a day at most', async () => {
+      let down = false;
+      const { url, jwksUri } = fresh();
+      useNetwork(
+        network((path) => {
+          if (url.endsWith(path)) return json(chatgptDocument(url, jwksUri));
+          if (jwksUri.endsWith(path)) {
+            if (down) throw new Error('down');
+            return json({ keys: [rsa.jwk] });
+          }
+          return undefined;
+        })
+      );
+      let clock = Date.now();
+      useKeySetClock(() => clock);
+      try {
+        const { session } = await person();
+        const { tokens } = await connect(url, session, { redirect: CALLBACK, auth: () => signed(assertion(url, rsa)) });
+        // Its keys' time runs out, and its site cannot be reached.
+        down = true;
+        clock += (JWKS_CACHE_SECONDS.max + 1) * 1000;
+        newServer();
+        calls = [];
+        const next = await refreshSigned(tokens.refresh_token, url, assertion(url, rsa));
+        expect(next.status, await next.clone().text()).to.equal(200);
+        expect(calls.filter((call) => call.includes('/keys/'))).to.have.length(1);
+        // Tried again a minute later, not at once.
+        calls = [];
+        expect((await guardedFetch(jwksUri, { method: 'GET' })).status).to.equal(200);
+        expect(calls).to.eql([]);
+        // A day after the last good fetch they are no longer taken.
+        clock += JWKS_STALE_SECONDS * 1000;
+        newServer();
+        const late = await refreshSigned(((await next.json()) as Tokens).refresh_token, url, assertion(url, rsa));
+        expect(late.status).to.equal(401);
+      } finally {
+        useKeySetClock();
+      }
+    });
+
+    it('serves proven keys over every budget, and never pushes them out for strangers’ keys', async () => {
+      let down = false;
+      useNetwork(
+        network((path) => {
+          if (!path.startsWith('/keys/')) return undefined;
+          if (down) return { status: 503 };
+          return json({ keys: [rsa.jwk] });
+        })
+      );
+      let clock = Date.now();
+      useKeySetClock(() => clock);
+      process.env.RATE_LIMITS = 'on';
+      try {
+        const proven = fresh().jwksUri;
+        const unproven = fresh().jwksUri;
+        expect((await guardedFetch(proven, { method: 'GET' })).status).to.equal(200);
+        expect((await guardedFetch(unproven, { method: 'GET' })).status).to.equal(200);
+        markKeySetProven(proven);
+        clock += (JWKS_CACHE_SECONDS.max + 1) * 1000;
+        // Every budget used up.
+        for (let i = 0; i < JWKS_FETCH_LIMITS.proven; i++) countKeySetFetch({ host: `p${i}.example`, proven: true });
+        for (let i = 0; i < JWKS_FETCH_LIMITS.everyone; i++) {
+          countKeySetFetch({ host: `h${i}.example`, address: `198.51.100.${i + 1}` });
+        }
+        calls = [];
+        const kept = await guardedFetch(proven, { method: 'GET' });
+        expect(kept.status).to.equal(200);
+        expect(((await kept.json()) as { keys: unknown[] }).keys).to.have.length(1);
+        expect(await rejects(guardedFetch(unproven, { method: 'GET' }))).to.equal(true);
+        expect(calls).to.eql([]);
+
+        // Many strangers' sets fetched after: the proven one is still kept.
+        process.env.RATE_LIMITS = 'off';
+        resetFetchCount();
+        const keep = fresh().jwksUri;
+        expect((await guardedFetch(keep, { method: 'GET' })).status).to.equal(200);
+        markKeySetProven(keep);
+        const stranger = (i: number) => `https://${HOST}/keys/evicted-${i}.json`;
+        const many = MOST_KEY_SETS.unproven + 5;
+        for (let i = 0; i < many; i++) {
+          expect((await guardedFetch(stranger(i), { method: 'GET' })).status).to.equal(200);
+        }
+        // The oldest strangers' sets are gone (fetched again), the newest kept (not fetched).
+        calls = [];
+        await guardedFetch(stranger(0), { method: 'GET' });
+        await guardedFetch(stranger(many - 1), { method: 'GET' });
+        expect(calls).to.eql([HOST + new URL(stranger(0)).pathname]);
+        // The proven one is kept: once its site fails, its last good set is used.
+        down = true;
+        clock += (JWKS_CACHE_SECONDS.max + 1) * 1000;
+        expect((await guardedFetch(keep, { method: 'GET' })).status).to.equal(200);
+        expect((await guardedFetch(stranger(many - 1), { method: 'GET' })).status).to.equal(503);
+      } finally {
+        process.env.RATE_LIMITS = 'off';
+        useKeySetClock();
         resetFetchCount();
       }
     });
@@ -676,9 +839,9 @@ describe('OAuth: ChatGPT’s document and signed token requests (OAUTH_CIMD_AUTH
   });
 
   describe('the assertion checks', () => {
-    const where = { issuer: SITE, tokenEndpoint: TOKEN_ENDPOINT };
+    const where = { issuer: SITE, tokenEndpoint: TOKEN_ENDPOINT, clientId: 'x' };
     const at = 1_800_000_000;
-    const good = { iss: 'x', jti: 'j', iat: at, exp: at + 60, aud: SITE };
+    const good = { iss: 'x', sub: 'x', jti: 'j', iat: at, exp: at + 60, aud: SITE };
 
     it('take a short-lived, typed assertion for the issuer, and the token endpoint for now', () => {
       expect(checkAssertion(good, { alg: 'RS256' }, where, at)).to.equal('issuer');
@@ -690,6 +853,9 @@ describe('OAuth: ChatGPT’s document and signed token requests (OAUTH_CIMD_AUTH
 
     it('refuse the rest', () => {
       for (const [what, claims, header] of [
+        ['another sub', { ...good, sub: 'y' }, {}],
+        ['no sub', { ...good, sub: undefined }, {}],
+        ['another iss', { ...good, iss: 'y' }, {}],
         ['typ dpop+jwt', good, { typ: 'dpop+jwt' }],
         ['iat in the future', { ...good, iat: at + 60 }, {}],
         ['iat too old', { ...good, iat: at - ASSERTION_SECONDS - 60 }, {}],
@@ -710,7 +876,9 @@ describe('OAuth: the token endpoint’s limits, for apps on shared addresses', f
   this.timeout(120000);
 
   const forwarded = (address: string) => ({ 'x-forwarded-for': address });
-  const someAddress = () => `198.51.100.${Math.floor(Math.random() * 200) + 20}`;
+  // Each test's addresses its own, so a guesser's count over its limit never meets another test.
+  let last = 20;
+  const someAddress = () => `198.51.100.${last++}`;
 
   before(() => setMode(undefined));
   afterEach(() => {
@@ -725,8 +893,32 @@ describe('OAuth: the token endpoint’s limits, for apps on shared addresses', f
     const clientId = ((await res.json()) as { client_id: string }).client_id;
     const { session } = await person();
     const { tokens } = await connect(clientId, session);
-    return { clientId, tokens };
+    return { clientId, tokens, session };
   };
+
+  /** A new code for the app, the person allowing it again; not yet exchanged. */
+  const newCode = async (clientId: string, session: string) => {
+    const started = await authorize(clientId);
+    const allowed = await answer(started, session, { decision: 'allow' });
+    const back = await resume(started, ((await allowed.json()) as { redirectTo: string }).redirectTo);
+    return (headers: Record<string, string> = {}) =>
+      token(
+        {
+          grant_type: 'authorization_code',
+          code: back.searchParams.get('code')!,
+          redirect_uri: REDIRECT,
+          client_id: clientId,
+          code_verifier: started.verifier
+        },
+        headers
+      );
+  };
+
+  const junk = (clientId: string, address: string) =>
+    token(
+      { grant_type: 'refresh_token', refresh_token: crypto.randomBytes(32).toString('base64url'), client_id: clientId },
+      forwarded(address)
+    );
 
   it('counts only refusals per address: many people’s refreshes from one address all work', async () => {
     const connections = await Promise.all(Array.from({ length: 4 }, () => connection()));
@@ -745,7 +937,7 @@ describe('OAuth: the token endpoint’s limits, for apps on shared addresses', f
       }
     }
     // None of them counted against the address; a refusal does.
-    const key = ipKeyGenerator(shared);
+    const key = networkKey(shared);
     expect((await oauthTokenFailures.getKey(key))?.totalHits ?? 0).to.equal(0);
     const refused = await token(
       { grant_type: 'refresh_token', refresh_token: 'not-a-token', client_id: connections[0]!.clientId },
@@ -755,27 +947,41 @@ describe('OAuth: the token endpoint’s limits, for apps on shared addresses', f
     expect((await oauthTokenFailures.getKey(key))?.totalHits).to.equal(1);
   });
 
-  it(`stops an address after ${OAUTH_TOKEN_LIMITS.failures} refusals in 15 minutes`, async () => {
-    const { clientId } = await connection();
+  it(`stops an address's guesses after ${OAUTH_TOKEN_LIMITS.failures} refusals in 15 minutes, not its working tokens`, async () => {
+    const { clientId, tokens, session } = await connection();
     const guesser = someAddress();
     process.env.RATE_LIMITS = 'on';
     for (let i = 0; i < OAUTH_TOKEN_LIMITS.failures; i++) {
-      const res = await token(
-        {
-          grant_type: 'refresh_token',
-          refresh_token: crypto.randomBytes(32).toString('base64url'),
-          client_id: clientId
-        },
-        forwarded(guesser)
-      );
+      const res = await junk(clientId, guesser);
       expect(res.status, 'guess ' + i).to.equal(400);
     }
-    const over = await token(
-      { grant_type: 'refresh_token', refresh_token: 'x', client_id: clientId },
-      forwarded(guesser)
-    );
+    const over = await junk(clientId, guesser);
     expect(over.status).to.equal(429);
     expect(((await over.json()) as { error: string }).error).to.equal('too_many_requests');
+    // A refresh token and a code the server holds still work from there.
+    const refreshed = await token(
+      { grant_type: 'refresh_token', refresh_token: tokens.refresh_token, client_id: clientId },
+      forwarded(guesser)
+    );
+    expect(refreshed.status, await refreshed.clone().text()).to.equal(200);
+    expect(refreshed.headers.get('retry-after')).to.equal(null);
+    // (A new yes replaces the connection, so the code comes after the refresh; and a code lasts a minute.)
+    const exchanged = await (await newCode(clientId, session))(forwarded(guesser));
+    expect(exchanged.status, await exchanged.clone().text()).to.equal(200);
+    // And a junk one after them is still turned away.
+    expect((await junk(clientId, guesser)).status).to.equal(429);
+  });
+
+  it('counts an IPv6 address’s refusals with its whole /48, so its /56s share one count', async () => {
+    const { clientId } = await connection();
+    process.env.RATE_LIMITS = 'on';
+    // Two /56s of one /48, made for this test.
+    for (const address of ['2001:db8:e1:100::1', '2001:db8:e1:200::1']) {
+      expect((await junk(clientId, address)).status).to.equal(400);
+    }
+    expect((await oauthTokenFailures.getKey(networkKey('2001:db8:e1::1')))?.totalHits).to.equal(2);
+    expect(networkKey('2001:db8:e1:ff00::1')).to.equal(networkKey('2001:db8:e1::1'));
+    expect(networkKey('2001:db8:e2::1')).to.not.equal(networkKey('2001:db8:e1::1'));
   });
 
   it(`counts ${OAUTH_TOKEN_LIMITS.account} for one account in 15 minutes, leaving its refresh token working`, async () => {
@@ -806,24 +1012,71 @@ describe('OAuth: the token endpoint’s limits, for apps on shared addresses', f
     expect(later.status, await later.clone().text()).to.equal(200);
   });
 
-  it('has a ceiling on everyone’s token requests together', async () => {
-    const before = CEILINGS.oauthToken;
-    CEILINGS.oauthToken = 3;
+  it('never burns a code for the account’s count, nor holds up the end of a copied refresh token', async () => {
+    const { clientId, tokens, session } = await connection();
+    const row = (await AccessToken.findOne({ kind: 'oauth', clientId }))!;
+    const userId = String(row.userId);
+    const first = await refresh(tokens.refresh_token, clientId);
+    expect(first.status).to.equal(200);
+    process.env.RATE_LIMITS = 'on';
+    for (let i = 0; i < OAUTH_TOKEN_LIMITS.account; i++) countTokenGrant(userId);
+    expect(countTokenGrant(userId)).to.equal(false);
+    // Over its count, the first refresh token used again (a copy): refused as reused and its connection ended, not 429.
+    const copied = await token(
+      { grant_type: 'refresh_token', refresh_token: tokens.refresh_token, client_id: clientId },
+      forwarded(someAddress())
+    );
+    expect(copied.status).to.equal(400);
+    expect(((await copied.json()) as { error: string }).error).to.equal('invalid_grant');
+    const ended = (await AccessToken.findById(row._id))!;
+    expect(ended.revokedAt).to.be.instanceOf(Date);
+    expect(ended.revokedWhy).to.equal('reused');
+    // Still over: a new code is exchanged all the same (codes are not counted), so the person need not sign in again.
+    const exchanged = await (await newCode(clientId, session))(forwarded(someAddress()));
+    expect(exchanged.status, await exchanged.clone().text()).to.equal(200);
+  });
+
+  it('has a ceiling on everyone’s refusals together, which turns away only requests that would fail', async () => {
+    const working = await connection();
+    const reused = await connection();
+    const used = await refresh(reused.tokens.refresh_token, reused.clientId);
+    expect(used.status).to.equal(200);
+    const before = CEILINGS.oauthTokenRefusals;
+    CEILINGS.oauthTokenRefusals = 3;
     await oauthTokenAll.resetKey('oauth-token-all');
     process.env.RATE_LIMITS = 'on';
     try {
+      // Each from its own address, so only the ceiling can stop them.
       const statuses: number[] = [];
-      for (let i = 0; i < 4; i++) {
-        const res = await token(
-          { grant_type: 'refresh_token', refresh_token: 'x', client_id: 'dcr_x' },
-          forwarded(someAddress())
-        );
-        statuses.push(res.status);
-      }
+      for (let i = 0; i < 4; i++) statuses.push((await junk('dcr_x', someAddress())).status);
       expect(statuses.slice(0, 3)).to.not.include(429);
       expect(statuses[3]).to.equal(429);
+      // A working refresh token and a new code still go through, and are not counted.
+      const refreshed = await token(
+        { grant_type: 'refresh_token', refresh_token: working.tokens.refresh_token, client_id: working.clientId },
+        forwarded(someAddress())
+      );
+      expect(refreshed.status, await refreshed.clone().text()).to.equal(200);
+      const exchanged = await (await newCode(working.clientId, working.session))(forwarded(someAddress()));
+      expect(exchanged.status, await exchanged.clone().text()).to.equal(200);
+      expect((await oauthTokenAll.getKey('oauth-token-all'))?.totalHits).to.equal(3);
+      // A refresh token used before is on record too: it reaches the reuse check, which ends its connection.
+      const again = await token(
+        { grant_type: 'refresh_token', refresh_token: reused.tokens.refresh_token, client_id: reused.clientId },
+        forwarded(someAddress())
+      );
+      expect(again.status).to.equal(400);
+      const row = (await AccessToken.findOne({ kind: 'oauth', clientId: reused.clientId }))!;
+      expect(row.revokedWhy).to.equal('reused');
+      // A token request that is not a form at all is turned away.
+      const notForm = await request('/oauth/token', {
+        method: 'POST',
+        headers: { 'content-type': 'application/json', ...forwarded(someAddress()) },
+        body: JSON.stringify({ grant_type: 'refresh_token', refresh_token: working.tokens.refresh_token })
+      });
+      expect(notForm.status).to.equal(429);
     } finally {
-      CEILINGS.oauthToken = before;
+      CEILINGS.oauthTokenRefusals = before;
       await oauthTokenAll.resetKey('oauth-token-all');
     }
   });

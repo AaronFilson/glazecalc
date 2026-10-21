@@ -31,7 +31,7 @@
 // findAccount below ask for a working row).
 import { AsyncLocalStorage } from 'node:async_hooks';
 import crypto from 'node:crypto';
-import type { NextFunction, Request, RequestHandler, Response } from 'express';
+import express, { type NextFunction, type Request, type RequestHandler, type Response } from 'express';
 import mongoose from 'mongoose';
 import Provider, { errors, type ClientMetadata, type Configuration, type KoaContextWithOIDC } from 'oidc-provider';
 import appSecret from '../lib/app_secret.ts';
@@ -48,6 +48,7 @@ import User from '../models/user.ts';
 import { issuerUrl, resourceUrl } from '../mcp/urls.ts';
 import {
   extendGrant,
+  grantSourceOnRecord,
   keepRegisteredClient,
   MongoAdapter,
   whenClientDocumentWanted,
@@ -62,7 +63,9 @@ import {
   CLIENT_KEY_ALGS,
   countFetch,
   guardedFetch,
+  markKeySetProven,
   MOST_BYTES,
+  whoIsAsking,
   type CimdAuthMode
 } from './cimd.ts';
 import { assertClientAssertion, CLOCK_TOLERANCE } from './client_assertions.ts';
@@ -444,10 +447,16 @@ const configuration = (mode: CimdAuthMode): Configuration => ({
       if (!working(row) || String(row.userId) !== sub || row.clientId !== (token as { clientId?: string }).clientId) {
         return undefined;
       }
-      // At the token endpoint, once per request: the account's own count (limits.countTokenGrant), before the code
-      // or refresh token is used, so one refused for it still works later.
+      // At the token endpoint, once per request: the account's own count (limits.countTokenGrant) for a refresh
+      // token, asked for before oidc-provider uses it, so one refused for the count still works later. Not for a
+      // code: oidc-provider has used it up before it asks for the account, so a 429 would lose it (and each code
+      // needs the person's yes on the consent page anyway). Not for a refresh token already used either: its
+      // second use is found next and ends the connection (a copied token), which no count may hold up.
+      const { kind, consumed } = token as { kind?: string; consumed?: unknown };
       if (
         !rows.has(ctx) &&
+        kind === 'RefreshToken' &&
+        !consumed &&
         routerPath(current.getStore()?.path ?? '') === ROUTES.token &&
         !limits.countTokenGrant(sub)
       ) {
@@ -553,11 +562,18 @@ const serverFor = () => {
   // Koa's own logging is off; errors are logged here, without the request.
   provider.silent = true;
   provider.on('server_error', (_ctx, err) => log.error('OAuth server error', { err }));
+  // A code or refresh token exchanged by an app that signs: its keys belong to an app with a working connection.
+  provider.on('grant.success', (ctx) => {
+    const client = ctx.oidc.client;
+    if (client?.tokenEndpointAuthMethod === 'private_key_jwt' && client.jwksUri) markKeySetProven(client.jwksUri);
+  });
   made = { issuer, mode, provider, handler: provider.callback() };
   return made;
 };
 
 whenReused((grantId) => revokeGrant(grantId, 'reused'));
+// Key-set fetches are counted by the address of the token request that asked for them.
+whoIsAsking(() => current.getStore()?.address);
 // An app named by its address reads from the document kept with its working connections first.
 whenClientDocumentWanted((clientId) =>
   keptClientDocument(clientId, (metadata) => getProvider().Client.validate(metadata), current.getStore()?.address)
@@ -596,6 +612,44 @@ export const asTheSiteForConnect = (req: Request, _res: Response, next: NextFunc
   asTheSite(req);
   current.run({ path: req.path, address: req.ip }, next);
 };
+
+// The token endpoint's form, read here only when a limit on refusals is over
+// (grantOnRecord); oidc-provider then takes the form as read (req.body)
+// rather than reading the request again, and says once in the log that it
+// did ("already parsed request body detected"), which is expected here. Its
+// own limit on a form's size.
+const tokenForm = express.urlencoded({ extended: false, limit: '56kb' });
+const held = new WeakMap<Request, Promise<boolean>>();
+
+/**
+ * Whether a token request's code or refresh token is one the server holds
+ * (adapter.ts grantSourceOnRecord): such a request goes on even when the
+ * token endpoint's counts of refusals are over (rate_limit.ts), so a working
+ * connection is never turned away by them. Asked once per request.
+ */
+const grantOnRecord = (req: Request, res: Response): Promise<boolean> => {
+  let answer = held.get(req);
+  if (!answer) {
+    answer = (async () => {
+      await new Promise<void>((resolve, reject) => {
+        void tokenForm(req, res, (err?: unknown) => (err ? reject(err as Error) : resolve()));
+      });
+      const form = (req.body ?? {}) as Record<string, unknown>;
+      const kind =
+        form.grant_type === 'refresh_token'
+          ? 'RefreshToken'
+          : form.grant_type === 'authorization_code'
+            ? 'AuthorizationCode'
+            : undefined;
+      const value = kind === 'RefreshToken' ? form.refresh_token : form.code;
+      if (!kind || typeof value !== 'string' || !value || value.length > 512) return false;
+      return grantSourceOnRecord(kind, value);
+    })().catch(() => false);
+    held.set(req, answer);
+  }
+  return answer;
+};
+limits.whenGrantOnRecord(grantOnRecord);
 
 /** The authorization server's limits (server/lib/rate_limit.ts), by address and method. */
 const limitsFor = (req: Request): RequestHandler[] => {

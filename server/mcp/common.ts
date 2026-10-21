@@ -225,7 +225,7 @@ export { languageOf };
 
 // The tools that fit amounts (substitutions, matching the materials on hand)
 // work hardest: FITS_PER_MINUTE each minute for each caller (an account, or an
-// address without a token), on top of the request limits
+// address without a token, an IPv6 one with its /48), on top of the request limits
 // (server/lib/rate_limit.ts); and FITS_ANYONE_ALL_PER_MINUTE for every caller
 // without a token together, so the server's work stays bounded however many
 // addresses ask. Kept in memory, as those are.
