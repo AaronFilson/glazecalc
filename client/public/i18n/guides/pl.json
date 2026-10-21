@@ -43,7 +43,7 @@
   "contents": "Na tej stronie",
   "poison": {
     "numbersFor": "Numery telefonów:",
-    "choose": "Wybierz kraj",
+    "choose": "Wybierz kraj lub region",
     "label": "Gdzie dzwonić: {region}",
     "caption": "Gdzie dzwonić: {region} (numery sprawdzone {date})",
     "for": "W jakiej sprawie",
@@ -61,7 +61,7 @@
     "animalsNone": "Zwierzęta",
     "vet": "Należy zadzwonić do weterynarza.",
     "checkedOn": "Sprawdzono na stronach:",
-    "choosePrompt": "Wystarczy wybrać kraj, aby zobaczyć, gdzie tam dzwonić.",
+    "choosePrompt": "Wystarczy wybrać kraj lub region, aby zobaczyć, gdzie tam dzwonić.",
     "ministry": "Strona ministerstwa zdrowia: <link>{name}</link>."
   },
   "density": {
@@ -89,7 +89,7 @@
     },
     "none": "{region}: nie znaleźliśmy sklepu z surowcami do szkliw.",
     "unknown": "{region}: nie szukaliśmy jeszcze sklepów.",
-    "choosePrompt": "Wystarczy wybrać kraj, aby zobaczyć tamtejsze sklepy."
+    "choosePrompt": "Wystarczy wybrać kraj lub region, aby zobaczyć tamtejsze sklepy."
   },
   "silica": {
     "limitIn": "Limit:",
@@ -135,7 +135,7 @@
     "noData": "{region}: nie potwierdziliśmy jeszcze obowiązującego limitu.",
     "agency": "Krajowa instytucja ds. bezpieczeństwa i higieny pracy: <link>{name}</link>.",
     "agencySilica": "Jej <link>strona o krzemionce</link>.",
-    "choosePrompt": "Wystarczy wybrać kraj, aby zobaczyć obowiązujący w nim limit."
+    "choosePrompt": "Wystarczy wybrać kraj lub region, aby zobaczyć obowiązujący w nim limit."
   },
   "food": {
     "rulesIn": "Przepisy:",
@@ -211,7 +211,7 @@
     "unknown": "{region}: nie potwierdziliśmy jeszcze obowiązujących przepisów.",
     "none": "{region}: żaden przepis nie ustala limitów ołowiu i kadmu, które może uwolnić wypalony wyrób (sprawdzono {date}).",
     "noneSource": "Źródło: <link>{law}</link>.",
-    "choosePrompt": "Wystarczy wybrać kraj, aby zobaczyć obowiązujące w nim przepisy."
+    "choosePrompt": "Wystarczy wybrać kraj lub region, aby zobaczyć obowiązujące w nim przepisy."
   },
   "equivalents": {
     "buyingIn": "Miejsce zakupu:",
@@ -224,6 +224,6 @@
     "noneClose": "Nic w granicach 15 g na 100 g: należy porównać składy chemiczne.",
     "loading": "Wczytywanie biblioteki…",
     "failed": "Nie udało się wczytać biblioteki. Proszę spróbować ponownie później.",
-    "choosePrompt": "Wystarczy wybrać kraj, aby zobaczyć, co się tam sprzedaje."
+    "choosePrompt": "Wystarczy wybrać kraj lub region, aby zobaczyć, co się tam sprzedaje."
   }
 }

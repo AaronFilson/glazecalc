@@ -43,7 +43,7 @@
   "contents": "Na této stránce",
   "poison": {
     "numbersFor": "Telefonní čísla:",
-    "choose": "Vyberte svou zemi",
+    "choose": "Vyberte svou zemi nebo region",
     "label": "Kam volat: {region}",
     "caption": "Kam volat: {region} (čísla ověřena {date})",
     "for": "Účel",
@@ -61,7 +61,7 @@
     "animalsNone": "Zvířata",
     "vet": "Zavolejte svému veterináři.",
     "checkedOn": "Ověřeno na stránkách:",
-    "choosePrompt": "Vyberte svou zemi a zobrazí se, kam tam volat.",
+    "choosePrompt": "Vyberte svou zemi nebo region a zobrazí se, kam tam volat.",
     "ministry": "Stránka ministerstva zdravotnictví: <link>{name}</link>."
   },
   "density": {
@@ -89,7 +89,7 @@
     },
     "none": "{region}: nenašli jsme žádný obchod se surovinami pro glazury.",
     "unknown": "{region}: obchody jsme zatím nehledali.",
-    "choosePrompt": "Vyberte svou zemi a zobrazí se tamní obchody."
+    "choosePrompt": "Vyberte svou zemi nebo region a zobrazí se tamní obchody."
   },
   "silica": {
     "limitIn": "Limit:",
@@ -135,7 +135,7 @@
     "noData": "{region}: limit jsme zatím neověřili.",
     "agency": "Národní úřad pro bezpečnost práce: <link>{name}</link>.",
     "agencySilica": "Jeho <link>stránka o oxidu křemičitém</link>.",
-    "choosePrompt": "Vyberte svou zemi a zobrazí se její limit."
+    "choosePrompt": "Vyberte svou zemi nebo region a zobrazí se tamní limit."
   },
   "food": {
     "rulesIn": "Pravidla:",
@@ -211,7 +211,7 @@
     "unknown": "{region}: pravidla jsme zatím neověřili.",
     "none": "{region}: neexistuje zákon, který by stanovil limity pro olovo a kadmium, které smí vypálený kus uvolnit (ověřeno {date}).",
     "noneSource": "Zdroj: <link>{law}</link>.",
-    "choosePrompt": "Vyberte svou zemi a zobrazí se její pravidla."
+    "choosePrompt": "Vyberte svou zemi nebo region a zobrazí se tamní pravidla."
   },
   "equivalents": {
     "buyingIn": "Kde nakupujete:",
@@ -224,6 +224,6 @@
     "noneClose": "Nic s rozdílem do 15 g na 100 g: porovnejte podle chemického složení.",
     "loading": "Načítá se knihovna…",
     "failed": "Knihovnu se nepodařilo načíst. Zkuste to později znovu.",
-    "choosePrompt": "Vyberte svou zemi a zobrazí se, co se tam prodává."
+    "choosePrompt": "Vyberte svou zemi nebo region a zobrazí se, co se tam prodává."
   }
 }

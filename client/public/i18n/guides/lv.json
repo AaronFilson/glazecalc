@@ -43,7 +43,7 @@
   "contents": "Šajā lapā",
   "poison": {
     "numbersFor": "Tālruņa numuri:",
-    "choose": "Izvēlieties valsti",
+    "choose": "Izvēlieties valsti vai reģionu",
     "label": "Kur zvanīt: {region}",
     "caption": "Kur zvanīt: {region} (numuri pārbaudīti: {date})",
     "for": "Kādā gadījumā",
@@ -61,7 +61,7 @@
     "animalsNone": "Dzīvnieki",
     "vet": "Zvaniet savam veterinārārstam.",
     "checkedOn": "Pārbaudīts vietnēs:",
-    "choosePrompt": "Izvēlieties valsti, lai redzētu, kur tur zvanīt.",
+    "choosePrompt": "Izvēlieties valsti vai reģionu, lai redzētu, kur tur zvanīt.",
     "ministry": "Veselības ministrijas lapa: <link>{name}</link>."
   },
   "density": {
@@ -89,7 +89,7 @@
     },
     "none": "{region}: neatradām nevienu veikalu, kas pārdotu glazūru izejvielas.",
     "unknown": "{region}: veikalus vēl neesam meklējuši.",
-    "choosePrompt": "Izvēlieties valsti, lai redzētu tās veikalus."
+    "choosePrompt": "Izvēlieties valsti vai reģionu, lai redzētu tur esošos veikalus."
   },
   "silica": {
     "limitIn": "Robežvērtība:",
@@ -135,7 +135,7 @@
     "noData": "{region}: robežvērtību vēl neesam noskaidrojuši.",
     "agency": "Valsts iestāde, kas atbild par darba drošību: <link>{name}</link>.",
     "agencySilica": "Tās <link>lapa par silīcija dioksīdu</link>.",
-    "choosePrompt": "Izvēlieties valsti, lai redzētu tās robežvērtību."
+    "choosePrompt": "Izvēlieties valsti vai reģionu, lai redzētu tur noteikto robežvērtību."
   },
   "food": {
     "rulesIn": "Noteikumi:",
@@ -211,7 +211,7 @@
     "unknown": "{region}: noteikumus vēl neesam noskaidrojuši.",
     "none": "{region}: nav likuma, kas noteiktu robežvērtības svinam un kadmijam, ko apdedzināts izstrādājums drīkst izdalīt (pārbaudīts: {date}).",
     "noneSource": "Avots: <link>{law}</link>.",
-    "choosePrompt": "Izvēlieties valsti, lai redzētu tās noteikumus."
+    "choosePrompt": "Izvēlieties valsti vai reģionu, lai redzētu tur spēkā esošos noteikumus."
   },
   "equivalents": {
     "buyingIn": "Iegādes vieta:",
@@ -224,6 +224,6 @@
     "noneClose": "Nav nevienas izejvielas, kas atšķirtos ne vairāk kā par 15 g uz 100 g: salīdziniet ķīmisko sastāvu.",
     "loading": "Ielādē bibliotēku…",
     "failed": "Bibliotēku neizdevās ielādēt. Mēģiniet vēlreiz vēlāk.",
-    "choosePrompt": "Izvēlieties valsti, lai redzētu, ko tur pārdod."
+    "choosePrompt": "Izvēlieties valsti vai reģionu, lai redzētu, ko tur pārdod."
   }
 }

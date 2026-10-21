@@ -43,7 +43,7 @@
   "contents": "Sellel lehel",
   "poison": {
     "numbersFor": "Numbrid:",
-    "choose": "Valige oma riik",
+    "choose": "Valige oma riik või piirkond",
     "label": "Kellele helistada: {region}",
     "caption": "Kellele helistada: {region} (numbrid kontrollitud: {date})",
     "for": "Olukord",
@@ -61,7 +61,7 @@
     "animalsNone": "Loomad",
     "vet": "Helistage oma loomaarstile.",
     "checkedOn": "Kontrollitud:",
-    "choosePrompt": "Valige oma riik, et näha, kellele seal helistada.",
+    "choosePrompt": "Valige oma riik või piirkond, et näha, kellele seal helistada.",
     "ministry": "Tervishoiuministeeriumi leht: <link>{name}</link>."
   },
   "density": {
@@ -89,7 +89,7 @@
     },
     "none": "{region}: glasuuri tooraineid müüvat poodi ei leitud.",
     "unknown": "{region}: poode ei ole veel otsitud.",
-    "choosePrompt": "Valige oma riik, et näha seal asuvaid poode."
+    "choosePrompt": "Valige oma riik või piirkond, et näha seal asuvaid poode."
   },
   "silica": {
     "limitIn": "Piirnorm:",
@@ -135,7 +135,7 @@
     "noData": "{region}: piirnormi ei ole veel kinnitatud.",
     "agency": "Riiklik tööohutusasutus: <link>{name}</link>.",
     "agencySilica": "Asutuse <link>leht ränidioksiidi kohta</link>.",
-    "choosePrompt": "Valige oma riik, et näha selle piirnormi."
+    "choosePrompt": "Valige oma riik või piirkond, et näha seal kehtivat piirnormi."
   },
   "food": {
     "rulesIn": "Reeglid:",
@@ -211,7 +211,7 @@
     "unknown": "{region}: reegleid ei ole veel kinnitatud.",
     "none": "{region}: ei ole seadust, mis kehtestaks piirnormid pliile ja kaadmiumile, mida põletatud ese võib eraldada (kontrollitud: {date}).",
     "noneSource": "Allikas: <link>{law}</link>.",
-    "choosePrompt": "Valige oma riik, et näha selle reegleid."
+    "choosePrompt": "Valige oma riik või piirkond, et näha seal kehtivaid reegleid."
   },
   "equivalents": {
     "buyingIn": "Ostukoht:",
@@ -224,6 +224,6 @@
     "noneClose": "Midagi ei jää 15 g/100 g piiresse: võrrelge keemilise koostise järgi.",
     "loading": "Teegi laadimine…",
     "failed": "Teeki ei õnnestunud laadida. Proovige hiljem uuesti.",
-    "choosePrompt": "Valige oma riik, et näha, mida seal müüakse."
+    "choosePrompt": "Valige oma riik või piirkond, et näha, mida seal müüakse."
   }
 }

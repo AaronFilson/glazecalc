@@ -36,6 +36,28 @@ beforeEach(() => {
 // The region chosen here is kept in this browser's storage: none is left for the next file's tests.
 afterEach(() => localStorage.clear());
 
+describe('with no region known', () => {
+  // "Country or region" (the owner's choice): Hong Kong and Taiwan are among the regions.
+  for (const [component, prompt] of [
+    [PoisonLines, 'Choose your country or region to see who to call there.'],
+    [ShopList, 'Choose your country or region to see shops there.'],
+    [SilicaLimit, 'Choose your country or region to see its limit.'],
+    [FoodLimits, 'Choose your country or region to see its rules.']
+  ] as const) {
+    it(`asks for the country or region in ${component.name}`, async () => {
+      // No region chosen, and the browser names none.
+      const languages = vi.spyOn(navigator, 'languages', 'get').mockReturnValue(['en']);
+      const fixture = TestBed.createComponent(component as Type<unknown>);
+      await fixture.whenStable();
+      const element = fixture.nativeElement as HTMLElement;
+      const paragraphs = [...element.querySelectorAll('p')].map((p) => p.textContent?.trim());
+      expect(paragraphs).toContain(prompt);
+      expect(pickerField(element).getAttribute('placeholder')).toBe('Choose your country or region');
+      languages.mockRestore();
+    });
+  }
+});
+
 describe('ShopList', () => {
   it("lists shops in the reader's country, linked, with what they sell and the packs seen", async () => {
     const { element, text, rows } = await create(ShopList, 'GB');

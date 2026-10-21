@@ -847,6 +847,9 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Changed
 
+- **"Choose your country or region"**: the guides' region list and the prompts under it ask for a country or region
+  (the owner's choice), as Hong Kong and Taiwan are among the places listed. In every language, in the words its
+  region list already uses ("countries and regions").
 - **Enter in a recipe amount goes back to the list to add from.** With an amount typed, Enter in a
   material's amount moves the focus to the materials list's filter, ready for the next one (an
   additive's amount to the additives' list). Before, Enter did nothing there, and it still sends no

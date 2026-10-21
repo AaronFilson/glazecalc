@@ -43,7 +43,7 @@
   "contents": "F’din il-paġna",
   "poison": {
     "numbersFor": "Numri:",
-    "choose": "Agħżel il-pajjiż tiegħek",
+    "choose": "Agħżel il-pajjiż jew ir-reġjun tiegħek",
     "label": "Lil min iċċempel: {region}",
     "caption": "Lil min iċċempel: {region} (numri ċċekkjati: {date})",
     "for": "Għal xiex",
@@ -61,7 +61,7 @@
     "animalsNone": "Annimali",
     "vet": "Ċempel lill-veterinarju tiegħek.",
     "checkedOn": "Iċċekkjat:",
-    "choosePrompt": "Agħżel il-pajjiż tiegħek biex tara lil min iċċempel hemmhekk.",
+    "choosePrompt": "Agħżel il-pajjiż jew ir-reġjun tiegħek biex tara lil min iċċempel hemmhekk.",
     "ministry": "Il-paġna tal-ministeru tas-saħħa: <link>{name}</link>."
   },
   "density": {
@@ -89,7 +89,7 @@
     },
     "none": "Ma sibna l-ebda ħanut li jbigħ materji primi għall-glejż ({region}).",
     "unknown": "Għadna ma fittixniex ħwienet ({region}).",
-    "choosePrompt": "Agħżel il-pajjiż tiegħek biex tara l-ħwienet hemmhekk."
+    "choosePrompt": "Agħżel il-pajjiż jew ir-reġjun tiegħek biex tara l-ħwienet hemmhekk."
   },
   "silica": {
     "limitIn": "Limitu:",
@@ -135,7 +135,7 @@
     "noData": "Għadna ma kkonfermajniex il-limitu ({region}).",
     "agency": "L-awtorità nazzjonali għas-saħħa u s-sigurtà fuq il-post tax-xogħol: <link>{name}</link>.",
     "agencySilica": "<link>Il-paġna tagħha dwar is-silika</link>.",
-    "choosePrompt": "Agħżel il-pajjiż tiegħek biex tara l-limitu tiegħu."
+    "choosePrompt": "Agħżel il-pajjiż jew ir-reġjun tiegħek biex tara l-limitu tiegħu."
   },
   "food": {
     "rulesIn": "Regoli:",
@@ -211,7 +211,7 @@
     "unknown": "Għadna ma kkonfermajniex ir-regoli ({region}).",
     "none": "{region}: m’hemm l-ebda liġi li tistabbilixxi limiti għaċ-ċomb u għall-kadmju li biċċa moħmija tista’ tirrilaxxa (iċċekkjat: {date}).",
     "noneSource": "Sors: <link>{law}</link>.",
-    "choosePrompt": "Agħżel il-pajjiż tiegħek biex tara r-regoli tiegħu."
+    "choosePrompt": "Agħżel il-pajjiż jew ir-reġjun tiegħek biex tara r-regoli tiegħu."
   },
   "equivalents": {
     "buyingIn": "Fejn tixtri:",
@@ -224,6 +224,6 @@
     "noneClose": "Xejn b’differenza ta’ mhux aktar minn 15 g kull 100 g: qabbel il-kimika.",
     "loading": "Il-librerija qed titgħabba…",
     "failed": "Il-librerija ma setgħetx titgħabba. Erġa’ pprova aktar tard.",
-    "choosePrompt": "Agħżel il-pajjiż tiegħek biex tara x’jinbiegħ hemmhekk."
+    "choosePrompt": "Agħżel il-pajjiż jew ir-reġjun tiegħek biex tara x’jinbiegħ hemmhekk."
   }
 }

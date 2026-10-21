@@ -43,7 +43,7 @@
   "contents": "このページの内容",
   "poison": {
     "numbersFor": "連絡先を表示する国・地域:",
-    "choose": "国を選択",
+    "choose": "国・地域を選択",
     "label": "{region}の連絡先",
     "caption": "{region}の連絡先（電話番号の確認日: {date}）",
     "for": "用件",
@@ -61,7 +61,7 @@
     "animalsNone": "動物",
     "vet": "かかりつけの獣医に電話してください。",
     "checkedOn": "確認した出典:",
-    "choosePrompt": "国を選ぶと、その国の連絡先が表示されます。",
+    "choosePrompt": "国・地域を選ぶと、その国・地域の連絡先が表示されます。",
     "ministry": "保健省のページ: <link>{name}</link>。"
   },
   "density": {
@@ -89,7 +89,7 @@
     },
     "none": "{region}で釉薬原料を販売している店は見つかりませんでした。",
     "unknown": "{region}の販売店はまだ調べていません。",
-    "choosePrompt": "国を選ぶと、その国の販売店が表示されます。"
+    "choosePrompt": "国・地域を選ぶと、その国・地域の販売店が表示されます。"
   },
   "silica": {
     "limitIn": "限度値を表示する国・地域:",
@@ -135,7 +135,7 @@
     "noData": "{region}の限度値はまだ確認していません。",
     "agency": "国の労働安全衛生機関: <link>{name}</link>",
     "agencySilica": "同機関の<link>シリカについてのページ</link>。",
-    "choosePrompt": "国を選ぶと、その国の限度値が表示されます。"
+    "choosePrompt": "国・地域を選ぶと、その国・地域の限度値が表示されます。"
   },
   "food": {
     "rulesIn": "規則を表示する国・地域:",
@@ -211,7 +211,7 @@
     "unknown": "{region}の規則はまだ確認していません。",
     "none": "{region}には、焼成した器から溶出してよい鉛とカドミウムの限度値を定める法令はありません（確認日: {date}）。",
     "noneSource": "出典: <link>{law}</link>。",
-    "choosePrompt": "国を選ぶと、その国の規則が表示されます。"
+    "choosePrompt": "国・地域を選ぶと、その国・地域の規則が表示されます。"
   },
   "equivalents": {
     "buyingIn": "購入する国・地域:",
@@ -224,6 +224,6 @@
     "noneClose": "100 g あたり 15 g 以内の差のものはありません。化学組成で比較してください。",
     "loading": "ライブラリを読み込んでいます…",
     "failed": "ライブラリを読み込めませんでした。後でもう一度お試しください。",
-    "choosePrompt": "国を選ぶと、その国で販売されているものが表示されます。"
+    "choosePrompt": "国・地域を選ぶと、その国・地域で販売されているものが表示されます。"
   }
 }

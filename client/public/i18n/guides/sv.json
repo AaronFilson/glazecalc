@@ -43,7 +43,7 @@
   "contents": "På den här sidan",
   "poison": {
     "numbersFor": "Nummer för",
-    "choose": "Välj land",
+    "choose": "Välj land eller region",
     "label": "Vem man ringer i {region}",
     "caption": "Vem man ringer i {region} (numren kontrollerade den {date})",
     "for": "Gäller",
@@ -61,7 +61,7 @@
     "animalsNone": "Djur",
     "vet": "Ring veterinären.",
     "checkedOn": "Kontrollerat på:",
-    "choosePrompt": "Välj land för att se vem man ringer där.",
+    "choosePrompt": "Välj land eller region för att se vem man ringer där.",
     "ministry": "Hälsoministeriets sida: <link>{name}</link>."
   },
   "density": {
@@ -89,7 +89,7 @@
     },
     "none": "Vi hittade ingen butik som säljer glasyrråvaror i {region}.",
     "unknown": "Vi har ännu inte letat efter butiker i {region}.",
-    "choosePrompt": "Välj land för att se butiker där."
+    "choosePrompt": "Välj land eller region för att se butiker där."
   },
   "silica": {
     "limitIn": "Gränsvärde i",
@@ -135,7 +135,7 @@
     "noData": "Vi har ännu inte bekräftat gränsvärdet i {region}.",
     "agency": "Den nationella myndigheten för arbetsmiljö: <link>{name}</link>.",
     "agencySilica": "Myndighetens <link>sida om kvartsdamm</link>.",
-    "choosePrompt": "Välj land för att se gränsvärdet där."
+    "choosePrompt": "Välj land eller region för att se gränsvärdet där."
   },
   "food": {
     "rulesIn": "Regler i",
@@ -211,7 +211,7 @@
     "unknown": "Vi har ännu inte bekräftat reglerna i {region}.",
     "none": "Det finns ingen lag i {region} som fastställer gränsvärden för hur mycket bly och kadmium som får lösas ut från ett bränt föremål (kontrollerat den {date}).",
     "noneSource": "Källa: <link>{law}</link>.",
-    "choosePrompt": "Välj land för att se reglerna där."
+    "choosePrompt": "Välj land eller region för att se reglerna där."
   },
   "equivalents": {
     "buyingIn": "Inköp i",
@@ -224,6 +224,6 @@
     "noneClose": "Inget inom 15 g per 100 g: jämför efter kemisk analys.",
     "loading": "Hämtar biblioteket…",
     "failed": "Biblioteket kunde inte hämtas. Försök igen senare.",
-    "choosePrompt": "Välj land för att se vad som säljs där."
+    "choosePrompt": "Välj land eller region för att se vad som säljs där."
   }
 }

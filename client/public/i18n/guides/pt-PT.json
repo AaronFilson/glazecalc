@@ -43,7 +43,7 @@
   "contents": "Nesta página",
   "poison": {
     "numbersFor": "Números para",
-    "choose": "Escolha o seu país",
+    "choose": "Escolha o seu país ou região",
     "label": "A quem ligar: {region}",
     "caption": "A quem ligar: {region} (números verificados em {date})",
     "for": "Situação",
@@ -61,7 +61,7 @@
     "animalsNone": "Animais",
     "vet": "Ligue para o seu veterinário.",
     "checkedOn": "Verificado em:",
-    "choosePrompt": "Escolha o seu país para ver a quem ligar.",
+    "choosePrompt": "Escolha o seu país ou região para ver a quem ligar.",
     "ministry": "A página do Ministério da Saúde: <link>{name}</link>."
   },
   "density": {
@@ -89,7 +89,7 @@
     },
     "none": "{region}: não encontrámos nenhuma loja que venda matérias-primas para vidrados.",
     "unknown": "{region}: ainda não procurámos lojas.",
-    "choosePrompt": "Escolha o seu país para ver as lojas desse país."
+    "choosePrompt": "Escolha o seu país ou região para ver as lojas que lá existem."
   },
   "silica": {
     "limitIn": "Valor-limite em",
@@ -135,7 +135,7 @@
     "noData": "{region}: ainda não confirmámos o valor-limite.",
     "agency": "O organismo nacional de segurança no trabalho: <link>{name}</link>.",
     "agencySilica": "A sua <link>página sobre a sílica</link>.",
-    "choosePrompt": "Escolha o seu país para ver o respetivo valor-limite."
+    "choosePrompt": "Escolha o seu país ou região para ver o respetivo valor-limite."
   },
   "food": {
     "rulesIn": "Regras em",
@@ -211,7 +211,7 @@
     "unknown": "{region}: ainda não confirmámos as regras.",
     "none": "{region}: não há nenhuma lei que fixe limites para o chumbo e o cádmio que uma peça cozida pode libertar (verificado em {date}).",
     "noneSource": "Fonte: <link>{law}</link>.",
-    "choosePrompt": "Escolha o seu país para ver as respetivas regras."
+    "choosePrompt": "Escolha o seu país ou região para ver as respetivas regras."
   },
   "equivalents": {
     "buyingIn": "Onde compra",
@@ -224,6 +224,6 @@
     "noneClose": "Nenhuma com diferença até 15 g por 100 g: compare pela química.",
     "loading": "A carregar a biblioteca…",
     "failed": "Não foi possível carregar a biblioteca. Tente novamente mais tarde.",
-    "choosePrompt": "Escolha o seu país para ver o que lá se vende."
+    "choosePrompt": "Escolha o seu país ou região para ver o que lá se vende."
   }
 }

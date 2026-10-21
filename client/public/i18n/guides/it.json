@@ -43,7 +43,7 @@
   "contents": "In questa pagina",
   "poison": {
     "numbersFor": "Numeri per",
-    "choose": "Scegliere il paese",
+    "choose": "Scegliere il paese o l’area",
     "label": "Chi chiamare: {region}",
     "caption": "Chi chiamare: {region} (numeri verificati in data {date})",
     "for": "Per",
@@ -61,7 +61,7 @@
     "animalsNone": "Animali",
     "vet": "Chiamare il proprio veterinario.",
     "checkedOn": "Verificati su:",
-    "choosePrompt": "Scegliere il paese per vedere chi chiamare.",
+    "choosePrompt": "Scegliere il paese o l’area per vedere chi chiamare.",
     "ministry": "La pagina del ministero della salute: <link>{name}</link>."
   },
   "density": {
@@ -89,7 +89,7 @@
     },
     "none": "{region}: non abbiamo trovato negozi che vendano materie prime per smalti.",
     "unknown": "{region}: non abbiamo ancora cercato negozi.",
-    "choosePrompt": "Scegliere il paese per vedere i negozi."
+    "choosePrompt": "Scegliere il paese o l’area per vedere i negozi."
   },
   "silica": {
     "limitIn": "Limite per",
@@ -135,7 +135,7 @@
     "noData": "{region}: non abbiamo ancora confermato il limite.",
     "agency": "L’ente nazionale per la sicurezza sul lavoro: <link>{name}</link>.",
     "agencySilica": "La sua <link>pagina sulla silice</link>.",
-    "choosePrompt": "Scegliere il paese per vederne il limite."
+    "choosePrompt": "Scegliere il paese o l’area per vederne il limite."
   },
   "food": {
     "rulesIn": "Norme per",
@@ -211,7 +211,7 @@
     "unknown": "{region}: non abbiamo ancora confermato le norme.",
     "none": "Non c’è alcuna legge che fissi limiti per il piombo e il cadmio che un pezzo cotto può cedere: {region} (dati verificati in data {date}).",
     "noneSource": "Fonte: <link>{law}</link>.",
-    "choosePrompt": "Scegliere il paese per vederne le norme."
+    "choosePrompt": "Scegliere il paese o l’area per vederne le norme."
   },
   "equivalents": {
     "buyingIn": "Luogo di acquisto",
@@ -224,6 +224,6 @@
     "noneClose": "Nessun materiale entro 15 g ogni 100 g: confrontare in base alla chimica.",
     "loading": "Caricamento dell’elenco standard…",
     "failed": "Impossibile caricare l’elenco standard. Riprovare più tardi.",
-    "choosePrompt": "Scegliere il paese per vedere cosa è in vendita lì."
+    "choosePrompt": "Scegliere il paese o l’area per vedere cosa è in vendita lì."
   }
 }

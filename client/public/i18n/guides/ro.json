@@ -43,7 +43,7 @@
   "contents": "Pe această pagină",
   "poison": {
     "numbersFor": "Numere pentru",
-    "choose": "Alegeți țara",
+    "choose": "Alegeți țara sau regiunea",
     "label": "Pe cine sunați în {region}",
     "caption": "Pe cine sunați în {region} (numere verificate la {date})",
     "for": "Pentru",
@@ -61,7 +61,7 @@
     "animalsNone": "Animale",
     "vet": "Sunați medicul veterinar.",
     "checkedOn": "Data verificării:",
-    "choosePrompt": "Alegeți țara pentru a vedea pe cine puteți suna acolo.",
+    "choosePrompt": "Alegeți țara sau regiunea pentru a vedea pe cine puteți suna acolo.",
     "ministry": "Pagina ministerului sănătății: <link>{name}</link>."
   },
   "density": {
@@ -89,7 +89,7 @@
     },
     "none": "Nu am găsit niciun magazin care să vândă materii prime pentru glazuri în {region}.",
     "unknown": "Nu am căutat încă magazine în {region}.",
-    "choosePrompt": "Alegeți țara pentru a vedea magazinele de acolo."
+    "choosePrompt": "Alegeți țara sau regiunea pentru a vedea magazinele de acolo."
   },
   "silica": {
     "limitIn": "Valoarea-limită în",
@@ -135,7 +135,7 @@
     "noData": "Nu am confirmat încă valoarea-limită în {region}.",
     "agency": "Organismul național pentru securitate și sănătate în muncă: <link>{name}</link>.",
     "agencySilica": "<link>Pagina sa despre silice</link>.",
-    "choosePrompt": "Alegeți țara pentru a vedea valoarea-limită de acolo."
+    "choosePrompt": "Alegeți țara sau regiunea pentru a vedea valoarea-limită de acolo."
   },
   "food": {
     "rulesIn": "Reglementări în",
@@ -211,7 +211,7 @@
     "unknown": "Nu am confirmat încă reglementările din {region}.",
     "none": "În {region} nu există nicio lege care să stabilească limite pentru plumbul și cadmiul pe care le poate ceda o piesă arsă (verificat la {date}).",
     "noneSource": "Sursa: <link>{law}</link>.",
-    "choosePrompt": "Alegeți țara pentru a vedea reglementările de acolo."
+    "choosePrompt": "Alegeți țara sau regiunea pentru a vedea reglementările de acolo."
   },
   "equivalents": {
     "buyingIn": "Cumpărături în",
@@ -224,6 +224,6 @@
     "noneClose": "Nicio materie primă cu o diferență de cel mult 15 g la 100 g: comparați după analiza chimică.",
     "loading": "Se încarcă biblioteca…",
     "failed": "Biblioteca nu a putut fi încărcată. Încercați din nou mai târziu.",
-    "choosePrompt": "Alegeți țara pentru a vedea ce se vinde acolo."
+    "choosePrompt": "Alegeți țara sau regiunea pentru a vedea ce se vinde acolo."
   }
 }

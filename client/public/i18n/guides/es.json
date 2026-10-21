@@ -43,7 +43,7 @@
   "contents": "En esta página",
   "poison": {
     "numbersFor": "Teléfonos de",
-    "choose": "Elija su país",
+    "choose": "Elija su país o región",
     "label": "A quién llamar en {region}",
     "caption": "A quién llamar en {region} (números comprobados el {date})",
     "for": "Para qué",
@@ -61,7 +61,7 @@
     "animalsNone": "Animales",
     "vet": "Llame a su veterinario.",
     "checkedOn": "Comprobado en:",
-    "choosePrompt": "Elija su país para ver a quién llamar allí.",
+    "choosePrompt": "Elija su país o región para ver a quién llamar allí.",
     "ministry": "La página del ministerio de sanidad: <link>{name}</link>."
   },
   "density": {
@@ -89,7 +89,7 @@
     },
     "none": "No hemos encontrado en {region} ninguna tienda que venda materias primas para esmaltes.",
     "unknown": "Aún no hemos buscado tiendas en {region}.",
-    "choosePrompt": "Elija su país para ver las tiendas que hay allí."
+    "choosePrompt": "Elija su país o región para ver las tiendas que hay allí."
   },
   "silica": {
     "limitIn": "Límite en",
@@ -135,7 +135,7 @@
     "noData": "Aún no hemos confirmado el límite en {region}.",
     "agency": "El organismo nacional de seguridad en el trabajo: <link>{name}</link>.",
     "agencySilica": "Su <link>página sobre la sílice</link>.",
-    "choosePrompt": "Elija su país para ver el límite que se aplica allí."
+    "choosePrompt": "Elija su país o región para ver el límite que se aplica allí."
   },
   "food": {
     "rulesIn": "Normas en",
@@ -211,7 +211,7 @@
     "unknown": "Aún no hemos confirmado las normas en {region}.",
     "none": "No hay ninguna ley en {region} que fije límites para el plomo y el cadmio que puede liberar una pieza cocida (comprobado el {date}).",
     "noneSource": "Fuente: <link>{law}</link>.",
-    "choosePrompt": "Elija su país para ver las normas que se aplican allí."
+    "choosePrompt": "Elija su país o región para ver las normas que se aplican allí."
   },
   "equivalents": {
     "buyingIn": "Compras en",
@@ -224,6 +224,6 @@
     "noneClose": "No hay ninguno con una diferencia de 15 g o menos por cada 100 g: compárelos por su química.",
     "loading": "Cargando la biblioteca…",
     "failed": "No se ha podido cargar la biblioteca. Vuelva a intentarlo más tarde.",
-    "choosePrompt": "Elija su país para ver qué se vende allí."
+    "choosePrompt": "Elija su país o región para ver qué se vende allí."
   }
 }

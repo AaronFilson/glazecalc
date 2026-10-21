@@ -43,7 +43,7 @@
   "contents": "Ar an leathanach seo",
   "poison": {
     "numbersFor": "Uimhreacha:",
-    "choose": "Roghnaigh do thír",
+    "choose": "Roghnaigh do thír nó do réigiún",
     "label": "Cé air a nglaofar: {region}",
     "caption": "Cé air a nglaofar: {region} (uimhreacha seiceáilte {date})",
     "for": "Cás",
@@ -61,7 +61,7 @@
     "animalsNone": "Ainmhithe",
     "vet": "Glaoigh ar do thréidlia.",
     "checkedOn": "Seiceáilte:",
-    "choosePrompt": "Roghnaigh do thír chun a fheiceáil cé air a nglaofar ansin.",
+    "choosePrompt": "Roghnaigh do thír nó do réigiún chun a fheiceáil cé air a nglaofar ansin.",
     "ministry": "Leathanach na haireachta sláinte: <link>{name}</link>."
   },
   "density": {
@@ -89,7 +89,7 @@
     },
     "none": "{region}: níor aimsíomar aon siopa a dhíolann amhábhair ghlónra.",
     "unknown": "{region}: níor chuardaíomar siopaí fós.",
-    "choosePrompt": "Roghnaigh do thír chun siopaí ansin a fheiceáil."
+    "choosePrompt": "Roghnaigh do thír nó do réigiún chun siopaí ansin a fheiceáil."
   },
   "silica": {
     "limitIn": "Teorainn:",
@@ -135,7 +135,7 @@
     "noData": "{region}: níor dheimhníomar an teorainn fós.",
     "agency": "An comhlacht náisiúnta atá freagrach as sábháilteacht ag an obair: <link>{name}</link>.",
     "agencySilica": "A <link>leathanach faoi shilice</link>.",
-    "choosePrompt": "Roghnaigh do thír chun a teorainn a fheiceáil."
+    "choosePrompt": "Roghnaigh do thír nó do réigiún chun an teorainn ansin a fheiceáil."
   },
   "food": {
     "rulesIn": "Rialacha:",
@@ -211,7 +211,7 @@
     "unknown": "{region}: níor dheimhníomar na rialacha fós.",
     "none": "{region}: níl aon dlí ann a leagann síos teorainneacha don luaidhe agus don chaidmiam a fhéadfaidh píosa bácáilte a scaoileadh (seiceáilte {date}).",
     "noneSource": "Foinse: <link>{law}</link>.",
-    "choosePrompt": "Roghnaigh do thír chun a rialacha a fheiceáil."
+    "choosePrompt": "Roghnaigh do thír nó do réigiún chun na rialacha ansin a fheiceáil."
   },
   "equivalents": {
     "buyingIn": "Áit cheannaigh:",
@@ -224,6 +224,6 @@
     "noneClose": "Níl aon rud laistigh de 15 g sa 100 g: déan comparáid de réir na ceimice.",
     "loading": "Ag lódáil na leabharlainne…",
     "failed": "Níorbh fhéidir an leabharlann a lódáil. Bain triail eile as ar ball.",
-    "choosePrompt": "Roghnaigh do thír chun a fheiceáil cad a dhíoltar ansin."
+    "choosePrompt": "Roghnaigh do thír nó do réigiún chun a fheiceáil cad a dhíoltar ansin."
   }
 }
