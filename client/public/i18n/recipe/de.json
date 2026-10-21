@@ -364,7 +364,7 @@
     "intro": "So, wie der Datensatz jedes Rohstoffs sie angibt; die der Standardbibliothek stammen aus den Sicherheitsdatenblättern der Lieferanten.",
     "line": "<b>{names}:</b> {hazards}",
     "unknown": "{count, plural, one {Für {list} sind keine Gefahren angegeben: Lesen Sie das Sicherheitsdatenblatt, das dazugehört.} other {Für {list} sind keine Gefahren angegeben: Lesen Sie die Sicherheitsdatenblätter, die dazugehören.}}",
-    "safety": "Trockene Glasurrohstoffe erzeugen Staub, und Sie müssen ihn aus Ihrer Lunge heraushalten, auch Staub von Rohstoffen, die nicht als gefährlich eingestuft sind. Lesen Sie <mixing>Sicheres Anmischen und Lüften</mixing> und, wenn Kinder oder Haustiere in der Nähe sind, <home>Vergiften Sie Ihre Familie nicht</home>. Wo das Sicherheitsdatenblatt eines Rohstoffs mehr sagt, befolgen Sie es."
+    "safety": "Trockene Glasurrohstoffe erzeugen Staub, und Sie müssen ihn aus Ihrer Lunge heraushalten, auch Staub von Rohstoffen, die nicht als gefährlich eingestuft sind. Lesen Sie <mixing>Sicheres Anmischen und Lüften</mixing>. Wenn Kinder oder Haustiere in der Nähe sind, lesen Sie auch <home>Vergiften Sie Ihre Familie nicht</home>. Wo das Sicherheitsdatenblatt eines Rohstoffs mehr sagt, befolgen Sie es."
   },
   "compare": {
     "heading": "Zwei Rezepte vergleichen",

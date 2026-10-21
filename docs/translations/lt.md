@@ -710,8 +710,8 @@ before them end in a colon.
 
 | English                                                               | Lithuanian                                                                              | Where                                                   |
 | --------------------------------------------------------------------- | --------------------------------------------------------------------------------------- | ------------------------------------------------------- |
-| Shops in (the label before a list of countries)                       | Parduotuvės šioje šalyje:                                                               | guides: shops.shopsIn                                   |
-| Numbers for, Limit in, Rules in (labels before a list of countries)   | Numeriai šioje šalyje:; Ribinė vertė šioje šalyje:; Taisyklės šioje šalyje:             | guides: poison.numbersFor, silica.limitIn, food.rulesIn |
+| Shops in (the label before a list of countries)                       | Parduotuvės:                                                                            | guides: shops.shopsIn                                   |
+| Numbers for, Limit in, Rules in (labels before a list of countries)   | Numeriai:; Ribinė vertė:; Taisyklės: (never „šioje šalyje“: Hong Kong is not a country) | guides: poison.numbersFor, silica.limitIn, food.rulesIn |
 | Checked on:                                                           | Patikrinta:                                                                             | guides: poison.checkedOn                                |
 | raw glaze materials (what a shop sells)                               | glazūrų žaliavos                                                                        | guides: shops.what.materials                            |
 | ready-made glazes                                                     | paruoštos glazūros                                                                      | guides: shops.what.glazes                               |
@@ -731,7 +731,7 @@ before them end in a colon.
 | Small hollowware, under 1.1 L, other than cups and mugs (US)          | Maži gilūs indai, mažesni nei 1,1 L, išskyrus puodelius                                 | guides: food.category.smallHollow                       |
 | Large hollowware, 1.1 L or more, other than pitchers (US)             | Dideli gilūs indai, 1,1 L ar didesni, išskyrus ąsočius                                  | guides: food.category.largeHollow                       |
 | average of 6 pieces / any one of 6                                    | 6 gaminių vidurkis / kiekvienas iš 6                                                    | guides: food.judged.average, food.judged.each           |
-| Buying in (the label before a list of countries)                      | Pirkimo šalis:                                                                          | guides: equivalents.buyingIn                            |
+| Buying in (the label before a list of countries)                      | Pirkimo vieta:                                                                          | guides: equivalents.buyingIn                            |
 | differs by {grams} g per 100 g                                        | skiriasi {grams} g/100 g                                                                | guides: equivalents.apart                               |
 | Directive 84/500/EEC (its official name)                              | Tarybos direktyva 84/500/EEB (iš dalies pakeista Komisijos direktyva 2005/31/EB)        | regions: the directive                                  |
 | Latvia's law gives this limit for the inhalable fraction of the dust. | Latvijos teisės aktuose ši ribinė vertė nustatyta įkvepiamajai dulkių frakcijai.        | regions: Latvia                                         |

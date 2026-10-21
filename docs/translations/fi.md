@@ -609,7 +609,7 @@ before them end in a colon.
 
 | English                                                               | Finnish                                                                         | Where                                         |
 | --------------------------------------------------------------------- | ------------------------------------------------------------------------------- | --------------------------------------------- |
-| Shops in (the label before a list of countries)                       | Kauppoja näissä maissa:                                                         | guides: shops.shopsIn                         |
+| Shops in (the label before a list of countries)                       | Kaupat: (never „maassa {region}“: Hong Kong is not a country)                   | guides: shops.shopsIn                         |
 | raw glaze materials (what a shop sells)                               | lasiteraaka-aineet                                                              | guides: shops.what.materials                  |
 | ready-made glazes                                                     | valmislasitteet                                                                 | guides: shops.what.glazes                     |
 | Packs seen                                                            | Nähdyt pakkauskoot                                                              | guides: shops.packs                           |
@@ -628,7 +628,7 @@ before them end in a colon.
 | Small hollowware, under 1.1 L, other than cups and mugs (US)          | Pienet syvät astiat, alle 1,1 L, muut kuin kupit ja mukit                       | guides: food.category.smallHollow             |
 | Large hollowware, 1.1 L or more, other than pitchers (US)             | Suuret syvät astiat, vähintään 1,1 L, muut kuin kannut                          | guides: food.category.largeHollow             |
 | average of 6 pieces / any one of 6                                    | 6 esineen keskiarvo / jokainen 6 esineestä erikseen                             | guides: food.judged.average, food.judged.each |
-| Buying in (the label before a list of countries)                      | Ostomaat:                                                                       | guides: equivalents.buyingIn                  |
+| Buying in (the label before a list of countries)                      | Ostopaikka:                                                                     | guides: equivalents.buyingIn                  |
 | differs by {grams} g per 100 g                                        | eroaa {grams} g/100 g                                                           | guides: equivalents.apart                     |
 | Directive 84/500/EEC (its official name)                              | neuvoston direktiivi 84/500/ETY (muutettu komission direktiivillä 2005/31/EY)   | regions: the directive                        |
 | Latvia's law gives this limit for the inhalable fraction of the dust. | Latvian lainsäädäntö antaa tämän raja-arvon pölyn hengittyvälle jakeelle.       | regions: Latvia                               |

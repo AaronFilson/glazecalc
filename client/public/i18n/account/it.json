@@ -240,7 +240,7 @@
       "legend": "Dove lavora",
       "none": {
         "label": "Nessuna scelta",
-        "saved": "Salvato: nessun paese scelto; le impostazioni predefinite seguono il browser."
+        "saved": "Salvato: nessuna regione scelta; le impostazioni predefinite seguono il browser."
       },
       "saved": "Salvato: {region}.",
       "help": "I materiali venduti lì e le impostazioni predefinite per numeri, date, temperature e coni qui sotto. Finché non si sceglie, seguono la lingua del browser."

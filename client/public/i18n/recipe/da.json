@@ -364,7 +364,7 @@
     "intro": "Som hver råvares post angiver dem; standardbibliotekets stammer fra leverandørernes sikkerhedsdatablade.",
     "line": "<b>{names}:</b> {hazards}",
     "unknown": "{count, plural, one {Der er ikke angivet nogen farer for {list}: se sikkerhedsdatabladet, der følger med.} other {Der er ikke angivet nogen farer for {list}: se de sikkerhedsdatablade, der følger med.}}",
-    "safety": "Tørre glasurråvarer giver støv, og det skal holdes ude af lungerne, også støv fra råvarer, der ikke er klassificeret som farlige. Se <mixing>Sikker blanding og ventilation</mixing>, og hvis der er børn eller kæledyr i nærheden, også <home>Forgift ikke familien</home>. Hvor en råvares sikkerhedsdatablad siger mere, så følg det."
+    "safety": "Tørre glasurråvarer giver støv, og det skal holdes ude af lungerne, også støv fra råvarer, der ikke er klassificeret som farlige. Se <mixing>Sikker blanding og ventilation</mixing>. Hvis der er børn eller kæledyr i nærheden, så se også <home>Forgift ikke familien</home>. Hvor en råvares sikkerhedsdatablad siger mere, så følg det."
   },
   "compare": {
     "heading": "Sammenlign to opskrifter",

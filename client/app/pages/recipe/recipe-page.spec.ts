@@ -988,6 +988,42 @@ describe('RecipePage', () => {
     httpMock().expectNone(API + '/recipe/create');
   });
 
+  it('sends the focus back to the list to add from on Enter in an amount, once the amount is right', async () => {
+    const { fixture, page } = await create();
+    const root = fixture.nativeElement as HTMLElement;
+    const enter = async (id: string, init: KeyboardEventInit = {}) => {
+      const field = root.querySelector<HTMLInputElement>('#' + id)!;
+      field.focus();
+      const event = new KeyboardEvent('keydown', { key: 'Enter', bubbles: true, cancelable: true, ...init });
+      field.dispatchEvent(event);
+      await fixture.whenStable();
+      return event;
+    };
+    page['addMaterial'](WHITING);
+    await fixture.whenStable();
+    // Empty: it stays, marked, and nothing is sent.
+    const empty = await enter('material-amount-0');
+    expect(empty.defaultPrevented).toBe(true);
+    expect(document.activeElement?.id).toBe('material-amount-0');
+    expect(fieldProblem(fixture, 'material-amount-0')).toBe('Enter an amount (0 is fine).');
+    // An Enter that ends a composition is left to it.
+    page['setAmount'](0, '20');
+    await fixture.whenStable();
+    const composing = await enter('material-amount-0', { isComposing: true });
+    expect(composing.defaultPrevented).toBe(false);
+    expect(document.activeElement?.id).toBe('material-amount-0');
+    await enter('material-amount-0');
+    expect(document.activeElement?.id).toBe('materials-filter');
+    expect(fieldProblem(fixture, 'material-amount-0')).toBe('');
+    // An additive's amount goes back to the additives' list.
+    page['addAdditive'](IRON);
+    page['setAdditiveAmount'](0, '2');
+    await fixture.whenStable();
+    await enter('additive-amount-0');
+    expect(document.activeElement?.id).toBe('additives-filter');
+    httpMock().expectNone(API + '/recipe/create');
+  });
+
   it('shows the server message when saving fails', async () => {
     const { fixture, page } = await create();
     page['title'].set('Matte');

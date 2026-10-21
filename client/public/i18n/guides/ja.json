@@ -42,7 +42,7 @@
   "more": "ほかのガイド",
   "contents": "このページの内容",
   "poison": {
-    "numbersFor": "連絡先を表示する国:",
+    "numbersFor": "連絡先を表示する国・地域:",
     "choose": "国を選択",
     "label": "{region}の連絡先",
     "caption": "{region}の連絡先（電話番号の確認日: {date}）",
@@ -55,7 +55,7 @@
     "orCall": "または <link>{number}</link>",
     "online": "オンライン: <link>{name}</link>。",
     "poisonAdviceNone": "中毒の相談",
-    "noLine": "この国では、一般向けの中毒相談窓口を確認できませんでした。かかりつけの医師に、急を要する場合は救急番号に電話してください。",
+    "noLine": "ここでは、一般向けの中毒相談窓口を確認できませんでした。かかりつけの医師に、急を要する場合は救急番号に電話してください。",
     "medicalAdvice": "医療相談: {name}",
     "animals": "動物: {name}",
     "animalsNone": "動物",
@@ -70,10 +70,10 @@
     "pint": "英パイントあたり {value} oz（{sg}）"
   },
   "shops": {
-    "shopsIn": "販売店のある国:",
+    "shopsIn": "販売店のある国・地域:",
     "label": "{region}の販売店",
     "caption": "{region}で釉薬原料を販売している店の一部（確認日: {date}）",
-    "nearbyCaption": "{region}への配送に対応しているという国外の店（確認日: {date}）",
+    "nearbyCaption": "{region}への配送に対応しているという他の地域の店（確認日: {date}）",
     "shop": "店名",
     "sells": "取扱品",
     "packs": "確認した容量",
@@ -92,7 +92,7 @@
     "choosePrompt": "国を選ぶと、その国の販売店が表示されます。"
   },
   "silica": {
-    "limitIn": "限度値を表示する国:",
+    "limitIn": "限度値を表示する国・地域:",
     "label": "{region}のシリカの限度値",
     "caption": "{region}における吸入性結晶質シリカの職場の限度値、8時間平均（確認日: {date}）",
     "captionControl": "{region}で作業場の空気中の吸入性結晶質シリカを評価する基準（確認日: {date}）",
@@ -130,7 +130,7 @@
     "lowerThanEu": "EU の法的拘束力のある限度値 {value} mg/m³ より低い値です。",
     "sameAsEu": "EU の法的拘束力のある限度値と同じです。",
     "recommendedBy": "{abbr}（{by}）は、<link>{title}</link>でこの値を勧告しています。法令ではありません。",
-    "respirators": "この国の防じんマスクは区分ごとに販売されています。釉薬の粉じんには {everyday}、より高い防護には {higher} です（<link>公式の区分</link>）。",
+    "respirators": "ここでは、防じんマスクは区分ごとに販売されています。釉薬の粉じんには {everyday}、より高い防護には {higher} です（<link>公式の区分</link>）。",
     "unknown": "{region}の国としての限度値は確認できませんでした。EU の法的拘束力のある限度値 {value} mg/m³ は、すべての加盟国に適用されます。",
     "noData": "{region}の限度値はまだ確認していません。",
     "agency": "国の労働安全衛生機関: <link>{name}</link>",
@@ -138,7 +138,7 @@
     "choosePrompt": "国を選ぶと、その国の限度値が表示されます。"
   },
   "food": {
-    "rulesIn": "規則を表示する国:",
+    "rulesIn": "規則を表示する国・地域:",
     "label": "{region}の陶磁器の限度値",
     "caption": "{region}の法定試験で、焼成した器からの溶出が認められる量（確認日: {date}）",
     "article": "器の種類",
@@ -203,7 +203,7 @@
       "averageOf": "{count}個の平均",
       "eachOf": "{count}個のいずれも"
     },
-    "euRules": "この国では EU の規則が適用されます。",
+    "euRules": "ここでは EU の規則が適用されます。",
     "law": "<link>{law}</link>で定められています。",
     "inForce": "{date}から施行されています。",
     "atMost": "溶出量が限度値以下であれば適合です。法令の表記は「以下」です。",
@@ -214,7 +214,7 @@
     "choosePrompt": "国を選ぶと、その国の規則が表示されます。"
   },
   "equivalents": {
-    "buyingIn": "購入する国:",
+    "buyingIn": "購入する国・地域:",
     "label": "{library, select, US {米国で販売されている相当品} UK {英国で販売されている相当品} EU {EU で販売されている相当品} other {オーストラリアとニュージーランドで販売されている相当品}}",
     "caption": "{library, select, US {米国で販売されていない原料と、米国で販売されている最も近い原料} UK {英国で販売されていない原料と、英国で販売されている最も近い原料} EU {EU で販売されていない原料と、EU で販売されている最も近い原料} other {オーストラリアとニュージーランドで販売されていない原料と、そこで販売されている最も近い原料}}",
     "material": "調合中の原料",

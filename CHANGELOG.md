@@ -830,6 +830,24 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Changed
 
+- **Enter in a recipe amount goes back to the list to add from.** With an amount typed, Enter in a
+  material's amount moves the focus to the materials list's filter, ready for the next one (an
+  additive's amount to the additives' list). Before, Enter did nothing there, and it still sends no
+  form. A missing or unreadable amount keeps the focus, marked, and its problem is said to screen
+  readers.
+- **The recipe's safety note puts the condition on the home-safety guide only**: "See Safe mixing
+  and ventilation. If children or pets are about, see Don't poison your family too." Every live
+  language says the same (the translations whose sentence could be read as covering both links are
+  rewritten; the others keep their words), and the fingerprints follow the new English.
+- **Hong Kong is not called a country.** The guides' region messages (shops, the silica limit,
+  food-contact rules, poison lines, materials sold nearby) and their labels said "this country" or
+  "the country {region}" in many languages; they now put the place after a colon or say "here", as
+  the English does, in Czech, Slovak, Slovenian, Polish, Estonian, Irish, Latvian, Turkish, Finnish,
+  Italian, French, Croatian, Greek, Hungarian, Lithuanian, Maltese, German, Spanish, Portuguese,
+  Dutch and Bulgarian, and Japanese, Korean and Chinese say "country or region". The style sheets
+  that told translators to call {region} a country say otherwise now. Also: Slovenian "Velja od
+  {date}" follows its own date rule ("Začetek veljavnosti: {date}"), and two Korean safe-mixing
+  lines read "should" as "should" again, not "must".
 - **A match says how near it comes, and keeps raw clay where its own check wants it**
   (docs/adr/0012, "Amended: how near a match comes"). In a staging test an assistant asked to
   replace Gerstley Borate read `match_from_materials`' score (a miss of 20.5) as a wide miss and

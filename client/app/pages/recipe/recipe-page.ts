@@ -922,6 +922,19 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
     this.shelfOpen.set(false);
   }
 
+  /**
+   * Enter in an amount: that line is done, so the focus goes back to the list the next one is added from (its
+   * filter field, which a screen reader names). Enter did nothing here before, and there is no form to send.
+   * An amount missing or unreadable keeps the focus, marked, with its problem said.
+   */
+  protected amountEntered(event: Event, kind: 'material' | 'additive', index: number): void {
+    // Enter that ends a composition (Chinese, Japanese, Korean) belongs to it.
+    if ((event as KeyboardEvent).isComposing) return;
+    event.preventDefault();
+    if (!this.checks.confirm(kind + '-amount-' + index)) return;
+    document.getElementById(kind + 's-filter')?.focus();
+  }
+
   protected removeMaterial(index: number): void {
     const name = this.lines()[index]?.name;
     this.lines.update((list) => list.filter((_, i) => i !== index));

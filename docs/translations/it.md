@@ -511,7 +511,7 @@ the reviewed translation uses them. Names of shops, laws and agencies stay as th
 | Small hollowware, under 1.1 L, other than cups and mugs (US)          | Oggetti cavi piccoli, meno di 1,1 L, escluse tazze e mug                        | guides: food.category.smallHollow             |
 | Large hollowware, 1.1 L or more, other than pitchers (US)             | Oggetti cavi grandi, 1,1 L o più, escluse le brocche                            | guides: food.category.largeHollow             |
 | average of 6 pieces / any one of 6                                    | media di 6 pezzi / ciascuno dei 6 pezzi                                         | guides: food.judged.average, food.judged.each |
-| Buying in (the label before a list of countries)                      | Paese di acquisto                                                               | guides: equivalents.buyingIn                  |
+| Buying in (the label before a list of countries)                      | Luogo di acquisto                                                               | guides: equivalents.buyingIn                  |
 | differs by {grams} g per 100 g                                        | differisce di {grams} g ogni 100 g                                              | guides: equivalents.apart                     |
 | Directive 84/500/EEC (its official name)                              | Direttiva 84/500/CEE (modificata dalla direttiva 2005/31/CE)                    | regions: the directive                        |
 | Latvia's law gives this limit for the inhalable fraction of the dust. | La legge lettone riferisce questo limite alla frazione inalabile della polvere. | regions: Latvia                               |

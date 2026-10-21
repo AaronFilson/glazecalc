@@ -364,7 +364,7 @@
     "intro": "Zoals het record van elke grondstof ze geeft; die van de standaardbibliotheek komen uit de veiligheidsinformatiebladen van de leveranciers.",
     "line": "<b>{names}:</b> {hazards}",
     "unknown": "{count, plural, one {Voor {list} zijn geen gevaren opgegeven: zie het veiligheidsinformatieblad dat erbij hoort.} other {Voor {list} zijn geen gevaren opgegeven: zie de veiligheidsinformatiebladen die erbij horen.}}",
-    "safety": "Droge glazuurgrondstoffen geven stof, en dat moet u uit uw longen houden, ook stof van grondstoffen die niet als gevaarlijk zijn ingedeeld. Zie <mixing>Veilig mengen en ventileren</mixing> en, als er kinderen of huisdieren in de buurt zijn, ook <home>Vergiftig uw gezin niet</home>. Als het veiligheidsinformatieblad van een grondstof meer zegt, volgt u dat."
+    "safety": "Droge glazuurgrondstoffen geven stof, en dat moet u uit uw longen houden, ook stof van grondstoffen die niet als gevaarlijk zijn ingedeeld. Zie <mixing>Veilig mengen en ventileren</mixing>. Als er kinderen of huisdieren in de buurt zijn, zie dan ook <home>Vergiftig uw gezin niet</home>. Als het veiligheidsinformatieblad van een grondstof meer zegt, volgt u dat."
   },
   "compare": {
     "heading": "Twee recepten vergelijken",

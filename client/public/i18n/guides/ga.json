@@ -42,7 +42,7 @@
   "more": "Tuilleadh treoirleabhar",
   "contents": "Ar an leathanach seo",
   "poison": {
-    "numbersFor": "Uimhreacha sa tír:",
+    "numbersFor": "Uimhreacha:",
     "choose": "Roghnaigh do thír",
     "label": "Cé air a nglaofar: {region}",
     "caption": "Cé air a nglaofar: {region} (uimhreacha seiceáilte {date})",
@@ -70,10 +70,10 @@
     "pint": "{value} oz an pionta impiriúil ({sg})"
   },
   "shops": {
-    "shopsIn": "Siopaí sa tír:",
+    "shopsIn": "Siopaí:",
     "label": "Siopaí: {region}",
     "caption": "Roinnt siopaí a dhíolann amhábhair ghlónra: {region} (seiceáilte {date})",
-    "nearbyCaption": "Siopaí in áiteanna eile a deir go seachadann siad chuig an tír seo: {region} (seiceáilte {date})",
+    "nearbyCaption": "Siopaí in áiteanna eile a deir go seachadann siad chuig an áit seo: {region} (seiceáilte {date})",
     "shop": "Siopa",
     "sells": "Díolann",
     "packs": "Pacáistí a chonacthas",
@@ -87,12 +87,12 @@
       "glazes": "glónraí réamhdhéanta",
       "kilns": "áitheanna"
     },
-    "none": "Níor aimsíomar aon siopa a dhíolann amhábhair ghlónra sa tír seo: {region}.",
-    "unknown": "Níor chuardaíomar siopaí fós sa tír seo: {region}.",
+    "none": "{region}: níor aimsíomar aon siopa a dhíolann amhábhair ghlónra.",
+    "unknown": "{region}: níor chuardaíomar siopaí fós.",
     "choosePrompt": "Roghnaigh do thír chun siopaí ansin a fheiceáil."
   },
   "silica": {
-    "limitIn": "Teorainn sa tír:",
+    "limitIn": "Teorainn:",
     "label": "Teorainn na silice: {region}",
     "caption": "An teorainnluach nochta ceirde do shilice chriostalta inanálaithe: {region}, meán thar 8 n-uaire an chloig (seiceáilte {date})",
     "captionControl": "An tslat tomhais do shilice chriostalta inanálaithe in aer limistéir oibre: {region} (seiceáilte {date})",
@@ -131,14 +131,14 @@
     "sameAsEu": "Is ionann é agus teorainnluach ceangailteach an Aontais Eorpaigh.",
     "recommendedBy": "Molann {abbr} ({by}) an luach seo sa doiciméad <link>{title}</link>. Ní dlí é.",
     "respirators": "Díoltar maisc deannaigh anseo de réir aicme: {everyday} do dheannach glónra, nó {higher} le haghaidh níos mó cosanta (<link>na haicmí oifigiúla</link>).",
-    "unknown": "Níorbh fhéidir linn an teorainn náisiúnta a dheimhniú sa tír seo: {region}. Tá feidhm ag teorainnluach ceangailteach an Aontais Eorpaigh, {value} mg/m³, i ngach ballstát.",
-    "noData": "Níor dheimhníomar an teorainn fós sa tír seo: {region}.",
+    "unknown": "{region}: níorbh fhéidir linn an teorainn náisiúnta a dheimhniú. Tá feidhm ag teorainnluach ceangailteach an Aontais Eorpaigh, {value} mg/m³, i ngach ballstát.",
+    "noData": "{region}: níor dheimhníomar an teorainn fós.",
     "agency": "An comhlacht náisiúnta atá freagrach as sábháilteacht ag an obair: <link>{name}</link>.",
     "agencySilica": "A <link>leathanach faoi shilice</link>.",
     "choosePrompt": "Roghnaigh do thír chun a teorainn a fheiceáil."
   },
   "food": {
-    "rulesIn": "Rialacha sa tír:",
+    "rulesIn": "Rialacha:",
     "label": "Teorainneacha d’earraí ceirmeacha: {region}",
     "caption": "An méid a fhéadfaidh píosa bácáilte a scaoileadh sa tástáil dhlíthiúil: {region} (seiceáilte {date})",
     "article": "Cineál píosa",
@@ -208,13 +208,13 @@
     "inForce": "I bhfeidhm ó {date}.",
     "atMost": "Éiríonn le píosa sa tástáil mura scaoileann sé níos mó ná an teorainn: deir an dlí “ar a mhéad”.",
     "ppm": "Ciallaíonn ppm anseo milleagraim in aghaidh an lítir den tuaslagán tástála (mg/L).",
-    "unknown": "Níor dheimhníomar na rialacha fós sa tír seo: {region}.",
+    "unknown": "{region}: níor dheimhníomar na rialacha fós.",
     "none": "{region}: níl aon dlí ann a leagann síos teorainneacha don luaidhe agus don chaidmiam a fhéadfaidh píosa bácáilte a scaoileadh (seiceáilte {date}).",
     "noneSource": "Foinse: <link>{law}</link>.",
     "choosePrompt": "Roghnaigh do thír chun a rialacha a fheiceáil."
   },
   "equivalents": {
-    "buyingIn": "Ag ceannach sa tír:",
+    "buyingIn": "Áit cheannaigh:",
     "label": "{library, select, US {Coibhéisí a dhíoltar i Stáit Aontaithe Mheiriceá} UK {Coibhéisí a dhíoltar sa Ríocht Aontaithe} EU {Coibhéisí a dhíoltar san Aontas Eorpach} other {Coibhéisí a dhíoltar san Astráil agus sa Nua-Shéalainn}}",
     "caption": "{library, select, US {Ábhair nach ndíoltar i Stáit Aontaithe Mheiriceá, gach ceann acu leis an ábhar is gaire dó a dhíoltar ansin} UK {Ábhair nach ndíoltar sa Ríocht Aontaithe, gach ceann acu leis an ábhar is gaire dó a dhíoltar ansin} EU {Ábhair nach ndíoltar san Aontas Eorpach, gach ceann acu leis an ábhar is gaire dó a dhíoltar ansin} other {Ábhair nach ndíoltar san Astráil agus sa Nua-Shéalainn, gach ceann acu leis an ábhar is gaire dó a dhíoltar ansin}}",
     "material": "In oideas",

@@ -367,7 +367,7 @@
     "intro": "As each material's record gives them; the standard library's come from the suppliers' safety data sheets.",
     "line": "<b>{names}:</b> {hazards}",
     "unknown": "{count, plural, one {No hazards are given for {list}: see the safety data sheet that comes with it.} other {No hazards are given for {list}: see the safety data sheets that come with them.}}",
-    "safety": "Dry glaze materials make dust, and you must keep it out of your lungs, even dust from materials not classified as hazardous. See <mixing>Safe mixing and ventilation</mixing>, and <home>Don't poison your family</home> if children or pets are about. Where a material's safety data sheet says more, follow it."
+    "safety": "Dry glaze materials make dust, and you must keep it out of your lungs, even dust from materials not classified as hazardous. See <mixing>Safe mixing and ventilation</mixing>. If children or pets are about, see <home>Don't poison your family</home> too. Where a material's safety data sheet says more, follow it."
   },
   "compare": {
     "heading": "Compare two recipes",

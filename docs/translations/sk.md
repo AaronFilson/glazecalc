@@ -591,12 +591,13 @@ respiratory protection.
 ### 2.9 Where the potter works
 
 Terms of the region parts of the guides (shops, the silica limit, food-contact rules, materials sold nearby). Names of
-shops, laws and agencies stay as they are written there. Country names follow a colon in the nominative, so labels
-before a list of countries end in „v krajinách:“.
+shops, laws and agencies stay as they are written there. Place names follow a colon in the nominative, so labels
+before a list of places end in a colon („Obchody:“). Hong Kong and other places in the list are not countries, so never call {region} a country („v krajine {region}“, „v tejto krajine“):
+„Obchody: {region}“, „{region}: obchody sme zatiaľ nehľadali.“
 
 | English                                                               | Slovak                                                                         | Where                                         |
 | --------------------------------------------------------------------- | ------------------------------------------------------------------------------ | --------------------------------------------- |
-| Shops in (the label before a list of countries)                       | Obchody v krajinách:                                                           | guides: shops.shopsIn                         |
+| Shops in (the label before a list of countries)                       | Obchody:                                                                       | guides: shops.shopsIn                         |
 | raw glaze materials (what a shop sells)                               | suroviny na glazúry                                                            | guides: shops.what.materials                  |
 | ready-made glazes                                                     | hotové glazúry                                                                 | guides: shops.what.glazes                     |
 | Packs seen                                                            | Zistené balenia                                                                | guides: shops.packs                           |
@@ -615,7 +616,7 @@ before a list of countries end in „v krajinách:“.
 | Small hollowware, under 1.1 L, other than cups and mugs (US)          | Malé duté predmety pod 1,1 L, okrem šálok a hrnčekov                           | guides: food.category.smallHollow             |
 | Large hollowware, 1.1 L or more, other than pitchers (US)             | Veľké duté predmety od 1,1 L, okrem džbánov                                    | guides: food.category.largeHollow             |
 | average of 6 pieces / any one of 6                                    | priemer zo 6 kusov / každý zo 6 kusov                                          | guides: food.judged.average, food.judged.each |
-| Buying in (the label before a list of countries)                      | Nákup v krajinách:                                                             | guides: equivalents.buyingIn                  |
+| Buying in (the label before a list of countries)                      | Kde nakupujete:                                                                | guides: equivalents.buyingIn                  |
 | differs by {grams} g per 100 g                                        | líši sa o {grams} g na 100 g                                                   | guides: equivalents.apart                     |
 | Directive 84/500/EEC (its official name)                              | smernica Rady 84/500/EHS (zmenená smernicou Komisie 2005/31/ES)                | regions: the directive                        |
 | Latvia's law gives this limit for the inhalable fraction of the dust. | Lotyšské právo uvádza túto limitnú hodnotu pre inhalovateľnú frakciu prachu.   | regions: Latvia                               |

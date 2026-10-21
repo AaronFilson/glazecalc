@@ -385,7 +385,7 @@ grammar (MS 5.4.1: find out what replaces the placeholder):
 - **{region}** is the country's name in Arabic from the browser, with or without its own article ("مصر", "ألمانيا",
   "الولايات المتحدة", "المملكة المتحدة"). Use separate prepositions ("في {region}", "من {region}", "إلى {region}"); never
   attach بـ, لـ or كـ ("ل{region}" would give "لالولايات" for "للولايات"); never a nisba adjective built on it
-  ("{region}ية"). Where an adjective must agree, add a noun: "قوانين البلد في {region}".
+  ("{region}ية"). Where an adjective must agree, add a noun: "القواعد المعمول بها في {region}" (never البلد: Hong Kong is not a country).
 - **{name}** is a recipe's or material's name, often Latin: put the noun before it and agree with the noun: "الخلطة
   «{name}»" (feminine), "المادة {name}", "تم حفظ الخلطة «{name}»". Never "ال{name}".
 - **{count}** and `#`: as Plural forms says. **{library}** is US, UK, EU or AU: "مكتبة {library}".
