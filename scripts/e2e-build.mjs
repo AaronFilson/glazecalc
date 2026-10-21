@@ -30,7 +30,8 @@ export const SOURCES = [
   'node_modules/.package-lock.json',
   'scripts/prerender.mjs',
   'scripts/advice-i18n.mjs',
-  'data/advice.ndjson'
+  'data/advice.ndjson',
+  'data/materials.ndjson'
 ];
 
 const paths = (root) => ({

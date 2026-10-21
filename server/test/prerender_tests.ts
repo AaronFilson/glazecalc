@@ -66,6 +66,33 @@ describe('prerender checks', () => {
     expect(pageProblems(links([]), '/guides')).to.eql([]);
   });
 
+  it('fails the list of materials without a link to every material page, so a search engine can find them', () => {
+    const links = (list: readonly string[]) => page(list.map((p) => `<a href="${p}">x</a>`).join(''));
+    expect(pageProblems(links(pages.MATERIAL_PAGES), '/materials')).to.eql([]);
+    // In another language the links carry its prefix.
+    expect(pageProblems(links(pages.MATERIAL_PAGES.map((p) => '/de' + p)), '/materials')).to.eql([]);
+    const [first, ...others] = pages.MATERIAL_PAGES;
+    expect(pageProblems(links(others), '/materials')).to.eql([
+      `it does not link ${1} material page(s), such as ${first}`
+    ]);
+    // A page of one material is not the list.
+    expect(pageProblems(links([]), pages.MATERIAL_PAGES[0]!)).to.eql([]);
+  });
+
+  it('fails a cone chart without its figures', () => {
+    const chart = page('<h2>Orton cones</h2><td>1305</td><h2>SK cones</h2> SK 7');
+    expect(pageProblems(chart, '/cones')).to.eql([]);
+    expect(pageProblems(page('<h2>Orton cones</h2><td>1305</td>'), '/cones')).to.eql([
+      'it lacks the Orton or SK chart'
+    ]);
+    expect(pageProblems(page('<h2>Orton cones</h2> SK'), '/cones')).to.eql(['it lacks the Orton or SK chart']);
+  });
+
+  it('renders the reference pages in English only, as the languages offered would show the same English', () => {
+    expect(pages.prerenderLanguages('/cones', ['en', 'de'])).to.eql(['en']);
+    expect(pages.prerenderLanguages('/guides/firing', ['en', 'de'])).to.eql(['en', 'de']);
+  });
+
   it('accepts a page with its text, the policy <meta> and the placeholder', () => {
     const html = page(`<h1>Firing</h1><p>${WORDS}</p>`, '<script id="ng-state" type="application/json">{}</script>');
     expect(problemsWith(html, START)).to.eql([]);

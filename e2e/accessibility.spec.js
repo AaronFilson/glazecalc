@@ -49,6 +49,11 @@ const PUBLIC_PAGES = [
   '/advice',
   '/about',
   ...GUIDES,
+  // The reference pages: the cone chart, the list of materials, and two materials (one with lead).
+  '/cones',
+  '/materials',
+  '/materials/ferro-frit-3134',
+  '/materials/litharge',
   '/privacy',
   '/terms',
   '/assistants',

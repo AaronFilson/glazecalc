@@ -40,6 +40,17 @@
     }
   },
   "more": "More guides",
+  "related": {
+    "heading": "Reference pages",
+    "cones": {
+      "title": "Cone chart",
+      "text": "Orton and SK cones with their temperatures in °C and °F, and where each figure comes from."
+    },
+    "materials": {
+      "title": "Standard materials",
+      "text": "Each material in the library with its oxide analysis, unity formula contribution and hazards. In English."
+    }
+  },
   "contents": "On this page",
   "poison": {
     "numbersFor": "Numbers for",

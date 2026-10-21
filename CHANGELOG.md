@@ -22,6 +22,23 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   on the same engine as Match with what I have (`solveTarget` in `lib/recipe/solve.js`). The MCP
   server has it as `solve_target`, a public tool: the materials by name, or `onHand` for a caller
   that may read the shelf. English only.
+- **A public page for each standard material, a list of them, and a cone chart** (docs/seo-plan.md,
+  item 17), the pages potters search for. `/materials/<name>` (for example
+  `/materials/ferro-frit-3134`) says what the library says of one of its 170 standard materials and
+  nothing more: its kind, formula, other names, maker, where it is sold, similar materials (linked where
+  they have a page), notes, source and status; its oxide analysis and the unity contribution Glazecalc works
+  out from it (the same code the recipe page uses), with its equivalent weight, fired weight and loss on
+  ignition; and its hazards as the record gives them, with links to the two safety guides, and a link to the
+  recipe calculator. `/materials` lists them by kind. `/cones` shows Orton's cones 022 to 15 (the older
+  chart Glazecalc checks by, with its heating rate and source), Orton's own current figures by cone kind
+  and heating rate, and the SK cones to 20 with their nominal JIS temperatures, in °C and °F, the reader's
+  cones and scale first; the firing guide, the guides list and the safety guides link to them. The addresses are
+  apart from the signed-in `/material` page of your own materials. Each is prerendered, in the sitemap, with
+  its own title, description, canonical address and structured data (a web page with its trail), is
+  readable with JavaScript off, and has no sideways scroll at 320 px. English only for now: they are in
+  `ENGLISH_ONLY_PAGES`, so other languages' addresses show the English with a notice and are not indexed, only
+  the English is in the sitemap, and the build renders them in English alone. Their words are in
+  `client/public/i18n/reference/en.json`, for a later translation wave.
 - **Higher cones, for porcelain** (docs/adr/0021-recipe-firing.md, amended
   2026-10-20). Orton cones have a temperature to cone 15 (1431 °C, Orton's older chart for large
   cones at 150 °C an hour, the only Orton figure above 14 we found); cones 16 to 42 are taken

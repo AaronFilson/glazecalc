@@ -1,5 +1,5 @@
 const { test, expect } = require('@playwright/test');
-const { PUBLIC_PAGES } = require('../../lib/pages');
+const { MATERIAL_PAGES, PUBLIC_PAGES } = require('../../lib/pages');
 const { LIVE_LANGUAGES, languagePrefix } = require('../../lib/regions/languages');
 
 // The deployed site, after each deploy (.github/workflows/live-checks.yml;
@@ -13,8 +13,11 @@ const { LIVE_LANGUAGES, languagePrefix } = require('../../lib/regions/languages'
 const SAMPLE = ['de', 'el', 'ja', 'ko', 'zh-Hans', 'zh-Hant', 'th', 'vi'].filter((code) =>
   LIVE_LANGUAGES.includes(code)
 );
+// The page of each standard material is the same page with other data, so a browser loads a sample of them:
+// the first, the middle one and the last. scripts/live-check.mjs asks for every one.
+const SAMPLED = [MATERIAL_PAGES[0], MATERIAL_PAGES[Math.floor(MATERIAL_PAGES.length / 2)], MATERIAL_PAGES.at(-1)];
 const PAGES = [
-  ...PUBLIC_PAGES,
+  ...PUBLIC_PAGES.filter((page) => !MATERIAL_PAGES.includes(page) || SAMPLED.includes(page)),
   ...SAMPLE.map((code) => languagePrefix(code) + '/'),
   ...SAMPLE.map((code) => languagePrefix(code) + '/guides/safe-mixing'),
   '/signin'

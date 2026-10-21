@@ -33,7 +33,10 @@
     "notFound": "Not found - Glazecalc",
     "shared": "Shared recipe - Glazecalc",
     "assistants": "Use Glazecalc from your AI assistant - Glazecalc",
-    "confirm": "Approve a change - Glazecalc"
+    "confirm": "Approve a change - Glazecalc",
+    "cones": "Cone chart: Orton and SK cone temperatures - Glazecalc",
+    "materials": "Standard glaze materials: analysis and hazards - Glazecalc",
+    "materialInfo": "{name}: oxide analysis and hazards - Glazecalc"
   },
   "nav": {
     "skip": "Skip to content",
@@ -128,6 +131,10 @@
     "terms": "The terms for using Glazecalc: free for your own glazes and work, fair to the shared server, and provided as is.",
     "assistants": "Use Glazecalc from Claude, Copilot, Cursor or Gemini through MCP: glaze chemistry, limit checks, substitutes and the guides, and your own recipes.",
     "signup": "Create a free Glazecalc account to keep your glaze recipes, materials, notes and firing logs. No ads, and your data is never sold.",
+    "cones": "Orton and SK pyrometric cones from 022 up, with their temperatures in °C and °F, the heating rate each chart is for and where the figures come from.",
+    "materials": "The materials in Glazecalc's standard library, from feldspars and clays to frits and boron sources, each with its oxide analysis, unity formula and hazards.",
+    "materialInfo": "{name}: oxide analysis, unity formula, loss on ignition and hazards in Glazecalc's standard library.",
+    "materialInfoLong": "{name} in Glazecalc's standard library of glaze materials: its oxide analysis, unity formula contribution, loss on ignition and hazards.",
     "imageAlt": "The Glazecalc home page: free glaze chemistry for potters, beside a photo of fired cone packs."
   },
   "notices": {
