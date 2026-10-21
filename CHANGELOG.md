@@ -1179,6 +1179,10 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Fixed
 
+- **The tests' fake sign-in provider (`OAUTH_TEST_BASE`) is taken only with `NODE_ENV=test`.** It
+  was taken whenever `NODE_ENV` was not `production`, so a stray setting on a server started another
+  way would have sent sign-in, and the ID tokens' keys, to another address. The server now will not
+  start with it set and `NODE_ENV=production`, and logs a warning when it is on.
 - **An access token that does not work is answered 401, even past its address's limit.** Past 30 in
   15 minutes from one address the answer was `429`, which tells an app to wait, so an assistant
   behind a shared address (Claude's, ChatGPT's) could not refresh or sign in again. It is now `401`
