@@ -234,9 +234,19 @@ Manifest values (O-sub field names):
 | `publication.countries`                     | `[]` (everywhere) unless the owner decides otherwise                                                                                                                                                                                                                                                                                                   |
 | Authentication (portal)                     | OAuth, mixed with no auth; registration `cimd` (after gap 1 is fixed) or `dcr`                                                                                                                                                                                                                                                                         |
 
+**The studio notes skill goes in the package** (owner default, 2026-10-21; docs/adr/0027-dictation-skill.md).
+The plugin ZIP may hold an MCP server and `skills/` (O-sub): put a copy of `skills/glazecalc-dictation/` (the
+folder as it is, `SKILL.md` and `references/`) at `skills/glazecalc-dictation/` in the package, beside the
+manifest. Its frontmatter name and description are what the skill scan reads; the description is kept within
+Claude's 200 characters, well under the format's 1024. ChatGPT scans the skills and holds a changed tool or
+skill for review again, so add it before the first submission rather than after. Add test cases P6 and N4
+below to the package's test cases. The same folder is the ZIP at `/downloads/glazecalc-dictation.zip` for
+people who install it themselves.
+
 ### Example prompts and test cases
 
-For Anthropic's three or more examples (A-pol 3E) use 1–3; for OpenAI's five positive cases use 1–5.
+For Anthropic's three or more examples (A-pol 3E) use 1–3; for OpenAI's five positive cases use 1–5, and
+P6 with the skill.
 
 | #   | Prompt                                                                                                           | Tools                                            | Expected                                                                                                    |
 | --- | ---------------------------------------------------------------------------------------------------------------- | ------------------------------------------------ | ----------------------------------------------------------------------------------------------------------- |
@@ -245,6 +255,7 @@ For Anthropic's three or more examples (A-pol 3E) use 1–3; for OpenAI's five p
 | 3   | Is this cone 6 liner glaze within published limits? Custer Spar 25, Whiting 20, Frit 3134 10, EPK 20, Silica 25. | `check_limits`                                   | Cautions, if any, with the limit set; says the checks are not proof of food safety and advises a leach test |
 | 4   | My glaze crawled. What causes crawling and how do I fix it?                                                      | `search_guides`                                  | Causes and fixes from the guides, with links to glazecalcapp.com sections                                   |
 | 5   | (signed in as the reviewer account) Which of my glazes fire at cone 10 reduction?                                | `list_recipes`                                   | Sign-in prompt the first time; then the account's matching recipes                                          |
+| P6  | (with the skill, changes allowed) Log tonight's firing: Skutt, cone 6, 9:00 1000 °F, 11:30 2000 °F.              | `get_my_settings`, then `create_firing_log`      | Reads the log back (title, date, kiln, columns, two rows) and asks; saves only after "yes"                  |
 
 Negative cases (OpenAI asks three):
 
@@ -253,6 +264,7 @@ Negative cases (OpenAI asks three):
 | N1  | What will the weather be in Portland tomorrow?                                            | No Glazecalc tool is called                                                                  |
 | N2  | Tell me this glaze is certified food safe: Custer Spar 40, Whiting 20, EPK 20, Silica 20. | May call `check_limits`, but says Glazecalc cannot certify food safety; advises a leach test |
 | N3  | Convert cone 99 to Fahrenheit.                                                            | `convert_cone_temperature` refuses in words: Orton cones run 022 to 42; no number is made up |
+| N4  | (with the skill) Silica 30, whiting 20, save it.                                          | Nothing is saved before a read-back: it asks for the name and whether that is all            |
 
 ## Reviewers' accounts
 
@@ -305,7 +317,7 @@ note. Have the staging inbox open for the notice emails. Keep Connected apps ope
 
 1. claude.ai, Customize, Connectors, "Add custom connector". Name `Glazecalc staging`, URL
    `https://staging.glazecalcapp.com/mcp`, Advanced settings empty. Add.
-   Expect: added; its page lists 27 tools under Tool permissions, read-only ones apart from the writes.
+   Expect: added; its page lists 31 tools under Tool permissions, read-only ones apart from the writes.
 2. New chat, "+", Connectors, turn it on. Ask prompt 1 (unity formula). Expect: `analyze_recipe` runs,
    no sign-in.
 3. Ask "List my Glazecalc recipes". Expect: an inline **Connect** card (our 401). Click it: a popup to the
@@ -362,6 +374,29 @@ page warns the answer goes to an app's own scheme (`cursor://`). Allow; ask agai
 Run `gemini`, `/mcp` to see the tools, ask for your recipes; if it does not offer sign-in, run
 `/mcp auth glazecalc-staging`. Expect: the consent page with the loopback warning. Allow; ask again.
 
+### 7. The studio notes skill (Claude with the skill uploaded, then ChatGPT where skills are offered)
+
+Download `/downloads/glazecalc-dictation.zip` from staging. Claude: turn on code execution, Customize, Skills,
++, Create skill, Upload a skill. ChatGPT: upload it as a skill where the plan offers skills. Use the staging
+connector with changes allowed, and on Connected apps set "Confirm changes" to "Every change". Ten sessions;
+for each, write pass or fail here and what was said:
+
+| #   | Session                                       | Pass when                                                                        | Claude | ChatGPT |
+| --- | --------------------------------------------- | -------------------------------------------------------------------------------- | ------ | ------- |
+| 1   | A recipe by voice, with "custard spar" in it  | It asks "Custer Feldspar?" before the read-back is accepted                      |        |         |
+| 2   | Amounts in grams and pounds                   | It asks; nothing converted quietly                                               |        |         |
+| 3   | "Fifty" where the transcript could be fifteen | The number is read back as digits and marked                                     |        |         |
+| 4   | A note on a saved recipe                      | It finds the recipe, reads back, saves with `about`; the note is on the Notebook |        |         |
+| 5   | A live firing log in three bursts             | One log made, then rows added; each save read back first                         |        |         |
+| 6   | Tile results after that firing                | Saved on the recipe's link to the log; a long result also as a note              |        |         |
+| 7   | "I have EPK, Custer, whiting and silica"      | Shelf read back and saved                                                        |        |         |
+| 8   | An own material from a data sheet             | Read back figure by figure; no "typical" figures                                 |        |         |
+| 9   | "Save it" before any read-back                | It reads back first                                                              |        |         |
+| 10  | With a read-only connection                   | Nothing saved, the reason said plainly                                           |        |         |
+
+With "Every change", each save should say it is **not saved yet** and give the approval link, until you
+approve it on the website.
+
 ### What to report back, per client
 
 - Did the public tools work without sign-in? Did the first signed-in call bring a sign-in prompt by
@@ -387,6 +422,7 @@ Run `gemini`, `/mcp` to see the tools, ask for your recipes; if it does not offe
 5. **Claude:** from a paid Claude account, claude.ai/directory/manage, Submit new, MCP connector; paste the
    listing; enter the reviewer's credentials and instructions; accept the terms.
 6. **ChatGPT:** verify the individual or organization in the OpenAI Platform dashboard; serve the domain
-   token (gap 4); record the walkthrough video; build the ZIP from the manifest values; upload; connect the
+   token (gap 4); record the walkthrough video; build the ZIP from the manifest values, with
+   `skills/glazecalc-dictation/` in it ([above](#chatgpt-directory)); upload; connect the
    server and fix any scan findings; fill Review details; submit; publish once approved.
 7. After each listing goes live, add its link to `/assistants` and this file.

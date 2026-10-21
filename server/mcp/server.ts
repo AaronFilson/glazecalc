@@ -11,6 +11,7 @@
 // a call 401 before the SDK: lazy authentication, docs/adr/0024).
 import { McpServer, type McpRequestContext, type RegisteredTool } from '@modelcontextprotocol/server';
 import { type Caller, fail } from './common.ts';
+import { registerDictation } from './dictation.ts';
 import { registerPrompts } from './prompts.ts';
 import { requestStateCodec } from './request_state.ts';
 import { ACCOUNT_TOOLS, registerAccountTools } from './tools/account.ts';
@@ -41,13 +42,15 @@ const INSTRUCTIONS =
   'and the cone charts (glazecalc://cones). With a personal access token, or once the person has connected ' +
   'this app to their account, the tools whose names say "my" or list_recipes read the person\'s own saved ' +
   'records; without either, calling one of them asks the person to sign in to Glazecalc. create_recipe, update_recipe, add_notebook_entry, add_my_material, update_my_material, add_to_shelf, ' +
-  'remove_from_shelf, undo_shelf_change and move_to_trash change them, and only when the person allowed changes; otherwise they ' +
+  'remove_from_shelf, undo_shelf_change, move_to_trash, create_firing_log, add_firing_rows and link_firing change them, and only when the person allowed changes; otherwise they ' +
   'are refused and change nothing. Change only what the person asked for, and tell them what you changed: each ' +
   'change keeps the record as it was, so they can undo it on the website, and move_to_trash puts a record in ' +
   'the Trash for 30 days, never deleting it. The shelf keeps the list it had before its last change: ' +
   'undo_shelf_change puts it back, one step only. When the person has chosen to confirm changes, a change waits ' +
   'for their approval and nothing is changed until they give it: pass on the link Glazecalc gives, and never ' +
-  'say a change was made before it was.';
+  'say a change was made before it was. When the person dictates studio notes (a recipe, a firing log, test tile ' +
+  'results), the prompt dictation says how: read every record back and save only after a clear yes, and never fill ' +
+  'in an amount, temperature or result they did not give.';
 
 /** The caller authInfo carries, as server/mcp/index.ts sets it. */
 export const callerOf = (ctx: McpRequestContext): Caller => {
@@ -133,6 +136,7 @@ export const makeServer = (ctx: McpRequestContext): McpServer => {
   registerBlendTools(server);
   registerGuides(server);
   registerPrompts(server);
+  registerDictation(server);
   if (caller.userId) {
     registerAccountTools(server, caller);
     registerWriteTools(server, caller);

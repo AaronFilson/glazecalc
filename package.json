@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "ng": "ng",
-    "build": "node scripts/advice-i18n.mjs && ng build && node scripts/prerender.mjs",
+    "build": "node scripts/advice-i18n.mjs && ng build && node scripts/prerender.mjs && node scripts/build-skills.mjs",
     "watch": "node scripts/advice-i18n.mjs && ng build --watch --configuration development",
     "dev": "node scripts/run.mjs dev",
     "db": "node --env-file-if-exists=.env scripts/db.mjs",

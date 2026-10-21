@@ -248,3 +248,12 @@ yes in the client's own form; no token can approve one, the state handed to the 
 and bound to the one change, and a change runs once, after everything is checked again. Words
 planted in a note can still lead an assistant to ask for a change, but no longer to make one
 unseen, when the setting is on. A form's yes is weaker than the website's (ADR 25, Consequences).
+
+## Amended: dictated studio notes
+
+2026-10-21, [ADR 27](0027-dictation-skill.md): three more write tools, for the studio notes skill,
+through the same gate as the nine above (`server/mcp/tools/dictation_write.ts`):
+`create_firing_log`, `add_firing_rows` and `link_firing` (a recipe's link to a firing log and its
+result, by the recipe routes' own code); `add_notebook_entry` takes `about`, a record of the
+account's the note is about. A sixth prompt, `dictation`, and a resource,
+`glazecalc://skills/glazecalc-dictation`, carry the skill for clients that take no skills.

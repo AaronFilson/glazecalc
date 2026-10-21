@@ -150,10 +150,13 @@ const ACCOUNT_TOOLS = [
   'match_with_what_i_have'
 ];
 const WRITE_TOOLS = [
+  'add_firing_rows',
   'add_my_material',
   'add_notebook_entry',
   'add_to_shelf',
+  'create_firing_log',
   'create_recipe',
+  'link_firing',
   'move_to_trash',
   'remove_from_shelf',
   'undo_shelf_change',
@@ -1016,7 +1019,8 @@ describe('MCP: the guides, resources and prompts', () => {
       'glazecalc://guides/en/home-safety',
       'glazecalc://guides/en/learn-with-john-britt',
       'glazecalc://guides/en/making-a-glaze',
-      'glazecalc://guides/en/safe-mixing'
+      'glazecalc://guides/en/safe-mixing',
+      'glazecalc://skills/glazecalc-dictation'
     ]);
     for (const resource of resources) {
       expect(resource.name, resource.uri).to.be.a('string').and.not.equal('');
@@ -1081,17 +1085,19 @@ describe('MCP: the guides, resources and prompts', () => {
     }
   });
 
-  it('offers five prompts, each naming the tools to use', async () => {
+  it('offers six prompts, each naming the tools to use', async () => {
     const { prompts } = await result('prompts/list');
     expect(prompts.map((p: Json) => p.name).sort()).to.eql([
       'diagnose_glaze_fault',
+      'dictation',
       'explain_recipe',
       'glaze_course_lesson',
       'make_lead_free',
       'replace_discontinued'
     ]);
-    // A lesson needs a unit; the recipe is the learner's own, if they have one.
-    for (const prompt of prompts.filter((p: Json) => p.name !== 'glaze_course_lesson')) {
+    // A lesson needs a unit; the recipe is the learner's own, if they have one. Dictation takes
+    // the person's notes instead (server/test/dictation_tests.ts).
+    for (const prompt of prompts.filter((p: Json) => !['glaze_course_lesson', 'dictation'].includes(p.name))) {
       expect(prompt.description, prompt.name).to.have.length.above(40);
       expect(
         prompt.arguments.find((a: Json) => a.name === 'recipe'),
