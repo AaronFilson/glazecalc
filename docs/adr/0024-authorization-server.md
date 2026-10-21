@@ -245,6 +245,125 @@ Glazecalc to use this tool", resource_metadata=..., scope="data:read"`, or
 - The server's instructions say that calling one of them without a connection asks the person to
   sign in.
 
+## Amended: ChatGPT's document, private_key_jwt, shared addresses
+
+2026-10-21, round 8 (plan: `scratch/round8/dir-gaps/plan.md`; owner's decisions in
+`scratch/round8/plan.md`). Sources, read 2026-10-21: the MCP authorization draft and its client
+registration and security pages (modelcontextprotocol.io/specification/draft/basic/authorization),
+draft-ietf-oauth-client-id-metadata-document-02, draft-ietf-oauth-rfc7523bis-11, OpenAI's Apps SDK
+auth page (developers.openai.com/apps-sdk/build/auth), ChatGPT's own document and keys
+(chatgpt.com/oauth/client.json, /oauth/jwks.json), and Anthropic's connector authentication page.
+
+**ChatGPT's document.** ChatGPT names itself by `https://chatgpt.com/oauth/client.json`, which asks
+for `private_key_jwt` (RS256), lists `["none", "private_key_jwt"]` in
+`token_endpoint_auth_methods_supported` and has a `jwks_uri` on chatgpt.com. Every app had to be
+public, so its consent step would have said "only public clients". Two answers are built, both
+behind one setting, **`OAUTH_CIMD_AUTH`, off by default**; off, every setting and check is as
+before (`server/oauth/provider.ts` `modeSettings`, `checkClientMetadata`):
+
+- **`public` (step A).** A document named by its address whose list includes `none` is taken as a
+  public app: `none`, with its `jwks_uri`, `jwks` and signing alg dropped, so nothing is fetched
+  from them. Our metadata offers only `none`, and OpenAI says ChatGPT picks from what both sides
+  list, so `none` is what it uses. Refresh tokens stay bearer and rotating, as Claude's.
+- **`private_key_jwt` (step B).** As public, and a document that asks for `private_key_jwt` is
+  taken as it says: every code exchange, refresh and revocation must carry a client assertion
+  signed with the app's key, so a stolen code or refresh token is useless without OpenAI's key.
+  The metadata then offers `["none", "private_key_jwt"]` (none first: Claude picks a document only
+  with none listed) and the algs RS256, PS256 and ES256. Safeguards:
+  - the keys only from an https address on the client_id's own site (same origin, port 443, a host
+    name, not the document itself), or written in the document; fetched through the same guard as
+    documents (public addresses only, pinned, no redirects, 5 s, 5 kB, JSON), with a budget of
+    their own (`cimd.ts` `JWKS_FETCH_LIMITS`; per asking address, per site and for everyone, and
+    kept apart for apps with working connections: "Review fixes" below), kept at
+    most 15 minutes whatever their Cache-Control says (oidc-provider would take the longest it is
+    given, so a year-long one would pin a replaced key for a year), and taken only as 1 to 5
+    public signing keys, RSA of 2048 bits or more or EC on P-256 (`checkJwks`);
+  - the assertion (`server/oauth/client_assertions.ts`): asymmetric algs only, never `HS*` or
+    `none`; `typ` absent, `JWT` or `client-authentication+jwt`; `iat` required and at most 5
+    minutes old; `exp` at most 5 minutes ahead; `aud` one value, the issuer, or for now the token
+    endpoint's address (logged, until staging shows what ChatGPT sends; RFC 7523bis says issuer
+    only); used once, by an insert on a unique id (iss and jti), so two requests at the same moment
+    cannot both pass (oidc-provider's own check finds, then saves);
+  - one method per app, from its document: a signing app's code or refresh token without an
+    assertion is `invalid_client`, the grant untouched.
+  - Never for an app that registered itself (DCR): its keys would be only as trustworthy as an
+    anonymous registration, and its address one more a stranger chooses.
+
+  Migration: oidc-provider has one method per client_id, so connections made under `public` and
+  then refreshed under `private_key_jwt` depend on ChatGPT switching to signing. OpenAI does not
+  say whether it does; test the switch on staging, or turn `private_key_jwt` on before ChatGPT has
+  production users. Turning it off later changes the method back the same way.
+
+**Shared addresses.** Claude's servers call from `160.79.104.0/21` and ChatGPT's from OpenAI's own
+ranges, so per-address limits made for one person's computer would stop everyone using either app
+at once. The owner chose no special treatment for those ranges: limits are keyed on what a request
+has proven (an account, a token, a connection), never on a client_id anyone can type, with
+per-address limits kept for what is unproven and ceilings for everyone together. Not behind a
+setting:
+
+- The token endpoint counts per address only what it refuses (300 in 15 minutes; a guesser's
+  requests look like that; an IPv6 address with its /48), each account's refresh tokens (100 in 15
+  minutes; a 429 `too_many_requests` before the token is used, so it still works later), and
+  everyone's refusals together (20,000 in 15 minutes). Past either count on refusals, a request
+  whose code or refresh token the server holds still goes on: see "Review fixes" below.
+- Access tokens that do not work are still counted per address, but once over the answer is
+  `401` with the same `WWW-Authenticate` challenge (`/mcp`) or RFC 6750's (`/api`), never `429`:
+  an app refreshes or signs in again on a 401 and waits on a 429, so the 429 kept everyone behind
+  Claude's or ChatGPT's addresses from reconnecting.
+- Subscription streams: 3 for each account, or each address without a token (were 3 for each
+  address, with a token or not).
+- Without a token: still 60 requests a minute and 2,000 a day per address (an IPv6 one with its
+  /48), plus 3,000 a minute from everyone together; fits still 10 a minute per caller, plus 200 a
+  minute for everyone without a token together. These ceilings apply only to calls without a token,
+  so filling them stops the public tools, never a connected person's.
+- Registering (DCR) stays 10 an hour per address (an IPv6 one with its /48) and 500 a day in all;
+  CIMD is the way for the chat apps.
+
+**The Origin check** on `/mcp` is kept as it was (the site's own Origin, written exactly, or none);
+tests now cover `null`, a slash at the end, other letter cases, a lookalike host, the default port
+written out, two Origin headers, and that a refused request counts against no limit. Refusals are
+logged at debug level with the Origin, for the staging test. No CORS allow-list.
+
+### Review fixes (round 8 security review)
+
+From `scratch/round8/dir-gaps/review.md`, 2026-10-21:
+
+- **One cheap network could stop every app's refreshes.** The token endpoint's ceiling counted
+  every request from everyone, and the per-address count keyed an IPv6 address by its /56; a /48
+  (free from a tunnel broker) holds 256 of those, so one /48 could fill the ceiling in minutes and
+  every refresh, Claude's and ChatGPT's, got 429. Now the ceiling counts only refusals, and both
+  counts are of refusals with an IPv6 address keyed by its /48 (`rate_limit.ts` `NETWORK_BITS`).
+  Once either is over, the request's form is read and the code or refresh token looked up by its id
+  (one read; `adapter.ts` `grantSourceOnRecord`): one the server holds, used or not, goes on as
+  under the count (a used one reaches oidc-provider's reuse check, which ends its connection); the
+  rest get 429 before their app is looked up or its keys fetched. Filling the counts, from however
+  many addresses, turns away only requests that would have failed. The same /48 key is used for
+  MCP without a token (its ceilings already apply only to calls without a token), apps registering
+  themselves, and app documents and keys fetched.
+- **Strangers could use up the key-set budget and stop ChatGPT signing in** (with
+  `private_key_jwt`). Key-set fetches were counted per host and for everyone, never per asking
+  address: documents on many subdomains, with keys that say `max-age=0`, could take the whole
+  minute's budget with junk assertions. Now a key set becomes proven when a code or refresh token is
+  exchanged with it (oidc-provider's `grant.success`: a person said yes). A proven set is fetched
+  again outside the strangers' budget (at most once a minute each, 120 a minute for all of them),
+  and when that fetch fails or is over, the last good set is used, a minute at a time, for up to a
+  day after it was fetched. Sets not yet proven are counted per asking address (/48 for IPv6), per
+  site (the host's last two labels, so subdomains share one budget; no public suffix list, so names
+  like example.co.uk share co.uk's, which only slows new apps there) and for everyone; at most 200
+  of them are kept and they never push out a proven set (up to 1,000 of those). A restart forgets
+  the sets kept, as it does every count.
+- **A per-account 429 at the code exchange lost the code.** oidc-provider uses a code before it
+  asks for the account, so the account's count (`countTokenGrant`) is now asked only for refresh
+  tokens (asked before oidc-provider uses one); codes are not counted (each needs the person's yes).
+  A refresh token already used is not counted either, so its reuse is found and its connection
+  ended whatever the count.
+- **Client assertions:** `iss` and `sub` must both be the client_id (RFC 7523 section 3;
+  oidc-provider checks only `iss`).
+- **`CIMD_TEST_BASE`** turns the fetch guard off for the browser tests' stand-in. It is now taken
+  only with `NODE_ENV=test` (the Playwright server sets it), never merely "not production", and the
+  server will not start with it set and `NODE_ENV=production`; when it is on, a warning is logged at
+  start.
+
 ## Consequences
 
 - Assistants that connect only with OAuth can use a person's records, and the person sees and

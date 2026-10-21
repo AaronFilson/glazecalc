@@ -106,6 +106,17 @@ export const keepRegisteredClient = async (clientId: string, now = new Date()): 
   );
 };
 
+/**
+ * Whether a code or refresh token is on record and not past its end, used or
+ * not (a second use must still reach oidc-provider, which ends the grant).
+ * The token endpoint's limits let such a request through
+ * (server/lib/rate_limit.ts, grantOnRecord). One read by the _id.
+ */
+export const grantSourceOnRecord = async (kind: 'AuthorizationCode' | 'RefreshToken', id: string): Promise<boolean> => {
+  const record = await OAuthRecord.findById(recordKey(kind, id), { kind: 1, expiresAt: 1 }).lean();
+  return Boolean(record && record.kind === kind && (!record.expiresAt || record.expiresAt.getTime() > Date.now()));
+};
+
 /** oidc-provider's adapter: one instance for each kind of record (its name). */
 export class MongoAdapter implements Adapter {
   readonly kind: string;

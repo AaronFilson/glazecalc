@@ -15,6 +15,21 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   national silica limit, the limits Andhra Pradesh's and Rajasthan's new rules set, marked as read only in
   others' copies and not confirmed; Rajasthan's respirable-dust limit is cut off in the copy read, and the
   guide says so.
+- **ChatGPT's client metadata document, behind a setting** (docs/adr/0024-authorization-server.md,
+  "Amended: ChatGPT's document, private_key_jwt, shared addresses"). ChatGPT names itself by an
+  address whose document asks to sign its token requests (`private_key_jwt`) and also lists `none`; it
+  was refused as "only public clients". `OAUTH_CIMD_AUTH`, off by default (off, nothing changes):
+  `public` takes such a document as a public app and fetches nothing from its keys; `private_key_jwt`
+  also takes signed token requests from an app whose document asks for them, with its public keys
+  fetched only from its own site, under limits of their own (per asking address, per site and for
+  everyone; an app with a working connection outside them, its last good keys used for up to a day
+  if its site cannot be reached), kept at most 15 minutes, RSA of 2048 bits
+  or more or EC P-256 only; assertions RS256, PS256 or ES256, `iss` and `sub` the client_id, at most
+  5 minutes long, each used once
+  even by two requests at once, `aud` the issuer (or for now the token endpoint, logged). Never for an
+  app that registered itself. The browser tests run it with a stand-in app (`CIMD_TEST_BASE`, taken
+  only with `NODE_ENV=test`; the server will not start with it and `NODE_ENV=production`). To try on
+  staging first (docs/integrations/directories.md).
 - **Arabic and Hindi** (docs/translations/ar.md, hi.md): the app, the emails and all five guides, live at
   `/ar/…` (right to left) and `/hi/…`. Arabic is Modern Standard Arabic for the Arab countries, its terms chosen from Arabic
   ceramics sources (Egyptian, Iraqi, Sudanese and Libyan university papers, suppliers, Oman's GHS guide), with all six
@@ -868,6 +883,22 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 - **"Choose your country or region"**: the guides' region list and the prompts under it ask for a country or region
   (the owner's choice), as Hong Kong and Taiwan are among the places listed. In every language, in the words its
   region list already uses ("countries and regions").
+- **Limits that suit AI apps' shared addresses** (ADR 24, the same amendment). Claude's and ChatGPT's
+  servers send everyone's requests from a few addresses, so limits are now keyed on what a request has
+  proven. The token endpoint counts per address only what it refuses (300 in 15 minutes), per account
+  its refreshes (100 in 15 minutes, a `429` that leaves the refresh token working; codes are not
+  counted, so none is lost to it, and a copied refresh token still ends its connection), and
+  everyone's refusals together (20,000 in 15 minutes); it counted every request per address (300).
+  Past a count on refusals, a request whose code or refresh token the server holds still goes
+  through, so a flood of junk from many addresses cannot stop a working connection. An IPv6 address
+  counts with its whole /48 (was /56) at the token endpoint, for MCP without a token, for apps
+  registering themselves and for app documents and keys fetched, so one cheap /48 counts once.
+  Subscription streams are 3 per account (were 3 per address, signed in or not). The MCP tools without
+  a token keep their limits per address, with ceilings for everyone without a token together: 3,000
+  requests and 200 substitutions or matches a minute. Registering (DCR) is otherwise unchanged.
+- **The Origin check on `/mcp` is tested to the letter**: `null`, a slash at the end, other letter
+  cases, a lookalike host, the port written out and two Origin headers are refused before any limit
+  counts, as before; a refusal is logged at debug level with the Origin, for the real-client test.
 - **Enter in a recipe amount goes back to the list to add from.** With an amount typed, Enter in a
   material's amount moves the focus to the materials list's filter, ready for the next one (an
   additive's amount to the additives' list). Before, Enter did nothing there, and it still sends no
@@ -1177,6 +1208,14 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   CLP's Annex III (H361) in the EU's languages (Estonian and Latvian keep H361fd's own two sentences, as their style
   sheets ask), JIS Z 7253 in Japanese, Oman's 2024 GHS guide in Arabic, and the forms the national GHS texts and safety
   data sheets use in the others.
+- **The tests' fake sign-in provider (`OAUTH_TEST_BASE`) is taken only with `NODE_ENV=test`.** It
+  was taken whenever `NODE_ENV` was not `production`, so a stray setting on a server started another
+  way would have sent sign-in, and the ID tokens' keys, to another address. The server now will not
+  start with it set and `NODE_ENV=production`, and logs a warning when it is on.
+- **An access token that does not work is answered 401, even past its address's limit.** Past 30 in
+  15 minutes from one address the answer was `429`, which tells an app to wait, so an assistant
+  behind a shared address (Claude's, ChatGPT's) could not refresh or sign in again. It is now `401`
+  with the same `WWW-Authenticate` challenge (`/mcp`) or RFC 6750's (`/api`), the words saying to wait.
 - **Two ways round the consent page for AI apps closed** (docs/adr/0024-authorization-server.md, "An
   outside report"). An app may no longer send its answer to this site's own addresses, where the page
   would have named glazecalcapp.com as the place the answer goes. And Allow takes a click only once the

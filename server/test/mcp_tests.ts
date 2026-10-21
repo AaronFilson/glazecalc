@@ -4,8 +4,24 @@
 import chemistry from '../../lib/chemistry/index.js';
 import standardData from '../../data/index.js';
 import recipe from '../../lib/recipe/index.js';
-import { MOST_LINES, resetFits, FITS_PER_MINUTE, guarded, ToolProblem, UNEXPECTED } from '../mcp/common.ts';
-import { countTokenDelete, MCP_LIMITS, TOKEN_DELETES_PER_HOUR, TOKEN_WRITE_LIMITS } from '../lib/rate_limit.ts';
+import {
+  countFit,
+  FITS_ANYONE_ALL_PER_MINUTE,
+  FITS_PER_MINUTE,
+  guarded,
+  MOST_LINES,
+  resetFits,
+  ToolProblem,
+  UNEXPECTED
+} from '../mcp/common.ts';
+import {
+  CEILINGS,
+  countTokenDelete,
+  MCP_LIMITS,
+  mcpAnyoneAll,
+  TOKEN_DELETES_PER_HOUR,
+  TOKEN_WRITE_LIMITS
+} from '../lib/rate_limit.ts';
 import { READ_ONLY_TOKEN, TOO_MANY_CHANGES, WRITE_TOOLS as STEP_UP_TOOLS } from '../mcp/tools/account_write.ts';
 import Activity from '../models/activity.ts';
 import Note from '../models/note.ts';
@@ -14,7 +30,7 @@ import ShareLink from '../models/share_link.ts';
 import Trash, { TRASH_MAX_ACCOUNT } from '../models/trash.ts';
 import { GUIDE_IDS, termsOf } from '../mcp/guides.ts';
 import { findMaterial } from '../mcp/library.ts';
-import { MOST_STREAMS_PER_ADDRESS, sdkSubscribers, streamsOpen } from '../mcp/index.ts';
+import { MOST_STREAMS, sdkSubscribers, streamsOpen } from '../mcp/index.ts';
 import { SERVER_INFO } from '../mcp/server.ts';
 import { PLACES } from '../mcp/words.ts';
 import { readFileSync } from 'node:fs';
@@ -294,6 +310,67 @@ describe('MCP: the endpoint', () => {
       req.end(JSON.stringify({ jsonrpc: '2.0', id: 1, method: 'ping' }));
     });
     expect(status).to.equal(403);
+  });
+
+  it('takes only the site’s own Origin exactly as written, and refuses before any limit counts', async () => {
+    for (const origin of [
+      'null',
+      'https://glazecalc.test/',
+      'https://glazecalc.test.evil.example',
+      'HTTPS://GLAZECALC.TEST',
+      'http://glazecalc.test',
+      'https://glazecalc.test:443'
+    ]) {
+      const answer = await rpc('tools/list', {}, { origin });
+      expect(answer.status, origin).to.equal(403);
+      expect(answer.body!.error, origin).to.include({ code: -32000 });
+      expect(answer.body!.id, origin).to.equal(null);
+    }
+    // Two Origin headers, even both the site's, arrive joined and are refused. fetch sends one, so by hand.
+    const http = await import('node:http');
+    const withOrigins = (origins: string[]) =>
+      new Promise<number>((resolve, reject) => {
+        const req = http.request(
+          base() + '/mcp',
+          {
+            method: 'POST',
+            // Written as raw pairs, so Node adds no Host of its own.
+            headers: [
+              'host',
+              new URL(base()).host,
+              'content-type',
+              'application/json',
+              'accept',
+              'application/json, text/event-stream',
+              'mcp-protocol-version',
+              PROTOCOL,
+              ...origins.flatMap((origin) => ['origin', origin])
+            ]
+          },
+          (res) => {
+            res.resume();
+            resolve(res.statusCode!);
+          }
+        );
+        req.on('error', reject);
+        req.end(JSON.stringify({ jsonrpc: '2.0', id: 1, method: 'ping' }));
+      });
+    expect(await withOrigins(['https://glazecalc.test'])).to.equal(200);
+    expect(await withOrigins(['https://glazecalc.test', 'https://glazecalc.test'])).to.equal(403);
+    // No Origin, as assistants and scripts send: answered.
+    expect((await rpc('tools/list')).status).to.equal(200);
+    // More refusals from one address than its minute allows, and the address is still answered.
+    const address = '198.51.100.' + (Math.floor(Math.random() * 200) + 20);
+    process.env.RATE_LIMITS = 'on';
+    try {
+      for (let i = 0; i < MCP_LIMITS.minute.anyone + 5; i++) {
+        const refused = await rpc('ping', {}, { origin: 'https://evil.example', 'x-forwarded-for': address });
+        expect(refused.status).to.equal(403);
+      }
+      expect((await rpc('ping', {}, { 'x-forwarded-for': address })).status).to.equal(200);
+    } finally {
+      process.env.RATE_LIMITS = 'off';
+    }
   });
 
   it('is listed for the MCP Registry as the server it is (server.json)', () => {
@@ -1589,7 +1666,7 @@ describe('MCP: personal access tokens', () => {
 });
 
 /** Opens a subscription stream (subscriptions/listen, 2026-07-28); resolves once its headers come. */
-const listen = async (signal: AbortSignal): Promise<globalThis.Response> =>
+const listen = async (signal: AbortSignal, headers: Record<string, string> = {}): Promise<globalThis.Response> =>
   fetch(base() + '/mcp', {
     method: 'POST',
     signal,
@@ -1597,7 +1674,8 @@ const listen = async (signal: AbortSignal): Promise<globalThis.Response> =>
       'content-type': 'application/json',
       accept: 'application/json, text/event-stream',
       'mcp-protocol-version': '2026-07-28',
-      'mcp-method': 'subscriptions/listen'
+      'mcp-method': 'subscriptions/listen',
+      ...headers
     },
     body: JSON.stringify({
       jsonrpc: '2.0',
@@ -1966,15 +2044,15 @@ describe('MCP: the write tools', () => {
 });
 
 describe('MCP: subscription streams', () => {
-  it(`keeps at most ${MOST_STREAMS_PER_ADDRESS} open from one address, and ends each when its client goes`, async () => {
-    const clients = Array.from({ length: MOST_STREAMS_PER_ADDRESS }, () => new AbortController());
+  it(`keeps at most ${MOST_STREAMS} open from one address without a token, and ends each when its client goes`, async () => {
+    const clients = Array.from({ length: MOST_STREAMS }, () => new AbortController());
     const streams = await Promise.all(clients.map((client) => listen(client.signal)));
     for (const stream of streams) {
       expect(stream.status).to.equal(200);
       expect(stream.headers.get('content-type')).to.include('text/event-stream');
     }
-    expect(streamsOpen()).to.equal(MOST_STREAMS_PER_ADDRESS);
-    await until(() => sdkSubscribers() === MOST_STREAMS_PER_ADDRESS, 'the SDK serves each stream');
+    expect(streamsOpen()).to.equal(MOST_STREAMS);
+    await until(() => sdkSubscribers() === MOST_STREAMS, 'the SDK serves each stream');
     const over = await listen(new AbortController().signal);
     expect(over.status).to.equal(429);
     expect(((await over.json()) as { error: { message: string } }).error.message).to.include('subscription streams');
@@ -1988,6 +2066,25 @@ describe('MCP: subscription streams', () => {
     expect(next.status).to.equal(200);
     again.abort();
     await until(() => streamsOpen() === 0 && sdkSubscribers() === 0, 'the last stream ended');
+  });
+
+  it(`keeps ${MOST_STREAMS} for each account, however many accounts share one address`, async () => {
+    // Claude's and ChatGPT's servers send many people's requests from a few addresses.
+    const first = bearer(await makeToken((await makeUser()).user));
+    const second = bearer(await makeToken((await makeUser()).user));
+    const clients = Array.from({ length: MOST_STREAMS * 2 }, () => new AbortController());
+    const streams = await Promise.all(
+      clients.map((client, i) => listen(client.signal, i < MOST_STREAMS ? first : second))
+    );
+    for (const stream of streams) expect(stream.status).to.equal(200);
+    expect(streamsOpen()).to.equal(MOST_STREAMS * 2);
+    // Each account's are used up; without a token, the address has its own.
+    expect((await listen(new AbortController().signal, first)).status).to.equal(429);
+    expect((await listen(new AbortController().signal, second)).status).to.equal(429);
+    const anonymous = new AbortController();
+    expect((await listen(anonymous.signal)).status).to.equal(200);
+    for (const client of [...clients, anonymous]) client.abort();
+    await until(() => streamsOpen() === 0 && sdkSubscribers() === 0, 'every stream ended');
   });
 });
 
@@ -2038,6 +2135,77 @@ describe('MCP: limits', () => {
     expect((await call('match_from_materials', { lines: LINES, have: ['Whiting'] }, headers)).isError).to.not.equal(
       true
     );
+  });
+
+  it('counts an IPv6 address without a token with its whole /48, so its /56s share one count', async function () {
+    this.timeout(30000);
+    process.env.RATE_LIMITS = 'on';
+    // A /48 of its own for this test (2001:db8:4c::/48), one /56 after another inside it.
+    const statuses: number[] = [];
+    for (let i = 0; i <= MCP_LIMITS.minute.anyone; i++) {
+      const address = `2001:db8:4c:${(i * 256).toString(16)}::1`;
+      statuses.push((await rpc('ping', {}, { 'x-forwarded-for': address })).status);
+    }
+    expect(statuses.slice(0, -1).every((status) => status === 200)).to.equal(true);
+    expect(statuses.at(-1)).to.equal(429);
+    // Another /48 has its own.
+    expect((await rpc('ping', {}, { 'x-forwarded-for': '2001:db8:4d::1' })).status).to.equal(200);
+  });
+
+  it('answers tokens that do not work 401 with the challenge, never 429, however many come from one address', async function () {
+    this.timeout(30000);
+    const { user } = await makeUser();
+    const expired = bearer(await makeToken(user, { expiresAt: new Date(Date.now() - 1000) }));
+    // One of Claude's or ChatGPT's servers, sending many people's expired tokens.
+    const address = '203.0.113.' + (Math.floor(Math.random() * 200) + 20);
+    process.env.RATE_LIMITS = 'on';
+    for (let i = 0; i < 40; i++) {
+      const answer = await rpc(
+        'tools/call',
+        { name: 'list_recipes', arguments: {} },
+        { ...expired, 'x-forwarded-for': address }
+      );
+      expect(answer.status, 'request ' + i).to.equal(401);
+      const challenge = answer.headers.get('www-authenticate')!;
+      expect(challenge, 'request ' + i).to.include('error="invalid_token"');
+      expect(challenge, 'request ' + i).to.include('resource_metadata="https://glazecalc.test/');
+    }
+    // A working token from the same address is answered as ever.
+    const working = bearer(await makeToken(user));
+    expect((await rpc('ping', {}, { ...working, 'x-forwarded-for': address })).status).to.equal(200);
+  });
+
+  it('has a ceiling on requests without a token from everyone together, not on those with one', async () => {
+    const { user } = await makeUser();
+    const headers = bearer(await makeToken(user));
+    const before = CEILINGS.mcpAnyone;
+    CEILINGS.mcpAnyone = 5;
+    await mcpAnyoneAll.resetKey('mcp-anyone-all');
+    process.env.RATE_LIMITS = 'on';
+    try {
+      // Each from its own address, so only the ceiling can stop them.
+      const statuses: number[] = [];
+      for (let i = 0; i < 6; i++) {
+        statuses.push((await rpc('ping', {}, { 'x-forwarded-for': `192.0.2.${100 + i}` })).status);
+      }
+      expect(statuses).to.eql([200, 200, 200, 200, 200, 429]);
+      expect((await rpc('ping', {}, { ...headers, 'x-forwarded-for': '192.0.2.200' })).status).to.equal(200);
+    } finally {
+      CEILINGS.mcpAnyone = before;
+      await mcpAnyoneAll.resetKey('mcp-anyone-all');
+    }
+  });
+
+  it(`works out at most ${FITS_ANYONE_ALL_PER_MINUTE} fits a minute for everyone without a token together`, () => {
+    resetFits();
+    process.env.RATE_LIMITS = 'on';
+    const now = Date.now();
+    for (let i = 0; i < FITS_ANYONE_ALL_PER_MINUTE; i++) countFit({ key: 'ip:198.51.100.' + (i % 100) }, now);
+    expect(() => countFit({ key: 'ip:203.0.113.9' }, now)).to.throw(ToolProblem, 'without a Glazecalc account');
+    // An account has its own count, and the next minute starts again.
+    expect(() => countFit({ key: 'user:1', userId: '1' }, now)).to.not.throw();
+    expect(() => countFit({ key: 'ip:203.0.113.9' }, now + 61 * 1000)).to.not.throw();
+    resetFits();
   });
 
   it(`works out at most ${FITS_PER_MINUTE} substitutions or matches a minute for one caller`, async () => {

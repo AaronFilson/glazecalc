@@ -115,30 +115,35 @@ calls it a "connector".
 
 ### Not met: for the owner
 
-1. **ChatGPT's CIMD document would be refused (likely to stop ChatGPT connecting).** ChatGPT names itself by
+1. **ChatGPT's CIMD document: built, behind `OAUTH_CIMD_AUTH` (round 8, branch `r8-dir-gaps`; ADR 24
+   "Amended: ChatGPT's document, private_key_jwt, shared addresses").** ChatGPT names itself by
    `https://chatgpt.com/oauth/client.json` (O-cimd), whose document says
    `"token_endpoint_auth_method": "private_key_jwt"`, `"token_endpoint_auth_methods_supported": ["none",
-"private_key_jwt"]` and carries a `jwks_uri`. Our `checkClientMetadata` (`server/oauth/provider.ts`)
-   refuses any client whose `token_endpoint_auth_method` is not `none`, and any `jwks_uri`. Since our
-   metadata advertises CIMD, ChatGPT will choose CIMD (O-auth: it "selects from the intersection" of
-   methods, here `none`), and the consent step would show "This app could not be connected: only public
-   clients". OpenAI says the runtime "can fall back to DCR", but the refusal happens in the person's
-   browser. Recommended: for a CIMD document whose `token_endpoint_auth_methods_supported` includes
-   `none`, treat it as a public client (use `none`, ignore `jwks_uri` and the signing alg) and fetch
-   nothing more; keep refusing everything else. This is the OAuth security surface, so it wants its own
-   branch, tests and review. Confirm first in the ChatGPT step of the staging test.
-2. **Anonymous limits will be shared by everyone using Claude or ChatGPT.** Without a token the limits are
-   per address: 60 requests a minute, 2,000 a day, 10 fits a minute (`server/lib/rate_limit.ts`,
-   `server/mcp/common.ts`). Claude's calls all come from `160.79.104.0/21` (A-auth), and ChatGPT's from
-   OpenAI's own ranges, so once listed, every Claude user's public tool calls share a handful of addresses'
-   limits. Options: key anonymous calls from the vendors' published ranges more generously (per
-   `Mcp-Session`-less request there is no user to key on), or raise the per-address figures for those ranges
-   only. A decision on abuse against availability.
-3. **The Origin check may refuse a client that sends one.** `/mcp` refuses any `Origin` but the site's own
-   (`server/mcp/index.ts` `checkHostAndOrigin`). Anthropic lists "overly strict Origin-header validation" as
-   a cause of failed connections (A-test). Server-side clients send none, so this is likely fine; if the
-   staging test shows `403 "Requests from other sites are not accepted."`, allow the vendors' origins
-   (the endpoint never reads cookies, and the Host check already stops DNS rebinding).
+"private_key_jwt"]` and carries a `jwks_uri`. With the setting off (the default) it is refused as
+   before ("only public clients"). `OAUTH_CIMD_AUTH=public` takes it as a public app (`none`, its keys
+   never fetched); `OAUTH_CIMD_AUTH=private_key_jwt` also takes signed token requests, with ChatGPT's keys
+   fetched from chatgpt.com under their own limits and kept at most 15 minutes. Owner: try `public`, then
+   `private_key_jwt`, on staging (below), and choose before submitting to OpenAI, so no listed user has to
+   reconnect when the method changes.
+2. **Limits for shared addresses: done, not behind a setting.** Claude's calls all come from
+   `160.79.104.0/21` (A-auth) and ChatGPT's from OpenAI's own ranges. Owner's decision: no special
+   treatment for those ranges; key limits on what a request proved. The token endpoint now counts per
+   address only refusals (300 in 15 minutes), per account its refreshes (100), and everyone's refusals
+   together (20,000); past a count on refusals, a code or refresh token the server holds still goes
+   through, so no flood of junk from other addresses can stop a working connection (security review,
+   ADR 24 "Review fixes"). An IPv6 address counts with its whole /48 wherever everyone shares a ceiling.
+   A token that does not work is answered `401` with its challenge even past the bad-token
+   limit (it was `429`, which stops an app refreshing or signing in again); subscription streams are 3
+   per account. Without a token the per-address limits stay (60 a minute, 2,000 a day, 10 fits a
+   minute), with ceilings for everyone together (3,000 requests and 200 fits a minute) that never touch
+   calls with a token. Watch the logs for 429s once listed: anonymous use through Claude or ChatGPT
+   still shares their addresses' limits. With `private_key_jwt`, ChatGPT's keys, once it has a working
+   connection, are fetched outside strangers' budget and the last good set is used for up to a day if
+   chatgpt.com cannot be reached (log line "An app’s keys could not be fetched again").
+3. **The Origin check: kept.** `/mcp` refuses any `Origin` but the site's own (`server/mcp/index.ts`
+   `checkHostAndOrigin`); assistants' servers send none. Anthropic lists "overly strict Origin-header
+   validation" as a cause of failed connections (A-test), so the staging test notes any Origin seen:
+   refusals are logged at debug level with the value (`LOG_LEVEL=debug`). No CORS allow-list (owner).
 4. **OpenAI domain proof.** The portal gives a token to serve as plain text at
    `https://glazecalcapp.com/.well-known/openai-apps-challenge` (O-sub). Simplest: commit the token as
    `client/public/.well-known/openai-apps-challenge` (served by the `/.well-known` static folder in
@@ -329,9 +334,25 @@ note. Have the staging inbox open for the notice emails. Keep Connected apps ope
    warning; "Create as a plugin". Expect: the tools listed.
 2. In a new chat, `@Glazecalc staging`, prompt 1. Expect: works without sign-in.
 3. Ask for your recipes. Expect: a sign-in or Connect prompt; the consent page with app host
-   `chatgpt.com`. **Watch for gap 1:** a page saying "This app could not be connected: only public
+   `chatgpt.com`. With `OAUTH_CIMD_AUTH` off, a page saying "This app could not be connected: only public
    clients" means ChatGPT used its CIMD document; note it, and whether ChatGPT then offers to try again
    (it may fall back to DCR, shown "self-described" on the consent page).
+   **Gap 1, in three passes** (each a staging restart with the setting, below):
+   - `OAUTH_CIMD_AUTH=public`: the consent page shows `chatgpt.com` checked; after Allow, the call goes
+     on. In the log: no fetch of `chatgpt.com/oauth/jwks.json`.
+   - Then `OAUTH_CIMD_AUTH=private_key_jwt` **without reconnecting**: wait for ChatGPT's next refresh (up
+     to an hour). Note whether it goes on working (it switched to signing) or ChatGPT asks to connect again
+     (each person would have to reconnect when production switches).
+   - Then revoke on Connected apps and connect again under `private_key_jwt`. In the log, note the line
+     "A client assertion named the token endpoint as its audience" (ChatGPT signs for the token endpoint,
+     not the issuer) or its absence; and that the keys were fetched once.
+     To set it: in `deploy/compose.staging.yaml` on the branch being tried, uncomment
+     `OAUTH_CIMD_AUTH: public` (or write `private_key_jwt`), commit, push and run Deploy staging
+     (`staging.sh` takes the Compose file from the deployed commit). For a quick switch without a deploy,
+     edit `/opt/glazecalc/compose.staging.yaml` on the instance the same way and run
+     `GLAZECALC_STAGING_TAG=$(cat /opt/glazecalc/staging.tag) docker compose -f /opt/glazecalc/compose.staging.yaml up -d`
+     (the next Deploy staging puts the commit's file back). `LOG_LEVEL: debug` beside it shows any Origin
+     refused. Production stays off until the owner sets it in `deploy/compose.prod.yaml`.
 4. Ask to save a recipe. Note whether ChatGPT acts on our 403 step-up (re-authorize prompt) or only shows
    the error text.
 5. Connected apps: listed; revoke; ChatGPT asks to connect again.
@@ -373,15 +394,18 @@ Run `gemini`, `/mcp` to see the tools, ask for your recipes; if it does not offe
 - Step-up: did the write call bring a second consent page, and did the change happen after it?
 - Connected apps: listed as expected, activity right; after Revoke, did the app ask to connect again?
 - Emails: one notice per connection?
-- For ChatGPT: CIMD refused (gap 1) or not; acted on the 403 or only on `_meta`.
+- For ChatGPT: CIMD refused (gap 1) or not, under each `OAUTH_CIMD_AUTH`; whether a connection made under
+  `public` kept working after the switch to `private_key_jwt`; the assertion's audience (the log line);
+  acted on the 403 or only on `_meta`.
+- Any `429` in the log from Claude's or ChatGPT's addresses, and any Origin refused (debug log).
 - Times: anything slow (Claude allows 10 s for our OAuth endpoints).
 
 ## The owner's steps
 
 1. Merge this branch after review; deploy to staging; run the [staging test](#the-real-client-test-on-staging)
    and report.
-2. Decide gap 1 (ChatGPT CIMD) and gap 2 (shared anonymous limits); fix 1 before submitting to OpenAI;
-   decide gap 5 (troubleshooting text).
+2. Choose `OAUTH_CIMD_AUTH` for production from the staging passes (gap 1), and set it before
+   submitting to OpenAI; decide gap 5 (troubleshooting text).
 3. Deploy to production; republish the registry entry (plan.md).
 4. Make the two reviewers' accounts and fill them ([above](#reviewers-accounts)).
 5. **Claude:** from a paid Claude account, claude.ai/directory/manage, Submit new, MCP connector; paste the
