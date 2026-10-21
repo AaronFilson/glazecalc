@@ -220,6 +220,31 @@ apps that answer on the person's own computer or through an app's own scheme, wh
 from afar, with every app on the web naming itself by its address (CIMD), whose host the page shows
 checked.
 
+## Amended: sign-in when a tool needs it
+
+2026-10-20, preparing the directory submissions ([docs/integrations/directories.md](../integrations/directories.md)).
+Anthropic's connector docs (claude.com/docs/connectors/building/authentication and
+lazy-authentication, read 2026-10-20) say Claude starts sign-in only on an HTTP `401` with
+`WWW-Authenticate`, never on a tool's error inside a `200`, and that a server whose public tools
+answer anyone should list its other tools too and answer a call to one of them `401` before the
+SDK. Glazecalc listed the person's own tools only to a request with a token, so a Claude custom
+connector saw nine public tools and never offered to connect (the open question under
+Consequences, below). Now:
+
+- **Every tool is listed without a token** (`server/mcp/server.ts` `registerSignInTools`): the
+  read and write tools with the same names, titles, descriptions, schemas, annotations and
+  `securitySchemes` as with one, registered by the same code; their handlers there never reach a
+  record and only answer, as a fallback, with the challenge in `_meta["mcp/www_authenticate"]`.
+- **A call to one with no token is answered `401`** before the SDK (`server/mcp/auth.ts`
+  `signIn`): `Bearer realm="glazecalc", error="invalid_token", error_description="Sign in to
+Glazecalc to use this tool", resource_metadata=..., scope="data:read"`, or
+  `scope="data:read data:write"` for a tool that changes records. The second asks for writing
+  only because the person asked for a change; the consent page still leaves "Also let it change
+  my records" unticked, so the person chooses as before. A personal token's calls, the public
+  tools and the step-up for a read-only app are unchanged; a session cookie is still never read.
+- The server's instructions say that calling one of them without a connection asks the person to
+  sign in.
+
 ## Consequences
 
 - Assistants that connect only with OAuth can use a person's records, and the person sees and
@@ -238,7 +263,8 @@ checked.
   pinned and moved by hand. Its updates are taken like the MCP SDK's.
 - Koa runs inside Express for `/oauth/` only; an error there is logged without the request.
 - A chat app that gets the public tools without signing in may never ask to connect: the endpoint
-  answers anyone, and only an Authorization header that fails gets 401. How Claude and ChatGPT
+  answers anyone, and only an Authorization header that fails gets 401 (answered for Claude by
+  "Amended: sign-in when a tool needs it", above). How Claude and ChatGPT
   behave here, and whether ChatGPT acts on the 403 step-up or only on
   `_meta["mcp/www_authenticate"]`, is to be checked with the real clients on staging.
 - The MCP conformance suite's `auth/*` scenarios test clients, not servers; its authorization

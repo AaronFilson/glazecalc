@@ -838,7 +838,8 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 - **The recipe's safety note puts the condition on the home-safety guide only**: "See Safe mixing
   and ventilation. If children or pets are about, see Don't poison your family too." Every live
   language says the same (the translations whose sentence could be read as covering both links are
-  rewritten; the others keep their words), and the fingerprints follow the new English.
+  rewritten, Arabic and Hindi among them; the others keep their words), and the fingerprints follow
+  the new English.
 - **Hong Kong is not called a country.** The guides' region messages (shops, the silica limit,
   food-contact rules, poison lines, materials sold nearby) and their labels said "this country" or
   "the country {region}" in many languages; they now put the place after a colon or say "here", as
@@ -848,6 +849,14 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   that told translators to call {region} a country say otherwise now. Also: Slovenian "Velja od
   {date}" follows its own date rule ("Začetek veljavnosti: {date}"), and two Korean safe-mixing
   lines read "should" as "should" again, not "must".
+- **Assistants ask you to sign in when they need your records** (docs/adr/0024, "Amended: sign-in
+  when a tool needs it"). Without a token, the MCP endpoint now lists the tools that read and change
+  your own records too, with the same titles and hints; calling one answers HTTP 401 with the
+  challenge that sends the app to Glazecalc's sign-in and consent page (`data:read`, and
+  `data:write` too for a tool that changes records, still unticked on the page). Claude starts
+  sign-in only on such a 401, so before this a Claude custom connector never offered to connect.
+  The public tools still need nothing. Server instructions say so. The directory submissions are
+  prepared in `docs/integrations/directories.md`.
 - **A match says how near it comes, and keeps raw clay where its own check wants it**
   (docs/adr/0012, "Amended: how near a match comes"). In a staging test an assistant asked to
   replace Gerstley Borate read `match_from_materials`' score (a miss of 20.5) as a wide miss and

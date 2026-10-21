@@ -23,10 +23,11 @@ import { ipKeyGenerator } from 'express-rate-limit';
 import { allows } from '../lib/scopes.ts';
 import * as site from '../lib/site.ts';
 import { accessTokenIn, checkAccessToken, touchToken } from '../lib/token_auth.ts';
+import { ACCOUNT_TOOLS } from './tools/account.ts';
 import { WRITE_TOOLS } from './tools/account_write.ts';
-import { challenge, issuerUrl, metadataUrl, resourceUrl, writeChallenge } from './urls.ts';
+import { challenge, issuerUrl, metadataUrl, resourceUrl, signInChallenge, writeChallenge } from './urls.ts';
 
-export { challenge, metadataUrl, resourceUrl, writeChallenge };
+export { challenge, metadataUrl, resourceUrl, signInChallenge, writeChallenge };
 
 /**
  * The Protected Resource Metadata (RFC 9728). Its scopes are data:read only:
@@ -92,6 +93,33 @@ export const mcpAuth = async (req: Request, res: Response, next: NextFunction): 
     via: found.via,
     ...(found.via === 'oauth' && found.token.clientId && { clientId: found.token.clientId })
   };
+  next();
+};
+
+/**
+ * After the body is read: a call with no token to a tool that reads or changes
+ * the person's own records is answered 401, with the challenge that sends the
+ * app to sign in (scope data:read, and data:write too for a tool that changes
+ * records), and the SDK never sees the call. Claude starts sign-in only on an
+ * HTTP 401, never on a tool's error; ChatGPT takes either. The tools are
+ * listed without a token (server.ts), so an app knows to ask (lazy
+ * authentication, docs/adr/0024).
+ */
+export const signIn = (req: Request, res: Response, next: NextFunction): void => {
+  const body = req.body as { method?: unknown; params?: { name?: unknown } } | undefined;
+  const name = body?.method === 'tools/call' ? body.params?.name : undefined;
+  if (!req.mcpCaller?.userId && typeof name === 'string' && (ACCOUNT_TOOLS.has(name) || WRITE_TOOLS.has(name))) {
+    res
+      .status(401)
+      .set('WWW-Authenticate', signInChallenge(WRITE_TOOLS.has(name)))
+      .json(
+        rpcError(
+          -32001,
+          'Sign in to Glazecalc to use this tool: it reads or changes your own records. Connect the app to your Glazecalc account, or use a personal access token.'
+        )
+      );
+    return;
+  }
   next();
 };
 

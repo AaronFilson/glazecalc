@@ -185,14 +185,48 @@ describe('MCP: the endpoint', () => {
     expect(answer.headers.get('cache-control')).to.match(/^no-store/);
   });
 
-  it('lists the public tools, read-only, and no account tools without a token', async () => {
-    expect(await toolNames()).to.eql(PUBLIC_TOOLS);
+  it('lists every tool without a token, each with a title and all its hints, as with one', async () => {
+    // The person's own tools too, so an app knows they exist and asks to sign in when one is called.
+    expect(await toolNames()).to.eql([...PUBLIC_TOOLS, ...ACCOUNT_TOOLS, ...WRITE_TOOLS].sort());
     const tools = ((await rpc('tools/list')).body!.result as { tools: Json[] }).tools;
+    const { user } = await makeUser();
+    const withToken = (
+      (await rpc('tools/list', {}, bearer(await makeToken(user, { scopes: ['data:write'] })))).body!.result as {
+        tools: Json[];
+      }
+    ).tools;
+    expect(tools).to.eql(withToken);
     for (const tool of tools) {
-      expect(tool.annotations, tool.name).to.include({ readOnlyHint: true, destructiveHint: false });
+      const reads = !WRITE_TOOLS.includes(tool.name);
+      // What the directories ask of every tool: a title, and readOnlyHint, destructiveHint and openWorldHint set.
+      expect(tool.title, tool.name).to.be.a('string').and.have.length.above(5);
+      expect(tool.name.length, tool.name).to.be.at.most(64);
+      expect(tool.annotations, tool.name).to.include({ readOnlyHint: reads, openWorldHint: false });
+      expect(tool.annotations.destructiveHint, tool.name).to.be.a('boolean');
+      if (reads) expect(tool.annotations.destructiveHint, tool.name).to.equal(false);
       expect(tool.description, tool.name).to.be.a('string').and.have.length.above(40);
       expect(tool.inputSchema.type, tool.name).to.equal('object');
     }
+  });
+
+  it('asks for sign-in, 401 before the SDK, when a tool for the person’s own records is called with no token', async () => {
+    const before = await Recipe.countDocuments();
+    for (const name of [...ACCOUNT_TOOLS, ...WRITE_TOOLS]) {
+      const answer = await rpc('tools/call', { name, arguments: {} });
+      expect(answer.status, name).to.equal(401);
+      const challenge = answer.headers.get('www-authenticate')!;
+      expect(challenge, name).to.match(/^Bearer realm="glazecalc", error="invalid_token", error_description="[^"]+"/);
+      expect(challenge, name).to.include(
+        'resource_metadata="https://glazecalc.test/.well-known/oauth-protected-resource/mcp"'
+      );
+      expect(challenge, name).to.include(
+        WRITE_TOOLS.includes(name) ? 'scope="data:read data:write"' : 'scope="data:read"'
+      );
+      expect(answer.body!.result, name).to.equal(undefined);
+    }
+    expect(await Recipe.countDocuments()).to.equal(before);
+    // The public tools are answered as before.
+    expect((await call('search_materials', { query: 'silica' })).isError).to.not.equal(true);
   });
 
   it('answers only POST: GET, DELETE and the rest are 405', async () => {
@@ -1243,9 +1277,15 @@ describe('MCP: personal access tokens', () => {
     const basic = await rpc('tools/list', {}, { authorization: 'Basic dXNlcjpwYXNz' });
     expect(basic.status).to.equal(401);
     expect(basic.headers.get('www-authenticate')).to.include('error="invalid_request"');
-    // A session cookie riding along is not read: the public tools only.
-    expect(await toolNames({ cookie: 'glazecalc_session=' + session })).to.eql(PUBLIC_TOOLS);
-    expect(await toolNames({ cookie: 'glazecalc_session=' + trial })).to.eql(PUBLIC_TOOLS);
+    // A session cookie riding along is not read: the person's own tools still ask to sign in.
+    for (const cookie of [session, trial]) {
+      const answer = await rpc(
+        'tools/call',
+        { name: 'list_recipes', arguments: {} },
+        { cookie: 'glazecalc_session=' + cookie }
+      );
+      expect(answer.status).to.equal(401);
+    }
   });
 
   describe('the read tools', () => {

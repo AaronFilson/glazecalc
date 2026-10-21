@@ -43,6 +43,19 @@ import { allowMoreArg, analysisOf, checksOf, coneFitOut, matchOut } from './publ
 
 const READ_ONLY = { readOnlyHint: true, destructiveHint: false, idempotentHint: true, openWorldHint: false } as const;
 
+/** The tools here, which read the person's own records. */
+export const ACCOUNT_TOOLS: ReadonlySet<string> = new Set([
+  'list_recipes',
+  'get_recipe',
+  'list_my_materials',
+  'get_shelf',
+  'match_with_what_i_have',
+  'list_firings',
+  'get_firing',
+  'list_notes',
+  'get_my_settings'
+]);
+
 const pageArgs = {
   limit: z.number().int().min(1).max(100).optional().describe('How many to return, 25 by default.'),
   offset: z.number().int().min(0).max(100000).optional().describe('How many to skip, for the next page.')
