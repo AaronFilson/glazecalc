@@ -751,7 +751,7 @@ function translatedTexts(dir, language) {
  * (e.g., etc., Ltd.).
  */
 const SENTENCE_STOP = /(?<![.\s])\.(?=["'”’)\]*_]*(?:\s|$))/gu;
-const KEPT_ABBREVIATIONS = /(?:^|[\s(])(?:e\.g|i\.e|etc|Ltd|Inc|Co|Corp|No|vs|approx|Dr|St)$/u;
+const KEPT_ABBREVIATIONS = /(?:^|[\s(])(?:e\.g|i\.e|etc|Ltd|Inc|Co|Corp|No|vs|approx|Dr|St|Ing|Repr|Carc|Cap|U\.S|[A-Z])$/u;
 function latinStops(text, letters) {
   const found = [];
   const prose = text.replace(/\]\([^)\s]*\)/g, ']').replace(/(?:https?:\/\/|www\.)\S+|\S+@\S+/g, ' ');
