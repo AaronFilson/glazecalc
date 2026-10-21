@@ -17,7 +17,8 @@
 //
 // The build fails if a page logs an error, is the not-found page, has little text,
 // has a script the browser build's policy does not know, is over MAX_GZIPPED, or
-// (the advice page) lacks any of the standard advice.
+// (the advice page) lacks any of the standard advice, (the materials list) lacks
+// a link to a material's page, or (the cone chart) lacks its figures.
 import { spawnSync } from 'node:child_process';
 import { existsSync } from 'node:fs';
 import { readFileSync } from 'node:fs';
@@ -66,6 +67,15 @@ export function pageProblems(html, page) {
     const list = /<ul\b[^>]*class="general-advice"[^>]*>([\s\S]*?)<\/ul>/.exec(html)?.[1] ?? '';
     const shown = (list.match(/<h3\b/g) ?? []).length;
     if (shown !== ADVICE_COUNT) found.push(`it shows ${shown} of the ${ADVICE_COUNT} pieces of standard advice`);
+  }
+  // The list of materials links each material's page, which is how a search engine finds them.
+  if (page === '/materials') {
+    const missing = pages.MATERIAL_PAGES.filter((material) => !new RegExp(`href="[^"]*${material}"`).test(html));
+    if (missing.length) found.push(`it does not link ${missing.length} material page(s), such as ${missing[0]}`);
+  }
+  // The cone chart has both charts' figures, not an empty table.
+  if (page === '/cones' && !(/Orton/.test(html) && /\bSK\b/.test(html) && /1305|1,305/.test(html))) {
+    found.push('it lacks the Orton or SK chart');
   }
   // A guide ends with links to the others (the "More guides" block), so a search engine can follow them.
   if (GUIDE_PAGES.includes(page)) {
@@ -260,7 +270,12 @@ export async function prerender({ build = true, codes = languages.LIVE_LANGUAGES
   if (!faces.length) throw new Error("The stylesheet's text fonts were not found.");
   await rm(PRERENDERED, { recursive: true, force: true });
 
-  const jobs = codes.flatMap((code) => only.map((page) => ({ code, page, url: urlFor(code, page) })));
+  // The reference pages (the cone chart, the materials) are in English only: rendered in English alone.
+  const jobs = codes.flatMap((code) =>
+    only
+      .filter((page) => pages.prerenderLanguages(page, [code]).length)
+      .map((page) => ({ code, page, url: urlFor(code, page) }))
+  );
   // Dealt out in turn, so each worker has a mix of the long guides and the short pages.
   const count = Math.max(1, Math.min(WORKERS, os.availableParallelism(), jobs.length));
   const shares = Array.from({ length: count }, (_, n) => jobs.filter((_job, i) => i % count === n));

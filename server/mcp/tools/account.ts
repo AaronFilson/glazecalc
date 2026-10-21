@@ -21,7 +21,6 @@ import Material from '../../models/material.ts';
 import Note from '../../models/note.ts';
 import Recipe from '../../models/recipe.ts';
 import Trash from '../../models/trash.ts';
-import User from '../../models/user.ts';
 import {
   type Caller,
   countFit,
@@ -36,12 +35,26 @@ import {
   ToolProblem,
   type RecipeLine
 } from '../common.ts';
-import { findById, findMaterial, nameKey, oxidesOf } from '../library.ts';
+import { nameKey, oxidesOf } from '../library.ts';
+import { shelfMaterials } from '../shelf.ts';
 import { confirmSettingOf } from '../../lib/pending_changes.ts';
 import { settingsOf } from '../settings.ts';
 import { allowMoreArg, analysisOf, checksOf, coneFitOut, matchOut } from './public.ts';
 
 const READ_ONLY = { readOnlyHint: true, destructiveHint: false, idempotentHint: true, openWorldHint: false } as const;
+
+/** The tools here, which read the person's own records. */
+export const ACCOUNT_TOOLS: ReadonlySet<string> = new Set([
+  'list_recipes',
+  'get_recipe',
+  'list_my_materials',
+  'get_shelf',
+  'match_with_what_i_have',
+  'list_firings',
+  'get_firing',
+  'list_notes',
+  'get_my_settings'
+]);
 
 const pageArgs = {
   limit: z.number().int().min(1).max(100).optional().describe('How many to return, 25 by default.'),
@@ -128,21 +141,7 @@ export const registerAccountTools = (server: McpServer, caller: Caller): void =>
   const may = (permission: Permission) => allows(scopes, permission);
 
   /** The materials on the account's shelf, as the recipe tools read them; keys no longer found are left out. */
-  const shelfOf = async (): Promise<{ materials: MaterialRecord[]; missing: number }> => {
-    const user = await User.findById(userId, { shelf: 1 });
-    const keys = user?.shelf ?? [];
-    const ownIds = keys.filter((key) => mongoose.isObjectIdOrHexString(key) && !findById(key));
-    const own = ownIds.length ? await Material.find({ _id: { $in: ownIds }, ownedBy: userId }).lean() : [];
-    const ownById = new Map(own.map((m) => [String(m._id), m as unknown as MaterialRecord]));
-    const materials: MaterialRecord[] = [];
-    let missing = 0;
-    for (const key of keys) {
-      const found = key.startsWith('name:') ? findMaterial(key.slice(5)) : (findById(key) ?? ownById.get(key));
-      if (found) materials.push(found);
-      else missing++;
-    }
-    return { materials, missing };
-  };
+  const shelfOf = () => shelfMaterials(userId);
 
   /** The account's own material of this name, for a recipe line, before the library's. */
   const ownMaterials = async (): Promise<(name: string) => MaterialRecord | undefined> => {

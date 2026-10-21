@@ -73,7 +73,7 @@
     "shopsIn": "Magasins pour",
     "label": "Magasins : {region}",
     "caption": "Quelques magasins vendant des matières premières pour émaux : {region} (vérifiés le {date})",
-    "nearbyCaption": "Magasins d’autres pays qui disent livrer dans ce pays : {region} (vérifiés le {date})",
+    "nearbyCaption": "Magasins d’ailleurs qui disent livrer aussi ici : {region} (vérifiés le {date})",
     "shop": "Magasin",
     "sells": "Produits vendus",
     "packs": "Conditionnements relevés",
@@ -87,8 +87,8 @@
       "glazes": "émaux prêts à l’emploi",
       "kilns": "fours"
     },
-    "none": "Nous n’avons trouvé aucun magasin vendant des matières premières pour émaux dans ce pays ({region}).",
-    "unknown": "Nous n’avons pas encore cherché de magasins dans ce pays ({region}).",
+    "none": "{region} : nous n’avons trouvé aucun magasin vendant des matières premières pour émaux.",
+    "unknown": "{region} : nous n’avons pas encore cherché de magasins.",
     "choosePrompt": "Choisissez votre pays pour voir les magasins qui s’y trouvent."
   },
   "silica": {
@@ -131,8 +131,8 @@
     "sameAsEu": "Identique à la valeur limite contraignante de l’UE.",
     "recommendedBy": "{abbr} ({by}) recommande cette valeur dans <link>{title}</link>. Elle n’a pas force de loi.",
     "respirators": "Ici, les masques antipoussière sont vendus par classe : {everyday} pour la poussière d’émail, ou {higher} pour une meilleure protection (<link>les classes officielles</link>).",
-    "unknown": "Nous n’avons pas pu confirmer la valeur limite nationale de ce pays ({region}). La valeur limite contraignante de l’UE, {value} mg/m³, s’applique dans chaque État membre.",
-    "noData": "Nous n’avons pas encore confirmé la valeur limite de ce pays ({region}).",
+    "unknown": "{region} : nous n’avons pas pu confirmer la valeur limite nationale. La valeur limite contraignante de l’UE, {value} mg/m³, s’applique dans chaque État membre.",
+    "noData": "{region} : nous n’avons pas encore confirmé la valeur limite.",
     "agency": "L’organisme national chargé de la sécurité au travail : <link>{name}</link>.",
     "agencySilica": "Sa <link>page sur la silice</link>.",
     "choosePrompt": "Choisissez votre pays pour voir sa valeur limite."
@@ -208,13 +208,13 @@
     "inForce": "En vigueur à partir du {date}.",
     "atMost": "Un objet est conforme s’il ne libère pas plus que la limite : la loi dit « au plus ».",
     "ppm": "Ici, ppm désigne des milligrammes par litre de solution d’essai (mg/L).",
-    "unknown": "Nous n’avons pas encore confirmé les règles de ce pays ({region}).",
+    "unknown": "{region} : nous n’avons pas encore confirmé les règles.",
     "none": "{region} : aucune loi ne fixe de limites pour le plomb et le cadmium qu’une pièce cuite peut libérer (vérifié le {date}).",
     "noneSource": "Source : <link>{law}</link>.",
     "choosePrompt": "Choisissez votre pays pour voir ses règles."
   },
   "equivalents": {
-    "buyingIn": "Pays d’achat",
+    "buyingIn": "Lieu d’achat",
     "label": "{library, select, US {Équivalents vendus aux États-Unis} UK {Équivalents vendus au Royaume-Uni} EU {Équivalents vendus dans l’UE} other {Équivalents vendus en Australie et en Nouvelle-Zélande}}",
     "caption": "{library, select, US {Matières non vendues aux États-Unis, chacune avec la plus proche qui y est vendue} UK {Matières non vendues au Royaume-Uni, chacune avec la plus proche qui y est vendue} EU {Matières non vendues dans l’UE, chacune avec la plus proche qui y est vendue} other {Matières non vendues en Australie et en Nouvelle-Zélande, chacune avec la plus proche qui y est vendue}}",
     "material": "Dans une recette",

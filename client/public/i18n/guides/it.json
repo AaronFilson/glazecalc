@@ -55,7 +55,7 @@
     "orCall": "oppure <link>{number}</link>",
     "online": "Online: <link>{name}</link>.",
     "poisonAdviceNone": "Consulenza antiveleni",
-    "noLine": "Non abbiamo potuto confermare un numero antiveleni pubblico in questo paese. Chiamare il proprio medico, oppure il numero di emergenza se è urgente.",
+    "noLine": "Non abbiamo potuto confermare un numero antiveleni pubblico qui. Chiamare il proprio medico, oppure il numero di emergenza se è urgente.",
     "medicalAdvice": "Consulenza medica: {name}",
     "animals": "Animali: {name}",
     "animalsNone": "Animali",
@@ -73,7 +73,7 @@
     "shopsIn": "Negozi per",
     "label": "Negozi: {region}",
     "caption": "Alcuni negozi che vendono materie prime per smalti: {region} (verificati in data {date})",
-    "nearbyCaption": "Negozi di altri paesi che dichiarano di spedire in questo paese: {region} (verificati in data {date})",
+    "nearbyCaption": "Negozi altrove che dichiarano di spedire anche qui: {region} (verificati in data {date})",
     "shop": "Negozio",
     "sells": "Vende",
     "packs": "Confezioni viste",
@@ -87,8 +87,8 @@
       "glazes": "smalti pronti",
       "kilns": "forni"
     },
-    "none": "Non abbiamo trovato negozi che vendano materie prime per smalti in questo paese ({region}).",
-    "unknown": "Non abbiamo ancora cercato negozi in questo paese ({region}).",
+    "none": "{region}: non abbiamo trovato negozi che vendano materie prime per smalti.",
+    "unknown": "{region}: non abbiamo ancora cercato negozi.",
     "choosePrompt": "Scegliere il paese per vedere i negozi."
   },
   "silica": {
@@ -131,8 +131,8 @@
     "sameAsEu": "Uguale al limite vincolante dell’UE.",
     "recommendedBy": "{abbr} ({by}) raccomanda questo valore nel documento <link>{title}</link>. Non è un obbligo di legge.",
     "respirators": "Qui le maschere filtranti antipolvere si vendono per classe: {everyday} per la polvere di smalto, o {higher} per una protezione maggiore (<link>le classi ufficiali</link>).",
-    "unknown": "Non abbiamo potuto confermare il limite nazionale in questo paese ({region}). Il limite vincolante dell’UE di {value} mg/m³ vale in ogni Stato membro.",
-    "noData": "Non abbiamo ancora confermato il limite in questo paese ({region}).",
+    "unknown": "{region}: non abbiamo potuto confermare il limite nazionale. Il limite vincolante dell’UE di {value} mg/m³ vale in ogni Stato membro.",
+    "noData": "{region}: non abbiamo ancora confermato il limite.",
     "agency": "L’ente nazionale per la sicurezza sul lavoro: <link>{name}</link>.",
     "agencySilica": "La sua <link>pagina sulla silice</link>.",
     "choosePrompt": "Scegliere il paese per vederne il limite."
@@ -208,13 +208,13 @@
     "inForce": "In vigore dal {date}.",
     "atMost": "Un oggetto supera la prova se non cede più del limite: la legge dice «al massimo».",
     "ppm": "Qui ppm indica milligrammi per litro della soluzione di prova (mg/L).",
-    "unknown": "Non abbiamo ancora confermato le norme in questo paese ({region}).",
+    "unknown": "{region}: non abbiamo ancora confermato le norme.",
     "none": "Non c’è alcuna legge che fissi limiti per il piombo e il cadmio che un pezzo cotto può cedere: {region} (dati verificati in data {date}).",
     "noneSource": "Fonte: <link>{law}</link>.",
     "choosePrompt": "Scegliere il paese per vederne le norme."
   },
   "equivalents": {
-    "buyingIn": "Paese di acquisto",
+    "buyingIn": "Luogo di acquisto",
     "label": "{library, select, US {Equivalenti in vendita negli Stati Uniti} UK {Equivalenti in vendita nel Regno Unito} EU {Equivalenti in vendita nell’UE} other {Equivalenti in vendita in Australia e Nuova Zelanda}}",
     "caption": "{library, select, US {Materiali non in vendita negli Stati Uniti, ciascuno con il più simile in vendita lì} UK {Materiali non in vendita nel Regno Unito, ciascuno con il più simile in vendita lì} EU {Materiali non in vendita nell’UE, ciascuno con il più simile in vendita lì} other {Materiali non in vendita in Australia e Nuova Zelanda, ciascuno con il più simile in vendita lì}}",
     "material": "In una ricetta",

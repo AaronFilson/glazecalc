@@ -79,6 +79,7 @@
     <nav class="recipe-tools" [attr.aria-label]="t('recipe.page.toolsLabel')">
       <a routerLink="/import">{{ t('recipe.page.pasteIn') }}</a>
       <a routerLink="/blends">{{ t('recipe.page.blends') }}</a>
+      <a routerLink="/solve">{{ t('recipe.page.solve') }}</a>
     </nav>
 
     <!-- A potter's collection, first: each name opens it in the editor below; the rest is under More. -->
@@ -394,6 +395,7 @@
                       [attr.aria-label]="t('recipe.page.amountOf', { name: line.name })"
                       [gcNumber]="line.amount"
                       (gcNumberChange)="setAmount($index, $event)"
+                      (keydown.enter)="amountEntered($event, 'material', $index)"
                       [gcField]="checks"
                       [gcFieldName]="'material-amount-' + $index"
                     />
@@ -772,6 +774,9 @@
                 <h4 id="shelf-heading" tabindex="-1">{{ t('recipe.page.shelfHeading') }}</h4>
                 <gc-own-limits-note />
                 <p>{{ t('recipe.page.shelfIntro') }}</p>
+                <p class="small">
+                  <gc-rich [text]="t('recipe.page.shelfSolve')" [links]="{ solve: '/solve' }" />
+                </p>
                 @defer (when shelfLoaded(); prefetch on immediate) {
                   @if (shelfLoaded()) {
                     <div class="recipe-swap-buttons">
@@ -862,6 +867,7 @@
         <gc-recipe-library
           [heading]="t('recipe.page.addMaterials')"
           noun="materials"
+          filterFieldId="materials-filter"
           [mine]="myMaterials()"
           [standard]="standardMaterials()"
           [standardFailed]="standardMaterialsFailed()"
@@ -901,6 +907,7 @@
                         [attr.aria-label]="t('recipe.page.amountOf', { name: line.name })"
                         [gcNumber]="line.amount"
                         (gcNumberChange)="setAdditiveAmount($index, $event)"
+                        (keydown.enter)="amountEntered($event, 'additive', $index)"
                         [gcField]="checks"
                         [gcFieldName]="'additive-amount-' + $index"
                       />
@@ -946,6 +953,7 @@
         <gc-recipe-library
           [heading]="t('recipe.page.addAdditives')"
           noun="additives"
+          filterFieldId="additives-filter"
           mineLink="/additive"
           [mine]="myAdditives()"
           [standard]="standardAdditives()"

@@ -21,6 +21,7 @@ export * from './paste';
 export * from './pool';
 export * from './shelf';
 export * from './slurry';
+export * from './solve';
 export * from './suggest';
 export * from './swaps';
 export * from './temperature';

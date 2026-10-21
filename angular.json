@@ -54,7 +54,7 @@
             },
             "loader": {
               ".md": "text",
-              // The standard advice (data/advice.ndjson), drawn into the advice page at build time.
+              // The standard advice (data/advice.ndjson) and materials (data/materials.ndjson), drawn into their public pages at build time.
               ".ndjson": "text"
             }
           },

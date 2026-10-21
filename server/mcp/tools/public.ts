@@ -1,7 +1,9 @@
 // The MCP tools anyone may use, with no account (docs/integrations-plan.md,
 // Phase 2, item 20): the library, a recipe's unity formula, the limit checks
 // (with the chemistry against the firing, docs/adr/0022), substitutions for old
-// materials, a match from given materials, and cones.
+// materials, a match from given materials, a recipe for a target unity formula
+// or analysis (docs/adr/0026; from the shelf too, for a caller that may read
+// it), and cones.
 // Each runs the same code as the app (lib/chemistry, lib/recipe) and answers
 // with structured data, sentences in the caller's language, and the same as
 // JSON text. Nothing a caller sends is stored.
@@ -41,6 +43,7 @@ import {
 import { chemistryText, recipeText } from '../words.ts';
 import { allows } from '../../lib/scopes.ts';
 import { settingsOf } from '../settings.ts';
+import { shelfMaterials } from '../shelf.ts';
 
 /** Whether the tool only reads and changes nothing anywhere: true for every tool here. */
 const READ_ONLY = { readOnlyHint: true, destructiveHint: false, idempotentHint: true, openWorldHint: false } as const;
@@ -564,6 +567,138 @@ export const registerPublicTools = (server: McpServer, caller: Caller): void => 
       }, lang);
     }
   );
+
+  server.registerTool(
+    'solve_target',
+    {
+      title: 'Make a recipe for a target formula',
+      description:
+        'Makes a glaze recipe, in percent, from the materials given whose unity formula comes as near a target as they allow (Solve for a target in the Glazecalc app). ' +
+        'The target is a unity formula (moles; the fluxes are scaled to add up to 1) or an oxide analysis (percent by weight of the fired glaze), with potash and soda apart. ' +
+        'Give the materials by their library names, or onHand for the materials on the person’s shelf (with a token or connected app that may read it). ' +
+        'closeness says how near each oxide comes: close (within 0.02, or 5% of a large amount such as silica’s), off, or far (more than three times that), with a verdict (close, fair or poor) and a summary; unreachable names the target’s oxides nothing given supplies. ' +
+        'Raw clay is held to 20% of the batch where that costs the match little (capped and allowMore say more). Test any recipe before using it.',
+      inputSchema: z.object({
+        target: z
+          .object({
+            kind: z
+              .enum(['unity', 'analysis'])
+              .describe('"unity": moles per mole of fluxes; "analysis": percent by weight of the fired glaze.'),
+            oxides: z
+              .record(z.string().min(1).max(10), z.number().min(0).max(1000))
+              .describe('Each oxide by its formula, such as { "K2O": 0.3, "CaO": 0.7, "Al2O3": 0.4, "SiO2": 3.2 }.')
+          })
+          .describe('The unity formula or oxide analysis to aim for.'),
+        materials: z
+          .array(z.string().min(1).max(200))
+          .max(100)
+          .optional()
+          .describe('The library names of the materials to make it from. Use search_materials to find the names.'),
+        onHand: z
+          .boolean()
+          .optional()
+          .describe(
+            'Make it from the materials on the person’s shelf, as well as any named: needs a token or connected app that may read it.'
+          ),
+        mustUse: z
+          .array(z.string().min(1).max(200))
+          .max(20)
+          .optional()
+          .describe('Materials given that must be in the recipe.'),
+        allowMore: allowMoreArg,
+        firing: firingArg,
+        language: languageArg
+      }),
+      annotations: READ_ONLY
+    },
+    async ({ target, materials, onHand, mustUse, allowMore, firing, language }) => {
+      const lang = languageOf(language);
+      return guarded(async () => {
+        const unknown = (materials ?? []).filter((name) => !findMaterial(name));
+        if (unknown.length)
+          throw new ToolProblem(`Not in the library: ${unknown.join(', ')}. Use search_materials to find the names.`);
+        const offered: MaterialRecord[] = (materials ?? []).map((name) => findMaterial(name)!);
+        if (onHand) {
+          if (!caller.userId || !allows(caller.scopes ?? [], 'shelf:read'))
+            throw new ToolProblem(
+              'The materials on hand need a token or connected app that may read the shelf. Name the materials instead.'
+            );
+          offered.push(...(await shelfMaterials(caller.userId)).materials);
+        }
+        const unique = offered.filter((m, i) => offered.findIndex((other) => other.name === m.name) === i);
+        if (!unique.length)
+          throw new ToolProblem(
+            onHand ? 'There are no materials on hand. Name the materials instead.' : 'Name the materials to use.'
+          );
+        const must = new Set((mustUse ?? []).map((name) => findMaterial(name)?.name ?? name));
+        const missingMust = [...must].filter((name) => !unique.some((m) => m.name === name));
+        if (missingMust.length) throw new ToolProblem(`mustUse names materials not given: ${missingMust.join(', ')}.`);
+        const uncapped = allowedMore(allowMore);
+        const at = firingOf(firing);
+        countFit(caller);
+        const solved = recipe.solveTarget(
+          { kind: target.kind, oxides: target.oxides },
+          unique.map((material) => ({ material, must: must.has(material.name) })),
+          { uncapped, celsius: at.celsius, band: at.band }
+        );
+        return ok(solvedOut(solved, lang, at.band === 'top'));
+      }, lang);
+    }
+  );
+};
+
+/** How near a solved recipe comes to its target, as solve_target says it. */
+const solvedClosenessOut = (report: Report) => {
+  const found = report.closeness!;
+  const named = (verdict: string) => found.oxides.filter((o) => o.verdict === verdict).map((o) => o.oxide);
+  const [off, far] = [named('off'), named('far')];
+  const said = [
+    found.verdict === 'close'
+      ? `Close: every oxide of the recipe's unity formula is within ${NEAR} of the target's.`
+      : found.verdict === 'fair'
+        ? `Fair: near the target, but ${listed(off)} ${isAre(off)} off by more than ${NEAR}, though by less than three times that.`
+        : `Poor: ${listed(far)} ${isAre(far)} off by more than three times ${NEAR}, so expect a different glaze.` +
+          (off.length ? ` ${listed(off)} ${isAre(off)} off by less.` : ''),
+    report.unreachable.length ? `Nothing given supplies ${listed(report.unreachable)}.` : '',
+    report.miss - report.best < COULD_BE_NEARER
+      ? 'These materials cannot come much nearer.'
+      : 'These materials could come nearer: see couldHelp and capped.'
+  ];
+  return {
+    verdict: found.verdict,
+    summary: said.filter(Boolean).join(' '),
+    oxides: found.oxides.map((o) => ({
+      oxide: o.oxide,
+      target: rounded(o.was),
+      recipe: rounded(o.now),
+      difference: rounded(o.difference),
+      ...(o.was > 0 && { percent: Math.round((100 * o.difference) / o.was) }),
+      verdict: o.verdict
+    }))
+  };
+};
+
+/** A solved recipe, as solve_target answers it. */
+const solvedOut = (solved: ReturnType<typeof recipe.solveTarget>, language: string, top: boolean) => {
+  const { uses, couldHelp, capped, unreachable, miss, best } = reportOut(solved.report, language);
+  return {
+    recipe: solved.materials.map((material) => ({ material: material.name, percent: Number(material.amount) })),
+    unityFormula: roundAll(solved.unity),
+    target: roundAll(solved.target),
+    ...(Math.abs(solved.fluxes - 1) > 0.005 && {
+      scaled: `The target's fluxes added up to ${rounded(solved.fluxes)}; it was scaled to 1.`
+    }),
+    closeness: solvedClosenessOut(solved.report),
+    uses,
+    couldHelp,
+    capped,
+    unreachable,
+    miss,
+    best,
+    cautions: solved.cautions.map((caution) => cautionOut(caution, language)),
+    ...(top && { limitsNote: TOP_NOTE }),
+    note: 'A calculation from the fired oxides, not a test: mix a small batch and test-fire it first.'
+  };
 };
 
 /** A match from the shelf, as the tools answer it. */

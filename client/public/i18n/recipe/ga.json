@@ -364,7 +364,7 @@
     "intro": "Mar a thugann taifead gach ábhair iad; tagann iad siúd sa leabharlann chaighdeánach ó bhileoga sonraí sábháilteachta na soláthraithe.",
     "line": "<b>{names}:</b> {hazards}",
     "unknown": "{count, plural, one {Níor tugadh aon ghuaiseacha don ábhar seo: {list}. Féach ar an mbileog sonraí sábháilteachta a thagann leis.} two {Níor tugadh aon ghuaiseacha do na hábhair seo: {list}. Féach ar na bileoga sonraí sábháilteachta a thagann leo.} few {Níor tugadh aon ghuaiseacha do na hábhair seo: {list}. Féach ar na bileoga sonraí sábháilteachta a thagann leo.} many {Níor tugadh aon ghuaiseacha do na hábhair seo: {list}. Féach ar na bileoga sonraí sábháilteachta a thagann leo.} other {Níor tugadh aon ghuaiseacha do na hábhair seo: {list}. Féach ar na bileoga sonraí sábháilteachta a thagann leo.}}",
-    "safety": "Cruthaíonn ábhair ghlónra thirim deannach, agus ní mór duit é a choinneáil amach as do scamhóga, fiú deannach ó ábhair nach bhfuil aicmithe mar ghuaiseach. Féach an treoirleabhar <mixing>Meascadh sábháilte agus aeráil</mixing>, agus má tá páistí nó peataí thart, féach an treoirleabhar <home>Ná nimhigh do theaghlach</home> freisin. Nuair a deir bileog sonraí sábháilteachta ábhair níos mó, lean í."
+    "safety": "Cruthaíonn ábhair ghlónra thirim deannach, agus ní mór duit é a choinneáil amach as do scamhóga, fiú deannach ó ábhair nach bhfuil aicmithe mar ghuaiseach. Féach an treoirleabhar <mixing>Meascadh sábháilte agus aeráil</mixing>. Má tá páistí nó peataí thart, féach an treoirleabhar <home>Ná nimhigh do theaghlach</home> freisin. Nuair a deir bileog sonraí sábháilteachta ábhair níos mó, lean í."
   },
   "compare": {
     "heading": "Dhá oideas a chur i gcomparáid",

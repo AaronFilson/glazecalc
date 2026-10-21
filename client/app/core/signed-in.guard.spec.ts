@@ -118,6 +118,7 @@ describe('signedInGuard and visitorsOnlyGuard', () => {
       'material',
       'notes',
       'recipe',
+      'solve',
       'trash'
     ]);
   });
@@ -133,6 +134,9 @@ describe('signedInGuard and visitorsOnlyGuard', () => {
       'guides/home-safety',
       'guides/firing',
       'guides/learn-with-john-britt',
+      'cones',
+      'materials',
+      'materials/:slug',
       'about',
       'privacy',
       'terms',

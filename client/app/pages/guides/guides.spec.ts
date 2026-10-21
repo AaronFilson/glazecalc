@@ -58,13 +58,52 @@ describe('guides', () => {
     const fixture = TestBed.createComponent(GuidesPage);
     await fixture.whenStable();
     const page = fixture.nativeElement as HTMLElement;
-    const cards = [...page.querySelectorAll('.guide-card')];
+    const cards = [...page.querySelector('.guide-cards')!.querySelectorAll('.guide-card')];
     expect(cards.map((a) => a.getAttribute('href'))).toEqual(GUIDES.map((guide) => guide.path));
     // The list's link text carries the search words; the home safety guide's own heading stays friendly.
     expect(cards.map((a) => a.querySelector('h2')?.textContent?.trim())).toEqual([
       ...PAGES.map(([title]) => (title === "Don't poison your family" ? HOME_SAFETY_LINK : title)),
       COURSE_TITLE
     ]);
+  });
+
+  it('offers the cone chart and the standard materials after the guides, on the English page only', async () => {
+    const english = TestBed.createComponent(GuidesPage);
+    await english.whenStable();
+    const page = english.nativeElement as HTMLElement;
+    const heading = page.querySelector('#reference');
+    expect(heading?.textContent?.trim()).toBe('Reference pages');
+    const reference = [...page.querySelectorAll<HTMLAnchorElement>('.guide-cards:last-of-type .guide-card')];
+    expect(reference.map((a) => a.getAttribute('href'))).toEqual(['/cones', '/materials']);
+    expect(reference.map((a) => a.querySelector('h3')?.textContent?.trim())).toEqual([
+      'Cone chart',
+      'Standard materials'
+    ]);
+
+    // Those pages are in English only: another language's list does not offer them.
+    TestBed.resetTestingModule();
+    TestBed.configureTestingModule({
+      providers: [...testProviders(), { provide: PAGE_LANGUAGE, useValue: 'de' }]
+    });
+    const german = TestBed.createComponent(GuidesPage);
+    await german.whenStable();
+    expect((german.nativeElement as HTMLElement).querySelector('#reference')).toBeNull();
+  });
+
+  it('points the firing guide to the cone chart and the safety guides to the materials, in English', async () => {
+    const firingPage = await render(firing, null, []);
+    expect(firingPage.page.querySelector('#see-also')).toBeNull();
+    TestBed.resetTestingModule();
+    TestBed.configureTestingModule({ providers: testProviders() });
+    TestBed.overrideProvider(ActivatedRoute, {
+      useValue: { snapshot: { data: { text: { text: firing, language: null }, related: ['cones'] } } }
+    });
+    TestBed.inject(Location).replaceState(HERE);
+    const fixture = TestBed.createComponent(GuidePage);
+    await fixture.whenStable();
+    const links = [...(fixture.nativeElement as HTMLElement).querySelectorAll<HTMLAnchorElement>('#see-also ~ ul a')];
+    expect(links.map((a) => a.getAttribute('href'))).toEqual(['/cones']);
+    expect(links[0]!.textContent).toBe('Cone chart');
   });
 
   it("shows the companion to John Britt's course: credited, linked to his videos, never embedding them", async () => {

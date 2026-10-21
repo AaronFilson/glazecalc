@@ -72,8 +72,8 @@
   "shops": {
     "shopsIn": "Veikali:",
     "label": "Veikali: {region}",
-    "caption": "Daži veikali valstī {region}, kas pārdod glazūru izejvielas (pārbaudīts: {date})",
-    "nearbyCaption": "Veikali citās valstīs, kas norāda, ka piegādā uz valsti {region} (pārbaudīts: {date})",
+    "caption": "Daži veikali, kas pārdod glazūru izejvielas: {region} (pārbaudīts: {date})",
+    "nearbyCaption": "Veikali citur, kas norāda, ka piegādā arī uz šejieni: {region} (pārbaudīts: {date})",
     "shop": "Veikals",
     "sells": "Pārdod",
     "packs": "Redzētie iepakojumi",
@@ -87,15 +87,15 @@
       "glazes": "gatavas glazūras",
       "kilns": "krāsnis"
     },
-    "none": "Valstī {region} neatradām nevienu veikalu, kas pārdotu glazūru izejvielas.",
-    "unknown": "Veikalus valstī {region} vēl neesam meklējuši.",
+    "none": "{region}: neatradām nevienu veikalu, kas pārdotu glazūru izejvielas.",
+    "unknown": "{region}: veikalus vēl neesam meklējuši.",
     "choosePrompt": "Izvēlieties valsti, lai redzētu tās veikalus."
   },
   "silica": {
     "limitIn": "Robežvērtība:",
     "label": "Silīcija dioksīda robežvērtība: {region}",
-    "caption": "Ieelpojamā kristāliskā silīcija dioksīda robežvērtība darba vietā valstī {region}, 8 stundu vidējā vērtība (pārbaudīts: {date})",
-    "captionControl": "Mēraukla ieelpojamajam kristāliskajam silīcija dioksīdam darba zonas gaisā valstī {region} (pārbaudīts: {date})",
+    "caption": "Ieelpojamā kristāliskā silīcija dioksīda robežvērtība darba vietā, 8 stundu vidējā vērtība: {region} (pārbaudīts: {date})",
+    "captionControl": "Mēraukla ieelpojamajam kristāliskajam silīcija dioksīdam darba zonas gaisā: {region} (pārbaudīts: {date})",
     "both": "Kvarcs un kristobalīts",
     "freeSilica": "Brīvais silīcija dioksīds",
     "quartz": "Kvarcs",
@@ -131,8 +131,8 @@
     "sameAsEu": "Tāda pati kā ES saistošā robežvērtība.",
     "recommendedBy": "{abbr} ({by}) iesaka šo vērtību dokumentā <link>{title}</link>. Tā nav noteikta likumā.",
     "respirators": "Putekļu maskas šeit pārdod pēc klasēm: {everyday} glazūras putekļiem vai {higher} labākai aizsardzībai (<link>oficiālās klases</link>).",
-    "unknown": "Nevarējām pārliecināties, kāda robežvērtība noteikta valstī {region}. ES saistošā robežvērtība {value} mg/m³ ir spēkā visās dalībvalstīs.",
-    "noData": "Robežvērtību valstī {region} vēl neesam noskaidrojuši.",
+    "unknown": "{region}: nevarējām pārliecināties, kāda robežvērtība ir noteikta. ES saistošā robežvērtība {value} mg/m³ ir spēkā visās dalībvalstīs.",
+    "noData": "{region}: robežvērtību vēl neesam noskaidrojuši.",
     "agency": "Valsts iestāde, kas atbild par darba drošību: <link>{name}</link>.",
     "agencySilica": "Tās <link>lapa par silīcija dioksīdu</link>.",
     "choosePrompt": "Izvēlieties valsti, lai redzētu tās robežvērtību."
@@ -140,7 +140,7 @@
   "food": {
     "rulesIn": "Noteikumi:",
     "label": "Keramikas izstrādājumu robežvērtības: {region}",
-    "caption": "Cik daudz apdedzināts izstrādājums valstī {region} drīkst izdalīt likumā noteiktajā pārbaudē (pārbaudīts: {date})",
+    "caption": "Cik daudz apdedzināts izstrādājums drīkst izdalīt likumā noteiktajā pārbaudē: {region} (pārbaudīts: {date})",
     "article": "Izstrādājuma veids",
     "lead": "Svins",
     "cadmium": "Kadmijs",
@@ -208,13 +208,13 @@
     "inForce": "Spēkā stāšanās datums: {date}.",
     "atMost": "Izstrādājums atbilst prasībām, ja tas izdala ne vairāk par robežvērtību: likumā teikts “ne vairāk kā”.",
     "ppm": "ppm šeit nozīmē miligramus uz litru pārbaudes šķīduma (mg/L).",
-    "unknown": "Noteikumus valstī {region} vēl neesam noskaidrojuši.",
+    "unknown": "{region}: noteikumus vēl neesam noskaidrojuši.",
     "none": "{region}: nav likuma, kas noteiktu robežvērtības svinam un kadmijam, ko apdedzināts izstrādājums drīkst izdalīt (pārbaudīts: {date}).",
     "noneSource": "Avots: <link>{law}</link>.",
     "choosePrompt": "Izvēlieties valsti, lai redzētu tās noteikumus."
   },
   "equivalents": {
-    "buyingIn": "Iegādes valstis:",
+    "buyingIn": "Iegādes vieta:",
     "label": "{library, select, US {Līdzvērtīgas izejvielas, ko pārdod ASV} UK {Līdzvērtīgas izejvielas, ko pārdod Apvienotajā Karalistē} EU {Līdzvērtīgas izejvielas, ko pārdod ES} other {Līdzvērtīgas izejvielas, ko pārdod Austrālijā un Jaunzēlandē}}",
     "caption": "{library, select, US {Izejvielas, ko nepārdod ASV, un katrai tuvākā, ko tur pārdod} UK {Izejvielas, ko nepārdod Apvienotajā Karalistē, un katrai tuvākā, ko tur pārdod} EU {Izejvielas, ko nepārdod ES, un katrai tuvākā, ko tur pārdod} other {Izejvielas, ko nepārdod Austrālijā un Jaunzēlandē, un katrai tuvākā, ko tur pārdod}}",
     "material": "Receptē",

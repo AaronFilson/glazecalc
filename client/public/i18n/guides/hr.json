@@ -55,7 +55,7 @@
     "orCall": "ili <link>{number}</link>",
     "online": "Na internetu: <link>{name}</link>.",
     "poisonAdviceNone": "Savjeti pri otrovanju",
-    "noLine": "Za ovu zemlju nismo mogli potvrditi javnu telefonsku liniju za otrovanja. Nazovite svog liječnika ili, ako je hitno, broj za hitne slučajeve.",
+    "noLine": "Ovdje nismo mogli potvrditi javnu telefonsku liniju za otrovanja. Nazovite svog liječnika ili, ako je hitno, broj za hitne slučajeve.",
     "medicalAdvice": "Liječnički savjet: {name}",
     "animals": "Životinje: {name}",
     "animalsNone": "Životinje",
@@ -73,7 +73,7 @@
     "shopsIn": "Trgovine u",
     "label": "Trgovine: {region}",
     "caption": "Neke trgovine koje prodaju sirovine za glazure: {region} (provjereno {date})",
-    "nearbyCaption": "Trgovine u drugim zemljama koje navode da dostavljaju u ovu zemlju: {region} (provjereno {date})",
+    "nearbyCaption": "Trgovine drugdje koje navode da dostavljaju i ovamo: {region} (provjereno {date})",
     "shop": "Trgovina",
     "sells": "U ponudi",
     "packs": "Viđena pakiranja",
@@ -87,8 +87,8 @@
       "glazes": "gotove glazure",
       "kilns": "peći"
     },
-    "none": "U ovoj zemlji ({region}) nismo pronašli nijednu trgovinu koja prodaje sirovine za glazure.",
-    "unknown": "Trgovine u ovoj zemlji ({region}) još nismo tražili.",
+    "none": "{region}: nismo pronašli nijednu trgovinu koja prodaje sirovine za glazure.",
+    "unknown": "{region}: trgovine još nismo tražili.",
     "choosePrompt": "Odaberite svoju zemlju da biste vidjeli trgovine u njoj."
   },
   "silica": {
@@ -131,8 +131,8 @@
     "sameAsEu": "Jednaka obvezujućoj graničnoj vrijednosti EU-a.",
     "recommendedBy": "{abbr} ({by}) preporučuje ovu vrijednost u dokumentu <link>{title}</link>. To nije zakon.",
     "respirators": "Zaštitne maske protiv prašine ovdje se prodaju po klasama: {everyday} za prašinu glazure ili {higher} za veću zaštitu (<link>službene klase</link>).",
-    "unknown": "Nismo mogli potvrditi nacionalnu graničnu vrijednost u ovoj zemlji ({region}). Obvezujuća granična vrijednost EU-a od {value} mg/m³ primjenjuje se u svakoj državi članici.",
-    "noData": "Graničnu vrijednost u ovoj zemlji ({region}) još nismo potvrdili.",
+    "unknown": "{region}: nismo mogli potvrditi nacionalnu graničnu vrijednost. Obvezujuća granična vrijednost EU-a od {value} mg/m³ primjenjuje se u svakoj državi članici.",
+    "noData": "{region}: graničnu vrijednost još nismo potvrdili.",
     "agency": "Nacionalno tijelo za zaštitu na radu: <link>{name}</link>.",
     "agencySilica": "Njegova <link>stranica o silicijevu dioksidu</link>.",
     "choosePrompt": "Odaberite svoju zemlju da biste vidjeli njezinu graničnu vrijednost."
@@ -208,7 +208,7 @@
     "inForce": "Na snazi od {date}.",
     "atMost": "Proizvod zadovoljava ako ne otpušta više od granične vrijednosti: propis kaže „najviše”.",
     "ppm": "ppm ovdje znači miligrame po litri ispitne otopine (mg/L).",
-    "unknown": "Propise u ovoj zemlji ({region}) još nismo potvrdili.",
+    "unknown": "{region}: propise još nismo potvrdili.",
     "none": "{region}: nema zakona koji utvrđuje granične vrijednosti za olovo i kadmij koje pečeni predmet smije otpustiti (provjereno {date}).",
     "noneSource": "Izvor: <link>{law}</link>.",
     "choosePrompt": "Odaberite svoju zemlju da biste vidjeli njezine propise."

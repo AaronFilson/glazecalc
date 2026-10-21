@@ -227,7 +227,7 @@ takes the mutation and let the name follow in apposition, or use a word order th
   “Stáit Aontaithe Mheiriceá”), always in the nominative and often with its article. After “i” or “sa” it would change
   form (“in Éirinn”, “sa Ghearmáin”), so it never follows a preposition: put it after a colon, as a label: "Shops in
   {region}" → “Siopaí: {region}”; "The silica limit in {region}" → “Teorainn na silice: {region}”; "We have not yet
-  looked for shops in {region}." → “Níor chuardaíomar siopaí fós sa tír seo: {region}.”; "Who to call in {region}" →
+  looked for shops in {region}." → “{region}: níor chuardaíomar siopaí fós.” (never “sa tír seo”: Hong Kong and other places in the list are not countries, so never call {region} a country); "Who to call in {region}" →
   “Cé air a nglaofar: {region}” (calling is “glaoigh ar” or “cuir glao ar”, never “le”).
 - **{library}** is a `select` with fixed keys: write each branch in full Irish (“a dhíoltar sa Ríocht Aontaithe”).
 - **Figure placeholders** (`{count}`, `{year}`, `{value}`, `{most}`) stand for digits, which show no mutation, so a
@@ -811,8 +811,8 @@ preposition (section 1). Directive 84/500/EEC has no Irish text, so its kinds of
 
 | English                                                               | Irish                                                                                   | Where                                                   |
 | --------------------------------------------------------------------- | --------------------------------------------------------------------------------------- | ------------------------------------------------------- |
-| Shops in (the label before a list of countries)                       | Siopaí sa tír:                                                                          | guides: shops.shopsIn                                   |
-| Numbers for, Limit in, Rules in (labels before a list of countries)   | Uimhreacha sa tír:; Teorainn sa tír:; Rialacha sa tír:                                  | guides: poison.numbersFor, silica.limitIn, food.rulesIn |
+| Shops in (the label before a list of countries)                       | Siopaí:                                                                                 | guides: shops.shopsIn                                   |
+| Numbers for, Limit in, Rules in (labels before a list of countries)   | Uimhreacha:; Teorainn:; Rialacha:                                                       | guides: poison.numbersFor, silica.limitIn, food.rulesIn |
 | Checked on:                                                           | Seiceáilte:                                                                             | guides: poison.checkedOn                                |
 | raw glaze materials (what a shop sells)                               | amhábhair ghlónra                                                                       | guides: shops.what.materials                            |
 | ready-made glazes                                                     | glónraí réamhdhéanta                                                                    | guides: shops.what.glazes                               |
@@ -832,7 +832,7 @@ preposition (section 1). Directive 84/500/EEC has no Irish text, so its kinds of
 | Small hollowware, under 1.1 L, other than cups and mugs (US)          | Earraí tolla beaga, faoi 1.1 L, seachas cupáin agus mugaí                               | guides: food.category.smallHollow                       |
 | Large hollowware, 1.1 L or more, other than pitchers (US)             | Earraí tolla móra, 1.1 L nó níos mó, seachas crúscaí                                    | guides: food.category.largeHollow                       |
 | average of 6 pieces / any one of 6                                    | meán 6 phíosa / aon cheann de 6                                                         | guides: food.judged.average, food.judged.each           |
-| Buying in (the label before a list of countries)                      | Ag ceannach sa tír:                                                                     | guides: equivalents.buyingIn                            |
+| Buying in (the label before a list of countries)                      | Áit cheannaigh:                                                                         | guides: equivalents.buyingIn                            |
 | differs by {grams} g per 100 g                                        | difríocht {grams} g sa 100 g                                                            | guides: equivalents.apart                               |
 | Directive 84/500/EEC (its official name)                              | Treoir 84/500/CEE ón gComhairle (arna leasú le Treoir 2005/31/CE ón gCoimisiún)         | regions: the directive                                  |
 | Latvia's law gives this limit for the inhalable fraction of the dust. | Tugann dlí na Laitvia an teorainn seo don chodán in-ionanálaithe den deannach.          | regions: Latvia                                         |

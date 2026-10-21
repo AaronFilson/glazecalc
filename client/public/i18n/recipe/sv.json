@@ -364,7 +364,7 @@
     "intro": "Som varje råvaras post anger dem; standardbibliotekets kommer från leverantörernas säkerhetsdatablad.",
     "line": "<b>{names}:</b> {hazards}",
     "unknown": "{count, plural, one {Inga faror anges för {list}: se säkerhetsdatabladet som följer med.} other {Inga faror anges för {list}: se säkerhetsdatabladen som följer med.}}",
-    "safety": "Torra glasyrråvaror ger damm, och det måste hållas borta från lungorna, även damm från råvaror som inte är klassificerade som farliga. Se <mixing>Säker blandning och ventilation</mixing> och, om det finns barn eller husdjur i närheten, även <home>Förgifta inte familjen</home>. Där en råvaras säkerhetsdatablad säger mer, följ det."
+    "safety": "Torra glasyrråvaror ger damm, och det måste hållas borta från lungorna, även damm från råvaror som inte är klassificerade som farliga. Se <mixing>Säker blandning och ventilation</mixing>. Om det finns barn eller husdjur i närheten, se även <home>Förgifta inte familjen</home>. Där en råvaras säkerhetsdatablad säger mer, följ det."
   },
   "compare": {
     "heading": "Jämför två recept",

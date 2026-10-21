@@ -9,7 +9,13 @@ import { TranslatedTitles } from './titles';
 
 describe('TranslatedTitles', () => {
   const FILES: Record<string, Record<string, string>> = {
-    en: { 'titles.guides': 'Guides', 'meta.description': 'The site', 'meta.guides': 'About guides' },
+    en: {
+      'titles.guides': 'Guides',
+      'titles.material': '{name}: analysis',
+      'meta.description': 'The site',
+      'meta.guides': 'About guides',
+      'meta.material': 'All about {name}.'
+    },
     de: { 'titles.guides': 'Anleitungen', 'meta.description': 'Die Seite', 'meta.guides': 'Über Anleitungen' },
     fr: { 'titles.guides': 'Guides', 'meta.description': 'Le site' }
   };
@@ -35,7 +41,8 @@ describe('TranslatedTitles', () => {
             getActiveLang: () => language,
             getTranslation: (lang: string) => FILES[lang] ?? {},
             // A language without the message shows the English, as the app does.
-            translate: (key: string) => FILES[language]?.[key] ?? FILES['en']![key]
+            translate: (key: string, params?: Record<string, string>) =>
+              (FILES[language]?.[key] ?? FILES['en']![key])?.replace(/\{(\w+)\}/g, (_, name) => params?.[name] ?? '')
           }
         }
       ]
@@ -70,6 +77,20 @@ describe('TranslatedTitles', () => {
     update('meta.guides');
     expect(read('name="description"')).toBe('Le site');
     expect(read('property="og:description"')).toBe('Le site');
+  });
+
+  it("puts a page's own values in its title and description (a material's name)", () => {
+    const { read, title } = setup('en');
+    const strategy = TestBed.inject(TranslatedTitles);
+    vi.spyOn(strategy, 'buildTitle').mockReturnValue('titles.material');
+    // The values and the description's key come from resolvers: they are in the route's data.
+    const data = { description: 'meta.material', titleParams: { name: 'Silica' } };
+    strategy.updateTitle({
+      root: { data: {}, firstChild: { data, firstChild: null } }
+    } as unknown as RouterStateSnapshot);
+    expect(title()).toBe('Silica: analysis');
+    expect(read('name="description"')).toBe('All about Silica.');
+    expect(read('property="og:title"')).toBe('Silica: analysis');
   });
 
   it('adds no tags the page does not have', () => {

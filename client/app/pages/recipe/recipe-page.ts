@@ -27,6 +27,7 @@ import { AsksBeforeLeaving } from '../../core/leave.guard';
 import { Additive, AdditiveUnit, Firing, FiringLink, Material, Recipe, RecipeMaterial } from '../../core/models';
 import { PreferencesService } from '../../core/preferences.service';
 import { LocaleService } from '../../core/locale.service';
+import { PendingRecipeService } from '../../core/pending-recipe.service';
 import { ShelfService } from '../../core/shelf.service';
 import { RichText } from '../../i18n/rich-text';
 import { Busy } from '../../shared/busy';
@@ -335,6 +336,7 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
   private readonly location = inject(Location);
   private readonly preferences = inject(PreferencesService);
   private readonly shelf = inject(ShelfService);
+  private readonly pendingRecipe = inject(PendingRecipeService);
   private readonly weightUnit = this.preferences.weightUnit;
   /** Lead is off in Settings: materials with lead are not listed to add, or suggested. */
   protected readonly leadOff = computed(() => this.preferences.lead() === 'off');
@@ -823,6 +825,23 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
     this.loadMyAdditives();
     this.loadStandardAdditives();
     this.loadMyRecipes();
+    const handed = this.pendingRecipe.take();
+    if (handed) this.openHanded(handed);
+  }
+
+  /**
+   * A recipe made on another page (Solve for a target's "Open as a new recipe"),
+   * opened here as a new recipe, not saved yet: leaving asks first, as for any change.
+   */
+  private openHanded(recipe: Recipe): void {
+    this.reset();
+    this.title.set(recipe.title);
+    this.notes.set(firstOf(recipe.notes));
+    this.lines.set(copy(recipe.materials ?? []));
+    this.additiveLines.set(copy(recipe.additives ?? []));
+    this.firing.set(recipe.firing ?? '');
+    this.announcement.set(translate('recipe.page.handedOpened', { title: recipe.title }));
+    this.focusTitle();
   }
 
   /** Asks again for each of the account's own lists that could not be fetched. */
@@ -901,6 +920,19 @@ export class RecipePage implements OnInit, AsksBeforeLeaving {
     this.suggestQuestion.set(null);
     this.leadQuestion.set(null);
     this.shelfOpen.set(false);
+  }
+
+  /**
+   * Enter in an amount: that line is done, so the focus goes back to the list the next one is added from (its
+   * filter field, which a screen reader names). Enter did nothing here before, and there is no form to send.
+   * An amount missing or unreadable keeps the focus, marked, with its problem said.
+   */
+  protected amountEntered(event: Event, kind: 'material' | 'additive', index: number): void {
+    // Enter that ends a composition (Chinese, Japanese, Korean) belongs to it.
+    if ((event as KeyboardEvent).isComposing) return;
+    event.preventDefault();
+    if (!this.checks.confirm(kind + '-amount-' + index)) return;
+    document.getElementById(kind + 's-filter')?.focus();
   }
 
   protected removeMaterial(index: number): void {

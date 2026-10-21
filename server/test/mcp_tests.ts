@@ -135,6 +135,7 @@ const PUBLIC_TOOLS = [
   'match_from_materials',
   'search_guides',
   'search_materials',
+  'solve_target',
   'suggest_substitutes'
 ];
 const ACCOUNT_TOOLS = [
@@ -184,14 +185,48 @@ describe('MCP: the endpoint', () => {
     expect(answer.headers.get('cache-control')).to.match(/^no-store/);
   });
 
-  it('lists the public tools, read-only, and no account tools without a token', async () => {
-    expect(await toolNames()).to.eql(PUBLIC_TOOLS);
+  it('lists every tool without a token, each with a title and all its hints, as with one', async () => {
+    // The person's own tools too, so an app knows they exist and asks to sign in when one is called.
+    expect(await toolNames()).to.eql([...PUBLIC_TOOLS, ...ACCOUNT_TOOLS, ...WRITE_TOOLS].sort());
     const tools = ((await rpc('tools/list')).body!.result as { tools: Json[] }).tools;
+    const { user } = await makeUser();
+    const withToken = (
+      (await rpc('tools/list', {}, bearer(await makeToken(user, { scopes: ['data:write'] })))).body!.result as {
+        tools: Json[];
+      }
+    ).tools;
+    expect(tools).to.eql(withToken);
     for (const tool of tools) {
-      expect(tool.annotations, tool.name).to.include({ readOnlyHint: true, destructiveHint: false });
+      const reads = !WRITE_TOOLS.includes(tool.name);
+      // What the directories ask of every tool: a title, and readOnlyHint, destructiveHint and openWorldHint set.
+      expect(tool.title, tool.name).to.be.a('string').and.have.length.above(5);
+      expect(tool.name.length, tool.name).to.be.at.most(64);
+      expect(tool.annotations, tool.name).to.include({ readOnlyHint: reads, openWorldHint: false });
+      expect(tool.annotations.destructiveHint, tool.name).to.be.a('boolean');
+      if (reads) expect(tool.annotations.destructiveHint, tool.name).to.equal(false);
       expect(tool.description, tool.name).to.be.a('string').and.have.length.above(40);
       expect(tool.inputSchema.type, tool.name).to.equal('object');
     }
+  });
+
+  it('asks for sign-in, 401 before the SDK, when a tool for the person’s own records is called with no token', async () => {
+    const before = await Recipe.countDocuments();
+    for (const name of [...ACCOUNT_TOOLS, ...WRITE_TOOLS]) {
+      const answer = await rpc('tools/call', { name, arguments: {} });
+      expect(answer.status, name).to.equal(401);
+      const challenge = answer.headers.get('www-authenticate')!;
+      expect(challenge, name).to.match(/^Bearer realm="glazecalc", error="invalid_token", error_description="[^"]+"/);
+      expect(challenge, name).to.include(
+        'resource_metadata="https://glazecalc.test/.well-known/oauth-protected-resource/mcp"'
+      );
+      expect(challenge, name).to.include(
+        WRITE_TOOLS.includes(name) ? 'scope="data:read data:write"' : 'scope="data:read"'
+      );
+      expect(answer.body!.result, name).to.equal(undefined);
+    }
+    expect(await Recipe.countDocuments()).to.equal(before);
+    // The public tools are answered as before.
+    expect((await call('search_materials', { query: 'silica' })).isError).to.not.equal(true);
   });
 
   it('answers only POST: GET, DELETE and the rest are 405', async () => {
@@ -681,6 +716,81 @@ describe('MCP: the public tools', () => {
     const unknown = await call('match_from_materials', { lines, have: ON_HAND, allowMore: ['Moon dust'] });
     expect(unknown.isError).to.equal(true);
   });
+
+  // A cone 6 glossy base's unity formula (Custer Spar 40, Whiting 20, EPK 20, Silica 20).
+  const GLOSSY_UNITY = recipe.unityOf(
+    recipe.molesOf(LINES.map((line) => ({ ...findMaterial(line.material)!, amount: String(line.amount) })))
+  );
+
+  it('solve_target makes a recipe in percent for a target unity formula, and says how near it comes', async () => {
+    resetFits();
+    const solved = await data('solve_target', {
+      target: { kind: 'unity', oxides: GLOSSY_UNITY },
+      materials: ['Custer Spar', 'Whiting', 'EPK', 'Silica', 'Talc', 'Ferro Frit 3134']
+    });
+    const percent = (name: string) =>
+      (solved.recipe as Array<{ material: string; percent: number }>).find((line) => line.material === name)?.percent ??
+      0;
+    expect(percent('Custer Spar')).to.be.closeTo(40, 1);
+    expect(percent('EPK Kaolin')).to.be.closeTo(20, 1);
+    expect(percent('Ferro Frit 3134')).to.equal(0);
+    const total = (solved.recipe as Array<{ percent: number }>).reduce((sum, line) => sum + line.percent, 0);
+    expect(total).to.be.closeTo(100, 0.3);
+    expect(solved.closeness.verdict).to.equal('close');
+    expect(solved.closeness.summary).to.match(/^Close: every oxide of the recipe's unity formula is within/);
+    const silica = solved.closeness.oxides.find((row: { oxide: string }) => row.oxide === 'SiO2');
+    expect(silica).to.include.keys('target', 'recipe', 'difference', 'percent', 'verdict');
+    expect(solved.unityFormula.SiO2).to.be.closeTo(GLOSSY_UNITY.SiO2!, 0.05);
+    expect(solved.target.SiO2).to.be.closeTo(GLOSSY_UNITY.SiO2!, 0.001);
+    expect(solved.note).to.include('test-fire');
+    expect(solved.uses.map((use: { material: string }) => use.material)).to.include('Custer Spar');
+  });
+
+  it('solve_target takes an oxide analysis and a firing, and names what nothing given supplies', async () => {
+    resetFits();
+    // A cone 6 boron glaze's fired analysis, with no boron among the materials.
+    const solved = await data('solve_target', {
+      target: { kind: 'analysis', oxides: { SiO2: 58, Al2O3: 14, B2O3: 8, CaO: 10, Na2O: 4, K2O: 3 } },
+      materials: ['Custer Spar', 'Whiting', 'EPK', 'Silica'],
+      firing: { cone: '6' }
+    });
+    expect(solved.unreachable).to.eql(['B2O3']);
+    expect(solved.closeness.verdict).to.equal('poor');
+    expect(solved.closeness.summary).to.include('Nothing given supplies B2O3.');
+    expect(solved.cautions).to.be.an('array');
+    // A unity formula whose fluxes do not add up to 1 is scaled, and says so.
+    const doubled = await data('solve_target', {
+      target: { kind: 'unity', oxides: { K2O: 0.6, CaO: 1.4, Al2O3: 0.8, SiO2: 6.4 } },
+      materials: ['Custer Spar', 'Whiting', 'EPK', 'Silica']
+    });
+    expect(doubled.scaled).to.include('added up to 2');
+    expect(doubled.target.SiO2).to.be.closeTo(3.2, 0.001);
+  });
+
+  it('solve_target refuses with words: unknown materials or oxides, KNaO, no flux, on hand without a token', async () => {
+    resetFits();
+    const refused = async (args: object) => {
+      const result = await call('solve_target', args);
+      expect(result.isError, JSON.stringify(args)).to.equal(true);
+      return result.content[0]!.text;
+    };
+    const unity = { kind: 'unity', oxides: GLOSSY_UNITY };
+    expect(await refused({ target: unity, materials: ['Moon dust'] })).to.include('Not in the library: Moon dust');
+    expect(await refused({ target: { kind: 'unity', oxides: { Xx2O: 1 } }, materials: ['Silica'] })).to.equal(
+      'Xx2O is not an oxide Glazecalc knows.'
+    );
+    expect(
+      await refused({ target: { kind: 'unity', oxides: { KNaO: 0.3, CaO: 0.7 } }, materials: ['Silica'] })
+    ).to.include('not together as KNaO');
+    expect(await refused({ target: { kind: 'unity', oxides: { SiO2: 3 } }, materials: ['Silica'] })).to.include(
+      'at least one flux'
+    );
+    expect(await refused({ target: unity })).to.equal('Name the materials to use.');
+    expect(await refused({ target: unity, onHand: true })).to.include('need a token or connected app');
+    expect(await refused({ target: unity, materials: ['Silica'], mustUse: ['Whiting'] })).to.include(
+      'mustUse names materials not given: Whiting'
+    );
+  });
 });
 
 describe('MCP: blend_recipes', () => {
@@ -1167,9 +1277,15 @@ describe('MCP: personal access tokens', () => {
     const basic = await rpc('tools/list', {}, { authorization: 'Basic dXNlcjpwYXNz' });
     expect(basic.status).to.equal(401);
     expect(basic.headers.get('www-authenticate')).to.include('error="invalid_request"');
-    // A session cookie riding along is not read: the public tools only.
-    expect(await toolNames({ cookie: 'glazecalc_session=' + session })).to.eql(PUBLIC_TOOLS);
-    expect(await toolNames({ cookie: 'glazecalc_session=' + trial })).to.eql(PUBLIC_TOOLS);
+    // A session cookie riding along is not read: the person's own tools still ask to sign in.
+    for (const cookie of [session, trial]) {
+      const answer = await rpc(
+        'tools/call',
+        { name: 'list_recipes', arguments: {} },
+        { cookie: 'glazecalc_session=' + cookie }
+      );
+      expect(answer.status).to.equal(401);
+    }
   });
 
   describe('the read tools', () => {
@@ -1453,6 +1569,21 @@ describe('MCP: personal access tokens', () => {
       expect(names).to.not.include('Custer Spar');
       expect(names).to.include('Minspar 200');
       expect((await call('match_with_what_i_have', {}, headers)).isError).to.equal(true);
+    });
+
+    it('solve_target makes a recipe from the account’s shelf with onHand', async () => {
+      resetFits();
+      const target = {
+        kind: 'unity',
+        oxides: { K2O: 0.15, Na2O: 0.15, CaO: 0.7, Al2O3: 0.4, SiO2: 3.2 }
+      };
+      const solved = await data('solve_target', { target, onHand: true }, headers);
+      const names = solved.recipe.map((line: { material: string }) => line.material);
+      expect(names).to.include('Minspar 200');
+      expect(names).to.not.include('Custer Spar');
+      // Named materials are offered as well.
+      const more = await data('solve_target', { target, onHand: true, materials: ['Custer Spar'] }, headers);
+      expect(more.closeness.oxides.length).to.be.above(3);
     });
   });
 });

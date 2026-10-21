@@ -73,7 +73,7 @@
     "shopsIn": "Leveranciers in",
     "label": "Leveranciers: {region}",
     "caption": "Enkele leveranciers die glazuurgrondstoffen verkopen: {region} (gecontroleerd op {date})",
-    "nearbyCaption": "Leveranciers in andere landen die naar eigen zeggen naar dit land leveren: {region} (gecontroleerd op {date})",
+    "nearbyCaption": "Leveranciers elders die naar eigen zeggen ook hierheen leveren: {region} (gecontroleerd op {date})",
     "shop": "Leverancier",
     "sells": "Assortiment",
     "packs": "Gevonden verpakkingen",

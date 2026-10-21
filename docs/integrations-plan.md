@@ -76,7 +76,7 @@ Documents (SHOULD). Still to do: the notice's other languages (39) and the real-
 42. **OpenRouter PKCE** for other models, OpenAI included. S (1–2 d).
 43. **`move_to_trash` over MCP** with elicitation confirmation. S (1 d).
 44. **GitHub secret-scanning partner endpoint** `/api/token-leak`. S (1–2 d plus GitHub's wait).
-45. **Directory submissions** (Claude Connectors, ChatGPT apps) and an MCP Apps UMF widget. S–M.
+45. **Directory submissions** (Claude Connectors, ChatGPT apps) and an MCP Apps UMF widget. S–M. Prepared 2026-10-20 in [integrations/directories.md](integrations/directories.md): requirements, gaps, listings, the reviewers' accounts and the staging test; the widget is optional for both.
 46. **Passkeys** in the same "Sign-in methods" section, using `@simplewebauthn/server`. M.
 47. **`/api/v1` and OpenAPI**, only if script users ask. S–M (2–3 d).
 

@@ -73,7 +73,7 @@
     "shopsIn": "Händler in",
     "label": "Händler: {region}",
     "caption": "Einige Händler für Glasurrohstoffe: {region} (geprüft am {date})",
-    "nearbyCaption": "Händler in anderen Ländern, die nach eigener Angabe in dieses Land liefern: {region} (geprüft am {date})",
+    "nearbyCaption": "Händler anderswo, die nach eigener Angabe auch hierher liefern: {region} (geprüft am {date})",
     "shop": "Händler",
     "sells": "Sortiment",
     "packs": "Gefundene Packungsgrößen",

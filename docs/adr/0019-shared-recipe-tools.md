@@ -36,6 +36,7 @@ Node and the Angular build both load, typed by hand-written declarations, one pe
 | `pool.js`        | A selection's explanation and the recipe it makes                                          |
 | `suggest.js`     | `planSuggestion` and `suggestAmounts`                                                      |
 | `shelf.js`       | `matchFromShelf`                                                                           |
+| `solve.js`       | `solveTarget`: a recipe for a target unity formula or analysis; `parseTarget` reads one    |
 | `lead.js`        | `leadFreeBases`, `replaceLead`, `leadIn`                                                   |
 | `messages.js`    | Message codes, figures, and writing them for a locale                                      |
 | `paste.js`       | Paste-in import: `parsePaste` reads pasted text or CSV, `matchName` finds each name        |

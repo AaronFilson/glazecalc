@@ -5,6 +5,12 @@ import { askBeforeLeaving } from './core/leave.guard';
 import { signInThenBackGuard, signedInGuard, visitorsOnlyGuard } from './core/signed-in.guard';
 import { scopeTranslations } from './i18n/provide-i18n';
 import { guideText } from './pages/guides/guide-text';
+import {
+  knownMaterial,
+  materialDescriptionKey,
+  materialOf,
+  materialTitleParams
+} from './pages/materials/material-route';
 
 // Each title is the key of its message (i18n/titles.ts), and a public page's
 // data.description the key of its description. Each route names the
@@ -59,7 +65,7 @@ export const routes: Routes = [
     path: 'guides/safe-mixing',
     title: marker('titles.safeMixing'),
     providers: [provideTranslocoScope('guides', 'regions')],
-    data: { description: marker('meta.safeMixing'), guide: 'safe-mixing', safety: true },
+    data: { description: marker('meta.safeMixing'), guide: 'safe-mixing', safety: true, related: ['materials'] },
     resolve: { messages: scopeTranslations, text: guideText },
     loadComponent: () => import('./pages/guides/guide-page').then((m) => m.GuidePage)
   },
@@ -67,7 +73,7 @@ export const routes: Routes = [
     path: 'guides/home-safety',
     title: marker('titles.homeSafety'),
     providers: [provideTranslocoScope('guides', 'safety')],
-    data: { description: marker('meta.homeSafety'), guide: 'home-safety', safety: true },
+    data: { description: marker('meta.homeSafety'), guide: 'home-safety', safety: true, related: ['materials'] },
     resolve: { messages: scopeTranslations, text: guideText },
     loadComponent: () => import('./pages/guides/guide-page').then((m) => m.GuidePage)
   },
@@ -75,7 +81,7 @@ export const routes: Routes = [
     path: 'guides/firing',
     title: marker('titles.firing'),
     providers: [provideTranslocoScope('guides')],
-    data: { description: marker('meta.firing'), guide: 'firing' },
+    data: { description: marker('meta.firing'), guide: 'firing', related: ['cones'] },
     resolve: { messages: scopeTranslations, text: guideText },
     loadComponent: () => import('./pages/guides/guide-page').then((m) => m.GuidePage)
   },
@@ -87,6 +93,39 @@ export const routes: Routes = [
     data: { description: marker('meta.learnWithJohnBritt'), guide: 'learn-with-john-britt', englishOnly: true },
     resolve: { messages: scopeTranslations, text: guideText },
     loadComponent: () => import('./pages/guides/guide-page').then((m) => m.GuidePage)
+  },
+  // The cone chart, and a page for each standard material: in English only, like the guide above
+  // (lib/pages.js, ENGLISH_ONLY_PAGES). /materials/<name> is apart from the signed-in /material page.
+  {
+    path: 'cones',
+    title: marker('titles.cones'),
+    data: { description: marker('meta.cones') },
+    providers: [provideTranslocoScope('reference')],
+    resolve: { messages: scopeTranslations },
+    loadComponent: () => import('./pages/materials/cones-page').then((m) => m.ConesPage)
+  },
+  {
+    path: 'materials',
+    pathMatch: 'full',
+    title: marker('titles.materials'),
+    data: { description: marker('meta.materials') },
+    providers: [provideTranslocoScope('reference')],
+    resolve: { messages: scopeTranslations },
+    loadComponent: () => import('./pages/materials/materials-page').then((m) => m.MaterialsPage)
+  },
+  {
+    // An address that is no standard material's falls through to the not-found page (canMatch).
+    path: 'materials/:slug',
+    title: marker('titles.materialInfo'),
+    canMatch: [knownMaterial],
+    providers: [provideTranslocoScope('reference')],
+    resolve: {
+      messages: scopeTranslations,
+      material: materialOf,
+      titleParams: materialTitleParams,
+      description: materialDescriptionKey
+    },
+    loadComponent: () => import('./pages/materials/material-info-page').then((m) => m.MaterialInfoPage)
   },
   {
     path: 'about',
@@ -202,6 +241,15 @@ export const routes: Routes = [
     providers: [provideTranslocoScope('recipe', 'records')],
     resolve: { messages: scopeTranslations },
     loadComponent: () => import('./pages/blends/blends-page').then((m) => m.BlendsPage)
+  },
+  {
+    // Target & Solve (docs/adr/0026-target-and-solve.md): a recipe from a target unity formula or analysis.
+    path: 'solve',
+    title: marker('titles.solve'),
+    canActivate: [signedInGuard],
+    providers: [provideTranslocoScope('recipe', 'records')],
+    resolve: { messages: scopeTranslations },
+    loadComponent: () => import('./pages/solve/solve-page').then((m) => m.SolvePage)
   },
   {
     path: 'material',

@@ -8,6 +8,7 @@ import { AuthService } from '../../core/auth.service';
 import { routes } from '../../app.routes';
 import { askBeforeLeaving } from '../../core/leave.guard';
 import { Additive, Material, Recipe, RecipeMaterial } from '../../core/models';
+import { PendingRecipeService } from '../../core/pending-recipe.service';
 import { PreferencesService } from '../../core/preferences.service';
 import { answer, API, fieldProblem, httpMock, settle, testProviders, text } from '../../testing/test-providers';
 import { MOLAR_MASS } from '../../../../lib/chemistry';
@@ -122,6 +123,32 @@ describe('RecipePage', () => {
     if (!button) throw new Error('no button ' + label);
     button.click();
   };
+
+  it('opens a recipe handed over by Solve for a target as a new recipe, not saved yet, and links to it', async () => {
+    TestBed.inject(PendingRecipeService).put({
+      title: 'Solved for a target',
+      notes: 'Made by Solve for a target.',
+      materials: [
+        { ...WHITING, amount: '20.0' },
+        { ...SILICA, amount: '80.0' }
+      ],
+      firing: 'mid'
+    });
+    const { fixture, page } = await create();
+    expect(page['title']()).toBe('Solved for a target');
+    expect(page['notes']()).toBe('Made by Solve for a target.');
+    expect(page['lines']().map((line: Material) => line.name)).toEqual(['Whiting', 'Silica']);
+    expect(page['firing']()).toBe('mid');
+    expect(page['savedId']()).toBeNull();
+    expect(text(fixture, '.recipe-status')).toBe('Not saved yet');
+    // Taken once: the next visit starts empty.
+    expect(TestBed.inject(PendingRecipeService).take()).toBeNull();
+    const links = [...(fixture.nativeElement as HTMLElement).querySelectorAll('.recipe-tools a')];
+    expect(links.map((a) => [a.textContent?.trim(), a.getAttribute('href')])).toContainEqual([
+      'Solve for a target',
+      '/solve'
+    ]);
+  });
 
   it("lists the hazards of the recipe's materials from the library as it is now, and offers its cost", async () => {
     const fixture = TestBed.createComponent(RecipePage);
@@ -958,6 +985,42 @@ describe('RecipePage', () => {
     page['addMaterial'](SILICA);
     page['setAmount'](1, '30');
     await tryToSave('Not saved: Recipe contains no flux oxides, so the UMF is undefined');
+    httpMock().expectNone(API + '/recipe/create');
+  });
+
+  it('sends the focus back to the list to add from on Enter in an amount, once the amount is right', async () => {
+    const { fixture, page } = await create();
+    const root = fixture.nativeElement as HTMLElement;
+    const enter = async (id: string, init: KeyboardEventInit = {}) => {
+      const field = root.querySelector<HTMLInputElement>('#' + id)!;
+      field.focus();
+      const event = new KeyboardEvent('keydown', { key: 'Enter', bubbles: true, cancelable: true, ...init });
+      field.dispatchEvent(event);
+      await fixture.whenStable();
+      return event;
+    };
+    page['addMaterial'](WHITING);
+    await fixture.whenStable();
+    // Empty: it stays, marked, and nothing is sent.
+    const empty = await enter('material-amount-0');
+    expect(empty.defaultPrevented).toBe(true);
+    expect(document.activeElement?.id).toBe('material-amount-0');
+    expect(fieldProblem(fixture, 'material-amount-0')).toBe('Enter an amount (0 is fine).');
+    // An Enter that ends a composition is left to it.
+    page['setAmount'](0, '20');
+    await fixture.whenStable();
+    const composing = await enter('material-amount-0', { isComposing: true });
+    expect(composing.defaultPrevented).toBe(false);
+    expect(document.activeElement?.id).toBe('material-amount-0');
+    await enter('material-amount-0');
+    expect(document.activeElement?.id).toBe('materials-filter');
+    expect(fieldProblem(fixture, 'material-amount-0')).toBe('');
+    // An additive's amount goes back to the additives' list.
+    page['addAdditive'](IRON);
+    page['setAdditiveAmount'](0, '2');
+    await fixture.whenStable();
+    await enter('additive-amount-0');
+    expect(document.activeElement?.id).toBe('additives-filter');
     httpMock().expectNone(API + '/recipe/create');
   });
 

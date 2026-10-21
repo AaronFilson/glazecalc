@@ -13,6 +13,32 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   the Latin full stop (the owner's choice). Each was translated, reviewed in six groups, made consistent across its files
   and back-translated blind (the safety guides and every warning); a native potter's check of the terms marked in the
   style sheets is still welcome. The README counts 34 languages.
+- **Target & Solve** (docs/adr/0026-target-and-solve.md). A new page, Solve for a target (`/solve`,
+  linked from the recipe page and from Match with what I have): type a unity formula or an oxide
+  analysis, or paste one from another app, and get a recipe in percent from the materials you have
+  on hand (or any you choose), with how near each oxide comes (close, off or far, and the whole
+  close, fair or poor), what each material does, the cautions the recipe page gives, the limits
+  panel and the hazards. "Open as a new recipe" puts it on the recipe page, not saved yet. It runs
+  on the same engine as Match with what I have (`solveTarget` in `lib/recipe/solve.js`). The MCP
+  server has it as `solve_target`, a public tool: the materials by name, or `onHand` for a caller
+  that may read the shelf. English only.
+- **A public page for each standard material, a list of them, and a cone chart** (docs/seo-plan.md,
+  item 17), the pages potters search for. `/materials/<name>` (for example
+  `/materials/ferro-frit-3134`) says what the library says of one of its 170 standard materials and
+  nothing more: its kind, formula, other names, maker, where it is sold, similar materials (linked where
+  they have a page), notes, source and status; its oxide analysis and the unity contribution Glazecalc works
+  out from it (the same code the recipe page uses), with its equivalent weight, fired weight and loss on
+  ignition; and its hazards as the record gives them, with links to the two safety guides, and a link to the
+  recipe calculator. `/materials` lists them by kind. `/cones` shows Orton's cones 022 to 15 (the older
+  chart Glazecalc checks by, with its heating rate and source), Orton's own current figures by cone kind
+  and heating rate, and the SK cones to 20 with their nominal JIS temperatures, in °C and °F, the reader's
+  cones and scale first; the firing guide, the guides list and the safety guides link to them. The addresses are
+  apart from the signed-in `/material` page of your own materials. Each is prerendered, in the sitemap, with
+  its own title, description, canonical address and structured data (a web page with its trail), is
+  readable with JavaScript off, and has no sideways scroll at 320 px. English only for now: they are in
+  `ENGLISH_ONLY_PAGES`, so other languages' addresses show the English with a notice and are not indexed, only
+  the English is in the sitemap, and the build renders them in English alone. Their words are in
+  `client/public/i18n/reference/en.json`, for a later translation wave.
 - **Higher cones, for porcelain** (docs/adr/0021-recipe-firing.md, amended
   2026-10-20). Orton cones have a temperature to cone 15 (1431 °C, Orton's older chart for large
   cones at 150 °C an hour, the only Orton figure above 14 we found); cones 16 to 42 are taken
@@ -821,6 +847,33 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Changed
 
+- **Enter in a recipe amount goes back to the list to add from.** With an amount typed, Enter in a
+  material's amount moves the focus to the materials list's filter, ready for the next one (an
+  additive's amount to the additives' list). Before, Enter did nothing there, and it still sends no
+  form. A missing or unreadable amount keeps the focus, marked, and its problem is said to screen
+  readers.
+- **The recipe's safety note puts the condition on the home-safety guide only**: "See Safe mixing
+  and ventilation. If children or pets are about, see Don't poison your family too." Every live
+  language says the same (the translations whose sentence could be read as covering both links are
+  rewritten, Arabic and Hindi among them; the others keep their words), and the fingerprints follow
+  the new English.
+- **Hong Kong is not called a country.** The guides' region messages (shops, the silica limit,
+  food-contact rules, poison lines, materials sold nearby) and their labels said "this country" or
+  "the country {region}" in many languages; they now put the place after a colon or say "here", as
+  the English does, in Czech, Slovak, Slovenian, Polish, Estonian, Irish, Latvian, Turkish, Finnish,
+  Italian, French, Croatian, Greek, Hungarian, Lithuanian, Maltese, German, Spanish, Portuguese,
+  Dutch and Bulgarian, and Japanese, Korean and Chinese say "country or region". The style sheets
+  that told translators to call {region} a country say otherwise now. Also: Slovenian "Velja od
+  {date}" follows its own date rule ("Začetek veljavnosti: {date}"), and two Korean safe-mixing
+  lines read "should" as "should" again, not "must".
+- **Assistants ask you to sign in when they need your records** (docs/adr/0024, "Amended: sign-in
+  when a tool needs it"). Without a token, the MCP endpoint now lists the tools that read and change
+  your own records too, with the same titles and hints; calling one answers HTTP 401 with the
+  challenge that sends the app to Glazecalc's sign-in and consent page (`data:read`, and
+  `data:write` too for a tool that changes records, still unticked on the page). Claude starts
+  sign-in only on such a 401, so before this a Claude custom connector never offered to connect.
+  The public tools still need nothing. Server instructions say so. The directory submissions are
+  prepared in `docs/integrations/directories.md`.
 - **A match says how near it comes, and keeps raw clay where its own check wants it**
   (docs/adr/0012, "Amended: how near a match comes"). In a staging test an assistant asked to
   replace Gerstley Borate read `match_from_materials`' score (a miss of 20.5) as a wide miss and

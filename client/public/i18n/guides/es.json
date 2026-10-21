@@ -73,7 +73,7 @@
     "shopsIn": "Tiendas en",
     "label": "Tiendas en {region}",
     "caption": "Algunas tiendas de {region} que venden materias primas para esmaltes (comprobadas el {date})",
-    "nearbyCaption": "Tiendas de otros países que dicen hacer envíos a {region} (comprobadas el {date})",
+    "nearbyCaption": "Tiendas de otros lugares que dicen hacer envíos a {region} (comprobadas el {date})",
     "shop": "Tienda",
     "sells": "Vende",
     "packs": "Formatos vistos",

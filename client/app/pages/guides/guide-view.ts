@@ -15,7 +15,7 @@ import { StructuredData, article, pageAddress } from '../../shared/structured-da
 import { GuideContents, SectionLinks } from './guide-contents';
 import { Block, Guide, GuideSection, Inline, Reading, blocks } from './guide-document';
 import { GuideInline, GuideRow, InlineContext } from './guide-inline';
-import { GUIDES } from './guides-page';
+import { GUIDES, REFERENCE_PAGES, ReferencePage } from './guides-page';
 import { FoodLimits } from './food-limits';
 import { LocalEquivalents } from './local-equivalents';
 import { PoisonLines } from './poison-lines';
@@ -55,6 +55,8 @@ export class GuideView implements InlineContext {
   readonly guide = input.required<Guide>();
   /** The language the text is in, where it is not the page's (a guide not translated yet). */
   readonly textLanguage = input<string | null>(null);
+  /** Reference pages the guide points to, after its text (guides-page.ts, REFERENCE_PAGES). */
+  readonly related = input<ReadonlyArray<(typeof REFERENCE_PAGES)[ReferencePage]>>([]);
 
   private readonly locale = inject(LocaleService);
   private readonly router = inject(Router);

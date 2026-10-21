@@ -11,10 +11,16 @@
 // canonical, the others are noindex, and none has hreflang.
 import languages from '../../lib/regions/languages.js';
 import type { Language } from '../../lib/regions/languages.js';
-import { ENGLISH_ONLY_PAGES, PUBLIC_PAGES, prerenderedFile } from '../../lib/pages.js';
+import {
+  ENGLISH_ONLY_PAGES,
+  MATERIAL_PAGES,
+  PUBLIC_PAGES,
+  prerenderLanguages,
+  prerenderedFile
+} from '../../lib/pages.js';
 import { labelShown } from './site.ts';
 
-export { ENGLISH_ONLY_PAGES, PUBLIC_PAGES };
+export { ENGLISH_ONLY_PAGES, MATERIAL_PAGES, PUBLIC_PAGES, prerenderLanguages };
 
 /**
  * Pages that anyone can open but no search engine may index, nor any Referer
@@ -70,6 +76,7 @@ export const APP_PAGES = [
   '/recipe',
   '/import',
   '/blends',
+  '/solve',
   '/material',
   '/additive',
   '/firing',
@@ -148,13 +155,16 @@ export function withoutSlash(pathname: string): string | null {
 
 /**
  * The file a page was prerendered to, from its address (de/guides/firing.html),
- * or null for an address that has none: not a public page, or in a language not
- * offered yet.
+ * or null for an address that has none: not a public page, in a language not
+ * offered yet, or a reference page (the cone chart, the materials) in a language
+ * other than English, which the build does not render.
  */
 export function prerenderedKey(pathname: string, live: readonly string[] = languages.LIVE_LANGUAGES): string | null {
   const code = languages.languageOfPath(pathname);
   const page = languages.pagePath(pathname);
-  return isPage(pathname) && PUBLIC_PAGES.includes(page) && live.includes(code) ? prerenderedFile(code, page) : null;
+  return isPage(pathname) && PUBLIC_PAGES.includes(page) && prerenderLanguages(page, live).includes(code)
+    ? prerenderedFile(code, page)
+    : null;
 }
 
 /** A prerendered page with the reply's nonce where the render had its placeholder (client/app/app.config.server.ts). */

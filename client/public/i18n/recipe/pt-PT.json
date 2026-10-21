@@ -364,7 +364,7 @@
     "intro": "Conforme o registo de cada matéria-prima os indica; os da lista padrão vêm das fichas de dados de segurança dos fornecedores.",
     "line": "<b>{names}:</b> {hazards}",
     "unknown": "{count, plural, one {Não são indicados perigos para {list}: consulte a ficha de dados de segurança que o acompanha.} many {Não são indicados perigos para {list}: consulte as fichas de dados de segurança que os acompanham.} other {Não são indicados perigos para {list}: consulte as fichas de dados de segurança que os acompanham.}}",
-    "safety": "As matérias-primas secas para vidrados produzem poeira, e tem de a manter fora dos pulmões, mesmo a das matérias-primas não classificadas como perigosas. Veja <mixing>Mistura segura e ventilação</mixing> e, se houver crianças ou animais de estimação por perto, também <home>Não envenene a sua família</home>. Quando a ficha de dados de segurança de uma matéria-prima disser mais, siga-a."
+    "safety": "As matérias-primas secas para vidrados produzem poeira, e tem de a manter fora dos pulmões, mesmo a das matérias-primas não classificadas como perigosas. Veja <mixing>Mistura segura e ventilação</mixing>. Se houver crianças ou animais de estimação por perto, veja também <home>Não envenene a sua família</home>. Quando a ficha de dados de segurança de uma matéria-prima disser mais, siga-a."
   },
   "compare": {
     "heading": "Comparar duas receitas",
