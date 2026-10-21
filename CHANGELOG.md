@@ -1150,6 +1150,10 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Fixed
 
+- **Hindi and French messages written for exactly one stay so**: their `one` plural form takes 0 as well as 1, so
+  the six messages whose English means a single thing ("your passkey", "your access token", "it") now give that text
+  for 1 only (`=1`), and a count of 0 reads as the plural. A server test keeps every such message so in each language
+  whose `one` takes 0.
 - **Vanadium oxide's H361fd reads as the GHS words it stands for**: "suspected of damaging fertility or the unborn
   child", where the library said only "fertility and unborn child". Every language has its official wording: the
   CLP's Annex III (H361) in the EU's languages (Estonian and Latvian keep H361fd's own two sentences, as their style
