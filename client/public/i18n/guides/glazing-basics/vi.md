@@ -250,7 +250,7 @@ Các quy định ở Mỹ, EU, Anh và Úc giới hạn lượng chì và cadimi
 
 **Công thức giới hạn**{{en: limit formula}} (Digitalfire ưa dùng **công thức mục tiêu**) nêu các khoảng điển hình của công thức Seger cho men ổn định ở một côn: các mục tiêu côn 6 của Digitalfire đặt alumina ở 0,285–0,64 và silica ở 2,4–4,7. Chúng hướng bạn đến một hóa học vững chắc nhưng không chứng minh gì; Digitalfire tránh từ “giới hạn” vì nó gợi ý rằng các loại men nằm trong các khoảng đó “bằng cách nào đó là an toàn”. Các công cụ thay đổi công thức men của Glazecalc cho biết khi công thức mới vượt quá một giới hạn khuyến nghị, như nhiều bo ở côn 6, và men nhiều khả năng sẽ làm gì.
 
-Các giới hạn theo luật khác nhau theo từng quốc gia. Bảng cho thấy các giới hạn nơi bạn sống, theo đơn vị riêng của luật; hãy chọn một quốc gia khác để so sánh.
+Các giới hạn theo luật khác nhau theo từng quốc gia. Bảng cho thấy các giới hạn nơi bạn sống, theo đơn vị riêng của luật; hãy chọn một quốc gia hoặc khu vực khác để so sánh.
 
 ::food-limits
 

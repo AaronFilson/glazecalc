@@ -141,3 +141,21 @@ test('numbers show in the digits usual where the format is, or 0–9 when chosen
   const preferences = await (await page.request.get(API + '/preferences')).json();
   expect(preferences.digits).toBe('western');
 });
+
+test("a Bengali page shows its text's figures in Bengali digits, as its numbers, until 0–9 are chosen", async ({
+  page
+}) => {
+  // The real Bengali messages, written as every translation is, in 0–9.
+  await page.goto('/bn/account');
+  const formatHelp = page.locator('.settings-group', { has: page.locator('#format') }).locator('.form-text');
+  await expect(formatHelp).toHaveText('সংখ্যা ও তারিখ কীভাবে লেখা হয়: ১২,৩৪৫.৬ বা ১২.৩৪৫,৬, আর দিন ও মাসের ক্রম।');
+  await expect(page.locator('label[for="temperature-C"]')).toContainText('১২৪০ °C');
+  // The choice of 0–9 names them in 0–9, beside its example; the usual digits' example is Bengali.
+  await expect(page.locator('label[for="digits-western"]')).toContainText('পশ্চিমা অঙ্ক, 0–9 (12,345.6)');
+  await expect(page.locator('label[for="digits-auto"]')).toContainText('১২,৩৪৫.৬');
+
+  await page.locator('#digits-western').check();
+  await expect(page.locator('.settings-status')).toHaveText('সংরক্ষিত: সংখ্যা 0–9 অঙ্কে দেখানো হয়।');
+  await expect(formatHelp).toHaveText('সংখ্যা ও তারিখ কীভাবে লেখা হয়: 12,345.6 বা 12.345,6, আর দিন ও মাসের ক্রম।');
+  await expect(page.locator('label[for="temperature-C"]')).toContainText('1240 °C');
+});

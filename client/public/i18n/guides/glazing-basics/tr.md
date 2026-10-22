@@ -250,7 +250,7 @@ ABD’de, AB’de, Birleşik Krallık’ta ve Avustralya’da kurallar, sırrın
 
 **Sınır formüller**{{en: limit formulas}} (Digitalfire **hedef formül** demeyi tercih eder) bir piramit için kararlı sırların tipik Seger formülü aralıklarını verir: Digitalfire’ın 6 numaralı Orton piramidi için hedefleri alüminayı 0,285–0,64, silisi 2,4–4,7 arasına koyar. Sizi sağlam bir kimyaya yönlendirirler ama hiçbir şeyi kanıtlamazlar; Digitalfire “sınır” sözcüğünden kaçınır, çünkü bu sözcük aralıkların içindeki sırların “bir şekilde güvenli” olduğunu düşündürür. Glazecalc’ın reçete değiştirme araçları, yeni reçete önerilen bir sınırı aştığında, örneğin 6 numaralı piramitte bol bor olduğunda, bunu ve sırrın büyük olasılıkla nasıl davranacağını söyler.
 
-Yasal sınır değerler ülkeden ülkeye değişir. Tablo, yaşadığınız yerdekileri yasanın kendi birimleriyle gösterir; karşılaştırmak için başka bir ülke seçin.
+Yasal sınır değerler ülkeden ülkeye değişir. Tablo, yaşadığınız yerdekileri yasanın kendi birimleriyle gösterir; karşılaştırmak için başka bir ülke veya bölge seçin.
 
 ::food-limits
 

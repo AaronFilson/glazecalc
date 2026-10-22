@@ -166,6 +166,29 @@ describe('pages in each language', () => {
     expect(languages.canonicalLanguagePath('/HI/recipe')).to.equal('/hi/recipe');
   });
 
+  it('offers Urdu, right to left, and Bengali, with the standard notice rather than the plainer one', () => {
+    for (const [code, name, english, dir] of [
+      ['ur', 'اردو', 'Urdu', 'rtl'],
+      ['bn', 'বাংলা', 'Bengali', 'ltr']
+    ]) {
+      const language = languages.languageFor(code);
+      expect(language).to.include({ name, english, dir, live: true });
+      expect(language).not.to.have.property('plainNotice');
+      expect(language).not.to.have.property('base');
+      expect(languages.LIVE_LANGUAGES).to.include(code);
+      const html = pageHtml(HTML, `/${code}/guides`, SITE);
+      expect(html).to.include(`<html lang="${code}" dir="${dir}">`);
+      expect(html).not.to.include('<meta name="robots" content="noindex" />');
+      expect(html).to.include(`hreflang="${code}"`);
+      expect(sitemap(SITE)).to.include(`/${code}/`);
+    }
+    // Bengali's text shows its figures in the digits its numbers are in; Urdu's stays 0–9, as Pakistan writes.
+    expect(languages.languageFor('bn')).to.include({ textDigits: true });
+    expect(languages.languageFor('ur')).not.to.have.property('textDigits');
+    expect(languages.languageOfPath('/bn/recipe')).to.equal('bn');
+    expect(languages.canonicalLanguagePath('/UR/recipe')).to.equal('/ur/recipe');
+  });
+
   it("puts the language's title and description in, written safely", () => {
     const html = pageHtml(
       HTML,

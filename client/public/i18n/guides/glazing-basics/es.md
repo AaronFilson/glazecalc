@@ -250,7 +250,7 @@ Un **esmalte de interior**{{en: liner glaze}} es un esmalte estable, normalmente
 
 Las **fórmulas límite**{{en: limit formulas}} (Digitalfire prefiere **fórmulas objetivo**{{en: target formulas}}) dan intervalos típicos de la fórmula Seger{{en: unity formula}} para esmaltes estables a un cono: los objetivos de Digitalfire para cono 6 sitúan la alúmina en 0,285–0,64 y la sílice en 2,4–4,7. Le orientan hacia una química sólida, pero no demuestran nada; Digitalfire evita la palabra «límite» porque sugiere que los esmaltes dentro de los intervalos «son de algún modo seguros». Las herramientas de Glazecalc para modificar una receta avisan cuando la nueva supera un límite recomendado, como mucho boro a cono 6, y dicen qué hará probablemente el esmalte.
 
-Los límites legales varían de un país a otro. La tabla muestra los del lugar donde usted vive, en las unidades de la propia norma; elija otro país para compararlos.
+Los límites legales varían de un país a otro. La tabla muestra los del lugar donde usted vive, en las unidades de la propia norma; elija otro país o región para compararlos.
 
 ::food-limits
 

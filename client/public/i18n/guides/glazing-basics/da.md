@@ -250,7 +250,7 @@ En **indvendig glasur**{{en: liner glaze}} er en stabil, som regel transparent e
 
 **Grænseformler**{{en: limit formulas}} (Digitalfire foretrækker **målformler**{{en: target formulas}}) angiver typiske intervaller i Seger-formlen for stabile glasurer ved en given kegle: Digitalfires mål for kegle 6 sætter aluminiumoxid til 0,285–0,64 og silica til 2,4–4,7. De leder mod sund kemi, men beviser intet; Digitalfire undgår ordet »limit« (grænse), fordi det antyder, at glasurer inden for intervallerne »på en eller anden måde er sikre«. Værktøjerne i Glazecalc til at ændre en opskrift siger til, når den nye opskrift går ud over en anbefalet grænse, fx meget bor ved kegle 6, og hvad glasuren sandsynligvis vil gøre.
 
-De lovfastsatte grænseværdier er forskellige fra land til land. Tabellen viser grænseværdierne der, hvor værkstedet ligger, i lovens egne enheder; vælg et andet land for at sammenligne.
+De lovfastsatte grænseværdier er forskellige fra land til land. Tabellen viser grænseværdierne der, hvor værkstedet ligger, i lovens egne enheder; vælg et andet land eller en anden region for at sammenligne.
 
 ::food-limits
 

@@ -40,6 +40,9 @@
 // 11. Where a language's `one` also takes 0 (Hindi, Kannada, French ...), an
 //    English plural whose `one` is for exactly one has an `=1` form in the
 //    translation (compareMessage).
+// 12. Urdu ends its sentences with ۔ and writes Urdu's letters (ی ک ہ), not
+//    the Arabic ones; Bengali ends its sentences with the danda । (U+0964),
+//    never its look-alike ৷ (U+09F7); both in Unicode's composed form (NFC).
 import { readFileSync, readdirSync, existsSync } from 'node:fs';
 import path from 'node:path';
 import { pathToFileURL } from 'node:url';
@@ -811,6 +814,75 @@ export function checkDigits(dir = I18N) {
   return problems;
 }
 
+/** One language's translated texts (translatedTexts below), as [label, text]. */
+const textsOf = (dir, language) =>
+  [...translatedTexts(dir)].filter((text) => text.language === language).map(({ label, text }) => [label, text]);
+
+/**
+ * The Latin full stops that end a sentence written in a script (Urdu's Arabic letters, Bengali's): a "."
+ * after a word, a figure, a unit or a closing mark, at the end of the text or before a space, in a sentence
+ * with that script's letters in it. Not a figure's point (1.5), an address's dot (example.com/a.b), a
+ * numbered list's "1." (no letters before it on its line), an ellipsis, or an abbreviation the English keeps
+ * (e.g., etc., Ltd.).
+ */
+const SENTENCE_STOP = /(?<![.\s])\.(?=["'”’)\]*_]*(?:\s|$))/gu;
+const KEPT_ABBREVIATIONS =
+  /(?:^|[\s(])(?:e\.g|i\.e|etc|Ltd|Inc|Co|Corp|No|vs|approx|Dr|St|Ing|Repr|Carc|Cap|U\.S|[A-Z])$/u;
+function latinStops(text, letters) {
+  const found = [];
+  const prose = text.replace(/\]\([^)\s]*\)/g, ']').replace(/(?:https?:\/\/|www\.)\S+|\S+@\S+/g, ' ');
+  for (const match of prose.matchAll(SENTENCE_STOP)) {
+    const before = prose.slice(0, match.index);
+    const sentence = before.slice(
+      Math.max(before.lastIndexOf('\n'), ...['.', '!', '?', '۔', '।'].map((mark) => before.lastIndexOf(mark + ' '))) + 1
+    );
+    if (letters.test(sentence) && !KEPT_ABBREVIATIONS.test(before)) found.push(sentence.trim().slice(-24) + '.');
+  }
+  return found;
+}
+
+/** Bidi controls (LRM, RLM, ALM, the embeddings and the isolates): the app sets a text's direction itself. */
+const DIRECTION_CONTROLS = /[‎‏؜‪-‮⁦-⁩]/u;
+
+/**
+ * Problems with Urdu (docs/translations/ur.md): a sentence ends with ۔ (U+06D4), never a Latin "."; Urdu's
+ * own letters, never the Arabic ي ى ك ه that an Arabic keyboard types and Nastaliq draws wrongly (ی ک ہ:
+ * U+06CC, U+06A9, U+06C1); no tatweel or direction controls; Unicode's composed form (NFC).
+ */
+export function checkUrdu(dir = I18N) {
+  const ARABIC_LETTERS = /[كهىي]/gu;
+  const URDU = /[؀-ۿ]/u;
+  const problems = [];
+  for (const [label, text] of textsOf(dir, 'ur')) {
+    const stops = latinStops(text, URDU);
+    if (stops.length)
+      problems.push(`${label}: an Urdu sentence ends with ۔, not "." (${stops.slice(0, 2).join(' | ')})`);
+    const arabic = [...new Set(text.match(ARABIC_LETTERS) ?? [])];
+    if (arabic.length) problems.push(`${label}: Urdu takes ی ک ہ, not the Arabic ${arabic.join(' ')}`);
+    if (text.includes('ـ')) problems.push(`${label}: no tatweel (ـ) in Urdu`);
+    if (DIRECTION_CONTROLS.test(text)) problems.push(`${label}: no direction marks; the app sets the direction`);
+    if (text.normalize('NFC') !== text) problems.push(`${label}: not in Unicode's composed form (NFC)`);
+  }
+  return problems;
+}
+
+/**
+ * Problems with Bengali (docs/translations/bn.md): a sentence ends with the danda । (U+0964), never a Latin
+ * "." nor ৷ (U+09F7, a currency numerator that looks the same); Unicode's composed form (NFC).
+ */
+export function checkBengali(dir = I18N) {
+  const BENGALI = /[ঀ-৿]/u;
+  const problems = [];
+  for (const [label, text] of textsOf(dir, 'bn')) {
+    const stops = latinStops(text, BENGALI);
+    if (stops.length)
+      problems.push(`${label}: a Bengali sentence ends with ।, not "." (${stops.slice(0, 2).join(' | ')})`);
+    if (text.includes('৷')) problems.push(`${label}: the danda is । (U+0964), not ৷ (U+09F7)`);
+    if (text.normalize('NFC') !== text) problems.push(`${label}: not in Unicode's composed form (NFC)`);
+  }
+  return problems;
+}
+
 /** Problems with the translations' fingerprints, and what each language still shows in English. */
 export function checkFingerprints(options) {
   const { changes, inEnglish } = updateTranslations({ ...options, write: false });
@@ -984,17 +1056,25 @@ export function checkNormalization(dir = I18N) {
  * Where a zero-width joiner (U+200D) or non-joiner (U+200C) may stand, by language. None in the languages not
  * listed. Malayalam writes its chillu letters as single characters (U+0D7A to U+0D7F), never as a letter,
  * virama and ZWJ, and a ZWNJ only after a virama (U+0D4D). Sinhala's conjuncts need a ZWJ after the virama
- * (U+0DCA), as in ශ්\u200dරී, and no ZWNJ. In the others a joiner is a slip.
+ * (U+0DCA), as in ශ්\u200dරී, and no ZWNJ. Bengali writes ra with ya-phala (as in the word for ramp)
+ * as ra, ZWJ, virama, ya (U+09B0 U+200D U+09CD U+09AF; without the ZWJ it is reph and ya), so its ZWJ stands
+ * only between ra and the virama (JOINER_AFTER and JOINER_BEFORE), and no ZWNJ. In the others a joiner is a slip.
  */
-const JOINER_AFTER = { ml: { '\u200c': '്' }, si: { '\u200d': '්' } };
+const JOINER_BEFORE = { bn: { '\u200d': '\u09cd' } };
+const JOINER_AFTER = { bn: { '\u200d': '\u09b0' }, ml: { '\u200c': '്' }, si: { '\u200d': '්' } };
 
 /** Problems with stray joiners in the Indian languages' translations. */
 export function checkJoiners(dir = I18N) {
   const problems = [];
   for (const { label, language, text } of translatedTexts(dir)) {
-    if (!INDIC_SCRIPTS[language] || language === 'bn') continue;
+    if (!INDIC_SCRIPTS[language]) continue;
     const allowed = JOINER_AFTER[language] ?? {};
-    const found = [...text.matchAll(/[\u200c\u200d]/g)].filter((match) => text[match.index - 1] !== allowed[match[0]]);
+    const next = JOINER_BEFORE[language] ?? {};
+    const found = [...text.matchAll(/[\u200c\u200d]/g)].filter(
+      (match) =>
+        text[match.index - 1] !== allowed[match[0]] ||
+        (next[match[0]] !== undefined && text[match.index + 1] !== next[match[0]])
+    );
     if (found.length) {
       const names = [...new Set(found.map((match) => (match[0] === '\u200d' ? 'ZWJ (U+200D)' : 'ZWNJ (U+200C)')))];
       problems.push(
@@ -1003,7 +1083,9 @@ export function checkJoiners(dir = I18N) {
             ? 'a ZWNJ only after a virama and no ZWJ, for its chillu letters are single characters'
             : language === 'si'
               ? 'a ZWJ only after a virama and no ZWNJ'
-              : 'none'
+              : language === 'bn'
+                ? 'a ZWJ only between র and the virama (র + ZWJ + ্ + য) and no ZWNJ'
+                : 'none'
         }`
       );
     }
@@ -1028,7 +1110,9 @@ if (import.meta.url === pathToFileURL(process.argv[1] ?? '').href) {
         ...checkDigits(),
         ...checkScripts(),
         ...checkNormalization(),
-        ...checkJoiners()
+        ...checkJoiners(),
+        ...checkUrdu(),
+        ...checkBengali()
       ].filter((problem) => aboutLanguage(problem, only))
     : [
         ...compareKeys(await keysInUse()),
@@ -1040,6 +1124,8 @@ if (import.meta.url === pathToFileURL(process.argv[1] ?? '').href) {
         ...checkScripts(),
         ...checkNormalization(),
         ...checkJoiners(),
+        ...checkUrdu(),
+        ...checkBengali(),
         ...fingerprints.problems
       ];
   for (const [language, left] of Object.entries(fingerprints.inEnglish)) {

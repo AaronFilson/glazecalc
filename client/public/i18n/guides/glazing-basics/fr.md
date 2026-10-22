@@ -250,7 +250,7 @@ Un **émail intérieur**{{en: liner glaze}} est un émail stable, en général t
 
 Les **formules limites**{{en: limit formulas}} (Digitalfire préfère parler de **formules cibles**{{en: target formulas}}) donnent des plages typiques de formule de Seger (UMF){{en: unity molecular formula}} pour des émaux stables à un cône{{en: cone}} donné : pour le cône 6, les cibles de Digitalfire placent l’alumine entre 0,285 et 0,64 et la silice{{en: silica}} entre 2,4 et 4,7. Elles orientent vers une chimie saine mais ne prouvent rien ; Digitalfire évite le mot « limite », parce qu’il laisse entendre que les émaux situés dans ces plages « seraient en quelque sorte sans danger ». Les outils de Glazecalc qui modifient une recette signalent quand la nouvelle recette dépasse une limite recommandée, par exemple beaucoup de bore au cône 6, et ce que l’émail fera probablement.
 
-Les limites légales varient d’un pays à l’autre. Le tableau montre celles du pays où vous vivez, dans les unités qu’emploie la loi ; choisissez un autre pays pour comparer.
+Les limites légales varient d’un pays à l’autre. Le tableau montre celles du pays où vous vivez, dans les unités qu’emploie la loi ; choisissez un autre pays ou une autre région pour comparer.
 
 ::food-limits
 

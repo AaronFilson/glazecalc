@@ -250,7 +250,7 @@ A **belső máz**{{en: liner glaze}} stabil, általában színtelen vagy fehér 
 
 A **határképletek**{{en: limit formulas}} (a Digitalfire inkább a **célképlet**{{en: target formulas}} elnevezést használja) a stabil mázak Seger-képletének szokásos tartományait adják meg egy adott gúlára: a Digitalfire 6-os gúlára vonatkozó célértékei szerint a timföld 0,285–0,64, a szilícium-dioxid 2,4–4,7. A helyes kémia felé terelik, de semmit sem bizonyítanak; a Digitalfire azért kerüli a „határ” szót, mert azt sugallja, hogy a tartományokon belüli mázak „valahogy biztonságosak”. A Glazecalc receptmódosító eszközei jelzik, ha az új recept túllép egy ajánlott határt, például ha 6-os gúlán sok benne a bór, és azt is, mit fog a máz valószínűleg csinálni.
 
-A jogszabályi határértékek országonként eltérnek. A táblázat annak az országnak az értékeit mutatja, ahol él, a jogszabály saját mértékegységeiben; összehasonlításhoz válasszon másik országot.
+A jogszabályi határértékek országonként eltérnek. A táblázat annak az országnak az értékeit mutatja, ahol él, a jogszabály saját mértékegységeiben; összehasonlításhoz válasszon másik országot vagy régiót.
 
 ::food-limits
 

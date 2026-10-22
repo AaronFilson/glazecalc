@@ -250,7 +250,7 @@ JAV, ES, Jungtinės Karalystės ir Australijos taisyklės riboja, kiek švino ir
 
 **Ribinės formulės**{{en: limit formulas}} (Digitalfire labiau mėgsta pavadinimą **tikslinės formulės**{{en: target formulas}}) nurodo įprastus stabilių glazūrų Segerio formulės{{en: unity formula}} intervalus tam tikram piroskopui{{en: cone}}: Digitalfire tikslinėse formulėse piroskopui 6 aliuminio oksido nurodyta 0,285–0,64, o silicio dioksido{{en: silica}} – 2,4–4,7. Jos padeda pasukti link patikimos chemijos, bet nieko neįrodo; Digitalfire vengia žodžio „riba“, nes jis leidžia manyti, kad glazūros, patenkančios į šiuos intervalus, „kažkaip yra saugios“. Programos Glazecalc recepto keitimo įrankiai praneša, kai naujasis receptas peržengia rekomenduojamą ribą, pavyzdžiui, kai ties piroskopu 6 yra daug boro, ir ką glazūra greičiausiai darys.
 
-Teisės aktuose nustatytos ribos įvairiose šalyse skiriasi. Lentelėje rodomos jūsų gyvenamosios šalies ribos, tokiais vienetais, kokius nurodo teisės aktas; norėdami palyginti, pasirinkite kitą šalį.
+Teisės aktuose nustatytos ribos įvairiose šalyse skiriasi. Lentelėje rodomos jūsų gyvenamosios šalies ribos, tokiais vienetais, kokius nurodo teisės aktas; norėdami palyginti, pasirinkite kitą šalį ar regioną.
 
 ::food-limits
 

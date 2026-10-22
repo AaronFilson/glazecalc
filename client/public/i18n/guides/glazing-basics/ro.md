@@ -250,7 +250,7 @@ O **glazură pentru interior**{{en: liner glaze}} este o glazură stabilă, de o
 
 **Formulele-limită**{{en: limit formulas}} (Digitalfire preferă **formule-țintă**{{en: target formulas}}) dau intervale tipice ale formulei Seger pentru glazurile stabile la un anumit con: valorile-țintă ale Digitalfire pentru conul 6 pun alumina la 0,285–0,64 și silicea la 2,4–4,7. Ele vă îndrumă spre o chimie solidă, dar nu dovedesc nimic; Digitalfire evită cuvântul „limită”, pentru că sugerează că glazurile din interiorul intervalelor „sunt cumva sigure”. Instrumentele din Glazecalc pentru modificarea unei rețete vă spun când noua rețetă depășește o limită recomandată, cum ar fi mult bor la conul 6, și ce va face probabil glazura.
 
-Limitele legale diferă de la o țară la alta. Tabelul arată limitele din țara în care locuiți, în unitățile legii respective; alegeți altă țară pentru comparație.
+Limitele legale diferă de la o țară la alta. Tabelul arată limitele din țara în care locuiți, în unitățile legii respective; alegeți altă țară sau regiune pentru comparație.
 
 ::food-limits
 

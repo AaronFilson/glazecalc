@@ -14,6 +14,8 @@ export interface Language {
   pseudo?: boolean;
   /** The digits numbers are written in, where the language pins them: Intl's numbering system ('arab'). */
   digits?: string;
+  /** Its text's figures (0–9 in the translations) are shown in the digits its numbers are formatted in: Bengali. */
+  textDigits?: boolean;
   /** AI translates it less well than most: its notice says so plainly, and a line of it stays on every page. */
   plainNotice?: boolean;
 }

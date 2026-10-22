@@ -250,7 +250,7 @@ Propisi u SAD-u, EU-u, Ujedinjenom Kraljevstvu i Australiji ograničavaju koliko
 
 **Granične formule**{{en: limit formulas}} (Digitalfire radije kaže **ciljne formule**, target formulas) daju tipične raspone Segerove formule za stabilne glazure pri određenom stošcu{{en: cone}}: za stožac 6 Digitalfire kao ciljne vrijednosti navodi glinicu 0,285 – 0,64 i silicijev dioksid 2,4 – 4,7. One vas usmjeravaju prema dobroj kemiji, ali ništa ne dokazuju; Digitalfire izbjegava riječ „limit” (granica) jer navodi na pomisao da su glazure unutar tih raspona „nekako sigurne”. Alati aplikacije Glazecalc za mijenjanje recepta kažu kad novi recept prijeđe preporučenu granicu, primjerice kad ima mnogo bora pri stošcu 6, i kako će se glazura vjerojatno ponašati.
 
-Zakonske granične vrijednosti razlikuju se od zemlje do zemlje. Tablica prikazuje one koje vrijede ondje gdje živite, u jedinicama samog propisa; odaberite drugu zemlju za usporedbu.
+Zakonske granične vrijednosti razlikuju se od zemlje do zemlje. Tablica prikazuje one koje vrijede ondje gdje živite, u jedinicama samog propisa; odaberite drugu zemlju ili regiju za usporedbu.
 
 ::food-limits
 

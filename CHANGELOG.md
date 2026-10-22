@@ -6,6 +6,19 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Added
 
+- **Urdu and Bengali** (docs/translations/ur.md, bn.md): the app, the emails and all five guides, live at `/ur/…`
+  (right to left, in Nastaliq) and `/bn/…`, with the standard notice. Urdu is written for Pakistan: آپ, the potters'
+  loanwords (گلیز, فرٹ), sentences ending with ۔, Urdu's own letters (ی ک ہ) and the digits 0–9, as Pakistan writes
+  them. Bengali is written for Bangladesh, and West Bengal reads the same page: আপনি, পানি, sentences ending with the
+  danda ।, and every figure on the page in Bengali digits, the text's as well as the formatted numbers (0–9 where the
+  reader chose them in Settings). The owner chose each language's own word where the loanword collides with an
+  everyday one: the kiln (بھٹی, চুল্লি), firing (پکائی, পোড়ানো; never the words for gunfire) and the cone (مخروط,
+  শঙ্কু; never "who" or "which"), with "(Orton cone)" at its first use. Each was translated from sourced terminology,
+  reviewed in six groups, made consistent across its files and back-translated blind (the safety guides and every
+  warning: no difference in Urdu, one fixed in Bengali); a native potter's check of the terms the style sheets mark is
+  still welcome. The translations check holds Urdu to ۔ and its own letters and Bengali to the danda (never its
+  look-alike ৷), both in Unicode's composed form, and takes Bengali's ZWJ only in র‍্য (ra with ya-phala). The README
+  counts 36 languages.
 - **Sri Lanka and Nepal** as regions, in English (docs/south-asia-mena-plan.md, C3): who to call (1990 Suwa
   Seriya in Sri Lanka, 102 in Nepal, with the police and fire numbers from the ITU's list, said to be last
   updated in 2012), each health ministry and body for safety at work, firing by temperature, prices in rupees.

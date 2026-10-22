@@ -79,7 +79,8 @@ for (const code of codes) {
   const account = JSON.parse(readFileSync(file, 'utf8'));
   const sg = account.settings?.density?.sg;
   if (!sg) throw new Error(code + ': no settings.density.sg');
-  const number = new Intl.NumberFormat(code, { minimumFractionDigits: 2 }).format(1.45);
+  // A translation writes 0–9 (Bengali's own digits are shown from the reader's settings), so 1.45, never ১.৪৫.
+  const number = new Intl.NumberFormat(code, { minimumFractionDigits: 2, numberingSystem: 'latn' }).format(1.45);
   // The English's example copied in by a translator ("SG 1.45") is filled like a missing one.
   const english = JSON.parse(readFileSync(I18N + 'account/en.json', 'utf8')).settings.density.sg.example;
   if (sg.example === english) delete sg.example;

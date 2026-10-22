@@ -250,7 +250,7 @@ Een **binnenglazuur**{{en: liner glaze}} is een stabiel, meestal transparant of 
 
 **Limietformules**{{en: limit formulas}} (Digitalfire spreekt liever van **streefformules**{{en: target formulas}}) geven typische bereiken in de Segerformule (UMF) voor stabiele glazuren bij een bepaalde kegel: de streefwaarden van Digitalfire voor kegel 6 leggen aluminiumoxide op 0,285–0,64 en siliciumoxide op 2,4–4,7. Ze helpen u op weg naar een evenwichtige samenstelling, maar bewijzen niets; Digitalfire vermijdt het woord “limiet” omdat het suggereert dat glazuren binnen de bereiken “op de een of andere manier veilig zijn”. De hulpmiddelen in Glazecalc om een recept te wijzigen melden wanneer het nieuwe recept een aanbevolen grens overschrijdt, zoals veel boor bij kegel 6, en wat het glazuur dan waarschijnlijk doet.
 
-De wettelijke grenswaarden verschillen per land. De tabel toont die van het land waar u woont, in de eenheden van de wet zelf; kies een ander land om te vergelijken.
+De wettelijke grenswaarden verschillen per land. De tabel toont die van het land waar u woont, in de eenheden van de wet zelf; kies een ander land of een andere regio om te vergelijken.
 
 ::food-limits
 

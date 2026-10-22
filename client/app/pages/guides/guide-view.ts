@@ -10,6 +10,7 @@ import { PAGE_LANGUAGE } from '../../i18n/language';
 import { pseudoText } from '../../i18n/pseudo';
 import { isolated, ltr, withLatinIsolated } from '../../shared/bidi';
 import { fixed, upTo } from '../../shared/format';
+import { textDigitsFor, withTextDigits } from '../../shared/text-digits';
 import { PageHeader } from '../../shared/page-header';
 import { StructuredData, article, pageAddress } from '../../shared/structured-data';
 import { GuideContents, SectionLinks } from './guide-contents';
@@ -124,9 +125,15 @@ export class GuideView implements InlineContext {
 
   /**
    * Text as the page shows it: as written, or accented in a pseudo-locale; its web addresses and formulas
-   * kept left to right on a right-to-left page (shared/bidi.ts).
+   * kept left to right on a right-to-left page (shared/bidi.ts); its figures in the digits the page's numbers
+   * are in, on a Bengali page (shared/text-digits.ts).
    */
   show(text: string): string {
+    return this.showCode(withTextDigits(text, textDigitsFor(this.language)));
+  }
+
+  /** Code as the page shows it: as `show`, but its figures as written. */
+  private showCode(text: string): string {
     return withLatinIsolated(this.pseudo ? pseudoText(text, this.language) : text);
   }
 
@@ -167,8 +174,9 @@ export class GuideView implements InlineContext {
       .map((part) => {
         switch (part.kind) {
           case 'text':
-          case 'code':
             return this.show(part.text);
+          case 'code':
+            return this.showCode(part.text);
           case 'temperature':
             return this.temperature(part);
           case 'density':

@@ -536,8 +536,8 @@ and Bengali; units in Latin, left to right; Noto Nastaliq Urdu served for Urdu p
   their own letter forms (ल, श, झ) checked in `/mr/` on Windows, Android and macOS.
 - **Checks on the Indian languages** (`scripts/i18n-check.mjs`): the script (a translation has its own script and
   Latin only, `checkScripts`); Unicode form NFC for every translation (`checkNormalization`: a nukta letter is the
-  letter and the nukta); stray ZWJ and ZWNJ (`checkJoiners`: none, but Malayalam's ZWNJ after a virama and Sinhala's
-  ZWJ after a virama); the 12-hour times of each Indian language (रात 8 बजे and the like) are kept whole so that the
+  letter and the nukta); stray ZWJ and ZWNJ (`checkJoiners`: none, but Malayalam's ZWNJ after a virama, Sinhala's
+  ZWJ after a virama and Bengali's ZWJ between র and the virama, for ra with ya-phala); the 12-hour times of each Indian language (रात 8 बजे and the like) are kept whole so that the
   figures check reports them; and where a language's `one` takes 0 as well as 1 (Hindi, Kannada, Gujarati, Punjabi,
   Sinhala, French), an English plural whose `one` is for exactly one has an `=1` form in the translation.
 - **Still to do with the languages themselves:** pinned digits and calendars for each region (Phase A1), the

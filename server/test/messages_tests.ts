@@ -147,7 +147,9 @@ describe('account emails', () => {
     await accountMail.sendReset(address, 'abc123', 30, 'ar');
     await accountMail.sendReset(address, 'abc123', 30, 'de');
     await accountMail.sendChanged(address, 'hi');
-    const [arabic, german, hindi] = await mail.waitFor(address, 3);
+    await accountMail.sendChanged(address, 'ur');
+    await accountMail.sendChanged(address, 'bn');
+    const [arabic, german, hindi, urdu, bengali] = await mail.waitFor(address, 5);
     expect(arabic!.subject).to.equal(RLM + accountMail.RESET['ar']!.subject);
     const lines = arabic!.text.split('\n');
     // Each line of text starts right to left, even one that starts with an address or a link.
@@ -159,11 +161,14 @@ describe('account emails', () => {
     // The signature's line stays as mail programs know it, and empty lines stay empty.
     expect(arabic!.text).to.include('\n\n-- \n' + RLM);
     expect(mail.tokenIn(arabic!)).to.equal('abc123');
-    // German and Hindi run left to right, as they are.
-    for (const ltr of [german!, hindi!]) {
+    // Urdu runs right to left too, in its own words.
+    expect(urdu!.subject).to.equal(RLM + accountMail.CHANGED['ur']!.subject);
+    // German, Hindi and Bengali run left to right, as they are.
+    for (const ltr of [german!, hindi!, bengali!]) {
       expect(ltr.subject + ltr.text).not.to.include(RLM);
     }
     expect(hindi!.subject).to.equal(accountMail.CHANGED['hi']!.subject);
+    expect(bengali!.subject).to.equal(accountMail.CHANGED['bn']!.subject);
     expect(accountMail.inDirection({ to: 'a@b.c', subject: 'S', text: 'x\n\ny\n-- \nz\n' }, 'ar-XD').text).to.equal(
       RLM + 'x\n\n' + RLM + 'y\n-- \n' + RLM + 'z\n'
     );

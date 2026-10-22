@@ -250,7 +250,7 @@ Eine **Innenglasur**{{en: liner glaze}} ist eine stabile, meist transparente ode
 
 **Grenzformeln**{{en: limit formulas}} (Digitalfire spricht lieber von **Zielformeln**{{en: target formulas}}) geben typische Bereiche der Segerformel für stabile Glasuren bei einem Kegel an: Die Zielwerte von Digitalfire für Kegel 6 setzen Tonerde auf 0,285–0,64 und Kieselsäure auf 2,4–4,7. Sie lenken Sie zu einer soliden Chemie, beweisen aber nichts; Digitalfire meidet das Wort „limit“ (Grenze), weil es nahelegt, Glasuren innerhalb der Bereiche „seien irgendwie sicher“. Die Werkzeuge von Glazecalc zum Ändern eines Rezepts melden, wenn das neue Rezept eine empfohlene Grenze überschreitet, etwa viel Bor bei Kegel 6, und was die Glasur dann wahrscheinlich tut.
 
-Die gesetzlichen Grenzwerte sind von Land zu Land verschieden. Die Tabelle zeigt die Werte dort, wo Sie leben, in den Einheiten des jeweiligen Gesetzes; wählen Sie zum Vergleich ein anderes Land.
+Die gesetzlichen Grenzwerte sind von Land zu Land verschieden. Die Tabelle zeigt die Werte dort, wo Sie leben, in den Einheiten des jeweiligen Gesetzes; wählen Sie zum Vergleich ein anderes Land oder eine andere Region.
 
 ::food-limits
 

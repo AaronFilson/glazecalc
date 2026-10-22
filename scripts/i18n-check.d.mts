@@ -56,3 +56,7 @@ export function checkScripts(options?: { dir?: string; glossaries?: string }): s
 export function checkNormalization(dir?: string): string[];
 /** Problems with stray zero-width joiners and non-joiners in the Indian languages. */
 export function checkJoiners(dir?: string): string[];
+/** Problems with Urdu: a sentence ends with ۔, Urdu's letters (not ي ى ك ه), no tatweel or direction marks, NFC. */
+export function checkUrdu(dir?: string): string[];
+/** Problems with Bengali: a sentence ends with the danda । (never "." or U+09F7), NFC. */
+export function checkBengali(dir?: string): string[];

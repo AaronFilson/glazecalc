@@ -250,7 +250,7 @@ Yhdysvaltojen, EU:n, Ison-Britannian ja Australian säännöt rajoittavat sitä,
 
 **Rajakaavat**{{en: limit formulas}} (Digitalfire puhuu mieluummin **tavoitekaavoista**{{en: target formulas}}) antavat tasapainoisten lasitteiden tyypilliset Segerin kaavan vaihteluvälit tietylle keilalle: Digitalfiren tavoitteet keilalle 6 ovat alumiinioksidille 0,285–0,64 ja piidioksidille 2,4–4,7. Ne ohjaavat kohti hyvää kemiaa mutta eivät todista mitään; Digitalfire välttää sanaa ”raja”, koska se antaa ymmärtää, että vaihteluvälien sisällä olevat lasitteet ”ovat jotenkin turvallisia”. Glazecalcin työkalut reseptin muuttamiseen kertovat, kun uusi resepti ylittää suositellun rajan, kuten paljon booria keilassa 6, ja mitä lasite todennäköisesti tekee.
 
-Lakisääteiset raja-arvot vaihtelevat maittain. Taulukko näyttää oman asuinmaan raja-arvot lain omissa yksiköissä; valitse toinen maa vertailtavaksi.
+Lakisääteiset raja-arvot vaihtelevat maittain. Taulukko näyttää oman asuinmaan raja-arvot lain omissa yksiköissä; valitse toinen maa tai alue vertailtavaksi.
 
 ::food-limits
 

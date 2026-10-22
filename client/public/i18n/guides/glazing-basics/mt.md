@@ -250,7 +250,7 @@ Ir-regoli fl-Istati Uniti, fl-UE, fir-Renju Unit u fl-Awstralja jillimitaw iċ-�
 
 Il-**formuli tal-limiti**{{en: limit formulas}} (Digitalfire jippreferi **formuli tal-mira**{{en: target formulas}}) jagħtu firxiet tipiċi tal-formula ta’ Seger{{en: unity formula}} għal glejżijiet stabbli f’kon{{en: cone}} partikolari: il-miri ta’ Digitalfire għall-kon 6 ipoġġu l-alumina f’0.285–0.64 u s-silika{{en: silica}} f’2.4–4.7. Jgħinuk tasal għal kimika tajba iżda ma jippruvaw xejn; Digitalfire jevita l-kelma “limitu” għax tagħti x’tifhem li l-glejżijiet ġewwa l-firxiet “b’xi mod huma sikuri”. L-għodod ta’ Glazecalc biex tibdel riċetta jgħidulek meta r-riċetta l-ġdida taqbeż limitu rakkomandat, bħal ħafna boron fil-kon 6, u x’inhu probabbli li jagħmel il-glejż.
 
-Il-limiti legali jvarjaw minn pajjiż għal ieħor. It-tabella turi dawk ta’ fejn tgħix, fl-unitajiet tal-liġi stess; agħżel pajjiż ieħor biex tqabbel.
+Il-limiti legali jvarjaw minn pajjiż għal ieħor. It-tabella turi dawk ta’ fejn tgħix, fl-unitajiet tal-liġi stess; agħżel pajjiż jew reġjun ieħor biex tqabbel.
 
 ::food-limits
 

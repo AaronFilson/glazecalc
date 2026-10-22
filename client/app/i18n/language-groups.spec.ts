@@ -28,7 +28,7 @@ describe('the languages in groups', () => {
     expect(sections[1]!.codes).toEqual(['ja', 'ko', 'zh-Hans', 'zh-Hant']);
     expect(sections[2]!.codes.slice(0, 4)).toEqual(['bg', 'hr', 'cs', 'da']);
     expect(sections[3]!.codes).toEqual(['ar', 'tr']);
-    expect(sections[4]!.codes).toEqual(['hi']);
+    expect(sections[4]!.codes).toEqual(['bn', 'hi', 'ur']);
     expect(sections[5]!.codes).toEqual(['id', 'th', 'vi']);
   });
 

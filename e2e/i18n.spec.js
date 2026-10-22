@@ -184,25 +184,17 @@ test("Tamil and Kannada draw their letters in the system's font, in lines as tal
 
 test("an Urdu page fetches the app's Nastaliq font and sets its text in it, in lines 1.9 high", async ({ page }) => {
   const files = fontFiles(page);
-  await page.goto('/about');
-  await expect(page.locator('h1')).toBeVisible();
-  // There is no Urdu page yet: the page becomes one, with a line of Urdu.
-  await page.evaluate(() => {
-    const html = globalThis.document.documentElement;
-    html.lang = 'ur';
-    html.dir = 'rtl';
-    const line = globalThis.document.createElement('p');
-    line.id = 'urdu';
-    line.textContent = 'گلیز کا نسخہ، بھٹی اور حفاظت';
-    globalThis.document.querySelector('main').prepend(line);
-  });
+  await page.goto('/ur/about');
+  await expect(page.locator('html')).toHaveAttribute('lang', 'ur');
+  await expect(page.locator('html')).toHaveAttribute('dir', 'rtl');
+  await expect(page.locator('h1')).toHaveText(/[؀-ۿ]/);
   await expect.poll(() => files.filter((file) => /noto-nastaliq-urdu-wght-normal/.test(file)).length).toBe(1);
   await page.evaluate(() => globalThis.document.fonts.ready);
   const cdp = await page.context().newCDPSession(page);
   await cdp.send('DOM.enable');
   await cdp.send('CSS.enable');
   const { root } = await cdp.send('DOM.getDocument');
-  const { nodeId } = await cdp.send('DOM.querySelector', { nodeId: root.nodeId, selector: '#urdu' });
+  const { nodeId } = await cdp.send('DOM.querySelector', { nodeId: root.nodeId, selector: 'h1' });
   const { fonts } = await cdp.send('CSS.getPlatformFontsForNode', { nodeId });
   expect(fonts).toContainEqual(expect.objectContaining({ familyName: 'Noto Nastaliq Urdu', isCustomFont: true }));
   await expect(page.locator('body')).toHaveCSS('line-height', '32.3px');

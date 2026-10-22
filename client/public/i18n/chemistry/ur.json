@@ -1,0 +1,23 @@
+{
+  "unknown-compound": "فارمولے میں نامعلوم مرکب {compound}",
+  "unknown-oxide": "مواد {material} میں نامعلوم آکسائیڈ {oxide}",
+  "invalid-oxide-amount": "مواد {material} میں {oxide} کی مقدار درست نہیں",
+  "loi-range": "{material} کا LOI کم از کم 0 اور 100 سے کم ہونا ضروری ہے",
+  "no-oxides": "مواد {material} میں کوئی آکسائیڈ نہیں",
+  "no-name": "مواد کا نام ہونا ضروری ہے",
+  "no-analysis": "مواد {material} کے لیے فارمولا یا تجزیہ ضروری ہے",
+  "recipe-shape": "ریسیپی کا '{ material, amount }' کی فہرست یا مقداروں کا نقشہ ہونا ضروری ہے",
+  "invalid-amount": "مواد {material} کی مقدار درست نہیں",
+  "missing-material": "ریسیپی کی ایک سطر میں مواد نہیں ہے",
+  "unknown-material": "نامعلوم مواد {material}",
+  "no-flux": "ریسیپی میں فلکس آکسائیڈ نہیں ہیں، اس لیے سیگر فارمولا (UMF) طے نہیں ہو سکتا",
+  "no-target": "ہدف میں ایسے آکسائیڈ نہیں جن تک پہنچا جائے",
+  "no-materials": "حساب کرنے کے لیے کوئی مواد نہیں",
+  "no-temperature": "بورون طے کرنے کے لیے پکائی کا درجۂ حرارت ضروری ہے",
+  "no-flux-to-rebuild": "گلیز میں دوبارہ بنانے کے لیے کوئی فلکس نہیں",
+  "unknown-element": "{formula} میں نامعلوم عنصر {element}",
+  "bad-formula": "فارمولا {formula} پڑھا نہیں جا سکا",
+  "analysis-total": "{material} کے تجزیے کا مجموعہ LOI سمیت {total}% ہے؛ تقریباً 100% متوقع تھا۔",
+  "stored-equivalent": "{material} کا محفوظ مساوی وزن اس کے فارمولے اور LOI سے میل نہیں کھاتا؛ اس کی جگہ فارمولا اور LOI استعمال کیے گئے۔",
+  "trace-flux": "ریسیپی میں فلکس آکسائیڈ صرف معمولی مقدار میں ہیں، اس لیے سیگر فارمولا (UMF) بامعنی نہیں۔"
+}

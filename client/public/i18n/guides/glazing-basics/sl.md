@@ -250,7 +250,7 @@ Predpisi v ZDA, EU, Združenem kraljestvu in Avstraliji omejujejo, koliko svinca
 
 **Ciljne formule**{{en: limit formula}} (angleško limit formulas ali, kot raje pravi Digitalfire, **target formulas**) podajajo tipične razpone Segerjeve formule za stabilne glazure pri določenem stožcu{{en: cone}}: za stožec 6 Digitalfire navaja glinico 0,285–0,64 in kremenico 2,4–4,7. Usmerjajo vas k dobri kemijski sestavi, ne dokazujejo pa ničesar; Digitalfire se besedi »limit« (meja) izogiba, ker nakazuje, da so glazure znotraj teh razponov »nekako varne«. Orodja aplikacije Glazecalc za spreminjanje recepta povedo, kdaj nov recept preseže priporočeno mejo, na primer ko je pri stožcu 6 v glazuri veliko bora, in kako se bo glazura verjetno obnašala.
 
-Zakonske mejne vrednosti se med državami razlikujejo. Preglednica prikazuje tiste, ki veljajo tam, kjer živite, v enotah, ki jih uporablja zakon; za primerjavo izberite drugo državo.
+Zakonske mejne vrednosti se med državami razlikujejo. Preglednica prikazuje tiste, ki veljajo tam, kjer živite, v enotah, ki jih uporablja zakon; za primerjavo izberite drugo državo ali regijo.
 
 ::food-limits
 

@@ -250,7 +250,7 @@ USA, EL-i, Ühendkuningriigi ja Austraalia eeskirjad piiravad plii ja kaadmiumi 
 
 **Sihtvalemid** (inglise keeles limit formulas või, nagu Digitalfire eelistab, **target formulas**) annavad stabiilsete glasuuride tüüpilised Segeri valemi{{en: unity formula}} vahemikud ühe koonuse jaoks: Digitalfire’i koonuse 6 sihtväärtused on alumiiniumoksiidil 0,285–0,64 ja ränidioksiidil 2,4–4,7. Need suunavad teid usaldusväärse keemia poole, kuid ei tõesta midagi; Digitalfire väldib sõna limit („piir“), sest see jätab mulje, et vahemikesse jäävad glasuurid on „kuidagi ohutud“. Glazecalci tööriistad retsepti muutmiseks ütlevad, kui uus retsept ületab soovitatava piiri, näiteks kui koonuse 6 juures on palju boori, ja mida glasuur tõenäoliselt teeb.
 
-Seaduslikud piirnormid on riigiti erinevad. Tabelis on teie elukohariigi piirnormid õigusakti enda ühikutes; võrdlemiseks valige mõni teine riik.
+Seaduslikud piirnormid on riigiti erinevad. Tabelis on teie elukohariigi piirnormid õigusakti enda ühikutes; võrdlemiseks valige mõni teine riik või piirkond.
 
 ::food-limits
 

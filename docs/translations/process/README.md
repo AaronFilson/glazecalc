@@ -142,3 +142,22 @@ its "Choices for the owner and a native potter" first, then the gender-neutral f
 per counted noun, the month names by region, and the law's words from Algeria's Arabic Journal officiel) and hi.md (to
 come). Neither goes live
 before the groundwork for right-to-left pages, digits, fonts and the numbers check (Phase A) and the regions (Phase C).
+
+## Indian subcontinent, Phase D: Urdu and Bengali (live)
+
+Round 8, after Arabic and Hindi went live; both live since 2026-10-21 (translated, reviewed in six groups, made
+consistent, back-translated blind, the English changed during the wave caught up, and taken live with `go-live.mjs ur`,
+then `bn`, one per commit). `ur` (اردو, right to left, Nastaliq) and `bn` (বাংলা) are in
+lib/regions/languages.js (the standard notice) and in wave.js, with the owner's decisions of 2026-10-21:
+Hindi's model (the studio potters' loanwords first, the language's own term in brackets) but for three words whose
+loanword collides with an everyday one, the kiln (بھٹی, চুল্লি with "(কিলন)" once), firing (پکائی, পোড়ানো; never
+فائرنگ or ফায়ারিং, gunfire) and the cone (مخروط, শঙ্কু; never کون "who" or কোন "which"), each cone with "(Orton cone)"
+in Latin letters at its first use. **Urdu** is Pakistan's (region `PK`): آپ, sentences end with ۔, Urdu letters (ی ک
+ہ, never the Arabic ي ك ه), and Urdu pages show the digits 0 to 9, as Pakistan writes them. **Bengali** is
+Bangladesh's (region `BD`; West Bengal reads the same page): আপনি, পানি, sentences end with the danda । (U+0964, never
+its look-alike U+09F7), and Bengali pages show every figure in Bengali digits, the text's as well as the formatted
+numbers (`textDigits` in lib/regions/languages.js), unless the reader chose 0 to 9 in Settings. Both translations write
+0 to 9 only. The translations check (scripts/i18n-check.mjs) holds them to it: checkUrdu (۔, the Urdu letters, no
+tatweel or direction marks, NFC) and checkBengali (।, never U+09F7, NFC). The style sheets are docs/translations/ur.md
+and bn.md (written 2026-10-21 from the round-8 terminology pass, scratch/round8/urbn-terms in the main checkout), each
+with "The owner's decisions and the native check" first. Generate the prompts in the worktree they run in (`{REPO}`).

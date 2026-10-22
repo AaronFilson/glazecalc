@@ -250,7 +250,7 @@ Aturan di AS, UE, Inggris, dan Australia membatasi timbal dan kadmium yang dilep
 
 **Formula batas**{{en: limit formula}} (Digitalfire lebih suka **formula target**) memberi rentang formula Seger tipikal untuk glasir stabil pada suatu kerucut: target kerucut 6 Digitalfire menempatkan alumina pada 0,285–0,64 dan silika pada 2,4–4,7. Rentang itu membimbing Anda ke kimia yang sehat tetapi tidak membuktikan apa pun; Digitalfire menghindari kata "batas" karena menyiratkan glasir di dalam rentang itu "entah bagaimana aman". Alat Glazecalc untuk mengubah resep menyatakan bila resep baru melewati batas yang dianjurkan, seperti banyak boron pada kerucut 6, dan apa yang kemungkinan akan dilakukan glasir.
 
-Batas menurut hukum berbeda menurut negara. Tabel menunjukkan yang berlaku di tempat Anda, dalam satuan hukum itu sendiri; pilih negara lain untuk membandingkan.
+Batas menurut hukum berbeda menurut negara. Tabel menunjukkan yang berlaku di tempat Anda, dalam satuan hukum itu sendiri; pilih negara atau wilayah lain untuk membandingkan.
 
 ::food-limits
 

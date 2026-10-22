@@ -126,24 +126,35 @@ describe('the Indian languages’ script checks', () => {
   });
 
   describe('checkJoiners', () => {
-    it('passes Malayalam’s ZWNJ after a virama, Sinhala’s ZWJ after a virama, and text with none', () => {
+    it('passes Malayalam’s ZWNJ after a virama, Sinhala’s ZWJ after a virama, Bengali’s ra-ZWJ-virama, and text with none', () => {
       write('ml.json', { material: 'ഒക്\u200cടോബർ ൻ ൽ' });
       write('si.json', { material: 'ශ්\u200dරී' });
       write('hi.json', { material: 'सिलिका' });
-      // Bengali uses a ZWJ for ya-phala, and Japanese or Urdu are not Indian: left alone.
-      write('bn.json', { material: 'র\u200d্যাম' });
+      // Bengali writes ra with ya-phala as ra, ZWJ, virama, ya (the word for ramp); Urdu is not Indian: left alone.
+      write('bn.json', { material: 'র' + ZWJ + '্যাম্প', fire: 'র' + ZWJ + '্যাব' });
       write('ur.json', { material: 'می\u200cخانہ' });
       expect(checkJoiners(dir)).to.eql([]);
     });
 
-    it('finds a stray joiner, and the ones Malayalam and Sinhala do not take', () => {
+    it('finds a stray joiner, and the ones Malayalam, Sinhala and Bengali do not take', () => {
       write('ml.json', { material: 'ന\u200d്\u200dന', fire: 'ക' + ZWNJ + 'ക' });
       write('si.json', { material: 'ශ' + ZWNJ + 'රී', fire: 'ස' + ZWJ + 'ස' });
       write('hi.json', { material: 'क्' + ZWJ + 'ष' });
       write('ta.json', { material: 'க' + ZWNJ + 'க' });
+      // Bengali's ZWJ after the virama, after another letter, or with no virama after it, and any ZWNJ.
+      write('bn.json', {
+        material: 'র্' + ZWJ + 'য',
+        fire: 'ক' + ZWJ + '্য',
+        note: 'র' + ZWJ + 'য',
+        list: 'ক' + ZWNJ + 'ক'
+      });
       writeFileSync(path.join(dir, 'guides', 'firing', 'en.md'), '# Firing\n');
       writeFileSync(path.join(dir, 'guides', 'firing', 'kn.md'), '# ಸು' + ZWJ + 'ಡು\n');
       expect(checkJoiners(dir)).to.eql([
+        'app bn material: a stray ZWJ (U+200D) (1); bn takes a ZWJ only between র and the virama (র + ZWJ + ্ + য) and no ZWNJ',
+        'app bn fire: a stray ZWJ (U+200D) (1); bn takes a ZWJ only between র and the virama (র + ZWJ + ্ + য) and no ZWNJ',
+        'app bn note: a stray ZWJ (U+200D) (1); bn takes a ZWJ only between র and the virama (র + ZWJ + ্ + য) and no ZWNJ',
+        'app bn list: a stray ZWNJ (U+200C) (1); bn takes a ZWJ only between র and the virama (র + ZWJ + ্ + য) and no ZWNJ',
         'app hi material: a stray ZWJ (U+200D) (1); hi takes none',
         'app ml material: a stray ZWJ (U+200D) (2); ml takes a ZWNJ only after a virama and no ZWJ, for its chillu letters are single characters',
         'app ml fire: a stray ZWNJ (U+200C) (1); ml takes a ZWNJ only after a virama and no ZWJ, for its chillu letters are single characters',

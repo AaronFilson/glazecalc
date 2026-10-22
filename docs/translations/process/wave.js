@@ -679,6 +679,98 @@ const LANGUAGES = {
       ]
     }
   },
+  // The subcontinent's next two (README.md, "Indian subcontinent, Phase D: Urdu and Bengali"), each
+  // with the standard notice and the owner's decisions of 2026-10-21: Hindi's model (the potters'
+  // loanwords first) but for three words, the kiln, firing and the cone, which take the language's own
+  // word, since the loanword collides (کون and কোন are "who" and "which", فائرنگ and ফায়ারিং gunfire).
+  // Urdu is Pakistan's, right to left in Nastaliq, ending sentences with ۔ and showing 0 to 9; Bengali is
+  // Bangladesh's (West Bengal reads it), ending sentences with the danda । and shown in Bengali digits.
+  // Their glossaries are written: docs/translations/ur.md and bn.md.
+  ur: {
+    language: 'Urdu',
+    country: 'Pakistan',
+    region: 'PK',
+    shops:
+      "lib/regions has no PK region yet (Phase C), and its research (scratch/round6/research/in-pk-bd.md in the main checkout) found no Pakistani shop whose own site shows raw glaze materials; Pakistanis search for glazes in English (\"ceramic glaze price in pakistan\"), and the Trade Development Authority's pottery brochure (tdap.gov.pk) names kaolin, china clay, feldspar and quartz in English. Read the Indian shops the Hindi entry names (Bhoomi, Clay Station) for the names on the bag, and look for Pakistani pottery courses (the National College of Arts, Lahore; Multan's and Hala's potters) and Urdu articles on pottery (Dunya, Express, Jang) for the words potters use.",
+    termbank:
+      "the Urdu Dictionary Board's Urdu Lughat (udb.gov.pk), the National Language Promotion Department's English-Urdu dictionaries and term lists (nlpd.gov.pk), Urdu Wikipedia's chemistry glossary (فرہنگ اصطلاحات کیمیا), the Punjab and Sindh textbook boards' Urdu-medium chemistry, and Platts' dictionary (DSAL)",
+    kilns:
+      "kiln makers' and dealers' catalogues and manuals for the electric and gas kilns sold to potters in Pakistan, and the Urdu press on potters (Dunya, Express, Geo): they give the words for kiln parts and firing steps (بھٹی, آوا, پکائی, کچے برتن).",
+    law: "Pakistani law in Urdu where any (the Factories Act 1934, Sindh's Occupational Safety and Health Act 2017 and Punjab's of 2019, PSQCA's standards); none was found by the terminology pass, so the safety text is plain Urdu, with the codes kept; the bodies: Rescue 1122 (each province's), 15 (police, Punjab), the Ministry of National Health Services, Regulations and Coordination (by its English name, with an Urdu gloss once). Where the English names EU law (Directive 84/500/EEC, CLP), there is no official Urdu text: describe it plainly with the number kept;",
+    terms:
+      "the term banks and teaching texts of Urdu ({TERMBANK}); IATE has no Urdu. For software conventions (register, buttons, punctuation, Urdu letters, right-to-left text with Latin words and figures inside it, digits), the Microsoft Urdu style guide, Mozilla's Urdu style guide and Google's Urdu help pages.",
+    notes: {
+      glossary: [
+        "The style sheet and glossary are written (docs/translations/ur.md, 2026-10-21, with the owner's decisions): bring it up to date rather than starting again, keep its sources and its Native check rows, and say which source each new row rests on."
+      ],
+      translate: [
+        "Style sheet and glossary: docs/translations/ur.md. Every term as it gives it; where a row says Native check, use the row's choice and list the sentence in your flags for the reviewer.",
+        "آپ and the polite -یں imperative (محفوظ کریں, کھولیں); the potters' loanwords first (گلیز, فرٹ, بسکٹ) as the style sheet gives them; the reader's gender never guessed (the -یں imperative and the passive).",
+        'The owner\'s three exceptions to the loanwords: the kiln is بھٹی (never کلن), firing پکائی / پکانا (never فائرنگ, which is gunfire), the cone مخروط (never کون, which is "who"), with "(Orton cone)" in Latin letters after مخروط at its first use in each part, as the style sheet says.',
+        'A sentence ends with the Urdu full stop ۔ (U+06D4), never the Latin "."; the Urdu comma ، semicolon ؛ and question mark ؟. The check refuses a Latin "." at the end of an Urdu sentence.',
+        'Urdu letters, not Arabic ones: ی ک ہ ھ ے (U+06CC, U+06A9, U+06C1, U+06BE, U+06D2), never ي ى ك ه (U+064A, U+0649, U+0643, U+0647), which the check refuses; no tatweel (U+0640) and no direction marks (the app sets the direction).',
+        "Numbers: the digits 0 to 9 only, never Urdu (۰۱۲) or Arabic-Indic (٠١٢) digits; 1.5 with a point and the English's figures as it writes them, never ٫ ٬ or ٪; units in Latin letters as the English writes them (10 g, 1222 °C). A number the English writes as a word stays a word (دو تہیں), since a digit would be a figure the English lacks. Dates 14 اکتوبر 2026; times on the 24-hour clock (20:00), never صبح, شام or رات with a 12-hour figure.",
+        'Plural forms: `one` and `other` in every plural message (`one` is exactly 1), the noun in its plural after any number but 1; keep `=0` where the English has it.',
+        'Cones: Orton cones are Orton wherever the English says Orton; SK cones are SK with the number as printed; Seger only where the English says Seger; سیگر فارمولا (UMF) is never a cone. Never give an SK number for an Orton number or the reverse, nor say they are equal. "One number hotter/cooler" as ایک نمبر زیادہ گرم / کم گرم, never اونچا or نیچا.',
+        'Should, must and may as the style sheet gives them, kept apart (چاہیے, ضروری ہے, سکتا ہے); no emphasis word (ہمیشہ, بالکل, ضرور, کبھی نہیں) the English lacks; "must be tested" means the test is done, not passed.',
+        'The food-contact text names Directive 84/500/EEC: it has no official Urdu text, so write the EU categories plainly, so that the 3 L still applies only to packaging and storage vessels.',
+        "Japanese names in the guides and region notes (the firing guide's) are Hepburn romanization with the English gloss, never Japanese script."
+      ],
+      review: [
+        'Urdu: "at most", "no more than" and "up to" are زیادہ سے زیادہ / سے زیادہ نہیں, never سے کم ("less than", "under"); "at least" کم از کم, never سے زیادہ. A slip here moves a legal limit. Check every one in the food-contact, silica and safety text.',
+        'Urdu: every sentence ends with ۔, never the Latin "."; Urdu letters (ی ک ہ), never the Arabic ي ى ك ه; the digits 0 to 9 only; units and figures as the English writes them; times on the 24-hour clock; `one` and `other` in every plural message.',
+        'Urdu: the kiln بھٹی, firing پکائی, the cone مخروط with "(Orton cone)" at its first use (the owner\'s decisions), never کلن, فائرنگ or کون; SK cones written "SK" as printed, Orton cones named Orton, no SK number given for an Orton number or the reverse; specific gravity کثافت اضافی with the English\'s figure, never کثافت alone.',
+        "Urdu: آپ and the -یں imperative; no guess at the reader's gender; should, must and may kept apart; no emphasis the English lacks; no should turned into must and no may dropped."
+      ],
+      backtranslate: [
+        'زیادہ سے زیادہ and سے زیادہ نہیں mean "at most" (the limit itself passes); سے کم means "less than" (it does not). Translate each back exactly as it reads: a limit that moved from one to the other is a difference in meaning.',
+        'Words of emphasis and obligation are translated back as strongly as they read: one the English lacks is a difference in meaning. ضروری ہے and لازم ہے are "must", چاہیے "should", سکتا ہے "may".',
+        'Names of services and bodies (Rescue 1122) stay as written: compare what they refer to.'
+      ]
+    }
+  },
+  bn: {
+    language: 'Bengali',
+    country: 'Bangladesh (West Bengal reads the same page)',
+    region: 'BD',
+    shops:
+      "lib/regions has no BD region yet (Phase C), and its research (scratch/round6/research/in-pk-bd.md in the main checkout) found no Bangladeshi shop whose own site shows raw glaze materials; Bangladeshis search for glazes in English (\"ceramic glaze price in bangladesh\"), and the University of Dhaka's Department of Ceramic teaches in English. Read the Indian shops the Hindi entry names (Bhoomi, Clay Station) for the names on the bag, and Banglapedia's ceramics pages and the Bangladeshi ceramics makers (Shinepukur, Monno) for the industry's Bengali words.",
+    termbank:
+      "Bangla Academy's dictionaries and its scientific term lists (পরিভাষা), the Bangladesh NCTB school textbooks (chemistry, classes 9 to 12) and BTEB's glass and ceramics diploma books, Banglapedia, and the Bengali Wikipedia's ceramics and chemistry articles",
+    kilns:
+      "kiln makers' and dealers' catalogues and manuals for the electric and gas kilns sold to potters in Bangladesh and India, and the Bengali Wikipedia's pottery articles: they give the words for kiln parts and firing steps (চুল্লি, পোড়ানো, বিস্ক, গ্লেজ পোড়ানো).",
+    law: "Bangladeshi law in its Bengali text (bdlaws.minlaw.gov.bd: the Bangladesh Labour Act 2006 and the Labour Rules 2015, on dust, masks and workplace health), BSTI's Bengali standards, and the GHS in Bengali (the Bengali Wikipedia's list of hazard statements is not an official text); the bodies: 999 (জরুরি সেবা), DGHS's health line 16263, the Ministry of Health and Family Welfare (স্বাস্থ্য ও পরিবার কল্যাণ মন্ত্রণালয়), DIFE (কলকারখানা ও প্রতিষ্ঠান পরিদর্শন অধিদপ্তর). Where the English names EU law (Directive 84/500/EEC, CLP), there is no official Bengali text: describe it plainly with the number kept;",
+    terms:
+      "the term banks and teaching texts of Bengali ({TERMBANK}); IATE has no Bengali. For software conventions (register, buttons, punctuation, the danda, Bangla Academy's spelling), the Microsoft Bangla style guides (Bangladesh and India), Mozilla's bn-BD style guide and Google's Bengali help pages.",
+    notes: {
+      glossary: [
+        "The style sheet and glossary are written (docs/translations/bn.md, 2026-10-21, with the owner's decisions): bring it up to date rather than starting again, keep its sources and its Native check rows, and say which source each new row rests on."
+      ],
+      translate: [
+        "Style sheet and glossary: docs/translations/bn.md. Every term as it gives it; where a row says Native check, use the row's choice and list the sentence in your flags for the reviewer.",
+        "আপনি and its verb forms (করুন, দেখুন), standard colloquial Bengali (চলিত ভাষা), never সাধু ভাষা; the potters' loanwords first (গ্লেজ, ফ্রিট, বিস্ক) as the style sheet gives them; Bangla Academy's spelling; পানি for water.",
+        'The owner\'s three exceptions to the loanwords: the kiln is চুল্লি, with "(কিলন)" after it once, at its first use in each part; firing is পোড়ানো (never ফায়ারিং, which is gunfire); the cone is শঙ্কু (never কোন, which is "which"), with "(Orton cone)" in Latin letters after it at its first use in each part, as the style sheet says.',
+        'A sentence ends with the danda । (U+0964), never the Latin "." and never ৷ (U+09F7, a look-alike): the owner\'s choice. The check refuses both. Text in Unicode\'s composed form (NFC), as the style sheet says.',
+        "Numbers: the digits 0 to 9 only, never Bengali digits (০১২), লাখ or কোটি: the app shows every figure in Bengali digits itself unless the reader chose 0 to 9. 1.5 with a point and the English's figures as it writes them; 5% and units as the English writes them (10 g, 1222 °C). A number the English writes as a word stays a word (দুটি স্তর), since a digit would be a figure the English lacks. Dates 14 অক্টোবর 2026; times on the 24-hour clock (20:00), never সকাল, বিকাল or রাত with a 12-hour figure.",
+        'Plural forms: `one` and `other` in every plural message, `one` reading right for 0 as well as 1 (#টি রেসিপি); keep `=0` where the English has it.',
+        'Cones: Orton cones are Orton wherever the English says Orton; SK cones are SK with the number as printed; Seger only where the English says Seger; সেগার সূত্র (UMF) is never a cone. Never give an SK number for an Orton number or the reverse, nor say they are equal. "One number hotter/cooler" as এক নম্বর বেশি গরম / কম গরম, never উঁচু or নিচু.',
+        'Should, must and may as the style sheet gives them, kept apart (উচিত, অবশ্যই … করতে হবে, পারে); no emphasis word (সবসময়, অবশ্যই, একদম, কখনো না) the English lacks; "must be tested" means the test is done, not passed. H301 is "গিলে ফেললে বিষাক্ত", with no "may".',
+        'The food-contact text names Directive 84/500/EEC: it has no official Bengali text, so write the EU categories plainly, so that the 3 L still applies only to packaging and storage vessels.',
+        "Japanese names in the guides and region notes (the firing guide's) are Hepburn romanization with the English gloss, never Japanese script."
+      ],
+      review: [
+        'Bengali: "at most", "no more than" and "up to" are সর্বোচ্চ / এর বেশি নয়, never এর কম ("less than", "under"); "at least" কমপক্ষে, never এর বেশি. A slip here moves a legal limit. Check every one in the food-contact, silica and safety text.',
+        'Bengali: every sentence ends with the danda । (U+0964), never "." or ৷ (U+09F7); the digits 0 to 9 only in the files (the app shows Bengali digits); units and figures as the English writes them; times on the 24-hour clock; `one` and `other` in every plural message, `one` reading right for 0.',
+        'Bengali: the kiln চুল্লি with "(কিলন)" once, firing পোড়ানো, the cone শঙ্কু with "(Orton cone)" at its first use (the owner\'s decisions), never ফায়ারিং or কোন; SK cones written "SK" as printed, Orton cones named Orton, no SK number given for an Orton number or the reverse; specific gravity আপেক্ষিক গুরুত্ব with the English\'s figure, never ঘনত্ব.',
+        'Bengali: আপনি and চলিত ভাষা; should, must and may kept apart; no emphasis the English lacks; no should turned into must and no may dropped; H301 stronger than H302 (no "may" in H301).'
+      ],
+      backtranslate: [
+        'সর্বোচ্চ and এর বেশি নয় mean "at most" (the limit itself passes); এর কম means "less than" (it does not). Translate each back exactly as it reads: a limit that moved from one to the other is a difference in meaning.',
+        'Words of emphasis and obligation are translated back as strongly as they read: one the English lacks is a difference in meaning. অবশ্যই … করতে হবে and বাধ্যতামূলক are "must", উচিত "should", পারে "may".',
+        'Names of services and bodies (999, DGHS, DIFE) stay in Bengali as written: compare what they refer to.'
+      ]
+    }
+  },
   // India's regional languages (wave I1: Tamil, Marathi, Kannada; scratch/round8/in-langs/plan.md), modelled on
   // Hindi's and written by indianNotes above. Each is for India's region (IN), fired by Orton cones; the later
   // waves (Telugu, Malayalam, Gujarati, Punjabi, Odia; then Nepali and Sinhala, which wait for their regions)
