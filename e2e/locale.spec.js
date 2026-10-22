@@ -159,3 +159,19 @@ test("a Bengali page shows its text's figures in Bengali digits, as its numbers,
   await expect(formatHelp).toHaveText('সংখ্যা ও তারিখ কীভাবে লেখা হয়: 12,345.6 বা 12.345,6, আর দিন ও মাসের ক্রম।');
   await expect(page.locator('label[for="temperature-C"]')).toContainText('1240 °C');
 });
+
+test('Marathi numbers show in Devanagari digits by default, Tamil and Kannada in 0–9, as CLDR has them', async ({
+  page
+}) => {
+  // [language, the usual digits' example]
+  for (const [code, example] of [
+    ['mr', '१२,३४५.६'],
+    ['ta', '12,345.6'],
+    ['kn', '12,345.6']
+  ]) {
+    await page.goto('/' + code + '/account');
+    await expect(page.locator('html')).toHaveAttribute('lang', code);
+    await expect(page.locator('label[for="digits-auto"]'), code).toContainText(example);
+    await expect(page.locator('label[for="digits-western"]'), code).toContainText('12,345.6');
+  }
+});

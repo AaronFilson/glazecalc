@@ -149,7 +149,10 @@ describe('account emails', () => {
     await accountMail.sendChanged(address, 'hi');
     await accountMail.sendChanged(address, 'ur');
     await accountMail.sendChanged(address, 'bn');
-    const [arabic, german, hindi, urdu, bengali] = await mail.waitFor(address, 5);
+    await accountMail.sendChanged(address, 'ta');
+    await accountMail.sendChanged(address, 'mr');
+    await accountMail.sendChanged(address, 'kn');
+    const [arabic, german, hindi, urdu, bengali, tamil, marathi, kannada] = await mail.waitFor(address, 8);
     expect(arabic!.subject).to.equal(RLM + accountMail.RESET['ar']!.subject);
     const lines = arabic!.text.split('\n');
     // Each line of text starts right to left, even one that starts with an address or a link.
@@ -163,12 +166,15 @@ describe('account emails', () => {
     expect(mail.tokenIn(arabic!)).to.equal('abc123');
     // Urdu runs right to left too, in its own words.
     expect(urdu!.subject).to.equal(RLM + accountMail.CHANGED['ur']!.subject);
-    // German, Hindi and Bengali run left to right, as they are.
-    for (const ltr of [german!, hindi!, bengali!]) {
+    // German, Hindi, Bengali, Tamil, Marathi and Kannada run left to right, as they are.
+    for (const ltr of [german!, hindi!, bengali!, tamil!, marathi!, kannada!]) {
       expect(ltr.subject + ltr.text).not.to.include(RLM);
     }
     expect(hindi!.subject).to.equal(accountMail.CHANGED['hi']!.subject);
     expect(bengali!.subject).to.equal(accountMail.CHANGED['bn']!.subject);
+    expect(tamil!.subject).to.equal(accountMail.CHANGED['ta']!.subject);
+    expect(marathi!.subject).to.equal(accountMail.CHANGED['mr']!.subject);
+    expect(kannada!.subject).to.equal(accountMail.CHANGED['kn']!.subject);
     expect(accountMail.inDirection({ to: 'a@b.c', subject: 'S', text: 'x\n\ny\n-- \nz\n' }, 'ar-XD').text).to.equal(
       RLM + 'x\n\n' + RLM + 'y\n-- \n' + RLM + 'z\n'
     );

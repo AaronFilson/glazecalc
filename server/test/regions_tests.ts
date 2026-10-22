@@ -1686,15 +1686,15 @@ describe('calendars', () => {
   });
 });
 
-// India's regional languages, known ahead of their translations (wave I1: Tamil, Marathi, Kannada;
+// India's regional languages (wave I1: Tamil, Marathi, Kannada, live since round 8;
 // scratch/round8/in-langs/plan.md).
 describe("India's regional languages", () => {
-  it('are known, grouped with the subcontinent, written for India and not offered', () => {
+  it('are offered, grouped with the subcontinent and written for India', () => {
     for (const code of ['ta', 'mr', 'kn']) {
       const language = languages.languageFor(code)!;
-      expect(language, code).to.include({ code, dir: 'ltr', live: false });
+      expect(language, code).to.include({ code, dir: 'ltr', live: true });
       expect(groups.languageGroup(code), code).to.equal('south-asia');
-      expect(languages.LIVE_LANGUAGES, code).not.to.include(code);
+      expect(languages.LIVE_LANGUAGES, code).to.include(code);
       expect(regions.regionFor('IN')!.languages, code).to.include(code);
     }
     // Hindi and English stay first: Hindi's pages are still written for India.

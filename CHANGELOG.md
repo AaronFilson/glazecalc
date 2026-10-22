@@ -6,6 +6,21 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Added
 
+- **Tamil, Marathi and Kannada** (docs/translations/ta.md, mr.md, kn.md): the app, the emails and all five guides, live
+  at `/ta/…`, `/mr/…` and `/kn/…`, written for India, with the standard notice. Each uses the studio potters' loanword
+  first with the textbook term in brackets at its first use, ends sentences with the Latin full stop and writes 0–9;
+  the page shows numbers as CLDR has them: Marathi in Devanagari digits, Tamil and Kannada in 0–9, Kannada grouped in
+  threes (1,234,567) rather than India's lakhs (0–9 or the script's own digits where the reader chose them in
+  Settings). Each was translated from sourced terminology, reviewed in six groups, made consistent across its files and
+  back-translated blind (the safety guides and every warning: one difference fixed in Marathi, four in Tamil, one in
+  Kannada). The reviews caught "soluble" written as "melting" in Kannada (more than 50 places, the lead frits' safety
+  notes among them) and "turn off" written with the word that also means "choose". The warnings the English writes in
+  capitals (CONTAINS LEAD, LEAD FRIT) start with "Caution:" instead. Native reviewers for Tamil and Marathi are still
+  wanted (the Native check rows in each style sheet). The README counts 39 languages.
+- **Paste-in reads the additions and base headings in Arabic, Hindi, Urdu, Bengali, Tamil, Marathi and Kannada**
+  (`lib/recipe/paste.js`), in the words of each language's glossary and recipe labels. Headings are compared in NFKC,
+  without Arabic vowel marks or tatweel, with Urdu and Arabic letter forms taken as one, so a heading typed on either
+  keyboard matches.
 - **Urdu and Bengali** (docs/translations/ur.md, bn.md): the app, the emails and all five guides, live at `/ur/…`
   (right to left, in Nastaliq) and `/bn/…`, with the standard notice. Urdu is written for Pakistan: آپ, the potters'
   loanwords (گلیز, فرٹ), sentences ending with ۔, Urdu's own letters (ی ک ہ) and the digits 0–9, as Pakistan writes
@@ -81,7 +96,7 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   the Latin full stop (the owner's choice). Each was translated, reviewed in six groups, made consistent across its files
   and back-translated blind (the safety guides and every warning); a native potter's check of the terms marked in the
   style sheets is still welcome. The README counts 34 languages.
-- **Groundwork for India's regional languages** (wave I1: Tamil, Marathi, Kannada; none is offered yet). `ta`, `mr` and
+- **Groundwork for India's regional languages** (wave I1: Tamil, Marathi, Kannada, live since: above). `ta`, `mr` and
   `kn` are known to the language list, the pickers' groups, India's region and the first render's country; their fonts
   (Nirmala UI, Noto, Sangam MN: none served) and line heights are in `client/styles.scss`, with the Odia and Sinhala
   entries ready for the later waves; the Linux test image keeps the Tamil and Kannada Noto fonts. Two pseudo-locales,
@@ -1247,6 +1262,9 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Fixed
 
+- **Bengali no longer writes dissolving as melting**: two material notes and the glazing basics guide's paragraph on
+  leaching said a glaze or frit "melts" where the English says it dissolves. Found by the Kannada review; Hindi, Urdu
+  and Marathi were checked and did not have it.
 - **Hindi and French messages written for exactly one stay so**: their `one` plural form takes 0 as well as 1, so
   the six messages whose English means a single thing ("your passkey", "your access token", "it") now give that text
   for 1 only (`=1`), and a count of 0 reads as the plural. A server test keeps every such message so in each language

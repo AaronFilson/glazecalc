@@ -182,6 +182,28 @@ test("Tamil and Kannada draw their letters in the system's font, in lines as tal
   expect(files.filter((file) => /noto-(sans|nastaliq)/i.test(file))).toEqual([]);
 });
 
+test("Tamil, Marathi and Kannada pages are in their own script, in the system's font and the script's line height", async ({
+  page
+}) => {
+  const files = fontFiles(page);
+  // [language, its letters, its Linux font, text line height at 17 px]
+  for (const [code, letters, linux, line] of [
+    ['ta', /[஀-௿]/, 'Noto Sans Tamil', '28.9px'],
+    ['mr', /[ऀ-ॿ]/, 'Noto Sans Devanagari', '29.75px'],
+    ['kn', /[ಀ-೿]/, 'Noto Sans Kannada', '31.45px']
+  ]) {
+    await page.goto('/' + code + '/guides/firing');
+    await expect(page.locator('html')).toHaveAttribute('lang', code);
+    await expect(page.locator('h1')).toHaveText(letters);
+    await expect(page.getByRole('navigation', { name: 'Main' })).toHaveCount(0);
+    await page.evaluate(() => globalThis.document.fonts.ready);
+    const font = process.platform === 'linux' ? new RegExp(`^${linux}$`) : /^Nirmala UI/;
+    expect(await fontsOf(page, 'h1'), code).toContainEqual(expect.stringMatching(font));
+    await expect(page.locator('body')).toHaveCSS('line-height', line);
+  }
+  expect(files.filter((file) => /noto-(sans|nastaliq)/i.test(file))).toEqual([]);
+});
+
 test("an Urdu page fetches the app's Nastaliq font and sets its text in it, in lines 1.9 high", async ({ page }) => {
   const files = fontFiles(page);
   await page.goto('/ur/about');

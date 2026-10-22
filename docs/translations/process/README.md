@@ -161,3 +161,37 @@ numbers (`textDigits` in lib/regions/languages.js), unless the reader chose 0 to
 tatweel or direction marks, NFC) and checkBengali (।, never U+09F7, NFC). The style sheets are docs/translations/ur.md
 and bn.md (written 2026-10-21 from the round-8 terminology pass, scratch/round8/urbn-terms in the main checkout), each
 with "The owner's decisions and the native check" first. Generate the prompts in the worktree they run in (`{REPO}`).
+
+## Indian regional languages, wave I1: Tamil, Marathi and Kannada (live)
+
+Round 8, after Urdu and Bengali; all three live since 2026-10-21 (glossaries from sourced research, 27 translation
+parts, 18 reviews in six groups per language, a consistency pass and a blind back-translation each, then `go-live.mjs
+mr`, `ta`, `kn`, one per commit). `ta` (தமிழ்), `mr` (मराठी) and `kn` (ಕನ್ನಡ) are written for India (region `IN`), in
+lib/regions/languages.js (the standard notice) and in wave.js, with the owner's decisions (scratch/round8/plan.md): the
+studio potters' loanword first with the textbook term in brackets at its first use, sentences end with the Latin full
+stop ".", translations write 0 to 9 only, and the app shows CLDR's digits and grouping (Marathi in Devanagari digits by
+default; Tamil and Kannada 0 to 9; Kannada grouped in threes, 1,234,567, unlike India's other languages). The style
+sheets are docs/translations/ta.md, mr.md and kn.md, each with its Native check rows; Marathi's terms are never copied
+from Hindi's sheet. What the wave taught, for the next ones (Telugu, Gujarati, Malayalam and the rest):
+
+- **Soluble is not melting.** Kannada's glossary gave ಕರಗು ("melt") for "soluble", so "low-solubility lead frit" read
+  "low-melting" and "a frit dissolves far less than raw materials" read "melts far less" in the safety text; the
+  reviews and the consistency pass changed more than 50 to ದ್ರಾವ್ಯ / ದ್ರಾವ್ಯತೆ. Each glossary now keeps the two apart (Tamil
+  கரை- and உருகு, Marathi विद्राव्य and वितळणे). The same check of the live languages found four in Bengali (fixed) and
+  none in Hindi, Urdu or Marathi. Check this row first in every Indian language.
+- **"Turn off" is not "choose".** Kannada's ಆರಿಸು means both, so "turn all switches off" read "select all switches";
+  the firing guide now says ಆಫ್ ಮಾಡು (17 places). A verb with two senses in a safety step needs the glossary to name
+  the one meant.
+- **Can and may as possibility, not permission.** Tamil's -லாம் reads as "you may"; where the English says a thing
+  can happen (a glaze can leach, a frit may shiver), the consistency pass wrote -க்கூடும் (eight places). Hedges
+  ("tend to", "about", "should" against "must") were the commonest meaning fix in all three.
+- **Japanese names** are written in Hepburn with macrons and the kanji after (Ōsaka chūdoku 110-ban, 大阪中毒110番), as
+  Urdu and Bengali settled; the numbers check takes the repeated figure.
+- **The Glob tool does not list untracked files under .claude/.** Translators in worktrees concluded that ta.json and
+  the other guides did not exist and took labels from the style sheet instead; the reviews then matched them. Briefs
+  now say to use Read with full paths, and Grep.
+- **Capitals for emphasis** (CONTAINS LEAD, LEAD FRIT) have no equivalent in these scripts: the warning starts with
+  "Caution:" (கவனம், सावधान, ಎಚ್ಚರಿಕೆ) instead.
+
+Still open: native reviewers for Tamil and Marathi (the Native check lists), the iPhone font check and Marathi's ल/श
+forms (docs/i18n-plan.md, "Fonts").

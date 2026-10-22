@@ -1,214 +1,958 @@
 # मराठी: style sheet and glossary
 
-**Skeleton.** The rules below are decided; the glossary tables are empty, for the glossary research to fill (wave I1 of
-`scratch/round8/in-langs/plan.md`; the prompt is made by `docs/translations/process/make-glossary-prompts.js mr`, from
-the `mr` entry of `process/wave.js`). Nothing here is translated yet, and Marathi is not offered: `mr` is known to
-`lib/regions` ahead of its files.
-
-For translating Glazecalc into Marathi (`mr`), for potters in India (region `IN`: Maharashtra). Read
-[README.md](README.md) first; [terms.md](terms.md) gives the meaning of every English term below. [hi.md](hi.md) is the
-model for the shape of this page, **not for its words**: Marathi shares Devanagari with Hindi, but many Hindi and Marathi
-words look alike and differ in meaning, and a term is never copied from hi.md. Every Marathi message and guide follows
-this page: one Marathi word for one thing. India fires by Orton cones by default, with temperatures one tap away, so the
-Marathi pages must read well with Orton cones and temperatures and say nothing about SK cones that the English does not
-say.
+For translating Glazecalc into Marathi (`mr`), for potters in India (region `IN`: Maharashtra). Read [README.md](README.md)
+first; [terms.md](terms.md) gives the meaning of every English term below. [hi.md](hi.md) is the model for the shape of
+this page, **not for its words**: Marathi shares Devanagari with Hindi, but many Hindi and Marathi words look alike and
+differ in meaning (Hindi अणु is a molecule, Marathi अणु an atom; Hindi सीसा is lead, Marathi शिसे; Marathi कोण is "who"
+and कोन an angle), and no term on this page is copied from hi.md. Every Marathi message and guide follows this page:
+one Marathi word for one thing. India fires by Orton cones by default, with temperatures one tap away, so the Marathi
+pages must read well with Orton cones and temperatures and say nothing about SK cones that the English does not say.
 
 **The owner's choices** (`scratch/round8/plan.md`), as for Hindi:
 
-- **Loanwords first.** The studio potters' English loanwords first, in Devanagari as Marathi-speaking potters say them,
-  **with the Marathi technical term in brackets where it differs**. Each row says which tier it is in: (1) craft words
-  potters say in English, (2) materials by the name on the bag, (3) chemistry and physics as Balbharati's textbooks write
-  them, (4) health, safety and law in plain Marathi and the words of the Acts.
-- **The full stop.** A sentence ends with the Latin full stop ".", as Hindi's do. Marathi does not use the danda.
-- **Digits and grouping.** The translations write 0 to 9 only. **CLDR shows Marathi readers Devanagari digits (१२३) by
-  default**, with Indian grouping (१२,३४,५६७.५), so a page mixes the app's Devanagari figures with the translation's 0 to
-  9 inside sentences; the Digits setting gives 0 to 9. This is the owner's choice (CLDR's defaults), as for Bengali.
-- **No web font.** The page is drawn in the device's own font (Nirmala UI on Windows, Noto Sans Devanagari on Android and
-  Linux, Kohinoor Devanagari on Apple), with `lang="mr"` so that a font draws Marathi's own forms of ल and श. To check in
-  `/mr/` on each system once there are pages.
+- **Loanwords first.** The studio potters' English loanwords first, in Devanagari as Marathi-speaking potters say them
+  (ग्लेझ, फ्रिट, किल्न, बिस्क), **with the Marathi technical term in brackets where it differs**. Each row says which tier it
+  is in: (1) craft words potters say in English, (2) materials by the name on the bag, (3) chemistry and physics as
+  Marathi-medium school science writes them, (4) health, safety and law in plain Marathi.
+- **The full stop.** A sentence ends with the Latin full stop ".". Marathi software does not use the danda (Google's
+  Marathi help pages and Microsoft's Marathi style guide both end sentences with ".").
+- **Digits and grouping.** The translations write 0 to 9 only. CLDR shows Marathi readers Devanagari digits (१२३) by
+  default, with Indian grouping (१२,३४,५६७.५), so a page mixes the app's Devanagari figures with the translation's 0 to 9;
+  the Digits setting gives 0 to 9 everywhere.
+- **No web font.** The device's own font (Nirmala UI, Noto Sans Devanagari, Kohinoor Devanagari), with `lang="mr"` so
+  that a font draws Marathi's own forms of ल and श. To check in `/mr/` on each system once there are pages.
+- **A native Marathi reviewer** will check this page later: every row that rests on no Marathi source is marked **No
+  source**, and the rows to check first are marked **Native check** (listed at the end of the next section).
 
-**Sources to read**: Maharashtra's Balbharati textbooks (ebalbharati.in), CSTT, the Marathi Vishwakosh's glossaries, the
-Marathi Wikipedia, the Microsoft Marathi style guide, and Google's and Apple's Marathi help pages. Rows are marked
-**Usage**, **No source** or **Native check** as in hi.md.
+**What the sources could and could not give.** Very little is written in Marathi about studio glazes. The Indian shops
+sell in English (Bhoomi, Clay Station), and Google's suggestions for Marathi (hl=mr, gl=IN, 21 October 2026) show that
+Marathi speakers search for glazes, cones and kilns in English: सिरॅमिक ग्लेझ completes to "ceramic glaze recipe" and
+"ceramic glaze calculator" in Latin letters, कोन 6 to "cone 6 temperature celsius", बॉल क्ले to "ball clay"; किल्न and
+पॉटरी किल्न complete to nothing about kilns, ग्लेझ only to "ग्लेझिंग चा अर्थ मराठीत". The Marathi Wikipedia has a few
+pottery articles (अनागामा भट्टी, बिझेन वेर, अरिता वेर, चिनी माती) and the chemistry words (ऑक्सिडीकरण, क्षपण, मोल, रेणू,
+विशिष्ट गुरुत्व, औष्णिक, शिसे, जस्त, टाकणखार). Microsoft's Marathi style guide gives register, punctuation and error
+wording; Google's Marathi help pages give the sign-in words. **No Marathi legal text, no Balbharati textbook, no CSTT
+glossary and no Vishwakosh article could be read** (see Not reached), so the law rows and many technical brackets rest on
+less, and say so.
+
+Main sources, cited below by short name (all read 21 October 2026):
+
+- **Bhoomi**: Bhoomi Pottery, [Artha Pottery raw materials](https://in.bhoomi.com/collections/artha-pottery-raw-materials-india):
+  "Ball Clay 1 Kg", "Calcium Borate 100 gms", "China Clay Kaolin Calcined 1 Kg", "Fire Clay 1 Kg", "Frit 1005 Alkaline
+  750°C Luster, Raku, Crystalline 1 Kg", "Frit 1006 High Alkaline", "Frit 1009 Lead Based 1 Kg", "Grog - Coarse 1 Kg",
+  "Ilmenite", "Iron Oxide Black", "Iron Oxide Red", "Magnesium Carbonate", "Manganese Dioxide", "Nickel Oxide", "Pottery
+  Talc 1 Kg", "Rutile", "Soda Feldspar 1 Kg", "Strontium Carbonate", "Wollastonite"; menus "Clay", "Glazes", "Raw
+  Materials", "Kilns".
+- **Clay Station**: Clay Station, Bengaluru, [flux menu](https://online.claystation.in/collections/flux-menu): "CS Potash
+  Feldspar (G-325)", "CS Soda Feldspar (G-325)", "CS Nepheline Syenite (G-325)", "CS Whiting (G-200)", "CS Dolomite
+  (G-325)", "CS Talc (G1-200)", "CS Zinc Oxide (G-325)", "CS Barium Carbonate (G)", "CS Tricalcium Phosphate (G-200)",
+  "Lithium Carbonate (G-200)", "Ferro Frit 3134"; menus "Clay", "Glazes", "Raw Materials".
+- **mrwiki**: the Marathi Wikipedia, read through its API ([mr.wikipedia.org](https://mr.wikipedia.org/w/api.php)):
+  अनागामा भट्टी ("प्राचीन प्रकारची भांडी बनवण्याची भट्टी", "भट्टी चालू असताना", "राखेला नैसर्गिक चकाकी मिळते", "चिकणमातीतील
+  खनिजे", "१,४०० °से", and the machine-made "ऑक्सिडेशन/कपात"); अरिता वेर ("ओवरग्लेझ", "अंडरग्लेज", "पोर्सिलेन", "भट्ट्या",
+  "पोर्सिलीन मातीचा शोध"); बिझेन वेर ("भट्टीच्या … खुणा"); वीट ("भट्टीत भाजलेला"); चिनी माती ("चिनी माती हे 'काओलिनाइट' या
+  प्रकारचे एक औद्योगिक खनिज आहे"); सिलिका ("सिलिका तथा सिलिकॉन डायऑक्साइड (SiO2)", "गारगोटी (क्वार्ट्झ)", "काच"); सिलिकॉन;
+  काच ("स्फटिक नसलेले घनरूप"); शिसे ("शिसे (चिन्ह: Pb ; इंग्लिश: Lead, लेड …)"); जस्त ("झिंक म्हणजे जस्त"); मोल (एकक) ("रेणूंची
+  संख्या मोजण्याचे एकक"); ऑक्सिडीभवन ("ऑक्सिडीभवन (ऑक्सिडीकरण)"); मॅग्नेशियम ("क्षपण केले जाते"); शनी ग्रह ("सरासरी
+  विशिष्ट गुरुत्व ०.६९"); संवेदक ("प्रसरण आणि आकुंचन"); उष्णता वहन ("औष्णिक चालकता"); अग्निरोधन ("बोरॅक्स (टाकणखार)");
+  ग्रॅनाइट ("क्वार्ट्झ आणि फेल्डस्पार"); सिरॅमिक आर्ट; किंटसुगी ("सिरॅमिक भांड्यांशी"); सिमेंट ("मोठ्या भट्टीत"); अनिल
+  काकोडकर ("अणु भट्टी", a nuclear reactor).
+- **MS**: [Microsoft Marathi Localization Style Guide](https://download.microsoft.com/download/4/8/8/4889f570-623c-4c8b-a42f-51d64e4474aa/mar-ind-StyleGuide.pdf)
+  (2023, revised 2024; its text layer garbles some letters, read through them): 2.1.1 (transliteration of everyday English
+  words: "डिव्हाइस"), 2.2.1 to 2.2.4 (the reader addressed as आपण: "आपण सुरू ठेवू इच्छिता?", "आपल्या PC ला एक नाव द्या";
+  imperatives in -आ: "पुन्हा प्रयत्न करा"), 3.1 (gender-neutral: व्यक्ती, plural ते for a generic person, never तो/ती), 4.1.7
+  (three genders), 4.1.8 (चा/ची/चे/च्या agree with the noun after them), 4.1.10 (loanword plurals "क्लायंट्स", "वेबसाइट्स";
+  "Server वरून हटवा"), 4.1.13 (period "."; “ ” and ‘ ’; no space inside parentheses; en dash in ranges; ellipsis), 4.1.17
+  ("लोड होत आहे..."), 4.1.18 ("प्रवेश नाकारण्यात आला."), 5.4.1 ("काहीतरी चूक झाली.", "शक्य नाही", "…यात अयशस्वी", "…उपलब्ध
+  नाही"), 5.4.3 (Save "सुरक्षित करा", Print "मुद्रण", Cancel "रद्द करा", Delete "हटवा", Help "मदत"); "ॲक्सेस" written with ॲ.
+- **Google**: Google's Marathi help pages: [२ टप्पी पडताळणी](https://support.google.com/accounts/answer/185839?hl=mr)
+  ("२-टप्पी पडताळणी सुरू करणे", "पडताळणी कोड", "बॅकअप कोड", "हार्डवेअर सिक्युरिटी की", "पासकी", "QR कोड", "विश्वसनीय डिव्हाइस",
+  "या काँप्युटरवर पुन्हा विचारू नका", "तुमचा पासवर्ड", "तुमच्या खात्यामध्ये", "स्क्रीनवरील पायऱ्या फॉलो करा."),
+  [Authenticator](https://support.google.com/accounts/answer/1066447?hl=mr) ("Google Authenticator ॲप", written with a joiner, "QR कोड स्कॅन करा",
+  "Google खाते"), [बॅकअप कोड](https://support.google.com/accounts/answer/1187538?hl=mr) ("बॅकअप कोड वापरून साइन इन करणे",
+  "प्रिंट करा", "कोड डाउनलोड करा", "हटवा"), [पासकी](https://support.google.com/accounts/answer/13548313?hl=mr) ("पासकी तयार करा",
+  "तुमच्या पासकी तपासणे", "फिंगरप्रिंट", "स्क्रीन लॉक"), [Gmail sign-out](https://support.google.com/mail/answer/8154?hl=mr)
+  ("साइन आउट करा", "डिव्हाइस काढून टाकणे", "सुरक्षा आणि साइन-इन"). Sentences end in "."; the reader is तुम्ही.
+- **Google suggest**: suggestqueries.google.com with hl=mr and gl=IN, web and YouTube (21 October 2026; the script and
+  its output are in `scratch/round8/i1/work-mr/` in the main checkout): see Search terms; also "भट्टी चूल्हा", "भट्टी खत",
+  "चिनी मातीची भांडी", "सिलिका जेल पॅकेट", "सिलिका वाळू", "टाकणखार पावडर", "बोरॅक्स पावडर", "शिसे विषबाधा", "सिलिकोसिस
+  रोग", "रेस्पिरेटर मास्क", "विशिष्ट गुरुत्व म्हणजे काय", "सापेक्ष घनता एकक", "टेराकोटा म्हणजे काय", "पोर्सिलेन टाइल्स",
+  "मातीकाम कार्यशाळा", "कुंभाराचे चाक", "बिस्किट" for बिस्क, "स्लिप डिस्क" for स्लिप.
+- **CLDR**: Node 24.21's ICU 78.3 (CLDR 48) for `mr`: plural categories `one`, `other` (0 is `other`); "१२,३४,५६७.५"
+  (Latin digits with `-u-nu-latn`: 12,34,567.5); "५%"; long date "१४ ऑक्टोबर, २०२६"; month and year "ऑक्टोबर २०२६";
+  24-hour "२०:००"; the month names; lists "अ, ब आणि क"; region names भारत, "हाँगकाँग एसएआर चीन", युनायटेड स्टेट्स,
+  युनायटेड किंगडम, जर्मनी, जपान.
+- **Regions**: `lib/regions` (safety.js, workplace.js, food.js, suppliers.js, entry `IN`): 112, the National Poisons
+  Information Centre (NPIC), AIIMS New Delhi, 1800 116 117; the Ministry of Health and Family Welfare; DGOSH; IS
+  9473:2002; IS 9806:2001 (voluntary, so not shown).
+
+**Not reached:** CSTT's glossaries (cstt.education.gov.in refused the connection), Balbharati's textbooks (ebalbharati.in
+failed its certificate check), the Marathi Vishwakosh (vishwakosh.marathi.gov.in did not resolve; marathivishwakosh.org
+returned an empty page), any Marathi text of the Occupational Safety, Health and Working Conditions Code, the Factories
+Act or the Maharashtra Factories Rules (none found by search), the Marathi titles of IS 9473 and IS 9806, any Marathi GHS
+label text, AIIMS's and DGOSH's Marathi pages (none found), Microsoft's and Apple's Marathi help pages (their bodies are
+served in English), and any Marathi pottery course, studio page or kiln manual (search found only English pages for The
+Pottery Lab, Mumbai, and Pune's studios). **The kiln, controller, firing-log, defect and law rows rest on the potters'
+English and plain Marathi, on no Marathi source.**
 
 ## Choices for the owner and a native potter
 
-To be filled by the glossary research, each with a recommendation. Known questions: तुम्ही or आपण in the interface, the
-kiln word, the genders loanwords take, the spelling of झ against Hindi's nukta ज़ (ग्लेझ), and the register of buttons.
+These are the questions this page cannot settle from sources; each has a recommendation, used below until answered.
+
+- **तुम्ही or आपण:** **तुम्ही**, with the -आ imperative (करा, निवडा). Google's Marathi pages use तुम्ही ("तुमचा पासवर्ड"),
+  Microsoft's guide uses आपण ("आपल्या PC ला एक नाव द्या"); both are polite, never तू. तुम्ही is recommended because आपण also
+  means the inclusive "we" ("आपण ग्लेझ मिसळतो" reads as "we mix the glaze"), which the guides' many "you" sentences would
+  blur, and because तुम्ही's verb forms carry no gender (तुम्ही करता, तुम्ही केलेत, तुम्ही आहात). The owner or the native
+  reviewer may prefer आपण; the imperatives (करा) stay the same either way.
+- **The kiln:** **किल्न**, with (भट्टी) at its first use in each guide section, as the owner's loanword rule says. The
+  evidence leans the other way and the owner should know it: the Marathi Wikipedia says भट्टी for a pottery kiln (अनागामा
+  भट्टी, "भट्टीत भाजलेला"), and Google suggest knows no किल्न in Marathi. But भट्टी is also a stove, a furnace, a nuclear
+  reactor (अणु भट्टी) and a roaster ("भट्टी चूल्हा", "भट्टी सारखे खारे शेंगदाणे" in Google suggest), and Indian shops sell
+  "Kilns". A native potter
+  may choose भट्टी throughout; the change is mechanical.
+- **Firing:** the noun **फायरिंग** (f.) for a firing, the verb **भाजणे** for to fire ("कोन 6 पर्यंत भाजा"), as the
+  Marathi Wikipedia writes it ("भट्टीत भाजलेला"). Native check.
+- **Material:** **साहित्य** (n.), the word Marathi cooking recipes head their ingredients with, and Marathi's word for
+  materials in general (बांधकाम साहित्य). It also means literature, which the context rules out. The alternative is घटक
+  (m., a component). Native check, first of all, with its plural (see Plural forms).
+- **Specific gravity:** **विशिष्ट गुरुत्व** (mrwiki: "सरासरी विशिष्ट गुरुत्व ०.६९"; Google suggest: "विशिष्ट गुरुत्व म्हणजे
+  काय"), the unitless ratio; school science's सापेक्ष घनता (relative density) is the same ratio but carries घनता, which the app
+  keeps away from a glaze. The setting "Glaze density" is **ग्लेझचा दाटपणा**.
+- **Kaolin:** **काओलिन (चायना क्ले)**, as Indian shops sell it ("China Clay Kaolin Calcined"); never चिनी माती, which mrwiki
+  uses for kaolinite but which everyday Marathi uses for crockery and porcelain ("चिनी मातीची भांडी").
+- **Guide and manual:** the app's guides are **मार्गदर्शिका** (f.), a kiln's manual is **मॅन्युअल** (n.). Never the same
+  word, and never मॅन्युअल for a manual kiln (हाताने चालवायचा किल्न).
+- **Lead:** **शिसे** (n.; mrwiki), the setting and the metal; lead-free **शिसे-मुक्त**. Never Hindi सीसा, and not शिसा/शीशा
+  (glass in Hindi).
+- **The genders of loanwords:** chosen by analogy (MS 4.1.10) and marked in each row; a native potter should confirm
+  ग्लेझ (m.), फ्रिट (m.), किल्न (m.), स्लिप (f.), फायरिंग (f.), रेसिपी (f.) and कोन (m.) first.
+- **Poison line:** AIIMS's National Poisons Information Centre (1800 116 117) is verified (Regions); no Marathi name was
+  found, so the name stays as published, with a Marathi description once: **विष माहिती केंद्र**.
+
+**Native check, first:** साहित्य and its plural; किल्न against भट्टी; तुम्ही against आपण; the genders above; ग्लेझ's bracket
+(काचेसारखा लेप); विशिष्ट गुरुत्व and दाटपणा; सेगर सूत्र and युनिटी; ज्वलन-घट (LOI); रेणुभार; फ्लक्स (द्रावक); the defect
+loanwords and their brackets; श्वसनयोग्य स्फटिकी सिलिका; the law words (जास्तीत जास्त, किमान); मार्गदर्शिका for the guides; the
+five guides' titles (2.8); the verb with plural साहित्य (every file follows Plural forms: "3 साहित्य जोडले", "शिसे असलेले #
+साहित्य वापरले जात नाहीत", not the neuter plural -ली; the recipe review asked); कॉलम for a form field (2.8); the hedge
+"tend to" as …कडे झुकतो (Register).
 
 ## 1. Style sheet
 
 ### Register
 
-_To be filled: तुम्ही or आपण (from the Microsoft Marathi style guide), never तू, in the interface, errors, notices, emails,
-the safety text and the guides alike; buttons, menus and tabs as Marathi software writes them (जतन करा?). Keep "must",
-"should" and "may" (a hedge that must survive) apart, and "must be tested" means the test is done, not passed._
+**तुम्ही**, polite and plain, in the interface, errors, notices, emails, the safety text and the guides alike: one
+register, never तू (see Choices). Microsoft's voice is "clear, friendly and concise … conversation observed in everyday
+settings" (MS 2.1): निवडा, not चयन करा; बदला, not परिवर्तित करा; पाहा, not संदर्भ घ्या; पुन्हा प्रयत्न करा. The same plain words
+in the guides: चाळा, वजन करा, मिसळा.
+
+- **Instructions** (guides and help): the -आ imperative, as MS and Google write it ("स्क्रीनवरील पायऱ्या फॉलो करा."):
+  "ग्लेझ 80 मेशच्या चाळणीतून दोनदा चाळा.", "साहित्याचे वजन करताना रेस्पिरेटर घाला." Not the -आवे form for an instruction
+  (that is "should"), not कृपया on every button.
+- **Buttons:** the -आ form, the verb last: जतन करा, प्रिंट करा, तुलना करा, हटवा, रद्द करा.
+- **Errors:** short, impersonal, never the computer as "I" (MS 5.4.1): "रेसिपी जतन करता आली नाही. पुन्हा प्रयत्न करा.",
+  "ही फाइल वाचता आली नाही.", "काहीतरी चूक झाली."
+- **Notices:** plain statements: "या पानाचे भाषांतर AI ने केले आहे. इंग्रजी पान वाचण्यासाठी येथे पाहा."
+- **Guide sentences:** impersonal statements and the -आ imperative: "ग्लेझ खूप जाड असेल तर फायरिंगमध्ये वाहतो.", "बिस्क
+  केलेल्या भांड्यावर ग्लेझ लगेच लावता येतो."
+- **Should, must, may** keep apart, as the English has them:
+  - "must" → **…णे आवश्यक आहे** ("मास्क घालणे आवश्यक आहे") or **…लेच पाहिजे** ("चाचणी केलीच पाहिजे"); a legal duty
+    ("shall") → **बंधनकारक आहे**. "must not" → **…ू नका** in an instruction ("कोरडा झाडू वापरू नका").
+  - "should" → **…आवे** ("मास्क घालावा") or **…ायला हवे** ("मास्क घालायला हवा"); "should not" → **…ू नये** ("कोरडा झाडू
+    वापरू नये"). Never आवश्यक for "should", never …आवे for "must".
+  - "may" (a hazard, a hedge that must survive) → **…ू शकतो/शकते** ("कर्करोग होऊ शकतो", "यात काही बारीक क्वार्ट्झ असू
+    शकते"); "may" (permission) → **…ू शकता** ("तुम्ही बदलू शकता").
+  - "must be tested" → **ची चाचणी करणे आवश्यक आहे**: the test is done, not passed; never "चाचणीत उत्तीर्ण होणे आवश्यक".
+  - "some" (some fine quartz) → **काही**, never **थोडे** (a little). "never" → **कधीही … नका/नाही** only where the English
+    says never; no नेहमी, अजिबात or नक्की the English lacks. "not fully" → **पूर्णपणे … नाही**, never "not at all".
+- **Hedges keep their place and their strength** (the reviews found each of these lost once): "about" → **सुमारे** or
+  **साधारण**; "usually" → **सहसा**; "often" → **अनेकदा** or **बहुतेकदा**, never बहुधा; "probably" → **बहुधा**; "tend to"
+  → **…कडे झुकतो** or **…चा कल असतो** ("वाहण्याकडे झुकतो"), never सहसा (the app has separate "tends" and "probably"
+  messages, and सहसा is "usually"); "may shiver" → **…ू शकते**, never a plain "do fly"; "as much as" → **…पर्यंत**
+  ("चारपटीपर्यंत"). Add no emphasis the English lacks ("even trace amounts"), and keep a reported practice a report ("is
+  opened", not "should be opened"). English capitals for emphasis (NOT, NEVER, CONTAINS LEAD in a guide) become the Marathi
+  word in bold (**नाही**, **कधीही**); in a JSON message, where bold does not show, the plain word.
 
 ### Buttons, menus, headings, labels and tabs
 
-_To be filled._
+- **Buttons and menu commands:** the -आ imperative, short: जतन करा, प्रिंट करा, तुलना करा, हटवा, काढून टाका, साहित्य जोडा.
+  **Save is जतन करा**, never Microsoft's सुरक्षित करा: सुरक्षित is "safe" throughout this app's safety text (अन्नासाठी
+  सुरक्षित), and a reader must never meet the same word for both. Print is प्रिंट करा (Google), not मुद्रित करा.
+- **Headings, tabs, page titles:** a noun phrase: "रेसिपी", "सेटिंग्ज", "फायरिंग लॉग", "कोन आणि हीटवर्क". A heading that
+  names an activity takes the verbal noun in -णे: "Mixing the glaze" → "ग्लेझ मिसळणे", "Typing amounts" → "प्रमाण टाइप
+  करणे". A question stays one: "ग्लेझ का वाहतो?"
+- **Field labels:** a noun; the colon where the English has one, no space before it: "साहित्याचे नाव:".
+- **Confirmations:** "Saved: {name}" → "जतन केले: {name}" (the label form, so nothing agrees with {name}); "Removed" →
+  "काढून टाकले".
+- **Progress:** the -त आहे form and the ellipsis (MS 4.1.17: "लोड होत आहे..."): "Saving…" → "जतन करत आहे…".
 
 ### Capitalisation
 
-Devanagari has no capitals. Latin words inside Marathi text keep the English's case where they are names, codes, units or
-formulas (Orton, SK, UMF, LOI, Ferro 3134, mg/m³, SiO₂). An English loanword is written in Devanagari, never in Latin
-letters, unless it is a trade name, a company or brand, a code or a unit.
+Devanagari has no capitals; the English's Title Case and sentence case go with the English words. Latin words inside
+Marathi text keep the English's case where they are names, codes, units or formulas (Orton, SK, UMF, LOI, Ferro 3134,
+N95, mg/m³, SiO₂). An English loanword is written in Devanagari (ग्लेझ, फ्रिट, किल्न), never in Latin letters, unless it is
+a trade name, a trademark (Kiln-Sitter, Zircopax), a company or brand (Google, Skutt), a code or a unit. A Latin name
+takes its case ending after a space, as MS writes "Server वरून हटवा", "Azure मधील": "Ferro 3134 मध्ये", "Orton चा तक्ता".
 
 ### Script and spelling
 
-- Devanagari as Marathi writes it: the anusvara and the chandrabindu as Marathi uses them, the nukta rarely, Marathi's
-  own forms of ल and श (the page is `lang="mr"`). Never Hindi spellings.
+- **Devanagari as Marathi writes it**, never Hindi spellings: the **anusvara** for every nasal before a consonant and on
+  the plural and oblique endings (रंग, संख्या, भांड्यांमध्ये, थरांना); the **chandrabindu** is not used in Marathi words
+  (Hindi हाँ, जाएँ are Hindi); the **nukta is not used** (Marathi writes फ, ज, झ plain: फायरिंग, फ्रिट, फ्लक्स, not फ़). Marathi
+  writes **झ** for the English z (ग्लेझ, झिंक, झिरकॉन, क्वार्ट्झ, ब्राँझ), where Hindi writes ज़ (ग्लेज़). Marathi's own
+  letters stay: ळ (वाळू, जळणे, चाळणी), the conjunct ऱ्य (पायऱ्या), the long ई and ऊ of Marathi spelling (माती, वाळू).
+- **The English open o and the a of "ash":** **ऑ** for the open o (ऑक्साइड, कॉपर, बॉल क्ले, कॉर्निश); **ॲ** (U+0972) for the
+  English a at the start of a word (ॲश, ॲल्युमिना, ॲक्सेस as MS writes it), **ॅ** on a consonant (बॅच, मॅट, टॅल्क, कॅल्शियम,
+  बॅरियम, बोरॅक्स). Never अ + ZWJ + ॅ typed with a joiner: Google's Marathi pages write "app" that way, which the i18n check
+  rejects; write **ॲप**.
 - **Normalisation and joiners.** Every file is in Unicode form NFC, with no ZWJ or ZWNJ (the i18n check asks for both),
   and only Devanagari and Latin letters (the script check).
+- **Hyphens** in compounds as Marathi writes them: शिसे-मुक्त, ड्रॉप-अँड-होल्ड, लेदर-हार्ड.
 - **Latin text** inside Marathi: units, formulas, trade names, codes and cone numbers exactly as the English writes them,
-  with a space on each side where the English has one.
+  with a space on each side where the English has one (10 g, 1222 °C, Orton कोन 6, SiO₂ चे).
 - **Digits** are 0 to 9 only (see Numbers and units).
 
 ### Punctuation
 
-- The full stop "." ends a sentence, with no space before it and one after, never the danda "।". A heading, a button and
-  a list item that is not a sentence end with nothing.
-- Comma, question mark, colon, semicolon as in English, no space before them. No "!" in the app's own voice.
-- Quotation marks, parentheses, dashes and the ellipsis: _to be filled_ (Microsoft's Marathi style guide).
+- **The full stop "."** ends a sentence (MS 4.1.13; Google), with no space before it and one after: "ग्लेझ वाहतो." A
+  heading, a button and a list item that is not a sentence end with nothing. Never the danda "।" (the owner's choice).
+- **Comma, question mark, colon, semicolon** as in English, no space before them (MS 4.1.13). No "!" in the app's own
+  voice.
+- **Quotation marks:** “ ” for quotations and a quoted word (“बोरॉन ब्लू”), ‘ ’ inside them (MS 4.1.13). **UI names in
+  running text** in single curly quotes: "‘तुलना करा’ निवडा". Never the straight ' around a name: before `{`, `}` or `#`
+  ICU reads it as a quote (README).
+- **Parentheses** as English, no space inside them (MS 4.1.13).
+- **Dashes:** the en dash for ranges with no spaces (10–60%, कोन 06–04, MS 4.1.13); the em dash sparingly (MS): a comma,
+  a colon or a new sentence instead where the English allows.
+- **Ellipsis** "…" where the English has one.
 
 ### Numbers and units
 
-- **The digits 0 to 9** wherever the English has digits, never Devanagari digits (० १ २), which the numbers check does not
-  read, even though the app shows Marathi readers Devanagari digits by default when it formats a number.
+- **The digits 0 to 9** wherever the English has digits (the international form of Indian numerals), never Devanagari
+  digits (० १ २), which the numbers check does not read, even though the app shows Marathi readers Devanagari digits by
+  default when it formats a number. Never spelled-out figures where the English has digits.
 - **The decimal point and the English's figures** as the English writes them: 1.5; 0.025; 12,500; 1222 °C and 1000 g
-  ungrouped. Never लाख or कोटी for a figure.
-- **Percent** 5%, no space; a range 10–60%. **Units**: the English's symbols in Latin letters (g, kg, mg, mL, L, mm, cm, °C, °F,
-  °Bé, mg/m³); inches and feet as Marathi words with the metric figure in brackets as the English gives it.
-- **A number the English writes as a word** stays a word, since a digit would be a figure the English lacks.
-- **Dates**: "14 ऑक्टोबर 2026", the month named beside the year (CLDR's long form: _to be checked against the sources_), the
-  Gregorian calendar, never a Shaka year. Month names: _to be filled_.
-- **Clock times**: the 24-hour clock, 20:00, never सकाळी, दुपारी, संध्याकाळी or रात्री with a 12-hour figure (रात्री 8
-  वाजता), which the check would read as 8.
-- **No figures the English lacks**: no Devanagari digits, no लाख or कोटी, no Shaka years, no SK or Orton equivalents, no
-  converted units, no IS numbers where the English names none.
+  ungrouped. The app groups numbers the Indian way (12,34,567.5) when it formats them; a translation writes only the
+  English's figures, never लाख or कोटी for one ("12,500" stays 12,500, never "साडेबारा हजार").
+- **Percent:** 5%, no space (CLDR "५%"); a range 10–60%. In running text टक्के only where the English spells "percent"
+  out as a word with no sign.
+- **Units:** the English's symbols in Latin letters, with the English's spacing: g, kg, mg, µg, mL, L, mm, cm, °C, °F,
+  °Bé, %, mg/m³; never ग्रॅ, कि.ग्रॅ., से.मी. or °से (MS 4.1.1 lists them; the numbers check does not read them). Inches and
+  feet are the words **इंच** and **फूट**, with the metric figure in brackets as the English gives it: "12 इंच (30 cm)".
+- **A number the English writes as a word** ("two coats", "three tiles", "once", "one number hotter") stays a word, since
+  a digit would be a figure the English lacks: "दोन थर", "तीन टाइल्स", "एकदा", "एक क्रमांक जास्त गरम". Where the English has
+  the digit, the digit stays: "3 coats" → "3 थर".
+- **Dates:** CLDR's long form with Latin digits: "14 ऑक्टोबर, 2026" (CLDR puts a comma before the year), "ऑक्टोबर 2026":
+  the month named beside the year, the Gregorian calendar, never a Shaka or Marathi-calendar year. The month names are
+  CLDR's: जानेवारी, फेब्रुवारी, मार्च, एप्रिल, मे, जून, जुलै, ऑगस्ट, सप्टेंबर, ऑक्टोबर, नोव्हेंबर, डिसेंबर.
+- **Clock times:** the 24-hour clock, **20:00**, with वाजता after it if the sentence needs it ("20:00 वाजेपर्यंत"). "8am to
+  8pm" → "8:00 ते 20:00"; "8 to 5" → "8:00 ते 17:00" where the English means hours of the day, else as the English writes
+  it. Never सकाळी, दुपारी, संध्याकाळी or रात्री with a 12-hour figure ("रात्री 8 वाजता"), which the check would read as 8.
+  "24 hours" → "24 तास"; "24/7" → "24/7" or "24 तास, आठवड्याचे 7 दिवस" (the 7 is a figure).
+- **No figures the English lacks:** no Devanagari digits, no लाख or कोटी, no Shaka years, no SK or Orton equivalents, no
+  converted units, no IS numbers (IS 9473, IS 9806) where the English names none.
 
 ### Plural forms
 
-CLDR gives Marathi two cardinal categories, `one` and `other`; **0 is `other`**, and `one` is exactly 1 (unlike Hindi).
-Every plural message has both forms, and `=0 {…}` stays where the English has it. _To be filled: the noun in each form for
-the app's nouns (material, coat, recipe, tile, glaze, frit, cone, hour, minute, day, passkey), with the case endings._
+CLDR gives Marathi two cardinal categories, `one` and `other` (Node: `[ 'one', 'other' ]`). **`one` is exactly 1**; 0,
+0.5, 1.5, 2 and 21 are `other` (unlike Hindi, whose `one` also covers 0).
+
+| Category | Numbers                 | Example                                                             |
+| -------- | ----------------------- | ------------------------------------------------------------------- |
+| `one`    | 1                       | 1 साहित्य, 1 थर, 1 रेसिपी, 1 टाइल, 1 ग्लेझ, 1 तास                   |
+| `other`  | 0, 0.5, 1.5, 2, 3, 21 … | 0 साहित्य, 2 थर, 3 रेसिपी, 2 टाइल्स, 5 ग्लेझ, 3 फ्रिट, 2 कोन, 2 तास |
+
+Every plural message has both forms, and `=0 {…}` stays where the English has it:
+`{count, plural, one {# material} other {# materials}}` → `{count, plural, one {# साहित्य} other {# साहित्य}}`. The `other`
+form must read right for 0 ("0 टाइल्स"), since 0 falls there. Where the English's `one` has no `#` ("your passkey"),
+write the Marathi for exactly one, as the English does.
+
+How the noun takes the number, in the direct case and the oblique (before -मध्ये, -ना/-ला, -चा/ची/चे, -वर, -पासून):
+
+| Noun (gender)          | One (direct)      | Other (direct)    | Other (oblique)           |
+| ---------------------- | ----------------- | ----------------- | ------------------------- |
+| साहित्य (n.)           | # साहित्य         | # साहित्य         | # साहित्यांमध्ये          |
+| थर (m.)                | # थर              | # थर              | # थरांमध्ये               |
+| रेसिपी (f.)            | # रेसिपी          | # रेसिपी          | # रेसिपींमध्ये            |
+| टाइल (f.)              | # टाइल            | # टाइल्स          | # टाइल्सवर                |
+| ग्लेझ (m.)             | # ग्लेझ           | # ग्लेझ           | # ग्लेझांमध्ये            |
+| फ्रिट (m.)             | # फ्रिट           | # फ्रिट           | # फ्रिटांमध्ये            |
+| कोन (m.)               | # कोन             | # कोन             | # कोनांपैकी               |
+| फायरिंग (f.)           | # फायरिंग         | # फायरिंग         | # फायरिंगमध्ये            |
+| तास, दिवस (m.)         | # तास, # दिवस     | # तास, # दिवस     | # तासांत, # दिवसांत       |
+| मिनिट (n.)             | # मिनिट           | # मिनिटे          | # मिनिटांत                |
+| अक्षर (n.)             | # अक्षर           | # अक्षरे          | # अक्षरांचा               |
+| कोड, डिव्हाइस (m., n.) | # कोड, # डिव्हाइस | # कोड, # डिव्हाइस | # कोडांपैकी, # डिव्हाइसवर |
+| पासकी (f.)             | # पासकी           | # पासकी           | # पासकींमध्ये             |
+| भांडे (n.)             | # भांडे           | # भांडी           | # भांड्यांवर              |
+
+A masculine noun ending in a consonant (थर, ग्लेझ, कोन, तास) is unchanged in the direct plural and takes -ां- in the
+oblique; a neuter noun in -ए takes -ई (भांडे → भांडी) or -ए (मिनिट → मिनिटे, अक्षर → अक्षरे). Loanwords take the English -स
+only where Marathi usage has it (MS 4.1.10: "वेबसाइट्स"; टाइल्स); the craft loanwords stay unchanged (5 ग्लेझ, 3 फ्रिट). A
+verb or participle agrees with the noun in each form: `one {# थर दिला} other {# थर दिले}`, `one {# टाइल जोडली} other {#
+टाइल्स जोडल्या}`. A weight or temperature takes no noun: `{n} g`. The plural of साहित्य with a verb ("3 साहित्य जोडले") is
+a Native check; if a native potter finds it awkward, count "साहित्याचे प्रकार" or switch to घटक (m.) throughout.
 
 ### Placeholders and names
 
-Marathi joins postpositions and case endings to the word (-मध्ये, -चा/ची/चे, -ला, -ने), and the possessive agrees with the
-noun that follows. _To be filled: how to build a sentence around {name}, {region}, {count} and {library} so it reads with
-any value._
+Marathi joins its case endings and postpositions to the word (-मध्ये, -ला, -ने, -चा/ची/चे/च्या, -वर), and the word before
+them changes into its oblique form (भारत → भारतात, भारताचा). A placeholder or a Latin name cannot change, so:
+
+- **Put a generic noun after the placeholder with या, and let the noun take the ending**: "in {region}" → "{region} या
+  प्रदेशात"; "{name}'s analysis" → "{name} या साहित्याचे विश्लेषण"; "from {library}" → "{library} या यादीतून". The noun
+  (प्रदेश, साहित्य, रेसिपी, यादी) also fixes the agreement.
+- Where no noun fits, the ending goes after a space, as MS writes Latin names ("Microsoft ला", "Azure मधील"): "{name}
+  मध्ये", "{count} पैकी". Use this only for numbers and Latin names, never for {region}, whose value is a Marathi word.
+- **-चा/ची/चे/च्या agree with the noun after them** (MS 4.1.8), not with the placeholder: "{region} या प्रदेशाचे नियम" (m.
+  pl.), "{region} या प्रदेशाची मर्यादा" (f.).
+- **A verb agrees with its subject's gender**, so a placeholder must not be the subject of a gendered verb: "{name} was
+  saved" → "{name} ही रेसिपी जतन केली" (रेसिपी, f.); "{name} is no longer made" → "{name} हे साहित्य आता बनत नाही".
+
+`{region}` is a country's or region's name in Marathi from the browser (भारत, युनायटेड स्टेट्स, युनायटेड किंगडम, जर्मनी,
+जपान; Hong Kong is "हाँगकाँग एसएआर चीन", a region). Never call it देश: the generic noun is **प्रदेश** (region). A trade name
+in Latin letters is the same: "Ferro 3134 हा फ्रिट", "Ferro 3134 मध्ये".
 
 ### Cones
 
-Orton cones are named Orton wherever the English says Orton; SK cones are SK with the number as printed; Seger only where
-the English says Seger, and the Seger formula (UMF) never names a cone. Never an SK number for an Orton number or the
-reverse, nor any equivalence. _To be filled: the potters' word for a cone, and the wording for "one number hotter/cooler",
-never higher or lower._
+Orton cones are written **Orton** in Latin letters wherever the English says Orton, beside **कोन** (m., the potters'
+loanword: Clay Station's "Orton Cones"; the Marathi शंकू in brackets at the first use in each guide section: "कोन
+(शंकू)"): "Orton कोन 6", "कोन 06", "Orton चे कोन". **कोन is also Marathi for an angle** (काटकोन, a right angle): the
+bracket and "Orton" keep the sense clear, and the cone pages never use कोन for an angle: a cone's bend position is
+"वाकण्याची स्थिती". Native check. **SK cones** are SK
+with the number as printed (SK 6a) where the English has them. **Seger** is **सेगर** only where the English says Seger:
+the firing guide's older European cones (सेगर कोन) and the **सेगर सूत्र** (UMF), which never names a cone. Never give an
+SK number for an Orton number or the reverse, nor say they are equal, nor add a cone to "mid fire" or "high fire" where
+the English has none.
+
+- **One number hotter, one number cooler:** "**एक क्रमांक जास्त गरम**" and "**एक क्रमांक जास्त थंड**" (the guard cone is
+  "एक क्रमांक जास्त गरम कोन"); never उंच, खालचा, वरचा, मोठा, लहान or क्रमांक कमी/जास्त: cone 05 is cooler than 04 ("कोन 05
+  हा कोन 04 पेक्षा एक क्रमांक जास्त थंड आहे"). Where the English says a cone "two numbers lower" or "next higher", write
+  जास्त थंड or जास्त गरम ("दोन किंवा तीन क्रमांक जास्त थंड असलेला SK कोन"), so it cannot read the other way round. The
+  upper cone of a range is "जास्त गरम कोन". "Below cone 03" is "कोन 03 पेक्षा थंड फायरिंगला". वरचे/खालचे stays only for a
+  place in the kiln (Cones Top, Cones Bottom).
+- **cone 06** is written 06 with its zero, never 6.
 
 ### The unity formula
 
-_To be filled._
+**सेगर सूत्र (UMF)**: so at its first use in each guide section and in the setting, "सेगर सूत्र" afterwards; सूत्र is
+Marathi's formula. The app's short "Unity formula" is "सेगर सूत्र", the label "Unity:" is "सेगर:". "unity" as the scaling is
+**युनिटी**, explained once as "फ्लक्सची एकूण बेरीज एक धरून" (एक as a word). The three columns: ग्लास फॉर्मर (RO₂), स्टॅबिलायझर
+(R₂O₃), फ्लक्स (R₂O आणि RO). A glaze recipe is **रेसिपी**: never सूत्र for a recipe. Molecular words use **रेणू** (molecule;
+mrwiki "रेणूंची संख्या"), never अणु, which is Marathi's atom (mrwiki "अणुक्रमांक"). No Marathi name for the UMF was found
+(No source; Native check).
 
 ### Gender-neutral wording
 
-_To be filled: Marathi verbs show the subject's gender in many tenses; the forms Marathi software uses with the reader._
+Marathi verbs show gender in the past and in many participles, so the text never guesses the reader's:
+
+- **Imperatives** (-आ) carry no gender: "चाळा", "घाला".
+- **तुम्ही's forms are plural and carry no gender**: "तुम्ही करता", "तुम्ही केलेत", "तुम्ही आहात", "तुम्ही बदलू शकता".
+- **The transitive past agrees with the object**, not with तुम्ही: "तुम्ही रेसिपी जतन केली" (रेसिपी, f.).
+- **Impersonal and passive forms** (MS 4.1.18, 5.4.1): "रेसिपी जतन केली", "हे करता येते", "मास्क घालावा".
+- People in general are plural or named by role (MS 3.1): "कुंभार", "पॉटर", "वापरकर्ते", "लोक", "व्यक्ती"; a generic single
+  person takes the plural ते, never तो/ती (MS 3.1). **कुंभार** is the traditional potter and also a caste name; the guides
+  say "पॉटर" where the English means studio potters in general (Native check).
 
 ### The reader in the guides
 
-_To be filled: where the bracketed Marathi term appears (at a term's first use in each guide section, as `{{en: …}}` is
-used, and never in a button or a short label)._
+तुम्ही where the sentence needs a subject; steps are -आ imperatives; explanations are impersonal ("ग्लेझ खूप जाड असेल तर
+वाहतो"). Short plain sentences, one Marathi sentence for one English sentence where Marathi allows. Quotations are
+translated into “…” and keep their figures as the English writes them. **The bracketed Marathi term** (the rows below that
+give one) goes right after the loanword **at its first use in each guide section**, before the `{{en: …}}` mark where the
+term has one: "फ्लक्स (द्रावक){{en: flux}}". Never in a button, a label, a table heading or a message of the JSON files; in
+the glossary of glazing-basics (the definition list), each term line may give it once.
+
+The rule as the five guides now follow it (the firing review set it; the consistency pass made the others match):
+
+- **A section is a `##` heading** with everything under it down to the next `##`; a `###` subsection does not start a new
+  count.
+- **The first standalone use** in running text takes the bracket: किल्न (भट्टी), कोन (शंकू), and the rows below that give
+  a bracket. An inflected word takes an inflected bracket: "किल्नमध्ये (भट्टीत)", "किल्नच्या (भट्टीच्या)", or the bracket
+  before the ending as "किल्न (भट्टी) मधील".
+- **Not counted:** a fixed compound name (किल्न सिटर, किल्न वॉश, किल्न शेल्फ, कोन पॅक, कोन ऑफसेट, विटनेस कोन, गाइड कोन),
+  a table cell, a link's text, a bold list label ("**किल्न:**") and a quotation, where the bracket goes on the next use.
+- **`{{en: …}}`** follows the bracket where the term is marked "show English", at its first use in each section, as above.
 
 ### The app's feature names
 
-_To be filled._
+Written exactly as on the button or tab, checked against recipe/mr.json, library/mr.json, mr.json and account/mr.json
+(‘ऑक्साइड यादीत जोडा’, ‘वापरायलाच हवे’, ‘दुसऱ्या कोनसाठी प्रत बनवा’, ‘माझा डेटा डाउनलोड करा’); in running text in single
+curly quotes, ‘…’, unless the English wraps the name in `<b>`, `**…**` or another tag: then the tag, without quotes. A name takes no ending, so attach a generic noun: "‘तुलना करा’
+निवडा", "‘माझे साहित्य’ या टॅबमध्ये", "‘शिसे बदला’ ही सुविधा". "Settings" in running text is "सेटिंग्ज"; inside
+`<settings>…</settings>` write the word the sentence needs ("<settings>सेटिंग्ज</settings> मध्ये").
+
+| English                       | Marathi (button, label)      | In running text                         |
+| ----------------------------- | ---------------------------- | --------------------------------------- |
+| Compare                       | तुलना करा                    | तुलना; ‘तुलना करा’ ही सुविधा            |
+| Suggest amounts (and compare) | प्रमाण सुचवा (आणि तुलना करा) | ‘प्रमाण सुचवा’ ही सुविधा                |
+| Match with what I have        | माझ्याकडील साहित्याने जुळवा  | ‘माझ्याकडील साहित्याने जुळवा’ ही सुविधा |
+| Replace lead                  | शिसे बदला                    | ‘शिसे बदला’ ही सुविधा                   |
+| Settings                      | सेटिंग्ज                     | सेटिंग्ज                                |
+| Notebook                      | नोटबुक                       | स्टुडिओ नोटबुक                          |
+| Library                       | लायब्ररी                     | साहित्याची लायब्ररी                     |
+| Standard                      | मानक                         | मानक साहित्य                            |
+| My materials                  | माझे साहित्य                 | ‘माझे साहित्य’ हा टॅब                   |
+| Trial                         | ट्रायल                       | ट्रायल                                  |
 
 ### Law in India
 
-_To be filled from the Marathi texts of the Occupational Safety, Health and Working Conditions Code, 2020, the Factories
-Act, 1948, the Maharashtra Factories Rules, BIS's IS 9473 and IS 9806, and the GHS labels: the law's words for "at most",
-"no more than", "up to" (जास्तीत जास्त, पेक्षा जास्त नाही?) against "less than" (पेक्षा कमी), and "at least" (किमान?). The
-words for respirable dust, crystalline silica and silicosis. How the English's EU names are written (there is no official
-Marathi text of Directive 84/500/EEC or CLP)._
+No Marathi text of the Acts or standards could be read (Not reached), so the words below are plain Marathi chosen to keep
+the English's limits exact; **Native check, and confirm against the Marathi texts when a reviewer can reach them**. The
+region data cites the English titles; a Marathi title is given once beside them.
+
+- **Limits:** "at most", "no more than", "up to" (a limit) → **जास्तीत जास्त** or **…पेक्षा जास्त नाही** (the limit itself
+  passes): "up to 25% nepheline syenite" in a hazard line → "जास्तीत जास्त 25%". **…पर्यंत** only where "up to" is no limit:
+  a usage range ("60% पर्यंत वापरतात"), a temperature reached ("कोन 6 पर्यंत भाजा"), a date. "less than", "under", "below"
+  → **…पेक्षा कमी** (it does not reach); "at least", "or more" → **किमान** or **…किंवा अधिक**; "more than", "over",
+  "above" → **…पेक्षा जास्त**. "or less" ("25 mm deep or less", "3% or less") and an "up to" that caps an amount, a rate
+  or a temperature ("up to 3%", "up to 500 °F/h", "open at up to 250 °F") are at-most limits too: **जास्तीत जास्त** or
+  **…पेक्षा जास्त नाही**, never "…किंवा त्यापेक्षा कमी" or a bare पर्यंत. Never पेक्षा कमी for "at most", never पेक्षा जास्त
+  for "at least": a slip moves a legal limit. Check every one in the food-contact, silica and mask texts, the records'
+  amounts and the guides.
+- **The Code:** the Occupational Safety, Health and Working Conditions Code, 2020 → **व्यावसायिक सुरक्षा, आरोग्य आणि कामाच्या
+  स्थितीविषयक संहिता, 2020** (No source: no official Marathi title found; keep the English beside it once). Section 88
+  leaves the limits to the states: "each state sets its own limit" → "प्रत्येक राज्य स्वतःची मर्यादा ठरवते"; "We could not
+  confirm a national limit" → "आम्हाला राष्ट्रीय मर्यादेची खात्री करता आली नाही". An exposure limit → **संपर्क मर्यादा**
+  (exposure = संपर्क, as the English means breathing it in at work). The Factories Act, 1948 → **कारखाने अधिनियम, 1948**
+  (No source; the usual Marathi form). Silicosis → **सिलिकोसिस** (Google suggest: "सिलिकोसिस रोग").
+- **Masks:** IS 9473:2002 (filtering half masks against particles, classes FFP1, FFP2, FFP3), from the **भारतीय मानक
+  ब्युरो (BIS)**; its Marathi title was not read: describe it as "कणांपासून संरक्षण करणारे फिल्टरचे हाफ मास्क" and keep the
+  number and the classes as the English gives them.
+- **Food contact:** India has no mandatory rule for ceramic ware (IS 9806:2001 is voluntary; none is shown). The English's
+  food-contact categories are written plainly (2.9).
+- **GHS:** no Marathi GHS label text was read. Signal words: "Danger" → **धोका**, "Warning" → **इशारा**; "Not classified" →
+  **वर्गीकृत नाही** (never निरुपद्रवी, harmless). H-codes kept. Native check.
+- **Who to call:** **112** ("आपत्कालीन क्रमांक 112": police, fire and ambulance, ERSS); the **National Poisons Information
+  Centre (NPIC), AIIMS New Delhi**, **1800 116 117**, 24 तास, टोल-फ्री (the name as AIIMS publishes it, in English; a Marathi
+  description once: "विष माहिती केंद्र"). Bodies: **आरोग्य आणि कुटुंब कल्याण मंत्रालय** (Ministry of Health and Family
+  Welfare), **कामगार आणि रोजगार मंत्रालय** (Ministry of Labour and Employment), **DGOSH** (its Marathi name was not found;
+  keep DGOSH with the English name). No source for the Marathi ministry names; Native check.
+- **EU law**, where the English names it (Directive 84/500/EEC, Directive (EU) 2017/2398, CLP): there is no official
+  Marathi text; write **युरोपियन युनियनचा (EU) निर्देश 84/500/EEC**, **CLP नियमन (EC) No 1272/2008**, with the number kept,
+  so that the English's scope (the 3 L that applies only to packaging and storage vessels) stays as it is. US and UK bodies
+  keep their English names with a Marathi gloss once: OSHA (अमेरिकेची व्यावसायिक सुरक्षा संस्था), HSE (ब्रिटनची आरोग्य आणि
+  सुरक्षा संस्था): "the UK's HSE" → "ब्रिटनची HSE".
 
 ### Agencies, organisations and companies
 
-AIIMS's National Poisons Information Centre (1800 116 117, 24 hours, toll free) is verified (the India region research).
-_To be filled: its Marathi name from AIIMS's pages, if it has one, and the other bodies' names._
+- **Agencies and organisations are feminine**, as संस्था is, with or without the gloss: "HSE म्हणते", "FDA इशारा देते", "IARC
+  नुसार". NHS (ब्रिटनची सरकारी आरोग्य सेवा), CDC (अमेरिकेची रोग नियंत्रण संस्था), FDA (अमेरिकेची अन्न आणि औषध संस्था), EPA
+  (अमेरिकेची पर्यावरण संरक्षण संस्था), IARC (जागतिक आरोग्य संघटनेची कर्करोग संशोधन संस्था), ECHA (युरोपियन रसायन संस्था).
+- **Companies, makers, suppliers and websites are feminine too**, as कंपनी is: "Orton म्हणते", "Dawson सुचवते", "Potclays
+  सांगते", "Digitalfire सांगते". One rule for every name keeps the verbs consistent across files (the Hindi reviews found
+  makers masculine in one guide and feminine in another). A data sheet (शीट, SDS) is feminine. Several names together
+  take the plural ("Potclays आणि Bath Potters विकतात"); a person takes the plural of respect ("Derek Au … करतात"). Native
+  check.
 
 ### Pitfalls
 
-_To be filled: the Hindi and Marathi false friends first (words that look alike and differ), then glaze vs enamel,
-varnish and paint; frit vs flux; kiln vs oven or furnace; bisque vs raw ware; earthenware, terracotta, stoneware,
-porcelain and china clay; silica vs silicon vs silicone; whiting vs lime and chalk; boron vs borax vs boric acid; a
-respirator vs a ventilator vs ventilation; the app's guides vs a kiln's manual._
+- **Hindi look-alikes** (never copy from hi.md): Marathi **अणु** is an atom and **रेणू** a molecule (Hindi अणु is a molecule);
+  lead is **शिसे** (Hindi सीसा); a cone is **कोन** but कोन is also an angle; ग्लेझ with झ, not ग्लेज़; Marathi **साहित्य** is
+  material and literature (Hindi साहित्य only literature); **चाळणी** a sieve (Hindi छलनी); **थर** a coat (Hindi परत, which in
+  Marathi means "back again"); **भाजणे** to fire (Hindi भाजना is not used so); **वजनकाटा** a scale (Hindi तराज़ू); **विरघळणारे**
+  soluble (Hindi घुलनशील); **टक्के** percent (Hindi प्रतिशत). Hindi's अधिक, कम, चाहिए, ज़रूरी are not Marathi: जास्त, कमी, …आवे,
+  आवश्यक.
+- **ग्लेझ, एनॅमल, वार्निश, रंग:** a glaze is **ग्लेझ** (the material and the coat); to glaze **ग्लेझ लावणे**. **मीनाकाम**
+  (enamelling on metal), **एनॅमल पेंट**, **वार्निश** (varnish) and **रंग/पेंट** (paint) are not glazes. mrwiki's **चकाकी**
+  ("नैसर्गिक चकाकी", the anagama's ash glaze) is not used for glaze: चकाकी is shine, the gloss of a surface. The old झिलई
+  (polish, tinning) is not used either.
+- **फ्रिट and फ्लक्स:** a frit is **फ्रिट** (a factory glass); a flux is **फ्लक्स (द्रावक)** (the oxide's role). Not
+  soldering flux (डाग देण्याचे फ्लक्स), not magnetic flux.
+- **किल्न, भट्टी, ओव्हन:** a potter's kiln is **किल्न** (भट्टी at the first use per section); भट्टी alone is also a furnace,
+  a stove and a nuclear reactor (अणु भट्टी); **ओव्हन** a kitchen oven, used only where the English says oven.
+- **बिस्क and कच्चे:** **कच्चे** is unfired (कच्ची भांडी, greenware; कच्ची माती); **बिस्क** is the first firing and its ware
+  (बिस्क फायरिंग, बिस्क केलेली भांडी). Never कच्चे for bisque, never बिस्क for unfired ware. **बिस्क is not बिस्किट** (Google
+  suggest completes बिस्क to biscuits): say "बिस्क फायरिंग" or "बिस्क केलेले" at least once per section. **कच्चा माल** is raw
+  materials in a shop's sense.
+- **अर्दनवेअर, टेराकोटा, स्टोनवेअर, पोर्सिलेन, चिनी माती:** earthenware is **अर्दनवेअर**; **टेराकोटा** (Google suggest:
+  "टेराकोटा म्हणजे काय") is the red, usually unglazed low-fired ware, used only where the English says terracotta;
+  stoneware is **स्टोनवेअर**; porcelain is **पोर्सिलेन** (mrwiki, Google suggest). **चिनी माती** means kaolinite (mrwiki) and,
+  in everyday Marathi, crockery and porcelain ("चिनी मातीची भांडी"): never used for either; kaolin is **काओलिन (चायना क्ले)**.
+- **सिलिका, सिलिकॉन, सिलिकॉन रबर, वाळू:** silica is **सिलिका** (SiO₂; mrwiki "सिलिका तथा सिलिकॉन डायऑक्साइड"); the element is
+  **सिलिकॉन**; silicone rubber **सिलिकॉन रबर** (the English's "silicone" always with रबर, since Marathi writes both
+  सिलिकॉन). **सिलिका जेल** (Google suggest's top hit) is the drying sachet. Sand is **वाळू**; silica sand **सिलिका वाळू**
+  (Google suggest).
+- **व्हायटिंग, चुना, खडू, चुनखडी:** whiting is **व्हायटिंग** (calcium carbonate, CaCO₃; Clay Station's "CS Whiting"); **चुना**
+  is lime (CaO, slaked lime, and the lime eaten with paan); **खडू** is chalk (and a blackboard chalk); **चुनखडी** is
+  limestone. None is used for whiting; "lime" in a frit's name is चुना only there ("सोडा-पोटॅश-चुना फ्रिट").
+- **बोरॉन, बोरॅक्स, बोरिक आम्ल:** B₂O₃ is **बोरॉन (B₂O₃)**, formally बोरॉन ऑक्साइड; borax is **बोरॅक्स (टाकणखार)** (mrwiki
+  "बोरॅक्स (टाकणखार)"; Google suggest: "टाकणखार पावडर", "बोरॅक्स पावडर"); boric acid is **बोरिक आम्ल**. In the safety text,
+  name each as the English does.
+- **पोटॅश and सोडा:** "potash" (K₂O) is **पोटॅश (K₂O)**, formally पोटॅशियम ऑक्साइड; पोटॅश is also a fertiliser in India, so
+  the oxide always has K₂O at its first use in a section. The safety guide's potash (potassium carbonate) is **पोटॅशियम
+  कार्बोनेट**. "soda" (Na₂O) is **सोडा (Na₂O)**, formally सोडियम ऑक्साइड; soda ash is **सोडा ॲश**; सोडा alone is also
+  washing soda, baking soda and soda water.
+- **स्टेन and कलरंट:** a stain (factory-made) is **स्टेन (तयार रंगद्रव्य)**: स्टेन is also a mark; a colorant is **कलरंट
+  (रंगद्रव्य)**.
+- **रेस्पिरेटर, व्हेंटिलेटर, वायुवीजन:** a respirator is **रेस्पिरेटर मास्क** at first use, then रेस्पिरेटर (Google suggest:
+  "रेस्पिरेटर मास्क"); a hospital ventilator is **व्हेंटिलेटर**, never meant here; ventilation of a room is **वायुवीजन**
+  (व्हेंटिलेशन in LEV only).
+- **मार्गदर्शिका and मॅन्युअल:** the app's five guides are **मार्गदर्शिका** (f.); a kiln's, controller's or sitter's manual is
+  **मॅन्युअल** (n.). Never the same word. A maker's, supplier's or school's own "guide" is **पुस्तिका** (a booklet), **लेख**
+  (an article) or **दस्तऐवज** (a document), never मार्गदर्शिका; "a guide, not a prediction" is "दिशादर्शक अंदाज". **गाइड कोन**
+  is a cone's name and stays.
+- **Save and safe:** Save is **जतन करा**, never सुरक्षित करा (see Buttons).
+- **रिडक्शन, कपात, घट:** reduction is **रिडक्शन (क्षपण)**; never **कपात** (a cut, a discount), the machine translation
+  mrwiki's anagama article shows ("ऑक्सिडेशन/कपात"), and never घट (a decrease).
+- **क्रेझिंग and क्रॅकल:** crazing is **क्रेझिंग** (a defect); crackle is **क्रॅकल** (wanted); a crack through the pot from
+  heating or cooling is **डंटिंग (तडा)**.
+- **विशिष्ट गुरुत्व and घनता:** specific gravity is **विशिष्ट गुरुत्व**, a ratio with no unit (1.45); **घनता** is density in
+  g/cm³ or kg/m³ and is never used for a glaze; a glaze's density (the setting) is **दाटपणा**; never लिटरचे वजन (litre
+  weight).
+- **लीचिंग:** leaching is **लीचिंग (धातू झिरपणे)**; the leach test is a test of the metals a fired piece releases, not
+  narrowed to lead and cadmium.
+- **सूत्र and रेसिपी:** a recipe is **रेसिपी**, a chemical formula **सूत्र**, the unity formula **सेगर सूत्र**.
+- **प्लास्टिक, स्टॅबिलायझर, सस्पेंडर, कुकी, मॅन्युअल:** loanwords that mean something else in Marathi homes (plastic, a voltage
+  stabiliser, braces, a biscuit, a manual): see their rows.
+- **Placeholders:** see Placeholders and names.
+- **Genders the basics review settled**, to keep in every file: **काच** f. ("काच बनते"), **सिलिका** f., **ॲल्युमिना** f.;
+  **फेल्डस्पार** m. ("फेल्डस्पार मऊ होऊ लागतो", "साधा “फेल्डस्पार”"), **फ्लिंट** m., **धातू** m.; **फ्लॉक्युलंट** n.; **फ्रिट**
+  m. but a relative clause after "काच" agrees with काच ("…काच, जी … न विरघळणारे करते"). **साहित्य** stays साहित्य in the
+  plural, never साहित्ये.
+- **Japanese names:** Hepburn with macrons, with the kanji in brackets where the English writes kanji: tokutō (特等), yontō
+  (四等), kanri nōdo (管理濃度), kokka kentei (国家検定), Ōsaka chūdoku 110-ban (大阪中毒110番), ōgata kōn (大型コーン), Kyōto
+  zēgeru (京都ゼーゲル), Yūkō Shōji (有恒商事). This overrides the earlier "no Japanese script" (the Urdu and Bengali ruling).
+- **Words the reviews settled across files:** harmonised classification **एकसमान वर्गीकरण** (never सुसंगत वर्गीकरण); Error
+  **चूक** (never त्रुटी: "सर्व्हरची चूक", "आणताना चूक झाली."); a firing or material record **रेकॉर्ड** (n.), notes and the
+  Notes page **नोंद/नोंदी** (to record = नोंद करणे, नोंदवणे); AI assistant **AI असिस्टंट** (m.); translucent
+  **अर्धपारदर्शक**, semi-opaque **अर्ध-अपारदर्शक** (never swapped); a shed **बाहेरची स्वतंत्र खोली** (never शेड, which is
+  the shade of welding glasses); flux **फ्लक्स (द्रावक)**, solvent **सॉल्व्हंट**; vent **व्हेंट**; "lime" as an oxide or in
+  totals **कॅल्शियम** (चुना only in a frit's name).
 
 ### Search terms (docs/seo-plan.md, item 9)
 
-_To be filled._
+Google's suggestions for Marathi (hl=mr, gl=IN, web and YouTube, 21 October 2026) show that Marathi speakers search for
+studio glazes in English, in Latin letters: सिरॅमिक ग्लेझ completes to **ceramic glaze recipe**, **ceramic glaze
+calculator**, **ceramic glaze recipes cone 6**, **ceramic glaze powder**; कोन 6 to **cone 6 temperature celsius**; पॉटरी
+क्लास to **pottery classes near me**; बॉल क्ले to **ball clay**. In Devanagari, **ग्लेझ** completes only to "ग्लेझिंग चा अर्थ
+मराठीत", **ग्लेज** to a Hindi trading company and glazed paper, **भट्टी** to stoves and fertiliser, **किल्न** to nothing;
+**मातीकाम**, **मातीकाम कार्यशाळा**, **कुंभाराचे चाक** and **चिनी मातीची भांडी** are searched. **Proposed title**: "Glazecalc:
+सिरॅमिक ग्लेझ कॅल्क्युलेटर, पॉटरीसाठी मोफत". **Description terms:** सिरॅमिक ग्लेझ रेसिपी, पॉटरी ग्लेझ, मातीकाम, फ्रिट,
+फेल्डस्पार, कोन 6, सेगर सूत्र (UMF), and the English "glaze calculator" once in brackets. Every Marathi title and
+description that says ग्लेझ carries सिरॅमिक or पॉटरी with it.
 
 ## 2. Glossary
 
-**Tier** in the Notes: 1 craft loanword, 2 material by its bag name, 3 textbook chemistry and physics, 4 plain Marathi and
-the law. A term in brackets after the Marathi is the technical term for the guides' first use per section.
+"show English" marks the terms whose English a reader can ask to see after them (`<en>…</en>`, `{{en: …}}`). **Tier** in
+the Notes: 1 craft loanword, 2 material by its bag name, 3 school chemistry and physics, 4 plain Marathi and the law (see
+the opening). **m.**, **f.**, **n.**: the gender the verb and चा/ची/चे take. **Usage**: the word Indian shops, Google's
+suggestions or the Marathi Wikipedia use, in no Marathi teaching source; **No source**: a best choice with no Marathi
+source. A term in brackets after the Marathi is the technical term for the guides' first use per section.
 
 ### 2.1 Glaze and its chemistry
 
-| English | Marathi | Notes |
-| ------- | ------- | ----- |
+| English                                      | Marathi                                                           | Notes                                                                                                                                                                                                                                                                                                     |
+| -------------------------------------------- | ----------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| glaze                                        | ग्लेझ; to glaze ग्लेझ लावणे; glazed ग्लेझ लावलेले (काचेसारखा लेप) | **show English**. Tier 1. m. ("ग्लेझ वितळतो"). Usage: mrwiki ("ओवरग्लेझ", "अंडरग्लेज"), Google suggest ("ग्लेझिंग चा अर्थ मराठीत"). The bracket is No source: mrwiki's चकाकी is shine (Pitfalls). Unglazed: ग्लेझ न लावलेले. **Native check** on the gender and the bracket. Hindi ग्लेज़ is not Marathi. |
+| glass former                                 | ग्लास फॉर्मर (काच बनवणारा ऑक्साइड)                                | **show English**. Tier 1. m. No source. The RO₂ column, silica. UI "ग्लास फॉर्मर - RO₂".                                                                                                                                                                                                                  |
+| flux                                         | फ्लक्स (द्रावक)                                                   | **show English**. Tier 1. m. No source for द्रावक in pottery (Marathi chemistry's word for a solvent-like agent); Native check. Also a category ("फ्लक्स") and "फ्लक्स करण्याची क्षमता" (fluxing power). Not soldering or magnetic flux.                                                                  |
+| stabilizer                                   | स्टॅबिलायझर (स्थिरक)                                              | **show English**. Tier 1. m. No source; Native check. A स्टॅबिलायझर at home is a voltage stabiliser: say "ग्लेझचा स्टॅबिलायझर" or "स्टॅबिलायझर ऑक्साइड" at first use. UI "स्टॅबिलायझर - R₂O₃".                                                                                                            |
+| oxide                                        | ऑक्साइड                                                           | Tier 3. m. mrwiki ("कार्बन डायऑक्साइड", "सिलिकॉन डायऑक्साइड"), Bhoomi ("Iron Oxide Red"). Formulas never translated; the app's two names: formal "कॅल्शियम ऑक्साइड", the potters' "कॅल्शियम".                                                                                                             |
+| R₂O and RO                                   | R₂O आणि RO                                                        | Symbols kept. UI "फ्लक्स - RO".                                                                                                                                                                                                                                                                           |
+| alkali, alkaline                             | अल्कली; alkaline अल्कलीयुक्त                                      | Tier 3. f. No source read (school science writes आम्लारी for a base and अल्कली for the alkalis; not checked). "अल्कलीयुक्त फ्रिट", "अल्कलीयुक्त कॉपर ब्लू". The R₂O oxides, not the pH sense. Native check.                                                                                               |
+| unity molecular formula (UMF)                | सेगर सूत्र (UMF)                                                  | **show English**. Tier 3. n. No Marathi name found; Native check. सूत्र as Marathi chemistry. "सेगर सूत्र (UMF)" at first use, then "सेगर सूत्र". "Unity formula" → "सेगर सूत्र", "Unity:" → "सेगर:".                                                                                                     |
+| unity                                        | युनिटी (फ्लक्सची एकूण बेरीज एक धरून)                              | Tier 1. f. No source; Native check. "in unity" → "युनिटीमध्ये"; एक as a word. Not एकता.                                                                                                                                                                                                                   |
+| limit formula (target formula)               | लिमिट सूत्र (लक्ष्य सूत्र)                                        | **show English**. Tier 1. n. No source. Not a legal limit: never मर्यादा alone, which the law and the silica text use.                                                                                                                                                                                    |
+| silica to alumina ratio                      | सिलिका-ॲल्युमिना गुणोत्तर                                         | **show English**. n. No source (गुणोत्तर, Marathi maths' ratio). UI "सिलिका आणि ॲल्युमिनाचे गुणोत्तर: {ratio}", "सिलिका-ॲल्युमिना {ratio}:1".                                                                                                                                                             |
+| flux balance                                 | फ्लक्स संतुलन                                                     | n. No source. UI "फ्लक्स संतुलन", "संतुलन".                                                                                                                                                                                                                                                               |
+| oxide analysis (analysis, chemical analysis) | ऑक्साइड विश्लेषण (विश्लेषण, रासायनिक विश्लेषण)                    | Tier 3. n. No source. UI "ऑक्साइड विश्लेषण, भाजल्यानंतर, वजनानुसार".                                                                                                                                                                                                                                      |
+| formula (raw formula, fired)                 | सूत्र (कच्चे सूत्र; भाजल्यानंतर)                                  | Tier 3. n. Marathi chemistry's सूत्र (Google suggest: "सापेक्ष घनता सूत्र"). UI "कच्चे सूत्र:", "सूत्र लिहा (भाजल्यानंतरचे):", "सूत्र, विक्रीच्या स्वरूपात:". Never रेसिपी.                                                                                                                               |
+| loss on ignition (LOI)                       | ज्वलन-घट (LOI)                                                    | **show English**. Tier 3. f. No source; Native check. Indian shops and labs write "LOI". "ज्वलन-घट (LOI)" at first use; the UI's bare "LOI" stays LOI.                                                                                                                                                    |
+| mole                                         | मोल                                                               | Tier 3. m. mrwiki ("मोल अथवा ग्रॅम-मोल … रेणूंची संख्या मोजण्याचे एकक"). Not the animal or a mark on the skin (तीळ).                                                                                                                                                                                      |
+| molecular weight                             | रेणुभार (रेणुवस्तुमान)                                            | Tier 3. m. mrwiki's रेणू (molecule); never अणुभार (अणु is an atom in Marathi). UI "सूत्राचा कच्चा रेणुभार". Native check.                                                                                                                                                                                 |
+| equivalent weight, fired weight              | समतुल्य भार; भाजल्यानंतरचे वजन                                    | Tier 3. m.; n. No source; Native check. UI columns "समतुल्य भार", "भाजल्यानंतरचे वजन".                                                                                                                                                                                                                    |
+| melt (noun)                                  | वितळलेला ग्लेझ                                                    | Tier 4. m. No source. "वितळलेल्या ग्लेझला घट्ट करतो", "वितळलेल्या ग्लेझमधून वायूचे बुडबुडे".                                                                                                                                                                                                              |
+| thermal expansion (expansion)                | औष्णिक प्रसरण (प्रसरण)                                            | **show English**. Tier 3. n. mrwiki ("प्रसरण आणि आकुंचन", "औष्णिक चालकता"). UI "प्रसरण, ×10⁻⁶/°C"; "CTE" and "x 10^-7/K" kept.                                                                                                                                                                            |
+| stiff, fluid, runny (viscosity)              | घट्ट, प्रवाही, वाहणारा (श्यानता)                                  | Tier 3 and 4. No source for श्यानता (Native check). "वाहणारा" also describes a thin slurry: context decides.                                                                                                                                                                                              |
+| raw, fired                                   | कच्चे; भाजलेले                                                    | Tier 4. mrwiki ("भट्टीत भाजलेला"). "कच्चे व्हायटिंग", "कच्ची माती", "भाजलेले ऑक्साइड". Never कच्चे for bisque (2.3).                                                                                                                                                                                      |
+| gloss, satin, matte                          | ग्लॉसी, सॅटिन, मॅट                                                | Tier 1. No source. "चकचकीत" in running text where the English says shiny. सॅटिन is not the fabric here.                                                                                                                                                                                                   |
+| opaque, transparent, translucent, clear      | अपारदर्शक, पारदर्शक, अर्धपारदर्शक, क्लिअर                         | Tier 3 and 1. No source read; the usual Marathi science words. "क्लिअर ग्लेझ" is a glaze type, not "स्पष्ट". Semi-opaque is अर्ध-अपारदर्शक, never अर्धपारदर्शक (translucent).                                                                                                                             |
+| stable, durable                              | स्थिर; टिकाऊ                                                      | Tier 4. No source. "स्थिर ग्लेझ" (balanced, resists leaching).                                                                                                                                                                                                                                            |
+| crystals, crystalline                        | स्फटिक; स्फटिकी                                                   | Tier 3. mrwiki ("काच हे एक स्फटिक नसलेले घनरूप आहे"). Bhoomi "Crystalline" frits: "स्फटिकी ग्लेझ". "स्फटिकी सिलिका" is the dust hazard (2.7).                                                                                                                                                             |
+| boron blue                                   | “बोरॉन ब्लू”                                                      | Keep the quotes; translate the sense (दुधाळ निळसर-पांढरा) where the English explains it. No source.                                                                                                                                                                                                       |
+| celadon                                      | सेलाडॉन                                                           | Tier 1. m. No source. Palette "सेलाडॉन हिरवा".                                                                                                                                                                                                                                                            |
+| tenmoku (temmoku)                            | टेनमोकू                                                           | Tier 1. m. No source; Native check on the spelling. Palette "टेनमोकू गंज".                                                                                                                                                                                                                                |
 
 ### 2.2 Materials and oxides
 
-| English | Marathi | Notes |
-| ------- | ------- | ----- |
+| English                                           | Marathi                                                | Notes                                                                                                                                                                                                                                                                                                                                                                      |
+| ------------------------------------------------- | ------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| silica (SiO₂)                                     | सिलिका (SiO₂)                                          | **show English**. Tier 2. f. mrwiki ("सिलिका तथा सिलिकॉन डायऑक्साइड (SiO2)"), Google suggest ("सिलिका वाळू"). Not सिलिकॉन (the element), सिलिकॉन रबर or सिलिका जेल. Category "सिलिका". Native check on the gender.                                                                                                                                                         |
+| alumina (Al₂O₃)                                   | ॲल्युमिना (Al₂O₃)                                      | Tier 2. f. No source. Category "ॲल्युमिना"; formal "ॲल्युमिनियम ऑक्साइड".                                                                                                                                                                                                                                                                                                  |
+| boron (B₂O₃)                                      | बोरॉन (B₂O₃)                                           | Tier 3. m. No source. Category "बोरॉनचे स्रोत"; formal "बोरॉन ऑक्साइड".                                                                                                                                                                                                                                                                                                    |
+| potash (K₂O)                                      | पोटॅश (K₂O)                                            | **show English**. Tier 1. m. No source. Formal पोटॅशियम ऑक्साइड. Always with K₂O at first use (पोटॅश is also a fertiliser). The safety guide's potash is पोटॅशियम कार्बोनेट: check which. KNaO kept.                                                                                                                                                                       |
+| soda (Na₂O)                                       | सोडा (Na₂O)                                            | **show English**. Tier 1. m. No source. Formal सोडियम ऑक्साइड (Google suggest: "सोडियम ऑक्साइड"). Soda ash is सोडा ॲश; in firing logs "Soda" is a soda firing (2.4).                                                                                                                                                                                                       |
+| lithium (Li₂O)                                    | लिथियम (Li₂O)                                          | Tier 2. m. Clay Station ("Lithium Carbonate"). Records' "lithia" → लिथिया.                                                                                                                                                                                                                                                                                                 |
+| calcium, lime (CaO)                               | कॅल्शियम; lime चुना (CaO)                              | Tier 3. m. No source. The UI says "कॅल्शियम"; चुना only in frit names ("सोडा-पोटॅश-चुना फ्रिट"). Not the fruit (लिंबू); "lime green" → "पोपटी हिरवा".                                                                                                                                                                                                                      |
+| magnesium, magnesia (MgO)                         | मॅग्नेशियम; मॅग्नेशिया (MgO)                           | Tier 3. m. mrwiki (मॅग्नेशियम), Bhoomi ("Magnesium Oxide", "Magnesium Carbonate"). Formal "मॅग्नेशियम ऑक्साइड".                                                                                                                                                                                                                                                            |
+| barium (BaO), barium carbonate                    | बेरियम (BaO), बेरियम कार्बोनेट                         | Tier 2. m. Clay Station ("CS Barium Carbonate (G)"). विषारी (2.7).                                                                                                                                                                                                                                                                                                         |
+| strontium (SrO)                                   | स्ट्रॉन्शियम (SrO)                                     | Tier 2. m. Bhoomi, Clay Station ("Strontium Carbonate").                                                                                                                                                                                                                                                                                                                   |
+| zinc (ZnO), zinc oxide                            | झिंक (ZnO), झिंक ऑक्साइड                               | Tier 2. m. Clay Station ("CS Zinc Oxide (G-325)"), mrwiki ("झिंक म्हणजे जस्त"). जस्त is the metal, not used for the oxide. "कॅल्सिन्ड झिंक".                                                                                                                                                                                                                               |
+| lead (PbO)                                        | शिसे (PbO); its compounds लेड ऑक्साइड, शिसेयुक्त फ्रिट | Tier 3 and 4. n. mrwiki ("शिसे (चिन्ह: Pb ; इंग्लिश: Lead, लेड …)"), Google suggest ("शिसे विषबाधा"); Bhoomi "Frit 1009 Lead Based". Setting "शिसे". Never Hindi सीसा.                                                                                                                                                                                                     |
+| iron (red iron oxide, black iron oxide)           | आयर्न (रेड आयर्न ऑक्साइड, ब्लॅक आयर्न ऑक्साइड)         | Tier 2. m. Bhoomi ("Iron Oxide Red", "Iron Oxide Black"); Marathi लोह in running chemistry only. Fe₂O₃ red, Fe₃O₄ black. "Crocus martis" kept.                                                                                                                                                                                                                             |
+| titanium, titania (TiO₂)                          | टायटॅनियम; टायटॅनिया (TiO₂)                            | Tier 3. m. No source. Formal टायटॅनियम डायऑक्साइड.                                                                                                                                                                                                                                                                                                                         |
+| raw materials (materials)                         | साहित्य; a shop's raw materials कच्चा माल              | Tier 4. n. Usage (Marathi cooking recipes head their ingredients "साहित्य"); Bhoomi's and Clay Station's menu "Raw Materials" → कच्चा माल. UI page "साहित्य". **Native check** (Choices).                                                                                                                                                                                  |
+| feldspar (spar)                                   | फेल्डस्पार                                             | **show English**. Tier 2. m. mrwiki ("क्वार्ट्झ आणि फेल्डस्पार"), Bhoomi, Clay Station, Google suggest. "spar" in names stays ("Custer Spar"). Category "फेल्डस्पार आणि स्टोन".                                                                                                                                                                                            |
+| potash feldspar, soda feldspar                    | पोटॅश फेल्डस्पार; सोडा फेल्डस्पार                      | Tier 2. m. Clay Station ("CS Potash Feldspar", "CS Soda Feldspar"), Bhoomi ("Soda Feldspar 1 Kg"). ऑर्थोक्लेज; अल्बाइट.                                                                                                                                                                                                                                                    |
+| nepheline syenite                                 | नेफेलीन सायनाइट                                        | **show English**. Tier 2. m. Clay Station ("CS Nepheline Syenite (G-325)"). No Marathi source.                                                                                                                                                                                                                                                                             |
+| Cornish stone (Cornwall stone, china stone)       | कॉर्निश स्टोन (कॉर्नवॉल स्टोन, चायना स्टोन)            | Tier 2. m. No source. "स्टोन" is a material, not a दगड (pebble).                                                                                                                                                                                                                                                                                                           |
+| kaolin (UK: china clay)                           | काओलिन (चायना क्ले)                                    | **show English**. Tier 2. f. Bhoomi ("China Clay Kaolin Calcined"); mrwiki ("काओलिनाइट"). चायना क्ले at first use per section. Never चिनी माती (Pitfalls). Native check.                                                                                                                                                                                                   |
+| calcined                                          | कॅल्सिन्ड (निस्तापित)                                  | Tier 2. Bhoomi ("Calcined"). निस्तापित No source. "कॅल्सिन्ड काओलिन", "कॅल्सिन्ड फ्लिंट", "कॅल्सिन्ड झिंक".                                                                                                                                                                                                                                                                |
+| ball clay                                         | बॉल क्ले                                               | **show English**. Tier 2. f. Bhoomi ("Ball Clay 1 Kg"), Google suggest ("बॉल क्ले" → "ball clay"). "बॉल" is part of the name.                                                                                                                                                                                                                                              |
+| bentonite                                         | बेंटोनाइट                                              | Tier 2. m. No source; Indian shops' English.                                                                                                                                                                                                                                                                                                                               |
+| slip clay                                         | स्लिप क्ले                                             | Tier 2. f. No source. Not स्लिप (2.3).                                                                                                                                                                                                                                                                                                                                     |
+| whiting                                           | व्हायटिंग (कॅल्शियम कार्बोनेट)                         | **show English**. Tier 2. n. Clay Station ("CS Whiting (G-200)"). Not चुना (lime), खडू (chalk) or चुनखडी (limestone). Native check on the gender.                                                                                                                                                                                                                          |
+| dolomite, talc                                    | डोलोमाइट; टॅल्क                                        | Tier 2. m. Clay Station ("CS Dolomite", "CS Talc"), Bhoomi ("Pottery Talc"). Both supply MgO.                                                                                                                                                                                                                                                                              |
+| wollastonite                                      | वोलास्टोनाइट                                           | Tier 2. m. Bhoomi, Clay Station ("Wollastonite").                                                                                                                                                                                                                                                                                                                          |
+| flint                                             | फ्लिंट                                                 | **show English**. Tier 2. m. No source. UK: calcined flint; US recipes: ground quartz.                                                                                                                                                                                                                                                                                     |
+| quartz (free quartz, free silica)                 | क्वार्ट्झ (गारगोटी) (मुक्त क्वार्ट्झ, मुक्त सिलिका)    | Tier 2. m. mrwiki ("गारगोटी (क्वार्ट्झ)", "क्वार्ट्झ आणि फेल्डस्पार"). गारगोटी is also a pebble: the bracket only at first use. "मुक्त सिलिका" is free silica (2.7).                                                                                                                                                                                                       |
+| frit                                              | फ्रिट                                                  | **show English**. Tier 1. m. Bhoomi ("Frit 1003", "Frit 1005 Alkaline"), Clay Station ("Ferro Frit 3134"). Native check on the gender. "फ्रिट केलेले" (fritted); "बेस फ्रिट", "बोरॉन फ्रिट", "कॅल्शियम बोरेट फ्रिट" (calcium and boron, not a borosilicate; Bhoomi "Calcium Borate"), "हाय-अल्कलाइन फ्रिट" (Bhoomi "High Alkaline"), "शिसे-मुक्त फ्रिट", "लेड बायसिलिकेट". |
+| raw borates (borax, colemanite, ulexite)          | कच्चे बोरेट (बोरॅक्स (टाकणखार), कोलेमनाइट, युलेक्साइट) | Tier 2. m. mrwiki ("बोरॅक्स (टाकणखार)"), Google suggest ("टाकणखार पावडर"). Gerstley Borate, Gillespie Borate kept.                                                                                                                                                                                                                                                         |
+| soda ash, bone ash, wood ash                      | सोडा ॲश, बोन ॲश (हाडांची राख), लाकडाची राख             | Tier 2. f. (राख). Clay Station's "Tricalcium Phosphate" is bone ash's chemistry. Only wood ash is राख in the plain sense; ash glazes "राख-ग्लेझ" (mrwiki: "राखेला नैसर्गिक चकाकी").                                                                                                                                                                                        |
+| colorant                                          | कलरंट (रंगद्रव्य)                                      | **show English**. Tier 1. n. No source. Category "कलरंट"; UI "कलरंट आणि ॲडिटिव्ह".                                                                                                                                                                                                                                                                                         |
+| stain                                             | स्टेन (तयार रंगद्रव्य)                                 | **show English**. Tier 2. m. No source (Indian shops' menu "Stains"). स्टेन is also a mark: the bracket at first use. The verb "stain" (a glaze stops staining) → "डाग पडणे".                                                                                                                                                                                              |
+| cobalt, copper, chrome, manganese, nickel         | कोबाल्ट, कॉपर, क्रोम, मँगनीज, निकेल                    | Tier 2. m. Bhoomi ("Copper Oxide", "Chrome Oxide", "Manganese Dioxide", "Nickel Oxide"); Google suggest ("कोबाल्ट"). "क्रोम" is chromium oxide, not chrome plating. तांबे not used for the oxide.                                                                                                                                                                          |
+| rutile                                            | रुटाइल                                                 | Tier 2. m. Bhoomi ("Rutile 100 gms").                                                                                                                                                                                                                                                                                                                                      |
+| opacifier                                         | ओपॅसिफायर (अपारदर्शक करणारे)                           | Tier 1. m. No source. झिरकॉन, टिन ऑक्साइड, टायटॅनियम डायऑक्साइड.                                                                                                                                                                                                                                                                                                           |
+| zircon                                            | झिरकॉन                                                 | Tier 2. m. No source. Zirconium silicate; not झिरकोनिया (ZrO₂).                                                                                                                                                                                                                                                                                                            |
+| suspender                                         | सस्पेंडर (ग्लेझ पाण्यात तरंगत ठेवणारे साहित्य)         | Tier 1. m. No source; Native check. सस्पेंडर alone is braces: the bracket at first use. Category "सस्पेंडर".                                                                                                                                                                                                                                                               |
+| refractory                                        | रिफ्रॅक्टरी (उष्णतारोधी)                               | Tier 1. No source. Of materials and kiln parts.                                                                                                                                                                                                                                                                                                                            |
+| softening point, half-sphere point (fusion, flow) | सॉफ्टनिंग पॉइंट, हाफ-स्फिअर पॉइंट (फ्यूजन, फ्लो)       | Tier 1. m. No source; the frit makers' English. "Fusion" on a Ferro sheet is a melting point, not nuclear fusion (अणुसंमीलन).                                                                                                                                                                                                                                              |
+| substitute (stand-in, replacement)                | पर्याय                                                 | Tier 4. m. No source. See "like for like" (2.8).                                                                                                                                                                                                                                                                                                                           |
+| equivalent (a frit's, as a maker lists it)        | समतुल्य                                                | Tier 4. "Fusion च्या यादीतील Vibrantz 3134 चा समतुल्य फ्रिट"; never बरोबर with no noun.                                                                                                                                                                                                                                                                                    |
+| tin oxide (SnO₂), tin                             | टिन ऑक्साइड (SnO₂), टिन                                | Tier 2. m. No source. Marathi कथील is the metal in daily use; not used for the oxide.                                                                                                                                                                                                                                                                                      |
+| silica sand                                       | सिलिका वाळू                                            | Tier 2. f. Google suggest ("सिलिका वाळू").                                                                                                                                                                                                                                                                                                                                 |
+| ore, raw mineral                                  | कच्चे खनिज                                             | Tier 4. n. No source (records). "दळलेले नैसर्गिक कच्चे खनिज". Not कच्चा माल (a shop's raw materials).                                                                                                                                                                                                                                                                      |
+| mica                                              | अभ्रक (मायका)                                          | Tier 3. n. No source (records). "फ्लोरिनयुक्त लिथियम-पोटॅशियम अभ्रक (मायका)"; the bracket at first use.                                                                                                                                                                                                                                                                    |
 
 ### 2.3 Clay, ware and firing stages
 
-| English | Marathi | Notes |
-| ------- | ------- | ----- |
+| English                         | Marathi                                                | Notes                                                                                                                                                                          |
+| ------------------------------- | ------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| clay body (body)                | क्ले बॉडी (मातीचे मिश्रण)                              | **show English**. Tier 1. f. No source. Not a human or a car's body: "ग्लेझ बॉडीमध्ये वितळून मिसळतो", "बॉडी स्टेन". माती, चिकणमाती (mrwiki) is clay in general.                |
+| ware (pot, piece)               | भांडी (भांडे)                                          | Tier 4. n. mrwiki ("भांडी बनवण्याची भट्टी"). "कच्ची भांडी", "बिस्क केलेली भांडी", "ग्लेझ लावलेली भांडी"; a piece is "भांडे" or "पीस".                                          |
+| functional ware                 | रोजच्या वापराची भांडी (खाण्यापिण्याची)                 | Tier 4. n. No source. Not "काम करणारी".                                                                                                                                        |
+| hollowware, flatware            | खोलगट भांडी (कप, वाट्या, जग); सपाट भांडी (ताटे, बश्या) | Tier 4. n. No source. "flatware" here is plates, not cutlery (काटे-चमचे).                                                                                                      |
+| earthenware                     | अर्दनवेअर                                              | **show English**. Tier 1. n. No source (-वेअर as mrwiki writes "इमारी वेअर"). Described once as "कमी तापमानाला भाजलेली सच्छिद्र भांडी". Not टेराकोटा (Pitfalls). Native check. |
+| stoneware                       | स्टोनवेअर                                              | **show English**. Tier 1. n. No source; described once as "जास्त तापमानाला भाजलेली, पाणी न शोषणारी भांडी".                                                                     |
+| porcelain                       | पोर्सिलेन                                              | Tier 1. n. mrwiki ("जपानी पोर्सिलेन"), Google suggest ("पोर्सिलेन टाइल्स"). Never चिनी माती.                                                                                   |
+| vitreous, vitrification         | काचसदृश (व्हिट्रिफाइड); व्हिट्रिफिकेशन                 | Tier 1 and 3. Google suggest's Hindi "विट्रिफाइड टाइल्स" shows the loanword. No source for vitrification; Native check.                                                        |
+| porous, porosity                | सच्छिद्र; सच्छिद्रता                                   | Tier 4. No source read; the standard Marathi word. "बिस्क सच्छिद्र राहायला हवे".                                                                                               |
+| mature, maturity                | मॅच्युअर होणे (पूर्ण भाजणे); मॅच्युरिटी                | Tier 1. No source; Native check. Not age.                                                                                                                                      |
+| plastic, plasticity             | सुघट्य (आकार धरणारी); सुघट्यता                         | Tier 3, an exception to tier 1: प्लास्टिक is the polymer. No source; Native check.                                                                                             |
+| greenware                       | ग्रीनवेअर (कच्ची भांडी)                                | **show English**. Tier 1. n. No source. Not green; not बिस्क.                                                                                                                  |
+| leather-hard                    | लेदर-हार्ड (अर्धवट सुकलेले)                            | Tier 1. No source; Native check.                                                                                                                                               |
+| bone dry                        | बोन-ड्राय (पूर्ण कोरडे)                                | Tier 1. No source.                                                                                                                                                             |
+| bisque (UK: biscuit)            | बिस्क (पहिली भाजणी)                                    | **show English**. Tier 1. n. No source. "बिस्क फायरिंग", "बिस्क केलेले", "सॉफ्ट/हार्ड बिस्क". Not बिस्किट (Google suggest completes बिस्क to biscuits); not कच्चे.             |
+| glaze firing (UK: glost firing) | ग्लेझ फायरिंग (दुसरी भाजणी)                            | **show English**. Tier 1. f. No source.                                                                                                                                        |
+| once-firing (single firing)     | सिंगल फायरिंग (एकदाच भाजणे)                            | **show English**. Tier 1. f. No source. "एक" as a word.                                                                                                                        |
+| slip                            | स्लिप (पाण्यात कालवलेली माती)                          | Tier 1. f. No source. Not slipping or स्लिप डिस्क (Google suggest's top hit). Native check on the gender.                                                                      |
+| engobe                          | एंगोब                                                  | Tier 1. n. No source.                                                                                                                                                          |
+| underglaze                      | अंडरग्लेझ                                              | Tier 1. m. mrwiki ("अंडरग्लेज ब्लू"; written with झ here). "अंडरग्लेझ पेन्सिल".                                                                                                |
+| foot                            | बूड                                                    | Tier 4. n. No source; Marathi बूड is the bottom of a pot. "बुडाला ग्लेझ लावू नका" (dry-footing); "बूड जास्त रुंद सोडा" = a wider unglazed band. Not पाय. Native check.         |
+| low fire, mid fire, high fire   | लो फायर, मिड फायर, हाय फायर                            | Tier 1. No source. Nouns and adjectives ("मिड-फायर ग्लेझ"). Never add a cone the English lacks.                                                                                |
+| raku                            | राकू                                                   | Tier 1. n. No source.                                                                                                                                                          |
 
 ### 2.4 Kilns, cones and firing
 
-| English | Marathi | Notes |
-| ------- | ------- | ----- |
+| English                                                                     | Marathi                                                               | Notes                                                                                                                                                                                         |
+| --------------------------------------------------------------------------- | --------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| electric kiln, gas kiln, manual kiln                                        | इलेक्ट्रिक किल्न, गॅस किल्न, हाताने चालवायचा किल्न                    | Tier 1. m. Bhoomi's menu "Kilns"; mrwiki's भट्टी at first use per section (Choices). Never मॅन्युअल किल्न. Native check.                                                                      |
+| firing, fire (verb), load                                                   | फायरिंग; भाजणे; लोड                                                   | Tier 1 and 4. फायरिंग f.; भाजणे as mrwiki writes it ("भट्टीत भाजलेला"): "कोन 6 पर्यंत भाजा". "एक फायरिंग" = one load fired; loading, unloading → किल्न भरणे, किल्न रिकामा करणे. Native check. |
+| kiln shelf (shelf)                                                          | किल्न शेल्फ (शेल्फ)                                                   | Tier 1. n. No source; Native check on the gender. "शेल्फ" also means the materials on hand (2.8).                                                                                             |
+| element                                                                     | एलिमेंट                                                               | Tier 1. m. No source. Chemical elements in the Materials form are मूलद्रव्ये (mrwiki "मूलद्रव्य").                                                                                            |
+| cone (pyrometric cone)                                                      | कोन (शंकू)                                                            | **show English**. Tier 1. m. Clay Station ("Orton Cones"). कोन is also an angle: see Cones. Not an ice-cream cone.                                                                            |
+| cone number, cone chart                                                     | कोन क्रमांक, कोन तक्ता                                                | Tier 1. m. No source. 022 to 42; leading zeros kept. Orton's chart.                                                                                                                           |
+| self-supporting, large and small (junior) cones, bars                       | सेल्फ-सपोर्टिंग कोन; मोठे आणि लहान (ज्युनिअर) कोन; बार                | Tier 1. m. No source (Indian shops' "Self-supporting cones", "Large Cone 6").                                                                                                                 |
+| witness cone                                                                | विटनेस कोन                                                            | **show English**. Tier 1. m. No source.                                                                                                                                                       |
+| cone pack                                                                   | कोन पॅक                                                               | **show English**. Tier 1. m. No source.                                                                                                                                                       |
+| guide cone, firing cone, guard cone                                         | गाइड कोन, फायरिंग कोन, गार्ड कोन                                      | Tier 1. m. No source. गाइड is part of the cone's name, not the app's guides.                                                                                                                  |
+| heatwork                                                                    | हीटवर्क (तापमान आणि वेळ यांचा एकत्रित परिणाम)                         | **show English**. Tier 1. n. No source.                                                                                                                                                       |
+| heating rate (rate, climb), peak                                            | तापमान वाढण्याचा दर (दर); पीक (सर्वोच्च तापमान)                       | Tier 4. m. (दर). No source. Chart columns "हळू", "मध्यम", "जलद"; log field "दर".                                                                                                              |
+| ramp                                                                        | रॅम्प                                                                 | **show English**. Tier 1. m. No source. Log field "रॅम्प".                                                                                                                                    |
+| hold (soak)                                                                 | होल्ड (एकाच तापमानावर ठेवणे)                                          | **show English**. Tier 1. m. No source. "10 मिनिटांचा होल्ड". Not भिजवणे.                                                                                                                     |
+| schedule (firing schedule, program, preset, segment)                        | फायरिंग शेड्यूल (प्रोग्राम, प्रीसेट, सेगमेंट)                         | Tier 1. n. No source. Preset names stay as on the controller ("Slow Bisque"). Log field "सेगमेंट".                                                                                            |
+| controller                                                                  | कंट्रोलर                                                              | Tier 1. m. No source. Setting: "तापमानानुसार, किल्न कंट्रोलरच्या प्रोग्रामप्रमाणे".                                                                                                           |
+| cone offset (offset)                                                        | कोन ऑफसेट                                                             | Tier 1. m. No source.                                                                                                                                                                         |
+| kiln sitter (Kiln-Sitter, sitter)                                           | किल्न सिटर (Kiln-Sitter)                                              | **show English**. Tier 1. m. Kiln-Sitter is Dawson's trademark, kept in Latin. Not a babysitter.                                                                                              |
+| sensing rod, claw, weight, trigger plate, cone supports, tube, firing gauge | सेन्सिंग रॉड, क्लॉ, वेट, ट्रिगर प्लेट, कोन सपोर्ट, ट्यूब, फायरिंग गेज | Tier 1. No source; the parts as a Kiln-Sitter manual names them. The sitter's weight is "वेट (वजन)".                                                                                          |
+| limit timer                                                                 | लिमिट टायमर                                                           | Tier 1. m. No source.                                                                                                                                                                         |
+| infinite switch (Off, Low, Medium, High)                                    | इन्फिनिट स्विच (Off, Low, Medium, High)                               | Tier 1. m. No source. The positions are the labels printed on the switch, kept in Latin; Native check.                                                                                        |
+| pyrometer, thermocouple                                                     | पायरोमीटर; थर्मोकपल                                                   | Tier 1. m. No source. Log fields "प्रोब {n}".                                                                                                                                                 |
+| peephole (spy hole)                                                         | पीपहोल (आत पाहण्याचे छिद्र)                                           | Tier 1. n. No source. Log field "पीपहोल".                                                                                                                                                     |
+| vent, downdraft vent, hood vent                                             | व्हेंट; डाउनड्राफ्ट व्हेंट; हुड व्हेंट                                | Tier 1. m. No source. "किल्न व्हेंट करा"; a vent hole is "व्हेंटचे छिद्र".                                                                                                                    |
+| candling (preheat)                                                          | कँडलिंग (ओलावा काढण्यासाठी मंद उष्णता)                                | **show English**. Tier 1. n. No source. The "mirror test" → "आरशाची चाचणी".                                                                                                                   |
+| burnout                                                                     | बर्नआउट (कार्बन आणि सेंद्रिय पदार्थ जळणे)                             | Tier 1. n. No source. "अपुरे बर्नआउट".                                                                                                                                                        |
+| red heat, dull red                                                          | लाल धग; मंद लाल धग                                                    | Tier 4. f. No source.                                                                                                                                                                         |
+| quartz inversion                                                            | क्वार्ट्झ इन्व्हर्जन                                                  | **show English**. Tier 1. n. No source. At 573 °C (1063 °F).                                                                                                                                  |
+| oxidation                                                                   | ऑक्सिडेशन (ऑक्सिडीकरण)                                                | **show English**. Tier 1. n. mrwiki ("ऑक्सिडीभवन (ऑक्सिडीकरण)", "ऑक्सिडेशन"). "ऑक्सिडेशन फायरिंग".                                                                                            |
+| reduction                                                                   | रिडक्शन (क्षपण)                                                       | **show English**. Tier 1. n. mrwiki ("क्षपण केले जाते"). Never कपात (a cut, a discount) or घट (Pitfalls).                                                                                     |
+| atmosphere                                                                  | किल्नमधील वातावरण                                                     | Tier 4. n. No source. Log field "वातावरण".                                                                                                                                                    |
+| drop-and-hold                                                               | ड्रॉप-अँड-होल्ड                                                       | **show English**. Tier 1. m. No source.                                                                                                                                                       |
+| slow cooling (slow cool)                                                    | स्लो कूलिंग (हळूहळू थंड करणे)                                         | Tier 1. n. No source.                                                                                                                                                                         |
+| underfired, overfired                                                       | कमी भाजलेले; जास्त भाजलेले                                            | Tier 4. No source. Never कच्चे (unfired).                                                                                                                                                     |
+| kiln wash                                                                   | किल्न वॉश                                                             | Tier 1. m. No source. Not washing.                                                                                                                                                            |
+| stilt                                                                       | स्टिल्ट                                                               | Tier 1. m. No source.                                                                                                                                                                         |
+| cookie                                                                      | कुकी (ओघळ झेलणारी बिस्कची चकती)                                       | Tier 1. f. No source. कुकी is also a biscuit: the bracket at first use.                                                                                                                       |
+| Seger cones, Staffordshire cones, Bullers rings, Holdcroft bars             | सेगर कोन, स्टॅफर्डशायर कोन, बुलर्स रिंग, होल्डक्रॉफ्ट बार             | Never converted to Orton numbers.                                                                                                                                                             |
+| Damper, Primary Air, Secondary Air, Burner, Pilots, Blower                  | डॅम्पर, प्रायमरी एअर, सेकंडरी एअर, बर्नर, पायलट, ब्लोअर               | Tier 1. Firing-log fields. "पायलट" are pilot flames, not people.                                                                                                                              |
+| Ox Probe                                                                    | ऑक्सिजन प्रोब                                                         | Tier 1. m.                                                                                                                                                                                    |
+| Draw Tile                                                                   | ड्रॉ टाइल                                                             | Tier 1. f. No source; a test piece pulled out during the firing.                                                                                                                              |
+| Delta, Temp Diff, Cones Top, Cones Bottom                                   | डेल्टा, तापमान फरक, वरचे कोन, खालचे कोन                               | Tier 1 and 4. "वरचे/खालचे" is the place in the kiln, never a cone hotter or cooler.                                                                                                           |
+| Salt, Soda, Sawdust                                                         | मीठ, सोडा, भुसा                                                       | Tier 4. "सोडा" here is a soda firing, not Na₂O.                                                                                                                                               |
+| Ring {n}                                                                    | रिंग {n}                                                              | A Bullers (pyrometric) ring reading, not a jewellery ring (अंगठी) or a कडी.                                                                                                                   |
+| manual (a kiln's, controller's or sitter's)                                 | मॅन्युअल (किल्न, कंट्रोलर किंवा सिटरचे)                               | Tier 1. n. No source. The app's guides are "मार्गदर्शिका": another word (Pitfalls).                                                                                                           |
 
 ### 2.5 Defects and glaze fit
 
-| English | Marathi | Notes |
-| ------- | ------- | ----- |
+| English                     | Marathi                                        | Notes                                                                                                                                                    |
+| --------------------------- | ---------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| glaze fit (fit)             | ग्लेझ फिट (ग्लेझ आणि बॉडीचा मेळ)               | **show English**. Tier 1. m. No source. Not fitness or a seizure: "तुमच्या क्ले बॉडीवर जेमतेम फिट झाला". "Over-compressed" → "गरजेपेक्षा जास्त दाबलेला". |
+| defect                      | दोष                                            | Tier 4. m. No source.                                                                                                                                    |
+| crazing (craze)             | क्रेझिंग (केसासारख्या बारीक भेगांचे जाळे)      | **show English**. Tier 1. n. No source; Native check. Not "crazy".                                                                                       |
+| crackle                     | क्रॅकल                                         | Tier 1. n. No source. Crazing made on purpose (raku).                                                                                                    |
+| shivering                   | शिव्हरिंग (कडांवरून ग्लेझचे पापुद्रे उडणे)     | **show English**. Tier 1. n. No source; Native check. Not shivering with cold (थरथरणे). The flakes are sharp.                                            |
+| crawling (crawl)            | क्रॉलिंग (ग्लेझ आकसणे)                         | **show English**. Tier 1. n. No source; Native check. The home-safety guide's crawling babies → "रांगणारी बाळे".                                         |
+| pinholing (pinholes)        | पिनहोल (टाचणीएवढी छिद्रे)                      | **show English**. Tier 1. n. No source; Native check.                                                                                                    |
+| blistering (blisters)       | ब्लिस्टरिंग (फोड)                              | Tier 1. n. No source.                                                                                                                                    |
+| running (run, runny)        | ग्लेझ वाहणे (वाहणारा)                          | Tier 4. No source. Not running as in operating ("व्हेंट चालू आहे"): both occur.                                                                          |
+| devitrification             | डीव्हिट्रिफिकेशन (थंड होताना स्फटिक तयार होणे) | **show English**. Tier 1. n. No source.                                                                                                                  |
+| dunting                     | डंटिंग (तडा)                                   | **show English**. Tier 1. n. No source; Native check. A crack through the pot from heating or cooling.                                                   |
+| leaching (leach, leachable) | लीचिंग (धातू झिरपणे)                           | **show English**. Tier 1. n. No source; Native check. Metals dissolving out of a fired glaze into food or drink.                                         |
+| specks                      | काळे ठिपके                                     | Tier 4. m. No source.                                                                                                                                    |
+| milky, clouding             | दुधाळ; धूसरपणा                                 | Tier 4. No source.                                                                                                                                       |
+| dry, chalky                 | खरखरीत, खडूसारखा                               | Tier 4. No source.                                                                                                                                       |
+| breaks (over edges)         | कडांवर रंग बदलणे (ब्रेक)                       | Tier 4. No source. Not तुटणे.                                                                                                                            |
+| flashing (flash)            | फ्लॅशिंग                                       | Tier 1. n. No source. Not a camera flash.                                                                                                                |
+| thermal shock               | थर्मल शॉक (अचानक तापमान बदलाचा धक्का)          | Tier 1. m. No source.                                                                                                                                    |
 
 ### 2.6 Making and applying glaze
 
-| English | Marathi | Notes |
-| ------- | ------- | ----- |
+| English                                | Marathi                                            | Notes                                                                                                                                                                                                                                                                                                     |
+| -------------------------------------- | -------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| batch                                  | बॅच                                                | Tier 1. f. No source. "बॅचनुसार", "बॅचचे वजन", "बॅचचा आकार", "बॅच यादी". A supplier's run: "बॅच ते बॅच".                                                                                                                                                                                                  |
+| batch recipe                           | बॅच रेसिपी                                         | Tier 1. f. Google suggest ("ceramic glaze recipe" in Latin). Never सूत्र.                                                                                                                                                                                                                                 |
+| base (base glaze), on top              | बेस ग्लेझ (बेस); बेसच्या वर                        | Tier 1. m. No source. Not a chemical base (आम्लारी). "बेस फ्रिट"; UI "बेसच्या वर", "बेसचे %".                                                                                                                                                                                                             |
+| percent, parts (parts by weight)       | टक्के, भाग (वजनानुसार भाग)                         | Tier 4. No source. UI "बेसचे %", "भाग", "ग्रॅम"; column "भाग".                                                                                                                                                                                                                                            |
+| scale (weighing)                       | वजनकाटा                                            | Tier 4. m. No source; the everyday Marathi word. "0.01 g पर्यंत वाचणारा वजनकाटा". Scaling a recipe is another word (2.8).                                                                                                                                                                                 |
+| tare                                   | टेअर (रिकाम्या भांड्यासह शून्य करणे)               | Tier 1. n. No source.                                                                                                                                                                                                                                                                                     |
+| slurry                                 | स्लरी (ग्लेझचे पाण्यातील मिश्रण)                   | **show English**. Tier 1. f. No source.                                                                                                                                                                                                                                                                   |
+| slake                                  | न ढवळता भिजू देणे                                  | Tier 4. No source. Not quenching thirst.                                                                                                                                                                                                                                                                  |
+| sieve (UK also: lawn)                  | चाळणी                                              | Tier 4. f. No source; the everyday word (Hindi छलनी differs). "lawn" is not grass.                                                                                                                                                                                                                        |
+| mesh                                   | मेश                                                | Tier 1. m. Clay Station's grades ("G-325"). "80 मेश". Mesh numbers never translated.                                                                                                                                                                                                                      |
+| specific gravity (SG)                  | विशिष्ट गुरुत्व                                    | **show English**. Tier 3. n. mrwiki ("सरासरी विशिष्ट गुरुत्व ०.६९"), Google suggest ("विशिष्ट गुरुत्व म्हणजे काय", "विशिष्ट गुरुत्व 1.025"). Relative density, a ratio with no unit (1.45), never घनता (g/cm³) or a litre weight. `guides.density.sg`: "विशिष्ट गुरुत्व {value}". Native check (Choices). |
+| pint weight                            | पिंट वजन                                           | Tier 1. n. No source. An imperial pint (568 ml). Setting "पिंट वजन, एका इम्पीरियल पिंटमधील औंस".                                                                                                                                                                                                          |
+| degrees Baumé (°Bé), hydrometer        | बोमे अंश (°Bé); हायड्रोमीटर                        | Tier 3. No source. Setting "बोमे अंश, हायड्रोमीटरने".                                                                                                                                                                                                                                                     |
+| density (glaze density)                | दाटपणा (ग्लेझचा दाटपणा)                            | Tier 4. m. No source; Native check. Never घनता for a glaze. Setting "ग्लेझचा दाटपणा".                                                                                                                                                                                                                     |
+| thixotropy (thixotropic, gelled)       | थिक्सोट्रॉपी (थिक्सोट्रॉपिक, जेलसारखा)             | **show English**. Tier 1. f. No source.                                                                                                                                                                                                                                                                   |
+| flocculant (flocculate)                | फ्लॉक्युलंट (फ्लॉक्युलेट करणे)                     | **show English**. Tier 1. n. No source.                                                                                                                                                                                                                                                                   |
+| deflocculant                           | डिफ्लॉक्युलंट                                      | **show English**. Tier 1. n. No source.                                                                                                                                                                                                                                                                   |
+| Epsom salts                            | एप्सम सॉल्ट                                        | Tier 2. n. No source. Magnesium sulfate.                                                                                                                                                                                                                                                                  |
+| CMC gum (gum, binder, brushing medium) | CMC डिंक (डिंक, बाइंडर, ब्रशिंग मीडियम)            | Tier 1. m. No source. "CMC" kept.                                                                                                                                                                                                                                                                         |
+| suspension, settle, hard-panning       | पाण्यात तरंगत राहणे; खाली बसणे; तळाशी घट्ट थर जमणे | Tier 4. No source.                                                                                                                                                                                                                                                                                        |
+| dipping, pouring, brushing, spraying   | बुडवणे, ओतणे, ब्रशने लावणे, स्प्रे करणे            | Tier 4. No source. "बुडवण्याचा वेळ", "एकदा बुडवणे", "दोनदा बुडवणे"; "dipping glaze" → "डिपिंग ग्लेझ".                                                                                                                                                                                                     |
+| coat (coating)                         | थर                                                 | Tier 4. m. No source; the everyday word (Hindi परत means "back again" in Marathi). "थर पातळ ठेवा", "दोन किंवा तीन थर". Not a garment.                                                                                                                                                                     |
+| wax resist                             | वॅक्स रेझिस्ट                                      | **show English**. Tier 1. n. No source.                                                                                                                                                                                                                                                                   |
+| test tile                              | टेस्ट टाइल                                         | **show English**. Tier 1. f. No source. Plural टेस्ट टाइल्स.                                                                                                                                                                                                                                              |
+| line blend                             | लाइन ब्लेंड                                        | **show English**. Tier 1. n. No source. Not a queue or a drawn line.                                                                                                                                                                                                                                      |
+| triaxial blend                         | ट्रायॲक्सियल ब्लेंड                                | Tier 1. n. No source.                                                                                                                                                                                                                                                                                     |
+| lot number                             | लॉट नंबर                                           | Tier 1. m. No source.                                                                                                                                                                                                                                                                                     |
+| technical data sheet (TDS)             | तांत्रिक डेटा शीट (TDS)                            | Tier 4. f. No source. Not the safety data sheet.                                                                                                                                                                                                                                                          |
 
 ### 2.7 Health and safety
 
-| English | Marathi | Notes |
-| ------- | ------- | ----- |
+| English                                                               | Marathi                                                             | Notes                                                                                                                                                                                                                                                                                                                                                                                                             |
+| --------------------------------------------------------------------- | ------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| dust                                                                  | धूळ                                                                 | Tier 4. f. The everyday word.                                                                                                                                                                                                                                                                                                                                                                                     |
+| respirable crystalline silica (RCS)                                   | श्वसनयोग्य स्फटिकी सिलिका (RCS)                                     | **show English**. Tier 4. f. No Marathi legal text read; explained once as "फुप्फुसांच्या आतपर्यंत पोहोचणारी बारीक स्फटिकी सिलिका". Native check.                                                                                                                                                                                                                                                                 |
+| crystalline silica, amorphous silica, cristobalite                    | स्फटिकी सिलिका, अस्फटिकी सिलिका, क्रिस्टोबलाइट                      | Tier 3. mrwiki ("स्फटिक नसलेले घनरूप" for glass). No source for अस्फटिकी; Native check.                                                                                                                                                                                                                                                                                                                           |
+| silicosis, COPD                                                       | सिलिकोसिस; COPD (फुप्फुसांचा दीर्घकालीन अडथळ्याचा आजार)             | Tier 4. m. Google suggest ("सिलिकोसिस रोग"). "फुप्फुसांचा गंभीर, कधीही बरा न होणारा आजार". COPD kept with a Marathi gloss once; Native check on the gloss.                                                                                                                                                                                                                                                        |
+| exposure limit, action level                                          | संपर्क मर्यादा; ॲक्शन लेव्हल (कारवाईची पातळी)                       | Tier 4. f.; f. No source (Law in India). Native check.                                                                                                                                                                                                                                                                                                                                                            |
+| respirator                                                            | रेस्पिरेटर मास्क (रेस्पिरेटर)                                       | Tier 4. m. Google suggest ("रेस्पिरेटर मास्क"). रेस्पिरेटर मास्क at first use in a section, then रेस्पिरेटर. Not a व्हेंटिलेटर; not a surgical, cloth or "nuisance dust" mask (कापडी मास्क, सर्जिकल मास्क).                                                                                                                                                                                                       |
+| N95, P100, FFP2, FFP3, P2, P3                                         | N95, P100, FFP2, FFP3, P2, P3                                       | Never translated. India: FFP1, FFP2, FFP3 under IS 9473:2002 (Regions).                                                                                                                                                                                                                                                                                                                                           |
+| half mask, powered respirator (PAPR)                                  | हाफ मास्क; पॉवर्ड रेस्पिरेटर (PAPR)                                 | Tier 4. m. No source.                                                                                                                                                                                                                                                                                                                                                                                             |
+| fit test                                                              | फिट टेस्ट (मास्क चेहऱ्यावर नीट बसतो का याची चाचणी)                  | Tier 1. f. No source.                                                                                                                                                                                                                                                                                                                                                                                             |
+| HEPA vacuum (dust Class M)                                            | HEPA व्हॅक्यूम क्लीनर; dust Class M धुळीचा वर्ग Class M             | Tier 4. m. "HEPA" and "Class M" kept; never the English "dust" left in.                                                                                                                                                                                                                                                                                                                                           |
+| wet cleaning (wet mop, wet-wipe), dry sweeping                        | ओली स्वच्छता (ओला पोछा, ओल्या कापडाने पुसणे); कोरडा झाडू            | Tier 4. No source; everyday words.                                                                                                                                                                                                                                                                                                                                                                                |
+| local exhaust ventilation (LEV)                                       | लोकल एक्झॉस्ट व्हेंटिलेशन (LEV)                                     | **show English**. Tier 1. n. No source; explained once as "धूळ तयार होते तिथेच ओढून घेणारा हुड आणि पंखा".                                                                                                                                                                                                                                                                                                         |
+| make-up air                                                           | मेक-अप एअर (बाहेरून येणारी ताजी हवा)                                | Tier 1. f. No source.                                                                                                                                                                                                                                                                                                                                                                                             |
+| spray booth (water-backed booth), overspray                           | स्प्रे बूथ (पाण्याचा बूथ); ओव्हरस्प्रे                              | Tier 1. m. No source.                                                                                                                                                                                                                                                                                                                                                                                             |
+| fumes (kiln fumes)                                                    | धूर आणि वायू (किल्नमधून निघणारे वायू)                               | Tier 4. No source.                                                                                                                                                                                                                                                                                                                                                                                                |
+| carbon monoxide (CO), CO alarm                                        | कार्बन मोनॉक्साइड (CO); CO अलार्म                                   | Tier 3. m. No source. "जो दिसत नाही आणि ज्याला वास नसतो".                                                                                                                                                                                                                                                                                                                                                         |
+| metal fume fever, manganism                                           | मेटल फ्यूम फीव्हर (धातूच्या धुरामुळे येणारा ताप); मँगनीज विषबाधा    | Tier 4. No source.                                                                                                                                                                                                                                                                                                                                                                                                |
+| safety data sheet (SDS; older: MSDS)                                  | सेफ्टी डेटा शीट (SDS; जुने नाव MSDS)                                | Tier 4. f. No source; India's chemical rules say "Material Safety Data Sheet" in English. Native check.                                                                                                                                                                                                                                                                                                           |
+| GHS, pictogram, signal word, hazard statement                         | GHS; चित्रचिन्ह; संकेत शब्द; धोका विधान                             | Tier 4. No Marathi GHS text read; Native check. Signal words "धोका" (Danger) and "इशारा" (Warning); H-codes kept. H302 गिळल्यास हानिकारक; H301 गिळल्यास विषारी; H360 प्रजननक्षमतेला किंवा गर्भातील बाळाला हानी पोहोचवू शकते; H361 "suspected of damaging" → "…हानी पोहोचवत असल्याचा संशय" (संशय, never शकते); H350 कर्करोग होऊ शकतो; H351 कर्करोग होत असल्याचा संशय; H372 दीर्घ संपर्काने अवयवांना हानी पोहोचवते. |
+| Not classified                                                        | वर्गीकृत नाही                                                       | Tier 4. Not निरुपद्रवी (harmless). No official Marathi text read.                                                                                                                                                                                                                                                                                                                                                 |
+| IARC Group 1, 2A, 2B, 3 (carcinogenic)                                | IARC गट 1, 2A, 2B, 3 (कर्करोगकारक)                                  | Tier 4. No source. Group 1: "मानवांमध्ये कर्करोगकारक"; 2A: "मानवांमध्ये बहुधा कर्करोगकारक".                                                                                                                                                                                                                                                                                                                       |
+| toxic, harmful                                                        | विषारी; हानिकारक                                                    | Tier 4. No source. "गिळल्यास विषारी" is stronger than "गिळल्यास हानिकारक": keep them apart.                                                                                                                                                                                                                                                                                                                       |
+| soluble, insoluble, slightly soluble                                  | विरघळणारे, न विरघळणारे, थोडे विरघळणारे                              | Tier 4. Google suggest ("पाण्यात विरघळणाऱ्या वस्तू"); school science's विद्राव्य not used. "पाण्यात (किंवा पोटातील आम्लात) विरघळणारे".                                                                                                                                                                                                                                                                            |
+| swallow (ingestion), breathe in (inhalation)                          | गिळणे; श्वासावाटे आत घेणे                                           | Tier 4. Plain words, as the guides.                                                                                                                                                                                                                                                                                                                                                                               |
+| acute, chronic                                                        | तीव्र (एकाच वेळी); दीर्घकालीन (दीर्घ काळात)                         | Tier 4. No source.                                                                                                                                                                                                                                                                                                                                                                                                |
+| poison centre (poison control)                                        | विष माहिती केंद्र                                                   | Tier 4. n. India's: National Poisons Information Centre (NPIC), AIIMS New Delhi, 1800 116 117 (Regions; no Marathi name found). A poison line is विष हेल्पलाइन, glossed once as "(विषबाधेबद्दल सल्ला देणारी हेल्पलाइन)" (see "poison line" below). Native check on the description.                                                                                                                               |
+| blood lead test, blood lead reference value                           | रक्तातील शिशाची चाचणी; रक्तातील शिशाचे संदर्भ मूल्य                 | Tier 4. No source. CDC's 3.5 µg/dL kept. शिसे's oblique is शिशा-.                                                                                                                                                                                                                                                                                                                                                 |
+| lead-free (leadless)                                                  | शिसे-मुक्त                                                          | Tier 4. No source. Not the same as अन्नासाठी सुरक्षित. Both English words → शिसे-मुक्त.                                                                                                                                                                                                                                                                                                                           |
+| food safe (food-safe)                                                 | अन्नासाठी सुरक्षित                                                  | **show English**. Tier 4. No source. In law: releases less lead and cadmium than the limits. सुरक्षित is kept for "safe": Save is जतन करा.                                                                                                                                                                                                                                                                        |
+| leach test (laboratory leach test, metal release test)                | लीचिंग चाचणी (प्रयोगशाळेत धातू झिरपण्याची चाचणी)                    | **show English**. Tier 1 and 4. No source. A test of the metals a fired piece releases; not narrowed to lead and cadmium. Codes kept.                                                                                                                                                                                                                                                                             |
+| liner glaze                                                           | लाइनर ग्लेझ                                                         | **show English**. Tier 1. m. No source.                                                                                                                                                                                                                                                                                                                                                                           |
+| contact dermatitis, barrier cream                                     | संपर्कजन्य त्वचादाह (कॉन्टॅक्ट डर्माटायटिस); बॅरियर क्रीम           | Tier 4. No source. "बॅरियर क्रीम हातमोजा नाही".                                                                                                                                                                                                                                                                                                                                                                   |
+| infrared (IR), IR-rated welding glasses, shade 3                      | इन्फ्रारेड (IR); IR रोखणारा वेल्डिंग चष्मा; शेड 3                   | Tier 4. No source. Sunglasses (गॉगल) and didymium glasses do not block it.                                                                                                                                                                                                                                                                                                                                        |
+| combustible, clearance, dedicated circuit                             | ज्वलनशील; अंतर; स्वतंत्र सर्किट                                     | Tier 4. No source.                                                                                                                                                                                                                                                                                                                                                                                                |
+| emergency number; Emergency (a heading); calling the emergency number | आपत्कालीन क्रमांक; आपत्काल (heading); आपत्कालीन क्रमांकावर फोन करणे | Tier 4. India's: 112 (Regions). "आपत्कालीन क्रमांक (112)" only where the English gives the number.                                                                                                                                                                                                                                                                                                                |
+| 24/7, non-stop                                                        | 24/7 (24 तास, आठवड्याचे 7 दिवस)                                     | "24/7" has a 7: the numbers check needs it.                                                                                                                                                                                                                                                                                                                                                                       |
+| oxidiser (H272)                                                       | ऑक्सिडायझर (H272)                                                   | Tier 3. m. No source.                                                                                                                                                                                                                                                                                                                                                                                             |
+| harmonised classification (EU)                                        | एकसमान वर्गीकरण                                                     | Tier 4. n. No source (records review). Never सुसंगत वर्गीकरण. "EU चे एकसमान वर्गीकरण".                                                                                                                                                                                                                                                                                                                            |
+| nuisance dust                                                         | त्रासदायक धूळ (“nuisance dust”)                                     | Tier 4. f. No source (safe-mixing). The English in brackets once, as the masks are labelled so.                                                                                                                                                                                                                                                                                                                   |
+| dust mask                                                             | धुळीचा मास्क                                                        | Tier 4. m. No source (regions). "धुळीचे मास्क वर्गानुसार विकले जातात".                                                                                                                                                                                                                                                                                                                                            |
+| caustic                                                               | दाहक (कॉस्टिक)                                                      | Tier 4. No source (records). The bracket at first use.                                                                                                                                                                                                                                                                                                                                                            |
+| antidote                                                              | उतारा (अँटिडोट)                                                     | Tier 4. m. No source (home-safety). "यावर कोणताही उतारा (अँटिडोट) नाही".                                                                                                                                                                                                                                                                                                                                          |
+| lead frit                                                             | शिसेयुक्त फ्रिट                                                     | **show English**. Tier 1 and 4. m. Bhoomi "Frit 1009 Lead Based". Lead-free frit शिसे-मुक्त फ्रिट.                                                                                                                                                                                                                                                                                                                |
+| poison line (a phone line); poison centre (the body)                  | विष हेल्पलाइन; विष माहिती केंद्र                                    | Tier 4. f.; n. One word each in every file: "call the poison line" → "विष हेल्पलाइनला फोन करा"; "a poison center decides" → "विष माहिती केंद्र ठरवते". The NPIC's description is विष माहिती केंद्र.                                                                                                                                                                                                               |
+| fire extinguisher                                                     | अग्निशामक यंत्र                                                     | Tier 4. n. No source. "ABC अग्निशामक यंत्र". The fire service is अग्निशमन (safety).                                                                                                                                                                                                                                                                                                                               |
 
 ### 2.8 The app's own words
 
-| English | Marathi | Notes |
-| ------- | ------- | ----- |
+| English                                                                                | Marathi                                                                                                                                | Notes                                                                                                                                                                                                                        |
+| -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| recipe (Recipes)                                                                       | रेसिपी (रेसिपी)                                                                                                                        | f. Google suggest ("ceramic glaze recipe"). "नवीन रेसिपी", "जतन केलेली रेसिपी", "माझ्या जतन केलेल्या रेसिपी", "रेसिपी कॅल्क्युलेटर". Never सूत्र or पाककृती.                                                                 |
+| studio notebook (notebook)                                                             | स्टुडिओ नोटबुक (नोटबुक)                                                                                                                | f. "तुमची स्टुडिओ नोटबुक", "ग्लेझ नोटबुक".                                                                                                                                                                                   |
+| material (Materials)                                                                   | साहित्य (साहित्य)                                                                                                                      | n. "साहित्याचे नाव:", "साहित्य जोडा", "साहित्य पान". **Native check** (Choices, Plural forms).                                                                                                                               |
+| My materials                                                                           | माझे साहित्य                                                                                                                           | n. "माझे सर्व्हरवरील साहित्य:".                                                                                                                                                                                              |
+| Standard (standard materials)                                                          | मानक (मानक साहित्य)                                                                                                                    | Tab "मानक ({count})"; "मानक साहित्य:", "अंगभूत यादी", "लायब्ररी". Not "साधारण".                                                                                                                                              |
+| library                                                                                | लायब्ररी                                                                                                                               | f. "तुमच्या प्रदेशात विकला जाणारा कोणताही शिसे-मुक्त फ्रिट लायब्ररीत नाही." Not a ग्रंथालय. The About page's "shared library" is code.                                                                                       |
+| additive (Additives)                                                                   | ॲडिटिव्ह (ॲडिटिव्ह)                                                                                                                    | n. Nav "ॲडिटिव्ह"; page "ॲडिटिव्ह आणि कलरंट"; recipe "कलरंट आणि ॲडिटिव्ह", "कलरंट किंवा ॲडिटिव्ह".                                                                                                                           |
+| amount (Amount)                                                                        | प्रमाण (प्रमाण)                                                                                                                        | n. Column "प्रमाण"; "प्रमाण लिहा (0 चालेल)."                                                                                                                                                                                 |
+| Share                                                                                  | वाटा                                                                                                                                   | m. Column: each material's percent of the batch. Not शेअर करणे.                                                                                                                                                              |
+| To percent, To parts, Scale to a batch, Scale                                          | टक्क्यांमध्ये, भागांमध्ये, बॅचच्या वजनानुसार, प्रमाण बदला                                                                              | "प्रमाण बदला:". Resizing, not the वजनकाटा.                                                                                                                                                                                   |
+| Batch size, batch list, Weigh in, Weigh, Weighed, Running total, All together          | बॅचचा आकार, बॅच यादी, वजन करून घाला, वजन करा, वजन केले, आतापर्यंतची बेरीज, सगळे मिळून                                                  | "फक्त बॅच यादी: काय वजन करायचे, खूण करण्यासाठी चौकटींसह".                                                                                                                                                                    |
+| Unity formula (Unity)                                                                  | सेगर सूत्र (सेगर)                                                                                                                      | n. "कलरंट आणि ॲडिटिव्ह यातही मोजा". Where the English names both ("unity molecular formula, also called the Seger formula"): "युनिटी रेणवीय सूत्र, ज्याला सेगर सूत्रही म्हणतात".                                             |
+| Wildcards                                                                              | इतर ऑक्साइड                                                                                                                            | Column for oxides outside the three groups. Not पत्त्यांतील जोकर.                                                                                                                                                            |
+| Compare                                                                                | तुलना करा                                                                                                                              | "दोन रेसिपींची तुलना करा", "पहिली रेसिपी", "दुसरी रेसिपी", "बदला", "सारखे".                                                                                                                                                  |
+| Save, Save and add next recipe, Save as a copy, Print                                  | जतन करा; जतन करा आणि पुढची रेसिपी जोडा; प्रत म्हणून जतन करा; प्रिंट करा                                                                | Never सुरक्षित करा (Buttons). Google ("प्रिंट करा").                                                                                                                                                                         |
+| swap (Try modern materials and compare, Undo the swap)                                 | अदलाबदल (आजचे साहित्य वापरून पाहा आणि तुलना करा, अदलाबदल मागे घ्या)                                                                    | f. "आजच्या साहित्याने बदलले".                                                                                                                                                                                                |
+| like for like, gram for gram, one for one, pound for pound                             | जसेच्या तसे; ग्रॅमला ग्रॅम; एकाला एक; पाउंडला पाउंड                                                                                    | Idioms: the sense, with words, not digits.                                                                                                                                                                                   |
+| Suggest amounts and compare                                                            | प्रमाण सुचवा आणि तुलना करा                                                                                                             | "जुन्या साहित्यातून जे मिळत होते ते परत आणा".                                                                                                                                                                                |
+| Replace lead (Replace lead and compare)                                                | शिसे बदला (शिसे बदला आणि तुलना करा)                                                                                                    | "कोन पर्यंत भाजलेले", "ग्लेझ पुन्हा तयार करा", "रंग शिसे-मुक्त बेसवर ठेवा".                                                                                                                                                  |
+| Match with what I have (Match and compare)                                             | माझ्याकडील साहित्याने जुळवा (जुळवा आणि तुलना करा)                                                                                      | "तुमच्याकडे जे आहे त्यातून बनवा".                                                                                                                                                                                            |
+| materials on hand (the shelf)                                                          | माझ्याकडील साहित्य (शेल्फ)                                                                                                             | n. "शेल्फ" is a figure of speech, not a kiln shelf. Server: "शेल्फ म्हणजे जास्तीत जास्त {most} साहित्याची यादी."                                                                                                             |
+| Materials to try, Must use                                                             | वापरून पाहण्याचे साहित्य; वापरायलाच हवे                                                                                                | "हवे" here is the English's "must": the label's own word.                                                                                                                                                                    |
+| Leave it out, Allow more, Add it, Use it instead, Work it out again, What to watch for | हे वगळा; अधिक परवानगी द्या; हे जोडा; त्याऐवजी हे वापरा; पुन्हा हिशोब करा; कशाकडे लक्ष द्यावे                                           |                                                                                                                                                                                                                              |
+| Discontinued, Hard to get, Historical                                                  | बनवणे बंद; मिळणे कठीण; जुने                                                                                                            | "{year} पासून बनवणे बंद", "{year} पासून मिळणे कठीण".                                                                                                                                                                         |
+| Use instead, Similar, Replaces, Also called, Made by, Hazards                          | त्याऐवजी वापरा; सारखे; याची जागा घेते; याला … असेही म्हणतात; उत्पादक; धोके                                                             | "रसायनशास्त्र नाही: सेगर सूत्रात मोजले नाही", "{name} म्हणून मोजले".                                                                                                                                                         |
+| Kind (All kinds)                                                                       | प्रकार (सर्व प्रकार)                                                                                                                   | फेल्डस्पार आणि स्टोन, क्ले, फ्रिट, बोरॉनचे स्रोत, फ्लक्स, सिलिका, ॲल्युमिना, ओपॅसिफायर, कलरंट, सस्पेंडर, इतर.                                                                                                                |
+| Sold in, Where you work                                                                | येथे विकले जाते; तुम्ही कुठे काम करता                                                                                                  | All regions → "सर्व प्रदेश".                                                                                                                                                                                                 |
+| Firing logs (firing record)                                                            | फायरिंग लॉग                                                                                                                            | m. "फायरिंगचे शीर्षक:", "फायरिंगची नोंद करा", "माझ्या जतन केलेल्या फायरिंग:".                                                                                                                                                |
+| field, row                                                                             | कॉलम; ओळ                                                                                                                               | "कॉलम जोडा", "फायरिंग तक्त्यात ओळ जोडा". Not a शेत.                                                                                                                                                                          |
+| trial (Your trial, Try it now, Discard trial)                                          | ट्रायल (तुमची ट्रायल, आता वापरून पाहा, ट्रायल काढून टाका)                                                                              | f. Never "पाहुणा" (guest).                                                                                                                                                                                                   |
+| Typing amounts                                                                         | प्रमाण टाइप करणे                                                                                                                       | "दशांशासाठी स्वल्पविराम किंवा पूर्णविराम", "दशांशासाठी स्वल्पविराम", "दशांशासाठी पूर्णविराम". Server: "दशांश चिन्ह".                                                                                                         |
+| Firing (To Orton cones, By temperature, as a kiln controller's program)                | फायरिंग (Orton कोननुसार, तापमानानुसार, किल्न कंट्रोलरच्या प्रोग्रामप्रमाणे)                                                            | "कोनपर्यंत फायरिंगसाठी दाखवा", "तापमानानुसार फायरिंगसाठी दाखवा".                                                                                                                                                             |
+| Glaze density (Specific gravity, Degrees Baumé, Pint weight)                           | ग्लेझचा दाटपणा (विशिष्ट गुरुत्व, बोमे अंश, पिंट वजन)                                                                                   | See 2.6.                                                                                                                                                                                                                     |
+| Light or dark, Colors                                                                  | फिकट किंवा गडद; रंग                                                                                                                    | Palette: टेनमोकू गंज, सेलाडॉन हिरवा, कोबाल्ट निळा, ऑक्सब्लड लाल, शिनो केशरी, वुड ॲश ऑलिव्ह.                                                                                                                                  |
+| Batch weights (Grams, Pounds and ounces), Grams on printed batches                     | बॅचचे वजन (ग्रॅम, पाउंड आणि औंस), प्रिंट केलेल्या बॅचमध्ये ग्रॅम                                                                       | "ग्रॅमच्या दशांशापर्यंत", "पूर्ण अचूकता".                                                                                                                                                                                    |
+| Lead (Off, On, Turn lead on, Keep it off)                                              | शिसे (बंद, सुरू, शिसे सुरू करा, बंद ठेवा)                                                                                              | n. The metal.                                                                                                                                                                                                                |
+| English terms (Show the English after key terms)                                       | इंग्रजी संज्ञा (मुख्य संज्ञांनंतर इंग्रजी दाखवा)                                                                                       | The setting that shows `<en>`/`{{en: …}}`.                                                                                                                                                                                   |
+| Translation notice (About this translation, Suggest a correction, Read the English)    | भाषांतराची सूचना (या भाषांतराबद्दल, दुरुस्ती सुचवा, इंग्रजी वाचा)                                                                      |                                                                                                                                                                                                                              |
+| Trash                                                                                  | कचरापेटी                                                                                                                               | f. No source. "move to the Trash" → कचरापेटीत हलवा; "put back" परत ठेवा.                                                                                                                                                     |
+| Remove (Yes, remove), Delete my account                                                | काढून टाका (होय, काढून टाका); माझे खाते हटवा                                                                                           | Google ("काढून टाकणे", "हटवा"). "हे पूर्ववत करता येणार नाही."                                                                                                                                                                |
+| guide (Guides)                                                                         | मार्गदर्शिका (मार्गदर्शिका)                                                                                                            | f. Native check. Every link, page title and list. A kiln's manual is "मॅन्युअल"; a maker's or school's guide पुस्तिका, लेख or दस्तऐवज (Pitfalls).                                                                            |
+| the five guides' titles                                                                | साध्या किल्नची फायरिंग; मूलतत्त्वांपासून ग्लेझ; सुरक्षित मिश्रण आणि वायुवीजन; तुमच्या कुटुंबाला विषबाधा होऊ देऊ नका; ग्लेझ कसा बनवायचा | Firing a basic kiln; Glazing from first principles; Safe mixing and ventilation; Don't poison your family; How to make a glaze. No source; Native check. The same in the front matter, `titles`, `list` and every link text. |
+| revoke (Revoke, revoked)                                                               | रद्द करा (रद्द केले) for a token                                                                                                       | Never हटवा for a revoke. Cancel is also रद्द करा in MS; where both appear on one screen, revoke is "प्रवेश रद्द करा". Native check.                                                                                          |
+| sign in, sign out (signed in)                                                          | साइन इन करा, साइन आउट करा (साइन इन केले आहे)                                                                                           | Google ("साइन इन करा", "साइन आउट करा").                                                                                                                                                                                      |
+| device (signed in on a device)                                                         | डिव्हाइस (एखाद्या डिव्हाइसवर साइन इन)                                                                                                  | n. Google ("डिव्हाइस"), MS 2.1.1.                                                                                                                                                                                            |
+| calculator (glaze calculator)                                                          | कॅल्क्युलेटर (सिरॅमिक ग्लेझ कॅल्क्युलेटर)                                                                                              | m. Google suggest ("ceramic glaze calculator"). Never without सिरॅमिक/पॉटरी in a title.                                                                                                                                      |
+| About (the page)                                                                       | माहिती                                                                                                                                 | f.                                                                                                                                                                                                                           |
+| record (a firing, material or other saved record); notes                               | रेकॉर्ड; नोंद (नोंदी)                                                                                                                  | n.; f. "तुमचे स्वतःचे सर्व रेकॉर्ड", "हे रेकॉर्ड वापरा"; the Notes page and notes "नोंदी"; to record "नोंद करणे", "नोंदवणे".                                                                                                 |
+| Error (an error)                                                                       | चूक                                                                                                                                    | f. MS 5.4.1 ("काहीतरी चूक झाली."). "सर्व्हरची चूक", "…आणताना चूक झाली." Never त्रुटी.                                                                                                                                        |
+| AI assistant                                                                           | AI असिस्टंट                                                                                                                            | m. "तुमच्या AI असिस्टंटमधून Glazecalc वापरा".                                                                                                                                                                                |
+| access token; Connected apps                                                           | ॲक्सेस टोकन; कनेक्ट केलेले ॲप्स                                                                                                        | n.; n. pl. MS's ॲक्सेस with ॲ. "ॲक्सेस टोकन रद्द केले".                                                                                                                                                                      |
+| limits, limit set (Analysis and limits)                                                | लिमिट, लिमिट संच                                                                                                                       | n. The app's glaze limits; मर्यादा stays for ordinary and legal limits. "विश्लेषण आणि लिमिट".                                                                                                                                |
+| Solve for a target (button Solve)                                                      | लक्ष्यावरून रेसिपी काढा (रेसिपी काढा)                                                                                                  | The recipe page's feature, in ‘ ’ in running text.                                                                                                                                                                           |
+| upper cone (of a range); No upper cone                                                 | जास्त गरम कोन; जास्त गरम कोन नाही                                                                                                      | m. Never वरचा कोन (Cones).                                                                                                                                                                                                   |
+| guidelines                                                                             | मार्गदर्शक तत्त्वे                                                                                                                     | n. pl. Not मार्गदर्शिका (the app's guides); "a guide, not a prediction" दिशादर्शक.                                                                                                                                           |
+| shed                                                                                   | बाहेरची स्वतंत्र खोली                                                                                                                  | f. Never शेड (the shade of welding glasses).                                                                                                                                                                                 |
 
 ### 2.9 Where the potter works
 
-| English | Marathi | Notes |
-| ------- | ------- | ----- |
+| English                                                                       | Marathi                                                                                                                                                       | Notes                                                                                      |
+| ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
+| Shops in (the label before a list of countries)                               | दुकाने:                                                                                                                                                       | guides: shops.shopsIn                                                                      |
+| raw glaze materials (what a shop sells)                                       | ग्लेझचा कच्चा माल                                                                                                                                             | guides: shops.what.materials (Bhoomi, Clay Station: "Raw Materials").                      |
+| ready-made glazes                                                             | तयार ग्लेझ                                                                                                                                                    | guides: shops.what.glazes (Bhoomi's menu "Glazes").                                        |
+| Packs seen                                                                    | पाहिलेले पॅक                                                                                                                                                  | guides: shops.packs                                                                        |
+| A binding limit.                                                              | कायद्याने बंधनकारक मर्यादा.                                                                                                                                   | guides: silica.kind.binding                                                                |
+| An indicative limit: a guide value, not a legal ceiling.                      | सूचक मर्यादा: दिशादर्शक मूल्य, कायदेशीर कमाल नाही.                                                                                                            | guides: silica.kind.indicative                                                             |
+| An assessment criterion, not a binding limit. (Germany)                       | मूल्यमापनाचा निकष, बंधनकारक मर्यादा नाही.                                                                                                                     | guides: silica.kind.assessment                                                             |
+| A control concentration (管理濃度) … (Japan)                                  | नियंत्रण संहती, जपानीत kanri nōdo (管理濃度): कामाच्या जागेतील हवा तिथल्या मापनांवरून ठरवण्याचे प्रमाण, एखादी व्यक्ती किती श्वासावाटे घेते याची मर्यादा नाही. | guides: silica.kind.control (Hepburn with macrons, the kanji in brackets: see Pitfalls).   |
+| action level (US)                                                             | ॲक्शन लेव्हल                                                                                                                                                  | guides: silica.actionLevel                                                                 |
+| quartz and cristobalite                                                       | क्वार्ट्झ आणि क्रिस्टोबलाइट                                                                                                                                   | guides: silica.both                                                                        |
+| Recommended by {abbr}                                                         | {abbr} ची शिफारस                                                                                                                                              | guides: silica.recommended                                                                 |
+| The national body for safety at work: <link>{name}</link>.                    | कामाच्या ठिकाणच्या सुरक्षेसाठी राष्ट्रीय संस्था: <link>{name}</link>.                                                                                         | guides: silica.agency. India's: DGOSH.                                                     |
+| Kind of piece (food-contact rules)                                            | भांड्याचा प्रकार                                                                                                                                              | guides: food.article                                                                       |
+| pieces that cannot be filled, or no deeper than 25 mm                         | ज्यात काही भरता येत नाही अशी भांडी, किंवा 25 mm पेक्षा जास्त खोल नसलेली                                                                                       | guides: food.category.flat ("पेक्षा जास्त नाही" = at most).                                |
+| Pieces that cannot be filled, or less than 2.5 cm deep                        | ज्यात काही भरता येत नाही अशी भांडी, किंवा 2.5 cm पेक्षा कमी खोल                                                                                               | guides: food.category.jpFlat ("पेक्षा कमी" = less than).                                   |
+| Other pieces under 1.1 L, not for cooking                                     | 1.1 L पेक्षा कमी इतर भांडी, स्वयंपाकासाठी नाहीत                                                                                                               | guides: food.category.jpSmall                                                              |
+| Other pieces from 1.1 L to under 3 L, not for cooking                         | 1.1 L किंवा अधिक आणि 3 L पेक्षा कमी इतर भांडी, स्वयंपाकासाठी नाहीत                                                                                            | guides: food.category.jpLarge                                                              |
+| Other pieces of 3 L or more, not for cooking                                  | 3 L किंवा अधिक इतर भांडी, स्वयंपाकासाठी नाहीत                                                                                                                 | guides: food.category.jpStorage                                                            |
+| other pieces that can be filled                                               | ज्यात काही भरता येते अशी इतर भांडी                                                                                                                            | guides: food.category.fillable                                                             |
+| cooking ware                                                                  | स्वयंपाकाची भांडी                                                                                                                                             | guides: food.category.auCooking, jpCooking, myCooking                                      |
+| The rim of a piece for drinking from: a 2 cm band, inside and out             | पिण्याच्या भांड्याची कड: आत आणि बाहेर 2 cm चा पट्टा                                                                                                           | guides: food.category.rimBand                                                              |
+| Flatware, no deeper than 25 mm (US)                                           | सपाट भांडी, 25 mm पेक्षा जास्त खोल नाहीत                                                                                                                      | guides: food.category.flatware                                                             |
+| Small hollowware, under 1.1 L, other than cups and mugs (US)                  | लहान खोलगट भांडी, 1.1 L पेक्षा कमी, कप आणि मग वगळून                                                                                                           | guides: food.category.smallHollow                                                          |
+| Large hollowware, 1.1 L or more, other than pitchers (US)                     | मोठी खोलगट भांडी, 1.1 L किंवा अधिक, जग वगळून                                                                                                                  | guides: food.category.largeHollow                                                          |
+| average of 6 pieces / any one of 6                                            | 6 भांड्यांची सरासरी / 6 पैकी कोणतेही एक                                                                                                                       | guides: food.judged.average, food.judged.each                                              |
+| A piece passes if it releases no more than the limit: the law says “at most”. | भांडे मर्यादेपेक्षा जास्त धातू सोडत नसेल तर ते उत्तीर्ण होते: कायदा “जास्तीत जास्त” म्हणतो.                                                                   | guides: food.atMost. "जास्तीत जास्त", "पेक्षा जास्त नाही" = at most; "पेक्षा कमी" = under. |
+| Buying in (the label before a list of countries)                              | खरेदी:                                                                                                                                                        | guides: equivalents.buyingIn                                                               |
+| differs by {grams} g per 100 g                                                | प्रत्येक 100 g मागे {grams} g फरक                                                                                                                             | guides: equivalents.apart                                                                  |
+| Directive 84/500/EEC (its official name)                                      | युरोपियन युनियनचा (EU) निर्देश 84/500/EEC                                                                                                                     | regions: no official Marathi text; the number kept. Native check on निर्देश.               |
+| Japan Poison Information Center, Osaka (大阪中毒110番)                        | जपान विष माहिती केंद्र, ओसाका: Ōsaka chūdoku 110-ban (大阪中毒110番)                                                                                          | safety: Japan's lines (Hepburn with macrons, the kanji in brackets).                       |
 
 ### 2.10 Signing in
 
-The words Google, Apple and Microsoft use on their own Marathi help pages (link each): two-step sign-in, authenticator
-app, setup key, QR code, passkey, recovery code, the code from the app, security key, sign in, sign out, account,
-password, trusted device. The English writes "two-step" as a word, so a digit 2 is a figure the check rejects.
+The words Google uses on its Marathi help pages (Microsoft's and Apple's Marathi help pages serve their bodies in
+English), and the choice:
 
-| English | Marathi | Notes |
-| ------- | ------- | ----- |
+| English                                   | Marathi                   | Notes                                                                                                                                                                                                         |
+| ----------------------------------------- | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| two-step sign-in (2-step verification)    | दोन टप्प्यांत साइन इन     | Google: "२-टप्पी पडताळणी" (with a Devanagari digit, as a title) and "२ टप्पी पडताळणी" (body). The English writes "two-step" as a word, so a digit 2 is a figure the check rejects: write "दोन". Native check. |
+| authenticator app                         | ऑथेंटिकेटर ॲप             | n. Google ("Google Authenticator ॲप", "पडताळणी कोड ॲप्स", both typed there with a ZWJ); ॲप with U+0972, never with a ZWJ (Script and spelling). "ऑथेंटिकेटर ॲपमधील कोड".                                      |
+| setup key (the key typed in)              | सेटअप की                  | f. Usage: Google writes "सिक्युरिटी की" (f.); the setup key's own screen was not read. "की कॉपी करा".                                                                                                         |
+| QR code                                   | QR कोड                    | m. Google ("QR कोड स्कॅन करा"), Latin QR as Google writes it.                                                                                                                                                 |
+| passkey                                   | पासकी                     | f. Google ("पासकी तयार करा", "तुमच्या पासकी तपासणे": the same in the plural).                                                                                                                                 |
+| recovery code (backup code)               | रिकव्हरी कोड              | m. Google writes "बॅकअप कोड"; the app's "Recovery code" is "रिकव्हरी कोड" every time, never बॅकअप कोड. Native check.                                                                                          |
+| the code from the app (verification code) | पडताळणी कोड               | m. Google ("पडताळणी कोड", "एक वेळ पडताळणी कोड").                                                                                                                                                              |
+| security key                              | सिक्युरिटी की             | f. Google ("हार्डवेअर सिक्युरिटी की"). Not सुरक्षा की: Google's word kept.                                                                                                                                    |
+| sign in, sign out                         | साइन इन करा, साइन आउट करा | Google ("साइन इन करा", "साइन आउट करा").                                                                                                                                                                       |
+| account                                   | खाते                      | n. Google ("Google खाते", "तुमच्या खात्यामध्ये").                                                                                                                                                             |
+| password                                  | पासवर्ड                   | m. Google ("तुमचा पासवर्ड"), MS.                                                                                                                                                                              |
+| trusted device                            | विश्वसनीय डिव्हाइस        | n. Google ("विश्वसनीय डिव्हाइस"; "या काँप्युटरवर पुन्हा विचारू नका").                                                                                                                                         |
 
 ## 3. Never translated
 
-As in hi.md, from terms.md, unchanged: formulas and symbols (SiO₂, K₂O, R₂O, RO), cone numbers with their leading zeros,
-SK numbers as printed, mesh numbers, units (°C, °F, K, °Bé, g, kg, mg, mL, L, mm, cm, %, mg/m³), codes and standards (N95,
-FFP2, EN 149, JIS R 8101, H-codes, CAS numbers), the names Glazecalc, UMF, Orton and Seger, and kiln and equipment makers
-and products (Skutt, L&L, Bartlett, Kiln-Sitter).
+From terms.md, unchanged:
+
+- **Formulas and symbols:** SiO₂, Al₂O₃, B₂O₃, K₂O, Na₂O, Li₂O, CaO, MgO, BaO, SrO, ZnO, PbO, Fe₂O₃, FeO, Fe₃O₄, TiO₂,
+  ZrO₂, ZrSiO₄, CoO, Co₃O₄, CuO, MnO₂, Cr₂O₃, SnO₂, P₂O₅, V₂O₅, CaCO₃, CO, CO₂ and the rest; R₂O, RO, R₂O₃, RO₂; KNaO;
+  "×10⁻⁶/°C" and "x 10^-7/K".
+- **Cone numbers:** 022 to 42 with their leading zeros (010, 08, 06, 04, 03, 01, 1, 5, 6, 10), SK numbers as printed
+  (SK 022, SK 015a, SK 6a, SK 20), and the "o'clock" bend positions (the words around them change; the clock figure
+  stays).
+- **Mesh numbers:** 50, 60, 80, 100, 120, 200, 325 mesh, -325 mesh, "200#".
+- **Units:** °C, °F, K, °Bé, °C/h, °F/h, g, kg, mg, µg, ml/mL, L, lb, oz, fl oz, %, mm, cm, m³, mg/m³, µg/m³, µg/dL,
+  µg/mL, µg/cm², µm (inches and feet take the language's word: see Numbers and units).
+- **Codes and standards:** N95, P100, FFP2, FFP3, P2, P3, EN 149, EN 140, AS/NZS 1716, HEPA, Class M, ASTM C738, ASTM
+  D-4236, EN 1388, ISO 6486, AS 4371, JIS R 8101, IS 9473 and IS 9806 where the English names them, the numbers of
+  Directives 84/500/EEC and (EU) 2017/2398, CPG Sec. 545.450, 29 CFR 1910.1053, H-codes (H302, H360FD), GHS08, CAS
+  numbers, IARC group numbers.
+- **Names:** Glazecalc; "UMF" as an abbreviation; Seger, Orton (Orton Ceramic Foundation), Staffordshire, Bullers,
+  Holdcroft (Orton and SK in Latin letters; Seger is सेगर in running text, as the Cones subsection says).
+- **Kiln and equipment makers and products:** Skutt (EnviroVent 2, KilnMaster), L&L (DynaTrol), Bartlett, Dawson
+  (Kiln-Sitter, LT-3), Bracker's; controller presets (Slow Bisque, Fast Bisque, Slow Glaze, Fast Glaze, "User 6");
+  Digitalfire schedules (BQ1000, PLC6DS, C6DHSC).
+- **Materials by trade name:** Ferro and Vibrantz frits (3110, 3124, 3134, 3195, 3249), Fusion frits (F-19 and others),
+  Potterycrafts P3124 and P3195, Custer feldspar (Custer Spar), G-200, G-200 EU, G-200 HP, Mahavir, Minspar 200, Kona
+  F-4, Norflux, FFF, Gerstley Borate, Gillespie Borate, Laguna Borate, Portabor, EPK, Grolleg, Eckalite, Eckaglas, TWVA,
+  HVAR, Zircopax, Superpax, Excelopax, Ultrox, Zircosil, Darvan, Volclay, Bentone, Vansil, NYAD, Alberta Slip, Albany
+  slip, Bayferrox, Mason stains, AMACO; Indian shops' codes as printed (CS, G-325, Frit 1005).
+- **Sources, agencies and suppliers:** Glazy, Digitalfire, Ceramic Arts Network, Ceramics Monthly, HSE, OSHA, NIOSH,
+  IARC, ECHA, FDA, CDC, EPA, NHS, COSHH, NEPSI, Safe Work Australia, WorkSafe New Zealand, AIIMS, NPIC, BIS, DGOSH;
+  Laguna, Potclays, Potterycrafts, Valentine Clays, Sibelco, Imerys, Walker Ceramics, Bhoomi, Clay Station and the other
+  suppliers named; the poison services in `safety/en.json`.
+- **Placeholders and tags:** `{name}`, `{count}` and the rest, and `<b>`, `<settings>` and other tags.

@@ -1,214 +1,985 @@
 # ಕನ್ನಡ: style sheet and glossary
 
-**Skeleton.** The rules below are decided; the glossary tables are empty, for the glossary research to fill (wave I1 of
-`scratch/round8/in-langs/plan.md`; the prompt is made by `docs/translations/process/make-glossary-prompts.js kn`, from
-the `kn` entry of `process/wave.js`). Nothing here is translated yet, and Kannada is not offered: `kn` is known to
-`lib/regions` ahead of its files.
+For translating Glazecalc into Kannada (`kn`), in standard written Kannada as Karnataka's schools and press write it, for
+potters in India (region `IN`: Karnataka). Read [README.md](README.md) first; [terms.md](terms.md) gives the meaning of
+every English term below. [hi.md](hi.md) is the model for the shape of this page. Every Kannada message and guide follows
+this page: one Kannada word for one thing. Kannada is not offered yet: `kn` is known to `lib/regions` ahead of its files.
+India fires by Orton cones by default, with temperatures one tap away, and its shops sell Orton cones and label glazes by
+cone, so the Kannada pages must read well with Orton cones and temperatures and say nothing about SK cones that the
+English does not say.
 
-For translating Glazecalc into Kannada (`kn`), for potters in India (region `IN`: Karnataka). Read
-[README.md](README.md) first; [terms.md](terms.md) gives the meaning of every English term below. [hi.md](hi.md) is the
-model for the shape of this page. Every Kannada message and guide follows this page: one Kannada word for one thing.
-India fires by Orton cones by default, with temperatures one tap away, so the Kannada pages must read well with Orton
-cones and temperatures and say nothing about SK cones that the English does not say.
+**The owner's choices** (`scratch/round8/plan.md`), as for Hindi, applied in four tiers; every row says its tier:
 
-**The owner's choices** (`scratch/round8/plan.md`), as for Hindi:
+1. **Craft words** that Indian studio potters say in English (glaze, frit, kiln, bisque, cone, slip, slurry, crazing,
+   pinholing): the loanword in Kannada letters as potters say it (ಗ್ಲೇಜ್, ಫ್ರಿಟ್, ಕಿಲ್ನ್, ಬಿಸ್ಕ್), with the Kannada
+   technical term in brackets at its first use in each guide section (ಗ್ಲೇಜ್ (ಮೆರುಗು), ಕಿಲ್ನ್ (ಆವಿಗೆ)).
+2. **Materials**: the name on the bag. Indian shops sell in English (Clay Station's "CS Potash Feldspar (G-325)", "CS
+   Whiting (G-200)"), so the material is that English name in Kannada letters (ಪೊಟ್ಯಾಷ್ ಫೆಲ್ಡ್ಸ್ಪಾರ್, ವೈಟಿಂಗ್), trade names
+   and grades in Latin letters (Ferro 3134, G-325).
+3. **Chemistry and physics** (oxide, mole, formula, oxidation, thermal expansion, viscosity): the Kannada of the
+   textbooks and the Mysore University encyclopedia (ಆಕ್ಸೈಡ್, ಮೋಲ್, ಸೂತ್ರ, ಉತ್ಕರ್ಷಣ, ಉಷ್ಣ ವ್ಯಾಕೋಚನ, ಸ್ನಿಗ್ಧತೆ), with the potters'
+   loanword first where they use one (ಆಕ್ಸಿಡೇಷನ್ (ಉತ್ಕರ್ಷಣ) for an oxidation firing is tier 1).
+4. **Health, safety and law**: plain Kannada (ಧೂಳು, ವಿಷಕಾರಿ, ಸಿಲಿಕೋಸಿಸ್, ಮೀರದ), so that every reader understands it; a
+   loanword only where Kannada has no plain word (ರೆಸ್ಪಿರೇಟರ್, HEPA).
 
-- **Loanwords first.** The studio potters' English loanwords first, in Kannada letters as potters say them, **with the
-  Kannada technical term in brackets where it differs**. Each row says which tier it is in: (1) craft words potters say in
-  English, (2) materials by the name on the bag, (3) chemistry and physics as the Karnataka textbooks write them, (4)
-  health, safety and law in plain Kannada and the words of the Acts.
-- **The full stop.** A sentence ends with the Latin full stop ".", as Hindi's do.
-- **Digits and grouping.** The translations write 0 to 9 only. CLDR's defaults are the app's: 0 to 9 for Kannada in India
-  (Kannada digits ೧೨೩ under the Digits setting), **with Western grouping (1,234,567.5)**, which is CLDR 48's choice for
-  Kannada alone among the Indian languages and probably Karnataka's usage. A Kannada-speaking potter should confirm it.
-- **`one` covers 0.** In CLDR, Kannada's `one` takes 0 as well as 1 (like Hindi). A plural message's `one` form reads right
-  for 0 and keeps `#`; where the English's `one` has no `#` ("this passkey", "it"), the message gets an `=1` form for
-  exactly one (the i18n check asks for it).
-- **No web font.** The page is drawn in the device's own font (Nirmala UI on Windows, Noto Sans Kannada on Android and
-  Linux, Kannada Sangam MN on Apple). Kannada's letters stack below the line, so its lines are taller (`kn-XG`, the
-  pseudo-locale, tests it at 320 px). **To test on a real iPhone**: Apple lists Kannada Sangam MN as a download on iOS.
+Other decisions already taken: a sentence ends with the Latin full stop "."; the translations write the digits 0 to 9
+only; CLDR's Western grouping for Kannada (1,234,567.5) is accepted, and the translations write only the English's
+figures anyway; Kannada's `one` covers 0, so a message gets `=1` where the English's `one` has no `#`. **No web font**:
+the page is drawn in the device's own font (Nirmala UI on Windows, Noto Sans Kannada on Android and Linux, Kannada
+Sangam MN on Apple). Kannada's letters stack below the line, so its lines are taller (`kn-XG`, the pseudo-locale, tests it
+at 320 px).
 
-**Sources to read**: the Karnataka Textbook Society's Kannada-medium science texts, the Kannada Development Authority's
-glossaries, CSTT, the Kannada Wikipedia, the Microsoft Kannada style guide, and Google's and Apple's Kannada help pages.
-Rows are marked **Usage**, **No source** or **Native check** as in hi.md.
+**What the sources could and could not give.** Kannada has almost nothing written about studio glazes. The Indian shops
+sell in English, and Google's suggestions for India in Kannada (21 October 2026) show that Kannada speakers search for
+cones in English: ಕೋನ್ 6 completes to "cone 6 temperature celsius", "cone 6 glazes", "cone 6 glaze recipes"; ಗ್ಲೇಜ್ and
+ಕಿಲ್ನ್ complete to nothing about pottery; ಪಿಂಗಾಣಿ completes to crockery ("ಪಿಂಗಾಣಿ ಪಾತ್ರೆ", "ಪಿಂಗಾಣಿ ಡಬ್ಬಿ"). The older
+technical Kannada of ceramics is in the **Mysore University encyclopedia** (ಮೈಸೂರು ವಿಶ್ವವಿದ್ಯಾನಿಲಯ ವಿಶ್ವಕೋಶ, on Kannada
+Wikisource): ಕುಂಭಕಲೆ (pottery), ಮೆರುಗು (glaze), ಆವಿಗೆ (kiln), ಪಿಂಗಾಣಿ (porcelain), ಕಲ್ಲುಮಡಕೆ (stoneware), ಮೃದ್ವಸ್ತು
+(earthenware), ತಾಪಧಾರಕ (refractory), ಸರಂಧ್ರ (porous), ಕಾಚೀಕೃತ (vitreous), ಸಾಪೇಕ್ಷ ಸಾಂದ್ರತೆ (relative density). The
+Kannada Wikipedia gives the chemistry (ಉತ್ಕರ್ಷಣ - ಅಪಕರ್ಷಣ, ಸ್ನಿಗ್ಧತೆ, ಉಷ್ಣ ವ್ಯಾಕೋಚನ, ಸೀಸ, ಸಿಲಿಕೋಸಿಸ್). A Kannada business
+guide (IIFL) and a Kannada report from PARI give today's words (ಗ್ಲೇಜ್, ಫೆಲ್ಡ್ಸ್ಪಾರ್, ಕಾಯೋಲಿನ್, ಗೂಡು, ಭಟ್ಟಿ, ಸುಡು). **Not
+reached**: CSTT's Kannada glossaries, the Kannada Development Authority's glossaries and the Karnataka Textbook Society's
+Kannada-medium science books (not found by search; no direct link), the Kannada texts of the OSH Code, the Factories Act
+and the Karnataka Factories Rules (Karnataka's labour site refused the connection; PIB answered 403), BIS's Kannada
+titles of IS 9473 and IS 9806 (none found), any Kannada GHS label text, AIIMS's pages in Kannada (AIIMS has none), Google's
+and Microsoft's Kannada help pages for signing in (served in English), and the text of the Microsoft Kannada style guide
+(downloaded, but its text layer is not machine-readable: only Kannada fragments came out). **The kiln-part, controller,
+firing-log and defect rows rest on the potters' English and on no Kannada source; the law rows rest on standard Kannada
+usage and on no Kannada legal text.**
+
+Main sources, cited below by short name (all read 21 October 2026):
+
+- **Clay Station**: Clay Station, Bengaluru, [flux menu](https://online.claystation.in/collections/flux-menu): "CS
+  Potash Feldspar (G-325)", "CS Soda Feldspar (G-325)", "CS Nepheline Syenite (G-325)", "CS Whiting (G-200)", "CS Dolomite
+  (G-325)", "CS Talc (G1-200)", "CS Zinc Oxide (G-325)", "CS Barium Carbonate (G)", "CS Magnesium Carbonate (G-200)", "CS
+  Tricalcium Phosphate (G-200)", "Lithium Carbonate (G-200)", "CS Strontium Carbonate (G-200)", "Ferro Frit 3134"; menus
+  "Raw Materials" (Clay Minerals, Flux, Opacifier, Silica and Grog, Oxides and Carbonates), "Glazes" (Transparent,
+  Translucent, Shino, Celadon), "Underglazes", "Skutt Kilns", "Kiln Accessories", "Orton Cones", "Firing Services". No
+  Kannada on the site.
+- **Bhoomi**: Bhoomi Pottery's product names as hi.md cites them (read 20 October 2026 by the Hindi research): "Ball Clay 1
+  Kg", "China Clay Kaolin Calcined 1 Kg", "Iron Oxide Red", "Soda Feldspar 1 Kg", "Stains", "Cones Pyrometric".
+- **Mysore Enc.**: ಮೈಸೂರು ವಿಶ್ವವಿದ್ಯಾನಿಲಯ ವಿಶ್ವಕೋಶ on Kannada Wikisource:
+  [ಕುಂಭಕಲಾತಂತ್ರ](https://kn.wikisource.org/wiki/ಮೈಸೂರು_ವಿಶ್ವವಿದ್ಯಾನಿಲಯ_ವಿಶ್ವಕೋಶ/ಕುಂಭಕಲಾತಂತ್ರ) (ceramic technology:
+  "ಕಲ್ಲುಮಡಕೆ ಕುಡಿಕೆಗಳು (ಸ್ಟೋನ್ವೇರ್)", "ಮೃದ್ವಸ್ತುಗಳು", "ಪಿಂಗಾಣಿ ಸಾಮಾನುಗಳು", "ಶ್ವೇತ ಸಾಮಗ್ರಿ (ವೈಟ್ ವೇರ್)", "ಟೆರಕೋಟ", "ಮೂಳೆ ಚೈನ",
+  "ತಾಪಧಾರಕಗಳು (ರಿಫ್ರ್ಯಾಕ್ಟರೀಸ್)", "ಕಾಚೀಕೃತ (ವಿಟ್ರಿಯಸ್)", "ಸರಂಧ್ರತೆಯನ್ನು ಕ್ರಮೇಣ ಕಡಿಮೆಮಾಡುವಿಕೆ (ವಿಟ್ರಿಫಿಕೇಶನ್)", "ಸರಂಧ್ರತಾ ಪರೀಕ್ಷೆ",
+  "ದಗ್ಧ ಉಷ್ಣತೆಯ ವ್ಯಾಪ್ತಿ", "ಸುಡುತ್ತಾರೆ", "ಎರಕ ಹುಯ್ಯುವುದು (ಕ್ಯಾಸ್ಟಿಂಗ್)", "ಸಾಪೇಕ್ಷ ಸಾಂದ್ರತೆ", "ಕುಲುಮೆ");
+  [ಚೀನೀ ಕುಂಭಕಲೆ](https://kn.wikisource.org/wiki/ಮೈಸೂರು_ವಿಶ್ವವಿದ್ಯಾನಿಲಯ_ವಿಶ್ವಕೋಶ/ಚೀನೀ_ಕುಂಭಕಲೆ) ("ಮೆರುಗು ದ್ರವ್ಯ", "ಮೆರಗು
+  ಕೊಡುವಿಕೆ", "ಆವಿಗೆಯಲ್ಲಿ ಬೇಯಿಸಿ", "ಪಿಂಗಾಣಿ ಮೈಕಟ್ಟು", "ಕೆಯೊಲಿನ್", "ಕಬ್ಬಿಣ, ಕೋಬಾಲ್ಟ್ ಅಥವಾ ತಾಮ್ರದ ಆಕ್ಸೈಡ್ಗಳನ್ನು", "ಪಾರದರ್ಶಕ", "ಬೆಂದ
+  ಪಾತ್ರೆ"); [ಫೆಲ್ಡ್ಸ್ಪಾರ್](https://kn.wikisource.org/wiki/ಮೈಸೂರು_ವಿಶ್ವವಿದ್ಯಾನಿಲಯ_ವಿಶ್ವಕೋಶ/ಫೆೆಲ್ಡ್%E2%80%8Cಸ್ಪಾರ್) ("ಪೊಟ್ಯಾಸಿಯಮ್
+  ಫೆಲ್ಡ್ಸ್ಪಾರ್", "ಸೋಡಿಯಮ್ ಫೆಲ್ಡ್ಸ್ಪಾರ್", "ಆಲ್ಬೈಟ್", "ಅರ್ಥೊಕ್ಲೇಸುಗಳು", "ಮೈಕ್ರೊಕ್ಲೀನುಗಳು", "ಅನಾರ್ಥೈಟ್", "ಕುಂಭವಸ್ತುಗಳ ತಯಾರಿಕೆಗೂ
+  ಅವುಗಳಿಗೆ ಮೆರುಗು ಕೊಡುವುದಕ್ಕೂ", "ಹರಳು", "ಖನಿಜ"); full-text search of "ಮೆರುಗು": "ಮೆರುಗೆಣ್ಣೆಗಳು" (varnishes) and "ಜಪಾನ್ ಮೆರುಗು"
+  (lacquer) are other things. (The encyclopedia writes ZWJ and ZWNJ in some of these words; the quotations here drop them, and the link targets
+  encode them; this page's Kannada
+  has none.)
+- **Kn Wikipedia**: the Kannada Wikipedia, read through its search API:
+  [ಆವಿಗೆ](https://kn.wikipedia.org/wiki/ಆವಿಗೆ) ("ಕಿಲ್ನ್ (ಆವಿಗೆ)"; "ಇಂಗ್ಲಿಷಿನಲ್ಲಿ ಕಿಲ್ನ್, ಫರ್ನೆಸ್, ಸ್ಟವ್ ಮತ್ತು ಓವನ್ ಇವನ್ನು ಪರ್ಯಾಯ ಪದಗಳಾಗಿ
+  ಬಳಸುವುದಿದೆ"; "ಓವನ್ (ಅಗ್ಗಿಷ್ಟಿಕೆ)", "ಕುಲುಮೆ"; elsewhere ಆವಿಗೆ is the dative of ಆವಿ, vapour: "ನೀರಿನ ಆವಿಗೆ");
+  [ಪಿಂಗಾಣಿ](https://kn.wikipedia.org/wiki/ಪಿಂಗಾಣಿ) ("ಚೀನೀ ಮಣ್ಣು", "ಆವಿಗೆಯಲ್ಲಿ"); [ಜೇಡಿಮಣ್ಣು](https://kn.wikipedia.org/wiki/ಜೇಡಿಮಣ್ಣು)
+  ("ಆವೆಮಣ್ಣು, ಮೃತ್ತಿಕೆ", "ಮೆತುವಾಗಿರುತ್ತದೆ"); ಉತ್ಕರ್ಷಣ - ಅಪಕರ್ಷಣ; ಸ್ನಿಗ್ಧತೆ; ಸಾಂದ್ರತೆ ("ಸಾಪೇಕ್ಷ ಸಾಂದ್ರತೆ" also called "ವಿಶಿಷ್ಟ ಗುರುತ್ವ",
+  a ratio; minerals: "ಸಾಪೇಕ್ಷ ಸಾಂದ್ರತೆ 2.16"); "ಉಷ್ಣ ವ್ಯಾಕೋಚನ" (aluminium, zirconium); ಸೀಸ ("(Lead)"); ತವರ (tin);
+  ಸಿಲಿಕಾಬೇನೆ ("ಸಿಲಿಕಾ ಕಣಗಳು ಫುಪ್ಫುಸಗಳನ್ನು ಸೇರಿ ಉಂಟುಮಾಡುವ ರೋಗ"), ಕೈಗಾರಿಕಾ ವೈದ್ಯ ("ಕಲ್ಲು ದೂಳು ಶ್ವಾಸಕೋಶ ಸೇರುವ ಸಿಲಿಕೋಸಿಸ್"),
+  [ಆರೋಗ್ಯ ಸುರಕ್ಷಣಾ ಕಾಯಿದೆಗಳು](https://kn.wikipedia.org/wiki/ಆರೋಗ್ಯ_ಸುರಕ್ಷಣಾ_ಕಾಯಿದೆಗಳು) ("ಉದ್ಯೋಗಿಕ ರೋಗಗಳೆಂದು", "ಶ್ವಾಸಕೋಶದ
+  ಸಿಲಿಕಬೇನೆ (ಸಿಲಿಕೋಸಿಸ್)"); "ಬೊರಾಕ್ಸ್", "ಬೋರಿಕ್ ಆಮ್ಲ", "ಕ್ಯಾಲ್ಸಿಯಂ ಕಾರ್ಬೋನೇಟ್", "ಸೀಮೆಸುಣ್ಣ"; ಭಾರತೀಯ ಮಾನಕ ಬ್ಯೂರೋ; ಆರೋಗ್ಯ ಮತ್ತು
+  ಕುಟುಂಬ ಕಲ್ಯಾಣ ಸಚಿವಾಲಯ; "ಅಖಿಲ ಭಾರತ ವೈದ್ಯಕೀಯ ವಿಜ್ಞಾನ ಸಂಸ್ಥೆ (AIIMS)"; ಕಾರ್ಮಿಕ ಕಲ್ಯಾಣ ("ಕಾರ್ಖಾನೆಗಳ ಕಾಯಿದೆ 1948").
+- **IIFL**: IIFL's Kannada guide [ಖುರ್ಜಾದಲ್ಲಿ ಕುಂಬಾರಿಕೆ ವ್ಯವಹಾರವನ್ನು ಹೇಗೆ ಪ್ರಾರಂಭಿಸುವುದು](https://www.iifl.com/kn/blogs/gold-loan/how-to-start-a-pottery-in-khurja-business)
+  (a business guide, partly machine-translated): "ಗ್ಲೇಜ್ ಲೇಪನ", "ಗೂಡು", "ಜೇಡಿಮಣ್ಣು", "ಕುಂಬಾರಿಕೆ", "ಸೆರಾಮಿಕ್", "ಕಚ್ಚಾ ವಸ್ತುಗಳು",
+  "ಫೆಲ್ಡ್ಸ್ಪಾರ್", "ಸ್ಫಟಿಕ ಶಿಲೆ", "ಕಾಯೋಲಿನ್ ಜೇಡಿಮಣ್ಣು", "ಸ್ಲಿಪ್ ಎರಕದ ಅಚ್ಚುಗಳು", "ಧೂಳು ನಿಯಂತ್ರಣ", "ರಕ್ಷಣಾತ್ಮಕ ಮುಖವಾಡಗಳು", "ಮಾರ್ಗದರ್ಶಿ"
+  (guide), and the machine slip "ಗುಂಡಿನ ದಾಳಿ" (gunfire) for firing.
+- **PARI**: People's Archive of Rural India, [Feet of clay: Chhattisgarh's potters locked down](https://ruralindiaonline.org/article/feet-of-clay-chhattisgarhs-potters-locked-down-kn),
+  Kannada translation by Shankar N. Kenchanuru: "ಕುಂಬಾರರು", "ಮಡಕೆ", "ಮಣ್ಣು", "ಭಟ್ಟಿಯಲ್ಲಿ ಸುಡಲು", "ಬಣ್ಣ ಬಳಿಯುವ".
+- **MS**: [Microsoft Kannada Style Guide](https://download.microsoft.com/download/9/6/7/9673794D-A6F0-46F9-B8E0-BFEB6F8B410E/kan-ind-StyleGuide.pdf)
+  (from aka.ms/kannada-styleguide). Its English text could not be extracted; the Kannada examples that came out show
+  commands in the verb stem ("ಉಳಿಸು", "ಮುದ್ರಿಸು", "ರದ್ದುಮಾಡು", "ಹುಡುಕು"), errors as "…ಸಾಧ್ಯವಾಗಲಿಲ್ಲ" and "ದಯವಿಟ್ಟು ಮತ್ತೆ
+  ಪ್ರಯತ್ನಿಸಿ", a case ending set apart after an English loanword ("ಸರ್ವರ್ ನ", "ನೆಟ್ ವರ್ಕ್ ಗೆ", "ಪಾಸ್ ವರ್ಡ್ ಅನ್ನು", "ಟಚ್ ಸ್ಕ್ರೀನ್ ಅನ್ನು"),
+  units "ಕಿಲೋಮೀಟರ್" and "ಅಂಗುಲ" (inch), and the pronouns ಅವನು, ಅವಳು, ಅವರು. Its rules on punctuation could not be read. Its
+  spaced endings after a loanword are not followed (see Choices: Loanwords' endings).
+- **Apple**: Apple's [iPhone User Guide in Kannada](https://support.apple.com/kn-in/guide/iphone/iphf538ea8d0/ios): "Apple
+  ಖಾತೆ", "ಸೈನ್ ಇನ್ ಮಾಡಿ ಮತ್ತು ನಿಮ್ಮ Apple ಖಾತೆಯನ್ನು ನಿರ್ವಹಿಸಿ", "ಎರಡು-ಅಂಶದ ದೃಢೀಕರಣ", "ದೃಢೀಕರಣ ಕೋಡ್ಗಳನ್ನು", "ಭದ್ರತಾ ಕೀಗಳನ್ನು
+  ಬಳಸುವುದು", "QR ಕೋಡ್ ಸ್ಕ್ಯಾನ್ ಮಾಡಿ", "ಪಾಸ್ಕೀಗಳನ್ನು", "ಪಾಸ್ವರ್ಡ್ಸ್", "ಸಾಧನಗಳನ್ನು", "ಖಾತೆಗಳನ್ನು ಸೇರಿಸಿ ಅಥವಾ ತೆಗೆದುಹಾಕಿ",
+  "ಸೆಟ್ಟಿಂಗ್ಸ್ ಅನ್ನು ಹುಡುಕಿ" (Apple writes a ZWNJ in several of these, dropped here; see Script and spelling).
+- **Google**: Google's [Privacy Policy in Kannada](https://policies.google.com/privacy?hl=kn): "Google ಖಾತೆ", "ಸೈನ್ ಇನ್", "ಸೈನ್
+  ಔಟ್", "ಪಾಸ್ವರ್ಡ್", "ಸಾಧನ", "2 ಹಂತದ ಪರಿಶೀಲನೆ", "ಭದ್ರತೆ", "ಸೆಟ್ಟಿಂಗ್ಗಳು", "ನೀವು ನಮ್ಮ ಮೇಲೆ ವಿಶ್ವಾಸವಿರಿಸುತ್ತೀರಿ.", "…ನೀವು ಆಯ್ಕೆ
+  ಮಾಡಿಕೊಳ್ಳಬಹುದು". Google's help pages for [2-Step Verification](https://support.google.com/accounts/answer/185839?hl=kn),
+  [Authenticator](https://support.google.com/accounts/answer/1066447?hl=kn), [backup codes](https://support.google.com/accounts/answer/1187538?hl=kn)
+  and [passkeys](https://support.google.com/accounts/answer/13548313?hl=kn) are not in Kannada ("ನೀವು ವಿನಂತಿಸಿದ ಪುಟವು
+  ಸದ್ಯಕ್ಕೆ ನಿಮ್ಮ ಭಾಷೆಯಲ್ಲಿ ಲಭ್ಯವಿಲ್ಲ."); nor is [Microsoft's](https://support.microsoft.com/kn-in/account-billing/how-to-use-two-step-verification-with-your-microsoft-account-c7910146-672f-01e9-50a0-93b4585e7eb4).
+- **Google suggest**: suggestqueries.google.com with hl=kn and gl=IN, web and YouTube: see Search terms.
+- **CLDR**: Node 24.21's ICU 78.3 (CLDR 48) for `kn`: plural categories `one`, `other` (0, 0.5 and 1 are `one`; 1.5, 2,
+  21 `other`); 1,234,567.5 and 12,500 with Latin digits (numbering system `latn`); 5%; the long date "ಅಕ್ಟೋಬರ್ 14, 2026",
+  "ಅಕ್ಟೋಬರ್ 2026"; 20:00 on the 24-hour clock (the default short time is "08:00 PM"); the month names; the region names
+  (IN ಭಾರತ, US ಯುನೈಟೆಡ್ ಸ್ಟೇಟ್ಸ್, DE ಜರ್ಮನಿ, JP ಜಪಾನ್, HK "ಹಾಂಗ್ ಕಾಂಗ್ ಎಸ್ಎಆರ್ ಚೈನಾ", AU ಆಸ್ಟ್ರೇಲಿಯಾ; GB's name
+  contains a ZWNJ).
+- **IN research**: India's region data in `lib/regions` (safety.js: NPIC at AIIMS, 1800 116 117, 24 hours, toll free;
+  JSS Mysuru's Poison Information Centre for Karnataka, 1800 425 0207; 112; workplace.js: DGOSH, IS 9473:2002; food.js:
+  IS 9806:2001 voluntary).
 
 ## Choices for the owner and a native potter
 
-To be filled by the glossary research, each with a recommendation. Known questions: the kiln word, the genders or classes
-loanwords take, the register of buttons, and the grouping above.
+These are the questions this sheet cannot settle from sources; each has a recommendation, used below until answered.
+
+- **Kiln:** **ಕಿಲ್ನ್**, with (ಆವಿಗೆ) at its first use in each guide section. Every Kannada word has a second sense: ಆವಿಗೆ
+  (Mysore Enc., Kn Wikipedia) is also "to the vapour" (the dative of ಆವಿ); ಗೂಡು (IIFL) is a nest or a hut; ಭಟ್ಟಿ (PARI)
+  is a distillery's still; ಕುಲುಮೆ is a smith's forge or a furnace. A native potter may prefer ಆವಿಗೆ throughout.
+- **Glaze:** **ಗ್ಲೇಜ್**, with (ಮೆರುಗು) at first use per section. ಮೆರುಗು is the encyclopedia's word but in everyday Kannada
+  means shine or polish (Google suggest: "ಮೆರುಗು ಪದದ ಅರ್ಥ", "ಕಾಂತಿ ಮೆರುಗು"), and ಮೆರುಗೆಣ್ಣೆ is varnish.
+- **Specific gravity:** **ವಿಶಿಷ್ಟ ಗುರುತ್ವ**, the literal term, which the Kannada Wikipedia gives as the other name of
+  ಸಾಪೇಕ್ಷ ಸಾಂದ್ರತೆ (relative density, a ratio without units). It keeps ಸಾಂದ್ರತೆ, which is density in g/cm³ and also a
+  concentration, out of the glaze's thickness: the setting "Glaze density" is **ಗ್ಲೇಜಿನ ದಟ್ಟತೆ**. Native check.
+- **Porcelain and ಪಿಂಗಾಣಿ:** porcelain is **ಪೋರ್ಸಿಲೇನ್ (ಪಿಂಗಾಣಿ)**. In everyday Kannada ಪಿಂಗಾಣಿ is any glazed crockery
+  (ಪಿಂಗಾಣಿ ಪಾತ್ರೆ), so it never stands alone for porcelain, and never for "ceramics" in the app's sense.
+- **Buttons:** the polite imperative in -ಇ (ಉಳಿಸಿ, ಮುದ್ರಿಸಿ, ಹೋಲಿಸಿ), as Apple's and Google's Kannada write their links and
+  steps ("ಸೈನ್ ಇನ್ ಮಾಡಿ", "QR ಕೋಡ್ ಸ್ಕ್ಯಾನ್ ಮಾಡಿ"). Microsoft's Kannada uses the bare stem (ಉಳಿಸು, ಮುದ್ರಿಸು), which is the
+  ನೀನು form when read as an imperative; it is not used.
+- **Loanwords' endings:** a loanword ending in a consonant takes Kannada endings through the vowel ಉ, as Kannada adapts
+  English (ಬಸ್ → ಬಸ್ಸು): ಗ್ಲೇಜುಗಳು, ಗ್ಲೇಜನ್ನು, ಗ್ಲೇಜಿನ; ಕಿಲ್ನಿನಲ್ಲಿ; ಕೋನುಗಳು; ಫ್ರಿಟ್ಟುಗಳು, ಫ್ರಿಟ್ಟಿನ. Never a ZWNJ before the ending
+  (as Google and Apple write "settings"), which the check rejects. **Never a spaced ending** after a Kannada-letter loanword
+  (not "ಟ್ರಯಲ್ ನಲ್ಲಿ", "ಕಿಲ್ನ್ ಅನ್ನು", "ಸಿಟ್ಟರ್ ಅನ್ನು", as MS writes them): ಟ್ರಯಲಿನಲ್ಲಿ, ಟೋಕನುಗಳು, ಕಿಲ್ನನ್ನು, ಸಿಟ್ಟರನ್ನು,
+  ಕಂಟ್ರೋಲರನ್ನು, ಬಕೆಟ್ಟನ್ನು, ಪ್ಲಾಸ್ಟಿಕ್ಕನ್ನು, ಕ್ಲಾವನ್ನು (the app-parts review and the consistency pass made every file
+  follow it). With a bracketed term the ending goes on the loanword, before the bracket: ಕಿಲ್ನಿನ (ಆವಿಗೆಯ), ಗ್ಲೇಜನ್ನು (ಮೆರುಗು),
+  ವೇಟನ್ನು (ತೂಕ). A spaced ending is right only after Latin letters, a figure or a placeholder ("Ferro 3134 ನಲ್ಲಿ", "{name} ನ",
+  "Low (ಕಡಿಮೆ) ನಿಂದ"); a two-word loanword such as ಸೈನ್ ಇನ್ takes no ending ("ಎರಡು ಹಂತದ ಸೈನ್ ಇನ್ ಆಫ್ ಮಾಡಿ"). Native check, ಫ್ರಿಟ್ಟು
+  first.
+- **Grouping:** CLDR 48 groups Kannada numbers the Western way (1,234,567.5), alone among the Indian languages; the
+  owner accepted it, and the translations write only the English's figures.
+- **Guide and manual:** the app's guides are **ಮಾರ್ಗದರ್ಶಿ** (IIFL's title word), a kiln's manual **ಕೈಪಿಡಿ**. Never the
+  same word; ಗೈಡ್ ಕೋನ್ is a cone's name.
+- **Lead and ಸೀಸೆ:** lead is **ಸೀಸ** (Kn Wikipedia); **ಸೀಸೆ** is a bottle. Check every one.
+- **Poison line:** AIIMS's National Poisons Information Centre (1800 116 117) is verified (IN research). AIIMS has no
+  Kannada pages, so the name stays as published, in English, with a Kannada description once: "ವಿಷ ಮಾಹಿತಿ ಕೇಂದ್ರ".
+- **Soluble and melting** (settled by the reviews, 2.7): soluble **ದ್ರಾವ್ಯ**, insoluble **ಅದ್ರಾವ್ಯ**, solubility **ದ್ರಾವ್ಯತೆ**,
+  dissolve **ವಿಲೀನವಾಗು**, melt **ಕರಗು**. Everyday Kannada says ಕರಗು for both; the safety text keeps them apart, because a
+  "low-solubility" frit is not a "low-melting" one. Native check that ದ್ರಾವ್ಯ and ವಿಲೀನವಾಗು read plainly to a potter.
+- **Clay:** **ಜೇಡಿಮಣ್ಣು** for clay in general, ಕ್ಲೇ in names and the materials category (2.3). Native check.
+- **Unity formula in the guides:** "ಯೂನಿಟಿ ಅಣು ಸೂತ್ರ" where the English names the unity molecular formula beside the Seger
+  formula; the app says ಸೆಗರ್ ಸೂತ್ರ. Native check.
+- **Kiln dial labels** stay in Latin (Off, Low, Medium, High) with a Kannada gloss at first use, as Indian kilns print them.
+  Native check.
+- **Studio potter:** ಕುಂಬಾರರು or ಪಾಟರ್ (Gender-neutral wording); ಲಕ್ವ (ಪಾರ್ಶ್ವವಾಯು) for paralysis. Native check.
 
 ## 1. Style sheet
 
 ### Register
 
-ನೀವು, never ನೀನು, in the interface, errors, notices, emails, the safety text and the guides alike. Buttons, menus and tabs
-as Kannada software writes them (the Microsoft Kannada style guide, Google and Apple); headings as noun phrases. Keep
-"must", "should" and "may" (a hedge that must survive) apart, and "must be tested" means the test is done, not passed.
-_To be filled: examples of a button, an error, a notice and a guide sentence._
+**ನೀವು**, with its verb forms, in the interface, errors, notices, emails, the safety text and the guides alike; never
+ನೀನು and its forms (ಮಾಡು, ನೋಡು as a command). Google's Kannada addresses the reader so ("ನೀವು ನಮ್ಮ ಮೇಲೆ
+ವಿಶ್ವಾಸವಿರಿಸುತ್ತೀರಿ.", "ನೀವು ಆಯ್ಕೆ ಮಾಡಿಕೊಳ್ಳಬಹುದು"), and Apple's and Google's steps use the polite imperative in -ಇ. Plain
+everyday words rather than Sanskrit ones where both exist: ಆಯ್ಕೆ ಮಾಡಿ, ಬದಲಿಸಿ, ನೋಡಿ, ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ. "ದಯವಿಟ್ಟು" (please) only
+where the English says please.
+
+- **Button:** "ಉಳಿಸಿ" (Save), "ಹೋಲಿಸಿ" (Compare), "ತೆಗೆದುಹಾಕಿ" (Remove, as Apple writes it).
+- **Error:** the computer never speaks in the first person; "ಸಾಧ್ಯವಾಗಲಿಲ್ಲ" as MS writes it: "ರೆಸಿಪಿಯನ್ನು ಉಳಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ.
+  ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.", "ಈ ಫೈಲನ್ನು ಓದಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ."
+- **Notice:** a plain statement: "ಈ ಪುಟವನ್ನು AI ಅನುವಾದಿಸಿದೆ. ಇಂಗ್ಲಿಷ್ ಪುಟವನ್ನು ಓದಲು ಇಲ್ಲಿ ನೋಡಿ."
+- **Guide sentence:** an impersonal statement or the -ಇ imperative: "ಗ್ಲೇಜನ್ನು 80 ಮೆಶ್ ಜರಡಿಯಲ್ಲಿ ಎರಡು ಬಾರಿ ಸೋಸಿ.",
+  "ಸಾಮಗ್ರಿಗಳನ್ನು ತೂಕ ಮಾಡುವಾಗ ರೆಸ್ಪಿರೇಟರ್ ಧರಿಸಿ.", "ಗ್ಲೇಜ್ ತುಂಬಾ ದಪ್ಪವಿದ್ದರೆ ಫೈರಿಂಗಿನಲ್ಲಿ ಹರಿದುಹೋಗುತ್ತದೆ."
+- **Should, must, may** stay apart, as the English has them. Kannada's -ಬೇಕು alone covers both "should" and "must", so the
+  emphatic -ಏ marks "must":
+  - "must" → **-ಲೇಬೇಕು** ("ಪರೀಕ್ಷಿಸಲೇಬೇಕು") or **ಅಗತ್ಯ**; a legal duty ("shall", "is required") → **ಕಡ್ಡಾಯ**. "must not" →
+    **-ಲೇಬಾರದು** ("ಒಣ ಪೊರಕೆಯಿಂದ ಗುಡಿಸಲೇಬಾರದು"); in a short step **-ಬೇಡಿ** ("ಒಣಗಿ ಗುಡಿಸಬೇಡಿ") where the English's "don't" is an
+    instruction.
+  - "should" → **-ಬೇಕು** ("ಮಾಸ್ಕ್ ಧರಿಸಬೇಕು") or **-ವುದು ಸೂಕ್ತ** ("ಮಾಸ್ಕ್ ಧರಿಸುವುದು ಸೂಕ್ತ"); "should not" → **-ಬಾರದು**. Never
+    -ಲೇಬೇಕು or ಕಡ್ಡಾಯ for "should", never ಸೂಕ್ತ for "must".
+  - "may" (a hazard, a hedge that must survive) → **-ಬಹುದು** ("ಕ್ಯಾನ್ಸರ್ ಉಂಟುಮಾಡಬಹುದು", "ಇದರಲ್ಲಿ ಕೆಲವು ಪ್ರಮಾಣದ ಸೂಕ್ಷ್ಮ ಕ್ವಾರ್ಟ್ಜ್
+    ಇರಬಹುದು"); "may" (permission) → **-ಬಹುದು** with ನೀವು ("ನೀವು … ಬಳಸಬಹುದು"). The hedge is never dropped to a plain
+    statement.
+  - "must be tested" → **ಪರೀಕ್ಷಿಸಲೇಬೇಕು** / **ಪರೀಕ್ಷೆ ಮಾಡಿಸಲೇಬೇಕು**: the test is done, not passed; never "ಪರೀಕ್ಷೆಯಲ್ಲಿ
+    ಉತ್ತೀರ್ಣವಾಗಬೇಕು".
+  - "some" (some fine quartz) → **ಕೆಲವು ಪ್ರಮಾಣದ** or **ಕೆಲವು**, never **ಸ್ವಲ್ಪ** (a little). "never" → **ಎಂದಿಗೂ … ಬೇಡ /
+    ಎಂದಿಗೂ … ಇಲ್ಲ** only where the English says never; no ಯಾವಾಗಲೂ, ಖಂಡಿತ or ಸಂಪೂರ್ಣವಾಗಿ the English lacks.
+  - The other hedges survive too (the reviews restored each one): "mainly" → **ಮುಖ್ಯವಾಗಿ**, never ಮಾತ್ರ (only); "tend to" →
+    **…ವ ಪ್ರವೃತ್ತಿ ಇದೆ**; "as much as four times" → **ನಾಲ್ಕು ಪಟ್ಟಿನಷ್ಟು**; "part way" → **ಭಾಗಶಃ**, not ಅರ್ಧ; "about", "usually",
+    "often" → **ಸುಮಾರು**, **ಸಾಮಾನ್ಯವಾಗಿ**, **ಹೆಚ್ಚಾಗಿ**; "can" (a possibility) → **-ಬಹುದು**. "only" is ಮಾತ್ರ only where the
+    English says only.
+  - **"unless … or …"** keeps the "or": the US decorative-ware rule (a label and a notice, or a hole) once read "and". Check every
+    unless, or, not and without in a safety sentence against the English.
+  - **"have it tested", "should be tested"** (by a laboratory) → **ಪರೀಕ್ಷೆ ಮಾಡಿಸಿ**, **ಪರೀಕ್ಷೆ ಮಾಡಿಸಬೇಕು**: someone else does the
+    test; ಪರೀಕ್ಷಿಸಿ is a test you do yourself (a test tile).
 
 ### Buttons, menus, headings, labels and tabs
 
-_To be filled._
+- **Buttons and menu commands:** the -ಇ imperative, short, the verb last: ಉಳಿಸಿ, ಮುದ್ರಿಸಿ, ಹೋಲಿಸಿ, ತೆಗೆದುಹಾಕಿ, ರದ್ದುಮಾಡಿ,
+  ಸಾಮಗ್ರಿ ಸೇರಿಸಿ. A loanword verb takes ಮಾಡಿ: ಸ್ಕ್ಯಾನ್ ಮಾಡಿ, ಸೈನ್ ಇನ್ ಮಾಡಿ (Apple). Not "ದಯವಿಟ್ಟು ಉಳಿಸಿ", not the stem ಉಳಿಸು.
+- **Headings, tabs, page titles:** a noun phrase: "ರೆಸಿಪಿಗಳು", "ಸೆಟ್ಟಿಂಗ್ಸ್", "ಫೈರಿಂಗ್ ಲಾಗ್", "ಕೋನುಗಳು ಮತ್ತು ಹೀಟ್ವರ್ಕ್". A
+  heading that names an activity takes the verbal noun in -ವುದು: "Mixing the glaze" → "ಗ್ಲೇಜ್ ಮಿಶ್ರಣ ಮಾಡುವುದು", "Typing
+  amounts" → "ಪ್ರಮಾಣಗಳನ್ನು ಟೈಪ್ ಮಾಡುವುದು" (as Apple: "ಭದ್ರತಾ ಕೀಗಳನ್ನು ಬಳಸುವುದು"). A question stays one: "ಗ್ಲೇಜ್ ಏಕೆ ಹರಿಯುತ್ತದೆ?"
+- **Field labels:** a noun; the colon where the English has one, no space before it: "ಸಾಮಗ್ರಿಯ ಹೆಸರು:".
+- **Confirmations:** the impersonal passive in -ಲಾಗಿದೆ, which agrees with nothing: "Saved: {name}" → "ಉಳಿಸಲಾಗಿದೆ:
+  {name}"; "Removed" → "ತೆಗೆದುಹಾಕಲಾಗಿದೆ".
+- **Progress:** "Saving…" → "ಉಳಿಸಲಾಗುತ್ತಿದೆ…".
+- **Settings** as a page or tab is "ಸೆಟ್ಟಿಂಗ್ಸ್" (Apple); in running text "ಸೆಟ್ಟಿಂಗ್ಸ್" too.
 
 ### Capitalisation
 
-Kannada has no capitals. Latin words inside Kannada text keep the English's case where they are names, codes, units or
-formulas (Orton, SK, UMF, LOI, Ferro 3134, mg/m³, SiO₂). An English loanword is written in Kannada letters, never in Latin
-ones, unless it is a trade name, a company or brand, a code or a unit.
+Kannada has no capitals; the English's Title Case and sentence case go with the English words. Latin words inside Kannada
+text keep the English's case where they are names, codes, units or formulas (Orton, SK, UMF, LOI, Ferro 3134, N95,
+mg/m³, SiO₂), with a space on each side ("Orton ಕೋನ್ 6", "Ferro 3134 ನಲ್ಲಿ"). An English loanword is written in Kannada
+letters (ಗ್ಲೇಜ್, ಫ್ರಿಟ್, ಕಿಲ್ನ್), never in Latin ones, unless it is a trade name, a trademark (Kiln-Sitter, Zircopax), a
+company or brand (Google, Apple, Skutt), a code or a unit. Apple and Google keep their own names in Latin letters ("Apple
+ಖಾತೆ", "Google ಖಾತೆ"), and so does this page.
 
 ### Script and spelling
 
-- Kannada letters as the Karnataka standard writes them, with the virama (್) and the stacked conjuncts.
-- **Normalisation and joiners.** Every file is in Unicode form NFC, with no ZWJ or ZWNJ (the i18n check asks for both),
-  and only Kannada and Latin letters (the script check).
+- **Kannada letters as Karnataka's schools and press write them**, with the virama (್) at the end of a loanword (ಗ್ಲೇಜ್,
+  ಕಿಲ್ನ್, ಕೋನ್) and the stacked conjuncts inside a word (ಫೆಲ್ಡ್ಸ್ಪಾರ್, ಕ್ವಾರ್ಟ್ಜ್, ಸ್ಪ್ರೇ). The reph is written as the
+  conjunct gives it (ಸರ್ಕ್ಯೂಟ್, ಕ್ಯಾನ್ಸರ್ಕಾರಕ).
+- **No ZWJ and no ZWNJ** (the i18n check rejects both for Kannada; every file is NFC). Google and Apple write a ZWNJ after the virama
+  to keep ಸ್ and ವ apart in "password", ಗ್ and ಗಳು apart in "settings", ಸ್ and ಕೀ apart in "passkey", and the Mysore
+  encyclopedia a ZWJ in "feldspar" and "oxides"; every quotation of them on this page has the joiner taken out, and the
+  translations write none. Inside a word, write the conjunct (ಪಾಸ್ವರ್ಡ್, ಪಾಸ್ಕೀ, ಫೆಲ್ಡ್ಸ್ಪಾರ್, as IIFL writes it);
+  before an ending, use the ಉ link (ಗ್ಲೇಜುಗಳು, ಸೆಟ್ಟಿಂಗುಗಳು) or the English plural Apple uses (ಸೆಟ್ಟಿಂಗ್ಸ್); between two words, a
+  space (ಸೈನ್ ಇನ್). A browser's own region name may contain a ZWNJ (CLDR's name for the United Kingdom): that is the value
+  of `{region}` at run time, never typed into a translation.
+- **Spellings of chemical names:** the -ಯಂ ending (ಕ್ಯಾಲ್ಸಿಯಂ, ಸೋಡಿಯಂ, ಲಿಥಿಯಂ, ಟೈಟಾನಿಯಂ), as Kannada school books and the
+  press write it; the Kannada Wikipedia's -ಯಮ್ (ಕ್ಯಾಲ್ಸಿಯಮ್) is not used. ಆಕ್ಸೈಡ್, ಕಾರ್ಬೊನೇಟ್, ಸಿಲಿಕೇಟ್.
+- **Long vowels for the English long sounds**: ಗ್ಲೇಜ್ (ē), ಕೋನ್ (ō), ಕ್ಲೇ, ಸ್ಟೋನ್ವೇರ್; ಆ with ್ಯಾ for the English a of "cat"
+  (ಮ್ಯಾಟ್, ಬ್ಯಾಚ್, ಸ್ಯಾಟಿನ್, ಕ್ಯಾಲ್ಸೈನ್ಡ್).
 - **Latin text** inside Kannada: units, formulas, trade names, codes and cone numbers exactly as the English writes them,
-  with a space on each side where the English has one.
+  with a space on each side where the English has one (10 g, 1222 °C, Ferro 3134, Orton ಕೋನ್ 6, SiO₂).
 - **Digits** are 0 to 9 only (see Numbers and units).
 
 ### Punctuation
 
-- The full stop "." ends a sentence, with no space before it and one after. A heading, a button and a list item that is
-  not a sentence end with nothing.
-- Comma, question mark, colon, semicolon as in English, no space before them. No "!" in the app's own voice.
-- Quotation marks, parentheses, dashes and the ellipsis: _to be filled_ (Microsoft's Kannada style guide).
+- **The full stop "."** ends a sentence (Google: "…ಲಭ್ಯವಿಲ್ಲ."), with no space before it and one after. A heading, a
+  button and a list item that is not a sentence end with nothing. Never the danda "।".
+- **Comma, question mark, colon, semicolon, exclamation mark** as in English, no space before them. No "!" in the app's own
+  voice.
+- **Quotation marks:** “ ” for quotations and for a word quoted (“ಬೋರಾನ್ ಬ್ಲೂ”), ‘ ’ inside them. **UI names in running
+  text** (buttons, tabs, settings) in single curly quotes: "‘ಹೋಲಿಸಿ’ ಆಯ್ಕೆ ಮಾಡಿ". Never the straight ' around a name: before
+  `{`, `}` or `#` ICU reads it as a quote (README).
+- **Parentheses** as English, no space inside them.
+- **Dashes:** the en dash for ranges with no spaces (10–60%, ಕೋನ್ 06–04); no em dash: a comma, a colon or a new sentence
+  instead. A hyphen in compounds as the English has it (ಡ್ರಾಪ್-ಅಂಡ್-ಹೋಲ್ಡ್, ಲೆದರ್-ಹಾರ್ಡ್), and as Apple writes "ಎರಡು-ಅಂಶದ".
+- **Ellipsis** "…" where the English has one.
+- (MS's punctuation section could not be read; these rules follow hi.md and Google's and Apple's practice.)
 
 ### Numbers and units
 
-- **The digits 0 to 9** wherever the English has digits, never Kannada digits (೧ ೨ ೩), which the numbers check does not read.
-- **The decimal point and the English's figures** as the English writes them: 1.5; 0.025; 12,500; 1222 °C and 1000 g
-  ungrouped. Never ಲಕ್ಷ or ಕೋಟಿ for a figure.
-- **Percent** 5%, no space; a range 10–60%. **Units**: the English's symbols in Latin letters (g, kg, mg, mL, L, mm, cm, °C, °F,
-  °Bé, mg/m³); inches and feet as Kannada words with the metric figure in brackets as the English gives it.
-- **A number the English writes as a word** stays a word, since a digit would be a figure the English lacks.
-- **Dates**: the month named beside the year, the Gregorian calendar, never a Shaka year. CLDR writes Kannada's long date
-  with the month first ("ಅಕ್ಟೋಬರ್ 14, 2026"): _to be checked against the sources_. Month names: _to be filled_.
-- **Clock times**: the 24-hour clock, 20:00, never ಬೆಳಿಗ್ಗೆ, ಮಧ್ಯಾಹ್ನ, ಸಂಜೆ or ರಾತ್ರಿ with a 12-hour figure (ರಾತ್ರಿ 8
-  ಗಂಟೆಗೆ), which the check would read as 8.
-- **No figures the English lacks**: no Kannada digits, no ಲಕ್ಷ or ಕೋಟಿ, no Shaka years, no SK or Orton equivalents, no
-  converted units, no IS numbers where the English names none.
+- **The digits 0 to 9** wherever the English has digits (the international form of Indian numerals; CLDR's `kn` uses
+  them, numbering system `latn`). Never Kannada digits (೧ ೨ ೩), which the numbers check does not read, never
+  spelled-out figures where the English has digits.
+- **The decimal point and the English's figures as the English writes them:** 1.5; 0.025; 12,500; 1222 °C and 1000 g
+  ungrouped. The app formats numbers itself; a translation writes only the English's figures, never ಲಕ್ಷ or ಕೋಟಿ for one
+  ("12,500" stays 12,500, never "ಹನ್ನೆರಡು ಸಾವಿರದ ಐನೂರು").
+- **Percent:** 5%, no space (CLDR); a range 10–60%. "percent" in a sentence is ಶೇಕಡಾ only where the English spells out
+  "percent" ("ಶೇಕಡಾ 5" is not used for "5%").
+- **Units:** the English's symbols in Latin letters, with the English's spacing: g, kg, mg, µg, mL, L, mm, cm, °C, °F, °Bé,
+  %, mg/m³, µg/cm²; never ಗ್ರಾಂ, ಕೆ.ಜಿ., ಸೆಂ.ಮೀ. or ಸೆ for the symbol (the numbers check does not read them). The unit's name
+  in running text where the English spells it ("grams" → ಗ್ರಾಂ). Inches and feet are the words **ಇಂಚು** and **ಅಡಿ**, with the
+  metric figure in brackets as the English gives it: "12 ಇಂಚು (30 cm)". (MS's ಅಂಗುಲ is the older word; ಇಂಚು is today's.)
+- **Endings after a figure:** Kannada attaches the -ರ forms to any numeral, whatever its sound: "1948ರ", "6ರವರೆಗೆ",
+  "10ರಷ್ಟು", "9:00ರಿಂದ 17:00ರವರೆಗೆ". After a figure with a unit, set the ending apart or use a word: "2.5 cm ಗಿಂತ ಕಡಿಮೆ", "25 mm
+  ಮೀರದ".
+- **A number the English writes as a word** ("two coats", "three tiles", "once", "one number hotter") stays a word, since
+  a digit would be a figure the English lacks and the check rejects it: "ಎರಡು ಪದರಗಳು", "ಮೂರು ಟೈಲುಗಳು", "ಒಂದು ಬಾರಿ", "ಒಂದು
+  ಸಂಖ್ಯೆ ಹೆಚ್ಚು ಬಿಸಿ". Where the English has the digit, the digit stays: "3 coats" → "3 ಪದರಗಳು".
+- **Dates:** "14 ಅಕ್ಟೋಬರ್ 2026", "ಅಕ್ಟೋಬರ್ 2026": the day, the month named beside the year, the Gregorian calendar, never a
+  Shaka or Kannada-calendar (ಚಾಂದ್ರಮಾನ) year. CLDR's own long form is "ಅಕ್ಟೋಬರ್ 14, 2026"; the app formats the dates it
+  prints, so this rule is for dates written in a sentence. The month names are CLDR's: ಜನವರಿ, ಫೆಬ್ರವರಿ, ಮಾರ್ಚ್, ಏಪ್ರಿಲ್, ಮೇ,
+  ಜೂನ್, ಜುಲೈ, ಆಗಸ್ಟ್, ಸೆಪ್ಟೆಂಬರ್, ಅಕ್ಟೋಬರ್, ನವೆಂಬರ್, ಡಿಸೆಂಬರ್.
+- **Clock times:** the 24-hour clock, **20:00**, with ಗಂಟೆ or the -ರ ending if the sentence needs it ("20:00ರವರೆಗೆ").
+  "8am to 8pm" → "8:00ರಿಂದ 20:00ರವರೆಗೆ"; "Monday to Friday 9:00 to 17:00" → "ಸೋಮವಾರದಿಂದ ಶುಕ್ರವಾರ 9:00ರಿಂದ 17:00ರವರೆಗೆ". Never
+  ಬೆಳಿಗ್ಗೆ, ಮಧ್ಯಾಹ್ನ, ಸಂಜೆ or ರಾತ್ರಿ with a 12-hour figure ("ರಾತ್ರಿ 8 ಗಂಟೆಗೆ"), which the check reads as 8, and never AM or PM.
+  "24 hours" → "24 ಗಂಟೆಗಳು"; "24/7" → "24/7" or "ದಿನದ 24 ಗಂಟೆ, ವಾರದ 7 ದಿನ" (both figures kept).
+- **No figures the English lacks:** no Kannada digits, no ಲಕ್ಷ or ಕೋಟಿ, no Shaka years, no SK or Orton equivalents, no
+  converted units, no IS numbers (IS 9473, IS 9806) where the English names none.
 
 ### Plural forms
 
-CLDR gives Kannada two cardinal categories, `one` and `other`, and **`one` covers 0 and 1** (and fractions below 1): 0 and
-1 are `one`, 2 and 1.5 are `other`. Every plural message has both forms, and `=0 {…}` stays where the English has it. The
-`one` form reads right for 0 as well as 1, so it keeps `#`. Where the English's `one` has no `#`, add an `=1` form for
-exactly one: `{count, plural, =1 {This passkey} one {# passkey} other {These # passkeys}}`. _To be filled: the noun in each
-form for the app's nouns (material, coat, recipe, tile, glaze, frit, cone, hour, minute, day, passkey)._
+CLDR gives Kannada two cardinal categories (ICU 78.3: `[ 'one', 'other' ]`). **`one` covers 0 and 1, and fractions below
+1** (`i = 0 or n = 1`): 0, 0.5 and 1 are `one`; 1.5, 2 and 21 are `other`. Kannada has no ordinal categories but `other`.
+
+| Category | Numbers              | Example                                                                                |
+| -------- | -------------------- | -------------------------------------------------------------------------------------- |
+| `one`    | 0, 1, 0.5 (i = 0)    | 0 ಸಾಮಗ್ರಿ, 1 ಸಾಮಗ್ರಿ, 1 ಪದರ, 1 ರೆಸಿಪಿ, 1 ಗ್ಲೇಜ್, 0.5 g                                 |
+| `other`  | 1.5, 2, 3, 21, 100 … | 2 ಸಾಮಗ್ರಿಗಳು, 3 ಪದರಗಳು, 21 ರೆಸಿಪಿಗಳು, 2 ಟೈಲುಗಳು, 5 ಗ್ಲೇಜುಗಳು, 3 ಫ್ರಿಟ್ಟುಗಳು, 2 ಕೋನುಗಳು |
+
+Every plural message has both forms, and `=0 {…}` stays where the English has it:
+`{count, plural, one {# material} other {# materials}}` → `{count, plural, one {# ಸಾಮಗ್ರಿ} other {# ಸಾಮಗ್ರಿಗಳು}}`. The
+`one` form must read right for 0 as well as 1 ("0 ಸಾಮಗ್ರಿ" is good Kannada), so it keeps `#` and never says ಒಂದು for the
+number. **Where the English's `one` has no `#`** ("this passkey", "it"), add an `=1` form for exactly one and keep a `one`
+form with `#` (the check asks for it):
+`{count, plural, =1 {ಈ ಪಾಸ್ಕೀ} one {# ಪಾಸ್ಕೀ} other {ಈ # ಪಾಸ್ಕೀಗಳು}}`.
+
+How the noun takes the number: after a figure Kannada writes the plural noun with ಗಳು (as Google and Apple write
+"ಖಾತೆಗಳನ್ನು", "ಸಾಧನಗಳನ್ನು"); the case ending follows ಗಳು. All these nouns are neuter (Kannada marks gender only for people),
+so a finite verb takes the neuter forms: singular -ಇದೆ / -ತ್ತದೆ, plural -ಇವೆ / -ತ್ತವೆ.
+
+| Noun                     | `one`     | `other`       | `other`, with an ending |
+| ------------------------ | --------- | ------------- | ----------------------- |
+| ಸಾಮಗ್ರಿ (material)       | # ಸಾಮಗ್ರಿ | # ಸಾಮಗ್ರಿಗಳು  | # ಸಾಮಗ್ರಿಗಳಲ್ಲಿ         |
+| ಪದರ (coat)               | # ಪದರ     | # ಪದರಗಳು      | # ಪದರಗಳಲ್ಲಿ             |
+| ರೆಸಿಪಿ (recipe)          | # ರೆಸಿಪಿ  | # ರೆಸಿಪಿಗಳು   | # ರೆಸಿಪಿಗಳನ್ನು          |
+| ಟೈಲ್ (tile)              | # ಟೈಲ್    | # ಟೈಲುಗಳು     | # ಟೈಲುಗಳ ಮೇಲೆ           |
+| ಗ್ಲೇಜ್ (glaze)           | # ಗ್ಲೇಜ್  | # ಗ್ಲೇಜುಗಳು   | # ಗ್ಲೇಜುಗಳಲ್ಲಿ          |
+| ಫ್ರಿಟ್ (frit)            | # ಫ್ರಿಟ್  | # ಫ್ರಿಟ್ಟುಗಳು | # ಫ್ರಿಟ್ಟುಗಳಲ್ಲಿ        |
+| ಕೋನ್ (cone)              | # ಕೋನ್    | # ಕೋನುಗಳು     | # ಕೋನುಗಳಿಂದ             |
+| ಫೈರಿಂಗ್ (firing)         | # ಫೈರಿಂಗ್ | # ಫೈರಿಂಗುಗಳು  | # ಫೈರಿಂಗುಗಳಲ್ಲಿ         |
+| ಗಂಟೆ (hour)              | # ಗಂಟೆ    | # ಗಂಟೆಗಳು     | # ಗಂಟೆಗಳಲ್ಲಿ            |
+| ನಿಮಿಷ, ದಿನ (minute, day) | # ನಿಮಿಷ   | # ನಿಮಿಷಗಳು    | # ದಿನಗಳಲ್ಲಿ             |
+| ಅಕ್ಷರ (character)        | # ಅಕ್ಷರ   | # ಅಕ್ಷರಗಳು    | # ಅಕ್ಷರಗಳ               |
+| ಕೋಡ್ (code)              | # ಕೋಡ್    | # ಕೋಡುಗಳು     | # ಕೋಡುಗಳಲ್ಲಿ            |
+| ಪಾಸ್ಕೀ (passkey)         | # ಪಾಸ್ಕೀ  | # ಪಾಸ್ಕೀಗಳು   | # ಪಾಸ್ಕೀಗಳನ್ನು          |
+| ಪಾತ್ರೆ (piece, pot)      | # ಪಾತ್ರೆ  | # ಪಾತ್ರೆಗಳು   | # ಪಾತ್ರೆಗಳ ಮೇಲೆ         |
+
+A loanword ending in a vowel takes ಗಳು directly (ರೆಸಿಪಿಗಳು, ಪಾಸ್ಕೀಗಳು); one ending in a consonant takes ಉಗಳು (ಗ್ಲೇಜುಗಳು,
+ಕೋನುಗಳು, ಟೈಲುಗಳು), a short closed syllable doubling its last consonant (ಫ್ರಿಟ್ → ಫ್ರಿಟ್ಟುಗಳು). The impersonal passive needs no
+agreement, so prefer it in plural messages: `one {# ಸಾಮಗ್ರಿ ಸೇರಿಸಲಾಗಿದೆ} other {# ಸಾಮಗ್ರಿಗಳನ್ನು ಸೇರಿಸಲಾಗಿದೆ}`. A weight or
+temperature takes no noun: `{n} g`.
 
 ### Placeholders and names
 
-Kannada joins case endings to the word (-ನಲ್ಲಿ, -ಅನ್ನು, -ಗೆ, -ನ), and a placeholder takes none. _To be filled: how to build a
-sentence around {name}, {region}, {count} and {library} so it reads with any value._
+Kannada joins its case endings to the word (-ಅನ್ನು, -ಗೆ / -ಇಗೆ / -ಕ್ಕೆ, -ಇನ / -ದ, -ಅಲ್ಲಿ / -ನಲ್ಲಿ / -ದಲ್ಲಿ), and the ending changes
+with the word's last sound (ಭಾರತದಲ್ಲಿ, ಜಪಾನಿನಲ್ಲಿ), so a placeholder whose value is a word cannot take one. Three ways, in
+this order:
+
+1. **The ಎಂಬ construction** ("called"), with a generic noun that takes the ending: "{name} ಎಂಬ ರೆಸಿಪಿಯನ್ನು ಉಳಿಸಲಾಗಿದೆ"
+   ({name} was saved), "{name} ಎಂಬ ಸಾಮಗ್ರಿ ಈಗ ತಯಾರಾಗುವುದಿಲ್ಲ" ({name} is no longer made), "{library} ಎಂಬ ಲೈಬ್ರರಿಯಲ್ಲಿ".
+2. **The label form**, where the English allows it: "Saved: {name}" → "ಉಳಿಸಲಾಗಿದೆ: {name}"; "Shops in {region}" → "ಅಂಗಡಿಗಳು:
+   {region}".
+3. **The ending set apart as a word**, as MS writes it after an English word ("ಸರ್ವರ್ ನ", "ನೆಟ್ ವರ್ಕ್ ಗೆ", "ಪಾಸ್ ವರ್ಡ್ ಅನ್ನು"):
+   "{region} ನಲ್ಲಿ", "{name} ಅನ್ನು", "{name} ನ". Use it only where 1 and 2 do not fit; it reads as software Kannada, not as
+   print. It is for placeholders and Latin text only: a loanword in Kannada letters always joins its ending (Choices).
+
+`{count}`, `{year}` and other numbers take the -ರ forms attached, which follow any numeral ("{year}ರಲ್ಲಿ", "{count}ರಷ್ಟು";
+see Numbers and units). A trade name in Latin letters is like a placeholder: "Ferro 3134 ಎಂಬ ಫ್ರಿಟ್", "ಫ್ರಿಟ್ Ferro 3134",
+or the ending apart ("Ferro 3134 ನಲ್ಲಿ").
+
+`{region}` is a country's or region's name in Kannada from the browser (ಭಾರತ, ಯುನೈಟೆಡ್ ಸ್ಟೇಟ್ಸ್, ಜರ್ಮನಿ, ಜಪಾನ್; Hong Kong is
+"ಹಾಂಗ್ ಕಾಂಗ್ ಎಸ್ಎಆರ್ ಚೈನಾ", a region): **never call it a country** (never "{region} ದೇಶ"). Where a noun is needed, ಪ್ರದೇಶ
+(region) or ಸ್ಥಳ (place): "ನೀವು ಕೆಲಸ ಮಾಡುವ ಸ್ಥಳ: {region}".
 
 ### Cones
 
-Orton cones are named Orton wherever the English says Orton; SK cones are SK with the number as printed; Seger only where
-the English says Seger, and the Seger formula (UMF) never names a cone. Never an SK number for an Orton number or the
-reverse, nor any equivalence. _To be filled: the potters' word for a cone, and the wording for "one number hotter/cooler",
-never higher or lower._
+Orton cones are written **Orton** in Latin letters wherever the English says Orton, beside **ಕೋನ್** (the potters' word:
+Clay Station's "Orton Cones", Bhoomi's "Cones Pyrometric"; Google suggest: ಕೋನ್ 6 completes to "cone 6 temperature
+celsius"), with the Kannada **ಶಂಕು** in brackets at the first use in each guide section: "ಕೋನ್ (ಶಂಕು)". "Orton ಕೋನ್ 6",
+"ಕೋನ್ 06", "Orton ಕೋನುಗಳು". ಕೋನ್ is neuter: "ಕೋನ್ ಬಾಗುತ್ತದೆ", "ಕೋನ್ 6ರವರೆಗೆ ಸುಡಿ". **SK cones** are written SK with the
+number as printed (SK 6a) where the English has them; India does not use them. **Seger** is **ಸೆಗರ್** only where the
+English says Seger: the firing guide's older European Seger cones (ಸೆಗರ್ ಕೋನುಗಳು) and the **ಸೆಗರ್ ಸೂತ್ರ** (the unity
+molecular formula, UMF), which is another thing and never names a cone. Never give an SK number for an Orton number or the
+reverse, nor say they are equal, nor add a cone to "mid fire" or "high fire" where the English has none.
+
+- **One number hotter, one number cooler:** "ಒಂದು ಸಂಖ್ಯೆ ಹೆಚ್ಚು ಬಿಸಿ" and "ಒಂದು ಸಂಖ್ಯೆ ಕಡಿಮೆ ಬಿಸಿ" (the guard cone is "ಒಂದು
+  ಸಂಖ್ಯೆ ಹೆಚ್ಚು ಬಿಸಿಯ ಕೋನ್"); never ಎತ್ತರದ, ಕೆಳಗಿನ, ದೊಡ್ಡ or ಸಣ್ಣ, and never "a higher number": cone 05 is cooler than 04
+  ("ಕೋನ್ 05, ಕೋನ್ 04 ಗಿಂತ ಒಂದು ಸಂಖ್ಯೆ ಕಡಿಮೆ ಬಿಸಿ").
+- **cone 06** is written 06 with its zero and read "ಸೊನ್ನೆ ಆರು"; never 6.
+- **A range's ends:** "upper cone", "next higher cone number" → "ಹೆಚ್ಚು ಬಿಸಿಯ ಕೋನ್", "ಒಂದು ಸಂಖ್ಯೆ ಹೆಚ್ಚು ಬಿಸಿಯ ಮುಂದಿನ ಕೋನ್", even inside a
+  quotation; never ಹೆಚ್ಚು ಸಂಖ್ಯೆಯ ಕೋನ್.
+- **A share:** "{percent}% of the {oxide}" is the share of all of that oxide: "ಒಟ್ಟು {oxide} ಪ್ರಮಾಣದ {percent}%", never the
+  other way round.
+- Not ಶಂಕು alone in running text (the geometric cone), and "ಪೈರೋಮೆಟ್ರಿಕ್ ಕೋನ್" only for the English's "pyrometric cone".
 
 ### The unity formula
 
-_To be filled._
+**ಸೆಗರ್ ಸೂತ್ರ (UMF)**: written so at its first use in each guide section and in the setting, "ಸೆಗರ್ ಸೂತ್ರ" afterwards. The
+app's short "Unity formula" is "ಸೆಗರ್ ಸೂತ್ರ", the label "Unity:" is "ಸೆಗರ್:". "unity" as the scaling is **ಯೂನಿಟಿ**, explained
+once as "ಫ್ಲಕ್ಸುಗಳ ಒಟ್ಟು ಮೊತ್ತವನ್ನು ಒಂದು ಎಂದು ಮಾಡಿ" (ಒಂದು as a word: the English has no digit). The three columns: ಗ್ಲಾಸ್ ಫಾರ್ಮರ್
+(RO₂), ಸ್ಟೆಬಿಲೈಸರ್ (R₂O₃), ಫ್ಲಕ್ಸ್ (R₂O ಮತ್ತು RO). "formula" alone in a chemical sense is **ಸೂತ್ರ**; a glaze recipe is
+**ರೆಸಿಪಿ**: never ಸೂತ್ರ for a recipe. No established Kannada name for the UMF was found (No source; Native check). Where
+the English names both ("unity molecular formula, also called the Seger formula"): "ಯೂನಿಟಿ ಅಣು ಸೂತ್ರ, ಇದನ್ನು ಸೆಗರ್ ಸೂತ್ರ
+ಎಂದೂ ಕರೆಯುತ್ತಾರೆ".
 
 ### Gender-neutral wording
 
-_To be filled: the forms Kannada software uses with ನೀವು._
+Kannada marks gender only in the third person, for people (ಅವನು, ಅವಳು), and in the verb that agrees with them (ಮಾಡಿದನು,
+ಮಾಡಿದಳು). So:
+
+- **ನೀವು forms** carry no gender: "ನೀವು ಉಳಿಸಿದ್ದೀರಿ", "ನೀವು ಬಳಸಬಹುದು".
+- **Imperatives** (-ಇ) and the **impersonal passive** (-ಲಾಗಿದೆ, -ಬಹುದು) carry no gender: "ಉಳಿಸಲಾಗಿದೆ", "ಮಾಸ್ಕ್ ಧರಿಸಬೇಕು".
+- **Things** are neuter, loanwords included: "ಗ್ಲೇಜ್ ಕರಗುತ್ತದೆ", "ಕಿಲ್ನ್ ಆಫ್ ಆಗುತ್ತದೆ", "ಕೋನುಗಳು ಬಾಗುತ್ತವೆ".
+- **A person in general** is plural or the respectful ಅವರು, never ಅವನು or ಅವಳು (MS lists the three pronouns; Kannada
+  software uses ಅವರು for an unknown person): "ಕುಂಬಾರರು", "ಬಳಕೆದಾರರು", "ಜನರು". ಕುಂಬಾರ is the traditional potter and also a
+  community's name; a studio potter in the guides is "ಕುಂಬಾರರು" where the English says potters in general, or "ಪಾಟರ್"
+  where it means studio potters (Native check: which reads better to Karnataka's studio potters).
+- **Companies, makers, suppliers and agencies** are neuter singular: "Orton ಹೇಳುತ್ತದೆ", "HSE ಹೇಳುತ್ತದೆ", "Digitalfire
+  ವಿವರಿಸುತ್ತದೆ"; several together take the plural ("Potclays ಮತ್ತು Bath Potters ಮಾರುತ್ತವೆ"); a named person takes the
+  respectful plural ("Derek Au … ಹೇಳುತ್ತಾರೆ").
 
 ### The reader in the guides
 
-_To be filled: where the bracketed Kannada term appears (at a term's first use in each guide section, as `{{en: …}}` is
-used, and never in a button or a short label)._
+ನೀವು where the sentence needs a subject; steps are -ಇ imperatives; explanations are impersonal ("ಗ್ಲೇಜ್ ತುಂಬಾ ದಪ್ಪವಿದ್ದರೆ
+ಹರಿದುಹೋಗುತ್ತದೆ"). Short plain sentences, as the English, one Kannada sentence for one English sentence where Kannada allows.
+Quotations from sources are translated into “…” and keep their figures as the English writes them. **The bracketed Kannada
+term** (tier 1 and 2 rows below) goes right after the loanword at its first use in each guide section, before the
+`{{en: …}}` mark where the term has one: "ಫ್ಲಕ್ಸ್ (ಕರಗುವಿಕೆ ಸಹಾಯಕ){{en: flux}}". Never in a button, a label, a table
+heading or a message of the JSON files; in the glossary of glazing-basics (the definition list), each term line may give
+it once.
 
 ### The app's feature names
 
-_To be filled._
+Written exactly as on the button or tab; in running text in single curly quotes, ‘…’, unless the English wraps the name in
+`<b>` or another tag: then the tag, without quotes. A quoted label in a guide or a help text must be the real label in
+kn.json, recipe/kn.json, library/kn.json or account/kn.json (the Glob tool does not list these files; open them by path), and a
+quoted section title the real heading. Quotations from sources are translated, with the original kept in brackets where the
+English names it. A name takes no ending, so attach a generic noun that takes it: "‘ಹೋಲಿಸಿ’
+ಆಯ್ಕೆಯನ್ನು ಬಳಸಿ", "‘ನನ್ನ ಸಾಮಗ್ರಿಗಳು’ ಟ್ಯಾಬಿನಲ್ಲಿ", "‘ಸೀಸವನ್ನು ಬದಲಿಸಿ’ ಸೌಲಭ್ಯ". Inside `<settings>…</settings>` write the word the
+sentence needs ("<settings>ಸೆಟ್ಟಿಂಗ್ಸ್</settings> ನಲ್ಲಿ" or "<settings>ಸೆಟ್ಟಿಂಗ್ಸಿನಲ್ಲಿ</settings>").
+
+| English                       | Kannada (button, label)            | In running text                    |
+| ----------------------------- | ---------------------------------- | ---------------------------------- |
+| Compare                       | ಹೋಲಿಸಿ                             | ಹೋಲಿಕೆ; ‘ಹೋಲಿಸಿ’ ಸೌಲಭ್ಯ            |
+| Suggest amounts (and compare) | ಪ್ರಮಾಣಗಳನ್ನು ಸೂಚಿಸಿ (ಮತ್ತು ಹೋಲಿಸಿ) | ‘ಪ್ರಮಾಣಗಳನ್ನು ಸೂಚಿಸಿ’ ಸೌಲಭ್ಯ       |
+| Match with what I have        | ನನ್ನಲ್ಲಿರುವುದರಿಂದ ಹೊಂದಿಸಿ          | ‘ನನ್ನಲ್ಲಿರುವುದರಿಂದ ಹೊಂದಿಸಿ’ ಸೌಲಭ್ಯ |
+| Replace lead                  | ಸೀಸವನ್ನು ಬದಲಿಸಿ                    | ‘ಸೀಸವನ್ನು ಬದಲಿಸಿ’ ಸೌಲಭ್ಯ           |
+| Settings                      | ಸೆಟ್ಟಿಂಗ್ಸ್                        | ಸೆಟ್ಟಿಂಗ್ಸ್                        |
+| Notebook                      | ನೋಟ್ಬುಕ್                           | ಸ್ಟುಡಿಯೋ ನೋಟ್ಬುಕ್                  |
+| Notes (the page, the menu)    | ಟಿಪ್ಪಣಿಗಳು                         | [ಟಿಪ್ಪಣಿಗಳು](/notes); never ನೋಟ್ಸ್ |
+| Library                       | ಲೈಬ್ರರಿ                            | ಸಾಮಗ್ರಿಗಳ ಲೈಬ್ರರಿ                  |
+| Standard                      | ಮಾನಕ                               | ಮಾನಕ ಸಾಮಗ್ರಿಗಳು                    |
+| My materials                  | ನನ್ನ ಸಾಮಗ್ರಿಗಳು                    | ‘ನನ್ನ ಸಾಮಗ್ರಿಗಳು’ ಟ್ಯಾಬ್           |
+| Trial                         | ಟ್ರಯಲ್                             | ಟ್ರಯಲ್                             |
 
 ### Law in India
 
-_To be filled from the Kannada texts of the Occupational Safety, Health and Working Conditions Code, 2020, the Factories
-Act, 1948, the Karnataka Factories Rules, BIS's IS 9473 and IS 9806, and the GHS labels: the law's words for "at most",
-"no more than", "up to" (ಗರಿಷ್ಠ, ಮೀರಬಾರದು?) against "less than" (ಕಡಿಮೆ?), and "at least" (ಕನಿಷ್ಠ?). The words for respirable
-dust, crystalline silica and silicosis. How the English's EU names are written (there is no official Kannada text of
-Directive 84/500/EEC or CLP)._
+As the law writes it, never paraphrased. **No Kannada text of the Acts or standards was read** (see the opening), so the
+words below are standard Kannada usage, kept apart by the rules here; a reader with the Kannada Gazette should confirm them.
+India's Acts are in Hindi and English; the region data cites the English, so a Kannada title is given once beside it.
+
+- **Limits:** "at most", "no more than", "up to" → **ಗರಿಷ್ಠ** or **… ಮೀರದ** / **… ಮೀರಬಾರದು** (the limit itself passes), in
+  the safety, regions and records files and the guides alike: "up to 25% nepheline syenite" in a hazard line → "ಗರಿಷ್ಠ
+  25%", "babies up to 12 months old" → "12 ತಿಂಗಳು ಮೀರದ ವಯಸ್ಸಿನ ಶಿಶುಗಳು". **ತನಕ / ವರೆಗೆ** only where "up to" is no limit: a usage
+  range ("60%ರಷ್ಟು ವರೆಗೆ ಬಳಸಲಾಗುತ್ತದೆ"), a temperature reached ("ಕೋನ್ 6ರವರೆಗೆ ಸುಡಿ"), a time ("{date} ತನಕ"). "less than",
+  "under", "below" → **… ಕ್ಕಿಂತ / ಗಿಂತ ಕಡಿಮೆ** (it does not pass); "at least", "or more" → **ಕನಿಷ್ಠ** or **… ಕ್ಕಿಂತ
+  ಕಡಿಮೆಯಿಲ್ಲದ**; "more than", "over", "above" → **… ಕ್ಕಿಂತ / ಗಿಂತ ಹೆಚ್ಚು**. Never ಕಡಿಮೆ for "at most", never ಹೆಚ್ಚು for "at
+  least": a slip moves a legal limit. Check every one in the food-contact, silica and mask texts. ಗರಿಷ್ಠ is kept for the
+  law; a firing's peak is ಪೀಕ್.
+- **The Code:** the Occupational Safety, Health and Working Conditions Code, 2020 → **ಔದ್ಯೋಗಿಕ ಸುರಕ್ಷತೆ, ಆರೋಗ್ಯ ಮತ್ತು ಕೆಲಸದ
+  ಪರಿಸ್ಥಿತಿಗಳ ಸಂಹಿತೆ, 2020** (No source: a literal title; the official Kannada title was not found; keep the English
+  name beside it once). Section 88 leaves the limits to the states: "each state sets its own limit" → "ಪ್ರತಿಯೊಂದು ರಾಜ್ಯವೂ
+  ತನ್ನ ಮಿತಿಯನ್ನು ತಾನೇ ನಿಗದಿಪಡಿಸುತ್ತದೆ"; "We could not confirm a national limit" → "ರಾಷ್ಟ್ರೀಯ ಮಿತಿಯನ್ನು ನಾವು ಖಚಿತಪಡಿಸಲು
+  ಸಾಧ್ಯವಾಗಲಿಲ್ಲ". An exposure limit → **ಎಕ್ಸ್ಪೋಶರ್ ಮಿತಿ**; a permissible limit where the English quotes a law → **ಅನುಮತಿಸಬಹುದಾದ
+  ಮಿತಿ**. The Factories Act, 1948 → **ಕಾರ್ಖಾನೆಗಳ ಕಾಯಿದೆ, 1948** (Kn Wikipedia; Karnataka's labour department writes ಕಾಯ್ದೆ).
+  Occupational disease → **ಔದ್ಯೋಗಿಕ ರೋಗ** (Kn Wikipedia: "ಉದ್ಯೋಗಿಕ ರೋಗಗಳು"). Silicosis → **ಸಿಲಿಕೋಸಿಸ್** (Kn Wikipedia; the
+  older ಸಿಲಿಕಬೇನೆ is not used).
+- **Masks:** IS 9473:2002 (filtering half masks against particles, classes FFP1, FFP2, FFP3), from the **ಭಾರತೀಯ ಮಾನಕ
+  ಬ್ಯೂರೋ (BIS)** (Kn Wikipedia); no Kannada title found: describe it as "ಕಣಗಳಿಂದ ರಕ್ಷಿಸುವ ಫಿಲ್ಟರ್ ಹಾಫ್ ಮಾಸ್ಕುಗಳ ಭಾರತೀಯ ಮಾನಕ" and
+  keep the number and the classes as the English gives them.
+- **Food contact:** India has no mandatory rule for ceramic ware (IS 9806:2001 is voluntary; none is shown). The English's
+  food-contact categories are written plainly (2.9).
+- **GHS:** no Kannada GHS label text was found. The words in 2.7 (ಸಂಕೇತ ಪದ, ಅಪಾಯ, ಎಚ್ಚರಿಕೆ, ವರ್ಗೀಕರಿಸಲಾಗಿಲ್ಲ) are best choices;
+  Native check.
+- **Who to call:** **112** ("ತುರ್ತು ಸಂಖ್ಯೆ 112": police, fire and ambulance, ERSS); the **National Poisons Information Centre
+  (NPIC)**, **ಅಖಿಲ ಭಾರತ ವೈದ್ಯಕೀಯ ವಿಜ್ಞಾನ ಸಂಸ್ಥೆ (AIIMS), ನವದೆಹಲಿ** (Kn Wikipedia), **1800 116 117**, ದಿನದ 24 ಗಂಟೆ, ಉಚಿತ (the
+  centre's name as AIIMS publishes it, in English; a Kannada description once: "ವಿಷ ಮಾಹಿತಿ ಕೇಂದ್ರ"); in Karnataka also the
+  Poison Information Centre, JSS College of Pharmacy, Mysuru (1800 425 0207), name in English with "ಮೈಸೂರು" if a place word
+  is needed. Bodies: **ಆರೋಗ್ಯ ಮತ್ತು ಕುಟುಂಬ ಕಲ್ಯಾಣ ಸಚಿವಾಲಯ** (Kn Wikipedia), **ಕಾರ್ಮಿಕ ಮತ್ತು ಉದ್ಯೋಗ ಸಚಿವಾಲಯ** (No source),
+  **DGOSH** (kept with its English name).
+- **EU law**, where the English names it (Directive 84/500/EEC, Directive (EU) 2017/2398, CLP): there is no official
+  Kannada text; write **ಯುರೋಪಿಯನ್ ಒಕ್ಕೂಟದ (EU) ನಿರ್ದೇಶನ 84/500/EEC**, **CLP ನಿಯಮಾವಳಿ (EC) No 1272/2008**, with the number
+  kept. US and UK bodies keep their English names with a Kannada gloss once: OSHA (ಅಮೆರಿಕದ ಔದ್ಯೋಗಿಕ ಸುರಕ್ಷತಾ ಸಂಸ್ಥೆ), HSE
+  (ಬ್ರಿಟನ್ನಿನ ಆರೋಗ್ಯ ಮತ್ತು ಸುರಕ್ಷತಾ ಸಂಸ್ಥೆ), NHS (ಬ್ರಿಟನ್ನಿನ ಸರ್ಕಾರಿ ಆರೋಗ್ಯ ಸೇವೆ), CDC (ಅಮೆರಿಕದ ರೋಗ ನಿಯಂತ್ರಣ ಸಂಸ್ಥೆ), FDA
+  (ಅಮೆರಿಕದ ಆಹಾರ ಮತ್ತು ಔಷಧ ಸಂಸ್ಥೆ), EPA (ಅಮೆರಿಕದ ಪರಿಸರ ಸಂರಕ್ಷಣಾ ಸಂಸ್ಥೆ), IARC (ವಿಶ್ವ ಆರೋಗ್ಯ ಸಂಸ್ಥೆಯ ಕ್ಯಾನ್ಸರ್ ಸಂಶೋಧನಾ ಸಂಸ್ಥೆ),
+  ECHA (ಯುರೋಪಿಯನ್ ರಾಸಾಯನಿಕ ಸಂಸ್ಥೆ).
 
 ### Agencies, organisations and companies
 
-AIIMS's National Poisons Information Centre (1800 116 117, 24 hours, toll free) is verified (the India region research).
-_To be filled: its Kannada name from AIIMS's pages, if it has one, and the other bodies' names._
+Agencies, companies, makers, suppliers and websites are neuter singular, glossed once as above: "HSE ಹೇಳುತ್ತದೆ", "Orton
+ಹೇಳುತ್ತದೆ", "Dawson ಸಲಹೆ ನೀಡುತ್ತದೆ", "Glazy ಹೇಳುತ್ತದೆ". Their names stay in Latin letters (section 3). A data sheet (ಶೀಟ್,
+SDS) is neuter whoever made it. A person takes the respectful plural.
 
 ### Pitfalls
 
-_To be filled: glaze vs enamel, varnish and paint; frit vs flux; kiln vs oven or furnace; bisque vs raw ware; earthenware,
-terracotta, stoneware, porcelain and china clay; silica vs silicon vs silicone; whiting vs lime and chalk; boron vs borax
-vs boric acid; a respirator vs a ventilator vs ventilation; the app's guides vs a kiln's manual._
+- **ಗ್ಲೇಜ್, ಎನಾಮಲ್, ವಾರ್ನಿಷ್, ಪೇಂಟ್:** a glaze is **ಗ್ಲೇಜ್ (ಮೆರುಗು)** (the material and the coat); "to glaze" **ಗ್ಲೇಜ್ ಮಾಡು /
+  ಗ್ಲೇಜ್ ಹಚ್ಚು**. Enamel on metal or enamel paint is **ಎನಾಮಲ್**; varnish **ಮೆರುಗೆಣ್ಣೆ / ವಾರ್ನಿಷ್** (Mysore Enc.: "ಮೆರುಗೆಣ್ಣೆಗಳು");
+  lacquer "ಜಪಾನ್ ಮೆರುಗು"; paint **ಬಣ್ಣ / ಪೇಂಟ್** (PARI: "ಬಣ್ಣ ಬಳಿಯುವ", painting pots before firing): none is a glaze. ಮೆರುಗು alone
+  is shine (Google suggest), so it is the bracketed term, not the running word. Titles say **ಸೆರಾಮಿಕ್ ಗ್ಲೇಜ್** or **ಪಾಟರಿ
+  ಗ್ಲೇಜ್** (Search terms).
+- **ಫ್ರಿಟ್ and ಫ್ಲಕ್ಸ್:** a frit is **ಫ್ರಿಟ್** (a factory glass); a flux is **ಫ್ಲಕ್ಸ್** (the oxide's role). Not the soldering
+  flux, not the magnetic flux (ಕಾಂತೀಯ ಅಭಿವಾಹ).
+- **ಕಿಲ್ನ್, ಆವಿಗೆ, ಗೂಡು, ಭಟ್ಟಿ, ಕುಲುಮೆ, ಓವನ್:** a potter's kiln is **ಕಿಲ್ನ್** (ಆವಿಗೆ at the first use per section); **ಕುಲುಮೆ** is a
+  furnace or a smith's forge, **ಭಟ್ಟಿ** a still (and PARI's kiln), **ಗೂಡು** a nest or a brick kiln (IIFL), **ಓವನ್** a kitchen
+  oven, used only where the English says oven. Never "ಫರ್ನೆಸ್" for a kiln.
+- **ಫೈರಿಂಗ್ and ಗುಂಡಿನ ದಾಳಿ:** firing is **ಫೈರಿಂಗ್** (the noun) and **ಸುಡು** (the verb: "ಕೋನ್ 6ರವರೆಗೆ ಸುಡಿ"; Mysore Enc.:
+  "ಸುಡುತ್ತಾರೆ"); never ಗುಂಡಿನ ದಾಳಿ or ಗುಂಡು ಹಾರಿಸು (gunfire), which machine translation gives (IIFL: "ಗೂಡು ಗುಂಡಿನ ದಾಳಿ"). ಬೇಯಿಸು
+  (to cook, the encyclopedia's "ಬೇಯಿಸುತ್ತಾರೆ") is not used for firing.
+- **ಬಿಸ್ಕ್ and ಹಸಿ:** **ಹಸಿ** is unfired (ಹಸಿ ಪಾತ್ರೆ, greenware; ಹಸಿ ಮಣ್ಣು, unfired clay); **ಬಿಸ್ಕ್** is the first firing and its
+  ware (ಬಿಸ್ಕ್ ಫೈರಿಂಗ್, ಬಿಸ್ಕ್ ಮಾಡಿದ ಪಾತ್ರೆ). Never ಹಸಿ for bisque, never ಬಿಸ್ಕ್ for unfired ware, never ಬಿಸ್ಕತ್ತು. **ಕಚ್ಚಾ** is raw
+  in the materials' sense (ಕಚ್ಚಾ ವಸ್ತುಗಳು, a shop's raw materials; ಕಚ್ಚಾ ವೈಟಿಂಗ್), not unfired ware.
+- **ಅರ್ಥನ್ವೇರ್, ಟೆರಕೋಟ, ಸ್ಟೋನ್ವೇರ್, ಪೋರ್ಸಿಲೇನ್, ಪಿಂಗಾಣಿ, ಚೀನೀ ಮಣ್ಣು:** earthenware is **ಅರ್ಥನ್ವೇರ್ (ಮೃದ್ವಸ್ತು)**; **ಟೆರಕೋಟ** is
+  the red, usually unglazed low-fired ware, only where the English says terracotta; stoneware **ಸ್ಟೋನ್ವೇರ್ (ಕಲ್ಲುಮಡಕೆ)**;
+  porcelain **ಪೋರ್ಸಿಲೇನ್ (ಪಿಂಗಾಣಿ)**; bone china **ಬೋನ್ ಚೈನಾ**. **ಪಿಂಗಾಣಿ** alone is any crockery; **ಚೀನೀ ಮಣ್ಣು** (Kn Wikipedia) is
+  kaolin, but "china" also reads as porcelain: kaolin is **ಕಾಯೋಲಿನ್ (ಚೈನಾ ಕ್ಲೇ)**, never ಚೀನೀ ಮಣ್ಣು in running text.
+- **ಸಿಲಿಕಾ, ಸಿಲಿಕಾನ್, ಸಿಲಿಕೋನ್, ಮರಳು:** silica is the oxide **ಸಿಲಿಕಾ** (SiO₂); the element is **ಸಿಲಿಕಾನ್**; silicone rubber
+  **ಸಿಲಿಕೋನ್**: never either for silica. **ಸಿಲಿಕಾ ಜೆಲ್** is the drying sachet. Sand is **ಮರಳು**; silica sand **ಸಿಲಿಕಾ ಮರಳು**.
+- **ವೈಟಿಂಗ್, ಸುಣ್ಣ, ಸೀಮೆಸುಣ್ಣ:** whiting is **ವೈಟಿಂಗ್ (ಕ್ಯಾಲ್ಸಿಯಂ ಕಾರ್ಬೊನೇಟ್)** (Clay Station's "CS Whiting"); **ಸುಣ್ಣ** is lime
+  (quicklime, slaked lime and the lime eaten with betel); **ಸೀಮೆಸುಣ್ಣ** is chalk (Kn Wikipedia). Neither is used for whiting;
+  "lime" in a frit's name is ಸುಣ್ಣ only there ("ಸೋಡಾ-ಪೊಟ್ಯಾಷ್-ಸುಣ್ಣ ಫ್ರಿಟ್").
+- **ಬೋರಾನ್, ಬೊರಾಕ್ಸ್, ಬೋರಿಕ್ ಆಮ್ಲ:** B₂O₃ is **ಬೋರಾನ್ (B₂O₃)**, formally ಬೋರಾನ್ ಆಕ್ಸೈಡ್; borax is **ಬೊರಾಕ್ಸ್** (Kn
+  Wikipedia; also a fertiliser in Karnataka, the sense in which Kannada pages use the word); boric acid is **ಬೋರಿಕ್ ಆಮ್ಲ**. In
+  the safety text, name each as the English does: borax and boric acid are reproductive toxins.
+- **ಪೊಟ್ಯಾಷ್ and ಸೋಡಾ:** "potash" (K₂O) is **ಪೊಟ್ಯಾಷ್ (K₂O)**, formally ಪೊಟ್ಯಾಸಿಯಂ ಆಕ್ಸೈಡ್; in India ಪೊಟ್ಯಾಷ್ is also the
+  fertiliser (MOP), so the oxide is written with K₂O at its first use in a section. The safety guide's potash (potassium
+  carbonate) is **ಪೊಟ್ಯಾಸಿಯಂ ಕಾರ್ಬೊನೇಟ್**. "soda" (Na₂O) is **ಸೋಡಾ (Na₂O)**, formally ಸೋಡಿಯಂ ಆಕ್ಸೈಡ್; soda ash is **ಸೋಡಾ
+  ಆಷ್**; ಸೋಡಾ alone is also soda water and baking or washing soda: the oxide always with Na₂O at first use.
+- **ಸ್ಟೇನ್ and ಕಲರೆಂಟ್:** a stain (factory-made) is **ಸ್ಟೇನ್ (ಸಿದ್ಧ ಬಣ್ಣ)**: ಸ್ಟೇನ್ is also a mark or dirt (ಕಲೆ). A colorant (any
+  oxide that colours) is **ಕಲರೆಂಟ್ (ಬಣ್ಣಕಾರಕ)**.
+- **ರೆಸ್ಪಿರೇಟರ್, ವೆಂಟಿಲೇಟರ್, ಗಾಳಿಯಾಡುವಿಕೆ:** a respirator is **ರೆಸ್ಪಿರೇಟರ್ ಮಾಸ್ಕ್** at first use, then ರೆಸ್ಪಿರೇಟರ್ (Google
+  suggest: ರೆಸ್ಪಿರೇಟರ್ completes to "ರೆಸ್ಪಿರೇಟರಿ ಸಿಸ್ಟಮ್", the breathing system, so the first use says ಮಾಸ್ಕ್); a hospital
+  ventilator is **ವೆಂಟಿಲೇಟರ್**, never meant here; ventilation of a room is **ಗಾಳಿಯಾಡುವಿಕೆ** (ವೆಂಟಿಲೇಶನ್ in LEV only). IIFL's
+  "ಮುಖವಾಡ" (a face mask, also a disguise) is not used for a respirator.
+- **ಮಾರ್ಗದರ್ಶಿ and ಕೈಪಿಡಿ:** the app's five guides are **ಮಾರ್ಗದರ್ಶಿ**; a kiln's, controller's or sitter's manual is **ಕೈಪಿಡಿ**.
+  Never the same word. A maker's, supplier's or school's own "guide" is **ಕಿರುಪುಸ್ತಕ** (a booklet), **ಲೇಖನ** (an article) or
+  **ದಾಖಲೆ** (a document), never ಮಾರ್ಗದರ್ಶಿ; "a guide, not a prediction" is "ಸೂಚನೆ ಮಾತ್ರ, ಭವಿಷ್ಯವಾಣಿ ಅಲ್ಲ". **ಗೈಡ್ ಕೋನ್** is a cone's
+  name.
+- **ಕ್ರೇಜಿಂಗ್ and ಕ್ರ್ಯಾಕಲ್:** crazing is **ಕ್ರೇಜಿಂಗ್** (a defect); crackle is **ಕ್ರ್ಯಾಕಲ್** (wanted); a crack through the pot from
+  heating or cooling is **ಡಂಟಿಂಗ್**.
+- **ವಿಶಿಷ್ಟ ಗುರುತ್ವ and ಸಾಂದ್ರತೆ:** specific gravity is **ವಿಶಿಷ್ಟ ಗುರುತ್ವ**, a ratio with no unit (1.45); **ಸಾಂದ್ರತೆ** is density
+  (g/cm³) or a concentration and is never used for a glaze's thickness, which is **ದಟ್ಟತೆ**; never ಲೀಟರ್ ತೂಕ (litre weight),
+  another measure.
+- **ಲೀಚಿಂಗ್:** leaching is **ಲೀಚಿಂಗ್ (ಲೋಹಗಳ ಸೋರಿಕೆ)**; the leach test is a test of the metals a fired piece releases, not
+  narrowed to lead and cadmium.
+- **ಸೂತ್ರ and ರೆಸಿಪಿ:** a recipe is **ರೆಸಿಪಿ**, a chemical formula **ಸೂತ್ರ**, the unity formula **ಸೆಗರ್ ಸೂತ್ರ**.
+- **ಸೀಸ and ಸೀಸೆ:** lead is **ಸೀಸ**; **ಸೀಸೆ** is a bottle. Tin is **ತವರ** (Kn Wikipedia) in plain Kannada, but the oxide is ಟಿನ್
+  ಆಕ್ಸೈಡ್ as sold.
+- **ಸ್ಟೆಬಿಲೈಸರ್, ಸಸ್ಪೆಂಡರ್, ಕುಕಿ, ಪ್ಲಾಸ್ಟಿಕ್, ಮ್ಯಾನುಯಲ್:** loanwords that mean something else in Indian homes (a voltage
+  stabiliser, braces, a biscuit, the polymer, a manual): see their rows for the wording that avoids them.
+- **ಪಾರದರ್ಶಕ:** transparent; the encyclopedia also writes it for translucent porcelain. Translucent is **ಅರೆಪಾರದರ್ಶಕ**.
+- **Placeholders:** see Placeholders and names.
 
 ### Search terms (docs/seo-plan.md, item 9)
 
-_To be filled._
+Google's suggestions for India in Kannada (hl=kn, gl=IN, web and YouTube, 21 October 2026): **ಕೋನ್ 6** completes to
+**cone 6 temperature celsius**, **cone 6 glazes**, **cone 6 glaze recipes**, **cone 6 firing schedule** (in Latin
+letters); **ಸೆರಾಮಿಕ್** to **ಸೆರಾಮಿಕ್ಸ್** and **ಸೆರಾಮಿಕ್ ಟೈಲ್ಸ್**; **ಕುಂಬಾರಿಕೆ** to "ಕುಂಬಾರಿಕೆ ಎಂದರೇನು" and "translate in english"
+(school questions); **ಪಿಂಗಾಣಿ** to crockery; **ಮೆರುಗು** and **ಆವಿಗೆ** to "ಪದದ ಅರ್ಥ" (word meaning: school words); **ಗ್ಲೇಜ್**,
+**ಕಿಲ್ನ್**, **ಫೆಲ್ಡ್ಸ್ಪಾರ್** and **ಸಿಲಿಕೋಸಿಸ್** to nothing about pottery. Kannada-speaking potters search in English.
+**Proposed title**: "Glazecalc: ಸೆರಾಮಿಕ್ ಗ್ಲೇಜ್ ಕ್ಯಾಲ್ಕುಲೇಟರ್, ಕುಂಬಾರರಿಗೆ ಉಚಿತ". **Description terms:** ಸೆರಾಮಿಕ್ ಗ್ಲೇಜ್ ರೆಸಿಪಿ,
+ಪಾಟರಿ ಗ್ಲೇಜ್, ಫ್ರಿಟ್, ಫೆಲ್ಡ್ಸ್ಪಾರ್, ಕೋನ್ 6, ಸೆಗರ್ ಸೂತ್ರ (UMF), ಕುಂಬಾರಿಕೆ, and the English "glaze calculator" and "cone 6" once
+in brackets, since that is what potters type. Every Kannada title and description that says ಗ್ಲೇಜ್ carries ಸೆರಾಮಿಕ್ or ಪಾಟರಿ
+with it.
 
 ## 2. Glossary
 
-**Tier** in the Notes: 1 craft loanword, 2 material by its bag name, 3 textbook chemistry and physics, 4 plain Kannada and
-the law. A term in brackets after the Kannada is the technical term for the guides' first use per section.
+"show English" marks the terms whose English a reader can ask to see after them (`<en>…</en>`, `{{en: …}}`). **Tier** in
+the Notes: 1 craft loanword, 2 material by its bag name, 3 textbook chemistry and physics, 4 plain Kannada and the law (see
+the opening). All the nouns below are neuter (Kannada marks gender only for people), so no row gives a gender; a row gives
+the plural or an oblique form where it is not regular. **Usage**: the word Indian shops, Google's suggestions or Kannada
+articles use, in no Kannada teaching source; **No source**: a best choice with no Kannada source; **Native check**: a row
+for a Kannada-speaking potter to confirm first. A term in brackets after the Kannada is the Kannada technical term for the
+guides' first use per section (see The reader in the guides).
 
 ### 2.1 Glaze and its chemistry
 
-| English | Kannada | Notes |
-| ------- | ------- | ----- |
+| English                                      | Kannada                                                                            | Notes                                                                                                                                                                                                                                |
+| -------------------------------------------- | ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| glaze                                        | ಗ್ಲೇಜ್ (ಮೆರುಗು); to glaze ಗ್ಲೇಜ್ ಮಾಡು (ಮೆರುಗು ಕೊಡು); glazed ಗ್ಲೇಜ್ ಮಾಡಿದ (ಮೆರುಗಿನ) | **show English**. Tier 1. IIFL ("ಗ್ಲೇಜ್ ಲೇಪನ"); Mysore Enc. ("ಮೆರುಗು ದ್ರವ್ಯ", "ಮೆರುಗು ಕೊಡುವುದಕ್ಕೂ", "ಮೆರುಗಿನದರ"). Plural ಗ್ಲೇಜುಗಳು; ಗ್ಲೇಜನ್ನು, ಗ್ಲೇಜಿನ. Unglazed: ಗ್ಲೇಜ್ ಇಲ್ಲದ. Not ಮೆರುಗೆಣ್ಣೆ (varnish). **Native check**: Choices. |
+| glass former                                 | ಗ್ಲಾಸ್ ಫಾರ್ಮರ್ (ಗಾಜು ರೂಪಿಸುವ ಆಕ್ಸೈಡ್)                                              | **show English**. Tier 1. No source; Native check. The RO₂ column, silica. UI "ಗ್ಲಾಸ್ ಫಾರ್ಮರುಗಳು - RO₂".                                                                                                                             |
+| flux                                         | ಫ್ಲಕ್ಸ್ (ಕರಗುವಿಕೆ ಸಹಾಯಕ)                                                           | **show English**. Tier 1. Clay Station's menu "Flux"; no Kannada source for the bracket (No source; Native check). Category "ಫ್ಲಕ್ಸುಗಳು"; "ಫ್ಲಕ್ಸ್ ಮಾಡುವ ಶಕ್ತಿ" (fluxing power), "ಬಲವಾದ ಫ್ಲಕ್ಸ್". Not soldering or magnetic flux.    |
+| stabilizer                                   | ಸ್ಟೆಬಿಲೈಸರ್ (ಸ್ಥಿರಕಾರಿ)                                                            | **show English**. Tier 1. No source; Native check. In Indian homes a ಸ್ಟೆಬಿಲೈಸರ್ is a voltage stabiliser: at first use say "ಗ್ಲೇಜಿನ ಸ್ಟೆಬಿಲೈಸರ್" or "ಸ್ಟೆಬಿಲೈಸರ್ ಆಕ್ಸೈಡ್". UI "ಸ್ಟೆಬಿಲೈಸರುಗಳು - R₂O₃".                               |
+| oxide                                        | ಆಕ್ಸೈಡ್                                                                            | Tier 3. Mysore Enc. ("ಆಕ್ಸೈಡ್ಗಳನ್ನು", written here without the ZWJ: ಆಕ್ಸೈಡುಗಳು). Formulas never translated; the app's two names: formal "ಕ್ಯಾಲ್ಸಿಯಂ ಆಕ್ಸೈಡ್", the potters' "ಕ್ಯಾಲ್ಸಿಯಂ".                                             |
+| R₂O and RO                                   | R₂O ಮತ್ತು RO                                                                       | Symbols kept. UI "ಫ್ಲಕ್ಸುಗಳು - RO".                                                                                                                                                                                                  |
+| alkali, alkaline                             | ಕ್ಷಾರ; alkaline ಕ್ಷಾರೀಯ                                                            | Tier 3. Usage (school chemistry). "ಕ್ಷಾರೀಯ ಫ್ರಿಟ್", "ಕ್ಷಾರೀಯ ಕಾಪರ್ ನೀಲಿ"; "ಹೆಚ್ಚು ಕ್ಷಾರ". The R₂O oxides, not the pH sense.                                                                                                          |
+| unity molecular formula (UMF)                | ಸೆಗರ್ ಸೂತ್ರ (UMF)                                                                  | **show English**. Tier 3. No Kannada name found; Native check. "ಸೆಗರ್ ಸೂತ್ರ (UMF)" at first use, then "ಸೆಗರ್ ಸೂತ್ರ". The app's "Unity formula" → "ಸೆಗರ್ ಸೂತ್ರ", "Unity:" → "ಸೆಗರ್:".                                                 |
+| unity                                        | ಯೂನಿಟಿ (ಫ್ಲಕ್ಸುಗಳ ಮೊತ್ತವನ್ನು ಒಂದು ಎಂದು ಮಾಡಿ)                                       | Tier 1. No source; Native check. "in unity" → "ಯೂನಿಟಿಯಲ್ಲಿ"; ಒಂದು as a word. Not ಏಕತೆ (togetherness).                                                                                                                                |
+| limit formula (target formula)               | ಲಿಮಿಟ್ ಸೂತ್ರ (ಗುರಿ ಸೂತ್ರ)                                                          | **show English**. Tier 1. No source. Not a legal limit: never ಮಿತಿ alone, which the law and the silica text use.                                                                                                                     |
+| silica to alumina ratio                      | ಸಿಲಿಕಾ-ಅಲ್ಯೂಮಿನಾ ಅನುಪಾತ                                                            | **show English**. No source. UI "ಸಿಲಿಕಾ ಮತ್ತು ಅಲ್ಯೂಮಿನಾದ ಅನುಪಾತ: {ratio}", "ಸಿಲಿಕಾ-ಅಲ್ಯೂಮಿನಾ {ratio}:1".                                                                                                                             |
+| flux balance                                 | ಫ್ಲಕ್ಸ್ ಸಮತೋಲನ                                                                     | No source. UI "ಫ್ಲಕ್ಸ್ ಸಮತೋಲನ", "ಸಮತೋಲನ", "ಫ್ಲಕ್ಸುಗಳ ಸಮತೋಲನ".                                                                                                                                                                        |
+| oxide analysis (analysis, chemical analysis) | ಆಕ್ಸೈಡ್ ವಿಶ್ಲೇಷಣೆ (ವಿಶ್ಲೇಷಣೆ, ರಾಸಾಯನಿಕ ವಿಶ್ಲೇಷಣೆ)                                  | Tier 3. Usage. UI "ಆಕ್ಸೈಡ್ ವಿಶ್ಲೇಷಣೆ, ಸುಟ್ಟ ನಂತರ, ತೂಕದ ಪ್ರಕಾರ".                                                                                                                                                                      |
+| formula (raw formula, fired)                 | ಸೂತ್ರ (ಕಚ್ಚಾ ಸೂತ್ರ; ಸುಟ್ಟ ನಂತರ)                                                    | Tier 3. Usage (school chemistry). UI "ಕಚ್ಚಾ ಸೂತ್ರ:", "ಸೂತ್ರವನ್ನು ನಮೂದಿಸಿ (ಸುಟ್ಟ ನಂತರ):", "ಸೂತ್ರ, ಮಾರಾಟವಾಗುವಂತೆ:". Never ರೆಸಿಪಿ.                                                                                                      |
+| loss on ignition (LOI)                       | ದಹನ ನಷ್ಟ (LOI)                                                                     | **show English**. Tier 3. No source; Native check: Indian shops and labs write "LOI". "ದಹನ ನಷ್ಟ (LOI)" at first use, explained once as "ಸುಡುವಾಗ ಕಳೆದುಹೋಗುವ ತೂಕ"; the UI's bare "LOI" stays LOI.                                      |
+| mole                                         | ಮೋಲ್                                                                               | Tier 3. Usage (school chemistry). Not the animal (ಮೂಗಿಲಿ) or a mark on the skin (ಮಚ್ಚೆ).                                                                                                                                             |
+| molecular weight                             | ಅಣುತೂಕ (ಅಣುರಾಶಿ)                                                                   | Tier 3. No source read; Native check. UI "ಸೂತ್ರದ ಕಚ್ಚಾ ಅಣುತೂಕ".                                                                                                                                                                      |
+| equivalent weight, fired weight              | ಸಮಾನ ತೂಕ; ಸುಟ್ಟ ನಂತರದ ತೂಕ                                                          | Tier 3. No source; Native check. UI columns "ಸಮಾನ ತೂಕ", "ಸುಟ್ಟ ನಂತರದ ತೂಕ".                                                                                                                                                           |
+| melt (noun)                                  | ಕರಗಿದ ಗ್ಲೇಜ್                                                                       | Tier 4. No source. "ಕರಗಿದ ಗ್ಲೇಜನ್ನು ಗಟ್ಟಿಗೊಳಿಸುತ್ತದೆ", "ಕರಗಿದ ಗ್ಲೇಜಿನಿಂದ ಅನಿಲದ ಗುಳ್ಳೆಗಳು".                                                                                                                                           |
+| thermal expansion (expansion)                | ಉಷ್ಣ ವ್ಯಾಕೋಚನ (ವ್ಯಾಕೋಚನ)                                                           | **show English**. Tier 3. Kn Wikipedia ("ಉಷ್ಣ ವ್ಯಾಕೋಚನ", metals' articles). UI "ವ್ಯಾಕೋಚನ, ×10⁻⁶/°C"; "CTE" and "x 10^-7/K" kept. Plain "ಹಿಗ್ಗುವಿಕೆ" may explain it once.                                                             |
+| stiff, fluid, runny (viscosity)              | ಗಟ್ಟಿ (ಕಡಿಮೆ ಹರಿಯುವ), ದ್ರವದಂತೆ, ಹರಿಯುವ (ಸ್ನಿಗ್ಧತೆ)                                 | Tier 3. Kn Wikipedia ("ಸ್ನಿಗ್ಧತೆ"). "ಹರಿಯುವ" also describes a thin slurry: context decides.                                                                                                                                          |
+| raw, fired                                   | ಕಚ್ಚಾ; ಸುಟ್ಟ                                                                       | Tier 4. IIFL ("ಕಚ್ಚಾ ವಸ್ತುಗಳು"), Mysore Enc. ("ಸುಡುತ್ತಾರೆ"). "ಕಚ್ಚಾ ವೈಟಿಂಗ್", "ಕಚ್ಚಾ ಮಣ್ಣು", "ಸುಟ್ಟ ಆಕ್ಸೈಡುಗಳು", "ಸುಟ್ಟ ಪಾತ್ರೆ". Unfired ware is ಹಸಿ (2.3).                                                                          |
+| gloss, satin, matte                          | ಗ್ಲಾಸಿ, ಸ್ಯಾಟಿನ್, ಮ್ಯಾಟ್                                                           | Tier 1. Usage. "ಹೊಳೆಯುವ" for gloss in running text where the English says shiny. ಸ್ಯಾಟಿನ್ is not the fabric here.                                                                                                                    |
+| opaque, transparent, translucent, clear      | ಅಪಾರದರ್ಶಕ, ಪಾರದರ್ಶಕ, ಅರೆಪಾರದರ್ಶಕ, ಕ್ಲಿಯರ್                                          | Tier 3 and 1. Mysore Enc. ("ಪಾರದರ್ಶಕ"); Clay Station's "Transparent", "Translucent". "ಕ್ಲಿಯರ್ ಗ್ಲೇಜ್" is a glaze type, not "ಸ್ಪಷ್ಟ".                                                                                                 |
+| stable, durable                              | ಸ್ಥಿರ; ಬಾಳಿಕೆ ಬರುವ                                                                 | Tier 4. Usage. "ಸ್ಥಿರ ಗ್ಲೇಜ್" (balanced, resists leaching), not "ನಿಂತ".                                                                                                                                                              |
+| crystals, crystalline                        | ಹರಳುಗಳು; ಸ್ಫಟಿಕೀಯ                                                                  | Tier 3. Mysore Enc. ("ಹರಳು"); Clay Station's "Microcrystalline". "ಸ್ಫಟಿಕೀಯ ಸಿಲಿಕಾ" is the dust hazard (2.7). A crystalline glaze is "ಹರಳು ಗ್ಲೇಜ್" (No source).                                                                       |
+| boron blue                                   | “ಬೋರಾನ್ ಬ್ಲೂ”                                                                      | Keep the quotes; translate the sense (ಹಾಲಿನಂತಹ ನೀಲಿ-ಬಿಳಿ) where the English explains it. No source.                                                                                                                                  |
+| celadon                                      | ಸೆಲಡಾನ್                                                                            | Tier 1. Clay Station's "Amaco Celadon Glazes". Palette "ಸೆಲಡಾನ್ ಹಸಿರು".                                                                                                                                                              |
+| tenmoku (temmoku)                            | ಟೆನ್ಮೊಕು                                                                           | Tier 1. No source; Native check on the spelling. Palette "ಟೆನ್ಮೊಕು ರಸ್ಟ್".                                                                                                                                                           |
 
 ### 2.2 Materials and oxides
 
-| English | Kannada | Notes |
-| ------- | ------- | ----- |
+| English                                           | Kannada                                                   | Notes                                                                                                                                                                                                                                                                                      |
+| ------------------------------------------------- | --------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| silica (SiO₂)                                     | ಸಿಲಿಕಾ (SiO₂)                                             | **show English**. Tier 2. Kn Wikipedia ("ಸಿಲಿಕಾ ಕಣಗಳು"), Clay Station's "Silica and Grog". Not ಸಿಲಿಕಾನ್ (the element), ಸಿಲಿಕೋನ್ (the rubber) or ಸಿಲಿಕಾ ಜೆಲ್. Category "ಸಿಲಿಕಾ".                                                                                                            |
+| alumina (Al₂O₃)                                   | ಅಲ್ಯೂಮಿನಾ (Al₂O₃)                                         | Tier 2. Usage. Category "ಅಲ್ಯೂಮಿನಾ"; formal "ಅಲ್ಯೂಮಿನಿಯಂ ಆಕ್ಸೈಡ್".                                                                                                                                                                                                                         |
+| boron (B₂O₃)                                      | ಬೋರಾನ್ (B₂O₃)                                             | Tier 3. Usage. Category "ಬೋರಾನ್ ಮೂಲಗಳು"; formal "ಬೋರಾನ್ ಆಕ್ಸೈಡ್".                                                                                                                                                                                                                          |
+| potash (K₂O)                                      | ಪೊಟ್ಯಾಷ್ (K₂O)                                            | **show English**. Tier 1. Clay Station ("CS Potash Feldspar"). Formal ಪೊಟ್ಯಾಸಿಯಂ ಆಕ್ಸೈಡ್. Also the fertiliser: always with K₂O at first use. The safety guide's potash is ಪೊಟ್ಯಾಸಿಯಂ ಕಾರ್ಬೊನೇಟ್: check which. KNaO kept.                                                                   |
+| soda (Na₂O)                                       | ಸೋಡಾ (Na₂O)                                               | **show English**. Tier 1. Clay Station ("CS Soda Feldspar"). Formal ಸೋಡಿಯಂ ಆಕ್ಸೈಡ್. Soda ash is ಸೋಡಾ ಆಷ್; in firing logs "Soda" is a soda firing (2.4). Not soda water.                                                                                                                    |
+| lithium (Li₂O)                                    | ಲಿಥಿಯಂ (Li₂O)                                             | Tier 2. Clay Station ("Lithium Carbonate (G-200)"). Records' "lithia" → ಲಿಥಿಯಾ.                                                                                                                                                                                                            |
+| calcium, lime (CaO)                               | ಕ್ಯಾಲ್ಸಿಯಂ; lime ಸುಣ್ಣ (CaO)                              | Tier 3. Kn Wikipedia ("ಕ್ಯಾಲ್ಸಿಯಂ ಕಾರ್ಬೋನೇಟ್"; the Wikipedia's -ಯಮ್ spelling not used). The UI says "ಕ್ಯಾಲ್ಸಿಯಂ"; ಸುಣ್ಣ only in frit names. Not the fruit (ನಿಂಬೆ); "lime green" → "ತಿಳಿ ಹಸಿರು".                                                                                            |
+| magnesium, magnesia (MgO)                         | ಮೆಗ್ನೀಸಿಯಂ; ಮೆಗ್ನೀಷಿಯಾ (MgO)                              | Tier 3. Clay Station ("CS Magnesium Carbonate"). Formal "ಮೆಗ್ನೀಸಿಯಂ ಆಕ್ಸೈಡ್".                                                                                                                                                                                                              |
+| barium (BaO), barium carbonate                    | ಬೇರಿಯಂ (BaO), ಬೇರಿಯಂ ಕಾರ್ಬೊನೇಟ್                           | Tier 2. Clay Station ("CS Barium Carbonate (G)"). ವಿಷಕಾರಿ (2.7).                                                                                                                                                                                                                           |
+| strontium (SrO)                                   | ಸ್ಟ್ರಾಂಷಿಯಂ (SrO)                                         | Tier 2. Clay Station ("CS Strontium Carbonate (G-200)").                                                                                                                                                                                                                                   |
+| zinc (ZnO), zinc oxide                            | ಜಿಂಕ್ (ZnO), ಜಿಂಕ್ ಆಕ್ಸೈಡ್                                | Tier 2. Clay Station ("CS Zinc Oxide (G-325)"); Kannada ಸತು is the metal, not used. "ಕ್ಯಾಲ್ಸೈನ್ಡ್ ಜಿಂಕ್".                                                                                                                                                                                  |
+| lead (PbO)                                        | ಸೀಸ (PbO); its compounds ಸೀಸದ ಆಕ್ಸೈಡ್, ಸೀಸದ ಫ್ರಿಟ್        | Tier 3 and 4. Kn Wikipedia ("ಸೀಸ … (Lead)"). Never ಸೀಸೆ (a bottle). Setting "ಸೀಸ". Native check: Choices.                                                                                                                                                                                  |
+| iron (red iron oxide, black iron oxide)           | ಐರನ್ (ರೆಡ್ ಐರನ್ ಆಕ್ಸೈಡ್, ಬ್ಲ್ಯಾಕ್ ಐರನ್ ಆಕ್ಸೈಡ್)           | Tier 2. Bhoomi ("Iron Oxide Red", "Iron Oxide Black"); Mysore Enc. "ಕಬ್ಬಿಣ" in the bracket at first use ("ಕಬ್ಬಿಣದ ಆಕ್ಸೈಡ್"). Fe₂O₃ red, Fe₃O₄ black. "Crocus martis" kept. Native check: ಐರನ್ against ಕಬ್ಬಿಣ.                                                                              |
+| titanium, titania (TiO₂)                          | ಟೈಟಾನಿಯಂ; ಟೈಟಾನಿಯಾ (TiO₂)                                 | Tier 3. Usage. Formal ಟೈಟಾನಿಯಂ ಡೈಆಕ್ಸೈಡ್.                                                                                                                                                                                                                                                  |
+| raw materials (materials)                         | ಸಾಮಗ್ರಿಗಳು; a shop's raw materials ಕಚ್ಚಾ ವಸ್ತುಗಳು         | Tier 4. IIFL ("ಕಚ್ಚಾ ವಸ್ತುಗಳು"); Clay Station's menu "Raw Materials". ಸಾಮಗ್ರಿ is also a cooking recipe's ingredients, the sense here. UI page "ಸಾಮಗ್ರಿಗಳು". ಕಚ್ಚಾ ವಸ್ತುಗಳು only for a shop's category (2.9).                                                                               |
+| feldspar (spar)                                   | ಫೆಲ್ಡ್ಸ್ಪಾರ್                                              | **show English**. Tier 2. IIFL ("ಫೆಲ್ಡ್ಸ್ಪಾರ್"); Mysore Enc. writes it with a ZWJ. "spar" in names stays ("Custer Spar"). Category "ಫೆಲ್ಡ್ಸ್ಪಾರ್ ಮತ್ತು ಸ್ಟೋನುಗಳು".                                                                                                                         |
+| potash feldspar, soda feldspar                    | ಪೊಟ್ಯಾಷ್ ಫೆಲ್ಡ್ಸ್ಪಾರ್; ಸೋಡಾ ಫೆಲ್ಡ್ಸ್ಪಾರ್                  | Tier 2. Clay Station ("CS Potash Feldspar", "CS Soda Feldspar"); Mysore Enc. "ಪೊಟ್ಯಾಸಿಯಮ್ ಫೆಲ್ಡ್ಸ್ಪಾರ್", "ಸೋಡಿಯಮ್ ಫೆಲ್ಡ್ಸ್ಪಾರ್" (not used: the bag's names win). ಆರ್ಥೊಕ್ಲೇಸ್, ಆಲ್ಬೈಟ್.                                                                                                     |
+| nepheline syenite                                 | ನೆಫೆಲಿನ್ ಸಯನೈಟ್                                           | **show English**. Tier 2. Clay Station ("CS Nepheline Syenite (G-325)"). No Kannada source.                                                                                                                                                                                                |
+| Cornish stone (Cornwall stone, china stone)       | ಕಾರ್ನಿಷ್ ಸ್ಟೋನ್ (ಕಾರ್ನ್ವಾಲ್ ಸ್ಟೋನ್, ಚೈನಾ ಸ್ಟೋನ್)          | Tier 2. No source. "ಸ್ಟೋನ್" is a material, not a ಕಲ್ಲು (pebble).                                                                                                                                                                                                                           |
+| kaolin (UK: china clay)                           | ಕಾಯೋಲಿನ್ (ಚೈನಾ ಕ್ಲೇ)                                      | **show English**. Tier 2. IIFL ("ಕಾಯೋಲಿನ್ ಜೇಡಿಮಣ್ಣು"), Bhoomi ("China Clay Kaolin Calcined"); Mysore Enc. "ಕೆಯೊಲಿನ್", Kn Wikipedia "ಚೀನೀ ಮಣ್ಣು" (not used: "china" reads as porcelain). Native check on the spelling.                                                                      |
+| calcined                                          | ಕ್ಯಾಲ್ಸೈನ್ಡ್ (ಮೊದಲೇ ಸುಟ್ಟ)                                | Tier 2. Bhoomi ("Calcined"). No Kannada source for the bracket. "ಕ್ಯಾಲ್ಸೈನ್ಡ್ ಕಾಯೋಲಿನ್", "ಕ್ಯಾಲ್ಸೈನ್ಡ್ ಫ್ಲಿಂಟ್", "ಕ್ಯಾಲ್ಸೈನ್ಡ್ ಜಿಂಕ್".                                                                                                                                                     |
+| ball clay                                         | ಬಾಲ್ ಕ್ಲೇ                                                 | **show English**. Tier 2. Bhoomi ("Ball Clay 1 Kg"). "ಬಾಲ್" is part of the name.                                                                                                                                                                                                           |
+| bentonite                                         | ಬೆಂಟೊನೈಟ್                                                 | Tier 2. Usage (Clay Station's "Clay Minerals").                                                                                                                                                                                                                                            |
+| slip clay                                         | ಸ್ಲಿಪ್ ಕ್ಲೇ                                               | Tier 2. No source. Not ಸ್ಲಿಪ್ (2.3).                                                                                                                                                                                                                                                       |
+| whiting                                           | ವೈಟಿಂಗ್ (ಕ್ಯಾಲ್ಸಿಯಂ ಕಾರ್ಬೊನೇಟ್)                           | **show English**. Tier 2. Clay Station ("CS Whiting (G-200)"). Not ಸುಣ್ಣ (lime) or ಸೀಮೆಸುಣ್ಣ (chalk). Native check.                                                                                                                                                                        |
+| dolomite, talc                                    | ಡಾಲಮೈಟ್; ಟಾಲ್ಕ್                                           | Tier 2. Clay Station ("CS Dolomite", "CS Talc"). Both supply MgO. Not ಬಳಪ (slate pencil, soapstone).                                                                                                                                                                                       |
+| wollastonite                                      | ವೊಲಾಸ್ಟನೈಟ್                                               | Tier 2. Clay Station ("CS Wollastonite (G-325)").                                                                                                                                                                                                                                          |
+| flint                                             | ಫ್ಲಿಂಟ್                                                   | **show English**. Tier 2. No source. UK: calcined flint; US recipes: ground quartz.                                                                                                                                                                                                        |
+| quartz (free quartz, free silica)                 | ಕ್ವಾರ್ಟ್ಜ್ (ಸ್ಫಟಿಕ ಶಿಲೆ) (ಮುಕ್ತ ಕ್ವಾರ್ಟ್ಜ್, ಮುಕ್ತ ಸಿಲಿಕಾ) | Tier 2. IIFL ("ಸ್ಫಟಿಕ ಶಿಲೆ"). "ಮುಕ್ತ ಸಿಲಿಕಾ" is free silica (2.7).                                                                                                                                                                                                                         |
+| frit                                              | ಫ್ರಿಟ್                                                    | **show English**. Tier 1. Clay Station ("Ferro Frit 3134"). Plural ಫ್ರಿಟ್ಟುಗಳು, ಫ್ರಿಟ್ಟಿನ (Native check). "ಫ್ರಿಟ್ ಮಾಡಿದ" (fritted); "ಬೇಸ್ ಫ್ರಿಟ್", "ಬೋರಾನ್ ಫ್ರಿಟ್", "ಸೀಸರಹಿತ ಫ್ರಿಟ್", "ಸೀಸದ ಫ್ರಿಟ್ (ಲೆಡ್ ಬೈಸಿಲಿಕೇಟ್)", "ಕ್ಯಾಲ್ಸಿಯಂ ಬೋರೇಟ್ ಫ್ರಿಟ್" (calcium and boron, not a borosilicate). |
+| raw borates (borax, colemanite, ulexite)          | ಕಚ್ಚಾ ಬೋರೇಟುಗಳು (ಬೊರಾಕ್ಸ್, ಕೊಲೆಮನೈಟ್, ಯುಲೆಕ್ಸೈಟ್)         | Tier 2. Kn Wikipedia ("ಬೊರಾಕ್ಸ್"). Gerstley Borate, Gillespie Borate kept.                                                                                                                                                                                                                 |
+| soda ash, bone ash, wood ash                      | ಸೋಡಾ ಆಷ್, ಬೋನ್ ಆಷ್ (ಮೂಳೆ ಬೂದಿ), ಮರದ ಬೂದಿ                  | Tier 2. No source; Clay Station's "Tricalcium Phosphate" is bone ash's chemistry. Only wood ash is ಬೂದಿ in the plain sense.                                                                                                                                                                |
+| colorant                                          | ಕಲರೆಂಟ್ (ಬಣ್ಣಕಾರಕ)                                        | **show English**. Tier 1. No source; Native check. Category "ಕಲರೆಂಟುಗಳು"; UI "ಕಲರೆಂಟುಗಳು ಮತ್ತು ಆಡಿಟಿವುಗಳು".                                                                                                                                                                                |
+| stain                                             | ಸ್ಟೇನ್ (ಸಿದ್ಧ ಬಣ್ಣ)                                       | **show English**. Tier 2. Bhoomi ("Stains"). ಸ್ಟೇನ್ is also a mark: "(ಸಿದ್ಧ ಬಣ್ಣ)" at first use. The verb "stain" (a glaze stops staining) → "ಕಲೆ ಆಗುವುದು".                                                                                                                                |
+| cobalt, copper, chrome, manganese, nickel         | ಕೋಬಾಲ್ಟ್, ಕಾಪರ್ (ತಾಮ್ರ), ಕ್ರೋಮ್, ಮ್ಯಾಂಗನೀಸ್, ನಿಕ್ಕಲ್      | Tier 2. Mysore Enc. ("ಕೋಬಾಲ್ಟ್", "ತಾಮ್ರದ ಆಕ್ಸೈಡ್"); bags "Copper Oxide", "Chrome Oxide". "ಕ್ರೋಮ್" is chromium oxide, not chrome plating.                                                                                                                                                   |
+| rutile                                            | ರೂಟೈಲ್                                                    | Tier 2. Bhoomi ("Rutile 100 gms").                                                                                                                                                                                                                                                         |
+| opacifier                                         | ಒಪಾಸಿಫೈಯರ್ (ಅಪಾರದರ್ಶಕಕಾರಿ)                                | Tier 1. Clay Station's menu "Opacifier". ಜಿರ್ಕಾನ್, ಟಿನ್ ಆಕ್ಸೈಡ್, ಟೈಟಾನಿಯಂ ಡೈಆಕ್ಸೈಡ್.                                                                                                                                                                                                       |
+| zircon                                            | ಜಿರ್ಕಾನ್                                                  | Tier 2. Usage. Zirconium silicate; not ಜಿರ್ಕೋನಿಯಾ (ZrO₂).                                                                                                                                                                                                                                  |
+| suspender                                         | ಸಸ್ಪೆಂಡರ್ (ಗ್ಲೇಜನ್ನು ನೀರಿನಲ್ಲಿ ತೇಲಿಸಿಡುವ ವಸ್ತು)           | Tier 1. No source; Native check. ಸಸ್ಪೆಂಡರ್ alone is braces: give the bracket at first use. Category "ಸಸ್ಪೆಂಡರುಗಳು".                                                                                                                                                                        |
+| refractory                                        | ರಿಫ್ರ್ಯಾಕ್ಟರಿ (ತಾಪಧಾರಕ)                                   | Tier 1. Mysore Enc. ("ತಾಪಧಾರಕಗಳು (ರಿಫ್ರ್ಯಾಕ್ಟರೀಸ್)"). Of materials and kiln parts.                                                                                                                                                                                                         |
+| softening point, half-sphere point (fusion, flow) | ಸಾಫ್ಟನಿಂಗ್ ಪಾಯಿಂಟ್, ಹಾಫ್-ಸ್ಫಿಯರ್ ಪಾಯಿಂಟ್ (ಫ್ಯೂಷನ್, ಫ್ಲೋ)  | Tier 1. No source; the frit makers' English. "Fusion" on a Ferro sheet is a melting point (ಕರಗುವ ಬಿಂದು), not nuclear fusion (ಪರಮಾಣು ಸಮ್ಮಿಳನ).                                                                                                                                              |
+| substitute (stand-in, replacement)                | ಬದಲಿ                                                      | Tier 4. Usage. See "like for like" (2.8).                                                                                                                                                                                                                                                  |
 
 ### 2.3 Clay, ware and firing stages
 
-| English | Kannada | Notes |
-| ------- | ------- | ----- |
+| English                         | Kannada                                                       | Notes                                                                                                                                                                                                                                                                          |
+| ------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| clay body (body)                | ಕ್ಲೇ ಬಾಡಿ (ಮೈಕಟ್ಟು)                                           | **show English**. Tier 1. Mysore Enc. ("ಪಿಂಗಾಣಿ ಮೈಕಟ್ಟು"). Not a human or a car's body: "ಗ್ಲೇಜ್ ಬಾಡಿಯೊಳಗೆ ಕರಗಿ ಬೆರೆಯುತ್ತದೆ", "ಬಾಡಿ ಸ್ಟೇನ್". ಮಣ್ಣು / ಜೇಡಿಮಣ್ಣು is clay in general.                                                                                              |
+| clay (in general; your clay)    | ಜೇಡಿಮಣ್ಣು                                                     | Tier 4. Kn Wikipedia, IIFL. "ನಿಮ್ಮ ಜೇಡಿಮಣ್ಣು ಮತ್ತು ಗ್ಲೇಜ್ ಲೇಬಲುಗಳು", "ಈ ಜೇಡಿಮಣ್ಣಿನ ಮೇಲೆ", "ಜೇಡಿಮಣ್ಣಿನ ಮೇಲೆ ಕರಗಿ ಅಂಟಿಕೊಳ್ಳುವ". ಕ್ಲೇ stays in names (ಬಾಲ್ ಕ್ಲೇ, ಚೈನಾ ಕ್ಲೇ, ಸ್ಲಿಪ್ ಕ್ಲೇ, ಕ್ಲೇ ಬಾಡಿ), the materials category (ಕ್ಲೇಗಳು) and a shop's goods, as the reviews settled. |
+| ware (pot, piece)               | ಪಾತ್ರೆಗಳು (ಮಡಕೆ, ಪೀಸ್)                                        | Tier 4. Mysore Enc. ("ಪಿಂಗಾಣಿ ಪಾತ್ರೆ"), PARI ("ಮಡಕೆ"). "ಹಸಿ ಪಾತ್ರೆಗಳು", "ಬಿಸ್ಕ್ ಮಾಡಿದ ಪಾತ್ರೆಗಳು", "ಗ್ಲೇಜ್ ಮಾಡಿದ ಪಾತ್ರೆಗಳು"; a piece is "ಪಾತ್ರೆ" or "ಪೀಸ್". Not software or merchandise.                                                                                        |
+| functional ware                 | ಊಟ ಮತ್ತು ಪಾನೀಯದ ಪಾತ್ರೆಗಳು                                     | Tier 4. No source. Not "ಕೆಲಸ ಮಾಡುವ".                                                                                                                                                                                                                                           |
+| hollowware, flatware            | ಆಳದ ಪಾತ್ರೆಗಳು (ಕಪ್, ಬಟ್ಟಲು, ಜಗ್); ಚಪ್ಪಟೆ ಪಾತ್ರೆಗಳು (ತಟ್ಟೆಗಳು) | Tier 4. No source. "flatware" here is plates, not cutlery (ಚಮಚ, ಫೋರ್ಕ್).                                                                                                                                                                                                       |
+| earthenware                     | ಅರ್ಥನ್ವೇರ್ (ಮೃದ್ವಸ್ತು)                                        | **show English**. Tier 1. Mysore Enc. ("ಮೃದ್ವಸ್ತುಗಳು", glossed "ಅರ್ತನ್ವೇರ್"). Not ಟೆರಕೋಟ (Pitfalls). Native check on the spelling.                                                                                                                                             |
+| stoneware                       | ಸ್ಟೋನ್ವೇರ್ (ಕಲ್ಲುಮಡಕೆ)                                        | **show English**. Tier 1. Mysore Enc. ("ಕಲ್ಲುಮಡಕೆ ಕುಡಿಕೆಗಳು (ಸ್ಟೋನ್ವೇರ್)"); Clay Station's "Mayco Stoneware Glaze".                                                                                                                                                            |
+| porcelain                       | ಪೋರ್ಸಿಲೇನ್ (ಪಿಂಗಾಣಿ)                                          | Tier 1. Mysore Enc., Kn Wikipedia ("ಪಿಂಗಾಣಿ"). Never ಪಿಂಗಾಣಿ alone, which is any crockery (Google suggest). Native check: Choices.                                                                                                                                             |
+| vitreous, vitrification         | ವಿಟ್ರಿಯಸ್ (ಕಾಚೀಕೃತ); ವಿಟ್ರಿಫಿಕೇಶನ್ (ಕಾಚೀಕರಣ)                  | Tier 1. Mysore Enc. ("ಕಾಚೀಕೃತ (ವಿಟ್ರಿಯಸ್)", "(ವಿಟ್ರಿಫಿಕೇಶನ್)"). ಕಾಚೀಕರಣ is formed from ಕಾಚೀಕೃತ (No source).                                                                                                                                                                    |
+| porous, porosity                | ಸರಂಧ್ರ; ಸರಂಧ್ರತೆ                                              | Tier 3. Mysore Enc. ("ಸಾಮಾನ್ಯವಾಗಿ ಸರಂಧ್ರಗಳು", "ಸರಂಧ್ರತಾ ಪರೀಕ್ಷೆ"). "ಬಿಸ್ಕ್ ಸರಂಧ್ರವಾಗಿಯೇ ಇರಬೇಕು".                                                                                                                                                                               |
+| mature, maturity                | ಮೆಚ್ಯೂರ್ ಆಗು (ಪೂರ್ತಿ ಪಕ್ವವಾಗು); ಪಕ್ವತೆ                        | Tier 1. No source; Native check. Not age.                                                                                                                                                                                                                                      |
+| plastic, plasticity             | ಮೆತುವಾದ; ನಮ್ಯತೆ                                               | Tier 3, an exception to tier 1: ಪ್ಲಾಸ್ಟಿಕ್ means the polymer (the Mysore Enc.'s "ಪ್ಲಾಸ್ಟಿಕ್ ಸ್ಥಿತಿ" is not used). Kn Wikipedia ("ಮೆತುವಾಗಿರುತ್ತದೆ"); ನಮ್ಯತೆ: No source; Native check.                                                                                           |
+| greenware                       | ಗ್ರೀನ್ವೇರ್ (ಹಸಿ ಪಾತ್ರೆ)                                       | **show English**. Tier 1. No source. Not green; not ಬಿಸ್ಕ್.                                                                                                                                                                                                                    |
+| leather-hard                    | ಲೆದರ್-ಹಾರ್ಡ್ (ಅರೆಒಣಗಿದ)                                       | Tier 1. No source; Native check.                                                                                                                                                                                                                                               |
+| bone dry                        | ಬೋನ್-ಡ್ರೈ (ಪೂರ್ತಿ ಒಣಗಿದ)                                      | Tier 1. No source.                                                                                                                                                                                                                                                             |
+| bisque (UK: biscuit)            | ಬಿಸ್ಕ್ (ಮೊದಲ ಸುಡುವಿಕೆ)                                        | **show English**. Tier 1. No source; the Mysore Enc.'s "ಬೆಂದ ಪಾತ್ರೆ" is not used. "ಬಿಸ್ಕ್ ಫೈರಿಂಗ್", "ಬಿಸ್ಕ್ ಮಾಡಿದ", "ಸಾಫ್ಟ್/ಹಾರ್ಡ್ ಬಿಸ್ಕ್". Not ಬಿಸ್ಕತ್ತು; not ಹಸಿ (unfired).                                                                                                  |
+| glaze firing (UK: glost firing) | ಗ್ಲೇಜ್ ಫೈರಿಂಗ್ (ಎರಡನೇ ಸುಡುವಿಕೆ)                               | **show English**. Tier 1. Usage (Clay Station's "Firing Services").                                                                                                                                                                                                            |
+| once-firing (single firing)     | ಸಿಂಗಲ್ ಫೈರಿಂಗ್ (ಒಂದೇ ಬಾರಿ ಸುಡುವುದು)                           | **show English**. Tier 1. No source. "ಒಂದೇ" as a word.                                                                                                                                                                                                                         |
+| slip                            | ಸ್ಲಿಪ್ (ನೀರಿನಲ್ಲಿ ಕದಡಿದ ಮಣ್ಣು)                                | Tier 1. IIFL ("ಸ್ಲಿಪ್ ಎರಕದ ಅಚ್ಚುಗಳು"). Not slipping (ಜಾರುವುದು).                                                                                                                                                                                                                |
+| engobe                          | ಎಂಗೋಬ್                                                        | Tier 1. No source.                                                                                                                                                                                                                                                             |
+| underglaze                      | ಅಂಡರ್ಗ್ಲೇಜ್                                                   | Tier 1. Clay Station's menu "Underglazes". "ಅಂಡರ್ಗ್ಲೇಜ್ ಪೆನ್ಸಿಲ್".                                                                                                                                                                                                             |
+| foot                            | ತಳ (ಪಾತ್ರೆಯ ತಳ)                                               | Tier 4. No source. "ತಳಕ್ಕೆ ಗ್ಲೇಜ್ ಹಚ್ಚಬೇಡಿ" (dry-footing); "ತಳವನ್ನು ಇನ್ನಷ್ಟು ಅಗಲವಾಗಿ ಬಿಡಿ" = a wider unglazed band. Not ಕಾಲು (the body part).                                                                                                                                  |
+| low fire, mid fire, high fire   | ಲೋ ಫೈರ್, ಮಿಡ್ ಫೈರ್, ಹೈ ಫೈರ್                                   | Tier 1. Clay Station's clay menu ("Low Fire, Mid Range, High Fire"). Nouns and adjectives ("ಮಿಡ್-ಫೈರ್ ಗ್ಲೇಜುಗಳು"). Never add a cone the English lacks.                                                                                                                         |
+| raku                            | ರಾಕು                                                          | Tier 1. No source.                                                                                                                                                                                                                                                             |
 
 ### 2.4 Kilns, cones and firing
 
-| English | Kannada | Notes |
-| ------- | ------- | ----- |
+| English                                                                     | Kannada                                                                           | Notes                                                                                                                                                                                                                                                                                                |
+| --------------------------------------------------------------------------- | --------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| electric kiln, gas kiln, manual kiln                                        | ಎಲೆಕ್ಟ್ರಿಕ್ ಕಿಲ್ನ್, ಗ್ಯಾಸ್ ಕಿಲ್ನ್, ಕೈಯಿಂದ ನಿಯಂತ್ರಿಸುವ ಕಿಲ್ನ್                      | Tier 1. Clay Station ("Skutt Kilns", "Nabertherm Top Loading Kilns"); Kn Wikipedia ("ಕಿಲ್ನ್ (ಆವಿಗೆ)"). Plural ಕಿಲ್ನುಗಳು; ಕಿಲ್ನಿನಲ್ಲಿ. Never ಮ್ಯಾನುಯಲ್ ಕಿಲ್ನ್. Native check: Choices.                                                                                                                 |
+| firing, fire (verb), load                                                   | ಫೈರಿಂಗ್; ಸುಡು; ಲೋಡ್                                                               | Tier 1 and 4. Mysore Enc. ("ಸುಡುತ್ತಾರೆ"), PARI ("ಭಟ್ಟಿಯಲ್ಲಿ ಸುಡಲು"). "ಕೋನ್ 6ರವರೆಗೆ ಸುಡಿ"; "ಒಂದು ಫೈರಿಂಗ್" = one load fired; loading, unloading → ಕಿಲ್ನ್ ತುಂಬುವುದು, ಕಿಲ್ನ್ ಖಾಲಿ ಮಾಡುವುದು. Never ಗುಂಡಿನ ದಾಳಿ (Pitfalls).                                                                                |
+| kiln shelf (shelf)                                                          | ಕಿಲ್ನ್ ಶೆಲ್ಫ್ (ಶೆಲ್ಫ್)                                                            | Tier 1. Clay Station's "Kiln Accessories". "ಶೆಲ್ಫ್" also means the materials on hand (2.8).                                                                                                                                                                                                          |
+| element                                                                     | ಎಲಿಮೆಂಟ್ (ಬಿಸಿ ಮಾಡುವ ಸುರುಳಿ)                                                      | Tier 1. No source. Chemical elements in the Materials form are ಧಾತುಗಳು.                                                                                                                                                                                                                              |
+| cone (pyrometric cone)                                                      | ಕೋನ್ (ಶಂಕು)                                                                       | **show English**. Tier 1. Clay Station ("Orton Cones"), Bhoomi ("Cones Pyrometric"), Google suggest. Not an ice-cream cone or a mehndi cone (Google suggest: "ಕೋನ್ ಮೆಹಂದಿ").                                                                                                                         |
+| cone number, cone chart                                                     | ಕೋನ್ ಸಂಖ್ಯೆ, ಕೋನ್ ಚಾರ್ಟ್                                                          | Tier 1. Usage. 022 to 42; leading zeros kept; "06" read "ಸೊನ್ನೆ ಆರು". Orton's chart.                                                                                                                                                                                                                 |
+| self-supporting, large and small (junior) cones, bars                       | ಸೆಲ್ಫ್-ಸಪೋರ್ಟಿಂಗ್ ಕೋನುಗಳು; ದೊಡ್ಡ ಮತ್ತು ಸಣ್ಣ (ಜೂನಿಯರ್) ಕೋನುಗಳು; ಬಾರುಗಳು            | Tier 1. Bhoomi ("Large Cone 6", "Self-supporting cones" as the IN research cites them).                                                                                                                                                                                                              |
+| witness cone                                                                | ವಿಟ್ನೆಸ್ ಕೋನ್                                                                     | **show English**. Tier 1. No source.                                                                                                                                                                                                                                                                 |
+| cone pack                                                                   | ಕೋನ್ ಪ್ಯಾಕ್                                                                       | **show English**. Tier 1. No source.                                                                                                                                                                                                                                                                 |
+| guide cone, firing cone, guard cone                                         | ಗೈಡ್ ಕೋನ್, ಫೈರಿಂಗ್ ಕೋನ್, ಗಾರ್ಡ್ ಕೋನ್                                              | Tier 1. No source. ಗೈಡ್ here is part of the cone's name, not the app's guides (ಮಾರ್ಗದರ್ಶಿ).                                                                                                                                                                                                          |
+| heatwork                                                                    | ಹೀಟ್ವರ್ಕ್ (ತಾಪ ಮತ್ತು ಸಮಯದ ಒಟ್ಟು ಪರಿಣಾಮ)                                           | **show English**. Tier 1. No source.                                                                                                                                                                                                                                                                 |
+| heating rate (rate, climb), peak                                            | ತಾಪಮಾನ ಏರುವ ದರ (ದರ); ಪೀಕ್ (ಅತಿ ಹೆಚ್ಚಿನ ತಾಪಮಾನ)                                    | Tier 4. No source. Chart columns "ನಿಧಾನ", "ಮಧ್ಯಮ", "ವೇಗ"; log field "ದರ". Not ಗರಿಷ್ಠ, which the law keeps.                                                                                                                                                                                           |
+| ramp                                                                        | ರ್ಯಾಂಪ್                                                                           | **show English**. Tier 1. No source. Log field "ರ್ಯಾಂಪ್".                                                                                                                                                                                                                                            |
+| hold (soak)                                                                 | ಹೋಲ್ಡ್ (ಒಂದೇ ತಾಪಮಾನದಲ್ಲಿ ಇಡುವುದು); soak ಸೋಕ್ (ಹೋಲ್ಡ್)                             | **show English**. Tier 1. No source. "10 ನಿಮಿಷದ ಹೋಲ್ಡ್"; where the English says soak, "ಸೋಕ್ (ಹೋಲ್ಡ್)". Never ನೆನೆಸು for a firing (soaking in water, slaking or an acid test, where it is right).                                                                                                     |
+| glow, glowing (a kiln, a peephole)                                          | ಕೆಂಪು ಬೆಳಕು; ಕೆಂಪು ಬೆಳಕು ಕಾಣುವ                                                    | Tier 4. "ಯಾವುದೇ ಕೆಂಪು ಬೆಳಕು ಕಂಡ ಕೂಡಲೇ", "ಇನ್ನೂ ಕೆಂಪು ಬೆಳಕು ಕಾಣುತ್ತಿರುವ ಕಿಲ್ನ್", "ಕೆಂಪು ಬೆಳಕು ಕಾಣುವ ಪೀಪ್ಹೋಲ್". Not ಹೊಳೆಯುವ (shiny, the gloss of a glaze).                                                                                                                                             |
+| schedule (firing schedule, program, preset, segment)                        | ಫೈರಿಂಗ್ ಶೆಡ್ಯೂಲ್ (ಪ್ರೋಗ್ರಾಮ್, ಪ್ರೀಸೆಟ್, ಸೆಗ್ಮೆಂಟ್)                                | Tier 1. No source. Preset names stay as on the controller ("Slow Bisque"). Log field "ಸೆಗ್ಮೆಂಟ್".                                                                                                                                                                                                    |
+| controller                                                                  | ಕಂಟ್ರೋಲರ್                                                                         | Tier 1. No source. Setting: "ತಾಪಮಾನದ ಪ್ರಕಾರ, ಕಿಲ್ನ್ ಕಂಟ್ರೋಲರಿನ ಪ್ರೋಗ್ರಾಮಿನಂತೆ".                                                                                                                                                                                                                      |
+| cone offset (offset)                                                        | ಕೋನ್ ಆಫ್ಸೆಟ್                                                                      | Tier 1. No source.                                                                                                                                                                                                                                                                                   |
+| kiln sitter (Kiln-Sitter, sitter)                                           | ಕಿಲ್ನ್ ಸಿಟ್ಟರ್ (Kiln-Sitter)                                                      | **show English**. Tier 1. No source. Kiln-Sitter is Dawson's trademark, kept in Latin. Not a babysitter.                                                                                                                                                                                             |
+| sensing rod, claw, weight, trigger plate, cone supports, tube, firing gauge | ಸೆನ್ಸಿಂಗ್ ರಾಡ್, ಕ್ಲಾ, ವೇಟ್, ಟ್ರಿಗರ್ ಪ್ಲೇಟ್, ಕೋನ್ ಸಪೋರ್ಟುಗಳು, ಟ್ಯೂಬ್, ಫೈರಿಂಗ್ ಗೇಜ್ | Tier 1. No source; the parts as a Kiln-Sitter manual names them. The sitter's weight is "ವೇಟ್ (ತೂಕ)".                                                                                                                                                                                                |
+| limit timer                                                                 | ಲಿಮಿಟ್ ಟೈಮರ್                                                                      | Tier 1. No source.                                                                                                                                                                                                                                                                                   |
+| infinite switch (Off, Low, Medium, High)                                    | ಇನ್ಫಿನಿಟ್ ಸ್ವಿಚ್ (Off, Low, Medium, High)                                         | Tier 1. No source. The positions are the labels printed on the switch, kept in Latin as Indian kilns print them, with a Kannada gloss at the first use in each guide section: Off (ಆಫ್), Low (ಕಡಿಮೆ), Medium (ಮಧ್ಯಮ), High (ಹೆಚ್ಚು); controller presets (Slow Bisque) stay as printed. Native check. |
+| turn off, switch off, shut off (a kiln, a switch, a breaker, a setting)     | ಆಫ್ ಮಾಡು; it turns off ಆಫ್ ಆಗು; turn on ಆನ್ ಮಾಡು                                  | Tier 1. "ಎಲ್ಲಾ ಸ್ವಿಚುಗಳನ್ನು ಆಫ್ ಮಾಡಿ", "ಕಿಲ್ನ್ ಆಫ್ ಆಗುತ್ತದೆ", "ಎರಡು ಹಂತದ ಸೈನ್ ಇನ್ ಆಫ್ ಮಾಡಿ". **Never ಆರಿಸು**, which is also "choose": the firing guide once read "turn all switches off" as "select all switches". ಆರಿಸು / ಆಯ್ಕೆ ಮಾಡು only where the English says choose, select or pick.            |
+| pyrometer, thermocouple                                                     | ಪೈರೋಮೀಟರ್; ಥರ್ಮೋಕಪಲ್                                                              | Tier 1. No source. Log fields "ಪ್ರೋಬ್ {n}".                                                                                                                                                                                                                                                          |
+| peephole (spy hole)                                                         | ಪೀಪ್ಹೋಲ್ (ಇಣುಕು ರಂಧ್ರ)                                                            | Tier 1. No source. Log field "ಪೀಪ್ಹೋಲ್".                                                                                                                                                                                                                                                             |
+| vent, downdraft vent, hood vent                                             | ವೆಂಟ್; ಡೌನ್ಡ್ರಾಫ್ಟ್ ವೆಂಟ್; ಹುಡ್ ವೆಂಟ್                                             | Tier 1. No source. "ಕಿಲ್ನನ್ನು ವೆಂಟ್ ಮಾಡಿ"; a vent hole is "ವೆಂಟ್ ರಂಧ್ರ".                                                                                                                                                                                                                             |
+| candling (preheat)                                                          | ಕ್ಯಾಂಡ್ಲಿಂಗ್ (ತೇವ ಹೋಗಲು ನಿಧಾನ ಬಿಸಿ)                                               | **show English**. Tier 1. No source. The "mirror test" → "ಕನ್ನಡಿ ಪರೀಕ್ಷೆ".                                                                                                                                                                                                                           |
+| burnout                                                                     | ಬರ್ನ್ಔಟ್ (ಇಂಗಾಲ ಮತ್ತು ಸಾವಯವ ವಸ್ತು ಸುಟ್ಟುಹೋಗುವುದು)                                 | Tier 1. No source. "ಅಪೂರ್ಣ ಬರ್ನ್ಔಟ್".                                                                                                                                                                                                                                                                |
+| red heat, dull red                                                          | ಕೆಂಪು ಕಾವು; ಮಂದ ಕೆಂಪು ಕಾವು                                                        | Tier 4. No source.                                                                                                                                                                                                                                                                                   |
+| quartz inversion                                                            | ಕ್ವಾರ್ಟ್ಜ್ ಇನ್ವರ್ಷನ್                                                              | **show English**. Tier 1. No source. At 573 °C (1063 °F).                                                                                                                                                                                                                                            |
+| oxidation                                                                   | ಆಕ್ಸಿಡೇಷನ್ (ಉತ್ಕರ್ಷಣ)                                                             | **show English**. Tier 1. Kn Wikipedia ("ಉತ್ಕರ್ಷಣ - ಅಪಕರ್ಷಣ"). "ಆಕ್ಸಿಡೇಷನ್ ಫೈರಿಂಗ್".                                                                                                                                                                                                                 |
+| reduction                                                                   | ರಿಡಕ್ಷನ್ (ಅಪಕರ್ಷಣ)                                                                | **show English**. Tier 1. Kn Wikipedia ("ಉತ್ಕರ್ಷಣ - ಅಪಕರ್ಷಣ"). Not a discount or a decrease (ಕಡಿತ, ರಿಯಾಯಿತಿ).                                                                                                                                                                                        |
+| atmosphere                                                                  | ಕಿಲ್ನಿನ ವಾತಾವರಣ                                                                   | Tier 4. No source. Log field "ವಾತಾವರಣ".                                                                                                                                                                                                                                                              |
+| drop-and-hold                                                               | ಡ್ರಾಪ್-ಅಂಡ್-ಹೋಲ್ಡ್                                                                | **show English**. Tier 1. No source.                                                                                                                                                                                                                                                                 |
+| slow cooling (slow cool)                                                    | ನಿಧಾನವಾಗಿ ತಂಪಾಗಿಸುವುದು (ಸ್ಲೋ ಕೂಲಿಂಗ್)                                             | Tier 4. No source.                                                                                                                                                                                                                                                                                   |
+| underfired, overfired                                                       | ಕಡಿಮೆ ಸುಟ್ಟ; ಹೆಚ್ಚು ಸುಟ್ಟ                                                         | Tier 4. No source. Never ಹಸಿ (unfired).                                                                                                                                                                                                                                                              |
+| kiln wash                                                                   | ಕಿಲ್ನ್ ವಾಷ್                                                                       | Tier 1. No source. Not washing.                                                                                                                                                                                                                                                                      |
+| stilt                                                                       | ಸ್ಟಿಲ್ಟ್                                                                          | Tier 1. No source.                                                                                                                                                                                                                                                                                   |
+| cookie                                                                      | ಕುಕಿ (ತೊಟ್ಟಿಕ್ಕುವ ಗ್ಲೇಜನ್ನು ಹಿಡಿಯುವ ಬಿಸ್ಕ್ ತಟ್ಟೆ)                                 | Tier 1. No source. ಕುಕಿ is also a biscuit: the bracket at first use.                                                                                                                                                                                                                                 |
+| Seger cones, Staffordshire cones, Bullers rings, Holdcroft bars             | ಸೆಗರ್ ಕೋನುಗಳು, Staffordshire ಕೋನುಗಳು, Bullers ರಿಂಗುಗಳು, Holdcroft ಬಾರುಗಳು         | Never converted to Orton numbers. Seger in Kannada letters (Cones); the other names in Latin (section 3); "rings" and "bars" translated.                                                                                                                                                             |
+| Damper, Primary Air, Secondary Air, Burner, Pilots, Blower                  | ಡ್ಯಾಂಪರ್, ಪ್ರೈಮರಿ ಏರ್, ಸೆಕೆಂಡರಿ ಏರ್, ಬರ್ನರ್, ಪೈಲಟ್, ಬ್ಲೋವರ್                       | Tier 1. Firing-log fields. "ಪೈಲಟ್" are pilot flames, not people.                                                                                                                                                                                                                                     |
+| Ox Probe                                                                    | ಆಕ್ಸಿಜನ್ ಪ್ರೋಬ್                                                                   | Tier 1.                                                                                                                                                                                                                                                                                              |
+| Draw Tile                                                                   | ಡ್ರಾ ಟೈಲ್                                                                         | Tier 1. No source; a test piece pulled out during the firing.                                                                                                                                                                                                                                        |
+| Delta, Temp Diff, Cones Top, Cones Bottom                                   | ಡೆಲ್ಟಾ, ತಾಪಮಾನ ವ್ಯತ್ಯಾಸ, ಮೇಲಿನ ಕೋನುಗಳು, ಕೆಳಗಿನ ಕೋನುಗಳು                            | Tier 1 and 4.                                                                                                                                                                                                                                                                                        |
+| Salt, Soda, Sawdust                                                         | ಉಪ್ಪು, ಸೋಡಾ, ಮರದ ಹೊಟ್ಟು                                                           | Tier 4. "ಸೋಡಾ" here is a soda firing, not Na₂O.                                                                                                                                                                                                                                                      |
+| Ring {n}                                                                    | ರಿಂಗ್ {n}                                                                         | A pyrometric (Bullers or Holdcroft) ring reading, not a jewellery ring (ಉಂಗುರ).                                                                                                                                                                                                                      |
+| plaque, pat of clay, bending face, dry-footing                              | ಪ್ಲಾಕ್; ಮಣ್ಣಿನ ಬಿಲ್ಲೆ; ಬಾಗುವ ಮುಖ; ಡ್ರೈ-ಫೂಟಿಂಗ್                                    | Tier 1 and 4. From the firing translation. Not a plaque on a wall.                                                                                                                                                                                                                                   |
+| preheat, plunger, relay                                                     | ಪ್ರಿಹೀಟ್; ಪ್ಲಂಜರ್; ರಿಲೇ                                                           | Tier 1. From the firing translation.                                                                                                                                                                                                                                                                 |
 
 ### 2.5 Defects and glaze fit
 
-| English | Kannada | Notes |
-| ------- | ------- | ----- |
+| English                     | Kannada                                             | Notes                                                                                                                                                          |
+| --------------------------- | --------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| glaze fit (fit)             | ಗ್ಲೇಜ್ ಫಿಟ್ (ಗ್ಲೇಜ್ ಮತ್ತು ಬಾಡಿಯ ಹೊಂದಾಣಿಕೆ)          | **show English**. Tier 1. No source. Not fitness or a seizure: "ನಿಮ್ಮ ಕ್ಲೇ ಬಾಡಿಗೆ ಅಷ್ಟೇ ಹೊಂದಿಕೊಂಡಿತು". "Over-compressed" → "ಅಗತ್ಯಕ್ಕಿಂತ ಹೆಚ್ಚು ಒತ್ತಡದಲ್ಲಿರುವ". |
+| defect                      | ದೋಷ                                                 | Tier 4. Usage.                                                                                                                                                 |
+| crazing (craze)             | ಕ್ರೇಜಿಂಗ್ (ಸೂಕ್ಷ್ಮ ಬಿರುಕುಗಳ ಜಾಲ)                    | **show English**. Tier 1. No source; Native check. Not "crazy".                                                                                                |
+| crackle                     | ಕ್ರ್ಯಾಕಲ್                                           | Tier 1. No source. Crazing made on purpose (raku).                                                                                                             |
+| shivering                   | ಶಿವರಿಂಗ್ (ಅಂಚುಗಳಿಂದ ಗ್ಲೇಜ್ ಚಕ್ಕೆಯಾಗಿ ಕಿತ್ತುಬರುವುದು) | **show English**. Tier 1. No source; Native check (the loanword may read as a name). Not shivering with cold (ನಡುಕ). The flakes are sharp.                     |
+| crawling (crawl)            | ಕ್ರಾಲಿಂಗ್ (ಗ್ಲೇಜ್ ಹಿಂದಕ್ಕೆ ಸರಿದು ಉಂಡೆಗಟ್ಟುವುದು)     | **show English**. Tier 1. No source; Native check. The home-safety guide's crawling babies → "ಅಂಬೆಗಾಲಿಡುವ ಮಕ್ಕಳು".                                             |
+| pinholing (pinholes)        | ಪಿನ್ಹೋಲ್ (ಸೂಜಿ ತೂತುಗಳು)                             | **show English**. Tier 1. No source; Native check.                                                                                                             |
+| blistering (blisters)       | ಬ್ಲಿಸ್ಟರಿಂಗ್ (ಗುಳ್ಳೆಗಳು)                            | Tier 1. No source.                                                                                                                                             |
+| running (run, runny)        | ಗ್ಲೇಜ್ ಹರಿಯುವುದು (ಹರಿಯುವ)                           | Tier 4. No source. Not running as in operating ("ವೆಂಟ್ ಚಾಲನೆಯಲ್ಲಿದೆ"): both occur.                                                                             |
+| devitrification             | ಡಿವಿಟ್ರಿಫಿಕೇಶನ್ (ತಂಪಾಗುವಾಗ ಹರಳುಗಳು ಬೆಳೆಯುವುದು)      | **show English**. Tier 1. No source.                                                                                                                           |
+| dunting                     | ಡಂಟಿಂಗ್ (ಬಿಸಿ ಅಥವಾ ತಂಪಾಗುವಾಗ ಬಿರುಕು)                | **show English**. Tier 1. No source; Native check.                                                                                                             |
+| leaching (leach, leachable) | ಲೀಚಿಂಗ್ (ಲೋಹಗಳ ಸೋರಿಕೆ)                              | **show English**. Tier 1. No source; Native check. Metals dissolving out of a fired glaze into food or drink. Not the leech (ಜಿಗಣೆ).                           |
+| specks                      | ಕಪ್ಪು ಚುಕ್ಕೆಗಳು                                     | Tier 4. No source.                                                                                                                                             |
+| milky, clouding             | ಹಾಲಿನಂತಹ; ಮಬ್ಬಾಗುವಿಕೆ                               | Tier 4. No source.                                                                                                                                             |
+| dry, chalky                 | ಒರಟು, ಸೀಮೆಸುಣ್ಣದಂತಹ                                 | Tier 4. No source.                                                                                                                                             |
+| breaks (over edges)         | ಅಂಚುಗಳಲ್ಲಿ ಬಣ್ಣ ಬದಲಾಗುವುದು (ಬ್ರೇಕ್)                 | Tier 4. No source. Not ಒಡೆಯುವುದು (breaking apart).                                                                                                             |
+| flashing (flash)            | ಫ್ಲ್ಯಾಶಿಂಗ್                                         | Tier 1. No source. Not a camera flash.                                                                                                                         |
+| thermal shock               | ಥರ್ಮಲ್ ಶಾಕ್ (ಉಷ್ಣ ಆಘಾತ)                             | Tier 1. No source.                                                                                                                                             |
 
 ### 2.6 Making and applying glaze
 
-| English | Kannada | Notes |
-| ------- | ------- | ----- |
+| English                                              | Kannada                                                                   | Notes                                                                                                                                                                                                                                                                                       |
+| ---------------------------------------------------- | ------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| batch                                                | ಬ್ಯಾಚ್                                                                    | Tier 1. Usage. "ಬ್ಯಾಚಿಗೆ ಹೊಂದಿಸಿ", "ಬ್ಯಾಚ್ ತೂಕ", "ಬ್ಯಾಚ್ ಗಾತ್ರ", "ಬ್ಯಾಚ್ ಪಟ್ಟಿ". A supplier's run: "ಬ್ಯಾಚಿನಿಂದ ಬ್ಯಾಚಿಗೆ". Not baking.                                                                                                                                                       |
+| batch recipe                                         | ಬ್ಯಾಚ್ ರೆಸಿಪಿ                                                             | Tier 1. Usage (Google suggest: "cone 6 glaze recipes"). Never ಸೂತ್ರ.                                                                                                                                                                                                                        |
+| base (base glaze), on top                            | ಬೇಸ್ ಗ್ಲೇಜ್ (ಬೇಸ್); ಬೇಸಿನ ಮೇಲೆ                                            | Tier 1. No source. Not a chemical base (ಕ್ಷಾರ). "ಬೇಸ್ ಫ್ರಿಟ್"; UI "ಬೇಸಿನ ಮೇಲೆ", "ಬೇಸಿನ %".                                                                                                                                                                                                  |
+| percent, parts (parts by weight)                     | ಶೇಕಡಾ, ಭಾಗಗಳು (ತೂಕದ ಭಾಗಗಳು)                                               | Tier 4. Usage. UI "ಬೇಸಿನ %", "ಭಾಗಗಳು", "ಗ್ರಾಂ"; column "ಭಾಗಗಳು".                                                                                                                                                                                                                            |
+| scale (weighing)                                     | ತಕ್ಕಡಿ                                                                    | Tier 4. Kn Wikipedia (article ತಕ್ಕಡಿ, precision and weighing). "0.01 g ವರೆಗೆ ತೋರಿಸುವ ತಕ್ಕಡಿ". Scaling a recipe is another word (2.8).                                                                                                                                                       |
+| tare                                                 | ಟೇರ್ (ಖಾಲಿ ಪಾತ್ರೆಯೊಂದಿಗೆ ಸೊನ್ನೆ ಮಾಡುವುದು)                                 | Tier 1. No source.                                                                                                                                                                                                                                                                          |
+| slurry                                               | ಸ್ಲರಿ (ನೀರಿನಲ್ಲಿ ಕಲಸಿದ ಗ್ಲೇಜ್)                                            | **show English**. Tier 1. No source.                                                                                                                                                                                                                                                        |
+| slake                                                | ಕಲಕದೆ ನೀರಿನಲ್ಲಿ ನೆನೆಯಲು ಬಿಡುವುದು                                          | Tier 4. No source. Not quenching thirst (ದಾಹ ತೀರಿಸುವುದು).                                                                                                                                                                                                                                   |
+| sieve (UK also: lawn)                                | ಜರಡಿ                                                                      | Tier 4. Usage. "ಜರಡಿಯಲ್ಲಿ ಸೋಸಿ". "lawn" is not grass.                                                                                                                                                                                                                                       |
+| mesh                                                 | ಮೆಶ್                                                                      | Tier 1. Clay Station's grades ("G-325"). "80 ಮೆಶ್". Mesh numbers never translated.                                                                                                                                                                                                          |
+| specific gravity (SG)                                | ವಿಶಿಷ್ಟ ಗುರುತ್ವ                                                           | **show English**. Tier 3. Kn Wikipedia ("ಸಾಪೇಕ್ಷ ಸಾಂದ್ರತೆ", also "ವಿಶಿಷ್ಟ ಗುರುತ್ವ", a ratio), Mysore Enc. ("ಸಾಪೇಕ್ಷ ಸಾಂದ್ರತೆ"). Relative density, a ratio without units (1.45), never ಸಾಂದ್ರತೆ (g/cm³) or ಲೀಟರ್ ತೂಕ. `guides.density.sg`: "ವಿಶಿಷ್ಟ ಗುರುತ್ವ {value}". Native check: Choices. |
+| pint weight                                          | ಪೈಂಟ್ ತೂಕ                                                                 | Tier 1. No source. An imperial pint (568 ml). Setting "ಪೈಂಟ್ ತೂಕ, ಒಂದು ಇಂಪೀರಿಯಲ್ ಪೈಂಟಿನಲ್ಲಿರುವ ಔನ್ಸುಗಳು".                                                                                                                                                                                   |
+| degrees Baumé (°Bé), hydrometer                      | ಬೋಮೆ ಡಿಗ್ರಿ (°Bé); ಹೈಡ್ರೋಮೀಟರ್                                            | Tier 3. No source. Setting "ಬೋಮೆ ಡಿಗ್ರಿ, ಹೈಡ್ರೋಮೀಟರಿನಿಂದ".                                                                                                                                                                                                                                  |
+| density (glaze density)                              | ದಟ್ಟತೆ (ಗ್ಲೇಜಿನ ದಟ್ಟತೆ)                                                   | Tier 4. No source; Native check. Never ಸಾಂದ್ರತೆ for a glaze. Setting "ಗ್ಲೇಜಿನ ದಟ್ಟತೆ".                                                                                                                                                                                                      |
+| thixotropy (thixotropic, gelled)                     | ಥಿಕ್ಸೊಟ್ರೋಪಿ (ಥಿಕ್ಸೊಟ್ರೋಪಿಕ್, ಜೆಲ್ಲಿಯಂತಾದ)                                | **show English**. Tier 1. No source.                                                                                                                                                                                                                                                        |
+| flocculant (flocculate)                              | ಫ್ಲಾಕ್ಯುಲೆಂಟ್ (ಫ್ಲಾಕ್ಯುಲೇಟ್ ಮಾಡು)                                         | **show English**. Tier 1. No source.                                                                                                                                                                                                                                                        |
+| deflocculant                                         | ಡಿಫ್ಲಾಕ್ಯುಲೆಂಟ್                                                           | **show English**. Tier 1. No source.                                                                                                                                                                                                                                                        |
+| Epsom salts                                          | ಎಪ್ಸಮ್ ಸಾಲ್ಟ್                                                             | Tier 2. Usage. Magnesium sulfate.                                                                                                                                                                                                                                                           |
+| CMC gum (gum, binder, brushing medium)               | CMC ಗಮ್ (ಅಂಟು, ಬೈಂಡರ್, ಬ್ರಶಿಂಗ್ ಮೀಡಿಯಂ)                                   | Tier 1. No source. "CMC" kept.                                                                                                                                                                                                                                                              |
+| suspension, settle, hard-panning                     | ನೀರಿನಲ್ಲಿ ತೇಲಿಕೊಂಡಿರುವುದು; ತಳ ಸೇರುವುದು; ಬಕೆಟ್ ತಳದಲ್ಲಿ ಗಟ್ಟಿ ಪದರ ಕಟ್ಟುವುದು | Tier 4. No source.                                                                                                                                                                                                                                                                          |
+| dipping, pouring, brushing, spraying                 | ಅದ್ದುವುದು, ಸುರಿಯುವುದು, ಬ್ರಶಿನಿಂದ ಹಚ್ಚುವುದು, ಸ್ಪ್ರೇ ಮಾಡುವುದು               | Tier 4. No source. "ಅದ್ದುವ ಸಮಯ", "ಒಂದು ಬಾರಿ ಅದ್ದುವುದು", "ಎರಡು ಬಾರಿ ಅದ್ದುವುದು"; "dipping glaze" → "ಡಿಪ್ಪಿಂಗ್ ಗ್ಲೇಜ್".                                                                                                                                                                        |
+| coat (coating)                                       | ಪದರ (ಲೇಪನ)                                                                | Tier 4. IIFL ("ಗ್ಲೇಜ್ ಲೇಪನ"). "ಪದರವನ್ನು ತೆಳುವಾಗಿಸಿ", "ಎರಡು ಅಥವಾ ಮೂರು ಪದರಗಳು". Not a garment.                                                                                                                                                                                                |
+| wax resist                                           | ವ್ಯಾಕ್ಸ್ ರೆಸಿಸ್ಟ್ (ಮೇಣ)                                                   | **show English**. Tier 1. No source.                                                                                                                                                                                                                                                        |
+| test tile                                            | ಟೆಸ್ಟ್ ಟೈಲ್                                                               | **show English**. Tier 1. No source.                                                                                                                                                                                                                                                        |
+| line blend                                           | ಲೈನ್ ಬ್ಲೆಂಡ್                                                              | **show English**. Tier 1. No source. Not a queue or a drawn line.                                                                                                                                                                                                                           |
+| triaxial blend                                       | ಟ್ರೈಆಕ್ಸಿಯಲ್ ಬ್ಲೆಂಡ್                                                      | Tier 1. No source.                                                                                                                                                                                                                                                                          |
+| lot number                                           | ಲಾಟ್ ಸಂಖ್ಯೆ                                                               | Tier 1. Usage.                                                                                                                                                                                                                                                                              |
+| technical data sheet (TDS)                           | ತಾಂತ್ರಿಕ ಡೇಟಾ ಶೀಟ್ (TDS)                                                  | Tier 4. Usage. Not the safety data sheet.                                                                                                                                                                                                                                                   |
+| container; tub, jar                                  | ಡಬ್ಬ; ಡಬ್ಬಿ                                                               | Tier 4. "ಮುಚ್ಚಳವಿರುವ ಡಬ್ಬಗಳು", "ಗ್ಲೇಜ್ ಡಬ್ಬಗಳು", "ಖಾಲಿ ಡಬ್ಬ"; ಡಬ್ಬಿ only for a small tub or jar ("ಮೊಸರಿನ ಡಬ್ಬಿ"). Food containers in the law's categories are ಪಾತ್ರೆಗಳು.                                                                                                                    |
+| resolution (of a scale), calibration weight, default | ರೆಸಲ್ಯೂಷನ್; ಕ್ಯಾಲಿಬ್ರೇಶನ್ ತೂಕ; ಡೀಫಾಲ್ಟ್                                   | Tier 1. From the making-a-glaze translation. "cups" are ಕಪ್ಗಳು (ಕಪ್ಪುಗಳು reads "blacks"), but ಕಪ್ಪಿನಲ್ಲಿ, ಕಪ್ಪಿಗೆ, ಕಪ್ಪನ್ನು with an ending, as the guide writes them.                                                                                                                       |
 
 ### 2.7 Health and safety
 
-| English | Kannada | Notes |
-| ------- | ------- | ----- |
+| English                                                                  | Kannada                                                                                                            | Notes                                                                                                                                                                                                                                                                                                                                                                          |
+| ------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| dust                                                                     | ಧೂಳು                                                                                                               | Tier 4. IIFL ("ಧೂಳು ನಿಯಂತ್ರಣ"); the Kn Wikipedia also writes ದೂಳು (not used).                                                                                                                                                                                                                                                                                                  |
+| respirable crystalline silica (RCS)                                      | ಶ್ವಸನೀಯ ಸ್ಫಟಿಕೀಯ ಸಿಲಿಕಾ (RCS)                                                                                      | **show English**. Tier 4. No Kannada legal text read (India has no national limit); explained once as "ಶ್ವಾಸಕೋಶದ ಆಳಕ್ಕೆ ತಲುಪುವ ಸೂಕ್ಷ್ಮ ಸ್ಫಟಿಕೀಯ ಸಿಲಿಕಾ" (Kn Wikipedia's "ಶ್ವಾಸಕೋಶ"). Native check.                                                                                                                                                                             |
+| crystalline silica, amorphous silica, cristobalite                       | ಸ್ಫಟಿಕೀಯ ಸಿಲಿಕಾ, ಅಸ್ಫಟಿಕೀಯ ಸಿಲಿಕಾ, ಕ್ರಿಸ್ಟೊಬಲೈಟ್                                                                   | Tier 3. No source; Native check.                                                                                                                                                                                                                                                                                                                                               |
+| silicosis, COPD                                                          | ಸಿಲಿಕೋಸಿಸ್; COPD (ದೀರ್ಘಕಾಲದ ಪ್ರತಿರೋಧಕ ಶ್ವಾಸಕೋಶ ಕಾಯಿಲೆ)                                                             | Tier 4. Kn Wikipedia ("ಸಿಲಿಕೋಸಿಸ್"; older "ಸಿಲಿಕಬೇನೆ", not used). "ಗಂಭೀರ, ಗುಣಪಡಿಸಲಾಗದ ಶ್ವಾಸಕೋಶದ ಕಾಯಿಲೆ". COPD kept with a Kannada gloss once; Native check on the gloss.                                                                                                                                                                                                       |
+| exposure limit, action level                                             | ಎಕ್ಸ್ಪೋಶರ್ ಮಿತಿ; ಆಕ್ಷನ್ ಲೆವೆಲ್ (ಕ್ರಮ ಕೈಗೊಳ್ಳಬೇಕಾದ ಮಟ್ಟ)                                                            | Tier 4. No source; Native check. "ಅನುಮತಿಸಬಹುದಾದ ಮಿತಿ" only where the English quotes a law (Law in India).                                                                                                                                                                                                                                                                      |
+| respirator                                                               | ರೆಸ್ಪಿರೇಟರ್ ಮಾಸ್ಕ್ (ರೆಸ್ಪಿರೇಟರ್)                                                                                   | Tier 4. Usage. Not a ವೆಂಟಿಲೇಟರ್; not a surgical, cloth or "nuisance dust" mask (ಬಟ್ಟೆಯ ಮಾಸ್ಕ್, ಸರ್ಜಿಕಲ್ ಮಾಸ್ಕ್); not ಮುಖವಾಡ (IIFL).                                                                                                                                                                                                                                            |
+| N95, P100, FFP2, FFP3, P2, P3                                            | N95, P100, FFP2, FFP3, P2, P3                                                                                      | Never translated. India: FFP1, FFP2, FFP3 under IS 9473:2002 (IN research).                                                                                                                                                                                                                                                                                                    |
+| half mask, powered respirator (PAPR)                                     | ಹಾಫ್ ಮಾಸ್ಕ್; ಪವರ್ಡ್ ರೆಸ್ಪಿರೇಟರ್ (PAPR)                                                                             | Tier 4. No source.                                                                                                                                                                                                                                                                                                                                                             |
+| fit test                                                                 | ಫಿಟ್ ಟೆಸ್ಟ್ (ಮಾಸ್ಕ್ ಮುಖಕ್ಕೆ ಸರಿಯಾಗಿ ಕೂರುತ್ತದೆಯೇ ಎಂಬ ಪರೀಕ್ಷೆ)                                                       | Tier 1. No source.                                                                                                                                                                                                                                                                                                                                                             |
+| HEPA vacuum (dust Class M)                                               | HEPA ವ್ಯಾಕ್ಯೂಮ್ ಕ್ಲೀನರ್; ಧೂಳಿನ ವರ್ಗ Class M                                                                        | Tier 4. "HEPA" and "Class M" kept; never the English "dust" left in.                                                                                                                                                                                                                                                                                                           |
+| wet cleaning (wet mop, wet-wipe), dry sweeping                           | ಒದ್ದೆ ಸ್ವಚ್ಛತೆ (ಒದ್ದೆ ಮಾಪ್, ಒದ್ದೆ ಬಟ್ಟೆಯಿಂದ ಒರೆಸುವುದು); ಒಣಗಿ ಗುಡಿಸುವುದು                                            | Tier 4. Usage.                                                                                                                                                                                                                                                                                                                                                                 |
+| local exhaust ventilation (LEV)                                          | ಲೋಕಲ್ ಎಕ್ಸಾಸ್ಟ್ ವೆಂಟಿಲೇಶನ್ (LEV)                                                                                   | **show English**. Tier 1. No source; explained once as "ಧೂಳನ್ನು ಅಲ್ಲೇ ಸೆಳೆದುಕೊಳ್ಳುವ ಹುಡ್ ಮತ್ತು ಫ್ಯಾನ್".                                                                                                                                                                                                                                                                        |
+| make-up air                                                              | ಮೇಕ್-ಅಪ್ ಏರ್ (ಹೊರಗಿನಿಂದ ಬರುವ ತಾಜಾ ಗಾಳಿ)                                                                            | Tier 1. No source.                                                                                                                                                                                                                                                                                                                                                             |
+| spray booth (water-backed booth), overspray                              | ಸ್ಪ್ರೇ ಬೂತ್ (ನೀರಿನ ಬೂತ್); ಓವರ್ಸ್ಪ್ರೇ                                                                               | Tier 1. No source.                                                                                                                                                                                                                                                                                                                                                             |
+| fumes (kiln fumes)                                                       | ಹೊಗೆ ಮತ್ತು ಅನಿಲಗಳು (ಕಿಲ್ನಿನಿಂದ ಹೊರಡುವ ಅನಿಲಗಳು)                                                                     | Tier 4. Usage (IIFL: "ಅನಿಲ").                                                                                                                                                                                                                                                                                                                                                  |
+| carbon monoxide (CO), CO alarm                                           | ಕಾರ್ಬನ್ ಮಾನಾಕ್ಸೈಡ್ (CO); CO ಅಲಾರ್ಮ್                                                                                | Tier 3. Usage. "ಕಾಣದ, ವಾಸನೆಯಿಲ್ಲದ ವಿಷಕಾರಿ ಅನಿಲ".                                                                                                                                                                                                                                                                                                                               |
+| metal fume fever, manganism                                              | ಮೆಟಲ್ ಫ್ಯೂಮ್ ಫೀವರ್ (ಲೋಹದ ಹೊಗೆಯ ಜ್ವರ); ಮ್ಯಾಂಗನೀಸ್ ವಿಷಬಾಧೆ                                                           | Tier 4. No source.                                                                                                                                                                                                                                                                                                                                                             |
+| safety data sheet (SDS; older: MSDS)                                     | ಸೇಫ್ಟಿ ಡೇಟಾ ಶೀಟ್ (SDS; ಹಳೆಯ ಹೆಸರು MSDS)                                                                            | Tier 4. Usage: India's chemical rules say "Material Safety Data Sheet" in English. Native check.                                                                                                                                                                                                                                                                               |
+| GHS, pictogram, signal word, hazard statement                            | GHS; ಚಿತ್ರಸಂಕೇತ; ಸಂಕೇತ ಪದ; ಅಪಾಯ ಹೇಳಿಕೆ                                                                             | Tier 4. No Kannada GHS text found; Native check. Signal words "ಅಪಾಯ" (Danger) and "ಎಚ್ಚರಿಕೆ" (Warning); H-codes kept. "Toxic if swallowed" → "ನುಂಗಿದರೆ ವಿಷಕಾರಿ", "Harmful if swallowed" → "ನುಂಗಿದರೆ ಹಾನಿಕಾರಕ"; "suspected of" → "…ಎಂಬ ಶಂಕೆ ಇದೆ" (ಶಂಕೆ, never -ಬಹುದು).                                                                                                          |
+| Not classified                                                           | ವರ್ಗೀಕರಿಸಲಾಗಿಲ್ಲ                                                                                                   | Tier 4. Not ಹಾನಿರಹಿತ (harmless). No official Kannada text found.                                                                                                                                                                                                                                                                                                               |
+| IARC Group 1, 2A, 2B, 3 (carcinogenic)                                   | IARC ಗುಂಪು 1, 2A, 2B, 3 (ಕ್ಯಾನ್ಸರ್ಕಾರಕ)                                                                            | Tier 4. Group 1: "ಮನುಷ್ಯರಿಗೆ ಕ್ಯಾನ್ಸರ್ಕಾರಕ"; 2A: "ಮನುಷ್ಯರಿಗೆ ಬಹುಶಃ ಕ್ಯಾನ್ಸರ್ಕಾರಕ".                                                                                                                                                                                                                                                                                             |
+| toxic, harmful                                                           | ವಿಷಕಾರಿ; ಹಾನಿಕಾರಕ                                                                                                  | Tier 4. Usage. "ನುಂಗಿದರೆ ವಿಷಕಾರಿ" is stronger than "ನುಂಗಿದರೆ ಹಾನಿಕಾರಕ": keep them apart.                                                                                                                                                                                                                                                                                       |
+| soluble, insoluble, slightly soluble; solubility                         | ದ್ರಾವ್ಯ, ಅದ್ರಾವ್ಯ, ಸ್ವಲ್ಪ ದ್ರಾವ್ಯ; ದ್ರಾವ್ಯತೆ                                                                       | Tier 3 and 4. School chemistry. **Never ಕರಗುವ / ಕರಗದ, which is melting** (this row once said so, and "low-solubility lead frit" read "low-melting"). "ನೀರಿನಲ್ಲಿ ದ್ರಾವ್ಯ", "ಕಡಿಮೆ ದ್ರಾವ್ಯತೆಯ ಸೀಸದ ಫ್ರಿಟ್", "ದ್ರಾವ್ಯ ಸಾಮಗ್ರಿಗಳು", "ಬಹುತೇಕ ಅದ್ರಾವ್ಯ". Here ಸ್ವಲ್ಪ is the English's "slightly".                                                                                    |
+| dissolve (in water, acid or a melt), melt, molten                        | ವಿಲೀನವಾಗು (ವಿಲೀನಗೊಳಿಸು); ಕರಗು (ಕರಗಿಸು); ಕರಗಿದ                                                                      | Tier 4. "ನೀರಿನಲ್ಲಿ ವಿಲೀನವಾಗುತ್ತದೆ", "ಹೊಟ್ಟೆಯ ಆಮ್ಲದಲ್ಲಿ ವಿಲೀನವಾಗುತ್ತದೆ", "ಗ್ಲೇಜಿನಲ್ಲಿ ಪೂರ್ತಿಯಾಗಿ ವಿಲೀನವಾಗುತ್ತವೆ" (a solid going into the melt), "ವಿಲೀನವಾದ ಕಬ್ಬಿಣ"; melting by heat only is ಕರಗು ("ಗ್ಲೇಜ್ ಕರಗುತ್ತದೆ", "ಕರಗಿದ ಗ್ಲೇಜ್"); thawing ice is ಕರಗಿಸು too. Leaching is metals ವಿಲೀನವಾಗಿ ಸೇರುವುದು. Check every soluble, dissolve, leach, melt and fusion in a translation. |
+| swallow (ingestion), breathe in (inhalation)                             | ನುಂಗುವುದು; ಉಸಿರಿನೊಂದಿಗೆ ಒಳಗೆಳೆದುಕೊಳ್ಳುವುದು                                                                         | Tier 4. Plain words, as the guides.                                                                                                                                                                                                                                                                                                                                            |
+| acute, chronic                                                           | ತೀವ್ರ (ಒಂದೇ ಬಾರಿಯ ಪ್ರಮಾಣದಿಂದ); ದೀರ್ಘಕಾಲದ (ಬಹುಕಾಲದ ಸಣ್ಣ ಪ್ರಮಾಣಗಳಿಂದ)                                                | Tier 4. No source.                                                                                                                                                                                                                                                                                                                                                             |
+| poison centre (poison line, poison control)                              | ವಿಷ ಮಾಹಿತಿ ಕೇಂದ್ರ (ವಿಷದ ಬಗ್ಗೆ ಸಲಹೆ ನೀಡುವ ಸಹಾಯವಾಣಿ)                                                                 | Tier 4. India's: National Poisons Information Centre (NPIC), AIIMS ನವದೆಹಲಿ, 1800 116 117; Karnataka's: JSS Mysuru, 1800 425 0207 (IN research). No source for the Kannada description; Native check.                                                                                                                                                                           |
+| blood lead test, blood lead reference value                              | ರಕ್ತದಲ್ಲಿನ ಸೀಸದ ಪರೀಕ್ಷೆ; ರಕ್ತದ ಸೀಸದ ಉಲ್ಲೇಖ ಮೌಲ್ಯ                                                                   | Tier 4. No source. CDC's 3.5 µg/dL kept.                                                                                                                                                                                                                                                                                                                                       |
+| lead-free (leadless)                                                     | ಸೀಸರಹಿತ                                                                                                            | Tier 4. Not the same as ಆಹಾರಕ್ಕೆ ಸುರಕ್ಷಿತ. Both English words → ಸೀಸರಹಿತ.                                                                                                                                                                                                                                                                                                       |
+| food safe (food-safe)                                                    | ಆಹಾರಕ್ಕೆ ಸುರಕ್ಷಿತ                                                                                                  | **show English**. Tier 4. No source. In law: releases less lead and cadmium than the limits.                                                                                                                                                                                                                                                                                   |
+| leach test (laboratory leach test, metal release test)                   | ಲೀಚಿಂಗ್ ಪರೀಕ್ಷೆ (ಪ್ರಯೋಗಾಲಯದ ಲೋಹ ಬಿಡುಗಡೆ ಪರೀಕ್ಷೆ)                                                                   | **show English**. Tier 1 and 4. No source. A test of the metals a fired piece releases, not narrowed to lead and cadmium; codes kept.                                                                                                                                                                                                                                          |
+| liner glaze                                                              | ಲೈನರ್ ಗ್ಲೇಜ್                                                                                                       | **show English**. Tier 1. No source.                                                                                                                                                                                                                                                                                                                                           |
+| contact dermatitis, barrier cream                                        | ಸಂಪರ್ಕ ಚರ್ಮರೋಗ (ಕಾಂಟ್ಯಾಕ್ಟ್ ಡರ್ಮಟೈಟಿಸ್); ಬ್ಯಾರಿಯರ್ ಕ್ರೀಮ್                                                          | Tier 4. No source. "ಬ್ಯಾರಿಯರ್ ಕ್ರೀಮ್ ಕೈಗವಸಲ್ಲ" (IIFL: "ಕೈಗವಸುಗಳು", gloves).                                                                                                                                                                                                                                                                                                    |
+| infrared (IR), IR-rated welding glasses, shade 3                         | ಇನ್ಫ್ರಾರೆಡ್ (IR); IR ತಡೆಯುವ ವೆಲ್ಡಿಂಗ್ ಕನ್ನಡಕ; ಶೇಡ್ 3                                                               | Tier 4. No source. Sunglasses (ಕಪ್ಪು ಕನ್ನಡಕ) and didymium glasses do not block it.                                                                                                                                                                                                                                                                                             |
+| combustible, clearance, dedicated circuit                                | ಸುಡಬಲ್ಲ ವಸ್ತು; ಅಂತರ; ಪ್ರತ್ಯೇಕ ಸರ್ಕ್ಯೂಟ್                                                                            | Tier 4. Usage.                                                                                                                                                                                                                                                                                                                                                                 |
+| nuisance dust, sensitiser, caustic, benign                               | ಕಿರಿಕಿರಿ ಧೂಳು (ನ್ಯೂಸೆನ್ಸ್ ಡಸ್ಟ್); ಅಲರ್ಜಿಕಾರಕ (ಸೆನ್ಸಿಟೈಸರ್); ದಾಹಕ; ಸೌಮ್ಯ                                            | Tier 4. From the records and safe-mixing translations. "“ನ್ಯೂಸೆನ್ಸ್ ಡಸ್ಟ್” (ಕಿರಿಕಿರಿ ಧೂಳಿನ) ಮಾಸ್ಕುಗಳು". Harmonised classification: ಸಮನ್ವಯಗೊಳಿಸಿದ ವರ್ಗೀಕರಣ.                                                                                                                                                                                                                     |
+| ventilated, extracted, enclosure, duct, stubble, trivalent               | ಗಾಳಿ ಸೆಳೆಯುವ; ಗಾಳಿ ಹೊರಸೆಳೆಯುವ; ಆವರಣ; ನಾಳ (ಡಕ್ಟ್); ಕುರುಚಲು ಗಡ್ಡ; ತ್ರಿಸಂಯೋಜಕ                                         | Tier 4. From the safe-mixing translation. Cataract: ಕಣ್ಣಿನ ಪೊರೆ (ಕ್ಯಾಟರಾಕ್ಟ್).                                                                                                                                                                                                                                                                                                 |
+| paralysis, seizures, antidote, midwife, toddler, sparkler, local council | ಲಕ್ವ (ಪಾರ್ಶ್ವವಾಯು); ಸೆಳವು (ಫಿಟ್ಸ್); ಪ್ರತಿವಿಷ (ಆಂಟಿಡೋಟ್); ಸೂಲಗಿತ್ತಿ; ಪುಟ್ಟ ಮಗು; ಸುರುಸುರು ಬತ್ತಿ; ಸ್ಥಳೀಯ ಆಡಳಿತ ಸಂಸ್ಥೆ | Tier 4. From the home-safety translation. Native check on ಲಕ್ವ.                                                                                                                                                                                                                                                                                                                |
 
 ### 2.8 The app's own words
 
-| English | Kannada | Notes |
-| ------- | ------- | ----- |
+| English                                                                                | Kannada                                                                                                                                   | Notes                                                                                                                                                                                                                                            |
+| -------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| recipe (Recipes)                                                                       | ರೆಸಿಪಿ (ರೆಸಿಪಿಗಳು)                                                                                                                        | Usage (Google suggest: "cone 6 glaze recipes"). "ಹೊಸ ರೆಸಿಪಿ", "ಉಳಿಸಿದ ರೆಸಿಪಿ", "ನಾನು ಉಳಿಸಿದ ರೆಸಿಪಿಗಳು", "ರೆಸಿಪಿ ಕ್ಯಾಲ್ಕುಲೇಟರ್". Never ಸೂತ್ರ; not ಪಾಕವಿಧಾನ (cooking). Native check.                                                               |
+| studio notebook (notebook)                                                             | ಸ್ಟುಡಿಯೋ ನೋಟ್ಬುಕ್ (ನೋಟ್ಬುಕ್)                                                                                                              | "ನಿಮ್ಮ ಸ್ಟುಡಿಯೋ ನೋಟ್ಬುಕ್", "ಗ್ಲೇಜ್ ನೋಟ್ಬುಕ್".                                                                                                                                                                                                    |
+| material (Materials)                                                                   | ಸಾಮಗ್ರಿ (ಸಾಮಗ್ರಿಗಳು)                                                                                                                      | "ಸಾಮಗ್ರಿಯ ಹೆಸರು:", "ಸಾಮಗ್ರಿಗಳನ್ನು ಸೇರಿಸಿ", "ಸಾಮಗ್ರಿಗಳ ಪುಟ". Mysore Enc. uses ಸಾಮಗ್ರಿ for ware ("ಶ್ವೇತ ಸಾಮಗ್ರಿ"); here it is always a material.                                                                                                   |
+| My materials                                                                           | ನನ್ನ ಸಾಮಗ್ರಿಗಳು                                                                                                                           | "ನನ್ನ ಸರ್ವರ್ ಸಾಮಗ್ರಿಗಳು:".                                                                                                                                                                                                                       |
+| Standard (standard materials)                                                          | ಮಾನಕ (ಮಾನಕ ಸಾಮಗ್ರಿಗಳು)                                                                                                                    | Tab "ಮಾನಕ ({count})"; "ಮಾನಕ ಸಾಮಗ್ರಿಗಳು:", "ಅಂತರ್ನಿರ್ಮಿತ ಪಟ್ಟಿ", "ಲೈಬ್ರರಿ". ಮಾನಕ as in ಭಾರತೀಯ ಮಾನಕ ಬ್ಯೂರೋ; not ಸಾಮಾನ್ಯ (ordinary), and not ಪ್ರಮಾಣಿತ, which sits too close to ಪ್ರಮಾಣ (amount).                                                     |
+| library                                                                                | ಲೈಬ್ರರಿ                                                                                                                                   | "ನಿಮ್ಮ ಪ್ರದೇಶದಲ್ಲಿ ಮಾರಾಟವಾಗುವ ಯಾವುದೇ ಸೀಸರಹಿತ ಫ್ರಿಟ್ ಲೈಬ್ರರಿಯಲ್ಲಿ ಇಲ್ಲ." Not a ಗ್ರಂಥಾಲಯ. The About page's "shared library" is code.                                                                                                               |
+| additive (Additives)                                                                   | ಆಡಿಟಿವ್ (ಆಡಿಟಿವುಗಳು)                                                                                                                      | Nav "ಆಡಿಟಿವುಗಳು"; page "ಆಡಿಟಿವುಗಳು ಮತ್ತು ಕಲರೆಂಟುಗಳು"; recipe "ಕಲರೆಂಟುಗಳು ಮತ್ತು ಆಡಿಟಿವುಗಳು", "ಕಲರೆಂಟ್ ಅಥವಾ ಆಡಿಟಿವ್". No source; Native check (ಸೇರ್ಪಡೆ is the plain word).                                                                         |
+| amount (Amount)                                                                        | ಪ್ರಮಾಣ (ಪ್ರಮಾಣ)                                                                                                                           | Column "ಪ್ರಮಾಣ"; "ಪ್ರಮಾಣವನ್ನು ನಮೂದಿಸಿ (0 ಆದರೂ ಸರಿ)."                                                                                                                                                                                             |
+| Share                                                                                  | ಪಾಲು                                                                                                                                      | Column: each material's percent of the batch. Not ಹಂಚಿಕೊಳ್ಳಿ (sharing).                                                                                                                                                                          |
+| To percent, To parts, Scale to a batch, Scale                                          | ಶೇಕಡಾಕ್ಕೆ, ಭಾಗಗಳಿಗೆ, ಬ್ಯಾಚಿಗೆ ಹೊಂದಿಸಿ, ಅಳತೆ ಬದಲಿಸಿ                                                                                        | "ಅಳತೆ ಬದಲಿಸಿ:". Resizing, not the ತಕ್ಕಡಿ.                                                                                                                                                                                                        |
+| Batch size, batch list, Weigh in, Weigh, Weighed, Running total, All together          | ಬ್ಯಾಚ್ ಗಾತ್ರ, ಬ್ಯಾಚ್ ಪಟ್ಟಿ, ತೂಕದ ಘಟಕ, ತೂಕ ಮಾಡಿ, ತೂಕ ಮಾಡಲಾಗಿದೆ, ಇಲ್ಲಿಯವರೆಗಿನ ಮೊತ್ತ, ಎಲ್ಲಾ ಸೇರಿ                                             | "ಕೇವಲ ಒಂದು ಬ್ಯಾಚ್ ಪಟ್ಟಿ: ಏನನ್ನು ತೂಕ ಮಾಡಬೇಕು, ಟಿಕ್ ಮಾಡಲು ಚೌಕಗಳೊಂದಿಗೆ".                                                                                                                                                                            |
+| Unity formula (Unity)                                                                  | ಸೆಗರ್ ಸೂತ್ರ (ಸೆಗರ್)                                                                                                                       | "ಕಲರೆಂಟುಗಳು ಮತ್ತು ಆಡಿಟಿವುಗಳನ್ನೂ ಇದರಲ್ಲಿ ಎಣಿಸಿ". The column "Unity" → "ಸೆಗರ್", "UMF" → "ಸೆಗರ್ ಸೂತ್ರ (UMF)".                                                                                                                                       |
+| Wildcards                                                                              | ಇತರ ಆಕ್ಸೈಡುಗಳು                                                                                                                            | Column for oxides outside the three groups. Not ಜೋಕರ್.                                                                                                                                                                                           |
+| Compare                                                                                | ಹೋಲಿಸಿ                                                                                                                                    | "ಎರಡು ರೆಸಿಪಿಗಳನ್ನು ಹೋಲಿಸಿ", "ಮೊದಲ ರೆಸಿಪಿ", "ಎರಡನೇ ರೆಸಿಪಿ", "ಬದಲಿಸಿ", "ಒಂದೇ".                                                                                                                                                                     |
+| Save, Save and add next recipe, Save as a copy, Print                                  | ಉಳಿಸಿ; ಉಳಿಸಿ ಮತ್ತು ಮುಂದಿನ ರೆಸಿಪಿ ಸೇರಿಸಿ; ನಕಲಾಗಿ ಉಳಿಸಿ; ಮುದ್ರಿಸಿ                                                                           | MS ("ಉಳಿಸು", "ಮುದ್ರಿಸು", in the -ಇ form here); Google ("ಸೇವ್" in running text, not used for the button).                                                                                                                                         |
+| swap (Try modern materials and compare, Undo the swap)                                 | ಬದಲಾವಣೆ (ಆಧುನಿಕ ಸಾಮಗ್ರಿಗಳನ್ನು ಪ್ರಯತ್ನಿಸಿ ಮತ್ತು ಹೋಲಿಸಿ, ಬದಲಾವಣೆಯನ್ನು ರದ್ದುಮಾಡಿ)                                                            | "ಆಧುನಿಕ ಸಾಮಗ್ರಿಗಳಿಂದ ಬದಲಿಸಲಾಗಿದೆ".                                                                                                                                                                                                               |
+| like for like, gram for gram, one for one, pound for pound                             | ಸರಿಸಮಾನವಾಗಿ; ಗ್ರಾಂಗೆ ಗ್ರಾಂ; ಒಂದಕ್ಕೆ ಒಂದು; ಪೌಂಡಿಗೆ ಪೌಂಡ್                                                                                   | Idioms: the sense, with words, not digits.                                                                                                                                                                                                       |
+| Suggest amounts and compare                                                            | ಪ್ರಮಾಣಗಳನ್ನು ಸೂಚಿಸಿ ಮತ್ತು ಹೋಲಿಸಿ                                                                                                          | "ಹಳೆಯ ಸಾಮಗ್ರಿಗಳು ಕೊಡುತ್ತಿದ್ದುದನ್ನು ಮರಳಿ ತನ್ನಿ".                                                                                                                                                                                                  |
+| Replace lead (Replace lead and compare)                                                | ಸೀಸವನ್ನು ಬದಲಿಸಿ (ಸೀಸವನ್ನು ಬದಲಿಸಿ ಮತ್ತು ಹೋಲಿಸಿ)                                                                                            | "ಕೋನ್ ತನಕ ಸುಟ್ಟದ್ದು", "ಗ್ಲೇಜನ್ನು ಮತ್ತೆ ರೂಪಿಸಿ", "ಬಣ್ಣಗಳನ್ನು ಸೀಸರಹಿತ ಬೇಸಿನ ಮೇಲೆ ಉಳಿಸಿಕೊಳ್ಳಿ".                                                                                                                                                     |
+| Match with what I have (Match and compare)                                             | ನನ್ನಲ್ಲಿರುವುದರಿಂದ ಹೊಂದಿಸಿ (ಹೊಂದಿಸಿ ಮತ್ತು ಹೋಲಿಸಿ)                                                                                          | "ನಿಮ್ಮಲ್ಲಿರುವುದರಿಂದಲೇ ಮಾಡಿ".                                                                                                                                                                                                                     |
+| materials on hand (the shelf)                                                          | ನನ್ನಲ್ಲಿರುವ ಸಾಮಗ್ರಿಗಳು (ಶೆಲ್ಫ್)                                                                                                           | "ಶೆಲ್ಫ್" is a figure of speech, not a kiln shelf. Server: "ಶೆಲ್ಫ್ ಎಂದರೆ ಗರಿಷ್ಠ {most} ಸಾಮಗ್ರಿಗಳ ಪಟ್ಟಿ." (ಗರಿಷ್ಠ = at most).                                                                                                                      |
+| Materials to try, Must use                                                             | ಪ್ರಯತ್ನಿಸಬೇಕಾದ ಸಾಮಗ್ರಿಗಳು; ಬಳಸಲೇಬೇಕು                                                                                                      | -ಲೇಬೇಕು here is the English's "must": the label's own word.                                                                                                                                                                                      |
+| Leave it out, Allow more, Add it, Use it instead, Work it out again, What to watch for | ಇದನ್ನು ಬಿಡಿ; ಇನ್ನಷ್ಟು ಅನುಮತಿಸಿ; ಇದನ್ನು ಸೇರಿಸಿ; ಬದಲಿಗೆ ಇದನ್ನು ಬಳಸಿ; ಮತ್ತೆ ಲೆಕ್ಕ ಹಾಕಿ; ಗಮನಿಸಬೇಕಾದ ವಿಷಯಗಳು                                   |                                                                                                                                                                                                                                                  |
+| Discontinued, Hard to get, Historical                                                  | ತಯಾರಿಕೆ ನಿಂತಿದೆ; ಸಿಗುವುದು ಕಷ್ಟ; ಹಳೆಯದು                                                                                                    | "{year}ರಲ್ಲಿ ತಯಾರಿಕೆ ನಿಂತಿದೆ", "{year}ರಿಂದ ಸಿಗುವುದು ಕಷ್ಟ".                                                                                                                                                                                       |
+| Use instead, Similar, Replaces, Also called, Made by, Hazards                          | ಬದಲಿಗೆ ಬಳಸಿ; ಹೋಲುವಂಥದ್ದು; ಇದರ ಬದಲಿಗೆ ಬರುತ್ತದೆ; ಇನ್ನೊಂದು ಹೆಸರು; ತಯಾರಕರು; ಅಪಾಯಗಳು                                                           | "ರಸಾಯನವಿಲ್ಲ: ಸೆಗರ್ ಸೂತ್ರದಿಂದ ಹೊರಗಿಡಲಾಗಿದೆ", "{name} ಎಂದು ಎಣಿಸಲಾಗಿದೆ".                                                                                                                                                                            |
+| Kind (All kinds)                                                                       | ಬಗೆ (ಎಲ್ಲಾ ಬಗೆಗಳು)                                                                                                                        | ಫೆಲ್ಡ್ಸ್ಪಾರ್ ಮತ್ತು ಸ್ಟೋನುಗಳು, ಕ್ಲೇಗಳು, ಫ್ರಿಟ್ಟುಗಳು, ಬೋರಾನ್ ಮೂಲಗಳು, ಫ್ಲಕ್ಸುಗಳು, ಸಿಲಿಕಾ, ಅಲ್ಯೂಮಿನಾ, ಒಪಾಸಿಫೈಯರುಗಳು, ಕಲರೆಂಟುಗಳು, ಸಸ್ಪೆಂಡರುಗಳು, ಇತರೆ.                                                                                                 |
+| Sold in, Where you work                                                                | ಮಾರಾಟವಾಗುವ ಸ್ಥಳ; ನೀವು ಕೆಲಸ ಮಾಡುವ ಸ್ಥಳ                                                                                                     | All regions → "ಎಲ್ಲಾ ಪ್ರದೇಶಗಳು".                                                                                                                                                                                                                 |
+| Firing logs (firing record)                                                            | ಫೈರಿಂಗ್ ಲಾಗ್                                                                                                                              | "ಫೈರಿಂಗಿನ ಶೀರ್ಷಿಕೆ:", "ಫೈರಿಂಗ್ ದಾಖಲಿಸಿ", "ನಾನು ಉಳಿಸಿದ ಫೈರಿಂಗುಗಳು:".                                                                                                                                                                              |
+| field, row                                                                             | ಕಾಲಮ್; ಸಾಲು                                                                                                                               | "ಕಾಲಮ್ ಸೇರಿಸಿ", "ಫೈರಿಂಗ್ ಕೋಷ್ಟಕಕ್ಕೆ ಸಾಲು ಸೇರಿಸಿ". Not a ಹೊಲ (meadow).                                                                                                                                                                            |
+| trial (Your trial, Try it now, Discard trial)                                          | ಟ್ರಯಲ್ (ನಿಮ್ಮ ಟ್ರಯಲ್, ಈಗಲೇ ಪ್ರಯತ್ನಿಸಿ, ಟ್ರಯಲ್ ತೆಗೆದುಹಾಕಿ)                                                                                 | Never ಅತಿಥಿ (guest).                                                                                                                                                                                                                             |
+| Typing amounts                                                                         | ಪ್ರಮಾಣಗಳನ್ನು ಟೈಪ್ ಮಾಡುವುದು                                                                                                                | "ದಶಮಾಂಶಕ್ಕೆ ಅಲ್ಪವಿರಾಮ ಅಥವಾ ಬಿಂದು", "ದಶಮಾಂಶಕ್ಕೆ ಅಲ್ಪವಿರಾಮ", "ದಶಮಾಂಶಕ್ಕೆ ಬಿಂದು". Server: "ದಶಮಾಂಶ ಚಿಹ್ನೆ".                                                                                                                                          |
+| Firing (To Orton cones, By temperature, as a kiln controller's program)                | ಫೈರಿಂಗ್ (Orton ಕೋನುಗಳ ಪ್ರಕಾರ, ತಾಪಮಾನದ ಪ್ರಕಾರ, ಕಿಲ್ನ್ ಕಂಟ್ರೋಲರಿನ ಪ್ರೋಗ್ರಾಮಿನಂತೆ)                                                           | "ಕೋನುಗಳ ಪ್ರಕಾರ ಫೈರಿಂಗಿಗೆ ತೋರಿಸಿ", "ತಾಪಮಾನದ ಪ್ರಕಾರ ಫೈರಿಂಗಿಗೆ ತೋರಿಸಿ".                                                                                                                                                                             |
+| Glaze density (Specific gravity, Degrees Baumé, Pint weight)                           | ಗ್ಲೇಜಿನ ದಟ್ಟತೆ (ವಿಶಿಷ್ಟ ಗುರುತ್ವ, ಬೋಮೆ ಡಿಗ್ರಿ, ಪೈಂಟ್ ತೂಕ)                                                                                  | See 2.6.                                                                                                                                                                                                                                         |
+| Light or dark, Colors                                                                  | ತಿಳಿ ಅಥವಾ ಗಾಢ; ಬಣ್ಣಗಳು                                                                                                                    | Palette: ಟೆನ್ಮೊಕು ರಸ್ಟ್, ಸೆಲಡಾನ್ ಹಸಿರು, ಕೋಬಾಲ್ಟ್ ನೀಲಿ, ಆಕ್ಸ್ಬ್ಲಡ್ ಕೆಂಪು, ಶಿನೋ ಕಿತ್ತಳೆ, ವುಡ್ ಆಷ್ ಆಲಿವ್.                                                                                                                                           |
+| Batch weights (Grams, Pounds and ounces), Grams on printed batches                     | ಬ್ಯಾಚ್ ತೂಕಗಳು (ಗ್ರಾಂ, ಪೌಂಡ್ ಮತ್ತು ಔನ್ಸ್), ಮುದ್ರಿತ ಬ್ಯಾಚುಗಳಲ್ಲಿ ಗ್ರಾಂ                                                                      | "ಗ್ರಾಮಿನ ಹತ್ತನೇ ಒಂದು ಭಾಗದವರೆಗೆ", "ಪೂರ್ಣ ನಿಖರತೆ".                                                                                                                                                                                                 |
+| Lead (Off, On, Turn lead on, Keep it off)                                              | ಸೀಸ (ಆಫ್, ಆನ್, ಸೀಸವನ್ನು ಆನ್ ಮಾಡಿ, ಆಫ್ ಆಗಿಯೇ ಇಡಿ)                                                                                          | The metal.                                                                                                                                                                                                                                       |
+| English terms (Show the English after key terms)                                       | ಇಂಗ್ಲಿಷ್ ಪದಗಳು (ಮುಖ್ಯ ಪದಗಳ ನಂತರ ಇಂಗ್ಲಿಷ್ ತೋರಿಸಿ)                                                                                          | The setting that shows `<en>`/`{{en: …}}`. ಇಂಗ್ಲಿಷ್ as CLDR names the language.                                                                                                                                                                  |
+| Translation notice (About this translation, Suggest a correction, Read the English)    | ಅನುವಾದದ ಸೂಚನೆ (ಈ ಅನುವಾದದ ಬಗ್ಗೆ, ತಿದ್ದುಪಡಿ ಸೂಚಿಸಿ, ಇಂಗ್ಲಿಷ್ ಓದಿ)                                                                           |                                                                                                                                                                                                                                                  |
+| Trash                                                                                  | ಅನುಪಯುಕ್ತ                                                                                                                                 | Usage (Gmail's Kannada folder name, not read today); Native check. "move to the Trash" → "ಅನುಪಯುಕ್ತಕ್ಕೆ ಸರಿಸಿ"; "delete for good" → "ಶಾಶ್ವತವಾಗಿ ಅಳಿಸಿ".                                                                                          |
+| Remove (Yes, remove), Delete my account                                                | ತೆಗೆದುಹಾಕಿ (ಹೌದು, ತೆಗೆದುಹಾಕಿ); ನನ್ನ ಖಾತೆಯನ್ನು ಅಳಿಸಿ                                                                                       | Apple ("ತೆಗೆದುಹಾಕಿ"), Google ("ಅಳಿಸುವುದು"). "ಇದನ್ನು ರದ್ದುಗೊಳಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ."                                                                                                                                                                    |
+| guide (Guides)                                                                         | ಮಾರ್ಗದರ್ಶಿ (ಮಾರ್ಗದರ್ಶಿಗಳು)                                                                                                                | IIFL ("ಮಾರ್ಗದರ್ಶಿ"). Every link, page title and list. A kiln's manual is "ಕೈಪಿಡಿ"; a maker's or school's guide ಕಿರುಪುಸ್ತಕ, ಲೇಖನ or ದಾಖಲೆ (Pitfalls).                                                                                             |
+| the five guides' titles                                                                | ಸರಳ ಕಿಲ್ನಿನಲ್ಲಿ ಫೈರಿಂಗ್; ಮೂಲ ತತ್ವಗಳಿಂದ ಗ್ಲೇಜಿಂಗ್; ಸುರಕ್ಷಿತ ಮಿಶ್ರಣ ಮತ್ತು ಗಾಳಿಯಾಡುವಿಕೆ; ನಿಮ್ಮ ಕುಟುಂಬಕ್ಕೆ ವಿಷ ಉಣಿಸಬೇಡಿ; ಗ್ಲೇಜ್ ಮಾಡುವುದು ಹೇಗೆ | Firing a basic kiln; Glazing from first principles; Safe mixing and ventilation; Don't poison your family; How to make a glaze. In use and checked: identical in each front matter, kn.json `titles`, guides/kn.json `list` and every link text. |
+| revoke (a token, a connected app)                                                      | ರದ್ದುಗೊಳಿಸು (ರದ್ದುಗೊಳಿಸಿ; ರದ್ದುಗೊಳಿಸಲಾಗಿದೆ)                                                                                               | The button "Revoke" is ರದ್ದುಗೊಳಿಸಿ. ರದ್ದುಮಾಡಿ is Cancel and Undo, never revoke.                                                                                                                                                                  |
+| confirm (it is you, an email, a change)                                                | ದೃಢೀಕರಿಸು                                                                                                                                 | "ಅದು ನೀವೇ ಎಂದು ದೃಢೀಕರಿಸಿ", "ನಿಮ್ಮ ಇಮೇಲ್ ದೃಢೀಕರಿಸಿ", "ಬದಲಾವಣೆಯನ್ನು ದೃಢೀಕರಿಸಬಹುದು". Checking a fact ("We could not confirm a national limit", a witness cone confirms a firing) stays ಖಚಿತಪಡಿಸು.                                                   |
+| reset (a password)                                                                     | ಮರುಹೊಂದಿಸು                                                                                                                                | "ನಿಮ್ಮ ಪಾಸ್ವರ್ಡ್ ಮರುಹೊಂದಿಸಿ", "ಮರುಹೊಂದಿಕೆ ವಿನಂತಿಗಳು"; a kiln's timer is also ಮರುಹೊಂದಿಸು. Not ರೀಸೆಟ್, not ಮರುಸ್ಥಾಪಿಸು.                                                                                                                            |
+| device; tool                                                                           | ಸಾಧನ; ಉಪಕರಣ                                                                                                                               | A device signed in, a safety device, a fail-safe shut-off device (ಫೇಲ್-ಸೇಫ್ ಸ್ಥಗಿತ ಸಾಧನ) is ಸಾಧನ; a glaze tool, a potter's tools are ಉಪಕರಣ. The AI assistants' "tools" (MCP) are ಟೂಲುಗಳು.                                                        |
+| John Britt                                                                             | John Britt                                                                                                                                | In Latin letters, as every file has it; "John Britt ಅವರ ಉಚಿತ ಗ್ಲೇಜ್ ಕೋರ್ಸ್".                                                                                                                                                                     |
+| records (a user's saved items), approve, decline, provider                             | ದಾಖಲೆಗಳು; ಅನುಮೋದಿಸು; ನಿರಾಕರಿಸು; ಸೇವಾದಾರ                                                                                                   | From the app translators' reports. A sign-in provider is ಸೇವಾದಾರ; a material's supplier ಸರಬರಾಜುದಾರ or ಪೂರೈಕೆದಾರ.                                                                                                                                 |
+| connected apps, access token, assistant, cookie                                        | ಕನೆಕ್ಟ್ ಆದ ಆ್ಯಪ್ಸ್; ಆಕ್ಸೆಸ್ ಟೋಕನ್; ಅಸಿಸ್ಟೆಂಟ್; ಕುಕೀ                                                                                       | The page name ‘ಕನೆಕ್ಟ್ ಆದ ಆ್ಯಪ್ಸ್’; plurals ಟೋಕನುಗಳು, ಅಸಿಸ್ಟೆಂಟುಗಳು.                                                                                                                                                                             |
+| Solve for a target; limits, limit set; cone scale                                      | ಗುರಿಗಾಗಿ ಪರಿಹರಿಸಿ; ಲಿಮಿಟುಗಳು, ಲಿಮಿಟ್ ಸೆಟ್; ಮಾಪನ ಪದ್ಧತಿ                                                                                    | Recipe page. ಲಿಮಿಟ್ for the glaze limits (guidelines), ಮಿತಿ for a legal limit. The print form's "Weigh in" (grams or pounds) is a unit: ತೂಕದ ಘಟಕ.                                                                                                |
+| manual (a kiln's, controller's or sitter's)                                            | ಕೈಪಿಡಿ                                                                                                                                    | No source; Native check. Never ಮಾರ್ಗದರ್ಶಿ.                                                                                                                                                                                                       |
+| sign in, sign out (signed in)                                                          | ಸೈನ್ ಇನ್ ಮಾಡಿ, ಸೈನ್ ಔಟ್ ಮಾಡಿ (ಸೈನ್ ಇನ್ ಆಗಿದೆ)                                                                                             | Apple ("ಸೈನ್ ಇನ್ ಮಾಡಿ"), Google ("ಸೈನ್ ಇನ್", "ಸೈನ್ ಔಟ್").                                                                                                                                                                                        |
+| device (signed in on a device)                                                         | ಸಾಧನ (ಒಂದು ಸಾಧನದಲ್ಲಿ ಸೈನ್ ಇನ್)                                                                                                            | Google, Apple ("ಸಾಧನ", "ಸಾಧನಗಳನ್ನು").                                                                                                                                                                                                            |
+| calculator (glaze calculator)                                                          | ಕ್ಯಾಲ್ಕುಲೇಟರ್ (ಸೆರಾಮಿಕ್ ಗ್ಲೇಜ್ ಕ್ಯಾಲ್ಕುಲೇಟರ್)                                                                                             | Usage. Never without ಸೆರಾಮಿಕ್/ಪಾಟರಿ in a title.                                                                                                                                                                                                  |
+| About (the page)                                                                       | ಪರಿಚಯ                                                                                                                                     |                                                                                                                                                                                                                                                  |
 
 ### 2.9 Where the potter works
 
-| English | Kannada | Notes |
-| ------- | ------- | ----- |
+The region texts' recurring labels (guides and regions files), as in hi.md 2.9.
+
+| English                                                                                | Kannada                                                                                                                               | Notes                                                                                                                                                                            |
+| -------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Shops in (the label before a list of countries)                                        | ಅಂಗಡಿಗಳು:                                                                                                                             | guides: shops.shopsIn (the label form; Placeholders and names).                                                                                                                  |
+| raw glaze materials (what a shop sells)                                                | ಗ್ಲೇಜಿನ ಕಚ್ಚಾ ವಸ್ತುಗಳು                                                                                                                | guides: shops.what.materials (Clay Station: "Raw Materials"; IIFL).                                                                                                              |
+| ready-made glazes                                                                      | ಸಿದ್ಧ ಗ್ಲೇಜುಗಳು                                                                                                                       | guides: shops.what.glazes (Clay Station's menu "Glazes").                                                                                                                        |
+| Packs seen                                                                             | ಕಂಡ ಪ್ಯಾಕುಗಳು                                                                                                                         | guides: shops.packs                                                                                                                                                              |
+| A binding limit.                                                                       | ಕಾನೂನುಬದ್ಧವಾಗಿ ಕಡ್ಡಾಯವಾದ ಮಿತಿ.                                                                                                        | guides: silica.kind.binding                                                                                                                                                      |
+| An indicative limit: a guide value, not a legal ceiling.                               | ಸೂಚಕ ಮಿತಿ: ಮಾರ್ಗಸೂಚಿ ಮೌಲ್ಯ, ಕಾನೂನಿನ ಗರಿಷ್ಠ ಅಲ್ಲ.                                                                                      | guides: silica.kind.indicative                                                                                                                                                   |
+| An assessment criterion, not a binding limit. (Germany)                                | ಮೌಲ್ಯಮಾಪನದ ಮಾನದಂಡ, ಕಡ್ಡಾಯ ಮಿತಿ ಅಲ್ಲ.                                                                                                  | guides: silica.kind.assessment                                                                                                                                                   |
+| A control concentration (kanri noudo, in Japanese characters) … (Japan)                | ನಿಯಂತ್ರಣ ಸಾಂದ್ರತೆ (kanri nōdo, 管理濃度): ಕೆಲಸದ ಸ್ಥಳದ ಗಾಳಿಯನ್ನು ಅಲ್ಲಿನ ಅಳತೆಗಳಿಂದ ಅಳೆಯುವ ಮಾನ, ಒಬ್ಬ ವ್ಯಕ್ತಿ ಉಸಿರಾಡುವ ಪ್ರಮಾಣದ ಮಿತಿ ಅಲ್ಲ. | guides: silica.kind.control: Hepburn with macrons plus the kanji, "kanri nōdo (管理濃度)" (the Urdu/Bengali ruling). ಸಾಂದ್ರತೆ here is a concentration, the one place it is used. |
+| action level (US)                                                                      | ಆಕ್ಷನ್ ಲೆವೆಲ್                                                                                                                         | guides: silica.actionLevel                                                                                                                                                       |
+| quartz and cristobalite                                                                | ಕ್ವಾರ್ಟ್ಜ್ ಮತ್ತು ಕ್ರಿಸ್ಟೊಬಲೈಟ್                                                                                                        | guides: silica.both                                                                                                                                                              |
+| Recommended by {abbr}                                                                  | ಶಿಫಾರಸು: {abbr}                                                                                                                       | guides: silica.recommended (the label form).                                                                                                                                     |
+| The national body for safety at work: <link>{name}</link>.                             | ಕೆಲಸದ ಸ್ಥಳದ ಸುರಕ್ಷತೆಯ ರಾಷ್ಟ್ರೀಯ ಸಂಸ್ಥೆ: <link>{name}</link>.                                                                          | guides: silica.agency. India's: DGOSH.                                                                                                                                           |
+| Kind of piece (food-contact rules)                                                     | ಪಾತ್ರೆಯ ಬಗೆ                                                                                                                           | guides: food.article                                                                                                                                                             |
+| pieces that cannot be filled, or no deeper than 25 mm                                  | ಏನನ್ನೂ ತುಂಬಲಾಗದ ಪಾತ್ರೆಗಳು, ಅಥವಾ 25 mm ಮೀರದ ಆಳದ ಪಾತ್ರೆಗಳು                                                                              | guides: food.category.flat ("ಮೀರದ" = at most).                                                                                                                                   |
+| Pieces that cannot be filled, or less than 2.5 cm deep                                 | ಏನನ್ನೂ ತುಂಬಲಾಗದ ಪಾತ್ರೆಗಳು, ಅಥವಾ 2.5 cm ಗಿಂತ ಕಡಿಮೆ ಆಳದ ಪಾತ್ರೆಗಳು                                                                       | guides: food.category.jpFlat ("ಗಿಂತ ಕಡಿಮೆ" = less than).                                                                                                                         |
+| Other pieces under 1.1 L, not for cooking                                              | 1.1 L ಗಿಂತ ಕಡಿಮೆಯ ಇತರ ಪಾತ್ರೆಗಳು, ಅಡುಗೆಗಲ್ಲ                                                                                            | guides: food.category.jpSmall                                                                                                                                                    |
+| Other pieces from 1.1 L to under 3 L, not for cooking                                  | 1.1 L ಅಥವಾ ಅದಕ್ಕಿಂತ ಹೆಚ್ಚು ಮತ್ತು 3 L ಗಿಂತ ಕಡಿಮೆಯ ಇತರ ಪಾತ್ರೆಗಳು, ಅಡುಗೆಗಲ್ಲ                                                             | guides: food.category.jpLarge                                                                                                                                                    |
+| Other pieces of 3 L or more, not for cooking                                           | 3 L ಅಥವಾ ಅದಕ್ಕಿಂತ ಹೆಚ್ಚಿನ ಇತರ ಪಾತ್ರೆಗಳು, ಅಡುಗೆಗಲ್ಲ                                                                                    | guides: food.category.jpStorage                                                                                                                                                  |
+| other pieces that can be filled                                                        | ತುಂಬಬಹುದಾದ ಇತರ ಪಾತ್ರೆಗಳು                                                                                                              | guides: food.category.fillable                                                                                                                                                   |
+| cooking ware                                                                           | ಅಡುಗೆ ಪಾತ್ರೆಗಳು                                                                                                                       | guides: food.category.auCooking, jpCooking, myCooking                                                                                                                            |
+| The rim of a piece for drinking from: a 2 cm band, inside and out                      | ಕುಡಿಯುವ ಪಾತ್ರೆಯ ಅಂಚು: ಒಳಗೆ ಮತ್ತು ಹೊರಗೆ 2 cm ಪಟ್ಟಿ                                                                                     | guides: food.category.rimBand                                                                                                                                                    |
+| Flatware, no deeper than 25 mm (US)                                                    | ಚಪ್ಪಟೆ ಪಾತ್ರೆಗಳು, 25 mm ಮೀರದ ಆಳ                                                                                                       | guides: food.category.flatware                                                                                                                                                   |
+| Small hollowware, under 1.1 L, other than cups and mugs (US)                           | ಸಣ್ಣ ಆಳದ ಪಾತ್ರೆಗಳು, 1.1 L ಗಿಂತ ಕಡಿಮೆ, ಕಪ್ ಮತ್ತು ಮಗ್ ಹೊರತುಪಡಿಸಿ                                                                        | guides: food.category.smallHollow                                                                                                                                                |
+| Large hollowware, 1.1 L or more, other than pitchers (US)                              | ದೊಡ್ಡ ಆಳದ ಪಾತ್ರೆಗಳು, 1.1 L ಅಥವಾ ಅದಕ್ಕಿಂತ ಹೆಚ್ಚು, ಜಗ್ ಹೊರತುಪಡಿಸಿ                                                                       | guides: food.category.largeHollow                                                                                                                                                |
+| average of 6 pieces / any one of 6                                                     | 6 ಪಾತ್ರೆಗಳ ಸರಾಸರಿ / 6ರಲ್ಲಿ ಯಾವುದೇ ಒಂದು                                                                                                | guides: food.judged.average, food.judged.each                                                                                                                                    |
+| A piece passes if it releases no more than the limit: the law says “at most”.          | ಪಾತ್ರೆ ಮಿತಿಯನ್ನು ಮೀರಿ ಬಿಡುಗಡೆ ಮಾಡದಿದ್ದರೆ ಅದು ಉತ್ತೀರ್ಣ: ಕಾನೂನು “ಗರಿಷ್ಠ” ಎನ್ನುತ್ತದೆ.                                                    | guides: food.atMost. "ಗರಿಷ್ಠ", "ಮೀರದ" = at most; "ಗಿಂತ ಕಡಿಮೆ" = under.                                                                                                           |
+| Buying in (the label before a list of countries)                                       | ಖರೀದಿ:                                                                                                                                | guides: equivalents.buyingIn                                                                                                                                                     |
+| differs by {grams} g per 100 g                                                         | ಪ್ರತಿ 100 g ಗೆ {grams} g ವ್ಯತ್ಯಾಸ                                                                                                     | guides: equivalents.apart                                                                                                                                                        |
+| Directive 84/500/EEC (its official name)                                               | ಯುರೋಪಿಯನ್ ಒಕ್ಕೂಟದ (EU) ನಿರ್ದೇಶನ 84/500/EEC                                                                                            | regions: no official Kannada text; the number kept. Native check on ನಿರ್ದೇಶನ.                                                                                                    |
+| Dust masks in Japan pass a national test (kokka kentei, in Japanese characters). …     | ಜಪಾನಿನಲ್ಲಿ ಧೂಳಿನ ಮಾಸ್ಕುಗಳು ರಾಷ್ಟ್ರೀಯ ಪರೀಕ್ಷೆಯಲ್ಲಿ (kokka kentei, 国家検定) ಉತ್ತೀರ್ಣವಾಗುತ್ತವೆ. …                                       | regions: Japan's masks: "(kokka kentei, 国家検定)", Hepburn plus kanji. Here "pass" is the English's own word.                                                                   |
+| Japan Poison Information Center, Osaka (Osaka chudoku 110-ban, in Japanese characters) | ಜಪಾನ್ ವಿಷ ಮಾಹಿತಿ ಕೇಂದ್ರ, ಒಸಾಕಾ (Ōsaka chūdoku 110-ban, 大阪中毒110番)                                                                 | safety: Japan's lines, Hepburn with macrons plus kanji (the check accepts the repeated 110). Grade names and the firing guide's cones and sources likewise.                      |
+| emergency number; Emergency (a heading); calling the emergency number                  | ತುರ್ತು ಸಂಖ್ಯೆ; ತುರ್ತು ಪರಿಸ್ಥಿತಿ (heading); ತುರ್ತು ಸಂಖ್ಯೆಗೆ ಕರೆ ಮಾಡುವುದು                                                               | India's: 112 (IN research). "ತುರ್ತು ಸಂಖ್ಯೆ (112)" only where the English gives the number.                                                                                       |
+| 24 hours, every day, toll free                                                         | ದಿನದ 24 ಗಂಟೆ, ಪ್ರತಿದಿನ, ಉಚಿತ ಕರೆ                                                                                                      | safety: hours. The 24 is the English's figure.                                                                                                                                   |
 
 ### 2.10 Signing in
 
-The words Google, Apple and Microsoft use on their own Kannada help pages (link each): two-step sign-in, authenticator
-app, setup key, QR code, passkey, recovery code, the code from the app, security key, sign in, sign out, account,
-password, trusted device. The English writes "two-step" as a word, so a digit 2 is a figure the check rejects.
+The words Apple and Google use on their Kannada pages (Google's and Microsoft's help pages for signing in are served in
+English), and the choice:
 
-| English | Kannada | Notes |
-| ------- | ------- | ----- |
+| English                                   | Kannada                      | Notes                                                                                                                                                                                    |
+| ----------------------------------------- | ---------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| two-step sign-in (2-step verification)    | ಎರಡು ಹಂತದ ಸೈನ್ ಇನ್           | Native check. Google: "2 ಹಂತದ ಪರಿಶೀಲನೆ" (privacy policy); Apple: "ಎರಡು-ಅಂಶದ ದೃಢೀಕರಣ". The English writes "two-step" as a word, so a digit 2 is a figure the check rejects: write "ಎರಡು". |
+| authenticator app                         | ಆಥೆಂಟಿಕೇಟರ್ ಆ್ಯಪ್            | Usage; no Kannada page read names it. "ಆಥೆಂಟಿಕೇಟರ್ ಆ್ಯಪಿನ ಕೋಡ್". Native check on ಆ್ಯಪ್ (the common spelling; ಆಪ್ also seen).                                                             |
+| setup key (the key typed in)              | ಸೆಟಪ್ ಕೀ                     | Usage; Apple's "ಭದ್ರತಾ ಕೀ" gives ಕೀ. "ಕೀ ಕಾಪಿ ಮಾಡಿ".                                                                                                                                     |
+| QR code                                   | QR ಕೋಡ್                      | Apple ("QR ಕೋಡ್ ಸ್ಕ್ಯಾನ್ ಮಾಡಿ"): QR stays in Latin letters.                                                                                                                              |
+| passkey                                   | ಪಾಸ್ಕೀ                       | Apple ("ಪಾಸ್ಕೀಗಳನ್ನು", written here without the ZWNJ). Plural ಪಾಸ್ಕೀಗಳು.                                                                                                                 |
+| recovery code (backup code)               | ರಿಕವರಿ ಕೋಡ್                  | No Kannada page read; Google's English says "backup codes". The app's "Recovery code" is "ರಿಕವರಿ ಕೋಡ್" every time, never ಬ್ಯಾಕಪ್ ಕೋಡ್.                                                   |
+| the code from the app (verification code) | ದೃಢೀಕರಣ ಕೋಡ್                 | Apple ("ದೃಢೀಕರಣ ಕೋಡ್ಗಳನ್ನು"); Google's "ಪರಿಶೀಲನೆ" is the verification step. Plural ದೃಢೀಕರಣ ಕೋಡುಗಳು.                                                                                      |
+| security key                              | ಭದ್ರತಾ ಕೀ                    | Apple ("ಭದ್ರತಾ ಕೀಗಳನ್ನು ಬಳಸುವುದು"); Google ("ಭದ್ರತೆ").                                                                                                                                   |
+| sign in, sign out                         | ಸೈನ್ ಇನ್ ಮಾಡಿ, ಸೈನ್ ಔಟ್ ಮಾಡಿ | Apple ("ಸೈನ್ ಇನ್ ಮಾಡಿ"), Google ("ಸೈನ್ ಇನ್", "ಸೈನ್ ಔಟ್").                                                                                                                                |
+| account                                   | ಖಾತೆ                         | Google ("Google ಖಾತೆ"), Apple ("Apple ಖಾತೆ", "ಖಾತೆಗಳನ್ನು").                                                                                                                              |
+| password                                  | ಪಾಸ್ವರ್ಡ್                    | Google, Apple ("ಪಾಸ್ವರ್ಡ್", written here without the ZWNJ); MS "ಪಾಸ್ ವರ್ಡ್" with a space. Plural ಪಾಸ್ವರ್ಡುಗಳು. Native check on the conjunct.                                             |
+| trusted device                            | ವಿಶ್ವಾಸಾರ್ಹ ಸಾಧನ             | Usage; Google's and Apple's ಸಾಧನ. Native check.                                                                                                                                          |
 
 ## 3. Never translated
 
-As in hi.md, from terms.md, unchanged: formulas and symbols (SiO₂, K₂O, R₂O, RO), cone numbers with their leading zeros,
-SK numbers as printed, mesh numbers, units (°C, °F, K, °Bé, g, kg, mg, mL, L, mm, cm, %, mg/m³), codes and standards (N95,
-FFP2, EN 149, JIS R 8101, H-codes, CAS numbers), the names Glazecalc, UMF, Orton and Seger, and kiln and equipment makers
-and products (Skutt, L&L, Bartlett, Kiln-Sitter).
+From terms.md, unchanged:
+
+- **Formulas and symbols:** SiO₂, Al₂O₃, B₂O₃, K₂O, Na₂O, Li₂O, CaO, MgO, BaO, SrO, ZnO, PbO, Fe₂O₃, FeO, Fe₃O₄, TiO₂,
+  ZrO₂, ZrSiO₄, CoO, Co₃O₄, CuO, MnO₂, Cr₂O₃, SnO₂, P₂O₅, V₂O₅, CaCO₃, CO, CO₂ and the rest; R₂O, RO, R₂O₃, RO₂; KNaO;
+  "×10⁻⁶/°C" and "x 10^-7/K".
+- **Cone numbers:** 022 to 42 with their leading zeros (010, 08, 06, 04, 03, 01, 1, 5, 6, 10), SK numbers as printed
+  (SK 022, SK 015a, SK 6a, SK 20), and the "o'clock" bend positions (the words around them change; the clock figure
+  stays).
+- **Mesh numbers:** 50, 60, 80, 100, 120, 200, 325 mesh, -325 mesh, "200#".
+- **Units:** °C, °F, K, °Bé, °C/h, °F/h, g, kg, mg, µg, ml/mL, L, lb, oz, fl oz, %, mm, cm, m³, mg/m³, µg/m³, µg/dL,
+  µg/mL, µg/cm², µm (inches and feet take the language's word: see Numbers and units).
+- **Codes and standards:** N95, P100, FFP2, FFP3, P2, P3, KF94, KF80, EN 149, EN 140, AS/NZS 1716, HEPA, Class M, ASTM
+  C738, ASTM D-4236, EN 1388, ISO 6486, AS 4371, JIS R 8101, the numbers of Directives 84/500/EEC and (EU) 2017/2398,
+  CPG Sec. 545.450, 29 CFR 1910.1053, H-codes (H302, H360FD), GHS08, CAS numbers, IARC group numbers.
+- **Names:** Glazecalc; "UMF" as an abbreviation; Seger, Orton (Orton Ceramic Foundation), Staffordshire, Bullers,
+  Holdcroft (in Latin letters; Seger is ಸೆಗರ್ in running text, as the Cones subsection says).
+- **Kiln and equipment makers and products:** Skutt (EnviroVent 2, KilnMaster), L&L (DynaTrol), Bartlett, Dawson
+  (Kiln-Sitter, LT-3), Bracker's; controller presets (Slow Bisque, Fast Bisque, Slow Glaze, Fast Glaze, "User 6");
+  Digitalfire schedules (BQ1000, PLC6DS, C6DHSC).
+- **Materials by trade name:** Ferro and Vibrantz frits (3110, 3124, 3134, 3195, 3249), Fusion frits (F-19 and others),
+  Potterycrafts P3124 and P3195, Custer feldspar (Custer Spar), G-200, G-200 EU, G-200 HP, Mahavir, Minspar 200, Kona F-4,
+  Norflux, FFF, Gerstley Borate, Gillespie Borate, Laguna Borate, Portabor, EPK, Grolleg, Eckalite, Eckaglas, TWVA, HVAR,
+  Zircopax, Superpax, Excelopax, Ultrox, Zircosil, Darvan, Volclay, Bentone, Vansil, NYAD, Alberta Slip, Albany slip,
+  Bayferrox, Mason stains, AMACO.
+- **Sources, agencies and suppliers:** Glazy, Digitalfire, Ceramic Arts Network, Ceramics Monthly, HSE, OSHA, NIOSH, IARC,
+  ECHA, FDA, CDC, EPA, NHS, COSHH, NEPSI, Safe Work Australia, WorkSafe New Zealand; Laguna, Potclays, Potterycrafts,
+  Valentine Clays, Sibelco, Imerys, Walker Ceramics and the other suppliers named; the poison services in
+  `safety/en.json` (the Japanese ones in Hepburn romanization, as 2.9 gives them).
+- **Placeholders and tags:** `{name}`, `{count}` and the rest, and `<b>`, `<settings>` and other tags.
+
+Added for Kannada:
+
+- **Indian product names** as on the bag or list, in Latin letters where the shop writes them so ("CS Potash Feldspar
+  (G-325)", "Ferro Frit 3134"), never "corrected" to this page's spelling; the shops' grades (G-325, C-200, G-200) kept.
+- **Indian bodies and services:** National Poisons Information Centre (NPIC), AIIMS (ಅಖಿಲ ಭಾರತ ವೈದ್ಯಕೀಯ ವಿಜ್ಞಾನ ಸಂಸ್ಥೆ), Poison
+  Information Centre, JSS College of Pharmacy, Mysuru, 112, 1800 116 117, 1800 425 0207, DGOSH, BIS (ಭಾರತೀಯ ಮಾನಕ ಬ್ಯೂರೋ).
+- **The law's names and numbers:** IS 9473:2002, IS 9806:2001, the Code's title and section numbers, with their years
+  as the English writes them.
+- **Apple, Google and Microsoft** in Latin letters ("Apple ಖಾತೆ", "Google ಖಾತೆ").
