@@ -22,13 +22,15 @@ COPY package.json package-lock.json ./
 RUN --mount=type=cache,target=/root/.npm npm ci --no-audit --no-fund
 
 # Production build of the client into dist/glazecalc/browser, and the public
-# pages rendered ahead of time into dist/glazecalc/prerendered (scripts/prerender.mjs).
+# pages rendered ahead of time into dist/glazecalc/prerendered (scripts/prerender.mjs),
+# and the skills as ZIPs to download (scripts/build-skills.mjs).
 FROM deps AS build
-COPY angular.json tsconfig.json tsconfig.app.json ./
+COPY angular.json tsconfig.json tsconfig.app.json LICENSE ./
 COPY client ./client
 COPY lib ./lib
+COPY skills ./skills
 COPY data/advice.ndjson data/materials.ndjson ./data/
-COPY scripts/prerender.mjs scripts/advice-i18n.mjs ./scripts/
+COPY scripts/prerender.mjs scripts/advice-i18n.mjs scripts/build-skills.mjs ./scripts/
 RUN npm run build
 
 # Only the packages the server needs at run time.
@@ -50,6 +52,8 @@ COPY package.json ./
 COPY data ./data
 COPY server ./server
 COPY lib ./lib
+# The MCP prompt dictation reads the skill's own files (server/mcp/dictation.ts).
+COPY skills ./skills
 COPY scripts/seed-standard.js ./scripts/
 COPY --from=build /app/dist/glazecalc/browser ./dist/glazecalc/browser
 COPY --from=build /app/dist/glazecalc/prerendered ./dist/glazecalc/prerendered

@@ -5,7 +5,7 @@ lead: A companion to John Britt's free online Glaze Course on YouTube, unit by u
 
 ## About this companion {#about}
 
-John Britt is a potter and teacher who has made a free online Glaze Course: more than fifty videos on YouTube, from the unity formula to test tiles, clay and firing. **The videos are his.** They are free to watch on [his YouTube channel](https://www.youtube.com/@johnbrittpottery), in [the course's playlist](https://www.youtube.com/playlist?list=PL-Wllepy4jIbCxsXiQRG5GJzbKNUSUvPd). His website, [johnbrittpottery.com](http://johnbrittpottery.com/), has his books and glaze notes, including two books published by Lark Books, now part of Hachette Book Group: _The Complete Guide to High-Fire Glazes: Glazing & Firing at Cone 10_ and _The Complete Guide to Mid-Range Glazes: Glazing and Firing at Cones 4-7_.
+John Britt is a potter and teacher who has made a free online Glaze Course: more than fifty videos on YouTube, from the unity formula to test tiles, clay and firing. **The videos are his.** They are free to watch on [his YouTube channel](https://www.youtube.com/@johnbrittpottery), in [the course's playlist](https://www.youtube.com/playlist?list=PL-Wllepy4jIbCxsXiQRG5GJzbKNUSUvPd). His website, [johnbrittpottery.com](http://johnbrittpottery.com/), has his books and glaze notes, including two books, first published by Lark Books and now published by Union Square & Co., part of Hachette Book Group: _The Complete Guide to High-Fire Glazes: Glazing & Firing at Cone 10_ and _The Complete Guide to Mid-Range Glazes: Glazing and Firing at Cones 4-7_.
 
 Glazecalc is not part of his course, and is not connected with him. This page only links to his videos, by the titles he gave them. It says nothing about what he says in them: watch them for that. What this page adds is what Glazecalc offers beside each unit: the sections of our guides that cover the same ground, and exercises to try with Glazecalc's calculator, or with an AI assistant connected to Glazecalc ([how to connect one](/assistants)).
 
@@ -15,6 +15,7 @@ Glazecalc is not part of his course, and is not connected with him. This page on
 - Watch the videos first. They open on YouTube, and they are in English.
 - Then read the guide sections, and try the exercises. You need an account for the exercises that save a recipe, a blend or a firing log.
 - The exercises name the tools an assistant can use, such as `analyze_recipe`. In an assistant, the prompt **glaze_course_lesson** sets up a lesson for a unit.
+- Ask an assistant that is connected to your account to save a series of tiles as a notebook entry, or a tile you liked as a recipe. It shows what it will save and waits for your yes, and with **Confirm changes** on, nothing is saved until you approve it on the website.
 
 > [!WARNING]
 > Several units are lab work: weighing and mixing dry materials, and firing. Before you mix anything, read the [safe mixing guide](/guides/safe-mixing): dry glaze dust is the main hazard, and a fitted respirator, wet cleaning and lids on containers are the habits that matter most.
@@ -36,7 +37,7 @@ Glazecalc is not part of his course, and is not connected with him. This page on
 
 1. Start a [recipe](/recipe) with a simple glaze you have, and watch its unity formula change as you add each material.
 2. Open **How the unity formula is worked out** on the recipe page and follow each step with your recipe's numbers. Then work one material out by hand and compare.
-3. With an assistant: ask it to run `analyze_recipe` on the same recipe and explain each group of oxides in the answer.
+3. With an assistant: ask it to run `analyze_recipe` on the same recipe and explain each group of oxides in the answer. Then ask it to run `vary_material` with silica from 0 to 20 on top of the recipe, and say which unity formula numbers move and which do not.
 
 ## Unit 2: Limits and the Stull chart {#limits-and-stull}
 
@@ -54,7 +55,7 @@ Glazecalc is not part of his course, and is not connected with him. This page on
 
 1. On the [recipe page](/recipe), set the recipe's firing, then look at the limits panel and the **Stull chart**. Where does your glaze sit, and does the line at the top say its chemistry fits its firing?
 2. Change the silica a little at a time and watch the point move on the Stull chart.
-3. With an assistant: ask it to run `check_limits` with the recipe and its cone, and explain each caution and the `coneFit` verdict.
+3. With an assistant: ask it to run `check_limits` with the recipe and its cone, and explain each caution and the `coneFit` verdict. Its answer also says where the recipe sits on the Stull chart (`stull`). Then ask for `vary_material` with silica from 0 to 30, and which regions of the chart the glaze crosses.
 
 ## Unit 3: The oxides and what they do {#oxides}
 
@@ -72,6 +73,7 @@ Glazecalc is not part of his course, and is not connected with him. This page on
 
 1. Open three materials in the [library](/material), such as whiting, a feldspar and a kaolin, and note which oxides each brings to a glaze.
 2. With an assistant: ask it to run `get_material` for each and sort their oxides into fluxes, glass formers and stabilizers.
+3. Ask the assistant what one material does: `vary_material` with whiting from 0 to 20, then a frit, then talc from 0 to 10, each in the same base recipe. Compare how the unity formula and the Stull chart point move. (The prompt **what_does_this_material_do** sets this up.)
 
 ## Unit 4: Color in different base glazes {#color-in-bases}
 
@@ -92,7 +94,7 @@ Glazecalc is not part of his course, and is not connected with him. This page on
 
 1. Save two base glazes as recipes, then copy each and add the same colorant to the copies. Compare their unity formulas: what differs in the bases (boron, zinc, magnesium, alkali) that might change the color?
 2. On [Blends](/blends), make a line blend from a base to the same base with a colorant, and print what to weigh for each tile.
-3. With an assistant: ask it to run `blend_recipes` from the base to the colored base, or `analyze_recipe` on both, and compare.
+3. With an assistant: ask it to run `compare_recipes` on two bases, or on a base and the same base with the colorant, and say what differs. Then `blend_recipes` from the base to the colored base for the tiles.
 
 ## Unit 5: Blending and testing methods {#blending}
 
@@ -123,7 +125,7 @@ Glazecalc is not part of his course, and is not connected with him. This page on
 
 1. On [Blends](/blends), set up a triaxial blend from three of your recipes, choose the number of rows, and print what to weigh for each tile.
 2. Fire the tiles, then save the ones you like as recipes from the drawing of the tiles.
-3. With an assistant: ask it to run `blend_recipes` with two or three recipes as the corners, and to say which tiles pass `check_limits` and which look off for the firing.
+3. With an assistant: ask it to run `blend_recipes` with two or three recipes as the corners, or `vary_material` for an ingredient blend of one material, and to say which tiles pass `check_limits` and which look off for the firing. If your assistant is connected to your account, ask it to save the series as a notebook entry. It shows what it will save and waits for your yes.
 
 ## Unit 6: Test tiles and melt tests {#test-tiles-and-melt}
 
@@ -187,7 +189,7 @@ Glazecalc is not part of his course, and is not connected with him. This page on
 
 1. Enter a recipe that uses Gerstley Borate on the [recipe page](/recipe) and choose **Try modern materials and compare**. Compare the two unity formulas.
 2. Add the materials you have on hand, then use **Make it from what you have** to remake a recipe from only those.
-3. With an assistant: ask it to run `suggest_substitutes` on the recipe, then `match_from_materials` with the materials you have, and compare both with `analyze_recipe`.
+3. With an assistant: ask it to run `suggest_substitutes` on the recipe, then `match_from_materials` with the materials you have, and `compare_recipes` for the original against each. To aim for a unity formula you have chosen, `solve_target` makes a recipe from the materials you have.
 
 ## Unit 9: Special surfaces {#special-surfaces}
 
@@ -285,5 +287,5 @@ John Britt's course also has a video on a subject some potters come to for perso
 - [John Britt's Free Online Glaze Course, the playlist on YouTube](https://www.youtube.com/playlist?list=PL-Wllepy4jIbCxsXiQRG5GJzbKNUSUvPd)
 - [John Britt Pottery on YouTube](https://www.youtube.com/@johnbrittpottery)
 - [John Britt Pottery: johnbrittpottery.com](http://johnbrittpottery.com/)
-- John Britt, _The Complete Guide to High-Fire Glazes: Glazing & Firing at Cone 10_ (Lark Books)
-- John Britt, _The Complete Guide to Mid-Range Glazes: Glazing and Firing at Cones 4-7_ (Lark Books)
+- John Britt, [_The Complete Guide to High-Fire Glazes: Glazing & Firing at Cone 10_](https://www.hachettebookgroup.com/titles/john-britt/the-complete-guide-to-high-fire-glazes/9781600592164), Union Square & Co. (first published by Lark Books)
+- John Britt, [_The Complete Guide to Mid-Range Glazes: Glazing and Firing at Cones 4-7_](https://www.hachettebookgroup.com/titles/john-britt/the-complete-guide-to-mid-range-glazes/9781454707776/), Union Square & Co. (first published by Lark Books), 2014

@@ -26,7 +26,7 @@ Pasigaminti glazūrą{{en: glaze}} reiškia pagal receptą pasverti miltelių pa
 
 ### Kur pirkti
 
-Keramikai perka iš keramikos reikmenų tiekėjų, kurie parduoda molį, glazūrų žaliavas ir įrankius. Lentelėje pateikta keletas jūsų šalies tiekėjų, kiekvienas patikrintas jo paties svetainėje; pasirinkę kitą šalį, pamatysite jos parduotuves. Prekių asortimentas keičiasi, todėl prieš užsakydami pasitikrinkite. Stambūs gamintojai, tokie kaip Sibelco ir Imerys, parduoda pramonei; keramikai jų žaliavas perka per tokias parduotuves kaip šios. Kitų vietų tiekėjų parduotuvių katalogą tvarko keramikos žinių svetainė Digitalfire.
+Keramikai perka iš keramikos reikmenų tiekėjų, kurie parduoda molį, glazūrų žaliavas ir įrankius. Lentelėje pateikta keletas jūsų šalies tiekėjų, kiekvienas patikrintas jo paties svetainėje; pasirinkę kitą šalį ar regioną, pamatysite ten esančias parduotuves. Prekių asortimentas keičiasi, todėl prieš užsakydami pasitikrinkite. Stambūs gamintojai, tokie kaip Sibelco ir Imerys, parduoda pramonei; keramikai jų žaliavas perka per tokias parduotuves kaip šios. Kitų vietų tiekėjų parduotuvių katalogą tvarko keramikos žinių svetainė Digitalfire.
 
 ::shops
 

@@ -26,7 +26,7 @@ Príprava glazúry{{en: glaze}} znamená navážiť podľa receptu práškové *
 
 ### Kde nakupovať
 
-Keramikári nakupujú u dodávateľov keramických potrieb, ktorí predávajú hlinu, suroviny na glazúry{{en: glaze}} a náradie. Tabuľka uvádza niektoré obchody vo vašej krajine, každý overený na jeho vlastnej webovej stránke, a ak si vyberiete inú krajinu, uvidíte jej obchody. Sortiment sa mení, preto si ho pred objednaním overte. Veľkí výrobcovia, ako Sibelco a Imerys, predávajú priemyslu; keramikári kupujú ich suroviny v obchodoch, ako sú tieto. Odborná stránka o keramike Digitalfire vedie pre ďalšie miesta zoznam obchodov dodávateľov.
+Keramikári nakupujú u dodávateľov keramických potrieb, ktorí predávajú hlinu, suroviny na glazúry{{en: glaze}} a náradie. Tabuľka uvádza niektoré obchody vo vašej krajine, každý overený na jeho vlastnej webovej stránke, a ak si vyberiete inú krajinu alebo región, uvidíte tamojšie obchody. Sortiment sa mení, preto si ho pred objednaním overte. Veľkí výrobcovia, ako Sibelco a Imerys, predávajú priemyslu; keramikári kupujú ich suroviny v obchodoch, ako sú tieto. Odborná stránka o keramike Digitalfire vedie pre ďalšie miesta zoznam obchodov dodávateľov.
 
 ::shops
 

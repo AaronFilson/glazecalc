@@ -3,7 +3,7 @@ const { signUpAndSignIn } = require('./helpers');
 
 // Every page in the pseudo-locales (docs/translating.md): each message is
 // accented in en-XA, and in Japanese characters in ja-XC, Arabic letters in
-// ar-XD and Devanagari in hi-XE, so interface text that is none of them was
+// ar-XD, Devanagari in hi-XE, Tamil in ta-XF and Kannada in kn-XG, so interface text that is none of them was
 // never marked for translation. Names, numbers, units and formulas are not
 // messages.
 
@@ -11,7 +11,9 @@ const PSEUDO = {
   'en-XA': /[åƀçðéƒĝĥîĵķļɱñöþǫŕšţûṽŵẋýžÅƁÇÐÉƑĜĤÎĴĶĻṀÑÖÞǪŔŠŢÛṼŴẊÝŽ]/,
   'ja-XC': /[\u3040-\u30ff\u4e00-\u9fff]/,
   'ar-XD': /[\u0600-\u06ff]/,
-  'hi-XE': /[\u0900-\u097f]/
+  'hi-XE': /[\u0900-\u097f]/,
+  'ta-XF': /[\u0b80-\u0bff]/,
+  'kn-XG': /[\u0c80-\u0cff]/
 };
 
 /** Interface text on the page that is not in the pseudo-locale: headings, labels, buttons, column heads, the menu. */

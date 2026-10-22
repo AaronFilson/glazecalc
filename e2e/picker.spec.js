@@ -99,7 +99,8 @@ for (const [where, viewport] of Object.entries({
       await field.press('Enter');
       await expect(page).toHaveURL(/\/fr\/account$/);
       await expect(page.locator('html')).toHaveAttribute('lang', 'fr');
-      expect((await saved(page)).language).toBe('fr');
+      // Asked until the save has landed: the page can open in French before it has.
+      await expect.poll(async () => (await saved(page)).language).toBe('fr');
       // In French the same list, the current one marked, the groups' names in English until they are translated.
       await page.locator('#language').click();
       await expect(page.locator('#language')).toHaveValue('Français');
@@ -119,6 +120,14 @@ for (const [where, viewport] of Object.entries({
       await expect(list.getByRole('option').first()).toHaveText('Not chosen');
       await insideWindow(page, list);
       await accessible(page, 'the open list of regions');
+      // Sri Lanka and Nepal, with the rest of the subcontinent, under Asia.
+      for (const [typed, found] of [
+        ['sri', 'Sri Lanka'],
+        ['nepal', 'Nepal']
+      ]) {
+        await field.fill(typed);
+        await expect(list.getByRole('group', { name: 'Asia' }).getByRole('option'), typed).toHaveText([found]);
+      }
       await field.fill('south kor');
       await expect(list.getByRole('option')).toHaveText(['South Korea']);
       await field.press('Enter');

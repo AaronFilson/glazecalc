@@ -27,7 +27,7 @@
       "text": "Prach, respirátory, upratovanie, suroviny, ktoré si vyžadujú najväčšiu opatrnosť, a vetranie pece."
     },
     "homeSafety": {
-      "title": "Bezpečnosť glazúr doma: deti, domáce zvieratá a pec",
+      "title": "Neotrávte svoju rodinu",
       "text": "Keramika doma s deťmi a domácimi zvieratami: skladovanie, prach, pec a čo robiť, ak niekto niečo prehltne."
     },
     "firing": {
@@ -43,7 +43,7 @@
   "contents": "Na tejto stránke",
   "poison": {
     "numbersFor": "Telefónne čísla:",
-    "choose": "Vyberte krajinu",
+    "choose": "Vyberte krajinu alebo región",
     "label": "Kam volať: {region}",
     "caption": "Kam volať: {region} (čísla overené {date})",
     "for": "Účel",
@@ -61,7 +61,7 @@
     "animalsNone": "Zvieratá",
     "vet": "Zavolajte veterinárovi.",
     "checkedOn": "Overené na stránkach:",
-    "choosePrompt": "Vyberte krajinu, aby ste videli, kam tam volať.",
+    "choosePrompt": "Vyberte krajinu alebo región, aby ste videli, kam tam volať.",
     "ministry": "Stránka ministerstva zdravotníctva: <link>{name}</link>."
   },
   "density": {
@@ -89,7 +89,7 @@
     },
     "none": "{region}: nenašli sme žiadny obchod so surovinami na glazúry.",
     "unknown": "{region}: obchody sme zatiaľ nehľadali.",
-    "choosePrompt": "Vyberte krajinu, aby ste videli tamojšie obchody."
+    "choosePrompt": "Vyberte krajinu alebo región, aby ste videli tamojšie obchody."
   },
   "silica": {
     "limitIn": "Limitné hodnoty:",
@@ -135,7 +135,7 @@
     "noData": "{region}: limitnú hodnotu sme zatiaľ neoverili.",
     "agency": "Národný orgán pre bezpečnosť a ochranu zdravia pri práci: <link>{name}</link>.",
     "agencySilica": "Jeho <link>stránka o oxide kremičitom</link>.",
-    "choosePrompt": "Vyberte krajinu, aby ste videli jej limitnú hodnotu."
+    "choosePrompt": "Vyberte krajinu alebo región, aby ste videli tamojšiu limitnú hodnotu."
   },
   "food": {
     "rulesIn": "Pravidlá:",
@@ -211,7 +211,7 @@
     "unknown": "{region}: pravidlá sme zatiaľ neoverili.",
     "none": "{region}: neexistuje zákon, ktorý by stanovoval limity pre olovo a kadmium, ktoré smie vypálený kus uvoľniť (overené {date}).",
     "noneSource": "Zdroj: <link>{law}</link>.",
-    "choosePrompt": "Vyberte krajinu, aby ste videli jej pravidlá."
+    "choosePrompt": "Vyberte krajinu alebo región, aby ste videli tamojšie pravidlá."
   },
   "equivalents": {
     "buyingIn": "Kde nakupujete:",
@@ -224,6 +224,6 @@
     "noneClose": "Nič v rozmedzí 15 g na 100 g: porovnajte podľa chemického zloženia.",
     "loading": "Načítava sa knižnica…",
     "failed": "Knižnicu sa nepodarilo načítať. Skúste to znova neskôr.",
-    "choosePrompt": "Vyberte krajinu, aby ste videli, čo sa tam predáva."
+    "choosePrompt": "Vyberte krajinu alebo región, aby ste videli, čo sa tam predáva."
   }
 }

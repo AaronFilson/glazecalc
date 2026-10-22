@@ -50,11 +50,11 @@ export interface Guide {
 
 // The parts of a guide drawn from data for the reader's country (REGION_BLOCKS in guide-document.ts).
 const REGION_LINES: Record<string, string> = {
-  'poison-lines': 'who to call for poison advice in your country',
-  shops: 'where to buy glaze materials in your country',
-  'silica-limit': "your country's workplace limit for silica dust",
-  'food-limits': "your country's limits for ceramic ware that touches food",
-  'local-equivalents': 'the materials sold in your country closest to those named here'
+  'poison-lines': 'who to call for poison advice in your country or region',
+  shops: 'where to buy glaze materials in your country or region',
+  'silica-limit': 'the workplace limit for silica dust in your country or region',
+  'food-limits': 'the limits for ceramic ware that touches food in your country or region',
+  'local-equivalents': 'the materials sold in your country or region closest to those named here'
 };
 
 /** A guide's Markdown in a language, or null when there is none. */

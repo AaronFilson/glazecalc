@@ -26,7 +26,7 @@ At lave en glasur{{en: glaze}} vil sige at afveje pulverformige **råvarer** (fo
 
 ### Hvor man køber ind
 
-Keramikere køber hos forhandlere af keramikartikler, som sælger ler, råvarer til glasur og værktøj. Tabellen viser nogle af dem i landet, hvor værkstedet ligger, hver især kontrolleret på forhandlerens egen hjemmeside, og man kan vælge et andet land for at se forhandlerne der. Sortimentet skifter, så kontrollér det før bestilling. Store producenter som Sibelco og Imerys sælger til industrien; keramikere køber deres råvarer gennem forhandlere som disse. Keramikopslagsværket Digitalfire har en oversigt over forhandlere andre steder.
+Keramikere køber hos forhandlere af keramikartikler, som sælger ler, råvarer til glasur og værktøj. Tabellen viser nogle af dem i landet, hvor værkstedet ligger, hver især kontrolleret på forhandlerens egen hjemmeside, og man kan vælge et andet land eller en anden region for at se forhandlerne der. Sortimentet skifter, så kontrollér det før bestilling. Store producenter som Sibelco og Imerys sælger til industrien; keramikere køber deres råvarer gennem forhandlere som disse. Keramikopslagsværket Digitalfire har en oversigt over forhandlere andre steder.
 
 ::shops
 

@@ -716,9 +716,15 @@ describe('confirm before changes: every way to change records asks', () => {
         })
       )._id
     );
+    const firingId = String(
+      (await Firing.create({ title: 'Glaze firing', fieldsIncluded: ['Time'], rows: [], ownedBy: owner }))._id
+    );
     await setting(mine.token, 'all');
     const calls: Record<string, object> = {
       create_recipe: { title: 'New', lines: [{ material: 'Silica', amount: 30 }] },
+      create_firing_log: { title: 'Glaze', columns: ['Time'], rows: [['9:00']] },
+      add_firing_rows: { id: firingId, rows: [['10:00']] },
+      link_firing: { recipeId, firingId, result: 'Satin' },
       update_recipe: { id: recipeId, title: 'Renamed' },
       add_notebook_entry: { content: 'A note' },
       add_my_material: { name: 'Another frit', analysis: { SiO2: 60, Na2O: 10 } },

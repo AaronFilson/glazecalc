@@ -20,8 +20,9 @@
 //   MICROSOFT_CLIENT_ID, MICROSOFT_CLIENT_SECRET
 // The callback each is registered with is SITE_URL + /api/auth/<provider>/callback.
 //
-//   OAUTH_TEST_BASE  outside production only: every provider endpoint is under
-//                    this address instead (the tests' fake provider).
+//   OAUTH_TEST_BASE  only with NODE_ENV=test: every provider endpoint is under
+//                    this address instead (the tests' fake provider); the
+//                    server will not start with it and NODE_ENV=production.
 import crypto, { type KeyObject } from 'node:crypto';
 import jwt from 'jsonwebtoken';
 import * as log from './log.ts';
@@ -70,10 +71,27 @@ interface Endpoints {
   api?: string;
 }
 
-const testBase = (): string | null =>
-  process.env.NODE_ENV !== 'production' && process.env.OAUTH_TEST_BASE
+/**
+ * OAUTH_TEST_BASE when it may be used: only with NODE_ENV=test outright (not
+ * merely "not production"), since it sends every provider step, and the ID
+ * tokens' keys, to another address.
+ */
+export const testBase = (): string | null =>
+  process.env.NODE_ENV === 'test' && process.env.OAUTH_TEST_BASE
     ? process.env.OAUTH_TEST_BASE.replace(/\/+$/, '')
     : null;
+
+/**
+ * At start: throws if OAUTH_TEST_BASE is set with NODE_ENV=production (a
+ * stray test setting on a real server), and warns when the fake provider is on.
+ */
+export const checkTestBase = (): void => {
+  if (process.env.OAUTH_TEST_BASE && process.env.NODE_ENV === 'production') {
+    throw new Error('OAUTH_TEST_BASE must not be set when NODE_ENV is production');
+  }
+  if (testBase()) log.warn('OAUTH_TEST_BASE is set: sign-in providers are the tests’ fake provider');
+};
+checkTestBase();
 
 /** Where each provider's steps are. */
 export const endpoints = (provider: ProviderId): Endpoints => {

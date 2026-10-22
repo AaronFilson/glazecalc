@@ -26,7 +26,7 @@ Przygotowanie szkliwa{{en: glaze}} polega na odważeniu według receptury sprosz
 
 ### Gdzie kupować
 
-Ceramicy kupują u dostawców artykułów ceramicznych, którzy sprzedają gliny, surowce do szkliw i narzędzia. Tabela pokazuje kilka sklepów we własnym kraju, a każdy z nich sprawdzono na jego własnej stronie internetowej; po wybraniu innego kraju można zobaczyć tamtejsze sklepy. Asortyment się zmienia, więc przed zamówieniem należy go sprawdzić. Duzi producenci, tacy jak Sibelco i Imerys, sprzedają odbiorcom przemysłowym; ceramicy kupują ich surowce w sklepach takich jak te. Dla innych miejsc katalog sklepów z artykułami ceramicznymi prowadzi Digitalfire, serwis z wiedzą o ceramice.
+Ceramicy kupują u dostawców artykułów ceramicznych, którzy sprzedają gliny, surowce do szkliw i narzędzia. Tabela pokazuje kilka sklepów we własnym kraju, a każdy z nich sprawdzono na jego własnej stronie internetowej; po wybraniu innego kraju lub regionu można zobaczyć tamtejsze sklepy. Asortyment się zmienia, więc przed zamówieniem należy go sprawdzić. Duzi producenci, tacy jak Sibelco i Imerys, sprzedają odbiorcom przemysłowym; ceramicy kupują ich surowce w sklepach takich jak te. Dla innych miejsc katalog sklepów z artykułami ceramicznymi prowadzi Digitalfire, serwis z wiedzą o ceramice.
 
 ::shops
 

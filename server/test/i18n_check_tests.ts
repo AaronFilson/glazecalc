@@ -244,6 +244,129 @@ describe('message checks', () => {
     });
   });
 
+  describe('in the Indian languages', () => {
+    const english = 'Open the kiln after 8pm.';
+    // Each language's 12-hour time (a part of the day, the hour, o'clock) and the 24-hour form its style sheet asks for.
+    const times: [string, string, string][] = [
+      ['hi', 'रात 8 बजे', '20 बजे'],
+      ['hi', 'शाम को 8 बजे', '20 बजे'],
+      ['hi', '8 बजे रात', '20 बजे'],
+      ['mr', 'रात्री 8 वाजता', '20 वाजता'],
+      ['ta', 'இரவு 8 மணிக்கு', '20 மணிக்கு'],
+      ['te', 'రాత్రి 8 గంటలకు', '20 గంటలకు'],
+      ['kn', 'ರಾತ್ರಿ 8 ಗಂಟೆಗೆ', '20 ಗಂಟೆಗೆ'],
+      ['ml', 'രാത്രി 8 മണിക്ക്', '20 മണിക്ക്'],
+      ['gu', 'રાત્રે 8 વાગ્યે', '20 વાગ્યે'],
+      ['pa', 'ਰਾਤ 8 ਵਜੇ', '20 ਵਜੇ'],
+      ['or', 'ରାତି 8 ଟା', '20 ଟା'],
+      ['ne', 'राति 8 बजे', '20 बजे'],
+      ['si', 'ප.ව. 8.00', '20:00'],
+      ['si', '8.00 ප.ව.', '20:00']
+    ];
+
+    it('keeps a 12-hour time whole, so that it shows as not in the English', () => {
+      for (const [language, twelve, twentyFour] of times) {
+        const sentence = (time: string) => `${time}.`;
+        const message = sentence(twelve);
+        expect(numbersIn(message, language), language + ' ' + twelve).to.include(twelve);
+        expect(compareMessage(language, 'k', english, message), language + ' ' + twelve).to.eql([
+          `k: its numbers differ from the English; missing 20; not in the English ${twelve}`
+        ]);
+        // On the 24-hour clock it is the English's 20.
+        expect(numbersIn(sentence(twentyFour), language), language + ' ' + twentyFour).to.eql(['20']);
+        expect(compareMessage(language, 'k', english, sentence(twentyFour)), language).to.eql([]);
+      }
+    });
+
+    it('reads Devanagari digits in Marathi and the Hindi time words as before', () => {
+      expect(numbersIn('रात्री ८ वाजता', 'mr')).to.eql(['रात्री 8 वाजता']);
+      expect(numbersIn('रात 8 बजे के बाद', 'hi')).to.eql(['रात 8 बजे']);
+      // A part of the day without a time after it is no time.
+      expect(numbersIn('रात में 5 g', 'hi')).to.eql(['5 g']);
+    });
+  });
+
+  describe('where a language’s "one" takes 0 as well as 1', () => {
+    const passkey = '{count, plural, one {This passkey} other {These # passkeys}}';
+
+    it('asks an English "exactly one" text for an =1 form in Hindi, Kannada, Gujarati, Punjabi, Sinhala and French', () => {
+      // [language, as it was, with an =1 form and a `one` that reads right for 0 (it has the #)]
+      const messages: [string, string, string][] = [
+        [
+          'hi',
+          '{count, plural, one {यह पासकी} other {ये # पासकी}}',
+          '{count, plural, =1 {यह पासकी} one {# पासकी} other {ये # पासकी}}'
+        ],
+        [
+          'kn',
+          '{count, plural, one {ಈ ಪಾಸ್ಕೀ} other {ಈ # ಪಾಸ್ಕೀಗಳು}}',
+          '{count, plural, =1 {ಈ ಪಾಸ್ಕೀ} one {# ಪಾಸ್ಕೀ} other {ಈ # ಪಾಸ್ಕೀಗಳು}}'
+        ],
+        [
+          'gu',
+          '{count, plural, one {આ પાસકી} other {આ # પાસકી}}',
+          '{count, plural, =1 {આ પાસકી} one {# પાસકી} other {આ # પાસકી}}'
+        ],
+        [
+          'pa',
+          '{count, plural, one {ਇਹ ਪਾਸਕੀ} other {ਇਹ # ਪਾਸਕੀ}}',
+          '{count, plural, =1 {ਇਹ ਪਾਸਕੀ} one {# ਪਾਸਕੀ} other {ਇਹ # ਪਾਸਕੀ}}'
+        ],
+        [
+          'si',
+          '{count, plural, one {මෙම පාස්කී} other {මෙම # පාස්කී}}',
+          '{count, plural, =1 {මෙම පාස්කී} one {# පාස්කී} other {මෙම # පාස්කී}}'
+        ],
+        [
+          'fr',
+          '{count, plural, one {Cette clé} many {Ces # de clés} other {Ces # clés}}',
+          '{count, plural, =1 {Cette clé} one {# clé} many {Ces # de clés} other {Ces # clés}}'
+        ]
+      ];
+      for (const [language, was, fixed] of messages) {
+        expect(compareMessage(language, 'k', passkey, was), language).to.eql([
+          `k: ${language}'s "one" also takes 0, so the English's one-only text for {count} needs an =1 form (or the English an =0 form)`
+        ]);
+        expect(compareMessage(language, 'k', passkey, fixed), language).to.eql([]);
+      }
+    });
+
+    it('asks nothing of a language whose "one" is only 1, or of an English with its own =0 or a # in its "one"', () => {
+      expect(compareMessage('ta', 'k', passkey, '{count, plural, one {இந்த பாஸ்கீ} other {இந்த # பாஸ்கீகள்}}')).to.eql(
+        []
+      );
+      expect(
+        compareMessage('de', 'k', passkey, '{count, plural, one {Dieser Passkey} other {Diese # Passkeys}}')
+      ).to.eql([]);
+      expect(
+        compareMessage(
+          'hi',
+          'k',
+          '{count, plural, =0 {No passkey} one {This passkey} other {These # passkeys}}',
+          '{count, plural, =0 {कोई पासकी नहीं} one {यह पासकी} other {ये # पासकी}}'
+        )
+      ).to.eql([]);
+      expect(
+        compareMessage(
+          'hi',
+          'k',
+          '{count, plural, one {# passkey} other {# passkeys}}',
+          '{count, plural, one {# पासकी} other {# पासकी}}'
+        )
+      ).to.eql([]);
+    });
+
+    it('reads the plural of one argument, in a message of several', () => {
+      const english =
+        '{a, plural, one {A number} other {Some numbers}} can be read two ways; read {b, plural, one {it} other {# of them}}.';
+      const hindi =
+        '{a, plural, one {एक संख्या} other {कुछ संख्याएँ}} दो तरह से पढ़ी जा सकती है; {b, plural, =1 {उसे} one {# को} other {# को}} पढ़ें.';
+      expect(compareMessage('hi', 'k', english, hindi)).to.eql([
+        `k: hi's "one" also takes 0, so the English's one-only text for {a} needs an =1 form (or the English an =0 form)`
+      ]);
+    });
+  });
+
   it('finds a changed number, unit or link in a translated message', () => {
     const english = 'Fire to cone 6 ({temp}), 2232 °F, as <link>Orton</link> says: https://www.ortonceramic.com/';
     const right = 'Auf Kegel 6 brennen ({temp}), 2232 °F, wie <link>Orton</link> sagt: https://www.ortonceramic.com/';

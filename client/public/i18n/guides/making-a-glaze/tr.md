@@ -26,7 +26,7 @@ Sır{{en: glaze}} hazırlamak, toz hâlindeki **hammaddeleri** (öğütülmüş 
 
 ### Nereden alınır
 
-Seramikçiler hammaddelerini çamur, sır hammaddeleri ve alet satan seramik malzemecilerinden alır. Tabloda ülkenize ait bazı mağazalar var, her biri mağazanın kendi sitesinde kontrol edildi; başka bir ülke seçerek oranın mağazalarını da görebilirsiniz. Stoklar değişir, bu yüzden sipariş vermeden önce kontrol edin. Sibelco ve Imerys gibi büyük üreticiler sanayiye satar; seramikçiler bu üreticilerin hammaddelerini bunlar gibi mağazalardan alır. Seramik başvuru sitesi Digitalfire, başka yerler için bir tedarikçi mağazaları listesi tutuyor.
+Seramikçiler hammaddelerini çamur, sır hammaddeleri ve alet satan seramik malzemecilerinden alır. Tabloda ülkenize ait bazı mağazalar var, her biri mağazanın kendi sitesinde kontrol edildi; başka bir ülke veya bölge seçerek oranın mağazalarını da görebilirsiniz. Stoklar değişir, bu yüzden sipariş vermeden önce kontrol edin. Sibelco ve Imerys gibi büyük üreticiler sanayiye satar; seramikçiler bu üreticilerin hammaddelerini bunlar gibi mağazalardan alır. Seramik başvuru sitesi Digitalfire, başka yerler için bir tedarikçi mağazaları listesi tutuyor.
 
 ::shops
 

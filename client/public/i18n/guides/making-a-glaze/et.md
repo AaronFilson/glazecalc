@@ -26,7 +26,7 @@ Glasuuri{{en: glaze}} valmistamine tähendab, et pulbrilised **toorained** (jahv
 
 ### Kust osta
 
-Keraamikud ostavad keraamikatarvete poodidest, mis müüvad savi, glasuuri tooraineid ja tööriistu. Tabelis on mõned teie riigi poed, igaüks poe enda veebilehelt kontrollitud, ja teise riigi poodide nägemiseks saate valida teise riigi. Valik muutub, seega kontrollige enne tellimist. Suured tootjad, nagu Sibelco ja Imerys, müüvad tööstusele; keraamikud ostavad nende tooraineid selliste poodide kaudu. Keraamika teabesait Digitalfire haldab teiste piirkondade tarnijate poodide kataloogi.
+Keraamikud ostavad keraamikatarvete poodidest, mis müüvad savi, glasuuri tooraineid ja tööriistu. Tabelis on mõned teie riigi poed, igaüks poe enda veebilehelt kontrollitud, ja sealsete poodide nägemiseks saate valida teise riigi või piirkonna. Valik muutub, seega kontrollige enne tellimist. Suured tootjad, nagu Sibelco ja Imerys, müüvad tööstusele; keraamikud ostavad nende tooraineid selliste poodide kaudu. Keraamika teabesait Digitalfire haldab teiste piirkondade tarnijate poodide kataloogi.
 
 ::shops
 

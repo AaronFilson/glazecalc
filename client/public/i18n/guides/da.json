@@ -27,7 +27,7 @@
       "text": "Støv, åndedrætsværn, rengøring, de råvarer, der kræver mest omtanke, og udluftning fra ovnen."
     },
     "homeSafety": {
-      "title": "Glasursikkerhed derhjemme: børn, kæledyr og ovnen",
+      "title": "Forgift ikke familien",
       "text": "Keramik derhjemme med børn og kæledyr: opbevaring, støv, ovnen og hvad der skal gøres, hvis noget er blevet slugt."
     },
     "firing": {
@@ -43,7 +43,7 @@
   "contents": "På denne side",
   "poison": {
     "numbersFor": "Numre for",
-    "choose": "Vælg land",
+    "choose": "Vælg land eller region",
     "label": "Hvem man ringer til i {region}",
     "caption": "Hvem man ringer til i {region} (numrene er kontrolleret den {date})",
     "for": "Hjælp til",
@@ -61,7 +61,7 @@
     "animalsNone": "Dyr",
     "vet": "Ring til dyrlægen.",
     "checkedOn": "Kontrolleret på:",
-    "choosePrompt": "Vælg land for at se, hvem man ringer til der.",
+    "choosePrompt": "Vælg land eller region for at se, hvem man ringer til der.",
     "ministry": "Sundhedsministeriets side: <link>{name}</link>."
   },
   "density": {
@@ -89,7 +89,7 @@
     },
     "none": "Vi fandt ingen forhandler af råvarer til glasur i {region}.",
     "unknown": "Vi har endnu ikke søgt efter forhandlere i {region}.",
-    "choosePrompt": "Vælg land for at se forhandlere der."
+    "choosePrompt": "Vælg land eller region for at se forhandlere der."
   },
   "silica": {
     "limitIn": "Grænseværdi i",
@@ -135,7 +135,7 @@
     "noData": "Vi har endnu ikke bekræftet grænseværdien i {region}.",
     "agency": "Den nationale myndighed for arbejdsmiljø: <link>{name}</link>.",
     "agencySilica": "Myndighedens <link>side om silica</link>.",
-    "choosePrompt": "Vælg land for at se grænseværdien der."
+    "choosePrompt": "Vælg land eller region for at se grænseværdien der."
   },
   "food": {
     "rulesIn": "Regler i",
@@ -211,7 +211,7 @@
     "unknown": "Vi har endnu ikke bekræftet reglerne i {region}.",
     "none": "Der er ingen lov i {region}, der fastsætter grænseværdier for, hvor meget bly og cadmium et brændt emne må afgive (kontrolleret den {date}).",
     "noneSource": "Kilde: <link>{law}</link>.",
-    "choosePrompt": "Vælg land for at se reglerne der."
+    "choosePrompt": "Vælg land eller region for at se reglerne der."
   },
   "equivalents": {
     "buyingIn": "Indkøb i",
@@ -224,6 +224,6 @@
     "noneClose": "Intet inden for 15 g pr. 100 g: sammenlign ud fra kemien.",
     "loading": "Indlæser biblioteket…",
     "failed": "Biblioteket kunne ikke indlæses. Prøv igen senere.",
-    "choosePrompt": "Vælg land for at se, hvad der sælges der."
+    "choosePrompt": "Vælg land eller region for at se, hvad der sælges der."
   }
 }

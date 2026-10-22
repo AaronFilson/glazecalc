@@ -130,7 +130,8 @@ describe('region blocks after the verification pass of 2026-10-19', () => {
 });
 
 // The Indian subcontinent's and the Arab world's first regions, frozen as added (docs/south-asia-mena-plan.md),
-// on the same fixed day.
+// on the same fixed day. Updated on purpose once, on 2026-10-21: India's state poison centres and the
+// states' silica limits (scratch/round8/india-data/report.md).
 describe('region blocks for the subcontinent and the Arab world, as added', () => {
   beforeEach(() => {
     localStorage.clear();
@@ -145,5 +146,23 @@ describe('region blocks for the subcontinent and the Arab world, as added', () =
       for (const region of ['IN', 'PK', 'BD', 'EG', 'AE', 'MA', 'DZ']) all[region] = await html(component, region);
       expect(all).toMatchSnapshot();
     }, 15_000);
+  }
+});
+
+// Sri Lanka and Nepal (C3), frozen as added on 2026-10-21, on the same fixed day.
+describe('region blocks for Sri Lanka and Nepal, as added', () => {
+  beforeEach(() => {
+    localStorage.clear();
+    TestBed.configureTestingModule({
+      providers: [...testProviders(), { provide: NOW, useValue: () => new Date('2026-10-16T12:00:00Z') }]
+    });
+  });
+
+  for (const [name, component] of BLOCKS) {
+    it(`says exactly what it said for Sri Lanka and Nepal: ${name}`, async () => {
+      const all: Record<string, string> = {};
+      for (const region of ['LK', 'NP']) all[region] = await html(component, region);
+      expect(all).toMatchSnapshot();
+    });
   }
 });

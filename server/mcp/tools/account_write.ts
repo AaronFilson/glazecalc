@@ -2,7 +2,9 @@
 // item 37, and decision 10): create_recipe (the server works out its unity
 // formula), update_recipe, add_notebook_entry, add_my_material,
 // update_my_material, add_to_shelf, remove_from_shelf, undo_shelf_change and
-// move_to_trash. They
+// move_to_trash; and, for the studio notes skill, create_firing_log,
+// add_firing_rows and link_firing (./dictation_write.ts, whose work is added
+// to the work here and goes through the same gate). They
 // are offered with every working access token, so that an assistant
 // holding a read-only one can say why nothing was changed; each refuses,
 // changing nothing, unless the token's scopes allow its area's write
@@ -107,6 +109,7 @@ import {
 import { findAdditive, findMaterial, libraryIdOf, nameKey } from '../library.ts';
 import { isConfirmState, requestStateCodec, type ConfirmState } from '../request_state.ts';
 import { chemistryText } from '../words.ts';
+import { DICTATION_TOOLS, describeDictation, dictationWork, registerDictationTools } from './dictation_write.ts';
 import { analysisOf } from './public.ts';
 
 /** A tool that adds to the account and takes nothing away. */
@@ -206,7 +209,14 @@ const updateRecipeInput = z.object({
 });
 const notebookInput = z.object({
   content: z.string().trim().min(1).max(20000).describe('The entry.'),
-  title: z.string().trim().max(200).optional()
+  title: z.string().trim().max(200).optional(),
+  about: z
+    .object({
+      kind: z.enum(['recipe', 'material', 'firing']).describe('A recipe, one of your materials, or a firing log.'),
+      id: idArg.describe('Its id, from list_recipes, list_my_materials or list_firings.')
+    })
+    .optional()
+    .describe('The saved record the entry is about, when it is about one: list_notes with its id finds it again.')
 });
 const addMaterialInput = z.object({
   name: z.string().trim().min(1).max(100),
@@ -244,6 +254,13 @@ const TRASHABLE: Record<string, { Model: RecordModel; area: Exclude<Area, 'trash
   material: { Model: Material, area: 'materials' },
   note: { Model: Note, area: 'notes' },
   firing: { Model: Firing, area: 'firing' }
+};
+
+/** The records a notebook entry can be about, and the collection it names for each, as list_notes and the Trash read it. */
+const NOTE_ABOUT: Record<string, { Model: RecordModel; collection: string; label: string }> = {
+  recipe: { Model: Recipe, collection: 'recipes', label: 'recipe' },
+  material: { Model: Material, collection: 'materials', label: 'material' },
+  firing: { Model: Firing, collection: 'firing', label: 'firing log' }
 };
 
 /** What remove_from_shelf says about getting the shelf back. */
@@ -451,15 +468,23 @@ const makeWork = ({ userId, tokenId, scopes, actor }: Who) => {
       });
     },
 
-    add_notebook_entry: async ({ content, title }: NotebookArgs) => {
+    add_notebook_entry: async ({ content, title, about }: NotebookArgs) => {
       await mayChange('notes:write');
+      const related = about && NOTE_ABOUT[about.kind]!;
+      if (about && related) {
+        const found = mongoose.isObjectIdOrHexString(about.id)
+          ? await related.Model.exists({ _id: about.id, ownedBy: userId })
+          : null;
+        if (!found)
+          throw new ToolProblem(`No ${related.label} with id ${about.id} in your account. Nothing was saved.`);
+      }
       await needRoom(Note, 'note');
-      // As the Notebook page saves an entry: about nothing else.
+      // As the Notebook page saves an entry (about nothing else), or a note about one of the account's records.
       const saved = await Note.create({
         ...(title && { title }),
         content,
-        relatedCollection: 'Notes',
-        relatedId: 'general notes',
+        relatedCollection: about && related ? related.collection : 'Notes',
+        relatedId: about ? about.id : 'general notes',
         ownedBy: userId
       });
       await logActivityBy(actor, userId, 'create', 'notes', saved.toObject());
@@ -613,7 +638,9 @@ const makeWork = ({ userId, tokenId, scopes, actor }: Who) => {
         inTrashUntil: until.toISOString().slice(0, 10),
         undo: `It is in the Trash: the person can put it back from the Trash on the website for ${TRASH_DAYS} days.`
       });
-    }
+    },
+
+    ...dictationWork({ userId, tokenId, scopes, actor, mayChange, needRoom })
   };
 };
 
@@ -629,7 +656,8 @@ export const WRITE_TOOLS: ReadonlySet<string> = new Set<WriteTool>([
   'add_to_shelf',
   'remove_from_shelf',
   'undo_shelf_change',
-  'move_to_trash'
+  'move_to_trash',
+  ...DICTATION_TOOLS
 ]);
 /** The tools that remove something: what the setting 'removals' asks about. */
 export const REMOVAL_TOOLS: readonly WriteTool[] = ['move_to_trash', 'remove_from_shelf'];
@@ -666,7 +694,7 @@ registerPreview('mcp', 'update_recipe', (given, current) => {
 });
 registerPreview('mcp', 'add_notebook_entry', (given) => {
   const args = given as Partial<NotebookArgs>;
-  return fieldChanges({ title: args.title, content: args.content }, null);
+  return fieldChanges({ title: args.title, content: args.content, about: args.about }, null);
 });
 registerPreview('mcp', 'add_my_material', (given) => {
   const args = given as Partial<AddMaterialArgs>;
@@ -756,6 +784,10 @@ const describe = async (
         base: { kind: 'record', area, id }
       };
     }
+    case 'create_firing_log':
+    case 'add_firing_rows':
+    case 'link_firing':
+      return describeDictation(tool, args, userId);
   }
 };
 
@@ -944,7 +976,7 @@ export const registerWriteTools = (server: McpServer, caller: Caller): void => {
     'add_notebook_entry',
     {
       title: 'Add to my notebook',
-      description: `Adds an entry to your Glazecalc notebook (the Notebook page), with an optional title: a test result, an observation, a firing to try. ${NEEDS}`,
+      description: `Adds an entry to your Glazecalc notebook (the Notebook page), with an optional title: a test result, an observation, a firing to try. With about, it is a note about one of your recipes, materials or firing logs, which list_notes finds by that record's id. ${NEEDS}`,
       inputSchema: notebookInput,
       annotations: ADDS
     },
@@ -1019,4 +1051,6 @@ export const registerWriteTools = (server: McpServer, caller: Caller): void => {
     async (args, ctx) =>
       guarded(() => gated('move_to_trash', `${TRASHABLE[args.kind]!.area}:write` as Permission, args, ctx))
   );
+
+  registerDictationTools(server, gated);
 };

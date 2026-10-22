@@ -59,71 +59,11 @@ export const ADDITIVE_OXIDES: Option[] = [
 ];
 
 /**
- * Columns a firing log can record. A log saves each column by this English
- * name; firingFieldLabel shows it in the page's language.
+ * Columns a firing log can record (lib/cones/firing-fields.js, which the
+ * server's tools read too). A log saves each column by this English name;
+ * firingFieldLabel shows it in the page's language.
  */
-export const FIRING_FIELDS: string[] = [
-  'Time',
-  'Gas',
-  'Fuel',
-  'Primary Air',
-  'Blower',
-  'Damper',
-  'Passive Damper',
-  'Tank',
-  'Meter',
-  'Burner',
-  'Cone',
-  'Temperature F',
-  'Temperature C',
-  'Temperature K',
-  'Ox Probe',
-  'Atmosphere',
-  'Weather',
-  'Ramp',
-  'Hold',
-  'Comments',
-  'Draw Tile',
-  'Delta',
-  'Rate',
-  'Salt',
-  'Soda',
-  'Sawdust',
-  'Pilots',
-  'Pressure',
-  'Secondary Air',
-  'Hours',
-  'Cones Top',
-  'Cones Bottom',
-  'Spy',
-  'Temp Diff',
-  'Segment',
-  'Kg',
-  'Pounds',
-  'Timer',
-  'Exhaust',
-  'Misc',
-  'Probe 1',
-  'Probe 2',
-  'Probe 3',
-  'Probe 4',
-  'Ring 1',
-  'Ring 2',
-  'Ring 3',
-  'Ring 4',
-  'Ring 5',
-  'Ring 6',
-  'Burner 1',
-  'Burner 2',
-  'Burner 3',
-  'Burner 4',
-  'Burner 5',
-  'Burner 6',
-  'Burner 7',
-  'Burner 8',
-  'Burner 9',
-  'Burner 10'
-];
+export { FIRING_FIELDS } from '../../../lib/cones/firing-fields';
 
 const FIRING_FIELD_LABELS: Record<string, string> = {
   Time: marker('firingFields.time'),

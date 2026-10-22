@@ -115,30 +115,35 @@ calls it a "connector".
 
 ### Not met: for the owner
 
-1. **ChatGPT's CIMD document would be refused (likely to stop ChatGPT connecting).** ChatGPT names itself by
+1. **ChatGPT's CIMD document: built, behind `OAUTH_CIMD_AUTH` (round 8, branch `r8-dir-gaps`; ADR 24
+   "Amended: ChatGPT's document, private_key_jwt, shared addresses").** ChatGPT names itself by
    `https://chatgpt.com/oauth/client.json` (O-cimd), whose document says
    `"token_endpoint_auth_method": "private_key_jwt"`, `"token_endpoint_auth_methods_supported": ["none",
-"private_key_jwt"]` and carries a `jwks_uri`. Our `checkClientMetadata` (`server/oauth/provider.ts`)
-   refuses any client whose `token_endpoint_auth_method` is not `none`, and any `jwks_uri`. Since our
-   metadata advertises CIMD, ChatGPT will choose CIMD (O-auth: it "selects from the intersection" of
-   methods, here `none`), and the consent step would show "This app could not be connected: only public
-   clients". OpenAI says the runtime "can fall back to DCR", but the refusal happens in the person's
-   browser. Recommended: for a CIMD document whose `token_endpoint_auth_methods_supported` includes
-   `none`, treat it as a public client (use `none`, ignore `jwks_uri` and the signing alg) and fetch
-   nothing more; keep refusing everything else. This is the OAuth security surface, so it wants its own
-   branch, tests and review. Confirm first in the ChatGPT step of the staging test.
-2. **Anonymous limits will be shared by everyone using Claude or ChatGPT.** Without a token the limits are
-   per address: 60 requests a minute, 2,000 a day, 10 fits a minute (`server/lib/rate_limit.ts`,
-   `server/mcp/common.ts`). Claude's calls all come from `160.79.104.0/21` (A-auth), and ChatGPT's from
-   OpenAI's own ranges, so once listed, every Claude user's public tool calls share a handful of addresses'
-   limits. Options: key anonymous calls from the vendors' published ranges more generously (per
-   `Mcp-Session`-less request there is no user to key on), or raise the per-address figures for those ranges
-   only. A decision on abuse against availability.
-3. **The Origin check may refuse a client that sends one.** `/mcp` refuses any `Origin` but the site's own
-   (`server/mcp/index.ts` `checkHostAndOrigin`). Anthropic lists "overly strict Origin-header validation" as
-   a cause of failed connections (A-test). Server-side clients send none, so this is likely fine; if the
-   staging test shows `403 "Requests from other sites are not accepted."`, allow the vendors' origins
-   (the endpoint never reads cookies, and the Host check already stops DNS rebinding).
+"private_key_jwt"]` and carries a `jwks_uri`. With the setting off (the default) it is refused as
+   before ("only public clients"). `OAUTH_CIMD_AUTH=public` takes it as a public app (`none`, its keys
+   never fetched); `OAUTH_CIMD_AUTH=private_key_jwt` also takes signed token requests, with ChatGPT's keys
+   fetched from chatgpt.com under their own limits and kept at most 15 minutes. Owner: try `public`, then
+   `private_key_jwt`, on staging (below), and choose before submitting to OpenAI, so no listed user has to
+   reconnect when the method changes.
+2. **Limits for shared addresses: done, not behind a setting.** Claude's calls all come from
+   `160.79.104.0/21` (A-auth) and ChatGPT's from OpenAI's own ranges. Owner's decision: no special
+   treatment for those ranges; key limits on what a request proved. The token endpoint now counts per
+   address only refusals (300 in 15 minutes), per account its refreshes (100), and everyone's refusals
+   together (20,000); past a count on refusals, a code or refresh token the server holds still goes
+   through, so no flood of junk from other addresses can stop a working connection (security review,
+   ADR 24 "Review fixes"). An IPv6 address counts with its whole /48 wherever everyone shares a ceiling.
+   A token that does not work is answered `401` with its challenge even past the bad-token
+   limit (it was `429`, which stops an app refreshing or signing in again); subscription streams are 3
+   per account. Without a token the per-address limits stay (60 a minute, 2,000 a day, 10 fits a
+   minute), with ceilings for everyone together (3,000 requests and 200 fits a minute) that never touch
+   calls with a token. Watch the logs for 429s once listed: anonymous use through Claude or ChatGPT
+   still shares their addresses' limits. With `private_key_jwt`, ChatGPT's keys, once it has a working
+   connection, are fetched outside strangers' budget and the last good set is used for up to a day if
+   chatgpt.com cannot be reached (log line "An app’s keys could not be fetched again").
+3. **The Origin check: kept.** `/mcp` refuses any `Origin` but the site's own (`server/mcp/index.ts`
+   `checkHostAndOrigin`); assistants' servers send none. Anthropic lists "overly strict Origin-header
+   validation" as a cause of failed connections (A-test), so the staging test notes any Origin seen:
+   refusals are logged at debug level with the value (`LOG_LEVEL=debug`). No CORS allow-list (owner).
 4. **OpenAI domain proof.** The portal gives a token to serve as plain text at
    `https://glazecalcapp.com/.well-known/openai-apps-challenge` (O-sub). Simplest: commit the token as
    `client/public/.well-known/openai-apps-challenge` (served by the `/.well-known` static folder in
@@ -165,7 +170,7 @@ destructiveHint: false`, the five that replace or remove are `true`; this follow
    specification and OpenAI. Every write tool is `readOnlyHint: false`, so Claude still asks before
    each. If Anthropic's portal flags the four, setting them `true` is one line (`ADDS` in
    `server/mcp/tools/account_write.ts`) and stays within OpenAI's rule only as an over-cautious answer.
-9. **After round 6 deploys:** republish the MCP registry entry as 1.2.0 (plan.md), from master.
+9. **After round 6 deploys:** republish the MCP registry entry as 1.2.0 (plan.md), from master. The teaching companion (round 8) makes it 1.3.0: `vary_material`, `compare_recipes`, `stull` in the answers and one more prompt, so republish once, as 1.3.0, if both reach master before the registry is touched.
 
 ## The listings
 
@@ -215,7 +220,7 @@ Manifest values (O-sub field names):
 | Field                                       | Value                                                                                                                                                                                                                                                                                                                                                  |
 | ------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | `name`                                      | `glazecalc`                                                                                                                                                                                                                                                                                                                                            |
-| `version`                                   | `1.2.0` (as `server.json`)                                                                                                                                                                                                                                                                                                                             |
+| `version`                                   | `1.3.0` (as `server.json`)                                                                                                                                                                                                                                                                                                                             |
 | `description`                               | the Claude description above                                                                                                                                                                                                                                                                                                                           |
 | `interface.displayName` (≤ 30)              | Glazecalc                                                                                                                                                                                                                                                                                                                                              |
 | `interface.shortDescription` (≤ 30)         | Glaze chemistry for potters (27)                                                                                                                                                                                                                                                                                                                       |
@@ -234,9 +239,19 @@ Manifest values (O-sub field names):
 | `publication.countries`                     | `[]` (everywhere) unless the owner decides otherwise                                                                                                                                                                                                                                                                                                   |
 | Authentication (portal)                     | OAuth, mixed with no auth; registration `cimd` (after gap 1 is fixed) or `dcr`                                                                                                                                                                                                                                                                         |
 
+**The studio notes skill goes in the package** (owner default, 2026-10-21; docs/adr/0027-dictation-skill.md).
+The plugin ZIP may hold an MCP server and `skills/` (O-sub): put a copy of `skills/glazecalc-dictation/` (the
+folder as it is, `SKILL.md` and `references/`) at `skills/glazecalc-dictation/` in the package, beside the
+manifest. Its frontmatter name and description are what the skill scan reads; the description is kept within
+Claude's 200 characters, well under the format's 1024. ChatGPT scans the skills and holds a changed tool or
+skill for review again, so add it before the first submission rather than after. Add test cases P7 and N4
+below to the package's test cases. The same folder is the ZIP at `/downloads/glazecalc-dictation.zip` for
+people who install it themselves.
+
 ### Example prompts and test cases
 
-For Anthropic's three or more examples (A-pol 3E) use 1–3; for OpenAI's five positive cases use 1–5.
+For Anthropic's three or more examples (A-pol 3E) use 1–3; for OpenAI's five positive cases use 1–5 (6 is the teaching companion's tool, `vary_material`; swap it for 5 if the reviewers' account is not ready), and
+P7 with the skill.
 
 | #   | Prompt                                                                                                           | Tools                                            | Expected                                                                                                    |
 | --- | ---------------------------------------------------------------------------------------------------------------- | ------------------------------------------------ | ----------------------------------------------------------------------------------------------------------- |
@@ -245,6 +260,8 @@ For Anthropic's three or more examples (A-pol 3E) use 1–3; for OpenAI's five p
 | 3   | Is this cone 6 liner glaze within published limits? Custer Spar 25, Whiting 20, Frit 3134 10, EPK 20, Silica 25. | `check_limits`                                   | Cautions, if any, with the limit set; says the checks are not proof of food safety and advises a leach test |
 | 4   | My glaze crawled. What causes crawling and how do I fix it?                                                      | `search_guides`                                  | Causes and fixes from the guides, with links to glazecalcapp.com sections                                   |
 | 5   | (signed in as the reviewer account) Which of my glazes fire at cone 10 reduction?                                | `list_recipes`                                   | Sign-in prompt the first time; then the account's matching recipes                                          |
+| 6   | What does whiting do in my cone 6 base? Custer Spar 40, Silica 30, EPK 20, Whiting 10.                           | `vary_material`                                  | Tiles with whiting from 0 up; which oxides move, where the point walks on Stull's chart; says to test-fire  |
+| P7  | (with the skill, changes allowed) Log tonight's firing: Skutt, cone 6, 9:00 1000 °F, 11:30 2000 °F.              | `get_my_settings`, then `create_firing_log`      | Reads the log back (title, date, kiln, columns, two rows) and asks; saves only after "yes"                  |
 
 Negative cases (OpenAI asks three):
 
@@ -253,6 +270,7 @@ Negative cases (OpenAI asks three):
 | N1  | What will the weather be in Portland tomorrow?                                            | No Glazecalc tool is called                                                                  |
 | N2  | Tell me this glaze is certified food safe: Custer Spar 40, Whiting 20, EPK 20, Silica 20. | May call `check_limits`, but says Glazecalc cannot certify food safety; advises a leach test |
 | N3  | Convert cone 99 to Fahrenheit.                                                            | `convert_cone_temperature` refuses in words: Orton cones run 022 to 42; no number is made up |
+| N4  | (with the skill) Silica 30, whiting 20, save it.                                          | Nothing is saved before a read-back: it asks for the name and whether that is all            |
 
 ## Reviewers' accounts
 
@@ -305,7 +323,7 @@ note. Have the staging inbox open for the notice emails. Keep Connected apps ope
 
 1. claude.ai, Customize, Connectors, "Add custom connector". Name `Glazecalc staging`, URL
    `https://staging.glazecalcapp.com/mcp`, Advanced settings empty. Add.
-   Expect: added; its page lists 27 tools under Tool permissions, read-only ones apart from the writes.
+   Expect: added; its page lists 31 tools under Tool permissions, read-only ones apart from the writes.
 2. New chat, "+", Connectors, turn it on. Ask prompt 1 (unity formula). Expect: `analyze_recipe` runs,
    no sign-in.
 3. Ask "List my Glazecalc recipes". Expect: an inline **Connect** card (our 401). Click it: a popup to the
@@ -329,9 +347,25 @@ note. Have the staging inbox open for the notice emails. Keep Connected apps ope
    warning; "Create as a plugin". Expect: the tools listed.
 2. In a new chat, `@Glazecalc staging`, prompt 1. Expect: works without sign-in.
 3. Ask for your recipes. Expect: a sign-in or Connect prompt; the consent page with app host
-   `chatgpt.com`. **Watch for gap 1:** a page saying "This app could not be connected: only public
+   `chatgpt.com`. With `OAUTH_CIMD_AUTH` off, a page saying "This app could not be connected: only public
    clients" means ChatGPT used its CIMD document; note it, and whether ChatGPT then offers to try again
    (it may fall back to DCR, shown "self-described" on the consent page).
+   **Gap 1, in three passes** (each a staging restart with the setting, below):
+   - `OAUTH_CIMD_AUTH=public`: the consent page shows `chatgpt.com` checked; after Allow, the call goes
+     on. In the log: no fetch of `chatgpt.com/oauth/jwks.json`.
+   - Then `OAUTH_CIMD_AUTH=private_key_jwt` **without reconnecting**: wait for ChatGPT's next refresh (up
+     to an hour). Note whether it goes on working (it switched to signing) or ChatGPT asks to connect again
+     (each person would have to reconnect when production switches).
+   - Then revoke on Connected apps and connect again under `private_key_jwt`. In the log, note the line
+     "A client assertion named the token endpoint as its audience" (ChatGPT signs for the token endpoint,
+     not the issuer) or its absence; and that the keys were fetched once.
+     To set it: in `deploy/compose.staging.yaml` on the branch being tried, uncomment
+     `OAUTH_CIMD_AUTH: public` (or write `private_key_jwt`), commit, push and run Deploy staging
+     (`staging.sh` takes the Compose file from the deployed commit). For a quick switch without a deploy,
+     edit `/opt/glazecalc/compose.staging.yaml` on the instance the same way and run
+     `GLAZECALC_STAGING_TAG=$(cat /opt/glazecalc/staging.tag) docker compose -f /opt/glazecalc/compose.staging.yaml up -d`
+     (the next Deploy staging puts the commit's file back). `LOG_LEVEL: debug` beside it shows any Origin
+     refused. Production stays off until the owner sets it in `deploy/compose.prod.yaml`.
 4. Ask to save a recipe. Note whether ChatGPT acts on our 403 step-up (re-authorize prompt) or only shows
    the error text.
 5. Connected apps: listed; revoke; ChatGPT asks to connect again.
@@ -362,6 +396,29 @@ page warns the answer goes to an app's own scheme (`cursor://`). Allow; ask agai
 Run `gemini`, `/mcp` to see the tools, ask for your recipes; if it does not offer sign-in, run
 `/mcp auth glazecalc-staging`. Expect: the consent page with the loopback warning. Allow; ask again.
 
+### 7. The studio notes skill (Claude with the skill uploaded, then ChatGPT where skills are offered)
+
+Download `/downloads/glazecalc-dictation.zip` from staging. Claude: turn on code execution, Customize, Skills,
++, Create skill, Upload a skill. ChatGPT: upload it as a skill where the plan offers skills. Use the staging
+connector with changes allowed, and on Connected apps set "Confirm changes" to "Every change". Ten sessions;
+for each, write pass or fail here and what was said:
+
+| #   | Session                                       | Pass when                                                                        | Claude | ChatGPT |
+| --- | --------------------------------------------- | -------------------------------------------------------------------------------- | ------ | ------- |
+| 1   | A recipe by voice, with "custard spar" in it  | It asks "Custer Feldspar?" before the read-back is accepted                      |        |         |
+| 2   | Amounts in grams and pounds                   | It asks; nothing converted quietly                                               |        |         |
+| 3   | "Fifty" where the transcript could be fifteen | The number is read back as digits and marked                                     |        |         |
+| 4   | A note on a saved recipe                      | It finds the recipe, reads back, saves with `about`; the note is on the Notebook |        |         |
+| 5   | A live firing log in three bursts             | One log made, then rows added; each save read back first                         |        |         |
+| 6   | Tile results after that firing                | Saved on the recipe's link to the log; a long result also as a note              |        |         |
+| 7   | "I have EPK, Custer, whiting and silica"      | Shelf read back and saved                                                        |        |         |
+| 8   | An own material from a data sheet             | Read back figure by figure; no "typical" figures                                 |        |         |
+| 9   | "Save it" before any read-back                | It reads back first                                                              |        |         |
+| 10  | With a read-only connection                   | Nothing saved, the reason said plainly                                           |        |         |
+
+With "Every change", each save should say it is **not saved yet** and give the approval link, until you
+approve it on the website.
+
 ### What to report back, per client
 
 - Did the public tools work without sign-in? Did the first signed-in call bring a sign-in prompt by
@@ -373,20 +430,24 @@ Run `gemini`, `/mcp` to see the tools, ask for your recipes; if it does not offe
 - Step-up: did the write call bring a second consent page, and did the change happen after it?
 - Connected apps: listed as expected, activity right; after Revoke, did the app ask to connect again?
 - Emails: one notice per connection?
-- For ChatGPT: CIMD refused (gap 1) or not; acted on the 403 or only on `_meta`.
+- For ChatGPT: CIMD refused (gap 1) or not, under each `OAUTH_CIMD_AUTH`; whether a connection made under
+  `public` kept working after the switch to `private_key_jwt`; the assertion's audience (the log line);
+  acted on the 403 or only on `_meta`.
+- Any `429` in the log from Claude's or ChatGPT's addresses, and any Origin refused (debug log).
 - Times: anything slow (Claude allows 10 s for our OAuth endpoints).
 
 ## The owner's steps
 
 1. Merge this branch after review; deploy to staging; run the [staging test](#the-real-client-test-on-staging)
    and report.
-2. Decide gap 1 (ChatGPT CIMD) and gap 2 (shared anonymous limits); fix 1 before submitting to OpenAI;
-   decide gap 5 (troubleshooting text).
+2. Choose `OAUTH_CIMD_AUTH` for production from the staging passes (gap 1), and set it before
+   submitting to OpenAI; decide gap 5 (troubleshooting text).
 3. Deploy to production; republish the registry entry (plan.md).
 4. Make the two reviewers' accounts and fill them ([above](#reviewers-accounts)).
 5. **Claude:** from a paid Claude account, claude.ai/directory/manage, Submit new, MCP connector; paste the
    listing; enter the reviewer's credentials and instructions; accept the terms.
 6. **ChatGPT:** verify the individual or organization in the OpenAI Platform dashboard; serve the domain
-   token (gap 4); record the walkthrough video; build the ZIP from the manifest values; upload; connect the
+   token (gap 4); record the walkthrough video; build the ZIP from the manifest values, with
+   `skills/glazecalc-dictation/` in it ([above](#chatgpt-directory)); upload; connect the
    server and fix any scan findings; fill Review details; submit; publish once approved.
 7. After each listing goes live, add its link to `/assistants` and this file.

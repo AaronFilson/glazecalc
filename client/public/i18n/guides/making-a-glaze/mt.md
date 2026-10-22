@@ -26,7 +26,7 @@ Biex tagħmel glejż{{en: glaze}}, tiżen **materji primi** fi trab (minerali mi
 
 ### Minn fejn tixtri
 
-Il-fuħħarin jixtru mingħand fornituri taċ-ċeramika, li jbigħu t-tafal, il-materjali tal-glejż{{en: glaze}} u l-għodda. It-tabella turi xi wħud għall-pajjiż tiegħek, kull wieħed iċċekkjat fuq is-sit tal-ħanut stess, u tista’ tagħżel pajjiż ieħor biex tara l-ħwienet tiegħu. L-istokk jinbidel, għalhekk iċċekkja qabel ma tordna. Produtturi kbar bħal Sibelco u Imerys ibigħu lill-industrija; il-fuħħarin jixtru l-materjali tagħhom permezz ta’ ħwienet bħal dawn. Digitalfire, sit ta’ referenza dwar iċ-ċeramika, għandu direttorju ta’ ħwienet tal-fornituri għal postijiet oħra.
+Il-fuħħarin jixtru mingħand fornituri taċ-ċeramika, li jbigħu t-tafal, il-materjali tal-glejż{{en: glaze}} u l-għodda. It-tabella turi xi wħud għall-pajjiż tiegħek, kull wieħed iċċekkjat fuq is-sit tal-ħanut stess, u tista’ tagħżel pajjiż jew reġjun ieħor biex tara l-ħwienet hemmhekk. L-istokk jinbidel, għalhekk iċċekkja qabel ma tordna. Produtturi kbar bħal Sibelco u Imerys ibigħu lill-industrija; il-fuħħarin jixtru l-materjali tagħhom permezz ta’ ħwienet bħal dawn. Digitalfire, sit ta’ referenza dwar iċ-ċeramika, għandu direttorju ta’ ħwienet tal-fornituri għal postijiet oħra.
 
 ::shops
 

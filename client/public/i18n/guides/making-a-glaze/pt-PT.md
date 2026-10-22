@@ -26,7 +26,7 @@ Fazer um vidrado{{en: glaze}} é pesar, segundo uma receita, **matérias-primas*
 
 ### Onde comprar
 
-Os ceramistas compram a fornecedores de cerâmica, que vendem pastas, matérias-primas para vidrados{{en: glaze materials}} e ferramentas. A tabela mostra alguns do seu país, cada um verificado no site da própria loja, e pode escolher outro país para ver as lojas desse país. As existências mudam, por isso confirme antes de encomendar. Os grandes produtores, como a Sibelco e a Imerys, vendem à indústria; os ceramistas compram as matérias-primas desses produtores em lojas como estas. Para outros locais, o site de referência sobre cerâmica Digitalfire mantém um diretório de lojas de fornecedores.
+Os ceramistas compram a fornecedores de cerâmica, que vendem pastas, matérias-primas para vidrados{{en: glaze materials}} e ferramentas. A tabela mostra alguns do seu país, cada um verificado no site da própria loja, e pode escolher outro país ou região para ver as lojas que lá existem. As existências mudam, por isso confirme antes de encomendar. Os grandes produtores, como a Sibelco e a Imerys, vendem à indústria; os ceramistas compram as matérias-primas desses produtores em lojas como estas. Para outros locais, o site de referência sobre cerâmica Digitalfire mantém um diretório de lojas de fornecedores.
 
 ::shops
 

@@ -26,7 +26,7 @@ Préparer un émail{{en: glaze}}, c’est peser d’après une recette des **mat
 
 ### Où acheter
 
-Les céramistes achètent chez des fournisseurs pour la céramique, qui vendent de la terre, des matières pour émaux{{en: glaze materials}} et des outils. Le tableau en présente quelques-uns pour votre pays, chacun vérifié sur le site du magasin lui-même, et vous pouvez choisir un autre pays pour voir ses magasins. Les stocks changent : vérifiez avant de commander. Les grands producteurs comme Sibelco et Imerys vendent à l’industrie ; les céramistes achètent leurs matières dans des magasins comme ceux-ci. Pour les autres pays, le site de référence en céramique Digitalfire tient un annuaire des magasins de fournisseurs.
+Les céramistes achètent chez des fournisseurs pour la céramique, qui vendent de la terre, des matières pour émaux{{en: glaze materials}} et des outils. Le tableau en présente quelques-uns pour votre pays, chacun vérifié sur le site du magasin lui-même, et vous pouvez choisir un autre pays ou une autre région pour voir les magasins qui s’y trouvent. Les stocks changent : vérifiez avant de commander. Les grands producteurs comme Sibelco et Imerys vendent à l’industrie ; les céramistes achètent leurs matières dans des magasins comme ceux-ci. Pour les autres pays, le site de référence en céramique Digitalfire tient un annuaire des magasins de fournisseurs.
 
 ::shops
 

@@ -137,6 +137,31 @@ export interface NoLimit {
   source: string;
   status: Status;
   checked: string;
+  /** Limits some states have set in their own rules (India's), each shown only where its status allows. */
+  states?: StateLimit[];
+}
+
+/**
+ * A limit a state sets where the country has none (India's states, under the OSH Code, s.88): formulas
+ * of the dust's quartz content Q (in %), for respirable dust and for total dust, as the state's rules
+ * write them.
+ */
+export interface StateLimit {
+  /** The state, as it is named in English. */
+  area: string;
+  /** The rules that set it, as they are named there. */
+  law: string;
+  source: string;
+  /** For respirable dust, where it could be read. */
+  respirable?: Formula;
+  /** For total dust, where it could be read. */
+  total?: Formula;
+  /** The values cut off in the copy read: said so, never guessed (Rajasthan's respirable dust). */
+  clipped?: Array<'respirable' | 'total'>;
+  status: Status;
+  checked: string;
+  /** Where it was read, and what else the rules say. */
+  note?: string;
 }
 
 export interface Workplace {

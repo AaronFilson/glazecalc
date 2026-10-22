@@ -695,8 +695,8 @@ NEPSI for silica, the Cabinet regulations (Regions) for limits. No Latvian guida
 **Hazard statements.** Every H-statement in the records, the recipe page and the guides takes the official Latvian
 wording of Regula (EK) Nr. 1272/2008, III pielikums (the 2008 text cited above, checked again on 9 October 2026 against
 the consolidated text of 1 September 2025, CELEX 02008R1272-20250901, which has the same wordings), the same every
-time, in lower case after the code. Where the English shortens a statement ("H410 very toxic to aquatic life", "H361fd
-fertility and unborn child"), shorten the official wording the same way; where it names organs or a route, fill the
+time, in lower case after the code. Where the English shortens a statement ("H410 very toxic to aquatic life"),
+shorten the official wording the same way; where it names organs or a route, fill the
 regulation's slots: the organs inside the statement, the route after it with a comma.
 
 - H272 “Var pastiprināt degšanu; oksidētājs.” (the records' shape: “H272 var pastiprināt degšanu (oksidētājs)”).

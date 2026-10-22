@@ -26,7 +26,7 @@ Làm men nghĩa là cân các **nguyên liệu thô** dạng bột (khoáng vậ
 
 ### Mua ở đâu
 
-Thợ gốm mua từ các nhà cung cấp đồ gốm, nơi bán đất sét, nguyên liệu làm men và dụng cụ. Bảng cho thấy một vài nơi cho quốc gia của bạn, mỗi nơi đã được kiểm tra trên trang web riêng của cửa hàng, và bạn có thể chọn một quốc gia khác để xem các cửa hàng của nó. Hàng trong kho thay đổi, nên hãy kiểm tra trước khi đặt hàng. Các nhà sản xuất lớn như Sibelco và Imerys bán cho ngành công nghiệp; thợ gốm mua nguyên liệu qua các cửa hàng như những nơi này. Trang tham khảo về gốm Digitalfire giữ một danh bạ các cửa hàng nhà cung cấp cho những nơi khác.
+Thợ gốm mua từ các nhà cung cấp đồ gốm, nơi bán đất sét, nguyên liệu làm men và dụng cụ. Bảng cho thấy một vài nơi cho quốc gia của bạn, mỗi nơi đã được kiểm tra trên trang web riêng của cửa hàng, và bạn có thể chọn một quốc gia hoặc khu vực khác để xem các cửa hàng ở đó. Hàng trong kho thay đổi, nên hãy kiểm tra trước khi đặt hàng. Các nhà sản xuất lớn như Sibelco và Imerys bán cho ngành công nghiệp; thợ gốm mua nguyên liệu qua các cửa hàng như những nơi này. Trang tham khảo về gốm Digitalfire giữ một danh bạ các cửa hàng nhà cung cấp cho những nơi khác.
 
 ::shops
 

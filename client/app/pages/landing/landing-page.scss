@@ -28,8 +28,28 @@
 
   // Japanese, Chinese, Korean and Thai have no capitals, and spaced-out characters read as separate words
   // (Thai's vowels and tone marks also stack on their letters). Arabic and Urdu join their letters, and
-  // Hindi's and Bengali's hang from one line: spaced out, they break apart.
-  &:is(:lang(ja), :lang(zh), :lang(ko), :lang(th), :lang(ar), :lang(ur), :lang(hi), :lang(bn)) {
+  // Hindi's and Bengali's hang from one line, and the other Indian scripts stack and mark their letters (Tamil,
+  // Marathi, Kannada, Telugu, Malayalam, Gujarati, Punjabi, Odia, Nepali, Sinhala): spaced out, they break apart.
+  &:is(
+    :lang(ja),
+    :lang(zh),
+    :lang(ko),
+    :lang(th),
+    :lang(ar),
+    :lang(ur),
+    :lang(hi),
+    :lang(bn),
+    :lang(ta),
+    :lang(mr),
+    :lang(kn),
+    :lang(te),
+    :lang(ml),
+    :lang(gu),
+    :lang(pa),
+    :lang(or),
+    :lang(ne),
+    :lang(si)
+  ) {
     letter-spacing: normal;
   }
 }

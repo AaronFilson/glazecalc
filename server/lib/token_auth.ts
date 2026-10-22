@@ -22,7 +22,7 @@ import zlib from 'node:zlib';
 import type { NextFunction, Request, Response } from 'express';
 import AccessToken, { type AccessTokenDocument } from '../models/access_token.ts';
 import User, { type UserDocument } from '../models/user.ts';
-import { say } from './messages.ts';
+import { type MessageCode, say } from './messages.ts';
 import { isScope, type Permission, type Scope } from './scopes.ts';
 
 export const PREFIXES = { pat: 'glazecalc_pat_', oauth: 'glazecalc_oat_' } as const;
@@ -161,15 +161,19 @@ export const checkAccessToken = async (req: Request, token: string): Promise<Ver
 // as section 3 asks.
 const REALM = 'realm="glazecalc"';
 
-/** 401 for a token that does not work: unknown, expired, revoked, badly written or a trial's. */
-export const invalidToken = (res: Response): void => {
+/**
+ * 401 for a token that does not work: unknown, expired, revoked, badly written
+ * or a trial's. `code` says it in words: token-invalid, or too-many-tokens
+ * once the address is over its limit (limits.accessTokens).
+ */
+export const invalidToken = (res: Response, code: MessageCode = 'token-invalid'): void => {
   res
     .status(401)
     .set(
       'WWW-Authenticate',
       `Bearer ${REALM}, error="invalid_token", error_description="The access token is not valid, has expired or was revoked"`
     )
-    .json(say('token-invalid'));
+    .json(say(code));
 };
 
 /**
