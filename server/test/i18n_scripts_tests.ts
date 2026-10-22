@@ -56,6 +56,15 @@ describe('the Indian languages’ script checks', () => {
       write('kn.json', { material: 'ಫೆಲ್ಡ್ಸ್ಪಾರ್', fire: '1222 °C ವರೆಗೆ ಸುಡಿ. Ferro 3134.' });
       write('hi.json', { fire: '1222 °C तक पकाएँ। सिलिका' });
       expect(checkScripts({ dir, glossaries })).to.eql([]);
+      // Waves I2 to I4: each in its own script, with Latin units and formulas.
+      write('te.json', { fire: '1222 °C వరకు కాల్చండి. SiO₂' });
+      write('gu.json', { fire: '1222 °C સુધી પકવો. Frit 3134' });
+      write('ml.json', { fire: '1222 °C വരെ ചുടുക. K2O' });
+      write('pa.json', { fire: '1222 °C ਤੱਕ ਪਕਾਓ। ਸ਼ੀਸ਼ਾ'.normalize('NFC') });
+      write('or.json', { fire: '1222 °C ପର୍ଯ୍ୟନ୍ତ ପୋଡ଼ନ୍ତୁ।'.normalize('NFC') });
+      write('ne.json', { fire: '1222 °C सम्म पोल्नुहोस्।' });
+      write('si.json', { fire: '1222 °C දක්වා පුළුස්සන්න. Al₂O₃' });
+      expect(checkScripts({ dir, glossaries })).to.eql([]);
     });
 
     it('finds the letters of another script: Bengali in Odia, Devanagari in Gurmukhi, Hindi pasted into Tamil', () => {
@@ -102,7 +111,12 @@ describe('the Indian languages’ script checks', () => {
       write('pa.json', { material: 'ਸ਼ਾਮ'.normalize('NFC'), fire: 'ਖ਼ਾਕ'.normalize('NFC') });
       write('hi.json', { material: 'ज़रूरी'.normalize('NFC') });
       write('fr.json', { material: 'Matière' });
+      // Odia's ଡ଼ and Gurmukhi's ਲ਼ are composition exclusions too: NFC writes them as letter and nukta.
+      write('or.json', { material: 'ଓଡ଼ିଆ'.normalize('NFC'), fire: 'ଡ଼' });
+      write('recipe/pa.json', { material: 'ਲ਼' });
       expect(checkNormalization(dir)).to.eql([]);
+      expect('ଡ଼'.normalize('NFC')).to.equal('ଡ଼');
+      expect('ਲ਼'.normalize('NFC')).to.equal('ਲ਼');
     });
 
     it('finds a precomposed nukta letter or a decomposed accent, in a message or a guide', () => {
@@ -126,9 +140,11 @@ describe('the Indian languages’ script checks', () => {
   });
 
   describe('checkJoiners', () => {
-    it('passes Malayalam’s ZWNJ after a virama, Sinhala’s ZWJ after a virama, Bengali’s ra-ZWJ-virama, and text with none', () => {
-      write('ml.json', { material: 'ഒക്\u200cടോബർ ൻ ൽ' });
-      write('si.json', { material: 'ශ්\u200dරී' });
+    it('passes Malayalam’s ZWNJ after a virama, Sinhala’s yansaya, rakaransaya and touching letters, Bengali’s ra-ZWJ-virama, and text with none', () => {
+      // Malayalam's chillu letters are single characters (ൻ U+0D7B, ൽ U+0D7D) and need no joiner.
+      write('ml.json', { material: 'ഒക്' + ZWNJ + 'ടോബർ ൻ ൽ' });
+      // Sinhala: rakaransaya (ශ්, ZWJ, රී), yansaya (වාක්, ZWJ, යය), and a touching letter (ක, ZWJ, ්ව).
+      write('si.json', { material: 'ශ්' + ZWJ + 'රී', fire: 'වාක්' + ZWJ + 'යය', note: 'ක' + ZWJ + '්ව' });
       write('hi.json', { material: 'सिलिका' });
       // Bengali writes ra with ya-phala as ra, ZWJ, virama, ya (the word for ramp); Urdu is not Indian: left alone.
       write('bn.json', { material: 'র' + ZWJ + '্যাম্প', fire: 'র' + ZWJ + '্যাব' });
@@ -137,8 +153,15 @@ describe('the Indian languages’ script checks', () => {
     });
 
     it('finds a stray joiner, and the ones Malayalam, Sinhala and Bengali do not take', () => {
-      write('ml.json', { material: 'ന\u200d്\u200dന', fire: 'ക' + ZWNJ + 'ക' });
-      write('si.json', { material: 'ශ' + ZWNJ + 'රී', fire: 'ස' + ZWJ + 'ස' });
+      // Malayalam: ZWJs, the old way of writing a chillu (ന, virama, ZWJ), a ZWNJ not after a virama.
+      write('ml.json', { material: 'ന' + ZWJ + '്' + ZWJ + 'ന', fire: 'ക' + ZWNJ + 'ക', note: 'അവന്' + ZWJ });
+      // Sinhala: a ZWNJ, a ZWJ between two letters, a repaya (ර, virama, ZWJ, ම) and a ZWJ conjunct (ක්, ZWJ, ෂ).
+      write('si.json', {
+        material: 'ශ' + ZWNJ + 'රී',
+        fire: 'ස' + ZWJ + 'ස',
+        note: 'ධර්' + ZWJ + 'ම',
+        list: 'ක්' + ZWJ + 'ෂ'
+      });
       write('hi.json', { material: 'क्' + ZWJ + 'ष' });
       write('ta.json', { material: 'க' + ZWNJ + 'க' });
       // Bengali's ZWJ after the virama, after another letter, or with no virama after it, and any ZWNJ.
@@ -158,8 +181,11 @@ describe('the Indian languages’ script checks', () => {
         'app hi material: a stray ZWJ (U+200D) (1); hi takes none',
         'app ml material: a stray ZWJ (U+200D) (2); ml takes a ZWNJ only after a virama and no ZWJ, for its chillu letters are single characters',
         'app ml fire: a stray ZWNJ (U+200C) (1); ml takes a ZWNJ only after a virama and no ZWJ, for its chillu letters are single characters',
-        'app si material: a stray ZWNJ (U+200C) (1); si takes a ZWJ only after a virama and no ZWNJ',
-        'app si fire: a stray ZWJ (U+200D) (1); si takes a ZWJ only after a virama and no ZWNJ',
+        'app ml note: a stray ZWJ (U+200D) (1); ml takes a ZWNJ only after a virama and no ZWJ, for its chillu letters are single characters',
+        'app si material: a stray ZWNJ (U+200C) (1); si takes a ZWJ only in yansaya and rakaransaya (් + ZWJ + ය or ර) and in touching letters (a consonant + ZWJ + ්), and no ZWNJ',
+        'app si fire: a stray ZWJ (U+200D) (1); si takes a ZWJ only in yansaya and rakaransaya (් + ZWJ + ය or ර) and in touching letters (a consonant + ZWJ + ්), and no ZWNJ',
+        'app si note: a stray ZWJ (U+200D) (1); si takes a ZWJ only in yansaya and rakaransaya (් + ZWJ + ය or ර) and in touching letters (a consonant + ZWJ + ්), and no ZWNJ',
+        'app si list: a stray ZWJ (U+200D) (1); si takes a ZWJ only in yansaya and rakaransaya (් + ZWJ + ය or ර) and in touching letters (a consonant + ZWJ + ්), and no ZWNJ',
         'app ta material: a stray ZWNJ (U+200C) (1); ta takes none',
         'guides/firing/kn.md: a stray ZWJ (U+200D) (1); kn takes none'
       ]);
