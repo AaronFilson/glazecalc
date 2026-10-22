@@ -6,6 +6,16 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Added
 
+- **Groundwork for Telugu, Gujarati, Malayalam, Punjabi, Odia, Nepali and Sinhala** (India's waves I2 to I4): known
+  to the language list but not offered yet, in their own names, with Punjabi, Odia and Sinhala to carry the plain
+  notice, as Irish and Maltese do. India lists the five after Kannada, Nepal lists Nepali and Sri Lanka Sinhala, and
+  their number and date formats (te-IN, gu-IN, ml-IN, pa-IN, or-IN) can be chosen in Settings. A Malayalam
+  pseudo-locale, `/ml-XH/` (wide letters, long words), runs at phone width and at 320 px with the accessibility
+  checks, and the Linux test image keeps the Noto fonts for Telugu, Gujarati, Malayalam, Gurmukhi, Oriya and Sinhala.
+  The translations check takes Sinhala's ZWJ only in yansaya, rakaransaya and touching letters. Its long words found
+  two layout faults, now fixed for every language: the hidden "Skip to content" link, when its text took two lines
+  on a phone, hung over the logo, and the firing card's "A range" box could not wrap and made the recipe page
+  scroll sideways.
 - **Tamil, Marathi and Kannada** (docs/translations/ta.md, mr.md, kn.md): the app, the emails and all five guides, live
   at `/ta/…`, `/mr/…` and `/kn/…`, written for India, with the standard notice. Each uses the studio potters' loanword
   first with the textbook term in brackets at its first use, ends sentences with the Latin full stop and writes 0–9;
