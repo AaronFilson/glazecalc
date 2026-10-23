@@ -28,6 +28,10 @@ import { printAST } from '@formatjs/icu-messageformat-parser/printer.js';
 //          line: the Indian scripts' fonts and lines. Each takes its language's plural
 //          rules (Kannada's `one` covers 0). Another Indian script is one table of
 //          letters (IndicScript below) and a line in lib/regions/languages.js.
+//   ml-XH  the same in Malayalam, whose letters are wide and whose words, joined
+//          into one, are the longest of all: each word takes a case ending with a
+//          chillu letter (ങ്ങളിൽ; ൽ is one character), so a sentence has about 40%
+//          more letters than the English, each of them wider.
 //
 // Placeholders, plurals and tags keep their ICU form; only the text changes. In
 // ar-XD and the Indic pseudo-locales what a translation keeps in Latin stays so:
@@ -260,8 +264,49 @@ const KANNADA: IndicScript = {
   letters: '\u0c80-\u0cff'
 };
 
+/**
+ * Malayalam: wide letters, doubled ones stacked or joined (ക്ക, ച്ച, ട്ട), vowel signs before (െ), round (ൊ), below
+ * (ു, ൃ) and beside them, and a long ending on every word, with an atomic chillu letter (ങ്ങളിൽ, "in the ..."), as
+ * its agglutinated words have.
+ */
+const MALAYALAM: IndicScript = {
+  consonants: {
+    b: 'ബ',
+    c: 'ച്ച',
+    d: 'ഡ',
+    f: 'ഫ',
+    g: 'ഗ്ഗ',
+    h: 'ഹ',
+    j: 'ജ',
+    k: 'ക്ക',
+    l: 'ള',
+    m: 'മ്മ',
+    n: 'ണ',
+    p: 'പ്പ',
+    q: 'ക്ഷ',
+    r: 'ര',
+    s: 'ശ',
+    t: 'ട്ട',
+    v: 'വ',
+    w: 'വ',
+    x: 'ക്സ',
+    y: 'യ',
+    z: 'ഴ'
+  },
+  vowels: { a: ['അ', 'ാ'], e: ['എ', 'െ'], i: ['ഇ', 'ി'], o: ['ഒ', 'ൊ'], u: ['ഉ', 'ു'] },
+  capital: 'ശ്രീ',
+  bareEnd: 'ൃ',
+  end: 'ങ്ങളിൽ',
+  letters: 'ഀ-ൿ'
+};
+
 /** The script each Indic pseudo-locale is written in. */
-const INDIC_SCRIPTS: Record<string, IndicScript> = { 'hi-XE': DEVANAGARI, 'ta-XF': TAMIL, 'kn-XG': KANNADA };
+const INDIC_SCRIPTS: Record<string, IndicScript> = {
+  'hi-XE': DEVANAGARI,
+  'ta-XF': TAMIL,
+  'kn-XG': KANNADA,
+  'ml-XH': MALAYALAM
+};
 
 /**
  * One English word in an Indic script: a capital with the script's capital mark before it, a last bare consonant

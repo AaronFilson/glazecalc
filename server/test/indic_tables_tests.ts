@@ -70,13 +70,14 @@ describe('the Indian languages’ font and line-height tables', () => {
     for (const code of Object.keys(INDIC_SCRIPTS)) expect(groups.languageGroup(code), code).to.equal('south-asia');
   });
 
-  it('keep the fonts the pseudo-locales need in the Linux test image, and the others’ named for the waves to come', () => {
+  it('keep the fonts the pseudo-locales and every language of the waves need in the Linux test image', () => {
+    const kept = new RegExp(`Noto\\(([^)]*)\\)`).exec(dockerfile)![1]!.split('|');
     for (const language of languages.LANGUAGES.filter((l: { pseudo?: boolean }) => l.pseudo)) {
       const script = INDIC_SCRIPTS[language.base ?? ''];
       if (!script) continue;
-      const kept = new RegExp(`Noto\\(([^)]*)\\)`).exec(dockerfile)![1]!.split('|');
       expect(kept, language.code).to.include(NOTO[script]);
     }
-    expect(dockerfile).to.include('Telugu');
+    // Waves I2 to I4's too (Telugu, Gujarati, Malayalam, Gurmukhi, Oriya, Sinhala), ahead of their translations.
+    for (const [code, script] of Object.entries(INDIC_SCRIPTS)) expect(kept, code).to.include(NOTO[script]);
   });
 });

@@ -93,6 +93,7 @@ describe('regions', () => {
     // The pseudo-Tamil and pseudo-Kannada take their base's formats, and with a region, its grouping.
     expect(regions.formatLocaleFor('ta-XF', '', 'auto')).to.equal('ta-u-ca-gregory-nu-latn');
     expect(regions.formatLocaleFor('kn-XG', 'IN', 'auto')).to.equal('kn-IN-u-ca-gregory-nu-latn');
+    expect(regions.formatLocaleFor('ml-XH', 'IN', 'auto')).to.equal('ml-IN-u-ca-gregory-nu-latn');
   });
 
   it('writes Thai dates in the Gregorian calendar, Western digits, until the Calendar setting exists', () => {
@@ -674,8 +675,9 @@ describe('the subcontinent and the Arab world, as added', () => {
     const hash = crypto.createHash('sha256').update(JSON.stringify(data)).digest('hex');
     // Changed on purpose on 2026-10-21 (scratch/round8/india-data/report.md): India's state poison centres
     // (CMC Vellore, JSS Mysuru, Karamsad) and the states' silica limits under its no-limit note; and India
-    // lists Tamil, Marathi and Kannada after Hindi and English.
-    expect(hash).to.equal('93d7202ff8e08e3f60fd45122b7b4e95cad9d9197f2eb1970d69edbad5b22700');
+    // lists Tamil, Marathi and Kannada after Hindi and English. Changed on purpose on 2026-10-21 again (waves I2
+    // and I3's groundwork): India lists Telugu, Gujarati, Malayalam, Punjabi and Odia after Kannada.
+    expect(hash).to.equal('f92e073f82afbd4150758e2690fc38ee6422b215a77af8584e114abdcb9ef7b3');
   });
 });
 
@@ -1277,7 +1279,7 @@ describe('the subcontinent and the Arab world', () => {
 
   it('fire by temperature but India, by Orton cones, in °C, with the US library and their own currencies', () => {
     const expected: Array<[string, string, string[], string, string]> = [
-      ['IN', 'India', ['hi', 'en', 'ta', 'mr', 'kn'], 'orton', 'INR'],
+      ['IN', 'India', ['hi', 'en', 'ta', 'mr', 'kn', 'te', 'gu', 'ml', 'pa', 'or'], 'orton', 'INR'],
       ['PK', 'Pakistan', ['ur', 'en'], 'temperature', 'PKR'],
       ['BD', 'Bangladesh', ['bn'], 'temperature', 'BDT'],
       ['EG', 'Egypt', ['ar'], 'temperature', 'EGP'],
@@ -1722,6 +1724,72 @@ describe("India's regional languages", () => {
     expect(number('kn-IN')).to.equal('1,234,567.5');
     expect(regions.numberingSystemFor('or-IN', 'native')).to.equal('orya');
     expect(regions.numberingSystemFor('si-LK', 'native')).to.equal('latn');
+  });
+});
+
+// India's next waves, Nepali and Sinhala, known ahead of their translations (waves I2: Telugu, Gujarati,
+// Malayalam; I3: Punjabi, Odia; I4: Nepali, Sinhala; scratch/round8/in-langs/plan.md).
+describe('waves I2 to I4', () => {
+  const NAMES: Record<string, [string, string]> = {
+    te: ['తెలుగు', 'Telugu'],
+    gu: ['ગુજરાતી', 'Gujarati'],
+    ml: ['മലയാളം', 'Malayalam'],
+    pa: ['ਪੰਜਾਬੀ', 'Punjabi'],
+    or: ['ଓଡ଼ିଆ', 'Odia'],
+    ne: ['नेपाली', 'Nepali'],
+    si: ['සිංහල', 'Sinhala']
+  };
+
+  it('are known in their own names, grouped with the subcontinent and not offered', () => {
+    for (const [code, [name, english]] of Object.entries(NAMES)) {
+      const language = languages.languageFor(code)!;
+      expect(language, code).to.include({ code, english, dir: 'ltr', live: false });
+      // Each name as the browser's own data gives it, in NFC (Odia's ଡ଼ is ଡ and a nukta).
+      expect(language.name, code).to.equal(name.normalize('NFC'));
+      expect(language.name, code).to.equal(new Intl.DisplayNames([code], { type: 'language' }).of(code));
+      expect(groups.languageGroup(code), code).to.equal('south-asia');
+      expect(languages.LIVE_LANGUAGES, code).not.to.include(code);
+    }
+  });
+
+  it('give Punjabi, Odia and Sinhala the plain notice, where machine translation is weakest', () => {
+    const plain = Object.keys(NAMES).filter((code) => languages.languageFor(code)!.plainNotice);
+    expect(plain).to.eql(['pa', 'or', 'si']);
+  });
+
+  it('are written for India, Nepal and Sri Lanka, with Hindi and English first in India', () => {
+    expect(regions.regionFor('IN')!.languages).to.eql(['hi', 'en', 'ta', 'mr', 'kn', 'te', 'gu', 'ml', 'pa', 'or']);
+    expect(regions.regionFor('NP')!.languages[0]).to.equal('ne');
+    expect(regions.regionFor('LK')!.languages[0]).to.equal('si');
+    for (const locale of ['te-IN', 'gu-IN', 'ml-IN', 'pa-IN', 'or-IN', 'ne-NP', 'si-LK']) {
+      expect(regions.FORMAT_LOCALES, locale).to.include(locale);
+    }
+  });
+
+  it('have the pseudo-Malayalam, on Malayalam’s rules, under a letter of its own', () => {
+    expect(languages.languageFor('ml-XH')).to.include({ base: 'ml', pseudo: true, live: false });
+    expect(languages.textLanguage('ml-XH')).to.equal('ml');
+    expect(groups.languageGroup('ml-XH')).to.equal('other');
+    const pseudo = languages.LANGUAGES.filter((language: { pseudo?: boolean }) => language.pseudo);
+    const letters = pseudo.map((language: { code: string }) => language.code.slice(-1));
+    expect(new Set(letters).size).to.equal(letters.length);
+  });
+
+  it('show 0–9 by default and Nepali in Devanagari, each script’s own digits when chosen, Sinhala 0–9 always', () => {
+    const number = (locale: string, digits?: string) =>
+      new Intl.NumberFormat(regions.formatLocaleFor('en', '', locale, 'gregory', digits)).format(1234567.5);
+    for (const locale of ['te-IN', 'gu-IN', 'ml-IN', 'pa-IN', 'or-IN'])
+      expect(number(locale), locale).to.equal('12,34,567.5');
+    expect(number('ne-NP')).to.equal('१२,३४,५६७.५');
+    expect(number('ne-NP', 'western')).to.equal('12,34,567.5');
+    expect(number('gu-IN', 'native')).to.equal('૧૨,૩૪,૫૬૭.૫');
+    expect(number('ml-IN', 'native')).to.equal('൧൨,൩൪,൫൬൭.൫');
+    expect(number('pa-IN', 'native')).to.equal('੧੨,੩੪,੫੬੭.੫');
+    expect(number('or-IN', 'native')).to.equal('୧୨,୩୪,୫୬୭.୫');
+    // CLDR 48 groups Telugu's own digits in threes, though its 0–9 take the Indian groups; pinned so a change is seen.
+    expect(number('te-IN', 'native')).to.equal('౧,౨౩౪,౫౬౭.౫');
+    // Sinhala's own digits are historical: 0–9 under every choice, grouped in threes as CLDR has it.
+    for (const digits of ['auto', 'western', 'native']) expect(number('si-LK', digits), digits).to.equal('1,234,567.5');
   });
 });
 

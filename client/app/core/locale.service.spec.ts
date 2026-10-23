@@ -104,6 +104,29 @@ describe('LocaleService', () => {
     preferences.remember('format', 'ta-IN');
     TestBed.tick();
     expect(fixed(1234567.5, 1)).toBe('௧௨,௩௪,௫௬௭.௫');
+    // Waves I2 to I4: Nepali writes Devanagari as usual; Telugu, Gujarati, Malayalam, Punjabi and Odia 0–9, and
+    // their own digits when chosen (Telugu's in threes, as CLDR groups them); Sinhala 0–9 always, in threes.
+    preferences.remember('digits', 'auto');
+    preferences.remember('format', 'ne-NP');
+    TestBed.tick();
+    expect([formatLocale(), fixed(1234567.5, 1)]).toEqual(['ne-NP-u-ca-gregory-nu-deva', '१२,३४,५६७.५']);
+    const shown: [string, string, string][] = [
+      ['te-IN', '12,34,567.5', '౧,౨౩౪,౫౬౭.౫'],
+      ['gu-IN', '12,34,567.5', '૧૨,૩૪,૫૬૭.૫'],
+      ['ml-IN', '12,34,567.5', '൧൨,൩൪,൫൬൭.൫'],
+      ['pa-IN', '12,34,567.5', '੧੨,੩੪,੫੬੭.੫'],
+      ['or-IN', '12,34,567.5', '୧୨,୩୪,୫୬୭.୫'],
+      ['si-LK', '1,234,567.5', '1,234,567.5']
+    ];
+    for (const [format, usual, native] of shown) {
+      preferences.remember('format', format);
+      preferences.remember('digits', 'auto');
+      TestBed.tick();
+      expect([formatLocale(), fixed(1234567.5, 1)]).toEqual([`${format}-u-ca-gregory-nu-latn`, usual]);
+      preferences.remember('digits', 'native');
+      TestBed.tick();
+      expect(fixed(1234567.5, 1)).toBe(native);
+    }
     // A language with no digits of its own keeps 0–9.
     preferences.remember('format', 'en-IN');
     preferences.remember('digits', 'native');
@@ -338,9 +361,9 @@ describe('prerenderRegion', () => {
       'BD',
       'IN'
     ]);
-    // India's other languages are written for India, Telugu and the rest of them with no region listing them
-    // yet; Tamil stays India's though Sri Lanka lists it too. Nepali and Sinhala are written for Nepal and
-    // Sri Lanka, regions since round 8 (docs/south-asia-mena-plan.md, C3).
+    // India's other languages are written for India, which lists them all; Tamil stays India's though Sri Lanka
+    // lists it too. Nepali and Sinhala are written for Nepal and Sri Lanka, regions since round 8
+    // (docs/south-asia-mena-plan.md, C3).
     expect(['ta', 'mr', 'kn', 'te', 'gu', 'ml', 'pa', 'or'].map((language) => prerenderRegion(language))).toEqual(
       Array(8).fill('IN')
     );

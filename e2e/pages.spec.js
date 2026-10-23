@@ -412,6 +412,10 @@ test('"Skip to content" moves to the page without reloading it', async ({ page }
   await page.keyboard.press('Tab');
   const skip = page.getByRole('link', { name: 'Skip to content' });
   await expect(skip).toBeFocused();
+  // Shown once focused, and above the page, over nothing, until then.
+  await expect(skip).toBeInViewport();
+  await page.locator('#recipe-name').focus();
+  await expect(skip).not.toBeInViewport();
 
   // Used partway through a recipe, it keeps what has been typed.
   await page.locator('#recipe-name').fill('Not saved yet');

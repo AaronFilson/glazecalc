@@ -280,6 +280,25 @@ describe('message checks', () => {
       }
     });
 
+    it('keeps whole the other parts of the day in waves I2 to I4, Punjabi’s nukta letter in its NFC form', () => {
+      const evening = 'Open the kiln after 6pm.';
+      for (const [language, twelve] of [
+        ['te', 'సాయంత్రం 6 గంటలకు'],
+        ['gu', 'સાંજે 6 વાગ્યે'],
+        ['ml', 'വൈകുന്നേരം 6 മണിക്ക്'],
+        ['pa', 'ਸ਼ਾਮ 6 ਵਜੇ'.normalize('NFC')],
+        ['or', 'ସନ୍ଧ୍ୟା 6 ଟାରେ'],
+        ['ne', 'बेलुका 6 बजे'],
+        ['si', 'පෙ.ව. 6.30']
+      ] as const) {
+        expect(numbersIn(`${twelve}.`, language), language).to.eql([twelve]);
+        expect(compareMessage(language, 'k', evening, `${twelve}.`), language).to.eql([
+          // The English's 6pm is read as 18 (the 24-hour time the translation should write).
+          `k: its numbers differ from the English; missing 18; not in the English ${twelve}`
+        ]);
+      }
+    });
+
     it('reads Devanagari digits in Marathi and the Hindi time words as before', () => {
       expect(numbersIn('रात्री ८ वाजता', 'mr')).to.eql(['रात्री 8 वाजता']);
       expect(numbersIn('रात 8 बजे के बाद', 'hi')).to.eql(['रात 8 बजे']);
@@ -337,6 +356,15 @@ describe('message checks', () => {
       expect(compareMessage('ta', 'k', passkey, '{count, plural, one {இந்த பாஸ்கீ} other {இந்த # பாஸ்கீகள்}}')).to.eql(
         []
       );
+      // Telugu, Malayalam, Odia and Nepali: `one` is 1 alone.
+      for (const [language, translated] of [
+        ['te', '{count, plural, one {ఈ కీ} other {ఈ # కీలు}}'],
+        ['ml', '{count, plural, one {ഈ കീ} other {ഈ # കീകൾ}}'],
+        ['or', '{count, plural, one {ଏହି ପାସକି} other {ଏହି # ପାସକି}}'],
+        ['ne', '{count, plural, one {यो पासकी} other {यी # पासकी}}']
+      ] as const) {
+        expect(compareMessage(language, 'k', passkey, translated), language).to.eql([]);
+      }
       expect(
         compareMessage('de', 'k', passkey, '{count, plural, one {Dieser Passkey} other {Diese # Passkeys}}')
       ).to.eql([]);
