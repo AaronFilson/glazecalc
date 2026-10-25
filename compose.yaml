@@ -46,7 +46,7 @@ services:
         condition: service_healthy
 
   mongo:
-    image: mongo:9.0@sha256:bac22ea7710d774103dcad3ec8ac13cba1eb378f488e3ce8a6b3a1adf2ba9dcc
+    image: mongo:9.0@sha256:dc28ed5a9d0fc616903c3f463bb1e53b92b49f441721b91926e87d90bf957ce8
     restart: unless-stopped
     environment:
       # MongoDB 8 and later stop at startup on Linux 6.19 through 7.0.13, which
