@@ -182,6 +182,8 @@ These are the questions this sheet cannot settle from sources; each has a recomm
   in the materials' sense (ముడి పదార్థాలు, ముడి వైటింగ్). Never పచ్చి for a raw material, never ముడి for greenware. Native
   check.
 - **Unity formula:** **సెగర్ సూత్రం (UMF)**, as kn.md. No Telugu name for the UMF was found. Native check.
+- **Leach test:** **లీచింగ్ పరీక్ష (లోహ విడుదల పరీక్ష)**; "ప్రయోగశాలలో" only where the English says laboratory. Native check.
+- **Unborn child:** **గర్భస్థ శిశువు** in every hazard line (2.11). Native check.
 - **Kiln dial labels** stay in Latin (Off, Low, Medium, High) with a Telugu gloss at first use, as Indian kilns print them.
   Native check.
 - **Studio potter:** **కుమ్మరి** is the potter in general and also a caste's name (Google suggest: "కుమ్మరి కులం"); a
@@ -452,19 +454,19 @@ and a quoted section title the real heading. A name takes no ending, so attach a
 సౌకర్యాన్ని ఉపయోగించండి", "‘నా పదార్థాలు’ ట్యాబులో", "‘సీసాన్ని మార్చండి’ సౌకర్యం". Inside `<settings>…</settings>` write the
 word the sentence needs ("<settings>సెట్టింగ్స్</settings>లో" or "<settings>సెట్టింగ్స్లో</settings>").
 
-| English                       | Telugu (button, label)           | In running text                   |
-| ----------------------------- | -------------------------------- | --------------------------------- |
-| Compare                       | పోల్చండి                         | పోలిక; ‘పోల్చండి’ సౌకర్యం         |
-| Suggest amounts (and compare) | పరిమాణాలు సూచించండి (, పోల్చండి) | ‘పరిమాణాలు సూచించండి’ సౌకర్యం     |
-| Match with what I have        | నా దగ్గర ఉన్నవాటితో సరిపోల్చండి  | ‘నా దగ్గర ఉన్నవాటితో సరిపోల్చండి’ |
-| Replace lead                  | సీసాన్ని మార్చండి                | ‘సీసాన్ని మార్చండి’ సౌకర్యం       |
-| Settings                      | సెట్టింగ్స్                      | సెట్టింగ్స్                       |
-| Notebook                      | నోట్బుక్                         | స్టూడియో నోట్బుక్                 |
-| Notes (the page, the menu)    | నోట్స్                           | [నోట్స్](/notes)                  |
-| Library                       | లైబ్రరీ                          | పదార్థాల లైబ్రరీ                  |
-| Standard                      | ప్రామాణిక                        | ప్రామాణిక పదార్థాలు               |
-| My materials                  | నా పదార్థాలు                     | ‘నా పదార్థాలు’ ట్యాబ్             |
-| Trial                         | ట్రయల్                           | ట్రయల్                            |
+| English                     | Telugu (button, label)          | In running text                      |
+| --------------------------- | ------------------------------- | ------------------------------------ |
+| Compare                     | పోల్చండి                        | పోలిక; ‘పోల్చండి’ సౌకర్యం            |
+| Suggest amounts and compare | పరిమాణాలు సూచించి పోల్చండి      | ‘పరిమాణాలు సూచించి పోల్చండి’ సౌకర్యం |
+| Match with what I have      | నా దగ్గర ఉన్నవాటితో సరిపోల్చండి | ‘నా దగ్గర ఉన్నవాటితో సరిపోల్చండి’    |
+| Replace lead                | సీసాన్ని మార్చండి               | ‘సీసాన్ని మార్చండి’ సౌకర్యం          |
+| Settings                    | సెట్టింగ్స్                     | సెట్టింగ్స్                          |
+| Notebook                    | నోట్బుక్                        | స్టూడియో నోట్బుక్                    |
+| Notes (the page, the menu)  | నోట్స్                          | [నోట్స్](/notes)                     |
+| Library                     | లైబ్రరీ                         | పదార్థాల లైబ్రరీ                     |
+| Standard                    | ప్రామాణిక                       | ప్రామాణిక పదార్థాలు                  |
+| My materials                | నా పదార్థాలు                    | ‘నా పదార్థాలు’ ట్యాబ్                |
+| Trial                       | ట్రయల్                          | ట్రయల్                               |
 
 ### Law in India
 
@@ -685,7 +687,7 @@ first use per section (see The reader in the guides).
 | zircon                                            | జిర్కాన్                                                   | Tier 2. Usage. Zirconium silicate; not జిర్కోనియా (ZrO₂).                                                                                                                                                                                                                                                                   |
 | suspender                                         | సస్పెండర్ (గ్లేజును నీటిలో తేలి ఉంచే పదార్థం)              | Tier 1. No source; Native check. సస్పెండర్ alone is braces: give the bracket at first use. Category "సస్పెండరులు".                                                                                                                                                                                                          |
 | refractory                                        | రిఫ్రాక్టరీ (ఉష్ణ నిరోధక)                                  | Tier 1. No source. Of materials and kiln parts. Never వక్రీభవన (refraction), which the Te Wikipedia's సిరామిక్ article uses (Pitfalls).                                                                                                                                                                                     |
-| softening point, half-sphere point (fusion, flow) | సాఫ్టెనింగ్ పాయింట్, హాఫ్-స్ఫియర్ పాయింట్ (ఫ్యూజన్, ఫ్లో)  | Tier 1. No source; the frit makers' English. "Fusion" on a Ferro sheet is a melting point (ద్రవీభవన స్థానం), not nuclear fusion (కేంద్రక సంలీనం, physics glossary).                                                                                                                                                         |
+| softening point, half-sphere point (fusion, flow) | సాఫ్టెనింగ్ పాయింట్, హాఫ్-స్ఫియర్ పాయింట్ (ఫ్యూజన్, ఫ్లో)  | Tier 1. No source; the frit makers' English. The verb and the bare noun "softening" are మెత్తబడటం; సాఫ్టెనింగ్ పాయింట్ only for the term. "Fusion" on a Ferro sheet is a melting point (ద్రవీభవన స్థానం), not nuclear fusion (కేంద్రక సంలీనం, physics glossary).                                                            |
 | substitute (stand-in, replacement)                | ప్రత్యామ్నాయం                                              | Tier 4. Usage. See "like for like" (2.8).                                                                                                                                                                                                                                                                                   |
 
 ### 2.3 Clay, ware and firing stages
@@ -787,7 +789,7 @@ first use per section (see The reader in the guides).
 | devitrification             | డీవిట్రిఫికేషన్ (చల్లబడేటప్పుడు స్ఫటికాలు పెరగడం)    | **show English**. Tier 1. No source.                                                                                                                               |
 | dunting                     | డంటింగ్ (వేడి లేదా చల్లదనం వల్ల పగులు)               | **show English**. Tier 1. No source; Native check.                                                                                                                 |
 | leaching (leach, leachable) | లీచింగ్ (లోహాలు బయటకు రావడం)                         | **show English**. Tier 1. No source; Native check. Metals dissolving out of a fired glaze into food or drink ("ఆహారంలోకి కరిగి చేరడం"). Not the leech (జలగ).       |
-| specks                      | నల్లని చుక్కలు                                       | Tier 4. No source.                                                                                                                                                 |
+| specks                      | చిన్న చుక్కలు (చుక్కలు)                              | Tier 4. No source. Never నల్లని ("black"): specks can be any colour.                                                                                               |
 | milky, clouding             | పాలలాంటి; మసకబారడం                                   | Tier 4. No source.                                                                                                                                                 |
 | dry, chalky                 | గరుకైన, సుద్దలాంటి                                   | Tier 4. No source.                                                                                                                                                 |
 | breaks (over edges)         | అంచుల మీద రంగు మారడం (బ్రేక్)                        | Tier 4. No source. Not పగలడం (breaking apart).                                                                                                                     |
@@ -863,7 +865,7 @@ first use per section (see The reader in the guides).
 | blood lead test, blood lead reference value                              | రక్తంలో సీసం పరీక్ష; రక్తంలో సీసం సూచన విలువ                                                | Tier 4. No source. CDC's 3.5 µg/dL kept.                                                                                                                                                                                                                                                                                                                                                                                                        |
 | lead-free (leadless)                                                     | సీసం లేని                                                                                   | Tier 4. Not the same as ఆహారానికి సురక్షితం. Both English words → సీసం లేని.                                                                                                                                                                                                                                                                                                                                                                    |
 | food safe (food-safe)                                                    | ఆహారానికి సురక్షితం                                                                         | **show English**. Tier 4. No source. In law: releases less lead and cadmium than the limits.                                                                                                                                                                                                                                                                                                                                                    |
-| leach test (laboratory leach test, metal release test)                   | లీచింగ్ పరీక్ష (ప్రయోగశాలలో లోహ విడుదల పరీక్ష)                                              | **show English**. Tier 1 and 4. No source. A test of the metals a fired piece releases, not narrowed to lead and cadmium; codes kept.                                                                                                                                                                                                                                                                                                           |
+| leach test (laboratory leach test, metal release test)                   | లీచింగ్ పరీక్ష (లోహ విడుదల పరీక్ష)                                                          | **show English**. Tier 1 and 4. No source. A test of the metals a fired piece releases, not narrowed to lead and cadmium; codes kept.                                                                                                                                                                                                                                                                                                           |
 | liner glaze                                                              | లైనర్ గ్లేజ్                                                                                | **show English**. Tier 1. No source.                                                                                                                                                                                                                                                                                                                                                                                                            |
 | contact dermatitis, barrier cream                                        | కాంటాక్ట్ డెర్మటైటిస్ (తాకడం వల్ల చర్మవ్యాధి); బ్యారియర్ క్రీమ్                             | Tier 4. No source. "బ్యారియర్ క్రీమ్ చేతి తొడుగు కాదు".                                                                                                                                                                                                                                                                                                                                                                                         |
 | infrared (IR), IR-rated welding glasses, shade 3                         | పరారుణ (IR); IRను అడ్డుకునే వెల్డింగ్ కళ్లద్దాలు; షేడ్ 3                                    | Tier 4. Te Wikipedia (physics glossary: "పరారుణ వికిరణాలు"). Sunglasses (నల్ల కళ్లద్దాలు) and didymium glasses do not block it.                                                                                                                                                                                                                                                                                                                 |
@@ -989,6 +991,45 @@ and the choice:
 | account                                   | ఖాతా                               | Google ("Google ఖాతా"), Apple ("Apple ఖాతాను"). Plural ఖాతాలు.                                                                                                                                 |
 | password                                  | పాస్వర్డ్                          | Google, Apple ("పాస్వర్డ్", written here without the ZWNJ). Plural పాస్వర్డులు; పాస్వర్డును. Native check on the conjunct.                                                                     |
 | trusted device                            | నమ్మదగిన డివైజ్                    | Google ("నమ్మదగ్గ డివైజ్లలో"); నమ్మదగిన is the written form of నమ్మదగ్గ. Native check.                                                                                                         |
+
+### 2.11 Terms the reviews kept
+
+Words the translators chose and the reviews kept, to be used the same way in every file.
+
+| English                        | Telugu                  | Notes                                                                                 |
+| ------------------------------ | ----------------------- | ------------------------------------------------------------------------------------- |
+| oxidizer (records)             | ఆక్సిడైజర్              | Tier 1. Records.                                                                      |
+| fatal if inhaled               | పీల్చితే ప్రాణాంతకం     | Records. A hazard statement: never softened.                                          |
+| aquatic life                   | జలచరాలు                 | Records.                                                                              |
+| the unborn child               | గర్భస్థ శిశువు          | Records, guides, safety: the one word everywhere. Native check.                       |
+| fertility                      | సంతానోత్పత్తి సామర్థ్యం | Records, guides.                                                                      |
+| do not breathe (dust)          | పీల్చకండి               | Records.                                                                              |
+| flotation                      | ఫ్లోటేషన్               | Tier 1. Records.                                                                      |
+| surface tension                | ఉపరితల తన్యత            | Records.                                                                              |
+| stoichiometric                 | స్టాయికియోమెట్రిక్      | Tier 1. Records.                                                                      |
+| insoluble                      | కరగని                   | Recipe, where a short label needs it; అద్రావణీయ in running text. Never "not melting". |
+| glossy                         | మెరిసే                  | Recipe.                                                                               |
+| crazed                         | క్రేజింగ్ వచ్చిన        | Recipe.                                                                               |
+| volume                         | ఘనపరిమాణం               | Recipe, guides.                                                                       |
+| molar mass                     | మోలార్ ద్రవ్యరాశి       | Recipe.                                                                               |
+| Duplicate (button)             | నకలు చేయండి             | Recipe.                                                                               |
+| Role (a material's, column)    | పని                     | Recipe.                                                                               |
+| mist (spray)                   | తుంపర                   | Safety.                                                                               |
+| airtight                       | గాలి చొరబడని            | Safety.                                                                               |
+| rat poison                     | ఎలుకల మందు              | Safety.                                                                               |
+| bottles                        | బాటిళ్లు                | Safety. Not సీసా (which sits too near సీసం, lead).                                    |
+| sparkler                       | కాకర పువ్వొత్తి         | Safety.                                                                               |
+| risk assessment (the document) | ప్రమాద అంచనా పత్రం      | Safety.                                                                               |
+| flea market, yard sale         | పాత సామాన్ల సంత         | Safety.                                                                               |
+| lawn                           | లాన్                    | Guides.                                                                               |
+| hard water                     | హార్డ్ వాటర్            | Guides.                                                                               |
+| bin                            | బిన్                    | Guides.                                                                               |
+| whisk                          | విస్క్                  | Guides.                                                                               |
+| measuring cylinder             | కొలత సిలిండర్           | Guides.                                                                               |
+| rough test (a quick check)     | అంచనా పరీక్ష            | Guides.                                                                               |
+| ice water test                 | ఐస్ వాటర్ పరీక్ష        | Guides.                                                                               |
+| swab kit                       | స్వాబ్ కిట్టు           | Guides.                                                                               |
+| calcine (verb)                 | క్యాల్సిన్ చేయండి       | Guides.                                                                               |
 
 ## 3. Never translated
 
