@@ -160,7 +160,7 @@ test("a Bengali page shows its text's figures in Bengali digits, as its numbers,
   await expect(page.locator('label[for="temperature-C"]')).toContainText('1240 °C');
 });
 
-test('Marathi numbers show in Devanagari digits by default, Tamil, Kannada, Telugu, Gujarati and Malayalam in 0–9, as CLDR has them', async ({
+test('Marathi numbers show in Devanagari digits by default, Tamil, Kannada, Telugu, Gujarati, Malayalam, Punjabi and Odia in 0–9, as CLDR has them', async ({
   page
 }) => {
   // [language, the usual digits' example]
@@ -170,7 +170,9 @@ test('Marathi numbers show in Devanagari digits by default, Tamil, Kannada, Telu
     ['kn', '12,345.6'],
     ['te', '12,345.6'],
     ['gu', '12,345.6'],
-    ['ml', '12,345.6']
+    ['ml', '12,345.6'],
+    ['pa', '12,345.6'],
+    ['or', '12,345.6']
   ]) {
     await page.goto('/' + code + '/account');
     await expect(page.locator('html')).toHaveAttribute('lang', code);

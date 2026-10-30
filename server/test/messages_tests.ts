@@ -155,8 +155,10 @@ describe('account emails', () => {
     await accountMail.sendChanged(address, 'te');
     await accountMail.sendChanged(address, 'gu');
     await accountMail.sendChanged(address, 'ml');
-    const [arabic, german, hindi, urdu, bengali, tamil, marathi, kannada, telugu, gujarati, malayalam] =
-      await mail.waitFor(address, 11);
+    await accountMail.sendChanged(address, 'pa');
+    await accountMail.sendChanged(address, 'or');
+    const [arabic, german, hindi, urdu, bengali, tamil, marathi, kannada, telugu, gujarati, malayalam, punjabi, odia] =
+      await mail.waitFor(address, 13);
     expect(arabic!.subject).to.equal(RLM + accountMail.RESET['ar']!.subject);
     const lines = arabic!.text.split('\n');
     // Each line of text starts right to left, even one that starts with an address or a link.
@@ -171,7 +173,19 @@ describe('account emails', () => {
     // Urdu runs right to left too, in its own words.
     expect(urdu!.subject).to.equal(RLM + accountMail.CHANGED['ur']!.subject);
     // German and the Indic languages run left to right, as they are.
-    for (const ltr of [german!, hindi!, bengali!, tamil!, marathi!, kannada!, telugu!, gujarati!, malayalam!]) {
+    for (const ltr of [
+      german!,
+      hindi!,
+      bengali!,
+      tamil!,
+      marathi!,
+      kannada!,
+      telugu!,
+      gujarati!,
+      malayalam!,
+      punjabi!,
+      odia!
+    ]) {
       expect(ltr.subject + ltr.text).not.to.include(RLM);
     }
     expect(hindi!.subject).to.equal(accountMail.CHANGED['hi']!.subject);
@@ -182,8 +196,10 @@ describe('account emails', () => {
     expect(telugu!.subject).to.equal(accountMail.CHANGED['te']!.subject);
     expect(gujarati!.subject).to.equal(accountMail.CHANGED['gu']!.subject);
     expect(malayalam!.subject).to.equal(accountMail.CHANGED['ml']!.subject);
+    expect(punjabi!.subject).to.equal(accountMail.CHANGED['pa']!.subject);
+    expect(odia!.subject).to.equal(accountMail.CHANGED['or']!.subject);
     // Their own words, not the English fallback.
-    for (const code of ['te', 'gu', 'ml']) {
+    for (const code of ['te', 'gu', 'ml', 'pa', 'or']) {
       expect(accountMail.CHANGED[code]!.subject, code).not.to.equal(accountMail.CHANGED['en']!.subject);
     }
     expect(accountMail.inDirection({ to: 'a@b.c', subject: 'S', text: 'x\n\ny\n-- \nz\n' }, 'ar-XD').text).to.equal(
