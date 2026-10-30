@@ -223,3 +223,27 @@ ml.md, each with its Native check rows. What the wave taught, for I3 (Punjabi, O
 Still open: native reviewers for all three (the Native check lists), the iPhone font check (docs/i18n-plan.md,
 "Fonts"), and two English fixes the reviews found (the halloysite record's parent rock; the lead-replacement note's
 "possible clouding over red clay or crazing").
+
+## Indian regional languages, wave I3: Punjabi and Odia (live)
+
+Round 9, after wave I2, on the same rules; both live since 2026-10-30 (sourced glossaries, 18 translation parts, 12
+reviews in six groups, a consistency pass and a blind back-translation each, then `go-live.mjs pa` and `or`; the log
+is scratch/round9/i3/log.md in the main checkout). `pa` (ਪੰਜਾਬੀ, Gurmukhi) and `or` (ଓଡ଼ିଆ) are written for India
+with the standard notice (the owner, 2026-10-30, in place of the plain one first planned), the Latin full stop and
+never the danda, and 0 to 9 by default (Gurmukhi and Odia digits only when chosen). The style sheets are
+docs/translations/pa.md and or.md, each with its Native check rows. What the wave taught, for I4 (Nepali, Sinhala):
+
+- **Odia's endings after Latin names.** Case endings joined to a company, place or material name in Latin letters
+  broke the style sheet 141 times in the records alone, and about 330 times in all; the reviews reworded them one by
+  one. Write the rule (put an Odia noun after the name and join the ending to that) into the translate prompt, not
+  only the style sheet.
+- **Start every review with a side-by-side dump.** The reviewers' and consistency agents' English/translation dumps
+  worked, as wave I2 asked; the Punjabi pass found its gaps (site/ and account/ settings rows) only where it had
+  searched instead of reading pairs.
+- **A blind back-translator runs out of context on 534 warning segments.** Punjabi's stopped at lines 305 to 349 and a
+  second agent finished them. Split the work in two (guides; warnings) or have the agent write batches to disk.
+- **The lead reads the style sheet before briefing.** The lead told translators the 12-hour clock when pa.md and or.md
+  both settle the 24-hour one, which cost a round of corrected notes.
+
+Still open: native reviewers for both (the Native check lists, among them Punjabi's Undo ਅਣਕੀਤਾ ਕਰੋ and Decline
+ਨਾਮਨਜ਼ੂਰ / ਇਨਕਾਰ ਕਰੋ, and the IARC 2A/2B wordings), and the iPhone font check (docs/i18n-plan.md, "Fonts").

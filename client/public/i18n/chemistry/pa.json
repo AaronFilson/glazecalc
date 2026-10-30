@@ -1,0 +1,23 @@
+{
+  "unknown-compound": "ਫ਼ਾਰਮੂਲੇ ਵਿੱਚ ਅਣਜਾਣ ਯੌਗਿਕ {compound}",
+  "unknown-oxide": "{material} ਸਮੱਗਰੀ ਵਿੱਚ ਅਣਜਾਣ ਆਕਸਾਈਡ {oxide}",
+  "invalid-oxide-amount": "{material} ਸਮੱਗਰੀ ਵਿੱਚ {oxide} ਦੀ ਮਾਤਰਾ ਗਲਤ ਹੈ",
+  "loi-range": "{material} ਦਾ LOI ਘੱਟੋ-ਘੱਟ 0 ਅਤੇ 100 ਤੋਂ ਘੱਟ ਹੋਣਾ ਲਾਜ਼ਮੀ ਹੈ",
+  "no-oxides": "{material} ਸਮੱਗਰੀ ਵਿੱਚ ਕੋਈ ਆਕਸਾਈਡ ਨਹੀਂ ਹੈ",
+  "no-name": "ਸਮੱਗਰੀ ਦਾ ਨਾਂ ਹੋਣਾ ਲਾਜ਼ਮੀ ਹੈ",
+  "no-analysis": "{material} ਸਮੱਗਰੀ ਲਈ ਫ਼ਾਰਮੂਲਾ ਜਾਂ ਵਿਸ਼ਲੇਸ਼ਣ ਲੋੜੀਂਦਾ ਹੈ",
+  "recipe-shape": "ਰੈਸਿਪੀ '{ material, amount }' ਦੀ ਲੜੀ ਜਾਂ ਮਾਤਰਾ ਦਾ ਨਕਸ਼ਾ ਹੋਣੀ ਲਾਜ਼ਮੀ ਹੈ",
+  "invalid-amount": "{material} ਸਮੱਗਰੀ ਦੀ ਮਾਤਰਾ ਗਲਤ ਹੈ",
+  "missing-material": "ਰੈਸਿਪੀ ਦੀ ਇੱਕ ਲਾਈਨ ਵਿੱਚ ਸਮੱਗਰੀ ਨਹੀਂ ਹੈ",
+  "unknown-material": "ਅਣਜਾਣ ਸਮੱਗਰੀ {material}",
+  "no-flux": "ਰੈਸਿਪੀ ਵਿੱਚ ਕੋਈ ਫ਼ਲਕਸ ਆਕਸਾਈਡ ਨਹੀਂ ਹੈ, ਇਸ ਲਈ UMF ਨਿਰਧਾਰਿਤ ਨਹੀਂ ਹੁੰਦਾ",
+  "no-target": "ਟੀਚੇ ਵਿੱਚ ਨਿਸ਼ਾਨਾ ਬਣਾਉਣ ਲਈ ਕੋਈ ਆਕਸਾਈਡ ਨਹੀਂ ਹੈ",
+  "no-materials": "ਹਿਸਾਬ ਲਾਉਣ ਲਈ ਕੋਈ ਸਮੱਗਰੀ ਨਹੀਂ ਹੈ",
+  "no-temperature": "ਬੋਰਾਨ ਤੈਅ ਕਰਨ ਲਈ ਫਾਇਰਿੰਗ ਦਾ ਤਾਪ ਲੋੜੀਂਦਾ ਹੈ",
+  "no-flux-to-rebuild": "ਗਲੇਜ਼ ਵਿੱਚ ਦੁਬਾਰਾ ਬਣਾਉਣ ਲਈ ਕੋਈ ਫ਼ਲਕਸ ਨਹੀਂ ਹੈ",
+  "unknown-element": "{formula} ਵਿੱਚ ਅਣਜਾਣ ਤੱਤ {element}",
+  "bad-formula": "{formula} ਫ਼ਾਰਮੂਲਾ ਪੜ੍ਹਿਆ ਨਹੀਂ ਜਾ ਸਕਿਆ",
+  "analysis-total": "{material} ਦੇ ਵਿਸ਼ਲੇਸ਼ਣ ਦਾ ਜੋੜ LOI ਸਮੇਤ {total}% ਹੈ; ਲਗਭਗ 100% ਦੀ ਉਮੀਦ ਸੀ.",
+  "stored-equivalent": "{material} ਦਾ ਸਟੋਰ ਕੀਤਾ ਤੁੱਲ ਭਾਰ ਉਸ ਦੇ ਫ਼ਾਰਮੂਲੇ ਅਤੇ LOI ਨਾਲ ਮੇਲ ਨਹੀਂ ਖਾਂਦਾ; ਉਸ ਦੀ ਥਾਂ ਫ਼ਾਰਮੂਲਾ ਅਤੇ LOI ਵਰਤੇ ਗਏ.",
+  "trace-flux": "ਰੈਸਿਪੀ ਵਿੱਚ ਫ਼ਲਕਸ ਆਕਸਾਈਡ ਸਿਰਫ਼ ਨਾਂ-ਮਾਤਰ ਹਨ, ਇਸ ਲਈ UMF ਦਾ ਕੋਈ ਅਰਥ ਨਹੀਂ ਬਣਦਾ."
+}

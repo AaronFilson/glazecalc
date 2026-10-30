@@ -1727,8 +1727,8 @@ describe("India's regional languages", () => {
   });
 });
 
-// India's next waves, Nepali and Sinhala (waves I2: Telugu, Gujarati, Malayalam, live since round 9;
-// known ahead of their translations, I3: Punjabi, Odia; I4: Nepali, Sinhala; scratch/round8/in-langs/plan.md).
+// India's next waves (waves I2: Telugu, Gujarati, Malayalam, and I3: Punjabi, Odia, live since round 9;
+// known ahead of their translations, I4: Nepali, Sinhala; scratch/round8/in-langs/plan.md).
 describe('waves I2 to I4', () => {
   const NAMES: Record<string, [string, string]> = {
     te: ['తెలుగు', 'Telugu'],
@@ -1740,10 +1740,10 @@ describe('waves I2 to I4', () => {
     si: ['සිංහල', 'Sinhala']
   };
 
-  // Wave I2 is offered since round 9; I3 and I4 are not yet.
-  const LIVE = ['te', 'gu', 'ml'];
+  // Waves I2 and I3 are offered since round 9; I4 is not yet.
+  const LIVE = ['te', 'gu', 'ml', 'pa', 'or'];
 
-  it('are known in their own names, grouped with the subcontinent, and offered from wave I2 on', () => {
+  it('are known in their own names, grouped with the subcontinent, and offered for waves I2 and I3', () => {
     for (const [code, [name, english]] of Object.entries(NAMES)) {
       const language = languages.languageFor(code)!;
       const live = LIVE.includes(code);
@@ -1757,9 +1757,9 @@ describe('waves I2 to I4', () => {
     }
   });
 
-  it('give Punjabi, Odia and Sinhala the plain notice, where machine translation is weakest', () => {
+  it('give Sinhala the plain notice, and Punjabi and Odia the standard one (owner, 2026-10-30)', () => {
     const plain = Object.keys(NAMES).filter((code) => languages.languageFor(code)!.plainNotice);
-    expect(plain).to.eql(['pa', 'or', 'si']);
+    expect(plain).to.eql(['si']);
   });
 
   it('are written for India, Nepal and Sri Lanka, with Hindi and English first in India', () => {
