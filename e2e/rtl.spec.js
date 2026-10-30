@@ -8,7 +8,7 @@ const { API, signUpAndSignIn } = require('./helpers');
 // Arabic-Indic digits. Values with Latin units read left to right, names are kept apart from the text around
 // them (client/app/shared/bidi.ts), and Bootstrap's sides are mirrored (client/bootstrap.scss). The
 // Devanagari, Tamil, Kannada and Malayalam pseudo-locales (hi-XE, ta-XF, kn-XG, ml-XH) are laid out at the
-// narrowest phone too, and so are the real Tamil, Marathi and Kannada pages.
+// narrowest phone too, and so are the real Tamil, Marathi, Kannada, Telugu, Gujarati and Malayalam pages.
 
 const standard = {};
 standardData.load('materials').forEach((material) => (standard[material.name] = material));
@@ -97,8 +97,8 @@ test.describe('at the narrowest phone', () => {
   test.describe.configure({ mode: 'parallel' });
   test.use({ viewport: { width: 320, height: 700 } });
 
-  // The pseudo-locales, and the real Tamil, Marathi and Kannada, whose words run longer than the pseudo-text's.
-  for (const code of ['ar-XD', 'hi-XE', 'ta-XF', 'kn-XG', 'ml-XH', 'ta', 'mr', 'kn']) {
+  // The pseudo-locales, and the real Indian languages, whose words run longer than the pseudo-text's.
+  for (const code of ['ar-XD', 'hi-XE', 'ta-XF', 'kn-XG', 'ml-XH', 'ta', 'mr', 'kn', 'te', 'gu', 'ml']) {
     test(`${code}: the pages fit without scrolling sideways, and pass the accessibility checks`, async ({ page }) => {
       test.setTimeout(150_000);
       await signUpAndSignIn(page);

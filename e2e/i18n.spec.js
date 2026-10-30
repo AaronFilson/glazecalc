@@ -183,7 +183,7 @@ test("Tamil, Kannada and Malayalam draw their letters in the system's font, in l
   expect(files.filter((file) => /noto-(sans|nastaliq)/i.test(file))).toEqual([]);
 });
 
-test("Tamil, Marathi and Kannada pages are in their own script, in the system's font and the script's line height", async ({
+test("Tamil, Marathi, Kannada, Telugu, Gujarati and Malayalam pages are in their own script, in the system's font and the script's line height", async ({
   page
 }) => {
   const files = fontFiles(page);
@@ -191,7 +191,10 @@ test("Tamil, Marathi and Kannada pages are in their own script, in the system's 
   for (const [code, letters, linux, line] of [
     ['ta', /[஀-௿]/, 'Noto Sans Tamil', '28.9px'],
     ['mr', /[ऀ-ॿ]/, 'Noto Sans Devanagari', '29.75px'],
-    ['kn', /[ಀ-೿]/, 'Noto Sans Kannada', '31.45px']
+    ['kn', /[ಀ-೿]/, 'Noto Sans Kannada', '31.45px'],
+    ['te', /[ఀ-౿]/, 'Noto Sans Telugu', '31.45px'],
+    ['gu', /[઀-૿]/, 'Noto Sans Gujarati', '28.9px'],
+    ['ml', /[ഀ-ൿ]/, 'Noto Sans Malayalam', '30.6px']
   ]) {
     await page.goto('/' + code + '/guides/firing');
     await expect(page.locator('html')).toHaveAttribute('lang', code);

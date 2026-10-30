@@ -1727,8 +1727,8 @@ describe("India's regional languages", () => {
   });
 });
 
-// India's next waves, Nepali and Sinhala, known ahead of their translations (waves I2: Telugu, Gujarati,
-// Malayalam; I3: Punjabi, Odia; I4: Nepali, Sinhala; scratch/round8/in-langs/plan.md).
+// India's next waves, Nepali and Sinhala (waves I2: Telugu, Gujarati, Malayalam, live since round 9;
+// known ahead of their translations, I3: Punjabi, Odia; I4: Nepali, Sinhala; scratch/round8/in-langs/plan.md).
 describe('waves I2 to I4', () => {
   const NAMES: Record<string, [string, string]> = {
     te: ['తెలుగు', 'Telugu'],
@@ -1740,15 +1740,20 @@ describe('waves I2 to I4', () => {
     si: ['සිංහල', 'Sinhala']
   };
 
-  it('are known in their own names, grouped with the subcontinent and not offered', () => {
+  // Wave I2 is offered since round 9; I3 and I4 are not yet.
+  const LIVE = ['te', 'gu', 'ml'];
+
+  it('are known in their own names, grouped with the subcontinent, and offered from wave I2 on', () => {
     for (const [code, [name, english]] of Object.entries(NAMES)) {
       const language = languages.languageFor(code)!;
-      expect(language, code).to.include({ code, english, dir: 'ltr', live: false });
+      const live = LIVE.includes(code);
+      expect(language, code).to.include({ code, english, dir: 'ltr', live });
       // Each name as the browser's own data gives it, in NFC (Odia's ଡ଼ is ଡ and a nukta).
       expect(language.name, code).to.equal(name.normalize('NFC'));
       expect(language.name, code).to.equal(new Intl.DisplayNames([code], { type: 'language' }).of(code));
       expect(groups.languageGroup(code), code).to.equal('south-asia');
-      expect(languages.LIVE_LANGUAGES, code).not.to.include(code);
+      if (live) expect(languages.LIVE_LANGUAGES, code).to.include(code);
+      else expect(languages.LIVE_LANGUAGES, code).not.to.include(code);
     }
   });
 
