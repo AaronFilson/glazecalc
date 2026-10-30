@@ -995,8 +995,8 @@ const LANGUAGES = {
       sounds: 'പരമാവധി, കവിയാത്ത, കുറഞ്ഞത്'
     })
   },
-  // Wave I3: Punjabi (Gurmukhi) and Odia. Thin sources and weaker machine translation, so both show the plainer
-  // notice (plainNotice), as Irish and Maltese do. Sentences end with "." (the owner's choice, as for Hindi).
+  // Wave I3: Punjabi (Gurmukhi) and Odia. Thin sources, but both show the standard notice (owner, 2026-10-30).
+  // Sentences end with "." (the owner's choice, as for Hindi).
   pa: {
     language: 'Punjabi',
     country: 'India (Punjab), in Gurmukhi',

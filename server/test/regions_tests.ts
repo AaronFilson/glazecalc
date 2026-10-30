@@ -1757,9 +1757,9 @@ describe('waves I2 to I4', () => {
     }
   });
 
-  it('give Punjabi, Odia and Sinhala the plain notice, where machine translation is weakest', () => {
+  it('give Sinhala the plain notice, and Punjabi and Odia the standard one (owner, 2026-10-30)', () => {
     const plain = Object.keys(NAMES).filter((code) => languages.languageFor(code)!.plainNotice);
-    expect(plain).to.eql(['pa', 'or', 'si']);
+    expect(plain).to.eql(['si']);
   });
 
   it('are written for India, Nepal and Sri Lanka, with Hindi and English first in India', () => {
