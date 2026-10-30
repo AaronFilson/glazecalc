@@ -5,6 +5,6 @@
   "license": "MIT",
   "dependencies": {
     "@modelcontextprotocol/conformance": "0.2.0-alpha.12",
-    "@modelcontextprotocol/inspector": "2.9.0"
+    "@modelcontextprotocol/inspector": "2.12.0"
   }
 }
