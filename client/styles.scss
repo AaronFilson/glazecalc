@@ -111,9 +111,9 @@
 // scripts, Android's and Linux's Noto, Apple's Geeza Pro, Kohinoor and Sangam MN), so nothing is fetched.
 // Urdu is the exception: it is written in Nastaliq, which few devices have, so Noto Nastaliq Urdu comes with
 // the app (below), named only here, so no other language's page fetches it. :lang(ar) is also the
-// pseudo-locales ar-XB and ar-XD, :lang(hi) hi-XE, :lang(ta) ta-XF and :lang(kn) kn-XG. Marathi and Nepali
-// share Devanagari with Hindi: a font draws their own letter forms (ल, श, झ) when the page says lang="mr" or
-// "ne". The iPhone's fonts for Kannada, Gurmukhi, Odia and Sinhala are to be checked on a real device before
+// pseudo-locales ar-XB and ar-XD, :lang(hi) hi-XE, :lang(ta) ta-XF, :lang(kn) kn-XG and :lang(ml) ml-XH.
+// Marathi and Nepali share Devanagari with Hindi: a font draws their own letter forms (ल, श, झ) when the page
+// says lang="mr" or "ne". The iPhone's fonts for Kannada, Gurmukhi, Odia and Sinhala are to be checked on a real device before
 // each goes live (scratch/round8/in-langs/plan.md, section 4); a web font cut to the script is the fallback.
 $gc-script-fonts: (
   'ja': "'Noto Serif JP', 'Noto Serif CJK JP', 'Yu Mincho', YuMincho, 'Hiragino Mincho ProN'",
@@ -196,7 +196,7 @@ $gc-tall-scripts: (
 );
 // Tamil, Malayalam, Telugu, Kannada, Odia and Sinhala write long words, with no spaces inside them (agglutinated
 // endings, wide letters): a word wider than a phone breaks at a letter, and may shrink a column of a grid or a flex
-// row, instead of making the page scroll sideways. The pseudo-locales ta-XF and kn-XG test it at 320 px.
+// row, instead of making the page scroll sideways. The pseudo-locales ta-XF, kn-XG and ml-XH test it at 320 px.
 :root:is(:lang(ta), :lang(ml), :lang(te), :lang(kn), :lang(or), :lang(si)) {
   overflow-wrap: anywhere;
 }
@@ -476,14 +476,17 @@ img {
 .skip-link {
   position: absolute;
   inset-inline-start: 1rem;
-  top: -3rem;
+  // Above the page by its own height, however many lines its text takes (Malayalam's wraps on a phone), so it
+  // never covers the logo while hidden.
+  top: 0;
+  transform: translateY(-100%);
   z-index: 10;
   padding: 0.5rem 1rem;
   background: var(--gc-primary);
   color: var(--gc-on-primary);
   border-radius: 0 0 8px 8px;
   &:focus {
-    top: 0;
+    transform: none;
   }
 }
 

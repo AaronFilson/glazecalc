@@ -138,6 +138,7 @@ A quotation keeps its temperatures as the source wrote them, not as `{{…}}`.
   letters, right to left by the browser's own rules, with Arabic's six plural forms and
   Arabic-Indic digits: a value or name that comes apart in Arabic text shows it. `/hi-XE/` shows
   it in Devanagari, for Hindi's fonts and taller lines, `/ta-XF/` in Tamil and `/kn-XG/` in Kannada
-  (letters stacked below the line; its `one` takes 0 as well as 1).
+  (letters stacked below the line; its `one` takes 0 as well as 1), and `/ml-XH/` in Malayalam (wide
+  letters, and long words that test a button or a column at a phone's width).
 - A right-to-left translation keeps → in a message as the English has it: the app writes ← on a
   right-to-left page (docs/i18n-plan.md, "Right to left, as built"). Units stay in Latin (°C, g).

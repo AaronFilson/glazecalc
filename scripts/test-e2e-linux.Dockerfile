@@ -15,15 +15,16 @@ RUN ln -sf ../lib/node_modules/npm/bin/npm-cli.js /usr/local/bin/npm \
 # (Laksaman), which client/styles.scss names, so those pages and the pseudo-locale
 # ja-XC show their letters and not empty boxes. The image has only a Japanese
 # sans (IPAGothic) and a Thai sans (Loma). Likewise Noto Naskh Arabic, Noto Sans
-# Arabic, Noto Sans Devanagari, Bengali, Tamil and Kannada, for the pseudo-locales
-# ar-XD, hi-XE, ta-XF and kn-XG and the languages to come: only those of fonts-noto-core's
-# hundreds of fonts are kept, since with all of them Chromium looks through every
-# one for each sign Lora lacks, and the accessibility checks ran out of time. Each
-# wave of India's languages adds its scripts here (Telugu, Malayalam, Gujarati,
-# Gurmukhi, Oriya, Sinhala: SansTelugu and so on), as client/styles.scss names them.
+# Arabic, and Noto Sans for each of India's scripts and Sinhala (Devanagari, Bengali,
+# Tamil, Kannada, Telugu, Gujarati, Malayalam, Gurmukhi, Oriya, Sinhala), for the
+# pseudo-locales ar-XD, hi-XE, ta-XF, kn-XG and ml-XH and the languages to come: only
+# those of fonts-noto-core's hundreds of fonts are kept, since with all of them
+# Chromium looks through every one for each sign Lora lacks, and the accessibility
+# checks ran out of time. A new script's font is one more name in the list below, as
+# client/styles.scss names it.
 RUN apt-get update \
   && apt-get install -y --no-install-recommends fonts-noto-cjk fonts-tlwg-laksaman-otf fonts-noto-core \
   && dpkg -L fonts-noto-core | grep -E '\.(ttf|otf)$' \
-    | grep -vE '/Noto(NaskhArabic|SansArabic|SansDevanagari|SansBengali|SansTamil|SansKannada)[-[]' | xargs rm -f \
+    | grep -vE '/Noto(NaskhArabic|SansArabic|SansDevanagari|SansBengali|SansTamil|SansKannada|SansTelugu|SansGujarati|SansMalayalam|SansGurmukhi|SansOriya|SansSinhala)[-[]' | xargs rm -f \
   && fc-cache -f \
   && rm -rf /var/lib/apt/lists/*

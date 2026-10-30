@@ -147,7 +147,7 @@ test('Arabic and Hindi draw their letters in the system font, Hindi in taller li
   expect(heading).toBeCloseTo(1.45, 2);
 
   // The landing page's line over its title is spaced out in English only.
-  for (const code of ['ar-XD', 'hi-XE', 'ta-XF', 'kn-XG']) {
+  for (const code of ['ar-XD', 'hi-XE', 'ta-XF', 'kn-XG', 'ml-XH']) {
     await page.goto('/' + code + '/');
     await expect(page.locator('.eyebrow')).toHaveCSS('letter-spacing', 'normal');
   }
@@ -155,17 +155,18 @@ test('Arabic and Hindi draw their letters in the system font, Hindi in taller li
   expect(files.filter((file) => /nastaliq/i.test(file))).toEqual([]);
 });
 
-test("Tamil and Kannada draw their letters in the system's font, in lines as tall as the script's, and fetch no font", async ({
+test("Tamil, Kannada and Malayalam draw their letters in the system's font, in lines as tall as the script's, and fetch no font", async ({
   page
 }) => {
   const files = fontFiles(page);
-  // [pseudo-locale, its Linux font, text line height at 17 px, heading line height]
-  for (const [code, linux, line, heading] of [
-    ['ta-XF', 'Noto Sans Tamil', '28.9px', 1.5],
-    ['kn-XG', 'Noto Sans Kannada', '31.45px', 1.5]
+  // [pseudo-locale, its letters, its Linux font, text line height at 17 px, heading line height]
+  for (const [code, letters, linux, line, heading] of [
+    ['ta-XF', /[\u0b80-\u0bff]/, 'Noto Sans Tamil', '28.9px', 1.5],
+    ['kn-XG', /[\u0c80-\u0cff]/, 'Noto Sans Kannada', '31.45px', 1.5],
+    ['ml-XH', /[\u0d00-\u0d7f]/, 'Noto Sans Malayalam', '30.6px', 1.5]
   ]) {
     await page.goto('/' + code + '/guides/firing');
-    await expect(page.locator('h1')).toHaveText(code === 'ta-XF' ? /[\u0b80-\u0bff]/ : /[\u0c80-\u0cff]/);
+    await expect(page.locator('h1')).toHaveText(letters);
     await page.evaluate(() => globalThis.document.fonts.ready);
     // Noto on Linux (scripts/test-e2e-linux.Dockerfile, and so in CI); Nirmala UI on Windows.
     const font = process.platform === 'linux' ? new RegExp(`^${linux}$`) : /^Nirmala UI/;
@@ -182,7 +183,7 @@ test("Tamil and Kannada draw their letters in the system's font, in lines as tal
   expect(files.filter((file) => /noto-(sans|nastaliq)/i.test(file))).toEqual([]);
 });
 
-test("Tamil, Marathi and Kannada pages are in their own script, in the system's font and the script's line height", async ({
+test("Tamil, Marathi, Kannada, Telugu, Gujarati and Malayalam pages are in their own script, in the system's font and the script's line height", async ({
   page
 }) => {
   const files = fontFiles(page);
@@ -190,7 +191,10 @@ test("Tamil, Marathi and Kannada pages are in their own script, in the system's 
   for (const [code, letters, linux, line] of [
     ['ta', /[஀-௿]/, 'Noto Sans Tamil', '28.9px'],
     ['mr', /[ऀ-ॿ]/, 'Noto Sans Devanagari', '29.75px'],
-    ['kn', /[ಀ-೿]/, 'Noto Sans Kannada', '31.45px']
+    ['kn', /[ಀ-೿]/, 'Noto Sans Kannada', '31.45px'],
+    ['te', /[ఀ-౿]/, 'Noto Sans Telugu', '31.45px'],
+    ['gu', /[઀-૿]/, 'Noto Sans Gujarati', '28.9px'],
+    ['ml', /[ഀ-ൿ]/, 'Noto Sans Malayalam', '30.6px']
   ]) {
     await page.goto('/' + code + '/guides/firing');
     await expect(page.locator('html')).toHaveAttribute('lang', code);

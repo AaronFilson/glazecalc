@@ -189,11 +189,14 @@ describe('pages in each language', () => {
     expect(languages.canonicalLanguagePath('/UR/recipe')).to.equal('/ur/recipe');
   });
 
-  it('offers Tamil, Marathi and Kannada, written for India, with the standard notice', () => {
+  it('offers Tamil, Marathi, Kannada, Telugu, Gujarati and Malayalam, written for India, with the standard notice', () => {
     for (const [code, name, english] of [
       ['ta', 'தமிழ்', 'Tamil'],
       ['mr', 'मराठी', 'Marathi'],
-      ['kn', 'ಕನ್ನಡ', 'Kannada']
+      ['kn', 'ಕನ್ನಡ', 'Kannada'],
+      ['te', 'తెలుగు', 'Telugu'],
+      ['gu', 'ગુજરાતી', 'Gujarati'],
+      ['ml', 'മലയാളം', 'Malayalam']
     ]) {
       const language = languages.languageFor(code);
       expect(language).to.include({ name, english, dir: 'ltr', live: true });

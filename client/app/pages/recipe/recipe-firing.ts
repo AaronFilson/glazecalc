@@ -306,8 +306,10 @@ const GROUP_NAMES: Record<string, string> = {
     .firing-row > .firing-schedule {
       flex: 1 1 16rem;
     }
+    /* Its own width, but no wider than the row: a language's long words (Malayalam's) wrap on a phone. */
     .firing-row > .firing-range-check {
-      flex: 0 0 auto;
+      flex: 0 1 auto;
+      min-width: 0;
       padding-bottom: 0.4rem;
       margin-inline-start: 1.5rem;
     }

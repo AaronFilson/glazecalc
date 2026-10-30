@@ -35,6 +35,8 @@ const BRANCH =
  * grouping for the app. `p` gives what differs: the language and its script, the textbook board, the loanword and
  * register wording, the spelling rules, the native digits, lakh words and 12-hour words the check rejects, the
  * calendars never to use, the plural line, the endings after a placeholder, and the law's words for "at most".
+ * Nepali and Sinhala (wave I4) are written for Nepal and Sri Lanka, so they also give `country`, `lawTexts`,
+ * `grouping` and `poison` in place of India's.
  */
 function indianNotes(p) {
   const L = p.language;
@@ -43,14 +45,15 @@ function indianNotes(p) {
       `Follow docs/translations/hi.md as the model for an Indian language, and th.md, vi.md, id.md, tr.md and ja.md as well as fi.md and hr.md: they are the models for a language outside the EU. Terms come first from the shops' and makers' names (printed on the bag, in English), then from what ${L}-speaking potters and courses say, then from ${p.board}. Say which source each row rests on, with its link; mark rows with no ${L} source "No source" and rows for a native potter **Native check**.`,
       `The owner's choice (as for Hindi): the studio potters' English loanwords first, ${p.loanwords}. Give both in each such row, say where the bracketed term appears (at a term's first use in each guide section, as \`{{en: …}}\` is used, and never in a button or a short label), and give the gender or class each loanword takes in potters' usage where ${L} marks one.`,
       `Register: ${p.register}. Give examples of a button, an error, a notice and a guide sentence. Keep "must", "should" and "may" (a hedge that must survive) apart, and say that "must be tested" means the test is done, not passed.`,
-      `Style sheet: name the subsection "EU law" "Law in India" (the ${L} texts of the Acts and BIS standards, and how the English's EU names are written); under "Capitalisation" say how ${p.script} treats capitals and how Latin words inside ${L} text are written. Add a subsection "Script and spelling": ${p.spelling}. No ZWJ or ZWNJ unless the script needs one (the check asks).`,
-      `Numbers: the digits 0 to 9 (the international form of Indian numerals), never ${p.digits}, which the numbers check does not read. The decimal point (1.5) and the English's figures as it writes them (12,500; 1222 °C ungrouped): the app groups numbers the Indian way (12,34,567.5) when it formats them, so the translations write only the English's figures, never ${p.lakh} for one. 5% with no space; units as the English's symbols (10 g, 1222 °C); inches and feet as the words with the metric figure in brackets as the English gives it. Where the English writes a number as a word (two coats), it stays a word, since a digit would be a figure the English lacks. Dates 14 <month> 2026 (the month named beside the year), Gregorian, never a ${p.calendars}. Times on the 24-hour clock (20:00), never ${p.twelve}, which the check would read as 8.`,
+      `Style sheet: name the subsection "EU law" "Law in ${p.country || 'India'}" (${p.lawTexts || `the ${L} texts of the Acts and BIS standards`}, and how the English's EU names are written); under "Capitalisation" say how ${p.script} treats capitals and how Latin words inside ${L} text are written. Add a subsection "Script and spelling": ${p.spelling}. No ZWJ or ZWNJ unless the script needs one (the check asks).`,
+      `Numbers: the digits 0 to 9 (the international form of Indian numerals), never ${p.digits}, which the numbers check does not read. The decimal point (1.5) and the English's figures as it writes them (12,500; 1222 °C ungrouped): the app groups numbers ${p.grouping || 'the Indian way (12,34,567.5)'} when it formats them, so the translations write only the English's figures, never ${p.lakh} for one. 5% with no space; units as the English's symbols (10 g, 1222 °C); inches and feet as the words with the metric figure in brackets as the English gives it. Where the English writes a number as a word (two coats), it stays a word, since a digit would be a figure the English lacks. Dates 14 <month> 2026 (the month named beside the year), Gregorian, never a ${p.calendars}. Times on the 24-hour clock (20:00), never ${p.twelve}, which the check would read as 8.`,
       `Plural forms: ${p.plural}. Every plural message has the forms the check asks for, and \`=0\` stays where the English has it. Give each with a glaze word and the noun's plural, and how a loanword takes the plural.`,
       `Endings after placeholders: ${p.suffix}.`,
       `Cones: Orton cones are named Orton wherever the English says Orton (the trade name in Latin letters, beside the potters' word for a cone); SK cones are SK with the number as printed; Seger only where the English says Seger (the firing guide's older European cones), and the Seger formula (the unity molecular formula, UMF) never names a cone. Never give an SK number for an Orton number or the reverse, nor any equivalence. Give the wording for "one number hotter/cooler", never higher or lower.`,
       `Specific gravity is the relative-density word with the English's figure (a ratio without units), never density in g/cm³ or a litre weight: say which word the sources use and which the app uses (\`guides.density.sg\`, with the figure after it). Baumé as the sources write it (°Bé).`,
       `Law terms, with the English they translate: "at most", "no more than" and "up to" (${p.law}) never "less than" or "under"; "at least" never "more than"; confirm each from the ${L} texts of the Acts and standards, and keep them apart. Respirable dust, crystalline silica and silicosis in the words those texts use.`,
-      `Poison line: AIIMS's National Poisons Information Centre (1800 116 117, 24 hours, toll free) is verified (the region research): give its ${L} name from AIIMS's pages if it has one, and the words for a poison line.`,
+      p.poison ||
+        `Poison line: AIIMS's National Poisons Information Centre (1800 116 117, 24 hours, toll free) is verified (the region research): give its ${L} name from AIIMS's pages if it has one, and the words for a poison line.`,
       `Two-step sign-in: add the table "2.10 Signing in" after the last one, with the words Google, Apple and Microsoft use on their own ${L} help pages (link each): two-step sign-in, authenticator app, setup key, QR code, passkey, recovery code, the code from the app, security key, sign in, sign out, account, password, trusted device. The English writes "two-step" as a word, so a digit 2 is a figure the English lacks.`,
       `Pitfalls to settle: glaze vs enamel, varnish and paint; frit vs flux; kiln vs oven or furnace; bisque firing vs raw (unfired) ware; earthenware, terracotta, stoneware and porcelain (and "china clay", which may mean porcelain or kaolin: keep them apart); the material vs the oxide (silica vs silicon vs silicone); whiting (calcium carbonate) vs lime and chalk; boron vs borax vs boric acid; soda and potash as oxides vs soda ash and potassium carbonate; a respirator vs a ventilator vs ventilation; the app's guides vs a kiln's manual: two different words.`,
       `No rule may ask for figures the English lacks: no ${p.digits}, no ${p.lakh}, no calendar years of the region's own, no added SK or Orton equivalents, no converted units, no IS numbers where the English has none. The numbers check rejects every one.`
@@ -881,6 +884,274 @@ const LANGUAGES = {
         'Kannada joins case endings to the word (-ನಲ್ಲಿ, -ಅನ್ನು, -ಗೆ, -ನ) and a placeholder takes none: say how to build a sentence around {name}, {region} and {count} so it reads with any value (a label form, or a word set apart)',
       law: 'ಗರಿಷ್ಠ and ಮೀರಬಾರದು? for "at most"; ಕಡಿಮೆ? for "less than"; ಕನಿಷ್ಠ? for "at least"',
       sounds: 'ಗರಿಷ್ಠ, ಮೀರಬಾರದು, ಕನಿಷ್ಠ'
+    })
+  },
+  // Wave I2: Telugu, Gujarati, Malayalam (round 9; scratch/round8/in-langs/plan.md). The lessons of wave I1 are
+  // in each one's glossary lines: soluble is not melting, "turn off" is not "choose", can and may as possibility.
+  te: {
+    language: 'Telugu',
+    country: 'India (Andhra Pradesh and Telangana)',
+    region: 'IN',
+    shops:
+      "lib/regions lists Indian shops that sell in English (Bhoomi Pottery, Clay Station in Bengaluru, Sara in Chennai): read their pages for the names on the bag; then look for Telugu pages of Hyderabad's studios, the Slow Pottery courses in Andhra Pradesh, and the two states' potters' and craft bodies, to see which words Telugu-speaking potters use.",
+    termbank:
+      "the Telangana and Andhra Pradesh SCERT Telugu-medium chemistry and physics textbooks, the Telugu Akademi's glossaries, the Commission for Scientific and Technical Terminology (CSTT, cstt.education.gov.in) and the Telugu Wikipedia",
+    kilns:
+      "Indian kiln makers' and dealers' catalogues and manuals for the electric and gas kilns sold to potters in India, the shops' kiln pages, and Telugu pottery courses' pages; they give the words for kiln parts, controllers and firing steps (bisque firing, glaze firing, oxidation, reduction) as Telugu-speaking potters say them.",
+    law: "Indian law in its Telugu texts (the Gazette of India, India Code, the Official Languages Wing's Telugu versions of Union Acts where they exist, and the two states' own Telugu texts): the Occupational Safety, Health and Working Conditions Code, 2020 (s.88 leaves exposure limits to each state) and the Factories Act, 1948 it replaced, the Andhra Pradesh and Telangana Factories Rules in Telugu where published (silica limits are set by the state; lib/regions shows Andhra Pradesh's as secondary), the Telugu titles of BIS's IS 9473 (filtering half masks) and IS 9806 (ceramic ware in contact with food), the GHS labels in Telugu where any; the bodies: the Ministry of Health and Family Welfare, AIIMS's National Poisons Information Centre (1800 116 117), 112 (ERSS), DGFASLI, the Bureau of Indian Standards, each by its own Telugu name where its pages give one. Where the English names EU law (Directive 84/500/EEC, CLP), there is no official Telugu text: write what Indian official Telugu pages call it, or describe it plainly with the number kept;",
+    terms:
+      'the term banks and teaching texts of Telugu ({TERMBANK}); IATE has no Telugu. For software conventions (register, buttons, punctuation, loanword spelling), the Microsoft Telugu style guide and the Telugu help pages of Google, Apple and Microsoft.',
+    notes: indianNotes({
+      language: 'Telugu',
+      code: 'te',
+      script: 'Telugu',
+      board: "the Telugu states' SCERT textbooks and the Telugu Akademi's glossaries",
+      loanwords:
+        'in Telugu letters as potters say them (గ్లేజ్, ఫ్రిట్, కిల్న్, బిస్క్ and the like), with the Telugu technical term in brackets where it differs. Keep "soluble" (కరిగే / ద్రావణీయ?) apart from "melting" (కరగడం?): say which word means dissolving in water and which melting in the kiln, since a lead frit\'s low solubility must never read as a low melting point; and give "turn off" a verb that cannot read as "choose"',
+      register:
+        'మీరు with its verb forms, never నువ్వు; buttons, menus and tabs as Telugu software writes them (from the Microsoft Telugu style guide, Google and Apple), headings as noun phrases',
+      spelling:
+        'Telugu letters as the Andhra Pradesh and Telangana standard writes them, with the virama (్) and the stacked below-base consonants; no ZWJ or ZWNJ; Latin units, formulas and trade names kept as the English writes them; the Latin full stop "." and the comma, question mark and colon as in English',
+      digits: 'Telugu digits (౧౨౩)',
+      lakh: 'లక్ష or కోటి',
+      twelve: 'ఉదయం, మధ్యాహ్నం, సాయంత్రం or రాత్రి with a 12-hour figure (రాత్రి 8 గంటలకు)',
+      calendars: 'Shaka or Telugu-calendar year',
+      plural: '`one` and `other` in CLDR; 0 is `other` (unlike Hindi and Kannada), so the `one` form is only for 1',
+      suffix:
+        'Telugu joins case endings to the word (-లో, -ను, -కు, -యొక్క) and a placeholder takes none: say how to build a sentence around {name}, {region} and {count} so it reads with any value (a label form, or a word set apart)',
+      law: 'గరిష్ఠంగా and మించకుండా? for "at most"; కంటే తక్కువ? for "less than"; కనీసం? for "at least"',
+      sounds: 'గరిష్ఠంగా, మించకుండా, కనీసం'
+    })
+  },
+  gu: {
+    language: 'Gujarati',
+    country: 'India (Gujarat)',
+    region: 'IN',
+    shops:
+      "lib/regions lists Indian shops that sell in English (Bhoomi Pottery, Clay Station, Sara): read their pages for the names on the bag. Gujarat has India's ceramic industry (Morbi's tile makers, Thangadh's sanitaryware, frit and glaze makers), whose Gujarati trade pages give an industrial vocabulary (frit, glaze, kiln): use it, but say where a studio potter's word differs from a tile factory's. Then look for Gujarati pages of Ahmedabad's and Vadodara's studios and art schools (NID, MSU Baroda's Faculty of Fine Arts) and Kutch's potters.",
+    termbank:
+      "the Gujarat State School Textbook Board's Gujarati-medium chemistry and physics texts, the Commission for Scientific and Technical Terminology (CSTT, cstt.education.gov.in; its English–Gujarati learner's glossary of mathematics and chemistry), Gujarat Vidyapith's Gujarati dictionary (Sarth Gujarati Jodnikosh) and the Gujarati Wikipedia",
+    kilns:
+      "Indian kiln makers' and dealers' catalogues and manuals for the electric and gas kilns sold to potters in India, Morbi's kiln and furnace makers' Gujarati pages, the shops' kiln pages, and Gujarati pottery courses' pages; they give the words for kiln parts, controllers and firing steps (bisque firing, glaze firing, oxidation, reduction) as Gujarati-speaking potters say them.",
+    law: "Indian law in its Gujarati texts (the Gazette of India, India Code, the Official Languages Wing's Gujarati versions of Union Acts where they exist, and Gujarat's own Gujarati texts): the Occupational Safety, Health and Working Conditions Code, 2020 (s.88 leaves exposure limits to each state) and the Factories Act, 1948 it replaced, the Gujarat Factories Rules in Gujarati where published (silica limits are set by the state; Gujarat's ceramic industry makes silicosis a known word there), the Gujarati titles of BIS's IS 9473 (filtering half masks) and IS 9806 (ceramic ware in contact with food), the GHS labels in Gujarati where any; the bodies: the Ministry of Health and Family Welfare, AIIMS's National Poisons Information Centre (1800 116 117), 112 (ERSS), DGFASLI, the Bureau of Indian Standards, each by its own Gujarati name where its pages give one. Where the English names EU law (Directive 84/500/EEC, CLP), there is no official Gujarati text: write what Indian official Gujarati pages call it, or describe it plainly with the number kept;",
+    terms:
+      'the term banks and teaching texts of Gujarati ({TERMBANK}); IATE has no Gujarati. For software conventions (register, buttons, punctuation, loanword spelling), the Microsoft Gujarati style guide and the Gujarati help pages of Google, Apple and Microsoft. Gujarati is close to Hindi but its words are its own: never copy a term from docs/translations/hi.md.',
+    notes: indianNotes({
+      language: 'Gujarati',
+      code: 'gu',
+      script: 'Gujarati',
+      board: "the Gujarat textbooks' Gujarati, CSTT's Gujarati glossary and Morbi's trade usage",
+      loanwords:
+        'in Gujarati letters as potters say them (ગ્લેઝ, ફ્રિટ, કિલ્ન, બિસ્ક and the like), with the Gujarati technical term in brackets where it differs. Keep "soluble" (દ્રાવ્ય) apart from "melting" (પીગળવું), since a lead frit\'s low solubility must never read as a low melting point; and give "turn off" a verb that cannot read as "choose"',
+      register:
+        'આપ or તમે? (the Microsoft Gujarati style guide settles which Gujarati software uses), with its verb forms, never તું; buttons, menus and tabs as Gujarati software writes them, headings as noun phrases',
+      spelling:
+        'Gujarati letters as the Gujarat standard writes them (no headline), the anusvara and the virama as Gujarati uses them, never Hindi spellings; no ZWJ or ZWNJ; Latin units, formulas and trade names kept as the English writes them; the Latin full stop "." (Gujarati does not use the danda) and the comma, question mark and colon as in English',
+      digits:
+        "Gujarati digits (૧૨૩; the state's official numerals, which the app offers under Settings, but a translation writes 0 to 9)",
+      lakh: 'લાખ or કરોડ',
+      twelve: 'સવારે, બપોરે, સાંજે or રાત્રે with a 12-hour figure (રાત્રે 8 વાગ્યે)',
+      calendars: 'Vikram Samvat or Shaka year',
+      plural:
+        '`one` and `other` in CLDR, and **`one` covers 0 as well as 1** (like Hindi and Kannada), so the `one` form must read right for 0 and keeps `#`. Where the English `one` has no `#` ("this passkey", "it"), give an `=1` form for exactly one and a `one` form with `#` (the check asks for it)',
+      suffix:
+        'Gujarati joins postpositions and case endings to the word (-માં, -નો/ની/નું, -ને, -થી) and the possessive agrees with the noun that follows: say how to build a sentence around {name}, {region} and {count} so it reads with any value',
+      law: 'વધુમાં વધુ and થી વધુ નહીં? for "at most"; થી ઓછું? for "less than"; ઓછામાં ઓછું? for "at least"',
+      sounds: 'વધુમાં વધુ, થી વધુ નહીં, ઓછામાં ઓછું'
+    })
+  },
+  ml: {
+    language: 'Malayalam',
+    country: 'India (Kerala)',
+    region: 'IN',
+    shops:
+      "lib/regions lists Indian shops that sell in English (Bhoomi Pottery, Clay Station, Sara): read their pages for the names on the bag; then look for Malayalam pages of Kerala's studios (Clayfingers in Thrissur), its tile and brick tradition, and its craft bodies, to see which words Malayalam-speaking potters use.",
+    termbank:
+      "Kerala SCERT's Malayalam-medium chemistry and physics textbooks, the Kerala State Institute of Languages' glossaries and dictionaries, the Commission for Scientific and Technical Terminology (CSTT, cstt.education.gov.in) and the Malayalam Wikipedia",
+    kilns:
+      "Indian kiln makers' and dealers' catalogues and manuals for the electric and gas kilns sold to potters in India, the shops' kiln pages, and Malayalam pottery courses' pages; they give the words for kiln parts, controllers and firing steps (bisque firing, glaze firing, oxidation, reduction) as Malayalam-speaking potters say them.",
+    law: "Indian law in its Malayalam texts (the Gazette of India, India Code, the Official Languages Wing's Malayalam versions of Union Acts where they exist, and Kerala's own Malayalam texts): the Occupational Safety, Health and Working Conditions Code, 2020 (s.88 leaves exposure limits to each state) and the Factories Act, 1948 it replaced, the Kerala Factories Rules in Malayalam where published (silica limits are set by the state), the Malayalam titles of BIS's IS 9473 (filtering half masks) and IS 9806 (ceramic ware in contact with food), the GHS labels in Malayalam where any; the bodies: the Ministry of Health and Family Welfare, AIIMS's National Poisons Information Centre (1800 116 117), 112 (ERSS), DGFASLI, the Bureau of Indian Standards, each by its own Malayalam name where its pages give one. Where the English names EU law (Directive 84/500/EEC, CLP), there is no official Malayalam text: write what Indian official Malayalam pages call it, or describe it plainly with the number kept;",
+    terms:
+      'the term banks and teaching texts of Malayalam ({TERMBANK}); IATE has no Malayalam. For software conventions (register, buttons, punctuation, loanword spelling), the Microsoft Malayalam style guide and the Malayalam help pages of Google, Apple and Microsoft.',
+    notes: indianNotes({
+      language: 'Malayalam',
+      code: 'ml',
+      script: 'Malayalam',
+      board: "Kerala SCERT's Malayalam-medium texts and the State Institute of Languages' glossaries",
+      loanwords:
+        'in Malayalam letters as potters say them (ഗ്ലേസ്, ഫ്രിറ്റ്, കിൽൻ, ബിസ്ക് and the like), with the Malayalam technical term in brackets where it differs. Keep "soluble" (ലയിക്കുന്ന) apart from "melting" (ഉരുകുന്ന), since a lead frit\'s low solubility must never read as a low melting point; and give "turn off" a verb that cannot read as "choose"',
+      register:
+        'നിങ്ങൾ with its verb forms (or the impersonal forms Malayalam software uses: say which), never നീ; buttons, menus and tabs as Malayalam software writes them (from the Microsoft Malayalam style guide, Google and Apple), headings as noun phrases',
+      spelling:
+        'Malayalam letters in one orthography (the reformed or the traditional: say which the Kerala government and Microsoft use, and keep to it), the chillu letters as their atomic code points (ൺ ൻ ർ ൽ ൾ, U+0D7A–0D7F), never a consonant with a virama and a ZWJ; no ZWJ or ZWNJ at all; long words joined as Malayalam joins them; Latin units, formulas and trade names kept as the English writes them; the Latin full stop "." and the comma, question mark and colon as in English',
+      digits: 'Malayalam digits (൧൨൩)',
+      lakh: 'ലക്ഷം or കോടി',
+      twelve: 'രാവിലെ, ഉച്ചയ്ക്ക്, വൈകുന്നേരം or രാത്രി with a 12-hour figure (രാത്രി 8 മണിക്ക്)',
+      calendars: 'Kollam-era (Malayalam calendar) or Shaka year',
+      plural: '`one` and `other` in CLDR; 0 is `other` (unlike Hindi and Kannada), so the `one` form is only for 1',
+      suffix:
+        'Malayalam joins case endings to the word (-ൽ, -നെ, -ന്, -ന്റെ) and a placeholder takes none: say how to build a sentence around {name}, {region} and {count} so it reads with any value (a label form, or a word set apart). Words grow long: say where a button or tab label may be shortened',
+      law: 'പരമാവധി and കവിയാത്ത? for "at most"; കുറവ്? for "less than"; കുറഞ്ഞത്? for "at least"',
+      sounds: 'പരമാവധി, കവിയാത്ത, കുറഞ്ഞത്'
+    })
+  },
+  // Wave I3: Punjabi (Gurmukhi) and Odia. Thin sources and weaker machine translation, so both show the plainer
+  // notice (plainNotice), as Irish and Maltese do. Sentences end with "." (the owner's choice, as for Hindi).
+  pa: {
+    language: 'Punjabi',
+    country: 'India (Punjab), in Gurmukhi',
+    region: 'IN',
+    shops:
+      "lib/regions lists Indian shops that sell in English (Bhoomi Pottery, Clay Station, Sara): read their pages for the names on the bag; then look for Punjabi (Gurmukhi) pages of Punjab's terracotta centres (Mohali, Ropar, Ludhiana, Hoshiarpur), Chandigarh-area studios (Aura Pottery), Andretta's studio pottery and Punjab's craft bodies, to see which words Punjabi-speaking potters use.",
+    termbank:
+      "the Punjab School Education Board's Punjabi-medium chemistry and physics texts, Punjabi University Patiala's dictionaries and glossaries, the Commission for Scientific and Technical Terminology (CSTT, cstt.education.gov.in) and the Punjabi Wikipedia",
+    kilns:
+      "Indian kiln makers' and dealers' catalogues and manuals for the electric and gas kilns sold to potters in India, the shops' kiln pages, and Punjabi pottery courses' pages; they give the words for kiln parts, controllers and firing steps (bisque firing, glaze firing, oxidation, reduction) as Punjabi-speaking potters say them.",
+    law: "Indian law in its Punjabi texts (the Gazette of India, India Code, the Official Languages Wing's Punjabi versions of Union Acts where they exist, and Punjab's own Punjabi texts): the Occupational Safety, Health and Working Conditions Code, 2020 (s.88 leaves exposure limits to each state) and the Factories Act, 1948 it replaced, the Punjab Factory Rules in Punjabi where published (silica limits are set by the state), the Punjabi titles of BIS's IS 9473 (filtering half masks) and IS 9806 (ceramic ware in contact with food), the GHS labels in Punjabi where any; the bodies: the Ministry of Health and Family Welfare, AIIMS's National Poisons Information Centre (1800 116 117), 112 (ERSS), DGFASLI, the Bureau of Indian Standards, each by its own Punjabi name where its pages give one. Where the English names EU law (Directive 84/500/EEC, CLP), there is no official Punjabi text: write what Indian official Punjabi pages call it, or describe it plainly with the number kept;",
+    terms:
+      'the term banks and teaching texts of Punjabi ({TERMBANK}); IATE has no Punjabi. For software conventions (register, buttons, punctuation, loanword spelling), the Microsoft Punjabi style guide and the Punjabi help pages of Google, Apple and Microsoft. Punjabi is close to Hindi but its words are its own: never copy a term from docs/translations/hi.md.',
+    notes: indianNotes({
+      language: 'Punjabi',
+      code: 'pa',
+      script: 'Gurmukhi',
+      board: "the Punjab School Education Board's Punjabi texts and Punjabi University Patiala's glossaries",
+      loanwords:
+        'in Gurmukhi as potters say them (ਗਲੇਜ਼, ਫ਼ਰਿਟ, ਕਿਲਨ, ਬਿਸਕ and the like: say which spelling the sources write), with the Punjabi technical term in brackets where it differs. Keep "soluble" apart from "melting" (ਪਿਘਲਣਾ), since a lead frit\'s low solubility must never read as a low melting point; and give "turn off" a verb that cannot read as "choose"',
+      register:
+        'ਤੁਸੀਂ (or ਆਪ: say which Punjabi software uses) with its verb forms, never ਤੂੰ; buttons, menus and tabs as Punjabi software writes them (from the Microsoft Punjabi style guide, Google and Apple), headings as noun phrases',
+      spelling:
+        'Gurmukhi as the Punjab standard writes it: tippi and bindi, the addak (ੱ) where Punjabi doubles a consonant, the nukta letters (ਸ਼ ਖ਼ ਗ਼ ਜ਼ ਫ਼ ਲ਼) written as the letter and a nukta (U+0A3C), which is their NFC form; no ZWJ or ZWNJ; Latin units, formulas and trade names kept as the English writes them; the Latin full stop "." (the owner\'s choice, as for Hindi; never the danda ।) and the comma, question mark and colon as in English',
+      digits: 'Gurmukhi digits (੧੨੩)',
+      lakh: 'ਲੱਖ or ਕਰੋੜ',
+      twelve: 'ਸਵੇਰੇ, ਦੁਪਹਿਰੇ, ਸ਼ਾਮ or ਰਾਤ with a 12-hour figure (ਰਾਤ 8 ਵਜੇ)',
+      calendars: 'Nanakshahi or Vikrami (Bikrami) year',
+      plural:
+        '`one` and `other` in CLDR, and **`one` covers 0 as well as 1** (like Hindi), so the `one` form must read right for 0 and keeps `#`. Where the English `one` has no `#` ("this passkey", "it"), give an `=1` form for exactly one and a `one` form with `#` (the check asks for it)',
+      suffix:
+        'Punjabi writes its postpositions apart (ਵਿੱਚ, ਦਾ/ਦੀ/ਦੇ, ਨੂੰ, ਤੋਂ) and the possessive agrees with the noun that follows: say how to build a sentence around {name}, {region} and {count} so it reads with any value',
+      law: 'ਵੱਧ ਤੋਂ ਵੱਧ and ਤੋਂ ਵੱਧ ਨਹੀਂ? for "at most"; ਤੋਂ ਘੱਟ? for "less than"; ਘੱਟੋ-ਘੱਟ? for "at least"',
+      sounds: 'ਵੱਧ ਤੋਂ ਵੱਧ, ਤੋਂ ਵੱਧ ਨਹੀਂ, ਘੱਟੋ-ਘੱਟ'
+    })
+  },
+  or: {
+    language: 'Odia',
+    country: 'India (Odisha)',
+    region: 'IN',
+    shops:
+      "lib/regions lists Indian shops that sell in English (Bhoomi Pottery, Clay Station, Sara): read their pages for the names on the bag; then look for Odia pages of Odisha's terracotta tradition (Barapali's tiles, as Kala Bhoomi, the Odisha Crafts Museum, describes them), the art colleges of Bhubaneswar and Khallikote, and Odisha's craft bodies, to see which words Odia-speaking potters use. Much Odia text on the web is in old non-Unicode fonts: a term copied from such a page comes out garbled, so take only text that reads as Odia letters.",
+    termbank:
+      "CSTT's Glossary of Chemistry in Odia (Commission for Scientific and Technical Terminology, cstt.education.gov.in), the Board of Secondary Education, Odisha's Odia-medium science texts, the Odisha Sahitya Akademi's dictionaries, and the Odia Wikipedia",
+    kilns:
+      "Indian kiln makers' and dealers' catalogues and manuals for the electric and gas kilns sold to potters in India, the shops' kiln pages, and Odia pottery and craft courses' pages; they give the words for kiln parts, controllers and firing steps (bisque firing, glaze firing, oxidation, reduction) as Odia-speaking potters say them.",
+    law: "Indian law in its Odia texts (the Gazette of India, India Code, the Official Languages Wing's Odia versions of Union Acts where they exist, and the Odisha Gazette's Odia texts): the Occupational Safety, Health and Working Conditions Code, 2020 (s.88 leaves exposure limits to each state) and the Factories Act, 1948 it replaced, the Orissa Factories Rules in Odia where published (silica limits are set by the state), the Odia titles of BIS's IS 9473 (filtering half masks) and IS 9806 (ceramic ware in contact with food), the GHS labels in Odia where any; the bodies: the Ministry of Health and Family Welfare, AIIMS's National Poisons Information Centre (1800 116 117), 112 (ERSS), DGFASLI, the Bureau of Indian Standards, each by its own Odia name where its pages give one. Where the English names EU law (Directive 84/500/EEC, CLP), there is no official Odia text: write what Indian official Odia pages call it, or describe it plainly with the number kept;",
+    terms:
+      'the term banks and teaching texts of Odia ({TERMBANK}); IATE has no Odia. For software conventions (register, buttons, punctuation, loanword spelling), the Microsoft Odia style guide and the Odia help pages of Google, Apple and Microsoft.',
+    notes: indianNotes({
+      language: 'Odia',
+      code: 'or',
+      script: 'Odia',
+      board: "CSTT's Odia chemistry glossary and Odisha's Odia-medium textbooks",
+      loanwords:
+        'in Odia letters as potters say them (ଗ୍ଲେଜ୍, ଫ୍ରିଟ୍, କିଲ୍ନ, ବିସ୍କ and the like: say which spelling the sources write), with the Odia technical term in brackets where it differs. Keep "soluble" (ଦ୍ରବଣୀୟ?) apart from "melting" (ତରଳିବା?), since a lead frit\'s low solubility must never read as a low melting point; and give "turn off" a verb that cannot read as "choose"',
+      register:
+        'ଆପଣ with its verb forms, never ତୁ or ତୁମେ; buttons, menus and tabs as Odia software writes them (from the Microsoft Odia style guide, Google and Apple), headings as noun phrases',
+      spelling:
+        'Odia letters as the Odisha standard writes them, with the virama (୍) and the conjuncts; ଡ଼ and ଢ଼ written as the letter and a nukta (U+0B3C), which is their NFC form; ଯ, ୟ and ୱ kept apart; no ZWJ or ZWNJ; never text pasted from an old non-Unicode font; Latin units, formulas and trade names kept as the English writes them; the Latin full stop "." (the owner\'s choice, as for Hindi; never the danda ।) and the comma, question mark and colon as in English',
+      digits: 'Odia digits (୧୨୩)',
+      lakh: 'ଲକ୍ଷ or କୋଟି',
+      twelve: 'ସକାଳ, ଅପରାହ୍ନ, ସନ୍ଧ୍ୟା or ରାତି with a 12-hour figure (ରାତି 8 ଟାରେ)',
+      calendars: 'Odia-calendar (Anka) or Shaka year',
+      plural: '`one` and `other` in CLDR; 0 is `other` (unlike Hindi), so the `one` form is only for 1',
+      suffix:
+        'Odia joins case endings to the word (-ରେ, -କୁ, -ର, -ଠାରୁ) and a placeholder takes none: say how to build a sentence around {name}, {region} and {count} so it reads with any value (a label form, or a word set apart)',
+      law: 'ସର୍ବାଧିକ and ଅଧିକ ନୁହେଁ? for "at most"; ଠାରୁ କମ୍? for "less than"; ସର୍ବନିମ୍ନ? for "at least"',
+      sounds: 'ସର୍ବାଧିକ, ଅଧିକ ନୁହେଁ, ସର୍ବନିମ୍ନ'
+    })
+  },
+  // Wave I4: Nepali and Sinhala, for Nepal (NP) and Sri Lanka (LK), regions since round 8 (in English, fired by
+  // temperature). Their law, poison lines and grouping are their own countries', not India's.
+  ne: {
+    language: 'Nepali',
+    country: 'Nepal (and India: Sikkim and Darjeeling)',
+    region: 'NP',
+    shops:
+      "lib/regions lists no shop in Nepal yet (round 8 found none with its own page): look for Nepali pages of Thimi's (Madhyapur Thimi) and Bhaktapur's potters, Thimi Ceramics, the Nepal Ceramics Co-operative, and Kathmandu's studios and courses, to see which words Nepali-speaking potters use; India's shops (Bhoomi Pottery, Clay Station) for the names on the bag.",
+    termbank:
+      "the Curriculum Development Centre's (CDC, Nepal) Nepali-medium science textbooks, the Nepal Academy's Nepali dictionary (नेपाली बृहत् शब्दकोश), Nepal's Kanun Kitab (the Law Commission's Nepali law texts) and the Nepali Wikipedia",
+    kilns:
+      "kiln makers' and dealers' pages for the electric and gas kilns sold to potters in Nepal and India, Thimi Ceramics' own kilns, and Nepali pottery courses' pages; they give the words for kiln parts, controllers and firing steps (bisque firing, glaze firing, oxidation, reduction) as Nepali-speaking potters say them.",
+    law: "Nepal's law in Nepali (the Law Commission's Kanun Kitab, lawcommission.gov.np): the Labour Act, 2074 (2017) and its Labour Rules, with their occupational safety and health sections, the Consumer Protection Act, the Nepal Bureau of Standards and Metrology's Nepal Standards (NS) for masks and ceramic ware if any, the GHS labels in Nepali where any; the bodies: the Ministry of Health and Population, the Department of Labour and Occupational Safety (श्रम तथा व्यवसायजन्य सुरक्षा विभाग, as lib/regions names it), 102 (ambulance), 100 (police) and 101 (fire), each by its own Nepali name. Where the English names EU law (Directive 84/500/EEC, CLP) or Indian law, there is no Nepali text that binds in Nepal: write what Nepal's official Nepali pages call it, or describe it plainly with the number kept;",
+    terms:
+      'the term banks and teaching texts of Nepali ({TERMBANK}); IATE has no Nepali. For software conventions (register, buttons, punctuation, loanword spelling), the Microsoft Nepali style guide and the Nepali help pages of Google, Apple and Microsoft. Nepali shares Devanagari with Hindi but not its words: never copy a term from docs/translations/hi.md.',
+    notes: indianNotes({
+      language: 'Nepali',
+      code: 'ne',
+      script: 'Devanagari',
+      country: 'Nepal',
+      lawTexts: "the Nepali texts of Nepal's Acts, Rules and Nepal Standards",
+      grouping: 'the Indian way (12,34,567.5), as CLDR writes Nepali,',
+      poison:
+        "Poison line: Nepal has none the app shows (round 8's research found Tribhuvan University Teaching Hospital's centre only in news, near closing in 2024): give the words for a poison line and for 102 (ambulance), and never a number the English lacks.",
+      board: "the CDC's Nepali-medium textbooks and the Nepal Academy's dictionary",
+      loanwords:
+        'in Devanagari as Nepali-speaking potters say them (ग्लेज, फ्रिट, किल्न, बिस्क and the like: say how Nepali writes the nukta sounds, which it mostly does without), with the Nepali technical term in brackets where it differs. Never copy a term from hi.md. Keep "soluble" (घुलनशील) apart from "melting" (पग्लनु), since a lead frit\'s low solubility must never read as a low melting point; and give "turn off" a verb that cannot read as "choose"',
+      register:
+        'तपाईं with its verb forms, never तँ or तिमी (and हजुर only where Nepali software uses it: say); buttons, menus and tabs as Nepali software writes them (from the Microsoft Nepali style guide, Google and Apple), headings as noun phrases',
+      spelling:
+        'Devanagari as Nepali writes it (the page is lang="ne", so fonts draw Nepali\'s own forms, such as झ): the chandrabindu and the halanta as Nepali uses them, never Hindi spellings; no ZWJ or ZWNJ; Latin units, formulas and trade names kept as the English writes them; the Latin full stop "." (the owner\'s choice, as for Hindi; never the danda ।) and the comma, question mark and colon as in English',
+      digits:
+        'Devanagari digits (०१२; the app shows Nepali readers Devanagari digits by default when it formats a number, but a translation writes 0 to 9)',
+      lakh: 'लाख or करोड',
+      twelve: 'बिहान, दिउँसो, बेलुका or राति with a 12-hour figure (राति 8 बजे)',
+      calendars:
+        'Bikram Sambat (Nepal\'s official calendar: a real risk here; the app writes Gregorian dates, so "2026" never becomes 2083) or Nepal Sambat',
+      plural: '`one` and `other` in CLDR; 0 is `other` (unlike Hindi), so the `one` form is only for 1',
+      suffix:
+        'Nepali joins its postpositions to the word (-मा, -को/की/का, -लाई, -बाट) and the possessive agrees with the noun that follows: say how to build a sentence around {name}, {region} and {count} so it reads with any value',
+      law: 'बढीमा and भन्दा बढी नहुने? for "at most"; भन्दा कम? for "less than"; कम्तीमा? for "at least"',
+      sounds: 'बढीमा, भन्दा बढी नहुने, कम्तीमा'
+    })
+  },
+  si: {
+    language: 'Sinhala',
+    country: 'Sri Lanka',
+    region: 'LK',
+    shops:
+      "lib/regions lists no shop in Sri Lanka yet (round 8 found none with its own page): look for Sinhala pages of Sri Lanka's porcelain and tile makers, the University of the Visual and Performing Arts' Department of Ceramics (Colombo; a four-year BVA in Ceramic Art), the National Crafts Council and the village potters (Molagoda and others), to see which words Sinhala-speaking potters use; India's shops (Bhoomi Pottery, Clay Station) for the names on the bag.",
+    termbank:
+      "the Department of Official Languages' Sinhala glossaries (its technical term lists, including chemistry), the Educational Publications Department's Sinhala-medium science textbooks, the Sinhala Dictionary of the Department of Cultural Affairs, and the Sinhala Wikipedia",
+    kilns:
+      "kiln makers' and dealers' pages for the electric and gas kilns sold to potters in Sri Lanka, the porcelain makers' pages, and Sinhala pottery and ceramics courses' pages; they give the words for kiln parts, controllers and firing steps (bisque firing, glaze firing, oxidation, reduction) as Sinhala-speaking potters say them.",
+    law: "Sri Lanka's law in Sinhala (the Acts and Ordinances as published in Sinhala by the Government Printer and on the Parliament's and LawNet's pages): the Factories Ordinance and its regulations, the Consumer Affairs Authority Act, the Sri Lanka Standards Institution's SLS standards for masks and ceramic ware if any, the GHS labels in Sinhala where any; the bodies: the Ministry of Health, the National Institute of Occupational Safety and Health (NIOSH, as lib/regions names it), 1990 Suwa Seriya (ambulance), 119 (police) and 110 (fire), each by its own Sinhala name. Where the English names EU law (Directive 84/500/EEC, CLP) or Indian law, there is no Sinhala text that binds in Sri Lanka: write what Sri Lanka's official Sinhala pages call it, or describe it plainly with the number kept;",
+    terms:
+      "the term banks and teaching texts of Sinhala ({TERMBANK}); IATE has no Sinhala, and Microsoft publishes no Sinhala style guide: for software conventions (register, buttons, punctuation, loanword spelling), the Sinhala help pages of Google and Apple and Microsoft's Sinhala interface where it has one.",
+    notes: indianNotes({
+      language: 'Sinhala',
+      code: 'si',
+      script: 'Sinhala',
+      country: 'Sri Lanka',
+      lawTexts: "the Sinhala texts of Sri Lanka's Acts, Ordinances and SLS standards",
+      grouping: 'in threes (1,234,567.5), as CLDR writes Sinhala,',
+      poison:
+        "Poison line: Sri Lanka has none the app shows (round 8's research found no number for the National Poisons Information Centre on the National Hospital's own site): give the words for a poison line and for 1990 Suwa Seriya (ambulance), and never a number the English lacks.",
+      board: "the Department of Official Languages' glossaries and the Educational Publications Department's textbooks",
+      loanwords:
+        'in Sinhala letters as potters say them (ග්ලේස්, ෆ්‍රිට්, කිල්න්, බිස්ක් and the like: say which spelling the sources write), with the Sinhala technical term in brackets where it differs. Keep "soluble" (ද්‍රාව්‍ය) apart from "melting" (දියවීම?), since a lead frit\'s low solubility must never read as a low melting point; and give "turn off" a verb that cannot read as "choose"',
+      register:
+        'ඔබ with its verb forms (and the polite imperatives Sinhala software uses for buttons: say which), never ඔයා or උඹ; buttons, menus and tabs as Sinhala software writes them (Google and Apple), headings as noun phrases; written Sinhala, not the spoken forms',
+      spelling:
+        'Sinhala letters as the Sri Lankan standard writes them, with the al-lakuna (්) and the conjuncts: here **a ZWJ is correct spelling** in the yansaya (්‍ය), the rakaransaya (්‍ර) and the touching letters, so keep it there and nowhere else, never a ZWNJ; Latin units, formulas and trade names kept as the English writes them; the Latin full stop "." and the comma, question mark and colon as in English',
+      digits: 'Sinhala Lith digits (෧෨෩, historical only)',
+      lakh: 'ලක්ෂ or කෝටි',
+      twelve: 'පෙ.ව. or ප.ව., or උදේ, දවල්, හවස or රෑ, with a 12-hour figure (රෑ 8ට)',
+      calendars:
+        'Buddhist-era year (බුද්ධ වර්ෂ). Month names are the Gregorian ones written in Sinhala (ඔක්තෝබර්), never the traditional months (වප් for October, which CLDR uses in long dates): say which the sources use',
+      plural:
+        '`one` and `other` in CLDR, and **`one` covers 0 as well as 1** (like Hindi), so the `one` form must read right for 0 and keeps `#`. Where the English `one` has no `#` ("this passkey", "it"), give an `=1` form for exactly one and a `one` form with `#` (the check asks for it)',
+      suffix:
+        'Sinhala joins case endings to the word (-හි, -ට, -ගේ, -වලින්) and a placeholder takes none: say how to build a sentence around {name}, {region} and {count} so it reads with any value (a label form, or a word set apart)',
+      law: 'උපරිම and නොඉක්මවන? for "at most"; ට වඩා අඩු? for "less than"; අවම වශයෙන්? for "at least"',
+      sounds: 'උපරිම, නොඉක්මවන, අවම වශයෙන්'
     })
   }
 };

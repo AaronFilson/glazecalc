@@ -352,6 +352,29 @@ describe('translations', () => {
       expect(pseudoMessage('Batch', 'hi-XE')).toBe('र्बाट्ठचहृँ');
     });
 
+    it('writes every message in Malayalam, each word longer for its case ending with a chillu letter', () => {
+      expect(pseudoMessage('Save recipe.', 'ml-XH')).toBe('ശ്രീശാവെങ്ങളിൽ രെച്ചിപ്പെങ്ങളിൽ.');
+      expect(pseudoMessage('Batch', 'ml-XH')).toBe('ശ്രീബാട്ടച്ചഹൃങ്ങളിൽ');
+      expect(pseudoMessage('Fire to 1240 °C, {amount} g of K2O.', 'ml-XH')).toBe(
+        'ശ്രീഫിരെങ്ങളിൽ ട്ടൊങ്ങളിൽ 1240 °C, {amount} g ഒഫൃങ്ങളിൽ K2O.'
+      );
+      const malayalam = pseudoMessage('Glaze the whole batch with a brush', 'ml-XH');
+      expect(malayalam).toMatch(/^[ഀ-ൿ ]+$/);
+      // Its chillu is the single character (U+0D7D), with no joiner; and it has about 40% more letters than the English.
+      expect(malayalam).toContain('ൽ');
+      expect(malayalam).not.toMatch(/[‌‍]/);
+      const letters = [...new Intl.Segmenter('ml', { granularity: 'grapheme' }).segment(malayalam)].length;
+      expect(letters / 'Glaze the whole batch with a brush'.length).toBeGreaterThan(1.3);
+      // Malayalam's `one` is for 1 alone.
+      const transpiler = new IcuTranspiler();
+      transpiler.onLangChanged('ml-XH');
+      const message = pseudoMessage('{count, plural, one {# material} other {# materials}}', 'ml-XH');
+      const shown = (count: number) =>
+        transpiler.transpile({ value: message, params: { count }, translation: {}, key: 'x' }) as string;
+      expect(shown(0).slice(1)).toBe(shown(2).slice(1));
+      expect(shown(1).slice(1)).not.toBe(shown(2).slice(1));
+    });
+
     it("gives the pseudo-Kannada Kannada's plural rules, where one is for 0 as well as 1, and the pseudo-Tamil Tamil's", () => {
       const message = pseudoMessage('{count, plural, one {# material} other {# materials}}', 'kn-XG');
       const kannada = new IcuTranspiler();

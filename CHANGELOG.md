@@ -6,6 +6,25 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Added
 
+- **Telugu, Gujarati and Malayalam** (docs/translations/te.md, gu.md, ml.md): the app, the emails and all five guides,
+  live at `/te/…`, `/gu/…` and `/ml/…`, written for India, with the standard notice, under the same rules as Tamil,
+  Marathi and Kannada (the potters' loanword first, the Latin full stop, 0–9 in the text; the page shows 0–9 by
+  default in all three). Each was translated from a sourced glossary (308 to 332 rows), reviewed in six groups, made
+  consistent across its files and back-translated blind (one difference fixed in Malayalam, three in Gujarati, one in
+  Telugu). The reviews caught a clay body written as the human body, an "Emergency" in the word for India's 1975
+  Emergency, "millionths of a gram" that read as millions, and glosses the English does not have ("in a laboratory",
+  "and gases", PbO on metallic lead). The home-safety guide keeps the blunt title "Don't poison your family" in all
+  three. Native reviewers are wanted (the Native check rows in each style sheet). The README counts 42 languages.
+- **Groundwork for Telugu, Gujarati, Malayalam, Punjabi, Odia, Nepali and Sinhala** (India's waves I2 to I4; Telugu,
+  Gujarati and Malayalam live since: above): known to the language list, in their own names, with Punjabi, Odia and Sinhala to carry the plain
+  notice, as Irish and Maltese do. India lists the five after Kannada, Nepal lists Nepali and Sri Lanka Sinhala, and
+  their number and date formats (te-IN, gu-IN, ml-IN, pa-IN, or-IN) can be chosen in Settings. A Malayalam
+  pseudo-locale, `/ml-XH/` (wide letters, long words), runs at phone width and at 320 px with the accessibility
+  checks, and the Linux test image keeps the Noto fonts for Telugu, Gujarati, Malayalam, Gurmukhi, Oriya and Sinhala.
+  The translations check takes Sinhala's ZWJ only in yansaya, rakaransaya and touching letters. Its long words found
+  two layout faults, now fixed for every language: the hidden "Skip to content" link, when its text took two lines
+  on a phone, hung over the logo, and the firing card's "A range" box could not wrap and made the recipe page
+  scroll sideways.
 - **Tamil, Marathi and Kannada** (docs/translations/ta.md, mr.md, kn.md): the app, the emails and all five guides, live
   at `/ta/…`, `/mr/…` and `/kn/…`, written for India, with the standard notice. Each uses the studio potters' loanword
   first with the textbook term in brackets at its first use, ends sentences with the Latin full stop and writes 0–9;

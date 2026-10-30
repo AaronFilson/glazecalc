@@ -488,7 +488,8 @@ and Bengali; units in Latin, left to right; Noto Nastaliq Urdu served for Urdu p
   below, for Hindi's fonts and line heights; `/ta-XF/` and `/kn-XG/` do the same in Tamil (wide letters, vowel signs
   before, above and below) and Kannada (letters stacked below the line, and `one` taking 0 as well as 1), from one table
   of letters per script (`IndicScript` in `client/app/i18n/pseudo.ts`: another Indian script is one more table and a line
-  in `lib/regions/languages.js`). All keep in Latin what a translation keeps: acronyms (SK, LOI), units,
+  in `lib/regions/languages.js`). `/ml-XH/` (wave I2) writes Malayalam: wide letters, and every word given a case
+  ending with a chillu letter, about 40% more letters than the English (its own letter H: G is Kannada's). All keep in Latin what a translation keeps: acronyms (SK, LOI), units,
   formulas, names and web addresses. The browser tests run every page in all of them at a phone's width
   (`e2e/languages.spec.js`, `e2e/pseudo.spec.js`) and at 320 px with the accessibility checks (`e2e/rtl.spec.js`).
 - **Bootstrap.** The app compiles only the parts of Bootstrap it uses, with physical sides. `client/bootstrap.scss`
@@ -521,8 +522,9 @@ and Bengali; units in Latin, left to right; Noto Nastaliq Urdu served for Urdu p
   Noto Sans Bengali), never synthesized italics, never letter-spacing; lines 1.75 high for Devanagari and Bengali, and
   headings 1.45 (Arabic headings 1.4). Urdu is Nastaliq, which few devices have: Noto Nastaliq Urdu 3.007 is served,
   cut to Urdu's letters (193 kB, weights 400–700), named only in Urdu's font list so no other page fetches it, not
-  preloaded, in lines 1.9 high. The CSP's `font-src 'self'` covers it. The Linux test image installs `fonts-noto-core` and keeps only its Arabic, Devanagari, Bengali, Tamil and Kannada fonts (each wave of India's languages adds its
-  scripts): with all of them, Chromium's search through every font for each sign Lora lacks made the accessibility
+  preloaded, in lines 1.9 high. The CSP's `font-src 'self'` covers it. The Linux test image installs `fonts-noto-core` and keeps only its Arabic fonts and
+  Noto Sans for each Indian script and Sinhala (Devanagari, Bengali, Tamil, Kannada, Telugu, Gujarati, Malayalam,
+  Gurmukhi, Oriya, Sinhala; the last six since waves I2 to I4's groundwork): with all of them, Chromium's search through every font for each sign Lora lacks made the accessibility
   checks run out of time.
 - **India's regional languages** (wave I1: Tamil, Marathi, Kannada, live since round 8; the later waves are table
   entries). Their font stacks are in `$gc-script-fonts`, all system fonts (Nirmala UI covers every Indian script on
@@ -530,15 +532,22 @@ and Bengali; units in Latin, left to right; Noto Nastaliq Urdu served for Urdu p
   `$gc-tall-scripts` (text, headings): 1.7 to 1.85 and 1.45 to 1.5, taller for the scripts that stack letters below the
   line (Telugu, Kannada, Odia, Sinhala), and form fields and buttons 1.6 there. Wave I1's screenshot run (320 px and
   desktop: home, a recipe, the home-safety guide in `/ta/`, `/mr/` and `/kn/`, on Windows) kept Tamil's 1.7 / 1.5,
-  Marathi's 1.75 / 1.45 and Kannada's 1.85 / 1.5. `or` is grouped with South Asia ahead of its entry. **Still open for
+  Marathi's 1.75 / 1.45 and Kannada's 1.85 / 1.5. Wave I2's run (the same pages in `/te/`, `/gu/` and `/ml/`, the
+  recipe with the slurry panel and its print view, Windows) kept Telugu's 1.85 / 1.5, Gujarati's 1.7 / 1.45 and
+  Malayalam's 1.8 / 1.5: no clipped signs, no missing glyphs, and no page wider than 320 px (Malayalam's ആപേക്ഷിക
+  സാന്ദ്രത wraps onto two lines in the slurry labels). Waves I3 and I4 (Punjabi, Odia;
+  Nepali, Sinhala) are known but not offered, ahead of their translations: in the language list (Punjabi, Odia and
+  Sinhala with the plain notice), India's languages after Kannada, Nepal's and Sri Lanka's first, with their format
+  locales; their font and line-height entries are starting values, to be set by each wave's screenshot run. **Still open for
   the owner**: a real iPhone (Apple lists Kannada Sangam MN and Gurmukhi MN as downloads on iOS, and Tamil, Malayalam,
   Odia and Sinhala could not be confirmed, so the page may be drawn in a font the stack does not name; a web font cut
   to the script is the fallback), and Marathi's own letter forms (ल, श, झ) checked in `/mr/` on Windows, Android and
   macOS.
 - **Checks on the Indian languages** (`scripts/i18n-check.mjs`): the script (a translation has its own script and
   Latin only, `checkScripts`); Unicode form NFC for every translation (`checkNormalization`: a nukta letter is the
-  letter and the nukta); stray ZWJ and ZWNJ (`checkJoiners`: none, but Malayalam's ZWNJ after a virama, Sinhala's
-  ZWJ after a virama and Bengali's ZWJ between র and the virama, for ra with ya-phala); the 12-hour times of each Indian language (रात 8 बजे and the like) are kept whole so that the
+  letter and the nukta); stray ZWJ and ZWNJ (`checkJoiners`: none, but Malayalam's ZWNJ after a virama (its chillus
+  are single characters), Sinhala's ZWJ in yansaya and rakaransaya (් + ZWJ + ය or ර) and in touching letters
+  (a consonant + ZWJ + ්), and Bengali's ZWJ between র and the virama, for ra with ya-phala); the 12-hour times of each Indian language (रात 8 बजे and the like) are kept whole so that the
   figures check reports them; and where a language's `one` takes 0 as well as 1 (Hindi, Kannada, Gujarati, Punjabi,
   Sinhala, French), an English plural whose `one` is for exactly one has an `=1` form in the translation.
 - **Still to do with the languages themselves:** pinned digits and calendars for each region (Phase A1), the
@@ -546,7 +555,13 @@ and Bengali; units in Latin, left to right; Noto Nastaliq Urdu served for Urdu p
   prerendered for their regions. Wave I1 (Tamil, Marathi, Kannada) is done; the iPhone font check and Marathi's ल/श
   forms (above) are the owner's, and native reviewers for Tamil and Marathi are wanted (the Native check lists in
   docs/translations/ta.md, mr.md, kn.md). Kannada groups numbers in threes (1,234,567), as CLDR has it, unlike India's
-  other languages; accepted as it is.
+  other languages; accepted as it is. Wave I2 (Telugu, Gujarati, Malayalam) is done (round 9); native reviewers for
+  all three are wanted (the Native check lists in docs/translations/te.md, gu.md, ml.md). Next: I3 (Punjabi, Odia),
+  then I4 (Nepali, Sinhala), which have their groundwork (above); left for each: its translations, the screenshot run
+  that sets its line heights, the iPhone check, and the owner's choices on the danda for Punjabi, Odia and Nepali and
+  on the plain notice (on for Punjabi, Odia and Sinhala by default). Sinhala's numbers
+  (0–9 whatever is chosen) and Telugu's own digits are grouped in threes in CLDR 48, and Sinhala's long date uses the month
+  name වප් for October: both for a native check.
 
 ## What stays the same
 

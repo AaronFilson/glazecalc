@@ -195,3 +195,31 @@ from Hindi's sheet. What the wave taught, for the next ones (Telugu, Gujarati, M
 
 Still open: native reviewers for Tamil and Marathi (the Native check lists), the iPhone font check and Marathi's ल/श
 forms (docs/i18n-plan.md, "Fonts").
+
+## Indian regional languages, wave I2: Telugu, Gujarati and Malayalam (live)
+
+Round 9, after wave I1, on the same rules; all three live since 2026-10-30 (glossaries of 308 to 332 sourced rows, 27
+translation parts, 18 reviews in six groups per language, a consistency pass and a blind back-translation each, then
+`go-live.mjs ml`, `gu`, `te`, one per commit; the log is scratch/round9/indic/log.md in the main checkout). `te`
+(తెలుగు), `gu` (ગુજરાતી) and `ml` (മലയാളം) are written for India with the standard notice and show 0 to 9 by default
+(CLDR groups Telugu's own digits in threes, a native check). The style sheets are docs/translations/te.md, gu.md and
+ml.md, each with its Native check rows. What the wave taught, for I3 (Punjabi, Odia) and I4 (Nepali, Sinhala):
+
+- **Consistency passes stop after the easy searches.** The Gujarati and Telugu passes first did the titles, terms and
+  glossary rows and skipped the line-by-line safety checks; both were sent back. Tell the next prompts to build a
+  side-by-side English/translation dump of every safety line first and to read it pair by pair (Telugu's second pass
+  read about 1,550 pairs), and to say in the report how many pairs were read.
+- **A glossary gloss is copied into every file.** "In a laboratory" on the leach test (Telugu, Gujarati), "fumes and
+  gases" for fumes (Gujarati, seven places), PbO on every lead, metallic lead included (Malayalam): each came from one
+  row of the style sheet. Fix the row, then every file, not only the file the review found it in.
+- **The home-safety title is the owner's blunt form**, "Don't poison your family". Gujarati's style sheet softened it
+  to "protect your family from poison", and the translations, the guides list and other guides' links followed. Put
+  the blunt form in each style sheet's title row before translating.
+- **Words that read two ways in a safety line**: a clay body written as the human body (ശരീരം), "Emergency" in the
+  word for India's 1975 Emergency, mist as fog, "millionths of a gram" read as millions. Give each a glossary row.
+- **The Glob tool does not list untracked files under .claude/, again.** The resume found 24 untracked files in the
+  worktree and had to audit them by Read. Briefs say Read with full paths and Grep; commit each finished part.
+
+Still open: native reviewers for all three (the Native check lists), the iPhone font check (docs/i18n-plan.md,
+"Fonts"), and two English fixes the reviews found (the halloysite record's parent rock; the lead-replacement note's
+"possible clouding over red clay or crazing").

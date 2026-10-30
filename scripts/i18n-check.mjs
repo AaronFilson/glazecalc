@@ -1055,39 +1055,44 @@ export function checkNormalization(dir = I18N) {
 /**
  * Where a zero-width joiner (U+200D) or non-joiner (U+200C) may stand, by language. None in the languages not
  * listed. Malayalam writes its chillu letters as single characters (U+0D7A to U+0D7F), never as a letter,
- * virama and ZWJ, and a ZWNJ only after a virama (U+0D4D). Sinhala's conjuncts need a ZWJ after the virama
- * (U+0DCA), as in ශ්\u200dරී, and no ZWNJ. Bengali writes ra with ya-phala (as in the word for ramp)
- * as ra, ZWJ, virama, ya (U+09B0 U+200D U+09CD U+09AF; without the ZWJ it is reph and ya), so its ZWJ stands
- * only between ra and the virama (JOINER_AFTER and JOINER_BEFORE), and no ZWNJ. In the others a joiner is a slip.
+ * virama and ZWJ, and a ZWNJ only after a virama (U+0D4D). Sinhala writes yansaya and rakaransaya with a ZWJ
+ * between the virama (U+0DCA) and ය or ර (ක්‍ය, ශ්‍රී), and its touching letters with one between
+ * a consonant and the virama (ක‍්ව); no other ZWJ (a repaya, ර්‍ක, is written ර්ක), and no ZWNJ.
+ * Bengali writes ra with ya-phala (as in the word for ramp) as ra, ZWJ, virama, ya (U+09B0 U+200D U+09CD
+ * U+09AF; without the ZWJ it is reph and ya), so its ZWJ stands only between ra and the virama, and no ZWNJ.
+ * In the others a joiner is a slip.
  */
-const JOINER_BEFORE = { bn: { '\u200d': '\u09cd' } };
-const JOINER_AFTER = { bn: { '\u200d': '\u09b0' }, ml: { '\u200c': '്' }, si: { '\u200d': '්' } };
+const SINHALA_CONSONANT = /^[ක-ෆ]$/;
+const JOINERS = {
+  bn: {
+    allowed: (joiner, before, after) => joiner === '‍' && before === 'র' && after === '্',
+    takes: 'a ZWJ only between র and the virama (র + ZWJ + ্ + য) and no ZWNJ'
+  },
+  ml: {
+    allowed: (joiner, before) => joiner === '‌' && before === '്',
+    takes: 'a ZWNJ only after a virama and no ZWJ, for its chillu letters are single characters'
+  },
+  si: {
+    allowed: (joiner, before, after) =>
+      joiner === '‍' &&
+      ((before === '්' && (after === 'ය' || after === 'ර')) || (SINHALA_CONSONANT.test(before ?? '') && after === '්')),
+    takes:
+      'a ZWJ only in yansaya and rakaransaya (් + ZWJ + ය or ර) and in touching letters (a consonant + ZWJ + ්), and no ZWNJ'
+  }
+};
 
 /** Problems with stray joiners in the Indian languages' translations. */
 export function checkJoiners(dir = I18N) {
   const problems = [];
   for (const { label, language, text } of translatedTexts(dir)) {
     if (!INDIC_SCRIPTS[language]) continue;
-    const allowed = JOINER_AFTER[language] ?? {};
-    const next = JOINER_BEFORE[language] ?? {};
-    const found = [...text.matchAll(/[\u200c\u200d]/g)].filter(
-      (match) =>
-        text[match.index - 1] !== allowed[match[0]] ||
-        (next[match[0]] !== undefined && text[match.index + 1] !== next[match[0]])
+    const rule = JOINERS[language] ?? { allowed: () => false, takes: 'none' };
+    const found = [...text.matchAll(/[‌‍]/g)].filter(
+      (match) => !rule.allowed(match[0], text[match.index - 1], text[match.index + 1])
     );
     if (found.length) {
-      const names = [...new Set(found.map((match) => (match[0] === '\u200d' ? 'ZWJ (U+200D)' : 'ZWNJ (U+200C)')))];
-      problems.push(
-        `${label}: a stray ${names.join(' and ')} (${found.length}); ${language} takes ${
-          language === 'ml'
-            ? 'a ZWNJ only after a virama and no ZWJ, for its chillu letters are single characters'
-            : language === 'si'
-              ? 'a ZWJ only after a virama and no ZWNJ'
-              : language === 'bn'
-                ? 'a ZWJ only between র and the virama (র + ZWJ + ্ + য) and no ZWNJ'
-                : 'none'
-        }`
-      );
+      const names = [...new Set(found.map((match) => (match[0] === '‍' ? 'ZWJ (U+200D)' : 'ZWNJ (U+200C)')))];
+      problems.push(`${label}: a stray ${names.join(' and ')} (${found.length}); ${language} takes ${rule.takes}`);
     }
   }
   return problems;
