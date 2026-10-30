@@ -532,7 +532,10 @@ and Bengali; units in Latin, left to right; Noto Nastaliq Urdu served for Urdu p
   `$gc-tall-scripts` (text, headings): 1.7 to 1.85 and 1.45 to 1.5, taller for the scripts that stack letters below the
   line (Telugu, Kannada, Odia, Sinhala), and form fields and buttons 1.6 there. Wave I1's screenshot run (320 px and
   desktop: home, a recipe, the home-safety guide in `/ta/`, `/mr/` and `/kn/`, on Windows) kept Tamil's 1.7 / 1.5,
-  Marathi's 1.75 / 1.45 and Kannada's 1.85 / 1.5. Waves I2 to I4 (Telugu, Gujarati, Malayalam; Punjabi, Odia;
+  Marathi's 1.75 / 1.45 and Kannada's 1.85 / 1.5. Wave I2's run (the same pages in `/te/`, `/gu/` and `/ml/`, the
+  recipe with the slurry panel and its print view, Windows) kept Telugu's 1.85 / 1.5, Gujarati's 1.7 / 1.45 and
+  Malayalam's 1.8 / 1.5: no clipped signs, no missing glyphs, and no page wider than 320 px (Malayalam's ആപേക്ഷിക
+  സാന്ദ്രത wraps onto two lines in the slurry labels). Waves I3 and I4 (Punjabi, Odia;
   Nepali, Sinhala) are known but not offered, ahead of their translations: in the language list (Punjabi, Odia and
   Sinhala with the plain notice), India's languages after Kannada, Nepal's and Sri Lanka's first, with their format
   locales; their font and line-height entries are starting values, to be set by each wave's screenshot run. **Still open for
@@ -552,9 +555,11 @@ and Bengali; units in Latin, left to right; Noto Nastaliq Urdu served for Urdu p
   prerendered for their regions. Wave I1 (Tamil, Marathi, Kannada) is done; the iPhone font check and Marathi's ल/श
   forms (above) are the owner's, and native reviewers for Tamil and Marathi are wanted (the Native check lists in
   docs/translations/ta.md, mr.md, kn.md). Kannada groups numbers in threes (1,234,567), as CLDR has it, unlike India's
-  other languages; accepted as it is. Waves I2 to I4 have their groundwork (above); left for each: its translations,
-  the screenshot run that sets its line heights, the iPhone check, and the owner's choices on the danda for Punjabi,
-  Odia and Nepali and on the plain notice (on for Punjabi, Odia and Sinhala by default). Sinhala's numbers
+  other languages; accepted as it is. Wave I2 (Telugu, Gujarati, Malayalam) is done (round 9); native reviewers for
+  all three are wanted (the Native check lists in docs/translations/te.md, gu.md, ml.md). Next: I3 (Punjabi, Odia),
+  then I4 (Nepali, Sinhala), which have their groundwork (above); left for each: its translations, the screenshot run
+  that sets its line heights, the iPhone check, and the owner's choices on the danda for Punjabi, Odia and Nepali and
+  on the plain notice (on for Punjabi, Odia and Sinhala by default). Sinhala's numbers
   (0–9 whatever is chosen) and Telugu's own digits are grouped in threes in CLDR 48, and Sinhala's long date uses the month
   name වප් for October: both for a native check.
 
