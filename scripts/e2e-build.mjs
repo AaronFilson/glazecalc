@@ -30,6 +30,7 @@ export const SOURCES = [
   'node_modules/.package-lock.json',
   'scripts/prerender.mjs',
   'scripts/advice-i18n.mjs',
+  'scripts/material-i18n.mjs',
   'scripts/locale-fallback.mjs',
   'scripts/build-skills.mjs',
   'skills',

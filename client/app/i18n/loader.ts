@@ -23,7 +23,7 @@ import { languageFor } from '../../../lib/regions/languages';
  * next language, English.
  */
 /** The parts whose English comes with the code or the data (i18n/coded.ts). */
-export const CODED_SCOPES = ['server', 'chemistry', 'records', 'safety', 'regions', 'advice'];
+export const CODED_SCOPES = ['server', 'chemistry', 'records', 'safety', 'regions', 'advice', 'materials', 'cones'];
 
 @Injectable({ providedIn: 'root' })
 export class FileLoader implements TranslocoLoader {

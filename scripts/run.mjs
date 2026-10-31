@@ -42,9 +42,12 @@ const stopAll = (code) => {
   for (const child of children) if (child.exitCode === null) child.kill();
 };
 
-// The advice page's translations, which the dev server serves as built files (scripts/advice-i18n.mjs).
-const made = spawnSync(process.execPath, ['scripts/advice-i18n.mjs'], { cwd: root, stdio: 'inherit' });
-if (made.status !== 0) process.exit(made.status ?? 1);
+// The advice page's, the materials' and the cone chart's translations, which the dev server serves as built
+// files (scripts/advice-i18n.mjs, scripts/material-i18n.mjs).
+for (const script of ['scripts/advice-i18n.mjs', 'scripts/material-i18n.mjs']) {
+  const made = spawnSync(process.execPath, [script], { cwd: root, stdio: 'inherit' });
+  if (made.status !== 0) process.exit(made.status ?? 1);
+}
 
 for (const { name, color, args, env } of MODES[mode]) {
   // Spawn node itself rather than a shell, so killing it stops the server on Windows too.

@@ -10,6 +10,7 @@ import { RichText } from '../../i18n/rich-text';
 import { upTo } from '../../shared/format';
 import { PageHeader } from '../../shared/page-header';
 import { StructuredData, referencePage } from '../../shared/structured-data';
+import { REFERENCE_LANGUAGE_LIST, referenceText } from './reference-text';
 
 /** A cone's temperature in °C and °F, whole degrees: 1305 and 2381. */
 const bothScales = (celsius: number): { c: string; f: string } => ({
@@ -28,7 +29,7 @@ const bothScales = (celsius: number): { c: string; f: string } => ({
   template: `<ng-container *transloco="let t">
     <gc-structured-data [data]="structured()" />
     <gc-page-header [title]="t('reference.cones.heading')" [lead]="t('reference.cones.lead')" />
-    @if (language !== 'en') {
+    @if (!translated) {
       <p class="guide-note">{{ t('reference.notTranslated') }}</p>
     }
     <p><gc-rich [text]="t('reference.cones.intro')" [links]="{ firing: '/guides/firing#cones' }" /></p>
@@ -78,7 +79,7 @@ const bothScales = (celsius: number): { c: string; f: string } => ({
               }
             "
           />
-          <p class="muted">{{ orton.note }}</p>
+          <p class="muted" [attr.lang]="ortonNote.english ? 'en' : null">{{ ortonNote.text }}</p>
           <p>
             {{ t('reference.cones.ortonSource', { title: orton.title, reprinted: orton.reprintedBy }) }}
             <a [href]="orton.source" rel="noopener">{{ t('reference.cones.ortonSourceLink') }}</a>
@@ -121,7 +122,7 @@ const bothScales = (celsius: number): { c: string; f: string } => ({
           </div>
           <p class="muted">
             {{ t('reference.cones.largeDiffers') }}
-            {{ published.note }}
+            <span [attr.lang]="publishedNote.english ? 'en' : null">{{ publishedNote.text }}</span>
           </p>
           <p>
             {{
@@ -139,7 +140,7 @@ const bothScales = (celsius: number): { c: string; f: string } => ({
           <h2 id="sk">{{ t('reference.cones.skHeading') }}</h2>
           <p>{{ t('reference.cones.skIntro', { standard: sk.standard }) }}</p>
           <ng-container *ngTemplateOutlet="chart; context: { caption: t('reference.cones.skCaption'), rows: skRows }" />
-          <p class="muted">{{ sk.note }}</p>
+          <p class="muted" [attr.lang]="skNote.english ? 'en' : null">{{ skNote.text }}</p>
           <p>
             {{ t('reference.cones.skSource', { seller: sk.seller }) }}
             <a [href]="sk.source" rel="noopener">{{ t('reference.cones.skSourceLink') }}</a>
@@ -152,9 +153,17 @@ const bothScales = (celsius: number): { c: string; f: string } => ({
 export class ConesPage {
   private readonly locale = inject(LocaleService);
   protected readonly language = inject(PAGE_LANGUAGE);
+  private readonly referenceLanguages = inject(REFERENCE_LANGUAGE_LIST);
+  /** Whether the page is in a language the reference pages are translated into (English is). */
+  protected readonly translated = this.referenceLanguages.includes(this.language);
   protected readonly orton = ORTON.chart;
   protected readonly published = ORTON.published;
   protected readonly sk = SK;
+  /** The charts' notes, which carry the advice to set a witness cone, in the page's language (cones/). */
+  private readonly noteOf = (text: string) => referenceText(text, 'cones', this.language, this.referenceLanguages);
+  protected readonly ortonNote = this.noteOf(ORTON.chart.note);
+  protected readonly publishedNote = this.noteOf(ORTON.published.note);
+  protected readonly skNote = this.noteOf(SK.note);
   /** The heating rate in °F an hour: a difference, not a temperature. */
   protected readonly ortonRateF = Math.round((ORTON.chart.rate * 9) / 5);
 
@@ -207,9 +216,16 @@ export class ConesPage {
 
   /** What search engines read about the page (shared/structured-data.ts). */
   protected readonly structured = computed(() =>
-    referencePage(translate('titles.cones').replace(/ - Glazecalc$/, ''), translate('meta.cones'), '/cones', [
-      { name: 'Glazecalc', path: '/' },
-      { name: translate('reference.cones.crumb'), path: '/cones' }
-    ])
+    referencePage(
+      translate('titles.cones').replace(/ - Glazecalc$/, ''),
+      translate('meta.cones'),
+      '/cones',
+      [
+        { name: 'Glazecalc', path: '/' },
+        { name: translate('reference.cones.crumb'), path: '/cones' }
+      ],
+      'WebPage',
+      this.translated ? this.language : 'en'
+    )
   );
 }

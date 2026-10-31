@@ -56,12 +56,13 @@ export function saveRegion(region: string): void {
  * A standard record's words (a material's notes or hazards, the standard
  * advice) in the page's language, where there is a translation of exactly
  * them (client/public/i18n/records/, or the advice's alone in advice/,
- * scripts/advice-i18n.mjs); a potter's own records as written.
+ * scripts/advice-i18n.mjs, the materials' in materials/ and the cone charts'
+ * notes in cones/, scripts/material-i18n.mjs); a potter's own records as written.
  */
 export function standardText(
   record: { ownedBy?: string },
   text: string | undefined | null,
-  scope: 'records' | 'advice' = 'records'
+  scope: 'records' | 'advice' | 'materials' | 'cones' = 'records'
 ): string {
   if (!text) return '';
   return (record.ownedBy === 'Standard' && codedMessage(scope, textKey(text))) || text;

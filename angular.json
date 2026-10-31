@@ -30,8 +30,8 @@
                 "glob": "**/*",
                 "input": "client/public"
               },
-              // The advice page's translations, made from client/public/i18n/records at each build
-              // (scripts/advice-i18n.mjs).
+              // The advice page's, the materials' and the cone chart's translations, made from
+              // client/public/i18n/records at each build (scripts/advice-i18n.mjs, scripts/material-i18n.mjs).
               {
                 "glob": "**/*",
                 "input": "dist/i18n-generated",

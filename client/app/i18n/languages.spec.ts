@@ -250,7 +250,7 @@ describe('loading translation files', () => {
 
   it('never fetches the English of the messages that come with the code or the data, which the app never reads', async () => {
     const loader = TestBed.inject(FileLoader);
-    for (const scope of ['server', 'chemistry', 'records', 'safety', 'regions', 'advice']) {
+    for (const scope of ['server', 'chemistry', 'records', 'safety', 'regions', 'advice', 'materials', 'cones']) {
       expect(await firstValueFrom(loader.getTranslation(`${scope}/en`))).toEqual({});
     }
     httpMock().expectNone(() => true);

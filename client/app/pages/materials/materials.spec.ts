@@ -1,12 +1,17 @@
 import { TestBed } from '@angular/core/testing';
 import { ActivatedRoute, ActivatedRouteSnapshot, convertToParamMap, provideRouter } from '@angular/router';
+import { TranslocoService } from '@jsverse/transloco';
 import { of } from 'rxjs';
+import { textKey } from '../../../../lib/regions/languages';
+import { ORTON, SK } from '../../../../lib/cones';
+import { useCodedMessages } from '../../i18n/coded';
 import { PAGE_LANGUAGE } from '../../i18n/language';
 import { skippedHeadings, testProviders } from '../../testing/test-providers';
 import { ConesPage } from './cones-page';
 import { MaterialInfoPage, analysisOf, hasFlux } from './material-info-page';
 import { knownMaterial, materialDescriptionKey, materialOf, materialTitleParams } from './material-route';
 import { MaterialsPage } from './materials-page';
+import { REFERENCE_LANGUAGE_LIST } from './reference-text';
 import { STANDARD_MATERIALS, materialBySlug, materialNamed, materialPath, materialSlug } from './standard-materials';
 
 // The public pages for the standard materials and the cone chart: drawn from the data the app has,
@@ -164,6 +169,78 @@ describe('the page of a standard material', () => {
     );
   });
 
+  describe('in a language the reference pages are translated into', () => {
+    /** The page in German, with the translations given (materials/de, as the app loads them). */
+    const german = async (name: string, translations: Record<string, string>, translated = ['en', 'de']) => {
+      TestBed.resetTestingModule();
+      TestBed.configureTestingModule({
+        providers: [
+          ...testProviders(),
+          provideRouter([]),
+          { provide: PAGE_LANGUAGE, useValue: 'de' },
+          { provide: REFERENCE_LANGUAGE_LIST, useValue: translated },
+          { provide: ActivatedRoute, useValue: { data: of({ material: named(name) }) } }
+        ]
+      });
+      const transloco = TestBed.inject(TranslocoService);
+      transloco.setTranslation(
+        Object.fromEntries(Object.entries(translations).map(([text, de]) => ['materials.' + textKey(text), de])),
+        'de'
+      );
+      transloco.setActiveLang('de');
+      useCodedMessages(transloco);
+      const fixture = TestBed.createComponent(MaterialInfoPage);
+      await fixture.whenStable();
+      return fixture.nativeElement as HTMLElement;
+    };
+    afterEach(() => {
+      useCodedMessages(null);
+      TestBed.inject(TranslocoService).setActiveLang('en');
+    });
+
+    it('shows the notes and the hazards translated, with no notice that it is in English', async () => {
+      const frit = named('Ferro Frit 3134');
+      const page = await german('Ferro Frit 3134', {
+        [[frit.notes!].flat()[0]!]: 'Eine deutsche Anmerkung.',
+        [frit.hazards!]: 'Ungefährliches Glaspulver laut Sicherheitsdatenblatt'
+      });
+      expect(page.querySelector('#about')?.closest('section')?.textContent).toContain('Eine deutsche Anmerkung.');
+      expect(page.querySelector('#hazards')?.closest('section')?.textContent).toContain(
+        'Ungefährliches Glaspulver laut Sicherheitsdatenblatt'
+      );
+      expect(page.textContent).not.toContain('not translated yet');
+      // The record's trade names and formulas are exactly as written.
+      expect(page.querySelector('h1')?.textContent?.trim()).toBe('Ferro Frit 3134');
+      expect(page.querySelector('#about')?.closest('section')?.querySelector('dd[translate="no"]')).not.toBeNull();
+    });
+
+    it('shows a note with no translation in English, marked as such, beside the translated ones', async () => {
+      const frit = named('Ferro Frit 3134');
+      const page = await german('Ferro Frit 3134', { [frit.hazards!]: 'Ungefährlich' });
+      const notes = [...page.querySelectorAll('#about ~ p')];
+      const english = [frit.notes!].flat();
+      expect(notes.length).toBe(english.length);
+      for (const note of notes) expect(note.getAttribute('lang')).toBe('en');
+      expect(notes[0]?.textContent?.trim()).toBe(english[0]);
+      // The translated hazards are not marked.
+      expect(page.querySelector('#hazards')?.closest('section')?.querySelector('[lang="en"]')).toBeNull();
+    });
+
+    it('says "Theoretical formula" in German for the materials whose source it is', async () => {
+      const theoretical = STANDARD_MATERIALS.find((m) => m.source?.name === 'Theoretical formula')!;
+      const page = await german(theoretical.name, { 'Theoretical formula': 'Theoretische Formel' });
+      expect(page.querySelector('#about')?.closest('section')?.textContent).toContain('Theoretische Formel');
+    });
+
+    it('stays English with the notice in a language not among them, translations or not', async () => {
+      const frit = named('Ferro Frit 3134');
+      const page = await german('Ferro Frit 3134', { [frit.hazards!]: 'Ungefährlich' }, ['en']);
+      expect(page.textContent).toContain('This page is not translated yet, so it is shown in English.');
+      expect(page.querySelector('#hazards')?.closest('section')?.textContent).toContain(frit.hazards!);
+      expect(page.querySelector('[lang="en"]')).toBeNull();
+    });
+  });
+
   it('writes its data for search engines: a web page and its trail', async () => {
     await render('Ferro Frit 3134');
     const block = JSON.parse(document.head.querySelector('script[type="application/ld+json"]')!.textContent!);
@@ -200,6 +277,25 @@ describe('the list of standard materials', () => {
     // The safety guides, the signed-in page of your own materials and the cone chart.
     const others = [...page.querySelectorAll<HTMLAnchorElement>(':scope > p a')].map((a) => a.getAttribute('href'));
     expect(others).toEqual(['/guides/safe-mixing', '/guides/home-safety', '/material', '/cones']);
+  });
+
+  it('has the notice that it is in English only in a language it is not translated into', async () => {
+    const notice = async (translated: string[]) => {
+      TestBed.resetTestingModule();
+      TestBed.configureTestingModule({
+        providers: [
+          ...testProviders(),
+          provideRouter([]),
+          { provide: PAGE_LANGUAGE, useValue: 'de' },
+          { provide: REFERENCE_LANGUAGE_LIST, useValue: translated }
+        ]
+      });
+      const fixture = TestBed.createComponent(MaterialsPage);
+      await fixture.whenStable();
+      return (fixture.nativeElement as HTMLElement).querySelector('.guide-note') !== null;
+    };
+    expect(await notice(['en'])).toBe(true);
+    expect(await notice(['en', 'de'])).toBe(false);
   });
 });
 
@@ -287,6 +383,62 @@ describe('the cone chart', () => {
     expect(page.querySelectorAll('#orton ~ .guide-table-scroll')[1]?.querySelector('caption')?.textContent).toContain(
       'temperatures in °F'
     );
+  });
+
+  describe('in German', () => {
+    const notes = [SK.note, ORTON.chart.note, ORTON.published.note];
+    afterEach(() => {
+      useCodedMessages(null);
+      TestBed.inject(TranslocoService).setActiveLang('en');
+    });
+
+    const german = async (translated: string[], translations: Record<string, string>) => {
+      TestBed.resetTestingModule();
+      TestBed.configureTestingModule({
+        providers: [
+          ...testProviders(),
+          provideRouter([]),
+          { provide: PAGE_LANGUAGE, useValue: 'de' },
+          { provide: REFERENCE_LANGUAGE_LIST, useValue: translated }
+        ]
+      });
+      const transloco = TestBed.inject(TranslocoService);
+      transloco.setTranslation(
+        Object.fromEntries(Object.entries(translations).map(([text, de]) => ['cones.' + textKey(text), de])),
+        'de'
+      );
+      transloco.setActiveLang('de');
+      useCodedMessages(transloco);
+      const fixture = TestBed.createComponent(ConesPage);
+      await fixture.whenStable();
+      return fixture.nativeElement as HTMLElement;
+    };
+
+    it('shows the charts’ notes translated, each only for exactly the English it was made from', async () => {
+      const page = await german(['en', 'de'], {
+        [notes[0]!]: 'Setzen Sie einen Kontrollkegel.',
+        [notes[1]!]: 'Der ältere Orton-Chart; Kontrollkegel setzen.'
+      });
+      const text = page.textContent;
+      expect(text).toContain('Setzen Sie einen Kontrollkegel.');
+      expect(text).toContain('Der ältere Orton-Chart; Kontrollkegel setzen.');
+      expect(text).not.toContain('not translated yet');
+      // The third has no translation: its English stands, and is marked as English.
+      const english = [...page.querySelectorAll('[lang="en"]')].map((el) => el.textContent?.trim());
+      expect(english).toEqual([ORTON.published.note]);
+      // Named at its own address, in German, for search engines.
+      const block = JSON.parse(document.head.querySelector('script[type="application/ld+json"]')!.textContent!);
+      expect(block['@graph'][0]).toMatchObject({ inLanguage: 'de', url: 'https://glazecalcapp.com/de/cones' });
+      expect(block['@graph'][1].itemListElement[0].item).toBe('https://glazecalcapp.com/de/');
+    });
+
+    it('shows the English with the notice where the page is not among the translated languages', async () => {
+      const page = await german(['en'], { [notes[0]!]: 'Setzen Sie einen Kontrollkegel.' });
+      expect(page.textContent).toContain('This page is not translated yet, so it is shown in English.');
+      expect(page.textContent).toContain(SK.note);
+      expect(page.textContent).not.toContain('Setzen Sie');
+      expect(page.querySelector('[lang="en"]')).toBeNull();
+    });
   });
 
   it('links the firing guide, and writes its data for search engines', async () => {
