@@ -1,0 +1,152 @@
+{
+  "home": {
+    "title": "Tu cuaderno de taller",
+    "signedInAs": "Iniciaste sesión como {email}.",
+    "trying": "Estás probando Glazecalc como {name}. Empieza por una receta.",
+    "welcomeBack": "Retoma donde lo dejaste.",
+    "welcome": {
+      "heading": "Te damos la bienvenida a Glazecalc",
+      "text": "Tu cuaderno está listo. Un buen primer paso: escribe un esmalte que ya prepares, con sus materiales y cantidades, y mira su fórmula unitaria.",
+      "firstRecipe": "Empezar tu primera receta",
+      "confirmHeading": "Confirmar tu correo",
+      "confirm": "Confirma tu correo: enviamos un enlace a {email}. El inicio de sesión en dos pasos lo necesita. La <account>página de tu cuenta</account> puede enviarlo de nuevo.",
+      "confirmText": "Enviamos un enlace a {email}. Ábrelo para confirmar que la dirección es tuya: el inicio de sesión en dos pasos lo necesita. La <account>página de tu cuenta</account> puede enviarlo de nuevo."
+    },
+    "sections": {
+      "recipe": {
+        "title": "Recetas",
+        "text": "Arma un esmalte a partir de materiales y cantidades, mira su fórmula unitaria y guárdalo."
+      },
+      "import": {
+        "title": "Pegar recetas",
+        "text": "Pega recetas de un sitio web, una hoja de cálculo o unas notas, revisa lo que se leyó y guárdalas."
+      },
+      "blends": {
+        "title": "Mezclas para probetas",
+        "text": "Mezcla dos, tres o cuatro de tus recetas en probetas numeradas, con lo que hay que pesar para cada una."
+      },
+      "material": {
+        "title": "Materiales",
+        "text": "Agrega tus propias materias primas, a partir de una fórmula química o del análisis de un proveedor."
+      },
+      "additive": {
+        "title": "Aditivos y colorantes",
+        "text": "Guarda los colorantes y opacificantes que agregas sobre un esmalte base."
+      },
+      "firing": {
+        "title": "Registros de cocción",
+        "text": "Anota las horas, las temperaturas y los conos de cada cocción."
+      },
+      "notes": {
+        "title": "Notas",
+        "text": "Guarda los resultados de tus pruebas y cualquier otra cosa que valga la pena recordar."
+      },
+      "advice": {
+        "title": "Consejos sobre esmaltes",
+        "text": "Consejos para mezclar, esmaltar y cocer, y tus propios consejos."
+      },
+      "guides": {
+        "title": "Guías",
+        "text": "Desde qué es un esmalte hasta cocerlo, y cómo mantener a salvo a todas las personas por el camino."
+      },
+      "trash": {
+        "title": "Papelera",
+        "text": "Recupera lo que quitaste en los últimos 30 días."
+      },
+      "account": {
+        "title": "Cuenta y configuración",
+        "text": "Configuración, tu contraseña, el inicio de sesión en dos pasos y una descarga de todo lo que guardas aquí."
+      }
+    },
+    "newHere": "¿Las fórmulas unitarias son nuevas para ti? La <advice>página de consejos</advice> explica lo básico, y la <about>página Acerca de</about> cuenta cómo funciona Glazecalc."
+  },
+  "firing": {
+    "title": "Registros de cocción",
+    "lead": "Anota cada cocción: horas, temperaturas, conos y notas sobre el horno.",
+    "newHeading": "Una cocción nueva",
+    "titleLabel": "Título",
+    "kiln": "Horno",
+    "date": "Fecha",
+    "notes": "Notas",
+    "fieldSelect": "Campos que registrar",
+    "addField": "Agregar el campo",
+    "included": "Campos de este registro",
+    "moveLeft": "Mover el campo a la izquierda",
+    "moveRight": "Mover el campo a la derecha",
+    "removeField": "Quitar el campo",
+    "addRow": "Agregar una fila a la tabla de cocción",
+    "addRowWhy": "Agrega primero un campo.",
+    "recordHeading": "Registrar la cocción",
+    "rowActions": "Acciones de la fila",
+    "cell": "{field}, fila {row}",
+    "removeRow": "Quitar la fila",
+    "save": "Guardar",
+    "storedHeading": "Mis cocciones guardadas",
+    "noneSaved": "Todavía ninguna. Las cocciones guardadas aparecen aquí.",
+    "storedIn": "Cocida en {kiln} el {date}.",
+    "storedOn": "Cocida el {date}.",
+    "storedNotes": "Notas: {notes}",
+    "titleMissing": "Ponle un título a la cocción.",
+    "fieldsMissing": "Agrega al menos un campo que registrar, como {example}.",
+    "chooseField": "Elige un campo para agregar y luego usa Agregar el campo.",
+    "fetchFailed": "Hubo un error al obtener los registros de cocción.",
+    "saved": "Listo. Se agregó el registro de cocción al servidor.",
+    "saveFailed": "Error: falló la solicitud al servidor.",
+    "recipesHeading": "Recetas cocidas en esta cocción",
+    "noRecipes": "Todavía no hay recetas vinculadas.",
+    "recipesFailed": "No se pudieron obtener tus recetas, así que ahora no se puede vincular ninguna.",
+    "pickRecipe": "Una receta cocida en esta cocción",
+    "linkRecipe": "Vincular la receta",
+    "unlink": "Desvincular",
+    "unlinkRecipe": "Desvincular {title}",
+    "linkFailed": "No se pudo guardar el vínculo."
+  },
+  "notes": {
+    "title": "Notas",
+    "lead": "Cualquier otra cosa sobre tus esmaltes que valga la pena recordar.",
+    "newHeading": "Una nota nueva",
+    "titleLabel": "Título",
+    "content": "Nota",
+    "save": "Guardar",
+    "mineHeading": "Mis notas guardadas",
+    "noneSaved": "Todavía ninguna. Las notas guardadas aparecen aquí.",
+    "titleMissing": "Ponle un título a la nota.",
+    "contentMissing": "Escribe la nota.",
+    "untitled": "Nota sin título",
+    "fetchFailed": "Hubo un error al obtener las notas.",
+    "saved": "Listo. Se agregó la nota al servidor.",
+    "saveFailed": "Error: falló la solicitud al servidor."
+  },
+  "trash": {
+    "title": "Papelera",
+    "lead": "Lo que quitas (recetas, materiales, aditivos, notas, registros de cocción y consejos) espera aquí 30 días. Devuélvelo a su lugar o elimínalo para siempre.",
+    "listHeading": "En la Papelera",
+    "none": "La Papelera está vacía.",
+    "untitled": "Sin título",
+    "kinds": {
+      "recipes": "Receta",
+      "materials": "Material",
+      "additives": "Aditivo",
+      "notes": "Nota",
+      "firing": "Registro de cocción",
+      "advice": "Consejo",
+      "other": "Registro"
+    },
+    "removedOn": "Quitado el {date}",
+    "goesOn": "Se elimina para siempre el {date}",
+    "byApp": "Quitado por una app conectada",
+    "putBack": "Devolver",
+    "putBackName": "Devolver {name}",
+    "restored": "Se devolvió “{name}” a su lugar.",
+    "restoredAlready": "“{name}” ya se había devuelto.",
+    "restoreFailed": "No se pudo devolver “{name}”. Inténtalo de nuevo.",
+    "deleted": "Se eliminó “{name}” para siempre.",
+    "empty": "Vaciar la Papelera",
+    "emptyQuestion": "¿Quieres eliminar para siempre {count, plural, one {el # registro} many {los # registros} other {los # registros}} de la Papelera? No se puede deshacer.",
+    "emptyYes": "Sí, vaciarla",
+    "emptying": "Vaciando...",
+    "emptied": "La Papelera está vacía.",
+    "emptyFailed": "No se pudo vaciar la Papelera. Inténtalo de nuevo.",
+    "fetchFailed": "No se pudo cargar la Papelera. Inténtalo de nuevo."
+  }
+}
