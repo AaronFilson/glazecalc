@@ -277,3 +277,25 @@ every language in lib/regions/languages.js is offered. What the wave taught:
 Still open: native reviewers for both (the Native check lists), Sinhala's word for a browser cookie (කුකී is also a
 biscuit; the pages add "(cookie)" at first use), Sinhala's one word for both "inhalable" and "respirable", and the
 iPhone font check (docs/i18n-plan.md, "Fonts").
+
+## Latin America, wave L1: Latin American Spanish (live) and Brazilian Portuguese (translated)
+
+Round 10, on the same rules (style sheets with sourced glossaries, 9 translation parts and 6 reviews in groups per
+language, a consistency pass, and a blind back-translation in two halves, guides and warnings; the plan and log are in
+scratch/round10/c-l1/ in the main checkout). `es-419` (Español (Latinoamérica)) went live with `go-live.mjs es-419` on
+2026-10-31: one Spanish for Latin America, written for Mexico first, the Southern Cone's forms in its Notes, built on
+es.md with every change listed (docs/translations/es-419.md). Mexico, Argentina and Chile read it; Spain keeps `es`;
+Puerto Rico takes the United States' data. `pt-BR` is translated (docs/translations/pt-BR.md) but not live: the owner
+reads its sign-up notice first, then `go-live.mjs pt-BR` and Brazil's region list. What the wave taught:
+
+- **"Should" became "must" 16 times.** Translators turned advice into orders in 16 places, which the reviews put back;
+  name the slip in the translate and review prompts.
+- **The sign-up notice came out garbled** and was rewritten; read it whole, beside the English, before go-live, as
+  the owner does for pt-BR.
+- **"Flow" was pt-BR's running defect**, translated by turns as a glaze's melt flow and a liquid's stream; settle the
+  word in the glossary first and sweep the files for it in the consistency pass.
+- **Name the local law's terms.** es-419 calls safety data sheets HDS (hojas de datos de seguridad), as Mexico's
+  NOM-018-STPS-2015 does, not Spain's FDS.
+
+Still open: native reviewers for both (the Native check rows), the owner's review of pt-BR's notice, and es-419's
+decimal point in text against Argentina's and Chile's comma (scratch/round10/c-l1/plan.md, owner question 1).

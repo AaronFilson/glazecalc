@@ -19,6 +19,7 @@ describe('the languages in groups', () => {
       '',
       'picker.groups.eastAsia',
       'picker.groups.europe',
+      'picker.groups.latinAmerica',
       'picker.groups.middleEastNorthAfrica',
       'picker.groups.southAsia',
       'picker.groups.southeastAsia'
@@ -27,9 +28,12 @@ describe('the languages in groups', () => {
     // Korean, Japanese and the Chinese: by their English names, not by script or code.
     expect(sections[1]!.codes).toEqual(['ja', 'ko', 'zh-Hans', 'zh-Hant']);
     expect(sections[2]!.codes.slice(0, 4)).toEqual(['bg', 'hr', 'cs', 'da']);
-    expect(sections[3]!.codes).toEqual(['ar', 'tr']);
-    expect(sections[4]!.codes).toEqual(['bn', 'gu', 'hi', 'kn', 'ml', 'mr', 'ne', 'or', 'pa', 'si', 'ta', 'te', 'ur']);
-    expect(sections[5]!.codes).toEqual(['id', 'th', 'vi']);
+    // Latin American Spanish (wave L1); Spain's Spanish stays in Europe's group.
+    expect(sections[3]!.codes).toEqual(['es-419']);
+    expect(sections[2]!.codes).toContain('es');
+    expect(sections[4]!.codes).toEqual(['ar', 'tr']);
+    expect(sections[5]!.codes).toEqual(['bn', 'gu', 'hi', 'kn', 'ml', 'mr', 'ne', 'or', 'pa', 'si', 'ta', 'te', 'ur']);
+    expect(sections[6]!.codes).toEqual(['id', 'th', 'vi']);
   });
 
   it('lists every language offered once, and a group only where there is a language in it', () => {
@@ -63,8 +67,9 @@ describe('the languages in groups', () => {
     expect(found('german')).toEqual(['de']);
     expect(found('deu')).toEqual(['de']);
     expect(found('Deutsch')).toEqual(['de']);
-    expect(found('espanol')).toEqual(['es']);
-    expect(found('spanish')).toEqual(['es']);
+    expect(found('espanol')).toEqual(['es', 'es-419']);
+    expect(found('spanish')).toEqual(['es', 'es-419']);
+    expect(found('latinoam')).toEqual(['es-419']);
     expect(found('turkce')).toEqual(['tr']);
     expect(found('bahasa')).toEqual(['id']);
     expect(found('indonesian')).toEqual(['id']);

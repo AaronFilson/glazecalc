@@ -126,7 +126,14 @@ describe('static pages', () => {
     const nav = fixture.nativeElement.querySelector('nav[aria-labelledby="about-languages-heading"]') as HTMLElement;
     expect(nav.querySelectorAll('li a')).toHaveLength(many.length);
     const names = [...nav.querySelectorAll('.language-group-name')].map((p) => p.textContent);
-    expect(names).toEqual(['East Asia', 'Europe', 'Middle East and North Africa', 'South Asia', 'Southeast Asia']);
+    expect(names).toEqual([
+      'East Asia',
+      'Europe',
+      'Latin America',
+      'Middle East and North Africa',
+      'South Asia',
+      'Southeast Asia'
+    ]);
     // Each list is named by its heading, for a screen reader; English's has none.
     const lists = [...nav.querySelectorAll('ul')];
     expect(
@@ -135,7 +142,15 @@ describe('static pages', () => {
           ul.getAttribute('aria-labelledby') &&
           document.getElementById(ul.getAttribute('aria-labelledby')!)?.textContent
       )
-    ).toEqual([null, 'East Asia', 'Europe', 'Middle East and North Africa', 'South Asia', 'Southeast Asia']);
+    ).toEqual([
+      null,
+      'East Asia',
+      'Europe',
+      'Latin America',
+      'Middle East and North Africa',
+      'South Asia',
+      'Southeast Asia'
+    ]);
     // No heading level is added to the page's outline (a heading after the h2 would be one more to skip).
     expect(nav.querySelectorAll('h1, h2, h3, h4, h5, h6')).toHaveLength(0);
   });

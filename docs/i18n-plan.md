@@ -579,6 +579,13 @@ and Bengali; units in Latin, left to right; Noto Nastaliq Urdu served for Urdu p
   (0–9 whatever is chosen) and Telugu's own digits are grouped in threes in CLDR 48, and Sinhala's long date uses the month
   name වප් for October: both for a native check.
 
+- **Latin America, wave L1** (round 10, scratch/round10/c-l1/plan.md): Latin American Spanish (`es-419`, Mexico first)
+  is offered, and Mexico, Argentina and Chile read it; Spain keeps `es`. A browser's Spanish tag for a country of UN
+  M49 region 419 (es-MX, es-AR …) picks es-419. Translated text follows CLDR es-419's decimal point, while numbers
+  formatted for Argentina or Chile take their comma. Brazilian Portuguese (`pt-BR`) is translated but not yet offered:
+  the owner reads its sign-up notice first; Brazil keeps Portugal's Portuguese until then. Native reviewers for both
+  are wanted (the Native check rows in docs/translations/es-419.md, pt-BR.md).
+
 ## What stays the same
 
 - English is the source and the fallback.

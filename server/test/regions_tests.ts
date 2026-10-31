@@ -26,9 +26,11 @@ describe('regions', () => {
       expect(['C', 'F']).to.include(region.temperature);
       expect(['orton', 'temperature', 'sk']).to.include(region.cones);
       expect(['US', 'UK', 'EU', 'AU']).to.include(region.library);
-      // Each language-region pair is a locale the runtime knows how to format.
+      // Each language-region pair is a locale the runtime knows how to format (es-419 in Mexico: es-MX).
       for (const language of region.languages) {
-        expect(() => new Intl.NumberFormat(language + '-' + region.code), region.code).not.to.throw();
+        const locale = regions.formatLocaleFor(language, region.code, 'auto');
+        expect(() => new Intl.NumberFormat(locale), region.code).not.to.throw();
+        expect(locale, region.code).to.include('-' + region.code + '-u-');
       }
     }
     // Ireland's shops sell the UK's materials, so it lists the UK's, though it is in the EU.
@@ -714,7 +716,8 @@ describe('Sri Lanka and Nepal, as added', () => {
   });
 });
 
-// Latin America and Africa's first regions (round 10, L0), frozen as added on 2026-10-30.
+// Latin America and Africa's first regions (round 10, L0), frozen as added on 2026-10-30; refrozen on 2026-10-31,
+// when Mexico, Argentina and Chile took Latin American Spanish (wave L1).
 const LATAM_AFRICA_L0 = ['MX', 'BR', 'AR', 'CL', 'ZA', 'KE', 'GH'];
 
 describe('Latin America and Africa, as added', () => {
@@ -729,7 +732,7 @@ describe('Latin America and Africa, as added', () => {
       suppliers.SUPPLIERS[code] ?? null
     ]);
     const hash = crypto.createHash('sha256').update(JSON.stringify(data)).digest('hex');
-    expect(hash).to.equal('9d83dda874ecb1f0ecc6fea73e9867cc1f54d24ce4a98440b02e669729673383');
+    expect(hash).to.equal('28fbfa5e55dfa7b9063fb1395a2b02a1b717c29b3c981257e97980255641c08d');
   });
 
   it('are, with the earlier snapshots, every region', () => {
@@ -1833,10 +1836,11 @@ describe('Latin America and Africa', () => {
 
   it('fire by Orton cones in °C in Mexico, Brazil and South Africa, by temperature elsewhere, with the US library', () => {
     for (const [code, name, languages, cones, currency, group] of [
-      ['MX', 'Mexico', ['es'], 'orton', 'MXN', 'americas'],
+      // Wave L1: Mexico, Argentina and Chile read Latin American Spanish; Brazil waits for pt-BR.
+      ['MX', 'Mexico', ['es-419'], 'orton', 'MXN', 'americas'],
       ['BR', 'Brazil', ['pt'], 'orton', 'BRL', 'americas'],
-      ['AR', 'Argentina', ['es'], 'temperature', 'ARS', 'americas'],
-      ['CL', 'Chile', ['es'], 'temperature', 'CLP', 'americas'],
+      ['AR', 'Argentina', ['es-419'], 'temperature', 'ARS', 'americas'],
+      ['CL', 'Chile', ['es-419'], 'temperature', 'CLP', 'americas'],
       ['ZA', 'South Africa', ['en', 'af', 'zu'], 'orton', 'ZAR', 'africa'],
       ['KE', 'Kenya', ['en', 'sw'], 'temperature', 'KES', 'africa'],
       ['GH', 'Ghana', ['en'], 'temperature', 'GHS', 'africa']
@@ -1880,11 +1884,13 @@ describe('Latin America and Africa', () => {
     expect(regions.formatLocaleFor('en-XA', '', 'auto')).to.equal('en-u-ca-gregory-nu-latn');
   });
 
-  it('knows eleven languages, not offered, grouped, six of Africa and Quechua with the plain notice', () => {
+  it('knows eleven languages, grouped, Latin American Spanish offered since wave L1, six of Africa and Quechua with the plain notice', () => {
     for (const code of NEW_LANGUAGES) {
       const language = languages.languageFor(code)!;
-      expect(language, code).to.include({ code, dir: 'ltr', live: false });
-      expect(languages.LIVE_LANGUAGES, code).not.to.include(code);
+      const live = code === 'es-419';
+      expect(language, code).to.include({ code, dir: 'ltr', live });
+      if (live) expect(languages.LIVE_LANGUAGES, code).to.include(code);
+      else expect(languages.LIVE_LANGUAGES, code).not.to.include(code);
       expect(groups.languageGroup(code), code).to.equal(
         ['pt-BR', 'es-419', 'qu'].includes(code) ? 'latin-america' : 'africa'
       );

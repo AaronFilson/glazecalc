@@ -338,7 +338,7 @@
       "sg": {
         "label": "Gravedad específica",
         "saved": "Guardado: densidad del esmalte como gravedad específica.",
-        "example": "SG 1.45"
+        "example": "1.45"
       },
       "baume": {
         "label": "Grados Baumé, de un hidrómetro",

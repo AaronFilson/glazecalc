@@ -474,6 +474,16 @@ export const RESET: Record<string, Email> = {
       'සබැඳිය ක්‍රියා කරන්නේ එක් වරක් පමණි. ඔබ මෙය ඉල්ලුවේ නැත්නම්, මෙම ඊමේල් පණිවිඩය නොසලකා හරින්න; ඔබේ මුරපදය වෙනස් නොවේ.\n' +
       '\n' +
       '-- \nGlazecalc, {app}\n'
+  },
+  'es-419': {
+    subject: 'Restablece tu contraseña de Glazecalc',
+    text:
+      'Alguien (esperamos que tú) pidió restablecer la contraseña de la cuenta de Glazecalc {account}.\n\n' +
+      'Para elegir una contraseña nueva, abre este enlace en los próximos {minutes} minutos:\n\n' +
+      '{link}\n\n' +
+      'El enlace funciona una sola vez. Si no pediste esto, ignora este correo; tu contraseña seguirá igual.\n' +
+      '\n' +
+      '-- \nGlazecalc, {app}\n'
   }
 };
 
@@ -843,6 +853,14 @@ export const CHANGED: Record<string, Email> = {
     text:
       '{account} නම් Glazecalc ගිණුමේ මුරපදය දැන් වෙනස් කෙරිණි, පුරනය වී සිටි සෑම උපාංගයක්ම වරනය කර ඇත.\n\n' +
       'මෙය ඔබ නම්, වෙනත් කිසිවක් කිරීමට නැත. එසේ නොවේ නම්, වහාම ඔබේ මුරපදය මෙතැනින් යළි සකසන්න: {forgot}\n' +
+      '\n' +
+      '-- \nGlazecalc, {app}\n'
+  },
+  'es-419': {
+    subject: 'Se cambió tu contraseña de Glazecalc',
+    text:
+      'La contraseña de la cuenta de Glazecalc {account} se acaba de cambiar, y se cerró la sesión en todos los dispositivos donde estaba iniciada.\n\n' +
+      'Si fuiste tú, no tienes que hacer nada más. Si no, restablece tu contraseña de inmediato en {forgot}\n' +
       '\n' +
       '-- \nGlazecalc, {app}\n'
   }
