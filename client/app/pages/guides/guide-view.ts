@@ -3,7 +3,7 @@ import { Component, SecurityContext, computed, forwardRef, inject, input } from 
 import { DomSanitizer } from '@angular/platform-browser';
 import { TranslocoDirective, translate } from '@jsverse/transloco';
 import { Router, RouterLink } from '@angular/router';
-import { baseLanguage, languageFor } from '../../../../lib/regions/languages';
+import { REFERENCE_LANGUAGES, baseLanguage, languageFor } from '../../../../lib/regions/languages';
 import { LocaleService } from '../../core/locale.service';
 import { PreferencesService } from '../../core/preferences.service';
 import { PAGE_LANGUAGE } from '../../i18n/language';
@@ -70,6 +70,8 @@ export class GuideView implements InlineContext {
   );
   private readonly language = inject(PAGE_LANGUAGE);
   protected readonly pageLanguage = this.language;
+  /** Whether the reference pages the guide points to are translated into the page's language. */
+  protected readonly referenceOffered = REFERENCE_LANGUAGES.includes(this.language);
   private readonly pathname = inject(DOCUMENT).location.pathname;
   /** What search engines read about the guide (shared/structured-data.ts). */
   protected readonly structured = computed(() => {

@@ -8,19 +8,23 @@
 // (isAppOnlyPage). hreflang is the code in the address, script and
 // all (zh-Hans), which Google reads. A page in English only (ENGLISH_ONLY_PAGES) has one
 // address for search engines, the English: every language's copy names it as
-// canonical, the others are noindex, and none has hreflang.
+// canonical, the others are noindex, and none has hreflang. So has a reference
+// page (the cone chart, the materials) in a language not yet translated
+// (REFERENCE_LANGUAGES); in the others it has hreflang among those alone.
 import languages from '../../lib/regions/languages.js';
 import type { Language } from '../../lib/regions/languages.js';
 import {
   ENGLISH_ONLY_PAGES,
   MATERIAL_PAGES,
   PUBLIC_PAGES,
+  REFERENCE_PAGES,
+  englishOnlyIn,
   prerenderLanguages,
   prerenderedFile
 } from '../../lib/pages.js';
 import { labelShown } from './site.ts';
 
-export { ENGLISH_ONLY_PAGES, MATERIAL_PAGES, PUBLIC_PAGES, prerenderLanguages };
+export { ENGLISH_ONLY_PAGES, MATERIAL_PAGES, PUBLIC_PAGES, REFERENCE_PAGES, prerenderLanguages };
 
 /**
  * Pages that anyone can open but no search engine may index, nor any Referer
@@ -47,13 +51,20 @@ export const ID_PAGES: Record<string, RegExp> = {
 const isIdPage = (page: string): boolean => Object.values(ID_PAGES).some((pattern) => pattern.test(page));
 
 /**
- * Whether an address is a public page written in English only (ENGLISH_ONLY_PAGES),
- * in any language: /de/guides/learn-with-john-britt is. Its one address for
- * search engines is the English; the other languages' copies are noindex, with
- * no hreflang, and only the English is in the sitemap.
+ * Whether an address is a public page that search engines have in English only
+ * (ENGLISH_ONLY_PAGES; a reference page in a language not yet translated):
+ * /de/guides/learn-with-john-britt is. Its one address for search engines is
+ * the English; the other languages' copies are noindex, with no hreflang, and
+ * only the English is in the sitemap.
  */
-export const isEnglishOnlyPage = (pathname: string): boolean =>
-  ENGLISH_ONLY_PAGES.includes(languages.pagePath(pathname));
+export const isEnglishOnlyPage = (
+  pathname: string,
+  reference: readonly string[] = languages.REFERENCE_LANGUAGES
+): boolean => englishOnlyIn(languages.pagePath(pathname), languages.languageOfPath(pathname), reference);
+
+/** The languages a page is offered in, of the live ones: a reference page only in those translated. */
+const offeredIn = (page: string, live: readonly string[], reference: readonly string[]): readonly string[] =>
+  REFERENCE_PAGES.includes(page) ? live.filter((code) => reference.includes(code)) : live;
 
 /** Whether an address is one of PRIVATE_PAGES or ID_PAGES, in any language: /de/shared is. */
 export const isPrivatePage = (pathname: string): boolean => {
@@ -156,13 +167,18 @@ export function withoutSlash(pathname: string): string | null {
 /**
  * The file a page was prerendered to, from its address (de/guides/firing.html),
  * or null for an address that has none: not a public page, in a language not
- * offered yet, or a reference page (the cone chart, the materials) in a language
- * other than English, which the build does not render.
+ * offered yet, a material's page in a language other than English, or a
+ * reference page (the cone chart, the materials) in a language not translated
+ * yet, which the build does not render.
  */
-export function prerenderedKey(pathname: string, live: readonly string[] = languages.LIVE_LANGUAGES): string | null {
+export function prerenderedKey(
+  pathname: string,
+  live: readonly string[] = languages.LIVE_LANGUAGES,
+  reference: readonly string[] = languages.REFERENCE_LANGUAGES
+): string | null {
   const code = languages.languageOfPath(pathname);
   const page = languages.pagePath(pathname);
-  return isPage(pathname) && PUBLIC_PAGES.includes(page) && prerenderLanguages(page, live).includes(code)
+  return isPage(pathname) && PUBLIC_PAGES.includes(page) && prerenderLanguages(page, live, reference).includes(code)
     ? prerenderedFile(code, page)
     : null;
 }
@@ -222,7 +238,9 @@ const labelBanner = (label: string): string =>
  * translated. An address that is no page gets neither a canonical address
  * nor other languages. A prerendered page has its own title and description,
  * which `text` does not replace. `label` (SITE_LABEL, "Staging") adds a thin
- * banner; empty, as in production, the page is exactly as before.
+ * banner; empty, as in production, the page is exactly as before. `reference`
+ * (REFERENCE_LANGUAGES) are the languages the cone chart and the materials are
+ * translated into.
  */
 export function pageHtml(
   html: string,
@@ -231,7 +249,8 @@ export function pageHtml(
   text: PageText = {},
   live: readonly string[] = languages.LIVE_LANGUAGES,
   prerendered = false,
-  label: string = labelShown()
+  label: string = labelShown(),
+  reference: readonly string[] = languages.REFERENCE_LANGUAGES
 ): string {
   const code = languages.languageOfPath(pathname);
   const language = languages.languageFor(code) as Language;
@@ -246,7 +265,9 @@ export function pageHtml(
     head.push('<meta name="robots" content="noindex, nofollow" />');
     head.push('<meta name="referrer" content="no-referrer" />');
   }
-  const englishOnly = listed && isEnglishOnlyPage(pathname);
+  const englishOnly = listed && isEnglishOnlyPage(pathname, reference);
+  // The languages this page is offered in: the live ones, or for a reference page those translated.
+  const offered = offeredIn(page, live, reference);
   if (englishOnly) {
     // One page, in English, at one address: each language's copy points to it and stays out of the index.
     head.push(`<link rel="canonical" href="${attribute(addressIn(site, 'en', page))}" />`);
@@ -255,8 +276,8 @@ export function pageHtml(
     head.push(`<link rel="canonical" href="${attribute(here)}" />`);
     if (!live.includes(code)) {
       head.push('<meta name="robots" content="noindex" />');
-    } else if (live.length > 1) {
-      for (const other of live) {
+    } else if (offered.length > 1) {
+      for (const other of offered) {
         head.push(`<link rel="alternate" hreflang="${other}" href="${attribute(addressIn(site, other, page))}" />`);
       }
       head.push(`<link rel="alternate" hreflang="x-default" href="${attribute(addressIn(site, 'en', page))}" />`);
@@ -267,7 +288,7 @@ export function pageHtml(
     head.push(`<meta property="og:locale" content="${ogLocale(code)}" />`);
   } else if (listed && !englishOnly && live.includes(code)) {
     head.push(`<meta property="og:locale" content="${ogLocale(code)}" />`);
-    for (const other of live.filter((l) => l !== code)) {
+    for (const other of offered.filter((l) => l !== code)) {
       head.push(`<meta property="og:locale:alternate" content="${ogLocale(other)}" />`);
     }
   }
@@ -292,24 +313,30 @@ export function pageHtml(
 /**
  * The sitemap: each public page in each language offered, with its other
  * languages beside it; a page in English only, at its English address alone.
+ * A reference page is listed in the languages it is translated into
+ * (`reference`) and no others.
  */
-export function sitemap(site: string, live: readonly string[] = languages.LIVE_LANGUAGES): string {
-  const entries = PUBLIC_PAGES.flatMap((page) =>
-    ENGLISH_ONLY_PAGES.includes(page)
-      ? [`  <url><loc>${attribute(addressIn(site, 'en', page))}</loc></url>`]
-      : live.map((code) => {
-          const others =
-            live.length > 1
-              ? live
-                  .map(
-                    (other) =>
-                      `<xhtml:link rel="alternate" hreflang="${other}" href="${attribute(addressIn(site, other, page))}"/>`
-                  )
-                  .join('')
-              : '';
-          return `  <url><loc>${attribute(addressIn(site, code, page))}</loc>${others}</url>`;
-        })
-  );
+export function sitemap(
+  site: string,
+  live: readonly string[] = languages.LIVE_LANGUAGES,
+  reference: readonly string[] = languages.REFERENCE_LANGUAGES
+): string {
+  const entries = PUBLIC_PAGES.flatMap((page) => {
+    if (ENGLISH_ONLY_PAGES.includes(page)) return [`  <url><loc>${attribute(addressIn(site, 'en', page))}</loc></url>`];
+    const offered = offeredIn(page, live, reference);
+    return offered.map((code) => {
+      const others =
+        offered.length > 1
+          ? offered
+              .map(
+                (other) =>
+                  `<xhtml:link rel="alternate" hreflang="${other}" href="${attribute(addressIn(site, other, page))}"/>`
+              )
+              .join('')
+          : '';
+      return `  <url><loc>${attribute(addressIn(site, code, page))}</loc>${others}</url>`;
+    });
+  });
   return [
     '<?xml version="1.0" encoding="UTF-8"?>',
     '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">',

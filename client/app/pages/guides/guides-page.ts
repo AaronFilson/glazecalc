@@ -2,6 +2,7 @@ import { Component, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { TranslocoDirective } from '@jsverse/transloco';
 import { marker } from '@jsverse/transloco-keys-manager/marker';
+import { REFERENCE_LANGUAGES } from '../../../../lib/regions/languages';
 import { PAGE_LANGUAGE } from '../../i18n/language';
 import { PageHeader } from '../../shared/page-header';
 
@@ -40,9 +41,9 @@ export const GUIDES = [
 ] as const;
 
 /**
- * The reference pages guides point to (the cone chart, the standard materials): in English only
- * (lib/pages.js, ENGLISH_ONLY_PAGES), so a page in another language does not offer them. A guide names
- * the ones it wants in its route's data: { related: ['cones'] }.
+ * The reference pages guides point to (the cone chart, the standard materials): a guide in a language they
+ * are not translated into (REFERENCE_LANGUAGES) does not offer them. A guide names the ones it wants in its
+ * route's data: { related: ['cones'] }.
  */
 export const REFERENCE_PAGES = {
   cones: {
@@ -125,6 +126,6 @@ export type ReferencePage = keyof typeof REFERENCE_PAGES;
 export class GuidesPage {
   protected readonly guides = GUIDES;
   protected readonly reference = Object.values(REFERENCE_PAGES);
-  /** The reference pages are in English only: offered on the English page. */
-  protected readonly english = inject(PAGE_LANGUAGE) === 'en';
+  /** The reference pages are offered in the languages they are translated into (English is the first). */
+  protected readonly english = REFERENCE_LANGUAGES.includes(inject(PAGE_LANGUAGE));
 }
