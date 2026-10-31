@@ -3,6 +3,7 @@ import { TranslocoTranspiler, TranspileParams } from '@jsverse/transloco';
 import { MessageFormatElement, TYPE, parse } from '@formatjs/icu-messageformat-parser';
 import { IntlMessageFormat } from 'intl-messageformat';
 import { languageFor, textLanguage } from '../../../lib/regions/languages';
+import { dateTimeFormat, numberFormat } from '../../../lib/regions/locale-fallback';
 import { isolateUnits, isolateValues, mirrorArrows } from '../shared/bidi';
 import { formatLocale } from '../shared/format';
 import { keepsWesternDigits, textDigitsFor, withTextDigits } from '../shared/text-digits';
@@ -72,9 +73,9 @@ export class IcuTranspiler implements TranslocoTranspiler {
 
   private readonly formatters = {
     getNumberFormat: (_locales?: string | string[], options?: Intl.NumberFormatOptions) =>
-      new Intl.NumberFormat(formatLocale(), options),
+      numberFormat(formatLocale(), options),
     getDateTimeFormat: (_locales?: string | string[], options?: Intl.DateTimeFormatOptions) =>
-      new Intl.DateTimeFormat(formatLocale(), options),
+      dateTimeFormat(formatLocale(), options),
     getPluralRules: (_locales?: string | string[], options?: Intl.PluralRulesOptions) =>
       new Intl.PluralRules(this.language, options)
   };

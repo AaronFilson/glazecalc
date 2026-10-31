@@ -21,9 +21,8 @@ export const FIRST_RENDER = new InjectionToken<WritableSignal<boolean>>('FIRST_R
  * pages are for Egypt, the largest Arabic-speaking country Glazecalc plans
  * (its digits Arabic-Indic, as usual there); Hindi's for India; Urdu's for
  * Pakistan; Bengali's for Bangladesh, not Brunei (BN); and Tamil's for
- * India, not Singapore, the first region now listing it. The other languages of India, and Nepali
- * (Nepal) and Sinhala (Sri Lanka), are here ahead of their translations: Nepal and Sri Lanka are not
- * regions yet, so those two wait for them.
+ * India, not Singapore, the first region now listing it. The other languages of India are for
+ * India, Nepali for Nepal and Sinhala for Sri Lanka.
  */
 const COUNTRY_OF = new Map([
   ['el', 'GR'],

@@ -157,8 +157,25 @@ describe('account emails', () => {
     await accountMail.sendChanged(address, 'ml');
     await accountMail.sendChanged(address, 'pa');
     await accountMail.sendChanged(address, 'or');
-    const [arabic, german, hindi, urdu, bengali, tamil, marathi, kannada, telugu, gujarati, malayalam, punjabi, odia] =
-      await mail.waitFor(address, 13);
+    await accountMail.sendChanged(address, 'ne');
+    await accountMail.sendChanged(address, 'si');
+    const [
+      arabic,
+      german,
+      hindi,
+      urdu,
+      bengali,
+      tamil,
+      marathi,
+      kannada,
+      telugu,
+      gujarati,
+      malayalam,
+      punjabi,
+      odia,
+      nepali,
+      sinhala
+    ] = await mail.waitFor(address, 15);
     expect(arabic!.subject).to.equal(RLM + accountMail.RESET['ar']!.subject);
     const lines = arabic!.text.split('\n');
     // Each line of text starts right to left, even one that starts with an address or a link.
@@ -184,7 +201,9 @@ describe('account emails', () => {
       gujarati!,
       malayalam!,
       punjabi!,
-      odia!
+      odia!,
+      nepali!,
+      sinhala!
     ]) {
       expect(ltr.subject + ltr.text).not.to.include(RLM);
     }
@@ -198,8 +217,10 @@ describe('account emails', () => {
     expect(malayalam!.subject).to.equal(accountMail.CHANGED['ml']!.subject);
     expect(punjabi!.subject).to.equal(accountMail.CHANGED['pa']!.subject);
     expect(odia!.subject).to.equal(accountMail.CHANGED['or']!.subject);
+    expect(nepali!.subject).to.equal(accountMail.CHANGED['ne']!.subject);
+    expect(sinhala!.subject).to.equal(accountMail.CHANGED['si']!.subject);
     // Their own words, not the English fallback.
-    for (const code of ['te', 'gu', 'ml', 'pa', 'or']) {
+    for (const code of ['te', 'gu', 'ml', 'pa', 'or', 'ne', 'si']) {
       expect(accountMail.CHANGED[code]!.subject, code).not.to.equal(accountMail.CHANGED['en']!.subject);
     }
     expect(accountMail.inDirection({ to: 'a@b.c', subject: 'S', text: 'x\n\ny\n-- \nz\n' }, 'ar-XD').text).to.equal(

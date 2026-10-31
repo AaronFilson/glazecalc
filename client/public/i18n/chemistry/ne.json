@@ -1,0 +1,23 @@
+{
+  "unknown-compound": "सूत्रमा अज्ञात यौगिक: {compound}",
+  "unknown-oxide": "{material} सामग्रीमा अज्ञात अक्साइड: {oxide}",
+  "invalid-oxide-amount": "{material} सामग्रीमा {oxide} को मात्रा अमान्य छ",
+  "loi-range": "{material} सामग्रीको LOI कम्तीमा 0 र 100 भन्दा कम हुनुपर्छ",
+  "no-oxides": "{material} सामग्रीमा कुनै अक्साइड छैन",
+  "no-name": "सामग्रीको नाम हुनुपर्छ",
+  "no-analysis": "{material} सामग्रीलाई सूत्र वा विश्लेषण चाहिन्छ",
+  "recipe-shape": "रेसिपी '{ material, amount }' को array वा मात्राहरूको map हुनुपर्छ",
+  "invalid-amount": "{material} सामग्रीको मात्रा अमान्य छ",
+  "missing-material": "रेसिपीको एउटा पङ्क्तिमा सामग्री छैन",
+  "unknown-material": "अज्ञात सामग्री: {material}",
+  "no-flux": "रेसिपीमा कुनै फ्लक्स अक्साइड छैन, त्यसैले UMF निकाल्न सकिँदैन",
+  "no-target": "लक्ष्यमा पुग्नुपर्ने कुनै अक्साइड छैन",
+  "no-materials": "हिसाब गर्ने कुनै सामग्री छैन",
+  "no-temperature": "बोरन तय गर्न फायरिङको तापक्रम चाहिन्छ",
+  "no-flux-to-rebuild": "ग्लेजमा फेरि बनाउनुपर्ने कुनै फ्लक्स छैन",
+  "unknown-element": "{formula} मा अज्ञात तत्त्व: {element}",
+  "bad-formula": "सूत्र पढ्न सकिएन: {formula}",
+  "analysis-total": "{material} सामग्रीको विश्लेषणको जम्मा LOI सहित {total}% छ; करिब 100% हुनुपर्ने थियो.",
+  "stored-equivalent": "{material} सामग्रीको सेभ गरिएको समतुल्य भार त्यसको सूत्र र LOI सँग मेल खाँदैन; त्यसको सट्टा सूत्र र LOI प्रयोग गरियो.",
+  "trace-flux": "रेसिपीमा फ्लक्स अक्साइड अति थोरै मात्र छ, त्यसैले UMF को अर्थ रहँदैन."
+}

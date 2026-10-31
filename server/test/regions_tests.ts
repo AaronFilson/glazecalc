@@ -1727,8 +1727,8 @@ describe("India's regional languages", () => {
   });
 });
 
-// India's next waves (waves I2: Telugu, Gujarati, Malayalam, and I3: Punjabi, Odia, live since round 9;
-// known ahead of their translations, I4: Nepali, Sinhala; scratch/round8/in-langs/plan.md).
+// India's next waves (waves I2: Telugu, Gujarati, Malayalam, I3: Punjabi, Odia, and I4: Nepali, Sinhala, all
+// live since round 9; scratch/round8/in-langs/plan.md).
 describe('waves I2 to I4', () => {
   const NAMES: Record<string, [string, string]> = {
     te: ['తెలుగు', 'Telugu'],
@@ -1740,26 +1740,21 @@ describe('waves I2 to I4', () => {
     si: ['සිංහල', 'Sinhala']
   };
 
-  // Waves I2 and I3 are offered since round 9; I4 is not yet.
-  const LIVE = ['te', 'gu', 'ml', 'pa', 'or'];
-
-  it('are known in their own names, grouped with the subcontinent, and offered for waves I2 and I3', () => {
+  it('are known in their own names, grouped with the subcontinent, and all seven offered', () => {
     for (const [code, [name, english]] of Object.entries(NAMES)) {
       const language = languages.languageFor(code)!;
-      const live = LIVE.includes(code);
-      expect(language, code).to.include({ code, english, dir: 'ltr', live });
+      expect(language, code).to.include({ code, english, dir: 'ltr', live: true });
       // Each name as the browser's own data gives it, in NFC (Odia's ଡ଼ is ଡ and a nukta).
       expect(language.name, code).to.equal(name.normalize('NFC'));
       expect(language.name, code).to.equal(new Intl.DisplayNames([code], { type: 'language' }).of(code));
       expect(groups.languageGroup(code), code).to.equal('south-asia');
-      if (live) expect(languages.LIVE_LANGUAGES, code).to.include(code);
-      else expect(languages.LIVE_LANGUAGES, code).not.to.include(code);
+      expect(languages.LIVE_LANGUAGES, code).to.include(code);
     }
   });
 
-  it('give Sinhala the plain notice, and Punjabi and Odia the standard one (owner, 2026-10-30)', () => {
+  it('give all seven the standard notice (owner, 2026-10-30)', () => {
     const plain = Object.keys(NAMES).filter((code) => languages.languageFor(code)!.plainNotice);
-    expect(plain).to.eql(['si']);
+    expect(plain).to.eql([]);
   });
 
   it('are written for India, Nepal and Sri Lanka, with Hindi and English first in India', () => {
@@ -1831,7 +1826,7 @@ describe('digits', () => {
       ['si-LK', 'latn', 'latn', 'latn'],
       ['ta-LK', 'latn', 'latn', 'tamldec'],
       // India's regional languages: 0–9 as CLDR has them, Devanagari for Marathi (above), and each script's own
-      // under "native" (Odia's too, though Odia is not offered yet).
+      // under "native".
       ['ta-IN', 'latn', 'latn', 'tamldec'],
       ['kn-IN', 'latn', 'latn', 'knda'],
       ['te-IN', 'latn', 'latn', 'telu'],

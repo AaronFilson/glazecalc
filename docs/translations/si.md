@@ -52,7 +52,8 @@ rows rest on the Penal Code's wording as the Sinhala Wikipedia quotes it.**
 Choices); ග්ලේස් and its bracket ඔපය (2.1); the forms for must and should (Register); උණු වීම for melting and ද්‍රාවණය වීම for
 dissolving (2.7); වට්ටෝරුව for recipe (2.8); බිස්ක් and its bracket (2.3); the defect loanwords (2.5); රෙස්පිරේටරය (2.7);
 සෙරමික් ශිල්පියා for "potter" (Gender-neutral wording); the five guide titles (2.8); විශිෂ්ට ගුරුත්වය for SG and ග්ලේස්
-ඝනත්වය for the setting (2.6); සංග්‍රහය for the library (2.8); වරන්න for sign out (2.10); the GHS words (2.7).
+ඝනත්වය for the setting (2.6); සංග්‍රහය for the library (2.8); වරන්න for sign out (2.10); the GHS words (2.7); කුකී for the
+browser cookie, මුඩිය for the peephole plug and කිරා බැලීම for weighing (2.11).
 
 Main sources, cited below by short name (all read 22 October 2026):
 
@@ -551,7 +552,8 @@ reached); the limit words are those of the Penal Code's Sinhala text as the Sinh
   not a respirator.
 - **මාර්ගෝපදේශය and අත්පොත:** the app's five guides are **මාර්ගෝපදේශය**; a kiln's, controller's or sitter's manual is
   **අත්පොත**. Never the same word. A maker's, supplier's or school's own "guide" is **ලිපිය** (an article), **පොත් පිංචය** (a
-  booklet) or **ලේඛනය** (a document), never මාර්ගෝපදේශය; "a guide, not a prediction" → "එය සටහනක් පමණි, අනාවැකියක් නොවේ".
+  booklet) or **ලේඛනය** (a document), never මාර්ගෝපදේශය; "a guide, not a prediction" (a rough indication) → "දළ මඟපෙන්වීමක් මිස
+  අනාවැකියක් නොවේ"; a guideline is **නිර්දේශය** (2.11).
   **ගයිඩ් කෝන්** (guide cone) is a cone's name and stays.
 - **ක්‍රේසිං and ක්‍රැකල්:** crazing is **ක්‍රේසිං** (a defect); crackle is **ක්‍රැකල්** (wanted); a crack through the pot from
   heating or cooling is **ඩන්ටිං**.
@@ -567,7 +569,11 @@ reached); the limit words are those of the Penal Code's Sinhala text as the Sinh
   ෆිනිෂ් ටයිල්" for a matt finish. Check every one.
 - **ස්ටැබිලයිසර්, සස්පෙන්ඩර්, කුකී, ප්ලාස්ටික්, ලෙඩ්:** loanwords that mean something else in Sri Lanka (a voltage stabiliser,
   braces, a biscuit, the polymer; ලෙඩ් is LED and also a common word for illness, ලෙඩ): see their rows for the wording that
-  avoids them. Lead is never ලෙඩ්.
+  avoids them. Lead is never ලෙඩ්. The browser cookie and the kiln cookie are two rows (2.11 and 2.4).
+- **කිරීම and කිරා බැලීම:** the bare verbal noun **කිරීම** is "doing"; weighing is **කිරා බැලීම** (or **කිරා ගැනීම**), the verb
+  **කිරන්න**, "what to weigh" **කිරිය යුතු දේ**. Never "බර කිරීම" or a bare "කිරීම" for weighing (three slips, round 9).
+- **ZWJ in a particle:** the ZWJ belongs inside a word's yansaya or rakaransaya (ද්‍රව්‍ය, ෆ්‍රිට්), never in a particle written
+  after a word ending in ත් (බවත් + ය is බවත්ය; with a ZWJ typed between ත් and ය it shows a yansaya): five slips, round 9.
 - **Placeholders:** see Placeholders and names.
 
 ### Search terms (docs/seo-plan.md, item 9)
@@ -829,7 +835,7 @@ articles or Google's suggestions use, in no Sinhala teaching source; **No source
 | local exhaust ventilation (LEV)                        | ස්ථානීය පිටාර වාතාශ්‍රය (LEV)                                              | **show English**. Tier 4. No source; වාතාශ්‍රය is the plain word. "extraction" → "දූවිලි ඉවතට ඇදීම".                                                                                                           |
 | make-up air                                            | ආදේශක වාතය                                                                 | Tier 4. No source.                                                                                                                                                                                             |
 | spray booth (water-backed booth), overspray            | ස්ප්‍රේ කුටිය (ජල ආවරණ සහිත කුටිය), ඉසින විට පිටතට යන ග්ලේස්               | Tier 1 and 4. No source.                                                                                                                                                                                       |
-| fumes (kiln fumes)                                     | දුම සහ වාෂ්ප (කිල්න් දුම)                                                  | Tier 4. No source.                                                                                                                                                                                             |
+| fumes (kiln fumes)                                     | දුම (කිල්න් දුම)                                                           | Tier 4. No source. Fumes alone, never "දුම සහ වාෂ්ප" (the English never adds vapour); වාෂ්ප only where the English says vapour.                                                                                |
 | carbon monoxide (CO), CO alarm                         | කාබන් මොනොක්සයිඩ් (CO), CO අනතුරු ඇඟවීමේ උපකරණය                            | Tier 3. Wikipedia (si) (කාබන් මොනොක්සයිඩ්; "විෂ සහිත වායුවකි").                                                                                                                                                |
 | metal fume fever, manganism                            | ලෝහ දුම් උණ, මැංගනීස් විෂ රෝගය (මැංගනිසම්)                                 | Tier 4. No source.                                                                                                                                                                                             |
 | safety data sheet (SDS; older: MSDS)                   | ආරක්ෂිත දත්ත පත්‍රිකාව (SDS; පැරණි MSDS)                                   | Tier 4. No source (no Sri Lankan legal name found).                                                                                                                                                            |
@@ -875,7 +881,7 @@ articles or Google's suggestions use, in no Sinhala teaching source; **No source
 | Replace lead (Replace lead and compare)                                                | ඊයම් ආදේශ කරන්න (ඊයම් ආදේශ කර සසඳන්න)                                                                                               | "කෝන් දක්වා පිළිස්සූ", "ග්ලේස් එක නැවත ගොඩනඟන්න", "වර්ණ ඊයම් රහිත බේස් එකක තබා ගන්න".                                                                                                                                                                 |
 | Match with what I have (Match and compare)                                             | මා සතු දේවලින් ගළපන්න (ගළපා සසඳන්න)                                                                                                 | "ඔබ සතු දේවලින්ම සාදන්න".                                                                                                                                                                                                                             |
 | materials on hand (the shelf)                                                          | මා සතු ද්‍රව්‍ය (“රාක්කය”)                                                                                                          | A figure of speech, not a kiln shelf. Server: "රාක්කය යනු උපරිම ද්‍රව්‍ය {most}ක ලැයිස්තුවකි." (උපරිම = at most).                                                                                                                                     |
-| Materials to try, Must use                                                             | අත්හදා බැලිය යුතු ද්‍රව්‍ය; අනිවාර්යයෙන් භාවිත කරන්න                                                                                | The label's own "must".                                                                                                                                                                                                                               |
+| Materials to try, Must use                                                             | අත්හදා බැලීමට ද්‍රව්‍ය; අනිවාර්යයෙන් භාවිත කරන්න                                                                                    | "Must use" is the label's own "must"; "Materials to try" has none (never අත්හදා බැලිය යුතු, "that must be tried").                                                                                                                                    |
 | Leave it out, Allow more, Add it, Use it instead, Work it out again, What to watch for | එය ඉවත් කරන්න; තවත් ඉඩ දෙන්න; එය එක් කරන්න; ඒ වෙනුවට එය භාවිත කරන්න; නැවත ගණනය කරන්න; සැලකිලිමත් විය යුතු දේ                        |                                                                                                                                                                                                                                                       |
 | Discontinued, Hard to get, Historical                                                  | නිෂ්පාදනය නවතා ඇත; ලබා ගැනීමට අපහසුයි; ඓතිහාසික                                                                                     | "{year} සිට නිෂ්පාදනය නවතා ඇත", "{year} සිට ලබා ගැනීමට අපහසුයි" (සිට after the year, no ending on it).                                                                                                                                                |
 | Use instead, Similar, Replaces, Also called, Made by, Hazards                          | ඒ වෙනුවට භාවිත කරන්න; සමාන; ආදේශ කරයි; වෙනත් නම; නිෂ්පාදකයා; අනතුරු                                                                 | "රසායනය නැත: Seger සූත්‍රයෙන් බැහැර කර ඇත", "{name} ලෙස ගණන් කර ඇත".                                                                                                                                                                                  |
@@ -947,6 +953,48 @@ pages), and the choice:
 | account                                   | ගිණුම                     | Google ("Google ගිණුම", "ගිණුමක් සාදන්න").                                                                                                                                                                                                             |
 | password                                  | මුරපදය                    | Google ("මුරපදය", "මුරපද").                                                                                                                                                                                                                            |
 | trusted device                            | විශ්වාසදායක උපාංගය        | Google ("විශ්වාසදායක උපාංගවල", "මෙම උපාංගයෙන් නැවත අසන්න එපා").                                                                                                                                                                                        |
+
+### 2.11 Settled after the review (round 9, wave I4)
+
+The six reviews and the consistency pass found these words used two ways; each is now one word in every file.
+
+| English                                    | Sinhala                                         | Notes                                                                                                                                                                                                                                                                                                |
+| ------------------------------------------ | ----------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| weigh, weighing                            | කිරන්න; කිරා බැලීම (කිරා ගැනීම)                 | "What to weigh" කිරිය යුතු දේ; "Weighed" කිරූ; "Weighing" (heading) කිරා බැලීම. Never the bare කිරීම ("doing") or බර කිරීම (Pitfalls).                                                                                                                                                               |
+| guideline                                  | නිර්දේශය (plural නිර්දේශ)                       | "මෙම යෙදුමේ නිර්දේශය", "මේවා නිර්දේශ මිස සමත් හෝ අසමත් වීමක් නොවේ". Never මාර්ගෝපදේශය, the app's guides.                                                                                                                                                                                             |
+| a guide (a rough indication), not a test   | දළ මඟපෙන්වීමක් මිස පරීක්ෂණයක් නොවේ              | Also "not a prediction" (අනාවැකියක්), "not a guarantee" (සහතිකයක්). Never මාර්ගෝපදේශය, never සටහනක් (a note).                                                                                                                                                                                        |
+| sensible (a sensible step, choice)         | සාධාරණ                                          | Never සංවේදී ("sensitive"); a sensitiser (H317, H334) is සංවේදීතාව ඇති කරයි.                                                                                                                                                                                                                         |
+| database                                   | දත්ත සමුදාය                                     | "Glazecalc හි දත්ත සමුදාය", "විවෘත ග්ලේස් වට්ටෝරු දත්ත සමුදාය වන Glazy". Never දත්ත ගබඩාව.                                                                                                                                                                                                           |
+| connected app (Connected apps)             | සම්බන්ධ කළ යෙදුම (සම්බන්ධ කළ යෙදුම්)            | Page title, links and running text alike; never සම්බන්ධිත යෙදුම.                                                                                                                                                                                                                                     |
+| peephole plug                              | මුඩිය (plural මුඩි)                             | A stopper: "මුඩි ඉවත් කරන්න", "මුඩි දමා වසන්න". Never ප්ලග්, which is the electrical plug ("ප්ලග් එක ගලවන්න" = unplug).                                                                                                                                                                              |
+| cataract                                   | ඇසේ සුදය                                        | Both safety guides.                                                                                                                                                                                                                                                                                  |
+| Brittany, Breton                           | බ්‍රිටනි (ප්‍රංශය); ප්‍රංශයේ බ්‍රිටනි ප්‍රදේශයේ | With France each time, so that it is never read as Britain (බ්‍රිතාන්‍යය).                                                                                                                                                                                                                           |
+| Cornish china clay, Cornish stone          | කෝර්නිෂ් චයිනා ක්ලේ; කෝර්නිෂ් ස්ටෝන්            | කෝර්- with the repaya (never කෝන්, cone).                                                                                                                                                                                                                                                            |
+| browser cookie (Cookie, cookie banner)     | කුකී (cookie); කුකී බැනරය                       | No Sinhala software or privacy page could be read (Google's privacy policy was served in English, Choices), so the loanword stays, with "(cookie)" in Latin letters at its first use on the privacy page (storedSignIn, storageIntro). Not the kiln cookie, කුකී (බිස්ක් තැටිය) (2.4). Native check. |
+| fumes; vapour                              | දුම; වාෂ්ප                                      | Fumes alone as දුම (2.7); වාෂ්ප only where the English says vapour or vaporize ("ඊයම් වාෂ්ප වේ").                                                                                                                                                                                                    |
+| specks (speckle)                           | ලප (ලප ඇති කරයි)                                | Never "black" (කළු) unless the English says black.                                                                                                                                                                                                                                                   |
+| should (an expectation: "should not need") | … නොවනු ඇතැයි අපේක්ෂා කළ හැකිය                  | An expectation is not a duty: never යුතුය. "should" as advice stays … සුදුසුය (Register).                                                                                                                                                                                                            |
+| Materials to try                           | අත්හදා බැලීමට ද්‍රව්‍ය                          | 2.8.                                                                                                                                                                                                                                                                                                 |
+| meta.description (si.json)                 | (159 characters)                                | Keeps "for recipes, materials and firing logs" ("වට්ටෝරු, ද්‍රව්‍ය සහ පිළිස්සුම් සටහන් සඳහා") and drops only "glaze" before වට්ටෝරුවක්, to stay within 160.                                                                                                                                          |
+| sign out, signed out                       | වරන්න; වරනය (වරනය කෙරේ, වරනය වූ)                | As පුරන්න / පුරනය; the same in the app, the server messages and the emails. Native check (2.10).                                                                                                                                                                                                     |
+
+New terms the translators used and the reviews kept (no source; each as the files write it):
+
+- **Firing:** ප්ලැක් (plaque), මැටි පිඩ (pat of clay), නැමෙන මුහුණත (bending face), ප්ලන්ජරය, බ්‍රේකරය (breaker), පිවොට්
+  (කරකැවෙන ස්ථානය), පාදම ග්ලේස් රහිතව තැබීම (dry-footing), ස්ඵටිකීකරණය, කියෝතෝ කෝන් (Kyōto zēgeru, 京都ゼーゲル), ෆයරින් ගේජ්
+  (firing gauge), "අඟල් 1/16 ක පරතරයක්".
+- **Making and basics:** චයිනා ක්ලේ, වායුරෝධී (airtight), විභේදනය (resolution), ට්‍රිපල්-බීම් තරාදිය, ක්‍රමාංකන බර, මැනුම්
+  සිලින්ඩරය, සිරින්ජය, හැන්ද (scoop), දැඩි ජලය, ප්‍රතිලෝම ඔස්මෝසිස්, ආසුත ජලය, මිට, ආවාට (craters), ස්වාබ් කට්ටල, ටර්කොයිස්;
+  "5 o'clock" ඔරලෝසුවේ පැය 5 පෙන්වන ස්ථානය; molecular and equivalent weight අණුක / සමක **ස්කන්ධය**; a bare "tin" in a recipe
+  ටින් ඔක්සයිඩ් only where the English means the oxide.
+- **Safety:** වලිප්පුව (seizure), පශු වෛද්‍යවරයා, ප්‍රතිවිෂය, දෘෂ්ටි විතානය, මාරක මාත්‍රාව, ගිනි නිවනය, භූගත කළ (earthed)
+  සොකට් එක, දිගු කිරීමේ රැහැන, ඩිස්ටෝනියාව, ඉතිරි ග්ලේස් දියරය (slop), කලතන උපකරණය, කර්කශ පිරිසිදුකාරකය, ඉංජිනේරු පාලන,
+  ත්‍රිසංයුජ, සර්ජ් ආරක්ෂක; a burn පිළිස්සුම් තුවාලය (never පිළිස්සීම, firing); "dust Class M" in English.
+- **Records:** කෝපය (irritation), මාරාන්තිකය, සශ්‍රීකත්වය, කුසේ සිටින දරුවා, ඔක්සිකාරකය, EU සමගාමී වර්ගීකරණය, ලෝපස් (ore),
+  පෘෂ්ඨික ආතතිය, මජොලිකා; Fusion frits ෆියුෂන් beside "Fusion සමාගම" (the company); "up to" as a limit උපරිම, as a range
+  of use දක්වා.
+- **App and recipe:** සේවාදායකය, ප්‍රවේශ ටෝකනය, සබැඳිය, සපයන්නා (provider), වාර්තාව (Record; සටහන is Note), Stull ප්‍රස්ථාරය,
+  Katz ගේ බෝරෝන් නියමය, Brongniart සූත්‍රය, උදාසීන (neutral), පැතුරුම්පත (spreadsheet).
 
 ## 3. Never translated
 
