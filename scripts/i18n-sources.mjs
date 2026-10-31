@@ -10,7 +10,8 @@
 //                                         suppliers.js
 //   client/public/i18n/records/en.json    the standard records' words in data/:
 //                                         materials' and additives' notes and
-//                                         hazards, the advice; likewise
+//                                         hazards, the advice, the cone chart's
+//                                         notes; likewise
 //
 //   node scripts/i18n-sources.mjs          writes them, then brings each
 //                                          translation into step with its
@@ -50,6 +51,7 @@ export async function sources() {
   const require = createRequire(import.meta.url);
   const { MESSAGES: chemistry } = require('../lib/chemistry/messages.js');
   const safety = require('../lib/regions/safety.js');
+  const cones = require('../lib/cones/index.js');
   const regionData = ['workplace', 'food', 'suppliers'].map((name) => require('../lib/regions/' + name + '.js'));
   // Safety text is plain text: braces and apostrophes in it are quoted for ICU.
   const plainAsIcu = (text) => text.replace(/'/g, "''").replace(/[{}]/g, (brace) => "'" + brace + "'");
@@ -70,12 +72,16 @@ export async function sources() {
         record.hazards,
         record.title,
         record.content,
-        ...(record.tags ?? [])
+        ...(record.tags ?? []),
+        // The one source named in words; the others are citations (spec sheet titles), as printed.
+        record.source?.name === 'Theoretical formula' ? record.source.name : undefined
       ]) {
         if (typeof text === 'string' && text.trim()) records.add(text);
       }
     }
   }
+  // The cone chart's notes (lib/cones).
+  for (const text of cones.texts()) records.add(text);
   const recordTexts = Object.fromEntries([...records].map((text) => [safety.textKey(text), plainAsIcu(text)]));
   return {
     'server/en.json': json(server),

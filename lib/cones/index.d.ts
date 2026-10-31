@@ -79,3 +79,6 @@ export interface OrtonCharts {
 }
 
 export const ORTON: OrtonCharts;
+
+/** The charts' notes, which the cone chart shows in the page's language where there is a translation (lib/cones/index.js). */
+export function texts(): string[];
