@@ -21,7 +21,7 @@ Sugerimos salvar hoje os números da sua região no celular, e também em um car
 - Mais ou menos quanto, e quando.
 - Como: engolido, inalado, na pele ou nos olhos.
 - Qualquer sintoma até agora.
-- O peso aproximado da criança ou do animal, porque a mesma quantidade pesa mais em um corpo menor. Para um animal, também a raça, a idade e qualquer problema de saúde.
+- O peso aproximado da criança ou do animal, porque a mesma quantidade faz mais efeito em um corpo menor. Para um animal, também a raça, a idade e qualquer problema de saúde.
 
 ### O que não fazer
 
