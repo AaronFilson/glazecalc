@@ -1,6 +1,7 @@
 {
   "toxic-almost-insoluble-sdirpz": "Giftig. Næsten uopløselig.",
   "warning-potterycrafts-sds-p3303-h302-harmful-1662i06": "Advarsel (Potterycrafts’ sikkerhedsdatablad P3303): H302 farlig ved indtagelse; må ikke indtages, og undgå at indånde støvet.",
+  "theoretical-formula-9090t3": "Teoretisk formel",
   "tricalcium-phosphate-real-bone-ash-may-uviiii": "Tricalciumfosfat. Benaske kan i praksis indeholde lidt CaCO₃ og derfor have et lille glødetab.",
   "warning-potterycrafts-sds-h302-harmful-if-157dkxp": "Advarsel (Potterycrafts’ sikkerhedsdatablad): H302 farlig ved indtagelse; H315 forårsager hudirritation; H319 forårsager alvorlig øjenirritation; H335 tørt støv kan forårsage irritation af luftvejene.",
   "water-soluble-fdjx5g": "Vandopløselig.",
@@ -367,5 +368,8 @@
   "glaze-tiles-tiles-labels-12xf0ul": "prøvebrikker, brikker, etiketter",
   "kiln-sitter-8kghs6": "Kiln-Sitter",
   "after-putting-a-cone-in-the-swloel": "Når der er sat en kegle i Kiln-Sitteren, så dæk den med malertape. Tapen beskytter keglen mod at blive slået af, mens ovnen fyldes, og brænder rent af under brændingen.",
-  "kiln-sitter-cone-cones-loading-3s7meh": "Kiln-Sitter, kegle, kegler, påfyldning"
+  "kiln-sitter-cone-cones-loading-3s7meh": "Kiln-Sitter, kegle, kegler, påfyldning",
+  "the-standard-gives-reference-temperatures-at-12xot89": "Standarden angiver referencetemperaturer. Ved en keramikers hastighed på omkring 100 °C/h målte Kyotos kommunale institut, at dets egne Kyoto-kegler bøjede 47–79 °C køligere end JIS-tallet for samme nummer; for SK-kegler efter JIS fandt vi ingen sådanne målinger. Sæt en kontrolkegle, og sammenlign.",
+  "orton-s-older-chart-for-large-jgynh": "Ortons ældre skema for store kegler opvarmet med 150 °C i timen over de sidste 100 °C, som ovnproducenter genoptrykker det; Ortons nuværende tal for store kegler ved den hastighed afviger fra det med op til 19 °C. Orton offentliggør intet tal over kegle 14, og dette skema ingen over kegle 15. Kegler måler varmepåvirkning, ikke temperatur: sæt en kontrolkegle.",
+  "rates-are-over-the-last-100-gs02ii": "Hastighederne gælder over de sidste 100 °C af brændingen. Store kegler 13 og 14 har andre sammensætninger og andre temperaturækvivalenter; Orton offentliggør intet tal over kegle 14."
 }
