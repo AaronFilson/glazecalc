@@ -4,6 +4,7 @@ import os from 'node:os';
 import path from 'node:path';
 import { PUBLIC_PAGES } from '../../lib/pages.js';
 import { GUIDES, SCOPES, filesFor, languageOfFile } from '../../lib/offline-files.js';
+import { REFERENCE_LANGUAGES } from '../../lib/regions/languages.js';
 import { KILL_SWITCH, addServiceWorker, asSent, shellOf } from '../../scripts/service-worker.mjs';
 import Additive from '../models/additive.ts';
 import Material from '../models/material.ts';
@@ -64,7 +65,8 @@ describe('the files kept for offline use', () => {
       .readdirSync(i18n, { withFileTypes: true })
       .filter((entry) => entry.isDirectory() && fs.existsSync(path.join(i18n, entry.name, 'en.json')))
       .map((entry) => entry.name);
-    expect([...folders, 'advice', ''].sort()).to.eql([...SCOPES].sort());
+    // advice, materials and cones are written by the build, not kept in client/public/i18n.
+    expect([...folders, 'advice', 'materials', 'cones', ''].sort()).to.eql([...SCOPES].sort());
     const guides = PUBLIC_PAGES.filter((page) => page.startsWith('/guides/')).map((page) => page.slice(8));
     expect([...GUIDES].sort()).to.eql(guides.sort());
     for (const guide of GUIDES) expect(fs.existsSync(path.join(i18n, 'guides', guide, 'en.md')), guide).to.equal(true);
@@ -78,9 +80,17 @@ describe('the files kept for offline use', () => {
     const urdu = filesFor('ur');
     expect(urdu).to.include.members(['/i18n/ur.json', '/i18n/safety/ur.json', '/i18n/guides/safe-mixing/ur.md']);
     expect(urdu.filter((file) => file.includes('/en.'))).to.eql([]);
-    // The guide in English only, and the part in English only, have no copy in another language.
+    // The guide in English only has no copy in another language.
     expect(urdu).not.to.include('/i18n/guides/learn-with-john-britt/ur.md');
-    expect(urdu).not.to.include('/i18n/reference/ur.json');
+    // The reference pages' parts only in a language they are translated into; English carries materials and cones.
+    const reference = ['reference', 'materials', 'cones'];
+    expect(english).not.to.include.members(['/i18n/materials/en.json', '/i18n/cones/en.json']);
+    for (const code of ['ur', 'de']) {
+      const files = filesFor(code);
+      const expected = reference.map((scope) => `/i18n/${scope}/${code}.json`);
+      if (REFERENCE_LANGUAGES.includes(code)) expect(files, code).to.include.members(expected);
+      else for (const file of expected) expect(files, code).not.to.include(file);
+    }
   });
 
   it('are the English for a pseudo-locale', () => {
