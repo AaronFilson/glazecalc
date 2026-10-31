@@ -41,7 +41,7 @@ Label: Patamares e trabalho térmico
 | Cerca de 2 horas    | Uma temperatura máxima {{54 °F; 30 °C}} mais alta       |
 | 4–6 horas           | O bastante para dobrar um cone dois números mais quente |
 
-A Orton acrescenta que um patamar de 1–2 horas “pode ser suficiente para deformar o próximo número de cone mais quente”.
+A Orton acrescenta que um patamar de 1–2 horas “pode ser suficiente para deformar o cone seguinte, um número mais quente”.
 
 Portanto, um patamar nunca sai de graça: se você acrescentar um, espere que os cones dobrem mais e baixe a temperatura máxima na mesma medida.
 
@@ -54,7 +54,7 @@ Label: Tipos de cone
 
 | Tipo             | Usado para               | Como fica de pé                                                                                                                  |
 | ---------------- | ------------------------ | -------------------------------------------------------------------------------------------------------------------------------- |
-| Autossuportante  | Cone testemunho na placa | Uma base integrada define a altura, 1¾ polegada (44 mm), e a inclinação de 8°; não precisa de suporte                            |
+| Autossuportado   | Cone testemunho na placa | Uma base integrada define a altura, 1¾ polegada (44 mm), e a inclinação de 8°; não precisa de suporte                            |
 | Grande           | Cone testemunho na placa | Fixado em um suporte ou em uma pelota de argila, com exatamente 2 polegadas (51 mm) à mostra, inclinado 8° em relação à vertical |
 | Pequeno (júnior) | Kiln sitter              | Fica deitado sobre os apoios do sitter; 15/16 de polegada (24 mm) à mostra se for colocado em uma placa                          |
 | Barra            | Kiln sitter              | O mesmo pó dos cones pequenos, em formato de barra uniforme                                                                      |
@@ -139,7 +139,7 @@ A sonda lê o ar perto da parede, não as peças. Se as queimas saem mais quente
 
 ## Montando um conjunto de cones {#cone-pack}
 
-Um **cone testemunho** é um cone colocado em uma placa ao lado das peças, onde recebe o mesmo calor. A Orton é direta quanto ao papel dele: “A única medida verdadeira do trabalho térmico é a de um cone Grande ou Autossuportante colocado na placa ao lado das peças.” Um kiln sitter fica perto da parede, e a sonda de um controlador ou de um pirômetro lê a temperatura perto da parede; um cone testemunho lê onde estão as peças.
+Um **cone testemunho** é um cone colocado em uma placa ao lado das peças, onde recebe o mesmo calor. A Orton é direta quanto ao papel dele: “A única medida verdadeira do trabalho térmico é a de um cone Grande ou Autossuportado colocado na placa ao lado das peças.” Um kiln sitter fica perto da parede, e a sonda de um controlador ou de um pirômetro lê a temperatura perto da parede; um cone testemunho lê onde estão as peças.
 
 Um **conjunto de cones** são três cones testemunho colocados juntos, com um número de diferença entre si:
 
@@ -183,7 +183,7 @@ Cones pequenos e barras “dão tratamento térmico equivalente”. A Orton obse
 
 ### Qual cone vai no sitter
 
-As fontes divergem. A Dawson, que fabricou o sitter, diz para usar o mesmo número do cone de queima da placa, e para subir um número mais quente só se o cone da placa continuar sem dobrar. A L&L diz para usar um número mais quente que os cones da placa, porque o sitter fica perto da parede e das resistências, recebe mais calor e tende a desligar cedo. A Orton resolve o princípio: “O cone da placa é o juiz final do processo de queima, e não o cone ou a barra do Kiln-Sitter.”
+As fontes divergem. A Dawson, que fabricou o sitter, diz para usar o mesmo número do cone de queima da placa, e para passar a um número mais quente só se o cone da placa continuar sem dobrar. A L&L diz para usar um número mais quente que os cones da placa, porque o sitter fica perto da parede e das resistências, recebe mais calor e tende a desligar cedo. A Orton resolve o princípio: “O cone da placa é o juiz final do processo de queima, e não o cone ou a barra do Kiln-Sitter.”
 
 > [!NOTE]
 > Nosso ponto de partida: ponha no sitter um cone pequeno do mesmo número do seu alvo, com um conjunto de cones na placa. Se o cone de queima da placa estiver pouco dobrado quando o forno desligar, use um número mais quente no sitter da próxima vez, ou ponha a parte mais grossa do cone sob a haste. Se estiver dobrado demais, faça o contrário.
@@ -226,14 +226,14 @@ Label: Problemas do kiln sitter
 | O sitter desligou, cone de queima da placa pouco dobrado     | O sitter queimou mais quente que a placa (ele fica perto da parede)                             | Um cone mais quente no sitter, ou a parte mais grossa sob a haste    |
 | O cone do sitter caiu bem além de 90°                        | O forno subiu rápido demais perto do fim                                                        | Baixe os ajustes das chaves, para a subida ficar mais lenta (Dawson) |
 | O cone do sitter não dobrou, ou derreteu até virar uma bolha | O próprio sitter: ajuste ruim, haste torta ou corroída, ou algo preso no tubo ou encostado nele | Verifique e ajuste o sitter pelo manual antes de queimar de novo     |
-| Desliga cedo ou tarde toda vez                               | Fora de ajuste, ou haste gasta                                                                  | Confira com o calibrador de queima; mova a placa do gatilho          |
+| Desliga cedo ou tarde toda vez                               | Fora de ajuste, ou haste gasta                                                                  | Confira com o calibrador de queima; mova a chapa do gatilho          |
 
-Para conferir o ajuste, a Dawson usa um **calibrador de queima** que segura a haste onde um cone totalmente dobrado a deixaria; deve haver então “folga de 1/16 de polegada” (cerca de 1,6 mm) na garra. Confira a cada 30 queimas. A regra da Ceramics Monthly: se o forno desliga cedo, suba um pouco a placa do gatilho; se desliga tarde, desça um pouco. Seja qual for o comportamento do sitter, “Confie sempre nos cones testemunho grandes, e não nos cones pequenos do sitter.”
+Para conferir o ajuste, a Dawson usa um **calibrador de queima** que segura a haste onde um cone totalmente dobrado a deixaria; deve haver então “folga de 1/16 de polegada” (cerca de 1,6 mm) na garra. Confira a cada 30 queimas. A regra da Ceramics Monthly: se o forno desliga cedo, suba um pouco a chapa do gatilho; se desliga tarde, desça um pouco. Seja qual for o comportamento do sitter, “Confie sempre nos cones testemunho grandes, e não nos cones pequenos do sitter.”
 
 > [!WARNING]
 > **Um kiln sitter não é um dispositivo de segurança.** O manual da Dawson diz que ele “NÃO se destina a funcionar como um dispositivo de desligamento à prova de falhas, e seu forno NÃO deve ficar sem supervisão além do tempo estimado de queima.” Algo tão simples quanto uma peça crua caindo contra o tubo “pode causar uma queima excessiva”. Esteja presente para conferir o forno quando ele deveria estar terminando, e nunca queime sobre ou perto de qualquer coisa que pegue fogo, como piso de madeira ou carpete.
 
-O sitter é feito para queimas “até o Cone 8, inclusive”. Ele não consegue manter uma temperatura nem resfriar devagar por conta própria. Com prática e um registro, porém, você pode “virar o controlador”, como diz a Digitalfire: observar os cones e girar as chaves à mão.
+O sitter é feito para queimas “até o cone 8, inclusive”. Ele não consegue manter uma temperatura nem resfriar devagar por conta própria. Com prática e um registro, porém, você pode “virar o controlador”, como diz a Digitalfire: observar os cones e girar as chaves à mão.
 
 :::
 
@@ -248,7 +248,7 @@ Os cones são lidos duas vezes: pelo visor enquanto o forno queima, e na sua mã
 Um **visor** (orifício de observação) é um pequeno furo na parede do forno, fechado por um tampão removível. Nunca olhe lá dentro sem proteção para os olhos. A Orton diz “Óculos de soldador devem ser usados para evitar possíveis lesões nos olhos. Óculos de sol não são recomendados.” Os óculos de solda com tonalidade 3 e proteção IV (infravermelho) são os mais recomendados; use um tom mais escuro se você vir manchas depois.
 
 - O **cone-guia** começando a dobrar significa que o fim está perto: observe com atenção daqui em diante.
-- Quando um cone começa, ele leva de 15 a 25 minutos para dobrar (o folheto mais novo da Orton diz de 15 a 22), devagar no início, depois depressa ao passar da metade, nas 3 horas.
+- Quando um cone começa, ele leva de 15 a 25 minutos para dobrar (o folheto mais novo da Orton diz de 15 a 22), devagar no início, depois depressa ao passar da metade, às 3 horas.
 - O **cone de queima** está pronto quando a ponta fica na altura da base.
 
 Em um forno manual, o visor é seu único sinal em tempo real, e é por isso que o conjunto precisa ficar onde você consiga vê-lo.
@@ -263,7 +263,7 @@ Label: Lendo um conjunto de cones
 | O que você vê                                                                                           | O que significa                                                                   |
 | ------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
 | Cone 5 caído; ponta do cone 6 na altura da base ou um pouco mais baixa; cone 7 reto ou apenas inclinado | No alvo: o cone 6 foi atingido                                                    |
-| Cone 5 dobrado; cone 6 dobrado só em parte, nas 2 ou 3 horas, ou reto                                   | Subqueimado: a queima parou cedo demais                                           |
+| Cone 5 dobrado; cone 6 dobrado só em parte, às 2 ou 3 horas, ou reto                                    | Subqueimado: a queima parou cedo demais                                           |
 | Até o cone 5 mal se mexeu                                                                               | Muito subqueimado, por um cone ou mais                                            |
 | Cones 5 e 6 caídos; cone 7 dobrado                                                                      | Sobrequeimado: “você excedeu a melhor relação tempo-temperatura”                  |
 | Os três caídos e achatados ou derretidos no suporte                                                     | Muito sobrequeimado; verifique o sitter e o temporizador antes de queimar de novo |
@@ -306,7 +306,7 @@ Fixe cada cone grande em um suporte ou em uma pelota de argila, inclinado para o
 
 Não encontramos instruções de fabricante ou de vendedor sobre a profundidade nem o ângulo para colocar cones SK. O mais próximo é uma norma de laboratório, a JIS R 2204, o ensaio japonês de quanto calor um material refratário aguenta: ela coloca cada cone SK com a face marcada a 80° em relação a um apoio plano e o pé enterrado cerca de 4 mm nele. Isso é um ensaio para refratários, não uma regra para queimar peças, e nós o lemos em uma transcrição da norma, não na norma em si.
 
-### Cones guia, de queima e de proteção
+### Cones-guia, de queima e de proteção
 
 Os cones são vendidos e colocados em três: um cone-guia, um cone de queima no alvo e um cone de proteção. Tome o cone de queima como o número SK que sua receita ou sua massa indica, o cone-guia como o cone seguinte mais frio (uma linha acima na tabela) e o cone de proteção como o seguinte mais quente. Quando o cone-guia começa a dobrar, o fim está perto; quando o cone de proteção dobra, a queima passou do ponto.
 
@@ -364,7 +364,7 @@ Todos os valores são nominais (JIS): a temperatura que a norma dá para o cone,
 
 ### Cones de Quioto
 
-Os cones de Quioto (京都ゼーゲル), feitos pelo instituto municipal de Quioto, não são mais fabricados: reportagens dizem que o instituto encerrou a produção no fim do ano fiscal de 2009. Eles têm os mesmos números dos cones SK conforme a JIS, mas dobram mais frios: um cone de Quioto dobra aproximadamente na temperatura do cone SK conforme a JIS dois ou três números abaixo. Uma receita de Quioto que diz “SK 8” pode estar falando de um cone de Quioto. O instituto publicou orientações para ceramistas que passam dos cones de Quioto para os cones Orton, e substitui o seu SK 12 de Quioto pelo cone Orton 10. Essa é a escolha do instituto a partir de suas próprias medições: ele dobrou cones de Quioto e cones Orton no mesmo forno a 100 °C/h, e o SK 12 de Quioto (1290 °C) dobrou onde o Orton 10 (1290 °C) dobrou. Na mesma tabela, o SK 8 de Quioto (1198 °C) dobrou perto do Orton 5 (1207 °C), e o SK 10 de Quioto (1232 °C) onde o Orton 7 (1232 °C) dobrou. O Glazecalc usa esta tabela, e não a tabela da Orton a 60 °C/h, quando mostra um cone SK ao lado de um cone Orton, e diz que cada correspondência é aproximada.
+Os cones de Quioto (京都ゼーゲル), feitos pelo instituto municipal de Quioto, não são mais fabricados: reportagens dizem que o instituto encerrou a produção no fim do ano fiscal de 2009. Eles têm os mesmos números dos cones SK conforme a JIS, mas dobram mais frios: um cone de Quioto dobra aproximadamente na temperatura do cone SK conforme a JIS dois ou três números mais frio. Uma receita de Quioto que diz “SK 8” pode estar falando de um cone de Quioto. O instituto publicou orientações para ceramistas que passam dos cones de Quioto para os cones Orton, e substitui o seu SK 12 de Quioto pelo cone Orton 10. Essa é a escolha do instituto a partir de suas próprias medições: ele dobrou cones de Quioto e cones Orton no mesmo forno a 100 °C/h, e o SK 12 de Quioto (1290 °C) dobrou onde o Orton 10 (1290 °C) dobrou. Na mesma tabela, o SK 8 de Quioto (1198 °C) dobrou perto do Orton 5 (1207 °C), e o SK 10 de Quioto (1232 °C) onde o Orton 7 (1232 °C) dobrou. O Glazecalc usa esta tabela, e não a tabela da Orton a 60 °C/h, quando mostra um cone SK ao lado de um cone Orton, e diz que cada correspondência é aproximada.
 
 ### Cones Orton vendidos no Japão
 
@@ -382,7 +382,7 @@ Os cones autossuportados da Orton são vendidos no Japão com o nome 立つゼ�
 
 ## Queima de biscoito {#bisque}
 
-A queima de **biscoito**{{en: bisque}} (biscuit, no Reino Unido) é a primeira queima, em temperatura mais baixa, que transforma a argila seca em peças duras e porosas, prontas para esmaltar. Costuma ser feita nos cones 06–04, {{1828–1945 °F; 998–1063 °C}} na tabela da Orton; ceramistas do Reino Unido costumam queimar a cerca de {{1000 °C; 1832 °F}}, perto do cone 06. O biscoito deve continuar poroso, “geralmente mais de 15%” (Digitalfire), para absorver a água do esmalte. Um biscoito mole demais recebe o esmalte grosso demais, que depois racha e **recolhe**{{en: crawling}} (encolhe em ilhas, deixando a argila à mostra). Um biscoito subqueimado também “continua a encolher durante a queima de esmalte”, o que estraga o acordo massa-esmalte. O enfornamento é tolerante: as peças podem se tocar, as tampas podem ser queimadas nas próprias peças, e as tigelas vão de borda com borda, em vez de empilhadas.
+A queima de **biscoito**{{en: bisque}} (biscuit, no Reino Unido) é a primeira queima, em temperatura mais baixa, que transforma a argila seca em peças duras e porosas, prontas para esmaltar. Costuma ser feita nos cones 06–04, {{1828–1945 °F; 998–1063 °C}} na tabela da Orton; ceramistas do Reino Unido costumam queimar a cerca de {{1000 °C; 1832 °F}}, perto do cone 06. O biscoito deve continuar poroso, “geralmente mais de 15%” (Digitalfire), para absorver a água do esmalte. Um biscoito mole demais recebe o esmalte grosso demais, que depois racha e **recolhe**{{en: crawling}} (encolhe em ilhas, deixando a argila à mostra). Um biscoito subqueimado também “continua a encolher durante a queima de esmalte”, o que estraga o acordo massa-esmalte. O enfornamento é tolerante: as peças podem se tocar, as tampas podem ser queimadas nas próprias peças, e as tigelas vão borda com borda, em vez de encaixadas umas nas outras.
 
 ### Por que o começo é lento
 
@@ -493,7 +493,7 @@ O Slow Glaze é a escolha mais segura, dado o aviso da L&L sobre a queima rápid
 
 ### Cone 6: descida e patamar
 
-Os esmaltes de média temperatura às vezes saem com **furinhos** (pinholes: buracos minúsculos na superfície) ou bolhas, deixados por gás que borbulha para fora do esmalte derretido. Uma curva de **descida e patamar** queima até o topo, esfria rápido cerca de {{100 °F; 56 °C}} e mantém nessa temperatura. Nas palavras da Digitalfire, “Descer 100°F e manter dá ao esmalte derretido viscosidade suficiente para estourar as bolhas, mas ainda deixa que elas se curem.”
+Os esmaltes de média temperatura às vezes saem com **furinhos** (pinholes: buracos minúsculos na superfície) ou bolhas, deixados por gás que borbulha para fora do esmalte derretido. Uma curva de **descida e patamar** queima até o topo, esfria rápido cerca de {{100 °F; 56 °C}} e mantém nessa temperatura. Nas palavras da Digitalfire, “Descer 100°F e manter dá ao esmalte derretido viscosidade suficiente para estourar as bolhas, mas ainda deixa que elas cicatrizem.”
 
 Table: Digitalfire PLC6DS, descida e patamar no cone 6
 Label: Digitalfire PLC6DS
@@ -509,7 +509,7 @@ O PLC6DS leva cerca de 9 horas e 36 minutos. Para esmaltes mais fluidos, a Digit
 
 ### Resfriamento lento
 
-**Resfriamento lento** quer dizer que o controlador esfria o forno em uma velocidade definida, em vez de deixá-lo cair livremente. O C6DHSC da Digitalfire é o PLC6DS seguido de resfriamento a {{150 °F/h; 83 °C/h}} de {{2100 °F; 1148 °C}} até {{1400 °F; 760 °C}}, e então desligado. Ele “melhora o brilho e a qualidade da superfície” e ajuda nos azuis de rutilo, mas o resfriamento lento “pode aumentar o aspecto fosco” (um esmalte fosco ficou seco) e pode encurtar a vida útil dos relés do forno. A L&L também fornece um programa de resfriamento lento para o cone 6:
+**Resfriamento lento** quer dizer que o controlador esfria o forno em uma velocidade definida, em vez de deixá-lo cair livremente. O C6DHSC da Digitalfire é o PLC6DS seguido de resfriamento a {{150 °F/h; 83 °C/h}} de {{2100 °F; 1148 °C}} até {{1400 °F; 760 °C}}, e depois o desligamento. Ele “melhora o brilho e a qualidade da superfície” e ajuda nos azuis de rutilo, mas o resfriamento lento “pode aumentar o aspecto fosco” (um esmalte fosco ficou seco) e pode encurtar a vida útil dos relés do forno. A L&L também fornece um programa de resfriamento lento para o cone 6:
 
 Table: L&L “User 6”: resfriamento lento para esmaltes de cone 6
 Label: Resfriamento lento da L&L
@@ -625,19 +625,19 @@ Para a ventilação do ambiente e para os alarmes de monóxido de carbono, veja 
 
 ## Resfriamento e desenfornamento {#cooling}
 
-O resfriamento faz parte da queima. A L&L e a Orton aconselham: “Deixe o forno esfriar naturalmente com a tampa fechada”, e “Nunca introduza ar frio em um forno quente.” Abrir cedo demais “pode causar rachaduras”, e a sílica das peças se contrai de repente ao esfriar passando de {{1063 °F; 573 °C}}. Sem um controlador, mantenha o forno fechado “até que a temperatura caia bem abaixo do vermelho (900°F / 482°C)”, e por pelo menos 8 horas. Nunca resfrie à força um forno que ainda está brilhando. Trincas de bordas cortantes nas peças queimadas são sinal de resfriamento rápido demais.
+O resfriamento faz parte da queima. A L&L e a Orton aconselham: “Deixe o forno esfriar naturalmente com a tampa fechada”, e “Nunca introduza ar frio em um forno quente.” Abrir cedo demais “pode causar rachaduras”, e a sílica das peças se contrai de repente ao esfriar abaixo de {{1063 °F; 573 °C}}. Sem um controlador, mantenha o forno fechado “até que a temperatura caia bem abaixo do vermelho (900°F / 482°C)”, e por pelo menos 8 horas. Nunca resfrie à força um forno que ainda está brilhando. Trincas de bordas cortantes nas peças queimadas são sinal de resfriamento rápido demais.
 
 ### Quando abrir e desenfornar
 
 Table: Quando abrir o forno: as fontes divergem
 Label: Abrir e desenfornar
 
-| Fonte                                        | Conselho                                                                           |
-| -------------------------------------------- | ---------------------------------------------------------------------------------- |
-| L&L, fornos manuais                          | “Espere esfriar completamente antes de abrir.”                                     |
-| Manual do controlador da Skutt (como citado) | Evite desenfornar acima de {{125 °F; 52 °C}}                                       |
-| Outros fabricantes (segundo relatos)         | Até {{250 °F; 121 °C}}, abrindo as cargas de esmalte mais frias que as de biscoito |
-| Glazy                                        | Não abra antes de cair abaixo de cerca de {{392 °F; 200 °C}}                       |
+| Fonte                                        | Conselho                                                                                                 |
+| -------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| L&L, fornos manuais                          | “Espere esfriar completamente antes de abrir.”                                                           |
+| Manual do controlador da Skutt (como citado) | Evite desenfornar acima de {{125 °F; 52 °C}}                                                             |
+| Outros fabricantes (segundo relatos)         | Até {{250 °F; 121 °C}}, com as cargas de esmalte abertas a uma temperatura mais baixa que as de biscoito |
+| Glazy                                        | Não abra antes de cair abaixo de cerca de {{392 °F; 200 °C}}                                             |
 
 > [!NOTE]
 > Nossa sugestão: abra a tampa só abaixo de cerca de {{200 °F; 93 °C}}, e desenforne abaixo de cerca de {{125 °F; 52 °C}}, ou quando você conseguir segurar as peças com conforto nas mãos nuas. As cargas de esmalte, densas e vítreas, pedem mais paciência que o biscoito. Sem um pirômetro, espere o forno esfriar completamente.

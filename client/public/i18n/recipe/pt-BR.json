@@ -277,7 +277,7 @@
       "analysis": "<b>Análise e limites</b>, abaixo da receita, mostra os mols, a % molar e a % em peso após a queima de cada óxido, a perda ao fogo e a expansão térmica calculada, uma estimativa para comparar esmaltes.",
       "limits": "<b>Limites</b> confronta a fórmula de Seger com um conjunto de limites: os limites para esmaltes estáveis de Hesselberth & Roy, a menos que você escolha os do próprio Glazecalc (a escolha é salva com suas configurações). Ele verifica a faixa de queima que a <b>Queima</b> da receita indica: o cone dela, ou a faixa. Uma faixa que cruza faixas de queima, como do cone 6 ao 10, mostra as verificações das duas lado a lado. Para verificar só uma faixa, escolha-a na caixa <b>Queima</b> dos próprios limites, que se sobrepõe à queima da receita e é salva com a receita. Os valores de Hesselberth & Roy são para o cone 6 e o cone 10, então em baixa temperatura ele diz que não se aplicam. São orientações, não um aprovado ou reprovado. No topo, uma linha compara o boro, a sílica e a alumina do esmalte com a queima dele, pela regra do boro de Katz e pelos valores de Hesselberth & Roy, seja qual for o conjunto de limites escolhido: só dá uma nota quando os dois concordam que o esmalte parece de outra queima, diz quando não consegue avaliar (chumbo, lítio, raku e afins) e é uma orientação, não um teste.",
       "stull": "O <b>gráfico de Stull</b> traça a sílica do esmalte contra a alumina, com as regiões fosca, semifosca e brilhante de Stull e as faixas do conjunto de limites. É uma orientação sobre a superfície, não uma previsão.",
-      "slurry": "<b>Densidade e água</b> usa a fórmula de Brongniart: pese um volume medido do esmalte e veja o esmalte seco no balde, a água que o leva à densidade que você quer, ou a água para um novo lote. As densidades seguem sua configuração de densidade, Baumé ou peso por pint."
+      "slurry": "<b>Densidade e água</b> usa a fórmula de Brongniart: pese um volume medido do esmalte e veja o esmalte seco no balde, a água que o leva à densidade que você quer, ou a água para um novo lote. As densidades seguem sua configuração de densidade, Baumé ou peso por pinta."
     },
     "print": {
       "heading": "Imprima para a sala de esmaltes",
@@ -340,7 +340,7 @@
     "showCostHelp": "Desligado por padrão, para que uma ficha entregue a alguém não mostre preços. Usa os preços guardados na sua conta.",
     "cost": "Custo do lote {cost}: {perUnit} por {unit, select, lb {libra} other {quilograma}} de esmalte seco, corantes e aditivos incluídos.",
     "costPartial": "As matérias-primas com preço custam {cost}. Sem preço para {list}.",
-    "worked": "O cálculo: como a fórmula de Seger sai das quantidades, passo a passo, como uma folha de exercícios"
+    "worked": "O cálculo: como a fórmula de Seger sai das quantidades, passo a passo, como uma folha de cálculo"
   },
   "cost": {
     "heading": "Custo",
@@ -354,7 +354,7 @@
     "partial": "As matérias-primas com preço custam {cost} neste lote. Informe um preço para {list} para ter o custo total.",
     "none": "Informe o preço de cada matéria-prima por {unit, select, lb {libra} other {quilograma}} para ver quanto custa um lote.",
     "rounding": "Cada linha é arredondada para exibição; o total é calculado a partir dos custos sem arredondamento, por isso pode diferir um pouco da soma delas.",
-    "skipped": "{count, plural, one {# preço do seu período de teste estava} many {# preços do seu período de teste estavam} other {# preços do seu período de teste estavam}} em uma moeda diferente da desta conta, por isso não foram copiados.",
+    "skipped": "{count, plural, one {# preço do seu período de teste estava em uma moeda diferente da desta conta, por isso não foi copiado.} many {# preços do seu período de teste estavam em uma moeda diferente da desta conta, por isso não foram copiados.} other {# preços do seu período de teste estavam em uma moeda diferente da desta conta, por isso não foram copiados.}}",
     "noBatch": "Digite as quantidades e um tamanho de lote para ver quanto custa um lote.",
     "priceProblem": "Digite o preço como um número igual ou maior que 0, por exemplo {example}.",
     "loading": "Carregando seus preços…",
@@ -453,7 +453,7 @@
     "zincChrome": "O zinco deixa marrons os verdes de cromo e estraga os rosas de cromo-estanho; a Mason diz que não se use zinco com esses pigmentos. Deixe o zinco de fora, ou use um pigmento feito para esmaltes com zinco.",
     "zincIron": "O zinco pode turvar as cores de ferro. Para âmbares e marrons-mel limpos, teste uma versão sem zinco.",
     "zincCopper": "O zinco muda a cor do cobre, muitas vezes para mais azul ou mais vivo em vez de verde. Teste antes de contar com isso.",
-    "zincLowFire": "Abaixo de cerca do cone 03, o zinco ({zinc}) funde pouco. Pode causar encolhimento do esmalte ou furinhos e dar uma superfície fosca ou cristalina; o zinco calcinado encolhe menos.",
+    "zincLowFire": "Abaixo do cone 03, aproximadamente, o zinco ({zinc}) funde pouco. Pode causar encolhimento do esmalte ou furinhos e dar uma superfície fosca ou cristalina; o zinco calcinado encolhe menos.",
     "whiting": "O carbonato de cálcio quase não funde nos cones 06–04 e libera gás ao se decompor.",
     "whitingProbably": "Com {percent}%, provavelmente vai dar furinhos ou bolhas e sair seco, fosco ou calcário.",
     "whitingTends": "Com {percent}%, tende a dar furinhos ou bolhas e sair seco, fosco ou calcário.",
@@ -492,7 +492,7 @@
     "nearlyAsGood": "A correspondência fica quase tão boa sem ela.",
     "leaveOut": "Deixar de fora",
     "leaveOutName": "Deixar {name} de fora",
-    "unreachable": "Nada do que está disponível tem {list}. Adicione abaixo uma matéria-prima que tenha, para experimentar, e recuperá-lo.",
+    "unreachable": "Nada do que está disponível tem {list}. Para recuperá-lo, adicione abaixo uma matéria-prima que o contenha, para experimentar.",
     "capped": "Uma correspondência mais próxima precisa de {wouldBe}% de {list}, mais que os {most}% sugeridos.",
     "cappedWhy": "Uma correspondência mais próxima precisa de {wouldBe}% de {list}, mais que os {most}% sugeridos: {why}.",
     "allowMore": "Permitir mais",
@@ -724,7 +724,7 @@
     "inCrazed": "Ele está na área em que os esmaltes de Stull gretaram.",
     "offChart": "Este esmalte, SiO₂ {silica} e Al₂O₃ {alumina} (relação {ratio}), está fora do gráfico.",
     "unclassified": "Este esmalte, SiO₂ {silica} e Al₂O₃ {alumina} (relação {ratio}), tem menos alumina que qualquer uma das regiões de Stull, então o gráfico não diz como será a superfície.",
-    "noPoint": "Não há ponto para traçar sem sílica e alumina.",
+    "noPoint": "Não há ponto para traçar sem ter sílica e alumina ao mesmo tempo.",
     "keyPoint": "Ponto: este esmalte.",
     "keyBright": "Linha pontilhada: onde os esmaltes de Stull ficaram mais brilhantes.",
     "keyLimits": "Linhas tracejadas e sombreado: as faixas de sílica e alumina de {name}.",
@@ -749,12 +749,12 @@
     "measured": {
       "sg": "A densidade atual",
       "baume": "A densidade atual, °Bé",
-      "pint": "O peso por pint atual, oz por pint imperial"
+      "pint": "O peso por pinta atual, oz por pinta imperial"
     },
     "target": {
       "sg": "A densidade que você quer",
       "baume": "A densidade que você quer, °Bé",
-      "pint": "O peso por pint que você quer, oz"
+      "pint": "O peso por pinta que você quer, oz"
     },
     "drySg": "Densidade das matérias-primas secas",
     "drySgHelp": "Cerca de 2,5 para a maioria dos esmaltes; o Glazy usa 2,6.",

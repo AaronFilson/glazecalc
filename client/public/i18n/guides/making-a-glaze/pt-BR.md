@@ -36,7 +36,7 @@ O saco padrão é de **50 lb (22,7 kg)** nos EUA e de **25 kg (55 lb)** nos outr
 
 ### Um conjunto inicial
 
-A lista básica do Glazy para qualquer temperatura é sílica, caulim, feldspato, carbonato de cálcio, óxido de zinco e dolomita ou talco. A maioria dos esmaltes de média temperatura (cone 5 a 6) também precisa de boro, em geral vindo de uma frita, que o Glazy chama de “mais regular e menos solúvel que os boratos crus”. O conjunto abaixo é uma sugestão nossa, tirada da lista do Glazy e de uma lista de fórum. O guia [Esmaltes desde o básico](/guides/glazing-basics) explica o que cada matéria-prima faz.
+A lista básica do Glazy para qualquer temperatura é sílica, caulim, feldspato, carbonato de cálcio, óxido de zinco e dolomita ou talco. A maioria dos esmaltes de média temperatura (cone 5 a 6) também precisa de boro, em geral vindo de uma frita, que o Glazy chama de “regular e menos solúvel que os boratos crus”. O conjunto abaixo é uma sugestão nossa, tirada da lista do Glazy e de uma lista de fórum. O guia [Esmaltes desde o básico](/guides/glazing-basics) explica o que cada matéria-prima faz.
 
 Table: Um conjunto inicial de matérias-primas (sugestão nossa)
 Label: Conjunto inicial
@@ -58,7 +58,7 @@ Peça dois documentos para cada matéria-prima. Uma **ficha técnica** (TDS) tra
 
 As análises são médias, não promessas. A Valentine Clays imprime “MEAN VALUES. THESE DO NOT REPRESENT A SPECIFICATION” (“valores médios; não representam uma especificação”) na ficha técnica do seu flint, e as análises do feldspato Custer no Glazy, de anos diferentes, vão de cerca de 68,5% a 72,4% de sílica. Sugerimos anotar o **número do lote** de cada saco (o código da sua partida) nos seus registros, para saber se uma mudança em um esmalte de confiança veio da matéria-prima.
 
-O HSE do Reino Unido adverte que a sílica cristalina “pode ser rotulada erroneamente como ‘sílica amorfa’”. E uma FDS trata do pó, não da peça: ela não diz nada sobre se um esmalte queimado é seguro para alimentos. Só um ensaio de liberação de metais{{en: leach test}} da peça queimada, feito em laboratório, pode mostrar isso.
+O HSE do Reino Unido adverte que a sílica cristalina “pode ser rotulada erroneamente como ‘sílica amorfa’”. E uma FDS trata do pó, não da peça: ela não diz nada sobre se um esmalte queimado é adequado para contato com alimentos. Só um ensaio de liberação de metais{{en: leach test}} da peça queimada, feito em laboratório, pode mostrar isso.
 
 ### Os nomes mudam, então compre pela química
 
@@ -83,7 +83,7 @@ Mantenha os pós secos, em recipientes com tampa que fiquem fechados quando voc�
 
 ### Esmaltes misturados
 
-Um esmalte em um balde continua mudando. Materiais pouco solúveis (nefelina sienito, carbonato de lítio, Gerstley Borate, colemanita, carbonato de estrôncio e as fritas em geral) mudam o modo como ele escorre com o tempo e podem fazer crescer pequenos cristais, mais ainda em um ambiente quente. O Gerstley Borate gelifica o esmalte líquido, “mesmo em porcentagens menores”. Água amarronzada sobre um esmalte decantado é ferro dissolvido: despeje-a e troque por água limpa. Espere também:
+Um esmalte em um balde continua mudando. Materiais pouco solúveis (nefelina sienito, carbonato de lítio, Gerstley Borate, colemanita, carbonato de estrôncio e as fritas em geral) mudam o modo como ele flui com o tempo e podem fazer crescer pequenos cristais, mais ainda em um ambiente quente. O Gerstley Borate gelifica o esmalte líquido, “mesmo em porcentagens menores”. Água amarronzada sobre um esmalte decantado é ferro dissolvido: despeje-a e troque por água limpa. Espere também:
 
 - **Fundo endurecido**: um esmalte misturado tão grosso que dispensa aditivos muitas vezes decanta formando uma camada dura. Afiná-lo e gelificá-lo ajuda (veja Densidade).
 - **Cheiros**, de micróbios que se alimentam de gomas como a CMC. Um esmalte com cheiro ainda pode ser usado se aplicar bem.
@@ -165,7 +165,7 @@ Label: Malha da peneira
 
 ## Densidade {#specific-gravity}
 
-A **densidade**{{en: specific gravity}} (SG) diz quanto pó há no seu esmalte líquido. É o peso de um volume de esmalte dividido pelo peso do mesmo volume de água. A água é 1,00, e um esmalte a {{SG 1.45}} pesa 145 g a cada 100 mL. Misturar até uma densidade medida é como você obtém a mesma espessura, e a mesma camada, toda vez. Ela não tem unidade, então vale igual em gramas ou em onças.
+A **densidade**{{en: specific gravity}} (SG) diz quanto pó há no seu esmalte líquido. É o peso de um volume de esmalte dividido pelo peso do mesmo volume de água. A água é 1,00, e um esmalte com {{SG 1.45}} pesa 145 g a cada 100 mL. Misturar até uma densidade medida é como você obtém a mesma espessura, e a mesma camada, toda vez. Ela não tem unidade, então vale igual em gramas ou em onças.
 
 ### Meça pesando 100 mL
 
@@ -183,17 +183,17 @@ As fontes divergem, sobretudo para pincel e pistola, onde a fornecedora do Reino
 Table: Metas de densidade, onde as fontes divergem
 Label: Metas de densidade
 
-| Uso     | Digitalfire e Glazy                                                                                                                                                 | Potclays (Reino Unido)                              | Ponto de partida seguro                                               |
-| ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------- | --------------------------------------------------------------------- |
-| Imersão | {{SG 1.40}} (para uma imersão de 5 segundos) a {{SG 1.50}} (para uma imersão de 1 segundo); esmaltes misturados em casa e gelificados vão melhor a {{SG 1.43–1.45}} | Transparente {{SG 1.46–1.48}}; colorido {{SG 1.61}} | {{SG 1.45}}; afine até {{SG 1.43}} e gelifique se escorrer            |
-| Pincel  | {{SG 1.25}} (transparente fino) a {{SG 1.55}} (detalhe escuro)                                                                                                      | {{SG 1.71–1.81}}                                    | Siga o produto; use goma CMC ou um meio para pincel                   |
-| Pistola | Sem valor; Hopper, escrevendo para a Ceramic Arts Network, diz muito mais ralo, com um defloculante (um aditivo que deixa o esmalte líquido mais fluido)            | {{SG 1.71}}                                         | Sem número confiável; aplique com pistola só em uma cabine de pintura |
+| Uso     | Digitalfire e Glazy                                                                                                                                                   | Potclays (Reino Unido)                              | Ponto de partida seguro                                               |
+| ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------- | --------------------------------------------------------------------- |
+| Imersão | {{SG 1.40}} (para uma imersão de 5 segundos) a {{SG 1.50}} (para uma imersão de 1 segundo); esmaltes misturados em casa e gelificados vão melhor com {{SG 1.43–1.45}} | Transparente {{SG 1.46–1.48}}; colorido {{SG 1.61}} | {{SG 1.45}}; afine até {{SG 1.43}} e gelifique se escorrer            |
+| Pincel  | {{SG 1.25}} (transparente fino) a {{SG 1.55}} (detalhe escuro)                                                                                                        | {{SG 1.71–1.81}}                                    | Siga o produto; use goma CMC ou um meio para pincel                   |
+| Pistola | Sem valor; Hopper, escrevendo para a Ceramic Arts Network, diz muito mais ralo, com um defloculante (um aditivo que deixa o esmalte líquido mais fluido)              | {{SG 1.71}}                                         | Sem número confiável; aplique com pistola só em uma cabine de pintura |
 
 Para conferir a olho um esmalte de imersão, a AMACO mergulha por 5 segundos e procura uma camada da espessura de uma moeda americana de dez centavos (dime). A Digitalfire queima provas mergulhadas por 5 segundos para conferir.
 
 ### Água para uma densidade desejada: nossa estimativa
 
-A tabela abaixo é conta nossa, não de uma fonte. Ela supõe que as partículas do pó têm uma densidade de 2,6 g por cm³, o que é uma suposição, não uma medição. A argila, os materiais solúveis e a gelificação mudam um esmalte de verdade, então use-a para começar e depois meça. Como verificação, ela prevê {{SG 1.44}} para pesos iguais de pó e de água, perto dos {{SG 1.46}} medidos pela Digitalfire. Ela também mostra que 70 a 80 mL por 100 g fazem você começar acima de {{SG 1.50}}, mais grosso do que o necessário.
+A tabela abaixo é conta nossa, não de uma fonte. Ela supõe que as partículas do pó têm uma densidade de 2,6 g por cm³, o que é uma suposição, não uma medição. A argila, os materiais solúveis e a gelificação mudam um esmalte de verdade, então use-a para começar e depois meça. Como verificação, ela prevê {{SG 1.44}} para pesos iguais de pó e de água, perto do valor medido pela Digitalfire, {{SG 1.46}}. Ela também mostra que 70 a 80 mL por 100 g fazem você começar acima de {{SG 1.50}}, mais grosso do que o necessário.
 
 Table: Água para uma densidade desejada (nossa estimativa)
 Label: Água para uma densidade desejada
@@ -207,9 +207,9 @@ Label: Água para uma densidade desejada
 
 ### Sais de Epsom, goma CMC e bentonita
 
-Os **sais de Epsom** fazem um esmalte gelificar levemente quando parado e voltar a fluir quando mexido. Isso se chama **flocular** o esmalte, e um esmalte que se comporta assim é **tixotrópico**: ele vai mais uniforme, escorre menos e decanta menos. A Digitalfire sugere começar com cerca de 2 g por galão assim que a densidade estiver certa (cerca de 0,5 g por litro, conversão nossa) e ajustar a quantidade a cada vez que você mistura, já que nenhuma receita deve fixar a dose. Sugerimos dissolvê-los antes em um pouco de água quente. Em um exemplo da Digitalfire, um esmalte a {{SG 1.45}} escorria, então a água o levou a {{SG 1.43}} e os sais de Epsom o gelificaram de volta até ficar cremoso, e ele foi aplicado de modo uniforme. Uma verificação aproximada: mexa, pare e observe. Um esmalte gelificado continua se movendo por cerca de 2 ou 3 segundos, depois para e volta um pouco.
+Os **sais de Epsom** fazem um esmalte gelificar levemente quando parado e voltar a fluir quando mexido. Isso se chama **flocular** o esmalte, e um esmalte que se comporta assim é **tixotrópico**: ele se aplica de modo mais uniforme, escorre menos e decanta menos. A Digitalfire sugere começar com cerca de 2 g por galão assim que a densidade estiver certa (cerca de 0,5 g por litro, conversão nossa) e ajustar a quantidade a cada vez que você mistura, já que nenhuma receita deve fixar a dose. Sugerimos dissolvê-los antes em um pouco de água quente. Em um exemplo da Digitalfire, um esmalte com {{SG 1.45}} escorria, então a água o levou a {{SG 1.43}} e os sais de Epsom o gelificaram de volta até ficar cremoso, e ele foi aplicado de modo uniforme. Uma verificação aproximada: mexa, pare e observe. Um esmalte gelificado continua se movendo por cerca de 2 ou 3 segundos, depois para e volta um pouco.
 
-A **goma CMC** (carboximetilcelulose) deixa o esmalte líquido mais pegajoso e mais lento para secar, e deixa uma camada mais dura que adere à peça. Importa mais para esmaltes de pincel e esmaltes ricos em frita. O exemplo da Digitalfire mistura 3,75 g em 1.000 g de esmalte líquido, e ela tem que entrar com um liquidificador. Um esmalte com CMC não vai gelificar com sais de Epsom e, como os micróbios se alimentam da goma, ele pode mudar no balde e começar a cheirar.
+A **goma CMC** (carboximetilcelulose) deixa o esmalte líquido mais pegajoso e mais lento para secar, e deixa uma camada mais dura que adere à peça. Importa mais para esmaltes de pincel e esmaltes ricos em frita. O exemplo da Digitalfire mistura 3,75 g em 1.000 g de esmalte líquido, e a goma tem que ser incorporada com um liquidificador. Um esmalte com CMC não vai gelificar com sais de Epsom e, como os micróbios se alimentam da goma, ele pode mudar no balde e começar a cheirar.
 
 A **bentonita**, uma argila muito fina, ajuda a manter as outras partículas em suspensão. Os esmaltes de imersão costumam contar com 15 a 25% de argila crua para isso. Para uma receita com pouca argila, cerca de 1 a 3% de bentonita ajuda; a Digitalfire diz que um esmalte com mais de 15% de argila não deve precisar de bentonita a mais de 1% do peso do esmalte seco.
 
@@ -217,7 +217,7 @@ A **bentonita**, uma argila muito fina, ajuda a manter as outras partículas em 
 
 ### Comece pequeno
 
-Derek Au avança em três etapas: um teste de 50 ou 100 g, um ensaio de 1 a 2 kg se der certo e depois um lote de ateliê de 5 a 10 kg. Pela nossa estimativa, um teste de 100 g a {{SG 1.45}} rende cerca de 135 mL (cerca de 4½ US fl oz) de esmalte líquido, o bastante para mergulhar algumas provas pequenas em um copo estreito.
+Derek Au avança em três etapas: um teste de 50 ou 100 g, um ensaio de 1 a 2 kg se der certo e depois um lote de ateliê de 5 a 10 kg. Pela nossa estimativa, um teste de 100 g com {{SG 1.45}} rende cerca de 135 mL (cerca de 4½ US fl oz) de esmalte líquido, o bastante para mergulhar algumas provas pequenas em um copo estreito.
 
 ### Teste na sua própria argila
 

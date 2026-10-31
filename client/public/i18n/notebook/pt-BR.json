@@ -2,7 +2,7 @@
   "home": {
     "title": "Seu caderno do ateliê",
     "signedInAs": "Você entrou como {email}.",
-    "trying": "Experimentando o Glazecalc como {name}. Comece por uma receita.",
+    "trying": "Testando o Glazecalc como {name}. Comece por uma receita.",
     "welcomeBack": "Continue de onde parou.",
     "welcome": {
       "heading": "Boas-vindas ao Glazecalc",
@@ -38,12 +38,12 @@
         "text": "Anote horários, temperaturas e cones de cada queima."
       },
       "notes": {
-        "title": "Notas",
+        "title": "Anotações",
         "text": "Guarde resultados de testes e qualquer outra coisa que valha lembrar."
       },
       "advice": {
-        "title": "Conselhos sobre esmaltes",
-        "text": "Dicas de mistura, esmaltação e queima, e seus próprios conselhos."
+        "title": "Dicas sobre esmaltes",
+        "text": "Dicas de mistura, esmaltação e queima, e suas próprias dicas."
       },
       "guides": {
         "title": "Guias",
@@ -58,7 +58,7 @@
         "text": "Configurações, sua senha, a verificação em duas etapas e a opção de baixar tudo o que você guarda aqui."
       }
     },
-    "newHere": "Nunca usou a fórmula de Seger? A <advice>página de conselhos</advice> explica o básico, e a <about>página Sobre</about> diz como o Glazecalc funciona."
+    "newHere": "Nunca usou a fórmula de Seger? A <advice>página de dicas</advice> explica o básico, e a <about>página Sobre</about> diz como o Glazecalc funciona."
   },
   "firing": {
     "title": "Registros de queima",
@@ -102,34 +102,34 @@
     "linkFailed": "Não foi possível salvar o vínculo."
   },
   "notes": {
-    "title": "Notas",
+    "title": "Anotações",
     "lead": "Qualquer outra coisa que valha lembrar sobre seus esmaltes.",
-    "newHeading": "Uma nova nota",
+    "newHeading": "Uma nova anotação",
     "titleLabel": "Título",
-    "content": "Nota",
+    "content": "Anotação",
     "save": "Salvar",
-    "mineHeading": "Minhas notas salvas",
-    "noneSaved": "Nenhuma ainda. As notas salvas aparecem aqui.",
-    "titleMissing": "Dê um título à nota.",
-    "contentMissing": "Escreva a nota.",
-    "untitled": "Nota sem título",
-    "fetchFailed": "Ocorreu um erro ao obter as notas.",
-    "saved": "Pronto. Nota adicionada ao servidor.",
+    "mineHeading": "Minhas anotações salvas",
+    "noneSaved": "Nenhuma ainda. As anotações salvas aparecem aqui.",
+    "titleMissing": "Dê um título à anotação.",
+    "contentMissing": "Escreva a anotação.",
+    "untitled": "Anotação sem título",
+    "fetchFailed": "Ocorreu um erro ao obter as anotações.",
+    "saved": "Pronto. Anotação adicionada ao servidor.",
     "saveFailed": "Erro: a solicitação ao servidor falhou."
   },
   "trash": {
     "title": "Lixeira",
-    "lead": "O que você remove (receitas, matérias-primas, aditivos, notas, registros de queima e conselhos) fica aqui por 30 dias. Restaure ou exclua de vez.",
-    "listHeading": "Na lixeira",
-    "none": "A lixeira está vazia.",
+    "lead": "O que você remove (receitas, matérias-primas, aditivos, anotações, registros de queima e dicas) fica aqui por 30 dias. Restaure ou exclua de vez.",
+    "listHeading": "Na Lixeira",
+    "none": "A Lixeira está vazia.",
     "untitled": "Sem título",
     "kinds": {
       "recipes": "Receita",
       "materials": "Matéria-prima",
       "additives": "Aditivo",
-      "notes": "Nota",
+      "notes": "Anotação",
       "firing": "Registro de queima",
-      "advice": "Conselho",
+      "advice": "Dica",
       "other": "Registro"
     },
     "removedOn": "Remoção em {date}",
@@ -141,12 +141,12 @@
     "restoredAlready": "“{name}” já voltou para onde estava.",
     "restoreFailed": "Não foi possível restaurar “{name}”. Tente novamente.",
     "deleted": "Exclusão definitiva de “{name}” concluída.",
-    "empty": "Esvaziar a lixeira",
-    "emptyQuestion": "Excluir de vez {count, plural, one {o # registro} many {todos os # registros} other {todos os # registros}} da lixeira? Essa ação não pode ser desfeita.",
+    "empty": "Esvaziar a Lixeira",
+    "emptyQuestion": "Excluir de vez {count, plural, one {o # registro} many {todos os # registros} other {todos os # registros}} da Lixeira? Essa ação não pode ser desfeita.",
     "emptyYes": "Sim, esvaziar",
     "emptying": "Esvaziando…",
-    "emptied": "A lixeira está vazia.",
-    "emptyFailed": "Não foi possível esvaziar a lixeira. Tente novamente.",
-    "fetchFailed": "Não foi possível carregar a lixeira. Tente novamente."
+    "emptied": "A Lixeira está vazia.",
+    "emptyFailed": "Não foi possível esvaziar a Lixeira. Tente novamente.",
+    "fetchFailed": "Não foi possível carregar a Lixeira. Tente novamente."
   }
 }

@@ -246,7 +246,7 @@ A **liberação de metais**{{en: leaching}} é o metal se dissolvendo de um esma
 
 As normas dos EUA, da UE, do Reino Unido e da Austrália limitam o chumbo e o cádmio que uma peça queimada libera, não o que o esmalte contém. “Sem chumbo” elimina um perigo; não é uma classificação de segurança alimentar. Outros óxidos também liberam metais: o Glazy alerta que esmaltes com muito bário “podem liberar metais e em geral não são adequados para contato com alimentos”{{en: food-safe}}, a Digitalfire diz que o cobre “pode fazer um esmalte liberar metais; teste-o”, e o Glazy já não recomenda esmaltes com chumbo para peças utilitárias.
 
-Um **esmalte para o interior**{{en: liner glaze}} é um esmalte estável, em geral transparente ou branco, para as superfícies que tocam alimentos. Na nossa opinião, um esmalte sem corante, bário, chumbo nem lítio, que funde por completo, não greta e resiste bem ao desgaste é a escolha de menor risco. Menor risco não é prova de segurança.
+Um **esmalte para o interior**{{en: liner glaze}} é um esmalte estável, em geral transparente ou branco, para as superfícies que tocam alimentos. Na nossa opinião, um esmalte sem corante, bário, chumbo nem lítio, que funde por completo, não greta e resiste bem ao desgaste é a escolha de menor risco. Menor risco não é prova.
 
 As **fórmulas-limite**{{en: limit formulas}} (a Digitalfire prefere **fórmulas-alvo**{{en: target formulas}}) dão faixas típicas da fórmula de Seger{{en: unity formula}} para esmaltes estáveis em um cone: as metas da Digitalfire para o cone 6 põem a alumina em 0,285–0,64 e a sílica em 2,4–4,7. Elas orientam você para uma química sólida, mas não provam nada; a Digitalfire evita a palavra “limite” porque ela sugere que esmaltes dentro das faixas “são de algum modo seguros”. As ferramentas do Glazecalc para mudar uma receita avisam quando a nova passa de um limite recomendado, como muito boro no cone 6, e dizem o que o esmalte provavelmente fará.
 
@@ -279,7 +279,7 @@ Primeiro tire a poeira e a gordura do biscoito{{en: bisque}} com uma esponja só
 
 - A **imersão** “geralmente dá uma camada de espessura uniforme” (Robin Hopper). O tempo de imersão define a espessura: a Digitalfire observa que os esmaltes comerciais de imersão são feitos a cerca de 1,4 para uma imersão de 5 segundos e a 1,5 para uma imersão de 1 segundo.
 - O esmalte para **derramamento** deve ser “um pouco mais ralo que o usado para imersão”; onde os derramamentos se sobrepõem, a camada dobra e pode escorrer.
-- Os esmaltes para **pincel** contêm uma goma, como a **goma CMC**, que ajuda o esmalte a escorrer e a aderir, e depois queima. A maioria precisa de várias camadas, muitas vezes duas ou três; siga o rótulo.
+- Os esmaltes para **pincel** contêm uma goma, como a **goma CMC**, que ajuda o esmalte a fluir e a aderir, e depois queima. A maioria precisa de várias camadas, muitas vezes duas ou três; siga o rótulo.
 - A **pistola** usa um esmalte muito mais ralo, aplicado em “várias camadas finas, aumentando a espessura aos poucos”.
 
 > [!WARNING]

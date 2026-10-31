@@ -186,14 +186,14 @@ A luz infravermelha, que não se pode ver, “começa em 752°F (400°C)”, e a
 
 A questão para as peças na mesa da família é a **liberação de metais**{{en: leaching}}: metais que se dissolvem do esmalte queimado para a comida ou a bebida. A FDA adverte que, se a cerâmica “não for fabricada corretamente, esse chumbo pode passar para a comida e a bebida”, e que “nenhuma quantidade de lavagem, fervura ou outro processo consegue remover o chumbo da cerâmica”. Órgãos reguladores como a FDA dos EUA e a UE limitam quanto chumbo e cádmio uma peça pronta libera em um ensaio padrão com ácido, não o que o esmalte contém. O limite mais rigoroso dos EUA, para xícaras, canecas e jarras, é 0,5 µg/mL de chumbo.
 
-### Sem chumbo não é o mesmo que adequado para alimentos
+### Sem chumbo não é o mesmo que adequado para contato com alimentos
 
-Um esmalte{{en: glaze}} sem chumbo ainda pode liberar metais. A Digitalfire, uma referência de química de esmaltes, aponta como preocupação os esmaltes que contêm “corantes de óxidos de metais pesados, bário, lítio ou chumbo”, e adverte que um pigmento queimado acima da temperatura indicada pode liberar cádmio. O rótulo ASTM D-4236 de materiais artísticos em um pote “NÃO comprova que um esmalte queimado é adequado para alimentos”, e “os produtores de louça devem testar todas as peças prontas para comprovar que servem como louça de mesa”.
+Um esmalte{{en: glaze}} sem chumbo ainda pode liberar metais. A Digitalfire, uma referência de química de esmaltes, aponta como preocupação os esmaltes que contêm “corantes de óxidos de metais pesados, bário, lítio ou chumbo”, e adverte que um pigmento queimado acima da temperatura indicada pode liberar cádmio. O rótulo ASTM D-4236 de materiais artísticos em um pote “NÃO comprova que um esmalte queimado é adequado para contato com alimentos”, e “os produtores de louça devem testar todas as peças prontas para comprovar que servem como louça de mesa”.
 
 > [!NOTE]
 > “Adequado para contato com alimentos”{{en: food safe}} quer dizer que este esmalte, nesta massa{{en: clay body}}, queimado neste cone, aplicado desta maneira, libera menos que os limites legais. Um cálculo de receita, incluindo o do Glazecalc, pode apontar uma receita arriscada, mas não pode provar que uma peça é segura. Só um ensaio de liberação de metais da peça queimada pode.
 
-Sugerimos ler o rótulo “adequado para alimentos” em um esmalte comercial como um bom começo, não uma garantia: outra massa, uma camada mais grossa, outro cone ou um segundo esmalte por cima mudam o resultado.
+Sugerimos ler o rótulo “adequado para contato com alimentos” em um esmalte comercial como um bom começo, não uma garantia: outra massa, uma camada mais grossa, outro cone ou um segundo esmalte por cima mudam o resultado.
 
 ### Ensaios
 
@@ -207,7 +207,7 @@ O **gretamento**{{en: crazing}} é uma rede de trincas finas na superfície do e
 
 ### Esmaltes para o interior
 
-Um **esmalte para o interior**{{en: liner glaze}} é o esmalte da parte de dentro de uma xícara ou tigela, onde fica a comida. A Digitalfire descreve um esmalte para o interior que pode ter risco baixo o bastante para ser usado sem ensaio de laboratório: sem corantes, bário, chumbo ou lítio; totalmente fundido; sem gretamento; e resistente ao uso. Mesmo assim, só um ensaio de liberação de metais das suas próprias peças queimadas mostra se elas são adequadas para alimentos. Sinais de alerta em qualquer esmalte são grandes quantidades de corante, cristais na superfície e fusão deficiente.
+Um **esmalte para o interior**{{en: liner glaze}} é o esmalte da parte de dentro de uma xícara ou tigela, onde fica a comida. A Digitalfire descreve um esmalte para o interior que pode ter risco baixo o bastante para ser usado sem ensaio de laboratório: sem corantes, bário, chumbo ou lítio; totalmente fundido; sem gretamento; e resistente ao uso. Mesmo assim, só um ensaio de liberação de metais das suas próprias peças queimadas mostra se elas são adequadas para contato com alimentos. Sinais de alerta em qualquer esmalte são grandes quantidades de corante, cristais na superfície e fusão deficiente.
 
 ### Regras da família que sugerimos
 

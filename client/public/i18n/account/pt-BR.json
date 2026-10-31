@@ -81,7 +81,7 @@
     "keepText": "Este teste e tudo o que há nele serão removidos em {date}. Crie uma conta gratuita para mantê-los: suas receitas, matérias-primas e anotações ficam exatamente como estão, e {name} continua sendo seu nome de exibição.",
     "createAccount": "Criar uma conta",
     "title": "Sua conta",
-    "signedInAs": "Sessão iniciada como {email}.",
+    "signedInAs": "Você entrou como {email}.",
     "contents": "Nesta página",
     "changeHeading": "Alterar sua senha",
     "current": "Senha atual",
@@ -145,7 +145,7 @@
     "nameCheck": "Dê à passkey um nome de 1 a {most} caracteres.",
     "passkeyLimit": "Você tem {most} passkeys, o máximo que uma conta pode ter. Remova uma para adicionar outra.",
     "codesTitle": "Códigos de recuperação",
-    "codesLeft": "{count, plural, one {Restam # de {total} códigos de recuperação.} many {Restam # de {total} códigos de recuperação.} other {Restam # de {total} códigos de recuperação.}} Se você não puder usar seu app ou uma passkey, um código faz você entrar no lugar. Cada código vale uma vez.",
+    "codesLeft": "{count, plural, one {Resta # de {total} códigos de recuperação.} many {Restam # de {total} códigos de recuperação.} other {Restam # de {total} códigos de recuperação.}} Se você não puder usar seu app ou uma passkey, um código faz você entrar no lugar. Cada código vale uma vez.",
     "codesLow": "Crie códigos novos em breve. Se eles acabarem e você perder seu app e suas passkeys, não conseguirá entrar.",
     "newCodes": "Criar novos códigos de recuperação",
     "offHeading": "Desativar",
@@ -337,7 +337,7 @@
       "legend": "Densidade do esmalte",
       "sg": {
         "label": "Densidade",
-        "saved": "Salvo: densidade do esmalte como densidade.",
+        "saved": "Salvo: densidade do esmalte como densidade relativa.",
         "example": "SG 1.45"
       },
       "baume": {
@@ -546,7 +546,7 @@
     "noName": "Um app sem nome",
     "selfDescribed": "autodescrito",
     "selfDescribedNote": "Ele se registrou sozinho, então este nome é apenas o que ele diz de si mesmo. O Glazecalc não o verificou.",
-    "account": "Sessão iniciada como {email}",
+    "account": "Você entrou como {email}",
     "appAddress": "O endereço do app",
     "checked": "(verificado pelo Glazecalc)",
     "answerTo": "Para onde vai sua resposta",

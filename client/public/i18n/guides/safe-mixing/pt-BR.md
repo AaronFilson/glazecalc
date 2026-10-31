@@ -219,7 +219,7 @@ O bórax, o ácido bórico, o carbonato de sódio e a potassa se dissolvem na á
 - **Use luvas** com esmalte úmido ou seco; Utah diz que elas “devem ser usadas”. O HSE cita luvas nitrílicas para a aplicação com pistola. Nenhuma fonte comparou materiais de luvas, então sugerimos luvas nitrílicas para todo trabalho com esmalte.
 - **Cremes de barreira não são luvas.** HSE: “Os ‘cremes de barreira’ não são ‘luvas líquidas’”.
 - A poeira de sílica e o trabalho úmido causam **dermatite de contato** (pele vermelha, dolorida e rachada), e a pele rachada deixa as matérias-primas entrarem. Lave com água morna e sabonete suave, e use um creme para depois do trabalho.
-- **Cubra os cortes.** Os compostos de bário, por exemplo, não parecem atravessar a pele intacta, mas podem atravessar a pele ferida.
+- **Cubra os cortes.** Os compostos de bário, por exemplo, não são considerados capazes de atravessar a pele intacta, mas podem atravessar a pele ferida.
 
 ### Olhos
 

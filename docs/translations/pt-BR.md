@@ -343,20 +343,21 @@ desvitrificação). A row is listed when the Brazilian word differs or needs a n
 
 ### 2.6 Making and applying glaze
 
-| English                              | pt-BR                                                      | Notes                                                       |
-| ------------------------------------ | ---------------------------------------------------------- | ----------------------------------------------------------- |
-| batch                                | lote (o)                                                   | As pt-PT; "batch list" → lista de pesagem.                  |
-| percent                              | porcentagem (a)                                            |                                                             |
-| scale (weighing)                     | balança (a)                                                |                                                             |
-| sieve, mesh                          | peneira (a), peneirar; malha (a) ("80 mesh")               |                                                             |
-| specific gravity **show English**    | densidade (a)                                              | Setting "Specific gravity" → "Densidade". **Native check**. |
-| hydrometer                           | densímetro (o)                                             |                                                             |
-| slurry                               | esmalte líquido (o) (suspensão)                            | **Native check**.                                           |
-| dipping, pouring, brushing, spraying | imersão (banho), derramamento, pincel, pistola (aerógrafo) | **Native check**.                                           |
-| coat                                 | camada (a); demão (a)                                      |                                                             |
-| wax resist                           | cera de reserva (a)                                        | **Native check**.                                           |
-| test tile                            | prova (a); placa de teste                                  | **Native check**.                                           |
-| technical data sheet                 | ficha técnica (a)                                          |                                                             |
+| English                              | pt-BR                                                      | Notes                                                        |
+| ------------------------------------ | ---------------------------------------------------------- | ------------------------------------------------------------ |
+| batch                                | lote (o)                                                   | As pt-PT; "batch list" → lista de pesagem.                   |
+| percent                              | porcentagem (a)                                            |                                                              |
+| scale (weighing)                     | balança (a)                                                |                                                              |
+| sieve, mesh                          | peneira (a), peneirar; malha (a) ("80 mesh")               |                                                              |
+| specific gravity **show English**    | densidade (a)                                              | Setting "Specific gravity" → "Densidade". **Native check**.  |
+| hydrometer                           | densímetro (o)                                             |                                                              |
+| pint weight                          | peso por pinta (o); oz por pinta imperial                  | _pinta_, the Portuguese unit name; never the English _pint_. |
+| slurry                               | esmalte líquido (o) (suspensão)                            | **Native check**.                                            |
+| dipping, pouring, brushing, spraying | imersão (banho), derramamento, pincel, pistola (aerógrafo) | **Native check**.                                            |
+| coat                                 | camada (a); demão (a)                                      |                                                              |
+| wax resist                           | cera de reserva (a)                                        | **Native check**.                                            |
+| test tile                            | prova (a); placa de teste                                  | **Native check**.                                            |
+| technical data sheet                 | ficha técnica (a)                                          |                                                              |
 
 ### 2.7 Health and safety
 
@@ -378,7 +379,7 @@ desvitrificação). A row is listed when the Brazilian word differs or needs a n
 | poison centre                 | centro de informação e assistência toxicológica (CIATox)                     | Disque-Intoxicação 0800 722 6001; SAMU 192 — copy only as the region data prints.                                                        |
 | food safe **show English**    | adequado para contato com alimentos                                          | "em contato com alimentos" (Anvisa wording).                                                                                             |
 | lead-free                     | sem chumbo; isento de chumbo                                                 |                                                                                                                                          |
-| leach test                    | ensaio de migração de chumbo e cádmio (o)                                    |                                                                                                                                          |
+| leach test                    | ensaio de liberação de metais (o)                                            | General: any metals a fired piece releases. Name lead and cadmium only where the English does.                                           |
 | liner glaze                   | esmalte para o interior (o)                                                  | **Native check**.                                                                                                                        |
 | IR welding glasses            | óculos de solda com proteção IV                                              |                                                                                                                                          |
 | crawling (babies)             | engatinhar                                                                   | bebê (not bebé).                                                                                                                         |
