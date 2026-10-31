@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Injectable, inject } from '@angular/core';
 import { firstValueFrom } from 'rxjs';
 import { API_BASE } from './api-base';
@@ -8,6 +8,9 @@ import { Owned } from './models';
 export interface Trashed {
   trashId?: string;
 }
+
+/** The collections the build writes a copy of (LIBRARY in scripts/service-worker.mjs). */
+const BUILT_IN_COPIES = ['materials', 'additives'];
 
 /** Calls for one collection on the API, such as /materials. */
 export class ApiResource<T extends Owned> {
@@ -23,9 +26,16 @@ export class ApiResource<T extends Owned> {
     return firstValueFrom(this.http.get<T[]>(this.url + '/getAll'));
   }
 
-  /** The built-in records every user sees. */
+  /**
+   * The built-in records every user sees. With no network at all (status 0), the materials and additives come from
+   * the build's copy of the same list, which the service worker keeps (scripts/service-worker.mjs).
+   */
   getStandard(): Promise<T[]> {
-    return firstValueFrom(this.http.get<T[]>(this.url + '/getStandard'));
+    const name = this.url.slice(this.url.lastIndexOf('/') + 1);
+    return firstValueFrom(this.http.get<T[]>(this.url + '/getStandard')).catch((error: unknown) => {
+      if (!(error instanceof HttpErrorResponse) || error.status !== 0 || !BUILT_IN_COPIES.includes(name)) throw error;
+      return firstValueFrom(this.http.get<T[]>('/standard/' + name + '.json'));
+    });
   }
 
   create(item: T): Promise<T> {
