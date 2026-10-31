@@ -18,7 +18,7 @@
     "haveAccount": "¿Ya tienes una cuenta? <signin>Inicia sesión</signin>",
     "privacy": "Tu correo y lo que guardas se usan solo para manejar tu cuenta, y se almacenan con Amazon Web Services en EE. UU. <privacy>Cómo trata Glazecalc tus datos</privacy>",
     "terms": "Al crear una cuenta, aceptas los <terms>Términos de uso</terms>.",
-    "dataNotice": "Glazecalc es un proyecto gratuito y de código abierto, y las cuentas se guardan en servidores de Estados Unidos. Puedes leer las guías y probar la calculadora sin una cuenta, o ejecutar tu propia copia. Si creas una cuenta aquí o no es decisión tuya, y el proyecto no acepta ninguna responsabilidad por ella. <where>Dónde se guarda tu cuenta, y tu elección</where>",
+    "dataNotice": "Glazecalc es un proyecto gratuito y de código abierto, y las cuentas se guardan en servidores de Estados Unidos. Puedes leer las guías y probar la calculadora sin una cuenta, o ejecutar tu propia copia. La decisión de crear una cuenta aquí es tuya, y el proyecto no acepta ninguna responsabilidad por ella. <where>Dónde se guarda tu cuenta, y tu elección</where>",
     "forgot": "¿Olvidaste tu contraseña? Restablécela",
     "newHere": "¿Es tu primera vez aquí? <signup>Crea una cuenta gratuita</signup>",
     "signUpFailed": "Error: no se pudo crear la cuenta.",

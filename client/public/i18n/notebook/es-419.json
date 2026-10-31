@@ -9,8 +9,8 @@
       "text": "Tu cuaderno está listo. Un buen primer paso: escribe un esmalte que ya prepares, con sus materiales y cantidades, y mira su fórmula unitaria.",
       "firstRecipe": "Empezar tu primera receta",
       "confirmHeading": "Confirmar tu correo",
-      "confirm": "Confirma tu correo: enviamos un enlace a {email}. El inicio de sesión en dos pasos lo necesita. La <account>página de tu cuenta</account> puede enviarlo de nuevo.",
-      "confirmText": "Enviamos un enlace a {email}. Ábrelo para confirmar que la dirección es tuya: el inicio de sesión en dos pasos lo necesita. La <account>página de tu cuenta</account> puede enviarlo de nuevo."
+      "confirm": "Confirma tu correo: enviamos un enlace a {email}. La verificación en dos pasos lo necesita. La <account>página de tu cuenta</account> puede enviarlo de nuevo.",
+      "confirmText": "Enviamos un enlace a {email}. Ábrelo para confirmar que la dirección es tuya: la verificación en dos pasos lo necesita. La <account>página de tu cuenta</account> puede enviarlo de nuevo."
     },
     "sections": {
       "recipe": {
@@ -55,7 +55,7 @@
       },
       "account": {
         "title": "Cuenta y configuración",
-        "text": "Configuración, tu contraseña, el inicio de sesión en dos pasos y una descarga de todo lo que guardas aquí."
+        "text": "Configuración, tu contraseña, la verificación en dos pasos y una descarga de todo lo que guardas aquí."
       }
     },
     "newHere": "¿Las fórmulas unitarias son nuevas para ti? La <advice>página de consejos</advice> explica lo básico, y la <about>página Acerca de</about> cuenta cómo funciona Glazecalc."

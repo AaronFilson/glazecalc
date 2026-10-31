@@ -134,8 +134,8 @@
     "signup": "Crea una cuenta gratuita de Glazecalc para guardar tus recetas de esmaltes, materiales, notas y registros de cocción. Sin anuncios, y tus datos nunca se venden.",
     "cones": "Conos pirométricos Orton y SK desde el 022, con sus temperaturas en °C y °F, la velocidad de calentamiento de cada tabla y el origen de las cifras.",
     "materials": "Los materiales de la biblioteca estándar de Glazecalc, desde feldespatos y arcillas hasta fritas y fuentes de boro, cada uno con su análisis de óxidos, fórmula unitaria y riesgos.",
-    "materialInfo": "{name}: análisis de óxidos, fórmula unitaria, pérdida por calcinación y riesgos en la biblioteca estándar de Glazecalc.",
-    "materialInfoLong": "{name} en la biblioteca estándar de materiales para esmaltes de Glazecalc: su análisis de óxidos, su aporte a la fórmula unitaria, su pérdida por calcinación y sus riesgos.",
+    "materialInfo": "{name}: análisis de óxidos, fórmula unitaria, pérdida al fuego y riesgos en la biblioteca estándar de Glazecalc.",
+    "materialInfoLong": "{name} en la biblioteca estándar de materiales para esmaltes de Glazecalc: su análisis de óxidos, su aporte a la fórmula unitaria, su pérdida al fuego y sus riesgos.",
     "imageAlt": "La página de inicio de Glazecalc: química de esmaltes gratuita para ceramistas, junto a una foto de paquetes de conos cocidos."
   },
   "notices": {
@@ -300,7 +300,7 @@
   },
   "chemistryForm": {
     "name": "{noun, select, additive {Ponle un nombre al aditivo.} other {Ponle un nombre al material.}}",
-    "loi": "Escribe la pérdida por calcinación como un porcentaje de 0 a menos de 100, como {example}.",
+    "loi": "Escribe la pérdida al fuego como un porcentaje de 0 a menos de 100, como {example}.",
     "molecularWeight": "Escribe el peso molecular como un número, como {example}.",
     "addOxide": "Agrega al menos un óxido: elígelo y luego usa Agregar el óxido a la lista.",
     "chooseOxide": "Elige un óxido y luego usa Agregar el óxido a la lista.",
