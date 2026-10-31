@@ -6,6 +6,18 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Added
 
+- **Nepali and Sinhala** (docs/translations/ne.md, si.md): the app, the emails and all five guides, live at `/ne/…`
+  (Devanagari), written for Nepal, and `/si/…`, written for Sri Lanka, each with that country's law, poison lines and
+  number grouping, and the standard notice (the owner's choice, 2026-10-30; Sinhala's plain notice is turned off, so
+  no language of waves I2 to I4 has it). Nepali shows Devanagari digits by default, as CLDR has them (the owner kept
+  it); Sinhala shows 0–9. Each was translated from a sourced glossary in nine parts, reviewed in six groups, made
+  consistent across its files and back-translated blind in two halves (four differences fixed in Nepali, two in
+  Sinhala). The reviews caught micrograms written as "thousands" of a gram, "caustic" written as "scratching", a
+  peephole's plug written as an electrical one, "at the latest" read as "at least", "should" turned into "must", and
+  a ZWJ typed into Sinhala's ‑ත්ය particle that drew a yansaya. The glossaries' "black specks" and "fumes and gas"
+  rows, which added words the English does not have, are fixed. The home-safety guide keeps the blunt title "Don't
+  poison your family" in both. With them every language Glazecalc knows is offered. Native reviewers are wanted (the
+  Native check rows in each style sheet). The README counts 46 languages.
 - **Punjabi and Odia** (docs/translations/pa.md, or.md): the app, the emails and all five guides, live at `/pa/…`
   (Gurmukhi) and `/or/…`, written for India, with the standard notice (the owner's choice, 2026-10-30), under the same
   rules as India's other languages (the potters' loanword first, the Latin full stop and never the danda, 0–9 in the
@@ -27,7 +39,7 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
   "and gases", PbO on metallic lead). The home-safety guide keeps the blunt title "Don't poison your family" in all
   three. Native reviewers are wanted (the Native check rows in each style sheet). The README counts 42 languages.
 - **Groundwork for Telugu, Gujarati, Malayalam, Punjabi, Odia, Nepali and Sinhala** (India's waves I2 to I4; Telugu,
-  Gujarati, Malayalam, Punjabi and Odia live since: above): known to the language list, in their own names, with Punjabi, Odia and Sinhala to carry the plain
+  Gujarati, Malayalam, Punjabi, Odia, Nepali and Sinhala live since: above): known to the language list, in their own names, with Punjabi, Odia and Sinhala to carry the plain
   notice, as Irish and Maltese do. India lists the five after Kannada, Nepal lists Nepali and Sri Lanka Sinhala, and
   their number and date formats (te-IN, gu-IN, ml-IN, pa-IN, or-IN) can be chosen in Settings. A Malayalam
   pseudo-locale, `/ml-XH/` (wide letters, long words), runs at phone width and at 320 px with the accessibility

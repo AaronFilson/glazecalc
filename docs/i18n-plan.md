@@ -538,9 +538,11 @@ and Bengali; units in Latin, left to right; Noto Nastaliq Urdu served for Urdu p
   സാന്ദ്രത wraps onto two lines in the slurry labels). Wave I3's run (home, the recipe with the slurry panel, the print
   view and the home-safety guide in `/pa/` and `/or/`, 320 px and desktop, Windows) kept Punjabi's 1.75 / 1.45 and
   Odia's 1.85 / 1.5: Gurmukhi's tippi and addak and Odia's tall conjuncts unclipped, no missing glyphs, no page wider
-  than 320 px. Wave I4 (Nepali, Sinhala) is known but not offered, ahead of its translations: in the language list
-  (Sinhala with the plain notice), India's languages after Kannada, Nepal's and Sri Lanka's first, with their format
-  locales; their font and line-height entries are starting values, to be set by each wave's screenshot run. **Still open for
+  than 320 px. Wave I4's run (the same pages in `/ne/` and `/si/`, 320 px and desktop, Windows) kept Nepali's 1.75 /
+  1.45 and Sinhala's 1.85 / 1.5: no page wider than 320 px, the slurry panel's tall Sinhala signs and Devanagari matras
+  unclipped. The browser test image's Chromium has no locale data for Nepali, Sinhala or Odia (Intl falls back to
+  en-US), so their numbers show 0–9 and their dates in English there; Nepali's Devanagari default is a question for
+  the owner. **Still open for
   the owner**: a real iPhone (Apple lists Kannada Sangam MN and Gurmukhi MN as downloads on iOS, and Tamil, Malayalam,
   Odia and Sinhala could not be confirmed, so the page may be drawn in a font the stack does not name; a web font cut
   to the script is the fallback), and Marathi's own letter forms (ल, श, झ) checked in `/mr/` on Windows, Android and
@@ -560,10 +562,14 @@ and Bengali; units in Latin, left to right; Noto Nastaliq Urdu served for Urdu p
   other languages; accepted as it is. Wave I2 (Telugu, Gujarati, Malayalam) is done (round 9); native reviewers for
   all three are wanted (the Native check lists in docs/translations/te.md, gu.md, ml.md). Wave I3 (Punjabi, Odia) is
   done too (round 9), with the standard notice and the Latin full stop (the owner, 2026-10-30); native reviewers for
-  both are wanted (the Native check lists in docs/translations/pa.md, or.md). Next: I4 (Nepali, Sinhala), from master
-  once I3 is merged, which has its groundwork (above); left for it: its translations, the screenshot run that sets its
-  line heights, the iPhone check, and the owner's choices on the danda for Nepali and on the plain notice (on for
-  Sinhala by default). Sinhala's numbers
+  both are wanted (the Native check lists in docs/translations/pa.md, or.md). Wave I4 (Nepali, written for Nepal, and
+  Sinhala, for Sri Lanka) is done (round 9), with the standard notice for both (Sinhala's plain notice turned off, the
+  owner, 2026-10-30) and Nepali's Devanagari digits by default (CLDR, kept by the owner): waves I1 to I4 are complete,
+  and every language Glazecalc knows is offered. Native reviewers for both are wanted (the Native check lists in
+  docs/translations/ne.md, si.md), with two Sinhala questions: its word for a browser cookie (කුකී is also a biscuit;
+  the pages say "(cookie)" at first use) and its one word for both "inhalable" and "respirable". Next for South Asia,
+  per the plan (scratch/round8/in-langs/plan.md): nothing more is planned; Shahmukhi Punjabi (`pa-Arab`, Pakistan)
+  could come after Urdu and would need its own font cut; the iPhone font check is still the owner's. Sinhala's numbers
   (0–9 whatever is chosen) and Telugu's own digits are grouped in threes in CLDR 48, and Sinhala's long date uses the month
   name වප් for October: both for a native check.
 

@@ -247,3 +247,33 @@ docs/translations/pa.md and or.md, each with its Native check rows. What the wav
 
 Still open: native reviewers for both (the Native check lists, among them Punjabi's Undo ਅਣਕੀਤਾ ਕਰੋ and Decline
 ਨਾਮਨਜ਼ੂਰ / ਇਨਕਾਰ ਕਰੋ, and the IARC 2A/2B wordings), and the iPhone font check (docs/i18n-plan.md, "Fonts").
+
+## Indian regional languages, wave I4: Nepali and Sinhala (live)
+
+Round 9, after wave I3, on the same rules; both live since 2026-10-30 (sourced glossaries, 18 translation parts, 12
+reviews in six groups, a consistency pass and a blind back-translation in two halves, guides and warnings, each, then
+`go-live.mjs ne` and `si`; the log is scratch/round9/i4/log.md in the main checkout). `ne` (नेपाली, Devanagari) is
+written for Nepal and `si` (සිංහල) for Sri Lanka, each with its country's law, poison lines and number grouping, and
+both with the standard notice (the owner, 2026-10-30, who turned Sinhala's plain notice off) and the Latin full stop.
+Nepali shows Devanagari digits by default, as CLDR has them (the owner kept it); Sinhala shows 0 to 9. The style
+sheets are docs/translations/ne.md and si.md, each with its Native check rows. With them waves I1 to I4 are done and
+every language in lib/regions/languages.js is offered. What the wave taught:
+
+- **One lessons file, read by every translator, worked.** scratch/round9/i4/lessons.md (I2's and I3's lessons) went
+  with every brief: no endings joined to Latin names, labels taken from the real files (Read with full paths), not
+  from the style sheet. Where the style sheet and the lessons disagree (Nepali joins मा to `{region}`), the style
+  sheet wins; say so in the lessons file.
+- **Fix a glossary row before it spreads.** ne.md's "black specks" and the "fumes and gas" / "fumes and vapour" rows
+  of ne.md and si.md added words the English lacks, and translators copied them into the files; the consistency
+  passes swept them out. Fix the row first, then the files.
+- **A typed ZWJ changes Sinhala's letters.** A ZWJ typed into the ‑ත්ය particle drew a yansaya (five places); the
+  joiners check takes ZWJ only where yansaya, rakaransaya or touching letters are meant, and the review caught them.
+- **"Young" is not "small".** The Pet Poison Helpline's "young" animals became "small" ones in Odia (I3) and Nepali;
+  the back-translation prompt now names the slip (wave.js).
+- **The generated translate prompt contradicted the style sheets.** wave.js told India's waves "never Japanese
+  script" while every Indian style sheet settles Hepburn with macrons and the kanji after; the translators kept the
+  kanji. The prompt line now says what the style sheets say.
+
+Still open: native reviewers for both (the Native check lists), Sinhala's word for a browser cookie (කුකී is also a
+biscuit; the pages add "(cookie)" at first use), Sinhala's one word for both "inhalable" and "respirable", and the
+iPhone font check (docs/i18n-plan.md, "Fonts").
