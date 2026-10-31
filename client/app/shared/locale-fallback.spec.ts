@@ -89,8 +89,8 @@ describe('whether the browser has a language', () => {
     expect(dateTimeFormat(locale, { dateStyle: 'long' })).toBeInstanceOf(Intl.DateTimeFormat);
   });
 
-  it('finds that this Intl has English, Hindi and Marathi', () => {
-    for (const language of ['en', 'hi', 'mr']) {
+  it("finds that this Intl (Node's) has English, Hindi and Marathi, and the languages in the data as Node writes them", () => {
+    for (const language of ['en', 'hi', 'mr', 'ne', 'si', 'or', 'pa']) {
       for (const kind of ['numbers', 'dates', 'lists'] as const) {
         expect(browserHas(language, kind), language + ' ' + kind).toBe(true);
       }
@@ -120,6 +120,12 @@ describe('whether the browser has a language', () => {
         return { resolvedOptions: () => ({ locale: 'en-US' }) };
       };
       expect(browserHas('ne', 'numbers')).toBe(false);
+      // Chrome 156's Punjabi numbers: Punjabi, but grouped 1,234,567.5 where Node groups 12,34,567.5.
+      (Intl as { NumberFormat: unknown }).NumberFormat = function (locale: string, options?: Intl.NumberFormatOptions) {
+        if (String(locale).startsWith('en')) return new realNumbers(locale, options);
+        return { resolvedOptions: () => ({ locale: 'pa' }), format: () => '1,234,567.5' };
+      };
+      expect(browserHas('pa', 'numbers')).toBe(false);
     } finally {
       (Intl as { DateTimeFormat: unknown }).DateTimeFormat = real;
       (Intl as { NumberFormat: unknown }).NumberFormat = realNumbers;
