@@ -1,6 +1,7 @@
 {
   "toxic-almost-insoluble-sdirpz": "Mürgine. Peaaegu lahustumatu.",
   "warning-potterycrafts-sds-p3303-h302-harmful-1662i06": "Hoiatus (Potterycraftsi ohutuskaart P3303): H302 allaneelamisel kahjulik; ärge neelake alla ja vältige tolmu sissehingamist.",
+  "theoretical-formula-9090t3": "Teoreetiline valem",
   "tricalcium-phosphate-real-bone-ash-may-uviiii": "Trikaltsiumfosfaat. Päris luutuhk võib sisaldada veidi kaltsiumkarbonaati (CaCO₃) ja seega on sellel väike hõõgumiskadu.",
   "warning-potterycrafts-sds-h302-harmful-if-157dkxp": "Hoiatus (Potterycraftsi ohutuskaart): H302 allaneelamisel kahjulik; H315 põhjustab nahaärritust; H319 põhjustab tugevat silmade ärritust; H335 kuiv tolm võib põhjustada hingamisteede ärritust.",
   "water-soluble-fdjx5g": "Vees lahustuv.",
@@ -367,5 +368,8 @@
   "glaze-tiles-tiles-labels-12xf0ul": "glasuuri proovitükid, proovitükid, sildid",
   "kiln-sitter-8kghs6": "Kiln-Sitter",
   "after-putting-a-cone-in-the-swloel": "Kui olete koonuse Kiln-Sitterisse pannud, katke see maalriteibiga. Teip kaitseb koonust, et see ahju pakkimise ajal maha ei kukuks, ja põleb põletamisel puhtalt ära.",
-  "kiln-sitter-cone-cones-loading-3s7meh": "Kiln-Sitter, koonus, koonused, ahju pakkimine"
+  "kiln-sitter-cone-cones-loading-3s7meh": "Kiln-Sitter, koonus, koonused, ahju pakkimine",
+  "the-standard-gives-reference-temperatures-at-12xot89": "Standard annab võrdlustemperatuurid. Keraamikute tavalisel kuumutuskiirusel, umbes 100 °C/h, mõõtis Kyoto linna instituut oma Kyoto koonuste paindumist: need paindusid sama numbri korral 47–79 °C jahedamal temperatuuril kui JIS-i väärtus; JIS-i järgi valmistatud SK-koonuste kohta me selliseid mõõtmisi ei leidnud. Pange ahju kontrollkoonus ja võrrelge.",
+  "orton-s-older-chart-for-large-jgynh": "Ortoni vanem tabel suurtele koonustele, mida kuumutatakse kiirusega 150 °C tunnis viimase 100 °C jooksul, nii nagu ahjutootjad seda uuesti avaldavad; Ortoni praegused väärtused suurtele koonustele sellel kiirusel erinevad sellest kuni 19 °C võrra. Orton ei avalda väärtust koonustele, mille number on suurem kui 14, ja see tabel ei anna väärtust koonustele, mille number on suurem kui 15. Koonused mõõdavad kuumustööd, mitte temperatuuri: pange ahju kontrollkoonus.",
+  "rates-are-over-the-last-100-gs02ii": "Kiirused on antud põletuse viimase 100 °C kohta. Suurtel koonustel 13 ja 14 on teine koostis ja teised temperatuurivasted; Orton ei avalda väärtust koonustele, mille number on suurem kui 14."
 }

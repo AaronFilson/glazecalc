@@ -1,6 +1,7 @@
 {
   "toxic-almost-insoluble-sdirpz": "Toksiska viela. Gandrīz nešķīst.",
   "warning-potterycrafts-sds-p3303-h302-harmful-1662i06": "Uzmanību (Potterycrafts drošības datu lapa P3303): H302 kaitīgs, ja norij; nenorijiet un izvairieties ieelpot putekļus.",
+  "theoretical-formula-9090t3": "Teorētiskā formula",
   "tricalcium-phosphate-real-bone-ash-may-uviiii": "Trikalcija fosfāts. Īsti kaulu pelni var saturēt nedaudz CaCO₃, un tāpēc tiem var būt nelieli karsēšanas zudumi.",
   "warning-potterycrafts-sds-h302-harmful-if-157dkxp": "Uzmanību (Potterycrafts drošības datu lapa): H302 kaitīgs, ja norij; H315 kairina ādu; H319 izraisa nopietnu acu kairinājumu; H335 sausi putekļi var izraisīt elpceļu kairinājumu.",
   "water-soluble-fdjx5g": "Šķīst ūdenī.",
@@ -367,5 +368,8 @@
   "glaze-tiles-tiles-labels-12xf0ul": "glazūru proves, proves, etiķetes",
   "kiln-sitter-8kghs6": "Kiln-Sitter",
   "after-putting-a-cone-in-the-swloel": "Kad konuss ievietots Kiln-Sitter slēdzī, pārklājiet to ar krāsotāju līmlenti. Līmlente pasargās konusu no nogrūšanas, kamēr kraujat krāsnī traukus, un apdedzināšanas laikā tīri sadegs.",
-  "kiln-sitter-cone-cones-loading-3s7meh": "Kiln-Sitter, konuss, konusi, iekraušana"
+  "kiln-sitter-cone-cones-loading-3s7meh": "Kiln-Sitter, konuss, konusi, iekraušana",
+  "the-standard-gives-reference-temperatures-at-12xot89": "Standarts dod atsauces temperatūras. Pie keramiķu parastā sildīšanas ātruma, apmēram 100 °C/h, Kioto pilsētas institūts izmērīja, ka tā paša numura Kioto konusi saliecas par 47–79 °C zemākā temperatūrā nekā JIS vērtība; šādus mērījumus SK konusiem, kas izgatavoti pēc JIS, neatradām. Ievietojiet krāsnī kontrolkonusu un salīdziniet.",
+  "orton-s-older-chart-for-large-jgynh": "Ortona vecākā tabula lielajiem konusiem, ko silda ar ātrumu 150 °C stundā pēdējo 100 °C laikā, kā to pārpublicē krāšņu ražotāji; Ortona pašreizējās vērtības lielajiem konusiem ar šādu ātrumu no tās atšķiras līdz pat 19 °C. Orton nepublicē vērtību konusiem ar numuru, kas lielāks par 14, un šī tabula nedod vērtību konusiem ar numuru, kas lielāks par 15. Konusi mēra siltuma iedarbību, nevis temperatūru: ievietojiet krāsnī kontrolkonusu.",
+  "rates-are-over-the-last-100-gs02ii": "Ātrumi attiecas uz apdedzināšanas pēdējiem 100 °C. Lielajiem konusiem 13 un 14 ir cits sastāvs un citi temperatūras ekvivalenti; Orton nepublicē vērtību konusiem ar numuru, kas lielāks par 14."
 }
