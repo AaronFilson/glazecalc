@@ -67,7 +67,7 @@ function indianNotes(p) {
       `Cones: Orton cones are Orton wherever the English says Orton; SK cones are SK with the number as printed; Seger only where the English says Seger; the Seger formula (UMF) is never a cone. Never give an SK number for an Orton number or the reverse, nor say they are equal. "One number hotter/cooler" as the style sheet gives it, never higher or lower.`,
       `Should, must and may as the style sheet gives them, kept apart; no emphasis word (always, never, absolutely, certainly) the English lacks; "must be tested" means the test is done, not passed.`,
       `The food-contact text names Directive 84/500/EEC: it has no official ${L} text, so write the EU categories plainly, so that the 3 L still applies only to packaging and storage vessels.`,
-      `Japanese names in the guides and region notes (the firing guide's) are Hepburn romanization with the English gloss, never Japanese script.`
+      `Japanese names in the guides and region notes (the firing guide's) are Hepburn romanization with macrons and the English gloss, with the kanji after them where the English writes kanji (Ōsaka chūdoku 110-ban, 大阪中毒110番), as the style sheet settles.`
     ],
     review: [
       `${L}: "at most", "no more than" and "up to" use the law's words for at most (${p.sounds}) and never "less than" or "under"; "at least" never "more than". A slip here moves a legal limit. Check every one in the food-contact, silica and safety text.`,
@@ -79,7 +79,8 @@ function indianNotes(p) {
     backtranslate: [
       `${p.sounds}: translate each back exactly as it reads. "At most" means the limit itself passes; "less than" means it does not. A limit that moved from one to the other is a difference in meaning.`,
       `Words of emphasis and obligation are translated back as strongly as they read: one the English lacks is a difference in meaning. "Must", "should" and "may" are kept apart as the style sheet gives them.`,
-      `Names of services and bodies stay in ${L}: compare what they refer to.`
+      `Names of services and bodies stay in ${L}: compare what they refer to.`,
+      `Ages and sizes are kept apart: "young" animals or children are not "small" ones (Odia and Nepali both slipped here). Translate back the word as it reads.`
     ]
   };
 }
