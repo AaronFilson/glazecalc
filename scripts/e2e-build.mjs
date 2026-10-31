@@ -28,14 +28,16 @@ export const SOURCES = [
   'package.json',
   'package-lock.json',
   'node_modules/.package-lock.json',
+  'ngsw-config.json',
   'scripts/prerender.mjs',
+  'scripts/service-worker.mjs',
   'scripts/advice-i18n.mjs',
   'scripts/material-i18n.mjs',
   'scripts/locale-fallback.mjs',
   'scripts/build-skills.mjs',
   'skills',
-  'data/advice.ndjson',
-  'data/materials.ndjson'
+  // The standard library: the pages draw it in (advice, materials), and the service worker keeps a copy.
+  'data'
 ];
 
 const paths = (root) => ({

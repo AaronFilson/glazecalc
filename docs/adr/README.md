@@ -31,6 +31,7 @@ Each one is written once; a later change gets a new record that replaces the old
 | [0025](0025-confirm-before-changes.md)            | Confirm before changes: a change from an app waits for the person's yes | 2026-10-19 |
 | [0026](0026-target-and-solve.md)                  | Target & Solve: a recipe for a typed target, on the matching engine     | 2026-10-20 |
 | [0027](0027-dictation-skill.md)                   | Dictated studio notes: a skill in the potter's own AI                   | 2026-10-21 |
+| [0028](0028-service-worker.md)                    | Offline: Angular's service worker keeps the app, the app the language   | 2026-10-31 |
 
 0018 is kept for the in-app assistant's privacy notice, in
-[the integrations plan](../integrations-plan.md). The next new record takes 0028.
+[the integrations plan](../integrations-plan.md). The next new record takes 0029.

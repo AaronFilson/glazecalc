@@ -27,7 +27,10 @@ import {
   RouterOutlet
 } from '@angular/router';
 import { AuthService } from './core/auth.service';
+import { InstallService } from './core/install.service';
 import { LocaleService } from './core/locale.service';
+import { OfflineLanguages } from './core/offline-languages';
+import { UpdateService } from './core/update.service';
 import { sameSitePath } from './core/signed-in.guard';
 import { formatDate } from './shared/format';
 import { errorMessage } from './core/error-message';
@@ -158,6 +161,12 @@ const APP_PAGES = [
               </div>
             }
           }
+          <!-- Chrome and Edge say when the app can be put on the home screen (core/install.service.ts): a quiet button, never a popup. -->
+          @if (install.available()) {
+            <button type="button" class="btn btn-light btn-sm nav-install" (click)="install.install()">
+              {{ t('offline.install') }}
+            </button>
+          }
         </div>
       </nav>
       @if (auth.shownTrial(); as trial) {
@@ -202,6 +211,24 @@ const APP_PAGES = [
           </div>
         </section>
       }
+      <!-- A new version is ready (core/update.service.ts). The region is always there, so a screen reader hears the message when it comes. -->
+      <div role="status">
+        @if (updates.offered()) {
+          <div class="update-bar">
+            <div class="trial-bar-inner">
+              <p>{{ t('offline.updateReady') }}</p>
+              <div class="trial-actions">
+                <button type="button" class="btn btn-primary btn-sm" (click)="updates.reload()">
+                  {{ t('offline.reload') }}
+                </button>
+                <button type="button" class="btn btn-light btn-sm" (click)="updates.dismiss()">
+                  {{ t('offline.dismiss') }}
+                </button>
+              </div>
+            </div>
+          </div>
+        }
+      </div>
     </header>
 
     <!-- The account's round initial, or a person for a trial, which has no email. -->
@@ -253,6 +280,9 @@ const APP_PAGES = [
                 (picked)="chooseLanguage($event.event, $event.code)"
               />
             </nav>
+            @if (languageNotSaved()) {
+              <p class="footer-language-note" role="status">{{ t('offline.languageNotSaved') }}</p>
+            }
           </details>
         }
         <p>{{ t('footer.copyright') }}</p>
@@ -300,6 +330,11 @@ export class App implements OnInit {
    * comes back to that page, whichever they choose. A page of this site only.
    */
   protected readonly nextParams = signal<{ next: string } | null>(null);
+  private readonly offlineLanguages = inject(OfflineLanguages);
+  protected readonly updates = inject(UpdateService);
+  protected readonly install = inject(InstallService);
+  /** A language was chosen with no network and its files are not on this phone: the footer says so. */
+  protected readonly languageNotSaved = signal(false);
   protected readonly confirmingDiscard = signal(false);
   protected readonly discarding = signal(false);
   protected readonly discardError = signal('');
@@ -395,11 +430,25 @@ export class App implements OnInit {
    * account's language, and an older one would take it back.
    */
   protected async chooseLanguage(event: MouseEvent, code: string): Promise<void> {
-    if (!this.auth.hasSession()) return this.preferences.remember('language', code);
     // A new tab or window is the browser's to open.
     const here = event.button === 0 && !event.ctrlKey && !event.metaKey && !event.shiftKey && !event.altKey;
-    if (here) {
+    // With no network a language opens only if its files are on this phone (core/offline-languages.ts).
+    const offline = here && this.offlineLanguages.isOffline();
+    if (offline) {
       event.preventDefault();
+      if (!(await this.offlineLanguages.canOpen(code))) {
+        this.languageNotSaved.set(true);
+        return;
+      }
+    }
+    this.languageNotSaved.set(false);
+    if (!this.auth.hasSession()) {
+      this.preferences.remember('language', code);
+      if (offline) this.openPage(this.pageIn(code));
+      return;
+    }
+    if (here) {
+      if (!offline) event.preventDefault();
       this.choosing = true;
     }
     await this.preferences.set('language', code).catch(() => undefined);
@@ -408,6 +457,8 @@ export class App implements OnInit {
 
   ngOnInit(): void {
     void this.auth.whenChecked();
+    // The files of this language, and English, are kept on the phone for the pages to open without a network.
+    if (this.offlineLanguages.isBrowser()) setTimeout(() => void this.offlineLanguages.keep(this.pageLanguage), 4000);
   }
 
   /**
