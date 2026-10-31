@@ -8,6 +8,8 @@ export interface Language {
   dir: 'ltr' | 'rtl';
   /** Offered in Settings and to search engines. */
   live: boolean;
+  /** The cone chart and the standard materials' pages are translated into it. */
+  reference?: boolean;
   /** The language whose plural rules and number formats apply, where not the code itself. */
   base?: string;
   /** Made in the browser from the English, for tests. */
@@ -23,6 +25,8 @@ export interface Language {
 export const LANGUAGES: ReadonlyArray<Language>;
 export const LANGUAGE_CODES: ReadonlyArray<string>;
 export const LIVE_LANGUAGES: ReadonlyArray<string>;
+/** The languages the reference pages (cone chart, materials) are translated into; the others show the English. */
+export const REFERENCE_LANGUAGES: ReadonlyArray<string>;
 export function languageFor(code: string | undefined | null): Language | undefined;
 /** The language whose plural rules and number formats apply: en for en-XA, pt for pt-PT. */
 export function baseLanguage(code: string): string;

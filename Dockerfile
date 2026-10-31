@@ -33,7 +33,7 @@ COPY client ./client
 COPY lib ./lib
 COPY skills ./skills
 COPY data ./data
-COPY scripts/prerender.mjs scripts/advice-i18n.mjs scripts/locale-fallback.mjs scripts/service-worker.mjs scripts/build-skills.mjs ./scripts/
+COPY scripts/prerender.mjs scripts/advice-i18n.mjs scripts/material-i18n.mjs scripts/locale-fallback.mjs scripts/service-worker.mjs scripts/build-skills.mjs ./scripts/
 RUN npm run build
 
 # Only the packages the server needs at run time.

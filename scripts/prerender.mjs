@@ -60,8 +60,12 @@ const ADVICE_COUNT = readFileSync(path.join(ROOT, 'data', 'advice.ndjson'), 'utf
 const GUIDE_PAGES = pages.PUBLIC_PAGES.filter((page) => page.startsWith('/guides/'));
 
 /** What is wrong with one page in particular: the advice page has each piece of the standard advice. */
-export function pageProblems(html, page) {
+export function pageProblems(html, page, code = 'en') {
   const found = [];
+  // A reference page in a language it is translated into has no notice that it is in English.
+  if (pages.REFERENCE_PAGES.includes(page) && languages.REFERENCE_LANGUAGES.includes(code)) {
+    if (/<p\b[^>]*class="guide-note"/.test(html)) found.push('it carries the notice that it is not translated');
+  }
   if (gzipSync(html).length > MAX_GZIPPED) found.push(`it is over ${MAX_GZIPPED / 1024} kB gzipped`);
   if (page === '/advice') {
     const list = /<ul\b[^>]*class="general-advice"[^>]*>([\s\S]*?)<\/ul>/.exec(html)?.[1] ?? '';
@@ -221,7 +225,7 @@ async function renderAll({ jobs, start, faces }) {
       const html = withFontPreloads(rendered, faces);
       const problems = [
         ...problemsWith(html, start, code),
-        ...pageProblems(html, page),
+        ...pageProblems(html, page, code),
         ...logged.map((line) => 'logged: ' + line)
       ];
       if (problems.length) {
@@ -270,7 +274,8 @@ export async function prerender({ build = true, codes = languages.LIVE_LANGUAGES
   if (!faces.length) throw new Error("The stylesheet's text fonts were not found.");
   await rm(PRERENDERED, { recursive: true, force: true });
 
-  // The reference pages (the cone chart, the materials) are in English only: rendered in English alone.
+  // The cone chart and the list of materials are rendered in the languages they are translated into
+  // (REFERENCE_LANGUAGES), a material's page in English alone (lib/pages.js).
   const jobs = codes.flatMap((code) =>
     only
       .filter((page) => pages.prerenderLanguages(page, [code]).length)

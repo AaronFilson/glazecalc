@@ -24,8 +24,8 @@
     </section>
   }
 </div>
-@if (related().length && pageLanguage === 'en') {
-  <!-- Pages in English only (lib/pages.js): offered on the English guide. -->
+@if (related().length && referenceOffered) {
+  <!-- The reference pages (lib/pages.js): offered in the languages they are translated into. -->
   <ng-container *transloco="let t">
     <nav class="panel more-guides" aria-labelledby="see-also">
       <h2 id="see-also">{{ t('guides.related.heading') }}</h2>

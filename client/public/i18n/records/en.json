@@ -1,6 +1,7 @@
 {
   "toxic-almost-insoluble-sdirpz": "Toxic. Almost insoluble.",
   "warning-potterycrafts-sds-p3303-h302-harmful-1662i06": "Warning (Potterycrafts SDS P3303): H302 harmful if swallowed; do not ingest and avoid breathing the dust.",
+  "theoretical-formula-9090t3": "Theoretical formula",
   "tricalcium-phosphate-real-bone-ash-may-uviiii": "Tricalcium phosphate. Real bone ash may contain a little CaCO₃ and so a small LOI.",
   "warning-potterycrafts-sds-h302-harmful-if-157dkxp": "Warning (Potterycrafts SDS): H302 harmful if swallowed; H315 causes skin irritation; H319 causes serious eye irritation; H335 dry dust may cause respiratory irritation.",
   "water-soluble-fdjx5g": "Water soluble.",
@@ -367,5 +368,8 @@
   "glaze-tiles-tiles-labels-12xf0ul": "glaze tiles, tiles, labels",
   "kiln-sitter-8kghs6": "Kiln sitter",
   "after-putting-a-cone-in-the-swloel": "After putting a cone in the kiln sitter, use masking tape to cover it. The tape will protect the cone from getting knocked off while loading pots, and burns off cleanly in the firing.",
-  "kiln-sitter-cone-cones-loading-3s7meh": "kiln sitter, cone, cones, loading"
+  "kiln-sitter-cone-cones-loading-3s7meh": "kiln sitter, cone, cones, loading",
+  "the-standard-gives-reference-temperatures-at-12xot89": "The standard gives reference temperatures. At a potter''s rate of about 100 °C/h, Kyoto''s municipal institute measured its own Kyoto cones bending 47–79 °C cooler than the JIS figure for the same number; we found no such measurements for SK cones to JIS. Set a witness cone and compare.",
+  "orton-s-older-chart-for-large-jgynh": "Orton''s older chart for large cones heated at 150 °C an hour over the last 100 °C, as kiln makers reprint it; Orton''s current figures for large cones at that rate differ from it by up to 19 °C. Orton publishes no figure above cone 14, and this chart none above cone 15. Cones measure heatwork, not temperature: set a witness cone.",
+  "rates-are-over-the-last-100-gs02ii": "Rates are over the last 100 °C of the firing. Large cones 13 and 14 have different compositions and different temperature equivalents; Orton publishes no figure above cone 14."
 }

@@ -32,6 +32,7 @@ export const SOURCES = [
   'scripts/prerender.mjs',
   'scripts/service-worker.mjs',
   'scripts/advice-i18n.mjs',
+  'scripts/material-i18n.mjs',
   'scripts/locale-fallback.mjs',
   'scripts/build-skills.mjs',
   'skills',

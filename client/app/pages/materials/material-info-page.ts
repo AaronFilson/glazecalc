@@ -14,6 +14,7 @@ import { CATEGORY_LABELS, hasLead, statusText } from '../../shared/library-info'
 import { PageHeader } from '../../shared/page-header';
 import { StructuredData, referencePage } from '../../shared/structured-data';
 import { SHORT_NAME } from './material-route';
+import { REFERENCE_LANGUAGE_LIST, referenceText } from './reference-text';
 import { materialNamed, materialPath } from './standard-materials';
 
 /** One oxide of a material: what its record gives, and what it adds to a recipe's unity formula. */
@@ -52,7 +53,7 @@ export const hasFlux = (material: Material): boolean =>
   template: `<ng-container *transloco="let t">
     <gc-structured-data [data]="structured()" />
     <gc-page-header [title]="material().name" [lead]="t('reference.material.lead')" />
-    @if (language !== 'en') {
+    @if (!translated()) {
       <p class="guide-note">{{ t('reference.notTranslated') }}</p>
     }
 
@@ -115,9 +116,9 @@ export const hasFlux = (material: Material): boolean =>
           <dt>{{ t('reference.material.source') }}</dt>
           <dd>
             @if (source.url) {
-              <a [href]="source.url" rel="noopener">{{ source.name }}</a>
+              <a [href]="source.url" rel="noopener">{{ sourceName() }}</a>
             } @else {
-              {{ source.name }}
+              {{ sourceName() }}
             }
             @if (source.date) {
               ({{ source.date }})
@@ -126,7 +127,7 @@ export const hasFlux = (material: Material): boolean =>
         }
       </dl>
       @for (note of notes(); track $index) {
-        <p>{{ note }}</p>
+        <p [attr.lang]="note.english ? 'en' : null">{{ note.text }}</p>
       }
     </section>
 
@@ -205,8 +206,8 @@ export const hasFlux = (material: Material): boolean =>
       @if (lead()) {
         <p class="guide-warning" role="note">{{ t('reference.material.hasLead') }}</p>
       }
-      @if (material().hazards) {
-        <p>{{ t('reference.material.hazards', { hazards: material().hazards }) }}</p>
+      @if (hazards(); as hazards) {
+        <p>{{ t('reference.material.hazards', { hazards: hazards }) }}</p>
       } @else {
         <p>{{ t('reference.material.noHazards') }}</p>
       }
@@ -242,6 +243,7 @@ export const hasFlux = (material: Material): boolean =>
 export class MaterialInfoPage {
   private readonly route = inject(ActivatedRoute);
   protected readonly language = inject(PAGE_LANGUAGE);
+  private readonly referenceLanguages = inject(REFERENCE_LANGUAGE_LIST);
   protected readonly formatFormula = formatFormula;
   protected readonly fixed = fixed;
   protected readonly upTo = upTo;
@@ -257,9 +259,22 @@ export class MaterialInfoPage {
   protected readonly status = computed(() => statusText(this.material()));
   protected readonly aliases = computed(() => listOf(this.material().aliases ?? [], 'unit'));
   protected readonly regions = computed(() => listOf(this.material().region ?? [], 'unit'));
+  /** Whether the page is in a language the reference pages are translated into (English is). */
+  protected readonly translated = computed(() => this.referenceLanguages.includes(this.language));
+  private readonly textOf = (text: string) => referenceText(text, 'materials', this.language, this.referenceLanguages);
   protected readonly notes = computed(() => {
     const notes = this.material().notes;
-    return Array.isArray(notes) ? notes : notes ? [notes] : [];
+    return (Array.isArray(notes) ? notes : notes ? [notes] : []).map(this.textOf);
+  });
+  /** The hazards in the page's language; '' for none. */
+  protected readonly hazards = computed(() => {
+    const { hazards } = this.material();
+    return hazards ? this.textOf(hazards).text : '';
+  });
+  /** "Theoretical formula" is translated; the other sources are citations, as printed. */
+  protected readonly sourceName = computed(() => {
+    const name = this.material().source?.name;
+    return name ? this.textOf(name).text : '';
   });
   /** Other names that have a page of their own are links. */
   private readonly named = (names: readonly string[] | undefined) =>
