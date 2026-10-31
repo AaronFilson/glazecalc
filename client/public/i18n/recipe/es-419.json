@@ -167,7 +167,7 @@
     "leadRebuiltCone": "Plomo reemplazado para cono {cone} sobre {base}: se conservaron la sílice y la alúmina de la receta anterior, con boro y otros fundentes haciendo el trabajo del plomo.",
     "leadRebuilt": "Plomo reemplazado para {firing} sobre {base}: se conservaron la sílice y la alúmina de la receta anterior, con boro y otros fundentes haciendo el trabajo del plomo.",
     "leadColour": "Plomo reemplazado: los colorantes pasaron a una base sin plomo de {base} y caolín, 85 a 15.",
-    "leadGloss": "No igualará exactamente el brillo, la transparencia ni el color del plomo: espera menos brillantez, y posible turbidez sobre barro rojo o cuarteado. Prueba una tanda pequeña sobre tu propio barro.",
+    "leadGloss": "No igualará exactamente el brillo, la transparencia ni el color del plomo: espera menos brillantez, y posible turbidez sobre barro rojo, o cuarteado. Prueba una tanda pequeña sobre tu propio barro.",
     "leadSafety": "No tener plomo no hace por sí solo que un esmalte sea apto para alimentos; eso depende de toda la fórmula y de la cocción.",
     "leadReplaced": "El plomo está reemplazado.",
     "shelfSaved": "Guardado con tu cuenta.",
