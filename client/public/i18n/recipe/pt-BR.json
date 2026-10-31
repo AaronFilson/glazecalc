@@ -168,7 +168,7 @@
     "leadRebuilt": "Chumbo substituído para {firing} sobre {base}: a sílica e a alumina da receita antiga foram mantidas, com boro e outros fundentes fazendo o trabalho do chumbo.",
     "leadColour": "Chumbo substituído: os corantes foram levados para uma base sem chumbo de {base} e caulim, 85 para 15.",
     "leadGloss": "Ele não vai igualar exatamente o brilho, a transparência ou a cor do chumbo: espere menos brilho, e possível turvação sobre argila vermelha ou gretamento. Teste um lote pequeno na sua própria massa.",
-    "leadSafety": "Não ter chumbo não torna, por si só, um esmalte seguro para alimentos; isso depende da fórmula inteira e da queima.",
+    "leadSafety": "Não ter chumbo não torna, por si só, um esmalte adequado para contato com alimentos; isso depende da fórmula inteira e da queima.",
     "leadReplaced": "O chumbo foi substituído.",
     "shelfSaved": "Salvo na sua conta.",
     "cannotMatch": "Não é possível fazer a busca: uma matéria-prima não tem análise para o cálculo.",
@@ -1030,7 +1030,7 @@
       "note": "A segurança com alimentos depende de queimar este esmalte no cone em que foi testado: um esmalte subqueimado pode liberar metais.",
       "range": "A queima deste esmalte é dada como uma faixa, então teste-o na ponta mais baixa da faixa, onde ele funde menos.",
       "untested": "Nenhum cone está marcado como testado ainda.",
-      "test": "Só um ensaio de liberação de metais das suas próprias peças queimadas mostra se ele é seguro para alimentos."
+      "test": "Só um ensaio de liberação de metais das suas próprias peças queimadas mostra se ele é adequado para contato com alimentos."
     },
     "helpSummary": "Sobre a queima",
     "help": {

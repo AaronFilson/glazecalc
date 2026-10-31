@@ -445,15 +445,18 @@ English lacks.
 
 ## 5. Catch-up terms
 
-| English                       | pt-BR                        | Notes                          |
-| ----------------------------- | ---------------------------- | ------------------------------ |
-| SK cones, Kyoto cones         | cones SK, cones de Quioto    |                                |
-| control concentration (Japan) | concentração de controle     | _controle_ (pt-PT _controlo_). |
-| controller (GDPR)             | controlador                  | LGPD's word ("controlador").   |
-| Standard Contractual Clauses  | cláusulas contratuais padrão | **Native check**.              |
-| logs (server)                 | registros (logs)             |                                |
-| prefecture (Japan)            | província / prefeitura       | **Native check**.              |
-| sake warmer                   | aquecedor de saquê           |                                |
+| English                       | pt-BR                        | Notes                                                                                                       |
+| ----------------------------- | ---------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| SK cones, Kyoto cones         | cones SK, cones de Quioto    |                                                                                                             |
+| control concentration (Japan) | concentração de controle     | _controle_ (pt-PT _controlo_).                                                                              |
+| controller (GDPR)             | controlador                  | LGPD's word ("controlador").                                                                                |
+| Standard Contractual Clauses  | cláusulas contratuais padrão | **Native check**.                                                                                           |
+| logs (server)                 | registros (logs)             |                                                                                                             |
+| prefecture (Japan)            | província                    | Never _prefeitura_ (a Brazilian city hall). **Native check**.                                               |
+| mesh (with a number)          | 200 mesh, -325 mesh          | Number first, English _mesh_ after; _malha_ only for the screen itself with no number ("malha da peneira"). |
+| passkey                       | passkey                      | Kept in English, as Brazilian Google/Apple screens do.                                                      |
+| infinite switch               | chave de regulagem contínua  | **Native check**.                                                                                           |
+| sake warmer                   | aquecedor de saquê           |                                                                                                             |
 
 ## 6. Choices for the owner and a native potter
 
