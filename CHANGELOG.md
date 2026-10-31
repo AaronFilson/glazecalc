@@ -6,6 +6,17 @@ Notable changes to Glazecalc. Versions before 0.3.0 were numbered afterwards, fr
 
 ### Added
 
+- **The cone chart, the list of standard materials and each material's page can be translated**, language by
+  language (round 10, stream B, first part; nothing visible changes yet: no language is switched on). A language in
+  `REFERENCE_LANGUAGES` (lib/regions/languages.js, the `reference: true` flag) gets `/<code>/cones` and
+  `/<code>/materials` prerendered, in the sitemap and with hreflang among those languages alone; the others keep the
+  English with the notice, noindex and no hreflang. A material's page is drawn in the browser in every language but
+  English and stays English for search engines. Its notes and hazards come from the translations the signed-in
+  library already shows (`records/`), through a slim file made at each build (`scripts/material-i18n.mjs`, as the
+  advice page has), and a note with no translation shows in English, marked `lang="en"`, instead of the page's
+  notice. The cone charts' three notes, which carry the advice to set a witness cone, and the "Theoretical formula"
+  label are new keys in `records/en.json` for the translation waves. `npm run check:i18n` wants `reference/` and
+  `records/` complete in each language the pages are shown in.
 - **Nepali and Sinhala** (docs/translations/ne.md, si.md): the app, the emails and all five guides, live at `/ne/…`
   (Devanagari), written for Nepal, and `/si/…`, written for Sri Lanka, each with that country's law, poison lines and
   number grouping, and the standard notice (the owner's choice, 2026-10-30; Sinhala's plain notice is turned off, so
